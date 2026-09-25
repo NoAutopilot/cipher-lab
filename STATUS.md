@@ -106,21 +106,22 @@ Results (all AUDIT.md classes copied to status.json by the parents):
 For V7 (open items): (1) done (QA3 ledgered); (2) next rolling QA ~23:40 with `.claude/briefs/runs/2026-09-25-lane-v6-qa.md` (window from 21:40); (3) verifiers for any "for LANE V6/V7: reading ready" line (templates: `2026-09-25-lane-v6-mercy.md`, `-costa.md`; Opus, cap 10, 60 min); (4) when the owner answers rows 80-83 and the Lonchay-Cuvelier IV page read lands, a short gate-2 closer for Mercy; (5) clair349-este-guise-1556 (ZX, re-derivation ZX-RD349 running at 21:42; ZX posts reading ready on PASS): its leaf carries an interlinear contemporary decipherment -- when ZX posts reading ready, start the verifier from the clair1067 precedent (N0 on the leaf). Retrospective trigger (12 rows or 60) not yet met on V6 rows alone.
 Lessons: verifiers ran 5-16 minutes on 30-60 minute boxes and 2-7 dollars on 4-10 caps -- boxes can be halved for single-item verifiers; a reading change after an audit must be pushed into AUDIT.md and any queued SO prompt the same hour.
 
-## LANE R7 handoff (session_01UpWfpbLwYL1xmDG1vFyi6h), 25 September 2026, kept current (last 21:24 UTC)
+## LANE R7 handoff (session_01UpWfpbLwYL1xmDG1vFyi6h), 25 September 2026, closed 22:08 UTC
 
-Recovery and deep work, successor to LANE R6; opened 20:00 by parent 7c (now 7d). Brief .claude/briefs/runs/2026-09-25-lane-r7-orchestrator.md;
-worker common 2026-09-25-lane-r7-common.md. Rate allowed at 21:22. 8 workers closed (Sonnet), USD 26.84 read by get_session, ledgered and
-archived; 1 live: R7-CM3 (Fable, cap 10, session_01DmqmRev6DYkbVnSgrr2r5Q, from 21:23). Orchestrator USD 4.92 at 21:22, 260k context.
-clair1161, clairambault296 and the sp87/TNA copy-order items were already taken by ZX2 (ZX2-GAL, ZX2-ASK, ASKS 54/56/57) and are left to it.
+Recovery and deep work, successor to LANE R6; opened 20:00 by parent 7c (then 7d); closed with its brief's queue spent. Brief
+.claude/briefs/runs/2026-09-25-lane-r7-orchestrator.md; worker common 2026-09-25-lane-r7-common.md; job briefs 2026-09-25-lane-r7-*.md.
+9 workers closed (Sonnet 8, Fable 1), USD 34.55 read by get_session, all ledgered and archived; orchestrator USD 6.16 (ledgered). Rate
+allowed throughout. **No live workers, no pending check-in.** Two workers over cap: AT55V 1.23x, MEYE 1.86x.
+clair1161, clairambault296 and the sp87/TNA copy-order items were already ZX2's (ZX2-GAL, ZX2-ASK, ASKS 54/56/57) and were left to it.
 
 | target | outcome (25 Sept 2026) | next |
 |---|---|---|
-| espagnol142-mercy-1648 | shuffled-stream control passes (target -1154.3 vs shuffle mean -1488.5 vs matched control -1336.2); blind eye-check split the five name glyphs 2x14 / 3x19; R7-MREV applied the blind majority (S 496 M 26 of 522, Cleues -> Eleues, judge FAIL -1.031); V6-MERCY2 kept N3, outreach gate 2 open; Brussels 15 Apr sibling reading-room only (ASKS 60); Cuvelier-Lefèvre VI (ASKS 59); SO-MERCY-F22 queued (V6 annotated its prompt) | owner asks (ASKS 59, 60, JSTOR 80-83); nothing cheap left for a worker |
-| fr2933-salviati-1525 | atlas re-pass: pooled types 223 -> 204/198 vs gate 178, ladder not re-run; codemark_curve.py --merge added; no same-design sibling among 11 Salviati letters 1524-30 | R7-CM3 (live): measured-error control + word-aware model, target only if control >= 60% on 2/3 |
+| espagnol142-mercy-1648 | shuffled-stream control passes (target -1154.3 vs shuffle mean -1488.5 vs matched control -1336.2); blind eye-check split the five name glyphs 2x14 / 3x19; R7-MREV applied the blind majority (S 496 M 26 of 522, Cleues -> Eleues, judge FAIL -1.031); V6-MERCY2 kept N3 key ours, outreach gate 2 open; Brussels 15 Apr sibling not printed, AGR reading-room only | owner: ASKS 59 (Cuvelier-Lefèvre VI p.647), ASKS 60 (AGR SEE t.LXIV f.16 copy), JSTOR rows 80-83, Lonchay-Cuvelier IV page read; SO-MERCY-F22 queued. Nothing cheap left for a worker. |
+| fr2933-salviati-1525 | atlas re-pass: pooled types 223 -> 204/198 vs gate 178 (codemark_curve.py --merge added); no same-design sibling among 11 Salviati letters 1524-30; CM3: letter-per-type code+mark excluded at the measured 5% error (control 62/82/86% vs target unread) | NEAR row: a design change (syllabic/word values for marked types, or a plain-box letter-count model), Fable, own control, about USD 10 |
 | berthier-napoleon-1812 | spec written; test 0 letter XXIX 12th and 17th of 34 on the two metrics it was not selected by; Corresp. Napoléon XXIV no. 19408 is not the "note chiffrée" | not moved; test 3 (Urban's RGVIA find) is a print lead only |
 
-Scout leads for the parent (not R7 targets): BnF Français 3034 item 68 ("Lettre, en chiffre", Landriano 30 Aug 1528, anonymous) and Français 5761 item 3
-("Chiffres desquelz l'on a usé durant le voiage d'Allemagne", a key), both digitised, from R7-SSIB's siblings.tsv.
+Scout leads for the parent (not R7 targets): BnF Français 3034 item 68 ("Lettre, en chiffre", Landriano 30 Aug 1528, anonymous) and Français 5761
+item 3 ("Chiffres desquelz l'on a usé durant le voiage d'Allemagne", a key), both digitised (R7-SSIB, ciphers/fr2933-salviati-1525/siblings.tsv).
 
 ## LANE R6 handoff (session_018MWpKL71WnBxA8k4ejVkBS), 25 September 2026, 19:25 UTC
 

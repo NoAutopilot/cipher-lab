@@ -2158,10 +2158,10 @@
     },
     {
       "target": "fr2933-salviati-1525",
-      "title": "Salviati 1525: atlas re-pass cut pooled types only 223 -> 204/198 (gate 178); no same-design sibling among 11 catalogued Salviati letters 1524-30; error-tolerant solver misses its 10%-noise control (58% vs 60)",
-      "next": "measured-error control (sign<->plain insertions/deletions) with a word-aware model, Fable, about USD 12; two other-office cipher items in the same fonds range (pool lead)",
+      "title": "Salviati 1525: letter-per-type code+mark excluded at the measured 5% transcription error (control 62-86% vs target unread, no Italian); other designs untested; no sibling pool",
+      "next": "design change: syllabic/word values for the marked types or a plain-box letter-count model, Fable, with its own control (about USD 10)",
       "lane": "R7",
-      "touched": "25 Sept 2026 21:23"
+      "touched": "25 Sept 2026 22:07"
     },
     {
       "target": "koehler-1944",
