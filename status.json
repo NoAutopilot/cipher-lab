@@ -2189,6 +2189,13 @@
    "next": "identify the QM / 605YZ/FF indicator system from WW2 signals manuals, then test that system",
    "lane": "B3",
    "touched": "25 Sept 2026 19:46"
+  },
+  {
+   "target": "untersberg-code",
+   "title": "Untersberg code: 36 period-closed short tokens vs 12 (5-20) in its own-unigram controls -- shaped like scribal abbreviation",
+   "next": "expand against 16th-c. German/Latin abbreviation lists with a synthetic-abbreviation control; the Hs. 2398 image",
+   "lane": "B3",
+   "touched": "25 Sept 2026 20:21"
   }
  ]
 }
