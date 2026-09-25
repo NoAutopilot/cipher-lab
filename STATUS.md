@@ -90,7 +90,7 @@ identified, the catalogue's date and senders corrected. The "first verified N3" 
 Orange 1572 detector candidate also fell (partial decipherment printed 1842). Zero unique solves today; two
 over-claims prevented by the gates before anything left the repository.
 
-## LANE B2 handoff (session_01NS12APP1R55K6TGZrBbP97), 25 September 2026, 19:05 UTC
+## LANE B2 handoff (session_01NS12APP1R55K6TGZrBbP97), 25 September 2026, 19:03 UTC
 
 Breadth lane, successor to LANE B (whose bHAR/bLIM died on the 24 Sept limit unpushed). Opened 15:39 by parent 7b; handed
 off at 425k context (brief: 300k), own usage about USD 10.3 at 19:02. 18 Sonnet workers, about USD 45.7, every one ledgered
