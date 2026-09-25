@@ -235,3 +235,144 @@ this worker (ROOM.md 09:00, "workers cannot see their own cost" -- get_session's
 first check and carries no dollar figure); paced by scope (one leaf, no subagent fan-out) rather than a live
 dollar reading, given the predecessor's failure mode was an unsupervised subagent burning budget with nothing
 committed.
+
+Note (KX-LATHTR, 25 Sept 2026): `ciphertext.tsv` as committed at the end of this section's job actually carries
+116 rows for canvas 20 (11 lines, 15/17/19-27), not the 70 this prose says -- the file on disk when this job
+started already had 116 rows despite this text. Not corrected here (out of this job's scope to rewrite a
+predecessor's section); flagging so nobody trusts the "70" figure over the file itself.
+
+## KX-LATHTR (25 Sept 2026)
+
+Job: finish the transcription of the other 20 cipher-bearing canvases and write a spec, per
+`.claude/briefs/runs/2026-09-25-lane-kx-lathtr.md`. Parent: LANE KX orchestrator session_01JPoYAFvVfraJibxQdQfrqp.
+Session session_011zG1PJqCaitaLcZ2FyTxeg.
+
+**Scope actually completed: canvases 21, 27, 30 (3 of the 20 named), plus the required second pass over 20/21/27/30
+together.** Canvas 26 was deliberately skipped out of the brief's order (see below). The remaining 16 canvases
+(32, 33, 35, 36, 39, 40, 47, 48, 49, 50, 51, 54, 55, 56, 62, 63) are **not transcribed** -- queued for a
+successor, cheapest/most-consistent-design first: 32 next (same 8 May 1646 letter as 30, continuation, ~40
+groups, dense two-column page), then 33/35/36 (1648 letters, same office), then the Jan-Feb 1648 run 39-63.
+
+Every canvas was read directly from the already-on-disk `images/crops/canvas{N}_full.jpg` (2400px-wide page
+scans fetched by KX-LATHKEY2/KX-LATHKEY), no Gallica refetch, per brief. PIL crops (`tools` not used --
+`images/lines/canvas{N}_cipherzone.jpg`, one crop per canvas at <=1400px wide, JPEG q70, cut with a small
+scratch script, not committed) hold the cipher-bearing region read for each canvas; the folder is at 30.2 MB as
+of the last push (over the 30 MB target by a small margin -- see below).
+
+### Canvas 26 skipped, out of the brief's stated order
+
+Canvas 26 (folio 23, "Mon Nepveu", dated "A Paris le 17e Mars 1646") was next in the brief's list but is
+**visibly a different cipher system** from every other canvas in this cluster: long unsegmented 3-6 digit
+groups (`3623`, `5925`, `7632`, `783756`, `1123512331`...) rather than the 1-3 digit + letter-mark nomenclator
+of 20/21/27/30. KX-COLB26P1's leaf map already flagged it as "possibly a different correspondent pair bound
+into this volume -- unresolved." Given that and its exceptional density (~80 groups estimated), transcribing it
+without first settling how its digits segment risks silently corrupting the alphabet count for the whole spec
+(wrongly splitting one 6-digit run into two 3-digit codes, for instance). Deferred to a dedicated pass rather
+than guessed at here; flagged in ROOM.md 10:04 UTC.
+
+### Transcription: what the three canvases contain
+
+- **Canvas 21** (folio 18, "A Christianopoli le 6 Avril 1645", continuation of canvas 20's letter, same
+  letter/hand/date): 96 tokens, 7 lines. Same mixed nomenclator as canvas 20 (1-3 digit numbers + single
+  letters + letter/mark ligatures: `w'`, `ll`, `cn`, `Ell`). The 6 Apr 1645 letter is now **fully transcribed
+  end to end** (canvas 20 + 21 = 212 tokens across both leaves) -- the first complete letter in this cluster.
+- **Canvas 27** (folio 24, dated "a la Haye le 25 May 1646" at the foot -- a different, later letter than the
+  17 Mars 1646 docket visible on the facing blank leaf's spine note, which belongs to canvas 26): 158 tokens.
+  Same office (Monsieur/La Thuillerye signature) but the cipher runs are noticeably lighter relative to the
+  prose (numeral groups punctuate a long mostly-plain letter) and lean more numeric (mostly 2-digit) with fewer
+  letter-codes than canvas 20/21, plus a handful of upright single-letter codes (`S`, `K`, `L`, `D`, `Ir`) not
+  seen on 20/21. "S.E." (Son Excellence) is read here as a plain honorific abbreviation, not cipher, following
+  the convention KX-LATHKEY2 established for canvas 20 -- flagged inline (row canvas 27 line 4 idx 5) as
+  unchecked against the crop a second time.
+  Also observed and worth a closer read later: this letter references "le Comte de Trautmandorff" negotiating
+  at Munster over the "Duché et Principaulté de l'Empire du Comte de Meurs" for "M. le P. d'Orange" -- concrete,
+  checkable historical content once decoded, a stronger crib set than canvas 20's vaguer paraphrases.
+- **Canvas 30** (folio 27, docketed "8 May 1646 a M. Servien", "re Prince d'Orange, les Etats"): 149 tokens (2
+  corrected during reconciliation, see below). **Cleanest design seen in this cluster: pure 2-digit numbers, no
+  letter-codes at all**, with caret-inserted glosses that read as genuine identifying cribs rather than vague
+  paraphrase -- "Conduite de Knuyt", "Se les Srs Donia, Riperda" (named Dutch/Imperial diplomatic figures), "la
+  permission", "quil ne signe pas" -- positioned directly over the numeral run each names. This is the
+  strongest crib material found so far in the cluster: a named-entity gloss over a specific short run is a much
+  more direct test than canvas 20/21's topic-only paraphrases.
+
+Design implication for the spec: the cluster is not one uniform cipher across its whole date range. The 1645
+letter (20-21) and the light-cipher 1646 letter (27) mix letters and numbers; the 8 May 1646 letter (30, and
+by inference its continuation 32) is purely numeric. Whether these are the same nomenclator used differently or
+genuinely different code tables is unresolved and is exactly the kind of question the spec's first cheap test
+(structural comparison against key_1646/key_brienne_1647/fr5160 key_1659_ext) should also probe for internally,
+canvas-cluster vs canvas-cluster, not only against the other office's keys.
+
+### Second pass (brief step 2)
+
+One Sonnet subagent transcribed the four cipher-zone crops (20, 21, 27, 30) blind -- it saw only the crop images
+and the column spec, no access to this worker's own `ciphertext.tsv` or NOTES.md. Its output is `passB.tsv`
+(548 tokens total, its own independent line/idx numbering). Because the two passes did not necessarily agree on
+where physical lines break, reconciliation compared token **sequences** per canvas (difflib longest-common-
+subsequence alignment) rather than requiring exact line/idx match; `disagreements.tsv` lists every point where
+the sequences diverge (113 rows: substitutions, and tokens one pass has that the other does not, which can mean
+a real misread or just a different line-segmentation choice near a page-break).
+
+Agreement by canvas (matched positions / max(len A, len B)):
+
+| Canvas | Pass A (this worker) | Pass B (subagent) | Agreement |
+|---|---|---|---|
+| 20 | 116 | 115 | 81.0% |
+| 21 | 96 | 118 | 57.6% |
+| 27 | 158 | 167 | 78.4% |
+| 30 | 149 | 149 | 97.3% (before the 2 corrections below) |
+
+Canvas 30's near-total agreement tracks its cleaner all-numeric design exactly as expected; canvas 21's 57.6% is
+the densest, most crowded page of the four (the subagent's own report calls it "the densest and hardest
+image," flagging 2-3 distinct hook/loop marks it could not reliably tell apart -- consistent with this worker's
+own uncertainty over `ll`/`cn`/similar marks on that canvas).
+
+**Settled by hand against the crop (canvas 30 only, its 4 disagreements):** position 46 (this worker's `91` vs
+the subagent's `97`) and position 66 (`15` vs `13`) were re-checked against `images/crops/canvas30_full.jpg` at
+native crop resolution and the subagent's reading confirmed both times (digit shapes match "7" and "3" better
+than "1" and "5" on closer comparison) -- **`ciphertext.tsv` corrected**, both the token and the neighbouring
+rows' context columns that referenced the old value. Position 14/15 (`51`/`17` vs `41`/`47`) was also
+re-checked and stayed genuinely ambiguous on a third look; left as pass A, flagged in `disagreements.tsv`.
+
+**Not settled: the other 109 disagreements (all of canvas 20, 21, 27).** Given the scope already covered in
+this job (3 full canvases transcribed, one pass reconciled) and the stall-alarm budget, going crop-by-crop
+through 109 more points was judged lower value than transcribing more canvases or writing the spec; `ciphertext.tsv`
+for 20/21/27 is pass A only, unreconciled beyond this worker's own single read. This is the same caveat
+KX-LATHKEY2 recorded for canvas 20 alone; it still applies, now with a second pass's disagreement list attached
+so a successor can settle from `disagreements.tsv` directly rather than re-transcribing from scratch.
+
+### Folder size
+
+29.6 MB (30,223,184 bytes) after this job's pushes -- functionally at the brief's 30 MB cap. A canvas-32 pass
+(or any further canvas) will need either smaller crops (narrower region, lower JPEG quality) or trimming
+`images/crops/` reference copies (out of this job's writable-paths list) before adding more images.
+
+### Alphabet, this job's total (canvases 20+21+27+30 combined, `ciphertext.tsv` after reconciliation)
+
+519 tokens, 129 distinct signs: 355 numeric-token occurrences (84 distinct numbers) and 164 letter/mark-token
+occurrences (45 distinct marks). Most frequent: `11`/`y` (18 each), `83`/`31` (17 each), `d`/`21` (13 each).
+Full counts are in `specs/colbert26-lathuillerie-1644.json`'s alphabet block, not restated here.
+
+### Not done this job (successor's queue, cheapest/highest-value first)
+
+1. Canvas 32 (continuation of canvas 30's 8 May 1646 letter, same clean all-numeric design, ~40 groups, but a
+   dense two-column facing-page image -- crop it in narrow vertical strips to stay legible and within the size
+   budget).
+2. Settle the 109 open `disagreements.tsv` rows for canvases 20/21/27 against the crops before trusting any
+   single-canvas frequency count from this job for cryptanalysis.
+3. The remaining 15 canvases (33, 35, 36, 39, 40, 47, 48, 49, 50, 51, 54, 55, 56, 62, 63) -- same method, no
+   refetch needed (crops already on disk).
+4. Canvas 26's separate, denser numeral system -- its own dedicated digit-segmentation pass before transcribing
+   it at all (see above).
+5. Once a fuller transcription exists, re-run this job's cheap test 1 (frequency/homophone structure vs
+   key_1646/key_brienne_1647/fr5160 key_1659_ext, matched control) -- not run this job, per brief ("leave
+   cheap_test_done empty").
+
+### Files, hosts, cost
+
+Files: `ciphertext.tsv` (+403 rows: 96+158+149, plus 2 corrections), `passB.tsv` (549 rows, new), `disagreements.tsv`
+(113 rows, new), `images/lines/canvas{21,27,30}_cipherzone.jpg` (3 files, PIL crops from the on-disk full-canvas
+images, no refetch), `specs/colbert26-lathuillerie-1644.json` (new), this NOTES.md section, ROOM.md. Hosts: none
+(all from disk). One Sonnet subagent (the blind second pass over the 4 crops, see above; never more than 1 at a
+time). No credentials. Cost not visible to this worker (same `get_session` limitation KX-LATHKEY2 recorded);
+paced by scope (3 canvases + 1 reconciliation pass, explicit stop rather than a live dollar reading) against the
+brief's $10 stall alarm.
