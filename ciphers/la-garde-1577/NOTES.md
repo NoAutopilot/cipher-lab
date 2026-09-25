@@ -1,8 +1,55 @@
 open
+Groen van Prinsterer, Archives ou correspondance inédite de la Maison d'Orange-Nassau, 1e série, tome VI (1839), pp. 249-251, Lettre DCCLXXXIX, read directly by this worker (DBNL) with an explicit footnote confirming the cipher passages are omitted from print, not deciphered.
 
 # La Garde, superintendent of Schoonhoven, to Willem van Oranje, partly unsolved cipher, 28 November 1577
 
 QUEUE row: NB4 (`QUEUE.md`, "Dutch and Belgian archives (LANE N scout of 24 September 2026)").
+
+## Check-solved (LANE CX, 25 Sept 2026)
+
+Formal six-source re-run per `.claude/briefs/check-solved.md`, on top of the 24 Sept check-solved sweep already
+below (not repeated where its own log already answers a source). GSME and LMSAC (6467's own editions) were read
+by OX-LAG (25 Sept, 03:25 UTC per that section's own dating) and are not re-read here per this worker's brief.
+
+1. **Web search** (this worker, 25 Sept 2026): `"La Garde" "Willem van Oranje" OR "Prince d'Orange" 1577 cijfer
+   solved cipherbrain` surfaced only the DBNL Groen VI page itself (already read directly, see below), Gachard's
+   edition home page, and general Dutch-Revolt biography. A separate model-solve-announcement check (this repo's
+   Vals AI / Schneier / itdoeswhatnow source family, run once for all four of this worker's targets) found the
+   Urquhart 1653 and Cyphral Distich stories, unrelated to this letter. No hit naming this letter, this cipher, or
+   a solution.
+2. **Standard edition/calendar.** Groen VI 249-251: already read directly and quoted (footnote above; see the 24
+   Sept section below) — stands as line 2's citation. **Gachard's *Correspondance de Guillaume le Taciturne,
+   prince d'Orange*** (this worker's brief specifically named it, not covered by the 24 Sept sweep): its retroboeken
+   host is reachable (`resources.huygens.knaw.nl/retroboeken/gachard`, HTTP 200, 6 volumes listed) but this
+   worker's attempt at the documented `<accessor>/index_html?search_term:...` full-text-search route
+   (`gachard/1/search_in_text/index_html?search_term:ustring:utf-8=Orange&batch_start=1`) returned HTTP 500
+   ("Pagina niet gevonden of Fout") — the accessor id shown in volume 1's page markup (`search_in_text`) is not
+   the right path segment for this book's search URL, unlike the `toc1`/search patterns CLAUDE.md documents for
+   the other retroboeken titles; one retry not attempted further per the good-citizen one-retry rule. Fell back to
+   WVO's own Brongegevens field for 6179, which is a comprehensive per-letter bibliography (confirmed comprehensive
+   by cross-check: 6467's own Brongegevens lists three editions, Groen + GSME + LMSAC, in the same field format) —
+   for 6179 it lists **only** Groen van Prinsterer VI 249-251 (onv.), not Gachard. This is "not cited by WVO's own
+   bibliography," a weaker claim than "searched and absent," logged as such; the Gachard full-text search itself
+   is an open item for whoever next has time to find the right accessor path.
+3. **Community lists.** `sources/cryptiana/web/dutch.htm` already read in full by the 24 Sept sweep below (no
+   mention). No Cipherbrain/Schmeh-specific page was found in `sources/`; the web search above (query 1) is this
+   worker's Cipherbrain-equivalent check and found nothing.
+4. **DECODE.** `sources/decode/records-non-decrypted-2026-09-24.tsv` already grepped by the 24 Sept sweep below,
+   zero hits for "la garde"/nassau/oranje; re-checked, same file, same result.
+5. **Bourdeau** (`github.com/dbourdeau/cyphersolver`, fresh depth-1 clone by this worker, 25 Sept 2026, not the
+   24 Sept sweep's clone): `grep -ril "la garde\|6179\|willem.*oranje\|van oranje"` — zero hits anywhere in the
+   repository.
+6. **Aymeloglu** (`github.com/aaymeloglu/unsolved-ciphers`, fresh depth-1 clone by this worker, 25 Sept 2026):
+   same grep — zero hits.
+
+**Verdict: open, unchanged.** Nothing in this pass's six sources locates a decipherment, key, or prior reading of
+this letter's cipher passages. Line 2's citation (Groen VI, read directly, cipher passages explicitly noted as
+omitted) is the gate-passing sentence. Novelty not classified (rule 10; not this brief's job).
+
+Requests this pass: resources.huygens.knaw.nl 3 (correspondanceguillaumetaciturn landing page, retroboeken/gachard
+landing + volume 1 page, retroboeken/gachard search attempt, wvo/app/brief?nr=6179 re-fetch), all ≥1.5s apart, one
+500 (search route, not a block, one retry not spent further). github.com 2 (fresh shallow clones, dbourdeau +
+aaymeloglu, deleted after grep). WebSearch 4 queries. No subagents, no logins, no credentials.
 
 ## Source
 
