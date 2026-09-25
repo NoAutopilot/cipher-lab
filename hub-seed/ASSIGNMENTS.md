@@ -418,3 +418,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T15:42Z	session_01QFM2xCSDTwmDV3ayByLVhJ	LANE B bHAR done $0.98 F, archived	ledgered LEDGER.md	died 23:14 UTC, no output; harry-caroline-1863.json cheap_test_done unset
 2026-09-25T15:42Z	session_01HAb2wwJ9oYC1rsZGCe3D7T	LANE B bLIM done $0.76 F, archived	ledgered LEDGER.md	died 21:54 UTC; lima-1916.json cheap_test_done holds an unrelated pre-existing result
 2026-09-25T16:04Z	session_01GrL9XmdQLit5wSGNeSqH96	Key presence check (Sonnet, cap )	CLAUDE.md optional-keys paragraph, ASKS row 47, ROOM	owner added new API credentials 25 Sept
+2026-09-25T16:08Z	session_01VpqAcYQpYgyJQ5FGmP3wBp	done	bHAR2 harry-caroline-1863 test 1	pushed 46139b2
+2026-09-25T16:08Z	session_013mFADMi7WyV1rEVzUMNnir	done	bLIM2 lima-1916 test 1	pushed 2864c6a, 563e79d
