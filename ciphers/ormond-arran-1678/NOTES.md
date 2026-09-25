@@ -154,3 +154,84 @@ tried, no sibling letter found" until one turns up.
 Requests this pass: `archive.org` 2 (`cu31924091754089_djvu.txt`, `cu31924091754097_djvu.txt`, one retry needed
 on each for a 302 redirect, `curl -L`, >=1.5s apart, both >200KB text fetched once to disk and read from disk
 after). No other hosts, no subagents, no logins, no credentials.
+
+## ZX2-ORM (25 Sept 2026, LANE ZX2)
+
+**Job:** the full Cipher 1 key table (the 15-code placeholder in `keys/cipher1.tsv` replaced with a genuine
+reconstruction), re-run of `keys/apply_and_control.py` with the control, and an Ormond/Arran 1677-80 sibling
+sweep of HMC Ormonde N.S. vols 4-5 for other cipher-numeral passages.
+
+**Cipher 1 full table.** Fetched Tomokiyo's `charlesii2_Ormond_Longford1.png` from cryptiana.web.fc2.com (1
+request; credit Tomokiyo, rule 8) and transcribed all 162 defined code/gloss pairs (from 23 to 1063; one cell,
+code 418, has no gloss printed and is omitted) into `keys/cipher1.tsv`. Grading convention (stated plainly since
+it is this worker's own choice, not printed on the image): unbracketed glosses grade H (Tomokiyo states them
+without a qualifier); any gloss in square brackets, or carrying a "?" or a "->"-marked alternate reading (e.g.
+`[k]`, `ie or ca`, `l or le`), grades M. By that rule: 130 H, 32 M.
+**Cross-check against the primary source (not just the image):** fetched `calendarofmanusc04greauoft_djvu.txt`
+again (archive.org holds vol.4 *and* vol.5 bound in one item, metadata field `volume: 4-5`; 1 request, already
+on disk from the earlier YX-ORM pass's neighbour volumes) and located the printed interlinear decipherment at
+vol.5 pp.454-461 (Earl of Longford to Earl of Arran, 16 Oct 1680) that is very likely Tomokiyo's own source for
+this table. Sample check: the printed line "The great **112 206 134 41**" decodes letter-by-letter under the
+image's table to "affair(112) de(206) ba(134) t(41)" = "affair debat[e]", cohering perfectly with "The great
+affair debate concerning..." -- strong independent corroboration that the unbracketed entries are correct, not
+just internally consistent with Tomokiyo's own page. Per rule 2 (image over transcription) the image, not this
+worker's own reading of the messy interlinear OCR, is what went into `cipher1.tsv`; the OCR was used only to
+spot-check.
+
+**Control test (`keys/apply_and_control.py`, unchanged script, updated key):**
+
+| Key | Defined codes | Target coverage | Control mean (1000 draws) | Control 99th pctile | P(random >= target) | Verdict |
+|---|---|---|---|---|---|---|
+| Cipher 1 (full, this pass) | 162 | 6/20 (30.0%) | 3.79 | 8 | 14.8% | **negative** -- at/below the control's 99th pctile |
+| Cipher 2 (unchanged) | 328 | 5/20 (25.0%) | 6.38 | 11 | 34.9% | negative (YX-ORM, unchanged) |
+| Cipher 3 (unchanged) | 37 | 3/20 (15.0%) | 1.01 | 3 | 7.8% | negative (YX-ORM, unchanged) |
+
+Matched groups (Cipher 1, full table): 33=e/l/s (M), 425=knave (H), 57=l (H), 54=h (H), 32=k (M), 55=i (M). In
+context ("...726 91 **33** **425** 93 **57** 384 **54** 700 720 but it seems 732 573 526 **32** 643 214 **55**
+440") the matches spell no coherent word or name in sequence (e/l/s-knave-?-l-?-h and k-?-?-i-?): not a reading.
+Six of the eight target values above Cipher 1's own printed range (445, 342, 726, 700, 720, 732 all exceed the
+key's highest defined code, 1063, is fine, but the *density* of definitions above 700 is much sparser: only
+920/1039/1054/1063 are defined above 800, all place-name codes, none matching) is itself weak structural evidence
+against this key, independent of the control, as already noted for Cipher 3 in YX-ORM.
+
+**Verdict: still no key fits, now on a real test.** The Cipher 1 test that YX-ORM correctly flagged as "not a
+real test -- insufficient key data" (15/~800 codes) is now a genuine one (162 codes spanning the target's full
+observed range), and it is a clean negative: coverage does not clear the control's 99th percentile, and the
+handful of matches do not cohere. This does not upgrade the target's status (`open`, stage 2, unchanged): a
+negative against three named keys is not a claim that no key exists, and Tomokiyo's own unpublished attempt
+(already on file, YX-ORM point 4) tried the *complete* table (his own working notes show a partial substitution
+attempt, not just a coverage count) and reached the same conclusion by a different method.
+
+**Sibling sweep (`siblings.tsv`).** Grepped the combined vol.4-5 djvu text for lines carrying 4+ short (2-4
+digit) numeral tokens, across the whole item (100,100 lines). Real cipher-numeral passages cluster only in
+pp.454-498 (the rest of the >2,000 matches past that range are the volume's own back-of-book page-number index,
+not ciphertext -- checked and excluded). Found, beyond the target and the already-known p.498 worked example:
+Longford to Arran 16 Oct 1680 (pp.454-461, ~230 groups by OCR count, unverified/approximate -- this passage is
+almost certainly Tomokiyo's own source for the Cipher 1 table, since the editor prints an interlinear
+decipherment above the numbers throughout); Arran to Ormond 30 Oct 1680 (pp.469-470, 57 groups, also printed
+with an interlinear gloss -- and, per the author's own next letter of 20 Nov, transmitted with copying errors:
+"I conclude the cipher is not well copied"); Arran to Ormond 13 Nov 1680 (pp.486-487, 16 groups, footnoted "The
+equivalents of this cipher are in Ormond's hand, but scarcely legible" -- a *period* decipherment, not
+Tomokiyo's reconstruction); and one short, genuinely print-undeciphered snippet, Arran to Ormond 20 Nov 1680
+(pp.493-494, 6 groups: 267 379 734 34 71 59), which the letter itself offers as a legibility test case and which
+scores 5/6 against `cipher1.tsv` (267=Essex H, 379=is H, 734=the H, 34=[m] M, 59=n H) -- too short (N=6) for a
+meaningful control, not gated, reported as a curiosity only.
+**None of this pools with the target.** All four sibling passages found already carry their own printed (or
+manuscript-interpolated) decipherment; they are the *source material* the Cipher 1 key was built from, not
+additional undeciphered ciphertext in the same system that could be pooled with the target's 20 groups for a
+bigger-N cryptanalytic attempt. The target (Jan 1677/8) also predates the whole Cipher 1 cluster (Oct-Nov 1680)
+by close to three years, consistent with Tomokiyo's own "looks similar... but seems different" framing and with
+this pass's negative coverage result. No sibling in the target's *own* system was found.
+
+**Novelty:** not classified by this worker (rule 10); a verifier session assigns the N-class. Not new, not
+first, not previously untried -- Tomokiyo already tried the full Cipher 1 key by his own method (YX-ORM point 4,
+unpublished HTML-comment note) and reached the same negative; this worker adds an independent, control-backed
+coverage test of the same key, also negative, plus the sibling-letter search.
+
+Requests this pass: `archive.org`-family 5 (`advancedsearch.php` 1, `metadata` 1, `be-api.us.archive.org/fts/v1/search`
+2, `_djvu.txt` download 1 -- the two `be-api` calls were made back-to-back without the full 1.5s gap the
+good-citizen rule asks for; no error resulted, flagged here rather than silently corrected after the fact);
+`cryptiana.web.fc2.com` 1 (the key-table PNG). No logins, no credentials, no subagents (the transcription was
+done directly from the image by this worker, not delegated, per the fan-out/subagent-sizing note in
+RETRO-2026-09-25k proposal 1 -- a 162-cell single-image table read in one pass is well under the sign-count
+scale that flagged GOLD-4D).
