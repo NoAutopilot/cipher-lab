@@ -1,0 +1,34 @@
+{
+ "slug": "pollaky-1865-1875",
+ "rank": 12,
+ "schmeh_top50": 29,
+ "name": "Ignatius Pollaky cryptograms (four encrypted newspaper ads by the Victorian private detective)",
+ "date": "1865-05-16; 1871-02-20; 1875-05-08; 1875-05-20",
+ "language_candidates": [
+  "en"
+ ],
+ "ciphertext_pending": "Four scanned ads, none transcribed to text anywhere found in this repo. All four images are linked from Cipherbrain post 29 (Schmeh 2017, sources/schmeh/posts/29-pollaky.txt), supplied to Schmeh by Tony Gaffney and Nicole Gluecklich: (1) 1865-05-16, 'written in a secret script' (invented symbols), https://scienceblogs.de/klausis-krypto-kolumne/files/2016/10/Pollaky-secret-writing.png ; (2) 1871-02-20, 'encrypted in some number code', https://scienceblogs.de/klausis-krypto-kolumne/files/2016/10/Pollaky-Telegram.png ; (3) 1875-05-08, https://scienceblogs.de/klausis-krypto-kolumne/files/2016/10/Pollaky_08051875.jpg ; (4) 1875-05-20, https://scienceblogs.de/klausis-krypto-kolumne/files/2016/10/Pollaky_20051875.jpg . A fetch of these four URLs (host scienceblogs.de, already confirmed reachable 25 Sept 2026 for the Copenhagen post) plus a blind transcription pass would put ciphertext on disk. Note (not yet verified, flag only): ads 3 and 4 carry the same two dates, 8 and 20 May 1875, as the Catokwacopa ads in a different newspaper (The Evening Standard) -- possibly coincidental, not established as related.",
+ "alphabet": "unknown per ad: ad 1 invented symbols ('secret script'); ad 2 digits ('number code'); ads 3-4 undetermined until transcribed",
+ "constraints": {
+  "source": "Tony Gaffney's 'The Agony Column' (as Jean Palmer) catalogues twelve Pollaky-signed ads; these four are the ones Schmeh received scans for and that remain unsolved ('there are two more encrypted Pollaky ads that might have been solved by Thomas Ernst; I won't cover them here' -- Schmeh)",
+  "biographical_context": "Bryan Kesselman (Pollaky's biographer) read and transcribed several hundred surviving Pollaky letters in UK and US archives (National Archives Kew, Hertfordshire Archives, Hartley Library Southampton, Sanford Museum FL); none give a clue to his ciphers, and 'Pollaky seems to have used several different ciphers, but none of the ciphertexts seems to be long enough to decipher it'",
+  "expected_difficulty": "short texts, multiple distinct systems across the four ads, no key material found in the biographical archive search to date"
+ },
+ "cheap_tests_in_order": [
+  "1. Fetch the four images (one host, scienceblogs.de, 1.5-2s apart) and run a blind transcription pass on each, recording letter/symbol/digit counts and distinct-symbol counts per ad; without a transcription no cryptanalytic test is possible. Cost $2, Sonnet.",
+  "2. Once transcribed, check ad 2 (the 'number code' ad, 1871-02-20) against contemporary telegraph/commercial codebooks the way Lima-1916's cheap test 1 did (tools/print_check.py-style grep against Internet Archive djvu.txt of period codebooks -- ABC Code, Western Union, Lieber's), since a Victorian telegram-era ad using a number code is a natural fit for a commercial codebook. Cost $1.",
+  "3. Cross-check ads 3-4 against Gaffney's 'The Agony Column' text (if a full-text copy can be located, e.g. Internet Archive or Google Books) for any partial reading Gaffney himself may have proposed but that Schmeh's post did not reproduce. Cost $1-2."
+ ],
+ "matched_control": "not yet run; no ciphertext on disk to test",
+ "judge": {
+  "language": "en",
+  "letters_min": 15,
+  "letters_max": 120,
+  "control_samples": 200
+ },
+ "value": "low: four short, structurally distinct ciphertexts, no key material found in an extensive biographical archive search, 'ciphertexts seem too short to decipher' per Pollaky's own biographer",
+ "model": "Sonnet",
+ "status_25_Sept_2026": "open; all four unsolved per Schmeh 2017; 'two more encrypted Pollaky ads that might have been solved by Thomas Ernst' exist but are out of scope for this spec (not among the four scanned here)",
+ "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run goes under cheap_test_done with its control. judge block's letters_min/max is a wide placeholder pending transcription (ads range from a short secret-script note to a number-code telegram); narrow it once real counts are known.",
+ "written": "25 Sept 2026 by LANE B2 worker bSPEC (session_016UPMZ7UBvMWu2PEsWNiFyC), claude-sonnet-5"
+}

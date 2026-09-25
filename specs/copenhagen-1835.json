@@ -1,0 +1,43 @@
+{
+ "slug": "copenhagen-1835",
+ "rank": 11,
+ "schmeh_top50": 23,
+ "name": "Copenhagen cryptogram (note found behind an 1835 painting of a Danish general)",
+ "date": "found probably late 1950s (per Schmeh, 'probably at the end of the 1950s'); the painting itself dated 1835",
+ "language_candidates": [
+  "da",
+  "de",
+  "en",
+  "sv"
+ ],
+ "ciphertext": [
+  "wnanabscdnosdevsbseygrnsrsfgfhiapsfnrpbnozinezrdrjjsdpkbjsdenoasypdexpsbnonazndjnqsqnonsalsgdkqrsf"
+ ],
+ "ciphertext_source": "Cipherbrain post 23 (Schmeh 2017, sources/schmeh/posts/23-copenhagen.txt), comment #8 (Nick Pelling, 19 Aug 2017): 'CryptoCrack has a Danish datafile & dictionary, so I transcribed the cipher here (there's a little bit of interpretation, sure, but it's pretty close)'. This is a secondary transcription of the scan, not the image itself (rule 2): the original scan (an employee of a Copenhagen military museum found the note hidden on the back of the 1835 painting; ACA members tried and failed; blog reader Kent Ramliden supplied Schmeh a scan in 2015) is linked in the post at https://scienceblogs.de/klausis-krypto-kolumne/files/2015/01/Danish-General-Cryptogram.jpg but not fetched to disk this pass (no network in this brief). Commenter Paolo Bonavoglia, working from the image directly, counted 'the number of different symbol is a bit too high, 25 out of a 107 char text'; Pelling's typed transcription is 98 letters / 23 distinct -- close but not identical, consistent with Pelling's own caveat. Treat any reading built on this transcription as conditional on both the newspaper-style secondary-source gap (rule 2) and this letter-count discrepancy.",
+ "alphabet": "lowercase a-z in Pelling's transcription (26-letter Latin substitution alphabet used for an unknown symbol set); the original scan may carry symbols beyond plain Latin letters (dots and marks noted by commenter Braunschweiger)",
+ "constraints": {
+  "letters_pelling_transcription": 98,
+  "distinct_pelling_transcription": 23,
+  "letters_per_bonavoglia_image_count": 107,
+  "distinct_per_bonavoglia_image_count": 25,
+  "structure": "three vertical lines in the manuscript divide the text into four short sentences (Briere's comment #1); not marked in Pelling's flat transcription",
+  "cipher_type": "commenters (Briere, Bonavoglia, Thomas/index-of-coincidence) converge on simple (monoalphabetic) substitution, not transposition or polyalphabetic",
+  "language_hint": "Bonavoglia's presence-function analysis: 25 distinct symbols in 107 chars is unusually high for a 26-letter European alphabet (expected ~19-20), closer to what a 29-letter alphabet (Danish, or Russian) would give if space is also enciphered"
+ },
+ "cheap_tests_in_order": [
+  "1. Monoalphabetic anneal (tools/homophonic_anneal.py or equivalent) on Pelling's 98-letter transcription judged against Danish, then German and English, n-gram models, each with a matched control (synthetic monoalphabetic-substitution plaintext of the same language, N=98, same solver, several seeds). No Danish corpus is wired into tools/judge_plaintext.py yet (only en/de/fr/it/pt); a worker taking this test either fetches a period Danish text (Internet Archive djvu.txt, ~200k+ letters, never the target's own material) and wires 'da' into LANG_CORPORA, or runs the anneal with its own ad hoc Danish frequency table (practicalcryptography.com's Danish letter/bigram table, linked in comment #5) outside the judge script. Cost $2, Sonnet.",
+  "2. Index-of-coincidence and single-letter frequency profile of the 98-letter transcription against Danish, German, English and Swedish reference tables (commenter Marc tried Swedish blind and failed); this is cheaper than a full anneal and can rule languages in or out before committing to test 1's corpus-fetch step. Cost under $1.",
+  "3. Fetch the original scan (Cipherbrain post 23's embedded image URL) and run an independent blind transcription pass against it, since Pelling flagged his own transcription as interpretive and the letter/distinct-symbol counts do not match Bonavoglia's count from the same image (98/23 vs 107/25); reconcile before trusting any cryptanalytic result on this target (rule 2). Cost $1-2 (one host, scienceblogs.de, already confirmed reachable 25 Sept 2026)."
+ ],
+ "matched_control": "not yet run; the first cheap test proposes a monoalphabetic-substitution plaintext control at N=98, language to match whichever corpus is used",
+ "judge": {
+  "letters_min": 90,
+  "letters_max": 115,
+  "control_samples": 200
+ },
+ "value": "medium: ACA-failed, 13-comment thread, small clean target (monoalphabetic per multiple independent commenters) but no wired Danish corpus and an unresolved transcription discrepancy",
+ "model": "Sonnet",
+ "status_25_Sept_2026": "open; ACA members failed, no solution as of Schmeh's 2017 post (13 comments, last dated 18 March 2021, no confirmed solve)",
+ "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run goes under cheap_test_done with its control. judge block omits 'language' because no Danish corpus is wired into tools/judge_plaintext.py's LANG_CORPORA as of 25 Sept 2026 (CLAUDE.md 'da, es, la are not wired'); length bounds alone are checked until a corpus is added.",
+ "written": "25 Sept 2026 by LANE B2 worker bSPEC (session_016UPMZ7UBvMWu2PEsWNiFyC), claude-sonnet-5"
+}

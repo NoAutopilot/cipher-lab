@@ -1,0 +1,36 @@
+{
+ "slug": "catokwacopa-1875",
+ "rank": 13,
+ "schmeh_top50": 8,
+ "name": "Catokwacopa advertisements, The Evening Standard",
+ "date": "8 and 20 May 1875",
+ "language_candidates": [
+  "en"
+ ],
+ "ciphertext_pending": "Written from ciphers/catokwacopa-1875/ (this target already has a folder, per this brief's instruction to spec it from there and say so): that folder holds only NOTES.md, no ciphertext.txt and no key -- the ciphertext itself is not on disk in this repository as of 25 Sept 2026. Per NOTES.md's own intake-gate correction (LANE CX2, 25 Sept 2026), the target's standard source, the two Evening Standard issues themselves, has never been independently opened by anyone in this repo; the British Newspaper Archive and newspapers.com scans are login-gated from the cloud and queued at LOCAL-QUEUE.tsv row L13. The working transcription used by every researcher who has published on this item (Bosbach, Estes/'Dave', Ernst, Krajcovic) is Thomas Ernst's BNA-checked text, used off-repo in Bourdeau's dbourdeau/cyphersolver 'catokwacopa/ads.py' (MIT code / CC BY 4.0 text, cite per rule 8, do not copy without attribution). A fetch of either the BNA/newspapers.com scans (LOCAL-QUEUE L13, owner's machine) or a fresh, attributed clone of Bourdeau's ads.py text would put a working ciphertext on disk here.",
+ "alphabet": "invented words over the Latin alphabet (word-substitution style, per NOTES.md and Bourdeau's audit)",
+ "constraints": {
+  "structure": "two long ads; line i of the first ad and line i of the second ad are order-preserving halves of one plaintext phrase, with 3-12 letters freely omitted per line ('W.' omission rule); Bourdeau's permutation test on the paired line lengths found 'no random re-pairing in 100,000 comes that close', so the pairing mechanism itself is statistically established",
+  "agreed_partial_reading": "an Oxford-classics frame is forced for five lines per Bourdeau's 15 Sept 2026 open-vocabulary exact-fit name search over 1,645 period proper nouns: CONINGTON, JOWETT, SHIRLEY, HERTFORD each the only name that fits its frame with no more omissions than the published reading; earlier readers (Bosbach: 'DYING DECLARATION'; Estes/'Dave': SUMMER TERM, 1853, BALLIOL) contributed the rest of the accumulated partial plaintext",
+  "unread_lines": "lines 9, 12, 23, 26, 29 remain unread per Bourdeau's 'Remaining gaps' table (as of the 25 Sept 2026 fresh-clone check); a Latin-vocabulary exact-interleaving search on line 29 (Krajcovic's QUI FIT/Horace Satires hypothesis, control: line 17 correctly returns Horace's QUI FIT) found no two-word reading in Latin either",
+  "why_not_forced": "the omission rule (3-12 letters freely inserted per line) lets 'plausible English... fit almost anything' (Bourdeau's own words, cited in NOTES.md); only a handful of lines are actually forced by the letters alone"
+ },
+ "cheap_tests_in_order": [
+  "1. Once a ciphertext is on disk (from LOCAL-QUEUE L13 or an attributed clone of Ernst's/Bourdeau's text), independently re-run Bourdeau's line-pairing permutation test on our own copy as a sanity check before trusting any downstream reading built on it here. Cost $1, Sonnet.",
+  "2. Independently re-derive the open-vocabulary exact-fit name search (1,645 period proper nouns) that forces CONINGTON/JOWETT/SHIRLEY/HERTFORD, to confirm those five lines are forced and not an artefact of Bourdeau's own name list. Cost $2.",
+  "3. Attempt the five still-unread lines (9, 12, 23, 26, 29) against an enlarged period-vocabulary list (not just proper nouns) under the same omission-rule constraint, with a matched control: how often the same forced-fit method returns a unique answer on a synthetic line of the same length and omission budget built from random English text. Cost $2-3."
+ ],
+ "matched_control": "not yet run by this spec; Bourdeau's own permutation test (100,000 random re-pairings) already serves as a control for the line-pairing mechanism, but no matched control has been run for the omission-rule reading method itself (how often it forces a unique answer on a synthetic line by chance)",
+ "judge": {
+  "language": "en",
+  "letters_min": 200,
+  "letters_max": 900,
+  "min_word_cover": 0.5,
+  "control_samples": 200
+ },
+ "value": "low as a fresh cryptanalysis target: mechanism agreed, no source claims a complete unique plaintext, and Bourdeau's own audit argues the omission rule structurally prevents one from being demonstrated (per ciphers/catokwacopa-1875/NOTES.md's verdict, 'partial', 25 Sept 2026)",
+ "model": "Sonnet",
+ "status_25_Sept_2026": "partial (ciphers/catokwacopa-1875/NOTES.md, LANE CX2, 25 Sept 2026): intake-gate-blocked on the specific point that the newspaper issue itself has never been independently opened by anyone in this repo (LOCAL-QUEUE.tsv row L13), but the substantive research status is unchanged -- mechanism agreed, unique plaintext not reconstructable per every source consulted",
+ "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run goes under cheap_test_done with its control. judge block's letters_min/max and min_word_cover are placeholders scaled to 'two long ads' since no ciphertext is on disk to measure directly; narrow once Ernst's/Bourdeau's transcription (or the BNA original) is fetched.",
+ "written": "25 Sept 2026 by LANE B2 worker bSPEC (session_016UPMZ7UBvMWu2PEsWNiFyC), claude-sonnet-5, spec'd from ciphers/catokwacopa-1875/NOTES.md per this brief's instruction (the target already has a folder; this spec does not duplicate or replace it)"
+}
