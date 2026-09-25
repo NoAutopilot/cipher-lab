@@ -1,0 +1,22 @@
+# Key for the NA 4.VEL Suriname fortification-survey cipher (Wollant, 1781). Grade C throughout: read from
+# known plaintext (2007A's own interlinear gloss, written directly on the ciphered sheet, and 2061's own
+# interlinear gloss; 2007B's plain twin used as supporting cross-reference for 2007A's title only).
+# "Confirmed" here means the SIGN's shape was read the same way by >=2 independent transcription passes
+# (either two different workers reading the same crop blind, or the same shape recurring correctly across
+# two different sheets/words) AND the letter position is unambiguous given the known gloss text.
+# See glyphs.md for the full shape atlas, occurrence list and every open disagreement; conflicts.tsv for
+# signs deliberately left OUT of this file because two readings disagreed.
+code	value	grade	source	note
+[h-loop]	n	C	2007a_titletext.jpg;2061_title_gloss.jpg	4+ occurrences: 2007A Generaal/Plan/Defensie (2 readers agree), 2061 Plan; most robust sign in the set
+[l-bare]	n	C	2007a_titletext.jpg;2061_title_gloss.jpg	second N homophone; 2007A van, 2061 en (2 sheets)
+c	l	C	2007a_titletext.jpg;2061_title_gloss.jpg	2007A Plan pos2 (one of two 2007A readers transcribed this position as an "e"-shape instead; the 2061 reader independently agrees on "c" -- 2 of 3 readings agree, see conflicts.tsv)
+[delta]	a	C	2007a_titletext.jpg;2061_title_gloss.jpg;2007a_aanmerkinge.jpg	most robust A sign: 2007A van, 2061 van+Plan, AND 2007A's own "Remarque" cipher word (aanmerkinge.jpg) -- 4 word-instances across 3 crops and 2 readers
+5	v	C	2007a_titletext.jpg;2061_title_gloss.jpg	2007A van, 2061 van (2 sheets); one conflicting instance in "Remarque" (subagent read a "5" at an E position) treated as a probable misread on a lower-confidence word, see conflicts.tsv
+7	e	C	2007a_titletext.jpg;2061_title_gloss.jpg	2007A Defensie pos4, 2061 de(D-E) pos2 (2 sheets); E is homophonic, see [ezh-dot] and [a-plain] below
+[s-loop]	p	C	2007a_titletext.jpg;2061_title_gloss.jpg	2007A Plan pos1, 2061 Plan pos1 (2 sheets); this same shape also appears to align with I at one position in Defensie -- kept as P (the cross-sheet-confirmed reading), the Defensie instance flagged in conflicts.tsv rather than trusted
+G	g	C	2007a_titletext.jpg	2007A Generaal pos1; two independent readers (this worker + subagent) transcribed the same glyph shape at this position
+[ezh-dot]	e	C	2007a_titletext.jpg;2007a_aanmerkinge.jpg	second E homophone; 2007A Generaal pos2 + Defensie pos2 (2 readers agree on 2007A) + Remarque pos2 (aanmerkinge.jpg) -- 3 word-instances
+[o-plain]	r	C	2007a_titletext.jpg	2007A Generaal pos5; two independent readers agree on this glyph shape at this position (single letter-instance, but doubly-read)
+[a-plain]	e	C	2007a_titletext.jpg	third E homophone; 2007A Generaal pos4; two independent readers agree on the glyph shape (single letter-instance, doubly-read; lower confidence than [ezh-dot]/7 since it rests on only one word)
+[v-tall]	d	C	2007a_titletext.jpg;2061_title_gloss.jpg	2007A Defensie pos1 (2 readers agree it is a "V"-shaped glyph); 2061 independently gives a plain lowercase "v" for D in "de" -- most likely the same sign drawn at two scales (title cartouche vs running text), tentatively merged; see conflicts.tsv
+y	s	C	2007a_titletext.jpg	2007A Defensie pos6 ("S" of DefenSie); two independent readers agree on this glyph shape at this position

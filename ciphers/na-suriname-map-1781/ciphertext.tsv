@@ -1,0 +1,47 @@
+# NA 4.VEL Suriname fortification-survey cipher, key-source label lines (the material key.tsv was built
+# from). RD03, 25 Sept 2026, reconciled from three independent transcription passes: this worker's own
+# pixel-level read of 2007A's title line 1; a Sonnet subagent's independent blind read of the same 2007A
+# title/nota/aanmerkinge crops; a second Sonnet subagent's independent blind read of 2061's title+battery
+# header crops. Passes agreed on the glyph sequence for every word below except two flagged positions in
+# "defensie" and one in "plan" (pos2) -- see conflicts.tsv. Word breaks are separate line ids (one cipher
+# word per id), each paired 1:1 with its known-plaintext gloss word (named in the id).
+# sign codes: bracketed = an atlas code from glyphs.md; bare ASCII = a digit or Latin-shaped glyph as read.
+line	pos	sign	conf
+2007a_t1w1_generaal	0	G
+2007a_t1w1_generaal	1	[ezh-dot]
+2007a_t1w1_generaal	2	[h-loop]
+2007a_t1w1_generaal	3	[a-plain]
+2007a_t1w1_generaal	4	[o-plain]
+2007a_t1w1_generaal	5	[x-dot]
+2007a_t1w1_generaal	6	[g-loop]
+2007a_t1w2_plan	0	[s-loop]
+2007a_t1w2_plan	1	c	m
+2007a_t1w2_plan	2	[p-loop]
+2007a_t1w2_plan	3	[h-loop]
+2007a_t1w3_van	0	5
+2007a_t1w3_van	1	[delta]
+2007a_t1w3_van	2	[l-bare]
+2007a_t1w4_defensie	0	[v-tall]
+2007a_t1w4_defensie	1	[ezh-dot]
+2007a_t1w4_defensie	2	7
+2007a_t1w4_defensie	3	[h-loop]
+2007a_t1w4_defensie	4	y
+2007a_t1w4_defensie	5	[defensie-i-cand]	m
+2007a_t1w4_defensie	6	[defensie-e-cand]	m
+2007a_aanm_w1_remarque	0	[remarque-r1-cand]	m
+2007a_aanm_w1_remarque	1	[ezh-dot]
+2007a_aanm_w1_remarque	2	[remarque-m-cand]	m
+2007a_aanm_w1_remarque	3	[delta]
+2007a_aanm_w1_remarque	4	[remarque-r2-cand]	m
+2007a_aanm_w1_remarque	5	[remarque-q-cand]	m
+2007a_aanm_w1_remarque	6	[remarque-u-cand]	m
+2007a_aanm_w1_remarque	7	[remarque-e2-cand]	m
+2061_t1w1_plan	0	[s-loop]
+2061_t1w1_plan	1	c
+2061_t1w1_plan	2	[delta]
+2061_t1w1_plan	3	[h-loop]
+2061_t2w1_van	0	5
+2061_t2w1_van	1	[delta]
+2061_t2w1_van	2	[l-bare]
+2061_t2w2_de	0	[v-plain]
+2061_t2w2_de	1	7

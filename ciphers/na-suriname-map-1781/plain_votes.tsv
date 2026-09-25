@@ -1,0 +1,44 @@
+# plaintext letter each cipher sign is aligned to, from the on-sheet interlinear gloss (2007A) or 2061's own
+# gloss. "Generaal" and "Defensie" are read with one letter fewer than their standard spelling (see glyphs.md
+# candidate table): Generaal's doubled AA and Defensie's F are hypothesised to be silently compressed/skipped
+# by the scribe; the vote for those positions is left as the nearest single letter rather than asserted with
+# confidence -- RD03, 25 Sept 2026.
+line	pos	value
+2007a_t1w1_generaal	0	g
+2007a_t1w1_generaal	1	e
+2007a_t1w1_generaal	2	n
+2007a_t1w1_generaal	3	e
+2007a_t1w1_generaal	4	r
+2007a_t1w1_generaal	5	a
+2007a_t1w1_generaal	6	l
+2007a_t1w2_plan	0	p
+2007a_t1w2_plan	1	l
+2007a_t1w2_plan	2	a
+2007a_t1w2_plan	3	n
+2007a_t1w3_van	0	v
+2007a_t1w3_van	1	a
+2007a_t1w3_van	2	n
+2007a_t1w4_defensie	0	d
+2007a_t1w4_defensie	1	e
+2007a_t1w4_defensie	2	e
+2007a_t1w4_defensie	3	n
+2007a_t1w4_defensie	4	s
+2007a_t1w4_defensie	5	i
+2007a_t1w4_defensie	6	e
+2007a_aanm_w1_remarque	0	r
+2007a_aanm_w1_remarque	1	e
+2007a_aanm_w1_remarque	2	m
+2007a_aanm_w1_remarque	3	a
+2007a_aanm_w1_remarque	4	r
+2007a_aanm_w1_remarque	5	q
+2007a_aanm_w1_remarque	6	u
+2007a_aanm_w1_remarque	7	e
+2061_t1w1_plan	0	p
+2061_t1w1_plan	1	l
+2061_t1w1_plan	2	a
+2061_t1w1_plan	3	n
+2061_t2w1_van	0	v
+2061_t2w1_van	1	a
+2061_t2w1_van	2	n
+2061_t2w2_de	0	d
+2061_t2w2_de	1	e
