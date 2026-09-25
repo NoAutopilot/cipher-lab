@@ -121,6 +121,24 @@
    },
    "caveat": "Both controls sit at or above the ~0.95 near-ceiling line CLAUDE.md rule 3 warns has 'no headroom to show a gain regardless of the technique' -- a masc anneal at N=746, K=24 (restarts=8) essentially always recovers a random simple-substitution key at this length, for both the plain and vowel-dropped English designs. Both target decodes (ciphers/mccormick-1999/families/masc-1.txt, overwritten by each run in turn -- see the run's own date/corpus header line inside the file) read as letter salad with no recognisable English words, despite the judge PASS: e.g. run 1 opens 'hanheathestasiheahethtsh / deatalastalestereeastalestoar'; run 2 opens 'htdhmtthrsttsnhmthrthtsh / grtttltsttlsstrhsststtlrstwth'. This is consistent with the judge's own documented limitation for this target (schema_note above: 'no language check is meaningful yet given the token structure'): the heavy repeated-token structure the notes already carry (NCBE, -RSE family, test 1) drives n-gram likelihood up under any consistent key, independent of whether the key is right, so a PASS here is not evidence of a real simple-substitution decipherment under either English design. Neither run supports the source's competing hypothesis (personal shorthand/nomenclator, not 1:1 letter substitution) over the null; a bespoke tokenizer-aware judge (test 1's schema_note) remains the more promising next step, not a straight masc anneal at this N.",
    "script": "tools/data/en_vdrop/build_en_vdrop.py (new tool + tools/tests/test_en_vdrop.py, offline test)"
+  },
+  "3": {
+   "date": "25 Sept 2026",
+   "method": "LANE B3 worker bMCC3: tools/family_run.py specs/mccormick-1999.json --family homophonic --cipher specs/cheap-tests/mccormick-1999/cipher_both_notes.txt --tokens letters --seeds 3 --gate 0.6, run five times -- (a) default English corpus, (b) vowel-dropped English corpus (tools/data/en_vdrop), (c-e) three false-positive-floor runs against the default corpus with the target ciphertext replaced by its own 746 letters shuffled (new --shuffle-target SEED option added to tools/family_run.py this run, offline test in tools/tests/test_family_run.py check 7; N/K/message-length structure unchanged by the shuffle, only letter order). Rows in ciphers/mccormick-1999/HYPOTHESES.md.",
+   "control_recovery": {
+    "default_english": "mean 0.998, range 0.997-0.999 (3 seeds)",
+    "vowel_dropped_english": "mean 0.652, range 0.058-0.992 (3 seeds; one seed essentially failed to anneal -- less reliable than test 2 masc vdrop control (0.985))",
+    "shuffled_target_x3": "mean 0.998, range 0.997-0.999 (3 seeds), identical each shuffle run since only the target changes, not the control"
+   },
+   "target_judge": {
+    "default_english": "FAIL (tools/judge_plaintext.py, language en, min_word_cover 0.6): score=-1.48, null_p99=-2.071, real_p05=-0.864, real_median=-0.813",
+    "vowel_dropped_english": "FAIL: score=-2.329 (below even null_p99=-2.071)",
+    "shuffled_target_seed_1": "FAIL: score=-1.807",
+    "shuffled_target_seed_2": "FAIL: score=-1.839",
+    "shuffled_target_seed_3": "FAIL: score=-1.896"
+   },
+   "reading": "homophonic excluded at N=746, K=24 under the letters-only fold: the real target FAILs the judge under both corpora, and its default-corpus judge score (-1.48) sits in the same range as three independent shuffles of its own letters (-1.807 to -1.896, the CLAUDE.md rule 3 false-positive floor) -- the anneal cannot distinguish the real target from random letter salad of the same shape. Combined with test 2 (masc excluded, same fix), both classical letter-substitution families tried so far are excluded at this N/K/fold; the source-stated repeated-token/shorthand hypothesis (NCBE, -RSE family) remains untested by either family and is still the more promising next step (a tokenizer-aware judge, not built here).",
+   "script": "tools/family_run.py --shuffle-target (new option + tools/tests/test_family_run.py check 7)"
   }
  },
  "judge": {

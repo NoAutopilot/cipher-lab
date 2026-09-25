@@ -5,7 +5,8 @@ substitution; runs the masc family with the control first and checks (1) the con
 target row and decode file are written and the decode reads the known plaintext above 0.9, (3) a control below
 the gate exits 3 without a target row or decode, (4) the HYPOTHESES.md table is well formed (every row has the
 header's cell count, the marker is present once), (5) a --label with a rule 10 word is refused (exit 2), (6) the periodic_vigenere family reads the same window
-under a period-7 key (control and target above 0.9, key recovered, judge PASS in the row).
+under a period-7 key (control and target above 0.9, key recovered, judge PASS in the row), (7) --shuffle-target permutes
+the target's own tokens (N/K unchanged), writes a distinctly-suffixed decode file, and marks the row.
 Run: python3 tools/tests/test_family_run.py   (about a minute)"""
 import json, os, random, re, subprocess, sys, tempfile, time
 
@@ -79,6 +80,20 @@ def test_family_run():
             assert widths == {10}, (widths, rows)
             assert len(rows) == 4, rows  # header, separator, target row, gate row
             assert not re.search(r"\b(solved|new|first|unpublished)\b", table, re.I), table
+            # (7) --shuffle-target: target's own tokens permuted (false-positive floor); decode file gets a
+            # distinct suffix so it never collides with the real target-1.txt, N/K unchanged, row marks the seed
+            rc, log = run(sp, "--family", "masc", "--seed", "9", "--seeds", "1", "--restarts", "2",
+                          "--param", "iters=20000", "--gate", "0.0", "--shuffle-target", "3",
+                          "--out", out, "--label", "offline test shuffle")
+            assert rc == 0, (rc, log)
+            assert "target letters shuffled, seed 3" in log and "N=300 signs, K=" in log, log
+            shuf_path = os.path.join(fdir, "families", "masc-9-shuffle3.txt")
+            assert os.path.exists(shuf_path) and not os.path.exists(os.path.join(fdir, "families", "masc-9.txt")), log
+            shuf_dec = "".join(l.strip() for l in open(shuf_path) if not l.startswith("#"))
+            assert len(shuf_dec) == len(truth), (len(shuf_dec), len(truth))
+            assert "TARGET LETTERS SHUFFLED (seed 3" in open(shuf_path).read()
+            table = open(out, encoding="utf-8").read()
+            assert "shuffle_target=3" in table, table
             # periodic_vigenere on a second synthetic spec: the same window under a period-7 Vigenere key
             # written as three lines (continuous key); the control uses the period scanned on the target
             A = "abcdefghijklmnopqrstuvwxyz"

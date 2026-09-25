@@ -12,7 +12,8 @@ on it and records the verdict line.
 
   python3 tools/family_run.py SPEC --family FAMILY [--control-only | --target-only-if-gated]
           [--seed 1] [--seeds 3] [--restarts 8] [--corpus PATH ...] [--gate 0.6] [--out HYPOTHESES.md]
-          [--label TEXT] [--param k=v ...] [--cipher PATH] [--tokens auto|letters|space] [--dry-run]
+          [--label TEXT] [--param k=v ...] [--cipher PATH] [--tokens auto|letters|space]
+          [--shuffle-target SEED] [--dry-run]
 
   example (the demonstration of 25 Sept 2026):
   python3 tools/family_run.py specs/cigaret-case-1909.json --family masc --seed 1 --restarts 4 --seeds 3 \\
@@ -40,6 +41,11 @@ Ciphertext: read from the spec (`ciphertext` as a string, a list of lines, or a 
 letters = every a-z letter is a sign, space = whitespace-separated tokens are signs ('.' tokens dropped as word
 dividers), auto (default) = letters when the spec's alphabet says a-z/Latin/letters, else space. --cipher PATH
 overrides with a long-format TSV (header with a `sign` column, DOT/COL rows dropped) or a text file.
+--shuffle-target SEED replaces the target ciphertext's own letters/tokens with a random permutation of themselves
+(Random(SEED).shuffle, redistributed back into the original message lengths, so N/K/design are unchanged) before
+the target solve; the control is unaffected (still the ordinary matched-corpus control). This is the false-positive
+floor for a gate-plus-judge PASS on garbage of the same shape (CLAUDE.md rule 3); the decode file and row are
+marked shuffle=SEED so they never collide with the real target's own row.
 Exit codes: 0 run complete (gate met, or --control-only); 3 CONTROL BELOW GATE (control row written, no target);
 2 bad arguments (a --label carrying a rule 10 word: solved, new, first, unpublished).
 The row never carries a decode; the decode is in the families/ file. The tool never writes the words solved,
@@ -219,6 +225,9 @@ def main(argv=None):
     ap.add_argument("--param", action="append", default=[], help="family parameter k=v (iters, order, tabula, period, beam ...)")
     ap.add_argument("--cipher", help="ciphertext file overriding the spec (long-format TSV with a sign column, or text)")
     ap.add_argument("--tokens", default="auto", choices=["auto", "letters", "space"])
+    ap.add_argument("--shuffle-target", type=int, default=None, metavar="SEED",
+                    help="replace the target's own tokens with a random permutation of themselves (false-positive "
+                         "floor); N/K/message lengths unchanged, control unaffected")
     ap.add_argument("--dry-run", action="store_true", help="print the plan (N, K, corpora, paths) and run nothing")
     a = ap.parse_args(argv)
 
@@ -232,6 +241,16 @@ def main(argv=None):
         msgs, mode = read_cipher_file(a.cipher, a.tokens)
     else:
         msgs, mode = read_spec_cipher(spec, a.tokens)
+    if a.shuffle_target is not None:
+        import random
+        rng = random.Random(a.shuffle_target)
+        toks_shuf = [t for m in msgs for t in m]
+        rng.shuffle(toks_shuf)
+        shuffled, pos = [], 0
+        for m in msgs:
+            shuffled.append(toks_shuf[pos:pos + len(m)])
+            pos += len(m)
+        msgs = shuffled
     toks = [t for m in msgs for t in m]
     N, K = len(toks), len(set(toks))
     if N == 0:
@@ -243,10 +262,15 @@ def main(argv=None):
     fam = families.load(a.family)
     seeds = list(range(a.seed, a.seed + max(1, a.seeds)))
     pshow = ",".join(f"{k}={v}" for k, v in params.items() if k not in ("N", "K", "lengths", "target_msgs", "messages_independent"))
+    if a.shuffle_target is not None:
+        pshow = (pshow + "," if pshow else "") + f"shuffle_target={a.shuffle_target}"
+    dsuffix = f"-shuffle{a.shuffle_target}" if a.shuffle_target is not None else ""
     plan = (f"family {a.family}: {fam.DESCRIPTION}\nspec {a.spec} slug {slug}\nciphertext: {len(msgs)} message(s), "
-            f"N={N} signs, K={K} distinct, tokens={mode}\ncorpora: {', '.join(rel(p) for p in paths)}\n"
+            f"N={N} signs, K={K} distinct, tokens={mode}" +
+            (f" (target letters shuffled, seed {a.shuffle_target}, false-positive floor)" if a.shuffle_target is not None else "") +
+            f"\ncorpora: {', '.join(rel(p) for p in paths)}\n"
             f"control seeds {seeds}, restarts {a.restarts}, gate {a.gate}, params {pshow or '-'}\n"
-            f"row -> {rel(out)}; decode -> ciphers/{slug}/families/{a.family}-{a.seed}.txt")
+            f"row -> {rel(out)}; decode -> ciphers/{slug}/families/{a.family}-{a.seed}{dsuffix}.txt")
     print(plan)
     if a.dry_run:
         return 0
@@ -279,9 +303,10 @@ def main(argv=None):
     dec, sc, info = fam.solve(msgs, spec, a.seed, a.restarts, corpora, dict(params))
     fdir = os.path.join(ROOT, "ciphers", slug, "families")
     os.makedirs(fdir, exist_ok=True)
-    dpath = os.path.join(fdir, f"{a.family}-{a.seed}.txt")
+    dpath = os.path.join(fdir, f"{a.family}-{a.seed}{dsuffix}.txt")
     with open(dpath, "w", encoding="utf-8") as f:
-        f.write(f"# {slug} {a.family} seed {a.seed} restarts {a.restarts} {date} UTC; control mean {ctl}; score {sc:.3f}\n")
+        shuf_note = f"; TARGET LETTERS SHUFFLED (seed {a.shuffle_target}, false-positive floor)" if a.shuffle_target is not None else ""
+        f.write(f"# {slug} {a.family} seed {a.seed} restarts {a.restarts} {date} UTC; control mean {ctl}; score {sc:.3f}{shuf_note}\n")
         f.write(f"# {json.dumps(info, ensure_ascii=False, default=str)[:2000]}\n")
         pos = 0
         for m in msgs:

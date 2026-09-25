@@ -45,3 +45,56 @@ consistent key, so a PASS here is not evidence either English design is right. N
 or rules out the source's shorthand/nomenclator hypothesis over the null. Next step (not run here,
 out of this brief's scope): a bespoke tokenizer-aware judge treating the repeated multi-character
 tokens as signs, per test 1's and this spec's own schema_note.
+
+**Update 25 Sept 2026 (LANE B2 orchestrator, 19:02 flag):** `tools/judge_plaintext.py` was fixed to fail
+closed when a judge block has no `language`/corpora; the spec's judge block now carries `language: en,
+min_word_cover: 0.6` (added by that same flag). Re-judged under the fixed judge, both cheap test 2
+decodes above are **FAIL**, not PASS -- the earlier PASS lines in this section and in HYPOTHESES.md were
+a length-only check, not a real language check; masc is excluded at N=746, K=24 under both corpora.
+
+## Cheap test 3 (25 Sept 2026, LANE B3 bMCC3) -- homophonic family, NEAR.md's named next step
+
+`tools/family_run.py specs/mccormick-1999.json --family homophonic --cipher
+specs/cheap-tests/mccormick-1999/cipher_both_notes.txt --tokens letters --seeds 3 --gate 0.6`, same
+letters-only fold as test 2 (N=746, K=24 auto-derived from the ciphertext), homophonic_anneal's own K
+(one homophone slot per sign actually present, i.e. K=24 -- the spec carries no separate declared K),
+run three times, plus a false-positive floor (`--shuffle-target SEED`, new option added to
+`tools/family_run.py` this run with an offline test in `tools/tests/test_family_run.py`, check (7)):
+
+| run | CONTROL mean (range), 3 seeds | TARGET judge |
+|---|---|---|
+| default English corpus | 0.998 (0.997-0.999) | **FAIL** score=-1.48 vs null_p99=-2.071, real_p05=-0.864 |
+| vowel-dropped English corpus (`tools/data/en_vdrop`) | 0.652 (0.058-0.992) | **FAIL** score=-2.329 (below even null_p99) |
+| shuffled target, default corpus, shuffle seed 1 | 0.998 (0.997-0.999) | **FAIL** score=-1.807 |
+| shuffled target, default corpus, shuffle seed 2 | 0.998 (0.997-0.999) | **FAIL** score=-1.839 |
+| shuffled target, default corpus, shuffle seed 3 | 0.998 (0.997-0.999) | **FAIL** score=-1.896 |
+
+Default-English control is near ceiling (0.998), same as test 2's masc controls, so it has no headroom
+to show a gain (rule 3 caveat) but the target still FAILs the judge outright this time (the earlier
+"PASS" in test 2 was the judge's own bug, now fixed -- see the update note above). The vowel-dropped
+control is markedly less reliable for homophonic than it was for masc (test 2: 0.985; here: mean 0.652,
+range 0.058-0.992 -- one of the three seeds essentially failed to anneal at all), barely clearing the
+0.6 gate; a control that unstable is weak evidence either way from that run alone.
+
+The false-positive floor is the important number here: three independent shuffles of the target's own
+746 letters (same multiset, same K=24, random order -- CLAUDE.md rule 3's "same length, symbol count,
+design" synthetic negative, built from the target itself rather than a corpus) all FAIL, with scores
+(-1.807, -1.839, -1.896) in the *same range* as the real target's own default-corpus score (-1.48) --
+if anything the real target scores slightly *better* than the shuffled noise, but all four sit well
+inside FAIL territory, nowhere near real_p05 (-0.864). This means the homophonic anneal's best decode
+of the real 746-letter target is statistically indistinguishable from its best decode of random letter
+salad of the same shape: no signal above noise. Combined with test 2 (masc excluded, same target, same
+judge fix), both families tried so far are excluded at this N, K under the letters-only fold.
+
+Decodes: `ciphers/mccormick-1999/families/homophonic-1-default_en.txt`,
+`homophonic-1-vdrop_en.txt`, `homophonic-1-shuffle1.txt`, `homophonic-1-shuffle2.txt`,
+`homophonic-1-shuffle3.txt` (all read as letter salad on inspection, consistent with the FAIL judge
+lines). Full rows in `HYPOTHESES.md` (includes one earlier `--control-only` calibration row at 19:13,
+kept per the tool's append-only rule, and one rerun of the default-corpus row at 19:20 to save its
+decode file separately before the vowel-dropped run's file overwrote the shared `homophonic-1.txt`
+path -- same numbers both times, confirming determinism). This is a control-backed negative for the
+homophonic family at this N/K/fold, not a `closed-negative` for the target as a whole (CLAUDE.md rule 5
+amendment): the letters-only fold itself remains untested against the source's own repeated-token/
+shorthand hypothesis (test 1's schema_note, tests 2 and 3's `hypothesis_note`) -- a tokenizer-aware
+judge treating NCBE/-RSE/etc. as signs is still the more promising untried step, not a straight
+letter-substitution family at any K.
