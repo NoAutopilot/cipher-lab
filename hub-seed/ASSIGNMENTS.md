@@ -461,3 +461,10 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T17:14Z	session_016UPMZ7UBvMWu2PEsWNiFyC	done	bSPEC ten specs ranks 11-20	pushed
 2026-09-25T17:13Z	session_012H13Lr87WvKvzsuhmyM6GD	LANE B2 bBUL (Sonnet, cap 3)	bullet-tuscany-1944 test 1 claimed-solution check	brief 2026-09-25-lane-b2-bullet-tuscany-1944.md
 2026-09-25T17:13Z	session_01WZHcenYMEBmsycwsAeFDeF	LANE B2 bMCC (Sonnet, cap 3)	mccormick-1999 test 1 token profile	brief 2026-09-25-lane-b2-mccormick-1999.md
+2026-09-25T17:17Z	session_011NNQjZDLFbNka9KPKyT9RQ	LANE R6 L2 interrupted $16.50 F, archived	salviati f56r	pass B lines 1-10
+2026-09-25T17:17Z	session_0191Sh3tN3mGAXyCNczXpSRX	LANE R6 L3 done $15.95 D-, archived	salviati f56v	gate 82.6
+2026-09-25T17:17Z	session_01JwPwn74TpNhvpHPj5ejm7Y	LANE R6 L4 done $12.85 D-, archived	salviati f57r	gate 86.1
+2026-09-25T17:17Z	session_016RP5VhQ5VvgijgCXjbxMwR	LANE R6 L5 done $9.61 N, archived	salviati f57v	gate 77.0 FAIL
+2026-09-25T17:17Z	session_01Mm3Ez9uXdarTGdxaCxezPQ	LANE R6 L1c done $3.19 D, archived	salviati f55v pass C	334 tokens
+2026-09-25T17:15Z	session_01JfbSKy1t6b5fuLQexnv8KL	LANE R6 L2b (Sonnet, cap 8)	salviati f56r pass B 11-19 + gate	brief 2026-09-25-lane-r6-l2b-l5c-salviati-finish.md
+2026-09-25T17:15Z	session_01Tswh7FNr6HZppsfKZ8ChJU	LANE R6 L5c (Sonnet, cap 5)	salviati f57v pass C	same
