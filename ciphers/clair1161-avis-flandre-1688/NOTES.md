@@ -1,4 +1,53 @@
-status: open
+open
+Rousset, *Histoire de Louvois et de son administration politique et militaire* (tome IV, archive.org
+histoiredelouvoi04rousuoft, read in full via djvu text and grepped by this worker), control "Boufflers" 23
+hits confirming readable OCR; no hit for "Avis de Flandre" and the volume's several "Noailles" hits are all
+the duc de Noailles's Catalonia/Roussillon campaigns, not Flanders -- consistent with the item's sender/date
+still being unidentified rather than a confirmed absence from print.
+
+## Check-solved (LANE CX, 2026-09-25)
+
+Six-source sweep run fresh this pass (LANE CX worker CX-CLAIR), on top of -- not only quoting -- the 24 Sept
+2026 LANE G check-solved pass kept below (which already established the item has no independent sender, date
+or recipient in the BnF finding aid, only a shared folio note for four different Noailles-family pieces
+spanning 1570-1719, and that the volume's own "Année 1688" heading is the compiled minutes-series slot, not
+necessarily this item's date).
+
+1. **Web search.** `"Avis de Flandre" chiffre Clairambault 1161 Noailles Louvois 1688 espionnage` -- no hit
+   identifying this item, no printed edition, no secondary literature (repeats and extends the 24 Sept query).
+2. **Standard printed edition, opened and read.** Job brief names Rousset's *Histoire de Louvois* for 1688
+   war-office correspondence. archive.org `histoiredelouvoi04rousuoft` (tome IV, covers into the 1690s, the
+   Nine Years' War years) fetched in full (`_djvu.txt`, HTTP 200, 1.2MB) and grepped: control "Boufflers" 23
+   hits (a Flanders-theatre marshal, confirms the OCR is readable and the volume covers 1688-era Flanders
+   material at all); "1688" 30 hits; "Noailles" 14 hits, all read in context -- every one is the duc de
+   Noailles's Roussillon/Catalonia command, not Flanders; "Avis de Flandre" 0 hits; "chiffre" 6 hits (none in
+   a Flanders-intelligence context). No occurrence of this item. Acta Pacis Westphalicae not applicable (wrong
+   war/period for this target). APW is for clair571/espagnol142, not this row.
+3. **Community lists.** No Cryptiana page found via web search naming "Clairambault 1161" or "Avis de
+   Flandre" (repeats 24 Sept finding; local `sources/cryptiana/` snapshot has no dedicated Louis-XIV Flanders
+   page either, checked by directory listing). No Cipherbrain hit.
+4. **DECODE.** `unsolved-ciphers/catalogue/decode-catalog.csv` (fresh clone, 25 Sept 2026) grepped for
+   "clairambault 116", "avis de flandre", "noailles": zero hits for the shelfmark or the item title; several
+   unrelated "Noailles" rows exist in the catalogue's plaintext-corpus files only (not cipher records).
+5. **Bourdeau** (fresh shallow clone, 25 Sept 2026). Grepped for "clairambault 1161", "avis de flandre": no
+   hit.
+6. **Aymeloglu** (fresh shallow clone, 25 Sept 2026). Grepped for "clairambault 1161", "avis de flandre": no
+   hit.
+
+Requests this section: archive.org 2 (1 advancedsearch already run for target 1's edition family, reused; 1
+new `_djvu.txt` fetch for Rousset tome IV). WebSearch 1. github.com 0 new (clones reused from target 1).
+
+## Verdict (confirmed, LANE CX 2026-09-25)
+
+Stays **open, low confidence**, gate now closed with a real edition read (Rousset tome IV, controlled). The
+24 Sept pass's core blocker is unchanged: without a sender or date for "Avis de Flandre, chiffrés" beyond the
+shared folio's 1570-1719 span, the correspondent-specific legs of the sweep (a dedicated edition, a calendar)
+cannot be targeted precisely -- Rousset's negative here is a real but broad-brush check (Louvois's own
+published administrative correspondence, not a Noailles family edition), not a close read of the right
+volume. The image (folio 106 et suiv., not yet located per the 24 Sept access-route section below) remains
+the fastest way to actually identify sender and date.
+
+---
 
 ## M20 — BnF Clairambault 1161, "Avis de Flandre, chiffrés"
 
