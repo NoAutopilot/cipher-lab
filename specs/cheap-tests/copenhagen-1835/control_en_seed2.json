@@ -1,0 +1,20 @@
+{
+ "mode": "control",
+ "N": 98,
+ "K": 23,
+ "letters_correct": 92,
+ "share": 0.939,
+ "score": -200.02127455613822,
+ "plain": "theproiectgutenbergebookoftheaduenturesofsherlockholmesthisebookisfortheuseofanyoneanywhereintheun",
+ "decoded": "theproiectgutentergetookoftheaduenturesofsherlockholmesthisetookisfortheuseofandoneandthereintheun",
+ "restart_scores": [
+  -200.0,
+  -206.0,
+  -206.7,
+  -220.9,
+  -237.3,
+  -238.4,
+  -238.9,
+  -250.5
+ ]
+}

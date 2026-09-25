@@ -1,0 +1,48 @@
+{
+ "mode": "target",
+ "N": 98,
+ "K": 23,
+ "score": -221.8563664588579,
+ "key": {
+  "a": "n",
+  "b": "d",
+  "c": "b",
+  "d": "l",
+  "e": "s",
+  "f": "r",
+  "g": "o",
+  "h": "a",
+  "i": "t",
+  "j": "d",
+  "k": "g",
+  "l": "n",
+  "n": "e",
+  "o": "r",
+  "p": "i",
+  "q": "r",
+  "r": "u",
+  "s": "e",
+  "v": "m",
+  "w": "a",
+  "x": "k",
+  "y": "t",
+  "z": "f"
+ },
+ "decoded": "aenendeblerelsmedestoueeueroratniereuiderftesfuluddeligddelsernetilskiederenfeldererereenneolgruer",
+ "restart_scores": [
+  -221.9,
+  -223.0,
+  -223.5,
+  -225.0,
+  -225.6,
+  -227.9,
+  -228.2,
+  -241.5
+ ],
+ "restart_decodes": [
+  "aenendeblerelsmedestoueeueroratniereuiderftesfuluddeligddelsernetilskiederenfeldererereenneolgruer",
+  "fenendelserestredetunieeiernrmandereidderhaethisittesdodtesterneudstadederenhestegegereendensogier",
+  "fenendelserestmedetnoieeierorkundereidderhuethisittesdadtesternendstidederenhestegegereengeosagier",
+  "fenendelserestmedethoieeierordenuereiuderneetnisittesuadtesternehustouederennestegegereendeosagier"
+ ]
+}

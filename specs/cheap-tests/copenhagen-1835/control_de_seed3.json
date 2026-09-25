@@ -1,0 +1,20 @@
+{
+ "mode": "control",
+ "N": 98,
+ "K": 23,
+ "letters_correct": 84,
+ "share": 0.857,
+ "score": -198.1750958397803,
+ "plain": "amanfangschuffgotthimelunderdenunddieerdewarwustundleerundeswarfinsterauffdertieffeunddergeistgott",
+ "decoded": "emendengschundgotthimelunderdenunddieerdewerwustundleerundeswerdinstereunddertieddeunddergeistgott",
+ "restart_scores": [
+  -198.2,
+  -198.2,
+  -203.3,
+  -210.3,
+  -212.2,
+  -240.4,
+  -242.0,
+  -242.1
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "mode": "control",
+ "N": 98,
+ "K": 23,
+ "letters_correct": 62,
+ "share": 0.633,
+ "score": -213.13010227671577,
+ "plain": "historisttidsskriftudgiuetnafdendanskehiftorifkeforeninguedselskabetsbestyrelseredigeretuaiafsoncm",
+ "decoded": "bisteradmmidsskralmudgauetneldendenskebilterilkelerenangueddenskeuetsuedterenderedigeremueielsenfo",
+ "restart_scores": [
+  -213.1,
+  -221.0,
+  -222.4,
+  -222.8,
+  -226.3,
+  -232.6,
+  -234.8,
+  -237.9
+ ]
+}

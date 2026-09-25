@@ -1,0 +1,48 @@
+{
+ "mode": "target",
+ "N": 98,
+ "K": 23,
+ "score": -233.3212237392129,
+ "key": {
+  "a": "l",
+  "b": "u",
+  "c": "d",
+  "d": "s",
+  "e": "d",
+  "f": "g",
+  "g": "i",
+  "h": "e",
+  "i": "n",
+  "j": "t",
+  "k": "c",
+  "l": "a",
+  "n": "e",
+  "o": "r",
+  "p": "a",
+  "q": "h",
+  "r": "e",
+  "s": "n",
+  "v": "e",
+  "w": "f",
+  "x": "m",
+  "y": "d",
+  "z": "i"
+ },
+ "decoded": "felelundsernsdenunddieenengigenlangeeauerinediesettnsacutnsderlndasdmanuereliestehnherenlanischeng",
+ "restart_scores": [
+  -233.3,
+  -234.3,
+  -238.5,
+  -240.5,
+  -242.2,
+  -242.4,
+  -243.0,
+  -244.2
+ ],
+ "restart_decodes": [
+  "felelundsernsdenunddieenengigenlangeeauerinediesettnsacutnsderlndasdmanuereliestehnherenlanischeng",
+  "benendedieneittedetalueeuerlrkonnereundenwoetwuiusseincdseitenneanitgnedenenweiseheheneenselichuer",
+  "benenserdenedigeseittueeuertrkondereudsennoeinudulleddaslediennetddiedesenennedleseseneenhetdasuer",
+  "wererseitenetlieseliugeegenundardenegdsenhaelhgtgssetdassetlenreidtlidesenerhetseneneneerfeutangen"
+ ]
+}

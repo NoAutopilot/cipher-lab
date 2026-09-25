@@ -30,6 +30,19 @@
   "3. Fetch the original scan (Cipherbrain post 23's embedded image URL) and run an independent blind transcription pass against it, since Pelling flagged his own transcription as interpretive and the letter/distinct-symbol counts do not match Bonavoglia's count from the same image (98/23 vs 107/25); reconcile before trusting any cryptanalytic result on this target (rule 2). Cost $1-2 (one host, scienceblogs.de, already confirmed reachable 25 Sept 2026)."
  ],
  "matched_control": "not yet run; the first cheap test proposes a monoalphabetic-substitution plaintext control at N=98, language to match whichever corpus is used",
+ "cheap_test_done": {
+  "test": 1,
+  "date": "25 Sept 2026",
+  "method": "tools/homophonic_anneal.py (1:1 MASC anneal, order=3, restarts=8, iters=40000) on the 98-letter Pelling transcription, scored against Danish (tools/data/da19/, built this pass), German (tools/data/de16/) and English (tools/data/pg1661_holmes.txt+pg2701_mobydick.txt) corpora, each with a matched control (real plaintext of that language enciphered as a K=23/N=98 MASC and solved blind, 3 seeds). Script/output: specs/cheap-tests/copenhagen-1835/ (rerun.sh, README.md).",
+  "worker": "LANE B2 worker bCPH",
+  "target_scores": {"da": -221.9, "de": -233.3, "en": -236.4},
+  "control_scores_3seeds": {
+   "da": {"letters_correct_pct": [63.3, 0.0, 73.5], "score_range": [-222.0, -207.1]},
+   "de": {"letters_correct_pct": [80.6, 85.7, 85.7], "score_range": [-202.3, -198.2]},
+   "en": {"letters_correct_pct": [93.9, 93.9, 93.9], "score_range": [-200.0, -200.0]}
+  },
+  "result": "not moved: no legible decode in any language. Weak, asymmetric positive signal for Danish over German/English (target's da score sits inside the da control's own real-plaintext score range, unlike de/en where the target scores well below the control range) -- but the da control's own blind recovery is low and erratic (0-73.5%), so this is not a clean solve-rate comparison. Full reasoning and two caveats (da19 corpus is smaller/noisier than de/en; the en control's ~94% is a Gutenberg-boilerplate ceiling artifact, not a real MASC-recovery baseline) in specs/cheap-tests/copenhagen-1835/README.md. rule 10: no novelty wording, nothing solved to classify. Test 2 not run per brief."
+ },
  "judge": {
   "letters_min": 90,
   "letters_max": 115,

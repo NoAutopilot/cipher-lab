@@ -1,0 +1,48 @@
+{
+ "mode": "target",
+ "N": 98,
+ "K": 23,
+ "score": -236.38564009377404,
+ "key": {
+  "a": "n",
+  "b": "r",
+  "c": "s",
+  "d": "s",
+  "e": "t",
+  "f": "r",
+  "g": "a",
+  "h": "p",
+  "i": "o",
+  "j": "l",
+  "k": "a",
+  "l": "c",
+  "n": "i",
+  "o": "n",
+  "p": "e",
+  "q": "d",
+  "r": "u",
+  "s": "e",
+  "v": "h",
+  "w": "y",
+  "x": "h",
+  "y": "h",
+  "z": "g"
+ },
+ "decoded": "yininressinestherethauieuerarponeeriueringoitgusullesearlestinnehestheeriningislidedinienceasaduer",
+ "restart_scores": [
+  -236.4,
+  -238.7,
+  -244.1,
+  -246.7,
+  -247.2,
+  -247.5,
+  -252.8,
+  -253.1
+ ],
+ "restart_decodes": [
+  "yininressinestherethauieuerarponeeriueringoitgusullesearlestinnehestheeriningislidedinienceasaduer",
+  "yesestainerandwatadliteatatithesoatetoterseedstnthhanofthandersalondboateressenheuauereasmainfutat",
+  "werernamsedastranatubteatalblycrialetinedicetitsthhasionhastedrauistrianederieshenanedearkabsontal",
+  "bseseitmosetohatitherustutereadentesuniseadshauoulltonwiltohseetenohintiseseasolsotosestentrowoute"
+ ]
+}
