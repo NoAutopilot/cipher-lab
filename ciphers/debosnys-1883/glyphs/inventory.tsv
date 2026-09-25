@@ -1,0 +1,168 @@
+sign	count	pages	H	M	L	exemplars	note
+X	199	c1,c2a,c2b,c3,c4a,c4b	91	105	3	c1_01_004,c1_01_018,c1_02_017,c2a_01_003,c2a_01_015,c2a_01_018,c2b_01_013,c2b_01_020	
+PCT	62	c1,c2a,c2b,c3,c4a,c4b	46	16	0	c1_02_003,c1_02_018,c1_03_015,c2a_01_025,c2a_02_019,c2a_04_023,c2b_03_025,c2b_04_016	
+Y-CURL	48	c1,c2a,c2b,c3,c4a,c4b	19	26	3	c1_01_008,c1_02_015,c1_05_009,c2a_03_023,c2a_08_008,c2a_09_034,c2b_03_026,c2b_04_001	
+BLOB	39	c1,c2a,c2b,c3,c4a	0	38	1	c1_01_021,c1_03_003,c2a_01_033,c2a_02_024,c2a_04_016,c2b_02_021,c2b_02_023,c2b_02_025	
+BAR-SOLID	38	c1,c2a,c2b,c3	0	38	0	c1_01_020,c1_03_013,c1_03_027,c2a_03_019,c2a_03_022,c2a_04_004,c2b_01_025,c2b_02_009	
+WAVE	38	c1,c2a,c2b,c3,c4a,c4b	16	22	0	c1_04_014,c2a_04_024,c2a_05_021,c2a_11_014,c2b_05_005,c2b_06_012,c3_02_027,c4a_01_014	
+BAR-THIN	30	c1,c2a,c2b,c3	0	28	2	c1_03_001,c1_04_006,c2a_01_001,c2a_01_021,c2a_02_015,c2b_01_008,c2b_01_009,c2b_01_012	
+PCT-SLASH	27	c1,c2a,c3,c4a,c4b	15	9	3	c1_01_002,c1_02_013,c2a_01_011,c2a_02_006,c2a_06_012,c3_01_008,c4a_01_012,c4a_02_002	
+VENUS	26	c1,c2a,c2b,c4a,c4b	21	4	1	c1_02_002,c1_04_020,c2a_03_003,c2a_03_009,c2a_06_030,c2b_05_007,c2b_06_011,c2b_07_002	
+PHI	22	c1,c2a,c2b,c3	22	0	0	c1_03_026,c1_06_017,c2a_02_025,c2a_03_007,c2a_05_027,c2b_01_006,c2b_01_021,c2b_05_006	
+LOOP-TAIL	21	c1,c2a,c2b,c3,c4a,c4b	9	9	3	c1_06_002,c2a_10_018,c2a_14_002,c2a_17_010,c2b_02_008,c2b_03_014,c2b_03_031,c1_03_011	
+BAR-SERIF	19	c1,c2a,c2b,c3	19	0	0	c1_05_002,c1_05_003,c1_05_018,c2a_02_017,c2a_05_013,c2a_05_031,c2b_06_027,c2b_09_001	
+CIRC-TAIL	19	c1,c2a,c2b,c3	0	19	0	c1_02_009,c1_04_004,c1_06_012,c2a_01_009,c2a_05_001,c2a_09_025,c2b_01_002,c2b_01_016	
+DELTA-TAIL	19	c1,c2a,c2b,c3	0	19	0	c1_03_004,c1_04_003,c1_05_011,c2a_02_013,c2a_02_014,c2a_02_020,c2b_01_026,c2b_04_008	
+O-TILDE	19	c1,c2a,c2b,c3,c4a,c4b	7	11	1	c1_01_001,c1_01_016,c2a_16_001,c2b_07_010,c4a_02_009,c4a_08_015,c4a_09_010,c1_02_005	
+CC-DASH	18	c2a,c2b,c4a	12	4	2	c2a_01_004,c2a_03_013,c2a_06_015,c2b_02_004,c2b_02_015,c2b_07_004,c4a_04_006,c4a_09_013	
+CIRC-O	18	c2a,c2b,c3,c4a,c4b	11	5	2	c2a_01_014,c2a_01_022,c2a_05_015,c2b_03_008,c2b_04_020,c2b_05_018,c4a_04_013,c4a_13_016	
+CROSS-T	18	c1,c2a,c2b,c3,c4a	10	7	1	c1_05_008,c2a_06_014,c2a_07_023,c2a_17_003,c2b_01_023,c2b_06_010,c2b_07_003,c4a_02_007	
+II-DASH	18	c1,c2a,c2b,c3,c4a	11	7	0	c1_01_009,c2a_02_023,c2a_06_016,c2a_07_003,c2b_03_001,c2b_04_005,c3_02_010,c4a_01_003	
+O-SLASH	18	c1,c2a,c2b,c3,c4a	4	14	0	c1_01_012,c2b_03_011,c2b_08_006,c3_03_018,c1_03_006,c1_05_012,c2a_01_016,c2b_05_001	
+OX-TILDE	18	c1,c2a,c2b,c3,c4a,c4b	12	3	3	c1_01_010,c1_03_019,c2a_05_008,c2a_07_010,c2a_07_031,c2b_02_019,c2b_04_006,c2b_04_024	
+HOOK-L	17	c1,c2a,c2b,c3,c4a	15	2	0	c1_04_010,c2a_04_015,c2a_05_029,c2a_05_030,c2b_03_030,c2b_05_016,c2b_05_017,c3_01_019	
+S-CURL	16	c1,c2a,c2b,c3,c4a,c4b	0	2	14	c1_06_015,c2b_08_010,c2a_05_023,c2a_11_011,c2a_12_006,c2b_05_002,c2b_07_014,c3_04_012	
+EIGHT	15	c2a,c2b,c3,c4a,c4b	1	2	12	c2a_12_019,c2b_02_017,c4b_05_012,c2a_01_005,c2a_03_010,c2b_04_027,c3_03_016,c4a_01_007	
+NOTE	14	c1,c2a,c3,c4a,c4b	11	3	0	c1_03_025,c2a_10_012,c2a_12_023,c2a_15_003,c3_02_012,c4a_01_006,c4a_09_006,c4b_03_009	
+O-DASH2	14	c1,c2a,c2b,c3,c4a,c4b	10	4	0	c2a_01_017,c2a_03_012,c2a_03_024,c2b_06_009,c4a_06_014,c4a_07_013,c4b_02_007,c1_02_021	
+EYE-DOT	13	c1,c2a,c2b,c3	0	13	0	c1_03_018,c2a_01_026,c2a_09_036,c2a_11_003,c2b_01_018,c2b_08_011,c3_01_023	
+VEE	13	c1,c2a,c2b,c3,c4a	11	1	1	c1_04_008,c2a_06_026,c2a_17_007,c2b_01_022,c2b_03_020,c2b_04_010,c3_02_022,c4a_05_001	
+AMP	12	c1,c2a,c2b	9	1	2	c2a_01_012,c2a_04_010,c2a_07_026,c2b_03_023,c2b_05_010,c1_04_019	
+TRIPOD	12	c1,c2a,c2b,c3	0	12	0	c1_02_007,c1_03_020,c1_04_022,c2a_08_014,c2a_10_001,c2a_14_011,c2b_01_003,c2b_01_014	
+X-CURL	12	c1,c2a,c2b,c3,c4a	1	11	0	c4a_12_011,c1_04_017,c2a_03_008,c2a_13_014,c2a_14_008,c2b_03_015,c3_03_002,c3_03_024	
+DASH-H	11	c1,c2a,c2b,c3,c4a	10	0	1	c1_01_006,c1_03_021,c1_04_011,c2a_01_023,c2a_01_027,c2a_08_001,c2b_01_011,c2b_07_007	
+TRIDENT	11	c1,c2a,c2b,c3	11	0	0	c1_01_003,c1_03_014,c2a_02_005,c2a_02_008,c2a_02_016,c2b_01_029,c2b_03_019,c2b_08_004	
+C-DOT	10	c2a,c3,c4a	0	9	1	c2a_07_007,c2a_07_024,c2a_11_026,c3_03_020,c4a_10_007	
+CRESCENT	10	c1,c2a,c2b	9	1	0	c1_02_020,c1_06_007,c2a_05_010,c2a_05_011,c2a_09_028,c2b_01_034,c2b_03_021,c2b_07_022	
+ARCH-DASH	9	c1,c2a,c2b,c3,c4a,c4b	4	5	0	c2b_03_017,c3_02_011,c4a_11_001,c4b_03_010,c1_03_022,c2a_07_002,c2a_08_022,c2a_13_002	
+II-O	9	c2a,c2b,c3,c4a,c4b	5	4	0	c2b_03_016,c2b_03_022,c4a_05_005,c4a_11_002,c4b_04_012,c2a_08_018,c3_02_029,c3_03_009	
+RHO	9	c1,c2a,c3	7	1	1	c1_04_007,c2a_01_030,c2a_05_009,c2a_11_021,c3_04_001	
+STAR	9	c2a,c2b,c4a,c4b	9	0	0	c2a_06_013,c2a_07_011,c2a_07_025,c2b_08_013,c4a_02_010,c4b_01_004	
+SUN	9	c1,c2a,c2b,c3,c4a,c4b	7	2	0	c1_02_001,c2a_02_011,c2a_10_009,c2b_07_001,c3_02_002,c3_03_022,c4a_03_001,c2b_03_012	
+DASH-V	8	c2a	0	8	0	c2a_01_034,c2a_02_028,c2a_04_027	
+GEAR-DOT	8	c1,c2a,c2b,c3,c4b	0	8	0	c1_03_009,c2a_08_015,c2a_09_001,c2a_11_001,c2b_03_028,c2b_06_002,c3_04_002,c4b_03_005	
+QUESTION	8	c2a,c2b,c4a	0	7	1	c2a_12_024,c2a_12_025,c4a_01_008,c4a_06_015,c4a_08_017,c2b_07_020	
+X-SLASH	8	c2a,c2b,c3,c4a	0	7	1	c2a_12_034,c2a_15_035,c2b_04_019,c2b_06_008,c3_03_010,c4a_08_014,c4a_10_001,c2a_15_024	
+QQ-O	7	c2a,c2b	0	3	4	c2a_10_007,c2a_16_016,c2b_06_014,c2a_01_008	
+XX-TILDE	7	c1,c2a,c4a	4	1	2	c1_01_015,c1_03_029,c2a_11_009,c2a_11_019,c2a_08_025,c4a_09_001	
+C-BAR-X	6	c1,c2a,c3	1	5	0	c1_01_013,c2a_04_022,c2a_06_024,c2a_12_016,c3_04_014	
+CC-O	6	c1,c2a,c4a,c4b	2	3	1	c1_01_007,c1_02_014,c2a_11_029,c4a_03_007,c4b_02_004,c2a_11_006	
+X-DASH	6	c2a,c2b,c4a	0	5	1	c2a_12_013,c2b_01_015,c4a_06_002,c4a_13_014,c4a_14_006,c2a_16_022	
+A-LOOP	5	c1,c2a,c2b,c3	0	5	0	c1_06_006,c2a_08_020,c2a_16_014,c2b_06_030,c3_02_003	
+CHEVRON2	5	c4a,c4b	0	5	0	c4a_04_012,c4a_06_003,c4b_01_001,c4b_03_004,c4b_03_006	
+DAGGER-O	5	c1,c3,c4a	2	3	0	c1_05_023,c4a_13_017,c3_03_032,c4a_08_003,c4a_13_003	
+LAMBDA	5	c1,c2a,c3,c4a	4	1	0	c1_01_005,c2a_03_014,c2a_09_004,c4a_02_006,c3_01_013	
+PICT-TREE	5	c1,c2a,c3	3	2	0	c1_04_009,c2a_02_010,c2a_13_017,c2a_07_017,c3_01_018	
+SCROLL-X	5	c2a,c3,c4b	0	4	1	c2a_04_013,c2a_07_028,c2a_10_026,c3_03_030,c4b_05_010	
+ARCH-O	4	c2b,c3,c4a,c4b	1	3	0	c2b_06_004,c3_01_025,c4a_05_006,c4b_04_003	
+DIAMOND	4	c3,c4a,c4b	1	3	0	c3_03_012,c4a_06_005,c4a_14_005,c4b_04_001	
+DOLLAR	4	c1,c2a,c4b	0	4	0	c1_03_017,c1_05_017,c2a_06_005,c4b_02_011	
+DOTS-TILDE	4	c1,c2a,c2b	1	3	0	c1_04_023,c2a_10_019,c2a_13_023,c2b_08_001	
+DOUBLE-LOOP	4	c2a,c2b	2	1	1	c2a_15_032,c2b_01_035,c2b_09_012,c2a_09_003	
+F-LETTER	4	c1,c2a,c4a	0	2	2	c1_04_021,c2a_09_014,c2a_10_006,c4a_13_004	
+II-SLASH	4	c1,c3,c4b	0	3	1	c1_05_020,c3_02_014,c3_02_021,c4b_02_010	
+O-DASHBELOW	4	c1,c3,c4a	0	3	1	c1_04_012,c3_02_015,c4a_07_002,c4a_12_013	
+OX	4	c2a,c2b,c4a	2	2	0	c2a_09_039,c2a_17_020,c2b_05_008,c4a_12_019	
+PICT-ARROW	4	c2a,c2b,c4a,c4b	1	3	0	c2a_07_016,c2b_09_014,c4a_09_008,c4b_01_011	
+PICT-FACE	4	c2a,c2b,c4b	2	2	0	c2b_06_016,c2b_08_012,c2a_02_018,c4b_03_008	
+PICT-LEAF	4	c2a,c2b,c4a	2	2	0	c2a_02_001,c2a_12_018,c2b_01_007,c4a_12_001	
+SLASH	4	c2a,c4b	2	2	0	c2a_07_029,c4b_04_011,c2a_14_017,c4b_05_007	
+X-BAR-CC	4	c2b,c4b	0	4	0	c2b_02_011,c2b_02_016,c2b_05_015,c4b_03_002	
+Y-LOOPS	4	c1,c4a	0	3	1	c1_06_010,c4a_05_013,c4a_08_012,c4a_13_007	
+ARC-LOOPS	3	c1,c2a	2	1	0	c1_04_015,c2a_13_007,c2a_09_033	
+BOX-GRID	3	c2a,c4a	2	1	0	c2a_03_018,c4a_13_006,c2a_02_002	
+BUCKET	3	c2a,c2b	0	3	0	c2a_02_027,c2a_13_038,c2b_04_028	
+DELTA	3	c4a,c4b	3	0	0	c4a_10_016,c4a_11_010,c4b_02_001	
+OO-TILDE	3	c1,c2a,c4a	3	0	0	c1_02_010,c2a_07_013,c4a_03_005	
+PICT-ANCHOR	3	c2a,c4a	2	1	0	c2a_15_001,c4a_13_001,c2a_17_006	
+PICT-HOUSE	3	c2a,c4a	2	0	1	c2a_05_005,c2a_13_022,c4a_10_011	
+PICT-RUNNER	3	c1,c3,c4a	3	0	0	c1_03_023,c3_01_001,c4a_10_004	
+SIGMA	3	c4a,c4b	3	0	0	c4a_12_015,c4a_14_010,c4b_04_002	
+TAURUS	3	c4a,c4b	0	3	0	c4a_01_011,c4a_09_005,c4b_05_008	
+THETA-BAR	3	c4a,c4b	0	3	0	c4a_04_005,c4a_06_013,c4b_04_015	
+THREE	3	c2a,c4b	0	0	3	c2a_06_010,c2a_15_002,c4b_05_006	
+V-DOT	3	c2a	0	3	0	c2a_01_019,c2a_04_014,c2a_13_013	
+V-LOOP	3	c2a,c4a,c4b	0	3	0	c2a_03_002,c4a_07_009,c4b_05_004	
+WAVE-V	3	c2a,c2b	0	2	1	c2a_06_027,c2b_07_026,c2a_11_025	
+X-BAR	3	c1,c4a	0	3	0	c1_04_016,c1_06_011,c4a_08_013	
+X-O	3	c2a,c3	0	2	1	c2a_10_014,c3_03_001,c3_02_030	
+Z-CURL	3	c2b,c3	1	0	2	c2b_01_031,c2b_07_025,c3_02_025	
+ARROW-O	2	c2b,c4b	0	1	1	c4b_02_003,c2b_06_023	fewer than 3 exemplars: rare sign
+ARROW-UP	2	c4a,c4b	0	2	0	c4a_06_006,c4b_01_006	fewer than 3 exemplars: rare sign
+CHEVRON	2	c4b	0	2	0	c4b_04_008,c4b_04_009	fewer than 3 exemplars: rare sign
+D-LETTER	2	c2a	0	2	0	c2a_09_009,c2a_09_010	fewer than 3 exemplars: rare sign
+DBL-SLASH	2	c1,c2a	0	2	0	c1_04_002,c2a_10_021	fewer than 3 exemplars: rare sign
+HASH	2	c1,c4b	2	0	0	c1_03_024,c4b_01_005	fewer than 3 exemplars: rare sign
+HOOK-P	2	c2a,c3	0	0	2	c2a_16_013,c3_01_009	fewer than 3 exemplars: rare sign
+IOI-TILDE	2	c2a,c4a	0	2	0	c2a_01_024,c4a_14_007	fewer than 3 exemplars: rare sign
+LOOP-STEM	2	c4a,c4b	0	2	0	c4a_11_009,c4b_05_003	fewer than 3 exemplars: rare sign
+M-LETTER	2	c2a,c4b	0	1	1	c2a_09_012,c4b_05_005	fewer than 3 exemplars: rare sign
+NINE	2	c2a	0	0	2	c2a_04_012,c2a_17_027	fewer than 3 exemplars: rare sign
+O-BAR-CC	2	c2a	0	2	0	c2a_13_034,c2a_14_023	fewer than 3 exemplars: rare sign
+O-BAR-O	2	c2a,c3	1	1	0	c2a_11_031,c3_01_020	fewer than 3 exemplars: rare sign
+O-BRACKET	2	c1,c2a	0	1	1	c2a_15_029,c1_05_010	fewer than 3 exemplars: rare sign
+O-DOT-STEM	2	c4a,c4b	0	1	1	c4b_05_001,c4a_10_002	fewer than 3 exemplars: rare sign
+O-PLUS	2	c1,c4a	0	2	0	c1_02_011,c4a_06_001	fewer than 3 exemplars: rare sign
+OMEGA	2	c4a	0	2	0	c4a_04_001,c4a_09_009	fewer than 3 exemplars: rare sign
+PICT-CROSSED	2	c2a,c4b	0	0	2	c2a_08_011,c4b_05_002	fewer than 3 exemplars: rare sign
+PICT-HORSE	2	c1,c3	2	0	0	c1_01_017,c3_01_026	fewer than 3 exemplars: rare sign
+RAM	2	c4a,c4b	0	2	0	c4a_04_008,c4b_01_002	fewer than 3 exemplars: rare sign
+SMILE	2	c2a,c4b	0	1	1	c4b_01_008,c2a_04_009	fewer than 3 exemplars: rare sign
+T-LETTER	2	c1,c2a	1	1	0	c2a_05_022,c1_06_018	fewer than 3 exemplars: rare sign
+TWO	2	c4a	0	2	0	c4a_08_001,c4a_14_001	fewer than 3 exemplars: rare sign
+X-DOT	2	c2a,c3	0	2	0	c2a_07_001,c3_03_031	fewer than 3 exemplars: rare sign
+A-DASH	1	c3	0	1	0	c3_02_019	fewer than 3 exemplars: rare sign
+A-LETTER	1	c4a	0	1	0	c4a_04_003	fewer than 3 exemplars: rare sign
+ARCH	1	c2b	1	0	0	c2b_04_007	fewer than 3 exemplars: rare sign
+ARCH-DOTS	1	c2a	0	0	1	c2a_04_008	fewer than 3 exemplars: rare sign
+B-SCRIPT	1	c2a	0	0	1	c2a_09_022	fewer than 3 exemplars: rare sign
+BLOB-LOOP	1	c2a	0	0	1	c2a_16_015	fewer than 3 exemplars: rare sign
+BOX-8	1	c2b	1	0	0	c2b_01_033	fewer than 3 exemplars: rare sign
+BOX-M	1	c3	0	1	0	c3_02_033	fewer than 3 exemplars: rare sign
+BOX-X	1	c2a	1	0	0	c2a_17_013	fewer than 3 exemplars: rare sign
+BRACKET	1	c2a	0	1	0	c2a_01_002	fewer than 3 exemplars: rare sign
+CC-DOT	1	c1	0	0	1	c1_04_001	fewer than 3 exemplars: rare sign
+CHAIN	1	c2b	0	1	0	c2b_02_005	fewer than 3 exemplars: rare sign
+DOT-LINE-O	1	c2a	0	1	0	c2a_01_031	fewer than 3 exemplars: rare sign
+DOTS-DASH	1	c4b	0	0	1	c4b_02_002	fewer than 3 exemplars: rare sign
+E-BAR	1	c2b	1	0	0	c2b_07_013	fewer than 3 exemplars: rare sign
+H-LETTER	1	c2a	0	1	0	c2a_09_007	fewer than 3 exemplars: rare sign
+HOOK-O	1	c3	0	0	1	c3_01_032	fewer than 3 exemplars: rare sign
+II-TILDE	1	c3	0	1	0	c3_03_013	fewer than 3 exemplars: rare sign
+J-DOTS	1	c2b	0	0	1	c2b_06_029	fewer than 3 exemplars: rare sign
+L-LETTER	1	c2a	0	1	0	c2a_09_011	fewer than 3 exemplars: rare sign
+LAMBDA-DASH	1	c1	1	0	0	c1_03_016	fewer than 3 exemplars: rare sign
+MARS	1	c4a	0	1	0	c4a_06_010	fewer than 3 exemplars: rare sign
+N-LETTER	1	c2a	0	0	1	c2a_01_007	fewer than 3 exemplars: rare sign
+NINE-BAR	1	c2a	0	0	1	c2a_07_004	fewer than 3 exemplars: rare sign
+NINE-DASH	1	c3	0	0	1	c3_01_005	fewer than 3 exemplars: rare sign
+O-DASH-DOTS	1	c3	0	0	1	c3_02_013	fewer than 3 exemplars: rare sign
+O-DOTS	1	c2a	0	0	1	c2a_08_019	fewer than 3 exemplars: rare sign
+O-II	1	c3	0	0	1	c3_01_030	fewer than 3 exemplars: rare sign
+OMEGA-O	1	c4b	0	0	1	c4b_05_009	fewer than 3 exemplars: rare sign
+OO-DASH	1	c2b	0	1	0	c2b_01_036	fewer than 3 exemplars: rare sign
+PICT-BARREL	1	c2a	0	1	0	c2a_10_020	fewer than 3 exemplars: rare sign
+PICT-BIRD	1	c2a	1	0	0	c2a_17_029	fewer than 3 exemplars: rare sign
+PICT-BOTTLE	1	c2a	1	0	0	c2a_02_009	fewer than 3 exemplars: rare sign
+PICT-CROWN	1	c2a	0	1	0	c2a_16_004	fewer than 3 exemplars: rare sign
+PICT-D	1	c2b	0	0	1	c2b_05_013	fewer than 3 exemplars: rare sign
+PICT-EAGLE	1	c2a	1	0	0	c2a_03_001	fewer than 3 exemplars: rare sign
+PICT-FIGURE	1	c2a	0	0	1	c2a_07_015	fewer than 3 exemplars: rare sign
+PICT-FISH	1	c2a	0	0	1	c2a_10_016	fewer than 3 exemplars: rare sign
+PICT-GLASS	1	c4b	0	0	1	c4b_05_011	fewer than 3 exemplars: rare sign
+PICT-HEART	1	c4a	0	1	0	c4a_01_001	fewer than 3 exemplars: rare sign
+PICT-JUG	1	c2a	0	1	0	c2a_12_035	fewer than 3 exemplars: rare sign
+QQ-DASH	1	c2b	0	0	1	c2b_03_004	fewer than 3 exemplars: rare sign
+SEVEN	1	c2b	0	1	0	c2b_04_026	fewer than 3 exemplars: rare sign
+SIX-CURL	1	c1	0	1	0	c1_02_006	fewer than 3 exemplars: rare sign
+SLASH-BAR	1	c1	0	1	0	c1_06_016	fewer than 3 exemplars: rare sign
+SLASH3	1	c2b	1	0	0	c2b_03_007	fewer than 3 exemplars: rare sign
+SQUIG-DOT	1	c2a	0	0	1	c2a_11_012	fewer than 3 exemplars: rare sign
+TILDE-DASH	1	c2a	0	0	1	c2a_17_016	fewer than 3 exemplars: rare sign
+U-CROSS	1	c3	0	1	0	c3_02_007	fewer than 3 exemplars: rare sign
+U-CUP	1	c4a	0	1	0	c4a_13_009	fewer than 3 exemplars: rare sign
+U-DASH	1	c4a	0	1	0	c4a_14_008	fewer than 3 exemplars: rare sign
+V-PCT-BLOB	1	c2b	0	0	1	c2b_07_015	fewer than 3 exemplars: rare sign
+X-LOOP	1	c2b	0	1	0	c2b_03_003	fewer than 3 exemplars: rare sign
+MULTI	31	c1,c2a,c2b,c3,c4a,c4b	0	0	31	c1_05_006,c2a_08_012,c2a_08_023,c2a_08_024,c2b_02_003,c2b_02_012,c2b_04_009,c3_03_023	
+_	16	c1,c2a,c2b,c4a	0	5	11	c2a_05_002,c2a_06_003,c2b_09_002,c2b_09_007,c4a_11_006,c1_02_016,c1_03_008,c2a_01_020	
