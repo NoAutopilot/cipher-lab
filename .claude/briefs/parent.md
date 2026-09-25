@@ -35,7 +35,10 @@ its state is only what it committed, so read its handoff and its lanes' ROOM lin
    breakthrough also fire the routine "Cipher Lab: breakthrough alert (email)" with a plain, graded description.
 7. **Next lane.** When lanes close and the window allows, open the next from open targets no lane holds (ROOM claims
    in the last six hours, and the other account's lanes, excluded).
-8. Re-arm the check-in.
+8. **Rolling quality audit.** Every two hours while lanes run, spawn a fresh Sonnet worker from
+   .claude/briefs/runs/2026-09-25-parent-quality-audit.md with the window since the last QA/*.md. An item it flags counts
+   toward no total until its lane clears the flag; tell the owner about any flag on a result already reported to him.
+9. Re-arm the check-in.
 
 ## Opening a lane
 
