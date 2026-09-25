@@ -448,3 +448,7 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T16:50Z	session_01XseK9i9AnL9C1yMiqd75gj	done (blocked)	bDOR dorabella-1897 test 1	pushed 1ef8fb7; ASKS row 50
 2026-09-25T16:49Z	session_0166AnCG2cnhzT49cjP1hRg2	LANE B2 bKAL (Sonnet, cap 3)	kaliningrad-2015 test 1 transcription check	brief 2026-09-25-lane-b2-kaliningrad-2015.md
 2026-09-25T16:49Z	session_016UPMZ7UBvMWu2PEsWNiFyC	LANE B2 bSPEC (Sonnet, cap 6)	ten specs, survey ranks 11-20	brief 2026-09-25-lane-b2-specs11-20.md
+2026-09-25T16:58Z	session_01NGqLviSk38e8cuYAg7JWS2	LANE R6 L1 done $6.53 N, archived	salviati f55v	gate 77.5 FAIL
+2026-09-25T16:58Z	session_01EnQqBtMCb7fXtPvLqin2GL	LANE R6 P5 done $9.89 D-, archived	antt-fcc-costacabral-1865 key	C63 M19, for V6
+2026-09-25T16:58Z	session_015t6VAAyCgCAmcVQQ1P62h6	LANE R6 Y6 done $6.84 N, archived	espagnol142-mercy-1648	521 tokens, no key
+2026-09-25T16:58Z	session_01DG2K4JMGBjdPSvB2SvW3iB	LANE R6 Y4b done $7.22 D-, archived	clairambault296 sweep	129/316, not pinned

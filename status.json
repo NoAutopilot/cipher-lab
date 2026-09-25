@@ -1862,6 +1862,14 @@
    "grade": "key applied mechanically before and after calibrating the signs on the leaf with a contemporary decipherment: pass agreement 37.5 then 39.8 percent on f.176, judge FAIL against its own shuffled null; the control shows the judge cannot pass such fragments even at zero noise",
    "line": "The key is right and the hand is not readable by this method at this image quality. Status blocked; the route forward is a better capture or a different reader, not another pass.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr3985-nevers-revol-1593"
+  },
+  {
+   "date": "25 Sept 2026",
+   "kind": "contribution",
+   "title": "ANTT Costa Cabral 1865 (PT/TT/FCC/001/0021/00026): a self-glossed nomenclator draft captured as a key and reading",
+   "grade": "C 63, M 19, U 2 of 84 tokens, key.tsv 52 codes from the draft's own interlined syllables; decode_key.py --check 0; no verifier class yet",
+   "line": "The draft carries its plaintext above the codes (a found-solved shape): it concerns inviting the King of Italy as godfather to a Portuguese prince. Key source: period (the leaf's own gloss). Waiting on a LANE V6 verifier.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/antt-fcc-costacabral-1865"
   }
  ],
  "lanes": [
