@@ -5939,3 +5939,87 @@ push). WebSearch: 0 (not needed; Tomokiyo's pages and the shallow clone answered
 
 nomination: fr7129-villeroy-bongars-1604 | copy-free | kind recovery | Bongars' Cipher no.3 (fr.7129 f.275)
 Tomokiyo | `btv1b8555834s` f.268
+
+## Portuguese holdings and dictionary codes (LANE PX, 25 Sept 2026)
+
+PX-SCDICT (dictionary/book codes only; DigitArq/Portuguese-holdings rows are PX-SCDIGI3's, numbered `PX-NN`).
+Cap $6, scout only (no board promotion, no decoding). Zero new rows filed this pass — every route came back a
+genuine negative or an already-tracked target, not an unsearched gap. Detail below so nobody re-runs the same
+queries.
+
+**In-repo (step 1):** two hits, both already on file, not re-listed as new.
+- `ciphers/antt-linhares-chave/` — ANTT `PT/TT/CLNH/0086/11`, a Portuguese "Chave" naming an undisclosed
+  "Diccionario"/"Diccionario Inglez" (page/column/rank, digit-count-prefixed). QUEUE.md row PP-03. **Status has
+  moved past `blocked`/`partial` since PP-03 was written**: LX-BOOK (25 Sept 2026) identified the book —
+  Vieyra's *New Pocket Dictionary of the Portuguese and English Languages* (1809, archive.org
+  `newpocketdiction00viey`), all twelve worked-example groups confirmed against the image — and the target's own
+  `NOTES.md` status line now reads `solved`. QUEUE.md row PP-03 should be updated or closed by whoever owns that
+  row; not touched here (out of this brief's scope, ciphers/ folder not in scope).
+- `ciphers/wellington-maitland-1812/` — Wellington to Lt.-Gen. Maitland, Villa Castin, 2 Sept 1812 (Spink lot
+  1184), status `partial`: a dictionary code (`5b429`-style groups) with a contemporary decipherment matching
+  Gurwood's printed text at grade C, dictionary edition itself still unrecovered. Already Tier A row 2 and
+  QUEUE.md row 5435 (kind: published/Spink lot). Not re-listed.
+No other `ciphers/*/NOTES.md`, `CATALOG.md`, `LANDSCAPE.md` or `UNSOLVED-SURVEY.md` row names a dictionary or
+book code (grep for dictionnaire/diccionario/dicionario/dictionary/lexicon/"book code"/"book cipher"/page-column/
+Entick/Johnson/Webster/Boyer/Vieyra/Sobrino/Nugent across all four files and `sources/`; the only other hits were
+Barney 1863 (`CATALOG.md`/`LANDSCAPE.md`, already found-solved by offgramercy, Reddit, Aug 2026 — not ours), the
+Wellington and Linhares rows above, and one unrelated line (DC9, Colbert 127, a two-digit pensioner-name cipher,
+not a dictionary code).
+
+**Gallica SRU** (`gallica.bnf.fr/SRU`, `dc.type all "manuscrit"`), 6 queries, ~1.5s apart: `chiffre` alone =
+7210 manuscript hits (too broad to page through); `dictionnaire` alone = 2345; `(chiffre) and (dictionnaire) and
+(manuscrit)` = a real, correctly-intersected 54 (verified: not an artifact of the AND being ignored, since it is
+well below both single-term counts) — all 54 sampled titles are ordinary dictionary manuscripts (Chinese,
+Turkish, Arabic, Manchu lexicons etc.) where "chiffre" is a metadata coincidence (shelfmark/foliation), none a
+cipher key. `(clef) and (dictionnaire) and (manuscrit)` = 4, all four checked by `dc:description`: two *recueil*
+volumes (Tralage, Conrart) whose descriptions don't mention cipher, a homily manuscript, and an unrelated author
+dictionary entry using "clef" as "key extracts" (Rabutin). Phrase search `"chiffre sur le dictionnaire"` isn't a
+true phrase match in Gallica's `all` index (CQL treats it as AND-of-words, confirmed by a 73,628-hit blowup) and
+wasn't pursued further. **Negative, not exhaustive**: Gallica's full-text (page-OCR) index is a separate,
+un-tried route from this metadata-only SRU sweep.
+
+**BNP** (`bndigital.bnportugal.gov.pt/records`), 4 queries: `cifra` alone = 19 hits, all sampled (all 19) —
+every one is a musical score or tablature ("cifra"/"cifras" = musical shorthand notation in this catalogue, not
+cryptography; e.g. "Libro de musica en cifras para vihuela"). Quoted-phrase searches `"chave da cifra"` and
+`"cifra sobre o diccionario"` = 0 hits each (the search engine does respect quotes for phrase matching, unlike
+Gallica — confirmed by these two returning 0 while unquoted "cifra dicionario" returns 107 OR-ranked noise hits
+led by *Diccionario Bibliographico Portuguez* entries). Clean negative.
+
+**Europeana API** (`api.europeana.eu`, key `api2demo`), 5 queries across en/fr/pt/nl: `cipher dictionary`
+(TYPE:TEXT) = 1 hit, a "Chiffernlexikon" of author pseudonyms in German literary almanacs (Bavarian State
+Library) — not a cryptographic key. `chiffre dictionnaire lettre`, `cifra dicionario carta`, `dictionary cipher
+letter`, `book cipher key` = 6/1/4/2 hits respectively, all noise (unrelated manuscripts, Ottoman firmans, modern
+cryptography papers). `cijfer woordenboek` (Dutch) = 0. Clean negative.
+
+**Nationaal Archief / archieven.nl**: the plain search URL (`/nl/zoeken?mizk_alle=...`) returns a static shell
+with no results embedded (results load via a client-side widget against `mifiles.archieven.nl`); a headless-
+Chromium fetch (`tools/browser_fetch.js`) of the same URL also rendered no result list or count after load.
+**Logged as query-form-unverified, not a negative** — this host's search was not actually tested, unlike the
+other four.
+
+**WebSearch** (8 queries, the cap): dictionary/book cipher + diplomatic/manuscript/archive in English, French,
+Italian, Spanish, plus named-dictionary queries (Boyer, Sobrino, Nugent). No unclaimed archival candidate
+surfaced. Two genuine hits, both already well-known/published, not new: the Thomson-Jay Continental Congress
+correspondence keyed to Boyer's *Royal Dictionary Abridged* (1771) — printed and studied, see Weber's *United
+States Diplomatic Codes and Ciphers*; and the Confederate dictionary-code family already in `CATALOG.md`
+(Webster, Cobb, Reid — all already solved per Cryptiana `civilwar5.htm`, not re-searched here). One incidental
+find worth flagging for a future non-dictionary sweep, not filed as a row: `sources/cryptiana/web/louisxiv0.htm`
+line 58 names an *unread* cipher from Henri Brasset to "Vostre Eminence" (Mazarin?) with no dictionary
+involvement — out of this brief's scope.
+
+**DECODE on-disk snapshot** (`sources/decode/*.tsv`, per COMMON rule 4, no login): grepped all five TSVs for
+dictionary/dictionnaire/dizionario/diccionario/lexicon/wörterbuch/woordenboek across every column — zero hits.
+The snapshot's `document_tags`/`uploader_comments` fields don't carry that vocabulary for any record on disk;
+this doesn't rule out a dictionary-code record whose tags use different wording, only that the obvious keywords
+aren't present.
+
+**Requests per host:** gallica.bnf.fr 8 (>=1.5s apart), bndigital.bnportugal.gov.pt 5, api.europeana.eu 6,
+archieven.nl 2 (curl + one browser_fetch), purl.pt 1 (302, not followed), digital.bnportugal.gov.pt 1 (proxy
+CONNECT failure, wrong host — `bndigital.` is correct). All well under the 60/session DigitArq-style cap and the
+good-citizen pacing rule; no 429/403/challenge hit on any host actually queried.
+
+**Bottom line:** no new copy-free dictionary/book-code row filed. The two dictionary-code targets this project
+already knows about (Linhares — now solved; Wellington-Maitland — partial, dictionary edition still open) remain
+the only ones on file; nothing in this pass's five source families turned up a third. The next cheap move on
+*this* lane's own material is recovering the Wellington-Maitland dictionary edition itself (a transcription +
+edition-identification job, not a scout job), not a further metadata sweep of these same five sources.
