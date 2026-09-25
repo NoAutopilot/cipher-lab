@@ -1,0 +1,4 @@
+Not applicable -- this target has no letter/symbol ciphertext. It is image steganography: two known
+plaintexts (quoted in NOTES.md, from the manual's own captions) hidden by an unknown graphical encoding
+within two illustrations in a WW2 British censorship-training manual (TNA KV 2/2424, pp. 14 and 17). See
+NOTES.md and images/manifest.json for the actual artifacts (the fashion drawing, its signature, and the map).

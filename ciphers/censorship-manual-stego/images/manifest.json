@@ -1,0 +1,67 @@
+{
+  "fetched": "25 Sept 2026 22:16-22:19 UTC",
+  "fetched_by": "LANE B4 worker bCEN, session per ROOM.md claim",
+  "host": "scienceblogs.de",
+  "requests": 5,
+  "note": "The manual PDF (11,236,798 bytes, sha1 01e14f863da33fa8a436967480ddec9358114260) was fetched but not kept committed (brief: keep only the pages that carry the two mysteries, rendered with pdftoppm, and record the full URL). manual_pp14-15.png and manual_pp16-17.png are pages 14-15 and 16-17 rendered at 300dpi from that PDF (poppler pdftoppm); the PDF itself can be re-fetched from the URL below if needed.",
+  "files": [
+    {
+      "name": "Censor-Manual-WW2.pdf",
+      "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2016/05/Censor-Manual-WW2.pdf",
+      "size_bytes": 11236798,
+      "sha1": "01e14f863da33fa8a436967480ddec9358114260",
+      "kept_in_repo": false,
+      "note": "TNA KV-2-2424, 18 page-images (filenames KV-2-2424_036.jpg through _053.jpg), pages 2-17 of the manual plus a cover; not the full item (TNA's full digitisation is 115 images per Bourdeau's cyphersolver repo notes, see NOTES.md)."
+    },
+    {
+      "name": "manual_pp14-15.png",
+      "derived_from": "Censor-Manual-WW2.pdf page 8 of 18 (poppler pdftoppm -r 300)",
+      "size_bytes": 4805950,
+      "sha1": "a2f81c4cb0ebd9fb026d5e092e90f0a905d23f15",
+      "kept_in_repo": true,
+      "manual_pages": "14-15",
+      "note": "carries Illustration No. 11 (fashion drawing, mystery 1) and its caption"
+    },
+    {
+      "name": "manual_pp16-17.png",
+      "derived_from": "Censor-Manual-WW2.pdf page 9 of 18 (poppler pdftoppm -r 300)",
+      "size_bytes": 5692989,
+      "sha1": "250735a2052290ec4c7bddda9e9226375d26281e",
+      "kept_in_repo": true,
+      "manual_pages": "16-17",
+      "note": "carries Illustration No. 14 (map, mystery 2) and its caption"
+    },
+    {
+      "name": "Fashion-Drawing-hires.jpg",
+      "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2016/10/Fashion-Drawing-hires.jpg",
+      "size_bytes": 1803767,
+      "sha1": "f4b3525912a16fe6056b67015c87cacf058f6dcf",
+      "kept_in_repo": true,
+      "note": "Schmeh's own 2016 high-resolution photograph of the original fashion drawing at TNA, taken specifically to try to resolve the Morse carrier; per Bourdeau's cyphersolver repo (15 Sept 2026), pixel-identical in content to the manual scan, no resolution gain confirmed there for the map (not independently re-verified for this image this pass)"
+    },
+    {
+      "name": "Fashion-Signature.png",
+      "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2017/05/Fashion-Signature.png",
+      "size_bytes": 156480,
+      "sha1": "e9d34292e90eb24e99a506b9d3c22123cf8d239d",
+      "kept_in_repo": true,
+      "note": "close-up of the 'Mary Helen Shaw' signature said to carry 'Before Arras' in French shorthand"
+    },
+    {
+      "name": "Modezeichnung-1.png",
+      "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2015/05/Modezeichnung-1.png",
+      "size_bytes": 334132,
+      "sha1": "bef337e6b06350297685a298828775dc9eb9b780",
+      "kept_in_repo": true,
+      "note": "the fashion drawing as originally posted on the blog (2015), lower resolution than Fashion-Drawing-hires.jpg"
+    },
+    {
+      "name": "Modezeichnung-3.png",
+      "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2015/05/Modezeichnung-3.png",
+      "size_bytes": 554769,
+      "sha1": "eb214549bf3c18b006fc1017e6e60bb3fd4d1011",
+      "kept_in_repo": true,
+      "note": "the map, as originally posted on the blog (2015)"
+    }
+  ]
+}
