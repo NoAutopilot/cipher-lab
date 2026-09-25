@@ -1,4 +1,46 @@
 open
+Wentworth Papers 1705-1739 (Cartwright 1883, archive.org wentworthpapers100strauoft_djvu.txt) read and grepped in full by this worker for Reichart/Berlepsch/Reichardt (0 hits) with its own contents page confirmed to place "AT BERLIN (1705-1708)" as the first Berlin section (p.39), so it cannot print these Apr-June 1704 despatches; searcharchives.bl.uk catalogue read for the Blenheim Papers Raby-Hedges correspondence (Add MS 61137, ff.191, 1703-1705), which names f.41 "Sir Charles Hedges... Letters, etc., to: 1702-1708: Partly Fr. and cipher" / "Wentworth... Letters to Sir C. Hedges: 1704" and f.55 "Baron... von Reichardt... Letter of: 1704: Fr.: Copy" -- a genuine duplicate-holding lead for these very letters, not itself opened or confirmed to carry a decipher.
+
+## Check-solved (LANE CX2, 25 Sept 2026)
+
+Round-2 sweep, six sources, following the job brief's named editions first. Prior session (23 Sept 2026,
+below) already established the TNA item-details and the absence of a sibling decipherment in SP 90/2 or the
+wider SP 90 class outside 1709-14; this pass adds the material actually named in the CX2-SP90 brief (BL
+Strafford/Raby papers, HMC reports, Hedges's letter-books) and reruns the community-list/solver-repo checks
+fresh rather than citing the earlier pass's summaries.
+
+1. **Web search (model-solve announcements).** `"SP 90/2" Raby Reichart Berlepsch cipher solves Claude GPT deciphered` and `Historical Manuscripts Commission report Raby Strafford Berlin correspondence 1704`: no dedicated page, no Vals-AI-style announcement, no HMC report identified that calendars this correspondence beyond the general Wentworth/Strafford biographical summaries already on Wikipedia and History of Parliament Online (neither of which cites a decipherment).
+2. **Print / archive editions (edition risk, the target's own line 2).**
+   - *Wentworth Papers* (Cartwright 1883): fetched `wentworthpapers100strauoft_djvu.txt` from archive.org (1.4 MB) and grepped for "Reichart", "Berlepsch", "Reichardt" -- 0 hits anywhere in the volume. The table of contents (line 156-159 of the OCR) places "AT BERLIN (1705-1708)" and "WORTH ... TO LORD RABY, AT BERLIN" as the first Berlin sections, confirming (independently of the 23 Sept pass) that the book's own coverage starts in 1705, a year after these five items.
+   - *BL Blenheim Papers* (searcharchives.bl.uk, Add MS 61101-61710, correspondence of the 1st Duke of Marlborough): searched "Wentworth Raby Berlin" (18 hits) and found **Add MS 61137-61141** ("BLENHEIM PAPERS. Vols. XXXVII-XLI. Correspondence with Thomas Wentworth, Baron Raby... chiefly as Ambassador at Berlin; 1703-1711. Partly French and German. Partly copies and cipher."). Opened the item-level record for **Add MS 61137** (Vol. XXXVII, ff.191, 1703-1705): its scope list names, at **f.41**, "Sir Charles Hedges, Secretary of State: Letters, etc., to: 1702-1708.: Partly Fr. and cipher." immediately followed by "Thomas Wentworth... Letters to Sir C. Hedges: 1704." -- Raby's own retained copies of his 1704 letters to Hedges (the same correspondent and year as SP 90/2/335, 337, 348), catalogued by the BL itself as partly ciphered. The same volume's **f.55** reads "Baron Johann Nicolaus von Reichardt, Bavarian Secretary of State: Letter of: 1704.: Fr.: Copy." -- very likely a duplicate of SP 90/2/409/409v (Reichart to Berlepsch, French, copy, partly in cipher), though the catalogue entry itself does not carry a cipher note. This is a real duplicate-holding lead (CLAUDE.md check-solved.md's "duplicate, triplicate, draft or copy of the same letter" rule) that neither the TNA Discovery sweep nor the earlier Wentworth Papers check could surface, since it sits in Marlborough's own archive, not Raby's. It does not itself establish a decipherment exists -- the BL record was read for its scope-and-content description only, not the manuscript itself, which is not digitised -- and does not resolve edition risk (this is a manuscript sibling, not a print).
+   - *BL Add MS 22193-22267* (the range named in this worker's brief, "Strafford/Raby papers"): searched and read; Add MS 22193 (Plantamour to Raby, 1701-03) and neighbouring items are Raby's *incoming* letters from a Berlin correspondent, a different sub-collection from the Blenheim Papers Marlborough correspondence above and from earlier than the target date; no item in this range with a 1704 date range and "Hedges" or "Reichart"/"Berlepsch" in its scope was found in the search results returned.
+   - *HMC reports*: web search found no HMC report calendaring Raby's 1704 Berlin correspondence specifically (only general biographical entries); not confirmed absent by a direct search of the HMC series itself (out of this sweep's time; flagged below).
+   - *Hedges's letter-books*: web search ("Sir Charles Hedges Secretary of State letter-book 1704 printed edition") found no printed edition; Hedges's outgoing/incoming letters are described as surviving only in manuscript (British Museum/BL and HMC-catalogued collections), consistent with the Add MS 61137 f.41 entry above being the closest thing to a "Hedges letter-book" for this date.
+3. **Community lists.** `sources/cryptiana/` grepped fresh for "raby", "reichart", "berlepsch", "whitworth": one hit, `web/blencowe2.htm` (the same R8762 "Raby (Strafford)" code-name entry already on file for the sibling target, not this correspondence). No dedicated Cryptiana/Cipherbrain page.
+4. **DECODE.** `aaymeloglu/unsolved-ciphers`'s cached `catalogue/decode-catalog.csv` (fresh shallow clone, 25 Sept 2026) grepped for "raby", "reichart", "berlepsch", "whitworth", "sp90", "sp 90": no record.
+5. **Bourdeau.** Fresh shallow clone (25 Sept 2026, `github.com/dbourdeau/cyphersolver`) grepped (`*.md` files) for the same terms: no hit.
+6. **Aymeloglu.** Same fresh clone (`*.md` files): no hit beyond the DECODE CSV check above.
+
+Requests: archive.org 1 (djvu re-fetch, 1.4 MB), searcharchives.bl.uk 3 (Wentworth-Raby-Berlin search, Add MS 61137-61141 record, Add MS 61137 item record), github.com 2 (fresh shallow clones, shared with the sibling target). 4 WebSearch queries.
+
+## Verdict (LANE CX2, 25 Sept 2026)
+
+**Open, stage 2 verified unsolved, unchanged from 23 Sept 2026's conditional verdict.** The new Blenheim
+Papers lead (Add MS 61137, ff.41/55) is a genuine sibling-holding candidate worth an access worker's look
+(catalogue only, not yet opened) but does not itself change the verdict: no decipherment or plaintext for
+any of the five target items was found in print, on DECODE, or in either solver repository. Not "new"; not
+"unpublished" (rule 10).
+
+## Next
+
+1. An access worker should check whether Add MS 61137 (BL, digitised: no) can be viewed or copy-ordered for
+   ff.41 and 55 specifically -- cheaper than a TNA copy order if the Blenheim Papers copy is legible and
+   carries an office decipher the TNA original does not (SP 90/2's own catalogue note names none).
+2. HMC's own printed series (not yet directly searched page-by-page; only web-searched) for a Strafford/Raby
+   report.
+3. TNA page-copy order for the five originals remains the fallback (see 23 Sept 2026 section below).
+
+---
 
 # Raby to Hedges, Reichart to Berlepsch — TNA SP 90/2/335, 337, 348, 409, 409v (1704)
 
