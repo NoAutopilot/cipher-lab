@@ -335,3 +335,210 @@ neighbourhood read (items 45-57 by date), which the Dupuy 468 lesson flags as a 
 out-of-sequence entry; a full-TOC read (done here) costs one extra request and removes that residual risk. Worth
 folding into `.claude/briefs/check-solved.md`'s WVO paragraph: for a Groen-covered correspondence circle, read
 the volume's full TOC once, not just the surrounding date window.
+
+## V-TX2 second audit (LANE TX), 25 September 2026, 08:15-09:05 UTC: WVO 5551, adversarial second pass
+
+Verifier TX-AUD5551 (Sonnet, stall alarm $6, session id per system prompt), a session separate from both solvers
+and from V-TX. Per `.claude/briefs/runs/2026-09-25-lane-tx-aud5551.md`: open, not keyword-search, the five
+edition families V-TX only keyword-searched (Japikse; Kervyn de Lettenhove; Jacobi/Glawischnig; Gachard III
+pp.90-100; Blok/Muller and the Nassau-Dillenburg archive editions), plus a fresh open-index/Google Books pass.
+I did not decode 5551 and did not re-derive the reading (V-TX's re-derivation and image check stand; nothing
+here touches them).
+
+**Claim under audit** (V-TX): WVO 5551's two cipher lines, N3, key ours, safe sentence as V-TX wrote it.
+
+### (a) Japikse, *Correspondentie van Willem den Eerste* — opened, does not cover 1574 at all
+
+Fetched the retroboeken app directly, not by phrase search: `resources.huygens.knaw.nl/retroboeken/willem_den_eerste/`
+(TOC), its `search_in_text` accessor form (the same accessor pattern `sources/huygens/NOTES.md` documents for
+Heinsius/De Witt/Oldenbarnevelt), a live search (`search_term:ustring:utf-8=Mokerheyde` and `=Mookerheide`, both
+"geen resultaten gevonden"), and — the decisive check — `retroboeken/willem_den_eerste/pages.json?source=1`
+(the book's actual page list) and `?source=2` (503, no second source exists). **Source 1 is 450 index rows
+ending at printed page 418**; the title page (`WillemDenEerste_voorwerk_i.jpg`/`.html`) reads "CORRESPONDENTIE
+VAN WILLEM DEN EERSTE PRINS VAN ORANJE". A WebSearch cross-check (American Historical Review review, 1935)
+confirms this is Deel I, 1551-1561, 417pp., and that "the project ultimately only produced this first part" —
+Japikse's edition never reached 1574. **This family cannot contain 5551 under any search term; it is not a gap,
+it is out of range.** Corrects V-TX's framing ("not yet integrated in this repo") — the edition is reachable
+and was opened, and simply stops 13 years before this letter.
+
+### (b) Kervyn de Lettenhove — opened both named works, full text read, negative
+
+*Relations politiques des Pays-Bas et de l'Angleterre* VII (1888, "Gouvernement de Requesens", 29 Nov 1573 - 25
+Oct 1575 — the volume covering our date range, identified via WebSearch and confirmed by its own front matter).
+Fetched the full OCR text directly (`archive.org/download/relationspolitiq07nethuoft/..._djvu.txt`, 1968705
+bytes, not a be-api snippet search) and grepped it in full, then read every hit in context. Zero hits for
+Mokerheyde/Mookerheide/Mokerheyd in any spelling (this volume's index of English-Netherlands diplomatic
+correspondence never mentions the battle by name, even though the volume's date range covers it — it is about
+English/Requesens relations, not the Nassau brothers). 11 "Nassau" hits are all Louis de Nassau (the volume's
+one glancing mention of "les comtes Loys et Jehan de Nassau, frères" as killed at Mookerheide is a third-party
+rumour report to Philip II, not a letter from or to Jan). The one 17 [month] 1574 Cologne letter in this volume
+(no. MMDCCLXXVI, "Le seigneur de Lumbres au comte de Leicester", Cologne, **17 juillet** 1574 — different month,
+different correspondents entirely) is a coincidental date/place match a phrase search on "Cologne 1574" could
+mislead on; opening the actual letter head ruled it out.
+
+*Les Huguenots et les Gueux* III (1884, `leshuguenotsetle03kerv`, confirmed to be the right volume: its own
+Chapitre IV is titled "Le combat de Mookerheyde (novembre 1573 — novembre 1574)", exactly our window). Same
+method: full djvu text fetched and grepped (1235756 bytes), not a snippet search. 19 "Mook" hits read in
+context: this chapter narrates the battle and its aftermath at length (citing Mondoucet's despatches, Groen)
+but never cites a letter from Jean de Nassau to the Prince dated 17 April/Cologne, and never quotes our cipher
+lines' content. One hit is a different ambassador's letter *to* Jean de Nassau the day after the battle
+("le lendemain de la bataille de Mookerheyde, il écrivait à Jean de Nassau pour lui promettre une prompte
+revanche") — incoming, not our outgoing letter. A second hit is worth flagging for the record though it is not
+about 5551: a footnote on Groen IV p.91 notes "il y a dans cette lettre une lacune représentée par un passage en
+chiffres" and that the House of Orange archivist General Van Mansfeld tried and failed to find the key —
+a *different*, older unsolved cipher passage in this same family archive (Groen IV p.91, dated context April
+1573), not 5551 (which has no GPA citation at all, per TX-WV5551). Both works: negative, opened and read in
+full, not keyword-searched.
+
+### (c) Jacobi and Glawischnig — Glawischnig is the most important finding of this pass
+
+**Glawischnig cites this exact letter.** Google Books full-text search inside Rolf Glawischnig, *Niederlande,
+Kalvinismus und Reichsgrafenstand 1559-1584. Nassau-Dillenburg unter Graf Johann VI* (Marburg, 1973 — snippet
+view only, not full view; ids `DhMBAAAAMAAJ`/`lbMrAQAAIAAJ`/`Z9vuAAAAIAAJ`, confirmed the same book via
+`api.openalex.org` W... record) returned, across four overlapping phrase queries that each independently
+confirmed the same footnote text: **"17.4.1574 Köln und 21.4. Wesel, JvN an WvO. KHA A XI 5, auch STAMa 4f
+Nld. 165."** — a source-note entry naming exactly our correspondents (Jan van Nassau to Willem van Oranje),
+exactly our date and place (17 April 1574, Köln), in a chronological run of source citations for the days
+after Mookerheide (the same footnote continues: "7.5.1574 Dordrecht, WvO an JvN. GvP CDXCII. (Mai 1574)
+Heidelberg, (JvN) an (WvO). STAW 170 III 1574. 19.5.1574 Köln, Stenzel von Namslo an JvN. KHA 897. 31.5.1574
+Dill., JvN an WvO..."). The body-text snippet this footnote supports reads: "Johann erfuhr von der Niederlage
+in Köln. Die ersten Nachrichten, die er erhielt, waren widersprüchlich. Die Niederlage war gewiß, ungewiß waren
+aber das Schicksal seiner Brüder und die Zahl der geretteten Truppen..." ("Johann learned of the defeat in
+Cologne. The first news he received was contradictory. The defeat was certain, but the fate of his brothers and
+the number of troops saved was uncertain...") — this reads as a paraphrase of the letter's *clear* German
+(pp.1-2 of the leaf, which WVO's own Inhoud already summarises as exactly this report) rather than of the two
+ciphered lines, whose legible content ("DER KÖNIG ... VON POLEN ... WILL", "ÖFFENTLI[CH] ... ES") does not match
+this sentence.
+
+**What this does and does not establish, and why the class does not move.** It establishes that the letter
+itself — as a dated, located archival object with a summarised content — is known to and cited by Glawischnig's
+1973 monograph, the single most specific piece of secondary literature on this correspondent and this exact
+period. It does *not* establish that the plaintext of the two ciphered lines is published anywhere: four further
+phrase queries for this book combined with Ziffer/chiffriert/verschlüsselt/"König von Polen" all returned zero
+matches (Google Books snippet-view search, a real negative signal but a weak one — snippet indexing is known in
+this repository to miss real co-occurrences, and I have no full-view or library access to read Glawischnig's own
+pages around this footnote directly). **This is a genuine, unresolved gap, not a negative**, and it is the
+single most important next step before this target goes any further: (1) get full-text or library access to
+Glawischnig 1973 around the footnote citing "KHA A XI 5" (its number is not identified from snippets — likely
+in the chapter on 1574, footnote ~70-75 by the numbering visible in the snippets); (2) the footnote names a
+**second copy of this letter cluster, `STAMa 4f Nld. 165`** (Staatsarchiv Marburg, Bestand 4f Niederlande, item
+165) — not on file anywhere else in this repository, not checked this pass (no online finding aid located
+within budget), and a real candidate for a period copy, marginal note, or even a period decipherment distinct
+from WVO's KHAG original. Both are flagged for a future pass, not chased to ground here. A caution on the
+shelfmark: Glawischnig's "KHA A XI 5" is not a character-for-character match to WVO's own "KHAG A 11/XIV A/5-20"
+for 5551 — plausibly the same fonds/box under an older citation convention (A 11 = A XI), possibly folded
+together with the companion 21 April Wesel letter under one citation, but this is not confirmed and should not
+be assumed; a future pass should check whether Glawischnig's own bibliography or archive visit notes resolve it.
+
+**Jacobi**, named in my brief alongside Glawischnig, could not be identified as a specific citable work.
+WebSearch and three Google Books queries for "Jacobi" + Nassau/Dillenburg/Mookerheide/Geschichte returned only
+ambiguous or unrelated hits: a "Jacobi, Wiesbaden 1913" appears in bibliographies of Nassau regional-history
+volumes (`Männer aus und in Nassau`, 1961; `Neugliederung...Mittelrheingebiet`, 1965) without a recoverable
+title, and a "Jacobi: Geographie des Reg.-Bez. Wiesbaden" (1899/1907) is a geography text, not a correspondence
+edition. Not opened — flagged as unresolved identification, not a search failure to be counted as a negative.
+
+### (d) Gachard III, pp.90-100 — opened page by page, and the volume has no letter in this window at all
+
+Fetched `correspondancede03will_djvu.txt` in full (1156567 bytes) and built a page map from the volume's own
+"— N —" running-head page markers (349 recovered), confirming the pp.90-100 range TX-WV5551D's be-api snippet
+search could not properly page-locate. **Read pp.83-101 in full, letter by letter**: this stretch is four
+William-to-Julian-Romero prisoner-exchange letters (DXXXVII-DXXXIX, 8-10 Nov 1573) and a long William-to-Marnix
+letter (DXL, 28 Nov 1573, running pp.88-93) — all November 1573, not April 1574. Then, decisively, **the
+volume's own printed table of contents** (read directly, lines ~21260-21300 of the OCR text) shows the volume
+jumps from DXLII (11 January 1574, p.95) straight to **DXLIII, "Le prince d'Orange au colonel Mondragon. De
+Bommel, le 23 avril 1574", p.96** — there is no letter dated between 11 January and 23 April 1574 anywhere in
+this volume, and DXLIII itself is to a Spanish colonel about a military matter, not to Jean de Nassau. **The
+entire Mookerheide-aftermath window (14 April onward) is a real gap in this volume's own letter sequence.**
+This closes (d) as a hard negative, page-by-page as the brief asked, not by full-text search (be-api's search
+in TX-WV5551D's pass could not have found this either way, since there is genuinely nothing there to find).
+
+### (e) Blok/Muller and the Nassau-Dillenburg archive editions — not resolved to a specific edition, flagged
+
+Google Books queries for "Blok" and "Muller" combined with Willem van Oranje/Jan van Nassau/1574 surfaced only
+secondary citations (P.J. Blok cited in Ruth Putnam's 1897 *Willem de Zwijger*; P.L. Muller's *Stukken
+betreffende de zending van Dirk van Hille*, an unrelated 1574 mission) — neither is a documentary edition of
+this correspondence circle that could be opened and checked page by page within this pass's budget. One
+concrete, real edition surfaced instead and is worth recording precisely because it does *not* apply: **"De
+correspondentie tussen Willem van Oranje en Jan van Nassau, 1578-1584"** (1984, 134 letters, RGP-style) is an
+actual printed edition of this same two brothers' correspondence — but its own title states 1578-1584, four
+years after 5551 (1574), so it cannot contain it; not opened (out of date range, confirmed from its own
+publisher's description). Arnoldi's *Geschichte der Oranien-Nassauischen Länder* (Google Books ids located) and
+a direct Arcinsys Hessen search for HStA Wiesbaden Bestand 170 III (WebSearch only, no hit for this exact date/
+item; the archive's own search interface was not queried directly with its date-range tools, a gap) were both
+named in my brief and both remain unopened — genuine gaps, not negatives, and lower priority than the
+Glawischnig/STAMa lead above, which is concrete and dated.
+
+### Open-index and Google Books pass
+
+OpenAlex (keyed, 1 query: "Glawischnig Nassau-Dillenburg Johann VI", 7 results, all either Glawischnig's own
+book/its review or unrelated Nassau items — nothing new). Semantic Scholar: 429 twice (keyed), stopped after one
+retry per the good-citizen rule — not searched this pass, a gap. CrossRef (1 query): 5 results, one interesting
+but unconfirmed tangent ("The prince of Orange to Count John of Nassau, Dordrecht, 7 May 1574", a different date
+than 5551 or Gachard's DXLIV/DXLV Mondragon letters at the same pages — not chased further, flagged only). HAL
+(1 query): 0 hits. Persée: WebSearch site-restricted, no relevant hits. Google Books: 20 queries in total this
+pass (Glawischnig identification and footnote reconstruction, Jacobi, Blok/Muller, "König von Polen" +
+Mookerheide/Nassau, Ziffer/chiffriert/verschlüsselt negatives) — see (c) above for the one substantive result.
+One incidental, unchased lead worth recording: a query for the decoded German turned up Bezold's *Briefe des
+Pfalzgrafen Johann Casimir* (1882), whose footnote on the 1574 Imperial-succession/Poland question ends "...zu
+Polen dem König bleibe... 2) Johann von Nassau" right at the point the snippet cuts off — plausibly relevant to
+the solver's own flagged (and explicitly unconfirmed) Henri-de-Valois-as-King-of-Poland reading of L1, but not
+opened or confirmed this pass; flagged, not claimed.
+
+### Verdict
+
+| item | class | prior plaintext | prior decipherment | key source | evidence | confidence |
+|---|---|---|---|---|---|---|
+| WVO 5551 (Jan/Johann VI van Nassau to Willem van Oranje, Keulen, 17 Apr 1574), the two cipher lines, p3 top | **N3 (unchanged)** | no plaintext of the two ciphered lines located | no | `ours` (as V-TX; unchanged) | Japikse (opened, out of date range), Kervyn de Lettenhove x2 (opened, full text, negative), Gachard III (opened, page-by-page, a real gap in the volume's own sequence) all now closed as genuine negatives rather than unopened gaps; Glawischnig 1973 is confirmed (via Google Books) to cite this exact letter by date/place/correspondents/shelfmark for its *clear* content, but no evidence located that he discusses or prints the ciphered lines specifically — a live, unresolved lead, not a negative; Jacobi and Blok/Muller not resolved to specific openable editions; a second copy at STAMa 4f Nld. 165 (Marburg) is newly identified and unchecked | high on the five closed families; the Glawischnig/STAMa lead is the reason this cannot go to N4 yet |
+
+**N3 stays, explicitly not N4.** Rule 10's N4 requires "the principal editions, catalogues and project pages
+covered" — five of V-TX's five named families are now genuinely opened rather than keyword-searched, and three
+close clean, but the fourth (Glawischnig) surfaced a concrete, dated citation of this very letter in exactly the
+kind of specialist secondary literature N4 is meant to require checking, and it is not yet read past a search
+snippet. Moving to N4 before that citation and the STAMa copy are chased to ground would repeat the Eckert 1864
+lesson (declaring victory on an edition search that stopped one step short of the source that actually matters).
+
+### Did we first-decipher?
+
+Unchanged from V-TX: unknown, not claimed either way. The new finding narrows what "unknown" covers — the
+letter's existence and general content are not obscure (Glawischnig cites it in 1973), but the specific
+plaintext of the two ciphered lines is still not located anywhere in print after this pass's search.
+
+### Safe and unsafe sentences
+
+- Safe: V-TX's safe sentence stands, with one addition: "...no prior plaintext or decipherment of these lines
+  has been located after a search of Groen's edition (full index), WVO's own catalogue, DECODE, the two solver
+  repositories, general web search, Google Books, OpenAlex and Semantic Scholar (N3); key source ours. Rolf
+  Glawischnig's 1973 study of Johann VI of Nassau-Dillenburg cites a letter from Jan van Nassau to Willem van
+  Oranje of this same date and place (17 April 1574, Köln) as a source for its general content, but no evidence
+  has been found that it discusses or prints the ciphered passage itself; a second copy of this letter cluster
+  at the Staatsarchiv Marburg (4f Nld. 165) has not yet been checked."
+- Unsafe: everything V-TX already listed, plus: "identified in Glawischnig" or any wording implying the cipher
+  passage's content, rather than the letter's existence, is confirmed in secondary literature — that is
+  precisely the unresolved question this section flags, not a finding.
+
+### Corrections to the target's files
+
+None needed to NOTES.md (V-TX already found none, and this pass adds no new claim to correct). V-TX's own
+AUDIT.md text is not corrected in place (per COMMON scope, only the sections named); this section supersedes its
+"N3 not N4" reasoning with the more specific reason above (Glawischnig/STAMa, not Japikse/Kervyn/Jacobi/Gachard,
+which are now closed) and should be read together with it, not in place of it.
+
+### Postmortem
+
+No process failure in V-TX's own work to report — its five flagged families were genuine, honestly-labelled
+gaps ("only keyword-searched"), and opening them was exactly the right next step, which is what this brief
+asked for. The lesson worth keeping: three of five "named edition, not yet opened" flags turned out to be true
+negatives cheaply closed by opening the primary source directly (a page list, a full-text fetch, an index read)
+rather than by another round of phrase search — the same method V6/V1 used for 5200/5549 elsewhere in this
+folder. The fourth, Glawischnig, is the reminder that a monograph specifically about the correspondent in
+question is worth more than a general edition, and a snippet-view hit that confirms a citation exists is not
+the same as reading what the citation supports — the next session with library or full-text access to
+Glawischnig 1973 should read the actual footnote and page before this target moves past N3.
+
+Requests this pass: resources.huygens.knaw.nl 9 (TOC, accessor forms x2, 2 live searches, pages.json x2, title
+page; >=2s apart), archive.org 7 (2 advancedsearch, 3 djvu downloads, 1 redirect retry, be-api.us.archive.org 4
+fts queries counted separately), be-api.us.archive.org 4, www.googleapis.com 20 (>=1.5s apart), api.openalex.org
+1, api.semanticscholar.org 2 (429 x2, stopped per good-citizen rule after one retry), api.crossref.org 1,
+api.archives-ouvertes.fr 1, WebSearch 7. No DECODE, no credentials beyond the two API keys (test -n only), no
+subagents (both available slots unused — every step here needed direct source reading, not a parallel pass),
+no image or PDF refetches.

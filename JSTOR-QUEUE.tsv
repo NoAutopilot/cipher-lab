@@ -73,3 +73,4 @@ ciphers/antt-linhares-chave	"Sousa Coutinho" AND ("chave de uma cifra" OR "Dicci
 ciphers/antt-linhares-chave	"Rodrigo de Sousa Coutinho" AND ("Rio de Janeiro") AND cifra AND correspondência	2026-09-25	queued	
 ciphers/vanbeuningen-dewitt-1657	"Van Beuningen" AND "De Witt" AND (cijfer OR cipher OR sleutel) AND (Noordse OR Denemarken OR 1657)	2026-09-25	queued	
 ciphers/jan-van-nassau-1572-75	"Johann VI" OR "Jean de Nassau" AND ("Mookerheide" OR "Mookerheyde") AND 1574 AND (Koln OR Cologne OR Keulen)	2026-09-25	queued	
+ciphers/jan-van-nassau-1572-75	"Glawischnig" AND "Nassau-Dillenburg" AND ("Johann VI" OR Mookerheide) AND ("Koln" OR "Cologne" OR "17. April 1574")	2026-09-25	queued	
