@@ -6023,3 +6023,72 @@ already knows about (Linhares — now solved; Wellington-Maitland — partial, d
 the only ones on file; nothing in this pass's five source families turned up a third. The next cheap move on
 *this* lane's own material is recovering the Wellington-Maitland dictionary edition itself (a transcription +
 edition-identification job, not a scout job), not a further metadata sweep of these same five sources.
+
+### DigitArq deep harvest, past PP-01..PP-10 and antt-linhares-chave (LANE PX PX-SCDIGI3, 25 Sept 2026)
+
+Brief `.claude/briefs/runs/2026-09-25-lane-px-scdigi3.md`. Method: `GET /api/docs/search?query=TERM` (top-10 +
+`total`; pagination confirmed still broken past 10 rows, same as scPARES/scDIGI2's finding). Search results carry
+`titles[0].value`, `filesCount` and `dateInitial`/`dateFinal` per hit but no `hasImages` flag (that needs a
+`/api/docs/details/{id}` call; `filesCount>0` at search level is itself a reliable proxy, cross-checked against
+`hasImages:true` on the one candidate detailed below). 24 narrow two-term queries run this pass, combining a cipher
+word (`cifra`, `chave`, `decifrado`, `algarismos cifra`, `contracifra`, `por cifra`) with a fonds/correspondent/place
+term from the brief's list (Linhares other maços, Palmela, Ponte, Pombal, D. Luís da Cunha, Sousa Coutinho, Aracaty,
+Anadia, Vila Nova de Cerveira, Azevedo e Araújo, Madrid, Paris, Haia, Roma, Viena, MNE, MSLIV, MISC, "embaixador").
+Totals: `cifra Linhares` 9, `chave Linhares` 32 (10 shown), `cifra Palmela` 2, `chave Palmela` 23 (10), `cifra Ponte`
+30 (10), `chave Pombal` 42 (10), `cifra Pombal` 5, `cifra Cunha` 28 (10), `chave Cunha` 464 (10, dominated by the
+common surname "Chaves"), `cifra Sousa Coutinho` 5, `cifra Aracaty` 0, `cifra Anadia` 4, `cifra Cerveira` 3, `cifra
+Azevedo Araujo` 5, `cifra Madrid` 9, `cifra Paris` 38 (10), `cifra Brochado` 3, `chave Brochado` 6, `cifra Luis da
+Cunha` 2, `algarismos cifra` 1, `decifrado` 3, `por cifra` 1442 (10, dominated by 20th-c. `EMA`/Cifra-Section
+telegram boxes and unrelated words containing "cifra" as a substring e.g. "Cidra"), `contracifra` 9, `cifra Haia` 8,
+`chave MNE` 1, `chave MSLIV` 0, `chave MISC` 0, `cifra Roma` 18 (10), `cifra Viena` 15 (10), `chave decifrar` 1,
+`cifra embaixador` 59 (10), `chave embaixador` 16 (10). Every hit with `filesCount>0` (i.e. worth a further look)
+was checked against its `titles[0].value`; almost all are 20th-century Estado Novo telegram/administrative material,
+Inquisition trial processes, notary/parish registers or surname coincidences (Chaves, Cidra, Cifka as a personal
+name) — none a cipher letter or key. The three already-known rows (PP-03/06/07, all `Chave de uma cifra` in CLNH
+maços 86/20/78) resurfaced in this sweep and confirm the drop-check works; **one new (undigitized) copy-order
+lead** surfaced alongside them and is logged below (`filesCount=0`, not a row).
+
+**One strong new copy-free find**, confirmed at full working resolution across nine leaves:
+
+| Row | Archive / signatura | Date | Description (archive's own note, cipher words bolded) | Image URL tested | Copy-free | Kind |
+|---|---|---|---|---|---|---|
+| PX-01 | ANTT `PT/TT/MSLIV/0638` (Manuscritos da Livraria, nº 638), "Cartas familiares de José da Cunha Brochado" | letters copied 1712-1713 (volume itself undated) | Archive's own description (ANTT `old_id` ANTT6014373): José da Cunha Brochado — secretary of the Paris embassy 1695-99, envoy extraordinary in Paris 1699-1704, **envoy extraordinary in London 1710-1714**, minister plenipotentiary in Madrid 1725 (all four cities are on the brief's ambassador list) — this bound volume copies letters he wrote as envoy in London, 1712-1713, covering the War of the Spanish Succession/Treaty of Utrecht negotiations. Archive note verbatim: "**Várias notícias são dadas em cifra**. **O final do volume apresenta excertos decifrados de algumas cartas**" (several items of news are given in cipher; the end of the volume presents deciphered excerpts of some letters) | `https://digitarq.arquivos.pt/fileViewer/7049343e7af44ba7b4ec18e74e1b2cd7` (docId `7049343e7af44ba7b4ec18e74e1b2cd7`, 306 images, CC BY-SA 4.0, no login; file list + 9 full-res leaves pulled: m0001 cover, m0050 [an ordinary plaintext letter, London 9 Aug 1712, signed "José da Cunha Brochado" to "Snr D. Luís da Cunha" — confirms sender/addressee/date range], m0150 [plaintext, Utrecht negotiations, names "Mylord Strafford"/"Mylord Bullingbrook" (Bolingbroke)], m0270/m0280/m0295 [plaintext], **m0289/m0290/m0291/m0292 [the decipherment appendix itself: at least six numbered "Carta Nº 89/91/92/93/94/96/101/105" entries, each a block of cipher groups (mostly 2-digit numbers 1-26 plus a handful of single-letter symbols c/d/f/g/h/m/x/y/z as extra homophones or nulls) followed by a "Deciffrada"/"Deciffrado" heading and the plaintext in full, e.g. Carta 93: "19.14.17.18.24.f.3.y.z.h.21.15.23.8.m.a.z.h.g.e.19.14.5.22.y.5.25.18.15.y.16.d.12.a.z.h.26.20.8.m.e.21.12.15.5.rr" -> "Deciffrado: Que não há boa intelligencia hum ... e Bullingbrook"]) | copy-free | **recovery** — a contemporary decipherment sits beside the ciphertext for (at minimum) six numbered letters within the same bound volume, the textbook "sibling in the same key" pattern LESSONS.md section 2 credits for most real solves; this is a key-alignment job, not a blind cryptanalysis one |
+
+**Extent not yet mapped**: the decipherment appendix runs from at least image m0289 through m0292 (letters numbered up
+to "101"/"105" seen on m0292, i.e. the numbering is the *sender's own outgoing-letter series*, not the image
+sequence — the volume evidently copies more letters than it decodes, and the un-deciphered majority of the 306
+images almost certainly still carries further ciphertext passages scattered through the plaintext narrative, as
+the archive note's "várias notícias" implies). Not paged end-to-end this pass (budget); a follow-on worker should
+read every image from about m0285 to m0306 (the appendix's likely full span) to transcribe every "Carta Nº / cipher
+group / Deciffrada / plaintext" quadruple, which by itself may hand over a workable key (the same digit/letter code
+recurs across at least six letters already seen) without needing to touch the 280-odd plaintext narrative pages at
+all. No ciphers/ folder created this pass (scouts don't solve or promote).
+
+**Cross-reference, not a row**: `PT/TT/MMCG/1E` ("Cartas de D. Fernando Teles de Faro, que sendo embaixador
+extraordinário em Holanda escreveu a Francisco de Melo, sendo embaixador extraordinário em Inglaterra", 1658-1659)
+surfaced under `cifra embaixador` — a third correspondent (after PP-10's Conde de Miranda and PP-01's own Francisco
+de Melo/marquês de Sande archive) in the same 1658-1666 Anglo-Dutch-Portuguese embassy circle already flagged by
+scPARES/scDIGI2 (also cross-referenced to BL Add MS 38038, QUEUE row N45). **Not digitized** (`filesCount:0`), so a
+copy-order lead, not a row — worth working alongside PP-01/PP-10/N45 when that circle is picked up.
+
+**Copy-order lead, not a row**: `PT/TT/CLNH/0050/1461` ("Carta do conde de Oeiras a António de Vasconcelos sobre a
+cifra que usaram os Jesuítas", 23 Nov 1761 — the future Marquês de Pombal, on the cipher the Jesuits used, in the
+year of his anti-Jesuit campaign) — a letter *about* a cipher's existence, not itself ciphertext or a key; not
+digitized. Logged for whoever eventually works the Pombal/Jesuit-expulsion angle, not pursued further here.
+
+**Drop-check:** PX-01 (`MSLIV/0638`, "Brochado") absent from QUEUE.md, CATALOG.md, LANDSCAPE.md and every
+`ciphers/*/NOTES.md` (grepped case-insensitively for `brochado` and `MSLIV.0638`/`MSLIV/0638`); absent from fresh
+25 Sept 2026 shallow clones of `dbourdeau/cyphersolver` and `aaymeloglu/unsolved-ciphers` (grepped the same terms,
+zero hits in either). PP-01/02/03/04 through PP-10 (already on file) were not re-listed even where a query above
+resurfaced them.
+
+**Per-host report:** `digitarq.arquivos.pt` ~49 requests this pass (1 reachability check, 24 search-term queries
+[most `total<=10` fully returned in one call, a few capped at the top-10 shown], 2 `docs/details` calls on the
+PX-01 candidate, 1 `--list` filelist call, 13 full-resolution leaf pulls via `tools/digitarq_fetch.py --full`), all
+>=3.2s apart, under the brief's <=60 cap. `github.com`: 2 shallow clones (`dbourdeau/cyphersolver`,
+`aaymeloglu/unsolved-ciphers`, grep only, no push). WebSearch: 0 (not needed; the DigitArq API and the two solver
+clones covered search and drop-check). No DECODE, no Gallica, no Google Books.
+
+nomination: mslv0638-brochado-1712 | copy-free | kind recovery | José da Cunha Brochado, envoy in London,
+letters copied 1712-1713, contemporary decipherment for >=6 letters in the same volume | ANTT PT/TT/MSLIV/0638
+(docId 7049343e7af44ba7b4ec18e74e1b2cd7)
