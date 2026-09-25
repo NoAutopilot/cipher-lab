@@ -77,5 +77,7 @@ brief that names this file inherits the instruction; it does not need restating 
 
 ## Handing over
 
+Naming and model (owner, 25 Sept 2026): every parent session is created on `claude-fable-5-1` and titled "Orchestrator N", N one more than the current parent's number (7c is Orchestrator 4, 7d is Orchestrator 5); the internal 7a/7b/7c labels stay in the files for lineage, the session title is the number. Lane orchestrators keep their lane names.
+
 Keep a "Parent handoff (<account>)" section in STATUS.md current: session id, check-in trigger id, live lanes, the
 owner's standing decisions. A successor reads it, takes over the trigger with update_trigger, and continues.

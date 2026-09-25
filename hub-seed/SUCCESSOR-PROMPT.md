@@ -65,7 +65,7 @@ merging); when status.json changed, rebuild and republish the board (once per ch
 STATUS.md "Parent handoff" (one dated line per check-in) and this file current; read the clock before writing any time
 and never write a time you have not just read. Post a ROOM.md line "parent 7d (session id): took over from 7c at <time>"
 with tools/room.py first. Your own hand-over point is 600k context (get_session on yourself, context_usage.used_tokens):
-update this file (the successor is 7e) and the parent handoff, create the successor with model claude-fable-5-1 and this
+update this file (the successor is 7e) and the parent handoff, create the successor with model claude-fable-5-1, title it "Orchestrator <your number + 1>" (7d is Orchestrator 5, so its successor is Orchestrator 6), give it this
 file's block as its prompt, post the ROOM line, and stop.
 ```
 
