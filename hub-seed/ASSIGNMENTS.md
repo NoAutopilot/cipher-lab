@@ -566,3 +566,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T20:54Z	session_01R1hZ23tX4j7RCMxwYm9J65	bSSR done 2.66 D-, archived
 2026-09-25T20:54Z	session_01RZGDw5jSBy5bQiYyq1hJdp	bMCC4 done 1.95 D, archived
 2026-09-25T20:54Z	session_01ANaWjhm3ix6shRysby4hXb	bRAY (Sonnet, cap 3)	rayburn-2004 test 1 (scienceblogs.de)	LANE B3 brief
+2026-09-25T21:06Z	session_0196VjuQaoVfdo8pYY9Avvm9	GOLD-K2 done $6.55 D, archived by LANE GOLD2	B-prime beau control 78.1 pct mean vs target -3.478 (band top -3.507, no flag); German key either-stream 89.6 vs -3.573; English list not run
+2026-09-25T21:06Z	session_01WDJiUb1ijocbB3N3LtsLWk	GOLD-K1 done $6.36 D, archived by LANE GOLD2	nl_dev 3.4M letters; B control 84.3 pct vs target -3.588/-3.640 in noise; B-prime control 84.8 vs -3.583 in noise
