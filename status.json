@@ -1,5 +1,5 @@
 {
- "updated": "25 Sept 2026, 16:35 UTC",
+ "updated": "25 Sep 2026, 17:07 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -1865,11 +1865,12 @@
   },
   {
    "date": "25 Sept 2026",
-   "kind": "contribution",
-   "title": "ANTT Costa Cabral 1865 (PT/TT/FCC/001/0021/00026): a self-glossed nomenclator draft captured as a key and reading",
-   "grade": "C 63, M 19, U 2 of 84 tokens, key.tsv 52 codes from the draft's own interlined syllables; decode_key.py --check 0; no verifier class yet",
-   "line": "The draft carries its plaintext above the codes (a found-solved shape): it concerns inviting the King of Italy as godfather to a Portuguese prince. Key source: period (the leaf's own gloss). Waiting on a LANE V6 verifier.",
-   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/antt-fcc-costacabral-1865"
+   "kind": "recovery",
+   "title": "ANTT FCC/001/0021/00026, an 1865 syllabic nomenclator worksheet for a dispatch to Costa Cabral, Conde de Thomar, envoy to the Holy See: the clerk's own plaintext over every code",
+   "grade": "N0 (AUDIT.md, verifier V6-COSTA, 25 Sept 2026); key period (a 52-row partial key rebuilt by R6 P5 from the clerk's code-over-syllable worksheet); C 63, M 19, U 2 of 84 tokens; decode_key.py --check exit 0",
+   "line": "ANTT FCC/001/0021/00026 carries an 1865 syllabic nomenclator encipherment worksheet with the clerk's own Portuguese plaintext written over every code; we rebuilt a 52-row partial key from it (grade C 63, M 19, U 2 of 84 tokens). No printing of the letter or its text was located (search log in AUDIT.md), class N0. Nothing was deciphered: the plaintext was on the leaf, as in the Clairambault 1067 and RAH Canada precedents; the result is a period key and a dataset (about 52 codes, homophones for con, ca, pa), with three codes carrying two values unresolved.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/antt-fcc-costacabral-1865",
+   "key": "period"
   }
  ],
  "lanes": [
@@ -1967,6 +1968,11 @@
    "name": "Board",
    "live": 0,
    "focus": "hall of fame view live from CITATIONS.md: one public citation (Cryptiana, 24 Sept 2026) and the pending replies list"
+  },
+  {
+   "name": "Lane GOLD, standing lane on the famous items (other account)",
+   "live": 6,
+   "focus": "opened 16:43 by parent 7c at the owner's decision: Köhler 1944 (archive route, then running key on a Dutch or German book text, then book code, each family with its matched control before the target) and Debosnys 1883 (second transcription pass, form test against his clear poems, anneal in fr/en/pt/la); the Navier-Stokes pattern -- sibling first, groups sharing HYPOTHESES.md, a Fable consolidator per cycle, the judge as the only gate"
   }
  ],
  "headline": "25 Sept 2026, 16:17 UTC: 18 letters (13 board entries) at N3 or better after two audits, 4 with our own key: Orange to August of Saxony 1561 (WVO 53, pure cryptanalysis), the van Beuningen 1657 key, Jan van Nassau's cipher lines of 17 Apr 1574 (WVO 5551), and now Linhares (dictionary code, Vieyra 1809), which the Portuguese judge passes on a corpus of its own period. Charles I's Digby cipher paper (BL Add MS 6912) is identified as Wheatstone's 1862 decipherment (N0, contribution). Both accounts are live: the other account's parent runs R6 (Salviati and the 13 gate-passing targets), V6 (verifiers, rolling QA) and B2 (breadth: lima, harry-caroline and powers first tests all negative or index-only); the owner account runs ZX (Brochado, Clair 349, Barriere) and CX2 (check-solved round 2, seven targets re-verified open today). The ChatGPT second-opinion runner has posted three pull requests (10-12); V6 checks every citation.",
