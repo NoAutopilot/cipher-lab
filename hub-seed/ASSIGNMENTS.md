@@ -446,3 +446,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T16:44Z	session_01DKDynpdEwZK5EokxtjCM3P	LANE GOLD orchestrator (Opus, cap 120)	standing lane: koehler-1944, debosnys-1883; owner decision 25 Sept	brief 2026-09-25-lane-gold-orchestrator.md
 2026-09-25T16:50Z	session_01Uktvb4t31yu7ECakLwuugc	done	bDEB debosnys-1883 test 1	pushed f7c7460
 2026-09-25T16:50Z	session_01XseK9i9AnL9C1yMiqd75gj	done (blocked)	bDOR dorabella-1897 test 1	pushed 1ef8fb7; ASKS row 50
+2026-09-25T16:49Z	session_0166AnCG2cnhzT49cjP1hRg2	LANE B2 bKAL (Sonnet, cap 3)	kaliningrad-2015 test 1 transcription check	brief 2026-09-25-lane-b2-kaliningrad-2015.md
+2026-09-25T16:49Z	session_016UPMZ7UBvMWu2PEsWNiFyC	LANE B2 bSPEC (Sonnet, cap 6)	ten specs, survey ranks 11-20	brief 2026-09-25-lane-b2-specs11-20.md
