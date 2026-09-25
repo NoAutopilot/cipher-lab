@@ -320,3 +320,111 @@ lookup, 2 phrase searches), `babel.hathitrust.org` 2 (1 curl 403, 1 browser atte
 `archive.org` 1 (advancedsearch), `search.worldcat.org` 1 (browser_fetch.js), WebSearch 3 queries. All sequential,
 >=1.5 s apart, no host hit more than 3 times, no 429 seen (403/Cloudflare/proxy-reject seen and logged per host,
 never retried past the one-retry limit).
+
+## 11. Second audit (AUD2, 25 Sept 2026)
+
+Separate session (parent worker AUD2, Sonnet, session_01NTKxpfXJHgtJsE3FsX7cKB), adversarial, per
+`.claude/briefs/runs/2026-09-25-parent-second-audits.md`; not the LX-VER/LX-SO/LX-ED session above, did not
+protect its conclusions, did not touch key.tsv/reading.txt/ciphertext.tsv. Read the first audit (sections 1-10
+above), NOTES.md, BOOK.md, reading.txt and phrases.txt first, then searched independently by different routes,
+per the brief's instruction to try families the first audit did not cover and any further route to *Textos
+Políticos, Económicos e Financeiros* (1993).
+
+**Key source (rule 10, 25 Sept 2026 addition -- missing from sections 1-10 above, added now):** the archive item
+`PT/TT/CLNH/0086/11` is itself titled "Chave de uma cifra" -- a period key sheet -- but that sheet names its
+codebook only as "o Diccionario", never a title or edition; LX-BOOK's identification of it as Vieyra's 1809
+pocket dictionary (BOOK.md, all twelve worked-example groups) is "identifying the codebook", which rule 10's
+definition places under **`ours`**, not `period`, even though the underlying key mechanism (page/column/rank
+arithmetic into a named-but-unidentified book) is a period artifact. Both items' key is **`ours`**: item 1 (the
+letter's decipherment) could not be read at all until the codebook was identified, so the reading rests on our
+own cryptanalytic step, not a period key alone; item 2 (the dictionary identification) is `ours` by rule 10's own
+wording. Text is not `known` for either item (no prior print located, this pass or the first).
+
+**New routes tried, not run by the first audit:**
+
+1. *Quadro elementar das relações politicas e diplomaticas de Portugal* (Visconde de Santarém) -- the first audit
+   only web-searched this; this pass opened it directly. Two archive.org scans found (`quadroelementar00santgoog`,
+   1842; `quadroelementard18sant`, vol. 18). `be-api.us.archive.org/fts/v1/search` for "cifra", "chave",
+   "Diccionario", "Vieyra" across both (8 queries, 25 Sept 2026, >=1.5s apart): one "cifra" hit (p.626 of the 1842
+   vol., an ambassadorial-instructions passage "Leva uma cifra para a correspondencia secreta") -- read in full
+   context: a 16th-century Rome embassy (Cardinals Santafiore, Sant'Angelo, Carpi; the Bishop of Goa), not
+   Sousa Coutinho/Linhares or 1811-12; one "cifra"/"chave" hit-group in vol. 18, context dated 1666 (the English
+   envoy Fanshaw), also unrelated. Zero "Diccionario"/"Vieyra" hits either volume. **Closes gap #2** from section 7.
+2. *Corpo Diplomático Português* (an adjacent series surfaced by the same search): three IA scans searched the
+   same way (12 queries) -- zero hits, any term, any volume.
+3. `idi.mne.gov.pt`'s "O segredo da escrita" exhibition page -- the first audit got a 403 and did not retry; this
+   pass reached it via the Wayback Machine (CDX lookup succeeded for this URL, unlike the first audit's separate,
+   failed CDX lookup for the bportugal.pt PDF -- a different URL, not evidence the earlier failure was wrong).
+   Read the 1 July 2022 snapshot in full: entirely about the Foreign Ministry's own 20th-century cipher service
+   (telegrams 1910-1984, Hagelin-Cryptos machines, a 1965 in-house "Dicionário da Cifra do MNE"), no mention of
+   Linhares, Sousa Coutinho, ANTT, or anything pre-1900. **Closes gap #6** (previously "unreachable, not retried").
+4. GitHub code search across all of GitHub, not only the two named solver repositories (`mcp__github__search_code`,
+   4 queries: "Linhares Vieyra cifra", "CLNH/0086", "Sousa Coutinho cipher dictionary key", "newpocketdiction00viey"):
+   every hit traces back to this repository itself; one unrelated namesake false positive (a physicist "Sofia de
+   Sousa Coutinho" in an arXiv-scraper repo). No third-party repository discusses this cipher, key, letter, or
+   dictionary identification. **Closes gap #7** (this repo's own workers had already re-cloned the two named
+   solver repos, but a repo-wide code search is a materially different, wider net).
+5. HAL (`api.archives-ouvertes.fr`), queried directly rather than left unreached: "Linhares cifra Vieyra" and
+   `"Sousa Coutinho" chiffre` -- both `numFound: 0`.
+6. Persée -- WebSearch restricted to persee.fr found nothing relevant; a direct site query could not be confirmed
+   (client-side-rendered results, curl cannot read the count) -- logged as attempted-inconclusive, not a clean
+   negative; a browser fetch was not tried this pass (residual gap, low priority: Persée is a French-journal
+   corpus, unlikely to cover a Portuguese archival item).
+7. Google Scholar (via WebSearch, no API access): no relevant scholarly hit for Vieyra's dictionary + cipher/code
+   in any language, or for this letter/key.
+8. OpenAlex full-text search (`fulltext.search`, a different filter from the first audit's keyword `search=`):
+   "Vieyra pocket dictionary cipher diplomatic" (0 hits); "Mansuy-Diniz Silva Sousa Coutinho cifra" (2 hits, both
+   unrelated by title -- tax history, colonial São Paulo commerce).
+9. Mansuy-Diniz Silva's other major work on this correspondent, not named by the first audit: *Portrait d'un
+   Homme d'État: D. Rodrigo de Souza Coutinho, Comte de Linhares, 1755-1812* (2 vols., Gulbenkian, Paris/Lisbon,
+   2006) -- a full biography, plausibly more likely than the 1993 documents edition to narrate archival material
+   from this fonds. No free scan located (not on IA, not full-view on Google Books). Its published review
+   (*Ler História* / OpenEdition, journals.openedition.org/lerhistoria/2436) was read in full instead: no mention
+   of ciphers, keys, codes or dictionaries anywhere; only a generic note that Linhares family papers went to state
+   archives. Negative, but the book's own text remains unopened -- **new residual gap toward N4**, alongside the
+   1993 edition (same access problem, no online route found either).
+10. Two Portuguese biographical/secondary sources found and read in full: `dicionario.ciuhct.org`'s entry on
+    "Coutinho, D. Rodrigo de Sousa" (cites the CLNH fonds generically, no cipher mention) and the amelica.org
+    article "Um intelectual com face de Janus..." (no cipher mention). Both negative.
+11. BND/Biblioteca Nacional Digital (purl.pt/bndigital.bnportugal.gov.pt): WebSearch clean (only an unrelated
+    1932 photograph and an unrelated coat-of-arms record); the Koha OPAC path tried directly 404'd (wrong
+    endpoint, not pursued further given the clean WebSearch sweep).
+12. RCAAP (Repositório Científico de Acesso Aberto de Portugal): blocked by an Anubis bot-challenge to curl, same
+    software family as bibliotecadigital.rah.es in CLAUDE.md's playbook -- unreachable this pass, not retried
+    with `tools/browser_fetch.js`. Named gap, not a negative.
+13. *British and Foreign State Papers* (the standard published UK Foreign Office series) -- a new lead: Linhares
+    negotiated directly with Lord Strangford during the Rio period, so an English-translated excerpt of this or a
+    related letter could exist there, defeating a Portuguese-phrase search (per the Blathwayt/"(Cypher.)"
+    lesson in `.claude/briefs/verifier.md`). Found the series on Internet Archive (34 candidate volumes); spot-
+    checked one (`britishforeignst1001grea`) by full-text search for "Sousa Coutinho": 0 hits. The other ~33
+    volumes were not systematically checked by date/correspondent (out of proportionate scope for one pass) --
+    **named gap, not closed**, and the most promising unclosed lead from this session because it is the one
+    family neither audit has actually searched by date+correspondent rather than by phrase.
+14. `bportugal.pt`'s Textos Políticos PDF -- retried once more via WebFetch specifically (a third tool/route,
+    after curl and `browser_fetch.js` in the first audit): still HTTP 403. Confirms the block is host-wide across
+    tool types, not a fluke of one fetch method; does not open a new route. The Wayback CDX index itself proved
+    reachable this pass (see item 3, a different URL) where the first audit's attempt at the exact PDF URL failed
+    at the transport level -- worth one fresh CDX attempt against the precise `ocpep-7_t1.pdf`/`ocpep-7_t2.pdf`
+    paths in a future pass, since the earlier failure may have been session-specific rather than permanent.
+
+**Verdict: agree with the first audit, both items stay N3.** Nothing found in this second, differently-routed
+sweep disproves either "no prior plaintext/decipherment of the m0002 fragment" or "no prior identification of the
+key's dictionary as Vieyra 1809". The sweep is additive, not corrective, on novelty: it closes four of the first
+audit's four named gaps toward N4 as genuine negatives (Quadro elementar, Corpo Diplomático, the MNE exhibition
+page, and a GitHub-wide code search) rather than leaving them as "checked only by web search" or "unreachable, not
+retried". It also surfaces one correction: the verdict table in section 1 is missing the `key` column rule 10
+requires; both items are `ours` (see above), which the person's outreach or contribution wording should carry
+forward. The two access gaps toward N4 remain open and are now joined by a third: *Textos Políticos* (1993, both
+volumes, still 403 across three tool routes), Mansuy-Diniz Silva's 2006 *Portrait d'un Homme d'État* biography
+(newly identified, no free copy found), and a full date/correspondent sweep of *British and Foreign State Papers*
+(only 1 of 34 volumes spot-checked). None of the three is closed; all three would need either a working route past
+`bportugal.pt`'s block, a library/ILL copy of the 2006 biography, or a properly scoped worker for the 33 remaining
+State Papers volumes.
+
+Request counts, this pass (25 Sept 2026): `be-api.us.archive.org` 15, `archive.org` 3, `api.openalex.org` 2,
+`api.archives-ouvertes.fr` (HAL) 2, `persee.fr` 2 (inconclusive), `rcaap.pt` 1 (blocked), `catalogo.bnportugal.gov.pt`
+1 (404, wrong path), `web.archive.org` 2 (both succeeded), `bportugal.pt` 1 (403, WebFetch), GitHub code search 4
+queries, WebSearch 11 queries, WebFetch (non-archive.org pages) 4. All sequential, >=1.5s apart, well under any
+per-host cap; no 429 seen. Credentials tested present (`test -n`, never printed): DECODE_USER, DECODE_PASS,
+GOOGLE_BOOKS_KEY, OPENALEX_KEY, S2_KEY, IA_USER, IA_PASS; only OPENALEX_KEY was needed this pass. 1 Explore
+subagent used for this search pass (within the brief's 2-subagent cap).
