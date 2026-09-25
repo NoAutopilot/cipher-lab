@@ -1,0 +1,34 @@
+line	col	A	B	flagged	crop
+r01	8	[PLAIN:deseo]	[PLAIN:desseo]		
+r02	1	[PLAIN:ciacion]	-		
+r02	2	[PLAIN:que]	[PLAIN:ciacionque]		
+r02	18	[PLAIN:1648.]	-		
+r03	1	[PLAIN:operaciones]	[PLAIN:Operaciones]		
+r03	4	[PLAIN:deven]	[PLAIN:deuen]		
+r03	5	[PLAIN:saver:]	[PLAIN:saber:]		
+r03	6	[PLAIN:24]	24		
+r04	17	17	47		
+r05	8	[PLAIN:Holgare]	[PLAIN:holgare]		
+r05	15	[PLAIN:razon]	[PLAIN:rason]		
+r05	16	[PLAIN:saueis]	[PLAIN:saveis]		
+r07	11	[PLAIN:tardanca]	[PLAIN:tardanla]		
+r08	4	[PLAIN:per]	-		
+r08	5	[PLAIN:juicio]	[PLAIN:perjuicio]		
+r08	6	[PLAIN:procuraveis]	[PLAIN:procurareis]		
+r12	6	[PLAIN:necesario]	[PLAIN:necessario]		
+r20	6	2	-		
+r20	7	3	23		
+v01	6	[MARK:frac]	[MARK:loop]	B	
+v04	19	15	-		
+v09	16	[PLAIN:convenga]	[PLAIN:conviene]		
+v11	2	[PLAIN:pudiese]	[PLAIN:pudiere]		
+v11	3	[PLAIN:caminar]	[PLAIN:Caminar]		
+v13	13	[PLAIN:brevedad]	[PLAIN:breuedad]		
+v14	1	[PLAIN:qualquiera]	-		
+v14	6	[PLAIN:summamente]	[PLAIN:Summamente]		
+v14	7	[PLAIN:danosa]	[PLAIN:dañosa]		
+v14	13	[PLAIN:aten...]	[PLAIN:ato-]	B	
+v15	1	[PLAIN:...a]	[PLAIN:a]		
+v15	8	[PLAIN:vos]	[PLAIN:gos]	B	
+v15	10	[PLAIN:Barneton]	[PLAIN:Barneuo]		
+v16	3	[PLAIN:1648]	[PLAIN:1648.]		

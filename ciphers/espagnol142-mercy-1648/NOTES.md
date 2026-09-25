@@ -271,3 +271,109 @@ whoever takes this target: transcribe f.22r-22v as ciphertext.txt (2 blind passe
 rule), and separately, since the "Baron"/"abbé" title mismatch is unresolved, a quick check of canvases
 46-57 (the intervening Condé/Mazarin item) for any signature or heading that might explain it before assuming
 it is the same agent.
+
+## Y6: transcription and key trial (25 Sept 2026, LANE R6)
+
+**Status unchanged: open.** This pass transcribes the ciphertext (f.22r-22v) and searches for a published key of
+the same office; no key found, so no decode was attempted (per this worker's brief, cryptanalysis is out of scope).
+
+### Transcription
+
+Two blind passes from the images already on disk (`images/f22r_canvas58.jpg`, `images/f22v_canvas59.jpg`):
+line crops cut with `tools/iiif_lines.py --image ... --lines-per-crop 5` (18 crops, `images/f22r_L*.jpg`,
+`images/f22v_L*.jpg`, both leaves' full width split into left/right halves at native resolution). Pass A: this
+worker, reading the crops directly. Pass B: one blind Sonnet subagent, given only the crop images (not this
+worker's transcription), writing independently to `passB.tsv`.
+
+`tools/reconcile_passes.py passA.tsv passB.tsv --crops images --keep-plain`: **95.3% agreement (662/695
+signs), well above the 80% gate** (98.9% on the numeric/mark stream alone, 521 code+mark tokens). 33
+disagreement columns, mostly period-spelling variants the two passes read differently (deseo/desseo,
+saver/saber, tardança/tardanla, u/v equivalence) -- not settled further, both are legitimate readings of this
+hand's orthography. Two real corrections came out of reconciliation and a re-check against the full-page
+images (not just the line crops, which had cut a few lines short at their right-hand crop boundary): four
+manuscript lines (v05-v08) had 5-7 trailing code tokens missing from pass A's initial reading, recovered by
+comparing against `images/f22v_canvas59.jpg` directly; two spots pass A read as a bare digit 7 (r07, r09) are
+in fact a distinct symbol pass B independently and correctly flagged as non-digit, transcribed here as
+`[MARK:box]`. Settled from the image, not left as a majority vote.
+
+Six columns still disagree after settling and are left at confidence M with the alternate noted in
+`ciphertext.tsv`: `r04` pos17 (17 vs pass B's 47), `r20` pos6-7 (two single digits 2,3 vs pass B's joined
+23), `v01` pos6 (a non-standard symbol, exact shape unclear -- "1½"-like vs pass B's "[MARK:loop]", needs an
+eye-check against the image at higher zoom than this pass used), `v04` pos19 (a digit at the exact crop
+boundary pass B's crop cut off), and `r03` pos1 (both passes agree the character is "24"; disagreement is
+only bookkeeping -- pass A classed it as a plain section-numeral pass B classed as a code, see below).
+
+**Files:** `passA.tsv`, `passB.tsv` (both long format: line, pos, token, conf, note), `disagreements.tsv`,
+`agreement.tsv`, `ciphertext_draft.tsv` (reconciler output), `ciphertext.tsv` (= `ciphertext_draft.tsv`, the
+committed reading). 18 new line-crop images in `images/` (`images/manifest.json` updated), well under the
+30 MB budget (images/ now ~7 MB total).
+
+### The ciphertext: structure
+
+Two leaves, 40 manuscript lines (24 recto, 16 verso), 174 plain-Spanish-word tokens and 521 code/mark tokens.
+**Only 38 distinct code/mark values are used across those 521 tokens** (36 numeric values, range 2-72, plus
+two non-numeric marks `[MARK:box]` and `[MARK:frac]`), with the five commonest values (18, 32, 5, 10, 6)
+covering nearly 40% of all code tokens. That is a small alphabet for 521 tokens -- consistent with a
+**homophonic or plain substitution over individual letters** (roughly matching the size of the Spanish
+alphabet plus a few homophones and nulls), not a nomenclator with hundreds of word/syllable codes the way
+e.g. Bourdeau's Carpio-1677 or Balbases-1677 Brussels keys are built (both go well past 100 distinct code
+values into the hundreds; see below). This is an observation for whoever attempts cryptanalysis next, not a
+decode -- flagged, not solved, per this brief's scope.
+
+The plain-Spanish runs open the letter's own address ("Baron de Mercy mi Sumiller de Cortina deseo tener
+Resolucion de la negociacion que fuisteis..."), a mid-letter connective ("...porque qualquiera hora de
+tardanza en la coyuntura presente es de summo perjuicio procuraveis sacar Respuesta Cathegorica en la
+materia"; "Con fundamento lo que nos podemos prometer y Caso de no estar en estado y que es necesario esperar
+algun tiempo para poder dezir determinadamente el que tiene esta negociacion y lo que se puede confiar della";
+"Caso que le paresca que esta materia no convenga, Corra por su mano le preguntareis a que persona se podria
+encargar para que se pudiese caminar en ello sin perder tiempo. ... En todo os encargo la brevedad porque
+qualquiera dilacion que aya es summamente dañosa y de nuestro zelo fio atendera ello con el Cuydado que
+conviene"), and the closing dateline ("...os encargo. Barneton, a seis Junio de 1648"), matching the finding
+aid's own "Barneton, 6 juin 1648" word for word (confirms worker Y5's folio pin again, independently, from
+the full transcription this time rather than just the closing line). "24 -" after "operaciones que se deven
+saver:" (r03) reads as a plain section/item numeral in the same hand as the surrounding plain text, not a
+cipher code -- flagged in `ciphertext.tsv` as `[PLAIN:24]` rather than a numeric sign, though pass B's blind
+reading (which does not distinguish plain numerals from code numerals by convention) counted it as a code;
+recorded as a bookkeeping disagreement above, not a reading dispute.
+
+### Key trial (lead class 4: a published key of the same office)
+
+Searched, within this brief's host limit (github.com, one shallow clone only -- no DECODE, no web search):
+
+1. **Cryptiana's Spanish-cipher pages** (`sources/cryptiana/web/spanish*.htm`, all seven: spanish, spanish2,
+   spanish2A, spanish2B, spanish2C, spanish3, spanish3C, spanish3D). All cover Ferdinand/Isabella through
+   Philip II (1470s-1580s); none reaches the 1640s. No candidate.
+2. **`dbourdeau/cyphersolver`** (fresh shallow clone, 25 Sept 2026). No folder or catalogue entry for
+   "Castel-Rodrigo", "Peñaranda"/"Penaranda", or "Bracamonte". Folders in the 1640-1650 window
+   (`baner1640/`, `conti1649/`, `goring1645/`, `hm1645/`, `rupert1645/`) are all non-Spanish (Swedish,
+   Italian, English/Royalist, Prince Rupert). `esp318/` is Ferdinand/Isabella-era (1497-1504), wrong century.
+   **Best lead found, not testable within this brief's hosts:** `balbases1677/NOTES.md` and
+   `docs/balbases1677.html` record that Bourdeau checked "eight Brussels keys in the series ... DECODE
+   R958-R965 ('chiffres 1647-98')" against the Balbases-Fuenmayor 1677-78 correspondence (same
+   Secrétairerie d'État et de Guerre, Archives générales du Royaume, Brussels -- the same government office
+   as this target, a generation later) and found none of the eight fit *that* correspondence. The series
+   itself runs from **1647**, one year before this target's 6 June 1648 letter, and is the single closest
+   date/office match found anywhere in this search -- but Bourdeau's repo only references these DECODE
+   records (`de-crypt.org/decrypt-web/RecordsView/958` through `.../965`), it does not embed their key data,
+   so this worker could not fetch or apply them: this job brief restricts hosts to github.com only, and
+   DECODE is out of scope this pass. **Recommended next step for a worker with DECODE access:** fetch
+   R958-R965 (Brussels "chiffres 1647-98") and test the earliest of the eight against this target -- it was
+   checked against a *different* correspondence (Balbases-Fuenmayor, 1677-78, a different sender/recipient
+   pair) and failing there does not rule it out for a Guise-household-to-Baron-de-Mercy letter of June 1648.
+   As a secondary, weaker check: `balbases1677/key.json` (that repo's own rebuilt key, not from the "chiffres
+   1647-98" series) was inspected directly -- it is a 180-entry syllabic nomenclator, numeric range 1-700,
+   architecturally a poor match for this target's 38-value near-alphabet-sized code set, and 29 years off
+   this target's date, so not applied. `carpio1677/`'s key (also Brussels-adjacent, described in its NOTES.md
+   prose but with no machine-readable key file in the repo) is a similar large syllabic nomenclator (numbers
+   9-60 plus a struck-through second table), same mismatch, same date gap; not applied.
+3. No Aymeloglu clone made (this brief names only Bourdeau's index for this lead, and restricts this pass to
+   one shallow clone).
+
+**Result: no candidate key found that this worker could both identify and apply.** Per this brief, this is
+reported as the negative result for the lead-class-4 search, not a decode attempt; no matched-control test
+was run because no key was ever applied to the ciphertext (rule 3's control requirement applies to a
+solver's *attempt*, and none was made here beyond identifying candidates). The transcription itself
+(`ciphertext.tsv`) is now on file for whoever runs cryptanalysis or fetches the Brussels 1647-98 series next.
+
+Requests this section: github.com 1 shallow clone (`dbourdeau/cyphersolver`, ~12,000 files, single fetch).
+No other hosts. 1 Sonnet subagent (pass B transcription, within the brief's cap of one).
