@@ -377,3 +377,93 @@ solver's *attempt*, and none was made here beyond identifying candidates). The t
 
 Requests this section: github.com 1 shallow clone (`dbourdeau/cyphersolver`, ~12,000 files, single fetch).
 No other hosts. 1 Sonnet subagent (pass B transcription, within the brief's cap of one).
+
+## Y8: spec and first test (25 Sept 2026, LANE R6)
+
+**Status unchanged: open.** Per `.claude/briefs/runs/2026-09-25-lane-r6-y8-mercy-spec.md` (breadth lane,
+CLAUDE.md 3a): built a Spanish period corpus, wrote `specs/espagnol142-mercy-1648.json`, and ran the spec's
+first cheap test (homophonic anneal with a matched control). Full numbers are in the spec's
+`cheap_test_done`; this section explains them and flags what needs attention.
+
+### es17 corpus
+
+`tools/data/es17/` (new): two Internet Archive `_djvu.txt` texts, early-17th-c. Spanish prose -- Cervantes'
+*Don Quijote* (1876 reprint, clean OCR) and Quevedo's *Vida del Buscón* (1911 reprint, clean OCR; a genuine
+1626-edition scan of the same text was tried first and rejected -- its long-s type OCRs as "f" throughout,
+"feñor" for "señor", which would bias letter frequencies). 1,924,629 letters after `fold()`, well over the
+brief's 200k floor. See `tools/data/es17/README.md` and `MANIFEST.tsv`. Wired into
+`tools/judge_plaintext.py`'s `LANG_CORPORA["es"]` (there was no prior `es` default to preserve, unlike
+`de`/`fr`, so this needed no per-spec workaround); `python3 tools/judge_plaintext.py --selftest` still
+passes. `tools/data/README.md`'s table updated.
+
+### Cheap test 1: homophonic anneal, matched control first
+
+Extracted the 521 code/mark tokens from `ciphertext.tsv` (dropping the 174 `[PLAIN:...]` tokens) to
+`cipher_codes.tsv` (marks as separate symbols, N=521, K=38) and `cipher_codes_nomarks.tsv` (marks dropped,
+N=518, K=36). Ran `tools/homophonic_anneal.py` (default order=3, 8 restarts x 40,000 iters) against both,
+with the es17 corpus, several seeds each; ran the tool's own matched `--control` (same N, K, homophonic
+design, Spanish, same solver) **first**, 5 seeds at K=38 and 3 at K=36, per CLAUDE.md rule 3.
+
+**Control (what a real Spanish text of this exact shape scores):** K=38/N=521 scores across 5 seeds:
+-1321.7, -1356.6, -1326.0, -1337.4, -1339.1 (best -1321.7; letter-recovery share 35.5-81.4%, itself uneven,
+consistent with this design being hard for the annealer even on real Spanish -- the Salviati/code+mark
+lesson in CLAUDE.md rule 3 again: a homophonic/code design at this N does not read reliably blind).
+K=36/N=518 (marks dropped) across 3 seeds: -1352.5, -1335.5, -1352.2 (best -1335.5).
+
+**Target:** K=38/N=521 across seeds 1,2,3,4,5,7: best score -1154.3 to -1154.6 at seeds 2, 3, 5, and 7 (seed
+7 run at 16 restarts, 9 of them land in that same narrow band); seed 1 stuck at -1353.2, seed 4 at -1178.5.
+K=36/N=518 (marks dropped) across seeds 1,2,3: -1154.5, -1154.5, -1156.0 -- same optimum, same
+reproducibility, regardless of whether the 3 mark tokens are kept or dropped.
+
+**The gap:** the target's best score beats every one of the 8 control runs tried, by 167 points
+(K=38: -1154.3 vs control best -1321.7) to 181 points (K=36: -1154.5 vs control best -1335.5) -- far outside
+the control's own inter-seed spread (about 35 points at K=38, 17 points at K=36). This is reproduced by
+`cheap_test_1/rerun.sh` (checked: re-running gives -1154.6/-1154.3/-1154.6 for three target seeds and the
+same five control numbers, byte-for-byte).
+
+**Judge verdict** (`tools/judge_plaintext.py` against an ad hoc `{"judge": {"language": "es", "letters_min":
+200, "control_samples": 200}}` spec, `--file` the K=38 seed-3 decode): length OK; language **FAIL** --
+score=-1.048, null_p99=-1.88 (clears -- this is clearly not random text), real_p05=-0.897, real_median=-0.812
+(fails -- not yet as clean as real prose). So: neither a clean PASS nor a routine, uninformative negative.
+
+**What this means, and what it does not mean.** The score gap is large and reproducible across independent
+random seeds and both design variants (marks in/out), which is strong evidence this 521-code sequence is
+*more decryptable toward Spanish* than a real Spanish text of the same shape typically is under this
+solver -- consistent with a genuine (if only partially recovered) homophonic substitution, not noise. It is
+**not** a reading: 17 of the 24 available letters are used across the 38 codes (f, g, h, k, w, x, z never
+appear), so several low-frequency codes are almost certainly wrong under a pure trigram objective with no
+crib; the plain-Spanish context already transcribed around the code runs (the address, the connective
+sentences, the closing dateline) was **not** used as a crib here (that is the spec's test 2, a campaign-scale
+step, not this breadth test). For the record, not as a claim: the decode contains legible-looking fragments
+-- `electordebrandenburi` ("elector de Brandenburg", missing the final g since no code maps to g in this
+key -- and the Elector of Brandenburg is a real figure in exactly this period's diplomacy), `cartasdecreencio`
+("cartas de creencia", credential letters -- a real diplomatic term), `millombres`/`inoanteria` ("mil
+hombres"/"infantería", military terms) -- flagged for a follow-up worker to check against the image and the
+crib, not confirmed, and no rule-10 wording applies to any of it.
+
+**Caveat on the control's rigor.** The brief asked for a control using "the target's own code frequency
+profile" (i.e. replicating the exact 38 occurrence counts, 57/42/41/.../1, not just corpus letter
+frequency). `tools/homophonic_anneal.py --control` allots homophone group *sizes* to letters by corpus
+letter frequency, which is a matched-N/K/design/language control per CLAUDE.md rule 3's letter, but not
+that stricter ask. A custom script attempting the exact multiset (`/tmp/exact_freq_control.py`, not
+committed -- scratch only) had a bug (it zipped the 38 target counts against only the ~24 available
+letters, producing K=307-320 instead of 38) and was abandoned mid-pass rather than spend further budget
+debugging it under this test's cap. Given the size of the gap (167-181 points vs a control spread of
+17-35), it is very likely a stricter control would still leave a large gap, but this was not run --
+**flagged as the next worker's first move**, not claimed.
+
+**Recommendation:** this spec's first test *moved it* (CLAUDE.md 3a) -- the gap is far larger than the
+control's own noise and reproduces across seeds and design choices. Recommend promoting
+espagnol142-mercy-1648 to a campaign: (1) the exact-frequency-profile control above; (2) hand/crib
+refinement using the already-transcribed plain-Spanish context as anchors, and eye-checking the 1-3-
+occurrence codes against the image; (3) fetching DECODE's Brussels "chiffres 1647-98" (R958-R965, Y6's lead)
+in parallel. Status stays **open** -- no established reading, no key, nothing graded under rule 4 yet.
+
+**Files:** `tools/data/es17/` (new, 2 files + README + MANIFEST), `tools/judge_plaintext.py` (LANG_CORPORA
+edit), `tools/data/README.md` (table row), `specs/espagnol142-mercy-1648.json` (new),
+`ciphers/espagnol142-mercy-1648/cipher_codes.tsv`, `cipher_codes_nomarks.tsv`,
+`candidate_reading_seed3_marks.txt`, `candidate_reading_nomarks_seed1.txt`, `cheap_test_1/` (raw JSON
+outputs for every seed reported above, plus `rerun.sh`, which reproduces the key numbers exactly).
+
+**Requests:** archive.org 2 (djvu.txt downloads for es17) + 4 metadata/search calls (advancedsearch.php x2,
+metadata.php x2), all >=1.5s apart, descriptive UA. No other hosts. No subagents.

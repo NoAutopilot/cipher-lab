@@ -1,0 +1,61 @@
+{
+ "slug": "espagnol142-mercy-1648",
+ "name": "Letter to the Baron de Mercy, Sumiller de Cortina, 6 June 1648 (Barneton)",
+ "date": "6 June 1648",
+ "language_candidates": ["es"],
+ "ciphertext": "ciphers/espagnol142-mercy-1648/ciphertext.tsv",
+ "ciphertext_note": "two leaves (f.22r-22v), 40 manuscript lines; 174 plain-Spanish-word tokens (address, connective prose, closing dateline) plus 521 code/mark tokens over 38 distinct values (36 numeric, range 2-72, plus two non-numeric marks [MARK:box]/[MARK:frac]); two blind passes, 95.3% agreement, settled from the images (Y6, 25 Sept 2026); code-only stream extracted at ciphers/espagnol142-mercy-1648/cipher_codes.tsv (521 rows, marks as separate symbols) and cipher_codes_nomarks.tsv (518 rows, marks dropped)",
+ "alphabet": "38 code/mark values, small alphabet consistent with a homophonic or plain substitution over individual letters rather than a syllable/word nomenclator (Y6's observation)",
+ "constraints": {
+  "sender_recipient": "unsigned draft/minute (Spanish court, likely Peñaranda/Castel-Rodrigo office per the finding aid) to the Baron de Mercy, his Sumiller de Cortina, dated at Barneton",
+  "context": "concerns a pending negotiation ('la negociacion que fuisteis'), urges haste, asks who else could take charge if unsuitable",
+  "prior_key_search": "no published key of the same office found within LANE R6 Y6's host limits (github.com only); best untested lead is DECODE Brussels 'chiffres 1647-98' series R958-R965, same Secretariat, one year earlier -- not fetched (DECODE out of scope for that pass)"
+ },
+ "cheap_tests_in_order": [
+  "1. Homophonic/MASC anneal (tools/homophonic_anneal.py) on the 521-token code stream with an early-17th-c. Spanish corpus (tools/data/es17), marks tried both as separate symbols and dropped; matched control first (same N, K, design, language, corpus). Cost ~$3, Sonnet.",
+  "2. If test 1 moves it: hand/crib refinement against the plain-Spanish context words already transcribed around the code runs (the address, the connective prose, the dateline are known-plaintext neighbours of several code runs and were not used as a crib in test 1), plus resolving the low-frequency (1-3 occurrence) codes by eye against the image. This is a campaign-scale next step, not a second breadth test.",
+  "3. Fetch DECODE Brussels chiffres 1647-98 (R958-R965) and test against this target directly (needs DECODE access, out of scope for a github-only or archive.org-only pass)."
+ ],
+ "matched_control": "same N and K as the target's own code stream, homophonic substitution, Spanish (es17 corpus), same solver (tools/homophonic_anneal.py --control), 5-6 seeds",
+ "judge": {
+  "language": "es",
+  "letters_min": 200,
+  "control_samples": 200
+ },
+ "value": "high: a 38-value code set with plain-Spanish framing already transcribed and agreeing 95.3% across two passes; test 1 (below) found a reproducible, control-beating anneal optimum, not yet a clean read",
+ "model": "Sonnet for test 1; strongest model recommended for test 2 (crib refinement) given the specificity of the candidate fragments found",
+ "written": "25 Sept 2026 by LANE R6 worker Y8 (session), Sonnet, per .claude/briefs/runs/2026-09-25-lane-r6-y8-mercy-spec.md",
+ "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run is under cheap_test_done with its control",
+ "cheap_test_done": {
+  "test": 1,
+  "date": "25 Sept 2026",
+  "worker": "LANE R6 worker Y8, Sonnet",
+  "method": "tools/homophonic_anneal.py on the code stream, two design variants (marks as separate symbols: N=521, K=38; marks dropped: N=518, K=36), tools/data/es17 corpus (built this pass, see tools/data/es17/README.md), default order=3, 8 restarts x 40000 iters per seed, several seeds per variant (target: seeds 1-5 and 7 marks-as-symbols, seeds 1-3 marks-dropped; control: 5 seeds K=38, 3 seeds K=36, tools/homophonic_anneal.py's built-in --control mode, which allots homophone group sizes to letters by corpus letter frequency rather than replicating the target's exact per-code occurrence multiset -- a matched-N/K/design/language control per CLAUDE.md rule 3, but not the stricter 'target's own code frequency profile' this job's brief asked for; a custom script attempting the exact multiset was written and abandoned mid-pass after a bug (see NOTES.md) rather than spend further budget debugging it -- flagged as the next worker's first move, not run.",
+  "result": {
+   "target_marks_as_symbols_N521_K38": {
+    "best_score": -1154.3,
+    "seeds_at_or_near_optimum": "seeds 2,3,5,7 converge to -1154.3 to -1154.6 (a tight, reproducible basin: 9 of 16 restarts at seed 7 alone land there); seed 1 stuck at -1353.2, seed 4 at -1178.5",
+    "decoded_sample": "olandoseestosormasencompainadeladuquesodeeleureusesdelasquealaieniaconuosparaquenosinoimedeoulossepamospasareisoelauesauerosconelelectordebrandenburiseoneopiradlonburistrosiemareymasorparadienseeembiancartasdecreencioqueianconestaslespropondreesdeseseparmetiraseleuantenenaquelpaestresmillombresdeinoanteriaendosotredeiimientesconquecondicionessaleamaremosorsiquerraencariaedellasquecorraporsunoladirentnonssiiunaseramasconuenientarotratantaientedequeaaleuantadatidolasensuluiarleuaarotrasseconsuieseelorutodetenertaiente"
+   },
+   "target_marks_dropped_N518_K36": {
+    "best_score": -1154.5,
+    "seeds_at_or_near_optimum": "all 3 seeds tried (1,2,3) land at -1154.5, -1154.5, -1156.0"
+   },
+   "control_marks_as_symbols_N521_K38": {
+    "scores_5_seeds": [-1321.7, -1356.6, -1326.0, -1337.4, -1339.1],
+    "best": -1321.7,
+    "shares_recovered": [0.516, 0.355, 0.758, 0.727, 0.814]
+   },
+   "control_marks_dropped_N518_K36": {
+    "scores_3_seeds": [-1352.5, -1335.5, -1352.2],
+    "best": -1335.5,
+    "shares_recovered": [0.34, 0.371, 0.22]
+   }
+  },
+  "gap": "target's best score beats every control seed tried, by 167 points (marks-as-symbols: -1154.3 vs control best -1321.7) to 181 points (marks-dropped: -1154.5 vs control best -1335.5) -- far outside the control's own inter-seed spread (about 35 points marks-as-symbols, 17 points marks-dropped). Both design variants (marks in or out) converge to essentially the same score and the same reproducibility pattern, so this is not an artifact of one choice.",
+  "judge_verdict": "python3 tools/judge_plaintext.py <ad hoc N/letters_min/control_samples spec> --file <marks-as-symbols decode>: length OK; language FAIL -- score=-1.048, null_p99=-1.88 (clears, i.e. clearly not random), real_p05=-0.897, real_median=-0.812 (fails, i.e. not yet as clean as real prose). This is neither a clean PASS nor a routine negative.",
+  "reading": "NOT a claimed reading (rule 4/7 do not apply yet): this is a raw, un-crib'd homophonic-anneal output. 17 of the 24 available letters are used across the 38 codes (7 unused: f,g,h,k,w,x,z), so several low-frequency codes are almost certainly mis-assigned by the trigram-only objective; the plain-Spanish context words already transcribed around the code runs were not used as a crib in this pass (that is test 2, a campaign-scale step, not this breadth test). Legible-looking fragments in the decode -- 'electordebrandenburi' (elector de Brandenburg, missing the final g since no code maps to g), 'cartasdecreencio' (cartas de creencia, credential letters -- a real diplomatic term), 'millombres'/'inoanteria' (mil hombres, infanteria -- military terms) -- are noted as observations for a follow-up worker to check against the image and the crib, not confirmed readings; rule 10 (no 'solved', no novelty wording) applies in full.",
+  "status_recommendation": "test 1 moved it (CLAUDE.md 3a): score gap far exceeds control noise, reproducible across independent seeds and both design variants. Recommends promotion to a campaign (crib-refinement pass against the image, using the already-transcribed plain-Spanish context as a crib, resolving the 1-3-occurrence codes by hand) rather than closing as either solved or negative. Target status stays 'open' (rule 5) -- no established reading yet.",
+  "hosts": "archive.org 2 (es17 corpus fetch: 2 djvu.txt downloads, plus 2 advancedsearch.php and 2 metadata.php calls to pick identifiers), >=1.5s apart, descriptive UA. No other hosts."
+ }
+}

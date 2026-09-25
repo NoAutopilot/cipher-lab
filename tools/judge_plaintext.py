@@ -43,12 +43,15 @@ LANG_CORPORA = {
     "pt": [DATA / "pt17" / "vieira_cartas_tomoIV_1855.txt.gz", DATA / "pt17" / "vieira_cartas_1912.txt.gz"],
     "pt18": [DATA / "pt18" / "correiobrazilie00unkngoog.txt.gz", DATA / "pt18" / "correiobrazilie02unkngoog.txt.gz",
              DATA / "pt18" / "oinvestigadorpo03unkngoog.txt.gz", DATA / "pt18" / "oinvestigadorpo05unkngoog.txt.gz"],
-    # nl, es, la (25 Sept 2026, YX-PTJUDGE): tools/data/nl_repo, es_repo, la_repo each hold only one or two
-    # target's own committed readings/plaintext-print files (a few KB each, nowhere near the ~200k-character
-    # floor a language check needs, and for es_repo/la_repo the sole file *is* the target's own reading --
-    # circular per CLAUDE.md "never use a target's own reading as its corpus"). Not wired. A future worker
-    # who fetches a real nl/es/la period corpus (Internet Archive djvu.txt or a Google Books full-view volume,
-    # never the target's own material) of at least ~200k letters can add it here the way "it"/"pt" are done.
+    "es": [DATA / "es17" / "donquijote00cervuoft.txt.gz", DATA / "es17" / "vidadelbuscn01quevuoft.txt.gz"],
+    # nl, la (25 Sept 2026, YX-PTJUDGE): tools/data/nl_repo, la_repo each hold only one or two target's own
+    # committed readings/plaintext-print files (a few KB each, nowhere near the ~200k-character floor a
+    # language check needs, and for la_repo the sole file *is* the target's own reading -- circular per
+    # CLAUDE.md "never use a target's own reading as its corpus"). Not wired. A future worker who fetches a
+    # real nl/la period corpus (Internet Archive djvu.txt or a Google Books full-view volume, never the
+    # target's own material) of at least ~200k letters can add it here the way "it"/"pt"/"es" are done.
+    # es (25 Sept 2026, LANE R6 Y8): tools/data/es17/ -- early-17th-c. Spanish prose (Cervantes, Quevedo),
+    # ~1.92M letters folded, built for espagnol142-mercy-1648 (a 1648 letter). See tools/data/es17/README.md.
 }
 FOLD = str.maketrans({"ä": "ae", "ö": "oe", "ü": "ue", "ß": "ss", "é": "e", "è": "e", "ê": "e", "à": "a", "ç": "c",
                       "ù": "u", "û": "u", "î": "i", "ô": "o", "â": "a", "ë": "e", "ï": "i",
