@@ -128,14 +128,14 @@ Lessons: verifiers ran 5-16 minutes on 30-60 minute boxes and 2-7 dollars on 4-1
 ## LANE R8 handoff (session_01RUhLrpkEtWxVLVVDoYdsvm), 25 September 2026, opened 22:21 UTC (live)
 
 Recovery and deep work, successor to LANE R7; opened by parent 7d. Brief .claude/briefs/runs/2026-09-25-lane-r8-orchestrator.md; worker common
-2026-09-25-lane-r8-common.md; job briefs 2026-09-25-lane-r8-*.md. Live workers (22:23): R8-DSN (Fable, cap 15, session_01FLjcM3ouXzN9UMGShs8gRo),
-R8-L3034 (Sonnet, cap 4, session_01YL7WDoj97YNvL21iRwn1cF), R8-K5761 (Sonnet, cap 4, session_01UcAsvJkJRnZjE7gJpk8dD1).
+2026-09-25-lane-r8-common.md; job briefs 2026-09-25-lane-r8-*.md. Live workers (22:44): R8-DSN (Fable, cap 15, session_01FLjcM3ouXzN9UMGShs8gRo). Closed, ledgered, archived: R8-L3034 (USD 1.59),
+R8-K5761 (USD 2.95).
 
 | target | outcome (25 Sept 2026) | next |
 |---|---|---|
 | fr2933-salviati-1525 | R8-DSN live: next design family (not letter-per-type) with its own control at N 2,820, K 205, 5% error | per DSN result |
-| fr3034-landriano-1528 | R8-L3034 live: folder, check-solved, images, sign count, match vs fr5761/Salviati atlases | per result |
-| fr5761-election-1519 | intake gate failed 22:22 (exit 1, no edition page near status); R8-K5761 live: gate repair, sign inventory | per result |
+| fr3034-landriano-1528 | **found-solved** (R8-L3034, 22:29): items 68 and 69 read by George Lasry 2023 (Tomokiyo francis.htm, GL.htm; dbourdeau/cyphersolver); gate exit 0; no images fetched | none; aymeloglu repo not grepped (verifier gap only) |
+| fr5761-election-1519 | gate repaired 1 -> 0 (Mignet 1886, Le Glay 1845); sign_inventory.tsv: 8 correspondent blocks, 317 signs, per-correspondent alphabets + small nomenclator; no companion ciphertext located on disk or in the catalogues grepped | a key without a letter: park until a 1519-20 embassy cipher letter surfaces |
 | berthier-napoleon-1812, espagnol142-mercy-1648 | parked per brief (no new lead / owner asks) | none |
 
 ## LANE R7 handoff (session_01UpWfpbLwYL1xmDG1vFyi6h), 25 September 2026, closed 22:07 UTC
