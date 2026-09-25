@@ -98,3 +98,56 @@ amendment): the letters-only fold itself remains untested against the source's o
 shorthand hypothesis (test 1's schema_note, tests 2 and 3's `hypothesis_note`) -- a tokenizer-aware
 judge treating NCBE/-RSE/etc. as signs is still the more promising untried step, not a straight
 letter-substitution family at any K.
+
+## Cheap test 4 (25 Sept 2026, LANE B3 bMCC4) -- token/nomenclator test, NEAR.md's named next step
+
+`specs/cheap-tests/mccormick-1999/token_anneal.py` (new script -- `tools/nomenclator_anneal.py` is
+Italian/German-only and needs numpy, so it did not fit; a fresh, small, numpy-free script was written
+instead, per the brief). Tokenizes both notes as written on the documented separators (whitespace,
+hyphen, slash, comma, `?`; parentheses stripped as brackets not characters): 132 tokens total -- 116
+code-token occurrences (99 distinct multi-letter types: NCBE x11, six other types x2, 92 singletons),
+14 number tokens, 2 single-letter tokens (`N` x2). Numbers and single letters pass through unchanged
+(rule: "each single letter as itself"); a simulated anneal (8000 iterations, 2 restarts per run)
+assigns each of the 99 distinct code types to a word from a 350-word pool drawn from the same `en`
+corpus `tools/judge_plaintext.py` itself uses (pg1661_holmes.txt + pg2701_mobydick.txt), scored by that
+script's own character 4-gram `NgramModel` -- the test's language model is exactly the judge's, nothing
+separate to keep in sync.
+
+**Matched control** (3 seeds): a same-length (132-token), same-per-position-kind-sequence synthetic
+English stream drawn from the same corpus. Code slots get a fresh unique 4-letter placeholder, except
+words from the corpus's 60 most frequent types get one placeholder reused on every recurrence (mirrors
+the real target's NCBE-heavy, mostly-singleton structure); number slots get a random small integer; the
+two letter slots get `a`/`I`. No vowel-dropped share: the target's own non-code share (10.6% number +
+1.5% single-letter = 12.1% of 132 tokens) is covered exactly by the number+letter slots, so there is no
+remainder to vowel-drop (documented choice, per the brief). Recovery = fraction of the control's own
+known code-type-to-word truth the anneal reconstructs.
+
+| run | control recovery | target score | shuffled-target score (3 shuffles) |
+|---|---|---|---|
+| iters=8000, restarts=2 | mean 0.8% (0.0%, 1.1%, 1.3% across 3 seeds; 76-99 truth types/seed) | -0.7497 | -0.752, -0.745, -0.762 |
+
+**Gate NOT met** (control recovery 0.8% is far below the brief's 0.5 gate): per CLAUDE.md rule 3 and the
+brief, this is "not a test," reported as such rather than as a control-backed negative. The design is
+degenerate at this token count: 99 largely-singleton code types drawn from a ~350-word pool is an
+effectively unconstrained assignment problem -- cross-word 4-gram context at word boundaries is far too
+weak a signal to pin down a specific word choice, so the anneal cannot even recover the *control's own
+known ground truth*. The target decode does get a language-check PASS from `judge_plaintext.py` (score
+-0.75 > real_p05 -0.873, word cover 0.971) but this is not meaningful: it is an artifact of plugging real
+dictionary words into 99 free slots (any assignment looks locally plausible), exactly as shown by the
+control's near-zero true-mapping recovery and by the shuffled-target floor (-0.745 to -0.762, the same
+range as the real target's own -0.7497 -- no discrimination between the real token order and three
+shuffles of it). The judge's overall verdict is FAIL regardless, but only on the length check (got 408
+letters vs the 700-800 the block expects, because the token scheme replaces code tokens with words of a
+different length -- not a language finding). Full numbers and method in `specs/mccormick-1999.json`
+`cheap_test_done.4`; decode preview and script in
+`specs/cheap-tests/mccormick-1999/token_anneal.py` and `test4_result.json`;
+`ciphers/mccormick-1999/families/token-anneal-target.txt` (candidate only, not a reading -- rule 10).
+
+This matches the spec's own prediction for this test ("the FBI/ACA's own presumed approach ... expect a
+negative"). Combined with tests 2 and 3, all three of the spec's cheap tests are now run: masc excluded,
+homophonic excluded (both control-backed), and this token/nomenclator test's own control falls short of
+its gate so it cannot be read either way. None supports a reading. The source's shorthand/phonetic
+hypothesis remains the only untested account, but turning it into a scoreable, testable family (e.g. a
+hand-built sign inventory checked against a period shorthand system such as Gregg) is a campaign-scale
+task, not a further breadth-lane cheap test -- out of this brief's scope; left as a one-line suggestion
+for the orchestrator, not started here.

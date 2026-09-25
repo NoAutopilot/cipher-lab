@@ -1,0 +1,88 @@
+{
+ "real_tokens": 132,
+ "kinds": {
+  "code": 116,
+  "letter": 2,
+  "number": 14
+ },
+ "distinct_code_types": 99,
+ "pool_size": 350,
+ "freq_n": 60,
+ "iters": 8000,
+ "restarts": 2,
+ "target": {
+  "score": -0.7497205985661178,
+  "decode_preview": "at N among suddenly the it said the man the point for the into to leg the captain black with and who them good black the does to of a the into s of after hand in and and 71 the soon and but 74 the be the not 75 the to back the though great 194 is the those not without and and of always more face the"
+ },
+ "control": {
+  "runs": [
+   {
+    "seed": 1,
+    "score": -0.7572623346549827,
+    "recovery": 0.0,
+    "n_truth_types": 85
+   },
+   {
+    "seed": 2,
+    "score": -0.7398998499185059,
+    "recovery": 0.011235955056179775,
+    "n_truth_types": 89
+   },
+   {
+    "seed": 3,
+    "score": -0.7316499720777515,
+    "recovery": 0.013157894736842105,
+    "n_truth_types": 76
+   }
+  ],
+  "recovery_mean": 0.008131283264340627,
+  "recovery_range": [
+   0.0,
+   0.013157894736842105
+  ]
+ },
+ "shuffled_target": [
+  {
+   "seed": 1,
+   "score": -0.7520284001228557
+  },
+  {
+   "seed": 2,
+   "score": -0.7451124823173686
+  },
+  {
+   "seed": 3,
+   "score": -0.7623647583799885
+  }
+ ],
+ "judge": {
+  "checks": {
+   "length": {
+    "pass": false,
+    "got": 408,
+    "min": 700,
+    "max": 800
+   },
+   "language": {
+    "pass": true,
+    "score": -0.75,
+    "null_p99": -2.03,
+    "real_p05": -0.873,
+    "real_median": -0.807,
+    "mode": "both",
+    "N": 408
+   },
+   "words": {
+    "pass": true,
+    "cover": 0.971,
+    "min": 0.6,
+    "real_text_median_cover": 0.958
+   }
+  },
+  "pass": false
+ },
+ "gate": {
+  "threshold": 0.5,
+  "met": false
+ }
+}
