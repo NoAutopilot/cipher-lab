@@ -45,3 +45,21 @@ line	pos	sign	conf
 2061_t2w1_van	2	[l-bare]
 2061_t2w2_de	0	[v-plain]
 2061_t2w2_de	1	7
+# Added RD03B, 25 Sept 2026: the word directly below the plain "Nota" heading on 2007A (self-duplicating
+# heading pattern, cf. Remarque below) and "Signatuure" from the Remarque paragraph's second gloss line
+# (2007a_remarque_af_block.jpg). Both from two independent blind transcription passes each (this worker's
+# own read + a Sonnet subagent), reconciled against the on-sheet gloss / known Dutch word.
+nota_head_w1	0	[h-loop]
+nota_head_w1	1	[hash]
+nota_head_w1	2	λ
+nota_head_w1	3	[delta]
+remarque_l2_w2_signatuure	0	[psi-stroke]
+remarque_l2_w2_signatuure	1	8
+remarque_l2_w2_signatuure	2	g
+remarque_l2_w2_signatuure	3	[h-loop]
+remarque_l2_w2_signatuure	4	[delta]
+remarque_l2_w2_signatuure	5	λ
+remarque_l2_w2_signatuure	6	з
+remarque_l2_w2_signatuure	7	e
+remarque_l2_w2_signatuure	8	[o-plain]
+remarque_l2_w2_signatuure	9	з

@@ -7,13 +7,14 @@
   "alphabet": "homophonic monoalphabetic substitution over Dutch: invented chancery-script glyphs, digits used as letters (5, 7 confirmed so far), at least one Cyrillic/tally-like mark; place-name and province/bastion labels are left in plain Dutch, only descriptive text is enciphered (see glyphs.md)",
   "constraints": [
     "key known: period, ours -- recovered by this worker from the on-sheet interlinear gloss of 2007A and 2061 (both carry a later plain-Dutch crib written directly above the cipher) plus 2007B, the plain-Dutch twin drawing of 2007A. Grade C throughout (known plaintext, not a published key).",
-    "only 13 cipher signs are confirmed (key.tsv), out of a Dutch alphabet that needs roughly 20+ distinct letters for continuous prose to be legible; the three target sheets (2039, 2046, 2077) have NOT been transcribed against this key -- coverage on a spot check of 2039's title cartouche was roughly a quarter to a third of glyph positions, too sparse to report as a reading",
+    "15 cipher signs are confirmed (key.tsv, up from 13 after RD03B 25 Sept 2026 added [hash]=o and lambda=t from the Nota-heading self-echo and 'Signatuure'), out of a Dutch alphabet that needs roughly 20+ distinct letters for continuous prose to be legible; the three target sheets (2039, 2046, 2077) have NOT been transcribed against this key -- a spot check of 2039's title cartouche (RD03B) found the new lambda sign once but coverage otherwise still too sparse for a reading",
     "province/bastion names (Paramaribo, Bastion Holland, Bastion Gelderland, Redout Purmerent, Redout Leyden, etc.) are NOT enciphered on any of the five sheets in this cluster -- only the explanatory/descriptive clauses are",
     "2039, 2046 and 2077 carry no interlinear gloss and no twin sheet of their own (per VX-CS04's check-solved pass) -- their only route to a reading is this transferred key, which is not yet complete enough"
   ],
   "cheap_tests_in_order": [
     "build the key from 2007A + 2061's own interlinear gloss and 2007B's twin, cross-checked by 3 independent transcription passes -- DONE, RD03 25 Sept 2026, 13 confirmed signs, self-consistency control below",
-    "transcribe 2039/2046/2077's ciphered legend/cartouche lines and decode with the 13-sign key -- NOT DONE this pass (insufficient coverage to be worth the transcription cost); next step is finishing the Nota-A-F and Remarque paragraph transcription on 2007A (images/2007a_nota_af_block.jpg, images/2007a_remarque_af_block.jpg -- fetched, glossed, not yet transcribed) which would likely add 10+ more confirmed signs before attempting 2039/2046/2077"
+    "extend the key from 2007A's Nota A-F/Remarque blocks -- PARTLY DONE, RD03B 25 Sept 2026: +2 signs (15 total) from the Nota-heading self-echo ('NOTA') and 'Signatuure'; 2007B's own clean-plaintext Nota block (scratch_2007b_nota_plain.txt) was found but not yet used to align the rest of clauses B/D/E/F -- named as the highest-value next step in NOTES.md",
+    "transcribe 2039/2046/2077's ciphered legend/cartouche lines and decode with the key -- NOT DONE (insufficient coverage to be worth the transcription cost)"
   ],
   "judge": {
     "language": "nl",

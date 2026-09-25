@@ -37,3 +37,17 @@ line	pos	sign	value	grade
 2061_t2w1_van	2	[l-bare]	n	C
 2061_t2w2_de	0	[v-plain]	?	U
 2061_t2w2_de	1	7	e	C
+nota_head_w1	0	[h-loop]	n	C
+nota_head_w1	1	[hash]	o	C
+nota_head_w1	2	λ	t	C
+nota_head_w1	3	[delta]	a	C
+remarque_l2_w2_signatuure	0	[psi-stroke]	?	U
+remarque_l2_w2_signatuure	1	8	?	U
+remarque_l2_w2_signatuure	2	g	?	U
+remarque_l2_w2_signatuure	3	[h-loop]	n	C
+remarque_l2_w2_signatuure	4	[delta]	a	C
+remarque_l2_w2_signatuure	5	λ	t	C
+remarque_l2_w2_signatuure	6	з	?	U
+remarque_l2_w2_signatuure	7	e	?	U
+remarque_l2_w2_signatuure	8	[o-plain]	r	C
+remarque_l2_w2_signatuure	9	з	?	U

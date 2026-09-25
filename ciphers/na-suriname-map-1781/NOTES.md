@@ -271,3 +271,109 @@ all HTTP 200, no 429/403/challenge. No other host touched this pass (no new NA c
 search, no DECODE). 2 Sonnet subagents used for independent transcription passes (2007A crops; 2061 crops),
 plus a third launched for the fresh-instance re-derivation above (at most 2 concurrent at any time, per the
 job brief).
+
+## Reading (VX-RD03B, 25 Sept 2026)
+
+**Intake gate:** unchanged from VX-CS04's verdict above (25 Sept 2026); no new intake-relevant material this
+pass.
+
+**What this job set out to do:** extend the 13-sign key from 2007A's Nota A-F and Remarque paragraphs (both
+already fetched, both glossed, neither transcribed by RD03) and 2061's remaining glossed lines; then decode
+2039/2046/2077's legend/cartouche text with the extended key.
+
+### What was done
+
+Two independent Sonnet subagents blind-transcribed the two already-fetched crops (`images/
+2007a_nota_af_block.jpg`, the "Nota A-F" paragraph; `images/2007a_remarque_af_block.jpg`, the "Remarque"
+paragraph), word by word, gloss-word-paired, reusing the existing atlas codes where a shape matched and
+inventing new bracket codes where it did not (full raw output: `scratch_nota_pass.tsv`,
+`scratch_remarque_pass.tsv` -- kept for the record, not committed as a final transcription). This worker also
+fetched and read 2007B's own Nota block directly (`images/2007b_nota_crop.jpg` -- already on disk from the
+manifest but not previously read for its text), which turns out to give the **full, unambiguous plain-Dutch
+text** of the Nota A-F paragraph in clean plain script (not cursive gloss): "Nota / A, De twee geprojecteerde
+Lijnen van Verstopping; / B, Geprojecteerde zwaare Vlotbatterijen; C Canonnieres / D, Eerste dispositie van de
+tot dekking van de passage in de / rivier gerangeerde 2 Fregatten, 7 Koopvaerders, 2 brigantijnen en 1
+uytlegger. E Tweede dispositie van een koopvaardijschip minder, echter 2 vlotbatterijen op ligte ponten, /
+waarvan de Canons van elk Caliber zijn. F Dispositie, zo als de schepen thans leggen, behalven eene
+Brigantijn en eene vlotbatterij die afgekeurd zijn." (`scratch_2007b_nota_plain.txt`) -- a stronger crib than
+the cursive on-sheet gloss for this block, exactly the "twin sheet" method already used for the title.
+
+**Two new signs reached grade C** (`key.tsv`, both `period`/`ours`):
+- **`[hash]` = o**, **`λ` = t** -- from the cipher word directly below the plain "Nota" heading on 2007A,
+  which this worker and an independent subagent both read as the same 4 glyphs (`[h-loop][hash]λ[delta]`).
+  This is the same self-duplicating-heading pattern already confirmed for "Remarque" (a plain heading
+  immediately followed by its own cipher echo, before the paragraph's gloss+cipher body begins) -- so the
+  word must read N-O-T-A, and since `[h-loop]`=n and `[delta]`=a were already grade-C confirmed, the other
+  two positions are forced: `[hash]`=o, `λ`=t. `λ` was independently corroborated a second time in
+  "Signatuure" (from the Remarque paragraph's gloss, "De Signatuure als..."), where the letters flanking its
+  position (`[h-loop]`=N, `[delta]`=A) land exactly where SIGNATUURE's own N and A fall, with no compression
+  needed -- two independent word-contexts, two independent readers, one shared value.
+  This also **resolves** the open `[delta]` vs `[lambda]` question in `conflicts.tsv` (flagged unresolved by
+  RD03): they are two distinct signs, not two drawings of one letter -- both appear in the same 4-glyph NOTA
+  word, decoding to two different letters (A and T).
+
+**Control (rule 3):** `tools/decode_key.py ciphers/na-suriname-map-1781 --check` regenerates the reading from
+`ciphertext.tsv` + `key.tsv` + `plain_votes.tsv` and exits 0 (up to date, after this pass added the "NOTA" and
+"Signatuure" words to `ciphertext.tsv`/`plain_votes.tsv`). Output: **52 tokens: C 33, M 1, U 18** (up from 38
+tokens, C 25, M 1, U 12 before this pass). The new NOTA word decodes 4/4 positions to grade C, matching N-O-T-A
+exactly; the new Signatuure word decodes 4/10 positions to grade C (the three already-confirmed anchor signs
+plus the new `λ`), the other 6 unkeyed. This is again a self-consistency check on the key's own source
+material, not an independent test.
+
+**Fresh-instance re-derivation (rule 7):** a subagent given only the two glyph sequences, the two known target
+words (NOTA, SIGNATUURE), and the three anchor values already on file (`[h-loop]`=n, `[delta]`=a,
+`[o-plain]`=r) -- NOT `key.tsv`, NOT this worker's reasoning -- independently derived `[hash]`=o and `λ`=t,
+100% agreement, and confirmed λ's cross-word consistency is not circular. It also surfaced a genuine
+contradiction not asserted anywhere in key.tsv: the code `з` (a Remarque-pass invention, tentatively distinct
+from `[ezh-dot]`) is forced to two different letters (U and E) within "Signatuure" alone -- flagged in
+`conflicts.tsv`, left unresolved and out of key.tsv, most likely a transcription/segmentation slip rather than
+a real one-glyph-two-values case (which the cipher's own design rules out).
+
+### What was not done (stopped honestly short of the job brief's step 2/3/4)
+
+**2039, 2046 and 2077 were NOT transcribed or decoded against the extended key this pass.** Fifteen signs is
+still well short of the ~20+ a Dutch legend sentence needs to read as more than scattered fragments (unchanged
+verdict from RD03). A single by-eye spot check of 2039's title cartouche line 2 (`images/2039_cartouche.jpg`,
+"y?λ wab?ge? 6??v?plmg?h ?λ?pr..." against the 15-sign key) found the new `λ` sign appears once, but the rest
+of the line's glyphs are either plain-Latin-looking shapes not yet matched to a confirmed code at this
+resolution, or genuinely unconfirmed shapes -- not enough for a reading or even a meaningfully wider
+percentage-covered figure than RD03 already reported (roughly a quarter to a third).
+
+**2061's remaining glossed lines were NOT checked this pass either** (the No.1-6 battery list and the a-g
+legend below the title/battery-header block RD03 already read) -- `images/2061_title_topleft.jpg` (already on
+disk) shows this material is a MIX of plain capital "M" + plain Arabic numerals (matching the
+Bastion-name-plain pattern seen on 2039/2046) and cipher abbreviation-words, structurally similar to the
+target sheets' own cartouches rather than a clean word-for-word gloss -- worth transcribing, but a different
+(harder, structural-inference) job than "read the interlinear gloss," and out of this pass's time box.
+
+The rest of the Nota A-F paragraph (clause D's tail and all of clauses D-F's continuation, roughly two-thirds
+of the block by the transcribing subagent's own account) and the rest of the Remarque paragraph beyond
+"Signatuure" were transcribed at only medium-to-low confidence in a single blind pass each (word-boundary
+ambiguity in run-on cursive, several likely word-fusions) and were deliberately NOT promoted to key.tsv --
+kept in `scratch_nota_pass.tsv`/`scratch_remarque_pass.tsv` for a follow-on worker's second, verification pass
+rather than risking a false key entry. In particular, 2007B's own **plain, unambiguous** Nota text
+(`scratch_2007b_nota_plain.txt`) was not yet used to re-derive glyph values for clauses B/D/E/F the way it was
+used for the "zwaare Vlotbatterijen" correction above -- that alignment (matching 2007A's cipher word-by-word
+against 2007B's clean plaintext, rather than against the harder-to-read cursive gloss) is very likely the
+fastest path to the next several signs and is the strongest next step, not a second cursive-gloss pass.
+
+**Next step for a follow-on worker (highest value first):** (1) align 2007A's Nota A-F cipher word-by-word
+against 2007B's clean plaintext (`scratch_2007b_nota_plain.txt`), which sidesteps the cursive-gloss legibility
+problems that limited this pass to two clauses; (2) settle the `з` = U-vs-E contradiction from a high-zoom
+crop of "Signatuure" specifically; (3) only then attempt 2039/2046/2077 with a proper two-pass crop-by-crop
+transcription (this pass's single spot-check is not a substitute).
+
+### Hosts and requests (this pass)
+
+`service.archief.nl`: 0 new requests (all images already on disk from RD03's manifest). No other host touched
+(no NA catalogue fetches, no web search, no DECODE). 3 Sonnet subagents: 2 independent blind transcription
+passes (Nota A-F block, Remarque block), 1 fresh-instance re-derivation (never more than 2 concurrent, per the
+job brief).
+
+`service.archief.nl`: 6 requests (2007B full-size default JPEG; 2007A's IIIF info.json; two native-resolution
+IIIF region crops for the Nota-A-F and Remarque blocks, one superseded by a corrected region), all >=1.5s
+apart, descriptive-then-browser User-Agent (matching the playbook's note that this host wants a browser UA),
+all HTTP 200, no 429/403/challenge. No other host touched this pass (no new NA catalogue page fetches, no web
+search, no DECODE). 2 Sonnet subagents used for independent transcription passes (2007A crops; 2061 crops),
+plus a third launched for the fresh-instance re-derivation above (at most 2 concurrent at any time, per the
+job brief).

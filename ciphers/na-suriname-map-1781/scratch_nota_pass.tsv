@@ -1,0 +1,65 @@
+# Subagent's blind transcription of images/2007a_nota_af_block.jpg, RD03B 25 Sept 2026.
+# HIGH confidence: nota_head_w1, nota_pA_w1-w4, nota_pB_w1-w3 (per-glyph 6-10x zoom crops).
+# MEDIUM/LOW confidence, word-boundary uncertain in run-on cursive: everything from nota_pD_w8 onward
+# (clause D tail) and all of line3/line4/line5/pF (back two-thirds of the paragraph) -- NOT used for
+# key.tsv this pass, kept here for the record and for a follow-on worker's second pass.
+line	pos	sign	gloss_word	conf
+nota_head_w1	0	[h-loop]	Nota	high
+nota_head_w1	1	[hash]	Nota	high
+nota_head_w1	2	λ	Nota	high
+nota_head_w1	3	[delta]	Nota	high
+nota_pA_w1	0	[g-loop]	[cut]eerde	high
+nota_pA_w1	1	λ	[cut]eerde	high
+nota_pA_w1	2	[ezh-dot]	[cut]eerde	high
+nota_pA_w1	3	r	[cut]eerde	high
+nota_pA_w1	4	[o-plain]	[cut]eerde	high
+nota_pA_w1	5	y	[cut]eerde	high
+nota_pA_w1	6	[a-plain]	[cut]eerde	high
+nota_pA_w2	0	g	Lijn	high
+nota_pA_w2	1	t	Lijn	high
+nota_pA_w2	2	[h-loop]	Lijn	high
+nota_pA_w2	3	[ezh-dot]	Lijn	high
+nota_pA_w2	4	l	Lijn	high
+nota_pA_w3	0	5	van	high
+nota_pA_w3	1	[j-stem]	van	high
+nota_pA_w3	2	[o-plain]	van	high
+nota_pA_w3	3	l	van	high
+nota_pA_w4	0	e	Verstopping	high
+nota_pA_w4	1	r	Verstopping	high
+nota_pA_w4	2	[o-plain]	Verstopping	high
+nota_pA_w4	3	[trident]	Verstopping	high
+nota_pA_w4	4	λ	Verstopping	high
+nota_pA_w4	5	[hash]	Verstopping	high
+nota_pA_w4	6	g	Verstopping	high
+nota_pA_w4	7	m	Verstopping	high
+nota_pA_w4	8	[h-loop]	Verstopping	high
+nota_pA_w4	9	g	Verstopping	high
+nota_pB_w1	0	g	Geprojecteerde	high
+nota_pB_w1	1	w	Geprojecteerde	high
+nota_pB_w1	2	[o-plain]	Geprojecteerde	high
+nota_pB_w1	3	m	Geprojecteerde	high
+nota_pB_w1	4	[ezh-dot]	Geprojecteerde	high
+nota_pB_w1	5	[g-loop]	Geprojecteerde	high
+nota_pB_w1	6	λ	Geprojecteerde	high
+nota_pB_w1	7	r	Geprojecteerde	high
+nota_pB_w1	8	[a-plain]	Geprojecteerde	high
+nota_pB_w1	9	[o-plain]	Geprojecteerde	high
+nota_pB_w1	10	y	Geprojecteerde	high
+nota_pB_w1	11	d~	Geprojecteerde	high
+nota_pB_w2	0	[trident]	zwaare(subagent read "smalle?")	medium
+nota_pB_w2	1	4	zwaare(subagent read "smalle?")	medium
+nota_pB_w2	2	[delta]	zwaare(subagent read "smalle?")	medium
+nota_pB_w2	3	x	zwaare(subagent read "smalle?")	medium
+nota_pB_w2	4	[o-plain]	zwaare(subagent read "smalle?")	medium
+nota_pB_w2	5	7	zwaare(subagent read "smalle?")	medium
+nota_pB_w3	0	g	Vlotbatterijen(subagent read "Slot")	medium
+nota_pB_w3	1	[hash]	Vlotbatterijen(subagent read "Slot")	medium
+nota_pB_w3	2	λ	Vlotbatterijen(subagent read "Slot")	medium
+# NOTE: subagent's own gloss guess "B, Geprojecteerde smalle Slot." conflicts with 2007B's confirmed
+# clean-plaintext twin, "B, Geprojecteerde zwaare Vlotbatterijen;" (scratch_2007b_nota_plain.txt) --
+# 2007B is the higher-confidence source (unambiguous plain script, not cursive gloss over cipher), so the
+# gloss_word column above for pB_w2/pB_w3 has been corrected to 2007B's wording; RD03B did not re-derive a
+# fresh glyph-to-letter alignment for these two words against the corrected plaintext this pass (word/glyph
+# counts do not match 1:1 -- likely compression, not attempted here, see NOTES.md).
+# Everything from nota_pD_w8 onward (medium/low confidence, likely word-fusion) is in the subagent's full
+# hand-back message (session a6d410623ebcd886f), not duplicated here -- not used for key.tsv this pass.
