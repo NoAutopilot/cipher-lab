@@ -53,6 +53,7 @@ line	position	old	new	partner	reason	grade
 16	7	4	S36	-	long-s stroke from above joined into a single x before the divider	M
 17	29	10	102	30	10 and 2 written as one group under a single u gloss; 102 = V	M
 17	30	2	DEL	29	second part of 102 with pos29	M
+18	8	S21	S36	-	ZX-TR349E: long-s stroke from above (top hooking right) ending in a single crossbar/x at the foot, stem stops straight below the bar with no leftward tail = the letter-body S36 form (x over long descender, key s); confused with S21 (f with mid crossbar and a tail curling left). Gives e-s-c-r-i-t	M
 18	21	2	26	22	z and 6 written as one group under one e gloss (dotted c); 26 = E; the u gloss belongs to the following 10	M
 18	22	6	DEL	21	second digit of 26 with pos21	M
 18	23	10	104	24	10 and 4 written as one group under a single u gloss; 104 = V	M
@@ -60,36 +61,34 @@ line	position	old	new	partner	reason	grade
 18	30	8	5	-	S-shaped digit (top hook, closed lower loop), unlike the pointed 8 of the next 82; reads as the s-form 5 = l, matching gloss	M
 18	36	12	5	37	first sign after the divider is the s-form 5 (d gloss), not 1; the following z belongs with the 6	M
 18	37	6	26	36	z (read as the 2 of 12) plus 6 form 26 under the e gloss; pos36 becomes 5 (d)	M
+19	19	S21	S36	-	ZX-TR349E: tall long-s stroke hooked at the top with a single crossbar low on the stem, stem ends straight, no left-curling tail = letter-body S36 (key s); confused with S21 f-shape. Gives mais	M
 19	21	2	26	22	z and 6 written as one group under one e gloss; 26 = E	M
 19	22	6	DEL	21	second digit of 26 with pos21	M
 19	29	2	26	30	z and 6 written as one group under one e gloss; 26 = E	M
 19	30	6	DEL	29	second digit of 26 with pos29	M
+20	5	S21	S36	-	ZX-TR349E: thick long-s stroke from above crossed low by a diagonal thin bar forming an x, no tail curl = S36 (key s); confused with S21. Gives e-s-p-e-r-a-n-c-e	M
+20	21	S21	S36	-	ZX-TR349E: long-s stroke with hook at top running into a diagonal crossbar near its foot (x over descender) = S36 (key s); confused with S21. Gives reuscira	M
 20	26	58	5	27	d gloss sits over the 5 alone; the blotted 8 belongs with the following 2 (re-split 58|2 -> 5|82)	M
 20	27	2	82	26	o gloss sits over the 8-2 pair; 82 = O, with the 8 taken from pos26's 58	M
+21	18	S21	S36	-	ZX-TR349E: long-s stroke from above with a top hook, crossed near its foot by a thin diagonal bar (x), stem ends at the cross = S36 (key s); confused with S21 f-shape	M
 21	25	10	102	26	10 and 2 written as one group under a single u gloss; 102 = V	M
 21	26	2	DEL	25	second part of 102 with pos25	M
 21	32	4	44	33	two plain 4s side by side with the o gloss over the first; 44 = O; the long-s gloss belongs to the following x (pos34)	M
 21	33	4	DEL	32	second digit of 44 with pos32	M
-24	26	4	44	27	looped 4 then plain 4 close together, o gloss over the pair; 44=O (partner row, not in input list)	M
-24	27	4	DEL	26	plain digit 4, second digit of 44 with pos 26	M
-24	32	4	S36	-	small crossed x/4-like mark before divider, gloss s; lone 4 not a key code, no long stroke visible	M
-25	12	10	102	13	1 0 z written as one group, u gloss over it; 102=V	M
-25	13	2	DEL	12	z-shape 2 closes 102 with pos 12	M
-25	18	8	28	-	short z/dash stroke joined before the 8, gloss a; 28=A (no separate 2 token in transcription)	M
-26	9	10	104	10	1 0 4 as one group, u gloss over it; 104=V	M
-26	10	4	DEL	9	open-top 4 closes 104 with pos 9	M
-26	18	4	S02	-	single cross with descender (t-like), gloss f; lone 4 not a code, F=S02	M
-26	29	4	S36	-	long s stroke from above running into a crossed x at its foot; S36	M
-26	30	8	82	31	8 then z-shape 2 adjacent; 82=O (s gloss above belongs to the S36 displaced right)	M
-26	31	2	DEL	30	z-shape 2 closes 82 with pos 30	M
+21	34	S23	S36	-	ZX-TR349E: ink is a thick short stroke crossed by a thin diagonal = single x, under a separate long-s gloss stroke = letter-body S36 (key s), as recoded elsewhere ("single x under a long-s gloss"); confused with S23 (cursive curl with horizontal tail). Gives chos(e)	M
+22	5	S21	S36	-	ZX-TR349E: tall long-s stem with a hook to the right at top and a cross-stroke at the baseline, thin tail below = the key's S cell drawn as one sign (x across the long-s descender, S36); confused with S21 (f with arc and mid crossbar). Same sign as L24 pos 4/14 where 'resouldre','ensemble' need s. No gloss written over it. Moderate confidence (decode 'na s tant' still unclear)	M
 22	14	4	44	15	9 then 4 4, o gloss over the pair; 44=O	M
 22	15	4	DEL	14	second 4 of 44	M
+22	18	S23	S36	-	ZX-TR349E: stand-alone x: thin diagonal crossed by a heavy short down-stroke, no loop or horizontal tail = S36 (x, s); confused with S23 (x/z-like with horizontal tail). Gives 'encores retourne'; same stand-alone x glossed s at L24 pos 30	M
 22	23	10	104	24	1 0 4 as one group after 82, u gloss over 10; 104=V (z gloss over the 4 unexplained)	M
 22	24	4	DEL	23	closes 104	M
+22	25	S69	S34	-	ZX-TR349E: ink is a straight two-legged A with a small hooked v/o joined = S34 (Ao, r); S69 has a looped cursive A with a large curled v. Gloss is the glossator's z-like r; 'retourne' needs r	M
 22	29	52	5	30	d gloss sits over the 5 alone; its z belongs to the following 6	M
 22	30	6	26	29	z6 under one e gloss; 26=E, z taken from token 29	M
 22	34	10	102	35	1 0 z group at line end, u gloss; 102=V	M
 22	35	2	DEL	34	closes 102	M
+23	6	7	DEL	7	ZX-TR349E: see pos 7: the '7' and the following 3-shape are one code 73 (Y); gloss over the 7 is a looped y	M
+23	7	S64	73	6	ZX-TR349E: 3-shape directly after a 7 with no gap = second digit of 73 (Y, key alpha_Y); confused with S64 (3-shape 'quant'). Reads 'que iay envoye'	M
 23	11	4	44	12	4 4 after 7, o gloss over first; 44=O	M
 23	12	4	DEL	11	second 4 of 44	M
 23	17	10	102	18	1 0 z group, u gloss; 102=V	M
@@ -100,8 +99,28 @@ line	position	old	new	partner	reason	grade
 23	29	10	102	30	1 0 z group, u gloss; 102=V	M
 23	30	2	DEL	29	closes 102	M
 23	32	4	S36	-	cross with tall s-stroke above after 60, s gloss	M
+23	34	S69	S34	-	ZX-TR349E: line-end sign is a straight two-legged A with a small hooked v = S34 (r), not the looped cursive A of S69; gloss is the glossator's x-like r; 'aduiser' needs r	M
+24	4	S21	S36	-	ZX-TR349E: long-s stem hooked right at top, cross-stroke at the baseline with a thin tail below = S36 as drawn in the key's S cell; confused with S21 (f). 'resouldre' needs s	M
 24	6	10	102	7	10 then 2 adjacent, u gloss; 102=V (pattern, not zoomed)	M
 24	7	2	DEL	6	closes 102	M
+24	15	S21	S36	-	ZX-TR349E: same long-s-with-cross-at-foot sign as pos 4 = S36, confused with S21; 'ensemble' needs s	M
+24	18	S64	3	-	ZX-TR349E: 3-shape standing alone after S29 'uu' = digit 3 (B, key alpha_B row 2); identical in form to the S64 crop, so the gloss b and 'ensemble' decide it; confused with S64	M
+24	24	S21	S36	-	ZX-TR349E: same long-s-with-cross-at-foot sign = S36, confused with S21; 'des moyens' needs s	M
+24	26	4	44	27	looped 4 then plain 4 close together, o gloss over the pair; 44=O (partner row, not in input list)	M
+24	27	4	DEL	26	plain digit 4, second digit of 44 with pos 26	M
+24	28	7	DEL	29	ZX-TR349E: see pos 27: '7' + following 3-shape = 73; gloss over the 7 is a looped y (listed as v)	M
+24	29	S64	73	28	ZX-TR349E: 3-shape with a flat top bar immediately after the 7 = second digit of 73 (Y); confused with S64. Reads 'des moyens'	M
+24	32	4	S36	-	small crossed x/4-like mark before divider, gloss s; lone 4 not a key code, no long stroke visible	M
+25	12	10	102	13	1 0 z written as one group, u gloss over it; 102=V	M
+25	13	2	DEL	12	z-shape 2 closes 102 with pos 12	M
+25	18	8	28	-	short z/dash stroke joined before the 8, gloss a; 28=A (no separate 2 token in transcription)	M
+25	22	S21	S36	-	ZX-TR349E: long-s stem with hook at top and cross-stroke at the baseline = S36, confused with S21	M
+26	9	10	104	10	1 0 4 as one group, u gloss over it; 104=V	M
+26	10	4	DEL	9	open-top 4 closes 104 with pos 9	M
+26	18	4	S02	-	single cross with descender (t-like), gloss f; lone 4 not a code, F=S02	M
+26	29	4	S36	-	long s stroke from above running into a crossed x at its foot; S36	M
+26	30	8	82	31	8 then z-shape 2 adjacent; 82=O (s gloss above belongs to the S36 displaced right)	M
+26	31	2	DEL	30	z-shape 2 closes 82 with pos 30	M
 27	1	6	62	2	6 then z-shape 2 at line start; 62=E, no gloss visible	M
 27	2	2	DEL	1	closes 62	M
 27	6	10	102	7	1 0 z group, u gloss; 102=V	M

@@ -626,7 +626,7 @@ line	position	sign	gloss	confidence	source	why
 18	5	S28	m	M	G	thin c-hook lead-in then m, no descending tail
 18	6	12	a	H	both	agree
 18	7	16	e	M	both	two-stroke gloss, same form as agreed 16 e at 19/8
-18	8	S21		M	G	tall f-like stroke with curved top and low crossbar
+18	8	S36		M	recode	ZX-TR349E: long-s stroke from above (top hooking right) ending in a single crossbar/x at the foot, stem stops straight below the bar with no leftward tail = the letter-body S36 form (x over long descender, key s); confused with S21 (f with mid crossbar and a tail curling left). Gives e-s-c-r-i-t
 18	9	9	c	M	H	small hook above 9, partly merged with a descender from line 17
 18	10	S33		H	both	agree
 18	11	64	z	H	both	agree
@@ -673,7 +673,7 @@ line	position	sign	gloss	confidence	source	why
 19	16	S29	on	H	both	agree
 19	17	28	a	M	H	z then 8, one gloss a
 19	18	64	h	M	H	gloss is an h with ascender
-19	19	S21		H	both	agree
+19	19	S36		M	recode	ZX-TR349E: tall long-s stroke hooked at the top with a single crossbar low on the stem, stem ends straight, no left-curling tail = letter-body S36 (key s); confused with S21 f-shape. Gives mais
 19	20	|		M	G	thin faint slash before the z is a divider, not a 1
 19	21	26		M	recode	z and 6 written as one group under one e gloss; 26 = E
 19	22	S35		H	both	agree
@@ -690,7 +690,7 @@ line	position	sign	gloss	confidence	source	why
 20	2	S34	r	H	both	agree
 20	3	62	e	M	G	two-stroke gloss read e
 20	4	16	e	M	G	two-stroke gloss above the 16 at crop top
-20	5	S21		M	G	tall stroke with crossbar and curved top, lead-in from the 6; same shape settled S21 at 18/8
+20	5	S36		M	recode	ZX-TR349E: thick long-s stroke from above crossed low by a diagonal thin bar forming an x, no tail curl = S36 (key s); confused with S21. Gives e-s-p-e-r-a-n-c-e
 20	6	S44	p	H	both	agree
 20	7	62	e	M	G	two-stroke gloss read e
 20	8	S33	r	M	G	clear r gloss above the pi-shape
@@ -706,7 +706,7 @@ line	position	sign	gloss	confidence	source	why
 20	18	S33		M	G	the crossed dark mark above is the long stem of line 19's ct sign descending, not a gloss
 20	19	16	e	M	G	two-stroke gloss read e, no u
 20	20	104	u	M	H	1 0 4 with gloss u over the 10
-20	21	S21		H	both	agree
+20	21	S36		M	recode	ZX-TR349E: long-s stroke with hook at top running into a diagonal crossbar near its foot (x over descender) = S36 (key s); confused with S21. Gives reuscira
 20	22	9	e	M	G	two-stroke hook gloss read e
 20	23	60	l	M	new	short vertical with curl and blob, l-like (t possible); not c
 20	24	S34	r	M	G	r-like gloss with flourish, as S34 r elsewhere
@@ -733,7 +733,7 @@ line	position	sign	gloss	confidence	source	why
 21	15	9	t	H	both	agree
 21	16	7	u	H	both	agree
 21	17	64	t	M	H	6 then 4, single gloss t over the 6
-21	18	S21		H	both	agree
+21	18	S36		M	recode	ZX-TR349E: long-s stroke from above with a top hook, crossed near its foot by a thin diagonal bar (x), stem ends at the cross = S36 (key s); confused with S21 f-shape
 21	19	5	d	H	both	agree
 21	20	60	t	H	both	agree
 21	21	S33	u	M	H	gloss u above the pi-shape, a small hook at its right
@@ -747,12 +747,12 @@ line	position	sign	gloss	confidence	source	why
 21	29	9	e	M	G	two-stroke gloss read e
 21	30	17	s	M	G	tall looped long-s-like gloss (s), not h
 21	31	44	o	M	recode	two plain 4s side by side with the o gloss over the first; 44 = O; the long-s gloss belongs to the following x (pos34)
-21	32	S23		H	both	agree
+21	32	S36		M	recode	ZX-TR349E: ink is a thick short stroke crossed by a thin diagonal = single x, under a separate long-s gloss stroke = letter-body S36 (key s), as recoded elsewhere ("single x under a long-s gloss"); confused with S23 (cursive curl with horizontal tail). Gives chos(e)
 22	1	26	?	M	G	z and 6 close, one code; a dark a/u-like mark high above may be its gloss or interference from line 21
 22	2	|		H	both	agree
 22	3	X	n	H	both	agree
 22	4	16	a	M	H	small a-like mark with dots above the 16 (e possible)
-22	5	S21		H	both	agree
+22	5	S36		M	recode	ZX-TR349E: tall long-s stem with a hook to the right at top and a cross-stroke at the baseline, thin tail below = the key's S cell drawn as one sign (x across the long-s descender, S36); confused with S21 (f with arc and mid crossbar). Same sign as L24 pos 4/14 where 'resouldre','ensemble' need s. No gloss written over it. Moderate confidence (decode 'na s tant' still unclear)
 22	6	S37	t	H	both	agree
 22	7	14	a	H	both	agree
 22	8	15	n	H	both	agree
@@ -764,13 +764,13 @@ line	position	sign	gloss	confidence	source	why
 22	14	44	o	M	recode	9 then 4 4, o gloss over the pair; 44=O
 22	15	S34		H	both	agree
 22	16	26	d	M	H	z straddles the tick, 6 follows; d-like gloss over the z
-22	17	S23	e	M	G	two-stroke hook gloss sits above the x
+22	17	S36	e	M	recode	ZX-TR349E: stand-alone x: thin diagonal crossed by a heavy short down-stroke, no loop or horizontal tail = S36 (x, s); confused with S23 (x/z-like with horizontal tail). Gives 'encores retourne'; same stand-alone x glossed s at L24 pos 30
 22	18	S33		M	G	blob above is fused with a descender from line 21, read as interference (H's u possible)
 22	19	26	e	M	G	two-stroke gloss over the 2
 22	20	S37	t	H	both	agree
 22	21	82	o	M	H	8 with descender then z; single o gloss over the 8
 22	22	104	u	M	recode	1 0 4 as one group after 82, u gloss over 10; 104=V (z gloss over the 4 unexplained)
-22	23	S69		M	G	A with a raised hooked v-like element, not a closed o on the baseline
+22	23	S34		M	recode	ZX-TR349E: ink is a straight two-legged A with a small hooked v/o joined = S34 (Ao, r); S69 has a looped cursive A with a large curled v. Gloss is the glossator's z-like r; 'retourne' needs r
 22	24	X	n	H	both	agree
 22	25	62	e	M	G	two-stroke gloss read e
 22	26	|		H	both	agree
@@ -785,35 +785,34 @@ line	position	sign	gloss	confidence	source	why
 23	3	S32	?	M	H	Y with long stem as S32; the large closed 9/q-like loop sitting on its left arm is probably a gloss (g/q), unsure
 23	4	24	t	H	both	agree
 23	5	14	a	H	both	agree
-23	6	7	v	H	both	agree
-23	7	S64		H	both	agree
-23	8	26	e	M	new	z then 6, two-stroke gloss over the z read e
-23	9	15	n	H	both	agree
-23	10	7	u	H	both	agree
-23	11	44	o	M	recode	4 4 after 7, o gloss over first; 44=O
-23	12	16		H	both	agree
-23	13	S74		M	G	4 with a c/9-shaped hooked stroke on its top left, as atlas S74
-23	14	60	t	H	both	agree
-23	15	26	e	M	new	z then 6, two-stroke gloss over the z read e
-23	16	102	u	M	recode	1 0 z group, u gloss; 102=V
-23	17	62	u	H	both	agree
-23	18	S34	s	M	G	heavy A (flagged apex) joined to o; gloss s/5-shaped over the o
-23	19	S36		M	recode	4-like cross after Ao, s gloss above it; lone 4 not a code
-23	20	5	f	H	both	agree
-23	21	102	u	M	recode	1 0 z group, u gloss; 102=V
-23	22	64	i	M	H	6 then 4, dotted i gloss over the 6
-23	23	22	po	H	both	agree
-23	24	12	a	M	G	a over the z of 12; a bold dotted ?/3-like mark over the 1 left unassigned (H's z possible)
-23	25	5	d	M	G	large d-like gloss sits over the 5
-23	26	102	u	M	recode	1 0 z group, u gloss; 102=V
-23	27	60	i	M	G	short undotted vertical gloss, no crossbar
-23	28	S36	s	M	recode	cross with tall s-stroke above after 60, s gloss
-23	29	16	e	M	G	two-stroke gloss read e
-23	30	S69	?	M	G	A with long crossbar ending in a hooked v at right; small x/c-like mark above unclear
+23	6	73		M	recode	ZX-TR349E: 3-shape directly after a 7 with no gap = second digit of 73 (Y, key alpha_Y); confused with S64 (3-shape 'quant'). Reads 'que iay envoye'
+23	7	26	e	M	new	z then 6, two-stroke gloss over the z read e
+23	8	15	n	H	both	agree
+23	9	7	u	H	both	agree
+23	10	44	o	M	recode	4 4 after 7, o gloss over first; 44=O
+23	11	16		H	both	agree
+23	12	S74		M	G	4 with a c/9-shaped hooked stroke on its top left, as atlas S74
+23	13	60	t	H	both	agree
+23	14	26	e	M	new	z then 6, two-stroke gloss over the z read e
+23	15	102	u	M	recode	1 0 z group, u gloss; 102=V
+23	16	62	u	H	both	agree
+23	17	S34	s	M	G	heavy A (flagged apex) joined to o; gloss s/5-shaped over the o
+23	18	S36		M	recode	4-like cross after Ao, s gloss above it; lone 4 not a code
+23	19	5	f	H	both	agree
+23	20	102	u	M	recode	1 0 z group, u gloss; 102=V
+23	21	64	i	M	H	6 then 4, dotted i gloss over the 6
+23	22	22	po	H	both	agree
+23	23	12	a	M	G	a over the z of 12; a bold dotted ?/3-like mark over the 1 left unassigned (H's z possible)
+23	24	5	d	M	G	large d-like gloss sits over the 5
+23	25	102	u	M	recode	1 0 z group, u gloss; 102=V
+23	26	60	i	M	G	short undotted vertical gloss, no crossbar
+23	27	S36	s	M	recode	cross with tall s-stroke above after 60, s gloss
+23	28	16	e	M	G	two-stroke gloss read e
+23	29	S34	?	M	recode	ZX-TR349E: line-end sign is a straight two-legged A with a small hooked v = S34 (r), not the looped cursive A of S69; gloss is the glossator's x-like r; 'aduiser' needs r
 24	1	S04		H	both	agree
 24	2	S33	f	M	G	f-like mark (stem with bars) above the pi-shape read as gloss f
 24	3	26	e	M	G	two-stroke gloss read e
-24	4	S21		H	both	agree
+24	4	S36		M	recode	ZX-TR349E: long-s stem hooked right at top, cross-stroke at the baseline with a thin tail below = S36 as drawn in the key's S cell; confused with S21 (f). 'resouldre' needs s
 24	5	82	o	M	H	8 then z, single o gloss over the 8
 24	6	102	u	M	recode	10 then 2 adjacent, u gloss; 102=V (pattern, not zoomed)
 24	7	5	f	M	G	crossed l/f-like gloss, as 22/36
@@ -823,31 +822,30 @@ line	position	sign	gloss	confidence	source	why
 24	11	|		H	both	agree
 24	12	62	z	H	both	agree
 24	13	15	n	H	both	agree
-24	14	S21		H	both	agree
+24	14	S36		M	recode	ZX-TR349E: same long-s-with-cross-at-foot sign as pos 4 = S36, confused with S21; 'ensemble' needs s
 24	15	26	e	M	new	z then 6, two-stroke gloss over the z read e
 24	16	S29	m	H	both	agree
-24	17	S64	b	H	both	agree
+24	17	3	b	M	recode	ZX-TR349E: 3-shape standing alone after S29 'uu' = digit 3 (B, key alpha_B row 2); identical in form to the S64 crop, so the gloss b and 'ensemble' decide it; confused with S64
 24	18	5	l	H	both	agree
 24	19	16	e	M	G	two-stroke gloss read e
 24	20	X		H	both	agree
 24	21	5	d	H	both	agree
 24	22	26	e	M	G	two-stroke gloss over the z read e
-24	23	S21		H	both	agree
+24	23	S36		M	recode	ZX-TR349E: same long-s-with-cross-at-foot sign = S36, confused with S21; 'des moyens' needs s
 24	24	S29	m	H	both	agree
 24	25	44	o	M	recode	looped 4 then plain 4 close together, o gloss over the pair; 44=O (partner row, not in input list)
-24	26	7	v	M	G	heavy v-shaped gloss (as agreed 7 v at 23/7)
-24	27	S64		M	G	z-like top with a curled descending tail, as agreed S64 at pos20
-24	28	16	e	M	G	dot plus small curved stroke, read as the two-stroke e (i possible)
-24	29	15	n	H	both	agree
-24	30	S36	s	M	recode	small crossed x/4-like mark before divider, gloss s; lone 4 not a key code, no long stroke visible
-24	31	|		H	both	agree
-24	32	S32	?	M	H	Y with long stem; closed 9-like loop under an arching flourish above its left arm (same form as 23/4), part-of-sign vs gloss unsettled
-24	33	X	f	M	G	hook-headed stem with two thin crossbars to the right, not an x; gloss f
-24	34	12	a	H	both	agree
-24	35	7	u	H	both	agree
-24	36	5	d	H	both	agree
-24	37	S34	x	M	G	gloss small x, as pos11
-24	38	14	a	H	both	agree
+24	26	73		M	recode	ZX-TR349E: 3-shape with a flat top bar immediately after the 7 = second digit of 73 (Y); confused with S64. Reads 'des moyens'
+24	27	16	e	M	G	dot plus small curved stroke, read as the two-stroke e (i possible)
+24	28	15	n	H	both	agree
+24	29	S36	s	M	recode	small crossed x/4-like mark before divider, gloss s; lone 4 not a key code, no long stroke visible
+24	30	|		H	both	agree
+24	31	S32	?	M	H	Y with long stem; closed 9-like loop under an arching flourish above its left arm (same form as 23/4), part-of-sign vs gloss unsettled
+24	32	X	f	M	G	hook-headed stem with two thin crossbars to the right, not an x; gloss f
+24	33	12	a	H	both	agree
+24	34	7	u	H	both	agree
+24	35	5	d	H	both	agree
+24	36	S34	x	M	G	gloss small x, as pos11
+24	37	14	a	H	both	agree
 25	1	S37	t	H	both	agree
 25	2	26	a	H	both	agree
 25	3	15	n	H	both	agree
@@ -868,7 +866,7 @@ line	position	sign	gloss	confidence	source	why
 25	18	62	e	M	G	faint two-stroke mark over the 62 read e (weak)
 25	19	S74		M	G	4 with a c-curl and hooked stroke on top left, as 23/16 and atlas S74
 25	20	60	i	M	G	short undotted vertical gloss, no crossbar
-25	21	S21		H	both	agree
+25	21	S36		M	recode	ZX-TR349E: long-s stem with hook at top and cross-stroke at the baseline = S36, confused with S21
 25	22	5	?	M	G	5/3-shaped digit on the baseline under a bold p/B box mark joined by a stem; bold mark read as gloss (unsure, H read one X sign)
 25	23	64	f	H	both	agree
 25	24	26	e	M	G	two-stroke gloss read e
