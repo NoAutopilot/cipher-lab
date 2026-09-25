@@ -1,0 +1,37 @@
+{
+ "slug": "scorpion-1991",
+ "rank": 16,
+ "schmeh_top50": 12,
+ "name": "Scorpion letters, two published cryptograms (America's Most Wanted)",
+ "date": "1991",
+ "language_candidates": [
+  "en"
+ ],
+ "ciphertext_pending": "No transcription found on disk; the post (sources/schmeh/posts/12-scorpion.txt) links four scan images, two of them the actual cryptograms: 'Here's the first encrypted passage: [https://scienceblogs.de/klausis-krypto-kolumne/files/2014/03/Scorpion-Letter-2.jpg]' and 'Here's the second cryptogram that was published: [https://scienceblogs.de/klausis-krypto-kolumne/files/2014/03/Scorpion-Letter-1.jpg]' (note the filenames are reversed relative to their order in the post -- flag for whoever transcribes, verify against the image itself which is first/second). Schmeh directs readers to Dave Oranchak's site, https://www.oranchak.com/scorpion-cipher.html, for the source scans and possibly a typed transcription; not fetched this pass (not a host this brief names, no network). Survey row 16 calls these 'S1, S5' (presumably Aymeloglu's naming, not Schmeh's) and notes 'claimed solutions 2018 unverified'.",
+ "alphabet": "homophonic (many symbols per plaintext letter), per Schmeh's own counts: cryptogram 1 is 70 characters with 53 unique; cryptogram 2 is 180 characters with 155 unique",
+ "constraints": {
+  "first_cryptogram": "70 characters, 53 unique",
+  "second_cryptogram": "180 characters, 155 unique",
+  "design": "Schmeh: 'If the Scorpion cryptograms are real ciphertexts, they were probably created with a homophonic cipher... The first Zodiac cryptogram was created this way' -- explicit stated similarity to the solved Zodiac Z408, both in style and in the sender's own claimed inspiration",
+  "no_word_spacing": "Schmeh notes 'Breaking a homophonic cipher is a little easier if there are spaces between the words, but this is not the case here'",
+  "provenance_caveat": "'There is no evidence that the author of these letters is identical to the Zodiac Killer. It is very unlikely that this person's claim to have committed 23 major crimes is true.' -- hoax risk flagged both by Schmeh and by Aymeloglu's SHORTLIST (per survey row 16)",
+  "unpublished_material": "three more encrypted messages from the same sender exist but were kept secret by police and never published, per Schmeh"
+ },
+ "cheap_tests_in_order": [
+  "1. Fetch the two cryptogram images (scienceblogs.de, already confirmed reachable, or oranchak.com's dedicated page which may already have a typed transcription, saving a blind transcription pass) and transcribe blind if no typed version is found, recording exact symbol inventory and any word-length markers. Cost $1-2, Sonnet.",
+  "2. Once transcribed, homophonic anneal (the same class of tool used successfully on Zodiac Z408/Z340) against English, judged with a matched control: synthetic homophonic-substitution English plaintext at the same N and K (70/53 for the first, 180/155 for the second) given to the same solver. At K this close to N (53/70, 155/180), expect near-chance performance even on the matched control -- report both numbers regardless (rule 3). Cost $2-3.",
+  "3. Compare the transcribed symbol alphabet against the known Zodiac Z408/Z340 homophone alphabets for shared or copied symbol shapes, since the sender explicitly modelled the style on the Zodiac letters; a match would support (not prove) the claim these draw on published Zodiac material rather than an independent cipher. Cost $1."
+ ],
+ "matched_control": "not yet run; no ciphertext on disk to test. Note in advance (CLAUDE.md rule 3 lesson): K this close to N (53/70 distinct/total on the first message) means even a matched control is likely to read weakly -- a target failure here would need the control number reported alongside, not treated alone as a negative",
+ "judge": {
+  "language": "en",
+  "letters_min": 60,
+  "letters_max": 200,
+  "control_samples": 200
+ },
+ "value": "low-medium: high homophone density (near 1:1 symbol-to-occurrence on the first message) makes this a hard cryptanalytic target regardless of technique; hoax risk noted by two independent sources; 'claimed solutions 2018 unverified' per the survey row is worth checking in a print-check pass before any fresh cryptanalysis",
+ "model": "Sonnet",
+ "status_25_Sept_2026": "open; hoax risk (Aymeloglu SHORTLIST per survey row); 'claimed solutions 2018 unverified'; Oranchak and Pelling both cover it without a confirmed solve",
+ "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run goes under cheap_test_done with its control. judge block's letters_min/max spans both published cryptograms (70 and 180 characters) since the spec covers 'S1/S5' together per the survey row; split into two judge blocks once each is transcribed and tested separately.",
+ "written": "25 Sept 2026 by LANE B2 worker bSPEC (session_016UPMZ7UBvMWu2PEsWNiFyC), claude-sonnet-5"
+}

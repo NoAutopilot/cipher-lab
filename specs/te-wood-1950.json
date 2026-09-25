@@ -1,0 +1,38 @@
+{
+ "slug": "te-wood-1950",
+ "rank": 14,
+ "schmeh_top50": 35,
+ "name": "T. E. Wood's survival-test cryptogram",
+ "date": "1950",
+ "language_candidates": [
+  "en",
+  "multi"
+ ],
+ "ciphertext": [
+  "FVAMI NTKFX XWATB OIZVV X"
+ ],
+ "ciphertext_source": "Cipherbrain post 35 (Schmeh 2017, sources/schmeh/posts/35-thouless.txt), 'T. E. A Wood's cryptogram' section: 'In 1950 some T. E. Wood (born in 1887) from Bournemouth, UK, published the following cryptogram: FVAMI NTKFX XWATB OIZVV X'. Schmeh does not name the original publication venue (presumably a parapsychology journal following Thouless's 1948 example, since Wood is described as following Thouless's call for others to run the same experiment); this is inferred, not established, from context alone.",
+ "alphabet": "Latin capitals A-Z, 21 letters, no spaces within groups (groups of 5 as printed, last group 1 letter)",
+ "constraints": {
+  "letters": 21,
+  "distinct": 13,
+  "method": "same as Thouless's own cryptograms (Cipherbrain post 35, adjacent section): a keyed running-sum cipher. The key is a sequence of distinct words drawn from a book or published text (duplicates of earlier words in the sequence are dropped); each word's letters are summed A=1..Z=26 and reduced mod 26 to give one number per plaintext letter; that number is added (mod 26) to the plaintext letter to give the ciphertext letter.",
+  "wood_specific": "Wood said his key text was 'a book, which is not written in English'; the plaintext is 'allegedly authored in several different languages' per Schmeh -- so neither the key language nor the plaintext language is English, unlike Thouless's own two cryptograms",
+  "precedent": "Thouless's message A was solved within weeks of publication by conventional cryptanalysis (method not detailed in this post); Thouless's message C was solved in 1995 by Jim Gillogly via a dictionary attack that found the key text (Gillogly, 'Cryptograms from the Crypt', Cryptologia). Thouless's message B remains unsolved as of Schmeh's 2017 post. Wood's is a distinct, separately unsolved cryptogram by a different author using the same method, with an explicitly non-English key and plaintext."
+ },
+ "cheap_tests_in_order": [
+  "1. Replicate Gillogly's successful method on Thouless message C (a dictionary attack over candidate key texts, computing the running-sum key and testing the resulting plaintext for a real word/phrase) against Wood's cryptogram, trying well-known non-English books first (major European-language Bibles, classic novels in French/German/Latin) as Wood's key text. At N=21 this is far too short for any statistical language judge to be informative on its own; treat a hit only as a candidate for manual inspection, never a score-based PASS. Cost $2, Sonnet.",
+  "2. Letter-frequency and index-of-coincidence profile of the 21 letters against English, French, German and Latin single-letter tables, more to rule out a same-language key+plaintext pairing than to identify one (21 letters is far below any reliable IC signal). Cost under $1.",
+  "3. Search whether T. E. Wood's original 1950 publication can be identified (parapsychology journal indexes, JSTOR/Google Books for 'Wood' + 'Thouless' + 1950), since knowing the venue narrows which non-English books a 1950 Bournemouth reader was likely to reach for. Cost $1-2 (print check)."
+ ],
+ "matched_control": "not yet run; a matched control for this design would be a synthetic ciphertext built with the same running-sum method, N=21, from a real non-English key text and a real multi-lingual plaintext, then given to the same solver blind",
+ "judge": {
+  "letters": 21,
+  "control_samples": 200
+ },
+ "value": "low-medium: the method is fully understood and demonstrated to be solvable in two of the three known instances (Thouless A and C), but N=21 is extremely short and the key is explicitly non-English, so a corpus-based language check cannot gate a candidate here -- only a crib/dictionary-attack hit can",
+ "model": "Sonnet",
+ "status_25_Sept_2026": "open per Schmeh 2017; Thouless's own message B (a different, related cryptogram by the method's originator) is also still unsolved; Wood's death date unknown to Schmeh",
+ "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run goes under cheap_test_done with its control. judge block omits 'language' deliberately: at N=21 with a non-English key and multi-lingual plaintext, tools/judge_plaintext.py's n-gram language check would be uninformative (the exact scenario the module's docstring calls a gate, not a proof) and could mislead; length is the only mechanical check that means anything here until a specific crib or key text is proposed (then add 'cribs' or 'cribs_at').",
+ "written": "25 Sept 2026 by LANE B2 worker bSPEC (session_016UPMZ7UBvMWu2PEsWNiFyC), claude-sonnet-5"
+}

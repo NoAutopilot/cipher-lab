@@ -1,0 +1,33 @@
+{
+ "slug": "cylob-c1995",
+ "rank": 15,
+ "schmeh_top50": 50,
+ "name": "Cylob cryptogram (booklet sold in a London bookshop)",
+ "date": "c.1995 (per survey; not independently confirmed in the source found this pass)",
+ "language_candidates": [
+  "?"
+ ],
+ "ciphertext_pending": "No transcription and no full post text found on disk. sources/schmeh/posts/ has files for every other target in this batch but none for Cylob (checked: no 50-*.txt/html). The item is post 50 of Schmeh's Top 50 list, found instead in the list's own summary page, sources/schmeh/top50-scienceblogs.txt lines 118-123: '### 50. Cylob cryptogram [https://scienceblogs.de/klausis-krypto-kolumne/2017/02/08/the-top-50-unsolved-encrypted-messages-50-the-cylob-cryptogram/] ... Number 50 is the Cylob cryptogram, a truly mysterious book.' with a thumbnail at https://scienceblogs.de/klausis-krypto-kolumne/files/2017/02/Cylob-50-bar.png. A fetch of the full post URL above (host scienceblogs.de, same host confirmed reachable 25 Sept 2026) would give the actual description and scan(s); survey row 15 additionally cites Futility Closet's April 2026 coverage as a second source, not yet located or fetched.",
+ "alphabet": "24 symbols per survey row (reader 'Torsten'); unconfirmed independently this pass",
+ "constraints": {
+  "form": "20 pages of grids, per survey row 15 (UNSOLVED-SURVEY.md); not independently confirmed from a primary source this pass since the full post was not fetched",
+  "attempted_by": "a reader named 'Torsten', per the survey row; no detail on method or outcome found",
+  "caveat": "everything in this spec beyond the top50-scienceblogs.txt excerpt above is carried over from UNSOLVED-SURVEY.md's own row and has not been independently re-verified against Schmeh's full post 50 or the Futility Closet piece this pass (no network in this brief)"
+ },
+ "cheap_tests_in_order": [
+  "1. Fetch Cipherbrain post 50 in full (the URL above) to sources/schmeh/posts/50-cylob.txt, matching the pattern used for every other post in this batch, and update this spec's ciphertext/alphabet/constraints fields from the primary source rather than the survey row's summary. Cost $1, Sonnet.",
+  "2. Once a transcription of the 20 grid pages exists, run a symbol-frequency / index-of-coincidence test against the closest-fitting language family suggested by the booklet's context (Cylob is a London-based musician; English is the default candidate absent other evidence), with a matched control of the same grid structure and symbol count. Cost $2-3.",
+  "3. Before treating this as a classical substitution cipher, check whether the 'grids' structure matches a known puzzle-book format (word-search, crossword-style grid, or a musical/game notation rather than a language cipher) -- Bourdeau's own assessment (per survey row: 'not settleable') suggests the form itself may not be a conventional cipher. Cost under $1 once transcribed."
+ ],
+ "matched_control": "not yet run; no ciphertext on disk to test",
+ "judge": {
+  "letters_min": 1,
+  "letters_max": 100000,
+  "control_samples": 100
+ },
+ "value": "low: Bourdeau assesses it as 'not settleable' by cryptanalysis per the survey row, form and even basic facts (symbol count, page count) unconfirmed from a primary source by this pass",
+ "model": "Sonnet",
+ "status_25_Sept_2026": "open per UNSOLVED-SURVEY.md row 15; primary source (Cipherbrain post 50) not yet fetched to this repo as of 25 Sept 2026",
+ "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run goes under cheap_test_done with its control. judge block is a deliberately unconstrained placeholder (letters_min=1, letters_max=100000, no language) since neither the alphabet nor the total symbol count is confirmed from a primary source; replace entirely once cheap test 1 fetches the real post.",
+ "written": "25 Sept 2026 by LANE B2 worker bSPEC (session_016UPMZ7UBvMWu2PEsWNiFyC), claude-sonnet-5"
+}
