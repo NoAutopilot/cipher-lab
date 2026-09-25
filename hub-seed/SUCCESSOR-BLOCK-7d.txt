@@ -1,6 +1,6 @@
 # Successor prompt for the cipher-lab parent orchestrator
 
-Written by parent 7b, 24 Sept 2026 20:54 UTC; rewritten by parent 7c at its hand-over to 7d, 25 Sept 2026 20:00 UTC; session ids updated by 7d at 20:10 UTC. Paste the block below into a
+Written by parent 7b, 24 Sept 2026 20:54 UTC; rewritten by parent 7c at its hand-over to 7d, 25 Sept 2026 20:00 UTC; session ids updated by 7d at 20:07 UTC. Paste the block below into a
 fresh Claude Code session on github.com/NoAutopilot/cipher-lab (model claude-fable-5-1, or the strongest available) to
 pick up the parent's work if the current parent stops, the seven-day window is rejected, or a new chat is needed.
 Everything the successor needs is in the repository; nothing lives only in a transcript. Update the session ids in this
