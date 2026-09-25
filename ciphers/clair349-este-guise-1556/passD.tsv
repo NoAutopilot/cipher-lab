@@ -1,0 +1,1064 @@
+line	position	token	kind	grade	note
+01	1	X?	sign	M	cursive script before first digit, possible plaintext salutation, no atlas match
+01	2	6	digit	H	
+01	3	S13	sign	H	plus/cross mark between 6 and 12
+01	4	12	digit	H	
+01	5	73	digit	H	
+01	6	X?	sign	M	capital A-like flourish with round tail, no confident atlas match
+01	7	6	digit	H	
+01	8	9	digit	H	
+01	9	16	digit	H	
+01	10	104	digit	H	
+01	11	S04	sign	H	bold hash/lattice ligature
+01	12	6	digit	H	
+01	13	X?	sign	M	isolated vertical stroke, virgule-like separator
+01	14	5	digit	H	
+01	15	S07	sign	M	looped ascender
+01	16	S20	sign	M	looped capital with trailing curl, followed by period
+01	17	6	digit	H	
+01	18	S26	sign	M	word-like abbreviation flourish
+01	19	X?	sign	M	isolated vertical stroke, virgule-like separator
+01	20	12	digit	H	
+01	21	05	digit	M	could be 95
+01	22	6	digit	H	
+02	1	10	digit	H	
+02	2	S18	sign	M	double-loop "uu"-like cluster
+02	3	6	digit	H	
+02	4	S23	sign	M	small x-cross mark
+02	5	9	digit	H	
+02	6	X?	sign	M	capital ligature resembling "Av", no atlas match
+02	7	6	digit	H	
+02	8	S20	sign	M	looped capital resembling "oR"
+02	9	6	digit	H	
+02	10	X?	sign	M	vertical stroke separator
+02	11	9	digit	H	
+02	12	S07	sign	M	looped ascender
+02	13	10	digit	H	
+02	14	5	digit	H	
+02	15	674	digit	M	numeral-shaped but crowded, uncertain segmentation
+02	16	X?	sign	M	small ligature cluster ("ni"-like), no atlas match
+02	17	104	digit	H	
+02	18	X?	sign	M	ligature cluster ("nao g"-like), no atlas match
+02	19	X?	sign	M	vertical stroke separator
+02	20	6	digit	H	
+02	21	6	digit	H	
+02	22	S07	sign	M	looped ascender
+02	23	X?	sign	M	capital ligature cluster ("Cml"-like), no atlas match
+02	24	9	digit	M	crowded with surrounding sign material
+02	25	S13	sign	M	plus/cross mark
+02	26	X?	sign	M	ligature cluster ("pa"-like) with trailing period
+02	27	S25	sign	M	final cursive open loop
+03	1	7	digit	H	
+03	2	S13	sign	H	plus/cross mark
+03	3	6	digit	H	
+03	4	X?	sign	M	vertical stroke separator
+03	5	2	digit	M	crowded
+03	6	X?	sign	M	vertical stroke separator
+03	7	X?	sign	M	capital ligature "Ao"-like, no atlas match
+03	8	6	digit	H	
+03	9	4	digit	H	
+03	10	8	digit	M	uncertain digit vs sign
+03	11	5	digit	H	
+03	12	15	digit	H	
+03	13	9	digit	H	
+03	14	S11	sign	M	loop with bar/accent cluster
+03	15	6	digit	H	
+03	16	X?	sign	M	vertical stroke separator
+03	17	5	digit	H	
+03	18	16	digit	H	
+03	19	9	digit	H	
+03	20	6	digit	H	
+03	21	S20	sign	M	looped capital with trailing tail
+03	22	S13	sign	M	plus/cross mark
+03	23	9	digit	H	
+03	24	60	digit	H	
+03	25	X?	sign	M	ligature cluster after "60", no atlas match
+03	26	4	digit	H	
+03	27	S13	sign	M	plus/cross mark
+03	28	4	digit	H	
+03	29	S13	sign	M	plus/cross mark
+03	30	X?	sign	M	small cluster, no atlas match
+03	31	X?	sign	M	vertical stroke separator
+03	32	5	digit	H	
+03	33	X?	sign	M	vertical stroke separator
+03	34	14	digit	H	
+03	35	X?	sign	M	capital ligature "Ao"-like, no atlas match
+03	36	16	digit	H	
+04	1	S13	sign	M	plus/cross mark
+04	2	X?	sign	M	small loop cluster, no atlas match
+04	3	X?	sign	M	"na"-like ligature cluster
+04	4	5	digit	H	
+04	5	104	digit	H	
+04	6	5	digit	H	
+04	7	6	digit	H	
+04	8	S13	sign	M	plus/cross mark
+04	9	X?	sign	M	vertical stroke separator
+04	10	7	digit	H	
+04	11	S20	sign	M	looped capital "R"-like
+04	12	5	digit	H	
+04	13	16	digit	H	
+04	14	S12	sign	M	small cross/dagger mark
+04	15	14	digit	H	
+04	16	64	digit	H	
+04	17	X?	sign	M	"to"-like ligature cluster
+04	18	X?	sign	M	vertical stroke separator
+04	19	22	digit	M	crowded, could be sign pair
+04	20	5	digit	H	
+04	21	16	digit	H	
+04	22	X?	sign	M	"dy pol"-like ligature cluster
+04	23	S26	sign	M	word-like abbreviation flourish "qual"-ish
+04	24	X?	sign	M	capital+cross ligature cluster
+04	25	X?	sign	M	vertical stroke separator
+04	26	60	digit	H	
+04	27	X?	sign	M	"te"-like ligature cluster
+04	28	X?	sign	M	vertical stroke separator
+04	29	104	digit	H	
+05	1	6	digit	H	
+05	2	13	digit	H	
+05	3	10	digit	H	
+05	4	X?	sign	M	vertical stroke separator
+05	5	S24	sign	M	capital B-like loop cluster
+05	6	25	digit	M	crowded
+05	7	X?	sign	M	capital ligature "Ao"-like, recurring shape
+05	8	9	digit	H	
+05	9	X?	sign	M	vertical stroke separator
+05	10	6	digit	H	
+05	11	9	digit	H	
+05	12	14	digit	H	
+05	13	X?	sign	M	vertical stroke separator
+05	14	S20	sign	M	looped capital "Y"-like
+05	15	1	digit	M	crowded
+05	16	S01	sign	M	ornate capital resembling "R"/"N"
+05	17	S17	sign	M	bold ff/H ligature
+05	18	6	digit	H	
+05	19	S07	sign	M	looped ascender
+05	20	2	digit	H	
+05	21	102	digit	H	
+05	22	16	digit	H	
+05	23	68	digit	H	
+05	24	6	digit	H	
+05	25	X?	sign	M	vertical stroke separator
+05	26	6	digit	H	
+05	27	S07	sign	M	looped ascender
+05	28	X?	sign	M	small loop "a"-like cluster
+05	29	012	digit	M	crowded
+05	30	7	digit	H	
+05	31	X?	sign	M	vertical stroke separator
+05	32	6	digit	H	
+06	1	S13	sign	M	plus/cross mark
+06	2	S17	sign	M	bold ff/H ligature
+06	3	16	digit	H	
+06	4	X?	sign	M	vertical stroke separator
+06	5	6	digit	H	
+06	6	S20	sign	M	looped capital "oR"-like
+06	7	X?	sign	M	vertical stroke separator
+06	8	99	digit	H	
+06	9	6	digit	H	
+06	10	X?	sign	M	"ua"-like ligature cluster
+06	11	X?	sign	M	vertical stroke separator
+06	12	S07	sign	M	looped ascender
+06	13	44	digit	H	
+06	14	X?	sign	M	capital ligature "Ao"-like, recurring shape
+06	15	X?	sign	M	"to"-like ligature cluster
+06	16	X?	sign	M	vertical stroke separator
+06	17	12	digit	M	crowded
+06	18	X?	sign	M	small ligature cluster, no atlas match
+06	19	S13	sign	M	plus/cross mark
+06	20	19	digit	M	crowded
+06	21	X?	sign	M	vertical stroke separator
+06	22	5	digit	H	
+06	23	6	digit	H	
+06	24	13	digit	H	
+06	25	X?	sign	M	"to"-like ligature cluster
+06	26	6	digit	H	
+06	27	11	digit	H	
+06	28	S15	sign	M	small lowercase-e-like loop
+06	29	X?	sign	M	capital "R"-like cluster
+06	30	16	digit	H	
+06	31	X?	sign	M	vertical stroke separator
+06	32	S20	sign	M	looped capital "Y"-like
+06	33	16	digit	H	
+06	34	S13	sign	M	plus/cross mark
+06	35	S12	sign	M	small cross/dagger mark
+07	1	8	digit	H	
+07	2	X?	sign	M	capital ligature "Ao"-like, recurring shape
+07	3	9	digit	H	
+07	4	16	digit	H	
+07	5	S23	sign	M	small x-cross mark
+07	6	X?	sign	M	vertical stroke separator
+07	7	X?	sign	M	"dy"-like ligature cluster
+07	8	X?	sign	M	vertical stroke separator
+07	9	S07	sign	M	looped ascender cluster
+07	10	X?	sign	M	vertical stroke separator
+07	11	S18	sign	M	double-loop "uu"-like cluster
+07	12	6	digit	H	
+07	13	15	digit	H	
+07	14	16	digit	H	
+07	15	X?	sign	M	loop cluster, no atlas match
+07	16	X?	sign	M	vertical stroke separator
+07	17	544	digit	M	crowded
+07	18	60	digit	H	
+07	19	6	digit	H	
+07	20	15	digit	H	
+07	21	X?	sign	M	"to"-like ligature cluster
+07	22	X?	sign	M	vertical stroke separator
+07	23	X?	sign	M	"to"-like ligature cluster
+07	24	6	digit	H	
+07	25	6	digit	H	
+07	26	9	digit	H	
+07	27	16	digit	H	
+07	28	S23	sign	M	small x-cross mark
+07	29	X?	sign	M	vertical stroke separator
+07	30	X?	sign	M	"ny"-like ligature cluster
+07	31	S15	sign	M	small lowercase-e-like loop
+07	32	S18	sign	M	double-loop "uu"-like cluster
+07	33	12	digit	H	
+07	34	15	digit	H	
+07	35	16	digit	H	
+07	36	X?	sign	M	vertical stroke separator
+07	37	S26	sign	M	word-like abbreviation flourish "qual"-ish
+07	38	60	digit	H	
+07	39	X?	sign	M	"man"-like word cluster, no atlas match
+07	40	9	digit	M	crowded
+07	41	X?	sign	M	small trailing cluster, no atlas match
+08	1	7	digit	H	
+08	2	S12	sign	M	small cross/dagger mark
+08	3	X?	sign	M	capital "R"-like cluster
+08	4	X?	sign	M	"na"-like ligature cluster
+08	5	44	digit	H	
+08	6	15	digit	H	
+08	7	S12	sign	M	small cross/dagger mark
+08	8	104	digit	H	
+08	9	68	digit	H	
+08	10	6	digit	H	
+08	11	S18	sign	M	double-loop "uu"-like cluster
+08	12	6	digit	H	
+08	13	15	digit	H	
+08	14	X?	sign	M	"to"-like ligature cluster
+08	15	X?	sign	M	vertical stroke separator
+08	16	22	digit	M	crowded
+08	17	X?	sign	M	vertical stroke separator
+08	18	S17	sign	M	bold ff/H ligature
+08	19	16	digit	H	
+08	20	X?	sign	M	capital "R"-like cluster
+08	21	6	digit	H	
+08	22	X?	sign	M	small "g"-like cluster
+08	23	12	digit	H	
+08	24	X?	sign	M	capital ligature "Ao"-like, recurring shape
+08	25	X?	sign	M	vertical stroke separator
+08	26	102	digit	M	crowded
+08	27	X?	sign	M	vertical stroke separator
+08	28	X?	sign	M	blotted cluster, shape unclear
+08	29	12	digit	H	
+08	30	60	digit	H	
+08	31	S12	sign	M	small cross/dagger mark
+09	1	104	digit	H	
+09	2	S23	sign	M	small x-cross mark
+09	3	5649	digit	M	crowded digit run
+09	4	X?	sign	M	"tc"-like ligature cluster
+09	5	X?	sign	M	vertical stroke separator
+09	6	S23	sign	M	small x-cross mark
+09	7	60	digit	H	
+09	8	X?	sign	M	vertical stroke separator
+09	9	S12	sign	M	small cross/dagger mark
+09	10	16	digit	H	
+09	11	X?	sign	M	"oAo"-like ligature cluster
+09	12	6	digit	H	
+09	13	X?	sign	M	vertical stroke separator
+09	14	16	digit	H	
+09	15	11	digit	M	crowded
+09	16	X?	sign	M	"to"-like ligature cluster
+09	17	6	digit	H	
+09	18	X?	sign	M	vertical stroke separator
+09	19	X?	sign	M	capital "R"-like cluster
+09	20	14	digit	H	
+09	21	X?	sign	M	vertical stroke separator
+09	22	8	digit	M	uncertain digit vs sign
+09	23	9	digit	H	
+09	24	14	digit	H	
+09	25	S12	sign	M	small cross/dagger mark
+09	26	4	digit	H	
+09	27	S12	sign	M	small cross/dagger mark
+09	28	S13	sign	M	plus/cross mark
+09	29	X?	sign	M	blotted cluster, shape unclear
+09	30	X?	sign	M	small "s"-like sign
+09	31	16	digit	H	
+09	32	X?	sign	M	small "s"-like sign
+09	33	6	digit	H	
+10	1	X?	sign	M	"to"-like ligature cluster
+10	2	14	digit	H	
+10	3	X?	sign	M	small "n"-like sign
+10	4	X?	sign	M	"tc"-like ligature cluster
+10	5	1	digit	M	crowded
+10	6	64	digit	H	
+10	7	X?	sign	M	capital ligature "Ao"-like, recurring shape
+10	8	X?	sign	M	vertical stroke separator
+10	9	S07	sign	M	looped ascender
+10	10	12	digit	H	
+10	11	X?	sign	M	capital "R"-like cluster
+10	12	9	digit	H	
+10	13	6	digit	H	
+10	14	X?	sign	M	vertical stroke separator
+10	15	5	digit	H	
+10	16	X?	sign	M	"to"-like ligature cluster
+10	17	16	digit	H	
+10	18	X?	sign	M	vertical stroke separator
+10	19	60	digit	H	
+10	20	S12	sign	M	small cross/dagger mark
+10	21	4	digit	H	
+10	22	64	digit	H	
+10	23	6	digit	H	
+10	24	X?	sign	M	vertical stroke separator
+10	25	5	digit	H	
+10	26	12	digit	H	
+10	27	S18	sign	M	double-loop "uu"-like cluster
+10	28	12	digit	H	
+10	29	6	digit	H	
+10	30	X?	sign	M	vertical stroke separator
+10	31	1	digit	H	
+10	32	6	digit	H	
+10	33	15	digit	H	
+10	34	95	digit	H	
+10	35	X?	sign	M	capital "R"-like cluster
+10	36	6	digit	H	
+10	37	4	digit	H	
+10	38	X?	sign	M	vertical stroke separator
+11	1	X?	sign	M	"to"-like cluster, cut at crop edge
+11	2	S23	sign	M	small x/z-cross mark
+11	3	104	digit	H	
+11	4	X?	sign	M	"tc"-like ligature cluster
+11	5	16	digit	H	
+11	6	S12	sign	M	small cross/dagger mark
+11	7	X?	sign	M	dense cluster "1nt"-like, low confidence, unusually tall/two-row line
+11	8	X?	sign	M	multi-letter word-like sign "bonate"-like, low confidence
+11	9	X?	sign	M	cluster "al a u"-like, low confidence
+11	10	12	digit	M	crowded
+11	11	X?	sign	M	bold capital ligature "Ao"-like
+11	12	14	digit	H	
+11	13	102	digit	M	crowded
+11	14	X?	sign	M	vertical stroke separator
+11	15	5	digit	H	
+11	16	102	digit	M	crowded
+11	17	X?	sign	M	"to"-like ligature cluster
+11	18	X?	sign	M	capital ligature "Ao"-like, recurring shape
+11	19	164	digit	M	crowded
+11	20	X?	sign	M	vertical stroke separator
+11	21	8	digit	H	
+11	22	9	digit	H	
+11	23	12	digit	H	
+11	24	S07	sign	M	looped ascender
+11	25	164	digit	M	crowded
+11	26	4	digit	H	
+11	27	X?	sign	M	"isk"-like cluster
+11	28	X?	sign	M	vertical stroke separator
+11	29	X?	sign	M	capital ligature "Ao"-like, recurring shape
+11	30	16	digit	H	
+11	31	10	digit	M	crowded
+11	32	4	digit	H	
+11	33	4	digit	H	
+11	34	S13	sign	M	plus/cross mark
+11	35	X?	sign	M	vertical stroke separator
+11	36	6	digit	H	
+11	37	X?	sign	M	large ink blot obscures shape
+11	38	X?	sign	M	"f"-capital cluster near blot
+11	39	X?	sign	M	small "n"-like sign
+11	40	S13	sign	M	plus/cross mark
+11	41	644	digit	M	crowded
+11	42	S04	sign	M	hash/lattice mark
+11	43	102	digit	M	crowded
+11	44	44	digit	H	
+11	45	64	digit	H	
+11	46	14	digit	H	
+11	47	X?	sign	M	"to"-like ligature cluster
+11	48	8	digit	H	
+11	49	X?	sign	M	small "c"-like sign
+11	50	X?	sign	M	small "a"-like sign
+11	51	X?	sign	M	vertical stroke separator
+11	52	S13	sign	M	plus/cross mark
+11	53	S12	sign	M	small cross/dagger mark
+11	54	9	digit	H	
+11	55	X?	sign	M	small "u"-like sign
+11	56	X?	sign	M	capital "C"-like cluster
+11	57	S26	sign	M	word-like abbreviation flourish "qual"-ish
+11	58	X?	sign	M	small trailing mark
+12	1	8	digit	H	
+12	2	64	digit	H	
+12	3	X?	sign	M	"tc"-like ligature cluster
+12	4	S17	sign	M	bold ff/H ligature
+12	5	4	digit	H	
+12	6	6	digit	H	
+12	7	X?	sign	M	small cluster, low confidence, unusually tall/two-row line
+12	8	4	digit	H	
+12	9	6	digit	H	
+12	10	X?	sign	M	vertical stroke separator
+12	11	X?	sign	M	capital "Y"-like cluster
+12	12	S07	sign	M	looped ascender
+12	13	S04	sign	M	hash/lattice mark
+12	14	544	digit	M	crowded
+12	15	60	digit	H	
+12	16	6	digit	H	
+12	17	73	digit	H	
+12	18	X?	sign	M	cluster near "fN"-like shape, low confidence
+12	19	9	digit	H	
+12	20	12	digit	M	crowded
+12	21	54	digit	M	crowded
+12	22	6	digit	H	
+12	23	X?	sign	M	vertical stroke separator
+12	24	104	digit	H	
+12	25	6	digit	H	
+12	26	X?	sign	M	"pa"-like ligature cluster
+12	27	X?	sign	M	small "g"-like sign
+12	28	9	digit	H	
+12	29	12	digit	M	crowded
+12	30	54	digit	M	crowded
+12	31	6	digit	H	
+12	32	X?	sign	M	vertical stroke separator
+12	33	X?	sign	M	capital "R"-like cluster
+12	34	6	digit	H	
+12	35	9	digit	H	
+12	36	12	digit	M	crowded
+12	37	X?	sign	M	vertical stroke separator
+12	38	12	digit	M	crowded
+13	1	12	digit	H	
+13	2	X?	sign	M	looped cluster, no atlas match
+13	3	X?	sign	M	capital "R"-like cluster
+13	4	S12	sign	M	small cross/dagger mark
+13	5	X?	sign	M	capital "Y"-like cluster
+13	6	S07	sign	M	looped ascender
+13	7	14	digit	H	
+13	8	X?	sign	M	"to"-like ligature cluster
+13	9	X?	sign	M	capital ligature "Ao"-like, recurring shape
+13	10	16	digit	H	
+13	11	X?	sign	M	vertical stroke separator
+13	12	6	digit	H	
+13	13	15	digit	H	
+13	14	X?	sign	M	"to"-like ligature cluster
+13	15	16	digit	H	
+13	16	X?	sign	M	"na"-like ligature cluster
+13	17	104	digit	H	
+13	18	X?	sign	M	vertical stroke separator
+13	19	9447	digit	M	crowded digit run
+13	20	619	digit	M	crowded
+13	21	X?	sign	M	small "h"-like sign
+13	22	X?	sign	M	vertical stroke separator
+13	23	X?	sign	M	"to"-like ligature cluster
+13	24	44	digit	H	
+13	25	104	digit	H	
+13	26	X?	sign	M	"to"-like ligature cluster
+13	27	6	digit	H	
+13	28	S13	sign	M	plus/cross mark
+13	29	X?	sign	M	vertical stroke separator
+13	30	X?	sign	M	"ch"-like ligature cluster
+13	31	S07	sign	M	looped ascender
+13	32	9178	digit	M	crowded digit run
+13	33	S13	sign	M	plus/cross mark
+14	1	X?	sign	M	small "x."-like cluster
+14	2	60	digit	H	
+14	3	X?	sign	M	"f a u"-like ligature cluster
+14	4	X?	sign	M	vertical stroke separator
+14	5	1	digit	M	crowded
+14	6	4	digit	H	
+14	7	54	digit	H	
+14	8	16	digit	H	
+14	9	X?	sign	M	capital "R"-like cluster
+14	10	8	digit	H	
+14	11	X?	sign	M	vertical stroke separator
+14	12	X?	sign	M	"isto"-like ligature cluster
+14	13	X?	sign	M	vertical stroke separator
+14	14	S07	sign	M	looped ascender
+14	15	S12	sign	M	small cross/dagger mark
+14	16	12	digit	H	
+14	17	60	digit	H	
+14	18	X?	sign	M	capital ligature "Ao"-like, recurring shape
+14	19	16	digit	H	
+14	20	X?	sign	M	vertical stroke separator
+14	21	12	digit	H	
+14	22	6	digit	H	
+14	23	15	digit	H	
+14	24	S12	sign	M	small cross/dagger mark
+14	25	60	digit	H	
+14	26	X?	sign	M	vertical stroke separator
+14	27	X?	sign	M	capital "Y"-like cluster
+14	28	X?	sign	M	vertical stroke separator
+14	29	S07	sign	M	looped ascender
+14	30	14	digit	H	
+14	31	100	digit	M	crowded
+14	32	60	digit	H	
+14	33	S12	sign	M	small cross/dagger mark
+14	34	16	digit	H	
+14	35	X?	sign	M	capital "R"-like cluster
+14	36	6	digit	H	
+15	1	X?	sign	M	blotted cluster, shape unclear
+15	2	4	digit	H	
+15	3	S07	sign	M	looped ascender
+15	4	12	digit	H	
+15	5	104	digit	H	
+15	6	X?	sign	M	capital ligature "Ao"-like, recurring shape
+15	7	16	digit	H	
+15	8	X?	sign	M	capital "R"-like cluster
+15	9	6	digit	H	
+15	10	15	digit	H	
+15	11	X?	sign	M	"to"-like ligature cluster
+15	12	6	digit	H	
+15	13	X?	sign	M	"uas"-like ligature cluster
+15	14	X?	sign	M	blotted cluster, shape unclear
+15	15	X?	sign	M	vertical stroke separator
+15	16	98	digit	H	
+15	17	7	digit	H	
+15	18	616	digit	M	crowded
+15	19	X?	sign	M	vertical stroke separator
+15	20	60	digit	H	
+15	21	6	digit	H	
+15	22	74	digit	H	
+15	23	4	digit	H	
+15	24	10	digit	M	crowded
+15	25	58	digit	H	
+15	26	60	digit	H	
+15	27	S04	sign	M	hash/lattice mark
+15	28	X?	sign	M	vertical stroke separator
+15	29	X?	sign	M	small "m"-like cluster
+15	30	6	digit	H	
+15	31	5816	digit	M	crowded digit run
+15	32	X?	sign	M	"na"-like ligature cluster
+16	1	S17	sign	M	bold ff/H ligature
+16	2	X?	sign	M	capital ligature "Ao"-like, recurring shape
+16	3	6	digit	H	
+16	4	S07	sign	M	looped ascender
+16	5	102	digit	M	crowded
+16	6	S12	sign	M	small cross/dagger mark
+16	7	X?	sign	M	vertical stroke separator
+16	8	5	digit	H	
+16	9	14	digit	H	
+16	10	X?	sign	M	capital ligature "Ao"-like, recurring shape
+16	11	12	digit	H	
+16	12	X?	sign	M	"to"-like ligature cluster
+16	13	60	digit	H	
+16	14	S06	sign	M	cursive ligature resembling "2" joined to looped "f"
+16	15	102	digit	M	crowded
+16	16	16	digit	H	
+16	17	X?	sign	M	vertical stroke separator
+16	18	X?	sign	M	small "s"-like sign
+16	19	X?	sign	M	vertical stroke separator
+16	20	9	digit	H	
+16	21	8	digit	H	
+16	22	S06	sign	M	cursive ligature resembling "2" joined to looped "f"
+16	23	60	digit	H	
+16	24	X?	sign	M	small "t"-like ascender
+16	25	12	digit	H	
+16	26	6	digit	H	
+16	27	11	digit	M	crowded
+16	28	16	digit	H	
+16	29	X?	sign	M	vertical stroke separator
+16	30	X?	sign	M	bold capital ligature "Af"-like
+16	31	4	digit	H	
+17	1	104	digit	H	
+17	2	64	digit	H	
+17	3	S04	sign	M	hash/lattice mark
+17	4	916	digit	M	crowded digit run
+17	5	X?	sign	M	capital ligature with descender, no atlas match
+17	6	14	digit	H	
+17	7	16	digit	H	
+17	8	12	digit	H	
+17	9	15	digit	H	
+17	10	X?	sign	M	"to"-like ligature cluster
+17	11	S23	sign	M	small x-cross mark
+17	12	X?	sign	M	vertical stroke separator
+17	13	X?	sign	M	ligature cluster ("fait"-like), no atlas match
+17	14	916	digit	M	crowded digit run
+17	15	6	digit	H	
+17	16	1	digit	M	crowded
+17	17	4	digit	H	
+17	18	S13	sign	M	plus/cross mark
+17	19	90	digit	H	
+17	20	X?	sign	M	vertical stroke separator
+17	21	X?	sign	M	small "u"-like sign
+17	22	X?	sign	M	small "q"-like sign
+17	23	X?	sign	M	small "u"-like sign
+17	24	X?	sign	M	capital "x"-like cluster
+17	25	4	digit	H	
+17	26	X?	sign	M	small trailing mark
+17	27	X?	sign	M	bold capital ligature "C"-like, underline/strike-through beneath it
+17	28	X?	sign	M	small "a"-like sign
+17	29	X?	sign	M	"tt"-like cluster
+17	30	S12	sign	M	small cross/dagger mark
+17	31	X?	sign	M	small trailing mark
+17	32	X?	sign	M	small "u"-like sign
+18	1	167	digit	M	crowded digit run
+18	2	X?	sign	M	"to+m"-like ligature cluster
+18	3	12	digit	H	
+18	4	164	digit	M	crowded
+18	5	X?	sign	M	small cluster near "k9", no atlas match
+18	6	X?	sign	M	capital "R"-like cluster
+18	7	6	digit	H	
+18	8	X?	sign	M	vertical stroke separator
+18	9	6	digit	H	
+18	10	S12	sign	M	small cross/dagger mark
+18	11	X?	sign	M	"to"-like ligature cluster
+18	12	S26	sign	M	word-like abbreviation flourish "qual"-ish
+18	13	X?	sign	M	small "c"-like sign
+18	14	X?	sign	M	"fmc"-like ligature cluster
+18	15	S12	sign	M	small cross/dagger mark
+18	16	X?	sign	M	bold capital cluster "LE"-like
+18	17	X?	sign	M	small "u"-like sign
+18	18	X?	sign	M	small "u"-like sign
+18	19	X?	sign	M	capital "R"-like cluster
+18	20	X?	sign	M	vertical stroke separator
+18	21	X?	sign	M	"to"-like ligature cluster
+18	22	4	digit	H	
+18	23	X?	sign	M	capital ligature "Ao"-like, recurring shape
+18	24	6	digit	H	
+18	25	X?	sign	M	vertical stroke separator
+18	26	X?	sign	M	"u o"-like cluster
+18	27	S07	sign	M	looped ascender
+18	28	744	digit	H	
+18	29	88	digit	H	
+18	30	X?	sign	M	vertical stroke separator
+18	31	X?	sign	M	small "u"-like sign
+18	32	X?	sign	M	"to"-like ligature cluster
+18	33	6	digit	H	
+18	34	12	digit	H	
+18	35	6	digit	H	
+19	1	S17	sign	M	bold ff/H ligature
+19	2	14	digit	H	
+19	3	X?	sign	M	"to"-like ligature cluster
+19	4	8	digit	H	
+19	5	15	digit	H	
+19	6	X?	sign	M	"tc"-like ligature cluster
+19	7	16	digit	H	
+19	8	X?	sign	M	capital ligature "Ao"-like, recurring shape
+19	9	X?	sign	M	capital "Y"-like cluster
+19	10	5	digit	H	
+19	11	S07	sign	M	looped ascender
+19	12	X?	sign	M	"ua"-like ligature cluster
+19	13	12	digit	H	
+19	14	60	digit	H	
+19	15	14	digit	H	
+19	16	S18	sign	M	double-loop "uu"-like cluster
+19	17	8	digit	H	
+19	18	6	digit	H	
+19	19	S13	sign	M	plus/cross mark
+19	20	S07	sign	M	looped ascender
+19	21	12	digit	H	
+19	22	6	digit	H	
+19	23	S07	sign	M	looped ascender
+19	24	X?	sign	M	small "s"-like sign
+19	25	X?	sign	M	"to"-like ligature cluster
+19	26	S07	sign	M	looped ascender
+19	27	12	digit	H	
+19	28	6	digit	H	
+19	29	S07	sign	M	looped ascender
+19	30	X?	sign	M	small "s"-like sign
+19	31	X?	sign	M	"to"-like ligature cluster
+19	32	1	digit	M	crowded
+19	33	6	digit	H	
+19	34	X?	sign	M	"ct"-like ligature cluster
+19	35	X?	sign	M	small "s"-like sign
+19	36	X?	sign	M	small "m"-like cluster
+19	37	6	digit	H	
+19	38	60	digit	H	
+19	39	6	digit	H	
+19	40	S17	sign	M	bold ff/H ligature
+19	41	X?	sign	M	small "s"-like sign
+19	42	16	digit	H	
+20	1	X?	sign	M	capital ligature "Ao"-like, recurring shape
+20	2	6	digit	H	
+20	3	1	digit	M	crowded
+20	4	S12	sign	M	small cross/dagger mark
+20	5	6	digit	H	
+20	6	X?	sign	M	capital "R"-like cluster
+20	7	14	digit	H	
+20	8	15	digit	H	
+20	9	9	digit	H	
+20	10	6	digit	H	
+20	11	X?	sign	M	"f a"-like ligature cluster
+20	12	7	digit	H	
+20	13	166	digit	M	crowded
+20	14	8	digit	H	
+20	15	6	digit	H	
+20	16	X?	sign	M	capital "R"-like cluster
+20	17	1610	digit	M	crowded digit run
+20	18	S12	sign	M	small cross/dagger mark
+20	19	96	digit	H	
+20	20	X?	sign	M	vertical stroke separator
+20	21	1610	digit	M	crowded digit run
+20	22	S12	sign	M	small cross/dagger mark
+20	23	S23	sign	M	small x-cross mark
+20	24	9	digit	H	
+20	25	60	digit	H	
+20	26	X?	sign	M	capital ligature "Ao"-like, recurring shape
+20	27	14	digit	H	
+20	28	58	digit	H	
+20	29	X?	sign	M	vertical stroke separator
+20	30	15	digit	H	
+20	31	X?	sign	M	"to"-like ligature cluster
+20	32	22	digit	M	crowded
+21	1	9	digit	H	
+21	2	6	digit	H	
+21	3	S07	sign	M	looped ascender
+21	4	S12	sign	M	small cross/dagger mark
+21	5	6	digit	H	
+21	6	17	digit	H	
+21	7	16	digit	H	
+21	8	X?	sign	M	small capital cluster, no atlas match
+21	9	60	digit	H	
+21	10	S04	sign	M	hash/lattice mark
+21	11	18	digit	H	
+21	12	97	digit	H	
+21	13	S12	sign	M	small cross/dagger mark
+21	14	4	digit	H	
+21	15	S23	sign	M	small x-cross mark
+21	16	9	digit	M	crowded
+21	17	60	digit	H	
+21	18	X?	sign	M	capital "R"-like cluster
+21	19	16	digit	H	
+21	20	12	digit	H	
+21	21	10	digit	M	crowded
+21	22	S12	sign	M	small cross/dagger mark
+21	23	X?	sign	M	capital ligature "Ao"-like, recurring shape
+21	24	6	digit	H	
+21	25	917	digit	M	crowded digit run
+21	26	44	digit	H	
+21	27	S23	sign	M	small x-cross mark
+22	1	6	digit	H	
+22	2	X?	sign	M	"na"-like ligature cluster
+22	3	16	digit	H	
+22	4	S12	sign	M	small cross/dagger mark
+22	5	X?	sign	M	"toi"-like ligature cluster
+22	6	4	digit	H	
+22	7	X?	sign	M	"isto"-like ligature cluster
+22	8	X?	sign	M	vertical stroke separator
+22	9	6	digit	H	
+22	10	15	digit	H	
+22	11	9	digit	H	
+22	12	44	digit	H	
+22	13	X?	sign	M	capital ligature "Ao"-like, recurring shape
+22	14	6	digit	H	
+22	15	S23	sign	M	small x-cross mark
+22	16	X?	sign	M	capital "R"-like cluster
+22	17	X?	sign	M	vertical stroke separator
+22	18	6	digit	H	
+22	19	X?	sign	M	"to"-like ligature cluster
+22	20	8	digit	M	crowded
+22	21	104	digit	H	
+22	22	X?	sign	M	capital ligature "Ao"-like, recurring shape
+22	23	X?	sign	M	"na"-like ligature cluster
+22	24	6	digit	H	
+22	25	X?	sign	M	vertical stroke separator
+22	26	5	digit	H	
+22	27	X?	sign	M	vertical stroke separator
+22	28	6	digit	H	
+22	29	S17	sign	M	bold ff/H ligature
+22	30	64	digit	H	
+22	31	102	digit	M	crowded
+23	1	608	digit	M	crowded digit run
+23	2	X?	sign	M	capital "Y"-like cluster
+23	3	4	digit	H	
+23	4	14	digit	H	
+23	5	S23	sign	M	small x/z-cross mark
+23	6	X?	sign	M	capital "C"-like cluster
+23	7	617	digit	M	crowded digit run
+23	8	S07	sign	M	looped ascender
+23	9	S12	sign	M	small cross/dagger mark
+23	10	16	digit	H	
+23	11	S23	sign	M	small x-cross mark with tail
+23	12	60	digit	H	
+23	13	X?	sign	M	vertical stroke separator
+23	14	6	digit	H	
+23	15	102	digit	M	crowded
+23	16	6	digit	H	
+23	17	S07	sign	M	looped ascender
+23	18	S13	sign	M	plus/cross mark
+23	19	S07	sign	M	looped ascender
+23	20	102	digit	M	crowded
+23	21	4	digit	H	
+23	22	22	digit	M	crowded
+23	23	12	digit	H	
+23	24	102	digit	M	crowded
+23	25	60	digit	H	
+23	26	X?	sign	M	small x-cross cluster
+23	27	X?	sign	M	small trailing cluster, no atlas match
+24	1	S04	sign	M	hash/lattice mark
+24	2	X?	sign	M	capital "R"-like cluster
+24	3	S12	sign	M	small cross/dagger mark
+24	4	8	digit	H	
+24	5	102	digit	M	crowded
+24	6	5	digit	H	
+24	7	X?	sign	M	capital ligature "Ao"-like, recurring shape
+24	8	1	digit	M	crowded
+24	9	6	digit	H	
+24	10	6	digit	H	
+24	11	15	digit	H	
+24	12	S07	sign	M	looped ascender
+24	13	X?	sign	M	vertical stroke separator
+24	14	6	digit	H	
+24	15	X?	sign	M	"un"-like ligature cluster
+24	16	516	digit	M	crowded digit run
+24	17	X?	sign	M	blotted cluster, shape unclear
+24	18	5	digit	H	
+24	19	X?	sign	M	vertical stroke separator
+24	20	6	digit	H	
+24	21	S07	sign	M	looped ascender
+24	22	S18	sign	M	double-loop "uu"-like cluster
+24	23	44	digit	H	
+24	24	X?	sign	M	vertical stroke separator
+24	25	5	digit	H	
+24	26	15	digit	H	
+24	27	X?	sign	M	capital "Y"-like cluster
+24	28	S07	sign	M	looped ascender
+24	29	X?	sign	M	small "a"-like sign
+24	30	X?	sign	M	small "u"-like sign
+24	31	X?	sign	M	small "ze"-like cluster
+24	32	12	digit	H	
+24	33	7	digit	H	
+24	34	X?	sign	M	capital ligature "Ao"-like, recurring shape
+24	35	14	digit	H	
+25	1	X?	sign	M	"to"-like ligature cluster
+25	2	6	digit	H	
+25	3	15	digit	H	
+25	4	60	digit	H	
+25	5	X?	sign	M	capital ligature "Ao"-like, recurring shape
+25	6	22	digit	M	crowded
+25	7	5	digit	H	
+25	8	6	digit	H	
+25	9	S24	sign	M	capital "B"-like loop cluster
+25	10	16	digit	H	
+25	11	S07	sign	M	looped ascender
+25	12	12	digit	M	crowded
+25	13	X?	sign	M	"to"-like ligature cluster
+25	14	6	digit	H	
+25	15	X?	sign	M	capital ligature "Ao"-like, recurring shape
+25	16	X?	sign	M	small "m"-like cluster
+25	17	8	digit	H	
+25	18	6	digit	H	
+25	19	S23	sign	M	small x-cross mark
+25	20	60	digit	H	
+25	21	S07	sign	M	looped ascender
+25	22	X?	sign	M	small cluster near "3", no atlas match
+25	23	64	digit	H	
+25	24	14	digit	H	
+25	25	6	digit	H	
+25	26	15	digit	H	
+25	27	X?	sign	M	"ba"-like ligature cluster
+25	28	X?	sign	M	"po"-like ligature cluster
+25	29	44	digit	H	
+26	1	62	digit	H	
+26	2	15	digit	H	
+26	3	8	digit	H	
+26	4	14	digit	H	
+26	5	1610	digit	M	crowded digit run
+26	6	X?	sign	M	capital ligature "Ao"-like, recurring shape
+26	7	6	digit	H	
+26	8	X?	sign	M	capital "R"-like cluster
+26	9	X?	sign	M	capital "Y"-like cluster
+26	10	X?	sign	M	small cluster, no atlas match
+26	11	66	digit	H	
+26	12	S04	sign	M	hash/lattice mark
+26	13	S12	sign	M	small cross/dagger mark
+26	14	60	digit	H	
+26	15	S12	sign	M	small cross/dagger mark
+26	16	16	digit	H	
+26	17	X?	sign	M	capital ligature "Ao"-like, recurring shape
+26	18	14	digit	H	
+26	19	X?	sign	M	capital "Y"-like cluster
+26	20	S07	sign	M	looped ascender
+26	21	15	digit	H	
+26	22	16	digit	H	
+26	23	X?	sign	M	"na"-like ligature cluster
+26	24	S12	sign	M	small cross/dagger mark
+26	25	3	digit	M	crowded
+26	26	64	digit	H	
+27	1	14	digit	H	
+27	2	102	digit	M	crowded
+27	3	16	digit	H	
+27	4	X?	sign	M	capital ligature "Ao"-like, struck through with a cancellation line
+27	5	X?	sign	M	small "3"-like cluster
+27	6	S04	sign	M	hash/lattice mark
+27	7	X?	sign	M	capital "Y"-like cluster
+27	8	6	digit	H	
+27	9	169	digit	M	crowded digit run
+27	10	8	digit	H	
+27	11	S04	sign	M	hash/lattice mark
+27	12	S12	sign	M	small cross/dagger mark
+27	13	16	digit	H	
+27	14	X?	sign	M	"fo"-like ligature cluster
+27	15	12	digit	H	
+27	16	X?	sign	M	capital ligature "Ao"-like, recurring shape
+27	17	15	digit	H	
+27	18	6	digit	H	
+27	19	X?	sign	M	"na"-like ligature cluster
+27	20	S12	sign	M	small cross/dagger mark
+27	21	14	digit	H	
+27	22	X?	sign	M	capital "A"-like ligature
+27	23	60	digit	H	
+27	24	6	digit	H	
+28	1	16	digit	H	
+28	2	X?	sign	M	bold capital "C"-like cluster
+28	3	9	digit	H	
+28	4	6	digit	H	
+28	5	X?	sign	M	large bold capital "R"/"N"-like cluster
+28	6	S23	sign	M	small x-cross mark
+28	7	16	digit	H	
+28	8	X?	sign	M	bold capital cluster, no atlas match
+28	9	44	digit	H	
+28	10	102	digit	M	crowded
+28	11	6	digit	H	
+28	12	X?	sign	M	vertical stroke separator
+28	13	S04	sign	M	hash/lattice mark
+28	14	28	digit	H	
+28	15	64	digit	H	
+28	16	X?	sign	M	capital ligature "Ao"-like, recurring shape
+28	17	16	digit	H	
+28	18	22	digit	M	crowded
+28	19	5	digit	H	
+28	20	104	digit	H	
+28	21	6	digit	H	
+28	22	15	digit	H	
+28	23	60	digit	H	
+28	24	X?	sign	M	capital ligature "Ao"-like, recurring shape
+28	25	12	digit	H	
+28	26	344	digit	M	crowded digit run
+29	1	102	digit	M	crowded
+29	2	X?	sign	M	"to"-like ligature cluster
+29	3	5	digit	H	
+29	4	64	digit	H	
+29	5	X?	sign	M	capital "R"-like cluster
+29	6	S23	sign	M	small x-cross mark
+29	7	16	digit	H	
+29	8	S07	sign	M	looped ascender
+29	9	14	digit	H	
+29	10	X?	sign	M	"po"-like ligature cluster
+29	11	18	digit	H	
+29	12	11	digit	M	crowded
+29	13	14	digit	H	
+29	14	4	digit	H	
+29	15	5	digit	H	
+29	16	6	digit	H	
+29	17	X?	sign	M	"6L"-like cluster
+29	18	6	digit	H	
+29	19	60	digit	H	
+29	20	S07	sign	M	looped ascender
+29	21	S23	sign	M	small x-cross mark
+29	22	16	digit	H	
+29	23	11	digit	M	crowded
+29	24	X?	sign	M	"w"-like cluster
+29	25	14	digit	H	
+29	26	6	digit	H	
+29	27	S07	sign	M	looped ascender
+29	28	611	digit	M	crowded digit run
+30	1	S23	sign	M	small x-cross mark
+30	2	12	digit	H	
+30	3	6816	digit	M	crowded digit run
+30	4	X?	sign	M	small "m"-like cluster
+30	5	60	digit	H	
+30	6	X?	sign	M	"fa"-like ligature cluster
+30	7	X?	sign	M	blotted cluster, shape unclear
+30	8	6	digit	H	
+30	9	S17	sign	M	bold ff/H ligature
+30	10	6	digit	H	
+30	11	4	digit	H	
+30	12	X?	sign	M	small "z"-like mark
+30	13	X?	sign	M	small "3z"-like cluster
+30	14	S04	sign	M	hash/lattice mark
+30	15	X?	sign	M	bold capital ligature, no atlas match
+30	16	X?	sign	M	vertical stroke separator
+30	17	6	digit	H	
+30	18	15	digit	H	
+30	19	9	digit	H	
+30	20	X?	sign	M	small "c"-like sign
+30	21	4	digit	H	
+30	22	X?	sign	M	capital ligature "Ao"-like, recurring shape
+30	23	16	digit	H	
+30	24	S12	sign	M	small cross/dagger mark
+30	25	X?	sign	M	capital "R"-like cluster with tail
+30	26	6411	digit	M	crowded digit run
+30	27	11	digit	M	crowded
+31	1	S23	sign	M	small x-cross mark
+31	2	12	digit	H	
+31	3	60	digit	H	
+31	4	X?	sign	M	"to"-like ligature cluster
+31	5	6	digit	H	
+31	6	X?	sign	M	"na"-like ligature cluster
+31	7	X?	sign	M	"to"-like ligature cluster
+31	8	6	digit	H	
+31	9	X?	sign	M	capital "R"-like cluster
+31	10	X?	sign	M	small "s3"-like cluster
+31	11	X?	sign	M	capital ligature "Ao"-like, recurring shape
+31	12	6	digit	H	
+31	13	X?	sign	M	bold capital ligature "Y"-like
+31	14	10	digit	M	crowded
+31	15	64	digit	H	
+31	16	S18	sign	M	double-loop "uu"-like cluster
+31	17	6	digit	H	
+31	18	S26	sign	M	word-like abbreviation cluster ("fait"-like)
+31	19	9	digit	H	
+31	20	S12	sign	M	small cross/dagger mark
+31	21	X?	sign	M	capital "R"-like cluster
+31	22	9	digit	M	crowded
+31	23	X?	sign	M	small "s"-like sign
+31	24	S12	sign	M	small cross/dagger mark
+31	25	6	digit	H	
+31	26	X?	sign	M	capital ligature "Ao"-like, recurring shape
+31	27	15	digit	H	
+31	28	16	digit	H	
+32	1	9	digit	H	
+32	2	17	digit	H	
+32	3	44	digit	H	
+32	4	S07	sign	M	looped ascender
+32	5	6	digit	H	
+32	6	S12	sign	M	small cross/dagger mark
+32	7	15	digit	M	crowded
+32	8	3	digit	M	crowded
+32	9	S23	sign	M	small x-cross mark
+32	10	8	digit	M	crowded
+32	11	X?	sign	M	"na"-like ligature cluster
+32	12	X?	sign	M	"to"-like ligature cluster
+32	13	S12	sign	M	small cross/dagger mark
+32	14	S07	sign	M	looped ascender
+32	15	3	digit	M	crowded
+32	16	S12	sign	M	small cross/dagger mark
+32	17	6	digit	H	
+32	18	X?	sign	M	small "c"-like sign
+32	19	X?	sign	M	small "h"-like sign
+32	20	X?	sign	M	small "a"-like sign
+32	21	X?	sign	M	small "d"-like sign
+32	22	X?	sign	M	bold capital "A"-like ligature
+32	23	66	digit	H	
+32	24	X?	sign	M	"w"-like cluster
+32	25	S07	sign	M	looped ascender
+32	26	X?	sign	M	"co"-like ligature cluster
+32	27	X?	sign	M	"hmm"-like cluster with underline flourish beneath
+32	28	917	digit	M	crowded digit run
+32	29	12	digit	H	
+32	30	10	digit	M	crowded
+32	31	66	digit	H	
+32	32	18	digit	H	
+32	33	S23	sign	M	small x-cross mark
+32	34	95	digit	H	
+32	35	7616	digit	M	crowded digit run
+33	1	X?	sign	M	small cluster/flourish, no atlas match
+33	2	S17	sign	M	bold ff/H ligature, ink-blotted
+33	3	6	digit	H	
+33	4	S17	sign	M	bold ff/H ligature, ink-blotted
+33	5	16	digit	H	
+33	6	06	digit	H	
+33	7	62	digit	H	
+33	8	X?	sign	M	"mu"-like ligature cluster
+33	9	60	digit	H	
+33	10	S12	sign	M	small cross/dagger mark
+33	11	102	digit	M	crowded
+33	12	44	digit	H	
+33	13	104	digit	H	
+33	14	5	digit	H	
+33	15	X?	sign	M	cluster resembling "l r o", no atlas match
+33	16	X?	sign	M	capital ligature "Ao"-like, recurring shape
+33	17	3	digit	M	crowded
+33	18	64	digit	H	
+33	19	16	digit	H	
+33	20	15	digit	H	
+33	21	X?	sign	M	"to"-like ligature cluster
+33	22	S12	sign	M	small cross/dagger mark
+33	23	12	digit	H	
+33	24	60	digit	H	
+33	25	X?	sign	M	capital ligature "Ao"-like, recurring shape
+33	26	6	digit	H	
+33	27	X?	sign	M	cursive closing word ("fau."-like) with underline flourish, possibly a non-cipher marginal note, low confidence
