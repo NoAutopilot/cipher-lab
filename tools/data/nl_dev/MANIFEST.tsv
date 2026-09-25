@@ -1,0 +1,68 @@
+book_no	name	chapters	url	bytes_raw	sha1_body	letters_folded	file
+1	Genesis	50	https://api.getbible.net/v2/statenvertaling.json	204329	c1309f65ef9f16ebafe0d7ed1ad90590cf55f632	159078	01_genesis.txt.gz
+2	Exodus	40	https://api.getbible.net/v2/statenvertaling.json	174237	520779fd6f05a044c6194b2efbb47cdfa4276abf	137465	02_exodus.txt.gz
+3	Leviticus	27	https://api.getbible.net/v2/statenvertaling.json	131356	6ff7b285eccfc39f9e11c7133470c1d0d356de50	103938	03_leviticus.txt.gz
+4	Numeri	36	https://api.getbible.net/v2/statenvertaling.json	176559	e3ec11392f5c9445bfb038933b3675e1345a21cd	140008	04_numeri.txt.gz
+5	Deuteronomium	34	https://api.getbible.net/v2/statenvertaling.json	149816	13e32614b38d051a741534243f1143b685bad1a6	116820	05_deuteronomium.txt.gz
+6	Jozua	24	https://api.getbible.net/v2/statenvertaling.json	103568	f683e73e56af38e3d4bd66b3b0418825c10a8c73	81301	06_jozua.txt.gz
+7	Rechters	21	https://api.getbible.net/v2/statenvertaling.json	102571	9c85e5a41d28b92e8d0f9fc7e250a5a3e737a1c5	80483	07_rechters.txt.gz
+8	Ruth	4	https://api.getbible.net/v2/statenvertaling.json	13512	5b6895e21af64839fa6f15d6ba1c34dcf3c282cb	10489	08_ruth.txt.gz
+9	1 Samuel	31	https://api.getbible.net/v2/statenvertaling.json	135528	d536e59fd6dce0caa0971246ea17db9b60b6e18a	105998	09_1_samuel.txt.gz
+10	2 Samuel	24	https://api.getbible.net/v2/statenvertaling.json	110413	efad9328072f6e48859f284ccd1e506057bb8ab5	86130	10_2_samuel.txt.gz
+11	1 Koningen	22	https://api.getbible.net/v2/statenvertaling.json	132032	23d7b4603bf5872cf89b28253c32d28b3d5e88fd	103320	11_1_koningen.txt.gz
+12	2 Koningen	25	https://api.getbible.net/v2/statenvertaling.json	124799	5cf411e50fbfb390a498a9a3d2ba91c42e101c45	97452	12_2_koningen.txt.gz
+13	1 Kronieken	29	https://api.getbible.net/v2/statenvertaling.json	113378	51d429eeb12cedd86a0191f441fc58b22385ac61	88919	13_1_kronieken.txt.gz
+14	2 Kronieken	36	https://api.getbible.net/v2/statenvertaling.json	142435	c31587537eef3520bedaf7ded96253f9c8520fa8	112360	14_2_kronieken.txt.gz
+15	Ezra	10	https://api.getbible.net/v2/statenvertaling.json	40747	6e5d562c94821f503c646599c1c325fdb60e718e	32225	15_ezra.txt.gz
+16	Nehemia	13	https://api.getbible.net/v2/statenvertaling.json	57506	f5c90e806993025188427656efa8ca1a160cf2a9	45225	16_nehemia.txt.gz
+17	Esther	10	https://api.getbible.net/v2/statenvertaling.json	32184	f7e20fdda05c8c2b4fdab0fc6e99fad1f64ee07e	25470	17_esther.txt.gz
+18	Job	42	https://api.getbible.net/v2/statenvertaling.json	99510	8c23e5e5aaba0ed8ab4a5dffb4087c83b88cc501	78599	18_job.txt.gz
+19	Psalmen	150	https://api.getbible.net/v2/statenvertaling.json	239258	0b5659cb8e12b35c64d8bff2ce7a1b56ae8ee874	189311	19_psalmen.txt.gz
+20	Spreuken	31	https://api.getbible.net/v2/statenvertaling.json	84577	79166265774b72971f2bc910eecde66f11d6cff3	67239	20_spreuken.txt.gz
+21	Prediker	12	https://api.getbible.net/v2/statenvertaling.json	30773	da0b455bca46695c83d141d54492b00f248a1fe6	24146	21_prediker.txt.gz
+22	Hooglied	8	https://api.getbible.net/v2/statenvertaling.json	14638	e7a7e38bee6a48f248f965c8073027b01016e20f	11517	22_hooglied.txt.gz
+23	Jesaja	66	https://api.getbible.net/v2/statenvertaling.json	206019	6112f3a187a1f60b7eed9829353d28c1c1c34629	162974	23_jesaja.txt.gz
+24	Jeremia	52	https://api.getbible.net/v2/statenvertaling.json	232260	0099620c2ad45955561f296dec2117a934e9d871	182934	24_jeremia.txt.gz
+25	Klaagliederen	5	https://api.getbible.net/v2/statenvertaling.json	20297	9720cf809a994bbd3dc86ba95d499ef928e03c3a	16126	25_klaagliederen.txt.gz
+26	Ezechiël	48	https://api.getbible.net/v2/statenvertaling.json	210308	2fadfa20d722b59617265d2abff6ba759863e3a0	166122	26_ezechi_l.txt.gz
+27	Daniël	12	https://api.getbible.net/v2/statenvertaling.json	65612	2969f1402510be7277278272b634848ec875b24b	51932	27_dani_l.txt.gz
+28	Hosea	14	https://api.getbible.net/v2/statenvertaling.json	28478	74d05c2df0f06a5a7a3d3e4be583f8731b5aeb9c	22553	28_hosea.txt.gz
+29	Joël	3	https://api.getbible.net/v2/statenvertaling.json	10841	99990dda96afe50740cf98c7ed826bc43a0d9226	8592	29_jo_l.txt.gz
+30	Amos	9	https://api.getbible.net/v2/statenvertaling.json	22531	78c5028ae3fb75fb113ca993d146e7a534ec749f	17801	30_amos.txt.gz
+31	Obadja	1	https://api.getbible.net/v2/statenvertaling.json	3497	c105bb1b57727717aefc33a5208e516eda2dd90e	2789	31_obadja.txt.gz
+32	Jona	4	https://api.getbible.net/v2/statenvertaling.json	6945	47285eb60f0afe3ef4af12e09e822540e4775216	5413	32_jona.txt.gz
+33	Micha	7	https://api.getbible.net/v2/statenvertaling.json	16545	fc2209569be5c9dca30e61bcbd826a2919df1c9f	13076	33_micha.txt.gz
+34	Nahum	3	https://api.getbible.net/v2/statenvertaling.json	6992	39a0e599ff8920c93ad8556e5376b917e3163a0e	5542	34_nahum.txt.gz
+35	Habakuk	3	https://api.getbible.net/v2/statenvertaling.json	8288	5f2743d84cad20912f1ef6e0752bda1e20aafcad	6552	35_habakuk.txt.gz
+36	Zefanja	3	https://api.getbible.net/v2/statenvertaling.json	9077	7b8d4e050244d589d07158956f09e1bac43faef4	7222	36_zefanja.txt.gz
+37	Haggai	2	https://api.getbible.net/v2/statenvertaling.json	6344	519bed8fe5a8f12f4be5b79ffa0163dfa143d136	4954	37_haggai.txt.gz
+38	Zacharia	14	https://api.getbible.net/v2/statenvertaling.json	35222	3b464e9a1bba4a91db2bcab6938d42192d9fe0b2	27814	38_zacharia.txt.gz
+39	Maleachi	4	https://api.getbible.net/v2/statenvertaling.json	9730	fd2bc11024e9ec7535fd4fb29b08797dc39effc6	7668	39_maleachi.txt.gz
+75	Baruch	6	https://api.getbible.net/v2/statenvertaling.json	27936	903c6708f5357ff7545afc564cfedd33d6ed897d	22116	75_baruch.txt.gz
+40	Mattheüs	28	https://api.getbible.net/v2/statenvertaling.json	130877	52931fe49293e875cc4a7b07957388ab5066833c	103035	40_matthe_s.txt.gz
+41	Marcus	16	https://api.getbible.net/v2/statenvertaling.json	82988	a0e04757f832d93f9df2f78f1fdd951d53b8d31f	65057	41_marcus.txt.gz
+42	Lucas	24	https://api.getbible.net/v2/statenvertaling.json	140752	b8379a52e60896bc9a99e55af66869975eac1d4b	110330	42_lucas.txt.gz
+43	Johannes	21	https://api.getbible.net/v2/statenvertaling.json	103327	414fc6df1b25dfca3ea5c7b7fa41f0faad811008	80512	43_johannes.txt.gz
+44	Handelingen	28	https://api.getbible.net/v2/statenvertaling.json	137455	b50c85aacb3a3ebc9f176cee5c8fabbe67a8fefa	108900	44_handelingen.txt.gz
+45	Romeinen	16	https://api.getbible.net/v2/statenvertaling.json	54398	311511b84de29648654496cd295185d3ab86419f	43253	45_romeinen.txt.gz
+46	1 Korintiërs	16	https://api.getbible.net/v2/statenvertaling.json	52904	2bc0267277adfce89374903a5f422fea2ce80c94	41837	46_1_korinti_rs.txt.gz
+47	2 Korintiërs	13	https://api.getbible.net/v2/statenvertaling.json	34873	2d1551a23ccc72d2488d3e069452368d8f24e7d4	27751	47_2_korinti_rs.txt.gz
+48	Galaten	6	https://api.getbible.net/v2/statenvertaling.json	17709	1beaf86118df1d408046d6607e04f7468ae2e2b9	14064	48_galaten.txt.gz
+49	Efeziërs	6	https://api.getbible.net/v2/statenvertaling.json	17498	8599186bd2389aee900a3f35ef32e4f2eefe1562	14048	49_efezi_rs.txt.gz
+50	Filippenzen	4	https://api.getbible.net/v2/statenvertaling.json	12413	124b627eea51aee8e7651dd24440586d58152b28	9870	50_filippenzen.txt.gz
+51	Kolossenzen	4	https://api.getbible.net/v2/statenvertaling.json	11747	8b7ef458c43b0da1eb3fc16de2669e43c8708a07	9389	51_kolossenzen.txt.gz
+52	1 Tessalonicenzen	5	https://api.getbible.net/v2/statenvertaling.json	10593	694d11a1b67ff49f889c956fa96561d74e85b9e7	8420	52_1_tessalonicenzen.txt.gz
+53	2 Tessalonicenzen	3	https://api.getbible.net/v2/statenvertaling.json	5829	cecfba9d2ebf4a8eb5e254d5152f2e0f540a1359	4635	53_2_tessalonicenzen.txt.gz
+54	1 Timotheüs	6	https://api.getbible.net/v2/statenvertaling.json	13602	b8fc11519844b3360befc4598cda84643b58ab6d	10938	54_1_timothe_s.txt.gz
+55	2 Timotheüs	4	https://api.getbible.net/v2/statenvertaling.json	9950	a7655b0bfb3dce005de7edb454530df0d73648d2	7978	55_2_timothe_s.txt.gz
+56	Titus	3	https://api.getbible.net/v2/statenvertaling.json	5786	6f62a40a323acc4dfe33d1bbc9012ef32052bd92	4669	56_titus.txt.gz
+57	Filemon	1	https://api.getbible.net/v2/statenvertaling.json	2521	beeaef20801ba917df407bee800af8fc6e96a520	1998	57_filemon.txt.gz
+58	Hebreeën	13	https://api.getbible.net/v2/statenvertaling.json	40970	7e39989421aa01ca0e8da13a7f264bd266a170c8	32883	58_hebree_n.txt.gz
+59	Jakobus	5	https://api.getbible.net/v2/statenvertaling.json	13297	06a8d6fdaab76cef63b7b5652042cef211714a8a	10564	59_jakobus.txt.gz
+60	1 Petrus	5	https://api.getbible.net/v2/statenvertaling.json	14418	5dea2e70efd7ee6d824d92685cdb255252b9ba6c	11590	60_1_petrus.txt.gz
+61	2 Petrus	3	https://api.getbible.net/v2/statenvertaling.json	9485	0020f639454352c0a9de4b8ae8e5bc8ca5c67a4d	7697	61_2_petrus.txt.gz
+62	1 Johannes	5	https://api.getbible.net/v2/statenvertaling.json	13870	14423fa1fd17d0bbe199dba41028681c6b745a35	10839	62_1_johannes.txt.gz
+63	2 Johannes	1	https://api.getbible.net/v2/statenvertaling.json	1732	a6f937030e8c077cd57691028a62354499b90877	1367	63_2_johannes.txt.gz
+64	3 Johannes	1	https://api.getbible.net/v2/statenvertaling.json	1656	164e4179f83367cceb18fbd2c55f2cf3ff0ef749	1311	64_3_johannes.txt.gz
+65	Judas	1	https://api.getbible.net/v2/statenvertaling.json	3802	5db446ec143dec5c6de3a22a369d30172143867b	3081	65_judas.txt.gz
+66	Openbaring	22	https://api.getbible.net/v2/statenvertaling.json	64278	bd927a919076824917287aba44581949cb74a4cc	50384	66_openbaring.txt.gz
