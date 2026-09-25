@@ -1,0 +1,863 @@
+line	position	sign	confidence	alt	why
+L01	1	Mijn	H		agree
+L01	2	Heer	H		agree
+L02	1	Hier	H		agree
+L02	2	voort	H		agree
+L02	3	van	H		agree
+L02	4	dagh	M	B:dag	differ
+L02	5	tot	H		agree
+L02	6	dagh	M	B:dag	differ
+L02	7	met	H		agree
+L02	8	groot	H		agree
+L02	9	impatientie	H		agree
+L03	1	verlangst	H		agree
+L03	2	na	M	B:naer	differ
+L03	3	uw,	M	B:uEd.	differ
+L03	4	40,	H		agree
+L03	5	50:	H		agree
+L03	6	59,	H		agree
+L03	7	50,	H		agree
+L03	8	51,	H		agree
+L03	9	21:	H		agree
+L03	10	22,	H		agree
+L03	11	12,	H		agree
+L03	12	23,	H		agree
+L04	1	51,	H		agree
+L04	2	32,	H		agree
+L04	3	61,	H		agree
+L04	4	10,	H		agree
+L04	5	57,	H		agree
+L04	6	51:	H		agree
+L04	7	bij	H		image-verified 25 Sept 2026: clearly the plain word 'bij', not a digit (passB misread as '6?,')
+L04	8	49,	H		agree
+L04	9	51:	H		agree
+L04	10	25,	H		image-verified 25 Sept 2026: reads '25,' (passA misread as '23,')
+L04	11	25,	H		agree
+L04	12	40,	H		agree
+L04	13	51,	H		agree
+L04	14	25:	H		agree
+L05	1	[MARK]	M	A:-	gap
+L05	2	sal	H		agree
+L05	3	gebruijcken	M	B:seggen	differ
+L05	4	57,	H		agree
+L05	5	51,	H		agree
+L05	6	13,	H		agree
+L05	7	44,	H		agree
+L05	8	26,	H		agree
+L05	9	62,	H		agree
+L05	10	10,	H		agree
+L05	11	50,	H		agree
+L05	12	52,	H		agree
+L05	13	22,	H		agree
+L05	14	26:	H		agree
+L05	15	op	M	B:en	differ
+L05	16	sijn	H		agree
+L06	1	27,	H		agree
+L06	2	52,	H		agree
+L06	3	22,	H		agree
+L06	4	23,	H		agree
+L06	5	12,	H		agree
+L06	6	50,	H		agree
+L06	7	46,	H		agree
+L06	8	4:	H		agree
+L06	9	13,	H		agree
+L06	10	11:	H		agree
+L06	11	40,	H		agree
+L06	12	50,	H		agree
+L06	13	23,	H		agree
+L06	14	51:	H		agree
+L06	15	47,	H		agree
+L06	16	21,	H		agree
+L07	1	12,	H		agree
+L07	2	13,	H		agree
+L07	3	10:	H		agree
+L07	4	met	H		agree
+L07	5	27,	H		agree
+L07	6	50,	H		agree
+L07	7	21,	H		agree
+L07	8	23,	H		agree
+L07	9	25,	H		agree
+L07	10	21,	H		agree
+L07	11	51,	H		agree
+L07	12	46,	H		agree
+L07	13	4,	H		agree
+L07	14	61,	H		agree
+L07	15	10,	H		agree
+L07	16	57,	H		agree
+L07	17	54:	H		agree
+L08	1	20,	H		agree
+L08	2	39,	H		agree
+L08	3	11:	H		agree
+L08	4	50,	H		agree
+L08	5	51,	H		agree
+L08	6	10:	H		agree
+L08	7	50,	H		agree
+L08	8	12,	H		agree
+L08	9	53,	H		agree
+L08	10	40,	H		agree
+L08	11	51:	H		agree
+L08	12	23,	H		agree
+L08	13	12,	H		agree
+L08	14	11,	H		agree
+L08	15	9,	H		agree
+L08	16	54:	H		agree
+L09	1	17,	H		agree
+L09	2	51,	H		agree
+L09	3	10,	H		agree
+L09	4	11,	H		agree
+L09	5	61,	H		agree
+L09	6	10,	H		agree
+L09	7	57,	H		agree
+L09	8	53,	H		agree
+L09	9	11:	H		agree
+L09	10	25,	H		agree
+L09	11	50:	H		agree
+L09	12	40,	H		agree
+L09	13	23,	H		agree
+L09	14	24,	H		agree
+L09	15	62,	H		agree
+L09	16	23,	H		agree
+L10	1	25,	H		agree
+L10	2	51,	H		agree
+L10	3	21,	H		agree
+L10	4	52,	H		agree
+L10	5	10:	H		agree
+L10	6	gebruijckt	M	B:dobbelt	differ
+L10	7	mijn	H		agree
+L10	8	sonder	H		agree
+L10	9	de	M	B:-	gap
+L10	10	selven	M	B:sofelte	differ
+L10	11	vereenigt	M	B:vraeginge	differ
+L11	1	middel	H		agree
+L11	2	siet	M	A:-	gap
+L11	3	soodanigh	M	B:ons	differ
+L11	4	op	H		agree
+L11	5	sien	M	B:deese	differ
+L11	6	nodighe	M	B:noodige	differ
+L11	7	saken	H		agree
+L11	8	sonder	H		agree
+L11	9	de	H		agree
+L11	10	sleutel?,	M	B:stocken,	differ
+L12	1	[MARK]	H		agree
+L12	2	onder	H		agree
+L12	3	anderen	M	B:andere	differ
+L12	4	42,	H		agree
+L12	5	6,	H		agree
+L12	6	7,	H		agree
+L12	7	50:	H		agree
+L12	8	22,	H		agree
+L12	9	51,	H		agree
+L12	10	46,	H		agree
+L12	11	21,	H		agree
+L12	12	52,	H		agree
+L12	13	27,	H		agree
+L12	14	25,	H		agree
+L12	15	53,	H		agree
+L13	1	24:	H		agree
+L13	2	over	M	B:-	gap
+L13	3	de	M	B:door	differ
+L13	4	bedelckt	M	B:dobbelt	differ
+L13	5	mij	M	B:mijn	differ
+L13	6	met	H		agree
+L13	7	20,	H		agree
+L13	8	53,	H		agree
+L13	9	21,	H		agree
+L13	10	23,	H		agree
+L13	11	46,	H		agree
+L13	12	59,	H		agree
+L13	13	50,	H		agree
+L13	14	36,	H		agree
+L14	1	40,	H		agree
+L14	2	54:	H		agree
+L14	3	12,	H		agree
+L14	4	55,	H		agree
+L14	5	56,	H		agree
+L14	6	61,	H		agree
+L14	7	47,	H		agree
+L14	8	65,	M	B:65?,	differ
+L14	9	51,	H		agree
+L14	10	21,	H		agree
+L14	11	23:	H		agree
+L14	12	gesandt	M		agree-flagged
+L14	13	geeft	M		agree-flagged
+L15	1	[MARK]	H		agree
+L15	2	van	M	A:-	gap
+L15	3	voorder	M	B:der	differ
+L15	4	handelen	M	B:handel	differ
+L15	5	soud	M	B:sonell	differ
+L15	6	44,	H		agree
+L15	7	37:	H		agree
+L15	8	57,	H		agree
+L15	9	50,	H		agree
+L15	10	44,	H		agree
+L15	11	21,	H		agree
+L15	12	51,	H		agree
+L15	13	46,	H		agree
+L15	14	4:	H		agree
+L16	1	27,	H		agree
+L16	2	39,	H		agree
+L16	3	10:	H		agree
+L16	4	57,	H		agree
+L16	5	50,	H		agree
+L16	6	6,	H		agree
+L16	7	25:	H		agree
+L16	8	achter	H		agree
+L16	9	blijven.	H		agree
+L16	10	daer	H		agree
+L16	11	ontbreekt	M		agree-flagged
+L17	1	mede	M	B:niet,	differ
+L17	2	soo	H		agree
+L17	3	mij	H		agree
+L17	4	gesoijt	M		agree-flagged
+L17	5	weert?,	M	B:wordt,	differ
+L17	6	dit	H		agree
+L17	7	sier	M		agree-flagged
+L17	8	trachten	H		agree
+L17	9	te	H		agree
+L17	10	versaeckeren	M	B:versinderen	differ
+L18	1	datums	M	B:datum	differ
+L18	2	groot	M		agree-flagged
+L18	3	51,	H		agree
+L18	4	55,	H		agree
+L18	5	56,	H		agree
+L18	6	52,	H		agree
+L18	7	46,	H		agree
+L18	8	25,	H		agree
+L18	9	53,	H		agree
+L18	10	10:	H		agree
+L18	11	27,	H		agree
+L18	12	36,	H		agree
+L18	13	26:	H		agree
+L18	14	40,	H		agree
+L18	15	50:	M	B:50,	differ
+L19	1	143:	H		agree
+L19	2	geeft	M		agree-flagged
+L19	3	de	M	B:t'	differ
+L19	4	vraagster?.	M	B:voorder	differ
+L19	5	[MARK]	H		agree
+L19	6	't	H		agree
+L19	7	schijnt	M	B:seijnt	differ
+L19	8	datum	H		agree
+L19	9	daer	H		agree
+L19	10	op	H		agree
+L19	11	veel	M	B:deel	differ
+L20	1	fondement	H		agree
+L20	2	sonell	M	A:-	gap
+L20	3	soud	M	B:willen	differ
+L20	4	Willemsmaker	M	B:maken	differ
+L20	5	om	H		agree
+L20	6	144:	H		agree
+L20	7	40,	H		agree
+L20	8	50:	H		agree
+L20	9	27,	H		agree
+L20	10	21,	H		agree
+L20	11	20,	H		agree
+L21	1	10,	H		agree
+L21	2	25,	H		agree
+L21	3	24,	H		agree
+L21	4	46,	H		agree
+L21	5	59,	H		agree
+L21	6	41,	H		agree
+L21	7	17:	H		agree
+L21	8	27,	H		agree
+L21	9	39,	H		agree
+L21	10	10:	H		agree
+L21	11	40,	H		agree
+L21	12	50,	H		agree
+L21	13	23,	H		agree
+L21	14	51:	H		agree
+L21	15	46,	H		agree
+L21	16	21,	H		agree
+L21	17	12,	H		agree
+L21	18	13,	H		agree
+L21	19	10:	H		agree
+L22	1	de	M	B:4	differ
+L22	2	dagh	M	B:dag	differ
+L22	3	20,	H		agree
+L22	4	53,	H		agree
+L22	5	22,	H		agree
+L22	6	6,	H		agree
+L22	7	61,	H		agree
+L22	8	50,	H		agree
+L22	9	24,	H		agree
+L22	10	51,	H		agree
+L22	11	10:	H		agree
+L22	12	over	M	B:-	gap
+L22	13	sijn	M	B:-	gap
+L22	14	niet	M	B:-	gap
+L22	15	dat	M	B:[ILLEGIBLE]	differ
+L22	16	mont	M	B:[ILLEGIBLE]	differ
+L23	1	[MARK]	H		agree
+L23	2	seer	M	A:-	gap
+L23	3	Heer	M	B:[ILLEGIBLE]	differ
+L23	4	stiptgesantwoort	M	B:hoe	differ
+L23	5	dat	H		agree
+L23	6	de	H		agree
+L23	7	39,	H		agree
+L23	8	11,	H		agree
+L23	9	44,	H		agree
+L23	10	40,	H		agree
+L23	11	23,	H		agree
+L23	12	24,	H		agree
+L23	13	43,	H		agree
+L24	1	40,	H		agree
+L24	2	51,	H		agree
+L24	3	27,	H		agree
+L24	4	21:	H		agree
+L24	5	20,	H		agree
+L24	6	39,	H		agree
+L24	7	10:	H		agree
+L24	8	213:	H		agree
+L24	9	tot	H		agree
+L24	10	104:	H		agree
+L24	11	als	M	B:as	differ
+L24	12	er	M	B:en	differ
+L24	13	couromen	M	B:coninen	differ
+L25	1	welcke	M	B:voelde	differ
+L25	2	sij	M	B:sijn	differ
+L25	3	mijn	M	B:my	differ
+L25	4	woordt	M	B:woorde	differ
+L25	5	geeft	M		agree-flagged
+L25	6	gesoijt	M	B:geseijt	differ
+L25	7	dat	H		agree
+L25	8	indien	H		agree
+L26	1	de	H		agree
+L26	2	173:	H		agree
+L26	3	sal	H		agree
+L26	4	doen	M	B:doet	differ
+L26	5	soo	H		agree
+L26	6	veel	H		agree
+L26	7	als	H		agree
+L26	8	godag	M	B:goeden	differ
+L26	9	voor	H		agree
+L26	10	213:	H		agree
+L26	11	als	H		agree
+L26	12	voor	H		agree
+L27	1	de	H		agree
+L27	2	143:	H		agree
+L27	3	't	H		agree
+L27	4	selve	M	B:selver	differ
+L27	5	met	H		agree
+L27	6	40,	H		agree
+L27	7	10,	H		agree
+L27	8	40,	H		agree
+L27	9	50,	H		agree
+L27	10	21,	H		agree
+L27	11	51:	H		agree
+L27	12	40,	H		agree
+L27	13	40,	H		agree
+L27	14	10,	H		agree
+L27	15	46,	H		agree
+L27	16	4,	H		agree
+L28	1	44,	H		agree
+L28	2	39,	H		agree
+L28	3	50,	H		agree
+L28	4	21,	H		agree
+L28	5	59,	H		agree
+L28	6	52,	H		agree
+L28	7	36,	H		agree
+L28	8	25:	H		agree
+L28	9	soud	M	B:sonell	differ
+L28	10	wordt	M	B:woorde	differ
+L28	11	erkant,	M	B:erkent,	differ
+L28	12	maer	M	B:maar	differ
+L29	1	datums	M	B:datum	differ
+L29	2	oindsighte	M	B:ontdekte	differ
+L29	3	is	H		agree
+L29	4	172:	H		agree
+L29	5	de	H		agree
+L29	6	59,	H		agree
+L29	7	51,	H		agree
+L29	8	52,	H		agree
+L29	9	21,	H		agree
+L29	10	53,	H		agree
+L29	11	10:	H		agree
+L29	12	144:	H		agree
+L29	13	soud	M	B:sonell	differ
+L30	1	6,	H		agree
+L30	2	50,	H		agree
+L30	3	51,	H		agree
+L30	4	21,	H		agree
+L30	5	52,	H		agree
+L30	6	10:	H		agree
+L30	7	5,	H		agree
+L30	8	53,	H		agree
+L30	9	10,	H		agree
+L30	10	11,	H		agree
+L30	11	54,	H		agree
+L30	12	10:	H		agree
+L30	13	gelijck	M	B:getijckt	differ
+L30	14	sij	H		agree
+L30	15	bij	M	B:bij-	differ
+L31	1	105:	H		agree
+L31	2	225:	H		agree
+L31	3	50,	H		agree
+L31	4	10,	H		agree
+L31	5	40,	H		agree
+L31	6	51:	H		agree
+L31	7	213:	H		agree
+L31	8	44,	H		agree
+L31	9	51,	H		agree
+L31	10	4,	H		agree
+L31	11	52,	H		agree
+L31	12	10,	H		agree
+L31	13	25:	H		agree
+L31	14	23,	H		agree
+L31	15	36,	H		agree
+L31	16	10:	H		agree
+L32	1	Ick	M	B:dat	differ
+L32	2	weet	H		agree
+L32	3	niet	H		agree
+L32	4	oft	H		agree
+L32	5	dit	H		agree
+L32	6	te	H		agree
+L32	7	apprehenderen	M		agree-flagged
+L32	8	sij,	H		agree
+L32	9	maer	H		agree
+L32	10	d'selve	M	B:-	gap
+L32	11	heeren	M	B:d'sHeer	differ
+L33	1	maken	M	B:-	gap
+L33	2	daer	M	B:maekt	differ
+L33	3	op	M	B:daerop	differ
+L33	4	te	H		agree
+L33	5	meer	H		agree
+L33	6	reflectie	M	B:reflexie	differ
+L33	7	om	H		agree
+L33	8	dat	H		agree
+L33	9	de	H		agree
+L33	10	40,	H		agree
+L33	11	57,	H		agree
+L33	12	50,	H		agree
+L33	13	10,	H		agree
+L33	14	25:	H		agree
+L34	1	27,	H		agree
+L34	2	39,	H		agree
+L34	3	10,	H		agree
+L34	4	40,	H		agree
+L34	5	51:	H		agree
+L34	6	173:	H		agree
+L34	7	27,	H		agree
+L34	8	36,	H		agree
+L34	9	25:	H		agree
+L34	10	222:	H		agree
+L34	11	geeft	M	B:seijt	differ
+L34	12	geschreven	H		agree
+L35	1	dat	H		agree
+L35	2	sij	H		agree
+L35	3	vertrouwen	M	B:vertrouden	differ
+L35	4	dat	H		agree
+L35	5	gemelt	M		agree-flagged
+L35	6	39,	H		agree
+L35	7	11,	H		agree
+L35	8	44,	H		agree
+L35	9	40,	H		agree
+L35	10	23,	H		agree
+L35	11	24,	H		agree
+L36	1	42,	H		agree
+L36	2	40,	H		agree
+L36	3	51,	H		agree
+L36	4	27,	H		agree
+L36	5	21:	H		agree
+L36	6	soud	M	B:sonell	differ
+L36	7	voorsz	M	B:worden	differ
+L36	8	gestelt	M	B:gelast	differ
+L36	9	om	H		agree
+L36	10	sijn	M	B:hier	differ
+L36	11	over	H		agree
+L37	1	51,	H		agree
+L37	2	52,	H		agree
+L37	3	10:	H		agree
+L37	4	43,	H		agree
+L37	5	6,	H		agree
+L37	6	7,	H		agree
+L37	7	61,	H		agree
+L37	8	39,	H		agree
+L37	9	10,	H		agree
+L37	10	20,	M	B:50, / image:possibly a single unseparated cluster '250'	image-checked 25 Sept 2026: the manuscript shows a cramped 3-digit-looking cluster here with no clear internal comma; could be '2,50' or '25,0' or a genuine '250' -- segmentation not resolved, left as passA's tokenisation with alternates noted rather than silently repaired
+L37	11	62,	H		agree
+L37	12	53:	H		agree
+L37	13	25,	H		agree
+L37	14	50:	H		agree
+L37	15	25,	H		agree
+L37	16	21,	H		agree
+L38	1	41,	H		agree
+L38	2	46,	H		agree
+L38	3	26,	H		agree
+L38	4	54,	H		agree
+L38	5	22,	H		agree
+L38	6	53,	H		agree
+L38	7	10:	H		agree
+L38	8	[MARK]	H		agree
+L38	9	datums	M	B:datum	differ
+L38	10	is	H		agree
+L38	11	213:	H		agree
+L38	12	32,	H		agree
+L38	13	50,	H		agree
+L38	14	6:	H		agree
+L39	1	10,	H		agree
+L39	2	61,	H		agree
+L39	3	52,	H		agree
+L39	4	25:	H		agree
+L39	5	57,	H		agree
+L39	6	12,	H		agree
+L39	7	50,	H		agree
+L39	8	26,	H		agree
+L39	9	24:	H		agree
+L39	10	moght	M	B:-	gap
+L39	11	voorsz	M	B:moet	differ
+L39	12	doen	M	B:voorsobben	differ
+L40	1	met	H		agree
+L40	2	de	H		agree
+L40	3	143:	H		agree
+L40	4	daer	H		agree
+L40	5	weet	H		agree
+L40	6	ook	M	B:oock	differ
+L40	7	32,	H		agree
+L40	8	50,	H		agree
+L40	9	57,	H		agree
+L40	10	51,	H		agree
+L40	11	10,	H		agree
+L40	12	23:	H		agree
+L41	1	105:	H		agree
+L41	2	25,	H		agree
+L41	3	12,	H		agree
+L41	4	26:	H		agree
+L41	5	222:	H		agree
+L41	6	over	H		agree
+L41	7	de	H		agree
+L41	8	46,	H		agree
+L41	9	13,	H		agree
+L41	10	11,	H		agree
+L41	11	9,	H		agree
+L41	12	50,	H		agree
+L41	13	21,	H		agree
+L41	14	47,	H		agree
+L41	15	61,	H		agree
+L41	16	51:	H		agree
+L42	1	57,	H		agree
+L42	2	52,	H		agree
+L42	3	59,	H		agree
+L42	4	39,	H		agree
+L42	5	10,	H		agree
+L42	6	40,	H		agree
+L42	7	53,	H		agree
+L42	8	6,	H		agree
+L42	9	26:	H		agree
+L42	10	gelijck	H		agree
+L42	11	als:	M	B:uEd:	differ
+L42	12	sal	H		agree
+L42	13	vernemen	M	B:bevons-	differ
+L43	1	mede	M	B:men	differ
+L43	2	niet	H		agree
+L43	3	er	M	B:as	differ
+L43	4	goederhijzeerd	M	B:goniderwijsseren	differ
+L43	5	met	H		agree
+L43	6	dit	H		agree
+L43	7	vercke	M	B:vertek	differ
+L43	8	niet	H		agree
+L44	1	water	H		agree
+L44	2	as	M	A:-	gap
+L44	3	er	M	B:sant	differ
+L44	4	sacht	M	B:[ILLEGIBLE]:	differ
+L44	5	toe	M	B:uw:	differ
+L44	6	niet:	M	B:sant.	differ
+L44	7	soo	M	B:Ick	differ
+L44	8	mede	M	B:sal	differ
+L44	9	meent	M	B:meer	differ
+L44	10	te	H		agree
+L44	11	men	M	B:maer	differ
+L45	1	dat	H		agree
+L45	2	sier	M	B:-	gap
+L45	3	eenigst	M	B:soo	differ
+L45	4	mit	M	B:eenige	differ
+L45	5	heer	M	B:mijnheer	differ
+L45	6	geeft	M	B:geseijt	differ
+L45	7	dat	H		agree
+L45	8	106:	H		agree
+L45	9	goet	M	B:soer	differ
+L45	10	59,	H		agree
+L45	11	12:	H		agree
+L45	12	11,	M	B:-	gap
+L45	13	B:	M	B:N.B:	differ
+L46	1	van	H		agree
+L46	2	de	H		agree
+L46	3	tractaten	H		agree
+L46	4	11,	H		agree
+L46	5	50,	H		agree
+L46	6	25:	H		agree
+L46	7	172:	H		agree
+L46	8	32,	H		agree
+L46	9	61,	H		agree
+L46	10	6:	H		agree
+L46	11	27,	H		agree
+L46	12	36,	H		agree
+L46	13	25,	H		agree
+L46	14	23,	H		agree
+L47	1	6,	H		agree
+L47	2	27,	H		agree
+L47	3	57,	H		agree
+L47	4	26,	H		agree
+L47	5	50,	H		agree
+L47	6	10:	H		agree
+L47	7	12,	H		agree
+L47	8	11:	H		agree
+L47	9	40,	H		agree
+L47	10	39,	H		agree
+L47	11	25:	H		agree
+L47	12	41,	H		agree
+L47	13	6:	H		agree
+L47	14	voor	H		agree
+L47	15	sekere	M	B:sceen	differ
+L48	1	51,	H		agree
+L48	2	52,	H		agree
+L48	3	10:	H		agree
+L48	4	59,	H		agree
+L48	5	50,	H		agree
+L48	6	51,	H		agree
+L48	7	22:	H		agree
+L48	8	dit	M	B:die	differ
+L48	9	mij	H		agree
+L48	10	voor	H		agree
+L48	11	23,	H		agree
+L48	12	32,	H		agree
+L48	13	51,	H		agree
+L48	14	52,	H		agree
+L48	15	25,	H		agree
+L48	16	23:	M	B:23,	differ
+L49	1	aansier	M	B:aensiet	differ
+L49	2	sier	M		agree-flagged
+L49	3	bij	H		agree
+L49	4	en	M		agree-flagged
+L49	5	handel	M	B:-	gap
+L49	6	ernst	M	B:vandt	differ
+L49	7	er	M	B:eerst	differ
+L49	8	ministers	H		agree
+L49	9	verwehr-	M	B:veelvoor-	differ
+L50	1	den	M	B:de	differ
+L50	2	geeft	H		agree
+L50	3	gebruijckt	M	B:gebruicket	differ
+L50	4	om	H		agree
+L50	5	de	H		agree
+L50	6	staat	M	B:Staeten	differ
+L50	7	berg	M	B:haer	differ
+L50	8	143:	H		agree
+L50	9	te	H		agree
+L50	10	de	M	B:-	gap
+L50	11	fredberg?,	M	B:desfredibrig?,	differ
+L51	1	als	H		agree
+L51	2	er	M	B:dat	differ
+L51	3	weder	M	B:vertek	differ
+L51	4	niet	H		agree
+L51	5	stt	M	B:ist	differ
+L51	6	olde	M	B:alle	differ
+L51	7	de	M	B:te	differ
+L51	8	verhoogste	M	B:verhouden	differ
+L51	9	dat,	M	B:voort,	differ
+L51	10	[MARK]	H		agree
+L52	1	te	H		agree
+L52	2	gepersiadeeren	M	B:geresideerden	differ
+L52	3	datums	M	B:datum	differ
+L52	4	44,	H		agree
+L52	5	51,	H		agree
+L52	6	25,	H		agree
+L52	7	52,	H		agree
+L52	8	21:	H		agree
+L52	9	46,	H		agree
+L52	10	12,	H		agree
+L52	11	10,	H		agree
+L52	12	40,	H		agree
+L52	13	61,	H		agree
+L53	1	25,	H		agree
+L53	2	62,	H		agree
+L53	3	53,	H		agree
+L53	4	11:	H		agree
+L53	5	11,	H		agree
+L53	6	50,	H		agree
+L53	7	25:	H		agree
+L53	8	105:	H		agree
+L53	9	soud	M	B:sonell	differ
+L53	10	maken,	H		agree
+L53	11	23,	H		agree
+L53	12	12,	H		agree
+L53	13	11,	H		agree
+L53	14	40,	H		agree
+L54	1	50,	H		agree
+L54	2	22:	H		agree
+L54	3	39,	H		agree
+L54	4	6,	H		agree
+L54	5	23:	H		agree
+L54	6	11,	H		agree
+L54	7	51,	H		agree
+L54	8	25:	H		agree
+L54	9	62,	H		agree
+L54	10	10,	H		agree
+L54	11	25,	H		agree
+L54	12	52,	H		agree
+L54	13	22,	H		agree
+L54	14	27,	H		agree
+L54	15	53,	H		agree
+L54	16	10,	H		agree
+L55	1	26,	H		image-verified 25 Sept 2026: reads '26,' (passA misread as '28,')
+L55	2	62,	H		agree
+L55	3	54:	H		agree
+L55	4	20,	H		agree
+L55	5	39,	H		agree
+L55	6	10:	H		agree
+L55	7	144:	H		agree
+L55	8	Dat	H		agree
+L55	9	sal	H		agree
+L55	10	meer	H		agree
+L55	11	bijstaet	M	B:bericht,	differ
+L55	12	[MARK]	H		agree
+L56	1	opmerkingen	M	B:ophelderinge	differ
+L56	2	soo	M	B:voor	differ
+L56	3	veel	M	B:deel	differ
+L56	4	mij	H		agree
+L56	5	dubelijck	M		agree-flagged
+L56	6	is,	H		agree
+L56	7	gebruijcken?,	M	B:gebruicken,	differ
+L57	1	om	H		agree
+L57	2	't	H		agree
+L57	3	gaet	M	B:seer	differ
+L57	4	sijn	M	B:schier	differ
+L57	5	onder	H		agree
+L57	6	geschreven	M	B:scheelingen	differ
+L57	7	maar	M	B:maer	differ
+L57	8	nader	H		agree
+L57	9	te	H		agree
+L57	10	ontdecken,	H		agree
+L58	1	maer	H		agree
+L58	2	sonder	H		agree
+L58	3	17,	H		agree
+L58	4	21,	H		agree
+L58	5	12,	H		agree
+L58	6	11,	H		agree
+L58	7	10,	H		image-verified 25 Sept 2026: reads '10,' (passA misread as '19,')
+L58	8	25,	H		agree
+L58	9	50:	H		agree
+L58	10	22,	H		agree
+L58	11	51,	H		agree
+L58	12	40,	H		agree
+L58	13	6,	H		agree
+L58	14	61,	H		agree
+L58	15	25,	H		agree
+L59	1	50,	H		agree
+L59	2	61,	H		agree
+L59	3	25,	H		agree
+L59	4	52,	H		agree
+L59	5	10:	H		agree
+L59	6	is	H		agree
+L59	7	sier	M	B:hier	differ
+L59	8	soo	H		agree
+L59	9	46,	H		agree
+L59	10	22,	H		agree
+L59	11	50,	H		agree
+L59	12	40,	H		agree
+L59	13	37,	H		agree
+L59	14	26:	H		agree
+L59	15	van	H		agree
+L59	16	144:	H		agree
+L60	1	noch	H		agree
+L60	2	de	H		agree
+L60	3	40,	H		agree
+L60	4	55,	H		agree
+L60	5	46,	H		agree
+L60	6	50,	H		agree
+L60	7	46,	H		agree
+L60	8	25,	H		agree
+L60	9	61,	H		agree
+L60	10	53:	H		agree
+L60	11	van	M	B:dan	differ
+L60	12	40,	H		agree
+L60	13	50,	H		agree
+L60	14	23,	H		agree
+L60	15	52:	H		agree
+L61	1	47,	H		agree
+L61	2	22,	H		agree
+L61	3	13,	H		agree
+L61	4	14,	H		agree
+L61	5	10:	H		agree
+L61	6	tot	H		agree
+L61	7	de	H		agree
+L61	8	23,	H		agree
+L61	9	25,	H		agree
+L61	10	40,	H		agree
+L61	11	50,	H		agree
+L61	12	25:	H		agree
+L61	13	der	H		agree
+L61	14	143:	H		agree
+L61	15	niet	M	B:mede	differ
+L62	1	23,	H		agree
+L62	2	25,	H		agree
+L62	3	40,	H		agree
+L62	4	51,	H		agree
+L62	5	10,	H		agree
+L62	6	40,	H		agree
+L62	7	50:	H		agree
+L62	8	te	H		agree
+L62	9	sonder.	M	B:seinden.	differ
+L62	10	Ick	M	B:Dat	differ
+L62	11	geloove	H		agree
+L62	12	dat	H		agree
+L63	1	haer	H		agree
+L63	2	luv.	M	B:-	gap
+L63	3	voor	M	B:luy:	differ
+L63	4	[ILLEGIBLE]	M	B:onse	differ
+L63	5	veel	H		agree
+L63	6	sulke	M	B:sulks	differ
+L63	7	geestimeerd	M	B:geerdinger	differ
+L63	8	voor	M	B:uEd	differ
+L63	9	iets	M	B:ock	differ
+L63	10	partij-	M	B:parti-	differ
+L64	1	culier	M	B:tulier	differ
+L64	2	op	H		agree
+L64	3	de	H		agree
+L64	4	consideratie	M	B:considerachie	differ
+L64	5	is	H		agree
+L64	6	mijn	H		agree
+L64	7	niet	H		agree
+L64	8	ist	M	A:-	gap
+L64	9	dat	M	B:als	differ
+L64	10	er	M	B:heer	differ
+L65	1	cristien	M	B:gesijnt	differ
+L65	2	verbat	M	B:oorbaar	differ
+L65	3	te	H		agree
+L65	4	gelaten,	H		agree
+L65	5	maer	H		agree
+L65	6	ick	H		agree
+L65	7	sal	H		agree
+L65	8	mijn	M	A:-	gap
+L65	9	mij	M	B:tot	differ
+L65	10	toe-	M	B:noch	differ
+L66	1	volgen	H		agree
+L66	2	indagijt	M	B:indien	differ
+L66	3	gaen	M	B:pas	differ
+L66	4	naer	H		agree
+L66	5	order	H		agree
+L66	6	bekomt,	M	B:bekome,	differ
+L66	7	[MARK]	H		agree
+L66	8	sal	H		agree
+L66	9	is	M	B:ick	differ
+L66	10	sulke	M	B:sulken	differ
+L67	1	gebal	M		agree-flagged
+L67	2	de	H		agree
+L67	3	voorsz:	M	B:-	gap
+L67	4	mijselven	M	B:-	gap
+L67	5	mij	M	B:voortsz:	differ
+L67	6	hierm	M	B:mijselve	differ
+L67	7	van	M	B:heeren	differ
+L67	8	dat	M	B:voor	differ
+L67	9	sorge.	M	B:deesfarger.	differ
+L68	1	[Godt?]	M	A:Ick / B:- 	image-checked 25 Sept 2026: opening flourish overlaps the word; reads more like a closing-formula word (cf. 'Godt blijve') than either pass's guess, not confirmed
+L68	2	blijft?	M	A:blijf / B:Blijft	image-checked 25 Sept 2026: consistent with 'blijft'/'blijve' but final letter(s) not certain
+L69	1	Mijn	H		image-verified 25 Sept 2026
+L69	2	Heer	H		agree
+L70	1	UEd:	H		image-verified 25 Sept 2026: standard 'UEd:' abbreviation, matches passB
+L71	1	ootmoedigen?	M	A:ootmoedigh / B:ootmoedigsten	image-checked 25 Sept 2026: ending flourish ambiguous between -en/-ighe/-igsten
+L71	2	dienaer	H		agree
+L72	1	[ILLEGIBLE]	H		agree
+L73	1	-	H		"image-verified 25 Sept 2026: no separate ""'s"" token, folded into next word (matches passB's structure)"
+L73	2	Coppenhagen	H		image-verified 25 Sept 2026: reads 'Coppenhagen', matching the plain copy's own dateline on f.209 and the letter's known place of writing; passA's 's Gravenhaghe' is wrong
+L73	3	19/29	H		agree
+L73	4	[7bris?]	M	A:[ILLEGIBLE] / B:Sept:	image-checked 25 Sept 2026: abbreviated month form, not confidently resolved; the plain copy f.209 dateline reads 'de 19/29 [Septem]bris 1657' for the same letter, offered as context only, not read directly off this cipher leaf
+L73	5	1657.	H		agree

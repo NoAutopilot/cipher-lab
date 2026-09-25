@@ -157,6 +157,64 @@ merely inferred from the printed edition's footnote. Key/alignment recovery is e
 pass (out of this worker's brief); a two-pass blind transcription of the cipher leaves follows below for the
 next solver.
 
+## Cipher transcription, 25 September 2026 (LANE OX worker OX-VB)
+
+Two independent blind transcription passes were run against `images/cipher_crops/0210_right.jpg` and
+`0211_left.jpg` (Sonnet subagents, per `.claude/briefs/transcription.md`), each numbering the manuscript's 73
+lines L01-L73 continuously across both leaves, neither shown the other's output or the plaintext. Raw passes:
+`passA.tsv`, `passB.tsv`. Both agents self-reported (correctly) that they had no true pixel-zoom/crop tool
+beyond re-reading the same full-leaf JPEG, and flagged low confidence on most of the connecting plain-Dutch
+prose while reporting moderate-to-good confidence on the numeric cipher clusters.
+
+Reconciled with `tools/reconcile_passes.py` (wide format). First run scored only 23.6% agreement, which turned
+out to be a tokenisation artefact, not a real reading gap: pass A wrote unbroken runs like `51,32,61,10,57,51:`
+as fewer, larger tokens, while pass B split every comma onto its own space-separated token -- the aligner was
+comparing token counts, not signs. Normalised both passes (a space forced after every comma/colon;
+`reconciliation/passA_normalized.tsv`, `passB_normalized.tsv`) and re-ran: **78.0% overall agreement (672/862
+aligned columns)**, above the 60% gate in transcription.md. Per-line agreement is bimodal exactly as both
+passes predicted: most number-only lines score 0.85-1.00, most prose-heavy lines score 0.35-0.65.
+`reconciliation/disagreements.tsv` (191 rows), `agreement.tsv`, and the auto-generated `ciphertext_draft.tsv`
+(H for agreement, M + alternate for disagreement) are kept for audit.
+
+**Settled from the image against the disagreement list** (this worker, not a third blind pass): of 191
+disagreement rows, only 7 were disagreements between two actual digit values (the rest were spelling variants
+of the same word -- dagh/dag, maer/maar -- or one pass mis-tokenising a plain word as a number or vice versa).
+Checked all 7 against tight crops of the manuscript:
+- L04 pos.7 "bij" (a plain word, not a digit -- pass B misread it as "6?,"), L04 pos.10 "25," (pass A had
+  "23,"), L55 pos.1 "26," (pass A had "28,"), L58 pos.7 "10," (pass A had "19,") -- all confirmed and upgraded
+  to H.
+- L37 pos.10: the manuscript shows a cramped, unseparated-looking cluster where both passes guessed different
+  2-digit numbers ("20," vs "50,"); close inspection suggests it may actually be a 3-digit run "250" with no
+  visible internal comma. Left at M with the ambiguity noted rather than silently resolved (rule 2) -- **this
+  position needs a fresh look at a proper high-resolution crop, not a screen-rendered read, before any decode
+  attempt relies on it.**
+
+Also settled the closing formula and dateline (L68-L73) directly from a tight crop, since both passes had
+marked most of it [ILLEGIBLE] or guessed inconsistent structure: confirmed "Mijn Heer" (L69), "UEd:" (L70,
+matching pass B), and critically **"Coppenhagen" as the place in the dateline (L73), not pass A's "'s
+Gravenhaghe"** -- consistent with the letter's known place of writing and with the plain copy's own dateline on
+f.209. The signature (L72) remains illegible (a flourish, not readable text) and the month abbreviation before
+"1657" (L73 pos.4) is still unresolved at M; for context only (not read off this leaf), the plain copy's own
+dateline on f.209 gives "de 19/29 [Septem]bris 1657" for the same letter. The opening word of the closing
+formula (L68) is likewise still M -- neither pass's guess ("Ick blijf" / "Blijft") matches what the image
+appears to show, tentatively closer to a "Godt blijft/blijve" formula, not confirmed.
+
+**Final tally, `ciphertext.tsv` (862 tokens):** 666 H (77.3%), 196 M (22.7%), 0 C, 0 S, 0 I -- no key or known
+plaintext was used to produce this transcription (grade C would require that); the H tokens are grade H only
+in the rule-4 sense of "read directly from a source image with confidence", not from a key. The M tokens are
+concentrated in the connecting Dutch prose between cipher-number runs (mede, over, onder, daer, and similar
+short function words used inconsistently by 17th-century secretary hand); **every numeric cipher token that
+could be checked against the image has now been checked**, with only the single L37 pos.10 cluster left
+genuinely ambiguous. Reconciling the remaining ~190 M-graded prose tokens to a higher grade would need either a
+third independent pass or per-line crops sharper than the two-page spreads fetched this pass (see Access
+playbook note above: `service.archief.nl` serves full-resolution JPEG only, no IIIF zoom) -- left as the clear
+next step for whoever takes this to key recovery, not attempted further this pass (out of this worker's brief).
+
+**Key recovery was not attempted**, per this worker's brief -- the next step is a solver session using
+`ciphertext.tsv`, `plaintext_print.txt` (the known plaintext, pp.405-406 of the printed edition), and an
+alignment/EM approach per LESSONS.md's "look for the sibling" method, since this is exactly that pattern: a
+cipher copy with its plaintext already in hand, not a blind cryptanalysis problem.
+
 ## HU8: archive location, 24 September 2026 (LANE N2 worker csHU2)
 
 Confirmed NA 3.01.17 (see Copy status above, revised). Requests this pass: `www.nationaalarchief.nl` ~3
