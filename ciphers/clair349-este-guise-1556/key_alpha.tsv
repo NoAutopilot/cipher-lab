@@ -1,48 +1,63 @@
 letter	code	kind	grade	crop	note
-A	12	digit	H	atlas/p57_alpha_seg1.jpg	agrees across this worker's own read, both blind subagent passes, and the identical cell on p69
-A	14	digit	H	atlas/p57_alpha_seg1.jpg	as above
-A	16	digit	H	atlas/p57_alpha_seg1.jpg	struck through with a horizontal line in the manuscript -- void/cancelled code, not a live homophone; kept here for the record, excluded from decode use
-A	28	digit	H	atlas/p57_alpha_seg1.jpg	as above
-B	S01	sign	M	atlas/S01_letter_B_sign.png	non-digit sign, an ornate script capital that superficially resembles "N" or a looped flourish with a horizontal cross-stroke; one of two homophones for B (with digit 3); located directly under the "B" header (itself written as a decorative capital that resembles the digits "23")
-B	3	digit	H	atlas/p57_alpha_seg1.jpg	clear digit stacked below B's sign
-C	9	digit	H	atlas/p57_alpha_seg1.jpg	single homophone, clear in both this worker's read and both subagent passes
-D	5	digit	H	atlas/p57_alpha_seg1.jpg	single homophone, clear
-E	26	digit	H	atlas/p57_alpha_seg2.jpg	first of three stacked digits, clear
-E	16	digit	H	atlas/p57_alpha_seg2.jpg	second of three; NOT the same physical mark as A's struck "16" (different column) -- coincidentally the same value
-E	62	digit	H	atlas/p57_alpha_seg2.jpg	third of three; one blind subagent pass missed this one (cut by its crop's lower edge), the other and this worker's own read both have it
-F	S02	sign	M	atlas/p57_alpha_seg2.jpg	non-digit sign resembling a bold "H" or "ff" ligature; coincidental resemblance to the separate letter H below -- this is F's own invented mark, not a second H. Single homophone seen.
-G	S03	sign	M	atlas/p57_alpha_seg2.jpg	non-digit sign, a cursive tailed loop (resembles a script lowercase "e" with a long trailing stroke); single homophone seen; least confident identification in the alphabet row, sits right at this worker's seg2/seg3 crop boundary
-H	17	digit	M	atlas/p57_alpha_seg3.jpg	single digit below a decorative capital "H" header; graded M rather than H only because it sits close to the crowded G/I boundary and this worker could not fully rule out the digit belonging to G instead, though the header-to-digit vertical alignment favours H
-I	60	digit	H	atlas/p57_alpha_seg3.jpg	first of three stacked digits under the tall dagger/cross-topped glyph (combined I/J), clear
-I	64	digit	H	atlas/p57_alpha_seg3.jpg	second of three, clear
-I	24	digit	H	atlas/p57_alpha_seg3.jpg	third of three, clear
-L	?	unresolved	M	atlas/p57_alpha_seg3.jpg	crowded cluster from here to Z not confidently resolved this pass -- both blind subagent passes and this worker's own close reading disagree on column boundaries; a bold "ff"-like ligature and a digit "5" appear in this area but assignment to L specifically (vs M) is not safe to commit as a reading
-M	?	unresolved	M	atlas/p57_alpha_seg3.jpg	same crowded cluster; abbreviation-like marks transcribed loosely elsewhere as "cm"/"cma" plus digits 82/15/44 sit here, unresolved which belong to M vs N vs stray bleed-through from the facing page
-N	?	unresolved	M	atlas/p57_alpha_seg3.jpg	as M; not confidently isolated
-O	?	unresolved	M	atlas/p57_alpha_seg4.jpg	not confidently isolated
-P	?	unresolved	M	atlas/p57_alpha_seg4.jpg	header is a "z"-tailed glyph; homophone(s) below not confidently isolated from neighbouring Q
-Q	?	unresolved	M	atlas/p57_alpha_seg4.jpg	header is a rotunda/loop glyph; homophone(s) not confidently isolated
-R	?	unresolved	M	atlas/p57_alpha_seg5.jpg	header is a "#"-crossed mark in this worker's read; not confidently isolated from neighbouring S
-S	73	digit	M	atlas/p57_alpha_seg5.jpg	header is a long-s glyph; "73" is the best-supported digit in this cluster (both subagent passes independently landed on 73 somewhere in the S/X area) but exact column ownership vs X is not fully safe
-T	104	digit	M	atlas/p57_alpha_seg5.jpg	both subagent passes and this worker's read all see a "104" in the T/V area; column ownership between T and V not fully resolved
-V	?	unresolved	M	atlas/p57_alpha_seg5.jpg	see T; may share or duplicate 104, not resolved
-X	73	digit	M	atlas/p57_alpha_seg6.jpg	see S; both readings of "73" in this stretch may be the same physical digit misassigned by column, or two genuinely separate homophones -- not resolved
-Y	?	unresolved	M	atlas/p57_alpha_seg6.jpg	not confidently isolated
-Z	S04	sign	M	atlas/p57_alpha_seg6.jpg	a "#" hash-like mark seen in this area; may be the same mark tentatively assigned to R above -- column ownership across R/Z not resolved, flagging rather than double-counting with confidence
-&	S05	sign	M	atlas/p57_alpha_seg6.jpg	final row entry (tironian-et / ampersand-like plaintext sign), a small loop/squiggle mark below it, not confidently read
-DOUBLES:pc	22	digit	H	atlas/p57_doubles_nulles.jpg	"Doubles" row, first digraph; digit 22 agrees exactly across this worker's read, both blind subagent passes, and the identical row on p69 (cross-key confirmation -- this row appears to be a fixed chancery template shared across fr.20974's correspondent-specific keys, not unique to Guise-d'Este; not yet checked against a third key in the book)
-DOUBLES:cc	18	digit	H	atlas/p57_doubles_nulles.jpg	agrees on all four readings (this worker, both subagents, p69)
-DOUBLES:ff	66	digit	H	atlas/p57_doubles_nulles.jpg	as cc
-DOUBLES:ll	69	digit	H	atlas/p57_doubles_nulles.jpg	as cc
-DOUBLES:mm	76	digit	H	atlas/p57_doubles_nulles.jpg	as cc
-DOUBLES:nn	106	digit	H	atlas/p57_doubles_nulles.jpg	as cc
-DOUBLES:pp	52	digit	H	atlas/p57_doubles_nulles.jpg	as cc
-DOUBLES:qq	56	digit	M	atlas/p57_doubles_nulles.jpg	digit agrees on all four readings; the digraph letter itself is written as an ambiguous ligature (qq, rr and a rotunda "ee" were all suggested across the three transcribers), grade M on the letter identity though H-level confidence on the digit 56
-DOUBLES:ff2	54	digit	M	atlas/p57_doubles_nulles.jpg	a second, taller ff/ſſ-style ligature distinct from the first ff column; digit 54 agrees on all four readings, digraph shape uncertain
-DOUBLES:st	58	digit	M	atlas/p57_doubles_nulles.jpg	digit 58 agrees on all four readings; ligature read variously as ct/st/ss, grade M on the letter identity
-DOUBLES:ss	9	digit	M	atlas/p57_doubles_nulles.jpg	final column of the row; digit read as a single low value (9) by this worker and one subagent pass, not confidently distinguished from a possible "0" or "11"
-NULLES:1	S06	sign	M	atlas/p57_doubles_nulles.jpg	"Nulles" (null signs, decode to nothing) heading confirmed; first entry is a non-digit sign, not yet isolated to its own atlas crop -- see the doubles_nulles crop's right-hand column
-NULLES:2	S07	sign	M	atlas/p57_doubles_nulles.jpg	second null sign, as above
-NULLES:3	S08	sign	M	atlas/p57_doubles_nulles.jpg	third null sign, as above
-NULLES:4	S09	sign	M	atlas/p57_doubles_nulles.jpg	fourth null sign, as above
-NULLES:5	S10	sign	M	atlas/p57_doubles_nulles.jpg	fifth null sign; the right-hand column also carries a second line of marks below this row (possibly more nulls, possibly an unrelated docket note) not resolved this pass
+A	12	digit	H	atlas/key_cells/alpha_A.jpg	row 1
+A	14	digit	H	atlas/key_cells/alpha_A.jpg	row 2
+A	16	void	H	atlas/key_cells/alpha_A.jpg	row 3, struck through in ink on p57 and p69: cancelled, not a live homophone
+A	28	digit	H	atlas/key_cells/alpha_A.jpg	row 4
+B	S01	sign	H	atlas/key_cells/alpha_B.jpg	row 1, ornate N-like sign; same on p69
+B	3	digit	H	atlas/key_cells/alpha_B.jpg	row 2
+C	9	digit	H	atlas/key_cells/alpha_C.jpg	single homophone
+D	5	digit	M	atlas/key_cells/alpha_D.jpg	an s-form 5, same shape as L's row-2 '5'; one digit for two letters is a conflict in the key as drawn, not resolved; p69 cell blotted
+E	26	digit	H	atlas/key_cells/alpha_E.jpg	row 1
+E	16	digit	H	atlas/key_cells/alpha_E.jpg	row 2 (not A's struck 16)
+E	62	digit	H	atlas/key_cells/alpha_E.jpg	row 3
+F	S02	sign	H	atlas/key_cells/alpha_F.jpg	crossed x joined to t ('xt'); S02 re-cropped this session, the ZX-349 crop showed G's header instead
+G	S03	sign	H	atlas/key_cells/alpha_G.jpg	e-like loop with long tail
+H	17	digit	H	atlas/key_cells/alpha_H.jpg	single homophone, directly under the H header; p69 same
+I	60	digit	H	atlas/key_cells/alpha_I.jpg	row 1
+I	64	digit	H	atlas/key_cells/alpha_I.jpg	row 2
+I	24	digit	H	atlas/key_cells/alpha_I.jpg	row 3
+L	S27	sign	H	atlas/key_cells/alpha_L.jpg	row 1, tall doubled long-s with crossbar
+L	5	digit	H	atlas/key_cells/alpha_L.jpg	row 2, clear s-form 5 between the S27 descenders; see D
+M	S28	sign	H	atlas/key_cells/alpha_M.jpg	row 1, c-hook + m
+M	S29	sign	M	atlas/key_cells/alpha_M.jpg	row 2, three-minim 'uu' sign; p69 reads 'uu' too
+N	S30	sign	H	atlas/key_cells/alpha_N.jpg	row 1, c-hook + 'ma'/'na'
+N	15	digit	H	atlas/key_cells/alpha_N.jpg	row 2
+O	82	digit	H	atlas/key_cells/alpha_O.jpg	row 1
+O	44	digit	H	atlas/key_cells/alpha_O.jpg	row 2; p69 has a struck number (18?) between 82 and 44
+P	S31	sign	H	atlas/key_cells/alpha_P.jpg	circle over a cross
+Q	S32	sign	H	atlas/key_cells/alpha_Q.jpg	y-like sign with left hook
+R	S33	sign	H	atlas/key_cells/alpha_R.jpg	row 1, R-like loop with two legs; the header's flourish runs into it
+R	S34	sign	H	atlas/key_cells/alpha_R.jpg	row 2, capital A joined to small o ('Ao'); YX-TR349/ZX-349B read this cell as part of a 'to' cluster
+S	S35	sign	H	atlas/key_cells/alpha_S.jpg	row 1, long s + small s
+S	S36	sign	M	atlas/key_cells/alpha_S.jpg	row 2, x drawn across the long descender of S35; p69 shows the same x
+T	S37	sign	H	atlas/key_cells/alpha_T.jpg	row 1, crossed t + o ('to')
+T	S38	sign	M	atlas/key_cells/alpha_T.jpg	row 2, crossed t + c with a tick ('tc')
+V	102	digit	H	atlas/key_cells/alpha_V.jpg	row 1
+V	7	digit	H	atlas/key_cells/alpha_V.jpg	row 2; a second small 7 written above it (correction or confirmation); p69 has a struck number here and 7 below
+V	104	digit	H	atlas/key_cells/alpha_V.jpg	row 3
+X	S39	sign	H	atlas/key_cells/alpha_X.jpg	d-loop joined to long s
+Y	73	digit	H	atlas/key_cells/alpha_Y.jpg	single homophone
+Z	S40	sign	H	atlas/key_cells/alpha_Z.jpg	n with a closing loop (reversed-omega)
+&	S04	sign	H	atlas/key_cells/alpha_amp.jpg	row 1, hash of two by two strokes
+&	S05	sign	M	atlas/key_cells/alpha_amp.jpg	row 2, a-like squiggle with tail
+DOUBLES:sc?	22	digit	M	atlas/key_cells/dbl_sc.jpg	digit H; the pair is a long-s/p-like letter + c, read sc or pc; 22 is also the code of 'pour' (Monosillabes)
+DOUBLES:cc	18	digit	H	atlas/key_cells/dbl_cc.jpg	
+DOUBLES:ff	66	digit	H	atlas/key_cells/dbl_ff.jpg	tall doubled f
+DOUBLES:ll	69	digit	H	atlas/key_cells/dbl_ll.jpg	
+DOUBLES:mm	76	digit	H	atlas/key_cells/dbl_mm.jpg	
+DOUBLES:nn	106	digit	H	atlas/key_cells/dbl_nn.jpg	
+DOUBLES:pp	52	digit	H	atlas/key_cells/dbl_pp.jpg	
+DOUBLES:rr	56	digit	M	atlas/key_cells/dbl_rr.jpg	digit H; pair read rr (round r twice); YX-TR349 had qq
+DOUBLES:ss(long)	54	digit	M	atlas/key_cells/dbl_ss_long.jpg	digit H; tall doubled long s, the second 'ff'-like column of YX-TR349
+DOUBLES:tt	58	digit	H	atlas/key_cells/dbl_tt.jpg	YX-TR349 had st
+DOUBLES:ss(round)	9	digit	M	atlas/key_cells/dbl_ss_round.jpg	digit read 9 (H on p57 and p69); pair drawn as two round/sigma s; 9 is also C's code
+NULLES:1	S06	sign	H	atlas/key_cells/nulles_1.jpg	row 1; heading p57 'Pour ... suivante sont ca pa[r]de[ssus?] nulle'; p69 'Pour lire suivante: sont la precedente nulle.' (M on the wording) -- value null either way
+NULLES:2	S07	sign	H	atlas/key_cells/nulles_2.jpg	row 1; heading p57 'Pour ... suivante sont ca pa[r]de[ssus?] nulle'; p69 'Pour lire suivante: sont la precedente nulle.' (M on the wording) -- value null either way
+NULLES:3	S08	sign	H	atlas/key_cells/nulles_3.jpg	row 1; heading p57 'Pour ... suivante sont ca pa[r]de[ssus?] nulle'; p69 'Pour lire suivante: sont la precedente nulle.' (M on the wording) -- value null either way
+NULLES:4	S09	sign	H	atlas/key_cells/nulles_4.jpg	row 1; heading p57 'Pour ... suivante sont ca pa[r]de[ssus?] nulle'; p69 'Pour lire suivante: sont la precedente nulle.' (M on the wording) -- value null either way
+NULLES:5	S10	sign	H	atlas/key_cells/nulles_5.jpg	row 1; heading p57 'Pour ... suivante sont ca pa[r]de[ssus?] nulle'; p69 'Pour lire suivante: sont la precedente nulle.' (M on the wording) -- value null either way
+NULLES:6	S41	sign	H	atlas/key_cells/nulles_6.jpg	row 2, capital A + minims, 'Auore'-like word shape; heading p57 'Pour ... suivante sont ca pa[r]de[ssus?] nulle'; p69 'Pour lire suivante: sont la precedente nulle.' (M on the wording) -- value null either way
+NULLES:7	S42	sign	H	atlas/key_cells/nulles_7.jpg	row 2, doubled looped S; heading p57 'Pour ... suivante sont ca pa[r]de[ssus?] nulle'; p69 'Pour lire suivante: sont la precedente nulle.' (M on the wording) -- value null either way
+NULLES:8	S43	sign	H	atlas/key_cells/nulles_8.jpg	row 2, 'or'/'cr'-like; heading p57 'Pour ... suivante sont ca pa[r]de[ssus?] nulle'; p69 'Pour lire suivante: sont la precedente nulle.' (M on the wording) -- value null either way
+NULLES:9	S44	sign	H	atlas/key_cells/nulles_9.jpg	row 2, p-like loop crossed on its stem; heading p57 'Pour ... suivante sont ca pa[r]de[ssus?] nulle'; p69 'Pour lire suivante: sont la precedente nulle.' (M on the wording) -- value null either way
+NULLES:10	S45	sign	H	atlas/key_cells/nulles_10.jpg	row 2, small reversed-3 curl; heading p57 'Pour ... suivante sont ca pa[r]de[ssus?] nulle'; p69 'Pour lire suivante: sont la precedente nulle.' (M on the wording) -- value null either way

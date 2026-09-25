@@ -1,6 +1,6 @@
 code	crop	shape_description
 S01	atlas/S01_letter_B_sign.png	ornate script capital, a looped flourish with a horizontal cross-stroke (superficially resembles a stylised N)
-S02	atlas/S02_sign.jpg	bold ligature resembling 'H' or a doubled 'ff', two vertical strokes joined by a loop
+S02	atlas/S02_sign.jpg	crossed x joined to a t (re-crop; replaces the ZX-349 S02 crop, which showed a neighbouring header)
 S03	atlas/S03_sign.jpg	cursive tailed loop, resembles a script lowercase e with a long trailing downward stroke
 S04	atlas/S04_sign.jpg	hash/lattice mark, two short strokes crossing two others (# shape)
 S05	atlas/S05_sign.jpg	small loop/squiggle, a compact cursive scribble
@@ -25,4 +25,58 @@ S23	atlas/S23_sign.jpg	small x/z-like cursive mark, two crossing diagonal stroke
 S24	atlas/S24_sign.jpg	two-letter-looking ligature (resembles L joined to a rounded B or figure 8)
 S25	atlas/S25_sign.jpg	single cursive loop, an open oval stroke
 S26	atlas/S26_sign.jpg	abbreviation-like mark ('nre') with a trailing flourish sign
+S27	atlas/S27_sign.jpg	tall doubled long-s with a crossbar, both stems descending
+S28	atlas/S28_sign.jpg	c-hook joined to an m
+S29	atlas/S29_sign.jpg	three minims, like 'uu'
+S30	atlas/S30_sign.jpg	c-hook joined to 'ma'/'na'
+S31	atlas/S31_sign.jpg	small circle standing on a cross
+S32	atlas/S32_sign.jpg	y-like stroke with a hook at top left
+S33	atlas/S33_sign.jpg	R-like shape: loop on top, two legs
+S34	atlas/S34_sign.jpg	capital A joined to a small closed o
+S35	atlas/S35_sign.jpg	long s followed by a small s
+S36	atlas/S36_sign.jpg	x crossed over a long descender
+S37	atlas/S37_sign.jpg	crossed t joined to o
+S38	atlas/S38_sign.jpg	crossed t joined to c, with a tick
+S39	atlas/S39_sign.jpg	d-like loop joined to a long s
+S40	atlas/S40_sign.jpg	n-shape whose right leg closes into a loop (reversed omega)
+S41	atlas/S41_sign.jpg	capital A followed by minims, a word-like 'Auore' shape
+S42	atlas/S42_sign.jpg	two looped S side by side
+S43	atlas/S43_sign.jpg	'or'/'cr'-like pair
+S44	atlas/S44_sign.jpg	p-like loop with its stem crossed
+S45	atlas/S45_sign.jpg	small reversed-3 curl
+S46	atlas/S46_sign.jpg	crossed t with a j-like tail
+S47	atlas/S47_sign.jpg	h with a long looping tail, followed by o
+S48	atlas/S48_sign.jpg	c-hook joined to l
+S49	atlas/S49_sign.jpg	m with a descending tail
+S50	atlas/S50_sign.jpg	z with a long looped tail
+S51	atlas/S51_sign.jpg	long s closed into a loop (beta-like)
+S52	atlas/S52_sign.jpg	lattice, three strokes across three
+S53	atlas/S53_sign.jpg	3/8-like curl with a tail
+S54	atlas/S54_sign.jpg	f with a closed loop
+S55	atlas/S55_sign.jpg	long s followed by i
+S56	atlas/S56_sign.jpg	looped ascender with a crossbar and a curling tail
+S57	atlas/S57_sign.jpg	small c-curl with a hook
+S58	atlas/S58_sign.jpg	crossed long s followed by a 2-shape
+S59	atlas/S59_sign.jpg	small looped l with a crossbar
+S60	atlas/S60_sign.jpg	y/yogh-like curl
+S61	atlas/S61_sign.jpg	8-like with an open top loop
+S62	atlas/S62_sign.jpg	delta with a slash
+S63	atlas/S63_sign.jpg	q with a crossed descender
+S64	atlas/S64_sign.jpg	3-shape
+S65	atlas/S65_sign.jpg	tall leaf-shaped loop
+S66	atlas/S66_sign.jpg	plain letter h
+S67	atlas/S67_sign.jpg	3-shape followed by a (sa-like)
+S68	atlas/S68_sign.jpg	written cluster 'Soule'
+S69	atlas/S69_sign.jpg	capital A with a hooked v after it
+S70	atlas/S70_sign.jpg	script capital M
+S71	atlas/S71_sign.jpg	8-like loop open at top
+S72	atlas/S72_sign.jpg	script capital T
+S73	atlas/S73_sign.jpg	written cluster 'Sou' with a long descender
+S74	atlas/S74_sign.jpg	4-shape with an extra hooked stroke
+S75	atlas/S75_sign.jpg	bold capital H
+S76	atlas/S76_sign.jpg	plain capital A
+S77	atlas/S77_sign.jpg	small c
+S78	atlas/S78_sign.jpg	two reversed c
+S79	atlas/S79_sign.jpg	y
+S80	atlas/S80_sign.jpg	written cluster 'de sire'
 X?	(none)	reserved code for a shape a pass sees on the ciphertext lines that does not match any crop on this sheet -- describe it in the pass's own note column rather than guessing an S-code
