@@ -1145,3 +1145,24 @@ Files: `passE.tsv`, `passF.tsv` (new, this session's blind passes); `disagreemen
 `agreement.tsv` (regenerated from passE/passF, replacing the passC/passD-based versions); `key_vs_gloss.py` (new),
 `key_vs_gloss.tsv` (new); `tools/reconcile_passes.py` (new optional gloss-column support, tests still pass).
 Status stays `partial`. cost: see the lane ledger.
+
+## ZX-TR349D (25 Sept 2026)
+
+Intake gate `partial`, exit 0 (orchestrator 15:44 UTC). Brief: `.claude/briefs/runs/2026-09-25-lane-zx-tr349d.md`,
+common `.claude/briefs/runs/2026-09-25-lane-zx-COMMON.md`. Opus worker, Opus subagents (the brief overrides the
+COMMON's Sonnet line for this job), wall-clock box 100 minutes from 18:22:58 UTC. No host requests.
+
+**Step 1: crops under 2500 px.** `tools/iiif_lines.py --image clair349_f9_right_full.jpg --top-margin 45 --prefix
+f9right --debug` (default `--max-width 2400`, default overlap): same 37-band detection as lines_g (pitch 119, distance
+83, prominence 207.4; bands 4-36 = line01..line33). The two native segments of each line are kept apart, not stitched:
+`images/lines_h/lineNN_s1.jpg` (page x 0-2400) and `_s2.jpg` (page x 1495-3895), 2400 px wide each. Overlap page x
+1495-2400; counting boundary page x 1950, drawn on every crop as two small red ticks (5x12 px) at the top and bottom
+edges only (s1 x=1950, s2 x=455), so no mark in the text band is covered; the passes were told to stop s1 and start s2
+at the ticks, a straddling token going to the side holding its centre. Recorded in `images/manifest.json` (overlap
+x-range, boundary, per-crop boxes). `images/lines_g` deleted (the stitched 3895 px form of the same segments,
+reproducible from its manifest recipe). `images/` after: 31,332,255 bytes = 29.9 MiB (31.3 MB decimal; it was 31.08 MB
+before this job, so the swap added 0.25 MB; under the cap read as MiB, marginal read as decimal -- logged, nothing else
+deleted). Eye-check: line01 (s1 carries the stamp and "Monsieur", s2 the "2429"; codes and the gloss above them fully
+visible, e.g. glosses above 64 12 73 Ao 26 9 16 104), line17 (short band, 147 px; gloss letters above each code visible,
+a sliver of line 16 at the top), line33 (last line whole, blank margin below). No clipping of a line's own codes or
+gloss seen.
