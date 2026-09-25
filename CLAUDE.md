@@ -33,6 +33,13 @@ session and every subagent, cloud or local.
    the brief was written. Salviati's own cipher is code+mark (cm), which at the same N reads 22-67% blind (LANE
    R4 P's curve): match the *design*, not only the length and symbol count, when the question is whether a
    technique adds anything.
+   A matched design is not enough if the two texts being diffed use different transcription conventions.
+   Lesson of 25 Sept 2026 (PX-BRODEC): a leave-one-out control diffed a fresh body decode against the
+   appendix's own period gloss and returned 50-68% against an 80% gate, apparently a failure -- but the gloss
+   abbreviates ("S.d±" for "Snr D.") while the decode spells the word out, so most of the gap was notation, not
+   error. Before diffing two renderings of the same underlying text for a gate, normalize both to one
+   convention (expand abbreviations, one case, one punctuation set) or the gate measures whichever side
+   transcribes more literally, not correctness.
 4. **Grade every claimed reading per token:** H read from a key source, C from known plaintext, S cryptanalytic
    with a control, M uncertain, I inferred or repaired. Give the counts. No H or C means "cryptanalytic result".
 5. **Status vocabulary** in the first lines of every NOTES.md: `open`, `partial`, `solved`, `closed-negative`,
@@ -546,6 +553,10 @@ RETRO-<date>.md (approved by the owner 24 Sept 2026, ASKS row 23). The orchestra
 the ledger, and puts anything that changes the goal, the spend or the person's asks to the person with a
 recommendation. Success is measured as cost per delivered result by role, share of workers that stop on
 brief, over-claims caught before the person sees them, and whether the top of the queue produces results.
+A fix a retrospective finds in one lane's dated COMMON.md and not in the others' is ported into the shared
+`.claude/briefs/README.md` common tail in the same pass, not left lane-local (RETRO-2026-09-25h: the wall-clock
+cost box and the AskUserQuestion ban each landed in only the one lane that discovered them, twice the same day,
+before this rule existed).
 
 ## Git
 
