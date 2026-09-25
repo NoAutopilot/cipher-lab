@@ -571,3 +571,7 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T21:07Z	session_01SPixjGTp23T4YyxPvHwkWs	GOLD-CONS2 consolidator cycle 2 (Fable, cap 15, 60 min)	koehler-1944 + debosnys-1883 top blocks, cycle-3 briefs	brief 2026-09-25-lane-gold-consolidator-c2.md
 2026-09-25T21:23Z	R7-MREV, R7-SSIB	MREV 2.56 D, SSIB 2.72 N; archived	LEDGER rows 25 Sep LANE R7	
 2026-09-25T21:23Z	session_01DmqmRev6DYkbVnSgrr2r5Q	R7-CM3 (Fable, cap 10, 75 min)	fr2933-salviati-1525 measured-error control + word-aware model	brief 2026-09-25-lane-r7-cm3-salviati-measured.md
+2026-09-25T21:28Z	session_01VLtPMsqR2oWmZeKh2jxVga	LANE B3 orchestrator done $5.65 D, archived by parent 7d	handoff STATUS.md LANE B3 handoff; 14 workers about 33.9
+2026-09-25T21:28Z	session_01ANaWjhm3ix6shRysby4hXb	bRAY done $2.72 D, archived	rayburn-2004 test 1: IC below both controls
+2026-09-25T21:28Z	session_01M9XHYBXkupfXbhK1kVhZLW	retrospective l done $0.08 X, archived	stopped on injection suspicion, no repo source; respawned
+2026-09-25T21:28Z	session_015aWAEGAyRXSR3wi3znjRd8	LEARN-2 done $0.13 X, archived	stopped, repo not present; respawned as LEARN-3
