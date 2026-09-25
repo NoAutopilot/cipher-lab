@@ -1,4 +1,4 @@
-open
+partial
 Colenbrander's *Gedenkstukken der Algemeene Geschiedenis van Nederland 1795-1840*, Deel VI (huygens retroboeken
 sources 9/10/11), full-text search for "Janssens" and independent read of the Inleiding footnote, by this worker
 (25 Sept 2026): the edition names this exact archival series and a decipherment item in it ("In n°. 11 de berichten
@@ -154,3 +154,140 @@ is a built key or a rule-7 reading.
 - `github.com`: 2 fresh shallow clones (dbourdeau/cyphersolver, aaymeloglu/unsolved-ciphers), grep only.
 - WebSearch: 2 queries.
 - No DECODE login, no credentials.
+
+## Reading (VX-RD02, 25 Sept 2026)
+
+Corrects the bundle structure CS05's eye-check sample described (heading misreads at thumbnail/1200px
+resolution; re-fetched leaves 188/190/191/192/198/199/200 at IIIF `full/2561` for this pass,
+`images/NNN_hi.jpg`, plus a full inventory of the previously-unsampled leaves 180-184/201-202/204-208/210
+(all plain prose or tabular, no cipher -- `images/manifest.json`). The 186-200 cipher cluster is not three
+raw-cipher leaves beside two decipherments; it is **three numbered dispatches, each surviving as a clean
+ciphertext-only fair copy plus (for two of the three) a full contemporary decipherment**:
+
+| Dispatch | Clean copy (ciphertext only) | Decipherment | Status |
+|---|---|---|---|
+| No.1 ("Numero Un. Triplicata") | leaf 188 | **none found in the sampled 180-210 range** | the target below |
+| No.2 ("Numero Deux. Duplicata") | leaf 190 (lower block) | leaves 191-192 (interlinear gloss; the word "certifié" splits cer-/ti.fi.é. across the 191/192 leaf boundary, confirming they are one continuous gloss) | key source |
+| No.3 ("Numero Trois. Duplicata") | leaf 198 (heading eye-read "Numero 2" by CS05 at low resolution; at full size it reads "Trois", and its opening 12 codes match leaves 199-200's opening codes exactly) | leaves 199-200 (5-column table, read row-major) | key source |
+
+No "Numero Un" decipherment leaf was found: leaves 180-187 (all individually eye-checked at full size this
+pass) and 189 are plain prose or blank; leaves 201-210 (also individually checked) are plain prose or
+tabular forms, no cipher digit anywhere. This is a negative search result for the 180-210 range specifically,
+not the whole 233-leaf bundle (leaves 1-179 and 211-233 are only the original 23% thumbnail sample from
+VX-CS05's pass); a full page-through of the remaining ~185 leaves could still turn one up.
+
+### Key-building
+
+Two independent blind Sonnet subagent transcription passes (`keysource_passA.tsv`, `keysource_passB.tsv`)
+over the four key-source images (190, 191, 199, 200), each reading every code:gloss pair in the interlinear
+(190-191) or columnar row-major (199-200) layout, noting corrections/crossed-out cells. Reconciled by
+`scripts/build_key.py`, which aligns the two passes' **code sequences** with `difflib` (not row index --
+pass A silently skipped one whole code-line on leaf 191, "12.966.558.571.53.411.771.810.1096" = "encore le
+certifié t demandé par", which cascaded a false ~20-point misalignment under naive row-index comparison;
+sequence alignment recovers past a skip and gives the real figure): **449 aligned code positions, 429 exact
+gloss agreement, 95.5%** (comfortably clear of the two-pass 60% gate in `.claude/briefs/transcription.md`).
+20 genuine disagreements and 23 codes only one pass transcribed (mostly digit-reading differences, e.g.
+138 vs 158, or the one skipped code-line) are in `pass_disagreements.tsv` / `pass_unmatched.tsv`.
+
+`key.tsv`: **167 codes**. 154 grade C (clean: both passes agree, not a corrected/crossed-out cell). 13 grade
+M, logged in `conflicts.tsv` -- genuinely ambiguous, i.e. the SAME code recurs with two different glosses in
+clean, unanimous, uncorrected occurrences on different leaves (not a transcription slip): most are minor
+period-spelling variants a single nomenclator entry would plausibly cover under normalisation (à/a, où/ou,
+port/porte, lieues/lieu, Capitaine/Capitaines, peu/peut, de/Dé, le/lé, frigate/frigates), but three are
+semantically live and look like genuine **homophones** (the nomenclator assigning one code to more than one
+very common function word, a known flattening technique -- LESSONS.md section on Kauderbach/period design):
+code 689 = "de" (leaves 190/191, clean, n=2) or "Le" (leaf 199, clean, n=2); codes 190 and 1195 each = "est"
+(leaves 190/191) or "en" (leaves 199/200). `key.tsv`'s `value` column takes the majority-count reading for
+these; the alternative is in `note`.
+
+System, from the evidence: a **numeric nomenclator, one code (2-4 digits, observed range 3-1197) mostly for
+one French word**, with rarer/proper words spelled out letter-by-syllable across several consecutive codes
+(confirmed readable in both dispatches: leaf 191 "cer-ti-fi-é/cer[192]-ti.fi.é"="certifié",
+"ad-mi-ni-st-ra-t-eur"="administrateur", "ar-ri-vé"="arrivé"; leaf 199-200 "Su-ra-ba-y-a"="Surabaya",
+"D'étroit ... Li"="Détroit de Bali", "de-li-vr-er"="délivrer"). No separator digit or fixed group width. A
+"." ends each numbered dispatch/entry region; "Fin." (or the code alone under a closing rule) marks the end
+of leaf 200's table. The decipherer's own drafting is visible on the page (crossed-out wrong guesses,
+caret-inserted corrections, one abandoned 12-code false start on leaf 200 that the clean copy, leaf 198,
+simply omits) -- this is a period working decipherment, not a fair key table, hence grade C not H throughout
+(rule 4: "H only from a period key sheet").
+
+### Control (the key re-reads each deciphered page to its own decipherment)
+
+Both raw-cipher clean copies are, code for code, the *same* text as their own gloss leaves, so decoding them
+with `key.tsv` and diffing against the gloss leaves' own agreed reading is a direct sanity check on both the
+transcription and the reconciliation (not an independent cryptanalytic control -- `key.tsv` is partly built
+from the same pages):
+
+- **Leaf 190 (raw) vs leaf 191's own gloss**: 107 compared positions (where leaf 191's gloss run ends,
+  mid-word, at the bottom of the page), **98/107 = 91.6%**. All 9 residual mismatches are already-logged M
+  codes (526 crossed-out/uncertain, 689 and 25/1096/738/883/140/511 the spelling-variant conflicts above)
+  plus 2 genuine digit disagreements between the two period copies (leaf 191 "158" vs leaf 190 "138"; leaf
+  191 "494" vs leaf 190 "454" at the cut-off point) -- flagged, not resolved, since both readings are
+  plausible period handwriting and neither copy is silently preferred.
+- **Leaf 198 (raw) vs leaves 199-200's own gloss**: after excluding the 12-code abandoned/crossed-out false
+  start that the clean copy naturally never wrote (leaf 200 order 57-68, all `note=crossed-out` in
+  `keysource_passB.tsv`), **135/161 = 83.9%** over 163 compared positions. Residual mismatches are again the
+  already-logged M/conflict codes, one further digit disagreement (656 vs 636), and the final "Fin."/closing
+  code (this worker's single, unchecked reading of leaf 198's very last digit vs the gloss leaves' "420").
+
+Both controls clear comfortably above chance and land exactly on the codes `key.tsv` already flags uncertain
+-- no surprise failures, i.e. no evidence the reconciliation silently corrupted a clean reading.
+
+### Target: leaf 188, dispatch "Numero Un" (Triplicata)
+
+`ciphertext.tsv` (this worker, single careful read with crop zooms, cross-checked against a second
+independent look at the same crops -- **not** a two-pass blind reconciliation like the key-source leaves,
+since leaf 188 is pure digits with no gloss to cross-validate against and budget did not extend to a second
+full blind pass on it; flagged here rather than silently presented as equally solid).
+
+Decoded with `tools/decode_key.py` + `decode.json` against `key.tsv`:
+
+```
+tokens 163: H 0, C 46, S 0, M 19, I 0, U 98
+```
+
+Coverage: only **65/163 tokens (39.9%)**, **52/130 unique codes**, are codes also seen in the No.2/No.3
+key-source leaves -- expected, since dispatch No.1 is a different message with mostly different vocabulary
+and proper nouns (dates, place names, ship names) that the other two dispatches never use. `reading.txt` /
+`reading_tokens.tsv` carry the full token-by-token grades; unkeyed codes print as `[nnn]`.
+
+`tools/judge_plaintext.py specs/na-janssens-java-1811.json --file reading.txt`:
+```
+FAIL language: score=-1.469, null_p99=-1.855, real_p05=-0.898, real_median=-0.786, mode=both, N=488
+ok   words: cover=0.791, min=0.3, real_text_median_cover=0.947
+FAIL - na-janssens-java-1811
+```
+Reported as a **FAIL** per rule 7 (a FAIL may still be reported, as a FAIL): the language-model check fails
+(unsurprising -- 60% of tokens are `[?]` gaps that break up the letter n-gram stream the check scores), the
+word-coverage check technically passes but is not a meaningful signal at this gap density. This is a
+**partial cryptanalytic-adjacent decode**, not a solved reading: it stands or falls with `key.tsv`, which is
+grade C throughout (period decipherment of other text in the bundle), and the M-graded/ambiguous codes.
+
+What the covered fragments say (English gloss of the clearer runs, French tokens as decoded; full context is
+missing at every `[?]` gap so this is not connected prose): line 1 "...l'état..." (the state/condition...);
+line 2 "de [?] [?] est . ... sont [e] puis" (...is. ... are [?] then); line 6 "...reçu ; il..." (...received;
+he/it...); line 7 "...qu'il [?] [?] le débarquer [?] [?] [?] de seules" (...that he/it [?] to disembark it
+[?] [?] of [alone/only]); line 12 "...tous [?] [?] l'ennemie" (...all [?] [?] the enemy [fem., likely
+"ennemie" modifying a feminine noun like "frigate" as in dispatches No.2/No.3]); **line 14 "[?] [?] ar ri vé
+a [929] peu vent [514] er"** = "...arrivé a [?] peu vent ...er" (...arrived at [?], little wind, ...) -- the
+clearest run in the whole leaf, syllable-spelled "arrivé" exactly as in leaf 199's "ar-ri-vé", and it echoes
+the No.2/No.3 dispatches' recurring theme (arrival, wind, a ship). Everything else is too gap-broken to
+paraphrase honestly.
+
+### Fresh-instance re-derivation
+
+Required by `.claude/briefs/runs/2026-09-25-lane-vx-rd02.md` before this can move past a working draft: a
+second subagent, given only `ciphertext.tsv`, the four key-source images and no other file, built its own
+key from scratch and decoded leaf 188 independently. Result pending at the time this section was written --
+see the addendum below (or a follow-up NOTES.md edit) for the agreement figures; if agreement is below the
+threshold the brief implies, this section's grades stand only provisionally.
+
+### Not found / next steps (one-line suggestions, out of this job's scope)
+
+- No "Numero Un" decipherment located in leaves 180-210; a full page-through of the bundle's other ~185
+  leaves (only 23% thumbnail-sampled by CS05) could locate one and lift coverage well above 40%.
+- Leaf 192 (continuation of the No.2 gloss) was read by eye for structural confirmation only (the
+  cer-/ti.fi.é. word-split check) but not two-pass transcribed into `key.tsv` -- doing so would likely add a
+  handful more codes to the key, since it continues the same dispatch's vocabulary as leaf 191.
+- The 13 M-graded/homophonic codes in `conflicts.tsv` (especially 689, 190, 1195) are worth a closer look at
+  the original leaves if a future pass needs higher-confidence decoding of a token keyed to one of them.
