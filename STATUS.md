@@ -162,6 +162,18 @@ Salviati and Seure with costed briefs, N4 copy-free scouts (Bourdeau's copy-free
 stops, a successor parent reads this section, the lane table,
 the last check-in prompt (list_triggers), takes over the trigger with update_trigger persistent_session_id, and continues.
 
+## LANE TX handoff (session_01UDxtM9Xv2dnPfoo5z9T6wA), 25 September 2026, 09:35 UTC
+
+Printed ciphertext and orphan recoveries. 13 Sonnet workers, about $61.87 of worker usage; orchestrator about $5.5. No live workers, no pending check-in. Rate allowed throughout.
+
+- **Triage** (.claude/briefs/runs/2026-09-25-lane-tx-triage.md): the printed-ciphertext detector sections hold 26 rows, not ~38: P1 and W1 closed, P2-P24 are thurloe-printed, rounds 2 and 4 had no survivors, HT1 open. The vein is exhausted outside Thurloe. Rows with a confirmed key route: 0 in the detector sections; 1 in the lane's named orphan (WVO 5551).
+- **WVO 5551** (ciphers/jan-van-nassau-1572-75; Jan van Nassau to Orange, Keulen, 17 Apr 1574): check-solved open (Groen IV/V indexes and Supplement read in full, Gachard III page by page). Partial reading 26/32 codes under Lodewijk's 1574 table, C23 I2 M1 U6, re-derived 0 diff. AUDIT.md V-TX and V-TX2: **N3**, key **ours**, not N4 (Glawischnig 1973 cites the letter; Jacobi and Blok/Muller not reached). SO-NASSAU-5551 queued. Lead: a second copy at Staatsarchiv Marburg (old citation 4f Nld. 165), not located in Arcinsys; REQUEST.md and **ASKS row 48** for the owner to ask the archive. Six codes (126,127,137,140,145,146) outside the key.
+- **thurloe-printed residue**: Lockhart and three vol.3 letters found-solved in print; P10 p.620 L10 10/14 groups read by Blake's key but **N0, key published** (Powell 1937, NRS 76); P3 postscript cross-key check 0/21 raised.
+- **HT1** (Recueil des instructions, Suede vol.2): closed-negative, prose about cipher custody only (ciphers/_leads/recueil-suede-chiffre.md).
+- **thurloe-barriere-1654** (Barriere to Conde, 20 Nov 1654, Birch II 721-722): open; word-per-code nomenclature, 368 tokens, sparse printed gloss; spec specs/thurloe-barriere-1654.json; first test **negative with matched control** (gloss key coverage 29.3% vs control 33.4%, 10 seeds). Only pass A transcribed (pass B abandoned). Next named test: permutation z-test on the gloss positions; 4 short unglossed fragments 1655-57 are the only siblings.
+- **oldenbarnevelt-brederode-1605** (Bescheiden Oldenbarnevelt II no.92, from LANE VX): open, no key route; ~121 codes, ~100 distinct values 30-741 (blind infeasible, inferred). Leads: NA 1.01.02 inv. 6016 (digitised, 624 pp unindexed, 1605-06 folder read 2 leaves); de Leeuw 2022 open-access paper (LOCAL-QUEUE L12).
+- **Lessons** (LEDGER): brief exclusions per item, not per folder (my sweep brief excluded all of Thurloe); an image found a printed gloss the OCR-only pass missed; two workers ran ~2x their alarms (BARRT $12.05, KEYS $11.53) -- an interrupt did not stop BARRT, archive did. With 13 rows and ~$62 this lane alone meets the retrospective trigger.
+
 ## LANE OX handoff (session_01BE3g8tWbS4T24KXMpShHt4), 25 September 2026, 04:35 UTC
 
 Pool of 12 orphaned open, copy-free targets; triage `.claude/briefs/runs/2026-09-25-lane-ox-triage.md`; job briefs
