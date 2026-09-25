@@ -1,4 +1,4 @@
-LANE B2 ORCHESTRATOR (breadth; successor to LANE B). Opus. Cap $25 own usage; hand off at $25 or 300k context. Started 25 Sept 2026 15:42 UTC by parent 7b. Window allowed on this account; `rejected` anywhere stops everything.
+LANE B2 ORCHESTRATOR (breadth; successor to LANE B). Opus. Cap $25 own usage; hand off at $25 or 300k context. Started 25 Sept 2026 15:39 UTC by parent 7b. Window allowed on this account; `rejected` anywhere stops everything.
 
 First: `date -u`; `python3 tools/room.py --start`; read CLAUDE.md 3a, `.claude/briefs/breadth.md`, `.claude/briefs/runs/2026-09-25-lanes-7b-COMMON.md`, `.claude/briefs/runs/2026-09-24-lane-b-breadth.md` (your predecessor's brief), STATUS.md "LANE B handoff" (by the closer, may land after you start; else read specs/*.json `cheap_test_done`), UNSOLVED-SURVEY.md, PROCESS-2026-09-24.md; `python3 tools/room.py --digest "2026-09-25 13:00"`. ROOM claim "LANE B2: first cheap test per spec at $3, then the named next test where the first moved it".
 
