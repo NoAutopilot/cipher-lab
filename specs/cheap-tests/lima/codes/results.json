@@ -1,0 +1,470 @@
+{
+ "abc_code": {
+  "target_hits": 2,
+  "target_total": 17,
+  "target_detail": [
+   [
+    "nvlvaft/nvkvaft",
+    false
+   ],
+   [
+    "aakat",
+    false
+   ],
+   [
+    "txpxsck",
+    false
+   ],
+   [
+    "upbk",
+    false
+   ],
+   [
+    "txphn",
+    false
+   ],
+   [
+    "ohay",
+    false
+   ],
+   [
+    "ybtx",
+    false
+   ],
+   [
+    "cpt",
+    false
+   ],
+   [
+    "mxhg",
+    false
+   ],
+   [
+    "wae",
+    false
+   ],
+   [
+    "sxfp",
+    false
+   ],
+   [
+    "zavfz",
+    false
+   ],
+   [
+    "ack",
+    true
+   ],
+   [
+    "txlk",
+    false
+   ],
+   [
+    "wayx",
+    false
+   ],
+   [
+    "za",
+    true
+   ],
+   [
+    "thx",
+    false
+   ]
+  ],
+  "positive_control_hits": 17,
+  "positive_control_total": 17,
+  "positive_control_sample": [
+   "coponios",
+   "tanks",
+   "melodiou",
+   "carnalet",
+   "illyrium",
+   "amber",
+   "reclampe",
+   "ur",
+   "wherenes",
+   "arbeit",
+   "biotaxic",
+   "cavadent",
+   "iimoioic",
+   "bedplate",
+   "adjimxer",
+   "assiline",
+   "egerane"
+  ],
+  "random_string_hits": 2,
+  "random_string_total": 17,
+  "random_string_sample": [
+   "gjsvxdituwjxhyf",
+   "fuvlx",
+   "grgmnat",
+   "kcus",
+   "wlpvq",
+   "weqy",
+   "yetx",
+   "oir",
+   "mctk",
+   "bct",
+   "qmlx",
+   "kenva",
+   "tvm",
+   "bthw",
+   "hosz",
+   "jg",
+   "qdq"
+  ],
+  "vocab_size": 101863
+ },
+ "western_union": {
+  "target_hits": 2,
+  "target_total": 17,
+  "target_detail": [
+   [
+    "nvlvaft/nvkvaft",
+    false
+   ],
+   [
+    "aakat",
+    false
+   ],
+   [
+    "txpxsck",
+    false
+   ],
+   [
+    "upbk",
+    false
+   ],
+   [
+    "txphn",
+    false
+   ],
+   [
+    "ohay",
+    false
+   ],
+   [
+    "ybtx",
+    false
+   ],
+   [
+    "cpt",
+    false
+   ],
+   [
+    "mxhg",
+    false
+   ],
+   [
+    "wae",
+    false
+   ],
+   [
+    "sxfp",
+    false
+   ],
+   [
+    "zavfz",
+    false
+   ],
+   [
+    "ack",
+    true
+   ],
+   [
+    "txlk",
+    false
+   ],
+   [
+    "wayx",
+    false
+   ],
+   [
+    "za",
+    true
+   ],
+   [
+    "thx",
+    false
+   ]
+  ],
+  "positive_control_hits": 17,
+  "positive_control_total": 17,
+  "positive_control_sample": [
+   "ufanamos",
+   "marsonia",
+   "traapues",
+   "picchiat",
+   "priantae",
+   "embanaat",
+   "basement",
+   "sufocado",
+   "disadorn",
+   "thunnus",
+   "bioccoli",
+   "persnlte",
+   "exalbatu",
+   "ouleggia",
+   "vollbeer",
+   "grisambe",
+   "jaroparo"
+  ],
+  "random_string_hits": 1,
+  "random_string_total": 17,
+  "random_string_sample": [
+   "bnwaxaabbyzpjdq",
+   "bmqdw",
+   "gpdexkb",
+   "bmno",
+   "wfzbt",
+   "kpvo",
+   "keio",
+   "qfa",
+   "glkh",
+   "mdb",
+   "qyde",
+   "sjymr",
+   "wrl",
+   "tlzd",
+   "ubxy",
+   "ak",
+   "rin"
+  ],
+  "vocab_size": 167279
+ },
+ "lieber": {
+  "target_hits": 1,
+  "target_total": 17,
+  "target_detail": [
+   [
+    "nvlvaft/nvkvaft",
+    false
+   ],
+   [
+    "aakat",
+    false
+   ],
+   [
+    "txpxsck",
+    false
+   ],
+   [
+    "upbk",
+    false
+   ],
+   [
+    "txphn",
+    false
+   ],
+   [
+    "ohay",
+    false
+   ],
+   [
+    "ybtx",
+    false
+   ],
+   [
+    "cpt",
+    false
+   ],
+   [
+    "mxhg",
+    false
+   ],
+   [
+    "wae",
+    false
+   ],
+   [
+    "sxfp",
+    false
+   ],
+   [
+    "zavfz",
+    false
+   ],
+   [
+    "ack",
+    false
+   ],
+   [
+    "txlk",
+    false
+   ],
+   [
+    "wayx",
+    false
+   ],
+   [
+    "za",
+    true
+   ],
+   [
+    "thx",
+    false
+   ]
+  ],
+  "positive_control_hits": 17,
+  "positive_control_total": 17,
+  "positive_control_sample": [
+   "bovensch",
+   "irregula",
+   "capturan",
+   "cossorum",
+   "boogrib",
+   "bahuno",
+   "abnormib",
+   "diocesai",
+   "cooperim",
+   "bushels",
+   "abbrevia",
+   "brooklin",
+   "ahonque",
+   "ccgqcccg",
+   "batibarb",
+   "chalceor",
+   "athelsta"
+  ],
+  "random_string_hits": 1,
+  "random_string_total": 17,
+  "random_string_sample": [
+   "nxljbrjlidhcjxp",
+   "pssof",
+   "cvmsfzm",
+   "geja",
+   "gdwbj",
+   "ledz",
+   "eyst",
+   "knb",
+   "ronp",
+   "nag",
+   "lvxr",
+   "ahkcw",
+   "sth",
+   "lhot",
+   "koei",
+   "xp",
+   "bjm"
+  ],
+  "vocab_size": 73404
+ },
+ "bentley": {
+  "target_hits": 3,
+  "target_total": 17,
+  "target_detail": [
+   [
+    "nvlvaft/nvkvaft",
+    false
+   ],
+   [
+    "aakat",
+    false
+   ],
+   [
+    "txpxsck",
+    false
+   ],
+   [
+    "upbk",
+    false
+   ],
+   [
+    "txphn",
+    false
+   ],
+   [
+    "ohay",
+    false
+   ],
+   [
+    "ybtx",
+    false
+   ],
+   [
+    "cpt",
+    false
+   ],
+   [
+    "mxhg",
+    false
+   ],
+   [
+    "wae",
+    true
+   ],
+   [
+    "sxfp",
+    false
+   ],
+   [
+    "zavfz",
+    false
+   ],
+   [
+    "ack",
+    true
+   ],
+   [
+    "txlk",
+    false
+   ],
+   [
+    "wayx",
+    false
+   ],
+   [
+    "za",
+    true
+   ],
+   [
+    "thx",
+    false
+   ]
+  ],
+  "positive_control_hits": 17,
+  "positive_control_total": 17,
+  "positive_control_sample": [
+   "copgo",
+   "ostod",
+   "ezzsa",
+   "rukza",
+   "nznoy",
+   "soyda",
+   "bufde",
+   "ozn",
+   "gom",
+   "adang",
+   "adju",
+   "lurhy",
+   "sogop",
+   "oarrjrln",
+   "inventlo",
+   "uyjn",
+   "kigel"
+  ],
+  "random_string_hits": 3,
+  "random_string_total": 17,
+  "random_string_sample": [
+   "rhwjmejqnaqzvyl",
+   "vayqe",
+   "qfcurcf",
+   "ilop",
+   "ynyzc",
+   "nvro",
+   "kpem",
+   "aad",
+   "scdj",
+   "okz",
+   "tkoa",
+   "urznq",
+   "zdt",
+   "bfcp",
+   "itdd",
+   "fc",
+   "yiv"
+  ],
+  "vocab_size": 48984
+ }
+}

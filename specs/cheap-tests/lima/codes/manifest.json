@@ -1,0 +1,38 @@
+[
+ {
+  "key": "abc_code",
+  "identifier": "abcuniversalcom00clau",
+  "desc": "ABC Universal Commercial Electric Telegraphic Code, 1901 (5th ed.)",
+  "url": "https://archive.org/download/abcuniversalcom00clau/abcuniversalcom00clau_djvu.txt",
+  "bytes": 4798095,
+  "sha1": "7c72be2e0c4fe668bb2d5f609bcba67e10a7c693",
+  "local": "specs/cheap-tests/lima/codes/abc_code.txt"
+ },
+ {
+  "key": "western_union",
+  "identifier": "WesternUnionTelegraphicCode",
+  "desc": "Western Union Telegraphic Code, 1901",
+  "url": "https://archive.org/download/WesternUnionTelegraphicCode/WesternUnionTelegraphicCode_djvu.txt",
+  "bytes": 6671201,
+  "sha1": "7936bbf17af58a7f064f02e3a467b9f805724fd3",
+  "local": "specs/cheap-tests/lima/codes/western_union.txt"
+ },
+ {
+  "key": "lieber",
+  "identifier": "standardtelegrap00liebuoft",
+  "desc": "Lieber's Standard Telegraphic Code, 1896",
+  "url": "https://archive.org/download/standardtelegrap00liebuoft/standardtelegrap00liebuoft_djvu.txt",
+  "bytes": 3312157,
+  "sha1": "a7c666514122ebd61d339ef62b9a31e33e8d593a",
+  "local": "specs/cheap-tests/lima/codes/lieber.txt"
+ },
+ {
+  "key": "bentley",
+  "identifier": "bentleyscomplete00bentuoft",
+  "desc": "Bentley's Complete Phrase Code, 1909 (closest available ed. to 1906)",
+  "url": "https://archive.org/download/bentleyscomplete00bentuoft/bentleyscomplete00bentuoft_djvu.txt",
+  "bytes": 1059137,
+  "sha1": "bc851bf8425f5122b43cc203e20b059aefe43285",
+  "local": "specs/cheap-tests/lima/codes/bentley.txt"
+ }
+]

@@ -1,0 +1,112 @@
+{
+ "abc_code": [
+  {
+   "date": "1881-01-01T00:00:00Z",
+   "identifier": "abcuniversalco00clau",
+   "title": "The ABC universal commercial electric telegraphic code specially adapted for the use of financiers, merchants, shipowners, brokers, agents,",
+   "year": 1881
+  },
+  {
+   "date": "1873-01-01T00:00:00Z",
+   "identifier": "abcuniversalcom01thuegoog",
+   "title": "The ABC universal commercial electric telegraphic code",
+   "year": 1873
+  },
+  {
+   "date": "1876-01-01T00:00:00Z",
+   "identifier": "abcuniversalcom03thuegoog",
+   "title": "The ABC universal commercial electric telegraphic code",
+   "year": 1876
+  },
+  {
+   "date": "1901-01-01T00:00:00Z",
+   "identifier": "abcuniversalcom00clau",
+   "title": "The ABC universal commercial electric telegraphic code specially adapted for the use of financiers, merchants, shipowners, brokers, agents,",
+   "year": 1901
+  },
+  {
+   "date": "1874-01-01T00:00:00Z",
+   "identifier": "abcuniversalcom04thuegoog",
+   "title": "The ABC universal commercial electric telegraphic code",
+   "year": 1874
+  }
+ ],
+ "western_union": [
+  {
+   "date": "1901-01-01T00:00:00Z",
+   "identifier": "internationalcab1912inte",
+   "title": "International cable directory of the world, in conjunction with Western Union telegraphic code system.",
+   "year": 1901
+  },
+  {
+   "date": "1913-01-01T00:00:00Z",
+   "identifier": "internationalcab1911inte",
+   "title": "International cable register of the world in conjunction with Western Union telegraphic code.",
+   "year": 1913
+  },
+  {
+   "date": "1901-01-01T00:00:00Z",
+   "identifier": "WesternUnionTelegraphicCode",
+   "title": "Western union telegraphic code",
+   "year": 1901
+  }
+ ],
+ "lieber": [
+  {
+   "date": "1896-01-01T00:00:00Z",
+   "identifier": "standardtelegrap00liebuoft",
+   "title": "Standard telegraphic code",
+   "year": 1896
+  },
+  {
+   "date": "1896-01-01T00:00:00Z",
+   "identifier": "liebersstandard01liebgoog",
+   "title": "Lieber's standard telegraphic code",
+   "year": 1896
+  },
+  {
+   "date": "1898-01-01T00:00:00Z",
+   "identifier": "liebersstandard02liebgoog",
+   "title": "Lieber's standard telegraphic code",
+   "year": 1898
+  },
+  {
+   "date": "1896-01-01T00:00:00Z",
+   "identifier": "liebersstandard00liebgoog",
+   "title": "Lieber's standard telegraphic code",
+   "year": 1896
+  }
+ ],
+ "bentley": [
+  {
+   "date": "1909-01-01T00:00:00Z",
+   "identifier": "bentleyscomplete0000elbe",
+   "title": "Bentley's Complete Phrase Code",
+   "year": 1909
+  },
+  {
+   "date": "1918-01-01T00:00:00Z",
+   "identifier": "bentleyscomplete00bent",
+   "title": "Bentley's complete phrase code,(nearly 1000 million combinations) (with at least 2 letters difference between each half-code word)",
+   "year": 1918
+  },
+  {
+   "date": "1921-01-01T00:00:00Z",
+   "identifier": "CompletePhraseCode1921",
+   "title": "Bentley's complete phrase code, (nearly 1000 million combinations)",
+   "year": 1921
+  },
+  {
+   "date": "1909-01-01T00:00:00Z",
+   "identifier": "bentleyscomplete00bentrich",
+   "title": "Bentley's complete phrase code (nearly 1000 million combinations) with at least 2 letters difference between each half-code word)",
+   "year": 1909
+  },
+  {
+   "date": "1909-01-01T00:00:00Z",
+   "identifier": "bentleyscomplete00bentuoft",
+   "title": "Bentley's complete phrase code (nearly 1000 million combinations)",
+   "year": 1909
+  }
+ ]
+}
