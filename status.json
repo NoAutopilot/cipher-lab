@@ -1,5 +1,5 @@
 {
- "updated": "25 Sept 2026, 11:40 UTC",
+ "updated": "25 Sept 2026, 12:45 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -617,6 +617,10 @@
  ],
  "log": [
   {
+   "when": "25 Sep, 12:45",
+   "what": "Linhares held out of the totals: the new Portuguese language judge fails its reading; a worker tests whether that judge can tell a right from a wrong decode on a 26-word dictionary-code fragment."
+  },
+  {
    "when": "25 Sep, 11:35",
    "what": "KX and VX close on handoff; LANE CX opens to run formal check-solved on the open targets that fail the intake gate (97 of 99), feeding YX."
   },
@@ -1068,7 +1072,8 @@
    "line": "The key sheet in the Condes de Linhares papers (ANTT PT/TT/CLNH/0086/11) says each number points to a page, column and word of 'o Diccionario'. LANE LX tested free scans against its worked example and found the book: A New Pocket Dictionary of the Portuguese and English Languages, abridged from Vieyra, Part I, London 1809; all twelve example groups land on the exact word. The two-page mid-letter fragment on m0002 then decodes 25 of 26 groups at grade H, one at M; pages 1 and 4 of the letter are not in the item, so no connected gloss is offered yet. A separate verifier classes both the reading and the identification N3. Safe sentence in AUDIT.md. Held below N4, and its check-solved re-opened on 25 Sept: the edition most likely to print this letter, Coutinho's Textos Políticos, Económicos e Financeiros (Banco de Portugal, 1993), has not yet been read; a worker is on it.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/antt-linhares-chave",
    "key": "ours",
-   "text": "new"
+   "text": "new",
+   "qa_flag": "25 Sept 11:53: with the new Portuguese corpus the rule-7 language judge FAILs the committed reading (score -1.559 vs real_p05 -1.014; word cover passes 0.758). Held out of the totals until parent worker LX-JUDGE shows whether the judge can discriminate on a 26-word dictionary-code fragment (design-matched controls) or the reading is re-examined."
   },
   {
    "date": "25 Sept 2026",
@@ -1917,7 +1922,7 @@
    "focus": "hall of fame view live from CITATIONS.md: one public citation (Cryptiana, 24 Sept 2026) and the pending replies list"
   }
  ],
- "headline": "25 Sept, owner account, 11:40 UTC: 18 letters (13 board entries) at N3 or better after two audits, 4 of them with our own key: Orange to August of Saxony 1561 (WVO 53, pure cryptanalysis), the van Beuningen 1657 key, the Linhares dictionary code (Vieyra 1809; check-solved blocked until Textos Politicos 1993 is read on your machine, L10) and Jan van Nassau's cipher lines of 17 Apr 1574 (WVO 5551). Three counted today, each after two audits and a clean rolling quality check. Live lanes: YX (left-open targets) and CX (check-solved sweep, feeding YX). VX, KX, TX, PX, LX, OX and DX closed on their handoffs. The other account's lanes are idle until 26 Sept 13:00 UTC. Retrospective h ran and its four fixes are in.",
+ "headline": "25 Sept, owner account, 11:40 UTC: 17 letters (12 board entries) at N3 or better after two audits, 3 of them with our own key; Linhares (our key) is held out while its new language-judge failure is tested: Orange to August of Saxony 1561 (WVO 53, pure cryptanalysis), the van Beuningen 1657 key, the Linhares dictionary code (Vieyra 1809; check-solved blocked until Textos Politicos 1993 is read on your machine, L10) and Jan van Nassau's cipher lines of 17 Apr 1574 (WVO 5551). Three counted today, each after two audits and a clean rolling quality check. Live lanes: YX (left-open targets) and CX (check-solved sweep, feeding YX). VX, KX, TX, PX, LX, OX and DX closed on their handoffs. The other account's lanes are idle until 26 Sept 13:00 UTC. Retrospective h ran and its four fixes are in.",
  "sidequests": [
   {
    "title": "Grants applications",
