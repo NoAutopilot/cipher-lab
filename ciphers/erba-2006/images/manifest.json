@@ -1,0 +1,70 @@
+[
+ {
+  "file": "Erba-Bible.png",
+  "sha1": "6fa308172037b7f210186ed6f4e17625355ea647",
+  "size": 730110,
+  "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2017/08/Erba-Bible.png",
+  "id": "primary"
+ },
+ {
+  "file": "Erba-Cryptogram.png",
+  "sha1": "31cc13371fc06a3dc29ab12eedce0ce911d0e6bc",
+  "size": 301651,
+  "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2014/10/Erba-Cryptogram.png",
+  "id": "primary"
+ },
+ {
+  "file": "strip_0.png",
+  "sha1": "e1c8bf3229e254da6225e358e07fa62abb924d9e",
+  "size": 599227,
+  "note": "debug crop derived from Erba-Cryptogram.png (LANE B3 bERB re-transcription pass), not a separate fetch"
+ },
+ {
+  "file": "strip_1.png",
+  "sha1": "ff9d5a9ee5fd8cdb621039322d400a5f9f5e1a9f",
+  "size": 588737,
+  "note": "debug crop derived from Erba-Cryptogram.png (LANE B3 bERB re-transcription pass), not a separate fetch"
+ },
+ {
+  "file": "strip_2.png",
+  "sha1": "f71f47a777278e754a48a87902c1274f8f7bbd7e",
+  "size": 544512,
+  "note": "debug crop derived from Erba-Cryptogram.png (LANE B3 bERB re-transcription pass), not a separate fetch"
+ },
+ {
+  "file": "strip_3.png",
+  "sha1": "20b6a2cc204491cad72b6cdebae9cf37045e1fdb",
+  "size": 462637,
+  "note": "debug crop derived from Erba-Cryptogram.png (LANE B3 bERB re-transcription pass), not a separate fetch"
+ },
+ {
+  "file": "zoom_blockleft.png",
+  "sha1": "83d298ff3edb2f99d8fe6bd78ed4390b8b7bc5f4",
+  "size": 303473,
+  "note": "debug crop derived from Erba-Cryptogram.png (LANE B3 bERB re-transcription pass), not a separate fetch"
+ },
+ {
+  "file": "zoom_blockright.png",
+  "sha1": "6a5ca61904f6988814adda0cf7b4a61d9ec7edac",
+  "size": 480359,
+  "note": "debug crop derived from Erba-Cryptogram.png (LANE B3 bERB re-transcription pass), not a separate fetch"
+ },
+ {
+  "file": "zoom_blockright_top.png",
+  "sha1": "dfe31185e2ddc2b9989575a0690c51cf5462717f",
+  "size": 328632,
+  "note": "debug crop derived from Erba-Cryptogram.png (LANE B3 bERB re-transcription pass), not a separate fetch"
+ },
+ {
+  "file": "zoom_ne_compare.png",
+  "sha1": "792dc760b03ac3bb7d4ffdd67dd56917cd5cc649",
+  "size": 185177,
+  "note": "debug crop derived from Erba-Cryptogram.png (LANE B3 bERB re-transcription pass), not a separate fetch"
+ },
+ {
+  "file": "zoom_r5.png",
+  "sha1": "862447f1cef8a0ab618f07f60e7f6626f34157e7",
+  "size": 137789,
+  "note": "debug crop derived from Erba-Cryptogram.png (LANE B3 bERB re-transcription pass), not a separate fetch"
+ }
+]

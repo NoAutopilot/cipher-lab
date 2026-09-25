@@ -1,0 +1,13 @@
+tokens: bERB=114 marc=114 compared=114
+case-sensitive exact match: 105/114 = 92.1%
+case-insensitive (digraph-identity) match: 106/114 = 93.0%
+
+disagreements (index, bERB, marc):
+    8  'me'   vs 'ne'  
+   14  'me'   vs 'ne'  
+   29  'me'   vs 'ne'  
+   31  'me'   vs 'ne'  
+   41  'me'   vs 'ne'  
+  102  'me'   vs 'ne'  
+  111  'me'   vs 'ne'  
+  113  'me'   vs 'ne'  
