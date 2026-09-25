@@ -2,7 +2,50 @@ open
 Jean Le Clerc, *Négociations secrètes touchant la paix de Munster et d'Osnabrug* (1725, tomes III-IV,
 archive.org negociationssecr03lecl/04lecl, both read in full via djvu text and grepped by this worker; the
 job brief's own named edition family for this target), control "Servien" 175 hits in tome IV confirming
-readable OCR for exactly this 1648 period; zero hits for "Mercy" or "Barneton" in either tome.
+readable OCR for exactly this 1648 period; zero hits for "Mercy" or "Barneton" in either tome. Acta Pacis
+Westphalicae itself, the job brief's other named source, is structurally incapable of covering this item: its
+own "Über die Acta Pacis Westphalicae" page states the French correspondence (Serie II B) is "zur Zeit erst
+bis zum 19. Mai 1648" published (currently only as far as 19 May 1648), and the target letter is dated 6 June
+1648 -- three weeks past the edition's own current end date (see follow-up section below).
+
+### Standard-edition follow-up (LANE CX, 25 Sept 2026)
+
+Job brief's other named source, **Acta Pacis Westphalicae, Serie II Abteilung B**, for 1648 (job brief: "vol.
+7 or 8, whichever covers June 1648"). Reached via the browser tool at `apw.digitale-sammlungen.de` (curl hits
+the site's Anubis bot-challenge; same fetch method used for clair571-estrades-1645 in this same batch, see
+that NOTES.md for the tool syntax).
+
+1. **No volume 7 or 8 exists, digitised or (currently) published.** The site's own volume list under "Serie
+   II: Korrespondenzen -> Abteilung B: Die französischen Korrespondenzen" runs only **APW II B 1 through
+   APW II B 6** (`/search/start.html?tree=002:002` -- checked directly, 8 sub-nodes total: B1, B2, B3.1, B3.2,
+   B4, B5.1, B5.2, B6). A search restricted to APW II B 6 (facet `titleAPW_str=APW+II+B+6`) confirms its own
+   documents are dated **1647** (e.g. doc. 21, "[Brienne] an Longueville und d'Avaux, Amiens 1647 Juli 6"; doc.
+   157, "Servien an Brienne, [Münster] 1647 September 17") -- i.e. B6 = 1647, not 1648, and there is no B7/B8
+   at all on this site.
+2. **The project's own static page confirms this is not a digitisation gap but a publication gap.**
+   `apw.digitale-sammlungen.de/apw/static.html` ("Über die Acta Pacis Westphalicae") states in its own words:
+   *"die französische Korrespondenz liegt zur Zeit erst bis zum 19. Mai 1648 vor"* -- "the French correspondence
+   [edition] currently extends only to 19 May 1648." The target instruction is dated **6 June 1648**, i.e.
+   roughly three weeks **after** the point the published critical edition of the French correspondence
+   currently reaches. APW II B for June 1648 does not yet exist to be opened, in any format, from any host.
+3. This is a clean structural negative, not an access block: no route (curl, browser, login, a different
+   mirror) would find this item in APW, because the edition itself has not been written that far yet. It also
+   means Le Clerc's *Négociations secrètes* (already read, this NOTES.md's opening lines) and APW are the two
+   editions the job brief named for this target, and both are now closed out -- Le Clerc by direct negative
+   read, APW by this structural gap.
+
+Requests this section: apw.digitale-sammlungen.de -- reused this batch's browser-tool session pattern; 2 fresh
+fetches (the Serie II B volume-list page, the "Über die Acta Pacis Westphalicae" static page) plus 1 facet
+search (APW II B 6 for "Brienne", to confirm B6's own date range), all via headless Chromium, >=1.6s apart, no
+login. No new WebSearch or github.com requests (this target's check-solved sources were otherwise unchanged
+from the 25 Sept pass above).
+
+`python3 tools/intake_gate_check.py ciphers/espagnol142-mercy-1648` output: see done line.
+
+**Verdict: unchanged, stays open (conditional).** Both editions the job brief named are now directly read or
+structurally ruled out; the addressee's surname and the target's own folio (within ark `btv1b10035717h`,
+canvas range ~30-70) remain unpinned, per the 24 Sept folio-pin attempt above -- still the fastest next step,
+not a fresh edition search.
 
 ## Check-solved (LANE CX, 2026-09-25)
 
