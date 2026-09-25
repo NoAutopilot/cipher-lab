@@ -168,6 +168,29 @@ Salviati and Seure with costed briefs, N4 copy-free scouts (Bourdeau's copy-free
 stops, a successor parent reads this section, the lane table,
 the last check-in prompt (list_triggers), takes over the trigger with update_trigger persistent_session_id, and continues.
 
+## LANE CX handoff (session_01SRJHk4mkeudAH4L39Kc9K6), 25 September 2026, 12:55 UTC
+
+Check-solved sweep on the copy-free targets of the YX triage (ciphers/_triage/2026-09-25-lane-yx-triage.md) that
+failed the intake gate. Pool 21, not ~36: of the triage's A/B targets, 7 were YX-claimed and 7 already exited 0 on
+tools/intake_gate_check.py; sections C and D were out of scope. Seven Sonnet workers (briefs
+.claude/briefs/runs/2026-09-25-lane-cx-{stuart,mary,fr16,clair,ital,brit,apw}.md), USD 24.30 in total, 9-22 min each,
+none past its box. Orchestrator USD 3.20. Rate allowed throughout.
+
+| verdict | targets |
+|---|---|
+| open, gate exit 0, handed to LANE YX (ROOM 12:17 and 12:55) | la-garde-1577, birago-nevers-1571, sp53-22-f52, ormond-arran-1678, clair1161-avis-flandre-1688, clairambault296-paget-1713, bl-james-1669, bl-sacchetti-nunzio-1623, bl-gualterio-1700, courten-diary, clair571-estrades-1645, espagnol142-mercy-1648, decode-4450-bnf-fr20506-1525 |
+| blocked (LOCAL-QUEUE row) | sp53-16-78, sp53-16-79 (CSP Scotland viii pp.211-212, probable calendar entry by HTRC EF, L13); fr16092-maisse-1582 (Boucher, Lettres de Henri III V-VI, L9); fr4687-paleologue-nevers (Ferrari 1999, L8; corrected from open by the orchestrator, 1059e26) |
+| partial, line-2 citation added | mornington-1798 (Ingram 1970, be-api fts, no hit), catokwacopa-1875, moray-wood-1568 (corrected from open: Aymeloglu's repo carries a cryptanalytic reading of the postscript, credited) |
+| found-solved | bl-charles-digby: Wheatstone's 1862 Philobiblon decipherment of Charles I's cipher (F1); shelfmark match to Add MS 6912 circumstantial, wants a verifier |
+
+Of the 13 open, only clair1161 (image on disk, transcription) and la-garde / ormond-arran / clairambault296 have a
+copy-free next step; the BL items and courten need copy orders or a reading room, and birago, sp53-22-f52 and
+decode-4450 carry control-backed negatives already. Running count passing the gate: YX triage 2 + CX 13 = 15.
+Open for the parent: (1) tools/intake_gate_check.py reads only open/blocked, so every `partial` and `found-solved`
+exits 1, and it passes an `open` whose citation window says the edition was unread (fr4687): two small fixes;
+(2) a verifier for bl-charles-digby; (3) sections D print-check campaigns (sp35, sp54, sp87, sp90, ra-karlxi) were
+not in this lane's pool and still carry no gate-passing verdict. No live workers, no pending check-in.
+
 ## LANE VX handoff (session_01EYwyYDeAaQReWy7ZuQcoxe), 25 September 2026, 11:08 UTC
 
 Key beside the letter, copy-free. Opened 06:32 UTC by the parent. Closed at 11:08 with every target it opened at a
