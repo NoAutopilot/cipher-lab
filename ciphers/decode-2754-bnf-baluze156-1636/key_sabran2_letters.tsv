@@ -1,0 +1,48 @@
+# key_sabran2_letters.tsv -- George Lasry's second Sabran-circle key, "BNF Baluze 156-f40 Parma" (dated by him
+# 24/05/2022), published on S. Tomokiyo's Cryptiana page sources/cryptiana/web/GL.htm, section "?Odoardo Farnese,
+# Duke of Parma (1637)" (Baluze 156 f.40, Farnese-to-Sabran, 27 May 1637; solved by Lasry). Images fetched 25 Sept
+# 2026 from cryptiana.web.fc2.com/code/GL/BnF_Baluze156_f40.png (key table, 624x169 px) and
+# .../BnF_Baluze156_decipher.png (Lasry's own worked decipherment of f.40, used only to confirm the alphabet reads
+# French, not fetched into DC8's own trial) -- not committed, they are Lasry's work; cite and link it.
+# This is a DIFFERENT cipher from key_sabran_1631_letters.tsv (the fr.4134/Baluze155 f.79 break, already tried on
+# DC8 and negative). One row per glyph, top to bottom in each key column. `grade` M throughout: the published
+# image is small (~15-30 px per glyph after upscaling) and read by eye, not measured. `dc8_token` is the DC8
+# (Baluze 156 f.157r) ciphertext_draft.tsv token this glyph most resembles by shape; '-' if no DC8 token
+# resembles it, or if a better-matching column already claimed the same DC8 token (each DC8 token token can map
+# to only one plaintext letter; ties are broken toward the more distinctive glyph, noted below). Homophones for
+# "Monsieur/Vostre Majeste" (a separate nomenclator mark, an X-cross) and the null/end mark ("beta.") are not
+# part of the 24-letter alphabet and are not mapped here.
+col	sym	letter	glyph	grade	dc8_token	note
+A	1	A	lower-case cursive e	M	e
+B	1	B	lower-case cursive o	M	o
+C	1	C	cursive capital A with a loop	M	-	no clean DC8 shape; DC8's lone 'C' and 'a' both differ in stroke count
+C	2	C	lower-case a with a macron (a-bar)	M	-	no DC8 token carries this diacritic shape (DC8's diacritic token is c-tilde, a different base letter)
+D	1	D	small hooked stroke, r/k-like with a curled top	M	r
+E	1	E	looped ascender over a short stem, f/p-like	M	f	ambiguous with M sym2 (p); f chosen as the closer stroke count, p given to M2 instead
+E	2	E	double horizontal bar on a vertical stroke, H-like (#)	M	-
+E	3	E	looped stroke with a diagonal cross-tail	M	-	ambiguous with S sym1/sym3; left unmapped rather than force a third assignment
+F	1	F	lower-case cursive g	M	g
+G	1	G	three-stroke pi-like mark	M	-	no DC8 token has this shape; DC8's own mark tokens (blot, Phi) are a circle/star, not three flat strokes
+H	1	H	small compact cursive m	M	m
+I	1	I	capital T with a small loop at the crossbar	M	t	shape closer to a single 't' than the doubled 'tt'
+I	2	I	numeral 4	M	4
+I	3	I	joined double-loop ligature (cu-like)	M	-	ambiguous with G sym2 (u) in the first Sabran key's convention, but no clean single DC8 match here
+L	1	L	curled hook with a descending tail	M	-	no confident DC8 match
+L	2	L	numeral 9	M	9
+M	1	M	three-stroke cursive m, taller than H's	M	-	'm' already claimed by H; not reassigned
+M	2	M	p-like stroke with a looped descender	M	p
+N	1	N	single-loop f/long-s without a cross-bar	M	-	'f' already claimed by E1; shape not distinctive enough to justify reassigning
+O	1	O	looped tail, gamma/y-like	M	y
+O	2	O	two stacked loops, numeral-8-like	M	8
+P	1	P	lower-case cursive d	M	d
+P	2	P	stroke with a looped descender, b/6-like	M	b
+Q	1	Q	numeral 4 with a horizontal cross-stroke, q-like	M	q
+Q	2	Q	numeral 3	M	-	DC8 has no bare '3' token (only the combined run '36')
+Q	3	Q	numeral 1 (vertical stroke with a small hook)	M	-	DC8 has no bare '1' token (only combined runs '12','10','94')
+R	1	R	cursive numeral 6	M	6
+S	1	S	vertical stroke with a horizontal bar and a small top loop, dagger-like	M	tt
+S	2	S	stacked loop, g/8-like	M	-	'g' and '8' already claimed (F, O2)
+S	3	S	cross-shaped stroke with a looped tail, ff-ligature-like	M	ff
+T	1	T	numeral 9 with a straight tail, q-like	M	-	ambiguous with Q1 ('q' already claimed) and L2 ('9' already claimed)
+V	1	V	cursive h with a loop	M	h
+X	1	X	cursive y with a hooked tail, gamma-like	M	-	'y' already claimed by O1

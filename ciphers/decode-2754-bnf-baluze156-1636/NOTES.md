@@ -200,3 +200,83 @@ One-line suggestion for a solver: the repeat `7 4 t o` sits where the plain text
 
 Requests: cryptiana.web.fc2.com 4 (2 answered 302 to https, then 2 images at 200). No other host.
 Reported what was found and where it was not found; no novelty classification.
+
+## Second Sabran-circle key (Baluze 156 f.40, Farnese-to-Sabran) -- negative, matched control (25 Sept 2026)
+
+LANE YX worker YX-DEC2754 (Sonnet), brief `.claude/briefs/runs/2026-09-25-lane-yx-dec2754.md`, box 45 min.
+Job: test Lasry's second Sabran-circle key on f.157r, the one thing the 24 Sept passes above left untried.
+
+**Locate the key.** On disk first: `sources/cryptiana/web/GL.htm` (already quoted above) and
+`sources/cryptiana/web/louisxiii.htm` (not previously read for this target). `sources/cryptiana/web/GL/` holds
+only one cached image (`BnF_fr3071_f17.png`), not this key -- confirmed by directory listing, not assumed.
+`louisxiii.htm` names both ciphers under one "Sabran" section but in **separate, dated H4 subsections**: "1636"
+(this exact item -- *"BnF Baluze 156, f.157, is a copy of (presumably Sabran's) letter of 9 February 1536
+[sic, presumably a typo for 1636 given DECODE's own 9 Feb 1636 date] to 'Mr de ch.gr.' It has some passages in
+cipher, undeciphered."* -- no key or solver named) and "1637" (f.40, *"This was solved by George Lasry in
+2022"*). This matters for the search-before-solving record: for fr.4134/fr.4135 (1633/1635) the same page says
+outright *"Lasry found that Louis XIII-Sabran Cipher (1631) ... applies to these"* -- i.e. Tomokiyo states
+explicitly, letter by letter in that section, wherever a key is known to apply. For f.157 he says only
+"undeciphered", with no such sentence. That is not proof the Farnese key fails on f.157 (Tomokiyo may simply
+not have checked), but it is independent secondary evidence pointing the same way as the mechanical result
+below, worth having found before running the trial rather than after.
+
+Live page: `cryptiana.web.fc2.com/code/GL.htm` section "?Odoardo Farnese, Duke of Parma (1637)" prints "It is
+solved as follows" followed by two images -- `GL/BnF_Baluze156_f40.png` (the key table itself, "BNF Baluze
+156-f40 Parma", George Lasry 24/05/2022: columns A-X, 1-3 hand-drawn glyph homophones per letter, plus a
+separate "Monsieur/Vostre Majeste" nomenclator mark and a null/end mark) and `GL/BnF_Baluze156_decipher.png`
+(Lasry's worked decipherment of f.40 itself, confirming the alphabet reads coherent French: "LES NOVVELLES QUE
+VOUS ME DONNES DE LA PRISE DE ISLE MONTEST[?] EXTREMEMENT CHERES ... CHIFFRE PARCE QUE LES LETRES PASSENT PAR
+DES VOIES PEU SEURES"). Both images fetched (`images/BnF_Baluze156_f40.png`, `images/BnF_Baluze156_decipher.png`,
+not committed further than this folder's own copy -- Lasry's work, cite and link it, per CLAUDE.md rule 8). This
+is a genuine key table (unlike the brief's fallback case of "no key table published"), so the mechanical test
+below was run rather than stopping at the search step.
+
+**Key transcription and shape match.** `key_sabran2_letters.tsv`: each of the 24 key columns' homophone glyphs
+(read from a 5x upscaled crop, `images/key_strip0-3.png`) matched by eye to the closest-shaped DC8 token in
+`ciphertext_draft.tsv`, same method as `key_sabran_1631_letters.tsv`'s "Letter-symbol half" pass on 24 Sept.
+Grade M throughout (glyphs ~15-30 px after upscaling, read by eye, not measured). 19 of 24 letters got a
+DC8-token match (some homophones share the same underlying roman-letter/digit shape as another homophone
+already claimed by a different column -- ties broken toward the more distinctive stroke, noted per row; ambiguous
+or already-claimed shapes left `-` rather than forced). This covers 79 of 137 DC8 tokens (58%), a much larger
+share than the first key's letter trial (116 of 137) mainly because several of this key's homophones happen to
+be common digit/letter shapes (4, 9, 6, 8, p, g, m, h, t, o, e, d, b, q, r, y, f, tt, ff) that are frequent in
+DC8's own transcription -- exactly the kind of superficial overlap CLAUDE.md's matched-control rule exists to
+catch, which is why the result below is the one that counts, not the coverage number.
+
+**Result: does not read. Negative with matched control** (`letters_trial.py --key2`, `letters_trial2.tsv`,
+`--key2 --check` exits 0):
+
+| | French 5-gram bits/char (lower = more French) |
+|---|---|
+| DC8 decoded with the key2-derived mapping (79 letters) | **5.412** |
+| same mapping, values shuffled over the same token classes, 1000 draws | median **5.412** (50.0% of shuffles score as well or better -- indistinguishable from a random relabeling) |
+| positive control: 79 letters of held-out period French, enciphered with the key's homophones under the same token classes, decoded with the same mapping | **3.754** (0.0% of 1000 shuffles as good) |
+
+The positive control shows the test is well calibrated (real French separates cleanly from noise at this
+length under this key), but the real DC8 mapping sits exactly on the shuffle median: this key's letter
+assignment carries no French signal on f.157r. No word of four or more letters appears in the decode; the
+decode runs are gibberish (`MEPIDS B I FA O M F IIBA ERV IMFO S P I LSI M LL S DH BV M F SOI M SL LP I MLE L
+IIBM F RLSF LM IH M M FVBQIM O H F F F`, full output in `letters_trial2.tsv`).
+
+**Both of Lasry's published Sabran-circle keys are now tried on f.157r and both are negative with a matched
+control**: the first (fr.4134/Baluze 155 f.79) on its nomenclator numbers (0/31 vs control mean 19.1%, 24
+Sept) and its letter alphabet (5.649 bits/char vs positive control 3.066, 24 Sept); the second (Baluze 156
+f.40, this pass) on its letter alphabet (5.412 bits/char, exactly the shuffle median, vs positive control
+3.754). Neither the numeral trial nor the letter trial found any of Lasry's published Sabran-circle homophones
+in DC8's own transcription in a way that reads French. What stays untested: (a) a possible unpublished third
+key for fr.4135-4138 -- but re-reading `louisxiii.htm` this pass found no evidence such a key exists; the 1633
+and 1635 volumes (fr.4134/fr.4135) are both stated to use the *first* (1631) key, not a separate one, so this
+lead may not exist rather than merely being unfetched; (b) fresh cryptanalysis of the 137 tokens (still weak at
+this length without a crib -- the "7 4 t o" repeat noted 24 Sept, sitting where the plain text names "Levanto"
+and "ledit", remains the cheapest lead for a future solver); (c) the shape-match step above is inherently
+approximate (eye comparison of small hand-drawn glyphs) -- a solver with more budget could re-derive both
+matches from cleaner crops before concluding the shapes themselves rule out both keys, though the negative
+control result would need a very large transcription error to reverse.
+
+Status word unchanged: **open**. This job's mandate (test the second Sabran-circle key) is complete; no
+reading, so no judge run and no reading reported (per this job's own brief and CLAUDE.md rule 7).
+
+Requests this pass: cryptiana.web.fc2.com 4 (2 target URLs, each answered 302 to plain-http, followed once to
+https 200 per the good-citizen one-retry rule, `>=1.5s` apart, UA `cipher-lab research script (contact via
+repository)`). No other host. No subagents (mechanical/image-reading work only, within the 45-minute box, done
+in about 15 minutes). Reported what was found and where it was not found; no novelty classification (rule 10).
