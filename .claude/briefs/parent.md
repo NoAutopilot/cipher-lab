@@ -38,7 +38,15 @@ its state is only what it committed, so read its handoff and its lanes' ROOM lin
 8. **Rolling quality audit.** Every two hours while lanes run, spawn a fresh Sonnet worker from
    .claude/briefs/runs/2026-09-25-parent-quality-audit.md with the window since the last QA/*.md. An item it flags counts
    toward no total until its lane clears the flag; tell the owner about any flag on a result already reported to him.
-9. Re-arm the check-in.
+9. **Cross-account learning pass** (owner's ask, 25 Sept 2026 17:00 UTC), every third check-in while both accounts are live: a
+   Sonnet worker (brief .claude/briefs/runs/<date>-parent-learn.md) reads what the other account pushed since the last pass
+   (its lane briefs and COMMON addenda, LEDGER lessons, RETRO-*.md, QA/*.md, tools/ changes, ROOM flags) and writes
+   LEARN-<date>-<hhmm>.md: what they do that we do not, with a concrete diff for each item worth porting. The parent applies the
+   diffs that touch only briefs, tools or workflows (into the shared common tail in .claude/briefs/README.md, so every lane
+   inherits them, never into one lane's dated copy alone), ledgers the pass (Q), and leaves anything touching the goal, the
+   spend, rate-limit rules or the owner's asks to the owner. The same pass notes anything of ours the other account has not
+   picked up, as a ROOM line addressed to its parent.
+10. Re-arm the check-in.
 
 ## Opening a lane
 
