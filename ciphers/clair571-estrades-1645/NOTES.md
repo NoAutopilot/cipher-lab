@@ -5,6 +5,83 @@ negociationssecr02lecl) read by this worker: printed extract of a D'Estrades let
 "plénipotentiaire" (81 hits) confirm the OCR text is searchable for this period; the target's own ciphered
 letter "adressée à l'un des plénipotentiaires" not found printed there or in tome III.
 
+## Access (LANE YX worker YX-LOC571, 25 Sept 2026)
+
+**The target letter is now pinned: Clairambault 575, p.1209.** Fetched the archivesetmanuscrits finding aid
+`https://archivesetmanuscrits.bnf.fr/ark:/12148/cc13896b` (plain curl, browser UA, HTTP 200) in full (not just
+page 1 -- the whole IR renders as one page, 944 lines of text). Its own item-level list gives, verbatim:
+"Clairambault 575 • V Ambassades du maréchal d'Estrades (juillet-décembre 1645)" containing "P. 1209 • Lettre
+chiffrée adressée à l'un des plénipotentiaires à l'occasion du traité de Münster." -- an exact string match to
+QUEUE M27's own catalogue phrase, and Clair 575's own date span (juillet-décembre 1645) is exactly M27's
+"Jul-Dec 1645" window (resolving the 24 Sept pass's open question "which of the twelve volumes"). No other
+volume's item list contains this phrase.
+
+**Table, from the same finding aid (one request), volume / date range / cipher-relevant entries / Gallica ark:**
+
+| Vol. | Date range (finding aid) | Cipher-relevant entries in the finding aid | Gallica ark |
+|---|---|---|---|
+| Clair 571 | inventory only, covers 1637-1683 | (index volume, no letters) | not digitised |
+| Clair 572 | 1637-1640 | none found | not digitised |
+| Clair 573 | 1641-1644 | none found | not digitised |
+| Clair 574 | Jan-Jun 1645 and 1649 | **p.4-5 "Chiffre employé par Brasset"** (= DECODE 9431) | not digitised |
+| **Clair 575** | **Jul-Dec 1645** | **p.1209 "Lettre chiffrée adressée à l'un des plénipotentiaires à l'occasion du traité de Münster" -- the target** | not digitised |
+| Clair 576 | 1646 | none found | query unreachable this pass (see below) |
+| Clair 577 | 1647 | p.1 "Chiffre pour l'Italie" (= DECODE 9430) | not digitised |
+| Clair 578 | 1648-1650 | none found | not digitised |
+| Clair 579 | 1651-1654 | p.341 "Double du chiffre de Mazarin avec M. d'Estrades" -- new, not previously noted in this target's NOTES; matches Tomokiyo/Lasry's DE=-38 Clair.577/579 reconstruction (same cipher, a second copy) | not digitised |
+| Clair 580 | 1655-1668 | p.89 "Chiffre de Mme d'Estrades" (= DECODE 9432, "p.89-95, Madame d'Estrades") | not digitised |
+| Clair 581 | 1669-1675 | none found | not digitised |
+| Clair 582 | 1676-1685 | none found | not digitised |
+
+**None of Clairambault 571-582 is digitised on Gallica.** Checked every volume individually against Gallica's own
+SRU catalogue (`https://gallica.bnf.fr/SRU?...&query=dc.source all "Clairambault NNN"`, the field a control query
+proved matches: the identical query for "Clairambault 349" returns exactly one record, `ark:/12148/btv1b9000668z`,
+the volume already on file for a sibling target). All of 571, 572, 573, 574, 575, 577, 578, 579, 580, 581, 582
+returned `numberOfRecords=0`; 576 returned the same on a third attempt after two `ws_closed_mid_exchange` tunnel
+resets (network-side, not a challenge -- logged, not retried further). This is a real "not digitised" result, not
+an artefact of query syntax, given the control hit. Two other routes tried and stood down on: the SRU endpoint
+`gallica.bnf.fr/services/engine/search/sru` (a different endpoint from the one that worked) returned Gallica's
+own altcha "Vérification de sécurité" challenge page to both plain curl and a real headless-browser fetch
+(`tools/browser_fetch.js`) -- one retry each, per the good-citizen rule, then stood down, not needed once the
+working `gallica.bnf.fr/SRU` endpoint and query field were found. `catalogue.bnf.fr` (the general BnF catalogue,
+not Gallica) answered a plain-text search but returned only unrelated `cb...` identifiers, no manuscript-specific
+hit -- not pursued further, superseded by the SRU result.
+
+Consequence: **no image of the target leaf (Clair 575 p.1209) or the Clair 574 key (p.4-5) can be fetched this
+pass** -- there is nothing on Gallica to fetch. Cipher-line count and sign type (figures vs. symbols vs. mixed)
+for the target letter are **not established** and cannot be until the physical volume is imaged some other way
+(reading-room visit, a BnF reproduction order, or a future digitisation). This is a stronger, more specific
+negative than the 24 Sept pass's "exact volume not established" -- the volume is now known, and it is simply not
+on Gallica at all.
+
+**Lasry/Biermann reconstructions (recap, not re-fetched beyond what NOTES already had -- within the 4-page
+budget the brief allows, 0 further pages fetched since the check-solved pass already read this in full):**
+`sources/cryptiana/web/louisxiv0.htm` (on disk) documents Lasry's 2025 interlinear-decipherment reconstruction of
+**Clair 577** (p.1, "Chiffre pour l'Italie", 1647) and, per this pass's finding-aid read, the same DE=-38 cipher
+recurs as a second copy at **Clair 579 p.341** ("Double du chiffre de Mazarin avec M. d'Estrades", 1651-1654) --
+a "double" (duplicate copy) of the identical key, not a new reconstruction target. Neither is Clair 575 or Clair
+574. DECODE listing not re-crawled this pass via `tools/decode_list.py` (key/N-A records are outside its
+cipher-focused non-decrypted/decrypted sweep and the three record numbers, descriptions and dates were already
+established and cited in this file's Check-solved section from the cached `unsolved-ciphers` catalogue CSV);
+re-running the login-free RecordsList crawl to re-derive the same three rows would not move this forward and was
+judged out of scope for this box.
+
+**Cheapest recovery test now possible:** none, from Gallica -- the key (Clair 574 p.4-5, Brasset) and the target
+letter (Clair 575 p.1209) sit in the same undigitised volume run. The cheapest next step is a single BnF
+reproduction request (REQUEST.md, or a reading-room visit) naming both leaves together (Clair 574 p.4-5 and Clair
+575 p.1209), since both are needed for the same recovery test (apply Brasset's own key to Brasset's own circle's
+letter) and both come from the same undigitised fonds -- one request serves both. A transcription brief, once
+images exist, needs: page images of Clair 574 p.4-5 (the key table) and Clair 575 p.1209 (the ciphered letter,
+plus enough surrounding pages to catch any accompanying plain-French docket or address line), and this NOTES.md's
+identification of the letter as addressed "à l'un des plénipotentiaires à l'occasion du traité de Münster" so a
+transcriber can confirm the leaf by catalogue description alone if folio numbers are not visible on the images.
+
+Requests this pass: archivesetmanuscrits.bnf.fr 1 (cc13896b, full finding aid, HTTP 200). gallica.bnf.fr 15 (1
+diagnostic-query probe, 12 dc.source volume queries [2 needed one retry each on `ws_closed_mid_exchange`, both
+recovered], 2 altcha-challenged `services/engine/search/sru` probes standing down per the one-retry rule) + 1
+headless-browser fetch of the same challenged endpoint. catalogue.bnf.fr 1 (reachable, no useful hit). WebSearch
+2. No DECODE requests this pass (cached catalogue data reused, per above). No subagents used.
+
 ## Check-solved (LANE CX, 2026-09-25)
 
 Six-source sweep run fresh this pass (LANE CX worker CX-CLAIR), on top of -- not only quoting -- the 24 Sept
