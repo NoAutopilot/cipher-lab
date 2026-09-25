@@ -1322,12 +1322,47 @@ concrete next step before any pt-language spec's judge output means anything.
 
 ### Step 6 (PX-BRODEC brief step 5): fresh-instance re-derivation
 
-Launched one Sonnet subagent given only `ciphertext_appendix.tsv`, `plaintext_appendix.tsv` and
-`body_ciphertext.tsv` (no `key.tsv`, no `scripts/`, no `NOTES.md`), instructed to rebuild a code->letter
-key from scratch by the same anchor/count-match method and independently decode letter 134, at the same
-time as steps 1-4 above (it does not touch this target's key or scripts, so no ordering conflict). Result
-pending at push time; appended below when it returns, per rule 7 ("a difference beyond the M/U positions
-goes in NOTES.md as unresolved").
+One Sonnet subagent, given only `ciphertext_appendix.tsv`, `plaintext_appendix.tsv` and
+`body_ciphertext.tsv` (no `key.tsv`, no `scripts/`, no `NOTES.md`), rebuilt a code->letter key from
+scratch (its own LCS-based plain-word anchoring, same exact-count-match rule) and independently decoded
+letter 134. Its method is stricter than this target's own pipeline in one respect (it required the whole
+maximal code-chain between two anchors to match, not `02_anchor.py`'s nearest-resolved-anchor fallback),
+so it recovered fewer pairs overall (265 vs this target's 379) -- expected, not a bug in either.
+
+**Per-code comparison, every code both keys have an opinion on:** every code with a non-trivial
+observation count agrees exactly between the two independent builds: 2->d, 3->t, 4->s, 5->c, 6->c
+(plurality on both sides), 7->e, 8->i, 9±->r, 10->h, 11->p, 12->r, 14->n, 15->o, 17->a, 18->m, 19->e,
+20->l, 21->b, 22->i, 23->a, 25->o, 26->u (both M/uncertain, `v` a strong minority on both), 52->r, 55->p,
+58->m, 310±->i, 400±->n, a->t, b±->g, m->n, y->a. No C-graded code disagreed.
+
+**One genuine disagreement, already inside this target's own M grade:** code `24` -- this target's key
+has it tied 1/1 between `h` and `e` (grade M, majority-vote pick `h`) and the fresh build's own single
+observation happened to be the `e` side, so it reports `e`. Both builds independently confirm the same
+underlying fact: code 24 has exactly one observation each way and is genuinely unresolved, not a new
+problem this comparison surfaces.
+
+**Thin-evidence codes the fresh build found zero pairs for, where this target's key rests on only 1-2
+observations:** codes `x` (this key: `d`, n=2), `z` (`r`, n=2), `d` (`o`, n=1, M), `f` (`s`, n=3, split
+2/1 with `e`), `16` (`f`, n=1, M), `9` (`r`, n=2) -- the fresh build's smaller, stricter-matched sample
+(265 vs 379 pairs) simply never hit these codes, which is unsurprising at n=1-2 either way, not a
+contradiction. But it matters for letter 134 specifically: these six codes account for **19 of the 70
+tokens (27%)** in the reading -- x at Span A pos 14/33/48 and Span B pos 1, z at Span A pos 44/47 and
+Span B pos 2, d at Span A pos 39/49 and Span B pos 20, f at Span A pos 29/40 and Span B pos 10, 16 at
+Span A pos 4/41, 9 at Span A pos 2. Every one of those 19 positions is already graded M or C-on-thin-n in
+this target's own reading; none is C on a code the fresh build actually contradicts. Per rule 7: **no
+difference beyond the M/U positions** -- the fresh build neither confirms nor contradicts these 19
+positions, it is simply silent on them, and the one place it does speak against this target's key (code
+24) is a position this target's own grading already flagged M. Full per-position diff, and the fresh
+build's own honesty notes (codes `e`/`f` as letter-symbols came back as outright ties in its pass, decoded
+`_`; 24 of its 39 entries contributed nothing at all, its largest source of sparsity), are in this job's
+own transcript, not duplicated here.
+
+**Conclusion:** the re-derivation corroborates every code this target's key has strong-to-moderate
+evidence for, and does not contradict any of the thin ones -- it simply couldn't reach them with a
+smaller, independently-built sample. This raises confidence in the ~73% of letter 134's tokens riding on
+well-attested codes, and leaves the ~27% on thin codes exactly as uncertain as this target's own M/U
+grading already said. It does not, on its own, make the letter-134 reading a settled decipherment (the
+judge is still length-only, and 27% of the tokens ride on 1-2-observation codes).
 
 ### Status
 
