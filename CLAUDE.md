@@ -86,6 +86,7 @@ session and every subagent, cloud or local.
    vols 32-45; the sender-specific editions (Butler Correspondence, Lincoln Collected Works, ORN) had not been
    searched and no phrase search was run after decoding.
    Precedent and worked example: ciphers/eckert-1864/AUDIT.md.
+   Key source (25 Sept 2026, owner's request): every AUDIT.md verdict also records whose key read the item -- `ours` (recovered by us: cryptanalysis, a plain-copy alignment, or identifying the codebook), `period` (rebuilt by us from a decipherment, key sheet or cipher book of the time) or `published` (someone else's modern key, credited) -- and the parent copies it to the result's `key` field in status.json, with `text: known` when the plaintext was already in print. An `ours` key at N3 or better is the nearest honest equivalent of a first; say it in those words, never 'first'.
 
 
 ## Outreach (owner's directive, 23 September 2026)

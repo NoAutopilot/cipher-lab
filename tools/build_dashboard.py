@@ -207,7 +207,7 @@ def audits(r):
     g = r.get("grade", "")
     if "two audits" in g or (nclass(r) or 0) >= 4 or r.get("kind") == "solve":
         return 2
-    if "audit" in g:
+    if "audit" in g.lower():
         return 1
     return 0
 
@@ -341,6 +341,10 @@ classed = [r for r in results if nclass(r) is not None and r["kind"] not in ("da
 classed.sort(key=lambda r: (-(nclass(r)), -audits(r), r["title"]))
 counts = Counter(nclass(r) for r in classed)
 n_unique = sum(1 for r in classed if nclass(r) >= 3 and audits(r) >= 2)
+KEYSRC = {"ours": ("k-ours", "our key", "We recovered the key ourselves: by cryptanalysis, by aligning a plain copy, or by identifying the codebook."),
+          "period": ("k-period", "period key, rebuilt by us", "The key comes from a decipherment, key sheet or cipher book of the time, which we turned into a working key."),
+          "published": ("k-pub", "published key", "The key was published by someone else (credited in AUDIT.md); we applied it.")}
+n_first = sum(1 for r in classed if r.get("key") == "ours" and nclass(r) >= 3)
 
 
 def reading_row(r, idx):
@@ -353,6 +357,11 @@ def reading_row(r, idx):
     rating = m[0]["rating"] if m else ""
     rk, rlabel = rating_kind(rating)
     chips = ""
+    ks = KEYSRC.get(r.get("key", ""))
+    if ks:
+        chips += f'<span class="chip {ks[0]}" title="{E(ks[2])}">{E(ks[1])}</span>'
+    if r.get("text") == "known":
+        chips += '<span class="chip k-known" title="The text itself was already in print; what is ours is the key.">text already in print</span>'
     if rlabel:
         chips += f'<span class="chip {rk}">{E(rlabel)}</span>'
     chips += f'<span class="chip c-aud">{["no audit", "one audit", "two audits"][a]}</span>'
@@ -519,6 +528,7 @@ section[hidden]{display:none}
 .rtitle{text-wrap:pretty} .rchips{grid-column:2;display:flex;flex-wrap:wrap;gap:6px}
 .chip{display:inline-block;font-size:0.74rem;font-weight:600;padding:2px 7px;border-radius:3px;background:var(--line);color:var(--ink);letter-spacing:0.01em}
 .chip.r-sub{background:var(--good-soft);color:var(--good)} .chip.r-conf{background:var(--accent-soft);color:var(--accent)} .chip.r-form,.chip.c-aud{background:transparent;border:1px solid var(--line);color:var(--muted)}
+.chip.k-ours{background:var(--good);color:#fff} .chip.k-period{background:var(--accent-soft);color:var(--accent)} .chip.k-pub{background:transparent;border:1px solid var(--line);color:var(--muted)} .chip.k-known{background:transparent;border:1px dashed var(--line);color:var(--muted)}
 .chip.so-queued{color:var(--muted);border:1px dashed var(--line);background:transparent} .chip.so-posted{background:var(--warn-soft);color:var(--warn)} .chip.so-checked{background:var(--good-soft);color:var(--good)}
 .chip.out-ready{background:var(--good);color:#fff} .chip.out-sent{background:var(--accent-soft);color:var(--accent)} .task.sentrow{grid-template-columns:12px minmax(0,1fr);opacity:0.85} .chip.out-drafted{background:var(--warn-soft);color:var(--warn)} .chip.k{background:var(--accent-soft);color:var(--accent)}
 .rbody{padding:4px 4px 18px 56px;display:grid;gap:14px;font-size:0.95rem}
@@ -650,7 +660,7 @@ page = f'''<title>Cipher Lab Board</title>
 <header>
   <h1>Cipher Lab Board</h1>
   <p class="headline">{E(headline)}</p>
-  <div class="strip"><span>Updated <b>{E(d["updated"])}</b></span><span><b>{n_unique}</b> readings at N3 or better after two audits</span><span><b>{len(lanes)}</b> lanes, <b>{live_workers}</b> workers live</span><span><b>{len(ready)}</b> to send</span><span><b>{jq}</b> JSTOR rows queued</span></div>
+  <div class="strip"><span>Updated <b>{E(d["updated"])}</b></span><span><b>{n_unique}</b> readings at N3 or better after two audits</span><span><b>{n_first}</b> with our own key and no earlier decipherment found</span><span><b>{len(lanes)}</b> lanes, <b>{live_workers}</b> workers live</span><span><b>{len(ready)}</b> to send</span><span><b>{jq}</b> JSTOR rows queued</span></div>
 </header>
 <nav class="tabs" aria-label="Views">
   <button type="button" data-view="readings" aria-selected="true">Readings</button>
@@ -663,6 +673,7 @@ page = f'''<title>Cipher Lab Board</title>
 <section class="view" id="readings">
   <h2>Readings, by how far the verifier could take them</h2>
   <p class="muted small" style="max-width:70ch">One row per reading a separate verifier has classed. N4 means the principal editions, catalogues and project pages were searched and no prior decipherment was located; it is not a claim that the letter was never read. Open a row for the passage, the rating, who to tell and the text to send.</p>
+  <p class="muted small" style="max-width:70ch">Whose key: <span class="chip k-ours">our key</span> we recovered it ourselves; <span class="chip k-period">period key, rebuilt by us</span> from a decipherment, key sheet or cipher book of the time; <span class="chip k-pub">published key</span> someone else's, which we applied. A reading with our key at N3 or better is the nearest honest thing to a first: no earlier decipherment was found, and the key is our own work.</p>
   <div class="legend">{legend}</div>
   <ul class="readings">{reading_rows}</ul>
   <h3>Also this week</h3>

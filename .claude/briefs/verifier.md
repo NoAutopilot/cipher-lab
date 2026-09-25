@@ -33,3 +33,5 @@ which rows were re-run after it. Lessons of the Gramont N4 decision, 24 Sept 202
 Edition conventions are evidence: in Japikse's Correspondentie spaced type marks deciphered cipher, and a WVO record's
 Brongegevens code (GPA, GPAS, JC) names the printed edition. Read the cited page before any other family. Lessons of
 V4 (8246) and V7 (5811/4503), 24 Sept 2026.
+
+Key source: in the verdict table, add a column `key` with `ours`, `period` or `published` (CLAUDE.md rule 10, key source) and one line saying where the key came from; for `published`, the credit.

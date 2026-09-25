@@ -1030,9 +1030,11 @@
    "date": "25 Sept 2026",
    "kind": "recovery",
    "title": "Linhares dictionary code: the book is Vieyra's 1809 pocket dictionary, and the letter fragment reads",
-   "grade": "N3 (no prior decipherment located; AUDIT.md); H 25, M 1 of 26 groups; sender-family edition (Textos Políticos 1993) not yet read",
+   "grade": "N3 (no prior decipherment located; AUDIT.md); H 25, M 1 of 26 groups; sender-family edition (Textos Políticos 1993) not yet read; one audit",
    "line": "The key sheet in the Condes de Linhares papers (ANTT PT/TT/CLNH/0086/11) says each number points to a page, column and word of 'o Diccionario'. LANE LX tested free scans against its worked example and found the book: A New Pocket Dictionary of the Portuguese and English Languages, abridged from Vieyra, Part I, London 1809; all twelve example groups land on the exact word. The two-page mid-letter fragment on m0002 then decodes 25 of 26 groups at grade H, one at M; pages 1 and 4 of the letter are not in the item, so no connected gloss is offered yet. A separate verifier classes both the reading and the identification N3. Safe sentence in AUDIT.md. Held below N4, and its check-solved re-opened on 25 Sept: the edition most likely to print this letter, Coutinho's Textos Políticos, Económicos e Financeiros (Banco de Portugal, 1993), has not yet been read; a worker is on it.",
-   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/antt-linhares-chave"
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/antt-linhares-chave",
+   "key": "ours",
+   "text": "new"
   },
   {
    "date": "25 Sept 2026",
@@ -1046,9 +1048,11 @@
    "date": "25 Sept 2026",
    "kind": "contribution",
    "title": "Van Beuningen to De Witt, 1657: the cipher copy the 1919 edition called 'unsolved' now has a key",
-   "grade": "key/decipherment N3; letter text N1 (in print); C 446 of 517 coded tokens",
+   "grade": "key/decipherment N3; letter text N1 (in print); C 446 of 517 coded tokens; one audit",
    "line": "Nationaal Archief 3.01.17 inv.nr 1538 holds the plain copy (ff.208-209) and the cipher copy (ff.210-211) of the 19/29 Sept 1657 letter printed in Brieven aan Johan de Witt I (1919) pp.405-406, whose footnote calls the cipher 'onopgelost'. Aligning the pair rebuilt 53 codes; a fresh re-derivation agrees on every code it found evidence for. A separate verifier classes the key N3; the letter's text is N1, since it is already printed. Named gap: Postma's 2006 dissertation on this correspondence was not reachable.",
-   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/vanbeuningen-dewitt-1657"
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/vanbeuningen-dewitt-1657",
+   "key": "ours",
+   "text": "known"
   },
   {
    "date": "25 Sept 2026",
@@ -1085,7 +1089,9 @@
     "WVO 53",
     "August van Saksen",
     "Nassau-oranische Korrespondenzen"
-   ]
+   ],
+   "key": "ours",
+   "text": "new"
   },
   {
    "date": "24 Sept 2026",
@@ -1102,7 +1108,8 @@
     "vous prie le luy demander car c'est le total",
     "qui est cause que j'ay faict ledit article a part",
     "pour vous donner cognoissance de tout"
-   ]
+   ],
+   "key": "published"
   },
   {
    "date": "20 Sept 2026",
@@ -1116,7 +1123,8 @@
     "Fox to Butler, 21 April 1864, 9.30 PM",
     "Meigs to Butler, 22 April 1864, 10.45 AM",
     "Huntington Library mssEC 19 p.49 and mssEC 25 pp.77, 79"
-   ]
+   ],
+   "key": "period"
   },
   {
    "date": "24 Sept 2026",
@@ -1124,7 +1132,8 @@
    "title": "Danzay to the Cardinal of Lorraine, dated 27 Jan 1557 (BnF fr. 20140 f.35-36)",
    "grade": "N4 (no prior decipherment located)",
    "line": "Read with the key Tomokiyo published: 509 of 638 cipher tokens at grade H, about 23 of 37 lines continuous French, 70 signs unkeyed; no contemporary decipherment. No prior decipherment or printed plaintext located in the Danzay editions, the Scottish and English state-paper series or the Danish regesta (AUDIT.md, two audits, 24 Sept 2026). Partial. The letter ends on f.36r (Copenhagen, signed Dantzay), same class N3 (AUDIT.md 'f.36r'): 37 of 67 cipher tokens at grade H, 'avecques le peu de perte pour le change' and 'par deça' read; three stretches and the f.35v/f.36r join unread. A blind second reader agreed on 86.8 percent of signs; 11 of its 12 proposed changes were accepted on the image and applied.",
-   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr20140-danzay-1557"
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr20140-danzay-1557",
+   "key": "published"
   },
   {
    "date": "24 Sept 2026",
@@ -1141,7 +1150,8 @@
    "grade": "N0, F0",
    "line": "5,281 of 5,725 signs read with Tomokiyo's 1526 key from a two-pass transcription rebuilt by glyph clustering; Jacqueton printed it in 1892 from the decipherment at f.31. The reading stands as an independent check of the edition.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/dupuy452-carpi-1520",
-   "gap": "nothing: Jacqueton 1892 prints both the text and its decipherment"
+   "gap": "nothing: Jacqueton 1892 prints both the text and its decipherment",
+   "key": "published"
   },
   {
    "date": "23 Sept 2026",
@@ -1150,7 +1160,8 @@
    "grade": "N1, F1",
    "line": "687 tokens read from the Latin cipher original with the leaf's own gloss and a 99.8 percent control; printed only in French translation in the Reichstagsakten (1896) from another manuscript. Nobody had linked the two.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/dupuy468-anhalt",
-   "gap": "nothing above N1: the French translation is in print; the Latin cipher original was unlinked, which is the F1 contribution"
+   "gap": "nothing above N1: the French translation is in print; the Latin cipher original was unlinked, which is the F1 contribution",
+   "key": "period"
   },
   {
    "date": "23 Sept 2026",
@@ -1159,7 +1170,9 @@
    "grade": "N1, F2",
    "line": "A sign table reading 93 of 101 tokens as the names printed in Bowes's letter-book (1842). No earlier sign-level key was found in the sources listed in AUDIT.md; the plaintext has been in print since 1842.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/bowes-walsingham-1583",
-   "gap": "nothing above N1: the names are printed in the 1842 letter-book; the sign table is the F2 contribution"
+   "gap": "nothing above N1: the names are printed in the 1842 letter-book; the sign table is the F2 contribution",
+   "key": "ours",
+   "text": "known"
   },
   {
    "date": "20 Sept 2026",
@@ -1168,7 +1181,8 @@
    "grade": "H 20 of 20; 17 N1, 1 N1 (Lincoln), 2 N3",
    "line": "Machine-readable Cipher No. 1 and No. 2 keys; every reading checked against print.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
-   "gap": "n/a: seventeen match the Official Records word for word"
+   "gap": "n/a: seventeen match the Official Records word for word",
+   "key": "period"
   },
   {
    "date": "23 Sept 2026",
@@ -1328,7 +1342,8 @@
    "title": "Gramont 1530, fr.2980 f.30r-v: published key applied, 11 more signs at grade S with a matched control",
    "grade": "N4 (no prior decipherment located)",
    "line": "Continuous French on 32 of 55 lines; N4 (no prior decipherment located) after two audits and the final-families decision of 24 Sept 2026; outreach waits on the Gramont JSTOR rows. 24 Sept 2026 08:00 (LANE G2 worker E): two more values at grade S in the extended f.30 reading with a shuffled-position control (Tb=O, q=B); extended H1486 S181 M239 U63 of 1969; f.30r L12 now French with gaps, L01, L02, L11 still not.",
-   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr2980-gramont"
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr2980-gramont",
+   "key": "published"
   },
   {
    "date": "24 Sept 2026",
@@ -1368,7 +1383,8 @@
    "title": "Thurloe State Papers (Birch 1742): 14 cipher letters whose decipherment Birch printed, aligned to their cipher groups (Stouppe, Butler, Stamford x2, Blake, Fauconberg x9)",
    "grade": "N0 (P3 body only; its postscript is open)",
    "line": "Birch printed these letters in 1742 with their contemporary decipherment; we aligned it to the groups, which gives group-level keys for the Blake, Stamford and Fauconberg ciphers and real-data benchmarks.",
-   "link": "https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/thurloe-printed/AUDIT.md"
+   "link": "https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/thurloe-printed/AUDIT.md",
+   "key": "period"
   },
   {
    "date": "24 Sept 2026",
@@ -1376,7 +1392,8 @@
    "title": "Brienne to Ennemond Servien, 21 Nov 1659 (fr.5160 ff.86-88): key recovered from the contemporary decipherment on f.87",
    "grade": "N0 (contemporary decipherment on f.87); key 74 groups C; f.86 C 72 / M 196, f.88 C 65 / M 88; N0 (f.87 is the contemporary decipherment)",
    "line": "f.87 deciphers both ciphered passages; the key reads f.88 at 114/143 against a control of 28-35. A key recovered from an existing decipherment, not a first reading. Verifier: N0, see AUDIT.md.",
-   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr5160-letellier-1653"
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr5160-letellier-1653",
+   "key": "period"
   },
   {
    "date": "24 Sept 2026",
@@ -1424,7 +1441,8 @@
    "title": "Thurloe State Papers (Birch 1742): Blake 4 and 6 July 1655, the Protector to Blake and Mountagu 9 June 1656, Mountagu 16 Sept 1656, printed decipherments aligned to their groups",
    "grade": "N0",
    "line": "Birch printed these four letters with their decipherment (vol. 3 pp.611-612, 620; vol. 5 pp.101-102, 421); we aligned it to the groups, extending the Blake and Montagu keys.",
-   "link": "https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/thurloe-printed/AUDIT.md"
+   "link": "https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/thurloe-printed/AUDIT.md",
+   "key": "period"
   },
   {
    "date": "24 Sept 2026",
@@ -1432,7 +1450,8 @@
    "title": "William Stamford to Thurloe's office, Calais, 13 March 1655 (Birch 1742 vol. 3 pp.188-189): keyed reading of a letter printed without its decipherment",
    "grade": "N4 (no prior decipherment located); two audits",
    "line": "Birch prints the cipher and no decipherment. Read with the key given by Birch's printed decipherments of Stamford's letters of 20 and 30 March 1655; Thurloe's office deciphered this system in 1655 and Tomokiyo has reconstructed and published it, and our table agrees with his on every value in this letter. H 64, C 338, M 16, U 6 of 424; eleven lines of p.188 still partly incoherent. No prior decipherment of this letter located in Birch, BHO, CSPD 1655, the Clarendon calendar, Nicholas Papers, Abbott, Clarke Papers, Gardiner, Underdown, the Bodleian catalogues, Tomokiyo's pages, the solver repositories, DECODE, Google Books or IA full text (24 Sept 2026). The original leaf, Bodleian MS Rawl. A. 24, has not been seen.",
-   "link": "https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/thurloe-printed/AUDIT.md"
+   "link": "https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/thurloe-printed/AUDIT.md",
+   "key": "period"
   },
   {
    "date": "24 Sept 2026",
@@ -1448,7 +1467,8 @@
    "title": "Conde de la Cañada's ciphered note in González Bravo's letter to Isabel II, Biarritz 18 Nov 1869 (RAH 9/6958, Leg. XIX nº 117/2-3): key and reading",
    "grade": "N0 (clear Spanish on the leaf above every cipher line; AUDIT.md); C 665, M 2 of 667 signs",
    "line": "The note writes each Spanish sentence with its encipherment below it; aligning the two gives the key (simple letter substitution, digits and pen marks, no nulls) and a reading that decode_key.py regenerates. A recovery from the document itself, not cryptanalysis.",
-   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/rah-canada-1869"
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/rah-canada-1869",
+   "key": "period"
   },
   {
    "date": "24 Sept 2026",
@@ -1456,7 +1476,8 @@
    "title": "Loménie de Brienne to the Queen of Poland, 19 May 1646 (BnF Clairambault 1067 fol.226r-227r): key and reading of the cipher passages",
    "grade": "N0 (interlinear decipherment on the leaf itself, not in the catalogue entry, no print located; AUDIT.md); C 307, M 31 of 338 tokens (no H: no key sheet)",
    "line": "A contemporary interlinear decipherment stands over every cipher line; aligning it gives key_1646 (84 codes, syllabic nomenclator; pairing consistency 0.863 vs shuffled <=0.448) and a reading decode_key.py regenerates. Same design family as Brienne's 1647/1651 tables, a different table.",
-   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/clair1067-brienne-poland-1646"
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/clair1067-brienne-poland-1646",
+   "key": "period"
   },
   {
    "date": "24 Sept 2026",
@@ -1472,7 +1493,8 @@
    "title": "Blathwayt papers addenda, Madrid and Port Ste Marie intelligence 1727-1729 (Huntington mssBLA 184, 186, 191(a)): reading with a key rebuilt from seven deciphered items of the same run",
    "grade": "N4 each (no prior decipherment located; cipher passages only; partial; AUDIT.md 'N4 set', 24 Sept 2026); BLA 186's clear text printed in Rose 1831 ii 414-15",
    "line": "Key of 395 groups (grade C) from the contemporary decipherments of BLA 179, 185, 187, 188, 189, 190 and 194; one code for 1725-29 by leave-one-item-out (0.68-0.91). Partial readings: BLA 186 (Abbé Pareti to Marchmont, Madrid, 13 Sept 1728, Ripperda's escape: 20 of 24 cipher groups; the clear part of this letter was printed in English by Rose, Marchmont Papers 1831 ii 414-15, with the cipher shown only as '(Cypher.)'), BLA 191 enclosure (a) (106 of 141) and 3 of 7 code words in BLA 184. No prior decipherment located in the Huntington collection, HMC and Marchmont prints on IA, TNA Discovery descriptions or Google Books (24 Sept 2026). C 129, M 22, U 21 of 172.",
-   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/huntington-blathwayt-madrid-1728"
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/huntington-blathwayt-madrid-1728",
+   "key": "period"
   },
   {
    "date": "24 Sept 2026",
@@ -1480,7 +1502,8 @@
    "title": "Vergier to Jérôme de Pontchartrain, Boulogne, 26 Mar 1696 and a second letter (BnF Clairambault 1108 fol.249-250, 261v-262r): key and reading from the interlinear decipherment",
    "grade": "C 584, M 82, U 1 of 667 groups (no H: no key sheet); novelty N0 (AUDIT.md)",
    "line": "N0: both letters carry an interlinear decipherment on the leaf, in a second hand (probably contemporary), except nine groups on fol.262r that nothing reads; aligning it gives key_1696 (129 codes, grade C) that regenerates the reading. The folios are cited in print since 1879 (Boislisle's Saint-Simon, Mancel 1903); the deciphered text was not found in print. fol.249r is show-through, no cipher.",
-   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/clair1108-duvergier"
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/clair1108-duvergier",
+   "key": "period"
   },
   {
    "date": "24 Sept 2026",
@@ -1496,7 +1519,8 @@
    "title": "William of Orange to Elector August of Saxony, Brussels 16 Sept 1564 (WVO 126, Dresden Locat 8510/5 f.139): cipher postscript read with a key aligned from Orange's 1563 letter (WVO 98) and its decipherment",
    "grade": "126: C 214, M 26 of 240 signs, N4 (no prior decipherment located; AUDIT.md 'N4 decision (D1)'; KHA minute with a 'Zeitung' unimaged). 57: C 247, M 53 of 300, N4 (no prior decipherment located; AUDIT.md 'N4 decision (D2)', held on 'Re-check 57 against DNOK (V8)': WVO's DNOK is Demandt's regest nr. 113, HessJb 38 (1988), clear text only; Dresden minute with a 'Zettel' unseen). 53 (both pages): S 238, M 126 of 364, a cryptanalytic result, N4 (no prior decipherment located; AUDIT.md 'N4 decision (D2)').",
    "line": "The Orange-Saxony symbol ciphers use more than one key. System A (WVO 74, 1562) also reads August's enclosure of 18 Nov 1561 (WVO 57: the Emperor asked August to elect Maximilian King of the Romans). System B (98, 1563) reads 126 (1564: the Queen of Spain was bled and purged and lost the child). Orange's postscript of 24 Oct 1561 (WVO 53) was read cryptanalytically on both pages (Don Carlos marriage rumour; Vendôme and Navarre; the King of France too young for it to go forward). All three are N4: no prior decipherment located in the principal editions (Groen, Gachard, Rachfahl, von Weber, Kluckhohn; Japikse's edition ends Sept 1561), the KHA and WVO records or a phrase search (AUDIT.md 'N4 decision (D1)' and '(D2)'). Unseen witnesses may carry the text in clear: Orange's KHA minute of 126 with a 'Zeitung', August's Dresden minute of 57 with a 'Zettel'.",
-   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/august-van-saksen-1561-64"
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/august-van-saksen-1561-64",
+   "key": "period"
   },
   {
    "date": "24 Sept 2026",
@@ -1504,7 +1528,8 @@
    "title": "Lodewijk van Nassau to William of Orange, four cipher letters 1573-1574 (WVO 4610, 4611, 4612, 4616): partial reading with a key aligned from two sibling letters' decipherments",
    "grade": "C 2512, I 267, M 658, U 575 of 4012 cipher signs; partial; novelty 4610/4611/4616 N4, 4612 N3 (AUDIT.md, second audit A1, confirmed by 'N4 decision (D1)', 24 Sept 2026)",
    "line": "System: letters, five numbers each in blocks from n; numbers above 120 are names and nulls. Key aligned from WVO 4613 and 4615 against their contemporary decipherments. 4610, 4611 and 4616 read as French in stretches; most of 4612's keyed runs do not yet read as French. No letter reads straight through. 4610, 4611, 4616 N4: no prior decipherment located in the principal editions (Groen, Blok 1887 and 1889, Gachard, Kervyn, La Huguerye), the KHA inventory or WVO; Orange's printed replies (Groen IV, Lettres CDXXVII, CDXXXIII, CDLXXXIV) answer them. 4612 N3 until it has a reading.",
-   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/lodewijk-van-nassau-1573-74"
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/lodewijk-van-nassau-1573-74",
+   "key": "period"
   },
   {
    "date": "24 Sept 2026",
@@ -1512,7 +1537,8 @@
    "title": "Brienne to Servien, Paris 10 Oct 1659 (BnF fr.5160 folio 67): partly read with the 1659 key recovered from the office's November letters",
    "grade": "C 454, M 92 of 546 groups (aligned to its own clear text on f.68r); N0 (AUDIT.md f.67 re-class V5b)",
    "line": "A cipher letter not recorded in earlier passes over fr.5160, found by the canvas walk; key_1659 read it first (control z 3.85), then f.68r of the same volume proved to be the letter in clear, which confirms 435 groups and adds 16 codes to the 1659 table (key_1659_ext). Savoy affairs, Madame Royale, the Duke's marriage.",
-   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr5160-letellier-1653"
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr5160-letellier-1653",
+   "key": "period"
   },
   {
    "date": "24 Sept 2026",
