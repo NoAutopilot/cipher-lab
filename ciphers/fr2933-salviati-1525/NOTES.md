@@ -1476,3 +1476,98 @@ image"; one contradicts AT55V's native check (H^1|o). Pooled types with both fil
 --merge ...`, f57v rows given kind=merge by the orchestrator in a scratch copy): **223 -> 204 (sure) / 198 (sure+likely)**, against
 the NEAR gate of 178 (a fifth). Gate not met, so the cm control ladder was not re-run. The f57v merges that delete a mark are
 unverified at native resolution and should not be used for solving until they are. Next: pools-first sibling search (R7-SSIB).
+
+## CM3: measured-error control (25 Sept 2026, LANE R7)
+
+Worker R7-CM3 (Fable, cap $10, box 75 minutes), 21:24-21:41 UTC. Brief `.claude/briefs/runs/2026-09-25-lane-r7-cm3-salviati-measured.md`.
+Disk only, no hosts, no subagents. **No reading; grades stay H0 C0 S0 M0 I0; no reading_cm3.txt.** Rows in HYPOTHESES.md and
+`control_curve.tsv` (info field carries `"err"`); target files `control/codemark_target_cm_all_r24_s{4,5,6}.json`.
+
+**1. Error rate, measured from disk** (script: the inline tabulation in this section's commit; inputs `recon_box_*/disagreements.tsv`,
+`recon_box_*/settled.tsv`, `passC_f55v.tsv`, `passC_f57v.tsv`, `ciphertext_*.tsv`, seven leaves f.54v-f.57v, 3,554 boxes, 2,450 signs).
+
+| quantity | value | basis |
+|---|---|---|
+| pass A vs pass B disagreement, per box | 519 / 3,554 = **14.6%** (sign<->plain 10.4, base code 3.0, missing box 1.3) | disagreements.tsv, seven leaves |
+| per-pass error, per box | **7.6%** (sign<->plain 5.3, code 1.5, missing 0.6) | e = 1 - sqrt(1 - d): two independent readers disagree when either errs |
+| third reader's vote at an A/B disagreement | B 121 (73%), A 26 (16%), neither 18 (11%) of 165 | pass C on f.55v (50/20/17) and f.57v (71/6/1) |
+| settled value wrong at a disagreement box | 27% on the three leaves settled "to B" by policy (f.54v, f.56r, f.57r: 214 boxes; = A-right + neither); 11% on the two majority-settled leaves (f.55v, f.57v: 165 boxes; C's own "neither" share stands in for C's error at a hard box); 19% on the two reconciler-settled leaves (f.55r, f.56v: 122 boxes; the midpoint) | weighted: 99 of 519 = 19% of disagreement boxes = **2.8% of boxes** |
+| both passes agree and both wrong | **about 0.6% of boxes** | e^2 = 0.3% if independent; doubled for two readers on one crop |
+| residual per box | **3.4%** | sum |
+| residual per sign token | **4.9%** (x 3,554 / 2,450: every box error lands on the sign stream as an indel or a wrong sign) | |
+| direction of sign<->plain residuals | deletions 59.5% : insertions 40.5% | settled value at the 368 sign<->plain disagreements: plain 219, sign 149 |
+| mix per sign token, total 5% | **deletion 2.3%, insertion 1.7%, base-code confusion 1.0%** (CM_MIX 0.465:0.331:0.204) | CM2 classes 70.9 / 8.7 (missing box, split evenly) / 20.4 / 0 marks-only, times the direction split |
+
+So the measured post-settlement residual is about **5% per sign token**, inside the brief's 3-7% bracket; it is an estimate with two
+modelling steps (independence of the two readers, C's "neither" share as C's error), not a count against ground truth, because no
+leaf has a fourth reading. What is measured directly: the 14.6% pairwise disagreement, its class mix, the third reader's votes, and
+the direction split. The control below runs at the measured 5% and at the bracket's top, 7%.
+
+**2. Control generator.** `control/codemark_curve.py` gained `CM_ERR=e` with `CM_MIX="del:ins:code"` (default the measured
+0.465:0.331:0.204): a share e*del of true signs deleted from the stream, a spurious sign at the target's type frequencies inserted
+after e*ins of positions, e*code of signs with the base code swapped for a listed confusable partner (#/+, g/y, bh/g, #/Z, f/y,
+bh/phi; a code without a partner draws at the target's base-code frequencies), marks kept; token accuracy counts a deleted token
+as wrong and an inserted one in neither numerator nor denominator; `--help`; offline test
+`tools/tests/test_codemark_measured_noise.py` (rates within 3 sigma, truth index aligned, only listed partners swapped; passes,
+2 s). Also `CM_ORDER=n`, `CM_BACKOFF=1` (below). Rows carry `err`, `mix`, `del`/`ins`/`code` counts; files a `_err<e>` suffix.
+
+**3. Model.** `tools/homophonic_anneal.py` gained `BackoffModel` and `--backoff`: an interpolated absolute-discount n-gram of
+`--order` with recursive backoff to the trigram and unigram (D=0.75; a proper distribution at every context, tested), the same
+interface as `Model`, default unchanged. Two-sentence case: CM2 measured that the trigram objective's optimum is no longer the
+true key at 10% type noise, so more context per letter is the one lever left on the model side, and a plain add-k 4- or 5-gram
+on a 2.3 MB corpus puts most unseen n-grams on one floor; interpolation keeps the longer context where the corpus has it and the
+trigram elsewhere, and a 5-gram spans most Italian morphemes, which is what a word list would add. Offline test block added to
+`tools/tests/test_homophonic_anneal.py` (distribution sums to one at seen, unseen and short contexts; the N=282 K=20 German
+control under order-4 backoff: the anneal reads 14% under it, a search failure, printed not asserted -- see 4(b)).
+
+**4. Controls** (N=2,820 signs before noise, 223 key types, cm design, 24 restarts, it16 trigram unless stated; token accuracy
+against the clean truth, seeds 1/2/3; score per surviving symbol; rows in `control_curve.tsv` with `"err"` in the info field):
+
+| stream | solver | token accuracy | score per symbol (true plaintext -2.35) | gate 60 on 2 of 3 |
+|---|---|---|---|---|
+| measured mix, e=5% (del 70-80, ins 34-43, code 15-25 per seed) | trigram, plain | **61.7 / 81.7 / 86.0%** | -2.51 / -2.39 / -2.38 | **met (3 of 3)** |
+| bracket top, e=7% (del 89-93, ins 52-58, code 35-44) | trigram, plain | **47.2 / 79.4 / 60.8%** | -2.57 / -2.43 / -2.51 | **met (2 of 3)** |
+| measured mix, e=5% | 5-gram backoff (`CM_ORDER=5 CM_BACKOFF=1`) | 6.7 / 15.9 / 22.3% | -3.01 / -3.03 / -3.04 (true plaintext under this model -2.40) | not met |
+| for comparison, CM's type substitution 5% / 10% (LANE R6 CM) | trigram, plain | 26.6 / 57.9 / 86.8 ; 42.9 / 26.5 / 34.7% | -2.59 / -2.53 / -2.40 ; -2.61 / -2.63 / -2.59 | 5%: not met |
+
+Two findings. (a) The measured error mix is much kinder to the solver than CM's type substitution at the same rate: an indel
+shifts the stream by one but leaves every other sign's identity intact, and a base-code confusion between two codes moves
+one homophone onto another letter, while CM's substitution scattered every noisy position over all 223 types. At the
+measured 5% the plain trigram solver reads 62-86% and at 7% still 47-79%, so **the control gate that CM and CM2 could not
+pass with type noise is passed with the measured noise, at both bracket rates**. (b) The 5-gram backoff model is a search
+failure at this schedule, not a model failure: the true key scores -6,760 under it against the -8,400 to -8,436 the anneal
+found (it finds -6,604 to -7,003 under the trigram, where the true key scores -6,623). Its landscape needs a hotter or longer
+schedule than `t0=4`, 120,000 iterations; not tuned inside this box, and the target was not run under it.
+
+**5. Target** (the pooled eight leaves, 2,820 signs, 223 types, trigram, 24 restarts; the same solver and setting as the
+control rows that passed). Seeds 1-3 are LANE R6 CM's `codemark_target_cm_all_r24_s{1,2,3}.json` (seeded, so a re-run
+reproduces them byte for byte); seeds 4-6 are fresh (`_s{4,5,6}.json`).
+
+| seed | score | per symbol | first 60 letters |
+|---|---|---|---|
+| 1 | -7551.2 | -2.678 | ietreduetreincettodinososorouessimieograrsieietnonmursataaae |
+| 2 | -7509.8 | -2.663 | utoaueinoalumenoaderedosomadileioaunmiamaettonealieiaoieaaat |
+| 3 | -7490.9 | -2.656 | esgnidiegnuessegrarelauocataiacutmetadtonciatetpolsituitrrra |
+| 4 | -7512.3 | -2.664 | ansnediesneaccestediueraetceiosustoutoconsiaseonoemicriottta |
+| 5 | -7518.8 | -2.666 | andidnsiditantidiecomeraiouesalersolomuoilperitseuisuretnnne |
+| 6 | -7552.9 | -2.678 | cleetaiteeaccoteeserosanonesilaeiossnperearditionoeieaiiiiid |
+
+Cross-seed agreement: seeds 1/2 4.3%, 1/3 18.9%, 2/3 10.2%; seeds 4/5 20.3%, 4/6 10.4%, 5/6 1.3%, best pair across the two triples 28.4%; hits of 30 common Italian words of five letters or more: 0-2 per decode against 0 in three shuffles of each, i.e. chance. No Italian word run longer than chance in any decode
+(the same finding as CM and solvEX2). **Target -2.66 to -2.68 per symbol against controls at -2.38 to -2.51 (5%) and -2.43 to
+-2.57 (7%)**: the target scores below the worst control seed at the top of the bracket by 0.09 per symbol (about 250 nats
+over the stream), and the controls that score in the target's range are CM's 10% type-substitution streams (-2.59 to -2.63),
+which read 27-43%. So under the measured error model the code+mark family, as designed here (one letter per code+mark type,
+the it16 register), is a **control-backed negative at 5% and at 7%**, conditional on (i) the error estimate of section 1
+(two modelling steps, no fourth reading) and (ii) the design: a nomenclator element (syllables or words behind some of the 223
+types) or a different plaintext register would put the true reading outside this control's design, and the cm family only
+says what a letter-per-type cipher would look like. This does not close the target (NEAR.md row stays `partial`): what the
+control now says is that a letter-per-type cm reading at this transcription's error level *would have been found*, so the
+next step is not more solver work on cm but a change of design -- syllabic or word values for the high-frequency marked types
+(the 1525 Florentine key family as a structural prior, the NEAR row's third step), or the sign<->plain boundary itself
+(the 1,233 plain boxes withhold 2 letters each by assumption; a control where the plain boxes carry 1 or 3 is one cheap row).
+
+**Grades:** no reading; H0 C0 S0 M0 I0; no reading_cm3.txt; nothing for the judge. Requests: none (disk only). No subagents.
+Regenerate: `CM_RESTARTS=24 CM_ERR=0.05 python3 control/codemark_curve.py control cm 2820 SEED --leaves all` (143 s at four
+runs on four cores), `CM_ERR=0.07` likewise, `CM_ORDER=5 CM_BACKOFF=1` for the backoff rows (about 6 min), `CM_RESTARTS=24
+python3 control/codemark_curve.py target cm SEED --leaves all` for seeds 4-6; the error-rate table is
+`python3 control/error_rate.py` (added).
