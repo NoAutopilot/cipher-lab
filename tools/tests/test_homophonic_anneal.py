@@ -29,3 +29,19 @@ m = ha.Model([open(os.path.join(R, 'tools', 'data', 'de16', 'composed_enhg.txt')
 _, k = ha.anneal(list('abcabcxyzxyz'), m, 2000, random.Random(1), 1.0, allowed={'x': 'aeiou', 'y': 'e'})
 assert k['x'] in 'aeiou' and k['y'] == 'e', k
 print('ok allowed')
+
+# --noise (anneal_noisy, LANE R6 CM2, 25 Sept 2026): on a K=20, N=400 German control with 10 percent of the signs
+# replaced by random signs, the error-tolerant solve returns a free set within its cap, letters from ALPHA, and reads
+# the corrected text at >= 75 percent; the plain solve's reading of the same noisy input is printed beside it.
+seq, p, truth = ha.make_control(open(os.path.join(D, 'plaintext_98.txt'), encoding='utf-8').read(), 20, 400, m, 3)
+nr = random.Random(3); types = sorted(set(seq))
+seqn = [nr.choice(types) if nr.random() < 0.1 else s for s in seq]
+acc = lambda d: sum(a == b for a, b in zip(d, p)) / len(p)
+sc, key, free = ha.solve(seqn, m, 3, 100000, 1, 1.0, noise=0.1)[0]
+import math
+assert len(free) <= math.ceil(1.5 * 0.1 * len(seqn)), len(free)
+assert all(l in ha.ALPHA for l in free.values()) and all(0 <= i < len(seqn) for i in free)
+dec = ''.join(free.get(i, key[x]) for i, x in enumerate(seqn))
+plain_dec = ''.join(ha.solve(seqn, m, 3, 100000, 1, 1.0)[0][1][x] for x in seqn)
+print(f'ok noise: corrected {acc(dec):.1%} (key-only {acc("".join(key[x] for x in seqn)):.1%}, free {len(free)}), plain solver {acc(plain_dec):.1%}')
+assert acc(dec) >= 0.75, acc(dec)

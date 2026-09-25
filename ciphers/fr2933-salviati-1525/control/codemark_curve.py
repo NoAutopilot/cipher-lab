@@ -18,6 +18,11 @@ N counts sign tokens. Token accuracy: a token is right when every letter it stan
   --leaves all (anywhere on the line; LANE R6 CM, 25 Sept 2026) pools all eight leaves f.54r-f.57v instead of the
   default f.54r+f.54v, so P's rows reproduce without it. f.57r line 17 pos 15-24 (a later marginal note, leafnotes/f57r.md)
   is dropped from the row pattern. Outputs carry an "_all" suffix (codemark_target_cm_all_s1.json) and a leaves field.
+  cmc (LANE R6 CM2, 25 Sept 2026): the cm cipher (same key allotment and CM_NOISE) read through merged symbols, base
+      code + mark class (none / dot / digit-led / other; 223 types -> about 110 symbols), so a misread mark inside a
+      class cannot split a sign. Its ceiling (the majority letter per merged symbol) is about 88% on the control.
+  CM_NOISE=p (LANE R6 CM) replaces a share p of control tokens by a type drawn at the target's frequencies; CM_TOL=p
+  (LANE R6 CM2) solves with the error-tolerant anneal (tools/homophonic_anneal.py --noise), suffix _tol<p>.
 """
 import csv, json, os, random, sys, time
 from collections import Counter
@@ -31,7 +36,23 @@ RESTARTS, ITERS, PER_BOX = int(os.environ.get("CM_RESTARTS", 6)), int(os.environ
 # CM_NOISE (cm only, LANE R6 CM): share of control tokens replaced by a type drawn at the target's own frequencies,
 # a stand-in for transcription error (with-marks pass agreement runs 72-80% per leaf). Default 0 keeps P's rows.
 NOISE = float(os.environ.get("CM_NOISE", 0))
+# CM_TOL (cm only, LANE R6 CM2, 25 Sept 2026): error-tolerant solve, tools/homophonic_anneal.py anneal_noisy with
+# noise=CM_TOL (the share of positions the solver may treat as misread, each corrected under a unigram prior). Rows and
+# target files carry a _tol<p> suffix; token accuracy is of the corrected decode, info also gives the key-only accuracy.
+TOL = float(os.environ.get("CM_TOL", 0))
+# CM_ROBUST=q (LANE R6 CM2): bounded-loss scoring, tools/homophonic_anneal.py RobustModel; suffix _rob<q>.
+ROBUST = float(os.environ.get("CM_ROBUST", 0))
 VOW = "aeiou"
+
+
+def mark_class(m):
+    """cmc design (LANE R6 CM2): a mark string collapsed to one of four classes: none, dot, digit-led, other."""
+    return "0" if m == "" else "d" if m == "dot" else "n" if m[0].isdigit() else "x"
+
+
+def merge_type(t):
+    code, mark = t.split("^", 1)
+    return f"{code}^{mark_class(mark)}"
 
 
 LEAVES_ALL = ("f54r", "f54v", "f55r", "f55v", "f56r", "f56v", "f57r", "f57v")
@@ -39,7 +60,7 @@ LEAVES = ("f54r", "f54v")
 if "--leaves" in sys.argv:
     _i = sys.argv.index("--leaves"); _v = sys.argv[_i + 1]; del sys.argv[_i:_i + 2]
     LEAVES = LEAVES_ALL if _v == "all" else tuple(_v.split(","))
-RSUF = "" if RESTARTS == 6 else f"_r{RESTARTS}"
+RSUF = ("" if RESTARTS == 6 else f"_r{RESTARTS}") + (f"_tol{TOL:g}" if TOL else "") + (f"_rob{ROBUST:g}" if ROBUST else "")
 SUFFIX = "" if LEAVES == ("f54r", "f54v") else "_all" if LEAVES == LEAVES_ALL else "_" + "-".join(LEAVES)
 
 
@@ -105,7 +126,7 @@ def build(design, n_sign, seed):
             toks.append(p[i:i + 2]); i += 2
         else:
             toks.append(p[i]); i += 1
-    if design == "cm":
+    if design in ("cm", "cmc"):
         units = Counter(f"{x['code']}^{x['marks']}" for x in sg).most_common()
         homs = alloc(units, Counter("".join(toks)))
         seq = []
@@ -115,6 +136,8 @@ def build(design, n_sign, seed):
         if NOISE:
             un, uw = zip(*units); nrng = random.Random(seed + 9000)
             seq = [nrng.choices(un, uw)[0] if nrng.random() < NOISE else s for s in seq]
+        if design == "cmc":
+            seq = [merge_type(s) for s in seq]
         return seq, toks, {"K": len({s for s in seq}), "key_K": len(units), **({"noise": NOISE} if NOISE else {})}
     # vi: base codes over token-initial letters, marks over the vowels carried
     codes = Counter(x["code"] for x in sg).most_common()
@@ -146,24 +169,32 @@ def run(stream, seed):
     # vi: a mark symbol stands for a vowel by hypothesis (without this the solver swaps the roles of codes and marks)
     model = ha.Model([open(c, encoding="utf-8", errors="ignore").read() for c in
                       [os.path.join(D, "..", c) if not os.path.isabs(c) else c for c in CORPUS]], order=3)
+    if ROBUST:
+        model = ha.RobustModel(model, ROBUST)
     allowed = {s: VOW for s in stream if s.startswith("M")}
-    res = ha.solve(stream, model, RESTARTS, ITERS, seed, 1.0, allowed=allowed)
-    sc, key = res[0]
-    return sc, key, "".join(key[s] for s in stream), model
+    res = ha.solve(stream, model, RESTARTS, ITERS, seed, 1.0, allowed=allowed, noise=TOL)
+    sc, key = res[0][:2]
+    free = res[0][2] if TOL else {}
+    return sc, key, "".join(free.get(i, key[s]) for i, s in enumerate(stream)), model, free
 
 
 def control(design, n, seed):
     t0 = time.time()
     seq, toks, info = build(design, n, seed)
-    if design == "cm":
+    if design in ("cm", "cmc"):
         stream, spans = seq, [(i, i + 1) for i in range(len(seq))]
     else:
         stream, spans = expand(seq)
     truth = "".join(toks)
-    sc, key, dec, model = run(stream, seed)
+    sc, key, dec, model, free = run(stream, seed)
     true_sc = ha.score(model, truth, 1.0)
     let = sum(a == b for a, b in zip(dec, truth)) / len(truth)
     tok = sum(dec[a:b] == truth[a:b] for a, b in spans) / len(spans)
+    if ROBUST:
+        info = dict(info, robust=ROBUST)
+    if TOL:  # key-only accuracy (no per-position corrections) and how many corrections the solver made
+        kdec = "".join(key[s] for s in stream)
+        info = dict(info, tol=TOL, free=len(free), key_only_tok=f"{sum(kdec[a:b] == truth[a:b] for a, b in spans) / len(spans):.1%}")
     row = [design, n, seed, len(stream), len({*stream}), f"{tok:.1%}", f"{let:.1%}", f"{sc:.1f}", f"{true_sc:.1f}",
            json.dumps(dict(info, leaves=SUFFIX or "f54r+f54v", **({"restarts": RESTARTS} if RESTARTS != 6 else {}))), f"{time.time() - t0:.0f}s"]
     f = f"{D}/../control_curve.tsv"
@@ -177,12 +208,15 @@ def control(design, n, seed):
 
 def target(design, seed):
     sg = [x for x in rows() if x["code"] != "_"]
-    if design == "cm":
+    if design in ("cm", "cmc"):
         stream = [f"{x['code']}^{x['marks']}" for x in sg]
+        if design == "cmc":
+            stream = [merge_type(t) for t in stream]
     else:
         stream, _ = expand([(x["code"], x["marks"] or None) for x in sg])
-    sc, key, dec, _ = run(stream, seed)
-    json.dump({"design": design, "seed": seed, "score": sc, "decoded": dec, "key": key},
+    sc, key, dec, _, free = run(stream, seed)
+    json.dump({"design": design, "seed": seed, "score": sc, "decoded": dec, "key": key, **({"robust": ROBUST} if ROBUST else {}),
+               **({"tol": TOL, "free": {str(i): l for i, l in sorted(free.items())}} if TOL else {})},
               open(f"{D}/codemark_target_{design}{SUFFIX}{RSUF}_s{seed}.json", "w"), indent=0)
     print(design, seed, f"{sc:.1f}", dec[:200])
 
