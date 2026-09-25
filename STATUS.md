@@ -134,7 +134,7 @@ was a length-only judge block and is withdrawn (tool fixed).
 | te-wood-1950 | 1 Gillogly attack, 4 key texts | best 12-16/21 | control true offset rank 1 every seed (19-20/21) | negative for these key texts |
 | scorpion-1991 | 1 images + pass | S1 N=70 K=53 IC 0.0083 | English 0.066 / random-at-K 0.019 | homophonic-scale; S2 counted only |
 | rubin-1953 | intake + 1 image + pass | letters N=305 IC 0.0612 | English 0.062 / random 0.039 | **moved**: English-like; next family_run masc at N=305, est. USD 3, awaiting parent |
-| mlh-1976 | 1 image + pass (bMLH, live at handoff) | -- | -- | see ROOM |
+| mlh-1976 | intake + 1 image + pass | N=33 K=26 IC 0.0189 | English 0.062 / random 0.039 | too short; line 1 'MLH => 7 symbols' a possible crib (bMLH, ledgered 19:21) |
 | cylob-c1995 | not run | -- | -- | brief `.claude/briefs/runs/2026-09-25-lane-b2-cylob-c1995.md` |
 | catokwacopa-1875 | (spec written, no test: partial, other lane's folder) | -- | -- | -- |
 
