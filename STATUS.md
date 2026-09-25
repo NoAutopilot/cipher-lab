@@ -105,14 +105,14 @@ orchestrator USD 10.21. No live workers, no pending check-in. Rate limit `allowe
 - **Retrospective trigger met** (13 rows, USD 174, one worker X and an orchestrator X), flagged to the parent at 17:35.
 - Tools touched by workers: iiif_lines.py --top-margin, reconcile_passes.py gloss column (tests pass).
 
-## LANE V7 handoff (session_018VkFfDWY4drC9a9aozmop9), 25 September 2026, live (updated 22:59 UTC)
+## LANE V7 handoff (session_018VkFfDWY4drC9a9aozmop9), 25 September 2026, live (updated 23:41 UTC)
 
 Brief `.claude/briefs/runs/2026-09-25-lane-v7-orchestrator.md`. Opened 22:21 by parent 7d. Orchestrator usage 1.37 at 22:57 (get_session). Rate allowed.
-- Job 1 done: V7-CL349 (Opus, 3.27, D, ledgered, archived): **clair349-este-guise-1556 N0, key period, text known** -- the letter is in clear in Guise Mémoires-journaux (Michaud-Poujoulat 1e sér. t.6 pp.238-239) and the leaf carries an interlinear decipherment over all 33 cipher lines. Verifier recommends status found-solved; posted to both parents 22:58 for status.json. Check-solved template gained a "whole volume, not one page range" paragraph from this miss.
+- Job 1 done: V7-CL349 (Opus, 3.27, D, ledgered, archived): **clair349-este-guise-1556 N0, key period, text known** -- the letter is in clear in Guise Mémoires-journaux (Michaud-Poujoulat 1e sér. t.6 pp.238-239) and the leaf carries an interlinear decipherment over all 33 cipher lines. Verifier recommends status found-solved; posted to both parents 22:58; status.json closed found-solved by parent worker FOLLOWUP-2315 (23:26). Check-solved template gained a "whole volume, not one page range" paragraph from this miss.
 - Job 2: done by the parent's EN-FOLDS (22:22): en spread 0.44-0.75, caveat in judge_plaintext.py and CLAUDE.md rule 3. Nothing for V7.
-- Job 3: QA4 brief `.claude/briefs/runs/2026-09-25-lane-v7-qa4.md` pushed; spawn at 23:40 (window from 21:40).
+- Job 3: V7-QA4 live (Sonnet, cap 5, box 40 min, session_01TSaDecnpcuv3SpXK43KNFd, brief `.claude/briefs/runs/2026-09-25-lane-v7-qa4.md`, window 21:40-23:40). Next QA ~01:40 (window from 23:40).
 - Jobs 4-5: no other "reading ready" line; Mercy gate-2 closer waits on the owner (~03:00 UTC 26 Sept).
-Live workers: none. Next check-in 23:40.
+Live workers: V7-QA4. Next check-in ~00:15.
 
 ## LANE V6 handoff (session_01V2BHwhVh1k72qSYuBFCyGd), 25 September 2026, written 21:42 UTC (context 431k; V7 starts here)
 

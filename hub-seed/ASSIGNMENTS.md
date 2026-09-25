@@ -624,3 +624,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T23:36Z	session_01QR7XH9k8XQmzHPZRRwbVN7	GOLD-KAL1 kaliningrad-2015 word-pattern crib + German homophonic, reserve (Sonnet, cap 5, 45 min)	brief 2026-09-25-lane-gold-c4-kaliningrad-crib-and-homophonic.md; adopted by GOLD3
 2026-09-25T23:36Z	session_01PYtPexePhLjYkgc8VsZ7Zn	GOLD-K4 koehler B-prime owed runs (Sonnet, cap 8, 75 min)	brief 2026-09-25-lane-gold-c4-koehler-bprime-owed.md; adopted by GOLD3
 2026-09-25T23:37Z	session_013JXDgLDkW2y5Ldi2gWzTkY	LANE GOLD2 orchestrator done ~$12.5 D, handed off	handoff STATUS.md LANE GOLD2 handoff; 8 sessions 52.88 dollars, no F; KAL1 and K4 live for GOLD3
+2026-09-25T23:41Z	session_01TSaDecnpcuv3SpXK43KNFd	V7-QA4 (Sonnet, cap 5)	rolling QA window 21:40-23:40	LANE V7 brief job 3
