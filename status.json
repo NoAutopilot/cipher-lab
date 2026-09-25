@@ -2167,10 +2167,10 @@
     },
     {
       "target": "fr2933-salviati-1525",
-      "title": "Salviati 1525: letter-per-type code+mark (CM3) and partial syllabary, regular and irregular (R8-DSN), excluded at the measured 5% error -- controls 62-86% and 93-95% vs target unread, judge FAIL, no Italian; other designs untested; no sibling pool",
-      "next": "design (a)+(c) of NOTES DSN sec.5: marks as non-vowel values (~ = suspended n/m) plus a word-edge symbol at every sign/plain run edge, one --param extension of tools/families/syllabary.py, Fable, own control (about USD 10); (b) marked types as nomenclator words needs word-level scoring",
+      "title": "Salviati 1525: letter-per-type code+mark (CM3), partial syllabary regular/irregular (R8-DSN) and mixed marks with and without word edges (R8-DSN2) all excluded at the measured 5% error -- every control 72-96% vs target 0.3-0.5/symbol below, judge FAIL, no Italian; nomenclator-word design untested; no sibling pool",
+      "next": "marked types as nomenclator words (NOTES DSN sec.5 b): needs a word-level scorer over it16 before any control -- a tool job, Fable, about USD 10; or a lower transcription error (a third pass on the 14.6%-disagreement boxes) before re-running any family",
       "lane": "R8",
-      "touched": "25 Sept 2026 23:12"
+      "touched": "25 Sept 2026 23:53"
     },
     {
       "target": "koehler-1944",

@@ -130,18 +130,19 @@ Results (all AUDIT.md classes copied to status.json by the parents):
 For V7 (open items): (1) done (QA3 ledgered); (2) next rolling QA ~23:40 with `.claude/briefs/runs/2026-09-25-lane-v6-qa.md` (window from 21:40); (3) verifiers for any "for LANE V6/V7: reading ready" line (templates: `2026-09-25-lane-v6-mercy.md`, `-costa.md`; Opus, cap 10, 60 min); (4) when the owner answers rows 80-83 and the Lonchay-Cuvelier IV page read lands, a short gate-2 closer for Mercy; (5) clair349-este-guise-1556 (ZX, re-derivation ZX-RD349 running at 21:42; ZX posts reading ready on PASS): its leaf carries an interlinear contemporary decipherment -- when ZX posts reading ready, start the verifier from the clair1067 precedent (N0 on the leaf). Retrospective trigger (12 rows or 60) not yet met on V6 rows alone.
 Lessons: verifiers ran 5-16 minutes on 30-60 minute boxes and 2-7 dollars on 4-10 caps -- boxes can be halved for single-item verifiers; a reading change after an audit must be pushed into AUDIT.md and any queued SO prompt the same hour.
 
-## LANE R8 handoff (session_01RUhLrpkEtWxVLVVDoYdsvm), 25 September 2026, opened 22:21 UTC (live)
+## LANE R8 handoff (session_01RUhLrpkEtWxVLVVDoYdsvm), 25 September 2026, 22:21-23:54 UTC (closed)
 
-Recovery and deep work, successor to LANE R7; opened by parent 7d. Brief .claude/briefs/runs/2026-09-25-lane-r8-orchestrator.md; worker common
-2026-09-25-lane-r8-common.md; job briefs 2026-09-25-lane-r8-*.md. Live workers (23:10): R8-DSN2 (Fable, cap 10, session_016mix2braGhxmwG75H3Sg5p). Closed, ledgered, archived: R8-L3034 (USD 1.59),
-R8-K5761 (USD 2.95), R8-DSN (USD 11.45).
+Recovery and deep work, successor to LANE R7; opened by parent 7d; closed with its brief's queue spent. Brief
+.claude/briefs/runs/2026-09-25-lane-r8-orchestrator.md; worker common 2026-09-25-lane-r8-common.md; job briefs 2026-09-25-lane-r8-*.md.
+4 workers closed (Sonnet 2, Fable 2), USD 25.97 read by get_session, all ledgered and archived, none over cap; orchestrator USD 4.40
+(ledgered). Rate allowed throughout. **No live workers, no pending check-in.**
 
 | target | outcome (25 Sept 2026) | next |
 |---|---|---|
-| fr2933-salviati-1525 | R8-DSN: partial syllabary (tools/families/syllabary.py, spec written) control 95/94/93% at 5% error vs target -2.75/symbol, judge FAIL, no Italian; irregular form likewise -- control-backed negative for both; NEAR partial. R8-DSN2 live: marks as non-vowel values + run-edge word boundary | per DSN2; then (b) nomenclator words needs word-level scoring |
-| fr3034-landriano-1528 | **found-solved** (R8-L3034, 22:29): items 68 and 69 read by George Lasry 2023 (Tomokiyo francis.htm, GL.htm; dbourdeau/cyphersolver); gate exit 0; no images fetched | none; aymeloglu repo not grepped (verifier gap only) |
-| fr5761-election-1519 | gate repaired 1 -> 0 (Mignet 1886, Le Glay 1845); sign_inventory.tsv: 8 correspondent blocks, 317 signs, per-correspondent alphabets + small nomenclator; no companion ciphertext located on disk or in the catalogues grepped | a key without a letter: park until a 1519-20 embassy cipher letter surfaces |
-| berthier-napoleon-1812, espagnol142-mercy-1648 | parked per brief (no new lead / owner asks) | none |
+| fr2933-salviati-1525 | spec written (specs/fr2933-salviati-1525.json); tools/families/syllabary.py with --param marks/boundary/bases. R8-DSN: partial syllabary, regular and irregular; R8-DSN2: mixed marks (vowel / n-m / doubling) with and without run-edge word boundaries, and the syllabary on the 8 real bases. Every control 72-96% at the measured 5% error; every target 0.3-0.5/symbol below its control, judge FAIL, no Italian. Control-backed negatives for all five; NEAR partial | marked types as nomenclator words needs a word-level scorer (tool job, Fable, about USD 10); or lower the transcription error first |
+| fr3034-landriano-1528 | **found-solved** (R8-L3034): items 68 and 69 read by George Lasry 2023 (Tomokiyo francis.htm, GL.htm; dbourdeau/cyphersolver); gate exit 0 | none (aymeloglu repo not grepped: verifier gap only) |
+| fr5761-election-1519 | gate 1 -> 0 (Mignet 1886, Le Glay 1845); sign_inventory.tsv: 8 correspondent blocks, 317 signs, per-correspondent alphabets + small nomenclator; no companion ciphertext located | park until a 1519-20 embassy cipher letter surfaces; Mignet page cited from be-api (not a page locator) -- a verifier confirms |
+| berthier-napoleon-1812, espagnol142-mercy-1648 | parked per brief (no new lead / owner asks ASKS 59, 60, JSTOR 80-83) | none |
 
 ## LANE R7 handoff (session_01UpWfpbLwYL1xmDG1vFyi6h), 25 September 2026, closed 22:07 UTC
 
