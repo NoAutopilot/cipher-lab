@@ -154,65 +154,30 @@ judge on the target's own clear text before reading a FAIL; open an on-disk imag
 titles describe the transmission (twice now); five of 31 workers overran (P5 2.0x, Y4b 1.8x, L2 1.37x interrupted, L3 1.33x, L4 1.07x),
 all with subagents or image bisection. Retrospective trigger met (31 rows, USD 140).
 
-## LANE ZX2 handoff (session_015Bn675gy4Zx5pz8A9CXQzQ), 25 September 2026, kept current (last 20:28 UTC)
+## LANE ZX2 handoff (session_015Bn675gy4Zx5pz8A9CXQzQ), 25 September 2026, 19:09-22:11 UTC (closed)
 
-Opened 19:09 by the owner-account parent: the CX/CX2 gate-passing hand-offs R6 does not hold (R6 keeps Mercy, Salviati,
-Berthier, Costa Cabral, Xiquena; ZX keeps clair349, brochado, barriere). Brief .claude/briefs/runs/2026-09-25-lane-zx2-orchestrator.md.
-Rate allowed at 20:26. Worker usage so far USD 34.06 (9 ledgered).
+Opened by the owner-account parent for the CX/CX2 gate-passing hand-offs R6 did not hold. Closed at 22:11 because the copy-free pool is
+exhausted. 10 Sonnet workers, USD 49.44 in total, all ledgered and archived; orchestrator USD 6.79. Rate allowed throughout.
+**No reading, no AUDIT.md, no NEAR.md row, no target closed.** Every target stays `open`.
 
-| target | outcome (25 Sept 2026) | next |
+| target | what was done (25 Sept 2026) | next (not copy-free) |
 |---|---|---|
-| ormond-arran-1678 | open. ZX2-ORM: Cipher 1 table 162 codes (Tomokiyo image, checked against HMC interlinear); target 6/20 vs random-key control mean 3.79 (p99 8, p=0.148): all three printed Ormond-Longford ciphers now fail with controls. 4 cipher letters of 1680 in HMC vols 4-5, none pools. | none cheap: a sibling in the same cipher (not in HMC) |
-| hellen-frederick-1752 | open. ZX2-HEL: ciphertext of all 8 despatches from Bourdeau's audit files (CC BY 4.0, credited); three codes by date (1752 846 signs, 1756 516, 1763 1,289 over 6 letters; one-key Jaccard 0.1456 vs split control 0.1372); two-part code, values to ~3,900. Spec written, judge fr18. | DECODE images (ASKS 1/42); cipher originals of the Oct 1752-Jul 1753 letters whose clear decipherments are in NA Fagel 5206 |
-| destaing-gerard-1779 | open. ZX2-EST: 216 tokens/104 distinct; three marbois codes: target 22 vs control mean 18.17 [13,24], inside the band (control-backed: not those codebooks). Siblings 0 (Clements 403; Doniol IV fetch 500 once). 2 crib positions. Spec, judge fr18. | Clements copy (ZX2-ASK); Doniol IV crib text retry |
-| la-garde-1577 | open. ZX2-LAG: 7 of 13 harvest candidates, 0 same-system; pooled stays 239 signs. Flag: WVO 6136 (Reinier Cant, Bremen 1576) is an unregistered multi-page numeral cipher. | none in WVO: ZX2-LAG2 found 11 La Garde letters, 1 with cipher (the target); pool exhausted at 239 signs |
-| clair1161-avis-flandre-1688 | open. ZX2-GAL part 1: canvases 216-342 and 0-127 swept, no cipher leaf; with Y7's 128-216 the whole volume is read except a few reset canvases. | ASKS 54 stands (BnF to locate), appended by ZX2-ASK |
-| clairambault296-paget-1713 | open. ZX2-GAL + GAL2: 314/316 canvases read (2 resets inside a print run), all print or blank: the letter is not in the Gallica copy of Clairambault 296 | ASKS 51 (BnF to locate), updated |
-| decode-4450-bnf-fr20506-1525 | open. ZX2-GAL2: the fr.20506 copy continues on ff.137-138 (canvases 277-279) and ends with Ranzo's signature; D2's copy was not truncated | ZX2-4450T transcribing ff.137-138 and aligning with Bourdeau's fr.2988 witness |
-| tools | ZX2-FR18: tools/data/fr18 (Torcy, Villars, Maintenon, Gazette 1786; 2.36M letters), wired as fr18. Held-out 18th-c. prose false-negative rate fr18 0.183 (N200) vs fr16 0.961 and fr19 0.983: a fr16/fr19 FAIL on 17th-18th-c. French was not a test. destaing and hellen specs set to fr18. | |
+| ormond-arran-1678 | ZX2-ORM: Cipher 1 table (162 codes, Tomokiyo's image, checked against HMC interlinear). Target 6/20 vs random-key control mean 3.79 (p99 8, p=0.148). All three printed Ormond-Longford ciphers now fail with controls. 4 cipher letters of 1680 in HMC vols 4-5; none pools with the target. | a sibling in the same cipher outside HMC |
+| hellen-frederick-1752 | ZX2-HEL: all 8 despatches' ciphertext taken from Bourdeau's audit files (CC BY 4.0, credited). Three codes by date: 1752 846 signs, 1756 516, 1763 1,289 over 6 letters. 1763 one-key Jaccard 0.1456 vs split control 0.1372. Two-part code, values to ~3,900. Spec written, judge fr18. | DECODE images (ASKS 1/42); cipher originals of the Oct 1752-Jul 1753 letters deciphered in NA Fagel 5206 |
+| destaing-gerard-1779 | ZX2-EST: 216 tokens, 104 distinct. Three marbois codes: target 22 vs control mean 18.17 [13,24], a control-backed negative for those codebooks. No siblings found (Clements 403; Meng negative). 2 crib positions. Spec written, judge fr18. | Clements copy (ASKS, ZX2-ASK); a retry of the Doniol IV crib text (archive.org 500 once) |
+| la-garde-1577 | ZX2-LAG + LAG2: WVO holds 11 La Garde letters and only the target is in cipher; live query matches the harvest. Pool exhausted at 239 signs. | a non-WVO La Garde holding |
+| clair1161-avis-flandre-1688 | ZX2-GAL: canvases 216-342 and 0-127 read; with R6 Y7's 128-216 the whole Gallica volume is covered and the cipher leaf is not there. | ASKS 54 (the BnF to locate it) |
+| clairambault296-paget-1713 | ZX2-GAL + GAL2: 314/316 canvases read, all print or blank. The 14 Jan 1713 letter is not in the Gallica copy. | ASKS 51 (the BnF to locate it) |
+| decode-4450-bnf-fr20506-1525 | ZX2-GAL2 found the fr.20506 copy continuing on ff.137-138 to Ranzo's signature. ZX2-4450T transcribed them (1,027 tokens; blind pass agreement 91.6/90.7/83.9 pct) and aligned them with Bourdeau's fr.2988 witness from index 752 to 1787 of 1789 (80.3 pct agreement): fr.20506 is a complete second witness of the letter. 32 z/d rows were settled against the witness. | none for this lane; a contribution note to Bourdeau once a verifier has looked |
+| 15 copy-bound targets | ZX2-ASK: REQUEST.md for BL (bl-james, bl-sacchetti, bl-gualterio, maurice-rupert, sp90-raby-1704, harley-287), TNA (sp87 x4, sp90-raby-whitworth, sp35, sp54, sp53-22-f52) and Clements (destaing); ASKS rows 56 (BL), 57 (TNA), 58 (Clements). | the owner's copy orders |
+| tools | ZX2-FR18: tools/data/fr18 (Torcy, Villars, Maintenon, Gazette de France 1786; 2.36M letters; judge language fr18). Held-out 18th-c. false-negative rate fr18 0.183 (N200) vs fr16 0.961 and fr19 0.983. So a fr16 or fr19 FAIL on 17th-18th-c. French is not a test. Flagged to every lane (ROOM 19:50); specs still on fr/fr19 with a 17th-18th-c. date: colbert26-lathuillerie-1644, thurloe-barriere-1654, moustier-altars. It has 6 source files: report the per-fold spread before trusting it (CLAUDE.md rule 3, es17c lesson). | an UPDATES.md row by a parent |
 
-Live: ZX2-4450T session_016VVPKMaMbYuNk9rXN6Saqy (box to about 22:12). WVO 6136 (Cant, Bremen 1576) offered to the parent for a scout/check-solved, not routed.
-Copy orders: ZX2-ASK wrote 15 REQUEST.md (BL 6, TNA 8, Clements 1 for destaing) and ASKS rows 56-58, one per archive.
-Not worked (a person or a gated account): ra-karlxi (gated), clair571 (ASKS 49), wellington (library), clairambault1225 (L11),
-decode-2754 (none cheap), birago (Bourdeau's glyph-level negative with controls; sibling keys fr.3315 already tried), hellen
-(DECODE images). No target in the pool fits a tools/family_run.py family (they are codes, not letter ciphers) at a length
-where a control could read it.
-
-## LANE B4 handoff (session_01V2WMavWGMeAUYELUpmyEcX), 25 September 2026, opened 21:31 UTC (live)
-
-Breadth lane, successor to LANE B3, opened by parent 7d (brief `.claude/briefs/runs/2026-09-25-lane-b4-orchestrator.md`, cap USD 25 own, hand off at 300k context). Common file: B3's (`.claude/briefs/runs/2026-09-25-lane-b3-common.md`). Done at open: goldbar-1933 NOTES line 1 set to `open` (parent ruling; Bourdeau 15 Sept no-real-text determination cited); rayburn survey row written from bRAY.
-
-| Spec | Test run (worker) | Target | Control | Verdict |
-|---|---|---|---|---|
-| sufi-fiddle | 1: intake, image, one blind pass, script checklist (bSUF) | N=165 K=21; RTL, cursive joining, dot diacritics | Arabic-script and Baybayin reference lines (from memory) | Arabic-script family, not Baybayin; image is a hand copy from the novel |
-| blitz-ciphers | 2: en judge wired, family_run masc N=581 (bBLZ2) | judge FAIL -1.685 | 0.994 (0.985-1.000) | masc of English excluded; letter chi2 6270 vs English, not transposition; NEAR row, next homophonic K=48 / German (parent's yes) |
-| untersberg-code | NEAR step 1: abbreviation expander (bUNT2) | 44 M / 17 I, judge FAIL (circular) | 0.321 vs gate 0.30, shuffled floor 0.289 | weak control, no reading; next the Hs. 2398 image |
-| bullet-tuscany-1944 | NEAR step: indicator lookup in print (bBUL3) | M-209 in form only | 2/2 known headers classified | no test licensed at N=44; parked |
-| ranks 31-41 | triage (bSPEC3) | 0 spec / 11 no spec | n/a | survey list exhausted for breadth |
-
-Live (21:34): bSUF session_01ANHG2mfxvjqcBsjKg8f2cc (sufi-fiddle test 1, scienceblogs.de holder); bBLZ2 session_01UisPBpVaihgNd4cSyvYVoc (blitz test 2 masc); bUNT2 session_01AFmS8KELthEFN3kSBYw4qM (untersberg expansion); bBUL3 session_01GpZDqE883ZSyLrPTUFm2sJ (bullet indicator lookup); bSPEC3 session_01QoNRugzSd25fspP8nwNNbN (ranks 31-41 triage + specs, 21:36). McCormick: no code-word model with a passing control can be named at 132 tokens, row left as it stands (brief item 3). Next: censorship-manual-stego after bSUF frees scienceblogs.de; mccormick only with a code-word model whose control passes; then specs 21-30 unrun first tests.
-
-## LANE B3 handoff (session_01VLtPMsqR2oWmZeKh2jxVga), 25 September 2026, closed 20:55 UTC (context about 250k; restored once after commit 9a1e34b dropped it)
-
-Breadth lane, successor to LANE B2; opened about 19:10 by parent 7c (brief `.claude/briefs/runs/2026-09-25-lane-b3-orchestrator.md`, cap USD 25 own usage, hand off at 300k context). Common file `.claude/briefs/runs/2026-09-25-lane-b3-common.md`. bMLH was ledgered by B2 (19:20).
-
-| Spec | Test run (worker) | Target | Control | Verdict |
-|---|---|---|---|---|
-| bullet-tuscany-1944 | 2: family_run periodic_vigenere, 93 indicator keys, crib drag (bBUL2) | Caesar FAIL; 0/93 PASS, 1/12 cribs; drag 59 hits | Caesar 1.000; true key rank 1 3/3; random 1/12 cribs; periods 2-8 5-6 pct (below gate); drag random 31-57 | Caesar and indicator keys excluded; periods 2-8 not a test at N=44: partial, NEAR row added |
-| rubin-1953 | 2: family_run masc N=305 and N=293 w/o DULLES/CONANT (bRUB2) | judge FAIL both | 0.989 / 0.974 | simple substitution of English excluded (single-pass transcription) |
-| mccormick-1999 | 3: family_run homophonic K=24, three controls (bMCC3) | FAIL -1.48 / -2.33 | English 0.998, vowel-dropped 0.652; shuffled target -1.81..-1.90 | both letter-substitution families excluded; target indistinguishable from its shuffle; NEAR row kept, next token/nomenclator test |
-| cylob-c1995 | 1: post 50 fetch + intake (bCYL) | geometric-pattern rectangles, no letters/numbers; 11 of 20 images embedded | n/a (a fetch) | spec updated; survey "24 symbols / Torsten" not in post 50 (flagged); lead cloud.rotering-net.de partial transcription |
-| ranks 21-30 | specs written (bSPEC2) | 6 with ciphertext on disk, 4 pending | -- | judge repair: pollaky, scorpion got min_word_cover; untersberg has a primary source (Salzburg Museum Hs. 2398) against the survey's "legend" |
-| erba-2006 | 1: image + blind re-transcription (bERB) | 93.0 pct digraph agreement (106/114) with comment #3 | n/a (transcription check) | 8 me/ne ambiguities, possibly a 9th base token |
-| blitz-ciphers | 1: IC/frequency, periodic scan (bBLZ) | case-folded IC 0.0628, N=581 | mono-English 0.059-0.071; homophonic 0.042; Vig p20 0.040 | inconclusive, points at masc (test 2 needs parent yes) |
-| goldbar-1933 | 1: letter chi-squared (bGLD) | 1.25 / 1.18 | 1000 uniform draws, mean 24.9, min 8.2 | flatter than every draw; re-runs Bourdeau 15 Sept (credited); NOTES line 1 says found-solved -- needs a verifier's word, not a catch |
-| yogtze-1984 | 1: initials search de/en (bYOG) | 12 / 18 phrases | random 6-letter strings 337-1879 / 57-825 | below every control; Bourdeau notes a 2025 police closure (uncited) |
-| untersberg-code | 1: abbreviation shape (bUNT) | 36 period-closed short tokens | own-unigram synthetic 12.0 (5-20) | 100th pct: NEAR row, next an abbreviation expansion with a control |
-| fair-game-2010 | 1: Halpin next-letter (bFAI) | judge FAIL -2.20, cover 0.46 | random marking -2.13..-2.26; planted name 3/3 | negative for this credit-order reconstruction |
-| ss-radio-lippert-1944 | 1: image + one pass + IC (bSSR) | N=37 letters, K=18, IC 0.0631 | German 0.047-0.107; uniform 0.042-0.075 | too short to discriminate |
-| mccormick-1999 | 4: token/nomenclator anneal (bMCC4) | -0.750, inside its own shuffles | control 0.8 pct vs gate 0.5 | not a test; NEAR row: next a code-word model that passes its control first |
-
-At close (20:55): ONE LIVE WORKER, bRAY session_01ANaWjhm3ix6shRysby4hXb (rayburn-2004 first test, scienceblogs.de holder, cap 3, spawned 20:54) -- the successor or the parent reads its cost with get_session, ledgers, archives, writes its survey row. 14 workers, about USD 33.9 ledgered; orchestrator USD 4.65. For a LANE B4: (1) scienceblogs.de first tests, serial: sufi-fiddle, then censorship-manual-stego (copy the bRAY brief, 2026-09-25-lane-b3-rayburn-2004.md); (2) awaiting the parent: blitz-ciphers test 2 (family_run masc, en judge, USD 3); (3) NEAR steps open without approval: untersberg abbreviation expansion with a synthetic control (USD 3), bullet indicator-system lookup in print (USD 3), McCormick code-word model design (USD 6, strong model); (4) flags open with the parent: goldbar-1933 NOTES line 1 found-solved for a no-real-text determination (verifier's word), yogtze 2025 police-closure claim (uncited in Bourdeau); (5) the cylob survey row's "24 symbols / Torsten" needs a source or a correction. Briefs and the common file: .claude/briefs/runs/2026-09-25-lane-b3-*.md.
+Not worked, and why: ra-karlxi (gated), clair571 (ASKS 49), wellington (library copies only), clairambault1225 (L11), decode-2754 (both published
+Sabran keys already failed with controls), and birago (Bourdeau's glyph-level negative with controls; sibling keys fr.3315 already tried).
+None of the pool fits a tools/family_run.py family: they are codes, not letter ciphers, and too short for a control to read.
+Lead for a parent: WVO 6136 (Reinier Cant, Bremen 1576), a multi-page numeral cipher with no folder (ZX2-LAG flag, ROOM 19:23). Offered at
+19:50; not routed. Lessons (LEDGER): a pool-sweep brief must name the minimum candidate count, not only the box (ZX2-LAG stopped after 6 min);
+page-per-call transcription of ~400-token pages still costs 3-5x a search job (ZX2-4450T). No live workers, no pending check-in.
 
 ## LANE B2 handoff (session_01NS12APP1R55K6TGZrBbP97), 25 September 2026, 19:03 UTC
 
