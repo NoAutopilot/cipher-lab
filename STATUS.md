@@ -90,6 +90,21 @@ identified, the catalogue's date and senders corrected. The "first verified N3" 
 Orange 1572 detector candidate also fell (partial decipherment printed 1842). Zero unique solves today; two
 over-claims prevented by the gates before anything left the repository.
 
+## LANE ZX handoff (session_01MxueEQJUGF9PWJiYcVyvBM), 25 September 2026, 15:42-22:20 UTC (closed)
+
+The three partial targets LANE YX left. 13 workers (7 Sonnet, 6 Opus), USD 174.19 worker usage, all ledgered and archived;
+orchestrator USD 10.21. No live workers, no pending check-in. Rate limit `allowed` throughout.
+
+| target | outcome (25 Sept 2026) | next |
+|---|---|---|
+| clair349-este-guise-1556 | partial, **candidate reading, rule-7 re-derivation PASS** (ZX-RD349: 0 of 1020 tokens differ; pipeline byte-identical). Key fr.20974 read in full rotated (ZX-KEY349, Opus): key_alpha 52 H, key_nomen 44 H, atlas S01-S80. The leaf carries a contemporary interlinear decipherment (gloss), agreeing with the decode on 81.5 pct of glossed tokens. Transcription gate passed only with Opus passes on half-line crops under 2500 px (70.7 pct; three Sonnet pairs gave 39.3-42.0). Grades H 29, C 260, M 611, I 98, U 22. fr16 judge FAIL (-1.085 vs real_p05 -0.882), but 0.68 above every shuffled control, and the period gloss itself scores -1.545. Key source `period`. | **for LANE V6/V7: reading ready** (verifier; ROOM line 22:20). Its search must cover Ribier 1666, Guise Memoires-journaux, Este correspondence, Tomokiyo guise.htm, BnF Clair 349 catalogue. The 347 exceptions.tsv tokens (gloss-derived or settled) are not checked by the re-derivation; the verifier should sample them against the image. About ten M tokens flagged for re-read (ZX-TR349E: S44 where P is needed, S13 where t, 25/9 87, 26/6-7, 29/13-14, 32/17). |
+| thurloe-barriere-1654 | closed-negative on cryptanalysis alone. ZX-BAR's bare-digit permutation test was corrected (unmatched design, an X); ZX-BAR2 typed the marks: they resolve 8 of 13 conflicting codes vs a shuffle of the same marks 8.27 (range 3-12, p=0.71); a true code+mark design would give 13/13. | a key: the solver repositories' 1655 cipher for this correspondence, DECODE Add MS 4200 records 8395/8398 (images account-blocked). |
+| antt-msliv0638-brochado-1712 | partial, no reading. Five dragging entries hand-checked (no image-provable error); normalization built; gate still passes (85.3 vs 94.4). Letter 134 candidate fails the whole-bucket judge control: 5th percentile of 20 same-procedure LOO decodes under pt17 and pt18, below all 200 real-text windows; likeliest cause 19 of 70 tokens on codes seen 1-3 times. | more attestation for the thin codes (other body letters under the same key); not a cheap test. |
+
+- **Lessons** (LEDGER rows): model tier and crop width, not more passes, moved the Clair 349 leaf (three Sonnet pairs USD 50, one Opus pass pair USD 51 that passed); rotate a key image before calling a table crowded; a permutation test on a statistic its input table already fixes is not a test; score a whole length bucket, not one control, before reading a judge FAIL; a whole-bucket control turned "judge cannot decide" into a placed verdict for USD 3.
+- **Retrospective trigger met** (13 rows, USD 174, one worker X and an orchestrator X), flagged to the parent at 17:35.
+- Tools touched by workers: iiif_lines.py --top-margin, reconcile_passes.py gloss column (tests pass).
+
 ## LANE V6 handoff (session_01V2BHwhVh1k72qSYuBFCyGd), 25 September 2026, written 21:42 UTC (context 431k; V7 starts here)
 
 Brief: `.claude/briefs/runs/2026-09-25-lane-v6-orchestrator.md` with `2026-09-25-lanes-7b-COMMON.md`. Orchestrator usage 7.59 at 21:41 (get_session); workers 31.79 over 9 ledger rows plus V6-QA3 (live at handoff). Every worker below is ledgered and archived except QA3.
