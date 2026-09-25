@@ -5,11 +5,11 @@ orchestrator session_01UXTpujdthrPiBDUG57oNwf. Adversarial audit; this worker di
 key.tsv/reading.txt/ciphertext.tsv, and took no part in LX-TR/LX-BOOK/LX-DEC/LX-SIB's work. Levels N0-N5 are
 CLAUDE.md rule 10.
 
-Claim under audit (NOTES.md "Reading (LX-DEC, 25 Sept 2026)"): pages 2 and 3 of a Portuguese letter in the
-Linhares papers (ANTT PT/TT/CLNH/0086/11, DigitArq docId `a03cef08d3c04758aa148f5be56d3401`, m0002) decode against
-Vieyra's 1809 Portuguese-English pocket dictionary to "para supprir o seu lugar junto com man o d justa he segredo
-ate [null] o ministerio / pela memoria do [unresolved] lhe pauperr ven ha logo" (H 20, M 6); and the key sheet
-(m0003-m0004) names that dictionary only as "o Diccionario".
+Claim under audit (NOTES.md "Reading (LX-DEC, 25 Sept 2026)", updated by "Fix pass (LX-FIX, 25 Sept 2026)"): pages 2
+and 3 of a Portuguese letter in the Linhares papers (ANTT PT/TT/CLNH/0086/11, DigitArq docId
+`a03cef08d3c04758aa148f5be56d3401`, m0002) decode against Vieyra's 1809 Portuguese-English pocket dictionary to
+"para supprir o seu lugar junto com man o d justa he segredo ate [null] o ministerio / pela memoria do cagar lhe
+pauperr ven ha logo" (H 25, M 1); and the key sheet (m0003-m0004) names that dictionary only as "o Diccionario".
 
 ## 1. Executive verdict
 
@@ -58,8 +58,8 @@ open sources).
   `[17--]-[18--]` by the archive's own catalogue (confirmed below, section 4b) -- the archive assigns this bundle
   no narrower date than the two-century span. m0002 carries pages "2" and "3" of a longer letter; pages 1 and 4
   are not part of this 6-image item (established by LX-TR, NOTES.md).
-- Reading as decoded (rule-10-safe quotation, LX-DEC): "para supprir o seu lugar junto com man o d justa he
-  segredo ate [null] o ministerio / pela memoria do [unresolved] lhe pauperr ven ha logo". About a quarter of the
+- Reading as decoded (rule-10-safe quotation, LX-DEC/LX-FIX): "para supprir o seu lugar junto com man o d justa he
+  segredo ate [null] o ministerio / pela memoria do cagar lhe pauperr ven ha logo". About a quarter of the
   26 tokens are single-letter or short dictionary-trim fragments (the key's own fragment-concatenation mechanic
   for proper nouns, e.g. "man", "d", "pauperr", "ven"), not free-standing words, so the fragment does not read as
   connected prose -- a real constraint on how findable it would be by an ordinary phrase search even if printed
@@ -252,3 +252,16 @@ Request counts, this pass (25 Sept 2026): `archive.org` 1, `be-api.us.archive.or
 2 (both failed to resolve a record), `antt.dglab.gov.pt` 2 (PDF fetches), `idi.mne.gov.pt` 1 (403), `github.com`
 2 (shallow clones), WebSearch 8 queries. All sequential, none parallel, all well under any per-host cap; no
 429/403 seen except the two named above (`idi.mne.gov.pt`, and Semantic Scholar's rate limiter).
+
+## 9. Wording refresh (LX-SO, 25 Sept 2026)
+
+LX-FIX (02:19 UTC) settled the group at page3-line1-pos4 after this AUDIT.md was written (02:04 UTC): the digit
+transcription changed from `285219` (no rank-19 entry on page 85, left `[unresolved]`) to `283219` (page 83, col 2,
+rank 19, "cagar"), and 5 of the 6 other M-graded tokens were upgraded to H by direct image evidence. Grade counts
+went H 20/M 6 -> H 25/M 1. The two quoted-reading lines above (section 1's claim line and section 3's "Reading as
+decoded" line) are updated to the current `reading.txt` text and counts; no other line in this file is touched.
+This one-token change does not affect any phrase search this file ran: none of `phrases.txt`'s 8 phrases contains
+the token at p3l1pos4 or the word "unresolved" -- all 8 phrases sit on other tokens (`segredo ate o ministerio`,
+`pela memoria do`, `supprir/suprir o seu lugar`, `seu lugar junto com`), so section 5's search log and section 5(f)/
+(c)/(e)'s "no hits" results stand unchanged. Every class (N3/N3), safe sentence, unsafe sentence and search-log
+entry in sections 1-8 is otherwise left as LX-VER wrote it.
