@@ -626,3 +626,165 @@ single occurrence in the key, not checked against multiple occurrences in the ci
 looks unambiguous once in the key may still be one of several ciphertext-only marks with no key-row match at
 all, which is exactly what `X?` is for, but a pass under time pressure may reach for the nearest S0x instead).
 Kind stays **recovery** (key source: `published` identification of a `period` key sheet).
+
+## ZX-349B (25 Sept 2026)
+
+`python3 tools/intake_gate_check.py ciphers/clair349-este-guise-1556` at 16:38 UTC: `partial (line 1) --
+edition/page or full-text-search citation found within 6 lines`, `EXIT: 0` (also run by the lane orchestrator at
+15:44 UTC before this brief). Gate passes; proceeded per this brief
+(`.claude/briefs/runs/2026-09-25-lane-zx-349b.md`), continuing ZX-349's key-fit question: does the fr.20974 key
+(as transcribed by YX-TR349) actually fit this ciphertext, or is the 39.3% blind-pass agreement evidence of a
+wrong or mismatched key?
+
+**Method note, logged up front (no bounding boxes exist for ciphertext tokens).** Unlike
+`dupuy452-carpi-1520/glyphs/classified.tsv` (the brief's named pattern), which has real per-glyph pixel
+positions, `passC.tsv`/`passD.tsv` record only `line, position` (a token's rank within the line), not `x,y,w,h`.
+`xq_sample.py` (new, this session) estimates a crop window proportionally (token position / that pass's token
+count for the line, times line width) and cuts a generous margin around it; `xq_index.tsv`/`sign_index.tsv`
+record the estimate and the pass's own note text for every sampled token, so an off-centre crop can still be
+judged from the description. Several of the 40+40 sampled crops landed on blank margin or the page's dark
+binding edge for this reason (visible in `images/atlas/xq_sheet.jpg`/`sign_sheet.jpg`) -- flagged, not silently
+dropped. Fixed seed 42 throughout (`python3 xq_sample.py {xq|sign} --seed 42 --n 40`).
+
+**Step 1a: what IS an X? token, across the whole population (593 tokens, both passes pooled), not just the
+40-sample.** Before clustering the 40-sample by eye, categorised all 593 X? notes by keyword (script, not
+committed as a separate file -- reproduce from the note column of `passC.tsv`/`passD.tsv`):
+
+| category | count | share |
+|---|---|---|
+| separator/punctuation mark (vertical bar/stroke, z-shaped curl, double-dash) | 328 | 55.3% |
+| letter-like / ligature cluster (candidate cipher sign) | ~241-244 | ~41% |
+| ink blot / damage / illegible | 13 | 2.2% |
+| plaintext fragment bleeding through (not cipher) | 10 | 1.7% |
+| cut at crop edge | 1 | 0.2% |
+
+**This changes the question.** Only the "letter-like" ~41% is a candidate pool for "does this shape appear on
+the key" at all -- the majority (55.3%) are punctuation the atlas was never meant to cover, and cross-checking
+punctuation against the key's letter/word rows is not the right test for it. The X?-rate reported by ZX-349
+(39.3% pooled disagreement, ~22-32% of each pass's tokens coded X?) therefore overstates the "missing from key"
+problem: at most 10-13% of all ciphertext tokens (the letter-like fraction of the X? fraction) are actually
+candidates for a key-leaf search; the rest is either not a sign at all or a metric/segmentation issue already
+ruled out by ZX-349's own diagnostic.
+
+**Step 1b: the 40 X?-sample (fixed seed 42), clustered by eye + note text, written to
+`images/atlas/xq_types.tsv`** (type, population_count, population_share, sample_idx, sample_count, description,
+key_leaf_match -- full table in that file). Headline sub-types, with population counts recomputed from all 593
+X? tokens by a finer keyword match (script, not committed):
+
+- **separator_vertical_bar** (157, 26.5%) and **separator_z_curl** (162, 27.3%): both very high, regular
+  per-line frequency (approx. 4-5 occurrences per line each, every line) -- too frequent and too regular for a
+  single letter homophone (LESSONS.md "structure before search": a real code sign should track French letter
+  frequency, not recur this uniformly), so on structural grounds these are more likely genuine punctuation
+  between cipher groups, as both passes independently judged, not a missing key sign. Not checked against the
+  key leaf on that basis; flagged that this reasoning is inference from frequency alone, not a formal test.
+- **sign_to_ligature** (35 occurrences, 5.9% of all X?): a recurring "to"-like ligature. **FOUND on the key
+  leaf**, directly: `p57_alpha_seg3.jpg` (bottom right, under the crowded O/P/Q cluster), `p57_alpha_seg4.jpg`
+  ("to.102"), `p57_monosyl_row1.jpg` (code row, cut at the crop's lower edge but the shape is visible),
+  `p69_alpha_full.jpg` ("to . 102", clearly legible on the less-crowded p69 rendering of the same template row).
+  All four sightings sit in rows `key_alpha.tsv`/`key_nomen.tsv` left graded M/"unresolved" (L-Z alphabet
+  stretch, Monosillabes row 1) -- present on the key leaf, just never isolated into an atlas S-code because that
+  part of the key image itself was too crowded to read with confidence (YX-TR349's own limitation, not a
+  ciphertext problem).
+- **sign_R_loop** (25, 4.2%): a looped capital "R" with a trailing tail. Plausible match in
+  `p57_left_wordlist.jpg`'s code column (near the "hault. Lorraine"/nomenclator name rows) -- same shape family,
+  not confirmed as the identical mark at matched precision.
+- **sign_Ao_ligature** (39, 6.6%, the single largest specific letter-like sub-type after the two separator
+  families): a bold capital "A" joined to a small loop, checked directly this session by cropping three fresh
+  instances (line03 pos7, line08 pos24, line11 pos18) -- a compact, closed, consistent ligature across all
+  three. **NOT found** on any key-leaf section viewed this pass (both alphabet rows, both Doubles/Nulles rows,
+  both Monosillabes rows, both word lists). This shape closely resembles the period secretary-hand abbreviation
+  "Ao" for "an"/"annee" (year) -- which would make it a plaintext/date fragment bleeding through, like the
+  "quel"/"bon"/"que" fragments already found, rather than a cipher sign at all -- but at roughly 1.2 occurrences
+  per line it recurs far too often for a date reference. **Genuinely unresolved; the single highest-value open
+  question from this pass.**
+- **sign_Y_like** (12), **sign_u_like** (10), **sign_s_like** (9): not checked against the key leaf this pass
+  (time budget), flagged as follow-up.
+- **sign_other_letterlike** (114, a long tail of one-off descriptions, e.g. "capital A-like flourish", "ligature
+  cluster (nao g-like)", "capital ligature cluster (Cml-like)"): this worker's scan of `p57_left_wordlist.jpg`
+  and `p57_monosyl_row2.jpg` shows several small loop/curl marks in the same general family (a cursive "e"-loop,
+  an "8"-loop, a "y", a plus/cross, a spiral), but no side-by-side comparison at matched crop precision was done
+  for these -- not resolved.
+
+**Step 1c: 40 matched-sign-token sample (fixed seed 42), `images/atlas/sign_sheet.jpg`/`sign_index.tsv`.**
+Distribution: S13 (plus/cross) 12, S24 6, S06 5, S20 4, S09 3, S07 3, S01 2, S23 2, S16 2, S10 1. Same crop-window
+imprecision as step 1b applies (several crops landed on margin or digit-only regions with the target sign just
+outside the window). Where ink was visible in the window, no crop showed an obviously wrong shape for its
+claimed code (no case where the visible mark is clearly a different, unrelated shape from the claimed S0x's
+atlas description) -- this is a qualitative spot check, not a rigorous per-token confirmation, and is reported
+with that limit stated rather than as a clean "yes, all confirmed."
+
+**Step 2: control, `dupuy452-carpi-1520` (found-solved; key confirmed to fit by shape-match, grade H, per its own
+`key.tsv`).** The brief's named pattern is `dupuy468-carpi-1520`, which does not exist as a folder; the actual
+Carpi-1520 target with a glyph atlas is `dupuy452-carpi-1520` (its `glyphs/` directory, `classified.tsv` with
+real per-token `x,y,w,h`, `key.tsv`, `contact_sheet.jpg` -- used instead, logged here as the conservative
+reading of the brief's typo rather than treating "no exact folder name" as "none on disk"). Because this target
+already has real pixel bounding boxes and an existing, graded (H-level) shape-to-key correspondence across its
+whole 5,725-token population, this worker used that existing correspondence directly (`key.tsv`'s `kind` column
+against `glyphs/classified.tsv`'s `type` column) rather than re-cropping a fresh 40+40 sample -- a stronger
+measurement (n=5,725, not n=80) of the same question the brief's 40+40 procedure asks, and viewed
+`glyphs/contact_sheet.jpg` (already on disk, one row per type, every occurrence of that type shown) to confirm
+by eye that each type's occurrences are visually tight and consistent (they are -- the sheet's rows are
+near-identical within a row, unlike this session's `xq_sheet.jpg`/`sign_sheet.jpg`).
+
+Result: **49 of 51 distinct glyph types (99.8% of 5,725 tokens) map to a `key.tsv` entry graded `letter`,
+`word` or `null`; only 2 types (`cross4`, `?`; 12 tokens, 0.2%) are `open` (not yet resolved to a key value).**
+This is the profile of a key that genuinely fits: almost nothing is unmatched, and what is unmatched is a small,
+named residue, not a broad population of unexplained shapes. Contrast with clair349's ~41% letter-like-candidate
+X? rate (even after removing punctuation) -- clair349 is far short of this profile, but per step 1 above a real
+part of that gap is explained by the key's own incomplete transcription (to-ligature, R-loop found on the leaf
+but never atlas-coded) rather than by the key being wrong.
+
+**Verdict in numbers (per the brief's step 3).** Neither of the brief's two clean branches is fully supported:
+
+- NOT "most X? types are absent from the key" -- of the letter-like sub-types actually checked against the key
+  leaf this pass (to-ligature 35, R-loop 25 = 60 tokens, the two largest specific types after the punctuation
+  families and the unresolved Ao-ligature), both were found on the leaf, in rows the key transcription itself
+  left unresolved. No sub-type was confirmed ciphertext-side and confirmed ABSENT after a real search of the
+  full key leaf; every non-match this pass is "not checked" or "not found in the sections viewed," not
+  "searched exhaustively and ruled out."
+- NOT "most X? types are on the key leaf, extend atlas.tsv" either -- most of the letter-like population (Ao-
+  ligature 39, Y-like 12, u-like 10, s-like 9, other 114 = 184 of 244, 75%) is either not yet checked or (Ao-
+  ligature specifically) checked and NOT found, with a live alternative explanation (a plaintext date
+  abbreviation) not ruled out.
+- The control shows what "this key fits" actually looks like quantitatively (99.8% type-to-key match) --
+  clair349 is not at that level, but the shortfall traces at least partly to the key's OWN incomplete
+  transcription (L-Z alphabet, most Monosillabes and word-list codes still graded M/unresolved,
+  `key_alpha.tsv`/`key_nomen.tsv`), not to evidence the fr.20974 key is the wrong key for this letter.
+
+**Conservative call, taken unsupervised per the no-human-watches rule:** not extending `atlas.tsv` with new
+S27+ codes this session -- the to-ligature/R-loop matches found are visual correspondences from an estimated
+(not exact) ciphertext crop to a similarly not-yet-precisely-isolated key row, not the same grade of evidence as
+the existing S01-S26 crops (each of which came from a confidently isolated key cell). Also not concluding the
+key does not fit or setting `closed-negative` -- the evidence found points the other way (concrete matches, no
+confirmed non-matches) and rule 3 requires a matched control before any negative; this pass's one control
+(dupuy452) shows what a genuine fit looks like, not what a genuine non-fit looks like, so it cannot itself
+support a negative verdict either. Status stays **partial**.
+
+**Next brief's line (this worker's own choice, not a third blind pass, not an atlas extension yet):** resolve
+the key leaf's own unresolved rows for the two shapes this pass actually found (to-ligature, R-loop) with a
+close, non-blind read targeted at just those two shapes (not the whole crowded L-Z/Monosillabes cluster) --
+if that produces a real crop and column position, add S27 (to-ligature)/S28 (R-loop) to `atlas.tsv` from the KEY
+image, not the ciphertext guess. Separately, resolve the Ao-ligature question (39 occurrences, once per line) by
+checking French-period-letter epistolary convention for a per-line marginal/interlinear date or paragraph mark
+that would explain a once-per-line recurrence, since "cipher homophone" does not fit that frequency either. Only
+after both are resolved does a third, non-blind reconciliation pass (ZX-349's option (a)) or a further blind
+pass make sense -- a third blind pass alone would very likely reproduce the same ~39% agreement ZX-349 already
+found twice.
+
+**Files:** `xq_sample.py` (new; samples+crops+builds a contact sheet for X? or matched-sign tokens, fixed seed);
+`xq_index.tsv`, `sign_index.tsv` (per-sample idx/pass/line/position/token/note/crop/estimate-window);
+`images/atlas/xq_crops/` (40 files), `images/atlas/sign_crops/` (40 files), `images/atlas/xq_sheet.jpg`,
+`images/atlas/sign_sheet.jpg` (contact sheets, this worker's own visual read); `images/atlas/xq_types.tsv` (the
+brief's requested type/count/description/key_leaf_match table); `images/manifest.json` (new entry for the
+derived crop/sheet files, imprecision caveat recorded). `images/` folder size after this session: 29MB (cap
+30MB, checked with `du -sh`). No changes to `key_alpha.tsv`, `key_nomen.tsv`, `atlas.tsv`, `passC.tsv`,
+`passD.tsv`, `ciphertext_draft.tsv` this session.
+
+**Grades (rule 4):** 0 H/C/S claimed as a reading -- nothing decoded, this pass is entirely about whether the
+key-fit question can be answered, not a decode. The to-ligature/R-loop key-leaf sightings are this worker's own
+visual read (not a grade-H committed key entry -- no crop was cut from a confidently isolated key cell this
+session).
+
+**Hosts this session:** none (all work from images already on disk). No subagents (the brief's step 1 does not
+call for subagents; this worker's own visual/scripted work throughout, consistent with ZX-349's step 1
+precedent).

@@ -1,0 +1,41 @@
+idx	pass	line	position	token	kind	grade	note	crop	est_window_px
+1	passC.tsv	11	38	X?	sign	M	ambiguous ink blot, possibly damaged sign	images/atlas/xq_crops/xq01_passC.tsv_L11_P38.jpg	3441-3701
+2	passC.tsv	03	12	X?	sign	H	z-shaped separator mark	images/atlas/xq_crops/xq02_passC.tsv_L03_P12.jpg	1212-1508
+3	passD.tsv	04	28	X?	sign	M	vertical stroke separator	images/atlas/xq_crops/xq03_passD.tsv_L04_P28.jpg	3534-3871
+4	passC.tsv	33	18	X?	sign	H	z-shaped separator mark	images/atlas/xq_crops/xq04_passC.tsv_L33_P18.jpg	2188-2524
+5	passC.tsv	29	2	X?	sign	H	z-shaped separator mark	images/atlas/xq_crops/xq05_passC.tsv_L29_P2.jpg	24-284
+6	passC.tsv	15	6	X?	sign	H	z-shaped separator mark	images/atlas/xq_crops/xq06_passC.tsv_L15_P6.jpg	420-680
+7	passC.tsv	11	2	X?	sign	M	"cursive word fragment ""bonate/donate"", plaintext-like, not matched in atlas"	images/atlas/xq_crops/xq07_passC.tsv_L11_P2.jpg	12-272
+8	passD.tsv	30	7	X?	sign	M	blotted cluster, shape unclear	images/atlas/xq_crops/xq08_passD.tsv_L30_P7.jpg	759-1120
+9	passC.tsv	09	28	X?	sign	H	z-shaped separator mark	images/atlas/xq_crops/xq09_passC.tsv_L09_P28.jpg	2554-2814
+10	passD.tsv	16	19	X?	sign	M	vertical stroke separator	images/atlas/xq_crops/xq10_passD.tsv_L16_P19.jpg	2172-2487
+11	passC.tsv	04	6	X?	sign	H	z-shaped separator mark	images/atlas/xq_crops/xq11_passC.tsv_L04_P6.jpg	461-732
+12	passC.tsv	03	29	X?	sign	H	vertical bar separator	images/atlas/xq_crops/xq12_passC.tsv_L03_P29.jpg	3224-3520
+13	passC.tsv	10	13	X?	sign	H	vertical bar separator	images/atlas/xq_crops/xq13_passC.tsv_L10_P13.jpg	1121-1381
+14	passC.tsv	28	13	X?	sign	H	z-shaped separator mark	images/atlas/xq_crops/xq14_passC.tsv_L28_P13.jpg	1255-1534
+15	passC.tsv	30	19	X?	sign	H	z-shaped separator mark	images/atlas/xq_crops/xq15_passC.tsv_L30_P19.jpg	2405-2754
+16	passD.tsv	24	24	X?	sign	M	vertical stroke separator	images/atlas/xq_crops/xq16_passD.tsv_L24_P24.jpg	2482-2761
+17	passC.tsv	03	18	X?	sign	M	tall V-like ascender, unclear	images/atlas/xq_crops/xq17_passC.tsv_L03_P18.jpg	1922-2218
+18	passD.tsv	31	23	X?	sign	M	"small ""s""-like sign"	images/atlas/xq_crops/xq18_passD.tsv_L31_P23.jpg	2963-3312
+19	passC.tsv	24	15	X?	sign	H	z-shaped separator mark	images/atlas/xq_crops/xq19_passC.tsv_L24_P15.jpg	1285-1545
+20	passD.tsv	16	12	X?	sign	M	to-like ligature cluster	images/atlas/xq_crops/xq20_passD.tsv_L16_P12.jpg	1291-1606
+21	passC.tsv	28	23	X?	sign	H	z-shaped separator mark	images/atlas/xq_crops/xq21_passC.tsv_L28_P23.jpg	2370-2649
+22	passD.tsv	18	17	X?	sign	M	"small ""u""-like sign"	images/atlas/xq_crops/xq22_passD.tsv_L18_P17.jpg	1701-1980
+23	passD.tsv	05	9	X?	sign	M	vertical stroke separator	images/atlas/xq_crops/xq23_passD.tsv_L05_P9.jpg	884-1189
+24	passC.tsv	01	25	X?	sign	M	"cursive word ""quel"", plaintext fragment not cipher sign"	images/atlas/xq_crops/xq24_passC.tsv_L01_P25.jpg	2751-3047
+25	passC.tsv	16	37	X?	sign	H	z-shaped separator mark	images/atlas/xq_crops/xq25_passC.tsv_L16_P37.jpg	3524-3784
+26	passD.tsv	10	24	X?	sign	M	vertical stroke separator	images/atlas/xq_crops/xq26_passD.tsv_L10_P24.jpg	2284-2544
+27	passC.tsv	16	24	X?	sign	H	z-shaped separator mark	images/atlas/xq_crops/xq27_passC.tsv_L16_P24.jpg	2223-2483
+28	passC.tsv	27	38	X?	sign	H	z-shaped separator mark	images/atlas/xq_crops/xq28_passC.tsv_L27_P38.jpg	3624-3884
+29	passD.tsv	10	11	X?	sign	M	"capital ""R""-like cluster"	images/atlas/xq_crops/xq29_passD.tsv_L10_P11.jpg	949-1209
+30	passC.tsv	10	11	X?	sign	H	z-shaped separator mark	images/atlas/xq_crops/xq30_passC.tsv_L10_P11.jpg	921-1181
+31	passD.tsv	13	5	X?	sign	M	"capital ""Y""-like cluster"	images/atlas/xq_crops/xq31_passD.tsv_L13_P5.jpg	384-680
+32	passC.tsv	10	27	X?	sign	H	z-shaped separator mark	images/atlas/xq_crops/xq32_passC.tsv_L10_P27.jpg	2523-2783
+33	passD.tsv	11	38	X?	sign	M	f-capital cluster near blot	images/atlas/xq_crops/xq33_passD.tsv_L11_P38.jpg	2394-2654
+34	passD.tsv	11	1	X?	sign	M	to-like cluster, cut at crop edge	images/atlas/xq_crops/xq34_passD.tsv_L11_P1.jpg	0-163
+35	passD.tsv	03	33	X?	sign	M	vertical stroke separator	images/atlas/xq_crops/xq35_passD.tsv_L03_P33.jpg	3389-3660
+36	passC.tsv	05	13	X?	sign	H	vertical bar separator	images/atlas/xq_crops/xq36_passC.tsv_L05_P13.jpg	1255-1534
+37	passD.tsv	19	3	X?	sign	M	to-like ligature cluster	images/atlas/xq_crops/xq37_passD.tsv_L19_P3.jpg	102-362
+38	passD.tsv	28	16	X?	sign	M	"capital ligature ""Ao""-like, recurring shape"	images/atlas/xq_crops/xq38_passD.tsv_L28_P16.jpg	2140-2515
+39	passC.tsv	13	20	X?	sign	H	vertical bar separator	images/atlas/xq_crops/xq39_passC.tsv_L13_P20.jpg	1926-2189
+40	passD.tsv	13	2	X?	sign	M	looped cluster, no atlas match	images/atlas/xq_crops/xq40_passD.tsv_L13_P2.jpg	29-325

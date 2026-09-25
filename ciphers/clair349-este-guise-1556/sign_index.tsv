@@ -1,0 +1,41 @@
+idx	pass	line	position	token	kind	grade	note	crop	est_window_px
+1	passC.tsv	13	25	S09	sign	M	"compact looped ligature ""to"""	images/atlas/sign_crops/sign01_passC.tsv_L13_P25.jpg	2453-2717
+2	passC.tsv	04	16	S13	sign	M	plus/cross mark	images/atlas/sign_crops/sign02_passC.tsv_L04_P16.jpg	1545-1816
+3	passC.tsv	26	3	S06	sign	M	"cursive loop ligature ""6n"""	images/atlas/sign_crops/sign03_passC.tsv_L26_P3.jpg	147-443
+4	passC.tsv	24	2	S24	sign	M	word-like ligature	images/atlas/sign_crops/sign04_passC.tsv_L24_P2.jpg	16-276
+5	passC.tsv	22	13	S20	sign	M	"fancy looped flourish ""fo"""	images/atlas/sign_crops/sign05_passC.tsv_L22_P13.jpg	1331-1627
+6	passC.tsv	16	12	S01	sign	M	"ornate capital flourish ""Ao"""	images/atlas/sign_crops/sign06_passC.tsv_L16_P12.jpg	1021-1281
+7	passC.tsv	12	21	S20	sign	M	fancy looped flourish	images/atlas/sign_crops/sign07_passC.tsv_L12_P21.jpg	2031-2295
+8	passD.tsv	32	4	S07	sign	M	looped ascender	images/atlas/sign_crops/sign08_passD.tsv_L32_P4.jpg	251-529
+9	passC.tsv	11	19	S13	sign	M	"cross-like ligature ""tAo"""	images/atlas/sign_crops/sign09_passC.tsv_L11_P19.jpg	1632-1892
+10	passD.tsv	06	32	S20	sign	M	"looped capital ""Y""-like"	images/atlas/sign_crops/sign10_passD.tsv_L06_P32.jpg	3375-3653
+11	passC.tsv	04	34	S10	sign	M	looped ascender ligature, approximate match	images/atlas/sign_crops/sign11_passC.tsv_L04_P34.jpg	3498-3769
+12	passC.tsv	04	29	S23	sign	M	x/cross mark	images/atlas/sign_crops/sign12_passC.tsv_L04_P29.jpg	2955-3227
+13	passC.tsv	11	40	S20	sign	M	fancy looped flourish	images/atlas/sign_crops/sign13_passC.tsv_L11_P40.jpg	3632-3892
+14	passC.tsv	22	2	S06	sign	M	cursive loop ligature	images/atlas/sign_crops/sign14_passC.tsv_L22_P2.jpg	29-325
+15	passC.tsv	23	3	S16	sign	M	"tall flourish ""Y"""	images/atlas/sign_crops/sign15_passC.tsv_L23_P3.jpg	162-488
+16	passD.tsv	23	8	S07	sign	M	looped ascender	images/atlas/sign_crops/sign16_passD.tsv_L23_P8.jpg	903-1265
+17	passC.tsv	04	24	S06	sign	M	cursive loop ligature	images/atlas/sign_crops/sign17_passC.tsv_L04_P24.jpg	2413-2684
+18	passC.tsv	20	13	S06	sign	M	"cursive loop ligature ""guu"""	images/atlas/sign_crops/sign18_passC.tsv_L20_P13.jpg	1464-1789
+19	passD.tsv	06	12	S07	sign	M	looped ascender	images/atlas/sign_crops/sign19_passD.tsv_L06_P12.jpg	1143-1422
+20	passC.tsv	22	5	S13	sign	M	"cross-like ligature ""ftoi"""	images/atlas/sign_crops/sign20_passC.tsv_L22_P5.jpg	384-680
+21	passD.tsv	11	34	S13	sign	M	plus/cross mark	images/atlas/sign_crops/sign21_passD.tsv_L11_P34.jpg	2125-2385
+22	passC.tsv	26	9	S13	sign	M	plus/cross mark	images/atlas/sign_crops/sign22_passC.tsv_L26_P9.jpg	857-1153
+23	passC.tsv	02	11	S06	sign	M	loop ligature	images/atlas/sign_crops/sign23_passC.tsv_L02_P11.jpg	1032-1310
+24	passC.tsv	17	26	S24	sign	M	"word-like ligature ""u"""	images/atlas/sign_crops/sign24_passC.tsv_L17_P26.jpg	3156-3481
+25	passC.tsv	30	22	S13	sign	M	plus/cross mark	images/atlas/sign_crops/sign25_passC.tsv_L30_P22.jpg	2824-3172
+26	passC.tsv	17	20	S24	sign	M	"word-like ligature ""n"""	images/atlas/sign_crops/sign26_passC.tsv_L17_P20.jpg	2375-2700
+27	passC.tsv	21	26	S13	sign	M	plus/cross mark	images/atlas/sign_crops/sign27_passC.tsv_L21_P26.jpg	2959-3264
+28	passC.tsv	30	13	S13	sign	M	plus/cross mark	images/atlas/sign_crops/sign28_passC.tsv_L30_P13.jpg	1568-1917
+29	passC.tsv	11	39	S09	sign	M	"compact looped ligature ""fi"""	images/atlas/sign_crops/sign29_passC.tsv_L11_P39.jpg	3536-3796
+30	passC.tsv	33	11	S13	sign	M	plus/cross mark	images/atlas/sign_crops/sign30_passC.tsv_L33_P11.jpg	1245-1582
+31	passC.tsv	12	7	S01	sign	M	"ornate capital flourish ""Af"""	images/atlas/sign_crops/sign31_passC.tsv_L12_P7.jpg	554-817
+32	passC.tsv	31	26	S13	sign	M	plus/cross mark	images/atlas/sign_crops/sign32_passC.tsv_L31_P26.jpg	3265-3602
+33	passC.tsv	30	28	S24	sign	M	"word-like ligature ""nn"""	images/atlas/sign_crops/sign33_passC.tsv_L30_P28.jpg	3660-3905
+34	passC.tsv	25	17	S09	sign	M	"compact looped ligature ""to"""	images/atlas/sign_crops/sign34_passC.tsv_L25_P17.jpg	1522-1782
+35	passC.tsv	06	30	S24	sign	M	word-like ligature	images/atlas/sign_crops/sign35_passC.tsv_L06_P30.jpg	2981-3245
+36	passD.tsv	13	28	S13	sign	M	plus/cross mark	images/atlas/sign_crops/sign36_passD.tsv_L13_P28.jpg	3106-3402
+37	passD.tsv	30	1	S23	sign	M	small x-cross mark	images/atlas/sign_crops/sign37_passD.tsv_L30_P1.jpg	0-253
+38	passC.tsv	14	33	S13	sign	M	plus/cross mark	images/atlas/sign_crops/sign38_passC.tsv_L14_P33.jpg	3209-3469
+39	passC.tsv	33	5	S16	sign	M	tall flourish	images/atlas/sign_crops/sign39_passC.tsv_L33_P5.jpg	437-774
+40	passC.tsv	10	25	S24	sign	M	"word-like ligature ""uma"""	images/atlas/sign_crops/sign40_passC.tsv_L10_P25.jpg	2323-2583
