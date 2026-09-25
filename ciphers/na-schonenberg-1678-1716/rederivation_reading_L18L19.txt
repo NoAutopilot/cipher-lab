@@ -1,0 +1,22 @@
+Rederived decoding of L18 and L19 (no gloss present on the original page for either line),
+using the key derived independently from the L01-L14 (group, gloss) pairs
+(see rederivation_key.tsv). "?" marks a code with no majority value in the key
+(a genuine tie) or a code that never appears at all in L01-L14.
+
+L18 (5 codes: 61, 68, 2), 88, )8):
+?orma
+
+L19 (23 codes: [triangle], 59, 24, [n], 34, [tilde], 6), 51, 68, ?9, 32, 6, 3), 16, 12, 65, 13, 56, 6), 54, 8), 65, 11):
+ad???An?o?yadea?banyP??
+
+Assessment: L18's "?orma" is only one code short of a real Spanish word (forma/norma/"a
+la orma" etc.) and looks plausible, but with one code in five uncovered I would not lean
+on it. L19 does not look like real Spanish to me: five of its 23 codes resolve to "?"
+(one code, [n], never occurs at all in L01-L14; four others -- 24, 34, 51, 65 (twice),
+11 -- are genuine ties in the key with no majority letter), and the result is dominated
+by unresolved gaps and isolated letters ("ad???An?o?ya...") rather than recognisable
+syllables or words. My honest read is that this line cannot be reconstructed reliably
+from the L01-L14 key alone: too many of its codes are either absent from the sample
+lines' vocabulary or landed on ties in that sample. A larger sample (more lines with
+gloss, or attention to the page image for these two specific lines) would be needed
+before trusting a reading of L19.

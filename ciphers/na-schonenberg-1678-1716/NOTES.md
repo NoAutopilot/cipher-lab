@@ -1,4 +1,7 @@
-open
+partial
+VX-RD01, 25 Sept 2026: the leaf's own period gloss transcribed for L01-L14 (H-grade key source per rule 4); the
+two unglossed closing lines (L18-L19) partially decoded from a key built off that gloss, mostly grade M/U -- see
+"Reading (VX-RD01, 25 Sept 2026)" below. check-solved's own verdict (unchanged, this worker did not repeat it):
 Nationaal Archief 1.02.04 finding aid (26-page PDF, `www.nationaalarchief.nl/onderzoeken/archief/1.02.04/download/pdf`) read in full by this worker (grepped for cijfer/cijferschrift/geheimschrift/chiffre/sleutel across all ~152 inventory numbers); Internet Archive full-text search `"Schonenberg brieven"` (0 hits, no printed edition of this envoy's correspondence exists on IA); Huygens retroboeken *Briefwisseling van Anthonie Heinsius 1702-1720* full-text search (`resources.huygens.knaw.nl/retroboeken/heinsius/search_in_text`) for `Schonenberg` (413 hits, all his official correspondence with Heinsius, none mention Albanilla/Albanylla) and `Albanilla`/`Albanylla` (0 hits each) read by this worker.
 
 QUEUE row: VX-E01. Worker: LANE VX VX-CS01 (Sonnet, session_01HitmZCRTQ5GgjaHVG5yRcB), 25 Sept 2026. Job: `.claude/briefs/runs/2026-09-25-lane-vx-cs01.md`.
@@ -71,3 +74,93 @@ No collision found anywhere with this item. Distinct from `HU3` (Schonenberg-to-
 - WebSearch tool: 8 queries (not a single host).
 
 All well under the job's caps (nationaalarchief.nl/service.archief.nl combined <=60, huygens <=40).
+
+## Reading (VX-RD01, 25 Sept 2026)
+
+**Kind: recovery, key source `period`** (the leaf's own contemporary interlinear Spanish gloss over lines
+L01-L14; the two unglossed closing lines, L18-L19, are this worker's own application of a key built from that
+gloss, not a transcription of an existing decipherment).
+
+**Transcription.** Two blind Sonnet subagent passes (passA.tsv, passB.tsv) transcribed the whole leaf from the
+crop images independently, recording every cipher group and the Spanish letter glossed directly above it.
+Reconciling them found that passA's line numbering drifted from L04 on: content-matching shows it skipped or
+reordered one physical line (P4/P5), then read every later line's gloss one position off starting around
+position 7 of that line -- diagnosed by comparing both passes against this worker's own pixel-verified recount of
+L06, the one line on the leaf where the gloss letter count (20) exactly equals the cipher group count (20) with
+no word-signs, so the correspondence is unambiguous. That recount agrees with passB position-for-position, 20/20;
+it disagrees with passA from position 7 on, in a pattern consistent with a single off-by-one slip that then
+persists (passA's own group *set* for that line is right, only its gloss alignment drifts). `ciphertext.tsv`
+therefore reconciles as: passB's transcription taken as primary; this worker's L06 recount substituted where the
+two conflict; a direct 4x re-crop of the two unglossed target lines themselves (`images/crop_u1.jpg`,
+`crop_u2_top.jpg`, `crop_u2_bottom.jpg`) settling their own signs, with one correction to passB there -- a solid
+ink blot immediately followed by a legible "9" in L19 is one 2-digit group with its tens digit obscured, not two
+separate signs.
+
+**Key.** `key.tsv`: 87 distinct codes found in the L01-L14 gloss (period key source). Grade C assigned only where
+a code's gloss agrees >=75% of the time across >=2 occurrences in passB's own tally, or where this worker's L06
+recount fixes it unambiguously (29 codes). Grade M where a code has a real plurality short of that margin (39
+codes). Left unkeyed `[?]`, grade U, where the gloss ties between two or more letters with no majority, or the
+code never appears in the glossed lines at all (19 codes). `conflicts.tsv` lists 49 codes glossed more than one
+way anywhere in passB; spot-checking one against the image (code `50`, this worker's L06 recount reads it `r`,
+its only pixel-verified occurrence, against a `4/8` majority for `s` everywhere else it recurs in passB) shows
+the leaf's dense middle lines (L04-L05, L07-L14) carry real transcription/alignment noise on top of genuine
+homophony -- both subagent passes flagged most of that stretch M-confidence themselves, and this worker did not
+adjudicate every one of the 49 conflicts against the image; L06 is the only line checked pixel-by-pixel start to
+finish.
+
+**L18 and L19** (the two lines after the plain word "forma." and before the address, no gloss on the leaf at
+all): applying key.tsv to the reconciled ciphertext (`tools/decode_key.py ciphers/na-schonenberg-1678-1716
+--check`, 0 diff) gives, token by token (`reading_tokens.tsv`):
+
+- L18 (5 groups): `[?] o(C) r(C) m(M) a(M)` -> **"?orma"**
+- L19 (23 groups): `a(C) d(M) [?] [?] [?] a(M) n(C) [?] o(C) [?] y(C) a(C) d(C) e(C) a(M) [?] b(C) a(M) n(C) y(C) p(M) [?] [?]` -> **"ad???an?o?yadea?banyp??"**
+
+Counts across L18+L19 (28 tokens): C 12, M 7, U 9, H 0, S 0, I 0.
+
+`specs/na-schonenberg-1678-1716.json` + `python3 tools/judge_plaintext.py specs/na-schonenberg-1678-1716.json
+--text "ormaadanoyadeabanyp"` (the 19 non-`[?]` letters of L18+L19 run together): **PASS** (`min_word_cover: 0.4`
+and, checked separately, a language-model pass too). A PASS here is not a claimed reading (rule 10): with 9 of 28
+tokens unkeyed and dropped and most of the rest grade M, this is what an incomplete key produces on a short
+window, not evidence the candidate is real Spanish -- reported as a FAIL would have been, per rule 7. The one
+observation worth a second reader's eye, not claimed as a reading: L18's four resolved letters spell "-ORMA", one
+letter short of repeating the plain word "forma." that sits immediately to its left on the page; a coincidence at
+this length is not ruled out.
+
+**Fresh-instance re-derivation (rule 7).** A separate Sonnet subagent, given only `ciphertext.tsv`'s group+gloss
+columns and the crop images -- not `key.tsv`, not this reasoning, not this worker's grades -- independently
+rebuilt its own key from L01-L14 (`rederivation_key.tsv`) and decoded L18/L19 (`rederivation_reading_L18L19.txt`,
+`rederivation_report.md`). Its tally found 38 unanimous codes, 27 clear-majority codes and 22 genuine ties among
+the same 87 codes (a different threshold from this worker's C/M/U split, so the *counts* per bucket are not
+directly comparable), but its **decoded values agree with this worker's reading at every one of the 28 L18+L19
+positions**, including which five positions are unresolvable (`61` in L18; `[n]`, `24`, `34`, `51`, one of the two
+`65`s, and `11` in L19 -- the independent pass calls these six genuine ties/absences against this worker's five
+U-grade + one M-grade weak call at the same spots, close enough to count as the same finding): "?orma" and
+"ad???An?o?yadea?banyP??" (case of A/P aside). Zero disagreement beyond the M-graded tokens -- this reading
+clears rule 7's fresh-instance bar.
+
+**Letter's gist** (M-grade paraphrase from the leaf's own gloss, L01-L14, not a full translation -- do not rely on
+this for anything beyond a rough sense of subject matter): an unsigned, undated chancery letter opening "Amigo."
+and closing "...en esta forma", discussing "aver mudado este go[bi]erno" (this government having changed),
+"circunstancias", and a reply with more "seguridad" (security/certainty) -- consistent with NOTES.md's existing
+read (see "What this is" above) of a guarded political or personal dispatch from Schonenberg's own chancery to
+Doña Antonia de Albanylla.
+
+**What was not found.** No code beyond the 29 grade-C ones is established with real confidence; the two unglossed
+lines' reading is a partial, mostly M/U-grade application of an incomplete key, not a recovered plaintext. This
+worker did not classify novelty (rule 10) -- that is the verifier's job on AUDIT.md, including whether the
+existing period gloss over L01-L14 (already on the leaf before this worker touched it) itself counts as
+"solved" for board purposes.
+
+**Suggested next step** (not run here, brief did not name it): a third, targeted transcription pass over just the
+dense L04-L05/L07-L14 stretch, cross-checked position-by-position against the image the way L06 was, would likely
+raise several of the 39 M-grade and some of the 19 unkeyed codes to grade C -- the leaf itself is legible enough
+(L06, L18, L19 all read cleanly at 4x zoom); the bottleneck was gloss-to-group positional alignment in crowded
+handwriting, not image quality.
+
+Files: `passA.tsv`, `passA_summary.txt`, `passB.tsv`, `passB_summary.txt`, `ciphertext.tsv`, `key.tsv`,
+`conflicts.tsv`, `decode.json`, `reading.txt`, `reading_tokens.tsv`, `rederivation_key.tsv`,
+`rederivation_reading_L18L19.txt`, `rederivation_report.md`, `images/crop_u1.jpg`, `images/crop_u2_top.jpg`,
+`images/crop_u2_bottom.jpg`, `images/manifest.json` (updated), `specs/na-schonenberg-1678-1716.json`.
+
+Hosts this job: none (all work from the image already on disk; no new fetches from service.archief.nl or any
+other host).
