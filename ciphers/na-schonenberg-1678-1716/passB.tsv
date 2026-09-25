@@ -1,0 +1,281 @@
+line	pos	group	gloss	conf	note
+L01	0	89	n	H
+L01	1	46	o	H
+L01	2	56	a	H
+L01	3	13	b	H
+L01	4	)6	y	M	tick position uncertain
+L01	5	60	en	M	gloss is "e" with small superscript tilde/n abbreviation for "en"
+L01	6	23	M		inserted above the line (looks like a caret insertion), no gloss letter visible over it
+L01	7	[blot]	M		solid dark ink blot, obscures the sign; no legible gloss above it either
+L01	8	15	l	H
+L01	9	3	o	H
+L01	10	45	N	M	gloss letter written bold/dark, different ink from rest of gloss line, possible later correction
+L01	11	24	o	H
+L01	12	35	b	H
+L01	13	38	e	H
+L02	0	81	a	H
+L02	1	6	d	H
+L02	2	3)	e	M
+L02	3	16	n	H
+L02	4	89	e	H
+L02	5	10	s	H
+L02	6	50	t	H
+L02	7	29	a	H
+L02	8	34	s	H
+L02	9	28	P	H
+L02	10	25	a	H
+L02	11	56	r	H
+L02	12	)1	t	M
+L02	13	95	e	H
+L02	14	10	s	H
+L02	15	94	q	H
+L02	16	)0	u	M
+L02	17	)5	e	M
+L03	0	8)	P	M
+L03	1	12	a	H
+L03	2	59	d	H
+L03	3	60	e	H
+L03	4	[tilde]	A	M	small wave/tilde shape, gloss looks like "A" above it
+L03	5	55	b	H
+L03	6	60	e	H
+L03	7	2)	r	M
+L03	8	88	m	H
+L03	9	30	u	H
+L03	10	15	d	H
+L03	11	)8	a	M
+L03	12	31	d	H
+L03	13	90	o	H
+L03	14	[X]	e	M	drawn X shape in place of a numeral group; gloss above reads "e"
+L03	15	)2	s	M
+L03	16	51	t	H
+L03	17	60	e	H
+L04	0	18	g	H
+L04	1	3	o	H
+L04	2	30	v	H
+L04	3	98	y	H
+L04	4	82	e	H
+L04	5	49	r	H
+L04	6	23	m	H
+L04	7	68	o	H
+L04	8	14	l	H
+L04	9	46	o	H
+L04	10	89	n	H
+L04	11	21	L	H
+L04	12	56	a	H
+L04	13	50	s	H
+L04	14	33	z	H
+L04	15	54	y	H
+L04	16	21)	n	M
+L04	17	36)	e	M
+L04	18	45	n	M	gloss/group count off by one here (20 gloss letters vs 19 groups counted); positional guess only
+L05	0	50	s	H
+L05	1	)3	t	M
+L05	2	6	a	H
+L05	3	6)	n	M
+L05	4	99	z	H
+L05	5	)6	y	M
+L05	6	11	a	H
+L05	7	50	s	H
+L05	8	26	q	H
+L05	9	2	u	H
+L05	10	38	e	H
+L05	11	56	a	H
+L05	12	32	y	H
+L05	13	94	i	H
+L05	14	60	e	H
+L05	15	)2	r	M
+L05	16	12	a	H
+L05	17	35	b	H
+L05	18	2)	r	M
+L05	19	56	a	H
+L06	0	89	n	H
+L06	1	22	M	H
+L06	2	38	e	H
+L06	3	31	x	H
+L06	4	3	o	H
+L06	5	)1	r	M
+L06	6	10	e	H
+L06	7	28	s	H
+L06	8	4)	p	M
+L06	9	16	e	H
+L06	10	49	n	H
+L06	11	68	o	H
+L06	12	36	c	H
+L06	13	8	o	H
+L06	14	6)	n	M
+L06	15	[triangle]	a	M	drawn triangle shape, gloss above reads "a"
+L06	16	89	n	H
+L06	17	50	r	H
+L06	18	32	y	H
+L06	19	6	a	H
+L07	0	43	l	H
+L07	1	)8	a	M
+L07	2	94	s	H
+L07	3	)0	q	M
+L07	4	30	u	H
+L07	5	5	e	H
+L07	6	[Z]	y	M	drawn shape resembling a capital Z, gloss above reads "y"
+L07	7	13	b	H
+L07	8	)6	y	M
+L07	9	60	e	H
+L07	10	23	r	H
+L07	11	60	e	H
+L07	12	59	d	H
+L07	13	38	e	H
+L07	14	43	l	H
+L07	15	6)	K	M
+L07	16	8	o	H
+L07	17	)1	r	M
+L08	0	29	t	H
+L08	1	16	e	H
+L08	2	54	y	H
+L08	3	15	d	H
+L08	4	60	a	H
+L08	5	32	y	H
+L08	6	51	a	H
+L08	7	6	l	H
+L08	8	65	y	H
+L08	9	98	a	H
+L08	10	12	p	H
+L08	11	25	u	H
+L08	12	30	e	H
+L08	13	5	s	H
+L08	14	28	e	H
+L08	15	23	s	H
+L08	16	28	a	H
+L08	17	56	v	H
+L08	18	)2		M	extra group, count is 19 groups vs 18 gloss letters read; no gloss aligns
+L09	0	20	A	M	written like "Lo"/"20", first character genuinely unclear
+L09	1	45	n	H
+L09	2	3)	d	M
+L09	3	60	e	H
+L09	4	[T]	o	M	drawn shape resembling a capital T, gloss above reads "o"
+L09	5	14	e	H
+L09	6	6	a	H
+L09	7	94	r	H
+L09	8	)6	y	M
+L09	9	3	o	H
+L09	10	23	n	H
+L09	11	56	a	H
+L09	12	23	r	H
+L09	13	)8	l	M
+L09	14	9	a	H
+L09	15	11	s	H
+L09	16	50	q	H
+L09	17	26	u	H
+L09	18	)10	e	M
+L10	0	)2	p	M
+L10	1	)0	u	M
+L10	2	32	e	H
+L10	3	4)	d	M
+L10	4	52	a	H
+L10	5	38	n	H
+L10	6	59	o	H
+L10	7	)8	c	M
+L10	8	6)	u	M
+L10	9	[circle]	r	M	drawn oval/circle shape, gloss above reads "r"
+L10	10	36	r	H
+L10	11	)4	y	M
+L10	12	2)	r	M
+L10	13	54	z	H
+L10	14	)1		M	extra group past gloss "puedan,ocurryr,z" (14 letters vs 16 groups); no gloss aligns
+L10	15	55		M	extra group, see note above
+L11	0	4)	p	M
+L11	1	56	a	H
+L11	2	93	r	H
+L11	3	6	a	H
+L11	4	44	y	H
+L11	5	)8	m	M
+L11	6	28	a	H
+L11	7	50	s	H
+L11	8	60	s	H
+L11	9	40	e	H
+L11	10	30	g	H
+L11	11	49	u	H
+L11	12	56	r	H
+L11	13	15	y	H
+L11	14	34	d	H
+L11	15	81	a	H
+L11	16	3)	d	M
+L11	17	5	d	M	gloss "seguridad,de" gives 19 letters for 18 groups; last position uncertain
+L12	0	21	L	H
+L12	1	34	a	H
+L12	2	58	j	H
+L12	3	24	i	H
+L12	4	)1	o	M
+L12	5	10	r	H
+L12	6	94	e	H
+L12	7	69	s	H
+L12	8	8	p	H
+L12	9	6)	o	M
+L12	10	59	n	H
+L12	11	82	d	H
+L12	12	45	e	H
+L12	13	33	n	H
+L12	14	)6	z	M
+L12	15	6	i	H
+L12	16	)52	a	M	tick mark plus what may be a 2-digit group "52", read as one unit
+L13	0	25	p	H
+L13	1	96	o	H
+L13	2	89	n	H
+L13	3	3)	d	M
+L13	4	93	r	H
+L13	5	56	a	H
+L13	6	50	o	H
+L13	7	24	l	H
+L13	8	65	a	H
+L13	9	12	m	H
+L13	10	66	e	H
+L13	11	60	n	H
+L13	12	89	t	H
+L13	13	51	e	H
+L13	14	16	y	H
+L13	15	96	n	H
+L13	16	23		M	extra group past gloss "pondra,olamente,yn" (16 letters vs 17 groups)
+L14	0	28	p	H
+L14	1	3	o	H
+L14	2	)9	b	M
+L14	3	[blot]	E	M	dark ink blot obscuring the sign; gloss above it is written boldly as "E" in different ink, possibly a correction naming the intended letter
+L14	4	)1	r	M
+L14	5	10	e	H
+L14	6	)2	r	M
+L14	7	36	e	H
+L14	8	2)	n	M
+L14	9	54	y	H
+L14	10	)3	o	M
+L14	11	46	e	H
+L14	12	[square]	n	M	drawn square shape, gloss above reads "n"
+L14	13	45	e	H
+L14	14	10	s	H
+L14	15	28	t	H
+L14	16	95	a	H
+L14	17	34		M	extra group past gloss; no letter aligns
+L18	0	61			H
+L18	1	68			H
+L18	2	2)			M
+L18	3	88			H
+L18	4	)8			M
+L19	0	[triangle]			H	line opens with a large drawn triangle
+L19	1	59			H
+L19	2	24			H
+L19	3	[n]			M	small drawn shape resembling a lowercase "n" with a ring/mark above it, used as a sign
+L19	4	34			H
+L19	5	[tilde]			M	small wave/squiggle shape
+L19	6	6)			M
+L19	7	51			H
+L19	8	68			H
+L19	9	[blot]			M	dark ink blot, may obscure a 2-digit group entirely, or partially cover the digit "9" that follows
+L19	10	9			M	single digit, possibly the tail of the blotted group rather than its own group
+L19	11	32			H
+L19	12	6			H
+L19	13	3)			M
+L19	14	16			H
+L19	15	12			H
+L19	16	65			H
+L19	17	13			H
+L19	18	56			H
+L19	19	6)			M
+L19	20	54			H
+L19	21	8)			M
+L19	22	65			H
+L19	23	11			H	line ends here; immediately followed by the clear abbreviation "&a." (not transcribed as a group), under a horizontal underline

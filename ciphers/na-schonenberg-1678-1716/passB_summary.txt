@@ -1,0 +1,33 @@
+Independent blind pass B, transcribed from the 9 image crops only, no other files opened.
+
+Lines found: 16 cipher-number lines total -- L01 through L14 (each with an interlinear gloss line
+directly above it), then two closing lines with no gloss at all: L18 (short, 5 groups) and L19
+(long, 24 groups, underlined, opens with a triangle shape and ends with the clear abbreviation "&a.").
+Total cipher groups transcribed: 281.
+
+Plain clear words seen and skipped (not counted as groups), with their position: "Amigo." opens L01;
+"forma." (with a decorative flourish before it) stands alone as its own short line between the end of
+L14's gloss/cipher pair and the start of the unglossed L18; "&a." closes L19. Below L19's underline, a
+separate plain-text line reads "A Doña Antonija de Albanylla &." (a name/address, not cipher -- not
+transcribed as it has no numeral groups). To the left of the L09/L10 area there is also a short
+underlined marginal note reading "Aquy" ("here"), off to the side of the main text block, also not a
+cipher line.
+
+Hardest reads: (1) tick-mark position and shape throughout -- many ticks sit right at the line of
+writing and could go either way between "before" and "after"; I treated every close-paren-like or
+comma-like mark the same way and used ")" before/after the digits to record position, which may not
+distinguish two genuinely different signs. (2) Several lines have a cipher-group count that does not
+match my count of gloss letters by 1-2 (L04, L08, L10, L11, L13, L14) -- crowded handwriting made it
+hard to be sure every gloss letter I saw belongs to that line and not a neighbor; I mapped positionally
+and flagged the tail groups M. (3) The drawn-shape signs ([tilde], [X], [Z], [T], [triangle], [circle],
+[square], [n], [blot]) are all genuine judgment calls about what shape is intended. (4) L01 has an
+oddity: a group "23." sits at gloss-line height with no gloss letter of its own, looking like a later
+caret insertion; and a dark-ink "N" and a solid ink blot also interrupt that same line, in different
+ink from the rest. (5) L09's first group is genuinely ambiguous between "20" and something read as "Lo".
+
+The two unglossed closing lines (L18, L19): no outside vocabulary used, but two purely graphical
+observations -- L18's group at pos2 ("2)") does not recur in L19; L19 repeats "6)" twice (pos6, pos19)
+and reuses several digit strings seen earlier in the glossed body (e.g. "68", "65", "34", "16", "56",
+"12"), which is unsurprising in this kind of syllable/word-substitution nomenclator regardless of what
+the two lines say. No further pattern (e.g. a repeated group implying a repeated word) stood out beyond
+that.
