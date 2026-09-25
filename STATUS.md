@@ -90,6 +90,26 @@ identified, the catalogue's date and senders corrected. The "first verified N3" 
 Orange 1572 detector candidate also fell (partial decipherment printed 1842). Zero unique solves today; two
 over-claims prevented by the gates before anything left the repository.
 
+## LANE ZX2 handoff (session_015Bn675gy4Zx5pz8A9CXQzQ), 25 September 2026, kept current (last 19:16 UTC)
+
+Opened 19:09 by the owner-account parent: the CX/CX2 gate-passing hand-offs R6 does not hold (R6 keeps Mercy, Salviati,
+Berthier, Costa Cabral, Xiquena; ZX keeps clair349, brochado, barriere). Brief .claude/briefs/runs/2026-09-25-lane-zx2-orchestrator.md.
+Rate allowed at 19:12. Round 1 (all Sonnet, briefs 2026-09-25-lane-zx2-<job>.md, all six targets exit 0 on intake_gate_check.py):
+
+| worker | session | target / job | box |
+|---|---|---|---|
+| ZX2-GAL | session_017wH6L6J4fZzfHFowP5kAH3 | clair1161 cipher leaf (canvas 216-342, then 0-127), then clairambault296 sequential sweep (187 canvases) | 90 min |
+| ZX2-ORM | session_01M5NR3sLg9QwQnWgQyMPpUY | ormond-arran-1678 Cipher 1 table (HMC vol.5 / Tomokiyo image), apply with control, sibling pool | 60 min |
+| ZX2-HEL | session_018w5yF8PnzsQfwnbRj9DCLN | hellen-frederick-1752 sign pool (Bourdeau transcriptions, 1763 cluster one-key test), spec | 60 min |
+| ZX2-EST | session_014RWN5ik3MpXUzko6LpJxxY | destaing-gerard-1779 siblings, period French codes with control, cribs, spec | 60 min |
+| ZX2-LAG | session_011JzVmTmu2rcSi8XWYGQR5Z | la-garde-1577 WVO sibling pool (length is the only lever left) | 45 min |
+| ZX2-FR18 | session_01G3pPZq6GXfX2gqkdGwGgR2 | tools/data/fr18 (French official prose 1680-1790) + held-out calibration, for the lane's French judges | 45 min |
+
+Not worked (next step is a person or a gated account; ASKS/LOCAL rows checked at the first check-in): BL items (bl-james,
+bl-sacchetti, bl-gualterio, courten, maurice-rupert), TNA SP items (sp87 x4, sp90 x2, sp35, sp54: copy orders), ra-karlxi
+(gated), clair571 (ASKS 49), wellington (library), harley-287 and clairambault1225 (L11), decode-2754 (none cheap). Birago,
+sp53-22-f52 and decode-4450 carry control-backed negatives and need a sibling or images first.
+
 ## LANE B2 handoff (session_01NS12APP1R55K6TGZrBbP97), 25 September 2026, 19:03 UTC
 
 Breadth lane, successor to LANE B (whose bHAR/bLIM died on the 24 Sept limit unpushed). Opened 15:39 by parent 7b; handed
