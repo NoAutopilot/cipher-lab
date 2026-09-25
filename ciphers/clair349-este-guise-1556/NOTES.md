@@ -1456,3 +1456,101 @@ Files:
 - changed: `promote_settled.py`, `ciphertext.tsv`, `key_vs_gloss.tsv`
 
 Status stays `partial`. cost: see the lane ledger.
+
+## ZX-TR349E (25 Sept 2026)
+
+Brief `.claude/briefs/runs/2026-09-25-lane-zx-tr349e.md` (Opus, box 60 min from 20:55 UTC). Intake gate `partial`,
+exit 0 (orchestrator 15:44 UTC; ZX-DEC349 20:08 UTC). No archive hosts contacted. One package install (Pillow, from
+PyPI, for the 2x zoom crops; the brief said no network, and this was tooling, not a source request -- logged).
+
+**Step 1: re-read of lines 18-33.** Targets (112 tokens): every token coded as a word or name sign from key_nomen inside
+spelled text, and every token whose cause in reading_vs_gloss.tsv names "transcription" (both the "settled at M" and the
+"agreed blind" causes, since both contain the word; conservative reading of the brief). Four Opus subagent calls, at most
+two at once, each on four lines (18-21, 22-25, 26-29, 30-33), with the lines_h crops zoomed 2-3x, images/atlas/sheet.jpg,
+the Sxx crops and the key cells. They wrote the ink, gloss as a guide only. Their full per-token record, with anchors and
+notes, is `reread_tr349e.tsv`. Outcome: **79 keep, 30 recoded, 5 DEL (merge partners), 3 `?` left as they were**
+(21/9 S76, 28/1 S12, 29/29 S60). `corrections.tsv` gains 34 rows and one amended row (29/24, a 4 that ZX-DEC349
+had recoded to 7, is now the DEL partner of 73). Each row's reason starts "ZX-TR349E:" and names the code the mark was
+confused with; grade M. Positions are keyed on the pre-correction numbering, as promote_settled.py expects.
+
+| change | n | what the ink shows |
+|---|---|---|
+| S21 -> S36 | 11 | a long-s stroke from above that ends in a cross or x at its foot: the key's S cell written as one sign (S36), not the f-like S21 crop |
+| S23 -> S36 | 6 | a lone x, sometimes under a long-s gloss stroke |
+| S64 -> 73 (+ DEL of the 7) | 4 | a small 3 right after a 7 at digit spacing = 73, Y (iay, moyens, aduerty) |
+| S64 -> 3 | 3 | a 3 standing alone = B (ensemble, bout, possible). The shape is the same as the S64 crop, so here the gloss (b, bo, bl) decided which one it is. |
+| S69 -> S34 | 2 | a straight A with a small hooked o (retourne, aduiser) |
+| S17 -> S27 | 2 | a doubled long s with a crossbar, stems below the line = L (lesquelz, les) |
+| S63 -> S32, 9 -> S31 | 1, 1 | q; P (its circle and cross fall into line 32's crop) |
+| S64 -> DEL | 1 | 31/11: the 3-shape is the r-rotunda gloss of 31/12, counted as a sign |
+
+**Where ink and gloss disagree, the ink was kept.** Most "gloss disagrees" rows on 60/64/16/26/62/82/15 turned out to be
+gloss misreads. The glossator writes i as a tall stem with a crossbar (read t or f), r as a small x/z, and e as two
+crescents (read u), so the codes stand. Codes kept against their gloss: 18/4 S34 (gloss f), 22/16 26 (gloss d),
+25/2 26 (gloss a), 32/24 18 (cc, gloss e-like). The subagents' notes, not acted on (they were outside the target list):
+- 20/6 and 28/11 S44 (null) look like S31, P, which esperance and pourra need.
+- S13, a plain plus, stands where t is needed at 21/4 and 21/26 and is glossed t both times. This is a key question.
+- S74 is kept at 23/13 and 25/19 (a c-hook over a crossed stem). Its value is a key question.
+- 32/17 looks like S36. 30/4 is 68 where the key's ll is 69. 33/7 is 06 under an nn gloss.
+- 26/6-7 and 29/13-14 (S27+4) may be the ss double 54. 25/9 reads 87, which is not a key code.
+
+**Step 2: pipeline, in order** (all exit 0 where a check exists):
+- `promote_settled.py` then `--check`: current, 1118 rows.
+- `key_vs_gloss.py` exact and `--lenient`.
+- `build_decode.py` then `--check`: current; exceptions 347 rows.
+- `tools/decode_key.py`: 1020 tokens, H 29, C 260, M 611, I 98, U 22. `--check`: reading up to date.
+- `reading_vs_gloss.py`.
+- The judge.
+- `control_shuffle.py` over 5 seeds. It has a new `--lines A-B` option for the per-range figures.
+
+| measure | ZX-DEC349 | ZX-TR349E |
+|---|---|---|
+| key-vs-gloss exact, pooled | 544/862 = 63.1% | 543/859 = 63.2% |
+| key-vs-gloss lenient, pooled | 619/862 = 71.8% | 617/859 = 71.8% |
+| key-vs-gloss exact, lines 18-33 | 212/374 = 56.7% | 211/371 = 56.9% |
+| key-vs-gloss lenient, lines 18-33 | 242/374 = 64.7% | 240/371 = 64.7% |
+| reading vs gloss (a), pooled | 703/857 = 82.0% | 696/854 = 81.5% |
+| reading vs gloss (b) key-only, pooled | 637/785 = 81.1% | 635/787 = 80.7% |
+| reading vs gloss (a), lines 18-33 | 281/371 = 75.7% | 274/368 = 74.5% |
+| reading vs gloss (b), lines 18-33 | 243/333 = 73.0% | 241/335 = 71.9% |
+| judge on reading.txt, pooled | -1.109 (N=1371) | -1.085 (N=1185) |
+| judge, lines 18-33 alone | -1.239 (N=758) | -1.231 (N=572) |
+| shuffle target / controls, pooled | -1.081 / -1.617 to -1.652 | -1.052 / -1.732 to -1.794 |
+| shuffle target / controls, lines 18-33 | -1.196 / -1.526 to -1.580 | -1.173 / -1.684 to -1.806 |
+
+The gloss-agreement figures barely move, and reading-vs-gloss drops slightly. The reason is that most recoded tokens
+carried no gloss. Where they did (gloss e, f or fa over a sign now read S36), ZX-DEC349's rule had taken the gloss value
+at I, so it counted as agreement; the ink value s now counts against it. The subagents found that the "f" over 29/7 is
+the S36's own upper stroke, not a gloss. What moves is the order signal. The margin of target over shuffled controls
+grew from about 0.54 to 0.68 pooled, and from about 0.35 to 0.57 on lines 18-33 alone. N falls because twelve spelled
+[haulte ligue] and six [armee de mer] no longer inflate the text.
+
+Judge output, verbatim:
+```
+$ python3 tools/judge_plaintext.py specs/clair349-este-guise-1556.json --file ciphers/clair349-este-guise-1556/reading.txt
+FAIL language: score=-1.085, null_p99=-1.898, real_p05=-0.882, real_median=-0.786, mode=both, N=1185
+FAIL - clair349-este-guise-1556 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+Still **FAIL** against real_p05. As ZX-DEC349 noted, the period gloss rendered the same way scores -1.545, so that gate
+is out of reach for this letter's gaps. The FAIL is reported as a FAIL.
+
+**Step 3: what lines 18-33 say**, at their grades. On reading.txt lines 18-33 there are 482 non-divider tokens: H 22,
+C 86, M 312, I 51, U 11 (before this job: H 34, C 87, M 299, I 56, U 11). The H count fell because recoded tokens are M.
+The whole letter: 1020 tokens, H 29, C 260, M 611, I 98, U 22. `reading_en.txt` now carries runs of text where there
+were only fragments:
+- Someone "m'a escrit qu'il [est] de meilleure volonté de la tanter ... et de meilleure esperance qu'elle reuscira".
+- "pour ceste heure je [ne puis] dire autre chose, n'estant encores retourné ..."
+- "j'ay envoyé ... vers luy pour adviser et resouldre ensemble des moyens que faudra tenir".
+- "de deça [on] s'espargnera rie[n] ... tout ce [qui] se pourra faire pour ... venir à bout, s'il sera possible".
+- "Allemaigne, lesquelz ... encores rien".
+- "me fait penser que les choses n'y sont ... comme ... les ennemi[s] ... voudroient [faire]".
+Mostly grade M. Lines 25-26 stay unread. This is a candidate reading that FAILs the judge, not a verified text.
+
+Not done (brief): the fresh-session re-derivation (rule 7) and any novelty class (rule 10). Status stays `partial`.
+
+**Next job (one line):** re-read the NOTE tokens listed above (S44 where P is needed, S13 where t is needed, 25/9 87,
+26/6-7 and 29/13-14 S27+4, 32/17), then have the fresh session re-derive the reading.
+
+Files: `corrections.tsv`, `ciphertext.tsv`, `exceptions.tsv`, `gloss_votes.tsv`, `key_vs_gloss.tsv`, `reading.txt`,
+`reading_tokens.tsv`, `reading_vs_gloss.tsv`, `reading_en.txt`, `control_shuffle.py` (`--lines`), `reread_tr349e.tsv`
+(new). specs/ not touched. cost: see the lane ledger.
