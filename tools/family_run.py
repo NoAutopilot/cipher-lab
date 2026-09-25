@@ -27,6 +27,8 @@ Families (tools/families/<name>.py, each wraps an existing tool, see the package
   homophonic         homophonic substitution: homophonic_anneal.py with the spec's K
   periodic_vigenere  Vigenere/Beaufort/variant-Beaufort, short repeating key (own solver; --param tabula=beau period=7)
   running_key        book-key Vigenere: running_key.py two-stream beam decoder (needs >= 3 corpus texts; slow)
+  keyed_running_key  book key through a keyword-mixed tableau (family B', 25 Sept 2026): stage 1 ranks keywords by the
+                     ciphertext letter counts, stage 2 beam-decodes the top ones (--param kcorpus=tools/data/nl20 top=3)
 
 Modes: --target-only-if-gated (default) runs the control, then the target only if the gate is met;
 --control-only runs the control alone (calibration) and logs it. --seeds N runs the control on seeds
@@ -142,7 +144,8 @@ def corpus_paths(spec, cli):
     if cli:
         for p in cli:
             if os.path.isdir(p):
-                paths += sorted(os.path.join(p, f) for f in os.listdir(p) if f.endswith((".txt", ".txt.gz")))
+                paths += sorted(os.path.join(p, f) for f in os.listdir(p) if f.endswith((".txt", ".txt.gz"))
+                                and not f.upper().startswith(("LICENSE", "README", "MANIFEST")))
             else:
                 paths.append(p)
         return paths

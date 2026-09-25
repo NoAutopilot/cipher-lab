@@ -14,6 +14,11 @@ CIPHER: a text file of letters, messages separated by blank lines, '#' lines ign
 is unknown per message, so no state is carried across messages.
 
 Tabulae (mod 26, a=0): vig c = p + k; beau c = k - p; varbeau c = p - k.
+--mixed KEYWORD [--mixed-mode plain|key|both|full] (25 Sept 2026, GOLD-2C): the same arithmetic through a keyed
+tableau built from the keyword-mixed alphabet M: plain = the plaintext letter is indexed in M (a mixed plaintext
+alphabet), key = the key letter is, both = both are (cipher read from a-z), full = both are and the cipher letter
+is read from M (the classic mixed Vigenere square). Works in every mode (decode, --control, --noise, --crib-drag);
+the search over keywords is tools/families/keyed_running_key.py (family_run.py --family keyed_running_key).
 
 Decoding: find p maximising LM_p(p) + LM_k(k(p, c)), where LM_p is a letter n-gram model built from --pcorpus
 and LM_k one built from --kcorpus (order --order, interpolated absolute discounting, a Kneser-Ney-lite). Beam
@@ -91,8 +96,57 @@ def load_books(paths):
 
 
 # ---------------------------------------------------------------- tabulae
+def keyword_alphabet(word):
+    """keyword-mixed alphabet: the keyword's letters once each in order, then the rest of a-z."""
+    seen, out = set(), []
+    for ch in fold(word) + A:
+        if ch not in seen:
+            seen.add(ch)
+            out.append(ch)
+    return "".join(out)
+
+
+MIXED_MODES = ("plain", "key", "both", "full")
+
+
+def mixed_tabula(word, mode="plain", arith="vig"):
+    """A keyed tableau c = S3(S1(p) (+/-) S2(k)) built from one keyword-mixed alphabet M (25 Sept 2026, GOLD-2C).
+    mode plain: S1 = index in M, S2 = S3 = identity      (a mixed plaintext alphabet, standard key letters)
+    mode key:   S2 = index in M, S1 = S3 = identity      (a mixed key alphabet)
+    mode both:  S1 = S2 = index in M, S3 = identity      (both indexed in M, cipher read from a-z)
+    mode full:  S1 = S2 = index in M, S3 = M itself      (the classic mixed Vigenere square: rows of M shifted)
+    arith: vig s = S1(p) + S2(k); beau s = S2(k) - S1(p); varbeau s = S1(p) - S2(k) (mod 26).
+    Returns a dict tabula usable wherever a tabula name is: enc[p][k] -> c and kof[c][p] -> k (letter indices),
+    plus its description. key_of() and encipher() accept it."""
+    M = keyword_alphabet(word)
+    iM = [M.index(a) for a in A]          # letter index -> position in M
+    ident = list(range(26))
+    S1 = iM if mode in ("plain", "both", "full") else ident
+    S2 = iM if mode in ("key", "both", "full") else ident
+    S3 = [IDX[M[i]] for i in range(26)] if mode == "full" else ident
+    enc = [[0] * 26 for _ in range(26)]
+    kof = [[0] * 26 for _ in range(26)]
+    for p in range(26):
+        for k in range(26):
+            if arith == "vig":
+                s = (S1[p] + S2[k]) % 26
+            elif arith == "beau":
+                s = (S2[k] - S1[p]) % 26
+            elif arith == "varbeau":
+                s = (S1[p] - S2[k]) % 26
+            else:
+                raise ValueError(arith)
+            c = S3[s]
+            enc[p][k] = c
+            kof[c][p] = k
+    return {"enc": enc, "kof": kof, "word": fold(word), "alphabet": M, "mode": mode, "arith": arith,
+            "name": f"mixed:{fold(word)}:{mode}:{arith}"}
+
+
 def key_of(tab, p, c):
-    """key letter implied by plaintext p and cipher c (ints)."""
+    """key letter implied by plaintext p and cipher c (ints); tab a name or a mixed_tabula() dict."""
+    if isinstance(tab, dict):
+        return tab["kof"][c][p]
     if tab == "vig":      # c = p + k
         return (c - p) % 26
     if tab == "beau":     # c = k - p
@@ -103,6 +157,8 @@ def key_of(tab, p, c):
 
 
 def encipher(tab, p, k):
+    if isinstance(tab, dict):
+        return tab["enc"][p][k]
     if tab == "vig":
         return (p + k) % 26
     if tab == "beau":
@@ -333,6 +389,10 @@ def fmt_ll(x):
     return f"{x:.3f}"
 
 
+def tab_name(tab):
+    return tab["name"] if isinstance(tab, dict) else tab
+
+
 # ---------------------------------------------------------------- modes
 def run_decode(args, msgs, lmp, lmk, label="target"):
     out = []
@@ -341,7 +401,7 @@ def run_decode(args, msgs, lmp, lmk, label="target"):
         r = decode_message(c, lmp, lmk, args.tabula, args.beam, args.per_hyp, args.polish, args.spaces)
         r.update({"msg": i + 1, "n": len(c), "cipher": c, "secs": round(time.time() - t0, 1)})
         out.append(r)
-        print(f"[{label}] msg {i+1} n={len(c)} tab={args.tabula} ll_p={fmt_ll(r['ll_p'])} "
+        print(f"[{label}] msg {i+1} n={len(c)} tab={tab_name(args.tabula)} ll_p={fmt_ll(r['ll_p'])} "
               f"ll_k={fmt_ll(r['ll_k'])} ({r['secs']}s)")
         print(f"  P: {r.get('plain_seg', r['plain'])}")
         print(f"  K: {r.get('key_seg', r['key'])}")
@@ -372,7 +432,7 @@ def run_control(args):
     lmp, lmk, pb, kb = build_models(args, exclude=(pbook, kbook))
     if not pb or not kb:
         sys.exit("--control: no training books left after holding out the plaintext and key books")
-    print(f"control seed={args.seed} tab={args.tabula} order={args.order} beam={args.beam} "
+    print(f"control seed={args.seed} tab={tab_name(args.tabula)} order={args.order} beam={args.beam} "
           f"plain_book={os.path.basename(pbook)} key_book={os.path.basename(kbook)} "
           f"LM_p books={len(pb)} ({sum(len(fold(read_text(b))) for b in pb) if args.verbose else '-'}) "
           f"LM_k books={len(kb)}")
@@ -386,7 +446,7 @@ def run_control(args):
         t0 = time.time()
         r = decode_message(C, lmp, lmk, args.tabula, args.beam, args.per_hyp, args.polish, args.spaces)
         strict = sum(a == b for a, b in zip(r["plain"], P))
-        swap = sum((a == b) or (a == kk) for a, b, kk in zip(r["plain"], P, K)) if args.tabula == "vig" else strict
+        swap = sum((a == b) or (a == kk) for a, b, kk in zip(r["plain"], P, K)) if tab_name(args.tabula) == "vig" else strict
         kstrict = sum(a == b for a, b in zip(r["key"], K))
         res.append({"n": n, "strict": strict, "swap": swap, "key": kstrict, "ll_p": r["ll_p"], "ll_k": r["ll_k"]})
         print(f"  msg {i+1} n={n} plain {strict}/{n}={strict/n:.1%}  swap-tolerant {swap/n:.1%}  "
@@ -405,9 +465,9 @@ def run_control(args):
     k = sum(r["key"] for r in res) / N
     llp = sum(r["ll_p"] * r["n"] for r in res) / N
     llk = sum(r["ll_k"] * r["n"] for r in res) / N
-    print(f"CONTROL POOLED seed={args.seed} tab={args.tabula} plain={s:.1%} swap-tolerant={w:.1%} key={k:.1%} "
+    print(f"CONTROL POOLED seed={args.seed} tab={tab_name(args.tabula)} plain={s:.1%} swap-tolerant={w:.1%} key={k:.1%} "
           f"ll_p={llp:.3f} ll_k={llk:.3f}")
-    return {"seed": args.seed, "tab": args.tabula, "plain": s, "swap": w, "key": k, "ll_p": llp, "ll_k": llk,
+    return {"seed": args.seed, "tab": tab_name(args.tabula), "plain": s, "swap": w, "key": k, "ll_p": llp, "ll_k": llk,
             "per_msg": res, "plain_book": pbook, "key_book": kbook}
 
 
@@ -428,7 +488,7 @@ def run_crib(args, msgs, lmk):
             for i in range(len(c) - len(w) + 1):
                 for tab in (["vig", "beau", "varbeau"] if args.all_tabulae else [args.tabula]):
                     k = "".join(A[key_of(tab, IDX[a], IDX[b])] for a, b in zip(w, c[i:i + len(w)]))
-                    rows.append((lmk.score(k) / len(k), w, mi + 1, i, tab, k))
+                    rows.append((lmk.score(k) / len(k), w, mi + 1, i, tab_name(tab), k))
     rows.sort(reverse=True)
     print("score/letter\tcrib\tmsg\tpos\ttabula\tkey_fragment")
     for r in rows[:args.top]:
@@ -479,6 +539,9 @@ def main(argv=None):
     ap.add_argument("--pcorpus", nargs="+", default=[], help="plaintext-language corpus files or dirs")
     ap.add_argument("--kcorpus", nargs="+", default=[], help="key-language corpus files or dirs (default = pcorpus)")
     ap.add_argument("--tabula", default="vig", choices=["vig", "beau", "varbeau"])
+    ap.add_argument("--mixed", metavar="KEYWORD", help="keyed tableau from this keyword-mixed alphabet (see --mixed-mode)")
+    ap.add_argument("--mixed-mode", default="plain", choices=list(MIXED_MODES),
+                    help="where the mixed alphabet sits: plain (plaintext side), key, both, full (mixed square)")
     ap.add_argument("--order", type=int, default=6)
     ap.add_argument("--discount", type=float, default=0.9)
     ap.add_argument("--beam", type=int, default=3000)
@@ -500,6 +563,9 @@ def main(argv=None):
     ap.add_argument("--out", help="write JSON result")
     ap.add_argument("--verbose", action="store_true")
     a = ap.parse_args(argv)
+    if a.mixed:
+        # a dict tabula flows through every mode (decode, control, noise, crib-drag) in place of the name
+        a.tabula = mixed_tabula(a.mixed, a.mixed_mode, a.tabula)
 
     result = None
     if a.control:
