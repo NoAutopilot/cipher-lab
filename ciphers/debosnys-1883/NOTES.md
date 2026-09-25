@@ -1,8 +1,94 @@
-status: open
+open
+Schmeh's Cipherbrain FAQ (15 Aug 2016) and Top 50 post 3 (6 Jan 2020) read in full by this worker
+(both call the four cryptograms unsolved), Cipher Mysteries' "Thoughts on the Debosnys Ciphers"
+(7 Nov 2015, 90 comments) read in full, and a full-text search of Bauer's *Unsolved!* and
+Farnsworth's *Adirondack Enigma* via Google Books and Internet Archive (be-api full-text search)
+-- see "Check-solved sweep" below for the complete six/seven-source log.
 
-check-solved: NOT RUN on this target. This is a breadth cheap-test-1 pass only (image fetch +
-single machine-segmented sign inventory); no deep-work campaign has started, and rule 10 /
-the intake gate have not been applied. Do not promote past stage 2 on the strength of this file.
+## Check-solved sweep (GOLD-0D, 25 Sept 2026, session_01PjWaPzZTSmZbX6DitArcwb)
+
+Brief: `.claude/briefs/runs/2026-09-25-lane-gold-intake-debosnys.md`. This section is check-solved
+(CLAUDE.md Pipeline item 2 / the check-solved skill); LANE B2's cheap-test-1 pass (image fetch +
+sign inventory, commit f7c7460) is check-solved's replacement for this line only -- its full
+section is kept intact below, unchanged.
+
+1. **Farnsworth, *The Adirondack Enigma* (2010) and Bauer, *Unsolved!* (2017/2019).** Neither is
+   full-view on Google Books (`filter=full` returns 0 items for "Debosnys"); read via Google
+   Books' snippet/index search instead (`&country=US&key=$GOOGLE_BOOKS_KEY`, queries "Debosnys
+   cipher", "Debosnys" + solved/decipher/solution, 25 Sept 2026): Bauer's own back-of-book index
+   snippet reads "Debosnys, Henry, 195-217; ciphers of, 196-199" (a chapter, consistent with the
+   book's title, *Unsolved!*), no "solved"/"solution" snippet anywhere near "Debosnys". Internet
+   Archive full-text search (`be-api.us.archive.org/fts/v1/search?q=Debosnys%20cipher`, 25 Sept
+   2026) surfaces Bauer's book (`unsolvedhistorym0000baue`/`unsolvedhistorym0000crai`, both
+   lending-only/print-disabled, not borrowed this pass) with hits only on generic cipher-teaching
+   passages elsewhere in the book, not a Debosnys solution, plus a third hit, the *Norwich Morning
+   Bulletin* 27 Apr 1883 (`norwichmorningbu00bull_15`), 1883 execution-week reportage ("At
+   Debosnys' request his beard was taken off yesterday"), not a cipher solution. Neither book's
+   own text was read page-by-page (no full-view/loan this pass) -- this is a search result on
+   both, not a confirmed page-by-page negative; a museum-holdings key (row below) or a JSTOR/local
+   read of either book would still be worth doing before deep work banks on "no key printed
+   anywhere in print".
+2. **Schmeh's post 3 (saved copy, `sources/schmeh/posts/03-debosnys.txt`) and its comment thread**
+   (2 comments in the saved copy, neither a solve claim). Fresh fetches (25 Sept 2026,
+   scienceblogs.de, browser UA, >=2s apart): the tag page `.../tag/henry-debosnys/` (all 8 posts
+   2015-2021, none titled or dated as a solve; latest is "Henry Debosnys war ein Abschreiber", 29
+   Oct 2021, about a plagiarised clear-text poem, not the cipher), the FAQ post (15 Aug 2016, "the
+   cryptograms... are still unsolved to date... chances to solve them are good"), and the
+   `category/solved-cryptograms/` listing (Debosnys does not appear in it). No later Cipherbrain
+   post on Debosnys than 29 Oct 2021.
+3. **Cipher Mysteries** (ciphermysteries.com, 25 Sept 2026, its own search, 2 pages): all Debosnys
+   posts are 2015 (cipher analysis) or 2021 (an unrelated identity/DNA thread, "was Debosnys in
+   fact Pierre Keff?"); the main analysis post, "Thoughts on the Debosnys Ciphers..." (7 Nov 2015),
+   read in full with its 90 comments -- states "nobody has so far decrypted so much as a word of
+   any of these" and links a fuller scan set at cipherfoundation.org/older-ciphers/debosnys-ciphers/
+   (not fetched this pass, not a source named in this brief; flagged as a lead below). Comments
+   include unverified partial guesses (one reader: the "L.M.F." page's last word "deciphers to
+   ULTIME") with no stated method and no reproducing key -- a documented attempt per CLAUDE.md's
+   guidance, not a solution.
+4. **DECODE** (de-crypt.org): no fresh crawl this pass -- `sources/decode/records-decrypted-
+   2026-09-24.tsv` and `records-non-decrypted-2026-09-24.tsv` (24 Sept 2026, 1361+1187 rows, a
+   full non-decrypted+decrypted crawl one day old) grepped for Debosnys/Adirondack/Elizabethtown/
+   Essex/New York/America: zero rows -- DECODE's catalogue is exclusively European chancery/
+   diplomatic material and holds nothing on this US target either way.
+5. **Both solver repositories' snapshots in `sources/solver-diffs/`**: grepped every file
+   (`grep -ril debosnys`), zero hits. (Per this brief, the cached snapshots were checked, not a
+   fresh clone of dbourdeau/cyphersolver or aaymeloglu/unsolved-ciphers.)
+6. **Open indexes**: OpenAlex (`Authorization: Bearer $OPENALEX_KEY`, "Debosnys cipher") 0 results;
+   Semantic Scholar (`x-api-key: $S2_KEY`, same query) returned 42012 generic "cipher" results with
+   no actual "Debosnys" match (the term is too rare to filter the API's OR-ranked search) -- read
+   as no relevant hit, not a true zero; CrossRef (`api.crossref.org/works?query=Debosnys+cipher`)
+   7531 generic cipher-engineering results, same read. No scholarship on this specific target
+   found by any of the three.
+7. **Search engine, incl. the model-solve family and forums/Reddit** (WebSearch, 25 Sept 2026):
+   "Debosnys cipher solved", "Debosnys cryptogram decoded", "Debosnys cipher Claude GPT solved",
+   "Debosnys cipher reddit", "Debosnys cipher zodiackillersite forum" -- every result is 2015-2023
+   commentary (Cipher Mysteries, Cipherbrain, Dark Histories podcast, Crime Capsule, Quora, the
+   Sektu blog) stating the cryptograms remain unsolved; no AI-lab or evaluation-company solve
+   announcement, no Reddit/forum solve claim, no evidence either GPT or Claude has been reported
+   solving it. Wikipedia's "Henry Debosnys" article (25 Sept 2026) still carries the category
+   "Undeciphered historical codes and ciphers" (consistent with the spec's 24 Sept 2026 check of
+   "List of ciphertexts").
+8. **New lead found this pass, not run (one line per Usage rule 7):** the Sektu blog
+   (sektu.blogspot.com, author "Brian") has an 18-post "Debosnys" label series from Jun-Aug 2017 --
+   real cryptanalytic groundwork on cryptogram #4 (the poem), including a French-alexandrine/
+   nasalization-subglyph frequency test against Beaudelaire's *Fleurs du Mal* ("this looks like a
+   promising match, but more work needs to be done") -- read in full for a solve claim (none
+   found; its latest post, "Another note on N-Glyphs", 7 Aug 2017, is still hypothesis-testing) but
+   not otherwise used; worth reading in full before any homophonic/MASC anneal on cryptogram #4
+   (spec cheap test 3), since it may already rule out or narrow the alphabet-family hypothesis.
+   Checked the blog's own 2023 and Jan 2026 posts too (its most recent activity) -- both are on
+   unrelated topics (Toyfl; a Meroitic-inscription mystery), no further Debosnys content since
+   Aug 2017.
+
+**Verdict: open.** No solution, key, or documented full decipherment found for any of the four
+Debosnys cryptograms in any of the eight source families above. Rule 10: this is a search result,
+not a novelty claim -- a verifier session would still need to run before any "not published
+anywhere" wording.
+
+`python3 tools/intake_gate_check.py debosnys-1883`:
+```
+debosnys-1883: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+```
 
 ## What this pass did (25 Sept 2026, LANE B2 worker bDEB, session_01Uktvb4t31yu7ECakLwuugc)
 
