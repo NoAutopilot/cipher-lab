@@ -107,3 +107,66 @@ not a new derivation of the rule.
 
 Grades: all 26 `ciphertext.tsv` rows and all 12 `key_example.tsv` rows are H (read directly off the image,
 confirmed by re-crop where the two blind passes disagreed). No group was left at grade M.
+
+`m0005`-`m0006` fetched full-resolution and read (previously only thumbnail-checked by scDIGI2): confirmed
+unrelated, a Hope & Co. (Amsterdam) exchange-rate note in French ("Original que me foi mandado enviar pela
+Casa de Hope & C. d'Amsterdam..."), `m0006` its blank verso. No further ciphertext on this 6-image item beyond
+`m0002`.
+
+## More under this key (LX-TR, 25 Sept 2026)
+
+Re-ran scDIGI2's search route (`GET /api/docs/search?query=TERM` on `digitarq.arquivos.pt`, terms `cifra`,
+`chave de uma cifra`) against the whole DigitArq catalogue: **no new "chave"/"cifra" hit anywhere in fonds
+PT/TT/CLNH since 24 Sept 2026.** The same 3 units surface as before: this one (`PT/TT/CLNH/0086/11`), and
+`PT/TT/CLNH/0020/14` and `PT/TT/CLNH/0078/80` (both titled "Chave de uma cifra"). Checked both against a fresh
+`docs/details` call: **both are still `hasImages:false`/`hasPublishedRepresentations:false`** (not digitized,
+unchanged from scDIGI2's finding) -- still copy-order leads, not eye-confirmable, and since they carry no
+description beyond the bare title, nothing establishes whether either is the *same* key as this one (different
+maços within the fonds plausibly serve different correspondents/periods) or a different one. Not transcribed
+(no image to transcribe).
+
+No unit anywhere fit "carrying numeric groups in this scheme" by a keyword search, because a catalogue title
+would not say so -- this item's own bundle (`PT/TT/CLNH/0086/11`) is titled only "Chave de uma cifra" and
+that title covers the *whole* 6-image item (the unrelated billet and exchange note included), not just
+`m0002`'s ciphertext page. So a live ciphertext leaf hiding in another item of the same maço, uncatalogued as
+such, would not show up in any title search -- only eye-checking would find it.
+
+Given that: `m0002` itself says its ciphertext is "pages 2 and 3 of a longer letter" and that "pages 1 and 4
+are not part of this 6-image item" -- i.e. this bundle is a fragment, and the rest of the same physical letter
+is filed elsewhere, plausibly (archives often scatter a letter's leaves across nearby items of the same maço)
+as another item in **maço 86** itself. Looked up maço 86's own sibling list (`docs/details` on its parent id
+`8046d3327fa94b36b114b02ab1295f11` gives `children.total: 21`, but -- as scDIGI2 found -- `children.results`
+is always empty; walked it the same workaround way, by narrowing search phrases on the "Condes de Linhares,
+mç. 86, doc. N" identifier pattern). Found 12 of the other 20 items this way (missing: `/03 /04 /06 /08 /09
+/12 /19 /21`, not surfaced by the phrasings tried), none titled with any cipher/key term (all are named
+correspondence, e.g. "Cartas de João Paulo Bezerra de Seixas para o 2º conde de Linhares"). **All 12 checked
+are `hasImages:true`** (digitized, unlike PP-06/PP-07):
+
+| Unit | docId | Title |
+|---|---|---|
+| PT/TT/CLNH/0086/01 | 9186594ae6b54b9daed7d9a5a2c3f241 | Cartas de João Paulo Bezerra de Seixas para o 1º conde de Linhares |
+| PT/TT/CLNH/0086/02 | 28d1e5cc0b2c48688823e286bc1b62f8 | Cartas de João Paulo Bezerra de Seixas para a 1ª condessa de Linhares |
+| PT/TT/CLNH/0086/05 | 559afca60b444e0fbc51a155001132d1 | Cartas de João Paulo Bezerra de Seixas para o 2º conde de Linhares |
+| PT/TT/CLNH/0086/07 | 136931f77d5d4d3086c1b72a1f6ea959 | Cartas para João Paulo Bezerra de Seixas de D. Maria Balbina de Sousa Coutinho |
+| PT/TT/CLNH/0086/10 | b53086a679db481eaa9eba9e2424498c | Cartas de D. Isabel Sill Bezerra para a 1ª condessa de Linhares e 2º conde de Linhares |
+| PT/TT/CLNH/0086/13 | a95e4609533b48b3b7f6362f64ee97ae | Carta para a 1ª condessa de Linhares de um tio italiano |
+| PT/TT/CLNH/0086/14 | 8832e1198743410a98f798fb336798d2 | Carta para a 1ª condessa de Linhares de José Correia da Serra |
+| PT/TT/CLNH/0086/15 | 86cb94ae348a465e972c5ccbfd72853d | Carta para a 1ª condessa de Linhares de D. Maria Martina de Castro e Loynaz |
+| PT/TT/CLNH/0086/16 | fed6b825282b4dd0b21a3696809aa46a | Carta para a 1ª condessa de Linhares de João Pedro Quinn |
+| PT/TT/CLNH/0086/17 | 4443134ba9c14ccfab96e73d712ac294 | Ofício de João Paulo Bezerra de Seixas para António de Araújo de Azevedo |
+| PT/TT/CLNH/0086/18 | 4bee49e273c641e8912027de15875dce | Post scriptum de uma carta ... por João Paulo Bezerra de Seixas para o 1º conde de Linhares |
+| PT/TT/CLNH/0086/20 | e1f56f01341041eeaf932f9cdd3f5d59 | Apontamento sobre o carácter do 1º conde de Linhares |
+
+None of these were opened/eye-checked this pass (out of this brief's scope, and none of their titles suggest
+government/diplomatic correspondence of the kind the worked example's "war of France with Russia" plaintext
+implies -- they read as family and social letters to the 1st/2nd conde and 1st condessa, an earlier
+generation than the 1811-12 attribution in "Who it likely served" above). Flagged here as the cheapest
+concrete next step for finding the rest of `m0002`'s letter (pages 1 and 4): a quick eye-check of these 12
+plus the 8 still-unlisted maço 86 items (`/03 /04 /06 /08 /09 /12 /19 /21`, not found by the search phrasings
+tried -- a `docs/details` walk by numeric guess, or a better search phrase, would complete the list) for
+numeral-group ciphertext resembling `ciphertext.tsv`'s format. Not run this pass (budget; Part 2's brief asks
+only to list candidates, not eye-check a maço's full sibling set).
+
+Per-host report (Part 2 only): `digitarq.arquivos.pt` ~22 requests (2 full-image fetches for m0005/m0006, 1
+item-details, 1 parent-maço-details, 4 search-phrase queries, 12 sibling hasImages detail calls, all >=3s
+apart), well under the session's 60-request DigitArq cap.
