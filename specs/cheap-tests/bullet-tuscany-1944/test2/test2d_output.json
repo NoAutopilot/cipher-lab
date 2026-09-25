@@ -1,0 +1,541 @@
+{
+ "target": {
+  "n_hits": 59,
+  "hits": [
+   {
+    "crib": "GRENADE",
+    "offset": 24,
+    "tab": "beau",
+    "period": 6,
+    "key_fragment": "YRAOYCY",
+    "checked_positions": 7
+   },
+   {
+    "crib": "GRENADE",
+    "offset": 26,
+    "tab": "beau",
+    "period": 6,
+    "key_fragment": "CSCMUJC",
+    "checked_positions": 7
+   },
+   {
+    "crib": "GRENADE",
+    "offset": 32,
+    "tab": "beau",
+    "period": 6,
+    "key_fragment": "EKDJYEE",
+    "checked_positions": 7
+   },
+   {
+    "crib": "PIN",
+    "offset": 22,
+    "tab": "beau",
+    "period": 2,
+    "key_fragment": "FZF",
+    "checked_positions": 3
+   },
+   {
+    "crib": "PIN",
+    "offset": 26,
+    "tab": "beau",
+    "period": 2,
+    "key_fragment": "LJL",
+    "checked_positions": 3
+   },
+   {
+    "crib": "PIN",
+    "offset": 27,
+    "tab": "vig",
+    "period": 2,
+    "key_fragment": "MQM",
+    "checked_positions": 3
+   },
+   {
+    "crib": "PIN",
+    "offset": 27,
+    "tab": "varbeau",
+    "period": 2,
+    "key_fragment": "OKO",
+    "checked_positions": 3
+   },
+   {
+    "crib": "PIN",
+    "offset": 36,
+    "tab": "beau",
+    "period": 2,
+    "key_fragment": "NJN",
+    "checked_positions": 3
+   },
+   {
+    "crib": "PINS",
+    "offset": 5,
+    "tab": "beau",
+    "period": 3,
+    "key_fragment": "NGRN",
+    "checked_positions": 4
+   },
+   {
+    "crib": "PINS",
+    "offset": 9,
+    "tab": "beau",
+    "period": 3,
+    "key_fragment": "DHVD",
+    "checked_positions": 4
+   },
+   {
+    "crib": "PINS",
+    "offset": 15,
+    "tab": "vig",
+    "period": 3,
+    "key_fragment": "KNAK",
+    "checked_positions": 4
+   },
+   {
+    "crib": "PINS",
+    "offset": 15,
+    "tab": "varbeau",
+    "period": 3,
+    "key_fragment": "QNAQ",
+    "checked_positions": 4
+   },
+   {
+    "crib": "PINS",
+    "offset": 26,
+    "tab": "vig",
+    "period": 3,
+    "key_fragment": "HTLH",
+    "checked_positions": 4
+   },
+   {
+    "crib": "PINS",
+    "offset": 26,
+    "tab": "varbeau",
+    "period": 3,
+    "key_fragment": "THPT",
+    "checked_positions": 4
+   },
+   {
+    "crib": "PULL",
+    "offset": 3,
+    "tab": "beau",
+    "period": 3,
+    "key_fragment": "JEJJ",
+    "checked_positions": 4
+   },
+   {
+    "crib": "PULL",
+    "offset": 17,
+    "tab": "vig",
+    "period": 3,
+    "key_fragment": "YILY",
+    "checked_positions": 4
+   },
+   {
+    "crib": "PULL",
+    "offset": 17,
+    "tab": "varbeau",
+    "period": 3,
+    "key_fragment": "CSPC",
+    "checked_positions": 4
+   },
+   {
+    "crib": "PULL",
+    "offset": 35,
+    "tab": "beau",
+    "period": 3,
+    "key_fragment": "LSML",
+    "checked_positions": 4
+   },
+   {
+    "crib": "THROW",
+    "offset": 1,
+    "tab": "beau",
+    "period": 4,
+    "key_fragment": "UMLYU",
+    "checked_positions": 5
+   },
+   {
+    "crib": "THROW",
+    "offset": 15,
+    "tab": "beau",
+    "period": 4,
+    "key_fragment": "SCEQS",
+    "checked_positions": 5
+   },
+   {
+    "crib": "THROW",
+    "offset": 17,
+    "tab": "beau",
+    "period": 4,
+    "key_fragment": "GJNXG",
+    "checked_positions": 5
+   },
+   {
+    "crib": "THROW",
+    "offset": 35,
+    "tab": "beau",
+    "period": 4,
+    "key_fragment": "PFSOP",
+    "checked_positions": 5
+   },
+   {
+    "crib": "ENEMY",
+    "offset": 22,
+    "tab": "beau",
+    "period": 4,
+    "key_fragment": "UEWMU",
+    "checked_positions": 5
+   },
+   {
+    "crib": "ENEMY",
+    "offset": 24,
+    "tab": "beau",
+    "period": 4,
+    "key_fragment": "WNANW",
+    "checked_positions": 5
+   },
+   {
+    "crib": "ENEMY",
+    "offset": 29,
+    "tab": "vig",
+    "period": 4,
+    "key_fragment": "VHCMV",
+    "checked_positions": 5
+   },
+   {
+    "crib": "ENEMY",
+    "offset": 29,
+    "tab": "varbeau",
+    "period": 4,
+    "key_fragment": "FTYOF",
+    "checked_positions": 5
+   },
+   {
+    "crib": "ENEMY",
+    "offset": 38,
+    "tab": "vig",
+    "period": 4,
+    "key_fragment": "WGNGW",
+    "checked_positions": 5
+   },
+   {
+    "crib": "ENEMY",
+    "offset": 38,
+    "tab": "varbeau",
+    "period": 4,
+    "key_fragment": "EUNUE",
+    "checked_positions": 5
+   },
+   {
+    "crib": "POSITION",
+    "offset": 0,
+    "tab": "beau",
+    "period": 7,
+    "key_fragment": "RPXCDGMR",
+    "checked_positions": 8
+   },
+   {
+    "crib": "POSITION",
+    "offset": 4,
+    "tab": "vig",
+    "period": 7,
+    "key_fragment": "VKGWCGLV",
+    "checked_positions": 8
+   },
+   {
+    "crib": "POSITION",
+    "offset": 4,
+    "tab": "varbeau",
+    "period": 7,
+    "key_fragment": "FQUEYUPF",
+    "checked_positions": 8
+   },
+   {
+    "crib": "POSITION",
+    "offset": 18,
+    "tab": "vig",
+    "period": 7,
+    "key_fragment": "NIRCXJEN",
+    "checked_positions": 8
+   },
+   {
+    "crib": "POSITION",
+    "offset": 18,
+    "tab": "varbeau",
+    "period": 7,
+    "key_fragment": "NSJYDRWN",
+    "checked_positions": 8
+   },
+   {
+    "crib": "POSITION",
+    "offset": 25,
+    "tab": "vig",
+    "period": 7,
+    "key_fragment": "LIJQGMSL",
+    "checked_positions": 8
+   },
+   {
+    "crib": "POSITION",
+    "offset": 25,
+    "tab": "varbeau",
+    "period": 7,
+    "key_fragment": "PSRKUOIP",
+    "checked_positions": 8
+   },
+   {
+    "crib": "POSITION",
+    "offset": 27,
+    "tab": "vig",
+    "period": 7,
+    "key_fragment": "MKHMNQFM",
+    "checked_positions": 8
+   },
+   {
+    "crib": "POSITION",
+    "offset": 27,
+    "tab": "varbeau",
+    "period": 7,
+    "key_fragment": "OQTONKVO",
+    "checked_positions": 8
+   },
+   {
+    "crib": "POSITION",
+    "offset": 28,
+    "tab": "vig",
+    "period": 7,
+    "key_fragment": "JLCYFLLJ",
+    "checked_positions": 8
+   },
+   {
+    "crib": "POSITION",
+    "offset": 28,
+    "tab": "varbeau",
+    "period": 7,
+    "key_fragment": "RPYCVPPR",
+    "checked_positions": 8
+   },
+   {
+    "crib": "POSITION",
+    "offset": 33,
+    "tab": "vig",
+    "period": 7,
+    "key_fragment": "ELEQISFE",
+    "checked_positions": 8
+   },
+   {
+    "crib": "POSITION",
+    "offset": 33,
+    "tab": "varbeau",
+    "period": 7,
+    "key_fragment": "WPWKSIVW",
+    "checked_positions": 8
+   },
+   {
+    "crib": "POSITION",
+    "offset": 35,
+    "tab": "vig",
+    "period": 7,
+    "key_fragment": "HKJSAJEH",
+    "checked_positions": 8
+   },
+   {
+    "crib": "POSITION",
+    "offset": 35,
+    "tab": "varbeau",
+    "period": 7,
+    "key_fragment": "TQRIARWT",
+    "checked_positions": 8
+   },
+   {
+    "crib": "POSITION",
+    "offset": 36,
+    "tab": "beau",
+    "period": 7,
+    "key_fragment": "NPSBKAIN",
+    "checked_positions": 8
+   },
+   {
+    "crib": "ATTACK",
+    "offset": 6,
+    "tab": "vig",
+    "period": 5,
+    "key_fragment": "YLCOXY",
+    "checked_positions": 6
+   },
+   {
+    "crib": "ATTACK",
+    "offset": 6,
+    "tab": "varbeau",
+    "period": 5,
+    "key_fragment": "CPYMDC",
+    "checked_positions": 6
+   },
+   {
+    "crib": "ATTACK",
+    "offset": 15,
+    "tab": "vig",
+    "period": 5,
+    "key_fragment": "ZCUCUZ",
+    "checked_positions": 6
+   },
+   {
+    "crib": "ATTACK",
+    "offset": 15,
+    "tab": "varbeau",
+    "period": 5,
+    "key_fragment": "BYGYGB",
+    "checked_positions": 6
+   },
+   {
+    "crib": "ATTACK",
+    "offset": 26,
+    "tab": "vig",
+    "period": 5,
+    "key_fragment": "WIFZSW",
+    "checked_positions": 6
+   },
+   {
+    "crib": "ATTACK",
+    "offset": 26,
+    "tab": "varbeau",
+    "period": 5,
+    "key_fragment": "ESVBIE",
+    "checked_positions": 6
+   },
+   {
+    "crib": "TANK",
+    "offset": 1,
+    "tab": "beau",
+    "period": 3,
+    "key_fragment": "UFHU",
+    "checked_positions": 4
+   },
+   {
+    "crib": "TANK",
+    "offset": 24,
+    "tab": "beau",
+    "period": 3,
+    "key_fragment": "LAJL",
+    "checked_positions": 4
+   },
+   {
+    "crib": "TANK",
+    "offset": 40,
+    "tab": "beau",
+    "period": 3,
+    "key_fragment": "KSHK",
+    "checked_positions": 4
+   },
+   {
+    "crib": "MG",
+    "offset": 6,
+    "tab": "beau",
+    "period": 1,
+    "key_fragment": "KK",
+    "checked_positions": 2
+   },
+   {
+    "crib": "MG",
+    "offset": 18,
+    "tab": "vig",
+    "period": 1,
+    "key_fragment": "QQ",
+    "checked_positions": 2
+   },
+   {
+    "crib": "MG",
+    "offset": 18,
+    "tab": "varbeau",
+    "period": 1,
+    "key_fragment": "KK",
+    "checked_positions": 2
+   },
+   {
+    "crib": "MG",
+    "offset": 21,
+    "tab": "beau",
+    "period": 1,
+    "key_fragment": "WW",
+    "checked_positions": 2
+   },
+   {
+    "crib": "MG",
+    "offset": 33,
+    "tab": "beau",
+    "period": 1,
+    "key_fragment": "FF",
+    "checked_positions": 2
+   },
+   {
+    "crib": "MG",
+    "offset": 42,
+    "tab": "beau",
+    "period": 1,
+    "key_fragment": "GG",
+    "checked_positions": 2
+   }
+  ],
+  "min_period_found": 1
+ },
+ "control_true_offset": {
+  "runs": [
+   {
+    "seed": 0,
+    "crib": "PULL",
+    "true_offset": 3,
+    "true_tab": "vig",
+    "true_period": 5,
+    "plain": "OURPULLHOLDWATCHNOWITDAWNLINEATWITHFORSENDWZ",
+    "cipher": "LKBINIBRHEAMKMVEDYPBQTKPGIYXXTQMSMACEBLXKTGS",
+    "n_hits_this_crib": 4,
+    "true_offset_found_periodic": false,
+    "true_offset_period_found": null
+   },
+   {
+    "seed": 1,
+    "crib": "ATTACK",
+    "true_offset": 7,
+    "true_tab": "beau",
+    "true_period": 5,
+    "plain": "THENESTATTACKITHOLDWITHFORDAWNANDWILLOURNOWT",
+    "cipher": "BTVIMCHZCXUYPNXNMOSUMHSQCDXZZDUNWZIJPLBZHMDC",
+    "n_hits_this_crib": 3,
+    "true_offset_found_periodic": true,
+    "true_offset_period_found": 5
+   },
+   {
+    "seed": 2,
+    "crib": "PIN",
+    "true_offset": 37,
+    "true_tab": "varbeau",
+    "true_period": 5,
+    "plain": "OURWILLNOWATTHEDAWNWATCHITLINEWITHANDPINNEST",
+    "cipher": "BRTFWYIPXKNQVQSQXYWKNQEQWGIKWSJFVQOAARRBABUC",
+    "n_hits_this_crib": 0,
+    "true_offset_found_periodic": false,
+    "true_offset_period_found": null
+   }
+  ],
+  "true_offset_found_count": 1
+ },
+ "control_random": {
+  "runs": [
+   {
+    "seed": 0,
+    "random_body": "NNOWHQXVOKMVDLLKBKCDMTVQLFCGMKOYKRVDKZCLIRRV",
+    "n_hits": 31
+   },
+   {
+    "seed": 1,
+    "random_body": "NVENGPYPWXZYPVSZYHYKQOMVLZEDWDPCCTUTULEFRBZG",
+    "n_hits": 45
+   },
+   {
+    "seed": 2,
+    "random_body": "UWNOZCAHYSXBCXJTPYBRJEJXBYPUZMRUDIACOHUPTGAF",
+    "n_hits": 57
+   }
+  ],
+  "total_hits": 133
+ }
+}

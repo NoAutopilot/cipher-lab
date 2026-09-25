@@ -1,0 +1,181 @@
+{
+ "target": {
+  "n_candidates": 93,
+  "judge_pass_count": 0,
+  "max_crib_hits": 1,
+  "top5": [
+   {
+    "key_name": "caesar_11",
+    "tab": "varbeau",
+    "lang_score": -1.7433,
+    "n_cribs_hit": 0,
+    "cribs_hit": [],
+    "decode": "NMQFVJJPGZKTWZZKGYNHUVBCDLHMJKFRJEKHJMLECDFL"
+   },
+   {
+    "key_name": "caesar_15",
+    "tab": "vig",
+    "lang_score": -1.7433,
+    "n_cribs_hit": 0,
+    "cribs_hit": [],
+    "decode": "NMQFVJJPGZKTWZZKGYNHUVBCDLHMJKFRJEKHJMLECDFL"
+   },
+   {
+    "key_name": "caesar_0",
+    "tab": "beau",
+    "lang_score": -1.7616,
+    "n_cribs_hit": 0,
+    "cribs_hit": [],
+    "decode": "YZVGQCCWFMBSPMMBFNYERQKJIAEZCBGUCHBECZAHJIGA"
+   },
+   {
+    "key_name": "YZFF",
+    "tab": "beau",
+    "lang_score": -1.7748,
+    "n_cribs_hit": 0,
+    "cribs_hit": [],
+    "decode": "WYALOBHBDLGXNLRGDMDJPPPOGZJEAALZAGGJAYFMHHLF"
+   },
+   {
+    "key_name": "605_A1",
+    "tab": "vig",
+    "lang_score": -1.7798,
+    "n_cribs_hit": 0,
+    "cribs_hit": [],
+    "decode": "XSBPBUTVRJQEGFKUMJXNFFHNNRSWPVPXUOQSTSWOIOPR"
+   }
+  ],
+  "any_crib_hit_rows": [
+   {
+    "key_name": "QM",
+    "tab": "vig",
+    "cribs_hit": [
+     "PIN"
+    ],
+    "decode": "MPPIUMISFCJWVCYNFBMKTYAFCOGPINEUIHJKIPKHBGEO"
+   },
+   {
+    "key_name": "caesar_5",
+    "tab": "beau",
+    "cribs_hit": [
+     "MG"
+    ],
+    "decode": "DEALVHHBKRGXURRGKSDJWVPONFJEHGLZHMGJHEFMONLF"
+   },
+   {
+    "key_name": "caesar_6",
+    "tab": "beau",
+    "cribs_hit": [
+     "MG"
+    ],
+    "decode": "EFBMWIICLSHYVSSHLTEKXWQPOGKFIHMAINHKIFGNPOMG"
+   },
+   {
+    "key_name": "caesar_10",
+    "tab": "beau",
+    "cribs_hit": [
+     "MG"
+    ],
+    "decode": "IJFQAMMGPWLCZWWLPXIOBAUTSKOJMLQEMRLOMJKRTSQK"
+   },
+   {
+    "key_name": "caesar_10",
+    "tab": "varbeau",
+    "cribs_hit": [
+     "MG"
+    ],
+    "decode": "MLPEUIIOFYJSVYYJFXMGTUABCKGLIJEQIDJGILKDBCEK"
+   },
+   {
+    "key_name": "caesar_16",
+    "tab": "vig",
+    "cribs_hit": [
+     "MG"
+    ],
+    "decode": "MLPEUIIOFYJSVYYJFXMGTUABCKGLIJEQIDJGILKDBCEK"
+   },
+   {
+    "key_name": "caesar_22",
+    "tab": "beau",
+    "cribs_hit": [
+     "MG"
+    ],
+    "decode": "UVRCMYYSBIXOLIIXBJUANMGFEWAVYXCQYDXAYVWDFECW"
+   }
+  ]
+ },
+ "control_true_key": {
+  "runs": [
+   {
+    "seed": 0,
+    "true_key_name": "QM",
+    "true_tab": "vig",
+    "plain": "PULLTHENESTWITHTANKTHEENEMYSENDATFORATHOLDAW",
+    "cipher": "FGBXJTUZUEJIYFXFQZAFXQUZUYOEUZTMJREDQFXABPQI",
+    "true_key_rank": 1,
+    "top_candidate": {
+     "key_name": "QM",
+     "tab": "vig",
+     "lang_score": -0.991
+    }
+   },
+   {
+    "seed": 1,
+    "true_key_name": "MQ",
+    "true_tab": "beau",
+    "plain": "ATNOWTHETANKTHEOURITDAWNATTACKPULLATHESENDMG",
+    "cipher": "MXZCQXFMTQZGTJICSZEXJQQDMXTQKGXWBFMXFMUMZNAK",
+    "true_key_rank": 1,
+    "top_candidate": {
+     "key_name": "MQ",
+     "tab": "beau",
+     "lang_score": -1.1301
+    }
+   },
+   {
+    "seed": 2,
+    "true_key_name": "YZFF",
+    "true_tab": "varbeau",
+    "plain": "PULLMGPOSITIONWATCHTHEHOLDTHENOWLINEPINWITHA",
+    "cipher": "RVGGOHKJUJODQORVVDCOJFCJNEOCGOJRNJIZRJIRKUCV",
+    "true_key_rank": 1,
+    "top_candidate": {
+     "key_name": "YZFF",
+     "tab": "varbeau",
+     "lang_score": -0.9056
+    }
+   }
+  ],
+  "true_key_rank1_count": 3
+ },
+ "control_random": {
+  "runs": [
+   {
+    "seed": 0,
+    "random_body": "OBYPYZYIWZFSUEYYMGUERVTWKLQNAGXZATUSWOGCWBHX",
+    "judge_pass_count": 0,
+    "max_crib_hits": 1,
+    "any_crib_hit_count": 10,
+    "n_candidates": 93
+   },
+   {
+    "seed": 1,
+    "random_body": "SALZBCUTZSBSXWUFTBIOECUNCLFNPVLJMNFPMIVWBOOH",
+    "judge_pass_count": 0,
+    "max_crib_hits": 1,
+    "any_crib_hit_count": 6,
+    "n_candidates": 93
+   },
+   {
+    "seed": 2,
+    "random_body": "XAQKYUSDIJTYADIQJCBKYLLAPAFTMYLTQQSTMWBORAIL",
+    "judge_pass_count": 0,
+    "max_crib_hits": 1,
+    "any_crib_hit_count": 4,
+    "n_candidates": 93
+   }
+  ],
+  "judge_pass_total": 0,
+  "any_crib_hit_total": 20
+ }
+}

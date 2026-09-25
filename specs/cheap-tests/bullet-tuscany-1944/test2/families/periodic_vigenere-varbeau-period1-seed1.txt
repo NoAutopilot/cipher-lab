@@ -1,0 +1,5 @@
+# bullet-tuscany-1944 periodic_vigenere seed 1 restarts 8 25 Sept 2026 19:15 UTC; control mean 1.000 (1.000-1.000); score -3.973
+# {"period": 1, "tabula": "varbeau", "continuous_key": true, "key": "g", "score_per_letter": -3.9733}
+ihlaqeekbuforuu
+fbticpqwxygchef
+amezfcehgzxyag
