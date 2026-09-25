@@ -438,3 +438,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T16:19Z	session_01EnQqBtMCb7fXtPvLqin2GL	LANE R6 P5 (Sonnet, cap 5)	antt-fcc-costacabral-1865 key	brief 2026-09-25-lane-r6-p5-costacabral-key.md
 2026-09-25T16:19Z	session_015t6VAAyCgCAmcVQQ1P62h6	LANE R6 Y6 (Sonnet, cap 6)	espagnol142-mercy-1648 transcription+key	brief 2026-09-25-lane-r6-y6-mercy-transcribe.md
 2026-09-25T16:19Z	session_01DG2K4JMGBjdPSvB2SvW3iB	LANE R6 Y4b (Sonnet, cap 4)	clairambault296 sweep	brief 2026-09-25-lane-r6-y4b-clair296-sweep.md
+2026-09-25T16:23Z	session_01H4AdRiu9g44F1oCBVNzbpx	parent 7c (Fable, live)	took over from 7b 16:24 UTC; trigger trig_015FapxegNnZtyGksy9VBnuT	hub-seed/SUCCESSOR-PROMPT.md
