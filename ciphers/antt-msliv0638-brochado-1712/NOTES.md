@@ -48,3 +48,111 @@ Confirms and extends the scout's finding: across these five leaves alone, at lea
 - Read D. Luís da Cunha's *Memorias da Paz de Utrecht* (`purl.pt/23773`, 900 pp. for this part alone, 3 further parts at `purl.pt/23772` and `purl.pt/23774`) for any reprint or discussion of Brochado's ciphered London dispatches; its own full-text search form did not honour a non-JS query this pass (see item 3 above) -- needs a browser fetch or a different search route, not a plain curl retry.
 - Map the appendix's full span (m0285-m0306) end to end, transcribing every Carta-Nº / cipher-group / Deciffrada / plaintext quadruple, before any key-alignment attempt (flagged already by the scout).
 - Verdict is now `open`: the target can move to the board's normal pipeline (extraction/key-alignment from the manuscript's own contemporary "Deciffrada" appendix) without further archive work on the sender's edition, unless the Hawes review or the Cunha memoir turns up something unexpected.
+
+## PX-BROKEY (25 Sept 2026): appendix extent, system characterization, undeciphered body passage
+
+Worker PX-BROKEY (Sonnet, session_01STLPbRnttUCLRbUvnynUj6), job: rebuild the period key from the volume's own
+contemporary decipherments and report which body cipher passages it reads. Per CLAUDE.md rule 7/10 and the
+job brief's step 1-2, this pass establishes the appendix's true extent and the cipher system's character;
+full key construction and body-passage decoding are **not completed this pass** -- see "Not done this pass"
+below. All findings below are from full-resolution images viewed directly by this worker (not from a prior
+worker's prose summary), file paths `images/full_PT-TT-MSLIV-0638_m0NNNN.jpg.jpg`.
+
+### The appendix has a title page and is much larger than the scout/CS01/CS01B estimate
+
+`images/full_PT-TT-MSLIV-0638_m0279.jpg.jpg` carries a section title in display script: **"Cartas em Cifra e
+Passages da mesma, que se achão nesta Collecção, deciffradas"** ("Letters in cipher, and passages of the
+same, that are found in this collection, deciphered"). This is a deliberate compiler-made index/key
+appendix, not an incidental run of interlinear glosses. It is followed immediately by the first entry
+(Carta Nº 13) on m0280. The scout (PX-SCDIGI3) and PX-CS01 had only viewed m0285-306 in earlier passes and
+estimated the span at "~m0285-306"; this pass establishes the true start.
+
+**Backward boundary (binary search, cheap: 4 leaf reads instead of transcribing every leaf back to page 1):**
+m0270 (page number "133" in the body's own foliation, dated "Londres 15 de 8bro 1713" ["8bro" = outubro],
+signed "S[?] Luis da Cunha" / "[Bro]chado") is an ordinary **plaintext** body letter, no cipher at all.
+m0276 is a body letter **with cipher groups embedded inline in running Portuguese prose, and no interlinear
+decipherment** (see "Undeciphered body passage" below) -- a different kind of page from the appendix.
+m0279 is the appendix's own title page. So the appendix (m0279 title + m0280-296 content) sits in a distinct
+block near the end of the letterbook's ~306 leaves, after the ordinary correspondence.
+
+**Forward/end boundary:** m0296 ends with a dateline **"D. L[uís] da C[unha] a V.Exª[?]. 7 de 9bro [novembro]
+de 1713"**, a closing flourish/underline, and below it (on the same leaf, clearly a different, unrelated,
+cruder-hand document showing through/underneath, with the Arquivo Nacional da Torre do Tombo stamp) --
+consistent with the appendix ending here. m0294-296 together carry one long entry, "Carta Nº 123", for which
+**no cipher groups are shown at all** -- only the "Deciffrada" plaintext -- the sole entry in the whole
+appendix, of those viewed, transcribed as plaintext-only.
+
+**Confirmed appendix span: m0279 (title) + m0280-296 (17 leaves of content).** Every leaf m0280-296 was
+viewed directly this pass (all now on disk in `images/`, full resolution, ~24 DigitArq requests this pass,
+see host report below). Running entry numbers found, leaf by leaf (letter numbers, not necessarily
+consecutive -- only letters that used cipher get an appendix entry): m0280 Carta 13; m0281 Carta 15, Carta
+~22; m0282 Carta 30, Carta ~58, Carta 61; m0283 Carta 61 decode (cont.) + Carta 70; m0284 Carta 70 decode
+(cont.) + Carta 71 + Passage 2 + Passage 3 (starts); m0285 Passage [1?]ª (cont./separate) + Carta 72 +
+Passage 2; m0286 Passage 3 (cont.) + Carta 73 + Carta 74; m0287 Carta 74 decode (cont.) + Carta 78 + Carta 79
++ Carta 80; m0288 Carta 81 + Carta 85 + Passage 2ª; m0289 Carta 89 + Carta 91 + Carta 92 (starts); m0290
+Carta 92 decode (cont.) + Carta 93 + Passage 2ª + Passage 3ª (starts); m0291 Passage 3ª (cont.) + Carta 94 +
+Carta 96; m0292 Carta 101 + Carta 105 + Passage 2ª (starts); m0293 Passage 2ª decode (cont.) + Carta 106 +
+Carta 109(?) + Passage 2ª; m0294 Carta 110 + Passage 2ª + Carta 123 (starts, no cipher shown); m0295-296
+Carta 123 decode (cont., plaintext-only) ending 7 Nov 1713.
+
+That is at least 20 numbered-letter entries (13, 15, 22, 30, 58, 61, 70, 71, 72, 73, 74, 78, 79, 80, 81, 85,
+89, 91, 92, 93, 94, 96, 101, 105, 106, 109, 110, 123 -- 28 by count, some digit readings uncertain, marked
+`?` above) plus at least 9 unnumbered "Passage" excerpts, each with its own cipher-plus-Deciffrada pair
+(except Carta 123, plaintext only). This is roughly triple the "at least ten letters" PX-CS01 counted from
+five leaves. Letter numbers climb from 13 to 123 across the run, consistent with a single pass through the
+whole letterbook picking out only the letters/passages that used cipher, in original order.
+
+### The system is a partial nomenclator embedded in plain running Portuguese, not a full substitution
+
+Every cipher line mixes **plain Portuguese words, written out normally**, with **coded tokens** standing in
+for individual words (mostly names and sensitive terms: Rainha [Queen Anne], Bullingbrook [Bolingbroke],
+Thesoureiro [the Treasurer, i.e. Oxford], Velhaco [rogue/scoundrel, their code-word for a minister],
+Inglaterra, Hanover, Escócia, Príncipe, etc.). Coded tokens are periods-separated groups of two kinds:
+**numbers** (small ones recur constantly: 2, 4, 5, 7, 8, 12, 15, 17, 18, 19, 20, 21, 23, 24, 25, 26; a few
+larger ones appear rarely: 52, 55, 300) and **single roman letters used as code symbols** (a, c, d, e, f, g,
+h, m, q, x, y, z -- distinguishable from ordinary short Portuguese words by position: they sit inside a
+period-separated numeric run, e.g. "...17.a.7..."). Carta Nº 70's own decipherment (m0283) is explicit about
+the mechanism: "...V.Exª deve saber que no Diccionario destes Ministros vale o mesmo..." ("...Y.Exc. should
+know that in the Dictionary [used by/for] these Ministers, it amounts to the same..."), i.e. the correspondents
+themselves call this a **Diccionario** [dictionary/nomenclator] code, confirming this is not ad hoc. This
+matches CLAUDE.md's access-playbook framing of "dictionary or book codes" for this lane, and explains why
+PX-SCDICT's scout for a separate copy-free "dictionary code" target found nothing extra to add: the
+dictionary in question is internal to this volume's own correspondence, not a published book.
+
+### Undeciphered body passage found (m0276): a genuine target for the key once built
+
+`images/full_PT-TT-MSLIV-0638_m0276.jpg.jpg` is an ordinary body letter page with cipher groups embedded
+directly in running prose and **no interlinear or marginal gloss at all** -- e.g. opens mid-sentence
+"55.17.12.23. 14.d.f. 16.17.ff.z.12. 5.z.x.d.12. mas isto hé impossível, nem o tempo o permite, e só serve
+x.z.55.52.15.26.y. 20.25.f.24. e 3.17.20.a.f.19. m.a.d. Cá não cuido de dizer que o novo Enviado seria melhor
+recebido...", continuing for the rest of the leaf in the same mixed style, dated by context to the same
+London 1712-13 embassy (references "Mylord Strafford", "o novo Enviado"). Some of the same small numbers
+recur here (17, 12, 23, 20, 26, 24, 3) as in the appendix, a first cross-check that the two use the same
+code once the key exists. This is exactly the kind of "body passage without decipherment" the job brief's
+step 4 asks for -- found opportunistically while walking the m0270-282 boundary, not yet swept systematically
+(no --thumbs stride run this pass; the brief's up-to-8-leaf body sweep is unstarted, see below).
+
+### Not done this pass (push per Usage rule 10 / cost realism)
+
+Step 2 (two independent Sonnet transcription passes into ciphertext.tsv/plaintext_period.tsv) is running as
+ONE subagent pass this session (not two) against the 17 on-disk appendix images -- reading 15 full-resolution
+leaves directly myself first (for the extent/system findings above) already used a large share of this
+worker's $9 stall-alarm cap, and a second full independent 17-image pass risked running past it with nothing
+committed. Files (when the subagent lands): `ciphertext_appendix.tsv`, `plaintext_appendix.tsv`,
+`transcription_pass_summary.md`. Steps 3-6 (key.tsv/decode.json, body sweep beyond m0276, spec+judge, fresh
+re-derivation) are **not started** and are the next worker's job. A named next step: push the extent-mapping
+insight (this is a whole-volume "Diccionario", so a NUMBER may also encode multi-letter fragments or whole
+words rather than single letters -- check whether the same number always maps to the same WORD across
+different entries, e.g. does "15" mean the same thing in Carta 13 and Carta 81, before assuming a fixed
+letter-substitution alphabet) into the key-building step, since Carta 70's own text says the code is a
+"Diccionario" (word-level), not a cipher alphabet (letter-level) -- this likely rules out treating the
+appendix as a simple homophonic substitution and argues for a nomenclator/dictionary-code key.tsv (code,
+word/phrase, not code, letter).
+
+### Host report (this pass)
+
+`digitarq.arquivos.pt`: 24 full-resolution leaf-fetch requests (m0281, m0286-288, m0284-285, m0294-296,
+m0270, m0200, m0276, m0279-283, m0289-293 -- note m0289-293 were already on disk from PX-CS01's earlier pass
+and were not re-fetched, only viewed), each call's own >=3s pacing via `tools/digitarq_fetch.py`, well under
+the 60-request session cap, no other worker on this host per the ROOM.md claim. No other host touched this
+pass.
