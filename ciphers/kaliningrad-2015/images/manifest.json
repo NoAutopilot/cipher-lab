@@ -1,0 +1,25 @@
+{
+  "fetched": "25 Sept 2026 16:51 UTC",
+  "source_post": "sources/schmeh/posts/19-kaliningrad.html (Klaus Schmeh, \"The Top 50 unsolved encrypted messages: 19. The Kalinigrad bottle post\", scienceblogs.de/klausis-krypto-kolumne, 17 Oct 2017)",
+  "images": [
+    {
+      "file": "cryptogram1.png",
+      "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2016/09/Kaliningrad-Cryptogram1.png",
+      "id": "Kaliningrad-Cryptogram1",
+      "size_bytes": 1212599,
+      "sha1": "062ef27828ef26e28f3b29af5566261ac19f57d4",
+      "note": "front sheet, section I (20 lines)"
+    },
+    {
+      "file": "cryptogram2.png",
+      "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2016/09/Kaliningrad-Cryptogram-2.png",
+      "id": "Kaliningrad-Cryptogram-2",
+      "size_bytes": 1053450,
+      "sha1": "441c93be4aa6be895eb038e897dbd1aeca2d3e2b",
+      "note": "second sheet (not the reverse of sheet 1, per comment #7), section II (6 lines) plus faint bleed-through ghost text below, not transcribed"
+    }
+  ],
+  "not_fetched": {
+    "frequency_image": "https://scienceblogs.de/klausis-krypto-kolumne/files/2017/10/Kalinigrad-Frequencies.png (a reader's own frequency count graphic, not the cryptogram itself; not needed for test 1)"
+  }
+}

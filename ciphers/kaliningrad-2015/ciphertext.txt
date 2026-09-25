@@ -1,0 +1,45 @@
+# Kaliningrad (Baltiysk) bottle-post cryptogram, found 2015
+# Source: Thomas Ernst's full transcript, comment #32 (22 Oct 2017, comment-924706) on
+# Klaus Schmeh's post "The Top 50 unsolved encrypted messages: 19. The Kalinigrad bottle post"
+# (scienceblogs.de/klausis-krypto-kolumne, 17 Oct 2017), saved at
+# sources/schmeh/posts/19-kaliningrad.{html,txt}. Checked against the two page images
+# (ciphers/kaliningrad-2015/images/cryptogram1.png, cryptogram2.png, fetched from
+# scienceblogs.de/klausis-krypto-kolumne/files/2016/09/) in this worker's own pass, row by row.
+# As transcribed by Ernst: he replaced the Russian hard-sign-like glyph (described in the
+# thread as looking like a "2" turned upside down) with "x" throughout (his own note, comment
+# #31). Bracketed numbers [194] etc. are Ernst's own running character counts per section, not
+# part of the cipher; kept here as transcribed, on their own marker, not folded into the text.
+# Underlined letters (noted by Hans, comment #7, and analysed by Norbert, comment #12) are not
+# distinguishable in this plain-text transcript; see NOTES.md.
+# Two sheets: section I (20 lines, front of sheet 1) and section II (6 lines, sheet 2 -- a
+# separate sheet, not the reverse of sheet 1, per Hans comment #7).
+
+[SECTION I]
+[I/1] en'ifvn d't'öhn'fdê elhxikixacel etê deluwxs
+[I/2] uxed ganunt' lnenên'lf x.s.f.d. fxuustx d'e astf'
+[I/3] uesx cfefdxx helcnunde uwsesd danunhhs c.f.
+[I/4] d'enac s'eaxa efn' xuhncfaiw m'am'mt. f.t.'f. wmet't'cef
+[I/5] dludn hxo aul lel nenet'se. [194] emnh mwie eiie iael'es
+[I/6] esmdesxnt xnoxunt' ex xelfd' x.l.b. scihss ne in'nw htouk
+[I/7] sans eighcin möwidgn lwixe öxbns'n hxan'ê uwesgnen'n
+[I/8] ei sêk dloex'n'ua zn'el'et'ff s.n.c. lnee exadn' wue
+[I/9] êfht'iesn'n'f wxdihs zêusxs xf'uaf'np. [194] ihx död'e sxunxca
+[I/10] e wehsnhdn' mne fu oenin'f iftt' kt't'set' wx'sfue ede ê
+[I/11] ue ex'xn dde eshse i an'ex'e nunw tmnisen't' miabdhhncs
+[I/12] x.l.n. fneezt' xande hehxt'wx he ehfs mid'a ue inlg
+[I/13] f2t'eaveidn' t'oa iuegnnz'w ngwsaetme. [187] lel hul xetn'h'
+[I/14] dien' i nelct' eweas hlen'sx' wiê ê eisx'e eomn'f
+[I/15] glniftha usxualhseen ed'ixt'n'l' t'nifn'tn' smwallssn d.s.z.-
+[I/16] d'xepc x'l'iwt' sxehui i iufiee ihnxl n'ecnn' hiuen ênfi
+[I/17] sengnet'snx' hgênww hn'ein' üdna lgs' eamdemn. [199] lba wof'u
+[I/18] i mud'n x'nuaht' sêas'gnn bzexeenn f'exx di eg tnein
+[I/19] exdsz'i isx'sn'n n'hee xêt iöe dhi ewgwt'mk n.t.d. mze
+[I/20] i eix' fnö x'eseeon' fexisen'lcx't' hxhu l'nhu ewt'
+
+[SECTION II]
+[II/1] öfenuinxwe wen wextss cidi kexeelxn." sn'ehd'en i
+[II/2] aind' n'eêain. [199] Allot'l f'laefdln' m'n'eev s'e eed-'a
+[II/3] tekezwn nie eenn'mn ndew giunn' xfxess i sx'ee ide
+[II/4] aif-zd'ln umfdxf n'.xn. x'en' iuxent wehdmnnu esl'es
+[II/5] -'fef nd'e wn'êd dxesmxde gon'xt' iwêxw wxixeheu. [166]
+[II/6] eimat . . . . . . . . . . [5]
