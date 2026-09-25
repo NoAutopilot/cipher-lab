@@ -1,0 +1,22 @@
+TARGET best (11.832037906530786, 'zustimmung', 'key') standard tableau -13.9 top5 [(11.8, 'zustimmung', 'key'), (10.4, 'schlurfte', 'full'), (9.2, 'truus', 'full'), (8.8, 'hauswirtin', 'key'), (8.4, 'wofur', 'both')]
+noise 1 -3.8 bezet full standard -19.8
+noise 2 5.5 spikkeltjes plain standard -6.6
+noise 3 -4.5 tjalk plain standard -17.5
+noise 4 3.5 aangeboren plain standard -29.2
+noise 5 -2.6 ortschaften key standard -20.6
+noise 6 2.4 durchaus key standard -15.9
+noise 7 -2.0 eindje plain standard -26.0
+noise 8 6.3 eingestellt plain standard -26.3
+noise 9 4.3 overgelaten plain standard -14.7
+noise 10 -1.4 teruggekomen plain standard -23.6
+noise 11 -0.1 keukentje key standard -25.5
+noise 12 -1.5 wijken full standard -34.4
+noise 13 3.2 poezie key standard -26.8
+noise 14 5.7 ahnlichkeit plain standard -14.4
+noise 15 -1.5 verfolgen plain standard -28.3
+noise 16 6.9 kainszeichen full standard -26.3
+noise 17 0.5 hinuber full standard -22.3
+noise 18 -5.5 schlief full standard -24.8
+noise 19 0.1 randolph plain standard -24.0
+noise 20 -2.4 zachtjes plain standard -29.8
+NOISE best-of-candidates: min -5.5 median 0.1 max 6.9 (20 trials, 45749 candidates)
