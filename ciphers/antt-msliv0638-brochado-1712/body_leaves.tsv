@@ -1,0 +1,52 @@
+image	method	shows	cipher	letter_no
+m0001	thumb (stride 8)	front cover / binding, no text	no	n/a
+m0009	thumb (stride 8)	plain Portuguese letter prose	no	n/a
+m0017	thumb (stride 8)	plain Portuguese letter prose	no	n/a
+m0025	thumb (stride 8)	plain Portuguese letter prose	no	n/a
+m0030	full	plain Portuguese letter, ends "19 de Junho de 1712", signed Joze dasunha Brochado	no	n/a
+m0033	thumb (stride 8)	plain Portuguese letter prose	no	n/a
+m0041	thumb (stride 8)	plain Portuguese letter prose	no	n/a
+m0049	thumb (stride 8)	plain Portuguese letter prose	no	n/a
+m0057	thumb (stride 8)	plain Portuguese letter prose, large signature block	no	n/a
+m0060	full	page "22"; plain prose, text discusses deciphering ("se decifrou a carta do officio...") but carries no cipher groups itself; dated implicitly ~Sept 1712 by neighbouring leaves	no	22 (page no.)
+m0065	thumb (stride 8)	plain Portuguese letter prose	no	n/a
+m0073	thumb (stride 8)	plain Portuguese letter prose	no	n/a
+m0081	thumb (stride 8)	plain Portuguese letter prose	no	n/a
+m0089	thumb (stride 8)	plain Portuguese letter prose	no	n/a
+m0090	full	page "33"; short plain letter re: Ottoman admiral/king of Sweden, dated "30 de 7bro de 1712"	no	33 (page no.)
+m0097	thumb (stride 8)	plain Portuguese letter prose	no	n/a
+m0105	thumb (stride 8)	plain Portuguese letter prose	no	n/a
+m0113	thumb (stride 8)	plain Portuguese letter prose	no	n/a
+m0120	full	plain letter re: England/Spain treaty terms, dated "2 de 8bro de 1712"	no	n/a
+m0121	thumb (stride 8)	plain Portuguese letter prose	no	n/a
+m0129	thumb (stride 8)	plain Portuguese letter prose	no	n/a
+m0137	thumb (stride 8)	plain Portuguese letter prose	no	n/a
+m0145	thumb (stride 8)	plain Portuguese letter prose	no	n/a
+m0150	full	plain letter re: "Mylord Strafford", Bolingbroke practica, no cipher on visible page	no	n/a
+m0153	thumb (stride 8)	plain Portuguese letter prose	no	n/a
+m0161	thumb (stride 8)	plain Portuguese letter prose	no	n/a
+m0169	thumb (stride 8)	plain Portuguese letter prose	no	n/a
+m0177	thumb (stride 8)	plain Portuguese letter prose	no	n/a
+m0179	full	page "80", dated "Londres 28 de Abril de 1713" -- CIPHER RUN FOUND (m0179-r1, ~19 tokens), introduced by "que naõ hé mais qe"	YES	80 (page no.)
+m0180	full	page "81", dated "Londres 2 de Maio de 1713" -- CIPHER RUN FOUND (m0180-r1, ~21 tokens), re: "Montaleon...dará a memoria por qe"	YES	81 (page no.)
+m0181	full	page "82", dated after "28 de Abril e 2 de Maio" (i.e. shortly after m0180); plain prose on visible page, no cipher seen	no	82 (page no.)
+m0185	thumb (stride 8)	plain Portuguese letter prose	no	n/a
+m0193	thumb (stride 8)	plain Portuguese letter prose	no	n/a
+m0201	thumb (stride 8)	plain Portuguese letter prose	no	n/a
+m0209	thumb (stride 8)	plain Portuguese letter prose	no	n/a
+m0210	full	plain letter, no cipher on visible page	no	n/a
+m0217	thumb (stride 8)	plain Portuguese letter prose	no	n/a
+m0225	thumb (stride 8)	plain Portuguese letter prose	no	n/a
+m0233	thumb (stride 8)	plain Portuguese letter prose	no	n/a
+m0241	thumb (stride 8)	plain Portuguese letter prose	no	n/a
+m0249	thumb (stride 8)	plain Portuguese letter prose	no	n/a
+m0257	thumb (stride 8)	plain Portuguese letter prose	no	n/a
+m0265	thumb (stride 8)	plain Portuguese letter prose	no	n/a
+m0270	full (already fetched by PX-BROKEY, copied not re-fetched)	page "133", ordinary plaintext body letter dated 15 Oct 1713, no cipher (per PX-BROKEY's prior finding, confirmed)	no	133 (page no.)
+m0273	thumb (stride 8)	plain Portuguese letter prose	no	n/a
+m0276	full (already fetched by PX-BROKEY, copied not re-fetched)	cipher groups embedded inline in running Portuguese prose, no interlinear gloss (PX-BROKEY's prior finding, this pass transcribes it)	YES	n/a (no page/Carta no. visible in the cropped view used by PX-BROKEY)
+m0281	thumb (stride 8) -- OUT OF SCOPE, inside appendix (m0279-296, PX-BROPASSB's file scope)	appendix content (Carta entries)	n/a (out of scope)	n/a
+m0289	thumb (stride 8) -- OUT OF SCOPE, inside appendix (m0279-296, PX-BROPASSB's file scope)	appendix content (Carta 89/91/92)	n/a (out of scope)	n/a
+m0297	thumb (stride 8)	blank/near-blank leaf just after appendix end	no	n/a
+m0300	full	blank leaf, "T" rubricator's guide-letter watermark only, no text	no	n/a
+m0305	thumb (stride 8)	blank/near-blank leaf near volume end	no	n/a
