@@ -1166,3 +1166,90 @@ deleted). Eye-check: line01 (s1 carries the stamp and "Monsieur", s2 the "2429";
 visible, e.g. glosses above 64 12 73 Ao 26 9 16 104), line17 (short band, 147 px; gloss letters above each code visible,
 a sliver of line 16 at the top), line33 (last line whole, blank margin below). No clipping of a line's own codes or
 gloss seen.
+
+**Step 2: two blind passes, four Opus subagents.** One prompt for all four (scratchpad copy, summarised here): only the
+lines_h crops for the subagent's range, `images/atlas/sheet.jpg`, `atlas.tsv` and the Sxx crops; the ZX-TR349C rules
+(z-curl is digit 2; `|` divider its own token; atlas code or `X?` with a description; S34/S69/S76 kept apart; small
+letters above a code in that row's `gloss`; larger marginal plain words kind `plain`; skip stamp and "2429"/"3"); stop
+s1 and start s2 at the red ticks; zoom sub-regions 2x wherever a mark is small; one added hint about the hand (the 4
+is a cross-like stroke with a tail, a digit not a sign). Pass G = G1 (lines 1-17) + G2 (18-33); pass H = H1 + H2;
+no subagent saw another's output. Each file was committed only after its subagents' completion reports arrived.
+Assembly: kind `numeral` (the subagents' word) written as `digit`, as in passE; `plain` rows carry a `w:` prefix on
+the token so `tools/reconcile_passes.py` drops them from alignment by its existing rule (no tool change needed).
+
+| pass | tokens | digit | sign | X? | divider | plain | non-blank gloss |
+|---|---|---|---|---|---|---|---|
+| passG.tsv | 1233 | 805 | 278 | 41 | 104 | 5 | 866 |
+| passH.tsv | 1201 | 748 | 312 | 35 | 97 | 9 | 863 |
+
+(passE/passF for comparison: 1101/1019 tokens, 142/58 glosses.) What the subagents flagged: (a) **"line11" is two
+text rows** in one band (the 3020-3245 gap between band centres is 225 px, about two pitches): the leaf has 34 cipher
+rows, not 33; G1 and H1 each transcribed both rows under line 11 (upper row first), so line numbers stay as before;
+(b) line 17's last ~5 tokens slope below its crop (read later from the top of line18_s2); (c) H1 reported that the
+atlas images did not display in its session, so H's lines 1-17 sign codes rest on atlas.tsv's shape descriptions,
+and part of its lines 1-12 reading on the unzoomed crop; (d) recurring unmatched shapes: a "ua"/"na" ligature (G2 and
+H2, ~6 times, lines 19-32), a large A fused with a crossed f (H1), a Y stem with a 9-loop; (e) number splits (10+2 vs
+102, 2+6 vs 26, 26+4 vs 2+64) are the commonest doubt.
+
+**Step 3: reconciliation.** `python3 tools/reconcile_passes.py passG.tsv passH.tsv --crops images/lines_h --rows` (`--halves` not used: the passes already number positions across the whole line, s1 then s2, so the per-line alignment needs no joining):
+
+```
+line  G-signs  H-signs  agree  cols  share
+01	24	24	23	24	0.96
+02	35	34	29	35	0.83
+03	34	35	28	35	0.80
+04	33	33	28	33	0.85
+05	32	30	25	32	0.78
+06	38	41	32	41	0.78
+07	37	40	32	40	0.80
+08	36	38	25	39	0.64
+09	39	43	33	43	0.77
+10	36	38	31	38	0.82
+11	71	72	52	74	0.70
+12	28	36	22	37	0.59
+13	39	39	31	40	0.78
+14	41	40	32	43	0.74
+15	37	39	27	39	0.69
+16	37	35	29	38	0.76
+17	33	32	18	38	0.47
+18	39	39	27	42	0.64
+19	35	32	26	35	0.74
+20	31	31	26	32	0.81
+21	38	34	28	38	0.74
+22	37	36	29	38	0.76
+23	38	34	26	38	0.68
+24	42	40	34	42	0.81
+25	32	29	20	32	0.62
+26	38	31	17	38	0.45
+27	41	34	21	42	0.50
+28	39	32	20	39	0.51
+29	40	35	26	40	0.65
+30	38	33	24	38	0.63
+31	35	33	28	36	0.78
+32	40	35	25	41	0.61
+33	35	35	28	36	0.78
+lines 33  signs A 1228  B 1192  agree 902/1276 = 70.7%  (nw)
+disagreement columns 374; draft signs 1276, of which M 390
+gloss agreement (aligned columns where every pass wrote a gloss): 441/728 = 60.6%
+```
+
+**Gate: PASSES.** Pooled token agreement **70.7%** (902/1276 columns) against the 60% gate, beside 39.3% (ZX-349, Sonnet,
+un-margined stitched crops) and 42.0% (ZX-TR349C, Sonnet, stitched 3895 px crops with the gloss band). 26 of 33 lines
+are at or over 0.60; under it: 12 (0.59), 17 (0.47, the truncated tail), 26 (0.45), 27 (0.50), 28 (0.51), and none
+other under 0.60 except those. **Gloss agreement 441/728 = 60.6%** (columns where both passes wrote a gloss), against
+10/19 in ZX-TR349C: the gloss is now read on about 70% of tokens by each pass, not 5-14%. What changed between the
+runs is three things at once (narrower crops, Opus instead of Sonnet, a zoom instruction), so this run does not say
+which of them moved the number.
+
+**Key-vs-gloss on the G/H agreed-gloss set (before settling), `key_vs_gloss.py --pass-a passG.tsv --pass-b
+passH.tsv`:** 262/441 = 59.4% exact; with the new `--lenient` option (u=v, i=j, a gloss that is the prefix of a word
+code such as `po` for pour, a DOUBLES code glossed with its pair) 295/441 = 66.9%. Clean codes (n >= 10, share >= 0.9):
+12 A 25/25, 14 A 22/22, S37 T 31/31, S38 T 11/11, 82 O 10/10, 15 N 37/39, S34 R 20/21, S31 P 14/15, 5 D/L 27/30, S29 M
+9/10. The systematic mismatches are transcription conventions or atlas confusions, not key errors, on what the
+glosses show: `4` glossed f (26/26; the cross-like mark read as a digit 4 is probably F's sign S02, "crossed x joined
+to a t", or an f/long-s form -- the hint in the pass prompt about the 4 may have pushed this; logged as a lead, not
+settled); `10` glossed u (19/19; 102 = V split as 10 + 2, or 104 split); `S40` (Z) glossed r (7/7; the R-loop sign is
+being matched to S40 instead of S33, confirmed by eye on line 02 s1 at x~1450, where the R-loop glossed with the z-form
+r follows 60); `S79` (Florence) glossed que/quel (the Y-shape is S32 = Q); `68` glossed ll (the Doubles ll code is 69);
+`S35` glossed "so"; `8` glossed a/o (28 or 82 split); `60` (I) mixed t/l/r (12/23 match). The settle step below
+inherits these as known confusions.

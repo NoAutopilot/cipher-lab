@@ -40,16 +40,27 @@ def main():
     ap.add_argument('--out', default=os.path.join(HERE, 'key_vs_gloss.tsv'))
     ap.add_argument('--pass-a', default=os.path.join(HERE, 'passE.tsv'))
     ap.add_argument('--pass-b', default=os.path.join(HERE, 'passF.tsv'))
+    ap.add_argument('--ciphertext', help='read a reconciled TSV (line, position, sign, gloss) instead of two passes; '
+                    'every non-blank gloss other than ? counts (ZX-TR349D)')
+    ap.add_argument('--lenient', action='store_true',
+                    help='also count as a match: u=v and i=j (period spelling), a gloss that is a prefix of a word '
+                         'code (po for pour), and a DOUBLES code glossed with its pair or one letter of it (ZX-TR349D)')
     args = ap.parse_args()
 
+    if args.ciphertext:
+        agreed = []
+        with open(args.ciphertext, encoding='utf-8') as f:
+            for row in csv.DictReader(f, delimiter='\t'):
+                g = (row.get('gloss') or '').strip()
+                if g and g != '?' and row['sign'] not in ('|', 'DEL', '?'):
+                    agreed.append((row['line'], row['position'], row['sign'], g))
+        return report(agreed, args)
     la = argparse.Namespace(split_chars=False, keep_dots=False, keep_plain=False, line_sub=None,
                              halves=False, flag=set(rp.FLAG_CONF))
     Pa, _ = rp.load_pass(args.pass_a, la)
     Pb, _ = rp.load_pass(args.pass_b, la)
     lines = list(Pa) + [l for l in Pb if l not in Pa]
     lines = list(dict.fromkeys(lines))
-
-    code_values = load_key()
 
     agreed = []  # (line, position, sign, gloss)
     for ln in lines:
@@ -69,12 +80,32 @@ def main():
             best = collections.Counter(present).most_common()
             sign = best[0][0] if len(best) == 1 or best[0][1] > best[1][1] else present[0]
             agreed.append((ln, pos, sign, non_gap[0]))
+    return report(agreed, args)
 
+
+def norm(t):
+    return t.lower().replace('v', 'u').replace('j', 'i').replace("'", '')
+
+
+def lenient_match(gl, v):
+    g, w = norm(gl), norm(v)
+    if w.startswith('doubles:'):
+        pair = w.split(':', 1)[1].split('(')[0].rstrip('?')
+        return g in (pair, pair[:1]) or (pair == 'ss' and g in ('s', 'f'))
+    if len(w) > 1 and len(g) >= 1 and w.startswith(g):
+        return True
+    return g == w
+
+
+def report(agreed, args):
+    code_values = load_key()
     per_code = collections.defaultdict(lambda: dict(n=0, match=0, mismatch=0, examples=[]))
     for ln, pos, sign, gloss in agreed:
         values = code_values.get(sign, set())
         gl = gloss.strip().lower()
         is_match = any(gl == v.lower() for v, _ in values)
+        if args.lenient and not is_match:
+            is_match = any(lenient_match(gl, v) for v, _ in values)
         d = per_code[sign]
         d['n'] += 1
         if is_match:
