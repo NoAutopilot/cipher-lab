@@ -694,3 +694,24 @@ by arguing it back up. `specs/antt-linhares-chave.json`'s judge output is unaffe
 Not run this pass: a third look at either disputed column; Part II of the volume; any further novelty search
 (AUDIT.md's N3/N3 verdicts and search log are unaffected by a token-grade change and are not touched by this
 worker, per this pass's brief).
+
+## YX-PTJUDGE judge re-run (25 Sept 2026)
+
+`tools/judge_plaintext.py` now has a real "pt" corpus (`tools/data/pt17/`, Vieira's own letters
+1648-1697, ~1.45M letters, not this target's own material) wired into `LANG_CORPORA`, so this spec's
+`judge` block (`"language": "pt", "min_word_cover": 0.5`) is no longer vacuous. Re-run against the
+committed `reading.txt` (the H24/M2 reading above):
+
+```
+$ python3 tools/judge_plaintext.py specs/antt-linhares-chave.json --file ciphers/antt-linhares-chave/reading.txt
+FAIL language: score=-1.559, null_p99=-1.618, real_p05=-1.014, real_median=-0.809, mode=both, N=467
+ok   words: cover=0.758, min=0.5, real_text_median_cover=0.949
+FAIL - antt-linhares-chave (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+
+FAIL overall (on the language check only; word-cover passes at 0.758 vs the 0.5 floor). Reported as a
+FAIL per rule 7, not a retraction of the reading above: this spec's own constraints already flagged the
+decode as "not expected to be complete sentences" (a mid-letter, 2-page fragment of a longer letter, 26
+tokens) and the language check's own control block confirms N=467 letters is being scored against windows
+of real running Portuguese prose, which a deliberately fragmentary decode is not shaped like. Status stays
+unchanged by this re-run.

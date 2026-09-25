@@ -1387,3 +1387,23 @@ this as a solved letter or a confirmed reading outside this repo.
 
 No network access; no hosts contacted. One Sonnet subagent (fresh-instance re-derivation, step 6), within
 the brief's 2-subagent limit. Cost: see the lane ledger.
+
+## YX-PTJUDGE judge re-run (25 Sept 2026)
+
+`tools/judge_plaintext.py` now has a real "pt" corpus (`tools/data/pt17/`, Vieira's own letters
+1648-1697, ~1.45M letters, not this target's own material) wired into `LANG_CORPORA`, so this spec's
+`judge` block (`"language": "pt"`) is no longer a length-only gate. Re-run against
+`reading_body_letter134.txt` (the same file the candidate reading above was graded from):
+
+```
+$ python3 tools/judge_plaintext.py specs/antt-msliv0638-brochado-1712.json --file ciphers/antt-msliv0638-brochado-1712/reading_body_letter134.txt
+ok   length: got=65, min=40, max=70
+FAIL language: score=-1.443, null_p99=-1.428, real_p05=-1.064, real_median=-0.823, mode=both, N=65
+FAIL - antt-msliv0638-brochado-1712 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+
+FAIL on language (score -1.443 is barely above the shuffled-null 99th percentile -1.428, and well short
+of the real-text 5th percentile -1.064). Reported as a FAIL per rule 7 -- this is not a claim that the
+reading is wrong; letter 134 is a short (65-letter), un-glossed fragment carrying ~27% of its tokens on
+1-2-observation codes (see above), and a 65-letter window is a short, noisy sample for any 4-gram gate.
+Status stays `partial`; this does not by itself change anything else in this file.
