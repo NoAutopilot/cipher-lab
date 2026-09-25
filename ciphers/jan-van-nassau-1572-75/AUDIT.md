@@ -542,3 +542,15 @@ fts queries counted separately), be-api.us.archive.org 4, www.googleapis.com 20 
 api.archives-ouvertes.fr 1, WebSearch 7. No DECODE, no credentials beyond the two API keys (test -n only), no
 subagents (both available slots unused — every step here needed direct source reading, not a parallel pass),
 no image or PDF refetches.
+
+## Second-opinion claims not confirmed (V6-SOCHK, 25 Sept 2026)
+
+From `second-opinions/chatgpt-2026-09-25-5551.md` (PR 12, SO-NASSAU-5551); full table in
+`second-opinions/CHECK-SO-NASSAU-5551.md`. Class line above untouched: WVO 5551 stays N3.
+- The Glawischnig snippet (17 Apr 1574, KHA A XI 5, STAMa 4f Nld. 165): repository-reported (V-TX2), not re-confirmed
+  this pass; one Google Books phrase query returned 0 items (not a negative for a snippet-view book).
+Confirmed leads for the search log: Press, *BMGN* 99 (1984), p.691 and n.44, points to Glawischnig pp.105-111 for
+the 1574 campaign (the page range to read first); Janssen, *BMGN* 90 (1975), pp.293-295 (review; no cipher text);
+BnF Français 3961 items 1-3 (29 Mar, 6 Apr, 18 Jun 1574, catalogue level). Correction for NOTES.md (not applied
+here): the Christoph killed at Mookerheide is Pfalzgraf Christoph, son of Friedrich III (Press p.691), not "Christoph
+of Wurttemberg" (the WVO summary's wording, NOTES.md lines 782-784, 806, 991).

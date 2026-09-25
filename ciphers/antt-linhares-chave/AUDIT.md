@@ -428,3 +428,14 @@ queries, WebSearch 11 queries, WebFetch (non-archive.org pages) 4. All sequentia
 per-host cap; no 429 seen. Credentials tested present (`test -n`, never printed): DECODE_USER, DECODE_PASS,
 GOOGLE_BOOKS_KEY, OPENALEX_KEY, S2_KEY, IA_USER, IA_PASS; only OPENALEX_KEY was needed this pass. 1 Explore
 subagent used for this search pass (within the brief's 2-subagent cap).
+
+## Second-opinion claims not confirmed (V6-SOCHK, 25 Sept 2026)
+
+From `second-opinions/chatgpt-2026-09-25.md` (PR 10, SO-LINHARES-M0002); full table in
+`second-opinions/CHECK-SO-LINHARES-M0002.md`. Class lines above untouched: both items stay N3.
+- *Textos Políticos* (1993), Banco de Portugal PDF: unreachable (HTTP 403), as before; the answer claims no page.
+- Vieyra 1809 page-level lookups (pp.83, 241, 255, 293, 383): not re-counted by the answer or this check.
+Confirmed leads for the search log (context only, no print or decipherment of m0002): Farias, *ex æquo* 40 (2019),
+pp.23-24 nn.7, 8, 10 (CLNH/0086/02 and /10, Bezerra-Gabriella-Isabel letters; no "cifra"); Carvalho, *Acervo*
+36(3) (2023), p.14 (Bezerra de Seixas in Russia, 6 Sept 1812). The answer also found that the prompt's
+"trim from the end" misstates the key, whose text (NOTES.md line 25) allows the beginning or the end.

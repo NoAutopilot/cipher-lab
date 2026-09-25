@@ -300,3 +300,14 @@ Request counts, this pass (25 Sept 2026): `narcis.nl` 1, `dspace.library.uu.nl` 
 `api.archives-ouvertes.fr` (HAL) 1, `tidsskrift.dk` 1, `sa.dk` (Rigsarkivet) 1 (redirect, abandoned), WebSearch
 ~13, WebFetch ~6. All sequential, well under any per-host cap; no 429 seen. 1 Explore subagent used for this
 search pass (within the brief's 2-subagent cap).
+
+## Second-opinion claims not confirmed (V6-SOCHK, 25 Sept 2026)
+
+From `second-opinions/chatgpt-2026-09-25.md` (PR 11, SO-VANBEUNINGEN-1657); full table in
+`second-opinions/CHECK-SO-VANBEUNINGEN-1657.md`. Class lines above untouched: item 1 N1, item 2 N3.
+- Postma 2007 "125 pages" (goedhartboeken.nl): not confirmed; the URL now serves the shop's homepage. Google Books
+  gives 160 pp., as AUD2 did.
+- The answer's "L09 penningem": reading.txt L09 reads "penmingem"; the point about dominant values stands.
+Confirmed lead for the search log: Stichting De Ruyter, *Rapport inzake de Jaarrekening 2022*, PDF p.25, book
+inventory item 144 lists Postma 2007: a named physical copy of the book that holds item 2 at N3 (access lead, not
+evidence either way). Fruin/Kernkamp 1906 pp.440-441 re-read from the IA OCR: as AUD2 reported.
