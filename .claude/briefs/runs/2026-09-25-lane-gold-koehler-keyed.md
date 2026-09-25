@@ -1,7 +1,7 @@
 JOB GOLD-2C: Köhler family B', keyed-tableau running key: design, cheap exclusion test, control, target. Fable (claude-fable-5-1). Stop and push at $15 or 90 minutes, whichever first. Run at most 3 heavy processes at once (GOLD-2A hit OOM with more). Lane: LANE GOLD orchestrator session_01DKDynpdEwZK5EokxtjCM3P.
 
 Read first: `.claude/briefs/runs/2026-09-24-lane-r4-common.md`, `.claude/briefs/runs/2026-09-25-lanes-7b-COMMON.md` (binding), `ciphers/koehler-1944/HYPOTHESES.md` in full (Bourdeau's six excluded families; GOLD-2A's family-B control and target numbers for the standard tabulae), `ciphers/koehler-1944/NOTES.md`, `tools/running_key.py --help`, `specs/koehler-1944.json`. Claim in ROOM.
-Intake gate: koehler-1944: open (line 1) -- edition/page or full-text-search citation found within 6 lines  (exit 0, run 25 Sept 2026 18:27 UTC)
+Intake gate: koehler-1944: open (line 1) -- edition/page or full-text-search citation found within 6 lines  (exit 0, run 25 Sept 2026 18:25 UTC)
 GOLD-2A result (18:07): standard tabulae control 60-79 pct recovered on 3 seeds, target 7 configs at one-time-key noise (joint ll -3.57 to -3.62/letter vs noise -3.57 to -3.64, controls -3.12 to -3.17); period 31-120 and crib-drag in noise. Family parked.
 Parent rule 18:18: a cryptanalytic worker runs its family through `tools/family_run.py` (control first, target only above --gate, HYPOTHESES.md row per run). Add your attack as a new family module `tools/families/keyed_running_key.py` following `tools/families/running_key.py`, with a case in tools/tests/test_family_run.py, and run step 2 through family_run.py with --gate 0.5. Step 1 (the distribution test) is a statistic, not a family run: a script under ciphers/koehler-1944/scripts/ is fine.
 

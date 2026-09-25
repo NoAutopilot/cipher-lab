@@ -1,7 +1,7 @@
-JOB GOLD-4D: Debosnys blind pass B on the split inventory, reconcile, and the homophonic control. Sonnet (claude-sonnet-5). Stop and push at $7 or 60 minutes, whichever first. Lane: LANE GOLD orchestrator session_01DKDynpdEwZK5EokxtjCM3P. Written 25 Sept 2026 18:27 UTC.
+JOB GOLD-4D: Debosnys blind pass B on the split inventory, reconcile, and the homophonic control. Sonnet (claude-sonnet-5). Stop and push at $7 or 60 minutes, whichever first. Lane: LANE GOLD orchestrator session_01DKDynpdEwZK5EokxtjCM3P. Written 25 Sept 2026 18:25 UTC.
 
 Read first: `.claude/briefs/runs/2026-09-24-lane-r4-common.md` (at most ONE Sonnet subagent, for pass B only, TSV to disk per page, commit per page), `.claude/briefs/runs/2026-09-25-lanes-7b-COMMON.md` (binding), `ciphers/debosnys-1883/NOTES.md` sections GOLD-4A, GOLD-4B and GOLD-4C, `glyphs/inventory.png`/`inventory.tsv`, `tools/reconcile_passes.py --help`, `tools/family_run.py --help`. Claim in ROOM.
-Intake gate (live, 18:27 UTC): debosnys-1883: open (line 1) -- edition/page or full-text-search citation found within 6 lines  (exit 0)
+Intake gate (live, 18:25 UTC): debosnys-1883: open (line 1) -- edition/page or full-text-search citation found within 6 lines  (exit 0)
 
 State: GOLD-4C split the sign inventory by eye to 160 ids (36 of them composite base+stroke ids) and rebuilt pass A from `glyphs/box_labels.tsv` (confidence H 36.6 / M 48.5 / L 14.9 percent, one pass). Its c4 diagnosis: 76 percent of GOLD-4A's disagreements were inventory confusion, so a second pass on the split inventory is now worth running.
 Do:
