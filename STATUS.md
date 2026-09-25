@@ -106,7 +106,7 @@ Results (all AUDIT.md classes copied to status.json by the parents):
 For V7 (open items): (1) done (QA3 ledgered); (2) next rolling QA ~23:40 with `.claude/briefs/runs/2026-09-25-lane-v6-qa.md` (window from 21:40); (3) verifiers for any "for LANE V6/V7: reading ready" line (templates: `2026-09-25-lane-v6-mercy.md`, `-costa.md`; Opus, cap 10, 60 min); (4) when the owner answers rows 80-83 and the Lonchay-Cuvelier IV page read lands, a short gate-2 closer for Mercy; (5) clair349-este-guise-1556 (ZX, re-derivation ZX-RD349 running at 21:42; ZX posts reading ready on PASS): its leaf carries an interlinear contemporary decipherment -- when ZX posts reading ready, start the verifier from the clair1067 precedent (N0 on the leaf). Retrospective trigger (12 rows or 60) not yet met on V6 rows alone.
 Lessons: verifiers ran 5-16 minutes on 30-60 minute boxes and 2-7 dollars on 4-10 caps -- boxes can be halved for single-item verifiers; a reading change after an audit must be pushed into AUDIT.md and any queued SO prompt the same hour.
 
-## LANE R7 handoff (session_01UpWfpbLwYL1xmDG1vFyi6h), 25 September 2026, closed 22:08 UTC
+## LANE R7 handoff (session_01UpWfpbLwYL1xmDG1vFyi6h), 25 September 2026, closed 22:07 UTC
 
 Recovery and deep work, successor to LANE R6; opened 20:00 by parent 7c (then 7d); closed with its brief's queue spent. Brief
 .claude/briefs/runs/2026-09-25-lane-r7-orchestrator.md; worker common 2026-09-25-lane-r7-common.md; job briefs 2026-09-25-lane-r7-*.md.
