@@ -50,6 +50,16 @@ session and every subagent, cloud or local.
    specific date and register, check whether tools/data's corpus for that language is era-matched; if not, building
    one is a cheap job (about 12 minutes, V6-PTCORP) worth doing before trusting a FAIL or a PASS
    (RETRO-2026-09-25i proposal 2).
+   A corpus's held-out false-negative rate is only as trustworthy as its fold count. Lesson of 25 Sept 2026
+   (MJ, espagnol142-mercy-1648): `tools/data/es17c` matched the target's era and genre (1643-47 Spanish
+   court-newsletter *Cartas*, not Cervantes) exactly the way pt18 matched Linhares, and the FAIL did not flip --
+   register-matching alone does not always rescue a judge the way it did once. Its leave-one-file-out
+   false-negative rate (23.5%, N=519) is a blend of only three folds that disagree by 4x (10.0%, 21.0%, 39.5%
+   per volume); a blended rate from so few folds says more about which volume was held out than about the
+   corpus as a whole. Report the per-fold spread alongside the blended rate, and treat a corpus with under
+   ~5 source files and a wide per-fold spread as a FAIL/PASS of unknown reliability rather than trusting the
+   single number, the same way a control below its own gate cannot license a target reading (rule 3's
+   headline paragraph).
 4. **Grade every claimed reading per token:** H read from a key source, C from known plaintext, S cryptanalytic
    with a control, M uncertain, I inferred or repaired. Give the counts. No H or C means "cryptanalytic result".
 5. **Status vocabulary** in the first lines of every NOTES.md: `open`, `partial`, `solved`, `closed-negative`,
@@ -274,6 +284,14 @@ Every brief states a cap in dollars of usage (the session metadata's cost figure
    is for NOTES.md sections the person will read. The person has said machine-shaped files are fine.
 6. **Fan-out limits.** At most four subagents at once per worker; two transcription passes, not three, unless
    the two disagree on more than a tenth of the rows.
+   A subagent's transcription job is priced by signs matched x reference-sheet size, not by elapsed minutes or
+   page count: GOLD-4D (25 Sept 2026) gave one Sonnet subagent all four Debosnys cryptograms (about 1,300 signs)
+   against a 160-sign inventory in a single call and was stopped at 3.3x its $7 cap, 38 minutes into a 60-minute
+   box, because the wall-clock box is checked between tool calls and cannot interrupt one call that is still
+   running -- a call sized to outlive the box defeats it regardless of the box's length. Scope a subagent's
+   visual-transcription call to one page or one cryptogram against the reference sheet, never the whole
+   inventory in one call, and have the orchestrator read `get_session` on that worker at a fixed short interval
+   (15 minutes, GOLD's own fix) rather than trusting the box alone when a job includes a large-inventory match.
 7. **Stop when the brief is met.** A worker does not continue into follow-ups (a sweep of sister copies, an
    audit of its own) that its brief did not name; it writes the follow-up as a one-line suggestion in NOTES.md.
 8a. **Rules become tools (25 Sept 2026, UPDATES.md).** A rule that the ledger shows broken twice gets a mechanical check in

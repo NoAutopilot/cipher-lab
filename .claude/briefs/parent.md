@@ -25,6 +25,13 @@ its state is only what it committed, so read its handoff and its lanes' ROOM lin
 2. **Lanes.** For each lane orchestrator: status, last ROOM line, last commit, pending check-in. Idle with no pending
    check-in, silent for 60 minutes while running, or failed: brief a successor from the lane's brief file and its
    last handoff or ROOM lines, telling it to adopt the live workers. A lane that wrote its handoff stays closed.
+   Ask each live lane orchestrator for its own context estimate at every check-in (there is no `get_session`
+   equivalent for context the way there is for cost, so this is a self-report -- but a self-report read every
+   30-45 minutes catches an accelerating lane before its line, not only at its own hand-off announcement). A lane
+   past 80 percent of its brief's context line writes its handoff on this check-in, not the next one (25 Sept
+   2026: LANE B2 handed off at 425k against a 300k line, 41 percent over, with no context figure seen by the
+   parent before that hand-off line itself; LANE R6 handed off at 505k against 500k, on the line, the same
+   window -- the difference is whether the line was watched before it was crossed).
 3. **Second opinions** (tools/second_opinion_runner_prompt.md, "Our side of the loop"). List open pull requests whose
    title starts with `[SO-`; set the matching SECOND-OPINIONS-QUEUE.tsv row to `posted` with the PR number; hand it
    in ROOM.md to the lane that owns the folder, or to the verification lane. Route GitHub writes (closing PRs,
