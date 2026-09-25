@@ -79,3 +79,5 @@ specs/powers-1991.json	Herman AND Lernout AND "Gold Bug Variations" AND (Mosaic 
 ciphers/antt-fcc-costacabral-1865	("Costa Cabral" OR "Conde de Tomar" OR "Conde de Thomar") AND ("Santa Sé" OR "Holy See" OR Padroado) AND 1865	2026-09-25	queued	
 ciphers/espagnol142-mercy-1648	("abbé de Mercy" OR "abad de Mercy" OR "Abt von Mercy") AND (1648 OR Chevreuse OR "Saint-Ibal" OR Brandenburg OR Brandebourg)	2026-09-25	queued	
 ciphers/espagnol142-mercy-1648	("Leopold Wilhelm" OR "Léopold-Guillaume" OR "Leopoldo Guillermo") AND (Cleves OR Clèves OR Kleve) AND Brandenburg AND 1648	2026-09-25	queued	
+ciphers/espagnol142-mercy-1648	("Mercy" OR "Merci") AND (Cleves OR Clèves OR Kleve OR Cleve) AND 1648 AND (Spain OR Espagne OR spanisch OR Leopold OR Léopold)	2026-09-25	queued	
+ciphers/espagnol142-mercy-1648	("Pierre Ernest de Mercy" OR "Pierre-Ernest de Mercy" OR "abbé d'Acey") AND (Leopold OR Léopold OR Chevreuse OR 1648)	2026-09-25	queued	
