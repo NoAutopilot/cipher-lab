@@ -1,0 +1,8 @@
+OX-VAU (Sonnet, cap $5 as a stall alarm, no subagents). Parent: LANE OX orchestrator, session_01BE3g8tWbS4T24KXMpShHt4. COMMON: .claude/briefs/runs/2026-09-25-lane-ox-COMMON.md applies in full.
+Target: ciphers/vaudemont-willemiii-1699 (Vaudemont to Willem III/Bentinck, *25 March 1699, "grootendeels in onopgelost cijferschrift; ook een ontcijferde brief is aanwezig"). Read NOTES.md.
+Host: resources.huygens.knaw.nl (retroboeken/willemiii viewer and its page images/OCR) only; one request at a time, >=1.5 s.
+Steps:
+1. Read the edition's front matter for the asterisk and "ontcijferd/onopgelost" conventions, and find where the edition prints (or summarises) the 25 March 1699 letter and the 18 March 1699 letter with its bijlage. Save the pages (images/ + manifest) and quote what they print: plain parts, the cipher numbers if printed, and any editorial note on a decipherment.
+2. Identify the "ontcijferde brief": is it a decipherment of the 25 March letter itself (a separate sheet), or another letter? Read the printed texts of the asterisked Vaudemont letters of 1698-1699 until you find it; say which, with page.
+3. If the edition prints ciphertext (numbers) for 25 March and a decipherment or a sibling decipherment exists in print, put the printed ciphertext in ciphertext.tsv (source: edition page, grade per token) and the decipherment's plain text in plaintext_print.txt, and state whether the same system is used (number ranges, shapes). If the ciphertext is not printed, the original is the Portland (Bentinck) papers at Nottingham, not digitised: update REQUEST.md with the exact item and what to photograph.
+No decoding beyond the system comparison. Files: ciphers/vaudemont-willemiii-1699/**, ROOM.md.
