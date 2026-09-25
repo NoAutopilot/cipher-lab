@@ -1,9 +1,43 @@
 open
-Politische Correspondenz Friedrichs des Grossen vols. 9-10 (1752, read by a prior LANE N4 pass),
-13 (1756) and 23 (1763) -- archive.org, full-text searched for "Hellen" and vol. 13/23 djvu.txt
-read directly by this worker -- cover all 8 target dates and print only Frederick's own outgoing
+Politische Correspondenz Friedrichs des Grossen vols. 9-10 (1752), 13 (1756) and 23 (1763) --
+archive.org identifiers politischecorres09fred, politischecorres10fred (both full-text searched for
+"Hellen" and fetched as djvu.txt and read directly by this worker, LANE CX2 25 Sept 2026, correcting
+the earlier line-2 attribution to "a prior LANE N4 pass") plus vol. 13/23 djvu.txt already read
+directly by a prior LANE CX2 pass -- cover all 8 target dates and print only Frederick's own outgoing
 replies to Hellen, none marked dechiffrirt/entziffert/déchiffré, so the ciphertexts themselves are
 letter absent in the one edition most likely to print a deciphered report from this correspondent.
+
+## Check-solved (LANE CX2 worker CX2-FIX, 25 Sept 2026) -- own-read attribution fix, vols. 9-10
+
+Line 2 previously attributed vols. 9-10's reading to "a prior LANE N4 pass" -- check-solved.md says a
+citation to another source's read is not this worker's own read, so this pass opened both volumes
+independently before writing anything.
+
+1. Confirmed the archive.org identifiers directly: `archive.org/metadata/politischecorres09fred` and
+   `.../politischecorres10fred` both resolve (title "Politische Correspondenz Friedrichs des Grossen",
+   1879, Böhlau, Köln; a guessed `...freduoft` suffix for both, tried first, does not exist -- checked
+   against an empty `{}` metadata response, not assumed).
+2. `be-api.us.archive.org/fts/v1/search?q=Hellen&identifier=politischecorres09fred`: 1 hit, highlighted
+   snippets reproduce the same five entries already on file ("Berlin, 8 janvier 1752", "Berlin, 22
+   janvier 1752", "Potsdam, 8 février 1752", "Potsdam, 15 février 1752", plus an 18 August entry) --
+   independently reproduced by this worker, not merely re-quoted. **Control**: the same query for
+   "Podewils" (another minister named throughout this volume) also hits 1/1, confirming the search path
+   itself works on this identifier.
+3. Fetched `archive.org/download/politischecorres09fred/politischecorres09fred_djvu.txt` (1 request,
+   1,478,571 bytes) and read entry 5273 in full on disk: "AU SECRÉTAIRE VON DER HELLEN A LA HAYE.
+   Berlin, 8 janvier 1752. J'ai reçu votre rapport du 31 de décembre dernier..." -- Frederick
+   acknowledging receipt of Hellen's 31 Dec report (the window immediately before R1953's 4 Jan 1752
+   ciphertext), not a decipherment of it; grepped all 47 "Hellen" occurrences in the fetched text
+   against "chiffr"/"dechiffr"/"entziffer": zero co-occurrences.
+4. Vol. 10 (`politischecorres10fred`): same fts query, 1 hit, snippets span Oct 1753-Jan 1754 (a
+   different correspondence window, outside this target's 1752/1756/1763 dates) -- read for
+   completeness per this pass's brief, adds nothing for the 1752 date.
+
+No change to the verdict (`open`, unchanged) or to any fact already on file -- this corrects only who
+read vols. 9-10, per check-solved.md's rule that a citation to another worker's read does not satisfy
+"read by this worker." Requests: archive.org/metadata 4 (2 guessed + 2 confirmed identifiers),
+be-api.us.archive.org/fts 4 (Hellen x2, Podewils x1, plus one retry after a guessed-identifier 503),
+archive.org/download 1, all >=1.5s apart.
 
 ## Check-solved (LANE CX2, 25 Sep 2026) -- re-check, extending the edition search to 1756 and 1763
 

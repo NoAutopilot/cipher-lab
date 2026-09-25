@@ -1,3 +1,14 @@
+open
+
+Tomokiyo's `louisxiii.htm` (`sources/cryptiana/web/`, read in full by this worker, LANE YX worker YX-DEC2754,
+25 Sept 2026) names this exact folio and says only "It has some passages in cipher, undeciphered," unlike his
+explicit "applies to these" wording for the sibling letters (fr.4134/fr.4135) already opened by Lasry's first
+key; both of Lasry's published Sabran-circle keys (Baluze 155 f.79; Baluze 156 f.40) were then tried directly
+on f.157-158's own transcription with a matched control each time (25 Sept 2026) and came back negative
+(bits/char sitting at the shuffle-control median against a positive control cleanly separated) -- so this
+folio is not already opened by either published key. Verdict-format correction, LANE CX2 25 Sept 2026 (moves
+the bare status word to line 1 per CLAUDE.md rule 5 and check-solved.md; no substantive change).
+
 # [Melchior de Sabran?] to "Mr de ch. g^r", 9 February 1636, BnF Baluze 156, f.157-158
 
 **Status: open.**

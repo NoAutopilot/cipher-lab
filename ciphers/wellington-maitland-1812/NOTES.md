@@ -1,3 +1,12 @@
+partial
+
+Gurwood, *The Dispatches of Field Marshal the Duke of Wellington*, vol. 9 (1834 ed. pp. 388-389; 1838 ed. pp.
+392-393) read by this worker (OCR excerpts in `sources/gurwood/`, Internet Archive items
+`dispatchesoffie09welluoft` and `vol9dispatchesof00well`), matching the interlinear decipherment word for
+word (grade C) -- verdict-format correction, LANE CX2 25 Sept 2026 (the intake gate's own first-line scan was
+matching the unrelated word "Open" in "Open Library/Google Books" at line 221, not a real verdict word; no
+substantive change).
+
 # Wellington to Lieut.-General Frederick Maitland, Villa Castin, 2 September 1812
 
 **Status: partial** (dictionary code with a contemporary decipherment matching Gurwood's printed clear text

@@ -1,5 +1,29 @@
 partial
 
+blocked (intake-gate sense only, LANE CX2 25 Sept 2026, corrected from `open`) -- under the Pipeline intake
+gate, the standard source for this target, the newspaper issue itself (The Evening Standard, 8 and 20 May
+1875), has never been independently opened by anyone in this repo: the British Newspaper Archive and
+newspapers.com scans stay login-gated from the cloud (queued LOCAL-QUEUE.tsv row L13, 25 Sept 2026), so the
+working transcription rests on Thomas Ernst's off-repo BNA-checked text (used in Bourdeau's `ads.py`). This
+is an intake-gate correction only, not a change to the substantive research status: Cipherbrain's three
+posts, Bourdeau's `catokwacopa/NOTES.md` and Aymeloglu's `SHORTLIST.md` were all read in full by this worker
+(LANE CX, 25 Sept 2026, below), and line-1 stays `partial` for that substantive question (mechanism agreed,
+unique plaintext not reconstructable per every source consulted).
+
+## Check-solved (LANE CX2, 25 Sept 2026) -- verdict-format correction
+
+The 25 Sept 2026 LANE CX pass below (kept intact) ran the community-lists/Bourdeau/Aymeloglu/model-solve-
+announcement legs but left NOTES.md's top lines in a shape the intake gate does not accept (no line-2
+citation of the standard source, and it wrote a bare "Intake verdict: open" although the one source that
+would let this worker independently corroborate the ciphertext -- the newspaper issue -- was never opened
+by anyone in this repo). This pass makes no new search; it re-reads the file end to end (LOCAL-QUEUE.tsv
+row L13 already covers the identical gap, queued 25 Sept 2026 by the pass below) and corrects the verdict
+shape only: `blocked` on the specific point of an independently-read standard source, `partial` unchanged
+as the line-1 status word for the substantive question (mechanism agreed, unique plaintext not
+reconstructable per every source consulted).
+
+## Check-solved (LANE CX, 25 Sept 2026)
+
 Cipherbrain's three original posts (scienceblogs.de/klausis-krypto-kolumne, 2015/2018x2 — now reachable,
 was `EGRESS_BLOCKED` on 23 Sept 2026), Bourdeau's `catokwacopa/NOTES.md` (fresh clone, commit 24 Sept 2026
 21:06 UTC) and Aymeloglu's `SHORTLIST.md` (fresh clone, commit 23 Sept 2026) all read directly by this
@@ -48,7 +72,8 @@ the one gap this sweep confirms is still unclosed: the working transcription (Er
 used in Bourdeau's `ads.py`) has never been independently re-verified against the British Newspaper Archive
 scans directly by anyone in this repo.
 
-Intake verdict: open.
+Intake verdict: open (corrected to blocked, LANE CX2 25 Sept 2026 -- see the top-of-file section: the
+newspaper issue itself, this target's standard source, is login-gated and unread by anyone in this repo).
 
 Requests this pass: `scienceblogs.de` 4 (root reachability, `?s=catokwacopa` pages 1-2, a direct 2026/08/14
 URL probe), `klausschmeh.net` 1 (reachability only), `github.com` 2 (fresh shallow clones), WebSearch 4.
