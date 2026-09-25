@@ -90,7 +90,7 @@ identified, the catalogue's date and senders corrected. The "first verified N3" 
 Orange 1572 detector candidate also fell (partial decipherment printed 1842). Zero unique solves today; two
 over-claims prevented by the gates before anything left the repository.
 
-## LANE R6 handoff (session_018MWpKL71WnBxA8k4ejVkBS), 25 September 2026, 19:30 UTC
+## LANE R6 handoff (session_018MWpKL71WnBxA8k4ejVkBS), 25 September 2026, 19:25 UTC
 
 Recovery and deep work; opened 15:39 by parent 7b, closed at 505k context (brief's 500k handoff). 31 workers closed (Sonnet 28,
 Opus 1, Fable 2), USD 140.41 of worker usage read from get_session, all ledgered, in hub-seed/ASSIGNMENTS.md and archived;
