@@ -1,4 +1,5 @@
-open
+blocked
+Corrected again by the LANE DX orchestrator, 25 Sept 2026 02:10 UTC: Galende Díaz read in full (below) and does not cover items /123 or /126, but Tomokiyo 2018's body is unread and its "Cipher (1476-1479)" (a syllable cipher of over 500 entries) covers the very window of R1172 (4 Nov 1478) and R1180 (4 Dec 1478); by check-solved.md an edition not opened keeps the verdict `blocked`. Unblock: ASKS row 45 (the owner reads the paper), or DECODE document access (ASKS row 42).
 Galende Díaz 1993-94 (Cuadernos de Estudios Medievales y CC.TT.HH. XVIII-XIX, 1993-94, pp.159-178) read in full
 by this worker, 25 Sept 2026 (OCR text and the original PDF, both already on disk in dbourdeau/cyphersolver's
 `esp318/lit/galende1994.{txt,pdf}`, cross-checked against Dialnet record 255134 for the same article/journal/page

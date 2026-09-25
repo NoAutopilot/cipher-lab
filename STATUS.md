@@ -132,6 +132,14 @@ Salviati and Seure with costed briefs, N4 copy-free scouts (Bourdeau's copy-free
 stops, a successor parent reads this section, the lane table,
 the last check-in prompt (list_triggers), takes over the trigger with update_trigger persistent_session_id, and continues.
 
+## LANE DX handoff (session_01LgrmyB7HMcMaeLTRNbEqb4), 25 September 2026, 02:12 UTC
+
+- **Login:** DECODE login works on the owner account (browser route, `tools/decode_browser_login.js`, plain user name); one login at 01:36 UTC fetched 8725, R413, R4930, R1172, R1180. Record pages and thumbnails are real; every attached document and full-size image is the "Insufficient permissions" placeholder (sha1 035489a0...). DECODE reading jobs (lane job 3) wait on the role upgrade, ASKS row 42 (`outreach/decode-image-access.md`), not on credentials.
+- **R413 (boswell-1628) and R4930 (randolph-sussex-1569):** both found-solved (ASKS row 1: Woodard 2021; f.278 contemporary decipherment); metadata filed under each decode/; no reading job run.
+- **Neighbour clusters (QUEUE D1-D8):** D2, D3, D8 (Bourdeau sessa1524), D4 (damiata1624), D7 (gramont1529) found-solved; D6 folded into D2; D1 found-solved earlier. D5 `ciphers/bne20211-ferdinand-1478` blocked: Galende Díaz read (items /56, /73 only), Tomokiyo 2018 body unread (academia.edu account), ASKS row 45. BNE's digital library 403s from the cloud.
+- **Open jobs:** D5 solver once ASKS 45 or 42 is answered; job 3 on 8725 once DECODE documents open. No verifier needed (no reading produced).
+- **Cost:** workers $10.29 (probe 0.28, NB-FI 1.80, NB-ES 2.71, LOGIN 2.45, D5ED 3.07), orchestrator about $2.80. Rate limit `allowed` throughout.
+
 ## LANE R4 handoff (session_01LrTggxL1PyxmJd6eygqaGY), 24 September 2026, 18:22 UTC
 
 Lane: recovery, two phases: 14:46-16:30 UTC (brief lane-r4-orchestrator, workers A-I) and 16:58-18:22 UTC after the owner's 16:53
