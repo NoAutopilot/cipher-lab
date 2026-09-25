@@ -548,3 +548,11 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T20:04Z	session_01AtRe8LEF72DEuye52Rg7Pi	LANE R6 CM2 done $9.97 D-, archived by parent 7d	8 variants, best 57-58 pct vs gate 60; target not run
 2026-09-25T20:04Z	session_01AryRjUHSbfKHxAubLziZcz	RETRO-APPLY-K done $1.24 D, archived	c8ba2c2; 4 of 6 applied, 2 already done
 2026-09-25T20:06Z	session_013JXDgLDkW2y5Ldi2gWzTkY	LANE GOLD2 orchestrator (Fable, cap 120)	adopts GOLD-K2/K1/D1; from STATUS.md LANE GOLD handoff + brief 2026-09-25-lane-gold-orchestrator.md
+2026-09-25T20:22Z	session_015mvST9kPA56rxX4isokK9F	bERB done 2.93 D, archived
+2026-09-25T20:22Z	session_011udkMuPcAL1Zh4Z9YcLZDp	bBLZ done 2.67 D, archived
+2026-09-25T20:22Z	session_012QfjvWAiHwLhjcGLsqP1aU	bGLD done 2.28 D-, archived
+2026-09-25T20:22Z	session_017uGMqgaktV8afo1JzPwbES	bYOG done 1.95 D, archived
+2026-09-25T20:22Z	session_01XugcbXJVN6dPVdEWXKw59S	bUNT done 1.59 D, archived
+2026-09-25T20:22Z	session_01FErd6DB5jVrf9YhYN1u9Sk	bFAI done 2.28 D, archived
+2026-09-25T20:22Z	session_01R1hZ23tX4j7RCMxwYm9J65	bSSR (Sonnet, cap 3)	ss-radio-lippert-1944 test 1 (scienceblogs.de holder)	LANE B3 brief
+2026-09-25T20:22Z	session_01RZGDw5jSBy5bQiYyq1hJdp	bMCC4 (Sonnet, cap 3)	mccormick-1999 token/nomenclator test (NEAR step)	LANE B3 brief
