@@ -49,6 +49,19 @@ try:
     ok2 = single['S01']['value'] == 'a' and 'S10' not in single
     fails += not ok2
     print('PASS' if ok2 else 'FAIL', 'load_keys accepts a single filename (non-list) unchanged')
+
+    # intra-file collision (clair349-este-guise-1556's key_alpha.tsv: C=9 and DOUBLES:ss=9 in one file)
+    open(os.path.join(tmp2, 'keyC.tsv'), 'w').write('letter\tcode\tkind\tgrade\tcrop\tnote\n'
+                                                     'C\t9\tdigit\tH\tx.jpg\tclear\n'
+                                                     'DOUBLES:ss\t9\tdigit\tM\ty.jpg\tuncertain\n'
+                                                     'A\t12\tdigit\tH\tx.jpg\tclear\n'
+                                                     'L\t?\tunresolved\tM\tz.jpg\tnot safe to commit\n')
+    kc = decode_key.load_key(os.path.join(tmp2, 'keyC.tsv'))
+    ok3 = (kc['9']['value'] == 'C|DOUBLES:ss' and kc['9']['grade'] == 'M' and kc['12']['value'] == 'A'
+          and '?' not in kc)
+    fails += not ok3
+    print('PASS' if ok3 else 'FAIL', 'load_key: value-first header (letter/code cols), '
+                                     'intra-file code collision merges, unresolved "?" code skipped')
 finally:
     shutil.rmtree(tmp2)
 

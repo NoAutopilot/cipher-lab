@@ -195,18 +195,55 @@ LOADERS = {'pipe': load_pipe, 'tsv': load_tsv, 'rows': load_rows}
 
 # ---------------------------------------------------------------- key, exceptions, votes
 
+KEY_COLUMN_NAMES = ('code', 'sign', 'token', 'value', 'letter', 'word_or_phrase', 'word', 'kind', 'grade',
+                    'source', 'note', 'crop', 'section')
+
+
+def merge_key_row(key, code, row):
+    """Add row to key under code, without letting a repeated code silently overwrite a different value --
+    whether the repeat is two rows of the same key file (clair349-este-guise-1556's key_alpha.tsv has both
+    C=9 and DOUBLES:ss=9) or two different key files merged by load_keys. Combines disagreeing values as
+    'a|b' (grade_tokens already downgrades any '|' value to M) so a real ambiguity in the cipher design is
+    preserved rather than hidden by load order."""
+    prev = key.get(code)
+    if prev is None:
+        key[code] = row
+    elif prev['value'] == row['value']:
+        return
+    else:
+        key[code] = dict(value=f"{prev['value']}|{row['value']}", grade='M',
+                         source=f"{prev['source']}+{row['source']}".strip('+'),
+                         note=f"code {code!r} repeats with a different value: "
+                              f"{prev['value']!r} ({prev['note'] or prev['source']}) vs "
+                              f"{row['value']!r} ({row['note'] or row['source']})",
+                         text=f"{prev['text']} || {row['text']}")
+
+
 def load_key(path):
-    header, rows = with_header(path, ('code', 'sign', 'token'))
+    """A key TSV's header may put the code column first (code/sign/token ... value) or the value column first
+    (letter/word_or_phrase ... code ...  -- clair349-este-guise-1556's key_alpha.tsv/key_nomen.tsv, each column
+    a plain-language name rather than 'code'/'value'); detect the header by any recognised name anywhere in row
+    1, not only at position 0, then locate the code and value columns by name wherever they sit. A row whose
+    code cell is empty or '?' (unresolved -- not a real mapping) is skipped rather than poisoning the dict. A
+    code that repeats within the file goes through merge_key_row rather than the last row silently winning."""
+    header, rows = data_lines(path)
+    if header is None and rows and any(c in KEY_COLUMN_NAMES for c in rows[0]):
+        header, rows = rows[0], rows[1:]
     if header is None:
         header = ['code', 'value', 'source']
     si = col(header, 'code', 'sign', 'token') or 0
-    vi = col(header, 'value'); gi = col(header, 'grade'); ri = col(header, 'source'); ni = col(header, 'note')
+    vi = col(header, 'value', 'letter', 'word_or_phrase', 'word')
+    gi = col(header, 'grade'); ri = col(header, 'source'); ni = col(header, 'note')
     key = {}
     for r in rows:
         r = r + [''] * (len(header) - len(r))
-        key[r[si]] = dict(value=r[vi], grade=r[gi] if gi is not None else None,
-                          source=r[ri] if ri is not None else '', note=r[ni] if ni is not None else '',
-                          text=' '.join(r))
+        code = r[si]
+        if not code or code == '?':
+            continue
+        row = dict(value=r[vi] if vi is not None else '', grade=r[gi] if gi is not None else None,
+                   source=r[ri] if ri is not None else '', note=r[ni] if ni is not None else '',
+                   text=' '.join(r))
+        merge_key_row(key, code, row)
     return key
 
 
@@ -233,18 +270,7 @@ def load_keys(target, spec):
     merged = {}
     for p in paths:
         for code, row in load_key(os.path.join(target, p)).items():
-            prev = merged.get(code)
-            if prev is None:
-                merged[code] = row
-            elif prev['value'] == row['value']:
-                continue
-            else:
-                merged[code] = dict(value=f"{prev['value']}|{row['value']}", grade='M',
-                                    source=f"{prev['source']}+{row['source']}".strip('+'),
-                                    note=f"code {code!r} collides across key files: "
-                                         f"{prev['value']!r} ({prev['note'] or prev['source']}) vs "
-                                         f"{row['value']!r} ({row['note'] or row['source']})",
-                                    text=f"{prev['text']} || {row['text']}")
+            merge_key_row(merged, code, row)
     return merged
 
 
