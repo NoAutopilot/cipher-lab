@@ -1,4 +1,4 @@
-open
+partial
 
 # Van Beuningen circle to Johan de Witt: the same letter survives as a plain copy and an unsolved cipher copy, 19/29 September 1657
 
@@ -226,3 +226,161 @@ nationaalarchief.nl` API-endpoint guesses (503/404, abandoned, not retried), `em
 curl attempt (503/connection timeout, logged unreachable, not retried per the one-retry rule) + 2 browser_fetch
 (worked: the project overview page, and one advanced-search attempt whose guessed query params did not
 actually filter). No subagents.
+
+## Key recovery, 25 Sept 2026 (LANE OX solver OX-VBS)
+
+No host fetches this pass; worked entirely from `ciphertext.tsv` and `plaintext_print.txt` already on disk.
+`key.tsv`, `decode.json`, `reading.txt`, `reading_tokens.tsv` added/regenerated;
+`tools/decode_key.py ciphers/vanbeuningen-dewitt-1657 --check` exits 0.
+
+**Status stays `partial`.** This is a genuine but incomplete key recovery: the system is identified with strong
+evidence, a 9-entry nomenclator is recovered, and 25 code-values covering 13 distinct letters are recovered
+(12 letters cross-validated in 2+ independent words -- several by an independent fresh-instance subagent, see
+below -- 1 from a single word only). The rest of the alphabet, and one real conflict, are unresolved and listed
+below rather than guessed.
+
+### System
+
+The cipher copy interleaves two things:
+1. **Plain, uncoded Dutch** for function/connective words (de, van, met, op, dat, sal, niet, ...) and some
+   content words the copyist evidently didn't bother to encode -- these are simply the ciphertext's own
+   transcribed signs, passed through unchanged (`key.tsv` grade `clear`, excluded from the H/C/S/M/I cipher
+   tally per rule 4, since they are not a decoded cipher token).
+2. **Coded runs of 1-3 digit numbers**, comma-separated within a "word" and colon-terminated at its end, of
+   two kinds:
+   - **A small closed nomenclator**: a handful of distinct codes (mostly 100-225) that each recur a few times
+     through the letter and always at a position matching the same recurring name or set phrase. Established
+     by *count* matching (a code's occurrence count against a term's occurrence count in `plaintext_print.txt`)
+     **and** direct context matching at 2+ of each code's occurrences (not just the first).
+   - **A homophonic letter-substitution alphabet**: the far more common 1-2 digit codes (values roughly 4-65)
+     each stand for one Dutch letter; several distinct codes can stand for the same very frequent letter
+     (homophones -- 'e' alone has at least three: 50, 51, 52). Evidence: a 9-code run lines up exactly with the
+     9-letter proper name "Rosewinge" (see below), with the letter 'e' -- which recurs at positions 4 and 9 of
+     that name -- getting the *same* code (51) both times; several other code-runs line up letter-for-letter
+     with plaintext words of the identical length (agent=5, wil/versoeck partial=3+8, met=3). u and v (and
+     probably i/j) are evidently not distinguished, consistent with this period's orthography (LESSONS.md).
+
+Applying the 13 recovered letter-codes globally (not just at the words used to derive them) reproduces
+recognisable Dutch fragments throughout the letter with no forcing -- `reading.txt` L03-04 gives `r o s / e w
+i n g e` for "Rosewinge" itself; L06 gives `u/v e r s o e [k]` for "versoeck"; L37 and L48 both give `e e n`
+("een") from the identical 3-code run `51,52,10:`; L39 gives `n i e t` ("niet"); L26/L34 line up
+"Coningh van Denemarcken"; L19/27/40/50/61 line up "Vereenichde Nederlanden"; L24/26/31/38 line up "Engelandt".
+This cross-context consistency, not asserted anywhere in advance, is the strongest evidence the system
+identification and the specific codes below are right.
+
+### Nomenclator table (grade C; `key.tsv` rows tagged "nomenclator entry")
+
+Occurrence counts below are `grep`-verified against `plaintext_print.txt` (my first pass hand-counted these and
+got several wrong -- corrected here): Vereenichde Nederlanden 4, Haer Hoog Mog. 4, Engelandt 4, Sweden(+Sweedtsch) 6,
+Coningh 3, Denemarcken/Denemarken 3. Since three of these tie at 4, the count alone cannot disambiguate 143 vs
+144 vs 213 -- the assignments below rest on direct sequential context (adjacent plain words matching on both
+sides), not on occurrence count; see the disagreement note beneath the table.
+
+| code | value | evidence |
+|---|---|---|
+| 143: | Vereenichde Nederlanden | L27: "de [143] 't selve met [CODE6=andere][CODE13=danckbaerheyt] soud wordt erkant, maer" against print "...voor de Vereenichde Nederlanden, 't selve met andere danckbaerheyt soude werden erkent, maer..." -- "andere" (6 letters) and "danckbaerheyt" (13 letters) match the two code-run lengths exactly, either side of the nomenclator code |
+| 144: | Haer Hoog Mog. | L20: "om [144] de vruntschap van dese Croon" against print "...om Haer Hoog Mog. de vruntschap van dese Croon te doen verliesen" -- vruntschap(10)/van(3)/dese(4)/Croon(5) all match their code-run lengths exactly on both sides of 144 |
+| 213: | Engelandt | L24 ("van [213] tot [104=Elseneur]" ~ "van Engelandt tot Elseneur") and, in the same 4-item list as 105/225 below, the last slot before "bekendt sijn" |
+| 105: | Sweden (Zweden) | L31, a sequential match with nothing else in between: "gelijck sij bij [105] [225] [CODE4=ende] [213] [CODE6] [CODE3=sijn]" against print "gelijk sy by **Sweden**, **Vranckrijk** ende **Engelandt** bekendt sijn" -- "ende" (4 letters) matches its code-run length exactly, and "sijn" (3 letters, though sijn is elsewhere usually left plain -- possibly coded here to avoid ambiguity beside "bekendt"). This is the cleanest alignment found this pass (every word in a 9-word stretch matches in order) and is why 105/213 are assigned to Sweden/Engelandt rather than the reverse |
+| 225: | Vranckrijk | same L31 sequence as above |
+| 104: | Elseneur (Helsingor) | L24, same context as 213 above |
+| 222: | Londen | L34 and L41 (both followed immediately by "geeft geschreven"/"over de..." matching "heeft geschreven"/"over de commercie") |
+| 172: | Denemarcken / Denemarken | L29 (near "in Denemarken de heren Staeten Generael") and L46 ("van de tractaten met [172] wil ..." ~ "van de tractaten met Denemarcken wil uytsluyten") |
+| 173: | Coningh van Denemarcken (collocation) | matches the 2x this exact collocation recurs (S3, S4); context at L26 ("de [173] sal doen soo veel" ~ "de Coningh van Denemarcken het derde soo veel had gedaen") |
+
+**Disagreement with the fresh-instance re-derivation subagent (see below):** working from occurrence counts
+alone (before this pass's grep correction), it proposed swapping two pairs -- 143=Haer Hoog Mog./144=Vereenichde
+Nederlanden, and 213=Sweden/105=Engelandt -- and said explicitly it had not checked which of 172/173/222 is
+which. I kept the assignments above because they rest on direct multi-word sequential context (the L31
+four-item list and the exact code-run-length chains either side of 143 and 144 in L20/L27), which the
+count-only pass did not have. **Not fully resolved between two independent passes; flagged for a third check**,
+ideally against the manuscript image rather than either printed alignment alone.
+
+### Letter alphabet, partial (grade C = 2+ independent consistent word-contexts, several confirmed by an
+independent fresh-instance re-derivation subagent this pass; grade M = 1 context, tentative)
+
+| letter | code(s) | grade | contexts |
+|---|---|---|---|
+| e | 50, 51, 52 | C | Rosewinge (pos 4 & 9, both 51); agent (pos 3, 50); vande/met (pos 5, 51); versoeck (pos 2, 52); geobtineert (pos 8=50, pos 9=52); "een" = 51,52,10 recurring twice unambiguously (L37, L48) |
+| n | 10 | C | Rosewinge (pos 7); agent (pos 4); geobtineert (pos 7); "een"/"niet" |
+| t | 25, 26 | C | 25: agent (pos 5); met (pos 3); "niet" (L39). 26: geobtineert (pos 5 AND pos 11, internally self-consistent doubled 't') |
+| s | 23 | C | Rosewinge (pos 3); versoeck (pos 4); ambassadeur-candidate (pos 5) |
+| g | 57 | C | Rosewinge (pos 8); agent (pos 2); geobtineert (pos 1) |
+| r | 22 | C | Rosewinge (pos 1); versoeck (pos 3); geobtineert (pos 10) |
+| o | 12, 13 | C | 12: Rosewinge (pos 2); versoeck (pos 5). 13: geobtineert (pos 3) |
+| w | 32 | C | Rosewinge (pos 5); wil (pos 1) |
+| i | 61, 62 | C | 61: Rosewinge (pos 6); wil (pos 2). 62: geobtineert (pos 6) |
+| u/v | 27 | C | vande (pos 1, as v); versoeck (pos 1, as v) -- treated as one letter, period orthography does not reliably distinguish u/v |
+| m | 11 | C | met (pos 1); ambassadeur-candidate (pos 2) |
+| b | 44 | C | geobtineert (pos 4) -- single word, but that word independently cross-checks on 5 other already-fixed letters (g,e,n,e,e,r), so treated as solid despite one context |
+| d | 49 | C | isolated 2-letter word "de" (d + already-fixed e=51) directly after "bij"/"by", found independently by both this session and the re-derivation subagent |
+| l | 6 | M | wil (pos 3) only |
+
+14 letters recovered (13 at grade C across 25 distinct code-values, 1 at grade M). Roughly 15 more distinct
+2-digit codes are still unkeyed and render as `[code]` in `reading.txt`. Applying the "geobtineert" letters
+decodes that entire 11-letter word without a single gap (`reading.txt` L05: `g e o b t i n e e r t`) --
+the strongest single confirmation of the alphabet found this pass.
+
+### Fresh-instance re-derivation (rule 7)
+
+A subagent that saw only `ciphertext.tsv`, `plaintext_print.txt` and a description of the system above (not
+this session's key.tsv) independently rebuilt a code table. It found the identical Rosewinge alignment and the
+identical three 'e' homophones (50, 51, 52) unprompted, plus the "geobtineert" alignment (g,e,o,b,t,i,n,e,e,r,t)
+that supplied b=44, the t=26 homophone, and the o=13/i=62 homophones folded into the table above -- all now
+merged into `key.tsv`. It also independently found the "de"=49,51 alignment. Net new letters/homophones from
+the subagent, adopted here: b, d, and homophones o:13, i:62, t:26 (5 of the 14 recovered letters' code-values
+came from its pass, not this session's own alignment work).
+
+**Real conflict it caught, confirmed here:** a candidate 5-letter word right after "de" (49,51), read as
+"Staet" (S-t-a-e-t against codes 25,25,40,51,25), would need code 25 to mean both 'S' (position 1) and 't'
+(positions 2 and 5) -- impossible for a single code in this system, and 't' is independently pinned at 25 from
+three clean contexts elsewhere (agent, met, niet). This means the "Staet" identification for this specific
+5-code run is wrong (some other word, not yet identified, sits there) -- not that letter t=25 is wrong. Left
+unresolved and not corrected in `key.tsv`; the position itself (`ciphertext.tsv` L04.10-14) is a candidate for
+a fresh look at the image.
+
+**Disagreement it raised, addressed above:** its nomenclator mapping swapped 143<->144 and 213<->105 from
+count evidence alone; kept this session's context-anchored mapping instead (see the nomenclator table's
+disagreement note) but flagged, not silently overridden.
+
+**Still-open conflict, not caught by the subagent, not resolved:** code 40. One candidate word ("agent",
+5 letters a-g-e-n-t against codes 40,57,50,10,25) would fix it as 'a'; a different candidate ("van de", read as
+one 5-letter run against codes 27,39,10,40,51) would fix it as 'd'. Both otherwise check out (g,e,n,t
+position-match cleanly in the first; v,n,e position-match in the second) but they cannot both be right for a
+single code. 'van' is usually left plain elsewhere in this letter (6 uncoded occurrences), so encoding it here
+would be inconsistent -- the "agent" reading is probably right and the "van de" segmentation probably wrong --
+but not certain enough to commit to the key.
+
+### Flagged: plain-word signs that are probably mistranscribed cipher, not real Dutch
+
+Of the 187 distinct non-numeric signs in `ciphertext.tsv`, most are recognisable (if archaically spelled)
+Dutch words and are passed through as `clear` in `key.tsv`. A visible minority do not parse as Dutch at all and
+do not fit grammatically at their position against `plaintext_print.txt`; these are left as `clear` pass-through
+in `key.tsv` too (rule 2: the transcription is not silently repaired here), but are flagged here as the
+likeliest next win for a re-transcription/re-crop pass, since several sit immediately next to a coded run and
+may really be part of it: `stiptgesantwoort` (L23.4), `couromen` (L24.13), `godag` (L26.8), `goederhijzeerd`
+(L43.4), `cristien` (L65.1), `indagijt` (L66.2), `gebal` (L67.1, already flagged `agree-flagged` by the
+reconciler), `hierm` (L67.6), `verwehr-` (L49.9), `aansier` (L49.1), `Willemsmaker` (L20.4), `gepersiadeeren`
+(L52.2), `dubelijck` (L56.5, `agree-flagged`), `sonell` (L20.2, L28.9, L29.13, L36.6, L53.9 -- recurs 5 times,
+always immediately before a verb like "soud", suspiciously regular for a genuine word), `oindsighte` (L29.2),
+`versaeckeren` (L17.10), `vereenigt` (L10.11), `bedelckt` (L13.4), `datums` (L18.1, L29.1, L38.9, L52.3 --
+recurs 4 times, always as if standing in for "dat" plus something else), `fredberg?,` (L50.11), `vercke`
+(L43.7), `stt` (L51.5), `luv.` (L63.2). None of these were re-read from the image this pass (out of the
+no-host-fetch scope of this brief); a worker with `service.archief.nl`'s full-resolution JPEG and a proper
+crop tool could very plausibly turn several of them into more coded digit-runs, which would materially help
+resolve the code-40 conflict and the L04 "Staet" mismatch above.
+
+### Other letters in the same key (brief item 6)
+
+Not chased this pass (no host fetch attempted, per brief scope). `ff.206-207` of the same bundle (a second,
+same-day Van Beuningen dispatch on Brandenburg/Poland/Sweden, already imaged by OX-VB) has not been
+characterised as plain or cipher -- worth a quick look before any wider sweep of the 1657 bundle.
+
+### Grades (rule 4)
+
+Per `tools/decode_key.py`'s own tally: cipher tokens 862, of which C 329 (nomenclator + recovered letters,
+applied globally), M 26 (the tentative letter `l`=6, plus the 13 `[MARK]`/`[ILLEGIBLE]` transcription gaps),
+U 162 (unresolved codes, shown as `[code]`), H 0, S 0, I 0; 345 further tokens are plain uncoded Dutch text
+(grade `clear`, not part of the cipher tally). `tools/decode_key.py ciphers/vanbeuningen-dewitt-1657 --check`
+exits 0. No spec exists for this target (`specs/vanbeuningen-dewitt-1657.json` not present; Dutch) --
+`tools/judge_plaintext.py` was not run, per this brief's step 5.

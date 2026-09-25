@@ -1,0 +1,76 @@
+# Mechanical partial reading of vanbeuningen-dewitt-1657 cipher copy (ff.210-211) with key.tsv (tools/decode_key.py).
+# ciphertext.tsv: cipher tokens 862: H 0, C 329, S 0, M 26, I 0, U 162 (U = code not yet keyed, shown as [code]). Plain Dutch words pass through as transcribed (grade 'clear', not counted above).
+# Status: PARTIAL. Nomenclator (9 codes) and 13 homophonic letters recovered (grade C, cross-validated incl. by an independent fresh-instance re-derivation); 1 more letter tentative (grade M, single-context); most 2-digit letter codes still unkeyed.
+L01	Mijn Heer
+L02	Hier voort van dagh tot dagh met groot impatientie
+L03	verlangst na uw, [40,] e [59,] e e [21:] r o s
+L04	e w i n g e bij d e t t [40,] e t
+L05	[MARK] sal gebruijcken g e o b t i n e e r t op sijn
+L06	u/v e r s o e [46,] [4:] o m [40,] e s e [47,] [21,]
+L07	o o n met u/v e [21,] s t [21,] e [46,] [4,] i n g [54:]
+L08	[20,] [39,] m e e n e o [53,] [40,] e s o m [9,] [54:]
+L09	[17,] e n m i n g [53,] m t e [40,] s [24,] i s
+L10	t e [21,] e n gebruijckt mijn sonder de selven vereenigt
+L11	middel siet soodanigh op sien nodighe saken sonder de sleutel?,
+L12	[MARK] onder anderen [42,] l [7,] e r e [46,] [21,] e u/v t [53,]
+L13	[24:] over de bedelckt mij met [20,] [53,] [21,] s [46,] [59,] e [36,]
+L14	[40,] [54:] o [55,] [56,] i [47,] [65,] e [21,] s gesandt geeft
+L15	[MARK] van voorder handelen soud b [37:] g e b [21,] e [46,] [4:]
+L16	u/v [39,] n g e l t achter blijven. daer ontbreekt
+L17	mede soo mij gesoijt weert?, dit sier trachten te versaeckeren
+L18	datums groot e [55,] [56,] e [46,] t [53,] n u/v [36,] t [40,] e
+L19	Vereenichde Nederlanden geeft de vraagster?. [MARK] 't schijnt datum daer op veel
+L20	fondement sonell soud Willemsmaker om Haer Hoog Mog. [40,] e u/v [21,] [20,]
+L21	n t [24,] [46,] [59,] [41,] [17:] u/v [39,] n [40,] e s e [46,] [21,] o o n
+L22	de dagh [20,] [53,] r l i e [24,] e n over sijn niet dat mont
+L23	[MARK] seer Heer stiptgesantwoort dat de [39,] m b [40,] s [24,] [43,]
+L24	[40,] e u/v [21:] [20,] [39,] n Engelandt tot Elseneur als er couromen
+L25	welcke sij mijn woordt geeft gesoijt dat indien
+L26	de Coningh van Denemarcken sal doen soo veel als godag voor Engelandt als voor
+L27	de Vereenichde Nederlanden 't selve met [40,] n [40,] e [21,] e [40,] [40,] n [46,] [4,]
+L28	b [39,] e [21,] [59,] e [36,] t soud wordt erkant, maer
+L29	datums oindsighte is Denemarcken de [59,] e e [21,] [53,] n Haer Hoog Mog. soud
+L30	l e e [21,] e n [5,] [53,] n m [54,] n gelijck sij bij
+L31	Sweden Vranckrijk e n [40,] e Engelandt b e [4,] e n t s [36,] n
+L32	Ick weet niet oft dit te apprehenderen sij, maer d'selve heeren
+L33	maken daer op te meer reflectie om dat de [40,] g e n t
+L34	u/v [39,] n [40,] e Coningh van Denemarcken u/v [36,] t Londen geeft geschreven
+L35	dat sij vertrouwen dat gemelt [39,] m b [40,] s [24,]
+L36	[42,] [40,] e u/v [21:] soud voorsz gestelt om sijn over
+L37	e e n [43,] l [7,] i [39,] n [20,] i [53:] t e t [21,]
+L38	[41,] [46,] t [54,] r [53,] n [MARK] datums is Engelandt w e l
+L39	n i e t g o e t [24:] moght voorsz doen
+L40	met de Vereenichde Nederlanden daer weet ook w e g e n s
+L41	Sweden t o t Londen over de [46,] o m [9,] e [21,] [47,] i e
+L42	g e [59,] [39,] n [40,] [53,] l t gelijck als: sal vernemen
+L43	mede niet er goederhijzeerd met dit vercke niet
+L44	water as er sacht toe niet: soo mede meent te men
+L45	dat sier eenigst mit heer geeft dat [106:] goet [59,] o m B:
+L46	van de tractaten m e t Denemarcken w i l u/v [36,] t s
+L47	l u/v g t e n o m [40,] [39,] t [41,] l voor sekere
+L48	e e n [59,] e e r dit mij voor s w e e t s
+L49	aansier sier bij en handel ernst er ministers verwehr-
+L50	den geeft gebruijckt om de staat berg Vereenichde Nederlanden te de fredberg?,
+L51	als er weder niet stt olde de verhoogste dat, [MARK]
+L52	te gepersiadeeren datums b e t e [21:] [46,] o n [40,] i
+L53	t i [53,] m m e t Sweden soud maken, s o m [40,]
+L54	e r [39,] l s m e t i n t e r u/v [53,] n
+L55	t i [54:] [20,] [39,] n Haer Hoog Mog. Dat sal meer bijstaet [MARK]
+L56	opmerkingen soo veel mij dubelijck is, gebruijcken?,
+L57	om 't gaet sijn onder geschreven maar nader te ontdecken,
+L58	maer sonder [17,] [21,] o m n t e r e [40,] l i t
+L59	e i t e n is sier soo [46,] r e [40,] [37,] t van Haer Hoog Mog.
+L60	noch de [40,] [55,] [46,] e [46,] t i [53:] van [40,] e s e
+L61	[47,] r o [14,] n tot de s t [40,] e t der Vereenichde Nederlanden niet
+L62	s t [40,] e n [40,] e te sonder. Ick geloove dat
+L63	haer luv. voor [ILLEGIBLE] veel sulke geestimeerd voor iets partij-
+L64	culier op de consideratie is mijn niet ist dat er
+L65	cristien verbat te gelaten, maer ick sal mijn mij toe-
+L66	volgen indagijt gaen naer order bekomt, [MARK] sal is sulke
+L67	gebal de voorsz: mijselven mij hierm van dat sorge.
+L68	[Godt?] blijft?
+L69	Mijn Heer
+L70	UEd:
+L71	ootmoedigen? dienaer
+L72	[ILLEGIBLE]
+L73	- Coppenhagen 19/29 [7bris?] 1657.

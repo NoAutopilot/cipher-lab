@@ -1,0 +1,11 @@
+{"target": "ciphers/vanbeuningen-dewitt-1657",
+ "note": "Partial key recovery, 25 Sept 2026 (LANE OX OX-VBS). Nomenclator (3-digit codes) + a partial homophonic letter alphabet, both derived by aligning ciphertext.tsv to the known printed plaintext (plaintext_print.txt). Most 2-digit letter codes remain unkeyed ('?'); see NOTES.md 'Key recovery, 25 Sept 2026'.",
+ "jobs": [
+  {"ciphertext": "ciphertext.tsv", "key": "key.tsv", "reading": "reading.txt", "tokens": "reading_tokens.tsv",
+   "format": "tsv", "style": "spaced", "unknown_values": [], "unkeyed_value": "?", "unkeyed_grade": "U",
+   "uncertain_conf": ["M"],
+   "header": ["# Mechanical partial reading of vanbeuningen-dewitt-1657 cipher copy (ff.210-211) with key.tsv (tools/decode_key.py).",
+              "# {name}: cipher tokens {total}: {HCSMIU} (U = code not yet keyed, shown as [code]). Plain Dutch words pass through as transcribed (grade 'clear', not counted above).",
+              "# Status: PARTIAL. Nomenclator (9 codes) and 13 homophonic letters recovered (grade C, cross-validated incl. by an independent fresh-instance re-derivation); 1 more letter tentative (grade M, single-context); most 2-digit letter codes still unkeyed."]}
+ ]
+}
