@@ -1,0 +1,11 @@
+{
+ "target_length_chars": 228,
+ "target_pattern_count": 36,
+ "control_trials": 500,
+ "control_seed": 20260925,
+ "control_mean": 12.008,
+ "control_min": 5,
+ "control_max": 20,
+ "target_percentile_in_control": 100.0,
+ "verdict": "target ABOVE control range -- short-token/period clustering exceeds chance"
+}
