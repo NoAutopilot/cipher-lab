@@ -1,0 +1,8 @@
+OX-PAG (Sonnet, cap $5 as a stall alarm, no subagents unless transcribing). Parent: LANE OX orchestrator, session_01BE3g8tWbS4T24KXMpShHt4. COMMON: .claude/briefs/runs/2026-09-25-lane-ox-COMMON.md applies in full.
+Target: ciphers/clairambault1225-paget-1714 (BnF Clairambault 1225, Gallica ark:/12148/btv1b9001034d, finding aid "Fol. 48 ... lettres autogr. de Paget, avec chiffre, 1714"). Kind: locate, image, transcribe.
+Host: gallica.bnf.fr (IIIF manifest and image API) only. Check ROOM for another lane's live Gallica claim; take "Gallica slot OX" and post it; one request at a time, >=1.5 s.
+Steps:
+1. `python3 tools/gallica_folio.py ark:/12148/btv1b9001034d --folio 48` (read --help first); the volume's canvas labels may be unreliable -- verify by fetching a low-resolution image of the candidate canvases and reading the folio number on the leaf; bracket-search by eye, a handful of thumbnails, not a sweep. Record the canvas<->folio mapping you established in NOTES.md.
+2. Fetch every leaf of the Paget letter(s) with cipher (full resolution, images/manifest.json, <30 MB). Describe the system from the image: numeric/symbol, nomenclator or letters, approximate token count, language of the clear parts, any interlinear decipherment.
+3. If there is ciphertext, transcribe per .claude/briefs/transcription.md (two blind passes, tools/reconcile_passes.py, 60% gate) into ciphertext.tsv. If there is an interlinear decipherment, transcribe it beside the tokens (grade H) -- then the leaf is recovery, say so.
+Do not attempt cryptanalysis. Files: ciphers/clairambault1225-paget-1714/**, ROOM.md. Report per COMMON.
