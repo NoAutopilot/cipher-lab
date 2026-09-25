@@ -340,3 +340,28 @@ Files: `scripts/keyed_dist_test.py|.out|.json`, `running-key/keyed_family_run.lo
 | date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
 |---|---|---|---|---|---|---|---|---|
 | 25 Sept 2026 18:50 | keyed_running_key | N=924 K=26 restarts=8 corpus=pg15736_Der_Mann_von_vierzig_Jahren.txt.gz+pg36905_Schach_von_Wuthenow.txt.gz+pg41051_Peter_Camenzind.txt.gz+pg41907_Demian.txt.gz+pg43987_Die_drei_Spruenge_des_Wang_lun.txt.gz+pg46184_Frau_Jenny_Treibel.txt.gz+pg5323_Effi_Briest.txt.gz kcorpus=tools/data/nl20,top=30,beam=300,order=6,spaces=1 | 1 | 0.726 (0.647-0.791) | -3.534 | FAIL language: score=-0.901, null_p99=-2.071, real_p05=-0.823, real_median=-0.78, mode=both, N=924 | yes (gate 0.5) | GOLD-2C family B' keyed tableau, keyword-mixed alphabets, control before target |
+| 25 Sept 2026 20:16 | keyed_running_key | N=924 K=26 restarts=8 corpus=pg15736_Der_Mann_von_vierzig_Jahren.txt.gz+pg36905_Schach_von_Wuthenow.txt.gz+pg41051_Peter_Camenzind.txt.gz+pg41907_Demian.txt.gz+pg43987_Die_drei_Spruenge_des_Wang_lun.txt.gz+pg46184_Frau_Jenny_Treibel.txt.gz+pg5323_Effi_Briest.txt.gz kcorpus=tools/data/nl20,arith=beau,top=30,beam=300,order=6,spaces=1 | 1 | 0.781 (0.662-0.855) | -3.478 | FAIL language: score=-0.937, null_p99=-2.071, real_p05=-0.823, real_median=-0.78, mode=both, N=924 | yes (gate 0.5) | GOLD-K2 B' beau, Dutch key, keyword-mixed, control before target |
+
+## Family B' variants (GOLD-K2), 25 Sept 2026, worker GOLD-K2 (Sonnet, session_0196VjuQaoVfdo8pYY9Avvm9)
+
+The three untried corners named at the end of the GOLD-2C section above: beau arithmetic (Dutch key), a German
+key (both streams German, vig), and an English keyword list (`wordcorpus=` option added to
+`tools/families/keyed_running_key.py` for this). Same method as GOLD-2C throughout: stage 1 ranks keyword-mixed
+tableaux by the pooled unigram multinomial likelihood, stage 2 beam-decodes the top 30 (order 6, beam 300, LM_p
+de20, LM_k per variant) on message 1, pooled joint log-likelihood per letter is the score. Noise band for this
+exact pipeline (GOLD-2C, two uniform-random texts of the target's lengths): -3.507 to -3.544 per letter; a target
+above -3.40 (0.1 nats above the band's top) without a judge PASS is a ROOM flag per the brief.
+
+### Variant 1: beau arithmetic, Dutch key (`--param arith=beau --param kcorpus=tools/data/nl20`)
+
+CONTROL (German plaintext, held-out nl20 key, keyword from the de20+nl20 list, seeds 1-3): 85.5 / 82.5 / 66.2 pct
+plaintext letters recovered, mean 78.1 pct -- gate 50 pct met.
+
+TARGET: stage-1 best 13.4 nats over uniform (`rijpende:plain`); stage-2 winner `aufgabe:plain:beau` (stage-1 rank
+lower, 12.3 nats), msg-1 best-of-30 -3.443; pooled joint ll (all 5 messages) **-3.478** per letter, 0.03-0.07 nats
+above the -3.507/-3.544 noise band (below the -3.40 flag line, so not flagged). Judge: FAIL (score -0.937 vs
+real_p05 -0.823, null_p99 -2.071, mode=both). Message 1 decoded streams, first 40 letters (word salad, not a
+reading): P `smaskemitderlangertewasjetztistichzusche`, K `rotterdopvinnigswantgevalenerdehoelangzo`.
+Control-backed negative for the beau-arithmetic corner of the keyword-mixed tableau family (same keyword list as
+GOLD-2C's vig run).
+

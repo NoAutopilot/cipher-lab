@@ -146,15 +146,17 @@ def make_control(spec, seed, corpora, params):
     tab = rk.mixed_tabula(word, mode, a.arith)
     ptext, kt = rk.fold(corpora[pi]), rk.fold(ktext)
     lengths = params.get("lengths") or [params["N"]]
-    msgs, plains = [], []
+    msgs, plains, keys = [], [], []
     for n in lengths:
         P, _ = draw_window(ptext, n, rng.randrange(10 ** 6))
         K, _ = draw_window(kt, n, rng.randrange(10 ** 6))
         msgs.append([rk.A[rk.encipher(tab, rk.IDX[x], rk.IDX[y])] for x, y in zip(P, K)])
         plains.append(P)
+        keys.append(K)
     _STATE["ktrain"] = ktrain
     _STATE["words"] = words
     _STATE["truth"] = (word, mode)
+    _STATE["truth_key"] = "".join(keys)  # not popped by solve(); an either-stream caller reads it (GOLD-K2)
     print(f"  control seed {seed}: keyword {word!r} mode {mode} arith {a.arith} (alphabet {tab['alphabet']}); "
           f"{len(words)} candidate alphabets; key corpus {'kcorpus' if kc else 'plain corpus'} book held out")
     return msgs, "".join(plains), ptrain
@@ -164,6 +166,7 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
     a = _p(params)
     ktrain = _STATE.pop("ktrain", None)
     truth = _STATE.pop("truth", None)
+    truth_key = _STATE.pop("truth_key", None)
     if ktrain is None:
         ktrain = load_kcorpus(a.kcorpus)
     words = _STATE.pop("words", None) or word_list(load_wordcorpus(a.wordcorpus) or (list(corpora) + (ktrain or [])), a)
@@ -202,6 +205,8 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
             "stage1_top": [(round(ll, 2), w, m) for ll, w, m in top], "standard_tableau_nats": round(ident[0], 2),
             "candidates": len(ranked), "order": a.order, "beam": a.beam, "spaces": a.spaces,
             "ll_joint_per_letter": round(tot / max(1, n), 4), "key_stream": keys}
+    if truth_key is not None:
+        info["truth_key"] = truth_key  # control only (GOLD-K2): the true K stream, for an either-stream recovery
     return "".join(out), tot / max(1, n), info
 
 
