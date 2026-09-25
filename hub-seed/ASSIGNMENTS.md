@@ -508,3 +508,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T18:55Z	session_01G9ZjiryvFjmJxDnavit57i	LANE R6 Y10 done $1.69 N, archived	rah-xiquena-1868	plaintext copy only
 2026-09-25T18:53Z	session_011rdn8AFXk2htZ9Z72WaQ9n	LANE R6 M3 (Sonnet, cap 6)	mercy sibling sweep, Espagnol 142	brief 2026-09-25-lane-r6-m3-mercy-siblings.md
 2026-09-25T18:53Z	session_01AtRe8LEF72DEuye52Rg7Pi	LANE R6 CM2 (Fable, cap 15)	salviati error-tolerant code+mark	brief 2026-09-25-lane-r6-cm2-salviati-tolerant.md
+2026-09-25T19:02Z	session_01Ni7SCWavoqfgw2VR4ypGXX	done	bMCC2 mccormick-1999 test 2	pushed 3d29cb3
+2026-09-25T19:02Z	session_014qQzx56jpDoJBe6kFjiL5z	done	bPOL2 pollaky-1865-1875 test 2	pushed c610f85, b25465f
