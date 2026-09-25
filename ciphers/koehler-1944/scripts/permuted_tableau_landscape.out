@@ -1,0 +1,13 @@
+order 2: true -5953.0 random mean -6052.3 max -6009.3 anneal -5934.1 (16603 evals, letters 7/7) build 4s
+order 3: true -8866.7 random mean -9044.2 max -8977.2 anneal -8825.9 (22134 evals, letters 0/4) build 6s
+order 4: true -11760.4 random mean -12038.4 max -11940.3 anneal -11768.6 (15379 evals, letters 4/4) build 9s
+truth -3.336
+1 swaps from truth: [-3.475, -3.43]
+2 swaps from truth: [-3.479, -3.448]
+3 swaps from truth: [-3.504, -3.346]
+5 swaps from truth: [-3.436, -3.518]
+8 swaps from truth: [-3.501, -3.523]
+13 swaps from truth: [-3.555, -3.611]
+random S3 -3.615
+english N=2000 order 3: true -19408.9 anneal -19397.4 letters 3/3 (shift 0) 17556 evals 5s
+english N=6000 order 3: true -58298.1 anneal -58298.1 letters 26/26 (shift 0) 19693 evals 15s

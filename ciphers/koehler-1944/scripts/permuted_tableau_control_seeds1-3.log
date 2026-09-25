@@ -1,0 +1,43 @@
+family permuted_tableau: running key through a general permuted tableau, first B''-c (free cipher-side permutation S3, S1 = S2 = identity): sort-match start, simulated anneal under an n-gram sum-stream proxy, beam rescoring; control = plain book x held-out key book x uniformly random S3
+spec specs/koehler-1944.json slug koehler-1944
+ciphertext: 5 message(s), N=924 signs, K=26 distinct, tokens=letters (separate messages)
+corpora: tools/data/de20/pg15736_Der_Mann_von_vierzig_Jahren.txt.gz, tools/data/de20/pg36905_Schach_von_Wuthenow.txt.gz, tools/data/de20/pg41051_Peter_Camenzind.txt.gz, tools/data/de20/pg41907_Demian.txt.gz, tools/data/de20/pg43987_Die_drei_Spruenge_des_Wang_lun.txt.gz, tools/data/de20/pg46184_Frau_Jenny_Treibel.txt.gz, tools/data/de20/pg5323_Effi_Briest.txt.gz
+control seeds [1, 2, 3], restarts 8, gate 0.5, params kcorpus=tools/data/nl20,arith=vig
+row -> ciphers/koehler-1944/HYPOTHESES.md; decode -> ciphers/koehler-1944/families/permuted_tableau-1.txt
+  control seed 1: S3 eclbjfrqgxszwvukdhioytnmap (uniform random of 26!), arith vig; key corpus kcorpus book held out
+  proxy: order 4, 6654843 sum-stream n-grams from 3 pairings, 909 target windows; built in 5.4s
+  start: sort-match S3 letters correct 2/26 exact, 4/26 under shift 6
+  chain 1: proxy -11742.1 after 19678 evals (T0 10.51); S3 letters correct 1/26 exact, 5/26 under shift 15
+  chain 2: proxy -11735.5 after 16730 evals (T0 10.74); S3 letters correct 2/26 exact, 3/26 under shift 17
+  chain 3: proxy -11747.3 after 17169 evals (T0 12.43); S3 letters correct 1/26 exact, 3/26 under shift 5
+  rescore: txfpisqghyevdlzocrwubjnmka proxy -11735.5 -> msg1[:140] joint ll/letter -3.508
+  rescore: zyxlidwgtbpnjmkoshvafreuqc proxy -11742.1 -> msg1[:140] joint ll/letter -3.426
+  rescore: qvxbiunwkpardgfectomlhjzsy proxy -11747.3 -> msg1[:140] joint ll/letter -3.439
+  decoder evaluation at anneal settings (order 5, beam 80, 140 letters): 1.83s each; proxy evaluation 0.13 ms
+  winner S3 letters correct 1/26 exact, 5/26 under shift 15
+CONTROL seed 1: N=924 K=26 recovery 0.074 score -3.47
+  control seed 2: S3 dczjkyepgrhwuaxiolqmnfvsbt (uniform random of 26!), arith vig; key corpus kcorpus book held out
+  proxy: order 4, 6639816 sum-stream n-grams from 3 pairings, 909 target windows; built in 5.8s
+  start: sort-match S3 letters correct 3/26 exact, 4/26 under shift 12
+  chain 1: proxy -11666.3 after 14973 evals (T0 12.95); S3 letters correct 4/26 exact, 4/26 under shift 0
+  chain 2: proxy -11653.5 after 19683 evals (T0 13.80); S3 letters correct 1/26 exact, 4/26 under shift 4
+  chain 3: proxy -11649.5 after 21395 evals (T0 11.81); S3 letters correct 8/26 exact, 8/26 under shift 0
+  rescore: koxbdjepgytwqcharliumfvszn proxy -11649.5 -> msg1[:140] joint ll/letter -3.340
+  rescore: acbmfrsqlyxvdejztgwiokhnpu proxy -11653.5 -> msg1[:140] joint ll/letter -3.422
+  rescore: qxjbksnpgytdvazorfhemlwciu proxy -11666.3 -> msg1[:140] joint ll/letter -3.491
+  decoder evaluation at anneal settings (order 5, beam 80, 140 letters): 1.48s each; proxy evaluation 0.13 ms
+  winner S3 letters correct 8/26 exact, 8/26 under shift 0
+CONTROL seed 2: N=924 K=26 recovery 0.129 score -3.46
+  control seed 3: S3 fjqdlstonbaxickyemvuzpwghr (uniform random of 26!), arith vig; key corpus kcorpus book held out
+  proxy: order 4, 6695214 sum-stream n-grams from 3 pairings, 909 target windows; built in 6.0s
+  start: sort-match S3 letters correct 2/26 exact, 3/26 under shift 11
+  chain 1: proxy -11712.0 after 19791 evals (T0 13.30); S3 letters correct 1/26 exact, 3/26 under shift 5
+  chain 2: proxy -11692.6 after 20266 evals (T0 13.27); S3 letters correct 3/26 exact, 3/26 under shift 0
+  chain 3: proxy -11713.8 after 19301 evals (T0 13.54); S3 letters correct 2/26 exact, 3/26 under shift 9
+  rescore: ozvqfrbindxhaukegmpscltywj proxy -11692.6 -> msg1[:140] joint ll/letter -3.372
+  rescore: gwdqhbixlvcyptkronejsmafuz proxy -11712.0 -> msg1[:140] joint ll/letter -3.381
+  rescore: kcvqfwgindryhubtjmxselaopz proxy -11713.8 -> msg1[:140] joint ll/letter -3.439
+  decoder evaluation at anneal settings (order 5, beam 80, 140 letters): 1.59s each; proxy evaluation 0.15 ms
+  winner S3 letters correct 3/26 exact, 3/26 under shift 0
+CONTROL seed 3: N=924 K=26 recovery 0.081 score -3.47
+CONTROL BELOW GATE: mean 0.095 < 0.5; target not run; row appended to ciphers/koehler-1944/HYPOTHESES.md

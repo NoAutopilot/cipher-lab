@@ -40,8 +40,13 @@ near-symmetry; the Dutch key model separates it, the proxy only weakly). Score =
 
 params (--param k=v): kcorpus=DIR, arith=vig|beau|varbeau, order=6, beam=300, per_hyp=10, spaces=1, discount=0.9,
 sel_msg=0, proxy_order=4, pairings=3, smooth=0.5, chains=3, evals=30000, patience=6000, rescore=3, anneal_order=5,
-anneal_beam=80, anneal_len=140, start=sort|random (chain 1's start). Needs >= 2 corpus texts (3 without kcorpus)."""
-import math, os, random, time, types
+anneal_beam=80, anneal_len=140, start=sort|random (chain 1's start); search=anneal|beam (beam = the open-tableau beam
+decoder open_beam() below, which searches the mapping inside the decoder instead of the proxy anneal: open_order=5,
+open_beam=2000, per_open=30, per_map=10); refine=ROUNDS (0 = off) runs refine_decoder() on the stage-3 winner:
+per round the refine_props=5 swaps with the least bad proxy delta plus refine_rand=3 random swaps, each scored by
+the decoder at anneal settings (about 2 s each), the best accepted if it improves. Needs >= 2 corpus texts (3
+without kcorpus)."""
+import heapq, math, os, random, time, types
 from collections import Counter
 import running_key as rk
 from families import draw_window, TOOLS
@@ -65,7 +70,11 @@ def _p(params):
         chains=int(params.get("chains", 3)), evals=int(params.get("evals", 30000)),
         patience=int(params.get("patience", 6000)), rescore=int(params.get("rescore", 3)),
         anneal_order=int(params.get("anneal_order", 5)), anneal_beam=int(params.get("anneal_beam", 80)),
-        anneal_len=int(params.get("anneal_len", 140)), start=params.get("start", "sort"))
+        anneal_len=int(params.get("anneal_len", 140)), start=params.get("start", "sort"),
+        search=params.get("search", "anneal"), open_order=int(params.get("open_order", 5)),
+        open_beam=int(params.get("open_beam", 2000)), per_open=int(params.get("per_open", 30)),
+        per_map=int(params.get("per_map", 10)), refine=int(params.get("refine", 0)),
+        refine_props=int(params.get("refine_props", 5)), refine_rand=int(params.get("refine_rand", 3)))
 
 
 # ---------------------------------------------------------------- tabula
@@ -263,6 +272,144 @@ def anneal(proxy, start_inv, evals, patience, rng, T0=None, cool=200.0, verbose=
     return best_inv, best, n_eval, T0
 
 
+# ---------------------------------------------------------------- open-tableau beam (search=beam)
+def open_beam(msgs, lmp, lmk, beam=2000, per_open=30, per_map=10, arith="vig"):
+    """Two-stream beam decoder with the cipher-side permutation UNKNOWN: every hypothesis carries a partial mapping
+    cipher letter -> sum s (injective) besides its plaintext and key contexts. At a cipher letter already mapped the
+    options are the 26 (p, k) pairs on that sum line (as in running_key.beam_decode); at a letter's first occurrence
+    every (p, k) pair whose sum is still free is an option and the hypothesis commits to it (the mapped set depends on
+    the position only, so exactly 26 positions are open). Contexts reset at message boundaries, the mapping persists,
+    so all messages inform S3. Word boundaries off. Returns (plain, S3inv list with -1 for letters never seen, score)."""
+    assert lmp.alpha == rk.A and lmk.alpha == rk.A, "open_beam needs letter-only models (spaces off)"
+    np_, nk = lmp.order - 1, lmk.order - 1
+    EMPTY = tuple([-1] * 26)
+    hyps = {("", "", EMPTY): (0.0, None, 0)}   # key -> (score, node, used bitmask); node = (p, k, parent)
+    def kof(s, p):
+        return (s - p) % 26 if arith == "vig" else ((s + p) % 26 if arith == "beau" else (p - s) % 26)
+    def sof(p, k):
+        return (p + k) % 26 if arith == "vig" else ((k - p) % 26 if arith == "beau" else (p - k) % 26)
+    for m in msgs:
+        # contexts reset, mapping kept: merge hypotheses that now coincide
+        merged = {}
+        for (pc, kc, mp), v in hyps.items():
+            key = ("", "", mp)
+            if key not in merged or v[0] > merged[key][0]:
+                merged[key] = v
+        hyps = merged
+        for ch in m:
+            cv = rk.IDX[ch]
+            cand = []
+            for (pc, kc, mp), (sc, node, used) in hyps.items():
+                dp, dk = lmp.dist(pc), lmk.dist(kc)
+                s_known = mp[cv]
+                if s_known >= 0:
+                    loc = [(dp[p] + dk[kof(s_known, p)], p, kof(s_known, p)) for p in range(26)]
+                    if per_map < 26:
+                        loc = heapq.nlargest(per_map, loc)
+                    for v, p, k in loc:
+                        cand.append((sc + v, p, k, pc, kc, mp, used, -1))
+                else:
+                    loc = []
+                    for p in range(26):
+                        dpp = dp[p]
+                        for k in range(26):
+                            if used >> sof(p, k) & 1:
+                                continue
+                            loc.append((dpp + dk[k], p, k))
+                    loc = heapq.nlargest(per_open, loc)
+                    for v, p, k in loc:
+                        cand.append((sc + v, p, k, pc, kc, mp, used, sof(p, k)))
+            if len(cand) > beam * 2:
+                cand = heapq.nlargest(beam * 2, cand, key=lambda x: x[0])
+            else:
+                cand.sort(key=lambda x: -x[0])
+            new = {}
+            for s, p, k, pc, kc, mp, used, snew in cand:
+                if snew >= 0:
+                    mpl = list(mp)
+                    mpl[cv] = snew
+                    mp2 = tuple(mpl)
+                    used2 = used | (1 << snew)
+                else:
+                    mp2, used2 = mp, used
+                key = ((pc + rk.A[p])[-np_:] if np_ else "", (kc + rk.A[k])[-nk:] if nk else "", mp2)
+                if key in new:
+                    continue
+                new[key] = (s, (p, k, node), used2)
+                if len(new) >= beam:
+                    break
+            hyps = new
+    (pc, kc, mp), (sc, node, used) = max(hyps.items(), key=lambda kv: kv[1][0])
+    ps = []
+    while node is not None:
+        ps.append(rk.A[node[0]])
+        node = node[2]
+    return "".join(reversed(ps)), list(mp), sc
+
+
+def complete_inv(inv, rng):
+    """fill the cipher letters the open beam never saw with the unused sums, at random."""
+    inv = list(inv)
+    free = [s for s in range(26) if s not in inv]
+    rng.shuffle(free)
+    for c in range(26):
+        if inv[c] < 0:
+            inv[c] = free.pop()
+    return inv
+
+
+# ---------------------------------------------------------------- decoder-guided refinement (refine=ROUNDS)
+def refine_decoder(proxy, S3, lmp, lmk, sel, a, rng, truth=None):
+    """greedy local search on the DECODER objective from S3: each round proposes the `refine_props` swaps with the
+    least bad proxy delta (the proxy as a proposal filter, the brief's option 2) plus `refine_rand` random swaps,
+    scores each by the beam decoder at anneal settings on `sel`, and accepts the best if it improves; stops after a
+    round with no improvement or after `refine` rounds. Prints which kind of proposal won each round, so the log says
+    whether the filter earns its keep. Returns (S3, joint ll/letter, rounds used)."""
+    def dec(S):
+        return rk.decode_message(sel, lmp, lmk, perm_tabula(None, None, S, a.arith), a.anneal_beam, a.per_hyp, False,
+                                 a.spaces)["ll_joint"]
+    cur = dec(S3)
+    rounds = 0
+    for r in range(a.refine):
+        rounds += 1
+        inv = inverse(S3)
+        base = {}
+        deltas = []
+        for x in range(26):
+            for y in range(x + 1, 26):
+                old = proxy.partial(inv, (x, y))
+                inv[x], inv[y] = inv[y], inv[x]
+                deltas.append((proxy.partial(inv, (x, y)) - old, x, y))
+                inv[x], inv[y] = inv[y], inv[x]
+        deltas.sort(reverse=True)
+        props = [("proxy", x, y) for _, x, y in deltas[:a.refine_props]]
+        while len(props) < a.refine_props + a.refine_rand:
+            x, y = rng.sample(range(26), 2)
+            if not any(p[1:] == (x, y) or p[1:] == (y, x) for p in props):
+                props.append(("random", x, y))
+        best = None
+        for kind, x, y in props:
+            inv2 = inverse(S3)
+            inv2[x], inv2[y] = inv2[y], inv2[x]
+            S = inverse(inv2)
+            v = dec(S)
+            if best is None or v > best[0]:
+                best = (v, S, kind)
+        line = f"  refine round {r + 1}: current {cur:.3f}, best proposal {best[0]:.3f} ({best[2]})"
+        if best[0] > cur + 1e-9:
+            cur, S3 = best[0], best[1]
+            if truth:
+                e, bs, t = letters_correct(S3, truth)
+                line += f"; accepted, S3 letters correct {e}/26 exact, {bs}/26 under shift {t}"
+            else:
+                line += "; accepted"
+            print(line, flush=True)
+        else:
+            print(line + "; no improvement, stop", flush=True)
+            break
+    return S3, cur, rounds
+
+
 # ---------------------------------------------------------------- family interface
 def load_kcorpus(path):
     if not path:
@@ -339,10 +486,27 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
     if truth:
         e, bs, t = letters_correct(S3_sort, truth)
         print(f"  start: sort-match S3 letters correct {e}/26 exact, {bs}/26 under shift {t}")
+    if a.search == "beam":
+        # open-tableau beam: the mapping is searched inside the decoder (see open_beam); the proxy is not used
+        lmp_o, lmk_o = _models(corpora, ktrain, a.open_order, a.discount, False)
+        tb = time.time()
+        plain_o, inv_o, sc_o = open_beam(cipher_msgs, lmp_o, lmk_o, a.open_beam, a.per_open, a.per_map, a.arith)
+        n_o = sum(len(m) for m in cipher_msgs)
+        inv_o = complete_inv(inv_o, rng)
+        S3_o = inverse(inv_o)
+        line = (f"  open beam (order {a.open_order}, beam {a.open_beam}, per_open {a.per_open}, per_map {a.per_map}): "
+                f"joint ll/letter {sc_o / n_o:.3f} in {time.time() - tb:.0f}s; S3 {''.join(rk.A[c] for c in S3_o)}")
+        if truth:
+            e, bs, t = letters_correct(S3_o, truth)
+            line += f"; S3 letters correct {e}/26 exact, {bs}/26 under shift {t}"
+        print(line)
+        results = [(sc_o / n_o, S3_o)]
+        per_eval = (time.time() - tb)
+        cands = results
     # stage 2: chains
-    results = []
+    results = [] if a.search != "beam" else results
     t1 = time.time()
-    for ch in range(a.chains):
+    for ch in range(a.chains if a.search != "beam" else 0):
         if ch == 0 and a.start == "sort":
             start = inverse(S3_sort)
         else:
@@ -357,7 +521,8 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
             line += f"; S3 letters correct {e}/26 exact, {bs}/26 under shift {t}"
         print(line)
         results.append((sc, S3))
-    per_eval = (time.time() - t1) / max(1, sum(1 for _ in results) * a.evals)
+    if a.search != "beam":
+        per_eval = (time.time() - t1) / max(1, len(results) * a.evals)
     results.sort(key=lambda x: -x[0])
     distinct, seen = [], set()
     for sc, S3 in results:
@@ -381,6 +546,10 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
     print(f"  decoder evaluation at anneal settings (order {a.anneal_order}, beam {a.anneal_beam}, {len(sel)} letters): "
           f"{eval_s:.2f}s each; proxy evaluation {per_eval * 1000:.2f} ms")
     _, tab, sc_proxy = best
+    if a.refine > 0:
+        S3_r, ll_r, rounds = refine_decoder(proxy, tab["S3"], lmp_a, lmk_a, sel, a, rng, truth)
+        print(f"  refine: {rounds} rounds, msg{a.sel_msg + 1}[:{len(sel)}] joint ll/letter {best[0]:.3f} -> {ll_r:.3f}")
+        tab = perm_tabula(None, None, S3_r, a.arith)
     lmp, lmk = _models(corpora, ktrain, a.order, a.discount, a.spaces)
     out, keys, tot, n = [], [], 0.0, 0
     for m in cipher_msgs:
