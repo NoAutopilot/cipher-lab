@@ -1,0 +1,295 @@
+line	position	sign	confidence	alt	why
+c4a_L01	1	MISC-05	M	B:MISC-37	differ
+c4a_L01	2	_	M	B:HOOK-L	differ
+c4a_L01	3	X	M	B:BAR-THIN	differ
+c4a_L01	4	PHI	M		agree-flagged
+c4a_L01	5	X	M		agree-flagged
+c4a_L01	6	MISC-05	M	B:NOTE	differ
+c4a_L01	7	MISC-17	M	B:BAR-THIN	differ
+c4a_L01	8	BAR-SERIF	M	B:BAR-THIN	differ
+c4a_L01	9	LOOP-TAIL	M	B:DASH-H	differ
+c4a_L01	10	X	M		agree-flagged
+c4a_L01	11	WAVE	M	A:-	gap
+c4a_L01	12	X	M	B:MISC-36	differ
+c4a_L01	13	X	M		agree-flagged
+c4a_L01	14	PCT	M	B:-	gap
+c4a_L01	15	WAVE	M		agree-flagged
+c4a_L02	1	MISC-24	M	B:MISC-37	differ
+c4a_L02	2	PCT	M	B:BAR-THIN	differ
+c4a_L02	3	X	M		agree-flagged
+c4a_L02	4	X	M		agree-flagged
+c4a_L02	5	X	M		agree-flagged
+c4a_L02	6	MISC-54	M	B:TRIPOD	differ
+c4a_L02	7	CROSS-T	M	B:MISC-32	differ
+c4a_L02	8	MISC-21	M	B:MISC-32	differ
+c4a_L02	9	MISC-33	M	B:BAR-THIN	differ
+c4a_L02	10	MISC-67	M	B:SUN	differ
+c4a_L02	11	VENUS	M	B:CIRC-O	differ
+c4a_L02	12	X	M		agree-flagged
+c4a_L02	13	CIRC-TAIL	M	B:DASH-H	differ
+c4a_L03	1	SUN	M		agree-flagged
+c4a_L03	2	VEE	M	B:PCT	differ
+c4a_L03	3	MISC-55	M	B:MISC-50	differ
+c4a_L03	4	X	M		agree-flagged
+c4a_L03	5	MISC-31	M	B:CRESCENT	differ
+c4a_L03	6	MISC-17	M	B:BAR-SOLID	differ
+c4a_L03	7	AMP	M	B:MISC-36	differ
+c4a_L03	8	X	M		agree-flagged
+c4a_L03	9	Y-CURL	M	B:HOOK-L	differ
+c4a_L03	10	LOOP-TAIL	M	B:DELTA-TAIL	differ
+c4a_L03	11	PCT	M	B:MISC-75	differ
+c4a_L03	12	X	M		agree-flagged
+c4a_L03	13	MISC-32	M	B:DASH-H	differ
+c4a_L04	1	LOOP-TAIL	M	B:DELTA-TAIL	differ
+c4a_L04	2	PCT	M	B:CIRC-O	differ
+c4a_L04	3	TRIPOD	M	B:MISC-46	differ
+c4a_L04	4	X	M		agree-flagged
+c4a_L04	5	MISC-05	M	B:-	gap
+c4a_L04	6	MISC-05	M	B:GEAR-DOT	differ
+c4a_L04	7	VENUS	M	B:MISC-32	differ
+c4a_L04	8	_	M	B:RHO	differ
+c4a_L04	9	PCT	M		agree-flagged
+c4a_L04	10	Y-CURL	M	A:-	gap
+c4a_L04	11	DASH-H	M	A:-	gap
+c4a_L04	12	BAR-SOLID	M	B:WAVE	differ
+c4a_L04	13	WAVE	M		agree-flagged
+c4a_L04	14	HOOK-L	M	B:BAR-THIN	differ
+c4a_L04	15	CIRC-O	M	B:MISC-32	differ
+c4a_L04	16	X	M		agree-flagged
+c4a_L04	17	MISC-31	M		agree-flagged
+c4a_L04	18	PCT	M	B:-	gap
+c4a_L04	19	MISC-55	M	B:Y-CURL	differ
+c4a_L04	20	MISC-17	M	B:BAR-THIN	differ
+c4a_L05	1	VEE	M		agree-flagged
+c4a_L05	2	HOOK-L	M	A:-	gap
+c4a_L05	3	CIRC-O	M	A:-	gap
+c4a_L05	4	BAR-THIN	M	A:-	gap
+c4a_L05	5	CRESCENT	M		agree-flagged
+c4a_L05	6	TRIPOD	M	B:-	gap
+c4a_L05	7	WAVE	M	B:MISC-32	differ
+c4a_L05	8	MISC-36	M	B:GEAR-DOT	differ
+c4a_L05	9	_	M	B:MISC-33	differ
+c4a_L05	10	X	M		agree-flagged
+c4a_L05	11	GEAR-DOT	M	B:CIRC-O	differ
+c4a_L05	12	MISC-55	M	B:WAVE	differ
+c4a_L05	13	X	M		agree-flagged
+c4a_L05	14	MISC-54	M	B:-	gap
+c4a_L05	15	MISC-30	M	B:WAVE	differ
+c4a_L05	16	CROSS-T	M	B:X	differ
+c4a_L05	17	BAR-SOLID	M	B:TRIDENT	differ
+c4a_L05	18	_	M	B:HOOK-L	differ
+c4a_L05	19	Y-CURL	M		agree-flagged
+c4a_L05	20	GEAR-DOT	M	B:-	gap
+c4a_L05	21	MISC-55	M	B:DASH-H	differ
+c4a_L06	1	_	M	B:RHO	differ
+c4a_L06	2	CROSS-T	M	B:BAR-SOLID	differ
+c4a_L06	3	HOOK-L	M		agree-flagged
+c4a_L06	4	DASH-H	M		agree-flagged
+c4a_L06	5	DELTA-TAIL	M	B:BAR-SERIF	differ
+c4a_L06	6	MISC-54	M	B:DASH-H	differ
+c4a_L06	7	_	M	B:EYE-DOT	differ
+c4a_L06	8	_	M	B:X	differ
+c4a_L06	9	VENUS	M		agree-flagged
+c4a_L06	10	PHI	M	B:HOOK-L	differ
+c4a_L06	11	MISC-05	M	B:BAR-THIN	differ
+c4a_L06	12	_	M	B:X	differ
+c4a_L06	13	MISC-33	M	B:VENUS	differ
+c4a_L06	14	MISC-05	M	B:BAR-SOLID	differ
+c4a_L06	15	PCT	M	B:BAR-THIN	differ
+c4a_L07	1	PCT	M		agree-flagged
+c4a_L07	2	X	M	B:CIRC-TAIL	differ
+c4a_L07	3	MISC-20	M	B:HOOK-L	differ
+c4a_L07	4	_	M	B:DASH-H	differ
+c4a_L07	5	MISC-46	M	B:X	differ
+c4a_L07	6	X	M		agree-flagged
+c4a_L07	7	PCT	M	B:VEE	differ
+c4a_L07	8	MISC-05	M	B:VEE	differ
+c4a_L07	9	TRIDENT	M	B:VEE	differ
+c4a_L07	10	PHI	M		agree-flagged
+c4a_L07	11	WAVE	M		agree-flagged
+c4a_L07	12	PCT	M	B:BAR-THIN	differ
+c4a_L07	13	MISC-33	M	B:CIRC-O	differ
+c4a_L07	14	CIRC-TAIL	M	B:HOOK-L	differ
+c4a_L08	1	MISC-17	M	B:BAR-SERIF	differ
+c4a_L08	2	_	M	B:Y-CURL	differ
+c4a_L08	3	DELTA-TAIL	M		agree-flagged
+c4a_L08	4	Y-CURL	M	B:PCT	differ
+c4a_L08	5	MISC-05	M	B:DASH-H	differ
+c4a_L08	6	X	M		agree-flagged
+c4a_L08	7	X	M	B:HOOK-L	differ
+c4a_L08	8	GEAR-DOT	M	B:DASH-H	differ
+c4a_L08	9	WAVE	M		agree-flagged
+c4a_L08	10	CROSS-T	M	B:BAR-THIN	differ
+c4a_L08	11	X	M		agree-flagged
+c4a_L08	12	CROSS-T	M		agree-flagged
+c4a_L08	13	X	M	B:MISC-17	differ
+c4a_L08	14	X	M		agree-flagged
+c4a_L08	15	MISC-33	M	B:WAVE	differ
+c4a_L08	16	LOOP-TAIL	M	B:DELTA-TAIL	differ
+c4a_L08	17	PCT	M	B:BAR-THIN	differ
+c4a_L09	1	MISC-05	M	B:-	gap
+c4a_L09	2	Y-CURL	M	B:MISC-67	differ
+c4a_L09	3	VENUS	M	B:X	differ
+c4a_L09	4	BAR-SOLID	M	B:RHO	differ
+c4a_L09	5	MISC-33	M	B:DASH-H	differ
+c4a_L09	6	_	M	B:MISC-11	differ
+c4a_L09	7	NOTE	M		agree-flagged
+c4a_L09	8	DELTA-TAIL	M	A:-	gap
+c4a_L09	9	MISC-60	M	A:-	gap
+c4a_L09	10	MISC-29	M	B:MISC-71	differ
+c4a_L09	11	VENUS	M	B:DELTA-TAIL	differ
+c4a_L09	12	MISC-33	M	B:X	differ
+c4a_L09	13	TRIPOD	M	B:X	differ
+c4a_L09	14	_	M	B:BAR-THIN	differ
+c4a_L09	15	MISC-82	M	B:MISC-64	differ
+c4a_L09	16	VENUS	M		agree-flagged
+c4a_L09	17	BAR-SOLID	M	B:-	gap
+c4a_L10	1	MISC-43	M	B:X	differ
+c4a_L10	2	PCT	M	B:BAR-THIN	differ
+c4a_L10	3	NOTE	M	B:DELTA-TAIL	differ
+c4a_L10	4	SUN	M	B:MISC-60	differ
+c4a_L10	5	X	M		agree-flagged
+c4a_L10	6	BAR-SERIF	M	B:-	gap
+c4a_L10	7	CRESCENT	M		agree-flagged
+c4a_L10	8	DASH-H	M	A:-	gap
+c4a_L10	9	MISC-24	M	B:VENUS	differ
+c4a_L10	10	BAR-SOLID	M	B:DASH-H	differ
+c4a_L10	11	X	M		agree-flagged
+c4a_L10	12	MISC-29	M	B:MISC-07	differ
+c4a_L10	13	MISC-29	M		agree-flagged
+c4a_L10	14	X	M		agree-flagged
+c4a_L10	15	X	M		agree-flagged
+c4a_L10	16	X	M	B:DELTA-TAIL	differ
+c4a_L10	17	TRIPOD	M	B:MISC-32	differ
+c4a_L10	18	PCT	M	B:DASH-H	differ
+c4a_L11	1	MISC-07	M	B:BAR-SOLID	differ
+c4a_L11	2	LOOP-TAIL	M	B:BAR-THIN	differ
+c4a_L11	3	PHI	M	B:DELTA-TAIL	differ
+c4a_L11	4	MISC-29	M	B:CIRC-TAIL	differ
+c4a_L11	5	MISC-29	M	B:MISC-13	differ
+c4a_L11	6	MISC-17	M	B:MISC-60	differ
+c4a_L11	7	MISC-33	M	B:EYE-DOT	differ
+c4a_L11	8	TRIPOD	M	B:BAR-THIN	differ
+c4a_L11	9	RHO	M		agree-flagged
+c4a_L11	10	MISC-71	M	B:MISC-32	differ
+c4a_L11	11	MISC-55	M	B:DASH-H	differ
+c4a_L12	1	MISC-60	M	A:-	gap
+c4a_L12	2	MISC-29	M	B:DASH-H	differ
+c4a_L12	3	MISC-46	M	B:DELTA-TAIL	differ
+c4a_L12	4	PHI	M	B:BAR-THIN	differ
+c4a_L12	5	TRIPOD	M	B:X	differ
+c4a_L12	6	WAVE	M	B:X	differ
+c4a_L12	7	MISC-30	M	B:BAR-THIN	differ
+c4a_L12	8	X	M		agree-flagged
+c4a_L12	9	WAVE	M	B:MISC-31	differ
+c4a_L12	10	CROSS-T	M	B:MISC-50	differ
+c4a_L12	11	BAR-SOLID	M	B:BAR-SERIF	differ
+c4a_L12	12	MISC-37	M	B:X	differ
+c4a_L12	13	Y-CURL	M		agree-flagged
+c4a_L12	14	X	M	B:-	gap
+c4a_L12	15	MISC-32	M	B:MISC-50	differ
+c4a_L12	16	_	M	B:MISC-21	differ
+c4a_L12	17	X	M	B:HOOK-L	differ
+c4a_L12	18	MISC-17	M	B:BAR-THIN	differ
+c4a_L12	19	X	M		agree-flagged
+c4a_L12	20	MISC-31	M	B:VENUS	differ
+c4a_L13	1	SUN	M		agree-flagged
+c4a_L13	2	X	M		agree-flagged
+c4a_L13	3	VENUS	M	B:CRESCENT	differ
+c4a_L13	4	MISC-33	M	B:Y-CURL	differ
+c4a_L13	5	X	M	B:BAR-THIN	differ
+c4a_L13	6	MISC-21	M	B:MISC-32	differ
+c4a_L13	7	MISC-07	M	B:MISC-41	differ
+c4a_L13	8	VEE	M		agree-flagged
+c4a_L13	9	DASH-H	M	B:MISC-46	differ
+c4a_L13	10	PCT	M		agree-flagged
+c4a_L13	11	DASH-H	M		agree-flagged
+c4a_L13	12	X	M		agree-flagged
+c4a_L13	13	LOOP-TAIL	M	B:VEE	differ
+c4a_L13	14	X	M		agree-flagged
+c4a_L13	15	MISC-21	M	B:MISC-64	differ
+c4a_L13	16	CIRC-O	M	B:WAVE	differ
+c4a_L13	17	MISC-13	M	B:VENUS	differ
+c4a_L14	1	_	M	B:HOOK-L	differ
+c4a_L14	2	MISC-43	M	B:VENUS	differ
+c4a_L14	3	X	M	B:VENUS	differ
+c4a_L14	4	X	M		agree-flagged
+c4a_L14	5	X	M	B:MISC-83	differ
+c4a_L14	6	CROSS-T	M	B:BAR-THIN	differ
+c4a_L14	7	MISC-31	M	B:PCT	differ
+c4a_L14	8	MISC-05	M	B:MISC-32	differ
+c4a_L14	9	Y-CURL	M	B:DELTA-TAIL	differ
+c4a_L14	10	X	M	B:MISC-21	differ
+c4a_L14	11	MISC-29	M	B:TRIDENT	differ
+c4a_L14	12	MISC-21	M	B:MISC-54	differ
+c4a_L14	13	MISC-55	M	B:DASH-H	differ
+c4b_L01	1	HOOK-L	M		agree-flagged
+c4b_L01	2	_	M	B:MISC-41	differ
+c4b_L01	3	X	M		agree-flagged
+c4b_L01	4	MISC-24	M	B:MISC-67	differ
+c4b_L01	5	MISC-46	M	B:MISC-32	differ
+c4b_L01	6	TRIPOD	M	B:MISC-17	differ
+c4b_L01	7	BAR-SOLID	M	B:MISC-03	differ
+c4b_L01	8	MISC-05	M	B:HOOK-L	differ
+c4b_L01	9	PCT	M	B:Y-CURL	differ
+c4b_L01	10	DELTA-TAIL	M	B:EYE-DOT	differ
+c4b_L01	11	MISC-40	M	B:MISC-17	differ
+c4b_L02	1	_	M	B:MISC-32	differ
+c4b_L02	2	MISC-05	M	B:MISC-76	differ
+c4b_L02	3	MISC-13	M	B:DELTA-TAIL	differ
+c4b_L02	4	MISC-05	M	B:HOOK-L	differ
+c4b_L02	5	MISC-31	M	B:MISC-32	differ
+c4b_L02	6	X	M	B:BAR-THIN	differ
+c4b_L02	7	MISC-33	M	B:DASH-H	differ
+c4b_L02	8	PCT	M	B:MISC-32	differ
+c4b_L02	9	_	M	B:HOOK-L	differ
+c4b_L02	10	AMP	M	B:DELTA-TAIL	differ
+c4b_L02	11	MISC-76	M	B:BAR-SERIF	differ
+c4b_L02	12	Y-CURL	M		agree-flagged
+c4b_L02	13	PCT	M	B:Y-CURL	differ
+c4b_L02	14	PCT	M		agree-flagged
+c4b_L02	15	DASH-H	M		agree-flagged
+c4b_L03	1	MISC-05	M	B:MISC-32	differ
+c4b_L03	2	MISC-36	M	B:MISC-31	differ
+c4b_L03	3	X	M	B:MISC-31	differ
+c4b_L03	4	HOOK-L	M	B:MISC-17	differ
+c4b_L03	5	EYE-DOT	M	B:CIRC-O	differ
+c4b_L03	6	Y-CURL	M	B:MISC-17	differ
+c4b_L03	7	MISC-31	M	B:EYE-DOT	differ
+c4b_L03	8	MISC-20	M	B:MISC-11	differ
+c4b_L03	9	TRIPOD	M	B:NOTE	differ
+c4b_L03	10	_	M	B:MISC-07	differ
+c4b_L03	11	_	M	B:MISC-32	differ
+c4b_L03	12	TRIPOD	M	B:BAR-THIN	differ
+c4b_L03	13	WAVE	M		agree-flagged
+c4b_L04	1	_	M	B:MISC-32	differ
+c4b_L04	2	_	M	B:MISC-21	differ
+c4b_L04	3	_	M	B:VENUS	differ
+c4b_L04	4	X	M		agree-flagged
+c4b_L04	5	MISC-50	M	A:-	gap
+c4b_L04	6	_	M	B:RHO	differ
+c4b_L04	7	_	M	B:BAR-THIN	differ
+c4b_L04	8	_	M	B:NOTE	differ
+c4b_L04	9	HOOK-L	M	B:DASH-H	differ
+c4b_L04	10	HOOK-L	M		agree-flagged
+c4b_L04	11	EYE-DOT	M	B:-	gap
+c4b_L04	12	_	M	B:DASH-H	differ
+c4b_L04	13	MISC-13	M	B:BAR-THIN	differ
+c4b_L04	14	EYE-DOT	M	B:DASH-H	differ
+c4b_L04	15	_	M	B:MISC-50	differ
+c4b_L04	16	MISC-24	M	B:GEAR-DOT	differ
+c4b_L04	17	PCT	M	B:Y-CURL	differ
+c4b_L05	1	MISC-21	M	B:RHO	differ
+c4b_L05	2	_	M	B:MISC-06	differ
+c4b_L05	3	X	M	B:HOOK-L	differ
+c4b_L05	4	TRIDENT	M	B:CRESCENT	differ
+c4b_L05	5	PCT	M	B:BAR-SOLID	differ
+c4b_L05	6	PCT	M	B:MISC-32	differ
+c4b_L05	7	MISC-17	M	B:Y-CURL	differ
+c4b_L05	8	DELTA-TAIL	M		agree-flagged
+c4b_L05	9	_	M	B:CIRC-TAIL	differ
+c4b_L05	10	_	M	B:X	differ
+c4b_L05	11	MISC-36	M	B:MISC-64	differ
+c4b_L05	12	_	M	B:BAR-SOLID	differ
+c4b_L05	13	X	M		agree-flagged
+c4b_L05	14	_	M	B:MISC-37	differ
