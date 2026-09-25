@@ -87,7 +87,9 @@
       "title": "Plan van de fortress Zelandia.",
       "native_px": "10711x5110",
       "default_full_url": "https://service.archief.nl/api/file/v1/default/cd3a65eb-7a10-497f-9c1e-373699a0e02d",
-      "files": { "2077_overview.jpg": "full sheet -- title cartouche + 'Explicatie der Signatuuren' legend entries (a,b,c...) ARE ciphered; 'Nota'/'Explicatie'/'Remarque' headings and body prose are plain Dutch. NOT flagged in NA's own scopecontent field." }
+      "files": { "2077_overview.jpg": "full sheet -- title cartouche + 'Explicatie der Signatuuren' legend entries (a,b,c...) ARE ciphered; 'Nota'/'Explicatie'/'Remarque' headings and body prose are plain Dutch. NOT flagged in NA's own scopecontent field.",
+        "2077_full.jpg": "RD03D 25 Sept 2026: default_full_url fetch, delivered capped at 5000x2385 (not the true 10711x5110 native size, same cap behavior as 2007B) -- 1 request, service.archief.nl",
+        "2077_legend_5000.jpg": "RD03D 25 Sept 2026: local PIL crop of 2077_full.jpg (3250,60)-(5000,700), the title cartouche + 'Explicatie der Signatuuren' legend block; no new network fetch" }
     },
     {
       "invnr": "4.VEL 2078",

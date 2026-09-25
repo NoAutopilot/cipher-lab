@@ -168,3 +168,50 @@ found the new `λ` sign appears once in the second line but the rest of the line
 Latin-looking letters not yet matched to a confirmed code at this resolution, or unconfirmed shapes -- still
 too sparse for anything beyond a single-sign spot-check, not a reading. See NOTES.md for the honest state of
 play and what a follow-on worker should do next.
+
+## RD03D, 25 Sept 2026: "zwaare" resolves the λ-contradiction as a mis-segmentation, not a real conflict
+
+Working from `images/strips/clauseB_full.png` (already on disk, no new fetch), this worker re-read clause B's
+second word ("zwaare", the plain gloss directly above) at 5x local zoom
+(`/tmp/.../scratchpad/zwaare_zoom.png`, not committed -- scratch only). Pass A's `scratch_notaBDEF_passA.tsv`
+had transcribed this word's first glyph as `λ` (nota_pB_w2 pos1), which -- forced against ZWAARE's own
+letters -- would read λ=Z, directly contradicting the robust, twice-independently-confirmed λ=T (NOTA
+self-echo + Signatuure). Re-examined at native-crop zoom, that first glyph is clearly **not** λ: it is a
+distinct trident/fork-shaped mark (`ψ`), visually different from λ's open hooked stroke once seen side by
+side at this zoom. **This resolves the contradiction as a pass-A transcription slip, not a real one-glyph-
+two-values case** -- consistent with how every other apparent conflict in this file has resolved so far.
+
+With `ψ` correctly separated from `λ`, "zwaare" (Z-W-A-A-R-E, 6 letters) reads as 6 glyphs with **zero**
+compression: `ψ 4 [delta] [dot-check] [o-tail] 7`. Three of these are already-confirmed signs, and all three
+land exactly on their expected letter position with no forcing:
+- position 2, `4` (digit four) -> expected W -> **matches confirmed 4=w** (the sign's own source word,
+  "Tweede", built by RD03C from the same Nota block -- this is still the same source material, not an
+  independent sheet, but it IS an independent word/context within it)
+- position 3, `[delta]` -> expected A -> **matches confirmed [delta]=a**, the most robust sign in the key
+- position 6, `7` (digit seven) -> expected E -> **matches confirmed 7=e**, built originally from 2007A's
+  title block ("Defensie") and 2061 ("de") -- a genuine cross-context transfer confirmation
+
+Two new signs surface at single-instance confidence only, NOT promoted to key.tsv (this file's own bar
+throughout has been >=2 independent reads/contexts):
+- `ψ` (trident/fork shape) at position 1 -> candidate **Z**
+- a dot-topped checkmark shape (distinct from `[delta]`'s closed triangle) at position 4 -> candidate second
+  **A** homophone
+- `[o-tail]` (round-with-small-hook, position 5) -> candidate **R**, possibly the same shape as `[o-plain]`
+  drawn slightly differently, or a second R homophone -- not distinguished at this pass
+
+**Practical effect:** the loop/hook-glyph family that RD03C flagged as "the actual blocker" on clauses B/D/E/F
+turns out, at least for this one word, to have been a resolvable transcription-precision problem, not a
+structural ambiguity in the cipher itself -- re-reading at higher LOCAL zoom (no new network fetch needed;
+the source crop was already native-resolution) was enough. A follow-on worker re-reading the rest of clauses
+B/D/E/F at the same care (rather than trusting pass A/B's original single-pass segmentations) should expect
+more of the "contradictions" in conflicts.tsv to resolve the same way.
+
+## RD03D, 25 Sept 2026: "Plan" transfer-confirmed on 2039 and 2077's own cartouches
+
+Reading `images/2039_cartouche.jpg` and `images/2077_full.jpg`'s cartouche crop (native-res IIIF fetch,
+`images/2077_legend_5000.jpg`) directly: both title cartouches open with a 4-glyph word that decodes,
+glyph-for-glyph with the current 17-sign key and no forcing, to **P-L-A-N**:
+`[s-loop] c [delta] [h-loop]` = p, l, a, n. This is now confirmed independently on **three** sheets this key
+was never built from in this respect (2039, 2077) plus the sheet it was built from (2007A/2061) -- a genuine
+transfer test, not self-consistency. See NOTES.md "Reading (VX-RD03D...)" for the sign-coverage counts on the
+rest of these sheets' text.
