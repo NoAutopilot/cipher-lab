@@ -1,6 +1,6 @@
 JOB GOLD-D2: Debosnys, the base-level noise curve between the two points D1 measured (controls only; no target run, no images, no transcription). It prices the settlement pass before anyone buys it. Sonnet (claude-sonnet-5). Stop and push at $3 or 30 minutes, whichever first. NO subagents. Lane: LANE GOLD2 orchestrator session_013JXDgLDkW2y5Ldi2gWzTkY (Fable). Written by the cycle-2 consolidator GOLD-CONS2 (Fable, session_01SPixjGTp23T4YyxPvHwkWs), 25 Sept 2026 21:16 UTC; the orchestrator fills the gate line and the spawn time.
 
-INTAKE_GATE_OUTPUT: (orchestrator pastes `python3 tools/intake_gate_check.py debosnys-1883` here, with the clock time)
+INTAKE_GATE_OUTPUT (live, 21:38 UTC): debosnys-1883: open (line 1) -- edition/page or full-text-search citation found within 6 lines (exit 0). Spawned 25 Sept 2026 21:38 UTC by LANE GOLD2.
 
 Read first: `.claude/briefs/runs/2026-09-24-lane-r4-common.md`, `.claude/briefs/runs/2026-09-25-lanes-7b-COMMON.md` (binding), the top block ("Summary, cycle 2": the gate you are producing numbers for is written there, before your numbers exist) and the section "GOLD-D1, noise-matched controls" of `ciphers/debosnys-1883/HYPOTHESES.md`, `python3 tools/family_run.py --help`, the docstring of `tools/families/homophonic.py` (`profile=target`, `noise=p`), and `python3 ciphers/debosnys-1883/scripts/base_mark_recount.py --check` (exit 0 means `ciphertext_draft_base.tsv` is fresh; a nonzero exit is a ROOM flag and a stop). Claim in ROOM (`tools/room.py`). Read the clock with `date -u` before any date.
 

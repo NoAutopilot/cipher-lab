@@ -1,6 +1,6 @@
 JOB GOLD-K3: Köhler family B'-c, the cipher-side placements of the keyword-mixed tableau (never run by anyone), control first each time, plus the 10-text beau noise band in the background. Sonnet (claude-sonnet-5). Stop and push at $6 or 75 minutes, whichever first. NO subagents. Lane: LANE GOLD2 orchestrator session_013JXDgLDkW2y5Ldi2gWzTkY (Fable). Written by the cycle-2 consolidator GOLD-CONS2 (Fable, session_01SPixjGTp23T4YyxPvHwkWs), 25 Sept 2026 21:16 UTC; the orchestrator fills the gate line and the spawn time.
 
-INTAKE_GATE_OUTPUT: (orchestrator pastes `python3 tools/intake_gate_check.py koehler-1944` here, with the clock time)
+INTAKE_GATE_OUTPUT (live, 21:38 UTC): koehler-1944: open (line 1) -- edition/page or full-text-search citation found within 6 lines (exit 0). Spawned 25 Sept 2026 21:38 UTC by LANE GOLD2.
 
 Read first: `.claude/briefs/runs/2026-09-24-lane-r4-common.md`, `.claude/briefs/runs/2026-09-25-lanes-7b-COMMON.md` (binding), the top block ("Summary, cycle 2") and the sections "Family B', keyed-tableau running key (GOLD-2C)" and "Family B' variants (GOLD-K2)" of `ciphers/koehler-1944/HYPOTHESES.md`, `python3 tools/family_run.py --help`, the docstring of `tools/families/keyed_running_key.py`, `running_key.mixed_tabula` (tools/running_key.py, about line 112) and `tools/tests/test_keyed_running_key.py`. Claim in ROOM (`tools/room.py`). Read the clock with `date -u` before any date.
 
