@@ -68,6 +68,18 @@
    "result": "Not a reading (H/C/S/M/I all 0). Herzog's own footnote states his six printed lines are a diplomatic line- and punctuation-faithful copy of Hs 1's inscription, not an emendation or decipherment. New find: Herzog's critical apparatus (p.28-29) gives the SAME inscription as it survives in 11 other manuscript witnesses, two of which (Hs 12, Hs 13) are mostly or wholly legible Latin ('Bellum. Famus. Gestas. Res. Mores. Amicus. Orpheus.' at Hs 12) and three (Hs 3, 3a, 11) give short initial-letter runs sharing letters with Hs 1's own line-2 token 'Satrnrop'. See ciphers/untersberg-code/NOTES.md 'Herzog 1929 located...' section for the full apparatus transcription and the ruled-out/confirmed leaf images.",
    "verdict": "Source-location and leaf-identification pass, not a cryptanalytic test -- status stays open/partial (rule 5). Strongest next step per this pass: a comparative philological alignment of Hs 1's inscription against Herzog's Hs 3/3a/11/12/13 variants, not a substitution anneal.",
    "cost_usd_estimate": "well under $3 cap; archive.org 6 requests, iiif.archive.org 3 (+2 timed-out 504 retries, abandoned per good-citizen one-retry rule), sammlung-online.salzburgmuseum.at 8, all >=1.5-2s apart"
+  },
+  {
+   "test": "NEAR step 3 (not a spec cheap_tests_in_order test; philological collation named by NEAR.md/bUNT4 as the next step, per brief 2026-09-25-lane-b4-untersberg-collate.md)",
+   "date": "25 Sept 2026",
+   "worker": "LANE B4 bUNT5",
+   "method": "Transcribed Herzog 1929 pp.28-29's apparatus for all 11 collated witnesses into specs/cheap-tests/untersberg-code/witnesses.tsv, checked token-by-token against the page image (6 OCR errors caught this way). Aligned Hs1's six lines against Hs12's six spelled-out Latin words ('Bellum. Famus. Gestas. Res. Mores. Amicus.', Orpheus excluded as a coda) by initial-letter match, real order vs 10 random shuffles (rule 3 control) plus an exact 720-permutation check. specs/cheap-tests/untersberg-code/align_witnesses.py, align_output.txt.",
+   "target": "3/6 lines match by initial letter in Hs12's real printed order",
+   "control_mean": 2.10,
+   "control_range": [1, 3],
+   "exact_permutation_percentile": "42.5% (306/720 permutations tie or beat 3/6; exact mean 2.333/6, range [0,5])",
+   "verdict": "Alignment does NOT clear its own control -- 3/6 sits within the 10-shuffle range (max 3) and at the 42.5th percentile of all 720 word orders, indistinguishable from chance. Per rule 3 this licenses 0 tokens at grade C and 0 at grade M; a single grade-I (inferred, not control-backed) line-level hypothesis is recorded in proposed_expansion.txt. judge_plaintext.py FAIL (length + language, de judge on a 6-word Latin string, not meaningful per spec's own note). Status unchanged: open/partial, NEAR.md not touched by this worker.",
+   "cost_usd_estimate": "well under $3 cap, disk-only, no hosts, no subagents"
   }
  ],
  "judge": {

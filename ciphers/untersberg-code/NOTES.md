@@ -108,3 +108,47 @@ No other hosts touched this pass (HathiTrust, Google Books, OpenAlex, manuscript
 No tokens read (H/C/S/M/I all 0) -- this remains a source-location, not a decipherment; status stays `open`. This is control-backed-positive-signal-plus-primary-source territory, still `partial`/`open` per rule 5's near-solve amendment, not `solved`. Per rule 10, nothing here is called new, unpublished, unread, first or previously unknown -- Herzog's own 1929 print already reproduces the inscription and Schmeh's 2018 blog post already reproduces a transcription of it; this pass only locates and cross-checks sources that already existed in print, and surfaces Herzog's comparative-witness apparatus as unexploited material. No REQUEST.md/ASKS.md row: nothing here is blocked on the owner (both hosts answered a plain curl with no login).
 
 **Flag for the orchestrator / next worker:** the strongest next cheap test on this target is now a comparative alignment of Hs 1's six-line inscription against Herzog's apparatus for Hs 3/3a/11 (initial-letter runs) and Hs 12/13 (mostly-plain Latin) -- this is philology/collation, not cryptanalysis proper, and might resolve the target (or substantially narrow it) without a substitution anneal at all. Also worth a look: Herzog's "Vgl. fol. 27" cross-reference to a second inscription later in Hs 1 itself (near pp. 45-50, not read this pass), which may be the RULED-OUT opening-27 candidate image already on disk.
+
+## Philological collation against Herzog's other witnesses, with a shuffle control (25 Sept 2026, LANE B4 worker bUNT5)
+
+Per brief `.claude/briefs/runs/2026-09-25-lane-b4-untersberg-collate.md` and NEAR.md's named next step after bUNT4. Intake gate re-run: `python3 tools/intake_gate_check.py untersberg-code` exit 0 (`open`, edition/page citation within 6 lines). This is collation of Herzog's own 1929 printed apparatus (his material, credited below), not an anneal; per rule 10 nothing here is new, unpublished or first.
+
+### 1. Witnesses transcribed and cross-checked against the page image
+
+`specs/cheap-tests/untersberg-code/witnesses.tsv` transcribes Herzog pp.28-29's apparatus for Hs 1 (the target) and all eleven collated witnesses (Hs 2, 3, 3a, 4, 7, 11, 12, 13; the remaining Hss. print no inscription at all, "In den übrigen Hss. fehlen Inschriften"). Source: `sources/herzog-1929/herzog1929_full_djvu.txt` (OCR), each token checked by eye against `sources/herzog-1929/herzog1929_pp28-29.jpg` (rule 2, image over transcription -- did not trust the OCR alone). Six OCR errors were caught and corrected this way: Hs1 line 1 OCR "fr. fr." is actually a crossed-d suspension glyph printed twice (Herzog's own footnote calls this a letter-form variant his diplomatic transcription does not normalise); Hs1 line 2 OCR "5. 1. d." should read "5. l. d." (digit-1/letter-l confusion); Hs7 OCR "eni"/"fra"/"nnlantz"/"exem" should read "cui"/"fru"/"unlantz"/"excm"; Hs13 OCR "Farnes" should read "Fames". Also newly noted: Hs1 line 6's final letter "g" carries Herzog's own footnote marker "d)" as a superscript (the same footnote that states his transcription is diplomatic and notes the arch frame) -- this is an apparatus reference, not a 12th ciphertext letter, and is flagged as such in the TSV rather than silently folded into the token.
+
+Tokenization follows LANE B4 bUNT2's existing convention for this target (period- and space-delimited elementary tokens): 71 tokens total, 61 letter-tokens plus 10 digit-tokens, matching bUNT2's count exactly (cross-check that the two passes are reading the same material the same way).
+
+### 2. Alignment: Hs 1's six lines against Hs 12's six spelled-out words, with a shuffle control
+
+Hs 12 gives the inscription fully spelled out as six words -- "Bellum. Famus. Gestas. Res. Mores. Amicus." -- plus a seventh, "Orpheus.", printed on its own centered sub-line below the list (read as a coda or name, not a 7th line of the six-line set; excluded from the aligned six). Six words against Hs 1's six lines is a plausible 1:1 line correspondence, so `specs/cheap-tests/untersberg-code/align_witnesses.py` tests it directly: for each line i (1-6) and each candidate word order, does ANY of line i's letter-tokens (digits and the two footnote-flagged "eth" abbreviation-glyph tokens excluded, per rule 2 -- not a Latin letter) share its initial letter with the word placed at position i?
+
+**Real order (Bellum, Famus, Gestas, Res, Mores, Amicus): 3/6 lines match** (Famus/f matches line 2's token "f"; Res/r matches line 4's token "r"; Mores/m matches line 5's token "mvraco"). Lines 1 (Bellum/B), 3 (Gestas/G) and 6 (Amicus/A) have no token of the matching initial.
+
+**Control, per rule 3: the identical procedure run on 10 random shuffles of the same six words (seed 20260925): mean 2.10/6, range [1, 3] -- 3 of the 10 shuffles also reach 3/6, tying the real order.** A bonus exact check (not asked for by the brief, cheap to add: all 6! = 720 permutations of the six words) puts the real order's 3/6 at the **42.5th percentile** of the full permutation distribution (306/720 permutations tie or beat it; exact mean 2.333/6, range [0, 5]).
+
+**Verdict: this specific alignment test does not clear its own control.** 3/6 is only slightly above the 10-shuffle sample mean and is tied or beaten by close to half of all possible word orders -- indistinguishable from chance under an exact permutation test. Per rule 3 (a match means nothing without a control showing it beats chance), this alignment method does not license treating any of the three apparent matches (Famus/line 2, Res/line 4, Mores/line 5) as more than coincidence. It is a negative result for this particular method, not a positive one, and it is reported as such rather than as a partial win: rule 3's own header paragraph applies (a control below its own gate cannot license a reading), even though here the "control" is a permutation test rather than a synthetic-text draw.
+
+### 3. Proposed expansion, grade by grade (rule 4)
+
+Given part 2's result, **0 tokens are graded C** -- no aligned position between Hs 1 and a spelled-out sibling witness is licensed with the confidence rule 4's C grade requires ("from known plaintext of a sibling witness"), because the control shows the alignment supporting any such claim is not distinguishable from chance. No tokens are graded M either, for the same reason (M implies a real but weak signal; this alignment method produced no signal beyond noise). The six-word literal sequence from Hs 12, in its own printed order, is recorded as a single **grade-I** (inferred, weak, explicitly not control-backed) line-level hypothesis only -- `specs/cheap-tests/untersberg-code/proposed_expansion.txt` -- offered as a hypothesis for a future pass to test differently (e.g. folding in token length/count, or aligning against Hs 13 and the Hs 3/3a/11 initial-letter runs together instead of Hs 12 alone), not as a reading.
+
+Counts: **C: 0, M: 0, I: 1 (line-level, all six lines, not control-backed), H: 0** (unchanged from every prior pass on this target).
+
+`python3 tools/judge_plaintext.py specs/untersberg-code.json --file specs/cheap-tests/untersberg-code/proposed_expansion.txt`:
+```
+FAIL length: got=31, min=90, max=130
+FAIL language: score=-1.59, null_p99=-1.495, real_p05=-0.539, real_median=-0.438, mode=both, N=31
+FAIL - untersberg-code (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+Both FAILs are expected and not meaningful: the judge's wired language is `de` (German; the spec's own note already flags that `la`/Latin has no corpus in `tools/judge_plaintext.py`) and the candidate is a 6-word Latin string, far short of the spec's letter-count window sized for the full six-line inscription. This FAIL is reported per rule 7 as instructed, not as a finding.
+
+### Status
+
+No tokens read at grade H, C, S or M (rule 4: I: 1 line-level hypothesis only, not control-backed). Status stays `open`/`partial` (rule 5's near-solve amendment; NEAR.md is the orchestrator's file and is not touched by this worker). Per rule 10, nothing here is new, unpublished, first or previously unknown -- this collates Herzog's own 1929 printed apparatus, credited above and in `specs/cheap-tests/untersberg-code/witnesses.tsv`'s header.
+
+**Flag for the orchestrator / next worker:** the initial-letter-only, Hs12-alone alignment tested here does not beat its own permutation control (42.5th percentile of 720). Two untried variants that might do better, if this line is pursued further: (a) fold in token length and count (the brief's other stated cues), not just initial letters; (b) align against Hs 13 (mostly-legible Latin, more words to anchor on) and the Hs 3/3a/11 initial-letter runs together with Hs 12, rather than Hs 12 alone, since Herzog's apparatus frames all of them as copies of the same underlying text and a joint alignment has more constraints per line than any single witness does alone. Neither attempted this pass (brief scope: one alignment, one control).
+
+### Files this pass
+
+`specs/cheap-tests/untersberg-code/witnesses.tsv` (all 12 witnesses' tokens, OCR-vs-image corrections noted), `align_witnesses.py` + `align_output.txt` (the alignment and its control), `proposed_expansion.txt` (the grade-I hypothesis). No new host requests (disk-only, per brief).
