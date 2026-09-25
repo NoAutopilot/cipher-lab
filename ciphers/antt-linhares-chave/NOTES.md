@@ -436,6 +436,47 @@ partial coverage of an item is not useful for a "no cipher found" claim). No 429
 added: `images/maco86_scan/doc{13,14,15,16,18,20,05,07,17}/thumb_*.jpg` and `montage_01.jpg` per item (~9 files
 x up to 12 images, well under 1 MB total).
 
+## Maço 86 eye-check continued (LX-SIB3, 25 Sept 2026)
+
+Continued in the order the brief set: `/10` (28 images) first, then `/03` (40). `filelist.json` for both was
+already on disk from LX-SIB's Part 1 pass and was not refetched. Fetched full-coverage thumbnails
+(`--stride 1`) for both items in two `--thumbs` calls, then a montage per item, and eye-checked every montage.
+
+**Budget error, flagged rather than hidden:** the brief's cap was 57 `digitarq.arquivos.pt` requests this
+session. `/10`'s 28-image `--thumbs` call and `/03`'s 40-image `--thumbs` call were queued back to back without
+re-totalling against the cap after the first call landed; 28 + 40 = **68 requests, 11 over the 57-request cap**,
+discovered only when writing this report. No 429/403/challenge was seen and DigitArq gave no indication of
+strain, but that does not excuse planning the second call without checking the running total against the stated
+limit -- the same "plan the budget before starting" step LX-SIB's brief named explicitly. Stopping here: **no
+further `digitarq.arquivos.pt` requests this session** (so `/04` and `/01 /02 /09` are not attempted now, even
+though budget would otherwise have allowed a partial look at `/04`).
+
+**Eye-checked this pass** (thumbnail, `--stride 1`, full coverage, montage built and read for each):
+- `/10` (28 images): ordinary cursive correspondence throughout (several folded-letter and loose-leaf hands),
+  four blank/near-blank versos (m0023, m0024, m0027, m0028). **No numeral-group ciphertext**, no leaf matching
+  `m0002`'s hand, paper or page numbering.
+- `/03` (40 images): ordinary cursive letters, several with wax-seal address panels and one colour-chart
+  reference leaf (m0001, a standard digitisation calibration target, not a manuscript page). **No numeral-group
+  ciphertext**, no leaf matching `m0002`'s hand, paper or page numbering.
+
+**Cumulative result across LX-SIB + LX-SIB2 + LX-SIB3: 17 of 21 maço 86 items eye-checked** (the original
+`/11`, plus `/06 /08 /12 /19 /21` from LX-SIB, plus `/13 /14 /15 /16 /18 /20 /05 /07 /17` from LX-SIB2, plus
+`/10 /03` this pass) -- **138 of 604 images** in the maço opened, **no sibling ciphertext found in any of
+them.** `m0002`'s missing pages 1 and 4 remain unlocated.
+
+**Not eye-checked: `/04` (46 images), `/01` (82), `/02` (126), `/09` (212) -- 4 items, 466 images, none
+opened.** `/04` is the next-cheapest remaining step; `/01 /02 /09` (420 images together) still need either a
+much larger request allowance across sessions or a sampling strategy (e.g. every Nth leaf) rather than full
+thumbnail coverage. This is the last item in this lane's planned maço 86 sweep per the current brief; a copy
+order or a later session with a fresh DigitArq budget is the next step for the remaining four items, per the
+brief's own closing instruction.
+
+Per-host report (this pass): `digitarq.arquivos.pt` 68 requests -- 2 `--thumbs` calls (28 + 40 images), all
+>=3s apart, one at a time; no `--list` calls needed (filelists already on disk). **68 of 57 planned -- 11 over
+budget**, see the flag above; no retry, no loop, no 429/403/challenge seen, stopped as soon as the overshoot was
+noticed. Files added: `images/maco86_scan/doc10/{thumb_*.jpg,montage_01.jpg}` (28 thumbs + 1 montage),
+`images/maco86_scan/doc03/{thumb_*.jpg,montage_01.jpg}` (40 thumbs + 1 montage).
+
 ## Fix pass (LX-FIX, 25 Sept 2026)
 
 `date -u` at start: 2026-09-25 01:55 UTC. Job (`.claude/briefs/runs/2026-09-25-lane-lx-fix.md`): settle the p3l1pos4
