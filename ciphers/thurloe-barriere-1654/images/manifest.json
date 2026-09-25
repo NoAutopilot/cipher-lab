@@ -1,0 +1,15 @@
+{
+  "source": "archive.org, identifier collectionofstat02thur (Birch, A Collection of the State Papers of John Thurloe, vol. 2, 1742)",
+  "route": "archive.org/metadata/<id> -> files list -> <id>_page_numbers.json (leaf<->printed-page map) -> iiif.archive.org/iiif/<id>$<leaf>/full/full/0/default.jpg (302-redirects to the jp2-backed image host; curl -L follows it). No login needed (no access-restricted-item flag). Method per NOTES.md s.18 (LANE T worker I, 24 Sept 2026).",
+  "fetched": "25 Sept 2026",
+  "images": [
+    {"file": "collectionofstat02thur_leaf0693.jpg", "leaf": 693, "printed_page": 685, "shows": "Bordeaux to Chanut (end) / Barriere to the prince of Conde, London 30 Oct 1654 N.S. -- no cipher, plain English translation"},
+    {"file": "collectionofstat02thur_leaf0694.jpg", "leaf": 694, "printed_page": 686, "shows": "continuation of p.685's letters / Mr. Henry Oldenburg to the protector (start) -- confirms p.685 letter has no cipher spilling onto p.686"},
+    {"file": "collectionofstat02thur_leaf0698.jpg", "leaf": 698, "printed_page": 690, "shows": "The prince of Conde to the marquis of Barriere, camp at Hanmont, 1 Nov 1654 N.S. -- no cipher, plain English translation (mentions 'I have sent you another cypher according to your desire')"},
+    {"file": "collectionofstat02thur_leaf0699.jpg", "leaf": 699, "printed_page": 691, "shows": "continuation / Resolution of the states general, Mr. Bradshaw to Thurloe -- confirms p.690 letter has no cipher spilling onto p.691"},
+    {"file": "collectionofstat02thur_leaf0712.jpg", "leaf": 712, "printed_page": 704, "shows": "Prince Conde to Barriere (camp at St. Gery, 12 Nov 1654 N.S.) and President Viole to Barriere (undated, follows) -- both no cipher, plain English translation"},
+    {"file": "collectionofstat02thur_leaf0729.jpg", "leaf": 729, "printed_page": 721, "shows": "TARGET: Barriere to the prince of Conde, Londres 20 Nov 1654 N.S. -- French, numerals embedded inline in prose, scattered short italic interlinear gloss fragments under some (not all) numeral runs"},
+    {"file": "collectionofstat02thur_leaf0730.jpg", "leaf": 730, "printed_page": 722, "shows": "TARGET continued (end of letter, unsigned in print) / Cardinal Mazarin to Bordeaux / Intelligence from Stockholm / President Viole to Barriere (21 Nov 1654) / Charost to Bordeaux"}
+  ],
+  "requests": "archive.org/metadata 1, page_numbers.json 1, iiif.archive.org leaf images 7, all >=1.5s apart, descriptive User-Agent, no 403/429"
+}
