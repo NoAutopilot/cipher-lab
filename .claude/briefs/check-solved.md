@@ -64,3 +64,10 @@ Supplément), JC means Japikse's Correspondentie. Open the cited page and check 
 in clear (Groen printed 5200, 5218, 5222, 4503 and 5811 with their cipher passages deciphered; Japikse prints the
 deciphered insertions in spaced type, as in 8246). Lesson of 24 Sept 2026: three lanes captured and read five WVO
 letters that were already in print, because the harvest treated the source codes as "inferred".
+
+**Whole volume, not one page range (V7-CL349, 25 Sept 2026).** When an edition's full text is on disk (IA `_djvu.txt`),
+reading the pages where you expect the letter is not enough: grep the whole volume for the date (both o.s. and n.s.
+years, and the day +-1), the sender's and recipient's names and the place, and read every hit. YX-CS349 read Guise's
+*Mémoires-journaux* (Michaud-Poujoulat t.6) at pp.316-320 and wrote "not printed"; the letter is in clear at pp.238-239
+of the same volume, dated one day earlier. `tools/print_check.py`'s phrase search also missed it on OCR noise; a
+single-word grep found it.
