@@ -43,6 +43,14 @@ LANG_CORPORA = {
     "pt": [DATA / "pt17" / "vieira_cartas_tomoIV_1855.txt.gz", DATA / "pt17" / "vieira_cartas_1912.txt.gz"],
     "pt18": [DATA / "pt18" / "correiobrazilie00unkngoog.txt.gz", DATA / "pt18" / "correiobrazilie02unkngoog.txt.gz",
              DATA / "pt18" / "oinvestigadorpo03unkngoog.txt.gz", DATA / "pt18" / "oinvestigadorpo05unkngoog.txt.gz"],
+    # fr18 (25 Sept 2026, LANE ZX2 ZX2-FR18): French diplomatic/official prose c.1680-1790 -- Torcy's and
+    # Villars' memoirs, Mme de Maintenon's letters, La Gazette de France 1786 -- for this lane's French
+    # targets (clair1161, clairambault296, hellen-1752, destaing-gerard-1779), which are 100-200 years later
+    # than fr16 (fr's default, 16th-c.) and a different register than fr19 (19th-c. novels). See
+    # tools/data/fr18/README.md. "fr" stays the default; a spec opts in with "judge": {"language": "fr18", ...}.
+    "fr18": [DATA / "fr18" / "memoiresdemonsie01torc.txt.gz", DATA / "fr18" / "memoiresdemonsie02torc.txt.gz",
+             DATA / "fr18" / "mmoiresduducde01invill.txt.gz", DATA / "fr18" / "mmoiresduducde02vill.txt.gz",
+             DATA / "fr18" / "mmoiresetlettre01margoog.txt.gz", DATA / "fr18" / "lagazettedefran01unkngoog.txt.gz"],
     "es": [DATA / "es17" / "donquijote00cervuoft.txt.gz", DATA / "es17" / "vidadelbuscn01quevuoft.txt.gz"],
     "da19": [DATA / "da19" / "historisktidsskriftdk1s6.txt"],  # 1845 Historisk Tidsskrift, 1.04M letters (B2 bCPH, 25 Sept 2026); 19th-c. register
     "es17c": [DATA / "es17c" / "memorialhistri17realuoft.txt.gz", DATA / "es17c" / "memorialhistri18realuoft.txt.gz",
