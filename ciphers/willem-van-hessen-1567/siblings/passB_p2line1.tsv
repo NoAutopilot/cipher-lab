@@ -1,0 +1,29 @@
+pos	glyph_desc	gloss_letter	confidence
+# Blind pass B (subagent, 25 Sept 2026), independent read of siblings crop /tmp/wv69_render/p2_strip00.png,
+# first cipher row + its gloss only. Image not committed (scratch render); regenerate per NOTES.md OX-WV69 section.
+1	capital-H-with-crossbar	v? (possibly a flourish, not a letter)	low
+2	small-oval-loop	o	high
+3	larger-oval-loop	o (could be a)	medium
+4	f-shape-with-crossbar	m	high
+5	circle-with-Y-tail	i	high
+6	double-loop-no-crossbar	t	high
+7	backward-C-with-tick	g	high
+8	z-shape-with-flag	u? (could be a diacritic on the "t" shape)	low
+9	triple-vertical-crossbar	w	high
+10	circle-with-Y-tail (repeat of #5)	n?	low
+11	z-shape-with-flag (repeat of #8)	p?	medium
+12	x-shape	a?	medium
+13	double-post-crossbar (pi-like)	c?	medium
+14	double-I-barred	h?	medium
+15	cursive-R-loop	s?	medium
+16	long-T-crossbar	o	high
+17	simple-vertical-bar	illegible	low
+18	open-triangle-delta	b?	medium
+19	beta-loop	e?	medium
+20	p-shape-circle-tail	w	high
+21	script-f-hook	e?	medium
+22	cross-plus	r?	medium
+23	open-triangle-delta (repeat of #18)	d?	medium
+24	gg-ligature-part	u?	low
+25	alpha-tick-remnant	n?	low
+26	obscured near torn edge	g (word-final, before a period)	medium

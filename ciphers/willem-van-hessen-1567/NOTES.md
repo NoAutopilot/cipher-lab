@@ -180,3 +180,94 @@ copy status: **partial**, unchanged.
 
 Hosts this pass: resources.huygens.knaw.nl 2 record pages + 2 PDFs (curl, browser-contact UA, >=1.5s apart) + 3
 retroboeken viewer pages (`tools/browser_fetch.js`, >=1.5s apart). No other host used.
+
+## OX-WV69, 25 September 2026: 1069 -- glyph atlas started, two-blind-pass feasibility check, item 4/5
+
+Brief: `.claude/briefs/runs/2026-09-25-lane-ox-wv69.md`, asked to read "the whole cipher exemplaar of 1069
+with its interlinear decipherment" (p2-p4, ~61 line-pairs total by eye count: p2 ~24, p3 ~24, p4 ~13,
+confirmed by opening all three images this pass). That full read was **not completed** -- see the honest
+scope and handoff below, per COMMON rule 12 (conservative choice, logged, carry on).
+
+**1. Two-blind-pass feasibility check, p2 line 1 only.** Before committing to all ~61 line-pairs, ran the
+brief's own method (two independent Sonnet subagents, blind, `.claude/briefs/transcription.md`) on the one
+line already partly keyed (`key_1069.tsv`'s 10 signs, from OX-WVH's tight crop `crop_grumbachs.png`), using
+a wider strip crop (`/tmp/wv69_render/p2_strip00.png`, 400dpi local PDF re-render, not committed --
+regenerate with `pymupdf` at page index 1, dpi 400, or re-fetch `01069.pdf` from the manifest's `pdf_url`).
+Result: **below transcription.md's 60% gate** -- the two passes disagree on the glyph count on this one line
+(22 vs 26) and name different shapes for the letters they happen to agree on. Full tables in
+`passA_p2line1.tsv`/`passB_p2line1.tsv`, reconciliation and the specific disagreements in
+`reconcile_p2line1.md`. Per transcription.md's own rule ("if pass agreement is under 60%, stop and report
+the blocker; the next step is a glyph atlas, not a third pass"), that is what this pass does: **stops here**,
+rather than running a third whole-line pass or attempting p2's other 23 lines and p3-p4 with the same method.
+Four tentative letter candidates the two passes converged on loosely (b, e, w, r, all in the new word
+"...bewerdung", not previously read) are logged as unconfirmed in `key_1069_candidates.tsv` -- explicitly
+NOT added to `key_1069.tsv`, because two of the four reuse a shape-description already assigned to a
+*different* letter in the confirmed key (a "double-hump-w" shape already = u at M; a plain cross shape
+already close to c at H), a real ambiguity that needs a side-by-side crop, not a vote between two uncertain
+blind passes.
+
+**Why the method failed here specifically**: the original 10-sign key came from one *tight, multi-glyph*
+crop cut by hand at the ink (`crop_grumbachs.png`), not a full-row strip. A full-row strip crop, even at
+400dpi, puts each individual sign at low effective resolution once the strip is displayed, which is exactly
+the failure mode `.claude/briefs/transcription.md`'s "Symbol alphabets" paragraph and RETRO-2026-09-24
+proposal 4 describe for invented-sign pages: build a glyph atlas from tight per-glyph (or short multi-glyph)
+crops *first*, then transcribe against the atlas. That atlas-building step (segmenting ~61 lines' worth of
+invented signs into tight crops) is real image-processing work this session did not reach.
+
+**Glyph atlas started, not finished.** `glyphs_1069.tsv` reformats the 10 confirmed signs from
+`key_1069.tsv` into an atlas format (one row per distinct glyph shape, decoded letter, grade, crop
+reference) as the brief's item 1 asked, and adds two comparisons against 174's key (next point). It covers
+only those 10 signs -- p2's other ~23 lines and all of p3-p4 are not yet atlassed.
+
+**2. Sign-system comparison, 1069 vs 174 (brief item 4), extended.** Checked all 10 of 1069's confirmed
+signs against every entry in `key_174_nomenclator.tsv`'s 26-letter alphabet:
+- **Shared (same shape, same letter):** capital-X-cross = 'a' in both (one of 174's three homophones for a);
+  h-with-horizontal-bar = 'c' in both (174 also describes this exactly as "h-with-crossbar"). Two confirmed
+  matches out of 10.
+- **Shared shape, different letter (a real mismatch, not a match):** the Pi-like capital sign = 'h' in 1069
+  but = 'f' in 174's alphabet. Same invented glyph, different key assignment -- evidence the two documents
+  do NOT share the literal same key, even though they draw signs from a visually similar workshop repertoire
+  (both curvy/arbitrary rather than an alphabetical-run or geometric-arrow system).
+- **No match found in 174's 26-glyph alphabet at all:** t (H-crossbar), g (backward-C), r (dagger-crossbar),
+  u (w-shape), n (o-hook), p (yogh), s (R) -- 7 of 1069's 10 confirmed signs have no shape counterpart
+  anywhere in 174's list. Caveat: this is a 10-sign sample of 1069 against 174's full alphabet, not the
+  reverse -- 174 could still hold shapes matching 1069's later, unread signs.
+- Net: 2 confirmed shared signs, 1 confirmed different-key-same-shape, 7 no-match, on the sample available.
+  Consistent with OX-WVH's original qualitative finding ("same cryptographic tradition and design ... not
+  demonstrated to be the literal same key") but now with an actual count.
+
+**3. Item 5 (printed source check for 1069, WVO record page only).** Fetched `wvo_1069_record.html` directly
+(`resources.huygens.knaw.nl/wvo/app/brief?nr=1069`). Confirms OX-WVH's finding: Brongegevens lists only the
+two manuscript sources (HSAM minuut f.31r-32v, KHAG origineel B12,6), no "editie" row -- **no printed source
+for 1069 in WVO's own database.** One incidental find worth flagging for the verifier later: WVO's own
+Incipit field for 1069 gives the letter's opening plaintext line verbatim ("Wir haben E.L. schreibenn de
+dato Brussell den 13ten martij entpfangen gelesen") and its Inhoud field summarises the whole letter
+("Dankbetuiging voor toegezonden nieuwsberichten" -- thanks for forwarded news reports) -- this is WVO's own
+paraphrase/incipit of the minuut, not a "print" of the cipher passage itself, and not searched further
+(out of this brief's scope; a wider search is the verifier's job per rule 10).
+
+**4. Files produced, not requested by name in the brief but needed for rule 7:** `ciphertext_1069.tsv`,
+`reading_1069.txt`, `check_1069.py` (`--check` regenerates and diffs) cover **only the 10-sign confirmed
+fragment** ("...mi[t] Gr(u/m)(n/mb)ach(s)...", grades 6H/4M) -- explicitly labelled partial in both files.
+This is not "the whole cipher exemplaar" the brief asked for; see the handoff below for what remains.
+
+**Explicit handoff for a successor (page/line level):**
+- p2: line 1 has the 10-sign confirmed fragment above; its own remaining ~15 signs (the rest of "oo mit
+  Grumbachs oobewerdung") and lines 2-24 are unread.
+- p3, p4: entirely unread (p3 ~24 line-pairs, p4 ~13 line-pairs then the passage ends and p5-p6 return to
+  plain text).
+- Next concrete step, per the feasibility check above: build a glyph atlas from *tight* crops (cut by hand
+  or with a proper ink-based segmenter -- the ink-row-projection approach in this session's scratch
+  `segment_lines.py` failed on this manuscript because gloss and cipher lines touch with no clean vertical
+  gap; a column/connected-component segmenter, or manual eye-cropping the way `crop_grumbachs.png` was cut,
+  is needed instead), THEN run blind transcription passes against the atlas's glyph codes, per
+  transcription.md's "Symbol alphabets" paragraph. Budget: comparable invented-sign targets in this window
+  (clairambault1225-paget-1714, 13 crops across 2 letters) ran well past a $6-10 cap; a dedicated successor
+  should expect a cap in the $20-40 range for a real attempt at all ~61 line-pairs, not a $6 stall alarm.
+- Kind and status unchanged: **cryptanalysis (crib available)** for the target 1127; 1069 stays a sibling
+  key-source lead, itself still mostly unread. 1127's own copy-free blocker (REQUEST.md) is also unchanged.
+
+Hosts this pass: resources.huygens.knaw.nl 2 requests (1 PDF re-fetch of `01069.pdf` to render locally at
+400dpi since the committed 200dpi PNGs were too coarse for glyph-level work; 1 record-page fetch for item 5),
+both curl, browser-contact UA, >=1.5s apart. No other host. 2 Sonnet subagents (the two blind passes on p2
+line 1), well under the $6 stall-alarm cap even after both ran to completion.

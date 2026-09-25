@@ -1,0 +1,26 @@
+pos	glyph_desc	gloss_letter	confidence
+# Blind pass A (subagent, 25 Sept 2026), independent read of siblings crop /tmp/wv69_render/p2_strip00.png,
+# first cipher row + its gloss only. Image not committed (scratch render); regenerate per NOTES.md OX-WV69 section.
+1	double-vertical-bar-with-full-crossbar (H-like)	o	medium
+2	stacked-double-loop (cursive g-like)	o	medium
+3	hook-stem-with-basal-loop	o	medium
+4	oval-with-diagonal-flag	m	high
+5	small-loop	i	medium
+6	twin-vertical-bars (II)	r (could be t)	low
+7	open-hook-loop (backward-C + tick)	g	medium-high
+8	triple-prong-comb	u (could be n)	medium
+9	hook-Y-loop-tail	m	high
+10	vertical-triple-bar	p	medium
+11	x-cross	a	medium
+12	cross-with-descender	c	medium
+13	hook-ascender	h	high
+14	looped-hook-r-shape	s	medium
+15	plain-cross-T	o	medium-high
+16	single-vertical-stroke	o	medium
+17	closed-triangle	b	medium
+18	stacked-loop-figure8	e	low-medium
+19	double-hump-w-shape	w	medium-high
+20	open-hook-loop-2	e	low-medium
+21	cross-hook	r	medium
+22	closed-triangle-2	illegible (no ink found at 8x zoom)	-
+23+	page tear / torn top-right corner	illegible	-

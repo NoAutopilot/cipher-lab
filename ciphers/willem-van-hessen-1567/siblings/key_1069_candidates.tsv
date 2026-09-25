@@ -1,0 +1,9 @@
+value	sign_desc_A	sign_desc_B	support	status
+# Unconfirmed candidates from the two p2-line-1 blind passes (see reconcile_p2line1.md) -- NOT part of
+# key_1069.tsv, do not use for decoding. Both passes named a shape for this letter with >=medium confidence
+# on at least one side, in the same word-3 stretch ("...bewerdung"), but the passes disagree on the shape's
+# exact description and the letter has no independent H-grade confirmation from a tight crop.
+b	closed-triangle (pass A)	open-triangle-delta (pass B)	2/2 passes, medium	needs image-level crop check
+e	stacked-loop-figure8 (pass A)	beta-loop (pass B)	2/2 passes, low-medium	needs image-level crop check
+w	double-hump-w-shape (pass A)	p-shape-circle-tail (pass B)	2/2 passes, one high one medium	CONFLICT: "double-hump-w-shape" already = u at grade M in key_1069.tsv (sign 4) -- same shape name reused for a different letter, or the two glyphs only look similar in a low-res strip crop; do not merge without a side-by-side crop
+r	cross-hook (pass A)	cross-plus (pass B)	2/2 passes, medium	possible confusion with h-with-horizontal-bar=c (grade H in key_1069.tsv) -- crosses are a common shape family here, needs a crop check before use

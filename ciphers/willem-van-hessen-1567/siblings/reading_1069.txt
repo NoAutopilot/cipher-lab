@@ -1,0 +1,4 @@
+# briefnr 1069 (Willem van Hessen to Willem van Oranje, 23 Mar 1563), p2 line 1, confirmed fragment only -- 10 of an estimated 1000+ cipher signs across p2-p4 (see NOTES.md).
+# grade counts: {'H': 6, 'M': 4}
+raw decode: "tgrunpachs"
+reading: "...mi[t] Gr(u/m)(n/mb)ach(s)..." -- the fragment's first sign is the same "t" that ends "mit"; the rest spells (a form of) Grumbachs, Wilhelm von Grumbach.
