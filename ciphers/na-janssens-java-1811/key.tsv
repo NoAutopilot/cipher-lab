@@ -22,7 +22,7 @@ code	value	n	pages	grade	note
 146	mer	1	200	C	
 152	Sud	1	200	C	
 158	pointes	1	191	M	only a corrected/crossed-out cell seen
-168	;	1	191	C	
+168	;	1	191	M	"ambiguous: independent re-derivation (VX-RD02 cross-check) read ""j"" at the leaf 199/200 occurrences of this code (pass B agreed ""j"" there too, pass A said "";""); the leaf 191 occurrence (both passes, "";"") is the more solid one"
 172	Nord	1	200	C	
 186	ni	1	191	M	only a corrected/crossed-out cell seen
 190	est	4	190,191,199	M	ambiguous: est (n=2, pages=190,191); en (n=2, pages=199)
@@ -62,7 +62,7 @@ code	value	n	pages	grade	note
 496	navire	1	191	C	
 511	le	2	191,200	C	
 516	et	1	200	C	
-527	;	1	200	C	
+527	;	1	200	M	"ambiguous: leaf 200 occurrence clean "";""; leaf 199 occurrence both passes read ""j"" (pass A flagged uncertain) -- independent re-derivation also read ""j"" for this code, consistent with a real second value, not just pass A noise"
 529	nous	1	200	C	
 534	vent	1	200	M	only a corrected/crossed-out cell seen
 545	pour	1	200	C	

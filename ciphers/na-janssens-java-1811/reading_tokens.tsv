@@ -22,7 +22,7 @@ line	pos	sign	conf	value	grade
 2	10	472		e	C
 2	11	893		puis	C
 3	1	1014		?	U
-3	2	168		;	C
+3	2	168		;	M
 3	3	221		l'	C
 3	4	984		?	U
 3	5	99		n'	C
@@ -60,7 +60,7 @@ line	pos	sign	conf	value	grade
 6	3	403		?	U
 6	4	550		?	U
 6	5	594		reçu	C
-6	6	527		;	C
+6	6	527		;	M
 6	7	196		il	C
 6	8	333		?	U
 6	9	628		?	U

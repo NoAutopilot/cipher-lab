@@ -4,7 +4,7 @@
 # No.3 (leaves 199-200) -- a period decipherment of OTHER text in the same bundle, so
 # every keyed token grades C (rule 4); M where key.tsv itself flags the code ambiguous
 # or single-pass-only; [?] = code never seen in the key source.
-# tokens 163: H 0, C 46, S 0, M 19, I 0, U 98
+# tokens 163: H 0, C 44, S 0, M 21, I 0, U 98
 1	[79] [441] [497] [853] [1121] l' état [130] [1173] [573] [1027]
 2	de [1024] [403] est . [364] [456] [551] Sont e puis
 3	[1014] ; l' [984] n' [1021] [1039] [456] [1146] peu de

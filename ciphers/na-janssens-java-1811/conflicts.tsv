@@ -12,3 +12,5 @@ code	variants
 965	port (n=2, pages=190,191); porte (n=1, pages=199)
 1096	part (n=2, pages=191,199); par (n=1, pages=200)
 1195	est (n=2, pages=190,191); en (n=1, pages=200)
+168	; (n=1, pages=191); j (n=1, pages=199,200, pass A said ; at these positions -- found by fresh-instance re-derivation cross-check, see NOTES.md)
+527	; (n=1, pages=200); j (n=1, pages=199, pass A flagged uncertain -- found by fresh-instance re-derivation cross-check, see NOTES.md)

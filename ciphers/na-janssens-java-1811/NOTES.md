@@ -243,7 +243,8 @@ full blind pass on it; flagged here rather than silently presented as equally so
 Decoded with `tools/decode_key.py` + `decode.json` against `key.tsv`:
 
 ```
-tokens 163: H 0, C 46, S 0, M 19, I 0, U 98
+tokens 163: H 0, C 44, S 0, M 21, I 0, U 98   (updated after the fresh-instance re-derivation below
+                                                upgraded codes 168 and 527 from C to M; was C 46, M 19)
 ```
 
 Coverage: only **65/163 tokens (39.9%)**, **52/130 unique codes**, are codes also seen in the No.2/No.3
@@ -276,11 +277,50 @@ paraphrase honestly.
 
 ### Fresh-instance re-derivation
 
-Required by `.claude/briefs/runs/2026-09-25-lane-vx-rd02.md` before this can move past a working draft: a
-second subagent, given only `ciphertext.tsv`, the four key-source images and no other file, built its own
-key from scratch and decoded leaf 188 independently. Result pending at the time this section was written --
-see the addendum below (or a follow-up NOTES.md edit) for the agreement figures; if agreement is below the
-threshold the brief implies, this section's grades stand only provisionally.
+Required by `.claude/briefs/runs/2026-09-25-lane-vx-rd02.md`: a second subagent, given only
+`ciphertext.tsv`, the four key-source images (190/191/199/200) and no other repo file (not `key.tsv`, not
+this NOTES.md, not the pass TSVs), built its own key from scratch and decoded leaf 188 independently.
+
+Coverage: 66/163 tokens keyed (40.5%) vs this worker's 65/163 (39.9%, before the two fixes below) -- **near-
+identical coverage**, itself a strong signal the two independent reads found the same set of codes
+recoverable from the same source pages. Per-position comparison (`scripts/build_key.py`'s own reconciliation
+logic applied by hand to the two token sequences): of the 163 positions, both left **96 unkeyed** (agree on
+what cannot be read), one code this worker keyed the re-derivation left `[?]` and two the re-derivation keyed
+this worker left `[?]` (coverage differs by 1-2 tokens, not a structural gap), and of the **64 positions both
+keyed, 54 agree (84.4%)**.
+
+The 10 disagreements, all individually checked against `keysource_passA.tsv`/`keysource_passB.tsv`:
+- **(line 2, pos 4) est / en** -- code 190, the already-logged 190/1195 homophone conflict (`conflicts.tsv`); no action.
+- **(line 10, pos 11) part / par** -- code 1096, already logged in `conflicts.tsv`; no action.
+- **(line 12, pos 12) ennemie / ennemi** -- code 1128, a gender-spelling variant of the same word; no action.
+- **(line 4, pos 8) A / à** and **(line 10, pos 4) ât / à** -- codes 1090 and 875, already grade M
+  (875 explicitly "only a corrected/crossed-out cell seen"); the re-derivation's plain "à" is plausible but
+  not more authoritative than the existing grade -- no change.
+- **(line 2, pos 5) "." / Le** and **(line 2, pos 11) puis / sans**, **(line 10, pos 12) chargent / corvette**
+  -- codes 728, 893, 381: this worker's value is a clean **two-pass agreement** (`keysource_passA.tsv` and
+  `keysource_passB.tsv` both read the same word at the same source position -- see the grep in the commit
+  history), the re-derivation is one subagent's single read; kept as C, flagged here as the honest record of
+  a disagreement rather than silently resolved. (381 "chargent" is itself written after a correction in the
+  source per `keysource_passB.tsv`'s note "chargent." with a trailing period the reconciler dropped -- worth
+  a closer look by a future pass, not changed here since two passes independently agree with each other.)
+- **(line 3, pos 2) ; / j** and **(line 6, pos 6) ; / j** -- codes 168 and 527: checking
+  `keysource_passA.tsv`/`keysource_passB.tsv` directly found the re-derivation was right to flag these --
+  code 168's leaf 199/200 occurrences split pass A ";" / pass B "j" (a real two-pass disagreement this
+  worker's reconciler had silently dropped rather than surfaced, since disagreeing rows are excluded from
+  `key.tsv` and the code still had a clean single occurrence elsewhere, on leaf 191); code 527 has a clean
+  leaf 200 occurrence ";" and a leaf 199 occurrence both passes read "j" (pass A flagged it uncertain, which
+  routed it to the low-priority "shaky" bucket in `build_key.py` and hid a real second reading). **Fixed**:
+  both codes upgraded to grade M in `key.tsv` with the ambiguity spelled out in `note`; `reading.txt`/
+  `reading_tokens.tsv` regenerated (`tools/decode_key.py ciphers/na-janssens-java-1811`, now
+  `C 44, M 21, U 98`, `--check` exits 0); judge re-run, same verdict (FAIL language, same scores to 3dp --
+  the two changed tokens are both mid-gap and don't move the language-model score at this sample size).
+
+Net effect of the cross-check: two real gaps in the reconciliation script's conflict-detection found and
+fixed (168, 527 -- a class of bug worth knowing about: a code's *shaky/uncertain-flagged* occurrence was
+silently dropped rather than checked against the code's *clean* occurrence for disagreement, whenever the
+code also had at least one clean reading elsewhere); everything else in the 10 disagreements is either an
+already-logged M/conflict code or a two-pass-agreed C code the single-pass re-derivation didn't overturn.
+No difference beyond these is unresolved.
 
 ### Not found / next steps (one-line suggestions, out of this job's scope)
 
