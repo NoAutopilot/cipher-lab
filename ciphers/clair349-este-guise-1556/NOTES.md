@@ -985,3 +985,163 @@ precedent of not spawning subagents for crop/atlas steps).
 Files: `tools/iiif_lines.py` (new `--top-margin` option), `images/lines_g/line01.jpg`..`line33.jpg` (new),
 `images/manifest.json` (new entry), `images/lines/` (deleted, 33 files). Status stays `partial`. cost: see the lane
 ledger.
+
+**Step 2: two fresh blind passes, with a gloss column.** Two Sonnet subagents (the brief's cap of 2, run together),
+each given only `images/lines_g/line01.jpg`..`line33.jpg`, `images/atlas/sheet.jpg` and `images/atlas/atlas.tsv` --
+not each other, not `passC.tsv`/`passD.tsv`, not `key_alpha.tsv`/`key_nomen.tsv` -- with the brief's rules verbatim
+(z-curl = digit 2, never a separator; bar/slash = `|` word divider, its own token; every other mark an atlas code or
+`X?` with a description; keep S34/S69/S76 apart; small letters ABOVE a token go in a `gloss` column on that token's
+own row, blank if none, `?` if present but illegible; skip the BnF stamp and the "2429"/"3" archival numbers).
+Waited for each subagent's own completion report (not just file-on-disk existence -- checked live subagent status
+with the agent list before committing passF.tsv, since the file had already appeared on disk while the agent still
+showed `running`, exactly the ZX-349 trap) and verified the committed file's row/kind/grade/gloss counts against
+what each subagent's own report claimed before every commit.
+
+`passE.tsv`: 1101 tokens (560 digit / 361 sign / 111 X? / 69 divider; 70 H / 1031 M; 142 non-blank gloss).
+`passF.tsv`: 1019 tokens (549 digit / 257 sign / 119 X? / 94 divider; 355 H / 664 M; 58 non-blank gloss). Both
+subagents independently flagged short cursive fragments in several lines that read as plaintext-looking French
+words/phrases sitting in a larger, more fluent hand than the tiny digit-glosses (passE: lines 07/11/14/17/18/19/31/33;
+passF: recurring "qual sua"/"quel"/"fait"/"fau..." across several lines) -- both treated these as a third thing,
+neither cipher nor gloss, and recorded them as `X?` rather than invent a token kind the brief didn't define. This
+matches YX-TR349B/ZX-349/ZX-349B's earlier "plaintext fragment bleeding through" calls and ZX-KEY349's identification
+of the interlinear hand as a contemporary decipherment -- consistent with there being *two* distinct annotation
+layers above the code line (the small per-token gloss letter, and occasional larger marginal words), not one.
+
+**Step 3: reconciliation, gate, and gloss agreement.** `tools/reconcile_passes.py` had no notion of a `gloss` column
+(it recognises `sign`/`token`/`group`/`code` and `conf`/`confidence`, nothing else) -- per transcription.md/CLAUDE.md
+Usage item 8, added optional gloss support to the shared tool rather than a private script: `load_pass` now returns
+`(sign, flagged, gloss)` triples (gloss `''` where a pass has no `gloss` column, so every other target's existing
+invocation is byte-for-byte unaffected -- confirmed with `tools/tests/test_reconcile_passes.py`, both checks still
+pass); when any loaded pass has a `gloss` column, `ciphertext_draft.tsv` gains a `gloss` field (majority value per
+aligned column, blank where neither pass wrote one) and the run prints a separate gloss-agreement figure over
+columns where every pass had a token there and every one of them wrote a non-blank gloss.
+
+`python3 tools/reconcile_passes.py passE.tsv passF.tsv --crops images/lines_g --rows`:
+
+```
+line  A-signs  B-signs  agree  cols  share
+01  29  31  18  33  0.55
+02  38  26  14  41  0.34
+03  38  32  15  44  0.34
+04  25  30  13  33  0.39
+05  30  30  16  33  0.48
+06  38  37  16  40  0.40
+07  36  37  22  39  0.56
+08  32  31  20  34  0.59
+09  38  37  20  41  0.49
+10  34  34  18  40  0.45
+11  44  41  17  48  0.35
+12  33  28  11  36  0.31
+13  38  39  23  40  0.57
+14  33  36  20  37  0.54
+15  34  30  16  35  0.46
+16  31  34  17  37  0.46
+17  31  28  15  32  0.47
+18  32  30  15  34  0.44
+19  31  37  15  38  0.39
+20  29  27  11  32  0.34
+21  32  31  13  35  0.37
+22  31  32  16  35  0.46
+23  27  27  11  29  0.38
+24  35  31  12  37  0.32
+25  30  27  13  31  0.42
+26  34  30  15  37  0.41
+27  30  29  14  32  0.44
+28  33  30  19  36  0.53
+29  30  21  12  30  0.40
+30  33  27  10  34  0.29
+31  50  29  15  51  0.29
+32  34  29  13  34  0.38
+33  28  21  9  33  0.27
+lines 33  signs A 1101  B 1019  agree 504/1201 = 42.0%  (nw)
+disagreement columns 697; draft signs 1201, of which M 744
+gloss agreement (aligned columns where every pass wrote a gloss): 10/19 = 52.6%
+```
+
+**Gate call: FAILS.** 42.0% pooled, against the brief's 60% line and beside ZX-349's 39.3% (same 60% gate, the
+un-margined `images/lines`, no gloss column) -- the recut with the gloss band moved the number by +2.7 points, not
+past the gate. No line reaches 0.60; the best is line08 at 0.59, then line13 at 0.57. **Gloss agreement is worse
+than token agreement and rests on a tiny sample**: only 19 of 1201 aligned columns have both passes writing a
+non-blank gloss at all (most gloss cells are blank in one or both passes -- passE wrote 142 non-blank glosses,
+passF only 58, over 2218 pooled ciphertext tokens, i.e. each pass caught a gloss mark on roughly 5-14% of tokens,
+not "many" as the brief's own step 2 instruction assumed), and of those 19, only 10 agree on the letter (52.6%).
+This is consistent with ZX-KEY349's own account of reading the gloss: a careful, zoomed, native-resolution read of
+isolated hand-picked instances (about 20 checked in total, all agreeing with the key) -- not a full blind pass over
+compressed line-wide crops, which is what steps 2-3 here actually tested.
+
+`ciphertext_draft.tsv` (regenerated, both columns as the brief asks): header `line position sign gloss confidence
+alt why`; `sign` carries the brief's "token" (kept the tool's existing column name rather than rename it project-wide);
+`confidence` is H where the passes agree, M where the reconciler took the majority/one side, exactly as
+`disagreements.tsv`/`agreement.tsv` (regenerated, replacing the passC/passD-based versions) already documented for
+the sign column; the `gloss` column follows the same rule (H/M is not repeated per-gloss -- one confidence field per
+row, as the brief's phrasing implies by describing one combined row).
+
+**Step 4: key-vs-gloss consistency.** New script `key_vs_gloss.py` (target-specific, not a shared-tool candidate):
+for every column where both passes wrote the *same* non-blank gloss (the 10 agreed-gloss tokens from step 3, found
+by re-running the same alignment via `tools/reconcile_passes.py`'s own `load_pass`/`columns` functions rather than
+reimplementing alignment), compares that gloss against `key_alpha.tsv`/`key_nomen.tsv`'s value(s) for the column's
+consensus code, and writes `key_vs_gloss.tsv` (code, key_values, n_agreed_gloss_tokens, n_match, n_mismatch,
+match_share, example_mismatches).
+
+```
+code    key_values      n_agreed_gloss_tokens  n_match  n_mismatch  match_share
+104     V               2                      0        2           0.00   (both glossed 'u')
+10      (not in key)    1                      0        1           0.00
+115     (not in key)    1                      0        1           0.00
+12      A               1                      1        0           1.00
+167     (not in key)    1                      0        1           0.00
+23      (not in key)    1                      0        1           0.00
+S30     N               1                      0        1           0.00
+S37     T,fit           1                      0        1           0.00
+X       (not in key)    1                      0        1           0.00
+```
+
+Raw match rate 1/10 (10.0%). **Read with care, not at face value: the sample is 10 tokens.** One of the two
+"disagreeing more than once" instances (code 104, both passes glossed `u`) is very likely NOT a real conflict --
+104 is V's code (`key_alpha.tsv`), and LESSONS.md's own workflow section already names "French with u for v" as the
+standard period-spelling convention this project expects; crediting that convention, the true match rate on codes
+actually present in the key is 2/4 = 50% (12/A, and both 104/V-as-u instances), not 1/10 as the raw string compare
+shows. The other five mismatches (codes 10, 115, 167, 23, X) are pass-invented tokens not in `atlas.tsv`/the key at
+all -- a symptom of the same low pass-agreement step 3 already found, not new information about the key. S30 (key
+value N) glossed 'd' and S37 (key values T/fit) glossed 'po' are the two genuine, unexplained disagreements, each
+n=1 -- below the brief's "more than once" bar, so **no code disagrees with the key more than once** once the u/v
+convention is credited (with it uncredited, only code 104 clears that bar, and per the paragraph above that one
+case has a known, non-key-breaking explanation). This step does not resolve any key homograph and does not decode
+anything, per the brief.
+
+**Likeliest cause of the still-failing gate (brief's fallback for a FAIL).** Three candidate causes, not mutually
+exclusive: (1) **genuine cursive density**, unchanged from ZX-349's own diagnostic -- this hand is hard to
+segment and read blind regardless of margin or atlas; (2) **the atlas crops are single exemplars from the KEY
+leaf**, a different ink instance in a less cramped hand than the ciphertext's own run-on cursive, so a shape that
+is unambiguous on the key leaf can still be hard to match confidently against a similar-but-not-identical
+ciphertext stroke -- ZX-349B's finding that concrete ciphertext-side shapes (to-ligature, R-loop) matched the key
+only after this worker's own close, non-blind, targeted look, not a blind pass; (3) **new this session, not
+previously flagged: `images/lines_g` crops are 3895 px wide** (the full stitched line, following YX-TR349B's own
+stitching convention), well over `tools/iiif_lines.py`'s own `--max-width` default of 2400 and the "under the
+2500 px reading limit" convention CLAUDE.md's Access playbook names elsewhere for exactly this reason (a wider
+image risks the model's own image ingestion downscaling it, losing resolution on the smallest marks -- the tiny
+interlinear gloss letters most of all, consistent with each pass catching a gloss on only 5-14% of tokens despite
+ZX-KEY349 reading it clearly at native zoom on hand-picked instances). Untested this session (time budget); the
+next job could re-cut `lines_g` as the two native two-segment crops (`_s1`/`_s2`, each under 2500 px, each with
+the same `--top-margin`) instead of stitching them back into one wide image, and re-run steps 2-3 to see whether
+narrower crops raise either agreement figure before concluding the leaf itself is the limit.
+
+**Next job's line (gate failed, per the brief's fallback, not the pass-branch).** Do not decode yet. Try the
+narrower (un-stitched, <2500px) crop hypothesis above first, since it is cheap (recut + two passes, no new
+key-reading needed) and, if it moves the gate, avoids hand-settling `disagreements.tsv`'s ~700 columns against a
+leaf this hard to read blind; if it does not move the gate, hand-settle `disagreements.tsv` from the image (ZX-349's
+option (a), still not attempted) is the remaining path before any `tools/decode_key.py` run, fr16-corpus judge, or
+re-derivation.
+
+**Grades (rule 4):** no reading claimed this session -- steps 2-4 are transcription, reconciliation and a
+key-consistency check, not cryptanalysis; the interlinear gloss itself stays grade C (known plaintext, per
+ZX-KEY349) only where a human or a future careful non-blind pass actually reads it, not from this session's blind
+passes.
+
+**Hosts:** none (all from images already on disk). Subagents: 2 (the brief's cap), run together, Sonnet, step 2
+only.
+
+Files: `passE.tsv`, `passF.tsv` (new, this session's blind passes); `disagreements.tsv`, `ciphertext_draft.tsv`,
+`agreement.tsv` (regenerated from passE/passF, replacing the passC/passD-based versions); `key_vs_gloss.py` (new),
+`key_vs_gloss.tsv` (new); `tools/reconcile_passes.py` (new optional gloss-column support, tests still pass).
+Status stays `partial`. cost: see the lane ledger.

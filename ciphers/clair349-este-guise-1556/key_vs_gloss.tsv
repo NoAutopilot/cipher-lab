@@ -1,0 +1,10 @@
+code	key_values	n_agreed_gloss_tokens	n_match	n_mismatch	match_share	example_mismatches
+104	V	2	0	2	0.00	04:7 gloss='u' vs key=['V']; 17:1 gloss='u' vs key=['V']
+10	(not in key)	1	0	1	0.00	05:4 gloss='u' vs key=(code not in key)
+115	(not in key)	1	0	1	0.00	05:3 gloss='n' vs key=(code not in key)
+12	A	1	1	0	1.00	
+167	(not in key)	1	0	1	0.00	18:1 gloss='u' vs key=(code not in key)
+23	(not in key)	1	0	1	0.00	05:8 gloss='z' vs key=(code not in key)
+S30	N	1	0	1	0.00	04:6 gloss='d' vs key=['N']
+S37	T,fit	1	0	1	0.00	10:2 gloss='po' vs key=['T', 'fit']
+X	(not in key)	1	0	1	0.00	19:9 gloss='que' vs key=(code not in key)

@@ -1,1278 +1,1202 @@
-line	position	sign	confidence	alt	why
-01	1	X	M		agree-flagged
-01	2	6	H		agree
-01	3	S13	H		agree
-01	4	12	H		agree
-01	5	X	M	B:-	gap
-01	6	73	H		agree
-01	7	40	M	B:-	gap
-01	8	X	M		agree-flagged
-01	9	6	H		agree
-01	10	9	H		agree
-01	11	16	H		agree
-01	12	10	M	B:-	gap
-01	13	4	M	B:104	differ
-01	14	S02	M	B:S04	differ
-01	15	6	H		agree
-01	16	X	M	B:-	gap
-01	17	S23	M	B:-	gap
-01	18	X	M		agree-flagged
-01	19	5	H		agree
-01	20	16	M	B:-	gap
-01	21	5	M	B:S07	differ
-01	22	S20	H		agree
-01	23	6	H		agree
-01	24	X	M	B:-	gap
-01	25	X	M	B:-	gap
-01	26	X	M	B:-	gap
-01	27	X	M	B:S26	differ
-01	28	X	M		agree-flagged
-01	29	12	H		agree
-01	30	9	M	B:-	gap
-01	31	5	M	B:-	gap
-01	32	X	M	B:05	differ
-01	33	6	H		agree
-02	1	10	H		agree
-02	2	X	M	B:-	gap
-02	3	X	M	B:-	gap
-02	4	S08	M	B:-	gap
-02	5	11	M	B:-	gap
-02	6	X	M	B:S18	differ
-02	7	6	H		agree
-02	8	S23	H		agree
-02	9	9	H		agree
-02	10	40	M	B:X	differ
-02	11	S06	M	B:6	differ
-02	12	S20	H		agree
-02	13	X	M	B:-	gap
-02	14	6	H		agree
-02	15	X	M		agree-flagged
-02	16	9	H		agree
-02	17	X	M	B:-	gap
-02	18	S09	M	B:-	gap
-02	19	6	M	B:S07	differ
-02	20	4	M	B:10	differ
-02	21	11	M	B:5	differ
-02	22	S13	M	B:674	differ
-02	23	10	M	B:X	differ
-02	24	4	M	B:104	differ
-02	25	S24	M	B:X	differ
-02	26	X	M		agree-flagged
-02	27	6	H		agree
-02	28	S08	M	B:6	differ
-02	29	16	M	B:S07	differ
-02	30	X	M		agree-flagged
-02	31	5	M	B:-	gap
-02	32	104	M	B:9	differ
-02	33	S13	H		agree
-02	34	S21	M	B:-	gap
-02	35	X	M		agree-flagged
-02	36	S25	M	A:-	gap
-03	1	7	M	A:-	gap
-03	2	S13	M	A:-	gap
-03	3	6	H		agree
-03	4	X	M	B:-	gap
-03	5	X	M		agree-flagged
-03	6	22	M	B:2	differ
-03	7	X	M		agree-flagged
-03	8	X	M		agree-flagged
-03	9	40	M	B:-	gap
-03	10	X	M	B:6	differ
-03	11	64	M	B:4	differ
-03	12	S16	M	B:8	differ
-03	13	5	H		agree
-03	14	15	M	A:-	gap
-03	15	9	M	A:-	gap
-03	16	S11	M	A:-	gap
-03	17	6	M	A:-	gap
-03	18	X	M		agree-flagged
-03	19	5	M	A:-	gap
-03	20	16	H		agree
-03	21	9	H		agree
-03	22	X	M	B:-	gap
-03	23	6	H		agree
-03	24	S26	M	B:-	gap
-03	25	X	M	B:-	gap
-03	26	X	M	B:S20	differ
-03	27	S13	H		agree
-03	28	9	H		agree
-03	29	60	H		agree
-03	30	X	M		agree-flagged
-03	31	6	M	B:4	differ
-03	32	S13	H		agree
-03	33	4	H		agree
-03	34	S13	H		agree
-03	35	S09	M	B:X	differ
-03	36	X	M		agree-flagged
-03	37	5	H		agree
-03	38	X	M	A:-	gap
-03	39	14	H		agree
-03	40	S20	M	B:X	differ
-03	41	16	H		agree
-04	1	S23	M	B:-	gap
-04	2	6	M	B:-	gap
-04	3	8	M	B:S13	differ
-04	4	X	M		agree-flagged
-04	5	S24	M	B:-	gap
-04	6	X	M		agree-flagged
-04	7	5	M	A:-	gap
-04	8	104	H		agree
-04	9	X	M	B:5	differ
-04	10	6	H		agree
-04	11	S13	H		agree
-04	12	X	M		agree-flagged
-04	13	7	H		agree
-04	14	S20	H		agree
-04	15	5	H		agree
-04	16	16	H		agree
-04	17	S13	M	B:S12	differ
-04	18	14	H		agree
-04	19	64	H		agree
-04	20	S09	M	B:-	gap
-04	21	X	M		agree-flagged
-04	22	X	M		agree-flagged
-04	23	22	M	A:-	gap
-04	24	5	H		agree
-04	25	16	H		agree
-04	26	S06	M	B:X	differ
-04	27	S26	H		agree
-04	28	S02	M	B:-	gap
-04	29	6	M	B:-	gap
-04	30	X	M		agree-flagged
-04	31	S23	M	B:-	gap
-04	32	S09	M	B:-	gap
-04	33	5	M	B:-	gap
-04	34	X	M		agree-flagged
-04	35	6	M	B:60	differ
-04	36	S10	M	B:X	differ
-04	37	X	M		agree-flagged
-04	38	104	H		agree
-05	1	6	M	A:-	gap
-05	2	13	H		agree
-05	3	18	M	B:10	differ
-05	4	X	M		agree-flagged
-05	5	X	M	B:S24	differ
-05	6	S06	M	B:25	differ
-05	7	X	M		agree-flagged
-05	8	40	M	B:-	gap
-05	9	5	M	B:9	differ
-05	10	X	M		agree-flagged
-05	11	6	H		agree
-05	12	9	H		agree
-05	13	14	H		agree
-05	14	X	M		agree-flagged
-05	15	3	M	B:S20	differ
-05	16	X	M	B:1	differ
-05	17	S20	M	B:S01	differ
-05	18	S02	M	B:S17	differ
-05	19	X	M	B:6	differ
-05	20	64	M	B:S07	differ
-05	21	27	M	B:2	differ
-05	22	102	H		agree
-05	23	16	H		agree
-05	24	68	H		agree
-05	25	X	M	B:6	differ
-05	26	X	M		agree-flagged
-05	27	5	M	B:-	gap
-05	28	6	H		agree
-05	29	10	M	B:S07	differ
-05	30	X	M		agree-flagged
-05	31	012	M	A:-	gap
-05	32	7	H		agree
-05	33	9	M	B:-	gap
-05	34	27	M	B:-	gap
-05	35	X	M		agree-flagged
-05	36	6	H		agree
-05	37	X	M	B:-	gap
-06	1	S13	H		agree
-06	2	S09	M	B:S17	differ
-06	3	16	H		agree
-06	4	X	M		agree-flagged
-06	5	3	M	B:6	differ
-06	6	S06	M	B:S20	differ
-06	7	X	M		agree-flagged
-06	8	99	H		agree
-06	9	X	M	B:-	gap
-06	10	6	H		agree
-06	11	S09	M	B:-	gap
-06	12	X	M		agree-flagged
-06	13	S13	M	B:X	differ
-06	14	4	M	B:S07	differ
-06	15	4	M	B:44	differ
-06	16	40	M	B:X	differ
-06	17	S09	M	B:X	differ
-06	18	X	M		agree-flagged
-06	19	12	H		agree
-06	20	X	M	A:-	gap
-06	21	S13	H		agree
-06	22	16	M	B:19	differ
-06	23	X	M		agree-flagged
-06	24	5	H		agree
-06	25	X	M	B:-	gap
-06	26	6	H		agree
-06	27	13	H		agree
-06	28	S09	M	B:X	differ
-06	29	6	H		agree
-06	30	X	M	B:11	differ
-06	31	S24	M	B:S15	differ
-06	32	9	M	B:X	differ
-06	33	S13	M	B:16	differ
-06	34	X	M		agree-flagged
-06	35	S20	H		agree
-06	36	16	H		agree
-06	37	S13	H		agree
-06	38	S13	M	B:S12	differ
-07	1	5	M	B:8	differ
-07	2	X	M		agree-flagged
-07	3	40	M	B:-	gap
-07	4	9	H		agree
-07	5	16	H		agree
-07	6	S13	M	B:S23	differ
-07	7	X	M		agree-flagged
-07	8	S24	M	B:-	gap
-07	9	S02	M	B:X	differ
-07	10	X	M		agree-flagged
-07	11	11	M	B:S07	differ
-07	12	X	M		agree-flagged
-07	13	S18	M	A:-	gap
-07	14	6	H		agree
-07	15	15	M	A:-	gap
-07	16	16	H		agree
-07	17	S20	M	B:X	differ
-07	18	X	M		agree-flagged
-07	19	544	H		agree
-07	20	6	M	B:-	gap
-07	21	X	M	B:60	differ
-07	22	6	H		agree
-07	23	1	M	B:-	gap
-07	24	S09	M	B:15	differ
-07	25	X	M		agree-flagged
-07	26	S09	M	B:X	differ
-07	27	X	M		agree-flagged
-07	28	6	H		agree
-07	29	6	H		agree
-07	30	1	M	B:-	gap
-07	31	6	M	B:9	differ
-07	32	X	M	B:16	differ
-07	33	S24	M	B:S23	differ
-07	34	X	M		agree-flagged
-07	35	X	M		agree-flagged
-07	36	X	M	B:S15	differ
-07	37	11	M	B:S18	differ
-07	38	12	H		agree
-07	39	15	H		agree
-07	40	16	H		agree
-07	41	X	M	A:-	gap
-07	42	S26	M	A:-	gap
-07	43	60	M	A:-	gap
-07	44	X	M	A:-	gap
-07	45	9	M	A:-	gap
-07	46	X	M		agree-flagged
-08	1	S13	M	B:-	gap
-08	2	S24	M	B:7	differ
-08	3	44	M	B:S12	differ
-08	4	1	M	B:X	differ
-08	5	5	M	B:X	differ
-08	6	S13	M	B:44	differ
-08	7	1	M	B:15	differ
-08	8	X	M	B:S12	differ
-08	9	104	H		agree
-08	10	68	H		agree
-08	11	X	M	B:-	gap
-08	12	6	H		agree
-08	13	11	M	B:S18	differ
-08	14	6	H		agree
-08	15	X	M	B:-	gap
-08	16	15	H		agree
-08	17	S09	M	B:X	differ
-08	18	X	M		agree-flagged
-08	19	22	M	A:-	gap
-08	20	X	M		agree-flagged
-08	21	S02	M	B:S17	differ
-08	22	16	H		agree
-08	23	S20	M	B:-	gap
-08	24	X	M		agree-flagged
-08	25	6	H		agree
-08	26	S24	M	B:X	differ
-08	27	12	H		agree
-08	28	40	M	B:-	gap
-08	29	5	M	B:-	gap
-08	30	X	M		agree-flagged
-08	31	5	M	B:X	differ
-08	32	102	H		agree
-08	33	X	M		agree-flagged
-08	34	S04	M	B:X	differ
-08	35	12	H		agree
-08	36	60	H		agree
-08	37	S09	M	B:S12	differ
-09	1	104	H		agree
-09	2	S13	M	B:-	gap
-09	3	5	M	B:S23	differ
-09	4	649	M	B:5649	differ
-09	5	S09	M	B:X	differ
-09	6	X	M		agree-flagged
-09	7	S04	M	B:S23	differ
-09	8	60	H		agree
-09	9	5	M	B:-	gap
-09	10	X	M		agree-flagged
-09	11	S13	M	B:S12	differ
-09	12	16	H		agree
-09	13	X	M	B:-	gap
-09	14	40	M	B:-	gap
-09	15	X	M		agree-flagged
-09	16	6	H		agree
-09	17	5	M	B:X	differ
-09	18	16	H		agree
-09	19	11	H		agree
-09	20	S09	M	B:X	differ
-09	21	6	H		agree
-09	22	X	M		agree-flagged
-09	23	X	M		agree-flagged
-09	24	S20	M	B:-	gap
-09	25	14	H		agree
-09	26	X	M		agree-flagged
-09	27	5	M	B:-	gap
-09	28	X	M	B:8	differ
-09	29	9	H		agree
-09	30	14	H		agree
-09	31	S21	M	B:-	gap
-09	32	X	M	B:-	gap
-09	33	S13	M	B:S12	differ
-09	34	4	H		agree
-09	35	S12	M	A:-	gap
-09	36	S13	H		agree
-09	37	X	M	A:-	gap
-09	38	S06	M	B:X	differ
-09	39	16	H		agree
-09	40	5	M	B:-	gap
-09	41	X	M		agree-flagged
-09	42	6	H		agree
-10	1	S09	M	B:X	differ
-10	2	14	H		agree
-10	3	11	M	B:-	gap
-10	4	S09	M	B:X	differ
-10	5	X	M		agree-flagged
-10	6	1	M	A:-	gap
-10	7	40	M	B:64	differ
-10	8	X	M		agree-flagged
-10	9	S13	M	B:X	differ
-10	10	S20	M	B:S07	differ
-10	11	9	M	B:12	differ
-10	12	X	M		agree-flagged
-10	13	9	M	A:-	gap
-10	14	6	H		agree
-10	15	X	M		agree-flagged
-10	16	5	H		agree
-10	17	S09	M	B:X	differ
-10	18	16	H		agree
-10	19	X	M		agree-flagged
-10	20	60	M	A:-	gap
-10	21	S12	M	A:-	gap
-10	22	74	M	B:4	differ
-10	23	64	H		agree
-10	24	X	M	B:-	gap
-10	25	6	H		agree
-10	26	X	M		agree-flagged
-10	27	5	H		agree
-10	28	12	H		agree
-10	29	S24	M	B:S18	differ
-10	30	12	H		agree
-10	31	6	M	A:-	gap
-10	32	X	M		agree-flagged
-10	33	1	M	A:-	gap
-10	34	6	H		agree
-10	35	S02	M	B:-	gap
-10	36	16	M	B:-	gap
-10	37	11	M	B:15	differ
-10	38	98	M	B:95	differ
-10	39	X	M		agree-flagged
-10	40	S20	M	B:-	gap
-10	41	6	H		agree
-10	42	X	M	B:-	gap
-10	43	S13	M	B:4	differ
-10	44	X	M		agree-flagged
-10	45	5	M	B:-	gap
-11	1	X	M	B:-	gap
-11	2	X	M		agree-flagged
-11	3	X	M	B:S23	differ
-11	4	104	H		agree
-11	5	S09	M	B:X	differ
-11	6	16	H		agree
-11	7	S12	M	A:-	gap
-11	8	S13	M	B:X	differ
-11	9	X	M		agree-flagged
-11	10	S24	M	B:X	differ
-11	11	12	H		agree
-11	12	S01	M	B:X	differ
-11	13	14	H		agree
-11	14	10	M	B:-	gap
-11	15	X	M	B:102	differ
-11	16	X	M		agree-flagged
-11	17	S24	M	B:5	differ
-11	18	10	M	B:102	differ
-11	19	X	M		agree-flagged
-11	20	S13	M	B:-	gap
-11	21	16	M	B:X	differ
-11	22	164	H		agree
-11	23	X	M		agree-flagged
-11	24	8	H		agree
-11	25	X	M	B:-	gap
-11	26	9	H		agree
-11	27	12	H		agree
-11	28	S07	M	A:-	gap
-11	29	164	M	A:-	gap
-11	30	4	M	A:-	gap
-11	31	X	M	A:-	gap
-11	32	X	M	A:-	gap
-11	33	S21	M	B:X	differ
-11	34	16	H		agree
-11	35	10	M	A:-	gap
-11	36	4	M	A:-	gap
-11	37	4	M	A:-	gap
-11	38	S13	M	A:-	gap
-11	39	X	M	A:-	gap
-11	40	6	M	A:-	gap
-11	41	44	M	B:X	differ
-11	42	S24	M	B:X	differ
-11	43	X	M		agree-flagged
-11	44	S13	M	A:-	gap
-11	45	644	M	A:-	gap
-11	46	S04	H		agree
-11	47	102	M	A:-	gap
-11	48	44	M	A:-	gap
-11	49	64	M	A:-	gap
-11	50	14	M	A:-	gap
-11	51	X	M	A:-	gap
-11	52	10	M	B:8	differ
-11	53	X	M		agree-flagged
-11	54	4	M	B:X	differ
-11	55	44	M	B:X	differ
-11	56	S13	H		agree
-11	57	S12	M	A:-	gap
-11	58	9	M	A:-	gap
-11	59	X	M		agree-flagged
-11	60	S09	M	B:X	differ
-11	61	S20	M	B:S26	differ
-11	62	S13	M	B:X	differ
-12	1	8	M	A:-	gap
-12	2	64	M	A:-	gap
-12	3	X	M		agree-flagged
-12	4	8	M	B:-	gap
-12	5	6	M	B:S17	differ
-12	6	4	H		agree
-12	7	S13	M	B:-	gap
-12	8	S09	M	B:6	differ
-12	9	S01	M	B:X	differ
-12	10	4	H		agree
-12	11	X	M	B:-	gap
-12	12	6	H		agree
-12	13	S06	M	B:-	gap
-12	14	X	M		agree-flagged
-12	15	X	M		agree-flagged
-12	16	S20	M	B:-	gap
-12	17	S16	M	B:S07	differ
-12	18	S04	H		agree
-12	19	544	H		agree
-12	20	60	H		agree
-12	21	62	M	B:6	differ
-12	22	73	H		agree
-12	23	X	M	A:-	gap
-12	24	S20	M	B:9	differ
-12	25	12	H		agree
-12	26	54	M	A:-	gap
-12	27	4	M	B:6	differ
-12	28	X	M		agree-flagged
-12	29	104	M	A:-	gap
-12	30	6	H		agree
-12	31	X	M		agree-flagged
-12	32	104	M	B:-	gap
-12	33	X	M		agree-flagged
-12	34	9	M	A:-	gap
-12	35	S23	M	B:12	differ
-12	36	S24	M	B:54	differ
-12	37	8	M	B:6	differ
-12	38	S20	M	B:X	differ
-12	39	X	M		agree-flagged
-12	40	6	H		agree
-12	41	9	M	A:-	gap
-12	42	912	M	B:12	differ
-12	43	X	M		agree-flagged
-12	44	22	M	B:12	differ
-13	1	12	H		agree
-13	2	S06	M	B:-	gap
-13	3	S09	M	B:-	gap
-13	4	6	M	B:X	differ
-13	5	X	M		agree-flagged
-13	6	S13	M	B:S12	differ
-13	7	S20	M	B:X	differ
-13	8	514	M	B:S07	differ
-13	9	10	M	B:14	differ
-13	10	X	M		agree-flagged
-13	11	40	M	B:X	differ
-13	12	16	H		agree
-13	13	2	M	B:-	gap
-13	14	X	M		agree-flagged
-13	15	6	M	A:-	gap
-13	16	13	M	B:15	differ
-13	17	S09	M	B:X	differ
-13	18	6	M	B:16	differ
-13	19	S24	M	B:X	differ
-13	20	104	H		agree
-13	21	X	M		agree-flagged
-13	22	944	M	B:9447	differ
-13	23	7	M	B:619	differ
-13	24	618	M	B:X	differ
-13	25	X	M		agree-flagged
-13	26	S09	M	B:X	differ
-13	27	44	H		agree
-13	28	10	M	B:-	gap
-13	29	104	H		agree
-13	30	S09	M	B:-	gap
-13	31	X	M		agree-flagged
-13	32	6	M	A:-	gap
-13	33	S13	H		agree
-13	34	X	M		agree-flagged
-13	35	S06	M	B:-	gap
-13	36	9178	M	B:-	gap
-13	37	X	M		agree-flagged
-13	38	S07	M	A:-	gap
-13	39	4	M	B:9178	differ
-13	40	S13	H		agree
-14	1	X	M	A:-	gap
-14	2	60	M	A:-	gap
-14	3	3	M	B:X	differ
-14	4	S06	M	B:X	differ
-14	5	4	M	B:1	differ
-14	6	4	H		agree
-14	7	54	H		agree
-14	8	16	H		agree
-14	9	S20	M	B:X	differ
-14	10	82	M	B:8	differ
-14	11	X	M		agree-flagged
-14	12	S09	M	B:X	differ
-14	13	X	M		agree-flagged
-14	14	S07	M	A:-	gap
-14	15	S13	M	B:S12	differ
-14	16	12	H		agree
-14	17	60	H		agree
-14	18	S01	M	B:X	differ
-14	19	16	H		agree
-14	20	X	M	B:-	gap
-14	21	X	M		agree-flagged
-14	22	12	H		agree
-14	23	S13	M	B:6	differ
-14	24	15	H		agree
-14	25	S13	M	B:S12	differ
-14	26	60	H		agree
-14	27	X	M		agree-flagged
-14	28	S20	M	B:-	gap
-14	29	X	M		agree-flagged
-14	30	5	M	B:-	gap
-14	31	X	M		agree-flagged
-14	32	S07	M	A:-	gap
-14	33	14	H		agree
-14	34	10	M	B:-	gap
-14	35	X	M	B:100	differ
-14	36	60	H		agree
-14	37	S13	M	B:S12	differ
-14	38	16	H		agree
-14	39	S24	M	B:-	gap
-14	40	X	M		agree-flagged
-14	41	6	H		agree
-14	42	X	M	B:-	gap
-15	1	X	M	A:-	gap
-15	2	4	M	A:-	gap
-15	3	S16	M	B:S07	differ
-15	4	12	H		agree
-15	5	104	H		agree
-15	6	S01	M	B:X	differ
-15	7	S20	M	B:16	differ
-15	8	X	M		agree-flagged
-15	9	6	M	A:-	gap
-15	10	15	H		agree
-15	11	S09	M	B:-	gap
-15	12	X	M		agree-flagged
-15	13	6	H		agree
-15	14	S24	M	B:-	gap
-15	15	7	M	B:-	gap
-15	16	X	M		agree-flagged
-15	17	95	M	B:X	differ
-15	18	X	M		agree-flagged
-15	19	98	M	A:-	gap
-15	20	7	H		agree
-15	21	616	H		agree
-15	22	X	M		agree-flagged
-15	23	60	H		agree
-15	24	X	M	B:-	gap
-15	25	7	M	B:6	differ
-15	26	4	M	B:74	differ
-15	27	4	H		agree
-15	28	10	H		agree
-15	29	X	M	B:-	gap
-15	30	5	M	B:-	gap
-15	31	5	M	B:-	gap
-15	32	X	M	B:-	gap
-15	33	5	M	B:-	gap
-15	34	X	M	B:58	differ
-15	35	60	H		agree
-15	36	S13	M	B:-	gap
-15	37	S02	M	B:S04	differ
-15	38	S24	M	B:X	differ
-15	39	X	M		agree-flagged
-15	40	6	H		agree
-15	41	58	M	B:-	gap
-15	42	16	M	B:5816	differ
-15	43	S24	M	B:X	differ
-16	1	S01	M	B:-	gap
-16	2	6	M	B:S17	differ
-16	3	X	M		agree-flagged
-16	4	S16	M	B:6	differ
-16	5	10	M	B:S07	differ
-16	6	X	M	B:102	differ
-16	7	S13	M	B:S12	differ
-16	8	X	M		agree-flagged
-16	9	5	H		agree
-16	10	14	H		agree
-16	11	S24	M	B:X	differ
-16	12	S01	M	B:12	differ
-16	13	X	M		agree-flagged
-16	14	S09	M	B:-	gap
-16	15	60	H		agree
-16	16	S06	H		agree
-16	17	10	M	B:-	gap
-16	18	X	M	B:102	differ
-16	19	16	H		agree
-16	20	X	M		agree-flagged
-16	21	57	M	B:X	differ
-16	22	X	M		agree-flagged
-16	23	9	H		agree
-16	24	X	M	B:-	gap
-16	25	8	H		agree
-16	26	S24	M	B:S06	differ
-16	27	60	H		agree
-16	28	S13	M	B:-	gap
-16	29	X	M		agree-flagged
-16	30	X	M	B:12	differ
-16	31	6	H		agree
-16	32	4	M	B:-	gap
-16	33	15	M	B:11	differ
-16	34	16	H		agree
-16	35	X	M		agree-flagged
-16	36	S01	M	B:-	gap
-16	37	X	M		agree-flagged
-16	38	4	H		agree
-16	39	S24	M	B:-	gap
-17	1	104	H		agree
-17	2	64	H		agree
-17	3	S13	M	B:S04	differ
-17	4	916	H		agree
-17	5	S20	M	B:X	differ
-17	6	14	H		agree
-17	7	S24	M	B:16	differ
-17	8	S24	M	B:12	differ
-17	9	S09	M	B:15	differ
-17	10	X	M		agree-flagged
-17	11	S23	M	A:-	gap
-17	12	S24	M	B:X	differ
-17	13	S02	M	B:X	differ
-17	14	916	H		agree
-17	15	6	M	A:-	gap
-17	16	85	M	B:1	differ
-17	17	14	M	B:4	differ
-17	18	S13	H		agree
-17	19	S06	M	B:90	differ
-17	20	X	M		agree-flagged
-17	21	S24	M	B:-	gap
-17	22	S24	M	B:X	differ
-17	23	S24	M	B:X	differ
-17	24	X	M		agree-flagged
-17	25	S24	M	B:X	differ
-17	26	4	H		agree
-17	27	X	M	A:-	gap
-17	28	S13	M	B:X	differ
-17	29	S24	M	B:X	differ
-17	30	S24	M	B:X	differ
-17	31	S06	M	B:S12	differ
-17	32	S24	M	B:X	differ
-17	33	X	M		agree-flagged
-18	1	167	H		agree
-18	2	S24	M	B:X	differ
-18	3	S24	M	B:12	differ
-18	4	164	H		agree
-18	5	X	M	A:-	gap
-18	6	X	M	A:-	gap
-18	7	6	M	A:-	gap
-18	8	X	M	A:-	gap
-18	9	6	M	A:-	gap
-18	10	S12	M	A:-	gap
-18	11	X	M	A:-	gap
-18	12	S16	M	B:S26	differ
-18	13	S13	M	B:X	differ
-18	14	64	M	B:X	differ
-18	15	S13	M	B:S12	differ
-18	16	S06	M	B:X	differ
-18	17	S13	M	B:X	differ
-18	18	S24	M	B:X	differ
-18	19	S24	M	B:X	differ
-18	20	S24	M	B:X	differ
-18	21	S13	M	B:X	differ
-18	22	S02	M	B:4	differ
-18	23	16	M	B:X	differ
-18	24	104	M	B:6	differ
-18	25	S01	M	B:X	differ
-18	26	X	M		agree-flagged
-18	27	S07	M	A:-	gap
-18	28	744	H		agree
-18	29	88	M	A:-	gap
-18	30	8	M	B:X	differ
-18	31	S24	M	B:X	differ
-18	32	X	M		agree-flagged
-18	33	6	M	A:-	gap
-18	34	S06	M	B:12	differ
-18	35	S06	M	B:6	differ
-19	1	S01	M	B:S17	differ
-19	2	14	H		agree
-19	3	S09	M	B:-	gap
-19	4	X	M		agree-flagged
-19	5	8	M	A:-	gap
-19	6	5	M	B:15	differ
-19	7	S09	M	B:X	differ
-19	8	16	H		agree
-19	9	S01	M	B:-	gap
-19	10	S24	M	B:-	gap
-19	11	S24	M	B:-	gap
-19	12	S24	M	B:X	differ
-19	13	S16	M	B:X	differ
-19	14	5	H		agree
-19	15	S07	M	A:-	gap
-19	16	S06	M	B:X	differ
-19	17	S24	M	B:12	differ
-19	18	60	H		agree
-19	19	14	H		agree
-19	20	11	M	B:S18	differ
-19	21	S24	M	B:8	differ
-19	22	28	M	B:6	differ
-19	23	S13	H		agree
-19	24	S07	M	A:-	gap
-19	25	12	M	A:-	gap
-19	26	6	M	A:-	gap
-19	27	S07	M	A:-	gap
-19	28	S06	M	B:X	differ
-19	29	X	M		agree-flagged
-19	30	S07	M	A:-	gap
-19	31	12	M	A:-	gap
-19	32	6	H		agree
-19	33	S07	M	A:-	gap
-19	34	X	M	A:-	gap
-19	35	S16	M	B:X	differ
-19	36	S09	M	B:1	differ
-19	37	6	H		agree
-19	38	S13	M	B:-	gap
-19	39	S24	M	B:X	differ
-19	40	S24	M	B:X	differ
-19	41	X	M		agree-flagged
-19	42	6	H		agree
-19	43	60	H		agree
-19	44	6	M	A:-	gap
-19	45	S17	M	A:-	gap
-19	46	68	M	B:X	differ
-19	47	916	M	B:16	differ
-20	1	S24	M	B:X	differ
-20	2	6	H		agree
-20	3	X	M	B:1	differ
-20	4	104	M	B:S12	differ
-20	5	9	M	B:6	differ
-20	6	X	M		agree-flagged
-20	7	S24	M	B:-	gap
-20	8	14	H		agree
-20	9	15	H		agree
-20	10	9	H		agree
-20	11	6	M	A:-	gap
-20	12	X	M		agree-flagged
-20	13	6	M	B:7	differ
-20	14	S06	M	B:166	differ
-20	15	716	M	B:8	differ
-20	16	68	M	B:6	differ
-20	17	X	M		agree-flagged
-20	18	1610	M	A:-	gap
-20	19	S12	M	A:-	gap
-20	20	6	M	B:96	differ
-20	21	S24	M	B:X	differ
-20	22	1610	H		agree
-20	23	S13	M	B:S12	differ
-20	24	S20	M	B:S23	differ
-20	25	9	H		agree
-20	26	60	H		agree
-20	27	S01	M	B:X	differ
-20	28	14	H		agree
-20	29	58	H		agree
-20	30	X	M		agree-flagged
-20	31	S24	M	B:15	differ
-20	32	S13	M	B:X	differ
-20	33	S24	M	B:22	differ
-21	1	X	M	B:9	differ
-21	2	6	H		agree
-21	3	S16	M	B:S07	differ
-21	4	X	M	B:S12	differ
-21	5	6	H		agree
-21	6	17	H		agree
-21	7	16	H		agree
-21	8	S24	M	B:-	gap
-21	9	X	M		agree-flagged
-21	10	S06	M	B:-	gap
-21	11	S24	M	B:-	gap
-21	12	X	M	B:60	differ
-21	13	S04	H		agree
-21	14	S16	M	B:18	differ
-21	15	97	H		agree
-21	16	S12	M	A:-	gap
-21	17	4	M	A:-	gap
-21	18	S13	M	B:S23	differ
-21	19	9	H		agree
-21	20	60	H		agree
-21	21	S20	M	B:X	differ
-21	22	16	H		agree
-21	23	X	M	B:-	gap
-21	24	12	H		agree
-21	25	10	H		agree
-21	26	X	M	B:-	gap
-21	27	S01	M	B:-	gap
-21	28	S13	M	B:-	gap
-21	29	S01	M	B:S12	differ
-21	30	X	M		agree-flagged
-21	31	6	H		agree
-21	32	9	M	B:917	differ
-21	33	744	M	B:44	differ
-21	34	S23	H		agree
-22	1	6	M	A:-	gap
-22	2	X	M		agree-flagged
-22	3	S06	M	B:-	gap
-22	4	S24	M	B:-	gap
-22	5	16	H		agree
-22	6	S12	M	A:-	gap
-22	7	S13	M	B:X	differ
-22	8	4	H		agree
-22	9	S09	M	B:X	differ
-22	10	X	M		agree-flagged
-22	11	6	H		agree
-22	12	15	H		agree
-22	13	9	H		agree
-22	14	S13	M	B:-	gap
-22	15	S20	M	B:44	differ
-22	16	X	M		agree-flagged
-22	17	6	H		agree
-22	18	S23	H		agree
-22	19	S20	M	B:X	differ
-22	20	X	M		agree-flagged
-22	21	6	H		agree
-22	22	S09	M	B:-	gap
-22	23	X	M		agree-flagged
-22	24	8	M	A:-	gap
-22	25	104	H		agree
-22	26	S01	M	B:-	gap
-22	27	S24	M	B:X	differ
-22	28	X	M		agree-flagged
-22	29	6	M	A:-	gap
-22	30	X	M		agree-flagged
-22	31	5	M	A:-	gap
-22	32	X	M		agree-flagged
-22	33	6	H		agree
-22	34	S13	M	B:-	gap
-22	35	S02	M	B:S17	differ
-22	36	64	H		agree
-22	37	10	M	B:-	gap
-22	38	X	M	B:102	differ
-23	1	S24	M	B:-	gap
-23	2	S06	M	B:-	gap
-23	3	S16	M	B:608	differ
-23	4	X	M		agree-flagged
-23	5	4	H		agree
-23	6	14	H		agree
-23	7	73	M	B:S23	differ
-23	8	X	M		agree-flagged
-23	9	S24	M	B:617	differ
-23	10	S24	M	B:S07	differ
-23	11	44	M	B:S12	differ
-23	12	16	H		agree
-23	13	S23	H		agree
-23	14	60	H		agree
-23	15	X	M		agree-flagged
-23	16	6	M	A:-	gap
-23	17	6104	M	B:102	differ
-23	18	X	M	B:6	differ
-23	19	S06	M	B:S07	differ
-23	20	S13	H		agree
-23	21	S06	M	B:-	gap
-23	22	104	M	B:-	gap
-23	23	X	M	B:S07	differ
-23	24	64	M	B:102	differ
-23	25	S24	M	B:4	differ
-23	26	22	H		agree
-23	27	12	H		agree
-23	28	5104	M	B:102	differ
-23	29	S13	M	B:60	differ
-23	30	S24	M	B:X	differ
-23	31	S20	M	B:X	differ
-24	1	S04	H		agree
-24	2	S24	M	B:-	gap
-24	3	6	M	B:-	gap
-24	4	S13	M	B:-	gap
-24	5	X	M		agree-flagged
-24	6	S12	M	A:-	gap
-24	7	10	M	B:8	differ
-24	8	X	M	B:102	differ
-24	9	5	H		agree
-24	10	S01	M	B:X	differ
-24	11	10	M	B:1	differ
-24	12	X	M	B:6	differ
-24	13	X	M	B:6	differ
-24	14	15	H		agree
-24	15	S06	M	B:S07	differ
-24	16	X	M		agree-flagged
-24	17	6	M	B:-	gap
-24	18	S24	M	B:-	gap
-24	19	6	H		agree
-24	20	1	M	B:X	differ
-24	21	16	M	B:516	differ
-24	22	S06	M	B:X	differ
-24	23	5	H		agree
-24	24	X	M		agree-flagged
-24	25	6	H		agree
-24	26	S06	M	B:-	gap
-24	27	S24	M	B:S07	differ
-24	28	4	M	B:S18	differ
-24	29	S24	M	B:44	differ
-24	30	X	M		agree-flagged
-24	31	S24	M	B:-	gap
-24	32	5	H		agree
-24	33	15	M	A:-	gap
-24	34	X	M	A:-	gap
-24	35	S02	M	B:S07	differ
-24	36	S06	M	B:X	differ
-24	37	S24	M	B:X	differ
-24	38	S24	M	B:X	differ
-24	39	12	H		agree
-24	40	7	H		agree
-24	41	S16	M	B:-	gap
-24	42	40	M	B:X	differ
-24	43	14	H		agree
-25	1	S09	M	B:-	gap
-25	2	X	M		agree-flagged
-25	3	6	H		agree
-25	4	S24	M	B:15	differ
-25	5	60	H		agree
-25	6	S01	M	B:X	differ
-25	7	22	H		agree
-25	8	X	M	B:-	gap
-25	9	5	H		agree
-25	10	X	M	B:-	gap
-25	11	6	H		agree
-25	12	S24	H		agree
-25	13	16	H		agree
-25	14	S06	M	B:S07	differ
-25	15	14	M	B:12	differ
-25	16	X	M		agree-flagged
-25	17	S09	M	B:-	gap
-25	18	6	H		agree
-25	19	S01	M	B:-	gap
-25	20	S24	M	B:X	differ
-25	21	4	M	B:X	differ
-25	22	5	M	B:8	differ
-25	23	6	H		agree
-25	24	X	M	B:-	gap
-25	25	S13	M	B:S23	differ
-25	26	60	H		agree
-25	27	S06	M	B:-	gap
-25	28	S06	M	B:-	gap
-25	29	5	M	B:-	gap
-25	30	6	M	B:-	gap
-25	31	7	M	B:S07	differ
-25	32	4	M	B:X	differ
-25	33	S16	M	B:64	differ
-25	34	X	M	B:14	differ
-25	35	6	H		agree
-25	36	15	H		agree
-25	37	S24	M	B:X	differ
-25	38	S06	M	B:X	differ
-25	39	44	H		agree
-26	1	S04	M	B:-	gap
-26	2	S24	M	B:-	gap
-26	3	S06	M	B:62	differ
-26	4	S24	M	B:15	differ
-26	5	8	H		agree
-26	6	S09	M	B:-	gap
-26	7	14	H		agree
-26	8	1610	H		agree
-26	9	S13	M	B:-	gap
-26	10	S01	M	B:-	gap
-26	11	X	M		agree-flagged
-26	12	6	H		agree
-26	13	S20	M	B:X	differ
-26	14	S24	M	B:X	differ
-26	15	S16	M	B:X	differ
-26	16	S24	M	B:66	differ
-26	17	S04	H		agree
-26	18	S13	M	B:S12	differ
-26	19	60	H		agree
-26	20	S13	M	B:-	gap
-26	21	S24	M	B:-	gap
-26	22	S01	M	B:S12	differ
-26	23	4	M	B:16	differ
-26	24	S16	M	B:X	differ
-26	25	60	M	B:14	differ
-26	26	S24	M	B:X	differ
-26	27	S24	M	B:S07	differ
-26	28	S09	M	B:15	differ
-26	29	1516	M	B:16	differ
-26	30	S24	M	B:X	differ
-26	31	S13	M	B:S12	differ
-26	32	5	M	B:3	differ
-26	33	64	H		agree
-27	1	6	M	B:-	gap
-27	2	X	M	B:-	gap
-27	3	S24	M	B:-	gap
-27	4	14	H		agree
-27	5	31	M	B:-	gap
-27	6	43	M	B:102	differ
-27	7	10	M	B:16	differ
-27	8	X	M		agree-flagged
-27	9	S24	M	B:-	gap
-27	10	S01	M	B:-	gap
-27	11	S13	M	B:-	gap
-27	12	X	M		agree-flagged
-27	13	S04	H		agree
-27	14	S16	M	B:-	gap
-27	15	5	M	B:-	gap
-27	16	X	M		agree-flagged
-27	17	6	H		agree
-27	18	5	M	B:-	gap
-27	19	1	M	B:-	gap
-27	20	69	M	B:-	gap
-27	21	X	M	B:169	differ
-27	22	8	H		agree
-27	23	S04	H		agree
-27	24	S13	M	B:S12	differ
-27	25	16	H		agree
-27	26	S09	M	B:-	gap
-27	27	5	M	B:-	gap
-27	28	9	M	B:-	gap
-27	29	X	M		agree-flagged
-27	30	S01	M	B:12	differ
-27	31	S24	M	B:X	differ
-27	32	15	H		agree
-27	33	6	M	A:-	gap
-27	34	X	M		agree-flagged
-27	35	S09	M	B:S12	differ
-27	36	4	M	B:14	differ
-27	37	S24	M	B:X	differ
-27	38	60	H		agree
-27	39	X	M	B:-	gap
-27	40	6	H		agree
-28	1	S16	M	B:-	gap
-28	2	S13	M	B:16	differ
-28	3	X	M		agree-flagged
-28	4	9	H		agree
-28	5	X	M	B:-	gap
-28	6	6	H		agree
-28	7	S01	M	B:X	differ
-28	8	S23	H		agree
-28	9	16	H		agree
-28	10	S09	M	B:X	differ
-28	11	44	H		agree
-28	12	10	M	B:-	gap
-28	13	X	M	B:-	gap
-28	14	S06	M	B:102	differ
-28	15	6	H		agree
-28	16	X	M		agree-flagged
-28	17	S13	M	B:S04	differ
-28	18	28	H		agree
-28	19	64	H		agree
-28	20	S01	M	B:X	differ
-28	21	6	M	B:16	differ
-28	22	22	H		agree
-28	23	X	M	B:-	gap
-28	24	S09	M	B:-	gap
-28	25	5	H		agree
-28	26	104	H		agree
-28	27	X	M	B:-	gap
-28	28	6	H		agree
-28	29	S24	M	B:-	gap
-28	30	15	H		agree
-28	31	S06	M	B:60	differ
-28	32	S01	M	B:X	differ
-28	33	12	H		agree
-28	34	X	M	B:-	gap
-28	35	344	H		agree
-29	1	10	M	B:102	differ
-29	2	X	M		agree-flagged
-29	3	S09	M	B:-	gap
-29	4	S16	M	B:-	gap
-29	5	5	H		agree
-29	6	64	H		agree
-29	7	S24	M	B:X	differ
-29	8	S23	H		agree
-29	9	16	H		agree
-29	10	S09	M	B:S07	differ
-29	11	14	H		agree
-29	12	S24	M	B:-	gap
-29	13	88	M	B:-	gap
-29	14	S06	M	B:-	gap
-29	15	1	M	B:-	gap
-29	16	54	M	B:-	gap
-29	17	X	M		agree-flagged
-29	18	4	M	B:18	differ
-29	19	X	M	B:11	differ
-29	20	S06	M	B:14	differ
-29	21	X	M	B:4	differ
-29	22	5	H		agree
-29	23	6	M	A:-	gap
-29	24	X	M		agree-flagged
-29	25	6	H		agree
-29	26	S06	M	B:-	gap
-29	27	X	M	B:-	gap
-29	28	S24	M	B:60	differ
-29	29	S13	M	B:S07	differ
-29	30	X	M	B:S23	differ
-29	31	1615	M	B:16	differ
-29	32	S24	M	B:11	differ
-29	33	X	M		agree-flagged
-29	34	24	M	B:-	gap
-29	35	64	M	B:-	gap
-29	36	S24	M	B:14	differ
-29	37	6	H		agree
-29	38	X	M	B:S07	differ
-29	39	611	H		agree
-30	1	S13	M	B:-	gap
-30	2	S06	M	B:S23	differ
-30	3	12	H		agree
-30	4	68	M	B:-	gap
-30	5	16	M	B:-	gap
-30	6	S24	M	B:6816	differ
-30	7	5	M	B:X	differ
-30	8	60	H		agree
-30	9	S24	M	B:X	differ
-30	10	X	M		agree-flagged
-30	11	6	H		agree
-30	12	S24	M	B:S17	differ
-30	13	S13	M	B:6	differ
-30	14	7	M	B:4	differ
-30	15	16	M	B:X	differ
-30	16	S24	M	B:X	differ
-30	17	S04	H		agree
-30	18	S24	M	B:X	differ
-30	19	X	M		agree-flagged
-30	20	6	H		agree
-30	21	15	M	A:-	gap
-30	22	1519	M	B:9	differ
-30	23	S13	M	B:X	differ
-30	24	4	H		agree
-30	25	X	M	A:-	gap
-30	26	S01	M	B:16	differ
-30	27	10	M	B:S12	differ
-30	28	S13	M	B:X	differ
-30	29	S09	M	B:6411	differ
-30	30	S24	M	B:11	differ
-31	1	S13	M	B:S23	differ
-31	2	12	H		agree
-31	3	X	M	B:-	gap
-31	4	60	H		agree
-31	5	S13	M	B:-	gap
-31	6	S09	M	B:X	differ
-31	7	S24	M	B:6	differ
-31	8	S09	M	B:X	differ
-31	9	X	M		agree-flagged
-31	10	6	H		agree
-31	11	S24	M	B:X	differ
-31	12	S24	M	B:X	differ
-31	13	S01	M	B:X	differ
-31	14	6	H		agree
-31	15	S13	M	B:X	differ
-31	16	10	H		agree
-31	17	X	M	B:-	gap
-31	18	64	H		agree
-31	19	S24	M	B:S18	differ
-31	20	S24	M	B:6	differ
-31	21	S06	M	B:S26	differ
-31	22	9	H		agree
-31	23	S12	M	A:-	gap
-31	24	X	M	A:-	gap
-31	25	S24	M	B:9	differ
-31	26	6	M	B:X	differ
-31	27	S24	M	B:S12	differ
-31	28	S13	M	B:6	differ
-31	29	S06	M	B:X	differ
-31	30	S01	M	B:15	differ
-31	31	S06	M	B:16	differ
-32	1	S13	M	B:-	gap
-32	2	9	H		agree
-32	3	17	H		agree
-32	4	4	M	B:-	gap
-32	5	4	M	B:44	differ
-32	6	S16	M	B:S07	differ
-32	7	6	H		agree
-32	8	X	M	B:-	gap
-32	9	S13	M	B:S12	differ
-32	10	15	H		agree
-32	11	S24	M	B:3	differ
-32	12	S23	H		agree
-32	13	8	H		agree
-32	14	X	M		agree-flagged
-32	15	S24	M	B:X	differ
-32	16	S13	M	B:S12	differ
-32	17	S16	M	B:S07	differ
-32	18	S24	M	B:3	differ
-32	19	X	M	B:S12	differ
-32	20	6	H		agree
-32	21	X	M	A:-	gap
-32	22	S06	M	B:X	differ
-32	23	5	M	B:X	differ
-32	24	S13	M	B:X	differ
-32	25	7	M	B:X	differ
-32	26	9	M	B:66	differ
-32	27	X	M		agree-flagged
-32	28	S07	M	A:-	gap
-32	29	10	M	B:X	differ
-32	30	X	M		agree-flagged
-32	31	917	M	A:-	gap
-32	32	12	M	A:-	gap
-32	33	10	M	A:-	gap
-32	34	1699	M	B:66	differ
-32	35	18	H		agree
-32	36	S13	M	B:S23	differ
-32	37	95	H		agree
-32	38	7	M	B:-	gap
-32	39	616	M	B:-	gap
-32	40	S06	M	B:-	gap
-32	41	S24	M	B:7616	differ
-33	1	S24	M	B:-	gap
-33	2	S01	M	B:-	gap
-33	3	X	M		agree-flagged
-33	4	S17	M	A:-	gap
-33	5	9	M	B:6	differ
-33	6	S16	M	B:S17	differ
-33	7	16	H		agree
-33	8	06	M	A:-	gap
-33	9	96	M	B:62	differ
-33	10	X	M		agree-flagged
-33	11	S24	M	B:-	gap
-33	12	60	H		agree
-33	13	S13	M	B:-	gap
-33	14	10	M	B:S12	differ
-33	15	X	M	B:102	differ
-33	16	44	H		agree
-33	17	104	H		agree
-33	18	5	H		agree
-33	19	S01	M	B:X	differ
-33	20	X	M		agree-flagged
-33	21	3	M	A:-	gap
-33	22	64	H		agree
-33	23	S24	M	B:16	differ
-33	24	15	H		agree
-33	25	S13	M	B:-	gap
-33	26	S09	M	B:X	differ
-33	27	S13	M	B:S12	differ
-33	28	12	H		agree
-33	29	S01	M	B:60	differ
-33	30	X	M		agree-flagged
-33	31	6	H		agree
-33	32	S24	M	B:X	differ
+line	position	sign	gloss	confidence	alt	why
+01	1	6		H		agree
+01	2	S13	n	H		agree
+01	3	12	y	H		agree
+01	4	S79		M	A:-	gap
+01	5	73	z	H		agree
+01	6	S34	?	H		agree
+01	7	X		M	B:|	differ
+01	8	6		H		agree
+01	9	9		H		agree
+01	10	16		H		agree
+01	11	10		M	A:-	gap
+01	12	104	u	M	B:4	differ
+01	13	S27	-	H		agree
+01	14	6	?	H		agree
+01	15	X		M	B:|	differ
+01	16	S23		M	B:5	differ
+01	17	|		H		agree
+01	18	5	f	H		agree
+01	19	16	e	H		agree
+01	20	15		M	B:-	gap
+01	21	S33	z	M	B:S40	differ
+01	22	6	?	H		agree
+01	23	X		M	B:|	differ
+01	24	X	qual	M		agree-flagged
+01	25	S51		M	B:-	gap
+01	26	|		H		agree
+01	27	12	a	H		agree
+01	28	X		M	A:-	gap
+01	29	S44		M	A:-	gap
+01	30	9	p	M	B:S21	differ
+01	31	5	e	M	B:05	differ
+01	32	X		M	B:|	differ
+01	33	6		H		agree
+02	1	102		M	B:-	gap
+02	2	|	m	H		agree
+02	3	S29	m	H		agree
+02	4	|		M	A:-	gap
+02	5	6	c	M	A:-	gap
+02	6	26		M	B:S13	differ
+02	7	9	?	H		agree
+02	8	S69	z	H		agree
+02	9	60		M	B:-	gap
+02	10	S33		M	B:-	gap
+02	11	X		M		agree-flagged
+02	12	|		M	A:-	gap
+02	13	6		H		agree
+02	14	|	?	H		agree
+02	15	9	u	M	B:-	gap
+02	16	10	u	H		agree
+02	17	X		M	B:-	gap
+02	18	|		H		agree
+02	19	7	u	M	B:-	gap
+02	20	6		M	B:-	gap
+02	21	4		M	B:-	gap
+02	22	11	n	M	B:|	differ
+02	23	S13		M	B:S79	differ
+02	24	104	?	M	B:64	differ
+02	25	S30	n	H		agree
+02	26	60		M	B:-	gap
+02	27	S33		M	B:-	gap
+02	28	X		M	B:-	gap
+02	29	6		H		agree
+02	30	S28		M	B:S19	differ
+02	31	S29	?	M	B:|	differ
+02	32	6	?	H		agree
+02	33	9		M	B:-	gap
+02	34	|		M	B:-	gap
+02	35	5	u	M	B:S28	differ
+02	36	104	u	H		agree
+02	37	|		H		agree
+02	38	S13	p	M	B:-	gap
+02	39	X	a	M	B:-	gap
+02	40	X		M	B:S44	differ
+02	41	X		M	B:12	differ
+03	1	S27		M	B:-	gap
+03	2	4		M	B:-	gap
+03	3	0		M	B:-	gap
+03	4	X		M		agree-flagged
+03	5	|		M	B:-	gap
+03	6	22		H		agree
+03	7	X		M	B:-	gap
+03	8	|		H		agree
+03	9	S34	z	M	A:-	gap
+03	10	6		M	B:|	differ
+03	11	S13		M	B:64	differ
+03	12	X		M	B:S63	differ
+03	13	X		M		agree-flagged
+03	14	S40		M	B:|	differ
+03	15	11	n	H		agree
+03	16	9		M	B:-	gap
+03	17	S33		M	B:-	gap
+03	18	X		M	B:-	gap
+03	19	6		M	B:61	differ
+03	20	|		H		agree
+03	21	9		M	A:-	gap
+03	22	5		H		agree
+03	23	1		M	A:-	gap
+03	24	16		M	B:6	differ
+03	25	9		H		agree
+03	26	X		M		agree-flagged
+03	27	6		M	B:|	differ
+03	28	S13		H		agree
+03	29	9	o	H		agree
+03	30	60		M	B:-	gap
+03	31	S44		M	B:-	gap
+03	32	64		M	B:-	gap
+03	33	S13		M	B:-	gap
+03	34	4		M	B:X	differ
+03	35	05		M	B:X	differ
+03	36	|		H		agree
+03	37	5		H		agree
+03	38	|		H		agree
+03	39	1		M	A:-	gap
+03	40	4		M	A:-	gap
+03	41	S44		M	A:-	gap
+03	42	14	z	M	B:12	differ
+03	43	S69		M	B:S34	differ
+03	44	16		H		agree
+04	1	S23		M	B:-	gap
+04	2	S44	p	M	B:-	gap
+04	3	8	o	M	B:-	gap
+04	4	X	n	M		agree-flagged
+04	5	|		M	A:-	gap
+04	6	S30	d	H		agree
+04	7	104	u	H		agree
+04	8	52	z	M	B:|	differ
+04	9	6		H		agree
+04	10	S13	e	H		agree
+04	11	|		M	A:-	gap
+04	12	S40		M	A:-	gap
+04	13	5		M	A:-	gap
+04	14	16		M	A:-	gap
+04	15	S33	o	M	B:S54	differ
+04	16	516	c	M	B:0	differ
+04	17	S23	z	M	B:S13	differ
+04	18	14	a	H		agree
+04	19	64	z	H		agree
+04	20	X		M	A:-	gap
+04	21	S37	s	M	B:|	differ
+04	22	22		H		agree
+04	23	5		M	A:-	gap
+04	24	16	dv	M	B:6	differ
+04	25	X	qual	M	B:S44	differ
+04	26	62		H		agree
+04	27	S23		M	B:S13	differ
+04	28	S37	z	H		agree
+04	29	60		H		agree
+04	30	S13		M	B:S38	differ
+04	31	|		H		agree
+04	32	104		H		agree
+04	33	S64		M	A:-	gap
+05	1	S21	z	M	A:-	gap
+05	2	26	z	M	B:6	differ
+05	3	115	n	M	B:15	differ
+05	4	10	u	H		agree
+05	5	X		M	B:-	gap
+05	6	|		H		agree
+05	7	13	z	M	B:-	gap
+05	8	23	z	M	B:S44	differ
+05	9	S34	9	H		agree
+05	10	9		M	B:-	gap
+05	11	26	z	H		agree
+05	12	9		H		agree
+05	13	14	a	H		agree
+05	14	|		M	B:1	differ
+05	15	8		M	B:S44	differ
+05	16	12		M	B:|	differ
+05	17	S33		M	B:X	differ
+05	18	S27		H		agree
+05	19	|		M	A:-	gap
+05	20	64		H		agree
+05	21	27	z	M	B:X	differ
+05	22	102	u	H		agree
+05	23	16		H		agree
+05	24	68		H		agree
+05	25	62		H		agree
+05	26	S21		M	A:-	gap
+05	27	S51		M	B:5	differ
+05	28	|		H		agree
+05	29	60		M	B:601	differ
+05	30	12	a	M	B:2	differ
+05	31	7		H		agree
+05	32	|		H		agree
+05	33	26		H		agree
+06	1	S23		M	B:S13	differ
+06	2	S46	e	M	B:X	differ
+06	3	16		H		agree
+06	4	|		H		agree
+06	5	23	z	M	B:-	gap
+06	6	1		M	B:-	gap
+06	7	S13	0	M	B:3	differ
+06	8	60	2	M	B:X	differ
+06	9	S40		M	B:69	differ
+06	10	|		H		agree
+06	11	69		M	B:-	gap
+06	12	26		M	B:9	differ
+06	13	S30		M	B:X	differ
+06	14	|		H		agree
+06	15	S54		H		agree
+06	16	4		M	A:-	gap
+06	17	44		M	B:4	differ
+06	18	S34		H		agree
+06	19	S37		H		agree
+06	20	|		H		agree
+06	21	12	a	H		agree
+06	22	S45		M	B:5	differ
+06	23	S50		M	B:X	differ
+06	24	S13		H		agree
+06	25	16		H		agree
+06	26	|		H		agree
+06	27	26	9	H		agree
+06	28	S13		M	A:-	gap
+06	29	15		M	B:1	differ
+06	30	S37		M	B:X	differ
+06	31	6		M	B:62	differ
+06	32	11		M	B:X	differ
+06	33	S33		M	B:S40	differ
+06	34	10		M	B:16	differ
+06	35	|		H		agree
+06	36	X	qual	M	B:S79	differ
+06	37	S16		M	B:5	differ
+06	38	16		H		agree
+06	39	S13		H		agree
+06	40	X		M	B:S13	differ
+07	1	82	0	M	B:5	differ
+07	2	X		M	B:|	differ
+07	3	S34	z	H		agree
+07	4	9		H		agree
+07	5	16		H		agree
+07	6	S23		M	B:S13	differ
+07	7	|		H		agree
+07	8	X	n	M	B:-	gap
+07	9	S51		M	B:5	differ
+07	10	|		H		agree
+07	11	S29	m	H		agree
+07	12	X		M	B:|	differ
+07	13	6		H		agree
+07	14	15		H		agree
+07	15	16		H		agree
+07	16	S33		M	B:S40	differ
+07	17	|		H		agree
+07	18	S51		M	B:S21	differ
+07	19	544		H		agree
+07	20	6		M	A:-	gap
+07	21	602		M	B:02	differ
+07	22	61		H		agree
+07	23	5		M	B:-	gap
+07	24	S37		H		agree
+07	25	|		H		agree
+07	26	S37		H		agree
+07	27	|		M	A:-	gap
+07	28	26		H		agree
+07	29	6		M	A:-	gap
+07	30	68		M	B:S27	differ
+07	31	16		H		agree
+07	32	S23		M	B:S13	differ
+07	33	/		M	B:|	differ
+07	34	X	que commande	M		agree-flagged
+07	35	X		M	B:S21	differ
+07	36	S29		H		agree
+07	37	12		H		agree
+07	38	15		H		agree
+07	39	16		H		agree
+08	1	77		H		agree
+08	2	|		M	A:-	gap
+08	3	/		M	B:X	differ
+08	4	S44		M	B:62	differ
+08	5	63		M	B:S13	differ
+08	6	S30	n	H		agree
+08	7	44	n	H		agree
+08	8	X		M	B:S21	differ
+08	9	16		H		agree
+08	10	10		M	A:-	gap
+08	11	104		M	B:4	differ
+08	12	68		M	B:65	differ
+08	13	26		H		agree
+08	14	S29		H		agree
+08	15	6		H		agree
+08	16	215		H		agree
+08	17	S37		H		agree
+08	18	|		H		agree
+08	19	X		M		agree-flagged
+08	20	|		H		agree
+08	21	S27		H		agree
+08	22	16		H		agree
+08	23	S15		M	B:-	gap
+08	24	S33		M	B:-	gap
+08	25	26		H		agree
+08	26	S28		M	B:-	gap
+08	27	12		H		agree
+08	28	S34		H		agree
+08	29	|		H		agree
+08	30	5102	5	M	B:102	differ
+08	31	|		H		agree
+08	32	X		M		agree-flagged
+08	33	1260		M	B:12	differ
+08	34	S37		M	B:60	differ
+09	1	|		M	A:-	gap
+09	2	5104	a	H		agree
+09	3	7		M	B:-	gap
+09	4	S13		H		agree
+09	5	5		H		agree
+09	6	64		M	A:-	gap
+09	7	649		M	B:9	differ
+09	8	S38		H		agree
+09	9	|		H		agree
+09	10	X		M	B:S13	differ
+09	11	605		H		agree
+09	12	|		H		agree
+09	13	S54		M	B:S21	differ
+09	14	16		H		agree
+09	15	S13		M	B:X	differ
+09	16	S34		H		agree
+09	17	X		M	B:-	gap
+09	18	9		M	B:26	differ
+09	19	S51		M	B:5	differ
+09	20	16		H		agree
+09	21	11		M	B:115	differ
+09	22	S37		H		agree
+09	23	6		M	B:-	gap
+09	24	X		M	B:62	differ
+09	25	|		H		agree
+09	26	S33		M	B:S40	differ
+09	27	14		H		agree
+09	28	S13	5a	M	A:-	gap
+09	29	|		H		agree
+09	30	52		M	B:-	gap
+09	31	9		H		agree
+09	32	14		H		agree
+09	33	S54		M	B:S21	differ
+09	34	24	7	H		agree
+09	35	S13		M	B:S12	differ
+09	36	S13		H		agree
+09	37	X		M		agree-flagged
+09	38	|		H		agree
+09	39	5		M	B:16	differ
+09	40	1652		M	B:62	differ
+09	41	6		M	B:61	differ
+10	1	|		M	B:-	gap
+10	2	S37	po	H		agree
+10	3	1		M	A:-	gap
+10	4	S13		M	B:4	differ
+10	5	S40		M	B:X	differ
+10	6	S38	i	H		agree
+10	7	6		H		agree
+10	8	S34		H		agree
+10	9	|		H		agree
+10	10	3		M	A:-	gap
+10	11	X		M	A:-	gap
+10	12	12		H		agree
+10	13	S33		M	B:-	gap
+10	14	|		M	B:X	differ
+10	15	26		H		agree
+10	16	S51		M	B:-	gap
+10	17	5		M	B:S21	differ
+10	18	S37		H		agree
+10	19	16		H		agree
+10	20	102		H		agree
+10	21	S13		M	B:-	gap
+10	22	4		M	B:24	differ
+10	23	64		H		agree
+10	24	X		M	B:-	gap
+10	25	6		M	B:26	differ
+10	26	|		H		agree
+10	27	512		H		agree
+10	28	S29		H		agree
+10	29	26		H		agree
+10	30	S54		M	B:S21	differ
+10	31	16		H		agree
+10	32	115		M	A:-	gap
+10	33	1		M	B:98	differ
+10	34	95		M	B:|	differ
+10	35	X		M		agree-flagged
+10	36	S33		M	B:-	gap
+10	37	62		H		agree
+10	38	S21		M	A:-	gap
+10	39	|		M	A:-	gap
+10	40	S13		M	B:5	differ
+11	1	22	po	H		agree
+11	2	S37	tc	H		agree
+11	3	52		M	B:-	gap
+11	4	104	u	M	B:X	differ
+11	5	S13		H		agree
+11	6	S38		H		agree
+11	7	X	bonate	M	B:104	differ
+11	8	S44	a	M	B:S24	differ
+11	9	12		H		agree
+11	10	S27		M	B:X	differ
+11	11	14	a	H		agree
+11	12	S38		M	B:-	gap
+11	13	16		M	B:-	gap
+11	14	S54		M	B:102	differ
+11	15	|		H		agree
+11	16	52	a	M	B:-	gap
+11	17	102	u	M	B:251	differ
+11	18	S13		H		agree
+11	19	S38		M	A:-	gap
+11	20	S34		H		agree
+11	21	16		H		agree
+11	22	S54		M	B:S13	differ
+11	23	|		H		agree
+11	24	82		H		agree
+11	25	912	ca	M	B:-	gap
+11	26	S54		M	B:-	gap
+11	27	16		M	B:-	gap
+11	28	44		M	B:9	differ
+11	29	1	u	M	B:12	differ
+11	30	4		M	B:016	differ
+11	31	102		H		agree
+11	32	44		H		agree
+11	33	X		M		agree-flagged
+11	34	|		M	A:-	gap
+11	35	S04		M	A:-	gap
+11	36	S54		M	B:102	differ
+11	37	18		M	B:S21	differ
+11	38	15		M	B:X	differ
+11	39	S23	a	M	B:S13	differ
+11	40	/		M	B:9	differ
+11	41	S04		M	B:244	differ
+11	42	102		M	B:641	differ
+11	43	44		M	B:4	differ
+11	44	6414		M	B:15	differ
+11	45	S38		H		agree
+11	46	104	z	M	A:-	gap
+11	47	S44		M	B:S19	differ
+11	48	82		H		agree
+12	1	78	a	M	B:-	gap
+12	2	64		M	B:4	differ
+12	3	S38		H		agree
+12	4	S27	i	M	B:X	differ
+12	5	14		M	B:24	differ
+12	6	26		M	B:269	differ
+12	7	602		M	B:X	differ
+12	8	|		H		agree
+12	9	X	qui	M	B:S79	differ
+12	10	S51		M	B:S21	differ
+12	11	S04		H		agree
+12	12	S21		M	A:-	gap
+12	13	544		H		agree
+12	14	60		H		agree
+12	15	62		M	A:-	gap
+12	16	6273		M	B:73	differ
+12	17	S40		H		agree
+12	18	X		M		agree-flagged
+12	19	12		M	A:-	gap
+12	20	S13		M	B:24	differ
+12	21	S13	pa	M	B:6	differ
+12	22	1246		M	B:|	differ
+12	23	8	pa	H		agree
+12	24	S37		M	B:-	gap
+12	25	104		M	B:-	gap
+12	26	62		M	B:-	gap
+12	27	S23		M	B:-	gap
+12	28	|		M	B:-	gap
+12	29	X		M		agree-flagged
+12	30	73		M	B:-	gap
+12	31	S40		M	B:-	gap
+12	32	12		H		agree
+12	33	94		M	B:269	differ
+12	34	9		M	B:12	differ
+12	35	62		M	B:|	differ
+12	36	12		H		agree
+13	1	12		H		agree
+13	2	S54		M	B:S13	differ
+13	3	S34		H		agree
+13	4	62		H		agree
+13	5	S13		H		agree
+13	6	S33	p	M	B:-	gap
+13	7	19		M	B:S44	differ
+13	8	1		M	B:S79	differ
+13	9	S51		M	B:5	differ
+13	10	14		H		agree
+13	11	102		H		agree
+13	12	S34		M	B:S76	differ
+13	13	16		H		agree
+13	14	32		M	B:23	differ
+13	15	|		H		agree
+13	16	62		H		agree
+13	17	15		H		agree
+13	18	S37		H		agree
+13	19	6		H		agree
+13	20	S30		H		agree
+13	21	5		M	A:-	gap
+13	22	104		H		agree
+13	23	|		H		agree
+13	24	9447		M	B:94	differ
+13	25	S13		M	B:476	differ
+13	26	76		M	B:6	differ
+13	27	16		H		agree
+13	28	|		H		agree
+13	29	S37		H		agree
+13	30	44		M	B:4	differ
+13	31	104		H		agree
+13	32	S37		H		agree
+13	33	62		H		agree
+13	34	S13		H		agree
+13	35	|		H		agree
+13	36	S21		M	A:-	gap
+13	37	S51		M	B:X	differ
+13	38	9178		M	B:9	differ
+13	39	62		M	B:178	differ
+13	40	S13		M	B:52	differ
+14	1	26		H		agree
+14	2	S21		M	A:-	gap
+14	3	5	3	M	A:-	gap
+14	4	S13		M	A:-	gap
+14	5	S51		M	B:604	differ
+14	6	6014	a	M	B:14	differ
+14	7	S54		M	B:54	differ
+14	8	16	u	H		agree
+14	9	S40		M	B:X	differ
+14	10	82		M	B:15	differ
+14	11	S37		H		agree
+14	12	|		M	A:-	gap
+14	13	S53	a	M	B:X	differ
+14	14	S13		H		agree
+14	15	12		H		agree
+14	16	60		H		agree
+14	17	S34		H		agree
+14	18	16		H		agree
+14	19	|		H		agree
+14	20	X	que	M	B:-	gap
+14	21	12		H		agree
+14	22	6		H		agree
+14	23	S13		H		agree
+14	24	15		H		agree
+14	25	S54		M	B:S21	differ
+14	26	60		H		agree
+14	27	|		H		agree
+14	28	X	adu	M	B:S79	differ
+14	29	|		H		agree
+14	30	S51		M	B:15	differ
+14	31	14		H		agree
+14	32	1002		M	B:102	differ
+14	33	60		H		agree
+14	34	S54		M	B:S21	differ
+14	35	16		H		agree
+14	36	S40		M	B:X	differ
+14	37	26		H		agree
+15	1	X		M		agree-flagged
+15	2	X		M		agree-flagged
+15	3	S51		M	B:-	gap
+15	4	12		H		agree
+15	5	104		H		agree
+15	6	S34		H		agree
+15	7	16		H		agree
+15	8	63		M	B:-	gap
+15	9	S33		M	B:-	gap
+15	10	|		M	B:X	differ
+15	11	62		H		agree
+15	12	15		H		agree
+15	13	S37		H		agree
+15	14	S67		M	B:-	gap
+15	15	6		M	B:26	differ
+15	16	S30		H		agree
+15	17	5		H		agree
+15	18	/		M	B:|	differ
+15	19	985		M	B:98	differ
+15	20	X		M	B:76	differ
+15	21	7616		M	B:16	differ
+15	22	|		H		agree
+15	23	60		H		agree
+15	24	26		M	A:-	gap
+15	25	7		H		agree
+15	26	74		M	B:44	differ
+15	27	4102		M	B:102	differ
+15	28	582		M	B:52	differ
+15	29	60		H		agree
+15	30	S51		M	B:-	gap
+15	31	|		M	B:S75	differ
+15	32	S17	m	M	B:X	differ
+15	33	652		M	B:26	differ
+15	34	8		M	B:58	differ
+15	35	16		H		agree
+16	1	S69	v	M	B:X	differ
+16	2	S34	12	H		agree
+16	3	62		H		agree
+16	4	S51		M	B:S21	differ
+16	5	102		H		agree
+16	6	S54	u	M	B:-	gap
+16	7	|		H		agree
+16	8	5		M	A:-	gap
+16	9	514	a	M	B:14	differ
+16	10	8		M	B:9	differ
+16	11	S34		H		agree
+16	12	12		H		agree
+16	13	S37		H		agree
+16	14	60		H		agree
+16	15	S53	u	M	B:X	differ
+16	16	102		H		agree
+16	17	16		H		agree
+16	18	|		H		agree
+16	19	5		M	A:-	gap
+16	20	7		M	A:-	gap
+16	21	9		M	A:-	gap
+16	22	744		M	A:-	gap
+16	23	57	u	M	B:102	differ
+16	24	|		M	B:52	differ
+16	25	928	c	M	B:60	differ
+16	26	S18	a	M	B:X	differ
+16	27	60		H		agree
+16	28	S37		M	B:S13	differ
+16	29	12		H		agree
+16	30	64	a	H		agree
+16	31	15		M	A:-	gap
+16	32	1516	n	M	B:16	differ
+16	33	|		H		agree
+16	34	S27		M	B:-	gap
+16	35	X		M		agree-flagged
+16	36	4	i	H		agree
+16	37	X		M	B:-	gap
+17	1	104	u	H		agree
+17	2	84		M	B:64	differ
+17	3	S54		M	B:S13	differ
+17	4	916		H		agree
+17	5	S69		M	B:-	gap
+17	6	X	fait a	M		agree-flagged
+17	7	14		H		agree
+17	8	16		H		agree
+17	9	12		H		agree
+17	10	11		M	B:15	differ
+17	11	S37		H		agree
+17	12	X		M	B:S13	differ
+17	13	S54		M	B:|	differ
+17	14	X	fait ce	M	B:S21	differ
+17	15	S17	u	M	B:7	differ
+17	16	916		M	B:S27	differ
+17	17	68		M	B:62	differ
+17	18	104		H		agree
+17	19	40		M	A:-	gap
+17	20	460		M	B:9	differ
+17	21	|		H		agree
+17	22	9	v	M	B:-	gap
+17	23	24	re	H		agree
+17	24	5		H		agree
+17	25	|		H		agree
+17	26	X	fait a	M		agree-flagged
+17	27	S17		M	B:-	gap
+17	28	12		M	B:142	differ
+17	29	S27		M	B:102	differ
+17	30	X		M		agree-flagged
+17	31	4		H		agree
+17	32	X		M	B:-	gap
+18	1	167	u	H		agree
+18	2	S37	x	H		agree
+18	3	S49	m	M	B:X	differ
+18	4	12	a	H		agree
+18	5	16		H		agree
+18	6	S54		M	B:S21	differ
+18	7	9		H		agree
+18	8	S33		M	B:S21	differ
+18	9	64		H		agree
+18	10	8		M	B:S13	differ
+18	11	S37		M	B:S13	differ
+18	12	X	quel qu'un	M		agree-flagged
+18	13	S17		M	B:-	gap
+18	14	26		M	B:-	gap
+18	15	104		M	B:-	gap
+18	16	S34		M	B:S29	differ
+18	17	S51		M	B:60	differ
+18	18	60		H		agree
+18	19	68		M	B:62	differ
+18	20	4		M	B:104	differ
+18	21	S34		H		agree
+18	22	|		M	A:-	gap
+18	23	62		H		agree
+18	24	74		H		agree
+18	25	48		H		agree
+18	26	S21		M	A:-	gap
+18	27	S51		M	B:24	differ
+18	28	|		M	B:S37	differ
+18	29	12		H		agree
+18	30	102		H		agree
+18	31	S37		H		agree
+18	32	82		M	B:-	gap
+18	33	X		M	B:9	differ
+18	34	X	tat	M	B:7	differ
+19	1	S17		M	B:S27	differ
+19	2	14	a	H		agree
+19	3	S37		H		agree
+19	4	23		M	B:62	differ
+19	5	15		H		agree
+19	6	S38		H		agree
+19	7	16		H		agree
+19	8	S34		H		agree
+19	9	X	que	M		agree-flagged
+19	10	S44		M	B:S21	differ
+19	11	S30		M	B:X	differ
+19	12	12		H		agree
+19	13	6014	a	M	B:60	differ
+19	14	S28	am	M	B:14	differ
+19	15	298		M	B:S29	differ
+19	16	S54		M	B:28	differ
+19	17	12		M	B:64	differ
+19	18	6		M	B:S21	differ
+19	19	26		H		agree
+19	20	744		M	A:-	gap
+19	21	58		M	A:-	gap
+19	22	15		M	A:-	gap
+19	23	S37		M	A:-	gap
+19	24	126		M	A:-	gap
+19	25	52		M	A:-	gap
+19	26	9		M	A:-	gap
+19	27	S51		M	B:S21	differ
+19	28	S37		H		agree
+19	29	16		H		agree
+19	30	S13		H		agree
+19	31	|		M	B:5	differ
+19	32	S28		M	B:X	differ
+19	33	26		H		agree
+19	34	60		H		agree
+19	35	68		M	B:6	differ
+19	36	S17		M	B:S27	differ
+19	37	16		H		agree
+19	38	X		M	B:-	gap
+20	1	S34	u	H		agree
+20	2	62		H		agree
+20	3	S21		M	A:-	gap
+20	4	S51		M	B:64	differ
+20	5	6		M	B:X	differ
+20	6	S54	po	M	B:69	differ
+20	7	62		H		agree
+20	8	S37		M	B:-	gap
+20	9	S40		M	B:X	differ
+20	10	14		H		agree
+20	11	15		H		agree
+20	12	9		M	A:-	gap
+20	13	26		M	A:-	gap
+20	14	926		M	B:X	differ
+20	15	S53	u	M	B:7	differ
+20	16	716		M	B:16	differ
+20	17	S17		M	B:S27	differ
+20	18	826		M	B:26	differ
+20	19	S40		M	B:X	differ
+20	20	16104		M	B:1016	differ
+20	21	4		H		agree
+20	22	S54	u	M	B:-	gap
+20	23	9		M	B:S21	differ
+20	24	60		M	B:960	differ
+20	25	S34		H		agree
+20	26	14	a	H		agree
+20	27	58		M	B:-	gap
+20	28	X		M	B:-	gap
+20	29	15		H		agree
+20	30	S37		H		agree
+20	31	S44	po	M	B:-	gap
+20	32	X		M		agree-flagged
+21	1	29		M	A:-	gap
+21	2	926	u	M	B:S21	differ
+21	3	S51		M	B:5	differ
+21	4	S13		H		agree
+21	5	26		H		agree
+21	6	S17		M	B:-	gap
+21	7	1		M	B:-	gap
+21	8	69		M	B:X	differ
+21	9	7		M	B:16	differ
+21	10	S76		M	B:X	differ
+21	11	62		H		agree
+21	12	S13		M	A:-	gap
+21	13	S37		M	B:60	differ
+21	14	62		M	B:X	differ
+21	15	S04		H		agree
+21	16	185		M	B:18	differ
+21	17	97		H		agree
+21	18	64		H		agree
+21	19	S13		M	B:-	gap
+21	20	S51		M	B:S21	differ
+21	21	9		H		agree
+21	22	60		H		agree
+21	23	S40		M	B:X	differ
+21	24	16		H		agree
+21	25	|		M	A:-	gap
+21	26	12	a	H		agree
+21	27	102	u	H		agree
+21	28	S37		H		agree
+21	29	X		M	B:-	gap
+21	30	S34		H		agree
+21	31	X		M	B:62	differ
+21	32	6		M	B:9	differ
+21	33	9174		M	B:174	differ
+21	34	S54		M	B:S21	differ
+21	35	X		M	B:4	differ
+22	1	|		M	A:-	gap
+22	2	X		M	B:9	differ
+22	3	S30		H		agree
+22	4	16		H		agree
+22	5	S54	t	M	B:S21	differ
+22	6	S37		H		agree
+22	7	14		H		agree
+22	8	1		M	A:-	gap
+22	9	15		H		agree
+22	10	S37		H		agree
+22	11	|		H		agree
+22	12	16		H		agree
+22	13	159	n	M	B:15	differ
+22	14	44		M	B:94	differ
+22	15	S44		M	B:4	differ
+22	16	X		M		agree-flagged
+22	17	62		M	B:-	gap
+22	18	S23		M	B:-	gap
+22	19	S33		M	B:26	differ
+22	20	X		M		agree-flagged
+22	21	S40		M	A:-	gap
+22	22	6		M	B:26	differ
+22	23	S37		H		agree
+22	24	82		M	B:-	gap
+22	25	X		M	B:5	differ
+22	26	104		H		agree
+22	27	S34		H		agree
+22	28	S30		H		agree
+22	29	62		M	A:-	gap
+22	30	26		M	B:|	differ
+22	31	X		M	B:52	differ
+22	32	526		M	B:S13	differ
+22	33	S17		M	B:S27	differ
+22	34	64		H		agree
+22	35	102		H		agree
+23	1	708		M	A:-	gap
+23	2	608		M	B:|	differ
+23	3	X		M	B:S79	differ
+23	4	X		M	B:24	differ
+23	5	14		H		agree
+23	6	23		M	B:-	gap
+23	7	X		M		agree-flagged
+23	8	S40		M	B:-	gap
+23	9	7		H		agree
+23	10	S54		M	B:44	differ
+23	11	16		H		agree
+23	12	S23		M	B:X	differ
+23	13	60		H		agree
+23	14	X		M	B:26	differ
+23	15	6102		M	B:102	differ
+23	16	62		H		agree
+23	17	S54		M	B:S21	differ
+23	18	104		M	B:64	differ
+23	19	S54	u	M	B:S21	differ
+23	20	512		M	B:102	differ
+23	21	64		H		agree
+23	22	22		H		agree
+23	23	X		M	A:-	gap
+23	24	12		H		agree
+23	25	512		M	B:102	differ
+23	26	60		H		agree
+23	27	S13		M	B:S21	differ
+23	28	16		H		agree
+23	29	S69		M	B:S13	differ
+24	1	S04		H		agree
+24	2	S40		M	B:-	gap
+24	3	X		M		agree-flagged
+24	4	6		M	B:26	differ
+24	5	S54	u	M	B:S21	differ
+24	6	82		M	B:28	differ
+24	7	102		H		agree
+24	8	5		H		agree
+24	9	55		M	B:-	gap
+24	10	S34		H		agree
+24	11	16		H		agree
+24	12	|		M	A:-	gap
+24	13	62		H		agree
+24	14	15		H		agree
+24	15	S54		M	B:S21	differ
+24	16	26		H		agree
+24	17	925		M	B:-	gap
+24	18	16		M	B:-	gap
+24	19	X		M	B:-	gap
+24	20	526		M	B:-	gap
+24	21	S54	m	M	B:S29	differ
+24	22	104		M	B:26	differ
+24	23	512		M	B:5	differ
+24	24	104		M	B:16	differ
+24	25	22		M	B:26	differ
+24	26	1251		M	B:S21	differ
+24	27	02		M	B:S29	differ
+24	28	60		M	B:4	differ
+24	29	S13		M	B:X	differ
+24	30	1642		M	B:5	differ
+24	31	S17		M	B:X	differ
+24	32	X		M		agree-flagged
+24	33	S21		M	A:-	gap
+24	34	S54	a	M	B:12	differ
+24	35	127		M	B:7	differ
+24	36	S34		H		agree
+24	37	14		H		agree
+25	1	S37		H		agree
+25	2	26		H		agree
+25	3	15	n	H		agree
+25	4	60		H		agree
+25	5	S34		H		agree
+25	6	22		M	B:220	differ
+25	7	26		M	B:56	differ
+25	8	S24		M	B:X	differ
+25	9	16		H		agree
+25	10	S54	u	M	B:-	gap
+25	11	62		M	B:12	differ
+25	12	S37		H		agree
+25	13	62		M	B:6	differ
+25	14	S34		H		agree
+25	15	S49	m	M	B:X	differ
+25	16	82	a	M	B:25	differ
+25	17	62		M	B:6	differ
+25	18	X		M		agree-flagged
+25	19	60		H		agree
+25	20	S54		M	B:S21	differ
+25	21	S24		M	B:X	differ
+25	22	364		H		agree
+25	23	26		M	A:-	gap
+25	24	S46		M	B:15	differ
+25	25	X		M		agree-flagged
+25	26	6		M	B:-	gap
+25	27	15		M	B:-	gap
+25	28	S51	va po	M	B:5	differ
+25	29	59		M	B:9	differ
+25	30	44		H		agree
+25	31	X		M	B:-	gap
+26	1	62		M	B:-	gap
+26	2	S40	uu	M	B:-	gap
+26	3	S30	a	M	B:X	differ
+26	4	S51		M	B:26	differ
+26	5	X		M		agree-flagged
+26	6	82		M	B:-	gap
+26	7	S17	uu	M	B:5	differ
+26	8	16		M	B:26	differ
+26	9	S54		M	B:S27	differ
+26	10	16		H		agree
+26	11	10		H		agree
+26	12	S13		H		agree
+26	13	S34		H		agree
+26	14	26		H		agree
+26	15	S20		M	B:-	gap
+26	16	X		M		agree-flagged
+26	17	S64		M	B:S79	differ
+26	18	S18		M	B:X	differ
+26	19	S52		M	B:S17	differ
+26	20	S13		M	B:X	differ
+26	21	60		H		agree
+26	22	S54		M	B:-	gap
+26	23	16		M	B:-	gap
+26	24	S69		M	B:S21	differ
+26	25	16		H		agree
+26	26	S34	a	H		agree
+26	27	14	a	H		agree
+26	28	S79	q	M	A:-	gap
+26	29	60		M	A:-	gap
+26	30	X	q	M		agree-flagged
+26	31	S51		M	B:-	gap
+26	32	15		H		agree
+26	33	16		H		agree
+26	34	S30		H		agree
+26	35	X		M	A:-	gap
+26	36	S37	n	M	B:62	differ
+26	37	5264		M	B:64	differ
+27	1	6		H		agree
+27	2	X		M	B:|	differ
+27	3	S20	n	M	B:32	differ
+27	4	14	a	H		agree
+27	5	S25		M	B:X	differ
+27	6	102		H		agree
+27	7	S54		M	B:-	gap
+27	8	16		M	B:X	differ
+27	9	S34		H		agree
+27	10	S27		M	B:-	gap
+27	11	S72		M	B:S17	differ
+27	12	5		M	B:73	differ
+27	13	S04		M	B:S52	differ
+27	14	X		M		agree-flagged
+27	15	26		H		agree
+27	16	S51		M	B:-	gap
+27	17	16		H		agree
+27	18	9		M	A:-	gap
+27	19	928		M	B:28	differ
+27	20	S52		H		agree
+27	21	S13		H		agree
+27	22	16		H		agree
+27	23	S54	po	M	B:S21	differ
+27	24	502		M	B:12	differ
+27	25	S34		H		agree
+27	26	|		M	A:-	gap
+27	27	15		H		agree
+27	28	62		H		agree
+27	29	S17	ra	M	B:S21	differ
+27	30	4		M	B:14	differ
+27	31	S76		H		agree
+27	32	6026		M	B:62	differ
+28	1	S13		M	B:-	gap
+28	2	S51		M	B:S27	differ
+28	3	16		H		agree
+28	4	S28		M	B:-	gap
+28	5	9		H		agree
+28	6	15		M	A:-	gap
+28	7	S21		M	A:-	gap
+28	8	X		M		agree-flagged
+28	9	9		M	A:-	gap
+28	10	26		H		agree
+28	11	S40		M	B:-	gap
+28	12	1		M	B:-	gap
+28	13	X		M		agree-flagged
+28	14	16		H		agree
+28	15	S44		M	B:S13	differ
+28	16	44		H		agree
+28	17	102		H		agree
+28	18	S24		M	B:X	differ
+28	19	26		H		agree
+28	20	S13		M	B:5	differ
+28	21	S04		H		agree
+28	22	28		H		agree
+28	23	64		H		agree
+28	24	S34		H		agree
+28	25	16		H		agree
+28	26	22		M	B:26	differ
+28	27	S51		M	B:5	differ
+28	28	104		H		agree
+28	29	X		M	B:-	gap
+28	30	6		M	B:26	differ
+28	31	1519		M	B:915	differ
+28	32	60		H		agree
+28	33	S34		H		agree
+28	34	12	a	H		agree
+28	35	344		H		agree
+28	36	60	re	M	B:-	gap
+29	1	102	u	H		agree
+29	2	S37		H		agree
+29	3	S54		M	B:S21	differ
+29	4	64		H		agree
+29	5	S24		M	B:X	differ
+29	6	X		M		agree-flagged
+29	7	S21	a	M	B:X	differ
+29	8	14		H		agree
+29	9	S44	u	M	B:-	gap
+29	10	18		M	B:-	gap
+29	11	X		M		agree-flagged
+29	12	S33		M	B:8	differ
+29	13	14		H		agree
+29	14	X		M	B:-	gap
+29	15	4		M	B:24	differ
+29	16	X		M		agree-flagged
+29	17	5		M	B:26	differ
+29	18	X		M		agree-flagged
+29	19	6		M	B:-	gap
+29	20	S28		M	B:-	gap
+29	21	60		H		agree
+29	22	X		M		agree-flagged
+29	23	16		M	B:-	gap
+29	24	15		M	B:-	gap
+29	25	S40		M	B:-	gap
+29	26	24		M	B:244	differ
+29	27	64		H		agree
+29	28	62		M	B:-	gap
+29	29	82		M	B:X	differ
+29	30	16		M	B:611	differ
+30	1	S23		M	B:-	gap
+30	2	S54	a	M	B:X	differ
+30	3	512		H		agree
+30	4	S27		M	A:-	gap
+30	5	68		M	B:69	differ
+30	6	16		M	B:|	differ
+30	7	S28	ma	M	B:X	differ
+30	8	60		H		agree
+30	9	X		M	B:-	gap
+30	10	26		H		agree
+30	11	S17		M	B:-	gap
+30	12	104		M	B:-	gap
+30	13	S64	u	M	B:S27	differ
+30	14	16		M	B:164	differ
+30	15	5		M	B:X	differ
+30	16	3		M	B:9	differ
+30	17	S52		M	B:652	differ
+30	18	X		M		agree-flagged
+30	19	16		M	B:S04	differ
+30	20	15		M	B:X	differ
+30	21	S40		M	B:615	differ
+30	22	744		H		agree
+30	23	64		H		agree
+30	24	62		M	B:-	gap
+30	25	S51		M	B:-	gap
+30	26	X		M	B:26	differ
+30	27	615		H		agree
+30	28	26		M	B:-	gap
+30	29	159		M	B:9	differ
+30	30	44		H		agree
+30	31	S34		H		agree
+30	32	16		H		agree
+30	33	S13		M	B:X	differ
+30	34	S24		M	B:641	differ
+31	1	S46	a	M	B:-	gap
+31	2	12		H		agree
+31	3	60		H		agree
+31	4	S37		M	B:S13	differ
+31	5	26		M	B:16	differ
+31	6	S30		M	B:X	differ
+31	7	S37		H		agree
+31	8	26		H		agree
+31	9	5		M	A:-	gap
+31	10	S25		M	B:X	differ
+31	11	S34		H		agree
+31	12	64		H		agree
+31	13	/		M	B:-	gap
+31	14	S37		M	B:-	gap
+31	15	72		M	B:-	gap
+31	16	16		M	B:-	gap
+31	17	9		M	B:-	gap
+31	18	S24		M	B:-	gap
+31	19	S52		M	B:-	gap
+31	20	X		M		agree-flagged
+31	21	62		M	B:S17	differ
+31	22	14		M	B:X	differ
+31	23	S51		M	B:X	differ
+31	24	S28		M	B:S37	differ
+31	25	64		H		agree
+31	26	S54		M	B:X	differ
+31	27	26		H		agree
+31	28	X		M	B:-	gap
+31	29	6		M	B:S21	differ
+31	30	159		H		agree
+31	31	S13		M	B:-	gap
+31	32	4		M	B:44	differ
+31	33	S34		H		agree
+31	34	16		H		agree
+31	35	S13		H		agree
+31	36	S20		M	B:-	gap
+31	37	64		M	B:-	gap
+31	38	16		M	B:-	gap
+31	39	15		M	B:-	gap
+31	40	X	fait	M	B:-	gap
+31	41	9		M	B:-	gap
+31	42	X		M		agree-flagged
+31	43	6		M	B:-	gap
+31	44	15		M	B:-	gap
+31	45	S13		M	B:64	differ
+31	46	X		M	B:1611	differ
+31	47	6		H		agree
+31	48	S34		M	B:-	gap
+31	49	X		M	B:-	gap
+31	50	515		M	B:-	gap
+31	51	16		M	B:-	gap
+32	1	X		M		agree-flagged
+32	2	S75		H		agree
+32	3	917		H		agree
+32	4	S13		H		agree
+32	5	4		M	B:-	gap
+32	6	S51		M	B:-	gap
+32	7	6		M	B:S21	differ
+32	8	X		M	B:56	differ
+32	9	S54		M	B:24	differ
+32	10	S13		H		agree
+32	11	15		H		agree
+32	12	23		M	B:73	differ
+32	13	S23		M	B:X	differ
+32	14	82		H		agree
+32	15	S30		H		agree
+32	16	S37		H		agree
+32	17	S51		M	B:102	differ
+32	18	23		M	B:S21	differ
+32	19	X		M	B:5	differ
+32	20	6		M	B:73	differ
+32	21	S54		M	B:26	differ
+32	22	917		M	B:S21	differ
+32	23	7		M	B:56	differ
+32	24	S46		M	B:917	differ
+32	25	102		H		agree
+32	26	6		M	B:-	gap
+32	27	S13		H		agree
+32	28	66		M	B:S76	differ
+32	29	18		M	B:6618	differ
+32	30	S13		H		agree
+32	31	957		H		agree
+32	32	6		M	B:-	gap
+32	33	16		M	B:-	gap
+32	34	X		M	B:616	differ
+33	1	5		M	B:-	gap
+33	2	S28		M	B:X	differ
+33	3	S27		M	B:X	differ
+33	4	X		M		agree-flagged
+33	5	|		M	A:-	gap
+33	6	6		H		agree
+33	7	S21		M	A:-	gap
+33	8	16		M	A:-	gap
+33	9	60		M	A:-	gap
+33	10	62		M	A:-	gap
+33	11	S54		M	B:S29	differ
+33	12	60		H		agree
+33	13	S13		H		agree
+33	14	|		H		agree
+33	15	102		H		agree
+33	16	44		H		agree
+33	17	10		M	B:-	gap
+33	18	45		M	B:-	gap
+33	19	S34		M	B:-	gap
+33	20	X		M	B:-	gap
+33	21	8		M	B:-	gap
+33	22	X		M	B:-	gap
+33	23	64		M	B:-	gap
+33	24	16		M	B:-	gap
+33	25	15		M	B:-	gap
+33	26	S37		M	B:104	differ
+33	27	S13		M	B:S21	differ
+33	28	X	faut	M		agree-flagged
+33	29	12		M	B:-	gap
+33	30	60		M	B:-	gap
+33	31	S34		H		agree
+33	32	X		M	B:611	differ
+33	33	6		M	B:S13	differ

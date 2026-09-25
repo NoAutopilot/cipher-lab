@@ -11,7 +11,11 @@ the alignment, the reconciler settles only the listed positions from the image.
 Pass formats (detected per file):
   wide  'row<TAB>codes' (or no header): a line id, then the line's signs separated by spaces (fr2980-gramont passes).
   long  header 'line  pos|position  sign|token|group  conf|confidence ...': one sign per row (Danzay, Paleologue,
-        Anhalt passes, and any ciphertext.tsv, so a reconciled file can be the third pass).
+        Anhalt passes, and any ciphertext.tsv, so a reconciled file can be the third pass). An optional 'gloss'
+        column (interlinear plaintext glossed above a token, clair349-style) rides along with its token through
+        alignment; if any pass has one, ciphertext_draft.tsv gains a 'gloss' column (majority value per aligned
+        column, blank where none) and the printed summary adds a gloss-agreement figure over aligned columns
+        where every pass with a token there also wrote a non-blank gloss.
 Normalising: a trailing '?' on a sign marks it uncertain (the pass flagged it); confidences M, L, l, low count as
 flagged too (lower-case m, 'medium' in the Anhalt and Gramont passes, does not;
 --flag-conf sets the list). '.' dots and [PLAIN:...] / w: clear words are dropped unless --keep-dots / --keep-plain. --split-chars
@@ -50,25 +54,29 @@ def norm_sign(t, a):
 
 
 def load_pass(path, a):
-    """OrderedDict line -> list of (sign, flagged)."""
+    """OrderedDict line -> list of (sign, flagged, gloss); gloss is '' where the pass has no gloss column."""
     rows = [l.rstrip('\n').split('\t') for l in open(path, encoding='utf-8') if l.strip() and not l.startswith('#')]
     out = collections.OrderedDict()
     head = rows[0] if rows else []
     long_fmt = head and head[0] == 'line' and len(head) >= 3
+    has_gloss = False
     if long_fmt:
         ci = head.index('line')
         pi = next(head.index(n) for n in ('pos', 'position', 'index') if n in head)
         si = next(head.index(n) for n in ('sign', 'token', 'group', 'code') if n in head)
         ki = next((head.index(n) for n in ('conf', 'confidence') if n in head), None)
+        gi = head.index('gloss') if 'gloss' in head else None
+        has_gloss = gi is not None
         body = sorted(((r[ci], int(r[pi]), i, r) for i, r in enumerate(rows[1:]) if len(r) > si),
                       key=lambda x: x[2])
         for ln, _, _, r in body:
             conf = r[ki] if ki is not None and ki < len(r) else ''
+            gloss = r[gi].strip() if gi is not None and gi < len(r) else ''
             toks = list(r[si]) if a.split_chars and not r[si].startswith('[') else [r[si]]
             for t in toks:
                 s = norm_sign(t, a)
                 if s:
-                    out.setdefault(line_key(ln, a), []).append((s[0], s[1] or conf in a.flag))
+                    out.setdefault(line_key(ln, a), []).append((s[0], s[1] or conf in a.flag, gloss))
     else:
         for r in rows:
             if r[0] in ('row', 'line'):
@@ -78,8 +86,8 @@ def load_pass(path, a):
                 for c in (list(t.rstrip('?')) if a.split_chars else [t]):
                     s = norm_sign(c if not a.split_chars else c + ('?' if t.endswith('?') else ''), a)
                     if s:
-                        out[line_key(r[0], a)].append(s)
-    return out
+                        out[line_key(r[0], a)].append((s[0], s[1], ''))
+    return out, has_gloss
 
 
 def line_key(ln, a):
@@ -155,13 +163,16 @@ def main(argv=None):
     a.flag = set(a.flag_conf.split(','))
     if not 2 <= len(a.passes) <= 3:
         ap.error('give two or three pass files')
-    P = [load_pass(p, a) for p in a.passes]
+    loaded = [load_pass(p, a) for p in a.passes]
+    P = [d for d, _ in loaded]
+    any_gloss = any(hg for _, hg in loaded)
     names = 'ABC'[:len(P)]
     lines = list(P[0]) + [l for p in P[1:] for l in p if l not in P[0]]
     lines = list(dict.fromkeys(lines))
     crops = sorted(os.listdir(a.crops)) if a.crops and os.path.isdir(a.crops) else []
     dis, draft, agr_rows = [], [], []
     tot_agree = tot_cols = 0
+    tot_gloss_agree = tot_gloss_cols = 0
     for ln in lines:
         seqs = [p.get(ln, []) for p in P]
         cols = columns(seqs, a.method)
@@ -189,23 +200,45 @@ def main(argv=None):
             why = ('agree' if not flagged else 'agree-flagged') if same else ('gap' if '-' in signs else 'differ')
             conf = 'H' if why == 'agree' else 'M'
             alt = '/'.join(f'{n_}:{s}' for n_, s in zip(names, signs) if s != sign) if not same else ''
-            draft.append([ln, str(pos), sign, conf, alt, why])
+            if any_gloss:
+                glosses = [x[2] if x else None for x in c]     # None = no token here in that pass, '' = token, no gloss
+                non_gap = [g for g in glosses if g is not None]
+                if len(non_gap) == len(c) and all(non_gap):     # every pass has a token here AND wrote a gloss
+                    tot_gloss_cols += 1
+                    if len(set(non_gap)) == 1:
+                        tot_gloss_agree += 1
+                present_g = [g for g in glosses if g]
+                if present_g:
+                    gbest = collections.Counter(present_g).most_common()
+                    gloss = gbest[0][0] if len(gbest) == 1 or gbest[0][1] > gbest[1][1] else present_g[0]
+                else:
+                    gloss = ''
+                draft.append([ln, str(pos), sign, gloss, conf, alt, why])
+            else:
+                draft.append([ln, str(pos), sign, conf, alt, why])
     share = tot_agree / tot_cols if tot_cols else 1
     if a.rows:
         for ln, ns, ag, n in agr_rows:
             print(ln, *ns, ag, n, f'{ag / n:.2f}' if n else '1.00', sep='\t')
     print(f"lines {len(lines)}  signs " + '  '.join(f'{n_} {sum(r[1][i] for r in agr_rows)}' for i, n_ in enumerate(names))
           + f"  agree {tot_agree}/{tot_cols} = {share:.1%}  ({a.method})")
-    print(f"disagreement columns {len(dis)}; draft signs {len(draft)}, of which M {sum(1 for d in draft if d[3] == 'M')}")
+    print(f"disagreement columns {len(dis)}; draft signs {len(draft)}, of which M {sum(1 for d in draft if d[-3] == 'M')}")
+    if any_gloss:
+        gshare = tot_gloss_agree / tot_gloss_cols if tot_gloss_cols else 1
+        print(f"gloss agreement (aligned columns where every pass wrote a gloss): "
+              f"{tot_gloss_agree}/{tot_gloss_cols} = {gshare:.1%}")
     if a.no_write:
-        return dict(agree=tot_agree, cols=tot_cols, rows=agr_rows, dis=dis, draft=draft)
+        return dict(agree=tot_agree, cols=tot_cols, rows=agr_rows, dis=dis, draft=draft,
+                     gloss_agree=tot_gloss_agree, gloss_cols=tot_gloss_cols)
     out = a.out_dir or os.path.dirname(os.path.abspath(a.passes[0]))
     os.makedirs(out, exist_ok=True)
     def w(name, head, rows):
         with open(os.path.join(out, name), 'w', encoding='utf-8') as f:
             f.write('\t'.join(head) + '\n' + ''.join('\t'.join(r) + '\n' for r in rows))
     w('disagreements.tsv', ['line', 'col'] + list(names) + ['flagged', 'crop'], dis)
-    w('ciphertext_draft.tsv', ['line', 'position', 'sign', 'confidence', 'alt', 'why'], draft)
+    draft_head = ['line', 'position', 'sign', 'gloss', 'confidence', 'alt', 'why'] if any_gloss else \
+                 ['line', 'position', 'sign', 'confidence', 'alt', 'why']
+    w('ciphertext_draft.tsv', draft_head, draft)
     w('agreement.tsv', ['line'] + [f'signs_{n_}' for n_ in names] + ['agree', 'columns', 'share'],
       [[ln] + [str(x) for x in ns] + [str(ag), str(n), f'{ag / n:.3f}' if n else '1.000'] for ln, ns, ag, n in agr_rows])
     print('wrote', ', '.join(os.path.join(out, f) for f in ('disagreements.tsv', 'ciphertext_draft.tsv', 'agreement.tsv')))
