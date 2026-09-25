@@ -366,6 +366,35 @@ reading): P `smaskemitderlangertewasjetztistichzusche`, K `rotterdopvinnigswantg
 Control-backed negative for the beau-arithmetic corner of the keyword-mixed tableau family (same keyword list as
 GOLD-2C's vig run).
 
+### Variant 2: vig arithmetic, German key, both streams German (`--param kcorpus=tools/data/de20 --param arith=vig`)
+
+With plaintext and key corpus both `tools/data/de20`, the streams are exchangeable under vig (same caveat GOLD-2A
+logged for the standard-tableau family): the control's STRICT recovery (decoded "P" stream vs the true plaintext
+label) reads near chance, 6.4/8.5/7.7 pct (mean **7.7 pct**, well below gate 0.5), because the decoder's search is
+free to land on either labelling. Computing the EITHER-STREAM recovery (decoded "P" stream vs whichever of the two
+true streams it actually matches; `truth_key` added to `keyed_running_key.solve()`'s info dict for this) gives
+89.6 / 90.7 / 88.6 pct (mean **89.6 pct**) -- the method reads the German-key control very well once the label
+ambiguity is accounted for. Gated the target run on the either-stream number (0.5 met), not the tool's own
+strict-only default, which would have wrongly reported CONTROL BELOW GATE (both rows are in the table below: the
+first, strict-gated, correctly shows the tool's default behaviour; the second reruns the target after gating on
+either-stream).
+
+TARGET: stage-1 best 10.9 nats over uniform (`wachturme:both`); stage-2 winner `schlurfte:full:vig` (stage-1 rank
+lower, 8.5 nats), msg-1 best-of-30 -3.487; pooled joint ll (all 5 messages) **-3.573** per letter, *below* the
+-3.507/-3.544 noise band's bottom (worse than both noise draws -- no signal, not a flag). Judge: FAIL (score
+-0.975 vs real_p05 -0.823, null_p99 -2.071, mode=both). Message 1 decoded streams, first 40 letters (word salad,
+not a reading): P `rfuhrensichnurihrgraduberfreitstandnisst`, K `pulthelfenaufeinschauungtaitseknurrenart`.
+Control-backed negative for the German-key corner of the keyword-mixed tableau family, read correctly (either
+stream) rather than under the tool's default strict labelling.
+
+### Variant 3: English keyword list -- not run
+
+`--param wordcorpus=DIR[,DIR]` was added to `tools/families/keyed_running_key.py` (draws the stage-1 keyword list
+from named corpora instead of corpus+kcorpus; tested in `tools/tests/test_keyed_running_key.py`) so this box could
+try `wordcorpus=tools/data/en16_repo,tools/data/de20,tools/data/nl20`. Not run: variants 1 and 2 (control+target,
+~25 minutes each) used most of this job's 75-minute box; the option is built, tested and pushed for the next
+Koehler B' job to spend its box on the run itself, control first.
+
 ## Families B and B', devotional Dutch key (GOLD-K1), 25 Sept 2026, 19:57-20:46 UTC
 
 Every Family B and B' negative logged so far (GOLD-2A, GOLD-2C, GOLD-K2) is conditional on `tools/data/nl20`'s
@@ -460,3 +489,4 @@ keyed_running_key --corpus tools/data/de20 --param kcorpus=tools/data/nl_dev --p
 | date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
 |---|---|---|---|---|---|---|---|---|
 | 25 Sept 2026 20:47 | keyed_running_key | N=924 K=26 restarts=8 corpus=pg15736_Der_Mann_von_vierzig_Jahren.txt.gz+pg36905_Schach_von_Wuthenow.txt.gz+pg41051_Peter_Camenzind.txt.gz+pg41907_Demian.txt.gz+pg43987_Die_drei_Spruenge_des_Wang_lun.txt.gz+pg46184_Frau_Jenny_Treibel.txt.gz+pg5323_Effi_Briest.txt.gz kcorpus=tools/data/de20,arith=vig,top=30,beam=300,order=6,spaces=1 | 1-3 | 0.078 (0.064-0.085) | not run (CONTROL BELOW GATE) | - | no (gate 0.5) | GOLD-K2 B' vig, German key |
+| 25 Sept 2026 20:54 | keyed_running_key | N=924 K=26 restarts=8 corpus=pg15736_Der_Mann_von_vierzig_Jahren.txt.gz+pg36905_Schach_von_Wuthenow.txt.gz+pg41051_Peter_Camenzind.txt.gz+pg41907_Demian.txt.gz+pg43987_Die_drei_Spruenge_des_Wang_lun.txt.gz+pg46184_Frau_Jenny_Treibel.txt.gz+pg5323_Effi_Briest.txt.gz kcorpus=tools/data/de20,arith=vig,top=30,beam=300,order=6,spaces=1 | 1 | strict 0.077 (0.064-0.085); either-stream 0.896 (0.886-0.907) | -3.573 | FAIL language: score=-0.975, null_p99=-2.071, real_p05=-0.823, real_median=-0.78, mode=both, N=924 | yes (gate 0.5 on either-stream) | GOLD-K2 B' vig, German key, gated on either-stream recovery (streams exchangeable) |
