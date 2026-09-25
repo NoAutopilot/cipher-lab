@@ -1,0 +1,146 @@
+line	pos	code	marks	action	conf	note
+1	1	_		correct	H	continuous single pen stroke with pos2 spells plain italic "Parlato"; classifier read the tall ascender alone as code p
+1	2	_		confirm	H
+1	3	S4		confirm	H	diagonal+crossbar shape matches S4 atlas, not tee (checked both)
+1	4	dl		confirm	H
+1	5	tee		correct	M	vertical stroke+crossbar matches tee (cf. pos7 same line), not Z's zigzag letterform; classifier share only 0.41
+1	6	a	5	confirm	H	unambiguous "a" shape despite low classifier share
+1	7	tee		confirm	H
+1	8	g	dot	correct	M	stacked ascender-hook over bold loop matches "g" atlas pattern (cf. similar tall g's elsewhere), not plain italic; classifier had proposed plain/_ with cluster hint y
+1	9	#	#	confirm	M	single bold cross; #/+ genuinely confusable per confusion table but share 0.83 and double mark "#" plausible
+1	10	lam	dot|~	confirm	M	clear lambda/triangle shape; marks not fully resolved at this zoom
+1	11	eps	7	confirm	H
+1	12	w		confirm	H
+1	13	eps	1	confirm	H	clearly epsilon, matches pos11's shape; not the cluster alternative g
+1	14	]	o	confirm	H
+1	15	g	7	confirm	H
+1	16	L		confirm	H
+1	17	w		confirm	H
+1	18	a	1	confirm	H
+1	19	lam	7	confirm	H
+1	20	bh		confirm	H
+1	21	S7		confirm	H
+1	22	#	#	confirm	H
+1	23	H	1|o	confirm	M	shape confirmed H; attached marks not clearly separable at this zoom
+1	24	Z	dot|ot	confirm	H	clean Z letterform matches atlas
+1	25	_		confirm	H
+1	26	_		confirm	H
+1	27	+		correct	M	single crossbar visible, not a double hash; matches cluster_code "+" better than "#"; classifier share only 0.40
+1	28	bh	dot	confirm	H
+1	29	_		delete	H	isolated box far above the text line (y~31 vs main line y~170-200, ~140px gap); reads "5"; paired with pos30 "7" this is the folio number "57" (=f.57r), not cipher text
+1	30	_		delete	H	as pos29; reads "7"; together with pos29 spells the folio-number stamp "57" in the top-right corner, not cipher text
+2	1	#		split	M	box holds 2 stacked signs: "#" hash on top, "S7" below (see pos1.5); classifier tagged the whole tall box a single "Z" at share 1.00, which matches neither component
+2	1.5	S7		split	M	bottom sign of the pair merged into original box 1
+2	2	L	dot	confirm	H
+2	3	g		confirm	H
+2	4	y	~	confirm	H
+2	5	wd		correct	H	clear w-loop + hooked-descender-with-dot ligature, matches wd atlas well (cf. line3 pos25); classifier read g
+2	6	g		confirm	M
+2	7	]	ot	confirm	H
+2	8	_		confirm	M	small mark present but no structured sign resolved; kept plain per classifier (share 0.84)
+2	9	y		confirm	H
+2	10	Z	ot	confirm	H
+2	11	eps		confirm	H
+2	12	y		confirm	H
+2	13	[		confirm	M	clear left-bracket shape despite low share
+2	14	y		confirm	H
+2	15	phi		confirm	H	circle+vertical-stroke matches phi
+2	16	v	1|5	confirm	H
+2	17	f		confirm	H
+2	18	w		confirm	H
+2	19	bh		confirm	H
+2	20	Z		split	H	box holds 2 stacked signs: "Z" (with its own natural entry-flourish) above "S7" (see pos20.5); classifier tagged the whole 95px-tall box plain "_" at share 0.81
+2	20.5	S7		split	H	bottom sign of the pair merged into original box 20
+2	21	y		confirm	H
+2	22	tee		confirm	H
+2	23	f		confirm	H
+2	24	w		confirm	H
+2	25	y		confirm	H
+2	26	eps	5	split	H	box holds 2 signs side by side: "eps" (mark 5) and "g" (mark 7) (see pos26.5); classifier tagged the whole wide box plain "_" at share 0.61, marks "7|5" actually belong one to each sign
+2	26.5	g	7	split	H	second sign of the pair merged into original box 26
+3	1	_		confirm	M	genuine plain cursive "e" at the bottom of the box, real crisp ink; the diffuse grey smudge above it is bleed-through from the verso, not ink on this side - not a separate sign
+3	2	a	5	confirm	H
+3	3	tee		confirm	H
+3	4	lam		confirm	H
+3	5	o.	1	confirm	H
+3	6	_		confirm	M	small ambiguous loop, plausibly the tail-flourish of pos5's o.; kept plain per classifier
+3	7	m		split	H	box holds 2 stacked signs: "m" above "S7" (see pos7.5); classifier tagged the whole tall box "_"/cluster f at share 0.79
+3	7.5	S7		split	H	bottom sign of the pair merged into original box 7
+3	8	w		confirm	H
+3	9	lam	1	confirm	H
+3	10	S7		confirm	H
+3	11	y		confirm	M	box visually overlaps pos12; shape plausibly y but ink partly shared with neighbor
+3	12	g		confirm	H
+3	13	v		correct	M	open hook/loop shape matches "v" (the classifier's own cluster_code hint) better than plain; share only 0.43
+3	14	_		confirm	H	tiny stray tick, consistent with no real sign
+3	15	]	o	confirm	H
+3	16	e	#|dot	confirm	H
+3	17	eps		confirm	H
+3	18	y		confirm	H
+3	19	o.		correct	M	clean circle-with-center-dot ink matches o. atlas, not plain italic; classifier share 0.80
+3	20	g	1	confirm	H
+3	21	lam		confirm	H
+3	22	bh		confirm	H
+3	23	S7	#	confirm	H
+3	24	e	ot	confirm	H
+3	25	wd		confirm	H
+3	26	y		confirm	H
+3	27	eps	5	confirm	H
+3	28	S7		confirm	H
+4	1	f		confirm	H
+4	2	w		confirm	H
+4	3	o.		confirm	H
+4	4	_	dot	confirm	M	simple hook/loop shape, plausible as plain cursive letter; low-medium confidence on the mark
+4	5	o.	dot	confirm	H
+4	6	lam		confirm	H
+4	7	bh		confirm	H
+4	8	S7		confirm	H
+4	9	#		confirm	H
+4	10	H	1	confirm	H
+4	11	g	o	confirm	H	tall ascender-hook+loop, consistent with the same "g" pattern as line1 pos8
+4	12	y		confirm	H
+4	13	y		confirm	H
+4	14	g	1	confirm	H
+4	15	e	+	confirm	M	clear cursive e shape despite low classifier share (0.53)
+4	16	L		confirm	H
+4	17	g	~	confirm	H
+4	18	m	~	confirm	H
+4	19	w		confirm	H
+4	20	e	+	confirm	H
+4	21	L	dot|~	confirm	H
+4	22	S7		correct	M	numeral-7 shape with a small tail/loop visible, not a plain mark; classifier share only 0.64
+4	23	_		confirm	L	thin ambiguous stroke overlapping pos24's bh; may be its entry-stroke rather than a distinct sign - genuinely uncertain either way
+4	24	bh		confirm	H
+4	25	S7		confirm	H
+4	26	#		confirm	H
+4	27	e		confirm	H
+4	28	wd		correct	M	ligature shape (loop + hooked descender) matches the wd pattern seen elsewhere on this leaf, not f/p; classifier share only 0.40
+4	29	y		confirm	H
+5	1	sq		confirm	M	clean square shape confirmed; no mark actually visible despite classifier's own "?" placeholder
+5	2	]	o	correct	M	square-bracket shape with an "o"-type mark above, matches the ] pattern seen elsewhere on this leaf (cf. line1 pos14, line3 pos15), not Z's zigzag letterform; classifier share was 1.00 but shape mismatched
+5	3	eps	5	confirm	H
+5	4	S7		confirm	H
+5	5	f		confirm	H
+5	6	w		confirm	H
+5	7	o.		confirm	H
+5	8	_	dot	confirm	M	simple hook shape, plausible plain cursive; kept per classifier's full-confidence plain call
+5	9	lam		confirm	H
+5	10	bh	7	confirm	H
+5	11	S7		confirm	H
+5	12	#		confirm	H
+5	13	Z		confirm	H
+5	14	nt		confirm	H
+5	15	o.		correct	M	clean circle-with-center-dot ink matches o., not plain
+5	16	rz		confirm	H
+5	17	S7		confirm	H
+5	18	#		confirm	H
+5	19	m	dot	correct	M	clear cursive "m" shape, not plain; classifier share only 0.57
+5	20	lam		confirm	H
+5	21	w	~	confirm	H
+5	22	g	dot	confirm	H	tall ascender-hook+loop, same pattern as line1 pos8 / line4 pos11
+5	23	Z	ot	confirm	H
+5	24	]	ot	correct	M	square-bracket shape with dot/ot mark, not w's flat squiggle; classifier share only 0.39
+5	25	g		confirm	H
+5	26	_		delete	M	tiny tick/accent mark sitting right above pos27's y; looks like part of the y's ascender stroke, not a distinct Z sign (classifier's own share was 0.81, box is far smaller than any other Z on the leaf)
+5	27	y		confirm	H
+5	28	e		confirm	H
