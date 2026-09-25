@@ -1,0 +1,1102 @@
+line	position	token	kind	gloss	grade	note
+01	1	6	digit		M	stamp/text above uncertain, gloss illegible
+01	2	S13	sign	n	M	plus/cross mark; gloss uncertain
+01	3	12	digit	y	M	gloss uncertain
+01	4	73	digit	z	M	gloss uncertain
+01	5	S34	sign		M	A+o ligature (cf S69,S76); gloss illegible
+01	6	X?	X?		M	short horizontal double-dash, equals-sign-like, no atlas match
+01	7	6	digit		M	two dots above, gloss letter unclear
+01	8	9	digit		M	gloss illegible
+01	9	16	digit		M	gloss illegible
+01	10	104	digit	u	M	gloss tentative
+01	11	S27	sign	-	M	Af ligature; gloss looks like a dash/macron
+01	12	6	digit		M	
+01	13	X?	X?		M	short horizontal double-dash, equals-sign-like, no atlas match
+01	14	S23	sign		M	x-shaped sign; small mark above unclear
+01	15	|	divider		H	
+01	16	5	digit	f	M	
+01	17	16	digit	e	M	
+01	18	15	digit		M	
+01	19	S33	sign	z	M	loop-with-two-legs shape (cf S20)
+01	20	6	digit		M	
+01	21	X?	X?		M	short horizontal double-dash, equals-sign-like, no atlas match
+01	22	X?	X?	qual	M	bold capital V shape, two converging diagonal strokes, no single atlas match; gloss looks like a short cursive word not one letter
+01	23	S51	sign		H	long-s closed into loop, matches atlas crop well
+01	24	|	divider		H	
+01	25	12	digit	a	M	
+01	26	9	digit	p	M	
+01	27	5	digit	e	M	
+01	28	X?	X?		M	short horizontal double-dash, equals-sign-like, no atlas match
+01	29	6	digit		M	last token before right margin
+02	1	102	digit		M	
+02	2	|	divider		H	
+02	3	S29	sign	m	M	three-minim "uu" shape
+02	4	26	digit		M	
+02	5	9	digit		M	small dot gloss, letter unclear
+02	6	S69	sign	z	M	capital A with hooked v (cf S34,S76)
+02	7	60	digit		M	
+02	8	S33	sign		M	loop-with-two-legs shape
+02	9	X?	X?		M	short horizontal double-dash, equals-sign-like
+02	10	6	digit		M	
+02	11	|	divider		H	
+02	12	9	digit	u	M	
+02	13	10	digit		M	
+02	14	X?	X?		M	short horizontal double-dash, equals-sign-like
+02	15	|	divider		H	
+02	16	7	digit	u	M	
+02	17	6	digit		M	small squiggle gloss, unclear
+02	18	4	digit		M	
+02	19	11	digit	n	M	
+02	20	S13	sign		M	plus/cross mark; small gloss above unclear
+02	21	104	digit		M	
+02	22	S30	sign	n	M	c-hook joined to na
+02	23	60	digit		M	
+02	24	S33	sign		M	loop-with-two-legs shape
+02	25	X?	X?		M	short horizontal double-dash, equals-sign-like
+02	26	6	digit		M	
+02	27	S28	sign		M	c-hook joined to m
+02	28	S29	sign		M	three-minim "uu" shape
+02	29	6	digit		M	
+02	30	9	digit		M	
+02	31	|	divider		H	
+02	32	5	digit	u	M	
+02	33	104	digit		M	
+02	34	|	divider		H	
+02	35	S13	sign	p	M	plus/cross mark
+02	36	X?	X?	a	M	cursive S/8-like closed loop shape, no confident atlas match, near right margin
+02	37	X?	X?		M	small isolated dot near margin, unclear function (not a bar/slash divider)
+02	38	X?	X?		M	cursive S/8-like closed loop shape at right margin, similar to token 36
+03	1	S27	sign		M	tall doubled-stroke ligature; may be previous-line bleed-through rather than this line's own ink, flagged
+03	2	4	digit		M	
+03	3	0	digit		M	plain circle, could also be sign S19; read as digit 0
+03	4	X?	X?		M	short horizontal double-dash, equals-sign-like
+03	5	|	divider		H	
+03	6	22	digit		M	
+03	7	X?	X?		M	cursive abbreviation-like flourish, resembles 'po'/'pour'
+03	8	|	divider		H	
+03	9	6	digit		M	
+03	10	S13	sign		M	plus/cross mark
+03	11	X?	X?		M	figure-8-shaped loop, cf S18/S61/S71, not confidently matched
+03	12	X?	X?		M	short horizontal double-dash, equals-sign-like
+03	13	S40	sign		M	n-shape whose right leg closes into a loop
+03	14	11	digit		M	
+03	15	9	digit		M	
+03	16	S33	sign		M	loop-with-two-legs shape
+03	17	X?	X?		M	small tilde/double-dash mark above baseline
+03	18	6	digit		M	
+03	19	|	divider		H	
+03	20	5	digit		M	
+03	21	16	digit		M	
+03	22	9	digit		M	
+03	23	X?	X?		M	short horizontal double-dash, equals-sign-like
+03	24	6	digit		M	
+03	25	S13	sign		M	plus/cross mark
+03	26	9	digit		M	
+03	27	60	digit		M	
+03	28	S44	sign		M	p-like loop with stem crossed
+03	29	64	digit		M	
+03	30	S13	sign		M	plus/cross mark
+03	31	4	digit		M	
+03	32	05	digit		M	
+03	33	|	divider		H	
+03	34	5	digit		M	
+03	35	|	divider		H	
+03	36	14	digit		M	
+03	37	S69	sign		M	capital A with hooked v
+03	38	16	digit		M	last token, near right margin
+04	1	S23	sign		M	x-shaped sign
+04	2	S44	sign	p	M	p-like loop with crossed stem
+04	3	8	digit	o	M	
+04	4	X?	X?	n	M	short horizontal double-dash, equals-sign-like
+04	5	S30	sign	d	M	c-hook joined to na
+04	6	104	digit	u	M	
+04	7	52	digit		M	
+04	8	6	digit		M	
+04	9	S13	sign	e	M	plus/cross mark
+04	10	S33	sign	o	M	loop-with-two-legs shape
+04	11	516	digit	c	M	digit run, boundary uncertain
+04	12	S23	sign	z	M	x-shaped sign
+04	13	14	digit	a	M	
+04	14	64	digit	z	M	
+04	15	S37	sign	s	M	crossed t joined to o
+04	16	22	digit		M	
+04	17	16	digit		M	
+04	18	X?	X?	qual	M	unclear ligature, cursive gloss looks like a short word not a single letter
+04	19	62	digit		M	
+04	20	S23	sign		M	x-shaped sign
+04	21	S37	sign		M	crossed t joined to o
+04	22	60	digit		M	
+04	23	S13	sign		M	plus/cross mark
+04	24	|	divider		H	
+04	25	104	digit		M	last token before right margin
+05	1	26	digit	z	M	
+05	2	115	digit	n	M	digit run, boundary uncertain
+05	3	10	digit	u	M	
+05	4	X?	X?		M	short horizontal double-dash, equals-sign-like
+05	5	|	divider		H	
+05	6	13	digit	z	M	
+05	7	23	digit	z	M	
+05	8	S34	sign		M	A+o ligature (cf S69,S76)
+05	9	9	digit		M	
+05	10	26	digit	z	M	
+05	11	9	digit		M	
+05	12	14	digit	a	M	
+05	13	|	divider		H	
+05	14	8	digit		M	
+05	15	12	digit		M	
+05	16	S33	sign		M	loop-with-two-legs shape
+05	17	S27	sign		M	Af ligature
+05	18	64	digit		M	
+05	19	27	digit	z	M	
+05	20	102	digit	u	M	
+05	21	16	digit		M	
+05	22	68	digit		M	
+05	23	62	digit		M	
+05	24	S51	sign		M	long-s closed into loop
+05	25	|	divider		H	
+05	26	60	digit		M	
+05	27	12	digit	a	M	
+05	28	7	digit		M	
+05	29	|	divider		H	
+05	30	26	digit		M	last token before right margin
+06	1	S23	sign		M	x-shaped sign
+06	2	S46	sign	e	M	crossed t with j-like tail
+06	3	16	digit		M	
+06	4	|	divider		H	
+06	5	23	digit	z	M	
+06	6	1	digit		M	
+06	7	S13	sign		M	plus/cross mark
+06	8	60	digit		M	
+06	9	S40	sign		M	n-shape whose right leg closes into a loop
+06	10	|	divider		H	
+06	11	69	digit		M	
+06	12	26	digit		M	
+06	13	S30	sign		M	c-hook joined to na
+06	14	|	divider		H	
+06	15	S54	sign		M	f with a closed loop
+06	16	44	digit		M	
+06	17	S34	sign		M	A+o ligature
+06	18	S37	sign		M	crossed t joined to o
+06	19	|	divider		H	
+06	20	12	digit	a	M	
+06	21	S45	sign		M	small reversed-3 curl
+06	22	S50	sign		M	z with a long looped tail
+06	23	S13	sign		M	plus/cross mark
+06	24	16	digit		M	
+06	25	|	divider		H	
+06	26	26	digit		M	
+06	27	15	digit		M	
+06	28	S37	sign		M	crossed t joined to o
+06	29	6	digit		M	
+06	30	11	digit		M	
+06	31	S33	sign		M	loop-with-two-legs shape
+06	32	10	digit		M	
+06	33	|	divider		H	
+06	34	X?	X?	qual	M	bold capital V shape, no confident atlas match; gloss looks like a short cursive word
+06	35	S16	sign		M	tall long-s-like flourish
+06	36	16	digit		M	
+06	37	S13	sign		M	plus/cross mark
+06	38	X?	X?		M	final mark before right margin, unclear shape
+07	1	82	digit		M	
+07	2	X?	X?		M	short horizontal double-dash, equals-sign-like
+07	3	S34	sign	z	M	A+o ligature
+07	4	9	digit		M	
+07	5	16	digit		M	
+07	6	S23	sign		M	x-shaped sign
+07	7	|	divider		H	
+07	8	X?	X?	n	M	unclear ligature resembling 'dp'
+07	9	S51	sign		M	long-s closed into loop, tentative
+07	10	|	divider		H	
+07	11	S29	sign	m	M	three-minim 'uu' shape
+07	12	X?	X?		M	short horizontal double-dash, equals-sign-like
+07	13	6	digit		M	
+07	14	15	digit		M	
+07	15	16	digit		M	
+07	16	S33	sign		M	loop-with-two-legs shape
+07	17	|	divider		H	
+07	18	S51	sign		M	long-s ligature, tentative
+07	19	544	digit		M	digit run, boundary uncertain
+07	20	602	digit		M	digit run, boundary uncertain
+07	21	61	digit		M	
+07	22	5	digit		M	
+07	23	S37	sign		M	crossed t joined to o
+07	24	|	divider		H	
+07	25	S37	sign		M	crossed t joined to o
+07	26	26	digit		M	
+07	27	68	digit		M	
+07	28	16	digit		M	
+07	29	S23	sign		M	x-shaped sign
+07	30	/	divider		H	slanted stroke, clear word-divider mark
+07	31	X?	X?	que commande	M	cursive ligature; multi-word gloss 'que commande' (tentative) spans this token and the next few, not a single letter
+07	32	X?	X?		M	continuation of multi-word gloss above, see token 31 note
+07	33	S29	sign		M	three-minim 'uu' shape; continuation of multi-word gloss above
+07	34	12	digit		M	
+07	35	15	digit		M	
+07	36	16	digit		M	last token before right margin
+08	1	77	digit		M	
+08	2	/	divider		H	slanted stroke divider
+08	3	S44	sign		M	p-like loop with crossed stem
+08	4	63	digit		M	
+08	5	S30	sign	n	M	c-hook joined to na
+08	6	44	digit		M	
+08	7	X?	X?		M	unclear small ligature
+08	8	16	digit		M	
+08	9	104	digit		M	
+08	10	68	digit		M	
+08	11	26	digit		M	
+08	12	S29	sign		M	three-minim 'uu' shape
+08	13	6	digit		M	
+08	14	215	digit		M	digit run, boundary uncertain
+08	15	S37	sign		M	crossed t joined to o
+08	16	|	divider		H	
+08	17	X?	X?		M	cursive flourish, resembles 'po'
+08	18	|	divider		H	
+08	19	S27	sign		M	Af ligature
+08	20	16	digit		M	
+08	21	S15	sign		M	simple lowercase e-like loop
+08	22	S33	sign		M	loop-with-two-legs shape
+08	23	26	digit		M	
+08	24	S28	sign		M	c-hook joined to m
+08	25	12	digit		M	
+08	26	S34	sign		M	A+o ligature
+08	27	|	divider		H	
+08	28	5102	digit		M	digit run, boundary uncertain
+08	29	|	divider		H	
+08	30	X?	X?		M	small blot/star-shaped mark, unclear
+08	31	1260	digit		M	digit run, boundary uncertain
+08	32	S37	sign		M	crossed t joined to o, last token before right margin
+09	1	5104	digit	a	M	digit run, boundary uncertain
+09	2	7	digit		M	
+09	3	S13	sign		M	plus/cross mark
+09	4	5	digit		M	
+09	5	649	digit		M	digit run, boundary uncertain
+09	6	S38	sign		M	crossed t joined to c, with a tick
+09	7	|	divider		H	
+09	8	X?	X?		M	unclear mark, right margin area
+09	9	605	digit		M	digit run, boundary uncertain
+09	10	|	divider		H	
+09	11	S54	sign		M	f with a closed loop
+09	12	16	digit		M	
+09	13	S13	sign		M	plus/cross mark
+09	14	S34	sign		M	A+o ligature
+09	15	X?	X?		M	short horizontal double-dash, equals-sign-like
+09	16	9	digit		M	
+09	17	S51	sign		M	long-s closed into loop
+09	18	16	digit		M	
+09	19	11	digit		M	
+09	20	S37	sign		M	crossed t joined to o
+09	21	6	digit		M	
+09	22	X?	X?		M	short horizontal double-dash, equals-sign-like
+09	23	|	divider		H	
+09	24	S33	sign		M	loop-with-two-legs shape
+09	25	14	digit		M	
+09	26	|	divider		H	
+09	27	52	digit		M	
+09	28	9	digit		M	
+09	29	14	digit		M	
+09	30	S54	sign		M	f with a closed loop
+09	31	24	digit		M	
+09	32	S13	sign		M	plus/cross mark
+09	33	S13	sign		M	plus/cross mark
+09	34	X?	X?		M	small blot/mark, unclear
+09	35	|	divider		H	
+09	36	5	digit		M	
+09	37	1652	digit		M	digit run, boundary uncertain
+09	38	6	digit		M	last token before right margin
+10	1	|	divider		H	
+10	2	S37	sign	po	M	crossed t joined to o
+10	3	S13	sign		M	plus/cross mark
+10	4	S40	sign		M	n-shape whose right leg closes into a loop
+10	5	S38	sign	i	M	crossed t joined to c, with a tick
+10	6	6	digit		M	
+10	7	S34	sign		M	A+o ligature
+10	8	|	divider		H	
+10	9	12	digit		M	
+10	10	S33	sign		M	loop-with-two-legs shape
+10	11	|	divider		H	
+10	12	26	digit		M	
+10	13	S51	sign		M	long-s closed into loop
+10	14	5	digit		M	
+10	15	S37	sign		M	crossed t joined to o
+10	16	16	digit		M	
+10	17	102	digit		M	digit run, boundary uncertain
+10	18	S13	sign		M	plus/cross mark
+10	19	4	digit		M	
+10	20	64	digit		M	
+10	21	X?	X?		M	short horizontal double-dash, equals-sign-like
+10	22	6	digit		M	
+10	23	|	divider		H	
+10	24	512	digit		M	digit run, boundary uncertain
+10	25	S29	sign		M	three-minim 'uu' shape
+10	26	26	digit		M	
+10	27	S54	sign		M	f with a closed loop
+10	28	16	digit		M	
+10	29	1	digit		M	
+10	30	95	digit		M	
+10	31	X?	X?		M	short horizontal double-dash, equals-sign-like
+10	32	S33	sign		M	loop-with-two-legs shape
+10	33	62	digit		M	
+10	34	S13	sign		M	plus/cross mark, last token before right margin
+11	1	22	digit	po	M	
+11	2	S37	sign	tc	M	crossed t joined to o
+11	3	52	digit		M	
+11	4	104	digit	u	M	
+11	5	S13	sign		M	plus/cross mark
+11	6	S38	sign		M	crossed t joined to c, with a tick
+11	7	X?	X?	bonate	M	plaintext-looking cursive word (reads roughly 'bonate' or 'donate'), not cipher digits/signs
+11	8	S44	sign	a	M	p-like loop with crossed stem
+11	9	12	digit		M	
+11	10	S27	sign		M	Af ligature
+11	11	14	digit		M	
+11	12	S38	sign		M	crossed t joined to c
+11	13	16	digit		M	
+11	14	S54	sign		M	f with a closed loop
+11	15	|	divider		H	
+11	16	52	digit	a	M	
+11	17	102	digit	u	M	
+11	18	S13	sign		M	plus/cross mark
+11	19	S34	sign		M	A+o ligature
+11	20	16	digit		M	
+11	21	S54	sign		M	f with a closed loop
+11	22	|	divider		H	
+11	23	82	digit		M	
+11	24	912	digit	ca	M	digit run, boundary uncertain
+11	25	S54	sign		M	f with a closed loop
+11	26	16	digit		M	
+11	27	44	digit		M	
+11	28	1	digit		M	
+11	29	4	digit		M	
+11	30	102	digit		M	
+11	31	44	digit		M	
+11	32	X?	X?		M	small ink blot, unclear
+11	33	S54	sign		M	f with a closed loop
+11	34	18	digit		M	
+11	35	15	digit		M	
+11	36	S23	sign		M	x-shaped sign
+11	37	/	divider		H	slanted stroke divider
+11	38	S04	sign		M	hash/lattice mark
+11	39	102	digit		M	
+11	40	44	digit		M	
+11	41	6414	digit		M	digit run, boundary uncertain
+11	42	S38	sign		M	crossed t joined to c
+11	43	S44	sign		M	p-like loop with crossed stem
+11	44	82	digit		M	last token before right margin
+12	1	78	digit	a	M	
+12	2	64	digit		M	
+12	3	S38	sign		M	crossed t joined to c
+12	4	S27	sign	i	M	Af ligature
+12	5	14	digit		M	
+12	6	26	digit		M	
+12	7	602	digit		M	digit run, boundary uncertain
+12	8	|	divider		H	
+12	9	X?	X?	qui	M	V-like flourish; small cursive gloss word, not single letter
+12	10	S51	sign		M	long-s closed into loop
+12	11	S04	sign		M	hash/lattice mark
+12	12	544	digit		M	digit run, boundary uncertain
+12	13	60	digit		M	
+12	14	6273	digit		M	digit run, boundary uncertain
+12	15	S40	sign		M	n-shape whose right leg closes into a loop
+12	16	X?	X?		M	small y-shaped mark, unclear
+12	17	S13	sign		M	plus/cross mark
+12	18	S13	sign	pa	M	plus/cross mark
+12	19	1246	digit		M	digit run, boundary uncertain
+12	20	8	digit	pa	M	
+12	21	S37	sign		M	crossed t joined to o
+12	22	104	digit		M	
+12	23	62	digit		M	
+12	24	S23	sign		M	x-shaped sign
+12	25	|	divider		H	
+12	26	X?	X?		M	unclear ligature resembling 'ny'
+12	27	73	digit		M	
+12	28	S40	sign		M	n-shape whose right leg closes into a loop
+12	29	12	digit		M	
+12	30	94	digit		M	
+12	31	9	digit		M	
+12	32	62	digit		M	
+12	33	12	digit		M	last token before right margin
+13	1	12	digit		M	
+13	2	S54	sign		M	f with a closed loop
+13	3	S34	sign		M	A+o ligature
+13	4	62	digit		M	
+13	5	S13	sign		M	plus/cross mark
+13	6	S33	sign	p	M	loop-with-two-legs shape, tentative
+13	7	19	digit		M	
+13	8	1	digit		M	
+13	9	S51	sign		M	long-s closed into loop
+13	10	14	digit		M	
+13	11	102	digit		M	
+13	12	S34	sign		M	A+o ligature
+13	13	16	digit		M	
+13	14	32	digit		M	
+13	15	|	divider		H	
+13	16	62	digit		M	
+13	17	15	digit		M	
+13	18	S37	sign		M	crossed t joined to o
+13	19	6	digit		M	
+13	20	S30	sign		M	c-hook joined to na
+13	21	104	digit		M	
+13	22	|	divider		H	
+13	23	9447	digit		M	digit run, boundary uncertain
+13	24	S13	sign		M	plus/cross mark
+13	25	76	digit		M	
+13	26	16	digit		M	
+13	27	|	divider		H	
+13	28	S37	sign		M	crossed t joined to o
+13	29	44	digit		M	
+13	30	104	digit		M	
+13	31	S37	sign		M	crossed t joined to o
+13	32	62	digit		M	
+13	33	S13	sign		M	plus/cross mark
+13	34	|	divider		H	
+13	35	S51	sign		M	long-s closed into loop
+13	36	9178	digit		M	digit run, boundary uncertain
+13	37	62	digit		M	
+13	38	S13	sign		M	plus/cross mark, last token before right margin
+14	1	26	digit		M	
+14	2	S51	sign		M	long-s closed into loop
+14	3	6014	digit	a	M	digit run, boundary uncertain
+14	4	S54	sign		M	f with a closed loop
+14	5	16	digit		M	
+14	6	S40	sign		M	n-shape whose right leg closes into a loop
+14	7	82	digit		M	
+14	8	S37	sign		M	crossed t joined to o
+14	9	S53	sign	a	M	3/8-like curl with a tail
+14	10	S13	sign		M	plus/cross mark
+14	11	12	digit		M	
+14	12	60	digit		M	
+14	13	S34	sign		M	A+o ligature
+14	14	16	digit		M	
+14	15	|	divider		H	
+14	16	X?	X?	que	M	small cursive gloss word, not single letter
+14	17	12	digit		M	
+14	18	6	digit		M	
+14	19	S13	sign		M	plus/cross mark
+14	20	15	digit		M	
+14	21	S54	sign		M	f with a closed loop
+14	22	60	digit		M	
+14	23	|	divider		H	
+14	24	X?	X?	adu	M	V-like flourish with small cursive gloss above
+14	25	|	divider		H	
+14	26	S51	sign		M	long-s closed into loop
+14	27	14	digit		M	
+14	28	1002	digit		M	digit run, boundary uncertain
+14	29	60	digit		M	
+14	30	S54	sign		M	f with a closed loop
+14	31	16	digit		M	
+14	32	S40	sign		M	n-shape whose right leg closes into a loop
+14	33	26	digit		M	last token before right margin
+15	1	X?	X?		M	small ink blot near left margin
+15	2	X?	X?		M	small y-shaped mark, unclear
+15	3	S51	sign		M	long-s closed into loop
+15	4	12	digit		M	
+15	5	104	digit		M	
+15	6	S34	sign		M	A+o ligature
+15	7	16	digit		M	
+15	8	63	digit		M	
+15	9	S33	sign		M	loop-with-two-legs shape
+15	10	|	divider		H	
+15	11	62	digit		M	
+15	12	15	digit		M	
+15	13	S37	sign		M	crossed t joined to o
+15	14	S67	sign		M	3-shape followed by a (sa-like)
+15	15	6	digit		M	
+15	16	S30	sign		M	c-hook joined to na
+15	17	5	digit		M	
+15	18	/	divider		H	slanted stroke divider
+15	19	985	digit		M	digit run, boundary uncertain
+15	20	X?	X?		M	short horizontal double-dash, equals-sign-like
+15	21	7616	digit		M	digit run, boundary uncertain
+15	22	|	divider		H	
+15	23	60	digit		M	
+15	24	7	digit		M	
+15	25	74	digit		M	
+15	26	4102	digit		M	digit run, boundary uncertain
+15	27	582	digit		M	digit run, boundary uncertain
+15	28	60	digit		M	
+15	29	S51	sign		M	long-s closed into loop
+15	30	|	divider		H	
+15	31	S17	sign	m	M	double-cross or ff/H-like ligature
+15	32	652	digit		M	digit run, boundary uncertain
+15	33	8	digit		M	
+15	34	16	digit		M	last token before right margin
+16	1	S69	sign	v	M	capital A with hooked v
+16	2	S34	sign		M	A+o ligature
+16	3	62	digit		M	
+16	4	S51	sign		M	long-s closed into loop
+16	5	102	digit		M	
+16	6	S54	sign	u	M	f with a closed loop
+16	7	|	divider		H	
+16	8	514	digit	a	M	digit run, boundary uncertain
+16	9	8	digit		M	
+16	10	S34	sign		M	A+o ligature
+16	11	12	digit		M	
+16	12	S37	sign		M	crossed t joined to o
+16	13	60	digit		M	
+16	14	S53	sign	u	M	3/8-like curl with a tail
+16	15	102	digit		M	
+16	16	16	digit		M	
+16	17	|	divider		H	
+16	18	57	digit	u	M	
+16	19	|	divider		H	
+16	20	928	digit	c	M	digit run, boundary uncertain
+16	21	S18	sign	a	M	figure-eight/infinity-shaped double loop, tentative
+16	22	60	digit		M	
+16	23	S37	sign		M	crossed t joined to o
+16	24	12	digit		M	
+16	25	64	digit	a	M	
+16	26	1516	digit	n	M	digit run, boundary uncertain
+16	27	|	divider		H	
+16	28	S27	sign		M	Af ligature
+16	29	X?	X?		M	short horizontal double-dash, equals-sign-like
+16	30	4	digit	i	M	
+16	31	X?	X?		M	flourish/underline mark near end of line
+17	1	104	digit	u	M	
+17	2	84	digit		M	
+17	3	S54	sign		M	f with a closed loop
+17	4	916	digit		M	digit run, boundary uncertain
+17	5	S69	sign		M	capital A with hooked v
+17	6	X?	X?	fait a	M	plaintext-looking cursive words, not cipher digits/signs
+17	7	14	digit		M	
+17	8	16	digit		M	
+17	9	12	digit		M	
+17	10	11	digit		M	
+17	11	S37	sign		M	crossed t joined to o
+17	12	X?	X?		M	unclear double-dash-plus-bar mark
+17	13	S54	sign		M	f-ligature (fy-like)
+17	14	X?	X?	fait ce	M	plaintext-looking cursive words, not cipher digits/signs
+17	15	S17	sign	u	M	double-cross or ff/H-like ligature
+17	16	916	digit		M	digit run, boundary uncertain
+17	17	68	digit		M	
+17	18	104	digit		M	uncertain reading, cf 1e4-like shape
+17	19	460	digit		M	digit run, boundary uncertain
+17	20	|	divider		H	
+17	21	9	digit	v	M	
+17	22	24	digit	re	M	
+17	23	5	digit		M	
+17	24	|	divider		H	
+17	25	X?	X?	fait a	M	plaintext-looking cursive words, repeats earlier phrase
+17	26	S17	sign		M	double-cross or ff/H-like ligature
+17	27	12	digit		M	
+17	28	S27	sign		M	Af ligature
+17	29	X?	X?		M	short horizontal double-dash, equals-sign-like
+17	30	4	digit		M	
+17	31	X?	X?		M	horizontal underline/flourish mark, end of line
+18	1	167	digit	u	M	digit run, boundary uncertain
+18	2	S37	sign	x	M	crossed t joined to o
+18	3	S49	sign	m	M	m with a descending tail
+18	4	12	digit	a	M	
+18	5	16	digit		M	
+18	6	S54	sign		M	f with a closed loop
+18	7	9	digit		M	
+18	8	S33	sign		M	loop-with-two-legs shape
+18	9	64	digit		M	
+18	10	8	digit		M	
+18	11	S37	sign		M	crossed t joined to o
+18	12	X?	X?	quel qu'un	M	plaintext-looking cursive word(s), not cipher digits/signs
+18	13	S17	sign		M	double-cross or ff/H-like ligature
+18	14	26	digit		M	
+18	15	104	digit		M	
+18	16	S34	sign		M	A+o ligature
+18	17	S51	sign		M	long-s ligature ('nu'-like)
+18	18	60	digit		M	
+18	19	68	digit		M	
+18	20	4	digit		M	
+18	21	S34	sign		M	A+o ligature
+18	22	62	digit		M	
+18	23	74	digit		M	
+18	24	48	digit		M	
+18	25	S51	sign		M	long-s closed into loop
+18	26	|	divider		H	
+18	27	12	digit		M	
+18	28	102	digit		M	
+18	29	S37	sign		M	crossed t joined to o
+18	30	82	digit		M	
+18	31	X?	X?		M	horizontal arrow-like flourish mark
+18	32	X?	X?	tat	M	plaintext-looking cursive fragment, cut off at right margin
+19	1	S17	sign		M	double-cross or ff/H-like ligature
+19	2	14	digit		M	
+19	3	S37	sign		M	crossed t joined to o
+19	4	23	digit		M	
+19	5	15	digit		M	
+19	6	S38	sign		M	crossed t joined to c
+19	7	16	digit		M	
+19	8	S34	sign		M	A+o ligature
+19	9	X?	X?	que	M	small y-shaped mark with cursive gloss 'que'
+19	10	S44	sign		M	p-like loop with crossed stem
+19	11	S30	sign		M	c-hook joined to na, tentative ('ua'-like variant)
+19	12	12	digit		M	
+19	13	6014	digit	a	M	digit run, boundary uncertain
+19	14	S28	sign	am	M	c-hook joined to m
+19	15	298	digit		M	digit run, boundary uncertain
+19	16	S54	sign		M	f with a closed loop
+19	17	12	digit		M	
+19	18	6	digit		M	
+19	19	26	digit		M	
+19	20	S51	sign		M	long-s closed into loop
+19	21	S37	sign		M	crossed t joined to o
+19	22	16	digit		M	
+19	23	S13	sign		M	plus/cross mark
+19	24	|	divider		H	
+19	25	S28	sign		M	c-hook joined to m
+19	26	26	digit		M	
+19	27	60	digit		M	
+19	28	68	digit		M	
+19	29	S17	sign		M	double-cross or ff/H-like ligature
+19	30	16	digit		M	
+19	31	X?	X?		M	horizontal arrow-like flourish mark, end of line
+20	1	S34	sign	u	M	A+o ligature
+20	2	62	digit		M	
+20	3	S51	sign		M	long-s closed into loop
+20	4	6	digit		M	
+20	5	S54	sign	po	M	f with a closed loop
+20	6	62	digit		M	
+20	7	S37	sign		M	crossed t joined to o, ligature with extra tail
+20	8	S40	sign		M	n-shape whose right leg closes into a loop
+20	9	14	digit		M	
+20	10	15	digit		M	
+20	11	926	digit		M	digit run, boundary uncertain
+20	12	S53	sign	u	M	3/8-like curl with a tail
+20	13	716	digit		M	digit run, boundary uncertain
+20	14	S17	sign		M	double-cross or ff/H-like ligature
+20	15	826	digit		M	digit run, boundary uncertain
+20	16	S40	sign		M	n-shape whose right leg closes into a loop
+20	17	16104	digit		M	digit run, boundary uncertain
+20	18	4	digit		M	
+20	19	S54	sign	u	M	f with a closed loop
+20	20	9	digit		M	
+20	21	60	digit		M	
+20	22	S34	sign		M	A+o ligature
+20	23	14	digit	a	M	
+20	24	58	digit		M	
+20	25	X?	X?		M	short horizontal double-dash, equals-sign-like
+20	26	15	digit		M	
+20	27	S37	sign		M	crossed t joined to o
+20	28	S44	sign	po	M	p-like loop with crossed stem
+20	29	X?	X?		M	final flourish mark, end of line
+21	1	926	digit	u	M	digit run, boundary uncertain
+21	2	S51	sign		M	long-s closed into loop
+21	3	S13	sign		M	plus/cross mark
+21	4	26	digit		M	
+21	5	S17	sign		M	double-cross or ff/H-like ligature
+21	6	1	digit		M	
+21	7	69	digit		M	
+21	8	7	digit		M	
+21	9	S76	sign		M	plain capital A (cf S34, S69)
+21	10	62	digit		M	
+21	11	S37	sign		M	crossed t joined to o
+21	12	62	digit		M	
+21	13	S04	sign		M	hash/lattice mark
+21	14	185	digit		M	digit run, boundary uncertain
+21	15	97	digit		M	
+21	16	64	digit		M	
+21	17	S13	sign		M	plus/cross mark
+21	18	S51	sign		M	long-s closed into loop
+21	19	9	digit		M	
+21	20	60	digit		M	
+21	21	S40	sign		M	n-shape whose right leg closes into a loop
+21	22	16	digit		M	
+21	23	12	digit	a	M	
+21	24	102	digit	u	M	
+21	25	S37	sign		M	crossed t joined to o
+21	26	X?	X?		M	short horizontal double-dash, equals-sign-like
+21	27	S34	sign		M	A+o ligature
+21	28	X?	X?		M	short horizontal double-dash, equals-sign-like
+21	29	6	digit		M	
+21	30	9174	digit		M	digit run, boundary uncertain
+21	31	S54	sign		M	f with a closed loop
+21	32	X?	X?		M	final cross-like mark, end of line
+22	1	X?	X?		M	short horizontal double-dash, equals-sign-like
+22	2	S30	sign		M	c-hook joined to na
+22	3	16	digit		M	
+22	4	S54	sign	t	M	f with a closed loop
+22	5	S37	sign		M	crossed t joined to o
+22	6	14	digit		M	
+22	7	15	digit		M	
+22	8	S37	sign		M	crossed t joined to o
+22	9	|	divider		H	
+22	10	16	digit		M	
+22	11	159	digit	n	M	digit run, boundary uncertain
+22	12	44	digit		M	
+22	13	S44	sign		M	p-like loop with crossed stem
+22	14	X?	X?		M	short horizontal double-dash, equals-sign-like
+22	15	62	digit		M	
+22	16	S23	sign		M	x-shaped sign
+22	17	S33	sign		M	loop-with-two-legs shape
+22	18	X?	X?		M	short horizontal double-dash, equals-sign-like
+22	19	6	digit		M	
+22	20	S37	sign		M	crossed t joined to o
+22	21	82	digit		M	
+22	22	X?	X?		M	short horizontal double-dash, equals-sign-like
+22	23	104	digit		M	
+22	24	S34	sign		M	A+o ligature
+22	25	S30	sign		M	c-hook joined to na
+22	26	26	digit		M	
+22	27	X?	X?		M	short horizontal double-dash, equals-sign-like
+22	28	526	digit		M	digit run, boundary uncertain
+22	29	S17	sign		M	double-cross or ff/H-like ligature
+22	30	64	digit		M	
+22	31	102	digit		M	last token before right margin
+23	1	608	digit		M	digit run, boundary uncertain
+23	2	X?	X?		M	small y-shaped mark, unclear
+23	3	X?	X?		M	short horizontal double-dash, equals-sign-like
+23	4	14	digit		M	
+23	5	23	digit		M	
+23	6	X?	X?		M	short horizontal double-dash, equals-sign-like
+23	7	S40	sign		M	n-shape whose right leg closes into a loop
+23	8	7	digit		M	
+23	9	S54	sign		M	f with a closed loop
+23	10	16	digit		M	
+23	11	S23	sign		M	x-shaped sign
+23	12	60	digit		M	
+23	13	X?	X?		M	short horizontal double-dash, equals-sign-like
+23	14	6102	digit		M	digit run, boundary uncertain
+23	15	62	digit		M	
+23	16	S54	sign		M	f with a closed loop
+23	17	104	digit		M	
+23	18	S54	sign	u	M	f with a closed loop
+23	19	512	digit		M	digit run, boundary uncertain
+23	20	64	digit		M	
+23	21	22	digit		M	
+23	22	12	digit		M	
+23	23	512	digit		M	digit run, boundary uncertain
+23	24	60	digit		M	
+23	25	S13	sign		M	plus/cross mark
+23	26	16	digit		M	
+23	27	S69	sign		M	capital A with hooked v, last token before right margin
+24	1	S04	sign		M	hash/lattice mark
+24	2	S40	sign		M	n-shape whose right leg closes into a loop
+24	3	X?	X?		M	short horizontal double-dash, equals-sign-like
+24	4	6	digit		M	
+24	5	S54	sign	u	M	f with a closed loop
+24	6	82	digit		M	
+24	7	102	digit		M	
+24	8	5	digit		M	
+24	9	55	digit		M	
+24	10	S34	sign		M	A+o ligature
+24	11	16	digit		M	
+24	12	62	digit		M	
+24	13	15	digit		M	
+24	14	S54	sign		M	f with a closed loop
+24	15	26	digit		M	
+24	16	925	digit		M	digit run, boundary uncertain
+24	17	16	digit		M	
+24	18	X?	X?		M	small ink blot, unclear
+24	19	526	digit		M	digit run, boundary uncertain
+24	20	S54	sign	m	M	f with a closed loop
+24	21	104	digit		M	
+24	22	512	digit		M	digit run, boundary uncertain
+24	23	104	digit		M	
+24	24	22	digit		M	
+24	25	1251	digit		M	digit run, boundary uncertain
+24	26	02	digit		M	
+24	27	60	digit		M	
+24	28	S13	sign		M	plus/cross mark
+24	29	1642	digit		M	digit run, boundary uncertain
+24	30	S17	sign		M	double-cross or ff/H-like ligature
+24	31	X?	X?		M	V-like flourish, unclear
+24	32	S54	sign	a	M	f with a closed loop
+24	33	127	digit		M	
+24	34	S34	sign		M	A+o ligature
+24	35	14	digit		M	last token before right margin
+25	1	S37	sign		M	crossed t joined to o
+25	2	26	digit		M	
+25	3	15	digit	n	M	
+25	4	60	digit		M	
+25	5	S34	sign		M	A+o ligature
+25	6	22	digit		M	
+25	7	26	digit		M	
+25	8	S24	sign		M	two-letter-looking ligature (L joined to rounded B/8)
+25	9	16	digit		M	
+25	10	S54	sign	u	M	f with a closed loop
+25	11	62	digit		M	
+25	12	S37	sign		M	crossed t joined to o
+25	13	62	digit		M	
+25	14	S34	sign		M	A+o ligature
+25	15	S49	sign	m	M	m with a descending tail
+25	16	82	digit	a	M	
+25	17	62	digit		M	
+25	18	X?	X?		M	small hash-like mark, unclear
+25	19	60	digit		M	
+25	20	S54	sign		M	f with a closed loop
+25	21	S24	sign		M	two-letter-looking ligature
+25	22	364	digit		M	digit run, boundary uncertain
+25	23	S46	sign		M	crossed t with j-like tail
+25	24	X?	X?		M	short horizontal double-dash, equals-sign-like
+25	25	6	digit		M	
+25	26	15	digit		M	
+25	27	S51	sign	va po	M	long-s closed into loop; small cursive gloss word above, not single letter
+25	28	59	digit		M	
+25	29	44	digit		M	
+25	30	X?	X?		M	final arrow-like flourish, end of line
+26	1	62	digit		M	
+26	2	S40	sign	uu	M	n-shape whose right leg closes into a loop
+26	3	S30	sign	a	M	c-hook joined to na/ba
+26	4	S51	sign		M	long-s closed into loop
+26	5	X?	X?		M	short horizontal double-dash, equals-sign-like
+26	6	82	digit		M	
+26	7	S17	sign	uu	M	double-cross or ff/H-like ligature
+26	8	16	digit		M	
+26	9	S54	sign		M	f with a closed loop
+26	10	16	digit		M	
+26	11	10	digit		M	
+26	12	S13	sign		M	plus/cross mark
+26	13	S34	sign		M	A+o ligature
+26	14	26	digit		M	
+26	15	S20	sign		M	looped capital resembling R, loop with trailing tail
+26	16	X?	X?		M	small y-shaped mark, unclear
+26	17	S64	sign		M	3-shape
+26	18	S18	sign		M	figure-eight/infinity-shaped double loop
+26	19	S52	sign		M	lattice, three strokes across three
+26	20	S13	sign		M	plus/cross mark
+26	21	60	digit		M	
+26	22	S54	sign		M	f with a closed loop
+26	23	16	digit		M	
+26	24	S69	sign		M	capital A with hooked v
+26	25	16	digit		M	
+26	26	S34	sign		M	A+o ligature
+26	27	14	digit	a	M	
+26	28	X?	X?	q	M	small y-shaped mark, unclear, with gloss
+26	29	S51	sign		M	long-s closed into loop
+26	30	15	digit		M	
+26	31	16	digit		M	
+26	32	S30	sign		M	c-hook joined to na
+26	33	S37	sign	n	M	crossed t joined to o
+26	34	5264	digit		M	digit run, boundary uncertain, last token before right margin
+27	1	6	digit		M	
+27	2	X?	X?		M	short horizontal double-dash, equals-sign-like
+27	3	S20	sign	n	M	looped capital resembling R, loop with trailing tail
+27	4	14	digit	a	M	
+27	5	S25	sign		M	single cursive loop, open oval stroke
+27	6	102	digit		M	
+27	7	S54	sign		M	f with a closed loop
+27	8	16	digit		M	
+27	9	S34	sign		M	A+o ligature
+27	10	S27	sign		M	Af ligature
+27	11	S72	sign		M	script capital T
+27	12	5	digit		M	
+27	13	S04	sign		M	hash/lattice mark
+27	14	X?	X?		M	small y-shaped mark, unclear
+27	15	26	digit		M	
+27	16	S51	sign		M	long-s closed into loop
+27	17	16	digit		M	
+27	18	928	digit		M	digit run, boundary uncertain
+27	19	S52	sign		M	lattice, three strokes across three
+27	20	S13	sign		M	plus/cross mark
+27	21	16	digit		M	
+27	22	S54	sign	po	M	f with a closed loop
+27	23	502	digit		M	digit run, boundary uncertain
+27	24	S34	sign		M	A+o ligature
+27	25	15	digit		M	
+27	26	62	digit		M	
+27	27	S17	sign	ra	M	double-cross or ff/H-like ligature
+27	28	4	digit		M	
+27	29	S76	sign		M	plain capital A
+27	30	6026	digit		M	digit run, boundary uncertain, last token before right margin
+28	1	S13	sign		M	plus/cross mark
+28	2	S51	sign		M	long-s closed into loop
+28	3	16	digit		M	
+28	4	S28	sign		M	c-hook joined to m
+28	5	9	digit		M	
+28	6	X?	X?		M	short horizontal double-dash, equals-sign-like
+28	7	26	digit		M	
+28	8	S40	sign		M	n-shape whose right leg closes into a loop
+28	9	1	digit		M	
+28	10	X?	X?		M	small cross mark, unclear
+28	11	16	digit		M	
+28	12	S44	sign		M	p-like loop with crossed stem
+28	13	44	digit		M	
+28	14	102	digit		M	
+28	15	S24	sign		M	two-letter-looking ligature
+28	16	26	digit		M	
+28	17	S13	sign		M	plus/cross mark
+28	18	S04	sign		M	hash/lattice mark
+28	19	28	digit		M	
+28	20	64	digit		M	
+28	21	S34	sign		M	A+o ligature
+28	22	16	digit		M	
+28	23	22	digit		M	
+28	24	S51	sign		M	long-s closed into loop
+28	25	104	digit		M	
+28	26	X?	X?		M	short horizontal double-dash, equals-sign-like
+28	27	6	digit		M	
+28	28	1519	digit		M	digit run, boundary uncertain
+28	29	60	digit		M	
+28	30	S34	sign		M	A+o ligature
+28	31	12	digit	a	M	
+28	32	344	digit		M	digit run, boundary uncertain
+28	33	60	digit	re	M	last token before right margin
+29	1	102	digit	u	M	
+29	2	S37	sign		M	crossed t joined to o
+29	3	S54	sign		M	f with a closed loop
+29	4	64	digit		M	
+29	5	S24	sign		M	two-letter-looking ligature
+29	6	X?	X?		M	small cross/hash mark, unclear
+29	7	S21	sign	a	M	f-like mark with descending tail
+29	8	14	digit		M	
+29	9	S44	sign	u	M	p-like loop with crossed stem
+29	10	18	digit		M	
+29	11	X?	X?		M	short horizontal double-dash, equals-sign-like
+29	12	S33	sign		M	loop-with-two-legs shape
+29	13	14	digit		M	
+29	14	X?	X?		M	short horizontal double-dash, equals-sign-like
+29	15	4	digit		M	
+29	16	X?	X?		M	short horizontal double-dash, equals-sign-like
+29	17	5	digit		M	
+29	18	X?	X?		M	short horizontal double-dash, equals-sign-like
+29	19	6	digit		M	
+29	20	S28	sign		M	c-hook joined to m
+29	21	60	digit		M	
+29	22	X?	X?		M	short horizontal double-dash, equals-sign-like
+29	23	16	digit		M	
+29	24	15	digit		M	
+29	25	S40	sign		M	n-shape whose right leg closes into a loop
+29	26	24	digit		M	
+29	27	64	digit		M	
+29	28	62	digit		M	
+29	29	82	digit		M	
+29	30	16	digit		M	last token before right margin
+30	1	S23	sign		M	x-shaped sign
+30	2	S54	sign	a	M	f with a closed loop
+30	3	512	digit		M	digit run, boundary uncertain
+30	4	68	digit		M	
+30	5	16	digit		M	
+30	6	S28	sign	ma	M	c-hook joined to m
+30	7	60	digit		M	
+30	8	X?	X?		M	ink blot, unclear
+30	9	26	digit		M	
+30	10	S17	sign		M	double-cross or ff/H-like ligature
+30	11	104	digit		M	
+30	12	S64	sign	u	M	3-shape
+30	13	16	digit		M	
+30	14	5	digit		M	
+30	15	3	digit		M	
+30	16	S52	sign		M	lattice, three strokes across three
+30	17	X?	X?		M	small y-shaped mark, unclear
+30	18	16	digit		M	
+30	19	15	digit		M	
+30	20	S40	sign		M	n-shape whose right leg closes into a loop
+30	21	744	digit		M	digit run, boundary uncertain
+30	22	64	digit		M	
+30	23	62	digit		M	
+30	24	S51	sign		M	long-s closed into loop
+30	25	X?	X?		M	short horizontal double-dash, equals-sign-like
+30	26	615	digit		M	digit run, boundary uncertain
+30	27	26	digit		M	
+30	28	159	digit		M	digit run, boundary uncertain
+30	29	44	digit		M	
+30	30	S34	sign		M	A+o ligature
+30	31	16	digit		M	
+30	32	S13	sign		M	plus/cross mark
+30	33	S24	sign		M	two-letter-looking ligature, last token before right margin
+31	1	S46	sign	a	M	crossed t with j-like tail
+31	2	12	digit		M	
+31	3	60	digit		M	
+31	4	S37	sign		M	crossed t joined to o
+31	5	26	digit		M	
+31	6	S30	sign		M	c-hook joined to na
+31	7	S37	sign		M	crossed t joined to o
+31	8	26	digit		M	
+31	9	S25	sign		M	single cursive loop
+31	10	S34	sign		M	A+o ligature
+31	11	64	digit		M	
+31	12	/	divider		H	slanted stroke divider
+31	13	S37	sign		M	crossed t joined to o
+31	14	72	digit		M	
+31	15	16	digit		M	
+31	16	9	digit		M	
+31	17	S24	sign		M	two-letter-looking ligature
+31	18	S52	sign		M	lattice, three strokes across three
+31	19	X?	X?		M	small y-shaped mark, unclear
+31	20	62	digit		M	
+31	21	14	digit		M	
+31	22	S51	sign		M	long-s closed into loop
+31	23	S28	sign		M	c-hook joined to m
+31	24	64	digit		M	
+31	25	S54	sign		M	f with a closed loop
+31	26	26	digit		M	
+31	27	X?	X?		M	small y-shaped mark, unclear
+31	28	6	digit		M	
+31	29	159	digit		M	digit run, boundary uncertain
+31	30	S13	sign		M	plus/cross mark
+31	31	4	digit		M	
+31	32	S34	sign		M	A+o ligature
+31	33	16	digit		M	
+31	34	S13	sign		M	plus/cross mark
+31	35	S20	sign		M	looped capital resembling R
+31	36	64	digit		M	
+31	37	16	digit		M	
+31	38	15	digit		M	
+31	39	X?	X?	fait	M	plaintext-looking cursive word, repeats earlier line's phrase
+31	40	9	digit		M	
+31	41	X?	X?		M	small v/e-shaped mark, unclear
+31	42	6	digit		M	
+31	43	15	digit		M	
+31	44	S13	sign		M	plus/cross mark
+31	45	X?	X?		M	short horizontal double-dash, equals-sign-like
+31	46	6	digit		M	
+31	47	S34	sign		M	A+o ligature
+31	48	X?	X?		M	small v-shaped mark, unclear
+31	49	515	digit		M	digit run, boundary uncertain
+31	50	16	digit		M	last token before right margin
+32	1	X?	X?		M	small flourish mark, unclear
+32	2	S75	sign		M	bold capital H
+32	3	917	digit		M	digit run, boundary uncertain
+32	4	S13	sign		M	plus/cross mark
+32	5	4	digit		M	
+32	6	S51	sign		M	long-s closed into loop
+32	7	6	digit		M	
+32	8	X?	X?		M	short horizontal double-dash, equals-sign-like
+32	9	S54	sign		M	f with a closed loop
+32	10	S13	sign		M	plus/cross mark
+32	11	15	digit		M	
+32	12	23	digit		M	
+32	13	S23	sign		M	x-shaped sign
+32	14	82	digit		M	
+32	15	S30	sign		M	c-hook joined to na
+32	16	S37	sign		M	crossed t joined to o
+32	17	S51	sign		M	long-s closed into loop
+32	18	23	digit		M	
+32	19	X?	X?		M	short horizontal double-dash, equals-sign-like
+32	20	6	digit		M	
+32	21	S54	sign		M	f with a closed loop
+32	22	917	digit		M	digit run, boundary uncertain
+32	23	7	digit		M	
+32	24	S46	sign		M	crossed t with j-like tail
+32	25	102	digit		M	
+32	26	6	digit		M	
+32	27	S13	sign		M	plus/cross mark
+32	28	66	digit		M	
+32	29	18	digit		M	
+32	30	S13	sign		M	plus/cross mark
+32	31	957	digit		M	digit run, boundary uncertain
+32	32	6	digit		M	
+32	33	16	digit		M	
+32	34	X?	X?		M	long horizontal underline/flourish mark, possible paraph, end of line
+33	1	5	digit		M	
+33	2	S28	sign		M	c-hook joined to m
+33	3	S27	sign		M	Af ligature, ink drips below
+33	4	X?	X?		M	short horizontal double-dash, equals-sign-like
+33	5	6	digit		M	
+33	6	S54	sign		M	f with a closed loop
+33	7	60	digit		M	
+33	8	S13	sign		M	plus/cross mark
+33	9	|	divider		H	
+33	10	102	digit		M	
+33	11	44	digit		M	
+33	12	10	digit		M	
+33	13	45	digit		M	
+33	14	S34	sign		M	A+o ligature
+33	15	X?	X?		M	short horizontal double-dash, equals-sign-like
+33	16	8	digit		M	
+33	17	X?	X?		M	short horizontal double-dash, equals-sign-like
+33	18	64	digit		M	
+33	19	16	digit		M	
+33	20	15	digit		M	
+33	21	S37	sign		M	crossed t joined to o
+33	22	S13	sign		M	plus/cross mark
+33	23	X?	X?	faut	M	plaintext-looking cursive word with a long underline/bracket flourish after it, possibly a closing paraph -- last substantial mark on the page
+33	24	12	digit		M	
+33	25	60	digit		M	
+33	26	S34	sign		M	A+o ligature
+33	27	X?	X?		M	short horizontal double-dash, equals-sign-like
+33	28	6	digit		M	last token, end of transcription
