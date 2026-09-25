@@ -14,7 +14,10 @@ verdict is `blocked`, not `open`, and the blocked line says what you tried and w
 csNA wrote a bare, rule-5-compliant `open` for two rows, cited Bourdeau's read three paragraphs down instead of its
 own, and was corrected by the lane orchestrator -- it ran a full 45+ minutes after this rule was already pushed,
 so the rule's placement, not its absence, was the failure. RETRO-2026-09-24e's original wording assumed a
-sentence-form verdict this repo doesn't use.)
+sentence-form verdict this repo doesn't use.) Before an orchestrator briefs deep work from this verdict, run
+`tools/intake_gate_check.py <target>` and paste its output in the brief (RETRO-2026-09-25h proposal 4, after the
+Linhares breach): a nonzero exit means the citation this worker wrote does not read as compliant and the target
+stays `blocked` until it does.
 For a target from the Trew Briefsammlung, a physician's correspondence, or any German/Latin medical-humanist
 collection, add aerztebriefe.de (Schlagwort "Geheimschrift") as a seventh search before scoring. Lesson of 24
 Sept 2026 (Posthius to Eysenmenger 1614/1618): the six standard sources missed a listed decipherment there;
