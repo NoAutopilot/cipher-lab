@@ -1,4 +1,27 @@
 open
+Coxe's *Memoirs of ... Henry Pelham* (1829, both vols., archive.org djvu read and grepped in full by this worker) shows no hit for "Munchberg" or "'101'" and no dated letter matching 6 May/1 Jul/2 Sept 1743, and a fresh Google Books full-text search (key+country=US, 25 Sept 2026) for "Munchberg" found only an unrelated 1759 place-name hit, so no printed source read by this worker names this cluster.
+
+## Check-solved (LANE CX2, 25 Sept 2026)
+
+Six-source sweep per .claude/briefs/check-solved.md, worker CX2-SP87A, re-run fresh:
+
+1. **Web search.** `"SP 87/13" Newcastle Carteret 1743 cipher Munchberg solved` (1 query): no solve claim found; hits are TNA Discovery catalogue pages for SP 87/13/18 (confirming the same catalogue text already on file, plus a neighbouring item SP 87/13/64, "Munchberg reporting that he had been in Paris for three weeks... Holland, Lille, Douai and Valenciennes" — a fourth Munchberg-network item in the same piece, not previously logged, still an intelligence report *about* the agent, not a decipherment of the covering despatches) and `dbourdeau.github.io`'s index page only. No model-solve announcement.
+2. **Standard edition/calendar, read by this worker.**
+   a. TNA Discovery item-details re-fetched today for all three items (C9188861, C9188919, C9188928): `digitised: false` for all three, unchanged from 23 Sept 2026.
+   b. Coxe, *Memoirs of the Administration of ... Henry Pelham* (1829, 2 vols, archive.org `memoirsofadminis01coxeuoft`/`memoirsofadminis02coxe`, public domain, no login needed) — re-confirmed the 23 Sept finding by re-reading the already-downloaded djvu text: no hit for "Munchberg" or "'101'" in either volume, and none of Coxe's dated 1743 letters falls on 6 May, 1 Jul or 2 Sept (nearest: 31 May, 13 Jul, 4/8/16 Sept).
+   c. **New this pass:** Google Books full-text search (key+country=US) for `"Munchberg" Newcastle Carteret` returned only 2 hits, both *The London Chronicle* (1759, ids `lAjmKU5dL9IC`/`QzlSAAAAYAAJ`), an unrelated news item about the Bavarian town of Münchberg near Nuremberg during the Seven Years' War — not the 1743 spy codename, ruled out by date and context. A second query, `"Carteret and Newcastle" Basil Williams`, returned 300 results but none with a usable snippet for this book specifically (its own text is not indexed for full-text search on Google Books either) — Basil Williams's *Carteret and Newcastle* (1943), the dedicated modern monograph, remains genuinely unread: lending-only on archive.org (`carteretnewcastl0000will`) and not full-text searchable on Google Books. This is the one standing edition risk for this cluster, unchanged from 23 Sept 2026.
+3. **Community lists.** `sources/cryptiana/` regrepped for "Munchberg", "Carteret Newcastle", "SP 87/13": zero hits anywhere in the cached snapshot (no change from 23 Sept).
+4. **DECODE.** `sources/decode/` TSVs (fetched 24 Sept 2026) regrepped for "SP 87", "Munchberg", "Carteret", "Newcastle", "Dettingen": no record.
+5. **Bourdeau.** Fresh shallow clone of `github.com/dbourdeau/cyphersolver` (25 Sept 2026) grepped for "SP 87", "Munchberg", "Carteret", "Newcastle", "Dettingen": no target folder or catalogue row matches; the only "Newcastle/Carteret" text found (`catalogue.json` id 78, BL Add MS 32305) is a verify-note suggestion pointing elsewhere ("Needs the key or a clear copy: Newcastle/Carteret papers, SP 107, SP 78") on a *different* item (Paris 1719 and Carré 1742-45 code letters, unrelated correspondents), not a hit on our cluster.
+6. **Aymeloglu.** Fresh shallow clone of `github.com/aaymeloglu/unsolved-ciphers` (25 Sept 2026): 8 targets total, none matching this cluster's correspondents or shelfmark.
+
+**Sibling decipherment re-check.** TNA Discovery class-wide phrase search for "deciphered" restricted to record series "SP 87" re-run today: 8 hits total (SP 87/2/70, 5/62, 40/121, 40/77, 24/35, 36/13, 32/45, 40/76), unchanged from 23 Sept 2026 and none in piece 13 (1743) — no sibling decipherment for this cluster. The full-piece cipher-term sweep from 23 Sept (8 items in piece 13, including the newly re-noted SP 87/13/64 Munchberg report) still shows none carrying "deciphered".
+
+**Verdict: open, unchanged.** Coxe checked exhaustively and negative by name/date; no full-text route into Basil Williams's *Carteret and Newcastle* (1943), the standing edition risk, found this pass (lending-only, not Google-searchable); no community-list, DECODE, Bourdeau or Aymeloglu match; no model-solve announcement. Not "new"; not "unpublished" — a search result, not a discovery (rule 10).
+
+**Requests today (25 Sept 2026):** discovery.nationalarchives.gov.uk 3 (item-details re-fetch, >=1.6s apart); archive.org 0 (Coxe djvu already on disk from 23 Sept, re-read not re-fetched); googleapis.com/books 2 (key+country=US); github.com 2 (git-protocol shallow clones). WebSearch: 1 query. No logins, no credentials printed.
+
+---
 
 # Newcastle to Carteret, ciphers around the Dettingen campaign — TNA SP 87/13/18, 76, 85 (1743)
 
