@@ -61,50 +61,67 @@
  ],
  "matched_control": "not yet run; test 2 above proposes the design (synthetic English plaintext, same folding, same N, same solver)",
  "cheap_test_done": {
-  "test": 1,
-  "date": "25 Sept 2026",
-  "method": "specs/cheap-tests/mccormick-1999/run_test1.py (LANE B2 worker bMCC): catalogued every repeated token (2+ letters, split on any non-letter char) across both notes with position/count, plus a substring-occurrence count for the top 20 (specs/cheap-tests/mccormick-1999/top20_tokens.tsv); computed vowel share, share of letters covered by a repeated n-gram (n=3..6), and IC on the letters-only fold, combined N=746 (note1=367, note2=379), against 3-seed matched controls at the same N cut from tools/data/pg1661_holmes.txt (no network fetch): (A) real English prose, (B) the same English with vowels dropped, (C) the same English letters shuffled. No decipherment attempted.",
-  "target_vs_controls": {
-   "vowel_share": {
-    "notes": 0.2453,
-    "control_A_prose": 0.3794,
-    "control_B_novowel": 0.0,
-    "control_C_shuffled": 0.3794
+  "1": {
+   "test": 1,
+   "date": "25 Sept 2026",
+   "method": "specs/cheap-tests/mccormick-1999/run_test1.py (LANE B2 worker bMCC): catalogued every repeated token (2+ letters, split on any non-letter char) across both notes with position/count, plus a substring-occurrence count for the top 20 (specs/cheap-tests/mccormick-1999/top20_tokens.tsv); computed vowel share, share of letters covered by a repeated n-gram (n=3..6), and IC on the letters-only fold, combined N=746 (note1=367, note2=379), against 3-seed matched controls at the same N cut from tools/data/pg1661_holmes.txt (no network fetch): (A) real English prose, (B) the same English with vowels dropped, (C) the same English letters shuffled. No decipherment attempted.",
+   "target_vs_controls": {
+    "vowel_share": {
+     "notes": 0.2453,
+     "control_A_prose": 0.3794,
+     "control_B_novowel": 0.0,
+     "control_C_shuffled": 0.3794
+    },
+    "ngram_coverage_n3": {
+     "notes": 0.8432,
+     "control_A_prose": 0.7458,
+     "control_B_novowel": 0.7444,
+     "control_C_shuffled": 0.4124
+    },
+    "ngram_coverage_n4": {
+     "notes": 0.6609,
+     "control_A_prose": 0.4688,
+     "control_B_novowel": 0.3427,
+     "control_C_shuffled": 0.0371
+    },
+    "ngram_coverage_n5": {
+     "notes": 0.4678,
+     "control_A_prose": 0.3096,
+     "control_B_novowel": 0.1644,
+     "control_C_shuffled": 0.0
+    },
+    "ngram_coverage_n6": {
+     "notes": 0.2828,
+     "control_A_prose": 0.2525,
+     "control_B_novowel": 0.0916,
+     "control_C_shuffled": 0.0
+    },
+    "ic": {
+     "notes": 0.08927,
+     "control_A_prose": 0.0674,
+     "control_B_novowel": 0.0823,
+     "control_C_shuffled": 0.0674
+    }
    },
-   "ngram_coverage_n3": {
-    "notes": 0.8432,
-    "control_A_prose": 0.7458,
-    "control_B_novowel": 0.7444,
-    "control_C_shuffled": 0.4124
-   },
-   "ngram_coverage_n4": {
-    "notes": 0.6609,
-    "control_A_prose": 0.4688,
-    "control_B_novowel": 0.3427,
-    "control_C_shuffled": 0.0371
-   },
-   "ngram_coverage_n5": {
-    "notes": 0.4678,
-    "control_A_prose": 0.3096,
-    "control_B_novowel": 0.1644,
-    "control_C_shuffled": 0.0
-   },
-   "ngram_coverage_n6": {
-    "notes": 0.2828,
-    "control_A_prose": 0.2525,
-    "control_B_novowel": 0.0916,
-    "control_C_shuffled": 0.0
-   },
-   "ic": {
-    "notes": 0.08927,
-    "control_A_prose": 0.0674,
-    "control_B_novowel": 0.0823,
-    "control_C_shuffled": 0.0674
-   }
+   "reading": "the notes' repeated-n-gram coverage and IC sit above all three controls at every n (3..6), including above the vowel-dropped shorthand control; vowel share sits below real English prose, closer to (but distinctly above) the vowel-dropped control's zero. This is consistent with the source's own stated hypothesis (heavy reuse of a small token vocabulary -- NCBE, the -RSE family, WLD -- more like a personal shorthand or nomenclator than a 1:1 substitution of ordinary English letter frequencies), not a decipherment or a claim about what the tokens mean (rule 10). Substring occurrences of NCBE (18, vs 11 as a delimiter-isolated token) confirm it also appears embedded inside longer undelimited runs, close to the source's 'roughly 20 times' note.",
+   "top20_tokens_file": "specs/cheap-tests/mccormick-1999/top20_tokens.tsv",
+   "full_output": "specs/cheap-tests/mccormick-1999/test1_result.json"
   },
-  "reading": "the notes' repeated-n-gram coverage and IC sit above all three controls at every n (3..6), including above the vowel-dropped shorthand control; vowel share sits below real English prose, closer to (but distinctly above) the vowel-dropped control's zero. This is consistent with the source's own stated hypothesis (heavy reuse of a small token vocabulary -- NCBE, the -RSE family, WLD -- more like a personal shorthand or nomenclator than a 1:1 substitution of ordinary English letter frequencies), not a decipherment or a claim about what the tokens mean (rule 10). Substring occurrences of NCBE (18, vs 11 as a delimiter-isolated token) confirm it also appears embedded inside longer undelimited runs, close to the source's 'roughly 20 times' note.",
-  "top20_tokens_file": "specs/cheap-tests/mccormick-1999/top20_tokens.tsv",
-  "full_output": "specs/cheap-tests/mccormick-1999/test1_result.json"
+  "2": {
+   "date": "25 Sept 2026",
+   "method": "LANE B2 worker bMCC2: tools/family_run.py specs/mccormick-1999.json --family masc --cipher specs/cheap-tests/mccormick-1999/cipher_both_notes.txt --tokens letters --seeds 3 --gate 0.6, run twice -- once with the default English corpus (--corpus tools/data/pg1661_holmes.txt --corpus tools/data/pg2701_mobydick.txt) and once with the vowel-dropped English corpus built for this test (--corpus tools/data/en_vdrop, built by tools/data/en_vdrop/build_en_vdrop.py: word-initial vowels kept, word-internal a/e/i/o/u dropped, from the same two source texts, no network fetch). Both runs use --tokens letters (auto mode would pick 'space' here because the spec's ciphertext mixes letters with digits/punctuation/hyphens; --tokens letters reproduces test 1's letters-only fold, N=746, K=24 distinct). Rows in ciphers/mccormick-1999/HYPOTHESES.md.",
+   "control_recovery": {
+    "default_english": "mean 0.994, range 0.989-0.999 (3 seeds)",
+    "vowel_dropped_english": "mean 0.985, range 0.983-0.989 (3 seeds)",
+    "test1_reference_ic_only": "test 1's own controls were a different design (IC/n-gram-coverage/vowel-share statistics, not a solved-recovery fraction): IC 0.0674 (prose), 0.0823 (no-vowel), 0.0674 (shuffled) vs notes 0.08927; not directly comparable to this test's recovery fractions, kept here only because the brief asked for the test-1 numbers alongside test 2's for reference."
+   },
+   "target_judge": {
+    "default_english": "judge PASS (tools/judge_plaintext.py specs/mccormick-1999.json --file ciphers/mccormick-1999/families/masc-1.txt, run via family_run.py; a PASS is a gate for a verifier, not a reading, rule 10)",
+    "vowel_dropped_english": "judge PASS (same command against the vowel-dropped-corpus run's decode)"
+   },
+   "caveat": "Both controls sit at or above the ~0.95 near-ceiling line CLAUDE.md rule 3 warns has 'no headroom to show a gain regardless of the technique' -- a masc anneal at N=746, K=24 (restarts=8) essentially always recovers a random simple-substitution key at this length, for both the plain and vowel-dropped English designs. Both target decodes (ciphers/mccormick-1999/families/masc-1.txt, overwritten by each run in turn -- see the run's own date/corpus header line inside the file) read as letter salad with no recognisable English words, despite the judge PASS: e.g. run 1 opens 'hanheathestasiheahethtsh / deatalastalestereeastalestoar'; run 2 opens 'htdhmtthrsttsnhmthrthtsh / grtttltsttlsstrhsststtlrstwth'. This is consistent with the judge's own documented limitation for this target (schema_note above: 'no language check is meaningful yet given the token structure'): the heavy repeated-token structure the notes already carry (NCBE, -RSE family, test 1) drives n-gram likelihood up under any consistent key, independent of whether the key is right, so a PASS here is not evidence of a real simple-substitution decipherment under either English design. Neither run supports the source's competing hypothesis (personal shorthand/nomenclator, not 1:1 letter substitution) over the null; a bespoke tokenizer-aware judge (test 1's schema_note) remains the more promising next step, not a straight masc anneal at this N.",
+   "script": "tools/data/en_vdrop/build_en_vdrop.py (new tool + tools/tests/test_en_vdrop.py, offline test)"
+  }
  },
  "judge": {
   "letters_min": 700,
