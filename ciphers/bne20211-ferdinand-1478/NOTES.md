@@ -140,10 +140,13 @@ pass or a different entry point, e.g. a direct record permalink if one can be fo
 
 ## Recovery route (do not decode; for a solver session)
 
-1. The DECODE login worker fetches **R1180** (item /126, Trujillo, 4 Dec 1478 — Decrypted, the crib) and
-   **R1172** itself (item /123, the target, Non-decrypted) into this folder's `decode/`. If Aymeloglu's
-   "ten already deciphered" count for this run is right, the other Decrypted siblings across 1470-1479 are worth
-   the same fetch for a larger key (their DECODE ids not looked up this pass).
+1. **Done, partially blocked**: the DECODE login worker already fetched R1180 and R1172 into `decode/` (see
+   "DECODE fetch" below) — metadata confirms the crib shape, but the actual page images and R1180's plaintext
+   document are placeholder-blocked account-wide ("Insufficient permissions"), same block as record 8725. A
+   role upgrade (`outreach/decode-image-access.md`, reply pending) or the BNE image route is needed before the
+   crib can actually be read. If Aymeloglu's "ten already deciphered" count for this run is right, the other
+   Decrypted siblings across 1470-1479 are worth the same fetch for a larger key (their DECODE ids not looked up
+   this pass) once images are reachable.
 2. Before spending solver time: get the full text of Tomokiyo 2018 (an academia.edu account/download, a library
    ILL, or asking Tomokiyo directly — he is an active, responsive researcher per his cryptiana blog) and check
    whether his "Cipher (1476-1479)" is keyed from item /123 or /126 by name. This is the single cheapest test
