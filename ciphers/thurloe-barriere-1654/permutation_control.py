@@ -6,6 +6,11 @@ to the control's). ZX-BAR, 25 Sept 2026. Imports permutation_test.py and matched
 is the identical statistic/null code the target's run used, not a reimplementation.
 
 Usage: python3 permutation_control.py [--seeds 10] [--n 1000] [--ctpath ciphertext.tsv]
+       python3 permutation_control.py --marked --marked-share 0.59 [--seeds 10]   (ZX-BAR2, 25 Sept 2026:
+       code+mark control, matched_control.py's build_control_observations_marked() -- same run/profile
+       construction, but each observation is tagged 'code-mark' or 'code-none', with marks carrying real
+       meaning per (code, word) pair; --marked-share should be set to key_gloss_marked.tsv's own observed
+       marked fraction so the control matches the target's design, not an assumed one.)
 """
 import argparse
 import random
@@ -19,11 +24,16 @@ def main():
     ap.add_argument('--seeds', type=int, default=10)
     ap.add_argument('--n', type=int, default=1000)
     ap.add_argument('--ctpath', default='ciphertext.tsv')
+    ap.add_argument('--marked', action='store_true', help='use the code+mark control instead of the bare-code one')
+    ap.add_argument('--marked-share', type=float, default=0.75, dest='marked_share')
     args = ap.parse_args()
 
     zas, zbs = [], []
     for seed in range(args.seeds):
-        obs = mc.build_control_observations(seed, args.ctpath)
+        if args.marked:
+            obs = mc.build_control_observations_marked(seed, args.ctpath, marked_share=args.marked_share)
+        else:
+            obs = mc.build_control_observations(seed, args.ctpath)
         real = pt.loo_statistic(obs)
         n_obs = len(obs)
 

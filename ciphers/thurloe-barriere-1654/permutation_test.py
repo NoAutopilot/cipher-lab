@@ -27,6 +27,14 @@ gloss words (the method NOTES.md s.2 uses, since typesetting does not column-ali
 source token) is itself informative, independent of which codes exist where -- a different question from Null A.
 
 Usage: python3 permutation_test.py [key_gloss.tsv] [--n 1000] [--seed 0]
+       python3 permutation_test.py --key key_gloss_marked.tsv [--n 1000] [--seed 0]
+
+--key is an explicit alias for the same positional path argument (ZX-BAR2, 25 Sept 2026, added so a
+code+mark key file such as key_gloss_marked.tsv can be named without relying on positional-argument order;
+the statistic/nulls are byte-identical to the bare-code run -- this file is not forked, only given a second
+way to name its input). key_gloss_marked.tsv uses the same code/value/grade/status/source_run/note schema as
+key_gloss.tsv; its 'code' column is the code+mark unit (e.g. "61-circumflex") instead of the bare digit, so
+build_key()'s existing per-code grouping automatically treats two marks of the same digit as different keys.
 """
 import argparse
 import collections
@@ -111,9 +119,13 @@ def zscore(real, nulls):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('keypath', nargs='?', default='key_gloss.tsv')
+    ap.add_argument('--key', dest='key_opt', default=None,
+                     help='explicit alias for keypath (e.g. --key key_gloss_marked.tsv); overrides the positional arg if given')
     ap.add_argument('--n', type=int, default=1000)
     ap.add_argument('--seed', type=int, default=0)
     args = ap.parse_args()
+    if args.key_opt:
+        args.keypath = args.key_opt
 
     observations = load_observations(args.keypath)
     real = loo_statistic(observations)

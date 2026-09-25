@@ -263,6 +263,74 @@ def build_control_observations(seed, ctpath=PASSA):
     return observations
 
 
+MARK_TYPES = ['circumflex', 'grave', 'acute', 'macron', 'caron', 'diaeresis', 'dot']
+
+
+def build_control_observations_marked(seed, ctpath=PASSA, marked_share=0.75):
+    """Code+mark variant of build_control_observations() (ZX-BAR2, 25 Sept 2026): same run/profile
+    construction, same homophone-code assignment per top word, but each observation also gets a mark. A mark
+    is a deterministic function of (code, word) drawn from a 7-symbol pool (a separate rng stream, so it does
+    not perturb the unmarked function's draws) -- every occurrence of code C standing for word W gets the SAME
+    mark, so if C is also used (elsewhere) for a different word W', that occurrence very likely gets a
+    DIFFERENT mark (7 symbols vs typically 2-4 homophones per code), i.e. marks carry real, exploitable
+    meaning in this control, by construction. Only a `marked_share` fraction of occurrences actually receive
+    their mark (rng-drawn per occurrence); the rest are tagged 'none', modelling a partially-marked design like
+    the real letter's (not every token carries a visible mark). The returned 'code' field is 'BARECODE-MARK'
+    (e.g. '43-circumflex' or '43-none'), the same string shape key_gloss_marked.tsv uses, so
+    permutation_test.py's existing per-code grouping treats a marked and an unmarked occurrence of the same
+    bare digit as different keys, exactly modelling the code+mark hypothesis under test.
+    `marked_share` should be set to the SAME share the real key_gloss_marked.tsv observations show (computed by
+    the caller from that file), so the control matches the target's actual marked/unmarked ratio, not an
+    assumed one (CLAUDE.md rule 3)."""
+    rng = random.Random(seed)
+    profile = real_run_profile(ctpath)
+    total_n = sum(n for _, n, _ in profile)
+    words = load_words(total_n)
+
+    freq = collections.Counter(words)
+    top_words = [w for w, _ in freq.most_common(9)]
+
+    code_pool = list(range(10, 99))
+    rng.shuffle(code_pool)
+    next_code = iter(code_pool)
+    word_to_codes = {}
+    for w in top_words:
+        n_hom = rng.choice([2, 3, 3, 4])
+        word_to_codes[w] = [next(next_code) for _ in range(n_hom)]
+    used_word_code = {}
+
+    mark_rng = random.Random(seed * 7919 + 13)
+    mark_for_pair = {}
+
+    def mark_of(code, word):
+        key = (code, word)
+        if key not in mark_for_pair:
+            mark_for_pair[key] = mark_rng.choice(MARK_TYPES)
+        return mark_for_pair[key]
+
+    codes_at_pos = []
+    for w in words:
+        if w in word_to_codes:
+            c = rng.choice(word_to_codes[w])
+        else:
+            if w not in used_word_code:
+                used_word_code[w] = next(next_code, None) or rng.randint(100, 199)
+            c = used_word_code[w]
+        codes_at_pos.append(str(c))
+
+    pos = 0
+    observations = []
+    for run_id, n, k in profile:
+        toks = codes_at_pos[pos:pos + n]
+        truth = words[pos:pos + n]
+        for i in range(k):
+            code, word = toks[i], truth[i]
+            mark = mark_of(code, word) if rng.random() < marked_share else 'none'
+            observations.append({'code': f'{code}-{mark}', 'value': word, 'source_run': run_id})
+        pos += n
+    return observations
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--seeds', type=int, default=5)
