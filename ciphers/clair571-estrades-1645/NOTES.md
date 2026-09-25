@@ -1,4 +1,60 @@
 open
+Négociations secrètes touchant la paix de Munster et d'Osnabrug (Le Clerc, 1725, tome II, archive.org
+negociationssecr02lecl) read by this worker: printed extract of a D'Estrades letter to Mazarin, 23 Sept 1645
+(djvu line ~71269, within the target's own Jul-Dec 1645 window), control words "Servien" (329 hits) and
+"plénipotentiaire" (81 hits) confirm the OCR text is searchable for this period; the target's own ciphered
+letter "adressée à l'un des plénipotentiaires" not found printed there or in tome III.
+
+## Check-solved (LANE CX, 2026-09-25)
+
+Six-source sweep run fresh this pass (LANE CX worker CX-CLAIR), on top of -- not only quoting -- the 24 Sept
+2026 LANE G2 pass kept below.
+
+1. **Web search.** `Acta Pacis Westphalicae "Estrades" 1645 Brasset chiffre Clairambault` -- confirms APW's
+   *Die französischen Korrespondenzen* covers this exact correspondence and date range (vol. for 25 Nov 1645-
+   8 Jun 1646 named), but returned no page-level detail on this letter or on Clairambault; a Zenodo record
+   ("Acta Pacis Westphalicae: Corpus français (APWCF)") surfaced as a possible full-text corpus, not opened
+   this pass (budget). apw.digitale-sammlungen.de itself not reached this pass.
+2. **Standard printed edition, opened and read.** archive.org `negociationssecr02lecl` and `negociationssecr03lecl`
+   (Jean Le Clerc, *Négociations secrètes touchant la paix de Munster et d'Osnabrug*, 1725, tomes II-III --
+   the edition the job brief names) fetched in full (`_djvu.txt`, both HTTP 200) and grepped. Tome II: control
+   "Servien" 329 hits, "plénipotentiaire" 81 hits (OCR reads for this period); "Estrades" 7 hits, all letters
+   or mentions from Aug-Sept 1645 (read in full at djvu line 71269: an "Extrait d'une lettre de Monsieur
+   d'Estrades à Monsieur le Cardinal Mazarin, du 23 Septembre 1645," on Spanish peace overtures to the Dutch --
+   a letter to Mazarin, not to a plenipotentiary, and not marked ciphered); "Brasset" 0 hits. Tome III:
+   "Estrades" 0, "Brasset" 1, "chiffre"/"déchiffrer"/"chiffrer" 20+ hits (the edition routinely prints
+   deciphered cipher correspondence in clear, the same pattern check-solved.md flags for Thurloe/Birch --
+   worth a targeted read by a future worker, out of this pass's budget). No printed occurrence of M27's
+   specific Jul-Dec 1645 letter "adressée à l'un des plénipotentiaires" found in either tome.
+3. **Community lists.** `sources/cryptiana/web/louisxiv0.htm` re-read (on disk): confirms the 24 Sept findings
+   below (Clair. 577/579 reconstructed by Lasry, Baluze 172 reconstructed, Clair. 574 "not found online" per
+   Tomokiyo) -- no new content since 24 Sept. No Cipherbrain hit by web search this pass.
+4. **DECODE.** `unsolved-ciphers/catalogue/decode-catalog.csv` (fresh clone, 25 Sept 2026) re-grepped for
+   "clairambault 57": confirms the same two rows the 24 Sept pass found, record 9431 (Clairambault 574, p.4-5,
+   1645-1649, Henri Brasset, Key) and record 9430 (Clairambault 577, p.1, 1647, Key) -- no new record, no
+   record for 571-582 dated specifically Jul-Dec 1645. Login-gated RecordsView not opened (budget).
+5. **Bourdeau** (fresh shallow clone, 25 Sept 2026, `github.com/dbourdeau/cyphersolver`). Grepped for
+   "estrades", "clairambault 57": hits in `napoleon/unsolved.htm` (Clair. 577, 1647, Italian letter, solved by
+   Lasry/Biermann 2025 -- same item as source 3, not M27), `colbert/NOTES.md` (lists a published "d'Estrades"
+   key among 1665-74 Colbert-office ciphers, unrelated correspondent/date), `bordeaux/NOTES.md` (Brienne's
+   1651 Cipher 2 "to d'Estrades" -- a different, later correspondence). No hit for 571-582 or Jul-Dec 1645.
+6. **Aymeloglu** (fresh shallow clone, 25 Sept 2026, `github.com/aaymeloglu/unsolved-ciphers`). Grepped for
+   "estrades", "clairambault 57": no hit beyond the catalogue CSV already covered under source 4.
+
+Requests this section: archive.org 3 (1 advancedsearch, 2 `_djvu.txt` fetches, all `-L` follow, >=1.6s apart).
+WebSearch 1. github.com 2 fresh shallow clones (shared with the other three targets in this brief).
+
+## Verdict (confirmed, LANE CX 2026-09-25)
+
+Stays **open**. The printed edition the job brief names (Le Clerc's *Négociations secrètes*) is now directly
+read by this worker with a confirmed control, closing the gap the 24 Sept pass left (source 2 "not opened").
+No source found the target's specific Jul-Dec 1645 ciphered letter to a plenipotentiary in print or in a
+catalogue. The 24 Sept pass's caution stands: the exact volume among 571-582 is still not pinned, and the same
+date/circle (Brasset/d'Estrades/Mazarin, 1645) already has DECODE Key records and Tomokiyo/Lasry
+reconstructions in the immediate neighbourhood -- worth reading Clair. 574 and DECODE 9430/9431 directly, and
+tome III's several clear-printed deciphered passages, before any fresh cryptanalysis.
+
+---
 
 # Letter to a plenipotentiary at the Peace of Münster, Jul-Dec 1645 -- BnF Clairambault 571-582
 
