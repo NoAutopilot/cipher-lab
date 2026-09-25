@@ -1,0 +1,31 @@
+# sufi-fiddle ciphertext.txt -- RULE 2 NOTE (image over transcription)
+# This is NOT a transcription of the primary source (the violin panel itself, never
+# photographed/published). It is a single blind sign-pass over a SECONDARY source: a hand copy
+# of the seven lines, captioned "copied by V. Castle Winter" (name partly illegible), embedded
+# in/over a page of printed English prose (visible faintly behind the ink -- consistent with a
+# scan of a page from Bulliet's own novel, not an independent archival document). Fetched from
+# scienceblogs.de/klausis-krypto-kolumne/files/2014/10/Suffi-Fiddle-614.png (25 Sept 2026),
+# ciphers/sufi-fiddle/images/Suffi-Fiddle-614.png, sha1 f4baf3981afbb261a8d0c0cf01e256c7631de2fd.
+# Single pass, worker bSUF, 25 Sept 2026. Each token below is one visually distinguished
+# letter-shaped sign (own sign ids: line number + sequence, e.g. L1-01), transcribed by VISUAL
+# RESEMBLANCE to Arabic-script letterforms for counting purposes only -- this is a script-ID
+# checklist input, not a claimed reading, and no meaning is asserted. Two spans are illegible
+# under a crosshatched "glue" repair mark on the original copy (line 3 mid-line, line 4 line-end
+# carrying into a partial line 4b) and are recorded as [OBSCURED], excluded from N. Two further
+# signs the copyist herself flagged "hard to read?" are recorded as [UNCERTAIN:<copyist's own
+# bracketed alternative>].
+#
+# Sign inventory used below (own labels, by nearest resembling standard Arabic letterform,
+# independent of position/joining form): ha,waw,lam,alif,hamza,sin/shin,dal,fa,ghayn/ayn,
+# ta/tha/ba(dotted-group),kaf,ra,nun,mim,ya,jim/ha2/kha,sad/dad,ta2/za2,dhal,lam-alif(ligature).
+# Ambiguous dotted letters within one visual cluster (b/t/th, j/h/kh) are pooled as one type per
+# cluster since the dot count/position was not always resolvable at this resolution -- this
+# undercounts K somewhat; noted in NOTES.md.
+
+L1: ha waw lam | ha alif hamza | sin lam dal | waw | fa ghayn
+L2: ha ain | ta waw | lam kaf fa ta waw | dad ya-dotted | tha alif lam kaf fa | ghayn tha | ba tha | kaf ta lam | kaf ta dal | hamza ba ta | sin nun alif ba ain | shin fa ra ghayn | lam ba alif
+L3: sin lam nun kaf waw [OBSCURED ~6-8 signs, crosshatch/glue] ta nun kaf ya alif | lam kaf alif
+L4: dad ta ghayn | kaf waw | dad nun ain | mim fa | dal [UNCERTAIN:?] | sin ya ra kaf waw | sin ra | lam shin ba ya alif | kaf mim ra | mim waw dal | ba ya ra ta | fa nun ghayn | mim waw [OBSCURED ~5-7 signs, crosshatch/glue "glue"] nun ta ya dal
+L5: kaf kaf sin | sin ta | mim waw | mim ha ya dal | kaf kaf sin nun | [UNCERTAIN:ra, copyist's own bracket "[r]?"]
+L6: sin ra kaf waw | mim mim waw | ta lam dal | ba ra kaf ta | dal waw | ain waw lam kaf | ain lam | kaf lam | ain lam | lam kaf | lam alif mim kaf [UNCERTAIN:?, copyist's own bracket]
+L7: sin lam alif kaf | lam kaf | sin waw lam kaf

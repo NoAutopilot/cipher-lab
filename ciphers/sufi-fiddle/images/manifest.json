@@ -1,0 +1,25 @@
+{
+  "fetched": "25 Sept 2026",
+  "worker": "bSUF (LANE B4), Sonnet",
+  "host": "scienceblogs.de",
+  "requests_to_host": 2,
+  "note": "scienceblogs.de is a shared host budget per CLAUDE.md good-citizen rule; this pass used 2 of the brief's 4-request allowance and is now free for the next holder.",
+  "files": [
+    {
+      "path": "Suffi-Fiddle-614.png",
+      "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2014/10/Suffi-Fiddle-614.png",
+      "size_bytes": 177756,
+      "sha1": "f4baf3981afbb261a8d0c0cf01e256c7631de2fd",
+      "dims": "614x327",
+      "caption": "The inscription: a hand copy of the seven lines, 'copied by V. Castle Winter' (name partly illegible), on what appears to be a page of English prose (Bulliet's novel or his notes, not the violin itself). This is the only image of the inscription anywhere per Schmeh's post; resolution and source of the underlying copy are unknown."
+    },
+    {
+      "path": "Sufi-Fiddle-cover.png",
+      "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2017/04/Sufi-Fiddle.png",
+      "size_bytes": 232150,
+      "sha1": "bea1992d7ea1c541debbf2b15a0c244b18822b5e",
+      "dims": "328x499",
+      "caption": "Kruh's Cryptologia 3/1991 review / the novel's cover, per Schmeh's post. Provenance context only, not the inscription."
+    }
+  ]
+}
