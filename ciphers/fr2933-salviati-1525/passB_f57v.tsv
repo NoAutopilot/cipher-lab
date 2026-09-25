@@ -119,3 +119,165 @@ line	pos	code	marks	action	conf	note
 5	21	Z		confirm	H
 5	22	e	dot	correct	M	small loop with a dot above matches "e", not the zigzag "Z" shape the classifier proposed; a separate "+"-like cross appears below/right, possibly a second merged mark, left unclassified
 5	23	_		plain	L	diagonal flourish with dots above and a closed loop below, at line end; kept plain per classifier though the loop shape is somewhat sign-like, genuinely ambiguous
+6	1	_		plain	L	two stacked numeral-like strokes (7 over 1), no clear base sign shape, kept plain per classifier
+6	2	a	1	confirm	H	
+6	3	lam		confirm	H	
+6	4	bh		confirm	H	
+6	5	S7		confirm	H	
+6	6	#		confirm	H	
+6	7	e	dot	confirm	H	
+6	8	g	5	confirm	H	
+6	9	w		confirm	M	cursive w/omega shape reasonably matches despite low classifier share
+6	10	tee		confirm	H	
+6	11	o.		confirm	H	
+6	12	H		confirm	H	
+6	13	_		plain	L	cursive shape resembling joined letters, ambiguous, kept plain per classifier's high confidence
+6	14	g	dot	confirm	H	
+6	15	w		confirm	H	
+6	16	S7		confirm	H	
+6	17	y		confirm	H	
+6	18	H	1|o	confirm	H	
+6	19	m	~	confirm	H	
+6	20	_		plain	L	numeral-like marks (1,7,9), no clear base sign shape
+6	21	_		plain	L	"3" over a loop shape, no clear base sign
+6	22	y		confirm	H	
+6	23	S		confirm	H	
+6	24	L		confirm	H	
+6	25	g	~	correct	M	clear 9/g-loop shape on zoom, not plain as classifier proposed
+6	26	H		confirm	H	
+7	1	w		confirm	H	
+7	2	tee		confirm	H	
+7	3	o.		confirm	H	
+7	4	y		confirm	H	
+7	5	tee		confirm	H	
+7	6	f		confirm	H	
+7	7	w		confirm	H	
+7	8	Lx		confirm	M	
+7	9	dl		confirm	H	
+7	10	o.		confirm	H	
+7	11	S4		confirm	H	
+7	12	dl		confirm	H	
+7	13	Lx		confirm	H	
+7	14	dl		confirm	H	
+7	15	y		confirm	H	
+7	16	+		confirm	L	loop+cross shape more complex than a simple "+"; genuinely ambiguous on zoom, kept classifier's code
+7	17	_		plain	M	resembles a plain cursive fragment ("bn"-like)
+7	18	_		plain	L	shape doesn't match S7's characteristic 7-form; resembles a cursive loop+n, ambiguous
+7	19	dl		confirm	H	
+7	20	v		confirm	H	
+7	21	_		plain	M	small hook mark only
+7	22	L		correct	M	clear angle-bracket shape matches "L" on zoom, not cursive "y"
+7	23	lam		confirm	M	
+7	24	nt		confirm	L	ambiguous loop shape, doesn't clearly show the n+cross structure, kept classifier's code
+7	25	_	dot	plain	L	loop shapes resembling w/m, ambiguous, kept plain per classifier
+8	1	_		plain	M	simple horizontal dash stroke on zoom, does not match the box-bracket "]" shape
+8	2	_	dot	plain	L	loop+tail shape, ambiguous between a real sign and plain script, kept plain
+8	3	_		plain	M	rounded shapes ("oc"), likely stamp-text bleed-through
+8	4	_		plain	H	reads as "octobre" stamp text bleed-through, not cipher ink -- the round stamp evidently overlaps the bottom of line 8 as well as line 9
+8	5	_		plain	H	stamp text bleed-through continuation
+8	6	Z		confirm	L	circle+zigzag shape, stamp interference nearby, tentative
+8	7	lam		confirm	L	single diagonal stroke, doesn't strongly confirm the two-stroke Λ shape, tentative
+8	8	_		plain	L	digit-like marks (1,5) only, no clear base sign
+8	9	S		confirm	L	two vertical strokes, doesn't clearly show S's curve, tentative
+8	10	Z		confirm	L	digit-like marks only, no clear zigzag, tentative
+8	11	S		confirm	L	short hook+digit mark, tentative
+8	12	_		plain	M	small loop/hook curl only
+8	13	_		plain	M	resembles a legible plain cursive fragment ("las"/"bar"-like)
+8	14	tee		confirm	M	
+8	15	_		plain	M	diagonal stroke, part of the same hatching-like pattern seen in line 9 (pos 10-15), likely stamp/watermark related, not a sign
+8	16	_		plain	M	diagonal stroke, same hatching pattern as pos 15
+8	17	_	dot	plain	M	faint cursive squiggle only
+9	1	_	~	plain	H	faint noise / stamp bleed-through blobs, no discernible ink shape
+9	2	_		plain	H	faint noise / stamp bleed-through blobs
+9	3	_		plain	H	faint noise / stamp bleed-through blobs
+9	4	_		plain	L	mostly noise blobs with a small hook shape, insufficient ink to confirm "g"
+9	5	_		plain	H	faint noise / stamp bleed-through
+9	6	_		plain	H	faint noise / stamp bleed-through
+9	7	bh		correct	L	tall hooked stroke visible independent of the stamp ink; heavy stamp interference immediately adjacent, tentative
+9	8	y	1	confirm	M	cursive y-hook stroke visible despite the stamp-cluttered region
+9	9	_		plain	H	the circular archival stamp itself ("...OTTOBRE..." partly legible), not cipher ink
+9	10	_		plain	H	diagonal hatching line (part of a repeated parallel-line pattern pos 10-15), likely stamp-radiance or watermark/crease bleed-through, not a sign
+9	11	_	1|1	plain	H	diagonal hatching line, same pattern
+9	12	_		plain	H	diagonal hatching line, same pattern
+9	13	_		plain	H	diagonal hatching line, same pattern
+9	14	_	1	plain	H	diagonal hatching line, same pattern
+9	15	_	dot	plain	H	diagonal hatching line, pattern tapering off
+9	16	_		plain	L	very faint mark, insufficient ink to confirm the "bh" shape the classifier proposed
+10	1	_		plain	H	faint paper crease/fold, no ink; not a "Z" sign as classifier proposed
+10	2	_	o	plain	H	crown watermark outline showing through the paper, no ink
+10	3	_	~|?|?	plain	H	crown watermark outline, no ink
+10	4	_	?	plain	H	crown watermark outline, no ink
+10	5	_		plain	H	crown watermark outline, no ink
+10	6	_		plain	H	crown watermark outline, no ink
+11	1	S4		confirm	H	
+11	2	dl		confirm	M	
+11	3	Lx		confirm	H	
+11	4	_		plain	M	very faint/blank on zoom, nothing conclusive
+11	5	eps	1	confirm	M	
+11	6	S7		confirm	H	
+11	7	eps	~	confirm	H	
+11	8	wd		confirm	H	
+11	9	[	1	confirm	M	
+11	10	]		confirm	L	loop+hook shape, doesn't clearly show the box-bracket form, tentative
+11	11	g		confirm	L	angle+loop shape, unclear on zoom, tentative
+11	12	g	~	confirm	H	
+11	13	m	5	confirm	H	
+11	14	H		correct	M	loop-pair shape resembling H's typical "1,o" mark pattern on zoom, not plain as classifier proposed
+11	15	H	1	confirm	H	
+11	16	g	o	confirm	H	
+11	17	rz		confirm	H	
+11	18	psi		confirm	H	
+11	19	eps		confirm	H	
+11	20	w		confirm	H	
+11	21	o.		confirm	H	clear ring+dot on zoom despite low classifier share
+11	22	_		plain	M	loop shape resembles a plain letter or a "bh" lead-in fragment
+11	23	g		confirm	M	
+12	1	phi		correct	M	slashed-circle-on-a-stem shape matches "phi" on zoom, not "bh"'s tall-stem-with-hook
+12	2	lam		confirm	M	
+12	3	_		plain	L	digit-like marks (3,9) only, no clear base sign
+12	4	_		plain	L	cursive shape resembling "wo", ambiguous, kept plain per classifier
+12	5	o.		confirm	H	
+12	6	_		plain	M	double-loop shape resembling w/m, kept plain per classifier
+12	7	lam		confirm	L	hook shape, doesn't clearly show the two-stroke Λ form, tentative
+12	8	_		plain	M	small "1/0"-like digit mark only
+12	9	bh		confirm	H	
+12	10	o.		confirm	H	
+12	11	S7		confirm	H	
+12	12	lam		confirm	H	
+12	13	S7	~	confirm	H	
+12	14	e		confirm	H	
+12	15	g	~	confirm	H	
+12	16	e		correct	M	looped-bowl shape matches "e" on zoom; several digit-like marks (2,3) noted but don't cleanly match the standard marks vocabulary, left unclassified
+12	17	_	dot	plain	M	resembles a plain cursive fragment ("h"/"li"-like)
+12	18	lam		confirm	H	
+12	19	g	~	confirm	H	
+12	20	H	1|o	confirm	H	
+12	21	tee		confirm	H	
+12	22	_	dot	plain	M	resembles a plain cursive fragment, same pattern as pos 17
+12	23	psi	dot	confirm	H	
+12	24	_		plain	M	resembles a plain cursive fragment, same pattern as pos 17 (edge-cropped)
+13	1	y		confirm	H	
+13	2	_	1	plain	M	digit-like ("15") marks only
+13	3	_		plain	M	small squiggle only
+13	4	f		confirm	M	
+13	5	w		confirm	H	
+13	6	y		confirm	H	
+13	7	m		confirm	H	
+13	8	#		confirm	M	
+13	9	y		confirm	H	
+13	10	g	~	confirm	H	
+13	11	m	~	confirm	H	
+13	12	w		confirm	H	
+13	13	lam		confirm	H	
+13	14	nt	~	confirm	H	
+13	15	y		confirm	H	
+13	16	g		confirm	H	
+13	17	eps		confirm	H	
+13	18	g		confirm	H	
+13	19	S		confirm	H	
+13	20	_		plain	L	digit-like marks only in this crop, no clear cursive-y shape visible; genuinely uncertain
+13	21	rz		confirm	H	
+13	22	nt		confirm	H	
+13	23	rz		confirm	H	
+13	24	_		plain	M	resembles a plain cursive fragment ("7e"-like)
+13	25	_	ot|dot|~	plain	M	resembles a plain cursive fragment (partially cropped)
