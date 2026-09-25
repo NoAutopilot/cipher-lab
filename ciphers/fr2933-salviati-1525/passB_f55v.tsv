@@ -447,3 +447,54 @@ line	pos	code	marks	action	conf	note
 17	19	_		confirm	H	plain letters continuing the word (reads roughly "tend...")
 17	20	_		confirm	M	plain letter(s) continuing the same word, ending unclear
 17	21	_		correct	M	flat tail/flourish, most likely the final letter's descender continuing the word rather than a distinct w sign (classifier's own share was only 0.22); box is also cut at the strip's right edge, limiting certainty
+18	1	_		correct	M	tall ascender letter (cap P/b-like), starts word continuing into pos2-4 'arti' -> reads 'Parti'; no match to atlas y's tilde+hook-descender flourish
+18	2	_		correct	H	'pa', continues word 'Parti', clearly legible cursive
+18	3	_		correct	H	'ar', continues 'Parti' - clearly legible p-a-r-t run
+18	4	_		correct	H	'ti' + terminal flourish, ends word 'Parti'; not a '#' mark, just cursive ductus
+18	5	_		correct	M	isolated capital letter (J-like loop+crossbar), likely a name/word initial; shape does not match atlas y (no tilde-top/hook-below-baseline construction)
+18	6	S		confirm	M	small hooked 's' flanked by two dots (isolation points); shape matches atlas S plate closely, but combined with pos5 could just be initials 'J.s.' - genuinely ambiguous, flagged for reconciler; kept classifier's S given the dot-isolation is otherwise unparalleled on plain runs in this line
+18	7	nt		split	M	tall merged box (h=98, overruns into next-line gap); top disconnected ink group matches atlas nt (loop + crossing tail stroke); second group at pos7.5; a third, fainter 's'-shaped ink blob sits still lower in the same box, separated by a further gap - likely stray/interlinear ink below both real signs, not confidently assignable to either position
+18	7.5	S	~	split	M	second ink group below pos7's nt sign, small hooked shape matching atlas S, with a short diagonal tick beside it (marked here as '~', exact form unclear); see pos7 note re a third unassigned mark lower in the box
+18	8	_		correct	H	capital cursive 'L' (hook+foot), forms word 'La' with pos9 - L is in the known false-positive letter set for this leaf
+18	9	_		correct	H	lowercase 'a', completes word 'La' (definite article)
+18	10	_		correct	H	capital 'M' with trailing dot, plausibly 'M.' title/name abbreviation, plain cursive
+18	11	_		correct	M	raised ligature-like mark (tr-ish) over two dots (abbreviation punctuation after 'M.'); resembles atlas H's ladder shape but sits inside a continuous plain-abbreviation run; H is in the known false-positive letter set
+18	12	_		correct	H	capital 'C' with raised suspension flourish ('rr'-like) above, starts word 'Ces[are?]' - plain abbreviation
+18	13	_		correct	M	tiny 12px sliver, part of 'es' in 'Ces', not a standalone sign
+18	14	_		correct	M	minim stroke, part of the word following 'Ces'; letters hard to individuate (minim confusion) but clearly continuous plain cursive, not an isolated sign
+18	15	_		correct	M	minim stroke, same plain word as pos14
+18	16	_		correct	M	'su'-like cursive, same plain word, continuous ink into neighbors
+18	17	_		correct	M	continues same word, plain minims
+18	18	_		correct	M	end of same word, terminal flourish superficially resembles a capital N but is just the word's closing stroke, plain
+18	19	_		confirm	H	'mo', clearly starts word 'molto'
+18	20	_		confirm	H	'lto', completes 'molto' ('much/very') - unambiguous plain Italian word, classifier already had this right
+18	21	S4		confirm	H	matches atlas S4 exactly: vertical stroke crossed near top by a short horizontal tick
+18	22	dl		confirm	H	matches atlas dl exactly: spiral/hooked loop shape
+18	23	H	10	correct	H	matches atlas H exactly (symmetric double-vertical + crossbar); mark above is clearly the numeral '10', not '1' as classifier had it - corrected marks from '1|o' to '10' (the 'o' mark belongs to pos24, not here)
+18	24	]	o	confirm	H	matches atlas ] bracket shape; small 'o' mark above confirmed
+18	25	_		correct	M	small trailing cursive flourish ('ru'/'tu'-like), plain continuation/connector, not an isolated sign
+19	1	eps	7	confirm	H	matches atlas eps (backward-3/epsilon shape); numeral '7' mark above confirmed
+19	2	Z		correct	M	matches atlas Z (zigzag/2-like shape); a squiggle mark sits above it (same nt-shaped squiggle seen above pos5's Z) that the classifier left unmarked - flagged, exact mark form not confidently transcribed
+19	3	psi		confirm	H	matches atlas psi hook shape clearly
+19	4	eps	5	confirm	H	matches atlas eps; small cursive numeral '5'-like mark above confirmed
+19	5	Z	ot	confirm	M	matches atlas Z; squiggle+dot mark above resembling classifier's 'ot' reading, genuinely hard to resolve into distinct letterforms
+19	6	e	dot|+	confirm	H	matches atlas e (loop+tail); clear '+' cross and small dot above both confirmed
+19	7	lam		confirm	M	single hooked ascender stroke, reasonable match to atlas lam though less triangular/two-legged than most exemplars - some doubt
+19	8	wd		confirm	M	'w'-shape with an added closing loop/tail to the right, matches atlas wd reasonably
+19	9	rz		confirm	M	wavy loop+tail shape, matches atlas rz reasonably but hard to pin exactly against the plate's variety
+19	10	e	#	confirm	H	matches atlas e; '#'-like double-tick mark plus a small dot above both confirmed
+19	11	g	dot	confirm	H	matches atlas g (loop + descender tail); small dot mark above confirmed
+19	12	y		confirm	H	matches atlas y hook shape clearly
+19	13	L		confirm	M	hook+foot shape matches atlas L; a small adjacent stroke/dot to its right is of uncertain status (possibly a stray tick, not a genuine attached mark)
+19	14	bh		confirm	M	loop+hook compound shape, reasonable match to atlas bh's variable forms; box is tall (h=81) but the ink reads as one continuous stroke complex, not two disconnected sign groups, so not split
+19	15	eps	1	confirm	H	matches atlas eps; numeral '1' mark above confirmed
+19	16	w		confirm	H	matches atlas w flourish shape
+19	17	e	+	correct	H	matches atlas e; mark above is a clear '+' cross (same as pos6/pos10), corrected from classifier's 'dot' to '+'
+19	18	S7	+	correct	H	numeral-'7'-shaped stroke with a '+' cross above it matches atlas S7 well; classifier's 'Z' call (share only 0.42, already flagged as unsure) does not match - Z is a zigzag/2-shape, this is a straight '7', a clean S7 match instead
+19	19	]		confirm	H	matches atlas ] bracket shape
+19	20	nt		confirm	M	loop + crossing tail, reasonable match to atlas nt, though classifier's own share (0.82) already showed some doubt
+19	21	S4		confirm	H	matches atlas S4 exactly
+19	22	_		delete	H	box height 292px is a segmentation artifact spanning almost the entire blank margin below the line; only a small ink blot/crease near the very top, no legible letter or sign anywhere in the box - stray, not part of the coded stream
+19	23	eps		confirm	H	matches atlas eps clearly
+19	24	+		confirm	H	simple cross, matches atlas + plate
+19	25	_		confirm	H	clearly plain cursive, spells 'ment' (start of an Italian word, e.g. an -mente ending); wide box (103px) consistent with several plain letters, not a single sign
