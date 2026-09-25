@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""Flag a target's NOTES.md open/partial/blocked verdict as intake-gate-compliant or not
-(RETRO-2026-09-25h proposal 4).
+"""Flag a target's NOTES.md open/partial/blocked/found-solved verdict as intake-gate-compliant
+or not (RETRO-2026-09-25h proposal 4).
 
 CLAUDE.md's Pipeline "Intake gate (25 Sept 2026)" rule says an `open` verdict whose sentence
 does not name the standard edition and the pages or full-text search actually read, or that
@@ -15,22 +15,44 @@ work, and clair349-este-guise-1556 and antt-msliv0638-brochado-1712 -- both `par
 full check-solved citation on the verdict line -- were exiting 1 as ambiguous before this fix,
 which is wrong; they should exit 0 the same way a cited `open` does.
 
+Two further fixes (25 Sept 2026, LANE CX handoff via STATUS.md):
+
+1. `found-solved` is now a recognised verdict word, gated the same way as `open`/`partial`: a
+   citation (edition/page or full-text-search phrase) nearby exits 0 labelled `found-solved`;
+   no citation nearby exits 1, same as an uncited `open`.
+2. An `open` or `partial` verdict whose citation window itself says the named edition was NOT
+   read -- the words `unread`, `not read`, `could not open` or `paywalled` -- now exits 1, not
+   0, even when a page number or full-text-search phrase is also present nearby. CLAUDE.md's
+   rule reads "or that names an edition it could not open, is `blocked`", which is unconditional:
+   naming one unread edition forces `blocked` even when another, cited edition in the same
+   paragraph genuinely was read. fr4687-paleologue-nevers before its correction is the example
+   this fix targets: line 2 reported a real full-text search of Boltanski 2006 (citation
+   evidence present) alongside "Ferrari 1999, the other named edition, is paywalled" -- the old
+   check passed this as a cited `open`; the rule says it must be `blocked`. The negative-phrase
+   match uses word boundaries so it does not fire on words that merely contain one of these
+   phrases as a substring (`unreadable` does not match `unread`, confirmed against
+   antt-msliv0638-brochado-1712's "NO_PAGES/no-preview, so unreadable page-by-page" line, which
+   must keep passing -- that edition *was* read, through a different route, this pass).
+
 Usage:
   tools/intake_gate_check.py <target>
     <target> is either a path (ciphers/<name>) or a bare target name under ciphers/.
 
 Exit 0: the verdict word found in NOTES.md is `blocked` (already compliant, nothing to gate),
-  or it is `open` or `partial` and the same NOTES.md names a standard edition together with a
-  page number or a full-text-search phrase within a few lines of the verdict word.
-Exit 1: the verdict is `open` or `partial` with no such citation nearby -- CLAUDE.md's Pipeline
-  intake gate says this must read `blocked` instead -- or no open/partial/blocked verdict word
-  was found at all. Either way this errs toward blocked: an ambiguous NOTES.md is not treated
-  as a pass.
+  or it is `open`, `partial` or `found-solved` and the same NOTES.md names a standard edition
+  together with a page number or a full-text-search phrase within a few lines of the verdict
+  word, with no nearby phrase saying that (or another) named edition was not actually read.
+Exit 1: the verdict is `open`, `partial` or `found-solved` with no such citation nearby, or
+  `open`/`partial` with a citation but also a nearby phrase (`unread`, `not read`, `could not
+  open`, `paywalled`) saying a named edition was not read -- CLAUDE.md's Pipeline intake gate
+  says either shape must read `blocked` instead -- or no open/partial/blocked/found-solved
+  verdict word was found at all. Either way this errs toward blocked: an ambiguous NOTES.md is
+  not treated as a pass.
 
 This checks the citation is present near the verdict word; it does not itself verify the
 citation is real or that the edition was genuinely read (that is still the check-solved
 worker's and the verifier's job) -- it only catches the shape of breach RETRO-2026-09-25h found,
-an `open` (or `partial`) verdict with no citation at all.
+an `open` (or `partial`) verdict with no citation at all, or one naming an unread edition.
 """
 import argparse
 import os
@@ -41,8 +63,9 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # A verdict line, after stripping markdown list/heading markers, starts with the bare word
 # (CLAUDE.md rule 5's status vocabulary) followed by a non-word character or end of line.
-# `partial` is gated exactly like `open` (25 Sept 2026); every other status word is untouched.
-VERDICT_RE = re.compile(r'^[\s\-*>#]*\b(open|partial|blocked)\b', re.IGNORECASE)
+# `partial` and `found-solved` are gated like `open` (25 Sept 2026); every other status word
+# (solved, closed-negative, offline-only) is untouched.
+VERDICT_RE = re.compile(r'^[\s\-*>#]*\b(open|partial|blocked|found-solved)\b', re.IGNORECASE)
 
 CONTEXT_LINES = 6  # how many lines after the verdict line count as "nearby"
 
@@ -51,6 +74,20 @@ FULLTEXT_PHRASES = (
     "full-text search", "full text", "search-within", "search within",
     "read by this worker", "read in full", "grepped", "djvu",
     "read from page images", "be-api", "phrase search", "read and grepped",
+)
+
+# A nearby phrase saying a named edition was NOT read forces `blocked` even when a citation is
+# also present (fr4687-paleologue-nevers before its correction). Word-bounded so `unreadable`
+# does not match `unread` (antt-msliv0638-brochado-1712's "unreadable page-by-page", an edition
+# that *was* read a different way this pass, must keep passing). `not read` excludes the
+# established repo idiom "not read cover to cover" (huntington-luzerne-destouches-1781,
+# lambeth-bacon-649, lambeth-casenowe-1586): that phrase reports the same accepted route
+# CLAUDE.md's gate names as compliant -- "the pages or full-text search actually read" -- just
+# being explicit that the worker phrase-searched rather than reading the whole volume page by
+# page; it is the opposite of an edition the worker could not open at all.
+NEGATIVE_RE = re.compile(
+    r'\bunread\b|\bnot read\b(?!\s+cover\s+to\s+cover)|\bcould not open\b|\bpaywalled\b',
+    re.IGNORECASE,
 )
 
 
@@ -89,6 +126,13 @@ def has_citation_evidence(context):
     return any(phrase in low for phrase in FULLTEXT_PHRASES)
 
 
+def negative_evidence_phrase(context):
+    """Return the matched phrase (lowercase) if `context` says a named edition was not read,
+    else None."""
+    m = NEGATIVE_RE.search(context)
+    return m.group(0).lower() if m else None
+
+
 def resolve_target(target):
     if os.path.isdir(target):
         return target
@@ -106,11 +150,18 @@ def check(notes_text):
     lines = notes_text.splitlines()
     word, idx = find_verdict(lines)
     if word is None:
-        return 1, "no open/partial/blocked verdict word found in NOTES.md -- ambiguous, treat as blocked"
+        return 1, "no open/partial/blocked/found-solved verdict word found in NOTES.md -- ambiguous, treat as blocked"
     if word == "blocked":
         return 0, f"blocked (line {idx + 1}) -- already compliant, nothing to gate"
-    # word in ("open", "partial") -- gated identically
+    # word in ("open", "partial", "found-solved") -- gated identically for citation presence
     context = nearby_context(lines, idx)
+    if word != "found-solved":
+        neg = negative_evidence_phrase(context)
+        if neg is not None:
+            return 1, (
+                f"{word} (line {idx + 1}) names an edition not read ({neg!r} within {CONTEXT_LINES} lines) -- "
+                f"CLAUDE.md's Pipeline intake gate says this must read `blocked` instead"
+            )
     if has_citation_evidence(context):
         return 0, f"{word} (line {idx + 1}) -- edition/page or full-text-search citation found within {CONTEXT_LINES} lines"
     return 1, (
