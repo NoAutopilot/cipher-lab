@@ -584,3 +584,70 @@ Conclusion: the committed reading.txt is a faithful, reproducible regeneration o
 exceptions.tsv under decode.json as committed. Not classifying novelty (rule 10); not evaluating the judge result
 or the register question (M2/MJ's job). Files: `rederive/reading_fresh.txt`, `rederive/reading_tokens_fresh.tsv`.
 Hosts: none. Subagents: none.
+
+## MJ: register-matched judge corpus (25 Sept 2026, LANE R6)
+
+Brief: `.claude/briefs/runs/2026-09-25-lane-r6-mj-mr-mercy-judge.md`. Archive.org only, disk otherwise. Start
+18:18 UTC per `date -u`.
+
+Built `tools/data/es17c/` -- three Internet Archive volumes of *Memorial histórico español* ("Cartas de algunos
+PP. de la Compañía de Jesús sobre los sucesos de la Monarquía entre los años de 1634 y 1648", tomos V-VII,
+1643-1647), a Spanish court-newsletter register close in date, subject matter (war, diplomacy, troop levies,
+credential letters, an elector) and genre (letters, not fiction) to this target's own 6 June 1648 letter --
+unlike es17 (Cervantes/Quevedo novels). 2,099,273 folded letters, well over the ~200k floor. Full build
+rationale, cleaning, MANIFEST.tsv and hold-out log: `tools/data/es17c/README.md`.
+
+**Hold-out check (per the brief).** Grepped all three raw volumes for "Mercy", "Mercij", "Barneton", "Sumiller"
+and "Brandenburg" near 1648 before cleaning. No hit is this letter, its reply, or plausibly connected to it:
+every "Mercy" hit is Franz von Mercy, the Imperial general killed at Nördlingen in 1645 (not the target's
+addressee, the Baron de Mercy, Sumiller de Cortina); zero "Barneton" hits in any volume; "Sumiller" hits are
+generic office references to other named people (one explicitly dated to before 1641, the Infante-Cardenal's
+household); "Brandenburg"/"Chevreuse" hits sit nowhere near each other or near the target's other distinctive
+phrases, and the only "Chevreuse" hits are in tomo XIX's own cumulative name index citing other volumes. **Not
+flagged in ROOM.md -- nothing found that needed flagging.**
+
+**Wired into `tools/judge_plaintext.py`** as a new key `LANG_CORPORA["es17c"]`, `"es"` (es17) unchanged as the
+default. `python3 tools/judge_plaintext.py --selftest` passes after the edit.
+
+**Held-out real-prose false-negative rate** (`tools/data/es17c/holdout_check.py`, leave-one-file-out, N=519
+matching the target's own code-only reading length, 200 samples per held-out file):
+```
+held_out=memorialhistri17realuoft.txt.gz N=519 samples=200 real_p05=-0.847 false_negatives=79/200 (39.5%)
+held_out=memorialhistri18realuoft.txt.gz N=519 samples=200 real_p05=-0.866 false_negatives=42/200 (21.0%)
+held_out=memorialhistri19realuoft.txt.gz N=519 samples=200 real_p05=-0.892 false_negatives=20/200 (10.0%)
+TOTAL false-negative rate: 141/600 (23.5%)
+```
+Notably higher than pt18's 4.0% (V6-PTCORP) -- these three tomes are less internally uniform than pt18's four
+periodical volumes (tomo XVII's false-negative rate is ~4x tomo XIX's), so a FAIL against es17c carries more
+noise than a FAIL against pt18 did for Linhares. Reported as found, not smoothed over.
+
+**Judge output, clear words alone and the reading, against es17c** (spec variant `{"judge": {"language":
+"es17c", "letters_min": 200, "control_samples": 200}}`, run against the same files M2 already judged against
+es17):
+```
+$ python3 tools/judge_plaintext.py <es17c spec variant> --file ciphers/espagnol142-mercy-1648/m2/clear_words_only.txt
+ok   length: got=782, min=200, max=1000000000
+FAIL language: score=-0.891, null_p99=-1.944, real_p05=-0.867, real_median=-0.787, mode=both, N=782
+FAIL - espagnol142-mercy-1648-es17c-variant (a PASS is a gate for a verifier, not a reading; rule 10)
+$ python3 tools/judge_plaintext.py <es17c spec variant> --file ciphers/espagnol142-mercy-1648/m2/reading_codes_only.txt
+ok   length: got=519, min=200, max=1000000000
+FAIL language: score=-1.052, null_p99=-1.928, real_p05=-0.874, real_median=-0.786, mode=both, N=519
+FAIL - espagnol142-mercy-1648-es17c-variant (a PASS is a gate for a verifier, not a reading; rule 10)
+$ python3 tools/judge_plaintext.py <es17c spec variant> --file ciphers/espagnol142-mercy-1648/reading.txt
+ok   length: got=1341, min=200, max=1000000000
+FAIL language: score=-1.04, null_p99=-1.998, real_p05=-0.87, real_median=-0.794, mode=both, N=1341
+FAIL - espagnol142-mercy-1648-es17c-variant (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+
+**Register-matching did not flip the FAIL to a PASS.** The clear words score -0.891 against es17c's real_p05
+of -0.867 (0.024 gap) versus -0.892 against es17's -0.888 (0.004 gap) -- essentially the same borderline FAIL
+either way, if anything slightly wider on es17c. **M2's register-mismatch hypothesis is not confirmed by this
+corpus**: swapping Cervantes/Quevedo for contemporary Jesuit newsletters about the same decade's wars and
+diplomacy did not rescue the calibration the way pt18 rescued Linhares. Combined with the 23.5% held-out
+false-negative rate above, two explanations are left open, neither tested here: (a) N=519-782 may simply be
+short enough that this add-k 4-gram judge's real_p05 threshold is noisy regardless of corpus; (b) the letter's
+own terse secretarial idiom (heavy abbreviation, place/person names) may genuinely score lower than continuous
+narrative prose on any corpus tried so far, independent of era or register. Status unchanged: **open**.
+
+Not classifying novelty (that is the verifier's job, rule 10). Requests: archive.org 3 advancedsearch.php, 3
+metadata.php, 3 djvu.txt downloads (>=1.6s apart, descriptive UA). No subagents.
