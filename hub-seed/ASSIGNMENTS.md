@@ -521,8 +521,8 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T19:12Z	session_01Ni3jyRn6oo4AbfkpdbSNsd	bSPEC2 (Sonnet, cap 6)	specs 21-30 + judge repair 11-20	LANE B3 brief
 2026-09-25T19:21Z	session_01PmhUa6TvpUCGWqnG13xbSh	done	bMLH mlh-1976 intake + test 1	pushed 71ca386
 2026-09-25T19:27Z	session_011rdn8AFXk2htZ9Z72WaQ9n	LANE R6 M3 done $2.28 N, archived	mercy sibling sweep	0 siblings
-2026-09-25T19:52Z	session_01CekcLmqjeREuxLvWc8VzUj	bBUL2 done 2.94 D-, archived
-2026-09-25T19:52Z	session_01XFS4GrM6jxrB6TFFXqo1ZZ	bRUB2 done 1.39 D, archived
-2026-09-25T19:52Z	session_01VqTTfQ1REyR4rYnBUAS7wD	bMCC3 done 2.20 D, archived
-2026-09-25T19:52Z	session_01VG15i7g45rvWQF6hgXCKmU	bCYL done 1.74 D, archived
-2026-09-25T19:52Z	session_01Ni3jyRn6oo4AbfkpdbSNsd	bSPEC2 done 5.06 D, archived
+2026-09-25T19:46Z	session_01CekcLmqjeREuxLvWc8VzUj	bBUL2 done 2.94 D-, archived
+2026-09-25T19:46Z	session_01XFS4GrM6jxrB6TFFXqo1ZZ	bRUB2 done 1.39 D, archived
+2026-09-25T19:46Z	session_01VqTTfQ1REyR4rYnBUAS7wD	bMCC3 done 2.20 D, archived
+2026-09-25T19:46Z	session_01VG15i7g45rvWQF6hgXCKmU	bCYL done 1.74 D, archived
+2026-09-25T19:46Z	session_01Ni3jyRn6oo4AbfkpdbSNsd	bSPEC2 done 5.06 D, archived
