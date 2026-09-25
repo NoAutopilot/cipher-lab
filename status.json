@@ -1,5 +1,5 @@
 {
- "updated": "24 Sep 2026 21:53 UTC",
+ "updated": "25 Sep 2026 02:40 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -617,6 +617,26 @@
  ],
  "log": [
   {
+   "when": "25 Sep, 02:04",
+   "what": "Linhares: separate verifier writes AUDIT.md, both the m0002 reading and the Vieyra 1809 identification N3 (no prior print or decipherment located)."
+  },
+  {
+   "when": "25 Sep, 01:48",
+   "what": "Linhares: m0002 decoded against Vieyra 1809; fresh-instance re-derivation agrees; one group later settled at M (25 H, 1 M)."
+  },
+  {
+   "when": "25 Sep, 01:40",
+   "what": "DECODE: login succeeds on the owner account; images and documents still permission-blocked (ASKS 42/43)."
+  },
+  {
+   "when": "25 Sep, 00:58",
+   "what": "Linhares: the key's dictionary identified as Vieyra's New Pocket Dictionary, Part I, London 1809; all twelve worked-example groups fit."
+  },
+  {
+   "when": "25 Sep, 00:31",
+   "what": "Owner-account parent opens lanes LX, DX and OX on targets no lane held; the owner fixes all credentials at 00:47."
+  },
+  {
    "when": "24 Sep, 18:40",
    "what": "Recovery lane closed on its handoff after seventeen workers: no reading reached the ladder this evening; Salviati, Seure and the 1519 key each need a costed next step, Marie de Medicis waits on a key leaf. Mellon MS 29 closed as a negative with controls. Retrospective e delivered five proposals; a worker applies the safe ones. Semantic Scholar key confirmed."
   },
@@ -994,6 +1014,38 @@
   }
  ],
  "results": [
+  {
+   "date": "25 Sept 2026",
+   "kind": "recovery",
+   "title": "Linhares dictionary code: the book is Vieyra's 1809 pocket dictionary, and the letter fragment reads",
+   "grade": "N3 (no prior decipherment located; AUDIT.md); H 25, M 1 of 26 groups",
+   "line": "The key sheet in the Condes de Linhares papers (ANTT PT/TT/CLNH/0086/11) says each number points to a page, column and word of 'o Diccionario'. LANE LX tested free scans against its worked example and found the book: A New Pocket Dictionary of the Portuguese and English Languages, abridged from Vieyra, Part I, London 1809; all twelve example groups land on the exact word. The two-page mid-letter fragment on m0002 then decodes 25 of 26 groups at grade H, one at M; pages 1 and 4 of the letter are not in the item, so no connected gloss is offered yet. A separate verifier classes both the reading and the identification N3. Safe sentence in AUDIT.md.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/antt-linhares-chave"
+  },
+  {
+   "date": "25 Sept 2026",
+   "kind": "recovery",
+   "title": "Van Beuningen to De Witt, 1657: cipher copy found beside its plain copy; key recovery under way",
+   "grade": "partial key (plaintext in print)",
+   "line": "Nationaal Archief 3.01.17 inv.nr 1538 holds both the plain copy (ff.208-209) and the cipher copy (ff.210-211) of the 19/29 Sept 1657 letter printed in Brieven aan Johan de Witt I pp.405-406. The cipher copy is transcribed (862 tokens) and a closed nomenclator is being rebuilt from the pair. The text is already known, so this is a key for others, not a new reading.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/vanbeuningen-dewitt-1657"
+  },
+  {
+   "date": "25 Sept 2026",
+   "kind": "catch",
+   "title": "Vaudemont to Willem III, 1699, and Breda 1624-25: already solved elsewhere",
+   "grade": "found-solved",
+   "line": "LANE OX's print checks found both already deciphered in print before any reading was attempted, so neither goes further.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/vaudemont-willemiii-1699"
+  },
+  {
+   "date": "25 Sept 2026",
+   "kind": "catch",
+   "title": "DECODE neighbour pairs D2-D8: already worked by Bourdeau",
+   "grade": "found-solved",
+   "line": "Five of the seven neighbour-record clusters (the Spanish Fernández letters of 1523-25, Naro 1624, Langeac-Montmorency) sit inside dbourdeau/cyphersolver's live campaigns; D5 (BNE MSS/20211, Ferdinand to John II, 1478) stays open after Galende Díaz 1993-94 was read in full.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/bne20211-ferdinand-1478"
+  },
   {
    "date": "24 Sept 2026",
    "kind": "catch",
@@ -1701,24 +1753,39 @@
  ],
  "lanes": [
   {
-   "name": "Lane R5, recovery",
+   "name": "Lane LX, Linhares dictionary code",
    "live": 1,
-   "focus": "Salviati f.55r passed its gate (370 signs, pool about 1,090); f.55v half read, pass B resumes at line 12; the five Nevers letters are blocked on the hand after the calibrated re-run (39.8 percent), no more spend there"
+   "focus": "book identified (Vieyra 1809 Part I); m0002 reads 25/26 at H; verifier N3; next: AUDIT.md synced to the corrected token, the ChatGPT second-opinion prompt, maço 86 sibling search (15 of 21 items checked, no more cipher yet)"
+  },
+  {
+   "name": "Lane OX, orphaned open targets",
+   "live": 1,
+   "focus": "triage of twelve done; van Beuningen 1657 key recovery from its plain copy; Willem van Hessen 1567 sibling carries an interlinear decipherment; Paget 1714 two letters in transcription; Hellen 1752 decipherment series; Vaudemont and Breda found-solved"
+  },
+  {
+   "name": "Lane DX, DECODE",
+   "live": 0,
+   "focus": "closed on handoff 02:12: login works on the owner account (username form), but every full-size image and document is the 'Insufficient permissions' placeholder; D2-D8 found-solved in Bourdeau's repo, D5 open"
+  },
+  {
+   "name": "Lane R5, recovery",
+   "live": 0,
+   "focus": "Salviati f.55r passed its gate (370 signs, pool about 1,090); f.55v half read, pass B resumes at line 12; the five Nevers letters are blocked on the hand after the calibrated re-run (39.8 percent), no more spend there (other account; idle since 24 Sept 21:53 UTC until its window resets 26 Sept 13:00 UTC)"
   },
   {
    "name": "Lane N4, nominations",
-   "live": 1,
-   "focus": "18 workers, $58; two Torre do Tombo finds under check-solved (Linhares key plus ciphertext 1780-1827; Costa Cabral 1865 interlined); Villeroy-Bongars 1604 held until Tomokiyo's Bongars paper is read; Le Tellier-Marca 1644 waits on a DECODE login look"
+   "live": 0,
+   "focus": "18 workers, $58; two Torre do Tombo finds under check-solved (Linhares key plus ciphertext 1780-1827; Costa Cabral 1865 interlined); Villeroy-Bongars 1604 held until Tomokiyo's Bongars paper is read; Le Tellier-Marca 1644 waits on a DECODE login look (other account; idle since 24 Sept 21:53 UTC until its window resets 26 Sept 13:00 UTC)"
   },
   {
    "name": "Lane B, breadth",
-   "live": 1,
-   "focus": "two first tests done at $2.57: Koehler 1944 not periodic (one-time-key shape, archive route next); cigarette case 1909 uninformative at 45 symbols; two more running"
+   "live": 0,
+   "focus": "two first tests done at $2.57: Koehler 1944 not periodic (one-time-key shape, archive route next); cigarette case 1909 uninformative at 45 symbols; two more running (other account; idle since 24 Sept 21:53 UTC until its window resets 26 Sept 13:00 UTC)"
   },
   {
    "name": "Parent workers",
-   "live": 1,
-   "focus": "retrospective g running (22 rows, $88 since f); a DECODE-login worker checks record R2742 (Le Tellier-Marca 1644, 'Decrypted') and R2077 (the Marie de Medicis key); rfetch2 and retro-apply p closed"
+   "live": 0,
+   "focus": "retrospective g running (22 rows, $88 since f); a DECODE-login worker checks record R2742 (Le Tellier-Marca 1644, 'Decrypted') and R2077 (the Marie de Medicis key); rfetch2 and retro-apply p closed (other account; idle since 24 Sept 21:53 UTC until its window resets 26 Sept 13:00 UTC)"
   },
   {
    "name": "Lane V4, verification",
@@ -1731,7 +1798,7 @@
    "focus": "hall of fame view live from CITATIONS.md: one public citation (Cryptiana, 24 Sept 2026) and the pending replies list"
   }
  ],
- "headline": "Evening of 24 Sept: fifteen readings at N4; the outreach set is sent and replies come to the parent. The owner chose momentum at 18:48: R5 and N4 restarted, and the parent's own picks ran their controls (image detector: gate failed; crib loop: helps at short lengths only; Z13 forum mechanism: fails its control). Six Nevers letters sit under Tomokiyo's key no.60, blocked on the scribe's hand, with the calibration leaf identified. A Fable survey is ranking the public unsolved lists with an approach per item. Successor prompt: hub-seed/SUCCESSOR-PROMPT.md.",
+ "headline": "Night of 24-25 Sept, owner account: three new lanes (LX, DX, OX). The Linhares dictionary code (ANTT, Condes de Linhares) was broken open: the book is Vieyra's 1809 Portuguese-English pocket dictionary, all twelve worked-example groups fit, and the letter fragment on m0002 reads 25 of 26 groups at grade H; a separate verifier classes both the reading and the dictionary identification N3 (no prior print or decipherment located). DECODE now logs in, but full-size images and documents stay permission-blocked until the DECRYPT role upgrade (ASKS 42/43). The other account's lanes are idle until its window resets 26 Sept 13:00 UTC. Evening of 24 Sept: fifteen readings at N4; the outreach set is sent and replies come to the parent. The owner chose momentum at 18:48: R5 and N4 restarted, and the parent's own picks ran their controls (image detector: gate failed; crib loop: helps at short lengths only; Z13 forum mechanism: fails its control). Six Nevers letters sit under Tomokiyo's key no.60, blocked on the scribe's hand, with the calibration leaf identified. A Fable survey is ranking the public unsolved lists with an approach per item. Successor prompt: hub-seed/SUCCESSOR-PROMPT.md.",
  "sidequests": [
   {
    "title": "Grants applications",
