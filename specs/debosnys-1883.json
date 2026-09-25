@@ -263,7 +263,8 @@
       },
       "gate": "settlement licensed only if base-level mean >= 0.5 at noise 0.05 AND >= 0.4 at noise 0.075 (written before these numbers, ciphers/debosnys-1883/HYPOTHESES.md top block)",
       "reading": "target not run: transcription below gate (controls only, per brief)",
-      "conclusion": "(c) for the letter families: base-level mean 0.385 at noise 0.05 (below 0.5) and 0.322 at noise 0.075 (below 0.4) -- gate not met. c2 settled alone (N=734) does not clear it either (0.433 at 0.05). No letter-substitution design reads above gate at the noise a settled two-pass transcription is expected to carry (5-10 pct); a c1/c2 image-settlement pass is not licensed by these numbers. Rule 5: register stays open/partial, not closed-negative."
+      "conclusion": "(c) for the letter families: base-level mean 0.385 at noise 0.05 (below 0.5) and 0.322 at noise 0.075 (below 0.4) -- gate not met. c2 settled alone (N=734) does not clear it either (0.433 at 0.05). No letter-substitution design reads above gate at the noise a settled two-pass transcription is expected to carry (5-10 pct); a c1/c2 image-settlement pass is not licensed by these numbers. Rule 5: register stays open/partial, not closed-negative.",
+      "status_cycle3": "GOLD-CONS3 (Fable, 25 Sept 2026 23:08 UTC): transcription-limited at K 128/160 -- no letter-substitution control reads above 0.4 past 5 pct type noise at N 1251 (base level 0.385 at 0.05, 0.322 at 0.075; c2 alone 0.433 at 0.05; K 160 0.421 at 0.05). Letter families (H, BM) parked with these numbers; no target run; no NEAR.md row (no solver run, no control-backed gap); status open, never closed-negative (rule 5). Lane spend parked until the museum answers ASKS 52."
     }
   }
 }

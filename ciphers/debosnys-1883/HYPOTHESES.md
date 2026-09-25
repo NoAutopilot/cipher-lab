@@ -5,82 +5,79 @@ image manifest, and the GOLD-0D/B2/4A/4B/4C/4E sections this summary rests on). 
 append-only, dated and signed by the job that wrote it; `tools/family_run.py` appends its rows under its own
 marker at the end. This top block is rewritten once per cycle by the lane's consolidator and by nobody else.
 
-**Summary, cycle 2** (GOLD-CONS2, Fable, session_01SPixjGTp23T4YyxPvHwkWs, 25 Sept 2026 21:12 UTC; replaces the
-cycle-1 block of 19:35 UTC, whose target facts are unchanged and restated here)
+**Summary, cycle 3** (GOLD-CONS3, Fable, session_01UBBcnhMmQEpPpdNQgDfsTE, 25 Sept 2026 23:08 UTC; replaces the
+cycle-2 block of 21:12 UTC, whose target facts are unchanged and restated here)
 
 **Where the target stands.** Six page images on disk (c1, c2a, c2b, c3, c4a, c4b), 1251 signs over **160 ids** after
 GOLD-4C's by-eye split (29 `_` and 35 `MULTI` boxes excluded), pooled IC 0.0391 against uniform-at-K 0.0063 and French
 0.0697. X is 201 of 1251 (16.1 pct), self-adjacent 28 times. 73 ids occur under three times; twenty singletons are
-pictograms. **New this cycle (GOLD-D1, mechanical from GOLD-4C's own composite names):** at base level the inventory
-folds to **K_base 128** with 16 mark classes (DASH 63, TILDE 61, O 31, DOT 21, DASH2 16, BAR 10, six classes under 7);
-IC rises to 0.0489 pooled (c1 0.0549, c2 0.0535, c3 0.0528, c4 0.0377). D1's table settles on 46 composite ids over
-233 boxes against GOLD-4C's prose count of 36 over 267, the gap being the two GOLD-4A ligatures O-SLASH and DAGGER-O
-kept standalone; a reading-side judgement, recorded, not settled on the image. Transcription agreement is unchanged:
-c4 22.4 pct at 68 ids (GOLD-4A), c1 62.3 pct full-id / 66.4 pct family-level at 160 ids (GOLD-4E, 52 columns
-unsettled). No cryptogram is at the 80 pct gate; `ciphertext.txt` still holds LANE B2's k=90 draft.
+pictograms. At base level (GOLD-D1, mechanical from GOLD-4C's composite names) the inventory folds to **K_base 128**
+with 16 mark classes (DASH 63, TILDE 61, O 31, DOT 21, DASH2 16, BAR 10, six classes under 7; 233 marked boxes of
+1251, 18.6 pct); IC rises to 0.0489 pooled (c1 0.0549, c2 0.0535, c3 0.0528, c4 0.0377). Transcription agreement is
+unchanged since cycle 1: c4 22.4 pct at 68 ids (GOLD-4A), c1 62.3 pct full-id / 66.4 pct family-level at 160 ids
+(GOLD-4E, 52 columns unsettled); the settled ceiling on the image is about 91 pct (GOLD-4C on c4). No cryptogram is at
+the 80 pct gate; `ciphertext.txt` still holds LANE B2's k=90 draft. Check-solved: open (GOLD-0D).
 
-**D1's measured curve replaces the Salviati working assumption.** Homophonic anneal (`tools/family_run.py --family
-homophonic`, fr19, `profile=target` so the control carries the target's own lopsided top sign -- L1 152 between the
-sorted profiles, top sign 17.5 pct vs X's 16.1 -- and `noise=p` by the Salviati recipe), seeds 1-3, restarts 8,
-controls only; the target was never run, as briefed. All six configurations ran on all three seeds; nothing is missing.
+**The measured base-level curve replaces every working assumption** (GOLD-D1 and GOLD-D2, `tools/family_run.py
+--family homophonic`, fr19, `profile=target`, `noise=p`, seeds 1-3, restarts 8, controls only; the target was never run):
 
-| configuration | N | K | type noise | CONTROL mean plaintext letters recovered (range) |
+| design | N | K | type noise | CONTROL mean plaintext letters recovered (range) |
 |---|---|---|---|---|
+| BM base level, all four | 1251 | 128 | 0 | 0.859 (0.802-0.966) |
+| BM base level | 1251 | 128 | 0.025 | 0.816 (0.713-0.942) |
+| BM base level | 1251 | 128 | **0.05** | **0.385 (0.199-0.483)** |
+| BM base level | 1251 | 128 | **0.075** | **0.322 (0.090-0.517)** |
+| BM base level | 1251 | 128 | 0.10 | 0.314 (0.245-0.378) |
+| BM c2 alone | 734 | 102 | 0 | 0.669 (0.456-0.898) |
+| BM c2 alone | 734 | 102 | 0.05 | 0.433 (0.256-0.533) |
 | H, K 160 | 1251 | 160 | 0 | 0.440 (0.034-0.822) |
+| H, K 160 | 1251 | 160 | 0.05 | 0.421 (0.219-0.693) |
 | H, K 160 | 1251 | 160 | 0.10 | 0.325 (0.310-0.349) |
 | H, K 160 | 1251 | 160 | 0.20 | 0.230 (0.204-0.258) |
-| BM, base level | 1251 | 128 | 0 | **0.859 (0.802-0.966)** |
-| BM, base level | 1251 | 128 | 0.10 | **0.314 (0.245-0.378)** |
 | H, K 160 minus every X | 1050 | 159 | 0 | 0.230 (0.101-0.305) |
 
-(The first, wrong `profile=target` implementation -- L1 946, it could not make a dominant sign -- left six earlier rows
-in the family_run table, 20:15-20:19 UTC; the corrected rows are 20:22-20:25 and are the ones above.)
+The cliff sits between 2.5 and 5 pct type noise at this N and K (0.816 to 0.385) and the curve is flat from 5 to 10
+pct. A settled two-pass transcription carries 5-10 pct type noise (GOLD-4C's 91 pct ceiling), i.e. it lands on the flat
+part. Committing to c2 alone (the only cryptogram long enough to read on its own) buys nothing at the same noise (0.433
+vs 0.385). **The gate written before the numbers (base-level mean >= 0.5 at 0.05 AND >= 0.4 at 0.075) fails on both
+conditions: (c) for the letter families.** The settlement pass is not bought. The statement of record, now also in
+`specs/debosnys-1883.json` `cheap_test_done` "3-control-2" (`status_cycle3`): transcription-limited at K 128/160 -- no
+letter-substitution control reads above 0.4 past 5 pct type noise at N 1251 (or at N 734 for c2 alone).
 
-**The cycle-1 rule, applied as written.** (a) needs clean >= 0.6 and 10 pct noise >= 0.4 at K 160: clean reads 0.440,
-so (a) fails. (b) needs clean >= 0.6 at K_base only: 0.859, so **(b) holds -- BM has headroom, H does not.** (c) does
-not apply. Branch **(b)** by the rule's letter, with all the numbers it asked for present.
-
-**What the rule did not ask, and the number that decides the next spend.** The rule set no noise condition at base
-level, and the noise numbers are the point: at base level the control falls from 0.859 clean to **0.314 at 10 pct
-noise**, every seed below 0.4 (0.245-0.378). What noise a settled two-pass transcription carries is not measured
-directly: on c4, settling on the image raised agreement to a ceiling of about 91 pct (GOLD-4C), so about 9 pct of
-columns stay disputed after settlement, and the settled transcription's type noise against the true sign lies between
-roughly 5 pct (disputes settled right more often than not) and 9-10 pct (settled at chance). D1's curve has no point
-between 0 and 0.10. So: **a settled base-level transcription of c1 (or of all four) would read about 0.31 on D1's curve
-if it lands at 9-10 pct noise, which is not a test of BM; it would be a test only if settlement lands near 5 pct noise
-and the curve is still above 0.5 there, which nobody has measured.** Deciding number: 0.314 at 10 pct, base level.
-
-**Decision: (b), the settlement not bought this cycle.** Outcome (i) of the orchestrator's two, in its "control point
-FIRST" form: the transcription is the expensive half and the control point is $3 with no image, so the control runs
-first and alone (D2 below), and the c1 settlement is briefed in cycle 4 only if D2 clears the gate written here before
-its numbers exist: **base-level control mean >= 0.5 at noise 0.05 AND >= 0.4 at noise 0.075** (3 seeds, 8 restarts,
-fr19, profile=target). If either fails, the letter families go to (c) with D2's curve as the numbers: the target is
-parked as "transcription-limited at K 160 / K_base 128; no letter-substitution control reads at N 1251 at the noise a
-settled transcription carries" in the spec's `cheap_test_done`, this block keeps the register (rule 5: never
-closed-negative), and what remains is NC with a gated transcription and the museum's key sheet (ASKS 52). D2 also
-prices the alternative the (ii) list names, c2 settled alone (734 signs, K_base 102) at noise 0 and 0.05, so cycle 4
-can choose between c1-first (a pilot of the settlement method) and c2-first (the only cryptogram long enough to read
-on its own) with numbers. What else would change the picture: a smaller effective K from a second base fold (O-SLASH,
-DAGGER-O and the BAR variants folded further, which D1 kept standalone) and the museum key sheet.
-
-**If D2 clears the gate, the cycle-4 settlement brief is:** c1 on the image, base level, the 52 disputed columns of
-`ciphertext_c1_draft.tsv` against `glyphs/strips/c1_L0*.jpg` and `glyphs/base_mark.tsv`, one cryptogram per worker,
-NO subagent, commit per line group, Sonnet, cap $4, 40 minutes, gate 80 pct two-pass agreement at base level after
-settlement, the worker never runs a solver; then c2 (734 signs) under the same terms before any anneal on the target.
-
-| family | status after cycle 2 | CONTROL | TARGET | what is left |
+| family | status after cycle 3 | CONTROL | TARGET | what is left |
 |---|---|---|---|---|
-| T transcription | **partial, below gate**; no pass this cycle | c4 settled ceiling about 91 pct | c1 62.3 / 66.4 pct; c4 22.4 pct | settlement only if D2 clears the gate above |
-| H homophonic, K 160 | **parked with numbers**: 0.440 clean, 0.325 at 10 pct | as the table | never run (draft is single-pass, about 20 pct noise) | nothing at this K; the fold to base level is the family's only lever |
-| BM base + mark, K_base 128 | **open, headroom clean, none at 10 pct noise**; D2 measures 2.5 / 5 / 7.5 pct | 0.859 clean, 0.314 at 10 pct | never run | D2, then the settlement or (c) |
-| NC nomenclator / code | **parked** until T is gated | none | -- | the long tail and the pictograms argue for it; no ciphertext-only attack at this N |
-| V verse form | **parked with numbers** (GOLD-4B r 0.44, 93.6th percentile) | shuffle null | -- | the Greek poem on the c4 reverse (not on disk) |
-| L language | **open**, French first | fr19 (2.66M letters) | -- | en second; la, pt only after a French control reads on a gated transcription |
+| T transcription | **partial, below gate**; no pass bought | settled ceiling about 91 pct (c4); the curve says 5-10 pct noise reads 0.31-0.39 | c1 62.3 / 66.4 pct; c4 22.4 pct | nothing until a key sheet or a clear-poem crib fixes type identity (ASKS 52) |
+| H homophonic, K 160 | **parked with numbers** | 0.440 clean, 0.421 at 5 pct, 0.325 at 10 pct | never run (single-pass draft is about 20 pct noise) | nothing at this K |
+| BM base + mark, K_base 128 | **parked with numbers, (c)** | 0.859 clean, 0.816 at 2.5 pct, 0.385 at 5, 0.322 at 7.5, 0.314 at 10 | never run | reads only below about 3 pct type noise, which no eye-settled pass reaches; reopen on a key sheet or a second base fold that drops K well under 100 |
+| NC nomenclator / code (incl. a syllable code, base = consonant, mark = vowel) | **parked; no test the draft supports** (below) | none | -- | museum key sheet (ASKS 52) |
+| V verse form | **parked with numbers** (GOLD-4B r 0.44, 93.6th percentile of the shuffle null) | shuffle null | -- | the Greek poem on the c4 reverse (not on disk) |
+| L language | **open**, French first | fr19 (2.66M letters) | -- | en, la, pt only after a French control reads on a gated transcription |
 
-**Decisions, cycle 2.** T: no pass. H: park with numbers. BM: continue by one $3 control box (D2), the settlement
-gated on it. NC, V: park. L: French. Rule 10: nothing in this file is a reading; status stays `open`; the lane never
-writes solved, new, first or unpublished.
+**NC: does any test exist that a single-pass draft supports?** No. A code or syllable-code control at N 1251 needs the
+same type identity a letter-substitution control needs, and has more types per token (a syllabary's K is larger than a
+letter alphabet's), so its noise tolerance can only be worse than the curve above; the `syllabary` family in
+`family_run.py` (LANE R8, DSN) lays its control on a measured error mix of 5 pct, which is already on the flat part of
+this curve. The draft is at about 20 pct and the settled ceiling at about 9 pct. One observation with a number, recorded
+and not briefed: under the syllable-code shape (a mark on a consonant base = the following vowel) roughly half of the
+tokens should carry a mark, and 233 of 1251 (18.6 pct) do; the mark share does not fit that shape unless vowels are
+mostly written as standalone bases, which is a nomenclator again. An exact type identity is therefore not reachable
+from the images alone at this K and N; it is reachable only from the museum (a key sheet, or the clear poems as a
+crib that pins types by position, ASKS 52).
 
+**NEAR.md row: none, and why.** Rule 5's amendment gives a NEAR row to a target where a solver beat its matched
+control by a reproducible margin, or where a control showed the negative was not a real test. Neither happened here:
+no solver has run on the target at all, and the controls measured the transcription's ceiling, not a solver's
+failure. There is no control-backed gap to report. The register is this block and the spec's `cheap_test_done`;
+status stays `open` (rule 5: never closed-negative, since no family has been run on the target with a passed control).
+
+**Recommendation on the lane's Debosnys spend: park.** Spend nothing until the museum answers ASKS 52 (a key sheet
+settles the question; the clear poems give a crib). What would reopen it without the museum: a second base fold that
+drops K_base well under 100 with a documented rule (GOLD-D1 kept O-SLASH, DAGGER-O and the BAR variants standalone),
+re-priced by one $2 control box on the same curve before any image work; or higher-resolution images of c2 that lift
+the settled ceiling above about 97 pct, which the Schmeh copies cannot. No cycle-4 Debosnys brief.
+
+Rule 10: nothing in this file is a reading; status stays `open`; the lane never writes solved, new, first or
+unpublished.
 
 ## GOLD-D1, noise-matched controls (25 Sept 2026, session_01Qcv68Pn46JNXkktRXTv6DL, Sonnet)
 
