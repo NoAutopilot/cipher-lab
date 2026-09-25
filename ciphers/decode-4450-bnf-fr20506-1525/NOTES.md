@@ -1,6 +1,20 @@
+open
+DECODE RecordsView/4450 and DocumentsList read by this worker (no attached document, confirmed again); Tomokiyo's `venetian.htm` read in full by this worker (fresh fetch, not the local snapshot, which lacks this page); Bourdeau's `vasto1527/n20/ranzo_c017.txt`/`ranzo_c018.txt` witness grepped fresh in a new shallow clone — f.136 remains a copy of the still-undeciphered Ranzo letter fr.2988 f.9, no decipherment of that system has landed anywhere searched since the 24 Sept 2026 sweep below.
+
 # decode-4450-bnf-fr20506-1525
 
-Status: open
+## Check-solved (LANE CX, 25 Sept 2026)
+
+Re-verdict per `.claude/briefs/check-solved.md`. This target's NOTES.md did not follow CLAUDE.md rule 5 (bare status word alone on line 1) before this pass; fixed above. Extensive prior work exists below (24 Sept 2026 check-solved sweep, LANE N audit, DECODE image fetch, and a D1/D2 transcription+witness-alignment pass that independently confirmed Tomokiyo's identification token-for-token at 94.1% agreement against Bourdeau's own fr.2988 f.9 transcription) — this worker did not repeat that transcription work (out of this brief's scope: "No transcription... or cryptanalysis") but reran the six check-solved searches fresh to confirm nothing has changed since.
+
+1. **Web (a).** WebSearch `Ranzo Garbino cipher fr.2988 OR fr.20506 "solves" Claude GPT decipherment 2026`: no third-party solve found. Results confirm the Ranzo-Garbino code (Bourdeau's own repo, ~3,900 groups now transcribed per his site, up from ~2,600 on 24 Sept) is still explicitly reported as **not solved** — "a word annealer validated on a held-out control recovers only function words, so no. 20 needs Ranzo's table or a clear copy" — consistent with, not a change from, the 24 Sept verdict below.
+2. **Community lists / Tomokiyo (c).** `cryptiana.web.fc2.com/code/venetian.htm` fetched fresh by this worker (not read from the local snapshot for this pass, to confirm it has not been updated) and read in full: unchanged wording, f.136 "a copy of BnF fr.2988, f.9" — still listed among "several undeciphered letters of Hieronimo Ranzo."
+3. **Bourdeau (e).** Fresh shallow clone (25 Sept 2026, shared with the other two targets in this batch), `vasto1527/n20/ranzo_c017.txt`/`ranzo_c018.txt` present and unchanged in content from what the 24 Sept D2 pass compared against; `CATALOGUE.md` entry 1.6 for R4450 unchanged.
+4. **Aymeloglu (f).** Fresh clone's `catalogue/decode-catalog.csv` still carries id 4450 as a routine row, still absent from `decode-ranked.md` and `exclude.txt` — not attempted there.
+5. **DECODE (d).** Cached `decode-catalog.csv` re-checked: record 4450 (BnF fr.20506 f.136) still `Non-decrypted`; the 18 sibling records in the same volume (ids 4434-4449, 4815-4816) still `Decrypted`, unchanged from 24 Sept. No fresh login run this pass (no new document expected; the prior LANE R2 fetch already confirmed `DocumentsList?showmaster=records&fk_id=4450` returns "No records found").
+6. **Print/calendar (b).** Not applicable in the usual sense — no printed edition of this specific unsigned 1525-1550 despatch exists; the relevant "edition" is the manuscript archetype fr.2988 f.9 itself (Gallica) and Bourdeau's own transcription of it, both already checked in searches (c)/(e) above and in the existing D2 section below.
+
+**Verdict: open**, unchanged from 24 Sept 2026. Status stays `open`, not `partial`: a copy relationship and a matched second-witness alignment are established (94.1%, see D2 below), but no decipherment of the underlying Ranzo/Garbino system exists anywhere searched, so there is no reading to grade. Not "new"; not "unpublished" (rule 10) — a search result, not a discovery. Requests this pass: `cryptiana.web.fc2.com` 1 (fresh fetch, curl -L browser UA, 200 after redirect, shared rate budget with bl-gualterio-1700's fetch in this same batch), WebSearch 1, github.com 0 (reused this batch's shared shallow clones), no DECODE login (cached catalogue sufficient).
 
 ## What this is
 
