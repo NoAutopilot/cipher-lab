@@ -75,6 +75,11 @@
       "manuscript_page": "p.69",
       "fetched": "2026-09-25T12:20Z",
       "content": "Full native resolution (7451x5958 before rotation), fetched by YX-TR349 for the same legibility reason as p57_native. Same template as p.57 (Alphabet / Doubles+Nulles / Monosillabes x2 rows / word row, plus a facing-page word list) -- this is a second correspondent-specific key sharing fr.20974's standard chancery layout, not a different kind of table. Spot check: the 'Doubles' numeric codes read the same on both leaves (22.18.66.69.76.106.52.56.54.58.9), consistent with the doubles/nulls portion of the template being fixed across the book's keys while the alphabet and word list are per-correspondent -- not yet confirmed against a third key in this book."
+    },
+    {
+      "file": "lines/line01.jpg .. lines/line33.jpg",
+      "source": "derived from clair349_f9_right_full.jpg via tools/iiif_lines.py --image clair349_f9_right_full.jpg --overlap 0 --debug (prefix f9right), 25 Sept 2026 (YX-TR349B)",
+      "content": "The 33 real ciphertext lines of f.3 right page, one stitched image per line (line01=top..line33=bottom). iiif_lines.py detected 37 bands total (centres 568,1316,1444,1792,1922,...,5612,5781,6402); checked each against the debug overlay before use: band 1 (centre 568) is blank upper margin, band 2 (centre 1316) is blank, band 3 (centre 1444) is the \"4. januier 1556\" date/seal/archival-mark line (not cipher), bands 4-36 (centres 1792..5781, 33 bands) are the real cipher text lines = line01..line33 here, band 37 (centre 6402) is blank lower margin. This corrects the prior handoff note (YX-TR349) that treated the raw 37-band count as ~33 lines by eye-count coincidence without checking which bands were spurious -- the true mapping is offset by 3 at the top and 1 at the bottom, not a uniform eye-count match. Each line image is the two iiif_lines.py segments (s1 full width [0,2400), s2 right-anchored [1495,3895)) re-stitched with the 905px duplicate region trimmed from s1 before concatenation (s1 cropped to [0,1495), then s2 appended), so no token appears twice. The intermediate raw f9right_L*_s1/s2.jpg segment crops and the debug overlay were deleted after this check to stay under the 30MB folder cap; regenerate with the exact command above if needed (deterministic from clair349_f9_right_full.jpg, already on disk)."
     }
   ]
 }
