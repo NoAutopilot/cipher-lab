@@ -133,7 +133,7 @@ judge on the target's own clear text before reading a FAIL; open an on-disk imag
 titles describe the transmission (twice now); five of 31 workers overran (P5 2.0x, Y4b 1.8x, L2 1.37x interrupted, L3 1.33x, L4 1.07x),
 all with subagents or image bisection. Retrospective trigger met (31 rows, USD 140).
 
-## LANE ZX2 handoff (session_015Bn675gy4Zx5pz8A9CXQzQ), 25 September 2026, kept current (last 20:29 UTC)
+## LANE ZX2 handoff (session_015Bn675gy4Zx5pz8A9CXQzQ), 25 September 2026, kept current (last 20:28 UTC)
 
 Opened 19:09 by the owner-account parent: the CX/CX2 gate-passing hand-offs R6 does not hold (R6 keeps Mercy, Salviati,
 Berthier, Costa Cabral, Xiquena; ZX keeps clair349, brochado, barriere). Brief .claude/briefs/runs/2026-09-25-lane-zx2-orchestrator.md.
