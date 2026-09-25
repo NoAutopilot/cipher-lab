@@ -1,0 +1,274 @@
+[
+ {
+  "roman": "II",
+  "n_words": 139,
+  "word_repeat_rate": 0.2806,
+  "length_fit": 0.5723,
+  "rate_fit": 0.0825,
+  "gap_fit": 0.2197
+ },
+ {
+  "roman": "IV",
+  "n_words": 590,
+  "word_repeat_rate": 0.5407,
+  "length_fit": 0.8154,
+  "rate_fit": 0.1776,
+  "gap_fit": 0.3468
+ },
+ {
+  "roman": "VI",
+  "n_words": 823,
+  "word_repeat_rate": 0.5759,
+  "length_fit": 1.5323,
+  "rate_fit": 0.2129,
+  "gap_fit": 0.4633
+ },
+ {
+  "roman": "VII",
+  "n_words": 279,
+  "word_repeat_rate": 0.4373,
+  "length_fit": 0.1415,
+  "rate_fit": 0.0742,
+  "gap_fit": 0.2508
+ },
+ {
+  "roman": "VIII",
+  "n_words": 929,
+  "word_repeat_rate": 0.5759,
+  "length_fit": 1.8585,
+  "rate_fit": 0.2128,
+  "gap_fit": 0.4422
+ },
+ {
+  "roman": "IX",
+  "n_words": 549,
+  "word_repeat_rate": 0.5319,
+  "length_fit": 0.6892,
+  "rate_fit": 0.1688,
+  "gap_fit": 0.3346
+ },
+ {
+  "roman": "X",
+  "n_words": 207,
+  "word_repeat_rate": 0.3333,
+  "length_fit": 0.3631,
+  "rate_fit": 0.0297,
+  "gap_fit": 0.1238
+ },
+ {
+  "roman": "XI",
+  "n_words": 221,
+  "word_repeat_rate": 0.3846,
+  "length_fit": 0.32,
+  "rate_fit": 0.0215,
+  "gap_fit": 0.2733
+ },
+ {
+  "roman": "XII",
+  "n_words": 611,
+  "word_repeat_rate": 0.5254,
+  "length_fit": 0.88,
+  "rate_fit": 0.1623,
+  "gap_fit": 0.3141
+ },
+ {
+  "roman": "XIII",
+  "n_words": 93,
+  "word_repeat_rate": 0.3333,
+  "length_fit": 0.7138,
+  "rate_fit": 0.0297,
+  "gap_fit": 0.2023
+ },
+ {
+  "roman": "XIV",
+  "n_words": 53,
+  "word_repeat_rate": 0.1132,
+  "length_fit": 0.8369,
+  "rate_fit": 0.2499,
+  "gap_fit": 0.4831
+ },
+ {
+  "roman": "XV",
+  "n_words": 76,
+  "word_repeat_rate": 0.2632,
+  "length_fit": 0.7662,
+  "rate_fit": 0.0999,
+  "gap_fit": 0.2085
+ },
+ {
+  "roman": "XVI",
+  "n_words": 383,
+  "word_repeat_rate": 0.436,
+  "length_fit": 0.1785,
+  "rate_fit": 0.073,
+  "gap_fit": 0.2661
+ },
+ {
+  "roman": "XVII",
+  "n_words": 56,
+  "word_repeat_rate": 0.1071,
+  "length_fit": 0.8277,
+  "rate_fit": 0.2559,
+  "gap_fit": 0.3136
+ },
+ {
+  "roman": "XVIII",
+  "n_words": 73,
+  "word_repeat_rate": 0.2329,
+  "length_fit": 0.7754,
+  "rate_fit": 0.1302,
+  "gap_fit": 0.1969
+ },
+ {
+  "roman": "XIX",
+  "n_words": 157,
+  "word_repeat_rate": 0.3376,
+  "length_fit": 0.5169,
+  "rate_fit": 0.0255,
+  "gap_fit": 0.2853
+ },
+ {
+  "roman": "XX",
+  "n_words": 62,
+  "word_repeat_rate": 0.3226,
+  "length_fit": 0.8092,
+  "rate_fit": 0.0405,
+  "gap_fit": 0.2305
+ },
+ {
+  "roman": "XXI",
+  "n_words": 442,
+  "word_repeat_rate": 0.4751,
+  "length_fit": 0.36,
+  "rate_fit": 0.112,
+  "gap_fit": 0.3823
+ },
+ {
+  "roman": "XXIII",
+  "n_words": 529,
+  "word_repeat_rate": 0.5425,
+  "length_fit": 0.6277,
+  "rate_fit": 0.1795,
+  "gap_fit": 0.4034
+ },
+ {
+  "roman": "XXIV",
+  "n_words": 187,
+  "word_repeat_rate": 0.4278,
+  "length_fit": 0.4246,
+  "rate_fit": 0.0647,
+  "gap_fit": 0.2074
+ },
+ {
+  "roman": "XXV",
+  "n_words": 413,
+  "word_repeat_rate": 0.5061,
+  "length_fit": 0.2708,
+  "rate_fit": 0.143,
+  "gap_fit": 0.31
+ },
+ {
+  "roman": "XXVI",
+  "n_words": 465,
+  "word_repeat_rate": 0.4774,
+  "length_fit": 0.4308,
+  "rate_fit": 0.1143,
+  "gap_fit": 0.3307
+ },
+ {
+  "roman": "XXVII",
+  "n_words": 607,
+  "word_repeat_rate": 0.4827,
+  "length_fit": 0.8677,
+  "rate_fit": 0.1196,
+  "gap_fit": 0.3509
+ },
+ {
+  "roman": "XXVIII",
+  "n_words": 262,
+  "word_repeat_rate": 0.4122,
+  "length_fit": 0.1938,
+  "rate_fit": 0.0491,
+  "gap_fit": 0.1373
+ },
+ {
+  "roman": "XXIX",
+  "n_words": 316,
+  "word_repeat_rate": 0.4335,
+  "length_fit": 0.0277,
+  "rate_fit": 0.0705,
+  "gap_fit": 0.2737
+ },
+ {
+  "roman": "XXX",
+  "n_words": 181,
+  "word_repeat_rate": 0.3094,
+  "length_fit": 0.4431,
+  "rate_fit": 0.0537,
+  "gap_fit": 0.1598
+ },
+ {
+  "roman": "XXXI",
+  "n_words": 71,
+  "word_repeat_rate": 0.2394,
+  "length_fit": 0.7815,
+  "rate_fit": 0.1236,
+  "gap_fit": 0.331
+ },
+ {
+  "roman": "XXXII",
+  "n_words": 285,
+  "word_repeat_rate": 0.4456,
+  "length_fit": 0.1231,
+  "rate_fit": 0.0825,
+  "gap_fit": 0.2369
+ },
+ {
+  "roman": "XXXIV",
+  "n_words": 217,
+  "word_repeat_rate": 0.3594,
+  "length_fit": 0.3323,
+  "rate_fit": 0.0036,
+  "gap_fit": 0.1851
+ },
+ {
+  "roman": "XXXV",
+  "n_words": 123,
+  "word_repeat_rate": 0.3089,
+  "length_fit": 0.6215,
+  "rate_fit": 0.0541,
+  "gap_fit": 0.1311
+ },
+ {
+  "roman": "XXXVI",
+  "n_words": 37,
+  "word_repeat_rate": 0.1622,
+  "length_fit": 0.8862,
+  "rate_fit": 0.2009,
+  "gap_fit": 0.3729
+ },
+ {
+  "roman": "XXXVII",
+  "n_words": 63,
+  "word_repeat_rate": 0.254,
+  "length_fit": 0.8062,
+  "rate_fit": 0.1091,
+  "gap_fit": 0.1578
+ },
+ {
+  "roman": "XXXVIII",
+  "n_words": 943,
+  "word_repeat_rate": 0.5292,
+  "length_fit": 1.9015,
+  "rate_fit": 0.1661,
+  "gap_fit": 0.472
+ },
+ {
+  "roman": "III",
+  "n_words": 220,
+  "word_repeat_rate": 0.4227,
+  "length_fit": 0.3231,
+  "rate_fit": 0.0597,
+  "gap_fit": 0.2902
+ }
+]

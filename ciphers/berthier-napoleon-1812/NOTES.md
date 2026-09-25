@@ -1,6 +1,127 @@
 open
 Vilcoq 1969 (Persée, pages read in full incl. page images, not just search hits) reproduces the Berthier cryptogram itself as a plate (p.24, "Correspondance datée du 22 décembre 1812 du maréchal Berthier, Prince de Neufchâtel, à l'Empereur, (Archives Nationales.)" -- the image's opening number groups match ciphertext.txt exactly) with NO accompanying plaintext reconstitution, unlike the Rapp/Dantzig 1813 letter in the same article which Vilcoq does reconstruct in full (pp.25-27); Chuquet 1912 p.440 (letters XIX/XXIII, both 22 Dec 1812) read by this worker for cipher markers and carries none, while Chuquet's own edition elsewhere explicitly flags a different Berthier letter (VIII, 16 Dec, p.186) "En chiffres" -- so the XIX/XXIII pairing with this cryptogram is unconfirmed, not a match.
 
+## Y9: full ciphertext and crib test (25 Sept 2026, LANE R6)
+
+**(1) Full ciphertext from the Vilcoq plate.** Fetched the plate at the highest resolution Persée
+serves: `renderIllustration/rharm_0035-3299_1969_num_25_4_T1_0024_0003_1.png` (1060x1429; the
+whole-page `renderPage/..._<N>.jpg` endpoint ignores its own width parameter and returns a fixed,
+lower-effective-resolution 1217x1833 whole page, confirmed by requesting widths 1500/2000/3000 and
+getting the identical 424509-byte file each time -- so the standalone illustration crop is the best
+available image, not the page). Manifest and all crops in `images/`.
+
+Two blind passes on this one image: this worker (pass A) and one Sonnet subagent (pass B), each
+transcribing independently without seeing `ciphertext.txt`, the other pass, or NOTES.md
+(`passA.tsv`, `passB.tsv`). Both passes independently segmented the plate into the same 22 lines
+with the same 325 total groups (exact per-line count match on all 22 lines) -- strong agreement on
+where the groups are, if not always their values. Reconciling A vs B gave 16 disagreements (95.1%
+raw agreement); every one was settled by re-cropping that exact spot at 3-5x zoom and reading the
+digit shapes against unambiguous instances of the same digit elsewhere on the plate (this hand's "3"
+is a looped script shape close to "8", and "5" has a long descender close to "8" -- both flagged by
+the pass-B subagent unprompted as the hand's main hazards). Settled reading: `ciphertext_full.tsv`
+(325 groups, 22 lines, matches passA/passB group-count exactly).
+
+**Compared against the file (`ciphertext.txt`), per rule 2 (report every difference, never silently
+repair ciphertext.txt):** 10 of 325 groups (3.1%) differ between this primary-source read and the
+committed transcription (which derives from Cryptiana's `unsolved.htm`, itself presumably typed from
+the same plate or a copy of it). Position is the 1-indexed group number in the flat 325-token
+sequence; "image" is this worker's settled two-pass reading, confirmed by tight zoom in every case
+below; "file" is the current `ciphertext.txt`:
+
+| pos | image | file | zoom confirms |
+|---|---|---|---|
+| 60 | 544 | 844 | clear "5" (long descender), matches "544" shape elsewhere on the line, not "8" |
+| 65 | 800 | 803 | trailing digit is "0" then a period, not "3" |
+| 134 | 1063 | 1030 | both passes independently agreed 1063; zoom confirms |
+| 136 | 693 | 690 | both passes independently agreed 693; zoom confirms |
+| 172 | 633 | 683 | "3" not "8", same shape as "493"/"359" elsewhere |
+| 173 | 718 | 713 | clear "8" at 4x zoom |
+| 182 | 1016 | 1015 | third digit is "1" not "5" |
+| 191 | 635 | 605 | middle digit is "3" not "0" |
+| 296 | 1066 | 1068 | ends in two matching "6" loops, confirmed twice independently (initial pass-A/B disagreement was 1096/1098 one group earlier at pos 292 -- that one settles to **1096**, matching the file; the real diff is one group later, at 1066 vs 1068) |
+| 305 | 463 | 460 | "3" not "0", matches Bourdeau's own `berthier_ct.txt` reading of "460" too -- so this is a primary-image correction against **both** existing transcriptions, not just this repo's |
+
+No group-count or line-count discrepancy: image, passA, passB and the file all agree the plate holds
+exactly 325 groups, and (checked directly) the plate's last line is the visible end of the text --
+no further lines below it, no second plate. So Bourdeau's "opening only, 325 groups, then '....'"
+description (his `napoleon/NOTES.md`, cited below) is now confirmed as the **whole printed
+cryptogram**, not a truncated excerpt of a longer one Vilcoq's article holds back; the "...." in this
+repo's `ciphertext.txt` marks where transcription happened to stop, not where the plate's own text
+continues. `ciphertext.txt` is left as-is (rule 2); `ciphertext_full.tsv` is the line-broken, image-
+sourced, two-pass-settled reading and is the one to use for any future crib or key work.
+
+Structure (from `ciphertext_full.tsv`): 325 groups, 207 distinct, 136 hapax (66% of the 207 distinct
+codes occur once), commonest codes 918 and 13 (8x each, 2.5% of tokens), range 2-1388, occupancy
+near-flat across 1-1199 with only a few groups above 1200. This reproduces Bourdeau's own
+`napoleon/berthier.py` structural read almost exactly (his 325/207/64%/918&13-8x-2.5%/2-1388) --
+his `berthier_ct.txt` is in fact byte-identical to this repo's `ciphertext.txt` (diffed directly).
+
+**(2) Lead classes, in order (stop at the first that reads).**
+
+**(a) Same letter in print -- Chuquet 1912's two 22 Dec 1812 clear letters (XIX, XXIII).** Fetched
+the full djvu.txt of `archive.org/1812laguerrederu03chuquoft` (already known reachable, CX2-BERT)
+and wrote `scripts/extract_chuquet_letters.py`, which segments Berthier's whole December run by its
+Roman-numeral letter markers and drops page-header/footnote noise. It recovered 34 dated Dec 1812
+letters (II-XXXVIII; a few numbers are absent because the marker itself misparsed in the OCR), giving
+a real matched-control pool far bigger than the 20 the brief asked for. `scripts/letters.json` is the
+extracted text; `scripts/letter_stats.json` and `scripts/crib_test_results.json` are the numbers.
+
+Three honestly-reported, non-cherry-picked fit metrics, each scored for XIX (157 words), XXIII (529
+words) and all 32 other letters against the 325-group cryptogram (`scripts/crib_test.py`):
+
+1. **length fit** `|n_words - 325| / 325` (would a one-code-per-word system make sense length-wise):
+   XIX ranks 15th of 34 (0.517, i.e. barely half as many words as groups); XXIII ranks 18th (0.628,
+   62% more words than groups). The single best length match in the whole pool is letter **XXIX**
+   (28 Dec, 316 words, fit 0.028) -- not one of the two candidates the brief named, out of scope here,
+   flagged as a one-line suggestion below.
+2. **repeat-rate fit** `|word_repeat_rate - group_repeat_rate|` (325 groups repeat at 36.3%): XIX is
+   the closest fit of the two candidates, ranking **3rd of 34** (0.026); XXIII ranks 29th (0.180).
+3. **repeat-gap-distribution fit**, a KS statistic between the normalised gap-length distributions of
+   repeated tokens: XIX ranks 18th of 34 (0.285); XXIII ranks 30th (0.403).
+
+**Verdict: no fit.** XIX places respectably on one of three metrics (repeat-rate) but mid-pack on the
+other two; XXIII never places above the middle of the field on any metric. Neither beats the 34-letter
+control on a majority of tests, which is exactly the brief's bar for "a fit means something only if it
+beats them." This agrees with Bourdeau's own conclusion in `napoleon/NOTES.md` ("an alignment can
+always be manufactured [given 325 groups and a free choice of plaintext]; it would mean nothing. No
+alignment is proposed") and extends it: Bourdeau compared XXIII alone against the raw cipher's own
+stats (distinct/hapax/peak-frequency/repeated-bigrams) with no control; this pass adds the missing
+control (33 other letters) and the same negative holds up under it.
+
+**(b) Published key of the office.** Grepped a fresh shallow clone of `dbourdeau/cyphersolver` (MIT)
+and this repo's `sources/cryptiana/` for "petit chiffre" / "petit-chiffre" and any Napoleon/Berthier
+1812 table. Three hits, none applicable: `sources/cryptiana/web/napoleon2.htm` uses the phrase once,
+inside a *quoted 1812 letter* about routine army correspondence ("vous servant du petit chiffre de
+l'armée") -- a mention of a different, unnamed cipher in passing, not a key table for it, and not
+Berthier's "Chiffre du Prince de Neufchâtel" specifically; the other two hits (`catinat1691.htm`,
+`crypto.htm`) concern an unrelated 1691 Catinat cipher. Bourdeau's own repository, searched directly
+(no file besides `napoleon/` mentions Berthier or Napoleon 1812), confirms no key was found there
+either -- his own write-up states plainly that the 1200-entry nomenclator "is not a cipher that yields
+to analysis" from structure alone, with no key on file to apply. No key exists in either source to
+apply, so there is no random-draw control to run (rule 3's control requirement applies to a claimed
+result; there is no result here to gate). No free cryptanalysis attempted beyond this, per brief.
+
+**Status stays `open`.** Credit (rule 8): Bourdeau (`dbourdeau/cyphersolver`, MIT code / CC BY 4.0
+text) independently found and printed the same 325-group excerpt, ran the same structural read this
+pass reproduces, and ran an uncontrolled version of the same XXIII crib check this pass now controls
+against 34 letters and confirms negative; Tomokiyo/Cryptiana for the original excerpt and the "et has
+several codes" comparison cited in Bourdeau's own notes.
+
+**One-line suggestions for whoever picks this up next (not followed here, out of this brief's
+scope):** (1) letter XXIX (28 Dec 1812, 316 words) is the single best length-match to the 325-group
+cryptogram in the whole Dec-1812 Berthier corpus (fit 0.028) -- not tested on the other two metrics
+here since it wasn't one of the two candidates named, but cheap to add; (2) the "votre note chiffrée"
+lead in *Correspondance de Napoléon Ier* vol. XXIV, named by both Tomokiyo and Bourdeau and not yet
+retrieved by either; (3) William Urban's find of Berthier's cipher-use instructions in the Russian
+State Military Historical Archive (named on Cryptiana's napoleon2.htm, not yet checked by anyone in
+this repo).
+
+Requests this section: persee.fr 7 (main doc page 1, page-fragment probes 2, illustration PNG 1,
+whole-page-JPG width-parameter probe 3, all >=1.5s apart, no 429/403); archive.org 1 (djvu.txt
+download, already fetched once by CX2-BERT, re-fetched here since this session did not have it on
+disk); github.com 1 (shallow clone of dbourdeau/cyphersolver, MIT, removed after grep). 1 Sonnet
+subagent (pass B, blind image transcription, one call).
+
 ## Found-solved test (LANE CX2 worker CX2-BERT, 25 Sept 2026)
 
 Ran the three-part found-solved test the orchestrator queued (CX2-FRAWI's 16:03/16:06 passes had located Chuquet p.440 and the Persée article but not yet read Chuquet's source notes or Vilcoq's actual page images -- both done in this pass).
