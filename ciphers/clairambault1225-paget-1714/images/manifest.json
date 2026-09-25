@@ -59,5 +59,26 @@
       "shows": "END of PAGET LETTER 2, both pages, old series stamped '280'/'99' (left) and '281'/'59' (right). Very heavy, near-continuous cipher use discussing dynastic/marriage politics around Parma, the Prince Francois Farnese, the King of Spain ('le Roy d'Espagne'), 'Madame la Duchesse' -- consistent with the run-up to Elisabeth Farnese's marriage to Philip V of Spain (Sept 1714); this letter (28 Aug 1714) predates that marriage by about a month. Closes with the same formula and signs '[signed] Paget', dateline 'a Genes le 28 aoust 1714.'"
     }
   ],
+  "transcription_crops": {
+    "fetched": "25 September 2026, OX-PAGT (Gallica slot OX)",
+    "method": "tools/iiif_lines.py --ark btv1b9001034d --canvas N fetched each canvas's full native-resolution region once (6648x5624 to 7931x6323 px depending on canvas) to a local src_*.jpg cache; a one-off script then split each canvas at its detected book-gutter column into left/right page halves (220px native overlap on both sides of the gutter so no token is cut between halves) and downscaled each half to 1700px wide (still far above the 1400-2200px full-canvas reading images above) to keep this folder under the 30MB budget. The native src_*.jpg caches (about 40MB total) were NOT committed; re-fetch with the iiif_lines.py command above if a higher-resolution look is needed (one request per canvas, cached after first fetch).",
+    "requests": "7 Gallica canvas fetches (f60/61/62/63/64/65/66), one at a time, >=1.5s apart (the tool's own pacing); 2 got a transient 'Connection reset by peer' (f64 first attempt) and were retried once after a short pause per COMMON rule 5, both retries succeeded, no third attempt.",
+    "files": [
+      {"file": "f60R.jpg", "canvas": "f60", "page": "right only (left is blank guard)", "shows": "Letter 1, p.1 (old series '239')"},
+      {"file": "f61L.jpg", "canvas": "f61", "page": "left", "shows": "Letter 1 continues (old series '240')"},
+      {"file": "f61R.jpg", "canvas": "f61", "page": "right", "shows": "Letter 1 continues (old series '241')"},
+      {"file": "f62L.jpg", "canvas": "f62", "page": "left", "shows": "Letter 1 continues (old series '242'), plain French, no cipher"},
+      {"file": "f62R.jpg", "canvas": "f62", "page": "right", "shows": "Letter 1 continues (old series '243'), plain French, no cipher"},
+      {"file": "f63L.jpg", "canvas": "f63", "page": "left", "shows": "Letter 1 continues (old series '244'), plain French, no cipher"},
+      {"file": "f63R.jpg", "canvas": "f63", "page": "right", "shows": "Letter 1 continues (old series '245'), plain French, no cipher"},
+      {"file": "f64L.jpg", "canvas": "f64", "page": "left", "shows": "Letter 1 continues, plain French, no cipher"},
+      {"file": "f64R.jpg", "canvas": "f64", "page": "right", "shows": "Letter 1 continues (old series '247')"},
+      {"file": "f65L.jpg", "canvas": "f65", "page": "left", "shows": "Letter 1 ends, signed 'Paget', dated 'A Gennes le 8e Avril 1714'"},
+      {"file": "f65R.jpg", "canvas": "f65", "page": "right", "shows": "Letter 2 starts (old series '239'/'68', a fresh pagination for the new letter)"},
+      {"file": "f66L.jpg", "canvas": "f66", "page": "left", "shows": "Letter 2 continues (old series '280'), very heavy cipher use"},
+      {"file": "f66R.jpg", "canvas": "f66", "page": "right", "shows": "Letter 2 ends, signed 'Paget', dated 'a Genes le 28 aoust 1714' (old series '281')"}
+    ],
+    "reading_order": "canvas order f60,f61,f62,f63,f64,f65,f66; within a canvas, left page before right page (a photographed book spread, turned in sequence); f65R starts Letter 2 mid-canvas."
+  },
   "note": "Two enciphered autograph letters from Paget, writing from Genoa (Gennes) to an unnamed French 'Monseigneur' (by content and language almost certainly a French Secretary of State, not an English correspondent; Paget describes himself awaiting appointment as French consul at Sardinia), dated 8 April 1714 and 28 August 1714, immediately follow Cardinal Fleury's testament and a biographical notice of Fleury in the same bound dossier (finding aid's single 'Fol. 48' entry covers both items). The cipher is a NOMENCLATOR: continuous French prose with isolated 2-3 digit numbers (period-separated, values roughly 1-300 seen so far) substituted for proper names, places and sensitive terms; the surrounding text is never enciphered. No interlinear or marginal gloss/decipherment is visible on any leaf fetched (checked per .claude/briefs/transcription.md's pre-pass rule (a)); this looks like a genuine, still-unbroken nomenclator, not a found-solved leaf. Two more full-page biographical-notice canvases (f57-f59, vol.folio 50-52) sit between the testament and Letter 1 and were viewed at 1400px but not saved to images/ (not part of either Paget letter). 268-leaf volume beyond this dossier reverts to unrelated bound material (a Puget/Peraud family legal case in print begins by vol.folio ~60, confirmed at f67/f70/f75)."
 }
