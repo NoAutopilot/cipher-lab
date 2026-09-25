@@ -1,0 +1,18 @@
+{
+  "source": "Salzburg Museum, Sammlung Online (sammlung-online.salzburgmuseum.at), IIIF Image API 2",
+  "object": "BIB HS 2398 -- 'Die Propheceyung, so im Undtersperg zu Reichenhall geschehen ist, im 1523. Jahr' (Lazarus Gitschner attribution)",
+  "detail_page": "https://sammlung-online.salzburgmuseum.at/detail/collection/0a5aec0c-2c55-4eab-addc-a2c08e4b6f93",
+  "note": "The object has 28 digitised leaves/openings (Media_Key_0..27) via this IIIF endpoint, /iiif/iiif/2/{media_id}/full/{size},/0/default.jpg. Only ONE was fetched at above-thumbnail resolution this pass (see images[0] below); the rest were sampled only as 300px-wide thumbnails (not committed, scratchpad only, not counted toward the 30 MB budget) to locate the folio carrying an inscription. fetched 25 Sept 2026 by LANE B4 worker bUNT3.",
+  "images": [
+    {
+      "file": "hs2398_f52v-53r_candidate.jpg",
+      "media_id": "e0f9d823-c1bc-4adf-9351-2a4190cb82af",
+      "iiif_url_fetched": "https://sammlung-online.salzburgmuseum.at/iiif/iiif/2/e0f9d823-c1bc-4adf-9351-2a4190cb82af/full/1225,/0/default.jpg",
+      "fetched_size_px": "1225x766 (this pass; native/max per info.json is 4900x3064, not re-fetched)",
+      "sha1": "93c00d8ab41860838d869248619528e815f3689d",
+      "size_bytes": 188867,
+      "foliation_visible": "pencil folio numbers '52' (left/verso) and '53' (right/recto) plus a separate '27' at the far top-right corner (a second, older foliation or the manuscript's own internal numbering -- not disambiguated this pass)",
+      "content": "a two-page opening, each side showing a crowned/allegorical figure holding a scroll or tablet inscribed with short pseudo-writing (left tablet ~3 short lines, e.g. 'CFCYFCTOT / EOLL18YEM / GAECEL9O' as read casually from the image, NOT a careful transcription; right tablet ~3 lines of continuous capitals, e.g. 'ISYRLAEDET REUZCEIHS / SYFEKS7ERY... / ET(?)ALLAXCVUOMH6O', plus a third short inscribed label near a bare tree on the right page). This does NOT obviously match the spec's 6-line/228-character 'S. d. d. occo. x.' abbreviation-style transcription in specs/untersberg-code.json -- treat as an UNCONFIRMED candidate for 'the cave inscription' page, not a match, pending a careful re-check against Schmeh's own scienceblogs.de image. See NOTES.md."
+    }
+  ]
+}
