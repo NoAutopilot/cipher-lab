@@ -1,0 +1,28 @@
+page_of_letter	line	pos	group	trim	book_page	book_col	rank	is_null	grade
+2	1	1	328928		289	2	8	false	H
+2	1	2	336227		362	2	7	false	H
+2	1	3	328511	2	285	1	1	false	H
+2	1	4	335412		354	1	2	false	H
+2	1	5	3251217		251	2	17	false	H
+2	1	6	3241220		241	2	20	false	H
+2	1	7	311021		110	2	1	false	H
+2	1	8	325532	2	255	3	2	false	H
+2	1	9	328521	4	285	2	1	false	H
+2	2	1	313211		132	1	1	false	H
+2	2	2	3241315		241	3	15	false	H
+2	2	3	322332	4	223	3	2	false	H
+2	2	4	3350320		350	3	20	false	H
+2	2	5	260118		60	1	18	false	H
+2	2	6	829011	5				true	H
+2	2	7	328131	3	281	3	1	false	H
+2	2	8	326624		266	2	4	false	H
+3	1	1	329512		295	1	2	false	H
+3	1	2	326223		262	2	3	false	H
+3	1	3	316211	6	162	1	1	false	H
+3	1	4	287219		87	2	19	false	M
+3	1	5	324726		247	2	6	false	H
+3	1	6	3293211	3	293	2	11	false	H
+3	1	7	338326	4	383	2	6	false	H
+3	1	8	322231	3	222	3	1	false	H
+3	2	1	3250121		250	1	21	false	H
+# total groups: 26; graded M: 1 (page 3 line 1 pos 4, "287219" - the digit after "28" is a compressed stroke consistent with this scribe's "7" but shorter than the clear "7"s elsewhere; digits recorded as read, not altered to force a parse)
