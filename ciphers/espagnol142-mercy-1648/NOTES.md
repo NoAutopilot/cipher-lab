@@ -560,3 +560,27 @@ Brussels chiffres 1647-98 lead (Y6) stays the recovery route -- a key sheet woul
 **Search log.** Nothing searched for the letter in print (the verifier's job). Report what was found: a reading at
 grade S/M from cryptanalysis with a control; where it was not found: no key source, no plaintext source consulted.
 Requests: none. Subagents: none. Cost: read by the orchestrator.
+
+## MR: fresh re-derivation (25 Sept 2026, LANE R6)
+
+Rule-7 re-derivation, fresh instance: read only specs/espagnol142-mercy-1648.json, ciphertext.tsv, key.tsv,
+exceptions.tsv and decode.json (not reading.txt, NOTES.md's M2 section, m2/ or corrections.tsv) before running
+anything.
+
+Ran `tools/decode_key.py ciphers/espagnol142-mercy-1648` via a copy of decode.json pointed at
+`rederive/reading_fresh.txt` / `rederive/reading_tokens_fresh.tsv` (same ciphertext/key/exceptions/header/style
+fields, only the output paths changed, so as not to overwrite the committed reading while regenerating it).
+Token grade counts from the fresh run: **S 494, M 27** (H 0, C 0, I 0, U 0) of 521 -- identical to the committed
+reading's M2 counts (S 494, M 27).
+
+`diff reading.txt rederive/reading_fresh.txt` and `diff reading_tokens.tsv rederive/reading_tokens_fresh.tsv`:
+**both exit 0, byte-identical.** Differing tokens against the committed reading: **0** (vs the M-graded count of
+27 in the brief -- i.e. the fresh derivation reproduces every one of the 27 M-graded tokens exactly as committed,
+0 tokens differ).
+
+`tools/decode_key.py ciphers/espagnol142-mercy-1648 --check`: `reading up to date`, **exit 0**.
+
+Conclusion: the committed reading.txt is a faithful, reproducible regeneration of ciphertext.tsv + key.tsv +
+exceptions.tsv under decode.json as committed. Not classifying novelty (rule 10); not evaluating the judge result
+or the register question (M2/MJ's job). Files: `rederive/reading_fresh.txt`, `rederive/reading_tokens_fresh.tsv`.
+Hosts: none. Subagents: none.
