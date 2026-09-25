@@ -165,6 +165,73 @@ Rule 10: nothing here is a reading; grade S throughout (no H, no C); status stay
 `tools/tests/test_homophonic_family.py`, this section, `specs/debosnys-1883.json` (`cheap_test_done` "3-control"
 entry). Requests: none (disk and CPU only). Subagents: none.
 
+## GOLD-D2, base-level noise curve (25 Sept 2026, session_019a43vGLshPA8EZvcuNjGCG, Sonnet)
+
+Brief: `.claude/briefs/runs/2026-09-25-lane-gold-c3-debosnys-base-curve.md`. Cap $3 / 30 min, started 21:39 UTC.
+Intake gate at spawn: `debosnys-1883: open (line 1) -- edition/page or full-text-search citation found within 6
+lines` (exit 0). Controls only throughout, exactly D1's procedure (`tools/family_run.py --family homophonic`,
+fr19 corpus, seeds 1-3, restarts 8, `--tokens space`, `--param profile=target`): scratch copies of
+`ciphertext_draft_base.tsv` and `ciphertext_draft.tsv` with the `_` and `MULTI` rows dropped, made and kept in
+this session's scratchpad, never in the tree; `base_mark_recount.py --check` exited 0 before any run (the
+committed base-level files were fresh). The target was never run.
+
+This job fills the two points D1's curve did not have between clean and 10 pct noise, at the noise level a
+settled two-pass transcription is expected to carry (about 5-10 pct, GOLD-D1/GOLD-4C), and prices settling one
+cryptogram (c2, the longest, N=734) alone before the whole four-cryptogram inventory.
+
+**A. Base level, all four cryptograms** (N=1251, K_base=128 nominal; `ciphertext_draft_base.tsv` scratch copy):
+
+| noise | CONTROL mean (range) | realised K per seed |
+|---|---|---|
+| 0 (D1) | 0.859 (0.802-0.966) | -- |
+| 0.025 | **0.816 (0.713-0.942)** | 108, 111, 106 |
+| 0.05 | **0.385 (0.199-0.483)** | 109, 109, 107 |
+| 0.075 | **0.322 (0.090-0.517)** | 107, 110, 108 |
+| 0.10 (D1) | 0.314 (0.245-0.378) | -- |
+
+The curve drops sharply between 0.025 and 0.05 (0.816 -> 0.385), then is roughly flat from 0.05 to 0.10 (0.385,
+0.322, 0.314) -- consistent with a control that is already past its noise-tolerance knee by 5 pct and has little
+further to lose by 10 pct. There is no point above the 0.5 line at or past 0.05.
+
+**B. c2 alone, base level** (N=734, K_base=102 realised -- matches D1's recount table; `ciphertext_draft_base.tsv`
+rows with line id `c2*` only, same scratch filtering):
+
+| noise | CONTROL mean (range) | realised K per seed |
+|---|---|---|
+| 0 | **0.669 (0.456-0.898)** | 82, 85, 88 |
+| 0.05 | **0.433 (0.256-0.533)** | 82, 85, 88 |
+
+Settling c2 alone buys a higher clean mean than the four-cryptogram base level did at 0.025 (0.669 vs the
+all-cryptogram curve's own 0 pt of 0.859 is not comparable design-for-design, but c2 alone's own 0.05 point,
+0.433, is close to the all-cryptogram 0.05 point, 0.385 -- committing to one long cryptogram does not buy
+materially more headroom than committing to all four at the same noise level).
+
+**C. K160 (full 160-id inventory), for the record** (N=1251, K=160 nominal; `ciphertext_draft.tsv` scratch copy,
+same filtering):
+
+| noise | CONTROL mean (range) |
+|---|---|
+| 0.05 | 0.421 (0.219-0.693) |
+
+Sits between D1's own 0 and 0.10 K160 points (0.440, 0.325) as expected; base level is still the better design at
+this noise level (0.385 vs 0.421 is within range overlap, no clear separation at N=1251, K~128 vs K~160 once noise
+is added -- the base-level advantage D1 found is a clean-signal effect that narrows once noise dominates).
+
+**Gate (written before these numbers existed, top block "Summary, cycle 2"): settlement licensed only if the
+base-level mean is at or above 0.5 at noise 0.05 AND at or above 0.4 at noise 0.075.** Measured: **0.385 at 0.05
+(below 0.5) and 0.322 at 0.075 (below 0.4)** -- both conditions fail, so the verdict is **(c) for the letter
+families**: no letter-substitution design (base level, K160, or c2 alone) reads above the gate at the noise a
+settled transcription is expected to carry, so a c1 or c2 image-settlement pass is not licensed by this job's
+numbers. The target is parked as transcription-limited at K160/K_base128; no letter-substitution control reads
+at N=1251 (or at N=734 for c2 alone) at 5-10 pct noise. Per rule 5, this keeps the register `open`/`partial`, not
+`closed-negative` (BM still has real headroom at 0 and 2.5 pct noise, and no control has been run below 2.5 pct
+except D1's own clean point).
+
+Rule 10: nothing here is a reading; grade S throughout (no H, no C); status stays `open`. Files: this section,
+`specs/debosnys-1883.json` (`cheap_test_done` "3-control-2" entry), `ciphers/debosnys-1883/NOTES.md` (GOLD-D2
+paragraph). Scratch cipher copies lived only in this session's scratchpad, never committed. Requests: none (disk
+and CPU only). Subagents: none.
+
 <!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
 
 | date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
@@ -181,3 +248,9 @@ entry). Requests: none (disk and CPU only). Subagents: none.
 | 25 Sept 2026 20:24 | homophonic | N=1251 K=128 restarts=8 corpus=pg11049_Eugenie_Grandet.txt.gz+pg11131_Pierre_et_Jean.txt.gz+pg14155_Madame_Bovary.txt.gz+pg796_La_Chartreuse_de_Parme.txt.gz+pg798_Le_rouge_et_le_noir.txt.gz profile=target,noise=0 | 1-3 | 0.859 (0.802-0.966) | not run (control-only) | - | yes | GOLD-D1 homophonic fr19 control, base level profile=target noise=0 |
 | 25 Sept 2026 20:25 | homophonic | N=1251 K=128 restarts=8 corpus=pg11049_Eugenie_Grandet.txt.gz+pg11131_Pierre_et_Jean.txt.gz+pg14155_Madame_Bovary.txt.gz+pg796_La_Chartreuse_de_Parme.txt.gz+pg798_Le_rouge_et_le_noir.txt.gz profile=target,noise=0.1 | 1-3 | 0.314 (0.245-0.378) | not run (control-only) | - | no | GOLD-D1 homophonic fr19 control, base level profile=target noise=0.1 |
 | 25 Sept 2026 20:25 | homophonic | N=1050 K=159 restarts=8 corpus=pg11049_Eugenie_Grandet.txt.gz+pg11131_Pierre_et_Jean.txt.gz+pg14155_Madame_Bovary.txt.gz+pg796_La_Chartreuse_de_Parme.txt.gz+pg798_Le_rouge_et_le_noir.txt.gz profile=target,noise=0 | 1-3 | 0.230 (0.101-0.305) | not run (control-only) | - | no | GOLD-D1 homophonic fr19 control, K160 minus X (N1050 K159) profile=target noise=0 |
+| 25 Sept 2026 21:41 | homophonic | N=1251 K=128 restarts=8 corpus=pg11049_Eugenie_Grandet.txt.gz+pg11131_Pierre_et_Jean.txt.gz+pg14155_Madame_Bovary.txt.gz+pg796_La_Chartreuse_de_Parme.txt.gz+pg798_Le_rouge_et_le_noir.txt.gz profile=target,noise=0.025 | 1-3 | 0.816 (0.713-0.942) | not run (control-only) | - | yes | GOLD-D2 homophonic fr19 control, base level profile=target noise=0.025 |
+| 25 Sept 2026 21:42 | homophonic | N=1251 K=128 restarts=8 corpus=pg11049_Eugenie_Grandet.txt.gz+pg11131_Pierre_et_Jean.txt.gz+pg14155_Madame_Bovary.txt.gz+pg796_La_Chartreuse_de_Parme.txt.gz+pg798_Le_rouge_et_le_noir.txt.gz profile=target,noise=0.05 | 1-3 | 0.385 (0.199-0.483) | not run (control-only) | - | no | GOLD-D2 homophonic fr19 control, base level profile=target noise=0.05 |
+| 25 Sept 2026 21:42 | homophonic | N=1251 K=128 restarts=8 corpus=pg11049_Eugenie_Grandet.txt.gz+pg11131_Pierre_et_Jean.txt.gz+pg14155_Madame_Bovary.txt.gz+pg796_La_Chartreuse_de_Parme.txt.gz+pg798_Le_rouge_et_le_noir.txt.gz profile=target,noise=0.075 | 1-3 | 0.322 (0.090-0.517) | not run (control-only) | - | no | GOLD-D2 homophonic fr19 control, base level profile=target noise=0.075 |
+| 25 Sept 2026 21:43 | homophonic | N=734 K=102 restarts=8 corpus=pg11049_Eugenie_Grandet.txt.gz+pg11131_Pierre_et_Jean.txt.gz+pg14155_Madame_Bovary.txt.gz+pg796_La_Chartreuse_de_Parme.txt.gz+pg798_Le_rouge_et_le_noir.txt.gz profile=target,noise=0 | 1-3 | 0.669 (0.456-0.898) | not run (control-only) | - | yes | GOLD-D2 homophonic fr19 control, c2 alone base level profile=target noise=0 |
+| 25 Sept 2026 21:43 | homophonic | N=734 K=102 restarts=8 corpus=pg11049_Eugenie_Grandet.txt.gz+pg11131_Pierre_et_Jean.txt.gz+pg14155_Madame_Bovary.txt.gz+pg796_La_Chartreuse_de_Parme.txt.gz+pg798_Le_rouge_et_le_noir.txt.gz profile=target,noise=0.05 | 1-3 | 0.433 (0.256-0.533) | not run (control-only) | - | no | GOLD-D2 homophonic fr19 control, c2 alone base level profile=target noise=0.05 |
+| 25 Sept 2026 21:44 | homophonic | N=1251 K=160 restarts=8 corpus=pg11049_Eugenie_Grandet.txt.gz+pg11131_Pierre_et_Jean.txt.gz+pg14155_Madame_Bovary.txt.gz+pg796_La_Chartreuse_de_Parme.txt.gz+pg798_Le_rouge_et_le_noir.txt.gz profile=target,noise=0.05 | 1-3 | 0.421 (0.219-0.693) | not run (control-only) | - | no | GOLD-D2 homophonic fr19 control, K160 profile=target noise=0.05 |

@@ -606,3 +606,17 @@ decision: `HYPOTHESES.md` section "GOLD-D1, noise-matched controls". Headline: c
 only at base level (K_base 128, mean 0.859), not at the full 160-id level (mean 0.440) -- branch (b), BM has
 headroom, H does not; no design clears the gate once 10-20 pct transcription noise is added. No decoding, no
 images, no transcription; status stays `open`; grade S throughout, 0 H, 0 C.
+
+## GOLD-D2 (25 Sept 2026, session_019a43vGLshPA8EZvcuNjGCG, Sonnet)
+
+Controls-only job filling D1's base-level noise curve between its 0 and 0.10 points (2.5/5/7.5 pct), pricing c2
+(N=734) settled alone against the whole four-cryptogram inventory, and adding a K160 0.05 pct point for the
+record; same procedure as D1 (`tools/family_run.py --family homophonic`, fr19, seeds 1-3, restarts 8,
+`--param profile=target`), scratch cipher copies only, target never run. Full numbers and table:
+`HYPOTHESES.md` section "GOLD-D2, base-level noise curve". Headline: base-level control mean is 0.816 at 2.5 pct
+noise but drops to 0.385 at 5 pct and 0.322 at 7.5 pct; against the top block's own gate (settlement licensed
+only at >= 0.5 at 5 pct AND >= 0.4 at 7.5 pct), both conditions fail, so the verdict is **(c) for the letter
+families**: no letter-substitution design (base level, K160, or c2 settled alone at 0.433) reads above the gate
+at the noise a settled two-pass transcription is expected to carry. A c1 or c2 image-settlement pass is not
+licensed by these numbers. No decoding, no images, no transcription; status stays `open` (rule 5: not
+`closed-negative`); grade S throughout, 0 H, 0 C.

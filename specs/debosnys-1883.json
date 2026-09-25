@@ -199,6 +199,71 @@
       "gate": 0.6,
       "reading": "target not run: transcription below gate (Do item 6 of the job brief -- controls only)",
       "conclusion": "Branch (b) of the top-block decision rule (ciphers/debosnys-1883/HYPOTHESES.md): clean control clears the 0.6 gate only at base level (K_base=128, mean 0.859), not at the full 160-id level (mean 0.440) -- BM (base+mark) has headroom for a homophonic-French test, H (160-id) does not; neither clears the gate once any transcription noise (10-20 pct) is added."
+    },
+    "3-control-2": {
+      "test": "3-control-2",
+      "date": "25 Sept 2026",
+      "worker": "LANE GOLD worker GOLD-D2, session_019a43vGLshPA8EZvcuNjGCG, Sonnet",
+      "method": "Controls only, tools/family_run.py --family homophonic, fr19 corpus, seeds 1-3, restarts 8, scratch cipher copies (_/MULTI rows dropped, kept in scratchpad only). Fills the base-level noise curve between D1's 0 and 0.10 points at 0.025/0.05/0.075, prices c2 (N=734) settled alone at 0 and 0.05, and adds a K160 0.05 point for the record. Full write-up: ciphers/debosnys-1883/HYPOTHESES.md 'GOLD-D2, base-level noise curve'.",
+      "result": {
+        "A_base_noise0.025": {
+          "N": 1251,
+          "K_nominal": 128,
+          "control_mean": 0.816,
+          "control_range": [
+            0.713,
+            0.942
+          ]
+        },
+        "A_base_noise0.05": {
+          "N": 1251,
+          "K_nominal": 128,
+          "control_mean": 0.385,
+          "control_range": [
+            0.199,
+            0.483
+          ]
+        },
+        "A_base_noise0.075": {
+          "N": 1251,
+          "K_nominal": 128,
+          "control_mean": 0.322,
+          "control_range": [
+            0.09,
+            0.517
+          ]
+        },
+        "B_c2_alone_noise0": {
+          "N": 734,
+          "K_realised": 102,
+          "control_mean": 0.669,
+          "control_range": [
+            0.456,
+            0.898
+          ]
+        },
+        "B_c2_alone_noise0.05": {
+          "N": 734,
+          "K_realised": 102,
+          "control_mean": 0.433,
+          "control_range": [
+            0.256,
+            0.533
+          ]
+        },
+        "C_K160_noise0.05": {
+          "N": 1251,
+          "K_nominal": 160,
+          "control_mean": 0.421,
+          "control_range": [
+            0.219,
+            0.693
+          ]
+        }
+      },
+      "gate": "settlement licensed only if base-level mean >= 0.5 at noise 0.05 AND >= 0.4 at noise 0.075 (written before these numbers, ciphers/debosnys-1883/HYPOTHESES.md top block)",
+      "reading": "target not run: transcription below gate (controls only, per brief)",
+      "conclusion": "(c) for the letter families: base-level mean 0.385 at noise 0.05 (below 0.5) and 0.322 at noise 0.075 (below 0.4) -- gate not met. c2 settled alone (N=734) does not clear it either (0.433 at 0.05). No letter-substitution design reads above gate at the noise a settled two-pass transcription is expected to carry (5-10 pct); a c1/c2 image-settlement pass is not licensed by these numbers. Rule 5: register stays open/partial, not closed-negative."
     }
   }
 }
