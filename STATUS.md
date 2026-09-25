@@ -133,25 +133,28 @@ judge on the target's own clear text before reading a FAIL; open an on-disk imag
 titles describe the transmission (twice now); five of 31 workers overran (P5 2.0x, Y4b 1.8x, L2 1.37x interrupted, L3 1.33x, L4 1.07x),
 all with subagents or image bisection. Retrospective trigger met (31 rows, USD 140).
 
-## LANE ZX2 handoff (session_015Bn675gy4Zx5pz8A9CXQzQ), 25 September 2026, kept current (last 19:50 UTC)
+## LANE ZX2 handoff (session_015Bn675gy4Zx5pz8A9CXQzQ), 25 September 2026, kept current (last 20:29 UTC)
 
 Opened 19:09 by the owner-account parent: the CX/CX2 gate-passing hand-offs R6 does not hold (R6 keeps Mercy, Salviati,
 Berthier, Costa Cabral, Xiquena; ZX keeps clair349, brochado, barriere). Brief .claude/briefs/runs/2026-09-25-lane-zx2-orchestrator.md.
-Rate allowed at 19:47. Worker usage so far USD 18.57 (5 ledgered); orchestrator about USD 2.8 at 19:47.
+Rate allowed at 20:26. Worker usage so far USD 29.96 (8 ledgered).
 
 | target | outcome (25 Sept 2026) | next |
 |---|---|---|
 | ormond-arran-1678 | open. ZX2-ORM: Cipher 1 table 162 codes (Tomokiyo image, checked against HMC interlinear); target 6/20 vs random-key control mean 3.79 (p99 8, p=0.148): all three printed Ormond-Longford ciphers now fail with controls. 4 cipher letters of 1680 in HMC vols 4-5, none pools. | none cheap: a sibling in the same cipher (not in HMC) |
 | hellen-frederick-1752 | open. ZX2-HEL: ciphertext of all 8 despatches from Bourdeau's audit files (CC BY 4.0, credited); three codes by date (1752 846 signs, 1756 516, 1763 1,289 over 6 letters; one-key Jaccard 0.1456 vs split control 0.1372); two-part code, values to ~3,900. Spec written, judge fr18. | DECODE images (ASKS 1/42); cipher originals of the Oct 1752-Jul 1753 letters whose clear decipherments are in NA Fagel 5206 |
 | destaing-gerard-1779 | open. ZX2-EST: 216 tokens/104 distinct; three marbois codes: target 22 vs control mean 18.17 [13,24], inside the band (control-backed: not those codebooks). Siblings 0 (Clements 403; Doniol IV fetch 500 once). 2 crib positions. Spec, judge fr18. | Clements copy (ZX2-ASK); Doniol IV crib text retry |
-| la-garde-1577 | open. ZX2-LAG: 7 of 13 harvest candidates, 0 same-system; pooled stays 239 signs. Flag: WVO 6136 (Reinier Cant, Bremen 1576) is an unregistered multi-page numeral cipher. | ZX2-LAG2 running (finish + live WVO query) |
-| clair1161-avis-flandre-1688 | open. ZX2-GAL part 1: canvases 216-342 and 0-127 swept, no cipher leaf; with Y7's 128-216 the whole volume is read except a few reset canvases. | ASKS 54 stands (BnF to locate); ZX2-ASK appends the result |
-| clairambault296-paget-1713 | ZX2-GAL part 2 running (187 unchecked canvases) | |
+| la-garde-1577 | open. ZX2-LAG: 7 of 13 harvest candidates, 0 same-system; pooled stays 239 signs. Flag: WVO 6136 (Reinier Cant, Bremen 1576) is an unregistered multi-page numeral cipher. | none in WVO: ZX2-LAG2 found 11 La Garde letters, 1 with cipher (the target); pool exhausted at 239 signs |
+| clair1161-avis-flandre-1688 | open. ZX2-GAL part 1: canvases 216-342 and 0-127 swept, no cipher leaf; with Y7's 128-216 the whole volume is read except a few reset canvases. | ASKS 54 stands (BnF to locate), appended by ZX2-ASK |
+| clairambault296-paget-1713 | open. ZX2-GAL: 133 more canvases read (261/316), all print or blank; 55 left at the host budget | ZX2-GAL2 running (the 55, then decode-4450's fr.20506 neighbours) |
 | tools | ZX2-FR18: tools/data/fr18 (Torcy, Villars, Maintenon, Gazette 1786; 2.36M letters), wired as fr18. Held-out 18th-c. prose false-negative rate fr18 0.183 (N200) vs fr16 0.961 and fr19 0.983: a fr16/fr19 FAIL on 17th-18th-c. French was not a test. destaing and hellen specs set to fr18. | |
 
-Live: ZX2-GAL session_017wH6L6J4fZzfHFowP5kAH3 (box to 20:45), ZX2-ASK session_01BW6iyGQHVv2MtafffVGGX7 (copy orders: BL x6, TNA x9, Clements; 45 min), ZX2-LAG2 session_0146gkLfUWuRxwC55BeT199N (45 min).
-Not worked (a person or a gated account): the BL and TNA items (ZX2-ASK writes their REQUEST.md and batched ASKS rows), ra-karlxi (gated),
-clair571 (ASKS 49), wellington (library), clairambault1225 (L11), decode-2754 (none cheap). Birago and decode-4450 need a sibling or images (Gallica, after ZX2-GAL frees the host).
+Live: ZX2-GAL2 session_01Wd3s3cqE9wUir6MYKfVe5v (box to 21:13).
+Copy orders: ZX2-ASK wrote 15 REQUEST.md (BL 6, TNA 8, Clements 1 for destaing) and ASKS rows 56-58, one per archive.
+Not worked (a person or a gated account): ra-karlxi (gated), clair571 (ASKS 49), wellington (library), clairambault1225 (L11),
+decode-2754 (none cheap), birago (Bourdeau's glyph-level negative with controls; sibling keys fr.3315 already tried), hellen
+(DECODE images). No target in the pool fits a tools/family_run.py family (they are codes, not letter ciphers) at a length
+where a control could read it.
 
 ## LANE B3 handoff (session_01VLtPMsqR2oWmZeKh2jxVga), 25 September 2026, kept current (last 20:23 UTC; restored after commit 9a1e34b, another session's "update" merge, dropped it)
 
