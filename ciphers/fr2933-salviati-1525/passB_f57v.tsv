@@ -1,0 +1,121 @@
+line	pos	code	marks	action	conf	note
+1	1	]	o|dot	correct	M	box is a ⊐ shape open to the LEFT with a small 'o' loop and two dots above (matches atlas ']', marks_seen o/dot are its most common), not a cursive 'y'
+1	2	o.	dot	confirm	H
+1	3	_		plain	H	part of the plain ligature "et" immediately before the legible plain word "Prometto"; not a real eps sign
+1	4	_		plain	H	crossed-t stroke of the plain "et" ligature
+1	5	_		plain	H	initial "P" of the legible plain word "Prometto", not the cipher "p" sign
+1	6	_		plain	H	rest of the plain word "Prometto" ("rometto")
+1	7	_		plain	H	part of the legible plain word "aura", not a "#" sign
+1	8	_		plain	H	rest of the plain word "aura" ("ra")
+1	9	_		plain	M	tall raised caret/dot flourish between "aura" and ".s.", not a sign
+1	10	_		plain	M	narrow mark, likely part of ".s." abbreviation punctuation
+1	11	S4		confirm	H
+1	12	dl		confirm	H
+1	13	#		correct	M	zoom shows two horizontal crossbars on the vertical stroke (double-barred cross), matches "#" not a single "+"
+1	14	Lx		confirm	H
+1	15	w	1|5	correct	M	wavy double-hump shape under numeral marks 1 and 5 resembles cipher "w"; flanked by cipher signs (Lx, y) on both sides, not part of any legible word, so not plain filler despite classifier's high-confidence "_"
+1	16	y		confirm	H
+1	17	y		confirm	H
+1	18	g	~	confirm	H
+1	19	a		correct	M	bold blocky letterform matches atlas cipher sign "a" (not a plain filler letter); its "5" mark sits in the adjacent oversegmented box at pos 20
+1	20	_	5	plain	M	isolated raised numeral "5" with no baseline stroke of its own; oversegmented from the "a" sign at pos 19, not an independent "S" sign as classifier proposed
+1	21	a	1	correct	M	bold blocky letterform with mark "1" matches atlas cipher sign "a", not plain filler; marks (1,5) match a's typical marks_seen
+1	22	o.		confirm	H
+1	23	m	7	confirm	H
+1	24	nt		confirm	H
+1	25	y		confirm	H
+1	26	S		confirm	H
+2	1	y		confirm	H
+2	2	y		confirm	H
+2	3	Z		correct	M	cursive zigzag shape matches "Z", not plain; an unclear flourish above it doesn't match the standard marks vocabulary so left blank
+2	4	g	~	confirm	H
+2	5	sq		confirm	H	clean square-box shape confirmed despite low classifier share; the adjacent "nt" glyph's ascender was mistaken for an attached mark on zoom, does not belong to this box
+2	6	nt		confirm	H	matches "n joined to a crossed stroke" atlas description clearly despite low classifier share
+2	7	psi		confirm	H
+2	8	lam	~	correct	M	simple Λ shape with a "~" mark above, not plain; a "3"-like flourish also appears low in the box, position atypical for a mark, left unclassified
+2	9	w		confirm	H
+2	10	rz		confirm	H
+2	11	#	o	correct	L	unusually large box (83x83) that appears to merge a circle+slash element with a double-bar cross beneath it; classified by the more sign-like double-bar ("#") with an "o" mark; genuinely hard to parse, flagged for reconciliation
+2	12	_	~	plain	M	small hook/wave mark only; possibly an oversegmented mark belonging to the "#" sign at pos 11 rather than an independent sign, but classifier's "_" call for this box itself stands
+2	13	phi		correct	H	clear small slashed-circle-on-a-long-stem shape matches "phi", not plain; cluster hint "y" also did not fit as well
+2	14	g		confirm	H
+2	15	psi		confirm	M
+2	16	m	~	confirm	H
+2	17	_		plain	L	circle attached to a long diagonal stroke of uncertain origin; may be a fragment bled from the neighboring "lam" sign at pos 18, genuinely ambiguous
+2	18	lam		confirm	H
+2	19	o.	ot	confirm	H
+2	20	S4		confirm	H
+2	21	dl		confirm	H
+2	22	Lx		confirm	H
+2	23	_		plain	M	long smooth undifferentiated wave stroke at line end (line-final position), likely a scribal flourish/paraph rather than a coded "w" sign; lacks w's characteristic hump/lead-in structure
+3	1	S4		confirm	H
+3	2	dl		correct	L	loop+tail shape matches "dl"; an additional cross/"+"-like stroke extends further right within the same box, possibly a second merged mark or oversegmentation artifact, genuinely hard to resolve
+3	3	Lx		confirm	H
+3	4	e		correct	M	single continuous bowl rising into one loop at the top (all one stroke) matches "e", not "ch"'s separate c+tall-looped-h structure; no ch-typical marks seen
+3	5	lam		confirm	H
+3	6	_		plain	M	vertical stroke with a small hook, most likely the lead-in stroke of the following "bh" sign at pos 7 (atlas notes bh "often" has a lead-in stroke from the left); not an independent sign
+3	7	bh		confirm	H
+3	8	S		confirm	H	small S-loop shape, sits lower than the line's main baseline but otherwise a clear match
+3	9	Z		confirm	H
+3	10	wd		confirm	H
+3	11	_		plain	M	vertical stroke with a small hook, likely a lead-in fragment before "H" at pos 12; not an independent sign
+3	12	H		confirm	H
+3	13	e	dot	confirm	H
+3	14	g		confirm	H
+3	15	_		plain	M	vertical stroke with a small hook, likely a lead-in fragment before "w" at pos 16; not an independent sign
+3	16	w		confirm	H
+3	17	y		confirm	H
+3	18	y		confirm	H
+3	19	e		confirm	H
+3	20	_		plain	M	small loop + diagonal stroke, resembles a lead-in fragment, possibly linked to the sign at pos 21
+3	21	_		plain	L	two vertical hook strokes (bh-like lead-ins or letter fragments); share only 0.40, genuinely hard to assign a specific sign code, kept plain per classifier
+3	22	e	#	confirm	H
+3	23	wd		confirm	H
+3	24	bh		confirm	H
+3	25	y		confirm	H
+3	26	_		plain	M	thin flat trailing flourish at line end, same pattern as line 2 pos 23; likely a scribal flourish, not a coded "w" sign
+4	1	eps	7	confirm	H
+4	2	Z		correct	H	clear zigzag "Z" shape below an unclear digit-like flourish; marks left unclassified pending a vocab match, classifier's "_" (full confidence) is wrong
+4	3	psi		confirm	H
+4	4	eps	5	correct	H	two stacked open bowls under a "5" mark match "eps" precisely (5 is eps's single most common mark); not plain as classifier proposed
+4	5	Z		confirm	H
+4	6	e	dot|+	confirm	H
+4	7	lam		confirm	H
+4	8	w	1	correct	H	clear cursive w/omega shape with lead-in stroke, not plain
+4	9	rz		confirm	H
+4	10	e	dot|#	confirm	H
+4	11	L		correct	L	tall box (45x89) appears to merge two elements: an L-shaped stroke with "3" beside it (matches atlas L) and a separate "7"-shaped stroke below (resembles S7); picked L as primary, flagged for reconciliation
+4	12	psi		confirm	H
+4	13	eps		confirm	H
+4	14	w		confirm	H
+4	15	[		confirm	H
+4	16	lam		confirm	H
+4	17	y	5	confirm	H
+4	18	Z	#	confirm	H
+4	19	S7		confirm	H
+4	20	lam	7	confirm	H
+4	21	]	o	confirm	H
+4	22	Z		confirm	H
+5	1	S7		confirm	H
+5	2	#		confirm	H	clear double-bar cross, matches "#" over the cluster hint's alternate "+"
+5	3	lam	dot|1	confirm	H
+5	4	e	#	correct	M	large loop ("e"/"C"-shaped bowl) under a "#" mark (a very common e-mark); box is unusually tall and may include extra content below, but the main element is a clear "e", not plain
+5	5	wd		confirm	H
+5	6	rz		confirm	H
+5	7	dl	#	confirm	M	cursive loop with a long curling tail matches "dl" (not the more angular "Lx" the cluster hint suggested)
+5	8	e	#	confirm	H
+5	9	Z		correct	L	tall box (57x95) seems to merge an "nt"-like flourish above with a "Z"-shaped stroke below; picked Z as the primary sign, genuinely hard to disentangle, flagged for reconciliation
+5	10	S7	1	correct	L	shows a "7"-shaped stroke with digit-like marks below; may overlap with the adjacent box 9's tail, flagged for reconciliation
+5	11	lam		confirm	H
+5	12	H		confirm	H
+5	13	m	o|1	confirm	H
+5	14	w		confirm	H
+5	15	]	o	confirm	H
+5	16	S7		confirm	H
+5	17	#	dot	confirm	H
+5	18	e	#	confirm	H
+5	19	wd		confirm	H
+5	20	y		confirm	H
+5	21	Z		confirm	H
+5	22	e	dot	correct	M	small loop with a dot above matches "e", not the zigzag "Z" shape the classifier proposed; a separate "+"-like cross appears below/right, possibly a second merged mark, left unclassified
+5	23	_		plain	L	diagonal flourish with dots above and a closed loop below, at line end; kept plain per classifier though the loop shape is somewhat sign-like, genuinely ambiguous
