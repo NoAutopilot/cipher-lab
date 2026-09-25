@@ -239,3 +239,134 @@ fix was already found and all 8 missing items were then free to complete rather 
 60-request session cap. No 429/403/challenge seen. Files added: `images/maco86_scan/doc{06,08,09,12,19,21,
 01,02,03,04,05,07,10,13,14,15,16,17,18,20}/filelist.json` (all 20 items) and `montage_01.jpg`/`thumb_*.jpg`
 for the 5 checked items only (~450 KB total).
+
+## Reading (LX-DEC, 25 Sept 2026)
+
+`date -u` at start: 2026-09-25 01:17 UTC. Job: decode `ciphertext.tsv`'s 26 groups against Vieyra's 1809 Part I
+(identified by LX-BOOK, `BOOK.md`). Key rule re-applied per group: page/column/rank from the digits (mechanical,
+already computed by LX-TR in `ciphertext.tsv`'s `book_page`/`book_col`/`rank` columns and not re-derived here),
+then the rank-th bold headword counted down that column of the fetched page image, then the subscript trim (when
+present) removing that many letters from the **end** of the headword (the convention every worked-example test and
+this pass's own results support; a front-trim alternative is noted where it was actually tried).
+
+**Fetched:** 20 new page images (pages 60, 85, 132, 162, 223, 241, 247, 250, 251, 255, 262, 266, 281, 285, 289, 293,
+295, 350, 362, 383 -- 23 distinct book pages needed in total, 3 reused from LX-BOOK's set: 110, 222, 354), all
+via the same `archive.org` `BookReaderImages.php` route LX-BOOK used (`newpocketdiction00viey_jp2.zip`, internal
+filename pattern confirmed by a byte-identical match against LX-BOOK's already-committed leaf 124: it is
+`<identifier>_<4-digit-leaf>.jp2`, not `..._LEAF<n>.jp2` as BOOK.md's `download_note` literally reads -- BOOK.md's
+route description is imprecise on this point, corrected here). Leaf-to-page offset drifts as BOOK.md already
+flagged (10 near p.4-38, 12 near p.59-60, 13 near p.85, 14 near p.110-267, 16 near p.281-295, 18 near p.344-383);
+every page cited was confirmed by reading the printed page number in the image itself (`NNN]` at top-left on an
+even page, `[NNN` at top-right on an odd page, both after the running header), never assumed from the offset --
+one page (60) needed a second guess (leaf71 read as page59, not 60; leaf72 confirmed page60), and one (85) needed
+a fourth (leaf98 and leaf99 both returned a corrupt/black oversized image -- possibly a damaged or blank-plate jp2
+in the archive.org zip around that leaf; leaf97 resolved cleanly to page85, no further investigation of the
+black leaves attempted). All 23 images now committed at `images/book/`, manifest updated. Hosts: `archive.org`
+~26 requests (20 new pages + retries), all sequential, User-Agent `cipher-lab research script (contact via
+repository)`, no login, no 429/403 seen.
+
+**Result:** all 26 groups resolve to a page/column/rank that exists in the dictionary except one (see below).
+20 H, 6 M. Grades and full source citations are in `key.tsv`; `python3 tools/decode_key.py
+ciphers/antt-linhares-chave --check` regenerates `reading.txt`/`reading_tokens.tsv` from it (exits 0, confirmed).
+`tools/decode_key.py` gained two new job options this pass, `line_column`/`folio_column` (CLAUDE.md Usage 8 --
+this target's `ciphertext.tsv` carries the manuscript's page and line as two separate columns rather than one
+combined line id, which the existing `split_line` option could not express), with a fixture at
+`tools/tests/decode_configs/antt-linhares-chave.json` (`python3 tools/tests/test_decode_key.py` passes for it; the
+suite's one other failure, `rah-canada-1869`, is pre-existing and unrelated -- confirmed by re-running the suite
+against the pre-this-session commit).
+
+Reading (Portuguese as decoded, grade in brackets; page/letter breaks marked):
+
+> [p.2] para[H] {supprir[M]} o[H] seu[H] lugar[H] junto[H] com[H] {man[M]} o[H]
+> {d[M]} justa[H] he[H] segredo[H] ate[H] {[null]} o[H] ministerio[H]
+> [p.3] pela[H] memoria[H] do[H] {[unresolved][M]} lhe[H] {pauperr[M]} {ven[M]} ha[H]
+> logo[H]
+
+No connected-sentence gloss is offered -- this is a two-page mid-letter fragment (pages 1 and 4 of the underlying
+letter are not part of this archival item, per LX-TR), and about a quarter of the tokens are single-letter or
+short dictionary-trim fragments (a mechanic the worked example itself uses for proper nouns: "Rus"+"si"+"a" =
+Russia), not free-standing words, so the individual tokens read as isolated units rather than prose. Several
+words that DO stand as ordinary Portuguese are plausible in context: `para` (for), `seu` (his/her/your), `com`
+(with), `ate` (until), `segredo` (secret), `ministerio` (ministry -- fitting, since Rodrigo de Sousa Coutinho ran
+Portugal's Rio secretariat), `pela` (by/through), `memoria` (memory), `lhe` (to him/her), `logo` (then/presently),
+`justa` (also the fem. adj. "just"), `lugar` (place), `junto` (together), and `he`/`ha` (archaic spellings of
+"e"/"ha", the same archaic spelling the key's own prose on m0003-m0004 uses: "...mostra que a palavra **he** a 1a
+da dita Columna").
+
+**Grade counts (rule 4):** H 20, M 6, C 0, S 0, I 0, U 0 (26 total; the one null group is graded H -- its status
+as a null is certain even though what it implies mid-letter is not, see below).
+
+**The 6 M-graded tokens, each a genuine open question, not a typo:**
+1. **p2l1pos2** (group `336227`, page362 col2): rank7 is either "Supprír" (to supply) or "Suprémo" (supreme),
+   depending on whether "Suppurár-se, v.r." (a reflexive form given its own bold line right after "Suppurár, v.n.")
+   is counted as its own headword. This pass counted it separately (the convention used throughout, see below);
+   flagged because the key's own worked example never tests a reflexive-form pair.
+2. **p2l1pos8** (group `325532`, page255 col3, trim2): "Mándo, s.m. command, power" trimmed to "Man" -- a
+   3-letter fragment, not a word on its own. Might be the start of a name (e.g. "Manoel/Manuel") continued by an
+   adjacent group, not identified.
+3. **p2l2pos1** (group `313211`, page132 col1, rank1): the column's very first item with a definition is "D, One
+   of the mutes, supposed to be formed from the Greek Delta" -- the dictionary's own entry for the LETTER D, not
+   an ordinary word. Above it, a large "D." heading marks the start of the D section in the book but carries no
+   definition, so was not counted as rank0/1 itself. Token "d" is plausible as an initial/honorific abbreviation
+   (cf. the fragment-concatenation mechanic) but this is a genuinely unusual dictionary hit worth a second look.
+4. **p3l1pos4** (group `285219`, page85 col2, rank19) -- **UNRESOLVED.** Page 85's column 2 has only 15 true
+   headwords (Calis...Calumnia, catchword "I" below); rank19 does not exist in it under the counting convention
+   used everywhere else in this decode (every bold line, including homograph/variant pairs, counts). This group
+   was one of LX-TR's five reconciled disagreements (a caret-inserted digit squeezed in above the line between
+   "28" and "219"); the digits as settled parse validly under the key's rule but the resulting rank overshoots
+   the actual column. Not forced to a guess. Candidates for what's wrong: the caret digit is still misread: the
+   transcription may need a third look at the image; or the counting convention undercounts this specific column
+   (no clear miscounted entry was found on a careful re-check, see key.tsv's note); or (least likely, since the
+   book itself is independently confirmed against 12+ other groups) a different edition/impression paginates
+   differently here. Left as a candidate that failed to resolve, not a reading (rule 7).
+5. **p3l1pos6** (group `3293211`, page293 col2, trim3): "Paupérrimo, very poor" trimmed to "Paupérr" -- an
+   unusual 7-letter fragment ending in a doubled consonant.
+6. **p3l1pos7** (group `338326`, page383 col2, trim4): "Venáblo, a javelin" trimmed to "Ven" -- a 3-letter
+   fragment, not a word on its own.
+
+**Headword-counting convention (flagged per this brief's own request):** every bold word that starts a new
+paragraph/line was counted as one entry for ranking purposes, including a reflexive form on its own line (item 1
+above) and a second bolded homograph/accent-variant appearing right after the first (e.g. "Lúcifer"/"Lucifer" on
+page251 col2 -- this pass's rank17 there is "Lugár"; NOT counting the second "Lucifer" separately would instead
+land rank17 on "Lugarejo", one entry later -- both are real Portuguese words, "a place" vs. "a little
+town/village", so this is recorded but not resolved either way). A continuation of a headword's definition
+spilling from the bottom of one column/page into the top of the next was correctly NOT counted (checked against
+the worked example's own page-110 "Com" test and against every column this pass opened) -- recognizable because
+it starts mid-sentence rather than with a fresh bold word, and because the running header at the top of the new
+column still matches the alphabetical range of the *new* first headword, not the continued one.
+
+**The mid-letter null (p2l2pos6, group `829011`, trim5):** the key's prose on m0003-m0004 only describes what a
+null means when the message *starts* with one or more nulls ("Quando o cifrado começar por hum ou mais numeros
+nullos, denota que se uza do Diccionario Inglez" -- switch to Part II, English-Portuguese, for that stretch).
+This null sits mid-letter, a case the key's own text does not cover. It carries a trim subscript (5) despite
+having no dictionary lookup to trim from, which is also unexplained by the key's prose. Recorded as a null (grade
+H -- the "first digit 8" fact itself is certain) with the implication left open; Part II of the 1809 volume has
+still not been fetched (LX-BOOK's note; would be the next step to test whether the two tokens straddling this
+null read as English).
+
+**Judge (rule 7):** `specs/antt-linhares-chave.json` written this pass (`language: "pt"`, `min_word_cover: 0.5`).
+```
+$ python3 tools/judge_plaintext.py specs/antt-linhares-chave.json --file ciphers/antt-linhares-chave/reading.txt
+PASS - antt-linhares-chave (a PASS is a gate for a verifier, not a reading; rule 10)
+$ python3 tools/judge_plaintext.py specs/antt-linhares-chave.json --file ciphers/antt-linhares-chave/reading.txt --json
+{
+ "checks": {},
+ "pass": true,
+ "spec": "antt-linhares-chave"
+}
+```
+**The judge has no Portuguese language model** (`tools/data/` holds `de16`, `fr16`, `it16` corpora only, no `pt`);
+`judge_plaintext.py`'s `language`/`min_word_cover` checks are both nested under `if corpora:` and silently skip
+when the spec's language has no corpus on disk, so `checks: {}` -- the reported PASS is vacuous (zero checks ran),
+not a language-model confirmation. Whether to build a Portuguese 4-gram corpus for `tools/data/pt16` (the same
+recipe as `de16`/`fr16`/`it16`) is a fair next step for any Portuguese target, this one included, but is out of
+this brief's scope.
+
+**Fresh-instance re-derivation (rule 7, step 5):** a Sonnet subagent given only the key rule as a paragraph, the
+committed page images, and `ciphertext.tsv` (never `key.tsv`, `reading.txt`, or this section) independently
+re-derived every token. [Agreement count and any disagreements pending -- subagent still running at the time this
+section was written; see the follow-up note below or ROOM.md for the result.]
+
+Not run this pass: Part II (English-Portuguese) of the same volume (would test the null's implication); a second
+attempt at the page85/rank19 mismatch from a fresh crop; the print check and novelty search (a verifier's job,
+not a solver's, per CLAUDE.md rule 10 and this brief).
