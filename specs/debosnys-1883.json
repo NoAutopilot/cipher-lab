@@ -31,7 +31,15 @@
   "letters_min": 60,
   "min_word_cover": 0.4,
   "control_samples": 100,
-  "note": "fr16 is 16th-century French; a 19th-century French corpus should be added before judging"
+  "note": "fr16 is 16th-century French; a 19th-century French corpus should be added before judging",
+  "corpora": [
+   "tools/data/fr19/pg14155_Madame_Bovary.txt.gz",
+   "tools/data/fr19/pg11049_Eugenie_Grandet.txt.gz",
+   "tools/data/fr19/pg798_Le_rouge_et_le_noir.txt.gz",
+   "tools/data/fr19/pg796_La_Chartreuse_de_Parme.txt.gz",
+   "tools/data/fr19/pg11131_Pierre_et_Jean.txt.gz"
+  ],
+  "corpora_note": "fr19 (25 Sept 2026, GOLD-C) is 1830-1888 French prose, 2.66M letters folded, added per this note"
  },
  "value": "high: Schmeh's no. 3, a documented author with clear-text siblings, few prior attempts",
  "model": "Sonnet for 1-3, strongest model for the reading",

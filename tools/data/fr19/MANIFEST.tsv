@@ -1,0 +1,6 @@
+book_no	author	title	year	url	bytes_raw	sha1_body	letters_folded	file
+14155	Flaubert, Gustave	Madame Bovary	1857	https://www.gutenberg.org/cache/epub/14155/pg14155.txt	737097	4930728d75ceebbee2166f5b0ad8123746e302d5	534078	pg14155_Madame_Bovary.txt.gz
+11049	Balzac, Honore de	Eugenie Grandet	1833	https://www.gutenberg.org/cache/epub/11049/pg11049.txt	405961	69bc149fd474c5ae644d694895e38eb097c8be5f	295033	pg11049_Eugenie_Grandet.txt.gz
+798	Stendhal	Le rouge et le noir	1830	https://www.gutenberg.org/cache/epub/798/pg798.txt	1055291	ed9f000aba1620670ba6ff7c013f88c6c2ea750a	786851	pg798_Le_rouge_et_le_noir.txt.gz
+796	Stendhal	La Chartreuse de Parme	1839	https://www.gutenberg.org/cache/epub/796/pg796.txt	1127716	4e2a02504c4c7ba349a8affb6e06b914be582502	831703	pg796_La_Chartreuse_de_Parme.txt.gz
+11131	Maupassant, Guy de	Pierre et Jean	1888	https://www.gutenberg.org/cache/epub/11131/pg11131.txt	305906	838004766829b307fb3fa7fbdc2f880458909b0f	216608	pg11131_Pierre_et_Jean.txt.gz
