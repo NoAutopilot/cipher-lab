@@ -1,0 +1,19 @@
+# mlh-1976 ciphertext -- SINGLE BLIND PASS, DRAFT (rule 2 image-over-transcription note applies:
+# this transcribes tools/../images/MLH-Cryptogram.jpg directly; no second pass has reconciled it;
+# treat every token here as provisional (grade M) until a second pass runs, per rule 4).
+# Reading order left-to-right, top-to-bottom, as drawn. Tokens are ';'-separated for tools/freq.py.
+# Sign codes S1-S20 are this pass's own labels for shapes with no obvious Latin-letter reading;
+# a plain Latin letter or digit is transcribed as itself (MLH, e, O, D) even where it sits inside
+# a run of invented symbols -- see NOTES.md "Letter-shaped signs" for why O and D are ambiguous
+# between "literal letter" and "invented symbol that happens to look like one".
+# '.' and '|' are transcribed literally as drawn (a period-like dot; a plain vertical stroke).
+# See NOTES.md's sign table for crop ids under images/crops/.
+
+# --- line 1 ---
+S1;MLH;⇒;S2;S3;S4;S5;D;O;S5;S8
+
+# --- line 2 ---
+S9;S10;S4;S11;S12;S13;MLH;/;e;S14;S15;S16;S17;S16;S18;O;O
+
+# --- line 3 ---
+S19;O;S20;.;|

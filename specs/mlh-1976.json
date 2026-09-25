@@ -9,7 +9,7 @@
   "rebus",
   "en?"
  ],
- "ciphertext_pending": "No transcription found on disk and no typed cipher text found anywhere in the post; the sole image is https://scienceblogs.de/klausis-krypto-kolumne/files/2016/04/MLH-Cryptogram.jpg, linked from Cipherbrain post 31 (Schmeh 2017, sources/schmeh/posts/31-mlh.txt). The post's only primary-source text is the ACA's own four-paragraph description reproduced below (Cryptogram magazine, Jan-Feb 1976 cover, ACA), not a transcription of the symbols themselves. A fetch of the image URL above (host scienceblogs.de, confirmed reachable) plus a blind cataloguing pass of the distinct symbol shapes would put a working representation on disk.",
+ "ciphertext_pending": "Resolved 25 Sept 2026 by LANE B2 worker bMLH: image fetched to ciphers/mlh-1976/images/MLH-Cryptogram.jpg (manifest.json), single blind pass transcribed to ciphers/mlh-1976/ciphertext.txt (draft, grade M, not yet reconciled against a second pass), full sign table and structure notes in ciphers/mlh-1976/NOTES.md.",
  "alphabet": "mixed symbols, count undetermined; commenters on the post (Richard SantaColoma) identify shapes resembling a caret, a circle/dot ('eye'), a heart with plus/minus signs, and shapes resembling early computer-language characters (ALGOL68, APL, C keyboard symbols, e.g. ALGOL68's Delta mapped to keyboard 'H')",
  "constraints": {
   "aca_description_paragraph_1": "'About 2 years ago a young man left home. He had not been heard from until October, when his mother received the enciphered message traced above. It has been forwarded to us [the ACA] for help in reading it.'",
@@ -27,7 +27,17 @@
   "2. Cross-reference the catalogued symbol shapes against the ALGOL68, APL and contemporary (mid-1970s) IBM keyboard/APL keyboard character sets, testing the specific hypothesis raised by a commenter given the sender's stated background as a programmer and electronic circuit designer around 1974-76. Cost $1.",
   "3. If a plausible letter-to-symbol mapping emerges from test 2, judge candidate decodes against English with a matched control at whatever N the transcription yields; this is downstream of tests 1-2 and not runnable yet. Not costed until a mapping exists."
  ],
- "matched_control": "not yet run; no ciphertext on disk to test",
+ "matched_control": "cheap test 1's IC controls (English pg1661_holmes and uniform-random, 100 samples each, N=33/K=26 full stream and N=26/K=20 symbol-only stream) are in ciphers/mlh-1976/NOTES.md; not a solve/no-solve gate, reported per the brief since N is too small for either control to be a reliable signal.",
+ "cheap_test_done": [
+  {
+   "test": 1,
+   "date": "25 Sept 2026",
+   "worker": "LANE B2 bMLH",
+   "method": "fetched the sole image (scienceblogs.de, 1 request, browser UA, HTTP 200) to ciphers/mlh-1976/images/ with manifest.json; single blind transcription pass to ciphers/mlh-1976/ciphertext.txt (draft, grade M) with a 20-code sign table in NOTES.md",
+   "result": "N=33 tokens/K=26 distinct (full stream incl. literal MLH/e/punctuation), IC=0.0189; symbol-only N=26/K=20, IC=0.0277. Both below the matched English control (mean IC 0.06) and the matched uniform-random control (mean IC 0.039-0.049) -- reported, not gated, N too small to be a reliable signal. Structural finding: line 1 reads '[symbol] MLH ⇒ [7 symbols]', a plaintext word directly followed by a double-arrow before an unbroken 7-symbol run -- read at face value the sender may be glossing 'MLH' against its own encoding, a possible self-supplied crib (grade M, single pass, unconfirmed).",
+   "cost_est_usd": "get_session exposes no cost figure; the orchestrator reads it, per the wall-clock box in the worker's brief"
+  }
+ ],
  "judge": {
   "letters_min": 1,
   "letters_max": 500,
@@ -36,6 +46,6 @@
  "value": "low-medium: a rich biographical background (a specific, datable sender with a programming/electronics history) gives this target an unusually strong structural lead (the ALGOL68/APL hypothesis) compared to most items in this batch, but zero transcription exists and the note may not be a classical cipher at all (rebus or meaningless-symbols hypotheses both live)",
  "model": "Sonnet",
  "status_25_Sept_2026": "open; Schrodel's direct ACA follow-up in 2016/17 found nothing new since the original 1976 magazine printing",
- "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run goes under cheap_test_done with its control. judge block is a deliberately unconstrained placeholder (letters_min=1, letters_max=500, no language) since neither the symbol alphabet nor the underlying language is established; replace once cheap test 1 produces a real symbol catalogue.",
+ "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run goes under cheap_test_done with its control. judge block is still left as a deliberately unconstrained placeholder (letters_min=1, letters_max=500, no language) after cheap test 1: the symbol catalogue now exists (NOTES.md sign table, 20 symbol-only codes, N=26-33 depending on stream definition) but the underlying language is still undetermined -- the target may not encode English at all (rebus/meaningless-symbols hypotheses both still live per the constraints block), and no letter-to-symbol mapping exists yet for a judge to score. Leave unconstrained until test 2 (not run this pass) produces a candidate mapping.",
  "written": "25 Sept 2026 by LANE B2 worker bSPEC (session_016UPMZ7UBvMWu2PEsWNiFyC), claude-sonnet-5"
 }

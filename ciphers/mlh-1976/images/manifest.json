@@ -1,0 +1,74 @@
+{
+  "source_url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2016/04/MLH-Cryptogram.jpg",
+  "fetched": "25 Sept 2026 19:03 UTC",
+  "fetched_by": "LANE B2 worker bMLH, cipher-lab",
+  "host": "scienceblogs.de",
+  "via": "curl, browser User-Agent",
+  "files": [
+    {
+      "id": "MLH-Cryptogram.jpg",
+      "path": "images/MLH-Cryptogram.jpg",
+      "sha1": "4605d6825f15850f21ec0b230f64035d411decc6",
+      "size": 79615,
+      "dims": "1000x295"
+    }
+  ],
+  "crops": [
+    {
+      "id": "line1_S2_S3_dot.png",
+      "path": "images/crops/line1_S2_S3_dot.png",
+      "sha1": "6a0f5a641575ae4578251fe80ee82ab3e30f1062",
+      "size": 152008,
+      "note": "upscaled crop of MLH-Cryptogram.jpg region, single blind pass"
+    },
+    {
+      "id": "line1_S5_D_O_S5_S8.png",
+      "path": "images/crops/line1_S5_D_O_S5_S8.png",
+      "sha1": "dc7ab8eb64fafbb3acaee0e14588bfe510eb431d",
+      "size": 179265,
+      "note": "upscaled crop of MLH-Cryptogram.jpg region, single blind pass"
+    },
+    {
+      "id": "line1_lead_S1.png",
+      "path": "images/crops/line1_lead_S1.png",
+      "sha1": "089f2934b00f52791cc9cbbf7a8a0f9d8de1dbdf",
+      "size": 95009,
+      "note": "upscaled crop of MLH-Cryptogram.jpg region, single blind pass"
+    },
+    {
+      "id": "line2_MLH_slash_e.png",
+      "path": "images/crops/line2_MLH_slash_e.png",
+      "sha1": "e222208ad7a738025b7aa0061ea670ee5a23821f",
+      "size": 85192,
+      "note": "upscaled crop of MLH-Cryptogram.jpg region, single blind pass"
+    },
+    {
+      "id": "line2_S14_S15.png",
+      "path": "images/crops/line2_S14_S15.png",
+      "sha1": "63d5985c31fc2cbb7dc82775d1198eae86202b04",
+      "size": 64780,
+      "note": "upscaled crop of MLH-Cryptogram.jpg region, single blind pass"
+    },
+    {
+      "id": "line2_S16_S17_S16_S18_O_O.png",
+      "path": "images/crops/line2_S16_S17_S16_S18_O_O.png",
+      "sha1": "d891ff0d7d389a241dd809a4d006aba317e9577b",
+      "size": 143398,
+      "note": "upscaled crop of MLH-Cryptogram.jpg region, single blind pass"
+    },
+    {
+      "id": "line2_S9_S10_dot_S11_S12_S13.png",
+      "path": "images/crops/line2_S9_S10_dot_S11_S12_S13.png",
+      "sha1": "8df2c724386a2233acf6d6a5fc221a3716391745",
+      "size": 394871,
+      "note": "upscaled crop of MLH-Cryptogram.jpg region, single blind pass"
+    },
+    {
+      "id": "line3_S19_O_S20_dot_bar.png",
+      "path": "images/crops/line3_S19_O_S20_dot_bar.png",
+      "sha1": "5a343109e821d6201a5c7a3b74816ca0ee4fb0b8",
+      "size": 217090,
+      "note": "upscaled crop of MLH-Cryptogram.jpg region, single blind pass"
+    }
+  ]
+}
