@@ -1,0 +1,466 @@
+line	pos	code	marks	action	conf	note
+1	1	y	7|dot	confirm	M	
+1	2	o.	dot	confirm	H	
+1	3	eps		confirm	H	
+1	4	+		confirm	H	
+1	5	p		confirm	H	
+1	6	_		plain	H	
+1	7	#		confirm	M	
+1	8	_		plain	H	
+1	9	_		plain	M	
+1	10	_		plain	H	
+1	11	S4		confirm	M	
+1	12	dl		confirm	H	
+1	13	+		confirm	L	
+1	14	Lx		confirm	M	
+1	15	_	1	plain	H	
+1	16	y		confirm	H	
+1	17	y		confirm	H	
+1	18	g	~	confirm	H	
+1	19	_		plain	H	
+1	20	S		confirm	H	
+1	21	_	1	plain	H	
+1	22	o.		confirm	H	
+1	23	m	7	confirm	H	
+1	24	nt		confirm	H	
+1	25	y		confirm	H	
+1	26	S		confirm	H	
+2	1	y		confirm	H	
+2	2	y		confirm	H	
+2	3	_		plain	L	
+2	4	g	~	confirm	M	
+2	5	sq		confirm	L	
+2	6	nt		confirm	M	
+2	7	psi		confirm	H	
+2	8	_	~	plain	M	
+2	9	w		confirm	M	
+2	10	rz		confirm	H	
+2	11	_		plain	H	
+2	12	_		plain	H	
+2	13	_		plain	L	
+2	14	g		confirm	H	
+2	15	psi		confirm	M	
+2	16	m	~	confirm	H	
+2	17	_		plain	H	
+2	18	lam		confirm	H	
+2	19	o.	ot	confirm	H	
+2	20	S4		confirm	H	
+2	21	dl		confirm	M	
+2	22	Lx		confirm	L	
+2	23	w		confirm	M	
+3	1	S4		confirm	H	
+3	2	_		plain	H	
+3	3	Lx		confirm	H	
+3	4	ch	#	confirm	L	
+3	5	lam		confirm	H	
+3	6	_		plain	H	
+3	7	bh		confirm	H	
+3	8	S		confirm	H	
+3	9	Z		confirm	H	
+3	10	wd		confirm	H	
+3	11	_		plain	H	
+3	12	H		confirm	H	
+3	13	e	dot	confirm	H	
+3	14	g		confirm	H	
+3	15	_		plain	H	
+3	16	w		confirm	H	
+3	17	y		confirm	H	
+3	18	y		confirm	H	
+3	19	e		confirm	H	
+3	20	_		plain	H	
+3	21	_		plain	L	
+3	22	e	#	confirm	H	
+3	23	wd		confirm	H	
+3	24	bh		confirm	H	
+3	25	y		confirm	H	
+3	26	w		confirm	L	
+4	1	eps	7	confirm	H	
+4	2	_		plain	H	
+4	3	psi		confirm	H	
+4	4	_		plain	H	
+4	5	Z		confirm	H	
+4	6	e	dot|+	confirm	H	
+4	7	lam		confirm	H	
+4	8	_	1	plain	H	
+4	9	rz		confirm	H	
+4	10	e	dot|#	confirm	H	
+4	11	_		plain	M	
+4	12	psi		confirm	H	
+4	13	eps		confirm	H	
+4	14	w		confirm	H	
+4	15	[		confirm	M	
+4	16	lam		confirm	H	
+4	17	y	5	confirm	H	
+4	18	Z	#	confirm	M	
+4	19	S7		confirm	H	
+4	20	lam	7	confirm	H	
+4	21	]	o	confirm	H	
+4	22	Z		confirm	H	
+5	1	S7		confirm	H	
+5	2	#		confirm	M	
+5	3	lam	dot|1	confirm	H	
+5	4	_		plain	H	
+5	5	wd		confirm	H	
+5	6	rz		confirm	H	
+5	7	dl	#	confirm	L	
+5	8	e	#	confirm	H	
+5	9	_		plain	H	
+5	10	_		plain	H	
+5	11	lam		confirm	H	
+5	12	H		confirm	M	
+5	13	m	o|1	confirm	H	
+5	14	w		confirm	H	
+5	15	]	o	confirm	H	
+5	16	S7		confirm	H	
+5	17	#	dot	confirm	H	
+5	18	e	#	confirm	H	
+5	19	wd		confirm	H	
+5	20	y		confirm	H	
+5	21	Z		confirm	H	
+5	22	Z	dot|o	confirm	L	
+5	23	_		plain	M	
+6	1	_		plain	M	
+6	2	a	1	confirm	H	
+6	3	lam		confirm	H	
+6	4	bh		confirm	H	
+6	5	S7		confirm	H	
+6	6	#		confirm	H	
+6	7	e	dot	confirm	H	
+6	8	g	5	confirm	H	
+6	9	w		confirm	M	
+6	10	tee		confirm	H	
+6	11	o.		confirm	H	
+6	12	H		confirm	H	
+6	13	_		plain	H	
+6	14	g	dot	confirm	H	
+6	15	w		confirm	H	
+6	16	S7		confirm	H	
+6	17	y		confirm	H	
+6	18	H	1|o	confirm	H	
+6	19	m	~	confirm	H	
+6	20	_		plain	H	
+6	21	_		plain	M	
+6	22	y		confirm	H	
+6	23	S		confirm	H	
+6	24	L		confirm	H	
+6	25	_	~	plain	M	
+6	26	H		confirm	H	
+7	1	w		confirm	H	
+7	2	tee		confirm	H	
+7	3	o.		confirm	H	
+7	4	y		confirm	H	
+7	5	tee		confirm	H	
+7	6	f		confirm	H	
+7	7	w		confirm	H	
+7	8	Lx		confirm	M	
+7	9	dl		confirm	H	
+7	10	o.		confirm	H	
+7	11	S4		confirm	H	
+7	12	dl		confirm	H	
+7	13	Lx		confirm	H	
+7	14	dl		confirm	H	
+7	15	y		confirm	H	
+7	16	+		confirm	M	
+7	17	_		plain	H	
+7	18	S7		confirm	M	
+7	19	dl		confirm	H	
+7	20	v		confirm	H	
+7	21	_		plain	H	
+7	22	y		confirm	M	
+7	23	lam		confirm	M	
+7	24	nt		confirm	M	
+7	25	_	dot	plain	H	
+8	1	]		confirm	L	
+8	2	_	dot	plain	M	
+8	3	_		plain	M	
+8	4	_		plain	M	
+8	5	_		plain	H	
+8	6	Z		confirm	M	
+8	7	lam		confirm	M	
+8	8	_		plain	M	
+8	9	S		confirm	M	
+8	10	Z		confirm	L	
+8	11	S		confirm	L	
+8	12	_		plain	M	
+8	13	_		plain	H	
+8	14	tee		confirm	M	
+8	15	_		plain	H	
+8	16	_		plain	H	
+8	17	_	dot	plain	H	
+9	1	_	~	plain	M	
+9	2	_		plain	H	
+9	3	_		plain	H	
+9	4	_		plain	M	archival stamp region (circular OTTOBRE stamp) overlapping this box; not cipher ink
+9	5	_		plain	H	
+9	6	_		plain	M	
+9	7	_		plain	H	
+9	8	_	1	plain	M	archival stamp region (circular OTTOBRE stamp) overlapping this box; not cipher ink
+9	9	_		plain	H	
+9	10	_		plain	M	
+9	11	_	1|1	plain	H	
+9	12	_		plain	M	
+9	13	_		plain	H	
+9	14	_	1	plain	H	
+9	15	_	dot	plain	H	
+9	16	_		plain	M	archival stamp region (circular OTTOBRE stamp) overlapping this box; not cipher ink
+10	1	_		plain	M	crown watermark bleed-through (paper, no ink) at this position; rest of line 10 already read plain by classifier, consistent
+10	2	_	o	plain	M	
+10	3	_	~|?|?	plain	H	
+10	4	_	?	plain	H	
+10	5	_		plain	H	
+10	6	_		plain	H	
+11	1	S4		confirm	H	
+11	2	dl		confirm	M	
+11	3	Lx		confirm	H	
+11	4	_		plain	L	
+11	5	eps	1	confirm	M	
+11	6	S7		confirm	H	
+11	7	eps	~	confirm	H	
+11	8	wd		confirm	H	
+11	9	[	1	confirm	M	
+11	10	]		confirm	M	
+11	11	g		confirm	L	
+11	12	g	~	confirm	H	
+11	13	m	5	confirm	H	
+11	14	_		plain	H	
+11	15	H	1	confirm	H	
+11	16	g	o	confirm	H	
+11	17	rz		confirm	H	
+11	18	psi		confirm	H	
+11	19	eps		confirm	H	
+11	20	w		confirm	H	
+11	21	o.		confirm	M	
+11	22	_		plain	H	
+11	23	g		confirm	M	
+12	1	bh		confirm	M	
+12	2	lam		confirm	M	
+12	3	_		plain	L	
+12	4	_		plain	L	
+12	5	o.		confirm	H	
+12	6	_		plain	M	
+12	7	lam		confirm	M	
+12	8	_		plain	H	
+12	9	bh		confirm	H	
+12	10	o.		confirm	H	
+12	11	S7		confirm	H	
+12	12	lam		confirm	H	
+12	13	S7	~	confirm	H	
+12	14	e		confirm	H	
+12	15	g	~	confirm	H	
+12	16	_	dot|dot|5|?	plain	M	
+12	17	_	dot	plain	H	
+12	18	lam		confirm	H	
+12	19	g	~	confirm	H	
+12	20	H	1|o	confirm	H	
+12	21	tee		confirm	H	
+12	22	_	dot	plain	H	
+12	23	psi	dot	confirm	H	
+12	24	_		plain	M	
+13	1	y		confirm	M	
+13	2	_	1	plain	M	
+13	3	_		plain	H	
+13	4	f		confirm	M	
+13	5	w		confirm	H	
+13	6	y		confirm	H	
+13	7	m		confirm	H	
+13	8	#		confirm	M	
+13	9	y		confirm	H	
+13	10	g	~	confirm	H	
+13	11	m	~	confirm	H	
+13	12	w		confirm	H	
+13	13	lam		confirm	H	
+13	14	nt	~	confirm	H	
+13	15	y		confirm	H	
+13	16	g		confirm	H	
+13	17	eps		confirm	H	
+13	18	g		confirm	H	
+13	19	S		confirm	H	
+13	20	y		confirm	M	
+13	21	rz		confirm	H	
+13	22	nt		confirm	H	
+13	23	rz		confirm	H	
+13	24	_		plain	M	
+13	25	_	ot|dot|~	plain	M	
+14	1	o.		confirm	H	
+14	2	S7		confirm	H	
+14	3	p		confirm	H	
+14	4	g		confirm	M	
+14	5	o.		confirm	H	
+14	6	S7		confirm	H	
+14	7	lam		confirm	H	
+14	8	y	~	confirm	H	
+14	9	S		confirm	H	
+14	10	]	o	confirm	H	
+14	11	g		confirm	H	
+14	12	_	5	plain	H	
+14	13	_		plain	H	
+14	14	nt		confirm	H	
+14	15	g	1	confirm	M	
+14	16	_	dot|+	plain	M	
+14	17	a	1	confirm	H	
+14	18	e	#	confirm	H	
+14	19	lam	1	confirm	M	
+14	20	e	dot	confirm	M	
+14	21	]	o	confirm	H	
+14	22	g		confirm	H	
+14	23	S7		confirm	H	
+14	24	phi		confirm	M	
+14	25	]	o	confirm	H	
+14	26	_		plain	H	
+14	27	w		confirm	H	
+14	28	y		confirm	H	
+14	29	lam		confirm	H	
+14	30	eps	1	confirm	H	
+14	31	_		plain	M	
+15	1	wd		confirm	H	
+15	2	bh		confirm	H	
+15	3	y		confirm	H	
+15	4	nt		confirm	M	
+15	5	bh		confirm	H	
+15	6	w		confirm	H	
+15	7	eps		confirm	M	
+15	8	_	dot	plain	H	
+15	9	lam		confirm	H	
+15	10	w		confirm	H	
+15	11	tee		confirm	H	
+15	12	_		plain	H	
+15	13	lam		confirm	H	
+15	14	m	~	confirm	H	
+15	15	g		confirm	H	
+15	16	g		confirm	H	
+15	17	a	1	confirm	H	
+15	18	S7		confirm	H	
+15	19	e	#	confirm	H	
+15	20	g	1	confirm	H	
+15	21	m	~	confirm	H	
+15	22	w		confirm	H	
+15	23	a	1	confirm	H	
+15	24	g		confirm	H	
+15	25	S4	~	confirm	H	
+15	26	dl		confirm	H	
+16	1	eps		confirm	H	
+16	2	+		confirm	H	
+16	3	S7		confirm	M	
+16	4	_		plain	H	
+16	5	lam		confirm	M	
+16	6	_		plain	H	
+16	7	_		plain	L	
+16	8	y	dot	confirm	H	
+16	9	_		plain	M	
+16	10	_		plain	H	
+16	11	N		confirm	H	
+16	12	ch		confirm	H	
+16	13	N		confirm	M	
+16	14	S		confirm	H	
+16	15	_		plain	H	
+16	16	_	dot	plain	M	
+16	17	g		confirm	H	
+16	18	p		confirm	H	
+16	19	_	dot	plain	L	
+16	20	_		plain	H	
+16	21	_		plain	H	
+16	22	_	dot	plain	H	
+16	23	#		confirm	M	
+16	24	#		confirm	H	
+16	25	#		confirm	H	
+16	26	_	1	plain	M	
+16	27	p		confirm	H	
+16	28	w	dot	confirm	M	
+17	1	_		plain	M	
+17	2	_		plain	H	
+17	3	_		plain	H	
+17	4	_		plain	H	
+17	5	_		plain	H	
+17	6	_	dot	plain	H	
+17	7	_		plain	M	
+17	8	_		plain	H	
+17	9	_		plain	L	
+17	10	e		confirm	M	
+17	11	_	dot	plain	H	
+17	12	_		plain	H	
+17	13	Lx		confirm	M	
+17	14	N		confirm	H	
+17	15	_		plain	H	
+17	16	_		plain	H	
+17	17	_		plain	M	
+17	18	_	1|1	plain	H	
+17	19	y		confirm	H	
+17	20	g		confirm	L	
+17	21	a		confirm	M	
+17	22	lam		confirm	M	
+17	23	_		plain	H	
+17	24	bh	dot	confirm	M	
+17	25	g	dot	confirm	M	
+17	26	tee		confirm	H	
+17	27	lam	1	confirm	H	
+17	28	_	dot	plain	M	
+17	29	_		plain	H	
+17	30	v		confirm	M	
+17	31	S		confirm	H	
+17	32	y		confirm	L	
+18	1	_		plain	H	
+18	2	w		confirm	H	
+18	3	_		plain	H	
+18	4	_		plain	H	
+18	5	N	dot	confirm	M	
+18	6	eps		confirm	H	
+18	7	_		plain	H	
+18	8	bh		confirm	H	
+18	9	_		plain	H	
+18	10	_		plain	H	
+18	11	p		confirm	M	
+18	12	_	dot	plain	H	
+18	13	_		plain	M	
+18	14	S4		confirm	H	
+18	15	dl		confirm	H	
+18	16	Lx		confirm	M	
+18	17	_		plain	H	
+18	18	_		plain	H	
+18	19	_		plain	M	
+18	20	S7		confirm	H	
+18	21	#		confirm	M	
+18	22	lam	1	confirm	M	
+18	23	S7		confirm	H	
+18	24	e	#	confirm	H	
+18	25	g		confirm	H	
+18	26	m	~	confirm	H	
+18	27	w		confirm	H	
+18	28	lam	~	confirm	H	
+18	29	nt		confirm	H	
+18	30	_		plain	M	
+19	1	_	1	plain	H	
+19	2	rz		confirm	H	
+19	3	tee		confirm	H	
+19	4	e	#	confirm	H	
+19	5	_		plain	H	
+19	6	tee		confirm	H	
+19	7	o.		confirm	H	
+19	8	eps		confirm	H	
+19	9	lam		confirm	H	
+19	10	e	dot|+	confirm	H	
+19	11	sq		confirm	M	
+19	12	_		plain	H	
+19	13	psi		confirm	H	
+19	14	lam		confirm	H	
+19	15	S4		confirm	H	
+19	16	Lx		confirm	M	
+19	17	_		plain	L	
+20	1	L		confirm	H	
+20	2	_		plain	H	
+20	3	eps	1|1	confirm	H	
+20	4	_		plain	M	
+20	5	_		plain	H	
+20	6	_		plain	H	
+20	7	_		plain	M	
+20	8	_		plain	M	
+20	9	_		plain	L	
+20	10	tee		confirm	H	
+20	11	_		plain	H	
+20	12	_		plain	H	
+20	13	_		plain	M	
+20	14	m		confirm	L	
+20	15	_		plain	M	
+20	16	_		plain	M	
+20	17	p		confirm	M	
+20	18	_		plain	H	
+20	19	_		plain	H	
