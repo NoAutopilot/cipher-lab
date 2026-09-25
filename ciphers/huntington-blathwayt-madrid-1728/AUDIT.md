@@ -210,7 +210,7 @@ lines. The three N3 classes stand, but only for the cipher passages.
 
 No item is raised. Nothing I found justifies N4. BLA 186 is not lowered below N3, because its cipher lines were
 left out of the only print found. It is re-described: the letter is known and printed, and only the cipher lines
-are new readings.
+have no prior decipherment located (rule 10 wording for an N4 item; corrected by parent 7d after V7-QA4, 25 Sept 2026).
 
 ### What blocks N4 (toward-N4 list)
 

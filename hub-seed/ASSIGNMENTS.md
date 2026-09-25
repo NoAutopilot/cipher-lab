@@ -628,3 +628,7 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T23:56Z	session_015FBjwkU6pMXuMQM2WViqvs	bBLZ3 done $1.53 D, archived	blitz 3a/3b FAIL vs controls 0.971/0.956
 2026-09-25T23:56Z	session_019i3c33EszuAXT9UXQ8KdBd	bSUF3 done $1.54 N, archived	sufi Arabic-script read: no reading
 2026-09-25T23:56Z	session_019XZDskAaPy3rL6qEKARyfJ	bUNT5 done $2.64 N, archived	untersberg collation at chance
+2026-09-25T23:59Z	session_01RUhLrpkEtWxVLVVDoYdsvm	LANE R8 orchestrator done $5.14 D, archived by parent 7d	handoff STATUS.md LANE R8 handoff; queue spent 23:54; Salviati designs control-backed negatives
+2026-09-25T23:59Z	session_01V2WMavWGMeAUYELUpmyEcX	LANE B4 orchestrator done $8.05 D, archived by parent 7d	handoff STATUS.md LANE B4 handoff; 14 workers 25.06; ranks 1-30 all first-tested
+2026-09-25T23:59Z	session_013JXDgLDkW2y5Ldi2gWzTkY	LANE GOLD2 orchestrator done $13.96 D, archived by parent 7d	handoff STATUS.md LANE GOLD2 handoff; GOLD3 adopts KAL1 (done) and K4
+2026-09-25T23:59Z	session_01Ejqu6thJi7yhQfwsvet3ms	PR-LAND done $1.37 D, archived	PRs 13-15 landed and closed; run via ChatGPT browser not home IP
