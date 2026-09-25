@@ -1,0 +1,41 @@
+{
+ "slug": "mlh-1976",
+ "rank": 19,
+ "schmeh_top50": 31,
+ "name": "MLH cryptogram (young man's enciphered note sent from Israel to his parents in California)",
+ "date": "c.1976 (message received by the mother October 1976 per the ACA's own account; the sender was born 19 Nov 1954)",
+ "language_candidates": [
+  "symbols",
+  "rebus",
+  "en?"
+ ],
+ "ciphertext_pending": "No transcription found on disk and no typed cipher text found anywhere in the post; the sole image is https://scienceblogs.de/klausis-krypto-kolumne/files/2016/04/MLH-Cryptogram.jpg, linked from Cipherbrain post 31 (Schmeh 2017, sources/schmeh/posts/31-mlh.txt). The post's only primary-source text is the ACA's own four-paragraph description reproduced below (Cryptogram magazine, Jan-Feb 1976 cover, ACA), not a transcription of the symbols themselves. A fetch of the image URL above (host scienceblogs.de, confirmed reachable) plus a blind cataloguing pass of the distinct symbol shapes would put a working representation on disk.",
+ "alphabet": "mixed symbols, count undetermined; commenters on the post (Richard SantaColoma) identify shapes resembling a caret, a circle/dot ('eye'), a heart with plus/minus signs, and shapes resembling early computer-language characters (ALGOL68, APL, C keyboard symbols, e.g. ALGOL68's Delta mapped to keyboard 'H')",
+ "constraints": {
+  "aca_description_paragraph_1": "'About 2 years ago a young man left home. He had not been heard from until October, when his mother received the enciphered message traced above. It has been forwarded to us [the ACA] for help in reading it.'",
+  "aca_description_paragraph_2": "envelope typed correctly except a lowercase 'a' in 'Apt.' and in 'Avienda'/'Avenida'; return address read only 'Milestone' (parents believed this hinted at 'passed a milestone' in his life); message written in ballpoint pen on a strip of paper torn/cut from a larger sheet; MLH are the mother's initials; 'no hint as to why he wrote in cipher; he had not shown any interest in cryptography that they know of'",
+  "aca_description_paragraph_3": "author born 19 Nov 1954; former programmer and electronic circuit designer; badly injured in an industrial accident, recovered, then injured again in an auto accident that killed two friends; interested in American history before the accidents, then in parapsychology, religion and astrology afterward",
+  "aca_description_paragraph_4": "only other trace: a cashed check in Paris the previous February; seems to have disposed of possessions, returning items to friends; message sent from Israel by air mail",
+  "reading_direction_hypothesis": "commenter Wolfgang Wilhelm: since sent from Israel, consider the note may have been written right-to-left",
+  "rebus_hypothesis": "commenter Richard SantaColoma: possible rebus reading, e.g. a caret as 'greater than', a circle/dot as 'eye', a heart with plus/minus as 'more or less love' -- speculative, not a proposed full solution",
+  "computer_symbol_hypothesis": "commenter Richard SantaColoma, given the sender's programming/circuit-design background: several symbols resemble ALGOL68, APL and early C language characters, some of which map directly to specific IBM keyboard keys",
+  "aca_outcome": "Tobias Schrodel contacted the ACA directly asking if anything new had been found since 1976; 'apparently, this was not the case'",
+  "null_hypothesis": "Schmeh himself notes the symbols could be meaningless, deliberately sent to confuse the parents -- 'this hypothesis is hard to prove'"
+ },
+ "cheap_tests_in_order": [
+  "1. Fetch the image and produce a symbol-by-symbol catalogue (distinct shapes, counts, any line/word groupings), since no transcription exists anywhere on disk or in the post text -- everything downstream depends on this. Cost $1-2, Sonnet.",
+  "2. Cross-reference the catalogued symbol shapes against the ALGOL68, APL and contemporary (mid-1970s) IBM keyboard/APL keyboard character sets, testing the specific hypothesis raised by a commenter given the sender's stated background as a programmer and electronic circuit designer around 1974-76. Cost $1.",
+  "3. If a plausible letter-to-symbol mapping emerges from test 2, judge candidate decodes against English with a matched control at whatever N the transcription yields; this is downstream of tests 1-2 and not runnable yet. Not costed until a mapping exists."
+ ],
+ "matched_control": "not yet run; no ciphertext on disk to test",
+ "judge": {
+  "letters_min": 1,
+  "letters_max": 500,
+  "control_samples": 100
+ },
+ "value": "low-medium: a rich biographical background (a specific, datable sender with a programming/electronics history) gives this target an unusually strong structural lead (the ALGOL68/APL hypothesis) compared to most items in this batch, but zero transcription exists and the note may not be a classical cipher at all (rebus or meaningless-symbols hypotheses both live)",
+ "model": "Sonnet",
+ "status_25_Sept_2026": "open; Schrodel's direct ACA follow-up in 2016/17 found nothing new since the original 1976 magazine printing",
+ "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run goes under cheap_test_done with its control. judge block is a deliberately unconstrained placeholder (letters_min=1, letters_max=500, no language) since neither the symbol alphabet nor the underlying language is established; replace once cheap test 1 produces a real symbol catalogue.",
+ "written": "25 Sept 2026 by LANE B2 worker bSPEC (session_016UPMZ7UBvMWu2PEsWNiFyC), claude-sonnet-5"
+}

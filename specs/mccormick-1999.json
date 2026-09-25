@@ -1,0 +1,73 @@
+{
+ "slug": "mccormick-1999",
+ "rank": 17,
+ "schmeh_top50": 10,
+ "name": "Ricky McCormick's encrypted notes",
+ "date": "found 30 June 1999 (McCormick's body found near St. Louis, Missouri; notes found in his pocket, allegedly written 'no more than three days before his death')",
+ "language_candidates": [
+  "en?"
+ ],
+ "ciphertext": {
+  "note_1": [
+   "(MNDMUNEMRSE-N-STA-UNARE) (AESM)",
+   "FRNENP?NSENPBSERCBBNSENPRSEINC",
+   "PRSE NMRSE OPREHLDULDNCBE(TFXLC TCXL NCBE)",
+   "AL-PRPPIT XLYPPIY NCBE MEKSEINCDRCBRNSEPRSE",
+   "WLD RCCBRNSE NT SSNENTXSE-CRSLE-CLTRSE WLD NCBE",
+   "ALWCP NCBETSMELRSERLSEURGLSNEASNWLDNCBE",
+   "(NOPFSE NLSRE NCBE) NTEGDDMNSENCURERCBRNE",
+   "(TENE TFRNE NCBRTSENCBE INC)",
+   "(FLRSE PQSE ONDE 71 NCBE)",
+   "(CDNSE PQSE ONSDE 74 NCBE)",
+   "(PRTSE PRSE ONREDE 75 NCBE)",
+   "(TF NBCMSPSOLEMRDELUSE TOTE WLDN WLDNCBE)",
+   "(194 WLD'S NCBE)(TRFXL)"
+  ],
+  "note_2": [
+   "ALPNTE GLSE - SE RTE",
+   "VLSE MTSE-CTSE-WSE-FRTSE",
+   "PURTRSEONDRSEWLD NCBE",
+   "NWLDLRCMSP NEWLD STS MEXL",
+   "DULMT 6 TUNSE NCBEXE",
+   "(MUNSAISTEN MU NARSE)",
+   "KLSE-LRSTE-TRSE-TRSE-MKSEN-MRSE",
+   "(SAESNSE SE N MRSE)",
+   "NMNRCBRNSEPTE2PTEWSRCBKNSE",
+   "26 MLSE 74 SPRKSE 29KCNOB,OLE 175 RTRSE",
+   "35 GLE CLGSE UUNUTKEBKRSE PSESHLE",
+   "651 MTCSE HTLSE NCUTC TRQ NMRE",
+   "99.84.52 UNEPLSEUCRSEAOLTSENSKSENRSE",
+   "NSREONSE PUTSEWLD NCBE (3 XORL)",
+   "DNMSE NRSE 1N2 NTRLERC BANSENTSECRSNE",
+   "LSPNSENGSPSEMKSERBSGNCBENUXLR",
+   "MH CRE NMRE NCBE 1/2 MUNDDLSE"
+  ]
+ },
+ "ciphertext_source": "Cipherbrain post 10 (Schmeh 2018, sources/schmeh/posts/10-mccormick.txt), 'Transcriptions' section: Schmeh's own re-transcription of the two notes from the FBI's photographs (FBI published the two encrypted messages on its website 30 March 2011, twelve years after the notes were found). Kept as two separate note_1/note_2 arrays (13 and 17 lines) since they are physically separate notes, not one continuous text.",
+ "alphabet": "mixed uppercase Latin letters, digits, hyphens, slashes, periods, parentheses, a question mark and an apostrophe; the recurring token 'NCBE' appears roughly 20 times across both notes and is the most distinctive repeated element",
+ "constraints": {
+  "note1_letters_only": 367,
+  "note1_distinct_letters": 23,
+  "note2_letters_only": 379,
+  "note2_distinct_letters": 23,
+  "history": "FBI's own codebreaking unit (CRRU, which has 'a success rate of about 99 percent' per Schmeh) and the American Cryptogram Association (ACA) both failed to solve it; the FBI ran a public online forum after the 2011 release specifically to manage the volume of amateur submissions",
+  "author_background": "McCormick had no formal cryptology education and no known interest in computers or mathematics, but family members told police he had 'occupied himself with encryption since his childhood' and never explained his methods to them",
+  "hypothesis_note": "the heavy use of repeated multi-letter tokens (NCBE, and endings like -RSE/-MRSE/-NSE) is consistent with either a personal phonetic/shorthand system (not a classical substitution cipher) or a nomenclator-style code; this is an open hypothesis in the source, not established"
+ },
+ "cheap_tests_in_order": [
+  "1. Catalogue every repeated 2+ character token across both notes (NCBE, -RSE family, WLD, etc.) with position and frequency, and compare the resulting token-frequency profile against known personal-shorthand and phonetic-spelling systems (e.g. Gregg shorthand transliterated to Latin letters, or simple vowel-dropping schemes) rather than assuming a classical letter substitution. Cost $1, Sonnet.",
+  "2. Index-of-coincidence and letter-frequency test on the folded (letters-only) text against English, with a matched control: synthetic English plaintext passed through the same 'strip non-letters, keep the token structure' folding at the same N (367 and 379 letters), same solver. Given the heavy repetition of a few tokens, expect an unusually high IC regardless of whether the underlying system is a real cipher; report the number either way (rule 3). Cost $1-2.",
+  "3. Treat NCBE (and other frequent tokens) as candidate code-words in a small personal nomenclator and attempt a constrained substitution search using only the token vocabulary actually present (not a full 26-letter MASC), scored by word-cover against English after the substitution -- this is the FBI/ACA's own presumed approach and failed publicly, so expect a negative; report it as such rather than re-running it uncritically. Cost $2-3."
+ ],
+ "matched_control": "not yet run; test 2 above proposes the design (synthetic English plaintext, same folding, same N, same solver)",
+ "judge": {
+  "letters_min": 700,
+  "letters_max": 800,
+  "control_samples": 200
+ },
+ "value": "medium: a famous, extensively studied FBI-failed target (CRRU's ~99% success rate makes this a genuine outlier), but the mixed alphanumeric/punctuation structure means a standard classical-cipher judge is only weakly applicable; any reading here needs a bespoke tokenizer, not a straight letters-only fold",
+ "model": "Sonnet",
+ "status_25_Sept_2026": "open (FBI released the notes 30 March 2011, most recent FBI statement referenced by the survey is Nov 2025); FBI CRRU and ACA both failed",
+ "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run goes under cheap_test_done with its control. judge block uses only letters_min/max on the folded (letters-only, punctuation/digits stripped) text as a placeholder; no 'language' check is meaningful yet given the token structure (NCBE etc.) -- a bespoke tokenizer-aware judge would be a better long-term fit than tools/judge_plaintext.py's plain letter n-gram model, and is left as a follow-up, not built here (scope of this brief).",
+ "written": "25 Sept 2026 by LANE B2 worker bSPEC (session_016UPMZ7UBvMWu2PEsWNiFyC), claude-sonnet-5"
+}
