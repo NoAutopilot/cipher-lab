@@ -1,0 +1,31 @@
+from_type	to_type	n_occurrences_f57v	evidence	confidence
+o.^dot	o.^	2	atlas_review/crops/f57v_01_002.png,f57v_11_014.png vs f57v_01_022.png,f57v_06_011.png; atlas.tsv desc "o.: ring with a dot inside" -- dot is the base glyph, not an attached mark	sure
+o.^ot	o.^	1	atlas_review/crops/f57v_02_019.png ("ot") indistinguishable from o.^dot/o.^ crops above; pooled marks_seen for o. has dot:6 ot:1 (24 Sept atlas.tsv), "ot" nowhere else on f57v -- "ot" reads as a dropped-letter spelling of "dot", not a second mark	sure
+a^	a^1	2	atlas_review/crops/f57v_01_019.png,f57v_18_018.png vs a^1's f57v_01_021.png,f57v_06_002.png,f57v_14_017.png,f57v_15_017.png,f57v_15_023.png,f57v_18_022.png -- same cursive a with the same upstroke serif at top-left in every crop; "1" reads the a's own ascender as a digit, not a separate mark	sure
+H^1|o	H^	2	atlas_review/crops/f57v_06_018.png,f57v_12_020.png vs H^'s f57v_03_012.png,f57v_05_012.png,f57v_06_012.png,f57v_06_026.png -- identical open double-bar H shape, no extra ink visible at the "1" or "o" positions in any crop	sure
+H^1	H^	1	atlas_review/crops/f57v_11_015.png -- same as above, no visible mark	sure
+eps^1	eps^	2	atlas_review/crops/f57v_11_005.png,f57v_14_030.png vs eps^'s f57v_04_013.png,f57v_11_019.png,f57v_13_017.png,f57v_19_008.png -- same two-bowl epsilon stroke, no extra ink at any digit position	sure
+eps^5	eps^	1	atlas_review/crops/f57v_04_004.png -- same epsilon stroke, no visible mark beyond normal pen lift	sure
+eps^7	eps^	1	atlas_review/crops/f57v_04_001.png -- same	sure
+eps^~	eps^	1	atlas_review/crops/f57v_11_007.png -- same	sure
+S7^1	S7^	1	atlas_review/crops/f57v_05_010.png shows the "7"-shaped sign plus a stray "10" from the NEXT line bleeding into the crop margin, not a mark on the sign itself; matches S7^'s f57v_04_019.png etc.	sure
+S7^~	S7^	1	atlas_review/crops/f57v_12_013.png -- plain 7-shape, no visible mark	sure
+S4^~	S4^	1	atlas_review/crops/f57v_15_025.png -- same slash-crossing-a-foot shape as S4^'s f57v_01_011.png etc, no extra ink	sure
+Z^#	Z^	1	atlas_review/crops/f57v_04_018.png -- every Z crop on f57v (marked and unmarked) shows the same overhead flourish above the Z stroke; Z^#'s flourish is not visibly different from the unmarked exemplars	sure
+]^o|dot	]^o	1	atlas_review/crops/f57v_01_001.png shows the same open ring above the bracket as ]^o's f57v_04_021.png,f57v_05_015.png,f57v_14_010.png,f57v_14_021.png,f57v_14_025.png; no separate dot visible. Pooled marks_seen for "]" (atlas.tsv) has o:63 dot:10 ot:22 -- consistent with "o"/"dot"/"ot" being alternate spellings of the same ring mark across the whole leaf set, though this row only certifies the f57v example	sure
+m^	m^~	1	atlas_review/crops/f57v_13_007.png vs m^~'s f57v_02_016.png,f57v_06_019.png,f57v_13_011.png,f57v_15_014.png,f57v_15_021.png,f57v_18_026.png -- same cursive m, canonical target picked as the leaf's majority label	sure
+m^5	m^~	1	atlas_review/crops/f57v_11_013.png -- same cursive m, no extra ink beyond the letter's own top squiggle	sure
+m^7	m^~	1	atlas_review/crops/f57v_01_023.png -- same	sure
+m^o|1	m^~	1	atlas_review/crops/f57v_05_013.png -- same	sure
+]^	]^o	1	atlas_review/crops/f57v_11_010.png -- crop sits at the box edge and may be a partial glyph; looks smaller than the other ]^o exemplars but no clearly different shape either	likely
+w^1	w^	1	atlas_review/crops/f57v_04_008.png vs w^'s f57v_02_009.png,f57v_03_016.png etc -- same cursive w, no extra ink found at the "1" position	likely
+e^dot	e^dot|+	4	atlas_review/crops/f57v_03_013.png,f57v_05_022.png,f57v_06_007.png,f57v_14_020.png all show a single "+"-shaped cross above the e loop, the same shape as e^dot|+'s f57v_04_006.png,f57v_14_016.png,f57v_19_010.png; no separate round dot visible in either group -- "dot" may be a mislabel of the same "+" stroke rather than an extra mark	likely
+e^dot|#	e^#	1	atlas_review/crops/f57v_04_010.png shows a double-cross "#" above the e loop, matching e^#'s f57v_03_022.png,f57v_05_004.png,f57v_05_008.png,f57v_05_018.png rather than the single "+" seen in the e^dot group	likely
+lam^1	lam^	1	atlas_review/crops/f57v_14_019.png -- bolder ink but same lambda stroke as lam^'s f57v_02_018.png etc, no separate mark visible	likely
+lam^7	lam^	1	atlas_review/crops/f57v_04_020.png -- same lambda stroke, no visible mark	likely
+e^	e^#	5	atlas_review/crops/f57v_03_004.png,f57v_03_019.png,f57v_12_014.png,f57v_12_016.png,f57v_15_007.png -- keep_distinct: some e^ crops show what looks like the same # cross as e^# (03_019, 12_014), others show none (15_007); the mark detector looks unreliable on this small a glyph rather than the sign types being genuinely the same or different -- do not merge without a token-by-token re-check, flagged for a follow-up worker	keep_distinct
+e^dot|+	e^#	3	atlas_review/crops/f57v_04_006.png,f57v_14_016.png,f57v_19_010.png vs e^#'s f57v_03_022.png,f57v_05_004.png,f57v_05_008.png,f57v_05_018.png -- the dot|+ group consistently shows a single "+" cross, the # group consistently shows a double "#" cross; visually distinct from each other even though both attach to the same e loop	keep_distinct
+g^	g^~	13	atlas_review/crops/f57v_02_014.png,f57v_03_014.png,f57v_11_011.png,f57v_11_023.png,f57v_13_016.png,f57v_13_018.png vs g^~'s f57v_01_018.png,f57v_02_004.png,f57v_06_025.png,f57v_11_012.png,f57v_12_015.png,f57v_12_019.png -- keep_distinct: base "g" shape itself is inconsistent across occurrences (11_011 and 11_023 look like different base codes entirely, possibly bh/g or a segmentation artifact touching the image's own scan-edge curve), so the group is not a clean enough baseline to judge the "~" mark by eye; not merged, flagged for the base-code cluster review, not a marks-only fix	keep_distinct
+lam^~	lam^	2	atlas_review/crops/f57v_02_008.png,f57v_18_028.png vs lam^'s exemplars -- keep_distinct: 02_008 shows a visible extra squiggle below the lambda, 18_028 shows none; inconsistent within the "~"-labelled group itself, so not safe to merge either way without a closer look	keep_distinct
+lam^dot|1	lam^	1	atlas_review/crops/f57v_05_003.png -- keep_distinct: shows a visible extra squiggle below the lambda stroke, unlike the plain lam^ exemplars	keep_distinct
+w^1|5	w^	1	atlas_review/crops/f57v_01_015.png -- keep_distinct: shows two distinct extra strokes above the w, clearly more ink than the plain w^ exemplars	keep_distinct
