@@ -1,0 +1,7 @@
+control seed=2 tab=vig order=8 beam=1000 plain_book=pg5323_Effi_Briest.txt.gz key_book=pg29719_Dichtertje_De_Uitvreter_Titaantjes.txt.gz LM_p books=6 (-) LM_k books=6
+  msg 1 n=237 plain 172/237=72.6%  swap-tolerant 76.4%  key 72.6%  ll_p=-1.502 ll_k=-1.690 (96s)
+  msg 2 n=178 plain 122/178=68.5%  swap-tolerant 70.8%  key 68.5%  ll_p=-1.393 ll_k=-1.756 (53s)
+  msg 3 n=140 plain 81/140=57.9%  swap-tolerant 64.3%  key 57.9%  ll_p=-1.504 ll_k=-1.618 (40s)
+  msg 4 n=140 plain 69/140=49.3%  swap-tolerant 59.3%  key 49.3%  ll_p=-1.546 ll_k=-1.469 (49s)
+  msg 5 n=229 plain 114/229=49.8%  swap-tolerant 53.7%  key 49.8%  ll_p=-1.815 ll_k=-1.440 (68s)
+CONTROL POOLED seed=2 tab=vig plain=60.4% swap-tolerant=65.3% key=60.4% ll_p=-1.565 ll_k=-1.596

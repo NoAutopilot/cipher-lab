@@ -1,0 +1,8 @@
+noise seed 1 key de: -1.711	nicht	5	39	vig	waffe
+noise seed 1 key nl: -1.813	waffen	5	39	vig	nichte
+noise seed 2 key de: -1.902	melde	3	45	vig	tklei
+noise seed 2 key nl: -1.989	erbitte	1	182	beau	boerdie
+noise seed 3 key de: -1.597	nicht	1	96	varbeau	vater
+noise seed 3 key nl: -1.785	london	4	0	vig	mratel
+
+[exited with code 0]

@@ -140,6 +140,7 @@ class LM:
             for g, n in self.use[m].items():
                 self.tot[m][g[:-1]] += n
                 self.typ[m][g[:-1]] += 1
+        self.cnt = None  # raw lower-order counts no longer needed (memory)
         self.cache = {}
         u = self.use[1]
         n1 = sum(u.values()) + len(alphabet)

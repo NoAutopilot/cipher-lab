@@ -1,0 +1,7 @@
+control seed=3 tab=vig order=8 beam=1000 plain_book=pg36905_Schach_von_Wuthenow.txt.gz key_book=pg16882_Het_leven_van_Rozeke_van_Dalen_deel_2.txt.gz LM_p books=6 (-) LM_k books=6
+  msg 1 n=237 plain 195/237=82.3%  swap-tolerant 83.5%  key 82.3%  ll_p=-1.491 ll_k=-1.565 (81s)
+  msg 2 n=178 plain 142/178=79.8%  swap-tolerant 82.6%  key 79.8%  ll_p=-1.428 ll_k=-1.723 (59s)
+  msg 3 n=140 plain 83/140=59.3%  swap-tolerant 65.0%  key 59.3%  ll_p=-1.550 ll_k=-1.656 (42s)
+  msg 4 n=140 plain 101/140=72.1%  swap-tolerant 76.4%  key 72.1%  ll_p=-1.463 ll_k=-1.585 (39s)
+  msg 5 n=229 plain 110/229=48.0%  swap-tolerant 55.0%  key 48.0%  ll_p=-1.745 ll_k=-1.582 (64s)
+CONTROL POOLED seed=3 tab=vig plain=68.3% swap-tolerant=72.4% key=68.3% ll_p=-1.546 ll_k=-1.616

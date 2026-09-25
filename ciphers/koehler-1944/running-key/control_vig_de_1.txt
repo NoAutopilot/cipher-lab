@@ -1,0 +1,7 @@
+control seed=1 tab=vig order=8 beam=1000 plain_book=pg36905_Schach_von_Wuthenow.txt.gz key_book=pg46184_Frau_Jenny_Treibel.txt.gz LM_p books=5 (-) LM_k books=5
+  msg 1 n=237 plain 85/237=35.9%  swap-tolerant 65.4%  key 35.9%  ll_p=-1.537 ll_k=-1.738 (90s)
+  msg 2 n=178 plain 132/178=74.2%  swap-tolerant 89.9%  key 74.2%  ll_p=-1.399 ll_k=-1.668 (40s)
+  msg 3 n=140 plain 44/140=31.4%  swap-tolerant 62.1%  key 31.4%  ll_p=-1.602 ll_k=-1.743 (28s)
+  msg 4 n=140 plain 103/140=73.6%  swap-tolerant 84.3%  key 73.6%  ll_p=-1.543 ll_k=-1.463 (26s)
+  msg 5 n=229 plain 85/229=37.1%  swap-tolerant 70.3%  key 37.1%  ll_p=-1.525 ll_k=-1.625 (46s)
+CONTROL POOLED seed=1 tab=vig plain=48.6% swap-tolerant=73.7% key=48.6% ll_p=-1.518 ll_k=-1.655

@@ -1,0 +1,7 @@
+control seed=2 tab=vig order=8 beam=1000 plain_book=pg5323_Effi_Briest.txt.gz key_book=pg15736_Der_Mann_von_vierzig_Jahren.txt.gz LM_p books=5 (-) LM_k books=5
+  msg 1 n=237 plain 136/237=57.4%  swap-tolerant 87.3%  key 57.4%  ll_p=-1.613 ll_k=-1.460 (89s)
+  msg 2 n=178 plain 49/178=27.5%  swap-tolerant 65.7%  key 27.5%  ll_p=-1.668 ll_k=-1.560 (40s)
+  msg 3 n=140 plain 26/140=18.6%  swap-tolerant 79.3%  key 18.6%  ll_p=-1.611 ll_k=-1.472 (29s)
+  msg 4 n=140 plain 17/140=12.1%  swap-tolerant 81.4%  key 12.1%  ll_p=-1.553 ll_k=-1.507 (28s)
+  msg 5 n=229 plain 110/229=48.0%  swap-tolerant 79.5%  key 48.0%  ll_p=-1.584 ll_k=-1.541 (45s)
+CONTROL POOLED seed=2 tab=vig plain=36.6% swap-tolerant=79.1% key=36.6% ll_p=-1.607 ll_k=-1.508

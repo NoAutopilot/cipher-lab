@@ -1,0 +1,7 @@
+control seed=1 tab=varbeau order=8 beam=1000 plain_book=pg36905_Schach_von_Wuthenow.txt.gz key_book=pg16882_Het_leven_van_Rozeke_van_Dalen_deel_2.txt.gz LM_p books=6 (-) LM_k books=6
+  msg 1 n=237 plain 135/237=57.0%  swap-tolerant 57.0%  key 57.0%  ll_p=-1.526 ll_k=-1.875 (101s)
+  msg 2 n=178 plain 147/178=82.6%  swap-tolerant 82.6%  key 82.6%  ll_p=-1.442 ll_k=-1.619 (51s)
+  msg 3 n=140 plain 93/140=66.4%  swap-tolerant 66.4%  key 66.4%  ll_p=-1.707 ll_k=-1.439 (40s)
+  msg 4 n=140 plain 114/140=81.4%  swap-tolerant 81.4%  key 81.4%  ll_p=-1.672 ll_k=-1.326 (41s)
+  msg 5 n=229 plain 213/229=93.0%  swap-tolerant 93.0%  key 93.0%  ll_p=-1.664 ll_k=-1.426 (69s)
+CONTROL POOLED seed=1 tab=varbeau plain=76.0% swap-tolerant=76.0% key=76.0% ll_p=-1.593 ll_k=-1.565
