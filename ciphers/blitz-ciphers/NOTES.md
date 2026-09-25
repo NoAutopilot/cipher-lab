@@ -111,3 +111,81 @@ target "recovery" against -- per brief, this reports control recovery and target
 blind-transcribing the six untranscribed pages, would raise N well past 581 and let the periodic
 scan and both substitution controls run with much more power, and would show whether the
 case/punctuation pattern is internally consistent across all 8 pages.
+
+## Cheap test 2 (25 Sept 2026, bBLZ2): simple substitution (masc) via family_run.py, judge now wired
+
+Intake gate re-run per brief: `python3 tools/intake_gate_check.py blitz-ciphers` -> `blitz-ciphers:
+open (line 3) -- edition/page or full-text-search citation found within 6 lines`, exit 0.
+
+Test 1 found the case-folded IC (0.0628) inside the monoalphabetic-English control band, so this
+test runs simple substitution of English (masc) with a matched control, per the LANE B4
+orchestrator's brief. Test 1's spec judge had no `language` wired, so no judge PASS/FAIL could ever
+be computed against it -- step 1 below closes that gap before step 2 runs the family.
+
+**Step 1 -- wire the judge.** Added `"language": "en"` and `"min_word_cover": 0.5` to
+`specs/blitz-ciphers.json`'s `judge` block (kept `letters_min`/`letters_max` 570/590 from test 1),
+matching `specs/rubin-1953.json`'s judge shape. Sanity check with a real 581-letter English window
+(`tools/data/pg1661_holmes.txt`, folded to letters, offset 10000) and the same window letter-shuffled
+(`random.Random(1).shuffle`):
+
+```
+$ python3 tools/judge_plaintext.py specs/blitz-ciphers.json --file <581-letter English window>
+ok   length: got=581, min=570, max=590
+ok   language: score=-0.775, null_p99=-2.041, real_p05=-0.858, real_median=-0.806, mode=both, N=581
+ok   words: cover=0.948, min=0.5, real_text_median_cover=0.96
+PASS - blitz-ciphers (a PASS is a gate for a verifier, not a reading; rule 10)
+
+$ python3 tools/judge_plaintext.py specs/blitz-ciphers.json --file <same window, letter-shuffled>
+ok   length: got=581, min=570, max=590
+FAIL language: score=-2.214, null_p99=-2.041, real_p05=-0.858, real_median=-0.806, mode=both, N=581
+FAIL words: cover=0.423, min=0.5, real_text_median_cover=0.96
+FAIL - blitz-ciphers (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+
+Judge PASSes real English, FAILs a shuffled control of the same letters -- correctly wired.
+
+**Step 2 -- token mode check.** The spec's `ciphertext` field cannot be fed to `family_run.py`
+directly: it is a 2-element list of full page strings including the `"page 7: "` / `"page 8: "`
+labels and `" / "` line-separators, not a clean letters or space-token list.
+- `--tokens auto` (the default) splits on whitespace and treats `page`, `7:`, `/` etc. as signs:
+  N=72, K=39 -- garbage.
+- `--tokens letters` applied to the raw spec field folds case on the *whole* string including the
+  `page`/`page` labels, giving N=589 K=25, 8 letters too many (test 1's own stream is 581).
+
+`specs/cheap-tests/blitz-ciphers/ciphertext_letters_cf.txt` (written by test 1's `ic_profile.py`) is
+already the correctly cleaned case-folded stream -- confirmed N=581, K=25 distinct letters,
+byte-for-byte the same stream test 1's IC profile and its masc control-only calibration used. Ran:
+
+```
+$ python3 tools/family_run.py specs/blitz-ciphers.json --family masc \
+    --cipher specs/cheap-tests/blitz-ciphers/ciphertext_letters_cf.txt --tokens letters \
+    --seeds 3 --label "B4 bBLZ2"
+ciphertext: 1 message(s), N=581 signs, K=25 distinct, tokens=letters
+CONTROL seed 1: N=581 K=23 recovery 1.000
+CONTROL seed 2: N=581 K=23 recovery 0.997
+CONTROL seed 3: N=581 K=21 recovery 0.985
+TARGET best score -1846.088; judge: FAIL language: score=-1.685, null_p99=-2.041,
+  real_p05=-0.858, real_median=-0.806, mode=both, N=581
+```
+
+Token mode used: `letters`, N=581, K=25 -- matches test 1's case-folded stream exactly (same file).
+
+**Result: control mean 0.994 (0.985-1.000)**, near ceiling and consistent with test 1's control-only
+calibration (0.999) -- the masc solver has real power at this N/K. **Target FAILs** the language
+judge (`score=-1.685` sits above the shuffled-null 99th percentile `-2.041` but below the real-English
+5th percentile `-0.858`); the words check alone passes (`cover=0.589 >= 0.5`). Full judge line
+pasted above (rule 7). Best decode: `ciphers/blitz-ciphers/families/masc-1.txt`. Row appended to
+`ciphers/blitz-ciphers/HYPOTHESES.md` by `family_run.py` (25 Sept 2026 21:38 UTC).
+
+**Verdict: control-backed negative for simple substitution of case-folded English** at N=581 on the
+transcription in hand (2 of 8 pages) -- the control shows the solver and gate have real power here
+(0.994 mean, gate 0.6), and the target's best restart still fails the language check. Per rule 3 this
+is a real exclusion of the masc family at this design/length, not a power failure. Per rule 5 as
+amended, a control-backed negative is `partial`, never `closed-negative` -- flagged for the
+orchestrator to add a NEAR.md row (workers do not edit NEAR.md). Not run: homophonic or
+periodic_vigenere as a masc-style judged family test (brief: run masc only this pass). Next untried
+step is unchanged from test 1: the spec's own `cheap_tests_in_order` item 2, fetching and
+blind-transcribing the six untranscribed pages, which would let this same masc test run at much
+higher N.
+
+**Requests**: 0 hosts this stage (disk-only, no fetch).
