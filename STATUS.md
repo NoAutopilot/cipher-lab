@@ -164,6 +164,41 @@ Salviati and Seure with costed briefs, N4 copy-free scouts (Bourdeau's copy-free
 stops, a successor parent reads this section, the lane table,
 the last check-in prompt (list_triggers), takes over the trigger with update_trigger persistent_session_id, and continues.
 
+## LANE KX handoff (session_01JPoYAFvVfraJibxQdQfrqp), 25 September 2026, 11:00 UTC
+
+Question: what else can the keys we hold read? Answer this window: nothing on disk that was not already known; one new open
+target found on the way. Kind of result: a controlled negative plus a new target (contribution), no reading, no AUDIT.md.
+
+- **Cross-match (job 1).** `tools/key_crossmatch.py`, `KEY-CROSSMATCH.tsv/.md` (KX-XMATCH, repaired by KX-XMATCH2). 60 key
+  files, 57 usable; 35 find their own ciphertext; 8 of 35 pass the positive control (rank 1 on own text, z vs shuffled key
+  >= 4, above shuffled-letter windows). 0 hits, 8 weak (all own-folder rows the pairing could not assign), 0 of 8 false
+  positives on century/language-gap pairs. Known reuse pairs (Nassau key_5549/Lodewijk) cover ~0.8 but reach only z 2.45;
+  Brienne tables stay under 0.5 coverage across their two folders. The real-text floor of judge_plaintext fails every own
+  decode (fr16/de16 are edited text), so it is recorded, not used as a gate. 22 keys still have no own text (no decode.json;
+  fr5160 needs one; dupuy452 unsegmented; P9 bespoke). Read "0 hits" as: no cross-read among the 8 validated keys, untested
+  for the rest. New corpora tools/data/{la,nl,pt,es,en16}_repo built from repo readings.
+- **Office map (job 2).** KEY-OFFICES.tsv (49 keys, 29 offices); QUEUE "Key reuse candidates (LANE KX)": KX-01 Mélanges de
+  Colbert 26 part III (Brienne 1661) closed, no cipher in 104/375 canvases, ark corrected to btv1b10035069t; KX-02 (Thurloe
+  glossed letters) belongs to TX-THUR; KX-03 new.
+- **KX-03, ciphers/colbert26-lathuillerie-1644 (open).** La Thuillerie -> Servien, 1645-48, Mél. Colbert 26 part I, 11
+  enciphered letters on 21 canvases. Check-solved open (Négociations secrètes 1725-26 vols 1-4 and APW online full text read).
+  The second hand's interlinear notes are topical paraphrases, not a decipherment (KX-LATHKEY2): cribs, no key. Transcribed:
+  canvases 20, 21, 27, 30 (519 tokens, 129 signs; blind second pass 58-97% agreement, 109 disagreements open); canvas 26 is a
+  different long-number system; 16 canvases queued in NOTES.md. Spec specs/colbert26-lathuillerie-1644.json; cheap test 1 done
+  (KX-LATHCT1): canvases 20+21+27 and canvas 30 are two alphabets (Jaccard 0.255 vs same-key control 0.764), and neither is
+  the key family of key_1646, key_brienne_1647 or key_1659 (Jaccard 0.14-0.25 vs same-key 0.53-0.86, inside the
+  different-key controls). Next, if anyone takes it: settle the 109 disagreements, then cheap test 2 (crib placement of the
+  named entities in the notes); full transcription only if test 2 moves it. Expected value is low (very large nomenclator,
+  few hundred tokens per alphabet).
+- **Workers** (LEDGER): OFFICE 2.57 D, XMATCH 9.50 D-, COLB26 3.95 N, XMATCH2 9.40 N, COLB26P1 9.19 D, LATHKEY 44.06 F
+  (interrupted after 61 min without a push), LATHKEY2 2.10 D, LATHTR 6.41 D, LATHCT1 2.47 D; total $89.65; orchestrator
+  ~$7. No live workers, no pending check-in.
+- **Lessons.** (1) A positive control needs known pairs, not only a null; the first build reported "0 hits" with 1 of 56 keys
+  validated. (2) Interrupt a worker at 2x its alarm, not only on the 45-min stall rule ($44 lost). (3) A leaf-map note of
+  "decipherment on the page" must be confirmed token by token at native resolution before anyone calls a letter solved (two
+  workers and this orchestrator repeated it for 90 min). (4) tools/room.py --push after a manual commit pushes nothing
+  ("nothing staged"): a tool fix for the retrospective.
+
 ## LANE PX handoff (session_01KapVpHVzNpnnQce5C8c3LY), 25 September 2026, 09:55 UTC
 
 Portuguese holdings and dictionary codes. Opened 04:25 by the parent; closed at its own stop rule (last gate failed).
