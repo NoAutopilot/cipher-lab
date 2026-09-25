@@ -377,3 +377,82 @@ all HTTP 200, no 429/403/challenge. No other host touched this pass (no new NA c
 search, no DECODE). 2 Sonnet subagents used for independent transcription passes (2007A crops; 2061 crops),
 plus a third launched for the fresh-instance re-derivation above (at most 2 concurrent at any time, per the
 job brief).
+
+## Reading (VX-RD03C, 25 Sept 2026)
+
+**Intake gate:** unchanged from VX-CS04's verdict above; no new intake-relevant material this pass.
+
+**What this job set out to do:** (1) align 2007B's clean plain-Dutch Nota text against 2007A's ciphered Nota
+clause by clause (B, D, E, F) using two independent passes, settle the з (U-vs-E) contradiction; (2) decode
+2039/2046/2077 label by label once the key reaches their signs; (3) judge + re-derive.
+
+### What was done
+
+**Signatuure/з (settle з):** re-cropped `images/2007a_remarque_af_block.jpg` locally at 5-10x zoom (no new
+network fetch) and re-read "Signatuure" position by position. The three already-confirmed anchors land
+exactly right (h-loop=N, delta=A, lambda=T, o-plain=R), confirming the word and this worker's segmentation
+are sound, but the з contradiction is **not resolved and got one position worse**: a fourth position
+(expected U) now reads as a clean digit-"5" shape, conflicting with the robust, 2-sheet-confirmed 5=v.
+Likely 2-3 visually similar glyphs conflated under too few codes at this crop's resolution; not asserted
+either way. Full account and the specific next step (a fresh higher-native-resolution fetch, not another
+read of the same crop): glyphs.md "RD03C" section, conflicts.tsv.
+
+**Nota B/D/E/F vs 2007B's plaintext (two independent blind subagent passes, per the brief):** both passes
+independently confirmed two important structural facts that apply to every remaining target sheet: (1) the
+gold cursive gloss sits ABOVE the black cipher line it explains; (2) **Arabic numerals in the running cipher
+text are left PLAIN, unenciphered** (clause D's "2 Fregatten, 7 Koopvaerders, 2 brigantijnen, [&] 1
+uytlegger" and clause E's "2 vlotbatterijen" all show bare unenciphered digits, plus a plain "&" for "en") --
+this matches the pattern already seen in 2039's Bastion-list lines and should let a follow-on worker treat
+every bare digit run on 2039/2046/2077 as free, not needing a key. (3) The cipher is heavily and
+**inconsistently** compressed relative to the plain word (a 14-letter word can read as 7, 10 or 12 glyphs
+depending on the word), which defeated most of the two passes' attempts to reconcile a shared word
+segmentation for the longer words in these clauses -- both passes independently blamed the same root cause,
+a family of visually similar loop/hook glyphs neither could reliably tell apart at the resolution available.
+
+**Two new signs reached grade C** (key.tsv): **digit `4`=w** and **digit `6`=s**, each confirmed because
+BOTH independent passes, working blind from the image, landed on the same shape at the same word and
+position ("Tweede" pos2 for w; "Eerste" pos4 for s) -- the strict two-independent-pass bar this key.tsv has
+used throughout. Everything else in both passes' output (full TSVs: `scratch_notaBDEF_passA.tsv`; pass B's
+full output is on record in this session's transcript only, not re-saved as a file, see glyphs.md) is
+**NOT** promoted -- the two passes disagree on segmentation for most of the remaining words in clauses
+B/D/E/F, sometimes contradicting an already-confirmed sign (e.g. one pass's "zwaare" segmentation would
+force lambda=z, conflicting with the robust confirmed lambda=t), so nothing beyond the two agreed positions
+was asserted.
+
+**Control (rule 3):** `tools/decode_key.py ciphers/na-suriname-map-1781 --check` regenerates the reading and
+exits 0 (up to date). Output: **56 tokens: C 37, M 1, U 18** (up from 52 tokens, C 33/M 1/U 18 before this
+pass) -- the two new signs' own source words (Eerste pos4, Tweede pos2) decode to grade C; this remains a
+self-consistency check on material the key was partly built from for those two positions, not an independent
+test.
+
+**Out-of-sample check found by inspection, worth recording even though it wasn't run through decode_key.py
+this pass:** the current 17-sign key, applied for the first time to a target sheet it was never built from,
+correctly reads "van" (5=v, [delta]=a, [h-loop]=n) in **2039's own title cartouche**
+(`images/2039_cartouche.jpg`, line 2: "...5Ah sf3r F,"), at much clearer resolution than RD03B's earlier
+low-res spot check. This is a genuine transfer test (the key reading NEW material, not the words it was
+built from), unlike the tautological self-consistency numbers reported so far for this target.
+
+### What was not done (stopped at the 80%-of-box mark, honestly short of steps 2/3)
+
+Two independent transcription passes on one block consumed most of this job's 45-minute wall-clock box
+(each subagent pass ran about 20 minutes). **2039, 2046 and 2077 were NOT decoded this pass** -- with the
+key now at 17 signs (still short of the ~20+ a Dutch legend sentence needs) and the two passes' own account
+of how inconsistently this cipher compresses plaintext, a rushed decode attempt in the remaining minutes
+would risk exactly the kind of forced reading rule 7 exists to prevent. No judge run, no fresh-instance
+re-derivation subagent this pass (no time/subagent-slot budget left in the box for a third launch).
+
+**Next step for a follow-on worker, highest value first:** (1) resolve the loop/hook-glyph family both Nota
+passes and the Signatuure re-crop independently flagged as the actual blocker -- ideally with a fresh IIIF
+fetch at higher native resolution of `2007a_nota_af_block.jpg` and the Remarque block, not another read of
+the existing crops; (2) once that family is sorted, re-run a reconciliation pass over `scratch_notaBDEF_passA.tsv`
+against pass B's output (session a28cbc8bbc9ab5160, full TSV in that agent's hand-back in this session's
+transcript) for the remaining clause B/D/E/F words -- several (Koopvaerders, dekking, uytlegger, brigantijnen)
+look close to resolvable once the loop family is split correctly; (3) only then attempt 2039/2046/2077,
+using the now-confirmed "numerals are plain" rule to skip re-keying the many digit runs on those sheets.
+
+### Hosts and requests (this pass)
+
+No network requests (all work from images already on disk: `2007a_remarque_af_block.jpg`,
+`2007a_nota_af_block.jpg`, `2039_cartouche.jpg`, cropped/zoomed locally with PIL, no re-fetch). 2 Sonnet
+subagents (independent blind transcription of clauses B/D/E/F, one already using the atlas as ground truth,
+per the job brief's cap).

@@ -63,3 +63,12 @@ remarque_l2_w2_signatuure	6	з
 remarque_l2_w2_signatuure	7	e
 remarque_l2_w2_signatuure	8	[o-plain]
 remarque_l2_w2_signatuure	9	з
+# Added RD03C, 25 Sept 2026: two independent blind subagent passes (A, B) aligning 2007A's Nota clauses
+# B/D/E/F cipher against 2007B's clean plaintext (scratch_2007b_nota_plain.txt), full raw output in
+# scratch_notaBDEF_passA.tsv / scratch_notaBDEF_passB.tsv. Only the two cross-pass-agreeing positions below
+# are promoted here; the rest of clauses B/D/E/F disagree between passes on word segmentation (heavy,
+# inconsistent compression -- see NOTES.md) and are NOT added to avoid asserting an unconfirmed alignment.
+nota_eerste_w1	0	7
+nota_eerste_w1	3	6
+nota_tweede_w1	0	λ
+nota_tweede_w1	1	4

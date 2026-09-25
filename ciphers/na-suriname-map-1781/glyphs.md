@@ -89,6 +89,67 @@ one glyph rather than two), not evidence that a single glyph carries two values.
 key.tsv; a follow-on worker should re-crop "Signatuure" at high zoom to settle it before trusting `з` for
 anything.
 
+## RD03C, 25 Sept 2026: two blind passes on Nota B/D/E/F vs 2007B's clean plaintext, two more signs
+
+Per the job brief's step 1, two independent Sonnet subagents (pass A, session a2fc0b5b98c276e9c; pass B,
+session a28cbc8bbc9ab5160) each blind-transcribed `images/2007a_nota_af_block.jpg`'s clauses B, D, E, F,
+aligning word-by-word against 2007B's clean plaintext (`scratch_2007b_nota_plain.txt`) rather than the
+harder cursive gloss. Full pass A output: `scratch_notaBDEF_passA.tsv`. Pass B's full output was not
+re-saved as a file this pass (time-boxed); its complete TSV and findings are on record in this session's
+transcript (agent a28cbc8bbc9ab5160's hand-back) -- a follow-on worker should ask that session directly
+(`SendMessage`) or re-run the pass if the raw data is needed again.
+
+**Both structural findings agree and are important for every remaining target:**
+1. The gold cursive gloss line sits ABOVE the black cipher line it explains (both passes independently
+   confirmed this by content-matching, not just position).
+2. **Arabic numerals are left PLAIN (unenciphered) amid the cipher**, confirmed unambiguously by both
+   passes at four positions in clause D ("2 Fregatten, 7 Koopvaerders, 2 brigantijnen, [&] 1 uytlegger")
+   and again in clause E ("2 vlotbatterijen"). A plain "&" also stands for "en". This directly matches
+   the pattern already seen in 2039's Bastion-list lines (`images/2039_bastion.png`/`2039_cartouche.jpg`:
+   "Bastion Holland, 2.M...") and should let a follow-on worker treat every bare digit run on 2039/2046/2077
+   as free (unenciphered) rather than needing a key for it.
+3. **Both passes agree the cipher is heavily and INCONSISTENTLY compressed relative to the plain word**
+   ("Geprojecteerde", 14 letters, reads as only 7 (pass A) or 12 (pass B) glyphs; short words like
+   "Eerste"/"Tweede"/"zwaare"/"uytlegger" land close to 1:1). This means word-length alone cannot be used
+   to sanity-check a segmentation, and most of clauses B/D/E/F's longer words could NOT be reconciled
+   between the two passes this pass (each proposed a different, mutually-inconsistent glyph-to-position
+   split for the same word) -- see below.
+
+**Two new signs reached grade C** (added to key.tsv), from the ONLY two positions where both passes,
+working independently, landed on the same shape at the same word and the same position:
+- **digit `4` = w**: both passes read a "4" at position 2 of "Tweede" (T-**w**-eede).
+- **digit `6` = s**: both passes read a "6"-shaped loop at position 4 of "Eerste" (Eer-**s**-te).
+
+Everything else in both passes' output is **NOT** promoted: the two passes disagree on word segmentation
+for most of clauses B/D/E/F (e.g. pass A reads clause B's second word as "zwaare" with glyphs
+λ,7,[a-plain],[o-plain],y,[d-flourish] -- but position 1 there would force λ=z, directly contradicting
+confirmed λ=t; pass B's clause B segmentation differs again). Both passes flag the same root cause
+independently: a family of visually similar loop/hook glyphs (pass A: δ/γ/ν/κ/q/τ/θ; pass B: [delta-var]/
+[kappa-var]/[q-loop]) that neither could reliably tell apart at the resolution available, which is likely
+also why the two passes' segmentations diverge. **Next step for a follow-on worker**: a fresh, higher-zoom
+look specifically at that loop/hook family (ideally a fresh IIIF fetch at higher native resolution, since
+both passes already pushed local PIL upscaling of the existing block crop about as far as it goes), rather
+than a third same-resolution reading pass.
+
+Also of note, both passes independently landed on **digit "3" appearing to function as another E-sign**
+(pass A calls it "3" outright; pass B calls the same shape "digit-3" and separately notes it looks like the
+already-confirmed `[ezh-dot]` -- i.e. this may not be a NEW sign at all, just `[ezh-dot]` mis-labelled as a
+literal digit by both readers because the shapes are genuinely similar). Left OUT of key.tsv rather than
+asserted either way; a follow-on worker should compare a `[ezh-dot]` crop and a "3" crop side by side.
+
+**Signatuure / з (RD03C, before the two Nota passes):** re-cropped `images/2007a_remarque_af_block.jpg` at
+5-10x local zoom (not re-fetched from the network) and re-read "Signatuure" position by position against the
+plain gloss. Three already-confirmed anchors land exactly where expected (`[h-loop]`=N at pos4, `[delta]`=A
+at pos5, `λ`=T at pos6, `[o-plain]`=R at pos9), which independently confirms this word IS "Signatuure" and
+that this worker's own glyph segmentation is basically sound. But the specific з contradiction is **not
+resolved, and got one position worse**: position 7 (expected U) reads as a clean digit-"5" shape --
+directly conflicting with the confirmed `5`=v (a very robust, 2-sheet sign) -- and position 2 (expected I)
+and position 10 (expected E) both look like the same з/reversed-3 shape already flagged as U-vs-E in
+conflicts.tsv. Most likely explanation, not confirmed: at least 2-3 visually similar but distinct glyphs
+(a genuine digit 5, and 2+ forms of the ezh/reversed-3 shape) are being conflated under too few codes at the
+resolution available in this crop -- the same "similar loop/hook family" problem as above. Left unresolved;
+see conflicts.tsv's updated row.
+
 ## What this key can and cannot do
 
 Fifteen signs confirmed across four independent passes and two sheets (13 from RD03, +2 from RD03B) is real,
