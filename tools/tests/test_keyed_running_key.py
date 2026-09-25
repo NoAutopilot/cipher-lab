@@ -56,6 +56,19 @@ def main():
     # the 1/26 chance level but not the 50% a full-size model reads (GOLD-2A control 60-79% at order 8, beam 1000)
     assert rec > 0.15, (rec, dec[:60], P[0][:60])
     assert not fam._STATE, fam._STATE  # solve() consumed the control state
+
+    # wordcorpus=DIR[,DIR] (GOLD-K2, 25 Sept 2026): draws the stage-1 keyword list from named corpora instead of
+    # corpus + kcorpus (the default, unchanged); confirm it parses and actually changes the candidate list.
+    a_default = fam._p(params)
+    assert a_default.wordcorpus is None
+    a_wc = fam._p({**params, "wordcorpus": f"{DATA}/de20,{DATA}/nl20"})
+    assert a_wc.wordcorpus == f"{DATA}/de20,{DATA}/nl20"
+    wc_texts = fam.load_wordcorpus(a_wc.wordcorpus)
+    assert wc_texts and len(wc_texts) >= 10, len(wc_texts) if wc_texts else 0
+    words_wc = fam.word_list(wc_texts, a_wc)
+    assert words_wc != words and "gentleman" not in words_wc[:20], "wordcorpus should change the candidate list"
+    assert fam.load_wordcorpus(None) is None and fam.load_wordcorpus("") is None
+
     r = subprocess.run([sys.executable, os.path.join(TOOLS, "family_run.py"), "--help"], capture_output=True, text=True)
     assert "keyed_running_key" in r.stdout, r.stdout[-500:]
     print(f"ok keyed_running_key: tabula algebra 12/12, stage 1 rank {pos} of {len(ranked)}, stage 2 recovery {rec:.3f}, "

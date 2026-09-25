@@ -24,7 +24,9 @@ transposition-block alphabet) is outside this family's reach and is said so in H
 
 params (--param k=v): kcorpus=DIR (key-language corpus; default: the plaintext corpus), arith=vig|beau|varbeau,
 order=6, beam=300, per_hyp=10, spaces=1, top=3, nwords=4000, minlen=4, maxlen=12, minocc=3, sel_msg=0 (which
-message picks the winner in stage 2), modes=plain,key,both,full.
+message picks the winner in stage 2), modes=plain,key,both,full, wordcorpus=DIR[,DIR] (draw the stage-1 keyword
+list from these files/directories instead of the plaintext + key corpora; default None = unchanged, words come
+from corpus + kcorpus -- for a keyword an agent from a different country could have carried, e.g. an English list).
 Needs >= 2 corpus texts (3 when kcorpus is the plaintext corpus). About 1-3 minutes per seed at beam 300."""
 import math, os, random, re, types
 from collections import Counter
@@ -44,7 +46,7 @@ def _p(params):
         per_hyp=int(params.get("per_hyp", 10)), spaces=bool(int(params.get("spaces", 1))),
         top=int(params.get("top", 3)), nwords=int(params.get("nwords", 4000)), minlen=int(params.get("minlen", 4)),
         maxlen=int(params.get("maxlen", 12)), minocc=int(params.get("minocc", 3)), sel_msg=int(params.get("sel_msg", 0)),
-        modes=tuple(params.get("modes", "plain,key,both,full").split(",")))
+        modes=tuple(params.get("modes", "plain,key,both,full").split(",")), wordcorpus=params.get("wordcorpus"))
 
 
 def load_kcorpus(path):
@@ -52,6 +54,15 @@ def load_kcorpus(path):
         return None
     p = path if os.path.isabs(path) else os.path.join(ROOT, path)
     return [rk.read_text(b) for b in rk.list_books([p])]
+
+
+def load_wordcorpus(spec):
+    """comma-separated files/directories the stage-1 keyword list is drawn from, in place of corpus + kcorpus
+    (--param wordcorpus=DIR[,DIR]); None (default) keeps the old behaviour."""
+    if not spec:
+        return None
+    paths = [p if os.path.isabs(p) else os.path.join(ROOT, p) for p in (s.strip() for s in spec.split(",")) if p]
+    return [rk.read_text(b) for b in rk.list_books(paths)]
 
 
 def word_list(texts, a):
@@ -129,7 +140,7 @@ def make_control(spec, seed, corpora, params):
         rng.shuffle(kidx)
         ktext, ktrain = kc[kidx[0]], [kc[i] for i in kidx[1:]]
         ptrain = [corpora[i] for i in idx[1:]]
-    words = word_list(list(corpora) + (kc or []), a)
+    words = word_list(load_wordcorpus(a.wordcorpus) or (list(corpora) + (kc or [])), a)
     word = rng.choice(words)
     mode = rng.choice(a.modes)
     tab = rk.mixed_tabula(word, mode, a.arith)
@@ -155,7 +166,7 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
     truth = _STATE.pop("truth", None)
     if ktrain is None:
         ktrain = load_kcorpus(a.kcorpus)
-    words = _STATE.pop("words", None) or word_list(list(corpora) + (ktrain or []), a)
+    words = _STATE.pop("words", None) or word_list(load_wordcorpus(a.wordcorpus) or (list(corpora) + (ktrain or [])), a)
     q = unigram(corpora)
     r = unigram(ktrain) if ktrain is not None else q
     counts = Counter("".join("".join(m) for m in cipher_msgs))
