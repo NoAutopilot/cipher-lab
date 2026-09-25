@@ -2,7 +2,7 @@ JOB GOLD-4A: Debosnys test 1 completed: cryptogram 4, merged sign inventory, sec
 
 Read first: `.claude/briefs/runs/2026-09-24-lane-r4-common.md` (at most ONE Sonnet subagent, for the second pass only, writing its TSV to disk per page; commit per page), `.claude/briefs/runs/2026-09-25-lanes-7b-COMMON.md` (binding), `ciphers/debosnys-1883/NOTES.md` in full (LANE B2's single machine pass, and the intake verdict above it), `tools/glyph_atlas.py --help`, `tools/reconcile_passes.py --help`. Claim in ROOM.
 Intake gate (pasted by the orchestrator at launch):
-INTAKE_GATE_OUTPUT
+debosnys-1883: open (line 1) -- edition/page or full-text-search citation found within 6 lines   (exit 0, run 25 Sept 2026 17:21 UTC)
 
 Do:
 1. Fetch cryptogram 4 (4a, 4b) once from the URLs in `sources/schmeh/posts/03-debosnys.html` (2 requests to scienceblogs.de, browser UA as B2 used, >= 2 s apart) into `images/`, add to manifest.json.

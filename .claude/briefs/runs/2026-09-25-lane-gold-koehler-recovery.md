@@ -2,7 +2,7 @@ JOB GOLD-1A: Köhler family A, recovery (archive lookup). Sonnet (claude-sonnet-
 
 Read first: `.claude/briefs/runs/2026-09-24-lane-r4-common.md`, `.claude/briefs/runs/2026-09-25-lanes-7b-COMMON.md` (binding), CLAUDE.md Access playbook (TNA Discovery API; good-citizen rule), `ciphers/koehler-1944/NOTES.md` (intake verdict), `ciphers/koehler-1944/HYPOTHESES.md` if present, `specs/koehler-1944.json`. Claim in ROOM.
 Intake gate (pasted by the orchestrator at launch):
-INTAKE_GATE_OUTPUT
+koehler-1944: open (line 1) -- edition/page or full-text-search citation found within 6 lines   (exit 0, run 25 Sept 2026 17:21 UTC)
 
 Question: does any archive file describe or hold a decrypt, key or cipher system for Walter Koehler's five February-1944 messages to Abwehrleitstelle Frankreich / Paris Funkstelle? A held decrypt ends the item as found-solved (for LANE V6); a described system goes to HYPOTHESES.md as a constraint for families B-D.
 Do, one host at a time:
@@ -10,5 +10,7 @@ Do, one host at a time:
 2. Kahn, Cryptologia 5:2 (1981): find the article's reference to the archive letter that quotes the five messages (OpenAlex/CrossRef metadata with the keys; the abstract; any open copy; a Taylor & Francis landing page read once). If the full text is paywalled, add a JSTOR-QUEUE.tsv row (read the file's header for the format) and one LOCAL-QUEUE row if the owner's machine would help.
 3. FBI Vault (vault.fbi.gov, search "Koehler") and NARA catalog (catalog.archives.gov is keyless-unusable; try its public web search once) for "Walter Koehler" / RG 65; record what exists.
 4. Johnson's Warfare History Network article (the spec's source for the prayer-book cipher): read once, note what it says about the Paris messages' system and its own sources.
+5. Prior attempts (parent, 17:04): Bourdeau's cyphersolver ran a control-backed negative campaign on these messages (`abwehr/`, 15 Sept 2026). Clone github.com/dbourdeau/cyphersolver shallow, read the abwehr/ write-up only (MIT code, CC BY text; cite, do not copy code), and append to HYPOTHESES.md a section "Prior attempts (Bourdeau 15 Sept 2026)": each family he tried, his control and target numbers, his parameters, so the lane does not re-spend on them.
+6. Transcription variants (parent, 17:04): write `ciphers/koehler-1944/ciphertext-variants.tsv` (msg, group index, Schmeh-2021 reading, Bourdeau msgs.py reading, note) from the six positions in NOTES.md; families run on the Schmeh text and any candidate is re-scored on both. Do not change ciphertext.txt.
 Write `ciphers/koehler-1944/ARCHIVE.md` (table of items with references, and a one-paragraph answer), append a "Family A, recovery" section to `ciphers/koehler-1944/HYPOTHESES.md` (create the file with a short top-summary placeholder if absent; append-only), and add a REQUEST.md plus an ASKS.md row for any copy order that looks decisive (the person orders; never a worker). Do not decode anything.
 Done line: items found per series, decrypt described yes/no, request count per host, no cost figure. Rule 10 wording only.
