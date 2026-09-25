@@ -1,4 +1,4 @@
-open
+found-solved
 
 Read by this worker, 25 Sept 2026: the item's own three images (m0112 the plaintext cover letter; m0113-m0114 the
 cipher draft, with the plaintext syllable written directly above almost every number) -- no printed edition or
@@ -70,3 +70,69 @@ later or published key) -- this is a straightforward reading task, not cryptanal
 already interlined; the harder part is confirming trim/joining rules where syllables run together across a line
 break, and locating (or accepting the absence of) a "live" ciphertext-only copy of the same letter elsewhere in
 this fonds to check the key against.
+
+## P5: key and reading from the draft (25 Sept 2026, LANE R6)
+
+Status moved to `found-solved`: the codes and their plaintext syllables sit on the same leaf, so this is a
+transcription-and-reconciliation task, not cryptanalysis. Process: pass A (this worker, direct image read with
+PIL crops enlarged 3-6x) and one blind Sonnet subagent pass B (same two raw images, no access to pass A or any
+existing transcription), both written to `passes/passA.tsv` / `passes/passB.tsv` (page/line/pos/code/syllable/conf,
+one row per code-syllable pair), then reconciled by hand against the image rather than `tools/reconcile_passes.py`
+(that tool's Needleman-Wunsch aligner is built for one sign per position in a plain ciphertext transcription; here
+every position carries two independent readings -- a digit code and a gloss syllable -- so a straight join on
+page/line/pos and a per-position comparison was more direct, `disagreements.tsv`, 25 rows). 12 lines on m0113
+(63 pairs), 4 usable lines on m0114 (21 pairs; a 5th row is illegible under a printed "T" watermark overlay in
+this scan and is not transcribed). `key.tsv` (52 rows, one per code observed -- three codes get two rows each
+because the two occurrences carry different values, see Collisions below) and `ciphertext.tsv` (84 tokens, the
+codes in drafting order) feed `decode.json`; `tools/decode_key.py ciphers/antt-fcc-costacabral-1865 --check`
+exits 0.
+
+**Grade counts (rule 4): C 63, M 19, U 2, of 84 tokens.** C = the code's value is read consistently across its
+occurrences and/or confirmed by a second source (both blind passes, the archival catalogue's own quoted pairs, or
+LANE R6 P4's independent earlier read of the m0114 R1 line in ROOM.md, 25 Sept 2026). M = a single low-confidence
+reading, a pass-A/pass-B disagreement not settled from the image at the resolution this scan allows, or a code
+that collides with a different value elsewhere (both readings kept, `key.tsv` lets `tools/decode_key.py`'s own
+`merge_key_row` combine them into `value1|value2`, auto-downgraded to M, rather than one silently overwriting the
+other). U = 2 codes (206 on m0113 L8, 836 on m0114 R2) neither pass could read at all; left unkeyed. Key source is
+`ours` per rule 10's key-source field: this key was rebuilt by us directly from the clerk's own contemporary
+worksheet, not a published or period key sheet.
+
+**The system.** A syllable-to-number nomenclator (not a letter-substitution cipher): most codes stand for a 1-3
+letter Portuguese syllable, a few for a short whole word (Rei, que, de, con). Codes run from 2 digits (11, 12, 20,
+25, 60...) to 4 digits (max confirmed 2111 for "ge"; one 4-digit code near the torn/worn page edge was revised
+from an original 9194 read down to 1194 on the strength of every other code in the draft falling under 2200, not
+independently confirmed). Homophones are common: "con" has three different codes (99, 1099, 1032), "ca" has two
+(984, 980), "pa" has one code (419) used nine times -- the single most repeated code in the draft, and the pair
+the archival catalogue note itself quotes ("pa-pa (419-419)"). Two faint ink crosses ("+") mark specific number
+groups on m0113 (already flagged by P4); one sits over the code=1087/"pe" position at line 6, which is why pass
+B's blind read of that spot saw only the cross and missed the gloss syllable beneath it -- code 1087 is otherwise
+confirmed 3 times (m0113 L6, L9; m0114 R4) all reading "pe".
+
+**Collisions (same code, different value at different occurrences, not resolved this pass):** 428 = "ar" (m0113
+L1, "confidenciar") vs "al" (m0114 R1, "sou-ber-al-ge-ma"); 25 = "do" (m0113 L5, "padrinho do princi[pe]",
+contextually solid) vs "elo"/"gle" (m0114 R3, low confidence both passes -- the weaker reading of the pair); 508 =
+"ke" (m0113 L11) vs "te" (m0114 R4), both well attested at their own position by both passes. Whether these are
+real re-use in the underlying nomenclator (a homophone table with only ~50-60 codes for many more sounds would
+need some sharing) or three coincidental misreadings at this scan's resolution is not established; a sharper image
+or a second sitting with the physical leaf would settle it.
+
+**What the draft says.** The gloss reads (positions still marked M in brackets): "con-fi-den-ci-ar" (confidenciar)
+/ "el Rei de-se-ja" (el Rei deseja, "the king wishes") / "con-[bi?]-dar Rei de" / "[li?]-la-li-a-pa-ra" / "pa-dri-
+nho-do-prin-ci" (padrinho do princi[pe], "godfather of the prince") / "pe-ra-pa-tol-ar" / "ca-es-cre" / "ou-prin-
+ce-[?]-que" / "se-es-pe-ra-pa" / "tol-ar-ca-es-cre-de" / "a-es-ke-reis-pei-to" / "ao-pa-pa-lo-go-que" (m0113); "sou-
+ber-al-ge-ma" / "con-[?]-das-in-man" / "as-[elo?]-pa-pa-di-ga" / "mo-pe-lo-te-lho" (m0114). This reads as scattered
+drafting fragments -- short phrases and syllable strings being assigned codes -- not a continuous letter; "padrinho
+do príncipe" ("godfather of the prince") is the one clearly legible phrase-length fragment, and it does not match
+any subject in m0112's cover letter (the Pope's missing reply, the Padroado dispute). **m0112 does not name a key,
+a cipher, or a correspondent for this draft**: it is an ordinary plaintext cover note about a different matter
+(obtaining a copy of a papal letter), signed "Caetano de Magalhães". Nothing on m0112 or the two draft leaves
+identifies who this nomenclator belongs to or what final letter (if any) it was used to encipher; the draft may be
+an unrelated scratch sheet kept in the same folder rather than a working copy of the covering letter's own cipher.
+
+**Rule 7 note:** this target has no `specs/antt-fcc-costacabral-1865.json`, so `tools/judge_plaintext.py` was not
+run. It would not apply as a gate in any case -- per COMMON item 3 (25 Sept 2026 addendum), the repository's only
+Portuguese corpus wired into the judge (pt18, 1808-1819 periodicals) is not built for 1865 usage and pt17 (Vieira)
+is explicitly noted as not a corpus for this period either; a judge PASS/FAIL here would not mean anything.
+
+Files: `passes/passA.tsv`, `passes/passB.tsv`, `disagreements.tsv`, `key.tsv`, `ciphertext.tsv`, `decode.json`,
+`reading.txt`, `reading_tokens.tsv`. No hosts contacted this pass (all work from the three images already on disk).

@@ -1,0 +1,26 @@
+page	line	pos	code_A	code_B	syll_A	syll_B	settled_as	how
+m0113	1	2	629	529	fi	fi	629	re-zoomed image (m0113_L1_zoom3.png): leading stroke reads as 6, not 5
+m0113	1	5	428	428	ar	ar	428/ar	code agrees; value collides with m0114 R1 pos3 (428/al) -- left unsettled, both in key.tsv
+m0113	2	4	103	103	se	te	103/se	kept "se" -- fits "el Rei deseja" (the king wishes), a plausible Portuguese phrase; both positions using code 103 kept "se"
+m0113	3	2	1124	1124	bi	Bri	1124/bi(M)	not settled, both passes low-confidence, kept A
+m0113	4	1	33	133	é	li	133/li(M)	kept B's digit (133): every other code in the draft is 2-4 digits with only one other 2-digit code (11), so 133 fits the pattern better than 33; syllable not independently confirmed
+m0113	6	1	1087	1087	pe	+ (cross mark, no syllable seen)	1087/pe(C)	code agrees; B saw only the leaf's known cross annotation at this position and missed the gloss beneath it -- code 1087=pe is independently confirmed 2 more times (L9, m0114 R4) with both passes agreeing
+m0113	6	4	115	115	tol	fol	115/tol(M)	not settled, each pass internally consistent (both occurrences, L6+L10) but disagrees with the other pass
+m0113	9	3	1087	1084	pe	pa	1087/pe(C)	kept A's code+value: 1087=pe is attested 3x total (L6, L9, m0114 R4), 1084 appears nowhere else
+m0113	10	6	374	374	de	ve	374/de(M)	not settled, single occurrence
+m0113	11	5	268	468	pei	pei	268/pei(M)	not settled, digit differs between passes, kept A
+m0113	12	1	1138	1138	ao	do	1138/ao(M)	not settled, code agrees, value does not
+m0113	12	3	419	449	pa	? (illegible)	419/pa(C)	kept A: 419=pa is the most repeated code in the draft (9 occurrences total including this one), far more likely than a novel 449; catalogue note also quotes "pa-pa (419-419)"
+m0113	12	5	9194	1194	go	? (illegible)	1194/go(M)	revised from A's original 9194: no other code in the draft exceeds 2111 (m0114 R1 "ge"), so 1194 is the more plausible digit string; not independently confirmed
+m0114	1	1	618	618	sou	lou	618/sou(C)	kept A: matches LANE R6 P4's independent earlier read (ROOM.md 25 Sept 2026), a third source
+m0114	1	2	323	323	ber	biz	323/ber(C)	kept A: matches LANE R6 P4's independent earlier read (ROOM.md 25 Sept 2026), a third source
+m0114	1	4	2111	411	ge	ge	2111/ge(C)	kept A: matches LANE R6 P4's independent earlier read (ROOM.md 25 Sept 2026, "sou-ber-al-ge-ma / 618-323-428-2111-742"), a third source agreeing against B
+m0114	2	2	836	836	? (illegible)	? (illegible)	836/unkeyed	both passes agree the syllable is illegible; code left unkeyed in key.tsv
+m0114	2	4	538	638	in	in	538/in(M)	not settled, digit differs between passes, kept A
+m0114	2	5	310	310	mau	man	310/man(M)	kept B (higher confidence, 0.8 vs 0.5)
+m0114	3	2	25	25	elo	gle	25/elo(M)	not settled, both passes low-confidence; value also collides with m0113 L5 (25/do), which is the better-attested reading of the pair
+m0114	3	4	419	619	pa	pa	419/pa(C)	kept A: catalogue note quotes this exact pair as "pa-pa (419-419)"
+m0114	4	2	1087	1087	pe	ne	1087/pe(C)	kept A: 1087=pe attested 3x total (m0113 L6, L9, this position), consistent
+m0114	4	3	550	550	lo	lu	550/lo(C)	kept A: 550=lo also attested at m0113 L12
+m0114	4	5	140	140	lho	le	140/lho(M)	not settled, single occurrence
+m0113	8	4	206	206	?ai (guess)	? (illegible)	206/unkeyed	B could not read it either; left unkeyed rather than keep A's uncertain guess

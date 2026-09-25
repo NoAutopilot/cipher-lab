@@ -1,0 +1,58 @@
+code	value	grade	source	note
+99	con	C	gloss	m0113 L1; 2 blind passes agree
+629	fi	M	gloss	m0113 L1; pass A 629 vs pass B 529, kept A (image re-checked, leading stroke reads as 6)
+737	den	C	gloss	m0113 L1 ("confidenciar")
+20	ci	C	gloss	m0113 L1+L5, both passes agree both times
+428	ar	M	gloss	m0113 L1 ("confidenciar"); collides below with 428=al (m0114 R1) -- same code, two values, not resolved
+428	al	M	gloss	m0114 R1 ("sou-ber-al-ge-ma"); collides with 428=ar (m0113 L1) -- both passes independently confirm the digits 428 at both locations, so this looks like a real drafting collision rather than a misread
+903	el	C	gloss	m0113 L2
+342	Rei	C	gloss	m0113 L2+L3, both passes agree both times
+456	de	C	gloss	m0113 L2+L3, both passes agree both times
+103	se	C	gloss	m0113 L2+L9; pass B read "te" both times, kept "se" (fits "el Rei deseja" contextually)
+870	ja	C	gloss	m0113 L2 ("deseja")
+1099	con	C	gloss	m0113 L3, distinct code from 99/1032, same value (homophone)
+1124	bi	M	gloss	m0113 L3; low confidence both passes (A "bi" 0.3, B "Bri" 0.2), not settled
+981	dar	C	gloss	m0113 L3
+133	li	M	gloss	m0113 L4 pos1; pass A first read this as code 33/"e" at low confidence, pass B read code 133/"li" at higher confidence (0.6); kept pass B's digit and syllable, not independently confirmed
+397	la	C	gloss	m0113 L4
+892	li	C	gloss	m0113 L4
+60	a	C	gloss	m0113 L4+L11, both passes agree both times
+419	pa	C	gloss	m0113 L4,L5,L6,L9,L12(x2) + m0114 R3(x2); the most repeated code in the draft (9 occurrences), both passes agree throughout; catalogue note quotes this pair as "pa-pa (419-419)"
+617	ra	C	gloss	m0113 L4,L6,L9
+135	dri	C	gloss	m0113 L5 ("padrinho")
+151	nho	C	gloss	m0113 L5 ("padrinho")
+25	do	M	gloss	m0113 L5 ("padrinho do princi[pe]", contextually solid); collides with 25=elo below
+25	elo	M	gloss	m0114 R3; low-confidence syllable both passes (A "elo" 0.2-0.6, B "gle" 0.2), collides with 25=do (m0113 L5) which is the better-attested reading of the two
+204	prin	C	gloss	m0113 L5+L8 ("padrinho do principe...", "prim/prin"); both passes agree both times
+1087	pe	C	gloss	m0113 L6+L9 + m0114 R4; both passes agree at L9 and R4; at L6 pass B saw only a "+"/cross annotation over this position and missed the syllable underneath (the draft is independently known to carry two faint cross marks, CLAUDE.md-style leaf annotations, not a cipher sign)
+115	tol	M	gloss	m0113 L6+L10; pass A read "tol" both times, pass B read "fol" both times -- internally consistent per pass, not resolved between them
+402	ar	C	gloss	m0113 L6+L10
+984	ca	C	gloss	m0113 L7; distinct code from 980, same value (homophone)
+988	es	C	gloss	m0113 L7,L9,L10,L11 (4x); pass B read "ed" at 2 of 4 occurrences but agreed "es" at the other 2
+1068	cre	C	gloss	m0113 L7+L10
+11	ou	C	gloss	m0113 L8
+673	ce	C	gloss	m0113 L8
+708	que	C	gloss	m0113 L8+L12
+980	ca	C	gloss	m0113 L10; distinct code from 984, same value (homophone)
+374	de	M	gloss	m0113 L10; single occurrence, pass B read "ve" instead, not resolved
+508	ke	M	gloss	m0113 L11; both passes agree "ke" here, but collides with 508=te below
+508	te	M	gloss	m0114 R4; both passes agree "te" here, but collides with 508=ke (m0113 L11) -- a real drafting collision, both readings well attested at their own position
+243	reis	M	gloss	m0113 L11; low confidence both passes (A "reis" 0.5, B "zis" 0.5), not settled
+268	pei	M	gloss	m0113 L11; pass A read code 268 (conf 0.5), pass B read code 468 (conf 0.5) for the same position -- digit not settled, kept pass A
+110	to	C	gloss	m0113 L11
+1138	ao	M	gloss	m0113 L12; pass B read "do" instead (same code), not resolved
+550	lo	C	gloss	m0113 L12 + m0114 R4
+1194	go	M	gloss	m0113 L12; pass A originally read 9194, pass B read 1194 -- kept pass B's digit as the more plausible one (9194 would be far outside the 2-4 digit range of every other code in the draft; ge=2111 is otherwise the highest), but this is a corrected reading, not a directly settled one
+618	sou	C	gloss	m0114 R1
+323	ber	C	gloss	m0114 R1
+2111	ge	C	gloss	m0114 R1; matches the catalogue-independent reading already on file (LANE R6 P4, ROOM.md 25 Sept 2026, "sou-ber-al-ge-ma / 618-323-428-2111-742"), a third independent source agreeing with pass A against pass B's 411
+742	ma	C	gloss	m0114 R1
+1032	con	C	gloss	m0114 R2; distinct code from 99/1099, same value (homophone)
+407	das	C	gloss	m0114 R2
+538	in	M	gloss	m0114 R2; pass B read code 638 for the same position, not resolved
+310	man	M	gloss	m0114 R2; pass A read "mau", pass B read "man" at higher confidence (0.8), kept pass B
+12	as	C	gloss	m0114 R3
+926	di	C	gloss	m0114 R3; matches catalogue quote "di-ga-mo (926-923-1212)"
+923	ga	C	gloss	m0114 R3; matches catalogue quote "di-ga-mo (926-923-1212)"
+1212	mo	C	gloss	m0114 R3/R4 wrap; matches catalogue quote "di-ga-mo (926-923-1212)"
+140	lho	M	gloss	m0114 R4; pass B read "le" instead, not resolved
