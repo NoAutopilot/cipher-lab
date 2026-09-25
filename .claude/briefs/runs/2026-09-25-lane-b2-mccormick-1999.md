@@ -1,0 +1,6 @@
+LANE B2 breadth worker bMCC: mccormick-1999. Sonnet (claude-sonnet-5). Cap $3 or 30 minutes, whichever first. No subagents, no network.
+Common rules: `.claude/briefs/runs/2026-09-25-lane-b2-common.md` (read it first; it governs) and `.claude/briefs/runs/2026-09-25-lanes-7b-COMMON.md`.
+
+Spec: specs/mccormick-1999.json (transcription only, Schmeh's typing of the FBI images: rule 2, every result conditional on it). Run `cheap_tests_in_order[0]` and its matched control, nothing else. Write both numbers into the spec's `cheap_test_done` (date, method, script path). Report in five lines; do not run test 2; rule 10 wording.
+
+Test 1, made measurable: catalogue every repeated token of 2+ characters across both notes (position, count) and compute three numbers -- (a) vowel share of letters, (b) share of the text covered by repeated n-grams (n=3..6), (c) IC -- for the notes and for matched controls at the same N: English prose, the same English with vowels dropped (a simple vowel-dropping shorthand), and English letters shuffled (tools/data en texts; no fetch). Report where the notes fall against each control, per number, side by side. A table of the top 20 repeated tokens goes to specs/cheap-tests/mccormick-1999/. Do not attempt a decipherment.
