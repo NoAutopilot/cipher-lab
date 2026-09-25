@@ -765,3 +765,108 @@ No key_body.tsv and no body decode job were written, because no value reaches S 
 plaintext and corpus_T, but a simple homophonic design (N=540, K=82), not J7's nomenclator design (not rerun: 16 x
 400k iterations of nomenclator_anneal.py). Blind 94.4/88.3/90.7%. The loop on seed 2 went 88.3 -> 95.9 -> 97.0, and
 24 blind restarts reach 95.9: **no gain beyond compute** at this N and K. Nothing here bears on the 5549 body.
+
+## WVO 5551 check-solved (25 Sept 2026)
+
+Worker TX-WV5551 (Sonnet, LANE TX, cap $5). Per `.claude/briefs/runs/2026-09-25-lane-tx-wv5551.md` and
+`.claude/briefs/check-solved.md`. Target: WVO briefnr 5551, Jan (VI) van Nassau to Willem van Oranje, Keulen
+(Koln), 17 April 1574, KHAG A 11/XIV A/5-20 -- the "already-queued NB6" item named but not covered by this
+folder's 24 Sept check-solved sweep above (that sweep's table lists only 5200/5207/5213/5218/5221/5222/5549).
+**Does not decode, does not classify novelty.**
+
+**Verdict: open.** No solution, key, plaintext or documented attempt found in six sources, read directly by
+this worker (not inherited from another worker's citation):
+
+1. **WVO record, read directly** (`resources.huygens.knaw.nl/wvo/app/brief?nr=5551`). Correspondent Jan van
+   Nassau, 17-4-1574, Keulen (Koln). Inhoud: "Bericht over het ongeluk dat Lodewijk van Nassau, Hendrik van
+   Nassau en Christoff van Wurttemberg is overkomen en hun waarschijnlijke dood" -- the letter carrying Jan's
+   first report to Willem of the probable deaths of their brothers Lodewijk and Hendrik (and of Christoph of
+   Wurttemberg) at Mookerheide (14 April 1574). Opmerkingen: "Twee regels in cijferschrift." -- no
+   oplossing/opgelost/ontcijferd word. **Brongegevens carries no GPA/GPAS/JC edition code at all** -- only
+   "Koninklijk Huisarchief Den Haag, A 11/XIV A/5-20, origineel" -- unlike this circle's solved/print-bundled
+   siblings (5200, 5218, 5222), which do cite Groen. This is the first direct signal that Groen does not print
+   this letter (rule 10 caveat: WVO's own citation apparatus is not exhaustive, per LESSONS.md's own note that
+   three of this same circle's letters were miscategorised as "inferred" on 24 Sept 2026).
+2. **Groen van Prinsterer, *Archives ou correspondance inedite*, 1re serie, tome IV (1572-1574), full index read
+   directly** (`www.dbnl.org/tekst/groe009arch04_01/index.php`): searched every entry between Lettre CDLXXXIII
+   (13-15 April, Orange to Jean/Louis/Henri) and CDXCII (Orange to Jean, "Incertitude sur le sort de leurs
+   freres"), and the whole volume's index for any letter *from* Jean de Nassau to the Prince -- **found exactly
+   one** ("Le Comte Jean de Nassau au Landgrave Guillaume de Hesse: Dillenbourg, 5 sept... Relative a la St.
+   Barthelemy", an unrelated correspondent and date). No letter from Jean matching 17 April 1574/Keulen/the
+   Mookerheide news exists in tome IV's index.
+3. **Groen tome V (1574-1577), index read directly** (`groe009arch05_01/index.php`): starts at Lettre CDXCIII,
+   shortly after Mookerheide (CDXCVI already mentions "mort du Roi de France", 30 May 1574, dating tome V's
+   opening stretch to roughly this window); no entry there from Jean de Nassau to the Prince at this date either
+   -- confirms the IV/V boundary falls in this exact gap without covering 5551.
+4. **Groen, *Archives*, Supplement (1847), read directly, items 45-57** (Nov 1573-July 1574 span,
+   `groe009arch09_01_0048.php` through `_0057.php`, the same volume that carries 5549 as item 45): item 46 (Jean
+   to Prince, "Nouvelles") is still dated 1573 (no `[1574]` marker before it, which appears only at item 47);
+   items 47-50 and 52-55, 57 read directly for their dates -- 4 April 1574 (item 49, "camp de Cartilz"), 31 May
+   1574 (item 50, mentions Duke Christoph *of Mecklenburg*, a different Christoph from 5551's Christoph of
+   Wurttemberg), 7 June 1574 (item 52, a Nassau children's condolence letter on the "défaicte... a Mocken"), 10
+   July 1574 (item 54/page 0057 -- numbering per the fetched pages). **None is dated 17 April 1574 or from
+   Keulen.** **Search gap:** items 48 (`_0051.php`) and 53 (`_0056.php`) could not be fetched -- two attempts
+   each (`SSL_ERROR_SYSCALL` then `getpeername() failed`, the one-retry-after-a-pause limit then reached, per
+   the good-citizen rule) -- their dates are unknown; by the surrounding sequence (49=4 Apr, 50=31 May) item 48
+   falls somewhere in that gap and could in principle be 17 April, though its index one-liner ("La Comtesse
+   Julienne de Nassau au Prince d'Orange. Felicitations") names a different sender (Julienne, not Jean) and a
+   different subject (congratulations, not the Mookerheide report) -- inconsistent with 5551's content summary,
+   so this is a low-probability gap, not a live candidate, but it is unread and flagged as such.
+5. **DECODE.** `sources/decode/records-non-decrypted-2026-09-24.tsv` and `records-decrypted-2026-09-24.tsv`
+   grepped for nassau/oranje: zero hits in either (no login used, listing only).
+6. **Solver repositories**, fresh shallow clones this pass (25 Sept 2026): `dbourdeau/cyphersolver` and
+   `aaymeloglu/unsolved-ciphers`, grepped for `5551`, nassau, oranje, mookerheide, mook. No folder or file names
+   this letter; every hit is a coincidental digit substring (e.g. "...5551..." inside an unrelated cipher-group
+   transcription in `sauli1579` and `labbe1582`) or an unrelated correspondent. Neither repository has this
+   target.
+7. **General web search** (WebSearch, two queries: Dutch terms + French terms naming the date, place and
+   Mookerheide): no hit naming this letter, its date or a decipherment; only general Dutch Revolt history pages
+   (Wikipedia, historiek.net) and Gachard's *Correspondance de Guillaume le Taciturne* (Willem's own outgoing
+   letters, IA `correspondanced01willgoog` -- checked by title/snippet only, not full-text searched this pass
+   for a 17 April reply that might reference receiving 5551; **flagged as a further search gap**, not run for
+   budget).
+
+**Copy status: copy-free.** PDF fetched directly (`resources.huygens.knaw.nl/media/wvo/images/05000-05999/05551.pdf`,
+4 pages, 3.12MB), rendered to `images/05551_p1.jpg`..`p4.jpg` (150dpi; no PDF-to-image tool was on disk, installed
+`pymupdf`/`pillow` via pip this pass) and viewed by eye, page by page.
+
+**Eye-check of the leaf, confirming WVO's own Opmerkingen exactly.** p1 (dated "17 April 74" in the corner) and
+p2 are continuous clear German prose -- no cipher anywhere on either page. **p3's top two lines are the "Twee
+regels in cijferschrift"**, read at 300dpi/2.5x crop zoom
+(`77.81.21.121.106.6.2.101.92.136 Van 11.7.111.83.4.145. will J[hr]o [Furstl?] / 8.86.89.84.5.31.112.103. vff
+104.146.127.85.29.140.[?]eren 137.126. hie[r] in ...`, not a graded transcription, a read for extent/design
+only) -- a run of numeral groups interleaved with a handful of clear German words (Van, will, vff, hieryn),
+consistent with a nomenclator over German, the same shape LESSONS.md and this folder's own J1/J5I sections
+describe for the rest of the circle. The rest of p3 (after these two lines) and all of p4 are clear German
+(p4 is the address leaf, "A Monseigneur / Monseigneur le Prince D'Oranges", with the wax seal remnant) -- so
+the cipher really is confined to two lines, exactly matching the record's own note, not an undercount the way
+5221/5549 were flagged as possibly under-described in this folder's C1 section. **No Groen or other printed
+edition is bundled into this PDF scan** (unlike 5218 and 5222 in this same folder, C1's flag above) --
+consistent with finding 1's Brongegevens gap.
+
+**Which key is the natural first test: Lodewijk's 1574 table (`../lodewijk-van-nassau-1573-74/key.tsv`), not
+`key_1572.tsv`.** `key_1572.tsv`'s highest row is 98 (multiples of 3 only); 5551's two lines run well past that
+(106, 111, 112, 121, 126, 127, 136, 137, 140, 145, 146) and are not multiples of 3, ruling that table out as a
+clean fit the way it was already ruled out for 5218/5222 (J1 section 2 above). By contrast, of the ~30 distinct
+numeral codes read off these two lines, the great majority -- 2, 4, 5, 6, 7, 8, 11, 18, 21, 29, 31, 77, 81, 83,
+84, 85, 86, 89, 92, 101, 103, 104, 106, 111, 112, 121, 136 -- are already rows in `../lodewijk-van-nassau-1573-74/key.tsv`
+(the table this circle recovered by aligning WVO 4613/4615, most rows graded C, "matches plaintext Nx of Ny"),
+checked one code at a time against that file directly (`awk` lookup, not eyeballed). Only the highest values
+(126, 127, 137, 140, 145, 146) are absent from that table's 140 rows. This is a strong, concrete overlap --
+not itself a decode, and this worker did not attempt one (out of this brief's scope) -- but it is a much
+better-targeted first test than a fresh cryptanalytic attempt: apply `../lodewijk-van-nassau-1573-74/key.tsv`
+to these two lines before anything else. Legibility: the numerals themselves are clearly formed and
+unambiguous at this zoom (no illegible/damaged spots seen in the two lines); a solver pass should be able to
+transcribe them without difficulty.
+
+**Kind: recovery** (a key already on file in a sibling folder is the first candidate, not blind cryptanalysis,
+per LESSONS.md section 2 -- exactly the same shape as this folder's 5549 finding).
+
+**Nomination: `ciphers/jan-van-nassau-1572-75`, item 5551, open, copy-free, kind recovery.** QUEUE.md is out
+of this worker's file scope (COMMON rule 3) -- the lane orchestrator should update the WV1/NB6 row with this
+verdict and the key lead.
+
+Requests: resources.huygens.knaw.nl 2 (record page, PDF; >=2s apart), www.dbnl.org 15 attempted / 11
+succeeded (4 failures: two pages each tried twice, `_0051.php` and `_0056.php`, >=2s apart, one retry per the
+good-citizen rule then stopped), WebSearch 2, github.com 2 fresh shallow clones (grep only). No DECODE login
+(listing only). No subagents.
