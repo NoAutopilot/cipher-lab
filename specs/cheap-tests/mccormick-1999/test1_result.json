@@ -1,0 +1,63 @@
+{
+ "spec": "specs/mccormick-1999.json",
+ "test": "cheap_tests_in_order[0] (brief-specified measurable version)",
+ "date": "25 Sept 2026",
+ "N_combined_letters": 746,
+ "top20_repeated_tokens_file": "top20_tokens.tsv",
+ "notes_target": {
+  "vowel_share": 0.2453,
+  "ngram_coverage_n3": 0.8432,
+  "ngram_coverage_n4": 0.6609,
+  "ngram_coverage_n5": 0.4678,
+  "ngram_coverage_n6": 0.2828,
+  "ic": 0.08927,
+  "n_letters": 746,
+  "note1_only": {
+   "vowel_share": 0.2343,
+   "ngram_coverage_n3": 0.703,
+   "ngram_coverage_n4": 0.594,
+   "ngram_coverage_n5": 0.4496,
+   "ngram_coverage_n6": 0.2807,
+   "ic": 0.08515,
+   "n_letters": 367
+  },
+  "note2_only": {
+   "vowel_share": 0.2559,
+   "ngram_coverage_n3": 0.7282,
+   "ngram_coverage_n4": 0.4591,
+   "ngram_coverage_n5": 0.2401,
+   "ngram_coverage_n6": 0.1478,
+   "ic": 0.09543,
+   "n_letters": 379
+  }
+ },
+ "control_A_english_prose_n3seeds": {
+  "vowel_share": 0.3794,
+  "ngram_coverage_n3": 0.7458,
+  "ngram_coverage_n4": 0.4688,
+  "ngram_coverage_n5": 0.3096,
+  "ngram_coverage_n6": 0.2525,
+  "ic": 0.0674,
+  "n_letters": 746.0
+ },
+ "control_B_english_vowels_dropped_n3seeds": {
+  "vowel_share": 0.0,
+  "ngram_coverage_n3": 0.7444,
+  "ngram_coverage_n4": 0.3427,
+  "ngram_coverage_n5": 0.1644,
+  "ngram_coverage_n6": 0.0916,
+  "ic": 0.0823,
+  "n_letters": 746.0
+ },
+ "control_C_english_letters_shuffled_n3seeds": {
+  "vowel_share": 0.3794,
+  "ngram_coverage_n3": 0.4124,
+  "ngram_coverage_n4": 0.0371,
+  "ngram_coverage_n5": 0.0,
+  "ngram_coverage_n6": 0.0,
+  "ic": 0.0674,
+  "n_letters": 746.0
+ },
+ "control_source": "tools/data/pg1661_holmes.txt (Sherlock Holmes, Project Gutenberg #1661), 3 random-offset cuts (seeds 1,2,3), no network fetch",
+ "note_on_tokens": "tokens are maximal runs of letters split on any non-letter char (space, hyphen, paren, digit, punctuation); distinct from the three-numbers letters-only fold used for vowel/ngram/IC, which strips all non-letters and concatenates within each note"
+}
