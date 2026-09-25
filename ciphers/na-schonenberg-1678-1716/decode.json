@@ -1,0 +1,15 @@
+{"target": "ciphers/na-schonenberg-1678-1716",
+ "note": "NA 1.02.04 invnr 63, VX-RD01 25 Sept 2026. Key built from the leaf's own interlinear Spanish gloss (period key, L01-L14); L18-L19 carry no gloss on the leaf and are the target of this job.",
+ "jobs": [
+  {"ciphertext": "ciphertext.tsv", "key": "key.tsv", "format": "tsv", "style": "spaced",
+   "reading": "reading.txt", "tokens": "reading_tokens.tsv",
+   "unkeyed_value": "[?]", "unkeyed_grade": "U",
+   "header": [
+     "# NA 1.02.04 invnr 63 (Schonenberg chancery to dona Antonia de Albanylla, z.d.), decoded 25 Sept 2026 (VX-RD01).",
+     "# L01-L14 carry the leaf's own contemporary interlinear Spanish gloss (a period decipherment); this reading",
+     "# regenerates that gloss through key.tsv (grade C/M per code, see key.tsv's own note column) as a check, not",
+     "# a fresh decipherment. L18-L19 carry NO gloss on the leaf -- their reading is this worker's own application",
+     "# of the key recovered from L01-L14. U = code never seen in the gloss (left [?]).",
+     "# tokens {total}: {HCSMIU}"
+   ]}
+ ]}

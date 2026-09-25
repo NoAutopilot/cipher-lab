@@ -1,0 +1,22 @@
+# NA 1.02.04 invnr 63 (Schonenberg chancery to dona Antonia de Albanylla, z.d.), decoded 25 Sept 2026 (VX-RD01).
+# L01-L14 carry the leaf's own contemporary interlinear Spanish gloss (a period decipherment); this reading
+# regenerates that gloss through key.tsv (grade C/M per code, see key.tsv's own note column) as a check, not
+# a fresh decipherment. L18-L19 carry NO gloss on the leaf -- their reading is this worker's own application
+# of the key recovered from L01-L14. U = code never seen in the gloss (left [?]).
+# tokens 279: H 0, C 95, S 0, M 123, I 0, U 61
+L01	n o a b y e [23] [[blot]] d o n [24] b e
+L02	a a d e n e r [29] [34] s [25] a r [95] e [94] u e
+L03	p a d e a b e r m u d a x o e r [51] e
+L04	g o u [98] [82] n [23] o [14] o n l a r [33] y n e n
+L05	r [)3] a n z y [11] r [26] u e a y [94] e r a b r a
+L06	n m e x o r e s p e n o c o n a n r y a
+L07	l a [94] u u [5] y b y e [23] e d e l n o r
+L08	[29] e y d e y [51] a [65] [98] a [25] u [5] s [23] s a r
+L09	a n d e o [14] a [94] y o [23] a [23] a a [11] r [26] e
+L10	r u y p a e d a n r c y r y r b
+L11	p a r a y a s r e e u n a d [34] a d [5]
+L12	l [34] j [24] r e [94] s o n d [82] n [33] y a a
+L13	[25] [96] n d r a r [24] [65] a e e n [51] e [96] [23]
+L14	s o b [[blot]] r e r c r y [)3] o n n e s [95] [34]
+L18	[61] o r m a
+L19	a d [24] [[n]] [34] a n [51] o [?9] y a d e a [65] b a n y p [65] [11]

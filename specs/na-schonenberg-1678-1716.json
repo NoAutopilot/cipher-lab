@@ -1,0 +1,19 @@
+{
+ "slug": "na-schonenberg-1678-1716",
+ "name": "NA 1.02.04 invnr 63 (F. van Schonenberg chancery to dona Antonia de Albanylla, z.d., 1702-1716), the two unglossed closing cipher lines",
+ "language_candidates": ["es"],
+ "ciphertext": "ciphers/na-schonenberg-1678-1716/ciphertext.tsv (VX-RD01, 25 Sept 2026, two blind Sonnet subagent passes, passA/passB.tsv, reconciled by this worker with a pixel-verified re-check of one clean 20-group/20-letter glossed line and the two unglossed target lines)",
+ "ciphertext_source": "service.archief.nl fc3a8d42-b89e-4715-9753-0320355365c7, images/NL-HaNA_1.02.04_63_0001.jpg",
+ "alphabet": "2-digit homophonic nomenclator plus ~9 drawn-shape signs (triangle, circle, square, tilde, X, Z, T, E-like, n-with-ring) and a tick mark (comma- or paren-shaped) before or after some digits that changes the code",
+ "constraints": [
+  "key source: period -- the leaf's own contemporary interlinear Spanish gloss over cipher lines L01-L14 (~246 of ~266 body groups), read by this worker via two independent blind transcription passes and reconciled; NOT a fresh cryptanalytic break of the glossed stretch",
+  "L18 and L19 (the two lines after the plain word 'forma.', before the address) carry NO gloss on the leaf at all -- their reading is this worker's own application of the key recovered from L01-L14",
+  "only 29 of the ~106 distinct codes seen on the leaf reach grade C (>=75% agreement across >=2 glossed occurrences, or this worker's own pixel-verified single-line exact match); the rest are M (weak plurality) or unkeyed (no majority, or never glossed) -- most of L18/L19's codes fall in the weak/unkeyed tier, so the candidate below is exactly what an incomplete key produces, not a claimed reading",
+  "candidate below is L18+L19 concatenated, unkeyed [?] tokens dropped (9 of 28 tokens, 32%)"
+ ],
+ "cheap_tests_in_order": [
+  "decode L18+L19 against the key built from L01-L14's gloss and judge as Spanish (VX-RD01, 25 Sept 2026) -- expected weak/negative given the key's own coverage gaps, not a positive result on its own"
+ ],
+ "judge": {"language": "es", "min_word_cover": 0.4},
+ "written": "25 Sept 2026, VX-RD01 (LANE VX), for job 3 of .claude/briefs/runs/2026-09-25-lane-vx-rd01.md"
+}
