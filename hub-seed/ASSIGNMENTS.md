@@ -482,3 +482,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T17:48Z	session_01UP2nZhnHzDiGi7HR29obCr	LANE R6 Y9 done $4.77 N, archived	berthier	no crib fit
 2026-09-25T17:45Z	session_01EsMqJkeG1n6MypgrFwF6sN	LANE R6 CM (Opus, cap 10)	salviati code+mark at N=2820	brief 2026-09-25-lane-r6-cm-salviati-codemark.md
 2026-09-25T17:45Z	session_0165uktQtXTmrEztFN5qpUD4	LANE R6 M2 (Fable, cap 15)	mercy graded reading	brief 2026-09-25-lane-r6-m2-mercy-read.md
+2026-09-25T17:53Z	session_017rxxceHwgprCiwpPHqyfyy	done	bCPH copenhagen-1835 test 1	pushed 80bba20, a431a02
+2026-09-25T17:53Z	session_01AxNo7QrGTDFfx5FzTXLJnc	done	bPOL pollaky-1865-1875 test 1	pushed 44f757e
