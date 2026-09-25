@@ -90,6 +90,18 @@ identified, the catalogue's date and senders corrected. The "first verified N3" 
 Orange 1572 detector candidate also fell (partial decipherment printed 1842). Zero unique solves today; two
 over-claims prevented by the gates before anything left the repository.
 
+## Parent handoff (owner account, session_01FXDfYR3CvGk7tcid1Aav1n), from 25 Sept 2026 00:30 UTC, kept current
+
+Role brief: `.claude/briefs/parent.md`. Check-in: a self-bound send_later titled "Parent check-in: lanes LX, DX, OX",
+hourly, re-armed at each firing (find the current id with list_triggers). Lanes on this account (briefs
+`.claude/briefs/runs/2026-09-25-lane-{lx,dx,ox}-*.md`): LX antt-linhares-chave (session_01UXTpujdthrPiBDUG57oNwf;
+book identified as Vieyra 1809 Part I, m0002 decoded in part), DX DECODE (session_01LgrmyB7HMcMaeLTRNbEqb4; login
+works, full-size images and documents still permission-blocked, ASKS 42/43; see its handoff), OX orphaned open targets
+(session_01BE3g8tWbS4T24KXMpShHt4). Owner's standing decisions, 25 Sept 2026: no history purge (name, emails and images
+may stay; secrets may not); spend is not a restriction on the Max plan, the rate limit is; a missing credential never
+blocks, route around it; all credentials fixed on this account at 00:47 UTC. The other account's parent (7b) and its
+lanes (R5, N4, B, V2) are idle until its window resets 26 Sept 13:00 UTC; their targets are theirs.
+
 ## Parent handoff (cipher-lab-7b, session_01K7ZbE95o1pUW5gof8VA5PR, from 18:45 UTC 24 Sept 2026; 7a was session_01EFmUvFAifLKGdBSsW9mjEG, 23 Sept 15:12 to 24 Sept 18:45), kept current
 
 The parent orchestrator runs the hourly check-in (trigger trig_01Ks1wNXPjfn7XW9EucmV9ru (parent 7b, 30-minute cadence while a worker runs, 90 otherwise), self-bound, re-armed by send_later at every firing; its prompt is the

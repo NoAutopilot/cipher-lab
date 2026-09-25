@@ -106,6 +106,28 @@ A subject line, a recipient line and a sign-off left blank for the person are pa
 carries the institution's public contact address (read from its own contact page, with the date) so the person can send
 without looking it up; a private individual's address never goes in the file (24 Sept 2026, owner: "I gotta have an email address"). A negative with a matched control is a contribution too.
 
+## Operating model (read before orchestrating)
+
+Roles: one **parent orchestrator** per account (the session the owner talks to; `.claude/briefs/parent.md`) opens
+**lanes**; each lane has an Opus **lane orchestrator** that writes job briefs to `.claude/briefs/runs/` and runs
+Sonnet **workers**, which use subagents for independent passes; **verifiers** are always separate sessions from
+solvers. Every session coordinates through `ROOM.md` (claim before work, done when stopping) and schedules its own
+check-ins with send_later; nothing polls. State lives in git: `STATUS.md` holds the "Parent handoff" section, the
+"Lane structure" table and one "LANE <X> handoff" per closed lane, below the results log, so read the whole file,
+not the first screen. The rate-limit rule is BUDGETS.md's scaling rule (`allowed_warning` anywhere: no new workers
+anywhere). Nothing is billed on the owner's Max plan; dollar figures measure the rate-limit window.
+
+Loops that run outside this repository and write back into it:
+- **Second opinions**: a scheduled ChatGPT task reads `SECOND-OPINIONS-QUEUE.tsv` and answers each queued prompt as an
+  `[SO-<label>]` pull request (`tools/second_opinion_runner_prompt.md`). Lanes queue a reading after the verifier
+  gives N3 or better; the parent marks it posted; a verifier checks every citation.
+- **Local runners** on the owner's computer answer `JSTOR-QUEUE.tsv` and `LOCAL-QUEUE.tsv` through his logged-in
+  browser (`tools/jstor_runner_brief.md`, `tools/local_runner_brief.md`).
+- **Routines**: the weekly retrospective, and "Cipher Lab: breakthrough alert (email)", which the parent fires for a
+  real result.
+Accounts: no account sees another's sessions or triggers; each parent reads the other's handoff and ROOM lines, and
+takes none of its targets.
+
 ## Pipeline (who hands what to whom)
 
 1. **Scout** (`.claude/workflows/scout.js`, or a worker with the same brief) finds candidates, checks status at
