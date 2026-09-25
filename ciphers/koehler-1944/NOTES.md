@@ -196,3 +196,9 @@ exit code: 0
   target's letter counts inside the keyed-running-key band and outside the uniform one-time-key band, so a
   hand-made non-uniform key is not excluded. Cheap remaining B' variants, each one box: `--param arith=beau`, a
   German key (`kcorpus=tools/data/de20`), an English word list; otherwise family C or A next, as GOLD-2A said.
+- GOLD-B2D (25 Sept 2026): family B'' (general permuted tableau) is built as `tools/families/permuted_tableau.py` and its
+  first sub-family B''-c (free cipher-side permutation) reads its matched control at 9.5 pct (7.4/12.9/8.1, gate 0.5 not
+  met, target not run): at 924 letters neither a sum-stream n-gram proxy nor an open-tableau beam identifies S3, and the
+  decoder objective is climbable only within about 3 swaps of the truth (HYPOTHESES.md "Family B'', permuted tableau").
+  Park B'' unless a search with the decoder's power at the proxy's price appears; GOLD-K3's keyword-restricted cipher-side
+  placements are the live corner of the cipher-side family.

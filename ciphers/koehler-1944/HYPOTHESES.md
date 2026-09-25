@@ -531,6 +531,100 @@ keyed_running_key --corpus tools/data/de20 --param kcorpus=tools/data/nl_dev --p
 
 -- GOLD-K1 (Sonnet, session_01WDJiUb1ijocbB3N3LtsLWk), 25 Sept 2026
 
+## Family B'', permuted tableau (GOLD-B2D), 25 Sept 2026, 21:39-22:05 UTC
+
+Worker GOLD-B2D (Fable, session_01GvGAepME5fvmUDuaJuc9cA), brief `.claude/briefs/runs/2026-09-25-lane-gold-c3-koehler-bprime2-design.md`.
+Family B'' is c = S3(S1(p) + S2(k)) mod 26 with S1, S2, S3 free permutations; this job built the tool for the first sub-family
+B''-c (S1 = S2 = identity, S3 free: a free permutation on the cipher side of a standard running-key square, equivalently
+c' = S3^-1(c) is a standard-tableau running-key ciphertext) and ran its matched control. GOLD-K3's `mixed_tabula(..., "cipher")`
+(pushed df3f7f9 while this job ran) is the keyword-restricted instance of the same tableau; `perm_tabula` reproduces it exactly
+for every keyword under vig/beau/varbeau (checked on `koehler`), so the two modules agree where they overlap.
+
+**Tool.** `tools/families/permuted_tableau.py` (registered in `family_run.py`; offline test `tools/tests/test_permuted_tableau.py`,
+27 s): `perm_tabula(S1, S2, S3, arith)` in `mixed_tabula`'s dict shape, accepted by `running_key.key_of`, `encipher`, `beam_decode`
+unchanged. Search, three stages: (1) the sort-match start (ciphertext letters by count matched to the sums s = p + k by the
+predicted conv(de20 unigram, nl20 unigram)); (2) simulated annealing over S3 (swap 80 pct, 3-cycle 20 pct; T0 = median |delta| of
+200 random swaps from the start, measured per run at 10.5-13.8, geometric to T0/200; 30,000 evaluations per chain, stop after
+6,000 non-improving; 3 chains, chain 1 from the sort-match start, 2-3 random) under a CHEAP PROXY objective; (3) the top 3 distinct
+chain winners rescored by the two-stream beam decoder on message 1's first 140 letters at ANNEAL settings (order 5, beam 80, word
+boundaries on, LM_p de20, LM_k nl20), the best decoded on all five messages at the STANDARD settings (order 6, beam 300), pooled
+joint log-likelihood per letter as the family score, comparable to GOLD-2C's band. The brief's objective (the decoder itself)
+was measured first and does not fit: **1.59-1.80 s per evaluation** at anneal settings (order 5, beam 80, 140 letters), so 1,500-3,000
+evaluations per chain x 3 chains x 3 seeds is 4-7 hours of decoder time, beyond a 90-minute box; the brief's "cheaper objective"
+clause was used. The proxy (the brief's option 2, made primary): the n-gram log-likelihood of c' = S3^-1(c) under the empirical
+n-gram distribution of the SUM stream s = p + k, built once by adding the training de20 and nl20 texts letter by letter mod 26 at
+3 random offsets (6.7M sum n-grams, order 4, add-0.5 smoothing, 6 s to build, pure Python since this container has no numpy);
+delta-scored over the 909 windows a move touches, **0.12-0.15 ms per evaluation**. Two more search modes were built and measured
+when the proxy failed (below): `search=beam`, an open-tableau beam decoder that carries a partial S3 in every hypothesis (26
+open positions of 676 (p, k) options each, the rest on the mapped sum line; contexts reset per message, the mapping persists), and
+`refine=ROUNDS`, a decoder-guided greedy over swaps proposed by proxy delta plus random swaps.
+
+**Control (rule 3), `family_run.py --gate 0.5`, seeds 1-3** (row in the table below, 21:56 UTC; log
+`scripts/permuted_tableau_control_seeds1-3.log`): German plaintext windows at 237/178/140/140/229 from one de20 book, key windows
+from one held-out nl20 book, S3 uniformly random from 26!, both books out of the models and out of the proxy table. About 95 s per seed.
+
+| seed | S3 (control) | sort-match start, letters of S3 correct (exact / under best shift) | best chain, letters correct (exact / shift) | chain proxy scores | rescore winner msg1[:140] joint ll/letter | pooled plaintext recovery | pooled joint ll/letter |
+|---|---|---|---|---|---|---|---|
+| 1 | eclbjfrqgxszwvukdhioytnmap | 2 / 4 | 1 / 5 | -11742, -11736, -11747 | -3.426 | **7.4 pct** | -3.475 |
+| 2 | dczjkyepgrhwuaxiolqmnfvsbt | 3 / 4 | 8 / 8 | -11666, -11654, -11650 | -3.340 | **12.9 pct** | -3.463 |
+| 3 | fjqdlstonbaxickyemvuzpwghr | 2 / 3 | 3 / 3 | -11712, -11693, -11714 | -3.372 | **8.1 pct** | -3.47 |
+
+**CONTROL mean 9.5 pct (7.4-12.9) on 3 seeds; GATE 0.5 NOT met; the target was not run** (exit 3). Chance is 3.8 pct; the anneal
+reads a random cipher-side permutation only slightly above chance. Neither of the two bands nor the target was run, per the brief
+(bands after the control clears). The pooled scores -3.46 to -3.475 sit at GOLD-2C's noise band (-3.507/-3.544) and 0.3-0.45 nats
+below what the true S3 reads (controls -3.01 to -3.18 for a known tableau): the identifiability is there, the search does not reach it.
+
+**Why the proxy fails at 924 letters (`scripts/permuted_tableau_landscape.py`, `.out`, seed 1).** At orders 2 and 3 the anneal's winner
+OUTSCORES the true S3 under the proxy (order 2: true -5953.0, anneal -5934.1, random mean -6052; order 3: true -8866.7, anneal
+-8825.9) and at order 4 it matches it (true -11760.4, anneal -11768.6) with 4/26 letters right: the marginal n-gram statistics of
+924 letters of a sum stream do not contain S3, which is GOLD-2C step 1's finding (the profile sits at the keyed band's median) one
+order up. The same proxy does identify S3 once the text is long enough: English (Holmes plain x Moby-Dick key, order 3) 3/26 at
+2,000 letters, 26/26 at 6,000 (one chain) and 26/26 at 8,000 (the offline test, best of two chains). **The proxy needs roughly
+5,000 or more letters; the target has 924.** Adding pairings or evaluations cannot change that (the table is not the limit, the
+target is).
+
+**Why the decoder objective cannot be searched from far away.** Landscape at anneal settings on control seed 1, msg1[:140]: true S3
+-3.336; 1 random swap away -3.475 / -3.430; 2 swaps -3.479 / -3.448; 3 swaps -3.504 / -3.346; 5 swaps -3.436 / -3.518; 8 swaps
+-3.501 / -3.523; 13 swaps -3.555 / -3.611; a random S3 -3.615. A steep hill within 1-3 swaps of the truth (0.1-0.14 nats per letter
+per swap, 14-20 nats over 140 letters, unmistakable), flat beyond about 8 swaps. Full 325-swap neighbourhood of seed 2's best
+start (8/26 correct, -3.340; `scripts/permuted_tableau_nbhd.py`, `_nbhd_seed2.out`, 3 processes, 1.6 s per evaluation): of the 17
+swaps that add a correct letter, every one LOWERS the objective (best -3.363); of the 9 swaps that raise it (best `ci` -3.296), none
+adds a correct letter and 6 remove one. So a greedy or an anneal on the decoder objective from 8/26 walks away from the truth; the
+hill is only climbable from a start with about 20 or more letters right, and no cheap start gives that (sort-match 2-3/26).
+`refine=25` (8 decoder-scored proposals per round) accordingly stopped in round 1 on seeds 1 and 2.
+
+**Open-tableau beam (`search=beam`, seed 1).** Beam 500 / per_open 20: 0/26 exact (4 under a shift), joint -3.440 per letter on 924
+letters, recovery 6.5 pct, 26 s. Beam 2000 / per_open 40: 0/26 (3 under a shift), -3.458, recovery 6.9 pct, 89 s. With the mapping
+free the decoder fits both streams to any commitment made at the 26 first occurrences; the true partial mapping is pruned early.
+
+**Dead ends, named:** (a) proxy anneal at orders 2/3/4, 30k evaluations x 3 chains: at or below chance plus a few letters; (b)
+open-tableau beam at widths 500 and 2000; (c) decoder-guided greedy with 8 proposals per round; (d) the full 325-swap decoder
+neighbourhood from the best start, which shows (c) cannot be fixed by more proposals.
+
+**What a 26!-search would need, from these numbers.** Either a start within about 3 swaps of the truth (20+ of 26 letters; the
+sort-match gives 2-3, the proxy 1-8), or an objective with the decoder's power at the proxy's price. The decoder's power comes from
+joint inference over both streams; a Monte Carlo / EM over (p, k, S3) with the beam's posterior would be the honest next design, at
+tens of seconds per iteration on 924 letters, and is not obviously convergent from a flat start. Nothing here reduces the cost
+below hours per seed. **General case (S1, S2, S3 free), design paragraph, no code:** the general anneal has 26!^2/26 more states than
+B''-c and two extra symmetries (the (S1 + t, S2 - t) shift family and the stream swap under vig); its objective can only be the
+decoder (the proxy has no S3 information at 924 letters, and none about S1, S2 either, since the sum stream's n-gram distribution
+under permuted p and k is what the proxy already fails to use). With B''-c's control at 9.5 pct and a decoder landscape flat beyond
+8 swaps for ONE permutation, a three-permutation anneal at 924 letters has no chance with these objectives. **Recommendation: park
+B'' (both sub-families) at this control; do not brief the general case.** Cheap corners that remain live are the keyword-restricted
+cipher-side placements (GOLD-K3, `mixed_tabula` modes cipher/plaincipher/keycipher: a word list makes the 26! search a ranking) and
+a longer text, which the target does not have.
+
+**Reproduce.** Control (this row): `python3 tools/family_run.py specs/koehler-1944.json --family permuted_tableau --corpus tools/data/de20
+--param kcorpus=tools/data/nl20 --param arith=vig --seeds 3 --gate 0.5 --label "..."` (exit 3, about 5 minutes). Landscape and
+proxy-vs-length: `python3 ciphers/koehler-1944/scripts/permuted_tableau_landscape.py` (about 3 minutes). Neighbourhood:
+`python3 ciphers/koehler-1944/scripts/permuted_tableau_nbhd.py 2 koxbdjepgytwqcharliumfvszn K 3` for K in 0 1 2 (3 minutes in parallel).
+Open beam and refine: `python3 ciphers/koehler-1944/scripts/permuted_tableau_ctl1.py 1 search=beam open_beam=2000 per_open=40` and
+`... 2 refine=25`. Owed if anyone reopens B''-c with a better search (only then): the shuffle band `--shuffle-target S` for S = 1-3
+and three uniform-random texts of the five lengths through the same command, and the target itself; beau arithmetic (`--param
+arith=beau`) likewise. Rule 10: nothing here is a reading; NOTES.md status stays `open`.
+
+-- GOLD-B2D (Fable, session_01GvGAepME5fvmUDuaJuc9cA), 25 Sept 2026 22:05 UTC
+
 <!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
 
 | date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
