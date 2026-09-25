@@ -336,8 +336,9 @@ does not apply; `apply_key.py` plays the same "reproducible, `--check` fails on 
 --tokens reading_tokens.tsv --meta reading_meta.txt --block A` regenerates `reading.txt` and
 `reading_tokens.tsv`; `--check` exits 1 if either is stale.
 
-Grade counts (68 tokens): **S=50, M=5, I=13** (H=0, C=0 -- no key source, no known plaintext; this is a
-cryptanalytic result per rule 4).
+Grade counts (68 tokens): **S=48, M=6, I=14** (H=0, C=0 -- no key source, no known plaintext; this is a
+cryptanalytic result per rule 4; see the fresh-instance re-derivation below for two corrections to this count
+caught after this line was first written).
 
 **Reading, with English gloss (fragments; unread stretches marked `[?]`):**
 > secretario cisco[Fran]cisco gon calez[Gonçález] hadado[ha dado?, has given] `[?]` `[?]` `[?]` desto.[of this]
@@ -370,13 +371,34 @@ check is sensitive to any wrong run of 4 characters, so unresolved garbage token
 Quijote I, 1605, Gutenberg #2000) -- not modern Spanish, and in fact the same *year* as this letter, so it is
 already the right reference; no change to the judge or the spec's corpus is called for.
 
-**Fresh-instance re-derivation.** A third subagent was given only `ciphertext.tsv` and the block-A image crops
-(explicitly not `digit_key.json`, `overrides.tsv`, `reading.txt` or this NOTES.md) and asked to derive the
-digit->letter key from repetition/structure alone and produce its own reading. It was still running when this
-job's wall-clock box closed (launched once a slot freed at the 25-minute mark; these image-heavy passes have
-taken 17-20 minutes each all session) and its result is **not in this report**. Flagged in ROOM.md; a
-successor should compare its independently-derived key against `digit_key.json` token-by-token agreement
-before trusting either.
+**Fresh-instance re-derivation.** A third subagent was given only `ciphertext.tsv` (explicitly not
+`digit_key.json`, `overrides.tsv`, `reading.txt` or this NOTES.md; it used the crops as an optional extra but
+reported it did not need them) and asked to derive the digit->letter key from repetition/structure alone. It
+landed (7 minutes, 103k tokens) **after** this session had already committed the reading above, so this is a
+genuinely independent check: it derived the **identical key** (a=4, e=8, i=3, o=7, u=2) from the same evidence
+this session used (token 1 `s8cr8t4r37`="secretario" pins 4 vowels at once; `q28`="que" pins the 5th), and
+flagged **11 of the same 14 tokens** as unresolved (6, 7, 8, 31, 33, 35, 49, 50, 55, 59, 65). Two differences
+worth keeping:
+- It independently reached the **same explanation** for token 57 (`d8'25,`) as this session did before seeing
+  its report -- "the '25' more plausibly reads as a literal date numeral ... rather than a letter pair" --
+  reached from the ciphertext alone, with no image access, which is a genuine agreement, not a shared bias from
+  one crop.
+- It caught a **real error in this session's own automatic grading**: tokens 32 (`4883`→`aeei`) and 64
+  (`s8v`→`sev`) had committed transcription confidence `high`, so `apply_key.py`'s default_grade mapping
+  (high/medium -> S) graded them S even though neither decodes to a real word -- the script trusted the
+  transcriber's confidence in the *glyph*, not whether the *decode* makes sense. **Corrected**: both
+  downgraded (32 -> I, "the decode doesn't fit the pattern at all -- worth re-checking against the image", its
+  words; 64 -> M, tentatively "servir" combined with token 65 with some letter noise, unconfirmed). Revised
+  grade counts (68 tokens): **S=48, M=6, I=14**.
+
+It also offered two speculative but specific, checkable readings for a successor to weigh against the image:
+token 48 `g23c4`="guica" as **"Guisa"** (el duque de Guisa, Duke of Guise -- a real historical figure; c/s are
+easily confused in this hand, exactly like the f/long-s confusion already found at token 9), and token 55
+`8l4y`="elay" as **"la Aya"** (The Hague). Neither is glyph-confirmed; flagged, not adopted.
+
+Agreement, in short: independent key derivation from ciphertext alone reproduces this session's key exactly,
+and 11/14 of the same tokens resist it -- strong evidence the remaining gap is in the transcription (or a
+genuinely unsolved sixth symbol, token 7/31's digit 5/6) rather than the key being wrong.
 
 ## 6. VX-RD04, 25 Sept 2026: block C2 fresh-crop pass -- design confirmed further, reading still not reconciled
 

@@ -30,7 +30,7 @@ A	28	s2c7nd3c37n	s2c7nd3c37n	sucondicion	S	high
 A	29	q28	q28	que	S	medium	
 A	30	p7r	p7r	por	S	medium	
 A	31	st6l7	st6l7	st6lo	I	low	
-A	32	4883	4883	aeei	S	high	
+A	32	4883	4883	aeei	I	high	4883 -> aeei; committed transcription confidence was 'high' (an all-digit token) but the decode is not a real word -- the fresh-instance re-derivation subagent (VX-RD04) independently caught this exact mismatch and flagged it for an image re-check. Downgraded from the automatic high->S default; not solved
 A	33	c8dd23	c8dd23	ceddui	I	low	
 A	34	d8	d8	de	S	high	
 A	35	v7mgdr,	v7mgdr,	vomgdr,	I	low	
@@ -62,7 +62,7 @@ A	60	d37s.	d37s.	dios.	S	low	d37s. -> dios. (Dios, God); real word, matches VX-C
 A	61	gg238	gg238	gguie	M	low	"gg238 -> gguie (guie/guie, ""guie"" = may [God] guide); doubled initial g is plausible cursive flourish/doubled-letter, not a segmentation error; contextually fits ""dios gguie como sea"" = ""Dios guie como sea"" (God guide, however it may be)"
 A	62	c7m7	c7m7	como	S	high	
 A	63	s8a	s8a	sea	S	medium	
-A	64	s8v	s8v	sev	S	high	
+A	64	s8v	s8v	sev	M	high	s8v -> sev; not a real word on its own. Fresh-instance re-derivation subagent (VX-RD04) independently suggests it may combine with token 65 (233r) as 'servir' (to serve) with some letter noise -- plausible but not confirmed against the image. Downgraded from the automatic high->S default
 A	65	233r	233r	uiir	I	low	
 A	66	3	3	i	M	low	"3 -> i; single-digit token, plausibly the conjunction ""y"" (period spelling ""i"")"
 A	67	n7s	n7s	nos	S	low	n7s -> nos (us); real word

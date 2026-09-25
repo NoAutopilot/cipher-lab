@@ -9,4 +9,6 @@ token_index	block	corrected_raw_token	grade	note
 7	A		I	'85p8' confirmed character-for-character by the blind third-pass subagent (2 of 2 independent reads now agree) -- the glyph is solidly 85p8, not a misread; decodes 'e5pe' with digit 5 outside the established a/e/i/o/u=4/8/3/7/2 key. Digit 5 recurring in a confirmed glyph (also token 57) suggests a 6th cipher value (consonant or null) not yet solved, not a transcription error; left unresolved
 66	A		M	3 -> i; single-digit token, plausibly the conjunction "y" (period spelling "i")
 67	A		S	n7s -> nos (us); real word
+32	A		I	4883 -> aeei; committed transcription confidence was 'high' (an all-digit token) but the decode is not a real word -- the fresh-instance re-derivation subagent (VX-RD04) independently caught this exact mismatch and flagged it for an image re-check. Downgraded from the automatic high->S default; not solved
+64	A		M	s8v -> sev; not a real word on its own. Fresh-instance re-derivation subagent (VX-RD04) independently suggests it may combine with token 65 (233r) as 'servir' (to serve) with some letter noise -- plausible but not confirmed against the image. Downgraded from the automatic high->S default
 68	A		M	c7n23nc8 -> conuince; close to conviene/convence (it suits/convinces) allowing one letter of period-spelling slack; not independently glyph-confirmed this pass
