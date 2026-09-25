@@ -1,0 +1,19 @@
+{
+ "slug": "antt-linhares-chave",
+ "name": "ANTT PT/TT/CLNH/0086/11, m0002 (pages 2-3 of a longer letter), Condes de Linhares fonds, c.1811-12",
+ "language_candidates": ["pt"],
+ "ciphertext": "ciphers/antt-linhares-chave/ciphertext.tsv (LX-TR, 25 Sept 2026, two independent blind passes reconciled 21/26=80.8%, 5 disagreements settled from the image)",
+ "ciphertext_source": "ANTT DigitArq docId a03cef08d3c04758aa148f5be56d3401, images/full_PT-TT-CLNH-0086-11_m0002.jpg.jpg",
+ "alphabet": "5-7 digit groups, no separators beyond whitespace; a subscript digit under a group is a trim count (front or end letters to remove from the looked-up dictionary word)",
+ "constraints": [
+  "key known: m0003-m0004 'Chave', a book-cipher rule over Antonio Vieyra's 'A New Pocket Dictionary of the Portuguese and English Languages' (1809, archive.org newpocketdiction00viey), identified and image-verified by LX-BOOK on all 12 worked-example groups (BOOK.md)",
+  "group parse: digit 1 = d; next d digits = dictionary page; next digit = column (1-3); remaining digits = rank of the headword in that column, counted top to bottom",
+  "a group whose first digit is 4-9 is a null; the key's own prose says a message starting with nulls switches to Part II (English-Portuguese) for the following stretch -- this target's one null (group 829011) is mid-letter, which the key's text does not explicitly cover",
+  "this is a mid-letter fragment (pages 2 and 3 only; pages 1 and 4 of the letter are not part of this archival item), so the candidate plaintext is not expected to be complete sentences"
+ ],
+ "cheap_tests_in_order": [
+  "decode all 26 groups against the identified 1809 edition and judge the result as Portuguese prose (LX-DEC, 25 Sept 2026) -- expected to be a weak/negative language-model signal given the fragment length (26 tokens) and the mid-letter cut, not a positive result on its own"
+ ],
+ "judge": {"language": "pt", "min_word_cover": 0.5},
+ "written": "25 Sept 2026, LX-DEC (LANE LX), for the judge step of .claude/briefs/runs/2026-09-25-lane-lx-dec.md"
+}

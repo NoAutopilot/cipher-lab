@@ -18,6 +18,27 @@
     {"file": "newpocketdiction00viey_leaf0248_p234.jpg", "leaf": 248, "printed_page": 234, "content": "col.1 rank24 = Inevitavel (test: 3234124, no trim)"},
     {"file": "newpocketdiction00viey_leaf0306_p290.jpg", "leaf": 306, "printed_page": 290, "content": "col.2 rank19 = Parecer (test: 3290219, no trim)"},
     {"file": "newpocketdiction00viey_leaf0362_p344.jpg", "leaf": 362, "printed_page": 344, "content": "col.3 rank25 = Rustico (test: 3344325 trim4 -> Rus)"},
-    {"file": "newpocketdiction00viey_leaf0372_p354.jpg", "leaf": 372, "printed_page": 354, "content": "col.2 rank2 = Sillaba (test: 335422 trim5 -> Si)"}
+    {"file": "newpocketdiction00viey_leaf0372_p354.jpg", "leaf": 372, "printed_page": 354, "content": "col.2 rank2 = Sillaba (test: 335422 trim5 -> Si); reused for m0002 col.1 rank2 (group 335412)"},
+
+    {"file": "newpocketdiction00viey_leaf0072_p060.jpg", "leaf": 72, "printed_page": 60, "content": "m0002 col.1 rank18 = Ate (group 260118, no trim); fetched 25 Sept 2026, LX-DEC"},
+    {"file": "newpocketdiction00viey_leaf0097_p085.jpg", "leaf": 97, "printed_page": 85, "content": "m0002 col.2, group 285219 rank19 sought -- column only has 15 headwords (ends Calumnia); UNRESOLVED, see NOTES.md; fetched 25 Sept 2026, LX-DEC"},
+    {"file": "newpocketdiction00viey_leaf0146_p132.jpg", "leaf": 146, "printed_page": 132, "content": "m0002 col.1 rank1 = 'D, One of the mutes...' (group 313211, no trim); fetched 25 Sept 2026, LX-DEC"},
+    {"file": "newpocketdiction00viey_leaf0176_p162.jpg", "leaf": 176, "printed_page": 162, "content": "m0002 col.1 rank1 = Dormitar (group 316211 trim6 -> Do); fetched 25 Sept 2026, LX-DEC"},
+    {"file": "newpocketdiction00viey_leaf0237_p223.jpg", "leaf": 237, "printed_page": 223, "content": "m0002 col.3 rank2 = Hernia (group 322332 trim4 -> He); fetched 25 Sept 2026, LX-DEC"},
+    {"file": "newpocketdiction00viey_leaf0255_p241.jpg", "leaf": 255, "printed_page": 241, "content": "m0002 col.2 rank20 = Junto (group 3241220, no trim) and col.3 rank15 = Justa (group 3241315, no trim); fetched 25 Sept 2026, LX-DEC"},
+    {"file": "newpocketdiction00viey_leaf0261_p247.jpg", "leaf": 261, "printed_page": 247, "content": "m0002 col.2 rank6 = Lhe (group 324726, no trim); fetched 25 Sept 2026, LX-DEC"},
+    {"file": "newpocketdiction00viey_leaf0264_p250.jpg", "leaf": 264, "printed_page": 250, "content": "m0002 col.1 rank21 = Logo (group 3250121, no trim); fetched 25 Sept 2026, LX-DEC"},
+    {"file": "newpocketdiction00viey_leaf0265_p251.jpg", "leaf": 265, "printed_page": 251, "content": "m0002 col.2 rank17 = Lugar (group 3251217, no trim); fetched 25 Sept 2026, LX-DEC (as a page-250 guess; the printed page number in the image itself reads 251, confirmed before use)"},
+    {"file": "newpocketdiction00viey_leaf0269_p255.jpg", "leaf": 269, "printed_page": 255, "content": "m0002 col.3 rank2 = Mando (group 325532 trim2 -> Man); fetched 25 Sept 2026, LX-DEC"},
+    {"file": "newpocketdiction00viey_leaf0276_p262.jpg", "leaf": 276, "printed_page": 262, "content": "m0002 col.2 rank3 = Memoria (group 326223, no trim); fetched 25 Sept 2026, LX-DEC"},
+    {"file": "newpocketdiction00viey_leaf0280_p266.jpg", "leaf": 280, "printed_page": 266, "content": "m0002 col.2 rank4 = Ministerio (group 326624, no trim); fetched 25 Sept 2026, LX-DEC"},
+    {"file": "newpocketdiction00viey_leaf0297_p281.jpg", "leaf": 297, "printed_page": 281, "content": "m0002 col.3 rank1 = Odio (group 328131 trim3 -> O); fetched 25 Sept 2026, LX-DEC"},
+    {"file": "newpocketdiction00viey_leaf0301_p285.jpg", "leaf": 301, "printed_page": 285, "content": "m0002 col.1 rank1 = Ovo (group 328511 trim2 -> O) and col.2 rank1 = Ouros (group 328521 trim4 -> O); fetched 25 Sept 2026, LX-DEC"},
+    {"file": "newpocketdiction00viey_leaf0305_p289.jpg", "leaf": 305, "printed_page": 289, "content": "m0002 col.2 rank8 = Para (group 328928, no trim); fetched 25 Sept 2026, LX-DEC"},
+    {"file": "newpocketdiction00viey_leaf0309_p293.jpg", "leaf": 309, "printed_page": 293, "content": "m0002 col.2 rank11 = Pauperrimo (group 3293211 trim3 -> Pauperr); fetched 25 Sept 2026, LX-DEC"},
+    {"file": "newpocketdiction00viey_leaf0311_p295.jpg", "leaf": 311, "printed_page": 295, "content": "m0002 col.1 rank12 = Pela (group 3295112, no trim); fetched 25 Sept 2026, LX-DEC"},
+    {"file": "newpocketdiction00viey_leaf0368_p350.jpg", "leaf": 368, "printed_page": 350, "content": "m0002 col.3 rank20 = Segredo (group 3350320, no trim); fetched 25 Sept 2026, LX-DEC"},
+    {"file": "newpocketdiction00viey_leaf0380_p362.jpg", "leaf": 380, "printed_page": 362, "content": "m0002 col.2 rank7 = ambiguous, Supprir or Supremo (group 336227, no trim, see key.tsv); fetched 25 Sept 2026, LX-DEC"},
+    {"file": "newpocketdiction00viey_leaf0401_p383.jpg", "leaf": 401, "printed_page": 383, "content": "m0002 col.2 rank6 = Venablo (group 338326 trim4 -> Ven); fetched 25 Sept 2026, LX-DEC"}
   ]
 }
