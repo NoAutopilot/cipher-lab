@@ -168,6 +168,28 @@ Salviati and Seure with costed briefs, N4 copy-free scouts (Bourdeau's copy-free
 stops, a successor parent reads this section, the lane table,
 the last check-in prompt (list_triggers), takes over the trigger with update_trigger persistent_session_id, and continues.
 
+## LANE YX handoff (session_01PHaEdHeQY2FtMHLo9yGeoe), 25 September 2026, 13:37 UTC
+
+Left-open copy-free targets. Opened 10:30 by the parent; closed at 13:37 because every session now reads `allowed_warning` on the seven-day window (BUDGETS.md scaling rule: no new workers anywhere). 16 Sonnet workers, USD 75.80 of worker usage, all ledgered and archived; orchestrator about USD 7.7. No live workers, no pending check-in. **No reading passed its judge; no AUDIT.md, no N-class, no second opinion this lane.**
+
+| target | outcome (25 Sept 2026) | next |
+|---|---|---|
+| antt-msliv0638-brochado-1712 | partial. YX-BRO79: Carta 79's gloss misread (pra->para) fixed from the image; leave-one-out gate now passes (82.6% vs noise-matched 91.4%). Letter 134 candidate C49 M16 U5, but with the new pt judge it FAILs language (-1.443 vs null_p99 -1.428): not a reading. | the other dragging entries (Carta 15, 80, Passage 2a m0284/m0294, Carta 101) by image; only then another decode |
+| oldenbarnevelt-brederode-1605 | open. NA 1.01.02 inv.6016 1605-06 folder read leaf by leaf (91 leaves): no cipher, key or decipherment. "Holland 2613" not resolvable in 3.01.04.01 or 1.01.02. | ask NA to resolve the RGP citation; de Leeuw 2022 (LOCAL-QUEUE L12) |
+| clair349-este-guise-1556 | partial, gate passes (citation restated at line 2). Key transcribed from fr.20974 (key_alpha 47 rows, 20 H; key_nomen 59 rows, 5 H). Two blind passes of f9 (33 lines) held as ciphertext_draft.tsv: 51.9-65.6% agreement depending on the measure, under the gate; no decode. | one worker: give both passes the key's own atlas codes as a shared vocabulary, re-pass, then decode_key.py (load_keys added) + fr judge |
+| clair571-estrades-1645 | open. Letter pinned to Clairambault 575 p.1209; none of Clair 571-582 digitised. REQUEST.md (BnF, batched: 575 p.1209, 574 f.3-4 Brasset key, 579 p.341), **ASKS row 49**. | owner's copy order |
+| willem-van-hessen-1567 | open, gate passes (Groen I/III, Gachard II-III read). 1069 sibling: one line per worker (p2 line 1, 14 signs); target 1127 not imaged (REQUEST.md). Parked. | copy order first |
+| thurloe-barriere-1654 | open. Pass B reconciled (90.5% after normalization; pass A had dropped a 25-token line); negative stands: 30.0% vs control 31.1%. | permutation z-test on the gloss positions |
+| decode-2754-bnf-baluze156-1636 | open. Lasry's second Sabran key negative with matched control (5.412 bits/char = shuffle median vs positive control 3.754); both published Sabran keys fail. | none cheap |
+| ormond-arran-1678 | open. Printed Ormond-Longford Cipher 2 (5/20, 34.9th pct) and Cipher 3 (3/20, p=7.8%) negative with control; Cipher 1 has no table on disk. | a Cipher 1 table (HMC vol.5), or a sibling |
+| wellington-maitland-1812 | partial. 4 more dictionary copies fail; the remaining editions (Scott, Fulton and Knight 1802, Dublin/London Entick 1801-11, Jones 1800) have no digital copy: library only. | owner/library |
+| tools | judge_plaintext.py: pt (pt17, Vieira letters) and it wired, with a test. intake_gate_check.py: partial treated as open (11 tests). decode_key.py: load_keys merges two key files. gbooks_search_within.py sleep 1.5 s. | CX's open ask: found-solved reads as FAIL; an open over an unread edition passes |
+
+- **Triage** (ciphers/_triage/2026-09-25-lane-yx-triage.md): 99 open/partial targets triaged; intake gate PASS 2 of 99 before LANE CX's sweep (15 after). 63 blocked on a person, an archive or a gated account.
+- **For LX / the parent:** antt-linhares-chave's committed reading FAILs the new pt judge (-1.559 vs real_p05 -1.014; word cover passes 0.758); the parent's LX-JUDGE is testing whether the judge discriminates on a 26-word dictionary-code fragment.
+- **Orphan fixes done** (parent 11:40): colbert26 Kind rewritten, canvas 21 held back; thurloe-barriere negative re-checked on two passes.
+- **Lessons** (LEDGER rows): a judge with no corpus for the language is not a gate; a new NOTES section inserted above the verdict breaks the gate tool; workers stopped at 23-38% of their time boxes twice, so a box is also a minimum working time; arbitrary-sign passes need a shared atlas vocabulary before agreement means anything; raw reconcile_passes numbers on printed codes measured notation (5.4%) not error (90.5%). Retrospective trigger met (16 rows, USD 75.80).
+
 ## LANE CX handoff (session_01SRJHk4mkeudAH4L39Kc9K6), 25 September 2026, 12:55 UTC
 
 Check-solved sweep on the copy-free targets of the YX triage (ciphers/_triage/2026-09-25-lane-yx-triage.md) that
