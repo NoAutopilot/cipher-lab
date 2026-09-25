@@ -429,3 +429,32 @@ line	pos	code	marks	action	conf	note
 16	27	g		confirm	H
 16	28	S7		confirm	H
 16	29	#		confirm	H
+17	1	e		confirm	H
+17	2	Lx	dot	confirm	M	low share (.60) already flagged this
+17	3	y		confirm	H
+17	4	_		confirm	H	blank spacer between signs
+17	5	S7		confirm	H
+17	6	tee		confirm	M	low share (.56) already flagged this
+17	7	g		confirm	H
+17	8	Lx		confirm	H
+17	9	S4		confirm	H
+17	10	_		plain	M	colon-like mark opening a plain clause, low share (.81) already flagged this
+17	11	_		plain	M	space/stroke after the colon, low share (.82) already flagged this
+17	12	_		plain	H	"S" of "Sopra" ("about/concerning"), misread as sign N
+17	13	_		plain	H	"op" of "Sopra"
+17	14	_		plain	H	"ra" ending of "Sopra"
+17	15	_		plain	M	ligature into "la", very low share (.38) already flagged this
+17	16	_		plain	H	"l" of "la"
+17	17	_		plain	H	"a" of "la"
+17	18	_		plain	M	"m" of "medesima" ("same"), coincides with cipher code m
+17	19	_		plain	H	"ed" of "medesima"
+17	20	_		plain	M	"es" continuing "medesima", low share (.61) already flagged this
+17	21	_		plain	M	"im" continuing "medesima", low share (.60) already flagged this
+17	22	_		plain	H	"a" ending "medesima"
+17	23	_		plain	M	"m" of "materia" ("matter/subject"), coincides with cipher code S
+17	24	_		plain	H	"at" of "materia"
+17	25	_		plain	H	"er" of "materia", misread as sign N
+17	26	_		plain	H	"ia" ending "materia"
+17	27	_		plain	M	"mi" ("to me"), low share (.59) already flagged this
+17	28	_		plain	H	"ha" ("has")
+17	29	_		plain	H	"par[?]" start of a verb (par[so]/par[lato]?) continuing past the line end
