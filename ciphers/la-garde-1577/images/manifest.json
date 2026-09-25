@@ -46,5 +46,11 @@
       {"file": "margin_6467_run2_4x.png", "region_px": [40, 640, 260, 720], "scale": "4x LANCZOS", "content": "margin note beside cipher run 2: short abbreviation, read 'N.[c?].f.' -- native resolution ceiling, cannot be sharpened further"},
       {"file": "margin_6467_leftcolumn_3x.png", "region_px": [0, 380, 340, 1000], "scale": "3x LANCZOS", "content": "whole left-margin column beside both cipher runs, confirms no other marginal annotation exists on this page"}
     ]
+  },
+  "zx2_lag_sibling_sweep_25_sept_2026": {
+    "by": "LANE ZX2 worker ZX2-LAG, source list from sources/wvo/cipher-letters-2026-09-24.tsv (fetch-once harvest) filtered to 1576-1579, not re-queried against WVO's search endpoint",
+    "fetched": ["424", "6136", "6178", "6221", "6238", "5227", "10700"],
+    "note": "PDFs deleted after rendering (30MB folder cap); each briefnr's full page set was rendered once to a contact-sheet JPG (images/siblings/<nr>_contact.jpg) plus close-up crops for the two hits with a numeral-cipher passage (5227, 6238) and for 424's two text pages (checking the 'solved on leaf' tag turned up no cipher on this leaf). Re-fetch from sources/wvo/cipher-letters-2026-09-24.tsv's pdf_url column if a closer look is needed.",
+    "files": ["siblings/424_contact.jpg", "siblings/424_p2_full.jpg", "siblings/424_p3_full.jpg", "siblings/6136_contact.jpg", "siblings/6178_contact.jpg", "siblings/6221_contact.jpg", "siblings/6238_contact.jpg", "siblings/6238_p1_botleft.jpg", "siblings/5227_contact.jpg", "siblings/5227_p3_botleft.jpg", "siblings/5227_p4_botleft.jpg", "siblings/10700_contact.jpg"]
   }
 }

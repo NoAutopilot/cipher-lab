@@ -531,3 +531,76 @@ mark, but that is speculation outside this brief's scope.
 
 Requests: resources.huygens.knaw.nl 2 (1 record page `brief?nr=6467`, 1 PDF fetch, ≥1.5s apart). No other hosts.
 No subagents. Cost well under $5 cap.
+
+## ZX2-LAG: pool (25 Sept 2026, LANE ZX2)
+
+**Job:** widen the pool -- search WVO for every letter by or to La Garde and every 1576-1579 Orange-circle
+letter whose notes mention cipher, and check any with cipher whether it uses the same dot-separated 1-24
+numeral system as 6179/6467.
+
+**Intake gate:** `python3 tools/intake_gate_check.py la-garde-1577` -> `la-garde-1577: open (line 1) -- edition/page
+or full-text-search citation found within 6 lines` (exit 0).
+
+**Source, not re-queried.** LANE N's 24 Sept 2026 harvest (`sources/wvo/NOTES.md`, `sources/wvo/cipher-letters-2026-09-24.tsv`)
+already enumerated every WVO record whose Opmerkingen field mentions cijfer/chiffre/onopgelost/oplossing --
+92 genuine cipher-related records, fetch-once per "fetch once, keep a manifest" (CLAUDE.md Usage item 4). This
+pass filters that TSV to 1576-1579 instead of re-hitting `wvo/app/brieven?opmerkingen=...`: 13 records besides
+the 3 already on file (6179, 6467, 5564). La Garde's own correspondent index (11 letters, only 6179 carries
+cipher) was already confirmed by R9 24 Sept ("Searched WVO for other La Garde letters... a combined
+correspondent+opmerkingen query confirms only 6179 itself carries 'cijferschrift'") -- not re-run.
+
+**Fetched and checked by eye** (contact-sheet render of every page, plus close crops where a cipher passage was
+visible; `siblings.tsv` has the full table, `images/manifest.json`'s `zx2_lag_sibling_sweep_25_sept_2026` block
+lists the files): 424, 6136, 6178, 6221, 6238, 5227, 10700 -- 7 records, all their pages rendered (4+13+3+5+2+6+3 = 36 pages).
+
+**Result: 0 same-system siblings.** Of the 7 fetched:
+- **424** (Aerschot, 2 May 1579, German, KHAG): WVO's "solved on leaf" tag refers to a separate Simancas copy
+  ("contemporaine kopie...is ontcijferd en uit het Frans in het Spaans vertaald", per `sources/wvo/NOTES.md`
+  item 4), not this leaf -- checked both text pages at 1600px, continuous clear German prose throughout, no
+  digit groups anywhere.
+- **6178** (Lumbres, 26 Apr 1576, French) and **6221** (Guillaume David/La Huguerye, 19 May 1576, French):
+  continuous clear prose on every leaf, no cipher visible. 6221's PDF also carries a bound-in printed excerpt
+  page (a Kervyn/Groen-style edition scan of the same letter), confirming it is printed elsewhere -- consistent
+  with the "solved elsewhere" status already in the TSV.
+- **10700** (to the Reich deputies, 13 Jul 1579): the fetched leaf is itself a Simancas copy headed "Copia de
+  carta del Principe de Orange... desciffrada" -- already-deciphered Spanish plaintext, not raw cipher.
+- **6136** (Reinier Cant, Bremen, 14 Feb 1576): **cipher present and extensive** -- 8 of 13 rendered pages are
+  entirely numeral cipher, dense dot-separated groups. But the value range runs to 150+ (e.g. "137", "144",
+  "109", "127") with occasional symbol nulls (dagger/cross marks), against La Garde/Marnix's cap of 24 -- a
+  materially larger alphabet, i.e. a different (and apparently much bigger) cipher system, not a pooling match.
+  **This looks like a substantial unsolved cipher letter in its own right** (see "flag" below); not pursued
+  further here, out of this brief's scope (pooling for La Garde only).
+- **6238** (Junius de jonge, 26 Jan 1576, German): a short passage of invented cipher *symbols* (typeset-regular
+  glyphs, not numerals) at the foot of p1 -- a substitution-table design, not the numeral system.
+- **5227** (Willem van Oranje to Jan van Nassau, 4 Feb 1576): a short numeral passage at the foot of p4,
+  dot-separated but mixed with lowercase roman letters as nulls/homophones (e.g. "79.12.6.L.94.p.7...83.m.62...",
+  values to ~94) -- matches the already-established Jan-van-Nassau house-cipher description from 5564
+  ("numeral groups with roman-letter labels mixed in"), confirming that design as a real multi-letter pattern
+  for Jan van Nassau's own correspondence, not La Garde/Marnix's.
+
+**Not fetched, inferred by cluster** (per `siblings.tsv`, flagged as such, not verified): 5228, 5561 (same
+Jan-van-Nassau/KHAG cluster as 5227/5564); 10725, 12630, 12631 (same 1579 Reich-deputies/Gachard-cited cluster
+as 10700). None of these clusters, on the one representative checked, carries the La Garde/Marnix design, so
+checking the remaining cluster members was not expected to change the answer and was skipped to stay in budget
+-- a genuine gap if a future worker wants full coverage, not a claim that they were checked.
+
+**Pooled sign count: unchanged.** 0 same-system siblings found among the letters checked -> the pool stays
+6179 (v2: 113+80 = 193 rows) + 6467 (v2: 27+19 = 46 rows) = **239 tokens, same as L4's 25 Sept count**. This does
+not change the unicity picture for the homophonic family: L4's negative (target never beats its own 8%-noise
+control, both with and without overlines as distinct signs) was already run at N=189-199, above the 150-sign
+threshold this brief's pooling step exists to reach -- there was no shortfall to fill, and finding 0 matching
+siblings confirms the ceiling on this route rather than opening a new one. The lever named in this job's line 2
+("length") is not available from this circle's other correspondents; whatever narrows the homophonic/periodic
+negative further has to come from a different family (family_run.py's masc/running_key) or a genuine key/crib
+source, not more pooled ciphertext.
+
+**Flag for the parent/orchestrator (not acted on, out of this brief's scope and files):** WVO 6136 (Reinier
+Cant to Willem van Oranje, Bremen, 14 Feb 1576, KHAG shelfmark, `resources.huygens.knaw.nl/wvo/app/brief?nr=6136`)
+is an entirely-enciphered, apparently unsolved multi-page letter (8+ of 13 pages of dense numeral cipher, values
+into the 100s) with no existing target folder or QUEUE.md row found (`grep -rn "6136\|Reinier Cant"` across
+QUEUE.md, STATUS.md, ciphers/*/NOTES.md: no hits outside an unrelated numeral run in na-raad-azie-1800). Worth
+a scout/QUEUE row of its own -- this worker does not touch QUEUE.md per scope.
+
+Requests: resources.huygens.knaw.nl 7 (PDF fetches for 424, 6136, 6178, 6221, 6238, 5227, 10700; all ≥2.1s
+apart). No other hosts. No subagents (all rendering/cropping done locally with pymupdf + Pillow, installed from
+PyPI, offline after fetch). Novelty not classified (not this brief's job).
