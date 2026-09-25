@@ -417,3 +417,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T15:42Z	session_01YE11botJahNxonn9Q4knFu	LANE N4 csPP03 done $1.94 D, archived	ledgered LEDGER.md	completed 21:53 UTC with its own ROOM done line; antt-linhares-chave verdict open->blocked, superseded by LANE LX
 2026-09-25T15:42Z	session_01QFM2xCSDTwmDV3ayByLVhJ	LANE B bHAR done $0.98 F, archived	ledgered LEDGER.md	died 23:14 UTC, no output; harry-caroline-1863.json cheap_test_done unset
 2026-09-25T15:42Z	session_01HAb2wwJ9oYC1rsZGCe3D7T	LANE B bLIM done $0.76 F, archived	ledgered LEDGER.md	died 21:54 UTC; lima-1916.json cheap_test_done holds an unrelated pre-existing result
+2026-09-25T15:46Z	session_pending_keys	Key presence check (Sonnet, cap )	CLAUDE.md optional-keys paragraph, ASKS row 47, ROOM	owner added new API credentials 25 Sept
