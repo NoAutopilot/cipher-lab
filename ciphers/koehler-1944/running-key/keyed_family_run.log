@@ -75,3 +75,8 @@ CONTROL seed 2: N=924 K=26 recovery 0.740 score -3.10
   control seed 3: keyword 'omsloeg' mode key arith vig (alphabet omslegabcdfhijknpqrtuvwxyz); 11437 candidate alphabets; key corpus kcorpus book held out
   stage 1: 45749 candidates; top [(18.1, 'nuance', 'key'), (17.6, 'aufgeben', 'key'), (17.6, 'ophief', 'key'), (17.2, 'omsloeg', 'key'), (17.0, 'achseln', 'key'), (16.9, 'offizielle', 'key'), (16.8, 'achtete', 'key'), (16.7, 'ausgesehen', 'key'), (16.4, 'hochseligen', 'plain'), (16.3, 'asche', 'key'), (16.1, 'notwendig', 'key'), (15.9, 'aufnehmen', 'key'), (15.9, 'aufsehen', 'key'), (15.7, 'ausgelassen', 'key'), (15.7, 'actie', 'key'), (15.6, 'opkomen', 'key'), (15.4, 'opzien', 'key'), (15.4, 'algiers', 'key'), (15.3, 'lokjes', 'key'), (15.2, 'aufgedeckt', 'key'), (15.2, 'nijmegen', 'key'), (15.2, 'achzen', 'key'), (14.9, 'aufgebunden', 'key'), (14.9, 'dunkelheit', 'key'), (14.9, 'opinie', 'key'), (14.9, 'illuzie', 'key'), (14.9, 'oogsten', 'key'), (14.8, 'achten', 'key'), (14.8, 'achteren', 'key'), (14.7, 'hochseligen', 'key')]; standard tableau 13.5 nats (rank 87)
   stage 1: true keyword ('omsloeg', 'key') ranked 4
+
+# NOTE (GOLD-2C, 25 Sept 2026 19:00 UTC): this file ends at control seed 3 stage 1 because a `git rebase --autostash` at 18:45 UTC
+# replaced the file while the process was still writing to the old inode; the remainder (seed 3 stage 2, CONTROL seed 3 recovery
+# 0.647 score -3.18, the target stage 2, TARGET best score -3.534) survives in the family_run.py row in HYPOTHESES.md, in
+# families/keyed_running_key-1.txt and in running-key/keyed_target_rerun.log (the deterministic target solve re-run).
