@@ -149,14 +149,20 @@ line	position	old	new	partner	reason	grade
 29	31	4	DEL	30	second 4 of 44	M
 29	35	2	26	36	z6 pair after S60, e gloss over 6; 26=E	M
 29	36	6	DEL	35	closes 26	M
+30	1	S23	S36	-	ZX-TR349E: lone x at line start, a long stroke coming down from above into its upper-left arm; this is the letter's S36 (s), confused with S23 (small x/z with flat right stroke); no gloss over it	M
+30	12	S17	S27	-	ZX-TR349E: ff ligature with hooked/arched tops and both stems descending below the baseline = S27 (L), confused with S17 (straight tt with crossbar sitting on the baseline); gloss is a clear cursive L (les-quelz)	M
 30	14	4	S36	-	long s-stroke from above runs into the crossed x; S36	M
+30	15	S63	S32	-	ZX-TR349E: y-shaped sign: small hooked left arm, long flat right arm, stem descending and curling left = S32 (Q); confused with S63 (q on a crossed stem) because the gloss q's tail runs down into the sign's flat arm; lesquelz	M
 30	25	4	44	26	9 then 4 4, o gloss over first; 44=O	M
 30	26	4	DEL	25	second 4 of 44	M
 30	29	4	S36	-	cross after 16 under a tall s-stroke, s gloss	M
+31	1	S23	S36	-	ZX-TR349E: lone x (two crossing strokes, no t-join and no tail, so not S02 F) = S36 per the letter's lone-x form, confused with S23; ink and gloss may disagree: gloss above is f or long s (crossbar ambiguous), "a" sits over pos2; if the gloss is f the word is "fait" and the ink would need S02	M
 31	8	2	26	9	z6 pair after S37; 26=E (gloss reads r)	M
 31	9	6	DEL	8	closes 26	M
+31	12	S64	DEL	-	ZX-TR349E: not a cipher sign: the small 3/z-shaped mark stands at gloss height directly above the A of pos12 and is that token's gloss (r rotunda); only one such mark exists, so the transcription counted the gloss as a code (3-shape S64); entend-r-e reads without it	M
 31	17	10	102	18	1 0 z group; 102=V	M
 31	18	2	DEL	17	closes 102	M
+31	24	9	S31	-	ZX-TR349E: circle whose stem runs down past the line crop to a crossbar at its foot (visible in the top of line32_s2) = S31 (P), confused with 9 because the s-crops cut off the stem and cross; gloss p sits over it (the listed "t" is the last letter of the "fait" gloss); "fait penser que"	M
 31	25	1	16	26	1 6 adjacent; 16=E, e gloss over 6 (partner row, not in input list)	M
 31	26	6	DEL	25	closes 16	M
 31	28	4	S36	-	cross after 15 with s gloss (tall s) above	M
@@ -178,8 +184,10 @@ line	position	old	new	partner	reason	grade
 32	31	4	S36	-	cross after 18, s gloss; lone 4 not a code	M
 32	35	7	76	36	7 6 under one mm gloss; 76=mm (partner row, not in input list)	M
 32	36	6	DEL	35	closes 76	M
+33	3	S17	S27	-	ZX-TR349E: ff with arched/hooked tops and both stems descending well below the baseline = S27 (L), confused with S17; gloss is a cursive L (les ennemis), not f	M
 33	4	2	26	5	z6 pair after S17, e gloss over 6; 26=E	M
 33	5	6	DEL	4	closes 26	M
+33	6	S21	S36	-	ZX-TR349E: long-s stroke from above (hooked top) ending in a cross/x at its foot = S36 (s), confused with S21 (f-like with tail); les	M
 33	14	10	102	15	1 0 z group, u gloss; 102=V	M
 33	15	2	DEL	14	closes 102	M
 33	16	4	44	17	4 4, o gloss over first; 44=O	M
