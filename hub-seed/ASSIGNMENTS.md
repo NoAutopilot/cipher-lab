@@ -503,3 +503,8 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T18:36Z	session_01LX1KVigw2GyV3JG3YBHUcm	done	bINT retro intake moustier, kaliningrad	pushed e944781, c027fbf
 2026-09-25T18:34Z	session_01Ni7SCWavoqfgw2VR4ypGXX	LANE B2 bMCC2 (Sonnet, cap 5)	mccormick-1999 test 2 family_run masc x2 corpora (NEAR row)	brief 2026-09-25-lane-b2-mccormick-1999-t2.md
 2026-09-25T18:34Z	session_014qQzx56jpDoJBe6kFjiL5z	LANE B2 bPOL2 (Sonnet, cap 5)	pollaky-1865-1875 test 2 pass B + diff vs Bourdeau (NEAR row)	brief 2026-09-25-lane-b2-pollaky-1865-1875-t2.md
+2026-09-25T18:55Z	session_01ALeDhDTreUY82fsxhRk3xE	LANE R6 MJ done $3.31 N, archived	mercy es17c judge	judge cannot decide
+2026-09-25T18:55Z	session_01QbniS3J4WHAZNtSCw1ThUq	LANE R6 MR done $0.97 D, archived	mercy re-derivation	diff 0
+2026-09-25T18:55Z	session_01G9ZjiryvFjmJxDnavit57i	LANE R6 Y10 done $1.69 N, archived	rah-xiquena-1868	plaintext copy only
+2026-09-25T18:53Z	session_011rdn8AFXk2htZ9Z72WaQ9n	LANE R6 M3 (Sonnet, cap 6)	mercy sibling sweep, Espagnol 142	brief 2026-09-25-lane-r6-m3-mercy-siblings.md
+2026-09-25T18:53Z	session_01AtRe8LEF72DEuye52Rg7Pi	LANE R6 CM2 (Fable, cap 15)	salviati error-tolerant code+mark	brief 2026-09-25-lane-r6-cm2-salviati-tolerant.md
