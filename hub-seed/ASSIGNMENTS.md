@@ -609,3 +609,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T22:23Z	session_01UcAsvJkJRnZjE7gJpk8dD1	R8-K5761 (Sonnet, cap 4)	fr5761 intake gate repair + sign inventory; brief 2026-09-25-lane-r8-k5761-election-key.md
 2026-09-25T22:45Z	session_01381WRXGttryywgiDbmXB9B	bCEN done $3.31 D-, archived	censorship test 1: material on disk, Bourdeau already blocked on resolution
 2026-09-25T22:45Z	session_01ENRheqa2wuDyK4Jo4GYWjU	bUNT3 done $3.30 D-, archived	Hs. 2398 found online; Herzog 1929 transcription lead
+2026-09-25T22:46Z	session_01XmwGTxPa6AU4yqYGmh9zUf	bUNT4 (Sonnet, cap 3)	untersberg-code Herzog 1929 in print + six-line leaf	LANE B4 brief
