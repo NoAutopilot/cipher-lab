@@ -1,0 +1,267 @@
+line	pos	group	gloss	conf	note
+L01	0	89	n	H
+L01	1	46	o	H
+L01	2	56	a	H
+L01	3	13	b	H
+L01	4	)6	y	H	tick before digit, confirmed at 5x zoom
+L01	5	60	e	H
+L01	6	[blot]	23	M	dark ink blot fully obscures the sign; gloss above reads literally "23" (a number, not a letter) - probably the day-of-month in a date
+L01	7	15	L	H
+L01	8	3	o	H	single digit only, no second digit visible
+L01	9	45	N	M	gloss letter written in noticeably darker/blacker ink than rest of line, otherwise clear
+L01	10	24	o	H
+L01	11	35	b	H
+L01	12	38	e	H
+L02	0	81	a	H
+L02	1	6	d	H	single digit only
+L02	2	3)'	e	M	digit 3 + close-paren tick after + an extra small raised apostrophe-like mark; unclear if the apostrophe is a second, distinct tick or a stray ink mark
+L02	3	16	n	H
+L02	4	89	e	H
+L02	5	10	s	H
+L02	6	50	t	H	written "5o" (zero as o)
+L02	7	29	a	H
+L02	8	34	s	H
+L02	9	28	P	M	gloss letter "P" written in darker/blacker ink than rest of line (like L01 pos9's "N")
+L02	10	25	a	H
+L02	11	56	r	H
+L02	12	)1	t	H	tick before
+L02	13	95	e	H
+L02	14	10	s	H
+L02	15	94	q	H
+L02	16	)0	u	H	tick before, zero as o
+L02	17	)5	e	M	tick before; digit 5 drawn as a looped/cursive shape easily confused with a letter, confirmed as 5 by comparison with other 5s on the page
+L03	0	8)	L	H	tick after
+L03	1	12	a	H
+L03	2	59	d	H
+L03	3	60	e	H
+L03	4	[tilde]	A	M	a wavy/squiggle shape with a hooked tail resembling a close-paren; treated as one drawn symbol, not two ticks
+L03	5	51	b	H
+L03	6	60	e	H
+L03	7	2)	r	H	tick after; note code "2)" here reads r but the same code reads n elsewhere in the line (L05) - internal inconsistency in my own alignment, flagged
+L03	8	88	m	H
+L03	9	30	u	H
+L03	10	15	d	H
+L03	11	)8	a	H	tick before
+L03	12	31	d	H
+L03	13	90	o	H
+L03	14	X	e	M	drawn capital X used as a symbol, not two digits
+L03	15	)2	s	H	tick before
+L03	16	51	t	H
+L03	17	60	e	H
+L04	0	89	n	M	dense line, gloss letter positions approximate from here on (count of gloss letters and cipher groups did not match exactly)
+L04	1	22	M	M
+L04	2	38	e	M
+L04	3	31	x	M
+L04	4	3,	o	M	tick after, comma-shaped, on a single digit
+L04	5	)1	r	M	tick before
+L04	6	10	e	M
+L04	7	28	e	M
+L04	8	4)	s	M	tick after
+L04	9	16	p	M
+L04	10	49	e	M
+L04	11	68	r	M
+L04	12	36	o	M
+L04	13	8	c	M	single digit
+L04	14	6)	o	M	tick after
+L04	15	[triangle]	n	M	small drawn triangle, not two digits
+L04	16	83	a	M
+L04	17	50	n	M
+L04	18	32	s	M
+L04	19	6,	y	M	tick after, comma-shaped; final group of the line, an extra gloss letter "a" appears to be left over unmatched
+L05	0	50	s	M
+L05	1	)3	t	M	tick before
+L05	2	6	a	M	single digit
+L05	3	6)	n	M	tick after
+L05	4	99	z	M
+L05	5	)6	y	M	tick before
+L05	6	11	a	M
+L05	7	50	s	M
+L05	8	26	q	M
+L05	9	2	u	M	single digit
+L05	10	38	e	M
+L05	11	56	a	M
+L05	12	32	y	M
+L05	13	94	y	M
+L05	14	60	e	M
+L05	15	)2	s	M	tick before; matches )2=s reading from L03
+L05	16	12	a	M
+L05	17	35	b	M
+L05	18	2)	n	M	tick after
+L05	19	56	a	M
+L06	0	43	l	M	whole line lower confidence; gloss word-boundaries approximate
+L06	1	)8	a	M	tick before
+L06	2	94	s	M
+L06	3	)0	q	M	tick before
+L06	4	30	u	M
+L06	5	5	e	M	single digit
+L06	6	[Z]	y	M	distinctive drawn capital Z-like shape (crossed loop), not two digits
+L06	7	13	b	M
+L06	8	)6	y	M	tick before
+L06	9	60,	e	M	trailing comma after digits, position/tick ambiguous
+L06	10	2)	r	M	tick after
+L06	11	60	e	M
+L06	12	59	L	M	gloss shows a dark-ink insertion around here (like earlier N/P)
+L06	13	38	e	M
+L06	14	43	l	M
+L06	15	6)	K	M	tick after
+L06	16	8	o	M	single digit
+L06	17	51	r	M
+L07	0	29	t	M
+L07	1	16,	e	M	tick after, comma-shaped
+L07	2	54	o	M
+L07	3	15	d	M
+L07	4	60	e	M
+L07	5	32	y	M
+L07	6	51	t	M
+L07	7	6	a	M	single digit
+L07	8	65	l	M
+L07	9	98	y	M
+L07	10	12	a	M
+L07	11	25	p	M
+L07	12	30	u	M
+L07	13	5	e	M	single digit
+L07	14	28	s	M
+L07	15	2)	e	M	tick after
+L07	16	6	s	M	single digit, uncertain - digit shape unclear in source
+L07	17	)2	a	M	tick before
+L08	0	10	A	M	transcribed "Lo" in source, read as 1+0 (zero as o); low confidence
+L08	1	45	n	M
+L08	2	3)	d	M	tick after
+L08	3	60	e	M
+L08	4	T	o	M	drawn capital T used as a symbol, not two digits
+L08	5	14	c	M
+L08	6	69	a	M
+L08	7	4	c	M	single digit
+L08	8	6	a	M	single digit
+L08	9	94	s	M
+L08	10	)6	y	M	tick before
+L08	11	3	r	M	single digit
+L08	12	23	o	M
+L08	13	56	n	M
+L08	14	23	a	M
+L08	15	8)	r	M	tick after
+L08	16	11	l	M
+L08	17	50	a	M
+L08	18	26	s	M
+L08	19	[paren]	q	M	a lone close-paren-like mark with no adjacent digit; possibly a null/space symbol used elsewhere in this text too (see L02, L04)
+L08	20	10	u	M	trailing group before next line; gloss "e" of "que" likely left over unmatched
+L09	0	~	p	M	squiggle/tilde shape, not two digits
+L09	1	)0	a	M	tick before
+L09	2	32	n	M
+L09	3	4)	a	M	tick after
+L09	4	38	y	M
+L09	5	59	m	M
+L09	6	)8	a	M	tick before
+L09	7	6)	s	M	tick after
+L09	8	[circle]	,	M	small drawn oval/circle, not two digits; unclear gloss alignment here
+L09	9	36	e	M
+L09	10	)4	d	M	tick before
+L09	11	2)	a	M	tick after
+L09	12	54	n	M
+L09	13	)1	,	M	tick before
+L09	14	55	d	M
+L10	0	4)	p	M	line boundaries in this dense middle section are approximate; low confidence throughout
+L10	1	56	a	M
+L10	2	93	n	M
+L10	3	6	a	M	single digit
+L10	4	44	y	M
+L10	5	)8	m	M	tick before
+L10	6	28	a	M
+L10	7	8	s	M	single digit
+L10	8	28	,	M
+L10	9	50	p	M
+L10	10	60	u	M
+L10	11	40	e	M
+L10	12	30	s	M
+L10	13	49	,	M
+L10	14	56	e	M
+L10	15	15	s	M
+L10	16	34	a	M
+L10	17	81	v	M
+L10	18	3)	r	M	tick after
+L10	19	5	e	M	single digit
+L11	0	21	g	M	line boundaries approximate
+L11	1	34	u	M
+L11	2	58	n	M
+L11	3	24	y	M
+L11	4	)1	d	M	tick before
+L11	5	10	a	M
+L11	6	94	d	M
+L11	7	0	,	M	single digit, possibly stray mark
+L11	8	94	d	M
+L11	9	69	e	M
+L11	10	8	s	M	single digit
+L11	11	6)	p	M	tick after
+L11	12	59	o	M
+L11	13	82	n	M
+L11	14	45	d	M
+L11	15	33	e	M
+L11	16	)6	n	M	tick before
+L11	17	6	z	M	single digit
+L11	18	)2	,	M	tick before
+L11	19	38	r	M
+L12	0	25	a	M	line boundaries approximate
+L12	1	46	,	M
+L12	2	89	s	M
+L12	3	3)	e	M	tick after
+L12	4	93	,	M
+L12	5	56	o	M
+L12	6	50	l	M
+L12	7	24	a	M
+L12	8	65	m	M
+L12	9	12	e	M
+L12	10	66	n	M
+L12	11	60	t	M
+L12	12	89	a	M
+L12	13	51	,	M
+L12	14	16	y	M
+L12	15	96	n	M
+L12	16	23	,	M
+L13	0	28	p	M	line boundaries approximate; gloss for this line largely illegible, mostly omitted
+L13	1	3	o	M	single digit
+L13	2	19	b	M
+L13	3	[blot]	r	M	dark ink blot obscures the sign
+L13	4	11	e	M
+L13	5	10	,	M
+L13	6	)2	=	M	tick before
+L13	7	32	s	M
+L13	8	36	e	M
+L13	9	2)	,	M	tick after
+L13	10	54	n	M
+L13	11	)3	y	M	tick before
+L13	12	46	+	M
+L13	13	[square]	o	M	small drawn square, not two digits
+L13	14	45	,	M
+L13	15	10	e	M
+L13	16	28	n	M
+L13	17	95	,	M
+L13	18	34	e	M
+L14	0	6)	s	M	line boundaries approximate; this line ends with the clear word "forma." (with a decorative flourish) written inline among the cipher groups - "forma." itself is a plain word, not transcribed as a group
+L14	1	51	a	M
+L14	2	68	+	M
+L14	3	89	a	M
+L14	4	32	,	M
+L14	5	6,	q	M	tick after, comma-shaped
+L14	6	31	u	M
+L14	7	16	e	M
+L14	8	12	,	M	note: plain word "forma." (flourished) appears in the source immediately after this run of groups; not counted as ciphertext
+L14	9	65	=	M
+L14	10	13	,	M
+L14	11	56	a	M
+L18	0	61			H	first group of the short unglossed line (crop_u1.jpg); no gloss above this line at all
+L18	1	68			H
+L18	2	2)			H	tick after
+L18	3	88			H
+L18	4	18			H
+L19	0	[triangle]			H	first sign of the long unglossed underlined line (crop_u2_top.jpg + crop_u2_bottom.jpg); no gloss above this line
+L19	1	59			H
+L19	2	24			H
+L19	3	[n]			M	a lowercase "n" shape with a small loop/diacritic above it, not an ordinary two-digit group; possibly a letter used as a symbol
+L19	4	34			H
+L19	5	[tilde]			M	wavy/squiggle shape, not two digits
+L19	6	?			M	illegible - ink is extremely thin/faint from here through the end of the first physical row of this line; a run of roughly 10-13 more sign-like marks is visible (small hooked/looped strokes separated by faint periods) but cannot be resolved into specific digits or tick positions at the resolution available in crop_u2_top.jpg; a higher-resolution or raking-light image of this stretch is recommended before this line is used for any decode attempt
+L19	7	6)			H	first group of the second physical row (crop_u2_bottom.jpg), tick after
+L19	8	54			H
+L19	9	8)			H	tick after
+L19	10	65			H
+L19	11	11			H	last cipher group before the line ends in the clear abbreviation "&a." (etc.), which is not transcribed as a group

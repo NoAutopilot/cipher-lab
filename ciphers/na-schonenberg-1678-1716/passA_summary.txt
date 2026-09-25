@@ -1,0 +1,62 @@
+Pass A summary - independent blind transcription, 9 image files, top to bottom of one leaf.
+
+Lines and groups transcribed (glossed body lines L01-L14, then the two unglossed closing
+lines the brief numbers L18 and L19):
+L01 13  L02 18  L03 18  L04 20  L05 20  L06 18  L07 18  L08 21  L09 15
+L10 20  L11 20  L12 17  L13 19  L14 12  L18 5  L19 12 (incl. one placeholder row for an
+illegible run of ~10-13 signs)
+Total: 266 rows in passA.tsv, across 16 lines.
+
+Plain/clear words seen inline in the cipher-number rows (not transcribed as groups):
+"Amigo." at the very start of L01; "forma." (with a decorative pen flourish) near the end
+of L14, immediately before the interlinear gloss stops; "&a." (abbreviation for "etcetera")
+at the very end of L19. Also a marginal note "Aquy" (with an underline) written in the left
+margin beside the start of L10 - not part of either the gloss or cipher columns. Below L19,
+crop_bottom.jpg shows an address/salutation line in a larger, different hand, "A Doña
+Antonija de Albanylla &c" (one word overtraced in darker ink) - this is plainly a name, not
+cipher, and I have not transcribed it as such.
+
+Line count discrepancy (flagging, not resolving): the brief's own numbering implies 17
+glossed lines before the unglossed L18/L19. My pass only confidently separated 14 glossed
+line-pairs (L01-L14) from the images given. The handwriting in the middle of the letter
+(roughly what I call L04 through L14) is dense, the crops overlap by design, and I could not
+always be certain where one physical line ended and the next began, or which of two
+adjacent, similarly-sized cipher runs a given gloss letter belonged to. A second independent
+pass, or the original higher-resolution scans re-cropped at cleaner line boundaries, would be
+needed to settle whether 2-3 lines were merged in my reading or whether the true count is
+different from 17.
+
+Hardest groups/positions:
+- L01 pos6: a solid ink blot fully covers one sign; the gloss above it literally reads "23"
+  (a number, not a letter) - consistent with a date ("23 de ...") embedded directly in the
+  plaintext rather than spelled by single-letter code.
+- L02 pos2 ("3)'"): carries what look like two distinct marks (a close-paren tick and a
+  separate raised apostrophe) - unclear if this is one compound sign or a tick plus stray ink.
+- L02 pos17 and several others: the digit 5 is drawn as a loose loop that is easily mistaken
+  for a letter (f, S) - cross-checked against unambiguous 5s elsewhere on the page.
+- L03 pos4, L09 pos0, L19 pos5: a wavy "tilde" shape, sometimes with what looks like a
+  hooked close-paren tail attached - treated as one drawn symbol.
+- Several isolated close-paren marks with no adjacent digit at all (e.g. L08 pos19, and
+  a similar case at the end of what I read as L02) - possibly a null or space symbol reused
+  through the letter, transcribed literally as [paren].
+- Dark-ink letters/insertions in the gloss (an "N" in L01, a "P" in L02, another dark
+  insertion in L06) written in a visibly blacker ink than the rest of the tiny gloss hand -
+  possibly a later correction or emphasis by a different hand.
+- L19 (the long unglossed line): the first physical row (crop_u2_top.jpg) is legible for its
+  first six signs - [triangle], 59, 24, a lowercase-n-like shape with a small loop, 34, and a
+  tilde - but the remaining roughly two-thirds of that row is written so thinly/faintly that
+  individual digit shapes cannot be resolved even at 3-5x zoom and contrast enhancement; I
+  transcribed this stretch as a single illegible placeholder rather than guess digits. The
+  second physical row (crop_u2_bottom.jpg) is clear: 6), 54, 8), 65, 11, then the plain
+  abbreviation "&a."
+
+Guess at what the two unglossed lines might encode, from on-page patterns only (no outside
+Spanish-vocabulary guessing): L18 is short (only 5 groups: 61.68.2).88.18.) and could be a
+single short word, a name-abbreviation, or a number/date, given its brevity and the fact it
+follows directly after "forma." with no further prose framing. L19 opens with a triangle,
+the same drawn-shape family used mid-line elsewhere in the body ([triangle] also appears in
+what I read as L04 and L01), which may suggest it functions as a null, a paragraph marker, or
+a proper-name flag rather than an ordinary letter-code, since drawn shapes elsewhere in the
+body seem to appear roughly where less common letters (or perhaps proper nouns) would fall.
+Beyond that I have no pattern-based basis for a further guess; I have not used assumed Spanish
+words to fill the illegible stretch.
