@@ -1,557 +1,611 @@
 {
- "bundle": "NA 2.01.27.05 invnr 12",
- "total_leaves": 233,
- "sampling": "42 leaves evenly spaced across the 233-leaf bundle (thumbnail, service.archief.nl /thumb/) plus 11 denser leaves in the 186-198 cluster and 5 leaves (185,191,199,200,221) re-fetched at IIIF 1200px width for legibility -- 53 distinct leaves eye-checked of 233 (23%), not exhaustive",
- "leaves": [
-  {
-   "order": 1,
-   "label": "NL-HaNA_2.01.27.05_12_0001.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/5ffb0796-5813-4793-8038-cbd383bc1ef0",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/5ffb0796-5813-4793-8038-cbd383bc1ef0.jp2/info.json",
-   "local_thumb": "images/001.jpg",
-   "local_med": null,
-   "eye_check": "cover/title leaf, no cipher"
-  },
-  {
-   "order": 7,
-   "label": "NL-HaNA_2.01.27.05_12_0007.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/3760cbc7-ea41-4776-b7f0-960dc0403329",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/3760cbc7-ea41-4776-b7f0-960dc0403329.jp2/info.json",
-   "local_thumb": "images/007.jpg",
-   "local_med": null,
-   "eye_check": "plain prose (French), no cipher"
-  },
-  {
-   "order": 13,
-   "label": "NL-HaNA_2.01.27.05_12_0013.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/311cb7b0-336a-44b3-9a5f-59a0aea8a8d4",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/311cb7b0-336a-44b3-9a5f-59a0aea8a8d4.jp2/info.json",
-   "local_thumb": "images/013.jpg",
-   "local_med": null,
-   "eye_check": "plain prose, no cipher"
-  },
-  {
-   "order": 19,
-   "label": "NL-HaNA_2.01.27.05_12_0019.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/9a4225f3-e214-4aaa-bbe2-acbf87e83b5c",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/9a4225f3-e214-4aaa-bbe2-acbf87e83b5c.jp2/info.json",
-   "local_thumb": "images/019.jpg",
-   "local_med": null,
-   "eye_check": "plain prose, no cipher"
-  },
-  {
-   "order": 25,
-   "label": "NL-HaNA_2.01.27.05_12_0025.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/b5236f9f-1ace-4a30-9632-1c04ff96f2dd",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/b5236f9f-1ace-4a30-9632-1c04ff96f2dd.jp2/info.json",
-   "local_thumb": "images/025.jpg",
-   "local_med": null,
-   "eye_check": "plain prose, signed, no cipher"
-  },
-  {
-   "order": 31,
-   "label": "NL-HaNA_2.01.27.05_12_0031.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/b8dde4a7-00cc-4aab-9f45-3ca9f83bfe5e",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/b8dde4a7-00cc-4aab-9f45-3ca9f83bfe5e.jp2/info.json",
-   "local_thumb": "images/031.jpg",
-   "local_med": null,
-   "eye_check": "plain prose (admin), no cipher"
-  },
-  {
-   "order": 37,
-   "label": "NL-HaNA_2.01.27.05_12_0037.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/94039642-139c-48f5-b630-cf19e69904dc",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/94039642-139c-48f5-b630-cf19e69904dc.jp2/info.json",
-   "local_thumb": "images/037.jpg",
-   "local_med": null,
-   "eye_check": "plain prose, signed, no cipher"
-  },
-  {
-   "order": 43,
-   "label": "NL-HaNA_2.01.27.05_12_0043.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/9c2bc5e9-7d82-4823-8b0c-01f36b6c58ef",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/9c2bc5e9-7d82-4823-8b0c-01f36b6c58ef.jp2/info.json",
-   "local_thumb": "images/043.jpg",
-   "local_med": null,
-   "eye_check": "blank"
-  },
-  {
-   "order": 49,
-   "label": "NL-HaNA_2.01.27.05_12_0049.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/923f1f1b-3c3f-489c-bced-30af91c18e12",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/923f1f1b-3c3f-489c-bced-30af91c18e12.jp2/info.json",
-   "local_thumb": "images/049.jpg",
-   "local_med": null,
-   "eye_check": "plain prose, no cipher"
-  },
-  {
-   "order": 55,
-   "label": "NL-HaNA_2.01.27.05_12_0055.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/af15a8eb-4f94-4cdc-ae49-aa6dc88a996c",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/af15a8eb-4f94-4cdc-ae49-aa6dc88a996c.jp2/info.json",
-   "local_thumb": "images/055.jpg",
-   "local_med": null,
-   "eye_check": "tabular form, no cipher"
-  },
-  {
-   "order": 60,
-   "label": "NL-HaNA_2.01.27.05_12_0060.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/a49d8590-e317-4171-a9c3-1aa5724c72c3",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/a49d8590-e317-4171-a9c3-1aa5724c72c3.jp2/info.json",
-   "local_thumb": "images/060.jpg",
-   "local_med": null,
-   "eye_check": "plain prose, no cipher"
-  },
-  {
-   "order": 66,
-   "label": "NL-HaNA_2.01.27.05_12_0066.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/1995d6dd-6551-4971-b30c-208f224d4574",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/1995d6dd-6551-4971-b30c-208f224d4574.jp2/info.json",
-   "local_thumb": "images/066.jpg",
-   "local_med": null,
-   "eye_check": "plain prose + printed heading 'Rapport a l'Empereur', no cipher"
-  },
-  {
-   "order": 72,
-   "label": "NL-HaNA_2.01.27.05_12_0072.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/6b25f757-b3d8-4238-827d-7868412cd9a0",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/6b25f757-b3d8-4238-827d-7868412cd9a0.jp2/info.json",
-   "local_thumb": "images/072.jpg",
-   "local_med": null,
-   "eye_check": "plain prose, short, no cipher"
-  },
-  {
-   "order": 78,
-   "label": "NL-HaNA_2.01.27.05_12_0078.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/f7ac3661-4dad-43d5-9497-70260bcc9bfa",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/f7ac3661-4dad-43d5-9497-70260bcc9bfa.jp2/info.json",
-   "local_thumb": "images/078.jpg",
-   "local_med": null,
-   "eye_check": "plain prose, no cipher"
-  },
-  {
-   "order": 84,
-   "label": "NL-HaNA_2.01.27.05_12_0084.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/bc0403e4-3d24-4a20-888a-38b94d794c3e",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/bc0403e4-3d24-4a20-888a-38b94d794c3e.jp2/info.json",
-   "local_thumb": "images/084.jpg",
-   "local_med": null,
-   "eye_check": "plain prose, no cipher"
-  },
-  {
-   "order": 90,
-   "label": "NL-HaNA_2.01.27.05_12_0090.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/adeeada0-26e2-4b27-9d48-35a58df14647",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/adeeada0-26e2-4b27-9d48-35a58df14647.jp2/info.json",
-   "local_thumb": "images/090.jpg",
-   "local_med": null,
-   "eye_check": "plain prose, short, no cipher"
-  },
-  {
-   "order": 96,
-   "label": "NL-HaNA_2.01.27.05_12_0096.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/e80cefa2-dd23-4adb-8e61-25d378373052",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/e80cefa2-dd23-4adb-8e61-25d378373052.jp2/info.json",
-   "local_thumb": "images/096.jpg",
-   "local_med": null,
-   "eye_check": "plain prose, no cipher"
-  },
-  {
-   "order": 102,
-   "label": "NL-HaNA_2.01.27.05_12_0102.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/d382e4b5-5e6a-4376-8c75-8aefbcaaa9c9",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/d382e4b5-5e6a-4376-8c75-8aefbcaaa9c9.jp2/info.json",
-   "local_thumb": "images/102.jpg",
-   "local_med": null,
-   "eye_check": "plain prose, no cipher"
-  },
-  {
-   "order": 108,
-   "label": "NL-HaNA_2.01.27.05_12_0108.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/41656e10-3fd8-464c-8a70-01cd23e3e900",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/41656e10-3fd8-464c-8a70-01cd23e3e900.jp2/info.json",
-   "local_thumb": "images/108.jpg",
-   "local_med": null,
-   "eye_check": "plain prose, no cipher"
-  },
-  {
-   "order": 114,
-   "label": "NL-HaNA_2.01.27.05_12_0114.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/53c81472-8f9e-47d5-a529-ff9b105f9258",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/53c81472-8f9e-47d5-a529-ff9b105f9258.jp2/info.json",
-   "local_thumb": "images/114.jpg",
-   "local_med": null,
-   "eye_check": "plain prose, no cipher"
-  },
-  {
-   "order": 120,
-   "label": "NL-HaNA_2.01.27.05_12_0120.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/94f84e30-6a39-46af-a818-2f11ce664094",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/94f84e30-6a39-46af-a818-2f11ce664094.jp2/info.json",
-   "local_thumb": "images/120.jpg",
-   "local_med": null,
-   "eye_check": "blank + plain prose, no cipher"
-  },
-  {
-   "order": 126,
-   "label": "NL-HaNA_2.01.27.05_12_0126.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/7f601976-390f-422c-8d7a-41d253f77769",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/7f601976-390f-422c-8d7a-41d253f77769.jp2/info.json",
-   "local_thumb": "images/126.jpg",
-   "local_med": null,
-   "eye_check": "plain prose, no cipher"
-  },
-  {
-   "order": 132,
-   "label": "NL-HaNA_2.01.27.05_12_0132.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/44c9983d-8635-4fa3-8e00-02ee22968349",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/44c9983d-8635-4fa3-8e00-02ee22968349.jp2/info.json",
-   "local_thumb": "images/132.jpg",
-   "local_med": null,
-   "eye_check": "plain prose, no cipher"
-  },
-  {
-   "order": 138,
-   "label": "NL-HaNA_2.01.27.05_12_0138.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/f9be8539-6373-4915-abd8-bcbbb065e61c",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/f9be8539-6373-4915-abd8-bcbbb065e61c.jp2/info.json",
-   "local_thumb": "images/138.jpg",
-   "local_med": null,
-   "eye_check": "plain prose, no cipher"
-  },
-  {
-   "order": 144,
-   "label": "NL-HaNA_2.01.27.05_12_0144.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/326c8808-fa9f-4d8f-b4ce-a9d7cf0b14ad",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/326c8808-fa9f-4d8f-b4ce-a9d7cf0b14ad.jp2/info.json",
-   "local_thumb": "images/144.jpg",
-   "local_med": null,
-   "eye_check": "plain prose, no cipher"
-  },
-  {
-   "order": 150,
-   "label": "NL-HaNA_2.01.27.05_12_0150.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/790d9a98-20b5-4dab-9a85-90cd4b5f0f81",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/790d9a98-20b5-4dab-9a85-90cd4b5f0f81.jp2/info.json",
-   "local_thumb": "images/150.jpg",
-   "local_med": null,
-   "eye_check": "plain prose, no cipher"
-  },
-  {
-   "order": 156,
-   "label": "NL-HaNA_2.01.27.05_12_0156.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/83ba0086-eda4-48c6-9e9f-3f48a38d35f1",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/83ba0086-eda4-48c6-9e9f-3f48a38d35f1.jp2/info.json",
-   "local_thumb": "images/156.jpg",
-   "local_med": null,
-   "eye_check": "plain prose, no cipher"
-  },
-  {
-   "order": 162,
-   "label": "NL-HaNA_2.01.27.05_12_0162.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/0346436e-3ba6-428e-bd66-a8fca0f57c9e",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/0346436e-3ba6-428e-bd66-a8fca0f57c9e.jp2/info.json",
-   "local_thumb": "images/162.jpg",
-   "local_med": null,
-   "eye_check": "plain prose, no cipher"
-  },
-  {
-   "order": 168,
-   "label": "NL-HaNA_2.01.27.05_12_0168.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/986dede3-2357-4778-ad77-980fc98622f7",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/986dede3-2357-4778-ad77-980fc98622f7.jp2/info.json",
-   "local_thumb": "images/168.jpg",
-   "local_med": null,
-   "eye_check": "plain prose, no cipher"
-  },
-  {
-   "order": 174,
-   "label": "NL-HaNA_2.01.27.05_12_0174.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/4831a82a-6439-4bbe-a847-8c7c113a983e",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/4831a82a-6439-4bbe-a847-8c7c113a983e.jp2/info.json",
-   "local_thumb": "images/174.jpg",
-   "local_med": null,
-   "eye_check": "blank divider + start of a new prose item, no cipher"
-  },
-  {
-   "order": 179,
-   "label": "NL-HaNA_2.01.27.05_12_0179.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/c8538267-370b-49c6-8aec-b6d2888d4cb6",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/c8538267-370b-49c6-8aec-b6d2888d4cb6.jp2/info.json",
-   "local_thumb": "images/179.jpg",
-   "local_med": null,
-   "eye_check": "plain prose, short, signed, no cipher"
-  },
-  {
-   "order": 180,
-   "local_thumb": "images/180.jpg",
-   "eye_check": "plain prose (French), signed, no cipher"
-  },
-  {
-   "order": 181,
-   "local_thumb": "images/181.jpg",
-   "eye_check": "plain prose, no cipher"
-  },
-  {
-   "order": 182,
-   "local_thumb": "images/182.jpg",
-   "eye_check": "plain prose, dated 1814, no cipher"
-  },
-  {
-   "order": 183,
-   "local_thumb": "images/183.jpg",
-   "eye_check": "plain prose, no cipher"
-  },
-  {
-   "order": 184,
-   "local_thumb": "images/184.jpg",
-   "eye_check": "plain prose, signed, no cipher"
-  },
-  {
-   "order": 185,
-   "label": "NL-HaNA_2.01.27.05_12_0185.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/a4e0dc01-43ca-4e11-aa69-6d47e81a5cca",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/a4e0dc01-43ca-4e11-aa69-6d47e81a5cca.jp2/info.json",
-   "local_thumb": null,
-   "local_med": "images/185_med.jpg",
-   "eye_check": "'Etat de Service du General de Division J.W. Janssens', No.37, Paris 5 Janvier 1813, tabular CV, signed -- no cipher"
-  },
-  {
-   "order": 186,
-   "label": "NL-HaNA_2.01.27.05_12_0186.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/58eae3a3-bb4d-47ac-977f-213d8d0cef34",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/58eae3a3-bb4d-47ac-977f-213d8d0cef34.jp2/info.json",
-   "local_thumb": "images/186.jpg",
-   "local_med": "images/186_med.jpg",
-   "eye_check": "blank (faint show-through only)"
-  },
-  {
-   "order": 187,
-   "label": "NL-HaNA_2.01.27.05_12_0187.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/9994311d-b626-4c75-a41d-2772f0b17a70",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/9994311d-b626-4c75-a41d-2772f0b17a70.jp2/info.json",
-   "local_thumb": "images/187.jpg",
-   "local_med": "images/187_med.jpg",
-   "eye_check": "plain prose report, signed, no cipher"
-  },
-  {
-   "order": 188,
-   "label": "NL-HaNA_2.01.27.05_12_0188.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/bf152dd2-ce11-493c-bf0e-828193041803",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/bf152dd2-ce11-493c-bf0e-828193041803.jp2/info.json",
-   "local_thumb": "images/188.jpg",
-   "local_med": "images/188_med.jpg",
-   "eye_check": "RAW CIPHER ONLY, no gloss anywhere on the leaf found so far: heading reads Numero Un. Triplicata (corrects VX-CS05 illegible-digit read -- this is dispatch No.1, Triplicata not Duplicata); ends Signe [name]",
-   "local_hires_2561": "images/188_hi.jpg"
-  },
-  {
-   "order": 189,
-   "label": "NL-HaNA_2.01.27.05_12_0189.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/a15a39c2-4190-4aa2-8bf5-57d965b62ded",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/a15a39c2-4190-4aa2-8bf5-57d965b62ded.jp2/info.json",
-   "local_thumb": "images/189.jpg",
-   "local_med": "images/189_med.jpg",
-   "eye_check": "plain prose, no cipher"
-  },
-  {
-   "order": 190,
-   "label": "NL-HaNA_2.01.27.05_12_0190.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/41b9da74-07f2-481d-b2f2-7301302f5943",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/41b9da74-07f2-481d-b2f2-7301302f5943.jp2/info.json",
-   "local_thumb": "images/190.jpg",
-   "local_med": "images/190_med.jpg",
-   "eye_check": "Right page top: short glossed excerpt of dispatch Numero Deux (the same text leaf 191 glosses in full); below it, headed Numero Deux. (Duplicata), a CIPHERTEXT-ONLY clean copy of the same dispatch (confirmed: its closing codes 1082.79.441.497.689.536.843.990.420 match leaf 192 bottom -- Gouverneur General le trente Juin. Fin.)",
-   "local_hires_2561": "images/190_hi.jpg"
-  },
-  {
-   "order": 191,
-   "label": "NL-HaNA_2.01.27.05_12_0191.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/0bf1881b-67af-451c-8f94-69a97aad98fc",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/0bf1881b-67af-451c-8f94-69a97aad98fc.jp2/info.json",
-   "local_thumb": null,
-   "local_med": "images/191_med.jpg",
-   "eye_check": "CIPHER+DECIPHERMENT, heading N.2 (Duplicata): full interlinear French gloss word/syllable under (most) codes, several scribal corrections (crossed-out drafts); continues onto leaf 192",
-   "local_hires_2561": "images/191_hi.jpg"
-  },
-  {
-   "order": 192,
-   "label": "NL-HaNA_2.01.27.05_12_0192.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/5f81190c-4c3e-42bd-847e-dcecb5b4f9b4",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/5f81190c-4c3e-42bd-847e-dcecb5b4f9b4.jp2/info.json",
-   "local_thumb": "images/192.jpg",
-   "local_med": "images/192_med.jpg",
-   "eye_check": "CIPHER+DECIPHERMENT, direct continuation of leaf 191s N.2 (Duplicata) gloss (the word split cer-/ti.fi.e. = certifie spans the 191/192 leaf boundary); ends Gouverneur General le trente Juin. Fin. Signe [name]",
-   "local_hires_2561": "images/192_hi.jpg"
-  },
-  {
-   "order": 193,
-   "label": "NL-HaNA_2.01.27.05_12_0193.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/c606166f-5fc0-4987-b0d0-0400ac78674c",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/c606166f-5fc0-4987-b0d0-0400ac78674c.jp2/info.json",
-   "local_thumb": "images/193.jpg",
-   "local_med": "images/193_med.jpg",
-   "eye_check": "blank divider (dark + grey inner cover)"
-  },
-  {
-   "order": 194,
-   "label": "NL-HaNA_2.01.27.05_12_0194.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/c35cbf37-7cec-4af3-92d3-d6daada5fdaf",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/c35cbf37-7cec-4af3-92d3-d6daada5fdaf.jp2/info.json",
-   "local_thumb": "images/194.jpg",
-   "local_med": "images/194_med.jpg",
-   "eye_check": "heading eye-read 'N.6' '(Duplicata)' -- but body is PLAIN CONTINUOUS FRENCH PROSE, no cipher numbers"
-  },
-  {
-   "order": 195,
-   "label": "NL-HaNA_2.01.27.05_12_0195.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/e0a563c7-76ad-4df3-a829-3406c81d9120",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/e0a563c7-76ad-4df3-a829-3406c81d9120.jp2/info.json",
-   "local_thumb": "images/195.jpg",
-   "local_med": "images/195_med.jpg",
-   "eye_check": "continuation of 194: 'N.6 (Duplicata) Batavia 9 Juillet' heading, plain French prose, no cipher numbers"
-  },
-  {
-   "order": 196,
-   "label": "NL-HaNA_2.01.27.05_12_0196.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/729fc14c-d21a-4275-bd9f-0b7de1a40bdd",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/729fc14c-d21a-4275-bd9f-0b7de1a40bdd.jp2/info.json",
-   "local_thumb": "images/196.jpg",
-   "local_med": "images/196_med.jpg",
-   "eye_check": "blank (faint show-through only)"
-  },
-  {
-   "order": 197,
-   "label": "NL-HaNA_2.01.27.05_12_0197.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/9618166e-7e9f-4dee-afbd-2706ec7ffaa7",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/9618166e-7e9f-4dee-afbd-2706ec7ffaa7.jp2/info.json",
-   "local_thumb": "images/197.jpg",
-   "local_med": null,
-   "eye_check": "blank divider pages (archive stamp only)"
-  },
-  {
-   "order": 198,
-   "label": "NL-HaNA_2.01.27.05_12_0198.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/e58671b6-0977-4bf2-93aa-f01c431a2b1f",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/e58671b6-0977-4bf2-93aa-f01c431a2b1f.jp2/info.json",
-   "local_thumb": "images/198.jpg",
-   "local_med": "images/198_med.jpg",
-   "eye_check": "RAW CIPHER ONLY, heading reads Numero Trois (Duplicata) (corrects VX-CS05 eye-read Numero 2 -- pixel match confirms this is dispatch No.3, matching leaves 199-200s opening codes exactly), no gloss anywhere; ends with a signature",
-   "local_hires_2561": "images/198_hi.jpg"
-  },
-  {
-   "order": 199,
-   "label": "NL-HaNA_2.01.27.05_12_0199.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/9d81a97b-0b19-45ee-8c82-3637d7117c61",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/9d81a97b-0b19-45ee-8c82-3637d7117c61.jp2/info.json",
-   "local_thumb": null,
-   "local_med": "images/199_med.jpg",
-   "eye_check": "CIPHER+DECIPHERMENT, heading Numero 3. (Duplicata): 5-column table, each cell one numeric code with its French gloss word below, read row-major left to right; continues onto leaf 200",
-   "local_hires_2561": "images/199_hi.jpg"
-  },
-  {
-   "order": 200,
-   "label": "NL-HaNA_2.01.27.05_12_0200.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/9c01a739-6ed2-4229-9a7f-38c4850207ec",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/9c01a739-6ed2-4229-9a7f-38c4850207ec.jp2/info.json",
-   "local_thumb": null,
-   "local_med": "images/200_med.jpg",
-   "eye_check": "CIPHER+DECIPHERMENT, direct continuation of leaf 199s 5-column table; several crossed-out/corrected cells; ends Fin. Signe [name], dated onze Juillet",
-   "local_hires_2561": "images/200_hi.jpg"
-  },
-  {
-   "order": 201,
-   "local_thumb": "images/201.jpg",
-   "eye_check": "mostly blank, tabular column headers only, no cipher"
-  },
-  {
-   "order": 202,
-   "local_thumb": "images/202.jpg",
-   "eye_check": "plain prose letter, no cipher"
-  },
-  {
-   "order": 203,
-   "label": "NL-HaNA_2.01.27.05_12_0203.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/c3a5bf3f-af4c-45b0-ac51-0d2387e0d0c5",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/c3a5bf3f-af4c-45b0-ac51-0d2387e0d0c5.jp2/info.json",
-   "local_thumb": "images/203.jpg",
-   "local_med": null,
-   "eye_check": "blank"
-  },
-  {
-   "order": 204,
-   "local_thumb": "images/204.jpg",
-   "eye_check": "tabular form (columnar, handwritten words not digits), no cipher"
-  },
-  {
-   "order": 205,
-   "local_thumb": "images/205.jpg",
-   "eye_check": "tabular form (columnar), no cipher"
-  },
-  {
-   "order": 206,
-   "local_thumb": "images/206.jpg",
-   "eye_check": "tabular form (columnar), no cipher"
-  },
-  {
-   "order": 207,
-   "local_thumb": "images/207.jpg",
-   "eye_check": "plain prose, no cipher"
-  },
-  {
-   "order": 208,
-   "local_thumb": "images/208.jpg",
-   "eye_check": "blank / mostly blank"
-  },
-  {
-   "order": 209,
-   "label": "NL-HaNA_2.01.27.05_12_0209.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/f1775c8e-3ed3-4348-8c3d-d2bc72c57ace",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/f1775c8e-3ed3-4348-8c3d-d2bc72c57ace.jp2/info.json",
-   "local_thumb": "images/209.jpg",
-   "local_med": null,
-   "eye_check": "mostly blank, a few words top-left corner, no cipher"
-  },
-  {
-   "order": 210,
-   "local_thumb": "images/210.jpg",
-   "eye_check": "plain prose, signed, no cipher"
-  },
-  {
-   "order": 215,
-   "label": "NL-HaNA_2.01.27.05_12_0215.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/edcf6908-8487-4827-bc5a-2a2dd84f3d15",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/edcf6908-8487-4827-bc5a-2a2dd84f3d15.jp2/info.json",
-   "local_thumb": "images/215.jpg",
-   "local_med": null,
-   "eye_check": "blank"
-  },
-  {
-   "order": 221,
-   "label": "NL-HaNA_2.01.27.05_12_0221.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/4ee272a7-60f6-4238-84a5-a84205a58a07",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/4ee272a7-60f6-4238-84a5-a84205a58a07.jp2/info.json",
-   "local_thumb": null,
-   "local_med": "images/221_med.jpg",
-   "eye_check": "sealed cover letter, Paris 8 mai 1811, to 'Monsieur Lozy, Chef de division du ministere de la Marine' re: manuscripts of Josse and Langle -- plain prose, no cipher, unrelated administrative correspondence"
-  },
-  {
-   "order": 227,
-   "label": "NL-HaNA_2.01.27.05_12_0227.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/a23e46ff-a804-45aa-9822-7b6d8308fb6d",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/a23e46ff-a804-45aa-9822-7b6d8308fb6d.jp2/info.json",
-   "local_thumb": "images/227.jpg",
-   "local_med": null,
-   "eye_check": "plain prose + inserted note/tag, no cipher"
-  },
-  {
-   "order": 233,
-   "label": "NL-HaNA_2.01.27.05_12_0233.jpg",
-   "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/9c1cba50-7951-4618-baf5-315e6b4b0280",
-   "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/9c1cba50-7951-4618-baf5-315e6b4b0280.jp2/info.json",
-   "local_thumb": "images/233.jpg",
-   "local_med": null,
-   "eye_check": "blank/edge leaf, end of bundle"
-  }
- ],
- "note_25sept_VX-RD02": "gap leaves 180-184/201-202/204-208/210 thumbnailed (all plain prose/tabular, no cipher); leaves 188/190/191/192/198/199/200 refetched at IIIF full/2561 for transcription (images/NNN_hi.jpg)"
+    "bundle": "NA 2.01.27.05 invnr 12",
+    "total_leaves": 233,
+    "sampling": "42 leaves evenly spaced across the 233-leaf bundle (thumbnail, service.archief.nl /thumb/) plus 11 denser leaves in the 186-198 cluster and 5 leaves (185,191,199,200,221) re-fetched at IIIF 1200px width for legibility -- 53 distinct leaves eye-checked of 233 (23%), not exhaustive | VX-RD02B (25 Sept 2026): densified sweep of leaves outside 180-210 (every 4th of the 167 previously-unsampled leaves, 42 thumbnails) + full individual check of 207-219 after leaf 211 sweep hit found the No.5 dispatch cluster (210-214); leaves 1-179/218-233 still only sparse-sampled.",
+    "leaves": [
+        {
+            "order": 1,
+            "label": "NL-HaNA_2.01.27.05_12_0001.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/5ffb0796-5813-4793-8038-cbd383bc1ef0",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/5ffb0796-5813-4793-8038-cbd383bc1ef0.jp2/info.json",
+            "local_thumb": "images/001.jpg",
+            "local_med": null,
+            "eye_check": "cover/title leaf, no cipher"
+        },
+        {
+            "order": 7,
+            "label": "NL-HaNA_2.01.27.05_12_0007.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/3760cbc7-ea41-4776-b7f0-960dc0403329",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/3760cbc7-ea41-4776-b7f0-960dc0403329.jp2/info.json",
+            "local_thumb": "images/007.jpg",
+            "local_med": null,
+            "eye_check": "plain prose (French), no cipher"
+        },
+        {
+            "order": 13,
+            "label": "NL-HaNA_2.01.27.05_12_0013.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/311cb7b0-336a-44b3-9a5f-59a0aea8a8d4",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/311cb7b0-336a-44b3-9a5f-59a0aea8a8d4.jp2/info.json",
+            "local_thumb": "images/013.jpg",
+            "local_med": null,
+            "eye_check": "plain prose, no cipher"
+        },
+        {
+            "order": 19,
+            "label": "NL-HaNA_2.01.27.05_12_0019.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/9a4225f3-e214-4aaa-bbe2-acbf87e83b5c",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/9a4225f3-e214-4aaa-bbe2-acbf87e83b5c.jp2/info.json",
+            "local_thumb": "images/019.jpg",
+            "local_med": null,
+            "eye_check": "plain prose, no cipher"
+        },
+        {
+            "order": 25,
+            "label": "NL-HaNA_2.01.27.05_12_0025.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/b5236f9f-1ace-4a30-9632-1c04ff96f2dd",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/b5236f9f-1ace-4a30-9632-1c04ff96f2dd.jp2/info.json",
+            "local_thumb": "images/025.jpg",
+            "local_med": null,
+            "eye_check": "plain prose, signed, no cipher"
+        },
+        {
+            "order": 31,
+            "label": "NL-HaNA_2.01.27.05_12_0031.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/b8dde4a7-00cc-4aab-9f45-3ca9f83bfe5e",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/b8dde4a7-00cc-4aab-9f45-3ca9f83bfe5e.jp2/info.json",
+            "local_thumb": "images/031.jpg",
+            "local_med": null,
+            "eye_check": "plain prose (admin), no cipher"
+        },
+        {
+            "order": 37,
+            "label": "NL-HaNA_2.01.27.05_12_0037.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/94039642-139c-48f5-b630-cf19e69904dc",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/94039642-139c-48f5-b630-cf19e69904dc.jp2/info.json",
+            "local_thumb": "images/037.jpg",
+            "local_med": null,
+            "eye_check": "plain prose, signed, no cipher"
+        },
+        {
+            "order": 43,
+            "label": "NL-HaNA_2.01.27.05_12_0043.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/9c2bc5e9-7d82-4823-8b0c-01f36b6c58ef",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/9c2bc5e9-7d82-4823-8b0c-01f36b6c58ef.jp2/info.json",
+            "local_thumb": "images/043.jpg",
+            "local_med": null,
+            "eye_check": "blank"
+        },
+        {
+            "order": 49,
+            "label": "NL-HaNA_2.01.27.05_12_0049.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/923f1f1b-3c3f-489c-bced-30af91c18e12",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/923f1f1b-3c3f-489c-bced-30af91c18e12.jp2/info.json",
+            "local_thumb": "images/049.jpg",
+            "local_med": null,
+            "eye_check": "plain prose, no cipher"
+        },
+        {
+            "order": 55,
+            "label": "NL-HaNA_2.01.27.05_12_0055.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/af15a8eb-4f94-4cdc-ae49-aa6dc88a996c",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/af15a8eb-4f94-4cdc-ae49-aa6dc88a996c.jp2/info.json",
+            "local_thumb": "images/055.jpg",
+            "local_med": null,
+            "eye_check": "tabular form, no cipher"
+        },
+        {
+            "order": 60,
+            "label": "NL-HaNA_2.01.27.05_12_0060.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/a49d8590-e317-4171-a9c3-1aa5724c72c3",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/a49d8590-e317-4171-a9c3-1aa5724c72c3.jp2/info.json",
+            "local_thumb": "images/060.jpg",
+            "local_med": null,
+            "eye_check": "plain prose, no cipher"
+        },
+        {
+            "order": 66,
+            "label": "NL-HaNA_2.01.27.05_12_0066.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/1995d6dd-6551-4971-b30c-208f224d4574",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/1995d6dd-6551-4971-b30c-208f224d4574.jp2/info.json",
+            "local_thumb": "images/066.jpg",
+            "local_med": null,
+            "eye_check": "plain prose + printed heading 'Rapport a l'Empereur', no cipher"
+        },
+        {
+            "order": 72,
+            "label": "NL-HaNA_2.01.27.05_12_0072.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/6b25f757-b3d8-4238-827d-7868412cd9a0",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/6b25f757-b3d8-4238-827d-7868412cd9a0.jp2/info.json",
+            "local_thumb": "images/072.jpg",
+            "local_med": null,
+            "eye_check": "plain prose, short, no cipher"
+        },
+        {
+            "order": 78,
+            "label": "NL-HaNA_2.01.27.05_12_0078.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/f7ac3661-4dad-43d5-9497-70260bcc9bfa",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/f7ac3661-4dad-43d5-9497-70260bcc9bfa.jp2/info.json",
+            "local_thumb": "images/078.jpg",
+            "local_med": null,
+            "eye_check": "plain prose, no cipher"
+        },
+        {
+            "order": 84,
+            "label": "NL-HaNA_2.01.27.05_12_0084.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/bc0403e4-3d24-4a20-888a-38b94d794c3e",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/bc0403e4-3d24-4a20-888a-38b94d794c3e.jp2/info.json",
+            "local_thumb": "images/084.jpg",
+            "local_med": null,
+            "eye_check": "plain prose, no cipher"
+        },
+        {
+            "order": 90,
+            "label": "NL-HaNA_2.01.27.05_12_0090.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/adeeada0-26e2-4b27-9d48-35a58df14647",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/adeeada0-26e2-4b27-9d48-35a58df14647.jp2/info.json",
+            "local_thumb": "images/090.jpg",
+            "local_med": null,
+            "eye_check": "plain prose, short, no cipher"
+        },
+        {
+            "order": 96,
+            "label": "NL-HaNA_2.01.27.05_12_0096.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/e80cefa2-dd23-4adb-8e61-25d378373052",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/e80cefa2-dd23-4adb-8e61-25d378373052.jp2/info.json",
+            "local_thumb": "images/096.jpg",
+            "local_med": null,
+            "eye_check": "plain prose, no cipher"
+        },
+        {
+            "order": 102,
+            "label": "NL-HaNA_2.01.27.05_12_0102.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/d382e4b5-5e6a-4376-8c75-8aefbcaaa9c9",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/d382e4b5-5e6a-4376-8c75-8aefbcaaa9c9.jp2/info.json",
+            "local_thumb": "images/102.jpg",
+            "local_med": null,
+            "eye_check": "plain prose, no cipher"
+        },
+        {
+            "order": 108,
+            "label": "NL-HaNA_2.01.27.05_12_0108.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/41656e10-3fd8-464c-8a70-01cd23e3e900",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/41656e10-3fd8-464c-8a70-01cd23e3e900.jp2/info.json",
+            "local_thumb": "images/108.jpg",
+            "local_med": null,
+            "eye_check": "plain prose, no cipher"
+        },
+        {
+            "order": 114,
+            "label": "NL-HaNA_2.01.27.05_12_0114.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/53c81472-8f9e-47d5-a529-ff9b105f9258",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/53c81472-8f9e-47d5-a529-ff9b105f9258.jp2/info.json",
+            "local_thumb": "images/114.jpg",
+            "local_med": null,
+            "eye_check": "plain prose, no cipher"
+        },
+        {
+            "order": 120,
+            "label": "NL-HaNA_2.01.27.05_12_0120.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/94f84e30-6a39-46af-a818-2f11ce664094",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/94f84e30-6a39-46af-a818-2f11ce664094.jp2/info.json",
+            "local_thumb": "images/120.jpg",
+            "local_med": null,
+            "eye_check": "blank + plain prose, no cipher"
+        },
+        {
+            "order": 126,
+            "label": "NL-HaNA_2.01.27.05_12_0126.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/7f601976-390f-422c-8d7a-41d253f77769",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/7f601976-390f-422c-8d7a-41d253f77769.jp2/info.json",
+            "local_thumb": "images/126.jpg",
+            "local_med": null,
+            "eye_check": "plain prose, no cipher"
+        },
+        {
+            "order": 132,
+            "label": "NL-HaNA_2.01.27.05_12_0132.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/44c9983d-8635-4fa3-8e00-02ee22968349",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/44c9983d-8635-4fa3-8e00-02ee22968349.jp2/info.json",
+            "local_thumb": "images/132.jpg",
+            "local_med": null,
+            "eye_check": "plain prose, no cipher"
+        },
+        {
+            "order": 138,
+            "label": "NL-HaNA_2.01.27.05_12_0138.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/f9be8539-6373-4915-abd8-bcbbb065e61c",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/f9be8539-6373-4915-abd8-bcbbb065e61c.jp2/info.json",
+            "local_thumb": "images/138.jpg",
+            "local_med": null,
+            "eye_check": "plain prose, no cipher"
+        },
+        {
+            "order": 144,
+            "label": "NL-HaNA_2.01.27.05_12_0144.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/326c8808-fa9f-4d8f-b4ce-a9d7cf0b14ad",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/326c8808-fa9f-4d8f-b4ce-a9d7cf0b14ad.jp2/info.json",
+            "local_thumb": "images/144.jpg",
+            "local_med": null,
+            "eye_check": "plain prose, no cipher"
+        },
+        {
+            "order": 150,
+            "label": "NL-HaNA_2.01.27.05_12_0150.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/790d9a98-20b5-4dab-9a85-90cd4b5f0f81",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/790d9a98-20b5-4dab-9a85-90cd4b5f0f81.jp2/info.json",
+            "local_thumb": "images/150.jpg",
+            "local_med": null,
+            "eye_check": "plain prose, no cipher"
+        },
+        {
+            "order": 156,
+            "label": "NL-HaNA_2.01.27.05_12_0156.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/83ba0086-eda4-48c6-9e9f-3f48a38d35f1",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/83ba0086-eda4-48c6-9e9f-3f48a38d35f1.jp2/info.json",
+            "local_thumb": "images/156.jpg",
+            "local_med": null,
+            "eye_check": "plain prose, no cipher"
+        },
+        {
+            "order": 162,
+            "label": "NL-HaNA_2.01.27.05_12_0162.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/0346436e-3ba6-428e-bd66-a8fca0f57c9e",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/0346436e-3ba6-428e-bd66-a8fca0f57c9e.jp2/info.json",
+            "local_thumb": "images/162.jpg",
+            "local_med": null,
+            "eye_check": "plain prose, no cipher"
+        },
+        {
+            "order": 168,
+            "label": "NL-HaNA_2.01.27.05_12_0168.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/986dede3-2357-4778-ad77-980fc98622f7",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/986dede3-2357-4778-ad77-980fc98622f7.jp2/info.json",
+            "local_thumb": "images/168.jpg",
+            "local_med": null,
+            "eye_check": "plain prose, no cipher"
+        },
+        {
+            "order": 174,
+            "label": "NL-HaNA_2.01.27.05_12_0174.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/4831a82a-6439-4bbe-a847-8c7c113a983e",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/4831a82a-6439-4bbe-a847-8c7c113a983e.jp2/info.json",
+            "local_thumb": "images/174.jpg",
+            "local_med": null,
+            "eye_check": "blank divider + start of a new prose item, no cipher"
+        },
+        {
+            "order": 179,
+            "label": "NL-HaNA_2.01.27.05_12_0179.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/c8538267-370b-49c6-8aec-b6d2888d4cb6",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/c8538267-370b-49c6-8aec-b6d2888d4cb6.jp2/info.json",
+            "local_thumb": "images/179.jpg",
+            "local_med": null,
+            "eye_check": "plain prose, short, signed, no cipher"
+        },
+        {
+            "order": 180,
+            "local_thumb": "images/180.jpg",
+            "eye_check": "plain prose (French), signed, no cipher"
+        },
+        {
+            "order": 181,
+            "local_thumb": "images/181.jpg",
+            "eye_check": "plain prose, no cipher"
+        },
+        {
+            "order": 182,
+            "local_thumb": "images/182.jpg",
+            "eye_check": "plain prose, dated 1814, no cipher"
+        },
+        {
+            "order": 183,
+            "local_thumb": "images/183.jpg",
+            "eye_check": "plain prose, no cipher"
+        },
+        {
+            "order": 184,
+            "local_thumb": "images/184.jpg",
+            "eye_check": "plain prose, signed, no cipher"
+        },
+        {
+            "order": 185,
+            "label": "NL-HaNA_2.01.27.05_12_0185.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/a4e0dc01-43ca-4e11-aa69-6d47e81a5cca",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/a4e0dc01-43ca-4e11-aa69-6d47e81a5cca.jp2/info.json",
+            "local_thumb": null,
+            "local_med": "images/185_med.jpg",
+            "eye_check": "'Etat de Service du General de Division J.W. Janssens', No.37, Paris 5 Janvier 1813, tabular CV, signed -- no cipher"
+        },
+        {
+            "order": 186,
+            "label": "NL-HaNA_2.01.27.05_12_0186.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/58eae3a3-bb4d-47ac-977f-213d8d0cef34",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/58eae3a3-bb4d-47ac-977f-213d8d0cef34.jp2/info.json",
+            "local_thumb": "images/186.jpg",
+            "local_med": "images/186_med.jpg",
+            "eye_check": "blank (faint show-through only)"
+        },
+        {
+            "order": 187,
+            "label": "NL-HaNA_2.01.27.05_12_0187.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/9994311d-b626-4c75-a41d-2772f0b17a70",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/9994311d-b626-4c75-a41d-2772f0b17a70.jp2/info.json",
+            "local_thumb": "images/187.jpg",
+            "local_med": "images/187_med.jpg",
+            "eye_check": "plain prose report, signed, no cipher"
+        },
+        {
+            "order": 188,
+            "label": "NL-HaNA_2.01.27.05_12_0188.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/bf152dd2-ce11-493c-bf0e-828193041803",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/bf152dd2-ce11-493c-bf0e-828193041803.jp2/info.json",
+            "local_thumb": "images/188.jpg",
+            "local_med": "images/188_med.jpg",
+            "eye_check": "RAW CIPHER ONLY, no gloss anywhere on the leaf found so far: heading reads Numero Un. Triplicata (corrects VX-CS05 illegible-digit read -- this is dispatch No.1, Triplicata not Duplicata); ends Signe [name]",
+            "local_hires_2561": "images/188_hi.jpg"
+        },
+        {
+            "order": 189,
+            "label": "NL-HaNA_2.01.27.05_12_0189.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/a15a39c2-4190-4aa2-8bf5-57d965b62ded",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/a15a39c2-4190-4aa2-8bf5-57d965b62ded.jp2/info.json",
+            "local_thumb": "images/189.jpg",
+            "local_med": "images/189_med.jpg",
+            "eye_check": "plain prose, no cipher"
+        },
+        {
+            "order": 190,
+            "label": "NL-HaNA_2.01.27.05_12_0190.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/41b9da74-07f2-481d-b2f2-7301302f5943",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/41b9da74-07f2-481d-b2f2-7301302f5943.jp2/info.json",
+            "local_thumb": "images/190.jpg",
+            "local_med": "images/190_med.jpg",
+            "eye_check": "Right page top: short glossed excerpt of dispatch Numero Deux (the same text leaf 191 glosses in full); below it, headed Numero Deux. (Duplicata), a CIPHERTEXT-ONLY clean copy of the same dispatch (confirmed: its closing codes 1082.79.441.497.689.536.843.990.420 match leaf 192 bottom -- Gouverneur General le trente Juin. Fin.)",
+            "local_hires_2561": "images/190_hi.jpg"
+        },
+        {
+            "order": 191,
+            "label": "NL-HaNA_2.01.27.05_12_0191.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/0bf1881b-67af-451c-8f94-69a97aad98fc",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/0bf1881b-67af-451c-8f94-69a97aad98fc.jp2/info.json",
+            "local_thumb": null,
+            "local_med": "images/191_med.jpg",
+            "eye_check": "CIPHER+DECIPHERMENT, heading N.2 (Duplicata): full interlinear French gloss word/syllable under (most) codes, several scribal corrections (crossed-out drafts); continues onto leaf 192",
+            "local_hires_2561": "images/191_hi.jpg"
+        },
+        {
+            "order": 192,
+            "label": "NL-HaNA_2.01.27.05_12_0192.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/5f81190c-4c3e-42bd-847e-dcecb5b4f9b4",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/5f81190c-4c3e-42bd-847e-dcecb5b4f9b4.jp2/info.json",
+            "local_thumb": "images/192.jpg",
+            "local_med": "images/192_med.jpg",
+            "eye_check": "CIPHER+DECIPHERMENT, direct continuation of leaf 191s N.2 (Duplicata) gloss (the word split cer-/ti.fi.e. = certifie spans the 191/192 leaf boundary); ends Gouverneur General le trente Juin. Fin. Signe [name]",
+            "local_hires_2561": "images/192_hi.jpg"
+        },
+        {
+            "order": 193,
+            "label": "NL-HaNA_2.01.27.05_12_0193.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/c606166f-5fc0-4987-b0d0-0400ac78674c",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/c606166f-5fc0-4987-b0d0-0400ac78674c.jp2/info.json",
+            "local_thumb": "images/193.jpg",
+            "local_med": "images/193_med.jpg",
+            "eye_check": "blank divider (dark + grey inner cover)"
+        },
+        {
+            "order": 194,
+            "label": "NL-HaNA_2.01.27.05_12_0194.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/c35cbf37-7cec-4af3-92d3-d6daada5fdaf",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/c35cbf37-7cec-4af3-92d3-d6daada5fdaf.jp2/info.json",
+            "local_thumb": "images/194.jpg",
+            "local_med": "images/194_med.jpg",
+            "eye_check": "heading eye-read 'N.6' '(Duplicata)' -- but body is PLAIN CONTINUOUS FRENCH PROSE, no cipher numbers"
+        },
+        {
+            "order": 195,
+            "label": "NL-HaNA_2.01.27.05_12_0195.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/e0a563c7-76ad-4df3-a829-3406c81d9120",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/e0a563c7-76ad-4df3-a829-3406c81d9120.jp2/info.json",
+            "local_thumb": "images/195.jpg",
+            "local_med": "images/195_med.jpg",
+            "eye_check": "continuation of 194: 'N.6 (Duplicata) Batavia 9 Juillet' heading, plain French prose, no cipher numbers"
+        },
+        {
+            "order": 196,
+            "label": "NL-HaNA_2.01.27.05_12_0196.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/729fc14c-d21a-4275-bd9f-0b7de1a40bdd",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/729fc14c-d21a-4275-bd9f-0b7de1a40bdd.jp2/info.json",
+            "local_thumb": "images/196.jpg",
+            "local_med": "images/196_med.jpg",
+            "eye_check": "blank (faint show-through only)"
+        },
+        {
+            "order": 197,
+            "label": "NL-HaNA_2.01.27.05_12_0197.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/9618166e-7e9f-4dee-afbd-2706ec7ffaa7",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/9618166e-7e9f-4dee-afbd-2706ec7ffaa7.jp2/info.json",
+            "local_thumb": "images/197.jpg",
+            "local_med": null,
+            "eye_check": "blank divider pages (archive stamp only)"
+        },
+        {
+            "order": 198,
+            "label": "NL-HaNA_2.01.27.05_12_0198.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/e58671b6-0977-4bf2-93aa-f01c431a2b1f",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/e58671b6-0977-4bf2-93aa-f01c431a2b1f.jp2/info.json",
+            "local_thumb": "images/198.jpg",
+            "local_med": "images/198_med.jpg",
+            "eye_check": "RAW CIPHER ONLY, heading reads Numero Trois (Duplicata) (corrects VX-CS05 eye-read Numero 2 -- pixel match confirms this is dispatch No.3, matching leaves 199-200s opening codes exactly), no gloss anywhere; ends with a signature",
+            "local_hires_2561": "images/198_hi.jpg"
+        },
+        {
+            "order": 199,
+            "label": "NL-HaNA_2.01.27.05_12_0199.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/9d81a97b-0b19-45ee-8c82-3637d7117c61",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/9d81a97b-0b19-45ee-8c82-3637d7117c61.jp2/info.json",
+            "local_thumb": null,
+            "local_med": "images/199_med.jpg",
+            "eye_check": "CIPHER+DECIPHERMENT, heading Numero 3. (Duplicata): 5-column table, each cell one numeric code with its French gloss word below, read row-major left to right; continues onto leaf 200",
+            "local_hires_2561": "images/199_hi.jpg"
+        },
+        {
+            "order": 200,
+            "label": "NL-HaNA_2.01.27.05_12_0200.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/9c01a739-6ed2-4229-9a7f-38c4850207ec",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/9c01a739-6ed2-4229-9a7f-38c4850207ec.jp2/info.json",
+            "local_thumb": null,
+            "local_med": "images/200_med.jpg",
+            "eye_check": "CIPHER+DECIPHERMENT, direct continuation of leaf 199s 5-column table; several crossed-out/corrected cells; ends Fin. Signe [name], dated onze Juillet",
+            "local_hires_2561": "images/200_hi.jpg"
+        },
+        {
+            "order": 201,
+            "local_thumb": "images/201.jpg",
+            "eye_check": "mostly blank, tabular column headers only, no cipher"
+        },
+        {
+            "order": 202,
+            "local_thumb": "images/202.jpg",
+            "eye_check": "plain prose letter, no cipher"
+        },
+        {
+            "order": 203,
+            "label": "NL-HaNA_2.01.27.05_12_0203.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/c3a5bf3f-af4c-45b0-ac51-0d2387e0d0c5",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/c3a5bf3f-af4c-45b0-ac51-0d2387e0d0c5.jp2/info.json",
+            "local_thumb": "images/203.jpg",
+            "local_med": null,
+            "eye_check": "blank"
+        },
+        {
+            "order": 204,
+            "local_thumb": "images/204.jpg",
+            "eye_check": "tabular form (columnar, handwritten words not digits), no cipher"
+        },
+        {
+            "order": 205,
+            "local_thumb": "images/205.jpg",
+            "eye_check": "tabular form (columnar), no cipher"
+        },
+        {
+            "order": 206,
+            "local_thumb": "images/206.jpg",
+            "eye_check": "tabular form (columnar), no cipher"
+        },
+        {
+            "order": 207,
+            "local_thumb": "images/207.jpg",
+            "eye_check": "plain prose, no cipher"
+        },
+        {
+            "order": 208,
+            "local_thumb": "images/208_med.jpg",
+            "eye_check": "blank / mostly blank"
+        },
+        {
+            "order": 209,
+            "label": "NL-HaNA_2.01.27.05_12_0209.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/f1775c8e-3ed3-4348-8c3d-d2bc72c57ace",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/f1775c8e-3ed3-4348-8c3d-d2bc72c57ace.jp2/info.json",
+            "local_thumb": "images/209_med.jpg",
+            "local_med": null,
+            "eye_check": "mostly blank, a few words top-left corner, no cipher"
+        },
+        {
+            "order": 210,
+            "local_thumb": "images/210_hi.jpg",
+            "eye_check": "plain prose, signed, no cipher"
+        },
+        {
+            "order": 211,
+            "label": "NL-HaNA_2.01.27.05_12_0211.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/ff9b57a3-ab2e-44e3-b31d-71bfd7136921",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/ff9b57a3-ab2e-44e3-b31d-71bfd7136921.jp2/info.json",
+            "local_thumb": "images/211_hi.jpg",
+            "local_med": null,
+            "eye_check": "cipher + decipherment: right page continues the interlinear decipherment (top few lines) then has a SEPARATE SLIP OF PAPER PASTED ON TOP carrying a clean raw-cipher-only copy headed \"No. Cinq. 1ere expedition.\" (~70 codes, no gloss)"
+        },
+        {
+            "order": 212,
+            "label": "NL-HaNA_2.01.27.05_12_0212.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/d0aa5055-4daa-46e0-875c-8b82f587800b",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/d0aa5055-4daa-46e0-875c-8b82f587800b.jp2/info.json",
+            "local_thumb": "images/212_hi.jpg",
+            "local_med": null,
+            "eye_check": "cipher + decipherment: left page continues+ends the interlinear decipherment, \"Fin. Batavia 7. aoust.\" signed Janssens"
+        },
+        {
+            "order": 213,
+            "label": "NL-HaNA_2.01.27.05_12_0213.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/252ab119-4d7d-4e90-83d2-3a81923b4bb4",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/252ab119-4d7d-4e90-83d2-3a81923b4bb4.jp2/info.json",
+            "local_thumb": "images/213_med.jpg",
+            "local_med": null,
+            "eye_check": "blank (faint show-through only)"
+        },
+        {
+            "order": 214,
+            "label": "NL-HaNA_2.01.27.05_12_0214.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/f786957f-6f49-4a52-994e-2ee2860cd935",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/f786957f-6f49-4a52-994e-2ee2860cd935.jp2/info.json",
+            "local_thumb": "images/214_hi.jpg",
+            "local_med": null,
+            "eye_check": "PLAIN prose, unenciphered fair copy of the SAME No.5 dispatch (\"No 5. 1re Expedition\", Batavia 7 Aout, signed Janssens: 71-sail enemy expedition arrived 4 Aug before Batavia roads, landed troops at Isle de la Ville/Onrust, sugar/coffee/pepper stores destroyed, withdrawal to entrenched camp, decisive affair expected within days)"
+        },
+        {
+            "order": 215,
+            "label": "NL-HaNA_2.01.27.05_12_0215.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/edcf6908-8487-4827-bc5a-2a2dd84f3d15",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/edcf6908-8487-4827-bc5a-2a2dd84f3d15.jp2/info.json",
+            "local_thumb": "images/215_med.jpg",
+            "local_med": null,
+            "eye_check": "blank"
+        },
+        {
+            "order": 216,
+            "label": "NL-HaNA_2.01.27.05_12_0216.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/008e8a95-fa3e-42a2-bd1d-a2cfcf310442",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/008e8a95-fa3e-42a2-bd1d-a2cfcf310442.jp2/info.json",
+            "local_thumb": "images/216_med.jpg",
+            "local_med": null,
+            "eye_check": "unrelated: 1812 Bibliotheque Imperiale correspondence re: Eijsinghe manuscripts (different matter entirely, end of the Janssens cluster)"
+        },
+        {
+            "order": 217,
+            "label": "NL-HaNA_2.01.27.05_12_0217.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/12b224cc-52e6-4374-af46-366e63d476d5",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/12b224cc-52e6-4374-af46-366e63d476d5.jp2/info.json",
+            "local_thumb": "images/217_med.jpg",
+            "local_med": null,
+            "eye_check": "unrelated: continuation of the 1812 Bibliotheque Imperiale letter"
+        },
+        {
+            "order": 221,
+            "label": "NL-HaNA_2.01.27.05_12_0221.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/4ee272a7-60f6-4238-84a5-a84205a58a07",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/4ee272a7-60f6-4238-84a5-a84205a58a07.jp2/info.json",
+            "local_thumb": null,
+            "local_med": "images/221_med.jpg",
+            "eye_check": "sealed cover letter, Paris 8 mai 1811, to 'Monsieur Lozy, Chef de division du ministere de la Marine' re: manuscripts of Josse and Langle -- plain prose, no cipher, unrelated administrative correspondence"
+        },
+        {
+            "order": 227,
+            "label": "NL-HaNA_2.01.27.05_12_0227.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/a23e46ff-a804-45aa-9822-7b6d8308fb6d",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/a23e46ff-a804-45aa-9822-7b6d8308fb6d.jp2/info.json",
+            "local_thumb": "images/227.jpg",
+            "local_med": null,
+            "eye_check": "plain prose + inserted note/tag, no cipher"
+        },
+        {
+            "order": 233,
+            "label": "NL-HaNA_2.01.27.05_12_0233.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/9c1cba50-7951-4618-baf5-315e6b4b0280",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/9c1cba50-7951-4618-baf5-315e6b4b0280.jp2/info.json",
+            "local_thumb": "images/233.jpg",
+            "local_med": null,
+            "eye_check": "blank/edge leaf, end of bundle"
+        }
+    ],
+    "note_25sept_VX-RD02": "gap leaves 180-184/201-202/204-208/210 thumbnailed (all plain prose/tabular, no cipher); leaves 188/190/191/192/198/199/200 refetched at IIIF full/2561 for transcription (images/NNN_hi.jpg)"
 }
