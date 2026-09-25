@@ -424,3 +424,17 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T16:07Z	session_01XY737yPNqrjbduLQ7cCZNi	LANE B2 bPOW (Sonnet, cap 3)	powers-1991 test 1 print check	brief 2026-09-25-lane-b2-powers-1991.md
 2026-09-25T16:17Z	session_01MRsU1QGjSKNQ5oCejANVXg	closer 7b done $6.03 D, archived	LEDGER.md, STATUS.md lane handoffs	pushed 5e811b1
 2026-09-25T16:17Z	session_01GrL9XmdQLit5wSGNeSqH96	KEYPROBE done $0.58 D	CLAUDE.md key probe paragraph	Europeana and DPLA keys work; DDB/APE/CORE unset
+2026-09-25T16:20Z	session_01Jdm1SGVot6mYUt5pHttiCt	LANE R6 S0 done $2.86 N, archived	fr2933-salviati-1525 check-solved	gate 0
+2026-09-25T16:20Z	session_01UexxKGXSoL3mQsGRaiACHx	LANE R6 Y1 done $2.11 N, archived	la-garde-1577 margin	gloss, not a solution
+2026-09-25T16:20Z	session_01RZynzcpaNhnerUL31ZmE2u	LANE R6 Y3 done $0.62 F, archived	clair1161 transcription	disk image is a portrait
+2026-09-25T16:20Z	session_013sXCZqgcSuugSSQUUQfsqK	LANE R6 Y4 done $1.50 N, archived	clairambault296 locate	not pinned, 68/316 canvases
+2026-09-25T16:20Z	session_01Y6ybnDpGRAFU9e7bj82j6d	LANE R6 Y5 done $2.32 D, archived	espagnol142-mercy-1648 locate	canvases 58-59
+2026-09-25T16:20Z	session_01PDxSt9udvwNRsPqhdaLNtx	LANE R6 P4 done $2.25 D, archived	antt-fcc-costacabral-1865	gate 0, images
+2026-09-25T16:19Z	session_01NGqLviSk38e8cuYAg7JWS2	LANE R6 L1 (Sonnet, cap 12)	salviati f55v	brief 2026-09-25-lane-r6-l-salviati-leaf.md
+2026-09-25T16:19Z	session_011NNQjZDLFbNka9KPKyT9RQ	LANE R6 L2 (Sonnet, cap 12)	salviati f56r	same
+2026-09-25T16:19Z	session_0191Sh3tN3mGAXyCNczXpSRX	LANE R6 L3 (Sonnet, cap 12)	salviati f56v	same
+2026-09-25T16:19Z	session_01JwPwn74TpNhvpHPj5ejm7Y	LANE R6 L4 (Sonnet, cap 12)	salviati f57r	same
+2026-09-25T16:19Z	session_016RP5VhQ5VvgijgCXjbxMwR	LANE R6 L5 (Sonnet, cap 12)	salviati f57v	same
+2026-09-25T16:19Z	session_01EnQqBtMCb7fXtPvLqin2GL	LANE R6 P5 (Sonnet, cap 5)	antt-fcc-costacabral-1865 key	brief 2026-09-25-lane-r6-p5-costacabral-key.md
+2026-09-25T16:19Z	session_015t6VAAyCgCAmcVQQ1P62h6	LANE R6 Y6 (Sonnet, cap 6)	espagnol142-mercy-1648 transcription+key	brief 2026-09-25-lane-r6-y6-mercy-transcribe.md
+2026-09-25T16:19Z	session_01DG2K4JMGBjdPSvB2SvW3iB	LANE R6 Y4b (Sonnet, cap 4)	clairambault296 sweep	brief 2026-09-25-lane-r6-y4b-clair296-sweep.md
