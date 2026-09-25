@@ -141,3 +141,123 @@ search by the methods logged found nothing describing this correspondence.
    Genes series, before a solver session assumes any identification of this Paget.
 4. The Henry Paget/Hanover-mission lead (23 Sept sweep) can likely be dropped given the document's own
    French-language, Genoa/Sardinia content, but was not formally re-searched-and-ruled-out this pass.
+
+## Transcription (25 September 2026, OX-PAGT)
+
+**Correction to the 25 Sept OX-PAG note above.** OX-PAG's "What the leaves show" section says "No interlinear
+or marginal gloss/decipherment was seen on any leaf". That is not quite right: letter 1 (not letter 2) carries
+several small interlinear insertions, in what reads as the same hand as the running text, written directly
+above short cipher runs and functioning as plaintext glosses for them -- e.g. "Mr l'abbé Lomeliny" written
+above "M. 145.31.67.148.186.147.176." on f60R (verified by direct inspection at native resolution, not just
+from a transcription pass), and "Gile de Labargue" above "147.46.146.87. / 232.66.45.204." on the same leaf.
+This is **not** the transcription.md pre-pass rule (a) case ("every group has one -> recovery target, stop
+before starting passes"): most cipher groups in both letters, and effectively all of letter 2, have no gloss
+at all -- f66 (the densest cipher page) has none. So this was correctly run as a transcription target, not
+handed to a solver first. But it does mean letter 1 is not a *blind* nomenclator throughout: it carries a
+handful of contemporary(?) plaintext cribs for specific codes, listed below. Grade for this correction:
+C-adjacent (read directly off the image at native resolution by this worker), not from either transcription
+pass alone.
+
+**Method.** Images: 13 native-resolution page-half crops (`images/f60R.jpg` ... `images/f66R.jpg`, 1700px
+wide, 220px overlap across each book gutter so no token is cut between halves), cut from Gallica's full native
+IIIF resolution (6648x5624 to 7931x6323 px per canvas) with `tools/iiif_lines.py` to fetch each canvas once,
+then a one-off split script (not committed as a shared tool -- a single gutter-detection + crop call per
+canvas, not reusable machinery); superseded OX-PAG's 1400px full-canvas images as the transcription source.
+`images/manifest.json`'s `transcription_crops` block has the method, fetch log and reading order.
+
+Two independent blind Sonnet passes (`passA.tsv`, `passA_context.md`, `passB.tsv`, `passB_context.md`), each
+reading all 13 images cold, in order, with no access to the other pass or to any existing transcription,
+instructed to number manuscript lines `<image>_L<NN>` and record every clear word and every cipher number
+group as one token (kind: clear/cipher/insertion-clear/insertion-cipher/pagenum/heading/signature/dateline;
+conf: H/M).
+
+**Reconciliation.** The two passes' own line numbering disagreed by one line in several places (mainly
+whether a leaf's old-series pagination stamp got counted as its own line), which cascades into a near-total
+line-ID mismatch for everything after the split and made `tools/reconcile_passes.py`'s line-keyed alignment
+next to useless on the raw files (33.7% agreement). Fixed with a per-target `reconcile.py` (committed here):
+drop pagenum-only lines and renumber per image per pass, then align each image's full token sequence with
+`tools/reconcile_passes.py`'s own Needleman-Wunsch aligner (imported, not reimplemented) instead of aligning
+line-by-line -- legitimate here because each image is one page's continuous running prose with no internal
+column break (the gutter split already happened when the crops were cut). Run `python3 reconcile.py` from
+this folder to regenerate `ciphertext.tsv` from `passA.tsv`/`passB.tsv` (rule 7).
+
+One classification bug caught and fixed during this session: an early draft inferred kind (clear/cipher) from
+whether a token was a digit string, which miscounted the "1714" in both letters' own datelines (and other
+plain-French numbers like "19." or "25. Octobre") as cipher groups. `reconcile.py` instead carries the kind
+field through from whichever pass's row the aligned token came from, never re-infers it.
+
+**Known reconciliation artifacts (not hand-fixed, so nothing here is silently repaired -- rule 2).** Five
+`ciphertext.tsv` rows on f66L/f66R have kind `cipher/insertion-clear` or `clear/cipher`: the aligner matched a
+digit token from one pass against a word token from the other at the same column. Checked directly against
+the image for four of them (f66L positions 124/125/149/197): the words are right ("taille", "belle", "air",
+"sa", matching visible interlinear insertions "La taille belle" over one cipher run and "d'esprit et un air"
+over another) and the paired digit is an alignment artifact from a token-count mismatch a few positions
+earlier, not a real second reading of the same span. Left as-is with the full alt detail rather than edited,
+per rule 2; a future pass should re-derive f66L positions ~120-150 directly rather than trust either column.
+
+**Stats.** `ciphertext.tsv`: 2340 tokens, 1957 H / 383 M (grade counts, not H/C/S/M/I per rule 4 -- this is a
+transcription, not a claimed reading; every cipher token here is graded M or H for *transcription* confidence
+only, not S for a cryptanalytic result, since nothing is decoded).
+
+| | Letter 1 (8 Apr) | Letter 2 (28 Aug) |
+|---|---|---|
+| numeric cipher tokens | 96 | 404 |
+| distinct codes | 51 | 109 |
+| value range | 20-276 | 2-692 |
+| codes seen >=2x | 22 (67 tokens) | 66 (361 tokens) |
+| most frequent codes | 46, 45 (x6), 145/67/147/244/146/175 (x4) | 46 (x31), 146/41 (x16), 87/34 (x15), 221 (x13) |
+
+Overall: 122 distinct numeric codes, 500 numeric cipher tokens (plus one hand-marked ILLEGIBLE group, f61L,
+solid-inked over), range 2-692 (two-thirds of distinct codes are 2-3 digits; a handful of higher outliers,
+mostly on f66, the hardest page -- both blind passes independently graded nearly every f66 cipher digit M, so
+treat 66x-range values there as the least certain readings in the set, not confirmed high code values).
+**38 of letter 1's 51 distinct codes recur in letter 2** -- strong evidence the two letters use the *same*
+nomenclator key, which matters for a future solver: letter 2 alone gives a much bigger sample (404 vs 96
+tokens) to key-fit, and any key recovered from one letter should be checked against the other.
+
+**Nomenclator shape, from the ranges only (no decoding attempted).** The handful of codes glossed by name
+(below) need 6-7 separate cipher groups to spell one proper name ("Lomeliny", 8 letters, glossed by 7 groups)
+-- consistent with a per-letter or per-syllable substitution table, not a whole-word code. That is also
+consistent with the frequency profile: the commonest codes (46: 37 occurrences across both letters; 146: 20;
+41: 17; 87/34: 16 each) recur far too often for rare proper names and read like codes for common letters,
+syllables, or short function words scattered through the "obscured" spans, while the ~60 hapax-or-rare codes
+in the 100-300 range look like the less-common letters/syllables or the handful of actual glossed names. In
+short: probably a homophonic/nomenclator table of a few hundred cells (codes seen top out under 300, aside
+from the small number of higher outliers on the hardest page), mixing common-letter/syllable codes with
+name/place codes, not a single-substitution cipher and not a large whole-word nomenclator.
+
+**Interlinear glosses in letter 1 (the crib list for a future solver).** Every insertion-clear token pass A
+and/or pass B read directly above a cipher run in letter 1 (grade M throughout -- the two passes disagree on
+exact spelling in several cases, both readings kept in `ciphertext.tsv`'s alt column):
+
+| Leaf | Gloss (as read) | Sits above | Cipher groups |
+|---|---|---|---|
+| f60R | "Mr l'abbé Lomeliny" / "Mr Labbé Lomeliny" | "M. 145.31.67.148.186.147.176. m'ecrit encore de Venise" | 145,31,67,148,186,147,176 |
+| f60R | "Gile de Labargue" / "Sr de Gille Cabarque" | "147.46.146.87. / 232.66.45.204." | 147,46,146,87,232,66,45,204 |
+| f61L | "on verra quelques personnes venue d'une procuration a Genes" | a passage about people coming to Genoa to treat/negotiate | (no adjacent single cipher run identified this pass -- longer insertion, not a name gloss) |
+| f61L | "de l'Isle" (margin label; pass A misread it "de Sile", B's "l'Isle" is right -- checked directly against the image, native res, this worker) | "192.46.87.147.46.146. qui ont sceu les conferences ..." | 192,46,87,147,46,146 |
+| f61L | "Labbe" (checked directly against the image: small, written right above "145.31.67.", underlined) | "... que j'avois eues avec 145.31.67. sur cette affaire" | 145,31,67 |
+| f61L | "Labbe" / "l'abbé" (a third, separate recurrence later on f61L) | not re-checked against the image this pass | likely another "145.31.67."-style short reference, unconfirmed |
+| f61R | "a la vente de cette isle" | "145.48.97.222.87.84.38.46.146." | 145,48,97,222,87,84,38,46,146 |
+
+**145.31.67. = "l'abbé" [Lomeliny] is now confirmed at three separate points in letter 1**: the full 7-group
+gloss on f60R ("Mr l'abbé Lomeliny" over "145.31.67.148.186.147.176."), and two short 3-group recurrences on
+f61L, one of them ("...avec 145.31.67. sur cette affaire") re-glossed "Labbe" again and checked directly
+against the image this pass (native resolution, not just a transcription pass's report) -- the clearest,
+most repeated internal crib in this letter. "192.46.87.147.46.146." = "de l'Isle" (a name or place, not yet
+identified) is a second, single-instance crib from the same direct check. Both are exactly the kind of
+internal crib the "align known plaintext to key" pattern in LESSONS.md wants; not decoded this pass (out of
+scope).
+
+## Next
+
+1. **Decode/key-recovery pass** (a solver session, not this worker): start from the confirmed cribs above --
+   145=l'abbé-run first code (three independent occurrences), 192.46.87.147.46.146.="de l'Isle" -- and check
+   whether the third "Labbe"/"l'abbé" recurrence on f61L and the other repeated short glosses (f60R's
+   "Gile de Labargue"/"Sr de Gille Cabarque") pin the same or different code runs. Given 38 shared codes
+   between the two letters, fit the key against both letters together, not letter 1 alone.
+2. Re-derive f66L positions ~120-150 (the known reconciliation-artifact region above) from the image directly
+   rather than trust `ciphertext.tsv`'s current alt-flagged rows there.
+3. Old-series page-number identification (register search) from the earlier OX-PAG note is still open and
+   unrelated to this pass's work.
+4. A verifier has not looked at this target; nothing here is claimed as new/unpublished/first (rule 10).

@@ -1,0 +1,2341 @@
+letter	line	position	token	kind	grade	alt	why
+1	f60R	1	Monseigneur	heading	H		agree
+1	f60R	2	J'ay	clear	H		agree
+1	f60R	3	receu	clear	H		agree
+1	f60R	4	la	clear	H		agree
+1	f60R	5	lettre	clear	H		agree
+1	f60R	6	qu'il	clear	H		agree
+1	f60R	7	a	clear	H		agree
+1	f60R	8	plu	clear	H		agree
+1	f60R	9	a	clear	H		agree
+1	f60R	10	Vostre	clear	H		agree
+1	f60R	11	Excellence	clear	H		agree
+1	f60R	12	me	clear	H		agree
+1	f60R	13	faire	clear	H		agree
+1	f60R	14	l'honneur	clear	H		agree
+1	f60R	15	de	clear	H		agree
+1	f60R	16	m'ecrire	clear	H		agree
+1	f60R	17	le	clear	H		agree
+1	f60R	18	19	clear	H		agree
+1	f60R	19	du	clear	H		agree
+1	f60R	20	mois	clear	H		agree
+1	f60R	21	dernier	clear	H		agree
+1	f60R	22	je	clear	H		agree
+1	f60R	23	luy	clear	H		agree
+1	f60R	24	en	clear	H		agree
+1	f60R	25	rend	clear	H		agree
+1	f60R	26	tres	clear	H		agree
+1	f60R	27	humbles	clear	H		agree
+1	f60R	28	graces	clear	H		agree
+1	f60R	29	Mr	clear	M	A:Mr(clear,H)/B:M.(clear,H)	differ
+1	f60R	30	145	cipher	H		agree
+1	f60R	31	31	cipher	H		agree
+1	f60R	32	67	cipher	H		agree
+1	f60R	33	148	cipher	H		agree
+1	f60R	34	186	cipher	H		agree
+1	f60R	35	147	cipher	H		agree
+1	f60R	36	176	cipher	H		agree
+1	f60R	37	m'ecrit	clear	H		agree
+1	f60R	38	encore	clear	H		agree
+1	f60R	39	de	clear	H		agree
+1	f60R	40	Mr	insertion-clear	M	A-only:Mr(insertion-clear,H)	gap-B
+1	f60R	41	l'abbe	insertion-clear	M	A:l'abbe(insertion-clear,H)/B:l'abbé(insertion-clear,M)	differ
+1	f60R	42	Lomeliny	insertion-clear	H		agree
+1	f60R	43	Venise	clear	H		agree
+1	f60R	44	244	cipher	H		agree
+1	f60R	45	176	cipher	H		agree
+1	f60R	46	221	cipher	H		agree
+1	f60R	47	qu'il	clear	H		agree
+1	f60R	48	y	clear	H		agree
+1	f60R	49	sera	clear	H		agree
+1	f60R	50	jusqu'a	clear	M	A:jusqu'a(clear,H)/B:jusqu'à(clear,H)	differ
+1	f60R	51	la	clear	H		agree
+1	f60R	52	fin	clear	H		agree
+1	f60R	53	du	clear	H		agree
+1	f60R	54	mois	clear	H		agree
+1	f60R	55	prochain	clear	H		agree
+1	f60R	56	et	clear	H		agree
+1	f60R	57	qu'il	clear	H		agree
+1	f60R	58	me	clear	H		agree
+1	f60R	59	prie	clear	H		agree
+1	f60R	60	de	clear	H		agree
+1	f60R	61	luy	clear	H		agree
+1	f60R	62	marquer	clear	H		agree
+1	f60R	63	si	clear	H		agree
+1	f60R	64	j'ay	clear	H		agree
+1	f60R	65	receu	clear	H		agree
+1	f60R	66	quelque	clear	H		agree
+1	f60R	67	avis	clear	H		agree
+1	f60R	68	touchant	clear	H		agree
+1	f60R	69	147	cipher	H		agree
+1	f60R	70	46	cipher	H		agree
+1	f60R	71	146	cipher	H		agree
+1	f60R	72	87	cipher	H		agree
+1	f60R	73	Sr	insertion-clear	M	A:Sr(insertion-clear,M)/B:Gille(insertion-clear,M)	differ
+1	f60R	74	de	insertion-clear	H		agree
+1	f60R	75	232	cipher	H		agree
+1	f60R	76	66	cipher	H		agree
+1	f60R	77	45	cipher	H		agree
+1	f60R	78	204	cipher	H		agree
+1	f60R	79	et	clear	H		agree
+1	f60R	80	comme	clear	H		agree
+1	f60R	81	je	clear	H		agree
+1	f60R	82	luy	clear	H		agree
+1	f60R	83	avois	clear	H		agree
+1	f60R	84	deja	clear	M	A:deja(clear,H)/B:déja(clear,H)	differ
+1	f60R	85	fait	clear	H		agree
+1	f60R	86	Labarque	insertion-clear	M	A:Labarque(insertion-clear,H)/B:Cabarque(insertion-clear,M)	differ
+1	f61L	1	connoitre	clear	H		agree
+1	f61L	2	que	clear	H		agree
+1	f61L	3	tant	clear	H		agree
+1	f61L	4	qu'il	clear	H		agree
+1	f61L	5	ne	clear	H		agree
+1	f61L	6	donnera	clear	H		agree
+1	f61L	7	pas	clear	H		agree
+1	f61L	8	les	clear	H		agree
+1	f61L	9	eclaircissements	clear	H		agree
+1	f61L	10	necessres	clear	M	A:necessres(clear,M)/B:necessaires(clear,M)	differ
+1	f61L	11	il	clear	H		agree
+1	f61L	12	ne	clear	H		agree
+1	f61L	13	sera	clear	H		agree
+1	f61L	14	pas	clear	H		agree
+1	f61L	15	possible	clear	H		agree
+1	f61L	16	d'en	clear	H		agree
+1	f61L	17	venir	clear	H		agree
+1	f61L	18	au	clear	H		agree
+1	f61L	19	fait	clear	M	A:fait(clear,M)/B:fair(clear,M)	differ
+1	f61L	20	il	clear	H		agree
+1	f61L	21	m'ajoute	clear	H		agree
+1	f61L	22	par	clear	H		agree
+1	f61L	23	sa	clear	H		agree
+1	f61L	24	lettre	clear	H		agree
+1	f61L	25	du	clear	H		agree
+1	f61L	26	24	clear	H		agree
+1	f61L	27	mars	clear	H		agree
+1	f61L	28	dernier	clear	H		agree
+1	f61L	29	qu'on	clear	H		agree
+1	f61L	30	les	clear	H		agree
+1	f61L	31	donnera	clear	H		agree
+1	f61L	32	aussitot	clear	M	A:aussitot(clear,H)/B:aussitost(clear,H)	differ
+1	f61L	33	que	clear	H		agree
+1	f61L	34	185	cipher	H		agree
+1	f61L	35	244	cipher	H		agree
+1	f61L	36	45	cipher	H		agree
+1	f61L	37	211	cipher	H		agree
+1	f61L	38	209	cipher	H		agree
+1	f61L	39	192	cipher	H		agree
+1	f61L	40	45	cipher	H		agree
+1	f61L	41	223	cipher	H		agree
+1	f61L	42	41	cipher	H		agree
+1	f61L	43	on	insertion-clear	H		agree
+1	f61L	44	verra	insertion-clear	H		agree
+1	f61L	45	quelques	insertion-clear	H		agree
+1	f61L	46	personnes	insertion-clear	H		agree
+1	f61L	47	175	cipher	H		agree
+1	f61L	48	ILLEGIBLE	cipher	M	A-only:ILLEGIBLE(cipher,M)	gap-B
+1	f61L	49	276	cipher	H		agree
+1	f61L	50	pour	clear	H		agree
+1	f61L	51	venue	insertion-clear	M	B-only:venue(insertion-clear,M)	gap-A
+1	f61L	52	d'une	insertion-clear	M	B-only:d'une(insertion-clear,M)	gap-A
+1	f61L	53	procuration	insertion-clear	M	B-only:procuration(insertion-clear,M)	gap-A
+1	f61L	54	a	insertion-clear	M	B-only:a(insertion-clear,M)	gap-A
+1	f61L	55	Genes	insertion-clear	M	B-only:Genes(insertion-clear,M)	gap-A
+1	f61L	56	244	cipher	H		agree
+1	f61L	57	244	cipher	H		agree
+1	f61L	58	96	cipher	H		agree
+1	f61L	59	175	cipher	H		agree
+1	f61L	60	43	cipher	H		agree
+1	f61L	61	214	cipher	H		agree
+1	f61L	62	80	cipher	H		agree
+1	f61L	63	211	cipher	H		agree
+1	f61L	64	240	cipher	H		agree
+1	f61L	65	neue	insertion-clear	M	A-only:neue(insertion-clear,H)	gap-B
+1	f61L	66	d'une	insertion-clear	M	A:d'une(insertion-clear,H)/B:pour(insertion-clear,M)	differ
+1	f61L	67	procuration	insertion-clear	M	A:procuration(insertion-clear,H)/B:traitter(insertion-clear,M)	differ
+1	f61L	68	a	insertion-clear	M	A:a(insertion-clear,H)/B:avec(insertion-clear,M)	differ
+1	f61L	69	Genes	insertion-clear	M	A:Genes(insertion-clear,H)/B:eux(insertion-clear,M)	differ
+1	f61L	70	196	cipher	H		agree
+1	f61L	71	241	cipher	H		agree
+1	f61L	72	45	cipher	H		agree
+1	f61L	73	57	cipher	H		agree
+1	f61L	74	34	cipher	H		agree
+1	f61L	75	32	cipher	H		agree
+1	f61L	76	100	cipher	H		agree
+1	f61L	77	Les	clear	H		agree
+1	f61L	78	autres	clear	H		agree
+1	f61L	79	par	clear	H		agree
+1	f61L	80	234	cipher	M	A:234(cipher,H)/B:254(cipher,M)	differ
+1	f61L	81	78	cipher	H		agree
+1	f61L	82	tiennent	insertion-clear	M	A-only:tiennent(insertion-clear,H)	gap-B
+1	f61L	83	pour	insertion-clear	M	A-only:pour(insertion-clear,H)	gap-B
+1	f61L	84	traitter	insertion-clear	M	A-only:traitter(insertion-clear,H)	gap-B
+1	f61L	85	avec	insertion-clear	M	A-only:avec(insertion-clear,H)	gap-B
+1	f61L	86	eux	insertion-clear	M	A:eux(insertion-clear,H)/B:seront(insertion-clear,M)	differ
+1	f61L	87	192	cipher	H		agree
+1	f61L	88	46	cipher	H		agree
+1	f61L	89	87	cipher	H		agree
+1	f61L	90	147	cipher	H		agree
+1	f61L	91	46	cipher	H		agree
+1	f61L	92	146	cipher	H		agree
+1	f61L	93	qui	clear	H		agree
+1	f61L	94	ont	clear	H		agree
+1	f61L	95	sceu	clear	H		agree
+1	f61L	96	les	clear	H		agree
+1	f61L	97	conferences	clear	H		agree
+1	f61L	98	de	insertion-clear	H		agree
+1	f61L	99	Sile	insertion-clear	M	A:Sile(insertion-clear,M)/B:l'Isle(insertion-clear,M)	differ
+1	f61L	100	que	clear	H		agree
+1	f61L	101	j'avois	clear	H		agree
+1	f61L	102	eues	clear	M	A:eues(clear,H)/B:eües(clear,H)	differ
+1	f61L	103	avec	clear	H		agree
+1	f61L	104	145	cipher	H		agree
+1	f61L	105	31	cipher	H		agree
+1	f61L	106	67	cipher	H		agree
+1	f61L	107	sur	clear	H		agree
+1	f61L	108	cette	clear	H		agree
+1	f61L	109	affaire	clear	H		agree
+1	f61L	110	Labbe	insertion-clear	M	A:Labbe(insertion-clear,H)/B:l'abbé(insertion-clear,M)	differ
+1	f61L	111	et	clear	H		agree
+1	f61L	112	qui	clear	H		agree
+1	f61L	113	ont	clear	H		agree
+1	f61L	114	cru	clear	H		agree
+1	f61L	115	que	clear	H		agree
+1	f61L	116	je	clear	H		agree
+1	f61L	117	ne	clear	H		agree
+1	f61L	118	traittois	clear	H		agree
+1	f61L	119	que	clear	H		agree
+1	f61L	120	pour	clear	H		agree
+1	f61L	121	48	cipher	H		agree
+1	f61L	122	175	cipher	H		agree
+1	f61L	123	194	cipher	H		agree
+1	f61L	124	45	cipher	H		agree
+1	f61L	125	240	cipher	H		agree
+1	f61L	126	m'ont	clear	H		agree
+1	f61L	127	envoye	clear	M	A:envoye(clear,H)/B:envoyé(clear,H)	differ
+1	f61L	128	demander	clear	H		agree
+1	f61L	129	une	insertion-clear	H		agree
+1	f61L	130	portion	insertion-clear	H		agree
+1	f61L	131	une	clear	H		agree
+1	f61L	132	entrevue	clear	M	A:entrevue(clear,H)/B:entreveüe(clear,H)	differ
+1	f61L	133	dans	clear	H		agree
+1	f61L	134	laquelle	clear	H		agree
+1	f61L	135	ils	clear	H		agree
+1	f61L	136	m'ont	clear	H		agree
+1	f61L	137	fait	clear	H		agree
+1	f61L	138	connoitre	clear	H		agree
+1	f61L	139	qu'ils	clear	H		agree
+1	f61L	140	estoient	clear	H		agree
+1	f61L	141	informes	clear	M	A:informes(clear,H)/B:informés(clear,H)	differ
+1	f61L	142	de	clear	H		agree
+1	f61L	143	ma	clear	H		agree
+1	f61L	144	negociation	clear	H		agree
+1	f61L	145	avec	clear	H		agree
+1	f61L	146	145	cipher	H		agree
+1	f61L	147	65	cipher	H		agree
+1	f61L	148	67	cipher	H		agree
+1	f61L	149	et	clear	H		agree
+1	f61L	150	qu'ils	clear	H		agree
+1	f61L	151	me	clear	H		agree
+1	f61L	152	Labbe	insertion-clear	M	A:Labbe(insertion-clear,H)/B:l'abbé(insertion-clear,M)	differ
+1	f61L	153	prioient	clear	H		agree
+1	f61L	154	de	clear	H		agree
+1	f61L	155	faire	clear	H		agree
+1	f61L	156	en	clear	H		agree
+1	f61L	157	sorte	clear	H		agree
+1	f61L	158	que	clear	H		agree
+1	f61L	159	le	clear	H		agree
+1	f61L	160	traitte	clear	M	A:traitte(clear,H)/B:traitté(clear,H)	differ
+1	f61L	161	se	clear	H		agree
+1	f61L	162	fit	clear	H		agree
+1	f61L	163	pour	clear	H		agree
+1	f61L	164	toutes	clear	H		agree
+1	f61L	165	34	cipher	H		agree
+1	f61L	166	147	cipher	H		agree
+1	f61L	167	46	cipher	H		agree
+1	f61L	168	146	cipher	H		agree
+1	f61L	169	Je	clear	H		agree
+1	f61L	170	leur	clear	H		agree
+1	f61L	171	ay	clear	H		agree
+1	f61L	172	repondu	clear	H		agree
+1	f61L	173	Sile	insertion-clear	M	A:Sile(insertion-clear,M)/B:l'Isle(insertion-clear,M)	differ
+1	f61L	174	qu'il	clear	H		agree
+1	f61L	175	ne	clear	H		agree
+1	f61L	176	tenoit	clear	H		agree
+1	f61L	177	qu'a	clear	H		agree
+1	f61L	178	eux	clear	H		agree
+1	f61L	179	de	clear	H		agree
+1	f61L	180	me	clear	H		agree
+1	f61L	181	faire	clear	H		agree
+1	f61L	182	leur	clear	H		agree
+1	f61L	183	proposition	clear	H		agree
+1	f61L	184	en	clear	H		agree
+1	f61L	185	me	clear	H		agree
+1	f61L	186	remettant	clear	H		agree
+1	f61L	187	les	clear	H		agree
+1	f61L	188	eclaircissemens	clear	H		agree
+1	f61L	189	en	clear	H		agree
+1	f61L	190	question	clear	H		agree
+1	f61L	191	ils	clear	H		agree
+1	f61L	192	m'ont	clear	H		agree
+1	f61L	193	repondu	clear	H		agree
+1	f61L	194	a	clear	H		agree
+1	f61L	195	peu	clear	H		agree
+1	f61L	196	pres	clear	M	A:pres(clear,H)/B:près(clear,H)	differ
+1	f61L	197	comme	clear	H		agree
+1	f61L	198	le	clear	H		agree
+1	f61L	199	56	cipher	H		agree
+1	f61L	200	31	cipher	H		agree
+1	f61L	201	67	cipher	H		agree
+1	f61L	202	qu'ils	clear	H		agree
+1	f61L	203	donneront	clear	H		agree
+1	f61L	204	tous	clear	H		agree
+1	f61L	205	ces	clear	H		agree
+1	f61L	206	Labbe	insertion-clear	M	A:Labbe(insertion-clear,H)/B:l'abbé(insertion-clear,M)	differ
+1	f61R	1	mais	clear	H		agree
+1	f61R	2	une	clear	H		agree
+1	f61R	3	mort	clear	H		agree
+1	f61R	4	subite	clear	H		agree
+1	f61R	5	l'a	clear	H		agree
+1	f61R	6	surpris	clear	H		agree
+1	f61R	7	en	clear	M	A-only:en(clear,M)	gap-B
+1	f61R	8	n'ayant	clear	H		agree
+1	f61R	9	donner	clear	M	A:donner(clear,H)/B:donné(clear,H)	differ
+1	f61R	10	ordre	clear	H		agree
+1	f61R	11	a	clear	H		agree
+1	f61R	12	sa	clear	H		agree
+1	f61R	13	succession	clear	H		agree
+1	f61R	14	de	clear	H		agree
+1	f61R	15	maniere	clear	H		agree
+1	f61R	16	eclaircissements	clear	H		agree
+1	f61R	17	lors	clear	H		agree
+1	f61R	18	qu'ils	clear	H		agree
+1	f61R	19	verront	clear	H		agree
+1	f61R	20	Excellence	clear	M	A:Excellence(clear,M)/B:V.Ex.ce(clear,M)	differ
+1	f61R	21	J'ay	clear	H		agree
+1	f61R	22	remarque	clear	M	A:remarque(clear,H)/B:remarqué(clear,H)	differ
+1	f61R	23	qu'ils	clear	H		agree
+1	f61R	24	concourent	clear	H		agree
+1	f61R	25	tous	clear	H		agree
+1	f61R	26	avec	clear	H		agree
+1	f61R	27	empressement	clear	H		agree
+1	f61R	28	a	clear	H		agree
+1	f61R	29	145	cipher	H		agree
+1	f61R	30	48	cipher	H		agree
+1	f61R	31	97	cipher	H		agree
+1	f61R	32	223	cipher	M	A:223(cipher,H)/B:220(cipher,M)	differ
+1	f61R	33	87	cipher	H		agree
+1	f61R	34	84	cipher	H		agree
+1	f61R	35	38	cipher	H		agree
+1	f61R	36	46	cipher	H		agree
+1	f61R	37	146	cipher	H		agree
+1	f61R	38	a	insertion-clear	H		agree
+1	f61R	39	la	insertion-clear	H		agree
+1	f61R	40	vente	insertion-clear	H		agree
+1	f61R	41	de	insertion-clear	H		agree
+1	f61R	42	cette	insertion-clear	H		agree
+1	f61R	43	isle	insertion-clear	M	A:isle(insertion-clear,H)/B:Isle(insertion-clear,M)	differ
+1	f61R	44	Vostre	clear	H		agree
+1	f61R	45	Excellence	clear	M	A:Excellence(clear,H)/B:Excelence(clear,H)	differ
+1	f61R	46	aura	clear	H		agree
+1	f61R	47	la	clear	H		agree
+1	f61R	48	bonte	clear	M	A:bonte(clear,H)/B:bonté(clear,H)	differ
+1	f61R	49	de	clear	H		agree
+1	f61R	50	me	clear	H		agree
+1	f61R	51	marquer	clear	H		agree
+1	f61R	52	ce	clear	H		agree
+1	f61R	53	qu'Elle	clear	H		agree
+1	f61R	54	souhaitte	clear	H		agree
+1	f61R	55	que	clear	H		agree
+1	f61R	56	je	clear	H		agree
+1	f61R	57	leur	clear	H		agree
+1	f61R	58	reponde	clear	H		agree
+1	f61R	59	a	clear	H		agree
+1	f61R	60	cet	clear	H		agree
+1	f61R	61	egard	clear	H		agree
+1	f61R	62	Chacun	clear	H		agree
+1	f61R	63	parle	clear	H		agree
+1	f61R	64	en	clear	H		agree
+1	f61R	65	ce	clear	H		agree
+1	f61R	66	pays-cy	clear	H		agree
+1	f61R	67	fort	clear	H		agree
+1	f61R	68	diversement	clear	M	A:diversement(clear,M)/B:diversem.t(clear,H)	differ
+1	f61R	69	de	clear	H		agree
+1	f61R	70	la	clear	H		agree
+1	f61R	71	paix	clear	H		agree
+1	f61R	72	qui	clear	H		agree
+1	f61R	73	vient	clear	H		agree
+1	f61R	74	de	clear	H		agree
+1	f61R	75	se	clear	H		agree
+1	f61R	76	conclurre	clear	H		agree
+1	f61R	77	entre	clear	H		agree
+1	f61R	78	la	clear	H		agree
+1	f61R	79	France	clear	H		agree
+1	f61R	80	et	clear	H		agree
+1	f61R	81	l'Empire	clear	H		agree
+1	f61R	82	Les	clear	H		agree
+1	f61R	83	uns	clear	H		agree
+1	f61R	84	veulent	clear	H		agree
+1	f61R	85	que	clear	H		agree
+1	f61R	86	le	clear	H		agree
+1	f61R	87	Roy	clear	H		agree
+1	f61R	88	de	clear	H		agree
+1	f61R	89	Sicile	clear	H		agree
+1	f61R	90	n'y	clear	H		agree
+1	f61R	91	soit	clear	H		agree
+1	f61R	92	pas	clear	H		agree
+1	f61R	93	compris	clear	H		agree
+1	f61R	94	et	clear	H		agree
+1	f61R	95	que	clear	H		agree
+1	f61R	96	l'Empereur	clear	H		agree
+1	f61R	97	se	clear	H		agree
+1	f61R	98	soit	clear	H		agree
+1	f61R	99	meme	clear	H		agree
+1	f61R	100	reserve	clear	M	A:reserve(clear,H)/B:reservé(clear,H)	differ
+1	f61R	101	dans	clear	H		agree
+1	f61R	102	le	clear	H		agree
+1	f61R	103	traitte	clear	M	A:traitte(clear,H)/B:traitté(clear,H)	differ
+1	f61R	104	de	clear	H		agree
+1	f61R	105	pouvoir	clear	H		agree
+1	f61R	106	luy	clear	H		agree
+1	f61R	107	faire	clear	H		agree
+1	f61R	108	la	clear	H		agree
+1	f61R	109	guerre	clear	H		agree
+1	f61R	110	pour	clear	H		agree
+1	f61R	111	luy	clear	H		agree
+1	f61R	112	reprendre	clear	H		agree
+1	f61R	113	les	clear	H		agree
+1	f61R	114	places	clear	H		agree
+1	f61R	115	qui	clear	H		agree
+1	f61R	116	luy	clear	H		agree
+1	f61R	117	ont	clear	H		agree
+1	f61R	118	este	clear	M	A:este(clear,H)/B:esté(clear,H)	differ
+1	f61R	119	cedees	clear	M	A:cedees(clear,H)/B:cedées(clear,H)	differ
+1	f61R	120	du	clear	H		agree
+1	f61R	121	milanois	clear	H		agree
+1	f61R	122	s'il	clear	H		agree
+1	f61R	123	ne	clear	H		agree
+1	f61R	124	se	clear	H		agree
+1	f61R	125	met	clear	H		agree
+1	f61R	126	en	clear	H		agree
+1	f61R	127	devoir	clear	H		agree
+1	f61R	128	de	clear	H		agree
+1	f61R	129	les	clear	H		agree
+1	f61R	130	rendre	clear	H		agree
+1	f61R	131	a	clear	H		agree
+1	f61R	132	l'amiable	clear	H		agree
+1	f61R	133	sans	clear	H		agree
+1	f61R	134	que	clear	H		agree
+1	f61R	135	la	clear	H		agree
+1	f61R	136	France	clear	H		agree
+1	f61R	137	puisse	clear	H		agree
+1	f61R	138	le	clear	H		agree
+1	f61R	139	secourir	clear	H		agree
+1	f61R	140	directement	clear	H		agree
+1	f61R	141	ni	clear	H		agree
+1	f61R	142	indirectement	clear	H		agree
+1	f61R	143	D'autres	clear	H		agree
+1	f61R	144	au	clear	H		agree
+1	f61R	145	contraire	clear	H		agree
+1	f61R	146	disent	clear	H		agree
+1	f61R	147	que	clear	H		agree
+1	f61R	148	le	clear	H		agree
+1	f61R	149	Roy	clear	H		agree
+1	f61R	150	de	clear	H		agree
+1	f61R	151	Sicile	clear	H		agree
+1	f61R	152	ne	clear	H		agree
+1	f61R	153	sera	clear	H		agree
+1	f61R	154	point	clear	H		agree
+1	f61R	155	trouble	clear	M	A:trouble(clear,H)/B:troublé(clear,H)	differ
+1	f61R	156	par	clear	H		agree
+1	f61R	157	l'Empereur	clear	H		agree
+1	f61R	158	dans	clear	H		agree
+1	f61R	159	les	clear	H		agree
+1	f61R	160	Estats	clear	H		agree
+1	f61R	161	qu'il	clear	H		agree
+1	f61R	162	possede	clear	H		agree
+1	f61R	163	presentement	clear	H		agree
+1	f61R	164	et	clear	H		agree
+1	f61R	165	que	clear	H		agree
+1	f61R	166	s'il	clear	H		agree
+1	f61R	167	doit	clear	H		agree
+1	f61R	168	restituer	clear	H		agree
+1	f61R	169	ce	clear	H		agree
+1	f61R	170	qu'il	clear	H		agree
+1	f62L	1	tient	clear	H		agree
+1	f62L	2	de	clear	H		agree
+1	f62L	3	la	clear	H		agree
+1	f62L	4	part	clear	H		agree
+1	f62L	5	de	clear	H		agree
+1	f62L	6	l'Empire	clear	H		agree
+1	f62L	7	il	clear	H		agree
+1	f62L	8	le	clear	H		agree
+1	f62L	9	fera	clear	H		agree
+1	f62L	10	a	clear	H		agree
+1	f62L	11	l'amiable	clear	H		agree
+1	f62L	12	Il	clear	H		agree
+1	f62L	13	y	clear	H		agree
+1	f62L	14	a	clear	H		agree
+1	f62L	15	toutte	clear	H		agree
+1	f62L	16	apparence	clear	M	A:apparence(clear,H)/B:aparence(clear,H)	differ
+1	f62L	17	que	clear	H		agree
+1	f62L	18	les	clear	H		agree
+1	f62L	19	choses	clear	H		agree
+1	f62L	20	se	clear	H		agree
+1	f62L	21	passeront	clear	H		agree
+1	f62L	22	ainsy	clear	H		agree
+1	f62L	23	ne	clear	H		agree
+1	f62L	24	paroissant	clear	H		agree
+1	f62L	25	pas	clear	H		agree
+1	f62L	26	qu'on	clear	H		agree
+1	f62L	27	se	clear	H		agree
+1	f62L	28	dispose	clear	H		agree
+1	f62L	29	en	clear	H		agree
+1	f62L	30	Lombardie	clear	H		agree
+1	f62L	31	ni	clear	H		agree
+1	f62L	32	en	clear	H		agree
+1	f62L	33	Piemont	clear	H		agree
+1	f62L	34	pour	clear	H		agree
+1	f62L	35	commencer	clear	H		agree
+1	f62L	36	une	clear	H		agree
+1	f62L	37	nouvelle	clear	H		agree
+1	f62L	38	guerre	clear	H		agree
+1	f62L	39	quoy	clear	H		agree
+1	f62L	40	qu'on	clear	H		agree
+1	f62L	41	asseure	clear	M	A:asseure(clear,H)/B:asure(clear,H)	differ
+1	f62L	42	que	clear	H		agree
+1	f62L	43	l'Empereur	clear	H		agree
+1	f62L	44	fait	clear	H		agree
+1	f62L	45	filer	clear	H		agree
+1	f62L	46	actuellement	clear	H		agree
+1	f62L	47	quelques	clear	H		agree
+1	f62L	48	trouppes	clear	H		agree
+1	f62L	49	dans	clear	H		agree
+1	f62L	50	le	clear	H		agree
+1	f62L	51	milanois	clear	H		agree
+1	f62L	52	Au	clear	H		agree
+1	f62L	53	surplus	clear	H		agree
+1	f62L	54	on	clear	H		agree
+1	f62L	55	est	clear	M	A:est(clear,H)/B:en(clear,H)	differ
+1	f62L	56	fort	clear	H		agree
+1	f62L	57	impatient	clear	H		agree
+1	f62L	58	en	clear	H		agree
+1	f62L	59	ce	clear	H		agree
+1	f62L	60	pays-cy	clear	H		agree
+1	f62L	61	de	clear	H		agree
+1	f62L	62	voir	clear	H		agree
+1	f62L	63	ce	clear	H		agree
+1	f62L	64	que	clear	H		agree
+1	f62L	65	porteront	clear	H		agree
+1	f62L	66	les	clear	H		agree
+1	f62L	67	articles	clear	H		agree
+1	f62L	68	de	clear	H		agree
+1	f62L	69	cette	clear	H		agree
+1	f62L	70	derniere	clear	H		agree
+1	f62L	71	paix	clear	H		agree
+1	f62L	72	qui	clear	H		agree
+1	f62L	73	a	clear	H		agree
+1	f62L	74	este	clear	M	A:este(clear,H)/B:esté(clear,H)	differ
+1	f62L	75	traittee	clear	M	A:traittee(clear,H)/B:traittée(clear,H)	differ
+1	f62L	76	si	clear	H		agree
+1	f62L	77	secretement	clear	H		agree
+1	f62L	78	par	clear	H		agree
+1	f62L	79	les	clear	H		agree
+1	f62L	80	deux	clear	H		agree
+1	f62L	81	generaux	clear	H		agree
+1	f62L	82	dont	clear	H		agree
+1	f62L	83	on	clear	H		agree
+1	f62L	84	ne	clear	H		agree
+1	f62L	85	sçait	clear	M	A:sçait(clear,H)/B:scait(clear,H)	differ
+1	f62L	86	rien	clear	H		agree
+1	f62L	87	jusqu'a	clear	H		agree
+1	f62L	88	cette	clear	H		agree
+1	f62L	89	heure	clear	H		agree
+1	f62L	90	et	clear	H		agree
+1	f62L	91	ce	clear	H		agree
+1	f62L	92	que	clear	H		agree
+1	f62L	93	l'on	clear	H		agree
+1	f62L	94	en	clear	H		agree
+1	f62L	95	dit	clear	H		agree
+1	f62L	96	n'est	clear	H		agree
+1	f62L	97	que	clear	H		agree
+1	f62L	98	par	clear	H		agree
+1	f62L	99	conjecture	clear	H		agree
+1	f62L	100	Il	clear	H		agree
+1	f62L	101	est	clear	H		agree
+1	f62L	102	mort	clear	H		agree
+1	f62L	103	a	clear	H		agree
+1	f62L	104	Rome	clear	H		agree
+1	f62L	105	un	clear	H		agree
+1	f62L	106	fameux	clear	H		agree
+1	f62L	107	banquier	clear	H		agree
+1	f62L	108	appelle	clear	M	A:appelle(clear,H)/B:appellé(clear,H)	differ
+1	f62L	109	le	clear	H		agree
+1	f62L	110	marquis	clear	H		agree
+1	f62L	111	Pallavicin	clear	H		agree
+1	f62L	112	genois	clear	H		agree
+1	f62L	113	age	clear	M	A:age(clear,H)/B:agé(clear,H)	differ
+1	f62L	114	d'environ	clear	H		agree
+1	f62L	115	55	clear	H		agree
+1	f62L	116	ans	clear	H		agree
+1	f62L	117	qui	clear	H		agree
+1	f62L	118	s'y	clear	M	A:s'y(clear,H)/B:sy(clear,H)	differ
+1	f62L	119	estoit	clear	H		agree
+1	f62L	120	establi	clear	M	A:establi(clear,H)/B:estably(clear,H)	differ
+1	f62L	121	depuis	clear	H		agree
+1	f62L	122	long	clear	M	B-only:long(clear,H)	gap-A
+1	f62L	123	longtemps	clear	M	A:longtemps(clear,H)/B:temps(clear,H)	differ
+1	f62L	124	Il	clear	H		agree
+1	f62L	125	a	clear	H		agree
+1	f62L	126	laisse	clear	M	A:laisse(clear,H)/B:laissé(clear,H)	differ
+1	f62L	127	plus	clear	H		agree
+1	f62L	128	de	clear	H		agree
+1	f62L	129	six	clear	H		agree
+1	f62L	130	cents	clear	H		agree
+1	f62L	131	mille	clear	H		agree
+1	f62L	132	ecus	clear	H		agree
+1	f62L	133	romains	clear	H		agree
+1	f62L	134	dont	clear	H		agree
+1	f62L	135	la	clear	H		agree
+1	f62L	136	maison	clear	H		agree
+1	f62L	137	Rospillosi	clear	H		agree
+1	f62L	138	de	clear	H		agree
+1	f62L	139	Rome	clear	H		agree
+1	f62L	140	auroit	clear	H		agree
+1	f62L	141	herite	clear	M	A:herite(clear,H)/B:herité(clear,H)	differ
+1	f62L	142	a	clear	H		agree
+1	f62L	143	ce	clear	H		agree
+1	f62L	144	qu'on	clear	H		agree
+1	f62L	145	dit	clear	H		agree
+1	f62L	146	si	clear	H		agree
+1	f62L	147	le	clear	H		agree
+1	f62L	148	deffunct	clear	H		agree
+1	f62L	149	avoit	clear	M	A:avoit(clear,H)/B:n'avoit(clear,H)	differ
+1	f62L	150	fait	clear	H		agree
+1	f62L	151	son	clear	H		agree
+1	f62L	152	testament	clear	H		agree
+1	f62R	1	mais	clear	H		agree
+1	f62R	2	une	clear	H		agree
+1	f62R	3	mort	clear	H		agree
+1	f62R	4	subite	clear	H		agree
+1	f62R	5	l'a	clear	H		agree
+1	f62R	6	surpris	clear	H		agree
+1	f62R	7	en	clear	M	A-only:en(clear,M)	gap-B
+1	f62R	8	n'ayant	clear	H		agree
+1	f62R	9	donner	clear	M	A:donner(clear,H)/B:donné(clear,H)	differ
+1	f62R	10	ordre	clear	H		agree
+1	f62R	11	a	clear	H		agree
+1	f62R	12	sa	clear	H		agree
+1	f62R	13	succession	clear	H		agree
+1	f62R	14	de	clear	H		agree
+1	f62R	15	maniere	clear	H		agree
+1	f62R	16	que	clear	H		agree
+1	f62R	17	ses	clear	H		agree
+1	f62R	18	plus	clear	H		agree
+1	f62R	19	proches	clear	H		agree
+1	f62R	20	parents	clear	H		agree
+1	f62R	21	pretendent	clear	H		agree
+1	f62R	22	par	clear	H		agree
+1	f62R	23	raison	clear	H		agree
+1	f62R	24	de	clear	H		agree
+1	f62R	25	nature	clear	H		agree
+1	f62R	26	heriter	clear	M	A:heriter(clear,H)/B:herités(clear,H)	differ
+1	f62R	27	des	clear	H		agree
+1	f62R	28	biens	clear	H		agree
+1	f62R	29	qu'il	clear	H		agree
+1	f62R	30	a	clear	H		agree
+1	f62R	31	laisse	clear	M	A:laisse(clear,H)/B:laissé(clear,H)	differ
+1	f62R	32	Il	clear	H		agree
+1	f62R	33	estoit	clear	H		agree
+1	f62R	34	fils	clear	H		agree
+1	f62R	35	naturel	clear	H		agree
+1	f62R	36	de	clear	H		agree
+1	f62R	37	Mr	clear	H		agree
+1	f62R	38	Carlo	clear	H		agree
+1	f62R	39	Pallavicino	clear	M	A:Pallavicino(clear,H)/B:Sallavicino(clear,H)	differ
+1	f62R	40	qui	clear	H		agree
+1	f62R	41	estoit	clear	H		agree
+1	f62R	42	noble	clear	H		agree
+1	f62R	43	genois	clear	H		agree
+1	f62R	44	extrement	clear	M	A:extrement(clear,M)/B:extremem.t(clear,H)	differ
+1	f62R	45	riche	clear	H		agree
+1	f62R	46	lequel	clear	H		agree
+1	f62R	47	se	clear	H		agree
+1	f62R	48	servoit	clear	H		agree
+1	f62R	49	de	clear	H		agree
+1	f62R	50	ce	clear	H		agree
+1	f62R	51	fils	clear	H		agree
+1	f62R	52	dans	clear	H		agree
+1	f62R	53	son	clear	H		agree
+1	f62R	54	comptoir	clear	H		agree
+1	f62R	55	comme	clear	H		agree
+1	f62R	56	d'un	clear	H		agree
+1	f62R	57	homme	clear	H		agree
+1	f62R	58	ordinaire	clear	H		agree
+1	f62R	59	a	clear	H		agree
+1	f62R	60	gages	clear	H		agree
+1	f62R	61	Un	clear	H		agree
+1	f62R	62	jour	clear	H		agree
+1	f62R	63	qu'il	clear	H		agree
+1	f62R	64	l'envoya	clear	H		agree
+1	f62R	65	a	clear	H		agree
+1	f62R	66	la	clear	H		agree
+1	f62R	67	loge	clear	H		agree
+1	f62R	68	pour	clear	H		agree
+1	f62R	69	parler	clear	H		agree
+1	f62R	70	a	clear	H		agree
+1	f62R	71	un	clear	H		agree
+1	f62R	72	courtier	clear	H		agree
+1	f62R	73	pour	clear	H		agree
+1	f62R	74	quelque	clear	H		agree
+1	f62R	75	negociation	clear	H		agree
+1	f62R	76	ce	clear	H		agree
+1	f62R	77	dernier	clear	H		agree
+1	f62R	78	surpris	clear	H		agree
+1	f62R	79	d'un	clear	H		agree
+1	f62R	80	acte	clear	H		agree
+1	f62R	81	d'impatience	clear	H		agree
+1	f62R	82	maltraitta	clear	H		agree
+1	f62R	83	l'autre	clear	H		agree
+1	f62R	84	en	clear	H		agree
+1	f62R	85	parolles	clear	M	A:parolles(clear,H)/B:paroles(clear,M)	differ
+1	f62R	86	et	clear	H		agree
+1	f62R	87	luy	clear	H		agree
+1	f62R	88	dit	clear	H		agree
+1	f62R	89	entr'autres	clear	H		agree
+1	f62R	90	oste	clear	H		agree
+1	f62R	91	toy	clear	H		agree
+1	f62R	92	de	clear	H		agree
+1	f62R	93	devant	clear	H		agree
+1	f62R	94	moy	clear	H		agree
+1	f62R	95	fils	clear	H		agree
+1	f62R	96	du	clear	M	A-only:du(clear,H)	gap-B
+1	f62R	97	bastard	clear	H		agree
+1	f62R	98	ce	clear	H		agree
+1	f62R	99	garçon	clear	H		agree
+1	f62R	100	s'en	clear	H		agree
+1	f62R	101	retourna	clear	H		agree
+1	f62R	102	fort	clear	H		agree
+1	f62R	103	mortiffie	clear	M	A:mortiffie(clear,H)/B:mortiffié(clear,H)	differ
+1	f62R	104	et	clear	H		agree
+1	f62R	105	le	clear	H		agree
+1	f62R	106	pere	clear	H		agree
+1	f62R	107	s'en	clear	H		agree
+1	f62R	108	estant	clear	H		agree
+1	f62R	109	apperceu	clear	H		agree
+1	f62R	110	en	clear	H		agree
+1	f62R	111	voulut	clear	H		agree
+1	f62R	112	sçavoir	clear	H		agree
+1	f62R	113	le	clear	H		agree
+1	f62R	114	sujet	clear	H		agree
+1	f62R	115	Le	clear	H		agree
+1	f62R	116	garçon	clear	H		agree
+1	f62R	117	luy	clear	H		agree
+1	f62R	118	compta	clear	H		agree
+1	f62R	119	la	clear	H		agree
+1	f62R	120	scene	clear	H		agree
+1	f62R	121	qui	clear	H		agree
+1	f62R	122	venoit	clear	H		agree
+1	f62R	123	de	clear	H		agree
+1	f62R	124	se	clear	H		agree
+1	f62R	125	passer	clear	H		agree
+1	f62R	126	et	clear	H		agree
+1	f62R	127	lors	clear	H		agree
+1	f62R	128	qu'il	clear	H		agree
+1	f62R	129	fut	clear	H		agree
+1	f62R	130	a	clear	H		agree
+1	f62R	131	l'endroit	clear	H		agree
+1	f62R	132	qu'on	clear	H		agree
+1	f62R	133	l'avoit	clear	H		agree
+1	f62R	134	appelle	clear	M	A:appelle(clear,H)/B:appellé(clear,H)	differ
+1	f62R	135	fils	clear	H		agree
+1	f62R	136	du	clear	M	A-only:du(clear,H)	gap-B
+1	f62R	137	bastard	clear	H		agree
+1	f62R	138	il	clear	H		agree
+1	f62R	139	se	clear	H		agree
+1	f62R	140	mit	clear	H		agree
+1	f62R	141	a	clear	H		agree
+1	f62R	142	pleurer	clear	H		agree
+1	f62R	143	a	clear	H		agree
+1	f62R	144	chaudes	clear	H		agree
+1	f62R	145	larmes	clear	H		agree
+1	f62R	146	Le	clear	H		agree
+1	f62R	147	pere	clear	H		agree
+1	f62R	148	attendri	clear	H		agree
+1	f62R	149	voulant	clear	H		agree
+1	f62R	150	le	clear	H		agree
+1	f62R	151	consoler	clear	H		agree
+1	f62R	152	le	clear	H		agree
+1	f62R	153	mena	clear	H		agree
+1	f62R	154	sur	clear	H		agree
+1	f62R	155	le	clear	H		agree
+1	f62R	156	champ	clear	H		agree
+1	f62R	157	a	clear	H		agree
+1	f62R	158	la	clear	H		agree
+1	f62R	159	emulation	clear	M	A-only:emulation(clear,M)	gap-B
+1	f63L	1	banque	clear	H		agree
+1	f63L	2	de	clear	H		agree
+1	f63L	3	St	clear	M	A:St(clear,H)/B:St.(clear,H)	differ
+1	f63L	4	George	clear	H		agree
+1	f63L	5	et	clear	H		agree
+1	f63L	6	luy	clear	H		agree
+1	f63L	7	fit	clear	H		agree
+1	f63L	8	une	clear	H		agree
+1	f63L	9	cession	clear	H		agree
+1	f63L	10	de	clear	H		agree
+1	f63L	11	cent	clear	H		agree
+1	f63L	12	mille	clear	H		agree
+1	f63L	13	croisats	clear	H		agree
+1	f63L	14	en	clear	H		agree
+1	f63L	15	luy	clear	H		agree
+1	f63L	16	disant	clear	H		agree
+1	f63L	17	tiens	clear	H		agree
+1	f63L	18	voila	clear	H		agree
+1	f63L	19	de	clear	H		agree
+1	f63L	20	quoy	clear	H		agree
+1	f63L	21	te	clear	H		agree
+1	f63L	22	consoler	clear	H		agree
+1	f63L	23	et	clear	H		agree
+1	f63L	24	lors	clear	H		agree
+1	f63L	25	qu'on	clear	H		agree
+1	f63L	26	t'appellera	clear	H		agree
+1	f63L	27	bastard	clear	H		agree
+1	f63L	28	dis	clear	H		agree
+1	f63L	29	que	clear	H		agree
+1	f63L	30	tu	clear	H		agree
+1	f63L	31	l'es	clear	H		agree
+1	f63L	32	mais	clear	H		agree
+1	f63L	33	avec	clear	H		agree
+1	f63L	34	cent	clear	H		agree
+1	f63L	35	mille	clear	H		agree
+1	f63L	36	croisats	clear	H		agree
+1	f63L	37	Le	clear	H		agree
+1	f63L	38	pere	clear	H		agree
+1	f63L	39	long	clear	M	B-only:long(clear,H)	gap-A
+1	f63L	40	longtemps	clear	M	A:longtemps(clear,H)/B:temps(clear,H)	differ
+1	f63L	41	apres	clear	M	A:apres(clear,H)/B:après(clear,H)	differ
+1	f63L	42	estant	clear	H		agree
+1	f63L	43	devenu	clear	H		agree
+1	f63L	44	fol	clear	H		agree
+1	f63L	45	et	clear	H		agree
+1	f63L	46	mort	clear	H		agree
+1	f63L	47	dans	clear	H		agree
+1	f63L	48	cet	clear	H		agree
+1	f63L	49	estat	clear	H		agree
+1	f63L	50	laissa	clear	H		agree
+1	f63L	51	des	clear	H		agree
+1	f63L	52	biens	clear	H		agree
+1	f63L	53	immenses	clear	H		agree
+1	f63L	54	a	clear	H		agree
+1	f63L	55	un	clear	H		agree
+1	f63L	56	seul	clear	H		agree
+1	f63L	57	fils	clear	H		agree
+1	f63L	58	legitime	clear	H		agree
+1	f63L	59	qu'il	clear	H		agree
+1	f63L	60	avoit	clear	H		agree
+1	f63L	61	lequel	clear	H		agree
+1	f63L	62	se	clear	H		agree
+1	f63L	63	voyant	clear	H		agree
+1	f63L	64	tant	clear	H		agree
+1	f63L	65	de	clear	H		agree
+1	f63L	66	bien	clear	H		agree
+1	f63L	67	crut	clear	H		agree
+1	f63L	68	que	clear	H		agree
+1	f63L	69	Genes	clear	H		agree
+1	f63L	70	estoit	clear	H		agree
+1	f63L	71	trop	clear	H		agree
+1	f63L	72	petit	clear	H		agree
+1	f63L	73	pour	clear	H		agree
+1	f63L	74	luy	clear	H		agree
+1	f63L	75	et	clear	H		agree
+1	f63L	76	s'en	clear	M	B-only:s'en(clear,H)	gap-A
+1	f63L	77	fut	clear	H		agree
+1	f63L	78	s'etablir	clear	M	A:s'etablir(clear,H)/B:s'establir(clear,H)	differ
+1	f63L	79	a	clear	H		agree
+1	f63L	80	Rome	clear	H		agree
+1	f63L	81	ou	clear	H		agree
+1	f63L	82	il	clear	H		agree
+1	f63L	83	epousa	clear	M	A:epousa(clear,H)/B:épousa(clear,H)	differ
+1	f63L	84	une	clear	H		agree
+1	f63L	85	fille	clear	H		agree
+1	f63L	86	de	clear	H		agree
+1	f63L	87	la	clear	H		agree
+1	f63L	88	maison	clear	H		agree
+1	f63L	89	Rospillosi	clear	H		agree
+1	f63L	90	mais	clear	H		agree
+1	f63L	91	il	clear	H		agree
+1	f63L	92	mourut	clear	H		agree
+1	f63L	93	un	clear	H		agree
+1	f63L	94	an	clear	H		agree
+1	f63L	95	apres	clear	M	A:apres(clear,H)/B:après(clear,H)	differ
+1	f63L	96	sans	clear	H		agree
+1	f63L	97	enfans	clear	H		agree
+1	f63L	98	Le	clear	H		agree
+1	f63L	99	bastard	clear	H		agree
+1	f63L	100	qui	clear	H		agree
+1	f63L	101	s'estoit	clear	H		agree
+1	f63L	102	alle	clear	M	A:alle(clear,H)/B:allé(clear,H)	differ
+1	f63L	103	establir	clear	H		agree
+1	f63L	104	en	clear	H		agree
+1	f63L	105	meme	clear	M	A:meme(clear,H)/B:mesme(clear,H)	differ
+1	f63L	106	temps	clear	H		agree
+1	f63L	107	a	clear	H		agree
+1	f63L	108	Rome	clear	H		agree
+1	f63L	109	avoit	clear	H		agree
+1	f63L	110	pris	clear	H		agree
+1	f63L	111	une	clear	H		agree
+1	f63L	112	si	clear	H		agree
+1	f63L	113	forte	clear	H		agree
+1	f63L	114	inclination	clear	H		agree
+1	f63L	115	pour	clear	H		agree
+1	f63L	116	la	clear	H		agree
+1	f63L	117	maison	clear	H		agree
+1	f63L	118	Rospillosi	clear	H		agree
+1	f63L	119	qu'il	clear	H		agree
+1	f63L	120	l'a	clear	H		agree
+1	f63L	121	toujours	clear	H		agree
+1	f63L	122	conservee	clear	M	A:conservee(clear,H)/B:conservée(clear,H)	differ
+1	f63L	123	meme	clear	M	A:meme(clear,H)/B:mesme(clear,H)	differ
+1	f63L	124	apres	clear	M	A:apres(clear,H)/B:après(clear,H)	differ
+1	f63L	125	la	clear	H		agree
+1	f63L	126	mort	clear	H		agree
+1	f63L	127	de	clear	H		agree
+1	f63L	128	son	clear	H		agree
+1	f63L	129	frere	clear	H		agree
+1	f63L	130	de	clear	H		agree
+1	f63L	131	maniere	clear	H		agree
+1	f63L	132	que	clear	H		agree
+1	f63L	133	ses	clear	H		agree
+1	f63L	134	plus	clear	H		agree
+1	f63L	135	proches	clear	H		agree
+1	f63L	136	parents	clear	H		agree
+1	f63L	137	n'esperoient	clear	H		agree
+1	f63L	138	rien	clear	H		agree
+1	f63L	139	de	clear	H		agree
+1	f63L	140	sa	clear	H		agree
+1	f63L	141	succession	clear	H		agree
+1	f63L	142	mais	clear	H		agree
+1	f63L	143	estant	clear	H		agree
+1	f63L	144	mort	clear	H		agree
+1	f63L	145	sans	clear	H		agree
+1	f63L	146	faire	clear	H		agree
+1	f63L	147	testament	clear	H		agree
+1	f63L	148	ils	clear	H		agree
+1	f63L	149	sont	clear	H		agree
+1	f63L	150	en	clear	H		agree
+1	f63L	151	pretention	clear	H		agree
+1	f63L	152	Mr	clear	H		agree
+1	f63L	153	Le	clear	M	A:Le(clear,H)/B:le(clear,H)	differ
+1	f63L	154	marquis	clear	H		agree
+1	f63L	155	Etienne	clear	M	A:Etienne(clear,H)/B:Estienne(clear,H)	differ
+1	f63L	156	Pallavicin	clear	H		agree
+1	f63L	157	qui	clear	H		agree
+1	f63L	158	a	clear	H		agree
+1	f63L	159	este	clear	M	A:este(clear,H)/B:esté(clear,H)	differ
+1	f63R	1	souventes	clear	M	A-only:souventes(clear,M)	gap-B
+1	f63R	2	fois	clear	M	A:fois(clear,H)/B:souventesfois(clear,H)	differ
+1	f63R	3	a	clear	H		agree
+1	f63R	4	paris	clear	M	A:paris(clear,H)/B:Paris(clear,H)	differ
+1	f63R	5	pour	clear	H		agree
+1	f63R	6	son	clear	H		agree
+1	f63R	7	plaisir	clear	H		agree
+1	f63R	8	est	clear	H		agree
+1	f63R	9	un	clear	H		agree
+1	f63R	10	des	clear	H		agree
+1	f63R	11	pretendants	clear	H		agree
+1	f63R	12	Un	clear	H		agree
+1	f63R	13	autre	clear	H		agree
+1	f63R	14	gentilhomme	clear	H		agree
+1	f63R	15	appelle	clear	M	A:appelle(clear,H)/B:appellé(clear,H)	differ
+1	f63R	16	Carlo	clear	H		agree
+1	f63R	17	Lomelino	clear	H		agree
+1	f63R	18	l'est	clear	H		agree
+1	f63R	19	aussy	clear	H		agree
+1	f63R	20	par	clear	H		agree
+1	f63R	21	la	clear	H		agree
+1	f63R	22	meme	clear	M	A:meme(clear,H)/B:mesme(clear,H)	differ
+1	f63R	23	raison	clear	H		agree
+1	f63R	24	estant	clear	H		agree
+1	f63R	25	fils	clear	H		agree
+1	f63R	26	de	clear	H		agree
+1	f63R	27	deux	clear	H		agree
+1	f63R	28	soeurs	clear	H		agree
+1	f63R	29	qui	clear	H		agree
+1	f63R	30	se	clear	H		agree
+1	f63R	31	trouvent	clear	H		agree
+1	f63R	32	les	clear	H		agree
+1	f63R	33	plus	clear	H		agree
+1	f63R	34	proches	clear	H		agree
+1	f63R	35	parentes	clear	H		agree
+1	f63R	36	des	clear	H		agree
+1	f63R	37	deffunts	clear	H		agree
+1	f63R	38	Mr	clear	H		agree
+1	f63R	39	Allexandrin	clear	M	A:Allexandrin(clear,H)/B:Alexandrin(clear,H)	differ
+1	f63R	40	Grimaldy	clear	H		agree
+1	f63R	41	qui	clear	H		agree
+1	f63R	42	est	clear	H		agree
+1	f63R	43	actuellement	clear	H		agree
+1	f63R	44	Envoye	clear	M	A:Envoye(clear,H)/B:envoyé(clear,H)	differ
+1	f63R	45	de	clear	H		agree
+1	f63R	46	la	clear	H		agree
+1	f63R	47	Republique	clear	H		agree
+1	f63R	48	a	clear	H		agree
+1	f63R	49	Rome	clear	H		agree
+1	f63R	50	ayant	clear	H		agree
+1	f63R	51	appris	clear	H		agree
+1	f63R	52	la	clear	H		agree
+1	f63R	53	mort	clear	H		agree
+1	f63R	54	subite	clear	H		agree
+1	f63R	55	de	clear	H		agree
+1	f63R	56	ce	clear	H		agree
+1	f63R	57	banquier	clear	H		agree
+1	f63R	58	se	clear	H		agree
+1	f63R	59	transporta	clear	H		agree
+1	f63R	60	sur	clear	H		agree
+1	f63R	61	le	clear	H		agree
+1	f63R	62	champ	clear	H		agree
+1	f63R	63	chez	clear	H		agree
+1	f63R	64	luy	clear	H		agree
+1	f63R	65	et	clear	H		agree
+1	f63R	66	fit	clear	H		agree
+1	f63R	67	mettre	clear	H		agree
+1	f63R	68	le	clear	H		agree
+1	f63R	69	sceau	clear	H		agree
+1	f63R	70	a	clear	H		agree
+1	f63R	71	la	clear	H		agree
+1	f63R	72	maison	clear	H		agree
+1	f63R	73	et	clear	H		agree
+1	f63R	74	donna	clear	H		agree
+1	f63R	75	en	clear	H		agree
+1	f63R	76	meme	clear	M	A:meme(clear,H)/B:mesme(clear,H)	differ
+1	f63R	77	temps	clear	H		agree
+1	f63R	78	part	clear	H		agree
+1	f63R	79	de	clear	H		agree
+1	f63R	80	cette	clear	H		agree
+1	f63R	81	mort	clear	H		agree
+1	f63R	82	a	clear	H		agree
+1	f63R	83	Mr	clear	H		agree
+1	f63R	84	le	clear	H		agree
+1	f63R	85	marquis	clear	H		agree
+1	f63R	86	Etienne	clear	M	A:Etienne(clear,H)/B:Estienne(clear,H)	differ
+1	f63R	87	Pallavicin	clear	H		agree
+1	f63R	88	par	clear	H		agree
+1	f63R	89	un	clear	H		agree
+1	f63R	90	courrier	clear	H		agree
+1	f63R	91	qu'il	clear	H		agree
+1	f63R	92	luy	clear	H		agree
+1	f63R	93	expedia	clear	H		agree
+1	f63R	94	a	clear	H		agree
+1	f63R	95	cet	clear	H		agree
+1	f63R	96	effect	clear	H		agree
+1	f63R	97	en	clear	H		agree
+1	f63R	98	luy	clear	H		agree
+1	f63R	99	marquant	clear	H		agree
+1	f63R	100	que	clear	H		agree
+1	f63R	101	sa	clear	H		agree
+1	f63R	102	presence	clear	H		agree
+1	f63R	103	seroit	clear	H		agree
+1	f63R	104	necesre	clear	M	A:necesre(clear,M)/B:necess.re(clear,H)	differ
+1	f63R	105	a	clear	H		agree
+1	f63R	106	Rome	clear	H		agree
+1	f63R	107	on	clear	H		agree
+1	f63R	108	dit	clear	H		agree
+1	f63R	109	qu'il	clear	H		agree
+1	f63R	110	doit	clear	H		agree
+1	f63R	111	partir	clear	H		agree
+1	f63R	112	incessamment	clear	H		agree
+1	f63R	113	pour	clear	H		agree
+1	f63R	114	s'y	clear	H		agree
+1	f63R	115	rendre	clear	H		agree
+1	f63R	116	Cependant	clear	H		agree
+1	f63R	117	la	clear	H		agree
+1	f63R	118	chambre	clear	H		agree
+1	f63R	119	apostolique	clear	H		agree
+1	f63R	120	pretend	clear	H		agree
+1	f63R	121	cette	clear	H		agree
+1	f63R	122	succession	clear	H		agree
+1	f63R	123	attendu	clear	H		agree
+1	f63R	124	que	clear	H		agree
+1	f63R	125	le	clear	H		agree
+1	f63R	126	deffunct	clear	H		agree
+1	f63R	127	estoit	clear	H		agree
+1	f63R	128	bastard	clear	H		agree
+1	f63R	129	ainsy	clear	H		agree
+1	f63R	130	il	clear	H		agree
+1	f63R	131	y	clear	H		agree
+1	f63R	132	aura	clear	H		agree
+1	f63R	133	indubitablement	clear	H		agree
+1	f63R	134	des	clear	H		agree
+1	f63R	135	procez	clear	H		agree
+1	f63R	136	Un	clear	H		agree
+1	f63R	137	avocat	clear	H		agree
+1	f63R	138	de	clear	H		agree
+1	f63R	139	mes	clear	H		agree
+1	f63R	140	amis	clear	H		agree
+1	f63R	141	a	clear	H		agree
+1	f63R	142	este	clear	M	A:este(clear,H)/B:esté(clear,H)	differ
+1	f63R	143	deja	clear	H		agree
+1	f63R	144	consulte	clear	M	A:consulte(clear,H)/B:consulté(clear,H)	differ
+1	f63R	145	la	clear	H		agree
+1	f63R	146	dessus	clear	H		agree
+1	f63R	147	et	clear	H		agree
+1	f63R	148	son	clear	H		agree
+1	f63R	149	opinion	clear	H		agree
+1	f63R	150	est	clear	M	A:est(clear,M)/B:en(clear,H)	differ
+1	f63R	151	que	clear	H		agree
+1	f63R	152	les	clear	H		agree
+1	f63R	153	parents	clear	H		agree
+1	f63R	154	l'emporteront	clear	H		agree
+1	f64L	1	sur	clear	H		agree
+1	f64L	2	la	clear	H		agree
+1	f64L	3	chambre	clear	H		agree
+1	f64L	4	apostolique	clear	H		agree
+1	f64L	5	Lors	clear	H		agree
+1	f64L	6	qu'on	clear	H		agree
+1	f64L	7	s'attendoit	clear	H		agree
+1	f64L	8	icy	clear	M	A:icy(clear,H)/B:dejà(clear,H)	differ
+1	f64L	9	a	clear	H		agree
+1	f64L	10	reformer	clear	H		agree
+1	f64L	11	bientot	clear	M	A:bientot(clear,H)/B:bientost(clear,H)	differ
+1	f64L	12	entierement	clear	H		agree
+1	f64L	13	la	clear	H		agree
+1	f64L	14	quarantaine	clear	H		agree
+1	f64L	15	qu'on	clear	H		agree
+1	f64L	16	fait	clear	H		agree
+1	f64L	17	observer	clear	H		agree
+1	f64L	18	a	clear	H		agree
+1	f64L	19	tout	clear	H		agree
+1	f64L	20	ce	clear	H		agree
+1	f64L	21	qui	clear	H		agree
+1	f64L	22	vient	clear	H		agree
+1	f64L	23	du	clear	H		agree
+1	f64L	24	coste	clear	M	A:coste(clear,H)/B:costé(clear,H)	differ
+1	f64L	25	d'Allemagne	clear	M	A:d'Allemagne(clear,H)/B:d'allemagne(clear,H)	differ
+1	f64L	26	et	clear	H		agree
+1	f64L	27	qu'on	clear	H		agree
+1	f64L	28	l'avoit	clear	H		agree
+1	f64L	29	meme	clear	H		agree
+1	f64L	30	deja	clear	H		agree
+1	f64L	31	reduitte	clear	H		agree
+1	f64L	32	a	clear	H		agree
+1	f64L	33	la	clear	H		agree
+1	f64L	34	moitie	clear	M	A:moitie(clear,H)/B:moittié(clear,H)	differ
+1	f64L	35	on	clear	H		agree
+1	f64L	36	vient	clear	H		agree
+1	f64L	37	d'aprendre	clear	H		agree
+1	f64L	38	par	clear	H		agree
+1	f64L	39	des	clear	H		agree
+1	f64L	40	voyes	clear	H		agree
+1	f64L	41	indirectes	clear	H		agree
+1	f64L	42	que	clear	H		agree
+1	f64L	43	la	clear	H		agree
+1	f64L	44	peste	clear	H		agree
+1	f64L	45	a	clear	H		agree
+1	f64L	46	recommence	clear	M	A:recommence(clear,H)/B:recommencé(clear,H)	differ
+1	f64L	47	a	clear	H		agree
+1	f64L	48	se	clear	H		agree
+1	f64L	49	faire	clear	H		agree
+1	f64L	50	sentir	clear	H		agree
+1	f64L	51	en	clear	H		agree
+1	f64L	52	Allemagne	clear	H		agree
+1	f64L	53	dans	clear	H		agree
+1	f64L	54	quelques	clear	H		agree
+1	f64L	55	villes	clear	H		agree
+1	f64L	56	ou	clear	H		agree
+1	f64L	57	elle	clear	H		agree
+1	f64L	58	n'avoit	clear	H		agree
+1	f64L	59	pas	clear	H		agree
+1	f64L	60	encore	clear	H		agree
+1	f64L	61	este	clear	M	A:este(clear,H)/B:esté(clear,H)	differ
+1	f64L	62	Ils	clear	H		agree
+1	f64L	63	attendent	clear	H		agree
+1	f64L	64	pourtant	clear	H		agree
+1	f64L	65	d'en	clear	H		agree
+1	f64L	66	sçavoir	clear	H		agree
+1	f64L	67	la	clear	H		agree
+1	f64L	68	verite	clear	M	A:verite(clear,H)/B:verité(clear,H)	differ
+1	f64L	69	avant	clear	H		agree
+1	f64L	70	de	clear	H		agree
+1	f64L	71	prendre	clear	H		agree
+1	f64L	72	les	clear	H		agree
+1	f64L	73	precautions	clear	H		agree
+1	f64L	74	convenables	clear	H		agree
+1	f64L	75	a	clear	H		agree
+1	f64L	76	cet	clear	H		agree
+1	f64L	77	egard	clear	H		agree
+1	f64L	78	Quoy	clear	H		agree
+1	f64L	79	que	clear	H		agree
+1	f64L	80	nous	clear	H		agree
+1	f64L	81	eussions	clear	H		agree
+1	f64L	82	deja	clear	H		agree
+1	f64L	83	apris	clear	H		agree
+1	f64L	84	de	clear	H		agree
+1	f64L	85	divers	clear	H		agree
+1	f64L	86	endroits	clear	H		agree
+1	f64L	87	la	clear	H		agree
+1	f64L	88	signature	clear	H		agree
+1	f64L	89	de	clear	H		agree
+1	f64L	90	la	clear	H		agree
+1	f64L	91	paix	clear	H		agree
+1	f64L	92	entre	clear	H		agree
+1	f64L	93	la	clear	H		agree
+1	f64L	94	France	clear	H		agree
+1	f64L	95	et	clear	H		agree
+1	f64L	96	l'Empire	clear	H		agree
+1	f64L	97	ce	clear	H		agree
+1	f64L	98	que	clear	H		agree
+1	f64L	99	vostre	clear	M	A:vostre(clear,H)/B:Vostre(clear,H)	differ
+1	f64L	100	Excellence	clear	H		agree
+1	f64L	101	a	clear	H		agree
+1	f64L	102	bien	clear	H		agree
+1	f64L	103	voulu	clear	H		agree
+1	f64L	104	m'en	clear	H		agree
+1	f64L	105	marquer	clear	H		agree
+1	f64L	106	me	clear	H		agree
+1	f64L	107	donne	clear	H		agree
+1	f64L	108	une	clear	H		agree
+1	f64L	109	parfaite	clear	M	A:parfaite(clear,H)/B:parfaitte(clear,H)	differ
+1	f64L	110	consolation	clear	H		agree
+1	f64L	111	esperant	clear	H		agree
+1	f64L	112	que	clear	H		agree
+1	f64L	113	c'est	clear	H		agree
+1	f64L	114	le	clear	H		agree
+1	f64L	115	temps	clear	H		agree
+1	f64L	116	que	clear	H		agree
+1	f64L	117	par	clear	H		agree
+1	f64L	118	vos	clear	H		agree
+1	f64L	119	bontes	clear	M	A:bontes(clear,H)/B:bontés(clear,H)	differ
+1	f64L	120	Monseigneur	clear	H		agree
+1	f64L	121	je	clear	H		agree
+1	f64L	122	sortiray	clear	H		agree
+1	f64L	123	au	clear	H		agree
+1	f64L	124	plus	clear	M	B-only:plus(clear,H)	gap-A
+1	f64L	125	plustost	clear	M	A:plustost(clear,M)/B:tost(clear,H)	differ
+1	f64L	126	du	clear	H		agree
+1	f64L	127	triste	clear	H		agree
+1	f64L	128	estat	clear	H		agree
+1	f64L	129	dans	clear	H		agree
+1	f64L	130	lequel	clear	H		agree
+1	f64L	131	je	clear	H		agree
+1	f64L	132	me	clear	H		agree
+1	f64L	133	trouve	clear	H		agree
+1	f64R	1	depuis	clear	H		agree
+1	f64R	2	long	clear	M	B-only:long(clear,H)	gap-A
+1	f64R	3	longtemps	clear	M	A:longtemps(clear,H)/B:temps(clear,H)	differ
+1	f64R	4	Je	clear	H		agree
+1	f64R	5	supplie	clear	H		agree
+1	f64R	6	tres	clear	M	A:tres(clear,H)/B:très(clear,H)	differ
+1	f64R	7	humblement	clear	H		agree
+1	f64R	8	vostre	clear	M	A:vostre(clear,H)/B:Vostre(clear,H)	differ
+1	f64R	9	Excellence	clear	H		agree
+1	f64R	10	de	clear	H		agree
+1	f64R	11	vouloir	clear	H		agree
+1	f64R	12	bien	clear	H		agree
+1	f64R	13	m'envoyer	clear	H		agree
+1	f64R	14	mes	clear	H		agree
+1	f64R	15	expeditions	clear	H		agree
+1	f64R	16	pour	clear	H		agree
+1	f64R	17	aller	clear	H		agree
+1	f64R	18	remplir	clear	H		agree
+1	f64R	19	le	clear	H		agree
+1	f64R	20	consulat	clear	H		agree
+1	f64R	21	de	clear	H		agree
+1	f64R	22	la	clear	H		agree
+1	f64R	23	nation	clear	H		agree
+1	f64R	24	en	clear	H		agree
+1	f64R	25	Sardaigne	clear	H		agree
+1	f64R	26	qu'elle	clear	M	A:qu'elle(clear,H)/B:qu'Elle(clear,H)	differ
+1	f64R	27	a	clear	H		agree
+1	f64R	28	bien	clear	H		agree
+1	f64R	29	voulu	clear	H		agree
+1	f64R	30	me	clear	H		agree
+1	f64R	31	destiner	clear	H		agree
+1	f64R	32	trop	clear	H		agree
+1	f64R	33	heureux	clear	H		agree
+1	f64R	34	si	clear	H		agree
+1	f64R	35	je	clear	H		agree
+1	f64R	36	trouve	clear	H		agree
+1	f64R	37	en	clear	H		agree
+1	f64R	38	ce	clear	H		agree
+1	f64R	39	pays-la	clear	H		agree
+1	f64R	40	des	clear	H		agree
+1	f64R	41	occasions	clear	H		agree
+1	f64R	42	a	clear	H		agree
+1	f64R	43	pouvoir	clear	H		agree
+1	f64R	44	donner	clear	H		agree
+1	f64R	45	des	clear	H		agree
+1	f64R	46	marques	clear	H		agree
+1	f64R	47	de	clear	H		agree
+1	f64R	48	mon	clear	H		agree
+1	f64R	49	zele	clear	H		agree
+1	f64R	50	et	clear	H		agree
+1	f64R	51	de	clear	H		agree
+1	f64R	52	mon	clear	H		agree
+1	f64R	53	aplication	clear	H		agree
+1	f64R	54	pour	clear	H		agree
+1	f64R	55	le	clear	H		agree
+1	f64R	56	Service	clear	H		agree
+1	f64R	57	du	clear	H		agree
+1	f64R	58	Roy	clear	H		agree
+1	f64R	59	si	clear	M	A:si(clear,H)/B:Si(clear,H)	differ
+1	f64R	60	vostre	clear	M	A:vostre(clear,H)/B:Vostre(clear,H)	differ
+1	f64R	61	Excellence	clear	M	A:Excellence(clear,H)/B:Excelence(clear,H)	differ
+1	f64R	62	veut	clear	H		agree
+1	f64R	63	bien	clear	H		agree
+1	f64R	64	se	clear	H		agree
+1	f64R	65	souvenir	clear	H		agree
+1	f64R	66	du	clear	H		agree
+1	f64R	67	petit	clear	H		agree
+1	f64R	68	memoire	clear	H		agree
+1	f64R	69	que	clear	H		agree
+1	f64R	70	je	clear	H		agree
+1	f64R	71	pris	clear	H		agree
+1	f64R	72	la	clear	H		agree
+1	f64R	73	liberte	clear	M	A:liberte(clear,H)/B:liberté(clear,H)	differ
+1	f64R	74	de	clear	H		agree
+1	f64R	75	luy	clear	H		agree
+1	f64R	76	envoyer	clear	H		agree
+1	f64R	77	en	clear	H		agree
+1	f64R	78	avril	clear	H		agree
+1	f64R	79	1712	clear	H		agree
+1	f64R	80	touchant	clear	H		agree
+1	f64R	81	les	clear	H		agree
+1	f64R	82	devoirs	clear	H		agree
+1	f64R	83	d'un	clear	H		agree
+1	f64R	84	consul	clear	H		agree
+1	f64R	85	Elle	clear	H		agree
+1	f64R	86	ne	clear	H		agree
+1	f64R	87	douttera	clear	H		agree
+1	f64R	88	pas	clear	H		agree
+1	f64R	89	que	clear	H		agree
+1	f64R	90	je	clear	H		agree
+1	f64R	91	ne	clear	H		agree
+1	f64R	92	le	clear	H		agree
+1	f64R	93	sçache	clear	H		agree
+1	f64R	94	executer	clear	H		agree
+1	f64R	95	mais	clear	H		agree
+1	f64R	96	quel	clear	H		agree
+1	f64R	97	meilleur	clear	H		agree
+1	f64R	98	memoire	clear	H		agree
+1	f64R	99	peut-on	clear	H		agree
+1	f64R	100	avoir	clear	H		agree
+1	f64R	101	que	clear	H		agree
+1	f64R	102	les	clear	H		agree
+1	f64R	103	instructions	clear	H		agree
+1	f64R	104	et	clear	H		agree
+1	f64R	105	les	clear	H		agree
+1	f64R	106	ordres	clear	H		agree
+1	f64R	107	de	clear	H		agree
+1	f64R	108	vostre	clear	M	A:vostre(clear,H)/B:Vostre(clear,H)	differ
+1	f64R	109	Excellence	clear	M	A:Excellence(clear,H)/B:Excelence(clear,H)	differ
+1	f64R	110	Elle	clear	H		agree
+1	f64R	111	les	clear	H		agree
+1	f64R	112	sçait	clear	H		agree
+1	f64R	113	distribuer	clear	H		agree
+1	f64R	114	avec	clear	H		agree
+1	f64R	115	tant	clear	H		agree
+1	f64R	116	de	clear	H		agree
+1	f64R	117	bonte	clear	M	A:bonte(clear,H)/B:bonté(clear,H)	differ
+1	f64R	118	qu'ils	clear	H		agree
+1	f64R	119	donnent	clear	H		agree
+1	f64R	120	une	clear	H		agree
+1	f64R	121	entiere	clear	H		agree
+1	f64R	122	emulation	clear	H		agree
+1	f64R	123	a	clear	H		agree
+1	f64R	124	ceux	clear	H		agree
+1	f64R	125	qui	clear	H		agree
+1	f64R	126	les	clear	H		agree
+1	f64R	127	reçoivent	clear	H		agree
+1	f65L	1	j'en	clear	H		agree
+1	f65L	2	suis	clear	H		agree
+1	f65L	3	tout	clear	H		agree
+1	f65L	4	remply	clear	H		agree
+1	f65L	5	et	clear	H		agree
+1	f65L	6	l'excez	clear	H		agree
+1	f65L	7	de	clear	H		agree
+1	f65L	8	mon	clear	H		agree
+1	f65L	9	zele	clear	H		agree
+1	f65L	10	m'a	clear	H		agree
+1	f65L	11	porte	clear	M	A:porte(clear,H)/B:porté(clear,H)	differ
+1	f65L	12	a	clear	H		agree
+1	f65L	13	communiquer	clear	H		agree
+1	f65L	14	au	clear	H		agree
+1	f65L	15	nouveau	clear	H		agree
+1	f65L	16	vice	clear	H		agree
+1	f65L	17	consul	clear	H		agree
+1	f65L	18	que	clear	H		agree
+1	f65L	19	le	clear	H		agree
+1	f65L	20	Sr	clear	M	A:Sr(clear,H)/B:Sr.(clear,H)	differ
+1	f65L	21	Aubert	clear	M	A:Aubert(clear,H)/B:Auber(clear,M)	differ
+1	f65L	22	a	clear	H		agree
+1	f65L	23	fait	clear	H		agree
+1	f65L	24	venir	clear	H		agree
+1	f65L	25	depuis	clear	H		agree
+1	f65L	26	cinq	clear	H		agree
+1	f65L	27	mois	clear	H		agree
+1	f65L	28	les	clear	H		agree
+1	f65L	29	demarches	clear	H		agree
+1	f65L	30	qu'il	clear	H		agree
+1	f65L	31	est	clear	H		agree
+1	f65L	32	necesre	clear	M	A:necesre(clear,M)/B:necess.re(clear,H)	differ
+1	f65L	33	d'observer	clear	H		agree
+1	f65L	34	en	clear	H		agree
+1	f65L	35	ce	clear	H		agree
+1	f65L	36	pays-cy	clear	H		agree
+1	f65L	37	pour	clear	H		agree
+1	f65L	38	190	cipher	H		agree
+1	f65L	39	175	cipher	H		agree
+1	f65L	40	47	cipher	H		agree
+1	f65L	41	212	cipher	H		agree
+1	f65L	42	45	cipher	H		agree
+1	f65L	43	77	cipher	H		agree
+1	f65L	44	20	cipher	H		agree
+1	f65L	45	penetrer	insertion-clear	H		agree
+1	f65L	46	ce	insertion-clear	M	B-only:ce(insertion-clear,M)	gap-A
+1	f65L	47	ceux	insertion-clear	M	A:ceux(insertion-clear,H)/B:qu'ils(insertion-clear,M)	differ
+1	f65L	48	222	cipher	H		agree
+1	f65L	49	191	cipher	H		agree
+1	f65L	50	46	cipher	H		agree
+1	f65L	51	221	cipher	H		agree
+1	f65L	52	97	cipher	H		agree
+1	f65L	53	221	cipher	H		agree
+1	f65L	54	32	cipher	H		agree
+1	f65L	55	212	cipher	H		agree
+1	f65L	56	47	cipher	H		agree
+1	f65L	57	Ce	clear	M	A:Ce(clear,H)/B:ce(clear,H)	differ
+1	f65L	58	y	insertion-clear	H		agree
+1	f65L	59	passe	insertion-clear	H		agree
+1	f65L	60	en	insertion-clear	H		agree
+1	f65L	61	secret	insertion-clear	H		agree
+1	f65L	62	vice	clear	H		agree
+1	f65L	63	consul	clear	H		agree
+1	f65L	64	est	clear	H		agree
+1	f65L	65	un	clear	H		agree
+1	f65L	66	nomme	clear	M	A:nomme(clear,H)/B:nommé(clear,H)	differ
+1	f65L	67	Laugier	clear	H		agree
+1	f65L	68	de	clear	H		agree
+1	f65L	69	Toulon	clear	H		agree
+1	f65L	70	que	clear	H		agree
+1	f65L	71	j'ay	clear	H		agree
+1	f65L	72	remarque	clear	M	A:remarque(clear,H)/B:remarqué(clear,H)	differ
+1	f65L	73	estre	clear	H		agree
+1	f65L	74	fort	clear	H		agree
+1	f65L	75	entendu	clear	H		agree
+1	f65L	76	dans	clear	H		agree
+1	f65L	77	les	clear	H		agree
+1	f65L	78	affaires	clear	H		agree
+1	f65L	79	et	clear	H		agree
+1	f65L	80	dans	clear	H		agree
+1	f65L	81	tout	clear	H		agree
+1	f65L	82	ce	clear	H		agree
+1	f65L	83	qui	clear	H		agree
+1	f65L	84	regarde	clear	H		agree
+1	f65L	85	la	clear	H		agree
+1	f65L	86	marine	clear	H		agree
+1	f65L	87	duquel	clear	H		agree
+1	f65L	88	ce	clear	H		agree
+1	f65L	89	consul	clear	H		agree
+1	f65L	90	peut	clear	H		agree
+1	f65L	91	retirer	clear	H		agree
+1	f65L	92	un	clear	H		agree
+1	f65L	93	grand	clear	H		agree
+1	f65L	94	secours	clear	H		agree
+1	f65L	95	pour	clear	H		agree
+1	f65L	96	se	clear	H		agree
+1	f65L	97	faire	clear	H		agree
+1	f65L	98	honneur	clear	H		agree
+1	f65L	99	aupres	clear	M	A:aupres(clear,H)/B:auprès(clear,H)	differ
+1	f65L	100	de	clear	H		agree
+1	f65L	101	vostre	clear	M	A:vostre(clear,H)/B:Vostre(clear,H)	differ
+1	f65L	102	Excellence	clear	M	A:Excellence(clear,H)/B:Excelence(clear,H)	differ
+1	f65L	103	a	clear	H		agree
+1	f65L	104	moins	clear	H		agree
+1	f65L	105	que	clear	H		agree
+1	f65L	106	les	clear	H		agree
+1	f65L	107	avantages	clear	H		agree
+1	f65L	108	qu'il	clear	H		agree
+1	f65L	109	luy	clear	H		agree
+1	f65L	110	fait	clear	H		agree
+1	f65L	111	ne	clear	H		agree
+1	f65L	112	soient	clear	H		agree
+1	f65L	113	pas	clear	H		agree
+1	f65L	114	suffisants	clear	H		agree
+1	f65L	115	pour	clear	H		agree
+1	f65L	116	le	clear	H		agree
+1	f65L	117	retenir	clear	H		agree
+1	f65L	118	aupres	clear	M	A:aupres(clear,H)/B:auprès(clear,H)	differ
+1	f65L	119	de	clear	H		agree
+1	f65L	120	luy	clear	H		agree
+1	f65L	121	Je	clear	H		agree
+1	f65L	122	suis	clear	H		agree
+1	f65L	123	avec	clear	H		agree
+1	f65L	124	tres	clear	M	A:tres(clear,H)/B:très(clear,H)	differ
+1	f65L	125	profond	clear	H		agree
+1	f65L	126	respect	clear	H		agree
+1	f65L	127	Monseigneur	clear/heading	M	A:Monseigneur(clear,H)/B:Monseigneur(heading,H)	differ
+1	f65L	128	De	clear/heading	M	A:De(clear,H)/B:De(heading,H)	differ
+1	f65L	129	Vostre	clear/heading	M	A:Vostre(clear,H)/B:Vostre(heading,H)	differ
+1	f65L	130	Excellence	clear/heading	M	A:Excellence(clear,H)/B:Excelence(heading,H)	differ
+1	f65L	131	Le	clear	H		agree
+1	f65L	132	tres	clear	M	A:tres(clear,H)/B:très(clear,H)	differ
+1	f65L	133	humble	clear	H		agree
+1	f65L	134	et	clear	M	A:et(clear,H)/B:le(clear,H)	differ
+1	f65L	135	tres	clear	M	A:tres(clear,H)/B:très(clear,H)	differ
+1	f65L	136	obeissant	clear	H		agree
+1	f65L	137	serviteur	clear	H		agree
+1	f65L	138	Paget	signature	M	A-only:Paget(signature,H)	gap-B
+1	f65L	139	a	dateline	H		agree
+1	f65L	140	Genes	dateline	H		agree
+1	f65L	141	le	dateline	H		agree
+1	f65L	142	8e	dateline	H		agree
+1	f65L	143	Avril	dateline	H		agree
+1	f65L	144	1714	dateline	H		agree
+1	f65L	145	Paget	signature	M	B-only:Paget(signature,H)	gap-A
+2	f65R	1	Monseigneur	heading	H		agree
+2	f65R	2	J'ay	clear	H		agree
+2	f65R	3	receu	clear	H		agree
+2	f65R	4	les	clear	H		agree
+2	f65R	5	trois	clear	H		agree
+2	f65R	6	lettres	clear	H		agree
+2	f65R	7	qu'il	clear	H		agree
+2	f65R	8	a	clear	H		agree
+2	f65R	9	plu	clear	H		agree
+2	f65R	10	a	clear	H		agree
+2	f65R	11	Vostre	clear	H		agree
+2	f65R	12	Excellence	clear	H		agree
+2	f65R	13	me	clear	H		agree
+2	f65R	14	faire	clear	H		agree
+2	f65R	15	l'honneur	clear	H		agree
+2	f65R	16	de	clear	H		agree
+2	f65R	17	m'ecrire	clear	H		agree
+2	f65R	18	le	clear	H		agree
+2	f65R	19	13	clear	H		agree
+2	f65R	20	de	clear	H		agree
+2	f65R	21	ce	clear	H		agree
+2	f65R	22	mois	clear	H		agree
+2	f65R	23	a	clear	H		agree
+2	f65R	24	deux	clear	H		agree
+2	f65R	25	desquelles	clear	H		agree
+2	f65R	26	Mr	clear	H		agree
+2	f65R	27	Aubert	clear	H		agree
+2	f65R	28	s'en	clear	H		agree
+2	f65R	29	charge	clear	M	A:charge(clear,H)/B:chargé(clear,H)	differ
+2	f65R	30	de	clear	H		agree
+2	f65R	31	repondre	clear	H		agree
+2	f65R	32	et	clear	H		agree
+2	f65R	33	je	clear	H		agree
+2	f65R	34	me	clear	H		agree
+2	f65R	35	suis	clear	H		agree
+2	f65R	36	reserve	clear	M	A:reserve(clear,H)/B:reservé(clear,H)	differ
+2	f65R	37	de	clear	H		agree
+2	f65R	38	luy	clear	H		agree
+2	f65R	39	marquer	clear	H		agree
+2	f65R	40	ce	clear	H		agree
+2	f65R	41	qu'Elle	clear	H		agree
+2	f65R	42	souhaitte	clear	H		agree
+2	f65R	43	sçavoir	clear	H		agree
+2	f65R	44	concernant	clear	H		agree
+2	f65R	45	145	cipher	H		agree
+2	f65R	46	198	cipher	H		agree
+2	f65R	47	46	cipher	H		agree
+2	f65R	48	221	cipher	H		agree
+2	f65R	49	87	cipher	H		agree
+2	f65R	50	201	cipher	H		agree
+2	f65R	51	156	cipher	H		agree
+2	f65R	52	52	cipher	H		agree
+2	f65R	53	221	cipher	H		agree
+2	f65R	54	46	cipher	H		agree
+2	f65R	55	2	cipher	H		agree
+2	f65R	56	185	cipher	H		agree
+2	f65R	57	la	insertion-clear	H		agree
+2	f65R	58	Princesse	insertion-clear	H		agree
+2	f65R	59	de	insertion-clear	H		agree
+2	f65R	60	Parme	insertion-clear	H		agree
+2	f65R	61	et	insertion-clear	H		agree
+2	f65R	62	ses	insertion-clear	H		agree
+2	f65R	63	2	insertion-clear	H		agree
+2	f65R	64	oncles	insertion-clear	H		agree
+2	f65R	65	37	cipher	H		agree
+2	f65R	66	146	cipher	H		agree
+2	f65R	67	46	cipher	H		agree
+2	f65R	68	84	cipher	H		agree
+2	f65R	69	198	cipher	H		agree
+2	f65R	70	46	cipher	H		agree
+2	f65R	71	221	cipher	H		agree
+2	f65R	72	204	cipher	H		agree
+2	f65R	73	on	clear	H		agree
+2	f65R	74	reconnoit	clear	H		agree
+2	f65R	75	deja	clear	M	A:deja(clear,H)/B:déja(clear,H)	differ
+2	f65R	76	de	insertion-clear	H		agree
+2	f65R	77	cette	insertion-clear	H		agree
+2	f65R	78	Princesse	insertion-clear	H		agree
+2	f65R	79	qu'on	insertion-clear	H		agree
+2	f65R	80	196	cipher	H		agree
+2	f65R	81	212	cipher	H		agree
+2	f65R	82	50	cipher	H		agree
+2	f65R	83	175	cipher	H		agree
+2	f65R	84	33	cipher	H		agree
+2	f65R	85	103	cipher	H		agree
+2	f65R	86	30	cipher	H		agree
+2	f65R	87	237	cipher	H		agree
+2	f65R	88	233	cipher	H		agree
+2	f65R	89	46	cipher	H		agree
+2	f65R	90	146	cipher	H		agree
+2	f65R	91	46	cipher	H		agree
+2	f65R	92	31	cipher	H		agree
+2	f65R	93	99	cipher	H		agree
+2	f65R	94	46	cipher	H		agree
+2	f65R	95	pour	insertion-clear	H		agree
+2	f65R	96	Reyne	insertion-clear	H		agree
+2	f65R	97	d'Espagne	insertion-clear	H		agree
+2	f65R	98	a	insertion-clear	H		agree
+2	f65R	99	toutes	insertion-clear	H		agree
+2	f65R	100	les	insertion-clear	H		agree
+2	f65R	101	belles	insertion-clear	H		agree
+2	f66L	1	208	cipher	H		agree
+2	f66L	2	51	cipher	H		agree
+2	f66L	3	206	cipher	H		agree
+2	f66L	4	41	cipher	H		agree
+2	f66L	5	peut	clear	H		agree
+2	f66L	6	desirer	clear	H		agree
+2	f66L	7	99	cipher	H		agree
+2	f66L	8	56	cipher	H		agree
+2	f66L	9	32	cipher	H		agree
+2	f66L	10	126	cipher	H		agree
+2	f66L	11	244	cipher	H		agree
+2	f66L	12	211	cipher	H		agree
+2	f66L	13	220	cipher	H		agree
+2	f66L	14	qualites	insertion-clear	M	A:qualites(insertion-clear,H)/B:qualités(insertion-clear,M)	differ
+2	f66L	15	qu'on	insertion-clear	H		agree
+2	f66L	16	Elle	insertion-clear	H		agree
+2	f66L	17	achevera	insertion-clear	H		agree
+2	f66L	18	sa	insertion-clear	H		agree
+2	f66L	19	22e	clear	H		agree
+2	f66L	20	annee	clear	M	A:annee(clear,H)/B:année(clear,H)	differ
+2	f66L	21	le	clear	H		agree
+2	f66L	22	25	clear	H		agree
+2	f66L	23	Octobre	clear	H		agree
+2	f66L	24	prochain	clear	H		agree
+2	f66L	25	22	cipher	H		agree
+2	f66L	26	56	cipher	H		agree
+2	f66L	27	41	cipher	H		agree
+2	f66L	28	175	cipher	H		agree
+2	f66L	29	34	cipher	H		agree
+2	f66L	30	146	cipher	H		agree
+2	f66L	31	25	cipher	H		agree
+2	f66L	32	42	cipher	H		agree
+2	f66L	33	32	cipher	H		agree
+2	f66L	34	235	cipher	H		agree
+2	f66L	35	31	cipher	H		agree
+2	f66L	36	212	cipher	H		agree
+2	f66L	37	43	cipher	H		agree
+2	f66L	38	214	cipher	H		agree
+2	f66L	39	32	cipher	M	A-only:32(cipher,M)	gap-B
+2	f66L	40	125	cipher	M	A-only:125(cipher,M)	gap-B
+2	f66L	41	38	cipher	H		agree
+2	f66L	42	41	cipher	H		agree
+2	f66L	43	estant	clear	H		agree
+2	f66L	44	175	cipher	H		agree
+2	f66L	45	34	cipher	H		agree
+2	f66L	46	146	cipher	H		agree
+2	f66L	47	165	cipher	H		agree
+2	f66L	48	158	cipher	H		agree
+2	f66L	49	38	cipher	H		agree
+2	f66L	50	46	cipher	H		agree
+2	f66L	51	95	cipher	H		agree
+2	f66L	52	157	cipher	H		agree
+2	f66L	53	39	cipher	M	A-only:39(cipher,M)	gap-B
+2	f66L	54	692	cipher	M	A-only:692(cipher,M)	gap-B
+2	f66L	55	nee	insertion-clear	M	A:nee(insertion-clear,H)/B:né(insertion-clear,M)	differ
+2	f66L	56	le	insertion-clear	H		agree
+2	f66L	57	meme	insertion-clear	M	A:meme(insertion-clear,H)/B:mesme(insertion-clear,M)	differ
+2	f66L	58	mois	insertion-clear	H		agree
+2	f66L	59	en	insertion-clear	H		agree
+2	f66L	60	mil	insertion-clear	H		agree
+2	f66L	61	six	insertion-clear	H		agree
+2	f66L	62	cens	insertion-clear	M	A:cens(insertion-clear,M)/B:cent(insertion-clear,M)	differ
+2	f66L	63	quatre	clear	H		agree
+2	f66L	64	vingt	clear	H		agree
+2	f66L	65	douze	clear	H		agree
+2	f66L	66	Elle	clear	H		agree
+2	f66L	67	est	clear	H		agree
+2	f66L	68	bien	clear	H		agree
+2	f66L	69	faite	clear	H		agree
+2	f66L	70	blonde	clear	H		agree
+2	f66L	71	le	clear	M	B-only:le(clear,H)	gap-A
+2	f66L	72	Rome	clear	M	B-only:Rome(clear,H)	gap-A
+2	f66L	73	les	clear	M	B-only:les(clear,H)	gap-A
+2	f66L	74	traits	clear	M	B-only:traits(clear,H)	gap-A
+2	f66L	75	Le	clear	M	A:Le(clear,H)/B:fins(clear,H)	differ
+2	f66L	76	Visage	clear	M	A:Visage(clear,M)/B:et(clear,H)	differ
+2	f66L	77	99	cipher	H		agree
+2	f66L	78	96	cipher	H		agree
+2	f66L	79	71	cipher	H		agree
+2	f66L	80	105	cipher	H		agree
+2	f66L	81	38	cipher	H		agree
+2	f66L	82	233	cipher	H		agree
+2	f66L	83	31	cipher	H		agree
+2	f66L	84	148	cipher	H		agree
+2	f66L	85	41	cipher	H		agree
+2	f66L	86	87	cipher	H		agree
+2	f66L	87	146	cipher	H		agree
+2	f66L	88	245	cipher	H		agree
+2	f66L	89	220	cipher	H		agree
+2	f66L	90	116	cipher	M	A-only:116(cipher,M)	gap-B
+2	f66L	91	Rousse	clear	M	A-only:Rousse(clear,M)	gap-B
+2	f66L	92	les	clear	M	A-only:les(clear,H)	gap-B
+2	f66L	93	traits	clear	M	A-only:traits(clear,H)	gap-B
+2	f66L	94	fins	clear	M	A-only:fins(clear,H)	gap-B
+2	f66L	95	et	clear	M	A-only:et(clear,H)	gap-B
+2	f66L	96	214	cipher	H		agree
+2	f66L	97	41	cipher	H		agree
+2	f66L	98	33	cipher	H		agree
+2	f66L	99	146	cipher	H		agree
+2	f66L	100	46	cipher	H		agree
+2	f66L	101	241	cipher	H		agree
+2	f66L	102	46	cipher	H		agree
+2	f66L	103	107	cipher	H		agree
+2	f66L	104	41	cipher	H		agree
+2	f66L	105	46	cipher	H		agree
+2	f66L	106	52	cipher	H		agree
+2	f66L	107	assez	clear	H		agree
+2	f66L	108	reguliers	clear	H		agree
+2	f66L	109	la	insertion-clear	M	A-only:la(insertion-clear,H)	gap-B
+2	f66L	110	taille	insertion-clear	M	A-only:taille(insertion-clear,H)	gap-B
+2	f66L	111	belle	insertion-clear	M	A-only:belle(insertion-clear,H)	gap-B
+2	f66L	112	52	cipher	H		agree
+2	f66L	113	145	cipher	H		agree
+2	f66L	114	232	cipher	H		agree
+2	f66L	115	53	cipher	H		agree
+2	f66L	116	146	cipher	H		agree
+2	f66L	117	31	cipher	H		agree
+2	f66L	118	99	cipher	H		agree
+2	f66L	119	quoy	clear	H		agree
+2	f66L	120	que	clear	H		agree
+2	f66L	121	164	cipher	H		agree
+2	f66L	122	175	cipher	H		agree
+2	f66L	123	La	insertion-clear	M	B-only:La(insertion-clear,M)	gap-A
+2	f66L	124	72	cipher/insertion-clear	M	A:72(cipher,M)/B:taille(insertion-clear,M)	differ
+2	f66L	125	35	cipher/insertion-clear	M	A:35(cipher,M)/B:belle(insertion-clear,M)	differ
+2	f66L	126	Moyenne	insertion-clear	H		agree
+2	f66L	127	beaucoup	insertion-clear	M	A-only:beaucoup(insertion-clear,M)	gap-B
+2	f66L	128	d'esprit	clear	M	A-only:d'esprit(clear,H)	gap-B
+2	f66L	129	et	clear	M	A-only:et(clear,H)	gap-B
+2	f66L	130	un	clear	M	A-only:un(clear,H)	gap-B
+2	f66L	131	air	clear	M	A-only:air(clear,H)	gap-B
+2	f66L	132	96	cipher	H		agree
+2	f66L	133	43	cipher	H		agree
+2	f66L	134	213	cipher	H		agree
+2	f66L	135	47	cipher	H		agree
+2	f66L	136	52	cipher	H		agree
+2	f66L	137	48	cipher	H		agree
+2	f66L	138	41	cipher	H		agree
+2	f66L	139	56	cipher	H		agree
+2	f66L	140	38	cipher	H		agree
+2	f66L	141	45	cipher	H		agree
+2	f66L	142	fort	clear	H		agree
+2	f66L	143	158	cipher	H		agree
+2	f66L	144	87	cipher	H		agree
+2	f66L	145	46	cipher	H		agree
+2	f66L	146	d'esprit	insertion-clear	M	B-only:d'esprit(insertion-clear,M)	gap-A
+2	f66L	147	et	insertion-clear	M	B-only:et(insertion-clear,M)	gap-A
+2	f66L	148	un	insertion-clear	M	B-only:un(insertion-clear,M)	gap-A
+2	f66L	149	233	cipher/insertion-clear	M	A:233(cipher,M)/B:air(insertion-clear,M)	differ
+2	f66L	150	modeste	insertion-clear	H		agree
+2	f66L	151	On	clear	H		agree
+2	f66L	152	ne	clear	H		agree
+2	f66L	153	luy	clear	H		agree
+2	f66L	154	a	clear	H		agree
+2	f66L	155	pas	clear	H		agree
+2	f66L	156	reconnu	clear	H		agree
+2	f66L	157	des	clear	H		agree
+2	f66L	158	inclinations	clear	H		agree
+2	f66L	159	particulieres	clear	H		agree
+2	f66L	160	mais	clear	H		agree
+2	f66L	161	une	clear	H		agree
+2	f66L	162	entiere	clear	H		agree
+2	f66L	163	soumission	clear	H		agree
+2	f66L	164	et	clear	M	A-only:et(clear,M)	gap-B
+2	f66L	165	Une	clear	M	A:Une(clear,H)/B:une(clear,H)	differ
+2	f66L	166	complaisance	clear	H		agree
+2	f66L	167	aveugle	clear	H		agree
+2	f66L	168	pour	clear	H		agree
+2	f66L	169	400	cipher	H		agree
+2	f66L	170	4	cipher	H		agree
+2	f66L	171	19	cipher	H		agree
+2	f66L	172	600	cipher	M	A-only:600(cipher,M)	gap-B
+2	f66L	173	Madame	clear	M	A-only:Madame(clear,H)	gap-B
+2	f66L	174	la	clear	M	A-only:la(clear,H)	gap-B
+2	f66L	175	Duchesse	clear	M	A-only:Duchesse(clear,H)	gap-B
+2	f66L	176	sa	clear	M	A-only:sa(clear,H)	gap-B
+2	f66L	177	Mere	clear	M	A-only:Mere(clear,H)	gap-B
+2	f66L	178	qui	clear	M	A-only:qui(clear,H)	gap-B
+2	f66L	179	l'a	clear	M	A-only:l'a(clear,H)	gap-B
+2	f66L	180	toujours	clear	M	A:toujours(clear,H)/B:Envers(clear,M)	differ
+2	f66L	181	155	cipher	H		agree
+2	f66L	182	86	cipher	H		agree
+2	f66L	183	145	cipher	H		agree
+2	f66L	184	90	cipher	H		agree
+2	f66L	185	32	cipher	H		agree
+2	f66L	186	126	cipher	H		agree
+2	f66L	187	46	cipher	H		agree
+2	f66L	188	221	cipher	H		agree
+2	f66L	189	20	cipher	H		agree
+2	f66L	190	156	cipher	H		agree
+2	f66L	191	212	cipher	H		agree
+2	f66L	192	205	cipher	H		agree
+2	f66L	193	145	cipher	H		agree
+2	f66L	194	Madame	insertion-clear	M	B-only:Madame(insertion-clear,M)	gap-A
+2	f66L	195	la	insertion-clear	M	B-only:la(insertion-clear,M)	gap-A
+2	f66L	196	Duchesse	insertion-clear	M	B-only:Duchesse(insertion-clear,M)	gap-A
+2	f66L	197	238	cipher/insertion-clear	M	A:238(cipher,M)/B:sa(insertion-clear,M)	differ
+2	f66L	198	tenue	clear/insertion-clear	M	A:tenue(clear,H)/B:Mere(insertion-clear,M)	differ
+2	f66L	199	sous	clear/insertion-clear	M	A:sous(clear,H)/B:qui(insertion-clear,M)	differ
+2	f66L	200	les	clear/insertion-clear	M	A:les(clear,H)/B:l'a(insertion-clear,M)	differ
+2	f66L	201	yeux	clear/insertion-clear	M	A:yeux(clear,H)/B:toujours(insertion-clear,M)	differ
+2	f66L	202	233	cipher	H		agree
+2	f66L	203	178	cipher	H		agree
+2	f66L	204	34	cipher	H		agree
+2	f66L	205	46	cipher	H		agree
+2	f66L	206	184	cipher	H		agree
+2	f66L	207	46	cipher	H		agree
+2	f66L	208	221	cipher	H		agree
+2	f66L	209	46	cipher	H		agree
+2	f66L	210	50	cipher	H		agree
+2	f66L	211	100	cipher	H		agree
+2	f66L	212	et	clear	H		agree
+2	f66L	213	s'en	clear	H		agree
+2	f66L	214	fait	clear	M	B-only:fait(clear,M)	gap-A
+2	f66L	215	tenüe	insertion-clear	M	B-only:tenüe(insertion-clear,M)	gap-A
+2	f66L	216	sous	insertion-clear	M	B-only:sous(insertion-clear,M)	gap-A
+2	f66L	217	les	insertion-clear	M	B-only:les(insertion-clear,M)	gap-A
+2	f66L	218	faitte	clear/insertion-clear	M	A:faitte(clear,M)/B:yeux(insertion-clear,M)	differ
+2	f66L	219	une	clear	M	A:une(clear,H)/B:Une(clear,H)	differ
+2	f66L	220	attache	clear	H		agree
+2	f66L	221	particuliere	clear	H		agree
+2	f66L	222	a	clear	H		agree
+2	f66L	223	156	cipher	M	A:156(cipher,H)/B:150(cipher,M)	differ
+2	f66L	224	89	cipher	H		agree
+2	f66L	225	41	cipher	H		agree
+2	f66L	226	175	cipher	H		agree
+2	f66L	227	45	cipher	H		agree
+2	f66L	228	48	cipher	M	A-only:48(cipher,M)	gap-B
+2	f66L	229	luy	insertion-clear	H		agree
+2	f66L	230	donnent	insertion-clear	H		agree
+2	f66L	231	une	insertion-clear	M	A-only:une(insertion-clear,M)	gap-B
+2	f66L	232	175	cipher	H		agree
+2	f66L	233	31	cipher	H		agree
+2	f66L	234	99	cipher	H		agree
+2	f66L	235	34	cipher	H		agree
+2	f66L	236	90	cipher	H		agree
+2	f66L	237	76	cipher	H		agree
+2	f66L	238	240	cipher	H		agree
+2	f66L	239	a	clear	H		agree
+2	f66L	240	quoy	clear	H		agree
+2	f66L	241	Elle	clear	H		agree
+2	f66L	242	a	clear	H		agree
+2	f66L	243	parfaitement	clear	M	A-only:parfaitement(clear,M)	gap-B
+2	f66L	244	belle	insertion-clear	H		agree
+2	f66L	245	Education	insertion-clear	H		agree
+2	f66L	246	bien	clear	H		agree
+2	f66L	247	reussy	clear	M	A:reussy(clear,H)/B:reüssy(clear,H)	differ
+2	f66L	248	a	clear	H		agree
+2	f66L	249	ce	clear	H		agree
+2	f66L	250	qu'on	clear	H		agree
+2	f66L	251	dit	clear	H		agree
+2	f66L	252	Vostre	clear	H		agree
+2	f66L	253	Excellence	clear	H		agree
+2	f66L	254	n'ignore	clear	H		agree
+2	f66L	255	pas	clear	H		agree
+2	f66L	256	que	clear	H		agree
+2	f66L	257	84	cipher	H		agree
+2	f66L	258	156	cipher	H		agree
+2	f66L	259	212	cipher	H		agree
+2	f66L	260	apres	clear	M	A:apres(clear,H)/B:après(clear,H)	differ
+2	f66L	261	la	clear	H		agree
+2	f66L	262	mort	clear	H		agree
+2	f66L	263	de	clear	M	A-only:de(clear,H)	gap-B
+2	f66L	264	cette	insertion-clear	H		agree
+2	f66L	265	mere	insertion-clear	H		agree
+2	f66L	266	161	cipher	H		agree
+2	f66L	267	146	cipher	H		agree
+2	f66L	268	90	cipher	H		agree
+2	f66L	269	32	cipher	H		agree
+2	f66L	270	87	cipher	H		agree
+2	f66L	271	201	cipher	H		agree
+2	f66L	272	156	cipher	H		agree
+2	f66L	273	222	cipher	H		agree
+2	f66L	274	41	cipher	H		agree
+2	f66L	275	155	cipher	H		agree
+2	f66L	276	213	cipher	H		agree
+2	f66L	277	34	cipher	H		agree
+2	f66L	278	194	cipher	M	A-only:194(cipher,M)	gap-B
+2	f66L	279	48	cipher	M	A:48(cipher,M)/B:19(cipher,M)	differ
+2	f66L	280	M	insertion-clear	M	A:M(insertion-clear,H)/B:Mr(insertion-clear,M)	differ
+2	f66L	281	le	insertion-clear	H		agree
+2	f66L	282	Duc	insertion-clear	H		agree
+2	f66L	283	de	insertion-clear	H		agree
+2	f66L	284	Parme	insertion-clear	H		agree
+2	f66L	285	son	insertion-clear	H		agree
+2	f66L	286	Mari	insertion-clear	H		agree
+2	f66L	287	epousa	insertion-clear	H		agree
+2	f66L	288	220	cipher	H		agree
+2	f66L	289	97	cipher	H		agree
+2	f66L	290	2	cipher	H		agree
+2	f66L	291	177	cipher	H		agree
+2	f66L	292	77	cipher	H		agree
+2	f66L	293	46	cipher	H		agree
+2	f66L	294	146	cipher	H		agree
+2	f66L	295	198	cipher	H		agree
+2	f66L	296	112	cipher	H		agree
+2	f66L	297	188	cipher	H		agree
+2	f66L	298	105	cipher	H		agree
+2	f66L	299	45	cipher	H		agree
+2	f66L	300	175	cipher	H		agree
+2	f66L	301	221	cipher	M	A-only:221(cipher,M)	gap-B
+2	f66L	302	en	insertion-clear	H		agree
+2	f66L	303	2e	insertion-clear	M	A:2e(insertion-clear,H)/B:2des(insertion-clear,M)	differ
+2	f66L	304	Nopces	insertion-clear	H		agree
+2	f66L	305	le	insertion-clear	H		agree
+2	f66L	306	Prince	insertion-clear	H		agree
+2	f66L	307	Francois	insertion-clear	M	A:Francois(insertion-clear,H)/B:François(insertion-clear,M)	differ
+2	f66L	308	Farnese	insertion-clear	H		agree
+2	f66L	309	qui	clear	H		agree
+2	f66L	310	en	clear	H		agree
+2	f66L	311	146	cipher	H		agree
+2	f66L	312	90	cipher	H		agree
+2	f66L	313	32	cipher	H		agree
+2	f66L	314	87	cipher	H		agree
+2	f66L	315	201	cipher	H		agree
+2	f66L	316	45	cipher	H		agree
+2	f66L	317	156	cipher	H		agree
+2	f66L	318	212	cipher	H		agree
+2	f66L	319	38	cipher	H		agree
+2	f66L	320	174	cipher	H		agree
+2	f66L	321	54	cipher	H		agree
+2	f66L	322	35	cipher	M	A-only:35(cipher,M)	gap-B
+2	f66L	323	212	cipher	M	A-only:212(cipher,M)	gap-B
+2	f66L	324	le	insertion-clear	H		agree
+2	f66L	325	Duc	insertion-clear	H		agree
+2	f66L	326	de	insertion-clear	H		agree
+2	f66L	327	Parme	insertion-clear	H		agree
+2	f66L	328	Regnant	insertion-clear	H		agree
+2	f66L	329	frere	insertion-clear	H		agree
+2	f66L	330	du	insertion-clear	M	A-only:du(insertion-clear,H)	gap-B
+2	f66L	331	deffunct	insertion-clear	M	A-only:deffunct(insertion-clear,M)	gap-B
+2	f66L	332	212	cipher	H		agree
+2	f66L	333	90	cipher	H		agree
+2	f66L	334	87	cipher	H		agree
+2	f66L	335	35	cipher	H		agree
+2	f66L	336	109	cipher	H		agree
+2	f66L	337	54	cipher	H		agree
+2	f66L	338	Duquel	clear	H		agree
+2	f66L	339	du	insertion-clear	M	B-only:du(insertion-clear,M)	gap-A
+2	f66L	340	deffunct	insertion-clear	M	B-only:deffunct(insertion-clear,M)	gap-A
+2	f66L	341	99	cipher	H		agree
+2	f66L	342	174	cipher	H		agree
+2	f66L	343	200	cipher	H		agree
+2	f66L	344	100	cipher	H		agree
+2	f66L	345	33	cipher	M	A-only:33(cipher,M)	gap-B
+2	f66L	346	97	cipher	M	A-only:97(cipher,M)	gap-B
+2	f66L	347	Elle	insertion-clear	H		agree
+2	f66L	348	n'a	insertion-clear	H		agree
+2	f66L	349	pas	insertion-clear	H		agree
+2	f66L	350	eu	insertion-clear	H		agree
+2	f66L	351	d'Infans	insertion-clear	M	A-only:d'Infans(insertion-clear,M)	gap-B
+2	f66L	352	105	cipher	H		agree
+2	f66L	353	41	cipher	H		agree
+2	f66L	354	46	cipher	H		agree
+2	f66L	355	et	clear	H		agree
+2	f66L	356	a	clear	H		agree
+2	f66L	357	perdu	clear	H		agree
+2	f66L	358	l'esperence	clear	H		agree
+2	f66L	359	de	clear	H		agree
+2	f66L	360	97	cipher	H		agree
+2	f66L	361	58	cipher	H		agree
+2	f66L	362	221	cipher	M	A-only:221(cipher,M)	gap-B
+2	f66L	363	En	insertion-clear	H		agree
+2	f66L	364	avoir	insertion-clear	M	A-only:avoir(insertion-clear,M)	gap-B
+2	f66L	365	sceu	insertion-clear	M	A:sceu(insertion-clear,M)/B:attendant(insertion-clear,M)	differ
+2	f66L	366	trouvant	clear	H		agree
+2	f66L	367	30	cipher	H		agree
+2	f66L	368	116	cipher	H		agree
+2	f66L	369	34	cipher	H		agree
+2	f66L	370	87	cipher	H		agree
+2	f66L	371	44	cipher	H		agree
+2	f66L	372	30	cipher	H		agree
+2	f66L	373	41	cipher	H		agree
+2	f66L	374	46	cipher	H		agree
+2	f66L	375	quoy	clear	H		agree
+2	f66L	376	que	clear	H		agree
+2	f66L	377	agee	insertion-clear	M	A:agee(insertion-clear,H)/B:agée(insertion-clear,M)	differ
+2	f66L	378	de	insertion-clear	H		agree
+2	f66L	379	44	insertion-clear	H		agree
+2	f66L	380	ans	insertion-clear	H		agree
+2	f66R	1	quoy	clear	H		agree
+2	f66R	2	que	clear	H		agree
+2	f66R	3	ce	clear	H		agree
+2	f66R	4	Dernier	clear	M	A:Dernier(clear,H)/B:dernier(clear,H)	differ
+2	f66R	5	Duc	clear	H		agree
+2	f66R	6	n'ait	clear	H		agree
+2	f66R	7	que	clear	H		agree
+2	f66R	8	36	clear/cipher	M	A:36(clear,H)/B:38(cipher,M)	differ
+2	f66R	9	77	cipher	H		agree
+2	f66R	10	87	cipher	H		agree
+2	f66R	11	45	cipher	H		agree
+2	f66R	12	176	cipher	H		agree
+2	f66R	13	34	cipher	H		agree
+2	f66R	14	45	cipher	H		agree
+2	f66R	15	90	cipher	H		agree
+2	f66R	16	32	cipher	H		agree
+2	f66R	17	41	cipher	H		agree
+2	f66R	18	97	cipher	H		agree
+2	f66R	19	56	cipher	H		agree
+2	f66R	20	38	cipher	H		agree
+2	f66R	21	47	cipher	H		agree
+2	f66R	22	204	cipher	H		agree
+2	f66R	23	36	cipher	H		agree
+2	f66R	24	le	insertion-clear	M	A-only:le(insertion-clear,H)	gap-B
+2	f66R	25	Prince	insertion-clear	M	A-only:Prince(insertion-clear,H)	gap-B
+2	f66R	26	Antoine	insertion-clear	M	A-only:Antoine(insertion-clear,H)	gap-B
+2	f66R	27	de	insertion-clear	M	A-only:de(insertion-clear,H)	gap-B
+2	f66R	28	Parme	insertion-clear	M	A-only:Parme(insertion-clear,H)	gap-B
+2	f66R	29	Il	clear	H		agree
+2	f66R	30	y	clear	H		agree
+2	f66R	31	a	clear	H		agree
+2	f66R	32	encore	clear	H		agree
+2	f66R	33	146	cipher	H		agree
+2	f66R	34	198	cipher	H		agree
+2	f66R	35	56	cipher	H		agree
+2	f66R	36	41	cipher	H		agree
+2	f66R	37	235	cipher	H		agree
+2	f66R	38	38	cipher	H		agree
+2	f66R	39	175	cipher	H		agree
+2	f66R	40	87	cipher	H		agree
+2	f66R	41	201	cipher	H		agree
+2	f66R	42	156	cipher	H		agree
+2	f66R	43	35	cipher	H		agree
+2	f66R	44	frere	insertion-clear	M	A:frere(insertion-clear,H)/B:le(insertion-clear,M)	differ
+2	f66R	45	du	insertion-clear	M	A:du(insertion-clear,H)/B:Prince(insertion-clear,M)	differ
+2	f66R	46	Duc	insertion-clear	M	A:Duc(insertion-clear,H)/B:Antoine(insertion-clear,M)	differ
+2	f66R	47	de	insertion-clear	H		agree
+2	f66R	48	Parme	insertion-clear	H		agree
+2	f66R	49	qui	insertion-clear	M	A-only:qui(insertion-clear,H)	gap-B
+2	f66R	50	n'a	insertion-clear	M	A-only:n'a(insertion-clear,H)	gap-B
+2	f66R	51	que	insertion-clear	M	A-only:que(insertion-clear,H)	gap-B
+2	f66R	52	35	insertion-clear	M	A-only:35(insertion-clear,H)	gap-B
+2	f66R	53	ans	insertion-clear	M	A-only:ans(insertion-clear,H)	gap-B
+2	f66R	54	Mais	insertion-clear	M	A-only:Mais(insertion-clear,H)	gap-B
+2	f66R	55	212	cipher	H		agree
+2	f66R	56	212	cipher	H		agree
+2	f66R	57	90	cipher	H		agree
+2	f66R	58	90	cipher	H		agree
+2	f66R	59	52	cipher	M	A:52(cipher,H)/B:32(cipher,M)	differ
+2	f66R	60	205	cipher	H		agree
+2	f66R	61	154	cipher	M	A:154(cipher,H)/B:174(cipher,M)	differ
+2	f66R	62	204	cipher	H		agree
+2	f66R	63	35	cipher	H		agree
+2	f66R	64	30	cipher	H		agree
+2	f66R	65	41	cipher	H		agree
+2	f66R	66	46	cipher	H		agree
+2	f66R	67	160	cipher	H		agree
+2	f66R	68	53	cipher	H		agree
+2	f66R	69	frere	insertion-clear	M	B-only:frere(insertion-clear,M)	gap-A
+2	f66R	70	du	insertion-clear	M	B-only:du(insertion-clear,M)	gap-A
+2	f66R	71	Il	clear/insertion-clear	M	A:Il(clear,H)/B:Duc(insertion-clear,M)	differ
+2	f66R	72	n'est	clear/insertion-clear	M	A:n'est(clear,H)/B:de(insertion-clear,M)	differ
+2	f66R	73	pas	clear/insertion-clear	M	A:pas(clear,H)/B:Parme(insertion-clear,M)	differ
+2	f66R	74	marie	clear/insertion-clear	M	A:marie(clear,H)/B:qui(insertion-clear,M)	differ
+2	f66R	75	et	clear/insertion-clear	M	A:et(clear,H)/B:n'a(insertion-clear,M)	differ
+2	f66R	76	ne	clear/insertion-clear	M	A:ne(clear,H)/B:que(insertion-clear,M)	differ
+2	f66R	77	pour	insertion-clear	M	A:pour(insertion-clear,H)/B:35(insertion-clear,M)	differ
+2	f66R	78	le	insertion-clear	M	A:le(insertion-clear,H)/B:ans(insertion-clear,M)	differ
+2	f66R	79	Mariage	insertion-clear	M	A:Mariage(insertion-clear,H)/B:Mais(insertion-clear,M)	differ
+2	f66R	80	41	cipher	H		agree
+2	f66R	81	96	cipher	H		agree
+2	f66R	82	200	cipher	H		agree
+2	f66R	83	155	cipher	H		agree
+2	f66R	84	213	cipher	H		agree
+2	f66R	85	34	cipher	H		agree
+2	f66R	86	52	cipher	H		agree
+2	f66R	87	174	cipher	H		agree
+2	f66R	88	nulle	clear	H		agree
+2	f66R	89	inclination	clear	H		agree
+2	f66R	90	Il	insertion-clear	M	B-only:Il(insertion-clear,M)	gap-A
+2	f66R	91	n'est	insertion-clear	M	B-only:n'est(insertion-clear,M)	gap-A
+2	f66R	92	pas	insertion-clear	M	B-only:pas(insertion-clear,M)	gap-A
+2	f66R	93	marié	insertion-clear	M	B-only:marié(insertion-clear,M)	gap-A
+2	f66R	94	et	insertion-clear	M	B-only:et(insertion-clear,M)	gap-A
+2	f66R	95	n'a	insertion-clear	M	B-only:n'a(insertion-clear,M)	gap-A
+2	f66R	96	196	cipher	H		agree
+2	f66R	97	146	cipher	H		agree
+2	f66R	98	155	cipher	H		agree
+2	f66R	99	213	cipher	H		agree
+2	f66R	100	30	cipher	H		agree
+2	f66R	101	116	cipher	H		agree
+2	f66R	102	ainsy	clear	H		agree
+2	f66R	103	la	insertion-clear	M	A-only:la(insertion-clear,H)	gap-B
+2	f66R	104	jeune	insertion-clear	M	A-only:jeune(insertion-clear,H)	gap-B
+2	f66R	105	Princesse	insertion-clear	M	A-only:Princesse(insertion-clear,H)	gap-B
+2	f66R	106	145	cipher	H		agree
+2	f66R	107	135	cipher	H		agree
+2	f66R	108	48	cipher	H		agree
+2	f66R	109	175	cipher	H		agree
+2	f66R	110	198	cipher	H		agree
+2	f66R	111	46	cipher	H		agree
+2	f66R	112	221	cipher	H		agree
+2	f66R	113	pour	insertion-clear	M	B-only:pour(insertion-clear,M)	gap-A
+2	f66R	114	le	insertion-clear	M	B-only:le(insertion-clear,M)	gap-A
+2	f66R	115	Mariage	insertion-clear	M	B-only:Mariage(insertion-clear,M)	gap-A
+2	f66R	116	la	insertion-clear	M	B-only:la(insertion-clear,M)	gap-A
+2	f66R	117	Jeune	insertion-clear	M	B-only:Jeune(insertion-clear,M)	gap-A
+2	f66R	118	Princesse	insertion-clear	M	B-only:Princesse(insertion-clear,M)	gap-A
+2	f66R	119	semble	clear	H		agree
+2	f66R	120	devoir	clear	H		agree
+2	f66R	121	attendre	clear	H		agree
+2	f66R	122	tous	insertion-clear	M	A-only:tous(insertion-clear,H)	gap-B
+2	f66R	123	les	insertion-clear	M	A-only:les(insertion-clear,H)	gap-B
+2	f66R	124	biens	insertion-clear	M	A-only:biens(insertion-clear,H)	gap-B
+2	f66R	125	de	insertion-clear	M	A-only:de(insertion-clear,H)	gap-B
+2	f66R	126	sa	insertion-clear	M	A-only:sa(insertion-clear,H)	gap-B
+2	f66R	127	237	cipher	H		agree
+2	f66R	128	46	cipher	H		agree
+2	f66R	129	146	cipher	H		agree
+2	f66R	130	46	cipher	H		agree
+2	f66R	131	71	cipher	H		agree
+2	f66R	132	46	cipher	H		agree
+2	f66R	133	87	cipher	H		agree
+2	f66R	134	220	cipher	H		agree
+2	f66R	135	tous	insertion-clear	M	B-only:tous(insertion-clear,M)	gap-A
+2	f66R	136	les	insertion-clear	M	B-only:les(insertion-clear,M)	gap-A
+2	f66R	137	biens	insertion-clear	M	B-only:biens(insertion-clear,M)	gap-A
+2	f66R	138	de	insertion-clear	M	B-only:de(insertion-clear,M)	gap-A
+2	f66R	139	Maison	insertion-clear	M	A:Maison(insertion-clear,H)/B:sa(insertion-clear,M)	differ
+2	f66R	140	160	cipher	H		agree
+2	f66R	141	185	cipher	H		agree
+2	f66R	142	se	clear	H		agree
+2	f66R	143	trouvant	clear	H		agree
+2	f66R	144	unique	insertion-clear	M	A-only:unique(insertion-clear,H)	gap-B
+2	f66R	145	48	cipher	H		agree
+2	f66R	146	176	cipher	H		agree
+2	f66R	147	204	cipher	H		agree
+2	f66R	148	et	clear	M	A-only:et(clear,H)	gap-B
+2	f66R	149	de	clear	M	A-only:de(clear,H)	gap-B
+2	f66R	150	premier	clear	M	A-only:premier(clear,H)	gap-B
+2	f66R	151	lit	clear	M	A-only:lit(clear,H)	gap-B
+2	f66R	152	et	clear	H		agree
+2	f66R	153	adore	clear	M	A-only:adore(clear,H)	gap-B
+2	f66R	154	de	clear	H		agree
+2	f66R	155	deux	clear	M	A:deux(clear,H)/B:premiere(clear,H)	differ
+2	f66R	156	Princes	clear/insertion-clear	M	A:Princes(clear,H)/B:Maison(insertion-clear,M)	differ
+2	f66R	157	qui	clear/insertion-clear	M	A:qui(clear,H)/B:unique(insertion-clear,M)	differ
+2	f66R	158	147	cipher	H		agree
+2	f66R	159	32	cipher	H		agree
+2	f66R	160	47	cipher	H		agree
+2	f66R	161	le	clear	H		agree
+2	f66R	162	30	cipher	H		agree
+2	f66R	163	89	cipher	H		agree
+2	f66R	164	212	cipher	H		agree
+2	f66R	165	34	cipher	H		agree
+2	f66R	166	87	cipher	H		agree
+2	f66R	167	221	cipher	M	A:221(cipher,H)/B:201(cipher,M)	differ
+2	f66R	168	46	cipher	H		agree
+2	f66R	169	2	cipher	H		agree
+2	f66R	170	185	cipher	H		agree
+2	f66R	171	32	cipher	H		agree
+2	f66R	172	146	cipher	H		agree
+2	f66R	173	lié	insertion-clear	M	B-only:lié(insertion-clear,M)	gap-A
+2	f66R	174	sont	clear/insertion-clear	M	A:sont(clear,H)/B:et(insertion-clear,M)	differ
+2	f66R	175	charmes	clear/insertion-clear	M	A:charmes(clear,H)/B:adorée(insertion-clear,M)	differ
+2	f66R	176	de	clear/insertion-clear	M	A:de(clear,H)/B:de(insertion-clear,M)	differ
+2	f66R	177	ses	insertion-clear	M	B-only:ses(insertion-clear,M)	gap-A
+2	f66R	178	la	clear/insertion-clear	M	A:la(clear,H)/B:deux(insertion-clear,M)	differ
+2	f66R	179	voir	clear/insertion-clear	M	A:voir(clear,H)/B:Princes(insertion-clear,M)	differ
+2	f66R	180	epouser	clear/insertion-clear	M	A:epouser(clear,H)/B:qui(insertion-clear,M)	differ
+2	f66R	181	46	cipher	H		agree
+2	f66R	182	205	cipher	H		agree
+2	f66R	183	222	cipher	M	A:222(cipher,H)/B:220(cipher,M)	differ
+2	f66R	184	54	cipher	H		agree
+2	f66R	185	32	cipher	H		agree
+2	f66R	186	125	cipher	H		agree
+2	f66R	187	45	cipher	H		agree
+2	f66R	188	156	cipher	H		agree
+2	f66R	189	51	cipher	H		agree
+2	f66R	190	87	cipher	H		agree
+2	f66R	191	145	cipher	H		agree
+2	f66R	192	249	cipher	M	A:249(cipher,H)/B:209(cipher,M)	differ
+2	f66R	193	34	cipher	H		agree
+2	f66R	194	194	cipher	H		agree
+2	f66R	195	sont	insertion-clear	M	B-only:sont(insertion-clear,M)	gap-A
+2	f66R	196	charmés	insertion-clear	M	B-only:charmés(insertion-clear,M)	gap-A
+2	f66R	197	de	insertion-clear	M	B-only:de(insertion-clear,M)	gap-A
+2	f66R	198	le	insertion-clear	M	A:le(insertion-clear,H)/B:la(insertion-clear,M)	differ
+2	f66R	199	Roy	insertion-clear	M	A:Roy(insertion-clear,H)/B:voir(insertion-clear,M)	differ
+2	f66R	200	d'Espagne	insertion-clear	M	A:d'Espagne(insertion-clear,H)/B:epouser(insertion-clear,M)	differ
+2	f66R	201	48	cipher	H		agree
+2	f66R	202	221	cipher	H		agree
+2	f66R	203	45	cipher	H		agree
+2	f66R	204	267	cipher	H		agree
+2	f66R	205	d'autant	clear	H		agree
+2	f66R	206	plus	clear	H		agree
+2	f66R	207	qu'il	clear	H		agree
+2	f66R	208	en	clear	H		agree
+2	f66R	209	issu	insertion-clear	M	A-only:issu(insertion-clear,H)	gap-B
+2	f66R	210	38	cipher	H		agree
+2	f66R	211	46	cipher	H		agree
+2	f66R	212	224	cipher	H		agree
+2	f66R	213	le	insertion-clear	M	B-only:le(insertion-clear,M)	gap-A
+2	f66R	214	Roy	insertion-clear	M	B-only:Roy(insertion-clear,M)	gap-A
+2	f66R	215	de	insertion-clear	M	A:de(insertion-clear,H)/B:d'Espagne(insertion-clear,M)	differ
+2	f66R	216	France	insertion-clear	M	A:France(insertion-clear,H)/B:issu(insertion-clear,M)	differ
+2	f66R	217	87	cipher	H		agree
+2	f66R	218	112	cipher	H		agree
+2	f66R	219	34	cipher	H		agree
+2	f66R	220	pour	clear	H		agree
+2	f66R	221	laquelle	clear	H		agree
+2	f66R	222	ils	clear	H		agree
+2	f66R	223	ont	clear	H		agree
+2	f66R	224	toujours	clear	H		agree
+2	f66R	225	montré	clear	M	B-only:montré(clear,H)	gap-A
+2	f66R	226	de	insertion-clear	M	B-only:de(insertion-clear,M)	gap-A
+2	f66R	227	montre	clear/insertion-clear	M	A:montre(clear,H)/B:France(insertion-clear,M)	differ
+2	f66R	228	une	clear	H		agree
+2	f66R	229	grande	clear	H		agree
+2	f66R	230	Particularite	clear	M	A:Particularite(clear,M)/B:Partialité(clear,H)	differ
+2	f66R	231	48	cipher	H		agree
+2	f66R	232	175	cipher	H		agree
+2	f66R	233	122	cipher	H		agree
+2	f66R	234	34	cipher	H		agree
+2	f66R	235	201	cipher	H		agree
+2	f66R	236	234	cipher	H		agree
+2	f66R	237	30	cipher	H		agree
+2	f66R	238	147	cipher	H		agree
+2	f66R	239	233	cipher	H		agree
+2	f66R	240	au	clear	H		agree
+2	f66R	241	contraire	clear	H		agree
+2	f66R	242	Made	clear	M	A-only:Made(clear,M)	gap-B
+2	f66R	243	la	clear	M	A-only:la(clear,H)	gap-B
+2	f66R	244	Duchesse	clear	M	A-only:Duchesse(clear,H)	gap-B
+2	f66R	245	qui	clear	M	A-only:qui(clear,H)	gap-B
+2	f66R	246	en	clear	M	A-only:en(clear,H)	gap-B
+2	f66R	247	de	clear	M	A-only:de(clear,H)	gap-B
+2	f66R	248	la	clear	M	A-only:la(clear,H)	gap-B
+2	f66R	249	Maison	clear	M	A-only:Maison(clear,H)	gap-B
+2	f66R	250	155	cipher	H		agree
+2	f66R	251	86	cipher	H		agree
+2	f66R	252	145	cipher	H		agree
+2	f66R	253	90	cipher	H		agree
+2	f66R	254	32	cipher	H		agree
+2	f66R	255	126	cipher	H		agree
+2	f66R	256	46	cipher	H		agree
+2	f66R	257	221	cipher	H		agree
+2	f66R	258	205	cipher	H		agree
+2	f66R	259	96	cipher	H		agree
+2	f66R	260	87	cipher	H		agree
+2	f66R	261	145	cipher	H		agree
+2	f66R	262	160	cipher	H		agree
+2	f66R	263	185	cipher	H		agree
+2	f66R	264	Made	insertion-clear	M	B-only:Made(insertion-clear,M)	gap-A
+2	f66R	265	la	insertion-clear	M	B-only:la(insertion-clear,M)	gap-A
+2	f66R	266	a	clear/insertion-clear	M	A:a(clear,H)/B:Duchesse(insertion-clear,M)	differ
+2	f66R	267	toujours	clear/insertion-clear	M	A:toujours(clear,H)/B:qui(insertion-clear,M)	differ
+2	f66R	268	ete	clear/insertion-clear	M	A:ete(clear,H)/B:en(insertion-clear,M)	differ
+2	f66R	269	de	clear/insertion-clear	M	A:de(clear,H)/B:de(insertion-clear,M)	differ
+2	f66R	270	la	insertion-clear	M	B-only:la(insertion-clear,M)	gap-A
+2	f66R	271	genie	clear/insertion-clear	M	A:genie(clear,H)/B:Maison(insertion-clear,M)	differ
+2	f66R	272	84	cipher	H		agree
+2	f66R	273	175	cipher	H		agree
+2	f66R	274	48	cipher	H		agree
+2	f66R	275	69	cipher	H		agree
+2	f66R	276	48	cipher	H		agree
+2	f66R	277	45	cipher	H		agree
+2	f66R	278	36	cipher	H		agree
+2	f66R	279	30	cipher	H		agree
+2	f66R	280	238	cipher	H		agree
+2	f66R	281	96	cipher	H		agree
+2	f66R	282	34	cipher	H		agree
+2	f66R	283	87	cipher	H		agree
+2	f66R	284	116	cipher	H		agree
+2	f66R	285	176	cipher	H		agree
+2	f66R	286	34	cipher	H		agree
+2	f66R	287	a	insertion-clear	M	B-only:a(insertion-clear,M)	gap-A
+2	f66R	288	toujours	insertion-clear	M	B-only:toujours(insertion-clear,M)	gap-A
+2	f66R	289	esté	insertion-clear	M	B-only:esté(insertion-clear,M)	gap-A
+2	f66R	290	de	insertion-clear	M	B-only:de(insertion-clear,M)	gap-A
+2	f66R	291	genie	insertion-clear	M	B-only:genie(insertion-clear,M)	gap-A
+2	f66R	292	30	cipher	H		agree
+2	f66R	293	39	cipher	H		agree
+2	f66R	294	146	cipher	H		agree
+2	f66R	295	155	cipher	H		agree
+2	f66R	296	41	cipher	H		agree
+2	f66R	297	le	clear	M	B-only:le(clear,H)	gap-A
+2	f66R	298	l'on	clear	M	A:l'on(clear,H)/B:on(clear,H)	differ
+2	f66R	299	pretend	clear	M	A:pretend(clear,H)/B:prétend(clear,H)	differ
+2	f66R	300	que	clear	H		agree
+2	f66R	301	la	clear	H		agree
+2	f66R	302	Allemand	insertion-clear	M	A-only:Allemand(insertion-clear,H)	gap-B
+2	f66R	303	135	cipher	H		agree
+2	f66R	304	48	cipher	H		agree
+2	f66R	305	175	cipher	H		agree
+2	f66R	306	Allemand	insertion-clear	M	B-only:Allemand(insertion-clear,M)	gap-A
+2	f66R	307	Jeune	insertion-clear	H		agree
+2	f66R	308	Princesse	insertion-clear	M	A-only:Princesse(insertion-clear,M)	gap-B
+2	f66R	309	198	cipher	H		agree
+2	f66R	310	46	cipher	H		agree
+2	f66R	311	221	cipher	H		agree
+2	f66R	312	en	clear	H		agree
+2	f66R	313	plustost	clear	M	A:plustost(clear,H)/B:plustot(clear,H)	differ
+2	f66R	314	du	clear	H		agree
+2	f66R	315	parti	clear	M	A:parti(clear,H)/B:party(clear,H)	differ
+2	f66R	316	de	clear	H		agree
+2	f66R	317	ses	insertion-clear	M	A-only:ses(insertion-clear,H)	gap-B
+2	f66R	318	oncles	insertion-clear	M	A-only:oncles(insertion-clear,H)	gap-B
+2	f66R	319	221	cipher	H		agree
+2	f66R	320	46	cipher	H		agree
+2	f66R	321	185	cipher	H		agree
+2	f66R	322	32	cipher	H		agree
+2	f66R	323	Princesse	insertion-clear	M	B-only:Princesse(insertion-clear,M)	gap-A
+2	f66R	324	ses	insertion-clear	M	B-only:ses(insertion-clear,M)	gap-A
+2	f66R	325	oncles	insertion-clear	M	B-only:oncles(insertion-clear,M)	gap-A
+2	f66R	326	146	cipher	H		agree
+2	f66R	327	46	cipher	H		agree
+2	f66R	328	sur	clear	H		agree
+2	f66R	329	cela	clear	H		agree
+2	f66R	330	que	clear	H		agree
+2	f66R	331	de	clear	H		agree
+2	f66R	332	celluy	clear	H		agree
+2	f66R	333	de	clear	H		agree
+2	f66R	334	Made	insertion-clear	M	A-only:Made(insertion-clear,M)	gap-B
+2	f66R	335	sa	insertion-clear	M	A-only:sa(insertion-clear,H)	gap-B
+2	f66R	336	Mere	insertion-clear	M	A-only:Mere(insertion-clear,H)	gap-B
+2	f66R	337	155	cipher	H		agree
+2	f66R	338	86	cipher	H		agree
+2	f66R	339	220	cipher	H		agree
+2	f66R	340	168	cipher	H		agree
+2	f66R	341	34	cipher	H		agree
+2	f66R	342	Made	insertion-clear	M	B-only:Made(insertion-clear,M)	gap-A
+2	f66R	343	sa	insertion-clear	M	B-only:sa(insertion-clear,M)	gap-A
+2	f66R	344	Mere	insertion-clear	M	B-only:Mere(insertion-clear,M)	gap-A
+2	f66R	345	Je	clear	H		agree
+2	f66R	346	suis	clear	H		agree
+2	f66R	347	avec	clear	H		agree
+2	f66R	348	tres	clear	M	A:tres(clear,H)/B:très(clear,H)	differ
+2	f66R	349	proffond	clear	M	A:proffond(clear,H)/B:profond(clear,H)	differ
+2	f66R	350	respect	clear	H		agree
+2	f66R	351	Monseigneur	heading	H		agree
+2	f66R	352	De	heading	H		agree
+2	f66R	353	Vostre	heading	H		agree
+2	f66R	354	Excellence	heading	M	A:Excellence(heading,H)/B:Excelence(heading,H)	differ
+2	f66R	355	Le	clear	H		agree
+2	f66R	356	tres	clear	M	A:tres(clear,H)/B:très(clear,H)	differ
+2	f66R	357	humble	clear	H		agree
+2	f66R	358	tres	clear	M	A:tres(clear,H)/B:très(clear,H)	differ
+2	f66R	359	obeissant	clear	H		agree
+2	f66R	360	serviteur	clear	H		agree
+2	f66R	361	Paget	signature	M	A-only:Paget(signature,H)	gap-B
+2	f66R	362	a	dateline	H		agree
+2	f66R	363	Genes	dateline	H		agree
+2	f66R	364	le	dateline	H		agree
+2	f66R	365	28	dateline	H		agree
+2	f66R	366	aoust	dateline	M	A:aoust(dateline,H)/B:Aoust(dateline,H)	differ
+2	f66R	367	1714	dateline	H		agree
+2	f66R	368	Paget	signature	M	B-only:Paget(signature,H)	gap-A
