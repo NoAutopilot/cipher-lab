@@ -9,9 +9,9 @@
   "fr",
   "nl"
  ],
- "ciphertext": null,
- "ciphertext_pending": "No transcription on disk. Sources: Schmeh's own photographs on Cipherbrain post 18 (2017; image URLs in sources/schmeh/posts/18-moustier.html, not fetched, request budget), Pelling's post (Cipher Mysteries, 2 Apr 2013) and the NSA Cryptolog article that first described them; Prof. Jean Connart's work since 1961.",
- "alphabet": "unknown symbol set on two side altars (St Mary's, St Martin's); to be counted",
+ "ciphertext": "ciphers/moustier-altars/ciphertext.txt",
+ "ciphertext_pending": "Resolved 25 Sept 2026 (LANE B2 bMOU): transcribed from two of Schmeh's photographs (Moustier-130.jpg altar 1, Moustier-220.jpg altar 2), two blind passes reconciled at 90.5% agreement. See ciphers/moustier-altars/NOTES.md. The source post also carries a published transcription credited to Nick Pelling (ciphermysteries.com, 2 Apr 2013) from a different photo set, noted in NOTES.md as context, not used as a source.",
+ "alphabet": "26 distinct signs found: 23 ordinary Latin letters + 3 non-standard lapidary shapes (GAM, TRI, REVC; see NOTES.md)",
  "constraints": {
   "genre": "altar inscriptions are formulaic: dedication (D.O.M., sanctae Mariae, sancto Martino), donor and date (MDCCC..), invocation (ora pro nobis); a Latin or French crib list is the key resource",
   "images": "two altars, several photographs per Schmeh"
@@ -32,5 +32,16 @@
  "model": "Sonnet, strongest model only for the shape question",
  "status_24_Sept_2026": "open; nothing later than Schmeh 2017 and Pelling 2013 found 24 Sept 2026",
  "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run is under cheap_test_done with its control",
- "written": "24 Sept 2026 by the survey worker (session_013GkMQP9y84gHGG4pSSwaQj), claude-fable-5-1"
+ "written": "24 Sept 2026 by the survey worker (session_013GkMQP9y84gHGG4pSSwaQj), claude-fable-5-1",
+ "cheap_test_done": [
+  {
+   "test": 1,
+   "date": "25 Sept 2026",
+   "method": "Fetched 3 of Schmeh's altar photos (2 close-shot, 1 discarded as too oblique) from scienceblogs.de; two blind passes (this worker + one Sonnet subagent) over the 2 close-shot images, reconciled with tools/reconcile_passes.py (Needleman-Wunsch alignment). N=158 signs, K=26, 20 lines, 4 tablets.",
+   "target_result": "pass agreement 143/158 aligned columns = 90.5%; ciphertext IC = 0.0499 (pass-A-only IC = 0.0492 at N=157)",
+   "control_result": "IC of matched-N (157-char) random samples: Latin (tools/data/la_repo) min/mean/max = 0.0602/0.0722/0.1034 (20 samples); French (tools/data/fr16) min/mean/max = 0.0650/0.0726/0.0826 (20 samples); random/uniform baseline at K=26 = 0.0385",
+   "note": "Ciphertext IC sits below both language controls and above random -- not itself informative for test 2 either way; not a MASC/homophonic negative, no key attempted. 15 of 158 positions (9.5%) are pass-disagreement M-graded tokens, listed in ciphers/moustier-altars/disagreements.tsv for a future reconciler to settle against the image. Agreement well above the brief's 60% stop threshold, so not a blocker. Test 2 (crib-driven MASC) and test 3 (symbol-shape/lodge comparison) not run this pass, per brief scope.",
+   "worker": "LANE B2 bMOU (Sonnet)"
+  }
+ ]
 }

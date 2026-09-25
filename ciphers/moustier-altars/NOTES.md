@@ -50,7 +50,21 @@ Two blind passes, both from `Moustier-130.jpg` (altar 1) and `Moustier-220.jpg` 
 Reconciled with `tools/reconcile_passes.py passA.tsv passB.tsv` → `disagreements.tsv`, `ciphertext_draft.tsv`,
 `agreement.tsv`.
 
-<!-- RECONCILE_RESULTS -->
+**Pass agreement**: 143/158 aligned columns agree = **90.5%** (Needleman-Wunsch alignment, `tools/reconcile_passes.py`).
+20 lines, 4 tablets. Pass A: 157 symbols; Pass B: 158 symbols (one line, a2t2l1, has a genuine 8-vs-9
+segmentation disagreement between the passes, not yet resolved from the image). 15 of 158 aligned positions
+disagree (9.5%), all graded **M** in `ciphertext.txt` (marked with a trailing `?`); the other 143 are **S**
+(cryptanalytic transcription, agreed by both blind passes — no key, so not H or C).
+Well above the brief's 60% stop threshold; not a blocker.
+
+Under the wall-clock cap, disagreements were **not** individually re-checked against the image this pass
+(that is `disagreements.tsv`'s job for a future session/reconciler) — `ciphertext.txt` carries the reconciler's
+majority draft (pass A's reading where the two disagree, per `tools/reconcile_passes.py`'s own tie rule),
+each such position flagged `?` and graded M. Two of the M-flagged positions (a1t1l4 pos 2, a2t1l5 pos 1 —
+both `A` vs `TRI`) were checked by this worker at 6-8x zoom before pass B ran and read unambiguously as a
+plain `A` with a clear crossbar (see the "Comparison to Pelling" section); they are still marked M here since
+pass B disagreed and the position was not re-checked after reconciliation, not because the zoom check was
+inconclusive.
 
 ### Symbol notation
 
@@ -77,7 +91,10 @@ correction of Pelling's reading (different photographs, not graded against each 
 
 ## Symbol / line counts, IC (this brief's test 0 deliverable)
 
-<!-- COUNTS_RESULTS -->
+- Lines: 20 (4 tablets x 5 lines)
+- Symbols (reconciled ciphertext.txt, majority draft): N = 158, K = 26 distinct signs (23 ordinary Latin
+  letters + the 3 non-standard shapes GAM/TRI/REVC)
+- IC (reconciled): 0.0499. Pass-A-only IC (N=157, K=26, before reconciliation): 0.0492.
 
 ## Control: IC of Latin and French text at the same N
 
@@ -86,8 +103,14 @@ Matched-N (N=157 characters, letters only, uppercased) samples drawn from `tools
 
 - Latin: IC min/mean/max = 0.0602 / 0.0722 / 0.1034
 - French: IC min/mean/max = 0.0650 / 0.0726 / 0.0826
-- This ciphertext (pass A): IC = <!-- IC_A --> (K=<!-- K_A -->, N=157)
+- This ciphertext (pass A only): IC = 0.0492 (K=26, N=157); reconciled draft: IC = 0.0499 (K=26, N=158)
 - Random/uniform baseline at K=26: 1/26 = 0.0385
+
+**Reading**: this ciphertext's IC (~0.049-0.050) sits below both language controls (mean ~0.072-0.073, min
+0.060-0.065) and above the random baseline (0.0385) — consistent with either a genuinely low-redundancy
+design (homophonic substitution, several signs per plaintext letter) or with transcription noise still
+depressing it (15 M-graded positions). Not itself a solve signal either way; recorded for whoever runs test 2
+(crib-driven MASC) next, per this brief's scope (test 1 only).
 
 ## Grading (rule 4)
 

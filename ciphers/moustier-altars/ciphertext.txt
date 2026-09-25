@@ -1,0 +1,33 @@
+# Moustier altar inscriptions, St Martin's church, Frasnes-lez-Anvaing (Moustier), Belgium
+# Transcribed from Schmeh photographs Moustier-130.jpg (altar 1) and Moustier-220.jpg (altar 2)
+# Reconciled from two blind passes (tools/reconcile_passes.py): 143/158 aligned columns agree (90.5%)
+# Majority reading shown; positions where the two passes disagree are marked with a trailing "?" (15 of 157 positions, all graded M)
+# Symbol notation: GAM = single-bar F-like shape; TRI = crossbar-less triangle/apex; REVC = reversed/open-C shape (see NOTES.md)
+
+ALTAR1_TABLET1
+L GAM E G K R V Q
+Y P Z H N R L B D
+M GAM TRI N V D REVC
+N A? P V J H M TRI
+L GAM N TRI REVC B K P
+
+ALTAR1_TABLET2
+N C L X B P D W
+R N REVC? C H Z R P
+M D X R TRI P L N
+H GAM TRI L D N X W
+E N L V N D TRI P N
+
+ALTAR2_TABLET1
+J N L K B GAM P R
+V M G? H W H REVC?
+Q? L S B N GAM TRI? P
+M G REVC? K H V R
+A? L R N GAM S X V
+
+ALTAR2_TABLET2
+P GAM V B L P N? M? R
+R A? REVC? G K T D
+B N D GAM? J V R W
+L V? B GAM P N I D
+C REVC? T R A Q M

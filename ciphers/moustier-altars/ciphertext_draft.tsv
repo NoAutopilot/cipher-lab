@@ -1,0 +1,159 @@
+line	position	sign	confidence	alt	why
+a1t1l1	1	L	H		agree
+a1t1l1	2	GAM	H		agree
+a1t1l1	3	E	H		agree
+a1t1l1	4	G	H		agree
+a1t1l1	5	K	H		agree
+a1t1l1	6	R	H		agree
+a1t1l1	7	V	H		agree
+a1t1l1	8	Q	H		agree
+a1t1l2	1	Y	H		agree
+a1t1l2	2	P	H		agree
+a1t1l2	3	Z	H		agree
+a1t1l2	4	H	H		agree
+a1t1l2	5	N	H		agree
+a1t1l2	6	R	H		agree
+a1t1l2	7	L	H		agree
+a1t1l2	8	B	H		agree
+a1t1l2	9	D	H		agree
+a1t1l3	1	M	H		agree
+a1t1l3	2	GAM	H		agree
+a1t1l3	3	TRI	H		agree
+a1t1l3	4	N	H		agree
+a1t1l3	5	V	H		agree
+a1t1l3	6	D	H		agree
+a1t1l3	7	REVC	H		agree
+a1t1l4	1	N	H		agree
+a1t1l4	2	A	M	B:TRI	differ
+a1t1l4	3	P	H		agree
+a1t1l4	4	V	H		agree
+a1t1l4	5	J	H		agree
+a1t1l4	6	H	H		agree
+a1t1l4	7	M	H		agree
+a1t1l4	8	TRI	H		agree
+a1t1l5	1	L	H		agree
+a1t1l5	2	GAM	H		agree
+a1t1l5	3	N	H		agree
+a1t1l5	4	TRI	H		agree
+a1t1l5	5	REVC	H		agree
+a1t1l5	6	B	H		agree
+a1t1l5	7	K	H		agree
+a1t1l5	8	P	H		agree
+a1t2l1	1	N	H		agree
+a1t2l1	2	C	H		agree
+a1t2l1	3	L	H		agree
+a1t2l1	4	X	H		agree
+a1t2l1	5	B	H		agree
+a1t2l1	6	P	H		agree
+a1t2l1	7	D	H		agree
+a1t2l1	8	W	H		agree
+a1t2l2	1	R	H		agree
+a1t2l2	2	N	H		agree
+a1t2l2	3	REVC	M	B:E	differ
+a1t2l2	4	C	H		agree
+a1t2l2	5	H	H		agree
+a1t2l2	6	Z	H		agree
+a1t2l2	7	R	H		agree
+a1t2l2	8	P	H		agree
+a1t2l3	1	M	H		agree
+a1t2l3	2	D	H		agree
+a1t2l3	3	X	H		agree
+a1t2l3	4	R	H		agree
+a1t2l3	5	TRI	H		agree
+a1t2l3	6	P	H		agree
+a1t2l3	7	L	H		agree
+a1t2l3	8	N	H		agree
+a1t2l4	1	H	H		agree
+a1t2l4	2	GAM	H		agree
+a1t2l4	3	TRI	H		agree
+a1t2l4	4	L	H		agree
+a1t2l4	5	D	H		agree
+a1t2l4	6	N	H		agree
+a1t2l4	7	X	H		agree
+a1t2l4	8	W	H		agree
+a1t2l5	1	E	H		agree
+a1t2l5	2	N	H		agree
+a1t2l5	3	L	H		agree
+a1t2l5	4	V	H		agree
+a1t2l5	5	N	H		agree
+a1t2l5	6	D	H		agree
+a1t2l5	7	TRI	H		agree
+a1t2l5	8	P	H		agree
+a1t2l5	9	N	H		agree
+a2t1l1	1	J	H		agree
+a2t1l1	2	N	H		agree
+a2t1l1	3	L	H		agree
+a2t1l1	4	K	H		agree
+a2t1l1	5	B	H		agree
+a2t1l1	6	GAM	H		agree
+a2t1l1	7	P	H		agree
+a2t1l1	8	R	H		agree
+a2t1l2	1	V	H		agree
+a2t1l2	2	M	H		agree
+a2t1l2	3	G	M	B:C	differ
+a2t1l2	4	H	H		agree
+a2t1l2	5	W	H		agree
+a2t1l2	6	H	H		agree
+a2t1l2	7	REVC	M	B:E	differ
+a2t1l3	1	Q	M	B:C	differ
+a2t1l3	2	L	H		agree
+a2t1l3	3	S	H		agree
+a2t1l3	4	B	H		agree
+a2t1l3	5	N	H		agree
+a2t1l3	6	GAM	H		agree
+a2t1l3	7	TRI	M	B:I	differ
+a2t1l3	8	P	H		agree
+a2t1l4	1	M	H		agree
+a2t1l4	2	G	H		agree
+a2t1l4	3	REVC	M	B:E	differ
+a2t1l4	4	K	H		agree
+a2t1l4	5	H	H		agree
+a2t1l4	6	V	H		agree
+a2t1l4	7	R	H		agree
+a2t1l5	1	A	M	B:TRI	differ
+a2t1l5	2	L	H		agree
+a2t1l5	3	R	H		agree
+a2t1l5	4	N	H		agree
+a2t1l5	5	GAM	H		agree
+a2t1l5	6	S	H		agree
+a2t1l5	7	X	H		agree
+a2t1l5	8	V	H		agree
+a2t2l1	1	P	H		agree
+a2t2l1	2	GAM	H		agree
+a2t2l1	3	V	H		agree
+a2t2l1	4	B	H		agree
+a2t2l1	5	L	H		agree
+a2t2l1	6	P	H		agree
+a2t2l1	7	N	M	A:-	gap
+a2t2l1	8	M	M	B:I	differ
+a2t2l1	9	R	H		agree
+a2t2l2	1	R	H		agree
+a2t2l2	2	A	M	B:TRI	differ
+a2t2l2	3	REVC	M	B:L	differ
+a2t2l2	4	G	H		agree
+a2t2l2	5	K	H		agree
+a2t2l2	6	T	H		agree
+a2t2l2	7	D	H		agree
+a2t2l3	1	B	H		agree
+a2t2l3	2	N	H		agree
+a2t2l3	3	D	H		agree
+a2t2l3	4	GAM	M	B:T	differ
+a2t2l3	5	J	H		agree
+a2t2l3	6	V	H		agree
+a2t2l3	7	R	H		agree
+a2t2l3	8	W	H		agree
+a2t2l4	1	L	H		agree
+a2t2l4	2	V	M	B:J	differ
+a2t2l4	3	B	H		agree
+a2t2l4	4	GAM	H		agree
+a2t2l4	5	P	H		agree
+a2t2l4	6	N	H		agree
+a2t2l4	7	I	H		agree
+a2t2l4	8	D	H		agree
+a2t2l5	1	C	H		agree
+a2t2l5	2	REVC	M	B:E	differ
+a2t2l5	3	T	H		agree
+a2t2l5	4	R	H		agree
+a2t2l5	5	A	H		agree
+a2t2l5	6	Q	H		agree
+a2t2l5	7	M	H		agree
