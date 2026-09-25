@@ -355,3 +355,33 @@ correspondancede02will, correspondancede03will -- all curl, `-A "cipher-lab rese
 repository)"`, >=1.5s apart, all HTTP 200 after following the one redirect each needed `-L` for). No other
 network host (WebSearch used for the Kluckhohn/Menzel and Cipherbrain items, not counted against the
 good-citizen per-host budget). No subagents.
+
+## YX-CSHES, part 2: 174/1069 copy-free re-check, next test for the orchestrator
+
+The check-solved verdict above stays `open` with a gate-passing sentence, so per the brief this pass also
+re-fetches the WVO detail pages for 174 and 1069 and confirms copy-free reachability (no transcription this
+pass). Re-fetched (25 Sept 2026, this worker): `wvo/app/brief?nr=174` HTTP 200, `wvo/app/brief?nr=1069` HTTP
+200, `00174.pdf` HTTP 200 (9,509,677 bytes, matches OX-WVH's 9.51MB), `01069.pdf` HTTP 200 (4,651,784 bytes,
+matches OX-WVH's 4.65MB) -- both PDF scans still free, no login, same as OX-WVH found 25 Sept 2026, this is
+a **plain PDF link, not an IIIF manifest**: `resources.huygens.knaw.nl/media/wvo/images/00000-00999/00174.pdf`
+and `.../01000-01999/01069.pdf`. Not re-downloaded into the working tree (already summarised in
+`siblings/manifest.json`, and the brief says not to transcribe this pass).
+
+**Cheapest next recovery test, for the lane orchestrator to brief:** continue OX-WV69's paleography read of
+1069's own interlinear German decipherment (build the tight-crop glyph atlas it stopped at, per its "Explicit
+handoff" section above, then blind-transcribe p2's remaining ~15 signs and lines 2-24 plus p3-p4 against the
+atlas), **not** applying 174's key leaf to anything. Reasons, both already established above and not
+re-argued here: (a) 174's key leaf and 174's own letter-body cipher are visually a different, more angular
+"font" from 1069's curvy signs, and OX-WV69's sign-by-sign count found only 2 of 10 confirmed 1069 signs match
+174's alphabet at all (1 more is a same-shape-different-letter contradiction) -- applying it risks a forced,
+wrong reading rather than a real one; (b) 1069 is the same sender and same letter-direction (Hessen to
+Orange) as the target 1127, so its office key is the more probable match for 1127's cipher once imaged, while
+174 runs the opposite direction (Orange to Hessen); (c) 1069's crib is a real, already-imaged, already
+partially-read decipherment (10 signs on file), so the next increment (finishing the glyph atlas) is cheap
+and copy-free, whereas 1127 itself still cannot be tested against anything until the KHA original is imaged
+(REQUEST.md, unchanged, still waiting on the person). The orchestrator's brief for a successor should set a
+cap in the $20-40 range (OX-WV69's own estimate, comparable to clairambault1225-paget-1714's 13-crop budget)
+and point at OX-WV69's "Explicit handoff for a successor (page/line level)" section for the exact next crops.
+
+Hosts this part: resources.huygens.knaw.nl 4 requests (2 record pages, 2 PDF reachability checks, all curl,
+browser-contact UA, >=1.5s apart, all HTTP 200). No subagents.
