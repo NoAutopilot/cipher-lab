@@ -29,7 +29,7 @@ Q	S32	sign	H	atlas/key_cells/alpha_Q.jpg	y-like sign with left hook
 R	S33	sign	H	atlas/key_cells/alpha_R.jpg	row 1, R-like loop with two legs; the header's flourish runs into it
 R	S34	sign	H	atlas/key_cells/alpha_R.jpg	row 2, capital A joined to small o ('Ao'); YX-TR349/ZX-349B read this cell as part of a 'to' cluster
 S	S35	sign	M	atlas/key_cells/alpha_S.jpg	row 1, long s + small s
-S	S36	sign	M	atlas/key_cells/alpha_S.jpg	row 2, x drawn across the long descender of S35; p69 shows the same x; the blind cross-read saw S35+S36 as ONE tall crossed sign -- one or two homophones is open
+S	S36	sign	M	atlas/key_cells/alpha_S.jpg	row 2, x drawn across the long descender of S35; p69 shows the same x; the blind cross-read saw S35+S36 as ONE tall crossed sign; but the ciphertext (line ~20) has the x standing alone, glossed s, so S36 is its own homophone
 T	S37	sign	H	atlas/key_cells/alpha_T.jpg	row 1, crossed t + o ('to')
 T	S38	sign	M	atlas/key_cells/alpha_T.jpg	row 2, crossed t + c with a tick ('tc')
 V	102	digit	H	atlas/key_cells/alpha_V.jpg	row 1

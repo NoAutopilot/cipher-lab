@@ -878,29 +878,42 @@ about the key; no line was decoded and nothing is reported as a reading (brief s
 
 (a) **separator_vertical_bar (157) and separator_z_curl (162).** Neither is in the Nulles row (S06-S10, S41-S45; the
 nearest shape, S45, a small reversed-3, is not the ciphertext's z). The z-curl is **the digit 2** in this hand, the same
-z-form the key uses for 12, 22, 62, 82, 102: "1z" is glossed a (12), "z6" and "6z" e (26, 62), "2z" pour (22). Passes
-that coded it as a separator split two-digit groups (so 12 became "1" + separator). The vertical bar is not in the
-key at all; on the two instances checked it brackets a nomenclator code (|22| glossed "pour", i.e. the word, not the
-Doubles pair that shares 22), so it reads as a word-code marker, not a null. Evidence: 4 z-curl and 2 bar instances
-checked against the gloss; not every one of the 319 was checked.
+z-form the key itself uses for 12, 22, 62, 82, 102. Checked against the gloss on about ten instances in lines 1, 3, ~12
+and ~20: 1z glossed a (12, twice), z8 a (28, twice), z4 i (24), z6 e (26, three times), 6z e (62, twice), 2z pour (22).
+Passes that coded it as a separator split two-digit groups (12 became '1' + separator). The vertical bar (and a slanted
+'/' variant) is not in the key at all; on the instances checked it falls at word boundaries (line 1 between a word ending
+in S36 and one starting with 5; line 3 on both sides of 22, glossed 'pour'; line ~20 between a word ending in 26 and one
+starting with S31), so it reads as a **word divider**, not a null and not a cipher sign; it also tells a pass that a code
+standing alone between bars (|22|) is a word code rather than the Doubles pair that shares its digits. Not every one of
+the 319 was checked; the claim is 'every checked instance', about 10 z and 4 bars.
+
+p.69 re-check after the blind read (17:28 UTC): R's two homophones are clean there (S33, S34); D's code is the same
+s-form 5 as on p.57; in the S column the long s's foot runs straight into the x, so the key drawing alone leaves S35/S36 as one sign or two; the ciphertext settles it: line ~20 has the x standing
+alone, glossed 's', so S36 is S's own second homophone (graded M on the key cell, now with that ciphertext support); p.69's E column carries two struck numbers between 16 and 62 that p.57 lacks.
+
+**By-eye atlas coverage check (17:30 UTC).** Four half-lines at native resolution (lines ~12 and ~20, about 70
+tokens) read against the new sheet: every non-digit mark but two matched an S01-S80 shape (S27, S31, S32, S33, S34,
+S36, S38, S40, S52 and S35 or S51 seen); the two unmatched are a t-with-long-s cluster ending line ~20a (possibly S46 or
+S02) and a q-like mark opening line ~20b. Line ~20 also carries two more Ao (S34) glossed 'r', and 7 glossed 'u', 14
+'a', 15 'n', 9 'c', agreeing with the key.
 
 (b) **Ao-ligature (39).** It is in the key: R's second homophone, S34 (p.57 and p.69, R column, row 2), a hooked A
 joined to o. Three ciphertext instances checked against the gloss: line 1 (after 73), line 3 (after |22|), line 8
-(after 12): all three glossed "r". Not a plaintext abbreviation. (The key's S69, the code of "arm.", is a similar A
+(after 12): all three glossed "r" (two more on line ~20, also "r": five of five). Not a plaintext abbreviation. (The key's S69, the code of "arm.", is a similar A
 with a hooked v, and S76, Aumale's code, is a plain A; passes must keep the three apart.)
 
 (c) **Share of the ciphertext's recurring sign types with an atlas code.** Pooled passC+passD (2218 tokens): 1625
 already carried a digit or S01-S26; adding the z-curl as digit 2 (162) and the six named letter-like types (to 35, Ao
 39, R-loop 25, Y 12, u 10, s 9 = 130) gives **1917 / 2218 = 86.4%** of tokens with a key code; the bar (157, 7.1%) is
-explained as a word-code bracket; unexplained: sign_other_letterlike 114 + double dash 7 = 121 (5.5%); noise (gloss 10,
+explained as a word divider; unexplained: sign_other_letterlike 114 + double dash 7 = 121 (5.5%); noise (gloss 10,
 blot 13, crop edge 1) 1.1%. By type, all six named recurring letter-like types now have a candidate code (6 of 6) and
 the two separator families are explained. dupuy452's control: 99.8% of 5725 tokens on a key entry. clair349 is not yet
 at that level, but on this count the gap is the 5.5% catch-all, not the key; and the 86.4% rests on shape matches by
 type, not per-token checks, so it is an upper-bound estimate until fresh passes code against the new atlas.
 
 **Next job (one line):** two fresh blind passes over `images/lines/line01-33.jpg` against `images/atlas/sheet.jpg`
-S01-S80, told that the z-shaped mark is the digit 2 (write "12", "62", never a separator), that a vertical bar is
-transcribed as `|` (a word-code bracket, not a null and not a sign), that the small interlinear letters above the codes
+S01-S80, told that the z-shaped mark is the digit 2 (write "12", "62", never a separator), that a vertical bar or slash is
+transcribed as `|` (a word divider, not a null and not a sign), that the small interlinear letters above the codes
 are a gloss to be transcribed in a separate column (not as cipher tokens), and to keep S34 / S69 / S76 apart; then a
 third, separate job transcribes the gloss line by line as known plaintext (C), which will settle the key's homographs
 (5, 22, 9, S17, S32, S37) before any decode. The line crops cut off part of the gloss: the gloss job should recut the

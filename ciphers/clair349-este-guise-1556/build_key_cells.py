@@ -42,7 +42,7 @@ ALPHA = [
     ("Q", (2860, 3000), [("S32", "sign", "H", "y-like sign with left hook")]),
     ("R", (3020, 3150), [("S33", "sign", "H", "row 1, R-like loop with two legs; the header's flourish runs into it"),
                          ("S34", "sign", "H", "row 2, capital A joined to small o ('Ao'); YX-TR349/ZX-349B read this cell as part of a 'to' cluster")]),
-    ("S", (3150, 3265), [("S35", "sign", "M", "row 1, long s + small s"), ("S36", "sign", "M", "row 2, x drawn across the long descender of S35; p69 shows the same x; the blind cross-read saw S35+S36 as ONE tall crossed sign -- one or two homophones is open")]),
+    ("S", (3150, 3265), [("S35", "sign", "M", "row 1, long s + small s"), ("S36", "sign", "M", "row 2, x drawn across the long descender of S35; p69 shows the same x; the blind cross-read saw S35+S36 as ONE tall crossed sign; but the ciphertext (line ~20) has the x standing alone, glossed s, so S36 is its own homophone")]),
     ("T", (3280, 3410), [("S37", "sign", "H", "row 1, crossed t + o ('to')"), ("S38", "sign", "M", "row 2, crossed t + c with a tick ('tc')")]),
     ("V", (3410, 3525), [("102", "digit", "H", "row 1"), ("7", "digit", "H", "row 2; a second small 7 written above it (correction or confirmation); p69 has a struck number here and 7 below"), ("104", "digit", "H", "row 3")]),
     ("X", (3530, 3635), [("S39", "sign", "H", "d-loop joined to long s")]),
