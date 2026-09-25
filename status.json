@@ -1888,7 +1888,7 @@
       "key": "ours",
       "title": "BnF Espagnol 142 f.22, instruction to the Baron de Mercy, Barneton, 6 June 1648: 521 numeric code tokens read by homophonic cryptanalysis with a matched control",
       "grade": "N3 after two audits (V6-MERCY 19:19, V6-MERCY2 20:39 UTC), key ours. S 496, M 26 of 522 (H 0, C 0: cryptanalytic result; R7-MREV 20:51 revised five contested glyphs after a blind eye-check 116/122); anneal beats the matched control by 167-181 points on 4+ seeds; shuffled-stream control target -1154.3 vs shuffles -1488.5 vs control -1336.2; decode_key.py --check 0; fresh-instance re-derivation byte-identical; judge FAIL on es17 and es17c, but the letter's own clear words FAIL the same judge, so the judge cannot decide here. No print of the instruction located (Morel-Fatio 1892 lists f.22 as a cipher copy without decipherment); outreach gate 2 not met (JSTOR-QUEUE rows 80-83 for the owner)",
-      "line": "Legible Spanish (Cleves, the Elector of Brandenburg, three thousand infantry in two or three regiments, the Duchess of Chevreuse). V6-MERCY 25 Sept 19:19 UTC: N3, key ours (AUDIT.md); second audit V6-MERCY2 20:39 kept N3; shuffled-stream control and blind eye-check done (R7); SO-MERCY-F22 queued.",
+      "line": "Partly legible Spanish under our key (the Elector of Brandenburg, three thousand infantry in two or three regiments, the Duchess of Chevreuse; the place name read as Cleves earlier rests on a glyph three blind passes read otherwise, R7-MREV 20:51). V6-MERCY 25 Sept 19:19 UTC: N3, key ours (AUDIT.md); second audit V6-MERCY2 20:39 kept N3; shuffled-stream control and blind eye-check done (R7); SO-MERCY-F22 queued.",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/espagnol142-mercy-1648",
       "novelty": "N3",
       "qa_flag": "second audit (20:39) not yet inside a clean rolling-QA window; V6 QA3 due -- counted when it clears"
@@ -2151,17 +2151,17 @@
   "near": [
     {
       "target": "espagnol142-mercy-1648",
-      "title": "Mercy 1648: N3 after one audit, key ours; shuffled-stream control passes (target -1154.3 vs shuffle -1488.5 vs matched control -1336.2); blind eye-check reads 3 of the 5 name glyphs as 19, not 14",
-      "next": "R7-MREV moves the reading to the blind majority; second adversarial audit (V6); AGR SEE t.LXIV f.16 copy (ASKS 60); Cuvelier-Lefevre VI p.647 (ASKS 59); SO-MERCY-F22 queued",
+      "title": "Mercy 1648: N3 after two audits, key ours; shuffled-stream control passes (target -1154.3 vs shuffle -1488.5 vs matched control -1336.2); blind majority applied (S 496 M 26, Cleues -> Eleues)",
+      "next": "outreach gate 2 open: JSTOR rows 80-83 and a Lonchay-Cuvelier IV page read (owner); AGR SEE t.LXIV f.16 copy (ASKS 60); Cuvelier-Lefevre VI (ASKS 59); SO-MERCY-F22 queued",
       "lane": "R7 + V6",
-      "touched": "25 Sept 2026 20:45"
+      "touched": "25 Sept 2026 21:23"
     },
     {
       "target": "fr2933-salviati-1525",
-      "title": "Salviati 1525: atlas re-pass cut pooled types only 223 -> 204/198 (gate 178), control ladder not re-run; error-tolerant solver misses its 10%-noise control (58% vs 60)",
-      "next": "pools-first sibling search (R7-SSIB); then a measured-error control with a word-aware model (Fable)",
+      "title": "Salviati 1525: atlas re-pass cut pooled types only 223 -> 204/198 (gate 178); no same-design sibling among 11 catalogued Salviati letters 1524-30; error-tolerant solver misses its 10%-noise control (58% vs 60)",
+      "next": "measured-error control (sign<->plain insertions/deletions) with a word-aware model, Fable, about USD 12; two other-office cipher items in the same fonds range (pool lead)",
       "lane": "R7",
-      "touched": "25 Sept 2026 20:45"
+      "touched": "25 Sept 2026 21:23"
     },
     {
       "target": "koehler-1944",
