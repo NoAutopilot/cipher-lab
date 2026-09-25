@@ -1,0 +1,40 @@
+{
+ "slug": "na-raad-azie-1800",
+ "name": "Smissaert to Prediger, Raad der Aziatische Bezittingen, 20 Nov 1800 (invnr 209, cipher body)",
+ "language_candidates": ["nl"],
+ "ciphertext": "ciphers/na-raad-azie-1800/ciphertext_209_leaf2.tsv (VX-CS06, 25 Sept 2026, this worker's own pass plus one blind subagent pass, reconciled; leaf 3 remains untranscribed -- too faint, per VX-CS04)",
+ "ciphertext_source": "Nationaal Archief 2.01.27.02, invnr 209, leaf 2 (https://service.archief.nl/api/file/v1/default/a9eb3ad8-af67-41bc-b3d1-e63e3e7f0179), letter dated 20 Nov 1800, clear Dutch salutation/close, ciphered body",
+ "alphabet": "decimal digits 0-9 only, in a two-row format: a top row of digit clusters separated by visual gaps, and a second row of single digits written beneath most (not all) top-row digits; no Latin letters appear anywhere in the cipher body",
+ "constraints": [
+  "check-solved (VX-CS04/VX-CS06, 25 Sept 2026): open. Colenbrander's Gedenkstukken (Deel III, GS 3/4, 1798-1801(2); Deel IV, GS 5/6, 1801-1806) read directly by this worker via resources.huygens.knaw.nl's full-text OCR search for Smissaert, Prediger, Elout, Grasveld, cijfer, secrete: institutional/biographical hits only (a different, 1799 Prediger recall dispute; J.G. Smissaert confirmed as secretary of the Raad der Aziatische Bezittingen; Elout+Van Grasveld's 1805-1806 appointment) -- no hit prints this 20 Nov 1800 letter, its cipher, or any decipherment of it. Intake gate passed.",
+  "kind: cryptanalysis, not recovery -- invnr 209 (the ciphertext) and invnr 317 (a cipher key/system, Elout/Van Grasveld's) are catalogued together but are not shown to be the same system; this spec's first test is exactly that question",
+  "invnr 317 is a keyword-driven 13-row reciprocal Latin-letter substitution alphabet (transcribed in ciphers/na-raad-azie-1800/key_317.py), not a numeral code; it defines no operation on digits"
+ ],
+ "cheap_tests_in_order": [
+  "1. Does invnr 317's cipher system (as written, keyword from its own worked example, 'Nebawo') read invnr 209's cipher body? Matched control: the same table+keyword mechanism run on a matched-length synthetic sample of period Dutch prose, round-tripped through encipher/decipher (ciphers/na-raad-azie-1800/scripts/test_317_vs_209.py)."
+ ],
+ "judge": null,
+ "written": "25 Sept 2026, LANE VX worker VX-CS06 (session_01SeM28K8HQ4rDkjXJSCLgNr), for .claude/briefs/runs/2026-09-25-lane-vx-cs06.md",
+ "cheap_test_done": {
+  "test": 1,
+  "date": "25 Sept 2026",
+  "method": "ciphers/na-raad-azie-1800/scripts/test_317_vs_209.py: (a) counts how many of 209 leaf 2's transcribed tokens fall in 317's operable alphabet (a-z); (b) runs 317's own table+keyword mechanism (key_317.py, transcribed from images/317_leaf1_alphabet.jpg and images/317_leaf2_example.jpg) as a matched control on a same-length sample of period Dutch (tools/data/nl_repo/breda-statengeneraal-1624-25__plaintext_print.txt), encipher then decipher.",
+  "target_result": {
+   "N_tokens_transcribed": 67,
+   "tokens_in_317_domain_a_z": 0,
+   "share": "0/67 = 0%",
+   "transcription": "two independent passes (this worker + one blind Sonnet subagent, no cross-reading beforehand) agree exactly on the top row (35/35 digit positions); the accompanying second row of single digits is partially uncertain in 2 of 5 groups (flagged in ciphertext_209_leaf2.tsv), but every disputed reading is itself a digit, never a letter -- the digit-vs-letter question that this test turns on has zero ambiguity between the two passes"
+  },
+  "control_result": {
+   "design": "period Dutch (Breda Staten-Generaal 1624-25 print corpus, H-graded per its own source line), N=35 letters (matched to the target's top-row token count), same table+keyword mechanism as the target test",
+   "letters_correct": "35/35 = 100%"
+  },
+  "verdict": "Negative by design mismatch, not by cryptanalytic failure (CLAUDE.md rule 3 read literally: a 'failure' needs a matched control to mean anything, but this is not a solver failing to break a cipher -- 0% of 209's tokens are even in the alphabet 317's mechanism operates on, a fact independent of key, keyword or row-transcription accuracy). The control shows the apparatus works perfectly (100% round-trip) whenever its input actually is Latin letters, which rules out 'the implementation is broken' as an explanation for the target's 0%. This corrects the QUEUE row's original framing (NOTES.md) and closes VX-CS04's flagged but unchecked question ('317's letter-substitution table vs. 209's paired-digit cipher look like different systems on their face, not checked further') -- now checked: they are provably different systems, one letter-domain, one digit-domain, with no defined bridge between them in either document. Next test (not run here, per 'never a second test'): treat invnr 209 as its own independent numeral cipher target, cryptanalysis lane -- already the recommendation in NOTES.md's 'Suggested next step' section (structural observations available: digit-width per cluster, doubled-digit rate, whether the second row is a segmentation/null marker or a homophone selector).",
+  "files": [
+   "ciphers/na-raad-azie-1800/ciphertext_209_leaf2.tsv",
+   "ciphers/na-raad-azie-1800/key_317.py",
+   "ciphers/na-raad-azie-1800/scripts/test_317_vs_209.py"
+  ],
+  "cost_est_usd": "get_session exposes no cost figure to this worker; script-only test plus image reads already on disk, no additional network fetches for this step"
+ }
+}

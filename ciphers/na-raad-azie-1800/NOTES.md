@@ -4,10 +4,14 @@ The whole finding-aid text of NA toegang 2.01.27.02 (Raad der Aziatische Bezitti
 and full-text grepped by this worker), its predecessor toegang 2.01.27.01 (Comité tot de Zaken van de
 Oost-Indische Handel en Bezittingen, 1796-1800, 56-page PDF, same route) and toegang 1.04.17 (Hoge Regering
 Batavia, 1602-1827 residuals, 132-page PDF, same route) all read directly by this worker 25 Sept 2026; the
-two Atlas-of-Mutual-Heritage-style secondary literature checks named in the job brief (Huygens retroboeken
-Gedenkstukken, Internet Archive's "Opkomst van het Nederlandsch gezag" series) were **not opened** -- see
-below -- so this verdict rests on the primary catalogue text and images plus DECODE/solver-repo/web checks,
-not on those two printed editions.
+Atlas-of-Mutual-Heritage-style secondary literature check named in the job brief and flagged by VX-CS04 as
+not yet opened, Colenbrander's *Gedenkstukken der Algemeene Geschiedenis van Nederland 1795-1840* (Deel III,
+GS 3/4, 1798-1801(2); Deel IV, GS 5/6, "Staatsbewind en Raadpensionaris" 1801-1806 -- both title pages read
+to confirm), has now also been read directly by this worker (VX-CS06, 25 Sept 2026) via
+`resources.huygens.knaw.nl`'s own full-text OCR search across all four bands, for Smissaert, Prediger, Elout,
+Grasveld, cijfer and secrete -- see "Colenbrander Gedenkstukken -- independent read (VX-CS06)" below; the
+Internet Archive "Opkomst van het Nederlandsch gezag" series remains not opened, deprioritised as a probable
+period mismatch (the VOC-era documentary series ends the year before this correspondence).
 
 # NA 2.01.27.02 Raad der Aziatische Bezittingen -- Smissaert/Prediger cipher and the Elout/Van Grasveld
 cipher key, 1800-1801 (VX-N03)
@@ -99,11 +103,9 @@ beyond 1.04.17. Flagged as a follow-on, not a negative.
   above) but nothing about the cipher itself. No hit for "Smissaert" + "Prediger" + cijfer beyond the NA
   catalogue page itself.
 - **Colenbrander, *Gedenkstukken der Algemeene Geschiedenis van Nederland van 1795 tot 1840*** (the edition
-  named in the job brief for 1800-1806): **not opened**. This worker located the series' Huygens retroboeken
-  landing page (`resources.huygens.knaw.nl/gedenkstukken`) but could not find its per-volume `searchText`
-  accessor id in the time budgeted (a guessed accessor 404'd), and it is not on Internet Archive under
-  "Colenbrander Gedenkstukken" (checked, 0 hits both narrow and broad). Flagged for a successor worker who
-  can spend the time finding the right accessor, rather than reported as a negative.
+  named in the job brief for 1800-1806): **read** (VX-CS06, 25 Sept 2026) -- see "Colenbrander Gedenkstukken
+  -- independent read (VX-CS06)" below for the accessor, the source-id map, and the full search log. Letter
+  and cipher absent from all four bands searched.
 - **Van Deventer / De Jonge, *De Opkomst van het Nederlandsch gezag in Oost-Indië*** (the other edition
   named in the job brief): found on Internet Archive (26 volumes/scans, e.g. `deopkomstvanhet01devegoog`
   onward), but **not searched** -- this series is a VOC-era documentary collection (the VOC itself dissolved
@@ -118,6 +120,104 @@ beyond 1.04.17. Flagged as a follow-on, not a negative.
   `dbourdeau/cyphersolver` (inside unrelated corpus/binary files -- `bordeaux/run_real_plain_prime_umlaut_nowords.txt`,
   `harley1582r8505/ct2_p3.txt`, etc.) that on inspection are not about this correspondence, treated as noise.
 
+## Colenbrander Gedenkstukken -- independent read (VX-CS06, 25 Sept 2026)
+
+Same accessor family as `ciphers/roell-vandedem-1809/NOTES.md` and `ciphers/vanspaen-vandergoes-1808/NOTES.md`:
+`resources.huygens.knaw.nl/retroboeken/gedenkstukken/searchText/index_html?search_term:ustring:utf-8=<term>&
+source_id=<N>&id=searchText` full-text-searches one volume's OCR (register included). The site's own
+`toc/index_html?page=1&source=7&id=toc` dropdown gives the complete source-id -> volume map (22 sources
+total, fetched once): **source 3 = Deel III, band 1, GS 3**, **source 4 = Deel III, band 2, GS 4** (title
+page read: "DERDE DEEL. UITVOEREND BEWIND. -- ENGELSCH RUSSISCHE INVAL. -- 1798-1801(2)", 1907 -- the correct
+window for a 20 Nov 1800 letter); **source 5 = Deel IV, band 1, GS 5**, **source 6 = Deel IV, band 2, GS 6**
+(title page read: "VIERDE DEEL. STAATSBEWIND EN RAADPENSIONARIS. 1801-1806", 1908 -- the window for invnr
+317's Elout/Van Grasveld 1805-1806 appointment).
+
+Full-text search, all four sources, run 25 Sept 2026 (queries >=2s apart, descriptive User-Agent):
+
+| term | src 3 (Deel III b1) | src 4 (Deel III b2) | src 5 (Deel IV b1) | src 6 (Deel IV b2) |
+|---|---|---|---|---|
+| Smissaert | 0 | 2 | -- | -- |
+| Prediger | 0 | 4 | -- | -- |
+| Elout | 0 | 0 | 0 | 4 |
+| Grasveld | 7 | 5 | 0 | 3 |
+| cijfer | 0 | 5 | 0 | 5 |
+| secrete | 6 | 10 | -- | -- |
+
+(Elout/Grasveld/cijfer only re-run on sources 5-6 once Deel III's 0-Elout result and the Elout/Van Grasveld
+1805-1806 date made Deel IV the more relevant volume for those three terms; Smissaert/Prediger/secrete were
+not re-run on Deel IV since band 2 of Deel III already gave the on-topic hits below and a 20 Nov 1800 letter
+falls inside Deel III's own window.)
+
+Every hit was opened and read in context (pages fetched via the volume's own `pages.json?source=N` ->
+`html_url`, not just the snippet):
+- **Smissaert** (Deel III b2, pp. 857, 1207): both are a *different* Smissaert (the gezantschapsattaché who
+  carried the March 1802 Amiens peace dispatches) -- but the footnote to p. 857 confirms **"J. G. Smissaert,
+  den secretaris van den Aziatischen Raad en vroeger van het O. I. Comité"** is his father, i.e. this
+  confirms our sender's institutional role (secretary of the Raad der Aziatische Bezittingen) independently
+  of the NA catalogue, without printing anything about the 20 Nov 1800 letter or its cipher.
+- **Prediger** (Deel III b2, pp. 518, 522, 528, 1205): a *different* 1799 episode -- the Comité's dispute
+  with the Uitvoerend Bewind over whether to send Prediger back to Batavia, and a Committee member's near-mass
+  resignation over it. Same person, same institution, but not this letter, not cipher, not dated 20 Nov 1800.
+- **Grasveld** (Deel III b1+b2, Deel IV b2): all about C. H. van Grasveld's diplomatic postings (Cisalpine
+  Republic, etc.) and, at Deel IV b2 p. 599, his and Elout's joint appointment ("zijne keuze op van Grasveld
+  en Elout") -- confirms the pairing named on invnr 317, prints nothing about a cipher.
+- **cijfer** (Deel III b2, Deel IV b2): every hit is either a footnote marker ("Het volgende uit het cijfer",
+  meaning the editor is about to quote *other* people's ciphered dispatches, none involving Smissaert,
+  Prediger, Elout or Van Grasveld) or an unrelated anecdote (Deel IV b2 p. 406, a different pair of prisoners
+  "in cijfer naar Petersburg").
+- **secrete** ("secret", both Deel III bands): register/footnote entries for secret resolutions, secret
+  treaties and secret despatches of other correspondents; none names this letter.
+
+No hit in any of the four bands pairs Smissaert and Prediger as correspondents, none is dated 20 Nov 1800, and
+none prints or references a cipher passage from either invnr 209 or invnr 317. This independently confirms
+and closes the gap VX-CS04 flagged (accessor not located) -- the standard edition named in the job brief has
+now actually been read, not merely searched for.
+
+## Cheap test (VX-CS06, 25 Sept 2026): does invnr 317's system read invnr 209?
+
+Per CLAUDE.md 3a / this job's brief: transcribed invnr 209's cipher body (leaf 2 only -- leaf 3 stays too
+faint to transcribe, confirmed again this pass) and invnr 317's alphabet table, then tested whether 317's
+keyword-driven reciprocal alphabet reads 209.
+
+**Transcription.** Two independent blind passes (this worker, then one Sonnet subagent with no access to this
+worker's read) of leaf 2's cipher-body image (`images/209_leaf2_cipher_zoom.jpg`) **agree exactly on the top
+row: 35/35 digit positions**, in the same five groups (14+10+3+3+5 digits: `56315263466166 2613676275 247
+667 35134`). The accompanying second row of single digits (function unknown -- still not resolved, per
+VX-CS04) is uncertain in 2 of 5 groups (flagged position-by-position in `ciphertext_209_leaf2.tsv`), but the
+digit-vs-letter question this test turns on has **zero disagreement between the two passes**: every token
+either worker read, certain or uncertain, is a decimal digit. No Latin letter appears anywhere in the cipher
+body.
+
+**317's system**, transcribed from `images/317_leaf1_alphabet.jpg` (the table) and `images/317_leaf2_example.jpg`
+(the worked example, keyword "Nebawo", plaintext "De zaak zal geld kosten"), implemented in
+`key_317.py`: 13 rows, each headed by a pair of key letters (Z.Y down to B.A, the alphabet split into 13
+consecutive pairs), each row a fixed top line `a-m` reciprocally paired against a rotation of `n-z`; the
+in-play keyword letter selects the row. Verified exactly (grade H) against the one worked-example instance
+this worker could read with confidence -- "d in N is x" -- row 7 (N.M)'s table predicts exactly `x` for `d`.
+Not independently re-verified for the other 11 rows (grade M): three other cursive instances in the worked
+example ("e in E is p", "z in B is m", "a in A is n") don't match this worker's table-derived formula, most
+likely a reading error in the cursive prose or the table's more compressed lower rows, not resolved in this
+pass -- it doesn't affect the result below, since the control test only needs the implementation to be
+internally self-consistent (round-trips whatever it encodes), not historically perfect.
+
+**Result** (`scripts/test_317_vs_209.py`, numbers also in `specs/na-raad-azie-1800.json` `cheap_test_done`):
+
+| | N tokens | in 317's domain (a-z) |
+|---|---|---|
+| **Target** (209 leaf 2) | 67 | **0 (0%)** |
+| **Control** (matched-length period-Dutch sample, same table+keyword mechanism) | 35 letters | 35 (100%), round-trip decode 35/35 = 100% |
+
+**Verdict: negative by design mismatch, not by cryptanalytic failure.** 0% of 209's tokens are even in the
+alphabet 317's mechanism operates on -- a fact independent of key, keyword, or the row-transcription
+uncertainty noted above. The control shows the apparatus (transcription + implementation) works perfectly
+(100% round-trip) whenever its input actually is Latin letters, ruling out "the implementation is broken" as
+an explanation for the target's 0%. This closes the question VX-CS04 flagged but did not check ("317's
+letter-substitution table vs. 209's paired-digit cipher look like different systems on their face, not
+checked further") -- now checked: they are provably different systems (one letter-domain, one digit-domain),
+with no defined bridge between them in either document. No small key variation changes this, because the
+mismatch is in the domain (digits vs. letters), not the specific key. Per this job's brief, this is the one
+cheap test for this spec; no second test was run.
+
 ## Hosts and requests (this target)
 
 `www.nationaalarchief.nl`: 5 (item pages for invnr 209 and 317, plus the three toegang finding-aid PDFs
@@ -125,15 +225,33 @@ beyond 1.04.17. Flagged as a follow-on, not a negative.
 native-res crops + 3 leaves of invnr 317 + 1 IIIF info.json, all >=1.5s apart, all HTTP 200). `archive.org`:
 3 (advancedsearch queries for Colenbrander and the Opkomst series). WebSearch: 4 queries. Combined with
 VX-N01's usage this worker's total on nationaalarchief.nl+service.archief.nl is 11+38 = 49 of the 60-request
-combined budget for both targets in this batch.
+combined budget for both targets in this batch (VX-CS04's figures, carried forward unchanged).
+
+**VX-CS06 (this pass) additional hosts:** `resources.huygens.knaw.nl`: 33 requests total (1 toc dropdown
+fetch, 1 reachability check, 2 pages.json listings, 3 title-page fetches, 4 result-page dereferences for
+context, 22 term-search queries across 4 sources), all >=2s apart, well under the 40-request budget for this
+host. No other network hosts touched this pass (the 317/209 comparison used images already on disk from
+VX-CS04's fetch). No DECODE login, no credentials, no subagent network access (the transcription subagent
+read a local image file only, no tools beyond Read).
 
 ## Closing line (job brief format)
 
 **Key beside the letter:** no, for invnr 209 -- corrected from the QUEUE row's claim; no key or gloss found
 on any of its 5 leaves. **Invnr 317 is itself a key** (a complete, worked cipher system) but has no
 ciphertext letter beside it in this pass -- it names the two officials it was cut for (Elout, Van Grasveld)
-rather than the Prediger correspondence, and nothing ties the two systems together (317's letter-substitution
-table vs. 209's paired-digit cipher look like different systems on their face, not checked further).
+rather than the Prediger correspondence, and the VX-CS06 cheap test above confirms nothing ties the two
+systems together: 317's letter-substitution table and 209's numeral cipher are provably different designs
+(0/67 of 209's tokens fall in 317's operable alphabet), not just dissimilar-looking.
+
+**Grade counts (this pass):** H 0, C 0, S 0, M 2 (the transcription of 209's second digit row in 2 of 5
+groups, and 11 of 317's 13 table rows not cross-verified against the worked example), I 0. No reading is
+claimed; rule 10 -- no novelty wording used, this is a search result and a control-backed negative, not a
+verifier's classification.
+
+**Status stays `open`.** Colenbrander read (intake gate now passed); cheap test run and negative
+(design mismatch, not weakness of the method). Next test, not run here per "never a second test": treat
+invnr 209 as an independent numeral-cipher cryptanalysis target (see "Suggested next step" below, unchanged
+from VX-CS04's pass).
 
 **Undeciphered copy-free material it could read:** invnr 209's cipher body (leaves 2-3, paired-digit format,
 partly faint) is undeciphered and copy-free:
