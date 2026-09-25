@@ -1,8 +1,9 @@
 open
-Provisional (25 Sept 2026, QA/YX-FIX): section 8's matched-control negative (29.3% vs control avg 33.4%) rests on
-one unreconciled transcription pass (`passA.tsv` only, no second blind pass landed -- see section 8); a pass B
-and reconciled re-run is briefed separately as YX-BARB, and this negative should be treated as provisional until
-that lands.
+No longer provisional (25 Sept 2026, YX-BARB): the QA/YX-FIX note below flagged that section 8's matched-control
+negative rested on one unreconciled pass; pass B has now landed and been reconciled against the image
+(see the "YX-BARB" section at the end of this file). The negative stands on the reconciled transcription too
+(30.0% target vs. control avg 31.1%, 10 seeds) -- fixing the transcription (a missing 25-token line, three other
+dropped/misread tokens) did not move the result.
 Standard edition read by this worker: Birch, *A Collection of the State Papers of John Thurloe* (1742), vol. 2,
 pp.685-686, 690-691, 704, 721-722, read from page images (archive.org `collectionofstat02thur`, leaves 693-694,
 698-699, 712, 729-730; `images/manifest.json`); British History Online's edition of the same volume,
@@ -270,8 +271,9 @@ homophone codes, so ground truth is known):
 `python3 coverage_test.py` and `python3 matched_control.py --seeds 10` reproduce these numbers (both scripts
 read only `passA.tsv`/`key_gloss.tsv` and, for the control, `tools/data/fr16`; no network).
 
-**Verdict: negative with a matched control, provisional** (see the note under the status line: rests on
-`passA.tsv` alone, no second pass reconciled yet; YX-BARB runs pass B separately). The target's raw coverage (29.3%) is not distinguishable from --
+**Verdict: negative with a matched control, on `passA.tsv` alone** (confirmed no longer provisional as of 25 Sept
+2026, YX-BARB: pass B reconciled against the image, missing/misread tokens fixed, and the negative re-run on the
+reconciled `ciphertext.tsv` -- same result, see the "YX-BARB" section at the end of this file). The target's raw coverage (29.3%) is not distinguishable from --
 and is in fact slightly *below* -- what an unrelated control of the identical design achieves purely by chance
 (avg 33.4%, and the control's own sense rate on its "newly covered" tokens is a respectable 74% purely because
 the reused homophone codes decode to ultra-common short words that are correct at a high prior rate anywhere in
@@ -299,3 +301,143 @@ run against a candidate -- only the spec file records the cheap test's judge blo
 Grades: every `key_gloss.tsv` row is grade **C** (from the gloss, i.e. known plaintext for that span); nothing
 here is graded H or S. Rule 10: nothing in this section is new, unpublished, unread, first or never printed --
 a verifier classifies novelty, and none is claimed.
+
+## YX-BARB (25 Sept 2026)
+
+QA (25 Sept 2026, `.claude/briefs/runs/2026-09-25-lane-yx-barb.md`) flagged that TX-BARRT's negative (s.8 above)
+rested on one unreconciled pass -- pass B was interrupted before landing (LEDGER.md: "Interrupted at ~2x the $6
+alarm while running pass B after the deliverable was pushed"). This job ran pass B, reconciled, and re-ran the
+cheap test on the reconciled transcription. Intake gate checked first: `tools/intake_gate_check.py
+thurloe-barriere-1654` exits 0 (the `open` verdict at the top of this file names the standard edition and the
+pages/full-text searches actually read).
+
+**1. Pass B.** A second Sonnet subagent transcribed `images/collectionofstat02thur_leaf0729.jpg` (p.721) and
+`leaf0730.jpg` (p.722) blind -- it was given only the two page images and the run/column conventions (not
+passA.tsv or any other file in this folder) -- and wrote `passB.tsv`: 33 runs, 400 tokens (vs. passA.tsv's 42
+runs, 368 tokens).
+
+**2. Reconciliation.** `tools/reconcile_passes.py passA.tsv passB.tsv` run as named in the brief first, naively
+(no options): **agree 33/608 = 5.4%**. Investigated before accepting that number, since the whole point of this
+job is to know whether the two passes actually agree: the low figure is almost entirely a tooling-convention
+mismatch, not real transcription disagreement --
+  1. `reconcile_passes.py`'s own "uncertain" marker is a trailing `?`; this target's convention for "a diacritic
+     mark was visible above this token" is a trailing `*` (passA.tsv) or, inconsistently in passA.tsv, `^` (see
+     e.g. `42^`, `36^`) -- `coverage_test.py`'s own `strip_mark()` already strips the full set
+     (`* ^ \` ' ´ ˇ ¨ =`) for exactly this reason, but a naive `reconcile_passes.py passA.tsv passB.tsv` call
+     does not, so `70` and `70*` compare as different signs.
+  2. The two symbol glyphs are labelled differently by convention (`[circle-dot]`/`[phi-symbol]` in passA.tsv vs.
+     `Th`/`Ph` in passB.tsv) for the *same* referents, which also reads as disagreement to a literal string compare.
+  3. Pass B's run boundaries are not numbered 1:1 against pass A's from partway through the letter: pass B (correctly, see below) merged several of pass A's runs that pass A had incorrectly split at a page-line wrap with no intervening French word -- so `reconcile_passes.py`'s row-key alignment (which assumes the same run_id means the same content in both files) compares unrelated text once the row numbering diverges.
+  Re-ran with marks stripped (the same regex `coverage_test.py` uses) and symbol labels normalized, aligning the
+  **whole letter as one token stream** (both pages, reading order) rather than by row_id, since row segmentation
+  itself was in question: **agree 362/400 = 90.5%** (`tools/reconcile_passes.py` on the two derived single-row
+  files; scratch script + derived files not committed, reproducible from passA.tsv/passB.tsv). This is the
+  meaningful agreement figure for this pass pair -- well above the 60% gate (`transcription.md` /
+  `PROCESS-2026-09-24` proposal 4) -- and it is the number this job used to decide to proceed to settling rather
+  than stop.
+
+**3. Settling from the image (not by vote), all 38 real disagreement columns (`reconcile_disagreements.tsv` in
+this folder is the mark/symbol-normalized, whole-letter-stream disagreement list):**
+  - Most of the 38 columns are the `[circle-dot]`/`Th` and `[phi-symbol]`/`Ph` labelling difference (not a real
+    disagreement -- both passes saw the same glyph, just wrote its name differently; normalized to
+    `[circle-dot]`/`[phi-symbol]` throughout `ciphertext.tsv`).
+  - **A real digit disagreement**, the run opening "puis que je feur qu'illes": passA.tsv read the first token as
+    `83`; passB.tsv (itself flagging uncertainty: "first token ... read closely as '88', not '83'") read `88`.
+    Zoomed crop of `leaf0729.jpg` at native resolution (this worker, this pass) against a confirmed `83` elsewhere
+    on the same page ("`10 83 77 le bruit`") for shape comparison: the two glyphs are visibly different (the
+    confirmed `83`'s second digit is open-sided; the disputed token's second digit is a closed loop matching
+    the page's `8`s). **Settled: `88`, not `83`** -- pass A misread this one.
+  - **A whole printed line of ciphertext (25 tokens) is missing from passA.tsv entirely.** The line "`7 c 76 81
+    88 u 70 p 44 92 22 13 75 6 47 53 34 80 72 22 39 9 89 61 7 75`" (gloss below it: "prize may z car on la pr j
+    lon ge du") sits between "`...ne fachant pas encor 89`" and "`58 51 32 ce qui ne ce fera...`" on leaf 729 --
+    confirmed directly on the page image, an entirely cipher line with no intervening French word at either
+    line-wrap, so by the stated run rule it is one continuous run with the tokens either side of it. None of
+    these 25 tokens appear anywhere in passA.tsv's R017-R026 (checked against every row); passB.tsv's R020 has
+    them in full. **Settled: pass B correct, pass A skipped the whole line** (the single largest reconciliation
+    finding this job made -- a plausible whole-line skip in a single unreconciled pass, exactly the kind of error
+    the transcription brief's two-pass rule exists to catch).
+  - **A symbol identification.** At "`...74 99 [symbol] 42 o 40 ce qu'il va à craindre`" (end of the Espagne
+    line), passA.tsv read the symbol as `[phi-symbol]`; passB.tsv read it `Th` (circle-dot). Zoomed crops of
+    all three of this letter's circular-symbol occurrences on leaf 729, compared side by side: the "affaires ...
+    68 [X] d 61" occurrence and this one both show a circle with an internal horizontal squiggle/mark; the "qui
+    eft al lé e à la" occurrence (both passes agree: phi) shows a circle with a clean vertical bar, visibly
+    different in kind. **Settled: circle-dot type (matches passB.tsv), not phi** -- pass A mislabelled this one.
+  - **An isolated single-token run pass A dropped as plain text.** "`Je vis hier 17 pour lui`": passA.tsv's R035
+    row folds "17" into its `ctx_left` field (i.e. did not treat it as cipher at all); passB.tsv's R026 reads it
+    as a one-token run. The printed "17" is set in the same type as the surrounding cipher numerals, and the
+    letter's own dateline ("Londres, 20 Novemb. 1654") makes "hier" (yesterday) the 19th, not the 17th, so a
+    plain date reading of "17" does not fit the sentence chronologically. **Settled: cipher token, pass A missed
+    it.**
+  - **A symbol plus a digit dropped at the very end of leaf 729.** The last cipher line on the page reads
+    "`[phi-symbol] 84 91 7 23 7 ll 47 5 77 12 9 94 x 18 7 80 38 40 73 65 71 89 16 21 39 de`" (confirmed on the
+    image, immediately above the "Vol. II. / 8 X / vos" footer and catchword) -- passA.tsv's R040 is missing both
+    the leading phi-symbol and the "47" that sits between "`ll`" and "`5`"; passB.tsv's R031 has both, and
+    (unlike this worker's initial suspicion) had already correctly attributed the run to leaf 729, not 730 --
+    passA.tsv's R040 wrongly put it on leaf 730. **Settled: pass B correct on both the symbol, the extra digit,
+    and the leaf.**
+  In every one of the 8 real (non-labelling) disagreement points checked against the image, pass B's reading was
+  the one confirmed -- pass A's flaws were all omissions or misreadings, not overreadings; no point was found
+  where pass A had something correct that pass B lacked.
+
+**4. `ciphertext.tsv` written**: pass B's run structure (which correctly did not split a run at a page-line wrap
+lacking an intervening French word, unlike pass A -- this is *why* pass B did not lose the 25-token line), marks
+kept, symbol labels normalized to `[circle-dot]`/`[phi-symbol]`, plus a `confidence` column (H = this run's
+tokens all agree with passA.tsv after normalizing marks/labels; M = at least one token disagreed with or was
+absent from passA.tsv, settled here from the image) and a note on every M row citing this section.
+24 of 33 runs are fully H; the 9 M rows are exactly the ones covering the digit fix, the missing line, the symbol
+fix, the dropped "17", and the dropped end-of-page symbol+digit, all as settled above. Token-level: 366/400
+(91.5%) agree with pass A once marks/labels are normalized (this worker's own NW alignment, `reconcile_agreement.tsv`
+reports the equivalent 362/400 = 90.5% from `tools/reconcile_passes.py` itself on the derived whole-letter-stream
+files -- the 4-token gap between the two figures is tie-breaking differences between the two NW implementations
+on a few ambiguous alignment columns, not a disagreement about content).
+
+**5. Cheap test re-run on the reconciled ciphertext**, same `key_gloss.tsv` "primary" (30-code, non-conflicting)
+key, unchanged -- this tests whether the transcription fixes alone move the earlier negative, holding the key
+fixed:
+
+| | tokens | key size | coverage (before -> after) |
+|---|---|---|---|
+| **target**, passA.tsv (TX-BARRT, 25 Sept) | 368 | 30 | 108/368 = 29.3% |
+| **target**, ciphertext.tsv (this pass, reconciled) | 400 | 30 | **120/400 = 30.0%** |
+| **control**, avg of 10 seeds, matched to passA.tsv's profile | 368 | avg ~43 | 33.4% (range 28.5-37.0%) -- unchanged, re-verified this pass as a regression check |
+| **control**, avg of 10 seeds, matched to ciphertext.tsv's profile | 400 | avg ~42 | **31.1% (range 26.5-34.0%)** |
+
+`coverage_test.py key_gloss.tsv ciphertext.tsv` and `matched_control.py --seeds 10 --ctpath ciphertext.tsv`
+reproduce these numbers. `matched_control.py` was extended (not rewritten -- same file, same corpus, same
+control-construction logic) with a `--ctpath` option; the default (`passA.tsv`) still reproduces TX-BARRT's exact
+original 33.4%/74.2% (checked, this pass), so the original result is unaffected and still reproducible.
+For `--ctpath ciphertext.tsv`, the control's per-run gloss-reveal count (`k_gloss`) is **not** read from
+`ciphertext.tsv`'s own `gloss_as_printed` word count -- an earlier attempt at this did that and it roughly
+doubled the control's average key size (30 -> ~81-87 codes), because that field, unlike `key_gloss.tsv`, includes
+gloss text passA.tsv's own notes explicitly flagged as *not* confidently mapped per token (e.g. R011: "9 gloss
+words for 6 tokens -- sparse/mismatched, no confident per-token mapping attempted"); counting all of it as
+"revealed" handed the control a bigger, better-informed key than the real pass ever built from the same gloss --
+exactly the unmatched-design failure CLAUDE.md rule 3's Salviati/PX-BRODEC lessons warn against. Instead,
+`matched_control.py` now projects the *original* passA.tsv glossed-token-position set onto `ciphertext.tsv` by
+the same Needleman-Wunsch alignment used to build `ciphertext.tsv`, and every token that is new relative to
+passA.tsv (the recovered 25-token line, "17", the end-of-page symbol+digit) counts as **unglossed** for the
+control -- deliberately conservative, since it credits the control with none of the gloss the reconciliation
+itself uncovered. See the module docstring in `matched_control.py` for the full method.
+
+**Verdict: negative holds, unchanged by the transcription fix.** The reconciled target's coverage (30.0%) is
+still statistically indistinguishable from -- and still slightly below -- the matched control's average (31.1%,
+target squarely inside the control's 26.5-34.0% range). Recovering the missing line, the dropped "17", the
+dropped symbol+digit, and fixing the one digit misread did not move the result: this was not a transcription
+artifact. The spec's `cheap_test_done` is updated below with both the original and reconciled numbers side by
+side (rule 3: report both, before and after).
+
+**Next test (not this job, one line per the brief):** the token-shuffle/key-shuffle permutation z-test on this
+letter's real (now reconciled) gloss positions that TX-BARRT and the spec both already named as the sharper next
+cheap test -- still not run.
+
+**Files:** `passB.tsv` (blind pass B), `ciphertext.tsv` (reconciled transcription, H/M graded), `reconcile_disagreements.tsv`
+/ `reconcile_agreement.tsv` (from `tools/reconcile_passes.py` on the mark/symbol-normalized whole-letter-stream
+derived files -- the derived files themselves are scratch, not committed, and reproducible from passA.tsv/passB.tsv
+by the method described in s.2 above), `matched_control.py` (extended with `--ctpath`, see s.5).
+Grades: `ciphertext.tsv`'s H/M column is a transcription-confidence grade (tools/reconcile_passes.py's own H/M
+convention: agreed-blind vs. reconciler-settled), distinct from rule 4's H/C/S/M/I reading grades in `key_gloss.tsv`
+(unchanged by this pass, still all grade C). Rule 10: nothing in this section is new, unpublished, unread, first
+or never printed -- a verifier classifies novelty, and none is claimed here.
+
+**Hosts:** none (all work this pass was against images and files already on disk from TX-BARR/TX-BARRT; no
+network requests made).
