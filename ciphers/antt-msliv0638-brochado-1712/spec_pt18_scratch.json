@@ -1,0 +1,7 @@
+{
+ "slug": "antt-msliv0638-brochado-1712-pt18-scratch",
+ "name": "scratch copy of specs/antt-msliv0638-brochado-1712.json with judge.language set to pt18 (ZX-BRO2, 25 Sept 2026) -- for scoring the LOO judge bucket against the nearer-but-later Correio Braziliense / Investigador Portuguez 1808-1819 corpus LANE V6 landed, alongside the period-correct pt17 (Vieira, 1648-1697) corpus. Not a claim about which corpus is right for this 1712-13 target; comparison only. Never edit specs/ for this -- kept in the target folder per this job's brief.",
+ "language_candidates": ["pt", "pt18"],
+ "ciphertext": "see specs/antt-msliv0638-brochado-1712.json",
+ "judge": {"language": "pt18", "letters_min": 40, "letters_max": 70}
+}
