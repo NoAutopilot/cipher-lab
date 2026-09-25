@@ -459,3 +459,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T17:07Z	session_01Ngn3y84Z3NdpyGnFDjF9Kz	SO-CLOSE (Sonnet, cap 3)	land second-opinion files from PRs 10-12, close without merging	prompt inline (parent 7c)
 2026-09-25T17:14Z	session_0166AnCG2cnhzT49cjP1hRg2	done	bKAL kaliningrad-2015 test 1	pushed cde7e2b
 2026-09-25T17:14Z	session_016UPMZ7UBvMWu2PEsWNiFyC	done	bSPEC ten specs ranks 11-20	pushed
+2026-09-25T17:13Z	session_012H13Lr87WvKvzsuhmyM6GD	LANE B2 bBUL (Sonnet, cap 3)	bullet-tuscany-1944 test 1 claimed-solution check	brief 2026-09-25-lane-b2-bullet-tuscany-1944.md
+2026-09-25T17:13Z	session_01WZHcenYMEBmsycwsAeFDeF	LANE B2 bMCC (Sonnet, cap 3)	mccormick-1999 test 1 token profile	brief 2026-09-25-lane-b2-mccormick-1999.md
