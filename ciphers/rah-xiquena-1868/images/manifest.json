@@ -1,19 +1,50 @@
 {
   "source": "bibliotecadigital.rah.es, RAH Sig. 9/6963, registro id 15711 (oai:bibliotecadigital.rah.es:15711)",
-  "fetched": "2026-09-25T16:36Z",
-  "method": "tools/browser_fetch.js --binary (curl hits bibliotecadigital.rah.es's Anubis challenge; a real headless browser clears it, confirmed 24 Sept 2026 for this host)",
-  "note": "One fetch only, per LANE CX2 worker CX2-MISC2's job brief cap ('at most one fetch ... to confirm what a catalogue says'). Not a transcription pass.",
+  "fetched": "2026-09-25T18:19-18:23Z",
+  "method": "tools/browser_fetch.js --binary, --profile /tmp/rah_profile_xiquena (curl hits bibliotecadigital.rah.es's Anubis challenge; a real headless browser clears it after 2-8 navigation attempts on the profile, then serves image/jpeg directly on later idImagen values with the same profile's cookies)",
+  "note": "LANE R6 worker Y10: fetched the remaining 7 leaves (p1 was already on disk from LANE CX2's one-fetch pass). All 8 pages now on disk.",
   "pages": [
     {
       "idImagen": 10141611,
       "file": "p1.jpg",
       "url": "https://bibliotecadigital.rah.es/i18n/catalogo_imagenes/imagen_id.do?idImagen=10141611",
-      "content": "Dossier cover, blank leaf with period hand 'Leg. XXIV, nº 158' -- matches the catalogue's Legajo/Nº citation. No cipher text on this leaf."
+      "content": "Dossier cover, blank leaf with period hand 'Leg. XXIV, nº 158' -- matches the catalogue's Legajo/Nº citation. No text."
     },
     {
-      "idImagen": "10141612-10141618",
-      "file": null,
-      "note": "Remaining 7 leaves not fetched this pass (one-fetch cap). Presumably include the ciphered telegram text; a future access worker should pull the rest under this manifest, one request at a time, >=1.5s apart, not by hand."
+      "idImagen": 10141612,
+      "file": "p2.jpg",
+      "content": "Heading 'Telegrama cifrado. 1350 Grupos. Madrid 3 de Mayo de 1868. El Ministro de Estado al Ministro de S.M. en Munich', then plain Spanish text begins ('S.M. La Reina, Nuestra Senora manda se traslade V.E. inmediatamente a Viena...'). No cipher signs -- continuous plain prose."
+    },
+    {
+      "idImagen": 10141613,
+      "file": "p3.jpg",
+      "content": "Continuous plain text, switches to French mid-page: a telegram text quoted in French addressed 'A Leurs Majestes Apostoliques les Empereurs d'Autriche' announcing the betrothal of Infanta Isabel and the Conde de Girgenti. No cipher signs."
+    },
+    {
+      "idImagen": 10141614,
+      "file": "p4.jpg",
+      "content": "Continuous plain text: French passage closes '(Signe: Isabel. = Francisco. =)', then reverts to Spanish, second numbered point of the instruction ('Segundo: Es la voluntad de S.M. la Reina que el casamiento...'). No cipher signs."
+    },
+    {
+      "idImagen": 10141615,
+      "file": "p5.jpg",
+      "content": "Continuous plain Spanish text. Red/gold ribbon binding visible along the right margin (period archival binding, not cipher marks). No cipher signs."
+    },
+    {
+      "idImagen": 10141616,
+      "file": "p6.jpg",
+      "content": "Continuous plain Spanish text, instructing the minister on how to approach the Emperor. No cipher signs."
+    },
+    {
+      "idImagen": 10141617,
+      "file": "p7.jpg",
+      "content": "Continuous plain Spanish text, continuing the instruction. No cipher signs."
+    },
+    {
+      "idImagen": 10141618,
+      "file": "p8.jpg",
+      "content": "Closing lines, then 'Es copia conforme: El Sub. Secretario de Estado: El Conde de Xiquena' (certification and signature). No cipher signs. End of document."
     }
-  ]
+  ],
+  "finding": "The 'telegrama cifrado' heading and '1350 Grupos' count describe the telegram as actually TRANSMITTED (in cipher, over the wire). The archived item itself is the ministry's own file copy, certified 'Es copia conforme' and signed by the Conde de Xiquena as Subsecretario de Estado -- and that file copy is written entirely in clear Spanish (with an embedded French-language telegram text). No cipher digits, marks, or any non-alphabetic code appear anywhere across all 8 leaves. This is not an interlinear cipher+plaintext document like rah-canada-1869; it is a plaintext-only record of a message that was enciphered for transmission but filed in clear, per period diplomatic practice."
 }

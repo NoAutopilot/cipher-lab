@@ -1,4 +1,13 @@
-open
+solved
+
+**Status correction, 25 Sept 2026 (LANE R6 worker Y10):** the top line above was `open`, set by LANE CX2's
+check-solved sweep before the image was seen. The image (all 8 leaves now fetched, see the "Y10" section
+below) shows this item is not a cipher at all: the archived "Copia del telegrama cifrado" is a plaintext-only
+file copy, certified `Es copia conforme` and signed by the Conde de Xiquena. Same pattern as
+`ciphers/rah-canada-1869/AUDIT.md`'s correction of that target — a catalogue title naming a "telegrama/nota
+cifrado" describes what was transmitted, not what the archive kept on file. Not classified as to novelty here
+(rule 10) — routed to LANE V6.
+
 RAH's own OAI-PMH DIDL record (`oai:bibliotecadigital.rah.es:15711`, registro id 15711, found via a keyed Europeana search this pass) read in full by this worker: no `dc:description` field and no "Publicado" note anywhere in its metadata, only creator/date/title/rights/subject/8 page-image refs; Google Books full-text searched (`GOOGLE_BOOKS_KEY`, `&country=US`) for "Xiquena" + "telegrama" + "cifrado"/"Isabel", 6 hits, none a confirmed match (control: the query mechanism returns real full-view hits, e.g. `Diario de las Sesiones de Cortes` and `Gedeón` 1898, proving the search executes; none names this telegram); one leaf fetched via `tools/browser_fetch.js --binary` (idImagen 10141611, page 1 of 8) and eye-checked by this worker, confirming the catalogue's own "Leg. XXIV, nº 158" archival mark but showing only the dossier's blank cover, not the telegram text.
 
 ## Check-solved (LANE CX2, 25 Sept 2026, CX2-MISC2)
@@ -95,3 +104,72 @@ WebSearch: 4. `sources/cryptiana/`: local grep only, no network request. `github
 with the rest of this batch (2 clones total across N45/N46/N47/E1). No `bibliotecadigital.rah.es` calls this
 pass (record already reachable per the scout's own sweep; re-checking it was not needed for a six-source
 sweep). No TNA Discovery calls (n/a). No Google Books calls (queries logged above as pending).
+
+## Y10: capture and sibling-key trial (25 Sept 2026, LANE R6)
+
+**(1) Capture.** Fetched the remaining 7 leaves of OAI record 15711 (idImagen 10141612-10141618; p1/10141611
+was already on disk from LANE CX2's one-fetch pass) via `tools/browser_fetch.js --binary --profile
+/tmp/rah_profile_xiquena`. `bibliotecadigital.rah.es`'s Anubis challenge blocked the first 8 navigation
+attempts on a fresh profile (all returned `text/html`, not the image); a plain HTML fetch on the same profile
+then showed the challenge had actually cleared (the page rendered the real image in Chromium's native
+viewer, title `imagen_id.do (3489×4859)`), and every fetch after that point served `image/jpeg` directly
+(one more `text/html` retry on idImagen 10141613, then image/jpeg on attempt 2). All 8 images now on disk,
+`images/manifest.json` updated with a one-line description of each leaf. Folder size 12 MB, well under the
+30 MB cap. Requests: `bibliotecadigital.rah.es` 14 (7 target images + 6 challenge/retry navigations + 1 HTML
+diagnostic fetch), all through the single browser profile, one at a time, ~3 s apart or more (the two initial
+navigation bursts to the same idImagen were the exception, needed to establish whether the block was live or
+already cleared — no page was fetched in parallel).
+
+**(2) Page-by-page description (lead classes 1-3).** p1: blank dossier cover, "Leg. XXIV, nº 158" in period
+hand, no text. **p2-p8: continuous plain prose, no cipher signs anywhere** — no digits-as-code, no non-
+alphabetic marks, nothing resembling `rah-canada-1869`'s digit+mark nomenclator. p2 opens with the heading
+"Telegrama cifrado. 1350 Grupos. Madrid 3 de Mayo de 1868. El Ministro de Estado al Ministro de S.M. en
+Munich," then the body starts directly in clear Spanish. Mid-p3 it switches to French for a quoted telegram
+text addressed "A Leurs Majestés Apostoliques les Empereurs d'Autriche," announcing the betrothal of Infanta
+Isabel and the Conde de Girgenti, signed "(Signé: Isabel. = Francisco.=)" at the top of p4, then reverts to
+Spanish for the rest of the instruction. p8 closes "Es copia conforme: El Sub. Secretario de Estado: El Conde
+de Xiquena" — a certified true copy, signed by the addressee of the QUEUE row's own biographical note (Conde
+de Xiquena, subsecretario de Estado). Full transcription: `ciphers/rah-xiquena-1868/plaintext.txt`.
+
+**Finding: this item carries no ciphertext at all, at any of its 8 leaves.** The catalogue title
+("telegrama cifrado") and the document's own heading ("1350 Grupos") describe the telegram as it was actually
+*transmitted* over the wire — in cipher, as diplomatic telegrams of this period were. What the ministry kept
+on file, and what RAH holds and has digitised, is the office's own clear-text copy of that message, certified
+and signed. This is the same pattern the LANE W verifier found and corrected for `rah-canada-1869`
+(AUDIT.md): a catalogue description naming a cipher describes the transmission method or a related item, not
+necessarily what survives on the leaf. Unlike `rah-canada-1869` (interlinear: cipher line directly below its
+own plaintext line, same document), this item is **plaintext-only** — there is no interlinear or adjacent
+cipher line to align against.
+
+**(3) Transcription — not applicable.** No cipher signs exist to transcribe; a blind Sonnet pass B and
+reconciliation were not run (nothing to transcribe as ciphertext; running a pass on prose that is already
+plainly legible Spanish/French would not test anything). Per the brief's own instruction ("if the file carries
+the clear text, align it and stop — that is the reading"), stopping here.
+
+**(4) Sibling-key trial (rah-canada-1869's key) — not applicable, not run.** `rah-canada-1869/key.tsv` maps
+Arabic digits and ~12 pen marks to Spanish letters (a monoalphabetic substitution for the Conde de la
+Cañada's own hand). There is no ciphertext anywhere in this item to apply that key to, and no random-draw
+control is meaningful without a ciphertext to test it against. This lead class is skipped for the same reason
+lead class 3 stopped: the plaintext is already in hand, directly, with no encoding step to reverse.
+
+**Content (from the plaintext).** Madrid, 3 May 1868. The Spanish Foreign Minister instructs the Minister
+Plenipotentiary in Munich to travel at once to Vienna (wherever the Emperor of Austria may be) and: (1)
+transmit a telegram from Isabel II and her consort Francisco announcing, in French, the arranged marriage of
+Infanta Isabel to their cousin the Conde de Girgenti; (2) discreetly manage the fact that Girgenti — Prince
+Cayetano, of the House of Bourbon-Two Sicilies, an Austrian cavalry officer — insists on first completing his
+military discharge formalities in Vienna before the wedding, out of personal delicacy, and Isabel II wants the
+Austrian Emperor, on replying to her telegram, to himself relieve Girgenti of his captaincy and voice a wish
+to see him married — so that the initiative appears to come from Austria, not from the Spanish court, avoiding
+any suspicion or complication. Historical context: this is the betrothal, months before the September 1868
+revolution that deposed Isabel II, of Infanta Isabel (Princess of Asturias) to Prince Cayetano of
+Bourbon-Two Sicilies, Conde di Girgenti — a marriage that did take place (19 May 1868) but ended within
+months (Girgenti's suicide, 1871); not evaluated further here (out of this brief's scope).
+
+**Not classified as to novelty** (rule 10) — the marriage and its diplomatic run-up are certainly documented
+in general Isabel II historiography (the marriage itself is a known public event, unlike a private cipher
+content); whether this specific instruction telegram or its wording has been printed anywhere is unchecked in
+this pass and is a question for a verifier, not this worker. Routed **for LANE V6**.
+
+**Sign-off.** No cipher, no key trial applicable, no HYPOTHESES.md row (family_run.py is for cryptanalytic
+families; there is nothing here to run a family against). Hosts: `bibliotecadigital.rah.es` 14 (all this
+pass; no other host touched). No subagents.
