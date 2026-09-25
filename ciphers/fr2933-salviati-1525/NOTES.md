@@ -1466,3 +1466,13 @@ control cm 2820 SEED --leaves all` (about 165 s with six runs sharing four cores
 deletions at the settled rate, plus the #/+, g/y code pairs) rather than type substitution; a 4-gram or word-aware
 model, since the per-letter discrimination is what fails; more observations per type (pools-first: a sibling Salviati
 letter under the same 36 base codes) before any further solver work.
+
+## Atlas re-pass on f.55v and f.57v (25 Sept 2026, LANE R7)
+
+R7-AT55V (`leafnotes/atlas_f55v.md`, `merges_f55v.tsv`, native-resolution Gallica crops) found 1 merge (the mark-order spelling
+H^o|1 = H^1|o) and kept 15 pairs distinct, two of which looked mergeable at 1600 px and were distinct at native resolution.
+R7-AT57V (`leafnotes/f57v.md`, `merges_f57v.tsv`, 1600 px only) proposed 18 sure and 6 likely merges, mostly "mark absent on the
+image"; one contradicts AT55V's native check (H^1|o). Pooled types with both files (`control/codemark_curve.py stats --leaves all
+--merge ...`, f57v rows given kind=merge by the orchestrator in a scratch copy): **223 -> 204 (sure) / 198 (sure+likely)**, against
+the NEAR gate of 178 (a fifth). Gate not met, so the cm control ladder was not re-run. The f57v merges that delete a mark are
+unverified at native resolution and should not be used for solving until they are. Next: pools-first sibling search (R7-SSIB).

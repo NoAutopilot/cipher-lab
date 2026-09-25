@@ -90,17 +90,18 @@ identified, the catalogue's date and senders corrected. The "first verified N3" 
 Orange 1572 detector candidate also fell (partial decipherment printed 1842). Zero unique solves today; two
 over-claims prevented by the gates before anything left the repository.
 
-## LANE R7 handoff (session_01UpWfpbLwYL1xmDG1vFyi6h), 25 September 2026, kept current (last 20:06 UTC)
+## LANE R7 handoff (session_01UpWfpbLwYL1xmDG1vFyi6h), 25 September 2026, kept current (last 20:46 UTC)
 
 Recovery and deep work, successor to LANE R6; opened 20:00 by parent 7c (now 7d). Brief .claude/briefs/runs/2026-09-25-lane-r7-orchestrator.md;
-worker common 2026-09-25-lane-r7-common.md. Rate allowed at 20:00. Six workers live, none reported yet; worker usage 0 ledgered.
+worker common 2026-09-25-lane-r7-common.md. Rate allowed at 20:42. 6 workers closed (Sonnet), USD 21.56 read by get_session, ledgered and
+archived; 2 live (R7-MREV session_015KKfqy9vPiTxH4QdUh5CL9, R7-SSIB session_01R3tBKyK2Y2Ut1gHSS97M12). Orchestrator about USD 3 at 20:42.
 clair1161, clairambault296 and the sp87/TNA copy-order items were already taken by ZX2 (ZX2-GAL, ZX2-ASK, ASKS 54/56/57) and are left to it.
 
 | target | outcome (25 Sept 2026) | next |
 |---|---|---|
-| espagnol142-mercy-1648 | ASKS 59 filed (Cuvelier-Lefèvre VI p.647, owner read); SO-MERCY-F22 already queued by V6 (no duplicate SO row); live: R7-MSIB (Brussels 15 Apr sibling), R7-MSHUF (shuffled-stream control), R7-MEYE (blind eye-check of the 14/19 glyphs) | read the three reports; NEAR row |
-| fr2933-salviati-1525 | live: R7-AT55V (f55v merges + codemark_curve.py --merge), R7-AT57V (f57v merges) | control ladder only if pooled types 223 -> <=178 |
-| berthier-napoleon-1812 | live: R7-BBER (spec + test 0: letter XXIX vs 34-letter control; test 1 print check of Corresp. Napoléon XXIV) | per spec |
+| espagnol142-mercy-1648 | shuffled-stream control passes: target -1154.3 vs shuffle mean -1488.5 vs matched control -1336.2 (sequence, not profile); blind eye-check 116/122 agree, name glyphs split 2x14 / 3x19 (r14.7 'Cleues', r16.3, r16.6 read 19 on every blind pass); Brussels 15 Apr sibling not printed, AGR reading-room only (ASKS 60); Cuvelier-Lefèvre VI p.647 (ASKS 59); SO-MERCY-F22 already queued by V6 | R7-MREV (live) applies the blind majority to the reading; V6 second audit told |
+| fr2933-salviati-1525 | atlas re-pass: pooled types 223 -> 204/198 vs gate 178, not met, ladder not re-run; codemark_curve.py --merge added | R7-SSIB (live) sibling search; then a measured-error control with a word-aware model (Fable, about USD 12) |
+| berthier-napoleon-1812 | spec written; test 0 letter XXIX mid-field on the two metrics it was not selected by (12th, 17th of 34); Corresp. Napoléon XXIV no. 19408 is not the "note chiffrée" | not moved: no campaign; test 3 (Urban's RGVIA find) is a print lead only |
 
 ## LANE R6 handoff (session_018MWpKL71WnBxA8k4ejVkBS), 25 September 2026, 19:25 UTC
 

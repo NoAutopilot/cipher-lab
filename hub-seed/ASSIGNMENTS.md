@@ -560,3 +560,6 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T20:40Z	session_015aWAEGAyRXSR3wi3znjRd8	LEARN-2 (Sonnet, cap 5)	cross-account read, window since 17:18; brief learn-cross-account.md
 2026-09-25T20:40Z	session_01M9XHYBXkupfXbhK1kVhZLW	retrospective l (Sonnet, cap 10)	13 rows since retro k, USD 89; NEAR review; breadth first-test format; STATUS.md section loss 9a1e34b; LEARN injection stop
 2026-09-25T20:44Z	session_01Qcv68Pn46JNXkktRXTv6DL	GOLD-D1 done $6.17 D-, archived by LANE GOLD2	branch (b): base-level K128 control 0.859 clean, 0.314 at 10 pct noise; K160 0.440 clean
+2026-09-25T20:42Z	R7 six workers	MSIB 2.95 N, MSHUF 0.91 D, MEYE 4.65 D-, BBER 2.11 D, AT55V 7.37 D-, AT57V 3.57 D; all archived	LEDGER rows 25 Sep LANE R7	
+2026-09-25T20:44Z	session_015KKfqy9vPiTxH4QdUh5CL9	R7-MREV (Sonnet, cap 3, 35 min)	espagnol142-mercy-1648 blind-majority exceptions + v07 15-16	brief 2026-09-25-lane-r7-mrev-mercy-blindsplit.md
+2026-09-25T20:44Z	session_01R3tBKyK2Y2Ut1gHSS97M12	R7-SSIB (Sonnet, cap 4, 45 min)	fr2933-salviati-1525 sibling letters, same design	brief 2026-09-25-lane-r7-ssib-salviati-siblings.md
