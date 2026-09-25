@@ -6,14 +6,58 @@
   "archivesetmanuscrits_notice": "http://archivesetmanuscrits.bnf.fr/ark:/12148/cc137837/cd0e29423",
   "leaves_total": 268,
   "rights": "Bibliotheque nationale de France, public domain reproduction, Gallica, no login required",
-  "fetched": "23 September 2026",
-  "fetch_method": "curl, browser User-Agent, IIIF Image API /full/900,/0/native.jpg (reduced width)",
+  "fetched": "25 September 2026",
+  "fetch_method": "curl, browser User-Agent, IIIF Image API (full/1400-2200px reduced width for reading; region crops for corner foliation checks), gallica.bnf.fr/iiif/ark:/12148/btv1b9001034d/f{N}/... where N = IIIF canvas index (0-based) + 1",
+  "folio_pinning": "Gallica's IIIF manifest carries NO folio labels for this ark (tools/gallica_folio.py: 0/268 labelled). Pinned by eye: a small ink/pencil numeral in the top-right corner of most rectos gives the volume's own running foliation, distinct from a second, larger ink number pair also present on many leaves (e.g. '239', '241', '243'...) which belongs to the ORIGINAL pagination of the correspondence series these particular letters were extracted from (not this volume's foliation). Confirmed by direct read at 4x zoom crops: f48(canvas idx 47)=vol.folio 42 ('209'/'42', an unrelated religious-community letter -- this is the old, WRONG guess from the prior sweep, now understood and superseded); f49=43; f51=45; f55(canvas idx 54)=vol.folio 48 (CONFIRMED: tab reads 'Rosset-de fleury', item title 'Testament de M. le Card. de Fleury Ministre d'Estat...' -- matches the finding aid's 'Fol. 48 -- Rosset de Fleury (testament du cardinal...)' exactly); f60=vol.folio 53. Offset (f-number minus vol.folio) is 6 for f47-f51, becomes 7 from f55 on (a single unnumbered mounted engraved portrait, 'D. Francisco Villani a Gandavo, Episcopo Tornacensi', Bishop of Tournai, sits at canvas idx 53/f54 between the Fleury item and the rest, consuming one canvas with no volume folio number of its own).",
   "images": [
     {
       "file": "btv1b9001034d_canvas48_probe_not_folio48.jpg",
-      "canvas": "IIIF canvas index 48 (naive guess equal to the finding-aid's cited 'Fol. 48')",
-      "shows": "NOT the Paget item. An unrelated 18th-century French religious-community letter (Jansenist-adjacent: 'Soeur Anne...', 'M. le Cardinal de Noailles'), stamped '209' and '42' in the corner. A second probe at canvas 54 (also not kept as an image) showed a mounted 17th-century engraved portrait ('D. Francisco Villani a Gandavo, Episcopo Tornacensi'), confirming this 268-leaf 'Melanges' volume bundles wildly heterogeneous, non-chronological material (portraits, printed factums, testaments, genealogies, autograph letters) with no simple canvas-to-folio correspondence."
+      "canvas": "f48 (IIIF canvas index 47)",
+      "vol_folio": 42,
+      "shows": "NOT the Paget item (superseded guess from the prior sweep, kept for the record). An unrelated 18th-century French religious-community letter, stamped '209'/'42'."
+    },
+    {
+      "file": "f55_folio48_testament-fleury.jpg",
+      "canvas": "f55 (IIIF canvas index 54)",
+      "vol_folio": 48,
+      "shows": "CONFIRMED folio 48. Tab 'Rosset-de fleury.' Heading 'Testament de M. le Card. de Fleury Ministre d'Estat et cyder. Precepteur du Roy Louis XV.' The testament of Cardinal Fleury referenced by the finding aid. Continues at least to f56 (vol.folio 49, dated 'fait a Issy le 6 janvier 1743') then a biographical notice of Fleury runs f57-f59 (vol.folio 50-52), not fetched to images/ (not the Paget item; not re-fetched full-res this pass, seen at 1400px in the working set)."
+    },
+    {
+      "file": "f60_folio53_paget-letter1-p1.jpg",
+      "canvas": "f60 (IIIF canvas index 59)",
+      "vol_folio": 53,
+      "shows": "Start of PAGET LETTER 1. Right page only (left page blank/guard). Heading 'Monseigneur'. Opens 'J'ay receu la lettre qu'il a plu a Vostre Excellence me faire l'honneur de m'ecrire le 19. du mois dernier...' Nomenclator cipher: French prose with runs of period-separated numbers (2-3 digits) substituted for names/places, e.g. '145.31.67.148.186.147.176' beside 'M. l'Abbé Lomelini' and 'de Venise'. Old correspondence-series pagination stamped '239' (small vol.folio '53' beside it, confirming the offset)."
+    },
+    {
+      "file": "f61_paget-letter1-p2-3.jpg",
+      "canvas": "f61 (IIIF canvas index 60)",
+      "shows": "PAGET LETTER 1 continues, both pages (left='240', right='241' in the old series). Heavy cipher use: 'a Genes ... 185.244.45.211.209.192.45.223.41.', '175.?.276. pour 244.244.96.175.45.214.80.211.240', '196.241.45.17.34.32.100.', '192.46.87.147.46.146.', 'Labbe 145.31.67.', '48.178.194.45.240.', 'Labbe 145.65.63.', 'lisle 34.147.46.146.', 'Labbe le 56.31.63.' -- right page: discusses the France-Empire peace (Treaty of Rastatt, concluded March 1714), 'le Roy de Sicile', with cipher group '145.48.97.222.87.84.38.46.146.' at 'a la vente de cette isle'."
+    },
+    {
+      "file": "f62_paget-letter1-p4-5.jpg",
+      "canvas": "f62 (IIIF canvas index 61)",
+      "shows": "PAGET LETTER 1 continues (old series '242'/'243'). Left: continues the peace-treaty discussion, no cipher visible in this passage ('...ne paroissant pas qu'on se dispose en Lombardie ni en Piemont pour commencer une nouvelle guerre...'). Right: shifts to Genoese-family news -- the death of a banker 'le marquis Pallavicino', his illegitimate son, the Grimaldi and Rospigliosi families; no cipher visible in this passage."
+    },
+    {
+      "file": "f63_paget-letter1-p6-7.jpg",
+      "canvas": "f63 (IIIF canvas index 62)",
+      "shows": "PAGET LETTER 1 continues (old series stamped '245'/'96'). Both pages plain French, continuing the Genoa banking-family gossip (Pallavicini estate, Lomellini, Alessandro Grimaldi as envoy of the Republic to Rome). No cipher visible in this passage."
+    },
+    {
+      "file": "f64_paget-letter1-p8-9.jpg",
+      "canvas": "f64 (IIIF canvas index 63)",
+      "shows": "PAGET LETTER 1 continues (old series right page stamped '247'). Left: plague news from Germany and the France-Empire peace signature, no cipher visible. Right: Paget's own request -- asks Monseigneur to send his 'expeditions' so he can 'remplir le consulat de la nation en Sardaigne' that has been destined for him, referring back to 'le petit memoire que je pris la liberte de luy envoyer en avril 1712 touchant les devoirs d'un consul'. No cipher visible in this passage."
+    },
+    {
+      "file": "f65_paget-letter1-p10-signed_letter2-p1.jpg",
+      "canvas": "f65 (IIIF canvas index 64)",
+      "shows": "END of PAGET LETTER 1 (left page) -- names a new vice-consul 'Langier de Toulon' with a short cipher run ('192.175.47.212.45.77.20.', '222.191.46.221.97.221.32.212.47.'), closes 'Je suis avec tres profond respect, Monseigneur, De Vostre Excelence, Le tres humble et tres obeissant serviteur, [signed] Paget', dateline 'A Gennes le 8e Avril 1714.' CONFIRMS sender = Paget, place = Genoa (Gennes), date = 8 April 1714, matching the finding aid's 'avec chiffre, 1714' exactly. Right page: START of PAGET LETTER 2, old series stamped '279'/'68'. Heading 'Monseigneur'. Opens 'J'ay receu les trois lettres qu'il a plu a Vostre Excellence me faire l'honneur de m'ecrire le 10. de ce mois...' Discusses 'la Princesse de Parme' with cipher '145.198.46.221.87.201.156.52.221.46.2.185.' and 'Reyne d'Espagne' context, cipher '196.212.50.175.33.103.20.237.233.46.146.46.31.99.46.'"
+    },
+    {
+      "file": "f66_paget-letter2-p2-3-signed.jpg",
+      "canvas": "f66 (IIIF canvas index 65)",
+      "shows": "END of PAGET LETTER 2, both pages, old series stamped '280'/'99' (left) and '281'/'59' (right). Very heavy, near-continuous cipher use discussing dynastic/marriage politics around Parma, the Prince Francois Farnese, the King of Spain ('le Roy d'Espagne'), 'Madame la Duchesse' -- consistent with the run-up to Elisabeth Farnese's marriage to Philip V of Spain (Sept 1714); this letter (28 Aug 1714) predates that marriage by about a month. Closes with the same formula and signs '[signed] Paget', dateline 'a Genes le 28 aoust 1714.'"
     }
   ],
-  "note": "The Paget item ('Fol. 48 -- Rosset de Fleury (testament du cardinal ; lettres autogr. de Paget, avec chiffre, 1714)', per archivesetmanuscrits.bnf.fr's item-level index) was not located by image this sweep. Gallica's Pagination service returned zero folio numbers for this ark; ContentSearch returned zero OCR hits for 'Paget'. This is a genuinely disordered miscellany, unlike Dupuy 452/468's roughly sequential letter-collections."
+  "note": "Two enciphered autograph letters from Paget, writing from Genoa (Gennes) to an unnamed French 'Monseigneur' (by content and language almost certainly a French Secretary of State, not an English correspondent; Paget describes himself awaiting appointment as French consul at Sardinia), dated 8 April 1714 and 28 August 1714, immediately follow Cardinal Fleury's testament and a biographical notice of Fleury in the same bound dossier (finding aid's single 'Fol. 48' entry covers both items). The cipher is a NOMENCLATOR: continuous French prose with isolated 2-3 digit numbers (period-separated, values roughly 1-300 seen so far) substituted for proper names, places and sensitive terms; the surrounding text is never enciphered. No interlinear or marginal gloss/decipherment is visible on any leaf fetched (checked per .claude/briefs/transcription.md's pre-pass rule (a)); this looks like a genuine, still-unbroken nomenclator, not a found-solved leaf. Two more full-page biographical-notice canvases (f57-f59, vol.folio 50-52) sit between the testament and Letter 1 and were viewed at 1400px but not saved to images/ (not part of either Paget letter). 268-leaf volume beyond this dossier reverts to unrelated bound material (a Puget/Peraud family legal case in print begins by vol.folio ~60, confirmed at f67/f70/f75)."
 }
