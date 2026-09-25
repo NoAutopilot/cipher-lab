@@ -124,7 +124,7 @@ come to the owner, who pastes them to the parent, which logs outcome and class w
 below: Salviati three more leaves for the code-and-mark test, Seure needs an image-reading reconciler, 1519 key stalled, Marie de
 Medicis waits on the fr.3642 key leaf via ASKS 42/43), N3 closed 18:06 (four copy-free nominations, Mellon MS 29 since a controlled
 negative). Retro-apply e (session_0119AEp7E59uvwSMs2Eboq9F, Sonnet) is applying RETRO-2026-09-24e.md. Keys: OPENALEX_KEY and S2_KEY
-reach fresh containers (CLAUDE.md playbook). Owner items still open: mailbox variables, history swap, grant applications (private
+reach fresh containers (CLAUDE.md playbook). Owner items still open: mailbox variables, grant applications (private
 repo), the Thurloe issue number. Restart order when the seven-day window resets Sat 26 Sept 13:00 UTC or the owner says go: R5 on
 Salviati and Seure with costed briefs, N4 copy-free scouts (Bourdeau's copy-free rows, Vatican, Europeana), V5 on any reading. **Parent 7b, 24 Sept 18:50 UTC: the owner said go at 18:48 ("keep chasing momentum"): LANE R5 (session_01LcgYWtnKYzBkdEwVU1ae1t, Opus, cap $60, brief 2026-09-24-lane-r5-orchestrator.md) and LANE N4 (session_01Nrrp9gDcF8aHUgcMSXxU7q, Opus, cap $40, brief 2026-09-24-lane-n4-orchestrator.md) started 18:48 under the seven-day allowed_warning; `rejected` on any session still stops everything. A Sonnet board worker (session_01RjbAN7B7GsuXHwuPr1Ak5X, cap $6) is adding a hall-of-fame view (public citations of this work, CITATIONS.md) at the owner's ask. Retro-apply e done and archived ($2.16, 4 of 5 applied, 5 had no diff). V5 starts when a reading posts.**
 

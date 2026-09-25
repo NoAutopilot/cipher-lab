@@ -462,7 +462,8 @@ A long-lived orchestrator's GitHub MCP token can go stale mid-session without an
 after several hours; a fresh $0.24 Sonnet worker closed them on the first try). Route any GitHub pull-request or
 issue write through a short-lived worker rather than a parent that has been running for hours, whether the write
 is a second-opinion PR close or an outreach issue post.
-One sanctioned exception, decided by the owner on 23 Sept 2026 after the repository went public: a single rewrite
-that removes addresses, the owner's first name, the credential-length line and the restricted images from every past
-commit (`tools/purge_history.sh`, which pushes the rewritten history to `purged-main`; the owner swaps it in for
-`main` at a quiet moment, and every open clone then re-clones). Nothing else, ever.
+The history purge planned on 23 Sept 2026 (`tools/purge_history.sh`, branches `purged-main`, `purged-main-2`) was
+dropped on 25 Sept 2026: the owner is fine with his name, email addresses and the images staying in history, and a
+scan of every commit that day found no secret. So there is no pending swap, and nobody force-pushes `main`. The one
+case that would justify a rewrite is a real credential committed by mistake: then rotate it first, tell the owner in
+ROOM.md, and let him decide; never force-push on a session's own judgement.

@@ -1,7 +1,7 @@
 to: github.com/NoAutopilot/cipher-lab, Settings and Branches pages (four clicks, no email)
 subject: History swap: make the purged rewrite the main branch
 checked: 24 Sept 2026, orchestrator. Branch purged-main-2 verified by tools/purge_history.sh: same files as main at 9866425, 259 commits, no addresses, no first name, no credential-length line, no BL/Spink/KHA images in any commit. Sessions cannot force-push or delete branches under their permission policy, so this part is yours.
-status: ready
+status: dropped 25 Sept 2026 (owner: no purge needed; no secrets in history)
 
 # Your four clicks (any time; no need to wait for a quiet moment)
 

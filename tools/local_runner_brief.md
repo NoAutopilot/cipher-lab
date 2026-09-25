@@ -2,7 +2,7 @@
 
 Why: JSTOR, HathiTrust full text, Gallica's text endpoint, DECODE, archive.org's reader pages and academia.edu all
 refuse cloud containers (Cloudflare, altcha, logins). A session on the owner's PC drives a real browser on a home
-IP with the owner's logins, and can force-push the history purge, which cloud sessions may not. The jobs live in
+IP with the owner's logins. (The history purge it once carried was dropped on 25 Sept 2026; never force-push.) The jobs live in
 `LOCAL-QUEUE.tsv` (id, kind, target, instruction, status, result) and `JSTOR-QUEUE.tsv`; cloud orchestrators
 append rows, the runner answers them, the verification lane reads the answers.
 
