@@ -56,7 +56,7 @@
  },
  "cheap_tests_in_order": [
   "1. Catalogue every repeated 2+ character token across both notes (NCBE, -RSE family, WLD, etc.) with position and frequency, and compare the resulting token-frequency profile against known personal-shorthand and phonetic-spelling systems (e.g. Gregg shorthand transliterated to Latin letters, or simple vowel-dropping schemes) rather than assuming a classical letter substitution. Cost $1, Sonnet.",
-  "2. Index-of-coincidence and letter-frequency test on the folded (letters-only) text against English, with a matched control: synthetic English plaintext passed through the same 'strip non-letters, keep the token structure' folding at the same N (367 and 379 letters), same solver. Given the heavy repetition of a few tokens, expect an unusually high IC regardless of whether the underlying system is a real cipher; report the number either way (rule 3). Cost $1-2.",
+  "2. (Restated 25 Sept 2026 by LANE B2 for NEAR.md row mccormick-1999.) Simple substitution of a vowel-dropped English: tools/family_run.py specs/mccormick-1999.json --family masc, run twice -- once with the default English corpus and once with --corpus pointing at a vowel-dropped English corpus built from tools/data (vowels removed word-internally, word-initial vowels kept); each run's control is built by the tool at N=746 and the spec's K, 3 seeds, gate 0.6; report control recovery and target judge line side by side for both corpora, plus the test-1 controls' numbers for reference. Cost $5, Sonnet. (Earlier wording, kept: 2. Index-of-coincidence and letter-frequency test on the folded (letters-only) text against English, with a matched control: synthetic English plaintext passed through the same 'strip non-letters, keep the token structure' folding at the same N (367 and 379 letters), same solver. Given the heavy rep...)",
   "3. Treat NCBE (and other frequent tokens) as candidate code-words in a small personal nomenclator and attempt a constrained substitution search using only the token vocabulary actually present (not a full 26-letter MASC), scored by word-cover against English after the substitution -- this is the FBI/ACA's own presumed approach and failed publicly, so expect a negative; report it as such rather than re-running it uncritically. Cost $2-3."
  ],
  "matched_control": "not yet run; test 2 above proposes the design (synthetic English plaintext, same folding, same N, same solver)",
@@ -65,12 +65,42 @@
   "date": "25 Sept 2026",
   "method": "specs/cheap-tests/mccormick-1999/run_test1.py (LANE B2 worker bMCC): catalogued every repeated token (2+ letters, split on any non-letter char) across both notes with position/count, plus a substring-occurrence count for the top 20 (specs/cheap-tests/mccormick-1999/top20_tokens.tsv); computed vowel share, share of letters covered by a repeated n-gram (n=3..6), and IC on the letters-only fold, combined N=746 (note1=367, note2=379), against 3-seed matched controls at the same N cut from tools/data/pg1661_holmes.txt (no network fetch): (A) real English prose, (B) the same English with vowels dropped, (C) the same English letters shuffled. No decipherment attempted.",
   "target_vs_controls": {
-   "vowel_share": {"notes": 0.2453, "control_A_prose": 0.3794, "control_B_novowel": 0.0, "control_C_shuffled": 0.3794},
-   "ngram_coverage_n3": {"notes": 0.8432, "control_A_prose": 0.7458, "control_B_novowel": 0.7444, "control_C_shuffled": 0.4124},
-   "ngram_coverage_n4": {"notes": 0.6609, "control_A_prose": 0.4688, "control_B_novowel": 0.3427, "control_C_shuffled": 0.0371},
-   "ngram_coverage_n5": {"notes": 0.4678, "control_A_prose": 0.3096, "control_B_novowel": 0.1644, "control_C_shuffled": 0.0},
-   "ngram_coverage_n6": {"notes": 0.2828, "control_A_prose": 0.2525, "control_B_novowel": 0.0916, "control_C_shuffled": 0.0},
-   "ic": {"notes": 0.08927, "control_A_prose": 0.0674, "control_B_novowel": 0.0823, "control_C_shuffled": 0.0674}
+   "vowel_share": {
+    "notes": 0.2453,
+    "control_A_prose": 0.3794,
+    "control_B_novowel": 0.0,
+    "control_C_shuffled": 0.3794
+   },
+   "ngram_coverage_n3": {
+    "notes": 0.8432,
+    "control_A_prose": 0.7458,
+    "control_B_novowel": 0.7444,
+    "control_C_shuffled": 0.4124
+   },
+   "ngram_coverage_n4": {
+    "notes": 0.6609,
+    "control_A_prose": 0.4688,
+    "control_B_novowel": 0.3427,
+    "control_C_shuffled": 0.0371
+   },
+   "ngram_coverage_n5": {
+    "notes": 0.4678,
+    "control_A_prose": 0.3096,
+    "control_B_novowel": 0.1644,
+    "control_C_shuffled": 0.0
+   },
+   "ngram_coverage_n6": {
+    "notes": 0.2828,
+    "control_A_prose": 0.2525,
+    "control_B_novowel": 0.0916,
+    "control_C_shuffled": 0.0
+   },
+   "ic": {
+    "notes": 0.08927,
+    "control_A_prose": 0.0674,
+    "control_B_novowel": 0.0823,
+    "control_C_shuffled": 0.0674
+   }
   },
   "reading": "the notes' repeated-n-gram coverage and IC sit above all three controls at every n (3..6), including above the vowel-dropped shorthand control; vowel share sits below real English prose, closer to (but distinctly above) the vowel-dropped control's zero. This is consistent with the source's own stated hypothesis (heavy reuse of a small token vocabulary -- NCBE, the -RSE family, WLD -- more like a personal shorthand or nomenclator than a 1:1 substitution of ordinary English letter frequencies), not a decipherment or a claim about what the tokens mean (rule 10). Substring occurrences of NCBE (18, vs 11 as a delimiter-isolated token) confirm it also appears embedded inside longer undelimited runs, close to the source's 'roughly 20 times' note.",
   "top20_tokens_file": "specs/cheap-tests/mccormick-1999/top20_tokens.tsv",
