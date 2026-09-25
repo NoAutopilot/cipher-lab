@@ -213,6 +213,77 @@ f221 -- failed twice each = 6 requests for those three, so 35 at 200px; + 1 re-f
 >=1.5s apart, UA `cipher-lab research script (contact via repository)`. No 403/429/challenge seen (all
 failures were `Connection reset by peer`, not a block signal). No other host. Status stays `open`.
 
+## Y4b: sweep (25 Sept 2026, LANE R6)
+
+LANE R6 worker Y4b (Sonnet, cap $4/45 min), continuing worker Y4's box. Cheap signals tried first, per brief:
+
+**Manifest width/height and labels: no discriminating signal.** Pulled width/height for all 316 canvases from
+the cached manifest (`sources/gallica-manifests/btv1b9000759b.json`) and compared the known-manuscript set
+(f306-f313, all ~9700-9980 x 6420-6460 px, full double-page-opening scans) against the known-print set (worker
+P's f130/f137/f144/f250/f300 and worker T's 29 step-10 samples): both classes span the same size range
+(~6400-9990 wide, two clusters -- one ~9800-9990x6420-6480 for full openings, one ~3600-6800x3800-4700 for
+narrower/cropped scans -- and BOTH manuscript and print canvases fall in both clusters). Labels are uniformly
+`NP` (already established by worker O). This recueil's scanning does not let page size or label distinguish
+manuscript from print; dropped as a signal.
+
+**Finding aid folio: no new route found.** Re-read `cc138146`'s item list; the "P. 249" citation for our item is
+already established (worker P) not to match the physical ink-stamp pagination at that predicted canvas. No
+further finding-aid detail (item order, neighbouring items' own page citations) narrows the canvas beyond what
+worker P and Y4 already logged.
+
+**Low-resolution probe sweep (step 2/3).** With those two cheap signals exhausted, ran an offset lattice at
+300px to fill the gaps worker T's step-10 (and Y4's step-30 gap check) left unswept: round 1, canvases
+{5,11,25,35,45,55,65,85,95,115,125,131,135,145,155,165,175,195,205,225,235,255,265,285,290,292,295,315} (29
+canvases, offset-5 from the existing lattice); round 2, the midpoints of the remaining gaps
+{3,13,23,33,43,53,63,73,83,93,103,113,123,133,139,148,158,168,178,188,198,208,220,221,233,243,253,263,273,283}
+(30 canvases, bisecting every gap of width >=8 and every other gap of width 5); round 3, a close bracket around
+a manuscript hit at f283, {276,277,278,279,280,282,284,286,287,288,289} (11 canvases). Combined with the four
+prior workers' passes, checked canvases now run at roughly every 2-3 across the whole volume rather than every
+10, closing the gap width that let f306-313 slip past worker T's original step-10 sample. Full per-canvas
+classification for every canvas checked to date (this pass and the three before it), in
+`canvas_sweep.tsv` (canvas, print/manuscript/other, note) -- 129 of 316 canvases now checked (up from ~68),
+187 still unchecked, listed in that file's complement.
+
+**Result: still not the target, but one new manuscript find.** All 69 canvases newly checked this pass are
+printed pamphlets, blank continuations of the same "Oraison funebre...Dauphin" run Y4 already found, or (f5) a
+handwritten **archivist's collation note**, not a content leaf: "Volume de 624 Pages, plus les feuillets A,B
+preliminaires + K 222bis. Manquent les cotes 19-25, 77-84, 311-338, 477-478, 567, 568. Les feuillets 78, 509,
+219, 221, 561, 615 sont blancs. 17 Septembre 1889." This gives the volume's real page-numbering scheme (as of
+an 1889 recollation) and which cotes/leaves are missing or blank -- 249 (the finding aid's cited page for our
+item) is not among the missing ranges, so the citation should point to a real leaf; the note doesn't by itself
+explain why f137 (stamped "249" per worker P's calibration) shows unrelated print instead, but is consistent
+with the finding aid's "P. xxx" predating or postdating this 1889 renumbering rather than being simply wrong.
+
+One genuine new manuscript find, **not the target**: **f282-283**, a two-canvas insert (bounded print-print on
+both sides: f281 print, f284 print), continuous French legal-hand prose across the opening -- a "recherche de
+noblesse" case file concerning the bailliage de Forez and l'élection de Montbrizon (names Ferrand, Barbot,
+"Garçon Kiral", Prata, Duquesne, and others cited as precedents back to the 1640s-1690s), dated **"le vingt
+cinq février mil sept cent six"** (25 February 1706), endorsed "Pour copie" and signed "De Boiscoujon". No
+cipher, no numerals, wrong decade (1706, not the target's 14 Jan 1713), unrelated subject (a nobility-title
+dispute, not diplomatic correspondence to Pontchartrain). Native crops not fetched (not the target; low-res
+probes and one 1600px confirmation read only, per the "no crops until pinned" rule). This is the volume's
+**third** confirmed manuscript block (after f282-283 here and f302-313 from Y4's pass), all of them short (2-12
+canvases) and all so far either legal/administrative (Forez, 1706) or naval/administrative (Pontchartrain's
+Marine correspondence, 1713) -- none diplomatic, none dated January, none carrying a cipher.
+
+**Not pinned.** Status stays `open`; not blocked. Requests this section: gallica.bnf.fr 87 (1 wasted reachability
+test at full res to /dev/null, not counted as a canvas check; round 1: 29 canvases at 300px + 8 one-time
+retries = 37, all but f221 recovered; round 2: 30 canvases at 300px + 4 retries = 34, all recovered including
+f221; round 3: 11 canvases at 300px + 1 retry = 12, all recovered; plus 2 higher-res (1200px/1600px)
+confirmation fetches of f5 and f282/f283), all >=2s apart, UA `cipher-lab research script (contact via
+repository)`. All failures were transient `Connection reset by peer`/timeout (000), recovered on the single
+permitted retry except f221 in round 1 (recovered on a fresh attempt in round 2). No 403/429/challenge. No
+other host. No subagents. Probe images kept in scratchpad only (not committed) except where noted; `canvas_sweep.tsv`
+committed as the handoff artifact so no future worker re-probes these 129 canvases.
+
+**For the next worker:** 187 canvases remain unchecked (listed by exclusion from `canvas_sweep.tsv`), in runs
+now no wider than ~4-5 canvases each -- a further bisection pass (or, given how cheap the remaining volume
+looks based on 129/316 sampled, a full sequential eye-check of what's left) is the reliable way to either find
+the Paget letter or rule it out of this ark entirely. Given three short manuscript blocks found so far, none
+matching, consider also whether "Lettre en partie chiffrée de Paget" might sit in one of the still-unseen runs
+adjoining a print-pamphlet boundary (both confirmed manuscript inserts, f282-283 and f302-313, sit right at
+such boundaries) rather than at random.
+
 ## Y4: leaf located (25 Sept 2026, LANE R6)
 
 **Not located.** LANE R6 worker Y4 (Sonnet, cap $4/40 min). Picked up worker T's lead ("the volume's few
