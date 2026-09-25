@@ -1,0 +1,15 @@
+PX-SCDICT (Sonnet, cap $6 as a stall alarm, at most 2 subagents). Job: find copy-free dictionary and book codes -- cipher letters or key sheets whose key names a printed dictionary or book. Kind: scout (never solves, never promotes). Parent: LANE PX orchestrator session_01KapVpHVzNpnnQce5C8c3LY. Read the lane COMMON (.claude/briefs/runs/2026-09-25-lane-px-COMMON.md) first.
+
+Why: the Linhares key (ciphers/antt-linhares-chave, read its NOTES.md "Chave" and BOOK.md sections; not yours to work) was a dictionary code whose book was identified from the key's worked example (Vieyra 1809, 12/12 pairs page and column exact). That test is cheap wherever a key sheet or a known-plaintext group survives. Find more.
+
+Sources, in order (official APIs, good-citizen rule, >=1.5 s per host):
+1. This repository first (free): grep QUEUE.md, CATALOG.md, LANDSCAPE.md, UNSOLVED-SURVEY.md, sources/ and every ciphers/*/NOTES.md for dictionnaire, diccionario, dicionario, dictionary, lexicon, "book code", "book cipher", page/column/line, Entick, Johnson, Webster, Boyer, Vieyra, Sobrino, Nugent. List rows already there with their status; do not re-list them as new, but note any that is copy-free and unread.
+2. Gallica SRU (gallica.bnf.fr/SRU, manuscripts: dc.type manuscrit) and BnF Archives et manuscrits: chiffre + dictionnaire, "clef" + dictionnaire, "chiffre sur le dictionnaire".
+3. BNP Biblioteca Nacional Digital (purl.pt / bndigital.bnportugal.gov.pt) and the BNP catalogue: cifra + dicionario/diccionario.
+4. Europeana API (api.europeana.eu, key "api2demo"): cipher/chiffre/cifra/cijfer + dictionary words, TYPE:IMAGE or TEXT.
+5. Nationaal Archief / archieven.nl open search: cijfer + woordenboek.
+6. One WebSearch pass (at most 8 queries) for published descriptions of dictionary codes in diplomatic, military or commercial correspondence 1700-1900 whose manuscript is online.
+For each candidate: the holding and shelfmark, date, sender/recipient, what the key says (quote the rule and any worked example), the dictionary or book it names or implies (title, edition, language), candidate editions online (archive.org / Google Books / HathiTrust id), whether a known-plaintext group or worked example exists to test against, and the image URL tested (copy-free = full-size images viewable online now).
+
+Output: append rows to QUEUE.md under "## Portuguese holdings and dictionary codes (LANE PX, 25 Sept 2026)" (create it at the end of the file if absent; the DigitArq scout PX-SCDIGI3 writes to the same section, so rebase immediately before editing and number your rows PX-D01, PX-D02 ... to avoid colliding with its PX-NN rows). Columns: Row | Holding / shelfmark | Date | Description | Key rule and book named | Candidate editions online | Test material (worked example / known groups) | Image URL tested | Copy-free | Kind. Plus a short method paragraph (queries and totals) and the in-repo rows found in step 1 as a list.
+Touch only QUEUE.md (that section) and ROOM.md. No ciphers/ folder, no check-solved, no book testing, no decoding. Report: rows found, copy-free count, rows with test material, requests per host.
