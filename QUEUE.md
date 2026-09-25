@@ -6158,3 +6158,81 @@ the brief's <=55 cap. No other host used this pass (no WebSearch, no DECODE, no 
 
 No ciphers/ folder created, no nomination posted (scouts don't solve or promote): this pass's one digitized hit
 was eye-confirmed not to be a cipher, and the three new finds are all undigitized copy-order leads.
+
+## Key reuse candidates (LANE KX, 25 Sept 2026)
+
+Job 2 of LANE KX (KX-OFFICE): every key table on disk mapped to its office (sender/recipient, post, years,
+archive) in `KEY-OFFICES.tsv` (49 key files across 29 target folders), then a repo-only search for unread cipher
+letters by the same sender, recipient or post within the key's years +/-3, or the same volume's neighbouring
+folios. Method: repository lists only (QUEUE.md, POOLS.tsv, CATALOG.md, UNSOLVED-SURVEY.md, sources/decode,
+sources/wvo, sources/huygens, sources/cryptiana, sources/solver-diffs, and NOTES.md "sibling"/"more under this
+key" sections); no scout sweep. Most offices in `KEY-OFFICES.tsv` turned out to already be worked exhaustively by
+earlier lanes (LANE N4 scKEYS/csKSa/csKSb for the Nevers-Revol cluster, LANE G2 for Brienne/Servien sibling
+volumes, LANE LX for Linhares maco 86, LANE T/W for Thurloe, LANE S/W2 for the two Huntington runs) -- see
+"already listed" below. Only two genuinely new leads survived that check (KX-01, KX-02).
+
+**Already listed (no new row; naming the existing row/link so the connection is on record):**
+- fr3985-nevers-revol-1593/key.tsv, fr3986-nevers-revol-1593/key.tsv, fr3987-nevers-revol-1593/key.tsv (Tomokiyo
+  cipher no.60, Nevers's Rome-embassy office, Aug 1593-May 1594) already read against every unread letter in the
+  same office by LANE N4 scKEYS/csKSa/csKSb: rows KS-01..KS-07 (`sources/solver-diffs/2026-09-24-keys-vs-siblings.tsv`,
+  this file's "Keys index vs unread siblings" section above) cover fr.3985 (2 leaves), fr.3986, fr.3987, fr.3989,
+  fr.3990 (all open, target folders already exist) and fr.3983 (found-solved, contemporary decipherment on the
+  leaf). Nothing left in this office for KX to add.
+- fr5160-letellier-1653/key_1659.tsv, key_brienne_1647.tsv, key_brienne_1651.tsv and
+  clair1067-brienne-poland-1646/key_1646.tsv, key_brienne_1647.tsv, key_brienne_1651.tsv (Lomenie de Brienne's
+  own Secretaire d'Etat cipher, reused across both target folders): LANE G2's "Sibling volumes" search
+  (`ciphers/fr5160-letellier-1653/NOTES.md`, `sources/solver-diffs/2026-09-24-lane-g2-servien.tsv`) already
+  covered this office's 1653-1661 window against archivesetmanuscrits.bnf.fr and Gallica SRU and came back
+  negative for an explicit cipher note, naming the same leads KX-XMATCH/KX-OFFICE would otherwise propose
+  (Melanges de Colbert 26 part III, fr.20660, fr.20563, fr.23203-04, NAF 6972-7328) -- see KX-01 below, which
+  restates only the two items with an open image route, since the rest are not digitised or not located.
+- antt-linhares-chave/key.tsv, key_example.tsv (Linhares maco 86 dictionary cipher): LANE LX (LX-TR, LX-SIB,
+  LX-SIB2, LX-SIB3, `ciphers/antt-linhares-chave/NOTES.md` "More under this key"/"Maco 86 eye-check" sections)
+  already eye-checked all 21 items of maco 86 (604 images) for sibling ciphertext -- negative in every item
+  opened so far; the folder's own NOTES.md tracks what remains unopened. Nothing for KX to add here.
+- dupuy452-carpi-1520/key.tsv (Carpi/Raince, 1520-1528 fonds): already QUEUE row M6 above, which itself names
+  the office's own sibling lead (4 "Dechiffrement" items, ff.56/60/72/76, 1535 Rome dispatches, same volume).
+- fr20140-danzay-1557/key.tsv (Charles de Danzay, French resident ambassador to Denmark): the office's other
+  letter, fr2812-danzay-1578 (Danzay to Henri III, 28 Feb 1578, within years+21 -- outside the +/-3 window but
+  the only other Danzay item on disk), is already `found-solved` (`ciphers/fr2812-danzay-1578/NOTES.md`).
+- sforza-maino-1446/key.tsv (Milanese ducal chancery, Francesco Sforza): italien 2245 ("Correspondance des
+  Sforza" with an appended cipher catalogue) is already noted as tangential/not scored (QUEUE.md line ~577-580,
+  the Italian-archives sweep); the one named unread-and-undigitised lead in the same office (Albrico Maletta to
+  Francesco Sforza, ASMi Potenze Estere, 26 Jul 1455) is already tracked by a competitor
+  (dbourdeau/cyphersolver's own `oldest/CANDIDATES.md`) and excluded per rule 1 -- not copy-free regardless.
+  sforza-maino-1446 itself is closed-negative (QUEUE.md line ~579).
+- huntington-blathwayt-madrid-1728/key.tsv (Blathwayt Papers Addenda, Madrid/Port Ste Marie 1725-1729): the
+  office's other unread items in the same run (mssBLA 184, 187, 191(a)) are already inside this same target
+  folder's own working set (`ciphers/huntington-blathwayt-madrid-1728/NOTES.md`), not a separate candidate.
+- huntington-luzerne-destouches-1781/key.tsv, key_tomokiyo.tsv (La Luzerne/Destouches, 1781): the office's key
+  source (mssDE 37, mssDE 55, already deciphered) is already named inside the same QUEUE row (U1, line ~1067)
+  that this target folder itself came from.
+- trew-posthius-1614-18/key.tsv, key_1618.tsv (UB Erlangen Trew Briefsammlung, Posthius-Eysenmenger, 1614-1618):
+  the same archive/collection already has a second target folder, trew-schellhammer-1653 (Schellhammer to
+  Volckamer I, 10 Dec 1653), open independently; no unread item within +/-3 years of 1614-1618 found in the
+  repo's lists beyond what that folder already tracks.
+- jan-van-nassau-1572-75, lodewijk-van-nassau-1573-74, willem-van-hessen-1567, gunther-van-schwarzburg-1561,
+  orange-nassau-1572, august-van-saksen-1561-64 (the William-of-Orange correspondence cluster): all seven keys
+  sit inside the WVO project, which already has its own cross-target tracking
+  (`sources/wvo/NOTES.md`, `sources/wvo/print-status-2026-09-24.tsv`) run by LANE R/LANE OX across many more
+  briefnrs than KX-OFFICE's repo-only pass could add; willem-van-hessen-1567's own siblings section (OX-WVH,
+  25 Sept 2026) already found and eye-checked briefnr 174 and 1069 this week. Deferred to that project's own
+  tracking rather than duplicated here.
+- huntington-blathwayt-madrid-1728 / huntington-luzerne-destouches-1781, rah-canada-1869 (RAH Sig. 9/6958):
+  the RAH cluster (N1 Morillo 1817-20, N2 Canada 1869, E1 Xiquena) is already cross-tracked in this file
+  (lines ~969, ~1637, ~3744, ~3769) with an explicit note that N1/N2 have *not* been checked against each
+  other's key material -- that check belongs to whichever lane already owns those rows, not a new KX row.
+
+**New candidate rows:**
+
+| id | item | key that may read it | why | images online | copy-free | existing check-solved verdict | owning lane |
+|---|---|---|---|---|---|---|---|
+| KX-01 | Loménie de Brienne, Secrétaire d'État aux Affaires Étrangères, outgoing despatches, juillet-décembre 1661 — BnF Mélanges de Colbert 26, part III | `ciphers/fr5160-letellier-1653/key_1659.tsv` / `key_brienne_1647.tsv` / `key_brienne_1651.tsv` (Brienne's own cipher, reused fr5160/clair1067) | same office (Brienne) and correspondence chain as fr.5160 (1653-1661), tail end of that volume's own date range; found by LANE G2's sibling-volume search, named there as the closest lead but never opened as an image | yes — digitised, ark `cc955062` (Gallica) | yes | none run; not check-solved, not nominated | R5 owns fr5761/Clairambault-adjacent French Secretary-of-State targets — flag for R5 or whichever lane next opens a French-chancery target |
+| KX-02 | Three Thurloe State Papers letters named in `ciphers/thurloe-printed/NOTES.md`'s handoff as "outside this lane, not started": Gen. Lockhart from Chauny, 19 June 1656 (vol.5 p.101, just above P14, coded numerals with short printed glosses); Nutley, Attorney General Prideaux, and Sir Benjamin Wright (vol.3, three further glossed large-number letters found by LANE T's s.12.6 pass) | none yet extracted — same printed-decipherment pattern as the P2-P24 rows already in `ciphers/thurloe-printed/`, so likely readable directly off the Birch 1742 print once located, no cryptanalytic key needed | same office (Thurloe's Secretary-of-State intelligence network) and print run (Birch 1742) as every P-row already tracked; all four appear to carry printed glosses per the same NOTES.md paragraph, so probably N0 once extracted, but never pulled into `index.tsv`/`<Pn>/ciphertext.txt` | yes — same cached djvu text already on disk (`sources/ia-fulltext/collectionofstat0{3,5}thur_djvu.txt`) | yes | none — not yet extracted or check-solved | thurloe-printed's own lane (LANE T, closed 24 Sept 2026) or LANE W per its "next owner" note |
+
+N keys mapped: 49 (across 29 target folders). O offices: 29 (one per target folder; several folders share an
+office across key variants). R candidate rows: 2 (KX-01, KX-02), both copy-free with images online. A links to
+already-listed rows/sections: 10 (Nevers-Revol KS-01..KS-07 cluster, Brienne/Servien LANE G2 search, Linhares
+LANE LX search, Dupuy 452 M6, Danzay fr2812, Sforza italien 2245 + Maletta lead, Huntington Blathwayt mssBLA
+184/187/191(a), Huntington Luzerne mssDE 37/55, Trew Briefsammlung sibling folder, WVO project cross-tracking,
+RAH cluster).
