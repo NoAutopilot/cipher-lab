@@ -181,7 +181,7 @@ this (check LEDGER.md); run bCYL; run bullet test 2 and rubin test 2 once parent
 no specs yet. Host notes: every Cipherbrain image sits on scienceblogs.de (one worker at a time); Gutenberg was LANE GOLD's
 today; an image-and-two-pass first test does not fit USD 3 with a subagent (bMOU 7.61), one pass with no subagent does.
 
-## LANE GOLD handoff (session_01DKDynpdEwZK5EokxtjCM3P, closed 25 September 2026 19:58 UTC at 438k context; GOLD2 starts here)
+## LANE GOLD handoff (session_01DKDynpdEwZK5EokxtjCM3P, closed 25 September 2026 19:57 UTC at 438k context; GOLD2 starts here)
 
 Standing lane on koehler-1944 then debosnys-1883 (brief `.claude/briefs/runs/2026-09-25-lane-gold-orchestrator.md`; owner amendment 16:51: Fable for tool/family design and the consolidator, cap $15; parent 18:18: families run through tools/family_run.py; NEAR.md koehler row is the lane's register). Both targets check-solved `open`, intake gate exit 0 (19:56). Orchestrator own cost about 8.7 dollars; workers 82.7 dollars over 13 sessions (one F: GOLD-4D).
 
