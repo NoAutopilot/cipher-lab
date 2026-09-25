@@ -75,6 +75,20 @@
     "fr2988_f9v.jpg": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525240150/f26/full/2000,/0/default.jpg"
    },
    "check": "f136r eye-checked: folio stamp 136, pencil docket 'Lettre en chiffre de Hierosme ...', letter+superscript-numeral cipher, 26 lines; fr2988 canvases per worker L's pin (offset k=8 below f31v), not eye-checked"
+  },
+  {
+   "fetched": "2026-09-25 20:44 UTC",
+   "by": "LANE ZX2 worker ZX2-GAL2 (session_01Wd3s3cqE9wUir6MYKfVe5v)",
+   "size": "2000px wide (IIIF default.jpg)",
+   "files": {
+    "fr20506_canvas273.jpg": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525047581/f273/full/2000,/0/default.jpg",
+    "fr20506_canvas274.jpg": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525047581/f274/full/2000,/0/default.jpg",
+    "fr20506_canvas277.jpg": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525047581/f277/full/2000,/0/default.jpg",
+    "fr20506_canvas278.jpg": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525047581/f278/full/2000,/0/default.jpg",
+    "fr20506_canvas279.jpg": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525047581/f279/full/2000,/0/default.jpg",
+    "fr20506_canvas280.jpg": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525047581/f280/full/2000,/0/default.jpg"
+   },
+   "check": "eye-checked, no transcription: canvas273 stamped folio '135' but blank apart from show-through offset of facing-page cipher text; canvas274 blank, unstamped (verso); canvas277 stamped '137', full page of cipher in the same hand/format as f136r-v, continues; canvas278 unstamped (verso), full page of cipher, continues; canvas279 stamped '138', cipher for its first third then a cancelled/scratched mark, then the sender's plain-script autograph signature 'Hiero[nim]o Ranzo' beside a red archival ink stamp -- the letter's natural end; canvas280 blank, unstamped (verso), only faint show-through of canvas279's text and signature. Named by canvas number rather than r/v because the visible stamps (135 on canvas273, 137 on canvas277, 138 on canvas279, none on the intervening canvases) do not by themselves establish which physical side is 'recto'."
   }
  ]
 }

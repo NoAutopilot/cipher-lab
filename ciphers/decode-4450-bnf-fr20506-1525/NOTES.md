@@ -217,3 +217,51 @@ key-recovery or novelty claim is made here.
 
 Requests this pass: github.com 1 (shallow clone `dbourdeau/cyphersolver`, depth 1, grepped for `vasto1527/`,
 not committed). No other hosts.
+
+## ZX2-GAL2: f.136 neighbours (25 Sept 2026, LANE ZX2)
+
+Worker ZX2-GAL2 (Sonnet). Per D2's own flagged follow-up ("check fr.20506's neighbouring canvases for a
+continuation before assuming the copy is deliberately partial"): fetched the 4 Gallica canvases after f136v
+(canvas 276) and the 2 before f136r (canvas 275) on ark `btv1b525047581`, at 600px first, then at native
+2000px once a continuation was confirmed. Gallica requests: 8 (6 canvases at 600px, all succeeded, plus 1
+connection-reset retry; then 6 at 2000px for native capture, plus 1 connection-reset retry), >=2s apart, UA
+`cipher-lab research script (contact via repository)`, no 403/429/altcha.
+
+**Yes, the copy continues -- for two more full leaves plus a signature page, then it ends.** Eye-checked, no
+transcription:
+
+- **canvas 273** (folio stamp "135" visible top right): blank apart from faint show-through offset of the
+  facing page's cipher text (mirror image) -- not a content leaf.
+- **canvas 274**: blank, no stamp visible (the verso of 135) -- not a content leaf.
+- canvas 275 = f136r, canvas 276 = f136v: already on disk (the letter's first two written sides, per the
+  existing D1/D2 sections above).
+- **canvas 277** (folio stamp "137"): a full page of cipher in the identical hand and letter+superscript-
+  number format as f136r/f136v -- the copy continues.
+- **canvas 278** (unstamped, the verso of 137): another full page of the same cipher, continues.
+- **canvas 279** (folio stamp "138"): cipher for roughly its first third, then a cancelled/scratched mark,
+  then a shorter block, then **the sender's own plain-script autograph signature, legible as "Hiero[nim]o
+  Ranzo,"** next to a later red archival ink stamp (not a wax seal) -- this is the letter's natural end, not
+  a cut-off.
+- **canvas 280** (unstamped, the verso of 138): blank, only a faint show-through offset of canvas 279's last
+  lines and the signature.
+
+**This resolves D2's open question.** D2 found the transcribed portion (f136r-v, 749 tokens) stopped at
+witness index ~752 of 1009 and could not say whether "the rest of the copy is lost, was never made, or sits
+on an unindexed neighbouring leaf of fr.20506." It sits on the neighbouring leaves: the copy is not
+truncated or lost, it simply continues onto f137r-v and about a third of f138, ending with Ranzo's own
+signature exactly where Bourdeau's `fr.2988` witness transcript itself ends (1009 tokens, ff.9-10) -- i.e.
+this fr.20506 copy very likely runs the letter's full length across f136-138, not just the first half
+Tomokiyo's one-line catalogue note ("f.136, a copy of BnF fr.2988, f.9") might suggest. A future transcription
+pass now has three more content-bearing sides (137r, 137v, ~1/3 of 138r) to align against the rest of
+Bourdeau's `ranzo_c0*.txt` witness (indices ~752-1009) that D2 did not reach. **No transcription attempted
+here** (out of this brief's scope); native-resolution images fetched to `images/` (`fr20506_canvas273.jpg`
+through `fr20506_canvas280.jpg`, 2000px IIIF `default.jpg`) and logged in `images/manifest.json`'s
+`gallica_natives` array. Files named by canvas number rather than asserted recto/verso, since the visible
+folio stamps (135, 137, 138) do not by themselves establish which physical side is which within a pair.
+
+Status unchanged: **open**, not `partial` or `solved` -- this is a new extent for the same undeciphered
+Ranzo/Garbino system, not a reading. Folder size after this fetch: still well under the 30 MB cap (about
+6 MB in `images/`).
+
+Grades: none (no tokens read, no decipherment). Requests this section: gallica.bnf.fr 8 (see above). No
+other host, no subagents.
