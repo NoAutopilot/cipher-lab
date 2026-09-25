@@ -1,0 +1,10 @@
+token_index	block	corrected_raw_token	grade	note
+4	A		S	c4l8z -> calez, combines with token 3 g7n(gon) = "goncalez" (period spelling of Gonzalez); real name, dictionary-confirmed (VX-RD04)
+9	A	d8st7.	S	glyph re-read (VX-RD04, native-res crop): the 4th character is a long-s/t ligature, not 'f' -- committed raw_token 'd8sf7.' misread it; corrected token decodes to 'desto.' (of/from this), a common real word
+20	A		S	8n234r -> enuiar (enviar, to send) under the established key with 2=u/v folded; a real, contextually apt word ("la carta para enviar" = the letter to send); no segmentation problem after all -- the alternate 5-char reading noted in VX-CT03 does not decode as well
+60	A		S	d37s. -> dios. (Dios, God); real word, matches VX-CT03's own dictionary-confirmation list
+61	A		M	gg238 -> gguie (guie/guie, "guie" = may [God] guide); doubled initial g is plausible cursive flourish/doubled-letter, not a segmentation error; contextually fits "dios gguie como sea" = "Dios guie como sea" (God guide, however it may be)
+5	A		M	h4l4d7 -> halado (hallado, found/met with); plausible one-l period spelling, not yet independently glyph-confirmed this pass
+66	A		M	3 -> i; single-digit token, plausibly the conjunction "y" (period spelling "i")
+67	A		S	n7s -> nos (us); real word
+68	A		M	c7n23nc8 -> conuince; close to conviene/convence (it suits/convinces) allowing one letter of period-spelling slack; not independently glyph-confirmed this pass

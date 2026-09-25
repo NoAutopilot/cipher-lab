@@ -1,0 +1,69 @@
+block	token_index	raw_token	raw_used	value	grade	orig_confidence	note
+A	1	s8cr8t4r37	s8cr8t4r37	secretario	S	medium	
+A	2	c3sc7	c3sc7	cisco	S	high	
+A	3	g7n	g7n	gon	S	high	
+A	4	c4l8z	c4l8z	calez	S	low	"c4l8z -> calez, combines with token 3 g7n(gon) = ""goncalez"" (period spelling of Gonzalez); real name, dictionary-confirmed (VX-RD04)"
+A	5	h4l4d7	h4l4d7	halado	M	low	h4l4d7 -> halado (hallado, found/met with); plausible one-l period spelling, not yet independently glyph-confirmed this pass
+A	6	m236v8nqs	m236v8nqs	mui6venqs	I	low	
+A	7	85p8	85p8	e5pe	I	low	
+A	8	v4nc4s	v4nc4s	vancas	I	low	
+A	9	d8sf7.	d8st7.	desto.	S	low	glyph re-read (VX-RD04, native-res crop): the 4th character is a long-s/t ligature, not 'f' -- committed raw_token 'd8sf7.' misread it; corrected token decodes to 'desto.' (of/from this), a common real word
+A	10	d8sp2vs	d8sp2vs	despuvs	I	low	
+A	11	q28	q28	que	S	medium	
+A	12	s4l37	s4l37	salio	S	high	
+A	13	d8s3g28nc4	d8s3g28nc4	desiguenca	S	high	
+A	14	3	3	i	S	high	
+A	15	n7	n7	no	S	high	
+A	16	h8	h8	he	S	high	
+A	17	p7d3d7	p7d3d7	podido	S	medium	
+A	18	4ll4r	4ll4r	allar	S	high	
+A	19	p4r4	p4r4	para	S	medium	
+A	20	8n234r	8n234r	enuiar	S	low	"8n234r -> enuiar (enviar, to send) under the established key with 2=u/v folded; a real, contextually apt word (""la carta para enviar"" = the letter to send); no segmentation problem after all -- the alternate 5-char reading noted in VX-CT03 does not decode as well"
+A	21	m3smas	m3smas	mismas	S	medium	
+A	22	p4l4br4s	p4l4br4s	palabras	S	high	
+A	23	q28	q28	que	S	medium	
+A	24	s7n	s7n	son	S	high	
+A	25	p4rt3c2l4r8s	p4rt3c2l4r8s	particulares	S	medium	
+A	26	3mas	3mas	imas	S	high	
+A	27	p4r4	p4r4	para	S	medium	
+A	28	s2c7nd3c37n	s2c7nd3c37n	sucondicion	S	high	
+A	29	q28	q28	que	S	medium	
+A	30	p7r	p7r	por	S	medium	
+A	31	st6l7	st6l7	st6lo	I	low	
+A	32	4883	4883	aeei	S	high	
+A	33	c8dd23	c8dd23	ceddui	I	low	
+A	34	d8	d8	de	S	high	
+A	35	v7mgdr,	v7mgdr,	vomgdr,	I	low	
+A	36	d8	d8	de	S	high	
+A	37	d7nd8	d7nd8	donde	S	medium	
+A	38	h8	h8	he	S	high	
+A	39	c7l8g3d7	c7l8g3d7	colegido	S	medium	
+A	40	q28	q28	que	S	medium	
+A	41	c24nd7	c24nd7	cuando	S	high	
+A	42	s8	s8	se	S	high	
+A	43	prv2837	prv2837	prvueio	I	low	
+A	44	8l	8l	el	S	medium	
+A	45	d8s3g28nc4	d8s3g28nc4	desiguenca	S	high	
+A	46	8l	8l	el	S	high	
+A	47	d2q28	d2q28	duque	S	high	
+A	48	g23c4	g23c4	guica	S	high	
+A	49	c833	c833	ceii	I	low	
+A	50	r34	r34	ria	I	low	
+A	51	4lg7	4lg7	algo	S	medium	
+A	52	8n	8n	en	S	high	
+A	53	7rd8n	7rd8n	orden	S	medium	
+A	54	4	4	a	S	high	
+A	55	8l4y	8l4y	elay	I	low	
+A	56	h4l4nd7	h4l4nd7	halando	S	high	
+A	57	d8'25,	d8'25,	de'u5,	I	low	
+A	58	3l4s	3l4s	ilas	S	high	
+A	59	c7ns2clqs,	c7ns2clqs,	consuclqs,	I	low	
+A	60	d37s.	d37s.	dios.	S	low	d37s. -> dios. (Dios, God); real word, matches VX-CT03's own dictionary-confirmation list
+A	61	gg238	gg238	gguie	M	low	"gg238 -> gguie (guie/guie, ""guie"" = may [God] guide); doubled initial g is plausible cursive flourish/doubled-letter, not a segmentation error; contextually fits ""dios gguie como sea"" = ""Dios guie como sea"" (God guide, however it may be)"
+A	62	c7m7	c7m7	como	S	high	
+A	63	s8a	s8a	sea	S	medium	
+A	64	s8v	s8v	sev	S	high	
+A	65	233r	233r	uiir	I	low	
+A	66	3	3	i	M	low	"3 -> i; single-digit token, plausibly the conjunction ""y"" (period spelling ""i"")"
+A	67	n7s	n7s	nos	S	low	n7s -> nos (us); real word
+A	68	c7n23nc8	c7n23nc8	conuince	M	low	c7n23nc8 -> conuince; close to conviene/convence (it suits/convinces) allowing one letter of period-spelling slack; not independently glyph-confirmed this pass
