@@ -55,6 +55,45 @@ def main():
     assert all(r['marks'] == ('o' if r['box'] in marked else '') for r in B)
     assert len(os.listdir(os.path.join(d, 'strips'))) == 6   # 3 lines x 2 parts
 
+    # --exclude-page: a second, UNLABELLED copy of the page (page p9) classified against p1's labels.
+    # Default kNN lets p9's own boxes (all '_' since unlabelled) vote for each other; --exclude-page must not.
+    import shutil
+    d3 = tempfile.mkdtemp()
+    run('segment', '--page', f'p1={p}', '--page', f'p9={p}', '--out', d3)
+    run('cluster', '--out', d3, '--k', '6', '--k-marks', '1', '--pca-scale', 'shared')
+    S3 = list(csv.DictReader(open(os.path.join(d3, 'signs.tsv')), delimiter='\t'))
+    C3 = {r['id']: r['cluster'] for r in csv.DictReader(open(os.path.join(d3, 'clusters.tsv')), delimiter='\t') if r['kind'] == 'sign'}
+    marked3 = {s['sid'] for s in S3 if s['marks']}
+    # label only p1's boxes, per box (override), leave every cluster label '_' so p9 is unlabelled
+    over = {s['sid']: ('X' if s['sid'] in marked3 else 'B') for s in S3 if s['page'] == 'p1'}
+    lab3 = {'signs': {c: '_' for c in set(C3.values())}, 'marks': {'0': 'o'}, 'override': over}
+    json.dump(lab3, open(os.path.join(d3, 'labels.json'), 'w'))
+    bx_in = os.path.join(d3, 'boxes_in.tsv')
+    run('classify', '--out', d3, '--labels', os.path.join(d3, 'labels.json'), '--page', 'p9', '--tsv', bx_in,
+        '--knn', '3', '--pca-scale', 'shared')
+    Bin = list(csv.DictReader(open(bx_in), delimiter='\t'))
+    assert len(Bin) == 36
+    n_noise_in = sum(r['code'] == '_' for r in Bin)
+    bx_ex = os.path.join(d3, 'boxes_ex.tsv')
+    run('classify', '--out', d3, '--labels', os.path.join(d3, 'labels.json'), '--page', 'p9', '--tsv', bx_ex,
+        '--knn', '3', '--pca-scale', 'shared', '--exclude-page')
+    Bex = list(csv.DictReader(open(bx_ex), delimiter='\t'))
+    assert len(Bex) == 36
+    assert all(r['code'] == ('X' if r['box'] in marked3 else 'B') for r in Bex), [(r['box'], r['code']) for r in Bex if r['code'] == '_']
+    # (p9 is a pixel copy of p1, so each p9 box has a labelled twin at distance 0 and the default kNN happens to be
+    # right here too; the real-page symptom -- an unlabelled page voting '_' for itself -- needs a page with no twins.
+    # The check above is that --exclude-page classifies a wholly unlabelled page correctly from other pages' boxes.)
+    assert n_noise_in >= 0
+    # a page with nothing else to vote with must fail loudly, not silently classify against itself
+    d4 = tempfile.mkdtemp()
+    run('segment', '--page', f'p1={p}', '--out', d4)
+    run('cluster', '--out', d4, '--k', '6', '--k-marks', '1', '--pca-scale', 'shared')
+    json.dump(lab, open(os.path.join(d4, 'labels.json'), 'w'))
+    rc = subprocess.run([sys.executable, TOOL, 'classify', '--out', d4, '--labels', os.path.join(d4, 'labels.json'),
+                         '--page', 'p1', '--tsv', os.path.join(d4, 'b.tsv'), '--knn', '3', '--pca-scale', 'shared',
+                         '--exclude-page'], capture_output=True, text=True)
+    assert rc.returncode != 0 and 'no boxes of any other page' in (rc.stderr + rc.stdout), rc
+
     # merge-vgap: two dust specks far apart vertically, same x-range, no other line nearby --
     # must NOT be chained into one giant box (the fr3151-seure-1558 f75L bug, 24 Sept 2026).
     d2 = tempfile.mkdtemp()

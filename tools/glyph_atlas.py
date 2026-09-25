@@ -4,7 +4,7 @@
   python3 tools/glyph_atlas.py segment --page NAME=IMAGE[@x0,y0,x1,y1] [--page ...] --out DIR [--debug]
   python3 tools/glyph_atlas.py cluster --out DIR [--k 60] [--k-marks 16]
   python3 tools/glyph_atlas.py atlas --out DIR --labels labels.json [--per 10] [--prefer PAGE]
-  python3 tools/glyph_atlas.py classify --out DIR --labels labels.json --page PAGE --tsv boxes.tsv [--strips DIR2]
+  python3 tools/glyph_atlas.py classify --out DIR --labels labels.json --page PAGE --tsv boxes.tsv [--exclude-page] [--strips DIR2]
   python3 tools/glyph_atlas.py crop --image PAGE.jpg --box x0,y0,x1,y1[:label] [--box ...] --dest DIR [--scale 4]
   python3 tools/glyph_atlas.py crop --out DIR --sid ID [--sid ...] --dest DIR2 [--scale 4]
 
@@ -41,6 +41,8 @@ classify Every box of one page against the labelled boxes of ALL pages (the atla
          unlabelled mark, joined by '|'). --strips DIR2 renders one image per line (cut in parts under --max-w px) with
          each box outlined and its position number printed under it, for passes that confirm or correct each box.
          A script-counted box list removes the "one pass has a sign the other lacks" disagreements (fr.2933, 24 Sept).
+         --exclude-page: a NEW, unlabelled page must not vote with its own boxes (they are each other's nearest
+         neighbours and all vote '_'); with the flag only other pages' boxes are candidates (debosnys c4, 25 Sept 2026).
 Test: python3 tools/tests/test_glyph_atlas.py (offline: a synthetic page with two sign shapes, one carrying a mark).
 """
 import argparse, collections, csv, json, os, sys
@@ -376,8 +378,20 @@ def cmd_classify(a):
     lab = np.array([over.get(r['sid'], L['signs'].get(cl.get(('sign', r['sid'])), '_')) for r in rows], dtype=object)
     mlab = {m: over.get(m, L['marks'].get(cl.get(('mark', m)), '_')) for m in mrows}
     tgt = [i for i, r in enumerate(rows) if r['page'] == a.page]
-    nn = NearestNeighbors(n_neighbors=a.knn + 1).fit(X)
-    d, ix = nn.kneighbors(X[tgt])
+    # --exclude-page: the target page's own boxes never vote. Without it, an unlabelled new page's boxes are each
+    # other's nearest neighbours and vote '_' for one another (debosnys c4a/c4b, 25 Sept 2026: 33%/45% noise, 6.5%/26%
+    # with the page excluded). Only boxes of OTHER pages (the labelled set) remain candidates.
+    if a.exclude_page:
+        cand = np.array([i for i, r in enumerate(rows) if r['page'] != a.page])
+        if len(cand) == 0:
+            sys.exit('--exclude-page: no boxes of any other page to vote with')
+        nn = NearestNeighbors(n_neighbors=min(a.knn, len(cand))).fit(X[cand])
+        d, ix = nn.kneighbors(X[tgt])
+        ix = cand[ix]
+    else:
+        cand = None
+        nn = NearestNeighbors(n_neighbors=a.knn + 1).fit(X)
+        d, ix = nn.kneighbors(X[tgt])
     out = []
     for n, i in enumerate(tgt):
         dd, ii = zip(*[(x, j) for x, j in zip(d[n], ix[n]) if j != i][:a.knn])
@@ -474,6 +488,9 @@ def main(argv=None):
     k.add_argument('--tsv', required=True, help='output box list')
     k.add_argument('--knn', type=int, default=5)
     k.add_argument('--pca-scale', choices=['unit', 'shared'], default='unit')
+    k.add_argument('--exclude-page', action='store_true',
+                   help="never let the target page's own boxes vote (kNN over other pages' boxes only); use it when the "
+                        "page is new and unlabelled, otherwise its boxes vote '_' for each other (debosnys c4, 25 Sept 2026)")
     k.add_argument('--strips', help='directory for per-line strips with box numbers')
     k.add_argument('--max-w', type=int, default=1800, help='cut a line strip into parts under this width (px)')
     r = sp.add_parser('crop')
