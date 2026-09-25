@@ -44,6 +44,8 @@ its state is only what it committed, so read its handoff and its lanes' ROOM lin
 6. **Tell the owner** only: a reading that passed its judge and a fresh-instance re-derivation, an AUDIT.md verdict,
    a second opinion that finds prior print, a credential or payment he must supply, or a blocker. For a real
    breakthrough also fire the routine "Cipher Lab: breakthrough alert (email)" with a plain, graded description.
+   Also match open `[LQ-<id>]` pull requests (tools/local_queue_runner_prompt.md, the owner's ChatGPT runner answering LOCAL-QUEUE.tsv rows): a short Sonnet worker copies each answer into the file the row names, sets the row `done <date>`, closes the PR without merging.
+
 7. **Next lane.** When lanes close and the window allows, open the next from open targets no lane holds (ROOM claims
    in the last six hours, and the other account's lanes, excluded).
 8. **Rolling quality audit.** Every two hours while lanes run, spawn a fresh Sonnet worker from
