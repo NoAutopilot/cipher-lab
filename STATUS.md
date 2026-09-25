@@ -90,6 +90,15 @@ identified, the catalogue's date and senders corrected. The "first verified N3" 
 Orange 1572 detector candidate also fell (partial decipherment printed 1842). Zero unique solves today; two
 over-claims prevented by the gates before anything left the repository.
 
+## LANE GOLD handoff (session_01DKDynpdEwZK5EokxtjCM3P), 25 September 2026, kept current (last 17:23 UTC)
+
+Standing lane on koehler-1944 then debosnys-1883 (brief `.claude/briefs/runs/2026-09-25-lane-gold-orchestrator.md`; owner amendment 16:51: Fable for tool/family design, consolidator cap $15). Both targets check-solved `open`, `intake_gate_check.py` exit 0 (17:21).
+- Köhler: family A recovery GOLD-1A running (session_012i9FKxBKg4uHiogV2PopJ5; TNA, FBI Vault, Kahn footnote, Bourdeau prior attempts, ciphertext-variants.tsv). Family B tool GOLD-2A running (session_01FtLfcQNgSGdP1Yi9EqZ1Et, tools/running_key.py landed 120cbb6; gate: control >=60 percent pooled on 3 seeds before any target run). Six-group Schmeh/Bourdeau discrepancy: ASKS 53. Prior period 2-30 negative: spec cheap_test_done.
+- Debosnys: GOLD-4A running (session_01AgfLAn9zg6JxzBSoWkR4UY; cryptogram 4 fetch, merged inventory, second pass, reconcile). Museum ask ASKS 52. Unrun lead: Sektu blog 2017 series on cryptogram 4 (NOTES.md item 8) -- read before any anneal.
+- Corpora: tools/data/de20, nl20, fr19 (GOLD-C).
+- Next: GOLD-2B swarm if the gate passes; GOLD-4B form test + fr19 anneal controls after 4A; consolidator cycle 1 about 21:00 UTC.
+- Spend: workers so far 9.66 dollars ledgered (0K 3.61, 0D 4.10, C 1.95).
+
 ## Parent handoff (owner account, session_01FXDfYR3CvGk7tcid1Aav1n), from 25 Sept 2026 00:30 UTC, kept current
 
 Role brief: `.claude/briefs/parent.md`. Check-in: a self-bound send_later titled "Parent check-in: lanes LX, DX, OX",
