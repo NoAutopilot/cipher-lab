@@ -7,3 +7,6 @@ anything?). Then propose at most five changes, each as a concrete diff to a temp
 or a tool, with the ledger rows that motivate it. Write RETRO-<date>.md at the repo root, commit and push.
 Do not apply the changes: the orchestrator applies the safe ones and puts the rest to the person. The
 routine's email carries the five proposals in plain words. + common tail.
+
+Near solves (25 Sept 2026): review every NEAR.md row -- has its named next step run since the last retrospective, with its
+control, and are the numbers in the row? A row that has not moved is a finding with the lane and the reason named.

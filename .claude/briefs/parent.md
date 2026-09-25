@@ -15,6 +15,10 @@ its state is only what it committed, so read its handoff and its lanes' ROOM lin
 
 ## Duties at every check-in
 
+0. **Near solves.** Read NEAR.md. A row untouched for 48 hours gets a worker or an ASKS row named in it; a row whose
+   target reads `closed-negative` is a rule-5 breach to reverse. Nothing leaves the register without the named next
+   step's numbers or a verifier class.
+
 1. **Rate limit.** `rate_limit_info` on yourself and on each lane orchestrator. BUDGETS.md scaling rule: `allowed`
    spawn freely; `allowed_warning` on any session means no new workers anywhere (running ones finish); `rejected`
    means every lane writes its handoff and stops. Post the state in ROOM.md when it changes.

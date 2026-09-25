@@ -1,5 +1,5 @@
 {
- "updated": "25 Sept 2026, 18:10 UTC",
+ "updated": "25 Sep 2026, 18:28 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -2126,6 +2126,50 @@
    "next": "None; update the session ids in the file whenever the parent hands over.",
    "link": "hub-seed/SUCCESSOR-PROMPT.md",
    "session": ""
+  }
+ ],
+ "near": [
+  {
+   "target": "espagnol142-mercy-1648",
+   "title": "Mercy, Brussels 1648: anneal beats its control by 167-181 points; reading exists (S 494, M 27) but fails the judge",
+   "next": "sibling letters in Espagnol 142 under the same code (pool), DECODE Brussels key series, second copy in print or Simancas",
+   "lane": "R6",
+   "touched": "25 Sept 2026 18:30"
+  },
+  {
+   "target": "fr2933-salviati-1525",
+   "title": "Salviati 1525: code+mark run sits between the 10% and 20% transcription-noise controls, not a negative",
+   "next": "error-tolerant code+mark model proven on the noise controls first; atlas re-pass on f.55v and f.57v",
+   "lane": "R6",
+   "touched": "25 Sept 2026 18:30"
+  },
+  {
+   "target": "koehler-1944",
+   "title": "Koehler 1944: running key inside one-time-key noise with a passed control; an uncatalogued FBI file in the NARA name index",
+   "next": "NARA RG 65 records request (owner), mixed-tableau and autokey variants, Kahn 1981 page read (owner)",
+   "lane": "GOLD",
+   "touched": "25 Sept 2026 18:30"
+  },
+  {
+   "target": "mccormick-1999",
+   "title": "McCormick notes: above English, vowel-dropped and shuffled controls on IC and n-gram cover",
+   "next": "spec test 2 against the same three controls",
+   "lane": "B2",
+   "touched": "25 Sept 2026 18:30"
+  },
+  {
+   "target": "pollaky-1865-1875",
+   "title": "Pollaky ads 3-4: IC inside the English control range",
+   "next": "second pass, then masc and columnar families through family_run.py",
+   "lane": "B2",
+   "touched": "25 Sept 2026 18:30"
+  },
+  {
+   "target": "antt-msliv0638-brochado-1712",
+   "title": "Brochado letter 134: fails the bucket control, but 19 of 70 tokens ride on codes seen 1-3 times",
+   "next": "more observations of the sparse codes from sibling letters under the same key",
+   "lane": "ZX (owner account)",
+   "touched": "25 Sept 2026 18:30"
   }
  ]
 }
