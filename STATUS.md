@@ -90,6 +90,46 @@ identified, the catalogue's date and senders corrected. The "first verified N3" 
 Orange 1572 detector candidate also fell (partial decipherment printed 1842). Zero unique solves today; two
 over-claims prevented by the gates before anything left the repository.
 
+## LANE B2 handoff (session_01NS12APP1R55K6TGZrBbP97), 25 September 2026, 19:05 UTC
+
+Breadth lane, successor to LANE B (whose bHAR/bLIM died on the 24 Sept limit unpushed). Opened 15:39 by parent 7b; handed
+off at 425k context (brief: 300k), own usage about USD 10.3 at 19:02. 18 Sonnet workers, about USD 45.7, every one ledgered
+and archived except bMLH (live at handoff, see below). All 17 first tests of the survey's top 20 specs that were unrun are
+now run except cylob (brief on main). No judge PASS on any target; two first tests moved a spec; one worker's judge PASS
+was a length-only judge block and is withdrawn (tool fixed).
+
+| Spec | Test run | Target | Control | Verdict |
+|---|---|---|---|---|
+| harry-caroline-1863 | 1 MASC, word breaks | judge FAIL -1.442 | 16-34% letters right at N=74 | uninformative (control weak) |
+| lima-1916 | 1 codebook grep, 4 books | 2/2/1/3 of 17 | random 2/1/1/3, positive 17/17 | negative, at chance |
+| moustier-altars | 1 images, 2 passes (90.5%), IC | 0.0499 | Latin 0.072 / French 0.073 / random 0.0385 | not informative; intake open (bINT) |
+| powers-1991 | 1 print check | no decipherment in print | n/a (search) | negative; Thomas 2006 queued L15 |
+| debosnys-1883 | 1 images, machine sign inventory | IC 0.0125, K=90 over-split | random 0.0111 / French 0.070 | inconclusive; LANE GOLD holds the target |
+| dorabella-1897 | 1 letter-text route | Powell 1937 open copy lacks the letter | n/a | blocked, ASKS row 50 |
+| kaliningrad-2015 | 1 transcription check + IC | 26/26 lines, IC 0.0657 | translit. Russian 0.056 / German 0.072 | not informative; intake open (bINT) |
+| bullet-tuscany-1944 | 1 forum claim vs 4 key families | no key maps it (44 vs 39 letters; MASC 37-39/39 violations) | every control key recovered | **moved**: claim closed with a control; next test 2 short-key Vigenere + crib, est. USD 2, awaiting parent |
+| mccormick-1999 | 1 token profile; 2 family_run masc | IC 0.089, n-gram coverage above all controls; test 2 judge FAIL both corpora | English 0.067; controls 0.994 / 0.985 | NEAR row updated; masc excluded; next homophonic est. USD 3 if kept |
+| copenhagen-1835 | 1 MASC da/de/en | no legible decode | da 0-74% erratic, de 81-86%, en 94% | not informative; da19 corpus built and wired |
+| pollaky-1865-1875 | 1 images + pass; 2 pass B + diff | ads 3-4 IC 0.064/0.066; 72/72 vs Ernst/Bourdeau | English 0.059-0.066, random 0.04 | ads 3-4 are the Catokwacopa ads (known mechanism); NEAR row proposed exit |
+| te-wood-1950 | 1 Gillogly attack, 4 key texts | best 12-16/21 | control true offset rank 1 every seed (19-20/21) | negative for these key texts |
+| scorpion-1991 | 1 images + pass | S1 N=70 K=53 IC 0.0083 | English 0.066 / random-at-K 0.019 | homophonic-scale; S2 counted only |
+| rubin-1953 | intake + 1 image + pass | letters N=305 IC 0.0612 | English 0.062 / random 0.039 | **moved**: English-like; next family_run masc at N=305, est. USD 3, awaiting parent |
+| mlh-1976 | 1 image + pass (bMLH, live at handoff) | -- | -- | see ROOM |
+| cylob-c1995 | not run | -- | -- | brief `.claude/briefs/runs/2026-09-25-lane-b2-cylob-c1995.md` |
+| catokwacopa-1875 | (spec written, no test: partial, other lane's folder) | -- | -- | -- |
+
+Changes made to shared files: `.claude/briefs/breadth.md` has an Intake step before any first test (QA 2026-09-25-1740 failure
+3); `tools/judge_plaintext.py` fails closed on a judge block with no content check or an unwired language code
+(`tools/tests/test_judge_plaintext_failclosed.py`), and `da19` is wired; `specs/mccormick-1999.json` and
+`specs/copenhagen-1835.json` judge blocks repaired. Known effect on another lane: `specs/na-suriname-map-1781.json` (nl, no
+corpus) now fails loudly. Spec writer bSPEC's ten specs (ranks 11-20) carry judge blocks without `min_word_cover` in most
+cases; a successor should check each block before trusting a judge line.
+
+For a successor (LANE B3): ledger bMLH (session_01PmhUa6TvpUCGWqnG13xbSh) if this session has not by the time you read
+this (check LEDGER.md); run bCYL; run bullet test 2 and rubin test 2 once parent 7c says yes; the survey ranks 21-30 have
+no specs yet. Host notes: every Cipherbrain image sits on scienceblogs.de (one worker at a time); Gutenberg was LANE GOLD's
+today; an image-and-two-pass first test does not fit USD 3 with a subagent (bMOU 7.61), one pass with no subagent does.
+
 ## LANE GOLD handoff (session_01DKDynpdEwZK5EokxtjCM3P), 25 September 2026, kept current (last 18:27 UTC)
 
 Standing lane on koehler-1944 then debosnys-1883 (brief `.claude/briefs/runs/2026-09-25-lane-gold-orchestrator.md`; owner amendment 16:51: Fable for tool/family design, consolidator cap $15; parent 18:18: families run through tools/family_run.py). Both targets check-solved `open`, intake gate exit 0.
