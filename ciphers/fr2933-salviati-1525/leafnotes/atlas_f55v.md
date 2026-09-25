@@ -62,6 +62,11 @@ table (16 pairs checked, evidence file per row, 2 below the 3-occurrence thresho
   one specific token, not a type-label problem -- flagged here rather than corrected, since fixing it means editing
   `ciphertext_f55v.tsv`'s settled reading for that one box, outside this worker's brief (no reading/key edits).
 
+A follow-up native check on `e^` vs `e^dot` (3 tight native crops, same line 7, `images/native_e_check/cmp_e_dot_native.png`)
+was inconclusive rather than confirming: at this crop width the neighbouring sign's own mark bleeds into frame on
+the right edge of every sample, bare included, so it could not settle whether the bare sample's faint upper-right
+dot belongs to `e^` or to the next token. Left at "likely", not upgraded to "sure".
+
 **6. Re-score with the merge applied** (`python3 control/codemark_curve.py stats --leaves all --merge
 merges_f55v.tsv`):
 
@@ -87,7 +92,7 @@ either. Not run/decided here: whether to spend a further worker crop-verifying t
 whether the gate itself should be revisited given how solid the "distinct" verdicts turned out to be under a
 proper (native-resolution) check.
 
-**Requests:** gallica.bnf.fr 9 (1 `info.json` + 8 region fetches, one retry after a `Recv failure: Connection reset
+**Requests:** gallica.bnf.fr 13 (1 `info.json` + 12 region fetches, one retry after a `Recv failure: Connection reset
 by peer`, all >=2s apart, browser User-Agent). No subagents.
 
 **Regenerate:** `python3 control/codemark_curve.py stats --leaves all [--merge ../merges_f55v.tsv]` from `control/`;
