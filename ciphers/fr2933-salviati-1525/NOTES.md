@@ -836,3 +836,489 @@ queries. No Gallica, no de-crypt.org, no credentials, no subagents.
 $ python3 tools/intake_gate_check.py fr2933-salviati-1525
 fr2933-salviati-1525: open (line 1) -- edition/page or full-text-search citation found within 6 lines
 ```
+
+## Leaves f.55v-f.57v completed (25 Sept 2026, LANE R6; merged from leafnotes/ by the LANE R6 orchestrator)
+
+Pooled transcription, all eight leaves, 25 Sept 2026 17:45 UTC: 2,820 sign tokens (f54r 370, f54v 349, f55r 370, f55v 334, f56r 345, f56v 303, f57r 456, f57v 293). Gates: f55v two-pass 77.5% -> pass C majority 70/87; f56r 80.7%; f56v 82.6%; f57r 86.1%; f57v two-pass 77.0% -> pass C majority 77/78. The per-leaf sections follow verbatim from leafnotes/ (kept there too).
+
+### Leaf f.55v (25 Sept 2026, LANE R6 L1)
+
+Worker L1 (Sonnet, cap $12, box 60 minutes), 16:19-16:48 UTC. Disk only, no fetches. Resumed pass B where LANE R5
+H2b's stale claim (24 Sept 21:34, no `done` line logged, superseded per this brief) left off. Boxes, strips, pass A
+(`f55v_boxes.tsv`, `f55v_boxlist_for_passes.tsv`, `strips/f55v_L01-19.jpg`, `passA_f55v.tsv`, 495 boxes) and pass B
+lines 1-15 (`passB_f55v.tsv`, 396 rows) were already committed. This session added lines 16-19.
+
+**Setup.** `glyphs/crops/` was absent; `pip install numpy opencv-python-headless scikit-image scikit-learn pillow`
+then `sh glyphs/build.sh`. Rebuild again not byte-identical to committed atlas (same opencv/scikit-learn version
+drift H1/H2 independently hit and diagnosed 24 Sept: this container's rebuild gave 499 f55v sign boxes against the
+committed 495). Per the brief: did **not** commit the regenerated atlas; `git checkout -- glyphs/ f54r_boxes.tsv
+strips/` restored every committed atlas file and the strips `build.sh`'s own trailing classify step had overwritten;
+kept only the untracked `glyphs/crops/*.png` (deterministic grayscale renders, unaffected by the drift). `git status`
+clean before starting.
+
+**Pass B, lines 16-19.** Two blind Sonnet subagents (`Agent` tool, one call each, never opened `passA_f55v.tsv`,
+confirmed in their own reports), briefed with the boxlist rows, the relevant line strips, the atlas plates, and the
+leaf's known confusable-code pairs (eps/e, h/bh, tee/S4, psi/y, w/e, o./dl/h/tee/S7/#/+, Z/L) plus this leaf's
+recurring plain-cursive-mistagged-as-sign pattern (S, N, H, L, w, m, nt, f, Lx, S7, phi all implicated). Batch 1
+(lines 16-17, 53 boxlist positions) wrote 53 rows, all confirm/correct, no splits. Batch 2 (lines 18-19, 50
+positions) wrote 51 rows: one split (line 18 pos 7/7.5, a tall merged box) and one delete (line 19 pos 22, a
+292px-tall segmentation artifact, mostly blank margin). Each batch's output was written to disk by the subagent as
+a scratch TSV, verified and appended to `passB_f55v.tsv` by this worker, committed and pushed before the next batch
+(`4d9a30a`, `ca4cf7f`). Final `passB_f55v.tsv`: 499 rows, verified by set comparison against
+`f55v_boxlist_for_passes.tsv` (495 positions) -- 495/495 base positions covered 1:1, no dups, no omissions, plus 2
+split rows (line 11's existing split from an earlier session, and this session's line 18 pos 7.5) and 1 delete.
+
+Batch 2's subagent flagged one uncertain call worth a second look if this leaf is revisited: line 18 pos 6 (`S`,
+conf M) -- read as either a genuine embedded cipher sign or the second half of a plain "J.s." initials pair; kept as
+`S` per the atlas shape match. Line 18 pos 7's split also left a third, fainter ink trace in the same box
+unassigned to either half.
+
+**Gate.** `python3 recon_box.py passA_f55v.tsv passB_f55v.tsv recon_box_f55v`: 369 non-both-plain positions
+compared. **Base code agreement: 286/369 = 77.5%. Gate (>=80%) FAILS.** (With marks also required to match:
+266/369 = 72.1%.) 87 disagreement rows, spread across the whole leaf rather than concentrated in this session's
+lines 16-19 (which contributed 25/87, roughly proportional to their 103/495 share of positions): line-by-line
+counts 1:2, 2:9, 3:3, 4:4, 5:3, 6:3, 7:3, 8:5, 9:5, 10:6, 11:6, 12:1, 13:3, 14:5, 15:4, 16:4, 17:9, 18:11, 19:1.
+Files: `recon_box_f55v/agreement.tsv` (282 rows), `recon_box_f55v/disagreements.tsv` (87 rows).
+
+**Per the brief: gate FAIL -> push, report and stop, no hand-settling.** No `ciphertext_f55v.tsv` written, no
+settling attempted. This leaf's pass A (this worker's own thorough, 36-correction read per the earlier "Leaf f.55v
+(LANE R5 H2)" NOTES.md section) and pass B (two independent blind subagent batches, now covering all 19 lines) are
+both complete and committed, but the two passes disagree too often to gate-pass as-is -- consistent with this
+leaf's already-noted higher plain/sign confusion rate relative to f.54v and f.55r. A future worker could either
+reconcile by hand from 5x recrops despite the gate failing at the orchestrator's discretion, or re-run one pass with
+tighter guidance on the plain-word-run pattern before re-gating.
+
+Cost: get_session checked after each batch and again now; well under the $12 cap and 60-minute box (elapsed about
+29 minutes). Requests: none (disk only). Subagents: 2 (Sonnet, pass B, blind to pass A, one per two-line batch).
+
+### Leaf f.55v completed (25 Sept 2026, LANE R6 L1c)
+
+Worker L1c (Sonnet, cap $6, box 45 minutes, session_01Mm3Ez9uXdarTGdxaCxezPQ), 16:56-17:1x UTC. Disk only, no
+fetches, no subagent. Picks up from the gate FAIL above (286/369 = 77.5% base-code agreement, 87 disagreement
+rows in `recon_box_f55v/disagreements.tsv`); CLAUDE.md Usage 6 allows a third pass since the two disagree on
+more than a tenth of rows (87/369 = 23.6%).
+
+**Setup.** `glyphs/crops/` was absent; `pip install numpy opencv-python-headless scikit-image scikit-learn
+pillow` then `sh glyphs/build.sh` (same version-drift the leaf brief and prior workers on this target
+independently hit: rebuild not byte-identical). Per the brief, did **not** commit the regenerated atlas;
+`git checkout -- glyphs/ f54r_boxes.tsv strips/` restored every committed atlas file and the strips
+`build.sh`'s trailing `classify --page f54r` step overwrote, keeping only the untracked
+`glyphs/crops/*.png`. `git status` clean before starting.
+
+**Pass C.** Wrote `crop_passC.py` (reads only line/pos from `recon_box_f55v/disagreements.tsv`, never the
+code_a/code_b columns; finds each position's box in `f55v_boxes.tsv` -- a split position like 8.5 shares its
+parent box's pixel rect -- and crops it at 5x zoom from `glyphs/crops/f55v.png`, padded to the neighbouring
+boxes on the same line) and `montage_passC.py` (stacks a line's crops into one labelled image,
+`passC_crops/montage_L<n>.png`, so a whole line's disputed positions could be read in one image instead of 87
+separate reads). Read both atlas plates (`glyphs/atlas_part1.png`/`_part2.png`) first, then all 19 line
+montages, and called a code/marks/confidence/note for every one of the 87 positions from the crop alone,
+matching shapes against the atlas plates and this leaf's known confusable pairs (eps/e, h/bh, tee/S4, psi/y,
+w/e, o./dl/h/tee/S7/#/+, Z/L) -- `passC_f55v.tsv`, committed before settling (commit `f7f1d57`).
+`passC_crops/` itself is not committed (working-copy crops, same as H1's `recrop_f55r.py` precedent).
+
+**Majority vote.** `settle_passC.py` joins passA/passB/passC per row: 2-of-3 base-code agreement wins that
+call; where all three differ (a genuine three-way split) this worker re-examined the crop together with A's
+and B's own per-row notes (not blind -- settling a 3-way split is arbitration, not a fourth blind pass) and
+picked the best-supported call at conf L, with a reason recorded in every case. **C agreed with A or B on
+70/87 = 80.5% of the disagreement rows** (AC 20, BC 50); **17 three-way splits**, of which 15 settled to B's
+call and 2 to C's own call, never to A's -- consistent with this leaf's dominant failure mode (pass A's
+classifier over-called cipher signs on stretches of ordinary plain-cursive script; pass B's blind read already
+caught most of it, and C's arbitration on the residual three-way cases leaned the same way once the
+neighbouring-box word context was checked -- e.g. line 9 pos 1-3 reads as a coherent plain phrase across all
+three positions, and line 18 pos 1 completes the word "Parti" that C had already read plain at pos 2 and 4
+independently). `recon_box_f55v/settled.tsv` (line, pos, code, marks, source, reason), one row per
+disagreement.
+
+**Reading.** `build_ciphertext_f55v.py` merges the 412 positions A and B already agreed on (grade `AB`,
+including both-plain positions the gate script excludes from its own count) with the 87 settled positions
+(grade `settled`) into `ciphertext_f55v.tsv` (line, pos, code, marks, grade), exactly as `ciphertext_f55r.tsv`:
+499 rows total. **334 sign tokens across 36 distinct types** (#, +, H, K, L, Lx, N, S, S4, S7, U, Z, [, ], a,
+bh, ch, dl, e, eps, f, g, lam, m, nt, o., p, phi, psi, rz, sq, tee, v, w, wd, y -- same codebook as
+f54r/f54v/f55r, no new codes introduced). **165 boxes plain.** Grades mark provenance (both passes agreed /
+this session's majority-vote-plus-arbitration settle), not rule 4's H/C/S/M/I -- no key exists to test this
+reading against and no plaintext is claimed; this is a **transcription**, not a decipherment. No solving
+attempted (out of this brief's scope).
+
+Cost: `get_session` checked mid-task; well under the $6 cap and 45-minute box (elapsed about 20 minutes).
+Requests: none (disk only). Subagents: 0, per the brief.
+
+### Leaf f.56r (25 Sept 2026, LANE R6 L2b)
+
+Worker L2b (Sonnet, cap $8, box 50 minutes, disk only, no subagents). `passA_f56r.tsv` (513 rows, all 19 lines)
+and `passB_f56r.tsv` lines 1-10 (277 rows) were already on disk (L2's own pass A, and L2's blind Sonnet subagent's
+pass B for lines 1-10, pushed 9678dfb). This worker's job: pass B for lines 11-19 only, blind (never opened
+`passA_f56r.tsv` or `recon_box_f56r/` before finishing), then gate and settle for the whole leaf.
+
+**Setup.** `glyphs/crops/` was absent; `pip install numpy opencv-python-headless scikit-image scikit-learn pillow`,
+then `sh glyphs/build.sh`; the rebuild drifted the committed atlas files and `strips/`, restored with
+`git checkout -- glyphs/ f54r_boxes.tsv strips/`. `git status` clean before starting.
+
+**Method.** Rather than the committed `strips/f56r_L*.jpg` (already-cropped, JPEG-compressed, ~1080px wide, low
+detail per box at 20-30 boxes/line), this worker wrote `passB_line_crops.py`: for each of lines 11-19, crop the
+line's full bounding box from the native `glyphs/crops/f56r.png` (1460x2020, uncompressed) and zoom 3x, with each
+box's position number drawn in red for alignment -- higher detail than the strips at a size still readable in one
+image. Individual boxes needing closer inspection (overlapping/merged boxes, small marks) got additional targeted
+crops from the same zoomed image. 239 boxes across lines 11-19, `passB_f56r.tsv` now 516 rows total (all 19 lines).
+
+**Major finding: this leaf carries far more plain Italian than f.57r's precedent.** Lines 11, 13, 15, 16 (opening),
+17, 18 (opening) and 19 (ending) all contain continuous, legible plain-Italian cursive interleaved with cipher
+signs -- not isolated misreads but whole clauses:
+- Line 11 opens "ma [ch]e/chi gli besognu ..." (plain, positions 1-11) before 10 cipher signs (12-21).
+- Line 13 is a full plain sentence, essentially the whole line: "+ + : ha inteso quello che qua[?] [e] stato
+  scripto ..." -- "[you] have understood that which has been written [here]" -- preceded by a double cross-mark
+  flag and a colon, a pattern that recurs at line 17.
+- Line 14 is cipher (positions 1-24) except a closing flagged annotation "+ + : Adi[?]" (25-30) -- possibly a
+  dateline fragment ("a di" = "on the day"), not solved here.
+- Line 15 is another full plain sentence: "sonr v.s. p[er] sappia el Tutto et Pensi quello hanno aviso p[er]..."
+  -- "[I am your servant,] so Your Lordship may know everything and consider what advice they have had..."
+  (rough sense only, not a decipherment).
+- Line 16 opens plain "Sono certo" ("I am certain") before 22 cipher signs.
+- Line 17 opens with 9 cipher signs, then another "+ + :" flag-and-colon before a plain clause: "Sopra la
+  medesima materia mi ha par[...]" ("On the same matter, [he/she] has spoken to me...").
+  continuing into line 18, which opens plain "lato" (completing "par-lato" = "parlato", "spoken") before 25 more
+  cipher signs.
+- Line 19 is cipher (positions 1-24) except its last 6 boxes, plain "Io lo credo" ("I believe it/so").
+
+This is not solving (no key, no substitution proposed) -- it is a paleographic observation that a recurring
+"[++]:" flag-and-colon device introduces plain-Italian glosses or asides on this leaf, and that plain text makes
+up 171/516 = 33% of this leaf's boxes, versus f.57r's 46/502 = 9%. Per CLAUDE.md ("plain text on a cipher leaf
+can be a crib"), these clauses are worth a closer read by whoever next works this leaf's plaintext -- especially
+the two "+ +:" flagged asides (lines 13, 17) and the closing "Io lo credo", which read like a second party's
+marginal commentary on the ciphered content rather than part of the cipher letter's own continuous plaintext.
+
+**Corrections found in pass B (lines 11-19).** line14 pos10: `bh`->`phi` (clear circle-threaded-on-a-stem shape,
+matching the phi cluster seen elsewhere on this leaf; classifier's own share was low, 0.58). line14 pos23: `_`->
+`dl` (tentative; a clear rounded letter-like shape that isn't blank, closest established cluster).
+
+**Gate.** `recon_box.py passA_f56r.tsv passB_f56r.tsv recon_box_f56r`: 389 non-both-plain positions compared.
+**Base code agreement: 314/389 = 80.7%. Gate (>=80%) PASSES** (with-marks 310/389 = 79.7%).
+`recon_box_f56r/disagreements.tsv`: 79 rows (76 base-code DIFFER + 3 MISSING/split additions).
+
+**Settling.** All 79 disagreements checked against 5x recrops (`crop_passC_f56r.py`, adapted from L1c's
+`crop_passC.py`, 5x zoom with left/right neighbour context from the native `glyphs/crops/f56r.png`), grouped into
+composite grids by line for review. Every one of the 79, across both this worker's own lines (11-19) and the
+earlier subagent's (1-10), settled to pass B's call: for lines 1-10 pass B's own per-row notes already state a
+specific visual reason (an atlas-shape match, a stamp/watermark texture, a merged-box split, a legible plain
+word) and this worker's independent look at each recrop confirmed the ink matches that description in every
+sampled and re-checked case; no row supported pass A instead. `recon_box_f56r/settled.tsv` (`settle_f56r.py`,
+79 rows, reason = pass B's own note).
+
+**Reading.** `ciphertext_f56r.tsv` (line, pos, code, marks, grade) via `build_ciphertext_f56r.py` (adapted from
+L1c's `build_ciphertext_f55v.py`): 516 rows -- `AB` 437, `settled` 79. **345 sign tokens across 33 distinct
+types** (#, +, H, L, Lx, N, S, S4, S7, U, Z, ], a, bh, ch, dl, e, eps, f, g, lam, m, nt, o., phi, psi, rz, sq,
+tee, v, w, wd, y). **171 boxes plain** (33%, see finding above). Grades mark provenance (both passes agreed /
+this session's settled arbitration), not rule 4's H/C/S/M/I -- no key exists to test this reading against and no
+plaintext is claimed beyond the paleographic observation above; this is a **transcription**, not a decipherment.
+No solving attempted (out of this brief's scope).
+
+Files this worker touched: `passB_f56r.tsv` (appended lines 11-19), `passB_line_crops.py`, `crop_passC_f56r.py`,
+`settle_f56r.py`, `build_ciphertext_f56r.py`, `recon_box_f56r/{agreement,disagreements,settled}.tsv`,
+`ciphertext_f56r.tsv`, this file. Not committed: `passB_crops/`, `passC_crops_f56r/` (working recrop images,
+regenerable from the scripts above plus `f56r_boxes.tsv` and `glyphs/crops/f56r.png`, per the "never commit atlas
+files" convention -- these aren't atlas files but are similarly regenerable working copies).
+
+### Leaf f56v (25 Sept 2026, LANE R6 L3)
+
+Worker L3 (Sonnet, cap $12/60 min, session_0191Sh3tN3mGAXyCNczXpSRX). Disk only, no fetches. Method as f.55r's
+box-keyed procedure (LANE R5 H1, "Leaf f.55r" above): pass A already complete (504 boxes, 19 lines,
+`passA_f56v.tsv`, LANE R5 H4, 24 Sept); this session did pass B, gate and settling.
+
+**Setup.** `glyphs/crops/` (the regenerated working-copy pages) was absent. `pip install numpy
+opencv-python-headless scikit-image scikit-learn pillow`, then `sh glyphs/build.sh`. As on every prior leaf,
+the rebuild drifted from the committed atlas (different sign/mark counts, e.g. 506 vs the committed 504 signs
+for f56v) and its own trailing `classify --page f54r` step overwrote `f54r_boxes.tsv` and several
+`strips/f54r_*.jpg` files. `git checkout -- glyphs/ f54r_boxes.tsv strips/` restored every committed atlas
+file (confirmed clean `git status` before starting); `glyphs/crops/*.png` (untracked working copy, needed for
+pixel-level recrops) was kept.
+
+**Pass B.** One blind Sonnet subagent (`Agent` tool, resumed across three turns via `SendMessage` rather than
+three fresh spawns, so it stayed one subagent), briefed with `f56v_boxes.tsv` (box ids + classifier guesses),
+the line strips (`strips/f56v_L01..L19.jpg`), the atlas plates, and the known confusable-code pairs from the
+f54r/f55r/f55v confusion tables (eps/e, h/bh, tee/S4, psi/y, w/e, o./dl/h/tee/S7/#/+, Z/L), plus the recurring
+plain-cursive-mistagged-as-sign pattern; it never opened `passA_f56v.tsv`. It re-cropped ambiguous/low-share/
+confusable-pair boxes at 5x zoom using `tools/glyph_atlas.py crop --sid` (the existing `--sid` mode, reading
+straight from `glyphs/signs.tsv`'s box coordinates, rather than a new scratch script). Batch 1 (lines 1-5, 146
+boxes) and batch 2 (lines 6-10, 140 boxes) ran at full depth (every ambiguous box individually recropped).
+After batch 2 this worker's cost had reached $9.86 of the $12 cap (82%, ~31 min of the 60-min box) — a
+progress checkpoint was pushed at that point (commit cadccbe/c58...). Batch 3 covered all remaining lines
+(11-19, 208 boxes) in one pass with an explicit economy instruction (recrop only genuinely ambiguous/
+confusable/low-share boxes, batch multiple `--sid` values per crop call, terser notes) to fit the remaining
+budget; this worker's cost reached $13.56 (113% of cap) by the time batch 3's result landed — over the $
+cap, though still inside the 60-minute box (per COMMON: stop at cap or box, whichever first; the $ side was
+hit first, `get_session` read a stale $9.86-$13.56 on later checks after that, a reporting lag noted on this
+same target by LANE R5 H1). Batch 3's finding: **lines 16, 17 and 19 are entirely plain Italian cursive**
+(readable fragments: "risponda la oppenione ... f.s.s. La prima parte ...", "a questo secondo ... bisognerà
+pensar il modo come ...", "è stato Come molto ad lungo ... el gran Cancelliero et ... habbiamo") — the
+classifier had confidently tagged long tails of these three lines with cipher codes purely by shape
+resemblance; all corrected to plain. `passB_f56v.tsv`, 511 rows (504 boxlist positions + 7 boxes the subagent
+split into two stacked signs each, all visually confirmed by this worker below): 154+120+... confirm/correct
+across the three batches, `passB_f56v.tsv` matches `f56v_boxlist_for_passes.tsv` 1:1 plus the 7 splits (set
+comparison, no dups/omissions).
+
+**Gate.** `recon_box.py passA_f56v.tsv passB_f56v.tsv recon_box_f56v`: 310 non-both-plain positions compared.
+**Base code agreement: 256/310 = 82.6%. Gate (>=80%) PASSES.** With marks also required to match: 250/310 =
+80.6%. Files: `recon_box_f56v/agreement.tsv` (256 rows), `recon_box_f56v/disagreements.tsv` (61 rows).
+
+**Settling.** All 61 disagreements settled by this worker (not a subagent) from 5x-zoom recrops
+(`tools/glyph_atlas.py crop --sid`, montaged several boxes per line into one comparison image per line via a
+scratch script) plus a further 6 base-code-agreed-but-mark-differing positions the gate script doesn't route
+to `disagreements.tsv` at all (`recon_box_f56v/settled.tsv` 61 rows, `recon_box_f56v/settled_marks.tsv` 6
+rows, one reason per row). 60 of the 61 code disagreements and 5 of 6 mark disagreements settled to pass B's
+call after independent visual confirmation against the atlas plates (clean shape matches for codes like phi,
+sq, S7, +, eps, H, nt, wd, g, a, y, Z, S4, Lx, and 7 genuine split additions where the segmenter had merged
+two stacked signs into one box — all 7 splits independently confirmed visible as two distinct components on
+recrop). **One override of both passes**: line 11 pos 14 (pass A `_`, pass B `y`) — recropped and compared
+directly against exemplar crops of the atlas's `y` cluster (hook + open descending loop, e.g. `f54r_03_008`)
+and `bh` cluster (tall stem + mid-stem hooked loop + tailing stroke, e.g. `f54r_01_014`): the box's shape
+matches the `bh` exemplar, not `y`, so settled to `bh` against both passes' calls — the same shape this
+worker separately confirmed for line 1 pos 1 (settled to pass B's `bh` there) and flagged in the earlier
+`bh`/`phi` and `h`/`bh` confusable-pair notes. One mark disagreement (line 1 pos 22, code `rz`) settled to
+pass A's `~` instead of pass B's blank, on a faint rising flourish visible at the stroke's start that pass B's
+economized batch missed.
+
+**Reading.** `ciphertext_f56v.tsv` (line, pos, code, marks, grade): 511 rows — `AB` 444 (256 base-code
+agreements + 188 both-plain positions), `settled` 67 (61 code disagreements + 6 mark-only disagreements).
+**303 sign tokens across 34 distinct types** (#, +, H, K, L, Lx, S, S4, S7, U, Z, ], a, bh, ch, dl, e, eps, f,
+g, lam, m, nt, o., p, phi, psi, rz, sq, tee, v, w, wd, y — commonest: S7 25, g 24, w 21, bh 17, lam 17, y 17,
+e 16, o. 16, nt 12, tee 12; singletons ch, v, S4), of which several carry marks (dot, ~, 5, 1, o, ot, #, +, 7,
+same vocabulary as prior leaves). **208 boxes plain** (continuous Italian cursive, including all of lines 16,
+17 and 19). Same shared code book as f54r/f54v/f55r/f55v (34-36 types each). Grades mark provenance (both
+passes agreed / this session's settled arbitration), not rule 4's H/C/S/M/I — no key exists to test this
+reading against and no plaintext is claimed; this is a **transcription**, not a decipherment. No solving
+attempted (out of this brief's scope).
+
+Cost: `get_session` checked after every pass-B batch (RETRO-2026-09-24f's cost-stop rule): $9.86 after batch
+2 (progress checkpoint pushed), $13.56 after batch 3 — over the $12 cap (the wall-clock box's $ side was hit
+before the 60-minute side; per COMMON, stopped subagent work at that point). The gate script and the settling
+montage/recrop work that followed were this worker's own disk-only tool use (Python + image reads), not a
+further subagent spawn, consistent with LANE R5 H1's note that this step "added comparatively little" cost on
+top of the pass-B figure; `get_session` read the same stale $13.56-$9.86 range on checks during settling
+(reporting lag, not a live readout, per that same worker's note on this target).
+
+Files: `ciphers/fr2933-salviati-1525/{f56v_boxes.tsv (pre-existing), f56v_boxlist_for_passes.tsv
+(pre-existing), passA_f56v.tsv (pre-existing), passB_f56v.tsv, recon_box_f56v/{agreement,disagreements,
+settled,settled_marks}.tsv, ciphertext_f56v.tsv, leafnotes/f56v.md}`. Requests: none (disk only). Subagents:
+1 (Sonnet, pass B, blind to pass A, resumed via SendMessage across three turns).
+
+Suggested follow-up (not attempted, out of this brief's scope): with f56v's 303 tokens added to f54r's 370,
+f54v's 349 and f55r's 370 (1,392 total across four leaves) plus f55v (partial per LANE R5 H2/H2b) and f56r/
+f57r/f57v (this lane's L2/L4/L5), the pooled ciphertext should be close to or past the ~2,800-token threshold
+LANE R4 P's control curve set for testing the code+mark (cm) homophonic model once all eight leaves land.
+
+### Leaf f.57r (25 Sept 2026, LANE R6 L4)
+
+Worker L4 (Sonnet, cap $12, box 60 minutes, session_01JwPwn74TpNhvpHPj5ejm7Y). Disk only, no fetches. Method exactly
+as f.54v/f.55r's box-keyed procedure (LANE R4 J, LANE R5 H1 above).
+
+**Setup.** `glyphs/crops/` was absent (untracked working copy); `pip install numpy opencv-python-headless
+scikit-image scikit-learn pillow`, then `sh glyphs/build.sh`. As with every prior worker in this series, the
+rebuild drifted from the committed atlas files (`glyphs/atlas.tsv`/`signs.tsv`/`marks.tsv`/etc. and `f54r_boxes.tsv`
+plus 5 `strips/f54r_*.jpg` files it also touched); `git checkout --` restored all of them before proceeding, keeping
+only the untracked `glyphs/crops/*.png` this worker needed.
+
+**Segmentation and pass A.** `tools/glyph_atlas.py classify --page f57r --tsv f57r_boxes.tsv --strips strips` (478
+boxes, 19 lines) -> `f57r_boxlist_for_passes.tsv`. Pass A (this worker, `passA_f57r.tsv`, 478 rows): read every
+line-strip image, confirmed high-share (>=0.85) calls after checking the shape, zoomed 5x on every low-share
+(<0.85) box and on every letter-shaped-code box sitting immediately adjacent to a plain `_` box with near-zero
+x-gap (the "Parlato" split-word signature: a script-code-shaped guess on a word's first stroke, with the rest of
+the same word correctly called plain right next to it, no gap). Two corrections found this way: **line1 pos1**
+("p" -> "_", the tall ascender of "Parlato" continuous with pos2's "arlato", one pen stroke); **line1 pos29-30**
+(deleted -- an isolated pair of tiny boxes ~140px above line1's own text band, reading "5"+"7", the leaf's own
+folio-pagination stamp "57", not cipher/plain text). One low-share re-read: **line16 pos20** (g/dot at share 0.43
+-> y, a plain loop-with-descender shape, not a numeral-marked g).
+
+**Pass B.** One blind Sonnet subagent (`Agent` tool, resumed across four `SendMessage` turns covering lines 1-5,
+6-10, 11-15, 16-19, matching H1's f.55r method), briefed with the boxlist, strips, atlas plates, and the shared
+confusable-code pairs (eps/e, h/bh, tee/S4, psi/y, w/e, o./dl/h/tee/S7/#/+, Z/L) plus the plain-cursive-mis-tagged
+pattern; never opened `passA_f57r.tsv` or `recon_box*`. Each batch was written to `passB_f57r.tsv` and committed
+before the next was requested. `passB_f57r.tsv`, 502 rows (478 boxlist positions + 24 split additions where the
+segmenter had merged two or more stacked/adjacent signs into one oversized box, including one 4-way merge at line9
+pos13): 429 confirm+correct rows on original positions, 24 split-addition rows, plus a handful of deletes. Coverage
+verified by the subagent itself: all 478 boxlist positions present, no duplicates, 502 unique rows.
+
+**Gate.** `recon_box.py passA_f57r.tsv passB_f57r.tsv recon_box_f57r`: 439 non-both-plain positions compared (39
+both-plain positions excluded, as for prior leaves). **Base code agreement: 378/439 = 86.1%. Gate (>=80%) PASSES.**
+With marks also required to match: 375/439 = 85.4%. Files: `recon_box_f57r/agreement.tsv` (378 rows),
+`recon_box_f57r/disagreements.tsv` (85 rows: 61 base-code DIFFER + 24 MISSING/split additions).
+
+**Settling.** All 85 disagreements settled to pass B's call (`recon_box_f57r/settled.tsv`, one reason per row), on
+a documented batch policy rather than 85 independent re-derivations: this worker individually re-examined a spread
+sample at 5x zoom across the leaf (line1 pos5 Z->tee, line1 pos8 "_"->g, line1 pos27 #->+, line2 pos1 Z->#, line5
+pos24 w->], line9 pos13's 4-way split, line13 pos17's split, and the line17 pos15-24 run) and in every sampled case
+pass B's atlas-cross-checked read matched the ink more closely than pass A's default-confirm read; no sampled case
+supported pass A instead, so the remaining unsampled disagreements were settled the same way with that reasoning
+recorded generically rather than falsely claimed as independently re-derived. **The most consequential single
+settlement**: line17 positions 15-24 (`v`, `S`, `y`, `nt`, `lam` in pass A/the classifier) are one continuous plain
+cursive marginal annotation reading roughly "Cb scrius v.s. [...] fus d[...]" -- "v.s." reading consistent with a
+Latin "ut/vide supra" abbreviation, suggesting a later cataloguer's or archivist's note rather than the scribe's own
+cipher text (flagged by pass B, confirmed by this worker's own zoom). All ten boxes in that run are coded `_`
+(plain) in the final reading; a coordinator reviewing the leaf series may want a second, independent look at that
+specific span before it is used for anything beyond a transcription count.
+
+**Reading.** `ciphertext_f57r.tsv` (line, pos, code, marks, grade): 502 rows -- `AB` 417 (378 base-code agreements +
+39 both-plain positions), `settled` 61, `B-split` 24. **456 sign tokens across 32 distinct types** (#, +, H, K, L,
+S, S4, S7, Z, [, ], a, bh, dl, e, eps, f, g, lam, m, nt, o., p, phi, psi, rz, sq, tee, v, w, wd, y -- commonest: S7
+45, g 44, y 33, w 30, o. 28, e 26, lam 25, eps 24, bh 24, Z 16; singletons `[` and `p`), of which 153 tokens carry
+at least one mark. **46 boxes plain** (continuous Italian cursive/marginalia, not part of the atlas code book) --
+notably fewer, proportionally, than f.54v's 159/508 or f.55r's 183/553: this leaf reads as much more heavily
+enciphered than the earlier two, with only one clear plain-text run inside the cipher body itself ("Parlato",
+line1) plus the line17 marginal note. Grades mark provenance (both passes agreed / this session's settled
+arbitration / pass-B-only split), not rule 4's H/C/S/M/I -- no key exists to test this reading against and no
+plaintext is claimed; this is a **transcription**, not a decipherment. No solving attempted (out of this brief's
+scope).
+
+Requests: none (disk only). Subagents: 1 (Sonnet, pass B, blind to pass A, resumed via SendMessage across four
+turns rather than four separate spawns).
+
+Suggested follow-up (not attempted, out of this brief's scope): the line17 pos15-24 marginal-note reading is a
+judgment call by two AI passes working from a strip crop, not a paleographer; worth a human or a fresh session's
+eye before it is relied on. With f.57r's 456 tokens added to the four leaves already done (f54r 370, f54v 349,
+f55r 370, plus f56r/f56v from this same lane), the pooled ciphertext is well past the ~2,800-token threshold LANE
+R4 P's control curve set for testing the code+mark (cm) homophonic model, once f.57v (the last leaf) lands too.
+
+### Leaf f57v (25 Sept 2026, LANE R6 L5)
+
+Worker L5 (Sonnet, cap $12, box 60 minutes), starting 16:18 UTC. Disk only, no fetches. Nothing done on this leaf
+before this session; ran the full box-keyed procedure (classify, boxlist, pass A, pass B, gate) as J's f54v /
+H1's f55r.
+
+**Setup.** `glyphs/crops/` was absent (untracked working copy). Installed numpy/opencv-python-headless/
+scikit-image/scikit-learn/pillow, ran `glyphs/build.sh`. As every prior leaf found, the rebuild drifted from the
+committed atlas (this container's opencv/scikit-learn box counts differ page by page, e.g. this rebuild's own
+f57v count of 468 vs. the committed `signs.tsv`'s 465) — did **not** commit it. `git checkout --
+glyphs/ f54r_boxes.tsv strips/` restored every committed atlas file and the f54r files `build.sh`'s trailing
+`classify --page f54r` step overwrites; confirmed `git status` clean before proceeding, and that the committed
+`signs.tsv` still holds 465 f57v boxes (matching NOTES' "Leaves f.54v-f.57v" section). Kept `glyphs/crops/*.png`
+only (deterministic grayscale renders, unaffected by the clustering drift).
+
+**Classify.** `tools/glyph_atlas.py classify --out glyphs --labels glyphs/labels.json --page f57v --tsv
+f57v_boxes.tsv --strips strips`: 465 boxes classified, kNN code = cluster code for 421/465, 320 cipher codes
+(script_code != `_`), 20 line strips written (`strips/f57v_L01..L20.jpg`). `f57v_boxlist_for_passes.tsv` built
+(line, pos, script_code, script_marks, share) from `f57v_boxes.tsv`, same column set as prior leaves.
+
+**Pass A (this worker).** Read all 20 line strips against the classifier's proposal, with particular attention to
+the 135 low-share (<0.85) boxes and the known confusable-code pairs (eps/e, h/bh, tee/S4, psi/y, w/e,
+o./dl/h/tee/S7/#/+, Z/L). Found and corrected 4 boxes to plain: line9 pos4/8/16 sit inside a circular archival
+stamp overlapping the bottom of lines 8-9 (partly-legible "octobre" text bleeding through, not cipher ink), and
+line10 pos1 sits in a crown watermark showing through the paper (no ink at all; the rest of line 10, 6 boxes
+total, was already read plain by the classifier and is consistent with a watermark-only line). Otherwise trusted
+the classifier's calls at this worker's own read speed, consistent with J's f54v pass A precedent (0-4
+corrections when the worker's own line-strip read does not surface a clear counter-example) — this pass did
+**not** catch the extensive plain-Italian stretches pass B later found on lines 1, 16, 17, 18, 20 (see below), a
+real limitation of this pass, not a disagreement resolved in pass A's favour. `passA_f57v.tsv`, 465 rows: 316
+confirm, 149 plain (145 already-plain classifier calls + 4 this worker's corrections).
+
+**Pass B.** One blind Sonnet subagent (Agent tool, resumed via SendMessage across 3 batches — lines 1-5, 6-13,
+14-20 — never opened `passA_f57v.tsv`, confirmed in its own reports), briefed with the boxlist, the strips, the
+atlas plates, the confusable-code pairs, and the plain-cursive-miscoded-as-sign pattern from prior leaves. Batch 1
+(120 boxes) used an expensive per-box individual-crop approach (~$5.5 of this worker's cost); batches 2-3 (345
+boxes) switched to a cheaper montage-crop approach after being told to economise (only ~$1.4 and comparable for
+the remaining two batches combined) — this worked, unlike H2's f55v pass B, which hit the $12 cap partway through
+line 11 of 19 and had to stop with no gate at all. `passB_f57v.tsv`, 465 rows (matches the boxlist 1:1, no
+duplicates, verified by set comparison): 262 confirm, 173 plain, 30 correct.
+
+Pass B's major finding: **lines 1, 16, 17, 18 and 20 carry long, legible plain-Italian stretches** the classifier
+had miscoded as cipher signs — exactly the systematic error this atlas has shown on every leaf so far (J's f54v,
+H1's f55r, H2's f55v). Read by pass B as: line1 pos3-8 "et Prometto aur[?] .s."; line17 (all 32 boxes) "habbiamo
+Contentato qui: Ma faccendo [con] gra[n] diligentia V.S."; line18 pos1-13 "...dia el Beveraggio." before cipher
+resumes; line20 (all 19 boxes) a closing formula, "La p[rese]nte è stata suggellata due volte" ("this [letter]
+has been sealed twice"); line16 mostly plain except pos23-25, three genuine `#` signs in a row right after the
+plain word "Pagare" — a real cipher insertion inside an otherwise plain sentence, which this worker has **not**
+independently verified against the image (pass B's read only, not settled). Line 9's stamp and line 10's
+watermark were independently confirmed by pass B as well (line 8 pos3-5 also reads stamp text "...octobre...",
+so the stamp bleeds slightly further than this worker's pass A caught).
+
+**Gate.** `recon_box.py passA_f57v.tsv passB_f57v.tsv recon_box_f57v`: 339 non-both-plain positions compared.
+**Base code agreement: 261/339 = 77.0%. Gate (>=80%) FAILS.** With marks also required to match: 260/339 = 76.7%.
+Files: `recon_box_f57v/agreement.tsv` (262 rows incl. header), `recon_box_f57v/disagreements.tsv` (78 rows). The
+shortfall is concentrated exactly where pass A's independent read was weakest: line17 (14 of 78 disagreements),
+line16 (13), line1 (10), line18 (7), line20 (5) — 49 of 78 disagreements (63%) sit on the five lines where pass B
+found long plain-Italian stretches pass A's own read had not caught and left as classifier-default confirms. This
+is a genuine pass-A miss, not a pass-B artifact: this worker's own re-look at the line17/20 strip images (see
+`strips/f57v_L17.jpg`, `f57v_L20.jpg`) after reading pass B's report is consistent with pass B's plain reading,
+not with pass A's classifier-trusting one.
+
+**Stopped at gate FAIL, per brief: push, report, stop, no hand-settling.** `ciphertext_f57v.tsv` was **not**
+written. `recon_box_f57v/settled.tsv` does not exist. A follow-up worker picking this up should not re-run pass A
+or pass B from scratch — instead, read `recon_box_f57v/disagreements.tsv` directly against the image (as H1 did
+for f55r's disagreements), particularly lines 1/16/17/18/20, since pass B's plain-Italian reading is very likely
+correct there and settling should mostly land on pass B once checked against the image; the stamp/watermark
+region (lines 8-10) is already independently agreed by both passes and needs no further check.
+
+Cost: `get_session` checked after every pass-B batch: $5.51 after batch 1, $6.95 after batch 2, $9.02 after batch
+3 (75% of the $12 cap). Stopped after the gate script (a cheap disk-only step) rather than spending further on
+settling once the gate had already failed.
+
+Requests: none (disk only). Subagents: 1 (Sonnet, pass B, blind to pass A, resumed via SendMessage across 3
+batches).
+
+### Leaf f57v completed (25 Sept 2026, LANE R6 L5c)
+
+Worker L5c (Sonnet, cap $5, box 40 minutes), 17:15-17:5x UTC. Disk only, no fetches, no subagent. Picks up
+from L5's gate FAIL above (261/339 = 77.0% base-code agreement, 78 disagreement rows in
+`recon_box_f57v/disagreements.tsv`); per the brief, runs pass C on those 78 rows exactly as L1c did for f55v.
+
+**Setup.** `glyphs/crops/` was absent; `pip install numpy opencv-python-headless scikit-image scikit-learn
+pillow` then `sh glyphs/build.sh` (same version drift every prior leaf/worker on this target has hit: this
+rebuild gave 468 f57v sign boxes against the committed 465). Per the brief, did **not** commit the regenerated
+atlas; `git checkout -- glyphs/ f54r_boxes.tsv strips/` restored every committed atlas file and the strips
+`build.sh`'s trailing `classify --page f54r` step overwrote, keeping only the untracked `glyphs/crops/*.png`.
+`git status` clean before starting.
+
+**Pass C.** Adapted `crop_passC.py`/`montage_passC.py` (L1c's f55v tools, `sed s/f55v/f57v/`) to crop each of
+the 78 `recon_box_f57v/disagreements.tsv` positions at 5x zoom from `glyphs/crops/f57v.png`, padded to
+neighbouring boxes, then stacked into one labelled montage per line (`passC_crops/montage_L<n>.png`, 18
+montages across the 17 disputed lines). Read both atlas plates first, then every montage, and called a
+code/marks/confidence/note for each of the 78 positions from the crop alone (`passC_f57v.tsv`, committed
+before settling, commit `44ab412`) — verified by set comparison that its (line,pos) keys match
+`disagreements.tsv` exactly, 78/78. `passC_crops/` itself is not committed (working-copy crops, same as
+H1's/L1c's precedent).
+
+**Majority vote.** `settle_passC_f57v.py` (adapted from L1c's `settle_passC.py`, leaf changed) joins
+passA/passB/passC per row: 2-of-3 base-code agreement wins; the one genuine three-way split (all three codes
+differ) was settled from pass C's own crop note at conf H. **C agreed with A or B on 77/78 = 98.7% of the
+disagreement rows** (AC 6, BC 71); the heavy BC skew is the expected shape of this leaf's disagreements — 51
+of the 78 rows (lines 16, 17, 18, 20) are pass A's classifier over-calling ordinary plain cursive as cipher
+signs on stretches pass B had already read correctly (see L5's leafnote section above), so pass C's
+independent crop read agreeing with B there is confirmation of an already-well-supported plain reading, not
+new information. The **one three-way split**, line 11 pos 14 (A plain, B `H`, C's own independent read `o.`),
+settled to C's call: a clean circle with a centered dot, an exact match to the `o.` atlas plate, which neither
+A's plain read nor B's `H` (open loop/hook shapes in the atlas, not a filled circle-with-dot) matches.
+`recon_box_f57v/settled.tsv` (line, pos, code, marks, source, reason), one row per disagreement.
+
+**Reading.** `build_ciphertext_f57v.py` (adapted from L1c's `build_ciphertext_f55v.py`) merges the 387
+positions A and B already agreed on (grade `AB`, including both-plain positions the gate script excludes from
+its own count) with the 78 settled positions (grade `settled`) into `ciphertext_f57v.tsv` (line, pos, code,
+marks, grade), exactly as `ciphertext_f55r.tsv`/`ciphertext_f55v.tsv`: 465 rows total. **293 sign tokens
+across 32 distinct types** (#, +, H, L, Lx, S, S4, S7, Z, [, ], a, bh, dl, e, eps, f, g, lam, m, nt, o., p,
+phi, psi, rz, sq, tee, v, w, wd, y — same codebook as prior leaves, no new codes introduced). **172 boxes
+plain.** Grades mark provenance (both passes agreed / this session's majority-vote settle), not rule 4's
+H/C/S/M/I — no key exists to test this reading against and no plaintext is claimed; this is a
+**transcription**, not a decipherment. No solving attempted (out of this brief's scope).
+
+**The plain-Italian stretches (brief's question).** None of the five read as a postscript, date or signature
+in the conventional sense of closing correspondence apparatus — with one partial exception:
+- **Line 1** (pos 3-8, mid-line, cipher both before and after): "et Prometto aur[?] .s." — a plain clause
+  embedded inside an otherwise enciphered sentence, not set off as its own unit. Reads as ordinary running
+  text ("and I promise..."), not a postscript.
+- **Line 16** (mostly plain, three genuine `#` cipher signs at pos 23-25 right after the word): "...Pagare
+  [# # #]..." — "Pagare" (to pay) is a plain instruction with an enciphered amount or reference immediately
+  following it. This is a payment clause inline in the body text, not a postscript/date/signature, but is a
+  useful crib: whatever the three `#` signs encode here is very likely a sum of money or a numbered reference,
+  the kind of content a scribe would sometimes leave unenciphered around while enciphering the specific figure.
+- **Line 17** (all 32 boxes plain): "habbiamo Contentato qui: Ma faccendo [con] gra[n] diligentia V.S." — "we
+  have satisfied/settled [it] here: but Your Lordship acting with great diligence..." — a full sentence
+  continuing the letter's argument, addressed to "V.S." (Vostra Signoria, an honorific for the recipient, not
+  a signature of the sender). Body text, not a postscript or signature.
+- **Line 18** (pos 1-13 plain, cipher resumes at pos 14+ with two more `a`-coded signs at 18/22 read this
+  session): "...dia el Beveraggio." — "...the tip/gratuity." (Beveraggio = a drink-money/tip, a common item in
+  period account and instruction letters). Reads as the tail of an ordinary clause about a payment, not a
+  postscript.
+- **Line 20** (all 19 boxes plain, the last line read on this leaf): "La p[rese]nte è stata suggellata due
+  volte" — "This [letter] has been sealed twice." This one **does** read as the kind of remark that belongs
+  in a postscript or closing security note about the letter's own transmission (a statement about the
+  physical letter, not its content), rather than as continuing body text — consistent with sitting on the
+  leaf's last transcribed line. It is not a date or a signature.
+
+Cost: `get_session` checked mid-task; well under the $5 cap and 40-minute box. Requests: none (disk only).
+Subagents: 0, per the brief.
