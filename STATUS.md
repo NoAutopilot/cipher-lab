@@ -153,7 +153,7 @@ Breadth lane, successor to LANE B2; opened about 19:10 by parent 7c (brief `.cla
 | cylob-c1995 | 1: post 50 fetch + intake (bCYL) | geometric-pattern rectangles, no letters/numbers; 11 of 20 images embedded | n/a (a fetch) | spec updated; survey "24 symbols / Torsten" not in post 50 (flagged); lead cloud.rotering-net.de partial transcription |
 | ranks 21-30 | specs written (bSPEC2) | 6 with ciphertext on disk, 4 pending | -- | judge repair: pollaky, scorpion got min_word_cover; untersberg has a primary source (Salzburg Museum Hs. 2398) against the survey's "legend" |
 
-Live at 19:47: first tests bERB (erba-2006, scienceblogs.de holder), bBLZ (blitz-ciphers), bGLD (goldbar-1933), bYOG (yogtze-1984), bUNT (untersberg-code), bFAI (fair-game-2010, imdb). Still to run: ss-radio-lippert-1944, rayburn-2004, sufi-fiddle, censorship-manual-stego (all scienceblogs.de image fetches, serial after bERB). Lesson for briefs: a "no network" disk-only brief must still allow the intake step's calls (bBUL2 skipped them).
+Live at 19:47: first tests bERB session_015mvST9kPA56rxX4isokK9F (erba-2006, scienceblogs.de holder), bBLZ session_011udkMuPcAL1Zh4Z9YcLZDp (blitz-ciphers), bGLD session_012QfjvWAiHwLhjcGLsqP1aU (goldbar-1933), bYOG session_017uGMqgaktV8afo1JzPwbES (yogtze-1984), bUNT session_01XugcbXJVN6dPVdEWXKw59S (untersberg-code), bFAI session_01FErd6DB5jVrf9YhYN1u9Sk (fair-game-2010, imdb). Still to run: ss-radio-lippert-1944, rayburn-2004, sufi-fiddle, censorship-manual-stego (all scienceblogs.de image fetches, serial after bERB). Lesson for briefs: a "no network" disk-only brief must still allow the intake step's calls (bBUL2 skipped them).
 
 ## LANE B2 handoff (session_01NS12APP1R55K6TGZrBbP97), 25 September 2026, 19:03 UTC
 

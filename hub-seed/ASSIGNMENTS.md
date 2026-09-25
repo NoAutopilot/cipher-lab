@@ -526,3 +526,9 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T19:46Z	session_01VqTTfQ1REyR4rYnBUAS7wD	bMCC3 done 2.20 D, archived
 2026-09-25T19:46Z	session_01VG15i7g45rvWQF6hgXCKmU	bCYL done 1.74 D, archived
 2026-09-25T19:46Z	session_01Ni3jyRn6oo4AbfkpdbSNsd	bSPEC2 done 5.06 D, archived
+2026-09-25T19:47Z	session_015mvST9kPA56rxX4isokK9F	bERB (Sonnet, cap 3)	erba-2006 test 1 (scienceblogs.de)	LANE B3 brief
+2026-09-25T19:47Z	session_011udkMuPcAL1Zh4Z9YcLZDp	bBLZ (Sonnet, cap 3)	blitz-ciphers test 1	LANE B3 brief
+2026-09-25T19:47Z	session_012QfjvWAiHwLhjcGLsqP1aU	bGLD (Sonnet, cap 3)	goldbar-1933 test 1	LANE B3 brief
+2026-09-25T19:47Z	session_017uGMqgaktV8afo1JzPwbES	bYOG (Sonnet, cap 3)	yogtze-1984 test 1	LANE B3 brief
+2026-09-25T19:47Z	session_01XugcbXJVN6dPVdEWXKw59S	bUNT (Sonnet, cap 3)	untersberg-code test 1	LANE B3 brief
+2026-09-25T19:47Z	session_01FErd6DB5jVrf9YhYN1u9Sk	bFAI (Sonnet, cap 3)	fair-game-2010 test 1 (imdb)	LANE B3 brief
