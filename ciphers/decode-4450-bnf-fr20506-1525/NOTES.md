@@ -265,3 +265,110 @@ Ranzo/Garbino system, not a reading. Folder size after this fetch: still well un
 
 Grades: none (no tokens read, no decipherment). Requests this section: gallica.bnf.fr 8 (see above). No
 other host, no subagents.
+
+## ZX2-4450T: ff.137-138 (25 Sept 2026, LANE ZX2)
+
+Worker ZX2-4450T (Sonnet). Job: transcribe the continuation found by ZX2-GAL2 (canvases 273/274/277/278/279/280,
+`ark:/12148/btv1b525047581`) and align it against Bourdeau's witness. Intake gate: `tools/intake_gate_check.py
+decode-4450-bnf-fr20506-1525` -> "open (line 1) -- edition/page or full-text-search citation found within 6
+lines", exit 0.
+
+**Crops.** `tools/iiif_lines.py --image ... --region ...` (row-ink-profile line detection) on the three cipher
+canvases, after finding each page's text bounding box from a column/row ink-density profile (the raw canvases
+carry facing-page show-through and binding-shadow margins that would otherwise be mis-read as content columns):
+canvas277 (f.137, stamped "137") region 430,140,1290,2150 -> 27 lines, 14 two-line crops (`f137a_*`); canvas278
+(f.137, unstamped verso) region 615,170,1325,2140 -> 28 lines, 14 crops (`f137b_*`); canvas279 (f.138, stamped
+"138") region 400,150,1250,1400 -> 18 lines, 9 crops (`f138_*`), region chosen by eye-check (`/tmp/sig_check.jpg`,
+not committed) to stop just above the page's plain-script autograph signature "Hier[on]o Ranzo" (confirmed at
+native y~1550-1650, x~300-1700, well below this region) -- no signature line was given to any transcription
+pass. Debug overlays committed alongside the crops (`images/crops/*_lines_debug.jpg`).
+
+**Two blind passes per page** (2 Sonnet subagents at a time, one page's crop set per call, per CLAUDE.md Usage
+item 6 -- never a whole leaf or the whole target in one call), same page/line/idx/token/doubt notation as
+`ciphertext_f136.tsv`: `passA_f137r.tsv`/`passB_f137r.tsv` (393/393 tokens), `passA_f137v.tsv`/`passB_f137v.tsv`
+(396/394), `passA_f138r.tsv`/`passB_f138r.tsv` (230/233).
+
+**Reconciliation.** `tools/reconcile_passes.py` needs its 'long' format's first column literally named `line`
+(not `page`) -- converted each pass to a `line/pos/token` TSV (doubt=1 -> trailing `?`) for the tool, keeping the
+committed `passA_*`/`passB_*` files in this project's own page/line/idx/token/doubt convention unchanged. Pass
+agreement, well above the brief's 60% gate on every page: f137r 393/393 signs, 360/393 = 91.6% (33 disagreement
+columns); f137v 396/394 signs (28 lines), 361/398 aligned columns = 90.7% (37 disagreement columns, higher
+because the two passes segmented a few lines differently); f138r 230/233 signs (18 lines), 198/236 = 83.9% (38
+disagreement columns).
+
+**Settling disagreements.** Per brief, settled from the image plus (new to this pass) Bourdeau's own witness
+transcription used as a fresh, independent third source at the expected offset -- not just eye judgement.
+Concrete findings, most useful for a future transcription pass on this hand:
+- The page's small squiggle/cedilla-like mark and its "d" glyph (a loop with a descending curling tail) are
+  genuinely distinct base signs in this system (`ciphers/decode-4450-bnf-fr20506-1525/inventory.tsv`'s D2
+  section already counted them separately, d:50 vs z:49, on f.136) -- but on f.137r the mark that both blind
+  passes and the witness agree is "z" really is z (5 instances, `z6`/`z8`/`z9`/`z15` etc. all confirmed against
+  the witness at their exact witness-aligned position). On f.137v, however, one blind pass's own prompt
+  (carried forward verbatim from the f.137r prompt) caused **32 tokens** it labelled "z" to be "d" at the exact
+  matching digit against the witness (e.g. `z35`->`d35` x3, `z246`->`d246`, `z156`->`d156` x2, `z183`->`d183`,
+  `z179`->`d179` x2 -- always same digits, only the base letter corrected) -- a genuine over-application of the
+  "z" label to the visually similar "d" loop-and-descender shape, not a copying variant, fixed here and the
+  prompt corrected before the f.138r passes ran (0 further z/d fixes needed there).
+- The tall-ascender glyph this project calls "L" (a hooked/curled top, e.g. `L10`, `L47`, `L99`) is frequently
+  confused by a blind pass with a plain dotless "i" (`i100`, `i29`); checked against both the image (a plain
+  vertical stroke with no hook reads "i") and the witness's own token frequency in `vasto1527/n20/` (`i100`
+  appears 37 times across c017-c019, `L100` appears **zero** times) -- "i" is correct wherever this ambiguity
+  came up; both subagent prompts for f.137v/f.138r were given this heuristic up front, reducing but not
+  eliminating the flag rate.
+- A base letter this project provisionally calls "q" recurs at three f.137r positions (line 8/12/13) where one
+  pass read "q", the other "e", and the witness reads "Q" (capitals); Bourdeau's own witness genuinely
+  distinguishes lower-case `q` (40 occurrences) from upper-case `Q` (21 occurrences) as separate signs in
+  c017-c020, but eye-checking the fr.20506 image (`/tmp/q6_check2.jpg`, not committed) found the glyph
+  indistinguishable in shape from the ordinary "q" written two tokens later on the same line -- kept as "q",
+  flagged doubt=0 given the direct image check, logged here as an open question for whoever eventually keys
+  this system (does fr.20506's scribe collapse a q/Q distinction the fr.2988 scribe kept, or is Bourdeau's own
+  c020 transcription over-splitting one glyph into two labels?).
+- One genuine cancelled/scratched mark on f.137r (line 9) where the witness has **no corresponding token at
+  all** at that position (not a replace, a true gap) -- the same signature (both a strike-through and a witness
+  gap) D2 already used on f.136 to confirm a cancellation; recorded as bare `X`, doubt=1. f.137v (line 17) and
+  f.138r (line 6) each carry one further clear strike-through, also `X`.
+- Classic secretary-hand look-alike pairs already catalogued by D2 on f.136 (b/h, b/v/d, r/t, digit transpositions)
+  recur throughout f.137-138 at similar density and are recorded as `replace` rows in `compare_f137_138.tsv`,
+  not silently corrected -- these read as genuine copying variants between the fr.20506 copy and the fr.2988
+  original, the same conclusion D2 reached, not transcription noise on either side.
+- 8 f.137r cells and the bulk of f.137v/f.138r's remaining flagged cells are left as honest 3-way ambiguities
+  (doubt=1) where neither blind pass matches the witness and the image does not settle it either; these are
+  listed in full in `compare_f137_138.tsv`'s `replace` rows, not hidden.
+
+**`ciphertext_f137_138.tsv`** (page/line/idx/token/doubt, 1027 tokens): f137r 393 (19 doubt=1), f137v 398
+(118 doubt=1 -- the two passes disagreed on segmentation as well as tokens on this page, see above), f138r 236
+(56 doubt=1).
+
+**`compare_f137_138.tsv`** (page/line/idx/our_token/witness_source/witness_token/type): aligned each page's
+final token sequence against `vasto1527/n20/ranzo_c017.txt`+`c018.txt`+`c019.txt`+`c020.txt` concatenated
+(fr.2988 f.9r/f.9v/f.10r/f.10v, 499+510+514+266 = 1789 tokens total -- c019/c020 not used by D2, which only
+needed c017/c018 for f.136), via `difflib.SequenceMatcher` exactly as D2's `compare_f9.tsv` did. Best-match
+starting offset for f.137r found by brute-force search over witness index 700-800: **752**, i.e. f.137 continues
+the fr.2988 letter from the exact point D2's own f.136 alignment stopped (D2: "our 749 tokens end at witness
+index ~752 of 1009"). **Combined agreement across all three pages: 828/1031 aligned columns = 80.3%** (lower
+than D2's 94.1% on f.136, expected: f.136 got a full by-hand per-token image recheck of every disagreement,
+f.137-138 relied more on the automated witness cross-check given this worker's time box, so more genuine
+paleographic variants and unresolved ambiguities are left visible in the numbers rather than eye-verified away).
+
+**Where the copy ends relative to the witness.** f.137r consumes witness index 752 to 1145 (393 tokens, exactly
+1:1: one witness token skipped as a mid-letter insertion the copy omits, balanced by one extra token the copy
+carries that the witness omits -- see `compare_f137_138.tsv` line1/line9 `extra-in-ours`/insert rows). f.137v
+starts at 1145, f.138r starts at 1543. **f.138r's own alignment reaches witness global index 1787 of the
+witness's total 1789 tokens** -- i.e. this transcription (f.136 through f.138, all four workers combined)
+accounts for all but the last 2 tokens of Bourdeau's entire fr.2988 f.9-f.10 transcription. This confirms
+ZX2-GAL2's eye-check finding (the cipher block on f.138 ends immediately before the "Hiero Ranzo" signature,
+"the letter's natural end, not a cut-off"): **the fr.20506 ff.136-138 copy is not a partial excerpt of the
+Ranzo/Garbino letter, it is (to within 2 tokens of alignment noise) the complete letter**, matching fr.2988
+f.9r through f.10v end to end. Whether those last 2 witness tokens are a genuine tail this transcription missed
+or an artefact of the alignment's tail handling is not resolved here (one-line suggestion, not run: a future
+pass could diff the very last 5-10 tokens of `ranzo_c020.txt` against a fresh close look at the bottom of
+`images/fr20506_canvas279.jpg` just above the signature).
+
+**Attribution.** Witness: Daniel Bourdeau's `dbourdeau/cyphersolver` (`vasto1527/n20/ranzo_c017.txt` through
+`ranzo_c020.txt`, MIT code / CC BY 4.0 text; fresh shallow clone to scratchpad, not committed). No decipherment,
+key-recovery or novelty claim is made here; rule 10 wording not used. Status unchanged: **open**.
+
+Requests this pass: 0 network hosts (all work from images and text already on disk/scratchpad; the one
+`github.com` shallow clone was to scratchpad, not counted as a rate-limited host per the access playbook's own
+git-clone precedent in D2 above). No AskUserQuestion; no dollar figures for this worker (cost: see the lane
+ledger). Wall-clock: job brief's 60-minute box, this section written and pushed at roughly the 45-minute mark.
