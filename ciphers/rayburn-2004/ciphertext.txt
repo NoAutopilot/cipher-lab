@@ -1,0 +1,47 @@
+Rayburn murder cryptogram, as transcribed by LANE B3 worker bRAY, 25 Sept 2026, blind, one
+pass, from ciphers/rayburn-2004/images/Rayburn-Cryptogram.jpg (scienceblogs.de). Never silently
+repaired (rule 2): a trailing '?' marks a symbol identity the transcriber could not read with
+confidence; the mark column (see ciphertext.tsv) records underline (U), strikethrough (S),
+overline (O, a line above rather than below -- seen once, row 1's 'u') or unclassified (?)
+separately per rule of the spec. Full per-token detail (group/row/mark) is in ciphertext.tsv;
+this file is the reading-order symbol sequence only.
+
+Main grid, inside and below the pencil-drawn rounded-rectangle enclosure at the top of the page
+(rows numbered top to bottom as drawn):
+row 1 (top, inside the enclosure):  W  j  u  P  D
+row 2 (inside the enclosure):       a  X  o  R  w  i  s
+row 3 (below the enclosure):        M  rn?  g
+row 4:                              H  k  e  I-bold  B  f  e
+row 5:                              X  L?  o  y/x?  u  I-bold2
+row 6:                              w  A  z  Q  Y
+row 7:                              b  U  kr?  cross/t?  P  s  q
+row 8:                              Am?  c  Z  i  Y  Z  D
+row 9:                              RH?  V  h
+row 10 (bottom):                    E  f  b  d  av?  a  r  O
+
+Left margin (separate vertical sequence, own ruled line, top to bottom):
+p  pct(%)  K  4/h7?  p-loop?  d-loop?  Y-tail?  K*
+
+Right margin (separate vertical sequence, top to bottom):
+X-cross?  amp(&)  hash(#)  N?  K  H-hash?  3  dot-?
+
+Not transcribed as part of the ~80-character count: a small hand-drawn circle containing what
+looks like 'd' (or 'cl'), isolated below the bottom row and not underlined or struck through --
+plausibly a page mark or initial rather than a cipher symbol; recorded here for completeness,
+excluded from N below.
+
+N = 74 tokens (58 main grid + 8 left margin + 8 right margin), K = 59 distinct type ids
+(case-sensitive; symbols that look like two letters combined, e.g. an 'A' with a small 'm'
+written under it, are kept as their own type rather than folded into the plain letter). See
+specs/cheap-tests/rayburn-2004/transcribe.py and test1_result.txt for the IC computation.
+
+Caveats (rule 2, honest uncertainty, not resolved this pass): several symbols are genuinely
+ambiguous by eye at this resolution -- row 3's struck symbol (M / rn / a stray mark), row 5's
+'L?' and 'y/x?', row 7's 'kr?' (looks like 'k' with a small 'r' beneath) and 'cross/t?', the two
+composite-looking symbols 'Am?' (row 8) and 'RH?' (row 9), and most of the left- and right-margin
+column, where a continuous vertical ruled line running down each margin makes it hard to tell
+which marks belong to which character. Schmeh's own claim that "all characters are underlined or
+crossed out" (a binary annotation) does not hold cleanly for every token transcribed here: row 1's
+'u' carries a line above rather than below (overlined, not underlined), and row 2's 'w' and row
+6's 'w' each carry what looks like two short cross-ticks rather than a single clean strike -- both
+recorded as-is (mark 'O' / 'S' respectively) rather than forced into the stated binary.

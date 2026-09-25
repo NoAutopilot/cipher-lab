@@ -25,8 +25,17 @@
   "2. Once transcribed, test the diagram hypothesis directly before any cryptanalysis: does the spatial layout (rows/columns/clusters) resemble a card-game tableau, seating chart, or checklist rather than a written line of text -- since Schmeh's frequency-analysis caveat (most symbols appear once) is exactly what a diagram of ~80 distinct labelled objects would look like, and exactly what a frequency-based cipher test would misread as 'no signal'. Cost $1.",
   "3. Only if test 2 does not support the diagram reading: standard homophonic/keyboard-substitution judged against English with a matched control at the same N and K (same solver); expect a weak signal given N~80 and reported near-hapax frequencies (rule 3: match the design). Cost $2-3."
  ],
- "matched_control": "not yet run; no ciphertext on disk to test",
- "cheap_test_done": [],
+ "matched_control": "English control (same N=74, 200 samples, tools/data en corpus) and uniform-random control (same N=74 K=59, 200 draws) run 25 Sept 2026, see cheap_test_done[0]",
+ "cheap_test_done": [
+  {
+   "test": 1,
+   "date": "25 Sept 2026",
+   "worker": "LANE B3 bRAY",
+   "method": "fetched Rayburn-Cryptogram.jpg (scienceblogs.de, 1 request, HTTP 200), blind one-pass transcription recording symbol identity, position and mark state (underline/strikethrough/overline) separately; wrote ciphers/rayburn-2004/{ciphertext.txt,ciphertext.tsv}; computed IC against a matched English control (same N) and a matched uniform-random control (same N and K)",
+   "result": "N=74 tokens (58 main grid + 8 left-margin + 8 right-margin), K=59 distinct type ids; target IC 0.0056 vs English control mean 0.0618 [0.0311,0.0911] vs uniform-random control mean 0.0171 [0.0115,0.0255] (expected ~1/K=0.0169) -- target below both control ranges, consistent with Schmeh's near-hapax observation and either a high-homophone cipher or non-linguistic content; rules out plain monoalphabetic substitution on frequency grounds, does not decide between the diagram hypothesis and a homophonic cipher",
+   "cost": "see LANE B3 ledger (orchestrator reads get_session, not self-reported)"
+  }
+ ],
  "judge": {
   "language": "en",
   "letters_min": 40,

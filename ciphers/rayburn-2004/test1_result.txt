@@ -1,0 +1,5 @@
+N (tokens, main grid + both margins) = 74
+K (distinct type ids, case-sensitive, composites kept separate) = 59
+target IC = 0.0056
+English control IC (same N, 200 samples, tools/data en corpus, 26-letter alphabet): mean 0.0618 [0.0311, 0.0911]
+Uniform-random control IC (same N and K, 200 draws): mean 0.0171 [0.0115, 0.0255] (expected ~1/K = 0.0169)

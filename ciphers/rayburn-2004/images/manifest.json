@@ -1,0 +1,21 @@
+{
+  "fetched": "25 Sept 2026",
+  "images": [
+    {
+      "file": "Rayburn-Cryptogram.jpg",
+      "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2013/12/Rayburn-Cryptogram.jpg",
+      "source": "scienceblogs.de, embedded in the Cipherbrain post 'The Top 50 unsolved encrypted messages: 43. The Rayburn murder cryptogram' (6 March 2017)",
+      "size_bytes": 240374,
+      "sha1": "93e1f92a74470b2cc03370647f32cb3bca923436",
+      "dimensions": "850x822",
+      "fetch_method": "curl, browser User-Agent, 1 request, HTTP 200"
+    }
+  ],
+  "derived": [
+    {
+      "file": "grid_overlay.png",
+      "made_by": "specs/cheap-tests/rayburn-2004/transcribe.py's coordinate work (a one-off script call, not committed -- the overlay itself is kept as the reference)",
+      "note": "50px red/blue coordinate grid over the original image, used to fix each token's approximate (x,y) position while transcribing; kept so the next holder can check ciphertext.tsv's row numbers against the image without re-deriving the grid"
+    }
+  ]
+}
