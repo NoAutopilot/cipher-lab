@@ -1,0 +1,151 @@
+# Reading of Thurloe letter P18 (Lord Fauconberg to H. Cromwell, 1658-09-14) from the
+# decipherment Birch prints beside the cipher (1742), aligned by
+# tools/interlinear_align.py; combined-pool values from key_fauconberg.tsv kept at H.
+# Regenerate: python3 decode_fauconberg.py
+# 141 cipher/clear tokens, alignment status: {'clear': 15, 'agrees': 101, 'doubtful': 3, 'repaired': 1, 'null-or-unaligned': 14, 'single': 4, 'conflict': 3}
+# Matched control: none run -- nothing cryptanalytic is claimed (CLAUDE.md rule 3
+# applies only to a cryptanalytic negative; this is an alignment of a printed plaintext).
+#
+# Columns: cipher_line  idx  raw  kind  value  repair  plain_chunk  status
+#==========================================================================
+34085	0	All	clear				clear
+34085	1	feemingly	clear				clear
+34085	2	weares	clear				clear
+34085	3	the	clear				clear
+34085	4	face	clear				clear
+34085	5	of	clear				clear
+34085	6	2	num	2		b	agrees
+34085	7	3%	doubtful			u	doubtful
+34085	8	39	num	39		t	agrees
+34085	9	7	num	7		c	agrees
+34085	10	ll	num	11		e	agrees
+34085	11	35	num	35		r	agrees
+34085	12	39	num	39		t	agrees
+34085	13	3	num	3		a	agrees
+34085	14	*9	doubtful		19	i	repaired
+34085	15	27	num	27		n	agrees
+34085	16	23	num	23		l	agrees
+34085	17	47	num	47		y	agrees
+34085	18	34	num	34		f	agrees
+34089	0	16	num	16			null-or-unaligned
+34089	1	22	num	22			null-or-unaligned
+34089	2	43	num	43			null-or-unaligned
+34089	3	14	num	14			null-or-unaligned
+34089	4	3	num	3			null-or-unaligned
+34089	5	39	num	39			null-or-unaligned
+34089	6	19	num	19		i	agrees
+34089	7	34	num	34		s	agrees
+34089	8	2	num	2		b	agrees
+34089	9	35	num	35		r	agrees
+34089	10	II	num	11		e	agrees
+34089	11	43	num	43		w	single
+34089	12	19	num	19		i	agrees
+34089	13	27	num	27		n	agrees
+34089	14	15	num	15		g	agrees
+34089	15	38	num	38		u	agrees
+34089	16	27	num	27		n	agrees
+34089	17	6	num	6		d	agrees
+34089	18	II	num	11		e	agrees
+34089	19	35	num	35		r	agrees
+34089	20	14	num	14		h	agrees
+34089	21	3	num	3		a	agrees
+34089	22	27	num	27		n	agrees
+34089	23	6.	num	6		d	agrees
+34089	24	3	num	3		a	agrees
+34093	0	7	num	7		c	agrees
+34093	1	3	num	3		a	agrees
+34093	2	2	num	2		b	agrees
+34093	3	3	num	3		a	agrees
+34093	4	23	num	23		l	agrees
+34093	5	23	num	23		l	agrees
+34093	6	39	num	39		t	agrees
+34093	7	M	clear				clear
+34093	8	ir	clear				clear
+34093	9	35	num	35		r	agrees
+34093	10	"	clear				clear
+34093	11	19	num	19		i	agrees
+34093	12	34	num	34		s	agrees
+34093	13	26	num	26		o	agrees
+34093	14	10	num	10		f	agrees
+34093	15	31	num	31		p	single
+34093	16	11	num	11		e	agrees
+34093	17	35	num	35		r	agrees
+34093	18	34	num	34		f	agrees
+34093	19	26	num	26		o	agrees
+34093	20	27	num	27		n	agrees
+34093	21	34,	num	34		s	agrees
+34093	22	3	num	3		a	agrees
+34093	23	27	num	27		n	agrees
+34093	24	6	num	6		d	agrees
+34097	0	15	num	15		g	agrees
+34097	1	35	num	35		r	agrees
+34097	2	"	clear				clear
+34097	3	3	num	3		a	agrees
+34097	4	39	num	39		t	agrees
+34097	5	26	num	26		o	agrees
+34097	6	27	num	27		n	agrees
+34097	7	"	clear				clear
+34097	8	34,	num	34		s	agrees
+34097	9	H	clear				clear
+34097	10	n	clear				clear
+34097	11	23	num	23		l	agrees
+34097	12	6	num	6		d	agrees
+34097	13	38	num	38		v	agrees
+34097	14	11	num	11		e	agrees
+34097	15	35	num	35		r	agrees
+34097	16	47	num	47		y	agrees
+34097	17	723	num	723		c	single
+34097	18	2634	doubtful			lof	doubtful
+34097	19	11	num	11		e	agrees
+34097	20	23	num	23		l	agrees
+34097	21	47,	num	47		y	agrees
+34101	0	35	num	35		r	agrees
+34101	1	11	num	11		e	agrees
+34101	2	34	num	34		i	conflict:s
+34101	3	26	num	26		b	conflict:o
+34101	4	23	num	23		l	agrees
+34101	5	38	num	38		v	agrees
+34101	6	6,	num	6		d	agrees
+34101	7	19	num	19		i	agrees
+34101	8	39	num	39		t	agrees
+34101	9	34	num	34		s	agrees
+34101	10	10	num	10		f	agrees
+34101	11	11	num	11		e	agrees
+34101	12	3	num	3		a	agrees
+34101	13	35	num	35		r	agrees
+34101	14	11	num	11		e	agrees
+34101	15	6,	num	6		d	agrees
+34101	16	30	num	30		t	single
+34101	17	26	num	26		o	agrees
+34101	18	35	num	35		r	agrees
+34101	19	38	num	38		u	agrees
+34101	20	23	num	23		l	agrees
+34101	21	11	num	11		e	agrees
+34101	22	39	num	39		t	agrees
+34101	23	14	num	14		h	agrees
+34105	0	11	num	11			null-or-unaligned
+34105	1	23	num	23			null-or-unaligned
+34105	2	34	num	34			null-or-unaligned
+34105	3	11	num	11			null-or-unaligned
+34105	4	23	num	23			null-or-unaligned
+34105	5	38	num	38			null-or-unaligned
+34105	6	11	num	11			null-or-unaligned
+34105	7	34,	num	34			null-or-unaligned
+34105	8	26	num	26		o	agrees
+34105	9	35	num	35		r	agrees
+34105	10	34	num	34		f	agrees
+34105	11	11	num	11		e	agrees
+34105	12	39	num	39		t	agrees
+34105	13	3	num	3		a	agrees
+34105	14	23	num	23		l	agrees
+34105	15	23	num	23		l	agrees
+34105	16	26	num	26		o	agrees
+34105	17	27	num	27		n	agrees
+34105	18	10	num	10		f	agrees
+34105	19	19	num	19		i	agrees
+34105	20	35	num	35		r	agrees
+34105	21	11.	num	11		e	agrees
+34105	22	What-	clear				clear
+34113	0	14.	num	14		t	conflict:h
+34113	1	[1658.]	doubtful			theandobedient	doubtful
+34113	2	Fauconberg.	clear				clear

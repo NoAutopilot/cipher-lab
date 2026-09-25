@@ -1,0 +1,116 @@
+# Reading of Thurloe letter P10 (Gen. Blake to the Protector) from the decipherment printed above the cipher
+# in the 1742 edition (IA collectionofstat03thur p.620 (6 July 1655), page-image transcription),
+# aligned by tools/interlinear_align.py; Tomokiyo's key values kept at H. Regenerate:
+# python3 decode.py
+# Grades over the 107 cipher tokens: 1 not cipher groups (-); of 106 cipher groups
+# H=39 C=42 I=0 M=14 U=11
+#
+# Columns: djvu-line-tag  raw-token  grade  reading  alignment-status
+#==========================================================================
+620L6	with,	-		clear
+620L6	23.	M	m	conflict:d
+620L6	27.	M	a	conflict:h
+620L6	20.	M	t	conflict:a
+620L6	39.	H	u	print aligned 'i' here
+620L6	24.	H	e	print aligned 'o' here
+620L6	27.	M	n	conflict:h
+620L6	33.	H	o	agrees
+620L6	25.	C	f	agrees
+620L6	26.	H	g	agrees
+620L6	36.	H	r	agrees
+620L6	54.	H	e	agrees
+620L6	50.	C	a	agrees
+620L6	38.	H	t	agrees
+620L6	64.	C	p	agrees
+620L6	66.	C	r	agrees
+620L6	24.	H	e	agrees
+620L6	34.	C	p	agrees
+620L6	20.	C	a	agrees
+620L8	36.	H	r	agrees
+620L8	50.	C	a	agrees
+620L8	22.	M	t	conflict:c
+620L8	58.	M	i	single-segment
+620L8	33.	H	o	agrees
+620L8	32.	H	n	agrees
+620L8	37.	C	f	agrees
+620L8	28.	C	i	agrees
+620L8	62.	C	n	agrees
+620L8	52.	M	c	single-segment
+620L8	20.	C	a	agrees
+620L8	23.	C	d	agrees
+620L8	28.	M	e	conflict:i
+620L8	43.	M	z	single-segment
+620L8	38.	H	t	agrees
+620L8	33.	H	o	agrees
+620L8	37.	C	f	agrees
+620L8	24.	H	e	agrees
+620L8	38.	H	t	agrees
+620L8	25.	C	f	agrees
+620L8	33.	H	o	agrees
+620L8	66.	C	r	agrees
+620L10	68	U		null-or-unaligned
+620L10	57.	U		null-or-unaligned
+620L10	78.	U		null-or-unaligned
+620L10	55.	U		null-or-unaligned
+620L10	63.	U		null-or-unaligned
+620L10	36.	H	r	null-or-unaligned
+620L10	22.	U		null-or-unaligned
+620L10	24.	H	e	agrees
+620L10	33.	H	o	null-or-unaligned
+620L10	83.	U		null-or-unaligned
+620L10	121.	U		null-or-unaligned
+620L10	68.	C	t	agrees
+620L10	67.	U		null-or-unaligned
+620L10	95.	U		null-or-unaligned
+620L10	24.	H	e	null-or-unaligned
+620L10	22.	U		null-or-unaligned
+620L10	39.	H	u	agrees
+620L10	96.	M	r	conflict:t
+620L10	54.	H	e	agrees
+620L10	38.	H	t	agrees
+620L10	27.	C	h	agrees
+620L10	24.	H	e	agrees
+620L12	34.	C	p	agrees
+620L12	30.	C	l	agrees
+620L12	20.	C	a	agrees
+620L12	96.	C	t	agrees
+620L12	54.	H	e	agrees
+620L12	28.	M	e	conflict:i
+620L12	10.	C	d	agrees
+620L12	38.	H	t	agrees
+620L12	33.	H	o	agrees
+620L12	68.	C	t	agrees
+620L12	27.	C	h	agrees
+620L12	20.	C	a	agrees
+620L12	38.	H	t	agrees
+620L12	24.	H	e	agrees
+620L12	32.	H	n	agrees
+620L12	23.	C	d	agrees
+620L12	23.	C	d	agrees
+620L12	28.	C	i	agrees
+620L12	39.	H	u	agrees
+620L12	24.	H	e	agrees
+620L12	36.	H	r	agrees
+620L12	37.	C	f	agrees
+620L14	27.	C	h	agrees
+620L14	63.	C	o	agrees
+620L14	30.	C	l	agrees
+620L14	30.	C	l	agrees
+620L14	20.	C	a	agrees
+620L14	62.	C	n	agrees
+620L14	81.	M	d	single-segment
+620L14	10.	C	d	agrees
+620L14	25.	C	f	agrees
+620L14	36.	H	r	agrees
+620L14	54.	H	e	agrees
+620L14	32.	H	n	agrees
+620L14	22.	C	c	agrees
+620L14	27.	C	h	agrees
+620L14	121.	C	fhips	agrees
+620L14	38.	H	t	agrees
+620L14	50.	C	a	agrees
+620L14	29.	M	k	single-segment
+620L14	82.	H	e	single-segment
+620L14	90.	M	n	single-segment
+620L14	39.	H	u	agrees
+620L14	34.	C	p	agrees

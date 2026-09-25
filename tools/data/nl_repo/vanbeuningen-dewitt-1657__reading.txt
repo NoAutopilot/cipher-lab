@@ -1,0 +1,76 @@
+# Mechanical partial reading of vanbeuningen-dewitt-1657 cipher copy (ff.210-211) with key.tsv (tools/decode_key.py).
+# ciphertext.tsv: cipher tokens 862: H 0, C 446, S 0, M 70, I 0, U 1 (U = code not yet keyed, shown as [code]). Plain Dutch words pass through as transcribed (grade 'clear', not counted above).
+# Status: PARTIAL. Nomenclator (9 codes) and 21 letters (53 code-values) recovered by voted alignment (align.py); 2 codes (11, 40) are genuine unresolved conflicts between two values (shown 'a|b', grade M); 1 code (106) stays unkeyed.
+L01	Mijn Heer
+L02	Hier voort van dagh tot dagh met groot impatientie
+L03	verlangst na uw, d e h e e r r o s
+L04	e w i n g e bij d e t t d e t
+L05	[MARK] sal gebruijcken g e o b t i n e e r t op sijn
+L06	u e r s o e c k o m d e s e c r
+L07	o o n met u e r s t r e c k i n g e
+L08	u a m e e n e o e d e s o m m e
+L09	p e n m i n g e m t e d s s i s
+L10	t e r e n gebruijckt mijn sonder de selven vereenigt
+L11	middel siet soodanigh op sien nodighe saken sonder de sleutel?,
+L12	[MARK] onder anderen a l l e r e c r e u t e
+L13	s over de bedelckt mij met u e r s c h e y
+L14	d e o f f i c i e r s gesandt geeft
+L15	[MARK] van voorder handelen soud b y g e b r e c k
+L16	u a n g e l t achter blijven. daer ontbreekt
+L17	mede soo mij gesoijt weert?, dit sier trachten te versaeckeren
+L18	datums groot e f f e c t e n u y t d e
+L19	Vereenichde Nederlanden geeft de vraagster?. [MARK] 't schijnt datum daer op veel
+L20	fondement sonell soud Willemsmaker om Haer Hoog Mog. d e u r u
+L21	n t s c h a p u a n d e s e c r o o n
+L22	de dagh u e r l i e s e n over sijn niet dat mont
+L23	[MARK] seer Heer stiptgesantwoort dat de a m b d s s a
+L24	d e u r u a n Engelandt tot Elseneur als er couromen
+L25	welcke sij mijn woordt geeft gesoijt dat indien
+L26	de Coningh van Denemarcken sal doen soo veel als godag voor Engelandt als voor
+L27	de Vereenichde Nederlanden 't selve met d n d e r e d d n c k
+L28	b a e r h e y t soud wordt erkant, maer
+L29	datums oindsighte is Denemarcken de h e e r e n Haer Hoog Mog. soud
+L30	l e e r e n k e n m e n gelijck sij bij
+L31	Sweden Vranckrijk e n d e Engelandt b e k e n t s y n
+L32	Ick weet niet oft dit te apprehenderen sij, maer d'selve heeren
+L33	maken daer op te meer reflectie om dat de d g e n t
+L34	u a n d e Coningh van Denemarcken u y t Londen geeft geschreven
+L35	dat sij vertrouwen dat gemelt a m b d s s
+L36	a d e u r soud voorsz gestelt om sijn over
+L37	e e n a l l i a n u i e t e t r
+L38	a c t e r e n [MARK] datums is Engelandt w e l
+L39	n i e t g o e t s moght voorsz doen
+L40	met de Vereenichde Nederlanden daer weet ook w e g e n s
+L41	Sweden t o t Londen over de c o m m e r c i e
+L42	g e h a n d e l t gelijck als: sal vernemen
+L43	mede niet er goederhijzeerd met dit vercke niet
+L44	water as er sacht toe niet: soo mede meent te men
+L45	dat sier eenigst mit heer geeft dat [106:] goet h o m B:
+L46	van de tractaten m e t Denemarcken w i l u y t s
+L47	l u g t e n o m d a t a l voor sekere
+L48	e e n h e e r dit mij voor s w e e t s
+L49	aansier sier bij en handel ernst er ministers verwehr-
+L50	den geeft gebruijckt om de staat berg Vereenichde Nederlanden te de fredberg?,
+L51	als er weder niet stt olde de verhoogste dat, [MARK]
+L52	te gepersiadeeren datums b e t e r c o n d i
+L53	t i e m m e t Sweden soud maken, s o m d
+L54	e r a l s m e t i n t e r u e n
+L55	t i e u a n Haer Hoog Mog. Dat sal meer bijstaet [MARK]
+L56	opmerkingen soo veel mij dubelijck is, gebruijcken?,
+L57	om 't gaet sijn onder geschreven maar nader te ontdecken,
+L58	maer sonder p r o m n t e r e d l i t
+L59	e i t e n is sier soo c r e d y t van Haer Hoog Mog.
+L60	noch de d f c e c t i e van d e s e
+L61	c r o o n tot de s t d e t der Vereenichde Nederlanden niet
+L62	s t d e n d e te sonder. Ick geloove dat
+L63	haer luv. voor [ILLEGIBLE] veel sulke geestimeerd voor iets partij-
+L64	culier op de consideratie is mijn niet ist dat er
+L65	cristien verbat te gelaten, maer ick sal mijn mij toe-
+L66	volgen indagijt gaen naer order bekomt, [MARK] sal is sulke
+L67	gebal de voorsz: mijselven mij hierm van dat sorge.
+L68	[Godt?] blijft?
+L69	Mijn Heer
+L70	UEd:
+L71	ootmoedigen? dienaer
+L72	[ILLEGIBLE]
+L73	- Coppenhagen 19/29 [7bris?] 1657.

@@ -1,0 +1,459 @@
+# Reading of Thurloe letter P14 (the Protector to Blake and Mountagu, generals at fea, Whitehall 9 June 1656) from the decipherment printed above the cipher
+# in the 1742 edition (IA collectionofstat05thur pp.101-102, page-image transcription),
+# aligned by tools/interlinear_align.py; Tomokiyo's key values kept at H. Regenerate:
+# python3 decode.py
+# Grades over the 450 cipher tokens: 4 not cipher groups (-); of 446 cipher groups
+# H=54 C=82 I=0 M=296 U=14
+#
+# Columns: djvu-line-tag  raw-token  grade  reading  alignment-status
+#==========================================================================
+101L47	373	M	t	single
+101L47	26	M	h	conflict:a
+101L47	12	C	e	agrees
+101L47	18	H	e	print aligned 'p' here
+101L47	343	M	ofture	conflict:of
+101L47	407	H	the	print aligned 'of' here
+101L47	42	H	e	print aligned 't' here
+101L47	27	M	h	conflict:n
+101L47	18	H	e	agrees
+101L47	16	M	e	single
+101L47	24	M	n	single
+101L49	404	M	t	conflict:into
+101L49	478	M	o	conflict:you
+101L49	320	M	y	conflict:a
+101L49	54	M	o	conflict:r
+101L49	31	M	u	conflict:a
+101L49	6	M	n	conflict:t
+101L49	8	M	o	conflict:i
+101L49	19	M	t	conflict:o
+101L49	52	C	r	agrees
+101L49	7	C	a	agrees
+101L49	33	M	t	conflict:l
+101L49	404	M	iona	conflict:into
+101L49	55	C	l	agrees
+101L49	6	M	l	conflict:t
+101L49	50	M	e	conflict:t
+101L49	42	H	e	print aligned 't' here
+101L49	48	M	o	single
+101L49	101	M	attemp	single
+101L49	68	M	t	single
+101L49	407	H	the	print aligned 'thebur' here
+101L49	36	M	n	conflict:b
+101L49	45	M	e	conflict:b
+101L49	54	M	i	conflict:r
+101L49	76	M	n	conflict:c
+101L49	49	M	g	single
+101L49	52	M	e	conflict:r
+101L49	20	M	o	conflict:g
+101L49	18	H	e	print aligned 'f' here
+101L49	343	M	the	conflict:of
+101L49	407	H	the	print aligned 'spanifh' here
+101L49	495	C	fleet	agrees
+101L49	343	M	in	conflict:of
+101L51	500	M	c	single
+101L51	251	M	a	single
+101L51	501	M	d	single
+101L51	401	M	iz	single
+101L51	343	M	fome	conflict:of
+101L51	480	M	of	conflict:letter
+101L51	494	M	your	conflict:growfonumerous
+101L51	309	M	fh	single
+101L51	36	M	i	conflict:b
+101L51	18	H	e	print aligned 'p' here
+101L51	23	C	s	agrees
+101L51	25	M	m	conflict:e
+101L51	7	C	a	agrees
+101L51	12	M	y	conflict:e
+101L51	93	H	e	print aligned 'b' here
+101L51	11	C	e	agrees
+101L51	251	M	fpared	conflict:a
+101L51	404	C	into	agrees
+101L51	407	H	the	agrees
+101L51	28	C	c	agrees
+101L51	2	M	h	single
+101L51	31	C	a	agrees
+101L51	27	C	n	agrees
+101L51	42	H	e	agrees
+101L51	33	C	l	agrees
+101L53	343	M	tra	conflict:of
+101L53	50	M	d	conflict:t
+101L53	54	M	e	conflict:r
+101L53	31	C	a	agrees
+101L53	11	M	n	conflict:e
+101L53	42	H	e	print aligned 'd' here
+101L53	105	H	and	print aligned 'the' here
+101L53	407	H	the	print aligned 'blockeinge' here
+101L53	87	M	u	single
+101L53	33	M	p	conflict:l
+101L53	19	C	o	agrees
+101L53	91	M	f	single
+101L53	25	M	d	conflict:e
+101L53	8	M	u	conflict:i
+101L53	27	C	n	agrees
+101L53	20	M	k	conflict:g
+101L53	18	H	e	print aligned 'i' here
+101L53	16	M	r	conflict:e
+101L53	47	M	k	single
+101L53	343	M	and	conflict:of
+101L53	170	M	ofte	single
+101L53	45	M	n	conflict:b
+101L53	27	M	d	conflict:n
+101L53	25	M	w	conflict:e
+101L53	96	M	h	single
+101L53	54	M	e	conflict:r
+101L53	25	M	r	conflict:e
+101L53	18	H	e	agrees
+101L53	105	H	and	print aligned 'th' here
+101L53	30	C	e	agrees
+101L55	23	M	p	conflict:s
+101L55	50	M	i	conflict:t
+101L55	180	M	rates	single
+101L55	53	M	a	single
+101L55	37	M	n	conflict:h
+101L55	42	H	e	print aligned 'd' here
+101L55	103	M	fhip	conflict:r
+101L55	18	H	e	print aligned 's' here
+101L55	the	-		clear
+101L55	47	M	o	conflict:k
+101L55	24	M	f	conflict:n
+101L55	54	M	w	conflict:r
+101L55	5	M	a	single
+101L55	6	M	r	conflict:t
+101L55	18	H	e	print aligned 'r' here
+101L55	23	M	e	conflict:s
+101L55	and	-		clear
+101L55	494	M	growfonumerous	single-segment
+101L55	343	M	thatlately	conflict:of
+101L55	449	M	eighteenorni	single
+101L55	20	M	n	conflict:g
+101L55	12	C	e	agrees
+101L55	19	M	t	conflict:o
+101L55	21	M	e	conflict:w
+101L55	90	M	e	conflict:f
+101L55	30	M	n	conflict:e
+101L55	42	H	e	print aligned 'o' here
+101L55	27	M	f	conflict:n
+101L55	26	M	t	conflict:a
+101L55	16	M	h	conflict:e
+101L55	18	H	e	agrees
+101L55	54	M	m	conflict:r
+101L55	30	M	i	conflict:e
+101L55	26	M	n	conflict:a
+101L57	59	C	a	agrees
+101L57	406	U		null-or-unaligned
+101L57	279	U		null-or-unaligned
+101L57	6	U		null-or-unaligned
+101L57	42	H	e	null-or-unaligned
+101L57	281	U		null-or-unaligned
+101L57	110	U		null-or-unaligned
+101L57	or	-		clear
+101L57	19	U		null-or-unaligned
+101L57	343	M	b	conflict:of
+101L57	409	M	o	conflict:i
+101L57	251	M	d	conflict:a
+101L57	a	-		clear
+101L57	495	M	y	conflict:fleet
+101L59	413	M	t	single
+101L59	196	M	h	single
+101L59	18	H	e	agrees
+101L59	452	M	refore	conflict:wee
+101L59	234	M	we	conflict:have
+101L59	394	M	hav	conflict:e
+101L59	11	C	e	agrees
+101L59	404	M	refolv	conflict:into
+101L59	9	M	e	single
+101L59	7	M	d	conflict:a
+101L59	5	M	t	conflict:a
+101L59	33	M	o	conflict:l
+101L59	251	M	call	conflict:a
+101L59	404	C	into	agrees
+101L59	420	M	thefe	conflict:o
+101L59	23	C	s	agrees
+101L59	18	H	e	agrees
+101L59	7	C	a	agrees
+101L59	25	M	s	conflict:e
+101L59	47	M	p	conflict:k
+101L59	31	C	a	agrees
+101L59	54	C	r	agrees
+101L59	50	C	t	agrees
+101L59	343	C	of	agrees
+101L59	407	H	the	agrees
+101L59	495	C	fleet	agrees
+101L61	27	C	n	agrees
+101L61	19	C	o	agrees
+101L61	53	M	w	conflict:a
+101L61	21	C	w	agrees
+101L61	8	C	i	agrees
+101L61	6	C	t	agrees
+101L61	37	C	h	agrees
+101L61	478	M	y	conflict:you
+101L61	102	M	o	conflict:e
+101L61	404	M	u	conflict:into
+101L61	219	M	t	conflict:noti
+101L61	344	M	o	conflict:a
+101L61	39	M	g	single
+101L61	183	M	iv	single
+101L61	23	M	e	conflict:s
+101L61	404	M	order	conflict:into
+101L61	97	M	s	single
+101L61	56	H	e	print aligned 't' here
+101L61	76	M	o	conflict:c
+101L61	494	M	ten	conflict:growfonumerous
+101L63	438	M	fhippsunder	single-segment
+101L63	7	C	a	agrees
+101L63	220	M	good	single-segment
+101L63	349	M	officer	single-segment
+101L63	404	M	to	conflict:into
+101L63	400	M	faile	single-segment
+101L63	21	C	w	agrees
+101L63	49	M	i	conflict:g
+101L63	50	C	t	agrees
+101L63	37	C	h	agrees
+101L63	407	H	the	agrees
+101L63	198	M	fi	single
+101L63	19	M	r	conflict:o
+101L63	1	M	f	single
+101L63	47	M	t	conflict:k
+101L63	88	M	o	single
+101L63	12	M	p	conflict:e
+101L63	50	M	p	conflict:t
+101L63	26	M	o	conflict:a
+101L63	52	C	r	agrees
+101L63	86	M	t	conflict:r
+101L63	24	M	u	conflict:n
+101L63	74	M	n	conflict:e
+101L63	14	M	i	single
+101L63	53	M	t	conflict:a
+101L63	43	M	y	single
+101L63	52	M	o	conflict:r
+101L63	71	M	f	conflict:d
+101L63	105	H	and	print aligned 'wynd' here
+101L63	465	M	and	single-segment
+101L63	251	M	weather	conflict:a
+101L63	404	C	into	agrees
+102L1	407	H	the	print aligned 't' here
+102L1	39	M	h	conflict:g
+102L1	30	C	e	agrees
+102L1	21	M	m	conflict:w
+102L1	52	M	t	conflict:r
+102L1	18	H	e	print aligned 'o' here
+102L1	90	M	g	conflict:f
+102L1	409	M	i	single
+102L1	404	M	ve	conflict:into
+102L1	219	M	noti	single
+102L1	76	M	c	single
+102L1	74	M	e	single
+102L1	50	M	u	conflict:t
+102L1	77	M	n	single
+102L1	91	M	t	conflict:f
+102L1	93	H	e	print aligned 'o' here
+102L1	436	M	us	single-segment
+102L1	437	M	of	single-segment
+102L1	343	M	their	conflict:of
+102L1	411	M	a	single
+102L1	31	M	r	conflict:a
+102L1	54	C	r	agrees
+102L1	73	C	i	agrees
+102L1	8	M	v	conflict:i
+102L1	26	M	a	single
+102L1	55	C	l	agrees
+102L1	69	M	l	conflict:h
+102L3	72	M	w	conflict:p
+102L3	458	M	hich	conflict:a
+102L3	343	C	of	agrees
+102L3	407	H	the	agrees
+102L3	494	M	fhipps	conflict:growfonumerous
+102L3	478	C	you	agrees
+102L3	460	C	will	agrees
+102L3	59	M	f	conflict:a
+102L3	18	H	e	agrees
+102L3	27	C	n	agrees
+102L3	71	M	d	single
+102L3	131	M	beft	single-segment
+102L3	142	M	able	single-segment
+102L3	112	M	to	single-segment
+102L5	404	M	w	conflict:into
+102L5	260	M	h	single
+102L5	458	M	ich	conflict:a
+102L5	343	C	of	agrees
+102L5	409	M	them	conflict:i
+102L5	460	C	will	agrees
+102L5	36	M	b	single
+102L5	18	H	e	agrees
+102L5	205	M	fitt	single
+102L5	18	H	e	agrees
+102L5	25	M	f	conflict:e
+102L5	6	C	t	agrees
+102L5	196	M	for	conflict:h
+102L5	412	M	th	single
+102L5	4	C	i	agrees
+102L5	18	H	e	print aligned 's' here
+102L5	142	M	b	conflict:able
+102L5	25	C	e	agrees
+102L5	78	M	b	single
+102L5	7	M	e	conflict:a
+102L5	18	H	e	print aligned 'f' here
+102L5	11	M	t	conflict:e
+102L5	136	M	fpared	conflict:l
+102L5	478	M	byyou	conflict:you
+102L7	82	M	t	single
+102L7	33	M	h	conflict:l
+102L7	18	H	e	agrees
+102L7	23	M	l	conflict:s
+102L7	25	C	e	agrees
+102L7	42	H	e	print aligned 'f' here
+102L7	103	M	fer	conflict:r
+102L7	90	C	f	agrees
+102L7	30	M	o	conflict:e
+102L7	54	C	r	agrees
+102L7	50	C	t	agrees
+102L7	343	C	of	agrees
+102L7	494	M	fhips	conflict:growfonumerous
+102L7	211	M	frigott	single
+102L7	23	C	s	agrees
+102L7	169	M	wil	single
+102L7	46	M	l	single
+102L7	142	M	beft	conflict:able
+102L9	236	M	h	single
+102L9	51	M	e	single
+102L9	99	M	r	single
+102L9	394	M	e	single
+102L9	39	M	r	conflict:g
+102L9	10	M	e	single
+102L9	320	M	folved	conflict:a
+102L9	264	M	not	single-segment
+102L9	253	M	knowing	single-segment
+102L9	343	C	of	agrees
+102L9	480	M	your	conflict:letter
+102L11	298	M	more	single-segment
+102L11	414	M	then	single-segment
+102L11	104	M	your	conflict:e
+102L11	480	M	letter	single-segment
+102L11	268	M	repref	single
+102L11	61	M	e	single
+102L11	8	M	n	conflict:i
+102L11	54	M	t	conflict:r
+102L11	36	M	s	conflict:b
+102L11	45	M	b	single
+102L11	50	M	u	conflict:t
+102L11	32	M	t	single
+102L11	251	M	in	conflict:a
+102L11	28	C	c	agrees
+102L11	31	C	a	agrees
+102L11	90	C	f	agrees
+102L11	18	H	e	agrees
+102L11	478	C	you	agrees
+102L11	114	M	are	single-segment
+102L13	164	M	h	single
+102L13	344	M	a	single
+102L13	254	M	t	single
+102L13	233	M	h	single
+102L13	42	H	e	agrees
+102L13	16	M	m	conflict:e
+102L13	93	H	e	agrees
+102L13	73	M	r	conflict:i
+102L13	20	M	g	single
+102L13	42	H	e	agrees
+102L13	11	M	d	conflict:e
+102L13	74	M	o	conflict:e
+102L13	45	M	u	conflict:b
+102L13	73	M	r	conflict:i
+102L13	278	M	l	single
+102L13	50	M	e	conflict:t
+102L13	18	H	e	print aligned 't' here
+102L13	54	M	t	conflict:r
+102L13	105	H	and	print aligned 'e' here
+102L13	251	M	r	conflict:a
+102L13	59	C	a	agrees
+102L13	50	M	n	conflict:t
+102L13	12	M	d	conflict:e
+102L13	269	M	i	single
+102L13	50	M	n	conflict:t
+102L13	96	M	f	conflict:h
+102L13	345	M	tructio	single
+102L13	23	M	n	conflict:s
+102L15	136	M	l	single
+102L15	66	M	l	single
+102L15	31	M	o	conflict:a
+102L15	47	M	y	conflict:k
+102L15	50	M	d	conflict:t
+102L15	55	M	w	conflict:l
+102L15	8	M	h	conflict:i
+102L15	52	M	i	conflict:r
+102L15	18	H	e	print aligned 'c' here
+102L15	69	M	h	single
+102L15	69	M	t	conflict:h
+102L15	30	M	h	conflict:e
+102L15	58	M	e	single
+102L15	11	M	f	conflict:e
+102L15	458	M	e	conflict:a
+102L15	420	C	o	agrees
+102L15	344	M	r	conflict:a
+102L15	80	M	d	single
+102L15	93	H	e	agrees
+102L15	103	M	r	single
+102L15	90	C	f	agrees
+102L15	460	C	will	agrees
+102L15	320	M	not	conflict:a
+102L15	459	M	well	single-segment
+102L17	452	C	wee	agrees
+102L17	33	C	l	agrees
+102L17	18	H	e	agrees
+102L17	31	C	a	agrees
+102L17	94	M	v	single
+102L17	18	H	e	agrees
+102L17	96	M	i	conflict:h
+102L17	50	C	t	agrees
+102L17	404	M	to	conflict:into
+102L17	478	C	you	agrees
+102L17	452	C	wee	agrees
+102L17	234	M	have	single-segment
+102L17	356	M	herein	single-segment
+102L17	251	M	w	conflict:a
+102L17	86	M	r	single
+102L17	73	C	i	agrees
+102L17	49	M	t	conflict:g
+102L17	50	C	t	agrees
+102L17	462	M	wheither	single-segment
+102L17	478	C	you	agrees
+102L17	460	C	will	agrees
+102L19	90	U		null-or-unaligned
+102L19	56	H	e	null-or-unaligned
+102L19	27	C	n	agrees
+102L19	39	U		null-or-unaligned
+102L19	420	C	o	agrees
+102L19	494	M	t	conflict:growfonumerous
+102L19	344	M	d	conflict:a
+102L19	320	M	i	conflict:a
+102L19	99	M	f	conflict:r
+102L19	320	M	a	single
+102L19	72	M	p	single
+102L19	11	M	p	conflict:e
+102L19	8	M	o	conflict:i
+102L19	23	M	i	conflict:s
+102L19	7	M	n	conflict:a
+102L19	1	M	t	conflict:f
+102L19	47	M	w	conflict:k
+102L19	19	M	h	conflict:o
+102L19	8	C	i	agrees
+102L19	27	M	c	conflict:n
+102L19	6	M	h	conflict:t
+102L19	415	M	m	single
+102L19	458	M	a	single
+102L19	309	M	y	conflict:fh
+102L21	251	U		null-or-unaligned
+102L21	480	U		null-or-unaligned
+102L21	186	U		null-or-unaligned
+102L21	344	U		null-or-unaligned
+102L21	164	U		null-or-unaligned
+102L21	404	U		null-or-unaligned
+102L21	4	C	i	agrees
+102L21	93	H	e	null-or-unaligned
+102L21	168	M	n	single
+102L21	413	M	y	conflict:t
+102L21	135	M	o	single
+102L21	407	H	the	print aligned 'u' here
+102L21	495	M	r	conflict:fleet
+102L21	102	M	e	single
+102L21	82	M	y	conflict:t
+102L21	104	M	e	single

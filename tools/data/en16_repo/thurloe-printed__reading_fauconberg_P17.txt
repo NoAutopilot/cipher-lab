@@ -1,0 +1,1265 @@
+# Reading of Thurloe letter P17 (Lord Fauconberg to H. Cromwell, 1658) from the
+# decipherment Birch prints beside the cipher (1742), aligned by
+# tools/interlinear_align.py; combined-pool values from key_fauconberg.tsv kept at H.
+# Regenerate: python3 decode_fauconberg.py
+# 1255 cipher/clear tokens, alignment status: {'clear': 81, 'agrees': 929, 'single': 6, 'conflict': 100, 'null-or-unaligned': 103, 'doubtful': 31, 'repaired': 5}
+# Matched control: none run -- nothing cryptanalytic is claimed (CLAUDE.md rule 3
+# applies only to a cryptanalytic negative; this is an alignment of a printed plaintext).
+#
+# Columns: cipher_line  idx  raw  kind  value  repair  plain_chunk  status
+#==========================================================================
+32127	0	,'T'IS	clear				clear
+32127	1	With	clear				clear
+32127	2	38	num	38		u	agrees
+32127	3	27	num	27		n	agrees
+32127	4	II	num	11		e	agrees
+32127	5	42	num	42		x	single
+32127	6	31	num	31		p	agrees
+32127	7	35	num	35		r	agrees
+32127	8	II	num	11		e	agrees
+32127	9	34	num	34		f	agrees
+32127	10	3	num	3		a	agrees
+32127	11	2	num	2		b	agrees
+32127	12	23	num	23		l	agrees
+32127	13	II	num	11		e	agrees
+32127	14	15	num	15		g	agrees
+32127	15	35	num	35		r	agrees
+32127	16	II	num	11		e	agrees
+32127	17	19	num	19		i	agrees
+32127	18	10	num	10		f	agrees
+32127	19	19	num	19		i	agrees
+32127	20	27	num	27		n	agrees
+32127	21	26	num	26		o	agrees
+32127	22	43	num	43		w	agrees
+32127	23	\nthe	clear				clear
+32127	24	polTef-	clear				clear
+32130	0	15	num	15		g	agrees
+32130	1	19	num	19		v	conflict:i
+32130	2	38	num	38		e	conflict:u
+32130	3	"	clear				clear
+32130	4	your	clear				clear
+32130	5	lordfhipp	clear				clear
+32130	6	39	num	39		t	agrees
+32130	7	14	num	14		h	agrees
+32130	8	11	num	11		e	agrees
+32130	9	34	num	34		l	conflict:s
+32130	10	3	num	3		a	agrees
+32130	11	6	num	6		d	agrees
+32130	12	3	num	3		a	agrees
+32130	13	7	num	7		c	agrees
+32130	14	7	num	7		c	agrees
+32130	15	26	num	26		o	agrees
+32130	16	38	num	38		u	agrees
+32130	17	27	num	27		n	agrees
+32130	18	39	num	39		t	agrees
+32130	19	26	num	26		o	agrees
+32130	20	10	num	10		f	agrees
+32130	21	Z	clear				clear
+32130	22	7	num	7		h	conflict:c
+32130	23	26^^^	clear				clear
+32136	0	27	num	27			null-or-unaligned
+32136	1	6	num	6			null-or-unaligned
+32136	2	19	num	19			null-or-unaligned
+32136	3	39	num	39			null-or-unaligned
+32136	4	19	num	19			null-or-unaligned
+32136	5	39	num	39			null-or-unaligned
+32136	6	19	num	19			null-or-unaligned
+32136	7	26	num	26			null-or-unaligned
+32136	8	27,	num	27			null-or-unaligned
+32136	9	43	num	43			null-or-unaligned
+32136	10	14	num	14			null-or-unaligned
+32136	11	19	num	19		s	conflict:i
+32136	12	7	num	7			null-or-unaligned
+32136	13	14	num	14			null-or-unaligned
+32136	14	3	num	3			null-or-unaligned
+32136	15	23	num	23		r	conflict:l
+32136	16	39	num	39			null-or-unaligned
+32136	17	14	num	14			null-or-unaligned
+32136	18	11	num	11			null-or-unaligned
+32136	19	31	num	31		s	conflict:p
+32136	20	14	num	14		b	conflict:h
+32136	21	47	num	47		u	conflict:y
+32136	22	34	num	34		r	conflict:s
+32136	23	19	num	19		n	conflict:i
+32140	0	39	num	39			null-or-unaligned
+32140	1	19	num	19			null-or-unaligned
+32140	2	3	num	3			null-or-unaligned
+32140	3	27	num	27			null-or-unaligned
+32140	4	34	num	34			null-or-unaligned
+32140	5	14	num	14		h	agrees
+32140	6	3	num	3		w	conflict:a
+32140	7	38	num	38			null-or-unaligned
+32140	8	11	num	11		e	agrees
+32140	9	for	clear				clear
+32140	10	fome	clear				clear
+32140	11	dayes	clear				clear
+32140	12	19	num	19		j	conflict:i
+32140	13	38	num	38		u	agrees
+32140	14	6	num	6		l	conflict:d
+32140	15	15	num	15		g	agrees
+32140	16	6	num	6		q	conflict:d
+32140	17	6	num	6		d	agrees
+32140	18	3	num	3		a	agrees
+32140	19	27	num	27		n	agrees
+32140	20	15	num	15		g	agrees
+32140	21	11	num	11		e	agrees
+32140	22	35	num	35		r	agrees
+32140	23	26	num	26		o	agrees
+32144	0	38	num	38			null-or-unaligned
+32144	1	34,	num	34			null-or-unaligned
+32144	2	and	clear				clear
+32144	3	now	clear				clear
+32144	4	22	num	22		m	agrees
+32144	5	26	num	26		o	agrees
+32144	6	35	num	35		i	conflict:r
+32144	7	11	num	11		e	agrees
+32144	8	39	num	39		t	agrees
+32144	9	14	num	14		h	agrees
+32144	10	11	num	11		e	agrees
+32144	11	27	num	27		n	agrees
+32144	12	11	num	11		e	agrees
+32144	13	38	num	38		v	agrees
+32144	14	11	num	11		e	agrees
+32144	15	35.	num	35		r	agrees
+32144	16	39	num	39		t	agrees
+32144	17	14	num	14		h	agrees
+32144	18	26	num	26		o	agrees
+32144	19	14	num	14		h	agrees
+32144	20	19	num	19		i	agrees
+32144	21	34	num	34		s	agrees
+32148	0	23	num	23		i	conflict:l
+32148	1	26	num	26		o	agrees
+32148	2	34	num	34		l	conflict:s
+32148	3	34	num	34		s	agrees
+32148	4	muft	clear				clear
+32148	5	needs	clear				clear
+32148	6	7	num	7		c	agrees
+32148	7	3	num	3		a	agrees
+32148	8	35	num	35		r	agrees
+32148	9	35	num	35		r	agrees
+32148	10	47	num	47		y	agrees
+32148	11	43	num	43		w	agrees
+32148	12	11	num	11		e	agrees
+32148	13	19	num	19		i	agrees
+32148	14	15	num	15		g	agrees
+32148	15	14	num	14		n	conflict:h
+32148	16	39	num	39			null-or-unaligned
+32148	17	ynough	clear				clear
+32148	18	in	clear				clear
+32148	19	iffelfe,	clear				clear
+32148	20	47	num	47		c	conflict:y
+32152	0	11	num	11		e	agrees
+32152	1	39	num	39		t	agrees
+32152	2	the	clear				clear
+32152	3	confideration	clear				clear
+32152	4	of	clear				clear
+32152	5	39	num	39		t	agrees
+32152	6	14	num	14		h	agrees
+32152	7	11	num	11		e	agrees
+32152	8	22	num	22		m	agrees
+32152	9	19	num	19		i	agrees
+32152	10	34	num	34		l	conflict:s
+32152	11	11	num	11		e	agrees
+32152	12	35	num	35		r	agrees
+32152	13	3	num	3		r	conflict:a
+32152	14	2	num	2		u	conflict:b
+32152	15	23	num	23		u	conflict:l
+32152	16	11	num	11		e	agrees
+32152	17	31	num	31		p	agrees
+32152	18	26	num	26		o	agrees
+32152	19	34	num	34		i	conflict:s
+32152	20	39	num	39		i	conflict:t
+32152	21	38	num	38		u	agrees
+32156	0	35	num	35			null-or-unaligned
+32156	1	11	num	11			null-or-unaligned
+32156	2	14	num	14		h	agrees
+32156	3	11	num	11			null-or-unaligned
+32156	4	11	num	11		e	agrees
+32156	5	23	num	23		c	conflict:l
+32156	6	11	num	11		e	agrees
+32156	7	3	num	3			null-or-unaligned
+32156	8	38	num	38		v	agrees
+32156	9	34	num	34		s	agrees
+32156	10	sg	clear				clear
+32156	11	14	num	14		h	agrees
+32156	12	11	num	11		e	agrees
+32156	13	34	num	34		f	agrees
+32156	14	11	num	11		e	agrees
+32156	15	27	num	27		n	agrees
+32156	16	3	num	3		a	agrees
+32156	17	39	num	39		t	agrees
+32156	18	19	num	19		i	agrees
+32156	19	26	num	26		o	agrees
+32156	20	27	num	27		n	agrees
+32156	21	34	num	34		s	agrees
+32156	22	19	num	19		i	agrees
+32156	23	27	num	27		n	agrees
+32160	0	19	num	19		i	agrees
+32160	1	34	num	34		s	agrees
+32160	2	34	num	34		i	conflict:s
+32160	3	39	num	39		l	conflict:t
+32160	4	38	num	38		u	agrees
+32160	5	31	num	31		p	agrees
+32160	6	11	num	11		e	agrees
+32160	7	27	num	27		n	agrees
+32160	8	6	num	6		d	agrees
+32160	9	19	num	19		i	agrees
+32160	10	26	num	26		o	agrees
+32160	11	38	num	38		u	agrees
+32160	12	34.	num	34			null-or-unaligned
+32160	13	My	clear				clear
+32160	14	lord,	clear				clear
+32160	15	I	num	1		s	single
+32160	16	hold	clear				clear
+32160	17	it	clear				clear
+32160	18	my	clear				clear
+32160	19	duty	clear				clear
+32160	20	39	num	39		t	agrees
+32160	21	26	num	26		o	agrees
+32164	0	3	num	3		a	agrees
+32164	1	7	num	7		c	agrees
+32164	2	30	num	30		q	agrees
+32164	3	38	num	38		u	agrees
+32164	4	3	num	3		a	agrees
+32164	5	19	num	19			null-or-unaligned
+32164	6	27	num	27		n	agrees
+32164	7	39	num	39		t	agrees
+32164	8	47	num	47		y	agrees
+32164	9	26	num	26		o	agrees
+32164	10	38	num	38		u	agrees
+32164	11	14	num	14		h	agrees
+32164	12	26	num	26		o	agrees
+32164	13	43	num	43		w	agrees
+32164	14	43	num	43		w	agrees
+32164	15	11	num	11		e	agrees
+32164	16	11	num	11		e	agrees
+32164	17	34	num	34		i	conflict:s
+32164	18	39	num	39		t	agrees
+32164	19	3	num	3		a	agrees
+32164	20	27	num	27		n	agrees
+32164	21	6	num	6		d	agrees
+32164	22	3	num	3		a	agrees
+32164	23	39	num	39		t	agrees
+32164	24	3l	num	31		p	agrees
+32164	25	35	num	35		r	agrees
+32168	0	11	num	11			null-or-unaligned
+32168	1	34	num	34			null-or-unaligned
+32168	2	11	num	11			null-or-unaligned
+32168	3	27	num	27			null-or-unaligned
+32168	4	39;	num	39			null-or-unaligned
+32168	5	and	clear				clear
+32168	6	then	clear				clear
+32168	7	23	num	23		l	agrees
+32168	8	11	num	11		e	agrees
+32168	9	3	num	3		a	agrees
+32168	10	38	num	38		v	agrees
+32168	11	11	num	11		e	agrees
+32168	12	39	num	39		t	agrees
+32168	13	14	num	14		h	agrees
+32168	14	11	num	11		e	agrees
+32168	15	10	num	10		f	agrees
+32168	16	38	num	38		u	agrees
+32168	17	35	num	35		r	agrees
+32168	18	39	num	39		t	agrees
+32168	19	14	num	14		h	agrees
+32168	20	11	num	11		e	agrees
+32168	21	35	num	35		r	agrees
+32168	22	31	num	31			null-or-unaligned
+32172	0	35	num	35		r	agrees
+32172	1	26	num	26		o	agrees
+32172	2	j	clear				clear
+32172	3	11	num	11		e	agrees
+32172	4	11	num	11		e	agrees
+32172	5	6	num	6		d	agrees
+32172	6	26	num	26		o	agrees
+32172	7	10	num	10		t	conflict:f
+32172	8	^g	clear				clear
+32172	9	14	num	14		h	agrees
+32172	10	19	num	19		i	agrees
+32172	11	27	num	27		n	agrees
+32172	12	15	num	15		g	agrees
+32172	13	34	num	34		s	agrees
+32172	14	39	num	39		t	agrees
+32172	15	26	num	26		o	agrees
+32172	16	15	num	15		g	agrees
+32172	17	26	num	26		o	agrees
+32172	18	6	num	6		d	agrees
+32172	19	34	num	34		s	agrees
+32172	20	6	num	6		d	agrees
+32172	21	19	num	19		i	agrees
+32172	22	35	num	35		r	agrees
+32172	23	11	num	11		e	agrees
+32172	24	7	num	7		c	agrees
+32176	0	39	num	39			null-or-unaligned
+32176	1	19	num	19			null-or-unaligned
+32176	2	26	num	26			null-or-unaligned
+32176	3	27,	num	27			null-or-unaligned
+32176	4	3	num	3		a	agrees
+32176	5	27	num	27		n	agrees
+32176	6	6	num	6		d	agrees
+32176	7	47	num	47		y	agrees
+32176	8	26	num	26		o	agrees
+32176	9	38	num	38		u	agrees
+32176	10	35	num	35		r	agrees
+32176	11	23	num	23		l	agrees
+32176	12	26	num	26		o	agrees
+32176	13	35	num	35		r	agrees
+32176	14	6	num	6		d	agrees
+32176	15	34	num	34		f	agrees
+32176	16	14	num	14		h	agrees
+32176	17	19	num	19		i	agrees
+32176	18	31	num	31		p	agrees
+32176	19	34	num	34		s	agrees
+32176	20	43	num	43		w	agrees
+32176	21	19	num	19		i	agrees
+32176	22	34	num	34		f	agrees
+32176	23	6	num	6		d	agrees
+32176	24	26	num	26		o	agrees
+32181	0	3	num	3		a	agrees
+32181	1	34	num	34		i	conflict:s
+32181	2	38	num	38		u	agrees
+32181	3	7	num	7		c	agrees
+32181	4	7	num	7		c	agrees
+32181	5	11	num	11		e	agrees
+32181	6	34	num	34		f	agrees
+32181	7	34	num	34		l	conflict:s
+32181	8	26	num	26		b	conflict:o
+32181	9	35	num	35		r	agrees
+32181	10	there	clear				clear
+32181	11	is	clear				clear
+32181	12	27	num	27		n	agrees
+32181	13	26	num	26		o	agrees
+32181	14	27	num	27		n	agrees
+32181	15	11	num	11		e	agrees
+32181	16	27	num	27		n	agrees
+32181	17	3	num	3		a	agrees
+32181	18	22	num	22		m	agrees
+32181	19	11	num	11		e	agrees
+32181	20	6,	num	6		d	agrees
+32181	21	that	clear				clear
+32181	22	19	num	19		i	agrees
+32181	23	7	num	7		c	agrees
+32181	24	3	num	3		a	agrees
+32185	0	27	num	27			null-or-unaligned
+32185	1	23	num	23		l	agrees
+32185	2	11	num	11		e	agrees
+32185	3	3	num	3		a	agrees
+32185	4	35	num	35		r	agrees
+32185	5	27.	num	27		n	agrees
+32185	6	T.	clear				clear
+32185	7	has	clear				clear
+32185	8	feem'd	clear				clear
+32185	9	to	clear				clear
+32185	10	be	clear				clear
+32185	11	35	num	35		r	agrees
+32185	12	11	num	11		e	agrees
+32185	13	34	num	34		l	conflict:s
+32185	14	26	num	26		o	agrees
+32185	15	23	num	23		l	agrees
+32185	16	38	num	38		v	agrees
+32185	17	6	num	6		d	agrees
+32185	18	39	num	39		t	agrees
+32185	19	2&	doubtful			o	doubtful
+32185	20	31	num	31		p	agrees
+32185	21	35	num	35		r	agrees
+32185	22	u	clear				clear
+32189	0	34	num	34		h	conflict:s
+32189	1	34	num	34		i	conflict:s
+32189	2	H	clear				clear
+32189	3	-19	doubtful				doubtful
+32189	4	22	num	22		m	agrees
+32189	5	:9	num	9		i	single
+32189	6	27	num	27		n	agrees
+32189	7	H	clear				clear
+32189	8	J9	doubtful			hi	doubtful
+32189	9	34	num	34		s	agrees
+32189	10	19	num	19		i	agrees
+32189	11	27	num	27		n	agrees
+32189	12	39	num	39		t	agrees
+32189	13	IX	clear				clear
+32189	14	35	num	35		r	agrees
+32189	15	38	num	38		v	agrees
+32189	16	3	num	3		a	agrees
+32189	17	23	num	23		l	agrees
+32189	18	34	num	34		s	agrees
+32189	19	39	num	39		t	agrees
+32189	20	26	num	26		o	agrees
+32189	21	34	num	34		f	agrees
+32189	22	38	num	38		u	agrees
+32189	23	7	num	7		c	agrees
+32189	24	H	clear				clear
+32193	0	3	num	3		a	agrees
+32193	1	27	num	27		n	agrees
+32193	2	26	num	26		o	agrees
+32193	3	22	num	22		m	agrees
+32193	4	19	num	19		i	agrees
+32193	5	27	num	27		n	agrees
+32193	6	3	num	3		a	agrees
+32193	7	^g	clear				clear
+32193	8	19	num	19		i	agrees
+32193	9	26	num	26		o	agrees
+32193	10	27:	num	27		n	agrees
+32193	11	2	num	2		b	agrees
+32193	12	38	num	38		u	agrees
+32193	13	3^	doubtful			t	doubtful
+32193	14	43	num	43		w	agrees
+32193	15	14	num	14		h	agrees
+32193	16	11	num	11		e	agrees
+32193	17	39	num	39		t	agrees
+32193	18	14	num	14		h	agrees
+32193	19	11	num	11		e	agrees
+32193	20	35	num	35		r	agrees
+32193	21	26	num	26		o	agrees
+32193	22	38	num	38		u	agrees
+32193	23	3^	doubtful			t	doubtful
+32197	0	26	num	26		o	agrees
+32197	1	10	num	10		f	agrees
+32197	2	3	num	3		a	agrees
+32197	3	31	num	31		p	agrees
+32197	4	31	num	31		p	agrees
+32197	5	35	num	35		r	agrees
+32197	6	11	num	11		e	agrees
+32197	7	14	num	14		h	agrees
+32197	8	11	num	11		e	agrees
+32197	9	27	num	27		n	agrees
+32197	10	34	num	34		l	conflict:s
+32197	11	19	num	19		i	agrees
+32197	12	26	num	26		o	agrees
+32197	13	27	num	27		n	agrees
+32197	14	34	num	34		s	agrees
+32197	15	39	num	39		t	agrees
+32197	16	26	num	26		o	agrees
+32197	17	6	num	6		d	agrees
+32197	18	19	num	19		i	agrees
+32197	19	34	num	34		f	agrees
+32197	20	31	num	31		p	agrees
+32197	21	23	num	23		l	agrees
+32197	22	11	num	11		e	agrees
+32197	23	3	num	3		a	agrees
+32197	24	34	num	34		i	conflict:s
+32200	0	II	num	11			null-or-unaligned
+32200	1	14	num	14		h	agrees
+32200	2	19	num	19		i	agrees
+32200	3	22,	num	22		m	agrees
+32200	4	19	num	19		i	agrees
+32200	5	IO	num	10		t	conflict:f
+32200	6	35	num	35		r	agrees
+32200	7	II	num	11		e	agrees
+32200	8	7	num	7		c	agrees
+32200	9	26	num	26		o	agrees
+32200	10	38	num	38		v	agrees
+32200	11	II	num	11		e	agrees
+32200	12	35	num	35		r	agrees
+32200	13	19	num	19		i	agrees
+32200	14	27	num	27		n	agrees
+32200	15	15,	num	15		g	agrees
+32200	16	26	num	26		o	agrees
+32200	17	35	num	35		r	agrees
+32200	18	26	num	26		o	agrees
+32200	19	39	num	39		t	agrees
+32200	20	14	num	14		h	agrees
+32200	21	II	num	11		e	agrees
+32200	22	35	num	35		r	agrees
+32200	23	34	num	34		s	agrees
+32204	0	H	clear				clear
+32204	1	"	clear				clear
+32204	2	35	num	35		r	agrees
+32204	3	"	clear				clear
+32204	4	3	num	3		a	agrees
+32204	5	IO	num	10		f	agrees
+32204	6	39	num	39		t	agrees
+32204	7	ll	num	11		e	agrees
+32204	8	35>	doubtful		35	r	repaired
+32204	9	J9	doubtful			i	doubtful
+32204	10	IO	num	10		t	conflict:f
+32204	11	l9	num	19		i	agrees
+32204	12	39	num	39		t	agrees
+32204	13	34	num	34		f	agrees
+32204	14	H	clear				clear
+32204	15	36	num	36		o	single
+32204	16	38	num	38		u	agrees
+32204	17	23	num	23		l	agrees
+32204	18	6	num	6		d	agrees
+32204	19	27	num	27		n	agrees
+32204	20	26	num	26		o	agrees
+32204	21	39	num	39		t	agrees
+32204	22	34	num	34		i	conflict:s
+32204	23	38	num	38		u	agrees
+32208	0	77	num	77			null-or-unaligned
+32208	1	11	num	11			null-or-unaligned
+32208	2	11	num	11			null-or-unaligned
+32208	3	6,	num	6			null-or-unaligned
+32208	4	14	num	14		h	agrees
+32208	5	11	num	11		e	agrees
+32208	6	11	num	11		e	agrees
+32208	7	14	num	14		h	agrees
+32208	8	3	num	3		a	agrees
+32208	9	34	num	34		s	agrees
+32208	10	27	num	27		n	agrees
+32208	11	26	num	26		o	agrees
+32208	12	39	num	39		t	agrees
+32208	13	47	num	47		y	agrees
+32208	14	11	num	11		e	agrees
+32208	15	39	num	39		t	agrees
+32208	16	6	num	6		d	agrees
+32208	17	26	num	26		o	agrees
+32208	18	27	num	27		n	agrees
+32208	19	11	num	11		e	agrees
+32208	20	19	num	19		i	agrees
+32208	21	39,	num	39		t	agrees
+32208	22	27	num	27			null-or-unaligned
+32208	23	26	num	26			null-or-unaligned
+32212	0	35	num	35		r	agrees
+32212	1	6	num	6		d	agrees
+32212	2	26	num	26		o	agrees
+32212	3	11	num	11		e	agrees
+32212	4	19	num	19		i	agrees
+32212	5	2	num	2		b	agrees
+32212	6	11	num	11		e	agrees
+32212	7	23	num	23		l	agrees
+32212	8	11	num	11		e	agrees
+32212	9	19	num	19		i	agrees
+32212	10	38	num	38		v	agrees
+32212	11	11	num	11		e	agrees
+32212	12	43	num	43		w	agrees
+32212	13	19	num	19		i	agrees
+32212	14	23.	num	23		l	agrees
+32216	0	43	num	43		w	agrees
+32216	1	"	clear				clear
+32216	2	11	num	11		e	agrees
+32216	3	14	num	14		h	agrees
+32216	4	3.38	doubtful			av	doubtful
+32216	5	11	num	11		e	agrees
+32216	6	H	clear				clear
+32216	7	3	num	3		a	agrees
+32216	8	6	num	6		d	agrees
+32216	9	26	num	26		o	agrees
+32216	10	27	num	27		n	agrees
+32216	11	11	num	11		e	agrees
+32216	12	15	num	15		g	agrees
+32216	13	11	num	11		e	agrees
+32216	14	27	num	27		n	agrees
+32216	15	11	num	11		e	agrees
+32216	16	35	num	35		r	agrees
+32216	17	3	num	3		a	agrees
+32216	18	23	num	23		l	agrees
+32216	19	22	num	22		m	agrees
+32216	20	11	num	11		e	agrees
+32216	21	11	num	11		e	agrees
+32216	22	39	num	39		t	agrees
+32220	0	19	num	19			null-or-unaligned
+32220	1	27	num	27			null-or-unaligned
+32220	2	15	num	15			null-or-unaligned
+32220	3	26	num	26		o	agrees
+32220	4	10	num	10		f	agrees
+32220	5	3^	doubtful			t	doubtful
+32220	6	14	num	14		h	agrees
+32220	7	11	num	11		e	agrees
+32220	8	26	num	26		o	agrees
+32220	9	10	num	10		f	agrees
+32220	10	10	num	10		f	agrees
+32220	11	19	num	19		i	agrees
+32220	12	7	num	7		c	agrees
+32220	13	11	num	11		e	agrees
+32220	14	35	num	35		r	agrees
+32220	15	34,	num	34		s	agrees
+32220	16	3	num	3		a	agrees
+32220	17	27	num	27		n	agrees
+32220	18	6	num	6		d	agrees
+32220	19	3	num	3		a	agrees
+32220	20	35	num	35		r	agrees
+32220	21	11	num	11		e	agrees
+32220	22	3^	doubtful			t	doubtful
+32220	23	26	num	26		o	agrees
+32220	24	14	num	14			null-or-unaligned
+32224	0	3	num	3		a	agrees
+32224	1	38	num	38		v	agrees
+32224	2	11	num	11		e	agrees
+32224	3	3	num	3		a	agrees
+32224	4	27	num	27		n	agrees
+32224	5	26	num	26		o	agrees
+32224	6	39	num	39		t	agrees
+32224	7	14	num	14		h	agrees
+32224	8	11	num	11		e	agrees
+32224	9	35	num	35		r	agrees
+32224	10	39	num	39		t	agrees
+32224	11	26	num	26		o	agrees
+32224	12	6	num	6		d	agrees
+32224	13	3	num	3		a	agrees
+32224	14	47.	num	47		y	agrees
+32224	15	3	num	3		a	agrees
+32224	16	39	num	39		t	agrees
+32224	17	39	num	39		t	agrees
+32224	18	14	num	14		h	agrees
+32224	19	11	num	11		e	agrees
+32224	20	23	num	23		l	agrees
+32224	21	3	num	3		a	agrees
+32224	22	34	num	34		f	agrees
+32224	23	39	num	39		t	agrees
+32224	24	W.	clear				clear
+32228	0	3	num	3		a	agrees
+32228	1	27	num	27		n	agrees
+32228	2	6	num	6		d	agrees
+32228	3	Berry	clear				clear
+32228	4	26	num	26		o	agrees
+32228	5	27	num	27		n	agrees
+32228	6	11	num	11		e	agrees
+32228	7	23	num	23		l	agrees
+32228	8	47	num	47		y	agrees
+32228	9	31	num	31		p	agrees
+32228	10	35	num	35		r	agrees
+32228	11	3	num	3		a	agrees
+32228	12	19	num	19		i	agrees
+32228	13	6	num	6		d	agrees
+32228	14	38	num	38		v	agrees
+32228	15	11	num	11		e	agrees
+32228	16	35	num	35		r	agrees
+32228	17	47	num	47		y	agrees
+32228	18	27	num	27		n	agrees
+32228	19	26	num	26		o	agrees
+32228	20	39	num	39		t	agrees
+32228	21	19	num	19		i	agrees
+32228	22	26	num	26		o	agrees
+32228	23	27	num	27		n	agrees
+32232	0	3	num	3			null-or-unaligned
+32232	1	23	num	23			null-or-unaligned
+32232	2	23	num	23			null-or-unaligned
+32232	3	47	num	47			null-or-unaligned
+32232	4	2	num	2		b	agrees
+32232	5	26	num	26		o	agrees
+32232	6	39	num	39		t	agrees
+32232	7	14,	num	14		h	agrees
+32232	8	3	num	3		a	agrees
+32232	9	27	num	27		n	agrees
+32232	10	6	num	6		d	agrees
+32232	11	19	num	19		i	agrees
+32232	12	27	num	27		n	agrees
+32232	13	15	num	15		g	agrees
+32232	14	11	num	11		e	agrees
+32232	15	27	num	27		n	agrees
+32232	16	11	num	11		e	agrees
+32232	17	35	num	35		r	agrees
+32232	18	3	num	3		a	agrees
+32232	19	23	num	23		l	agrees
+32232	20	34,	num	34		s	agrees
+32232	21	26	num	26		o	agrees
+32232	22	27	num	27		n	agrees
+32232	23	11	num	11		t	conflict:e
+32232	24	23	num	23		l	agrees
+32236	0	47	num	47			null-or-unaligned
+32236	1	2	num	2		o	conflict:b
+32236	2	11	num	11		e	agrees
+32236	3	15	num	15		g	agrees
+32236	4	15	num	15		g	agrees
+32236	5	19	num	19		i	agrees
+32236	6	27	num	27		n	agrees
+32236	7	15	num	15		g	agrees
+32236	8	26	num	26		o	agrees
+32236	9	10	num	10		t	conflict:f
+32236	10	15	num	15		g	agrees
+32236	11	26	num	26		o	agrees
+32236	12	6	num	6		d	agrees
+32236	13	39	num	39		t	agrees
+32236	14	26	num	26		o	agrees
+32236	15	15	num	15		g	agrees
+32236	16	26	num	26		o	agrees
+32236	17	11	num	11		e	agrees
+32236	18	26	num	26		o	agrees
+32236	19	27	num	27		n	agrees
+32236	20	39	num	39		t	agrees
+32236	21	26	num	26		o	agrees
+32236	22	26	num	26		o	agrees
+32236	23	43	num	43		w	agrees
+32240	0	27	num	27			null-or-unaligned
+32240	1	11	num	11			null-or-unaligned
+32240	2	14	num	14		h	agrees
+32240	3	19	num	19		i	agrees
+32240	4	34	num	34		s	agrees
+32240	5	31	num	31		p	agrees
+32240	6	11	num	11		e	agrees
+32240	7	26	num	26		o	agrees
+32240	8	31	num	31		p	agrees
+32240	9	23	num	23		l	agrees
+32240	10	11,	num	11		e	agrees
+32240	11	3	num	3		a	agrees
+32240	12	26	num	26		n	conflict:o
+32240	13	6	num	6		a	conflict:d
+32240	14	39	num	39		t	agrees
+32240	15	26	num	26		o	agrees
+32240	16	18	num	18		k	agrees
+32240	17	11	num	11		e	agrees
+32240	18	11	num	11		e	agrees
+32240	19	31	num	31		p	agrees
+32240	20	38	num	38		u	agrees
+32240	21	31	num	31		p	agrees
+32240	22	3^	doubtful			r	doubtful
+32240	23	14	num	14		h	agrees
+32244	0	11	num	11			null-or-unaligned
+32244	1	19	num	19			null-or-unaligned
+32244	2	35	num	35			null-or-unaligned
+32244	3	14	num	14		h	agrees
+32244	4	3	num	3		a	agrees
+32244	5	35	num	35		r	agrees
+32244	6	39	num	39		t	agrees
+32244	7	34	num	34		s	agrees
+32244	8	39	num	39		t	agrees
+32244	9	26	num	26		o	agrees
+32244	10	6	num	6		d	agrees
+32244	11	2$	doubtful			oeh	doubtful
+32244	12	n	clear				clear
+32244	13	H	clear				clear
+32244	14	19	num	19		i	agrees
+32244	15	34	num	34		s	agrees
+32244	16	43	num	43		w	agrees
+32244	17	26	num	26		o	agrees
+32244	18	35	num	35		r	agrees
+32244	19	18.	num	18		k	agrees
+32248	0	14	num	14		h	agrees
+32248	1	26	num	26		o	agrees
+32248	2	27	num	27		n	agrees
+32248	3	11	num	11		e	agrees
+32248	4	34	num	34		f	agrees
+32248	5	39	num	39		t	agrees
+32248	6	Ingolfby	clear				clear
+32248	7	3	num	3		a	agrees
+32248	8	27	num	27		n	agrees
+32248	9	6	num	6		d	agrees
+32248	10	B.	clear				clear
+32248	11	43	num	43		w	agrees
+32248	12	11	num	11		e	agrees
+32248	13	35	num	35		r	agrees
+32248	14	11	num	11		e	agrees
+32248	15	39	num	39		t	agrees
+32248	16	14	num	14		h	agrees
+32248	17	11	num	11		e	agrees
+32248	18	26	num	26		o	agrees
+32248	19	27	num	27		n	agrees
+32248	20	n	clear				clear
+32252	0	23	num	23			null-or-unaligned
+32252	1	47	num	47			null-or-unaligned
+32252	2	31	num	31		p	agrees
+32252	3	11	num	11		e	agrees
+32252	4	35	num	35		r	agrees
+32252	5	34	num	34		f	agrees
+32252	6	26	num	26		o	agrees
+32252	7	27	num	27		n	agrees
+32252	8	34	num	34		s	agrees
+32252	9	27	num	27		n	agrees
+32252	10	26	num	26		o	agrees
+32252	11	3^	doubtful			t	doubtful
+32252	12	34	num	34		l	conflict:s
+32252	13	38	num	38		u	agrees
+32252	14	22	num	22		m	agrees
+32252	15	22	num	22		m	agrees
+32252	16	26	num	26		o	agrees
+32252	17	27	num	27		n	agrees
+32252	18	6	num	6		d	agrees
+32252	19	39	num	39		t	agrees
+32252	20	26	num	26		o	agrees
+32252	21	3^	doubtful			t	doubtful
+32252	22	14	num	14		h	agrees
+32252	23	19	num	19		i	agrees
+32255	0	34	num	34			null-or-unaligned
+32255	1	22	num	22		m	agrees
+32255	2	II	num	11		e	agrees
+32255	3	II	num	11		e	agrees
+32255	4	39	num	39		t	agrees
+32255	5	19	num	19		i	agrees
+32255	6	27	num	27		n	agrees
+32255	7	15;	num	15		g	agrees
+32255	8	2	num	2		b	agrees
+32255	9	47	num	47		y	agrees
+32255	10	43	num	43		w	agrees
+32255	11	14	num	14		n	conflict:h
+32255	12	19	num	19		i	agrees
+32255	13	7	num	7		c	agrees
+32255	14	14	num	14		h	agrees
+32255	15	47	num	47		y	agrees
+32255	16	26	num	26		o	agrees
+32255	17	38	num	38		u	agrees
+32255	18	22	num	22		m	agrees
+32255	19	3	num	3		a	agrees
+32255	20	47	num	47		y	agrees
+32255	21	15	num	15		g	agrees
+32255	22	38	num	38		u	agrees
+32255	23	II	num	11		c	conflict:e
+32258	0	34	num	34			null-or-unaligned
+32258	1	34	num	34			null-or-unaligned
+32258	2	3	num	3		a	agrees
+32258	3	39	num	39		t	agrees
+32258	4	34	num	34		f	agrees
+32258	5	26	num	26		o	agrees
+32258	6	22	num	22		m	agrees
+32258	7	39	num	39		t	agrees
+32258	8	14	num	14		h	agrees
+32258	9	19	num	19		i	agrees
+32258	10	27	num	27		n	agrees
+32258	11	15.	num	15		g	agrees
+32266	0	u'Y\j	clear				clear
+32266	1	23	num	23		l	agrees
+32266	2	3	num	3		i	conflict:a
+32266	3	34	num	34		f	agrees
+32266	4	39	num	39		t	agrees
+32266	5	27	num	27		n	agrees
+32266	6	J9	doubtful			i	doubtful
+32266	7	J5	doubtful			gh	doubtful
+32266	8	H	clear				clear
+32266	9	39	num	39		t	agrees
+32266	10	l9	num	19		i	agrees
+32266	11	3	num	3		a	agrees
+32266	12	7	num	7		c	agrees
+32266	13	3°	num	30		q	agrees
+32266	14	3§	doubtful			u	doubtful
+32266	15	3	num	3		a	agrees
+32266	16	J9	doubtful				doubtful
+32266	17	27	num	27		n	agrees
+32266	18	39	num	39		t	agrees
+32266	19	M	clear				clear
+32266	20	6	num	6		d	agrees
+32266	21	Dr.	clear				clear
+32266	22	Petty	clear				clear
+32266	23	43	num	43		w	agrees
+32266	24	19	num	19		i	agrees
+32270	0	39	num	39		t	agrees
+32270	1	14	num	14		h	agrees
+32270	2	39	num	39			null-or-unaligned
+32270	3	14	num	14			null-or-unaligned
+32270	4	11	num	11		e	agrees
+32270	5	43	num	43		w	agrees
+32270	6	14	num	14		i	conflict:h
+32270	7	26	num	26		o	agrees
+32270	8	23	num	23		e	conflict:l
+32270	9	n	clear				clear
+32270	10	34	num	34		f	agrees
+32270	11	39	num	39		t	agrees
+32270	12	3	num	3		a	agrees
+32270	13	39	num	39		t	agrees
+32270	14	JI	clear				clear
+32270	15	26	num	26		o	agrees
+32270	16	IO	num	10		f	agrees
+32270	17	20"	num	20		o	single
+32270	18	38	num	38		u	agrees
+32270	19	35	num	35		r	agrees
+32270	20	3	num	3		a	agrees
+32270	21	IO	num	10		f	agrees
+32270	22	I0	num	10		f	agrees
+32270	23	3	num	3		a	agrees
+32270	24	J9	doubtful			rs	doubtful
+32274	0	35	num	35			null-or-unaligned
+32274	1	34>	doubtful				doubtful
+32274	2	39	num	39		t	agrees
+32274	3	14	num	14		h	agrees
+32274	4	IX	clear				clear
+32274	5	31	num	31		p	agrees
+32274	6	,35	num	35		r	agrees
+32274	7	*?	clear				clear
+32274	8	27	num	27		n	agrees
+32274	9	7	num	7		c	agrees
+32274	10	J9	doubtful			i	doubtful
+32274	11	31	num	31		p	agrees
+32274	12	23	num	23		i	conflict:l
+32274	13	"	clear				clear
+32274	14	34	num	34		s	agrees
+32274	15	3	num	3			null-or-unaligned
+32274	16	27	num	27		n	agrees
+32274	17	6	num	6		o	conflict:d
+32274	18	x9	doubtful		9	i	repaired
+32274	19	27	num	27		n	agrees
+32274	20	39	num	39		t	agrees
+32274	21	"	clear				clear
+32274	22	35	num	35		r	agrees
+32274	23	"	clear				clear
+32278	0	g4	doubtful				doubtful
+32278	1	39	num	39			null-or-unaligned
+32278	2	34	num	34			null-or-unaligned
+32278	3	26	num	26		o	agrees
+32278	4	10	num	10		f	agrees
+32278	5	11	num	11		e	agrees
+32278	6	38	num	38		v	agrees
+32278	7	11	num	11		e	agrees
+32278	8	35	num	35		r	agrees
+32278	9	47	num	47		y	agrees
+32278	10	J9	doubtful				doubtful
+32278	11	27	num	27			null-or-unaligned
+32278	12	6	num	6		d	agrees
+32278	13	19	num	19		i	agrees
+32278	14	38	num	38		v	agrees
+32278	15	J9	doubtful			i	doubtful
+32278	16	6	num	6		d	agrees
+32278	17	38	num	38		u	agrees
+32278	18	3	num	3		a	agrees
+32278	19	23	num	23		l	agrees
+32278	20	43	num	43		w	agrees
+32278	21	H	clear				clear
+32278	22	19	num	19		n	conflict:i
+32278	23	7	num	7		h	conflict:c
+32278	24	*4	doubtful				doubtful
+32282	0	19	num	19		l	conflict:i
+32282	1	39	num	39		t	agrees
+32282	2	14	num	14		b	conflict:h
+32282	3	19	num	19			null-or-unaligned
+32282	4	27	num	27		n	agrees
+32282	5	18	num	18		k	agrees
+32282	6	19	num	19		l	conflict:i
+32282	7	27	num	27		n	agrees
+32282	8	26	num	26		o	agrees
+32282	9	43	num	43		w	agrees
+32282	10	38	num	38		u	agrees
+32282	11	27	num	27		n	agrees
+32282	12	6	num	6		f	conflict:d
+32282	13	11	num	11		e	agrees
+32282	14	35	num	35		r	agrees
+32282	15	34	num	34		f	agrees
+32282	16	39	num	39		l	conflict:t
+32282	17	3	num	3		j	conflict:a
+32282	18	27	num	27		i	conflict:n
+32282	19	6	num	6		b	conflict:d
+32282	20	19	num	19		f	conflict:i
+32282	21	27	num	27		r	conflict:n
+32282	22	6	num	6		i	conflict:d
+32282	23	19	num	19		c	conflict:i
+32282	24	10	num	10		f	agrees
+32286	0	10	num	10			null-or-unaligned
+32286	1	11	num	11		w	conflict:e
+32286	2	35	num	35			null-or-unaligned
+32286	3	11	num	11		e	agrees
+32286	4	27	num	27		n	agrees
+32286	5	39	num	39			null-or-unaligned
+32286	6	43	num	43			null-or-unaligned
+32286	7	11	num	11			null-or-unaligned
+32286	8	23	num	23			null-or-unaligned
+32286	9	43	num	43		w	agrees
+32286	10	19	num	19		i	agrees
+32286	11	3^	doubtful			t	doubtful
+32286	12	14	num	14		h	agrees
+32286	13	22	num	22		m	agrees
+32286	14	47	num	47		y	agrees
+32286	15	26	num	26		o	agrees
+32286	16	43	num	43		w	agrees
+32286	17	27	num	27		u	conflict:n
+32286	18	11	num	11		e	agrees
+32286	19	26	num	26		o	agrees
+32286	20	31	num	31		p	agrees
+32286	21	19	num	19		m	conflict:i
+32286	22	27	num	27		o	conflict:n
+32286	23	19	num	19		n	conflict:i
+32290	0	26	num	26			null-or-unaligned
+32290	1	27	num	27			null-or-unaligned
+32290	2	43	num	43		w	agrees
+32290	3	14	num	14		i	conflict:h
+32290	4	3	num	3		l	conflict:a
+32290	5	39	num	39		l	conflict:t
+32290	6	34	num	34		s	agrees
+32290	7	39	num	39		t	agrees
+32290	8	26	num	26		o	agrees
+32290	9	2	num	2		b	agrees
+32290	10	11	num	11		e	agrees
+32290	11	6	num	6		c	conflict:d
+32290	12	26	num	26		o	agrees
+32290	13	27	num	27		i	conflict:n
+32290	14	11:	num	11		e	agrees
+32290	15	3^	doubtful			t	doubtful
+32290	16	26	num	26		o	agrees
+32290	17	14	num	14		h	agrees
+32290	18	19	num	19		i	agrees
+32290	19	34	num	34		s	agrees
+32290	20	23	num	23			null-or-unaligned
+32290	21	II	num	11			null-or-unaligned
+32290	22	39	num	39		t	agrees
+32290	23	39	num	39		o	conflict:t
+32294	0	11	num	11			null-or-unaligned
+32294	1	35	num	35		i	conflict:r
+32294	2	19	num	19		i	agrees
+32294	3	22	num	22		n	conflict:m
+32294	4	38	num	38		u	agrees
+32294	5	34	num	34		f	agrees
+32294	6	39	num	39		t	agrees
+32294	7	35	num	35		r	agrees
+32294	8	11	num	11		e	agrees
+32294	9	10	num	10		f	agrees
+32294	10	11	num	11		e	agrees
+32294	11	35	num	35		r	agrees
+32294	12	47	num	47			null-or-unaligned
+32294	13	26	num	26		l	conflict:o
+32294	14	38.	num	38		l	conflict:u
+32298	0	39	num	39		t	agrees
+32298	1	14	num	14		i	conflict:h
+32298	2	11	num	11		l	conflict:e
+32298	3	26	num	26		o	agrees
+32298	4	10	num	10		f	agrees
+32298	5	10	num	10		f	agrees
+32298	6	19	num	19		i	agrees
+32298	7	7	num	7		c	agrees
+32298	8	11	num	11		e	agrees
+32298	9	35	num	35		r	agrees
+32298	10	34	num	34		s	agrees
+32298	11	22	num	22		m	agrees
+32298	12	"	clear				clear
+32298	13	39	num	39		t	agrees
+32298	14	3	num	3		a	agrees
+32298	15	*5	doubtful		15	g	repaired
+32298	16	3	num	3		a	agrees
+32298	17	I9	num	19		i	agrees
+32298	18	27	num	27		n	agrees
+32298	19	39	num	39		t	agrees
+32298	20	2&	doubtful				doubtful
+32298	21	6	num	6		o	conflict:d
+32298	22	3	num	3		a	agrees
+32298	23	47»	doubtful		47	y	repaired
+32302	0	2	num	2		b	agrees
+32302	1	38	num	38		u	agrees
+32302	2	39	num	39		t	agrees
+32302	3	27	num	27		n	agrees
+32302	4	26	num	26		o	agrees
+32302	5	39	num	39		t	agrees
+32302	6	14	num	14		h	agrees
+32302	7	19	num	19		i	agrees
+32302	8	27	num	27		n	agrees
+32302	9	15	num	15		g	agrees
+32302	10	6	num	6		d	agrees
+32302	11	II	num	11		e	agrees
+32302	12	2	num	2		b	agrees
+32302	13	3	num	3		a	agrees
+32302	14	39	num	39		t	agrees
+32302	15	II	num	11		e	agrees
+32302	16	6	num	6		d	agrees
+32302	17	2	num	2		b	agrees
+32302	18	47	num	47		y	agrees
+32302	19	39	num	39		t	agrees
+32302	20	14	num	14		h	agrees
+32302	21	II	num	11		e	agrees
+32302	22	22	num	22		m	agrees
+32302	23	39	num	39		t	agrees
+32302	24	14	num	14		h	agrees
+32302	25	II	num	11		e	agrees
+32306	0	43	num	43		w	agrees
+32306	1	14	num	14		h	agrees
+32306	2	26	num	26		o	agrees
+32306	3	23	num	23		i	conflict:l
+32306	4	11	num	11		e	agrees
+32306	5	39	num	39		t	agrees
+32306	6	19	num	19		i	agrees
+32306	7	22	num	22		m	agrees
+32306	8	11	num	11		e	agrees
+32306	9	39	num	39		t	agrees
+32306	10	14	num	14		h	agrees
+32306	11	11	num	11		e	agrees
+32306	12	47	num	47		y	agrees
+32306	13	34	num	34		j	conflict:s
+32306	14	31	num	31		p	agrees
+32306	15	11	num	11		e	agrees
+32306	16	27	num	27		n	agrees
+32306	17	3^	doubtful			r	doubtful
+32306	18	19	num	19		i	agrees
+32306	19	27	num	27		n	agrees
+32306	20	31	num	31		p	agrees
+32306	21	35	num	35		r	agrees
+32306	22	3	num	3		a	agrees
+32306	23	19	num	19		i	agrees
+32310	0	'	clear				clear
+32310	1	11	num	11			null-or-unaligned
+32310	2	35-	doubtful				doubtful
+32310	3	3	num	3		a	agrees
+32310	4	34	num	34		s	agrees
+32310	5	3	num	3			null-or-unaligned
+32310	6	27	num	27		n	agrees
+32310	7	47	num	47		y	agrees
+32310	8	39	num	39		t	agrees
+32310	9	J4	doubtful		14	h	repaired
+32310	10	19	num	19		m	conflict:i
+32310	11	27	num	27		g	conflict:n
+32310	12	J5	doubtful				doubtful
+32310	13	22	num	22		m	agrees
+32310	14	3	num	3		a	agrees
+32310	15	39	num	39		t	agrees
+32310	16	"	clear				clear
+32310	17	35	num	35		r	agrees
+32310	18	19	num	19		i	agrees
+32310	19	3	num	3		a	agrees
+32310	20	23	num	23		l	agrees
+32310	21	10	num	10			null-or-unaligned
+32310	22	3	num	3		i	conflict:a
+32310	23	23	num	23		l	agrees
+32310	24	34	num	34		s	agrees
+32322	0	Z.	clear				clear
+32322	1	19	num	19		i	agrees
+32322	2	34	num	34		s	agrees
+32322	3	27	num	27		n	agrees
+32322	4	26	num	26		o	agrees
+32322	5	43	num	43		w	agrees
+32322	6	2	num	2		b	agrees
+32322	7	II	num	11		e	agrees
+32322	8	47	num	47		y	agrees
+32322	9	26	num	26		o	agrees
+32322	10	27	num	27		n	agrees
+32322	11	6	num	6		d	agrees
+32322	12	3	num	3		a	agrees
+32322	13	23	num	23			null-or-unaligned
+32322	14	31	num	31		p	agrees
+32322	15	29	num	29		o	single
+32322	16	34	num	34		f	agrees
+32322	17	34	num	34		i	conflict:s
+32322	18	19	num	19		l	conflict:i
+32322	19	2	num	2		b	agrees
+32322	20	19	num	19		i	agrees
+32322	21	23	num	23		l	agrees
+32322	22	23	num	23		l	agrees
+32322	23	19	num	19		i	agrees
+32325	0	39	num	39			null-or-unaligned
+32325	1	47	num	47			null-or-unaligned
+32325	2	26	num	26		o	agrees
+32325	3	10	num	10		f	agrees
+32325	4	35	num	35		r	agrees
+32325	5	11	num	11		e	agrees
+32325	6	7	num	7		c	agrees
+32325	7	26	num	26		o	agrees
+32325	8	38	num	38		v	agrees
+32325	9	11	num	11		e	agrees
+32325	10	35	num	35		r	agrees
+32325	11	47.	num	47		y	agrees
+32329	0	19	num	19		i	agrees
+32329	1	23	num	23		l	agrees
+32329	2	26	num	26		o	agrees
+32329	3	27	num	27		n	agrees
+32329	4	15	num	15		e	conflict:g
+32329	5	36	num	36		t	conflict:o
+32329	6	26	num	26		o	agrees
+32329	7	14	num	14		h	agrees
+32329	8	11	num	11		e	agrees
+32329	9	3	num	3		a	agrees
+32329	10	35	num	35		r	agrees
+32329	11	11	num	11		e	agrees
+32329	12	10	num	10		f	agrees
+32329	13	35	num	35		r	agrees
+32329	14	26	num	26		o	agrees
+32329	15	22	num	22		m	agrees
+32329	16	A.	clear				clear
+32329	17	43	num	43		w	agrees
+32329	18	14	num	14		h	agrees
+32329	19	3	num	3		a	agrees
+32329	20	39	num	39		t	agrees
+32329	21	14	num	14		h	agrees
+32329	22	1934	doubtful			s	doubtful
+32333	0	19	num	19		i	agrees
+32333	1	27	num	27		n	agrees
+32333	2	39	num	39		t	agrees
+32333	3	II	num	11		e	agrees
+32333	4	27	num	27		n	agrees
+32333	5	39	num	39		t	agrees
+32333	6	19	num	19		i	agrees
+32333	7	26	num	26		o	agrees
+32333	8	27	num	27		n	agrees
+32333	9	34	num	34		s	agrees
+32333	10	3	num	3		a	agrees
+32333	11	35	num	35		r	agrees
+32333	12	II	num	11		e	agrees
+32333	13	J	clear				clear
+32333	14	19	num	19		i	agrees
+32333	15	IO	num	10		f	agrees
+32333	16	19	num	19		i	agrees
+32333	17	22	num	22		m	agrees
+32333	18	3	num	3		a	agrees
+32333	19	47	num	47		y	agrees
+32333	20	18	num	18		k	agrees
+32333	21	27	num	27		n	agrees
+32333	22	26	num	26		o	agrees
+32333	23	43,	num	43		w	agrees
+32337	0	19	num	19			null-or-unaligned
+32337	1	23	num	23		f	conflict:l
+32337	2	11	num	11		e	agrees
+32337	3	22	num	22		m	agrees
+32337	4	18	num	18		k	agrees
+32337	5	11	num	11		e	agrees
+32337	6	39	num	39		t	agrees
+32337	7	14	num	14		h	agrees
+32337	8	11	num	11		e	agrees
+32337	9	15	num	15		g	agrees
+32337	10	3	num	3		a	agrees
+32337	11	22	num	22		m	agrees
+32337	12	11	num	11		e	agrees
+32337	13	14	num	14		h	agrees
+32337	14	11	num	11		e	agrees
+32337	15	35	num	35		r	agrees
+32337	16	11	num	11		e	agrees
+32337	17	3	num	3		a	agrees
+32337	18	34	num	34		s	agrees
+32337	19	10	num	10		f	agrees
+32337	20	3	num	3		a	agrees
+32337	21	19	num	19		i	agrees
+32337	22	35	num	35		r	agrees
+32337	23	11	num	11		e	agrees
+32341	0	3	num	3		a	agrees
+32341	1	34	num	34		s	agrees
+32341	2	22	num	22		m	agrees
+32341	3	3	num	3		a	agrees
+32341	4	47	num	47		y	agrees
+32341	5	2	num	2		b	agrees
+32341	6	II	num	11		e	agrees
+32341	7	;	clear				clear
+32341	8	3	num	3		a	agrees
+32341	9	27	num	27		n	agrees
+32341	10	6	num	6		d	agrees
+32341	11	19	num	19		i	agrees
+32341	12	IO	num	10		f	agrees
+32341	13	19	num	19		i	agrees
+32341	14	22	num	22		m	agrees
+32341	15	3	num	3		a	agrees
+32341	16	47	num	47		y	agrees
+32341	17	14	num	14		h	agrees
+32341	18	3	num	3		a	agrees
+32341	19	38	num	38		v	agrees
+32341	20	II	num	11		e	agrees
+32341	21	7	num	7		c	agrees
+32341	22	26	num	26		o	agrees
+32341	23	22	num	22		m	agrees
+32341	24	22	num	22		m	agrees
+32341	25	19	num	19		i	agrees
+32341	26	34	num	34		m	conflict:s
+32345	0	34	num	34			null-or-unaligned
+32345	1	19	num	19			null-or-unaligned
+32345	2	26	num	26			null-or-unaligned
+32345	3	27	num	27			null-or-unaligned
+32345	4	IO	num	10		f	agrees
+32345	5	35	num	35		r	agrees
+32345	6	26	num	26		o	agrees
+32345	7	22	num	22		m	agrees
+32345	8	A.	clear				clear
+32345	9	19	num	19		i	agrees
+32345	10	7	num	7		c	agrees
+32345	11	3	num	3		a	agrees
+32345	12	27	num	27		n	agrees
+32345	13	22	num	22		m	agrees
+32345	14	3	num	3		a	agrees
+32345	15	l8	num	18		k	agrees
+32345	16	II	num	11		e	agrees
+32345	17	34	num	34		f	agrees
+32345	18	38	num	38		u	agrees
+32345	19	35	num	35		r	agrees
+32345	20	II	num	11		e	agrees
+32345	21	26	num	26		o	agrees
+32345	22	IO	num	10		f	agrees
+32345	23	23	num	23		l	agrees
+32345	24	26	num	26		o	agrees
+32349	0	35	num	35			null-or-unaligned
+32349	1	6	num	6			null-or-unaligned
+32349	2	23	num	23		l	agrees
+32349	3	26	num	26		o	agrees
+32349	4	7	num	7		c	agrees
+32349	5	18	num	18		k	agrees
+32349	6	3	num	3		a	agrees
+32349	7	35	num	35		r	agrees
+32349	8	39	num	39		t	agrees
+32349	9	3	num	3		a	agrees
+32349	10	27	num	27		n	agrees
+32349	11	6	num	6		d	agrees
+32349	12	39	num	39		t	agrees
+32349	13	14	num	14		h	agrees
+32349	14	26	num	26		o	agrees
+32349	15	34	num	34		l	conflict:s
+32349	16	11	num	11		e	agrees
+32349	17	43	num	43		w	agrees
+32349	18	19	num	19			null-or-unaligned
+32349	19	39	num	39		h	conflict:t
+32349	20	14	num	14		h	agrees
+32349	21	19	num	19		i	agrees
+32349	22	22.	num	22		m	agrees
