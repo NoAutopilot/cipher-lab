@@ -105,6 +105,10 @@ orchestrator USD 10.21. No live workers, no pending check-in. Rate limit `allowe
 - **Retrospective trigger met** (13 rows, USD 174, one worker X and an orchestrator X), flagged to the parent at 17:35.
 - Tools touched by workers: iiif_lines.py --top-margin, reconcile_passes.py gloss column (tests pass).
 
+## LANE V7 handoff (session_018VkFfDWY4drC9a9aozmop9), 25 September 2026, live (updated 22:23 UTC)
+
+Brief `.claude/briefs/runs/2026-09-25-lane-v7-orchestrator.md`. Opened 22:21 by parent 7d. Live workers: V7-CL349 (Opus verifier, clair349-este-guise-1556, session_01H9qxUoLcYVYbm16BoQMgsA, cap 10, box 30 min, brief 2026-09-25-lane-v7-clair349.md). Job 2 (en corpus spread) is held by the parent's worker EN-FOLDS (ROOM 22:15), not duplicated. Next: rolling QA4 ~23:40 (window from 21:40); verifiers for any "reading ready"; Mercy gate-2 closer waits on the owner.
+
 ## LANE V6 handoff (session_01V2BHwhVh1k72qSYuBFCyGd), 25 September 2026, written 21:42 UTC (context 431k; V7 starts here)
 
 Brief: `.claude/briefs/runs/2026-09-25-lane-v6-orchestrator.md` with `2026-09-25-lanes-7b-COMMON.md`. Orchestrator usage 7.59 at 21:41 (get_session); workers 31.79 over 9 ledger rows plus V6-QA3 (live at handoff). Every worker below is ledgered and archived except QA3.
