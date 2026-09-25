@@ -19,6 +19,11 @@ collection 1.01.02.
 
 **Where to send it:** Nationaal Archief, The Hague, via their standard reproduction-request route.
 
-**Status:** waiting on you. Stage 2 (verified unsolved) -- see NOTES.md's check-solved sweep. NOTES.md flags one
-still-open lead (C.M. van der Kemp's *Maurits van Nassau*, Deel IV, p.391) that should be checked before this
-row is used for outreach; that does not block the archive copy request.
+**Status:** waiting on you, but lower urgency after 25 Sept 2026. NOTES.md's print check (25 Sept 2026) closed
+the Van der Kemp IV p.391 lead negative (it prints only Maurits's bridge letter, nothing of Breda's), but found
+a separate 1868 print -- G.G. van der Hoeven, *Geschiedenis der vesting Breda*, Bijlage XIX (p. xxxii) -- whose
+sender, recipient, date and content all match this letter, giving what is on every identifying detail checked
+the letter's plaintext. NOTES.md marks the row **found-solved**, pending a verifier's read of Van der Hoeven's
+own source note for the bijlage. The archive copy is still worth having (to confirm the cipher-to-plaintext
+mapping and cover Dras's and Maurits's letters in the same bundle), but this request no longer gates a "no
+print found" outcome and should not be treated as urgent.

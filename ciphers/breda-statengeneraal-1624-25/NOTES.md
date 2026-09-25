@@ -1,4 +1,4 @@
-open
+found-solved
 
 # Magistrate of Breda to the States-General, letter almost entirely in cipher, 18 September 1624
 
@@ -140,3 +140,111 @@ after WebFetch's own PDF text layer proved unreadable). `github.com`: 2 shallow 
 `aaymeloglu/unsolved-ciphers`), grepped, not committed. DECODE and Cryptiana checks used files already on disk,
 no network. No subagents (brief did not name any). No archive.org, no Google Books (both out of scope per the
 brief's common rules).
+
+## Print check, 25 September 2026 (LANE OX, OX-BRE) -- FOUND-SOLVED
+
+Brief: `.claude/briefs/runs/2026-09-25-lane-ox-bre.md`, checking the one open lead this row's own check-solved
+sweep flagged -- C.M. van der Kemp, *Maurits van Nassau, Prins van Oranje*, Deel IV, p.391 -- before any copy
+order goes forward.
+
+### Step 1: Van der Kemp IV, p.391 -- negative, but pins the volume
+
+Located three separate Google Books full-view scans of the same edition (Van der Meer & Verbruggen, 1843):
+`KY86AAAAcAAJ` (404pp), `xSoSHj5nkpwC` (434pp), `EldbAAAAQAAJ` (426pp). Confirmed `KY86AAAAcAAJ` is the
+scan whose own printed pagination matches the resolution register's citation: Google Books'
+search-within-volume endpoint (`jscmd=SearchWithinVolume`) places the phrase "Kranenburg... brug te slaan
+over de Waal bij St. Andries..." -- the exact bridge-plan content the *Resolutiën* footnote (573b) cites --
+at `page_number: "391"`, `page_id: PA391`. This is Van der Kemp's own account of Maurits's 18 Sept 1624
+letter about the Sint Andries bridge, matching the resolution summary closely.
+
+Searched the same volume (`KY86AAAAcAAJ`) for `"magistraat" Breda` (0 hits) and `cijferschrift` (0 hits,
+whole-book search-within-volume, not just p.391 and neighbours). **Van der Kemp IV prints nothing of the
+Breda magistrate's cipher letter, its content, or a decipherment, anywhere in the volume.** The lead flagged
+in the check-solved sweep is closed negative on its own terms.
+
+### Step 2: broader term search -- found the letter itself, in clear, elsewhere
+
+Google Books full-text search (not restricted to Van der Kemp) for `"magistraat van Breda"` and
+`"cijferschrift" "Breda"` surfaced G.G. van der Hoeven, *Geschiedenis der vesting Breda* (1868), two Google
+Books scans: `nZl28awLRfUC` (279pp) and `DIc6AAAAcAAJ`, both full view. Both give the identical hit:
+
+> "BIJLAGE XIX. Brief van het Stedelijk bestuur van Breda aan de Staten Generaal, van 18 Sept. 1624. HoogEd.
+> Mog. erntfeste, wyse, seer discrete Heeren. Alsoo wy nu in de vierde weke besloten syn, hebben wy met
+> groote moeyte uyt onse borgerye sooveel gelts gekregen als tot de leeninge van soo veel compagnien ende
+> make van wercken noodich is geweest ende verhoope noch voor eenige dagen dair in te con[tinueren]..."
+
+Pinned via `jscmd=SearchWithinVolume` on `nZl28awLRfUC`: the bijlage heading and its opening lines are both
+on `page_id PR32`, `page_number "xxxii"` (a roman-numbered front-matter appendix section, not the Arabic-
+numbered main narrative). Sender, recipient and date match the target exactly: "Stedelijk bestuur van Breda"
+(the magistrate) to "de Staten Generaal", "van 18 Sept. 1624" -- the identical letter the *Resolutiën*
+register's footnote 573d describes as "vrijwel geheel in cijferschrift". The opening quoted here ("with great
+difficulty we have got so much money from our citizens as was needed for the loan of so many companies and
+the making of works") matches the modern editors' one-line summary of the letter's content ("verzoekt...
+kleine bedragen aan geld naar de stad te zenden") closely enough that this is not a coincidental second
+letter of the same date.
+
+Context from the book's own narrative (`jscmd=SearchWithinVolume`, same volume):
+- p.111: "In de Bijlagen (XIX--XXIX) [is het volgende] medegedeeld. Men kan daaruit zien met hoeveel kommer en
+  ellende men gedurende de belegering heeft te kampen gehad. De brieven van Prins Maurits zijn zeer fijn en
+  net geschreven en tot smalle reepjes gevouwen..." -- Bijlagen XIX-XXIX are a set of siege-correspondence
+  documents the author is transcribing/communicating, XIX being the first of the run (our letter).
+- p.112: "...[in] Bijlage XX hebben wij zulk een brief >>met cyfferen en fantastycke teyckenen<< met de
+  oplossing gegeven" -- for Bijlage XX specifically (a different letter: Prins Maurits to the Breda town
+  government, 4 Dec. 1624, printed at PR33/"xxxiii"), the author explicitly says he is giving the letter
+  "with ciphers and fantastic signs" together with "the solution" (its decipherment).
+- **No equivalent explicit statement was found for Bijlage XIX** (searched `"Bijlage XIX"` book-wide: only
+  the one heading hit at PR32; no cross-reference elsewhere in the narrative). Van der Hoeven does not say in
+  so many words that Bijlage XIX was itself received/found in cipher and is here given deciphered, the way he
+  does for Bijlage XX.
+
+### What this means, and what it does not prove
+
+This is a 1868 printed Dutch text, sender/recipient/date/content all matching the target, predating the
+*Resolutiën nieuwe reeks* edition (which is a 1990s-2000s scholarly edition of the same States-General
+minutes) by well over a century and predating this project by 158 years. It answers the brief's step 3
+found-solved branch: **a print exists giving what is, on every identifying detail checked, the plaintext of
+this letter.**
+
+What is not established from this pass alone: whether Van der Hoeven's Bijlage XIX is (a) his own
+decipherment of the same enciphered original now held as NA 1.01.02 inv.4945 piece I, or (b) a plaintext
+duplicate/draft of the same letter surviving elsewhere (Breda's own town archive kept file copies of
+outgoing correspondence in clear before encipherment was a normal chancery practice of the period) that
+never itself needed deciphering. Either way the letter's plaintext content is already in print; only the
+finer point -- whether this constitutes a *decipherment specifically of the ciphertext this row is about* --
+needs a verifier's read of Van der Hoeven's own source note for Bijlagen XIX-XXIX (not located this pass;
+the book's front matter was searched for "Rijksarchief" and "Staten-Generaal" + "archief" and found nothing
+tying the bijlagen to a named archive or fonds) and, ideally, eye comparison against the NA original once
+copy-free. Recorded here, not classified -- novelty and the N-class are the verifier's job (rule 10); this
+worker reports only what was found and where.
+
+**Recommended next step:** verifier session per CLAUDE.md's template, claim under audit "Van der Hoeven 1868,
+*Geschiedenis der vesting Breda*, Bijlage XIX (p. xxxii) prints the plaintext of the Breda magistrate's 18
+Sept 1624 letter to the States-General." REQUEST.md's archive copy order is still worth keeping open (the
+verifier or a future worker will want the NA original for pieces I, plus Dras's and Maurits's letters in the
+same bundle, to confirm the cipher-to-plaintext mapping and complete the picture for Bijlagen XIX-XXIX
+generally), but is no longer blocking a "no print found" outcome.
+
+### Not done this pass (host scope)
+
+Step 2's second half (Resolutiën *nieuwe reeks* 1624-25 index entries on a later resolution recording a
+decipherment) was skipped: the job brief restricts `resources.huygens.knaw.nl` to "the Resolutiën page
+already cited" and this would have needed new pages/volumes. Given the van der Hoeven find already answers
+the brief's decision rule, this is not needed to close the row, but is left as a possible cross-check for
+whoever eye-checks the archive original.
+
+### Search log / hosts (rule 1, and per COMMON)
+
+`www.googleapis.com/books`: 14 (2 title/author searches for Van der Kemp candidates, 8 individual volume-
+detail fetches across the 8 candidate ids, 3 further targeted full-text searches -- magistraat-van-Breda,
+cijferschrift+inauthor:Kemp, cijferschrift+Breda -- 1 volume-detail fetch for the van der Hoeven scan).
+`books.google.com` (the `jscmd=SearchWithinVolume` search-within-book endpoint, used to pin page numbers --
+not separately named in the job brief's host list, treated as part of the Google Books route since it is the
+same service and same rate-limit domain as the API calls above): 16 queries plus 2 plain reachability checks
+=18. `archive.org` (advancedsearch): 2 (Van der Kemp title search, Geschiedenis der vesting Breda title
+search; both zero/no-match on archive.org itself -- neither book is there). `catalog.hathitrust.org`: 1
+attempted call malformed client-side (space in URL, curl error 3, never reached the network) -- not retried,
+not counted as a real request. All requests sequential, >=1.5s apart, descriptive `cipher-lab research
+script (contact via repository)` User-Agent on archive.org; Google Books calls used the playbook's
+`&country=US` and `$GOOGLE_BOOKS_KEY`, key never printed. No subagents. No HathiTrust Bibliographic API or
+HTRC EF API calls landed (not needed once the Google Books route produced the answer). No credentials other
+than `GOOGLE_BOOKS_KEY` used; presence tested with `test -n` before use.
