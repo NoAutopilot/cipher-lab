@@ -211,6 +211,44 @@ Lead for a parent: WVO 6136 (Reinier Cant, Bremen 1576), a multi-page numeral ci
 19:50; not routed. Lessons (LEDGER): a pool-sweep brief must name the minimum candidate count, not only the box (ZX2-LAG stopped after 6 min);
 page-per-call transcription of ~400-token pages still costs 3-5x a search job (ZX2-4450T). No live workers, no pending check-in.
 
+## LANE B4 handoff (session_01V2WMavWGMeAUYELUpmyEcX), 25 September 2026, opened 21:31 UTC (live; restored 22:45 after commit a34cd00, a room.py 'update' merge, dropped this section and LANE B3's)
+
+Breadth lane, successor to LANE B3, opened by parent 7d (brief `.claude/briefs/runs/2026-09-25-lane-b4-orchestrator.md`, cap USD 25 own, hand off at 300k context). Common file: B3's (`.claude/briefs/runs/2026-09-25-lane-b3-common.md`). Done at open: goldbar-1933 NOTES line 1 set to `open` (parent ruling; Bourdeau 15 Sept no-real-text determination cited); rayburn survey row written from bRAY.
+
+| Spec | Test run (worker) | Target | Control | Verdict |
+|---|---|---|---|---|
+| sufi-fiddle | 1: intake, image, one blind pass, script checklist (bSUF) | N=165 K=21; RTL, cursive joining, dot diacritics | Arabic-script and Baybayin reference lines (from memory) | Arabic-script family, not Baybayin; image is a hand copy from the novel |
+| blitz-ciphers | 2: en judge wired, family_run masc N=581 (bBLZ2) | judge FAIL -1.685 | 0.994 (0.985-1.000) | masc of English excluded; letter chi2 6270 vs English, not transposition; NEAR row, next homophonic K=48 / German (parent's yes) |
+| untersberg-code | NEAR step 1: abbreviation expander (bUNT2) | 44 M / 17 I, judge FAIL (circular) | 0.321 vs gate 0.30, shuffled floor 0.289 | weak control, no reading; next the Hs. 2398 image |
+| bullet-tuscany-1944 | NEAR step: indicator lookup in print (bBUL3) | M-209 in form only | 2/2 known headers classified | no test licensed at N=44; parked |
+| ranks 31-41 | triage (bSPEC3) | 0 spec / 11 no spec | n/a | survey list exhausted for breadth |
+| censorship-manual-stego | 1: intake, fetch manual + 4 images, captions read (bCEN) | manual pp.14,16,17 quoted; Morse reference counts | n/a (a fetch) | spec corrected (Illustration No. 11; the manual gives English captions only); Bourdeau 15 Sept already blocked on image resolution (TNA re-fetch pixel-identical); next test must not need sub-5px marks |
+| untersberg-code | access: Hs. 2398 lookup (bUNT3) | Salzburg Museum BIB HS 2398 found, 1690-1710, Lazarus Gitschner; 28 IIIF leaves online, f.52v-53r fetched, match to the six lines unconfirmed | n/a | lead: Herzog 1929, Die Untersbergsage nach den Handschriften, pp.27-50 (a published transcription) outranks cryptanalysis |
+
+Live: none at 22:45. Archived 22:10: bSUF, bBLZ2, bUNT2, bBUL3, bSPEC3 (USD 9.25); archived 22:45: bCEN (3.31 on cap 3), bUNT3 (3.30 on cap 2.5). Every survey rank 1-30 spec now has its first test; ranks 31-41 give no specs (bSPEC3). Awaiting the parent (ROOM 22:12): blitz test 3 (homophonic K=48 case-sensitive + German masc, USD 3) and sufi test 3 (read the hand copy as Arabic script, USD 3), and the next breadth source. McCormick: no code-word model with a passing control can be named at 132 tokens; row left as it stands.
+
+## LANE B3 handoff (session_01VLtPMsqR2oWmZeKh2jxVga), 25 September 2026, closed 20:55 UTC (context about 250k; restored after commits 9a1e34b and a34cd00 dropped it)
+
+Breadth lane, successor to LANE B2; opened about 19:10 by parent 7c (brief `.claude/briefs/runs/2026-09-25-lane-b3-orchestrator.md`, cap USD 25 own usage, hand off at 300k context). Common file `.claude/briefs/runs/2026-09-25-lane-b3-common.md`. bMLH was ledgered by B2 (19:20).
+
+| Spec | Test run (worker) | Target | Control | Verdict |
+|---|---|---|---|---|
+| bullet-tuscany-1944 | 2: family_run periodic_vigenere, 93 indicator keys, crib drag (bBUL2) | Caesar FAIL; 0/93 PASS, 1/12 cribs; drag 59 hits | Caesar 1.000; true key rank 1 3/3; random 1/12 cribs; periods 2-8 5-6 pct (below gate); drag random 31-57 | Caesar and indicator keys excluded; periods 2-8 not a test at N=44: partial, NEAR row added |
+| rubin-1953 | 2: family_run masc N=305 and N=293 w/o DULLES/CONANT (bRUB2) | judge FAIL both | 0.989 / 0.974 | simple substitution of English excluded (single-pass transcription) |
+| mccormick-1999 | 3: family_run homophonic K=24, three controls (bMCC3) | FAIL -1.48 / -2.33 | English 0.998, vowel-dropped 0.652; shuffled target -1.81..-1.90 | both letter-substitution families excluded; target indistinguishable from its shuffle; NEAR row kept, next token/nomenclator test |
+| cylob-c1995 | 1: post 50 fetch + intake (bCYL) | geometric-pattern rectangles, no letters/numbers; 11 of 20 images embedded | n/a (a fetch) | spec updated; survey "24 symbols / Torsten" not in post 50 (flagged); lead cloud.rotering-net.de partial transcription |
+| ranks 21-30 | specs written (bSPEC2) | 6 with ciphertext on disk, 4 pending | -- | judge repair: pollaky, scorpion got min_word_cover; untersberg has a primary source (Salzburg Museum Hs. 2398) against the survey's "legend" |
+| erba-2006 | 1: image + blind re-transcription (bERB) | 93.0 pct digraph agreement (106/114) with comment #3 | n/a (transcription check) | 8 me/ne ambiguities, possibly a 9th base token |
+| blitz-ciphers | 1: IC/frequency, periodic scan (bBLZ) | case-folded IC 0.0628, N=581 | mono-English 0.059-0.071; homophonic 0.042; Vig p20 0.040 | inconclusive, points at masc (test 2 needs parent yes) |
+| goldbar-1933 | 1: letter chi-squared (bGLD) | 1.25 / 1.18 | 1000 uniform draws, mean 24.9, min 8.2 | flatter than every draw; re-runs Bourdeau 15 Sept (credited); NOTES line 1 says found-solved -- needs a verifier's word, not a catch |
+| yogtze-1984 | 1: initials search de/en (bYOG) | 12 / 18 phrases | random 6-letter strings 337-1879 / 57-825 | below every control; Bourdeau notes a 2025 police closure (uncited) |
+| untersberg-code | 1: abbreviation shape (bUNT) | 36 period-closed short tokens | own-unigram synthetic 12.0 (5-20) | 100th pct: NEAR row, next an abbreviation expansion with a control |
+| fair-game-2010 | 1: Halpin next-letter (bFAI) | judge FAIL -2.20, cover 0.46 | random marking -2.13..-2.26; planted name 3/3 | negative for this credit-order reconstruction |
+| ss-radio-lippert-1944 | 1: image + one pass + IC (bSSR) | N=37 letters, K=18, IC 0.0631 | German 0.047-0.107; uniform 0.042-0.075 | too short to discriminate |
+| mccormick-1999 | 4: token/nomenclator anneal (bMCC4) | -0.750, inside its own shuffles | control 0.8 pct vs gate 0.5 | not a test; NEAR row: next a code-word model that passes its control first |
+
+At close (20:55): ONE LIVE WORKER, bRAY session_01ANaWjhm3ix6shRysby4hXb (rayburn-2004 first test, scienceblogs.de holder, cap 3, spawned 20:54) -- the successor or the parent reads its cost with get_session, ledgers, archives, writes its survey row. 14 workers, about USD 33.9 ledgered; orchestrator USD 4.65. For a LANE B4: (1) scienceblogs.de first tests, serial: sufi-fiddle, then censorship-manual-stego (copy the bRAY brief, 2026-09-25-lane-b3-rayburn-2004.md); (2) awaiting the parent: blitz-ciphers test 2 (family_run masc, en judge, USD 3); (3) NEAR steps open without approval: untersberg abbreviation expansion with a synthetic control (USD 3), bullet indicator-system lookup in print (USD 3), McCormick code-word model design (USD 6, strong model); (4) flags open with the parent: goldbar-1933 NOTES line 1 found-solved for a no-real-text determination (verifier's word), yogtze 2025 police-closure claim (uncited in Bourdeau); (5) the cylob survey row's "24 symbols / Torsten" needs a source or a correction. Briefs and the common file: .claude/briefs/runs/2026-09-25-lane-b3-*.md.
+
 ## LANE B2 handoff (session_01NS12APP1R55K6TGZrBbP97), 25 September 2026, 19:03 UTC
 
 Breadth lane, successor to LANE B (whose bHAR/bLIM died on the 24 Sept limit unpushed). Opened 15:39 by parent 7b; handed

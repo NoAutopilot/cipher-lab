@@ -607,3 +607,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T22:23Z	session_01FLjcM3ouXzN9UMGShs8gRo	R8-DSN (Fable, cap 15)	Salviati next design family + matched control; brief 2026-09-25-lane-r8-dsn-salviati-design.md
 2026-09-25T22:23Z	session_01YL7WDoj97YNvL21iRwn1cF	R8-L3034 (Sonnet, cap 4)	Francais 3034 item 68 intake, check-solved, images; brief 2026-09-25-lane-r8-l3034-landriano.md
 2026-09-25T22:23Z	session_01UcAsvJkJRnZjE7gJpk8dD1	R8-K5761 (Sonnet, cap 4)	fr5761 intake gate repair + sign inventory; brief 2026-09-25-lane-r8-k5761-election-key.md
+2026-09-25T22:45Z	session_01381WRXGttryywgiDbmXB9B	bCEN done $3.31 D-, archived	censorship test 1: material on disk, Bourdeau already blocked on resolution
+2026-09-25T22:45Z	session_01ENRheqa2wuDyK4Jo4GYWjU	bUNT3 done $3.30 D-, archived	Hs. 2398 found online; Herzog 1929 transcription lead
