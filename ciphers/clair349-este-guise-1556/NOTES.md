@@ -1484,6 +1484,13 @@ confused with; grade M. Positions are keyed on the pre-correction numbering, as 
 | S63 -> S32, 9 -> S31 | 1, 1 | q; P (its circle and cross fall into line 32's crop) |
 | S64 -> DEL | 1 | 31/11: the 3-shape is the r-rotunda gloss of 31/12, counted as a sign |
 
+**Worker eye-check of the subagents' recodes (2x crops, this session):**
+- 24/4 and 24/14 show a long-s stroke with a cross at its foot, in resouldre and ensemble: S36 confirmed.
+- 24/17 is a 3-shape under the b of the gloss "bl", followed by 5 under l: 3 = B confirmed.
+- 31/11 is a small 3-shape at gloss height directly above the A of 31/12's Ao: DEL as a gloss confirmed.
+- 31/1 is a lone x with a crossbarred f (or long s) gloss above it and a above the next 12. The ink shows the letter's
+  lone-x S36 (s), not S02 (F), so it is kept as S36; the gloss would give "fait". An open ink-versus-gloss point.
+
 **Where ink and gloss disagree, the ink was kept.** Most "gloss disagrees" rows on 60/64/16/26/62/82/15 turned out to be
 gloss misreads. The glossator writes i as a tall stem with a crossbar (read t or f), r as a small x/z, and e as two
 crescents (read u), so the codes stand. Codes kept against their gloss: 18/4 S34 (gloss f), 22/16 26 (gloss d),
