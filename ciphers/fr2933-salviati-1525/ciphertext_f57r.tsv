@@ -1,0 +1,503 @@
+line	pos	code	marks	grade
+1	1	_		AB
+1	2	_		AB
+1	3	S4		AB
+1	4	dl		AB
+1	5	tee		settled
+1	6	a	5	AB
+1	7	tee		AB
+1	8	g	dot	settled
+1	9	#	#	AB
+1	10	lam	dot|~	AB
+1	11	eps	7	AB
+1	12	w		AB
+1	13	eps	1	AB
+1	14	]	o	AB
+1	15	g	7	AB
+1	16	L		AB
+1	17	w		AB
+1	18	a	1	AB
+1	19	lam	7	AB
+1	20	bh		AB
+1	21	S7		AB
+1	22	#	#	AB
+1	23	H	1|o	AB
+1	24	Z	dot|ot	AB
+1	25	_		AB
+1	26	_		AB
+1	27	+		settled
+1	28	bh	dot	AB
+1	29	_		AB
+1	30	_	dot	AB
+2	1	#		settled
+2	1.5	S7		B-split
+2	2	L	dot	AB
+2	3	g		AB
+2	4	y	~	AB
+2	5	wd		settled
+2	6	g		AB
+2	7	]	ot	AB
+2	8	_		AB
+2	9	y		AB
+2	10	Z	ot	AB
+2	11	eps		AB
+2	12	y		AB
+2	13	[		AB
+2	14	y		AB
+2	15	phi		AB
+2	16	v	1|5	AB
+2	17	f		AB
+2	18	w		AB
+2	19	bh		AB
+2	20	Z		settled
+2	20.5	S7		B-split
+2	21	y		AB
+2	22	tee		AB
+2	23	f		AB
+2	24	w		AB
+2	25	y		AB
+2	26	eps	5	settled
+2	26.5	g	7	B-split
+3	1	_		AB
+3	2	a	5	AB
+3	3	tee		AB
+3	4	lam		AB
+3	5	o.	1	AB
+3	6	_		AB
+3	7	m		settled
+3	7.5	S7		B-split
+3	8	w		AB
+3	9	lam	1	AB
+3	10	S7		AB
+3	11	y		AB
+3	12	g		AB
+3	13	v		settled
+3	14	_	1	AB
+3	15	]	o	AB
+3	16	e	#|dot	AB
+3	17	eps		AB
+3	18	y		AB
+3	19	o.		settled
+3	20	g	1	AB
+3	21	lam		AB
+3	22	bh		AB
+3	23	S7	#	AB
+3	24	e	ot	AB
+3	25	wd		AB
+3	26	y		AB
+3	27	eps	5	AB
+3	28	S7		AB
+4	1	f		AB
+4	2	w		AB
+4	3	o.		AB
+4	4	_	dot	AB
+4	5	o.	dot	AB
+4	6	lam		AB
+4	7	bh		AB
+4	8	S7		AB
+4	9	#		AB
+4	10	H	1	AB
+4	11	g	o	AB
+4	12	y		AB
+4	13	y		AB
+4	14	g	1	AB
+4	15	e	+	AB
+4	16	L		AB
+4	17	g	~	AB
+4	18	m	~	AB
+4	19	w		AB
+4	20	e	+	AB
+4	21	L	dot|~	AB
+4	22	S7		settled
+4	23	_		AB
+4	24	bh		AB
+4	25	S7		AB
+4	26	#		AB
+4	27	e		AB
+4	28	wd		settled
+4	29	y		settled
+5	1	sq		AB
+5	2	]	o	settled
+5	3	eps	5	AB
+5	4	S7		AB
+5	5	f		AB
+5	6	w		AB
+5	7	o.		AB
+5	8	_	dot	AB
+5	9	lam		AB
+5	10	bh	7	AB
+5	11	S7		AB
+5	12	#		AB
+5	13	Z		AB
+5	14	nt		AB
+5	15	o.		settled
+5	16	rz		AB
+5	17	S7		AB
+5	18	#		AB
+5	19	m	dot	settled
+5	20	lam		AB
+5	21	w	~	AB
+5	22	g	dot	AB
+5	23	Z	ot	AB
+5	24	]	ot	settled
+5	25	g		AB
+5	26	_		settled
+5	27	y		AB
+5	28	e		AB
+6	1	nt		AB
+6	2	bh		AB
+6	3	e	dot	AB
+6	4	sq	1	AB
+6	5	tee		AB
+6	6	H	1|o	AB
+6	7	m	1	AB
+6	8	w		AB
+6	9	lam	7	AB
+6	10	eps	~	AB
+6	11	wd		AB
+6	12	y		AB
+6	13	m	~	AB
+6	14	w		AB
+6	15	]	o	AB
+6	16	eps	~	AB
+6	17	S7		AB
+6	18	lam		AB
+6	19	y	7	AB
+6	20	g		settled
+6	21	]	~	AB
+6	22	rz		AB
+6	23	Z		AB
+6	24	rz		AB
+7	1	w		AB
+7	2	eps	7	AB
+7	3	S7		AB
+7	4	lam	5	AB
+7	5	e	#	AB
+7	6	p	1	AB
+7	7	o.	o	AB
+7	8	bh		AB
+7	9	y		AB
+7	10	bh		AB
+7	11	e		AB
+7	12	_		AB
+7	13	bh		AB
+7	14	H	1|o	AB
+7	15	m		settled
+7	15.5	S7		B-split
+7	16	f		AB
+7	17	w		settled
+7	17.5	S7		B-split
+7	18	y		AB
+7	19	_		AB
+7	20	g		AB
+7	21	w		AB
+7	22	Z	~	AB
+7	23	w		settled
+7	23.5	g		B-split
+7	24	e	#|dot	AB
+7	25	eps	~	AB
+8	1	S7		AB
+8	2	lam	5	AB
+8	3	a		settled
+8	4	]	o	AB
+8	5	e		AB
+8	6	eps	1	AB
+8	7	lam	7	AB
+8	8	m	~	AB
+8	9	w		AB
+8	10	]	o	AB
+8	11	g	~	AB
+8	12	g	~	settled
+8	13	lam		AB
+8	14	lam		AB
+8	15	S		AB
+8	16	lam		AB
+8	17	bh		AB
+8	18	S7		AB
+8	19	#		AB
+8	20	e	dot	AB
+8	21	g	~	AB
+8	22	#		settled
+8	22.5	o.		B-split
+8	23	bh		AB
+8	24	]	o	AB
+8	25	m		settled
+8	26	nt		AB
+8	27	rz		AB
+9	1	nt		AB
+9	2	o.		AB
+9	3	#		settled
+9	3.5	S7		B-split
+9	4	#		settled
+9	4.5	e		B-split
+9	5	sq	1	AB
+9	6	]	ot	AB
+9	7	eps	1	AB
+9	8	_		AB
+9	9	e	#	AB
+9	10	g	1	AB
+9	11	_		AB
+9	12	o.		settled
+9	12.5	S7		B-split
+9	13	bh		settled
+9	13.1	w		B-split
+9	13.2	S7		B-split
+9	13.3	o.		B-split
+9	14	a	5	AB
+9	15	e	#	AB
+9	16	g	dot	AB
+9	17	_	dot	AB
+9	18	g		settled
+9	19	g	5	AB
+9	20	S7		AB
+9	21	eps		AB
+9	22	tee		AB
+10	1	nt		AB
+10	2	e	#	AB
+10	3	phi		AB
+10	4	]	o	AB
+10	5	e	dot	AB
+10	6	psi		AB
+10	7	m		settled
+10	8	lam	dot	AB
+10	9	H	1|o	AB
+10	10	g		AB
+10	11	psi	~	AB
+10	12	lam		AB
+10	13	_		AB
+10	14	e	dot|dot	AB
+10	15	a	7	AB
+10	16	S7		settled
+10	17	bh		AB
+10	18	e		AB
+10	19	g	~	AB
+10	20	#		settled
+11	1	phi		AB
+11	2	phi		AB
+11	3	e	dot	AB
+11	4	a	5	AB
+11	5	e	dot	AB
+11	6	S7		AB
+11	7	g	+	AB
+11	8	g	1	AB
+11	9	_		AB
+11	10	eps	5	AB
+11	11	S7	~	AB
+11	12	o.		AB
+11	13	rz		AB
+11	14	g	~	AB
+11	15	o.		settled
+11	15.5	S7		B-split
+11	16	S7		AB
+11	17	y		AB
+11	18	w		AB
+11	19	+		settled
+11	20	o.		AB
+11	21	f	dot|dot	AB
+12	1	w		AB
+12	2	o.		AB
+12	3	phi		AB
+12	4	v	7	AB
+12	5	g		AB
+12	6	y		AB
+12	7	K		AB
+12	8	S		AB
+12	9	o.		settled
+12	9.5	nt		B-split
+12	10	e	dot	AB
+12	11	eps	1	AB
+12	12	S		AB
+12	13	K		AB
+12	14	o.	dot	AB
+12	15	S7		AB
+12	16	Z		AB
+12	17	psi		AB
+12	18	lam		AB
+12	19	w		AB
+12	20	_	ot	AB
+12	21	g		AB
+12	21.5	H		B-split
+12	22	v	ot	AB
+13	1	Z		AB
+13	2	nt		AB
+13	3	y		AB
+13	4	_	1	AB
+13	5	w		settled
+13	6	Z	ot	AB
+13	7	nt		AB
+13	8	o.		AB
+13	9	rz		AB
+13	10	S7	#	AB
+13	11	]	dot|o	AB
+13	12	eps		AB
+13	13	y		AB
+13	14	o.		AB
+13	15	rz		AB
+13	16	g	5	AB
+13	17	lam		settled
+13	17.5	v		B-split
+13	18	v	5|1	AB
+13	19	m		AB
+13	20	bh		AB
+13	21	w		settled
+13	21.5	o.		B-split
+13	22	o.		AB
+13	23	nt		AB
+14	1	g	1	AB
+14	2	g		AB
+14	3	y	~	AB
+14	4	bh		AB
+14	5	a	1	AB
+14	6	#		settled
+14	7	o.		AB
+14	8	w		AB
+14	9	S4		AB
+14	10	dl		settled
+14	11	rz		AB
+14	12	tee		AB
+14	13	eps	1	AB
+14	14	S7		AB
+14	15	eps	~	AB
+14	16	wd		AB
+14	17	o.		AB
+14	18	rz		AB
+14	19	g	~	AB
+14	20	y		settled
+14	20.5	y		B-split
+14	21	L		AB
+14	22	S7		AB
+14	23	lam		AB
+14	24	_		AB
+14	25	g		settled
+14	26	y		settled
+14	27	H	1|o	AB
+15	1	S7		AB
+15	2	w		AB
+15	3	y		settled
+15	3.5	S		B-split
+15	4	S7		AB
+15	5	Z		AB
+15	6	y	5	AB
+15	7	g	1	AB
+15	8	_		AB
+15	9	H		settled
+15	10	g	1	AB
+15	11	_		AB
+15	12	Z		AB
+15	13	_		AB
+15	14	w		AB
+15	15	y		AB
+15	16	S7		settled
+15	16.5	lam		B-split
+15	17	H	1	AB
+15	18	e	o|#	AB
+15	19	wd		AB
+15	20	bh		AB
+15	21	y		AB
+15	22	nt		AB
+15	23	bh		AB
+15	24	w		AB
+16	1	_		AB
+16	2	lam		AB
+16	3	_		AB
+16	4	bh		AB
+16	5	sq	ot	AB
+16	6	wd		AB
+16	7	bh		AB
+16	8	H	o|1	AB
+16	9	o.		AB
+16	10	bh		AB
+16	11	psi		AB
+16	12	eps		AB
+16	13	w		AB
+16	14	o.		AB
+16	15	Z		AB
+16	16	e		AB
+16	17	g	dot	AB
+16	18	_		AB
+16	19	w		AB
+16	20	y		AB
+16	21	rz		AB
+16	22	Z		settled
+16	23	g	5	AB
+16	24	phi		AB
+16	25	]	o	AB
+17	1	g		AB
+17	2	psi		AB
+17	3	m	~	AB
+17	4	_		AB
+17	5	o.		AB
+17	6	phi		settled
+17	6.5	_		B-split
+17	7	_		AB
+17	8	S7		AB
+17	9	o.		AB
+17	10	rz		AB
+17	11	_		AB
+17	12	nt		AB
+17	13	g	~	AB
+17	14	S4		AB
+17	15	_		AB
+17	16	_	dot	AB
+17	17	_		settled
+17	18	_		settled
+17	19	_		settled
+17	20	_		AB
+17	21	_		AB
+17	22	_		settled
+17	23	_		AB
+17	24	_		settled
+18	1	#		AB
+18	2	#		AB
+18	3	f		AB
+18	4	S7		settled
+18	5	S4	1	AB
+18	6	dl		AB
+18	7	Z		AB
+18	8	S7	#	AB
+18	9	phi		AB
+18	10	L		AB
+18	11	g		AB
+18	12	Z		AB
+18	13	psi		AB
+18	14	lam	5	AB
+18	15	rz		AB
+18	16	nt		AB
+18	17	+	ot	AB
+18	18	S7		AB
+18	19	_		AB
+18	20	bh	dot	AB
+18	21	S7		AB
+18	22	bh		settled
+18	23	w		AB
+19	1	o.		AB
+19	2	S7		AB
+19	3	eps	7	AB
+19	4	m	~	AB
+19	5	phi		AB
+19	6	e	#	AB
+19	7	g		AB
+19	8	e	#	AB
+19	9	g		settled
+19	10	]	o	AB
+19	11	S7		AB
+19	12	psi	#	AB
+19	13	f		settled
+19	14	w		AB
+19	15	y		AB
+19	16	K		AB
+19	17	a	7	AB
+19	18	eps	7	AB
+19	19	lam		AB
+19	20	y	7	AB
+19	21	m	~	AB
+19	22	g	5	AB
+19	23	nt		settled
+19	24	S7		AB
+19	25	tee		settled
+19	25.5	y	7	B-split
+19	26	S7		AB
+19	27	eps	7	AB
+19	28	eps	5	AB
+19	29	S7		AB
+19	30	_		AB

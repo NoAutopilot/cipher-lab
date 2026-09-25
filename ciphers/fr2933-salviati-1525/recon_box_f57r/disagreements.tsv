@@ -1,0 +1,86 @@
+line	pos	code_a	marks_a	code_b	marks_b	note
+1	5	Z		tee		DIFFER
+1	8	_	dot	g	dot	DIFFER
+1	27	#		+		DIFFER
+2	1	Z		#		DIFFER
+2	1.5	MISSING		S7		one pass missing this box
+2	5	g		wd		DIFFER
+2	20	_		Z		DIFFER
+2	20.5	MISSING		S7		one pass missing this box
+2	26	_	7|5	eps	5	DIFFER
+2	26.5	MISSING		g	7	one pass missing this box
+3	7	_	5	m		DIFFER
+3	7.5	MISSING		S7		one pass missing this box
+3	13	_	1	v		DIFFER
+3	19	_		o.		DIFFER
+4	22	_		S7		DIFFER
+4	28	f		wd		DIFFER
+4	29	g		y		DIFFER
+5	2	Z		]	o	DIFFER
+5	15	_		o.		DIFFER
+5	19	_	5|dot	m	dot	DIFFER
+5	24	w	ot	]	ot	DIFFER
+5	26	Z		_		DIFFER
+6	20	nt		g		DIFFER
+7	15	_	5	m		DIFFER
+7	15.5	MISSING		S7		one pass missing this box
+7	17	Z		w		DIFFER
+7	17.5	MISSING		S7		one pass missing this box
+7	23	_		w		DIFFER
+7	23.5	MISSING		g		one pass missing this box
+8	3	_		a		DIFFER
+8	12	psi		g	~	DIFFER
+8	22	_		#		DIFFER
+8	22.5	MISSING		o.		one pass missing this box
+8	25	_	5	m		DIFFER
+9	3	Z		#		DIFFER
+9	3.5	MISSING		S7		one pass missing this box
+9	4	_		#		DIFFER
+9	4.5	MISSING		e		one pass missing this box
+9	12	_		o.		DIFFER
+9	12.5	MISSING		S7		one pass missing this box
+9	13	_		bh		DIFFER
+9	13.1	MISSING		w		one pass missing this box
+9	13.2	MISSING		S7		one pass missing this box
+9	13.3	MISSING		o.		one pass missing this box
+9	18	_		g		DIFFER
+10	7	_		m		DIFFER
+10	16	Z	dot	S7		DIFFER
+10	20	nt		#		DIFFER
+11	15	y		o.		DIFFER
+11	15.5	MISSING		S7		one pass missing this box
+11	19	#		+		DIFFER
+12	9	nt		o.		DIFFER
+12	9.5	MISSING		nt		one pass missing this box
+12	21.5	MISSING		H		one pass missing this box
+13	5	_	1	w		DIFFER
+13	17	_	1	lam		DIFFER
+13	17.5	MISSING		v		one pass missing this box
+13	21	f		w		DIFFER
+13	21.5	MISSING		o.		one pass missing this box
+14	6	p		#		DIFFER
+14	10	_		dl		DIFFER
+14	20	_		y		DIFFER
+14	20.5	MISSING		y		one pass missing this box
+14	25	_		g		DIFFER
+14	26	f		y		DIFFER
+15	3	_		y		DIFFER
+15	3.5	MISSING		S		one pass missing this box
+15	9	_	o	H		DIFFER
+15	16	_		S7		DIFFER
+15	16.5	MISSING		lam		one pass missing this box
+16	22	_		Z		DIFFER
+17	6	_		phi		DIFFER
+17	6.5	MISSING		_		one pass missing this box
+17	17	v		_		DIFFER
+17	18	S		_		DIFFER
+17	19	y		_		DIFFER
+17	22	nt		_		DIFFER
+17	24	lam	~	_		DIFFER
+18	4	w	1	S7		DIFFER
+18	22	tee	1	bh		DIFFER
+19	9	_	1	g		DIFFER
+19	13	y		f		DIFFER
+19	23	Lx		nt		DIFFER
+19	25	g	dot	tee		DIFFER
+19	25.5	MISSING		y	7	one pass missing this box

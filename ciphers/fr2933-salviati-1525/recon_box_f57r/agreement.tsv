@@ -1,0 +1,379 @@
+line	pos	code_a	marks_a	code_b	marks_b	note
+1	3	S4		S4		base+marks match
+1	4	dl		dl		base+marks match
+1	6	a	5	a	5	base+marks match
+1	7	tee		tee		base+marks match
+1	9	#	#	#	#	base+marks match
+1	10	lam	dot|~	lam	dot|~	base+marks match
+1	11	eps	7	eps	7	base+marks match
+1	12	w		w		base+marks match
+1	13	eps	1	eps	1	base+marks match
+1	14	]	o	]	o	base+marks match
+1	15	g	7	g	7	base+marks match
+1	16	L		L		base+marks match
+1	17	w		w		base+marks match
+1	18	a	1	a	1	base+marks match
+1	19	lam	7	lam	7	base+marks match
+1	20	bh		bh		base+marks match
+1	21	S7		S7		base+marks match
+1	22	#		#	#	base match
+1	23	H	1|o	H	1|o	base+marks match
+1	24	Z	dot|ot	Z	dot|ot	base+marks match
+1	28	bh	dot	bh	dot	base+marks match
+2	2	L	dot	L	dot	base+marks match
+2	3	g		g		base+marks match
+2	4	y	~	y	~	base+marks match
+2	6	g		g		base+marks match
+2	7	]	ot	]	ot	base+marks match
+2	9	y		y		base+marks match
+2	10	Z	ot	Z	ot	base+marks match
+2	11	eps		eps		base+marks match
+2	12	y		y		base+marks match
+2	13	[		[		base+marks match
+2	14	y		y		base+marks match
+2	15	phi		phi		base+marks match
+2	16	v	1|5	v	1|5	base+marks match
+2	17	f		f		base+marks match
+2	18	w		w		base+marks match
+2	19	bh		bh		base+marks match
+2	21	y		y		base+marks match
+2	22	tee		tee		base+marks match
+2	23	f		f		base+marks match
+2	24	w		w		base+marks match
+2	25	y		y		base+marks match
+3	2	a	5	a	5	base+marks match
+3	3	tee		tee		base+marks match
+3	4	lam		lam		base+marks match
+3	5	o.	1	o.	1	base+marks match
+3	8	w		w		base+marks match
+3	9	lam	1	lam	1	base+marks match
+3	10	S7		S7		base+marks match
+3	11	y		y		base+marks match
+3	12	g		g		base+marks match
+3	15	]	o	]	o	base+marks match
+3	16	e	#|dot	e	#|dot	base+marks match
+3	17	eps		eps		base+marks match
+3	18	y		y		base+marks match
+3	20	g	1	g	1	base+marks match
+3	21	lam		lam		base+marks match
+3	22	bh		bh		base+marks match
+3	23	S7	#	S7	#	base+marks match
+3	24	e	ot	e	ot	base+marks match
+3	25	wd		wd		base+marks match
+3	26	y		y		base+marks match
+3	27	eps	5	eps	5	base+marks match
+3	28	S7		S7		base+marks match
+4	1	f		f		base+marks match
+4	2	w		w		base+marks match
+4	3	o.		o.		base+marks match
+4	5	o.	dot	o.	dot	base+marks match
+4	6	lam		lam		base+marks match
+4	7	bh		bh		base+marks match
+4	8	S7		S7		base+marks match
+4	9	#		#		base+marks match
+4	10	H	1	H	1	base+marks match
+4	11	g	o	g	o	base+marks match
+4	12	y		y		base+marks match
+4	13	y		y		base+marks match
+4	14	g	1	g	1	base+marks match
+4	15	e	+	e	+	base+marks match
+4	16	L		L		base+marks match
+4	17	g	~	g	~	base+marks match
+4	18	m	~	m	~	base+marks match
+4	19	w		w		base+marks match
+4	20	e	+	e	+	base+marks match
+4	21	L	dot|~	L	dot|~	base+marks match
+4	24	bh		bh		base+marks match
+4	25	S7		S7		base+marks match
+4	26	#		#		base+marks match
+4	27	e		e		base+marks match
+5	1	sq	?	sq		base match
+5	3	eps	5	eps	5	base+marks match
+5	4	S7		S7		base+marks match
+5	5	f		f		base+marks match
+5	6	w		w		base+marks match
+5	7	o.		o.		base+marks match
+5	9	lam		lam		base+marks match
+5	10	bh	7	bh	7	base+marks match
+5	11	S7		S7		base+marks match
+5	12	#		#		base+marks match
+5	13	Z		Z		base+marks match
+5	14	nt		nt		base+marks match
+5	16	rz		rz		base+marks match
+5	17	S7		S7		base+marks match
+5	18	#		#		base+marks match
+5	20	lam		lam		base+marks match
+5	21	w	~	w	~	base+marks match
+5	22	g	dot	g	dot	base+marks match
+5	23	Z	ot	Z	ot	base+marks match
+5	25	g		g		base+marks match
+5	27	y		y		base+marks match
+5	28	e		e		base+marks match
+6	1	nt		nt		base+marks match
+6	2	bh		bh		base+marks match
+6	3	e	dot	e	dot	base+marks match
+6	4	sq	1	sq	1	base+marks match
+6	5	tee		tee		base+marks match
+6	6	H	1|o	H	1|o	base+marks match
+6	7	m	1	m	1	base+marks match
+6	8	w		w		base+marks match
+6	9	lam	7	lam	7	base+marks match
+6	10	eps	~	eps	~	base+marks match
+6	11	wd		wd		base+marks match
+6	12	y		y		base+marks match
+6	13	m	~	m	~	base+marks match
+6	14	w		w		base+marks match
+6	15	]	o	]	o	base+marks match
+6	16	eps	~	eps	~	base+marks match
+6	17	S7		S7		base+marks match
+6	18	lam		lam		base+marks match
+6	19	y	7	y	7	base+marks match
+6	21	]	~	]	~	base+marks match
+6	22	rz		rz		base+marks match
+6	23	Z		Z		base+marks match
+6	24	rz		rz		base+marks match
+7	1	w		w		base+marks match
+7	2	eps	7	eps	7	base+marks match
+7	3	S7		S7		base+marks match
+7	4	lam	5	lam	5	base+marks match
+7	5	e	#	e	#	base+marks match
+7	6	p	1	p	1	base+marks match
+7	7	o.	o	o.	o	base+marks match
+7	8	bh		bh		base+marks match
+7	9	y		y		base+marks match
+7	10	bh		bh		base+marks match
+7	11	e		e		base+marks match
+7	13	bh		bh		base+marks match
+7	14	H	1|o	H	1|o	base+marks match
+7	16	f		f		base+marks match
+7	18	y		y		base+marks match
+7	20	g		g		base+marks match
+7	21	w		w		base+marks match
+7	22	Z	~	Z	~	base+marks match
+7	24	e	#|dot	e	#|dot	base+marks match
+7	25	eps	~	eps	~	base+marks match
+8	1	S7		S7		base+marks match
+8	2	lam	5	lam	5	base+marks match
+8	4	]	o	]	o	base+marks match
+8	5	e		e		base+marks match
+8	6	eps	1	eps	1	base+marks match
+8	7	lam	7	lam	7	base+marks match
+8	8	m	~	m	~	base+marks match
+8	9	w		w		base+marks match
+8	10	]	o	]	o	base+marks match
+8	11	g	~	g	~	base+marks match
+8	13	lam		lam		base+marks match
+8	14	lam		lam		base+marks match
+8	15	S		S		base+marks match
+8	16	lam		lam		base+marks match
+8	17	bh		bh		base+marks match
+8	18	S7		S7		base+marks match
+8	19	#		#		base+marks match
+8	20	e	dot	e	dot	base+marks match
+8	21	g	~	g	~	base+marks match
+8	23	bh		bh		base+marks match
+8	24	]	o	]	o	base+marks match
+8	26	nt		nt		base+marks match
+8	27	rz		rz		base+marks match
+9	1	nt		nt		base+marks match
+9	2	o.		o.		base+marks match
+9	5	sq	1	sq	1	base+marks match
+9	6	]	ot	]	ot	base+marks match
+9	7	eps	1	eps	1	base+marks match
+9	9	e	#	e	#	base+marks match
+9	10	g	1	g	1	base+marks match
+9	14	a	5	a	5	base+marks match
+9	15	e	#	e	#	base+marks match
+9	16	g	dot	g	dot	base+marks match
+9	19	g	5	g	5	base+marks match
+9	20	S7		S7		base+marks match
+9	21	eps		eps		base+marks match
+9	22	tee		tee		base+marks match
+10	1	nt		nt		base+marks match
+10	2	e	#	e	#	base+marks match
+10	3	phi		phi		base+marks match
+10	4	]	o	]	o	base+marks match
+10	5	e	dot	e	dot	base+marks match
+10	6	psi		psi		base+marks match
+10	8	lam	dot	lam	dot	base+marks match
+10	9	H	1|o	H	1|o	base+marks match
+10	10	g		g		base+marks match
+10	11	psi	~	psi	~	base+marks match
+10	12	lam		lam		base+marks match
+10	14	e	dot|dot	e	dot|dot	base+marks match
+10	15	a	7	a	7	base+marks match
+10	17	bh		bh		base+marks match
+10	18	e		e		base+marks match
+10	19	g	~	g	~	base+marks match
+11	1	phi		phi		base+marks match
+11	2	phi		phi		base+marks match
+11	3	e	dot	e	dot	base+marks match
+11	4	a	5	a	5	base+marks match
+11	5	e	dot	e	dot	base+marks match
+11	6	S7		S7		base+marks match
+11	7	g	+	g	+	base+marks match
+11	8	g	1	g	1	base+marks match
+11	10	eps	5	eps	5	base+marks match
+11	11	S7	~	S7	~	base+marks match
+11	12	o.		o.		base+marks match
+11	13	rz		rz		base+marks match
+11	14	g	~	g	~	base+marks match
+11	16	S7		S7		base+marks match
+11	17	y		y		base+marks match
+11	18	w		w		base+marks match
+11	20	o.		o.		base+marks match
+11	21	f	dot|dot	f	dot|dot	base+marks match
+12	1	w		w		base+marks match
+12	2	o.		o.		base+marks match
+12	3	phi		phi		base+marks match
+12	4	v	7	v	7	base+marks match
+12	5	g		g		base+marks match
+12	6	y		y		base+marks match
+12	7	K		K		base+marks match
+12	8	S		S		base+marks match
+12	10	e	dot	e	dot	base+marks match
+12	11	eps	1	eps	1	base+marks match
+12	12	S		S		base+marks match
+12	13	K		K		base+marks match
+12	14	o.	dot	o.	dot	base+marks match
+12	15	S7		S7		base+marks match
+12	16	Z		Z		base+marks match
+12	17	psi		psi		base+marks match
+12	18	lam		lam		base+marks match
+12	19	w		w		base+marks match
+12	21	g		g		base+marks match
+12	22	v	ot	v	ot	base+marks match
+13	1	Z		Z		base+marks match
+13	2	nt		nt		base+marks match
+13	3	y		y		base+marks match
+13	6	Z	ot	Z	ot	base+marks match
+13	7	nt		nt		base+marks match
+13	8	o.		o.		base+marks match
+13	9	rz		rz		base+marks match
+13	10	S7	#	S7	#	base+marks match
+13	11	]	dot|o	]	dot|o	base+marks match
+13	12	eps		eps		base+marks match
+13	13	y		y		base+marks match
+13	14	o.		o.		base+marks match
+13	15	rz		rz		base+marks match
+13	16	g	5	g	5	base+marks match
+13	18	v	5|1	v	5|1	base+marks match
+13	19	m		m		base+marks match
+13	20	bh		bh		base+marks match
+13	22	o.		o.		base+marks match
+13	23	nt		nt		base+marks match
+14	1	g	1	g	1	base+marks match
+14	2	g		g		base+marks match
+14	3	y	~	y	~	base+marks match
+14	4	bh		bh		base+marks match
+14	5	a	1	a	1	base+marks match
+14	7	o.		o.		base+marks match
+14	8	w		w		base+marks match
+14	9	S4		S4		base+marks match
+14	11	rz		rz		base+marks match
+14	12	tee		tee		base+marks match
+14	13	eps	1	eps	1	base+marks match
+14	14	S7		S7		base+marks match
+14	15	eps	~	eps	~	base+marks match
+14	16	wd		wd		base+marks match
+14	17	o.		o.		base+marks match
+14	18	rz		rz		base+marks match
+14	19	g	~	g	~	base+marks match
+14	21	L		L		base+marks match
+14	22	S7		S7		base+marks match
+14	23	lam		lam		base+marks match
+14	27	H	1|o	H	1|o	base+marks match
+15	1	S7		S7		base+marks match
+15	2	w		w		base+marks match
+15	4	S7		S7		base+marks match
+15	5	Z		Z		base+marks match
+15	6	y	5	y	5	base+marks match
+15	7	g	1	g	1	base+marks match
+15	10	g	1	g	1	base+marks match
+15	12	Z		Z		base+marks match
+15	14	w		w		base+marks match
+15	15	y		y		base+marks match
+15	17	H	1	H	1	base+marks match
+15	18	e	o|#	e	o|#	base+marks match
+15	19	wd		wd		base+marks match
+15	20	bh		bh		base+marks match
+15	21	y		y		base+marks match
+15	22	nt		nt		base+marks match
+15	23	bh		bh		base+marks match
+15	24	w		w		base+marks match
+16	2	lam		lam		base+marks match
+16	4	bh		bh		base+marks match
+16	5	sq	ot	sq	ot	base+marks match
+16	6	wd		wd		base+marks match
+16	7	bh		bh		base+marks match
+16	8	H	o|1	H	o|1	base+marks match
+16	9	o.		o.		base+marks match
+16	10	bh		bh		base+marks match
+16	11	psi		psi		base+marks match
+16	12	eps		eps		base+marks match
+16	13	w		w		base+marks match
+16	14	o.		o.		base+marks match
+16	15	Z		Z		base+marks match
+16	16	e		e		base+marks match
+16	17	g	dot	g	dot	base+marks match
+16	19	w		w		base+marks match
+16	20	y		y		base+marks match
+16	21	rz		rz		base+marks match
+16	23	g	5	g	5	base+marks match
+16	24	phi		phi		base+marks match
+16	25	]	o	]	o	base+marks match
+17	1	g		g		base+marks match
+17	2	psi		psi		base+marks match
+17	3	m	~	m	~	base+marks match
+17	5	o.		o.		base+marks match
+17	8	S7		S7		base+marks match
+17	9	o.		o.		base+marks match
+17	10	rz		rz		base+marks match
+17	12	nt		nt		base+marks match
+17	13	g	~	g	~	base+marks match
+17	14	S4		S4		base+marks match
+18	1	#		#		base+marks match
+18	2	#		#		base+marks match
+18	3	f		f		base+marks match
+18	5	S4	1	S4	1	base+marks match
+18	6	dl		dl		base+marks match
+18	7	Z	?	Z		base match
+18	8	S7	#	S7	#	base+marks match
+18	9	phi		phi		base+marks match
+18	10	L		L		base+marks match
+18	11	g		g		base+marks match
+18	12	Z		Z		base+marks match
+18	13	psi		psi		base+marks match
+18	14	lam	5	lam	5	base+marks match
+18	15	rz		rz		base+marks match
+18	16	nt		nt		base+marks match
+18	17	+	ot	+	ot	base+marks match
+18	18	S7		S7		base+marks match
+18	20	bh	dot	bh	dot	base+marks match
+18	21	S7		S7		base+marks match
+18	23	w		w		base+marks match
+19	1	o.		o.		base+marks match
+19	2	S7		S7		base+marks match
+19	3	eps	7	eps	7	base+marks match
+19	4	m	~	m	~	base+marks match
+19	5	phi		phi		base+marks match
+19	6	e	#	e	#	base+marks match
+19	7	g		g		base+marks match
+19	8	e	#	e	#	base+marks match
+19	10	]	o	]	o	base+marks match
+19	11	S7		S7		base+marks match
+19	12	psi	#	psi	#	base+marks match
+19	14	w		w		base+marks match
+19	15	y		y		base+marks match
+19	16	K		K		base+marks match
+19	17	a	7	a	7	base+marks match
+19	18	eps	7	eps	7	base+marks match
+19	19	lam		lam		base+marks match
+19	20	y	7	y	7	base+marks match
+19	21	m	~	m	~	base+marks match
+19	22	g	5	g	5	base+marks match
+19	24	S7		S7		base+marks match
+19	26	S7		S7		base+marks match
+19	27	eps	7	eps	7	base+marks match
+19	28	eps	5	eps	5	base+marks match
+19	29	S7		S7		base+marks match
