@@ -1,0 +1,102 @@
+{
+  "per_record": {
+    "1953": {
+      "segments": 846,
+      "numeric": 835,
+      "distinct": 405,
+      "range": [
+        8,
+        1732
+      ],
+      "unresolved": 11
+    },
+    "1049": {
+      "segments": 516,
+      "numeric": 506,
+      "distinct": 294,
+      "range": [
+        10,
+        3113
+      ],
+      "unresolved": 10
+    },
+    "1045": {
+      "segments": 383,
+      "numeric": 364,
+      "distinct": 259,
+      "range": [
+        2,
+        3902
+      ],
+      "unresolved": 19
+    },
+    "1046": {
+      "segments": 218,
+      "numeric": 206,
+      "distinct": 171,
+      "range": [
+        4,
+        3920
+      ],
+      "unresolved": 12
+    },
+    "1047": {
+      "segments": 199,
+      "numeric": 192,
+      "distinct": 160,
+      "range": [
+        7,
+        3789
+      ],
+      "unresolved": 7
+    },
+    "1048": {
+      "segments": 191,
+      "numeric": 188,
+      "distinct": 151,
+      "range": [
+        1,
+        3920
+      ],
+      "unresolved": 3
+    },
+    "1060": {
+      "segments": 136,
+      "numeric": 134,
+      "distinct": 114,
+      "range": [
+        7,
+        9858
+      ],
+      "unresolved": 2
+    },
+    "1061": {
+      "segments": 162,
+      "numeric": 150,
+      "distinct": 133,
+      "range": [
+        1,
+        5627
+      ],
+      "unresolved": 12
+    }
+  },
+  "cross_family_jaccard": {
+    "1752 (R1953)|1756 (R1049)": 0.13106796116504854,
+    "1752 (R1953)|1763 pooled (6 records)": 0.08455114822546973,
+    "1756 (R1049)|1763 pooled (6 records)": 0.08032596041909197
+  },
+  "cluster_1763": {
+    "real_mean_jaccard": 0.14562887009954342,
+    "control_trials": 200,
+    "control_seed": 20260925,
+    "control_mean": 0.13721433231548463,
+    "control_min": 0.12408689507789251,
+    "control_max": 0.1522095020936345,
+    "frac_control_higher": 0.08
+  },
+  "pool_size": {
+    "cluster_1763_segments": 1289,
+    "all_8_segments": 2651
+  }
+}

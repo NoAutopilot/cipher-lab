@@ -1,0 +1,139 @@
+{
+ "slug": "hellen-frederick-1752",
+ "name": "W.B. von der Hellen (The Hague) to Frederick II of Prussia, 8 intercepted despatches",
+ "date": "4 Jan 1752 (R1953); 7 Sep 1756 (R1049); 15 Apr-5 Jul 1763 (R1045-R1048, R1060, R1061)",
+ "shelfmark": "KHA Prins Willem V inv. 196; DECODE R1953, R1049, R1045, R1046, R1047, R1048, R1060, R1061",
+ "language_candidates": [
+  "fr"
+ ],
+ "ciphertext": {
+  "R1953": {
+   "date": "4 Jan 1752",
+   "file": "ciphers/hellen-frederick-1752/ciphertext_R1953.txt",
+   "segments": 846,
+   "numeric": 835,
+   "distinct_numeric": 405,
+   "unresolved": 11,
+   "range": [8, 1732]
+  },
+  "R1049": {
+   "date": "7 Sep 1756",
+   "file": "ciphers/hellen-frederick-1752/ciphertext_R1049.txt",
+   "segments": 516,
+   "numeric": 506,
+   "distinct_numeric": 294,
+   "unresolved": 10,
+   "range": [10, 3113]
+  },
+  "R1045": {
+   "date": "5 Jul 1763",
+   "file": "ciphers/hellen-frederick-1752/ciphertext_R1045.txt",
+   "segments": 383,
+   "numeric": 364,
+   "distinct_numeric": 259,
+   "unresolved": 19,
+   "range": [2, 3902]
+  },
+  "R1046": {
+   "date": "15 Apr 1763 (related/supporting material per Bourdeau)",
+   "file": "ciphers/hellen-frederick-1752/ciphertext_R1046.txt",
+   "segments": 218,
+   "numeric": 206,
+   "distinct_numeric": 171,
+   "unresolved": 12,
+   "range": [4, 3920]
+  },
+  "R1047": {
+   "date": "29 Apr 1763",
+   "file": "ciphers/hellen-frederick-1752/ciphertext_R1047.txt",
+   "segments": 199,
+   "numeric": 192,
+   "distinct_numeric": 160,
+   "unresolved": 7,
+   "range": [7, 3789]
+  },
+  "R1048": {
+   "date": "20 May 1763",
+   "file": "ciphers/hellen-frederick-1752/ciphertext_R1048.txt",
+   "segments": 191,
+   "numeric": 188,
+   "distinct_numeric": 151,
+   "unresolved": 3,
+   "range": [1, 3920]
+  },
+  "R1060": {
+   "date": "6 May 1763",
+   "file": "ciphers/hellen-frederick-1752/ciphertext_R1060.txt",
+   "segments": 136,
+   "numeric": 134,
+   "distinct_numeric": 114,
+   "unresolved": 2,
+   "range": [7, 9858]
+  },
+  "R1061": {
+   "date": "13 May 1763",
+   "file": "ciphers/hellen-frederick-1752/ciphertext_R1061.txt",
+   "segments": 162,
+   "numeric": 150,
+   "distinct_numeric": 133,
+   "unresolved": 12,
+   "range": [1, 5627]
+  }
+ },
+ "ciphertext_source": "D. Bourdeau, dbourdeau/cyphersolver, folder hellen1752/audit/ (R1953.txt, R1049.txt, set1763.txt split back into per-record files in the order his own audit_transcription.py writes them: 1045,1046,1047,1048,1060,1061; verified against his audit/summary.json segment counts, all match exactly). Text CC BY 4.0, credited per CLAUDE.md rule 8; code (audit_transcription.py, not copied here) is MIT. His NOTES.md states the source manuscript images and raw DECODE DOC_*.txt are not distributed in his publication -- these audit files are his own conservative re-parse of the original DECODE transcription, preserving transcriber uncertainty marks ('_' underline, '^' caret, '?' doubtful digit) rather than a finished reading; see his AUDIT_2026-09-20.md for what the marks mean and why his own earlier parser (which discarded them) was wrong. DECODE images for these 8 records remain account-blocked in this environment (ASKS row 1/42); this spec does not depend on seeing the manuscript image.",
+ "alphabet": "numeric code groups (1-4 digits, mostly 3-4), '.', ',', ':' as segment separators in the source transcription; interspersed cleartext (French) in the original DECODE transcription is stripped by Bourdeau's audit_transcription.py and not carried into these files",
+ "constraints": {
+  "design": "two-part code (per Bourdeau's profile.json: flat code-group frequencies, max count 10 of 846 for R1953, 10 of 516 for R1049 -- inconsistent with a one-part alphabetically-ordered code, which his own density-correlation tests against Politique Correspondance French word lists already ran and failed, corr -0.25 to 0.34)",
+  "families_by_date": "Bourdeau's own repeated-bigram comparison already separates the material into three code families: 1752 (R1953 alone), 1756 (R1049 alone), 1763 (the six-record cluster). This spec's pool test below re-derives the same separation independently from the audit files (cross-family Jaccard 0.08-0.13; see cheap_test_done.1).",
+  "cleartext_in_document": "interspersed (per profile.json), stripped from the audit files here -- a solver wanting the cleartext context needs the original DECODE DOC_*.txt (account-blocked) or Bourdeau's raw ct*.txt (not distributed)",
+  "prior_attempts": "Bourdeau: 3 sessions, 19-20 Sept 2026, claude-opus-5 and gpt-6-astra, ciphertext-only. Literature search (Politische Correspondenz vols 9/13/22/23, de Leeuw thesis, Tomokiyo) found no matching plaintext. One-part alphabetical hypothesis tested and failed (density correlation -0.25 to 0.34 against period French word lists, both single-section and two-section variants). Sibling-key lead R2824 (Fagel 5345, 1746) checked and rejected: it is Baron van Reede's Dutch-to-Prussia key, not a Prussian chancery key. NA Fagel inv. 5206 (digitized Hellen decipherments, catalogued 1752-1753) could not be retrieved by Bourdeau; retrieved and checked page-by-page by this repository (LANE OX, 25 Sept 2026): its 185 scans run 24 Oct 1752-24 Jul 1753+ and do not reach back to 4 Jan 1752 or any other target date -- closed as a false lead for all 8 despatches. cyphersolver's own outcome.class: 'not read', 0 fraction_read.",
+  "check_solved": "open (LANE CX2, re-checked 25 Sept 2026 for the full 1752-1763 span: Politische Correspondenz vols 9-10, 13, 23 read directly via archive.org full-text search + djvu.txt, no Hellen report anywhere marked dechiffrirt/entziffert/dechiffre; DECODE listing all 8 Non-decrypted; Aymeloglu's repository does not attempt this target). Intake gate exit 0 (checked this pass, see NOTES.md)."
+ },
+ "cheap_tests_in_order": [
+  "1. (Run this pass, LANE ZX2 ZX2-HEL, 25 Sept 2026.) Pool test: per-record structural stats (token count, distinct numeric values, range, digit-width histogram) plus a one-key test on the six 1763 despatches -- value-range overlap, shared frequent groups, Jaccard of numeric type-sets between records vs a random-split control of the pooled 1763 stream (tests whether the six records' vocabulary overlap is distinguishable from chance-partitioning one shared pool). Script: ciphers/hellen-frederick-1752/pool_stats.py. Cost: this worker's wall-clock box.",
+  "2. Homophonic/nomenclator anneal on the pooled 1763 cluster (1234 numeric tokens across 6 records, treated as one stream per the pool test's result) against an era-matched 18th-century French corpus (fr18, not yet built as of this spec -- LANE ZX2 worker ZX2-FR18 is building it concurrently; do not run this test against fr16 (16th-century, Catherine de Medici's letters), which is not era-matched per CLAUDE.md's pt17-vs-pt18 lesson) with a matched control at the same N and K. tools/family_run.py --family homophonic once fr18 lands.",
+  "3. Separately, R1953 alone (846 segments, one despatch, 4 Jan 1752) and R1049 alone (516 segments, 7 Sep 1756) are each below the pools-first 2,000-sign threshold and have no sibling in this repository yet; a solver attempting either alone should first search Politische Correspondenz's surrounding volumes and BnF/other archives (not yet done for the 1752/1756 records specifically, only the printed edition) for a second letter under the same code before spending an anneal budget on either alone."
+ ],
+ "matched_control": "cheap_test_done.1's random-split control (200 trials, same pool, same 6 group sizes) is the pool-test control; test 2's control (matched N/K/corpus/design) is not yet run",
+ "judge": {
+  "language": "fr",
+  "letters_min": 200,
+  "control_samples": 200,
+  "note": "tools/judge_plaintext.py's only wired 'fr' corpus is fr16 (Catherine de Medici's Lettres, 16th century) -- NOT era-matched to this target's 1752-1763 French prose (CLAUDE.md rule 3's pt17-vs-pt18 lesson applies directly: a language judge can be the wrong era even when it is the right language). Do not run the judge against fr16 and trust a FAIL or PASS without building an era-matched corpus first (LANE ZX2 worker ZX2-FR18 is building one concurrently, 25 Sept 2026); if fr18 has landed by the time a reading is judged, use it and note the corpus explicitly in NOTES.md."
+ },
+ "value": "medium-high: three independent code families by date, but only the 1763 cluster (1289 segments across 6 despatches, cheap_test_done.1 result: real cross-record Jaccard 0.1456 sits at the 92nd percentile of a random-split control of the same pool, i.e. NOT distinguishable from six records drawing on one shared vocabulary) clears the pools-first >=2000-sign bar once R1046 is confirmed in (currently 1289 signs, just under 2000; the two 1752/1756 singletons stay isolated and below-threshold until a sibling is found)",
+ "model": "Sonnet for the pool test and cheap fetch/structural work already run; strongest model recommended for the homophonic anneal (test 2) once fr18 lands, per CLAUDE.md Usage rule 1",
+ "written": "25 Sept 2026 by LANE ZX2 worker ZX2-HEL, Sonnet, per .claude/briefs/runs/2026-09-25-lane-zx2-hel.md",
+ "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run is under cheap_test_done with its control",
+ "cheap_test_done": {
+  "1": {
+   "test": 1,
+   "date": "25 Sept 2026",
+   "worker": "LANE ZX2 worker ZX2-HEL, Sonnet",
+   "method": "ciphers/hellen-frederick-1752/pool_stats.py on the 8 Bourdeau-audit ciphertext files: per-record segment/numeric/distinct/range/digit-width stats; cross-family Jaccard of numeric type-sets (1752 vs 1756 vs 1763-pooled); a one-key pool test on the six 1763 despatches (real pairwise Jaccard of numeric type-sets between the 6 records vs a control of 200 random re-splits of the same pooled 1234-token stream into groups of the same 6 sizes, seed 20260925).",
+   "result": {
+    "cross_family_jaccard": {
+     "1752_vs_1756": 0.1311,
+     "1752_vs_1763pooled": 0.0846,
+     "1756_vs_1763pooled": 0.0803
+    },
+    "interpretation_cross_family": "low overlap (0.08-0.13) across the three date groups, consistent with Bourdeau's own repeated-bigram finding of three separate codes (1752, 1756, 1763) -- independently reproduced here from the audit files with a different statistic (type-set Jaccard, not bigram overlap)",
+    "cluster_1763_real_mean_jaccard": 0.1456,
+    "cluster_1763_control": {
+     "trials": 200,
+     "seed": 20260925,
+     "mean": 0.1372,
+     "min": 0.1241,
+     "max": 0.1522,
+     "frac_control_higher_than_real": 0.08
+    },
+    "interpretation_cluster_1763": "the real six-record cross-record Jaccard (0.1456) sits at the 92nd percentile of the random-split control (only 8% of 200 chance re-splits of the same pool score higher) -- indistinguishable from what a random partition of one shared vocabulary would produce. This does NOT prove one key (a random split is not a strong discriminator on its own, and the test cannot rule out two similar but distinct codebooks with heavy overlap), but it is consistent with the pools-first hypothesis and finds no evidence against it.",
+    "pool_size": {
+     "cluster_1763_segments": 1289,
+     "cluster_1763_numeric": 1234,
+     "all_8_segments": 2651
+    }
+   }
+  }
+ }
+}

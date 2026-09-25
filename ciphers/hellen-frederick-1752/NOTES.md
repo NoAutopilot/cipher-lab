@@ -254,3 +254,88 @@ continuation of 5206 -- ruling out that a Jan 1752 Hellen item sits in an adjace
 `service.archief.nl` 194 (185 thumbnails + 9 full-resolution fetches), all >=1.6 s apart, one at a time, no
 429/403 seen. No DECODE login used (per brief). No subagents used (thumbnails were too small to save a
 sub-agent pass; the full-resolution header crops were read directly).
+
+## ZX2-HEL: pool (25 Sept 2026, LANE ZX2)
+
+Job: assemble the sign pool across the 8 despatches and write specs/hellen-frederick-1752.json (job brief
+`.claude/briefs/runs/2026-09-25-lane-zx2-hel.md`). Intake gate: `python3 tools/intake_gate_check.py
+hellen-frederick-1752` -> `hellen-frederick-1752: open (line 1) -- edition/page or full-text-search citation
+found within 6 lines`, exit 0.
+
+**1. Ciphertext recovered from Bourdeau (dbourdeau/cyphersolver), credited, text CC BY 4.0.** DECODE images
+for all 8 records remain account-blocked in this environment (ASKS row 1/42; not logged in, per brief). His
+`hellen1752/` folder does not distribute the raw manuscript images or DECODE `DOC_*.txt` transcriptions ("not
+distributed in this publication", his NOTES.md), but does publish `audit/R1953.txt`, `audit/R1049.txt` and
+`audit/set1763.txt` (his own 20 Sept 2026 conservative re-parse, `audit_transcription.py`, which -- unlike his
+earlier `parse.py` -- keeps uncertain digits, underlines/carets and cipher adjacent to cleartext tags rather
+than discarding them; see his `AUDIT_2026-09-20.md`). `set1763.txt` is six lines in the fixed order his own
+script writes them (`audit_transcription.py`'s tuple `('1045','1046','1047','1048','1060','1061')`), split back
+into per-record files here and verified byte-for-byte against his `audit/summary.json` segment counts (all 8
+match exactly: 383/218/199/191/516/136/162/846). Copied into this repo as `ciphertext_R<id>.txt` (8 files) plus
+`bourdeau_audit_summary.json` (his summary, for reference). These are **his transcriber-uncertainty-preserving
+audit projections, not a finished transcription** (his own wording) -- a future worker doing cryptanalysis
+proper should still get the manuscript image once DECODE access is resolved (rule 2, image over transcription);
+this pool assembly is a structural pass, not a claimed reading.
+
+Credit: D. Bourdeau, cyphersolver, `hellen1752/` folder (`audit_transcription.py`, `AUDIT_2026-09-20.md`,
+`audit/*`), CC BY 4.0 text, MIT code (not copied here, only the audit-projection ciphertext files themselves).
+His own outcome: `class: "not read"`, `fraction_read: 0` -- prior attempt, not a solution. His `profile.json`
+also records: literature search failed (Politische Correspondenz 9/13/22/23, de Leeuw thesis, Tomokiyo, all
+already independently re-confirmed by this repository's own CX2 check-solved passes above); one-part
+alphabetical-code hypothesis tested and failed (density correlation -0.25 to 0.34 against period French word
+lists); sibling-key lead R2824 (Fagel 5345, 1746, a 23-page cipher key) identified then **rejected** -- the full
+public DECODE record identifies it as Baron van Reede's key for the Dutch mission *to* Prussia, not a Prussian
+chancery key of Hellen's own. This rejection was not previously on file in this repository; recorded here.
+
+**2. `tools/decode_list.py` metadata: reused the existing cached listing rather than re-fetching** (good-citizen
+rule -- fetch once, read from disk after; `sources/decode/records-non-decrypted-2026-09-24.tsv` already covers
+all 8 record IDs from a prior pass). All 8 confirmed Non-decrypted, Cipher type, same shelfmark family (KHA A31
+PWV inv.196), with `number_of_pages` per record: R1953=3, R1049=3, R1045=1, R1046=2, R1047=1, R1048=2, R1060=2,
+R1061=4. No new DECODE requests made this pass.
+
+**3. Structural stats and one-key pool test** (`ciphers/hellen-frederick-1752/pool_stats.py`, output in
+`pool_stats_output.json`): per-record token/distinct/range/digit-width stats (see spec's `ciphertext` block for
+the numbers, not repeated here). **Cross-family test**: Jaccard of numeric type-sets between the three date
+groups is low throughout -- 1752 vs 1756 0.1311, 1752 vs 1763-pooled 0.0846, 1756 vs 1763-pooled 0.0803 --
+independently reproducing Bourdeau's own repeated-bigram finding of three separate codes by a different
+statistic. **1763-cluster one-key test** (the pools-first question): real cross-record mean pairwise Jaccard
+across the six 1763 despatches is 0.1456; a control of 200 random re-splits of the same pooled 1234-token
+stream into six groups of the same sizes (seed 20260925) gives mean 0.1372, range 0.1241-0.1522, with only 8%
+of control trials scoring higher than the real split. The real value is **not distinguishable from a random
+partition of one shared vocabulary** -- consistent with (not proof of) the six 1763 despatches sharing one
+code. This does not rule out two very similar but distinct codebooks; it is a structural screen, not a key
+recovery. Grade: S (cryptanalytic result with a control), not a reading.
+
+**4. Pool size**: the 1763 cluster alone is 1,289 segments (1,234 numeric) across 6 despatches -- just under
+the CLAUDE.md pools-first >=2,000-sign threshold. All 8 despatches pooled (including the two isolated,
+below-threshold 1752 and 1756 singletons, which the cross-family test above shows do NOT share the 1763 code)
+total 2,651 segments, but that combined figure is not a meaningful "one key" pool given result 3 -- it is three
+separate, much smaller pools (846 / 516 / 1,289).
+
+**5. NA Fagel inv. 5206 stray-numeral check** (job brief step 3): re-viewed all 9 full-resolution scans already
+on disk (`images/full/001,002,003,030,070,110,150,183,184.jpg`, fetched by the 25 Sept OX-HEL2 pass) at full
+size, not just the top-crop date headers previously read. All 9 are continuous clear French prose throughout;
+**no cipher numerals, code groups, half-deciphered words or marginal digits anywhere on any of the 9 scans.**
+No new fetch needed (per brief's <=10-request allowance, 0 used). This is consistent with, and adds direct
+image confirmation to, the already-established finding that this series (24 Oct 1752-24 Jul 1753+) falls
+outside all 8 target dates and is closed as a false lead.
+
+**Spec written**: `specs/hellen-frederick-1752.json` -- ciphertext pointers (8 files), alphabet, constraints
+(design, prior attempts, check-solved verdict), cheap tests in order (pool test done as test 1; homophonic
+anneal on the 1763 pool as test 2, gated on an era-matched French corpus), judge block. **Judge block flag**:
+`tools/judge_plaintext.py`'s only wired `fr` corpus is `fr16` (16th-century, Catherine de Medici's letters) --
+not era-matched to this 1752-1763 target, per CLAUDE.md's pt17-vs-pt18 lesson. LANE ZX2 worker ZX2-FR18 is
+building an era-matched corpus concurrently (per ROOM.md 19:16); noted in the spec's `judge.note` so a future
+judge run does not trust a FAIL/PASS against fr16 uncritically.
+
+**Not done, out of this brief's scope**: the homophonic anneal itself (test 2, needs fr18); a second sweep for
+1752/1756 siblings elsewhere in KHA/BnF holdings (only the printed edition and DECODE were checked, both
+already covered by check-solved); reading the original DECODE cleartext-interspersed transcription (account-
+blocked).
+
+Grade counts this pass: H 0, C 0, S 4 (cross-family Jaccard x3, cluster one-key test), M 0, I 0. Rule 10: no
+novelty wording used; this is a search/structural result, not a verifier's classification.
+
+Requests this pass: `github.com` 1 shallow clone (dbourdeau/cyphersolver, deleted from the scratchpad after
+grep and file extraction), no other hosts (decode_list.py metadata reused from disk, NA Fagel images already
+on disk). No subagents used.
