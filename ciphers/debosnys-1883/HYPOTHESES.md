@@ -5,63 +5,82 @@ image manifest, and the GOLD-0D/B2/4A/4B/4C/4E sections this summary rests on). 
 append-only, dated and signed by the job that wrote it; `tools/family_run.py` appends its rows under its own
 marker at the end. This top block is rewritten once per cycle by the lane's consolidator and by nobody else.
 
-**Summary, cycle 1** (GOLD-CONS1, Fable, session_017PRh6MAX17rgp5ayuycZ6c, 25 Sept 2026 19:35 UTC)
+**Summary, cycle 2** (GOLD-CONS2, Fable, session_01SPixjGTp23T4YyxPvHwkWs, 25 Sept 2026 21:12 UTC; replaces the
+cycle-1 block of 19:35 UTC, whose target facts are unchanged and restated here)
 
-**Where the target stands.** Six page images on disk (c1, c2a, c2b, c3, c4a, c4b; 6 scienceblogs.de requests in all),
-segmented into 1315 boxes; after GOLD-4C's by-eye split, 1251 signs over **160 ids** (29 `_` noise and 35 `MULTI`
-boxes excluded), pooled IC 0.0391 against uniform-at-K 0.0063, French 0.0697, English 0.1022. Per cryptogram
-(N, K, IC): c1 132/58/0.040, c2a 520/104/0.046, c2b 214/67/0.049, c3 116/59/0.035, c4a 201/68/0.035, c4b 68/49/0.015.
-The sign X is 201 of 1251 (16.1 pct), self-adjacent 28 times; without X the pool reads N 1050, K 159, IC 0.019
-(X alone contributes 0.026 of the pooled 0.039). 73 ids occur fewer than three times, 50 once; twenty of the
-singletons are pictograms (horse, eagle, anchor, house ...), eight are plain Latin letters. 36 composite ids
-(a base sign with strokes stacked over or under it: O-TILDE, OX-TILDE, O-DASH2, II-DASH, CC-DASH, ARCH-DASH,
-C-BAR-X, II-O ...) cover 267 boxes, 20 pct of all signs. No ciphertext.txt at the gate yet: the file still holds
-LANE B2's single-pass k=90 draft for c1-c3; `ciphertext_draft.tsv` is GOLD-4C's single pass A on the 160-id
-inventory, `ciphertext_c1_draft.tsv` the c1 reconciliation.
+**Where the target stands.** Six page images on disk (c1, c2a, c2b, c3, c4a, c4b), 1251 signs over **160 ids** after
+GOLD-4C's by-eye split (29 `_` and 35 `MULTI` boxes excluded), pooled IC 0.0391 against uniform-at-K 0.0063 and French
+0.0697. X is 201 of 1251 (16.1 pct), self-adjacent 28 times. 73 ids occur under three times; twenty singletons are
+pictograms. **New this cycle (GOLD-D1, mechanical from GOLD-4C's own composite names):** at base level the inventory
+folds to **K_base 128** with 16 mark classes (DASH 63, TILDE 61, O 31, DOT 21, DASH2 16, BAR 10, six classes under 7);
+IC rises to 0.0489 pooled (c1 0.0549, c2 0.0535, c3 0.0528, c4 0.0377). D1's table settles on 46 composite ids over
+233 boxes against GOLD-4C's prose count of 36 over 267, the gap being the two GOLD-4A ligatures O-SLASH and DAGGER-O
+kept standalone; a reading-side judgement, recorded, not settled on the image. Transcription agreement is unchanged:
+c4 22.4 pct at 68 ids (GOLD-4A), c1 62.3 pct full-id / 66.4 pct family-level at 160 ids (GOLD-4E, 52 columns
+unsettled). No cryptogram is at the 80 pct gate; `ciphertext.txt` still holds LANE B2's k=90 draft.
 
-**The bottleneck is the transcription, and the number that prices it.** Blind pass agreement: c4 22.4 pct at 68 ids
-(GOLD-4A, of which three quarters was inventory confusion, not legibility, once settled on the image: reading-error
-floor 9 pct); c1 62.3 pct full-id, 66.4 pct family-level, at 160 ids (GOLD-4E, 52 disagreements not settled on the
-image). GOLD-4D (all four cryptograms through one subagent) was stopped at 3.3x its cap with nothing pushed. If two
-independent passes each misread a share e of signs, agreement is about (1-e)^2 plus chance, so 62 pct agreement is
-roughly e = 0.2 per single pass; a settled two-pass transcription sits near the 9 pct floor GOLD-4C measured on c4.
-The only matched-control curve on file for what noise does to a large-alphabet anneal is Salviati's (NEAR.md,
-LANE R6 CM, 25 Sept 17:54): code+mark at N 2820, K 223 reads 87-94 pct clean, 27-43 pct at 10 pct type noise,
-24-27 pct at 20 pct. Debosnys is shorter and has a larger alphabet per sign (K/N 0.128 against Salviati's 0.079),
-so the curve here can only be worse. Read: **a single pass (about 20 pct noise) is not a usable input to any
-anneal; a settled two-pass (about 10 pct) is borderline; and whether even a clean transcription reads at this N
-and K has not been measured.** That measurement costs nothing in transcription and comes first (D1 below).
+**D1's measured curve replaces the Salviati working assumption.** Homophonic anneal (`tools/family_run.py --family
+homophonic`, fr19, `profile=target` so the control carries the target's own lopsided top sign -- L1 152 between the
+sorted profiles, top sign 17.5 pct vs X's 16.1 -- and `noise=p` by the Salviati recipe), seeds 1-3, restarts 8,
+controls only; the target was never run, as briefed. All six configurations ran on all three seeds; nothing is missing.
 
-| family | status | CONTROL | TARGET | what it rests on / what is left |
+| configuration | N | K | type noise | CONTROL mean plaintext letters recovered (range) |
 |---|---|---|---|---|
-| T transcription (the input to every family) | **partial, below gate** | GOLD-4C's settled c4 columns: 9 pct reading-error floor | c4 22.4 pct at 68 ids; c1 62.3 / 66.4 pct at 160 ids; no cryptogram at the 80 pct gate | next transcription spend only after D1 says which K the solver needs; the cheapest path to one gated cryptogram is settling c1's 52 columns on the image (136 signs), not another blind pass |
-| H homophonic French, sign = letter (`tools/family_run.py --family homophonic`, fr19 corpus) | **open, no control run yet** | owed: N 1251, K 160, fr19, seeds 1-3, at type noise 0 / 0.1 / 0.2 (D1) | not run; must not run on a single-pass draft | structural objection to weigh with the control: X at 16.1 pct exceeds any French letter's share once that letter is split across homophones, so under H either X is a null or divider (but it is self-adjacent 28 times) or e has a single sign; the control is built with the target's own sorted profile so it faces the same shape |
-| BM base + mark (composites read as a base sign plus a modifier class; Sektu's N-glyph = nasalisation is one such mark) | **open, recount owed** | same control at (N, K_base) (D1) | a crude first-token fold of the 160 names gives K 85, IC 0.061 -- an upper bound, since it also folds the twenty pictograms into one and BAR-THIN with BAR-SOLID; the proper fold from GOLD-4C's 36-id composite list is D1's first step | the fold is mechanical (names carry their parts), so this family's K is a lookup, not a re-read; two passes also agree better at base level (66.4 vs 62.3 pct on c1) |
-| NC nomenclator or code (sign = syllable, rhyme group or word; Sektu 2017's phonetic-syllable hypothesis) | **open, parked until T is gated** | none defined; a synthetic syllable cipher at N 1251 is the control if ever run | the long tail (73 ids under three occurrences, twenty pictograms), the 2.1 letters-per-sign estimate from GOLD-4B, the author's Latin/Greek/English/French/"Portuguese" | no ciphertext-only attack for a word code at this N; a syllable code needs an exact type identity, which T does not yet give |
-| V verse form (a clear poem as crib) | **parked with numbers** (GOLD-4B; Sektu 2017) | shuffle null of 1000 line-length permutations | c4a vs the c3 clear poem r 0.44 at the 93.6th percentile (not significant; the 14-line match is an artefact of counting one of c4's two pages); Sektu rejected alexandrines against Baudelaire | the Greek poem on the reverse of the c4 leaf (Cipher Foundation scans, not on disk) is the one untested host text |
-| L language (fr / en / pt / la) | **open** | fr19 exists (2.66M letters); en16_repo exists; la and pt corpora not wired | -- | the anneal control is French first; en second; la and pt only if H reads clean French at gate |
+| H, K 160 | 1251 | 160 | 0 | 0.440 (0.034-0.822) |
+| H, K 160 | 1251 | 160 | 0.10 | 0.325 (0.310-0.349) |
+| H, K 160 | 1251 | 160 | 0.20 | 0.230 (0.204-0.258) |
+| BM, base level | 1251 | 128 | 0 | **0.859 (0.802-0.966)** |
+| BM, base level | 1251 | 128 | 0.10 | **0.314 (0.245-0.378)** |
+| H, K 160 minus every X | 1050 | 159 | 0 | 0.230 (0.101-0.305) |
 
-**Decisions, cycle 1.** T: no new blind pass this cycle; settle c1 on the image only after D1 (if D1 says a clean
-transcription reads at this K, that settlement is the next job, c1 then c3, c4, c2, one cryptogram per worker, no
-subagent, cost read at 15 minutes). H: continue, control only (D1). BM: continue, mechanical recount inside D1.
-NC: park. V: park. L: French first.
+(The first, wrong `profile=target` implementation -- L1 946, it could not make a dominant sign -- left six earlier rows
+in the family_run table, 20:15-20:19 UTC; the corrected rows are 20:22-20:25 and are the ones above.)
 
-**What transcription standard is good enough, per family** (to be replaced by D1's measured curve):
+**The cycle-1 rule, applied as written.** (a) needs clean >= 0.6 and 10 pct noise >= 0.4 at K 160: clean reads 0.440,
+so (a) fails. (b) needs clean >= 0.6 at K_base only: 0.859, so **(b) holds -- BM has headroom, H does not.** (c) does
+not apply. Branch **(b)** by the rule's letter, with all the numbers it asked for present.
 
-| family | K the solver sees | tolerable type-noise (working assumption from the Salviati curve) | which transcription reaches it |
-|---|---|---|---|
-| H at K 160 | 160 | under 10 pct, and only if the clean control reads at gate | settled two-pass, all four cryptograms (about 1250 signs, four Sonnet boxes) |
-| BM at K_base | about 90-120 | under 10 pct at base level | settled two-pass at base level: fewer confusable ids, so cheaper |
-| NC | exact | under 5 pct | out of reach this cycle |
+**What the rule did not ask, and the number that decides the next spend.** The rule set no noise condition at base
+level, and the noise numbers are the point: at base level the control falls from 0.859 clean to **0.314 at 10 pct
+noise**, every seed below 0.4 (0.245-0.378). What noise a settled two-pass transcription carries is not measured
+directly: on c4, settling on the image raised agreement to a ceiling of about 91 pct (GOLD-4C), so about 9 pct of
+columns stay disputed after settlement, and the settled transcription's type noise against the true sign lies between
+roughly 5 pct (disputes settled right more often than not) and 9-10 pct (settled at chance). D1's curve has no point
+between 0 and 0.10. So: **a settled base-level transcription of c1 (or of all four) would read about 0.31 on D1's curve
+if it lands at 9-10 pct noise, which is not a test of BM; it would be a test only if settlement lands near 5 pct noise
+and the curve is still above 0.5 there, which nobody has measured.** Deciding number: 0.314 at 10 pct, base level.
 
-**Decision rule for cycle 2, written before the numbers exist.** From D1's control table (mean plaintext letters
-recovered, 3 seeds): (a) clean at or above 0.6 and 10 pct noise at or above 0.4 at K 160 -- H has headroom; buy the
-settled transcription, c1 first, then run H on the gated cryptograms pooled. (b) clean at or above 0.6 only at K_base --
-BM has headroom, H does not; the settlement pass is briefed at base level. (c) clean below 0.4 at both -- neither
-letter family is a test at this N and K; the target is parked as "transcription-limited at K 160, no letter-substitution
-control reads at N 1251" in the spec's `cheap_test_done`, NEAR.md keeps the row, and only NC (with a gated
-transcription) or the museum's key sheet (ASKS 52) remain. Rule 10: nothing in this file is a reading; status stays
-`open`; the lane never writes solved, new, first or unpublished.
+**Decision: (b), the settlement not bought this cycle.** Outcome (i) of the orchestrator's two, in its "control point
+FIRST" form: the transcription is the expensive half and the control point is $3 with no image, so the control runs
+first and alone (D2 below), and the c1 settlement is briefed in cycle 4 only if D2 clears the gate written here before
+its numbers exist: **base-level control mean >= 0.5 at noise 0.05 AND >= 0.4 at noise 0.075** (3 seeds, 8 restarts,
+fr19, profile=target). If either fails, the letter families go to (c) with D2's curve as the numbers: the target is
+parked as "transcription-limited at K 160 / K_base 128; no letter-substitution control reads at N 1251 at the noise a
+settled transcription carries" in the spec's `cheap_test_done`, this block keeps the register (rule 5: never
+closed-negative), and what remains is NC with a gated transcription and the museum's key sheet (ASKS 52). D2 also
+prices the alternative the (ii) list names, c2 settled alone (734 signs, K_base 102) at noise 0 and 0.05, so cycle 4
+can choose between c1-first (a pilot of the settlement method) and c2-first (the only cryptogram long enough to read
+on its own) with numbers. What else would change the picture: a smaller effective K from a second base fold (O-SLASH,
+DAGGER-O and the BAR variants folded further, which D1 kept standalone) and the museum key sheet.
+
+**If D2 clears the gate, the cycle-4 settlement brief is:** c1 on the image, base level, the 52 disputed columns of
+`ciphertext_c1_draft.tsv` against `glyphs/strips/c1_L0*.jpg` and `glyphs/base_mark.tsv`, one cryptogram per worker,
+NO subagent, commit per line group, Sonnet, cap $4, 40 minutes, gate 80 pct two-pass agreement at base level after
+settlement, the worker never runs a solver; then c2 (734 signs) under the same terms before any anneal on the target.
+
+| family | status after cycle 2 | CONTROL | TARGET | what is left |
+|---|---|---|---|---|
+| T transcription | **partial, below gate**; no pass this cycle | c4 settled ceiling about 91 pct | c1 62.3 / 66.4 pct; c4 22.4 pct | settlement only if D2 clears the gate above |
+| H homophonic, K 160 | **parked with numbers**: 0.440 clean, 0.325 at 10 pct | as the table | never run (draft is single-pass, about 20 pct noise) | nothing at this K; the fold to base level is the family's only lever |
+| BM base + mark, K_base 128 | **open, headroom clean, none at 10 pct noise**; D2 measures 2.5 / 5 / 7.5 pct | 0.859 clean, 0.314 at 10 pct | never run | D2, then the settlement or (c) |
+| NC nomenclator / code | **parked** until T is gated | none | -- | the long tail and the pictograms argue for it; no ciphertext-only attack at this N |
+| V verse form | **parked with numbers** (GOLD-4B r 0.44, 93.6th percentile) | shuffle null | -- | the Greek poem on the c4 reverse (not on disk) |
+| L language | **open**, French first | fr19 (2.66M letters) | -- | en second; la, pt only after a French control reads on a gated transcription |
+
+**Decisions, cycle 2.** T: no pass. H: park with numbers. BM: continue by one $3 control box (D2), the settlement
+gated on it. NC, V: park. L: French. Rule 10: nothing in this file is a reading; status stays `open`; the lane never
+writes solved, new, first or unpublished.
+
 
 ## GOLD-D1, noise-matched controls (25 Sept 2026, session_01Qcv68Pn46JNXkktRXTv6DL, Sonnet)
 

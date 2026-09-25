@@ -4,57 +4,104 @@ Working file for constraints on the system behind the five February 1944 Köhler
 the target, sources and check-solved verdict). Everything below the first `##` is append-only, dated and signed by
 the job that wrote it. This top block is rewritten once per cycle by the lane's consolidator and by nobody else.
 
-**Summary, cycle 1** (GOLD-CONS1, Fable, session_017PRh6MAX17rgp5ayuycZ6c, 25 Sept 2026 19:30 UTC)
+**Summary, cycle 2** (GOLD-CONS2, Fable, session_01SPixjGTp23T4YyxPvHwkWs, 25 Sept 2026 21:12 UTC; replaces the
+cycle-1 block of 19:30 UTC, whose target facts and structural argument are unchanged and restated here)
 
 **Target facts every family must respect.** 924 letters in five messages of 237 / 178 / 140 / 140 / 229 (Kahn heads
-the third "137"; it prints 140). All 26 letters present (j 32, q 39, x 33); counts run z 55 down to c 14, sorted
-profile 55 47 47 47 46 46 44 40 39 37 36 36 35 33 33 32 31 31 31 30 29 28 28 26 23 14. Two message lengths are odd.
-The transcription is Schmeh 2021 reproducing Kahn 1981 pp.65-66 (no image); it differs from Bourdeau's at six
-single letters (`ciphertext-variants.tsv`, ASKS row 53) -- immaterial to every statistical test below, material
-to any decode. No depth between messages (Bourdeau). IC 0.0399 pooled.
+the third "137"; it prints 140). All 26 letters present; counts run z 55 down to c 14, sorted profile 55 47 47 47 46
+46 44 40 39 37 36 36 35 33 33 32 31 31 31 30 29 28 28 26 23 14. Two message lengths are odd. Transcription: Schmeh
+2021 reproducing Kahn 1981 pp.65-66 (no image); six single-letter differences from Bourdeau's (`ciphertext-variants.tsv`,
+ASKS 53), immaterial to every statistic below, material to any decode. No depth between messages (Bourdeau). IC 0.0399.
 
-**The single most informative fact so far (GOLD-2C step 1).** The letter statistics sit at the median of what a
-language key through a permuted tableau gives (inside the keyed band on 6/6 statistics, percentile 0.41-0.52 on
-four of them) and outside the uniform one-time-key 99 pct band on 5/6 (IC pct 1.000, chi-square 1.000, entropy
-0.000, min count 0.001, L1 0.999). So the key stream is **not uniform**: it carries a unigram skew of about the size
-a natural-language key gives, and the ciphertext alphabet is a permutation of the sum. Two structural facts cut
-further: transposition of anything with a language profile is excluded by the flat IC, and a 25-letter digraphic
-square (Playfair, Doppelkasten) is excluded because j is present and two lengths are odd. What is left is the
-family "non-uniform key + letter arithmetic + at least one unknown alphabet permutation", in which the standard
-tableau (Bourdeau 4, GOLD-2A) and the keyword-mixed tableau (GOLD-2C) are the two corners already closed.
+**The structural fact (GOLD-2C step 1, unchanged).** The letter statistics sit inside the keyed-tableau running-key
+band on 6/6 statistics (percentile 0.41-0.52) and outside the uniform one-time-key 99 pct band on 5/6. The key stream
+is not uniform; transposition is excluded by the flat IC; a 25-letter digraphic square by j and the odd lengths. What is
+left is "non-uniform key + letter arithmetic + at least one unknown alphabet permutation". Cycle 2 closed four more
+corners of that family; none moved.
 
-| family | status | CONTROL | TARGET | what it rests on / what is left |
+**What cycle 2 added.** Every family B and B' negative was, at cycle 1, conditional on 1880-1920 novel-prose key models
+(nl20). K1 built `tools/data/nl_dev` (Statenvertaling, 67 files, 3.4M letters; dbnl and gutendex unreachable, no Catholic
+prayer book found) and reran both tableaux under it; K2 ran the beau and German-key corners of B' under nl20 and built
+the English-keyword option without running it. Controls and targets side by side, same decoder settings per row:
+
+| family, corner | key model | CONTROL (pct plaintext letters, seeds 1-3; gate) | TARGET pooled joint ll/letter | noise band (same pipeline) | read |
+|---|---|---|---|---|---|
+| B standard tableau, vig (GOLD-2A) | nl20 novels | 72.7 / 60.4 / 68.3, mean 67.1 (gate 60 met) | -3.589 (de/nl vig); -3.57 to -3.62 over 7 configs | -3.57 to -3.64 (3 uniform texts, order 8 beam 1000) | inside |
+| B standard tableau, vig and beau (GOLD-K1) | nl_dev Bible | 83.0 / 89.5 / 80.3, mean 84.3 (gate 60 met) | vig -3.588; beau -3.640 | GOLD-2A's band reused (limit, see below) | inside; beau at the band's floor |
+| B' keyword-mixed, vig, 4 placements (GOLD-2C) | nl20 | 79.1 / 74.0 / 64.7, mean 72.6 (gate 50 met) | -3.534 (`waarvan:plain`) | -3.507 / -3.544 (2 uniform texts, order 6 beam 300) | inside |
+| B' keyword-mixed, **beau** (GOLD-K2 v1) | nl20 | 85.5 / 82.5 / 66.2, mean 78.1 (gate 50 met) | **-3.478** (`aufgabe:plain:beau`); msg-1 best-of-30 -3.443 vs noise -3.477 / -3.492 | the vig band above, reused | 0.029 above the higher of two draws; judge FAIL |
+| B' keyword-mixed, vig, **German key** (GOLD-K2 v2) | de20 | strict 7.7 (label ambiguity: streams exchangeable); either-stream 89.6 / 90.7 / 88.6, mean 89.6 (gate met) | -3.573 | same | below the band's floor |
+| B' keyword-mixed, vig (GOLD-K1) | nl_dev Bible | 87.8 / 81.0 / 85.6, mean 84.8 (gate 50 met) | -3.583 (`evelyn:plain`) | same, reused | 0.04-0.08 below the band's floor |
+| B' English keyword list (GOLD-K2 v3) | -- | not run; `wordcorpus=` option built and tested | -- | -- | owed |
+
+Every control cleared its gate, every target sits at noise, every judge line reads FAIL. Yes: every B and B' negative
+is now also conditional on a devotional key model, and the devotional model made the *controls* easier (84 vs 67-73
+pct) without moving the target at all. The register lever is spent for the standard and keyword-mixed tableaux.
+
+**(i) The beau corner, weighed.** K2's -3.478 sits 0.029 nats above the higher of the two noise draws (-3.507) and 0.066
+above the lower. Two draws 0.037 apart have no tail: the expected maximum of ten such draws lies a few hundredths above
+the maximum of two, which is exactly where -3.478 is. Against that, the scale of a real signal in this pipeline is 0.35-0.5
+nats (the controls' true tableau over its near-misses, and the controls' pooled -3.01 to -3.18 over noise -3.51 to -3.54);
+the beau excess is under a tenth of it, the msg-1 best-of-30 gap is 0.03, and the judge failed. Not a flag by the 0.1-nat
+rule and not a signal at the control's scale. A 10-text band for the beau pipeline (the vig band was reused; beau changes
+the candidate tableaux, so it is not strictly the same pipeline) should run **beside** B'', not before it: it cannot change
+the B'' design, only the sentence the record carries. It is folded into K3 below (Sonnet, about $3 of a $6 box) rather
+than given its own box. NEAR.md should carry: beau/Dutch-key target -3.478 vs a two-text band top of -3.507 (excess
+0.029 against a control signal of 0.35-0.5 nats), 10-text beau band owed to K3.
+
+**(ii) The nl_dev bands, weighed.** K1 scored its nl_dev targets against bands whose LM_k was trained on nl20/de20. The
+band is the decoder's pooled score on uniform text, and a lower-entropy key model (the Bible: controls 84 vs 67 pct) lets
+the decoder find higher-scoring key strings on any input, so an nl_dev-trained band would sit *higher* (less negative)
+than the reused one, not lower. That makes K1's "inside" reads conservative in the safe direction: the targets (-3.588,
+-3.583, -3.640) would be deeper inside a band that had moved up. At the 0.05-nat scale it does not matter for these
+verdicts; it would matter only for a target within 0.05 of a band top, and none is. Recorded as a limit; no re-run.
+
+**Family E (digit system re-lettered), weighed once more.** K1 and K2 test letter arithmetic and say nothing about E.
+E's own prediction (count tiers from a 100-cell table onto 26 letters) is testable by the GOLD-2C step-1 simulation, but
+the band depends on the unknown table and additive, so it would be wide and would sit where the keyed band sits: low
+information per dollar. Kept recorded, not briefed. B''-c below covers E's re-lettering step (a permutation on the cipher
+side) for the letter-arithmetic case; digit arithmetic mod 10 is a different group and stays open.
+
+**The corner nobody has run.** `running_key.mixed_tabula` mixes the plaintext side (plain), the key side (key), both
+(both) or all three consistently (full). A mixed alphabet on the **cipher side alone**, c = M[(p + k) mod 26] with
+standard plain and key letters (the rows of the square filled with a shifted mixed sequence, the commonest practical
+way a Vigenere square was mixed), and the two mixed pairs {plain, cipher} and {key, cipher}, are not among the four
+modes and were not among Bourdeau's six (his test 4 assumes the identity on the cipher side). Its statistics match the
+target: the sorted profile under cipher-side mixing is the STANDARD band's, where the target sits at percentile 0.16
+(GOLD-2C step 1). It is the keyword-restricted instance of B'' with S1 = S2 = id, and it costs one Sonnet box.
+
+| family | status after cycle 2 | CONTROL | TARGET | what is left |
 |---|---|---|---|---|
-| A recovery (TNA KV 2/KV 3/HW 19/HW 20/HW 40, FBI Vault, NARA RG 65, Kahn's source, Farago 1971) | **blocked on the owner** (ASKS 55: NARA 105-9673 and Farago; ASKS 53: Kahn pp.65-66 for the six groups) | n/a | no decrypt, key or system located (GOLD-1A, ARCHIVE.md) | nothing a cloud worker can add until the owner writes to NARA or reads Farago; one message-count coincidence ("137 messages by March 1944" vs the "137" header) noted, uncorroborated |
-| Bourdeau's six: MASC / transposition / ABC-Verfahren; periodic Vig-Beau-varBeau 1-26 de/en/nl; ciphertext autokey 1-40; standard-tableau running key (unigram-identity likelihood); Gronsfeld; any Enigma wiring | **excluded** by Bourdeau 15 Sept 2026, each with a matched or shuffled control, on his transcription (6 letters from ours) | his: true running key >= +7.5 nats in 95 pct of trials; Enigma-like chi-sq median 26 | IC 0.0398; periodic keys at shuffle level; running key below uniform (-4.0 nats); chi-sq 57.9 (p 0.0003) | cited, not rerun (rule 8, MIT/CC BY 4.0); nothing here needs a second run on our transcription |
-| B standard-tableau running key, two-stream beam decode (`tools/running_key.py`) | **parked** (GOLD-2A) | 60.4-79.1 pct plaintext letters recovered, 3 seeds, Dutch or German novel key (gate 60 met) | joint ll -3.57 to -3.62 per letter on 7 configs, inside the one-time-key noise band -3.57 to -3.64; controls -3.12 to -3.17; period scan 31-120 max 0.0664 at P=85 (p 0.10); crib-drag top -1.82 inside noise -1.60 to -1.99 | conditional on 1880-1920 literary-prose models for both streams: a devotional or military key text is outside them (K1 below) |
-| B' keyed tableau, keyword-mixed alphabets (`tools/families/keyed_running_key.py`) | **parked with both numbers; continue only on the untried variants** (GOLD-2C) | 79.1 / 74.0 / 64.7 pct, mean 72.6, gate 50 met; true tableau stage-1 rank 1-27 of 45,749 | winner -3.534 per letter inside the full-pipeline noise band -3.507 to -3.544; best-of-30 -3.470 vs noise -3.477/-3.492; judge FAIL | run so far: vig arithmetic, Dutch key, one keyword from de20+nl20 words, four placements. Untried: beau/varbeau, a German key read from both streams, English/French keywords, transposed-keyword alphabets, two different keywords, and the general permutation (B'' below) |
-| B'' general permuted tableau (S1, S2 annealed on the pooled unigram likelihood, S3 free; the stage-2 decoder as discriminator) | **open, not run**; cycle-3 candidate | design owed (Fable, about $12): NEAR.md row item (2) | -- | only family that covers the rest of Bourdeau's case (a); no cheap scorer at 924 letters beyond the stage-1 multinomial, so identifiability is the risk; a 1000-permutation noise band is the control |
-| C book or word-sum code (Thouless-type; Bean 2019 key-text ranking) | **downgraded, parked** | -- | -- | a word-sum with letter arithmetic on a standard tableau *is* family B, excluded twice; Bean's ranking by decrypt letter frequencies is Bourdeau's test 4. What survives is a codebook with letter superencipherment, which has no ciphertext-only attack at 924 letters without the book. Reopen only as B'' with named candidate key texts |
-| D uniform one-time key | **excluded at 99 pct on 5/6 statistics** (GOLD-2C step 1) | 1000 simulated OTPs at the five lengths | see the fact above | -- |
-| D' hand-made non-uniform key (a table of letters or digits written by hand, or any key with a language-like skew) | **open, unfalsifiable from the ciphertext alone**; park by definition | -- | inside the keyed band 6/6 | only family A can resolve it; the lane does not spend on it |
-| E digit system re-lettered (straddling checkerboard, additive from a book or table, digit pairs to letters through a 2-digit table) | **hypothesis, not tested; weakly disfavoured** | -- | a 100-cell table onto 26 letters gives two count tiers (4 cells vs 3 cells, about 37 vs 28 at N=924) after a flattening additive; the target's profile is a smooth gradient with a 4x spread (55 to 14) | a short repeating additive would keep a language skew and fit; no cheap test better than B'' names it. Not briefed this cycle |
-| F Abwehr hand systems of 1943-44 as described in print (to check, not cited from memory as fact: Kahn, *Hitler's Spies* 1978; Kahn, *The Codebreakers* ch. on WWII agent ciphers; the ISOS histories): double columnar transposition keyed by a book line; substitution table then transposition; Doppelkasten; Rasterschlüssel 44; book-page additive systems | **mostly excluded by the two structural facts** (transposition keeps IC; digraphic squares need 25 letters and even lengths) | -- | -- | what survives of F is a substitution table with a non-uniform additive, i.e. B'/B''/E. One line for the owner's Farago read (ASKS 55): note how the Hamburg channel's prayer-book cipher turned a page into a key -- letters, digits, or a transposition key |
+| A recovery | **blocked on the owner** (ASKS 55, 53) | n/a | no decrypt, key or system located (GOLD-1A) | nothing a cloud worker can add |
+| Bourdeau's six | **excluded**, cited | his controls | see cycle 1 | nothing |
+| B standard tableau | **parked** at two key registers | 67.1 (nl20) / 84.3 (nl_dev) mean | -3.57 to -3.64, all inside | nothing cheap; a reading needs a key text, not a model |
+| B' keyword-mixed, modes plain/key/both/full, vig/beau, nl/de/dev keys | **parked** on five corners with both numbers | 72.6 / 78.1 / 89.6 / 84.8 | -3.534 / -3.478 / -3.573 / -3.583 | English keyword list (owed, $4); 10-text beau band (K3) |
+| B'-c keyword-mixed, cipher-side placements (cipher; plain+cipher; key+cipher) | **open, not run**; cycle-3 job K3 | owed: same construction as GOLD-2C, gate 0.5 | -- | the highest-EV corner left in B' |
+| B'' general permuted tableau, first B''-c (S3 free, S1 = S2 = id) | **open, design owed**; cycle-3 job (Fable) | owed: German plaintext at the five lengths under a Dutch key through a random permutation, gate 0.5 | -- | the general S1, S2, S3 case after B''-c's control reads |
+| C book / word-sum code | **parked**, merged into B'' | -- | -- | -- |
+| D uniform one-time key | **excluded** at 99 pct on 5/6 | 1000 OTPs | -- | -- |
+| D' hand-made non-uniform key | **open, unfalsifiable from the ciphertext**; park | -- | inside the keyed band | only family A |
+| E digit system re-lettered | **recorded, not briefed** (above) | -- | -- | -- |
+| F Abwehr hand systems in print | **mostly excluded** by the two structural facts | -- | -- | what survives is B'/B''/E |
 
-**Decisions, cycle 1.** A: park (owner). Bourdeau's six: excluded, cited. B: park. B': continue on the four cheap
-variants, one Sonnet box (K2). B'': design in cycle 3 if K1 and K2 come back flat. C: park (merged into B''). D:
-excluded. D': park. E, F: recorded, not briefed. New this cycle: the key-register lever (K1) -- every B and B'
-negative is conditional on 1880-1920 novel models for the key stream, while the one documented Koehler key is a
-Dutch prayer book; a devotional Dutch key corpus (Statenvertaling and a Catholic prayer text if reachable) is the
-cheapest change that both strengthens the logged negatives and gives B/B' another run.
+**Decisions, cycle 2.** A: park (owner). B: park at both registers. B': park the five run corners; continue only on the
+cipher-side placements (K3) and carry the English list as owed. B'': design now (K1 and K2 came back flat, the cycle-1
+condition), as B''-c first. C, D, D', E, F: as before. No LOCAL-QUEUE row for a Catholic Dutch prayer book: the
+register lever moved the controls and not the target across two registers, the documented prayer-book key belongs to
+the FBI-run Hamburg channel and not to these Paris messages, and the owner's time is better spent on ASKS 55 and 53.
 
-**Next two Köhler jobs by expected value** (P(the first result moves the target) x value / cost; P is a judgement):
+**Cycle-3 Köhler jobs by expected value** (P(the first result moves the target) x value / cost; P is a judgement):
 
 | rank | job | P(moves) | cost | EV per dollar | brief |
 |---|---|---|---|---|---|
-| 1 | K2: B' variants on the existing corpora -- `arith=beau`, German key (`kcorpus=tools/data/de20`, both streams read), English keyword list; control first per variant, gate 0.5 | about 0.05 per variant, 0.15 for the three | $6 Sonnet | 0.025 V | `2026-09-25-lane-gold-c2-koehler-bprime-variants.md` |
-| 2 | K1: devotional Dutch key corpus (`tools/data/nl_dev`, at most 40 fetches, one host at a time), then B (standard) and B' (keyword-mixed) reruns with `kcorpus=nl_dev`, controls first | about 0.10 | $8 Sonnet | 0.0125 V, plus it tightens every prior B/B' negative | `2026-09-25-lane-gold-c2-koehler-devotional-key.md` |
-| 3 (cycle 3) | B'' general permuted tableau, Fable design then Sonnet runs | about 0.10 | $12 + $10 | 0.0045 V | not briefed |
+| 1 | K3: B' cipher-side placements (three new modes in `mixed_tabula`, control first per mode, vig then beau for the cipher-only mode), plus the 10-text beau noise band in the background | 0.10 for the three | $6 Sonnet, 75 min | 0.017 V | `2026-09-25-lane-gold-c3-koehler-bprime-cipher-side.md` |
+| 2 | B''-c design: `tools/families/permuted_tableau.py`, anneal over S3 with the two-stream decoder as objective, matched control through a random permutation, uniform-text and shuffle-target bands | 0.10 | $12 Fable, 90 min (+ about $8 Sonnet runs later) | 0.005 V | `2026-09-25-lane-gold-c3-koehler-bprime2-design.md` |
+| 3 (owed) | B' English keyword list, `wordcorpus=tools/data/en16_repo,...`, control first | 0.04 | $4 Sonnet | 0.01 V | not briefed this cycle (box limit); the K2 brief's step 3 is the brief |
 
-K1 and K2 are independent (different workers, CPU-bound, at most three decoder processes each for memory) and
-may run at once. Both stop at a control that fails its gate: the tool or corpus is fixed first, never the target.
-Rule 10: nothing in this file is a reading; status stays `open`; the lane never writes solved, new, first or
+K3 and the B''-c design are independent and may run at once (K3 is CPU-bound, three decoder processes at most at order
+6). Rule 10: nothing in this file is a reading; status stays `open`; the lane never writes solved, new, first or
 unpublished.
+
 
 ## Prior attempts (Bourdeau 15 Sept 2026)
 
