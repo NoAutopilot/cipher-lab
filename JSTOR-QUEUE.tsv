@@ -77,3 +77,5 @@ ciphers/jan-van-nassau-1572-75	"Glawischnig" AND "Nassau-Dillenburg" AND ("Johan
 ciphers/bl-charles-digby	"Wheatstone" AND ("Goffe" OR "Goff") AND (cipher OR cypher) AND "Charles I"	2026-09-25	queued	
 specs/powers-1991.json	Herman AND Lernout AND "Gold Bug Variations" AND (Mosaic OR "Genetic Randomness")	2026-09-25	queued	
 ciphers/antt-fcc-costacabral-1865	("Costa Cabral" OR "Conde de Tomar" OR "Conde de Thomar") AND ("Santa Sé" OR "Holy See" OR Padroado) AND 1865	2026-09-25	queued	
+ciphers/espagnol142-mercy-1648	("abbé de Mercy" OR "abad de Mercy" OR "Abt von Mercy") AND (1648 OR Chevreuse OR "Saint-Ibal" OR Brandenburg OR Brandebourg)	2026-09-25	queued	
+ciphers/espagnol142-mercy-1648	("Leopold Wilhelm" OR "Léopold-Guillaume" OR "Leopoldo Guillermo") AND (Cleves OR Clèves OR Kleve) AND Brandenburg AND 1648	2026-09-25	queued	

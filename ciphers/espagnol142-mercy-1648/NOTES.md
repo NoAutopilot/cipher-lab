@@ -733,3 +733,15 @@ be checked at all.
 
 Requests this section: archivesetmanuscrits.bnf.fr 1 (2 retries after connection resets). gallica.bnf.fr 13
 IIIF image fetches (11 successful, 2 retried after resets) + 1 SRU query = 14. No other hosts. No subagents.
+
+## V6-MERCY verifier note (25 Sept 2026, LANE V6)
+
+Novelty class **N3**, key **ours**, evidence moderate (cryptanalytic, S/M only; judge cannot decide; crib-gain gate
+not met numerically). See AUDIT.md for the class, the safe sentence and the search log; describe this item outside
+the repo only in AUDIT.md's safe sentence. Two wording corrections for readers of this file: (1) the item is
+Espagnol **144** f.22, not 142 (the folder name is historical); (2) the spec's "likely Peñaranda/Castel-Rodrigo
+office per the finding aid" is not what the finding aid says -- its sibling items 9-10 are "remises par
+Léopold-Guillaume", and Lonchay 1896 p.445 makes Mercy Archduke Leopold Wilhelm's chaplain, so the sender is best
+inferred as Leopold Wilhelm's secretariat (inference: the leaf is unsigned). The five 19->14 exceptions that produce
+"Cheureuse"/"Cleues" were made by the reader; a blind eye-check is owed before they go to S (AUDIT.md section 3).
+Status word unchanged: open.
