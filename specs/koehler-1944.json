@@ -62,7 +62,17 @@
   "letters_min": 100,
   "letters_max": 1000,
   "min_word_cover": 0.5,
-  "control_samples": 200
+  "control_samples": 200,
+  "corpora": [
+   "tools/data/de20/pg5323_Effi_Briest.txt.gz",
+   "tools/data/de20/pg46184_Frau_Jenny_Treibel.txt.gz",
+   "tools/data/de20/pg36905_Schach_von_Wuthenow.txt.gz",
+   "tools/data/de20/pg41051_Peter_Camenzind.txt.gz",
+   "tools/data/de20/pg41907_Demian.txt.gz",
+   "tools/data/de20/pg43987_Die_drei_Spruenge_des_Wang_lun.txt.gz",
+   "tools/data/de20/pg15736_Der_Mann_von_vierzig_Jahren.txt.gz"
+  ],
+  "corpora_note": "de16/composed_enhg.txt (LANG_CORPORA default for de) is Early New High German, wrong period for a 1944 target; de20 (25 Sept 2026, GOLD-C) is 1880-1940 German prose, 2.49M letters folded"
  },
  "value": "high: Kahn's own unsolved item, a real 1944 espionage text with a documented sender; a reading would be a contribution to the Koehler/Hoover story",
  "model": "Sonnet for tests 1-3; strongest model only for 5",
