@@ -1,0 +1,57 @@
+{
+ "slug": "goldbar-1933",
+ "rank": 25,
+ "schmeh_top50": 49,
+ "name": "Chinese gold bar cryptograms (seven gold bars allegedly issued to a General Wang, Shanghai)",
+ "date": "1933 (alleged issue date; dispute/claim surfaced by 1996 when a US museum curator contacted the IACR)",
+ "language_candidates": [
+  "unknown (design-uniform letter distribution, see judge schema_note)"
+ ],
+ "ciphertext": [
+  "SKCDKJCDJCYQSZKTZJPXPWIRN",
+  "MQOLCSJTLGAJOKBSSBOMUPCE",
+  "RHZVIYQIYSXVNQXQWIOVWPJO",
+  "FEWGDRHDDEEUMFFTEEMJXZR",
+  "XLYPISNANIRUSFTFWMIY",
+  "HFXPCQYZVATXAWIZPVE",
+  "YQHUDTABGALLOWLS",
+  "UGMNCBXCFLDBEY",
+  "ABRYCTUGVZXUPB",
+  "JKGFIJPMCWSAEK",
+  "KOWVRSRKWTMLDH",
+  "HLMTAHGBGFNIV",
+  "MVERZRLQDBHQ",
+  "VIOHIKNNGUAB",
+  "GKJFHYXODIE",
+  "ZUQUPNZN"
+ ],
+ "ciphertext_source": "Cipherbrain post 49 (Schmeh 2017, sources/schmeh/posts/49-goldbar.txt), 'The inscriptions contain 16 encrypted lines, some of which are repeated' -- itself reproducing the IACR web page by former IACR president Kevin McCurley (mccurley.org), the only primary source Schmeh could find. As transcribed by the blog post (rule 2: no manuscript/photograph transcription attempted here, image only in sources/schmeh/posts/49-goldbar.html and the seven Goldbar-N.jpg links inside it). A commenter in the same post's thread ('First', 25 Sept 2026 read) flagged line 8 (UGMNCBXCFLDBEY, printed length 14) as a probable transcription error, proposing UGMNCBXCFLDBY (length 13) instead, based on a stated 'every letter appears exactly 10 times except I/O/S/T' design; that correction is NOT applied here (rule 2, never silently repair the transcription) -- ciphertext.txt would need the seven Goldbar-N.jpg images fetched and read against both readings before choosing one.",
+ "alphabet": "A-Z only, no digits or punctuation within the 16 lines; per a blog commenter's frequency count (unverified against the image this pass): as printed, every letter appears close to exactly 10 times except I (13), O (9), S (11), T (9) -- i.e. the cipher was seemingly engineered to a near-uniform per-letter frequency, which is itself a strong structural clue (rules out reading it as ordinary running English/Chinese-transliterated prose by frequency alone) rather than an artifact of a small sample",
+ "constraints": {
+  "num_lines": 16,
+  "total_letters_as_printed": 263,
+  "total_letters_if_commenter_correction_applied": 262,
+  "line_lengths": [25, 24, 24, 23, 20, 19, 16, 14, 14, 14, 14, 13, 12, 12, 11, 8],
+  "provenance": "seven Chinese gold bars, each bearing pictures, Chinese writing, an unidentified third script, and Latin-letter cryptograms; allegedly issued to a 'General Wang' in Shanghai 1933 as bank-deposit certificates; a legal dispute over the deposit claim surfaced by 1996 when a museum curator asked the IACR for cryptanalytic help",
+  "chinese_text_translated": "per McCurley's IACR page (relayed by Schmeh): the Chinese writing (not the Latin cryptograms) has been translated and discusses a transaction over $300,000,000 and the bars' combined weight (1.8 kg)",
+  "authenticity_flag": "Nick Pelling (Cipher Mysteries) noted an airplane depicted on one bar looks anachronistically modern for 1933; the two contacts named on the 1996 IACR page (Bin J. Tao, lawyer Peter Bisno) never substantively answered Schmeh's or Pelling's later inquiries ('We no longer represent the client... no further information')",
+  "repeats_note": "Schmeh's own line 'some of which are repeated' is not further specified in the post text found this pass -- worth checking the 16 lines above for exact or near-exact duplicates/shared substrings as a first structural test (not yet done here)"
+ },
+ "cheap_tests_in_order": [
+  "1. Per-letter frequency count of the 16 lines as transcribed (both with and without the commenter's line-8 correction), compared against (a) a random permutation of the same 262/263-letter multiset (the correct matched control for an engineered near-uniform distribution, not a fresh English/Chinese text of the same N) and (b) English/Chinese-pinyin plaintext of the same N -- confirm or refute the commenter's 'every letter ~10 times' claim independently from the printed lines, and report the design implication (a uniform-frequency cipher rules out simple monoalphabetic substitution of natural-language prose, which is why the judge block below omits a language check). Cost under $1, Sonnet, disk-only.",
+  "2. Exact-duplicate and long-common-substring scan across the 16 lines (and within each line) for repeated tokens -- Schmeh's post says lines are 'some of which... repeated' but does not name which; if two lines (or long substrings) repeat, that is a strong crib-independent structural lead (e.g. a repeated name or bar-serial code across bars). Cost under $1, disk-only.",
+  "3. Fetch the seven Goldbar-N.jpg images (scienceblogs.de, one host, already used for post 49's fetch) to check the commenter's proposed line-8 correction and any other transcription-vs-image drift directly on the image, and to look for accompanying non-Latin script or numerals near each cryptogram line that might anchor which bar each line belongs to. Cost $2, Sonnet."
+ ],
+ "matched_control": "not yet run; test 1 above specifies the correct control design (a random permutation of the same letter multiset, since the cipher already reads as engineered toward near-uniform frequency by construction, not by chance) -- a fresh-English-text-of-the-same-N control would not be matched here (CLAUDE.md rule 3: match the design, not only the length)",
+ "cheap_test_done": [],
+ "judge": {
+  "letters_min": 250,
+  "letters_max": 270,
+  "control_samples": 200
+ },
+ "value": "low-medium: authenticity is itself disputed (anachronistic airplane, unresponsive named contacts, no primary source beyond one 1996 web page), and the near-uniform per-letter frequency (if confirmed) is inconsistent with straightforward substitution of natural-language plaintext -- likely a numeric/serial code or transposition of a short repeated string (names, amounts) rather than a sentence-length message",
+ "model": "Sonnet",
+ "status_25_Sept_2026": "open publicly; Bourdeau 15 Sept 2026: letter counts flat, no real text (per UNSOLVED-SURVEY.md row 25, consistent with this spec's own frequency note)",
+ "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run goes under cheap_test_done with its control. judge block deliberately omits 'language': a blog commenter's frequency count (constraints.alphabet, unverified against the image this pass) says the cipher was engineered to a near-uniform per-letter distribution, the opposite of what any natural-language corpus model expects -- running tools/judge_plaintext.py's language check here would FAIL any real decode by construction, not because it is wrong, so the check would be actively misleading rather than merely uninformative until test 1 confirms or refutes the uniformity claim from the image.",
+ "written": "25 Sept 2026 by LANE B3 worker bSPEC2 (session_01Ni3jyRn6oo4AbfkpdbSNsd), claude-sonnet-5"
+}

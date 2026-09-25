@@ -1,0 +1,41 @@
+{
+ "slug": "ss-radio-lippert-1944",
+ "rank": 22,
+ "schmeh_top50": 25,
+ "name": "SS radio message to Lippert",
+ "date": "9 February 1944 (per a commenter's reading of the form's 'Tag/Monat' field, 'Mi' = Mittwoch/Wednesday, and 9 Feb 1944 was a Wednesday)",
+ "language_candidates": [
+  "de"
+ ],
+ "ciphertext_pending": "No Latin-letter transcription of the ciphertext lines exists anywhere in the post text or its 28-comment thread (sources/schmeh/posts/25-ss-radio.txt, read in full this pass) -- only two embedded images: the full message (files/2014/04/SS-Code.jpg) and a close-up of the sender's rank stamp (files/2014/04/SS-Code-Stempel.png). A transcription pass from the image is the whole of cheap test 1; nothing downstream is runnable without it.",
+ "alphabet": "unknown until transcribed; per Schmeh's own description, five of the six lines are divided internally by an equal sign, a slash or a colon -- 'None of the WW2 encryption methods I know produces ciphertexts that look like this'",
+ "constraints": {
+  "num_lines": 6,
+  "separators": "five of six lines divided by =, / or :",
+  "sender": "signature reads an SS-Untersturmführer (lieutenant) whose name might have been 'Klein or similar' per Schmeh; a rank/office stamp accompanies the signature",
+  "receiver": "addressed to an SS-Standartenführer (colonel-equivalent) named Lippert",
+  "owner": "original owned by US professor Nick Gessler (Duke University), photographed by Schmeh at a crypto-history conference",
+  "partial_decrypts_from_comments": "blog readers proposed partial glosses of some groups without a full solve, none verified: ALAP = a village in Hungary (commenter Thomas); KSSY claimed = Budapest (commenter Oliver Helweg, disputed by Thomas -- no supporting source found); MASS = 'Marschbefehl für die SS' (march order); QRLZ = 'Vereinigung mit' (union/joining with); H9 = 9. SS-Panzer-Division 'Hohenstaufen'; J1 possibly 1. Panzerdivision; KOMM = 'Kommandant' or 'Kommando' (disputed among commenters); P4SX possibly Generaloberst Hube -- all per commenter Michaela Ellguth's 8-9 Aug 2017 reading, explicitly speculative, not a cryptanalytic solution, and contested by other commenters below",
+  "authenticity_dispute": "a long comment thread (comments 9-27, Aug 2017) argues the document is a forgery: the rank-stamp eagle faces the wrong direction for a genuine Reichsadler stamp of the period, 'Lublin' is misspelled on the stamp ('Cztl.' for 'Kztl.'), Fraktur-s usage is inconsistent, the sender's unit (10. SS-Panzer-Division, stationed in France Feb 1944) does not match the stamp's origin (Lublin concentration camp, eastern Poland), rank abbreviations are non-standard (StdF instead of Staf; capital F instead of lowercase f), and a near-identical forged 'Funkspruch' was later sold on eBay by a named dealer (comment 28, 31 May 2021) -- UNSOLVED-SURVEY.md's row already records 'Bourdeau: probable forgery (typography, rank abbreviations)', consistent with this thread",
+  "unusual_form": "Schmeh: none of the WW2 encryption methods he knows produce ciphertexts with this internal =, /, : punctuation -- worth comparing against the standard German WW2 Wehrmacht/SS Spruchformular layout (a successor form existed from May 1941, per commenter Thomas, cryptomuseum.com/crypto/enigma/forms) once transcribed, since the punctuation may mark form fields (addressee/date/serial) rather than cipher structure"
+ },
+ "cheap_tests_in_order": [
+  "1. Fetch SS-Code.jpg (scienceblogs.de, already on disk as sources/schmeh/posts/25-ss-radio.html's embedded link; direct image not yet saved) and transcribe the six lines blind, recording the =, /, : separator positions exactly. Cost $1-2, Sonnet.",
+  "2. Once transcribed, compare the form's field layout (date, addressee, serial number fields implied by the punctuation) against the WW2 Wehrmacht Spruchformular and its May-1941 successor (cryptomuseum.com/crypto/enigma/forms, named by a commenter) to separate plaintext form-fields from actual cipher groups before attempting any language judge. Cost $1.",
+  "3. If a cipher-group segment is isolated, run it against German with a matched control (synthetic German plaintext of the same N, same solver) -- but treat the authenticity dispute (constraints.authenticity_dispute) as a live possibility that no amount of cryptanalysis resolves: a forged Funkspruch may encode nothing at all. Cost $2-3."
+ ],
+ "matched_control": "not yet run; no ciphertext on disk to test",
+ "cheap_test_done": [],
+ "judge": {
+  "language": "de",
+  "letters_min": 20,
+  "letters_max": 80,
+  "control_samples": 200,
+  "note": "letters_min/max is a rough guess pending transcription (six short lines with internal punctuation, no letter count known yet); narrow once real counts exist"
+ },
+ "value": "low: a well-documented, multi-commenter authenticity dispute (forged rank stamp, misspelled Lublin, mismatched unit/location, a near-identical item later sold as a forgery on eBay) makes this more likely a collectible fake than a real wartime message -- any cryptanalytic campaign should be preceded by, not substitute for, resolving the forgery question, and even a fluent-looking German decode would not settle authenticity",
+ "model": "Sonnet",
+ "status_25_Sept_2026": "open; Bourdeau: probable forgery (typography, rank abbreviations) per UNSOLVED-SURVEY.md row 22, corroborated by this pass's read of the post's own comment thread",
+ "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run goes under cheap_test_done with its control. ciphertext_pending, not ciphertext_pending's usual 'fetch blocked' sense -- the image itself is reachable (already used once for this same post's HTML fetch), the blocker is purely that no pass has transcribed it yet; test 1 is that transcription.",
+ "written": "25 Sept 2026 by LANE B3 worker bSPEC2 (session_01Ni3jyRn6oo4AbfkpdbSNsd), claude-sonnet-5"
+}

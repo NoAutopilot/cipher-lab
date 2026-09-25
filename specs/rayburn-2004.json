@@ -1,0 +1,42 @@
+{
+ "slug": "rayburn-2004",
+ "rank": 23,
+ "schmeh_top50": 43,
+ "name": "Rayburn murder cryptogram",
+ "date": "cryptogram surfaced 2004-06 (killings themselves earlier; exact date of the cryptogram's writing not established in the source)",
+ "language_candidates": [
+  "en?",
+  "not necessarily a language (diagram hypothesis)"
+ ],
+ "ciphertext_pending": "No transcription of the roughly 80 characters exists in the post text or its comment thread (sources/schmeh/posts/43-rayburn.txt, read in full this pass) -- only one embedded image, files/2013/12/Rayburn-Cryptogram.jpg. A transcription pass from the image is the whole of cheap test 1.",
+ "alphabet": "keyboard characters (letters upper- and lowercase, plus other keyboard symbols per Schmeh); every character is either underlined or crossed out -- a two-state marking on every symbol, distinct from ordinary substitution-cipher ciphertexts",
+ "constraints": {
+  "approx_chars": 80,
+  "marking": "all characters underlined or crossed out (a binary annotation per symbol)",
+  "layout": "the central part of the cryptogram is left-aligned, suggesting (per Schmeh) the author wrote left to right",
+  "frequency_analysis_caveat": "Schmeh: 'A frequency analysis is obviously useless, as most characters appear only once' -- consistent with either a high-homophone cipher or, per Schmeh's own alternative reading, not a cipher of running text at all",
+  "diagram_hypothesis": "Schmeh's own stated impression: 'looks like a diagram showing certain objects (e.g., people or cards) arranged on a plain', with each object crossed out or underlined after 'a certain action' -- offered as 'just a thought', not established",
+  "author": "allegedly written by David Rayburn, who killed his wife, his step-son, and then himself; found by Linda Rayburn's daughter Jenn, who provided it to Schmeh via a Schneier's-blog connection",
+  "provenance_caveat": "'there's no guarantee that this encrypted note was really written by the late murderer David Rayburn' -- Schmeh flags authorship itself as unconfirmed, independent of any forgery question",
+  "prior_discussion": "extensively discussed on Bruce Schneier's blog (2006, schneier.com/blog/archives/2006/01/handwritten_rea.html) and Schmeh's own earlier German-language post (Dec 2013); no plausible solution reported by either"
+ },
+ "cheap_tests_in_order": [
+  "1. Fetch Rayburn-Cryptogram.jpg (scienceblogs.de) and transcribe blind, recording each symbol's identity, position, and underline/strikethrough state separately (the two-state marking is likely to matter more than symbol identity if the diagram hypothesis holds). Cost $1-2, Sonnet.",
+  "2. Once transcribed, test the diagram hypothesis directly before any cryptanalysis: does the spatial layout (rows/columns/clusters) resemble a card-game tableau, seating chart, or checklist rather than a written line of text -- since Schmeh's frequency-analysis caveat (most symbols appear once) is exactly what a diagram of ~80 distinct labelled objects would look like, and exactly what a frequency-based cipher test would misread as 'no signal'. Cost $1.",
+  "3. Only if test 2 does not support the diagram reading: standard homophonic/keyboard-substitution judged against English with a matched control at the same N and K (same solver); expect a weak signal given N~80 and reported near-hapax frequencies (rule 3: match the design). Cost $2-3."
+ ],
+ "matched_control": "not yet run; no ciphertext on disk to test",
+ "cheap_test_done": [],
+ "judge": {
+  "language": "en",
+  "letters_min": 40,
+  "letters_max": 90,
+  "control_samples": 200,
+  "note": "letters_min/max is a rough guess (Schmeh: 'about 80 characters', mixed letters and other keyboard symbols, exact letter-only count unknown pending transcription); PASS/FAIL here is meaningful only if test 2 rules against the diagram hypothesis -- a language judge on a non-linguistic diagram is not a fair test regardless of the result (CLAUDE.md rule 3: match the design)"
+ },
+ "value": "low-medium: an unusually well-specified structural alternative (Schmeh's own diagram hypothesis) that most cryptanalytic write-ups of this item skip past straight to substitution-cipher framing; testing the diagram reading first is cheap and could reclassify the whole target before any letter-frequency work is wasted on it",
+ "model": "Sonnet",
+ "status_25_Sept_2026": "open; plausibly a password/directory list (Bourdeau, Schneier's readers) per UNSOLVED-SURVEY.md row 23 -- consistent with, but distinct from, Schmeh's own diagram hypothesis found in this pass's full read of the post",
+ "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run goes under cheap_test_done with its control. judge block assumes English running text for now (language_candidates lists this as uncertain); if test 2 supports the diagram hypothesis, the right spec change is to drop the letters/language checks entirely and add a structural (layout-clustering) judge instead -- not built here (scope of this brief).",
+ "written": "25 Sept 2026 by LANE B3 worker bSPEC2 (session_01Ni3jyRn6oo4AbfkpdbSNsd), claude-sonnet-5"
+}

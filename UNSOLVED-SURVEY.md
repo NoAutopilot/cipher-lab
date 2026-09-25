@@ -119,10 +119,10 @@ aaymeloglu/unsolved-ciphers.
 | 19 | 31 | MLH cryptogram (Israel to California) | c.1976 | symbols/rebus | one strip, mixed symbols | ACA Cryptogram Jan-Feb 1976 cover; image only | open (Schroedel asked ACA: nothing new) | nobody spec: specs/mlh-1976.json |
 | 20 | 44 | Bullet cryptogram, Tuscany | 13 Aug 1944 | en (Allied field cipher) | 44 letters + QM / 605YZ/FF | on disk in post 44 | open; a forum "solution" without a method, rejected by Schmeh **LANE B2 25 Sept 2026: test 1: the rejected forum solution cannot be produced by any Vigenere/Beaufort/variant/MASC key (44 vs 39 letters; MASC 37-39 of 39 violations) where the same script recovers every control key; claim closed with a control.** | nobody spec: specs/bullet-tuscany-1944.json |
 | 21 | 24 | Erba murder letter | 2006 | it | one letter | not fetched | open | nobody |
-| 22 | 25 | SS radio message to Lippert | 1944 | de | 6 lines with = / : separators | Gessler collection; image only | open; **Bourdeau: probable forgery** (typography, rank abbreviations) | nobody |
-| 23 | 43 | Rayburn cryptogram | 2004-06 | en | ~80 keyboard characters, each struck | Schneier 2006; image only | open; plausibly a password/directory list (Bourdeau, Schneier's readers) | nobody |
+| 22 | 25 | SS radio message to Lippert | 1944 | de | 6 lines with = / : separators | Gessler collection; image only | open; **Bourdeau: probable forgery** (typography, rank abbreviations) | nobody spec: specs/ss-radio-lippert-1944.json |
+| 23 | 43 | Rayburn cryptogram | 2004-06 | en | ~80 keyboard characters, each struck | Schneier 2006; image only | open; plausibly a password/directory list (Bourdeau, Schneier's readers) | nobody spec: specs/rayburn-2004.json |
 | 24 | 41 | Blitz ciphers | found "1940s", published 2011 | ? | 3 of 8 pages published | Pelling's site; not on disk | open; suspected modern hoax | Pelling |
-| 25 | 49 | Chinese gold bars, Shanghai | 1933 (alleged) | ? | 16 lines, 260 letters | on disk in post 49 (IACR page) | open publicly; **Bourdeau 15 Sept 2026: letter counts flat, no real text** | nobody |
+| 25 | 49 | Chinese gold bars, Shanghai | 1933 (alleged) | ? | 16 lines, 260 letters | on disk in post 49 (IACR page) | open publicly; **Bourdeau 15 Sept 2026: letter counts flat, no real text** | nobody spec: specs/goldbar-1933.json |
 | 26 | 21 | YOG'TZE (Guenther Stoll) | Oct 1984 | de | 6 characters | on disk | open; below any unicity | nobody |
 | 27 | 38 | Sufi fiddle inscription | ? | ? | unidentified script | no published transcription | open; provenance rests on a novel's afterword (Bourdeau) | nobody |
 | 28 | 11 | Untersberg code | legend | ? | one alleged sheet | none | open; legend, no primary source | nobody |
