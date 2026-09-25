@@ -495,3 +495,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T18:20Z	session_0165uktQtXTmrEztFN5qpUD4	LANE R6 M2 done $10.20 D, archived	mercy reading	S494 M27, judge register FAIL
 2026-09-25T18:18Z	session_01ALeDhDTreUY82fsxhRk3xE	LANE R6 MJ (Sonnet, cap 4)	mercy es17c chancery corpus + re-judge	brief 2026-09-25-lane-r6-mj-mr-mercy-judge.md
 2026-09-25T18:18Z	session_01QbniS3J4WHAZNtSCw1ThUq	LANE R6 MR (Sonnet, cap 2)	mercy fresh re-derivation	same
+2026-09-25T18:18Z	session_01Umzu5kUhXYdLmYkiC7Yrh9	TOOL-FAMILY done $7.12 D, archived	tools/family_run.py e1e8721	
+2026-09-25T18:18Z	session_01EYdaFpKDG8Ptu14Z14bs9L	retrospective j done $1.43 D, archived	RETRO-2026-09-25j.md	
