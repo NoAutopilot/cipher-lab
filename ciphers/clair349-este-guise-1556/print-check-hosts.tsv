@@ -1,0 +1,7 @@
+host	requests	status
+api.crossref.org	2	ok
+api.openalex.org	11	ok
+api.semanticscholar.org	1	blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22iay%20receu%20les%20lettres%20quil%20vous%20a%20pleu%20mescrire%22
+archive.org	5	ok
+be-api.us.archive.org	20	ok
+www.googleapis.com	10	ok

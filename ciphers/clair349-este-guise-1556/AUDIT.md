@@ -86,14 +86,14 @@ reader and a useful check on the M-graded word codes (section 5).
 
 | family | what was searched | result |
 |---|---|---|
-| (a) canonical series | Ribier, *Lettres et mémoires d'estat* (1666), IA `bub_gb_bOnmNv2ZLVoC`, `bub_gb_qWTswSr32NYC` | print_check phrases (section 6); solver's own full read logged no letter |
+| (a) canonical series | Ribier, *Lettres et mémoires d'estat* (1666), IA `bub_gb_bOnmNv2ZLVoC`, `bub_gb_qWTswSr32NYC` | print_check phrases: 0 hits (section 6); solver's own full read logged no letter |
 | (b) recipient's papers | Guise, *Mémoires-journaux*, Michaud-Poujoulat 1e sér. t.6, IA `nouvellecollecti06michuoft`, local djvu grep for Scipion, Livio, "4 janvier 155[67]" | **hit: pp.238-239, the whole letter in clear** (section 3). The check-solved sweep read pp.316-320 and the four Italian letters of 12-20 Dec. 1556 and missed this one |
 | (b) sender's side | Baguenault de Puchesse, "Négociations de Henri II avec le duc de Ferrare" (RQH 1868, IA `RevueDesQuestionsHistoriquesA3T5`) | print_check phrases; solver's full read logged no cipher |
 | (c) documentary / scholarship | Romier, *Les origines politiques des guerres de religion* t.1-2 (1913-14), IA `lesoriginespolit01romi`, `lesoriginespolit02romi`, local djvu grep | Scipion Piovene, the cardinal's intendant, sent between Ferrara and Guise, discussed; Clair. 349 cited at fol.61 (another letter); no quotation of this letter found by grep for Livio / "janvier 1557" |
 | (d) holding archive | BnF catalogue notice for Clair 349 as recorded in NOTES.md and sources/solver-diffs (Lettres orig. ... avec chiffres) | no decipherment mentioned in the notice |
-| (e) full text | tools/print_check.py, 10 phrases (phrases.txt), IA ia-global, Google Books (keyed, country=US), OpenAlex, CrossRef, listed sources | see print-check.tsv / print-check-hosts.tsv (section 6) |
+| (e) full text | tools/print_check.py, 10 phrases (phrases.txt), IA ia-global, Google Books (keyed, country=US), OpenAlex, CrossRef, listed sources | 5 of 104 rows with hits, none relevant (section 6) |
 | (f) cipher projects | Tomokiyo guise.htm (sources/cryptiana/web/guise.htm): identifies key no.15 and this letter, shows the key sheet, gives no reading; Bourdeau cyphersolver and Aymeloglu unsolved-ciphers fresh `--depth 1` clones grepped for the ark `btv1b9000668z`, "Clairambault 349", "Clair 349": 0 hits (Bourdeau's "cardinal de Ferrare" hits are a Gallica sweep listing of another volume); DECODE catalogue diff: no record for Clair 349 | no reading anywhere |
-| (g) scholarship indexes | OpenAlex (Bearer key) and CrossRef via print_check source rows; JSTOR: three rows appended to JSTOR-QUEUE.tsv (25 Sept 2026) | see section 6; JSTOR queued, not blocking (N0 rests on the leaf and the print) |
+| (g) scholarship indexes | OpenAlex (Bearer key) and CrossRef via print_check source rows; JSTOR: three rows appended to JSTOR-QUEUE.tsv (25 Sept 2026) | general Este scholarship only (section 6); Semantic Scholar 429 once; JSTOR queued, not blocking (N0 rests on the leaf and the print) |
 
 Unreachable / not done: page image of Michaud t.6 p.239 not viewed (djvu text only; the running heads place it);
 Occhipinti and Pastor not searched (a class of N0 cannot move up on them); Calendar of State Papers Venetian/Foreign
@@ -112,9 +112,18 @@ Occhipinti and Pastor not searched (a class of N0 cannot move up on them); Calen
 
 ## 6. print_check
 
-See `print-check.tsv` and `print-check-hosts.tsv` (written by `tools/print_check.py`, 25 Sept 2026). Its "no hits"
-rows are search results only; the decisive hit is the local djvu read in section 3, which print_check's fuzzy phrase
-match is expected to find in `nouvellecollecti06michuoft` too.
+`tools/print_check.py` (25 Sept 2026; 10 phrases, 8 listed sources; 104 rows, 5 with hits; `print-check.tsv`,
+`print-check-hosts.tsv`). Requests: archive.org 5, be-api.us.archive.org 20, googleapis.com 10, api.openalex.org 11,
+api.crossref.org 2, api.semanticscholar.org 1 (HTTP 429, stopped, not retried). Hits: "du vingt uniesme du passe" in
+the 1877 *Revue historique et archéologique du Maine* (a stock date formula, unrelated letter); OpenAlex/CrossRef
+keyword rows list general Ippolito II d'Este scholarship (e.g. *Entre l'Aigle, les Lys et la tiare*, 2021, doi
+10.36253/978-88-5518-519-6), not read, cannot move an N0.
+
+**The tool missed the decisive hit.** It returned no hit in `nouvellecollecti06michuoft` for any phrase, although the
+letter is printed there (section 3): the phrases were spelled as decoded ("quil vous a pleu", "cappitaine") and the
+OCR has "que vous a pieu", "diet", "15ôG". The hit was found by a plain grep of the cached djvu text for single
+distinctive words (Scipion, Livio). A print_check "no hits" on a sender-family edition is weak evidence when the
+edition's OCR is poor; grep single rare words as well.
 
 ## 7. Postmortem
 
