@@ -1,0 +1,22 @@
+[
+  {
+    "canvas": 58,
+    "label": "NP",
+    "width": 3454,
+    "height": 5261,
+    "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035717h/f58/full/full/0/native.jpg",
+    "file": "f22r_canvas58.jpg",
+    "bytes": 1425015,
+    "sha1": "4ad5486d85164a7d82267ddd5b0273015c06e01d"
+  },
+  {
+    "canvas": 59,
+    "label": "NP",
+    "width": 3546,
+    "height": 5245,
+    "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10035717h/f59/full/full/0/native.jpg",
+    "file": "f22v_canvas59.jpg",
+    "bytes": 1345430,
+    "sha1": "11c794435206be861488cd792ef06fc40e26feaf"
+  }
+]

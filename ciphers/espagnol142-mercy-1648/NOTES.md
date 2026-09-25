@@ -213,3 +213,61 @@ Requests this section: gallica.bnf.fr 8 (canvases 1, 20, 25, 30 at 200px -- canv
 requests; canvases 20, 25, 30 re-fetched at ~1100px = 3 requests), >=1.5s apart, UA `cipher-lab research
 script (contact via repository)`. No 403/429/challenge; one transient `Connection reset by peer` on the first
 attempt at canvas 1, resolved on retry.
+
+## Y5: letter located (25 Sept 2026, LANE R6)
+
+**Pinned: folio 22 recto = canvas 58, folio 22 verso = canvas 59 (ark `btv1b10035717h`).** This matches the
+archivesetmanuscrits finding aid's own "F. 22-22 v°" for item 11 exactly, and is content-confirmed, not just
+offset-derived: canvas 58 carries the ink page number "22" (top right) with a marginal "1648" annotation, and
+canvas 59 closes "...os encargo. **Barneton a seis Junio de 1648**" -- place name + day ("seis" = six) + month
++ year all matching the finding aid's own title "Autre instruction chiffrée pour l'abbé de Mercy. **Barneton,
+6 juin 1648**" word for word. Canvas 60 (folio 23) is blank, confirming the item ends at f.22v as the finding
+aid says.
+
+**How it was pinned (worker T's per-item-reset hypothesis does not hold here -- this run is a single
+continuous foliation).** The ink page numbers found across canvases 30-45 (worker T's "8" at canvas 30 was the
+*start* of a long, continuous run, not an isolated item-local page) are exactly linear: "12" at canvas 38,
+"13" at canvas 40, "14" at canvas 42, "15" at canvas 44 -- i.e. canvas = 2 x folio + 14 (residual 0 at every
+point checked, including the two content-confirmed anchors 58=22r and 60=23r/blank). `tools/gallica_folio.py
+btv1b10035717h --anchor 58=22r --anchor 60=23r --folio 22` records this fit (a=2.000, b=14.00, residuals
++0.0/+0.0). The canvases 30-38 range (worker T's 1641 unciphered instruction to the same "abbé de Mercy",
+still discussing his Holland/Imperial mission at canvas 35) and canvas 38-42 (a Spanish-language instruction
+"al Sr Abbad de Mercij" for a Holland voyage, dated Bruxelles 1 Feb 1645, ink page "12") are earlier items in
+the same continuously-numbered run, not the target; canvas 44-57 is a further item on Condé/Mazarin/Longueville
+politics (ink pages 15+) that also precedes the target in the same numbering.
+
+**Cipher extent and system.** Two leaves only (f.22r-22v, canvases 58-59), each a full page of cipher, ~20
+lines per leaf. This is a mixed code+plaintext design, not a full monoalphabetic cipher of the whole letter:
+short plaintext Spanish connective/framing phrases (the opening salutation, "asi... me digais lo que en esta
+sazon saveis entendido", "porque qualquiera ora de tardanla...", "Con fundamento lo que nos podemos prometer
+y Caso de no estar en estado...", "Caso que le paresca que esta materia no convenga Corra por su mano...",
+"En todo os encargo la brevedad...") alternate with long runs of bare 2-digit numeric code groups (occasional
+larger values up to 186; a handful of numbers carry a trailing "." or "-" mark, e.g. "34.28.10", "18.6",
+consistent with a nomenclator/mark-notation system rather than plain digit-for-letter substitution). No
+interlinear or marginal decipherment, gloss, or period key is present on either leaf -- ciphertext only, as
+transcribed by no one yet.
+
+**Plaintext naming sender and recipient.** The letter opens addressing the recipient directly: "**Baron de
+Mercy** mi Sumiller de Cortina, deveis tener resolucion de la negociacion que hicisteis..." -- i.e. addressed
+to "Baron de Mercy, my Sumiller de Corte" (a Spanish royal-household post, roughly gentleman/officer of the
+bedchamber), not "abbé" as the French catalogue title and the 1641 item (canvas 30) call him -- flag for
+whoever transcribes next: same person, a title variant between a French cataloguer's gloss and this letter's
+own Spanish address, or a distinct "Baron de Mercy"/"abbé de Mercy" pair sharing a surname; not resolved this
+pass. No sender name or signature appears on either leaf: the letter is unsigned, closing only with the
+place/date "Barneton a seis Junio de 1648", consistent with an unsigned Spanish royal-secretariat instruction
+(the addressee's own household rank, "Sumiller de Corte", points to a Spanish-crown correspondent, matching
+the volume's "Espagnol" shelfmark).
+
+Files: `images/f22r_canvas58.jpg`, `images/f22v_canvas59.jpg` (native resolution, ~2.7 MB total, well under
+the 30 MB budget), `images/manifest.json` (canvas, label, size, URL, byte count, sha1 for both).
+
+Requests this section: gallica.bnf.fr -- 41 low-res (`/full/600,/0/`) probe fetches, canvases 30-70, one at a
+time, >=2 s apart, UA `cipher-lab research script (contact via repository)`, no 403/429/challenge; plus 2
+native-resolution fetches (canvases 58-59) at >=2 s apart. 43 total, within the brief's <=45 cap. No
+subagents, no other hosts.
+
+Not done this pass (out of brief's scope): transcription of the ciphertext, key search, decode. Next step for
+whoever takes this target: transcribe f.22r-22v as ciphertext.txt (2 blind passes per the project's usual
+rule), and separately, since the "Baron"/"abbé" title mismatch is unresolved, a quick check of canvases
+46-57 (the intervening Condé/Mazarin item) for any signature or heading that might explain it before assuming
+it is the same agent.
