@@ -15,7 +15,7 @@ Usage:
     present) and flags any session id seen on more than one row, printing both
     row numbers and their Outcome/cost so a human can pick which to keep; (2)
     extracts the Outcome column's leading token and flags any row whose token
-    is not exactly one of D, D-, F, X, N (case-sensitive, no trailing
+    is not exactly one of D, D-, F, X, N, Q (case-sensitive, no trailing
     punctuation). Exits 0 if nothing is flagged, 1 and prints every flagged
     row otherwise -- gate it before `tools/room.py --push LEDGER.md`.
     --fix-suggest also prints, for each non-standard code, the nearest
@@ -31,7 +31,7 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LEDGER = os.path.join(ROOT, "LEDGER.md")
 
-VALID_CODES = ("D", "D-", "F", "X", "N")
+VALID_CODES = ("D", "D-", "F", "X", "N", "Q")
 # Cost is a plain number, an optional "~" (uncertain reading) prefix, or "n/a",
 # and may be followed by an explanatory parenthetical or clause in the same
 # cell (e.g. "~2 (226k tokens, no subagents)"), so this matches the leading
@@ -82,6 +82,8 @@ def leading_token(field):
 
 def guess_fix(lesson):
     low = lesson.lower()
+    if "qa" in low or "audit" in low or "quality" in low:
+        return "Q"
     if "over-claim" in low or "over-call" in low or "retract" in low:
         return "X"
     if "ran past" in low or "poke" in low or "idle" in low or "needed a poke" in low:
@@ -157,7 +159,7 @@ def main(argv=None):
 
     if bad_outcomes:
         ok = False
-        print("Non-standard outcome codes (must be exactly one of D, D-, F, X, N):")
+        print("Non-standard outcome codes (must be exactly one of D, D-, F, X, N, Q):")
         for lineno, outcome, lesson in bad_outcomes:
             print(f"  line {lineno}: outcome={outcome!r}")
             if args.fix_suggest:

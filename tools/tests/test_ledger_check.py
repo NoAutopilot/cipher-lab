@@ -35,6 +35,9 @@ SAMPLE = [
     "| 24 Sept | Orchestrator wake 2 | Opus | about 51 (session only) | D | several | 20 workers | 1 copy-free (M8) | Gramont f.29r N3 | lesson text |\n",
     # historical shorthand with an embedded hyphen, non-standard code
     "| 24 Sep | Scout CA: Canada | Sonnet | session_019y17auBuoVUVfa2cUwZ5D3 | 4.54 | F-rl | cut off by the window |\n",
+    # QA/audit-only row, unique session, the new Q code (RETRO-2026-09-25h proposal 3) -- must be
+    # accepted as valid, not flagged
+    "| 25 Sep | Parent worker QA run 3, rolling quality audit | Sonnet | session_01Q00000000000000000000 | 2.94 | Q | 12 items, 0 live failures |\n",
 ]
 
 dup_sessions, bad_outcomes = ledger_check.check(SAMPLE)
@@ -73,7 +76,7 @@ if 5 in bad_lines:
     fails += 1
 
 # leading_token / VALID_CODES sanity
-for good in ("D", "D-", "F", "X", "N"):
+for good in ("D", "D-", "F", "X", "N", "Q"):
     if ledger_check.leading_token(good) not in ledger_check.VALID_CODES:
         print(f"FAIL: {good!r} should be accepted as a standard code")
         fails += 1
