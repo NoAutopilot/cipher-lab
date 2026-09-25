@@ -1095,6 +1095,15 @@
   },
   {
    "date": "24 Sept 2026",
+   "kind": "recovery",
+   "key": "period",
+   "title": "Elector August to Orange, Torgau 18 Nov 1561, cipher enclosure (WVO 57, KHA A 11/XIV B/41-6)",
+   "grade": "N4 (no prior decipherment located; AUDIT.md 'N4 decision (D2)', two audits); C 247, M 53 of 300 signs",
+   "line": "Read with the key of Orange's 1562 cipher, recovered from a sibling letter's contemporary decipherment (WVO 74), as secret news that the Emperor had asked August to elect Maximilian King of the Romans in his own lifetime. Demandt's regest summarises only the clear text; August's minute in Dresden, with a 'Zettel', has not been seen and may carry the enclosure in clear.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/august-van-saksen-1561-64"
+  },
+  {
+   "date": "24 Sept 2026",
    "kind": "solve",
    "title": "Gramont to Villandry, Rome, 20 May 1530 (BnF fr. 2980 f.29r)",
    "grade": "N4 (no prior decipherment located)",
