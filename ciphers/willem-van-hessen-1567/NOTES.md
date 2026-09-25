@@ -385,3 +385,100 @@ and point at OX-WV69's "Explicit handoff for a successor (page/line level)" sect
 
 Hosts this part: resources.huygens.knaw.nl 4 requests (2 record pages, 2 PDF reachability checks, all curl,
 browser-contact UA, >=1.5s apart, all HTTP 200). No subagents.
+
+## YX-HES69, 25 September 2026: p2 line 1 extended (4 more signs), atlas started in `siblings/atlas/`, key miscalibration corrected
+
+Brief: `.claude/briefs/runs/2026-09-25-lane-yx-hes69.md`, wall-clock box 60 minutes, at most 2 subagents.
+Re-fetched `01069.pdf` (1 request, resources.huygens.knaw.nl, HTTP 200, browser-contact UA) and rendered p2
+locally at 600dpi (`pip3 install pillow numpy scipy pymupdf` -- none were present in this container; installed
+without incident, no other network use). This pass does **not** complete the brief's full ask (glyph atlas +
+two blind passes + gloss alignment for all of p2 lines 1-24): at 60 minutes for a manuscript this hard to
+segment, line 1 alone is what a careful pass can responsibly deliver -- see "What was not attempted" below.
+
+**1. A miscalibration corrected: no null pair before "mit".** OX-WV69's handoff (and this worker's own first
+reading of a low-resolution page preview) described the line as opening "oo mit Grumbachs oobewerdung", i.e.
+a null pair before "mit" as well as before "bewerdung". Re-examined at 600dpi with a pixel grid overlay
+(`/tmp/wv_render/p2_line1_farleft.png`, not committed, regenerate by re-fetching `01069.pdf` and rendering
+page index 1 at 600dpi): the space to the left of the line's first cipher sign (g01, capital-H-with-crossbar)
+is genuinely blank paper, with only a single small, partly illegible gloss mark above it -- not two "o"
+marks. **The line begins directly with g01 ('t', the last letter of "mit"), with no null signs before it.**
+The real "oo" null pair sits later on the line, immediately after "achs" (the end of "Grumbachs") and before
+the next word -- see point 3. This also explains why a tight re-crop aimed at "the signs before g01" instead
+landed back on g01-g05 themselves (see point 2): there was nothing new to find there because the assumed
+prefix does not exist.
+
+**2. A crop-calibration lesson for glyph-atlas work on this manuscript.** Attempted to cut a fresh tight crop
+for the (as it turned out, non-existent) "oo mi" prefix at an x-range estimated from a 3.5x-downscaled page
+preview. The resulting crop (`crop_word1_2x.png`, given to two blind subagents, see point 4) in fact
+reproduced g01-g05 (the already-confirmed start of "Grumbachs") at *its own* position 1, not position 5 --
+i.e. the downscaled-preview coordinate estimate was off by almost exactly one word's width. Both subagents,
+working blind from the mis-cropped image, partially reconstructed g01/g02/g03 correctly (pass B's shape
+descriptions matched the known atlas well; pass A dropped one glyph and was off by one position from there),
+which is itself a useful sanity check that the tight-crop method (vs OX-WV69's failed full-strip method)
+produces recoverable, consistent shape reads -- but no new letters came from this crop. Lesson for a
+successor: derive crop x-ranges from the 600dpi render itself (grid-overlay a candidate region and inspect it
+before cutting), not from a downscaled whole-page preview; the preview's compression made a whole word look
+like a few pixels of slack.
+
+**3. Four new signs added, line 1 extended from 10 to 14 confirmed/candidate positions.** Immediately after
+g10 ('s', end of "achs"), a gloss "o o" pair *is* real here (confirmed at 600dpi, `siblings/atlas/
+null_cand_Tcross.png` and `null_cand_Iminim.png`) -- consistent with a null pair marking a word boundary, the
+same convention `key_174_nomenclator.tsv` documents with its own dedicated "Nulla" row, though this pass
+did not find an independent source confirming these two specific signs ARE nulls rather than a genuine
+(rare) double letter; recorded as "[null candidate]", grade M, not merged into any gXX code pending that
+confirmation. Immediately after the "oo" pair, two new letter-bearing signs, **added to `key_1069.tsv` and
+`glyphs_1069.tsv` as g11 and g12**: a closed triangle (apex up) decoding to **b**, and a hook-loop/stacked
+figure-eight decoding to **e** -- the start of a new word this worker reads as "bewerdung" or "bewerbung"
+(not previously read; OX-WV69's blind-pass candidates table had flagged a "b" and an "e" shape in roughly
+this position from the failed whole-line strip attempt, so this is a real continuation of that lead, now with
+tight crops and a shape cross-check). `ciphertext_1069.tsv` extended to 14 positions, `check_1069.py` updated
+(the reading text and the sign-count comment) and its own `--check` now passes twice in a row (a latent bug
+was found and fixed in the same edit: `regenerate()`'s grade-counts dict was built by iterating a bare
+`set()`, whose order is not guaranteed stable across separate Python process invocations because of hash
+randomization -- two consecutive runs of `check_1069.py` could print `{'H': 6, 'M': 8}` vs `{'M': 8, 'H': 6}`
+and fail `--check` against each other even with no real content change; fixed by iterating `sorted(set(...))`
+instead. This means `check_1069.py`'s `--check` may not have been reliably passing before this pass either --
+flagged for whoever next touches a similarly-built small checker script).
+
+Grades: g11 and g12's **shapes** (as distinct from their letter assignments) are corroborated by two
+independent blind Sonnet subagent passes (see point 4) that each, working from tight crops with no gloss and
+no knowledge of each other, described a "closed triangle" and a "figure-eight/doubled loop" not matching any
+of g01-g10, each seen twice in the same short stretch -- real two-pass shape agreement. The **letter**
+assignments (triangle=b, figure8=e) are this worker's own single read of the gloss directly above each sign,
+where for once the gloss letter sits close to directly above its own cipher sign rather than being compressed
+into a word-initial cluster (see `/tmp/wv_render/check_g11_gloss.png`, `check_g12_gloss.png`, not committed,
+regenerate by re-cropping the 600dpi render at x=3480-3680/x=3600-3820, y=150-430). Per the brief's own
+C/M rule ("C for aligned-with-agreement, M for one observation or a tie"), graded **M**: the sign-count on
+this short span matches the letter-count (Brochado rule satisfied -- 1 sign, 1 gloss letter, for each of
+b and e), but the alignment itself is one worker's single pass, not two independent alignments agreeing.
+
+**4. Two blind Sonnet subagent passes, run per the brief.** Both given the same three tight crops
+(`/tmp/wv_render/crop_word1_2x.png`, `crop_word3a_2x.png`, `crop_word3b_2x.png`, not committed -- regenerate
+per point 2/3's coordinates from a fresh 600dpi render of `01069.pdf` page index 1), the plain-language
+description of g01-g10 from `glyphs_1069.tsv`, and explicit instructions not to read or use the gloss row.
+Full reports are in this session's transcript (not re-copied here to keep this file short); reconciled by
+this worker rather than `tools/reconcile_passes.py` (that tool expects a `passA.tsv`/`passB.tsv` row-per-line
+format from prose transcripts, not two free-text shape reports) -- the reconciliation is described in points
+2 and 3 above. On the two clearly-recurring new shapes (triangle, figure-eight) agreement was strong (both
+high/medium confidence, both independently proposing the shape as new and non-matching); on the "oo" pair and
+on whether the shape right after "achs" is a recurrence of g09 or a distinct simpler "T-cross", agreement was
+weak -- left unresolved, noted in `glyphs_1069.tsv`. This is a smaller-scale, real application of the two
+subagents CLAUDE.md's Usage rule 6 allows per worker, not the full 24-line pass the brief asked for.
+
+**What was not attempted, honestly, per COMMON's 80%-of-box rule:** p2's lines 2-24 and all of p3-p4 remain
+completely unread (no atlas entries, no blind passes). Given how much of this 60-minute box a single line
+took -- most of it correcting a miscalibration and cross-checking two new signs against two blind passes --
+extending to even one more line was not attempted rather than done carelessly. A successor should: (a) start
+from a fresh 600dpi render (the command is in this section's own hosts note below) and grid-overlay candidate
+crop regions *before* cutting, per point 2's lesson; (b) treat every apparent "oo" as a hypothesis to verify
+at full resolution, not a given, per point 1; (c) budget roughly what this pass took (about 45 minutes of
+real work) *per line*, not per page, for a first-pass realistic estimate, which puts a full p2 read
+(23 more lines) at multiple sessions, consistent with OX-WV69's own $20-40 estimate for the whole page.
+Status and kind unchanged: **cryptanalysis (crib available)** for target 1127, open; 1069 stays a sibling
+key-source lead, now 14 (12 confirmed letters + 2 null-candidates) of its own roughly 1000+ signs read.
+
+Hosts this pass: resources.huygens.knaw.nl 1 request (re-fetch of `01069.pdf`, curl, browser-contact UA,
+HTTP 200). No other network host. 2 Sonnet subagents (the two blind passes above), well under any per-worker
+budget. Files touched: `siblings/{glyphs_1069.tsv,key_1069.tsv,ciphertext_1069.tsv,check_1069.py,
+reading_1069.txt}`, `siblings/atlas/{g11_triangle.png,g12_figure8.png,null_cand_Tcross.png,
+null_cand_Iminim.png,p2_line1_full_strip.png}` (new), this NOTES.md section, ROOM.md.

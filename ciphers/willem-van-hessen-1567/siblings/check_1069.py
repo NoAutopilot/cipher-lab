@@ -47,7 +47,7 @@ def regenerate():
         letters.append(value)
         grades.append(grade)
     plain = "".join(letters)
-    counts = {g: grades.count(g) for g in set(grades)}
+    counts = {g: grades.count(g) for g in sorted(set(grades))}
     return plain, counts
 
 
@@ -55,13 +55,15 @@ def main():
     plain, counts = regenerate()
     header = (
         "# briefnr 1069 (Willem van Hessen to Willem van Oranje, 23 Mar 1563), p2 line 1, "
-        "confirmed fragment only -- 10 of an estimated 1000+ cipher signs across p2-p4 (see NOTES.md).\n"
+        "confirmed fragment only -- 14 of an estimated 1000+ cipher signs across p2-p4 (see NOTES.md).\n"
         f"# grade counts: {counts}\n"
     )
     body = (
         f'raw decode: "{plain}"\n'
-        'reading: "...mi[t] Gr(u/m)(n/mb)ach(s)..." -- the fragment\'s first sign is the same "t" that ends '
-        '"mit"; the rest spells (a form of) Grumbachs, Wilhelm von Grumbach.\n'
+        'reading: "...mi[t] Gr(u/m)(n/mb)ach(s) [null candidate][null candidate]be..." -- signs 1-10 are the '
+        'same fragment as before (the "t" that ends "mit", then Grumbachs); signs 11-14 (YX-HES69, 25 Sept '
+        '2026) are two suspected null signs and the first two letters of the next word, read by this worker '
+        'as the start of "bewerdung"/"bewerbung" -- not previously read, see NOTES.md for grades and caveats.\n'
     )
     regenerated = header + body
 
