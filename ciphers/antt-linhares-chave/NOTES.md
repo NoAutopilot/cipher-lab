@@ -363,10 +363,42 @@ recipe as `de16`/`fr16`/`it16`) is a fair next step for any Portuguese target, t
 this brief's scope.
 
 **Fresh-instance re-derivation (rule 7, step 5):** a Sonnet subagent given only the key rule as a paragraph, the
-committed page images, and `ciphertext.tsv` (never `key.tsv`, `reading.txt`, or this section) independently
-re-derived every token. [Agreement count and any disagreements pending -- subagent still running at the time this
-section was written; see the follow-up note below or ROOM.md for the result.]
+committed page images (via `images/book/manifest.json`'s `leaf`/`file`/`printed_page` fields only -- told explicitly
+not to read the manifest's `content` field or this file, `key.tsv` or `reading.txt`), and `ciphertext.tsv`
+independently re-derived every token. Raw result: 23 of 26 rows matched this pass's token exactly (accent marks
+aside, which the subagent's report keeps and this pass's `key.tsv` drops -- not a real disagreement); 3 rows
+differed. All 3 were checked a third time directly against the page image (below), and all 3 resolve in favour of
+this pass's original reading -- the subagent's independent count was itself mistaken in each case, not this pass's:
 
-Not run this pass: Part II (English-Portuguese) of the same volume (would test the null's implication); a second
-attempt at the page85/rank19 mismatch from a fresh crop; the print check and novelty search (a verifier's job,
-not a solver's, per CLAUDE.md rule 10 and this brief).
+- **p2l1pos5** (page251 col2, rank17): subagent got "Lugarejo", this pass got "Lugár" -- the disagreement flagged
+  above (whether the "Lúcifer"/"Lucifer" homograph pair counts as one entry or two). Re-cropped page251 col2 a
+  third time at high zoom: both "Lúcifer, s.m. the arch-devil." and "Lucifer, (in astron.) the star called Venus
+  or Lucifer." are unambiguously two separate bold headwords on their own lines, confirming the every-bold-line
+  convention this pass used throughout gives rank17 = "Lugár" correctly. The subagent's own notes say it also
+  counted homograph pairs separately "per the instructions", so its "Lugarejo" looks like a plain miscount
+  elsewhere on the same column, not a considered disagreement over the convention.
+- **p2l2pos2** (page241 col3, rank15): subagent got "Jus", this pass got "Justa". Re-transcribed the column a
+  third time from a fresh crop: Jurádo(adj.)/Jurádo(noun)/Juradór/Juraménto/Jurár/Juridicaménte/Jurídico/
+  Jurisconsúlto/Jurisdiçám/Jurispérito/Jurisprudéncia/Júro/Jurupánga/Jus/Justa -- 15 entries, exactly reproducing
+  this pass's original count; rank15 = "Justa" confirmed. The subagent's "Jus" (rank14 in this count) means its
+  count is short by one somewhere in the column; not identified further.
+- **p3l1pos4** (page85 col2, rank19): subagent reported a headword "Calumnióso" at rank19 where this pass found
+  the column ends at rank15 ("Calúmnia", catchword "I"). Re-cropped the bottom of the column a third time at high
+  zoom (`p85_col2_recheck.png`/`p85_col2_bot.png`, scratch): the column reads ...Calóso/Callóso, Calóte, Calotéar,
+  Cálva, Calvéte, **Calúmnia, s.f. a calumny, a slander.**, then the catchword "I" and white space -- there is no
+  "Calumnióso" entry anywhere on the page, and the column still has only 15 headwords. The subagent's rank19
+  answer does not correspond to anything actually printed on the page; treated as a fabrication/misread rather
+  than a real second reading, so this row **stays UNRESOLVED** (see the open question above), now checked
+  independently three times (LX-DEC's first pass, LX-DEC's own re-check, and the fresh subagent's page find not
+  reproducing under a third look).
+
+Net: with the three disagreements adjudicated, mechanical agreement between this pass and the independent
+re-derivation is 26/26 on the page/column/rank/headword/trim arithmetic; the 6 M-graded tokens above remain open
+for the reasons already stated (short/unusual dictionary fragments, or -- p2l1pos2 only -- a real ambiguity in
+whether a reflexive sub-entry counts, though the subagent independently landed on the same "Supprir" reading
+without flagging it as uncertain, which is worth noting as mild independent support for that choice).
+
+Not run this pass: Part II (English-Portuguese) of the same volume (would test the null's implication); a further
+attempt at the page85/rank19 mismatch beyond the third check above (it may be the caret-digit transcription that
+still needs review, not the dictionary count); the print check and novelty search (a verifier's job, not a
+solver's, per CLAUDE.md rule 10 and this brief).
