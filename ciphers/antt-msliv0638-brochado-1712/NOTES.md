@@ -1407,3 +1407,168 @@ of the real-text 5th percentile -1.064). Reported as a FAIL per rule 7 -- this i
 reading is wrong; letter 134 is a short (65-letter), un-glossed fragment carrying ~27% of its tokens on
 1-2-observation codes (see above), and a 65-letter window is a short, noisy sample for any 4-gram gate.
 Status stays `partial`; this does not by itself change anything else in this file.
+
+## ZX-BRO (25 Sept 2026)
+
+Worker ZX-BRO (Sonnet, session_016GruZBb7eyxBvNjDPatjZs), job (.claude/briefs/runs/2026-09-25-lane-zx-bro.md):
+hand-check the five entries PX-BRODEC3 named as still dragging the LOO gate after the Carta 79 fix (Carta 15,
+Carta 80, Passage 2a m0284, Carta 101, Passage 2a m0294) against the image; build the broader spelling-
+convention normalization RETRO-2026-09-25h proposal 2 named and YX-BRO79 left open; re-run the gate before/
+after; if it still passes, add the held-out judge control the brief asks for. Parent: LANE ZX orchestrator
+(session_01MxueEQJUGF9PWJiYcVyvBM). Intake gate already run by the lane orchestrator at 15:44 UTC, exit 0.
+No network access needed or used (all five leaves' images already on disk); no hosts contacted.
+
+### Step 1: the five dragging entries hand-checked against the image -- no transcription errors found
+
+For each entry, identified the exact span of codes that actually feeds `key.tsv`/the LOO gate (the aligned
+pairs in `scripts/_pairs.json`, i.e. the sub-run whose token count exactly equals its gloss word(s)' letter
+count -- everything else in that entry's cipher line never entered the key either way), then cropped that
+span plus its gloss word(s) from the full-resolution leaf image (Python/Pillow, native res, 3-10x) and read
+every token by eye:
+
+| leaf | entry | aligned span (gloss) | tokens checked | result |
+|---|---|---|---|---|
+| m0281 | Carta 15 | "por huma Carta" (12 codes, positions 37-48) | 6,15,7,10,e,18,y,5,y,7,a,y | every digit/letter matches the image exactly, including the two M-graded ambiguous 7/z glyphs at positions 39 and 46 (correctly flagged M, not an error) |
+| m0287 | Carta 80 | "Hum fim do proposito" (17 codes, whole entry) | 10,26,18,16,8,14,15,2,7,4,55,12,15,f,8,3,15 | every digit matches the image exactly, including the doubled-loop single "f" at position 14 (confirmed one letter, not two, against the atlas's own decorative-f exemplar) |
+| m0284 | Passage 2a | "Se lhe fôr± de mim" (13 codes, whole entry) | 4,19,2,24,4,15,19,4,2,19,18,8,18 | every digit matches the image exactly |
+| m0292 | Carta 101 | "entre" (5 codes, positions 16-20) | 2,14,3,52,19 | every digit matches the image exactly; gloss word "entre" itself re-read and confirmed e-n-t-r-e, no abbreviation |
+| m0294 | Passage 2a | "De nos meter" (10 codes, positions 1-10) | 7,19,14,15,4,18,7,3,4,12 | every digit matches the image exactly |
+
+**No correction found in any of the five entries' aligned spans** -- unlike Carta 79 (a plain misread digit,
+a c/e letter confusion, a barred-7/loop-2 confusion, and a gloss abbreviation error that fed a token-count
+mismatch), these five entries' coded digits and their gloss letters are transcribed correctly. One gloss
+word re-examined but left **unresolved, not corrected**: Carta 80's second gloss word (currently `fim`,
+contributing code 18's pair to "m") is genuinely hard to call at this resolution between "fim" (f-i-m, 3
+letters, matching the stored 17-letter total exactly) and "fino" (f-i-n-o, 4 letters, which would make the
+gloss 18 letters against 17 codes and exclude this entry the way the pre-fix Carta 79 was excluded); the
+cursive hump between the "i" and the connecting stroke into "do" is a single arch that could be either the
+last leg of "m" (merged into the following ascender) or a complete "n" with no separate trailing "o". Per
+this job's brief ("correct only rows the image proves wrong"): **not corrected**, image does not decisively
+prove either reading. Flagged for a future worker with more time or a second crop angle; not blocking, since
+this entry already reads as an M-graded whole-entry gloss, and holding it exactly as filed does not change
+which pairs are in `key.tsv` (LOO's per-entry pct is what it is either way).
+
+**Conclusion:** the LOO drag on these five entries is not a transcription artifact in the spans that
+actually build the key. Consistent with PX-BRODEC2's own earlier finding for Carta 80 specifically (5 of
+its 17 self-consistency disagreements were independently-attested minority homophones, not errors) -- the
+drag on all five looks like genuine cryptographic homophone variation (the same plaintext letter enciphered
+with a different, minority-attested code in different entries), which no transcription fix can close.
+
+### Step 2: the broader normalization built (`scripts/13_normalize.py`)
+
+New shared module, single-letter fold (`v->u`, `j->i`, `y->i`, composed with each caller's own existing
+accent fold) plus a small word-level abbreviation-expansion table (`q.`->que, `q.mos`->quaes, `V.`->Vossa,
+`S.d±`->Senhor Dom, the last per CLAUDE.md's own PX-BRODEC lesson) for future callers that diff gloss text
+before a letter-count check. Self-test: `python3 scripts/13_normalize.py` (exit 0). Wired into BOTH
+`scripts/11_loo_control.py`'s `base()` and `scripts/06_decode_agreement.py`'s `fold()` -- both are applied
+identically to the two sides of every comparison those scripts make (a held-out entry's true letter and the
+rebuilt key's predicted letter in 11; an entry's expected letter and its own decoded value in 06), so the
+fold can only turn an apparent mismatch into an agreement, never the reverse. Convention now in force for
+every future diff run through these two scripts: accents folded (unchanged), then case-folded (unchanged),
+then u/v, i/j, y/i folded to one form. Doubled-consonant collapse and full abbreviation expansion are **not**
+applied inside `03_align_pairs.py`'s span/letter-count matching this pass -- that would re-derive
+`_pairs.json` itself (touching every entry's alignment, not just the five this job named), which this job's
+brief scopes out ("never tune the control"; a mis-paired entry stays excluded, not hand-patched).
+
+### Step 3: gate re-run with the normalization -- still PASSES, gap does not close
+
+`scripts/06_decode_agreement.py` (self-consistency): **338/379 = 89.2%** (was 328/379 = 86.5% before this
+normalization, YX-BRO79's bug-fixed figure -- +2.7 points).
+
+`scripts/11_loo_control.py` (leave-one-out, same 379 pairs, same 5 seeds 20260925-20260929):
+
+| | before (YX-BRO79, accent-fold only) | after (this pass, + u/v i/j y/i fold) |
+|---|---|---|
+| real pooled LOO agreement | 82.6% (unkeyed 3.2%) | **85.3%** (unkeyed 3.2%) |
+| clean synthetic control (reference) | 96.8% | **100.0%** |
+| noise-matched synthetic control, 5-seed mean (range) | 91.4% (90.0-94.4) | **94.4%** (92.7-97.3) |
+| gap (real - noise-matched mean) | -8.8 | **-9.1** |
+| gate (real >=80% AND gap within +/-10) | PASS | **PASS** |
+
+Per-entry, the five named entries are **unchanged by the normalization** (Carta 15 66.7%, Carta 80 50.0%,
+Passage 2a m0284 53.8%, Carta 101 80.0%, Passage 2a m0294 80.0%, identical before and after) -- confirming
+step 1's read: their disagreements are not u/v, i/j or y/i spelling-convention artifacts either. The overall
+pooled gain (+2.7 points real) comes from other entries. The gap widened very slightly (-8.8 -> -9.1)
+because the SAME fold also cleans up the synthetic control (clean control 96.8% -> 100.0%: some of its
+apparent "errors" were the control's own u/v-type homophone-group splits, now merged) -- both sides got more
+self-consistent, and the control benefited marginally more, but the gate still clears the +/-10 band with
+room to spare. **Gate: PASS, unchanged in verdict.** `key.tsv` itself was not touched (04_build_key.py's own
+`base()` is unchanged, by design -- this job's brief scopes the normalization to diffs, not to rebuilding the
+key), so letter 134's decode (YX-BRO79's reading, `reading_body_letter134.txt`) is byte-identical to before.
+
+### Step 4: matched judge controls (held-out entries of similar length)
+
+Since the gate still passes, per the brief: scored two held-out (LOO) entries of similar length to letter
+134 (65 letters) through the same judge, to learn whether a correct-ish, same-procedure decode of this
+material can pass at all before treating letter 134's own FAIL as a verdict.
+
+**Control A: m0291 Carta 96 (42 coded tokens, LOO-decoded with `scripts/14_loo_judge_control.py` -- key
+rebuilt from every OTHER entry's pairs, this entry's own 22 pairs excluded from the tally, then its 42
+tokens decoded from that rebuilt key exactly as letter 134 was decoded from the full key):**
+
+```
+$ python3 tools/judge_plaintext.py specs/antt-msliv0638-brochado-1712.json --file ciphers/antt-msliv0638-brochado-1712/reading_loo_control_carta96.txt
+ok   length: got=42, min=40, max=70
+FAIL language: score=-1.581, null_p99=-1.38, real_p05=-1.111, real_median=-0.838, mode=both, N=42
+FAIL - antt-msliv0638-brochado-1712
+```
+
+**Control B: m0283 Carta 70 (66 coded tokens, same LOO procedure, key never sees this entry's own 32
+pairs):**
+
+```
+$ python3 tools/judge_plaintext.py specs/antt-msliv0638-brochado-1712.json --file ciphers/antt-msliv0638-brochado-1712/reading_loo_control_carta70.txt
+ok   length: got=63, min=40, max=70
+FAIL language: score=-1.043, null_p99=-1.42, real_p05=-1.024, real_median=-0.824, mode=both, N=63
+FAIL - antt-msliv0638-brochado-1712
+```
+
+**Both controls FAIL the binary gate, same as letter 134** (-1.443, null_p99 -1.428, from YX-PTJUDGE).
+Per the brief's own decision rule ("if the control also fails, say the judge cannot decide at this length
+... and stop there"): **the judge cannot decide at this length; this is a judge limit, not a verdict on
+letter 134's reading.** Reported with the qualitative texture rather than just the binary, since it is not
+uniform: Control A (42 letters, shorter) scores decisively near the null (-1.581, well below even
+null_p99), while Control B (66 letters, length-matched to letter 134 and built from a much better-attested
+32-pair entry) scores much closer to passing -- -1.043 against a real_p05 bar of -1.024, a 0.019 miss,
+clearing null_p99 (-1.42) by a wide margin. Letter 134's own score (-1.443) sits only 0.015 above ITS
+null_p99 (-1.428) and far from its real_p05 (-1.064). So while neither control formally PASSes, the
+better-attested, length-matched control (B) reads far more like real Portuguese than letter 134's own
+candidate does under the same judge -- suggestive, not dispositive (rule 7: a FAIL is reported as a FAIL,
+not reinterpreted as a near-pass). Do not describe letter 134 as validated or invalidated by this
+comparison; the honest statement is: the judge's language check does not have enough signal at ~40-70
+letters to give a clean verdict either way, and letter 134's own score is on the weaker end of what this
+target's own material produces at this length.
+
+### Step 4 (fresh-instance re-derivation): unchanged, not re-run
+
+`key.tsv` was not modified this pass (see Step 3), so letter 134's decode is unchanged from YX-BRO79's
+reading, and YX-BRO79's fresh-instance re-derivation (one Sonnet subagent, no access to `key.tsv` or
+`NOTES.md`, independently rebuilt 265 pairs and corroborated every C-graded code this target's key uses,
+with the sole open disagreement already inside this target's own M grade) still applies without change.
+Not re-run this pass -- re-running an identical subagent against unchanged inputs would not produce new
+information and was out of this job's remaining time budget.
+
+### Status
+
+Stays **`partial`**. The gate passes both before and after the broader normalization; none of the five
+named dragging entries had a transcription error the image could prove; letter 134's reading is unchanged
+and still a candidate that fails the pt-language judge at this length, but so does a known-provenance,
+same-length, same-procedure control -- so this FAIL is now attributed to a judge limit at ~40-70 letters,
+not read as a mark against the specific reading. Neither of rule 7's two conditions for moving off `partial`
+(a PASS judge, or corroboration beyond what's already on file) is newly met.
+
+### Not done this pass, next steps
+
+- Carta 80's `fim`/`fino` gloss-word ambiguity (Step 1) -- flagged, not resolved; would need a sharper crop
+  angle or the DigitArq copy at a different compression than the one already on disk.
+- The full abbreviation-expansion/doubled-consonant normalization inside `03_align_pairs.py` itself (would
+  re-derive `_pairs.json`, out of this job's scope -- see Step 2).
+- A longer or better-attested held-out control (a 3rd or 4th length bucket) to map out where exactly this
+  judge's language check gains enough signal to discriminate at all -- worth doing before treating any
+  future ~40-70-letter candidate's judge FAIL as informative for this target.
+- No verifier, no AUDIT.md, no second opinion for this target yet -- unchanged from the LANE PX/YX handoff.
+
+### Host report
+
+No network access; no hosts contacted (all five leaves' images and every script/TSV already on disk). No
+subagents (all work fit inside direct tool use). Cost: see the lane ledger.

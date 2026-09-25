@@ -27,9 +27,16 @@ aligned estimate.
 """
 
 ROOT = '/home/user/cipher-lab/ciphers/antt-msliv0638-brochado-1712'
+import sys
+sys.path.insert(0, f'{ROOT}/scripts')
+from importlib import import_module
+_norm = import_module('13_normalize')
 ACCENTS = str.maketrans('ãáàâéêíóôõúç', 'aaaaeeiooouc')
 def fold(c):
-    return c.lower().translate(ACCENTS)
+    # ZX-BRO (25 Sept 2026): accent fold (unchanged) composed with the u/v, i/j, y/i spelling-convention
+    # fold (scripts/13_normalize.py), applied identically to both the expected letter and the decoded
+    # value so it reaches BOTH sides of every diff this script reports.
+    return _norm.fold_letter(c.lower().translate(ACCENTS))
 
 # expected letter per (leaf, entry_label, occurrence-index-within-entry-of-this-token), built by walking
 # ciphertext_appendix.tsv in position order and consuming _pairs.json's per-entry letter list in the same

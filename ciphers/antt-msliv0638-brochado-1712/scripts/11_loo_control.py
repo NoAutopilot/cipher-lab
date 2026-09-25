@@ -62,9 +62,18 @@ SEED = 20260925
 random.seed(SEED)
 
 ROOT = '/home/user/cipher-lab/ciphers/antt-msliv0638-brochado-1712'
+import sys
+sys.path.insert(0, f'{ROOT}/scripts')
+from importlib import import_module
+_norm = import_module('13_normalize')
 ACCENT_MAP = {'ã':'a','á':'a','à':'a','â':'a','é':'e','ê':'e','í':'i','ó':'o','ô':'o','õ':'o','ú':'u','ç':'c'}
-def base(c):
+def _accent_fold(c):
     return ACCENT_MAP.get(c.lower(), c.lower())
+def base(c):
+    # ZX-BRO (25 Sept 2026): accent fold (unchanged) composed with the u/v, i/j, y/i spelling-convention
+    # fold (scripts/13_normalize.py) -- applied here so it reaches BOTH sides of every LOO diff (the
+    # held-out entry's true letter and the rebuilt-key's predicted letter are both run through base()).
+    return _norm.fold_letter(_accent_fold(c))
 
 pairs = json.load(open(f'{ROOT}/scripts/_pairs.json'))
 pairs = [(tok, base(let), tuple(key), span) for tok, let, key, span in pairs]
