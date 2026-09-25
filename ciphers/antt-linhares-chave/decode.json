@@ -1,0 +1,20 @@
+{
+  "jobs": [
+    {
+      "ciphertext": "ciphertext.tsv",
+      "key": "key.tsv",
+      "format": "tsv",
+      "line_column": "line",
+      "folio_column": "page_of_letter",
+      "style": "spaced",
+      "reading": "reading.txt",
+      "tokens": "reading_tokens.tsv",
+      "header": [
+        "# antt-linhares-chave m0002, decoded against Vieyra 1809 Part I (BOOK.md) via key.tsv (LX-DEC, 25 Sept 2026)",
+        "# tokens {total}: {HCSMIU} (U = sign not covered by the key; there should be none -- every group in",
+        "# ciphertext.tsv has a key.tsv row, including the one null and the one still-unresolved group)",
+        "# Portuguese as decoded, one line per manuscript line (page_of_letter + line). English gloss below in NOTES.md."
+      ]
+    }
+  ]
+}

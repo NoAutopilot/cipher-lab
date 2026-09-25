@@ -1,0 +1,27 @@
+sign	value	grade	source	note
+328928	para	H	p289c2r8	Pára, prep. for (no trim)
+336227	supprir	M	p362c2r7	rank7 ambiguous: Supprir (counting Suppurar-se as its own headword) or Supremo (if not counted separately); no trim
+328511	o	H	p285c1r1	Ovo -> trim2(end) -> O
+335412	seu	H	p354c1r2	Seu, Sua -- his/her/your (no trim)
+3251217	lugar	H	p251c2r17	Lugar, a place (no trim); alt count (merging the Lucifer/Lucifer homograph pair as one entry) gives Lugarejo at the same rank
+3241220	junto	H	p241c2r20	Junto, joined/together (no trim)
+311021	com	H	p110c2r1	Com, with (no trim) -- matches the key's own worked example on m0003
+325532	man	M	p255c3r2	Mando -> trim2(end) -> Man (fragment, not a standalone word)
+328521	o	H	p285c2r1	Ouros -> trim4(end) -> O
+313211	d	M	p132c1r1	"D, One of the mutes, supposed to be formed from the Greek Delta" -- the letter-D dictionary entry itself (no trim); the large section-divider "D." printed above it was not counted as a headword
+3241315	justa	H	p241c3r15	Justa, a justing/tilting (also reads as the fem. adj. "just") (no trim)
+322332	he	H	p223c3r2	Hernia -> trim4(end) -> He (archaic spelling of "e", used in the key's own prose: "mostra que a palavra he a 1a da dita Columna")
+3350320	segredo	H	p350c3r20	Segredo, a secret (no trim)
+260118	ate	H	p60c1r18	Ate, preposition, till/even/up to (no trim)
+829011	[null]	H		first digit 8: null under the key's own rule (any group starting 4-9 is a null). The key's prose only describes nulls at the START of a message (switch to "o Diccionario Inglez"/English); this null is mid-letter, so what it signals here is not settled by the key's own text -- see NOTES.md
+328131	o	H	p281c3r1	Odio -> trim3(end) -> O
+326624	ministerio	H	p266c2r4	Ministerio, ministry, service (no trim)
+3295112	pela	H	p295c1r12	Pela, prep., by/through (no trim)
+326223	memoria	H	p262c2r3	Memoria, memory (no trim)
+316211	do	H	p162c1r1	Dormitar -> trim6(end) -> Do
+285219	[unresolved]	M	p85c2r19	UNRESOLVED: page 85 col.2 has only 15 headwords (ends at Calumnia); rank 19 does not exist in this column under the every-bold-line-counts convention used throughout this key. Possible causes: the caret-inserted digit is still misread, or the counting convention undercounts this column. Not resolved this pass
+324726	lhe	H	p247c2r6	Lhe, to him/her/it (no trim)
+3293211	pauperr	M	p293c2r11	Pauperrimo -> trim3(end) -> Pauperr (fragment, not a standalone word)
+338326	ven	M	p383c2r6	Venablo -> trim4(end) -> Ven (fragment, not a standalone word)
+322231	ha	H	p222c3r1	Habil -> trim3(end) -> Ha ("there is/are", common Portuguese verb form)
+3250121	logo	H	p250c1r21	Logo, presently/soon/then (no trim)

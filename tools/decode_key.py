@@ -38,6 +38,12 @@ decode.json: {"jobs": [{...}, ...]} or one job object. Job keys (all optional):
   ciphertext, key, exceptions, reading, tokens   file names relative to TARGET_DIR
   format        pipe | tsv | rows (default: detected)
   split_line    '_' to split a tsv line id 'f30r_L01' into folio 'f30r' and line 'L01'
+  line_column   'tsv' format only: header name of the line-id column, default 'line' (antt-linhares-chave uses
+                'line' too, but with a separate folio_column since its ciphertext has both a page and a line
+                column rather than one combined id)
+  folio_column  'tsv' format only: header name of a separate folio/page column, combined with line_column into
+                the folio+line label instead of split_line's single-column split (antt-linhares-chave:
+                'page_of_letter')
   style         spaced | concat | words (see render_*)
   header        list of header lines for the reading; placeholders {total} {HCSMIU} {grades_sorted} {name} {H} {M} ...
   token_columns list of [header, field]; fields: folio line pos raw sign conf value grade gloss
@@ -132,17 +138,24 @@ def load_pipe(path, job):
 
 
 def load_tsv(path, job):
-    header, rows = with_header(path, ('line',))
-    ci = col(header, 'line'); pi = col(header, 'pos', 'position', 'index', 'idx')
+    lc = job.get('line_column', 'line')
+    foc = job.get('folio_column')
+    header, rows = with_header(path, (foc, lc) if foc else (lc,))
+    ci = col(header, lc); pi = col(header, 'pos', 'position', 'index', 'idx')
     si = col(header, 'sign', 'token', 'group', 'code'); ki = col(header, 'conf', 'confidence')
     split = job.get('split_line')
+    foi = col(header, foc) if foc else None
     recs, seen = [], set()
     for r in rows:
         ln = r[ci]
-        fo, l2 = (ln.split(split, 1) if split and split in ln else ('', ln))
+        if foi is not None:
+            fo, l2 = r[foi], ln
+        else:
+            fo, l2 = (ln.split(split, 1) if split and split in ln else ('', ln))
         label = f'{fo} {l2}' if fo else l2
-        if ln not in seen:
-            seen.add(ln); recs.append(dict(folio=fo, line=l2, label=label, pos=None, kind='line'))
+        seen_key = (fo, ln)
+        if seen_key not in seen:
+            seen.add(seen_key); recs.append(dict(folio=fo, line=l2, label=label, pos=None, kind='line'))
         t = r[si]; conf = r[ki] if ki is not None and ki < len(r) else ''
         cp = job.get('clear_prefix')
         if cp and t.startswith(cp) and len(t) > len(cp):
