@@ -578,3 +578,7 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T21:31Z	session_01V2WMavWGMeAUYELUpmyEcX	LANE B4 orchestrator (Opus, cap 25)	breadth: B3 successor queue; brief 2026-09-25-lane-b4-orchestrator.md
 2026-09-25T21:31Z	session_01KcXfAtaB23N8aGrxpkTVky	retrospective l, second attempt (Sonnet, cap 10)	source_url set; rows since retro k
 2026-09-25T21:31Z	session_017EMUc9dWLDu9DEQbJCXByH	LEARN-3 (Sonnet, cap 5)	source_url set; window since 17:18
+2026-09-25T21:34Z	session_01ANHG2mfxvjqcBsjKg8f2cc	bSUF (Sonnet, cap 3)	sufi-fiddle test 1 (scienceblogs.de holder)	LANE B4 brief
+2026-09-25T21:34Z	session_01UisPBpVaihgNd4cSyvYVoc	bBLZ2 (Sonnet, cap 3)	blitz-ciphers test 2 family_run masc	LANE B4 brief
+2026-09-25T21:34Z	session_01AFmS8KELthEFN3kSBYw4qM	bUNT2 (Sonnet, cap 3)	untersberg-code NEAR step 1 abbreviation expansion	LANE B4 brief
+2026-09-25T21:34Z	session_01GpZDqE883ZSyLrPTUFm2sJ	bBUL3 (Sonnet, cap 3)	bullet-tuscany-1944 NEAR step indicator lookup (IA, Google Books)	LANE B4 brief

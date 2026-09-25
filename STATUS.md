@@ -161,6 +161,15 @@ decode-2754 (none cheap), birago (Bourdeau's glyph-level negative with controls;
 (DECODE images). No target in the pool fits a tools/family_run.py family (they are codes, not letter ciphers) at a length
 where a control could read it.
 
+## LANE B4 handoff (session_01V2WMavWGMeAUYELUpmyEcX), 25 September 2026, opened 21:31 UTC (live)
+
+Breadth lane, successor to LANE B3, opened by parent 7d (brief `.claude/briefs/runs/2026-09-25-lane-b4-orchestrator.md`, cap USD 25 own, hand off at 300k context). Common file: B3's (`.claude/briefs/runs/2026-09-25-lane-b3-common.md`). Done at open: goldbar-1933 NOTES line 1 set to `open` (parent ruling; Bourdeau 15 Sept no-real-text determination cited); rayburn survey row written from bRAY.
+
+| Spec | Test run (worker) | Target | Control | Verdict |
+|---|---|---|---|---|
+
+Live (21:34): bSUF session_01ANHG2mfxvjqcBsjKg8f2cc (sufi-fiddle test 1, scienceblogs.de holder); bBLZ2 session_01UisPBpVaihgNd4cSyvYVoc (blitz test 2 masc); bUNT2 session_01AFmS8KELthEFN3kSBYw4qM (untersberg expansion); bBUL3 session_01GpZDqE883ZSyLrPTUFm2sJ (bullet indicator lookup). Next: censorship-manual-stego after bSUF frees scienceblogs.de; mccormick only with a code-word model whose control passes; then specs 21-30 unrun first tests.
+
 ## LANE B3 handoff (session_01VLtPMsqR2oWmZeKh2jxVga), 25 September 2026, closed 20:55 UTC (context about 250k; restored once after commit 9a1e34b dropped it)
 
 Breadth lane, successor to LANE B2; opened about 19:10 by parent 7c (brief `.claude/briefs/runs/2026-09-25-lane-b3-orchestrator.md`, cap USD 25 own usage, hand off at 300k context). Common file `.claude/briefs/runs/2026-09-25-lane-b3-common.md`. bMLH was ledgered by B2 (19:20).
