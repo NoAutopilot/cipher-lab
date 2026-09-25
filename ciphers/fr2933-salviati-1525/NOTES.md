@@ -1660,3 +1660,75 @@ irregular variant never reached its target run, so nothing was lost).
 Requests: none (disk only). Regenerate: `python3 tools/family_run.py specs/fr2933-salviati-1525.json --family syllabary --seed S
 --seeds 1 --restarts 6 --param err=0.05` (control seed S then target seed S, about 2 min each); `--control-only --seeds 3
 --param err=0` and `err=0.07` for the ceiling and bracket rows; `--param assign=irregular` for the irregular rows.
+
+## DSN2: non-vowel marks and word edges (25 Sept 2026, LANE R8)
+
+Worker LANE R8 DSN2 (Fable, cap $10, box 45 minutes), 23:10-DONETIME UTC. Brief `.claude/briefs/runs/2026-09-25-lane-r8-dsn2-salviati-marks.md`
+(DSN sec.5 (a) and (c)). Disk only, no hosts, no subagents. **No reading; grades stay H0 C0 S0 M0 I0; no reading_dsn2.txt; nothing for
+the re-derivation.** Nomenclator words (DSN sec.5 (b)) were out of scope and are not touched: one line, still untested, needs a word-level scorer.
+
+**1. Tool extension** (`tools/families/syllabary.py`, commit 6bf9a77; defaults byte-identical to DSN's: seeds 1/2/3 regenerate use
+0.688/0.672/0.688 and 302/315/286 types as in `control_curve.tsv`; `tools/tests/test_syllabary.py` block (5) asserts the seed-1
+control sequence is unchanged). Three `--param`s: `marks=mixed` (a mark string whose first element is a numeral, or `?`, names a
+following vowel: 314 target tokens, 11.1%; one containing `~` names a following n or m, the suspension stroke: 163 tokens, 5.8%; every
+other mark -- `# + dot o ot` and compounds -- doubles the base letter: 417 tokens, 14.8%; an explicit `mark:class` list is also
+accepted); `boundary=1` (the corpus folded with word spaces kept as the letter `w`, unused in Italian; a fixed symbol B->w at both edges
+of every run in control and target alike, the target's 381 spec lines being its runs, and free symbols barred from `w`; the control's
+plain boxes withhold whole words instead of `gap` letters); `bases=N` (the control's marked tokens use only the N most-marked target
+bases -- for N=8: g e ] eps S7 a m lam -- allotted first to the N letters that most need a marked base). The control's use rate is now
+bisected per mark class so each class's share of N matches the target's. `tools/family_run.py` appends the `--param` set to the
+decode file name (`families/syllabary-<seed>-err=0.05,marks=mixed.txt`), DSN's suggestion, so variants on one seed keep both decodes.
+
+**Design note found while matching the control, before any run:** under "others = doubling", 14.8% of the target's tokens would be
+doubled letters. Italian prose laid on the target's own row pattern supplies at most 3-6% of tokens as double letters even at use 1.0
+(control class shares 0.030-0.057), so V1 and V2's controls carry a marked share of about 0.22 against the target's 0.317 and the
+doubling class saturates. The vowel and n/m classes match (0.111-0.115 and 0.056-0.062). This is a property of the reading, not of
+the tool: whatever the second mark family is, it cannot be plain doubling of the base at Italian double-letter rates, unless the base
+letters under those marks are themselves a skewed subset (l, t, s, r are the doubling-prone letters), which the control does model
+(it doubles whatever the text doubles). So V1/V2 test a design the language can only partly supply; their negatives are conditional on that.
+
+**2. Runs** (`tools/family_run.py`, control first per seed, 24 restarts x 120,000 iterations, measured error 5%, gate 0.6; every
+row in HYPOTHESES.md 23:26-23:36 and `control_curve.tsv` designs `syl-mix`, `syl-mix-b`, `syl-b8`; comparison
+`python3 ciphers/fr2933-salviati-1525/dsn2_compare.py "<params>"`). Token accuracy on the control; the target column is the best
+anneal score per stream symbol beside the control's own (the boundary variants score a longer stream, so per-symbol numbers compare
+only within a variant).
+
+| variant | params | control token acc, seeds 1/2/3 (types) | control score/symbol | TARGET score/symbol | judge (it, N=3714) | cross-seed letter agreement | Italian word hits (30 words >=5 letters) |
+|---|---|---|---|---|---|---|---|
+| V1 marks mixed | err=0.05,marks=mixed | **93.4 / 93.9 / 95.8%** (256/263/250) | -2.43 / -2.44 / -2.44 | **-2.957 / -2.955 / -2.950** | FAIL -1.467 / -1.475 / -1.446 | 32.2% (1/2), 64.9% (1/3), 23.2% (2/3) | 0 / 0 / 0 (shuffles 0) |
+| V2 V1 + boundary | err=0.05,marks=mixed,boundary=1 | **95.1 / 94.8 / 88.3%** (255/247/226) | -2.79 / -2.82 / -2.88 | **-3.331 / -3.311 / -3.325** | FAIL -1.495 / -1.461 / -1.435 | 53.8% (1/2), 32.0% (1/3), 30.1% (2/3) | 2 / 0 / 0 (shuffles 0) |
+| V3 regular syllabary + boundary, marks on 8 bases | err=0.05,bases=8,boundary=1 | **94.3 / 72.5 / 83.8%** (195/207/200) | -2.73 / -2.86 / -2.80 | **-3.131 / -3.123 / -3.120** | FAIL -1.350 / -1.404 / -1.355 | 18.0% (1/2), 42.7% (1/3), 33.6% (2/3) | 0 / 0 / 1 (shuffles 0) |
+
+Type-level K: V3's control has 195-207 code+mark types against the target's 223 (DSN's 278-316), the `bases=8` fix the DSN
+suggestion asked for; the excess over the eight bases' own types is the 5% error's inserted and confused tokens. V1/V2 sit at
+226-263 without the restriction because fewer of their tokens are marked.
+
+**3. Reading of the numbers.** Every control clears the gate on every seed (nine of nine; the lowest, V3 seed 2 at 72.5%, is the
+boundary variant with the fewest marked bases, and its 0%-error ceiling was not run -- see 5). Every target sits 0.3-0.5 per symbol
+below its own control on every seed (V1: 0.52; V3: 0.32-0.40; V2: 0.44-0.54), the same shape as DSN (0.27-0.40) and CM3, with the judge
+placing every decode between the shuffled null (-1.857) and real prose (-0.911), no Italian word hits above shuffle level, and no
+stable mark map: V1's anneal collapses the three numeral marks to one vowel (u on seeds 1 and 3, o on seed 2; V2 likewise u/u on seeds 1-2) and reads `~` as n on
+all six V1/V2 seeds, which is a degenerate optimum ("iiii", "ttt" runs in the decodes), not a syllable row -- the 64.9% agreement of
+seeds 1 and 3 is agreement on that collapse, not on a text. V3's mark-to-vowel maps disagree across seeds as DSN's did. So at the
+measured 5% error, with these controls: **the mixed reading (numerals = vowels, `~` = n/m, the rest = doubling) is a
+control-backed negative on 3 of 3 seeds, with and without a run-edge word boundary (V1, V2), and the regular DSN syllabary is a
+control-backed negative also with the word boundary and the eight-base type match (V3)** -- conditional on CM3's error estimate,
+on the doubling saturation of sec.1 for V1/V2, and on the boundary model (a fixed `w` at run edges only; word breaks inside a run
+invisible, as on the leaf). No reading; nothing routed to verifiers. The target stays `partial`; NEAR.md and status.json are the
+orchestrator's.
+
+**4. Where it was not found.** The decodes are at `families/syllabary-{1,2,3}-err=0.05,marks=mixed.txt`, `...,marks=mixed,boundary=1.txt`,
+`...,bases=8,boundary=1.txt`; none carries a run of Italian; nothing was searched outside the disk (no hosts).
+
+**5. Not done, one line each.** The 0%-error ceilings for the three variants were not run (the nine 24-restart control+target
+pairs filled the 45-minute box on four cores; DSN's ceiling for the base design is 98%, and V1's 93-96% at 5% error says its
+headroom is the same, but V3 seed 2's 72.5% wants its ceiling before that seed's negative counts fully) -- `--control-only --seeds 3
+--param err=0 --param bases=8 --param boundary=1`, about 6 minutes at 6 restarts. Next design steps the numbers suggest: (a) the
+second mark family as a following consonant class (`marks=~:nm,#:rst,+:rst,dot:rst,*:aeiou` or a per-mark explicit list) rather
+than doubling, which the language can supply at the target's 14.8%; (b) nomenclator words for the marked types on e, S7, ] (DSN
+sec.5 (b), word-level scorer); (c) `tools/tests/test_family_run.py` was not re-run under CPU load (the suffix change touches no
+default path; the syllabary test passed, 4 s).
+
+Requests: none (disk only). Regenerate: `python3 tools/family_run.py specs/fr2933-salviati-1525.json --family syllabary --seed S --seeds 1
+--restarts 24 --param err=0.05 --param marks=mixed` (V1), `... --param marks=mixed --param boundary=1` (V2), `... --param bases=8
+--param boundary=1` (V3); about 6 minutes per seed alone, control then target. Test: `python3 tools/tests/test_syllabary.py`.
