@@ -52,6 +52,8 @@ reports and apply the safe proposals). The other account's parent is session_01F
 (Brochado, Clair 349, Barriere) and CX2 (check-solved round 2); it takes none of your targets and you take none of its;
 coordinate only through ROOM.md and STATUS.md.
 
+Standing orders from the owner, 25 Sept 2026 17:10 UTC (away until about 03:00 UTC 26 Sept): keep making progress, the parent picks; LANE GOLD (Köhler 1944, Debosnys 1883; brief 2026-09-25-lane-gold-orchestrator.md) is a standing lane restarted from its handoff whenever it closes, successor on claude-fable-5-1; a Sonnet LEARN worker (.claude/briefs/learn-cross-account.md) runs about every three hours over the other account's pushes and the parent applies its brief- and tool-only diffs; check-ins every 45 minutes.
+
 Post a ROOM.md line "parent 7c (session id): took over from 7b at <time>" with tools/room.py, then republish the
 board, then arm the first check-in. If any session reads `rejected`: interrupt every live lane and worker, post
 "rejected at <time>: every lane stops" in ROOM.md, note it in BUDGETS.md, and re-arm for Sat 26 Sept 2026 13:00 UTC.
