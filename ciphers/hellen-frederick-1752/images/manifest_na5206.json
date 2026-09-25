@@ -1,0 +1,3340 @@
+{
+  "eadid": "1.10.29",
+  "unitid": "5206",
+  "unittitle": "Van Von Hellen (&#39;Sieur H&#39;), Pruisisch zaakgelastigde bij de Republiek, 1752-1753",
+  "titleproper": "Inventaris van het archief van de familie Fagel, 1513-1927",
+  "availability": "DIGITALIZED",
+  "num_scans": 185,
+  "scans": [
+    {
+      "id": "61afd335-64a5-4282-bfd4-3388e3a09cf2",
+      "label": "NL-HaNA_1.10.29_5206_0001.jpg",
+      "order": 1,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/61afd335-64a5-4282-bfd4-3388e3a09cf2",
+        "mime_type": "image/jpeg",
+        "size": 2745968
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/61afd335-64a5-4282-bfd4-3388e3a09cf2",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/61afd335-64a5-4282-bfd4-3388e3a09cf2.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "e43eb7f5-7882-456f-b8ce-13e6d354361f",
+      "label": "NL-HaNA_1.10.29_5206_0002.jpg",
+      "order": 2,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/e43eb7f5-7882-456f-b8ce-13e6d354361f",
+        "mime_type": "image/jpeg",
+        "size": 4037271
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/e43eb7f5-7882-456f-b8ce-13e6d354361f",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/e43eb7f5-7882-456f-b8ce-13e6d354361f.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "c8e7e933-2d64-40f5-81a9-827e60f2ff1f",
+      "label": "NL-HaNA_1.10.29_5206_0003.jpg",
+      "order": 3,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/c8e7e933-2d64-40f5-81a9-827e60f2ff1f",
+        "mime_type": "image/jpeg",
+        "size": 4120822
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/c8e7e933-2d64-40f5-81a9-827e60f2ff1f",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/c8e7e933-2d64-40f5-81a9-827e60f2ff1f.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "acf02824-4558-4154-b5bd-3d37c00660f5",
+      "label": "NL-HaNA_1.10.29_5206_0004.jpg",
+      "order": 4,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/acf02824-4558-4154-b5bd-3d37c00660f5",
+        "mime_type": "image/jpeg",
+        "size": 4430444
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/acf02824-4558-4154-b5bd-3d37c00660f5",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/acf02824-4558-4154-b5bd-3d37c00660f5.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "746b95fd-0568-4849-81b8-cf9b4c47fcb4",
+      "label": "NL-HaNA_1.10.29_5206_0005.jpg",
+      "order": 5,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/746b95fd-0568-4849-81b8-cf9b4c47fcb4",
+        "mime_type": "image/jpeg",
+        "size": 3866635
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/746b95fd-0568-4849-81b8-cf9b4c47fcb4",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/746b95fd-0568-4849-81b8-cf9b4c47fcb4.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "30da9878-6641-4622-adcd-20a782cfdcf8",
+      "label": "NL-HaNA_1.10.29_5206_0006.jpg",
+      "order": 6,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/30da9878-6641-4622-adcd-20a782cfdcf8",
+        "mime_type": "image/jpeg",
+        "size": 3587687
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/30da9878-6641-4622-adcd-20a782cfdcf8",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/30da9878-6641-4622-adcd-20a782cfdcf8.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "f2b955a9-f5a3-4df0-b2ff-c62b547698bf",
+      "label": "NL-HaNA_1.10.29_5206_0007.jpg",
+      "order": 7,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/f2b955a9-f5a3-4df0-b2ff-c62b547698bf",
+        "mime_type": "image/jpeg",
+        "size": 4206535
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/f2b955a9-f5a3-4df0-b2ff-c62b547698bf",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/f2b955a9-f5a3-4df0-b2ff-c62b547698bf.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "5aaf0974-503c-4f2e-9fcf-ed24aac0d0da",
+      "label": "NL-HaNA_1.10.29_5206_0008.jpg",
+      "order": 8,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/5aaf0974-503c-4f2e-9fcf-ed24aac0d0da",
+        "mime_type": "image/jpeg",
+        "size": 5251182
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/5aaf0974-503c-4f2e-9fcf-ed24aac0d0da",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/5aaf0974-503c-4f2e-9fcf-ed24aac0d0da.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "69f9503d-c94e-49da-860c-a1f7b5d31d84",
+      "label": "NL-HaNA_1.10.29_5206_0009.jpg",
+      "order": 9,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/69f9503d-c94e-49da-860c-a1f7b5d31d84",
+        "mime_type": "image/jpeg",
+        "size": 4221325
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/69f9503d-c94e-49da-860c-a1f7b5d31d84",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/69f9503d-c94e-49da-860c-a1f7b5d31d84.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "fb59c344-7de0-4f5d-96b1-ceb7077343ef",
+      "label": "NL-HaNA_1.10.29_5206_0010.jpg",
+      "order": 10,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/fb59c344-7de0-4f5d-96b1-ceb7077343ef",
+        "mime_type": "image/jpeg",
+        "size": 3774740
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/fb59c344-7de0-4f5d-96b1-ceb7077343ef",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/fb59c344-7de0-4f5d-96b1-ceb7077343ef.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "42ba45ed-abe2-4cb0-8f28-ce4ccbf30199",
+      "label": "NL-HaNA_1.10.29_5206_0011.jpg",
+      "order": 11,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/42ba45ed-abe2-4cb0-8f28-ce4ccbf30199",
+        "mime_type": "image/jpeg",
+        "size": 4615597
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/42ba45ed-abe2-4cb0-8f28-ce4ccbf30199",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/42ba45ed-abe2-4cb0-8f28-ce4ccbf30199.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "bf0cb222-eaa5-4ca5-86a1-48b454e72198",
+      "label": "NL-HaNA_1.10.29_5206_0012.jpg",
+      "order": 12,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/bf0cb222-eaa5-4ca5-86a1-48b454e72198",
+        "mime_type": "image/jpeg",
+        "size": 4087333
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/bf0cb222-eaa5-4ca5-86a1-48b454e72198",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/bf0cb222-eaa5-4ca5-86a1-48b454e72198.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "7fe67e03-43f0-410a-9d47-08056e8aa61a",
+      "label": "NL-HaNA_1.10.29_5206_0013.jpg",
+      "order": 13,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/7fe67e03-43f0-410a-9d47-08056e8aa61a",
+        "mime_type": "image/jpeg",
+        "size": 4182559
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/7fe67e03-43f0-410a-9d47-08056e8aa61a",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/7fe67e03-43f0-410a-9d47-08056e8aa61a.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "0157ea5c-b948-4942-95dc-66b7059b48bc",
+      "label": "NL-HaNA_1.10.29_5206_0014.jpg",
+      "order": 14,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/0157ea5c-b948-4942-95dc-66b7059b48bc",
+        "mime_type": "image/jpeg",
+        "size": 4211824
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/0157ea5c-b948-4942-95dc-66b7059b48bc",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/0157ea5c-b948-4942-95dc-66b7059b48bc.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "8440d14c-0320-482e-931f-3e1c1f3bc171",
+      "label": "NL-HaNA_1.10.29_5206_0015.jpg",
+      "order": 15,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/8440d14c-0320-482e-931f-3e1c1f3bc171",
+        "mime_type": "image/jpeg",
+        "size": 4844129
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/8440d14c-0320-482e-931f-3e1c1f3bc171",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/8440d14c-0320-482e-931f-3e1c1f3bc171.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "10a12260-9f96-46c9-848f-4a8a323178a9",
+      "label": "NL-HaNA_1.10.29_5206_0016.jpg",
+      "order": 16,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/10a12260-9f96-46c9-848f-4a8a323178a9",
+        "mime_type": "image/jpeg",
+        "size": 4383481
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/10a12260-9f96-46c9-848f-4a8a323178a9",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/10a12260-9f96-46c9-848f-4a8a323178a9.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "1a411ec4-bf5a-486d-8280-bcb0477765c9",
+      "label": "NL-HaNA_1.10.29_5206_0017.jpg",
+      "order": 17,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/1a411ec4-bf5a-486d-8280-bcb0477765c9",
+        "mime_type": "image/jpeg",
+        "size": 5276302
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/1a411ec4-bf5a-486d-8280-bcb0477765c9",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/1a411ec4-bf5a-486d-8280-bcb0477765c9.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "d23ad968-dd2f-4635-a36c-31054b277054",
+      "label": "NL-HaNA_1.10.29_5206_0018.jpg",
+      "order": 18,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/d23ad968-dd2f-4635-a36c-31054b277054",
+        "mime_type": "image/jpeg",
+        "size": 4462615
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/d23ad968-dd2f-4635-a36c-31054b277054",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/d23ad968-dd2f-4635-a36c-31054b277054.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "823ddeb4-5f52-4dd8-93b5-d90fad2db148",
+      "label": "NL-HaNA_1.10.29_5206_0019.jpg",
+      "order": 19,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/823ddeb4-5f52-4dd8-93b5-d90fad2db148",
+        "mime_type": "image/jpeg",
+        "size": 4360624
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/823ddeb4-5f52-4dd8-93b5-d90fad2db148",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/823ddeb4-5f52-4dd8-93b5-d90fad2db148.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "d0fed41b-03de-4116-97c9-6f8e050abf2f",
+      "label": "NL-HaNA_1.10.29_5206_0020.jpg",
+      "order": 20,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/d0fed41b-03de-4116-97c9-6f8e050abf2f",
+        "mime_type": "image/jpeg",
+        "size": 4230121
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/d0fed41b-03de-4116-97c9-6f8e050abf2f",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/d0fed41b-03de-4116-97c9-6f8e050abf2f.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "2c3220f3-62e6-48e7-8d21-4ede33e087bc",
+      "label": "NL-HaNA_1.10.29_5206_0021.jpg",
+      "order": 21,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/2c3220f3-62e6-48e7-8d21-4ede33e087bc",
+        "mime_type": "image/jpeg",
+        "size": 3921535
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/2c3220f3-62e6-48e7-8d21-4ede33e087bc",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/2c3220f3-62e6-48e7-8d21-4ede33e087bc.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "f48e77eb-cab3-40a3-b50e-c1508bfa0f8f",
+      "label": "NL-HaNA_1.10.29_5206_0022.jpg",
+      "order": 22,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/f48e77eb-cab3-40a3-b50e-c1508bfa0f8f",
+        "mime_type": "image/jpeg",
+        "size": 4432394
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/f48e77eb-cab3-40a3-b50e-c1508bfa0f8f",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/f48e77eb-cab3-40a3-b50e-c1508bfa0f8f.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "d095dbba-49bb-4ec8-82de-9cef5527e35d",
+      "label": "NL-HaNA_1.10.29_5206_0023.jpg",
+      "order": 23,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/d095dbba-49bb-4ec8-82de-9cef5527e35d",
+        "mime_type": "image/jpeg",
+        "size": 4718478
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/d095dbba-49bb-4ec8-82de-9cef5527e35d",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/d095dbba-49bb-4ec8-82de-9cef5527e35d.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "b8b2570b-059e-4959-a2dd-b8920d7f7750",
+      "label": "NL-HaNA_1.10.29_5206_0024.jpg",
+      "order": 24,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/b8b2570b-059e-4959-a2dd-b8920d7f7750",
+        "mime_type": "image/jpeg",
+        "size": 4396989
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/b8b2570b-059e-4959-a2dd-b8920d7f7750",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/b8b2570b-059e-4959-a2dd-b8920d7f7750.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "066ba44b-b41b-4a89-8230-03dba8f7c526",
+      "label": "NL-HaNA_1.10.29_5206_0025.jpg",
+      "order": 25,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/066ba44b-b41b-4a89-8230-03dba8f7c526",
+        "mime_type": "image/jpeg",
+        "size": 5406594
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/066ba44b-b41b-4a89-8230-03dba8f7c526",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/066ba44b-b41b-4a89-8230-03dba8f7c526.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "16cf660e-48d5-4c46-aad9-7681099fe11d",
+      "label": "NL-HaNA_1.10.29_5206_0026.jpg",
+      "order": 26,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/16cf660e-48d5-4c46-aad9-7681099fe11d",
+        "mime_type": "image/jpeg",
+        "size": 5366895
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/16cf660e-48d5-4c46-aad9-7681099fe11d",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/16cf660e-48d5-4c46-aad9-7681099fe11d.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "14ae3ed0-c81c-42a4-9f9d-a20def7d386c",
+      "label": "NL-HaNA_1.10.29_5206_0027.jpg",
+      "order": 27,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/14ae3ed0-c81c-42a4-9f9d-a20def7d386c",
+        "mime_type": "image/jpeg",
+        "size": 5349087
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/14ae3ed0-c81c-42a4-9f9d-a20def7d386c",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/14ae3ed0-c81c-42a4-9f9d-a20def7d386c.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "8bc4a26e-e777-46a9-afc1-2e5fc6c03698",
+      "label": "NL-HaNA_1.10.29_5206_0028.jpg",
+      "order": 28,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/8bc4a26e-e777-46a9-afc1-2e5fc6c03698",
+        "mime_type": "image/jpeg",
+        "size": 4040658
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/8bc4a26e-e777-46a9-afc1-2e5fc6c03698",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/8bc4a26e-e777-46a9-afc1-2e5fc6c03698.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "a2cdba2f-ab8a-40d6-acdc-78e502f6c1a3",
+      "label": "NL-HaNA_1.10.29_5206_0029.jpg",
+      "order": 29,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/a2cdba2f-ab8a-40d6-acdc-78e502f6c1a3",
+        "mime_type": "image/jpeg",
+        "size": 3284740
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/a2cdba2f-ab8a-40d6-acdc-78e502f6c1a3",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/a2cdba2f-ab8a-40d6-acdc-78e502f6c1a3.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "75d4d5bd-e002-44ee-8b53-3bf0a29c198f",
+      "label": "NL-HaNA_1.10.29_5206_0030.jpg",
+      "order": 30,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/75d4d5bd-e002-44ee-8b53-3bf0a29c198f",
+        "mime_type": "image/jpeg",
+        "size": 4175258
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/75d4d5bd-e002-44ee-8b53-3bf0a29c198f",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/75d4d5bd-e002-44ee-8b53-3bf0a29c198f.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "d6c8039c-c952-4b9a-a773-81832362c326",
+      "label": "NL-HaNA_1.10.29_5206_0031.jpg",
+      "order": 31,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/d6c8039c-c952-4b9a-a773-81832362c326",
+        "mime_type": "image/jpeg",
+        "size": 3667972
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/d6c8039c-c952-4b9a-a773-81832362c326",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/d6c8039c-c952-4b9a-a773-81832362c326.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "c150617d-4d41-4f6d-80b9-7b02f09c4fac",
+      "label": "NL-HaNA_1.10.29_5206_0032.jpg",
+      "order": 32,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/c150617d-4d41-4f6d-80b9-7b02f09c4fac",
+        "mime_type": "image/jpeg",
+        "size": 4201332
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/c150617d-4d41-4f6d-80b9-7b02f09c4fac",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/c150617d-4d41-4f6d-80b9-7b02f09c4fac.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "f71bf6f0-9ffc-40a6-b849-3637dab69e15",
+      "label": "NL-HaNA_1.10.29_5206_0033.jpg",
+      "order": 33,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/f71bf6f0-9ffc-40a6-b849-3637dab69e15",
+        "mime_type": "image/jpeg",
+        "size": 3746852
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/f71bf6f0-9ffc-40a6-b849-3637dab69e15",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/f71bf6f0-9ffc-40a6-b849-3637dab69e15.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "0655ac9a-a9c6-4fad-870b-4a4abd9ef333",
+      "label": "NL-HaNA_1.10.29_5206_0034.jpg",
+      "order": 34,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/0655ac9a-a9c6-4fad-870b-4a4abd9ef333",
+        "mime_type": "image/jpeg",
+        "size": 4286798
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/0655ac9a-a9c6-4fad-870b-4a4abd9ef333",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/0655ac9a-a9c6-4fad-870b-4a4abd9ef333.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "280e6b3a-3afd-47cb-8404-4c1dfcba22da",
+      "label": "NL-HaNA_1.10.29_5206_0035.jpg",
+      "order": 35,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/280e6b3a-3afd-47cb-8404-4c1dfcba22da",
+        "mime_type": "image/jpeg",
+        "size": 3631026
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/280e6b3a-3afd-47cb-8404-4c1dfcba22da",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/280e6b3a-3afd-47cb-8404-4c1dfcba22da.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "d75e368c-5c75-431e-a06a-828e866f432e",
+      "label": "NL-HaNA_1.10.29_5206_0036.jpg",
+      "order": 36,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/d75e368c-5c75-431e-a06a-828e866f432e",
+        "mime_type": "image/jpeg",
+        "size": 4272884
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/d75e368c-5c75-431e-a06a-828e866f432e",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/d75e368c-5c75-431e-a06a-828e866f432e.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "889e81d4-0d82-432a-bba8-4617103f0835",
+      "label": "NL-HaNA_1.10.29_5206_0037.jpg",
+      "order": 37,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/889e81d4-0d82-432a-bba8-4617103f0835",
+        "mime_type": "image/jpeg",
+        "size": 3677066
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/889e81d4-0d82-432a-bba8-4617103f0835",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/889e81d4-0d82-432a-bba8-4617103f0835.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "e11c9a93-c1f3-486f-a32b-0dfbd5578ae6",
+      "label": "NL-HaNA_1.10.29_5206_0038.jpg",
+      "order": 38,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/e11c9a93-c1f3-486f-a32b-0dfbd5578ae6",
+        "mime_type": "image/jpeg",
+        "size": 4358361
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/e11c9a93-c1f3-486f-a32b-0dfbd5578ae6",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/e11c9a93-c1f3-486f-a32b-0dfbd5578ae6.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "beb7899e-8978-4258-8ff1-08eadad6d42c",
+      "label": "NL-HaNA_1.10.29_5206_0039.jpg",
+      "order": 39,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/beb7899e-8978-4258-8ff1-08eadad6d42c",
+        "mime_type": "image/jpeg",
+        "size": 3815305
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/beb7899e-8978-4258-8ff1-08eadad6d42c",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/beb7899e-8978-4258-8ff1-08eadad6d42c.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "88b08f8d-22ef-4733-b3a8-5759f27f49a1",
+      "label": "NL-HaNA_1.10.29_5206_0040.jpg",
+      "order": 40,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/88b08f8d-22ef-4733-b3a8-5759f27f49a1",
+        "mime_type": "image/jpeg",
+        "size": 4360306
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/88b08f8d-22ef-4733-b3a8-5759f27f49a1",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/88b08f8d-22ef-4733-b3a8-5759f27f49a1.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "5a6565d0-cd7f-4b0e-aa27-ed0882172da4",
+      "label": "NL-HaNA_1.10.29_5206_0041.jpg",
+      "order": 41,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/5a6565d0-cd7f-4b0e-aa27-ed0882172da4",
+        "mime_type": "image/jpeg",
+        "size": 4284284
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/5a6565d0-cd7f-4b0e-aa27-ed0882172da4",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/5a6565d0-cd7f-4b0e-aa27-ed0882172da4.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "508cd45a-14f8-4577-94c9-3d28ff8b0f93",
+      "label": "NL-HaNA_1.10.29_5206_0042.jpg",
+      "order": 42,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/508cd45a-14f8-4577-94c9-3d28ff8b0f93",
+        "mime_type": "image/jpeg",
+        "size": 4292799
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/508cd45a-14f8-4577-94c9-3d28ff8b0f93",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/508cd45a-14f8-4577-94c9-3d28ff8b0f93.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "48915a37-7835-4555-9fee-0f53079e08ea",
+      "label": "NL-HaNA_1.10.29_5206_0043.jpg",
+      "order": 43,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/48915a37-7835-4555-9fee-0f53079e08ea",
+        "mime_type": "image/jpeg",
+        "size": 4713680
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/48915a37-7835-4555-9fee-0f53079e08ea",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/48915a37-7835-4555-9fee-0f53079e08ea.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "e4ea1919-0900-402f-9e84-3c923f72500d",
+      "label": "NL-HaNA_1.10.29_5206_0044.jpg",
+      "order": 44,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/e4ea1919-0900-402f-9e84-3c923f72500d",
+        "mime_type": "image/jpeg",
+        "size": 3950952
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/e4ea1919-0900-402f-9e84-3c923f72500d",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/e4ea1919-0900-402f-9e84-3c923f72500d.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "502a7c0b-2e6f-4c06-af22-3282ef4a8e96",
+      "label": "NL-HaNA_1.10.29_5206_0045.jpg",
+      "order": 45,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/502a7c0b-2e6f-4c06-af22-3282ef4a8e96",
+        "mime_type": "image/jpeg",
+        "size": 3238894
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/502a7c0b-2e6f-4c06-af22-3282ef4a8e96",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/502a7c0b-2e6f-4c06-af22-3282ef4a8e96.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "fa18368f-b640-420a-9664-3a4d12fca6d7",
+      "label": "NL-HaNA_1.10.29_5206_0046.jpg",
+      "order": 46,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/fa18368f-b640-420a-9664-3a4d12fca6d7",
+        "mime_type": "image/jpeg",
+        "size": 4268454
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/fa18368f-b640-420a-9664-3a4d12fca6d7",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/fa18368f-b640-420a-9664-3a4d12fca6d7.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "b88030e6-0f0e-464a-b4aa-e8d39281d2a3",
+      "label": "NL-HaNA_1.10.29_5206_0047.jpg",
+      "order": 47,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/b88030e6-0f0e-464a-b4aa-e8d39281d2a3",
+        "mime_type": "image/jpeg",
+        "size": 4843320
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/b88030e6-0f0e-464a-b4aa-e8d39281d2a3",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/b88030e6-0f0e-464a-b4aa-e8d39281d2a3.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "8c78209b-9d6b-494c-8eec-5f46fc21c8e1",
+      "label": "NL-HaNA_1.10.29_5206_0048.jpg",
+      "order": 48,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/8c78209b-9d6b-494c-8eec-5f46fc21c8e1",
+        "mime_type": "image/jpeg",
+        "size": 4408047
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/8c78209b-9d6b-494c-8eec-5f46fc21c8e1",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/8c78209b-9d6b-494c-8eec-5f46fc21c8e1.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "ea6e37d2-33f3-4135-beb0-e00e5a3dd1d8",
+      "label": "NL-HaNA_1.10.29_5206_0049.jpg",
+      "order": 49,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/ea6e37d2-33f3-4135-beb0-e00e5a3dd1d8",
+        "mime_type": "image/jpeg",
+        "size": 4009011
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/ea6e37d2-33f3-4135-beb0-e00e5a3dd1d8",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/ea6e37d2-33f3-4135-beb0-e00e5a3dd1d8.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "3ec8507d-47c9-40fb-a444-de2755d4a53d",
+      "label": "NL-HaNA_1.10.29_5206_0050.jpg",
+      "order": 50,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/3ec8507d-47c9-40fb-a444-de2755d4a53d",
+        "mime_type": "image/jpeg",
+        "size": 4067205
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/3ec8507d-47c9-40fb-a444-de2755d4a53d",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/3ec8507d-47c9-40fb-a444-de2755d4a53d.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "717979d7-b619-4d6b-bd77-59c4b3e24a63",
+      "label": "NL-HaNA_1.10.29_5206_0051.jpg",
+      "order": 51,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/717979d7-b619-4d6b-bd77-59c4b3e24a63",
+        "mime_type": "image/jpeg",
+        "size": 5156095
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/717979d7-b619-4d6b-bd77-59c4b3e24a63",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/717979d7-b619-4d6b-bd77-59c4b3e24a63.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "04a0b5af-9e23-444f-ac80-457151c6d540",
+      "label": "NL-HaNA_1.10.29_5206_0052.jpg",
+      "order": 52,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/04a0b5af-9e23-444f-ac80-457151c6d540",
+        "mime_type": "image/jpeg",
+        "size": 4564939
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/04a0b5af-9e23-444f-ac80-457151c6d540",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/04a0b5af-9e23-444f-ac80-457151c6d540.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "03910d51-482a-4c9b-8e2c-66857cbb80c5",
+      "label": "NL-HaNA_1.10.29_5206_0053.jpg",
+      "order": 53,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/03910d51-482a-4c9b-8e2c-66857cbb80c5",
+        "mime_type": "image/jpeg",
+        "size": 3244184
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/03910d51-482a-4c9b-8e2c-66857cbb80c5",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/03910d51-482a-4c9b-8e2c-66857cbb80c5.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "acfd300e-03da-40de-93da-55bccff956b1",
+      "label": "NL-HaNA_1.10.29_5206_0054.jpg",
+      "order": 54,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/acfd300e-03da-40de-93da-55bccff956b1",
+        "mime_type": "image/jpeg",
+        "size": 4223657
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/acfd300e-03da-40de-93da-55bccff956b1",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/acfd300e-03da-40de-93da-55bccff956b1.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "55af8c29-5e4f-4385-92dd-53ce9e8ffda7",
+      "label": "NL-HaNA_1.10.29_5206_0055.jpg",
+      "order": 55,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/55af8c29-5e4f-4385-92dd-53ce9e8ffda7",
+        "mime_type": "image/jpeg",
+        "size": 3743368
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/55af8c29-5e4f-4385-92dd-53ce9e8ffda7",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/55af8c29-5e4f-4385-92dd-53ce9e8ffda7.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "b3246e3f-e454-42b9-8d31-a4a3bc3ed0e6",
+      "label": "NL-HaNA_1.10.29_5206_0056.jpg",
+      "order": 56,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/b3246e3f-e454-42b9-8d31-a4a3bc3ed0e6",
+        "mime_type": "image/jpeg",
+        "size": 4243911
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/b3246e3f-e454-42b9-8d31-a4a3bc3ed0e6",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/b3246e3f-e454-42b9-8d31-a4a3bc3ed0e6.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "d6156e9b-d84e-4539-a19c-7536ca2b2317",
+      "label": "NL-HaNA_1.10.29_5206_0057.jpg",
+      "order": 57,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/d6156e9b-d84e-4539-a19c-7536ca2b2317",
+        "mime_type": "image/jpeg",
+        "size": 5163297
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/d6156e9b-d84e-4539-a19c-7536ca2b2317",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/d6156e9b-d84e-4539-a19c-7536ca2b2317.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "0843f884-0fb6-4463-8782-e76510aaba8d",
+      "label": "NL-HaNA_1.10.29_5206_0058.jpg",
+      "order": 58,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/0843f884-0fb6-4463-8782-e76510aaba8d",
+        "mime_type": "image/jpeg",
+        "size": 4827887
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/0843f884-0fb6-4463-8782-e76510aaba8d",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/0843f884-0fb6-4463-8782-e76510aaba8d.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "89f64e7a-0f79-4735-8530-9398232dd6a2",
+      "label": "NL-HaNA_1.10.29_5206_0059.jpg",
+      "order": 59,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/89f64e7a-0f79-4735-8530-9398232dd6a2",
+        "mime_type": "image/jpeg",
+        "size": 3257995
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/89f64e7a-0f79-4735-8530-9398232dd6a2",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/89f64e7a-0f79-4735-8530-9398232dd6a2.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "ffeaec44-8f75-45fd-89f2-8bf029859416",
+      "label": "NL-HaNA_1.10.29_5206_0060.jpg",
+      "order": 60,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/ffeaec44-8f75-45fd-89f2-8bf029859416",
+        "mime_type": "image/jpeg",
+        "size": 4274931
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/ffeaec44-8f75-45fd-89f2-8bf029859416",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/ffeaec44-8f75-45fd-89f2-8bf029859416.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "010fa94c-a82c-4250-b1b4-e27ffbd23544",
+      "label": "NL-HaNA_1.10.29_5206_0061.jpg",
+      "order": 61,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/010fa94c-a82c-4250-b1b4-e27ffbd23544",
+        "mime_type": "image/jpeg",
+        "size": 4347602
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/010fa94c-a82c-4250-b1b4-e27ffbd23544",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/010fa94c-a82c-4250-b1b4-e27ffbd23544.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "fc1eb0be-3f8c-46fe-bc8d-7d472934bf60",
+      "label": "NL-HaNA_1.10.29_5206_0062.jpg",
+      "order": 62,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/fc1eb0be-3f8c-46fe-bc8d-7d472934bf60",
+        "mime_type": "image/jpeg",
+        "size": 4145327
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/fc1eb0be-3f8c-46fe-bc8d-7d472934bf60",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/fc1eb0be-3f8c-46fe-bc8d-7d472934bf60.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "860b0f64-b5c7-4875-84de-51da339e4546",
+      "label": "NL-HaNA_1.10.29_5206_0063.jpg",
+      "order": 63,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/860b0f64-b5c7-4875-84de-51da339e4546",
+        "mime_type": "image/jpeg",
+        "size": 3258439
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/860b0f64-b5c7-4875-84de-51da339e4546",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/860b0f64-b5c7-4875-84de-51da339e4546.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "1eadb1e1-6c2c-4f5d-85cf-77e0b005fb48",
+      "label": "NL-HaNA_1.10.29_5206_0064.jpg",
+      "order": 64,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/1eadb1e1-6c2c-4f5d-85cf-77e0b005fb48",
+        "mime_type": "image/jpeg",
+        "size": 4022376
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/1eadb1e1-6c2c-4f5d-85cf-77e0b005fb48",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/1eadb1e1-6c2c-4f5d-85cf-77e0b005fb48.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "2d2f39ca-6cda-421b-bb05-fee20709b095",
+      "label": "NL-HaNA_1.10.29_5206_0065.jpg",
+      "order": 65,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/2d2f39ca-6cda-421b-bb05-fee20709b095",
+        "mime_type": "image/jpeg",
+        "size": 3878451
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/2d2f39ca-6cda-421b-bb05-fee20709b095",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/2d2f39ca-6cda-421b-bb05-fee20709b095.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "2fe079a2-76ee-45d8-b20b-fd9f8210bbe0",
+      "label": "NL-HaNA_1.10.29_5206_0066.jpg",
+      "order": 66,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/2fe079a2-76ee-45d8-b20b-fd9f8210bbe0",
+        "mime_type": "image/jpeg",
+        "size": 4282669
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/2fe079a2-76ee-45d8-b20b-fd9f8210bbe0",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/2fe079a2-76ee-45d8-b20b-fd9f8210bbe0.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "55889c4d-4a80-4891-8ad8-c6d656e29e7b",
+      "label": "NL-HaNA_1.10.29_5206_0067.jpg",
+      "order": 67,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/55889c4d-4a80-4891-8ad8-c6d656e29e7b",
+        "mime_type": "image/jpeg",
+        "size": 4143490
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/55889c4d-4a80-4891-8ad8-c6d656e29e7b",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/55889c4d-4a80-4891-8ad8-c6d656e29e7b.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "d1f90d1a-d82b-43e8-b1ab-4a351ddc2eef",
+      "label": "NL-HaNA_1.10.29_5206_0068.jpg",
+      "order": 68,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/d1f90d1a-d82b-43e8-b1ab-4a351ddc2eef",
+        "mime_type": "image/jpeg",
+        "size": 4224201
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/d1f90d1a-d82b-43e8-b1ab-4a351ddc2eef",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/d1f90d1a-d82b-43e8-b1ab-4a351ddc2eef.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "dd7d362b-eda3-4678-9940-c269545d90f2",
+      "label": "NL-HaNA_1.10.29_5206_0069.jpg",
+      "order": 69,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/dd7d362b-eda3-4678-9940-c269545d90f2",
+        "mime_type": "image/jpeg",
+        "size": 4111823
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/dd7d362b-eda3-4678-9940-c269545d90f2",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/dd7d362b-eda3-4678-9940-c269545d90f2.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "e77e4edd-3a5e-4621-bb3a-9c81b185ae1d",
+      "label": "NL-HaNA_1.10.29_5206_0070.jpg",
+      "order": 70,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/e77e4edd-3a5e-4621-bb3a-9c81b185ae1d",
+        "mime_type": "image/jpeg",
+        "size": 3988103
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/e77e4edd-3a5e-4621-bb3a-9c81b185ae1d",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/e77e4edd-3a5e-4621-bb3a-9c81b185ae1d.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "a6b73bcd-4858-4d01-81af-d91b95a91725",
+      "label": "NL-HaNA_1.10.29_5206_0071.jpg",
+      "order": 71,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/a6b73bcd-4858-4d01-81af-d91b95a91725",
+        "mime_type": "image/jpeg",
+        "size": 3437075
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/a6b73bcd-4858-4d01-81af-d91b95a91725",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/a6b73bcd-4858-4d01-81af-d91b95a91725.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "d027d555-6843-4dff-a562-ef206a9ed388",
+      "label": "NL-HaNA_1.10.29_5206_0072.jpg",
+      "order": 72,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/d027d555-6843-4dff-a562-ef206a9ed388",
+        "mime_type": "image/jpeg",
+        "size": 3989261
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/d027d555-6843-4dff-a562-ef206a9ed388",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/d027d555-6843-4dff-a562-ef206a9ed388.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "0bbabeb0-7ff5-4c15-84d9-f9e6b0b4d7de",
+      "label": "NL-HaNA_1.10.29_5206_0073.jpg",
+      "order": 73,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/0bbabeb0-7ff5-4c15-84d9-f9e6b0b4d7de",
+        "mime_type": "image/jpeg",
+        "size": 4109568
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/0bbabeb0-7ff5-4c15-84d9-f9e6b0b4d7de",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/0bbabeb0-7ff5-4c15-84d9-f9e6b0b4d7de.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "f60f39dc-6f6e-497f-a47d-a6cdff8de6f3",
+      "label": "NL-HaNA_1.10.29_5206_0074.jpg",
+      "order": 74,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/f60f39dc-6f6e-497f-a47d-a6cdff8de6f3",
+        "mime_type": "image/jpeg",
+        "size": 4114709
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/f60f39dc-6f6e-497f-a47d-a6cdff8de6f3",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/f60f39dc-6f6e-497f-a47d-a6cdff8de6f3.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "4a4d6cad-45f5-45b6-bafa-9b714b889107",
+      "label": "NL-HaNA_1.10.29_5206_0075.jpg",
+      "order": 75,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/4a4d6cad-45f5-45b6-bafa-9b714b889107",
+        "mime_type": "image/jpeg",
+        "size": 3598311
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/4a4d6cad-45f5-45b6-bafa-9b714b889107",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/4a4d6cad-45f5-45b6-bafa-9b714b889107.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "f975dfcf-9e11-4337-842b-e5b8d1d21a32",
+      "label": "NL-HaNA_1.10.29_5206_0076.jpg",
+      "order": 76,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/f975dfcf-9e11-4337-842b-e5b8d1d21a32",
+        "mime_type": "image/jpeg",
+        "size": 3910268
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/f975dfcf-9e11-4337-842b-e5b8d1d21a32",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/f975dfcf-9e11-4337-842b-e5b8d1d21a32.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "01c785c1-2ad5-4422-80f5-2e458ad9dec1",
+      "label": "NL-HaNA_1.10.29_5206_0077.jpg",
+      "order": 77,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/01c785c1-2ad5-4422-80f5-2e458ad9dec1",
+        "mime_type": "image/jpeg",
+        "size": 4493703
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/01c785c1-2ad5-4422-80f5-2e458ad9dec1",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/01c785c1-2ad5-4422-80f5-2e458ad9dec1.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "4fafcc45-a108-47a8-af61-f01db3603e9b",
+      "label": "NL-HaNA_1.10.29_5206_0078.jpg",
+      "order": 78,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/4fafcc45-a108-47a8-af61-f01db3603e9b",
+        "mime_type": "image/jpeg",
+        "size": 4456252
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/4fafcc45-a108-47a8-af61-f01db3603e9b",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/4fafcc45-a108-47a8-af61-f01db3603e9b.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "43aecea5-2422-4b9d-9d44-97f3163ff9bd",
+      "label": "NL-HaNA_1.10.29_5206_0079.jpg",
+      "order": 79,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/43aecea5-2422-4b9d-9d44-97f3163ff9bd",
+        "mime_type": "image/jpeg",
+        "size": 3012550
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/43aecea5-2422-4b9d-9d44-97f3163ff9bd",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/43aecea5-2422-4b9d-9d44-97f3163ff9bd.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "f996da07-08f9-4de9-ab73-0558ebf1e87c",
+      "label": "NL-HaNA_1.10.29_5206_0080.jpg",
+      "order": 80,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/f996da07-08f9-4de9-ab73-0558ebf1e87c",
+        "mime_type": "image/jpeg",
+        "size": 3858405
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/f996da07-08f9-4de9-ab73-0558ebf1e87c",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/f996da07-08f9-4de9-ab73-0558ebf1e87c.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "bd2bf44d-7966-459d-a49d-69a998675014",
+      "label": "NL-HaNA_1.10.29_5206_0081.jpg",
+      "order": 81,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/bd2bf44d-7966-459d-a49d-69a998675014",
+        "mime_type": "image/jpeg",
+        "size": 4002124
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/bd2bf44d-7966-459d-a49d-69a998675014",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/bd2bf44d-7966-459d-a49d-69a998675014.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "3f24c576-13fc-4f23-ab5b-942cb48884b0",
+      "label": "NL-HaNA_1.10.29_5206_0082.jpg",
+      "order": 82,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/3f24c576-13fc-4f23-ab5b-942cb48884b0",
+        "mime_type": "image/jpeg",
+        "size": 4038745
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/3f24c576-13fc-4f23-ab5b-942cb48884b0",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/3f24c576-13fc-4f23-ab5b-942cb48884b0.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "49b6d41f-826a-4e9a-b48d-ee5e77cc9bb5",
+      "label": "NL-HaNA_1.10.29_5206_0083.jpg",
+      "order": 83,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/49b6d41f-826a-4e9a-b48d-ee5e77cc9bb5",
+        "mime_type": "image/jpeg",
+        "size": 3420309
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/49b6d41f-826a-4e9a-b48d-ee5e77cc9bb5",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/49b6d41f-826a-4e9a-b48d-ee5e77cc9bb5.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "9febc482-6ff0-4ec1-ac3a-ec3a026444ef",
+      "label": "NL-HaNA_1.10.29_5206_0084.jpg",
+      "order": 84,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/9febc482-6ff0-4ec1-ac3a-ec3a026444ef",
+        "mime_type": "image/jpeg",
+        "size": 3876719
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/9febc482-6ff0-4ec1-ac3a-ec3a026444ef",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/9febc482-6ff0-4ec1-ac3a-ec3a026444ef.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "b287cd57-d219-489d-b474-78d38a52d9fa",
+      "label": "NL-HaNA_1.10.29_5206_0085.jpg",
+      "order": 85,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/b287cd57-d219-489d-b474-78d38a52d9fa",
+        "mime_type": "image/jpeg",
+        "size": 3550676
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/b287cd57-d219-489d-b474-78d38a52d9fa",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/b287cd57-d219-489d-b474-78d38a52d9fa.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "5f497e28-3b54-4a62-9bbd-0f00d7ba3910",
+      "label": "NL-HaNA_1.10.29_5206_0086.jpg",
+      "order": 86,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/5f497e28-3b54-4a62-9bbd-0f00d7ba3910",
+        "mime_type": "image/jpeg",
+        "size": 4041184
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/5f497e28-3b54-4a62-9bbd-0f00d7ba3910",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/5f497e28-3b54-4a62-9bbd-0f00d7ba3910.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "8b99fc4c-d2eb-4a1d-8b58-ac5ce46649af",
+      "label": "NL-HaNA_1.10.29_5206_0087.jpg",
+      "order": 87,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/8b99fc4c-d2eb-4a1d-8b58-ac5ce46649af",
+        "mime_type": "image/jpeg",
+        "size": 3292500
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/8b99fc4c-d2eb-4a1d-8b58-ac5ce46649af",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/8b99fc4c-d2eb-4a1d-8b58-ac5ce46649af.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "d6dbbd57-ef1c-49f0-8e2c-986000291b87",
+      "label": "NL-HaNA_1.10.29_5206_0088.jpg",
+      "order": 88,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/d6dbbd57-ef1c-49f0-8e2c-986000291b87",
+        "mime_type": "image/jpeg",
+        "size": 3728329
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/d6dbbd57-ef1c-49f0-8e2c-986000291b87",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/d6dbbd57-ef1c-49f0-8e2c-986000291b87.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "c4970ca6-28bd-45f2-81da-ac958b6e633b",
+      "label": "NL-HaNA_1.10.29_5206_0089.jpg",
+      "order": 89,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/c4970ca6-28bd-45f2-81da-ac958b6e633b",
+        "mime_type": "image/jpeg",
+        "size": 3003162
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/c4970ca6-28bd-45f2-81da-ac958b6e633b",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/c4970ca6-28bd-45f2-81da-ac958b6e633b.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "cde0f24f-346b-4ce7-9f1e-6b8a09b72fcf",
+      "label": "NL-HaNA_1.10.29_5206_0090.jpg",
+      "order": 90,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/cde0f24f-346b-4ce7-9f1e-6b8a09b72fcf",
+        "mime_type": "image/jpeg",
+        "size": 3893919
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/cde0f24f-346b-4ce7-9f1e-6b8a09b72fcf",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/cde0f24f-346b-4ce7-9f1e-6b8a09b72fcf.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "0fa853da-1105-45a9-a6d0-d4d0562f9cfc",
+      "label": "NL-HaNA_1.10.29_5206_0091.jpg",
+      "order": 91,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/0fa853da-1105-45a9-a6d0-d4d0562f9cfc",
+        "mime_type": "image/jpeg",
+        "size": 3859293
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/0fa853da-1105-45a9-a6d0-d4d0562f9cfc",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/0fa853da-1105-45a9-a6d0-d4d0562f9cfc.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "87de1ff1-273f-491f-a48b-92a017dd51cd",
+      "label": "NL-HaNA_1.10.29_5206_0092.jpg",
+      "order": 92,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/87de1ff1-273f-491f-a48b-92a017dd51cd",
+        "mime_type": "image/jpeg",
+        "size": 4063317
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/87de1ff1-273f-491f-a48b-92a017dd51cd",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/87de1ff1-273f-491f-a48b-92a017dd51cd.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "c2770fec-1419-4243-b03e-eaef2133382f",
+      "label": "NL-HaNA_1.10.29_5206_0093.jpg",
+      "order": 93,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/c2770fec-1419-4243-b03e-eaef2133382f",
+        "mime_type": "image/jpeg",
+        "size": 4915155
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/c2770fec-1419-4243-b03e-eaef2133382f",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/c2770fec-1419-4243-b03e-eaef2133382f.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "30fa14f1-16e8-4673-a1c2-5da853f2dca4",
+      "label": "NL-HaNA_1.10.29_5206_0094.jpg",
+      "order": 94,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/30fa14f1-16e8-4673-a1c2-5da853f2dca4",
+        "mime_type": "image/jpeg",
+        "size": 3980690
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/30fa14f1-16e8-4673-a1c2-5da853f2dca4",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/30fa14f1-16e8-4673-a1c2-5da853f2dca4.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "5f9f92db-931f-4b19-97d7-81142a849ff7",
+      "label": "NL-HaNA_1.10.29_5206_0095.jpg",
+      "order": 95,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/5f9f92db-931f-4b19-97d7-81142a849ff7",
+        "mime_type": "image/jpeg",
+        "size": 4314701
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/5f9f92db-931f-4b19-97d7-81142a849ff7",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/5f9f92db-931f-4b19-97d7-81142a849ff7.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "b6cbdf90-85b2-4c6e-8d10-a2f224bb6ded",
+      "label": "NL-HaNA_1.10.29_5206_0096.jpg",
+      "order": 96,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/b6cbdf90-85b2-4c6e-8d10-a2f224bb6ded",
+        "mime_type": "image/jpeg",
+        "size": 4771789
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/b6cbdf90-85b2-4c6e-8d10-a2f224bb6ded",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/b6cbdf90-85b2-4c6e-8d10-a2f224bb6ded.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "caba60f5-8603-47f5-bbfb-cbdc0750f70f",
+      "label": "NL-HaNA_1.10.29_5206_0097.jpg",
+      "order": 97,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/caba60f5-8603-47f5-bbfb-cbdc0750f70f",
+        "mime_type": "image/jpeg",
+        "size": 3711375
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/caba60f5-8603-47f5-bbfb-cbdc0750f70f",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/caba60f5-8603-47f5-bbfb-cbdc0750f70f.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "d0a7f6e0-cded-449f-9e81-c613be66308f",
+      "label": "NL-HaNA_1.10.29_5206_0098.jpg",
+      "order": 98,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/d0a7f6e0-cded-449f-9e81-c613be66308f",
+        "mime_type": "image/jpeg",
+        "size": 2867794
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/d0a7f6e0-cded-449f-9e81-c613be66308f",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/d0a7f6e0-cded-449f-9e81-c613be66308f.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "aa657a9b-9579-4b7d-ab01-369e061ac38a",
+      "label": "NL-HaNA_1.10.29_5206_0099.jpg",
+      "order": 99,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/aa657a9b-9579-4b7d-ab01-369e061ac38a",
+        "mime_type": "image/jpeg",
+        "size": 2964492
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/aa657a9b-9579-4b7d-ab01-369e061ac38a",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/aa657a9b-9579-4b7d-ab01-369e061ac38a.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "573f9242-5c90-49e7-99eb-25618e1e9f29",
+      "label": "NL-HaNA_1.10.29_5206_0100.jpg",
+      "order": 100,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/573f9242-5c90-49e7-99eb-25618e1e9f29",
+        "mime_type": "image/jpeg",
+        "size": 3719694
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/573f9242-5c90-49e7-99eb-25618e1e9f29",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/573f9242-5c90-49e7-99eb-25618e1e9f29.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "c69bd0cf-42a6-411a-b3b0-0d522a440010",
+      "label": "NL-HaNA_1.10.29_5206_0101.jpg",
+      "order": 101,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/c69bd0cf-42a6-411a-b3b0-0d522a440010",
+        "mime_type": "image/jpeg",
+        "size": 3042719
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/c69bd0cf-42a6-411a-b3b0-0d522a440010",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/c69bd0cf-42a6-411a-b3b0-0d522a440010.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "cfbcd76e-cb62-48cf-9a4a-1eab6f07dbac",
+      "label": "NL-HaNA_1.10.29_5206_0102.jpg",
+      "order": 102,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/cfbcd76e-cb62-48cf-9a4a-1eab6f07dbac",
+        "mime_type": "image/jpeg",
+        "size": 3947198
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/cfbcd76e-cb62-48cf-9a4a-1eab6f07dbac",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/cfbcd76e-cb62-48cf-9a4a-1eab6f07dbac.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "3bf0df55-164f-4eb2-8a60-a54f49a4ac1a",
+      "label": "NL-HaNA_1.10.29_5206_0103.jpg",
+      "order": 103,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/3bf0df55-164f-4eb2-8a60-a54f49a4ac1a",
+        "mime_type": "image/jpeg",
+        "size": 4415063
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/3bf0df55-164f-4eb2-8a60-a54f49a4ac1a",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/3bf0df55-164f-4eb2-8a60-a54f49a4ac1a.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "8e550ee2-9407-46fe-954c-d901790221de",
+      "label": "NL-HaNA_1.10.29_5206_0104.jpg",
+      "order": 104,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/8e550ee2-9407-46fe-954c-d901790221de",
+        "mime_type": "image/jpeg",
+        "size": 3903259
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/8e550ee2-9407-46fe-954c-d901790221de",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/8e550ee2-9407-46fe-954c-d901790221de.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "404a9346-ef1d-4c49-b14c-042dfec03549",
+      "label": "NL-HaNA_1.10.29_5206_0105.jpg",
+      "order": 105,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/404a9346-ef1d-4c49-b14c-042dfec03549",
+        "mime_type": "image/jpeg",
+        "size": 4679546
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/404a9346-ef1d-4c49-b14c-042dfec03549",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/404a9346-ef1d-4c49-b14c-042dfec03549.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "4e17a3ed-567d-400d-a18b-430843deadd5",
+      "label": "NL-HaNA_1.10.29_5206_0106.jpg",
+      "order": 106,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/4e17a3ed-567d-400d-a18b-430843deadd5",
+        "mime_type": "image/jpeg",
+        "size": 4379301
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/4e17a3ed-567d-400d-a18b-430843deadd5",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/4e17a3ed-567d-400d-a18b-430843deadd5.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "6c6320ae-e892-42fe-b709-a309a0b019e9",
+      "label": "NL-HaNA_1.10.29_5206_0107.jpg",
+      "order": 107,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/6c6320ae-e892-42fe-b709-a309a0b019e9",
+        "mime_type": "image/jpeg",
+        "size": 3865562
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/6c6320ae-e892-42fe-b709-a309a0b019e9",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/6c6320ae-e892-42fe-b709-a309a0b019e9.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "569d9efc-db26-4995-bc26-caeb252c0943",
+      "label": "NL-HaNA_1.10.29_5206_0108.jpg",
+      "order": 108,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/569d9efc-db26-4995-bc26-caeb252c0943",
+        "mime_type": "image/jpeg",
+        "size": 2995566
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/569d9efc-db26-4995-bc26-caeb252c0943",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/569d9efc-db26-4995-bc26-caeb252c0943.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "16af045e-bcda-4391-95f4-1603d57b5e0d",
+      "label": "NL-HaNA_1.10.29_5206_0109.jpg",
+      "order": 109,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/16af045e-bcda-4391-95f4-1603d57b5e0d",
+        "mime_type": "image/jpeg",
+        "size": 3782411
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/16af045e-bcda-4391-95f4-1603d57b5e0d",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/16af045e-bcda-4391-95f4-1603d57b5e0d.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "d3bb2ee2-924d-41c2-8e66-04269adb564d",
+      "label": "NL-HaNA_1.10.29_5206_0110.jpg",
+      "order": 110,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/d3bb2ee2-924d-41c2-8e66-04269adb564d",
+        "mime_type": "image/jpeg",
+        "size": 4860825
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/d3bb2ee2-924d-41c2-8e66-04269adb564d",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/d3bb2ee2-924d-41c2-8e66-04269adb564d.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "121b9dc7-8b61-453d-9830-2f9950d250b2",
+      "label": "NL-HaNA_1.10.29_5206_0111.jpg",
+      "order": 111,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/121b9dc7-8b61-453d-9830-2f9950d250b2",
+        "mime_type": "image/jpeg",
+        "size": 3974089
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/121b9dc7-8b61-453d-9830-2f9950d250b2",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/121b9dc7-8b61-453d-9830-2f9950d250b2.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "3f2cb333-0748-43cb-9425-f763468c0f1e",
+      "label": "NL-HaNA_1.10.29_5206_0112.jpg",
+      "order": 112,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/3f2cb333-0748-43cb-9425-f763468c0f1e",
+        "mime_type": "image/jpeg",
+        "size": 3077812
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/3f2cb333-0748-43cb-9425-f763468c0f1e",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/3f2cb333-0748-43cb-9425-f763468c0f1e.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "10a5fbd3-3e6c-47ce-adbc-3170ceb79cec",
+      "label": "NL-HaNA_1.10.29_5206_0113.jpg",
+      "order": 113,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/10a5fbd3-3e6c-47ce-adbc-3170ceb79cec",
+        "mime_type": "image/jpeg",
+        "size": 3936732
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/10a5fbd3-3e6c-47ce-adbc-3170ceb79cec",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/10a5fbd3-3e6c-47ce-adbc-3170ceb79cec.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "a6d291d6-7a93-4439-be84-b0d4f297a25f",
+      "label": "NL-HaNA_1.10.29_5206_0114.jpg",
+      "order": 114,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/a6d291d6-7a93-4439-be84-b0d4f297a25f",
+        "mime_type": "image/jpeg",
+        "size": 3645105
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/a6d291d6-7a93-4439-be84-b0d4f297a25f",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/a6d291d6-7a93-4439-be84-b0d4f297a25f.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "7cfde2d7-ee60-4c5b-a316-693ccdc841a2",
+      "label": "NL-HaNA_1.10.29_5206_0115.jpg",
+      "order": 115,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/7cfde2d7-ee60-4c5b-a316-693ccdc841a2",
+        "mime_type": "image/jpeg",
+        "size": 4134915
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/7cfde2d7-ee60-4c5b-a316-693ccdc841a2",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/7cfde2d7-ee60-4c5b-a316-693ccdc841a2.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "a0355489-feb8-4cb0-ab22-8e286b568167",
+      "label": "NL-HaNA_1.10.29_5206_0116.jpg",
+      "order": 116,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/a0355489-feb8-4cb0-ab22-8e286b568167",
+        "mime_type": "image/jpeg",
+        "size": 3371164
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/a0355489-feb8-4cb0-ab22-8e286b568167",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/a0355489-feb8-4cb0-ab22-8e286b568167.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "e29185f0-3abe-4399-a1ee-4da6507272ec",
+      "label": "NL-HaNA_1.10.29_5206_0117.jpg",
+      "order": 117,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/e29185f0-3abe-4399-a1ee-4da6507272ec",
+        "mime_type": "image/jpeg",
+        "size": 3976063
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/e29185f0-3abe-4399-a1ee-4da6507272ec",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/e29185f0-3abe-4399-a1ee-4da6507272ec.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "0eb004b6-45e0-4cc1-af64-73438eb38b4f",
+      "label": "NL-HaNA_1.10.29_5206_0118.jpg",
+      "order": 118,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/0eb004b6-45e0-4cc1-af64-73438eb38b4f",
+        "mime_type": "image/jpeg",
+        "size": 3633491
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/0eb004b6-45e0-4cc1-af64-73438eb38b4f",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/0eb004b6-45e0-4cc1-af64-73438eb38b4f.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "f109813a-4c37-4d13-b138-6b17d7afd647",
+      "label": "NL-HaNA_1.10.29_5206_0119.jpg",
+      "order": 119,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/f109813a-4c37-4d13-b138-6b17d7afd647",
+        "mime_type": "image/jpeg",
+        "size": 4044862
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/f109813a-4c37-4d13-b138-6b17d7afd647",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/f109813a-4c37-4d13-b138-6b17d7afd647.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "f33129ab-b5db-47e5-b070-a567febcfb4d",
+      "label": "NL-HaNA_1.10.29_5206_0120.jpg",
+      "order": 120,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/f33129ab-b5db-47e5-b070-a567febcfb4d",
+        "mime_type": "image/jpeg",
+        "size": 4469949
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/f33129ab-b5db-47e5-b070-a567febcfb4d",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/f33129ab-b5db-47e5-b070-a567febcfb4d.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "8535dee4-29ba-48c6-9ece-01383bb3969a",
+      "label": "NL-HaNA_1.10.29_5206_0121.jpg",
+      "order": 121,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/8535dee4-29ba-48c6-9ece-01383bb3969a",
+        "mime_type": "image/jpeg",
+        "size": 4114227
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/8535dee4-29ba-48c6-9ece-01383bb3969a",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/8535dee4-29ba-48c6-9ece-01383bb3969a.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "94730b80-a150-42c7-931d-7abfbfafbe3c",
+      "label": "NL-HaNA_1.10.29_5206_0122.jpg",
+      "order": 122,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/94730b80-a150-42c7-931d-7abfbfafbe3c",
+        "mime_type": "image/jpeg",
+        "size": 4005985
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/94730b80-a150-42c7-931d-7abfbfafbe3c",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/94730b80-a150-42c7-931d-7abfbfafbe3c.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "5543aad4-0598-4fa2-a90e-cdc0934a4f55",
+      "label": "NL-HaNA_1.10.29_5206_0123.jpg",
+      "order": 123,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/5543aad4-0598-4fa2-a90e-cdc0934a4f55",
+        "mime_type": "image/jpeg",
+        "size": 3168944
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/5543aad4-0598-4fa2-a90e-cdc0934a4f55",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/5543aad4-0598-4fa2-a90e-cdc0934a4f55.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "668e57a2-44c2-4122-a2c2-6ee3d0c48800",
+      "label": "NL-HaNA_1.10.29_5206_0124.jpg",
+      "order": 124,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/668e57a2-44c2-4122-a2c2-6ee3d0c48800",
+        "mime_type": "image/jpeg",
+        "size": 3098088
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/668e57a2-44c2-4122-a2c2-6ee3d0c48800",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/668e57a2-44c2-4122-a2c2-6ee3d0c48800.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "7152ac18-a6fd-4ba5-90b4-3da45b1d10a1",
+      "label": "NL-HaNA_1.10.29_5206_0125.jpg",
+      "order": 125,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/7152ac18-a6fd-4ba5-90b4-3da45b1d10a1",
+        "mime_type": "image/jpeg",
+        "size": 4124072
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/7152ac18-a6fd-4ba5-90b4-3da45b1d10a1",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/7152ac18-a6fd-4ba5-90b4-3da45b1d10a1.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "582dfef8-e2e7-4521-a97b-eeeac9448882",
+      "label": "NL-HaNA_1.10.29_5206_0126.jpg",
+      "order": 126,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/582dfef8-e2e7-4521-a97b-eeeac9448882",
+        "mime_type": "image/jpeg",
+        "size": 4161471
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/582dfef8-e2e7-4521-a97b-eeeac9448882",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/582dfef8-e2e7-4521-a97b-eeeac9448882.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "965f03d9-1bcc-4fd1-9a2c-e3aa6c8a5b57",
+      "label": "NL-HaNA_1.10.29_5206_0127.jpg",
+      "order": 127,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/965f03d9-1bcc-4fd1-9a2c-e3aa6c8a5b57",
+        "mime_type": "image/jpeg",
+        "size": 4169858
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/965f03d9-1bcc-4fd1-9a2c-e3aa6c8a5b57",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/965f03d9-1bcc-4fd1-9a2c-e3aa6c8a5b57.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "3046402f-ca19-4f8e-a954-77b68d4893a1",
+      "label": "NL-HaNA_1.10.29_5206_0128.jpg",
+      "order": 128,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/3046402f-ca19-4f8e-a954-77b68d4893a1",
+        "mime_type": "image/jpeg",
+        "size": 3647699
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/3046402f-ca19-4f8e-a954-77b68d4893a1",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/3046402f-ca19-4f8e-a954-77b68d4893a1.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "f974c0f1-7db1-4dad-a3ef-f088b36881ee",
+      "label": "NL-HaNA_1.10.29_5206_0129.jpg",
+      "order": 129,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/f974c0f1-7db1-4dad-a3ef-f088b36881ee",
+        "mime_type": "image/jpeg",
+        "size": 4109473
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/f974c0f1-7db1-4dad-a3ef-f088b36881ee",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/f974c0f1-7db1-4dad-a3ef-f088b36881ee.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "ab98b75c-ddb1-4c21-9e68-22c26bc36100",
+      "label": "NL-HaNA_1.10.29_5206_0130.jpg",
+      "order": 130,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/ab98b75c-ddb1-4c21-9e68-22c26bc36100",
+        "mime_type": "image/jpeg",
+        "size": 5006757
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/ab98b75c-ddb1-4c21-9e68-22c26bc36100",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/ab98b75c-ddb1-4c21-9e68-22c26bc36100.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "d7c789fd-4994-43e0-90ee-c15ad0064c43",
+      "label": "NL-HaNA_1.10.29_5206_0131.jpg",
+      "order": 131,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/d7c789fd-4994-43e0-90ee-c15ad0064c43",
+        "mime_type": "image/jpeg",
+        "size": 5090741
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/d7c789fd-4994-43e0-90ee-c15ad0064c43",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/d7c789fd-4994-43e0-90ee-c15ad0064c43.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "dc615ab8-fcd6-4a6b-8e29-0131a771a56c",
+      "label": "NL-HaNA_1.10.29_5206_0132.jpg",
+      "order": 132,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/dc615ab8-fcd6-4a6b-8e29-0131a771a56c",
+        "mime_type": "image/jpeg",
+        "size": 3794835
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/dc615ab8-fcd6-4a6b-8e29-0131a771a56c",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/dc615ab8-fcd6-4a6b-8e29-0131a771a56c.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "3858a502-94ce-41a5-9b49-9452fe894d9b",
+      "label": "NL-HaNA_1.10.29_5206_0133.jpg",
+      "order": 133,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/3858a502-94ce-41a5-9b49-9452fe894d9b",
+        "mime_type": "image/jpeg",
+        "size": 3153630
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/3858a502-94ce-41a5-9b49-9452fe894d9b",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/3858a502-94ce-41a5-9b49-9452fe894d9b.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "a7470e95-226a-4af3-bf84-81809ffc7aa3",
+      "label": "NL-HaNA_1.10.29_5206_0134.jpg",
+      "order": 134,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/a7470e95-226a-4af3-bf84-81809ffc7aa3",
+        "mime_type": "image/jpeg",
+        "size": 4115008
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/a7470e95-226a-4af3-bf84-81809ffc7aa3",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/a7470e95-226a-4af3-bf84-81809ffc7aa3.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "d09111e9-4b2d-4df4-898e-42893c8a7ae9",
+      "label": "NL-HaNA_1.10.29_5206_0135.jpg",
+      "order": 135,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/d09111e9-4b2d-4df4-898e-42893c8a7ae9",
+        "mime_type": "image/jpeg",
+        "size": 3863387
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/d09111e9-4b2d-4df4-898e-42893c8a7ae9",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/d09111e9-4b2d-4df4-898e-42893c8a7ae9.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "738833ef-ecae-4eca-a9b9-8063a2174713",
+      "label": "NL-HaNA_1.10.29_5206_0136.jpg",
+      "order": 136,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/738833ef-ecae-4eca-a9b9-8063a2174713",
+        "mime_type": "image/jpeg",
+        "size": 3165107
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/738833ef-ecae-4eca-a9b9-8063a2174713",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/738833ef-ecae-4eca-a9b9-8063a2174713.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "8416621b-a184-4dd0-845e-fd99791a3a5f",
+      "label": "NL-HaNA_1.10.29_5206_0137.jpg",
+      "order": 137,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/8416621b-a184-4dd0-845e-fd99791a3a5f",
+        "mime_type": "image/jpeg",
+        "size": 4102308
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/8416621b-a184-4dd0-845e-fd99791a3a5f",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/8416621b-a184-4dd0-845e-fd99791a3a5f.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "a5b5bb9f-8ea3-44e5-8f28-a3dd18f68cb2",
+      "label": "NL-HaNA_1.10.29_5206_0138.jpg",
+      "order": 138,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/a5b5bb9f-8ea3-44e5-8f28-a3dd18f68cb2",
+        "mime_type": "image/jpeg",
+        "size": 4469903
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/a5b5bb9f-8ea3-44e5-8f28-a3dd18f68cb2",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/a5b5bb9f-8ea3-44e5-8f28-a3dd18f68cb2.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "7cd81231-74c6-4cdf-b601-cc125522d82d",
+      "label": "NL-HaNA_1.10.29_5206_0139.jpg",
+      "order": 139,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/7cd81231-74c6-4cdf-b601-cc125522d82d",
+        "mime_type": "image/jpeg",
+        "size": 4058293
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/7cd81231-74c6-4cdf-b601-cc125522d82d",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/7cd81231-74c6-4cdf-b601-cc125522d82d.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "c34b417a-410c-4b9f-a67a-56c852db57ee",
+      "label": "NL-HaNA_1.10.29_5206_0140.jpg",
+      "order": 140,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/c34b417a-410c-4b9f-a67a-56c852db57ee",
+        "mime_type": "image/jpeg",
+        "size": 3394261
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/c34b417a-410c-4b9f-a67a-56c852db57ee",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/c34b417a-410c-4b9f-a67a-56c852db57ee.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "8f05bbb2-b7be-4ec0-827f-1776e4434568",
+      "label": "NL-HaNA_1.10.29_5206_0141.jpg",
+      "order": 141,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/8f05bbb2-b7be-4ec0-827f-1776e4434568",
+        "mime_type": "image/jpeg",
+        "size": 4140032
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/8f05bbb2-b7be-4ec0-827f-1776e4434568",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/8f05bbb2-b7be-4ec0-827f-1776e4434568.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "ca622ba3-ea7e-4287-bcec-4925106d42a6",
+      "label": "NL-HaNA_1.10.29_5206_0142.jpg",
+      "order": 142,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/ca622ba3-ea7e-4287-bcec-4925106d42a6",
+        "mime_type": "image/jpeg",
+        "size": 4351964
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/ca622ba3-ea7e-4287-bcec-4925106d42a6",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/ca622ba3-ea7e-4287-bcec-4925106d42a6.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "df4d4c90-3fe3-4612-af5e-b0b02eb82a74",
+      "label": "NL-HaNA_1.10.29_5206_0143.jpg",
+      "order": 143,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/df4d4c90-3fe3-4612-af5e-b0b02eb82a74",
+        "mime_type": "image/jpeg",
+        "size": 4443714
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/df4d4c90-3fe3-4612-af5e-b0b02eb82a74",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/df4d4c90-3fe3-4612-af5e-b0b02eb82a74.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "fdafb03f-b8f3-4931-80bc-edcb7f2fa204",
+      "label": "NL-HaNA_1.10.29_5206_0144.jpg",
+      "order": 144,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/fdafb03f-b8f3-4931-80bc-edcb7f2fa204",
+        "mime_type": "image/jpeg",
+        "size": 3227549
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/fdafb03f-b8f3-4931-80bc-edcb7f2fa204",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/fdafb03f-b8f3-4931-80bc-edcb7f2fa204.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "1edb6f19-7d86-48d2-8aaf-e83f16995396",
+      "label": "NL-HaNA_1.10.29_5206_0145.jpg",
+      "order": 145,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/1edb6f19-7d86-48d2-8aaf-e83f16995396",
+        "mime_type": "image/jpeg",
+        "size": 4043436
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/1edb6f19-7d86-48d2-8aaf-e83f16995396",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/1edb6f19-7d86-48d2-8aaf-e83f16995396.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "e1b7c02c-f4f8-483c-b93f-3a1e065d925c",
+      "label": "NL-HaNA_1.10.29_5206_0146.jpg",
+      "order": 146,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/e1b7c02c-f4f8-483c-b93f-3a1e065d925c",
+        "mime_type": "image/jpeg",
+        "size": 3783124
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/e1b7c02c-f4f8-483c-b93f-3a1e065d925c",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/e1b7c02c-f4f8-483c-b93f-3a1e065d925c.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "56803a11-2b73-446f-b893-22b40f16ab3b",
+      "label": "NL-HaNA_1.10.29_5206_0147.jpg",
+      "order": 147,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/56803a11-2b73-446f-b893-22b40f16ab3b",
+        "mime_type": "image/jpeg",
+        "size": 3909703
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/56803a11-2b73-446f-b893-22b40f16ab3b",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/56803a11-2b73-446f-b893-22b40f16ab3b.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "c1d7c5f4-f0d3-4302-a875-d7e0cebe1b32",
+      "label": "NL-HaNA_1.10.29_5206_0148.jpg",
+      "order": 148,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/c1d7c5f4-f0d3-4302-a875-d7e0cebe1b32",
+        "mime_type": "image/jpeg",
+        "size": 3829847
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/c1d7c5f4-f0d3-4302-a875-d7e0cebe1b32",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/c1d7c5f4-f0d3-4302-a875-d7e0cebe1b32.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "abfd580e-5f8b-4e86-8cde-c69e8260ae76",
+      "label": "NL-HaNA_1.10.29_5206_0149.jpg",
+      "order": 149,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/abfd580e-5f8b-4e86-8cde-c69e8260ae76",
+        "mime_type": "image/jpeg",
+        "size": 3993070
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/abfd580e-5f8b-4e86-8cde-c69e8260ae76",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/abfd580e-5f8b-4e86-8cde-c69e8260ae76.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "e771c92a-a96c-434a-a606-0f27c45de631",
+      "label": "NL-HaNA_1.10.29_5206_0150.jpg",
+      "order": 150,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/e771c92a-a96c-434a-a606-0f27c45de631",
+        "mime_type": "image/jpeg",
+        "size": 3512778
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/e771c92a-a96c-434a-a606-0f27c45de631",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/e771c92a-a96c-434a-a606-0f27c45de631.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "896765ff-6948-4e26-abdd-9e5bd2c9236f",
+      "label": "NL-HaNA_1.10.29_5206_0151.jpg",
+      "order": 151,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/896765ff-6948-4e26-abdd-9e5bd2c9236f",
+        "mime_type": "image/jpeg",
+        "size": 4134842
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/896765ff-6948-4e26-abdd-9e5bd2c9236f",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/896765ff-6948-4e26-abdd-9e5bd2c9236f.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "942d3ba6-b6da-4a66-8a67-17007aef7f07",
+      "label": "NL-HaNA_1.10.29_5206_0152.jpg",
+      "order": 152,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/942d3ba6-b6da-4a66-8a67-17007aef7f07",
+        "mime_type": "image/jpeg",
+        "size": 3850041
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/942d3ba6-b6da-4a66-8a67-17007aef7f07",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/942d3ba6-b6da-4a66-8a67-17007aef7f07.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "49647df9-7907-429b-88aa-781be15b868d",
+      "label": "NL-HaNA_1.10.29_5206_0153.jpg",
+      "order": 153,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/49647df9-7907-429b-88aa-781be15b868d",
+        "mime_type": "image/jpeg",
+        "size": 4122462
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/49647df9-7907-429b-88aa-781be15b868d",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/49647df9-7907-429b-88aa-781be15b868d.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "c4fcb9b5-36f5-4f25-a88a-ee151b46d8d1",
+      "label": "NL-HaNA_1.10.29_5206_0154.jpg",
+      "order": 154,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/c4fcb9b5-36f5-4f25-a88a-ee151b46d8d1",
+        "mime_type": "image/jpeg",
+        "size": 4600439
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/c4fcb9b5-36f5-4f25-a88a-ee151b46d8d1",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/c4fcb9b5-36f5-4f25-a88a-ee151b46d8d1.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "eab95141-5012-4455-a361-c590c87ed3a7",
+      "label": "NL-HaNA_1.10.29_5206_0155.jpg",
+      "order": 155,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/eab95141-5012-4455-a361-c590c87ed3a7",
+        "mime_type": "image/jpeg",
+        "size": 3227704
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/eab95141-5012-4455-a361-c590c87ed3a7",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/eab95141-5012-4455-a361-c590c87ed3a7.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "5baf9517-67e8-44a4-804f-9afb07856d31",
+      "label": "NL-HaNA_1.10.29_5206_0156.jpg",
+      "order": 156,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/5baf9517-67e8-44a4-804f-9afb07856d31",
+        "mime_type": "image/jpeg",
+        "size": 2948042
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/5baf9517-67e8-44a4-804f-9afb07856d31",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/5baf9517-67e8-44a4-804f-9afb07856d31.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "91b710bc-ec95-40e7-8533-89afceba2f96",
+      "label": "NL-HaNA_1.10.29_5206_0157.jpg",
+      "order": 157,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/91b710bc-ec95-40e7-8533-89afceba2f96",
+        "mime_type": "image/jpeg",
+        "size": 3633289
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/91b710bc-ec95-40e7-8533-89afceba2f96",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/91b710bc-ec95-40e7-8533-89afceba2f96.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "ac3dc47a-0abb-4de7-a264-afdc9e520844",
+      "label": "NL-HaNA_1.10.29_5206_0158.jpg",
+      "order": 158,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/ac3dc47a-0abb-4de7-a264-afdc9e520844",
+        "mime_type": "image/jpeg",
+        "size": 3067598
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/ac3dc47a-0abb-4de7-a264-afdc9e520844",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/ac3dc47a-0abb-4de7-a264-afdc9e520844.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "1ec8139b-ddbb-417f-856b-48699bc3dec0",
+      "label": "NL-HaNA_1.10.29_5206_0159.jpg",
+      "order": 159,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/1ec8139b-ddbb-417f-856b-48699bc3dec0",
+        "mime_type": "image/jpeg",
+        "size": 4100298
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/1ec8139b-ddbb-417f-856b-48699bc3dec0",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/1ec8139b-ddbb-417f-856b-48699bc3dec0.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "42355829-43fe-4cc8-a2d7-373a686ca708",
+      "label": "NL-HaNA_1.10.29_5206_0160.jpg",
+      "order": 160,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/42355829-43fe-4cc8-a2d7-373a686ca708",
+        "mime_type": "image/jpeg",
+        "size": 4725959
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/42355829-43fe-4cc8-a2d7-373a686ca708",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/42355829-43fe-4cc8-a2d7-373a686ca708.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "6c94e7f1-cbea-4d0b-a7cc-436127a2870e",
+      "label": "NL-HaNA_1.10.29_5206_0161.jpg",
+      "order": 161,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/6c94e7f1-cbea-4d0b-a7cc-436127a2870e",
+        "mime_type": "image/jpeg",
+        "size": 4414530
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/6c94e7f1-cbea-4d0b-a7cc-436127a2870e",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/6c94e7f1-cbea-4d0b-a7cc-436127a2870e.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "e0de72ee-912e-4fb3-93f8-bd63affd2a21",
+      "label": "NL-HaNA_1.10.29_5206_0162.jpg",
+      "order": 162,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/e0de72ee-912e-4fb3-93f8-bd63affd2a21",
+        "mime_type": "image/jpeg",
+        "size": 3569712
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/e0de72ee-912e-4fb3-93f8-bd63affd2a21",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/e0de72ee-912e-4fb3-93f8-bd63affd2a21.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "7460bdca-869f-4a70-9453-c5622d35a4bf",
+      "label": "NL-HaNA_1.10.29_5206_0163.jpg",
+      "order": 163,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/7460bdca-869f-4a70-9453-c5622d35a4bf",
+        "mime_type": "image/jpeg",
+        "size": 3923254
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/7460bdca-869f-4a70-9453-c5622d35a4bf",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/7460bdca-869f-4a70-9453-c5622d35a4bf.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "309b1ead-593b-4ed4-8435-eb1205b46b70",
+      "label": "NL-HaNA_1.10.29_5206_0164.jpg",
+      "order": 164,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/309b1ead-593b-4ed4-8435-eb1205b46b70",
+        "mime_type": "image/jpeg",
+        "size": 3323435
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/309b1ead-593b-4ed4-8435-eb1205b46b70",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/309b1ead-593b-4ed4-8435-eb1205b46b70.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "84bc470b-2bd9-4fd2-bac2-ca25425478a0",
+      "label": "NL-HaNA_1.10.29_5206_0165.jpg",
+      "order": 165,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/84bc470b-2bd9-4fd2-bac2-ca25425478a0",
+        "mime_type": "image/jpeg",
+        "size": 4308262
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/84bc470b-2bd9-4fd2-bac2-ca25425478a0",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/84bc470b-2bd9-4fd2-bac2-ca25425478a0.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "4eb645ea-6a14-4a12-821d-986382e62eb1",
+      "label": "NL-HaNA_1.10.29_5206_0166.jpg",
+      "order": 166,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/4eb645ea-6a14-4a12-821d-986382e62eb1",
+        "mime_type": "image/jpeg",
+        "size": 3972080
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/4eb645ea-6a14-4a12-821d-986382e62eb1",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/4eb645ea-6a14-4a12-821d-986382e62eb1.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "c2cbd44a-89ce-4c7c-aee1-05a583462e8d",
+      "label": "NL-HaNA_1.10.29_5206_0167.jpg",
+      "order": 167,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/c2cbd44a-89ce-4c7c-aee1-05a583462e8d",
+        "mime_type": "image/jpeg",
+        "size": 3953969
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/c2cbd44a-89ce-4c7c-aee1-05a583462e8d",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/c2cbd44a-89ce-4c7c-aee1-05a583462e8d.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "0d07ec68-cb2b-415a-b28a-425b2d77e54a",
+      "label": "NL-HaNA_1.10.29_5206_0168.jpg",
+      "order": 168,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/0d07ec68-cb2b-415a-b28a-425b2d77e54a",
+        "mime_type": "image/jpeg",
+        "size": 3332863
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/0d07ec68-cb2b-415a-b28a-425b2d77e54a",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/0d07ec68-cb2b-415a-b28a-425b2d77e54a.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "2edf5bec-6388-4209-b8c5-79187bb0720b",
+      "label": "NL-HaNA_1.10.29_5206_0169.jpg",
+      "order": 169,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/2edf5bec-6388-4209-b8c5-79187bb0720b",
+        "mime_type": "image/jpeg",
+        "size": 4173619
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/2edf5bec-6388-4209-b8c5-79187bb0720b",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/2edf5bec-6388-4209-b8c5-79187bb0720b.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "45673bb2-73e6-4a47-b650-5694f04fa8a8",
+      "label": "NL-HaNA_1.10.29_5206_0170.jpg",
+      "order": 170,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/45673bb2-73e6-4a47-b650-5694f04fa8a8",
+        "mime_type": "image/jpeg",
+        "size": 3805639
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/45673bb2-73e6-4a47-b650-5694f04fa8a8",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/45673bb2-73e6-4a47-b650-5694f04fa8a8.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "3b3efc85-d1c9-44c9-b728-a05aad4f89bd",
+      "label": "NL-HaNA_1.10.29_5206_0171.jpg",
+      "order": 171,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/3b3efc85-d1c9-44c9-b728-a05aad4f89bd",
+        "mime_type": "image/jpeg",
+        "size": 4091099
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/3b3efc85-d1c9-44c9-b728-a05aad4f89bd",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/3b3efc85-d1c9-44c9-b728-a05aad4f89bd.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "535bd6be-694b-4dbf-816d-0577a0dfbc0e",
+      "label": "NL-HaNA_1.10.29_5206_0172.jpg",
+      "order": 172,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/535bd6be-694b-4dbf-816d-0577a0dfbc0e",
+        "mime_type": "image/jpeg",
+        "size": 3387835
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/535bd6be-694b-4dbf-816d-0577a0dfbc0e",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/535bd6be-694b-4dbf-816d-0577a0dfbc0e.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "d38ad807-0707-4387-a9b5-9f754758d3fc",
+      "label": "NL-HaNA_1.10.29_5206_0173.jpg",
+      "order": 173,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/d38ad807-0707-4387-a9b5-9f754758d3fc",
+        "mime_type": "image/jpeg",
+        "size": 4197925
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/d38ad807-0707-4387-a9b5-9f754758d3fc",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/d38ad807-0707-4387-a9b5-9f754758d3fc.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "863d8073-bbdd-4ff7-bd39-a1049bbeca53",
+      "label": "NL-HaNA_1.10.29_5206_0174.jpg",
+      "order": 174,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/863d8073-bbdd-4ff7-bd39-a1049bbeca53",
+        "mime_type": "image/jpeg",
+        "size": 3227786
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/863d8073-bbdd-4ff7-bd39-a1049bbeca53",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/863d8073-bbdd-4ff7-bd39-a1049bbeca53.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "1199bd18-0d81-4928-aca0-ab433c4fc6a5",
+      "label": "NL-HaNA_1.10.29_5206_0175.jpg",
+      "order": 175,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/1199bd18-0d81-4928-aca0-ab433c4fc6a5",
+        "mime_type": "image/jpeg",
+        "size": 4134620
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/1199bd18-0d81-4928-aca0-ab433c4fc6a5",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/1199bd18-0d81-4928-aca0-ab433c4fc6a5.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "126d734b-f6f0-4c67-874c-a35097619fb1",
+      "label": "NL-HaNA_1.10.29_5206_0176.jpg",
+      "order": 176,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/126d734b-f6f0-4c67-874c-a35097619fb1",
+        "mime_type": "image/jpeg",
+        "size": 4291114
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/126d734b-f6f0-4c67-874c-a35097619fb1",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/126d734b-f6f0-4c67-874c-a35097619fb1.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "6312ab53-0724-4c8a-aa53-5a13ce56946c",
+      "label": "NL-HaNA_1.10.29_5206_0177.jpg",
+      "order": 177,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/6312ab53-0724-4c8a-aa53-5a13ce56946c",
+        "mime_type": "image/jpeg",
+        "size": 3460220
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/6312ab53-0724-4c8a-aa53-5a13ce56946c",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/6312ab53-0724-4c8a-aa53-5a13ce56946c.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "7f6de32b-87a6-4854-b178-2ac7958d6e53",
+      "label": "NL-HaNA_1.10.29_5206_0178.jpg",
+      "order": 178,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/7f6de32b-87a6-4854-b178-2ac7958d6e53",
+        "mime_type": "image/jpeg",
+        "size": 3260972
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/7f6de32b-87a6-4854-b178-2ac7958d6e53",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/7f6de32b-87a6-4854-b178-2ac7958d6e53.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "f74e32b7-2703-4e1c-85c0-69a6ad7643ff",
+      "label": "NL-HaNA_1.10.29_5206_0179.jpg",
+      "order": 179,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/f74e32b7-2703-4e1c-85c0-69a6ad7643ff",
+        "mime_type": "image/jpeg",
+        "size": 4236172
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/f74e32b7-2703-4e1c-85c0-69a6ad7643ff",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/f74e32b7-2703-4e1c-85c0-69a6ad7643ff.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "7acaec99-d324-4546-a0ef-4c04f17e75d4",
+      "label": "NL-HaNA_1.10.29_5206_0180.jpg",
+      "order": 180,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/7acaec99-d324-4546-a0ef-4c04f17e75d4",
+        "mime_type": "image/jpeg",
+        "size": 3303677
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/7acaec99-d324-4546-a0ef-4c04f17e75d4",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/7acaec99-d324-4546-a0ef-4c04f17e75d4.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "7b0d0675-46bd-4bc0-a562-b7a92914b046",
+      "label": "NL-HaNA_1.10.29_5206_0181.jpg",
+      "order": 181,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/7b0d0675-46bd-4bc0-a562-b7a92914b046",
+        "mime_type": "image/jpeg",
+        "size": 4259645
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/7b0d0675-46bd-4bc0-a562-b7a92914b046",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/7b0d0675-46bd-4bc0-a562-b7a92914b046.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "0b596e96-3772-490d-a252-0ee6ef53699d",
+      "label": "NL-HaNA_1.10.29_5206_0182.jpg",
+      "order": 182,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/0b596e96-3772-490d-a252-0ee6ef53699d",
+        "mime_type": "image/jpeg",
+        "size": 3822035
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/0b596e96-3772-490d-a252-0ee6ef53699d",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/0b596e96-3772-490d-a252-0ee6ef53699d.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "9b4ba4e4-b45f-4b43-a98d-8ab0fbd3e99c",
+      "label": "NL-HaNA_1.10.29_5206_0183.jpg",
+      "order": 183,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/9b4ba4e4-b45f-4b43-a98d-8ab0fbd3e99c",
+        "mime_type": "image/jpeg",
+        "size": 4328482
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/9b4ba4e4-b45f-4b43-a98d-8ab0fbd3e99c",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/9b4ba4e4-b45f-4b43-a98d-8ab0fbd3e99c.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "63c07242-f15d-4734-baab-5061ac764291",
+      "label": "NL-HaNA_1.10.29_5206_0184.jpg",
+      "order": 184,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/63c07242-f15d-4734-baab-5061ac764291",
+        "mime_type": "image/jpeg",
+        "size": 4084770
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/63c07242-f15d-4734-baab-5061ac764291",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/63c07242-f15d-4734-baab-5061ac764291.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    },
+    {
+      "id": "4d2217bf-0b21-4f69-9c8d-ff23b43392f2",
+      "label": "NL-HaNA_1.10.29_5206_0185.jpg",
+      "order": 185,
+      "default": {
+        "url": "https://service.archief.nl/api/file/v1/default/4d2217bf-0b21-4f69-9c8d-ff23b43392f2",
+        "mime_type": "image/jpeg",
+        "size": 1788513
+      },
+      "thumbnail": {
+        "url": "https://service.archief.nl/api/file/v1/thumb/4d2217bf-0b21-4f69-9c8d-ff23b43392f2",
+        "mime_type": "image/jpeg"
+      },
+      "iiif": {
+        "url": "https://service.archief.nl/iip/iipsrv?IIIF=44/f7/cf/68/98/ef/43/da/bd/75/46/9d/40/c0/9b/73/4d2217bf-0b21-4f69-9c8d-ff23b43392f2.jp2/info.json",
+        "mime_type": "application/ld+json"
+      }
+    }
+  ]
+}

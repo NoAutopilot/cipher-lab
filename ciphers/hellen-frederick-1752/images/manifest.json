@@ -1,0 +1,23 @@
+{
+  "source": "https://www.nationaalarchief.nl/onderzoeken/archief/1.10.29/invnr/5206",
+  "fetched": "25 Sept 2026",
+  "note": "Full scan list (all 185 scans, id/label/order/thumbnail+default+iiif URLs) is embedded directly in the finding-aid page's drupal-settings-json (one HTTP request, no pagination needed) and saved verbatim as manifest_na5206.json in this folder.",
+  "unittitle": "Van Von Hellen ('Sieur H'), Pruisisch zaakgelastigde bij de Republiek, 1752-1753",
+  "eadid": "1.10.29",
+  "unitid": "5206",
+  "on_disk": {
+    "thumbs/": "all 185 scans, thumbnail resolution (~169x256 to ~256x204 px), one file per scan order NNN.jpg",
+    "full/": "full-resolution (default) fetch for 9 sample scans used to read date headers: 001,002,003,030,070,110,150,183,184.jpg, plus crop_top_*.jpg (top ~20% of each, isolating the item-number/date header for legibility)"
+  },
+  "date_header_readings": [
+    {"order": 1, "item_no": 83, "date": "24 October 1752", "note": "first scan of the whole inventory item; continues on order 2 (no header)"},
+    {"order": 3, "item_no": 86, "date": "27 October 1752"},
+    {"order": 30, "item_no": 98, "date": "8 December 1752"},
+    {"order": 70, "item_no": 30, "date": "12 February 1753", "note": "item counter has reset for the new year"},
+    {"order": 110, "item_no": "Ad Relat. 26", "date": "30 March 1753", "note": "a postscript/addendum item, separately numbered"},
+    {"order": 150, "date": "not visible on this scan (mid-letter continuation page)"},
+    {"order": 183, "item_no": 59, "date": "24 July 1753"},
+    {"order": 184, "date": "continuation of item 59"}
+  ],
+  "conclusion": "Chronological throughout, item numbers reset at each calendar year boundary. Whole-volume date span confirmed as 24 October 1752 (scan 1) through at least 24 July 1753 (scan 183, two before the blank final flyleaf at scan 185). No scan checked, at the start, middle or end, falls before late October 1752 -- see NOTES.md for why this rules out all 8 target ciphertexts, including the 4 Jan 1752 one this lead was nominated for."
+}
