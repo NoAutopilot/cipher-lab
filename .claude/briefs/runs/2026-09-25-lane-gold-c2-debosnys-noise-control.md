@@ -1,6 +1,6 @@
 JOB GOLD-D1: Debosnys, the noise-matched synthetic control that prices the transcription before any more transcription spend (controls only, no target run, no images, no transcription). Sonnet (claude-sonnet-5). Stop and push at $5 or 60 minutes, whichever first. NO subagents. Lane: LANE GOLD orchestrator session_01DKDynpdEwZK5EokxtjCM3P. Written by the cycle-1 consolidator GOLD-CONS1 (Fable, session_017PRh6MAX17rgp5ayuycZ6c), 25 Sept 2026 19:35 UTC; the orchestrator fills the gate line and the spawn time.
 
-INTAKE_GATE_OUTPUT: <orchestrator pastes `python3 tools/intake_gate_check.py debosnys-1883` output and exit code here before spawning>
+INTAKE_GATE_OUTPUT (live, 19:56 UTC): debosnys-1883: open (line 1) -- edition/page or full-text-search citation found within 6 lines  (exit 0). Spawned 25 Sept 2026 19:57 UTC.
 
 Read first: `.claude/briefs/runs/2026-09-24-lane-r4-common.md`, `.claude/briefs/runs/2026-09-25-lanes-7b-COMMON.md` (binding), the top block of `ciphers/debosnys-1883/HYPOTHESES.md` (the decision rule you are producing numbers for), the GOLD-4C section of `ciphers/debosnys-1883/NOTES.md` (the composite ids), `glyphs/inventory.tsv`, `python3 tools/family_run.py --help`, `tools/families/homophonic.py`, `python3 tools/homophonic_anneal.py --help`, and `ciphers/fr2933-salviati-1525/control/codemark_curve.py` lines 20-45 and 130-145 (how LANE R6 injected type noise into a control: a share p of control tokens replaced by a type drawn at the target's own frequencies). Claim in ROOM (`tools/room.py`). Read the clock with `date -u` before any date.
 

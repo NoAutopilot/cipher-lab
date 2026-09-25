@@ -1,6 +1,6 @@
 JOB GOLD-K1: Köhler families B and B' rerun with a devotional Dutch key corpus (the one documented Koehler key is a Dutch prayer book; every B/B' negative so far is conditional on 1880-1920 novel models for the key stream). Sonnet (claude-sonnet-5). Stop and push at $8 or 60 minutes, whichever first. NO subagents. Lane: LANE GOLD orchestrator session_01DKDynpdEwZK5EokxtjCM3P. Written by the cycle-1 consolidator GOLD-CONS1 (Fable, session_017PRh6MAX17rgp5ayuycZ6c), 25 Sept 2026 19:35 UTC; the orchestrator fills the gate line and the spawn time.
 
-INTAKE_GATE_OUTPUT: <orchestrator pastes `python3 tools/intake_gate_check.py koehler-1944` output and exit code here before spawning>
+INTAKE_GATE_OUTPUT (live, 19:56 UTC): koehler-1944: open (line 1) -- edition/page or full-text-search citation found within 6 lines  (exit 0). Spawned 25 Sept 2026 19:57 UTC.
 
 Read first: `.claude/briefs/runs/2026-09-24-lane-r4-common.md`, `.claude/briefs/runs/2026-09-25-lanes-7b-COMMON.md` (binding), the top block and the "Family B" and "Family B'" sections of `ciphers/koehler-1944/HYPOTHESES.md`, `tools/data/nl20/README.md` and `MANIFEST.tsv` (the shape a corpus folder takes), `python3 tools/running_key.py --help`, `python3 tools/family_run.py --help`, CLAUDE.md's good-citizen rule. Claim in ROOM (`tools/room.py`). Read the clock with `date -u` before any date.
 

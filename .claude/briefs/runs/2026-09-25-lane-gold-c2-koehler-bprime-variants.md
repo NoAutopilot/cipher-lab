@@ -1,6 +1,6 @@
 JOB GOLD-K2: Köhler family B' (keyed-tableau running key), the three untried cheap variants, control first each time. Sonnet (claude-sonnet-5). Stop and push at $6 or 75 minutes, whichever first. NO subagents. Lane: LANE GOLD orchestrator session_01DKDynpdEwZK5EokxtjCM3P. Written by the cycle-1 consolidator GOLD-CONS1 (Fable, session_017PRh6MAX17rgp5ayuycZ6c), 25 Sept 2026 19:35 UTC; the orchestrator fills the gate line and the spawn time.
 
-INTAKE_GATE_OUTPUT: <orchestrator pastes `python3 tools/intake_gate_check.py koehler-1944` output and exit code here before spawning>
+INTAKE_GATE_OUTPUT (live, 19:56 UTC): koehler-1944: open (line 1) -- edition/page or full-text-search citation found within 6 lines  (exit 0). Spawned 25 Sept 2026 19:57 UTC.
 
 Read first: `.claude/briefs/runs/2026-09-24-lane-r4-common.md`, `.claude/briefs/runs/2026-09-25-lanes-7b-COMMON.md` (binding), the top block and the "Family B'" section of `ciphers/koehler-1944/HYPOTHESES.md`, `python3 tools/family_run.py --help`, the docstring of `tools/families/keyed_running_key.py`. Claim in ROOM (`tools/room.py`). Read the clock with `date -u` before any date.
 
