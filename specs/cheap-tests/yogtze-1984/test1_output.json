@@ -1,0 +1,665 @@
+{
+  "target": "YOGTZE",
+  "de": {
+    "language": "de",
+    "wordlist_size": 42047,
+    "target_string": "YOGTZE",
+    "target_per_position_counts": {
+      "Y": 12,
+      "O": 412,
+      "G": 3367,
+      "T": 1521,
+      "Z": 1376,
+      "E": 2544
+    },
+    "target_min_count": 12,
+    "target_zero_count_positions": [],
+    "example_words_per_letter": {
+      "Y": [
+        "yacht",
+        "yaks",
+        "yang",
+        "yangs",
+        "yao"
+      ],
+      "O": [
+        "oabend",
+        "oaks",
+        "ob",
+        "obdach",
+        "obdachlose"
+      ],
+      "G": [
+        "gab",
+        "gabe",
+        "gabelfruehstueck",
+        "gabeln",
+        "gabelspitzen"
+      ],
+      "T": [
+        "ta",
+        "tabak",
+        "tabakkauend",
+        "tabakrauch",
+        "tabaksbeutel"
+      ],
+      "Z": [
+        "zacharias",
+        "zacken",
+        "zackig",
+        "zackigen",
+        "zackiger"
+      ],
+      "E": [
+        "eau",
+        "eaux",
+        "ebbe",
+        "eben",
+        "ebenbezeichnete"
+      ]
+    },
+    "control_n": 20,
+    "control_seed": 25092026,
+    "control_min_counts": [
+      337,
+      337,
+      337,
+      337,
+      337,
+      412,
+      412,
+      412,
+      953,
+      1309,
+      1309,
+      1309,
+      1309,
+      1309,
+      1354,
+      1376,
+      1376,
+      1777,
+      1777,
+      1879
+    ],
+    "control_min_mean": 997.9,
+    "control_min_range": [
+      337,
+      1879
+    ],
+    "target_min_percentile_vs_control": 0.0,
+    "control_rows": [
+      {
+        "string": "DANIUI",
+        "per_position": [
+          1309,
+          3228,
+          953,
+          337,
+          1777,
+          337
+        ],
+        "min": 337
+      },
+      {
+        "string": "ADWTAD",
+        "per_position": [
+          3228,
+          1309,
+          1879,
+          1521,
+          3228,
+          1309
+        ],
+        "min": 1309
+      },
+      {
+        "string": "USAAIS",
+        "per_position": [
+          1777,
+          4551,
+          3228,
+          3228,
+          337,
+          4551
+        ],
+        "min": 337
+      },
+      {
+        "string": "WPWEMM",
+        "per_position": [
+          1879,
+          1354,
+          1879,
+          2544,
+          1651,
+          1651
+        ],
+        "min": 1354
+      },
+      {
+        "string": "WDSFOA",
+        "per_position": [
+          1879,
+          1309,
+          4551,
+          1793,
+          412,
+          3228
+        ],
+        "min": 412
+      },
+      {
+        "string": "WNUDPS",
+        "per_position": [
+          1879,
+          953,
+          1777,
+          1309,
+          1354,
+          4551
+        ],
+        "min": 953
+      },
+      {
+        "string": "DKDWAG",
+        "per_position": [
+          1309,
+          2109,
+          1309,
+          1879,
+          3228,
+          3367
+        ],
+        "min": 1309
+      },
+      {
+        "string": "BGUKSV",
+        "per_position": [
+          3197,
+          3367,
+          1777,
+          2109,
+          4551,
+          2504
+        ],
+        "min": 1777
+      },
+      {
+        "string": "ZDWOSA",
+        "per_position": [
+          1376,
+          1309,
+          1879,
+          412,
+          4551,
+          3228
+        ],
+        "min": 412
+      },
+      {
+        "string": "SSTGER",
+        "per_position": [
+          4551,
+          4551,
+          1521,
+          3367,
+          2544,
+          1376
+        ],
+        "min": 1376
+      },
+      {
+        "string": "FSUFVE",
+        "per_position": [
+          1793,
+          4551,
+          1777,
+          1793,
+          2504,
+          2544
+        ],
+        "min": 1777
+      },
+      {
+        "string": "SSWAAS",
+        "per_position": [
+          4551,
+          4551,
+          1879,
+          3228,
+          3228,
+          4551
+        ],
+        "min": 1879
+      },
+      {
+        "string": "WINDZI",
+        "per_position": [
+          1879,
+          337,
+          953,
+          1309,
+          1376,
+          337
+        ],
+        "min": 337
+      },
+      {
+        "string": "SDDSUD",
+        "per_position": [
+          4551,
+          1309,
+          1309,
+          4551,
+          1777,
+          1309
+        ],
+        "min": 1309
+      },
+      {
+        "string": "VDVMDL",
+        "per_position": [
+          2504,
+          1309,
+          2504,
+          1651,
+          1309,
+          1485
+        ],
+        "min": 1309
+      },
+      {
+        "string": "USZESE",
+        "per_position": [
+          1777,
+          4551,
+          1376,
+          2544,
+          4551,
+          2544
+        ],
+        "min": 1376
+      },
+      {
+        "string": "WAWDNO",
+        "per_position": [
+          1879,
+          3228,
+          1879,
+          1309,
+          953,
+          412
+        ],
+        "min": 412
+      },
+      {
+        "string": "SLWIUR",
+        "per_position": [
+          4551,
+          1485,
+          1879,
+          337,
+          1777,
+          1376
+        ],
+        "min": 337
+      },
+      {
+        "string": "IELHHM",
+        "per_position": [
+          337,
+          2544,
+          1485,
+          2597,
+          2597,
+          1651
+        ],
+        "min": 337
+      },
+      {
+        "string": "UDEGSD",
+        "per_position": [
+          1777,
+          1309,
+          2544,
+          3367,
+          4551,
+          1309
+        ],
+        "min": 1309
+      }
+    ]
+  },
+  "en": {
+    "language": "en",
+    "wordlist_size": 19547,
+    "target_string": "YOGTZE",
+    "target_per_position_counts": {
+      "Y": 57,
+      "O": 446,
+      "G": 602,
+      "T": 979,
+      "Z": 18,
+      "E": 825
+    },
+    "target_min_count": 18,
+    "target_zero_count_positions": [],
+    "example_words_per_letter": {
+      "Y": [
+        "yale",
+        "yankee",
+        "yankees",
+        "yard",
+        "yards"
+      ],
+      "O": [
+        "oahu",
+        "oak",
+        "oaken",
+        "oakes",
+        "oaks"
+      ],
+      "G": [
+        "gable",
+        "gabled",
+        "gables",
+        "gabriel",
+        "gaff"
+      ],
+      "T": [
+        "tabernacle",
+        "tabernacles",
+        "table",
+        "tableau",
+        "tablecloth"
+      ],
+      "Z": [
+        "zag",
+        "zay",
+        "zeal",
+        "zealand",
+        "zealanders"
+      ],
+      "E": [
+        "each",
+        "eager",
+        "eagerly",
+        "eagerness",
+        "eagle"
+      ]
+    },
+    "control_n": 20,
+    "control_seed": 25092027,
+    "control_min_counts": [
+      57,
+      204,
+      204,
+      204,
+      307,
+      307,
+      307,
+      307,
+      446,
+      446,
+      446,
+      446,
+      446,
+      602,
+      602,
+      685,
+      685,
+      775,
+      825,
+      825
+    ],
+    "control_min_mean": 456.3,
+    "control_min_range": [
+      57,
+      825
+    ],
+    "target_min_percentile_vs_control": 0.0,
+    "control_rows": [
+      {
+        "string": "SSHTGA",
+        "per_position": [
+          2402,
+          2402,
+          775,
+          979,
+          602,
+          1136
+        ],
+        "min": 602
+      },
+      {
+        "string": "WAWMNC",
+        "per_position": [
+          685,
+          1136,
+          685,
+          917,
+          307,
+          1851
+        ],
+        "min": 307
+      },
+      {
+        "string": "DMCPWO",
+        "per_position": [
+          1132,
+          917,
+          1851,
+          1495,
+          685,
+          446
+        ],
+        "min": 446
+      },
+      {
+        "string": "IOTRWI",
+        "per_position": [
+          840,
+          446,
+          979,
+          991,
+          685,
+          840
+        ],
+        "min": 446
+      },
+      {
+        "string": "AUWJOG",
+        "per_position": [
+          1136,
+          588,
+          685,
+          204,
+          446,
+          602
+        ],
+        "min": 204
+      },
+      {
+        "string": "HTHWCE",
+        "per_position": [
+          775,
+          979,
+          775,
+          685,
+          1851,
+          825
+        ],
+        "min": 685
+      },
+      {
+        "string": "HAGTWN",
+        "per_position": [
+          775,
+          1136,
+          602,
+          979,
+          685,
+          307
+        ],
+        "min": 307
+      },
+      {
+        "string": "WNBIHG",
+        "per_position": [
+          685,
+          307,
+          1166,
+          840,
+          775,
+          602
+        ],
+        "min": 307
+      },
+      {
+        "string": "SFTAOS",
+        "per_position": [
+          2402,
+          937,
+          979,
+          1136,
+          446,
+          2402
+        ],
+        "min": 446
+      },
+      {
+        "string": "UBBJAD",
+        "per_position": [
+          588,
+          1166,
+          1166,
+          204,
+          1136,
+          1132
+        ],
+        "min": 204
+      },
+      {
+        "string": "TTBODB",
+        "per_position": [
+          979,
+          979,
+          1166,
+          446,
+          1132,
+          1166
+        ],
+        "min": 446
+      },
+      {
+        "string": "TETMTC",
+        "per_position": [
+          979,
+          825,
+          979,
+          917,
+          979,
+          1851
+        ],
+        "min": 825
+      },
+      {
+        "string": "OWHTSM",
+        "per_position": [
+          446,
+          685,
+          775,
+          979,
+          2402,
+          917
+        ],
+        "min": 446
+      },
+      {
+        "string": "EABARP",
+        "per_position": [
+          825,
+          1136,
+          1166,
+          1136,
+          991,
+          1495
+        ],
+        "min": 825
+      },
+      {
+        "string": "AHTAST",
+        "per_position": [
+          1136,
+          775,
+          979,
+          1136,
+          2402,
+          979
+        ],
+        "min": 775
+      },
+      {
+        "string": "MBWSTW",
+        "per_position": [
+          917,
+          1166,
+          685,
+          2402,
+          979,
+          685
+        ],
+        "min": 685
+      },
+      {
+        "string": "BAWNWT",
+        "per_position": [
+          1166,
+          1136,
+          685,
+          307,
+          685,
+          979
+        ],
+        "min": 307
+      },
+      {
+        "string": "AYDTBS",
+        "per_position": [
+          1136,
+          57,
+          1132,
+          979,
+          1166,
+          2402
+        ],
+        "min": 57
+      },
+      {
+        "string": "LNSADJ",
+        "per_position": [
+          638,
+          307,
+          2402,
+          1136,
+          1132,
+          204
+        ],
+        "min": 204
+      },
+      {
+        "string": "GPMBTS",
+        "per_position": [
+          602,
+          1495,
+          917,
+          1166,
+          979,
+          2402
+        ],
+        "min": 602
+      }
+    ]
+  }
+}

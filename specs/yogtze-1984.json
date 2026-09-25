@@ -24,8 +24,18 @@
   "2. Direct lexical/abbreviation search (grep, not cryptanalysis) for 'YOGTZE'/'YOG TZE'/'YOG'TZE' as a period (pre-1984) call sign, product code, chemical/flavouring abbreviation, or file/serial number, across the food-engineering and radio-callsign leads named in the source (hypotheses 1 and 4 above) using open bibliographic search (OpenAlex, Google Books) rather than assuming either is right. Cost $1.",
   "3. Anagram enumeration of the 6 letters (720 permutations, small enough to brute-force) against German and English short-word/phrase lists, since an anagram is at least as plausible a priori as a substitution cipher at N=6. Cost under $1."
  ],
- "matched_control": "not applicable at this N -- CLAUDE.md rule 3's matched-control requirement is for cryptanalytic negatives; at N=6 ('below any unicity' per the survey row) no solver-vs-control comparison is meaningful, so none of the three tests above are cryptanalytic in that sense (they are lexical/crib searches, reported as hit/no-hit, not scored against a control)",
- "cheap_test_done": [],
+ "matched_control": "not applicable at this N -- CLAUDE.md rule 3's matched-control requirement is for cryptanalytic negatives; at N=6 ('below any unicity' per the survey row) no solver-vs-control comparison is meaningful, so none of the three tests above are cryptanalytic in that sense (they are lexical/crib searches, reported as hit/no-hit, not scored against a control); test 1 as actually run (LANE B3 brief, 25 Sept 2026) does use a control in a different, non-cryptanalytic sense -- a wordlist-feasibility comparison against random letter-strings, not a solver-vs-control cryptanalytic gate",
+ "cheap_test_done": [
+  {
+   "test": 1,
+   "date": "25 Sept 2026",
+   "worker": "bYOG (Sonnet)",
+   "method": "Initials/acrostic feasibility: for the 6 letters Y-O-G-T-Z-E, the minimum across the six positions of (count of distinct wordlist entries starting with that letter) -- the acrostic's bottleneck letter -- computed once for German (tools/data/de20, 42,047 distinct words) and once for English (tools/data/pg1661_holmes.txt + pg2701_mobydick.txt, 19,547 distinct words). No phrase assembled or proposed; hit/no-hit only. Script and full output: specs/cheap-tests/yogtze-1984/{test1_initials.py,test1_output.json,README.md}.",
+   "target": {"de_min_count": 12, "de_bottleneck_letter": "Y", "en_min_count": 18, "en_bottleneck_letter": "Z"},
+   "control": {"n": 20, "draw": "6-letter strings sampled (with replacement) from the same wordlist's own first-letter frequency distribution, same min-count statistic", "de_min_count_range": [337, 1879], "de_min_count_mean": 997.9, "en_min_count_range": [57, 825], "en_min_count_mean": 456.3},
+   "verdict": "no-hit -- in both languages the target's own bottleneck-letter count sits below the entire 20-draw control range (percentile 0.0), i.e. YOGTZE is markedly harder to complete as a six-word acrostic than a same-length random letter-string would be, in both German and English general prose. Not evidence for the acrostic hypothesis; a small piece of support for Schmeh's own 'no language knows this word' extended to acrostic initials. No candidate phrase reported."
+  }
+ ],
  "judge": {
   "letters_min": 6,
   "letters_max": 6,
