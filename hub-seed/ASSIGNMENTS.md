@@ -512,3 +512,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T19:02Z	session_014qQzx56jpDoJBe6kFjiL5z	done	bPOL2 pollaky-1865-1875 test 2	pushed c610f85, b25465f
 2026-09-25T19:02Z	session_01PmhUa6TvpUCGWqnG13xbSh	LANE B2 bMLH (Sonnet, cap 3)	mlh-1976 intake + test 1 image + single pass	brief 2026-09-25-lane-b2-mlh-1976.md
 2026-09-25T19:08Z	session_012RiiYfwp3KEw4ma3SE5n5U	NEAR-TOOL done $2.50 D, archived	ab4d5f0	
+2026-09-25T19:09Z	session_01VLtPMsqR2oWmZeKh2jxVga	LANE B3 orchestrator (Opus, cap 25)	breadth: bullet/rubin test 2, McCormick homophonic, cylob, specs 21-30	brief 2026-09-25-lane-b3-orchestrator.md
+2026-09-25T19:09Z	session_01Jr6BjYfemXf9Xejm1LuPkD	retrospective k (Sonnet, cap 10)	14 rows since retro j; NEAR review; GOLD-4D overrun; lane context overruns	prompt inline
