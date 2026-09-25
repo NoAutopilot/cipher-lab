@@ -1,0 +1,83 @@
+{
+  "fetched": "25 Sept 2026",
+  "worker": "LANE VX worker VX-CS04",
+  "source": "service.archief.nl IIIF (level2, maxWidth/maxHeight 5000) + item-page default JPEG URLs read from www.nationaalarchief.nl drupal-settings-json",
+  "items": [
+    {
+      "invnr": "4.VEL 2039",
+      "title": "Plan van het fortress Nieuw Amsterdam.",
+      "date": "1781",
+      "native_px": "11267x8656",
+      "default_full_url": "https://service.archief.nl/api/file/v1/default/09bc6088-27a9-4581-87c8-fc80d867441c",
+      "iiif_info": "https://service.archief.nl/iip/iipsrv?IIIF=7a/84/05/55/03/12/40/ca/99/a7/a6/f6/c1/d3/b0/68/09bc6088-27a9-4581-87c8-fc80d867441c.jp2/info.json",
+      "files": {
+        "2039_overview.jpg": "full sheet, 2816px wide",
+        "2039_cartouche.jpg": "title cartouche + explicatie a-r list, native-res crop",
+        "2039_bastion_zoom.jpg": "Bastion Holland/Gelderland/Overijssel/Groningen lines, native-res crop, no interlinear gloss visible",
+        "2039_remarque.jpg": "Remarque paragraph (bottom left), native-res crop, no interlinear gloss visible"
+      }
+    },
+    {
+      "invnr": "4.VEL 2007A",
+      "title": "Blad 1, cijferschrift",
+      "date": "1781",
+      "native_px": "8998x6753",
+      "default_full_url": "https://service.archief.nl/api/file/v1/default/daf5a571-6419-4086-9ae3-711a588a7efc",
+      "iiif_info": "https://service.archief.nl/iip/iipsrv?IIIF=db/13/f7/6f/8b/2b/42/2a/a2/80/f2/6f/e4/e4/10/91/daf5a571-6419-4086-9ae3-711a588a7efc.jp2/info.json",
+      "files": {
+        "2007a_overview.jpg": "full sheet, 2249px wide",
+        "2007a_titletext.jpg": "title block, native-res crop -- shows a later plain-Dutch interlinear pencil gloss above each ciphered line",
+        "2007a_nota.jpg": "mid-river text block, native-res crop, same gloss pattern",
+        "2007a_aanmerkinge.jpg": "bottom-left annotation, native-res crop, same gloss pattern"
+      }
+    },
+    {
+      "invnr": "4.VEL 2046",
+      "title": "Plan en defensie van de redout Purmerent.",
+      "date": "undated (same fortification-survey group)",
+      "scopecontent_nl": "In cyferschrift. Met profil.",
+      "native_px": "11529x4584",
+      "default_full_url": "https://service.archief.nl/api/file/v1/default/c8795078-bff2-49b5-bc16-23144f1be88e",
+      "iiif_info": "https://service.archief.nl/iip/iipsrv?IIIF=31/b1/be/dd/1e/e0/44/de/a4/9a/7c/94/b1/1a/0e/35/c8795078-bff2-49b5-bc16-23144f1be88e.jp2/info.json",
+      "files": {
+        "2046_overview.jpg": "full sheet, 2882px wide",
+        "2046_cartouche.jpg": "title cartouche, native-res crop -- no interlinear gloss found"
+      }
+    },
+    {
+      "invnr": "4.VEL 2061",
+      "title": "Plan en defentiestaat van de Redout Leyden.",
+      "date": "undated (same fortification-survey group)",
+      "scopecontent_nl": "In cyferschrift, met verklaring.",
+      "native_px": "11355x4505",
+      "default_full_url": "https://service.archief.nl/api/file/v1/default/14bbe911-339b-4ef5-8135-b4ec0cedc3ce",
+      "iiif_info": "https://service.archief.nl/iip/iipsrv?IIIF=c4/f8/2f/cf/d5/e4/4a/1c/bb/4c/f8/b8/d7/3c/04/95/14bbe911-339b-4ef5-8135-b4ec0cedc3ce.jp2/info.json",
+      "files": {
+        "2061_overview.jpg": "full sheet, 2839px wide",
+        "2061_title_topleft.jpg": "top-left block, native-res crop",
+        "2061_title_gloss.jpg": "title + battery-list header, native-res crop -- shows a plain-Dutch interlinear gloss ('Plan en Defensie Staat', 'van de Redout Leyde[n]', 'De Batterijen zijn gedeponeerd') written above the ciphered lines"
+      }
+    },
+    {
+      "invnr": "4.VEL 2076",
+      "title": "Platte grond van de Buytenwerken om het fortress Zeelandia...",
+      "native_px": "9041x5190",
+      "default_full_url": "https://service.archief.nl/api/file/v1/default/f1cdc5fa-7ab8-4ca7-b1c2-72f4788568cc",
+      "files": { "2076_overview.jpg": "full sheet -- eye-checked, entirely plain Dutch, NOT ciphered" }
+    },
+    {
+      "invnr": "4.VEL 2077",
+      "title": "Plan van de fortress Zelandia.",
+      "native_px": "10711x5110",
+      "default_full_url": "https://service.archief.nl/api/file/v1/default/cd3a65eb-7a10-497f-9c1e-373699a0e02d",
+      "files": { "2077_overview.jpg": "full sheet -- title cartouche + 'Explicatie der Signatuuren' legend entries (a,b,c...) ARE ciphered; 'Nota'/'Explicatie'/'Remarque' headings and body prose are plain Dutch. NOT flagged in NA's own scopecontent field." }
+    },
+    {
+      "invnr": "4.VEL 2078",
+      "title": "Plan van de teegenswoordigen staat der fortress Zeelandia...",
+      "native_px": "8046x6210",
+      "default_full_url": "https://service.archief.nl/api/file/v1/default/3e3a786c-b7c8-4388-9316-878e006be125",
+      "files": { "2078_overview.jpg": "full sheet -- eye-checked, entirely plain Dutch, signed 'Wollant', NOT ciphered" }
+    }
+  ]
+}
