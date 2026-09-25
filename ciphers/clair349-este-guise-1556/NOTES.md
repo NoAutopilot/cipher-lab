@@ -1490,6 +1490,10 @@ confused with; grade M. Positions are keyed on the pre-correction numbering, as 
 - 31/11 is a small 3-shape at gloss height directly above the A of 31/12's Ao: DEL as a gloss confirmed.
 - 31/1 is a lone x with a crossbarred f (or long s) gloss above it and a above the next 12. The ink shows the letter's
   lone-x S36 (s), not S02 (F), so it is kept as S36; the gloss would give "fait". An open ink-versus-gloss point.
+- 30/12 is a doubled long s with arched tops, a crossbar and both stems below the baseline, glossed L: S27 confirmed.
+- 27/10-11 (7 then a small 3, merged to 73 = y in aduerty) is plausible but not confirmed. The 3 sits about 50 px
+  (native) after the 7 and slightly lower, and that 7 touches the bar of the crossed-t sign before it (see the subagents'
+  note on 27/8-9). Kept as the subagent recoded it, grade M.
 
 **Where ink and gloss disagree, the ink was kept.** Most "gloss disagrees" rows on 60/64/16/26/62/82/15 turned out to be
 gloss misreads. The glossator writes i as a tall stem with a crossbar (read t or f), r as a small x/z, and e as two
