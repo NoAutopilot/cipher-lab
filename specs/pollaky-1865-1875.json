@@ -21,11 +21,23 @@
  ],
  "matched_control": "not yet run as a decode-vs-control gate; test 1's per-ad IC controls (English text same N, uniform random same K, 3 seeds each) are in ciphers/pollaky-1865-1875/NOTES.md",
  "cheap_test_done": {
-  "test": "1 (fetch + one blind transcription pass)",
-  "date": "25 Sept 2026",
-  "worker": "bPOL, LANE B2 breadth worker",
-  "result": "ciphertext on disk for all four ads (single pass, draft -- rule 2/7 not yet satisfied by a second pass or --check). Per-ad N/K/IC: ad1 (signs) N=10 K=9 IC=0.0222; ad2 (digit groups) N=36 K=35 IC=0.0016; ad3 (letters) N=224 K=25 IC=0.0636 vs English-control 0.0591-0.0661 vs random-control 0.0393-0.0402; ad4 (letters, cipher portion) N=221 K=22 IC=0.0656 vs English-control 0.0593-0.0657 vs random-control 0.0456-0.0464. Ads 3-4's IC sits with the English control and well above the random control -- moved: reads as a transposition-cipher signature, not decided cryptanalytically (grade S/M, no key). Full tables and caveats in NOTES.md.",
-  "moved": "ads 3-4 only (see result); ad1 too short (N=10) to be informative; ad2 not a letter ad"
+  "1": {
+   "test": "1 (fetch + one blind transcription pass)",
+   "date": "25 Sept 2026",
+   "worker": "bPOL, LANE B2 breadth worker",
+   "result": "ciphertext on disk for all four ads (single pass, draft -- rule 2/7 not yet satisfied by a second pass or --check). Per-ad N/K/IC: ad1 (signs) N=10 K=9 IC=0.0222; ad2 (digit groups) N=36 K=35 IC=0.0016; ad3 (letters) N=224 K=25 IC=0.0636 vs English-control 0.0591-0.0661 vs random-control 0.0393-0.0402; ad4 (letters, cipher portion) N=221 K=22 IC=0.0656 vs English-control 0.0593-0.0657 vs random-control 0.0456-0.0464. Ads 3-4's IC sits with the English control and well above the random control -- moved: reads as a transposition-cipher signature, not decided cryptanalytically (grade S/M, no key). Full tables and caveats in NOTES.md.",
+   "moved": "ads 3-4 only (see result); ad1 too short (N=10) to be informative; ad2 not a letter ad"
+  },
+  "2": {
+   "test": "2 (second blind pass ads 3-4, reconcile, diff against Bourdeau/Ernst catokwacopa transcription)",
+   "date": "25 Sept 2026",
+   "worker": "bPOL2, LANE B2 breadth worker",
+   "method": "One fresh Sonnet subagent transcribed ads 3-4 blind from the images alone (scripts/pass_b.tsv); this worker converted pass 1's ciphertext.txt to the same format (scripts/pass_a.tsv, dash notation normalised); tools/reconcile_passes.py aligned them; the 2 disagreements were settled from the image; scripts/diff_bourdeau.py diffed the settled reading against a shallow clone of github.com/dbourdeau/cyphersolver's catokwacopa/ads.py (Thomas Ernst's BNA-checked text, MIT, deleted after use).",
+   "pass_agreement": "78/80 tokens (97.5%): ad3 30/31, ad4 48/49 (tools/reconcile_passes.py --rows)",
+   "target_vs_bourdeau_agreement": "72/72 letter-words (100%) after normalising dash/punctuation notation out (both settled disagreements independently confirmed by Ernst's BNA-checked text)",
+   "result": "no substitution/transposition solving run (out of scope); this is corroboration of the ciphertext (two independent scan sources now agree letter-for-letter on ads 3-4), not a decipherment -- grades still S/M, no H/C. Full tables in NOTES.md 'Test 2' section and ciphers/catokwacopa-1875/NOTES.md's pointer paragraph.",
+   "moved": "strengthens confidence in ciphertext.txt's ad3/4 lines and the pollaky/catokwacopa shared-ciphertext identification; does not change ciphers/catokwacopa-1875's partial verdict"
+  }
  },
  "judge": {
   "language": "en",

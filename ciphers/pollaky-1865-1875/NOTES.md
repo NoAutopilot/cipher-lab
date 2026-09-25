@@ -119,3 +119,76 @@ retries needed. No other hosts touched.
 
 No check-solved sweep run this pass (out of scope for a breadth worker; see intake-gate note above).
 No archive/library lookups run this pass -- only the fetch named in the brief.
+
+## Test 2 (25 Sept 2026, worker bPOL2, LANE B2, `cheap_tests_in_order[1]` of specs/pollaky-1865-1875.json)
+
+Intake gate (see status block above) re-run and re-confirmed exit 0 before this pass started
+(`python3 tools/intake_gate_check.py pollaky-1865-1875` -> `blocked (line 3) -- already terminal,
+nothing to gate`).
+
+**Second blind transcription pass, ads 3-4 only.** This worker had already read pass 1's ciphertext.txt
+(contaminated for ads 3/4), so a fresh Sonnet subagent (one, per brief) transcribed ads 3-4 blind from
+`images/ad3-1875-05-08.jpg` and `images/ad4-1875-05-20.jpg` alone, no other file, no web search, output
+written to `scripts/pass_b.tsv` (its own ambiguity notes in `scripts/pass_b_notes.txt`). This worker
+converted pass 1's ciphertext.txt into the same wide TSV format (`scripts/pass_a.tsv`, dashes normalised
+to the single `–` character both Bourdeau's transcription and pass B already use, and the `[?]`
+uncertain-token marker converted to reconcile_passes.py's trailing-`?` convention) and ran
+`tools/reconcile_passes.py scripts/pass_a.tsv scripts/pass_b.tsv --out-dir scripts --rows`:
+
+```
+ad3   31 31 30 31 0.97
+ad4   49 49 48 49 0.98
+lines 2  signs A 80  B 80  agree 78/80 = 97.5%  (nw)
+```
+
+**Pass agreement: 78/80 tokens (97.5%).** Two disagreements (`scripts/disagreements.tsv`), both settled
+by this worker directly on the image (rule 2, image over transcription):
+
+| line | pass A (test 1) | pass B (this pass) | settled | how |
+|---|---|---|---|---|
+| ad3, token 13 | `caselcluchozamet?` (pass 1's own `[?]` flag) | `caselcluchozamot` | **caselcluchozamot** | read directly off `images/ad3-1875-05-08.jpg`: the word is "...3 caselcluchozamot. 1. 6. 9...", an `o` not an `e` |
+| ad4, token 16 | `Ngtndusdendo` | `Ngtndusdcndo` | **Ngtndusdcndo** | read directly off `images/ad4-1875-05-20.jpg`: "Ngtndusdcndo. Edrstneirs.", a `c` not an `e` (low-resolution scan, lower confidence than the ad3 call but consistent letter shape) |
+
+Both settled readings applied to `ciphertext.txt` (with an inline note dated 25 Sept 2026); this pass's
+tokens grade **S** (cryptanalytic reconciliation against the image, no key) except the ad4 `Ngtndusdcndo`
+call, graded **M** (uncertain -- lower-confidence image read, see table).
+
+**Diff against Bourdeau/Ernst's catokwacopa transcription.** Shallow-cloned `github.com/dbourdeau/
+cyphersolver` (MIT, cited; deleted after use, per rule 8 and the brief), read `catokwacopa/ads.py`:
+Thomas Ernst's transcription checked against the British Newspaper Archive originals (klausschmeh blog
+comments #24-25, 27 July 2018) -- a different, independently-sourced route to the same two ads (BNA
+scan vs. this target's scienceblogs.de/Gaffney-Gluecklich scan). `scripts/diff_bourdeau.py` normalises
+both sides to letter-only word tokens (strips dashes, digits, punctuation -- the two sources notate
+those differently, e.g. Bourdeau's plain-text string drops the `–` this target's scan clearly shows
+before "Hrsclam"; per CLAUDE.md's PX-BRODEC lesson, that is a notation difference, not a letter
+disagreement, so it is excluded rather than counted) and diffs word by word:
+
+```
+ad3/AD1: 26 vs 26 letter-words, 0 differences
+ad4/AD2: 46 vs 46 letter-words, 0 differences
+TOTAL: 0 differences out of 72 letter-words (100.0% agreement)
+```
+
+**Target-vs-Bourdeau agreement: 72/72 letter-words (100%), after the two pass-A/B disagreements above
+are settled toward pass B.** Bourdeau's ads.py independently confirms both settled readings
+(`caselcluchozamot`, `Ngtndusdcndo`) letter-for-letter -- two unrelated transcription routes (this
+target's scan, image-read twice, vs. Ernst's separately BNA-checked text) now agree completely on the
+72 letters that make up ads 3-4's jumbled-word content. This raises confidence in `ciphertext.txt`'s ad
+3/4 lines from single-pass (test 1) to two-pass-plus-independent-source; it is not itself a decipherment
+(rule 4: still grade S/M, no H, no C -- Ernst's BNA-checked status is `published`-key-adjacent evidence
+for the *ciphertext*, not a plaintext key) and does not change ad 3/4's link to `ciphers/catokwacopa-1875`
+(status `partial`, mechanism agreed, unique plaintext not fully reconstructable per that target's own
+NOTES.md) -- this pass strengthens the shared-ciphertext identification, it does not solve it.
+
+No substitution or transposition solving run this pass (out of scope, per brief).
+
+### Hosts / requests (test 2)
+
+github.com: 2 shallow clones (`dbourdeau/cyphersolver`, `aaymeloglu/unsolved-ciphers`), both deleted
+after grepping/reading, no other requests. No other host touched this pass.
+
+### Grades (rule 4), test 2 only
+
+caselcluchozamot: **S** (settled from image + independent source, no key). Ngtndusdcndo: **M**
+(settled from image + independent source, but a lower-confidence low-resolution read). All other
+ad3/4 tokens carried forward from test 1 unchanged, still S/M (no H, no C).

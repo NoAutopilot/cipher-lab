@@ -45,8 +45,11 @@ TELEGRAM. -- 56. 717. 9362. 81720. 19736. 14. 618. 9:77314. 390. 400. 272. 20 = 
 ## NOTES.md and this spec's ciphertext_pending). Flagging the textual overlap; not established here
 ## whether the two are the same underlying message, a shared signature/heading convention, or
 ## coincidence -- a job for whoever works both targets next, not resolved by this single pass.
-## Transcription (as printed; jumbled pseudo-words kept exactly as printed, not corrected to real words):
-W. Str 53. Catokwacopa. Olcabrokorlested. Coomemega. Sesipyyocashostikr. Rep.--Itedconlec mistrl. --Hrsclam 54. 3 caselcluchozamet[?]. 1. 6. 9. Mopredisco. Contoladsemot. Iadfilisat. Qft. Cagap. Balmnopsemsov. Ap. 138.--Hodsam 55, 6. Iopotonrogfimsecharsenr. Tolshr. Itedjolec. mistrl.--Ding Declon.--Ereflodbr.
+## Transcription (as printed; jumbled pseudo-words kept exactly as printed, not corrected to real words).
+## Second pass (25 Sept 2026, worker bPOL2, subagent pass B) settled the one pass-1 uncertain token:
+## "caselcluchozamot" (o, not the [?]-flagged "caselcluchozamet") -- confirmed on the image by this
+## worker and matches Thomas Ernst's BNA-checked transcription in Bourdeau's cyphersolver (ads.py).
+W. Str 53. Catokwacopa. Olcabrokorlested. Coomemega. Sesipyyocashostikr. Rep.--Itedconlec mistrl. --Hrsclam 54. 3 caselcluchozamot. 1. 6. 9. Mopredisco. Contoladsemot. Iadfilisat. Qft. Cagap. Balmnopsemsov. Ap. 138.--Hodsam 55, 6. Iopotonrogfimsecharsenr. Tolshr. Itedjolec. mistrl.--Ding Declon.--Ereflodbr.
 
 ## AD 4 -- 1875-05-20
 ## image: images/ad4-1875-05-20.jpg
@@ -54,5 +57,8 @@ W. Str 53. Catokwacopa. Olcabrokorlested. Coomemega. Sesipyyocashostikr. Rep.--I
 ## intelligible if read in connection with my communication published in this column on the 8th
 ## inst." -- confirming ads 3 and 4 are one two-part message in this system, per the sender's own
 ## words (not an inference by this worker).
-## Transcription (as printed; jumbled pseudo-words kept exactly as printed):
-W. --Umem 18. Poayatlgerty. Dpeatcnrftin. Nvtinrdn. Dmlurpinrtrcamnr. Etd. -- Atndngtnsurs. Otenpu.--Etfdorshpxn. 18. Ndtsfindseseo. Cotegr Tsvlysdinlge. Ngtndusdendo. Edrstneirs. Ui. Ndted. Iolapstedttoc. A.P. 138.-- Yxn. 18. 18. Wtubtrfftrstendinhofsvmnr. Dily.--Atdwtsurs. Oatvpu.-- Y Arati. Rileohmae.--This will be intelligible if read in connection with my communication published in this column on the 8th inst.
+## Transcription (as printed; jumbled pseudo-words kept exactly as printed).
+## Second pass (25 Sept 2026, worker bPOL2, subagent pass B) corrected one pass-1 letter:
+## "Ngtndusdcndo" (c, not "Ngtndusdendo") -- confirmed on the image by this worker and matches
+## Thomas Ernst's BNA-checked transcription in Bourdeau's cyphersolver (ads.py).
+W. --Umem 18. Poayatlgerty. Dpeatcnrftin. Nvtinrdn. Dmlurpinrtrcamnr. Etd. -- Atndngtnsurs. Otenpu.--Etfdorshpxn. 18. Ndtsfindseseo. Cotegr Tsvlysdinlge. Ngtndusdcndo. Edrstneirs. Ui. Ndted. Iolapstedttoc. A.P. 138.-- Yxn. 18. 18. Wtubtrfftrstendinhofsvmnr. Dily.--Atdwtsurs. Oatvpu.-- Y Arati. Rileohmae.--This will be intelligible if read in connection with my communication published in this column on the 8th inst.

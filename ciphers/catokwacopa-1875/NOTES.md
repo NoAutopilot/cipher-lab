@@ -153,3 +153,19 @@ demonstrated. This is not a negative result under rule 3 (no matched-control tes
 ciphers of the same design was run, by this sweep or by the audits cited), so "closed-negative" is not used; it
 is reported as partial. No Stage 2 line applies (verdict is not "open"). QUEUE.md row 18 has been annotated with
 this finding rather than moved to Dropped, since no source claims the item solved.
+
+## Pointer (25 Sept 2026, worker bPOL2, LANE B2, appended not edited)
+
+`ciphers/pollaky-1865-1875/` now holds an image-based transcription of what is almost certainly this same
+cipher (ads 3-4 of that target: The Standard, 8 and 20 May 1875, ad 4's own plaintext tail names ad 3 as its
+first half, matching this target's structure exactly). Two independent blind transcription passes there
+(image scan from scienceblogs.de/Gaffney-Gluecklich, not BNA) reconciled at 78/80 tokens (97.5%); the two
+disagreements were settled from the image and diffed letter-for-letter against this target's own working
+text (Ernst's BNA-checked `ads.py` in Bourdeau's cyphersolver): **0 differences out of 72 letter-words
+(100% agreement)** once dash/punctuation notation is normalised out (`ciphers/pollaky-1865-1875/scripts/
+diff_bourdeau.py`, `NOTES.md` "Test 2" section). This is independent corroboration of the ciphertext from a
+second scan source, not a new plaintext reading -- it does not change this target's `partial` verdict or the
+still-open lines in "State of play" above. Whoever next works either target should treat
+`ciphers/pollaky-1865-1875/images/ad3-1875-05-08.jpg` and `ad4-1875-05-20.jpg` as a second available scan
+of the same two ads, and decide whether the two targets should be merged (not done by this worker, out of
+this brief's scope).
