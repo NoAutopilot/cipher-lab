@@ -1,0 +1,129 @@
+canvas	class	note
+1	cover	worker T; Gallica placeholder binding image, not a real leaf
+3	endpaper	marbled paste-down, front of volume
+5	archival-note	1889 collation memo in a later hand: 'Volume de 624 Pages ... plus les feuillets A,B preliminaires K 222bis. Manquent les cotes 19-25,77-84,311-338,477-478,567,568. Les feuillets 78,509,219,221,561,615 sont blancs. 17 Septembre 1889.' Not a content leaf; gives the volume's real page-numbering scheme and its gaps/blanks.
+11	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+13	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+15	print	worker Y4 gap spot-check (step-10/-30 midpoints); all printed pamphlets
+21	print	worker T step-10 sweep, all printed matter
+23	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+25	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+31	print	worker T step-10 sweep, all printed matter
+33	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+35	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+41	print	worker T step-10 sweep, all printed matter
+43	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+45	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+51	print	worker T step-10 sweep, all printed matter
+53	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+55	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+61	print	worker T step-10 sweep, all printed matter
+63	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+65	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+71	print	worker T step-10 sweep, all printed matter
+73	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+75	print	worker Y4 gap spot-check (step-10/-30 midpoints); all printed pamphlets
+81	print	worker T step-10 sweep, all printed matter
+83	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+85	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+91	print	worker T step-10 sweep, all printed matter
+93	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+95	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+101	print	worker T step-10 sweep, all printed matter
+103	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+105	print	worker Y4 gap spot-check (step-10/-30 midpoints); all printed pamphlets
+111	print	worker T step-10 sweep, all printed matter
+113	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+115	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+121	print	worker T step-10 sweep, all printed matter
+123	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+125	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+130	print	worker P probe; stamped page 235; 'Panegyrique de Ste Therese' region begins nearby
+131	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+133	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+135	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+137	print	worker P probe; stamped page 249; 'Panegyrique de Ste Therese' opening leaf
+139	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+141	print	worker T step-10 sweep, all printed matter
+144	print	worker P probe; stamped page 263
+145	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+148	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+151	print	worker T step-10 sweep, all printed matter
+155	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+158	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+161	print	worker T step-10 sweep, all printed matter
+165	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+168	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+171	print	worker T step-10 sweep, all printed matter
+175	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+178	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+181	print	worker T step-10 sweep, all printed matter
+185	print	worker Y4 gap spot-check (step-10/-30 midpoints); all printed pamphlets
+188	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+191	print	worker T step-10 sweep, all printed matter
+195	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+198	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+201	print	worker T step-10 sweep, all printed matter
+205	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+208	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+211	print	worker T step-10 sweep, all printed matter
+215	print	worker Y4 gap spot-check (step-10/-30 midpoints); all printed pamphlets
+220	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+221	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+225	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+231	print	worker T step-10 sweep, all printed matter
+233	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+235	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+241	print	worker T step-10 sweep, all printed matter
+243	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+245	print	worker Y4 gap spot-check (step-10/-30 midpoints); all printed pamphlets
+250	print	worker P probe; stamped page 503; 'Oraison funebre ... Dauphin'/'de Harlay' pamphlet
+251	print	worker T step-10 sweep, all printed matter
+253	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+255	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+261	print	worker T step-10 sweep, all printed matter
+263	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+265	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+271	print	worker T step-10 sweep, all printed matter
+273	print	offset-lattice/bisection probe, low-res (300px); printed pamphlets throughout (funeral orations, factums, legal memoirs, ordinances)
+275	print	worker Y4 gap spot-check (step-10/-30 midpoints); all printed pamphlets
+276	print	bisection probes flanking the f282-283 manuscript find; printed pamphlets (incl. 'Le Tombeau de Monsieur le Dauphin', 'Oraison Funebre ... Marie Adelaide de Savoye')
+277	print	bisection probes flanking the f282-283 manuscript find; printed pamphlets (incl. 'Le Tombeau de Monsieur le Dauphin', 'Oraison Funebre ... Marie Adelaide de Savoye')
+278	print	bisection probes flanking the f282-283 manuscript find; printed pamphlets (incl. 'Le Tombeau de Monsieur le Dauphin', 'Oraison Funebre ... Marie Adelaide de Savoye')
+279	print	bisection probes flanking the f282-283 manuscript find; printed pamphlets (incl. 'Le Tombeau de Monsieur le Dauphin', 'Oraison Funebre ... Marie Adelaide de Savoye')
+280	print	bisection probes flanking the f282-283 manuscript find; printed pamphlets (incl. 'Le Tombeau de Monsieur le Dauphin', 'Oraison Funebre ... Marie Adelaide de Savoye')
+281	print	worker T step-10 sweep, all printed matter
+282	manuscript	NEW find, not the target: 'recherche de noblesse' legal copy re Forez bailliage/election de Montbrizon (names Ferrand, Barbot, Garcon Kiral, Prata, Duquesne, etc.), dated 'le vingtcinq fevrier mil sept cent six' (25 Feb 1706), signed 'De Boiscoujon', endorsed 'Pour copie'. No cipher, no numerals, wrong decade (1706 vs the target's Jan 1713). Bounded print-manuscript-print (f281 print, f282-283 manuscript, f284 print) -- a 2-canvas insert, not a gathering.
+283	manuscript	NEW find, not the target: 'recherche de noblesse' legal copy re Forez bailliage/election de Montbrizon (names Ferrand, Barbot, Garcon Kiral, Prata, Duquesne, etc.), dated 'le vingtcinq fevrier mil sept cent six' (25 Feb 1706), signed 'De Boiscoujon', endorsed 'Pour copie'. No cipher, no numerals, wrong decade (1706 vs the target's Jan 1713). Bounded print-manuscript-print (f281 print, f282-283 manuscript, f284 print) -- a 2-canvas insert, not a gathering.
+284	print	bisection probes flanking the f282-283 manuscript find; printed pamphlets (incl. 'Le Tombeau de Monsieur le Dauphin', 'Oraison Funebre ... Marie Adelaide de Savoye')
+286	print	bisection probes flanking the f282-283 manuscript find; printed pamphlets (incl. 'Le Tombeau de Monsieur le Dauphin', 'Oraison Funebre ... Marie Adelaide de Savoye')
+287	print	bisection probes flanking the f282-283 manuscript find; printed pamphlets (incl. 'Le Tombeau de Monsieur le Dauphin', 'Oraison Funebre ... Marie Adelaide de Savoye')
+288	print	bisection probes flanking the f282-283 manuscript find; printed pamphlets (incl. 'Le Tombeau de Monsieur le Dauphin', 'Oraison Funebre ... Marie Adelaide de Savoye')
+289	print	bisection probes flanking the f282-283 manuscript find; printed pamphlets (incl. 'Le Tombeau de Monsieur le Dauphin', 'Oraison Funebre ... Marie Adelaide de Savoye')
+290	print	continuation of the Dauphin/funeral-oration pamphlet run (confirms Y4's f291-305 finding extends to f290/292/295)
+291	print	worker T step-10 sweep, all printed matter
+292	print	continuation of the Dauphin/funeral-oration pamphlet run (confirms Y4's f291-305 finding extends to f290/292/295)
+293	print	worker Y4 fine sweep; continuation of 'Oraison funebre ... Dauphin' pamphlet, page stamps 595-621
+294	print	worker Y4 fine sweep; continuation of 'Oraison funebre ... Dauphin' pamphlet, page stamps 595-621
+295	print	continuation of the Dauphin/funeral-oration pamphlet run (confirms Y4's f291-305 finding extends to f290/292/295)
+296	print	worker Y4 fine sweep; continuation of 'Oraison funebre ... Dauphin' pamphlet, page stamps 595-621
+297	print	worker Y4 fine sweep; continuation of 'Oraison funebre ... Dauphin' pamphlet, page stamps 595-621
+298	print	worker Y4 fine sweep; continuation of 'Oraison funebre ... Dauphin' pamphlet, page stamps 595-621
+299	print	worker Y4 fine sweep; continuation of 'Oraison funebre ... Dauphin' pamphlet, page stamps 595-621
+300	print	worker P probe, confirmed by Y4 fine sweep; same Dauphin pamphlet
+301	print	worker T step-10 sweep, all printed matter
+302	manuscript	worker Y4 fine sweep; naval/administrative correspondence to Pontchartrain, same hand family as f306-311, no cipher
+303	manuscript	worker Y4 fine sweep; naval/administrative correspondence to Pontchartrain, same hand family as f306-311, no cipher
+304	manuscript	worker Y4 fine sweep; naval/administrative correspondence to Pontchartrain, same hand family as f306-311, no cipher
+305	manuscript	worker Y4 fine sweep; naval/administrative correspondence to Pontchartrain, same hand family as f306-311, no cipher
+306	manuscript	worker Y4; letter dated 'Cognac le 18e aoust 1713'
+307	manuscript	worker Y4; letter dated 'a Rochefort ce 18e avril 1713', signed 'Lepinay'
+308	manuscript	worker Y4; further manuscript leaves, same hand family, prose not fully legible at 600px
+309	manuscript	worker Y4; further manuscript leaves, same hand family, prose not fully legible at 600px
+310	manuscript	worker Y4; further manuscript leaves, same hand family, prose not fully legible at 600px
+311	manuscript	worker T/Y4; letter 'a Blayes ce 8e juillet 1713', signed, page stamp 613; not the target (wrong date/place, no cipher)
+312	blank	worker Y4; blank/near-blank backing leaves, stamp '594' partial on f312
+313	blank	worker Y4; blank/near-blank backing leaves, stamp '594' partial on f312
+314	endpaper	worker Y4; marbled paste-down (inside back cover)
+315	calibration-card	Gallica 'Texte deteriore -- reliure defectueuse / NF Z 43-120-11' card, twin of f316's card
+316	calibration-card	worker Y4; Gallica 'Contraste insuffisant / NF Z 43-120-14' end-of-digitisation card
