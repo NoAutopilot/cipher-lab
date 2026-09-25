@@ -1,0 +1,77 @@
+family keyed_running_key: keyed-tableau running key (keyword-mixed alphabet, 4 modes; stage 1 unigram-count ranking, stage 2 running_key.py two-stream beam on the top candidates; control = plain book x key book x random keyword)
+spec specs/koehler-1944.json slug koehler-1944
+ciphertext: 5 message(s), N=924 signs, K=26 distinct, tokens=letters (separate messages)
+corpora: tools/data/de20/pg15736_Der_Mann_von_vierzig_Jahren.txt.gz, tools/data/de20/pg36905_Schach_von_Wuthenow.txt.gz, tools/data/de20/pg41051_Peter_Camenzind.txt.gz, tools/data/de20/pg41907_Demian.txt.gz, tools/data/de20/pg43987_Die_drei_Spruenge_des_Wang_lun.txt.gz, tools/data/de20/pg46184_Frau_Jenny_Treibel.txt.gz, tools/data/de20/pg5323_Effi_Briest.txt.gz
+control seeds [1, 2, 3], restarts 8, gate 0.5, params kcorpus=tools/data/nl20,top=30,beam=300,order=6,spaces=1
+row -> ciphers/koehler-1944/HYPOTHESES.md; decode -> ciphers/koehler-1944/families/keyed_running_key-1.txt
+  control seed 1: keyword 'grube' mode plain arith vig (alphabet grubeacdfhijklmnopqstvwxyz); 11437 candidate alphabets; key corpus kcorpus book held out
+  stage 1: 45749 candidates; top [(19.2, 'bucher', 'plain'), (18.8, 'duchesse', 'plain'), (18.5, 'burger', 'plain'), (18.4, 'gulder', 'plain'), (18.1, 'burgerlijke', 'plain'), (17.8, 'grube', 'plain'), (17.3, 'schreed', 'plain'), (17.2, 'mitgebracht', 'plain'), (17.0, 'rauber', 'plain'), (16.9, 'graue', 'plain'), (16.9, 'bukte', 'plain'), (16.8, 'ruckkehr', 'plain'), (16.8, 'grimasse', 'key'), (16.6, 'durfde', 'plain'), (16.5, 'blute', 'plain'), (16.5, 'schuhe', 'plain'), (16.4, 'blatter', 'plain'), (16.4, 'dwaze', 'plain'), (16.4, 'cijfers', 'plain'), (16.4, 'trabte', 'plain'), (16.4, 'trage', 'plain'), (16.3, 'tableau', 'plain'), (16.3, 'hartelijk', 'plain'), (16.3, 'luider', 'plain'), (16.3, 'zwakke', 'plain'), (16.2, 'dutje', 'plain'), (16.2, 'drukke', 'plain'), (16.1, 'bruder', 'plain'), (16.1, 'druber', 'plain'), (16.1, 'haufiger', 'key')]; standard tableau -20.7 nats (rank 28181)
+  stage 1: true keyword ('grube', 'plain') ranked 6
+  stage 2: mixed:bucher:plain:vig stage1 19.2 -> msg1 joint ll/letter -3.494
+  stage 2: mixed:duchesse:plain:vig stage1 18.8 -> msg1 joint ll/letter -3.480
+  stage 2: mixed:burger:plain:vig stage1 18.5 -> msg1 joint ll/letter -3.400
+  stage 2: mixed:gulder:plain:vig stage1 18.4 -> msg1 joint ll/letter -3.494
+  stage 2: mixed:burgerlijke:plain:vig stage1 18.1 -> msg1 joint ll/letter -3.510
+  stage 2: mixed:grube:plain:vig stage1 17.8 -> msg1 joint ll/letter -2.894
+  stage 2: mixed:schreed:plain:vig stage1 17.3 -> msg1 joint ll/letter -3.537
+  stage 2: mixed:mitgebracht:plain:vig stage1 17.2 -> msg1 joint ll/letter -3.520
+  stage 2: mixed:rauber:plain:vig stage1 17.0 -> msg1 joint ll/letter -3.525
+  stage 2: mixed:graue:plain:vig stage1 16.9 -> msg1 joint ll/letter -3.387
+  stage 2: mixed:bukte:plain:vig stage1 16.9 -> msg1 joint ll/letter -3.510
+  stage 2: mixed:ruckkehr:plain:vig stage1 16.8 -> msg1 joint ll/letter -3.511
+  stage 2: mixed:grimasse:key:vig stage1 16.8 -> msg1 joint ll/letter -3.496
+  stage 2: mixed:durfde:plain:vig stage1 16.6 -> msg1 joint ll/letter -3.426
+  stage 2: mixed:blute:plain:vig stage1 16.5 -> msg1 joint ll/letter -3.492
+  stage 2: mixed:schuhe:plain:vig stage1 16.5 -> msg1 joint ll/letter -3.480
+  stage 2: mixed:blatter:plain:vig stage1 16.4 -> msg1 joint ll/letter -3.511
+  stage 2: mixed:dwaze:plain:vig stage1 16.4 -> msg1 joint ll/letter -3.493
+  stage 2: mixed:cijfers:plain:vig stage1 16.4 -> msg1 joint ll/letter -3.542
+  stage 2: mixed:trabte:plain:vig stage1 16.4 -> msg1 joint ll/letter -3.455
+  stage 2: mixed:trage:plain:vig stage1 16.4 -> msg1 joint ll/letter -3.448
+  stage 2: mixed:tableau:plain:vig stage1 16.3 -> msg1 joint ll/letter -3.517
+  stage 2: mixed:hartelijk:plain:vig stage1 16.3 -> msg1 joint ll/letter -3.494
+  stage 2: mixed:luider:plain:vig stage1 16.3 -> msg1 joint ll/letter -3.483
+  stage 2: mixed:zwakke:plain:vig stage1 16.3 -> msg1 joint ll/letter -3.487
+  stage 2: mixed:dutje:plain:vig stage1 16.2 -> msg1 joint ll/letter -3.475
+  stage 2: mixed:drukke:plain:vig stage1 16.2 -> msg1 joint ll/letter -3.473
+  stage 2: mixed:bruder:plain:vig stage1 16.1 -> msg1 joint ll/letter -3.293
+  stage 2: mixed:druber:plain:vig stage1 16.1 -> msg1 joint ll/letter -3.252
+  stage 2: mixed:haufiger:key:vig stage1 16.1 -> msg1 joint ll/letter -3.511
+CONTROL seed 1: N=924 K=26 recovery 0.791 score -3.01
+  control seed 2: keyword 'ausschlag' mode plain arith vig (alphabet auschlgbdefijkmnopqrtvwxyz); 11437 candidate alphabets; key corpus kcorpus book held out
+  stage 1: 45749 candidates; top [(12.7, 'schlagt', 'plain'), (12.4, 'schlaft', 'plain'), (12.1, 'ausschlag', 'plain'), (11.7, 'schlug', 'plain'), (10.6, 'schmuck', 'plain'), (10.6, 'lastig', 'plain'), (10.5, 'schuim', 'plain'), (10.1, 'sichtlich', 'plain'), (10.0, 'schril', 'plain'), (9.7, 'tatsachlich', 'plain'), (9.7, 'schrik', 'plain'), (9.5, 'schirm', 'plain'), (9.3, 'stijl', 'plain'), (9.0, 'ebenfalls', 'key'), (9.0, 'grijs', 'plain'), (8.6, 'hamburg', 'plain'), (8.5, 'ausblick', 'plain'), (8.5, 'stijf', 'plain'), (8.3, 'sudlich', 'plain'), (8.2, 'schmidt', 'plain'), (8.0, 'huilt', 'plain'), (7.9, 'richtig', 'plain'), (7.9, 'haastig', 'plain'), (7.6, 'flucht', 'plain'), (7.5, 'dwaallicht', 'plain'), (7.5, 'natuurlijke', 'plain'), (7.4, 'doodsangst', 'plain'), (7.2, 'vlaamsch', 'plain'), (7.2, 'tuchtig', 'plain'), (7.1, 'ewigkeit', 'plain')]; standard tableau -20.5 nats (rank 26517)
+  stage 1: true keyword ('ausschlag', 'plain') ranked 3
+  stage 2: mixed:schlagt:plain:vig stage1 12.7 -> msg1 joint ll/letter -3.446
+  stage 2: mixed:schlaft:plain:vig stage1 12.4 -> msg1 joint ll/letter -3.450
+  stage 2: mixed:ausschlag:plain:vig stage1 12.1 -> msg1 joint ll/letter -3.003
+  stage 2: mixed:schlug:plain:vig stage1 11.7 -> msg1 joint ll/letter -3.396
+  stage 2: mixed:schmuck:plain:vig stage1 10.6 -> msg1 joint ll/letter -3.469
+  stage 2: mixed:lastig:plain:vig stage1 10.6 -> msg1 joint ll/letter -3.529
+  stage 2: mixed:schuim:plain:vig stage1 10.5 -> msg1 joint ll/letter -3.505
+  stage 2: mixed:sichtlich:plain:vig stage1 10.1 -> msg1 joint ll/letter -3.480
+  stage 2: mixed:schril:plain:vig stage1 10.0 -> msg1 joint ll/letter -3.454
+  stage 2: mixed:tatsachlich:plain:vig stage1 9.7 -> msg1 joint ll/letter -3.437
+  stage 2: mixed:schrik:plain:vig stage1 9.7 -> msg1 joint ll/letter -3.493
+  stage 2: mixed:schirm:plain:vig stage1 9.5 -> msg1 joint ll/letter -3.485
+  stage 2: mixed:stijl:plain:vig stage1 9.3 -> msg1 joint ll/letter -3.456
+  stage 2: mixed:ebenfalls:key:vig stage1 9.0 -> msg1 joint ll/letter -3.505
+  stage 2: mixed:grijs:plain:vig stage1 9.0 -> msg1 joint ll/letter -3.493
+  stage 2: mixed:hamburg:plain:vig stage1 8.6 -> msg1 joint ll/letter -3.469
+  stage 2: mixed:ausblick:plain:vig stage1 8.5 -> msg1 joint ll/letter -3.479
+  stage 2: mixed:stijf:plain:vig stage1 8.5 -> msg1 joint ll/letter -3.507
+  stage 2: mixed:sudlich:plain:vig stage1 8.3 -> msg1 joint ll/letter -3.495
+  stage 2: mixed:schmidt:plain:vig stage1 8.2 -> msg1 joint ll/letter -3.511
+  stage 2: mixed:huilt:plain:vig stage1 8.0 -> msg1 joint ll/letter -3.508
+  stage 2: mixed:richtig:plain:vig stage1 7.9 -> msg1 joint ll/letter -3.435
+  stage 2: mixed:haastig:plain:vig stage1 7.9 -> msg1 joint ll/letter -3.461
+  stage 2: mixed:flucht:plain:vig stage1 7.6 -> msg1 joint ll/letter -3.481
+  stage 2: mixed:dwaallicht:plain:vig stage1 7.5 -> msg1 joint ll/letter -3.541
+  stage 2: mixed:natuurlijke:plain:vig stage1 7.5 -> msg1 joint ll/letter -3.532
+  stage 2: mixed:doodsangst:plain:vig stage1 7.4 -> msg1 joint ll/letter -3.531
+  stage 2: mixed:vlaamsch:plain:vig stage1 7.2 -> msg1 joint ll/letter -3.474
+  stage 2: mixed:tuchtig:plain:vig stage1 7.2 -> msg1 joint ll/letter -3.530
+  stage 2: mixed:ewigkeit:plain:vig stage1 7.1 -> msg1 joint ll/letter -3.554
+CONTROL seed 2: N=924 K=26 recovery 0.740 score -3.10
+  control seed 3: keyword 'omsloeg' mode key arith vig (alphabet omslegabcdfhijknpqrtuvwxyz); 11437 candidate alphabets; key corpus kcorpus book held out
+  stage 1: 45749 candidates; top [(18.1, 'nuance', 'key'), (17.6, 'aufgeben', 'key'), (17.6, 'ophief', 'key'), (17.2, 'omsloeg', 'key'), (17.0, 'achseln', 'key'), (16.9, 'offizielle', 'key'), (16.8, 'achtete', 'key'), (16.7, 'ausgesehen', 'key'), (16.4, 'hochseligen', 'plain'), (16.3, 'asche', 'key'), (16.1, 'notwendig', 'key'), (15.9, 'aufnehmen', 'key'), (15.9, 'aufsehen', 'key'), (15.7, 'ausgelassen', 'key'), (15.7, 'actie', 'key'), (15.6, 'opkomen', 'key'), (15.4, 'opzien', 'key'), (15.4, 'algiers', 'key'), (15.3, 'lokjes', 'key'), (15.2, 'aufgedeckt', 'key'), (15.2, 'nijmegen', 'key'), (15.2, 'achzen', 'key'), (14.9, 'aufgebunden', 'key'), (14.9, 'dunkelheit', 'key'), (14.9, 'opinie', 'key'), (14.9, 'illuzie', 'key'), (14.9, 'oogsten', 'key'), (14.8, 'achten', 'key'), (14.8, 'achteren', 'key'), (14.7, 'hochseligen', 'key')]; standard tableau 13.5 nats (rank 87)
+  stage 1: true keyword ('omsloeg', 'key') ranked 4
