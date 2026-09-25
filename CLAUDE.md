@@ -524,6 +524,17 @@ requested by email per NARA's own `usnationalarchives/Catalog-API` GitHub README
 search is reachable but functionally unusable, drowned in unfiltered noise).
 
 
+
+   **Optional discovery keys (listed 25 Sept 2026; the owner adds them in the environment settings, fresh workers pick
+   them up; test presence with `test -n`, never print):** `EUROPEANA_API_KEY` (Europeana Search/Record API, `wskey=`
+   parameter; replaces the shared public `api2demo` key, which is throttled; aggregates IIIF images from hundreds of
+   European holdings), `DPLA_API_KEY` (Digital Public Library of America, `api_key=` parameter; digitised US
+   collections), `DDB_API_KEY` (Deutsche Digitale Bibliothek: German archives, libraries and the Archivportal-D;
+   authentication as its API documentation at api.deutsche-digitale-bibliothek.de says), `APE_API_KEY` (Archives Portal
+   Europe: archival finding aids across Europe, only from institutions that allow API access; per its API page),
+   `CORE_API_KEY` (CORE open-access full text, `Authorization: Bearer`; for verifiers' scholarship searches). Where a key
+   is absent, fall back to the keyless route and say so in NOTES.md; a missing key never blocks a job.
+
 ## Improvement loop
 
 The orchestrator writes a LEDGER.md row when it archives a worker (role, model, cost, outcome code, lesson).
