@@ -1,0 +1,44 @@
+canvas_index_0based	f_url	folio_ink_number_read	content
+0	f1	(unnumbered)	front cover, marbled paper, blank
+10	f11	~120 (unrelated series, see note)	"Lettres de Monsieur de Trimoüille au Roy" pamphlet; corner cursive "120" above BNF round stamp -- belongs to an unrelated old item-numbering series (see c30/c60/c74), not the true foliation
+30	f31	(unrelated series "19"/"8925")	portrait+bio "...STREES DE LAUZIERES Duc d'Estrées Pair..."; corner "19" (small) + "8925" (large cursive) -- same unrelated series as c10/c60/c74
+60	f61	(unrelated series "51"/"8989")	near-blank leaf; corner "8989" (large) + faint "51" (small) -- same unrelated series
+74	f75	(unrelated series "9017")	"ESTAT DES BIENS...Mazarin" (left) / "EXTRAIT D'UNE LETTRE DE MONSIEUR le Duc Mazarin...A Hennebond le 16 Septembre 1689" (right); corner "9017" -- same unrelated series, Mazarin-estate dossier, unrelated to Noailles
+90	f91	(not legible, crop miss)	engraving frame edge only, corner crop missed the folio-number area
+100	f101	(not captured this crop)	Villeroy family genealogy narrative (unrelated to Noailles bundle)
+105	f106 (naive, WRONG per 24 Sept Y3 pass)	83 (true foliation) + 137 (unrelated series)	engraved portrait of Francois de Neufville de Villeroy, archeveque et comte de Lyon; confirms naive canvas+1=folio fails; offset formula folio=canvas_index-22 verified here (105-22=83)
+115	f116	~ (not read this crop)	Villeroy eulogy/biographical text (Henry III, Roy de Navarre)
+118	f119	96 (true) + 103 (unrelated series)	Villeroy eulogy pamphlet p.14-15; offset verified again (118-22=96)
+124	f125	102 (true) + 115 (unrelated series)	Villeroy eulogy pamphlet p.26-27, mentions "CAMILLE DE NEUFVILLE"; offset verified again (124-22=102)
+128	f129	106 (true, single number, no companion)	PINNED: true folio 106. Engraved portrait, plain oval frame, NO caption visible in this crop -- unidentified subject, NOT the Villeroy portrait. This is the start of the "Fol. 106 et suiv." finding-aid bundle. Offset=22 (128-22=106)
+132	f133	110	title page "DISCOURS SUR LA PRESENTATION...ANNE JULE DUC DE NOAILLES..." -- finding-aid item 1 (Discours, Toulouse 1683). Offset verified (132-22=110)
+137	f138	119 (offset drift, read ~18)	Discours/biographical continuation re: "Antoine de Noailles", ambassades, "Evesque d'Acqs"
+142	f143	120	manuscript-style biographical continuation: military campaigns "en Flandre" 1672/1683/1690/1691 of the Noailles family. Offset verified (142-22=120)
+147	f148	121 (offset drift, read ~26)	title page "ORAISON FUNEBRE DE ANNE JULE DUC DE NOAILLES PAIR ET MARESCHAL DE FRANCE" -- finding-aid item 3 (Oraison funebre, Delarue, 1719)
+157	f158	139 (offset drift, read ~18)	Oraison Funebre text, printed p.22-23 (Bruttus/Job citations)
+162	f163	140	Oraison Funebre text, printed p.32-33 (Genese citation). Offset near-consistent (162-22=140)
+165	f166	143	"APPROBATION" + "PRIVILEGE DU ROY" -- end matter of the Oraison Funebre pamphlet, privilege dated 21 Mars 1709 (reused older privilege for a 1719 sermon, not anomalous)
+166	f167	~144	LEFT: unrelated verse fragment headed "1710" ("Une fille du Prince de Ligne...") + a note re: "le fils du Mal. Villeroy age de 19 ans"; RIGHT: start of a NEW portrait plate, mirrored/partial caption "...DUC DE NOAILLES PAIR DE FRANCE MARECHAL DES CAMPS..."
+167	f168	(not read, portrait plate)	full engraved portrait of Anne-Jules duc de Noailles (FIRST of two copies in this volume), captioned "...MARECHAL DES CAMPS ET ARMEES DU ROY ET CHEVALIER DE L'ORDRE DE LA TOISON D'OR..."
+168	f169	149	manuscript letter "AU ROY / Sire / Le Marechal de Noailles n'avoit pas appréhendé d'importuner Votre Majesté..." -- start of finding-aid item 4 narrative (Memoire au Roi avec pieces, 1704-1708), M. de Bouillon dispute
+169	f170	146 (non-monotonic vs c168 -- reading uncertainty, not re-verified)	Memoire narrative continues (M. de Bouillon arrerages dispute)
+171	f172	163	title "Pieces Justificatives du memoire presente au Roy par M. le mareschal de Noailles..." + "Lettre de Mons. le duc de Cheureuse a M. l'abbe de Polignac, Juillet 1704" -- pieces-justificatives section of item 4
+174	f175	164	Memoire pieces continue: parish/tax certificates (Meyssac area)
+177	f178	178 (crop label uncertain)	certificate testimony re: troops at Meyssac/Curenne, "mal des logis" (billeting NCO)
+180	f181	157 (corner crop only, 25 Sept prior pass)	manuscript letter re: "soumissions...Gouverneur...Son Altesse" -- part of item 4 narrative
+190	f191	167	"Extrait de la lettre de M. de Montreuil a Made la mareschalle, du 6bre 1707" + "Certificat du cure...Meyssac"
+195	f196	172	Memoire pieces certificates continue (Meyssac, 4 Janvier 1708)
+200	f201	177	"Observations sur le Certificat cy dessus" (numbered points 1-9)
+201	f202	178	certificat du mal des logis de la compagnie de Cambon
+202	f203	179	continuing observations "gens de M. de Bouillon"; "Information faite a Turenne" -- appears to be the END of item 4's narrative/pieces section
+203	f204	180	engraved portrait, unnamed standing figure, Spanish/1630s costume, plain frame -- NOT captioned in this crop, unrelated to Noailles bundle by costume/date
+204	f205	181	engraved portrait of Anne-Jules duc de Noailles (SECOND copy in this volume), full caption "ANNE JULE DUC DE NOAILLES PAIR ET MAL. DE FRANCE...VICEROY DE CATALOGNE..." with a dedicatory verse below
+205	f206	182	title page "DECLARATION DE MONSEIGNEUR LE DUC DE NOAILLES EN FAVEUR DES CATALANS; Traduite fidelement de l'Espagnol en Francois. A Toulouse...M.DCC.X" (1710) -- NOT listed in the finding-aid item note at all
+206	f207	183	Catalans declaration continues, bilingual French/Spanish parallel text
+207	f208	184	Catalans declaration continues
+209	f210	186	Catalans declaration continues (Philippe V / Duc de Noailles plenipotentiary correspondence)
+210	f211	187	Catalans declaration ENDS, signed "A Valladolid le vingt-cinquiesme Septembre de mil sept cens dix. MOI LE ROI" + "Don Pedro Caitano Fernandes del Campo"
+211	f212	188	LEFT: tail end of Catalans declaration (Spanish, Don Francisco Antonio de la Concha); RIGHT: NEW section title "Promotion du 31 Decembre 1688 & jours suivans" -- "ARMAND SEIGNEUR DU CAMBOUT Duc de Coislin..." portrait -- this is the volume's OWN titular content (Ordre du Saint-Esprit, 1688 promotion), i.e. the Noailles-family miscellany bundle ENDS at folio188 with no room found for "Avis de Flandre, chiffres" or the 1570 letter
+212	f213	189	heraldry armorial plate, 16 coats of arms, "Cambout Duc de Coislin" -- Order of Saint-Esprit promotion gallery continues, unrelated to the Noailles bundle
+214	f215	~191	engraved portrait, oval frame, partial caption "DUX ET..." -- promotion gallery continues
+216	f217	192	LEFT: numeric memorandum (sums in livres/sols/deniers style: "600/[500]/700/1100/300/1600/500/3300" etc) -- NOT cipher-shaped, looks like an accounts total; RIGHT: heading "[?]amont -a Villeguiers", blank oval ghost-impression from facing plate

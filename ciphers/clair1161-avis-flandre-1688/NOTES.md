@@ -188,3 +188,80 @@ manuscrits de la collection Clairambault* (already flagged 24 Sept, ark:/12148/b
 volume's own collation note, before any further transcription attempt.
 
 Hosts touched this pass: none (disk-only, per brief). Requests: 0.
+
+## Y7: leaf located (25 Sept 2026, LANE R6)
+
+Brief: locate the true canvas for folio 106 (the start of the finding aid's "Fol. 106 et suiv." bundle
+carrying "Avis de Flandre, chiffrés") by fitting canvas=a*folio+b from ink-foliation probes, then bisect
+toward it. `date -u` at session start: 2026-09-25 16:57 UTC.
+
+**Folio 106 is pinned.** The manifest's canvas labels are all "NP" (no foliation, as already logged), but
+every leaf in this part of the volume carries the true archival foliation in cursive ink in the top-right
+corner, distinct from a *second*, unrelated large reference number on the same corner (e.g. "137", "8925",
+"9017", "9181"...) that belongs to some other old Clairambault-era numbering and does not track folio count.
+Low-resolution top-right-corner probes (IIIF region crops, ~1-2 s apart, one at a time) at canvas indices
+30, 60, 74, 100, 105, 118, 124, 128, 132, 142 gave **six independent exact matches** to the formula:
+
+    true_folio (ink, cursive) = canvas_index_0based - 22
+
+(canvas 105->folio 83, 118->96, 124->102, 128->106, 132->110, 142->120). This supersedes the naive
+canvas+1=folio guess used for the 24 Sept `f106_full.png` fetch (Y-worker, "canvas_index+1"): that leaf is
+actually **folio 83**, not 106 -- a Villeroy portrait, correctly identified as not-the-target back on 24
+Sept, but for the wrong reason (it was read as "no relation at all" between canvas and folio; there is a
+relation, just offset by 22, not 1). `images/manifest.json` is corrected accordingly and the file is kept,
+relabelled, not deleted.
+
+**True folio 106 = canvas_index_0based 128 (`f129` in the IIIF path).** Viewed at 1200px and at a
+3400x3800 top-right crop: an engraved portrait in a plain oval frame, no caption text visible in the
+crop -- not Villeroy (different frame style), not yet identified as one of the four Noailles figures the
+finding aid names. **This is not the cipher leaf.**
+
+**Cipher not found in an extensive sweep from folio 106 through folio 192 (canvas 128-216), 25+ points
+checked, no gaps larger than 2 folios left unread in that span.** Full detail, canvas by canvas, is in
+`images/canvas_sweep.tsv` (44 rows, corner + full-page reads). Summary of what *is* there, in physical
+order:
+
+| true folio (approx) | content |
+|---|---|
+| 106 | unidentified portrait, plain frame (start of the bundle) |
+| 107-120 | "DISCOURS SUR LA PRESENTATION...ANNE JULE DUC DE NOAILLES..." (Toulouse, 1683) -- finding-aid item 1, plus biographical/genealogical continuation (Villeroy-family text bleeds in around folio 96-105, a *preceding*, unrelated bundle, not part of this one) |
+| 121-143 | "ORAISON FUNEBRE DE ANNE JULE DUC DE NOAILLES PAIR ET MARESCHAL DE FRANCE" (Delarue, 1719, 39 pp.) -- item 3, with its own Approbation/Privilege du Roy end-matter (dated 1709, a reused older privilege) |
+| ~144 | an unrelated verse fragment headed "1710" + a portrait-plate caption starting (Anne-Jules duc de Noailles, first of two copies in this volume) |
+| 146-179 | "AU ROY / Sire / Le Marechal de Noailles..." and "Pieces Justificatives du memoire presente au Roy par M. le mareschal de Noailles..." (the M. de Bouillon arrerages/imposition dispute, Meyssac/Curenne certificates 1704-1708) -- item 4, Memoire au Roi avec pieces |
+| 180-181 | two more portraits: an unidentified Spanish-costume figure, then Anne-Jules duc de Noailles again (second copy, full caption, dedicatory verse) |
+| 182-187 | "DECLARATION DE MONSEIGNEUR LE DUC DE NOAILLES EN FAVEUR DES CATALANS...A Toulouse...M.DCC.X" (1710) -- a bilingual French/Spanish pamphlet, signed at Valladolid 25 Sept 1710 by the King and Don Pedro Caitano Fernandes del Campo. **Not named in the finding-aid item note at all.** |
+| 188 | the Noailles-family miscellany ends mid-leaf; the volume's own titular content begins: "Promotion du 31 Decembre 1688 & jours suivans" -- a portrait/armorial gallery for the 1688 promotion of the Ordre du Saint-Esprit (Armand seigneur du Cambout, duc de Coislin, etc.), continuing at least to folio 192 (canvas 216) with no gap for a cipher letter |
+
+No leaf in this range shows numeral-dense text (the one numeric-looking leaf, folio ~192, is an ordinary
+accounts memorandum in livres/sols/deniers, not a cipher). Neither "Avis de Flandre, chiffrés" nor "lettre
+orig. de François II de Noailles, évêque de Dax, au marquis de Villars, 20 déc. 1570" (finding-aid items 5
+and 6) were seen, and there is no unaccounted gap of more than ~2 folios anywhere in folio 106-192 where a
+short item could hide unnoticed -- the Noailles miscellany runs essentially gapless from folio 106 to its
+own end at folio 188, then straight into unrelated promotion-portrait content.
+
+**Conclusion: the finding aid's citation order (Discours, Arret, Oraison funebre, Memoire avec pieces, Avis
+de Flandre chiffres, lettre orig. 1570) does not match this volume's physical binding order for the items
+actually found** (Discours and Oraison funebre are in citation order; Memoire avec pieces follows correctly;
+but the volume then contains an unlisted 1710 Catalans pamphlet and no trace of the last two listed items
+before the bundle visibly ends). Either (a) "Avis de Flandre, chiffrés" and the 1570 letter are bound
+earlier in the volume (unsampled: canvas 0-90/folio roughly -22 to 68, only spot-checked at c0, c10, c30,
+c60 so far, all unrelated printed ephemera with a *different*, non-offset-22 numbering -- worth a systematic
+sweep with the same corner-crop method), or (b) the BnF finding aid's composite note is simply wrong about
+physical order (not uncommon for a "Recueil factice" catalogued long after assembly), and the two items are
+elsewhere in the volume's 342 canvases (up to folio ~304), possibly among further Ordre-du-Saint-Esprit
+promotion material past folio 192, which was not checked this pass.
+
+**Not pinned. Suggestion for the next worker (one line, not actioned):** sweep canvas 0-90 (folio range
+below the confirmed offset-22 zone, using the same corner-crop calibration method -- it may use a different
+offset, since the numbering there did not match offset 22 at c10/c30/c60/c74) before assuming the item is
+lost; if that also fails, a sweep past canvas 216 (folio 192+) through the rest of the promotion gallery
+(up to ~canvas 342) is the remaining unchecked two-thirds of the volume.
+
+Hosts touched: gallica.bnf.fr only, one request at a time, >=1.5-2s apart (curl, UA "cipher-lab research
+script (contact via repository)"), ~63 requests (IIIF `info.json` x1, manifest.json x1, low-res/corner
+probes and full-page reads at ~55 distinct canvases; 5 requests failed with a proxy-side connection reset
+or 502/400, all retried at most once, consistent with the known `ws_closed_mid_exchange` proxy issue noted
+24 Sept 2026, not a site block). No altcha/403/429 seen from Gallica. No native-resolution leaf was saved to
+`images/` this pass (the target leaf was not identified with confidence, and none of the research-probe
+images individually exceed the 30 MB folder cap, but were not committed to keep the folder clean --
+`images/manifest.json` and `images/canvas_sweep.tsv` are the durable record).

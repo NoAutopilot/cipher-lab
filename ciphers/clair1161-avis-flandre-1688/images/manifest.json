@@ -5,13 +5,29 @@
   "volume_title": "Volumes consacrés à l'histoire de l'Ordre du Saint-Esprit. I-CXX « Minutes du Recueil pour servir à l'histoire de l'Ordre et des commandeurs, chevaliers et officiers de l'Ordre du Saint-Esprit, par Clairambault, » classées dans l'ordre chronologique. LI Année 1688.",
   "canvas_count": 342,
   "canvas_labels": "all 'NP' (no foliation encoded in the IIIF manifest, same defect as fr.3019 on 24 Sept 2026)",
+  "foliation_calibration": {
+    "date": "2026-09-25",
+    "worker": "LANE R6 Y7",
+    "formula": "true_folio (ink, cursive, matches the finding aid's 'Fol. NNN') = canvas_index_0based - 22",
+    "verified_at": "canvas 105->folio 83, canvas 118->folio 96, canvas 124->folio 102, canvas 128->folio 106, canvas 132->folio 110, canvas 142->folio 120 (six independent exact matches, offset constant at 22)",
+    "note": "Every leaf in this range carries TWO different old ink numbers in the top-right corner: the true continuous foliation (small, matches this formula) and a second, unrelated large reference number (seen as '137','8925','8989','9017','9181'... at the same leaves) that belongs to some other Clairambault-era numbering (item/dossier reference, not folio count) and does NOT follow the offset-22 formula. Do not confuse the two -- see images/canvas_sweep.tsv for both readings per canvas. The naive canvas+1=folio guess used for f106_full.png (24 Sept 2026) was wrong by 22, not by a Y3-confirmed 'no relation at all' as previously logged."
+  },
   "fetched": [
     {
       "file": "f106_full.png",
       "date": "2026-09-24",
       "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90010063/f106/full/full/0/native.jpg",
       "canvas_index_0based": 105,
-      "note": "Screenshot of native.jpg rendered by Chromium (browser_fetch.js) — direct binary fetch of this IIIF image endpoint returned 'upstream request failed' twice; the full/full native URL rendered on the 3rd attempt (after a thumbnail-size URL also failed twice). Naive guess canvas_index+1 = folio number, UNVERIFIED: the leaf shown is a printed engraved portrait of François de Neufville de Villeroy (archevêque et comte de Lyon) with printed page numbers '137'/'83' in the margin, not a manuscript folio '106' — confirms this volume interleaves unrelated printed and manuscript material and that the naive canvas-to-folio mapping used for fr.3019/fr2980 does not hold here. The true location of the 'Avis de Flandre, chiffrés' item (catalogued at Fol. 106 et suiv. in the finding aid, not the IIIF manifest) was not located this pass."
+      "RELABELLED_2026-09-25": "This is NOT folio 106. It is folio 83 (true foliation, formula above), an engraved portrait of Francois de Neufville de Villeroy, archeveque et comte de Lyon. The true folio 106 is canvas_index_0based=128 (f129 URL) -- see the 'true_folio_106' entry below. Kept for the record; do not use as the located leaf.",
+      "note": "Screenshot of native.jpg rendered by Chromium (browser_fetch.js) — direct binary fetch of this IIIF image endpoint returned 'upstream request failed' twice; the full/full native URL rendered on the 3rd attempt (after a thumbnail-size URL also failed twice)."
+    },
+    {
+      "file": "not fetched at native resolution this pass (only a 1200px-wide research probe, kept outside images/ per the brief's 30 MB cap -- see NOTES.md Y7 section)",
+      "date": "2026-09-25",
+      "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90010063/f129/full/full/0/native.jpg",
+      "canvas_index_0based": 128,
+      "true_folio_106": true,
+      "note": "PINNED: true folio 106, the start of the finding aid's 'Fol. 106 et suiv.' bundle. Engraved portrait, plain oval frame, no caption visible in a 3400x3800 top-right crop -- unidentified subject (not Villeroy, not yet identified as one of the four named Noailles figures either). This is NOT the 'Avis de Flandre, chiffrés' cipher leaf. See NOTES.md Y7 section and images/canvas_sweep.tsv for the full sweep from here through folio 192 (canvas 216): the entire span is accounted for as Noailles-family printed/manuscript ephemera (Discours 1683, Oraison funebre 1719, Memoire au Roi avec pieces 1704-1708, a 1710 Declaration en faveur des Catalans not in the finding aid note) with no trace of the cipher or the 1570 Dax letter, ending at folio 188 where the volume's own titular content (Ordre du Saint-Esprit, 1688 promotion portraits) begins. Not pinned this pass."
     }
   ],
   "finding_aid": {
