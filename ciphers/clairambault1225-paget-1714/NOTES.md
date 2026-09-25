@@ -292,3 +292,102 @@ Not verified against any printed source this pass (rule 10 -- report only, no no
    not deduplicated, per rule 2); and the old crossed-out pagination sequence (739/741/743/745/747 on the
    R images, then two readings on f65R/f66R that don't fit the expected +2 step -- at least one is
    probably misread).
+
+## Cryptanalysis attempt 1 (25 September 2026, OX-PAGS)
+
+**Result: negative for extending beyond the direct interlinear glosses, with a matched control. Status stays
+partial.** One attempt per this session's brief; not retried.
+
+### Cribs (from the glosses, re-checked directly against `images/f60R.jpg` and `images/f61L.jpg` at native
+resolution, not taken on the transcription passes' word alone)
+
+| Codes | Gloss (image-checked) | Occurrences | Grade |
+|---|---|---|---|
+| 145.31.67 | "Labbé"/"l'abbé" | f60R pos30-32 (as part of the 7-code group below); f61L pos104-106, glossed "Labbe" at pos110 | C (3 independent occurrences, same first/last code) |
+| 145.65.67 | "Labbe" (fourth occurrence of the same word) | f61L pos146-148, glossed "Labbe" at pos152 | C for the word identity; **the middle code is 65, not 31** -- confirmed directly against `ciphertext.tsv` and independently by a fresh-instance subagent (see below). Same word, two different middle codes. |
+| 148.186.147.176 | "Lomeliny" | f60R pos33-36, under a bracket in the manuscript grouping these 4 numbers specifically (image-confirmed) | C (single occurrence, but the manuscript's own bracket separates it cleanly from the "Labbé" codes before it) |
+| 147.46.146.87 + 232.66.45.204 | a name, reading uncertain -- "Gile de"/"Isle de"/"Sile de" + "Labarque"/"Cabarque" (passes disagree; re-checked directly against `images/f60R.jpg`, still ambiguous at native resolution: the capital letter could be G, I or S) | f60R pos69-72 + 75-78, glossed "Gile de" at pos73 and "Labarque" (underlined) at pos86 | M (digits are H/agree in both passes and confirmed directly by me; the word itself is not resolved) |
+
+Image method: cropped `f60R.jpg` (native 1700x2633) at 3-5x with Pillow (installed locally this session, no
+network use) rather than trust the transcription passes' report for anything load-bearing; this caught the
+145.65.67 variant (the transcription passes had already flagged it as an alt spelling of "Labbe" without
+either pass or NOTES.md previously noting the *code* differs, only that the two passes' letter-spellings of
+the gloss word itself differed).
+
+### System hypothesis tested, and why it fails
+
+Run-length arithmetic suggested a fixed "each code = one ~2-letter chunk of the plaintext, read left to
+right" (bigram) rule: "Lomeliny" (8 letters) split cleanly into 4 codes (Lo-me-li-ny), which is the only one
+of the four glossed groups whose letter-count divides evenly by 2. Under that rule, 148=Lo, 186=me,
+**147=li**, 176=ny.
+
+That rule is **falsified by two independent internal contradictions**, not merely unconfirmed:
+
+1. **Code 147 takes two incompatible values.** The same code 147 opens the *other* glossed group
+   (147.46.146.87), which the image confirms is a name beginning with a capital letter (G, I or S) --
+   not "li" under any reading. 147 recurs twice more (f61L pos90, pos166) in runs the earlier transcription
+   pass associated with "de l'Isle"/"la vente de cette isle," never in a position consistent with "li" either.
+2. **The "Labbé" group is itself internally inconsistent.** The identical word, glossed identically ("Labbe")
+   four times, is coded 145.31.67 twice and 145.65.67 once (the fourth occurrence, f61L pos146-148) -- first
+   and last code agree, the middle does not. This eliminates any single fixed 3-code (or bigram) spelling for
+   "Labbé" and instead points to genuine homophony (more than one valid code for whatever the middle position
+   represents) rather than a bijective substitution table -- but homophony in one direction (many codes, one
+   value) does not explain finding #1 (one code, two values), which a decipherable nomenclator should not have.
+
+**Fresh-instance re-derivation** (a subagent given only `ciphertext.tsv`, the gloss list above and a one-
+paragraph statement of the bigram hypothesis, no access to this session's own analysis) independently found
+both contradictions unprompted, plus a third observation: codes 46 (~35-37 occurrences across both letters),
+146 (~20) and 87 (~18) are far too frequent, and appear in long ungossed cipher runs throughout both letters
+(including all of f65R/f66L/f66R, which carry no name-gloss at all), to be reserved letter-chunks specific to
+"Labarque" or "Isle" -- consistent with OX-PAGT's original "common syllable/letter code" reading, but not
+usable as a crib without an independent fix on what any one of them means. Conclusion: **"each number is a
+fixed bigram" cannot be sustained as the system's rule from the cribs in hand; Lomeliny's clean 8/4 split
+looks coincidental.** What kind of system it actually is (syllabic with true homophones, a mixed table of
+whole-word and letter entries, or something else) is not established by this session.
+
+### Matched control (rule 3)
+
+`control_test.py` (this folder; deterministic, reproduces the numbers below on every run) builds a synthetic
+French nomenclator of the **same shape** as the target -- ~500 coded tokens, ~117-122 distinct codes, one
+8-letter name spelled by 4 clean bigram codes (mirroring "Lomeliny"), one 5-letter word spelled by 3 codes
+(mirroring "l'abbé") -- but with a **true, self-consistent, built-by-construction bigram-per-code table** (no
+homophony, no code reused for two values), embedded in a period-register French filler passage written for
+this control. It then runs the identical procedure used on the real target: derive per-code values from the
+two glossed groups, then check every other occurrence of those same 7 codes elsewhere in the control text for
+consistency.
+
+| | Target (real) | Control (synthetic, true bigram key) |
+|---|---|---|
+| Codes carrying a derived value from the glosses | 7 of 122 (5.7%) | 7 of 117 (6.0%) |
+| Times a derived code recurred elsewhere and was checked | 2 (code 147 x1 cross-gloss; code 145/67 vs 65 within "Labbé") | 41 |
+| Confirmations (value held) | 0 | 41 |
+| Contradictions (value did not hold) | 2 | 0 |
+| Tokens correctly readable via the derived codes | 13 of 500 (2.6%, the glossed spans only) | 41 of 503 (8.2%, glosses plus free extension) |
+
+On a control of the same design where the bigram hypothesis is actually true, the identical crib-extraction
+procedure extends for free to 8.2% of tokens with zero contradictions. On the real target, the same procedure
+does not extend at all and produces two contradictions on the only two cross-checks available. This is a
+design fact about Paget's cipher (rule 3's control), not evidence the procedure itself is broken.
+
+### Forced-context extension (brief step 1c)
+
+Checked whether any of the letter's substantively identifiable names/places sit in a "forced" clear-French
+slot that would pin an unglossed code: **Pallavicino, Sardaigne, Aubert, Laugier, Toulon, Parme, Farnese and
+d'Espagne are all already in clear text** in `ciphertext.tsv` (grep-checked), not coded. The coded spans are
+specifically the content with no clear-text parallel elsewhere in the letter -- which removes the main source
+of single-word contextual forcing (there is no known name already stated in clear next to an unglossed code
+run to anchor it against). No code was forced this session; none is graded S.
+
+### No key.tsv produced
+
+Every attempt to decompose the two confirmed multi-code glosses into individual per-code values failed
+internal cross-validation (above), so there is no validated single-code substitution to write into a
+`decode.json`/`key.tsv` that `tools/decode_key.py` could apply -- doing so would assert per-token values this
+session cannot defend (rule 4). The table above is the full extent of what is established; `ciphertext.tsv`
+itself (unresolved codes as bare numbers) is the only defensible "reading." No `specs/clairambault1225-paget-1714.json`
+exists, so `tools/judge_plaintext.py` was not run, and none was written (brief: do not write a spec).
+
+### What stays unread
+
+115 of 122 distinct codes (94.3%), 487 of 500 coded tokens (97.4%) in both letters. No novelty wording (rule
+10) -- report only. A verifier has not looked at this target.
