@@ -1987,3 +1987,16 @@ New: `tx/common.py`, `tx/decode_p10_line10.py`, `tx/reading_P10_L10.tsv`,
 `tx/extract_djvu_range.py`, this section. No edits to `index.tsv`, `AUDIT.md`, any `key_*.tsv`,
 `reading_*.txt`, or any P4 file. Requests: 0 (all four djvu volumes and the P10 page image were
 already cached on disk). No logins, no credentials. Well under the $5 stall alarm.
+
+### Verifier correction (TX-VERP10, 25 Sept 2026)
+
+Job 2's mechanical check reproduces exactly (`tx/decode_p10_line10.py --check` exits 0, same
+numbers: blake 10/14, montagu 9/14, agree 5/14, unread by both 0/14), and its "not a full sentence
+reading" hedge is accurate and stands. But the 14-group gap itself is **not open**: J. R. Powell's
+*The Letters of Robert Blake* (Navy Records Society vol. 76, 1937) already prints a connected
+reading through it ("a force of ships to secure the Plate fleet"), confirmed as this same letter by
+the identical clear-text sentence that follows in both Birch's print and Powell's edition ("In
+pursuance of your Highness order, I have at..."). See AUDIT.md, "P10 L10 groups" section (25 Sept
+2026): class N0, key source `published` (Powell 1937), not `ours`. `key_blake_extended.tsv` and
+`key_montagu_extended.tsv`'s lookups above remain a valid, reproducible mechanical exercise; they
+are just not what closes this gap for novelty purposes.

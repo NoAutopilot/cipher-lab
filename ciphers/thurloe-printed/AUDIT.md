@@ -739,3 +739,115 @@ JSTOR family: searched on the owner's machine 24 Sept 2026, 5 rows, 0 candidates
 Open indexes: the owner ran this target's two queries on OpenAlex (API) and Semantic Scholar (site search) from their own machine on 24 Sept 2026 (ASKS row 34, `outreach/openalex-s2-owner-queries.md`): no relevant hit. V5's single cloud retry at about 17:21 UTC was 429 on both and is superseded. **Gate 2 is met for this target**: JSTOR family clean, open-index pass done, Google Books and the second adversarial audit done earlier (this file's earlier gate table left only the JSTOR rows and the open-index pass open). The outward draft carrying it is `status: ready` (for Thurloe P4, issue 2 of outreach/bourdeau-issues.md; for Eckert and Blathwayt, outreach/huntington-eckert-blathwayt.md).
 
 Outward drafts written this session (status drafted, nothing sent): see `outreach/` and CONTRIBUTIONS.md.
+
+## P10 L10 groups -- the 14 unglossed cipher groups, p.620 line 10 (verifier TX-VERP10, 25 Sept 2026)
+
+Verifier TX-VERP10 (Sonnet, LANE TX, session_01SeeTtgVfKcSJfe3YZPTZoE), parent LANE TX orchestrator
+session_01UDxtM9Xv2dnPfoo5z9T6wA, 25 Sept 2026, clock read 07:36-07:47 UTC. Separate session from the solver
+(LANE TX worker TX-THUR, session_01WvnjtgfyGkCeGzJLHaqpAq, NOTES.md s.22 "Job 2"). I did not decode.
+
+**Claim under audit** (NOTES.md s.22, "Job 2"): of p.620 line 10's 22 cipher tokens (General Blake to the
+Protector, aboard the George, bay of Lagos, 6 July 1655; the P10 audited above), Birch's 1742 print glosses only
+the last 8 ("e t u r e t h e"); the other 14 (values `68 57 78 55 63 36 22 24 33 83 121 68 67 95`) are looked up
+in `key_blake_extended.tsv` (this letter's own P8-P10 pool, resolves 10/14) and `key_montagu_extended.tsv` (a
+different correspondent's pool, comparison only, resolves 9/14) via `tx/decode_p10_line10.py`, fresh-instance
+re-derived. The job brief that sent me here proposed recording this as key source `ours`.
+
+### 1. Mechanical check
+
+`python3 tx/decode_p10_line10.py --check` exits 0 here and reprints the numbers NOTES.md s.22 reports: 22
+tokens, 14 unglossed, `key_blake_extended.tsv` 10/14, `key_montagu_extended.tsv` 9/14, both agree 5/14, unread
+by both 0/14. `reading_P10_L10.tsv` is not stale.
+
+### 2. Image check
+
+Read directly from `images/collectionofstat03thur_leaf0634_p620_crop_L7-12.jpg` (native-resolution crop) and
+cross-checked against the djvu OCR (`sources/ia-fulltext/thurloe-gz/collectionofstat03thur_djvu.txt.gz`,
+restored with zcat, lines ~52290-52310; no refetch). Both agree with `image_transcription.tsv`: line 10's 22
+numeral tokens carry a printed gloss for only the last 8 ("e t u r e t h e", right-aligned under the tail). This
+is Birch's own typesetting gap, not a transcription artefact on this project's part -- confirmed independently
+of NOTES s.18/s.20's own claim to the same effect. The two lines immediately below (line 11 "p l a t e fleet
+and to that end divers", line 12 "Ho l l a n d and French fhips t a k e n u p") are fully glossed in the print
+and already captured in `P10_pairs.tsv` (NOTES s.20); nothing new in that.
+
+### 3. English sense check
+
+The blake-key mechanical reading of the whole line (`th__orceo_fhipsts_ecutethe`, the script's own tail
+comparison) is not continuous readable English by itself, and NOTES s.22 does not claim it is -- that hedge
+("not a full sentence reading, no cryptanalysis... attempted") is accurate and should stand on its own terms.
+Two of the ten blake-read positions do cohere with the print around them: positions 1-2 ("t","h") complete
+line 9's "to fet for[th]" into "forth", and position 11 ("fhips") is independently attested by line 12's own
+printed gloss for the same value (121) -- which is why `key_blake_extended.tsv` already grades it C ("2
+agreeing places (P9+P10)"), not a fresh finding of this pass. The rest of the mechanical lookup does not parse
+as connected prose.
+
+### 4. Search for a prior decipherment -- found
+
+| Family | Status | What |
+|---|---|---|
+| Sender's printed letters: J. R. Powell (ed.), *The Letters of Robert Blake, together with Supplementary Documents* (Navy Records Society vol. 76, 1937) | **searched, positive** | IA `lettersofrobertb0000blak`, be-api full-text search (`q="to secure the Plate fleet"`, 1 request), highlighted hit: **"to set forth a force of ships {{{to secure the Plate fleet}}} and to that end divers Holland"**. Google Books (`googleapis.com/books/v1/volumes`, id `BQcSAAAAIAAJ`, same 1937 title, 1 request) returns the fuller snippet: **"... Cadiz to set forth a force of ships to secure the Plate fleet and to that end divers Holland and French ships taken up . ] In pursuance of your Highness order , I have at ..."**. That last clause ("In pursuance of your Highness order, I have at...") is verbatim-identical to Birch's own 1742 clear-text sentence immediately following the cipher on p.620 ("In purfuance of your highnes order, I have at prefent fent home the Pearle and Mermaid..."), which identifies this beyond doubt as **the same letter, the same passage, the same gap** -- not a different Blake letter with similar wording. be-api's `page_num` field for the hit (540) is not cited as a real locator, per this repo's own established finding that the field equals the item's total image count, not a page (CLAUDE.md host table, IA full-text row) |
+| J. R. Powell, *Robert Blake: General-at-Sea* (1972 biography) | searched, corroborating | Google Books (`9WlxAAAAIAAJ`, 1 request): **"... Cadiz to send out a fleet to bring in the Plate Fleet , for which end divers Holland and French ships have been taken up . 85 On 6 August , Blake got news ..."** -- Powell's own later paraphrase of the same passage, footnoted (85); the footnote text itself was not retrieved (`viewability: NO_PAGES`, no further snippet returned by a second query for the citation) |
+| Solver repositories | searched | Fresh shallow clones, `dbourdeau/cyphersolver` and `aaymeloglu/unsolved-ciphers` (25 Sept 2026), grepped for `lagos`, `george.*bay`, `620`, `6 july`. Bourdeau's `thurloe/` folder targets four different letters (Beverning 1653, Dugard 1656, a Brussels letter and Waddall 1656); neither repository has anything on P10, Blake, or this passage |
+| Holding archive (Bodleian, MS Rawl. A. -- Birch's margin gives "Vol. xxviii", OCR `xxvm`, unconfirmed) | **not reached this session** | `archives.bodleian.ox.ac.uk` is Anubis-challenged for curl (established in the P4 audit above, second audit s.(d)); the Wayback CDX fallback that route used for Rawl. A. 24 failed three times this session on `web.archive.org` (one 504, two connection resets, >=3 s apart, good-citizen one-retry limit reached) -- host left alone. Not needed below: N0 is already established from row 1 |
+| CSPD Domestic 1655 (calendar entry for this letter) | not reached this session | budget spent on the decisive family above; not needed for N0 (same reasoning as the P11-13 and P9/10/14/15 sections above, which did not search the holding archive or CSPD once a print already gave N0) |
+
+Requests this session: be-api.us.archive.org 1; www.googleapis.com 2 (>=2 s apart, key never printed,
+`country=US`); archive.org advancedsearch 1; web.archive.org 3 (all failed, host abandoned per the good-citizen
+rule); github.com 2 shallow clones. No logins, no credentials printed, no subagents.
+
+### 5. Classification
+
+| Item | Class | Prior plaintext | Prior decipherment | Key | Confidence |
+|---|---|---|---|---|---|
+| P10 p.620 L10, the 14 groups Birch's print left unglossed | **N0** | yes: Powell 1937 (NRS 76), confirmed by the identical clear-text continuation | yes: same source -- a connected, published English reading of the whole passage, including the 14-group gap | **published** (Powell 1937, credited; not `ours` -- see below) | high |
+
+N0 = plaintext and decipherment of this very item already known. This corrects the working assumption this job
+was sent out under: the brief proposed recording the key source as `ours` ("from the sibling Blake letters'
+printed decipherments"), on the premise that the 14-group gap was a genuine unglossed remnant this project would
+be the first to extend into. It is not. J. R. Powell's 1937 Navy Records Society edition of Blake's letters --
+the standard modern edition of exactly this correspondence, prepared from the manuscripts, not only from Birch's
+1742 print -- already gives a connected reading through the whole passage, gap included, and Powell's 1972
+biography paraphrases the same content again, citing a source. `key_blake_extended.tsv` and
+`key_montagu_extended.tsv`'s mechanical lookups (10/14 and 9/14) are a real, reproducible exercise, and neither
+key needed correcting by this finding (no value they return conflicts with Powell's wording at the level either
+can be checked), but they are not what closes this gap for novelty purposes; Powell's 1937 print does. Whether
+Powell's wording is copied from a fuller contemporary decipherment in the Rawlinson manuscript than Birch chose
+to typeset, or is Powell's own 1937 rendering of the cipher from the original, is not resolved here and does not
+change the class -- either way it is a prior, published, credited decipherment of this item.
+
+**Safe sentence.** "Birch (1742) prints an interlinear decipherment above most of p.620's cipher, but leaves 14
+of line 10's 22 groups unglossed. J. R. Powell's edition, *The Letters of Robert Blake* (Navy Records Society
+vol. 76, 1937), already gives a connected reading through that gap ('a force of ships to secure the Plate
+fleet'), confirmed as the same letter by the identical clear-text sentence that follows it in both Birch's print
+and Powell's edition. We separately looked the same 14 values up in a key built by aligning this letter's own
+sibling printed decipherments (`key_blake_extended.tsv`, 10/14, and a different correspondent's pool as
+comparison, `key_montagu_extended.tsv`, 9/14); that lookup is a mechanical, reproducible exercise but is not
+the first reading of this passage."
+**Unsafe sentence.** Any wording that calls the 14-group lookup new, unread, first, or an extension into
+previously unrecovered territory, or that credits `key_blake_extended.tsv`/`key_montagu_extended.tsv` as the
+key source for this passage's novelty status (it is `published`, Powell 1937, not `ours`).
+
+### Correction proposed for the P9/P10/P14/P15 section above (not edited there, per this session's file scope)
+
+That section's P10 row says "14 groups of p.620 L10 unglossed in the print" with confidence "high (letter); the
+14 groups are open" and its safe sentence: "14 groups in one line of the 6 July 1655 letter carry no gloss in
+the print." Both are accurate about Birch's print specifically and need no correction on that narrow point, but
+the word "open" there should be replaced with a pointer to this section: the 14 groups are unglossed *in Birch*,
+not open for novelty purposes. Proposed for LANE T to apply to that row's "Later print or citation found" column:
+"Powell, *Letters of Robert Blake* (NRS 76, 1937): connected reading through the gap (AUDIT.md, 'P10 L10
+groups' section, 25 Sept 2026)."
+
+### Postmortem
+
+Under-reporting, not over-claiming, the same pattern as the P11-13 and P9/P10/P14/P15 sections above: NOTES.md
+s.22 uses no rule-10 forbidden word and its own hedge about "not a full sentence reading" is honest, so no
+sentence there needs correcting for wording. The gap is that the job brief (and, following it, s.22) treated the
+14-group remnant as a target for this project's own key-building, without first checking whether the later
+sender-specific edition -- exactly the family CLAUDE.md's verifier template lists first under "(b) sender's and
+recipient's printed correspondence" -- already covered it. It does, and has since 1937. The general lesson
+already on file for this folder (AUDIT.md's P8/P9/P10/P14/P15 sections: "for any Birch letter, check the lines
+next to the cipher for an interlined decipherment before calling it keyed, unkeyed or open") extends one step
+further: before treating any remaining Birch gap as an opening for this project's own key extension, check the
+sender's or recipient's own printed letters for a modern edition that may already have closed it, the same way
+P9/P10/P14/P15's "later print" column was checked for the already-glossed parts of these same four letters but
+was not, until now, checked for this one still-open gap.
