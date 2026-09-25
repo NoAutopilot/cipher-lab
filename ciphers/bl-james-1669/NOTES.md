@@ -5,6 +5,14 @@ worker, its 1669 section at lines ~30281-30650 read directly) and CSP Domestic C
 decipher with a control (both terms independently confirmed present and searchable elsewhere in the same
 corpus): no hit connects to the Duke of York or to Add MS 21483's 1669 letters.
 
+## ZX2-ASK (25 Sept 2026): copy-free checks already run
+
+This job brief named two copy-free checks to run before drafting REQUEST.md (full-text search of Clarke's
+*Life of James the Second*, IA `lifeofjamessecon01inne`, for cipher/cypher 1669; CSP Domestic 1669). Both were
+already run and logged, negative, by LANE CX earlier the same day (25 Sept 2026) — see the "Check-solved (LANE
+CX, 25 Sept 2026)" section immediately below, items 1-2. Not re-run (would duplicate the same archive.org
+requests against the same two identifiers); REQUEST.md drafted directly from that finding.
+
 ## Check-solved (LANE CX, 25 Sept 2026) — the two named editions closed out
 
 The prior sweep (24 Sept 2026, below) identified Clarke's *Life of James the Second* and CSP Domestic 1669 as the
