@@ -1,0 +1,37 @@
+{
+  "source_post": "https://scienceblogs.de/klausis-krypto-kolumne/2017/11/07/the-top-50-unsolved-encrypted-messages-18-the-moustier-altar-inscriptions/",
+  "fetched_utc": "2026-09-25T16:10:00Z",
+  "fetcher": "LANE B2 breadth worker bMOU",
+  "host": "scienceblogs.de",
+  "images": [
+    {
+      "file": "Moustier-130.jpg",
+      "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2015/03/Moustier-130.jpg",
+      "sha1": "9e46d254b7ed91419e82f949065d2c096c858d86",
+      "bytes": 89033,
+      "caption": "St Mary's Altar inscription, closer shot (Schmeh's post text: \"Here's a closer shot\")",
+      "used_for_transcription": true,
+      "shows": "altar1 (St Mary's), both tablets, legible"
+    },
+    {
+      "file": "Moustier-212.jpg",
+      "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2015/03/Moustier-212.jpg",
+      "sha1": "51928dbab6c116f45452f97d14a3aeaea356ed84",
+      "bytes": 119400,
+      "caption": "St Martin's Altar, wide shot with Schmeh standing beside it",
+      "used_for_transcription": false,
+      "shows": "altar2 full context; inscription tablets too small/angled to transcribe reliably from this frame"
+    },
+    {
+      "file": "Moustier-220.jpg",
+      "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2015/03/Moustier-220.jpg",
+      "sha1": "1b102eb4dc3f3ee535522794f128f369f0c3ef24",
+      "bytes": 108009,
+      "caption": "St Martin's Altar inscription, close shot",
+      "used_for_transcription": true,
+      "shows": "altar2 (St Martin's), both tablets, legible (slightly softer focus than Moustier-130.jpg)"
+    }
+  ],
+  "requests_to_image_host": 3,
+  "host_note": "scienceblogs.de files/ path is the same host as the post itself; 3 image requests used (budget: at most 3), >=1.5s apart, browser User-Agent"
+}
