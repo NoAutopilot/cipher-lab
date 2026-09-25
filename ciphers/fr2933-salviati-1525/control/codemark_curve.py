@@ -14,6 +14,10 @@ N counts sign tokens. Token accuracy: a token is right when every letter it stan
 
   python3 codemark_curve.py control DESIGN N SEED     -> appends a row to ../control_curve.tsv
   python3 codemark_curve.py target DESIGN SEED        -> the pooled target under DESIGN, codemark_target_*.json
+  python3 codemark_curve.py stats                     -> per-leaf and pooled counts
+  --leaves all (anywhere on the line; LANE R6 CM, 25 Sept 2026) pools all eight leaves f.54r-f.57v instead of the
+  default f.54r+f.54v, so P's rows reproduce without it. f.57r line 17 pos 15-24 (a later marginal note, leafnotes/f57r.md)
+  is dropped from the row pattern. Outputs carry an "_all" suffix (codemark_target_cm_all_s1.json) and a leaves field.
 """
 import csv, json, os, random, sys, time
 from collections import Counter
@@ -24,14 +28,43 @@ import homophonic_anneal as ha
 CORPUS = open(f"{D}/corpus_args.txt").read().split()[1::2]
 VAN = os.path.join(D, "..", "..", "..", "tools/data/it16/letterescrittea01vanzgoog.txt")
 RESTARTS, ITERS, PER_BOX = int(os.environ.get("CM_RESTARTS", 6)), int(os.environ.get("CM_ITERS", 120000)), 2
+# CM_NOISE (cm only, LANE R6 CM): share of control tokens replaced by a type drawn at the target's own frequencies,
+# a stand-in for transcription error (with-marks pass agreement runs 72-80% per leaf). Default 0 keeps P's rows.
+NOISE = float(os.environ.get("CM_NOISE", 0))
 VOW = "aeiou"
 
 
-def rows():
+LEAVES_ALL = ("f54r", "f54v", "f55r", "f55v", "f56r", "f56v", "f57r", "f57v")
+LEAVES = ("f54r", "f54v")
+if "--leaves" in sys.argv:
+    _i = sys.argv.index("--leaves"); _v = sys.argv[_i + 1]; del sys.argv[_i:_i + 2]
+    LEAVES = LEAVES_ALL if _v == "all" else tuple(_v.split(","))
+RSUF = "" if RESTARTS == 6 else f"_r{RESTARTS}"
+SUFFIX = "" if LEAVES == ("f54r", "f54v") else "_all" if LEAVES == LEAVES_ALL else "_" + "-".join(LEAVES)
+
+
+def excluded(leaf, x):
+    """Not body text: f.57r line 17 pos 15-24 is a later marginal note (leafnotes/f57r.md), all plain boxes."""
+    return leaf == "f57r" and x["line"] == "17" and float(x["pos"]) >= 15
+
+
+def rows(leaf=None):
     r = []
-    for f in ("ciphertext_f54r.tsv", "ciphertext_f54v.tsv"):
-        r += list(csv.DictReader(open(f"{D}/../{f}"), delimiter="\t"))
+    for lf in ([leaf] if leaf else LEAVES):
+        r += [dict(x, leaf=lf) for x in csv.DictReader(open(f"{D}/../ciphertext_{lf}.tsv"), delimiter="\t")
+              if not excluded(lf, x)]
     return r
+
+
+def stats():
+    out = []
+    for lf in list(LEAVES) + [None]:
+        r = rows(lf); sg = [x for x in r if x["code"] != "_"]
+        out.append([lf or "pooled", len(sg), len({x["code"] for x in sg}), len({(x["code"], x["marks"]) for x in sg}),
+                    f"{sum(1 for x in sg if x['marks']) / max(1, len(sg)):.1%}", len(r) - len(sg)])
+    print("leaf\tsign_tokens\tbase_codes\tcode_mark_types\tshare_marked\tplain_boxes")
+    for o in out:
+        print("\t".join(map(str, o)))
 
 
 def pattern(n_sign):
@@ -79,7 +112,10 @@ def build(design, n_sign, seed):
         for t in toks:
             names, ws = zip(*homs[t])
             seq.append(rng.choices(names, ws)[0])
-        return seq, toks, {"K": len({s for s in seq}), "key_K": len(units)}
+        if NOISE:
+            un, uw = zip(*units); nrng = random.Random(seed + 9000)
+            seq = [nrng.choices(un, uw)[0] if nrng.random() < NOISE else s for s in seq]
+        return seq, toks, {"K": len({s for s in seq}), "key_K": len(units), **({"noise": NOISE} if NOISE else {})}
     # vi: base codes over token-initial letters, marks over the vowels carried
     codes = Counter(x["code"] for x in sg).most_common()
     marks = Counter(x["marks"] for x in sg if x["marks"]).most_common(10)
@@ -129,7 +165,7 @@ def control(design, n, seed):
     let = sum(a == b for a, b in zip(dec, truth)) / len(truth)
     tok = sum(dec[a:b] == truth[a:b] for a, b in spans) / len(spans)
     row = [design, n, seed, len(stream), len({*stream}), f"{tok:.1%}", f"{let:.1%}", f"{sc:.1f}", f"{true_sc:.1f}",
-           json.dumps(info), f"{time.time() - t0:.0f}s"]
+           json.dumps(dict(info, leaves=SUFFIX or "f54r+f54v", **({"restarts": RESTARTS} if RESTARTS != 6 else {}))), f"{time.time() - t0:.0f}s"]
     f = f"{D}/../control_curve.tsv"
     new = not os.path.exists(f)
     with open(f, "a") as fh:
@@ -147,12 +183,14 @@ def target(design, seed):
         stream, _ = expand([(x["code"], x["marks"] or None) for x in sg])
     sc, key, dec, _ = run(stream, seed)
     json.dump({"design": design, "seed": seed, "score": sc, "decoded": dec, "key": key},
-              open(f"{D}/codemark_target_{design}_s{seed}.json", "w"), indent=0)
+              open(f"{D}/codemark_target_{design}{SUFFIX}{RSUF}_s{seed}.json", "w"), indent=0)
     print(design, seed, f"{sc:.1f}", dec[:200])
 
 
 if __name__ == "__main__":
-    if sys.argv[1] == "control":
+    if sys.argv[1] == "stats":
+        stats()
+    elif sys.argv[1] == "control":
         control(sys.argv[2], int(sys.argv[3]), int(sys.argv[4]))
     else:
         target(sys.argv[2], int(sys.argv[3]))

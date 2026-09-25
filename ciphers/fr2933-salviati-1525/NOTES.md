@@ -1322,3 +1322,74 @@ in the conventional sense of closing correspondence apparatus — with one parti
 
 Cost: `get_session` checked mid-task; well under the $5 cap and 40-minute box. Requests: none (disk only).
 Subagents: 0, per the brief.
+
+## Code+mark at the pooled N (25 Sept 2026, LANE R6 CM)
+
+Worker CM (Opus, cap $10, box 60 minutes), 17:45-17:55 UTC. Brief `.claude/briefs/runs/2026-09-25-lane-r6-cm-salviati-codemark.md`.
+Disk only, no hosts, no subagents. **No reading; grades stay H0 C0 S0 M0 I0; no reading_cm.txt, no spec written.**
+
+**1. Pool.** `control/codemark_curve.py` gained `--leaves all` (default stays f.54r+f.54v; `control cm 720 1` re-run
+reproduces P's 66.9%), a `stats` command, `CM_RESTARTS` recorded in the row, and `CM_NOISE` (below). f.57r line 17
+pos 15-24 (the later marginal note, leafnotes/f57r.md) is dropped from the row pattern; leaf-end plain stretches were
+already `_` and count as plain boxes. `python3 control/codemark_curve.py stats --leaves all`:
+
+| leaf | sign tokens | base codes | code+mark types | share marked | plain boxes |
+|---|---|---|---|---|---|
+| f54r | 370 | 36 | 94 | 37.0% | 139 |
+| f54v | 349 | 34 | 93 | 30.4% | 159 |
+| f55r | 370 | 36 | 85 | 27.8% | 183 |
+| f55v | 334 | 36 | 93 | 35.3% | 165 |
+| f56r | 345 | 33 | 86 | 30.4% | 171 |
+| f56v | 303 | 34 | 96 | 30.7% | 208 |
+| f57r | 456 | 32 | 95 | 33.6% | 36 |
+| f57v | 293 | 32 | 74 | 27.0% | 172 |
+| **pooled** | **2,820** | **36** | **223** | **31.7%** | **1,233** |
+
+**2. Control first, N=2,820, cm design** (the pooled leaves' own row pattern and 223 type frequencies; P's method
+otherwise, rows in `control_curve.tsv` tagged `"leaves": "_all"`). Token accuracy, seeds 1/2/3:
+- 6 restarts (P's setting): **87.3 / 94.2 / 34.4%**. Gate (>= 80% on 2 of 3) **passes**. Seed 3 is a search failure
+  (best score -7169.1 below the true plaintext's -6622.8).
+- 24 restarts: **94.1 / 94.2 / 93.6%**; restarts alone fix seed 3.
+
+**3. Target, cm, all eight leaves** (`control/codemark_target_cm_all{,_r24}_s{1,2,3}.json`). No Italian at any seed.
+
+| run | score per symbol, seeds 1/2/3 | cross-seed agreement | control solve / true plaintext per symbol |
+|---|---|---|---|
+| 6 restarts | -2.680 / -2.687 / -2.699 | 9.3 / 13.8 / 17.8% | -2.30 (s2) / -2.35 |
+| 24 restarts | -2.678 / -2.663 / -2.656 | 4.3 / 18.9 / 10.2% | -2.29 (s1) / -2.35 |
+
+The same seed at 6 and 24 restarts agrees with itself on 1-13% of symbols. The best decode (24 restarts, seed 3) reads
+"esgnidiegnuessegrarelauocataiacut...": no word a reader could crib from.
+
+**4. Crib loop: not run.** Its literal preconditions hold (blind control > 45%, target unread), but rule 3's gain-gate
+paragraph rules it out: the control's blind baseline at 24 restarts is 93.6-94.2% on all three seeds, and the one
+failed seed (34.4%) is lifted to 93.6% by more restarts alone, so the loop has no headroom to show a gain; and the
+target decode offers no word the reader is sure of (solvEX2 seed 3 at 19%: 0 cribs), so the loop has no input.
+
+**Noise check (added; this is the finding that decides how to read step 3).** The step-2 control is noise-free, while
+the transcription is not: pass A/B agreement with marks required ran 72-80% per leaf before settling, and the design
+makes every distinct mark string a distinct sign, so a misread mark makes a wrong type. `CM_NOISE=p` replaces a share
+p of control tokens by a type drawn at the target's own frequencies (seed-fixed); 24 restarts, token accuracy s1/s2/s3,
+score per symbol:
+
+| noise | token accuracy | score per symbol |
+|---|---|---|
+| 0 | 94.1 / 94.2 / 93.6% | -2.29 to -2.30 |
+| 5% | 26.6 / 57.9 / 86.8% | -2.59 / -2.53 / -2.40 |
+| 10% | 42.9 / 26.5 / 34.7% | -2.61 / -2.63 / -2.59 |
+| 20% | 26.5 / 23.7 / 25.4% | -2.71 / -2.74 / -2.70 |
+
+**Verdict.** Target -2.66 to -2.70 per symbol, seeds agreeing 4-19%, against a noise-free control that reads 87-94%
+(6 restarts, 2 of 3) and 94% (24 restarts, 3 of 3). **But the solver breaks under 5% type-level noise (2 of 3 seeds
+under 60%), and the target's score sits between the 10% and 20% noise controls'.** So this is **not a negative for
+code+mark**: the pooled text is what a cm cipher transcribed at 10-20% type error would look like, and also what a
+non-cm text would look like; the test cannot tell them apart at this transcription's error level. cm stays
+**untested in effect**, conditional on the transcription (per-leaf base-code agreement 77.0-86.1%, with-marks lower,
+two leaves settled by a third pass). A test that moves it needs an error-tolerant form: marks collapsed to fewer
+classes (or base codes only, 36 types, which a misread mark cannot split), with a control at the transcription's own
+measured residual error rate. Suggestion (not done): `codemark_curve.py` design `cmc` (code + mark class) with
+`CM_NOISE` set from a re-measured post-settlement error on one leaf.
+
+Regenerate: `python3 control/codemark_curve.py stats --leaves all`; `[CM_RESTARTS=24] [CM_NOISE=p] python3
+control/codemark_curve.py control cm 2820 SEED --leaves all`; `[CM_RESTARTS=24] python3 control/codemark_curve.py
+target cm SEED --leaves all`. Each run about 16 s (6 restarts) or 60 s (24). Requests: none.
