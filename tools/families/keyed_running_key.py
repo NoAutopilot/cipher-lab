@@ -1,8 +1,9 @@
 """keyed_running_key: family B', a running (book) key through a KEYED tableau, wrapping tools/running_key.py
 (GOLD-2C, 25 Sept 2026). Bourdeau's 15 Sept 2026 unigram test and GOLD-2A's two-stream decoder both excluded the
 standard tableau; this family covers the case both left open: c = S3(S1(p) + S2(k)) with the permutations built
-from one keyword-mixed alphabet M (running_key.mixed_tabula: modes plain, key, both, full; arithmetic vig, beau,
-varbeau). Restricted to keyword-mixed alphabets because that is what an agent could carry in his head.
+from one keyword-mixed alphabet M (running_key.mixed_tabula: modes plain, key, both, full, and the cipher-side
+placements cipher, plaincipher, keycipher added 25 Sept 2026, GOLD-K3; arithmetic vig, beau, varbeau). Restricted
+to keyword-mixed alphabets because that is what an agent could carry in his head.
 
 Attack, two stages, both blind:
   1. RANK keywords by the multinomial log-likelihood of the pooled ciphertext letter counts under the letter
@@ -24,7 +25,8 @@ transposition-block alphabet) is outside this family's reach and is said so in H
 
 params (--param k=v): kcorpus=DIR (key-language corpus; default: the plaintext corpus), arith=vig|beau|varbeau,
 order=6, beam=300, per_hyp=10, spaces=1, top=3, nwords=4000, minlen=4, maxlen=12, minocc=3, sel_msg=0 (which
-message picks the winner in stage 2), modes=plain,key,both,full, wordcorpus=DIR[,DIR] (draw the stage-1 keyword
+message picks the winner in stage 2), modes=plain,key,both,full (default; also available: cipher, plaincipher,
+keycipher -- see running_key.mixed_tabula), wordcorpus=DIR[,DIR] (draw the stage-1 keyword
 list from these files/directories instead of the plaintext + key corpora; default None = unchanged, words come
 from corpus + kcorpus -- for a keyword an agent from a different country could have carried, e.g. an English list).
 Needs >= 2 corpus texts (3 when kcorpus is the plaintext corpus). About 1-3 minutes per seed at beam 300."""

@@ -14,10 +14,13 @@ CIPHER: a text file of letters, messages separated by blank lines, '#' lines ign
 is unknown per message, so no state is carried across messages.
 
 Tabulae (mod 26, a=0): vig c = p + k; beau c = k - p; varbeau c = p - k.
---mixed KEYWORD [--mixed-mode plain|key|both|full] (25 Sept 2026, GOLD-2C): the same arithmetic through a keyed
-tableau built from the keyword-mixed alphabet M: plain = the plaintext letter is indexed in M (a mixed plaintext
-alphabet), key = the key letter is, both = both are (cipher read from a-z), full = both are and the cipher letter
-is read from M (the classic mixed Vigenere square). Works in every mode (decode, --control, --noise, --crib-drag);
+--mixed KEYWORD [--mixed-mode plain|key|both|full|cipher|plaincipher|keycipher] (25 Sept 2026, GOLD-2C; cipher/
+plaincipher/keycipher GOLD-K3): the same arithmetic through a keyed tableau built from the keyword-mixed alphabet
+M: plain = the plaintext letter is indexed in M (a mixed plaintext alphabet), key = the key letter is, both = both
+are (cipher read from a-z), full = both are and the cipher letter is read from M (the classic mixed Vigenere
+square), cipher = standard plain and key letters, cipher letter read from M alone (a mixed alphabet on the cipher
+side only), plaincipher/keycipher = plain/key mixed as in mode plain/key, cipher letter also read from M. Works in
+every mode (decode, --control, --noise, --crib-drag);
 the search over keywords is tools/families/keyed_running_key.py (family_run.py --family keyed_running_key).
 
 Decoding: find p maximising LM_p(p) + LM_k(k(p, c)), where LM_p is a letter n-gram model built from --pcorpus
@@ -106,24 +109,30 @@ def keyword_alphabet(word):
     return "".join(out)
 
 
-MIXED_MODES = ("plain", "key", "both", "full")
+MIXED_MODES = ("plain", "key", "both", "full", "cipher", "plaincipher", "keycipher")
 
 
 def mixed_tabula(word, mode="plain", arith="vig"):
-    """A keyed tableau c = S3(S1(p) (+/-) S2(k)) built from one keyword-mixed alphabet M (25 Sept 2026, GOLD-2C).
-    mode plain: S1 = index in M, S2 = S3 = identity      (a mixed plaintext alphabet, standard key letters)
-    mode key:   S2 = index in M, S1 = S3 = identity      (a mixed key alphabet)
-    mode both:  S1 = S2 = index in M, S3 = identity      (both indexed in M, cipher read from a-z)
-    mode full:  S1 = S2 = index in M, S3 = M itself      (the classic mixed Vigenere square: rows of M shifted)
+    """A keyed tableau c = S3(S1(p) (+/-) S2(k)) built from one keyword-mixed alphabet M (25 Sept 2026, GOLD-2C;
+    cipher/plaincipher/keycipher added 25 Sept 2026, GOLD-K3).
+    mode plain:       S1 = index in M, S2 = S3 = identity      (a mixed plaintext alphabet, standard key letters)
+    mode key:         S2 = index in M, S1 = S3 = identity      (a mixed key alphabet)
+    mode both:        S1 = S2 = index in M, S3 = identity      (both indexed in M, cipher read from a-z)
+    mode full:        S1 = S2 = index in M, S3 = M itself      (the classic mixed Vigenere square: rows of M shifted)
+    mode cipher:      S3 = M, S1 = S2 = identity               (mixed alphabet on the cipher side alone, standard
+                                                                 plain and key letters -- rows of a-z shifted, read
+                                                                 out through M)
+    mode plaincipher: S1 = M, S3 = M, S2 = identity             (mixed plaintext alphabet, mixed cipher readout)
+    mode keycipher:   S2 = M, S3 = M, S1 = identity             (mixed key alphabet, mixed cipher readout)
     arith: vig s = S1(p) + S2(k); beau s = S2(k) - S1(p); varbeau s = S1(p) - S2(k) (mod 26).
     Returns a dict tabula usable wherever a tabula name is: enc[p][k] -> c and kof[c][p] -> k (letter indices),
     plus its description. key_of() and encipher() accept it."""
     M = keyword_alphabet(word)
     iM = [M.index(a) for a in A]          # letter index -> position in M
     ident = list(range(26))
-    S1 = iM if mode in ("plain", "both", "full") else ident
-    S2 = iM if mode in ("key", "both", "full") else ident
-    S3 = [IDX[M[i]] for i in range(26)] if mode == "full" else ident
+    S1 = iM if mode in ("plain", "both", "full", "plaincipher") else ident
+    S2 = iM if mode in ("key", "both", "full", "keycipher") else ident
+    S3 = [IDX[M[i]] for i in range(26)] if mode in ("full", "cipher", "plaincipher", "keycipher") else ident
     enc = [[0] * 26 for _ in range(26)]
     kof = [[0] * 26 for _ in range(26)]
     for p in range(26):

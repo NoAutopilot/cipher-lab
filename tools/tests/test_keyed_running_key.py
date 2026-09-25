@@ -29,6 +29,13 @@ def main():
     assert all(rk.encipher(t, p, k) == rk.encipher("vig", p, k) for p in range(26) for k in range(26))
     assert rk.keyword_alphabet("koehler") == "koehlrabcdfgijmnpqstuvwxyz"
 
+    # cipher-side placement (25 Sept 2026, GOLD-K3): mode 'cipher' is the standard vig/beau/varbeau table with M
+    # applied only to the ciphertext readout (S1 = S2 = identity); the loop above already checked all 7 modes
+    # (including cipher/plaincipher/keycipher) invert, so this checks the specific standard-table-through-M claim.
+    Mg = rk.keyword_alphabet("grube")
+    tc = rk.mixed_tabula("grube", "cipher", "vig")
+    assert all(rk.A[tc["enc"][p][k]] == Mg[rk.encipher("vig", p, k)] for p in range(26) for k in range(26))
+
     fam = families.load("keyed_running_key")
     holmes = rk.read_text(os.path.join(DATA, "pg1661_holmes.txt"))
     moby = rk.read_text(os.path.join(DATA, "pg2701_mobydick.txt"))
