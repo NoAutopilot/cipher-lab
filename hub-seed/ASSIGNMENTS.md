@@ -535,3 +535,7 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T19:58Z	session_01NS12APP1R55K6TGZrBbP97	LANE B2 orchestrator done $14.08 D, archived	handoff STATUS.md LANE B2 handoff; 19 workers $49.1	
 2026-09-25T19:58Z	session_018MWpKL71WnBxA8k4ejVkBS	LANE R6 orchestrator done $12.93 D, archived	handoff STATUS.md LANE R6 handoff; 31 workers; Mercy N3 key ours	
 2026-09-25T19:58Z	session_01Jr6BjYfemXf9Xejm1LuPkD	retrospective k done $2.18 D, archived	RETRO-2026-09-25k.md	
+2026-09-25T20:00Z	session_01UpWfpbLwYL1xmDG1vFyi6h	LANE R7 orchestrator (Opus, cap 80)	Mercy leads, Salviati atlas re-pass, R6 claimed targets	brief 2026-09-25-lane-r7-orchestrator.md
+2026-09-25T20:00Z	session_01AryRjUHSbfKHxAubLziZcz	RETRO-APPLY-K (Sonnet, cap 6)	apply RETRO-2026-09-25k.md brief/tool-only diffs	prompt inline
+2026-09-25T20:00Z	session_01744aLgcLnadR1XQckyHwcu	parent 7d (Fable, live)	took over from 7c; hub-seed/SUCCESSOR-PROMPT.md	arms its own first check-in
+2026-09-25T20:00Z	session_01H4AdRiu9g44F1oCBVNzbpx	parent 7c done ~$35, handed over to 7d	16:20-20:01 UTC	
