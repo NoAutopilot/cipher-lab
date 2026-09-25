@@ -1,0 +1,42 @@
+  stage 1: 45749 candidates; top [(11.8, 'zustimmung', 'key'), (10.4, 'schlurfte', 'full'), (9.2, 'truus', 'full'), (8.8, 'hauswirtin', 'key'), (8.4, 'wofur', 'both'), (8.3, 'thuis', 'both'), (7.8, 'wohnsitz', 'plain'), (7.7, 'diplomatisch', 'key'), (7.6, 'schuldig', 'both'), (7.5, 'rugkomst', 'key'), (7.3, 'vormittags', 'plain'), (7.3, 'druckt', 'key'), (7.1, 'wachturme', 'both'), (7.0, 'vlijtig', 'both'), (7.0, 'grossmutig', 'key'), (6.8, 'zwart', 'both'), (6.5, 'volharding', 'key'), (6.3, 'prostitution', 'key'), (6.2, 'wohnsitz', 'key'), (6.2, 'nutzt', 'plain'), (6.1, 'impromptus', 'key'), (6.1, 'jouw', 'key'), (6.1, 'zustimmung', 'plain'), (6.1, 'vrouwtje', 'both'), (6.0, 'onrustig', 'key'), (6.0, 'voorzichtig', 'plain'), (5.9, 'afwachten', 'full'), (5.8, 'waarvan', 'plain'), (5.8, 'zuruck', 'key'), (5.8, 'stock', 'key')]; standard tableau -13.9 nats (rank 7857)
+  stage 2: mixed:zustimmung:key:vig stage1 11.8 -> msg1 joint ll/letter -3.575
+  stage 2: mixed:schlurfte:full:vig stage1 10.4 -> msg1 joint ll/letter -3.515
+  stage 2: mixed:truus:full:vig stage1 9.2 -> msg1 joint ll/letter -3.561
+  stage 2: mixed:hauswirtin:key:vig stage1 8.8 -> msg1 joint ll/letter -3.586
+  stage 2: mixed:wofur:both:vig stage1 8.4 -> msg1 joint ll/letter -3.491
+  stage 2: mixed:thuis:both:vig stage1 8.3 -> msg1 joint ll/letter -3.516
+  stage 2: mixed:wohnsitz:plain:vig stage1 7.8 -> msg1 joint ll/letter -3.538
+  stage 2: mixed:diplomatisch:key:vig stage1 7.7 -> msg1 joint ll/letter -3.521
+  stage 2: mixed:schuldig:both:vig stage1 7.6 -> msg1 joint ll/letter -3.525
+  stage 2: mixed:rugkomst:key:vig stage1 7.5 -> msg1 joint ll/letter -3.530
+  stage 2: mixed:vormittags:plain:vig stage1 7.3 -> msg1 joint ll/letter -3.550
+  stage 2: mixed:druckt:key:vig stage1 7.3 -> msg1 joint ll/letter -3.525
+  stage 2: mixed:wachturme:both:vig stage1 7.1 -> msg1 joint ll/letter -3.558
+  stage 2: mixed:vlijtig:both:vig stage1 7.0 -> msg1 joint ll/letter -3.559
+  stage 2: mixed:grossmutig:key:vig stage1 7.0 -> msg1 joint ll/letter -3.578
+  stage 2: mixed:zwart:both:vig stage1 6.8 -> msg1 joint ll/letter -3.522
+  stage 2: mixed:volharding:key:vig stage1 6.5 -> msg1 joint ll/letter -3.533
+  stage 2: mixed:prostitution:key:vig stage1 6.3 -> msg1 joint ll/letter -3.567
+  stage 2: mixed:wohnsitz:key:vig stage1 6.2 -> msg1 joint ll/letter -3.514
+  stage 2: mixed:nutzt:plain:vig stage1 6.2 -> msg1 joint ll/letter -3.522
+  stage 2: mixed:impromptus:key:vig stage1 6.1 -> msg1 joint ll/letter -3.554
+  stage 2: mixed:jouw:key:vig stage1 6.1 -> msg1 joint ll/letter -3.554
+  stage 2: mixed:zustimmung:plain:vig stage1 6.1 -> msg1 joint ll/letter -3.536
+  stage 2: mixed:vrouwtje:both:vig stage1 6.1 -> msg1 joint ll/letter -3.524
+  stage 2: mixed:onrustig:key:vig stage1 6.0 -> msg1 joint ll/letter -3.564
+  stage 2: mixed:voorzichtig:plain:vig stage1 6.0 -> msg1 joint ll/letter -3.505
+  stage 2: mixed:afwachten:full:vig stage1 5.9 -> msg1 joint ll/letter -3.476
+  stage 2: mixed:waarvan:plain:vig stage1 5.8 -> msg1 joint ll/letter -3.470
+  stage 2: mixed:zuruck:key:vig stage1 5.8 -> msg1 joint ll/letter -3.561
+  stage 2: mixed:stock:key:vig stage1 5.8 -> msg1 joint ll/letter -3.535
+TARGET rerun: family score (pooled joint ll/letter) -3.534 tabula mixed:waarvan:plain:vig stage1 5.83
+P: schenambrutetedannauchherwarnochaufumsomusstenbirnentrugervondemunangeneralinzustelltwildenundgleichtzuvielefurmitalsdomdorfstrasstenachobnutzenhatfurchewagtealsgarzuhabenankindeinbrandungenmussderumdenvonberlistenundsozumbequemduweisege
+P: mundedoppeltsohastdudazustammtewobeiwieerfreulenzeugdupilgerzugehundmussmeinenschelachganzeunbildungkamedesaltedasglucktediezudenalsamvielestilleausalfontanezurhafteschonmanohund
+P: bandauernzumbannernunddannfunkenhorstduduhaltungistdakamhohenoffneteinblechgehenalsridikathoniertesieicheinerbemalteerzartedasgereienbeginne
+P: onsdannbittewohastgestossgeahnemariettaderjutlandernkehrtmonsoweicherdietriebeindruckdoktorhaftenumdesgrunenwarbeistrassewortaufdiemeingaltd
+P: ulukunstdusoheitreblickwohinsiedichtenalistischnuranihndergrauevaschlugalszwiebstengingnichtganzgutvondemaltarlichthinzufallabermachtedanndasfellosvormoncesilberjedegondelsundguteredetbeauverneigeprachegrossenaberaufdenpolitesjad
+K: evisplaatsingalonessetrieknietenhaddegaterensmoltenteweireldodaarnamzijgedisverlamdofzichhebgeenebvalshenkhetliedjeafentakmijbijnaaldiehorzeofhijhemmeeodathijwistdatwenunadaarzeerviolettetochhieretochzijredenhetpaleiepenwantikdoorschrijf
+K: oigtgijzegingenokonbegonnuaanindestadwasenwerkteweernaarhemeenerachtekrukwoedendhouenduswelnenbloemdennouofzijrondwitalaswijnwantwillendvanwiehemevenvoorhouvaakdenkdatuwaaroudere
+K: oyejapiottosinzittepondloopentedoenzalafencolvenmetfellevoorwiehadommetroodgesteundenkalmtenogzeugelieftalismetetreurdekweedomiederlauwelikk
+K: middagmijmerenzaktehelligonderlijkhadpeeringafwervingontsteldheiddeedhotenheelrustdekussentsspiraitprachtenonzenenwijsdhijzooergmoealszijtoc
+K: jasjepoortwatjeelinenuentoonbezaggladderdemeisjevdeoudemoeterfhebleukeropmijnmetblondezwaaietskindikdeoogstenallenjavierjekunjepratenlaggelegenochtezichnaarhijkunthetisetmeertintelijkenschamenwoestznhapperochjepretmazeuitdekoffie

@@ -164,3 +164,127 @@ Files: `running-key/control_*.txt`, `noise_*.txt`, `target_*.txt`, `period_scan_
 and `python3 tools/running_key.py specs/koehler-1944.json --pcorpus tools/data/de20 --kcorpus tools/data/nl20 --spaces --order 8 --beam 1000 --tabula vig`.
 
 -- GOLD-2A (Opus, running-key tool), 25 Sept 2026
+
+## Family B', keyed-tableau running key (GOLD-2C, 25 Sept 2026, 18:26-19:03 UTC)
+
+Bourdeau's open case (a): a running (book) key through a mixed, keyed tableau, c = S3(S1(p) + S2(k)) with unknown
+alphabet permutations. Two steps, a statistic and then a family run through `tools/family_run.py` (parent rule
+18:18). Worker: Fable, session_01MD88FhWpv6brRnw9QfVG5n.
+
+### Step 1, permutation-invariant distribution test (`scripts/keyed_dist_test.py`, `.out`, `.json`)
+
+Under any keyed tableau the ciphertext letter distribution is a permutation of a circular convolution of the
+(permuted) plaintext and key unigram distributions, so the SORTED count profile, IC, entropy and chi-square vs
+uniform are invariant to S3 and depend on S1, S2 only through which letters happen to combine. Simulated 1000 times
+at the five target lengths (seed 1): de20 plaintext windows, de20 or nl20 key windows from a different book, three
+uniformly random permutations (KEYED); uniform random letters (ONE-TIME KEY); identity permutations (STANDARD,
+Bourdeau's family 4, for reference only). Percentile = share of simulated texts at or below the target.
+
+| statistic | TARGET | KEYED 99% band (percentile) | ONE-TIME-KEY 99% band (percentile) | STANDARD 99% band (percentile) |
+|---|---|---|---|---|
+| IC | 0.0399 | 0.0386-0.0419 (0.52) inside | 0.0379-0.0395 (1.000) OUTSIDE | 0.0392-0.0425 (0.16) inside |
+| entropy, bits | 4.653 | 4.617-4.679 (0.41) inside | 4.662-4.693 (0.000) OUTSIDE | 4.611-4.669 (0.80) inside |
+| chi-square vs uniform, 25 df | 58.65 | 27.7-108.3 (0.52) inside | 10.5-48.6 (1.000) OUTSIDE | 41.5-122.0 (0.16) inside |
+| max count | 55 | 47-74 (0.46) inside | 42-58 (0.98) inside | 49-73 (0.28) inside |
+| min count | 14 | 10-26 (0.06) inside | 17-29 (0.001) OUTSIDE | 10-25 (0.12) inside |
+| L1 to one-time-key mean sorted profile | 71.1 | 23.5-140.2 (0.52) inside | 12.1-61.3 (0.999) OUTSIDE | 41.0-156.4 (0.16) inside |
+
+Target sorted counts 55 47 47 47 46 46 44 40 39 37 36 36 35 33 33 32 31 31 31 30 29 28 28 26 23 14; keyed mean 57 51
+48 46 44 42 41 40 39 38 37 36 35 34 33 33 32 31 30 29 28 27 26 24 23 20; one-time-key mean 48 45 43 ... 27 24.
+Beside it, Bourdeau's standard-tableau number (15 Sept 2026, a letter-IDENTITY unigram likelihood, not
+permutation-invariant): target below uniform where true running-key text scores >= +7.5 nats in 95% of trials.
+Read: the target's letter counts sit at the median of what a keyed running key gives and outside the one-time-key
+band on five of six statistics (the sorted profile cannot separate keyed from standard; only a letter-identity
+test can, and Bourdeau's did). GATE: family B' is NOT excluded at step 1 (the brief's stop condition did not fire).
+The same statistic is also what any non-uniform hand-made key gives, so "not one-time key" here means "not a
+UNIFORM one-time key".
+
+### Step 2, keyword-mixed tableau search (`tools/families/keyed_running_key.py`, via `family_run.py --gate 0.5`)
+
+**Method.** Restricted to tableaux built from one keyword-mixed alphabet M (what an agent could carry), four
+placements (`running_key.mixed_tabula`): plain (S1 = index in M), key (S2 = index in M), both (S1 = S2), full (S1 =
+S2, cipher read out of M: the classic mixed Vigenère square), arithmetic vig (beau/varbeau available, not run). Stage
+1 ranks every candidate (11,437 distinct alphabets from words of 4-12 letters in de20 + nl20, x 4 modes + the
+identity = 45,749) by the multinomial log-likelihood of the pooled 924 letter counts under the distribution the
+tableau predicts (conv(de20 unigram, nl20 unigram) permuted by the tableau), in nats above uniform: 26x26 per
+candidate, seven seconds for all. Stage 2 decodes the top 30 with `running_key.py`'s two-stream beam (order 6,
+Kneser-Ney, latent word boundaries, beam 300, LM_p de20, LM_k nl20) on message 1 (237 letters), keeps the tableau
+with the best joint log-likelihood per letter, and decodes all five messages under it. Score = pooled joint
+log-likelihood per letter (GOLD-2A's noise band for this decoder family: -3.57 to -3.64; controls -3.12 to -3.17
+at order 8, beam 1000).
+
+**Control (rule 3).** Per seed: German plaintext windows at 237/178/140/140/229 from one de20 book, key windows from
+one nl20 book (Dutch book key), keyword drawn from the same word list, mode drawn from the four, both books held
+out of the models. Stage-1 calibration on six seeds before the run (true keyword's rank among 45,749): 6, 3, 4, 27,
+1, 2 -- hence top 30. Stage 2 on seed 1: the true tableau `grube:plain` scored -2.894 per letter on message 1
+against -3.39 to -3.53 for the 29 near-miss alphabets (`bucher`, `duchesse`, `burger`, ...), a 0.5-nat gap.
+
+| seed | keyword, mode (control) | stage-1 rank of the true keyword (of 45,749) | stage 2, msg 1 joint ll/letter: true tableau vs best near-miss | plaintext letters recovered (pooled, strict) | pooled joint ll/letter |
+|---|---|---|---|---|---|
+| 1 | grube, plain | 6 | -2.894 vs -3.252 (druber) | **79.1%** | -3.01 |
+| 2 | ausschlag, plain | 3 | -3.003 vs -3.396 (schlug) | **74.0%** | -3.10 |
+| 3 | omsloeg, key | 4 | (lines lost, see note in the log) | **64.7%** | -3.18 |
+
+**CONTROL pooled mean 72.6% (64.7-79.1%) on 3 seeds; GATE 50% met** (family_run.py row below, 18:50 UTC). In every
+seed the stage-2 winner was the true tableau, and the plaintext (not the key stream) was recovered because the Dutch
+key model and the German plaintext model differ (GOLD-2A's stream-swap caveat for a German key applies here too).
+
+**Stage-1 noise band** (`running-key/keyed_stage1_noise.out`): best stage-1 score over all 45,749 candidates on 20
+uniform random texts of the target's lengths: min -5.5, median 0.1, max 6.9 nats. TARGET best stage-1 score 11.8
+(`zustimmung:key`; then `schlurfte:full` 10.4, `truus:full` 9.2, `hauswirtin:key` 8.8, `wofur:both` 8.4); the
+standard tableau on the target -13.9 (rank far down, as Bourdeau found). Controls' true keywords scored 12-49 nats
+on the six calibration seeds. So on stage 1 alone the target sits above the one-time-key band and at the bottom of
+the keyed-control range -- consistent with either a keyed tableau whose keyword is in or near the list or with any
+other non-uniform key; stage 2 decides.
+
+**TARGET** (the Kahn/Schmeh transcription, `specs/koehler-1944.json`, 924 letters; `families/keyed_running_key-1.txt`,
+re-run to `running-key/keyed_target_rerun.log` because the family_run log's tail was lost to a `git rebase --autostash`
+while the process was writing -- lesson: never autostash with a live log in the tree; the decoder is deterministic and
+the re-run reproduces the row's score exactly).
+
+| | stage-1 best (nats over uniform) | stage 2, msg 1 joint ll/letter: best of 30 (range) | pooled joint ll/letter, winner | winner |
+|---|---|---|---|---|
+| TARGET | 11.8 (`zustimmung:key`) | **-3.470** (-3.586 to -3.470) | **-3.534** | `waarvan:plain` (stage-1 rank about 30, 5.8 nats) |
+| NOISE, full pipeline on uniform random text, seed 1 | -1.4 | -3.492 (-3.589 to -3.492) | -3.544 | `papenhagen:plain` |
+| NOISE, seed 2 | 8.3 | -3.477 (-3.586 to -3.477) | -3.507 | `jongetje:plain` |
+| CONTROL seeds 1-3 (true tableau) | 12-18 | -2.894 / -3.003 / (lost) | -3.01 / -3.10 / -3.18 | true keyword, 79.1 / 74.0 / 64.7% read |
+
+Read: on the target no candidate tableau stands out in stage 2 (best-of-30 -3.470 against the noise pipeline's
+-3.477 to -3.492; the controls' true tableau stands 0.35-0.5 nats above its near-misses), and the winner's pooled
+score -3.534 sits inside the full-pipeline one-time-key band (-3.507 to -3.544) and 0.35-0.5 nats below every
+control (-3.01 to -3.18). The stage-1 winner `zustimmung:key` (11.8 nats, above the stage-1 noise band) did not
+survive stage 2 (msg 1 -3.51). Judge on the winner's decode: FAIL (score -0.901 vs real_p05 -0.823; its null_p99 of
+-2.071 is far below because the decoder emits German-like letter strings on any input, so the judge's null is not
+the right noise for a decoder output -- the pipeline noise band above is). Decoded streams are word salad of the
+kind GOLD-2A documented (msg 1 P `schenambrutetedannauchherwarnochaufumso...`, K `evisplaatsingalonessetrieknieten...`);
+no stretch of 15+ letters in either stream reads above the noise band, so nothing was sent to ROOM as a flag and no
+reading is claimed. **Control-backed negative** for a running key on de20/nl20-like text through a tableau built from
+one keyword-mixed alphabet (four placements, vig arithmetic, keyword within de20 + nl20's 11,437 words), conditional
+on the transcription and on the literary-prose models. Together with Bourdeau's family 4 and GOLD-2A's family B, the
+standard and the keyword-mixed tableau are both excluded at this control strength; what remains of Bourdeau's case
+(a) is a tableau outside the keyword-mixed set (see limits), and case (b), a hand-made non-uniform key, which step 1
+cannot separate from a keyed running key. Next test named by this negative: family C (code / word-sum book cipher)
+or family A (archive recovery), as GOLD-2A said; within B', `--param arith=beau`, a German key (`kcorpus=tools/data/de20`,
+read from both streams) and an English word list are the cheap remaining variants, each about the same box as this run.
+
+**Dead ends and limits.** (1) Keyword-mixed alphabets only: a transposition-block mixed alphabet, a phrase, a name
+outside de20/nl20's vocabulary, or two different keywords on the two sides are outside the candidate set; a general
+permutation search (26!^3) has no cheap scorer at 924 letters. (2) Porta and a keyed Beaufort were not run
+(`--param arith=beau|varbeau` exists; a keyed Porta does not). (3) The same model-register limit as family B:
+1880s-1920s literary prose for a 1944 telegraphic plaintext and an unknown key book. (4) Stage 1 assumes the key
+stream has a natural-language unigram distribution (Dutch); a German key is covered by `kcorpus=tools/data/de20`
+(not run within the box). (5) Decoder settings are lighter than GOLD-2A's (order 6, beam 300 vs order 8, beam 1000)
+for the 30-candidate stage 2; the control number is what these settings read.
+
+Files: `scripts/keyed_dist_test.py|.out|.json`, `running-key/keyed_family_run.log`, `running-key/keyed_stage1_noise.out`,
+`families/keyed_running_key-1.txt` (if the target ran), the family_run.py table row below. Reproduce:
+`python3 ciphers/koehler-1944/scripts/keyed_dist_test.py --trials 1000 --seed 1` and
+`python3 tools/family_run.py specs/koehler-1944.json --family keyed_running_key --corpus tools/data/de20 --param kcorpus=tools/data/nl20 --param top=30 --param beam=300 --param order=6 --param spaces=1 --seeds 3 --gate 0.5`.
+
+-- GOLD-2C (Fable, session_01MD88FhWpv6brRnw9QfVG5n), 25 Sept 2026
+
+<!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
+
+| date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
+|---|---|---|---|---|---|---|---|---|
+| 25 Sept 2026 18:50 | keyed_running_key | N=924 K=26 restarts=8 corpus=pg15736_Der_Mann_von_vierzig_Jahren.txt.gz+pg36905_Schach_von_Wuthenow.txt.gz+pg41051_Peter_Camenzind.txt.gz+pg41907_Demian.txt.gz+pg43987_Die_drei_Spruenge_des_Wang_lun.txt.gz+pg46184_Frau_Jenny_Treibel.txt.gz+pg5323_Effi_Briest.txt.gz kcorpus=tools/data/nl20,top=30,beam=300,order=6,spaces=1 | 1 | 0.726 (0.647-0.791) | -3.534 | FAIL language: score=-0.901, null_p99=-2.071, real_p05=-0.823, real_median=-0.78, mode=both, N=924 | yes (gate 0.5) | GOLD-2C family B' keyed tableau, keyword-mixed alphabets, control before target |

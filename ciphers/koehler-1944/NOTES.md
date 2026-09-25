@@ -187,3 +187,8 @@ exit code: 0
   should resolve the six-group transcription discrepancy above against an image first (rule 2) since a wrong
   letter in a 924-letter ciphertext-only problem is exactly the kind of error a book-cipher letter-arithmetic
   search cannot tolerate silently.
+- GOLD-2C (25 Sept 2026): family B' (keyed-tableau running key) is a control-backed negative for keyword-mixed
+  alphabets (control 72.6% read, target at the one-time-key noise band; HYPOTHESES.md "Family B'"); step 1 puts the
+  target's letter counts inside the keyed-running-key band and outside the uniform one-time-key band, so a
+  hand-made non-uniform key is not excluded. Cheap remaining B' variants, each one box: `--param arith=beau`, a
+  German key (`kcorpus=tools/data/de20`), an English word list; otherwise family C or A next, as GOLD-2A said.

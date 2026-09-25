@@ -1,0 +1,32 @@
+  stage 1: 45749 candidates; top [(-1.4, 'liang', 'plain'), (-1.9, 'ling', 'plain'), (-2.0, 'ming', 'plain'), (-2.1, 'piano', 'plain'), (-2.1, 'papenhagen', 'plain'), (-2.2, 'king', 'plain'), (-2.2, 'ping', 'plain'), (-2.4, 'bahnhof', 'plain'), (-2.4, 'jing', 'plain'), (-2.4, 'kainszeichen', 'full'), (-2.4, 'kiang', 'plain'), (-2.4, 'gehe', 'plain'), (-2.6, 'beneden', 'key'), (-2.7, 'ahnung', 'plain'), (-2.8, 'umarmte', 'full'), (-2.8, 'spraken', 'full'), (-2.8, 'openlijk', 'plain'), (-2.8, 'oheim', 'plain'), (-2.8, 'feine', 'key'), (-2.9, 'wedderkopp', 'plain'), (-2.9, 'bedde', 'plain'), (-3.0, 'behaagde', 'plain'), (-3.0, 'manchmal', 'plain'), (-3.0, 'penning', 'plain'), (-3.0, 'meening', 'plain'), (-3.1, 'gehad', 'plain'), (-3.1, 'hoekje', 'plain'), (-3.1, 'keinem', 'plain'), (-3.1, 'bedenkelijk', 'plain'), (-3.2, 'hielp', 'plain')]; standard tableau -22.4 nats (rank 25836)
+  stage 2: mixed:liang:plain:vig stage1 -1.4 -> msg1 joint ll/letter -3.568
+  stage 2: mixed:ling:plain:vig stage1 -1.9 -> msg1 joint ll/letter -3.582
+  stage 2: mixed:ming:plain:vig stage1 -2.0 -> msg1 joint ll/letter -3.539
+  stage 2: mixed:piano:plain:vig stage1 -2.1 -> msg1 joint ll/letter -3.582
+  stage 2: mixed:papenhagen:plain:vig stage1 -2.1 -> msg1 joint ll/letter -3.492
+  stage 2: mixed:king:plain:vig stage1 -2.2 -> msg1 joint ll/letter -3.498
+  stage 2: mixed:ping:plain:vig stage1 -2.2 -> msg1 joint ll/letter -3.502
+  stage 2: mixed:bahnhof:plain:vig stage1 -2.4 -> msg1 joint ll/letter -3.535
+  stage 2: mixed:jing:plain:vig stage1 -2.4 -> msg1 joint ll/letter -3.525
+  stage 2: mixed:kainszeichen:full:vig stage1 -2.4 -> msg1 joint ll/letter -3.554
+  stage 2: mixed:kiang:plain:vig stage1 -2.4 -> msg1 joint ll/letter -3.583
+  stage 2: mixed:gehe:plain:vig stage1 -2.4 -> msg1 joint ll/letter -3.508
+  stage 2: mixed:beneden:key:vig stage1 -2.6 -> msg1 joint ll/letter -3.544
+  stage 2: mixed:ahnung:plain:vig stage1 -2.7 -> msg1 joint ll/letter -3.541
+  stage 2: mixed:umarmte:full:vig stage1 -2.8 -> msg1 joint ll/letter -3.581
+  stage 2: mixed:spraken:full:vig stage1 -2.8 -> msg1 joint ll/letter -3.563
+  stage 2: mixed:openlijk:plain:vig stage1 -2.8 -> msg1 joint ll/letter -3.572
+  stage 2: mixed:oheim:plain:vig stage1 -2.8 -> msg1 joint ll/letter -3.567
+  stage 2: mixed:feine:key:vig stage1 -2.8 -> msg1 joint ll/letter -3.550
+  stage 2: mixed:wedderkopp:plain:vig stage1 -2.9 -> msg1 joint ll/letter -3.537
+  stage 2: mixed:bedde:plain:vig stage1 -2.9 -> msg1 joint ll/letter -3.508
+  stage 2: mixed:behaagde:plain:vig stage1 -3.0 -> msg1 joint ll/letter -3.554
+  stage 2: mixed:manchmal:plain:vig stage1 -3.0 -> msg1 joint ll/letter -3.589
+  stage 2: mixed:penning:plain:vig stage1 -3.0 -> msg1 joint ll/letter -3.562
+  stage 2: mixed:meening:plain:vig stage1 -3.0 -> msg1 joint ll/letter -3.579
+  stage 2: mixed:gehad:plain:vig stage1 -3.1 -> msg1 joint ll/letter -3.520
+  stage 2: mixed:hoekje:plain:vig stage1 -3.1 -> msg1 joint ll/letter -3.510
+  stage 2: mixed:keinem:plain:vig stage1 -3.1 -> msg1 joint ll/letter -3.572
+  stage 2: mixed:bedenkelijk:plain:vig stage1 -3.1 -> msg1 joint ll/letter -3.549
+  stage 2: mixed:hielp:plain:vig stage1 -3.2 -> msg1 joint ll/letter -3.555
+NOISE seed 1: family score (pooled joint ll/letter) -3.544 tabula mixed:papenhagen:plain:vig stage1 -2.13

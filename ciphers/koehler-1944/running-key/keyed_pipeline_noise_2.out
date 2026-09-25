@@ -1,0 +1,32 @@
+  stage 1: 45749 candidates; top [(8.3, 'oldenzaal', 'plain'), (8.3, 'moeten', 'plain'), (8.1, 'voelen', 'plain'), (8.1, 'kwellend', 'plain'), (8.0, 'mantel', 'plain'), (7.7, 'pinsel', 'plain'), (7.7, 'moment', 'plain'), (7.5, 'kleeren', 'plain'), (7.5, 'quellen', 'plain'), (7.2, 'oogwenk', 'plain'), (7.2, 'wankelde', 'plain'), (7.1, 'konnte', 'plain'), (7.1, 'wankelde', 'key'), (7.1, 'lientje', 'plain'), (7.0, 'winseln', 'plain'), (6.9, 'mannetje', 'plain'), (6.8, 'schenke', 'key'), (6.8, 'opeens', 'plain'), (6.8, 'voeren', 'plain'), (6.6, 'glansjes', 'plain'), (6.6, 'clemente', 'plain'), (6.5, 'jongetje', 'plain'), (6.4, 'voeten', 'plain'), (6.4, 'rondell', 'plain'), (6.4, 'dunkel', 'plain'), (6.3, 'wandelte', 'plain'), (6.3, 'wallenkant', 'both'), (6.3, 'vlekken', 'plain'), (6.3, 'motten', 'plain'), (6.2, 'kleinigkeit', 'plain')]; standard tableau -15.4 nats (rank 22837)
+  stage 2: mixed:oldenzaal:plain:vig stage1 8.3 -> msg1 joint ll/letter -3.515
+  stage 2: mixed:moeten:plain:vig stage1 8.3 -> msg1 joint ll/letter -3.530
+  stage 2: mixed:voelen:plain:vig stage1 8.1 -> msg1 joint ll/letter -3.530
+  stage 2: mixed:kwellend:plain:vig stage1 8.1 -> msg1 joint ll/letter -3.520
+  stage 2: mixed:mantel:plain:vig stage1 8.0 -> msg1 joint ll/letter -3.561
+  stage 2: mixed:pinsel:plain:vig stage1 7.7 -> msg1 joint ll/letter -3.554
+  stage 2: mixed:moment:plain:vig stage1 7.7 -> msg1 joint ll/letter -3.524
+  stage 2: mixed:kleeren:plain:vig stage1 7.5 -> msg1 joint ll/letter -3.560
+  stage 2: mixed:quellen:plain:vig stage1 7.5 -> msg1 joint ll/letter -3.490
+  stage 2: mixed:oogwenk:plain:vig stage1 7.2 -> msg1 joint ll/letter -3.490
+  stage 2: mixed:wankelde:plain:vig stage1 7.2 -> msg1 joint ll/letter -3.501
+  stage 2: mixed:konnte:plain:vig stage1 7.1 -> msg1 joint ll/letter -3.539
+  stage 2: mixed:wankelde:key:vig stage1 7.1 -> msg1 joint ll/letter -3.528
+  stage 2: mixed:lientje:plain:vig stage1 7.1 -> msg1 joint ll/letter -3.493
+  stage 2: mixed:winseln:plain:vig stage1 7.0 -> msg1 joint ll/letter -3.500
+  stage 2: mixed:mannetje:plain:vig stage1 6.9 -> msg1 joint ll/letter -3.510
+  stage 2: mixed:schenke:key:vig stage1 6.8 -> msg1 joint ll/letter -3.564
+  stage 2: mixed:opeens:plain:vig stage1 6.8 -> msg1 joint ll/letter -3.571
+  stage 2: mixed:voeren:plain:vig stage1 6.8 -> msg1 joint ll/letter -3.534
+  stage 2: mixed:glansjes:plain:vig stage1 6.6 -> msg1 joint ll/letter -3.586
+  stage 2: mixed:clemente:plain:vig stage1 6.6 -> msg1 joint ll/letter -3.539
+  stage 2: mixed:jongetje:plain:vig stage1 6.5 -> msg1 joint ll/letter -3.477
+  stage 2: mixed:voeten:plain:vig stage1 6.4 -> msg1 joint ll/letter -3.514
+  stage 2: mixed:rondell:plain:vig stage1 6.4 -> msg1 joint ll/letter -3.530
+  stage 2: mixed:dunkel:plain:vig stage1 6.4 -> msg1 joint ll/letter -3.553
+  stage 2: mixed:wandelte:plain:vig stage1 6.3 -> msg1 joint ll/letter -3.523
+  stage 2: mixed:wallenkant:both:vig stage1 6.3 -> msg1 joint ll/letter -3.566
+  stage 2: mixed:vlekken:plain:vig stage1 6.3 -> msg1 joint ll/letter -3.536
+  stage 2: mixed:motten:plain:vig stage1 6.3 -> msg1 joint ll/letter -3.503
+  stage 2: mixed:kleinigkeit:plain:vig stage1 6.2 -> msg1 joint ll/letter -3.533
+NOISE seed 2: family score (pooled joint ll/letter) -3.507 tabula mixed:jongetje:plain:vig stage1 6.52
