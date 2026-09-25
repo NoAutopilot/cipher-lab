@@ -153,6 +153,26 @@ Live: ZX2-GAL session_017wH6L6J4fZzfHFowP5kAH3 (box to 20:45), ZX2-ASK session_0
 Not worked (a person or a gated account): the BL and TNA items (ZX2-ASK writes their REQUEST.md and batched ASKS rows), ra-karlxi (gated),
 clair571 (ASKS 49), wellington (library), clairambault1225 (L11), decode-2754 (none cheap). Birago and decode-4450 need a sibling or images (Gallica, after ZX2-GAL frees the host).
 
+## LANE B3 handoff (session_01VLtPMsqR2oWmZeKh2jxVga), 25 September 2026, kept current (last 20:23 UTC; restored after commit 9a1e34b, another session's "update" merge, dropped it)
+
+Breadth lane, successor to LANE B2; opened about 19:10 by parent 7c (brief `.claude/briefs/runs/2026-09-25-lane-b3-orchestrator.md`, cap USD 25 own usage, hand off at 300k context). Common file `.claude/briefs/runs/2026-09-25-lane-b3-common.md`. bMLH was ledgered by B2 (19:20).
+
+| Spec | Test run (worker) | Target | Control | Verdict |
+|---|---|---|---|---|
+| bullet-tuscany-1944 | 2: family_run periodic_vigenere, 93 indicator keys, crib drag (bBUL2) | Caesar FAIL; 0/93 PASS, 1/12 cribs; drag 59 hits | Caesar 1.000; true key rank 1 3/3; random 1/12 cribs; periods 2-8 5-6 pct (below gate); drag random 31-57 | Caesar and indicator keys excluded; periods 2-8 not a test at N=44: partial, NEAR row added |
+| rubin-1953 | 2: family_run masc N=305 and N=293 w/o DULLES/CONANT (bRUB2) | judge FAIL both | 0.989 / 0.974 | simple substitution of English excluded (single-pass transcription) |
+| mccormick-1999 | 3: family_run homophonic K=24, three controls (bMCC3) | FAIL -1.48 / -2.33 | English 0.998, vowel-dropped 0.652; shuffled target -1.81..-1.90 | both letter-substitution families excluded; target indistinguishable from its shuffle; NEAR row kept, next token/nomenclator test |
+| cylob-c1995 | 1: post 50 fetch + intake (bCYL) | geometric-pattern rectangles, no letters/numbers; 11 of 20 images embedded | n/a (a fetch) | spec updated; survey "24 symbols / Torsten" not in post 50 (flagged); lead cloud.rotering-net.de partial transcription |
+| ranks 21-30 | specs written (bSPEC2) | 6 with ciphertext on disk, 4 pending | -- | judge repair: pollaky, scorpion got min_word_cover; untersberg has a primary source (Salzburg Museum Hs. 2398) against the survey's "legend" |
+| erba-2006 | 1: image + blind re-transcription (bERB) | 93.0 pct digraph agreement (106/114) with comment #3 | n/a (transcription check) | 8 me/ne ambiguities, possibly a 9th base token |
+| blitz-ciphers | 1: IC/frequency, periodic scan (bBLZ) | case-folded IC 0.0628, N=581 | mono-English 0.059-0.071; homophonic 0.042; Vig p20 0.040 | inconclusive, points at masc (test 2 needs parent yes) |
+| goldbar-1933 | 1: letter chi-squared (bGLD) | 1.25 / 1.18 | 1000 uniform draws, mean 24.9, min 8.2 | flatter than every draw; re-runs Bourdeau 15 Sept (credited); NOTES line 1 says found-solved -- needs a verifier's word, not a catch |
+| yogtze-1984 | 1: initials search de/en (bYOG) | 12 / 18 phrases | random 6-letter strings 337-1879 / 57-825 | below every control; Bourdeau notes a 2025 police closure (uncited) |
+| untersberg-code | 1: abbreviation shape (bUNT) | 36 period-closed short tokens | own-unigram synthetic 12.0 (5-20) | 100th pct: NEAR row, next an abbreviation expansion with a control |
+| fair-game-2010 | 1: Halpin next-letter (bFAI) | judge FAIL -2.20, cover 0.46 | random marking -2.13..-2.26; planted name 3/3 | negative for this credit-order reconstruction |
+
+Live at 20:23: bSSR session_01R1hZ23tX4j7RCMxwYm9J65 (ss-radio-lippert-1944 first test, scienceblogs.de holder); bMCC4 session_01RZGDw5jSBy5bQiYyq1hJdp (mccormick token/nomenclator test, the NEAR row's named step). Still to run, serially on scienceblogs.de after bSSR: rayburn-2004, sufi-fiddle, censorship-manual-stego first tests (brief pattern: 2026-09-25-lane-b3-ss-radio-lippert-1944.md). Waiting on the parent: blitz-ciphers test 2 (family_run masc with an en judge). NEAR steps open without approval: untersberg expansion (1), bullet indicator-system lookup. Workers so far: 11 finished, about USD 26.7, all ledgered and archived.
+
 ## LANE B2 handoff (session_01NS12APP1R55K6TGZrBbP97), 25 September 2026, 19:03 UTC
 
 Breadth lane, successor to LANE B (whose bHAR/bLIM died on the 24 Sept limit unpushed). Opened 15:39 by parent 7b; handed
