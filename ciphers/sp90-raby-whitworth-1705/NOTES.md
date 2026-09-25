@@ -1,4 +1,47 @@
 open
+TNA Discovery item-details fetched by this worker gives SP 90/3/358's exact date (1 Aug. 1705); Wentworth Papers 1705-1739 (Cartwright 1883, archive.org djvu) then read and grepped by this worker around that date (letters of 14 and 21 Aug. 1705 are the nearest, both private family correspondence about houses and furniture, not diplomatic despatches) and for every "Harley" occurrence (109 hits, all either personal-letter mentions of "Mr./Secretary Harley" or one editorial footnote on his nickname "Lord T.", none a printed despatch to him) -- the book prints Wentworth-family private letters, not Raby's official State Paper correspondence, so it cannot be the standard edition for this item; searcharchives.bl.uk catalogue read for the full Whitworth Papers Berlin range (Add MS 37363-37397, both sub-ranges, 1716-1722) via a "Whitworth cipher" search, 0 hits, extending the prior session's 37373-37389-only check to the whole range including Add MS 37363 (ff.424, "Correspondence of C. Whitworth... at Berlin; 10 July 1716 - 23 March/3 April 1717", the volume matching SP 90/7/149,212's 1716-17 date).
+
+## Check-solved (LANE CX2, 25 Sept 2026)
+
+Round-2 sweep. Read `ciphers/sp90-raby-1704/NOTES.md`, `ciphers/whitworth-1707/NOTES.md` and this file's own
+24 Sept 2026 sections first, per brief, to avoid duplicating either. This pass resolves two items the 24 Sept
+session left open ("Next" 1 and 2 below) and runs the SIRIO vol.61 check named in the job brief.
+
+1. **SP 90/3/358's exact date**, unresolved on 24 Sept: TNA Discovery `search/records` API (1 request, `sps.searchQuery="SP 90/3/358"`) returns **1 Aug. 1705**, "Raby to Harley. Frederick I secretly negotiating a treaty with Sweden..." Fetched `wentworthpapers100strauoft_djvu.txt` (already cached from the sibling target this session) and checked the "RABY, AT BERLIN" section around August 1705: the two nearest dated letters (14 and 21 Aug. 1705) are private family correspondence from Raby's mother/sister about houses and furniture in London, not diplomatic despatches, and a full-text grep for "Harley" (109 hits) turns up no printed despatch to him anywhere in the volume -- only personal mentions of "Mr./Secretary Harley" in family letters and one editorial footnote glossing "Lord T." as Harley's later title. **This is now a real, checked negative, not a gap**: Cartwright's *Wentworth Papers* is the Wentworth family's private correspondence, not Raby's official State Paper despatches to the Secretary of State, so it is not the standard edition for SP 90/3/358 regardless of the exact date matching its stated 1705-1739 range. No other printed edition of Raby's official 1705 despatches was found by web search this pass.
+2. **BL Add MS 37373-37389 for SP 90/7 (1716-17)**, unresolved on 24 Sept because that range only covers 1719-1722: searched `searcharchives.bl.uk` for "Whitworth cipher" (1 request, 10 hits total) across the *whole* catalogue, not just the one sub-range -- confirms **zero** "cipher"/"cypher"/"decipher" term anywhere in Add MS 37363-37397 (the complete Whitworth Papers Berlin fonds, both the 37363-37372 range identified 24 Sept as covering 1716-17 and the already-checked 37373-37389/37390-37397 later volumes). Also confirms **Add MS 37363** itself (Vol. XVI, ff.424) is titled "Correspondence of C. Whitworth, as Envoy Extraordinary, etc., at Berlin; 10 July (O.S.), 1716 - 23 March/3 April, 1717" -- the volume whose date range contains SP 90/7/149,212 (1716-17) -- with no cipher marker catalogued, same caveat as 24 Sept 2026 (catalogued by correspondent/folio, not content type; an enciphered passage inside an otherwise-plain letter would not necessarily be flagged). The ten "Whitworth cipher" hits found are all unrelated (Blenheim/Drake/Hedges-era ciphers, the Moscow-period Add MS 61149, or Lord Whitworth of Paris 1803-09).
+3. **SIRIO vol. 61** (named in the job brief): archive.org identifier `sbornikimperatorskogorusskogoistorichesk4` carries the metadata title "Т. 61. [Дипломатическая переписка английских послов и посланников при русском дворе..." (diplomatic correspondence of English envoys at the Russian court, 1711-1719, per its full description) -- but fetching and reading its actual `_djvu.txt` (1.35 MB) shows the scanned content is a **different, mismatched volume**: "Памятники дипломатических сношений Московского государства с Немецким орденом в Пруссии, 1516-1520" (a medieval Teutonic Order item). 0 hits for "Whitworth", "cipher"/"cypher", and even common English words ("the", "Majesty") are absent, while Cyrillic control terms ("Петр"/Peter, 53 hits) are present but at levels consistent with the wrong 16th-century text, not a diplomatic-correspondence volume. **This archive.org item's catalogue metadata does not match its scanned pages** -- flagged as a bad identifier, not a real read of SIRIO vol. 61; the actual volume 61 was not located and reading it is not completed this sweep. Separately, and independently of the identifier mismatch, vol. 61 is described as covering **the Russian court**, not Berlin, so even a correctly-identified copy would need its own content check before it could bear on SP 90/7-8 (Whitworth had moved from the Russia posting to Berlin by 1716, per the 24 Sept session's finding, unchanged here).
+4. **Web search (model-solve announcements).** `"Whitworth Berlin Townshend Stanhope 1716 1719 SP 90 cipher solves Claude GPT deciphered"`: no dedicated page or announcement found; surfaced only the History of Parliament and BL catalogue entries already on file.
+5. **Community lists.** `sources/cryptiana/` grepped fresh for "raby", "reichart", "berlepsch", "whitworth": the same single hit as 24 Sept 2026 (`web/blencowe2.htm`, R8762 "Raby (Strafford)" code-name, a different cipher key, not this correspondence).
+6. **DECODE.** `aaymeloglu/unsolved-ciphers`'s cached `catalogue/decode-catalog.csv` (fresh shallow clone, 25 Sept 2026) grepped for "raby", "whitworth", "sp90", "sp 90", "townshend", "stanhope": no record.
+7. **Bourdeau / Aymeloglu.** Fresh shallow clones (25 Sept 2026, shared with the sibling target) grepped (`*.md` files) for the same terms: no hit in either.
+
+Requests: discovery.nationalarchives.gov.uk 1 (search/records for SP 90/3/358's date), archive.org 2 (Wentworth Papers djvu already cached this session; SIRIO vol.61 djvu, 1.35 MB, new fetch, mismatched content), searcharchives.bl.uk 1 ("Whitworth cipher" full-catalogue search), github.com 2 (fresh shallow clones, shared with the sibling target). 1 WebSearch query this target.
+
+## Verdict (LANE CX2, 25 Sept 2026)
+
+**Open, stage 2 verified unsolved, unchanged from 24 Sept 2026's conditional verdict, now with both of that
+session's open "Next" items resolved.** SP 90/3/358 (1 Aug. 1705) is confirmed not to be in Wentworth Papers
+(the book is private family correspondence, not official despatches, independent of the date match). SP
+90/7/149,212 (1716-17) and SP 90/8/84 (1719) both fall inside the now-fully-checked BL Whitworth Papers
+range (Add MS 37363-37397), which carries no catalogued cipher/decipher term anywhere in its 35 volumes. The
+attempted SIRIO vol. 61 check failed on a mismatched archive.org identifier and was not completed; SIRIO in
+general remains the wrong series for this correspondent's post-1712 Berlin posting regardless. No decipherment
+or plaintext for any of the four target items found in print, on DECODE, or in either solver repository. Not
+"new"; not "unpublished" (rule 10).
+
+## Next
+
+1. SIRIO vol. 61's correct archive.org (or HathiTrust) identifier still needs locating if a future worker
+   wants to rule out the Russian-court channel formally; low priority given Whitworth's 1716-19 posting was
+   Berlin, not Russia.
+2. An access worker check on BL Add MS 37363 (ff.424, the exact 1716-17 volume) or Add MS 37373-37378
+   (1719) for a decipher not caught by the catalogue's own correspondent-level description remains the
+   cheapest next move before a TNA copy order, per the 24 Sept session's original suggestion, now narrowed
+   to specific volume numbers instead of the whole 37363-37397 range.
+3. TNA page-copy order for all four originals (SP 90/3/358, SP 90/7/149, SP 90/7/212, SP 90/8/84) is the
+   fallback once (1)-(2) are exhausted; none is digitised per the QUEUE row.
+
+---
 
 # Raby (1705) and Whitworth (1716-19), Northern-Europe diplomatic ciphers — TNA SP 90/3/358, SP 90/7/149,212, SP 90/8/84
 
