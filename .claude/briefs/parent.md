@@ -22,12 +22,20 @@ its state is only what it committed, so read its handoff and its lanes' ROOM lin
 0a. **Keys.** `python3 tools/key_probe.py --sync` (room.py --start ran it at your start; run it again here only in a fresh
    container). KEYS.md rows still `requested` are on the owner's desk (ASKS); a "key now set" ROOM line from either account
    means the briefs that waited on it can run; a `set` row seen by the other account only means this account's environment
-   still lacks it (say so in the parent handoff line, once). Never pass a value anywhere.
+   still lacks it (say so in the parent handoff line, once). Never pass a value anywhere. This checks names only -- for
+   whether a present credential's call actually works, see duty 1.
 
-1. **Rate limit.** `rate_limit_info` on yourself and on each lane orchestrator. BUDGETS.md scaling rule: `allowed`
+1. **Key livecheck.** `python3 tools/key_livecheck.py` (CLAUDE.md Access playbook; not the same tool as duty 0a's
+   `key_probe.py` -- that one is name-presence across accounts, this one is a live test call per credential). If a
+   credential's present/works result changed since the last KEYS-STATUS.md (absent->present, or failing->working),
+   re-scan open ASKS.md and LOCAL-QUEUE.tsv rows against the new result and the Access playbook for work now doable
+   from the cloud with that key or login, and assign it to a worker in this same check-in -- do not leave it for the
+   next lane to notice on its own. A row moved this way is annotated in ASKS.md/LOCAL-QUEUE.tsv with which key
+   changed and the probe line it rests on.
+2. **Rate limit.** `rate_limit_info` on yourself and on each lane orchestrator. BUDGETS.md scaling rule: `allowed`
    spawn freely; `allowed_warning` on any session means no new workers anywhere (running ones finish); `rejected`
    means every lane writes its handoff and stops. Post the state in ROOM.md when it changes.
-2. **Lanes.** For each lane orchestrator: status, last ROOM line, last commit, pending check-in. Idle with no pending
+3. **Lanes.** For each lane orchestrator: status, last ROOM line, last commit, pending check-in. Idle with no pending
    check-in, silent for 60 minutes while running, or failed: brief a successor from the lane's brief file and its
    last handoff or ROOM lines, telling it to adopt the live workers. A lane that wrote its handoff stays closed.
    Ask each live lane orchestrator for its own context estimate at every check-in (there is no `get_session`
@@ -37,26 +45,26 @@ its state is only what it committed, so read its handoff and its lanes' ROOM lin
    2026: LANE B2 handed off at 425k against a 300k line, 41 percent over, with no context figure seen by the
    parent before that hand-off line itself; LANE R6 handed off at 505k against 500k, on the line, the same
    window -- the difference is whether the line was watched before it was crossed).
-3. **Second opinions** (tools/second_opinion_runner_prompt.md, "Our side of the loop"). List open pull requests whose
+4. **Second opinions** (tools/second_opinion_runner_prompt.md, "Our side of the loop"). List open pull requests whose
    title starts with `[SO-`; set the matching SECOND-OPINIONS-QUEUE.tsv row to `posted` with the PR number; hand it
    in ROOM.md to the lane that owns the folder, or to the verification lane. Route GitHub writes (closing PRs,
    posting issues) through a short-lived worker: a parent's token goes stale (CLAUDE.md, Git).
-4. **Local runners.** JSTOR-QUEUE.tsv and LOCAL-QUEUE.tsv rows are answered on the owner's own machine; rows that come
+5. **Local runners.** JSTOR-QUEUE.tsv and LOCAL-QUEUE.tsv rows are answered on the owner's own machine; rows that come
    back `done` with hits go to a verifier.
-5. **Board and desk.** status.json and `python3 tools/build_dashboard.py` after any class change; ASKS.md rows and
+6. **Board and desk.** status.json and `python3 tools/build_dashboard.py` after any class change; ASKS.md rows and
    outreach/*.md `status: ready` drafts are the owner's desk. Nothing leaves the repository as "new" without a
    verifier's AUDIT.md class (rule 10).
-6. **Tell the owner** only: a reading that passed its judge and a fresh-instance re-derivation, an AUDIT.md verdict,
+7. **Tell the owner** only: a reading that passed its judge and a fresh-instance re-derivation, an AUDIT.md verdict,
    a second opinion that finds prior print, a credential or payment he must supply, or a blocker. For a real
    breakthrough also fire the routine "Cipher Lab: breakthrough alert (email)" with a plain, graded description.
    Also match open `[LQ-<id>]` pull requests (tools/local_queue_runner_prompt.md, the owner's ChatGPT runner answering LOCAL-QUEUE.tsv rows): a short Sonnet worker copies each answer into the file the row names, sets the row `done <date>`, closes the PR without merging.
 
-7. **Next lane.** When lanes close and the window allows, open the next from open targets no lane holds (ROOM claims
+8. **Next lane.** When lanes close and the window allows, open the next from open targets no lane holds (ROOM claims
    in the last six hours, and the other account's lanes, excluded).
-8. **Rolling quality audit.** Every two hours while lanes run, spawn a fresh Sonnet worker from
+9. **Rolling quality audit.** Every two hours while lanes run, spawn a fresh Sonnet worker from
    .claude/briefs/runs/2026-09-25-parent-quality-audit.md with the window since the last QA/*.md. An item it flags counts
    toward no total until its lane clears the flag; tell the owner about any flag on a result already reported to him.
-9. **Cross-account learning pass** (owner's ask, 25 Sept 2026 17:00 UTC), every third check-in while both accounts are live: a
+10. **Cross-account learning pass** (owner's ask, 25 Sept 2026 17:00 UTC), every third check-in while both accounts are live: a
    Sonnet worker (brief .claude/briefs/runs/<date>-parent-learn.md) reads what the other account pushed since the last pass
    (its lane briefs and COMMON addenda, LEDGER lessons, RETRO-*.md, QA/*.md, tools/ changes, ROOM flags) and writes
    LEARN-<date>-<hhmm>.md: what they do that we do not, with a concrete diff for each item worth porting. The parent applies the
@@ -64,7 +72,7 @@ its state is only what it committed, so read its handoff and its lanes' ROOM lin
    inherits them, never into one lane's dated copy alone), ledgers the pass (Q), and leaves anything touching the goal, the
    spend, rate-limit rules or the owner's asks to the owner. The same pass notes anything of ours the other account has not
    picked up, as a ROOM line addressed to its parent.
-10. Re-arm the check-in.
+11. Re-arm the check-in.
 
 ## Opening a lane
 

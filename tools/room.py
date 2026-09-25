@@ -94,6 +94,14 @@ def start():
             push("KEYS.md: seen column, account " + acct, ["KEYS.md"])
     except Exception as e:  # never block a start on the probe
         print(f"key probe skipped: {e}")
+    # Key livecheck (25 Sept 2026, KEYPROBE-TOOL): every session sees the last live-call probe so a
+    # key that went from absent/failing to present/working is not sitting unused in ASKS.md. Distinct
+    # from key_probe.py above (that one is name-presence only, never a network call).
+    try:
+        line = next(l for l in open("KEYS-STATUS.md", encoding="utf-8") if l.startswith("keys: "))
+        print(line.strip() + " (tools/key_livecheck.py -- run it fresh before filing an ASKS.md/LOCAL-QUEUE.tsv row)")
+    except (FileNotFoundError, StopIteration):
+        print("KEYS-STATUS.md missing or has no 'keys: ' line -- run python3 tools/key_livecheck.py")
     return 0
 
 def keep_both(path):

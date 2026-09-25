@@ -360,6 +360,19 @@ Every brief states a cap in dollars of usage (the session metadata's cost figure
 
 ## Access playbook
 
+**Key livecheck (25 Sept 2026, KEYPROBE-TOOL).** `python3 tools/key_livecheck.py` is the first command of every
+parent check-in and of every worker whose brief names an external host -- not the same tool as `tools/key_probe.py`
+below (that one is name-presence and cross-account sync, no network call; this one makes the actual documented
+call). It reports presence (`os.environ`, never a value) and, for the API-key hosts below, one live documented test
+call each; DECODE, JSTOR and Internet Archive logins are presence-only by default (see the tool's own docstring for
+why -- automating a login on every check-in would itself be the repeated-login the good-citizen rule below forbids).
+A worker may not write an ASKS.md row asking the owner for access, nor a LOCAL-QUEUE.tsv row, until the probe shows
+the relevant key absent or failing, and the row must quote the probe's line for that credential. Why this exists:
+GOOGLE_BOOKS_KEY sat unused from 20 to 25 Sept 2026 (a `country=US` parameter was all it needed), IA_USER/IA_PASS
+worked from 23 Sept with no borrow attempted until 25 Sept, and CORE_API_KEY was probed only when the owner asked --
+work sat in ASKS.md all day waiting on access already in hand. `tools/room.py --start` prints the last probe's
+summary line; a stale or missing KEYS-STATUS.md means the probe has not been run recently, re-run it.
+
 Getting the material is most of the work. Try routes in this order and record which one worked in NOTES.md:
 
 1. **A JSON API or plain URL with curl**, with a browser User-Agent (`-A "Mozilla/5.0"`). Gallica IIIF, TNA

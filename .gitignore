@@ -5,3 +5,4 @@ tools/data/fr16/*.pkl.gz
 sources/ia-fulltext/search-cache3/
 sources/ia-fulltext/runs3_new.tsv
 .runner-profile/
+tools/.key_probe_cache.json
