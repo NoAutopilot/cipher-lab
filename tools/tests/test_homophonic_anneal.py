@@ -42,6 +42,7 @@ import math
 assert len(free) <= math.ceil(1.5 * 0.1 * len(seqn)), len(free)
 assert all(l in ha.ALPHA for l in free.values()) and all(0 <= i < len(seqn) for i in free)
 dec = ''.join(free.get(i, key[x]) for i, x in enumerate(seqn))
-plain_dec = ''.join(ha.solve(seqn, m, 3, 100000, 1, 1.0)[0][1][x] for x in seqn)
+plain_key = ha.solve(seqn, m, 3, 100000, 1, 1.0)[0][1]
+plain_dec = ''.join(plain_key[x] for x in seqn)
 print(f'ok noise: corrected {acc(dec):.1%} (key-only {acc("".join(key[x] for x in seqn)):.1%}, free {len(free)}), plain solver {acc(plain_dec):.1%}')
 assert acc(dec) >= 0.75, acc(dec)
