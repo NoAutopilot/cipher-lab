@@ -1572,3 +1572,139 @@ not read as a mark against the specific reading. Neither of rule 7's two conditi
 
 No network access; no hosts contacted (all five leaves' images and every script/TSV already on disk). No
 subagents (all work fit inside direct tool use). Cost: see the lane ledger.
+
+## ZX-BRO2 (25 Sept 2026)
+
+Worker ZX-BRO2 (Sonnet, session_01MbvYVs5V66St4i2PCkDu3X), job (`.claude/briefs/runs/2026-09-25-lane-zx-bro2.md`):
+is letter 134's judge score (-1.443, YX-PTJUDGE) typical of a same-procedure decode of this material at its
+length, or in the bottom tail -- ZX-BRO's own two held-out controls (Carta 96, Carta 70) both FAILed the same
+way, but one control per length is not enough (CLAUDE.md rule 3); score the whole bucket. Parent: LANE ZX
+orchestrator (session_01MxueEQJUGF9PWJiYcVyvBM). Intake gate already run by the lane orchestrator, 15:44 UTC
+25 Sept 2026, exit 0. No network access needed or used.
+
+### Step 1: the whole bucket, built and scored
+
+`scripts/15_judge_bucket.py` (new) generalises `scripts/14_loo_judge_control.py`'s exact method -- LOO-rebuild
+the key excluding one entry's own pairs, decode that entry's own coded tokens from the rebuilt key (majority
+vote, grade C if total>=2 and n/total>=0.65 else M, unresolved -> `_`) -- from the single Carta 96 entry ZX-BRO
+built it for to all 38 entries in `ciphertext_appendix.tsv`/`_pairs.json`. For the 3 entries whose LOO decode
+comes out longer than 70 letters after folding out `_` placeholders (Carta 13, 137 tokens; Carta 92, 100
+tokens; m0290 Passage 2a, 115 tokens) the decode is cut into non-overlapping 65-letter windows on the folded
+letter stream (a short remainder window kept and scored, not dropped, but excluded from the bucket stats below
+since it falls outside the spec's 40-70 letter range). Every one of the resulting 43 candidates is scored with
+`python3 tools/judge_plaintext.py <spec> --file <candidate>` (the exact CLI form the brief names, called via
+`subprocess` from the script rather than typed 43x2 times by hand -- ~130 invocations, ~1.7s/pt17 + ~3.4s/pt18
+each, all logged in the script's own docstring) against both `specs/antt-msliv0638-brochado-1712.json`
+(pt17, Vieira 1648-1697, the existing spec) and a new scratch copy with `judge.language` set to `"pt18"`
+(`spec_pt18_scratch.json`, Correio Braziliense/Investigador Portuguez 1808-1819, the corpus LANE V6 wired in
+today and YX-PTJUDGE already used once for letter 134 itself) -- kept inside this target's own folder, `specs/`
+untouched, per this job's brief. Candidate text files are NOT committed (43 throwaway LOO decodes, not claimed
+readings -- rule 7 applies to readings, not to a bucket-control census); the per-candidate numbers are all in
+the one file this job does commit, `judge_bucket.tsv` (entry, kind, letters, LOO-accuracy-vs-gloss columns,
+score_pt17/pt18, null_p99/real_p05 for each, and whether the candidate falls in the 40-70-letter bucket).
+
+Spot-check that the script's subprocess calls reproduce the CLI byte-for-byte: `spec_pt18_scratch.json` against
+`reading_body_letter134.txt` directly from the shell gives `score=-1.422, null_p99=-1.396, real_p05=-1.118,
+N=65` -- identical to the script's own run of the same pair (see Step 2).
+
+38 distinct entries -> 43 candidates (35 whole entries fitting in one window, 8 windows from the 3 long
+entries) -> **20 candidates land in the 40-70-letter bucket** (the range this spec's judge and letter 134's
+own 65-letter reading share). 9 of the 20 have a defined LOO accuracy against the appendix's own gloss (11 of
+the 20 come from entries that contributed 0 aligned pairs to the real key either -- `conflicts.tsv`'s "no
+resolved tokens" rows -- so LOO accuracy is undefined for them, same as it already was for the real key; they
+are still valid bucket members because they can still be *decoded* from every other entry's pairs, just not
+*checked* against a gloss).
+
+### Step 2: distribution, correlation, percentiles
+
+```
+=== 40-70-letter bucket (n=20) ===
+pt17: median=-1.289  p05=-1.581  p25=-1.385   (10th-percentile threshold: -1.437)
+pt18: median=-1.276  p05=-1.513  p25=-1.342   (10th-percentile threshold: -1.402)
+correlation(LOO accuracy vs gloss, judge score pt17): r=0.442 (n=9, the bucket members with a defined LOO pct)
+
+letter 134: score_pt17=-1.443  (bucket pt17 percentile: 5.0)
+letter 134: score_pt18=-1.422  (bucket pt18 percentile: 5.0)
+```
+
+Only 2/20 (pt17) and 6/20 (pt18) bucket members formally PASS the judge's binary language check at all --
+consistent with ZX-BRO's own finding that this judge is weak at 40-70 letters on this material generally, most
+same-procedure decodes fail too. But letter 134 is not merely "failing like the bucket" -- its score sits
+**below the bucket's own 10th-percentile threshold under both corpora** (pt17: -1.443 < -1.437; pt18: -1.422 <
+-1.402), and empirically only 1 of the 20 bucket members (m0291 Carta 96, ZX-BRO's own Control A, -1.581
+pt17/-1.513 pt18) scores lower than letter 134 does, under either corpus. Weak-to-moderate positive
+correlation (r=0.44) between an entry's own LOO accuracy against its known gloss and its judge score, as
+expected (a better-attested LOO decode tends to read more like real Portuguese), though n=9 is small.
+
+Letter 134's own score against its own shuffled-letter null (not exposed by the CLI's printed `null_p99`
+threshold; computed directly from `tools/judge_plaintext.py`'s own `NgramModel.controls()`, same corpora, same
+N=65, seed=1, 200 samples each -- not a re-implementation, the identical function the CLI calls): **pt17
+null-percentile 97.5, real-text percentile 0.0; pt18 null-percentile 98.5, real-text percentile 0.0.** Letter
+134 scores higher than the great majority of pure gibberish (97.5-98.5th percentile of the shuffled null) but
+lower than literally all 200 real-Portuguese-text sample windows of the same length, under both corpora --
+the same "barely above noise, nowhere near real text" reading YX-PTJUDGE's single p99/p05 numbers already
+implied, now with the actual percentiles instead of just the pass/fail thresholds.
+
+### Step 3: verdict
+
+Per the brief's own decision rule: letter 134 sits in the bottom tail, with 19 of the 20 known-provenance,
+same-procedure bucket members scoring above it under both corpora (below the bucket's own 10th percentile
+under both) -- **"letter 134's candidate fails the bucket control."** This is a materially different, more
+informative statement than ZX-BRO's two-control result (both controls also FAILed the binary gate, which
+could only show the judge is *weak* here, not where letter 134 sits *within* that weakness); scoring the
+whole bucket shows letter 134 is not merely another same-length FAIL like the majority of the bucket, but
+close to the worst-scoring member of it.
+
+**Likeliest cause, from its per-token grades (YX-BRO79 Step 4) and this run:** the same thin-evidence codes
+YX-BRO79 already flagged -- 19 of letter 134's 70 tokens (27%) ride on codes attested only 1-3 times elsewhere
+in the appendix (`x` n=2, `z` n=2, `d` n=1, `f` n=3 split 2/1, `16` n=1, `9` n=2), i.e. codes whose LOO-rebuilt
+majority vote is itself resting on almost no independent evidence. This matches the correlation direction
+found here (weaker LOO accuracy tracks a weaker judge score) and is the same reason Carta 96 (LOO accuracy
+77.3% against its own gloss, contributing only 22 pairs) is the one bucket member that scores even lower than
+letter 134. A second, distinct structural point found while building this bucket and not previously
+documented: letter 134's own candidate text is the concatenation of **two separate coded runs (Span A, 50
+tokens, and Span B, 20 tokens) that are NOT adjacent in the source** -- a full plain-Portuguese sentence sits
+between them on the image ("Cá não cuido de dizer que o novo Enviado..."), never represented in the candidate
+text. `tools/judge_plaintext.py`'s `fold()` strips the space between the two spans along with everything
+else non-alphabetic, so the 4-gram model sees Span A's last letters running directly into Span B's first
+letters as if they were one continuous phrase -- roughly 3 of the reading's 62 four-gram windows straddle
+this artificial join. No bucket entry has this property (every one of the 38 appendix entries is a single
+continuous coded run); it is a modest effect on its own (3/62 windows) but is unique to letter 134 among
+every candidate scored in this job, so it is named here as a partial, not sole, contributor -- not something
+"a mis-keyed code" would explain, since YX-BRO79's independent fresh-instance re-derivation already
+corroborated every C-graded code in this reading and found no contradiction beyond the single already-M-graded
+code 24.
+
+**What this does and does not say:** it sharpens ZX-BRO's own "judge cannot decide at this length" into "the
+judge cannot decide FOR THIS MATERIAL at this length in general (most of the bucket also fails), but within
+that weak regime, letter 134's own candidate is one of the weakest, not a middling or typical member of it" --
+consistent with (not proof of) an appreciable error rate concentrated in its thin-evidence-code tokens, on top
+of the general judge-at-this-length limit CLAUDE.md rule 3 and ZX-BRO already established. It is not a
+claim that letter 134's reading is wrong -- rule 10/rule 7: this is a cryptanalytic result (grade S) reported
+with its control numbers side by side, not a verifier's verdict, and the parent decides whether this target
+goes to a verifier or gets another cheap test (e.g., hand-checking the thin-evidence codes' remaining
+un-examined occurrences against the image, since none of the five entries ZX-BRO hand-checked touched these
+six codes) first.
+
+### Status
+
+Stays **`partial`**. No new reading, no key change, no file under this job's brief touched except
+`scripts/15_judge_bucket.py` (new), `spec_pt18_scratch.json` (new, scratch, inside this folder), and
+`judge_bucket.tsv` (new). `key.tsv`, `reading_body_letter134.txt` and every other committed file are
+byte-identical to before this job.
+
+### Not done this pass, next steps
+
+- Hand-check the six thin-evidence codes' (`x`, `z`, `d`, `f`, `16`, `9`) remaining occurrences elsewhere in
+  the appendix against the image -- none of ZX-BRO's five hand-checked entries touched these specific codes;
+  this is the concrete next test the per-token-grade analysis above points to.
+- Whether re-scoring letter 134's two spans SEPARATELY (Span A alone, Span B alone, both under 40 letters so
+  outside this spec's judge range as written) removes enough of the artificial-join effect to matter is
+  untested; would need either a relaxed `letters_min` on a second scratch spec or accepting an N<40 judge run
+  outside the spec's own stated range.
+- No verifier, no AUDIT.md, no second opinion for this target yet -- unchanged from the LANE PX/YX/ZX handoff.
+
+### Host report
+
+No network access; no hosts contacted (all work from `_pairs.json`, `ciphertext_appendix.tsv` and
+`tools/data/pt17`+`pt18` already on disk). No subagents. Cost: see the lane ledger.
