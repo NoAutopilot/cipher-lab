@@ -10,9 +10,9 @@
       "reading": "reading.txt",
       "tokens": "reading_tokens.tsv",
       "header": [
-        "# antt-linhares-chave m0002, decoded against Vieyra 1809 Part I (BOOK.md) via key.tsv (LX-DEC, 25 Sept 2026)",
+        "# antt-linhares-chave m0002, decoded against Vieyra 1809 Part I (BOOK.md) via key.tsv (LX-DEC, 25 Sept 2026; LX-FIX, 25 Sept 2026)",
         "# tokens {total}: {HCSMIU} (U = sign not covered by the key; there should be none -- every group in",
-        "# ciphertext.tsv has a key.tsv row, including the one null and the one still-unresolved group)",
+        "# ciphertext.tsv has a key.tsv row, including the one null and the one remaining M-graded group, 283219/cagar)",
         "# Portuguese as decoded, one line per manuscript line (page_of_letter + line). English gloss below in NOTES.md."
       ]
     }

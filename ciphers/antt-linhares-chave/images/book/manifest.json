@@ -1,44 +1,258 @@
 {
-  "source": "archive.org, item newpocketdiction00viey (also Google Books id 0mESAAAAIAAJ, full view, ALL_PAGES public domain)",
-  "title": "A New Pocket Dictionary of the Portuguese and English Languages, in Two Parts; Portuguese and English — English and Portuguese, Abridged from the Dictionary of Mr. Vieyra; with Additions and Improvements from Other Works. Part I. Portuguese and English.",
-  "author_on_title": "Antonio Vieyra (abridgement, unattributed on title page beyond \"Mr. Vieyra\")",
-  "imprint": "London: Printed for F. Wingrave; J. Johnson; J. Walker; Scatcherd and Letterman; Vernor, Hood and Sharpe; Wilkie and Robinson; Cuthell and Martin; Longman, Hurst, Rees and Orme; Cadell and Davies; Lackington, Allen and Co.; T. Boosey; Black, Parry and Kingsbury; J. Mawman; J. Murray; J. Richardson; J. M. Richardson; J. Faulder; J. Asperne; Payne and Mackinlay; and Dulau and Co., 1809.",
-  "identifier": "newpocketdiction00viey",
-  "download_note": "fetched with tools/browser_fetch.js-independent curl (User-Agent: cipher-lab research script (contact via repository)); page images via https://ia800806.us.archive.org/BookReader/BookReaderImages.php?zip=/28/items/newpocketdiction00viey/newpocketdiction00viey_jp2.zip&file=newpocketdiction00viey_jp2/newpocketdiction00viey_LEAF.jp2&id=newpocketdiction00viey&scale=2",
-  "leaf_to_printed_page_offset": "not constant: leaf-print=10 near printed p.4-38, =14 near p.110-234, =16-18 near p.288-354 (checked by reading the printed page number in each fetched image directly, never assumed)",
-  "files": [
-    {"file": "newpocketdiction00viey_leaf0005_titlepage.jpg", "leaf": 5, "printed_page": "title page", "content": "full title page, imprint, 1809"},
-    {"file": "newpocketdiction00viey_leaf0014_p004.jpg", "leaf": 14, "printed_page": 4, "content": "col.1 rank2 = Abicar (test: 1412 trim5 -> A)"},
-    {"file": "newpocketdiction00viey_leaf0018_p008.jpg", "leaf": 18, "printed_page": 8, "content": "col.1 rank1 = Acaso (test: 1811 trim4 -> A)"},
-    {"file": "newpocketdiction00viey_leaf0048_p038.jpg", "leaf": 48, "printed_page": 38, "content": "col.1 rank2 = Anao/Anaõ (test: 23812 trim3 -> A)"},
-    {"file": "newpocketdiction00viey_leaf0124_p110.jpg", "leaf": 124, "printed_page": 110, "content": "col.2 rank1 = Com (test: 311021, no trim)"},
-    {"file": "newpocketdiction00viey_leaf0147_p133.jpg", "leaf": 147, "printed_page": 133, "content": "col.1 rank2 = De (test: 313312, no trim)"},
-    {"file": "newpocketdiction00viey_leaf0225_p211.jpg", "leaf": 225, "printed_page": 211, "content": "col.1 rank8 = Franco (test: 321118 trim1 -> Franc)"},
-    {"file": "newpocketdiction00viey_leaf0236_p222.jpg", "leaf": 236, "printed_page": 222, "content": "col.1 rank2 = Guerra (test: 322212, no trim; also confirmed by the key's own prose)"},
-    {"file": "newpocketdiction00viey_leaf0248_p234.jpg", "leaf": 248, "printed_page": 234, "content": "col.1 rank24 = Inevitavel (test: 3234124, no trim)"},
-    {"file": "newpocketdiction00viey_leaf0306_p290.jpg", "leaf": 306, "printed_page": 290, "content": "col.2 rank19 = Parecer (test: 3290219, no trim)"},
-    {"file": "newpocketdiction00viey_leaf0362_p344.jpg", "leaf": 362, "printed_page": 344, "content": "col.3 rank25 = Rustico (test: 3344325 trim4 -> Rus)"},
-    {"file": "newpocketdiction00viey_leaf0372_p354.jpg", "leaf": 372, "printed_page": 354, "content": "col.2 rank2 = Sillaba (test: 335422 trim5 -> Si); reused for m0002 col.1 rank2 (group 335412)"},
-
-    {"file": "newpocketdiction00viey_leaf0072_p060.jpg", "leaf": 72, "printed_page": 60, "content": "m0002 col.1 rank18 = Ate (group 260118, no trim); fetched 25 Sept 2026, LX-DEC"},
-    {"file": "newpocketdiction00viey_leaf0097_p085.jpg", "leaf": 97, "printed_page": 85, "content": "m0002 col.2, group 285219 rank19 sought -- column only has 15 headwords (ends Calumnia); UNRESOLVED, see NOTES.md; fetched 25 Sept 2026, LX-DEC"},
-    {"file": "newpocketdiction00viey_leaf0146_p132.jpg", "leaf": 146, "printed_page": 132, "content": "m0002 col.1 rank1 = 'D, One of the mutes...' (group 313211, no trim); fetched 25 Sept 2026, LX-DEC"},
-    {"file": "newpocketdiction00viey_leaf0176_p162.jpg", "leaf": 176, "printed_page": 162, "content": "m0002 col.1 rank1 = Dormitar (group 316211 trim6 -> Do); fetched 25 Sept 2026, LX-DEC"},
-    {"file": "newpocketdiction00viey_leaf0237_p223.jpg", "leaf": 237, "printed_page": 223, "content": "m0002 col.3 rank2 = Hernia (group 322332 trim4 -> He); fetched 25 Sept 2026, LX-DEC"},
-    {"file": "newpocketdiction00viey_leaf0255_p241.jpg", "leaf": 255, "printed_page": 241, "content": "m0002 col.2 rank20 = Junto (group 3241220, no trim) and col.3 rank15 = Justa (group 3241315, no trim); fetched 25 Sept 2026, LX-DEC"},
-    {"file": "newpocketdiction00viey_leaf0261_p247.jpg", "leaf": 261, "printed_page": 247, "content": "m0002 col.2 rank6 = Lhe (group 324726, no trim); fetched 25 Sept 2026, LX-DEC"},
-    {"file": "newpocketdiction00viey_leaf0264_p250.jpg", "leaf": 264, "printed_page": 250, "content": "m0002 col.1 rank21 = Logo (group 3250121, no trim); fetched 25 Sept 2026, LX-DEC"},
-    {"file": "newpocketdiction00viey_leaf0265_p251.jpg", "leaf": 265, "printed_page": 251, "content": "m0002 col.2 rank17 = Lugar (group 3251217, no trim); fetched 25 Sept 2026, LX-DEC (as a page-250 guess; the printed page number in the image itself reads 251, confirmed before use)"},
-    {"file": "newpocketdiction00viey_leaf0269_p255.jpg", "leaf": 269, "printed_page": 255, "content": "m0002 col.3 rank2 = Mando (group 325532 trim2 -> Man); fetched 25 Sept 2026, LX-DEC"},
-    {"file": "newpocketdiction00viey_leaf0276_p262.jpg", "leaf": 276, "printed_page": 262, "content": "m0002 col.2 rank3 = Memoria (group 326223, no trim); fetched 25 Sept 2026, LX-DEC"},
-    {"file": "newpocketdiction00viey_leaf0280_p266.jpg", "leaf": 280, "printed_page": 266, "content": "m0002 col.2 rank4 = Ministerio (group 326624, no trim); fetched 25 Sept 2026, LX-DEC"},
-    {"file": "newpocketdiction00viey_leaf0297_p281.jpg", "leaf": 297, "printed_page": 281, "content": "m0002 col.3 rank1 = Odio (group 328131 trim3 -> O); fetched 25 Sept 2026, LX-DEC"},
-    {"file": "newpocketdiction00viey_leaf0301_p285.jpg", "leaf": 301, "printed_page": 285, "content": "m0002 col.1 rank1 = Ovo (group 328511 trim2 -> O) and col.2 rank1 = Ouros (group 328521 trim4 -> O); fetched 25 Sept 2026, LX-DEC"},
-    {"file": "newpocketdiction00viey_leaf0305_p289.jpg", "leaf": 305, "printed_page": 289, "content": "m0002 col.2 rank8 = Para (group 328928, no trim); fetched 25 Sept 2026, LX-DEC"},
-    {"file": "newpocketdiction00viey_leaf0309_p293.jpg", "leaf": 309, "printed_page": 293, "content": "m0002 col.2 rank11 = Pauperrimo (group 3293211 trim3 -> Pauperr); fetched 25 Sept 2026, LX-DEC"},
-    {"file": "newpocketdiction00viey_leaf0311_p295.jpg", "leaf": 311, "printed_page": 295, "content": "m0002 col.1 rank12 = Pela (group 3295112, no trim); fetched 25 Sept 2026, LX-DEC"},
-    {"file": "newpocketdiction00viey_leaf0368_p350.jpg", "leaf": 368, "printed_page": 350, "content": "m0002 col.3 rank20 = Segredo (group 3350320, no trim); fetched 25 Sept 2026, LX-DEC"},
-    {"file": "newpocketdiction00viey_leaf0380_p362.jpg", "leaf": 380, "printed_page": 362, "content": "m0002 col.2 rank7 = ambiguous, Supprir or Supremo (group 336227, no trim, see key.tsv); fetched 25 Sept 2026, LX-DEC"},
-    {"file": "newpocketdiction00viey_leaf0401_p383.jpg", "leaf": 401, "printed_page": 383, "content": "m0002 col.2 rank6 = Venablo (group 338326 trim4 -> Ven); fetched 25 Sept 2026, LX-DEC"}
-  ]
+ "source": "archive.org, item newpocketdiction00viey (also Google Books id 0mESAAAAIAAJ, full view, ALL_PAGES public domain)",
+ "title": "A New Pocket Dictionary of the Portuguese and English Languages, in Two Parts; Portuguese and English — English and Portuguese, Abridged from the Dictionary of Mr. Vieyra; with Additions and Improvements from Other Works. Part I. Portuguese and English.",
+ "author_on_title": "Antonio Vieyra (abridgement, unattributed on title page beyond \"Mr. Vieyra\")",
+ "imprint": "London: Printed for F. Wingrave; J. Johnson; J. Walker; Scatcherd and Letterman; Vernor, Hood and Sharpe; Wilkie and Robinson; Cuthell and Martin; Longman, Hurst, Rees and Orme; Cadell and Davies; Lackington, Allen and Co.; T. Boosey; Black, Parry and Kingsbury; J. Mawman; J. Murray; J. Richardson; J. M. Richardson; J. Faulder; J. Asperne; Payne and Mackinlay; and Dulau and Co., 1809.",
+ "identifier": "newpocketdiction00viey",
+ "download_note": "fetched with tools/browser_fetch.js-independent curl (User-Agent: cipher-lab research script (contact via repository)); page images via https://ia800806.us.archive.org/BookReader/BookReaderImages.php?zip=/28/items/newpocketdiction00viey/newpocketdiction00viey_jp2.zip&file=newpocketdiction00viey_jp2/newpocketdiction00viey_LEAF.jp2&id=newpocketdiction00viey&scale=2",
+ "leaf_to_printed_page_offset": "not constant: leaf-print=10 near printed p.4-38, =14 near p.110-234, =16-18 near p.288-354 (checked by reading the printed page number in each fetched image directly, never assumed)",
+ "files": [
+  {
+   "file": "newpocketdiction00viey_leaf0005_titlepage.jpg",
+   "leaf": 5,
+   "printed_page": "title page",
+   "content": "full title page, imprint, 1809"
+  },
+  {
+   "file": "newpocketdiction00viey_leaf0014_p004.jpg",
+   "leaf": 14,
+   "printed_page": 4,
+   "content": "col.1 rank2 = Abicar (test: 1412 trim5 -> A)"
+  },
+  {
+   "file": "newpocketdiction00viey_leaf0018_p008.jpg",
+   "leaf": 18,
+   "printed_page": 8,
+   "content": "col.1 rank1 = Acaso (test: 1811 trim4 -> A)"
+  },
+  {
+   "file": "newpocketdiction00viey_leaf0048_p038.jpg",
+   "leaf": 48,
+   "printed_page": 38,
+   "content": "col.1 rank2 = Anao/Anaõ (test: 23812 trim3 -> A)"
+  },
+  {
+   "file": "newpocketdiction00viey_leaf0124_p110.jpg",
+   "leaf": 124,
+   "printed_page": 110,
+   "content": "col.2 rank1 = Com (test: 311021, no trim)"
+  },
+  {
+   "file": "newpocketdiction00viey_leaf0147_p133.jpg",
+   "leaf": 147,
+   "printed_page": 133,
+   "content": "col.1 rank2 = De (test: 313312, no trim)"
+  },
+  {
+   "file": "newpocketdiction00viey_leaf0225_p211.jpg",
+   "leaf": 225,
+   "printed_page": 211,
+   "content": "col.1 rank8 = Franco (test: 321118 trim1 -> Franc)"
+  },
+  {
+   "file": "newpocketdiction00viey_leaf0236_p222.jpg",
+   "leaf": 236,
+   "printed_page": 222,
+   "content": "col.1 rank2 = Guerra (test: 322212, no trim; also confirmed by the key's own prose)"
+  },
+  {
+   "file": "newpocketdiction00viey_leaf0248_p234.jpg",
+   "leaf": 248,
+   "printed_page": 234,
+   "content": "col.1 rank24 = Inevitavel (test: 3234124, no trim)"
+  },
+  {
+   "file": "newpocketdiction00viey_leaf0306_p290.jpg",
+   "leaf": 306,
+   "printed_page": 290,
+   "content": "col.2 rank19 = Parecer (test: 3290219, no trim)"
+  },
+  {
+   "file": "newpocketdiction00viey_leaf0362_p344.jpg",
+   "leaf": 362,
+   "printed_page": 344,
+   "content": "col.3 rank25 = Rustico (test: 3344325 trim4 -> Rus)"
+  },
+  {
+   "file": "newpocketdiction00viey_leaf0372_p354.jpg",
+   "leaf": 372,
+   "printed_page": 354,
+   "content": "col.2 rank2 = Sillaba (test: 335422 trim5 -> Si); reused for m0002 col.1 rank2 (group 335412)"
+  },
+  {
+   "file": "newpocketdiction00viey_leaf0072_p060.jpg",
+   "leaf": 72,
+   "printed_page": 60,
+   "content": "m0002 col.1 rank18 = Ate (group 260118, no trim); fetched 25 Sept 2026, LX-DEC"
+  },
+  {
+   "file": "newpocketdiction00viey_leaf0097_p085.jpg",
+   "leaf": 97,
+   "printed_page": 85,
+   "content": "m0002 col.2, group 285219 rank19 sought -- column only has 15 headwords (ends Calumnia); UNRESOLVED, see NOTES.md; fetched 25 Sept 2026, LX-DEC"
+  },
+  {
+   "file": "newpocketdiction00viey_leaf0146_p132.jpg",
+   "leaf": 146,
+   "printed_page": 132,
+   "content": "m0002 col.1 rank1 = 'D, One of the mutes...' (group 313211, no trim); fetched 25 Sept 2026, LX-DEC"
+  },
+  {
+   "file": "newpocketdiction00viey_leaf0176_p162.jpg",
+   "leaf": 176,
+   "printed_page": 162,
+   "content": "m0002 col.1 rank1 = Dormitar (group 316211 trim6 -> Do); fetched 25 Sept 2026, LX-DEC"
+  },
+  {
+   "file": "newpocketdiction00viey_leaf0237_p223.jpg",
+   "leaf": 237,
+   "printed_page": 223,
+   "content": "m0002 col.3 rank2 = Hernia (group 322332 trim4 -> He); fetched 25 Sept 2026, LX-DEC"
+  },
+  {
+   "file": "newpocketdiction00viey_leaf0255_p241.jpg",
+   "leaf": 255,
+   "printed_page": 241,
+   "content": "m0002 col.2 rank20 = Junto (group 3241220, no trim) and col.3 rank15 = Justa (group 3241315, no trim); fetched 25 Sept 2026, LX-DEC"
+  },
+  {
+   "file": "newpocketdiction00viey_leaf0261_p247.jpg",
+   "leaf": 261,
+   "printed_page": 247,
+   "content": "m0002 col.2 rank6 = Lhe (group 324726, no trim); fetched 25 Sept 2026, LX-DEC"
+  },
+  {
+   "file": "newpocketdiction00viey_leaf0264_p250.jpg",
+   "leaf": 264,
+   "printed_page": 250,
+   "content": "m0002 col.1 rank21 = Logo (group 3250121, no trim); fetched 25 Sept 2026, LX-DEC"
+  },
+  {
+   "file": "newpocketdiction00viey_leaf0265_p251.jpg",
+   "leaf": 265,
+   "printed_page": 251,
+   "content": "m0002 col.2 rank17 = Lugar (group 3251217, no trim); fetched 25 Sept 2026, LX-DEC (as a page-250 guess; the printed page number in the image itself reads 251, confirmed before use)"
+  },
+  {
+   "file": "newpocketdiction00viey_leaf0269_p255.jpg",
+   "leaf": 269,
+   "printed_page": 255,
+   "content": "m0002 col.3 rank2 = Mando (group 325532 trim2 -> Man); fetched 25 Sept 2026, LX-DEC"
+  },
+  {
+   "file": "newpocketdiction00viey_leaf0276_p262.jpg",
+   "leaf": 276,
+   "printed_page": 262,
+   "content": "m0002 col.2 rank3 = Memoria (group 326223, no trim); fetched 25 Sept 2026, LX-DEC"
+  },
+  {
+   "file": "newpocketdiction00viey_leaf0280_p266.jpg",
+   "leaf": 280,
+   "printed_page": 266,
+   "content": "m0002 col.2 rank4 = Ministerio (group 326624, no trim); fetched 25 Sept 2026, LX-DEC"
+  },
+  {
+   "file": "newpocketdiction00viey_leaf0297_p281.jpg",
+   "leaf": 297,
+   "printed_page": 281,
+   "content": "m0002 col.3 rank1 = Odio (group 328131 trim3 -> O); fetched 25 Sept 2026, LX-DEC"
+  },
+  {
+   "file": "newpocketdiction00viey_leaf0301_p285.jpg",
+   "leaf": 301,
+   "printed_page": 285,
+   "content": "m0002 col.1 rank1 = Ovo (group 328511 trim2 -> O) and col.2 rank1 = Ouros (group 328521 trim4 -> O); fetched 25 Sept 2026, LX-DEC"
+  },
+  {
+   "file": "newpocketdiction00viey_leaf0305_p289.jpg",
+   "leaf": 305,
+   "printed_page": 289,
+   "content": "m0002 col.2 rank8 = Para (group 328928, no trim); fetched 25 Sept 2026, LX-DEC"
+  },
+  {
+   "file": "newpocketdiction00viey_leaf0309_p293.jpg",
+   "leaf": 309,
+   "printed_page": 293,
+   "content": "m0002 col.2 rank11 = Pauperrimo (group 3293211 trim3 -> Pauperr); fetched 25 Sept 2026, LX-DEC"
+  },
+  {
+   "file": "newpocketdiction00viey_leaf0311_p295.jpg",
+   "leaf": 311,
+   "printed_page": 295,
+   "content": "m0002 col.1 rank12 = Pela (group 3295112, no trim); fetched 25 Sept 2026, LX-DEC"
+  },
+  {
+   "file": "newpocketdiction00viey_leaf0368_p350.jpg",
+   "leaf": 368,
+   "printed_page": 350,
+   "content": "m0002 col.3 rank20 = Segredo (group 3350320, no trim); fetched 25 Sept 2026, LX-DEC"
+  },
+  {
+   "file": "newpocketdiction00viey_leaf0380_p362.jpg",
+   "leaf": 380,
+   "printed_page": 362,
+   "content": "m0002 col.2 rank7 = ambiguous, Supprir or Supremo (group 336227, no trim, see key.tsv); fetched 25 Sept 2026, LX-DEC"
+  },
+  {
+   "file": "newpocketdiction00viey_leaf0401_p383.jpg",
+   "leaf": 401,
+   "printed_page": 383,
+   "content": "m0002 col.2 rank6 = Venablo (group 338326 trim4 -> Ven); fetched 25 Sept 2026, LX-DEC"
+  },
+  {
+   "file": "newpocketdiction00viey_leaf0092_p080.jpg",
+   "leaf": 92,
+   "printed_page": 80,
+   "content": "col.2 has 17 headwords (Burlar..Buz) -- fetched by LX-FIX to test whether p3l1pos4 caret digit could be 0 (page80); rank19 does not exist here (17<19)"
+  },
+  {
+   "file": "newpocketdiction00viey_leaf0093_p081.jpg",
+   "leaf": 93,
+   "printed_page": 81,
+   "content": "col.2 has 9 headwords (Cabedal continuation..Caber) -- fetched by LX-FIX to test digit=1 (page81); rank19 does not exist (9<19)"
+  },
+  {
+   "file": "newpocketdiction00viey_leaf0094_p082.jpg",
+   "leaf": 94,
+   "printed_page": 82,
+   "content": "col.2 has 18 headwords (Cachaca..Cachonde) -- fetched by LX-FIX to test digit=2 (page82); rank19 does not exist (18<19)"
+  },
+  {
+   "file": "newpocketdiction00viey_leaf0095_p083.jpg",
+   "leaf": 95,
+   "printed_page": 83,
+   "content": "col.2 has 23 headwords (Cadimo..Cahir); rank19 = Cagar, v.a. to go to stool -- LX-FIX, 25 Sept 2026: the only digit=X in 28Xc219 (X=0-9) whose column reaches rank19 as a real headword. Leading candidate for ciphertext.tsv p3l1pos4 (283219), grade M -- see NOTES.md Fix pass"
+  },
+  {
+   "file": "newpocketdiction00viey_leaf0096_p084.jpg",
+   "leaf": 96,
+   "printed_page": 84,
+   "content": "col.2 has 15 headwords (Calamo..Calcez) -- fetched by LX-FIX to test digit=4 (page84); rank19 does not exist (15<19)"
+  },
+  {
+   "file": "newpocketdiction00viey_leaf0100_p086.jpg",
+   "leaf": 100,
+   "printed_page": 86,
+   "content": "col.2 has 16 headwords (Cambada..Camedryos) -- fetched by LX-FIX to test digit=6 (page86); rank19 does not exist (16<19)"
+  },
+  {
+   "file": "newpocketdiction00viey_leaf0101_p087.jpg",
+   "leaf": 101,
+   "printed_page": 87,
+   "content": "col.2 has 9 real headwords after the Campo continuation (Camponez..Canafrecha) -- fetched by LX-FIX to test digit=7 (page87, pass A's original 287219 guess); rank19 does not exist (9<19), ruling out 7 independent of the shape debate"
+  },
+  {
+   "file": "newpocketdiction00viey_leaf0102_p088.jpg",
+   "leaf": 102,
+   "printed_page": 88,
+   "content": "col.2 has 16 headwords (Canelada..Canhametra) -- fetched by LX-FIX to test digit=8 (page88); rank19 does not exist (16<19)"
+  },
+  {
+   "file": "newpocketdiction00viey_leaf0103_p089.jpg",
+   "leaf": 103,
+   "printed_page": 89,
+   "content": "col.2 has 10 headwords (Canotilho..Cantico) -- fetched by LX-FIX to test digit=9 (page89); rank19 does not exist (10<19)"
+  }
+ ],
+ "download_note_lxfix": "LX-FIX, 25 Sept 2026: leaves 92-96 and 100-103 fetched via the same BookReaderImages.php route to sweep p80-84,86-89 for the p3l1pos4 caret-digit fix (see NOTES.md). Leaf offset is NOT constant across leaf98-99: leaf98 is a page-turn photograph (operator's hand visible, oversized 1456x2184 image) and leaf99 returned a similarly unusable frame, both skipped; offset is +12 (leaf-print) through leaf97/page85, then +14 from leaf100/page86 onward -- confirmed by reading the printed page number in each image, never assumed."
 }

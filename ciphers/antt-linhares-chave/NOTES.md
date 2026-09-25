@@ -435,3 +435,127 @@ stopped short of that because the next item in order, `/10` at 28 images, would 
 partial coverage of an item is not useful for a "no cipher found" claim). No 429/403/challenge seen. Files
 added: `images/maco86_scan/doc{13,14,15,16,18,20,05,07,17}/thumb_*.jpg` and `montage_01.jpg` per item (~9 files
 x up to 12 images, well under 1 MB total).
+
+## Fix pass (LX-FIX, 25 Sept 2026)
+
+`date -u` at start: 2026-09-25 01:55 UTC. Job (`.claude/briefs/runs/2026-09-25-lane-lx-fix.md`): settle the p3l1pos4
+group and re-examine the six M tokens. Before this pass: H 20, M 6 (of 26). After: **H 25, M 1.**
+
+### The unresolved group, p3 line1 pos4 (was `285219`, now `283219`)
+
+**Step 1 -- re-read the caret digit.** Re-cropped `images/full_PT-TT-CLNH-0086-11_m0002.jpg.jpg` at up to 20x
+around the group (crops kept at `images/crops/p3l1pos4_wide_zoom.png` and `p3l1pos4_caret_only.png`). The group
+reads as two clear baseline digits ("28"), a small caret-inserted digit squeezed in above the line, then three
+more clear baseline digits ("219") -- confirmed unambiguous by direct comparison against this scribe's other 5s,
+7s and 3s on the same two lines (`326227`'s "7", `328511`'s "5", `3293211`/`3250121`/`338326`'s leading "3"s):
+the disputed stroke is a hook curving right at the top into a long diagonal, which resembles this scribe's "7"
+more than the looped, flatter-topped "5", and the "3"s elsewhere on the page are a distinct double-hump shape
+that matches less well than either. Shape alone did not settle it.
+
+A fresh Sonnet subagent (a genuinely separate agent instance, shown ONLY the crop `p3l1pos4_wide_zoom.png`, told
+nothing about this project, this key, or any prior reading) was asked to transcribe the group blind and describe
+the disputed stroke literally before guessing a digit. Its verbatim ranked answer: **"3" (best match, ~55%
+confidence, "two right-bulging curves stacked with a pinched waist, open to the left, is the textbook cursive 3
+shape"), "5" (~30%), "8" (~15%)** -- it did not independently arrive at "7", though it flagged the ambiguity as
+real. Full agent report kept in this session's transcript; not re-quoted verbatim elsewhere in the repo.
+
+**Step 2 -- test every one-digit-away candidate against the actual dictionary pages.** The group parses as
+`d=2, page=8X, col=2, rank=19` for the disputed digit X (page/col digits on either side of X are undisputed --
+both of LX-TR's blind passes agreed on "28" and "219"). Fetched every page 80-84 and 86-89 from archive.org
+(`newpocketdiction00viey`, `BookReaderImages.php`, leaves 92-96 and 100-103; leaf 98 is a page-turn photograph
+with the scanning operator's hand in frame, oversized 1456x2184px, and leaf 99 returned a similarly unusable
+frame -- both skipped, confirming and extending LX-DEC's "leaf98/99 corrupt" note; the leaf-to-printed-page
+offset is +12 through leaf97/page85 and +14 from leaf100/page86 on, each page confirmed by reading its own
+printed page number, never assumed) and counted column 2's real headwords by hand from the image (every bold
+headword on its own line, per the convention that already reproduces all 12 worked-example groups and the other
+25 live groups; a definition spilling from the previous column, like page87's "campo" idiom list continuing
+from column 1, is not counted, matching the rule already applied throughout this key):
+
+| X (page 8X) | col.2 headwords | rank19 exists? | what it would read |
+|---|---|---|---|
+| 0 (80) | 17 | no | -- |
+| 1 (81) | 9 | no | -- |
+| 2 (82) | 18 | no | -- |
+| **3 (83)** | **23** | **yes** | **Cagár, v.a. to go to stool (no trim needed -- matches the group's own blank trim field)** |
+| 4 (84) | 15 | no | -- |
+| 5 (85, the prior reading) | 15 | no | ends at Calúmnia, rank15 (checked independently three times already, see "Reading" above) |
+| 6 (86) | 16 | no | -- |
+| 7 (87, pass A's original guess) | 9 real headwords (after the "campo" continuation) | no | rules out 7 on lexical grounds alone, independent of the shape debate |
+| 8 (88) | 16 | no | -- |
+| 9 (89) | 10 | no | -- |
+
+Only X=3 reaches a column long enough to have a rank19 at all, and it lands exactly on a real headword. A
+column-count convention change at page85 (the brief's alternative path) was considered and rejected: the
+every-bold-line convention already reproduces all 37 other groups correctly, so changing it to rescue one group
+risks breaking the rest, which the brief itself gates on ("only if the same convention reproduces... the other
+25"); no convention change was found that adds exactly 4 entries to page85 col.2 without also changing counts
+that already check out elsewhere.
+
+**Verdict:** `283219` -> page83, col.2, rank19 -> **"cagár"** ("to go to stool"; vulgar). Both the blind
+independent re-read's top guess and the unique lexically-valid candidate agree, which is stronger than either
+alone -- but the blind read's own confidence (~55%) is well short of certain, and this remains a genuine
+three-way legibility call (3 vs 5 vs 7), not a clean re-crop settlement like LX-TR's other four disagreements on
+this target. **Grade M, not H.** `ciphertext.tsv` and `key.tsv` updated from `285219`/page85 to `283219`/page83;
+the superseded `285219` transcription is not silently dropped (rule 2) -- it is recorded here and in key.tsv's
+note. The semantic oddity of a vulgar verb mid-dispatch was NOT used to accept or reject this candidate (rule 3
+context: this key's decode should be judged on parse validity, not on which candidate makes tidier Portuguese;
+see also the M-token policy below).
+
+### The six M tokens
+
+Per the brief: change a grade only on evidence from an image, never on what makes better Portuguese. Re-checked
+each token's column 2 (or column 1, for token 3) against its own page image for any counting ambiguity like the
+Suppurar-se/Calificar-se case already on file:
+
+1. **p2l1pos2 (`336227`, page362 col.2 rank7, "supprir" vs "supremo").** Decided by image: page362 col.2 shows
+   "Suppurár, v. n. to suppurate." and "Suppurár-se, v. r. to suppurate." as **two separate bold headword
+   lines** (`images/book/newpocketdiction00viey_leaf0380_p362.jpg`), unlike page85's "Calificar-se" which sits
+   *inline* within "Calificár"'s own paragraph (italic, same line, not a new bold entry). The every-bold-line
+   convention therefore counts them separately here, exactly as it already does for the Lúcifer/Lucifer pair on
+   page251 -- rank7 = **Supprir**, rank8 = Supremo. **Upgraded M -> H.**
+2. **p2l1pos8 (`325532`, page255 col.3 rank2, trim2, "man").** No counting ambiguity: rank2 = "Mándo, s.m.
+   command, power" is the plain second entry in the column, nothing before it in question
+   (`images/book/newpocketdiction00viey_leaf0269_p255.jpg`). The parse is mechanically certain; the M grade was
+   for "Man" being a fragment, not a standalone word -- but the worked example's own "Rus"+"si"+"a" shows
+   fragment-spelling is this system's normal mechanic, not a reading uncertainty. **Upgraded M -> H.** Whether
+   it joins an adjacent group into a name (e.g. "Manoel") stays unclaimed and un-graded, per the brief ("note
+   candidates as I, never H") -- no such join is asserted here.
+3. **p2l2pos1 (`313211`, page132 col.1 rank1, "d").** Decided by image: page132 col.1
+   (`images/book/newpocketdiction00viey_leaf0146_p132.jpg`) shows the unnumbered "D." section heading, then
+   directly beneath it, as the column's actual first entry, "D, One of the mutes, supposed to be formed from
+   the Greek Δ." -- an ordinary headword defining the letter D, the same way this dictionary would define any
+   other letter. Not an anomaly; the M grade was unease at an entry being "just a letter," which the image shows
+   is exactly how the dictionary is laid out. **Upgraded M -> H.**
+4. **p3l1pos4** -- see above, resolved to `cagár`, grade M (not upgraded to H; genuine digit ambiguity remains).
+5. **p3l1pos6 (`3293211`, page293 col.2 rank11, trim3, "pauperr").** No counting ambiguity: rank11 =
+   "Paupérrimo, a, adj. very poor" (`images/book/newpocketdiction00viey_leaf0309_p293.jpg`), a plain position in
+   the column with no homograph/reflexive question before it; the digit string itself was already settled at H
+   by LX-TR's 12x-zoom re-crop. **Upgraded M -> H**, same fragment-mechanic reasoning as token 2.
+6. **p3l1pos7 (`338326`, page383 col.2 rank6, trim4, "ven").** No counting ambiguity: rank6 = "Venáblo, s.m. a
+   javelin, a huntsman's spear" (`images/book/newpocketdiction00viey_leaf0401_p383.jpg`), plain position, nothing
+   in question before it. **Upgraded M -> H**, same reasoning.
+
+### Grade counts, before/after (rule 4)
+
+Before this pass: H 20, M 6, C 0, S 0, I 0, U 0 (26 total).
+**After this pass: H 25, M 1, C 0, S 0, I 0, U 0 (26 total).**
+
+`python3 tools/decode_key.py ciphers/antt-linhares-chave --check` exits 0 (regenerated `reading.txt`/
+`reading_tokens.tsv`). `python3 tools/judge_plaintext.py specs/antt-linhares-chave.json --file
+ciphers/antt-linhares-chave/reading.txt --json` still returns `{"checks": {}, "pass": true}` -- unchanged,
+still vacuous (no `pt` corpus in `tools/data/`), not claimed as a language-model confirmation.
+
+Updated reading (Portuguese as decoded, grade in brackets):
+
+> [p.2] para[H] supprir[H] o[H] seu[H] lugar[H] junto[H] com[H] man[H] o[H]
+> d[H] justa[H] he[H] segredo[H] ate[H] {[null]} o[H] ministerio[H]
+> [p.3] pela[H] memoria[H] do[H] cagar[M] lhe[H] pauperr[H] ven[H] ha[H]
+> logo[H]
+
+Not run this pass: Part II of the volume (the null's implication, unchanged from LX-DEC); a fresh-instance
+re-derivation of the whole reading with the corrected key (this pass's own changes were checked directly against
+the page images, not re-derived blind end-to-end -- a fair next step before this target reaches stage 9, per
+rule 7). Files touched: `key.tsv`, `ciphertext.tsv`, `decode.json` (header text only), `reading.txt`,
+`reading_tokens.tsv`, `images/book/` (9 new page images + manifest entries), `images/crops/` (2 new crops), this
+file. archive.org requests this pass: 10 (leaves 92-96, 98, 100-103; 1.6s apart, sequential, User-Agent
+`cipher-lab research script (contact via repository)`, no login, no 429/403 seen).
