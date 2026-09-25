@@ -394,3 +394,56 @@ line	pos	code	marks	action	conf	note
 15	22	Z		confirm	M	compound glyph: an upper n+-like hook flowing into a lower zigzag "Z" body; the atlas Z plate includes similarly compound n+/Z-like exemplars, and the two parts are not clearly separated by a gap the way the pos-7 split was, so kept as one Z sign rather than splitting
 15	23	S7		confirm	H	hooked-7 shape, matches atlas S7
 15	24	lam	#	confirm	H	two-stroke apex (Λ) shape with a mark, matches atlas lam
+16	1	a	5	confirm	H	small 'a' with squiggly overhead flourish, matches atlas a exemplars with marks
+16	2	tee		confirm	M	vertical stroke + crossbar/foot; resembles H at a glance but lacks H's numeral mark, consistent with atlas tee (single-stroke F-like shape)
+16	3	lam		confirm	H	tent/triangle "Λ" shape, clean atlas lam match
+16	4	g	5	confirm	H	loop+tail shape with squiggle mark above, matches atlas g
+16	5	a		confirm	H	small rounded 'a' shape, overlaps neighbors but clear
+16	6	g	5	confirm	H	loop+tail with squiggle mark above, same pattern as pos4
+16	7	phi	1	confirm	H	circle with diagonal stroke through it, clean atlas phi match; small tick top-right
+16	8	e		confirm	H	open loop with hash-like flourish above, matches atlas e (hash is integral to this hand's e, not a separate mark)
+16	9	psi		confirm	M	compact crossing hook/loop shape in a very thin box, matches atlas psi's compact squiggle form; tight overlap with pos10 makes isolation hard
+16	10	y		correct	M	long diagonal downstroke into a hooked tail; closer to atlas y (straight diagonal+hook) than g's rounder top loop; genuinely ambiguous given ink shared with pos9's box
+16	11	H	10	confirm	H	two full-height verticals + crossbar + two-digit numeral-like mark above, clean atlas H match
+16	12	[		correct	M	flat open rectangle/bracket shape, matches atlas [ (squared bracket); atlas ] is a round loopy "3"-like shape which this is not
+16	13	dl		correct	M	small loop with a diagonal flourish tick, closer to atlas dl (loop+tail, cf. exemplar with a "+"-like tick) than nt's n-shape; low classifier share (0.62) reflects same genuine difficulty
+16	14	g	5	correct	M	tall box holds a top squiggle plus a lower loop+tail body; the squiggle matches the recurring "g + squiggle-above" mark pattern seen at pos4/6/17 rather than a separate stacked sign, so kept as one sign with an added mark; there is a visible gap between the squiggle and the lower body which makes this a close call
+16	15	S		confirm	M	small tight loop/hook in a narrow sliver box overlapping pos14's top-right corner; plausible small atlas S variant, but tight crop makes it hard to fully isolate
+16	16	rz		confirm	H	flat wavy double-hump shape, matches atlas rz
+16	17	g	5	confirm	H	loop+tail with squiggle mark above, same pattern as pos4/6
+16	18	S7	#	confirm	M	simple diagonal stroke matches atlas S7; a hash mark sits just above-left of the box, consistent with classifier's # mark call
+16	19	a	dot	confirm	H	small 'a' shape with a dot visible above the cluster
+16	20	S		confirm	M	small squiggle alone (own thin box) forms the sign, tightly overlapping pos19/21, matches atlas S's small cursive-5 forms
+16	21	tee		confirm	M	vertical+crossbar shape, resembles H but lacks H's numeral mark; consistent with pos2's tee call in the same hand
+16	22	lam	5	confirm	H	tent/triangle shape with squiggle mark above, clean match
+16	23	o.		confirm	H	circle with a central dot, clean atlas o. match
+16	24	y		confirm	M	flowing diagonal-stroke-plus-loop shape, busy/complex; best match among candidates is y, but genuinely hard to read (matches classifier's own low share)
+16	25	S7		confirm	H	simple diagonal stroke, matches atlas S7
+16	26	w		correct	M	flat hump-over-tail shape in a wide low box, closer to atlas w (flat form with ticks) than a typical y (straight diagonal descender)
+16	27	_		confirm	M	looks like a plain italic 'm' with a natural ascender flourish above it, not a distinct sign
+16	28	g		confirm	H	loop+tail shape, clean atlas g match
+16	29	Z		confirm	M	small flat flourish in a thin box; hard to fully resolve at this size, deferring to classifier's confident call
+16	30	S4		confirm	H	vertical stroke crossed by a diagonal, matches atlas S4's cross/plus shapes
+16	31	dl		confirm	H	loop with curling tail, clean atlas dl match
+16	32	+		confirm	M	small vertical+side-tick cross shape; low classifier share reflected in my own uncertainty too
+17	1	S		confirm	H	cursive squiggle ("5"-like), clean atlas S match
+17	2	N		correct	M	loopy double-arch shape plausibly matches atlas N; small ink above the box looks like bleed-through/ghosting from the line above rather than a deliberate mark, so marks left blank (classifier's own marks share was only 0.38)
+17	3	S		correct	M	squiggle shape in the box itself (not blank), matches atlas S rather than a plain letter; two small diagonal ticks sit above it as a possible mark, similar in kind to pos7's dot-marked S
+17	4	_		confirm	H	clear running cursive word/phrase (reads roughly "...rsfatta" or similar)
+17	5	S7		correct	M	plain diagonal stroke with no loop, doesn't match g's characteristic loop; closer to a simple S7 stroke, though it could also be read as a connecting ligature between the two flanking words - genuinely uncertain
+17	6	_		confirm	H	plain cursive word fragment
+17	7	S	dot	confirm	H	squiggle sign with a dot mark above it, clean atlas S match
+17	8	_		confirm	H	plain cursive word (reads "fatta")
+17	9	f		correct	M	vertical stroke with a small loop near the top and a horizontal crossbar lower down, matches atlas f; not the flowing diagonal-plus-hook of y
+17	10	_		correct	H	plain letter 'q' (loop+descender, common cursive form), first letter of the word "quello"
+17	11	_		confirm	H	plain letters, part of "quello"
+17	12	_		confirm	H	plain letters "llo" ending "quello"
+17	13	ch		confirm	M	compact loop-with-cross shape, standalone between two plain words, matches atlas ch
+17	14	bh	dot	correct	M	bold vertical stroke with a hook/loop at the bottom, standalone rather than part of a flowing word; matches atlas bh, not a plain letter (known h/bh confusion); dot mark to the right retained
+17	15	_		confirm	H	plain cursive word "ho"
+17	16	_		confirm	H	plain cursive word "fatto" (first part)
+17	17	_		correct	H	plain letters "tto" completing "fatto", not a # sign
+17	18	_		confirm	H	plain letters "in", starting next word
+17	19	_		confirm	H	plain letters continuing the word (reads roughly "tend...")
+17	20	_		confirm	M	plain letter(s) continuing the same word, ending unclear
+17	21	_		correct	M	flat tail/flourish, most likely the final letter's descender continuing the word rather than a distinct w sign (classifier's own share was only 0.22); box is also cut at the strip's right edge, limiting certainty
