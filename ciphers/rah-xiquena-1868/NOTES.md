@@ -8,6 +8,8 @@ file copy, certified `Es copia conforme` and signed by the Conde de Xiquena. Sam
 cifrado" describes what was transmitted, not what the archive kept on file. Status word set to `found-solved` by the LANE R6 orchestrator, 25 Sept 2026 18:55 UTC: the archive keeps the telegram's clear text, so there is no ciphertext left to read, and `solved` would imply a decipherment of ours. Not classified as to novelty here
 (rule 10) — routed to LANE V6.
 
+**Verifier (V6-XIQ, 25 Sept 2026):** all 8 leaves eye-checked, no ciphertext anywhere; class **N0**, key n/a; status `found-solved` confirmed (no ciphertext survives, the cipher telegram's clear text is the archive's own). Board: retire, never count as a solve or a catch. See AUDIT.md for the safe sentence.
+
 RAH's own OAI-PMH DIDL record (`oai:bibliotecadigital.rah.es:15711`, registro id 15711, found via a keyed Europeana search this pass) read in full by this worker: no `dc:description` field and no "Publicado" note anywhere in its metadata, only creator/date/title/rights/subject/8 page-image refs; Google Books full-text searched (`GOOGLE_BOOKS_KEY`, `&country=US`) for "Xiquena" + "telegrama" + "cifrado"/"Isabel", 6 hits, none a confirmed match (control: the query mechanism returns real full-view hits, e.g. `Diario de las Sesiones de Cortes` and `Gedeón` 1898, proving the search executes; none names this telegram); one leaf fetched via `tools/browser_fetch.js --binary` (idImagen 10141611, page 1 of 8) and eye-checked by this worker, confirming the catalogue's own "Leg. XXIV, nº 158" archival mark but showing only the dossier's blank cover, not the telegram text.
 
 ## Check-solved (LANE CX2, 25 Sept 2026, CX2-MISC2)
@@ -21,7 +23,7 @@ Fresh six-source sweep plus the job brief's three named leads (RAH OAI record, G
 5. **Community lists / DECODE / Bourdeau / Aymeloglu.** Unchanged from the 24 Sept sweep already in this file (no hit for "Xiquena" in any of the four); not re-run this pass, no new source surfaced in items 1-4 above to search for.
 6. **Sibling items in the same RAH file.** Path 1008499 (undated, title/author only) still not opened -- unchanged, out of this brief's scope (check-solved only, no deep work).
 
-**Image (one fetch, per this brief's cap).** `tools/browser_fetch.js --binary` on `idImagen=10141611` (page 1 of 8): a plain archival dossier cover reading "Leg. XXIV, nº 158" in period hand, matching the catalogue's Legajo/Nº citation exactly, no cipher text on this leaf. Saved to `ciphers/rah-xiquena-1868/images/p1.jpg`. The remaining 7 leaves (10141612-10141618, presumably including the telegram text) are not fetched this pass (brief's one-fetch cap; a future access worker should pull the rest under a manifest, not one at a time by hand).
+**Image (one fetch, per this brief's cap).** `tools/browser_fetch.js --binary` on `idImagen=10141611` (page 1 of 8): a plain archival dossier cover reading "Leg. XXIV, nº 158" in a modern archival hand (verifier correction, 25 Sept 2026; was "period hand"), matching the catalogue's Legajo/Nº citation exactly, no cipher text on this leaf. Saved to `ciphers/rah-xiquena-1868/images/p1.jpg`. The remaining 7 leaves (10141612-10141618, presumably including the telegram text) are not fetched this pass (brief's one-fetch cap; a future access worker should pull the rest under a manifest, not one at a time by hand).
 
 No source in this sweep identifies, quotes or describes the content of this telegram. Nothing here is claimed as new, unpublished or first (rule 10). Requests: `bibliotecadigital.rah.es` 2 (1 OAI GetRecord, 1 `browser_fetch.js --binary` image fetch, 2 navigation attempts inside that one fetch), `api.europeana.eu` 1, `boe.es` 2, `hemerotecadigital.bne.es` 2 (both 403, one retry, per host), `googleapis.com/books` 3, WebSearch 5.
 
@@ -82,6 +84,8 @@ opened. No biography of the Conde de Xiquena (Joaquín Gutiérrez de Rubalcava, 
 
 ## Verdict
 
+*Superseded 25 Sept 2026 by the Y10 capture and AUDIT.md: the item holds no ciphertext; status `found-solved`, N0. Kept as the CX2 record.*
+
 **open**, stage 2 verified unsolved (conditional: the RAE 1869-71 letters catalogue and RAH's own "1869 á
 1875" correspondence catalogue are both unread and post-date this item; the two unopened sibling items in the
 same RAH file, especially undated path 1008499, are not ruled out as a plaintext or decipherment sitting
@@ -120,8 +124,8 @@ diagnostic fetch), all through the single browser profile, one at a time, ~3 s a
 navigation bursts to the same idImagen were the exception, needed to establish whether the block was live or
 already cleared — no page was fetched in parallel).
 
-**(2) Page-by-page description (lead classes 1-3).** p1: blank dossier cover, "Leg. XXIV, nº 158" in period
-hand, no text. **p2-p8: continuous plain prose, no cipher signs anywhere** — no digits-as-code, no non-
+**(2) Page-by-page description (lead classes 1-3).** p1: blank dossier cover, "Leg. XXIV, nº 158" in a modern archival
+hand (verifier correction; was "period hand"), no text. **p2-p8: continuous plain prose, no cipher signs anywhere** — no digits-as-code, no non-
 alphabetic marks, nothing resembling `rah-canada-1869`'s digit+mark nomenclator. p2 opens with the heading
 "Telegrama cifrado. 1350 Grupos. Madrid 3 de Mayo de 1868. El Ministro de Estado al Ministro de S.M. en
 Munich," then the body starts directly in clear Spanish. Mid-p3 it switches to French for a quoted telegram
