@@ -1,8 +1,14 @@
-found-solved
+solved
+
+> **Verifier, 25 Sept 2026 (AUDIT.md, V6-COSTA): N0, key `period`.** The encipherer's own Portuguese plaintext is
+> written above every code on m0113-m0114, so the plaintext of this very item is on the leaf; no printing of the letter
+> or its text was located (search log in AUDIT.md). Status `solved`, not `found-solved` (nothing in print; precedent
+> clair1067-brienne-poland-1646). Recipient: Costa Cabral, Conde de Thomar, envoy to the Holy See. [V6 25 Sept 2026]
 
 Read by this worker, 25 Sept 2026: the item's own three images (m0112 the plaintext cover letter; m0113-m0114 the
 cipher draft, with the plaintext syllable written directly above almost every number) -- no printed edition or
-calendar applies, since this is an unpublished archival draft, not a letter in a print series. Full-text search
+calendar was located for this archival draft [V6 25 Sept 2026: "unpublished" struck; the 1887 Livro Branco,
+Negocios externos (Santa Sé), prints the surrounding papal-letter affair but not this letter -- AUDIT.md s.4]. Full-text search
 (be-api.us.archive.org/fts/v1/search, 0 hits for `"Costa Cabral" "Conde d'Avila" 1865 cifrada`; advancedsearch.php
 by title+date range, 0 items) and Google Books (`GOOGLE_BOOKS_KEY`, 0/300 relevant hits across `"Costa Cabral"
 "Conde d'Ávila" 1865 carta cifrada`, `"Caetano de Magalhães" 1865 Padroado`, `"Costa Cabral" correspondencia 1865`;
@@ -87,15 +93,16 @@ because the two occurrences carry different values, see Collisions below) and `c
 codes in drafting order) feed `decode.json`; `tools/decode_key.py ciphers/antt-fcc-costacabral-1865 --check`
 exits 0.
 
-**Grade counts (rule 4): C 63, M 19, U 2, of 84 tokens.** C = the code's value is read consistently across its
+**Grade counts (rule 4): C 63, M 19, U 2, of 84 tokens.** [V6: the basis of C is the leaf's own gloss, known
+plaintext; the checks below are transcription checks on it.] C = the code's value is read consistently across its
 occurrences and/or confirmed by a second source (both blind passes, the archival catalogue's own quoted pairs, or
 LANE R6 P4's independent earlier read of the m0114 R1 line in ROOM.md, 25 Sept 2026). M = a single low-confidence
 reading, a pass-A/pass-B disagreement not settled from the image at the resolution this scan allows, or a code
 that collides with a different value elsewhere (both readings kept, `key.tsv` lets `tools/decode_key.py`'s own
 `merge_key_row` combine them into `value1|value2`, auto-downgraded to M, rather than one silently overwriting the
 other). U = 2 codes (206 on m0113 L8, 836 on m0114 R2) neither pass could read at all; left unkeyed. Key source is
-`ours` per rule 10's key-source field: this key was rebuilt by us directly from the clerk's own contemporary
-worksheet, not a published or period key sheet.
+`period` [V6 25 Sept 2026, corrected from `ours`]: the key was rebuilt by us from the clerk's own contemporary
+encipherment worksheet, a cipher document of the time, not recovered cryptanalytically (AUDIT.md s.1).
 
 **The system.** A syllable-to-number nomenclator (not a letter-substitution cipher): most codes stand for a 1-3
 letter Portuguese syllable, a few for a short whole word (Rei, que, de, con). Codes run from 2 digits (11, 12, 20,
@@ -116,7 +123,9 @@ real re-use in the underlying nomenclator (a homophone table with only ~50-60 co
 need some sharing) or three coincidental misreadings at this scan's resolution is not established; a sharper image
 or a second sitting with the physical leaf would settle it.
 
-**What the draft says.** The gloss reads (positions still marked M in brackets): "con-fi-den-ci-ar" (confidenciar)
+**What the draft says.** [V6 25 Sept 2026: superseded in part -- the gloss reads as one continuous confidential
+message (the King wishes to invite the King of Italy as godfather of the prince or princess expected, and the Pope's
+tolerance of it), not scattered fragments; the m0114 fifth line is partly legible; see AUDIT.md s.2 and s.6.] The gloss reads (positions still marked M in brackets): "con-fi-den-ci-ar" (confidenciar)
 / "el Rei de-se-ja" (el Rei deseja, "the king wishes") / "con-[bi?]-dar Rei de" / "[li?]-la-li-a-pa-ra" / "pa-dri-
 nho-do-prin-ci" (padrinho do princi[pe], "godfather of the prince") / "pe-ra-pa-tol-ar" / "ca-es-cre" / "ou-prin-
 ce-[?]-que" / "se-es-pe-ra-pa" / "tol-ar-ca-es-cre-de" / "a-es-ke-reis-pei-to" / "ao-pa-pa-lo-go-que" (m0113); "sou-

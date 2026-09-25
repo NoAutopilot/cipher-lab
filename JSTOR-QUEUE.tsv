@@ -76,3 +76,4 @@ ciphers/jan-van-nassau-1572-75	"Johann VI" OR "Jean de Nassau" AND ("Mookerheide
 ciphers/jan-van-nassau-1572-75	"Glawischnig" AND "Nassau-Dillenburg" AND ("Johann VI" OR Mookerheide) AND ("Koln" OR "Cologne" OR "17. April 1574")	2026-09-25	queued	
 ciphers/bl-charles-digby	"Wheatstone" AND ("Goffe" OR "Goff") AND (cipher OR cypher) AND "Charles I"	2026-09-25	queued	
 specs/powers-1991.json	Herman AND Lernout AND "Gold Bug Variations" AND (Mosaic OR "Genetic Randomness")	2026-09-25	queued	
+ciphers/antt-fcc-costacabral-1865	("Costa Cabral" OR "Conde de Tomar" OR "Conde de Thomar") AND ("Santa Sé" OR "Holy See" OR Padroado) AND 1865	2026-09-25	queued	
