@@ -611,3 +611,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T22:45Z	session_01ENRheqa2wuDyK4Jo4GYWjU	bUNT3 done $3.30 D-, archived	Hs. 2398 found online; Herzog 1929 transcription lead
 2026-09-25T22:46Z	session_01XmwGTxPa6AU4yqYGmh9zUf	bUNT4 (Sonnet, cap 3)	untersberg-code Herzog 1929 in print + six-line leaf	LANE B4 brief
 2026-09-25T22:57Z	session_01H9qxUoLcYVYbm16BoQMgsA	V7-CL349 done $3.27 D, archived	clair349 N0 key period, text known (Guise Mem.-journaux pp.238-239)
+2026-09-25T23:00Z	session_01K4n8VHbDXGiaAwDk12dgrP	GOLD-K3 done $7.37 D-, archived by LANE GOLD2	B-prime-c cipher-side: vig control 76.9 vs target -3.498, beau 75.2 vs -3.518, both inside the ten-text band (-3.548/-3.531/-3.494), judge FAIL; variant c owed
