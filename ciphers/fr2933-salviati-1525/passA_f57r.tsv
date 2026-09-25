@@ -1,0 +1,479 @@
+line	pos	code	marks	action	conf	note
+1	1	_		correct	H	"P of ""Parlato"", continuous plain cursive stroke into pos2 (""arlato""); no gap between boxes, one pen stroke"
+1	2	_		plain	H	
+1	3	S4		confirm	M	
+1	4	dl		confirm	H	
+1	5	Z		confirm	L	
+1	6	a	5	confirm	L	
+1	7	tee		confirm	H	
+1	8	_	dot	plain	M	
+1	9	#	#	confirm	M	
+1	10	lam	dot|~	confirm	L	
+1	11	eps	7	confirm	H	
+1	12	w		confirm	H	
+1	13	eps	1	confirm	L	
+1	14	]	o	confirm	H	
+1	15	g	7	confirm	H	
+1	16	L		confirm	H	
+1	17	w		confirm	H	
+1	18	a	1	confirm	H	
+1	19	lam	7	confirm	H	
+1	20	bh		confirm	H	
+1	21	S7		confirm	H	
+1	22	#		confirm	H	
+1	23	H	1|o	confirm	H	
+1	24	Z	dot|ot	confirm	H	
+1	25	_		plain	M	
+1	26	_		plain	H	
+1	27	#		confirm	L	
+1	28	bh	dot	confirm	H	
+1	29	_		delete	H	"folio pagination numeral ""5"" of ""57"" at top-right corner of the page (y~31, far above line1's text band y~168-193), not cipher/plain text"
+1	30	_		delete	H	"folio pagination numeral ""7"" of ""57"" at top-right corner of the page (y~32, far above line1's text band y~168-193), not cipher/plain text"
+2	1	Z		confirm	H	
+2	2	L	dot	confirm	H	
+2	3	g		confirm	H	
+2	4	y	~	confirm	H	
+2	5	g		confirm	M	
+2	6	g		confirm	M	
+2	7	]	ot	confirm	H	
+2	8	_		plain	M	
+2	9	y		confirm	M	script's w(pos8, plain)+y(pos9) boundary: the two strokes touch/overlap (gap -16px); kept both calls, boundary uncertain, worth pass B's atlas cross-check
+2	10	Z	ot	confirm	H	
+2	11	eps		confirm	H	
+2	12	y		confirm	H	
+2	13	[		confirm	M	
+2	14	y		confirm	H	
+2	15	phi		confirm	M	
+2	16	v	1|5	confirm	H	
+2	17	f		confirm	H	
+2	18	w		confirm	H	
+2	19	bh		confirm	H	
+2	20	_		plain	M	
+2	21	y		confirm	M	pos20(_)/pos21(y, mark7) boxes overlap (gap -17px), tight compound stroke; kept classifier's calls, boundary uncertain
+2	22	tee		confirm	H	
+2	23	f		confirm	H	
+2	24	w		confirm	H	
+2	25	y		confirm	H	
+2	26	_	7|5	plain	M	
+3	1	_		plain	H	
+3	2	a	5	confirm	H	
+3	3	tee		confirm	H	
+3	4	lam		confirm	H	
+3	5	o.	1	confirm	H	
+3	6	_		plain	M	
+3	7	_	5	plain	M	
+3	8	w		confirm	H	
+3	9	lam	1	confirm	H	
+3	10	S7		confirm	H	
+3	11	y		confirm	M	
+3	12	g		confirm	H	
+3	13	_	1	plain	L	
+3	14	_	1	plain	H	
+3	15	]	o	confirm	H	
+3	16	e	#|dot	confirm	H	
+3	17	eps		confirm	H	
+3	18	y		confirm	H	
+3	19	_		plain	M	
+3	20	g	1	confirm	H	
+3	21	lam		confirm	H	
+3	22	bh		confirm	H	
+3	23	S7	#	confirm	H	
+3	24	e	ot	confirm	H	
+3	25	wd		confirm	H	
+3	26	y		confirm	H	
+3	27	eps	5	confirm	M	
+3	28	S7		confirm	H	
+4	1	f		confirm	H	
+4	2	w		confirm	H	
+4	3	o.		confirm	H	
+4	4	_	dot	plain	H	
+4	5	o.	dot	confirm	H	
+4	6	lam		confirm	H	
+4	7	bh		confirm	H	
+4	8	S7		confirm	H	
+4	9	#		confirm	H	
+4	10	H	1	confirm	H	
+4	11	g	o	confirm	H	
+4	12	y		confirm	H	
+4	13	y		confirm	H	
+4	14	g	1	confirm	H	
+4	15	e	+	confirm	L	
+4	16	L		confirm	H	
+4	17	g	~	confirm	H	
+4	18	m	~	confirm	H	
+4	19	w		confirm	H	
+4	20	e	+	confirm	H	
+4	21	L	dot|~	confirm	H	
+4	22	_		plain	M	
+4	23	_		plain	M	
+4	24	bh		confirm	H	
+4	25	S7		confirm	H	
+4	26	#		confirm	H	
+4	27	e		confirm	H	
+4	28	f		confirm	L	
+4	29	g		confirm	M	
+5	1	sq	?	confirm	M	
+5	2	Z		confirm	H	
+5	3	eps	5	confirm	H	
+5	4	S7		confirm	H	
+5	5	f		confirm	H	
+5	6	w		confirm	H	
+5	7	o.		confirm	H	
+5	8	_	dot	plain	H	
+5	9	lam		confirm	H	
+5	10	bh	7	confirm	H	
+5	11	S7		confirm	H	
+5	12	#		confirm	H	
+5	13	Z		confirm	H	
+5	14	nt		confirm	H	
+5	15	_		plain	H	
+5	16	rz		confirm	H	
+5	17	S7		confirm	H	
+5	18	#		confirm	H	
+5	19	_	5|dot	plain	L	
+5	20	lam		confirm	H	
+5	21	w	~	confirm	H	
+5	22	g	dot	confirm	H	
+5	23	Z	ot	confirm	H	
+5	24	w	ot	confirm	L	
+5	25	g		confirm	H	
+5	26	Z		confirm	M	
+5	27	y		confirm	H	
+5	28	e		confirm	H	
+6	1	nt		confirm	H	
+6	2	bh		confirm	H	
+6	3	e	dot	confirm	H	
+6	4	sq	1	confirm	M	
+6	5	tee		confirm	H	
+6	6	H	1|o	confirm	H	
+6	7	m	1	confirm	H	
+6	8	w		confirm	H	
+6	9	lam	7	confirm	H	
+6	10	eps	~	confirm	H	
+6	11	wd		confirm	M	
+6	12	y		confirm	H	
+6	13	m	~	confirm	H	
+6	14	w		confirm	H	
+6	15	]	o	confirm	H	
+6	16	eps	~	confirm	M	
+6	17	S7		confirm	H	
+6	18	lam		confirm	H	
+6	19	y	7	confirm	H	
+6	20	nt		confirm	L	
+6	21	]	~	confirm	H	
+6	22	rz		confirm	H	
+6	23	Z		confirm	L	
+6	24	rz		confirm	H	
+7	1	w		confirm	H	
+7	2	eps	7	confirm	M	
+7	3	S7		confirm	H	
+7	4	lam	5	confirm	H	
+7	5	e	#	confirm	H	
+7	6	p	1	confirm	M	
+7	7	o.	o	confirm	H	
+7	8	bh		confirm	H	
+7	9	y		confirm	H	
+7	10	bh		confirm	H	
+7	11	e		confirm	H	
+7	12	_		plain	H	
+7	13	bh		confirm	H	
+7	14	H	1|o	confirm	H	
+7	15	_	5	plain	M	
+7	16	f		confirm	H	
+7	17	Z		confirm	M	
+7	18	y		confirm	H	
+7	19	_		plain	H	
+7	20	g		confirm	H	
+7	21	w		confirm	H	
+7	22	Z	~	confirm	M	
+7	23	_		plain	H	
+7	24	e	#|dot	confirm	H	
+7	25	eps	~	confirm	H	
+8	1	S7		confirm	H	
+8	2	lam	5	confirm	H	
+8	3	_		plain	H	
+8	4	]	o	confirm	H	
+8	5	e		confirm	H	
+8	6	eps	1	confirm	H	
+8	7	lam	7	confirm	H	
+8	8	m	~	confirm	H	
+8	9	w		confirm	H	
+8	10	]	o	confirm	H	
+8	11	g	~	confirm	H	
+8	12	psi		confirm	H	
+8	13	lam		confirm	H	
+8	14	lam		confirm	H	
+8	15	S		confirm	M	
+8	16	lam		confirm	H	
+8	17	bh		confirm	H	
+8	18	S7		confirm	H	
+8	19	#		confirm	H	
+8	20	e	dot	confirm	H	
+8	21	g	~	confirm	H	
+8	22	_		plain	M	
+8	23	bh		confirm	H	
+8	24	]	o	confirm	H	
+8	25	_	5	plain	L	
+8	26	nt		confirm	H	
+8	27	rz		confirm	H	
+9	1	nt		confirm	H	
+9	2	o.		confirm	H	
+9	3	Z		confirm	M	
+9	4	_		plain	M	
+9	5	sq	1	confirm	H	
+9	6	]	ot	confirm	H	
+9	7	eps	1	confirm	H	
+9	8	_		plain	H	
+9	9	e	#	confirm	H	
+9	10	g	1	confirm	H	
+9	11	_		plain	H	
+9	12	_		plain	M	
+9	13	_		plain	H	
+9	14	a	5	confirm	H	
+9	15	e	#	confirm	H	
+9	16	g	dot	confirm	H	
+9	17	_	dot	plain	M	
+9	18	_		plain	M	
+9	19	g	5	confirm	L	
+9	20	S7		confirm	H	
+9	21	eps		confirm	M	
+9	22	tee		confirm	H	
+10	1	nt		confirm	H	
+10	2	e	#	confirm	H	
+10	3	phi		confirm	H	
+10	4	]	o	confirm	H	
+10	5	e	dot	confirm	H	
+10	6	psi		confirm	H	
+10	7	_		plain	H	
+10	8	lam	dot	confirm	H	
+10	9	H	1|o	confirm	H	
+10	10	g		confirm	H	
+10	11	psi	~	confirm	M	
+10	12	lam		confirm	H	
+10	13	_		plain	M	
+10	14	e	dot|dot	confirm	H	
+10	15	a	7	confirm	H	
+10	16	Z	dot	confirm	M	
+10	17	bh		confirm	H	
+10	18	e		confirm	H	
+10	19	g	~	confirm	H	
+10	20	nt		confirm	L	
+11	1	phi		confirm	H	
+11	2	phi		confirm	H	
+11	3	e	dot	confirm	H	
+11	4	a	5	confirm	H	
+11	5	e	dot	confirm	H	
+11	6	S7		confirm	H	
+11	7	g	+	confirm	H	
+11	8	g	1	confirm	H	
+11	9	_		plain	H	
+11	10	eps	5	confirm	M	
+11	11	S7	~	confirm	H	
+11	12	o.		confirm	M	
+11	13	rz		confirm	H	
+11	14	g	~	confirm	H	
+11	15	y		confirm	M	
+11	16	S7		confirm	H	
+11	17	y		confirm	H	
+11	18	w		confirm	H	
+11	19	#		confirm	M	
+11	20	o.		confirm	H	
+11	21	f	dot|dot	confirm	H	
+12	1	w		confirm	M	
+12	2	o.		confirm	H	
+12	3	phi		confirm	M	
+12	4	v	7	confirm	H	
+12	5	g		confirm	H	
+12	6	y		confirm	H	
+12	7	K		confirm	M	
+12	8	S		confirm	H	
+12	9	nt		confirm	M	
+12	10	e	dot	confirm	H	
+12	11	eps	1	confirm	H	
+12	12	S		confirm	H	
+12	13	K		confirm	M	
+12	14	o.	dot	confirm	H	
+12	15	S7		confirm	H	
+12	16	Z		confirm	H	
+12	17	psi		confirm	H	
+12	18	lam		confirm	H	
+12	19	w		confirm	H	
+12	20	_	ot	plain	H	
+12	21	g		confirm	M	
+12	22	v	ot	confirm	H	
+13	1	Z		confirm	H	
+13	2	nt		confirm	H	
+13	3	y		confirm	H	
+13	4	_	1	plain	H	
+13	5	_	1	plain	M	
+13	6	Z	ot	confirm	H	
+13	7	nt		confirm	H	
+13	8	o.		confirm	H	
+13	9	rz		confirm	H	
+13	10	S7	#	confirm	H	
+13	11	]	dot|o	confirm	H	
+13	12	eps		confirm	H	
+13	13	y		confirm	H	
+13	14	o.		confirm	H	
+13	15	rz		confirm	H	
+13	16	g	5	confirm	M	
+13	17	_	1	plain	H	
+13	18	v	5|1	confirm	H	
+13	19	m		confirm	H	
+13	20	bh		confirm	M	
+13	21	f		confirm	L	
+13	22	o.		confirm	H	
+13	23	nt		confirm	H	
+14	1	g	1	confirm	H	
+14	2	g		confirm	H	
+14	3	y	~	confirm	H	
+14	4	bh		confirm	H	
+14	5	a	1	confirm	H	
+14	6	p		confirm	L	
+14	7	o.		confirm	H	
+14	8	w		confirm	H	
+14	9	S4		confirm	H	
+14	10	_		plain	H	
+14	11	rz		confirm	H	
+14	12	tee		confirm	H	
+14	13	eps	1	confirm	H	
+14	14	S7		confirm	H	
+14	15	eps	~	confirm	H	
+14	16	wd		confirm	H	
+14	17	o.		confirm	H	
+14	18	rz		confirm	H	
+14	19	g	~	confirm	H	
+14	20	_		plain	L	
+14	21	L		confirm	H	
+14	22	S7		confirm	H	
+14	23	lam		confirm	H	
+14	24	_		plain	H	
+14	25	_		plain	L	
+14	26	f		confirm	L	
+14	27	H	1|o	confirm	H	
+15	1	S7		confirm	M	
+15	2	w		confirm	M	pos2(w)/pos3(_) overlap (gap -14px); the pos3 stroke visually reads more like a y-loop than a plain squiggle but no confident alternative; flagged for pass B
+15	3	_		plain	M	
+15	4	S7		confirm	H	
+15	5	Z		confirm	H	
+15	6	y	5	confirm	H	
+15	7	g	1	confirm	H	
+15	8	_		plain	H	
+15	9	_	o	plain	L	
+15	10	g	1	confirm	H	
+15	11	_		plain	H	
+15	12	Z		confirm	H	
+15	13	_		plain	H	
+15	14	w		confirm	H	
+15	15	y		confirm	H	
+15	16	_		plain	M	
+15	17	H	1	confirm	H	
+15	18	e	o|#	confirm	H	
+15	19	wd		confirm	H	
+15	20	bh		confirm	H	
+15	21	y		confirm	H	
+15	22	nt		confirm	H	
+15	23	bh		confirm	H	
+15	24	w		confirm	M	
+16	1	_		plain	H	
+16	2	lam		confirm	H	
+16	3	_		plain	H	
+16	4	bh		confirm	H	
+16	5	sq	ot	confirm	H	
+16	6	wd		confirm	H	
+16	7	bh		confirm	H	
+16	8	H	o|1	confirm	H	
+16	9	o.		confirm	H	
+16	10	bh		confirm	H	
+16	11	psi		confirm	H	
+16	12	eps		confirm	H	
+16	13	w		confirm	H	
+16	14	o.		confirm	H	
+16	15	Z		confirm	H	
+16	16	e		confirm	H	
+16	17	g	dot	confirm	M	pos17(g,dot)/pos18(_) run tight against pos19(w)/pos20(y, corrected above); segmentation in this stretch may not follow ink breaks cleanly
+16	18	_		plain	H	
+16	19	w		confirm	H	
+16	20	y		correct	M	script proposed g/dot at low share 0.43; independent read shows a plain loop-with-descender shape matching y better than a numeral-marked g; immediately follows pos19 w with near-zero gap
+16	21	rz		confirm	H	
+16	22	_		plain	M	
+16	23	g	5	confirm	H	
+16	24	phi		confirm	H	
+16	25	]	o	confirm	H	
+17	1	g		confirm	H	
+17	2	psi		confirm	H	
+17	3	m	~	confirm	H	
+17	4	_		plain	H	
+17	5	o.		confirm	H	
+17	6	_		plain	M	
+17	7	_		plain	H	
+17	8	S7		confirm	H	
+17	9	o.		confirm	H	
+17	10	rz		confirm	H	
+17	11	_		plain	H	
+17	12	nt		confirm	H	
+17	13	g	~	confirm	H	
+17	14	S4		confirm	H	
+17	15	_		plain	H	
+17	16	_	dot	plain	H	
+17	17	v		confirm	M	
+17	18	S		confirm	H	
+17	19	y		confirm	M	
+17	20	_		plain	H	
+17	21	_		plain	H	
+17	22	nt		confirm	L	
+17	23	_		plain	H	
+17	24	lam	~	confirm	L	
+18	1	#		confirm	H	
+18	2	#		confirm	H	
+18	3	f		confirm	L	
+18	4	w	1	confirm	L	
+18	5	S4	1	confirm	M	
+18	6	dl		confirm	H	
+18	7	Z	?	confirm	H	
+18	8	S7	#	confirm	H	
+18	9	phi		confirm	H	
+18	10	L		confirm	H	
+18	11	g		confirm	H	
+18	12	Z		confirm	H	
+18	13	psi		confirm	H	
+18	14	lam	5	confirm	H	
+18	15	rz		confirm	H	
+18	16	nt		confirm	H	
+18	17	+	ot	confirm	H	
+18	18	S7		confirm	H	
+18	19	_		plain	H	
+18	20	bh	dot	confirm	H	
+18	21	S7		confirm	H	
+18	22	tee	1	confirm	M	
+18	23	w		confirm	H	
+19	1	o.		confirm	H	
+19	2	S7		confirm	H	
+19	3	eps	7	confirm	H	
+19	4	m	~	confirm	H	
+19	5	phi		confirm	H	
+19	6	e	#	confirm	H	
+19	7	g		confirm	H	
+19	8	e	#	confirm	H	
+19	9	_	1	plain	H	
+19	10	]	o	confirm	H	
+19	11	S7		confirm	H	
+19	12	psi	#	confirm	H	
+19	13	y		confirm	M	
+19	14	w		confirm	H	
+19	15	y		confirm	H	
+19	16	K		confirm	H	
+19	17	a	7	confirm	H	
+19	18	eps	7	confirm	H	
+19	19	lam		confirm	H	
+19	20	y	7	confirm	H	
+19	21	m	~	confirm	H	
+19	22	g	5	confirm	H	
+19	23	Lx		confirm	L	
+19	24	S7		confirm	H	
+19	25	g	dot	confirm	M	
+19	26	S7		confirm	H	
+19	27	eps	7	confirm	H	
+19	28	eps	5	confirm	H	
+19	29	S7		confirm	H	
+19	30	_		plain	H	
