@@ -146,6 +146,16 @@ Salviati and Seure with costed briefs, N4 copy-free scouts (Bourdeau's copy-free
 stops, a successor parent reads this section, the lane table,
 the last check-in prompt (list_triggers), takes over the trigger with update_trigger persistent_session_id, and continues.
 
+## LANE LX handoff (session_01UXTpujdthrPiBDUG57oNwf), 25 September 2026, 03:12 UTC
+
+- **Target:** `ciphers/antt-linhares-chave` (ANTT PT/TT/CLNH/0086/11, DigitArq docId a03cef08d3c04758aa148f5be56d3401). Status `partial`: letter pages 2-3 read, pages 1 and 4 not in this item.
+- **Book verdict (pass, round 1):** Vieyra, *A New Pocket Dictionary of the Portuguese and English Languages*, Part I, London 1809 (archive.org `newpocketdiction00viey`). 12/12 key-sheet worked-example groups resolve at exact page/column/rank from the page images, trims from the end (BOOK.md). Worked-example group 5 is `23812`, not `23312`.
+- **Reading:** m0002, 26 groups: H 25, M 1 (group p3l1pos4 re-read `285219` -> `283219`, recorded in ciphertext.tsv and graded M; its token 'cagar' is doubtful). `tools/decode_key.py ciphers/antt-linhares-chave --check` exits 0; fresh re-derivation 23/26 on the pre-fix key, 3 settled from the image. Judge PASS is vacuous: `judge_plaintext.py` has no Portuguese corpus.
+- **Audit:** AUDIT.md, m0002 fragment N3, Vieyra identification N3. Safe sentence: "This two-page mid-letter fragment was read from the cipher key and a period dictionary at grade H/M; no prior print of its text or prior decipherment was found in the sources searched 24-25 Sept 2026 (AUDIT.md)."
+- **Siblings:** maco 86 has 21 items; 17 of 21 and 138 of 604 images eye-checked (LX-SIB, SIB2, SIB3), all ordinary correspondence, no cipher and no leaf of m0002's letter. The fonds's two other "Chave de uma cifra" units (PP-06 CLNH/0020/14, PP-07 CLNH/0078/80) are not digitised.
+- **Open jobs:** (1) SO-LINHARES-M0002 queued in SECOND-OPINIONS-QUEUE.tsv; when the runner's PR is posted, a fresh Sonnet verifier checks it (lane brief job 6); this lane is closed, so the parent assigns it. (2) maco 86 /04 (46), /01 (82), /02 (126), /09 (212) unchecked, a fresh DigitArq budget per session. (3) PP-06/PP-07: copy order or digitisation request (person). (4) A Portuguese corpus for judge_plaintext.py before any pt spec gates anything. (5) Outreach gate 2 (second adversarial audit) not run.
+- **Cost:** workers $51.20 (BOOK 6.83, TR 8.09, DEC 10.43, SIB 1.62, VER 2.90, FIX 9.00, SIB2 1.47, SO 1.09, SIB3 1.33), orchestrator about $3.40. Rate limit `allowed` throughout.
+
 ## LANE DX handoff (session_01LgrmyB7HMcMaeLTRNbEqb4), 25 September 2026, 02:12 UTC
 
 - **Login:** DECODE login works on the owner account (browser route, `tools/decode_browser_login.js`, plain user name); one login at 01:36 UTC fetched 8725, R413, R4930, R1172, R1180. Record pages and thumbnails are real; every attached document and full-size image is the "Insufficient permissions" placeholder (sha1 035489a0...). DECODE reading jobs (lane job 3) wait on the role upgrade, ASKS row 42 (`outreach/decode-image-access.md`), not on credentials.
