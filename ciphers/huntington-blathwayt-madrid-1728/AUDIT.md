@@ -584,3 +584,17 @@ JSTOR family: searched on the owner's machine 24 Sept 2026, 6 rows, 0 candidates
 Open indexes: the owner ran this target's two queries on OpenAlex (API) and Semantic Scholar (site search) from their own machine on 24 Sept 2026 (ASKS row 34, `outreach/openalex-s2-owner-queries.md`): no relevant hit. V5's single cloud retry at about 17:21 UTC was 429 on both and is superseded. **Gate 2 is met for this target**: JSTOR family clean, open-index pass done, Google Books and the second adversarial audit done earlier (this file's earlier gate table left only the JSTOR rows and the open-index pass open). The outward draft carrying it is `status: ready` (for Thurloe P4, issue 2 of outreach/bourdeau-issues.md; for Eckert and Blathwayt, outreach/huntington-eckert-blathwayt.md).
 
 Outward drafts written this session (status drafted, nothing sent): see `outreach/` and CONTRIBUTIONS.md.
+
+## Open-index queries, cloud, 25 Sept 2026 (parent worker FOLLOWUP-2315)
+
+ASKS.md row 40's open-index sub-item, re-run from the cloud with OPENALEX_KEY (Access playbook; the owner's earlier
+24 Sept 2026 machine run and V5's cloud retry both got 429 on OpenAlex). No decoding; no class change.
+
+| query | host | result |
+|---|---|---|
+| "Pareti Marchmont 1728" | OpenAlex (`works?search=`) | no relevant hit (0 results) |
+| "Ripperda Segovia escape 1728" | OpenAlex (`works?search=`) | no relevant hit (2 results: a 2010 Ghent conference paper on international law in diplomatic practice, unrelated; a 2026 Open Book Publishers chapter "Chapter Six: 1725-1727" from an edition of Pietro Giannone's autobiography, an Italian historian's imprisonment, not Ripperda's Segovia escape) |
+
+Requests: api.openalex.org 2, 1.5s apart, key sent as `Authorization: Bearer`, never printed. Semantic Scholar not
+queried for this target (ASKS row 40 names OpenAlex only). JSTOR-QUEUE.tsv rows (file lines 45, 46, 47, 57, 58, 59)
+stay with the ChatGPT/owner runner, per the brief.

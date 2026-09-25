@@ -1041,3 +1041,20 @@ JSTOR family: searched on the owner's machine 24 Sept 2026, 3 rows, 1 candidate 
 Open indexes: the owner ran this target's two queries on OpenAlex (API) and Semantic Scholar (site search) from their own machine on 24 Sept 2026 (ASKS row 34, `outreach/openalex-s2-owner-queries.md`): no relevant hit. V5's single cloud retry at about 17:21 UTC was 429 on both and is superseded. **Gate 2 is met for this target**: JSTOR family clean, open-index pass done, Google Books and the second adversarial audit done earlier (this file's earlier gate table left only the JSTOR rows and the open-index pass open). The outward draft carrying it is `status: ready` (for Thurloe P4, issue 2 of outreach/bourdeau-issues.md; for Eckert and Blathwayt, outreach/huntington-eckert-blathwayt.md).
 
 Outward drafts written this session (status drafted, nothing sent): see `outreach/` and CONTRIBUTIONS.md.
+
+## Open-index queries, cloud, 25 Sept 2026 (parent worker FOLLOWUP-2315)
+
+ASKS.md row 41's open-index sub-item, re-run from the cloud with OPENALEX_KEY / S2_KEY (Access playbook; earlier
+audits recorded OpenAlex and Semantic Scholar both 429 every time from the cloud, OPEN-INDEX-RESULTS.tsv rows 110-133).
+
+| query | host | result |
+|---|---|---|
+| "Fox Butler 1864 camels Tecumseh" | OpenAlex (`works?search=`) | no relevant hit (1 result: a book's "Subject Index" entry, California, not a discussion of the letter) |
+| "Meigs Butler 1864 cavalry depot" | OpenAlex (`works?search=`) | no relevant hit (16 results, general American Civil War scholarship -- Owen Johnston Hopkins diaries, Milroy/Winchester, Grant-Meade command relationship, Camp Chase/Libby Prisons, Battle of the Crater -- none naming Fox, Meigs or Butler's April 1864 correspondence) |
+| "Fox Butler 1864 camels Tecumseh" | Semantic Scholar (`graph/v1/paper/search`) | no relevant hit (0 results) |
+| "Meigs Butler 1864 cavalry depot" | Semantic Scholar (`graph/v1/paper/search`) | HTTP 429 on first call and on one retry after a 5s pause; good-citizen rule (single retry) -- not queried further this session |
+
+Requests: api.openalex.org 2 (1.5s apart, key as `Authorization: Bearer`), api.semanticscholar.org 2 (key as
+`x-api-key`, 1.2s and 5s apart), no credential printed. Three of four queries answered clean with no relevant hit;
+the fourth (S2, Meigs/Butler) is unresolved from the cloud, left for a later session or the owner's machine.
+JSTOR-QUEUE.tsv rows (file lines 20, 21, 22) stay with the ChatGPT/owner runner, per the brief.
