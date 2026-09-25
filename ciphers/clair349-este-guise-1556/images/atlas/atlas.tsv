@@ -1,0 +1,28 @@
+code	crop	shape_description
+S01	atlas/S01_letter_B_sign.png	ornate script capital, a looped flourish with a horizontal cross-stroke (superficially resembles a stylised N)
+S02	atlas/S02_sign.jpg	bold ligature resembling 'H' or a doubled 'ff', two vertical strokes joined by a loop
+S03	atlas/S03_sign.jpg	cursive tailed loop, resembles a script lowercase e with a long trailing downward stroke
+S04	atlas/S04_sign.jpg	hash/lattice mark, two short strokes crossing two others (# shape)
+S05	atlas/S05_sign.jpg	small loop/squiggle, a compact cursive scribble
+S06	atlas/S06_sign.jpg	cursive ligature resembling numeral 2 joined to a looped f
+S07	atlas/S07_sign.jpg	looped ascender with a small closed loop at the top (resembles h or ff)
+S08	atlas/S08_sign.jpg	tall flourish with a horizontal cross-bar (resembles the shape of the word 'Tour')
+S09	atlas/S09_sign.jpg	compact looped mark resembling an 'fc' ligature
+S10	atlas/S10_sign.jpg	tall looped ascender with a small closed loop at the top, resembling 'ft' or 'gt'
+S11	atlas/S11_sign.jpg	small circle with a bar or cross through it
+S12	atlas/S12_sign.jpg	small cross/dagger mark, a short vertical stroke crossed once
+S13	atlas/S13_sign.jpg	plus/cross mark, two strokes crossing at right angles
+S14	atlas/S14_sign.jpg	script capital E-like loop with an open curl
+S15	atlas/S15_sign.jpg	simple lowercase e-like loop
+S16	atlas/S16_sign.jpg	tall long-s-like flourish, a single rising stroke with a small loop at top
+S17	atlas/S17_sign.jpg	double-cross or ff/H-like ligature, two vertical strokes with a crossbar
+S18	atlas/S18_sign.jpg	figure-eight / infinity-shaped double loop
+S19	atlas/S19_sign.jpg	circle-shaped mark, a simple closed loop
+S20	atlas/S20_sign.jpg	looped capital resembling R, a loop with a trailing tail
+S21	atlas/S21_sign.jpg	lowercase f-like mark with a descending tail
+S22	atlas/S22_sign.jpg	looped/tailed mark, an open loop with a downward hook
+S23	atlas/S23_sign.jpg	small x/z-like cursive mark, two crossing diagonal strokes
+S24	atlas/S24_sign.jpg	two-letter-looking ligature (resembles L joined to a rounded B or figure 8)
+S25	atlas/S25_sign.jpg	single cursive loop, an open oval stroke
+S26	atlas/S26_sign.jpg	abbreviation-like mark ('nre') with a trailing flourish sign
+X?	(none)	reserved code for a shape a pass sees on the ciphertext lines that does not match any crop on this sheet -- describe it in the pass's own note column rather than guessing an S-code

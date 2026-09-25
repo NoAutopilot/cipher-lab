@@ -468,3 +468,34 @@ line, prioritizing lines 21-33 which are weakest, or (b) if a successor has more
 `disagreements.tsv` directly from `images/lines/*.jpg` without an atlas, line by line, starting from line 1
 (this worker's one worked example above) — either way, decode.json/spec/judge (step 3) waits until
 `ciphertext_draft.tsv` is eye-settled and promoted to `ciphertext.tsv`.
+
+## ZX-349 (25 Sept 2026)
+
+`python3 tools/intake_gate_check.py ciphers/clair349-este-guise-1556` at 15:44 UTC (run by the lane orchestrator):
+`partial (line 1) -- edition/page or full-text-search citation found within 6 lines`, `EXIT: 0`. Gate passes;
+proceeded per this brief (`.claude/briefs/runs/2026-09-25-lane-zx-349.md`), continuing YX-TR349B's handoff.
+
+**Step 1: ciphertext-side glyph atlas built from the key (this worker's own visual read, no subagents used for
+this step).** All 26 non-digit sign codes already assigned in `key_alpha.tsv`/`key_nomen.tsv` (S01-S26 --
+`grep -c sign` both files) now have one crop each in `images/atlas/` (`S02_sign.jpg`..`S26_sign.jpg`; `S01` reuses
+the crop YX-TR349 already made, `S01_letter_B_sign.png`), located by this worker directly in the existing
+section-level key-leaf crops (`p57_alpha_seg2.jpg`, `p57_alpha_seg5.jpg`, `p57_doubles_nulles.jpg`,
+`p57_monosyl_row2.jpg`, `p57_lastword_row.jpg`, `p57_left_wordlist.jpg` -- all already on disk from YX-TR349, no
+new host fetch this step) via visual inspection at 2-3x zoom (several signs, esp. in `p57_left_wordlist.jpg`,
+needed two or three zoom-and-recrop passes before the pixel box was right -- an ink-density row-profile script
+was tried first and rejected: the code column's x-position drifts down the page by 100-150px, so a fixed-x
+vertical profile missed most rows; direct visual measurement from wide crops was faster and more reliable).
+`images/atlas/atlas.tsv` (code, crop path, shape description only -- **no letter value or meaning**, checked by
+re-reading every description before writing it) and a 6-column contact sheet `images/atlas/sheet.jpg` (labelled
+by code only) regenerate from `build_atlas.py` (hand-measured pixel boxes, documented in-script; rerun with
+`python3 build_atlas.py`). Added the code `X?` (no crop) for a shape a pass sees that matches nothing on the
+sheet, per the brief, rather than have a pass guess an existing code. Grades: this is a transcription aid, not a
+reading -- no H/C/S grade applies; the crops are the same manuscript ink already graded H/M in `key_alpha.tsv`/
+`key_nomen.tsv`, reused, not re-graded.
+
+`images/` folder size after this step: 28MB (cap 30MB) -- checked with `du -sh`, room for the two blind passes'
+own output (TSV, no new images) but not for another image-heavy step in this folder without pruning.
+
+Hosts this step: none (all crops cut from images already fetched by YX-TR349; no gallica.bnf.fr requests). No
+subagents this step (atlas-building was this worker's own visual/scripted work, within the brief's step 1, which
+does not call for subagents until step 2).
