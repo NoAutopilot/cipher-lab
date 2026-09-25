@@ -1,0 +1,37 @@
+canvas	folio	sender	recipient	place	date	cipher	numeral_group_count	notes
+1		blank	blank	blank	blank	no		front board/spine verso, blank leaf, no text
+2		blank	blank	blank	blank	no		flyleaf bearing "COLB. 26" shelfmark label, otherwise blank
+3		blank	blank	blank	blank	no		flyleaf, archival note "Volume folioté de 1 à 66, de 1 à 332 et de 1 à 366"
+4	1	La Thuillerie	Servien	blank	blank	no		opens letter re Ambassador of Portugal, M. d'Avaux, Amsterdam; continues onto folio 2 (canvas 5)
+5	2	La Thuillerie	Servien	La Haye	26 Mars 1644	no		signed "La Thuillerye"; close of letter begun on canvas 4
+6	3	Servien	La Thuillerie	blank	blank	no		opens new letter re chariots/wagons Munster-Osnabruck-Oldenzaal; continues to canvas 7-9
+7	4	Servien	La Thuillerie	blank	blank	no		continuation of letter from canvas 6
+8	5	Servien	La Thuillerie	blank	blank	no		continuation; left page carries archival docket note
+9	6	Servien	La Thuillerie	Munster	24 May 1644	no		close/signature of letter begun canvas 6
+10		La Thuillerie	Servien	Hambourg	20 Janvier 1644	no		small folded inserted leaf, not part of main foliation sequence
+11								not fetched -- HTTP 500 on first fetch and on one retry, per good-citizen rule not retried further; file on disk is a saved error page, not an image
+12	9	La Thuillerie	Servien	blank	blank	no		opens letter re Cardinal Mazarin, M. de Brienne's despatches; left margin docket "Respondu le 29 May 1644"
+13		La Thuillerie	Servien	blank	blank	no		unfoliated loose leaf; opening line identical to canvas 16 (folio 13) -- appears to be a duplicate copy/draft of that letter
+14		blank	blank	blank	blank	no		not a manuscript leaf -- photographic reference/target card ("Pagination incorrecte -- date incorrecte, NF Z 43-120-12")
+15	12	blank	blank	blank	blank	no		blank verso leaf
+16	13	La Thuillerie	Servien	blank	blank	no		opens letter re writing from Hamburg, Cardinal Mazarin; continues to folio 14 (canvas 17)
+17	14	La Thuillerie	Servien	blank	24 Juin 1644	no		close/signature of letter from canvas 16; place illegible
+18	15	La Thuillerie	Servien	blank	blank	no		opens letter re M. de Marigny in Sweden, M. de Brienne; continues to folio 16 (canvas 19)
+19	16	La Thuillerie	Servien	Coppenhaguen	19 Novembre 1644	no		close/signature of letter from canvas 18; confirmed by this worker's own eye-check
+20	17	La Thuillerie	Servien	Christianopoli	blank (letter dated 6 Avril 1645 on canvas 21's closing signature block)	yes	~40	CONFIRMED BY THIS WORKER (not just eye-check): nomenclator numeral-group cipher inline with prose, WITH a contemporary interlinear decipherment gloss in a smaller hand above/below specific numeral groups (e.g. "Je parle des Suedois" over "6 25 zz 11 83 v 44 w' 85", "pour les Dannois qui" over "Car 63 68"). See images/crops/canvas20_*.jpg. Continues to folio 18 (canvas 21).
+21	18	La Thuillerie	Servien	blank	blank (see canvas 20)	yes	~50	CONFIRMED BY THIS WORKER: continuation of the folio-17 cipher letter; very heavy numeral-group cipher, same interlinear-gloss pattern continues (e.g. "au moins a pris soulagement..."); closing signature block gives the letter's actual dateline: "A Christianopole le 6 Avril 1645", signed "La Thuillerie"
+22	19	La Thuillerie	Servien	blank	blank	no		marked "Duplicata" at top; opens reply to a letter of 29 Novembre; left page carries archival docket re "Comte de la Rochefoucauld ... Ambassadeur ... Plenipotentiaire ... a Munster" (Servien's title)
+23	20	La Thuillerie	Servien	Coppenhaguen	dernier Decembre 1644	no		close of letter from canvas 22 (last day of December 1644)
+24	21	La Thuillerie	Servien	blank	blank	no		opens letter re S. de Marigny in Sweden; continues to folio 22 (canvas 25)
+25	22	La Thuillerie	Servien	Coppenhaguen	22 [month uncertain] 1645	no		close/signature of letter from canvas 24; day/month partly illegible
+26	23	unclear (addressed "Mon Nepveu")	unclear	unclear (dateline reads roughly "A ... le 17e Mars 1646")	17 Mars 1646	yes	~80	CONFIRMED BY THIS WORKER: very heavy cipher, mixed 2-5 digit groups, a visibly different/larger nomenclator than folio 17-18's; salutation "Mon Nepveu" (My Nephew) is not the La Thuillerie/Servien form of address used elsewhere in this part, so this may be a different correspondent pair bound into the same volume; ALSO carries interlinear decipherment glosses in places (e.g. "de 18", "voire femme", "pour le siege de M. de Grimone"); left margin carries a later archival abstract in a different hand. Needs its own sender/recipient identification before any key work.
+27	24	La Thuillerie	Servien	La Haye	1646 (day/month uncertain)	yes	~15	mentions Comte de Trautmandorff, Munster, principaute de l'Evesque, comte de Meurs; light nomenclator numeral groups interspersed with otherwise plain prose
+28	25	blank	blank	blank	blank	no		largely blank leaf, only faint show-through from facing page
+29								not fetched -- 3 fetch attempts all failed (connection reset / 0 bytes), no file saved; stopped per the good-citizen one-retry rule (this is beyond a single retry already, logged as a real gap, not attempted further)
+30	27	Servien	La Thuillerie	blank	blank	yes	~30	heavy cipher letter re Prince d'Orange, les Etats; left margin bears docket "M. Servien"; continues onto folio 28 (canvas 32)
+31	27	Servien	La Thuillerie	blank	blank	yes	~30	apparent duplicate photograph of the same leaf as canvas 30 (pixel-identical text, same folio 27, different file hash) -- likely a Gallica capture artifact, not a second leaf
+32	28	Servien	La Thuillerie	blank	blank	yes	~40	continuation of cipher letter from canvas 30/31; mentions Prince d'Orange, Longueville, Madame la Princesse d'Orange
+33	29	unclear	unclear	La Haye	6e [month uncertain] 1648	yes	~25	heavy cipher letter re payment/distribution of funds; signature not fully legible
+34	30	unclear	La Thuillerie (per header "A Monsieur de la Th...")	blank	blank	no		torn/damaged inserted leaf; plain prose re ratification; no numeral cipher visible
+35	31	unclear	unclear	blank	blank	yes	~25	heavy cipher letter re the Prince, "Knuyt", the Plenipotentiaires; torn leaf inserted at left, partly illegible
+36	32	La Thuillerie	unclear	La Haye	[day uncertain] de l'an 1648	yes	~15	continuation and close of cipher letter from canvas 35; signed "La Thuillerye"
