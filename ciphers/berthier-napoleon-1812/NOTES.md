@@ -122,6 +122,100 @@ download, already fetched once by CX2-BERT, re-fetched here since this session d
 disk); github.com 1 (shallow clone of dbourdeau/cyphersolver, MIT, removed after grep). 1 Sonnet
 subagent (pass B, blind image transcription, one call).
 
+## BBER: spec and first test (25 Sept 2026, LANE R7)
+
+Wrote `specs/berthier-napoleon-1812.json` per `specs/README.md`'s house format (shape copied from
+`specs/antt-linhares-chave.json`): ciphertext from `ciphertext_full.tsv` with source and date,
+alphabet, constraints (nomenclator, one- or two-part unknown, French, Berthier to Napoleon 22 Dec
+1812), `judge` block, and `cheap_tests_in_order` listing all four tests the job brief named (test 0
+run this pass, test 1 attempted as a print check, tests 2-3 stated only).
+
+**Judge language: `fr18`.** `tools/judge_plaintext.py`'s `LANG_CORPORA` wires only `fr` (fr16,
+16th-c.) and `fr18` (diplomatic/official French prose c.1680-1790) for French; `tools/data/fr19/`
+(1800-1890 prose) exists on disk but is **not** in `LANG_CORPORA` as of this pass, so a spec cannot
+opt into it. fr18 is the closer of the two wired options to this target's Dec 1812 date (22-132
+years off vs. fr16's ~230), but still an era mismatch by CLAUDE.md's V6-PTCORP lesson (era match
+matters, not just language) -- flagged in the spec as a one-line suggestion (build and wire a
+1800-1815 French official/military corpus) rather than built in this $3 breadth pass.
+
+**Test [0]: crib fit, extended to letter XXIX.** Re-ran the existing `scripts/crib_test.py` (LANE
+R6 Y9, unchanged) to read off letter **XXIX** (28 Dec 1812, 316 words -- the single best length
+match to the 325-group cryptogram in the whole 34-letter pool, fit 0.0277) on all three of the
+script's metrics against the same 34-letter control (the field of 33 other Chuquet Dec-1812
+Berthier-to-Napoleon letters, median rank 17.5 of 34):
+
+| metric | XXIX rank (of 34) | value |
+|---|---|---|
+| length_fit | **1st** | 0.0277 |
+| rate_fit | **12th** | 0.0705 |
+| gap_fit | **17th** | 0.2737 |
+
+XXIX beats the control median on all three metrics (majority test passed), unlike the two letters
+the original R6 brief scored (XIX beats the median on only rate_fit, 3rd of 34; loses on length_fit,
+15th, and gap_fit, 18th; XXIII never rises above mid-pack on any metric: 18th/29th/30th). This is
+**not** a crib or an alignment claim (rule 4: no grade assigned, no S/H/C token): length_fit is a
+single easily-coincidental signal (one code roughly per word, 325 vs 316) and the other two metrics
+for XXIX are mid-pack, not standout, so the result is reported as a lead for test [1], not a result
+in itself. Numbers written to `specs/berthier-napoleon-1812.json` `cheap_test_done[0]`.
+
+**Test [1]: Correspondance de Napoléon Ier vol. XXIV print check.** Budget allowed running this as
+the brief's named exception (disk-only test 0 leaves room for one network test). `archive.org`
+advancedsearch confirmed volume XXIV is `correspondancede24napouoft` (already known, LANE CX2).
+be-api fts is a coarse locator only (its `page_num` field equals the item's total `imagecount`, not
+a real page -- logged in CLAUDE.md's Access playbook), so after the first round of fts queries this
+worker fetched the volume's full `_djvu.txt` (43,181 lines; archive.org, 302-redirect followed) and
+grepped it directly for exact letter headers and dates -- a genuine read, not a search-hit count.
+
+- `"note chiffrée"` (fts, exact phrase Tomokiyo/Bourdeau's paraphrase quotes) -> 0 hits anywhere in
+  the volume (confirms CX2's prior negative).
+- `chiffr` (grep, case-insensitive, whole djvu.txt): the only nearby hit is letter **19275** (Napoléon
+  to Maret, Duc de Bassano, Moscou, **16 October 1812** -- a different correspondent and a two-month-
+  different date), editorially marked "Lettre en chiffre dont il n'a pas été possible de faire la
+  traduction" -- an untranslated ciphered letter whose gist the editor reconstructs from Bassano's own
+  paraphrase to Comte Otto. Not Berthier, not December, not this cryptogram; a real but unrelated case
+  of the same editorial convention ("lettre en chiffre" marked but not deciphered in this edition).
+- `"lettre du 21"` and `"30 décembre"` (fts, then grepped in the djvu.txt) together locate letter
+  **19408**: "AU PRINCE DE NEUFCHATEL ET DE WAGRAM, MAJOR GÉNÉRAL DE LA GRANDE ARMÉE, A KOENIGSBERG.
+  Paris, 30 décembre 1812. Mon Cousin, j'ai reçu votre lettre du 21 ; j'ai reçu aussi votre note
+  pertes réelles ; je vais y penser sérieusement. [...]" -- this is Napoleon's 30 Dec 1812 reply to
+  Berthier at Koenigsberg (matching napoleon2.htm's claim of a 30 Dec letter acknowledging a note
+  together with a dated Berthier letter), but two details do not match the lead as quoted: (a) the
+  Berthier letter acknowledged is dated the **21st**, not the 22nd (this target's cryptogram date);
+  (b) the note is named **"note pertes réelles"** ("note [on] real losses"), not **"note chiffrée"**
+  ("ciphered note") -- a different two-word phrase, not an OCR-garbling of the same words. Read
+  plainly, this looks like Napoleon replying to a *separate*, dated-the-21st letter about casualty
+  figures, not to the 22 Dec ciphered dispatch.
+- `"lettre du 22"` (fts, then grepped): five hits in the volume, none addressed to Berthier or
+  mentioning a cipher -- Rapp (governor of Danzig, 4 Jan 1813, "votre lettre du 22 décembre. Danzig
+  doit être approvisionné..."), Lauriston, and others on unrelated business.
+
+**Verdict: not found, and the specific claim in the lead ("votre note chiffrée" in the 30 Dec
+letter) does not match this printed edition's wording.** The 30 Dec letter to Berthier (19408) is a
+real, located letter and is the closest match to napoleon2.htm's description (same addressee, same
+date, acknowledges a dated letter and a "note"), but its own text says "note pertes réelles," not
+"note chiffrée," and answers a letter of the 21st, not the 22nd. Either the secondary source's
+paraphrase is imprecise about which "note" it means, or a genuinely different letter/note is meant
+that this pass did not locate. Not claiming this resolves or refutes the lead -- reporting exactly
+what was read and where it differs from the claim, per rule 2's "report every difference" standard
+applied here to a lead rather than a transcription.
+
+Recorded as `cheap_test_done[1]` in the spec: found letter 19408 (30 Dec 1812, Napoleon to Berthier)
+as the closest match to the "votre note chiffrée" lead, with the two discrepancies above; no letter
+in the volume pairs a cipher mention with Berthier's 22 Dec letter specifically.
+
+**Status stays `open`.** Not found-solved, no key, no cryptanalytic result (rule 3's ladder still
+blocks a campaign at this N against a ~1200-entry nomenclator). Credit unchanged from LANE R6/CX2's
+prior work in this file; this pass extends the existing crib-test script's output table and adds a
+direct full-text read of vol. XXIV that goes beyond CX2's earlier be-api-only search.
+
+**One-line suggestion:** the discrepancy between letter 19408's actual text ("note pertes réelles")
+and the lead's "votre note chiffrée" is worth checking against Urban's own source (Cryptiana's
+uncredited citation, test [3]) or a different edition/volume before treating napoleon2.htm's
+paraphrase as settled either way.
+
+Requests this section: archive.org (advancedsearch 1 + be-api fts 5 + one `_djvu.txt` download,
+all >=1.5s apart, no 429/403) 7. No subagents.
+
 ## Found-solved test (LANE CX2 worker CX2-BERT, 25 Sept 2026)
 
 Ran the three-part found-solved test the orchestrator queued (CX2-FRAWI's 16:03/16:06 passes had located Chuquet p.440 and the Persée article but not yet read Chuquet's source notes or Vilcoq's actual page images -- both done in this pass).
