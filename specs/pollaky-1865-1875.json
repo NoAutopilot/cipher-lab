@@ -7,7 +7,7 @@
  "language_candidates": [
   "en"
  ],
- "ciphertext_pending": "Four scanned ads, none transcribed to text anywhere found in this repo. All four images are linked from Cipherbrain post 29 (Schmeh 2017, sources/schmeh/posts/29-pollaky.txt), supplied to Schmeh by Tony Gaffney and Nicole Gluecklich: (1) 1865-05-16, 'written in a secret script' (invented symbols), https://scienceblogs.de/klausis-krypto-kolumne/files/2016/10/Pollaky-secret-writing.png ; (2) 1871-02-20, 'encrypted in some number code', https://scienceblogs.de/klausis-krypto-kolumne/files/2016/10/Pollaky-Telegram.png ; (3) 1875-05-08, https://scienceblogs.de/klausis-krypto-kolumne/files/2016/10/Pollaky_08051875.jpg ; (4) 1875-05-20, https://scienceblogs.de/klausis-krypto-kolumne/files/2016/10/Pollaky_20051875.jpg . A fetch of these four URLs (host scienceblogs.de, already confirmed reachable 25 Sept 2026 for the Copenhagen post) plus a blind transcription pass would put ciphertext on disk. Note (not yet verified, flag only): ads 3 and 4 carry the same two dates, 8 and 20 May 1875, as the Catokwacopa ads in a different newspaper (The Evening Standard) -- possibly coincidental, not established as related.",
+ "ciphertext_pointer": "ciphers/pollaky-1865-1875/ciphertext.txt (single pass, draft, 25 Sept 2026, worker bPOL); images in ciphers/pollaky-1865-1875/images/ with manifest.json; full numbers in ciphers/pollaky-1865-1875/NOTES.md. Note (still not established, carried forward): ad 3's plaintext contains the word 'Catokwacopa', the same word naming the existing ciphers/catokwacopa-1875/ target in a different newspaper -- overlap flagged, not resolved.",
  "alphabet": "unknown per ad: ad 1 invented symbols ('secret script'); ad 2 digits ('number code'); ads 3-4 undetermined until transcribed",
  "constraints": {
   "source": "Tony Gaffney's 'The Agony Column' (as Jean Palmer) catalogues twelve Pollaky-signed ads; these four are the ones Schmeh received scans for and that remain unsolved ('there are two more encrypted Pollaky ads that might have been solved by Thomas Ernst; I won't cover them here' -- Schmeh)",
@@ -19,12 +19,20 @@
   "2. Once transcribed, check ad 2 (the 'number code' ad, 1871-02-20) against contemporary telegraph/commercial codebooks the way Lima-1916's cheap test 1 did (tools/print_check.py-style grep against Internet Archive djvu.txt of period codebooks -- ABC Code, Western Union, Lieber's), since a Victorian telegram-era ad using a number code is a natural fit for a commercial codebook. Cost $1.",
   "3. Cross-check ads 3-4 against Gaffney's 'The Agony Column' text (if a full-text copy can be located, e.g. Internet Archive or Google Books) for any partial reading Gaffney himself may have proposed but that Schmeh's post did not reproduce. Cost $1-2."
  ],
- "matched_control": "not yet run; no ciphertext on disk to test",
+ "matched_control": "not yet run as a decode-vs-control gate; test 1's per-ad IC controls (English text same N, uniform random same K, 3 seeds each) are in ciphers/pollaky-1865-1875/NOTES.md",
+ "cheap_test_done": {
+  "test": "1 (fetch + one blind transcription pass)",
+  "date": "25 Sept 2026",
+  "worker": "bPOL, LANE B2 breadth worker",
+  "result": "ciphertext on disk for all four ads (single pass, draft -- rule 2/7 not yet satisfied by a second pass or --check). Per-ad N/K/IC: ad1 (signs) N=10 K=9 IC=0.0222; ad2 (digit groups) N=36 K=35 IC=0.0016; ad3 (letters) N=224 K=25 IC=0.0636 vs English-control 0.0591-0.0661 vs random-control 0.0393-0.0402; ad4 (letters, cipher portion) N=221 K=22 IC=0.0656 vs English-control 0.0593-0.0657 vs random-control 0.0456-0.0464. Ads 3-4's IC sits with the English control and well above the random control -- moved: reads as a transposition-cipher signature, not decided cryptanalytically (grade S/M, no key). Full tables and caveats in NOTES.md.",
+  "moved": "ads 3-4 only (see result); ad1 too short (N=10) to be informative; ad2 not a letter ad"
+ },
  "judge": {
   "language": "en",
-  "letters_min": 15,
-  "letters_max": 120,
-  "control_samples": 200
+  "letters_min": 200,
+  "letters_max": 230,
+  "control_samples": 200,
+  "note": "narrowed 25 Sept 2026 per schema_note, from ad3/ad4 letter counts (224, 221); ad1 (N=10 signs) and ad2 (digit groups) are out of this judge's scope"
  },
  "value": "low: four short, structurally distinct ciphertexts, no key material found in an extensive biographical archive search, 'ciphertexts seem too short to decipher' per Pollaky's own biographer",
  "model": "Sonnet",

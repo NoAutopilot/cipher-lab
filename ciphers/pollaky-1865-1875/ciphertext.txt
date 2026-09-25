@@ -1,0 +1,58 @@
+# pollaky-1865-1875 -- ciphertext.txt (single pass, draft, blind transcription 25 Sept 2026, worker bPOL)
+# Source: four ad images in ciphers/pollaky-1865-1875/images/ (manifest.json), from Cipherbrain post 29
+# (Schmeh 2017, sources/schmeh/posts/29-pollaky.html), scans supplied to Schmeh by Tony Gaffney and
+# Nicole Gluecklich. As transcribed (rule 2): a single blind pass, not cross-checked against a second
+# pass or repaired. Uncertain letters are marked [?].
+
+## AD 1 -- 1865-05-16, "written in a secret script" (invented symbols)
+## image: images/ad1-1865-secret-writing.png
+## Layout: plaintext sentence with a run of 10 invented signs standing in for one clause/phrase.
+## Sign table (each sign given an ID; SIGN-01 recurs, all others occur once in this ad):
+##   SIGN-A  : a vertical bar followed by two dots stacked (like "|:"); appears once, at the very
+##             start of line 1, immediately before the plaintext word "Your" -- position and shape
+##             both suggest it could be a signature-initial code (compare "W." opening ads 3/4), but
+##             this is an observation, not established.
+##   SIGN-01 : two dots side by side, above a single horizontal dash. Occurs twice (positions 1 and 6
+##             of the 10-sign run) -- the one repeated sign in the run.
+##   SIGN-02 : a vertical bar with three dots stacked to its left and two dots (one above, one below)
+##             to its right.
+##   SIGN-03 : three horizontal dashes stacked (like "≡"), with two dots stacked to its right (like ":").
+##   SIGN-04 : one horizontal dash, with three dots cascading diagonally down and to the right of it.
+##   SIGN-05 : a vertical bar with one dot to its right.
+##   SIGN-07 : an open and close parenthesis enclosing three dots stacked vertically.
+##   SIGN-08 : three dots in a horizontal row, above a single horizontal dash.
+##   SIGN-09 : two horizontal dashes stacked, with one dot above the top dash and one dot below the
+##             bottom dash.
+##   SIGN-10 : three dots stacked vertically, then three vertical bars side by side, then one dot.
+##
+## Transcription (plaintext as printed; cipher run given as the sign-ID sequence):
+[SIGN-A] Your telegram was duly forwarded, and fortunately in time to
+CIPHER-RUN: SIGN-01 SIGN-02 SIGN-03 SIGN-04 SIGN-05 SIGN-01 SIGN-07 SIGN-08 SIGN-09 SIGN-10
+shall return to England about the middle of June. Pollaky.
+
+## AD 2 -- 1871-02-20, "encrypted in some number code"
+## image: images/ad2-1871-telegram.png (handwritten date "20. Februar 1871" above the clipping,
+## not part of the ad itself)
+## Transcription (as printed; note the mid-line "9:77314" uses a colon where every other group uses a
+## period, and there is an isolated lone "." between "437." and "801" -- both transcribed literally,
+## not repaired; short "-" and long "--" dashes as printed):
+TELEGRAM. -- 56. 717. 9362. 81720. 19736. 14. 618. 9:77314. 390. 400. 272. 20 = 211. 59. 91. 881. 460. - 80. 401. 70. 447 415. 91 437. . 801 10031. 874. 92. 871. 2391. 941. 72050. 67321. 438921. 150. -- Pollaky, Private Inquiry Office, 13 Paddington Green.
+
+## AD 3 -- 1875-05-08
+## image: images/ad3-1875-05-08.jpg
+## Note: the plaintext of this ad contains the word "Catokwacopa" -- the same word that gives its
+## name to the existing ciphers/catokwacopa-1875/ target (a different newspaper, per that target's
+## NOTES.md and this spec's ciphertext_pending). Flagging the textual overlap; not established here
+## whether the two are the same underlying message, a shared signature/heading convention, or
+## coincidence -- a job for whoever works both targets next, not resolved by this single pass.
+## Transcription (as printed; jumbled pseudo-words kept exactly as printed, not corrected to real words):
+W. Str 53. Catokwacopa. Olcabrokorlested. Coomemega. Sesipyyocashostikr. Rep.--Itedconlec mistrl. --Hrsclam 54. 3 caselcluchozamet[?]. 1. 6. 9. Mopredisco. Contoladsemot. Iadfilisat. Qft. Cagap. Balmnopsemsov. Ap. 138.--Hodsam 55, 6. Iopotonrogfimsecharsenr. Tolshr. Itedjolec. mistrl.--Ding Declon.--Ereflodbr.
+
+## AD 4 -- 1875-05-20
+## image: images/ad4-1875-05-20.jpg
+## Note: the ad's own last sentence is plaintext and states it continues ad 3: "This will be
+## intelligible if read in connection with my communication published in this column on the 8th
+## inst." -- confirming ads 3 and 4 are one two-part message in this system, per the sender's own
+## words (not an inference by this worker).
+## Transcription (as printed; jumbled pseudo-words kept exactly as printed):
+W. --Umem 18. Poayatlgerty. Dpeatcnrftin. Nvtinrdn. Dmlurpinrtrcamnr. Etd. -- Atndngtnsurs. Otenpu.--Etfdorshpxn. 18. Ndtsfindseseo. Cotegr Tsvlysdinlge. Ngtndusdendo. Edrstneirs. Ui. Ndted. Iolapstedttoc. A.P. 138.-- Yxn. 18. 18. Wtubtrfftrstendinhofsvmnr. Dily.--Atdwtsurs. Oatvpu.-- Y Arati. Rileohmae.--This will be intelligible if read in connection with my communication published in this column on the 8th inst.
