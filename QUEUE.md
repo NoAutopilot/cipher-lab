@@ -6236,3 +6236,87 @@ already-listed rows/sections: 10 (Nevers-Revol KS-01..KS-07 cluster, Brienne/Ser
 LANE LX search, Dupuy 452 M6, Danzay fr2812, Sforza italien 2245 + Maletta lead, Huntington Blathwayt mssBLA
 184/187/191(a), Huntington Luzerne mssDE 37/55, Trew Briefsammlung sibling folder, WVO project cross-tracking,
 RAH cluster).
+
+## Key beside the letter (LANE VX, 25 Sept 2026)
+
+Worker VX-SCGAL (Sonnet), host family (a) only: gallica.bnf.fr and archivesetmanuscrits.bnf.fr. Row prefix
+VX-G. Brief: find volumes where undeciphered cipher letters sit beside a key, a sibling's decipherment, or an
+interlinear gloss, copy-free (Gallica-digitised) only.
+
+**Zero numbered rows.** No new copy-free "key beside the letter" volume survived: BnF/Gallica's own Français,
+Clairambault, Dupuy, Cinq Cents de Colbert and Baluze fonds have already had five prior passes (23-24 Sept 2026,
+documented above under "Digitised candidates, no copy needed" M1-M34 and "Keys index vs unread siblings"
+KS-01..KS-07) sweeping essentially every French term for this exact pattern via Gallica SRU (`dc.description`,
+14+ term list across 11 series) and archivesetmanuscrits.bnf.fr's own free-text search (7+ terms, bucketed by
+century where the site's pagination cap forced it). This pass ran the three terms from the job brief's word list
+that no prior pass had tried: `interligné`, `clef du chiffre`, `table de chiffre`.
+
+**Method.** archivesetmanuscrits.bnf.fr `resultatRechercheSimple.html` (`TEXTE_LIBRE_INPUT=<term>`, cookie jar,
+descriptive-then-browser UA, same POST form the Fourth/Fifth passes reverse-engineered), one term at a time,
+>=1.5s apart. Each hit's item page (`ark:/12148/<id>`) was fetched to read the parent volume's full item list and
+check the Gallica-digitised badge (`class="avecDaoGal"` on the result's div, present only when a `pictoGallica`
+icon shows -- confirmed by its total absence, both in the search-result HTML and the item page's own CSS, for
+every hit below).
+
+- `interligné`: 105 results, page-1 fully read (47 rows) -- **pure noise**, every hit a medieval/classical
+  manuscript description using "interligné" for an interlinear gloss on a Biblical, patristic or classical text
+  (Bède, Augustin, Homère, Grec/Latin/Arabe fonds), none a diplomatic-correspondence recueil. Closes this term.
+- `table de chiffre`: 1614 results (the two words matched independently, not as a phrase -- BnF's search box is
+  not phrase-adjacent); page-1 sample (53 rows) is Arabic-manuscript tables of contents, page-numbering
+  auxiliaries and an Offenbach archive -- **pure noise**, no correspondence-context hit anywhere in the sample.
+  Closes this term (not paged further; the noise rate makes a full sweep not worth the budget).
+- `clef du chiffre`: 41 results, all read. Five already covered by the second/fourth pass's own wholesale
+  exclusion of the Français 3005-3993 "Ligue/Nevers Recueil de lettres et pièces originales" run (Français 3234,
+  3395, 3462, 3662, 3761 -- confirmed again this pass by fetching each item page and reading the shelfmark from
+  the breadcrumb). One (NAF 720) is the already-excluded Charles-le-Mauvais key ("published several times",
+  third-pass note). One (Français 12298-12299) is an unrelated cabalistic treatise, no cipher correspondence.
+  **Four survivors are new to the repository but none is Gallica-digitised** (checked directly, no `avecDaoGal`
+  badge on any of the four): Français 4694, 4717, 4720, 4724 -- see leads below. None promoted, none scored as a
+  row; per this lane's own gate, a key with the ciphertext in reach only through a copy order is not a row.
+
+**Exclusion check on the four survivors:** none found in QUEUE.md/CATALOG.md/LANDSCAPE.md/ciphers/ (grepped by
+shelfmark and by the item's own distinctive names -- Turle, Folambray, Phelippes Laisne, Humieres, Du Coudray,
+Deshayes, Scotti, Leonora di Mantova), none in `sources/wvo` or `sources/huygens`, none in fresh shallow clones
+of `dbourdeau/cyphersolver` and `aaymeloglu/unsolved-ciphers` (grepped by ark and by name; the one "Folambray"
+hit in Bourdeau's `gallica_sweep/src/henryiv.txt` is a different letter, Henri IV to Maisse, same place name,
+different correspondents), and no live ROOM.md claim (last 6 hours) on these shelfmarks by any lane.
+
+**Non-copy-free leads (not numbered rows):**
+
+- **Français 4717** (Anc. 9539, "Recueil de pièces originales et de copies concernant l'histoire de France, de
+  1543 à 1611", archivesetmanuscrits ark `cc57767r`) -- the strongest lead this pass, matching the lane's exact
+  target pattern except for the copy-free gate. Item 11: "Clef d'un chiffre. Au dos de la pièce est un @@." (a
+  key). Item 19: letter from "TURLE" to "Mme" the duchesse de Nevers, "De Folambray, ce 12 janvier 1595",
+  **"Avec chiffre et déchiffrement"** -- cipher and its own contemporary decipherment both present, the
+  cheap-transcription pattern (M1/M15/M23/M31 precedent), kind recovery. Item 49: letter from "PHELIPPES LAISNE"
+  to "Mr de Humieres", "A Maineville, le 2 apvril 1577", "Avec chiffre" -- no decipherment named for this one,
+  kind cryptanalysis, worth checking against item 11's key first. Not Gallica-digitised (no `avecDaoGal` badge on
+  the search result or the item page); a copy-order candidate for REQUEST.md if a future worker wants it, or
+  worth a repeat Gallica-digitisation check later (BnF adds new scans continuously).
+- **Français 4720** (Anc. 9542, "Recueil de pièces originales et de copies concernant l'histoire de France,
+  durant le premier quart du XVIIe siècle", ark `cc577708`) -- a key-only volume, the M12 pattern (Français 6204,
+  already in QUEUE.md, dropped as "key present, no ciphertext named"): four separate cipher keys in one Duke-of-
+  Nevers-correspondence recueil -- item 1 "Clef de chiffre" (headed "Jergon"), item 40 "Chiffre avec Mr Du
+  Coudray, fait à Paris, le 24 janvier 1621, partant pour aller en Hollande", item 41 "Chiffre avec Mr Deshays,
+  lorsqu'il partit de Mezieres pour s'en aller en Levant", item 45 "Chiffre avec le conte Scotti. Du 27 febvrier
+  1623". No ciphertext letter under any of the four keys found in this same volume (84 items read via the item
+  page's own contents list); a matching enciphered Du Coudray/Deshayes/Scotti letter elsewhere in the Nevers
+  correspondence complex (already the subject of LANE N4's KS-01..KS-07 Nevers-key work above) is the natural
+  next-step cross-reference, not pursued further this pass (out of this brief's scope). Not Gallica-digitised.
+- **Français 4694** (Anc. 9516, "Recueil de pièces originales... 1573 à 1616", ark `cc57744m`) and **Français
+  4724** (Anc. 9546, "...concernant l'ordre de la Milice chrétienne", ark `cc577747`) -- each holds one
+  "Clef d'un chiffre" (4694 item 1, "vers 1610"; 4724 item 29, undated, plus item 10 "Chiffre avec Mr le
+  mareschal de Brissac. 22 juillet 1620" and item 33 "Chiffre baillé par le pere FRANÇOIS YBERNOIS", two more
+  keys in the same volume) among plain-French/Italian diplomatic correspondence to the Duke of Nevers; no
+  ciphertext letter confirmed under any of them in the visible item list. Weaker leads than 4717/4720 (no cipher
+  letter at all yet located), flagged for the same cross-reference follow-up. Not Gallica-digitised.
+
+**Requests this pass:** archivesetmanuscrits.bnf.fr 13 (3 searches + 10 item-page fetches, >=1.5s apart, all
+HTTP 200, no challenge). gallica.bnf.fr 9 (1 reachability probe + 8 SRU queries trying to locate a Gallica
+digitisation for Français 4717/4694 by title/description/relation -- none found, consistent with the missing
+`avecDaoGal` badge; 1 connection reset, retried once per the good-citizen rule, succeeded). github.com 2 fresh
+shallow clones (dbourdeau/cyphersolver, aaymeloglu/unsolved-ciphers, grepped only, not pushed). No WebSearch, no
+DECODE, no credentials, no subagents. Well under both this brief's 80/40 host caps.
+
+Kind: scout (this section files leads only; it does not promote to the board or classify novelty, per rule 10 and
+the lane brief).
