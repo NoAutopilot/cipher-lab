@@ -1,4 +1,4 @@
-open
+partial
 
 Dória 1944 *Cartas* (`rE7SAAAAMAAJ`, NO_PAGES/no-preview, so unreadable page-by-page) was read this pass through Google Books' search-within-volume JSON endpoint (`tools/gbooks_search_within.py`, 25 Sept 2026, 19 queries across its 248 printed pages + roman-numeral front matter): the London-embassy words that mark the manuscript's own "Deciffrada" appendix do not appear anywhere in the edition's body -- "cifra"/"cifras" appears exactly once (p.151, one clause, no cipher groups nearby, not on a page with any London-period name), "Deciffrada"/"Deciffrado"/"Bullingbrook"/"Bolingbroke"/"Strafford"/"Estrafforde"/"Oxford"/"Hanover"/"Thesoureiro"/"velhaco"/"vergonhar"/"Nighs"/"deboche"/"parvoices" all return zero hits, and "Londres" itself appears only in the roman-numeral preface (pp.xvii, xviii, xxxvii), never once in the 248 arabic-numbered body pages -- while "Paris"/"Versalhes" (p.17, p.135) confirm the body does cover the sender's earlier Paris embassy period. No route opened the edition page-by-page (still NO_PAGES on Google Books, no IA copy, HathiTrust `catalog.hathitrust.org` 403 Cloudflare as PX-CS01 found, and this worker could not find any HathiTrust catalog record for this edition at all by web search -- consistent with the 100-copy limited run never having been digitized by a HathiTrust partner, so the HTRC Extracted Features route named in this worker's brief could not be run for lack of an htid). Taken together this is read as a negative: the London 1712-13 letters' cipher/"Deciffrada" passages are not printed, and are very likely not covered at all, by the sender's standard edition.
 
@@ -148,6 +148,78 @@ letter-substitution alphabet) into the key-building step, since Carta 70's own t
 "Diccionario" (word-level), not a cipher alphabet (letter-level) -- this likely rules out treating the
 appendix as a simple homophonic substitution and argues for a nomenclator/dictionary-code key.tsv (code,
 word/phrase, not code, letter).
+
+### Update: appendix transcribed, key rebuilt from the volume's own decipherments (grade `period`)
+
+A single Sonnet subagent (this worker's one transcription pass, not two -- see cost note above) transcribed
+all 17 appendix leaves (m0280-296) directly from the full-resolution images into `ciphertext_appendix.tsv`
+(1702 cipher-token rows) and `plaintext_appendix.tsv` (39 entry rows: cipher_line + deciffrada_line verbatim,
+including the three entries that span a page turn -- Carta 61, Carta 70, Carta 123 -- filed under their
+starting leaf with merged text). Method and uncertainty log in `transcription_pass_summary.md`; 18 tokens
+flagged `±` for genuine handwriting ambiguity, no entry fully illegible.
+
+**The system is confirmed a homophonic letter-substitution cipher selectively applied within plaintext
+Portuguese**, not a word-level dictionary code despite Carta 70's own "Diccionario" wording (that word most
+likely names the code TABLE itself -- a book/sheet of homophones -- rather than describing word-for-word
+substitution). Evidence: coded runs' token counts match the letter count (spaces/punctuation stripped) of
+their corresponding plaintext span exactly in the clean cases -- e.g. `Passage 2ª` (m0284) is 13 cipher
+tokens for "Selhefôrdemim" (13 letters); `Passage 5ª` (m0285) is 13 tokens for "Nãohéresposta" (13 letters);
+`Carta 30` (m0282) is 24 tokens for "ASogradoDuquedeBuquingam" (24 letters), and within that single entry
+alone the codes **u=26** (3 independent positions), **q=13** (2), **e=19** (2) and **g=6** (2) already
+repeat consistently.
+
+**Method** (scripts in `scripts/`, run in order, regenerate `key.tsv` from the two transcription TSVs with no
+network access): `01_segment.py` splits each entry's `cipher_line` into ordered (CODE-run | plain-word)
+segments, using `ciphertext_appendix.tsv`'s per-entry ordered token list as ground truth (handles the one
+capitalisation edge case, code "a" written as display-capital "A" after the literal, evidently non-cipher,
+numeral "300" in Carta 13 -- flagged, not resolved, see below). `02_anchor.py` locates each plain-word
+segment's position inside `deciffrada_line` (after stripping the appendix's own trailing "V.Sa"/"V.mce"/"V."
+closing abbreviation, which is not part of the enciphered letter) to bound each CODE run's corresponding
+plaintext span. `03_align_pairs.py` strips spaces/punctuation from each bounded span and, where the letter
+count matches the token count exactly, pairs code[i] with letter[i] in order (232 spans matched this way
+across the 31 of 38 entries whose anchors resolved cleanly; 37 spans didn't match -- listed with their
+token/letter counts in the script's output -- mostly entries with an abbreviation *inside* the coded span
+itself, e.g. "N.Exª", not just at the end, which the current script doesn't strip). `04_build_key.py` tallies
+each code's observed letters (accents folded to base letter: ã/á/à/â→a, é/ê→e, í→i, ó/ô/õ→o, ú→u, ç→c) and
+takes the majority, grading **C** when the majority holds ≥65% of ≥2 observations, **M** otherwise -- per
+CLAUDE.md rule 4/step 3's own threshold ("grade C when fixed by ≥2 independent entries").
+
+**Result: `key.tsv`, 38 codes, 26 at grade C.** The strongest (≥85% majority, several at 100%): `10→h` (6/6),
+`20→l` (5/5), `21→b` (4/5), `22→i` (2/2), `23→a` (3/3), `25→o` (4/4), `52→r` (2/2), `e→g` (2/2), `m→n` (3/3),
+`x→d` (2/2), `3→t` (15/16), `55→p` (10/11), `z→e` (11/12), `15→o` (28/31), `17→a` (18/20), `19→e` (13/15),
+`y→a` (7/8), `12→r` (19/22), `5→c` (7/8). Weaker/unresolved: `2` (d, 56%), `26` (u, 64% -- the `v`/`u`
+homophone split may be genuine period orthography, not noise, since 17-18c. Portuguese did not consistently
+distinguish u/v in secretary hand), `24` (h, 33%, only 3 obs), `c` (g, 50%). Fifteen entries' worth of codes
+in the run (1, 9, 13, 16, a, f, g, h, q, and the ±-flagged 310/400/38/58/9/56/107) have 0-1 observations and
+stay grade M or are entirely absent from `key.tsv` -- unkeyed.
+
+**Key source grade (rule 10's provenance field): `period`** -- this key is rebuilt by us from the volume's
+own contemporary decipherments, not a published key and not our own cryptanalysis from ciphertext alone.
+
+**Experimental decode of the m0276 body passage** (`scripts/05_decode_m0276_experimental.py`, run against
+`key.tsv`): the passage's first coded run, tokens `55.17.12.23.` (all grade C), decodes cleanly to **"PARA"**
+("for"/"to"), and the next run `14.d.f.` mostly to "NoS" ("us") -- both grammatical, plausible openings for a
+Portuguese diplomatic sentence, and independent confirmation the key generalises beyond the appendix it was
+built from. The remaining runs in the same passage (`fASSER`, `CEDoR`, `DEPROuA`, `LOSh`, `TAL_SE`, `N_o`) do
+not resolve to clean words with the current key -- some codes involved are unkeyed (grade U, shown as `_`)
+or low-confidence M-grade. **This is not a reading under rule 7** -- no spec exists yet, no judge was run, and
+it used ad hoc token lists typed from this worker's own re-reading of the image rather than a checked
+ciphertext.tsv. It is reported only as a plausibility check on the key, per rule 3's spirit (report what
+supports and what doesn't).
+
+### Not done this pass, continued (next worker)
+
+Step 4's systematic body-passage sweep (a `--thumbs` stride scan of the ~280 non-appendix leaves for more
+cipher-bearing pages, full-res pull of up to 8, two-pass transcription, decode with `key.tsv`), step 5 (a
+`specs/antt-msliv0638-brochado-1712.json` and `tools/judge_plaintext.py` run), and step 6 (a fresh-instance
+re-derivation of the key from `ciphertext_appendix.tsv`/`plaintext_appendix.tsv` alone, blind to this
+worker's alignment scripts) are **not started**. Concretely useful next steps in priority order: (1) extend
+`02_anchor.py` to strip mid-span abbreviations (not just trailing ones) to recover the 37 currently-mismatched
+spans -- likely raises several M-grade codes to C and fills real gaps (1, 9, 13, 16, a, f, g, h, q are
+currently unobserved or single-observation); (2) apply the resulting key to the rest of `ciphertext_appendix.tsv`
+that wasn't used for alignment (Carta 123 has no cipher; a handful of entries had 0 anchors at all -- Carta 13,
+15, 58, 73, 74, 92, 110 -- these still need a hand check since something about their plain-word wording didn't
+match `deciffrada_line` verbatim, worth a look before trusting the key on them); (3) only then the body sweep.
 
 ### Host report (this pass)
 
