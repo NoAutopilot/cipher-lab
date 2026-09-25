@@ -90,7 +90,7 @@ identified, the catalogue's date and senders corrected. The "first verified N3" 
 Orange 1572 detector candidate also fell (partial decipherment printed 1842). Zero unique solves today; two
 over-claims prevented by the gates before anything left the repository.
 
-## LANE R7 handoff (session_01UpWfpbLwYL1xmDG1vFyi6h), 25 September 2026, kept current (last 20:46 UTC)
+## LANE R7 handoff (session_01UpWfpbLwYL1xmDG1vFyi6h), 25 September 2026, kept current (last 21:11 UTC)
 
 Recovery and deep work, successor to LANE R6; opened 20:00 by parent 7c (now 7d). Brief .claude/briefs/runs/2026-09-25-lane-r7-orchestrator.md;
 worker common 2026-09-25-lane-r7-common.md. Rate allowed at 20:42. 6 workers closed (Sonnet), USD 21.56 read by get_session, ledgered and
@@ -138,7 +138,7 @@ all with subagents or image bisection. Retrospective trigger met (31 rows, USD 1
 
 Opened 19:09 by the owner-account parent: the CX/CX2 gate-passing hand-offs R6 does not hold (R6 keeps Mercy, Salviati,
 Berthier, Costa Cabral, Xiquena; ZX keeps clair349, brochado, barriere). Brief .claude/briefs/runs/2026-09-25-lane-zx2-orchestrator.md.
-Rate allowed at 20:26. Worker usage so far USD 29.96 (8 ledgered).
+Rate allowed at 20:26. Worker usage so far USD 34.06 (9 ledgered).
 
 | target | outcome (25 Sept 2026) | next |
 |---|---|---|
@@ -147,10 +147,11 @@ Rate allowed at 20:26. Worker usage so far USD 29.96 (8 ledgered).
 | destaing-gerard-1779 | open. ZX2-EST: 216 tokens/104 distinct; three marbois codes: target 22 vs control mean 18.17 [13,24], inside the band (control-backed: not those codebooks). Siblings 0 (Clements 403; Doniol IV fetch 500 once). 2 crib positions. Spec, judge fr18. | Clements copy (ZX2-ASK); Doniol IV crib text retry |
 | la-garde-1577 | open. ZX2-LAG: 7 of 13 harvest candidates, 0 same-system; pooled stays 239 signs. Flag: WVO 6136 (Reinier Cant, Bremen 1576) is an unregistered multi-page numeral cipher. | none in WVO: ZX2-LAG2 found 11 La Garde letters, 1 with cipher (the target); pool exhausted at 239 signs |
 | clair1161-avis-flandre-1688 | open. ZX2-GAL part 1: canvases 216-342 and 0-127 swept, no cipher leaf; with Y7's 128-216 the whole volume is read except a few reset canvases. | ASKS 54 stands (BnF to locate), appended by ZX2-ASK |
-| clairambault296-paget-1713 | open. ZX2-GAL: 133 more canvases read (261/316), all print or blank; 55 left at the host budget | ZX2-GAL2 running (the 55, then decode-4450's fr.20506 neighbours) |
+| clairambault296-paget-1713 | open. ZX2-GAL + GAL2: 314/316 canvases read (2 resets inside a print run), all print or blank: the letter is not in the Gallica copy of Clairambault 296 | ASKS 51 (BnF to locate), updated |
+| decode-4450-bnf-fr20506-1525 | open. ZX2-GAL2: the fr.20506 copy continues on ff.137-138 (canvases 277-279) and ends with Ranzo's signature; D2's copy was not truncated | ZX2-4450T transcribing ff.137-138 and aligning with Bourdeau's fr.2988 witness |
 | tools | ZX2-FR18: tools/data/fr18 (Torcy, Villars, Maintenon, Gazette 1786; 2.36M letters), wired as fr18. Held-out 18th-c. prose false-negative rate fr18 0.183 (N200) vs fr16 0.961 and fr19 0.983: a fr16/fr19 FAIL on 17th-18th-c. French was not a test. destaing and hellen specs set to fr18. | |
 
-Live: ZX2-GAL2 session_01Wd3s3cqE9wUir6MYKfVe5v (box to 21:13).
+Live: ZX2-4450T session_016VVPKMaMbYuNk9rXN6Saqy (box to about 22:12). WVO 6136 (Cant, Bremen 1576) offered to the parent for a scout/check-solved, not routed.
 Copy orders: ZX2-ASK wrote 15 REQUEST.md (BL 6, TNA 8, Clements 1 for destaing) and ASKS rows 56-58, one per archive.
 Not worked (a person or a gated account): ra-karlxi (gated), clair571 (ASKS 49), wellington (library), clairambault1225 (L11),
 decode-2754 (none cheap), birago (Bourdeau's glyph-level negative with controls; sibling keys fr.3315 already tried), hellen
