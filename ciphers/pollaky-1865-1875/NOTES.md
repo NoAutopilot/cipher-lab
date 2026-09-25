@@ -1,15 +1,40 @@
-# pollaky-1865-1875
+partial
 
-Status: **open**
+blocked (intake-gate sense only, LANE B2 bPOL2, 25 Sept 2026, corrected from `open`) -- under the Pipeline
+intake gate, the standard source for ads 3-4 of this target is the same newspaper issue as
+ciphers/catokwacopa-1875 (The Standard, 8 and 20 May 1875), which has never been independently opened by
+anyone in this repo from the original: the British Newspaper Archive and newspapers.com stay login-gated
+from the cloud (LOCAL-QUEUE.tsv row L13 already queues this for catokwacopa-1875; the same gap applies
+here). The images this target works from (`images/`) come from Schmeh's Cipherbrain post 29, itself
+scans supplied by Tony Gaffney and Nicole Gluecklich, not BNA. Ads 1 (secret script, 1865) and ad 2
+(digit code, 1871) do not depend on the newspaper issue and are open on their own account (no standard
+edition to cite): Cipherbrain post 29 (sources/schmeh/posts/29-pollaky.html, read in full including its
+8-comment thread, 25 Sept 2026) says Bryan Kesselman (Pollaky's biographer) read several hundred
+surviving Pollaky letters and found no cipher key, and that "Pollaky seems to have used several different
+ciphers, but none of the ciphertexts seems to be long enough to decipher it" -- Schmeh/Kesselman's
+characterisation, not a search this worker ran. The post's comment thread carries one claimed reading
+(comment #3, Hassan Boyouk, 18 March 2022, ad 2 only, an unsourced "solution" paragraph) that Klaus
+Schmeh himself disputed in the next comment ("You think that the content of this ad is identical with
+the one that was published in the clear a few weeks later? Why do you think that this is the case?")
+and that no later comment or published source confirms -- not treated as a solve. Bourdeau's
+cyphersolver (github.com/dbourdeau/cyphersolver, shallow clone, grepped for `pollaky` and `catokwacopa`,
+deleted after, 25 Sept 2026) has no pollaky-named target; its separate `catokwacopa/` directory documents
+the ads-3-4 cipher with community readings (Bosbach, Estes, Ernst, Krajčovič, 2018-2026) still
+incomplete on several lines -- see ciphers/catokwacopa-1875/NOTES.md (status `partial`) for the full
+account; not a full solve anywhere. Aymeloglu's unsolved-ciphers (shallow clone, grepped for the same two
+terms, deleted after, 25 Sept 2026) has no pollaky or catokwacopa hit. This is an intake-gate correction
+plus a check-solved pass, not new research: line-1 stays `partial` (ads 3-4 track catokwacopa-1875's own
+partial state; ads 1-2 remain genuinely open with no key found).
+
+# pollaky-1865-1875
 
 Ignatius Pollaky cryptograms: four encrypted classified ads by the Victorian private detective, dated
 1865-05-16, 1871-02-20, 1875-05-08 and 1875-05-20. Schmeh, Cipherbrain post 29 (sources/schmeh/posts/29-pollaky.html),
-scans supplied by Tony Gaffney and Nicole Gluecklich. check-solved has not been run on this target
-(it entered the board via the breadth lane, spec-first, per CLAUDE.md 3a); say so explicitly rather
-than implying a check-solved verdict. The spec (specs/pollaky-1865-1875.json) records Schmeh's own
-account that Bryan Kesselman (Pollaky's biographer) read several hundred surviving Pollaky letters and
-found no cipher key, and that "Pollaky seems to have used several different ciphers, but none of the
-ciphertexts seems to be long enough to decipher it" -- that is Schmeh/Kesselman's characterisation, not
+scans supplied by Tony Gaffney and Nicole Gluecklich. check-solved (this worker's minimal pass, above) found
+no key or full solve anywhere for any of the four ads; the spec (specs/pollaky-1865-1875.json) records
+Schmeh's own account that Bryan Kesselman (Pollaky's biographer) read several hundred surviving Pollaky
+letters and found no cipher key, and that "Pollaky seems to have used several different ciphers, but none of
+the ciphertexts seems to be long enough to decipher it" -- that is Schmeh/Kesselman's characterisation, not
 a search this worker ran.
 
 ## This pass (25 Sept 2026, worker bPOL, LANE B2 breadth, cheap test 1 of specs/pollaky-1865-1875.json)
