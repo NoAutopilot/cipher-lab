@@ -174,6 +174,11 @@ def judge(spec, text):
         ini = "".join(w[0] for w in re.findall(r"[A-Za-z]+", text)).upper()
         rec("initials", re.search(j["initials_regex"], ini) is not None, {"got": ini, "regex": j["initials_regex"]})
     corpora = j.get("corpora") or LANG_CORPORA.get(j.get("language", ""), None)
+    if j.get("language") and not corpora:  # an unwired code used to skip the language check silently (B2, 25 Sept 2026)
+        rec("language", False, {"error": f"language code {j['language']!r} has no corpus in LANG_CORPORA; wire it or use 'corpora'"})
+    if not corpora and not any(k in j for k in ("cribs", "cribs_at", "initials_regex")):
+        # fail closed: a block with only length/line checks PASSed letter salad on mccormick-1999 (LANE B2 bMCC2, 25 Sept 2026)
+        rec("content", False, {"error": "no language, corpora, cribs, cribs_at or initials_regex in the judge block: a length-only gate is not a judge"})
     if corpora:
         model = NgramModel([read_corpus(p) for p in corpora])
         N = max(len(letters), 20)
@@ -203,7 +208,7 @@ def selftest():
     r3 = judge(spec, good.replace("Street", "Road"))
     assert not r3["pass"] and r3["checks"]["cribs"]["missing"] == ["STREET"], r3
     r4 = judge({"judge": {"line_letters": [5, 4]}}, "hello\nwo ld\n")
-    assert r4["pass"], r4
+    assert r4["checks"]["lines"]["pass"] and not r4["pass"], r4  # form ok, but a lines-only block fails closed (content)
     r5 = judge({"judge": {"line_letters": [5, 4]}}, "hello\nworld\n")
     assert not r5["pass"], r5
     r6 = judge({"judge": {"initials_regex": "^[MW]LIAOI$"}}, "my love is always only Irene")

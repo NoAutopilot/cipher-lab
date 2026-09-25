@@ -126,7 +126,10 @@
  "judge": {
   "letters_min": 700,
   "letters_max": 800,
-  "control_samples": 200
+  "control_samples": 200,
+  "language": "en",
+  "min_word_cover": 0.6,
+  "note": "language and min_word_cover added 25 Sept 2026 by LANE B2: the block written by bSPEC had neither, so the judge checked length only and PASSed bMCC2's letter-salad decodes"
  },
  "value": "medium: a famous, extensively studied FBI-failed target (CRRU's ~99% success rate makes this a genuine outlier), but the mixed alphanumeric/punctuation structure means a standard classical-cipher judge is only weakly applicable; any reading here needs a bespoke tokenizer, not a straight letters-only fold",
  "model": "Sonnet",
