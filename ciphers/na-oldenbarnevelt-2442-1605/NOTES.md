@@ -430,3 +430,202 @@ copy it into `transcription/passC_fresh.tsv` first), check the "gr8"=que hypothe
 do the same fresh-crop treatment for B and C1.*
 
 Do not classify novelty (rule 10); nothing here is a finished reading and no claim of first/unread is made.
+
+## 7. VX-RD04B, 25 Sept 2026: blocks B/C1/C2 reconciled, sixth-symbol check, two leads checked (negative), whole-letter reading
+
+Successor to VX-RD04 (section 6). Read images directly at native resolution (`python3 -m pip install pillow`
+was needed -- not present in this container -- then custom crops via `PIL.Image.crop`; no `tools/iiif_lines.py`,
+since these are `service.archief.nl` full-page JPEGs already on disk, not a Gallica IIIF manifest). Status
+stays **open**.
+
+**1. Reconciliation.** `transcription/reconcile_dict.py --blocks B` and `--blocks C1` (the existing
+dictionary-informed sequence-aligner) gave the mechanical base for those two blocks
+(`/tmp/recB.tsv`, `/tmp/recC1.tsv`, not committed -- regenerate with the same command); block C2 was built
+from `transcription/passC_fresh.tsv` (the most complete single pass, already segmented against the image with
+its plain-word lead-in). All three, plus the existing block A, are now one `ciphertext.tsv` (block, line,
+token_index, raw_token, confidence; 269 tokens total: A 68, B 86, C1 53, C2 62). This session then read the
+actual leaves directly (`images/002_...jpg` for block B/folio 55, `images/006_...jpg` for blocks C1+C2/folio
+56, both fully legible at 1.5-3x digital zoom with no further cropping tool needed) and corrected specific
+disputed tokens against the image, recorded as new rows in `overrides.tsv` (VX-RD04B rows): block B tokens
+6/23/24/45/56/70/71/78/80/81 upgraded to grade S with image-confirmed real-word decodes (`deseo`, `enuio`,
+`porque`, `duque`, `desgusto`, `decirle`, `nada`, `ciencia`, `pudieramos`, `conforme`); block C2 tokens
+31/35/48 corrected `gr8`->`q28` (see sixth-symbol/gr8 finding below); block A tokens 48 and 55 downgraded/
+annotated after the two leads check (below). This is real-image reconciliation for the disputed clusters this
+job had time to reach, not a full glyph-by-glyph pass on every remaining low-confidence token in B/C1/C2 --
+many still stand at the mechanical reconciler's default grade (high/medium confidence -> S, low -> I), which
+inherits the same flaw VX-RD04 already caught and partly fixed for block A (grade should follow whether the
+*decode* is a real word, not the transcriber's confidence in the *glyph*) but was not re-swept for B/C1/C2
+this job -- flagged for a successor, not fixed here (time).
+
+Per-block resolved share (S+M share of tokens, the transcription brief's 60% gate) after this pass: A 78%
+(53/68), B 51% (44/86), C1 43% (23/53), C2 92% (57/62). **B and C1 do not clear the 60% gate**; C2 does, on
+the strength of passC_fresh's already-high per-token confidence plus this session's `gr8`->`q28` correction.
+Reported as a gate result, not silently passed over (rule 3's spirit): B and C1 need another image pass on
+their remaining low-confidence tokens before their share of the reading is trustworthy, and the grade counts
+below should be read with that caveat -- C1 in particular (43%) is the weakest block in this reading.
+
+**2. The sixth cipher value.** Every occurrence of a non-key digit (outside 2/3/4/7/8) was pulled from
+`ciphertext.tsv` and checked in context, not just the one token (`85p8`) the brief named:
+
+Digit **5** (13 occurrences: `A7 85p8`, `A57 d8'25,`, `B9 425a`, `B14 358`, `B17 g5`, `C1 19 25.`,
+`C1 27 425a`, `C1 33 25a`, `C1 42 d888975`, `C1 46 425a`, `C2 14 m8d375`, `C2 16 675g98`, `C2 56 675gr8n7.`)
+splits cleanly into two groups by context:
+- **A literal-numeral group** (5 of 13): `425a`/`425a`/`425a` (three, in two different blocks, always the
+  same exact form, always with the same superscript ordinal flourish visible in the image -- see
+  `blockA_full.jpg`, `blockB_lines1-4.jpg`, `blockC1_full.jpg`), `25.`, `25a`, and `d8'25,` (an apostrophe
+  before the digits and a comma after, exactly the shape of a date abbreviation "de'l 25,"), plus `358`
+  (a bare three-digit run both passA and passB transcribed identically, with no surrounding cipher-word
+  shape at all). These carry punctuation or an ordinal marker no cipher word in this hand ever has, and read
+  most plausibly as **literal Arabic numerals -- folio, paragraph or date references -- sitting unenciphered
+  inside the cipher passages**, not cipher text. This explains why 5 never fits the vowel key at these
+  positions: it isn't meant to.
+- **An unresolved group** (`85p8`, `g5`, `d888975`, `m8d375`, `675g98`, `675gr8n7.`) where the 5 (and, in the
+  last three, a 6 and/or 9 as well) sits inside what otherwise looks like a normal enciphered word -- no
+  punctuation, no ordinal marker, letters mixed in on both sides. `85p8` (block A, token 7) was checked
+  directly against the image this session (`tok_85p8.jpg`, native res + 3x zoom): the middle character is a
+  small hooked glyph, clearly distinct from both the figure-eight loops this hand uses for digit 8 and the
+  tall looped ascender it uses for letter s elsewhere on the same page (e.g. the double-s in `cossas` two
+  lines below) -- so this is a **genuinely transcribed digit 5**, not a glyph-confusion artifact, and it does
+  not decode under the five-vowel key. This group is left unresolved: either a genuine sixth cipher value
+  (a consonant or a null) or a transcription problem in a harder cluster, not distinguished here.
+
+Digit **6** (11 occurrences: `A6 m236v8nqs`, `A31 st6l7`, `B27 m236v8n4s`, `C1 4 l8688424`, `C1 23 63dn,`,
+`C2 11 46r4n`, `C2 16 675g98`, `C2 32 64n`, `C2 38 64l7`, `C2 40 62v8n4`, `C2 56 675gr8n7.`) shows **no**
+literal-numeral pattern at all -- every occurrence sits inside a letter-shaped token with no punctuation or
+ordinal marker, and it recurs almost twice as often as digit 5's unresolved group across all four blocks.
+This is weaker but real structural evidence that **6, not 5, is the more likely candidate for a genuine sixth
+cipher value** still to be solved -- worth a successor's attention ahead of digit 5's remaining unresolved
+group. Not solved here (would need either a crib in one of these specific tokens or a frequency/positional
+argument across all 11, neither attempted this job).
+
+**3. Two leads checked against the image (both negative).** VX-RD04's fresh-instance subagent flagged two
+speculative readings without image access; this session cropped both at native resolution and 3-4x digital
+zoom and checked them directly.
+- Token 48, block A, `g23c4` proposed as **"Guisa"** (el duque de Guisa): the third letter
+  (`tok_guisa4.jpg`) is a small, clearly rounded `c`, visibly different from the tall looped `s` this same
+  hand uses elsewhere on the same page (e.g. the double-s in `cossas`, two lines above this token). **Not
+  supported by the glyph.** The token reads `g23c4` as already transcribed, decoding to `guica`, not a real
+  word; downgraded from the mechanical high-confidence default (which had wrongly graded it S on glyph
+  confidence alone, the same flaw already caught for tokens 32/64 in section 5) to I.
+- Token 55, block A, `8l4y` proposed as **"la Aya"** (The Hague): the glyphs (`tok_elay2.jpg`) read `8l4y`
+  (e-l-a-y) exactly as already transcribed, not the `l44y4`/`l4h4y4` shape "la Haya" would need. **Not
+  supported by the glyph.** Left unresolved (I), as before.
+
+Both negatives are evidence-based, not assumed; overrides.tsv rows 48 and 55 (block A) record the checks.
+
+**4. Whole-letter decode and judge.** `python3 scripts/apply_key.py digit_key.json ciphertext.tsv --overrides
+overrides.tsv --out reading.txt --tokens reading_tokens.tsv --meta reading_meta.txt` (no `--block` filter now
+decodes all four blocks as one reading). Grade counts (269 tokens): **S=170, M=7, I=92** (H=0, C=0 -- still a
+cryptanalytic result, rule 4). Per block: A 47S/6M/15I (68), B 44S/0M/42I (86), C1 23S/0M/30I (53),
+C2 56S/1M/5I (62) -- B and C1's I-share reflects the reconciliation gate they didn't clear (above).
+
+```
+python3 tools/judge_plaintext.py specs/na-oldenbarnevelt-2442-1605.json --file ciphers/na-oldenbarnevelt-2442-1605/reading.txt
+FAIL language: score=-1.32, null_p99=-2.004, real_p05=-0.828, real_median=-0.78, mode=both, N=1217
+ok   words: cover=0.744, min=0.5, real_text_median_cover=0.906
+FAIL - na-oldenbarnevelt-2442-1605 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+Word-cover still passes comfortably; language still fails, clearing the gibberish/null bound (-2.004) but
+short of real-text's 5th percentile (-0.828) -- consistent with block A's own standalone FAIL (section 5) and
+attributable to the same cause: 92 of 269 tokens (34%) are still unread, concentrated in the two blocks (B,
+C1) that didn't clear the reconciliation gate. This is a **candidate that failed the language check, not a
+finished reading** (rule 7) -- reported as a FAIL.
+
+**Fresh-instance re-derivation.** A subagent was given only `ciphertext.tsv` (not `digit_key.json`,
+`overrides.tsv`, `reading.txt`, or this file) and asked to derive the digit->vowel key from all four blocks
+independently and flag unresolved tokens and non-vowel digits. It landed on the **identical key**
+(a=4, e=8, i=3, o=7, u=2, by digit frequency 8:176 7:123 4:111 3:87 2:65 and the same anchor words this and
+prior sessions used: `q28`=que, `p4r4`=para, `n4d4`=nada, `m3sm7s`=mismos) and, working independently, also
+flagged the letter-confusion pattern this session found piecemeal by eye (v for r, g for q, n for u, c for t)
+as a named, general pattern rather than one-off fixes -- real corroboration of the same underlying glyph
+confusions from a source with no image access. It reports substantially higher resolution than this session's
+mechanical grades because it allowed those letter-repair rules; its own counts (R=clean, R~=clean only with a
+named repair, U=unresolved): B 64+11=75/86 (87%), C1 27+14=41/53 (77%), C2 31+17=48/62 (77%) -- higher than
+this session's grade-count table above because grade S here required an image-confirmed or repair-free
+decode, not any plausible repaired one; the two are not directly comparable, and a successor reconciling them
+should prefer the subagent's repair list as candidate overrides to check against the image, not adopt them
+unchecked.
+
+Its most useful new finding, beyond what this session had: **digit 6 behaves like a consonant, most often b
+or v, inside otherwise-ordinary words** (`64n`="van", `62v8n4`~"buena", `m236v8n4s`="muy buenas", `46r4n`
+="abran") -- sharper than this session's "6 is probably real, unsolved" (point 2 above), though not fully
+consistent (it also floats reading `675gr8n7`="gobierno" via 6=g/5=b in that one token, which conflicts with
+6=b elsewhere -- so not a single settled value yet, but a real, checkable lead for a successor, stronger than
+anything found for digit 5). It also independently supports this session's "literal code-number" reading of
+much of the digit-5/9 evidence: 5 and 9 "turn up almost only inside runs of three or more digits" (425 x3,
+675 x2, 375, 358, 279, 742, 975/88975, 688424) "with plain grammatical endings added, not vowels" -- the same
+conclusion this session reached from the punctuation/ordinal-marker pattern, reached independently from
+digit-run structure instead. Two of its corrections improve the gloss below: block C1's `grant7s` (this
+session's draft gloss below guessed "grandes") is better read **"quantos"** (cuantos, how many/all the), and
+block B's `hb7 ... m236v8n4s 8sp8v4nc4s` reads as one clause, **"hubo de(l) muy buenas esperanças"** (there
+were very good hopes), not this session's weaker guess of a name-fragment near "vanegas".
+
+**Reading, with English gloss** (fragments; `[?]` marks unread stretches; period-spelling real words given in
+modern form in brackets on first use per block):
+
+> **Block A** (unchanged from section 5): secretario[secretary] `[Fran]cisco` gon calez[Gonçález]
+> hadado[ha dado?, has given] `[?]` `[?]` `[?]` desto.[of this] despues[después, afterward] que salio[that
+> (something) went out/turned out] de siguenca[of/from Sigüença] i[y, and] no he podido allar[I have not been
+> able to find] para enuiar[to send] mismas palabras[the same words] que son particulares[that are specific]
+> imas[y mas, and more] para su condicion[for its condition] que por `[?]` `[?]` `[?]` de `[?]`, de donde[from
+> where] he colegido[I have gathered/inferred] que cuando se `[?]` el de siguenca[the (bishop/matter) of
+> Sigüença] el duque `[?]` `[?]` ria `[?]` algo en orden a `[?]` halando[finding] de '25,[of the 25th (a date
+> or folio reference, not cipher -- see the sixth-symbol finding above),] ilas `[?]`, dios.[Dios, God]
+> gguie[guíe, may [He] guide] como sea[however it may be] `[?]` `[?]` i[y, and] nos conuince[nos convence/
+> conviene, it convinces/suits us]
+>
+> **Block B** (new this job): `[?]` he dicho[I have said/told] que su deseo[her/his wish] `[?]` uer[ver, to
+> see] `[?]` a[h]ora[now]; `[?]` ella desea[she wants] arto[harto, greatly]; `[?]` lamenta[laments] deuer[to
+> have to] `[?]` `[?]` tiempos que corren[the times that run/current times] i[y] me enuio[I send myself/write]
+> porque hubo de[l][there were] muy buenas[very good] esperancas[esperanzas, hopes -- this whole clause
+> corrected by the independent fresh-instance re-derivation below, replacing a weaker draft guess] `[?]` veces no pueden[at times they cannot] i otras
+> veces `[?]` `[?]` veces `[?]` atreven[dare] a `[?]`ablar[hablar, to speak] al duque con veras,[to the duke
+> truly/frankly,] porque todos tienen[because everyone has] sis[sus, their] pretensiones[claims/aspirations] i
+> andan `[?]` desgusto[displeasure] i sus mismos hisos[hijos?, (their) own children (uncertain, see grade M)]
+> muchas veces no `[?]` atreven[dare] sus `[?]` a decirle nada,[to tell him/her nothing,] i assi no ai sino[y
+> así no hay sino, and so there is nothing for it but] `[?]` ciencia[knowledge/prudence] que pudieramos[we
+> could] conforme[in accordance] `[?]` `[?]` conforme[in accordance] a `[?]` tiempos[times]
+>
+> **Block C1** (new this job, weakest reconciliation, 43% gate not cleared -- read with more caution than A/B/
+> C2): decido[I decide] dello[della/dello, of it] que `[?]` las manos,[the hands,] esta[s]dos[this/these
+> two(?)] cosas he hecho[(these) things I have done] por ser tan `[?]`convenientes[fitting] en `[?]`ista[en
+> vista, in view (of)] `[?]`ocassion[occasion/opportunity] i `[?]`perderme(?)[to lose myself (uncertain)] que
+> `[?]`. `[?]` tendria por `[?]`, sino no `[?]` a[h]ora `[?]` `[?]`endo `[?]`ando callar[to stay silent] `[?]`
+> `[?]`a `[?]`ma verdad[truth] que procedo[I proceed] `[?]` i con quantos[cuantos, as many/all the -- corrected
+> from a weaker "grandes" guess by the independent fresh-instance re-derivation below] deseos[wishes] de
+> acertar[to get it right] que a[h]ora i con g[u]sty[gusto, pleasure] `[?]`todo-[everything-] `[?]`darle
+> `[?]`elo `[?]`todr[entender?, to understand (uncertain)]
+>
+> **Block C2** (plain lead-in already established, section 6: "el s[eñ]or obispo de Sigüença... assi verdad
+> que pidio a fr[ay] Mattheo de Burgos y el de Pamplona que el tenia a don Ant[oni]o Vanegas del
+> Con[s]e[j]o Supremo de Aragon"). Cipher continuation, new this job: `[?]` io[yo, I] no creo[I don't believe]
+> `[?]` `[?]`decer[?] como u[ste]d[es] `[?]`dice `[?]` a[n/g]ran[great] `[?]`ussado[usado?, used] de `[?]`
+> medios[means] como `[?]` se dicen,[are said,] pero mucho temo[but I fear greatly] que se de[dé, (something)
+> be given] alguna occassion[some occasion] `[?]` leuantada,[levantada, raised,] i,[and,] algunos creo[some, I
+> believe] que `[?]`an con dictamen[are of the opinion] que por esta `[?]` i buena diligencia[good diligence]
+> del ministro[of the minister] se le puede dar lo que pareciere[he can be given what seems (fit)] Jush[?],
+> i este camino[and this path] `[?]` tamano[tamaño, size (uncertain)] `[STRUCK, letters not recovered]`
+> `[?]`greno[?]. no `[?]`en mucho que se despenan[?, unclear -- despeñan? "throw themselves off a cliff",
+> figuratively "ruin themselves"; not confirmed]
+>
+> A coherent thread runs through all four blocks now, not just block A: the secretary Francisco Gonçález; the
+> matter/bishopric of Sigüença (also confirmed in plain text at the start of block C2: "el obispo de
+> Sigüença... don Antonio Vanegas del Consejo Supremo de Aragón"); a correspondent who has done what she could
+> given "the times that run" and people's own interests and reluctance to speak frankly, even to a duke;
+> hope/fear language about some matter being "raised" (levantada) and needing "good diligence" from "the
+> minister"; and a closing wish for God's guidance. This still reads as patronage/intelligence business about
+> ecclesiastical appointments (a bishopric, a canonry) filtered through intermediaries reluctant to speak
+> plainly -- consistent with VX-SCEU's original characterisation of the letter's register -- but roughly a
+> third of the tokens (92/269) remain unread, so this is a **substantially fuller but still partial reading**,
+> not a finished one. **Do not repeat "Sigüença" as a novel finding outside this repository without checking
+> whether the correspondence already names the appointment in question** (out of this job's scope; a print
+> check on "Vanegas", "Sigüença" and "Pamplona" together, 1605-1606, would be a cheap next step for whoever
+> takes this to a verifier).
+
+Do not classify novelty (rule 10); nothing here is a finished reading and no claim of first/unread/never
+printed is made. Successor tasks, one line each: (a) clear B and C1's 60% reconciliation gate with a further
+image pass on their remaining low-confidence tokens (B: 42 unresolved of 86; C1: 30 of 53, the weakest block);
+(b) settle the digit-6 sixth-symbol question (11 occurrences, no literal-numeral pattern, more promising than
+digit 5's remaining unresolved group) with a frequency/positional argument or a crib; (c) a print check
+(`phrases.txt`/`tools/print_check.py`) on "Vanegas", "Sigüença", "Pamplona", "Mattheo de Burgos" together for
+1605-1606 before any claim about this reading leaves the repository.
