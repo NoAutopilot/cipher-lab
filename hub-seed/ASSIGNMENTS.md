@@ -532,3 +532,6 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T19:47Z	session_017uGMqgaktV8afo1JzPwbES	bYOG (Sonnet, cap 3)	yogtze-1984 test 1	LANE B3 brief
 2026-09-25T19:47Z	session_01XugcbXJVN6dPVdEWXKw59S	bUNT (Sonnet, cap 3)	untersberg-code test 1	LANE B3 brief
 2026-09-25T19:47Z	session_01FErd6DB5jVrf9YhYN1u9Sk	bFAI (Sonnet, cap 3)	fair-game-2010 test 1 (imdb)	LANE B3 brief
+2026-09-25T19:58Z	session_01NS12APP1R55K6TGZrBbP97	LANE B2 orchestrator done $14.08 D, archived	handoff STATUS.md LANE B2 handoff; 19 workers $49.1	
+2026-09-25T19:58Z	session_018MWpKL71WnBxA8k4ejVkBS	LANE R6 orchestrator done $12.93 D, archived	handoff STATUS.md LANE R6 handoff; 31 workers; Mercy N3 key ours	
+2026-09-25T19:58Z	session_01Jr6BjYfemXf9Xejm1LuPkD	retrospective k done $2.18 D, archived	RETRO-2026-09-25k.md	

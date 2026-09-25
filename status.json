@@ -1,5 +1,5 @@
 {
- "updated": "25 Sept 2026, 19:20 UTC",
+ "updated": "25 Sep 2026, 19:58 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -2150,17 +2150,17 @@
  "near": [
   {
    "target": "espagnol142-mercy-1648",
-   "title": "Mercy, Brussels 1648: anneal beats its control by 167-181 points; reading exists (S 494, M 27) but fails the judge",
-   "next": "sibling letters in Espagnol 142 under the same code (pool), DECODE Brussels key series, second copy in print or Simancas",
-   "lane": "R6",
-   "touched": "25 Sept 2026 18:30"
+   "title": "Mercy 1648: N3 after one audit, key ours (S 494, M 27); sibling sweep found no second cipher in the volume; judge cannot decide",
+   "next": "second adversarial audit (V6); Lonchay's 15 Apr 1648 sibling in Brussels SEE t.LXIV f.16 as a crib (R7); Cuvelier-Lefevre VI p.647 owner read (ASKS); SO-MERCY-1648 after the second audit",
+   "lane": "R7 + V6",
+   "touched": "25 Sept 2026 19:58"
   },
   {
    "target": "fr2933-salviati-1525",
-   "title": "Salviati 1525: code+mark run sits between the 10% and 20% transcription-noise controls, not a negative",
-   "next": "error-tolerant code+mark model proven on the noise controls first; atlas re-pass on f.55v and f.57v",
-   "lane": "R6",
-   "touched": "25 Sept 2026 18:30"
+   "title": "Salviati 1525: error-tolerant code+mark solver reads its own 10%-noise control at 58% (gate 60) and 20%-noise at 40%; target not run; the lever is transcription error",
+   "next": "glyph-atlas re-pass on f.55v and f.57v to merge near-duplicate types, then the control ladder again only if the pooled type count drops by a fifth (R7)",
+   "lane": "R7",
+   "touched": "25 Sept 2026 19:58"
   },
   {
    "target": "koehler-1944",

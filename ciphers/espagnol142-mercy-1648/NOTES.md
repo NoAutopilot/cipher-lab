@@ -1,4 +1,4 @@
-open
+partial
 Jean Le Clerc, *Négociations secrètes touchant la paix de Munster et d'Osnabrug* (1725, tomes III-IV,
 archive.org negociationssecr03lecl/04lecl, both read in full via djvu text and grepped by this worker; the
 job brief's own named edition family for this target), control "Servien" 175 hits in tome IV confirming
