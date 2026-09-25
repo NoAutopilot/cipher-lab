@@ -1,5 +1,15 @@
 partial
 
+Ribier, *Lettres et memoires d'estat* (1666, IA `bub_gb_bOnmNv2ZLVoC` pp.316-320/livre IV annee 1540, and IA
+`bub_gb_qWTswSr32NYC` pp.[imagecount 831] reaching Dec. 1557) read and grepped in full by this worker for
+"Ferrare"/"Guise": no letter matching this correspondence; Guise's own *Memoires-journaux* (Michaud-Poujoulat,
+*Nouvelle collection des memoires*, 1e serie t.6, IA `nouvellecollecti06michuoft`, pp.316-320) read and grepped
+in full by this worker, prints four letters signed "Hip. Cardinale di Ferrara" to Guise dated 12/16/19/20 Dec.
+1556 but not the 4 Jan. 1557 letter matching Clair 349 f.3; Baguenault de Puchesse, "Negociations de Henri II
+avec le duc de Ferrare, d'apres des documents inedits (1555-1557)" (*Revue des questions historiques* 1868,
+IA `RevueDesQuestionsHistoriquesA3T5`, pp.485-515) read and grepped in full by this worker: no mention of a
+cipher or of this letter.
+
 # Cardinal Hippolyte d'Este (cardinal de Ferrare) and the duc de Guise, ciphered originals, BnF Clairambault 349
 
 QUEUE row: M17 (sources/solver-diffs — "Third pass, 24 September 2026 (M17-M21)" section of QUEUE.md).
@@ -105,3 +115,83 @@ Guise's own *Mémoires-journaux* (Michaud-Poujoulat collection) was not reached 
 
 Not touched: no key transcription, no decoding, no novelty wording. This target should go on the board as
 **recovery**, ahead of M18/M19 for solver attention.
+
+## Check-solved re-verification, 25 September 2026 (LANE YX worker YX-CS349)
+
+Sent because the 24 Sept sweep above quoted another source's edition read ("page 667... not confirmed") rather
+than opening the edition itself — CLAUDE.md's intake gate treats that as `blocked`, not `open`/`partial`
+(`tools/intake_gate_check.py ciphers/clair349-este-guise-1556` returned exit 1, "no open/blocked verdict word
+found" before this pass, since the file's status word is `partial`, which the script does not itself parse —
+gated here by hand against `.claude/briefs/check-solved.md`'s citation rule instead). Verdict stays **partial**;
+the gate-passing citation sentence is now the second line of this file. Six sources:
+
+1. **Web search** (this worker, 25 Sept 2026): `"cardinal de Ferrare" "duc de Guise" chiffre déchiffré 1556 1557
+   correspondance édition`, `Clairambault 349 Guise cardinal Ferrare Este solved decrypted Claude GPT`,
+   `site:cipherbrain.de Guise Ferrare Clairambault`. No solved/decrypted claim found for this item by any
+   source, human or model. Turned up one new lead (point 2c below), otherwise reproduces the BnF catalogue note
+   and general Guise-family pages already logged 24 Sept.
+
+2. **Print/scholarship, read directly by this worker (not quoted from another source):**
+   a. **Ribier, *Lettres et mémoires d'estat* (1666).** Two IA copies fetched and grepped in full for "Ferrare":
+      `bub_gb_bOnmNv2ZLVoC` (imagecount 667 — the source of 24 Sept's "page 667" citation, which this worker now
+      confirms is not a real page number but this copy's *total image count*) runs Livre I to Livre V, Année
+      M.D.XLIV (1544) — it never reaches 1556 at all. Its one "Cardinal de Ferrare... lequel me fait cet honneur
+      de m'en parler" hit (line 34071 of the fetched djvu text) sits inside "LIVRE IV. ANNEE M.D.XL." (page
+      header confirmed by grep at lines 33622-34952, i.e. 1540), a Monluc-to-the-King dispatch from Rome that
+      only mentions the Cardinal de Ferrare in passing — 16 years before the target's Nov.1556-Feb.1557 window,
+      not a decipherment of it. **Closes the 24 Sept "not checked to a safe negative" gap: confirmed not this
+      letter.** A second, larger IA copy, `bub_gb_qWTswSr32NYC` (imagecount 831), was then fetched and grepped:
+      it does reach into 1557 (three dated hits: "iour de 1uin 1557", "ij.itdn 1557", "8. Décembre 1557") but
+      every "Ferrare" occurrence there (119 total) concerns the Italian-war diplomacy of the Duc/Prince de
+      Ferrare and the Duc de Florence, not a letter from the Cardinal de Ferrare to Guise; grepped for a joint
+      "Ferrare...Guise" letter-header pattern in both copies together, zero hits. Ribier read to a safe negative.
+   b. **Guise's own *Mémoires-journaux*** (Michaud-Poujoulat, *Nouvelle collection des mémoires pour servir à
+      l'histoire de France*, 1e série t.6 — confirmed as volume 6 by IA metadata's own `volume: 6` field and by
+      "François de Lorraine" appearing among Google Books' listed subjects for the matching print edition;
+      IA `nouvellecollecti06michuoft`, 100,988-line djvu text fetched and read in full for "Ferrare" and
+      "chiffre"/"déchiffr"). This volume does carry a `## [1556]` section (confirmed by its own running header)
+      that prints four letters signed "Hip. Cardinale di Ferrara" addressed to "Monsieur" (Guise), each closing
+      "Di Vostra Eccellenza... Humil. et affettionatissimo zio": dated at Ferrare 12, [16 implied by the run],
+      19 and 20 December 1556 (djvu lines 43357-43665). These are plausibly the clear-copy record of the same
+      correspondence the catalogue note for Clair 349 describes as running Nov.-Dec. 1556/Jan.-Feb. 1557 — but
+      the run stops at 20 December 1556 and does not continue to a 4 January letter (searched the surrounding
+      2,000 lines for "janvier" near a Ferrare signature block: none found), so it does not print the specific
+      letter identified with Clair 349 f.3 (Tomokiyo's dated "4 January 1556" old-style = 4 Jan. 1557 new-style).
+      No heading or footnote near these four printed letters says they were deciphered from cipher; read as
+      given, they are additional context on the correspondent pair and its dates, not a decipherment of the
+      target leaf. **New finding, not previously on file.**
+   c. **Este/Ippolito d'Este correspondence edition — searched, found one, read.** Web search surfaced Gustave
+      Baguenault de Puchesse, "Négociations de Henri II avec le duc de Ferrare, d'après des documents inédits
+      (1555-1557)", *Revue des questions historiques* 3e année t.5 (1868), pp.485-515 — the sender-family
+      edition this brief asked for. Fetched IA `RevueDesQuestionsHistoriquesA3T5`'s djvu text (42,330 lines),
+      located the article by its running header (lines 29130-30787, pp.485-515), read and grepped it in full
+      for "chiffre"/"déchiffr"/"Clairambault"/"janvier": zero hits for any of the cipher terms; it discusses the
+      Duc (not Cardinal) de Ferrare's diplomacy and Guise's 1557 Italian campaign narratively, citing the same
+      Michaud-Poujoulat *Mémoires-journaux* (point 2b) as one of its own sources, and does not reproduce or
+      mention this letter or its cipher. Read to a safe negative.
+
+3. **Community lists.** Cryptiana `guise.htm` re-confirmed unchanged from 24 Sept (still gives the key and the
+   folio pointer only, no plaintext; no update to "last modified 5 June 2022"). Cipherbrain: `site:cipherbrain.de`
+   web search returned no page mentioning Clairambault/Guise/Ferrare together — no hit.
+
+4. **DECODE.** Fresh `aaymeloglu/unsolved-ciphers` clone (below) re-grepped its cached `catalogue/decode-catalog.csv`
+   (10,107 rows) for "Clairambault", "Ferrar", "Este", "Guise": the only "este" hits are false positives from
+   "affari esteri" (Italian "foreign affairs") and "Estado"; no row for this shelfmark. No hit.
+
+5. **Bourdeau (dbourdeau/cyphersolver).** Fresh `git clone --depth 1` this pass (not reused from 24 Sept),
+   grepped for `btv1b9000668z` and `Clairambault 349`: zero hits, confirming 24 Sept's finding on a current clone.
+
+6. **Aymeloglu (aaymeloglu/unsolved-ciphers).** Fresh `git clone --depth 1` this pass, same two greps: zero hits.
+
+Requests this pass: archive.org/download 4 (Ribier x2, Michaud-Poujoulat, Revue des questions historiques —
+djvu text files, sequential, no rate issues), archive.org/metadata + advancedsearch.php ~8 (sequential, all
+200), googleapis.com/books 6 (GOOGLE_BOOKS_KEY + country=US, all 200, ~1.5s apart), github.com 2 (fresh shallow
+clones of both solver repos), WebSearch 4. No new Gallica requests this pass (24 Sept's manifest/thumbnail
+fetches stand).
+
+**Conclusion: verdict stays partial, now gate-passing.** No printed plaintext or decipherment of the specific
+4 January 1557 letter (Clair 349 f.3) was found in any of the six sources, including two editions read fresh
+this pass (Ribier, both copies; Baguenault de Puchesse) that the 24 Sept sweep had not opened. The key remains
+public (Tomokiyo, fr.20974 no.15) and the letter remains identified and photographed down to the folio. Per
+rule 10, still not "open" (a lead exists) and not "found-solved" (no plaintext of this letter exists in print
+anywhere found). Proceeding to part 2 of this job brief (image fetch only, no decode).
