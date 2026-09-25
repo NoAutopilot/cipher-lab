@@ -870,3 +870,160 @@ Requests: resources.huygens.knaw.nl 2 (record page, PDF; >=2s apart), www.dbnl.o
 succeeded (4 failures: two pages each tried twice, `_0051.php` and `_0056.php`, >=2s apart, one retry per the
 good-citizen rule then stopped), WebSearch 2, github.com 2 fresh shallow clones (grep only). No DECODE login
 (listing only). No subagents.
+
+## WVO 5551 reading (25 Sept 2026)
+
+Worker TX-WV5551D (Sonnet, LANE TX, stall alarm $6). Per `.claude/briefs/runs/2026-09-25-lane-tx-wv5551d.md` and
+COMMON. Target: the two cipher lines at the top of `images/05551_p3.jpg`, per TX-WV5551's check-solved verdict
+directly above (status stays **open**; this pass does not reclassify it). **Recovery, not fresh cryptanalysis**:
+applies `../lodewijk-van-nassau-1573-74/key.tsv`, the key that worker's check-solved pass already identified as
+the natural first test from the raw code overlap.
+
+### Step 0: closing the two search gaps TX-WV5551 flagged, before deep work
+
+Per the brief's intake step (both are genuine negatives; neither prints 5551's cipher lines in clear, so this
+does not become found-solved):
+
+- **Groen Supplement items 48 and 53**, unreachable to TX-WV5551 after one retry each, fetched cleanly this
+  pass (`www.dbnl.org/tekst/groe009arch09_01/groe009arch09_01_0051.php` and `_0056.php`, >=2s apart, host
+  reachable this session). **Both are letters from Countess Juliana van Nassau (Jan and Willem's mother), not
+  from Jan**: item 48 is dated Dillenburg, 21 Feb 1574 (congratulations on a naval victory of 29 Jan, "T.IV.324");
+  item 53 is dated Dillenburg, 19 June 1574 (news of Boisot's victory, "T.V.11"). Neither is dated 17 April 1574,
+  neither is from Keulen, neither is from Jan, neither contains any cipher numerals (both are continuous clear
+  German). This matches the low-probability read TX-WV5551 already gave item 48 from its index one-liner
+  ("Comtesse Julienne... Felicitations", a different sender and subject) and extends the same finding to item 53.
+  Gap closed: negative.
+- **Gachard, *Correspondance de Guillaume le Taciturne*, vol. 3** (IA identifier `correspondancede03will`,
+  confirmed via `archive.org/advancedsearch.php` as the 1850 volume covering this date range; this is Willem's
+  own *outgoing* letters, a different edition from Groen's, which prints letters *to* Willem). Full-text searched
+  via `be-api.us.archive.org/fts/v1/search` (the whole-document snippet search noted elsewhere in this repo as
+  giving real snippets but no true page locator): "Mokerheyde"/"Mockerheyde"/"Mokerheide" all zero hits (this
+  edition's index does not use that spelling, or the event is not named there in that form); "14 avril 1574" and
+  "DXLIV" both resolve to a single letter, *Le prince d'Orange au colonel Mondragon*, De Bommel, 23 April 1574 --
+  addressed to a Spanish officer about a military summons, not to Jean de Nassau, and not about the Mookerheide
+  losses; "au comte Jean de Nassau" hits are all footnotes citing earlier 1572 letters (6 Feb, 25 July, 5/11 Aug),
+  not a table-of-contents entry for a reply in this window. **No reply from Willem to Jan of late April 1574
+  quoting Jan's news in clear was found in this volume** -- consistent with, though not proof of, TX-WV5551's own
+  finding that Groen's IV/V index has nothing from Jean to the Prince between CDLXXXIX (13-15 April) and CDXCII.
+  Flagged as a search gap, not a negative: be-api's snippet search can miss OCR'd spelling variants and does not
+  give a real page locator (per this repo's own host-table caveat on that endpoint), so a page-by-page read of
+  Gachard III pp.90-100 is not ruled out as a further step.
+
+### Step 1: transcription, two independent blind passes
+
+`images/05551_p3.jpg` (150dpi) was re-rendered at 300dpi directly from the WVO PDF (`resources.huygens.knaw.nl/
+media/wvo/images/05000-05999/05551.pdf`, one fetch, already on disk from TX-WV5551's pass, re-fetched once this
+pass since the 150dpi copy was judged too small for confident digit-by-digit zoom) via `pymupdf` (installed this
+pass, not previously on disk in this container). Two blind passes on the same crop (the two cipher lines only,
+`images/05551_p3.jpg`'s top ~8% of the page): this worker's own (crops re-verified at 4-8x zoom, digit by digit)
+and one Sonnet subagent that saw only the crop image and nothing else in the repository.
+
+**All 32 numeral codes agree, 32/32, between the two independent passes** (both re-verified at 4-8x zoom on
+request). Four clear (non-cipher) words did not fully agree and are left honestly unresolved or double-flagged:
+L1 pos11 "van" vs subagent's alternative "von" (semantically identical, kept as "van"); L1 pos19 this worker's
+"jhro" vs the subagent's "zu" (genuine disagreement, left as `=?`, unresolved); L2 pos9 (a two-loop cursive glyph
+before code 104) this worker's "vff" vs the subagent's "possibly not a legible word at all, maybe a symbol"
+(kept as "vff" at conf `?`, since a 6x zoom crop shows a continuous flowing loop-into-loop shape with no
+resemblance to any digit 0-9 in this hand -- see `ciphertext_5551.tsv`'s header note); L2 pos16 (before 137)
+this worker's "beren"/"veren" vs the subagent's "Perm" (genuine disagreement, left as `=?`). Both readers agree
+independently that the last word of each line is not merely hard to read but **physically cut off by the leaf's
+own torn, deckled right edge** (visible as a curved paper boundary against the scan's black background in both
+crops) -- there is no full word to recover there, not a legibility failure. None of these four disagreements is a
+cipher code, so none affects the H/C/S/M/I/U grade counts below (clear tokens grade `clear`, not counted).
+Committed: `ciphertext_5551.tsv` (tools/decode_key.py 'tsv' format, `line pos token conf`, clear_prefix `=`,
+same style as this folder's own `ciphertext_5549_ps.tsv`).
+
+### Step 2: key application and coverage
+
+`decode_5551.json` runs one job against `../lodewijk-van-nassau-1573-74/key.tsv`. **This folder's own
+`key_5549.tsv` is not run as a second job**: diffed directly (`diff` on the code/value/grade columns), it is
+byte-for-byte the same 140-row table as the Lodewijk folder's `key.tsv` -- J5S copied it in for the 5549
+postscript decode and only reworded the source/note columns; running it again would reproduce an identical
+reading, not a genuine comparison. `key_1572.tsv` (this folder's other candidate) was not re-tried: its highest
+row is 98, and 5551's own codes already run past that (106, 111, 112, 121, 126, 127, 136, 137, 140, 145, 146),
+the same ruling-out TX-WV5551 and J1 already established for this circle's other 1574-1575 letters.
+
+**Coverage: 26 of 32 cipher-sign tokens keyed (81.25%), 6 unkeyed (18.75%).** `python3 tools/decode_key.py
+ciphers/jan-van-nassau-1572-75 --config ciphers/jan-van-nassau-1572-75/decode_5551.json --check` exits 0.
+**Grades: C 23, I 2, M 1, U 6. No H (the key's own rows carry these grades from its Lodewijk-circle derivation,
+inherited unchanged per this folder's own `decode_5549.json`/J5S precedent for applying this same key to a new
+letter in the circle -- rule 4's "a C-graded key row read on a new letter stays C" when the key file's own
+precedent already does so, which it does here); no S (nothing in this pass is a fresh cryptanalytic call, every
+value comes straight from the key's own row).** The 6 unkeyed codes are exactly the six TX-WV5551 already
+flagged as absent from the table (145, 146, 127, 140, 137, 126) -- confirmed directly against `key.tsv` (no rows
+124-131, 133-135, 137-140, 142-146 exist in the 140-row table at all; not a lookup miss). A second, independent
+fresh-instance re-derivation (a Sonnet subagent given only `ciphertext_5551.tsv` and `../lodewijk-van-nassau-
+1573-74/key.tsv`, nothing else in the repo) reproduced the identical substitution by hand, including flagging
+the same code-136 anomaly below on its own, and the identical 26-keyed/6-unkeyed count -- satisfying rule 7's
+fresh-instance check with 0 diff from the committed reading.
+
+### Step 3: the reading
+
+```
+L1: d e r [NULL] k o n i g  UINGT  van  p o l e n  [145]  will  ?  ?
+L2: o f f e n t l i  vff  i  [146] [127]  e s  [140]  ?  [137] [126]  ?
+```
+
+Reading with gloss, gaps marked, nothing filled from context beyond what the key gives (grade I only where the
+key's own row is already I):
+
+- **L1: "DER [null] KONIG ... VAN POLEN [?] WILL ..."** -- "DER KÖNIG ... VON POLEN ... WILL" = "THE KING ... OF
+  POLAND ... WANTS/WILL...". `77-81-21` = D-E-R, `121` = a key-graded NULL (a filler between words, the same
+  usage the key's own note gives for this exact code: "between words, no plaintext letters"), `106-6-2-101-92` =
+  K-O-N-I-G, all C except 106 (I, "table rule", not directly observed in the key's own source alignment but
+  consistent with it). This is a strong, structural confirmation of the key on a new letter: DER, a null, then
+  KONIG, spelled with no gaps or wrong letters. **`136` = "uingt" (M grade in the key's own file, glossed there
+  from Lodewijk's French correspondence as "vingt", i.e. "twenty") does not fit as a German word in this
+  position** ("der könig zwanzig van polen" is not sense) -- flagged, not resolved, by both this worker and the
+  independent re-derivation subagent, which raised the same point unprompted. Left as the key gives it; a
+  verifier or later pass should not assume it is simply wrong, since the key's own row is already graded M for
+  exactly this kind of uncertainty. `11-7-111-83-4` = P-O-L-E-N, all C, unanimous. `145` is unkeyed. The line
+  ends "WILL" then two words neither reader could complete (one genuinely torn off the page).
+- **L2: "OFFENTLI[?] ... VFF I [?] [?] ES [?] ... [?] [?] ?"** -- "ÖFFENTLICH" (publicly/public) is the
+  legible stem: `8-88-89-84-5-31-112-103` = O-F-F-E-N-T-L-I, all C except `89` (I, "table rule"). The doubled F
+  (codes 88 then 89) sits in the same 5-code letter-block the key's own structure predicts (86-90 = f), which is
+  an independent structural check that the table still holds here, not just a lucky letter match. The word is
+  not completed to "-CH" within this pass's codes (the next codes, 146/127, are unkeyed, so whether "ch" was
+  meant to follow cannot be read from this key). `85-29` = E-S ("es" = "it"). The rest (140, 137, 126 unkeyed;
+  one uncertain clear word between them; the line-ending cutoff) stays open.
+
+**Sense check against the letter's own content** (per WVO's Inhoud, the letter's main business is Jan's report
+of the probable deaths of Lodewijk, Hendrik and Christoph of Wurttemberg at Mookerheide): **neither ciphered
+line's legible content is obviously about that news.** "THE KING ... OF POLAND" and "PUBLICLY" read, at face
+value, like a different topic -- plausibly the contemporary political question of Henri de Valois, Duke of
+Anjou, then reigning as elected King of Poland (crowned Feb 1574), whose position became the subject of urgent
+diplomacy within weeks of this letter once Charles IX of France died (30 May 1574) and Henri needed to leave
+Poland to take the French throne. This is not established here (no further plaintext to confirm it, and this
+worker did not chase that lead beyond noting it) -- flagged for whoever next works this letter or this
+correspondence circle, not claimed as a finding. It is equally possible the cipher covers a sensitive aside
+unconnected to the letter's main clear-text business, which is exactly the kind of content a writer would choose
+to encipher two lines for while leaving the rest (including the Mookerheide report itself) in clear.
+
+### Grade counts and status
+
+**32 cipher-sign tokens: H 0, C 23, S 0, M 1, I 2, U 6** (81.25% keyed). Two clear-word tokens per line are
+genuinely unresolved (disagreement or torn-edge loss), not graded (clear tokens are not part of the H/C/S/M/I/U
+count). This is a real, structurally self-confirming partial reading -- **DER KONIG ... VAN POLEN ... WILL** and
+**OFFENTLI[CH] ... ES** are recognizable German under a key recovered for a different, related letter, which is
+itself evidence the key transfers to this correspondent -- but 6 of 32 codes (18.75%) have no row in the shared
+key at all, and both lines are cut off by paper loss before their sense completes. Calling this **partial**, not
+solved: the item is not fully read, and the anomalous code 136 is flagged, not resolved. Target-level status
+(the top of this file) is out of this worker's file scope and is left as `open` for the orchestrator/lane to
+update alongside the QUEUE.md row.
+
+**Kind: recovery** (key already on file from the sibling folder, aligned from 4613/4615, applied here to a new
+letter -- no fresh cryptanalysis).
+
+Rule 10: not classified here. What was searched and not found is in Step 0 above; the K"onig/Polen and
+"offentlich" phrases were not searched against any print edition this pass (out of scope; a verifier's job).
+
+**Files:** `ciphertext_5551.tsv`, `decode_5551.json`, `reading_5551.txt`, `reading_5551_tokens.tsv` (all
+regenerate via `tools/decode_key.py ciphers/jan-van-nassau-1572-75 --config ciphers/jan-van-nassau-1572-75/
+decode_5551.json --check`, exits 0). No change to `images/05551_p3.jpg` (150dpi original kept; the 300dpi
+re-render used for transcription is scratch, not committed, and is reproducible from the same one PDF fetch URL
+already in this section).
+
+**Requests this pass:** www.dbnl.org 2 (Groen Suppl. items 48, 53; >=2s apart), archive.org (advancedsearch.php)
+1, be-api.us.archive.org (full-text search) 9 (>=1.5s apart), resources.huygens.knaw.nl 1 (05551.pdf re-fetch).
+2 Sonnet subagents (blind transcription pass; fresh-instance re-derivation), within the 2-subagent cap. No
+DECODE login, no WebSearch, no other host.

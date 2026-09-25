@@ -1,0 +1,51 @@
+# WVO 5551 (Jan van Nassau to Willem van Oranje, Keulen, 17 April 1574), p3 top, the two cipher lines only
+# (WVO's own "Twee regels in cijferschrift"; TX-WV5551D, 25 Sept 2026, from images/05551_p3.jpg re-rendered at
+# 300dpi from the WVO PDF, reconciled against a blind Sonnet subagent pass on the same crop). Format: tools/decode_key.py
+# 'tsv' (line pos token conf), clear_prefix '=', same style as ciphertext_5549_ps.tsv in this folder.
+# Reconciliation: all 32 numeral codes agree 32/32 between this worker's own pass and the independent blind
+# subagent pass (both re-verified at 4-8x zoom). The clear (non-cipher) words do not: pos L1-11 "van"/"von"
+# (semantically equivalent, kept as "van"), L1-19 "jhro" vs subagent's "zu" (unresolved, token left "=?"),
+# L2-9 "vff" vs subagent's "possibly not a word at all" (kept as "vff", conf "?"), L2-16 "beren"/"veren" vs
+# subagent's "Perm" (unresolved, token left "=?"). None of these four are cipher codes; none affects the
+# H/C/S/M/I/U grade counts below (clear tokens grade "clear"). Both readers agree the last word of each line
+# is genuinely cut off by the leaf's own torn/deckled right edge, not just hard to read.
+line	pos	token	conf
+L1	1	77
+L1	2	81
+L1	3	21
+L1	4	121
+L1	5	106
+L1	6	6
+L1	7	2
+L1	8	101
+L1	9	92
+L1	10	136
+L1	11	=van
+L1	12	11
+L1	13	7
+L1	14	111
+L1	15	83
+L1	16	4
+L1	17	145
+L1	18	=will
+L1	19	=?	?
+L1	20	=?	?
+L2	1	8
+L2	2	88
+L2	3	89
+L2	4	84
+L2	5	5
+L2	6	31
+L2	7	112
+L2	8	103
+L2	9	=vff	?
+L2	10	104
+L2	11	146
+L2	12	127
+L2	13	85
+L2	14	29
+L2	15	140
+L2	16	=?	?
+L2	17	137
+L2	18	126
+L2	19	=?	?
