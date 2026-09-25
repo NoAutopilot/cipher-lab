@@ -89,5 +89,71 @@ check('whitespace fallback keeps numeral tokens', ws.count('240') == 1 and ws.co
 check('whitespace fallback drops long alphabetic words as clear prose',
       'Monsieur' not in ws and 'Marquis' not in ws)
 
+# ---------------------------------------------------------------- fix A: robust key loading (job 1b)
+# dk.load_key leaves an un-stripped header row as data when the header's first cell isn't literally
+# 'code'/'sign'/'token' (e.g. 'system'), or crashes outright when 'code' is stripped but there is no 'value'
+# column (e.g. 'plaintext' instead) -- both found on disk in this repo. robust_load_key is the fallback.
+import tempfile, os as _os
+
+
+def write_tmp(text):
+    fd, path = tempfile.mkstemp(suffix='.tsv')
+    with _os.fdopen(fd, 'w', encoding='utf-8') as f:
+        f.write(text)
+    return path
+
+
+p = write_tmp("system\tsign\tvalue\tgrade\n74\t0\tg\tC\n74\t1\te\tC\n74\t3\ta\tC\n")
+key, reason = kx.robust_load_key(p)
+check("robust_load_key: picks the named 'sign'/'value' columns, not position 0/1 which would read the "
+      "'system' partition column instead (august-van-saksen-1561-64/key_53.tsv etc.'s real shape)",
+      key is not None and key.get('0', {}).get('value') == 'g' and key.get('1', {}).get('value') == 'e')
+_os.remove(p)
+
+p = write_tmp("code\tplaintext\nb\tA\np\tA\nq-\tC\n")
+key, reason = kx.robust_load_key(p)
+check("robust_load_key: 'code'+'plaintext' header (Brienne's key_brienne_1647/1651.tsv shape) parses",
+      key is not None and key.get('b', {}).get('value') == 'A' and key.get('q-', {}).get('value') == 'C')
+_os.remove(p)
+
+p = write_tmp("item\tglossed_H_columns\tsame_value\tshare\nBLA179\t24\t16\t0.889\n")
+key, reason = kx.robust_load_key(p)
+check('robust_load_key: a table with no value/plaintext/gloss/meaning column is refused, not guessed '
+      '(huntington-blathwayt-madrid-1728/key_items.tsv shape -- a stats table, not a key)',
+      key is None and 'value' in reason)
+_os.remove(p)
+
+check('load_key_meta override: dk.load_key succeeding on a real code/value table is left alone (no override) '
+      'on a key whose real first code happens not to be a header word',
+      kx.KNOWN_HEADER_WORDS.isdisjoint({'psi', 'db', '_0', '8'}))
+
+# ---------------------------------------------------------------- fix A: ciphertext sign column by name
+p = write_tmp("leaf\tline\tpos\ttoken\tconf\tlayer\n"
+              "f1\tR01\t1\ti'ay\tH\tclear\nf1\tR01\t2\t722\tH\tcipher\nf1\tR01\t3\t841\tH\tcipher\n"
+              "f1\tR01\t4\tveu\tH\tclear\nf1\tR01\t5\t963\tH\tcipher\n")
+signs = kx.robust_tsv_signs(Path(p))
+check("robust_tsv_signs: finds the 'token' column by name and skips layer=clear rows (clair1108-duvergier shape)",
+      signs == ['722', '841', '963'])
+_os.remove(p)
+
+p = write_tmp("page\tline\tpos\tsign_desc\n1\t1\t1\tcapital-H\n1\t1\t2\tbackward-C\n1\t1\t3\tsmall-o\n")
+signs = kx.robust_tsv_signs(Path(p))
+check("robust_tsv_signs: falls back to 'sign_desc' for glyph-description keys (willem-van-hessen-1567 shape)",
+      signs == ['capital-H', 'backward-C', 'small-o'])
+_os.remove(p)
+
+check("tokenize_ciphertext's drop_equals_clear strips a bare '=' clear-word marker (jan-van-nassau-1572-75's "
+      "own documented convention, clear_prefix '=') without touching a real sign",
+      kx.drop_equals_clear(['77', '=van', '81', '=?']) == ['77', '81'])
+
+# ---------------------------------------------------------------- fix A: own-text pairing (compute_own_cts)
+digits = kx.DIGIT_RUN_RE.findall('key_1659_f86only.tsv')
+check("DIGIT_RUN_RE picks up both the key's own number and a folio number in the same basename",
+      '1659' in digits and '86' in digits)
+check("key_person_name strips key_/_extended and returns the office name (thurloe-printed shape)",
+      kx.key_person_name('key_blake_extended.tsv') == 'blake' and kx.key_person_name('key_montagu.tsv') == 'montagu')
+check("key_person_name on a pure folio-numbered key returns None (fr5160-letellier-1653's key_1659.tsv has no name)",
+      kx.key_person_name('key_1659.tsv') is None)
+
 print('key_crossmatch:', 'all tests pass' if not fails else f'{fails} failures')
 sys.exit(1 if fails else 0)

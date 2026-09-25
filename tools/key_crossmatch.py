@@ -5,34 +5,53 @@
   python3 tools/key_crossmatch.py --help
   python3 tools/tests/test_key_crossmatch.py       offline test: positive control on two small fixtures
 
-Pipeline (CLAUDE.md rules 3, 4, 7; LANE KX job brief 2026-09-25):
+Pipeline (CLAUDE.md rules 3, 4, 7; LANE KX job briefs 2026-09-25, jobs 1 and 1b):
   1. Discover every key*.tsv/key*.txt under ciphers/ (excluding scratch names: draft, candidate, atlas, pass,
      conflicts, counts, align, crosscheck, trial) plus the published key tables already on disk
      (tools/keys/key60.tsv). Parse each with tools/decode_key.py's own load_key (imported, not copied) into
-     {code: value}. Metadata (office, years, language, design, sign type) is read from the folder's NOTES.md
-     and the key file's own header comment, by regex heuristics -- reported, not authoritative.
+     {code: value}, falling back to this script's own robust_load_key when dk.load_key raises or clearly read
+     an un-stripped header row as data (job 1b fix A: header words like 'line'/'system'/'row'/'sign_desc' that
+     dk's own header sniffing does not recognise, plus 'code'-headed tables whose value column is named
+     'plaintext' rather than 'value'). Metadata (office, years, language, design, sign type) is read from the
+     folder's NOTES.md and the key file's own header comment, by regex heuristics -- reported, not authoritative.
   2. Discover every ciphertext*.tsv/.txt under ciphers/ (same exclusion list, plus 'recon': intermediate
      reconciliation passes are not independent ciphertexts). Tokenise using the folder's decode.json job that
-     names the file when one exists; else try tools/decode_key.py's own format auto-detection; else fall back
-     to a plain whitespace/semicolon split treating any alphabetic run of 4+ letters as clear prose (reported
-     as 'whitespace' -- CLAUDE.md's documented fallback for a format decode_key.py does not know).
-  3. Compatibility filter: same sign type (digits / letters / symbols / mixed) and coverage (share of the
+     names the file when one exists; else try tools/decode_key.py's own format auto-detection; else this
+     script's own robust_tsv_signs (a header-name-driven TSV sign extractor, for files dk's stricter 'tsv'
+     format detector or a stale decode.json miss); else a plain whitespace/semicolon split treating any
+     alphabetic run of 4+ letters as clear prose (reported as 'whitespace').
+  3. Own-text (positive-control) pairing (job 1b fix A): a key's own ciphertext(s) come from its folder's
+     decode.json job list when one exists (authoritative -- a key decode.json does not name, e.g.
+     huntington-luzerne-destouches-1781/key_tomokiyo.tsv, gets no forced pairing); else, for a folder with
+     exactly one key, every ciphertext in the folder (the old rule, still correct there); else a shared 3+
+     digit run in both basenames or the key's "person name" in the ciphertext's own "Cipher system:" header
+     line, with the one remaining unmatched key in a folder getting whatever is left over. See
+     compute_own_cts()'s docstring for the full reasoning and worked examples (thurloe-printed,
+     august-van-saksen-1561-64, jan-van-nassau-1572-75).
+  4. Compatibility filter: same sign type (digits / letters / symbols / mixed) and coverage (share of the
      ciphertext's token occurrences whose code the key contains) >= 0.5 to proceed to scoring; the rest are
-     listed with coverage only.
-  4. Score: decode with the key (first alternative of an 'a|b' value; unkeyed signs contribute nothing), score
+     listed with coverage only. Two lists of named pairs (KNOWN_PAIRS, NEGATIVE_PAIRS) are forced into the
+     sweep regardless of this filter, per the job brief's rule-3 requirement to report a matched control's
+     numbers even when the result is a clean negative.
+  5. Score: decode with the key (first alternative of an 'a|b' value; unkeyed signs contribute nothing), score
      the folded letter stream with judge_plaintext.py's NgramModel (imported) in the key's language. Corpora:
      tools/data/{de16,fr16,it16} and modern English ship with the repo; la/nl/pt/es/16-17th c. English do not,
      so this script builds one per language from this repo's own reading*.txt/plaintext*.txt files (detected by
      function-word matching, not by folder name) under tools/data/<lang>_repo/, excluding the file under test.
-  5. Controls, >=20 draws each: (a) the same key with values shuffled among its own codes; (b) the same
-     ciphertext scored by every other compatible key of the same design (the unrelated-key null). z-scores
-     against both; verdict hit (z>=4 both, coverage>=0.7), weak (z>=2.5 both), else none.
-  6. Positive control: every key must rank its own ciphertext(s) first among all same-sign-type ciphertexts,
-     z>=4 vs both controls, before any other row involving it is trusted; a key that fails is marked 'unusable'
-     with the reason and excluded from the hit list.
+  6. Controls (job 1b fix B): (a) the same key with values shuffled among its own codes, >=20 draws, z-score
+     (z_shuffled); (b) judge_plaintext.py's own calibrated language control -- NgramModel.controls(N, samples)
+     draws real-text and letter-shuffled windows of the same length N from the scoring corpus itself, so it
+     needs no second same-design key (the old "unrelated key" null was unmeasurable for most designs, which
+     had only 2-5 keys on disk). pass_null: score beats the shuffled-window 99th percentile. pass_real: score
+     beats the real-text 5th percentile. dictword_share: fraction of the decoded letters a greedy dictionary
+     segmentation covers (a second, cheap signal, not itself a gate). Verdict: hit (coverage>=0.7, z_shuffled>=4,
+     pass_real and pass_null), weak (coverage>=0.5, z_shuffled>=3, pass_null), else none.
+  7. Positive control: every key must rank its own ciphertext(s) first among all same-sign-type ciphertexts,
+     own-quality (z_shuffled>=4, pass_real, pass_null), before any other row involving it is trusted; a key
+     that fails is marked 'unusable' with the reason and excluded from the hit list.
 
-Output: KEY-CROSSMATCH.tsv (all pairs with coverage >= 0.5, plus the positive-control rows) and
-KEY-CROSSMATCH.md (method, positive-control table, hit list, at most 40 lines).
+Output: KEY-CROSSMATCH.tsv (all pairs with coverage >= 0.5, plus the forced known/negative pairs and the
+positive-control rows) and KEY-CROSSMATCH.md (method, positive-control table, hit list, at most 50 lines).
 """
 import argparse, json, math, os, random, re, statistics, sys
 from pathlib import Path
@@ -377,14 +396,94 @@ def key_design(key):
     return base, hist
 
 
+# ---------------------------------------------------------------- robust key loading (LANE KX job 1b, fix A)
+# dk.load_key only recognises a plain-text (uncommented) header row when its FIRST cell is literally 'code',
+# 'sign' or 'token' (tools/decode_key.py with_header); any other real column name (line, system, row, group,
+# item, figure, sign_desc, type -- all found on disk in this repo's own key tables) means the header row is
+# never stripped and is read as a bogus first DATA row instead (e.g. key['system'] = {'value': 'sign'}), which
+# both pollutes the key and, worse, can silently overwrite real codes that share a header word by coincidence.
+# Two keys (clair1067-brienne-poland-1646 and fr5160-letellier-1653's key_brienne_1647/1651.tsv, header
+# 'code<TAB>plaintext') fail even harder: 'code' IS stripped correctly, but dk.load_key's vi = col(header,
+# 'value') finds no 'plaintext' column at all and crashes (r[None]) -- these were unparseable before this fix.
+# Rather than change decode_key.py (out of this job's file scope, and it is the reference for folders with a
+# decode.json -- CLAUDE.md rule 7, job brief note "tools/decode_key.py's own decoding is the reference"), this
+# adds a second, more permissive loader used ONLY as a fallback: when dk.load_key raises, or when its first
+# parsed code is itself a column-name word (strong evidence the header leaked into the data).
+KNOWN_HEADER_WORDS = {
+    'code', 'sign', 'token', 'value', 'grade', 'source', 'note', 'line', 'pos', 'position', 'index', 'idx',
+    'folio', 'conf', 'confidence', 'system', 'group', 'row', 'type', 'id', 'key', 'entry_label', 'token_type',
+    'sign_desc', 'top', 'bot', 'item', 'figure', 'n', 'units', 'occurrences', 'other_values', 'evidence',
+    'gloss', 'meaning', 'kind', 'alphabet', 'nulls', 'nomenclator', 'trim', 'trailing_period', 'book_page',
+    'book_col', 'rank', 'alt', 'letter', 'plaintext', 'glossed_h_columns', 'groups_keyed_by_other_items',
+    'same_value', 'share', 'positions', 'image_ref', 'layer', 'is_null', 'leaf', 'src_pos', 'page',
+    'page_of_letter', 'is_null', 'grades', 'gloss_raw',
+}
+# code column: prefer an explicit 'code'/'sign'/'token' name (dk's own convention) before the looser
+# alternatives this repo's other key tables actually use (checked by hand against every file above).
+CODE_COL_PRIORITY = ['code', 'sign_code', 'sign', 'token', 'group', 'item', 'figure', 'sign_desc', 'row',
+                      'system', 'id', 'key']
+# value column: a key table with none of these names has no plaintext/meaning column at all and is not a
+# code->value lookup (huntington-blathwayt-madrid-1728/key_items.tsv: a per-item coverage STATISTICS table,
+# 'item glossed_H_columns groups_keyed_by_other_items same_value share' -- caught by this list, not guessed).
+# 'plain' is fr5761-election-1519/key.tsv's own name for the plaintext letter (its code column is 'sign_code'
+# -- code and value are the two ends of this table's own name for each, not dk.load_key's names for either).
+VALUE_COL_PRIORITY = ['value', 'plain', 'plaintext', 'gloss', 'meaning']
+
+
+def pick_col(names_priority, low_header):
+    for n in names_priority:
+        if n in low_header:
+            return low_header.index(n)
+    return None
+
+
+def robust_load_key(path):
+    """Fallback key loader: treats the first non-comment line as a header if dk.load_key could not use it,
+    matches the code/value columns by name (CODE_COL_PRIORITY / VALUE_COL_PRIORITY) instead of position, and
+    refuses to guess a value column that isn't there. Returns (key, None) or (None, reason)."""
+    try:
+        raw = Path(path).read_text(encoding='utf-8', errors='replace').splitlines()
+    except Exception as e:
+        return None, f'unreadable: {e}'
+    lines = [l for l in raw if l.strip() and not l.lstrip().startswith('#')]
+    if not lines:
+        return None, 'no data lines'
+    header_cells = lines[0].split('\t')
+    low = [c.strip().lower() for c in header_cells]
+    value_idx = pick_col(VALUE_COL_PRIORITY, low)
+    if value_idx is None:
+        return None, 'no value/plaintext/gloss/meaning column -- not a code->value key table'
+    code_idx = pick_col(CODE_COL_PRIORITY, low)
+    if code_idx is None:
+        code_idx = 0
+    key = {}
+    for l in lines[1:]:
+        cells = l.split('\t')
+        if len(cells) <= max(code_idx, value_idx):
+            continue
+        code, value = cells[code_idx].strip(), cells[value_idx].strip()
+        if not code:
+            continue
+        key[code] = {'value': value, 'source': '', 'note': ''}
+    if not key:
+        return None, 'no rows parsed'
+    return key, None
+
+
 def load_key_meta(path):
     """One key's rows plus a metadata dict; None (logged) if unparseable."""
     try:
         key = dk.load_key(str(path))
-    except Exception as e:
-        return None, f'unparseable: {e}'
+    except Exception:
+        key = None
+    if key:
+        first_code = next(iter(key), None)
+        if first_code is not None and first_code.strip().lower() in KNOWN_HEADER_WORDS:
+            key = None  # dk.load_key's header wasn't stripped -- fall through to the robust loader
     if not key:
-        return None, 'no rows parsed'
+        key, reason = robust_load_key(path)
+        if key is None:
+            return None, reason
     folder = folder_of(path)
     status, office, years, lang_hint = notes_meta(folder)
     design, hist = key_design(key)
@@ -423,6 +522,66 @@ def whitespace_signs(text):
     return signs
 
 
+# sign column: same priority as CODE_COL_PRIORITY's code side, plus 'sign_desc' for the glyph-description
+# tables that have no Unicode code point of their own (willem-van-hessen-1567/siblings/ciphertext_1069.tsv).
+CT_SIGN_COL_PRIORITY = ['sign', 'token', 'code', 'group', 'sign_desc']
+# a column carrying either of these marks a row as clear prose / a non-signal filler, not a cipher sign
+# (clair1108-duvergier/ciphertext.tsv 'layer'=clear|cipher; antt-linhares-chave/ciphertext.tsv 'is_null').
+CT_KIND_COL = ['layer', 'kind']
+CT_KIND_SKIP_VALUES = {'clear', 'word', 'plain'}
+CT_NULL_COL = ['is_null']
+
+
+def robust_tsv_signs(path):
+    """Fallback tokenizer for a well-formed TSV ciphertext file whose header dk.detect_format/LOADERS does not
+    recognise (h[0] must be literally 'line' for dk's own 'tsv' format, e.g. clair1108-duvergier/ciphertext.tsv
+    has 'leaf' first and dk falls to its 'rows' format, which expects a completely different shape and yields
+    <3 signs) -- or whose decode.json job points at a differently-named file that never matches this one
+    (clair1108-duvergier/decode.json job names 'signs.tsv'; the file on disk is 'ciphertext.tsv'). Finds the
+    sign column by name (CT_SIGN_COL_PRIORITY) rather than position, and skips rows a 'layer'/'kind' or
+    'is_null' column marks as clear text / not a signal, same convention as the whitespace fallback's
+    CLEAR_WORD_RE and dk.clear_word()."""
+    try:
+        raw = path.read_text(encoding='utf-8', errors='replace').splitlines()
+    except Exception:
+        return None
+    lines = [l for l in raw if l.strip() and not l.lstrip().startswith('#')]
+    if len(lines) < 2:
+        return None
+    header = lines[0].split('\t')
+    low = [c.strip().lower() for c in header]
+    sign_idx = pick_col(CT_SIGN_COL_PRIORITY, low)
+    if sign_idx is None:
+        return None
+    kind_idx = pick_col(CT_KIND_COL, low)
+    null_idx = pick_col(CT_NULL_COL, low)
+    signs = []
+    for l in lines[1:]:
+        cells = l.split('\t')
+        if len(cells) <= sign_idx:
+            continue
+        if kind_idx is not None and len(cells) > kind_idx and cells[kind_idx].strip().lower() in CT_KIND_SKIP_VALUES:
+            continue
+        if null_idx is not None and len(cells) > null_idx and cells[null_idx].strip().lower() in ('true', '1', 'yes'):
+            continue
+        tok = cells[sign_idx].strip()
+        if not tok or dk.clear_word(tok) is not None:
+            continue
+        signs.append(tok)
+    return signs if len(signs) >= 3 else None
+
+
+# jan-van-nassau-1572-75/ciphertext_5551.tsv's own header states its convention explicitly: "Format:
+# tools/decode_key.py 'tsv' (line pos token conf), clear_prefix '='" -- but this folder has no decode.json, so
+# the auto:tsv tier calls dk.LOADERS['tsv'] with an EMPTY job ({}), which never sets clear_prefix and leaves
+# '=van'/'=will'/'=?' as literal sign tokens instead of the clear (non-cipher) words they are (dk.clear_word()
+# only recognises its own 'w:' and '[PLAIN:...]' conventions, not this folder's '='). Applied as a final pass
+# regardless of which tier produced the signs, since decode.json can be present for other files in the same
+# folder without covering this one, and the auto tiers pass job={} unconditionally.
+def drop_equals_clear(signs):
+    return [s for s in signs if not (s.startswith('=') and len(s) > 1)]
+
+
 def tokenize_ciphertext(path):
     folder = folder_of(path)
     ct_name = path.name
@@ -439,7 +598,7 @@ def tokenize_ciphertext(path):
             recs = dk.LOADERS[fmt](str(path), job)
             signs = [r['sign'] for r in recs if r['kind'] == 'sign']
             if len(signs) >= 3:
-                return signs, f'decode.json:{fmt}'
+                return drop_equals_clear(signs), f'decode.json:{fmt}'
         except Exception:
             pass
     try:
@@ -447,11 +606,14 @@ def tokenize_ciphertext(path):
         recs = dk.LOADERS[fmt](str(path), {})
         signs = [r['sign'] for r in recs if r['kind'] == 'sign']
         if len(signs) >= 3:
-            return signs, f'auto:{fmt}'
+            return drop_equals_clear(signs), f'auto:{fmt}'
     except Exception:
         pass
+    robust = robust_tsv_signs(path)
+    if robust is not None:
+        return drop_equals_clear(robust), 'robust_tsv'
     text = path.read_text(encoding='utf-8', errors='replace')
-    return whitespace_signs(text), 'whitespace'
+    return drop_equals_clear(whitespace_signs(text)), 'whitespace'
 
 
 def has_reading(folder):
@@ -465,6 +627,98 @@ def load_ct_meta(path):
     return dict(path=str(path.relative_to(ROOT)), folder=folder, signs=signs, tok_method=method,
                 status=status, office=office, years=years, lang_hint=lang_hint,
                 sign_type=sign_type(signs), has_reading=has_reading(folder))
+
+
+# ==================================================================== own-text (positive-control) pairing
+# (LANE KX job 1b, fix A) folder_of() collapses everything under ciphers/<folder>/... to one name, so "same
+# folder" was standing in for "own ciphertext" -- correct for a folder with exactly one key, wrong for one
+# with several. thurloe-printed alone has 9 key_*.tsv files at its top level and ~23 P<n>/ciphertext.txt
+# letters below them; only some of those letters have an identified cipher system (their own header names it,
+# e.g. "Cipher system: Blake's cipher"), the rest are still unidentified -- the old heuristic called EVERY
+# P<n> letter "own" text for EVERY key in the folder, which is both wrong (a key can't fail a positive control
+# on text nobody ever claimed it reads) and exactly backwards for what this lane is for (reading those
+# unidentified letters is the actual cross-match candidate, not a positive-control failure). august-van-saksen
+# has the analogous problem one level down (key_53/74/98.tsv, each built for one specific ciphertext_NN.tsv --
+# but its own decode.json already states the pairing explicitly, job by job).
+# Three tiers, most authoritative first:
+#  1. decode.json job list: authoritative when it exists. A key not named by any job in its folder's
+#     decode.json gets no forced own-text (huntington-luzerne-destouches-1781/key_tomokiyo.tsv is not
+#     decode.json's key.tsv -- correctly reported as "no co-located ciphertext", not forced onto ciphertext.tsv).
+#  2. no decode.json, exactly one key in the folder: unambiguous, same as the old same-folder rule.
+#  3. no decode.json, several keys: try two positive signals per (key, ciphertext) pair -- a shared 3+-digit
+#     run in both basenames (key_53.tsv <-> ciphertext_53.tsv; key_1069.tsv <-> ciphertext_1069.tsv;
+#     key_1659_f86only.tsv <-> ciphertext_f86.tsv) or the key's "person name" (key_blake_extended.tsv ->
+#     "blake") appearing in the ciphertext's own "Cipher system:" header line. A key matched to nothing keeps
+#     an empty own_cts UNLESS it is the single remaining unmatched key in the folder after the others have
+#     claimed theirs, in which case it gets what's left (process of elimination: jan-van-nassau-1572-75's
+#     key_5549.tsv digit-matches ciphertext_5549.tsv/_ps.tsv, leaving key_1572.tsv -- the shared office table,
+#     no digits of its own -- the remaining ciphertexts, which is exactly right). An empty own_cts is reported
+#     as "no co-located ciphertext found", never as a failure (rule 3: no negative without a matched control).
+DIGIT_RUN_RE = re.compile(r'\d{2,}')
+KEY_NAME_STRIP_SUFFIX_RE = re.compile(
+    r'_(extended|ext|items|candidates|nomenclator|only|from_gloss|example|f\d+only)$', re.I)
+_CT_HEADER_CACHE = {}
+
+
+def ct_header_text(rel_path):
+    if rel_path not in _CT_HEADER_CACHE:
+        text = ''
+        try:
+            for l in (ROOT / rel_path).read_text(encoding='utf-8', errors='replace').splitlines()[:15]:
+                m = re.search(r'cipher system\s*:\s*(.*)', l, re.I)
+                if m:
+                    text = m.group(1); break
+        except Exception:
+            pass
+        _CT_HEADER_CACHE[rel_path] = text
+    return _CT_HEADER_CACHE[rel_path]
+
+
+def key_person_name(key_basename):
+    stem = re.sub(r'\.(tsv|txt)$', '', key_basename, flags=re.I)
+    stem = re.sub(r'^key_', '', stem, flags=re.I)
+    stem = KEY_NAME_STRIP_SUFFIX_RE.sub('', stem)
+    m = re.match(r'^([a-zA-Z]+)', stem)
+    return m.group(1).lower() if m else None
+
+
+def compute_own_cts(key_metas, ct_metas, decode_jobs_by_folder):
+    """Sets meta['own_cts'] on every (path, key, meta) in key_metas, per the three tiers above."""
+    from collections import defaultdict
+    folder_keys = defaultdict(list)
+    for p, key, meta in key_metas:
+        folder_keys[meta['folder']].append((p, key, meta))
+    for folder, items in folder_keys.items():
+        same_folder_cts = [c for c in ct_metas if c['folder'] == folder]
+        jobs = decode_jobs_by_folder.get(folder)
+        if jobs:
+            for p, key, meta in items:
+                key_base = Path(p).name
+                names = {os.path.basename(j['ciphertext']) for j in jobs
+                         if j.get('key') and os.path.basename(j['key']) == key_base and j.get('ciphertext')}
+                meta['own_cts'] = [c['path'] for c in same_folder_cts if os.path.basename(c['path']) in names]
+            continue
+        if len(items) <= 1:
+            for p, key, meta in items:
+                meta['own_cts'] = [c['path'] for c in same_folder_cts]
+            continue
+        assigned, claimed = {}, set()
+        for p, key, meta in items:
+            key_base = Path(p).name
+            kd = set(DIGIT_RUN_RE.findall(key_base))
+            name = key_person_name(key_base)
+            matches = []
+            for c in same_folder_cts:
+                cd = set(DIGIT_RUN_RE.findall(os.path.basename(c['path'])))
+                if kd & cd or (name and name in ct_header_text(c['path']).lower()):
+                    matches.append(c['path'])
+            assigned[p] = matches
+            claimed.update(matches)
+        unresolved = [p for p, key, meta in items if not assigned[p]]
+        if len(unresolved) == 1:
+            assigned[unresolved[0]] = [c['path'] for c in same_folder_cts if c['path'] not in claimed]
+        for p, key, meta in items:
+            meta['own_cts'] = assigned[p]
 
 
 # ==================================================================== corpora
@@ -585,6 +839,139 @@ def score_pair(key, key_meta, signs, model, n_shuffle=20, seed=0):
     return real, shuffles
 
 
+# ==================================================================== calibrated language control (fix B)
+# The "unrelated key of the same design" z-score (a second key of the same design, scored on the same
+# ciphertext, as the null) was the second positive-control bottleneck: most designs have only 2-5 keys on
+# disk, so z_unrelated was unmeasurable for 5 keys and a real-but-thin, under-4 z for 7 more (KEY-CROSSMATCH.md,
+# 25 Sept 2026 run). judge_plaintext.py already implements a calibrated control that does not depend on having
+# enough sibling keys: NgramModel.controls(N, samples) draws real-text windows AND letter-shuffled windows of
+# the SAME length N from the scoring corpus itself, so it works with as few as one key. This replaces
+# z_unrelated with judge_plaintext's own two checks: the decode must score above the null (shuffled-window)
+# 99th percentile (mechanical: could this be by chance at all) AND above the real-text 5th percentile
+# (calibrated: does it read as well as genuine period prose of the same length, not merely non-random).
+CONTROLS_SAMPLES = 60
+_CONTROLS_CACHE = {}
+
+
+def lang_controls(model, N, samples=CONTROLS_SAMPLES):
+    """(real, null, cov) sorted score lists for windows near length N (bucketed to the nearest 20 letters so
+    many same-length-ish candidates share one cache entry -- ~115 ciphertexts x up to 56 keys would otherwise
+    rebuild this per exact N, and NgramModel.controls's shuffled-window draws are the sweep's main cost)."""
+    if N <= 0:
+        return None
+    bucket = max(20, round(N / 20) * 20)
+    key = (id(model), bucket)
+    if key not in _CONTROLS_CACHE:
+        _CONTROLS_CACHE[key] = model.controls(bucket, samples=samples)
+    return _CONTROLS_CACHE[key]
+
+
+def score_one_pair(key, meta, c, corpora_map, n_shuffle=20, seed=0, controls_samples=CONTROLS_SAMPLES):
+    """Full scoring for one (key, ciphertext) pair: coverage gate, shuffled-key control (z_shuffled), and the
+    calibrated real-text / null-window controls (pass_real, pass_null, dictword_share). Returns a dict with
+    the tsv-ready fields plus _real/_z_sh for ranking; verdict is 'none'/'no_corpus'/'hit'/'weak' -- the
+    caller overrides to 'own' by own_cts membership, which this function does not know about."""
+    cov = coverage_of(key, c['signs'])
+    model = get_model(meta['lang'], exclude_folder=c['folder'], corpora_map=corpora_map)
+    out = dict(coverage=round(cov, 3), score='', z_shuffled='', pass_real='', pass_null='', dictword_share='',
+               _real=None, _z_sh=None)
+    if cov < 0.5 or model is None:
+        out['verdict'] = 'none' if model else 'no_corpus'
+        return out
+    real, shuffles = score_pair(key, meta, c['signs'], model, n_shuffle=n_shuffle, seed=seed)
+    z_sh = zscore(real, shuffles)
+    text, _ = decode_with(key, c['signs'])
+    N = len(jp.fold(text))
+    ctrl = lang_controls(model, N, samples=controls_samples)
+    if ctrl:
+        real_c, null_c, _cov_c = ctrl
+        pass_null = real > jp.pct(null_c, 0.99)
+        pass_real = real > jp.pct(real_c, 0.05)
+        dictword_share = round(model.cover(text), 3)
+    else:
+        pass_null = pass_real = False
+        dictword_share = 0.0
+    out.update(score=round(real, 4), z_shuffled=round(z_sh, 2) if z_sh is not None else '',
+               pass_real=pass_real, pass_null=pass_null, dictword_share=dictword_share, _real=real, _z_sh=z_sh)
+    if cov >= 0.7 and z_sh is not None and z_sh >= 4 and pass_real and pass_null:
+        out['verdict'] = 'hit'
+    elif cov >= 0.5 and z_sh is not None and z_sh >= 3 and pass_null:
+        out['verdict'] = 'weak'
+    else:
+        out['verdict'] = 'none'
+    return out
+
+
+# ---------------------------------------------------------------- known-reuse and negative pairs (job §2, §3)
+# Named explicitly in the job brief, reported even when coverage or sign-type would otherwise drop them from
+# the ordinary sweep (a key/ciphertext of a different sign type never enters `candidates`, so a genuine
+# negative on, say, a digit key against a mixed-sign ciphertext would otherwise never get a row at all --
+# rule 3 requires the numbers be reported, not just implied by absence).
+KNOWN_PAIRS = [
+    ('lodewijk-van-nassau-1573-74/key.tsv', 'jan-van-nassau-1572-75/ciphertext_5549_ps.tsv',
+     "Lodewijk's 1574 table on Jan's 5549 postscript (J5S)"),
+    ('jan-van-nassau-1572-75/key_5549.tsv', 'jan-van-nassau-1572-75/ciphertext_5549',
+     "key_5549 (byte-for-byte copy of Lodewijk's table, NOTES.md s.?) on Jan's own 5549 letters"),
+    ('clair1067-brienne-poland-1646/key_brienne_1647.tsv', 'fr5160-letellier-1653/ciphertext',
+     'Brienne 1647 table, same file in both folders (clair1067 -> fr5160)'),
+    ('clair1067-brienne-poland-1646/key_brienne_1651.tsv', 'fr5160-letellier-1653/ciphertext',
+     'Brienne 1651 table, same file in both folders (clair1067 -> fr5160)'),
+    ('fr5160-letellier-1653/key_brienne_1647.tsv', 'clair1067-brienne-poland-1646/ciphertext',
+     'Brienne 1647 table, same file in both folders (fr5160 -> clair1067)'),
+    ('fr5160-letellier-1653/key_brienne_1651.tsv', 'clair1067-brienne-poland-1646/ciphertext',
+     'Brienne 1651 table, same file in both folders (fr5160 -> clair1067)'),
+]
+NEGATIVE_PAIRS = [
+    ('rah-canada-1869/key', 'rah-morillo-1817/ciphertext', 'RAH 1869 (Canada) key vs the RAH Morillo 1817 texts'),
+    ('rah-morillo-1817/key', 'rah-canada-1869/ciphertext', 'reverse: RAH Morillo 1817 key vs the 1869 Canada text'),
+    ('willem-van-hessen-1567/siblings/key_174_nomenclator.tsv', 'jan-van-nassau-1572-75/ciphertext',
+     'Willem-van-Hessen 1567 nomenclator vs the 1572-75 Nassau letters'),
+    ('jan-van-nassau-1572-75/key_1572.tsv', 'willem-van-hessen-1567/siblings/ciphertext_1069.tsv',
+     'Nassau 1572 key vs Willem-van-Hessen 1069 (reverse of the pair the job brief names)'),
+    ('la-garde-1577/key', 'fr3985-nevers-revol-1593/ciphertext', 'la-garde 1577 key(s) vs a Nevers (fr3985) ciphertext'),
+    ('fr3985-nevers-revol-1593/key', 'la-garde-1577/ciphertext', 'reverse: fr3985 Nevers key vs la-garde 1577'),
+    ('jan-van-nassau-1572-75/key_1572.tsv', 'rah-canada-1869/ciphertext', '1570s Nassau key vs 1869 RAH text (century gap)'),
+    ('jan-van-nassau-1572-75/key_1572.tsv', 'huntington-luzerne-destouches-1781/ciphertext',
+     '1570s Nassau key vs 1781 Huntington text (century gap)'),
+]
+
+
+def force_pairs(pairs_list, key_metas, ct_metas, corpora_map, rows, mark_known):
+    """Scores every (key, ciphertext) combination named by a folder/path substring pair, adding a row to
+    `rows` (tagged known_pair) for any combination the ordinary sweep did not already score (different sign
+    types, or dropped by the compatibility filter). Returns a short results list for the report."""
+    results = []
+    for key_sub, ct_sub, label in pairs_list:
+        keys = [(p, key, meta) for p, key, meta in key_metas if key_sub in str(p.relative_to(ROOT)).replace(os.sep, '/')]
+        cts = [c for c in ct_metas if ct_sub in c['path']]
+        if not keys:
+            results.append(dict(label=label, key=key_sub, ct=ct_sub, note='key not found on disk')); continue
+        if not cts:
+            results.append(dict(label=label, key=key_sub, ct=ct_sub, note='ciphertext not found on disk')); continue
+        for p, key, meta in keys:
+            kp = str(p.relative_to(ROOT))
+            for c in cts:
+                existing = next((r for r in rows if r['key_path'] == kp and r['ciphertext_path'] == c['path']), None)
+                if existing:
+                    if mark_known:
+                        existing['known_pair'] = 'yes'
+                    results.append(dict(label=label, key=kp, ct=c['path'], coverage=existing['coverage'],
+                                         z_shuffled=existing['z_shuffled'], verdict=existing['verdict']))
+                    continue
+                res = score_one_pair(key, meta, c, corpora_map)
+                row = dict(ciphertext_path=c['path'], ct_status=c['status'], key_path=kp,
+                           key_office=meta['office'], key_years=meta['years'], key_lang=meta['lang'],
+                           design=meta['design'], coverage=res['coverage'], score=res['score'],
+                           z_shuffled=res['z_shuffled'], pass_real=res.get('pass_real', ''),
+                           pass_null=res.get('pass_null', ''), dictword_share=res.get('dictword_share', ''),
+                           rank_of_this_key_for_ct='', known_pair=('yes' if mark_known else 'no'),
+                           verdict=res['verdict'], _real=res['_real'], _z_sh=res['_z_sh'])
+                rows.append(row)
+                results.append(dict(label=label, key=kp, ct=c['path'], coverage=row['coverage'],
+                                     z_shuffled=row['z_shuffled'], verdict=row['verdict']))
+    return results
+
+
 # ==================================================================== main sweep
 
 def run(alarm=None):
@@ -604,9 +991,16 @@ def run(alarm=None):
         key_metas.append((p, key, meta))
 
     ct_metas = [load_ct_meta(p) for p in cts_found]
-    # own-ciphertext(s) for each key: same folder as the key file (best available heuristic for co-location)
-    for p, key, meta in key_metas:
-        meta['own_cts'] = [c['path'] for c in ct_metas if c['folder'] == meta['folder']]
+
+    # own-ciphertext(s) for each key: decode.json job list when it exists (authoritative), else same-folder
+    # when unambiguous, else a digit/header-name match with process-of-elimination for the one leftover key
+    # (fix A's own_cts redesign -- see compute_own_cts's docstring above)
+    decode_jobs_by_folder = {}
+    for folder in {meta['folder'] for _, _, meta in key_metas} | {c['folder'] for c in ct_metas}:
+        jobs = load_decode_jobs(folder)
+        if jobs:
+            decode_jobs_by_folder[folder] = jobs
+    compute_own_cts(key_metas, ct_metas, decode_jobs_by_folder)
 
     rows = []           # KEY-CROSSMATCH.tsv rows
     pos_control = []    # positive-control table rows
@@ -614,91 +1008,63 @@ def run(alarm=None):
 
     for p, key, meta in key_metas:
         candidates = [c for c in ct_metas if c['sign_type'] == meta['sign_type']]
-        scored = []
+        ranked_scores = []  # (real_score, ct_path) for own-text ranking
         for c in candidates:
-            cov = coverage_of(key, c['signs'])
-            lov = length_overlap(key.keys(), c['signs'])
-            # exclude the CIPHERTEXT's own folder from the corpus (item 4: "exclude the target's own"),
-            # not the key's -- a key and a candidate ciphertext are usually different folders, and the
-            # leakage this guards against is the candidate's own plaintext, not the key's
-            model = get_model(meta['lang'], exclude_folder=c['folder'], corpora_map=corpora_map)
-            if cov < 0.5 or model is None:
-                rows.append(dict(ciphertext_path=c['path'], ct_status=c['status'], key_path=meta['path'],
-                                  key_office=meta['office'], key_years=meta['years'], key_lang=meta['lang'],
-                                  design=meta['design'], coverage=round(cov, 3), score='', z_shuffled='',
-                                  z_unrelated='', rank_of_this_key_for_ct='', verdict='none' if model else 'no_corpus'))
-                continue
-            real, shuffles = score_pair(key, meta, c['signs'], model)
-            scored.append((c, cov, lov, real, shuffles, model))
-        # unrelated-key null needs every OTHER compatible key of the same design scored on each ct too
-        other_keys = [(op, ok, om) for op, ok, om in key_metas
-                      if om['path'] != meta['path'] and om['design'] == meta['design']
-                      and om['sign_type'] == meta['sign_type']]
-        for c, cov, lov, real, shuffles, model in scored:
-            z_sh = zscore(real, shuffles)
-            null_scores = []
-            for op, ok, om in other_keys:
-                omodel = model if om['lang'] == meta['lang'] else \
-                    get_model(om['lang'], exclude_folder=c['folder'], corpora_map=corpora_map)
-                if omodel is None:
-                    continue
-                otext, ocov = decode_with(ok, c['signs'])
-                if not otext.strip():
-                    continue
-                null_scores.append(omodel.score(otext))
-            z_un = zscore(real, null_scores) if len(null_scores) >= 2 else None
+            res = score_one_pair(key, meta, c, corpora_map)
             is_own = c['path'] in meta['own_cts']
-            if is_own:
-                verdict = 'own'
-            elif z_sh is not None and z_un is not None and z_sh >= 4 and z_un >= 4 and cov >= 0.7:
-                verdict = 'hit'
-            elif z_sh is not None and z_un is not None and z_sh >= 2.5 and z_un >= 2.5:
-                verdict = 'weak'
-            else:
-                verdict = 'none'
+            verdict = 'own' if is_own else res['verdict']
             rows.append(dict(ciphertext_path=c['path'], ct_status=c['status'], key_path=meta['path'],
                               key_office=meta['office'], key_years=meta['years'], key_lang=meta['lang'],
-                              design=meta['design'], coverage=round(cov, 3), score=round(real, 4),
-                              z_shuffled=round(z_sh, 2) if z_sh is not None else '',
-                              z_unrelated=round(z_un, 2) if z_un is not None else '',
-                              rank_of_this_key_for_ct='', verdict=verdict,
-                              _real=real, _z_sh=z_sh, _z_un=z_un))
-        # positive control: does this key rank its own ciphertext(s) first among same-sign-type candidates?
+                              design=meta['design'], coverage=res['coverage'], score=res['score'],
+                              z_shuffled=res['z_shuffled'], pass_real=res['pass_real'], pass_null=res['pass_null'],
+                              dictword_share=res['dictword_share'], rank_of_this_key_for_ct='', known_pair='no',
+                              verdict=verdict, _real=res['_real'], _z_sh=res['_z_sh']))
+            if res['_real'] is not None:
+                ranked_scores.append((res['_real'], c['path']))
+        # positive control: does this key rank its own ciphertext(s) first among same-sign-type candidates,
+        # own-quality (z_sh>=4, passes both calibrated controls) -- job brief §1
         if meta['own_cts']:
-            ranked = sorted([r for r in rows if r['key_path'] == meta['path'] and r['ciphertext_path'] in
-                             [c['path'] for c in candidates] and r.get('_real') is not None],
-                            key=lambda r: r['_real'], reverse=True)
-            own_rank = next((i + 1 for i, r in enumerate(ranked) if r['ciphertext_path'] in meta['own_cts']), None)
-            own_row = next((r for r in ranked if r['ciphertext_path'] in meta['own_cts']), None)
-            for i, r in enumerate(ranked):
-                if r['ciphertext_path'] in meta['own_cts']:
-                    r['rank_of_this_key_for_ct'] = i + 1
-            ok = bool(own_row and own_rank == 1 and own_row['_z_sh'] is not None and own_row['_z_un'] is not None
-                      and own_row['_z_sh'] >= 4 and own_row['_z_un'] >= 4)
+            ranked_scores.sort(key=lambda t: t[0], reverse=True)
+            own_rank = next((i + 1 for i, (sc, path) in enumerate(ranked_scores) if path in meta['own_cts']), None)
+            for i, (sc, path) in enumerate(ranked_scores):
+                if path in meta['own_cts']:
+                    for r in rows:
+                        if r['key_path'] == meta['path'] and r['ciphertext_path'] == path:
+                            r['rank_of_this_key_for_ct'] = i + 1
+            own_row = next((r for r in rows if r['key_path'] == meta['path']
+                             and r['ciphertext_path'] in meta['own_cts']), None)
+            ok = bool(own_row and own_rank == 1 and own_row['_z_sh'] is not None and own_row['_z_sh'] >= 4
+                      and own_row['pass_real'] is True and own_row['pass_null'] is True)
             pos_control.append(dict(key=meta['path'], own_text=', '.join(meta['own_cts']), own_rank=own_rank,
-                                     z_sh=own_row['_z_sh'] if own_row else None,
-                                     z_un=own_row['_z_un'] if own_row else None, ok=ok,
-                                     n_candidates=len(ranked)))
+                                     z_sh=own_row['_z_sh'] if own_row else None, ok=ok, n_candidates=len(ranked_scores)))
             if not ok:
-                unusable.append((meta['path'], f"own-text rank {own_rank} of {len(ranked)}"
-                                 if own_rank else "own text not scored (no corpus or coverage<0.5)"))
+                reason = (f"own-text rank {own_rank} of {len(ranked_scores)}, cov={own_row['coverage']}"
+                          if own_rank else "own text not scored (no corpus or coverage<0.5)")
+                unusable.append((meta['path'], reason))
         else:
             pos_control.append(dict(key=meta['path'], own_text='(no co-located ciphertext found)', own_rank=None,
-                                     z_sh=None, z_un=None, ok=None, n_candidates=len(candidates)))
+                                     z_sh=None, ok=None, n_candidates=len(candidates)))
 
     unusable_paths = {u[0] for u in unusable}
     for r in rows:
         if r['key_path'] in unusable_paths and r['verdict'] not in ('own',):
             r['verdict'] = 'unusable-key'
 
+    known_pairs = force_pairs(KNOWN_PAIRS, key_metas, ct_metas, corpora_map, rows, mark_known=True)
+    negative_pairs = force_pairs(NEGATIVE_PAIRS, key_metas, ct_metas, corpora_map, rows, mark_known=False)
+    neg_scored = [r for r in negative_pairs if 'verdict' in r]
+    neg_false_positives = [r for r in neg_scored if r['verdict'] in ('hit', 'weak')]
+
     return dict(keys_found=keys_found, keys_dropped=keys_dropped, cts_found=cts_found, cts_dropped=cts_dropped,
                 key_metas=key_metas, ct_metas=ct_metas, rows=rows, pos_control=pos_control, unusable=unusable,
-                corpora_map=corpora_map)
+                corpora_map=corpora_map, known_pairs=known_pairs, negative_pairs=negative_pairs,
+                neg_scored=neg_scored, neg_false_positives=neg_false_positives)
 
 
 def write_tsv(rows, path):
     cols = ['ciphertext_path', 'ct_status', 'key_path', 'key_office', 'key_years', 'key_lang', 'design',
-            'coverage', 'score', 'z_shuffled', 'z_unrelated', 'rank_of_this_key_for_ct', 'verdict']
+            'coverage', 'score', 'z_shuffled', 'pass_real', 'pass_null', 'dictword_share',
+            'rank_of_this_key_for_ct', 'known_pair', 'verdict']
     order = {'hit': 0, 'weak': 1}
     def sortkey(r):
         z = r.get('z_shuffled')
@@ -726,10 +1092,13 @@ def main(argv=None):
     weak = [r for r in sorted_rows if r['verdict'] == 'weak']
     if not a.quiet:
         print(f"positive control: {n_ok} of {n_total} keys rank their own text first; "
-              f"{len(hits)} hits, {len(weak)} weak")
+              f"{len(hits)} hits, {len(weak)} weak (excluding known pairs: "
+              f"{sum(1 for r in hits + weak if r['known_pair'] == 'no')})")
         for r in hits + weak:
             print(f"  {r['verdict']}: {r['ciphertext_path']} <- {r['key_path']} "
-                  f"cov={r['coverage']} z_sh={r['z_shuffled']} z_un={r['z_unrelated']}")
+                  f"cov={r['coverage']} z_sh={r['z_shuffled']} known={r['known_pair']}")
+        fp = res['neg_false_positives']
+        print(f"negative pairs: {len(fp)} of {len(res['neg_scored'])} scored came out hit/weak (false positives)")
     return res
 
 
