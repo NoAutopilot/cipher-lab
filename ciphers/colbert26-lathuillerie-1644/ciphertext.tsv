@@ -1,0 +1,117 @@
+canvas	line	idx	token	gloss	context_before	context_after
+20	15	1	6	Je parle des Suedois	affaire a des gens	25
+20	15	2	25		6	zz
+20	15	3	zz		25	11
+20	15	4	11		zz	83
+20	15	5	83		11	v
+20	15	6	v		83	44
+20	15	7	44		v	w'
+20	15	8	w'		44	85
+20	15	9	85		w'	d
+20	15	10	d		85	z
+20	15	11	z		d	asseurez de leur
+20	17	1	42		bonne fortune quils	e
+20	17	2	e		42	gt
+20	17	3	gt		e	m
+20	17	4	m		gt	d
+20	17	5	d		m	36
+20	17	6	36		d	th
+20	17	7	th		36	83
+20	17	8	83		th	56
+20	17	9	56		83	43
+20	17	10	43		56	21
+20	17	11	21		43	9o
+20	17	12	9o		21	y
+20	17	13	y		9o	49
+20	17	14	49		y	21
+20	17	15	21		49	32
+20	17	16	32		21	c'
+20	17	17	c'		32	th
+20	17	18	th		c'	ne croyent
+20	19	1	63	pour les Dannois qui; pas plus traitables	m'exercent Car	68
+20	19	2	68		63	32
+20	20	1	32	fy	Car 63 68	peut estre ne
+20	20	2	25		ne seroient	v
+20	20	3	v		25	m°
+20	20	4	m°		v	14
+20	20	5	14		m°	h'
+20	20	6	h'		14	el
+20	20	7	el		h'	35
+20	20	8	35		el	d
+20	20	9	d		35	45
+20	20	10	45		d	g
+20	20	11	g		45	11
+20	20	12	11		g	v
+20	20	13	v		11	42
+20	21	1	42	leur place; ilz sont; abatuz	11 v (line20 end)	ilz estoient en
+20	21	2	56		ilz estoient en	99
+20	21	3	99		56	d
+20	21	4	d		99	i"
+20	21	5	i"		d	th
+20	21	6	th		i"	43
+20	21	7	43		th	gt
+20	21	8	gt		43	el
+20	21	9	el		gt	42
+20	21	10	42		el	z
+20	21	11	z		42	72
+20	21	12	72		z	49
+20	21	13	49		72	v
+20	21	14	v		49	31 6 h (line22 start)
+20	22	1	31	de ceste part la que le traite se rompra	veullent beaucoup (line18)	6
+20	22	2	6		31	h
+20	22	3	h		6	obtiens quasy tout
+20	23	1	83	que l'on les [symbol] accule	ce ne Sera pas	46
+20	23	2	46		83	25
+20	23	3	25		46	y
+20	23	4	y		25	cn
+20	23	5	cn		y	10
+20	23	6	10		cn	31
+20	23	7	31		10	11
+20	23	8	11		31	70
+20	23	9	70		11	41
+20	23	10	41		70	38
+20	23	11	38		41	m+
+20	23	12	m+		38	I
+20	23	13	I		m+	35
+20	23	14	35		I	Si ilz ne
+20	24	1	31		Si ilz ne voyent	13
+20	24	2	13		31	h
+20	24	3	h		13	11
+20	24	4	11		h	v
+20	24	5	v		11	y
+20	24	6	y		v	q
+20	24	7	q		y	81
+20	24	8	81	s'il fault perir (cross-marked)	q	11
+20	24	9	11	s'il fault perir (cross-marked)	81	auquel cas ainsy
+20	25	1	42		desja mande	y
+20	25	2	y		42	87
+20	25	3	87		y	&
+20	25	4	&		87	11
+20	25	5	11		&	ll
+20	25	6	ll		11	26
+20	25	7	26		ll	37
+20	25	8	37		26	6
+20	25	9	6	par les armes que par un accommodement (spans line25-26)	37	ilz aiment
+20	26	1	25		mieux que ce soit	ee
+20	26	2	ee		25	11
+20	26	3	11		ee	y
+20	26	4	y		11	z
+20	26	5	z		y	ee
+20	26	6	ee		z	16
+20	26	7	16		ee	v
+20	26	8	v		16	31
+20	26	9	31		v	25
+20	26	10	25	sera pas honteux	31	y
+20	26	11	y		25	d
+20	26	12	d		y	gt
+20	26	13	gt		d	78
+20	26	14	78		gt	(line27 start) pour ce qu'outre
+20	27	1	41		qu'outre quil ne leur	35
+20	27	2	35		41	25
+20	27	3	25		35	v
+20	27	4	v		25	100
+20	27	5	100		v	h
+20	27	6	h		100	46
+20	27	7	46		h	&
+20	27	8	&		46	q
+20	27	9	q		&	(end of visible passage)

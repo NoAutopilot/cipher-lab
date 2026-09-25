@@ -150,3 +150,88 @@ canvas 20/21/26/19/22 close reads itself.
 
 Recovery (a contemporary decipherment already exists on the document for at least one letter; cryptanalysis was
 not attempted and per the brief is out of scope here).
+
+## KX-LATHKEY2 (25 Sept 2026)
+
+Successor to KX-LATHKEY (interrupted at $44/61 min with no push; its two transcription subagents' output was lost,
+only the native-res crops in `images/crops/` survive -- see ROOM.md 09:36). This job worked directly from those
+20 crops (no Gallica fetch), transcribing by hand from PIL-cropped/upscaled line regions (no subagent), one leaf
+at a time, pushing after each leaf, to avoid repeating that failure.
+
+**Scope actually completed: canvas 20 (folio 17) only, of the 21 cipher-bearing canvases on file.** 70 cipher
+tokens across 8 cipher-bearing lines (15, 17, 19-27; lines 16 and 18 are plain-prose continuations with no
+digits, not transcribed). `ciphertext.tsv`, `key_period.tsv` (59 distinct codes). No second reconciliation pass
+was run (brief step 2) -- budget did not allow both a second Sonnet subagent pass per canvas and forward progress
+on more leaves, and the prior worker's failure was specifically an unsupervised subagent pass that produced no
+committed output; this transcription is a single pass by this worker only and should be treated accordingly
+(no independent cross-check yet).
+
+### Important correction to the "period decipherment" framing
+
+KX-COLB26P1's leaf map (above) describes the second hand's interlinear writing as "a contemporary decipherment ...
+a period decipherment sits on the document itself," by analogy with Thurloe/Japikse/Groen-van-Prinsterer key-
+beside-the-letter cases. Having now read canvas 20 at native resolution and transcribed every cipher token against
+every nearby annotation, **that characterization does not hold at the token level.** The second hand's notes are
+short (3-9 word) topical/paraphrase annotations positioned near a cipher run, not a plaintext word written over
+each code:
+- The densest run on the leaf, 11 tokens (`6 25 zz 11 83 v 44 w' 85 d z`), pairs with a single four-word note,
+  "Je parle des Suedois" ("I'm speaking of the Swedes") -- a gist of the passage's subject, not eleven
+  substitutions.
+- The 2-token run `63 68` pairs with "pour les Dannois qui ... pas plus traitables" (6 words) -- plausible as a
+  paraphrase of what the coded clause says, not a 1:1 gloss.
+- Only a few of the shortest runs (a lone token like `32` glossed `fy`, or `83`/`25`/`31`/`42` as the first token
+  of a run next to a short phrase) are even candidates for a direct code=word equivalence, and even those are
+  single, unrepeated observations on this one leaf -- nothing here meets the brief's own C-grade bar ("legible
+  AND consistent across occurrences"), so `key_period.tsv` grades every code M, none C, and says so in each row's
+  note rather than guessing.
+- One code (`6`) already shows the conflicting-gloss pattern rule 3/brief step 3 anticipates: it occurs three
+  times on this one leaf, twice next to unrelated-looking phrases ("Je parle des Suedois" at one occurrence,
+  "par les armes que par un accommodement" at another) and once with no gloss at all -- listed as a conflict in
+  key_period.tsv, not resolved to one value.
+
+This does not mean the second hand is useless -- it reliably marks *where* the enciphered clauses fall and *what
+they are about* (Swedish affairs, the Danes, the Prince of Orange, Naples, an accommodement vs. continued war),
+which is exactly the kind of external corroboration LESSONS.md section "Verify against the world, not the model"
+asks for once a candidate key exists. But it is marginalia/annotation, not a decipherment, and NOTES.md and any
+future brief for this target should stop calling it one. Building an actual key needs either a genuine word-level
+decipherment elsewhere (not found yet), or cryptanalysis proper (nomenclator/homophonic solve) using these notes
+only as topic cribs -- a different, harder job than "transcribe the gloss."
+
+### Design observations (from this one leaf)
+
+- Mixed nomenclator: plain 2-digit numbers (6, 11, 21, 25, 32, 35, 42, 46, 49, 56, 63, 68, 70, 72, 78, 81, 83, 87,
+  99, 100...) interleaved with single letters used as symbols (d, e, g, h, m, q, v, y, z) and compound
+  letter+diacritic/ligature marks (w', gt, m°, m+, h', i", c', th [a crossed-circle mark, rendered here as "th"
+  for lack of a closer ASCII match], 9o, el, cn, ll, zz, &, I). 59 distinct codes observed in 70 tokens on one
+  leaf -- a large nomenclator, not a short substitution alphabet; consistent with LESSONS.md's "genuine
+  ciphertext-only break" cases needing either a crib or a structural regularity, neither established yet.
+- Cipher tokens are interspersed with plain French inline (not a fully enciphered letter) -- the same pattern
+  KX-COLB26P1 found across all 21 leaves.
+- Tokens repeat within the leaf (v x7, y x6, d x5, 6/11/25/42/83 each several times) -- some homophony or a small
+  alphabet reused densely is plausible, but 70 tokens is far below what a 59-symbol nomenclator needs for a blind
+  break (LESSONS.md's "large nomenclator, one letter" failure class: d'Estaing, Chaulnes, Berthier, Stepney,
+  Maurice-Rupert). More leaves in the same hand are needed before any solve attempt, not more analysis of this
+  one.
+
+### Not done this job (successor's queue, cheapest first per the brief)
+
+1. Canvas 21 (folio 18, same letter, same hand, continues directly from canvas 20) -- doing this leaf next would
+   let key_period.tsv check code-consistency across two leaves of the *same* letter, which is the one check that
+   could actually earn a C grade under the brief's own rule.
+2. The other 19 glossed canvases (26, 27, 30-33, 35-36, 39-40, 47-51, 54-56, 62-63), same method (PIL crop +
+   upscale from the existing `images/crops/canvas*_full.jpg`, no refetch needed).
+3. A second independent pass (brief step 2) once there is more than one leaf transcribed, to actually reconcile
+   rather than run once and trust it.
+4. Re-crop and closer-read the handful of genuinely ambiguous marks flagged inline in ciphertext.tsv's token
+   column (`9o`, `c'`, `i"`, `th`, `m°`) against the source crop before treating them as settled shapes rather
+   than this worker's best reading.
+
+### Files, hosts, cost
+
+Files: `ciphertext.tsv` (70 rows), `key_period.tsv` (59 codes), `images/lines/canvas20_*.jpg` (5 crop files, PIL,
+from the already-on-disk `images/crops/canvas20_full.jpg`, no refetch), this NOTES.md section. Hosts: none (all
+from disk, per brief). No subagents (single pass by this worker, see above). No credentials. Cost not visible to
+this worker (ROOM.md 09:00, "workers cannot see their own cost" -- get_session's context_usage read 0 at the
+first check and carries no dollar figure); paced by scope (one leaf, no subagent fan-out) rather than a live
+dollar reading, given the predecessor's failure mode was an unsupervised subagent burning budget with nothing
+committed.
