@@ -71,6 +71,8 @@ def start():
         near = [l for l in open("NEAR.md", encoding="utf-8") if l.startswith("| ") and not l.startswith("| Target") and not l.startswith("|---")]
         if near:
             print(f"NEAR.md: {len(near)} near-solve rows -- a target there is never closed-negative (rule 5): " + ", ".join(l.split("|")[1].strip().split(" ")[0] for l in near))
+    except FileNotFoundError:
+        pass
     # Key probe (25 Sept 2026, UPDATES.md): names only, so a session sees at once which credentials its container
     # carries and which the repo has not documented yet (a key added on one account was missed by the other).
     try:
@@ -78,8 +80,6 @@ def start():
         print(_sp.run([sys.executable, "tools/key_probe.py", "--quiet"], capture_output=True, text=True, timeout=10).stdout.strip())
     except Exception as e:  # never block a start on the probe
         print(f"key probe skipped: {e}")
-    except FileNotFoundError:
-        pass
     return 0
 
 def keep_both(path):

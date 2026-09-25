@@ -27,7 +27,7 @@ DOCUMENTED = [
 ]
 PATTERN = re.compile(r"(KEY|USER|PASS|TOKEN|SECRET|CLIENT_ID|CREDENTIAL)", re.I)
 # Platform and shell variables that match the pattern but are not the owner's service credentials.
-IGNORE = re.compile(r"^(USER|LOGNAME|USERNAME|GH_TOKEN|GITHUB_TOKEN|MAX_THINKING_TOKENS|CLAUDE_|ANTHROPIC_|CCR_|NODE_|NPM_|SSH_|SUDO_|XDG_)")
+IGNORE = re.compile(r"^(USER|LOGNAME|USERNAME|GH_TOKEN|GITHUB_TOKEN|MAX_THINKING_TOKENS|GIT_CONFIG_|CLAUDE_|ANTHROPIC_|CCR_|NODE_|NPM_|SSH_|SUDO_|XDG_)")
 
 
 def probe(environ=None):
