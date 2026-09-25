@@ -38,11 +38,28 @@
       "size_bytes": 1221209,
       "sha1": "8018bab3ae3912f2ac03fa46bfa8ce790eecf044",
       "dims": "1107x1375"
+    },
+    {
+      "file": "Debosnys-Cryptogram-4a.png",
+      "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2015/02/Debosnys-Cryptogram-4a.png",
+      "cryptogram": "4",
+      "part": "page a of 2",
+      "size_bytes": 1011377,
+      "sha1": "55b8d712966ae9967b4a9eeb9c397c0c66f7cfd6",
+      "dims": "1107x1493",
+      "fetched": "25 Sept 2026 (GOLD-4A)"
+    },
+    {
+      "file": "Debosnys-Cryptogram-4b.png",
+      "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2015/02/Debosnys-Cryptogram-4b.png",
+      "cryptogram": "4",
+      "part": "page b of 2",
+      "size_bytes": 414055,
+      "sha1": "97a2d310c9e0f06eb9b5afd1e5319a229cd1a526",
+      "dims": "1105x563",
+      "fetched": "25 Sept 2026 (GOLD-4A)"
     }
   ],
-  "not_fetched": [
-    "Debosnys-Cryptogram-4a.png",
-    "Debosnys-Cryptogram-4b.png"
-  ],
-  "requests": {"host": "scienceblogs.de", "count": 4, "spacing_s": ">=1.8", "user_agent": "browser UA (Chrome/120 string)", "status": "all 200, no 429/403"}
+  "not_fetched": [],
+  "requests": {"host": "scienceblogs.de", "count": 6, "spacing_s": ">=1.8", "user_agent": "browser UA (Chrome/120.0.0.0 Safari/537.36 string)", "status": "all 200, no 429/403", "note": "4 by LANE B2, 2 by GOLD-4A (this pass), 25 Sept 2026, >=2s apart"}
 }
