@@ -1,0 +1,27 @@
+# English gloss of reading.txt (ZX-DEC349, 25 Sept 2026). Clairambault 349 f.9, Este (Ferrara) to the duc de Guise, 4 Jan 1557.
+# Normalised French first (word breaks restored, abbreviations expanded; [..] = supplied or doubtful), then English.
+# Lines 01-17 read continuously at mixed grades (see reading_tokens.tsv); lines 18-33 carry many word-code tokens
+# ([haulte ligue], [armee de mer], [Le Roy mre]) inside spelled text, which are transcription/atlas confusions, not
+# plaintext: only fragments are glossed there. Nothing here is graded above the grade of its tokens.
+
+01-02  J'ay receu les lettres que vous a[vez] pleu m'escrire du vingt-uniesme du pa-
+03-05  ssé, pour response de ce que Scipion vous a respondu [?de sur] le fait pour lequel estoit venu par deçà,
+05-07  par lesquelles j'ay esté bien et fort aise d'entendre que les forces que vous mene[z] soient telles que vous mande[z],
+08-10  [et] non seullement pour le regard du fait susdict, s'il se presente[ra] occasion de le tanter par ceste voie, [...] encores
+11-12  pour toutes autres occasions; ne voiant point [qu'il] fault [...] pratiques que [...] ait lieu, que vous [...] passé par deçà pour
+13-14  après que vous aurez entendu comme toutes choses passeront, [...] faire ainsi que vous adviserez.
+15-16  [...] vous aurez entendu comme je voulois mettre [...] la pratique du cappitaine [...]
+17     [...] il fault celluy qui [...]
+18-33  fragments only: "[la] meilleure volonté de" (18); "la tanter" (19); "ceste heure" (21); "je vers lui pour adviser" (23);
+       "[...] ensemble de [...] que faudra tenir" (24-25); "de deça [...] s'espargner" (27); "à faire pour [...] viendra" (28);
+       "encores rien" (30); "me fait penser que les choses [...] sont [...] comme" (31-32); "[...] voudroient [...] faire" (33).
+
+English:
+I have received the letters that you were pleased to write me on the twenty-first of last month, in answer to what
+Scipion told you about the business for which he had come here; from which I was very glad to learn that the forces you
+are bringing are such as you write, not only for the matter above, should an occasion arise to attempt it by this way,
+but also for all other occasions. [...] after you have heard how all things go, [...] to do as you shall think fit.
+[...] you will have heard how I meant to put [...] the dealings of the captain [...]. [Lines 18-33: fragments only --
+"the best will", "to attempt it", "at this hour", "towards him to advise", "together ... that will have to hold",
+"on this side ... to spare", "to do for ... will come", "nothing yet", "makes me think that things ... are ... as",
+"would ... do".]
