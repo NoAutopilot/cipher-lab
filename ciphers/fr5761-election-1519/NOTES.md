@@ -2,6 +2,32 @@ open
 
 # 1519 imperial-election embassy cipher key -- BnF Français 5761, no. 3
 
+Edition check (25 Sept 2026, LANE R8, intake-gate repair, re-verified from 24 Sept): Mignet, *Rivalité de
+François Ier et de Charles-Quint* (1886, Internet Archive `rivalitdefranois01mign`), be-api full-text
+search "Cordier" -> 1 hit, p.554 (printed p.193): cites the Feb 1519 instruction from a different archive
+(AN J 952), no cipher named; 0 hits for "chiffre"/"Motheaugroing"/"5761"/"Salviati" in the volume. Le Glay,
+*Négociations diplomatiques entre la France et l'Autriche* (1845, IA `negociationsdipl01legluoft`):
+"Cordier"/"Motheaugroing" 0 hits; "chiffre" 1 hit p.836 (a different embassy, Rogendorf/da Burgo
+postscript); "Salviati" 1 hit p.836 (a different legate, unrelated to this key's own "Salviati" line).
+Desjardins, *Négociations diplomatiques de la France avec la Toscane*, confirmed by title and by web
+search to cover Franco-Tuscan (Italian) relations only, not the German/imperial-election embassy -- out
+of scope for this target, not a gap. Tomokiyo (`sources/cryptiana/web/*.htm`, all 104 cached pages
+grepped): no hit for this shelfmark, these names or this embassy; `habsburg.htm`'s 1519 section covers a
+different cipher (Nassau to Margaret of Austria). Both solver repositories (fresh shallow clones, grepped
+for "5761", "motheaugroing", "cordier", "voiage.*allemagne", "conte palatin", "deppartiz", "bourdeaulx",
+"moltzau"/"moltzan"): no genuine hit -- every apparent match is a coincidence: `cyphersolver`'s
+`gallica_sweep/sru_chiffre_desc.json` "Bourdeaulx" hits are the city of Bordeaux (a title, "second
+président de Bordeaux", and place-name uses), not the person "[Jehan] de Bourdeaulx" of this key's f110
+block; its `caprile1519/NOTES.md` names "Joachim [Moltzan?]" once, in an unrelated Ferrarese-to-Hungary
+dispatch that mentions the same 1519 imperial election in passing -- real historical corroboration that
+Moltzan/Moltzau was active in this exact election, not a ciphertext or key match. Full six-source
+check-solved log (web, print/calendars, cryptiana/cipherbrain, DECODE, Bourdeau, Aymeloglu) below is
+unchanged from 24 Sept 2026 and still supports `open`.
+
+`python3 tools/intake_gate_check.py fr5761-election-1519` (25 Sept 2026, after this rewrite):
+`fr5761-election-1519: open (line 1) -- edition/page or full-text-search citation found within 6 lines`
+(exit 0).
+
 QUEUE row: M36 (`sources/solver-diffs/2026-09-24-lane-g3-gallica6.tsv`, "Sixth pass (LANE G3), 24 September 2026").
 
 ## Source
@@ -437,3 +463,82 @@ German) shares only the year, not a correspondent or the imperial-election conte
 completeness, not a real candidate.
 
 No new QUEUE rows added (per brief: list only, do not capture or promote).
+
+## Sign inventory (25 Sept 2026, LANE R8)
+
+`sign_inventory.py` (disk only, regenerates `sign_inventory.tsv`) counts alphabet/code-name/null rows per
+correspondent block from `key_passB.tsv` (the one free-text blind pass that covers all seven key leaves,
+319 rows) and cross-checks which sign_code recurs for the same referent across the two atlas-coded,
+3-pass-reconciled blocks in `key.tsv` (f104, f110 -- the only leaves with a majority-voted `sign_code`
+column to compare).
+
+**The document is not six correspondent blocks, it is eight.** f105 (folio 51v) is not one block: it
+carries two full correspondent lists back to back, "A monsieur de Langsac" (23 alphabet + 7 names + 5
+nulls = 35 rows) and immediately after it "A monsieur de la Boulade devers monsieur de Trèves" (23 + 11 +
+4 = 38 rows) -- both already distinguished in `key_passB.tsv`'s own `correspondent` column, matching
+NOTES.md's Source section, which separately names "Langjac" and "La Vernade (to Trèves)" among the key's
+correspondents. So the leaf-to-block mapping is f104=1 block, f105=2 blocks, f106-f110=1 block each, eight
+in total, not seven leaves = seven blocks.
+
+| leaf | correspondent | alphabet | code/name | nulls | total | grade |
+|---|---|---|---|---|---|---|
+| f104 | Cordier & La Motheaugroing | 23 | 10 | 4 | 37 | H (key.tsv, 3-pass atlas-coded) |
+| f105a | Langsac | 23 | 7 | 5 | 35 | M (single blind pass, not atlas-coded) |
+| f105b | La Boulade / Trèves | 23 | 11 | 4 | 38 | M (single blind pass, not atlas-coded) |
+| f106 | Lagnisay | 21 | 17 | 5 | 43 | M (single blind pass, not atlas-coded) |
+| f107 | Joachim de Moltzan / Brandebourg | 23 | 18 | 4 | 45 | M (single blind pass, not atlas-coded) |
+| f108 | duc de Saxe | 23 | 11 | 4 | 38(+1 heading) | M (single blind pass, not atlas-coded) |
+| f109 | grand archidiacre / legate in Germany | 23 | 14 | 4 | 41 | M (single blind pass, not atlas-coded) |
+| f110 | Bourdeaulx / Brandebourg | 23 | 12 | 4 | 39 | H (key.tsv, 3-pass atlas-coded) |
+
+Full table with per-block notes: `sign_inventory.tsv`. Every block's alphabet row is close to 23 letters
+(a-x/y, skipping j/u/w per the era's convention) -- f106's single blind pass counts only 21, a gap not yet
+checked against the image (M grade, unreconciled). Every block also carries 4-5 null signs and its own
+list of code-names for foreign electors/places/persons, so the design class is confirmed as **one
+per-correspondent substitution alphabet plus a small nomenclator (code-names, not syllables or words),
+repeated independently for each of the eight blocks** -- not a single shared cipher for the whole
+document, and not a homophonic or polyalphabetic design at the letter level (no evidence of multiple
+signs per letter in either atlas-coded block).
+
+**Do blocks share signs?** Mixed, on the only two blocks with atlas-coded majority readings (f104,
+f110): the code-name lists in both blocks name almost exactly the same referents (the Palatine elector,
+Trier/Treves, Mainz, Brandenburg, Saxony, plus a "Francisque"/"Francisme" and a "Catholicque"/
+"Catholicquer" line) -- expected, since every negotiator needed to refer to the same handful of German
+electors and princes back to Paris -- but the **sign assigned to a given referent is not fixed across
+blocks**: Mainz (f104 "Mugance."=K34, f110 "Maguence"=K34) happens to share the same sign, while Saxony
+(f104 "Saxe"=K15, f110 "Saxe"=K20) does not. One match and one mismatch out of the two referents both
+blocks resolved to a named K-code is not enough to call this "shared" or "independent" in general; the
+other five shared referents (Palatine elector, Treves, Brandenburg, Francisque/Francisme, Catholicque)
+are UNLISTED on f110's side and cannot be compared yet. This needs f105-f109 atlas-coded before it can be
+answered for the document as a whole -- flagged as the next step for a worker extending the atlas past
+f104/f110, not concluded here either way. This is consistent with, and adds one data point to, worker
+D's 24 Sept finding (f110 section, above) that "the same referent name gets a different code across
+correspondents' blocks."
+
+Requests: 0 hosts for this section (disk only, `key_passB.tsv`/`key.tsv` already on disk). Files:
+`sign_inventory.py`, `sign_inventory.tsv`.
+
+## Pool search (25 Sept 2026, LANE R8, disk only)
+
+Re-grepped `QUEUE.md`, `CATALOG.md`, `sources/solver-diffs/*.tsv` and `ciphers/*/NOTES.md` for each named
+correspondent (Bonnivet, d'Orval, Guillart, Cordier, La Motheaugroing/Motheaugroing, Bourdeaulx, Joachim de
+Moltzau/Moltzan), a superset of the 24 Sept sweep (adds Bonnivet, d'Orval, Guillart, not separately queried
+then). One new hit not previously logged: `ciphers/fr2967-duprat/NOTES.md` names "Bonnivet" once, among a
+list of clear-copy (not ciphered) letters to François Ier bound in the same recueil as that volume's Duprat
+decipherments -- checked directly, not a ciphertext, not date-matched to this embassy, and that target is
+itself `closed-negative`; excluded as a coincidental match, not a candidate.
+
+The one real candidate is unchanged from 24 Sept: **`ciphers/dupuy468-anhalt/`** (QUEUE row M7, BnF Dupuy
+468 item 28, ark `btv1b10035959t` canvas 64) -- a Latin cipher letter a 23 Sept 2026 verifier re-attributed
+to "more probably Ernest of Brunswick-Lüneburg and Joachim von Moltzan, 1518/19," and Joachim de Moltzau is
+named verbatim in this key's own f107 block ("Joachim de Moltzan tenant le marquis de Brandebourg"). Status
+has changed since 24 Sept: `ciphers/dupuy468-anhalt/NOTES.md` line 1 now reads **`found-solved`** (23 Sept
+2026), via the leaf's own pre-existing interlinear gloss, not via any key from this document -- so it is no
+longer an open target this key could unlock, only a corroborating catalogue link (the same Moltzan was
+active in exactly this embassy's window, and dupuy468-anhalt's cipher long predates fr5761's own key list,
+which is undated internally but bound with 7 Feb - 18 Jul 1519 correspondence). No other 1519-1520
+ciphertext under any of the seven named correspondents was found on disk or in the catalogues searched.
+
+for the parent: fr5761 key 317 signs (8 correspondent blocks, sign_inventory.tsv); candidate letter
+dupuy468-anhalt (BnF Dupuy 468 item 28, Joachim von Moltzan) -- already found-solved 23 Sept 2026 via its
+own gloss, not via this key; no new candidate this pass.
