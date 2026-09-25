@@ -30,7 +30,18 @@
   "3. Treat the two 34-character lines as two independent short messages (rather than one 68-character message) in case they are unrelated per-line codes (e.g. two separate initials/acrostics), and re-run test 2's judge separately per line. Cost under $1 (reuses test 2's output)."
  ],
  "matched_control": "not yet run; test 2 above specifies the design (synthetic English monoalphabetic-substitution ciphertext, same N/K, same solver)",
- "cheap_test_done": [],
+ "cheap_test_done": [
+  {
+   "test": 1,
+   "date": "25 Sept 2026",
+   "worker": "LANE B3 bFAI (Sonnet)",
+   "method": "Martin Halpin 'next letter' hypothesis, tested with real credit-context data already on disk: James Mulliss's comment-thread transcription (Cipherbrain post 36, comment #5/#6, 9 Feb 2023, sources/schmeh/posts/36-fair-game.txt) gives the actual credit word each of ~65 marked letters sits in. Extraction script (specs/cheap-tests/fair-game-2010/run_test1.py, credits_words.py) takes the letter immediately following each mark within its word (a documented proxy -- the next listed word's first letter -- is used for the small number of marks that are a word's last letter). Multiset check: the 65 recoverable letters match the ciphertext's 67 known letters exactly except one missing S and one missing T (2 marked occurrences the commenter's list omits) -- corroborates this is the real marking, but the transcription is incomplete by 2/67 and its list order is an UNVERIFIED proxy for the true credit-roll order (a caveat on any negative below, per rule 3's normalize-conventions lesson).",
+   "target": "next-letter sequence (65 letters) judged against English: language score -2.202 (control random_p99 -1.77, real_p05 -0.944), word cover 0.462 (min 0.6) -- FAIL, tools/judge_plaintext.py verdict false",
+   "control": "(a) 3 synthetic sequences built with the SAME extraction procedure on the SAME word pool, marks placed to spell a known 13-letter name (ROBERTJOHNSON, unrelated to the film): name recovered exactly in all 3/3 trials -- confirms the procedure and script are not broken and can recover a real signal when one is planted. (b) 3 random-marking false-positive trials, same word pool, same N=65: judge FAIL on all 3/3 (scores -2.134 to -2.261, word cover 0.246-0.523) -- the real target's score (-2.202, cover 0.462) sits inside this random-noise band, not below or above it.",
+   "verdict": "control-backed negative for this specific realization of the Halpin hypothesis (real target indistinguishable from random-marking noise of the same design; sanity control confirms the test has power). Caveated: the source transcription is missing 2/67 known letters and its order relative to the true credit scroll is unverified, so this negative applies to THIS reconstruction, not to every possible ordering of the same words. Does not by itself close the target (tests 2-3 not run this pass, per brief).",
+   "files": "specs/cheap-tests/fair-game-2010/{credits_words.py,run_test1.py,test1_output.json}"
+  }
+ ],
  "judge": {
   "language": "en",
   "letters_min": 65,

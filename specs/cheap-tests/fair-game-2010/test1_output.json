@@ -1,0 +1,174 @@
+{
+  "test": "fair-game-2010 cheap_tests_in_order[0]: Halpin next-letter hypothesis",
+  "date": "25 Sept 2026",
+  "source_of_real_words": "sources/schmeh/posts/36-fair-game.txt, James Mulliss comment #5/#6 (already on disk)",
+  "multiset_check": "65 recoverable marked letters vs 67 known ciphertext letters: matches exactly except missing one S and one T (documented, see NOTES.md) -- corroborates the transcription but it is incomplete by 2/67 and its list order is an unverified proxy for true credit order",
+  "real_test": {
+    "n_entries": 65,
+    "n_boundary_proxies_used": 4,
+    "next_letter_sequence": "tatdmotaeaepmlefciceaselrtirinseoranaeouiugleaobadoauearussvwberr",
+    "n_letters": 65,
+    "judge": {
+      "checks": {
+        "length": {
+          "pass": true,
+          "got": 65,
+          "min": 65,
+          "max": 69
+        },
+        "language": {
+          "pass": false,
+          "score": -2.202,
+          "null_p99": -1.77,
+          "real_p05": -0.944,
+          "real_median": -0.804,
+          "mode": "both",
+          "N": 65
+        },
+        "words": {
+          "pass": false,
+          "cover": 0.462,
+          "min": 0.6,
+          "real_text_median_cover": 0.954
+        }
+      },
+      "pass": false,
+      "spec": "fair-game-2010"
+    }
+  },
+  "control_A_planted_name": {
+    "name": "ROBERTJOHNSON",
+    "trials": [
+      {
+        "trial": 0,
+        "constructible": true,
+        "recovered": "ROBERTJOHNSON",
+        "true_name": "ROBERTJOHNSON",
+        "match": true,
+        "boundary_proxies_used": 0
+      },
+      {
+        "trial": 1,
+        "constructible": true,
+        "recovered": "ROBERTJOHNSON",
+        "true_name": "ROBERTJOHNSON",
+        "match": true,
+        "boundary_proxies_used": 0
+      },
+      {
+        "trial": 2,
+        "constructible": true,
+        "recovered": "ROBERTJOHNSON",
+        "true_name": "ROBERTJOHNSON",
+        "match": true,
+        "boundary_proxies_used": 0
+      }
+    ],
+    "recovered_all_3": true
+  },
+  "control_B_random_false_positive_rate": {
+    "trials": [
+      {
+        "trial": 0,
+        "sequence": "caontsiaaaunrgnrernuracwtlrnnrdgtcdodajcnenneotanptclyntcrecnprhi",
+        "n_letters": 65,
+        "boundary_proxies_used": 11,
+        "judge": {
+          "checks": {
+            "length": {
+              "pass": true,
+              "got": 65,
+              "min": 65,
+              "max": 69
+            },
+            "language": {
+              "pass": false,
+              "score": -2.261,
+              "null_p99": -1.77,
+              "real_p05": -0.944,
+              "real_median": -0.804,
+              "mode": "both",
+              "N": 65
+            },
+            "words": {
+              "pass": false,
+              "cover": 0.246,
+              "min": 0.6,
+              "real_text_median_cover": 0.954
+            }
+          },
+          "pass": false,
+          "spec": "fair-game-2010"
+        }
+      },
+      {
+        "trial": 1,
+        "sequence": "lctitaklhumrruasacaraaokhktvruaacercfdaamydmmaosietorecrcrenjgcnc",
+        "n_letters": 65,
+        "boundary_proxies_used": 17,
+        "judge": {
+          "checks": {
+            "length": {
+              "pass": true,
+              "got": 65,
+              "min": 65,
+              "max": 69
+            },
+            "language": {
+              "pass": false,
+              "score": -2.134,
+              "null_p99": -1.77,
+              "real_p05": -0.944,
+              "real_median": -0.804,
+              "mode": "both",
+              "N": 65
+            },
+            "words": {
+              "pass": false,
+              "cover": 0.4,
+              "min": 0.6,
+              "real_text_median_cover": 0.954
+            }
+          },
+          "pass": false,
+          "spec": "fair-game-2010"
+        }
+      },
+      {
+        "trial": 2,
+        "sequence": "tatamtnauoudkalagrsljeagwisbsioarrasncdshioodonelyinsiaadegapmiad",
+        "n_letters": 65,
+        "boundary_proxies_used": 11,
+        "judge": {
+          "checks": {
+            "length": {
+              "pass": true,
+              "got": 65,
+              "min": 65,
+              "max": 69
+            },
+            "language": {
+              "pass": false,
+              "score": -2.18,
+              "null_p99": -1.77,
+              "real_p05": -0.944,
+              "real_median": -0.804,
+              "mode": "both",
+              "N": 65
+            },
+            "words": {
+              "pass": false,
+              "cover": 0.523,
+              "min": 0.6,
+              "real_text_median_cover": 0.954
+            }
+          },
+          "pass": false,
+          "spec": "fair-game-2010"
+        }
+      }
+    ],
+    "n_pass": 0,
+    "n_trials": 3
+  }
+}
