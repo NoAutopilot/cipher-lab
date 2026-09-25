@@ -96,7 +96,8 @@
  ],
  "matched_control": "cheap_test_done.1's random-split control (200 trials, same pool, same 6 group sizes) is the pool-test control; test 2's control (matched N/K/corpus/design) is not yet run",
  "judge": {
-  "language": "fr",
+  "language": "fr18",
+  "corpus_note": "fr18 (French official prose 1680-1790, ZX2-FR18 25 Sept 2026): held-out 18th-c. false-negative rate 0.183 at N200 vs fr16 0.961, fr19 0.983; set by the LANE ZX2 orchestrator 25 Sept 2026 19:56 UTC",
   "letters_min": 200,
   "control_samples": 200,
   "note": "tools/judge_plaintext.py's only wired 'fr' corpus is fr16 (Catherine de Medici's Lettres, 16th century) -- NOT era-matched to this target's 1752-1763 French prose (CLAUDE.md rule 3's pt17-vs-pt18 lesson applies directly: a language judge can be the wrong era even when it is the right language). Do not run the judge against fr16 and trust a FAIL or PASS without building an era-matched corpus first (LANE ZX2 worker ZX2-FR18 is building one concurrently, 25 Sept 2026); if fr18 has landed by the time a reading is judged, use it and note the corpus explicitly in NOTES.md."

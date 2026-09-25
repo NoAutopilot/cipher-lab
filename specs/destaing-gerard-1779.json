@@ -27,7 +27,8 @@
  ],
  "matched_control": "period_code_test.py (this folder): 1000 random draws matching this letter's N=104 distinct codes and 2-597 value range, tested for chance overlap with marbois.htm's partial code dictionaries; see cheap_tests_in_order item 3.",
  "judge": {
-  "language": "fr",
+  "language": "fr18",
+  "corpus_note": "fr18 (French official prose 1680-1790, ZX2-FR18 25 Sept 2026): held-out 18th-c. false-negative rate 0.183 at N200 vs fr16 0.961, fr19 0.983; set by the LANE ZX2 orchestrator 25 Sept 2026 19:56 UTC",
   "note_corpus": "fr18 (French diplomatic/official prose c.1680-1790) not yet built as of 25 Sept 2026 19:16 UTC when this spec was written (LANE ZX2 worker ZX2-FR18 claimed it the same round); this spec uses the default 'fr' corpus (tools/data/fr16, Catherine de Medici letters, 16th c.) per the job brief's fallback instruction, with the era mismatch (16th c. corpus vs an 18th c. letter) logged here, not silently accepted -- CLAUDE.md rule 3's V6-PTCORP lesson: re-point this spec's language to 'fr18' once tools/data/fr18 exists and re-run any judged candidate before trusting a FAIL.",
   "letters_min": 100,
   "letters_max": 500,
