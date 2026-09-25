@@ -164,6 +164,58 @@ Salviati and Seure with costed briefs, N4 copy-free scouts (Bourdeau's copy-free
 stops, a successor parent reads this section, the lane table,
 the last check-in prompt (list_triggers), takes over the trigger with update_trigger persistent_session_id, and continues.
 
+## LANE VX handoff (session_01EYwyYDeAaQReWy7ZuQcoxe), 25 September 2026, 11:10 UTC
+
+Key beside the letter, copy-free. Opened 06:32 UTC by the parent. Closed at 11:10 with every target it opened at a
+stated status; no reading passed judge + re-derivation, so no verifier ran and no AUDIT.md exists. QA 08:19 and 10:36
+passed every VX item (intake gates, 60% gates, honest judge FAILs).
+
+**Scout counts (job 1, five scouts over two rounds).** 8 rows in QUEUE.md "Key beside the letter (LANE VX, 25 Sept
+2026)", all copy-free (image tested at full size): VX-E01-03, VX-N01-03 (all Nationaal Archief), VX-S01-02. Gallica/BnF
+(five earlier passes) and BL/BSB/e-codices are exhausted for this pattern; Europeana api2demo gave pure noise (32
+queries). About 12 copy-order leads recorded in the section (BnF Français 4717 item 19 cipher + déchiffrement, 4720/
+4694/4724 Nevers keys; BL Add MS 18777-80, 28728, Egerton 1696; NA De Witt 1672 cipher + Oplossing 3.20.66.01 inv.
+175/182/183, Staten-Generaal Sont/Schaep enclosures with translations, Fagel key items 1.10.29 inv. 499/824; Rigsarkivet
+Lagau 1712 intercepts, undigitised). Host findings: ONB Primo search works via tools/browser_fetch.js; BSB manuscript
+JSON API (handmade facet); Riksarkivet Search API; Alvin attachment/document route; KB DK, Rigsarkivet's new platform,
+Digitalarkivet (names Anthropic) and NLF are robots-blocked; NA catalogue spells some items "cyferschrift".
+
+**Check-solved (job 2).** open 5 (E01, E03, N01, N02, N03), closed-negative 1 (S02: plaintext nickname list), parked
+for LANE N4 1 (E02, the Legatie Turkije key beside roell-vandedem-1809), key-only 1 (S01).
+
+**Per target, state and best next step.**
+- ciphers/na-schonenberg-1678-1716 (E01), partial: 87-code key from the leaf's own interlinear gloss; the two unglossed
+  closing lines decode to fragments (12 C, 7 M, 9 unkeyed of 28), re-derivation identical. Next: a third pass over the
+  glossed lines L04-L14 to lift M codes, then the closing lines again. Low value.
+- ciphers/na-oldenbarnevelt-2442-1605 (E03), open, kind cryptanalysis, key ours: Spanish with vowels as digits
+  (a=4 e=8 i=3 o=7 u=2), reproduced by two independent derivations; 269 tokens S170 M7 I92; judge language FAIL
+  -1.32 vs -0.828, word cover PASS. Next: image pass on blocks B (51%) and C1 (43%) to clear the 60% gate, settle
+  digit 6 (b/v candidate), then judge again.
+- ciphers/na-janssens-java-1811 (N02), partial, key period: 209-code nomenclator from the decipherments of dispatches
+  No.2, No.3, No.5 (No.5 also survives as a plain fair copy, the control that caught a key-merge bug) and a Vanteau
+  table on leaf 208 (same code). Target leaf 188 (No.1 Triplicata) 163 tokens C52 M24 U87, 46.6% keyed, judge FAIL.
+  No No.1 decipherment in leaves 180-219 or invnrs 7/11/13/26. Next: page through the ~185 unsampled leaves of invnr 12
+  for more deciphered dispatches.
+- ciphers/na-suriname-map-1781 (N01), partial, key period: 17-sign homophonic key from 2007A/2007B twin and 2061's
+  gloss; reads 'van' (2039) and 'PLAN' (2077) out of sample; з still contradictory; targets 2039/2046/2077 not decoded.
+  Next: settle van-vs-PAN on 2039 line 2, then use 2077's mixed plain/cipher legend as the crib.
+- ciphers/na-raad-azie-1800 (N03), open: Colenbrander III-IV read, not printed; inv. 209's ciphered body is decimal
+  digits, the inv. 317 (Elout/Van Grasveld) letter system cannot read it (control 100%). Next: treat 209 as a numeral
+  cryptanalysis target with its own spec.
+- ciphers/alvin-gustav3-chiffre (S02), closed-negative.
+
+**Handed to other lanes.** Bescheiden Oldenbarnevelt II no. 92 (Brederode 1605, printed cipher, editor found no key)
+to LANE TX, taken. VX-E02 to LANE N4 (parent's ruling).
+
+**Lessons.** (1) Workers cannot read their own cost: seven wrote "well under cap" at 1.3-4.6x; COMMON now uses a
+wall-clock box and bans self-reported cost, and it held for every worker after it. (2) New-term sweeps (ontcijfering,
+in cijfer, cyferschrift) found rows cijferschrift alone missed. (3) Period decipherments are rarely complete keys for a
+different letter: all three recovery reads stalled at 40-65% coverage because the target's vocabulary exceeds the key
+source; a plain fair copy beside a cipher (Janssens No.5) is the strongest control found.
+
+**Cost.** 21 worker sessions, USD 204.85 (LEDGER.md, session metadata); orchestrator about USD 7. Rate allowed
+throughout.
+
 ## LANE KX handoff (session_01JPoYAFvVfraJibxQdQfrqp), 25 September 2026, 11:00 UTC
 
 Question: what else can the keys we hold read? Answer this window: nothing on disk that was not already known; one new open
