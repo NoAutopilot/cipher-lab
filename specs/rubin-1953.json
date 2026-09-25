@@ -8,7 +8,7 @@
   "en",
   "nulls"
  ],
- "ciphertext_pending": "No transcription found on disk; the post (sources/schmeh/posts/09-rubin.txt) links two scans, not typed anywhere in the post text: an older, worse photograph at https://scienceblogs.de/klausis-krypto-kolumne/files/2013/11/Rubin-Case.png, and 'a much better reproduction' obtained by Craig Bauer for his book 'Unsolved!' at https://scienceblogs.de/klausis-krypto-kolumne/files/2018/05/Rubin-Cryptogram.png. Schmeh's post quotes only fragments visible in the image as prose, not a full transcription: the clear words 'Dulles' and 'Conant', and three pronounceable non-words -- 'frodoscolmn', 'astereantol', 'matel' -- that Bauer suggests may be codewords in a nomenclator/codebook style. A fetch of the better (2018) image, host scienceblogs.de already confirmed reachable, plus a blind transcription pass, would put a working ciphertext on disk; Bauer's book 'Unsolved!' (Craig Bauer, a source also cited for koehler-1944 per LANDSCAPE.md-adjacent work) may carry a full transcription already in print and would be the faster route if reachable (Google Books/HathiTrust per the Access playbook, not attempted this pass).",
+ "ciphertext_pending": "resolved 25 Sept 2026, LANE B2 worker bRUB: transcribed into ciphers/rubin-1953/ciphertext.txt (single blind pass from the 2018 Bauer reproduction, images/rubin-cryptogram-2018.png). See ciphers/rubin-1953/NOTES.md 'Test 1' section for N/K/IC and controls, line/word structure, and the sign table for the one unclear glyph. Unreconciled (rule 2/7): a second pass and reconciliation are test 2, not run here.",
  "alphabet": "Latin letters (some passages read as pronounceable pseudo-words) plus separate lines of only '0', '1', '.', and 'x' characters, possibly Morse-like, per Schmeh: 'the Rubin cryptogram contains lines consisting of zeroes, ones, periods and x's only. This might represent a Morse-like code.'",
  "constraints": {
   "clear_words": [
@@ -30,7 +30,10 @@
   "2. Print-check Craig Bauer's 'Unsolved!' (the book that produced the better scan) for any transcription or partial reading already in print, via Google Books/HathiTrust/Internet Archive per the Access playbook, before running fresh cryptanalysis on a possibly-already-published text. Cost $1.",
   "3. Once transcribed, test the Morse-hypothesis lines (0/1/./x only) as literal Morse code or a simple binary mapping directly against English, since this is nearly free to check exhaustively and would need no language corpus if it produces recognisable words. Cost under $1."
  ],
- "matched_control": "not yet run; no ciphertext on disk to test",
+ "matched_control": "test 1 (25 Sept 2026, bRUB): letter-passage IC vs an English control at the same N and a uniform-random control at the same K, see cheap_test_done.1",
+ "cheap_test_done": {
+  "1": "25 Sept 2026, LANE B2 worker bRUB, Sonnet. Fetched images/rubin-cryptogram-2018.png (scienceblogs.de, 1 request) and ran one blind transcription pass -> ciphers/rubin-1953/ciphertext.txt. Letter-passage stats (Blocks A+D pooled, ciphers/rubin-1953/scripts/stats.py, reproducible, no fetch): target N=305 K=26 IC=0.0612; English control (tools/data/pg1661_holmes.txt, same N, 10 windows) mean IC=0.0621 (0.0599-0.0671); uniform-random control (same K, 5 seeds) mean IC=0.0387 (0.0376-0.0396, closed-form 1/K=0.0385). Target IC sits inside the English control's range, well above uniform-random -- a single-pass observation only (rule 10), not distinguishing genuine English content from Bauer's pronounceable-nulls hypothesis. Full report, line/word structure, sign table and a transcription discrepancy against Schmeh's post ('frodoscolmn' in the post vs 'fodroscolmn' read off the image) in ciphers/rubin-1953/NOTES.md. Test 1 counts as 'moved it': a working ciphertext is now on disk where none existed."
+ },
  "judge": {
   "language": "en",
   "letters_min": 20,

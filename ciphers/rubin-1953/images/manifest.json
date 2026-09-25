@@ -1,0 +1,24 @@
+{
+  "fetched": "25 Sept 2026, LANE B2 worker bRUB",
+  "images": [
+    {
+      "id": "rubin-cryptogram-2018",
+      "file": "rubin-cryptogram-2018.png",
+      "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2018/05/Rubin-Cryptogram.png",
+      "description": "Craig Bauer's 2018 reproduction of the Rubin cryptogram, the better of the two scans linked from Schmeh's post (used for this transcription).",
+      "size_bytes": 942946,
+      "sha1": "52e288b4931ead674e3471412c417d0c42416468",
+      "dimensions": "900x549"
+    },
+    {
+      "id": "sym1_crop",
+      "file": "sym1_crop.png",
+      "url": "derived crop of rubin-cryptogram-2018.png, region (300,188)-(500,222) at native resolution",
+      "description": "Close crop of the one unclear glyph (block C line 1, before 'ly'), catalogued as [SYM1] in ciphertext.txt.",
+      "size_bytes": 14740,
+      "sha1": "a728d86d8893cb54ba3cef263f6597aa77408504",
+      "dimensions": "200x34"
+    }
+  ],
+  "not_fetched": "the older, worse 2013 photograph (scienceblogs.de/klausis-krypto-kolumne/files/2013/11/Rubin-Case.png) -- brief said fetch only if a line in the 2018 reproduction is unreadable; none was."
+}

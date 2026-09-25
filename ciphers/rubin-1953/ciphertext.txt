@@ -1,0 +1,34 @@
+# rubin-1953 ciphertext -- single blind pass (LANE B2 worker bRUB, 25 Sept 2026)
+# Source image: images/rubin-cryptogram-2018.png (Craig Bauer's 2018 reproduction for "Unsolved!",
+# fetched from https://scienceblogs.de/klausis-krypto-kolumne/files/2018/05/Rubin-Cryptogram.png).
+# Case preserved exactly as typed -- irregular internal capitals appear throughout and may be
+# meaningful (Bauer's null-letter hypothesis turns on which letters are "real"), so this is not
+# normalised to one case. UNRECONCILED single pass (rule 2 of CLAUDE.md); a second pass and
+# reconciliation are test 2, not run here.
+# [SYM1] = one unclear glyph, block C line 1 (see NOTES.md sign table): an overstruck mark before
+# "ly", resembling a typewriter 1/4-fraction key struck over "l"; crop images/sym1_crop.png.
+#
+# Block A: letter/word passages, lines 1-7 (line 7 follows a blank line in the source)
+digIs 'sawthn'g mathUlley-Dulles crancklavn' meteore iElli
+zheaopfvamn greA'Lltenmn
+kKiqtu albawmnabs dzhjellEiE matel ungdreabozvmie oie
+sprekln meIktrene fodroscolmn oier
+*driEk Conant astereantol Iyvondiolon
+desceth megleagna mAlzbourgnion grele
+
+newtdo sfoatzdexklagh 2pont [SYM1]ly asgestaltverbensdi
+
+# Block B: one numeral-only line (distinct from the 0/1/./x block; digits 0-9, not just 0/1)
+7469921
+
+# Block C: lines of only 0, 1, '.', 'x' (Schmeh: "might represent a Morse-like code")
+100.011x100.10x.10011.1.xx0.101.x.001011.101x1011.1001..10x1
+
+01.001011x10.1x.11101.x1.001x1.001001
+
+0.101.x.101110.x101.1101101.0101x1.1011
+
+# Block D: closing lines
+Want: datum Tywood Janossey Ketelle
+
+R-QR6                              aliacaui PER
