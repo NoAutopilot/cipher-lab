@@ -44,6 +44,21 @@
    "target_percentile_in_control": 100.0,
    "verdict": "target ABOVE control range -- short-token/period clustering exceeds chance; supports the abbreviation-shaped reading over 'meaningless periods' but does not itself distinguish a real 16th-c. abbreviation convention from another structured design (no abbreviation-convention corpus on hand to test against directly). Not a reading, not closed-negative: control-backed positive signal only. See specs/cheap-tests/untersberg-code/README.md.",
    "cost_usd_estimate": "well under $1, disk-only, no hosts beyond intake"
+  },
+  {
+   "test": "NEAR step 1 (not a spec cheap_tests_in_order test; NEAR.md's named next step after test 1 above)",
+   "date": "25 Sept 2026",
+   "worker": "LANE B4 bUNT2",
+   "method": "abbreviation-expander beam search (word bigram + unigram backoff) over tools/data/de16 (Early New High German, model-written, era-plausible stand-in; no Latin corpus wired), controlled first per rule 3: 5 synthetic 71-token windows built from real de16 text abbreviated by suspension to the target's own token-length and digit-token shape (leave-window-out training). specs/cheap-tests/untersberg-code/{expand_lib.py,run_control.py,run_target.py,README.md}.",
+   "control_mean": 0.321,
+   "control_per_window": [0.148, 0.459, 0.344, 0.393, 0.262],
+   "floor_mean_shuffled_word_order": 0.289,
+   "floor_per_window": [0.279, 0.230, 0.344, 0.328, 0.262],
+   "gate": 0.30,
+   "gate_met": true,
+   "target_result": "top expansion of the real 6 lines: 44/61 letter-tokens got a beam candidate (17 no vocabulary match, grade I), rest grade M (rule 4, no H/C/S possible). judge_plaintext.py specs/untersberg-code.json FAIL length (got=240, min=90, max=130) and FAIL language (score=-1.169 vs real_p05=-0.464) -- judging a self-chosen expansion with the de judge is circular and this FAIL counts for little either way (stated per brief).",
+   "verdict": "Control clears its stated 0.30 gate, but the floor (shuffled word order, same expander) is only 0.032 below the control mean and the two distributions overlap heavily -- most of the control's score likely comes from prefix-matching a small repetitive vocabulary, not real bigram context; a weak pass, not strong evidence an expander would work on a harder period corpus. Target's own top expansion is not fluent and is not a reading (rule 5 near-solve amendment: partial, not closed-negative; NEAR.md is the orchestrator's file, not edited here). One-line suggestion: a real (non-model-written) Latin or German period corpus, and an abbreviation-convention word list (Cappelli/Grun) instead of generic prose vocabulary, would be the next lever if this line is pursued.",
+   "cost_usd_estimate": "well under $1, disk-only, no hosts beyond intake, no subagents"
   }
  ],
  "judge": {
