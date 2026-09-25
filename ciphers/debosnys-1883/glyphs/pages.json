@@ -1,0 +1,42 @@
+{
+ "c1": {
+  "image": "images/Debosnys-Cryptogram-1.png",
+  "box": [
+   470,
+   0,
+   1111,
+   410
+  ],
+  "median_h": 20.5
+ },
+ "c2a": {
+  "image": "images/Debosnys-Cryptogram-2a.png",
+  "box": [
+   0,
+   240,
+   1053,
+   1527
+  ],
+  "median_h": 23.0
+ },
+ "c2b": {
+  "image": "images/Debosnys-Cryptogram-2b.png",
+  "box": [
+   0,
+   0,
+   1103,
+   760
+  ],
+  "median_h": 25.0
+ },
+ "c3": {
+  "image": "images/Debosnys-Cryptogram-3.png",
+  "box": [
+   150,
+   150,
+   1107,
+   430
+  ],
+  "median_h": 22.0
+ }
+}

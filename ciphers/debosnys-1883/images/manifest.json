@@ -1,0 +1,48 @@
+{
+  "fetched": "25 Sept 2026",
+  "source": "sources/schmeh/posts/03-debosnys.html (Cipherbrain / scienceblogs.de post 3, 6 Jan 2020)",
+  "note": "request cap 4 (brief). Cryptogram #2 has two page images (2a, 2b), fetched complete. Cryptogram #4 also has two page images (4a, 4b) and was NOT fetched -- next requests to this host.",
+  "images": [
+    {
+      "file": "Debosnys-Cryptogram-1.png",
+      "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2015/02/Debosnys-Cryptogram-1.png",
+      "cryptogram": "1",
+      "part": "complete (single page, six lines per Schmeh)",
+      "size_bytes": 464408,
+      "sha1": "fb3da11dc3db727d6a9df40570d085a5ca5dd1be",
+      "dims": "1111x481"
+    },
+    {
+      "file": "Debosnys-Cryptogram-2a.png",
+      "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2015/02/Debosnys-Cryptogram-2a.png",
+      "cryptogram": "2",
+      "part": "page a of 2",
+      "size_bytes": 1250004,
+      "sha1": "e5c14104d9fb9061e7364392928a7433977f137c",
+      "dims": "1053x1527"
+    },
+    {
+      "file": "Debosnys-Cryptogram-2b.png",
+      "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2015/02/Debosnys-Cryptogram-2b.png",
+      "cryptogram": "2",
+      "part": "page b of 2",
+      "size_bytes": 734784,
+      "sha1": "b9db26028197054b93e43e92dd3550e312e45815",
+      "dims": "1103x831"
+    },
+    {
+      "file": "Debosnys-Cryptogram-3.png",
+      "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2015/02/Debosnys-Cryptogram-3.png",
+      "cryptogram": "3",
+      "part": "complete (single page, shortest of the four per Schmeh)",
+      "size_bytes": 1221209,
+      "sha1": "8018bab3ae3912f2ac03fa46bfa8ce790eecf044",
+      "dims": "1107x1375"
+    }
+  ],
+  "not_fetched": [
+    "Debosnys-Cryptogram-4a.png",
+    "Debosnys-Cryptogram-4b.png"
+  ],
+  "requests": {"host": "scienceblogs.de", "count": 4, "spacing_s": ">=1.8", "user_agent": "browser UA (Chrome/120 string)", "status": "all 200, no 429/403"}
+}
