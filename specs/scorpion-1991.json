@@ -51,7 +51,9 @@
   "language": "en",
   "letters_min": 60,
   "letters_max": 200,
-  "control_samples": 200
+  "min_word_cover": 0.6,
+  "control_samples": 200,
+  "note": "min_word_cover added 25 Sept 2026 by bSPEC2 (LANE B3 judge-block repair pass); no word-spacing markers in the ciphertext itself (constraints.no_word_spacing), so this checks the candidate decode's segmentability, not the cipher's own form."
  },
  "value": "low-medium: high homophone density (near 1:1 symbol-to-occurrence on the first message) makes this a hard cryptanalytic target regardless of technique; hoax risk noted by two independent sources; 'claimed solutions 2018 unverified' per the survey row is worth checking in a print-check pass before any fresh cryptanalysis",
  "model": "Sonnet",

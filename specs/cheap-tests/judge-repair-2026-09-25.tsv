@@ -1,0 +1,11 @@
+slug	before_language	before_min_word_cover	after_language	after_min_word_cover	action	who_when
+copenhagen-1835	da19	0.6	da19	0.6	no change (already wired: LANE B2, 25 Sept 2026)	bSPEC2 25 Sept 2026 19:15 UTC
+pollaky-1865-1875	en	missing	en	0.6	added min_word_cover	bSPEC2 25 Sept 2026 19:15 UTC
+catokwacopa-1875	en	0.5	en	0.5	no change (already wired)	bSPEC2 25 Sept 2026 19:15 UTC
+te-wood-1950	(deliberately omitted)	(none)	(deliberately omitted)	(none)	no change -- schema_note already documents why: N=21, key and plaintext both explicitly non-English, a corpus language check would be uninformative/misleading at this length	bSPEC2 25 Sept 2026 19:15 UTC
+cylob-c1995	(none)	(none)	(none)	(none)	skipped -- bCYL (session_01VG15i7g45rvWQF6hgXCKmU) claimed this file live in ROOM.md 19:13 UTC for its own intake+test1 update, no done line yet at time of this pass; leave to bCYL/its lane orchestrator	bSPEC2 25 Sept 2026 19:15 UTC
+scorpion-1991	en	missing	en	0.6	added min_word_cover (noted the cipher itself has no word-spacing; this checks the candidate decode's segmentability)	bSPEC2 25 Sept 2026 19:15 UTC
+mccormick-1999	en	0.6	en	0.6	no change (already wired: LANE B2, 25 Sept 2026)	bSPEC2 25 Sept 2026 19:15 UTC
+rubin-1953	en	missing	en	missing	skipped per brief -- bRUB2 (session_01XFS4GrM6jxrB6TFFXqo1ZZ) claimed rubin-1953 test 2 + "judge block repair" itself in ROOM.md 19:13 UTC	bSPEC2 25 Sept 2026 19:15 UTC
+mlh-1976	(deliberately omitted)	(none)	(deliberately omitted)	(none)	no change -- schema_note already documents why: no ciphertext-to-plaintext mapping exists yet (symbols/rebus, may not encode English at all); a judge language check needs a candidate decode first	bSPEC2 25 Sept 2026 19:15 UTC
+bullet-tuscany-1944	en	missing	en	missing	skipped per brief -- bBUL2 (session_01CekcLmqjeREuxLvWc8VzUj) claimed bullet-tuscany-1944 test 2 in ROOM.md 19:12 UTC (repairs its own per brief)	bSPEC2 25 Sept 2026 19:15 UTC
