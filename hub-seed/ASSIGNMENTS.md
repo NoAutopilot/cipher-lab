@@ -498,3 +498,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T18:18Z	session_01Umzu5kUhXYdLmYkiC7Yrh9	TOOL-FAMILY done $7.12 D, archived	tools/family_run.py e1e8721	
 2026-09-25T18:18Z	session_01EYdaFpKDG8Ptu14Z14bs9L	retrospective j done $1.43 D, archived	RETRO-2026-09-25j.md	
 2026-09-25T18:19Z	session_01G9ZjiryvFjmJxDnavit57i	LANE R6 Y10 (Sonnet, cap 5)	rah-xiquena-1868 capture + rah-canada key trial	brief 2026-09-25-lane-r6-y10-xiquena.md
+2026-09-25T18:28Z	session_012RiiYfwp3KEw4ma3SE5n5U	NEAR-TOOL (Sonnet, cap 8)	board Near solves view from status.json.near; tools/near_check.py	prompt inline; UPDATES.md near-solve row
