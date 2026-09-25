@@ -255,6 +255,25 @@ googleapis.com/books: 2 (with `&key=$GOOGLE_BOOKS_KEY&country=US`, key never pri
 (advancedsearch + be-api.us.archive.org full-text search, both inconclusive/negative). catalog.hathitrust.org:
 1 (guessed OCLC, empty). WebSearch: 4. No subagents, no logins, no credentials printed.
 
+## Google Books API (GBOOKS, 25 Sept 2026)
+
+Parent worker GBOOKS, LOCAL-QUEUE.tsv row L9, per CLAUDE.md's Access playbook "Cloud fix" (`&country=US&key=$GOOGLE_BOOKS_KEY` clears the 403 that blocked every earlier attempt at this target). ~29 calls, 2s apart, key never printed.
+
+**Edition search.** `intitle:"Lettres de Henri III" inauthor:Boucher` (6 items) and a Société de l'histoire de France search (300 items, mostly noise) surface the full run of Champion/François/Boucher volumes. Every catalogue-only record (`klqGtAEACAAJ` tome VI 2006, `lF4s0gEACAAJ`/`WCcz0QEACAAJ`/`nsiZ0QEACAAJ`/`DbtmzwEACAAJ` other tomes, `3xL8h_sR6PsC`) is `viewability: NO_PAGES` — as found before, still blocked.
+
+**New this pass: one edition is not NO_PAGES.** `coKS2QuroYYC` — "Lettres de Henri III, roi de France, 4 janvier 1583-20 mars 1585" (tome VI, Librairie Droz, ISBN 9782952573917, publishedDate field inconsistently 1959 vs 2006 depending on which query returns it, ID same either way) — has `viewability: PARTIAL`, `accessViewStatus: SAMPLE` under `country=US`. This is the same tome VI whose apparatus this folder has called unreadable since 24 Sept; it is not fully open, but Google's snippet index can be queried against it (`q=<terms>+isbn:9782952573917`).
+
+**Verbatim snippets obtained (isbn-scoped queries, all against `coKS2QuroYYC`):**
+- `"ms. 16092" chiffre` → `"... ms. 16092, fol. 178 : orig. 5169 A la République de Venise (6 janvier, Paris). — Mêmes remercie-ments que lui exprimera son ambassadeur. (De Neufville.) Ibid., fol. 179-180 : copie ; Venise, Arch. di Stato, Coll..."`
+- `"Venise Maisse"` → `"... Maisse (6 janvier, Paris). Il remercie Venise de l'honneur fait à son beau-frère, le duc de Joyeuse, qui a reçu la qualité de gentilhomme vénitien 3. (De Neufville.) Bibl. nat. de Fr., ms. 16092, fol. 178 : orig. 5169..."`
+- `"Pinart 16092"` → `"... (Pinart.) Bibl. nat. de Fr., ms. fr. 16092, fol. 144-145 : orig. 5032 Au maréchal de Matignon (29 septembre). — Les trois états de Lauzerte, ceux du Quercy et le parlement de Toulouse lui ont demandé de révoquer l'ordre..."`
+- `"ambassadeur Venise"` → `"... Ce qui a été dit à Maisse à propos de l'affaire Bathory a été confirmé au roi par l'ambassadeur de la..."` (entry near 5169/5173, no folio in the visible window)
+- `"Pinart chiffre"` / `"en chiffre" isbn:...` → a **separate** entry, not yet tied to a folio/ms number: `"... en chiffre à Pinart. Il ne faut pas se fier à lui car ils pensent qu'il a voulu tuer don Antonio et s'est enfui quand ce prince allait en faire justice 4. 5612 Au cardinal d'Este (11 décembre, Saint-...)"` — this is the entry immediately before #5612 (dated 11 December), so itself dated ~10 December; its own manuscript citation was not recovered (`"attentat barbare" Pinart`, `"capitaine des gardes" Pinart`, `"5611" Pinart` all returned 0 items against this isbn scope — Google's snippet index only returns a window when the exact query terms co-occur closely, not the full passage).
+
+**What this settles and what it doesn't.** Boucher's tome VI **does** cite fr.16092 directly by folio (at least entries 5032 → fol.144-145, 5169 → fol.178, both "orig.") — confirming, for the first time this folder has verified, that her apparatus draws on this exact manuscript and transcribes its letters in clear French with folio citations, not just narrative paraphrase. Tome VI also contains at least one genuine "chiffre"/"en chiffre" reference (the ~10 December entry, addressee Pinart, re: an assassination attempt and "don Antonio" — likely Antonio, Prior of Crato, the Portuguese pretender, consistent with 1583-84 Habsburg-Portugal politics) — but **its manuscript source (fr.16092 vs. a different volume in Boucher's run) was not recovered this pass**, so it cannot yet be said to confirm or rule out a decipherment specifically from fr.16092. No snippet obtained ties any of the fr.16092-cited entries (5032, 5169) themselves to "chiffre"/"déchiffré" wording. **Snippets cannot fully answer the row's question**, per the row's own instruction for that case, but they substantially narrow it: the right book is now known to be partially queryable, and the next step is a person or browser session opening `coKS2QuroYYC`'s SAMPLE preview (`http://books.google.com/books?id=coKS2QuroYYC`) directly and reading around entry ~5611 (just before 5612) to find that entry's own folio citation, plus entries 5170-5173 (the other 6 January items following 5169) for any further fr.16092 cipher mentions.
+
+LOCAL-QUEUE.tsv row L9 left `queued` (not `done`): the core question is narrowed, not settled. Row instruction updated with this finding.
+
 ## Maisse outgoing registers (fr.16089-16091 series), 24 September 2026
 
 Access-worker pass (Sonnet, LANE G, cap $10). Job: chase the previous pass's "fr.17834" lead -- the register of
