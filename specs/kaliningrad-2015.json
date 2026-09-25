@@ -11,8 +11,8 @@
   "de",
   "ru-cyrillic-transposed"
  ],
- "ciphertext": null,
- "ciphertext_pending": "Two sheets, photographed in the Kaliningrad press and on Cipherbrain post 19 (2017); a reader's transcription exists on the Russian blog thread linked from the post and in reader Thomas's comments (alphabet: abcdefghiklmnorstuvwz plus d' f' h' l' m' n' n\" ö r' s' t' ü z', e-circumflex, e-underlined: 37 signs; index of coincidence about 0.054). Not on disk; the comment thread of the saved post carries the alphabet but not the full text.",
+ "ciphertext": "ciphers/kaliningrad-2015/ciphertext.txt",
+ "ciphertext_pending": "Resolved 25 Sept 2026: full transcript found already on the saved post (Thomas Ernst, comment #32) and checked against the two fetched images; see ciphers/kaliningrad-2015/NOTES.md and cheap_test_done below.",
  "alphabet": "Latin letters with apostrophes and diacritics, 37 signs",
  "constraints": {
   "ic": 0.054,
@@ -35,5 +35,13 @@
  "model": "Sonnet",
  "status_24_Sept_2026": "open per Schmeh 2017; nothing later found 24 Sept 2026",
  "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run is under cheap_test_done with its control",
- "written": "24 Sept 2026 by the survey worker (session_013GkMQP9y84gHGG4pSSwaQj), claude-fable-5-1"
+ "written": "24 Sept 2026 by the survey worker (session_013GkMQP9y84gHGG4pSSwaQj), claude-fable-5-1",
+ "cheap_test_done": {
+  "test": 1,
+  "date": "25 Sept 2026",
+  "method": "Fetched both cryptogram images from scienceblogs.de; used the full transcript already on the saved post (Thomas Ernst, comment #32, not the separate Russian dirty.ru thread, which was not fetched once the on-page transcript was found) as ciphertext.txt; checked it row by row against the images (own pass, spot-check resolution, not a second blind reconciled pass); computed N/K/IC and matched-N IC controls for transliterated Russian (one Gutenberg fetch, id 30774) and German (tools/data/de16).",
+  "target": "N=978 K=36 IC=0.0657",
+  "control": "ru (transliterated, Gutenberg 30774): IC mean=0.0563 range=(0.0543-0.0605), 20 windows N=978, seed 42; de (tools/data/de16/composed_enhg.txt): IC mean=0.0724 range=(0.0676-0.0765), 20 windows N=978 from a 6855-letter corpus (heavily overlapping, not independent), seed 42; Polish not fetched (one-Gutenberg-fetch budget spent on Russian)",
+  "verdict": "not conclusive for language: target IC sits above the Russian control's range and near/inside the German control's range, which is not the direction a hard/soft-split K=36 alphabet would be expected to move IC if the plaintext really is one of these languages under simple substitution or transliteration. Row-level transcription check found no disagreement beyond a known labelling convention (Ernst's 'x' for the hard-sign-like glyph)."
+ }
 }
