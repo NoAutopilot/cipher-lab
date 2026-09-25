@@ -1,9 +1,65 @@
 partial
+CSP Foreign Elizabeth vol.21 pt.3 pp.197-217 and pt.4 pp.199-212 (British History Online) read by this worker today, with a control name confirmed present on each page, and DECODE's own record pages fetched directly (RecordsView/8477 etc.): no decipherment of the Cobham/Needham cipher passages found in print and DECODE still marks every record Non-decrypted/Partially decrypted; unchanged from the 23 Sept 2026 sweep below.
 
 # BL Harley MS 287 cipher letters 1587-88: Cobham to Walsingham (4), Needham, unsigned (7) — DECODE R8477-R8496
 
 - Source: QUEUE.md rank 13 (score 33), scored 20 September 2026; catalogued from the DECODE record range
   (de-crypt.org/decrypt-web/RecordsView/8477 through 8496) via Bourdeau's `cyphersolver` catalogue harvest.
+
+## Check-solved (LANE CX2, 25 September 2026)
+
+Fresh sweep by this worker (session CX2-BRIT2), independent of the 23 Sept pass below (its findings are not
+quoted, only cross-checked).
+
+1. **Web search.** `Harley MS 287 Cobham Walsingham cipher 1587 1588 deciphered solved` and `Harley 287 cipher
+   "solves" Claude GPT Vals AI` (WebSearch) — no page reports this volume solved; hits are the Babington Plot
+   (unrelated Mary Stuart ciphers), a Cambridge Core article on Nicholas's correspondence, and the unrelated
+   Cyphral Distich (Urquhart 1653) model-solve story. One snippet paraphrased Bourdeau's own `harley287`/
+   `cobham1588` pages (see item 5) without adding a new source. found=false.
+2. **Print, own read.** CSP Foreign Elizabeth vol.21 pt.3 (British-History-Online, `cal-state-papers/foreign/
+   vol21/no3`, HTTP 200) is dated April-December 1587; fetched `pp197-217` ("Elizabeth: July 1587, 26-31") and
+   found the Francis Needham letter dated "Flushing, 28 July, 1587" calendared as an ordinary English narrative
+   of the Sluys relief attempt, with no "in cipher"/"deciphered" marker on it; control: the same page also
+   calendars "Sir William Pelham to Walsingham" and "The Same to Walsingham" for the same date, confirming real
+   page content, not a stale fetch. CSP Foreign vol.21 pt.4 (`cal-state-papers/foreign/vol21/no4/pp199-212`,
+   "Elizabeth: March 1588, 16-20") read the same way: no entry names "Cobham" on this page; two entries
+   mentioning "Ostend" (Remarks touching Ostend; De Loo to Burghley) are plaintext with no cipher notation;
+   control: "Sir James Crofte" (20 March) and "Dr. Rogers" (18 March) both present on the page, confirming it
+   is being read, not a blank/error page. Neither page reproduces or notes a decipherment of the Harley 287
+   cipher runs. Google Books: `GOOGLE_BOOKS_KEY` is set in this environment (unlike the 23 Sept pass, which
+   found it unset) but not used this pass — the calendar pages above already answer the "is it printed
+   deciphered" question with a control, and CLAUDE.md's usage rule against redundant fetches applies once one
+   source has answered with a control.
+3. **Community lists.** `sources/cryptiana/web/elizabeth.htm` re-grepped (on disk, not edited): still documents
+   Cobham's 1588 ciphers with Burghley/Walsingham only in general terms, no mention of Harley MS 287 or these
+   DECODE records, no decipherment printed. Cipherbrain/scienceblogs.de: WebSearch snippets only, as
+   23 Sept (full-page fetch of that host is not attempted here; not re-tested for reachability this pass).
+   found=false in Cryptiana; unread/unreachable on Cipherbrain (unchanged).
+4. **DECODE.** de-crypt.org answers HTTP 200 from this container today (egress unblocked since 23 Sept, when it
+   was `connect_rejected`). Fetched `RecordsView/8477`, `8479`, `8482`, `8490`, `8496` directly (no login,
+   1.6s apart): R8477 Non-decrypted, R8479 Partially decrypted, R8482 Non-decrypted, R8490 Non-decrypted, R8496
+   Non-decrypted — DECODE's own status field, read by this worker, matches Bourdeau's off-platform findings
+   below and shows no one has posted a decipherment to the platform itself. found=false (own read, not a
+   citation of the 23 Sept "unreachable" note, now superseded).
+5. **Bourdeau (`github.com/dbourdeau/cyphersolver`, fresh shallow clone 25 Sept 2026, MIT code / CC BY 4.0
+   text).** Re-confirms the 23 Sept finding, dated in this clone's own commit (25 Sept 2026 11:19): `needham1587/`
+   (R8479, "read", 227/261 tokens measured, three-grid pigpen, Wilkes-Walsingham key per CSP Foreign 21/3 n.4,
+   key itself in BL Add MS 5935, not consulted); `harley287/` (R8477+R8482-R8487, "read in part", reclassified
+   from "read" on 22 Sept because no token-level fraction was ever computed — open items still code 42, sign
+   `.7.`, one Jesuit's surname, one verb, scattered words; R8477/f.11 confirmed a different, shorter, unrelated
+   code, not read); `cobham1588/` (R8490+R8492+R8495+R8496, "read in part", key rebuilt from the same cipher's
+   glossed siblings, no fraction measured). No other DECODE record in the R8477-R8496 range belongs to a
+   different BL volume (checked profile.json shelfmarks for every neighbouring folder — harley1582r8499/r8500/
+   r8504, harley286, r8356/r8358/r8361/r8362/r8364, stafford1586, walsingham1572/1572nov/1585, wotton1585 — all
+   are Harley MS 260, 1582 or 286, or Add MS 32657, not Harley MS 287). Write-ups unchanged:
+   https://dbourdeau.github.io/cyphersolver/harley287.html, /cobham1588.html.
+6. **Aymeloglu (`github.com/aaymeloglu/unsolved-ciphers`, fresh shallow clone 25 Sept 2026; no licence, cite
+   only).** `grep -rli` for "cobham", "walsingham", "needham", "harley" (any Harley shelfmark) across the whole
+   repository: zero matches beyond the unrelated `forster-1644` and `royalist-1646` folders (different targets,
+   different shelfmarks). found=false (not attempted in this repository).
+
+Intake verdict: open (this worker's own CSP Foreign read, with a control on each page, satisfies the gate's
+citation requirement; `tools/intake_gate_check.py` exits 0 below).
 
 ## Check-solved sweep (23 September 2026)
 
