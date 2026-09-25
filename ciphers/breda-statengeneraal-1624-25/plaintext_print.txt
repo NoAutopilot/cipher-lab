@@ -1,0 +1,58 @@
+Source: G.G. van der Hoeven, Geschiedenis der vesting Breda (1868), Bijlage XIX, p. xxxii-xxxiii.
+Google Books volume nZl28awLRfUC, pages PR32-PR33 (printed pp. xxxii-xxxiii).
+Transcribed 25 Sept 2026 by OX-BRE2 from the page image (tools/browser_fetch.js screenshot of the
+Google Books reader); see images/manifest.json and images/vanderhoeven1868_p032-033_bijlageXIX.png,
+images/vanderhoeven1868_p033-034_bijlageXIX-XX-boundary.png. Grade: read directly from a printed source
+(H by CLAUDE.md rule 4's "H read from a key source" sense of a primary printed edition), not a
+decipherment by this project. Whether this text is itself a decipherment of NA 1.01.02 inv.4945 piece I's
+ciphertext, or an independently-surviving plain draft, is the open question -- see NOTES.md "Print check,
+25 Sept 2026 (OX-BRE2)" and CLAUDE.md rule 10 (novelty is the verifier's call, not this worker's).
+
+Original spelling, punctuation and line breaks as printed (page break marked). No cipher digits appear
+anywhere in this bijlage.
+
+===
+
+BIJLAGE XIX.
+
+Brief van het Stedelijk bestuur van Breda aan de Staten Generaal, van 18 Sept. 1624.
+
+HoogEd. Mog. erntfeste, wyse, seer discrete Heeren.
+
+Alsoo wy nu in de vierde weke besloten syn, hebben wy met groote moeyte uyt onse borgerye sooveel gelts
+gekregen als tot de leeninge van soo veel compagnien ende make van wercken noodich is geweest ende
+verhoope noch voor eenige dagen dair in te continueren, maar alsoo 't selve haast failleren sal, ende
+niet veel silver en gout binnen dese stadt is ende van coper of andere materi
+
+[page break: p. xxxii -> p. xxxiii]
+
+penninge te slaen, de vervalsinge soo subject is, is onse ootmoedige bede dat uwe Hoogh. mag gelieven
+ordere te geven, dat met cleyne partyen van twee of drie duysent gulden teffens eenig gelt hier binnen
+bestelt mach worden, 't welck genog doenlyck is gelyck wy ons des tot den heer Gouverneur van
+Geertruidenberge gedragen, ten andere alsoo in weynige dagen geen vleesch, caes, oft andere toespys
+meer veyl sal syn voor de soldaten, ende aen de borgers groot nadencken geeft, dat men allen haren
+voorraet daermede sy de soldaten nu byna twee maenden gespyst hebben wil consumeren, sonder het
+magasyn te openen, bidden wy dat er last gegeven mach worden tot openinge van 't magasyn om daer uyt
+so spaerlyck als men can rogge, caes, en stockvisch, die daer inne leyt en bederft, voor de soldaten uit
+te leveren, daervan de commies de penninge sal connen ontfangen, en tot betalinge van de soldaten
+employeren, wy en sullen soo veel in ons is niet laten op alles goede order te stellen, ende al te doen
+dat goede en getrouwe onderdaeten en patriotten souden mogen doen en bidden (Godt) hiermede
+
+Hoogmo. Ed. Erentfeste, wyse seer discrete heeren, u Hoochmo. Ed. te nemen in syne heylige hoede.
+
+                                        Ut Breda den 18 Sept. 1624 des avons
+                                          uwe hoogm. onderdanige
+                                            D. S. B. en S. der Stadt Breda.
+
+===
+
+[Immediately followed, same page xxxiii, by:]
+
+BIJLAGE XX.
+
+Brief in cijferschrift van Prins Maurits aan het stedelijk bestuur van Breda, van 4 Dec. 1624.
+
+-- printed as literal digit groups (e.g. "26. 30. 40. 12. 24. 4. 39. 19. 32.") interleaved with plain
+Dutch words, continuing through printed p. xxxiv, followed on p. xxxv by a separate heading
+"OPLOSSING." giving a full plain-Dutch decipherment. Not transcribed here (out of scope for this
+target); recorded only to document the contrast with Bijlage XIX -- see NOTES.md.

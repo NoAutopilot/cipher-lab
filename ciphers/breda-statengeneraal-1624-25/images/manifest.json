@@ -1,0 +1,27 @@
+{
+  "statengeneraal_07_GS223_100.jpg": {
+    "source": "resources.huygens.knaw.nl retroboeken/statengeneraal, Resolutien der Staten-Generaal nieuwe reeks Deel 7 (GS223), printed p.100, source=7 pages.json page_index=176",
+    "fetched": "2026-09-24",
+    "note": "The resolution register page (res. no. 573, footnote d) -- the summary only, never the cipher letter itself."
+  },
+  "vanderhoeven1868_p032-033_bijlageXIX.png": {
+    "source": "Google Books, volume id nZl28awLRfUC (G.G. van der Hoeven, Geschiedenis der vesting Breda, 1868), rendered pages PR32-PR33 (printed pp. xxxii-xxxiii), via tools/browser_fetch.js --shot (books.google.com/books?id=nZl28awLRfUC&pg=PR32)",
+    "fetched": "2026-09-25",
+    "note": "Full text of Bijlage XIX: heading, opening, and continuation onto p.xxxiii up to (not including) the closing/signature. All plain Dutch, no cipher digits."
+  },
+  "vanderhoeven1868_p033-034_bijlageXIX-XX-boundary.png": {
+    "source": "Google Books, volume id nZl28awLRfUC, rendered pages PR33-PR34 (printed pp. xxxiii-xxxiv), via tools/browser_fetch.js --shot (books.google.com/books?id=nZl28awLRfUC&pg=PR33)",
+    "fetched": "2026-09-25",
+    "note": "Bijlage XIX's closing/signature ('Ut Breda den 18 Sept. 1624 des avons ... D.S.B. en S. der Stadt Breda'), then the BIJLAGE XX heading ('Brief in cijferschrift van Prins Maurits...') and its ciphertext opening lines with literal digit groups embedded in Dutch words."
+  },
+  "vanderhoeven1868_p034-035_bijlageXX-cipher-oplossing.png": {
+    "source": "Google Books, volume id nZl28awLRfUC, rendered pages PR34-PR35 (printed pp. xxxiv-xxxv), via tools/browser_fetch.js --shot (books.google.com/books?id=nZl28awLRfUC&pg=PR34)",
+    "fetched": "2026-09-25",
+    "note": "Full page of Bijlage XX printed as raw digit-cipher (p.xxxiv), followed immediately by 'OPLOSSING.' (p.xxxv) giving its plain-Dutch decipherment -- the contrast case: Bijlage XX gets an explicit cipher-plus-solution treatment that Bijlage XIX does not."
+  },
+  "vanderhoeven1868_p111-112_source-note.png": {
+    "source": "Google Books, volume id nZl28awLRfUC, rendered pages PA111-PA112 (printed pp. 111-112), via tools/browser_fetch.js --shot (books.google.com/books?id=nZl28awLRfUC&pg=PA111)",
+    "fetched": "2026-09-25",
+    "note": "Van der Hoeven's own source statement for Bijlagen XVIII-XXIX: the documents come from 'het stedelijk archief van Breda' (the Breda TOWN archive, not the Hague Staten-Generaal archive), consisting of Havermans' diary (Bijlage XVIII) and 'brieven en rapporten van den magistraat aan de Prinsen Maurits en Frederik Hendrik en de antwoorden daarop ontvangen, voor 't grootste gedeelte in cijferschrift' (letters and reports from the magistrate to the Princes and the answers received, for the most part in cipher). P.112 continues with the Bijlage XX story specifically: the key to that incoming cipher letter was found only after much effort, by a secretary of Spinola -- i.e. that letter's cipher was originally unbroken by Breda itself and had to be solved by the besieging Spanish side."
+  }
+}

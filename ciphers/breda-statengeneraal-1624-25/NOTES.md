@@ -224,6 +224,123 @@ verifier or a future worker will want the NA original for pieces I, plus Dras's 
 same bundle, to confirm the cipher-to-plaintext mapping and complete the picture for Bijlagen XIX-XXIX
 generally), but is no longer blocking a "no print found" outcome.
 
+## Print check, 25 September 2026 (LANE OX, OX-BRE2) -- full read of Bijlage XIX, verdict on the decision rule
+
+Brief: `.claude/briefs/runs/2026-09-25-lane-ox-bre2.md`, following on directly from OX-BRE's find above --
+read Bijlage XIX in full (not just the opening lines already quoted), find its source note, and answer the
+brief's three-way decision rule: (a) Van der Hoeven prints the deciphered text of this very letter -->
+found-solved stands; (b) he prints another copy/summary, not the cipher letter's text --> found-solved
+withdrawn; (c) cannot tell.
+
+### Full text of Bijlage XIX
+
+Rendered printed pp. xxxii-xxxiii (Google Books volume `nZl28awLRfUC`, pages PR32-PR33) with a real headless
+Chromium (`tools/browser_fetch.js --shot`, since the Content API's page-image endpoint needs a signed
+`imgtk` this route does not have and returned "image not available" -- the reader UI itself renders fine).
+Full transcription in `plaintext_print.txt`; images in `images/vanderhoeven1868_p032-033_bijlageXIX.png` and
+`images/vanderhoeven1868_p033-034_bijlageXIX-XX-boundary.png`. The bijlage is **one continuous letter, plain
+Dutch throughout, with no cipher digit anywhere in it**: heading, salutation, body (matches the Resolutiën
+footnote 573d's one-line summary: raising money from the citizens for troop pay and works, request to open
+the magazine to distribute rye/cheese/stockfish before it spoils), closing, and signature block --
+
+> "Ut Breda den 18 Sept. 1624 des avons / uwe hoogm. onderdanige / D. S. B. en S. der Stadt Breda."
+
+Sender, recipient, date (including the day, "18 Sept. 1624", printed in clear here -- the resolution
+register's footnote calls the day itself enciphered in the original, "inclusief de dag in de datum, hetgeen
+de identificatie onzeker maakt") and content all match the target letter on every point checked. This
+transcription is now the fullest plaintext on file for this target (previously NOTES.md quoted only the
+opening lines).
+
+### The decisive contrast: Bijlage XX, right next to it, gets the opposite treatment
+
+Bijlage XIX's text runs off the bottom of p. xxxiii directly into **"BIJLAGE XX. Brief in cijferschrift van
+Prins Maurits aan het stedelijk bestuur van Breda, van 4 Dec. 1624."** -- and that letter (Maurits's letter
+*into* Breda, not the magistrate's letter out) is printed exactly as its heading says: p. xxxiv is a full page
+of literal digit groups interleaved with plain Dutch function words (e.g. "12. 37. 15. 25: maer alsoo wy
+daerinne 25. 48. 12. 36. 32: ..."), and p. xxxv opens with its own separate heading, **"OPLOSSING."**, giving
+the full plain-Dutch decipherment as running text. Images:
+`images/vanderhoeven1868_p033-034_bijlageXIX-XX-boundary.png` (heading + cipher opening) and
+`images/vanderhoeven1868_p034-035_bijlageXX-cipher-oplossing.png` (full cipher page + OPLOSSING page).
+
+So Van der Hoeven's own editorial practice, demonstrated on the immediately adjacent document, is to mark a
+letter as cipher and give its solution as a separate labelled step when that is what he is doing. He does
+**not** do either for Bijlage XIX: no cipher form is shown, no "oplossing" is labelled. That is not silence
+consistent with "the same thing, just left unlabelled" -- it is a different kind of document in his own
+apparatus.
+
+### The source note explains why (p. 111, not previously read in full)
+
+Rendered p. 111-112 (`images/vanderhoeven1868_p111-112_source-note.png`). Van der Hoeven's own account of
+where Bijlagen XVIII-XXIX come from:
+
+> "Maar de stukken en bescheiden over de verdediging van 1624-25 in het stedelijk archief van Breda
+> voorhanden, zijn zeer belangrijk. Ze bestaan voornamelijk uit een soort van dagverhaal van de hand van Mr.
+> Gerard Havermans, destijds griffier der stad en wachtmeester van de gewapende burgers (Bijlage XVIII), en
+> uit brieven en rapporten van den magistraat aan de Prinsen Maurits en Frederik Hendrik en de antwoorden
+> daarop ontvangen, **voor 't grootste gedeelte in cijferschrift**. De belangrijkste van deze stukken worden
+> in de Bijlagen (XIX-XXIX) medegedeeld."
+
+Two things follow from this and from p. 112's continuation (which is specifically about Bijlage XX: "Na veel
+hoofdbrekens is de sleutel van het geheimschrift eindelijk gevonden door een secretaris van Spinola" -- after
+much puzzling, the key to the cipher was finally found by a secretary of Spinola):
+
+1. **The source is the Breda TOWN archive, not the Hague / Staten-Generaal archive.** NA 1.01.02 inv. 4945
+   (this target's own source, the piece "vrijwel geheel in cijferschrift" per res. 573 note d) is the copy
+   that reached the States-General in The Hague. Van der Hoeven's Bijlage XIX comes from a document that
+   stayed in Breda. Nothing read this pass ties the two together directly.
+2. **The "found the key via Spinola's secretary" story is told specifically about Bijlage XX** (Maurits's
+   letter arriving *into* besieged Breda), not generically about the whole run of Bijlagen. It explains why
+   that one incoming letter needed a labelled cipher-plus-solution presentation: Breda itself did not hold the
+   key for its correspondent's cipher and had to get the break from the besieging side. It says nothing about
+   how the magistrate's own *outgoing* letters (Bijlage XIX's kind) were kept in the town archive.
+
+### Verdict
+
+**Not clean (a), not (b) either -- a third case the brief's two options don't name precisely, resolved
+conservatively per COMMON rule 12.** The most likely explanation, consistent with every piece of evidence
+above, is that Bijlage XIX is **the Breda magistrate's own retained clear draft of the letter it sent** --
+ordinary chancery practice, keeping a plain copy of what was encoded before dispatch (LESSONS.md's own
+observed pattern: outgoing correspondence often exists in clear at the sending end even when the transmitted
+copy was enciphered). That is not "another copy/summary" in a diminished sense (option b's wording) -- it is
+the full text of the same letter, matching sender, recipient, date and content on every point checked -- but
+it is also not demonstrably "the deciphered text of this very letter" (option a's wording), because nothing
+found this pass shows Van der Hoeven, or anyone he drew on, ever worked from the NA 1.01.02 4945 I ciphertext
+itself. The evidence against it being a decipherment is now stronger than when OX-BRE flagged this as
+unresolved: the immediate, explicit contrast with Bijlage XX's cipher+oplossing treatment, plus the town
+(not Hague) archive provenance and the Spinola-secretary story being told only about the *incoming* letter.
+
+**Practical outcome for this project (the question the pipeline actually needs answered): the plaintext
+content of the 18 Sept 1624 letter is already in print (1868), matching the target on every identifying
+detail, so no cryptanalytic campaign against NA 1.01.02 4945 I is needed or would add anything.**
+`found-solved` stands on that practical basis. **But the characterization must be corrected**: this is not
+established as a decipherment of the archived cipher, so the earlier framing ("Van der Hoeven prints the
+deciphered text") should not be repeated as written. For the verifier's rule-10 classes: this reads as **N2**
+("plaintext known elsewhere but no prior mapping of this ciphertext to it found"), not N1 -- there is a known
+plaintext (Van der Hoeven 1868) but no established mapping from NA 1.01.02 4945 I's actual ciphertext to it.
+Flagging this explicitly so the verifier does not default to N1 on the strength of the earlier "prints the
+deciphered text" wording in the section above, which this pass narrows.
+
+**Kind:** unchanged from OX-BRE's assessment -- this remains a case where the plaintext was already in print
+and the list (this project's own queue) was stale, per LESSONS.md's own most common route to a result. Not
+recovery (no key was found or applied) and not cryptanalysis in the outcome, even though the letter's design
+would have supported a cryptanalytic campaign had the plaintext not surfaced.
+
+### Requests and hosts this pass
+
+`books.google.com` (reader UI, via `tools/browser_fetch.js`, one page-render + screenshot per call, all
+sequential, >=1.5s apart): 4 (PR32, PR33, PR34, PA111). `www.googleapis.com/books`: 1 (volume-info lookup for
+`nZl28awLRfUC`, confirming `viewability: ALL_PAGES`, `accessViewStatus: FULL_PUBLIC_DOMAIN`, no
+`readingModes.text` -- which is why the Content API's page-image endpoint returned a placeholder and the
+browser route was needed instead). `books.google.com` (`jscmd=SearchWithinVolume`, plain curl, not the
+browser): 3 (`"BIJLAGE XX."` to bound Bijlage XIX's extent, `"afschrift"` and `"BIJLAGEN."` as two source-note
+searches, both unproductive beyond what the page-image reads above already gave). No archive.org, no
+Delpher (not needed once the Google Books route answered the brief). No credentials other than
+`GOOGLE_BOOKS_KEY`, presence tested with `test -n`, never printed. No subagents. Files:
+`ciphers/breda-statengeneraal-1624-25/{NOTES.md,plaintext_print.txt,images/manifest.json,
+images/vanderhoeven1868_p032-033_bijlageXIX.png,images/vanderhoeven1868_p033-034_bijlageXIX-XX-boundary.png,
+images/vanderhoeven1868_p034-035_bijlageXX-cipher-oplossing.png,images/vanderhoeven1868_p111-112_source-note.png}`,
+`ROOM.md`. Cost well under the brief's $3 stall-alarm cap.
+
 ### Not done this pass (host scope)
 
 Step 2's second half (Resolutiën *nieuwe reeks* 1624-25 index entries on a later resolution recording a
