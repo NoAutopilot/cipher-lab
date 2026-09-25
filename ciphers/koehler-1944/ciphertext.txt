@@ -1,0 +1,37 @@
+# Source: Klaus Schmeh, Cipherbrain, "Update: Five encrypted radio transmissions from a New
+# York Nazi spy" (2021), fetched 24 Sept 2026, sources/schmeh/posts/47b-koehler-update-2021.txt,
+# reproducing David Kahn, Cryptologia 5:2 (April 1981). Transcription, not an image (Access
+# playbook item 2: HathiTrust/JSTOR blocked from cloud for Cryptologia 5:2; not independently
+# re-verified against the journal page). Never silently repaired: transcribed exactly as printed
+# in the Schmeh 2021 reproduction, including message 3's length mismatch.
+# Header context as printed: addressed "An Abwehrleitstelle Frankreich / Paris Funkstelle /
+# Sofort vorlegen! / Betr.: Koehler", five messages, February 1944.
+# Note (Kahn header vs letters as printed): message 3 is headed 137 by Kahn but has 140 letters
+# as printed in the Schmeh reproduction; message 4 is headed 140 and has 140 letters as printed.
+
+# msg 1, Kahn header 237, letters as printed 237
+ybtat mqfvo dvbis prito kecqg kokik kyiwm zuarj alyia qtxvi vxzya szgou skiqn
+rbqjq nogex ezdnf vusda zurop ixklo cmnbl grdhz swmch kupef pzlej hbord wkkhu
+vthjk sfwda jepmu izvig kzlau rdrxx mdecs spozv eeeod dlmdz nqmia pidwg xdcyy
+mvkso hmmii impwq nkipa mljvm sqsbb glevn sktlq tn
+
+# msg 2, Kahn header 178, letters as printed 178
+eekao parwo xiavy pejux lhnjh pbqdd vdvxb mdiia gwymn zbivm abuws dwoug djozl
+ylaug loaea ilihj swjft oetad tjisn avaqn sodwb wzaxe zvoxg xpgzv adurm shvxx
+xfmuq pdpvq dqwtu fryok xfvcp ydzwm ofwfl uzfne qsslo avl
+
+# msg 3, Kahn header 137, letters as printed 140
+tziqb lqqxs kinod mbvil sukms syarh mhzvp tvswm ayddg rixyy omfzm ugfzz aznqe
+ljuyi ygwuo qmdbi vcxgz rmzno pessh gpoyx qqlei xmaoj buugz czfdl yzmkp gsmfm
+dteze oxmos
+
+# msg 4, Kahn header 140, letters as printed 140
+dmxkb kqnvh zzeek beoop ygcca yvepv tykmt iykfl zkacv uxiyd kruwy vnjvp xyeqp
+jpmfo abzpt mjtdy zvzky bjgze vdtyd zeejw zumjp ivsna gsmzq dltxb qjqqj fnpta
+mqted skijj
+
+# msg 5, Kahn header 229, letters as printed 229
+fpoxa tijyp qrerq znqst zasnk zarvq hhsmw vlhfg pyhqc yuirf fsgoi twgdg sbphc
+fkfza bpegh jzujn wtsxp ijamg tzdto hxzdn uivww tizoc axkye lhmdn sfzjo omrhb
+zpith hkisf anvdr ynhqk syrgi ltxos wabom dzwlb byava sjomn qqszs adddu greao
+albon lxzgi iwpnf uzgui jgmya ksqfw zsjl
