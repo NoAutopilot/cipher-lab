@@ -1,4 +1,41 @@
 open
+BL catalogue records for Add MS 4956 and Sloane MS 4019 (the two key copies) read in full by this worker
+(untruncated individual-record JSON, not the search-results summary); no printed edition of the diary was found
+after an eight-query web/scholarship search across two prior passes, and JSTOR-QUEUE.tsv rows 12-15 (run on the
+owner's machine 24 Sept 2026, answers already on file) found no relevant hit.
+
+## Check-solved (LANE CX, 25 Sept 2026) — re-verdict, JSTOR rows read, no new search run
+
+This target already carries an unusually thorough check-solved history (23-24 Sept 2026, sections below): eight
+web/scholarship queries, the BL catalogue read in full for both the diary and its Sloane MS 4019 cross-reference,
+Cryptiana/DECODE/Bourdeau/Aymeloglu all checked negative, and an open-index scholarship pass (CrossRef, Persée,
+HAL; OpenAlex/Semantic Scholar logged as unreachable that day, not as negatives). This worker's job brief for this
+target was specifically to read the JSTOR runner's answers to this target's rows (ROOM.md, 24 Sept 2026 17:13,
+"JSTOR runner (owner's machine)... targets... courten-diary... 6 rows left queued (51, 61, 62, 65, 66, 67)") before
+re-verdicting, not to run fresh searches.
+
+**JSTOR-QUEUE.tsv rows 12-15 for this target (read, not re-run):**
+- Row 12, `"William Courten" AND diary AND cipher`: done 2026-09-24, no hits.
+- Row 13, `Courten AND Sloane AND cipher AND Charleton`: done 2026-09-24, three community-collection genealogical
+  directories (Post Office London Directory 1895, a Devon gazetteer, a universal biographical dictionary) —
+  checked by title, none is a discussion of this manuscript or its cipher.
+- Row 14, `"William Charleton" Middle Temple naturalist collection 17th century`: done 2026-09-24, two more
+  unrelated genealogical/directory volumes.
+- Row 15, `"Frederic Madden" AND manuscript AND key AND cipher AND cataloguing`: done 2026-09-24, one hit (Ilana
+  Tahan, "The Hebrew Collection of the British Library: Past and Present," *European Judaism* 2008) — a general
+  history of BL manuscript cataloguing under Madden's keepership, not about this diary specifically.
+No row queues a genuine lead; all four are closed, negative, and consistent with every other source checked.
+
+This target's own edition-risk section (below) already correctly distinguishes the courten-diary's own cipher
+passages from the separately-studied Sloane Herbarium specimen-label ciphers (a different corpus, same person) —
+re-checked here and not restated. No new host requests this pass beyond reading files already on disk (JSTOR-QUEUE.tsv, ROOM.md, this file's own prior sections).
+
+**Verdict: open, stage 2 verified unsolved.** Not "new"; not "unpublished" (rule 10) — a search result, not a
+discovery, across every source this project can reach without ordering the physical item. **Still not digitised**
+(REQUEST.md on file, BL Imaging Services quote for Add MS 4956 + Sloane MS 4019 f.79, no price yet); that request,
+not further remote searching, is the next real step for this target.
+
+Requests this pass: none (JSTOR-QUEUE.tsv and ROOM.md read from disk only). No subagents, no images, no logins.
 
 # William Courten (Charleton) diary, partly in cipher, key by Sir Frederic Madden — BL Add MS 4956
 
