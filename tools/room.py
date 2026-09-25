@@ -50,6 +50,23 @@ def start():
     if n < 50:
         print(f"ROOM.md has only {n} lines on origin/main; that is a stub, not the room. Stop and flag it."); return 3
     print(f"on main at {sh('git','rev-parse','--short','HEAD').stdout.strip()}, ROOM.md {n} lines")
+    # Cascade (25 Sept 2026, UPDATES.md): every session's first command shows the changes instituted across
+    # accounts since its brief was written, so a rule change never depends on a brief being rewritten.
+    try:
+        rows = [l for l in open("UPDATES.md", encoding="utf-8") if l.startswith("| 2")]
+        if rows:
+            print(f"UPDATES.md: {len(rows)} instituted changes; the last {min(3, len(rows))}:")
+            for l in rows[-3:]:
+                cells = [c.strip() for c in l.split("|")]
+                print(f"  {cells[1]} -- {cells[3][:160]}")
+    except FileNotFoundError:
+        pass
+    try:
+        near = [l for l in open("NEAR.md", encoding="utf-8") if l.startswith("| ") and not l.startswith("| Target") and not l.startswith("|---")]
+        if near:
+            print(f"NEAR.md: {len(near)} near-solve rows -- a target there is never closed-negative (rule 5): " + ", ".join(l.split("|")[1].strip().split(" ")[0] for l in near))
+    except FileNotFoundError:
+        pass
     return 0
 
 def keep_both(path):

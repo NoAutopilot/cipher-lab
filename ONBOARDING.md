@@ -1,7 +1,7 @@
 # Onboarding
 
 For a new person joining the project, and for the first session of any agent they run. Read this, then
-`CLAUDE.md`, then `STATUS.md`. Twenty minutes, and you are current.
+`CLAUDE.md`, then the tail of `UPDATES.md`, then `STATUS.md`. Twenty minutes, and you are current.
 
 ## What this project is
 
@@ -17,6 +17,8 @@ hold or study the material).
 | File | What it is |
 |---|---|
 | `CLAUDE.md` | The ten rules, the pipeline, the usage and access playbooks. Binding on every agent. |
+| `UPDATES.md` | The cross-account changelog: every rule or tool change a parent institutes, dated, with the evidence. Read its tail first in any session; `tools/room.py --start` prints the last three rows. |
+| `NEAR.md` | The near-solve register: targets whose solver beat its control or whose negative was not a real test. Never marked closed-negative. |
 | `STATUS.md` | The human board. Starts with a handoff note saying exactly where things stand. |
 | `ROOM.md` | The shared channel. One line per signal. Read the last 30 before you act. |
 | `QUEUE.md` | The ranked queue of candidate targets, with a kind per row. |
