@@ -7,7 +7,7 @@
  "language_candidates": [
   "en"
  ],
- "ciphertext_pending": "No transcription found on disk; the post (sources/schmeh/posts/12-scorpion.txt) links four scan images, two of them the actual cryptograms: 'Here's the first encrypted passage: [https://scienceblogs.de/klausis-krypto-kolumne/files/2014/03/Scorpion-Letter-2.jpg]' and 'Here's the second cryptogram that was published: [https://scienceblogs.de/klausis-krypto-kolumne/files/2014/03/Scorpion-Letter-1.jpg]' (note the filenames are reversed relative to their order in the post -- flag for whoever transcribes, verify against the image itself which is first/second). Schmeh directs readers to Dave Oranchak's site, https://www.oranchak.com/scorpion-cipher.html, for the source scans and possibly a typed transcription; not fetched this pass (not a host this brief names, no network). Survey row 16 calls these 'S1, S5' (presumably Aymeloglu's naming, not Schmeh's) and notes 'claimed solutions 2018 unverified'.",
+ "ciphertext": "ciphers/scorpion-1991/ciphertext.txt (cryptogram 1 only, full single-pass transcription, 70 tokens/53 unique, sign table ciphers/scorpion-1991/sign_table1.tsv) and ciphers/scorpion-1991/scripts/tokens2.tsv (cryptogram 2, component-count only, N~=179, K/IC not yet done -- see ciphers/scorpion-1991/NOTES.md). Source images ciphers/scorpion-1991/images/ (manifest.json). Filenames were confirmed reversed relative to the post's text order: Scorpion-Letter-2.jpg = first/70-char cryptogram, Scorpion-Letter-1.jpg = second/180-char cryptogram. oranchak.com's possible typed transcription not fetched (one host per worker; scienceblogs.de only this pass) -- flagged as a follow-up in NOTES.md.",
  "alphabet": "homophonic (many symbols per plaintext letter), per Schmeh's own counts: cryptogram 1 is 70 characters with 53 unique; cryptogram 2 is 180 characters with 155 unique",
  "constraints": {
   "first_cryptogram": "70 characters, 53 unique",
@@ -23,6 +23,30 @@
   "3. Compare the transcribed symbol alphabet against the known Zodiac Z408/Z340 homophone alphabets for shared or copied symbol shapes, since the sender explicitly modelled the style on the Zodiac letters; a match would support (not prove) the claim these draw on published Zodiac material rather than an independent cipher. Cost $1."
  ],
  "matched_control": "not yet run; no ciphertext on disk to test. Note in advance (CLAUDE.md rule 3 lesson): K this close to N (53/70 distinct/total on the first message) means even a matched control is likely to read weakly -- a target failure here would need the control number reported alongside, not treated alone as a negative",
+ "cheap_test_done": {
+  "test": "1 (image fetch + single blind transcription pass), re-scoped per brief .claude/briefs/runs/2026-09-25-lane-b2-scorpion-1991.md",
+  "date": "25 Sept 2026",
+  "worker": "LANE B2 bSCO (Sonnet, session_01XavLajPispv8YaywQUjLWK)",
+  "cryptogram_1": {
+   "N": 70,
+   "K": 53,
+   "IC": 0.0083,
+   "matches_schmeh_published": "yes, exactly (70/53)",
+   "controls": {
+    "english_pg1661_holmes_N70_5seeds": "mean 0.0664, range 0.0600-0.0704",
+    "uniform_random_N70_K53_5seeds": "mean 0.0189, range 0.0174-0.0199 (flat theory 0.0189)"
+   },
+   "note": "target IC (0.0083) sits below even the uniform-random-K53 control -- consistent with deliberate homophone-repeat suppression (39/53 codes hapax), not an error; see NOTES.md"
+  },
+  "cryptogram_2": {
+   "N_component_count": 179,
+   "N_schmeh_published": 180,
+   "K": "not determined this pass (density too high for the automatic shape-bucket proxy; needs a by-eye pass like cryptogram 1's)",
+   "IC": "not computed (no reliable K)",
+   "note": "caption 'Hi! Remember me?' above the grid; one row of the grid is crossed out/hatched in the source scan, unexplained -- see NOTES.md"
+  },
+  "moved": "no -- single blind pass only, this is a transcription result not a cryptanalytic gain; test 2 (homophonic anneal) is next and unrun"
+ },
  "judge": {
   "language": "en",
   "letters_min": 60,
