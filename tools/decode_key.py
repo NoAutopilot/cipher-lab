@@ -24,7 +24,11 @@ Inputs (formats found in the repo, detected per file):
                       [PLAIN:word] clear words, glosses 'word@i-j'.
   key         TSV with a header row (or a '# name<TAB>name' comment header): the sign column is the first of code, sign,
               token; then value; optional grade, source, note. The key's own grade column is used when present,
-              otherwise default_grade (H: read from a key source).
+              otherwise default_grade (H: read from a key source). decode.json's 'key' may be a list of filenames
+              (or --key a,b on the CLI) to merge two key tables (e.g. a separate alphabet key and a nomenclator
+              key); a code present in both with the same value merges silently, a code with two different values
+              becomes 'value1|value2' (auto-graded M, per the ambiguous-value rule below) rather than one file's
+              row silently overwriting the other's.
   exceptions  TSV, one row per position that overrides the key: line (and folio), pos|position|index, value (or the
               column named by exceptions_value_column), optional grade (else exception_grade), reason.
 
@@ -219,6 +223,31 @@ def load_exceptions(path, job):
     return ex
 
 
+def load_keys(target, spec):
+    """Load job['key'] where spec is one filename or a list of filenames to merge (e.g. a separate alphabet
+    key and a nomenclator key, clair349-este-guise-1556). Files are merged in order; a code already set by an
+    earlier file whose value disagrees with a later file's is not silently overwritten -- the two values are
+    combined as 'a|b' (grade_tokens already downgrades any '|' value to M) and the note records the collision,
+    so a real ambiguity in the underlying cipher design is preserved rather than hidden by load order."""
+    paths = spec if isinstance(spec, list) else [spec]
+    merged = {}
+    for p in paths:
+        for code, row in load_key(os.path.join(target, p)).items():
+            prev = merged.get(code)
+            if prev is None:
+                merged[code] = row
+            elif prev['value'] == row['value']:
+                continue
+            else:
+                merged[code] = dict(value=f"{prev['value']}|{row['value']}", grade='M',
+                                    source=f"{prev['source']}+{row['source']}".strip('+'),
+                                    note=f"code {code!r} collides across key files: "
+                                         f"{prev['value']!r} ({prev['note'] or prev['source']}) vs "
+                                         f"{row['value']!r} ({row['note'] or row['source']})",
+                                    text=f"{prev['text']} || {row['text']}")
+    return merged
+
+
 def load_votes(target, job):
     v = job.get('votes')
     if not v:
@@ -376,7 +405,7 @@ def run_job(target, job):
     path = os.path.join(target, ct)
     fmt = job.get('format') or detect_format(path)
     recs = LOADERS[fmt](path, job)
-    key = load_key(os.path.join(target, job.get('key', 'key.tsv')))
+    key = load_keys(target, job.get('key', 'key.tsv'))
     exc = load_exceptions(os.path.join(target, job.get('exceptions', 'exceptions.tsv')), job)
     grade_tokens(recs, key, exc, load_votes(target, job), job)
     cnt = collections.Counter(r['grade'] for r in recs if r['kind'] == 'sign')
@@ -398,7 +427,8 @@ def load_config(target, a):
     if a.config or (os.path.exists(os.path.join(target, 'decode.json')) and not a.ciphertext):
         cfg = json.load(open(a.config or os.path.join(target, 'decode.json'), encoding='utf-8'))
         return [dict(cfg.get('defaults', {}), **j) for j in cfg.get('jobs', [cfg])]
-    job = {k: v for k, v in (('ciphertext', a.ciphertext), ('key', a.key), ('exceptions', a.exceptions),
+    key = a.key.split(',') if a.key and ',' in a.key else a.key
+    job = {k: v for k, v in (('ciphertext', a.ciphertext), ('key', key), ('exceptions', a.exceptions),
                              ('style', a.style), ('reading', a.reading), ('tokens', a.tokens)) if v}
     return [job]
 

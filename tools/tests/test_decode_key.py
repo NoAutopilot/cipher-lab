@@ -35,5 +35,22 @@ try:
     print('PASS' if ok else 'FAIL', '--check exits 0 when current, 1 when stale')
 finally:
     shutil.rmtree(tmp)
+# load_keys: merging two key files (clair349-este-guise-1556's alphabet key + nomenclator key)
+tmp2 = tempfile.mkdtemp()
+try:
+    open(os.path.join(tmp2, 'keyA.tsv'), 'w').write('code\tvalue\tgrade\nS01\ta\tH\n9\tc\tH\nS02\tf\tM\n')
+    open(os.path.join(tmp2, 'keyB.tsv'), 'w').write('code\tvalue\tgrade\nS10\tword1\tM\n9\tword2\tM\n')
+    merged = decode_key.load_keys(tmp2, ['keyA.tsv', 'keyB.tsv'])
+    ok = (merged['S01']['value'] == 'a' and merged['S10']['value'] == 'word1'
+          and merged['9']['value'] == 'c|word2' and merged['9']['grade'] == 'M')
+    fails += not ok
+    print('PASS' if ok else 'FAIL', 'load_keys merges two files, colliding code becomes a|b at grade M')
+    single = decode_key.load_keys(tmp2, 'keyA.tsv')
+    ok2 = single['S01']['value'] == 'a' and 'S10' not in single
+    fails += not ok2
+    print('PASS' if ok2 else 'FAIL', 'load_keys accepts a single filename (non-list) unchanged')
+finally:
+    shutil.rmtree(tmp2)
+
 print('decode_key:', 'all tests pass' if not fails else f'{fails} failures')
 sys.exit(1 if fails else 0)
