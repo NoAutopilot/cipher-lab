@@ -595,3 +595,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T22:10Z	session_01QoNRugzSd25fspP8nwNNbN	bSPEC3 done $1.25 N, archived	ranks 31-41: 0 specs / 11 no spec
 2026-09-25T22:12Z	session_01381WRXGttryywgiDbmXB9B	bCEN (Sonnet, cap 3)	censorship-manual-stego test 1 (scienceblogs.de holder)	LANE B4 brief
 2026-09-25T22:12Z	session_01ENRheqa2wuDyK4Jo4GYWjU	bUNT3 (Sonnet, cap 2.5)	untersberg-code Hs. 2398 catalogue/image lookup	LANE B4 brief
+2026-09-25T22:16Z	session_019a43vGLshPA8EZvcuNjGCG	GOLD-D2 done $1.61 D, archived by LANE GOLD2	(c) for the letter families: base level 0.385 at 5 pct, 0.322 at 7.5 pct noise
+2026-09-25T22:16Z	session_01GvGAepME5fvmUDuaJuc9cA	GOLD-B2D done $9.46 D, archived by LANE GOLD2	B double-prime-c control 9.5 pct, below gate; B double-prime parked (identifiability, needs about 5000 letters)
