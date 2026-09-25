@@ -475,3 +475,10 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T17:30Z	session_01EYdaFpKDG8Ptu14Z14bs9L	retrospective j (Sonnet, cap 10)	17 ledger rows since retro i	brief .claude/briefs/retrospective.md, prompt inline
 2026-09-25T17:30Z	session_017rxxceHwgprCiwpPHqyfyy	LANE B2 bCPH (Sonnet, cap 3)	copenhagen-1835 test 1 MASC da/de/en	brief 2026-09-25-lane-b2-copenhagen-1835.md
 2026-09-25T17:30Z	session_01AxNo7QrGTDFfx5FzTXLJnc	LANE B2 bPOL (Sonnet, cap 3)	pollaky-1865-1875 test 1 images + single pass	brief 2026-09-25-lane-b2-pollaky-1865-1875.md
+2026-09-25T17:48Z	session_01JfbSKy1t6b5fuLQexnv8KL	LANE R6 L2b done $5.19 D, archived	salviati f56r	80.7
+2026-09-25T17:48Z	session_01Tswh7FNr6HZppsfKZ8ChJU	LANE R6 L5c done $2.35 D, archived	salviati f57v	77/78
+2026-09-25T17:48Z	session_01YZU5WBr7EVRgwuytyskZFF	LANE R6 Y7 done $3.85 N, archived	clair1161	not in ff.106-192
+2026-09-25T17:48Z	session_0164uM2PUPD88ka9fZ3h7a5P	LANE R6 Y8 done $3.57 D, archived	mercy test 1	moved
+2026-09-25T17:48Z	session_01UP2nZhnHzDiGi7HR29obCr	LANE R6 Y9 done $4.77 N, archived	berthier	no crib fit
+2026-09-25T17:45Z	session_01EsMqJkeG1n6MypgrFwF6sN	LANE R6 CM (Opus, cap 10)	salviati code+mark at N=2820	brief 2026-09-25-lane-r6-cm-salviati-codemark.md
+2026-09-25T17:45Z	session_0165uktQtXTmrEztFN5qpUD4	LANE R6 M2 (Fable, cap 15)	mercy graded reading	brief 2026-09-25-lane-r6-m2-mercy-read.md
