@@ -15,6 +15,8 @@ Usage:
 Why: on 24 Sept 2026 six commits were spent fixing ROOM.md conflict markers and one worker replaced the file with a
 four-line stub from a stale clone. This script appends with >>, never rewrites, resolves a ROOM.md conflict by
 keeping both sides, refuses to push a ROOM.md that shrank, and retries the fetch-rebase-push loop up to five times.
+Warnings (25 Sept 2026, UPDATES.md): a done line naming a test, negative or FAIL without the word control, or any
+line carrying a dollar figure, is still appended but prints a WARNING first (rule 3; COMMON item 1).
 --digest was added from RETRO-2026-09-24d (subject 3): an orchestrator checking in across several live lanes had no
 way to read ROOM.md short of the full, growing file, unlike a worker's own "last 30 lines" rule.
 """
@@ -142,6 +144,24 @@ def digest(a):
     print(f"{len(kept)} of {len(all_lines)} lines matched")
     return 0
 
+def warnings_for(role, signal):
+    """Warnings printed before a line is appended (25 Sept 2026, UPDATES.md; the line is still appended).
+
+    - a done line that reports a test, negative or FAIL without the word control: CLAUDE.md rule 3 (a negative
+      means nothing without a matched control number beside it; nine done lines broke this on 25 Sept 2026)
+    - a dollar figure anywhere in the line: cost figures come from the orchestrator's get_session, not the
+      worker's own sense of it (README common tail item 1), and `$8` inside double quotes vanishes anyway."""
+    w = []
+    sig = signal.strip()
+    if sig.lower().startswith("done:") and re.search(r"\btests?\b|\btested\b|\bnegatives?\b|\bfail(s|ed|ing)?\b|closed-negative",
+                                                     sig, re.I) and not re.search(r"\bcontrols?\b", sig, re.I):
+        w.append("WARNING: done line reports a test or negative without a control number (rule 3)")
+    text = f"{role} | {signal}"
+    if re.search(r"\$\s?\d|\bdollars\b|\bUSD\b", text, re.I):
+        w.append("WARNING: cost figures in ROOM lines are the orchestrator's to read (COMMON item 1)")
+    return w
+
+
 def main(a):
     if not a or a[0] in ("-h", "--help"):
         print(__doc__); return 0
@@ -154,6 +174,8 @@ def main(a):
         return digest(a[1:])
     if len(a) < 2:
         print(__doc__); return 1
+    for w in warnings_for(a[0], a[1]):
+        print(w)
     line = f"{utc()} | {a[0]} | {a[1]}".replace("\n", " ")
     with open(ROOM, "a", encoding="utf-8") as f:
         f.write(line + "\n")

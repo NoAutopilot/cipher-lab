@@ -295,6 +295,9 @@ Every brief states a cap in dollars of usage (the session metadata's cost figure
    `tools/print_check.py ciphers/<t>` runs phrases.txt against sources.tsv and, unasked, against the whole of IA
    full text, Google Books and OpenAlex; writes print-check.tsv and print-check-hosts.tsv. Its 'no hits' is a
    search result for the log, never a novelty verdict (rule 10).
+   `tools/family_run.py SPEC --family F` (masc, homophonic, periodic_vigenere, running_key; 25 Sept 2026) runs rule 3 in
+   order: the matched control first (spec N, K, corpus, `--seeds`), the target only if the control mean meets `--gate`
+   (else CONTROL BELOW GATE, exit 3), one row per run with both numbers in ciphers/<t>/HYPOTHESES.md.
 
 ## Access playbook
 
