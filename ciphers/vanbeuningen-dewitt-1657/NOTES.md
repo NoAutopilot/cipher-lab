@@ -512,5 +512,38 @@ short/ambiguous stretches (flagged, not silently corrected in `key.tsv` or `ciph
 
 ### Fresh-instance re-derivation (rule 7)
 
-[to be filled in: subagent running, sees only `ciphertext.tsv`, `plaintext_print.txt` and the system
-description in its brief, not this session's `key.tsv`/`key_align.tsv`/`conflicts.tsv`/`align.py`]
+A subagent that saw only `ciphertext.tsv` and `plaintext_print.txt` (not this session's `key.tsv`,
+`key_align.tsv`, `conflicts.tsv` or `align.py`) independently tokenised, anchored on identical clear words
+(its own script, `difflib`-based LCS anchoring rather than this session's full DP), and proposed a letter or
+nomenclator meaning per code with its own support counts, explicitly declining to guess where its evidence
+was thin or contradictory.
+
+**Full agreement, 40 of 40 codes where it found any evidence** (35 letter codes + 5 nomenclator codes),
+once u/v and case are normalised (its "v" is this key's "u/v" merged letter; its "sweden"/"vranckrijk"/etc.
+are this key's "Sweden"/"Vranckrijk"/etc. -- the same values, not a real difference): every letter it proposed
+matches this key's value exactly, including both new-this-pass homophones it re-derived independently (20=u/v,
+alongside 27; and its low-support "9=m" matching this key's second `m` homophone). No code got a *different*
+letter from the two independent passes -- the rule-7 bar ("a difference larger than the M-graded codes sends
+the key back") is not met, so the key stands.
+
+**Both genuine conflicts independently reproduced, same direction:** it found the exact same 11=m/n split
+("too close to call... not reporting a preferred letter" -- its words) and the exact same 40=d/a split
+(majority d, "a real minority a that is not obviously noise... reported as d but flagged as contested" -- its
+words), from a different anchoring method and, where the two methods' word lists overlap, mostly different
+supporting contexts. Two independent methods landing on the same two live conflicts, not resolving them, is
+itself evidence the conflicts are real (a genuine two-value ambiguity in the cipher's own design at those two
+codes, most plausibly a second Staat-related homophone group not yet disentangled) rather than an artifact of
+either alignment script.
+
+**No evidence either way** for codes 37, 41, 43, 56, 65 -- it reports these as unreachable from its more
+conservative anchor-only method, concentrated (its words) in "the middle stretch (~120-350)... where the
+print copy's wording diverges too much from the cipher copy's to anchor reliably", not as containing
+contradicting evidence. This session's key already grades 37, 43, 65 M (single-context, already flagged
+weak). **41 (a) and 56 (f) are graded C here** (3/3 and 2/2 independent words respectively) but were not
+independently confirmed -- flagged for a future pass as the two C-grade codes resting on this session's
+alignment alone; nothing found by either pass contradicts them, so they are not downgraded, but a third
+check (ideally against the manuscript image) would be worth doing before treating them as fully settled.
+**Nomenclator 172/173** (Denemarcken/Coningh van Denemarcken): the subagent found the same phrases
+contextually plausible but could not position-verify them and declined to report them resolved; this
+session's C grade for both rests on round 1's direct sequential-context reading (L26/34, L29/46), not
+independently reproduced this pass -- also worth a third check.
