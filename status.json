@@ -1,5 +1,5 @@
 {
- "updated": "25 Sept 2026, 12:45 UTC",
+ "updated": "25 Sept 2026, 13:55 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -617,6 +617,10 @@
  ],
  "log": [
   {
+   "when": "25 Sep, 13:55",
+   "what": "Seven-day window at allowed_warning: YX and CX close, no new workers until about 05:00 UTC 26 Sept. Linhares stays held: judge calibration inconclusive (verdict C); judge bug that scored comment headers fixed."
+  },
+  {
    "when": "25 Sep, 12:45",
    "what": "Linhares held out of the totals: the new Portuguese language judge fails its reading; a worker tests whether that judge can tell a right from a wrong decode on a 26-word dictionary-code fragment."
   },
@@ -1073,7 +1077,7 @@
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/antt-linhares-chave",
    "key": "ours",
    "text": "new",
-   "qa_flag": "25 Sept 11:53: with the new Portuguese corpus the rule-7 language judge FAILs the committed reading (score -1.559 vs real_p05 -1.014; word cover passes 0.758). Held out of the totals until parent worker LX-JUDGE shows whether the judge can discriminate on a 26-word dictionary-code fragment (design-matched controls) or the reading is re-examined."
+   "qa_flag": "Held since 12:45: the rule-7 language judge (new pt17 corpus) FAILs the reading narrowly: -1.147 vs real_p05 -1.102 after the judge's comment-header bug was fixed (wrong-key level -1.462). LX-JUDGE (verdict C): the judge separates real 1808 Portuguese from wrong-key Vieyra headword strings (AUC about 0.95); the reading beats 183 of 200 wrong-key strings and sits at the 5.5th percentile of real prose, and real 1808 prose itself fails this threshold 8.5% of the time (corpus 150 years older than the letter). Inconclusive, so not counted. Settles it: a Portuguese corpus of about 1780-1830 for the judge, or more of the letter (pages 1 and 4 are not in the item)."
   },
   {
    "date": "25 Sept 2026",
@@ -1848,13 +1852,13 @@
  "lanes": [
   {
    "name": "Lane YX, left-open targets",
-   "live": 5,
-   "focus": "opened 10:30. Triage of 99 open targets: only 2 passed the intake gate. Brochado letter 134: Carta 79 gloss error fixed, control gate now passes (82.6 vs 91.4), candidate decode C 49 / M 16 / U 5 but its judge had no Portuguese corpus, so a pt17 corpus was built; not yet a reading. Working: Clair 349 Este-Guise 1556, Willem van Hessen 1567, Baluze 156, Wellington dictionary"
+   "live": 0,
+   "focus": "closed 13:34 on the seven-day allowed_warning (no new workers anywhere): Brochado letter 134 FAILs the Portuguese judge (no reading); Barriere 1654 negative re-reported on two reconciled passes (30.0 vs control 31.1); Clair 349 key transcribed, ciphertext held under the 60% gate; Wellington dictionary: library copies only; Baluze 156 second Sabran key negative with control"
   },
   {
    "name": "Lane CX, check-solved sweep",
    "live": 0,
-   "focus": "opened 11:33: formal checks for an existing decipherment on the ~36 copy-free open targets that fail the intake gate; each passing target goes to YX for deep work"
+   "focus": "closed 12:56: 21 targets given a formal check-solved; 13 now pass the intake gate (handed to YX), 3 blocked on your machine (L8, L9, L13/L14), 4 partial, 1 found-solved (bl-charles-digby = Wheatstone 1862)"
   },
   {
    "name": "Lane VX, key beside the letter",
@@ -1894,7 +1898,7 @@
   {
    "name": "Parent workers",
    "live": 0,
-   "focus": "QA runs 1-3, AUD2, LX-QAFIX, retrospective h and its four fixes done; the intake gate is now a script (tools/intake_gate_check.py)"
+   "focus": "QA runs 1-4, AUD2, LX-QAFIX, LX-JUDGE, retrospective h and its fixes done; judge now ignores # header lines (it had been scoring them)"
   },
   {
    "name": "Lane R5, recovery",
@@ -1922,7 +1926,7 @@
    "focus": "hall of fame view live from CITATIONS.md: one public citation (Cryptiana, 24 Sept 2026) and the pending replies list"
   }
  ],
- "headline": "25 Sept, owner account, 11:40 UTC: 17 letters (12 board entries) at N3 or better after two audits, 3 of them with our own key; Linhares (our key) is held out while its new language-judge failure is tested: Orange to August of Saxony 1561 (WVO 53, pure cryptanalysis), the van Beuningen 1657 key, the Linhares dictionary code (Vieyra 1809; check-solved blocked until Textos Politicos 1993 is read on your machine, L10) and Jan van Nassau's cipher lines of 17 Apr 1574 (WVO 5551). Three counted today, each after two audits and a clean rolling quality check. Live lanes: YX (left-open targets) and CX (check-solved sweep, feeding YX). VX, KX, TX, PX, LX, OX and DX closed on their handoffs. The other account's lanes are idle until 26 Sept 13:00 UTC. Retrospective h ran and its four fixes are in.",
+ "headline": "25 Sept, owner account, 13:55 UTC: 17 letters (12 board entries) at N3 or better after two audits, 3 with our own key: Orange to August of Saxony 1561 (WVO 53, pure cryptanalysis), the van Beuningen 1657 key and Jan van Nassau's cipher lines of 17 Apr 1574 (WVO 5551). Linhares (our key) is held out: the new Portuguese language judge fails it narrowly and a calibration was inconclusive. Every owner-account lane is closed: the seven-day usage window is at allowed_warning until about 05:00 UTC 26 Sept, so no new workers start before then. The other account's lanes resume 26 Sept 13:00 UTC.",
  "sidequests": [
   {
    "title": "Grants applications",

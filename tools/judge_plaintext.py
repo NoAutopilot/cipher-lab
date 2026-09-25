@@ -210,6 +210,8 @@ def main():
         ap.error("spec and --text or --file are required")
     spec = json.loads(Path(a.spec).read_text(encoding="utf-8"))
     text = a.text if a.text else Path(a.file).read_text(encoding="utf-8")
+    if a.file:  # reading files carry "#" header lines (source, grades); score the decode only (LX-JUDGE, 25 Sept 2026)
+        text = "\n".join(l for l in text.splitlines() if not l.lstrip().startswith("#"))
     r = judge(spec, text)
     r["spec"] = spec.get("slug", a.spec)
     if a.json:
