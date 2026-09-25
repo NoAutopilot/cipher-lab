@@ -37,5 +37,14 @@
     }
   ],
   "not_pursued": ["8428 (van de la Garde, 5-12-1581, different year, not fetched)"],
-  "confirmed": "6179 fetched in full (4pp) and rendered; two 1577 siblings with cipher/oplossing notes (6467, 5564) fetched and rendered per brief's 'at most three'. Not transcribed. See inventory.tsv for per-page detail."
+  "confirmed": "6179 fetched in full (4pp) and rendered; two 1577 siblings with cipher/oplossing notes (6467, 5564) fetched and rendered per brief's 'at most three'. Not transcribed. See inventory.tsv for per-page detail.",
+  "margin_crops_25_sept_2026": {
+    "by": "LANE R6 worker Y1, resolution check against 06467.pdf's own embedded page-2 image (fitz.Pixmap on xref 18: native 831x1244 grayscale, LOWER resolution than the already-saved 06467_p2.png at 1241x1754, which is itself an upscaled render) -- confirms 06467_p2.png already on disk is the best available resolution from this host; no higher-res source found (WVO record page links only the same PDF plus a small thumbnail).",
+    "source_image": "06467_p2.png (no re-fetch needed, already correct)",
+    "crops": [
+      {"file": "margin_6467_run1_4x.png", "region_px": [40, 390, 340, 500], "scale": "4x LANCZOS", "content": "margin note beside cipher run 1: 'Justifier le faict du grand' (two lines)"},
+      {"file": "margin_6467_run2_4x.png", "region_px": [40, 640, 260, 720], "scale": "4x LANCZOS", "content": "margin note beside cipher run 2: short abbreviation, read 'N.[c?].f.' -- native resolution ceiling, cannot be sharpened further"},
+      {"file": "margin_6467_leftcolumn_3x.png", "region_px": [0, 380, 340, 1000], "scale": "3x LANCZOS", "content": "whole left-margin column beside both cipher runs, confirms no other marginal annotation exists on this page"}
+    ]
+  }
 }

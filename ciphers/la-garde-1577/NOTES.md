@@ -463,3 +463,71 @@ full page, is the cheap next test. (2) Weigh the four GSME cross-check positions
 Requests: resources.huygens.knaw.nl 3 (1 record page `brief?nr=6467`, 2 PDF fetches, all ≥1.5s apart). No other
 hosts touched (archive.org and www.googleapis.com, listed as possible hosts in the brief, were not needed once
 GSME/LMSAC answered the question directly). No subagents. Cost well under $4 cap.
+
+## Y1: the 6467 margin (25 Sept 2026, LANE R6)
+
+**Job:** confirm by eye, at the best available resolution, what WVO's Opmerkingen field calls a "solution in the
+margin" (`oplossing in de marge`) beside 6467 run 1, and align it to `ciphertext_6467_v2.tsv` if it is one.
+
+**Resolution check (before cropping).** Re-fetched `06467.pdf` (request 1) and extracted its page-2 image
+natively (`fitz.Pixmap` on the embedded XObject, offline after the fetch): 831×1244 grayscale, *lower*
+resolution than the already-saved `images/06467_p2.png` (1241×1754), which is an upscaled render of the same
+source. Also read the WVO record page (request 2, `brief?nr=6467`): it links only the same PDF plus a small
+thumbnail, no IIIF or larger scan. **`06467_p2.png` already on disk is the best resolution this host offers**;
+no re-fetch of a sharper image was possible. Crops below are native-resolution 3x/4x LANCZOS enlargements of
+that file, saved to `images/` and logged in `images/manifest.json` under `margin_crops_25_sept_2026`.
+
+**What the margin carries.** The whole left-margin column beside both cipher runs
+(`images/margin_6467_leftcolumn_3x.png`) holds exactly two annotations, nothing else:
+
+- Beside run 1 (`images/margin_6467_run1_4x.png`): two lines, **"Justifier le faict du grand"** — confirms
+  R15's original read exactly, now at a sharper crop. Clearly a separate hand/ink from the body text, written
+  in the margin proper (not interlinear).
+- Beside run 2 (`images/margin_6467_run2_4x.png`): a short abbreviation, read **"N.[c?].f."** (three
+  letter-groups separated by points) — this is at the image's native-resolution ceiling; further magnification
+  (tried at 8x) only blurs, it does not resolve the middle letter further.
+
+**Neither is a word-for-word decipherment key, and no `key_6467_margin.tsv` is written.** Run 1's note is 5-6
+words against a 27-sign cipher run; run 2's is 3 letter-groups against an 18-sign run. L4's solver rerun already
+tried this exact text as a crib against the ciphertext ("Test C") and found no consistent many-to-one
+sign-to-letter map in 27 signs at up to 6 nulls — that negative stands; this pass adds no new crib attempt
+(brief: no cryptanalysis beyond the gloss alignment).
+
+**New finding: the margin's wording appears, unmarked, in both print editions' running text — but not on the
+manuscript's own main-text line.** OX-LAG quoted GSME's edited text as "Si on pouvoit justifier le faict de
+Gand, [27 digits] ce seroit un grand poinct" and read this as GSME merely reproducing raw cipher digits, "not a
+decipherment." Rendering GSME's own PDF page as an image (`editions/6467_GSME.pdf`, offline, already on disk,
+no new fetch) and reading it directly confirms the phrase "justifier le faict de Gand" is typeset as ordinary
+prose with no brackets, italics or apparatus mark distinguishing it from the surrounding text; its only
+footnote ("17 le faict de Gand] De arrestatie van Aarschot en zijn aanhang") glosses its historical content, not
+its textual status. LMSAC (1860) independently gives the same phrase at the same point and, per OX-LAG, drops
+the cipher digits after it entirely. **But this exact phrase is not on the manuscript's own main-text line**: a
+sharp crop of that line (`images/margin_6467_run1_4x.png`'s companion region, main text at y≈340-430 on
+`06467_p2.png`) shows the hand write straight through "...ny contentement. Si on pourra
+7.8.2.11.10.19.14.12.9." with no intervening clear words between "pourra" and the cipher digits — confirmed by
+direct inspection at 3x, not by OCR. The only place on the page carrying that wording is the margin note beside
+it. So two independent editions (1860 and 1990s) both silently absorbed the margin's words into their running
+transcription at this point, with no apparatus note saying why.
+
+That is evidence about what kind of note this is, not evidence that it decodes the cipher: read this way, the
+manuscript's clear-text sentence is "Si on pouvoit [margin: justifier le faict de Gand], [27 still-undeciphered
+cipher signs] ce seroit un grand poinct" -- i.e. even crediting the margin as the sentence's own omitted clear
+words (an insertion/correction mark, the ordinary early-modern use of a margin, not a cipher solution), a
+separate ~27-sign clause between "Gand" and "ce seroit" remains completely unread. That reading is more
+consistent with L4's crib-test negative and the length mismatch than treating the note as a solution of the
+numerals themselves. WVO's own "oplossing in de marge" tag is not shown wrong by this -- a cataloguer glancing
+at a margin note beside a cipher passage and a manuscript that once had "opgelost" written somewhere on it could
+reasonably describe it that way -- but it is not confirmed as a numeral-by-numeral solution by anything found
+this pass, and the two print editions' silent, unmarked adoption of the same words is the most likely source of
+WVO's characterization, not independent confirmation of it.
+
+**Left for whoever picks this up:** (1) whether "justifier le faict de Gand" belongs in
+`ciphertext_6467_v2.tsv`/a plaintext file as a C-grade (known-plaintext) clear-text insertion at this point in
+the letter, sourced from two print editions plus the manuscript's own margin, is a transcription-reconciliation
+call, not a decode -- out of this brief's scope. (2) The 27-sign clause after "Gand," and the 18-sign clause
+after "que," remain fully unread; no new crib is proposed here. (3) run 2's margin abbreviation ("N.[c?].f.")
+is unidentified; it is too short to be this letter's own passage content and reads more like an archival/filing
+mark, but that is speculation outside this brief's scope.
+
+Requests: resources.huygens.knaw.nl 2 (1 record page `brief?nr=6467`, 1 PDF fetch, ≥1.5s apart). No other hosts.
+No subagents. Cost well under $5 cap.
