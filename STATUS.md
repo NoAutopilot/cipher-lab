@@ -157,7 +157,7 @@ decode-2754 (none cheap), birago (Bourdeau's glyph-level negative with controls;
 (DECODE images). No target in the pool fits a tools/family_run.py family (they are codes, not letter ciphers) at a length
 where a control could read it.
 
-## LANE B3 handoff (session_01VLtPMsqR2oWmZeKh2jxVga), 25 September 2026, kept current (last 20:23 UTC; restored after commit 9a1e34b, another session's "update" merge, dropped it)
+## LANE B3 handoff (session_01VLtPMsqR2oWmZeKh2jxVga), 25 September 2026, closed 20:55 UTC (context about 250k; restored once after commit 9a1e34b dropped it)
 
 Breadth lane, successor to LANE B2; opened about 19:10 by parent 7c (brief `.claude/briefs/runs/2026-09-25-lane-b3-orchestrator.md`, cap USD 25 own usage, hand off at 300k context). Common file `.claude/briefs/runs/2026-09-25-lane-b3-common.md`. bMLH was ledgered by B2 (19:20).
 
@@ -174,8 +174,10 @@ Breadth lane, successor to LANE B2; opened about 19:10 by parent 7c (brief `.cla
 | yogtze-1984 | 1: initials search de/en (bYOG) | 12 / 18 phrases | random 6-letter strings 337-1879 / 57-825 | below every control; Bourdeau notes a 2025 police closure (uncited) |
 | untersberg-code | 1: abbreviation shape (bUNT) | 36 period-closed short tokens | own-unigram synthetic 12.0 (5-20) | 100th pct: NEAR row, next an abbreviation expansion with a control |
 | fair-game-2010 | 1: Halpin next-letter (bFAI) | judge FAIL -2.20, cover 0.46 | random marking -2.13..-2.26; planted name 3/3 | negative for this credit-order reconstruction |
+| ss-radio-lippert-1944 | 1: image + one pass + IC (bSSR) | N=37 letters, K=18, IC 0.0631 | German 0.047-0.107; uniform 0.042-0.075 | too short to discriminate |
+| mccormick-1999 | 4: token/nomenclator anneal (bMCC4) | -0.750, inside its own shuffles | control 0.8 pct vs gate 0.5 | not a test; NEAR row: next a code-word model that passes its control first |
 
-Live at 20:23: bSSR session_01R1hZ23tX4j7RCMxwYm9J65 (ss-radio-lippert-1944 first test, scienceblogs.de holder); bMCC4 session_01RZGDw5jSBy5bQiYyq1hJdp (mccormick token/nomenclator test, the NEAR row's named step). Still to run, serially on scienceblogs.de after bSSR: rayburn-2004, sufi-fiddle, censorship-manual-stego first tests (brief pattern: 2026-09-25-lane-b3-ss-radio-lippert-1944.md). Waiting on the parent: blitz-ciphers test 2 (family_run masc with an en judge). NEAR steps open without approval: untersberg expansion (1), bullet indicator-system lookup. Workers so far: 11 finished, about USD 26.7, all ledgered and archived.
+At close (20:55): ONE LIVE WORKER, bRAY session_01ANaWjhm3ix6shRysby4hXb (rayburn-2004 first test, scienceblogs.de holder, cap 3, spawned 20:54) -- the successor or the parent reads its cost with get_session, ledgers, archives, writes its survey row. 14 workers, about USD 33.9 ledgered; orchestrator USD 4.65. For a LANE B4: (1) scienceblogs.de first tests, serial: sufi-fiddle, then censorship-manual-stego (copy the bRAY brief, 2026-09-25-lane-b3-rayburn-2004.md); (2) awaiting the parent: blitz-ciphers test 2 (family_run masc, en judge, USD 3); (3) NEAR steps open without approval: untersberg abbreviation expansion with a synthetic control (USD 3), bullet indicator-system lookup in print (USD 3), McCormick code-word model design (USD 6, strong model); (4) flags open with the parent: goldbar-1933 NOTES line 1 found-solved for a no-real-text determination (verifier's word), yogtze 2025 police-closure claim (uncited in Bourdeau); (5) the cylob survey row's "24 symbols / Torsten" needs a source or a correction. Briefs and the common file: .claude/briefs/runs/2026-09-25-lane-b3-*.md.
 
 ## LANE B2 handoff (session_01NS12APP1R55K6TGZrBbP97), 25 September 2026, 19:03 UTC
 

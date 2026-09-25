@@ -563,3 +563,6 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T20:42Z	R7 six workers	MSIB 2.95 N, MSHUF 0.91 D, MEYE 4.65 D-, BBER 2.11 D, AT55V 7.37 D-, AT57V 3.57 D; all archived	LEDGER rows 25 Sep LANE R7	
 2026-09-25T20:44Z	session_015KKfqy9vPiTxH4QdUh5CL9	R7-MREV (Sonnet, cap 3, 35 min)	espagnol142-mercy-1648 blind-majority exceptions + v07 15-16	brief 2026-09-25-lane-r7-mrev-mercy-blindsplit.md
 2026-09-25T20:44Z	session_01R3tBKyK2Y2Ut1gHSS97M12	R7-SSIB (Sonnet, cap 4, 45 min)	fr2933-salviati-1525 sibling letters, same design	brief 2026-09-25-lane-r7-ssib-salviati-siblings.md
+2026-09-25T20:54Z	session_01R1hZ23tX4j7RCMxwYm9J65	bSSR done 2.66 D-, archived
+2026-09-25T20:54Z	session_01RZGDw5jSBy5bQiYyq1hJdp	bMCC4 done 1.95 D, archived
+2026-09-25T20:54Z	session_01ANaWjhm3ix6shRysby4hXb	bRAY (Sonnet, cap 3)	rayburn-2004 test 1 (scienceblogs.de)	LANE B3 brief

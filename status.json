@@ -2171,10 +2171,10 @@
   },
   {
    "target": "mccormick-1999",
-   "title": "McCormick notes: masc and homophonic both excluded with passing controls (0.994/0.985; 0.998/0.652), but the target scores in the same band as its own shuffle",
-   "next": "token/nomenclator test (NCBE, -RSE family as code words) with a matched synthetic control (B3, 3 dollars)",
+   "title": "McCormick notes: masc and homophonic excluded with passing controls; the code-word test's control read 0.8 pct (below gate), so that family is untested",
+   "next": "a code-word/shorthand model that passes its own control first (design job), then the target",
    "lane": "B3",
-   "touched": "25 Sept 2026 19:46"
+   "touched": "25 Sept 2026 20:54"
   },
   {
    "target": "antt-msliv0638-brochado-1712",
