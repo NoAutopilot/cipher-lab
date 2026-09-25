@@ -1,9 +1,9 @@
-open
+blocked
 Google Books full-text search of Boltanski 2006, Les ducs de Nevers et l'État royal (volume dsInahmnar8C), returned genuine, verifiable snippets from that book (confirming the search-within control works on this specific volume) but none tying it to fr.4687 or a cipher; Ferrari 1999, the other named edition, is paywalled (academia.edu 403) and queued as LOCAL-QUEUE.tsv row L8.
 
 # BnF fr.4687 — Marguerite Paléologue, duchesse de Mantoue, to Louis de Gonzague, duc de Nevers, 1562-1564
 
-Status: open (see the "## Check-solved (LANE CX, 25 Sept 2026)" section below for the formal verdict citation).
+Status: blocked (corrected LANE CX orchestrator 12:20 UTC 25 Sept 2026: the worker wrote `open`, but line 2 names Ferrari 1999 as unread, and check-solved.md says an edition the worker could not open makes the verdict `blocked`; it reopens when LOCAL-QUEUE.tsv row L8 is answered negative).
 
 Check-solved pass, 24 September 2026 (Sonnet, orchestrator brief for M13-M16). Editions-first + one-leaf pass;
 a formal six-source check-solved run is still owed before board promotion.
