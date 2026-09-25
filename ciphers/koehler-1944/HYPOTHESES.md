@@ -341,7 +341,7 @@ Files: `scripts/keyed_dist_test.py|.out|.json`, `running-key/keyed_family_run.lo
 |---|---|---|---|---|---|---|---|---|
 | 25 Sept 2026 18:50 | keyed_running_key | N=924 K=26 restarts=8 corpus=pg15736_Der_Mann_von_vierzig_Jahren.txt.gz+pg36905_Schach_von_Wuthenow.txt.gz+pg41051_Peter_Camenzind.txt.gz+pg41907_Demian.txt.gz+pg43987_Die_drei_Spruenge_des_Wang_lun.txt.gz+pg46184_Frau_Jenny_Treibel.txt.gz+pg5323_Effi_Briest.txt.gz kcorpus=tools/data/nl20,top=30,beam=300,order=6,spaces=1 | 1 | 0.726 (0.647-0.791) | -3.534 | FAIL language: score=-0.901, null_p99=-2.071, real_p05=-0.823, real_median=-0.78, mode=both, N=924 | yes (gate 0.5) | GOLD-2C family B' keyed tableau, keyword-mixed alphabets, control before target |
 | 25 Sept 2026 20:16 | keyed_running_key | N=924 K=26 restarts=8 corpus=pg15736_Der_Mann_von_vierzig_Jahren.txt.gz+pg36905_Schach_von_Wuthenow.txt.gz+pg41051_Peter_Camenzind.txt.gz+pg41907_Demian.txt.gz+pg43987_Die_drei_Spruenge_des_Wang_lun.txt.gz+pg46184_Frau_Jenny_Treibel.txt.gz+pg5323_Effi_Briest.txt.gz kcorpus=tools/data/nl20,arith=beau,top=30,beam=300,order=6,spaces=1 | 1 | 0.781 (0.662-0.855) | -3.478 | FAIL language: score=-0.937, null_p99=-2.071, real_p05=-0.823, real_median=-0.78, mode=both, N=924 | yes (gate 0.5) | GOLD-K2 B' beau, Dutch key, keyword-mixed, control before target |
-| 25 Sept 2026 20:37 | keyed_running_key | N=924 K=26 restarts=8 corpus=pg15736_Der_Mann_von_vierzig_Jahren.txt.gz+pg36905_Schach_von_Wuthenow.txt.gz+pg41051_Peter_Camenzind.txt.gz+pg41907_Demian.txt.gz+pg43987_Die_drei_Spruenge_des_Wang_lun.txt.gz+pg46184_Frau_Jenny_Treibel.txt.gz+pg5323_Effi_Briest.txt.gz kcorpus=tools/data/nl_dev,top=30,beam=300,order=6,spaces=1 | 1 | 0.815 (0.810-0.878) | -3.583 | FAIL language: score=-0.982, null_p99=-2.071, real_p05=-0.823, real_median=-0.78, mode=both, N=924 | yes (gate 0.5) | GOLD-K1 B' keyword-mixed, devotional Dutch key (nl_dev), control before target -- target rerun standalone after a timeout |
+| 25 Sept 2026 20:37 | keyed_running_key | N=924 K=26 restarts=8 corpus=pg15736_Der_Mann_von_vierzig_Jahren.txt.gz+pg36905_Schach_von_Wuthenow.txt.gz+pg41051_Peter_Camenzind.txt.gz+pg41907_Demian.txt.gz+pg43987_Die_drei_Spruenge_des_Wang_lun.txt.gz+pg46184_Frau_Jenny_Treibel.txt.gz+pg5323_Effi_Briest.txt.gz kcorpus=tools/data/nl_dev,top=30,beam=300,order=6,spaces=1 | 1 | 0.848 (0.810-0.878) | -3.583 | FAIL language: score=-0.982, null_p99=-2.071, real_p05=-0.823, real_median=-0.78, mode=both, N=924 | yes (gate 0.5) | GOLD-K1 B' keyword-mixed, devotional Dutch key (nl_dev), control before target -- target rerun standalone after a timeout |
 
 ## Family B' variants (GOLD-K2), 25 Sept 2026, worker GOLD-K2 (Sonnet, session_0196VjuQaoVfdo8pYY9Avvm9)
 
@@ -365,4 +365,93 @@ real_p05 -0.823, null_p99 -2.071, mode=both). Message 1 decoded streams, first 4
 reading): P `smaskemitderlangertewasjetztistichzusche`, K `rotterdopvinnigswantgevalenerdehoelangzo`.
 Control-backed negative for the beau-arithmetic corner of the keyword-mixed tableau family (same keyword list as
 GOLD-2C's vig run).
+
+## Families B and B', devotional Dutch key (GOLD-K1), 25 Sept 2026, 19:57-20:46 UTC
+
+Every Family B and B' negative logged so far (GOLD-2A, GOLD-2C, GOLD-K2) is conditional on `tools/data/nl20`'s
+1880-1920 Dutch novel-prose key model, while the one documented Koehler key is a Dutch prayer book (CLAUDE.md).
+This job builds a devotional-register Dutch corpus and reruns Family B (standard tableau, `tools/running_key.py`)
+and Family B' (keyword-mixed tableau, `tools/family_run.py --family keyed_running_key`) under it. Worker: Sonnet,
+session_01WDJiUb1ijocbB3N3LtsLWk.
+
+**Corpus** (`tools/data/nl_dev/`, README.md/MANIFEST.tsv): the Statenvertaling (17th-century Dutch Bible
+translation), fetched in one request from `api.getbible.net/v2/statenvertaling.json` (route (c) of the brief's
+order; (a) dbnl.org unreachable, `SSL_ERROR_SYSCALL`; (d) gutendex.com for a Catholic Dutch prayer book
+unreachable, timeout on both the try and the one permitted retry -- no such text found, as GOLD-C also found
+none on Gutenberg for nl20). 67 files (one per book), 3,426,073 letters after folding, `distribution_license:
+"Public Domain"` per the API's own metadata. Closest reachable register to a prayer book, not the item itself
+(README.md "Limits").
+
+**Family B, standard-tableau running key** (`tools/running_key.py --spaces --order 8 --beam 1000`, de20 plaintext
+model, nl_dev key model).
+
+CONTROL (German plaintext at the target's 5 lengths, held-out nl_dev book key, vig, seeds 1-3): 83.0 / 89.5 /
+80.3 pct plaintext letters recovered, mean **84.3 pct** (range 80.3-89.5) -- gate 60 pct met, and higher than
+nl20's control on the same test (72.7/60.4/68.3 pct, GOLD-2A): the Bible's more repetitive vocabulary makes it
+an easier key model for the decoder, a property of the corpus, not evidence either way about which corpus the
+real key was.
+
+TARGET, two tabulae:
+
+| tabula | ll_p | ll_k | pooled joint ll/letter | GOLD-2A noise band (order 8, beam 1000, same models) | control (GOLD-2A) |
+|---|---|---|---|---|---|
+| vig | -1.882 | -1.706 | **-3.588** | -3.57 to -3.64 | -3.12 to -3.17 |
+| beau | -1.899 | -1.741 | **-3.640** | -3.57 to -3.64 | -3.12 to -3.17 |
+
+Both configurations sit inside the established one-time-key noise band (not re-run for nl_dev specifically --
+per this job's brief, reused from GOLD-2A; the noise band's own LM_k was trained on nl20/de20, so this is an
+approximation, noted as a limit) and about 0.45-0.5 nats below every control. Neither is above the band's top
+by 0.1 nats or more, so no ROOM flag. Message 1 decoded streams, first 40 letters (word salad, not a reading):
+vig P `lhattenbipphonsche_goldung_ihre_truppe`, K `nuthai_den_zoon_van_kenaz_bid_achter_t`; beau P
+`lzahlt_kommandavorwuluht_oh_das_zweite`, K `jathefatha_die_in_dienzelven_noch_gog_`.
+
+**Control-backed negative** for a standard-tableau running key under a devotional (Bible) Dutch key model, same
+strength as GOLD-2A's negative under the novel-prose model.
+
+**Family B', keyword-mixed tableau** (`tools/family_run.py --family keyed_running_key`, order 6, beam 300, de20
+plaintext model, nl_dev key model). CONTROL (German plaintext, held-out nl_dev book key, keyword from the
+de20+nl_dev-derived word list*, seeds 1-3): 87.8 / 81.0 / 85.6 pct plaintext letters recovered, mean **84.8 pct**
+(range 81.0-87.8) -- gate 50 pct met. TARGET winner `mixed:evelyn:plain:vig` (stage-1 rank about 11, 5.77 nats
+over uniform; `zustimmung:key` again the stage-1 leader at 11.06 nats, as in every prior run of this family, but
+did not win stage 2 here either): pooled joint ll **-3.583** per letter, inside GOLD-2C's full-pipeline noise
+band (-3.507 to -3.544) -- actually 0.04-0.08 nats *below* its bottom, i.e. no signal at all, not a flag. Judge:
+FAIL (score -0.982 vs real_p05 -0.823, null_p99 -2.071, mode=both). Message 1 decoded streams, first 40 letters
+(word salad): P `offelnliebstkaumzuhabemirheuterneidige`, K `iskariotvijandwasmijeenenzoonkruikenka`.
+(*The first family_run.py invocation for this job ran all 3 control seeds to completion -- logged in the table
+row above, 20:37 UTC -- but was killed by an over-tight 1500s timeout partway through the target's stage 2;
+`scripts/gold_k1_bprime_target_only.py` reruns the target only, reusing that same logged control rather than
+recomputing it a second time. Not a shortcut around rule 3: the control was run and read before the target, only
+the re-run of the *target after a timeout* skipped repeating the control.)
+
+**Control-backed negative** for a keyword-mixed tableau under a devotional Dutch key model, same strength as
+GOLD-2C's and GOLD-K2's negatives under the novel-prose model.
+
+**Read across all three key registers now run (nl20 novel prose, nl20+beau, nl_dev devotional Bible):** every
+Family B and B' configuration tried lands inside its noise band regardless of register. The key-register lever
+named in the cycle-1 consolidation (GOLD-CONS1) does not move Koehler off the noise band for either tableau
+family; the standard and keyword-mixed tableaux stay excluded whether the Dutch key model is 1880-1920 novels or
+a 17th-century Bible translation. What is not yet ruled out: a Catholic Dutch prayer book specifically (not
+located, see Limits above), a German-register devotional key, and the general (non-keyword) permutation B''.
+
+**Limits.** (1) This is the Bible, not the documented prayer book (README.md's own limits, above). (2) The
+noise band comparisons reuse GOLD-2A's and GOLD-2C's bands (trained on nl20/de20), not a band re-trained on
+nl_dev; a corpus swap could in principle shift the noise band itself as well as the control, though the control
+numbers here (80-90 pct recovery, similar or higher than nl20's) argue against the devotional corpus being a
+*weaker* language model that would make the noise band easier to sit inside. (3) Family B' target run used a
+standalone rerun script after a timeout, documented above, not `family_run.py`'s own committed row for the
+target line (the table row above is from the direct run, correctly attributed to `family_run.py`'s own
+CONTROL-then-TARGET path; the *decode itself* came from the rerun script). (4) No noise-band or control number
+was recomputed for Family B at order 6/beam 300 (not needed; every order-8/beam-1000 control finished in
+6-7 minutes, well under the brief's 15-minute drop-down trigger).
+
+Files: `tools/data/nl_dev/{README.md,MANIFEST.tsv,*.txt.gz}`, `ciphers/koehler-1944/scripts/gold_k1_bprime_target_only.py`,
+`ciphers/koehler-1944/families/keyed_running_key-1-nldev.txt`, the family_run.py table row (20:37 UTC) above.
+Reproduce Family B: `python3 tools/running_key.py --control --pcorpus tools/data/de20 --kcorpus tools/data/nl_dev
+--spaces --order 8 --beam 1000 --seed 1 --tabula vig` and `python3 tools/running_key.py specs/koehler-1944.json
+--pcorpus tools/data/de20 --kcorpus tools/data/nl_dev --spaces --order 8 --beam 1000 --tabula vig` (or `--tabula
+beau`). Reproduce Family B' control: `python3 tools/family_run.py specs/koehler-1944.json --family
+keyed_running_key --corpus tools/data/de20 --param kcorpus=tools/data/nl_dev --param top=30 --param beam=300
+--param order=6 --param spaces=1 --seeds 3 --gate 0.5 --control-only`.
+
+-- GOLD-K1 (Sonnet, session_01WDJiUb1ijocbB3N3LtsLWk), 25 Sept 2026
 

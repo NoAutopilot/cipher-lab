@@ -187,6 +187,10 @@ exit code: 0
   should resolve the six-group transcription discrepancy above against an image first (rule 2) since a wrong
   letter in a 924-letter ciphertext-only problem is exactly the kind of error a book-cipher letter-arithmetic
   search cannot tolerate silently.
+- GOLD-K1 (25 Sept 2026): the devotional-register key-corpus lever is now spent for Family B and B' (both stay
+  control-backed negatives under `tools/data/nl_dev`, the Statenvertaling, same as under nl20's novels) --
+  next is B'' (general permuted tableau, cycle-3 candidate per GOLD-CONS1) or a Catholic Dutch prayer book
+  specifically, if one turns up through a route other than dbnl.org/gutendex.com (both unreachable this pass).
 - GOLD-2C (25 Sept 2026): family B' (keyed-tableau running key) is a control-backed negative for keyword-mixed
   alphabets (control 72.6% read, target at the one-time-key noise band; HYPOTHESES.md "Family B'"); step 1 puts the
   target's letter counts inside the keyed-running-key band and outside the uniform one-time-key band, so a

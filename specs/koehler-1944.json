@@ -1,86 +1,87 @@
 {
- "slug": "koehler-1944",
- "rank": 1,
- "schmeh_top50": 47,
- "name": "The five Koehler (Köhler) cryptograms, Abwehr Paris, February 1944",
- "date": "February 1944",
- "language_candidates": [
-  "de",
-  "nl",
-  "en"
- ],
- "ciphertext": [
-  {
-   "kahn_length_header": 237,
-   "groups": "ybtat mqfvo dvbis prito kecqg kokik kyiwm zuarj alyia qtxvi vxzya szgou skiqn rbqjq nogex ezdnf vusda zurop ixklo cmnbl grdhz swmch kupef pzlej hbord wkkhu vthjk sfwda jepmu izvig kzlau rdrxx mdecs spozv eeeod dlmdz nqmia pidwg xdcyy mvkso hmmii impwq nkipa mljvm sqsbb glevn sktlq tn",
-   "letters": 237
-  },
-  {
-   "kahn_length_header": 178,
-   "groups": "eekao parwo xiavy pejux lhnjh pbqdd vdvxb mdiia gwymn zbivm abuws dwoug djozl ylaug loaea ilihj swjft oetad tjisn avaqn sodwb wzaxe zvoxg xpgzv adurm shvxx xfmuq pdpvq dqwtu fryok xfvcp ydzwm ofwfl uzfne qsslo avl",
-   "letters": 178
-  },
-  {
-   "kahn_length_header": 137,
-   "groups": "tziqb lqqxs kinod mbvil sukms syarh mhzvp tvswm ayddg rixyy omfzm ugfzz aznqe ljuyi ygwuo qmdbi vcxgz rmzno pessh gpoyx qqlei xmaoj buugz czfdl yzmkp gsmfm dteze oxmos",
-   "letters": 140
-  },
-  {
-   "kahn_length_header": 140,
-   "groups": "dmxkb kqnvh zzeek beoop ygcca yvepv tykmt iykfl zkacv uxiyd kruwy vnjvp xyeqp jpmfo abzpt mjtdy zvzky bjgze vdtyd zeejw zumjp ivsna gsmzq dltxb qjqqj fnpta mqted skijj",
-   "letters": 140
-  },
-  {
-   "kahn_length_header": 229,
-   "groups": "fpoxa tijyp qrerq znqst zasnk zarvq hhsmw vlhfg pyhqc yuirf fsgoi twgdg sbphc fkfza bpegh jzujn wtsxp ijamg tzdto hxzdn uivww tizoc axkye lhmdn sfzjo omrhb zpith hkisf anvdr ynhqk syrgi ltxos wabom dzwlb byava sjomn qqszs adddu greao albon lxzgi iwpnf uzgui jgmya ksqfw zsjl",
-   "letters": 229
-  }
- ],
- "ciphertext_source": "Klaus Schmeh, Cipherbrain, 'Update: Five encrypted radio transmissions from a New York Nazi spy' (2021), fetched 24 Sept 2026 (sources/schmeh/posts/47b-koehler-update-2021.txt), reproducing David Kahn, Cryptologia 5:2 (April 1981); transcription, not an image. Message three is headed 137 by Kahn but has 140 letters as printed; message four is headed 140 and has 140.",
- "alphabet": "a-z, 26 letters all present, five-letter groups",
- "constraints": {
-  "total_letters": 924,
-  "sender": "Walter Koehler, Dutch, Abwehr agent, FBI double agent in New York from 1942; these five went to Abwehrleitstelle Frankreich, Paris Funkstelle, outside FBI control (Schmeh 2021 after Johnson, Warfare History Network)",
-  "known": "the FBI-run channel used a book cipher on a Dutch prayer book (Johnson); these messages were not on that channel",
-  "ic_pooled": 0.0399,
-  "ic_note": "flat IC (cheap test 1, specs/cheap-tests/koehler_ic.out): not a transposition of German or English (controls 0.072 / 0.065); chi-square vs uniform 58.7 on 25 df, so weakly non-uniform (z frequent, c rare)"
- },
- "cheap_test_done": [
-  "Cheap test 1 (pooled IC), 24 Sept 2026, survey worker (specs/cheap-tests/koehler_ic.py / .out): pooled 924-letter IC 0.0399 vs German plain control 0.0725 / English plain control 0.0645 / uniform-random control 0.0385 (per-message and pooled, 50-window controls each); chi-square vs uniform 58.7 on 25 df (37.7 at p=0.05). Read: flat, not a transposition of German or English; weakly non-uniform (z frequent, c rare).",
-  "cheap_tests_in_order[0] (periodic IC / Kasiski, period 2-30), 24 Sept 2026, LANE B breadth worker bKOE (session_0125YSNMcCskE21MtmQTNAFN, Sonnet, cost see ROOM.md/LEDGER): specs/cheap-tests/koehler_periodic.py / .out, per-message coset method (key/shift restarts at each of the 5 message boundaries, not pooled as one stream -- pooling first gave a misaligned, weaker signal, fixed and noted in the script). Target best coset-IC 0.0468 (period 17, seeds 1-3 identical since the target has no randomness); Kasiski finds only 2 repeated-trigram distance pairs total across all 5 messages, no period concentration. Matched controls, same message lengths, German plaintext (tools/data/de16), same method, seeds 1-3: (a) periodic-Vigenere control with a known true period (6, 29, 9 across the 3 seeds) -- coset IC 0.0650-0.0805 at the true period, Kasiski distance pairs (12-37) concentrated on the true period and its divisors; (b) one-time-key control (independent random shift per letter, never repeated) -- coset IC 0.0443-0.0472, no period concentration, matching the target and uniform (~0.0385). Read: this method recovers a real period-2-30 Vigenere-family key on ciphertext this short and design when one is present (control a) and correctly reads flat when one is not (control b); the target reads at control-b/uniform level on both statistics. Not a fixed short-period Vigenere/Beaufort over these five messages for period 2-30; consistent with a one-time key, a code/book system, or a period outside 2-30. No candidate plaintext was produced (a negative on period, not a decode), so tools/judge_plaintext.py was not run. Rules out cheap_tests_in_order item 4 (Vigenere hill-climb) as the next step; items 2/3 (archive lookup, already the spec's next-ranked route) or 5 (book cipher) remain live.",
-  "Family B, standard-tableau running key (two-stream beam decoding), 25 Sept 2026, LANE GOLD GOLD-2A (session_01FtLfcQNgSGdP1Yi9EqZ1Et, Opus; tools/running_key.py): CONTROL German plaintext at the five message lengths under a held-out Dutch book key 72.7/60.4/68.3 pct letters recovered (seeds 1-3), held-out German key 73.7/79.1/77.1 pct (either stream; streams exchangeable under vig), beau/varbeau nl key 76.0, nl/nl 77.6 (seed 1) -- gate 60 pct met. TARGET 7 configs (vig/beau/varbeau x de/nl key, nl/nl): pooled joint log-likelihood -3.57 to -3.62 per letter vs one-time-key noise band -3.57 to -3.64 and control decodes -3.12 to -3.17: at noise. Period scan 31-120 max coset IC 0.0664 at P=85, p=0.10 (noise p95 0.0699). Crib-drag top -1.82 vs noise -1.60 to -1.99. Agrees with Bourdeau 15 Sept 2026 (unigram test, family 4). Family parked (control at gate, target at noise); keyed/mixed-tableau running key not covered -> GOLD-2C. Details ciphers/koehler-1944/HYPOTHESES.md.",
-  "Family B' step 1, permutation-invariant distribution test for a KEYED-tableau running key, 25 Sept 2026, LANE GOLD GOLD-2C (session_01MD88FhWpv6brRnw9QfVG5n, Fable; ciphers/koehler-1944/scripts/keyed_dist_test.py / .out / .json, 1000 trials, seed 1): under c = S3(S1(p) + S2(k)) the ciphertext letter distribution is a permutation of a convolution of the plaintext and key distributions, so the sorted count profile, IC, entropy and chi-square vs uniform do not depend on S3. Simulated at the five target lengths: de20 plaintext, de20 or nl20 key (different book), three random permutations (KEYED band); uniform letters (ONE-TIME-KEY band); identity permutations (STANDARD, Bourdeau's family 4) for reference. TARGET IC 0.0399, entropy 4.653 bits, chi-square 58.65, max count 55, min 14, L1 to the one-time-key mean sorted profile 71.1. KEYED 99pct bands: IC 0.0386-0.0419 (target percentile 0.52), chi-square 27.7-108.3 (0.52), L1 23.5-140.2 (0.52), min count 10-26 (0.06) -- inside on all six. ONE-TIME-KEY 99pct bands: IC 0.0379-0.0395 (target percentile 1.000), entropy 4.662-4.693 (0.000), chi-square 10.5-48.6 (1.000), min 17-29 (0.001), L1 12.1-61.3 (0.999) -- outside on five of six. Bourdeau's standard-tableau number beside it (15 Sept 2026, letter-identity unigram likelihood): target below uniform where true running-key text scores >= +7.5 nats in 95pct of trials; the sorted-profile test here cannot separate standard from keyed (both inside), it only separates keyed-or-standard from one-time key. GATE: family B' NOT excluded at step 1; the target's letter counts are what a keyed running key (or any non-uniform hand key) gives, and not what a uniform one-time key gives. Step 2 (keyword-mixed alphabet search via family_run.py) follows; see HYPOTHESES.md 'Family B''.",
-  "Family B' step 2, keyword-mixed keyed-tableau running key (tools/families/keyed_running_key.py via family_run.py --gate 0.5), 25 Sept 2026, GOLD-2C (session_01MD88FhWpv6brRnw9QfVG5n, Fable): CONTROL German plaintext at the five lengths under a held-out nl20 book key through a random keyword-mixed tableau (keyword from the 11,437-word de20+nl20 list, mode from plain/key/both/full), stage 1 unigram-count ranking (true keyword ranked 6/3/4 of 45,749) + stage 2 two-stream beam on the top 30 (order 6, beam 300, word boundaries): 79.1 / 74.0 / 64.7 pct plaintext letters recovered, mean 72.6 pct, gate 50 pct met. TARGET winner waarvan:plain, pooled joint log-likelihood -3.534 per letter vs full-pipeline one-time-key noise -3.507 / -3.544 (2 trials) and controls -3.01 to -3.18; msg-1 best-of-30 -3.470 vs noise -3.477 / -3.492. Judge FAIL. Control-backed negative for a keyword-mixed tableau (four placements, vig, keyword in the de20+nl20 list); outside the set: transposition-block alphabets, two keywords, Porta, non-uniform hand keys. Details ciphers/koehler-1944/HYPOTHESES.md 'Family B''.",
-  "Family B' variant, beau arithmetic + Dutch key (tools/families/keyed_running_key.py --param arith=beau via family_run.py --gate 0.5), 25 Sept 2026, GOLD-K2 (session_0196VjuQaoVfdo8pYY9Avvm9, Sonnet): CONTROL German plaintext at the five lengths under a held-out nl20 book key through a beau-arithmetic keyword-mixed tableau: 85.5 / 82.5 / 66.2 pct letters recovered, mean 78.1 pct, gate 50 pct met. TARGET winner mixed:aufgabe:plain:beau, stage-1 best 13.4 nats over uniform (`rijpende:plain`; the winner ranked lower at 12.3 nats), msg-1 best-of-30 -3.443, pooled joint log-likelihood -3.478 per letter vs the GOLD-2C full-pipeline one-time-key noise band -3.507/-3.544 (0.03-0.07 nats above the band's top, below the -3.40 flag line). Judge FAIL (score -0.937 vs real_p05 -0.823). Control-backed negative for the beau-arithmetic corner of the keyword-mixed tableau family, same keyword list as GOLD-2C. Details ciphers/koehler-1944/HYPOTHESES.md 'Family B' variants (GOLD-K2)'."
- ],
- "cheap_tests_in_order": [
-  "1. Periodic IC / Kasiski on the pooled 924 letters for a period 2-30 (a Vigenère-family or running-key would show one; a one-time pad or a book cipher with word sums would not). Cost under $1, Sonnet.",
-  "2. Archive lookup (recovery route): TNA Discovery API for KV 2 files on Walter Koehler / Köhler (the Security Service's double-agent files) and HW 19 (ISOS/ISK decrypts of Abwehr traffic, where a Paris-Funkstelle message of Feb 1944 would have been read by GC&CS); Kahn 1981 cites the TNA letter that quotes the five messages, so start from his footnote. A file that holds the Abwehr's own decrypt ends the item as found-solved. Cost $3-5, Sonnet, one host at a time.",
-  "3. FBI Vault / NARA RG 65 'Walter Koehler' for the FBI's later reconstruction (the 1970s journalist's source). Cost $2.",
-  "4. If test 1 shows a period: Vigenère/Beaufort hill-climb in de, nl, en judged by tools/judge_plaintext.py; matched control = a German (and a Dutch) plaintext of 924 letters under a random key of the found period, same solver, same restarts (rule 3). Cost $3, Sonnet.",
-  "5. If flat: book cipher with letter arithmetic (Thouless-style word sums; Bean's 2019 method ranks candidate key texts by the letter frequencies of the decrypt) over Dutch and German Gutenberg texts. Cost $10-20, strongest model to design, Sonnet to run. Only after 2 and 3 fail."
- ],
- "matched_control": "same length and alphabet, German plaintext (tools/data/de16) under the hypothesised system, run before any negative is written",
- "judge": {
-  "language": "de",
-  "letters_min": 100,
-  "letters_max": 1000,
-  "min_word_cover": 0.5,
-  "control_samples": 200,
-  "corpora": [
-   "tools/data/de20/pg5323_Effi_Briest.txt.gz",
-   "tools/data/de20/pg46184_Frau_Jenny_Treibel.txt.gz",
-   "tools/data/de20/pg36905_Schach_von_Wuthenow.txt.gz",
-   "tools/data/de20/pg41051_Peter_Camenzind.txt.gz",
-   "tools/data/de20/pg41907_Demian.txt.gz",
-   "tools/data/de20/pg43987_Die_drei_Spruenge_des_Wang_lun.txt.gz",
-   "tools/data/de20/pg15736_Der_Mann_von_vierzig_Jahren.txt.gz"
+  "slug": "koehler-1944",
+  "rank": 1,
+  "schmeh_top50": 47,
+  "name": "The five Koehler (Köhler) cryptograms, Abwehr Paris, February 1944",
+  "date": "February 1944",
+  "language_candidates": [
+    "de",
+    "nl",
+    "en"
   ],
-  "corpora_note": "de16/composed_enhg.txt (LANG_CORPORA default for de) is Early New High German, wrong period for a 1944 target; de20 (25 Sept 2026, GOLD-C) is 1880-1940 German prose, 2.49M letters folded"
- },
- "value": "high: Kahn's own unsolved item, a real 1944 espionage text with a documented sender; a reading would be a contribution to the Koehler/Hoover story",
- "model": "Sonnet for tests 1-3; strongest model only for 5",
- "status_24_Sept_2026": "open; not on DECODE, not in either solver repository (LANDSCAPE), Schmeh 2021 'solution remains unknown'",
- "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run is under cheap_test_done with its control",
- "written": "24 Sept 2026 by the survey worker (session_013GkMQP9y84gHGG4pSSwaQj), claude-fable-5-1"
+  "ciphertext": [
+    {
+      "kahn_length_header": 237,
+      "groups": "ybtat mqfvo dvbis prito kecqg kokik kyiwm zuarj alyia qtxvi vxzya szgou skiqn rbqjq nogex ezdnf vusda zurop ixklo cmnbl grdhz swmch kupef pzlej hbord wkkhu vthjk sfwda jepmu izvig kzlau rdrxx mdecs spozv eeeod dlmdz nqmia pidwg xdcyy mvkso hmmii impwq nkipa mljvm sqsbb glevn sktlq tn",
+      "letters": 237
+    },
+    {
+      "kahn_length_header": 178,
+      "groups": "eekao parwo xiavy pejux lhnjh pbqdd vdvxb mdiia gwymn zbivm abuws dwoug djozl ylaug loaea ilihj swjft oetad tjisn avaqn sodwb wzaxe zvoxg xpgzv adurm shvxx xfmuq pdpvq dqwtu fryok xfvcp ydzwm ofwfl uzfne qsslo avl",
+      "letters": 178
+    },
+    {
+      "kahn_length_header": 137,
+      "groups": "tziqb lqqxs kinod mbvil sukms syarh mhzvp tvswm ayddg rixyy omfzm ugfzz aznqe ljuyi ygwuo qmdbi vcxgz rmzno pessh gpoyx qqlei xmaoj buugz czfdl yzmkp gsmfm dteze oxmos",
+      "letters": 140
+    },
+    {
+      "kahn_length_header": 140,
+      "groups": "dmxkb kqnvh zzeek beoop ygcca yvepv tykmt iykfl zkacv uxiyd kruwy vnjvp xyeqp jpmfo abzpt mjtdy zvzky bjgze vdtyd zeejw zumjp ivsna gsmzq dltxb qjqqj fnpta mqted skijj",
+      "letters": 140
+    },
+    {
+      "kahn_length_header": 229,
+      "groups": "fpoxa tijyp qrerq znqst zasnk zarvq hhsmw vlhfg pyhqc yuirf fsgoi twgdg sbphc fkfza bpegh jzujn wtsxp ijamg tzdto hxzdn uivww tizoc axkye lhmdn sfzjo omrhb zpith hkisf anvdr ynhqk syrgi ltxos wabom dzwlb byava sjomn qqszs adddu greao albon lxzgi iwpnf uzgui jgmya ksqfw zsjl",
+      "letters": 229
+    }
+  ],
+  "ciphertext_source": "Klaus Schmeh, Cipherbrain, 'Update: Five encrypted radio transmissions from a New York Nazi spy' (2021), fetched 24 Sept 2026 (sources/schmeh/posts/47b-koehler-update-2021.txt), reproducing David Kahn, Cryptologia 5:2 (April 1981); transcription, not an image. Message three is headed 137 by Kahn but has 140 letters as printed; message four is headed 140 and has 140.",
+  "alphabet": "a-z, 26 letters all present, five-letter groups",
+  "constraints": {
+    "total_letters": 924,
+    "sender": "Walter Koehler, Dutch, Abwehr agent, FBI double agent in New York from 1942; these five went to Abwehrleitstelle Frankreich, Paris Funkstelle, outside FBI control (Schmeh 2021 after Johnson, Warfare History Network)",
+    "known": "the FBI-run channel used a book cipher on a Dutch prayer book (Johnson); these messages were not on that channel",
+    "ic_pooled": 0.0399,
+    "ic_note": "flat IC (cheap test 1, specs/cheap-tests/koehler_ic.out): not a transposition of German or English (controls 0.072 / 0.065); chi-square vs uniform 58.7 on 25 df, so weakly non-uniform (z frequent, c rare)"
+  },
+  "cheap_test_done": [
+    "Cheap test 1 (pooled IC), 24 Sept 2026, survey worker (specs/cheap-tests/koehler_ic.py / .out): pooled 924-letter IC 0.0399 vs German plain control 0.0725 / English plain control 0.0645 / uniform-random control 0.0385 (per-message and pooled, 50-window controls each); chi-square vs uniform 58.7 on 25 df (37.7 at p=0.05). Read: flat, not a transposition of German or English; weakly non-uniform (z frequent, c rare).",
+    "cheap_tests_in_order[0] (periodic IC / Kasiski, period 2-30), 24 Sept 2026, LANE B breadth worker bKOE (session_0125YSNMcCskE21MtmQTNAFN, Sonnet, cost see ROOM.md/LEDGER): specs/cheap-tests/koehler_periodic.py / .out, per-message coset method (key/shift restarts at each of the 5 message boundaries, not pooled as one stream -- pooling first gave a misaligned, weaker signal, fixed and noted in the script). Target best coset-IC 0.0468 (period 17, seeds 1-3 identical since the target has no randomness); Kasiski finds only 2 repeated-trigram distance pairs total across all 5 messages, no period concentration. Matched controls, same message lengths, German plaintext (tools/data/de16), same method, seeds 1-3: (a) periodic-Vigenere control with a known true period (6, 29, 9 across the 3 seeds) -- coset IC 0.0650-0.0805 at the true period, Kasiski distance pairs (12-37) concentrated on the true period and its divisors; (b) one-time-key control (independent random shift per letter, never repeated) -- coset IC 0.0443-0.0472, no period concentration, matching the target and uniform (~0.0385). Read: this method recovers a real period-2-30 Vigenere-family key on ciphertext this short and design when one is present (control a) and correctly reads flat when one is not (control b); the target reads at control-b/uniform level on both statistics. Not a fixed short-period Vigenere/Beaufort over these five messages for period 2-30; consistent with a one-time key, a code/book system, or a period outside 2-30. No candidate plaintext was produced (a negative on period, not a decode), so tools/judge_plaintext.py was not run. Rules out cheap_tests_in_order item 4 (Vigenere hill-climb) as the next step; items 2/3 (archive lookup, already the spec's next-ranked route) or 5 (book cipher) remain live.",
+    "Family B, standard-tableau running key (two-stream beam decoding), 25 Sept 2026, LANE GOLD GOLD-2A (session_01FtLfcQNgSGdP1Yi9EqZ1Et, Opus; tools/running_key.py): CONTROL German plaintext at the five message lengths under a held-out Dutch book key 72.7/60.4/68.3 pct letters recovered (seeds 1-3), held-out German key 73.7/79.1/77.1 pct (either stream; streams exchangeable under vig), beau/varbeau nl key 76.0, nl/nl 77.6 (seed 1) -- gate 60 pct met. TARGET 7 configs (vig/beau/varbeau x de/nl key, nl/nl): pooled joint log-likelihood -3.57 to -3.62 per letter vs one-time-key noise band -3.57 to -3.64 and control decodes -3.12 to -3.17: at noise. Period scan 31-120 max coset IC 0.0664 at P=85, p=0.10 (noise p95 0.0699). Crib-drag top -1.82 vs noise -1.60 to -1.99. Agrees with Bourdeau 15 Sept 2026 (unigram test, family 4). Family parked (control at gate, target at noise); keyed/mixed-tableau running key not covered -> GOLD-2C. Details ciphers/koehler-1944/HYPOTHESES.md.",
+    "Family B' step 1, permutation-invariant distribution test for a KEYED-tableau running key, 25 Sept 2026, LANE GOLD GOLD-2C (session_01MD88FhWpv6brRnw9QfVG5n, Fable; ciphers/koehler-1944/scripts/keyed_dist_test.py / .out / .json, 1000 trials, seed 1): under c = S3(S1(p) + S2(k)) the ciphertext letter distribution is a permutation of a convolution of the plaintext and key distributions, so the sorted count profile, IC, entropy and chi-square vs uniform do not depend on S3. Simulated at the five target lengths: de20 plaintext, de20 or nl20 key (different book), three random permutations (KEYED band); uniform letters (ONE-TIME-KEY band); identity permutations (STANDARD, Bourdeau's family 4) for reference. TARGET IC 0.0399, entropy 4.653 bits, chi-square 58.65, max count 55, min 14, L1 to the one-time-key mean sorted profile 71.1. KEYED 99pct bands: IC 0.0386-0.0419 (target percentile 0.52), chi-square 27.7-108.3 (0.52), L1 23.5-140.2 (0.52), min count 10-26 (0.06) -- inside on all six. ONE-TIME-KEY 99pct bands: IC 0.0379-0.0395 (target percentile 1.000), entropy 4.662-4.693 (0.000), chi-square 10.5-48.6 (1.000), min 17-29 (0.001), L1 12.1-61.3 (0.999) -- outside on five of six. Bourdeau's standard-tableau number beside it (15 Sept 2026, letter-identity unigram likelihood): target below uniform where true running-key text scores >= +7.5 nats in 95pct of trials; the sorted-profile test here cannot separate standard from keyed (both inside), it only separates keyed-or-standard from one-time key. GATE: family B' NOT excluded at step 1; the target's letter counts are what a keyed running key (or any non-uniform hand key) gives, and not what a uniform one-time key gives. Step 2 (keyword-mixed alphabet search via family_run.py) follows; see HYPOTHESES.md 'Family B''.",
+    "Family B' step 2, keyword-mixed keyed-tableau running key (tools/families/keyed_running_key.py via family_run.py --gate 0.5), 25 Sept 2026, GOLD-2C (session_01MD88FhWpv6brRnw9QfVG5n, Fable): CONTROL German plaintext at the five lengths under a held-out nl20 book key through a random keyword-mixed tableau (keyword from the 11,437-word de20+nl20 list, mode from plain/key/both/full), stage 1 unigram-count ranking (true keyword ranked 6/3/4 of 45,749) + stage 2 two-stream beam on the top 30 (order 6, beam 300, word boundaries): 79.1 / 74.0 / 64.7 pct plaintext letters recovered, mean 72.6 pct, gate 50 pct met. TARGET winner waarvan:plain, pooled joint log-likelihood -3.534 per letter vs full-pipeline one-time-key noise -3.507 / -3.544 (2 trials) and controls -3.01 to -3.18; msg-1 best-of-30 -3.470 vs noise -3.477 / -3.492. Judge FAIL. Control-backed negative for a keyword-mixed tableau (four placements, vig, keyword in the de20+nl20 list); outside the set: transposition-block alphabets, two keywords, Porta, non-uniform hand keys. Details ciphers/koehler-1944/HYPOTHESES.md 'Family B''.",
+    "Family B' variant, beau arithmetic + Dutch key (tools/families/keyed_running_key.py --param arith=beau via family_run.py --gate 0.5), 25 Sept 2026, GOLD-K2 (session_0196VjuQaoVfdo8pYY9Avvm9, Sonnet): CONTROL German plaintext at the five lengths under a held-out nl20 book key through a beau-arithmetic keyword-mixed tableau: 85.5 / 82.5 / 66.2 pct letters recovered, mean 78.1 pct, gate 50 pct met. TARGET winner mixed:aufgabe:plain:beau, stage-1 best 13.4 nats over uniform (`rijpende:plain`; the winner ranked lower at 12.3 nats), msg-1 best-of-30 -3.443, pooled joint log-likelihood -3.478 per letter vs the GOLD-2C full-pipeline one-time-key noise band -3.507/-3.544 (0.03-0.07 nats above the band's top, below the -3.40 flag line). Judge FAIL (score -0.937 vs real_p05 -0.823). Control-backed negative for the beau-arithmetic corner of the keyword-mixed tableau family, same keyword list as GOLD-2C. Details ciphers/koehler-1944/HYPOTHESES.md 'Family B' variants (GOLD-K2)'.",
+    "Families B and B' rerun under a devotional Dutch key corpus, 25 Sept 2026, LANE GOLD GOLD-K1 (session_01WDJiUb1ijocbB3N3LtsLWk, Sonnet): tools/data/nl_dev (Statenvertaling, 3.4M letters, 67 files) built after every prior B/B' negative was conditional on nl20's 1880-1920 novel-prose Dutch key model, while the documented Koehler key is a Dutch prayer book. Family B (tools/running_key.py, order 8, beam 1000): CONTROL German plaintext / held-out nl_dev key, vig, 83.0/89.5/80.3 pct (seeds 1-3, mean 84.3, gate 60 met, higher than nl20's control 72.7/60.4/68.3). TARGET vig pooled joint ll -3.588, beau -3.640, both inside GOLD-2A's one-time-key noise band -3.57 to -3.64 and about 0.45-0.5 nats below controls (-3.12 to -3.17): control-backed negative under the devotional key too. Family B' (tools/family_run.py --family keyed_running_key, order 6, beam 300): CONTROL 87.8/81.0/85.6 pct (mean 84.8, gate 50 met). TARGET winner mixed:evelyn:plain:vig, pooled joint ll -3.583, inside GOLD-2C's full-pipeline noise band -3.507 to -3.544; judge FAIL (score -0.982 vs real_p05 -0.823). Control-backed negative. No Catholic Dutch prayer book found (dbnl.org unreachable, gutendex.com unreachable after one retry). Details ciphers/koehler-1944/HYPOTHESES.md 'Families B and B', devotional Dutch key (GOLD-K1)'."
+  ],
+  "cheap_tests_in_order": [
+    "1. Periodic IC / Kasiski on the pooled 924 letters for a period 2-30 (a Vigenère-family or running-key would show one; a one-time pad or a book cipher with word sums would not). Cost under $1, Sonnet.",
+    "2. Archive lookup (recovery route): TNA Discovery API for KV 2 files on Walter Koehler / Köhler (the Security Service's double-agent files) and HW 19 (ISOS/ISK decrypts of Abwehr traffic, where a Paris-Funkstelle message of Feb 1944 would have been read by GC&CS); Kahn 1981 cites the TNA letter that quotes the five messages, so start from his footnote. A file that holds the Abwehr's own decrypt ends the item as found-solved. Cost $3-5, Sonnet, one host at a time.",
+    "3. FBI Vault / NARA RG 65 'Walter Koehler' for the FBI's later reconstruction (the 1970s journalist's source). Cost $2.",
+    "4. If test 1 shows a period: Vigenère/Beaufort hill-climb in de, nl, en judged by tools/judge_plaintext.py; matched control = a German (and a Dutch) plaintext of 924 letters under a random key of the found period, same solver, same restarts (rule 3). Cost $3, Sonnet.",
+    "5. If flat: book cipher with letter arithmetic (Thouless-style word sums; Bean's 2019 method ranks candidate key texts by the letter frequencies of the decrypt) over Dutch and German Gutenberg texts. Cost $10-20, strongest model to design, Sonnet to run. Only after 2 and 3 fail."
+  ],
+  "matched_control": "same length and alphabet, German plaintext (tools/data/de16) under the hypothesised system, run before any negative is written",
+  "judge": {
+    "language": "de",
+    "letters_min": 100,
+    "letters_max": 1000,
+    "min_word_cover": 0.5,
+    "control_samples": 200,
+    "corpora": [
+      "tools/data/de20/pg5323_Effi_Briest.txt.gz",
+      "tools/data/de20/pg46184_Frau_Jenny_Treibel.txt.gz",
+      "tools/data/de20/pg36905_Schach_von_Wuthenow.txt.gz",
+      "tools/data/de20/pg41051_Peter_Camenzind.txt.gz",
+      "tools/data/de20/pg41907_Demian.txt.gz",
+      "tools/data/de20/pg43987_Die_drei_Spruenge_des_Wang_lun.txt.gz",
+      "tools/data/de20/pg15736_Der_Mann_von_vierzig_Jahren.txt.gz"
+    ],
+    "corpora_note": "de16/composed_enhg.txt (LANG_CORPORA default for de) is Early New High German, wrong period for a 1944 target; de20 (25 Sept 2026, GOLD-C) is 1880-1940 German prose, 2.49M letters folded"
+  },
+  "value": "high: Kahn's own unsolved item, a real 1944 espionage text with a documented sender; a reading would be a contribution to the Koehler/Hoover story",
+  "model": "Sonnet for tests 1-3; strongest model only for 5",
+  "status_24_Sept_2026": "open; not on DECODE, not in either solver repository (LANDSCAPE), Schmeh 2021 'solution remains unknown'",
+  "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run is under cheap_test_done with its control",
+  "written": "24 Sept 2026 by the survey worker (session_013GkMQP9y84gHGG4pSSwaQj), claude-fable-5-1"
 }
