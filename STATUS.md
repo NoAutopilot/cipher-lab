@@ -150,14 +150,14 @@ this (check LEDGER.md); run bCYL; run bullet test 2 and rubin test 2 once parent
 no specs yet. Host notes: every Cipherbrain image sits on scienceblogs.de (one worker at a time); Gutenberg was LANE GOLD's
 today; an image-and-two-pass first test does not fit USD 3 with a subagent (bMOU 7.61), one pass with no subagent does.
 
-## LANE GOLD handoff (session_01DKDynpdEwZK5EokxtjCM3P), 25 September 2026, kept current (last 18:27 UTC)
+## LANE GOLD handoff (session_01DKDynpdEwZK5EokxtjCM3P), 25 September 2026, kept current (last 19:25 UTC)
 
-Standing lane on koehler-1944 then debosnys-1883 (brief `.claude/briefs/runs/2026-09-25-lane-gold-orchestrator.md`; owner amendment 16:51: Fable for tool/family design, consolidator cap $15; parent 18:18: families run through tools/family_run.py). Both targets check-solved `open`, intake gate exit 0.
-- Köhler. Family A recovery (GOLD-1A): nothing at TNA; FBI HQ file RG 65 105-9673 box 156 located, unopened; Farago 1971 unread (ASKS 55); six-group Schmeh/Bourdeau discrepancy, Kahn pp.65-66 (ASKS 53), variants in ciphertext-variants.tsv. Prior attempts: Bourdeau 15 Sept, six families excluded with controls (HYPOTHESES.md). Family B standard-tableau running key PARKED (GOLD-2A, tools/running_key.py): control 60-79 pct on 3 seeds, target at one-time-key noise. Running: GOLD-2C (Fable, session_01MD88FhWpv6brRnw9QfVG5n) keyed-tableau running key: distribution exclusion test first, then family_run with gate 0.5. After that: family C (book/word-sum code), then D (one-time key: park, only A remains).
-- Debosnys. Images of all four cryptograms on disk (B2 + GOLD-4A). Inventory split by eye to 160 ids (GOLD-4C; 36 composites); IC 1251 signs .039 vs uniform-at-K .006-.017, fr .07. Form test (GOLD-4B) not significant (r 0.44, 93.6th pct); Sektu 2017 already rejected the alexandrine idea. Running: GOLD-4D (Sonnet, session_01NpdQZpF7KA8MoamdqFx9mS) blind pass B2, reconcile, homophonic control at N,K. Museum ask ASKS 52.
-- Corpora: tools/data/de20, nl20, fr19 (GOLD-C); spec judges point at de20 / fr19.
-- Next: consolidator cycle 1 (Fable, $15) after 2C and 4D report, about 20:00-21:00 UTC.
-- Spend: workers 37.71 dollars ledgered (0K 3.61, 0D 4.10, C 1.95, 1A 3.63, 4A 5.60, 2A 4.99, 4B 2.91, 4C 10.22).
+Standing lane on koehler-1944 then debosnys-1883 (brief `.claude/briefs/runs/2026-09-25-lane-gold-orchestrator.md`; owner amendment 16:51: Fable for tool/family design and the consolidator, cap $15; parent 18:18: families run through tools/family_run.py). Both targets check-solved `open`, intake gate exit 0. Orchestrator at 7.11 dollars own, 379k context (handoff at 500k).
+- Köhler (NEAR.md row). A recovery: nothing at TNA; FBI HQ file RG 65 105-9673 + Farago 1971 (ASKS 55); six-group transcription discrepancy, Kahn pp.65-66 (ASKS 53). Bourdeau 15 Sept: six families excluded. B standard-tableau running key PARKED (control 60-79 pct, target at one-time-key noise; GOLD-2A). B' keyword-mixed tableau PARKED (control 72.6 pct mean, target at noise; GOLD-2C). Key fact (GOLD-2C distribution test): target letter statistics inside the keyed-tableau band 6/6 and OUTSIDE the one-time-key 99 pct band 5/6 -- not a uniform OTP; non-keyword permutations and hand-made non-uniform keys remain.
+- Debosnys. All four cryptograms on disk; inventory 160 ids (36 composites; GOLD-4C); blind pass agreement 62.3 pct on c1 (GOLD-4E), 22.4 pct at 68 ids on c4 (4A); GOLD-4D failed at 3.3x cap (one cryptogram per worker, no subagent from now). Form test not significant (4B). ciphertext.txt still B2's single-pass draft. Museum ask ASKS 52.
+- Running: GOLD-CONS1 consolidator cycle 1 (Fable, session_017PRh6MAX17rgp5ayuycZ6c, $15/60 min from 19:24): top summaries of both HYPOTHESES.md, continue/pivot/park per family, next briefs as `.claude/briefs/runs/2026-09-25-lane-gold-c2-*.md` (INTAKE_GATE_OUTPUT to fill, then spawn).
+- Corpora: tools/data/de20, nl20, fr19. Tools: tools/running_key.py (+ --mixed), tools/families/keyed_running_key.py, glyph_atlas.py --exclude-page.
+- Spend: workers 75.0 dollars ledgered (0K 3.61, 0D 4.10, C 1.95, 1A 3.63, 4A 5.60, 2A 4.99, 4B 2.91, 4C 10.22, 4D 23.28 F, 2C 10.56, 4E 3.41).
 
 ## Parent handoff (owner account, session_01FXDfYR3CvGk7tcid1Aav1n), from 25 Sept 2026 00:30 UTC, kept current
 
