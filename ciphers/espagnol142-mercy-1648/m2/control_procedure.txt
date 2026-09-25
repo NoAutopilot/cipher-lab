@@ -1,0 +1,8 @@
+words seen in the blind decode and held fixed: ['tambien', 'caballo', 'sera', 'altos', 'buen', 'estan', 'amor', 'dos', 'nos', 'que', 'de', 'la', 'sal', 'libr']
+signs held fixed: 31 of 38; 15 of them actually correct (checked against truth only after fixing)
+before: anneal score -1321.7, letters correct 269/521
+after, seed 1: anneal score -1321.7, letters correct 269/521 = 51.6%
+after, seed 2: anneal score -1321.7, letters correct 269/521 = 51.6%
+after, seed 3: anneal score -1321.7, letters correct 269/521 = 51.6%
+judge before: FAIL language: score=-1.222, null_p99=-1.88, real_p05=-0.897, real_median=-0.812, mode=both, N=521
+judge after: FAIL language: score=-1.222, null_p99=-1.88, real_p05=-0.897, real_median=-0.812, mode=both, N=521

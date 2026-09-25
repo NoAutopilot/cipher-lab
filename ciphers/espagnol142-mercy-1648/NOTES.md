@@ -467,3 +467,96 @@ outputs for every seed reported above, plus `rerun.sh`, which reproduces the key
 
 **Requests:** archive.org 2 (djvu.txt downloads for es17) + 4 metadata/search calls (advancedsearch.php x2,
 metadata.php x2), all >=1.5s apart, descriptive UA. No other hosts. No subagents.
+
+## M2: graded reading (25 Sept 2026, LANE R6)
+
+**Status unchanged: open** (judge FAIL; see the calibration note). Brief: `.claude/briefs/runs/2026-09-25-lane-r6-m2-mercy-read.md`.
+Disk only, no hosts, no subagents. Start 17:45 UTC.
+
+**Result in one line.** 521 code tokens graded **S 494, M 27, H 0, C 0** (a cryptanalytic result, rule 4). About
+three fifths of the code stream now reads as connected Spanish in the letter's own frame; the rest (r16-r17,
+v04-v08) does not, and the judge FAILs.
+
+**Reading (cipher runs upper case in `reading.txt`, clear words as written):**
+`[24] ALANDOSE ESTAS ARMAS EN CAMPAGNA y asi Holgare me digais lo que en esta razon saueis entendido. DE LA DUQUESA DE
+CHEUREUSE Y DEL _ y porque qualquiera ora de tardanca ... en la materia. Y QUE EL _ UENGA CON UOS PARA QUE NOS
+INFUME DE OULAY SEPAMOS Con fundamento lo que nos podemos prometer ... confiar della. PASAREIS A CLEUES A UEROS CON EL
+ELECTOR DE BRANDENBURG Y CON COPURA D LONBURG SZRFSUCMAREY MAYOR PARA DIENSE Y EMBIAN CARTAS DE CREENCIA QUE UAN CON ESTA Y
+LES PROPONDREIS DES I SE PERMITIRA SE LEUANTEN EN AQUEL PAIS TRES MIL HOMBRES DE INFANTERIA EN DOS O TRE SEGIMIENTI Y CON
+QUE CONDICIONES Y ALEAMARE MAYOR SI QUERRA ENCARGAE DELLA Y QUE CORRA POR SU NOLADIRENTNONYSIIUNA SERA MAS CONUENIENT ARO
+TRATAN TA GENTE DE QUE A A LEUANTADA TG DOLA Y EN SU LUGAR LEUAAR OTRA y Caso que le paresca ... sin perder tiempo. Y SE
+CONSUIESE EL FRUTO DE TENER TA GENTE En todo os encargo la brevedad ... Barneton a seis Junio de 1648`
+(`_` = [MARK:box], a word code left unread; twice where a name or title fits: "y del _", "que el _ venga con vos".)
+
+**How it was read (files).** Y8's best key (`cheap_test_1/target_marks_seed3.json`) applied to the code runs with
+their clear neighbours (`m2/view.py --runs`); ten corrections, each logged in `corrections.tsv` with the
+occurrences that justify it and those that do not (rule: two independent readable occurrences, never one). Five
+code->letter changes by reading (34 o->a, 20 o->f, 22 i->g, 24 l->h, 26 e->i), one after the anneal re-run (33 a->e),
+two against the anneal (13 s->y on seven occurrences incl. "ma-y-or" checked on the image; 25 i->u on two, graded M),
+frac->c (one occurrence, M). Then `tools/homophonic_anneal.py --fix` with the 29 confirmed codes held (3 seeds, all
+-1199.1; `m2/cipher_codes_eyefix.tsv`) to settle the rest: 15 n, 48 d, 52 y, 65 s, 72 z, kept at grade M.
+`key.tsv` (38 rows, grade and the words behind each), `exceptions.tsv` (5 rows), `decode.json`;
+`python3 tools/decode_key.py ciphers/espagnol142-mercy-1648 --check` exits 0; `reading.txt`, `reading_tokens.tsv`.
+
+**Transcription slips found (flag for a re-pass, not repaired in ciphertext.tsv).** Five glyphs both blind passes
+read as 19 are 14 on the image (an open 4, the same shape as the 4 of the adjacent 24/34; a 9 in this hand has a
+round bowl): r06:14, r14:7, r16:3, r16:6, r17:5. They give "de la duquesa de CHEUREUSE", "pasareis a CLEUES a veros
+con el elector de Brandenburg", "y CON CO...". Recorded in `exceptions.tsv` at grade M, not silently repaired
+(rule 2). All other 19s on r04, r07, r09, r10, r15, r19, r20 were checked and are 19. Also: the tail of v07 on the
+image reads "... 7 17 16 10 3 17 22" where ciphertext.tsv has "... 7 17 16 10 7 22" (one code more, "3 17" for
+"7"); not applied, needs the re-pass. Dots after some codes ("34.28.10", "16.", "8.", "19.") are on the image and
+not in the transcription; they do not fall on word boundaries in the reading and were not used.
+
+**Judge (rule 7, pasted).**
+```
+$ python3 tools/judge_plaintext.py specs/espagnol142-mercy-1648.json --file ciphers/espagnol142-mercy-1648/reading.txt
+ok   length: got=1341, min=200, max=1000000000
+FAIL language: score=-1.034, null_p99=-1.924, real_p05=-0.875, real_median=-0.814, mode=both, N=1341
+FAIL - espagnol142-mercy-1648 (a PASS is a gate for a verifier, not a reading; rule 10)
+$ python3 tools/judge_plaintext.py specs/espagnol142-mercy-1648.json --file ciphers/espagnol142-mercy-1648/m2/reading_codes_only.txt
+ok   length: got=519, min=200, max=1000000000
+FAIL language: score=-1.057, null_p99=-1.862, real_p05=-0.879, real_median=-0.811, mode=both, N=519
+FAIL - espagnol142-mercy-1648
+$ python3 tools/judge_plaintext.py specs/espagnol142-mercy-1648.json --file ciphers/espagnol142-mercy-1648/m2/clear_words_only.txt
+ok   length: got=782
+FAIL language: score=-0.892, null_p99=-1.899, real_p05=-0.888, real_median=-0.822, mode=both, N=782
+FAIL - espagnol142-mercy-1648
+```
+The first is the brief's command (it scores the 174 clear words and the line labels together with the decode). The
+second is the 519-letter decode alone: -1.057, against Y8's blind -1.048 -- the corrections do **not** move the
+judge. The third is the calibration check: **the letter's own clear words, real 1648 secretarial Spanish transcribed
+at 95% agreement, also FAIL the es17 judge** (-0.892 vs real_p05 -0.888). es17 is Cervantes and Quevedo; this
+letter is chancery prose with German and French names (Brandenburg, Cleues, Cheureuse, Lonburg). So a FAIL here is
+weakly informative (CLAUDE.md rule 3, era/register lesson of V6-PTCORP); a PASS would have needed a register-matched
+corpus, which this pass did not build (suggestion below). The decode still sits 0.17 below the clear words, which
+is real: roughly two fifths of the stream does not read.
+
+**Crib-loop gain gate (rule 3), both numbers.** Same procedure on Y8's matched control seed 1 (K=38, N=521,
+homophonic, Quijote text; blind -1321.7, 269/521 letters, judge -1.222): the words a reader sees in its blind
+decode (tambien, caballo, sera, altos, buen, estan, que, de, la ...) fix 31 of 38 signs, of which only 15 are in
+fact right; no code change could be justified by two readable occurrences; the re-anneal with those fixed returns
+the identical optimum on 3 seeds. **Control gain: 0.0 anneal points, 0 letters, judge -1.222 -> -1.222. Target:
+anneal -1154.3 -> -1199.1 (the trigram objective dislikes the corrections: gn, f, names), judge -1.048 -> -1.057,
+readable clauses from about one (Y8's fragments) to about a dozen.** On the numeric gate the target's gain does
+not exceed the control's; what changed is legibility, which neither number measures. Reported as such, not as a
+pass. `m2/control_procedure.txt` has the run.
+
+**Historical sense (context only, nothing searched, nothing claimed).** June 1648, Spanish Netherlands: the
+Spanish-Dutch peace of Münster was ratified in May 1648 and the war with France went on. The Duchess of Chevreuse
+was in exile in the Spanish Netherlands 1645-49; Cleves was the Elector of Brandenburg's residence on the Spanish
+Netherlands' border; recruiting three thousand German foot in two or three regiments for Spain's service, with
+credential letters and a demand for haste, fits that summer. "Mi Sumiller de Cortina" is a Spanish royal-chapel post,
+so the unsigned sender is a prince with a household (the governor-general Archduke Leopold Wilhelm is the obvious
+candidate; the catalogue's Guise link is the 1641 item, and Guise was a prisoner in Spain from April 1648) -- an
+inference, not read from the leaf. "Lonburg" (r16) and "Barneton" are not resolved.
+
+**What did not read, for the next worker (one line each).** (1) r16-r17 after Brandenburg: "Y CON CO[25]RA D LONBURG
+S[72]RFS[25]CMARE[52] MAYOR PARA [48]IENSE" -- rare codes 72, 52, 48 sit here; likely word codes or nulls. (2) v04
+"NOLADIRENTNONYSIIUNA" (two 15s, M-confidence row v04:19). (3) v07-v08 "A A LEUANTADA TG DOLA Y" (image has an extra
+code, above). (4) 25: u reads twice, a reads once. Suggestions: a transcription re-pass of r16-r17, v04, v07 with the
+14/19 and 3/7 shapes in mind; a register-matched es corpus (chancery letters, 1620-1660) before re-judging; the DECODE
+Brussels chiffres 1647-98 lead (Y6) stays the recovery route -- a key sheet would settle 48/52/65/72 and the box mark.
+
+**Search log.** Nothing searched for the letter in print (the verifier's job). Report what was found: a reading at
+grade S/M from cryptanalysis with a control; where it was not found: no key source, no plaintext source consulted.
+Requests: none. Subagents: none. Cost: read by the orchestrator.

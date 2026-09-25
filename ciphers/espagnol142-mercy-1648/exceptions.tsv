@@ -1,0 +1,6 @@
+line	position	value	grade	reason
+r06	14	c	M	image shows 14 (open 4, same shape as the 4 of the adjacent 24), both passes read 19; reads Cheureuse
+r14	7	c	M	image shows 14 after '34.', distinct from the 19. at position 3; reads Cleues
+r16	3	c	M	image shows 14; 'y con co...' after brandenburg
+r16	6	c	M	image shows 14; same line
+r17	5	c	M	image shows 14 between 25 and 30
