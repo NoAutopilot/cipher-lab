@@ -441,3 +441,109 @@ extracts, not committed as images), `scripts/count_syllables.py`, `scripts/form_
 
 Requests this pass: sektu.blogspot.com 2 (see `sektu-2017.md`). No other host touched; no new
 images fetched (rule "image over transcription" satisfied from images already on disk).
+
+## GOLD-4C, inventory (25 Sept 2026, session_01DKinsj1fqVdAVyWw5x6Xtf, Fable)
+
+Brief: `.claude/briefs/runs/2026-09-25-lane-gold-debosnys-inventory.md`. Cap $10 / 60 min, started 18:00 UTC.
+Intake gate at brief launch: `debosnys-1883: open (line 1) -- edition/page or full-text-search citation found
+within 6 lines` (exit 0). No decoding, no annealing; this is inventory design from the crops, one pass, by eye.
+
+**1. Every box now carries a sign id with a confidence** (`glyphs/box_labels.tsv`, 1315 rows: sid, page, line,
+pos, sign, family, confidence, source). What was looked at, from labelled contact sheets cut from the grey page
+crops (not the binarised bitmaps): all 445 boxes of the 39 `MISC-*` clusters and the 14 of `SUN` (source
+`eye-split:<old id>`); all 283 cryptogram-4 boxes, both the 118 the kNN had left as `MISC-*`/`_` and the 165 it
+had given a named id (source `eye-check:knn-<old id>`, so the kNN's own uncertainty layer is gone from c4); and
+180 boxes of twelve GOLD-4A "named" clusters that the first inventory sheet showed to be mixed themselves --
+PHI, LOOP-TAIL, CIRC-TAIL, DELTA-TAIL, TRIPOD, WAVE, BAR-SERIF, EYE-DOT, GEAR-DOT, CRESCENT, RHO, HOOK-L (source
+`eye-resplit:<old id>`). The 393 boxes of the fifteen clusters that looked pure on the sheet (X, PCT, Y-CURL,
+VENUS, CROSS-T, BAR-SOLID, BAR-THIN, CIRC-O, NOTE, AMP, TRIDENT, VEE, DASH-H, DASH-V, V-DOT) keep their cluster
+label (source `cluster-map:<cluster>`), with merge.tsv's confidence. `glyphs/merge.tsv` rows for every split
+cluster now read `PER-BOX` with the split's contents in the desc; `glyphs/labels_box.json` is labels_merged.json
+plus a per-box `override` block, so `glyph_atlas.py classify --labels glyphs/labels_box.json --exclude-page`
+votes with the corrected labels. `glyphs/inventory.png` / `inventory.tsv`: one row per sign id, count, pages,
+H/M/L counts, up to eight exemplars spread across pages.
+
+**K after the split: 160 sign ids** (162 rows counting the two non-sign classes `_` noise and `MULTI`, a box the
+segmenter cut across several signs), against 68 before; **158 families** after folding the two variant pairs
+that the sheet shows are one shape written two ways (PCT-SLASH, a % with dots instead of loops, into PCT;
+BAR-SOLID, which is the same ink blob as BLOB, into BLOB). Confidence over the 1315 boxes: **H 481 (36.6%),
+M 638 (48.5%), L 196 (14.9%)**. 73 ids have fewer than three exemplars (50 seen once), and inventory.tsv says
+so per row: they are the twenty pictograms (horse, eagle, leaf, bird, anchor, house, tree, runner, face, jug,
+barrel, bottle, arrow, crown, fish, heart, glass, figure, "crossed", "D"; 42 boxes in all), eight plain-letter
+shapes (A, D, F, H, L, M, N, T), and one-off composites. That long tail is a property of the pages, not of the
+split: Debosnys draws a great many things once.
+
+What the split found that GOLD-4A's cluster view could not: a large part of the alphabet is **composite**, a
+base sign with a stack of strokes above or below it that the segmenter (rightly, they touch or overlap) kept
+in one box -- tilde over o / ox / xx / oo / dots, two dashes over o, dashes over ıı, cc over dashes, arch over
+dashes or over o, a bar between an arch or a cc and an x, ıı over a bar over o. 36 such composite ids cover
+267 boxes (20% of all signs). Whether the stacked strokes are part of the sign, or the "marks" of the marks.tsv
+layer written large, is the design question the next pass should keep open; here they are signs, named by their
+parts (O-TILDE, OX-TILDE, O-DASH2, II-DASH, CC-DASH, ARCH-DASH, C-BAR-X, II-O, ...), so a later merge is a
+lookup, not a re-read. Also found: GOLD-4A's PHI cluster was mostly loops with a *diagonal* stroke, which is the
+same Ø shape that filled LOOP-TAIL and part of MISC-78/-37/-54 (now one id, O-SLASH, 27 boxes, plus PHI proper
+19); DELTA-TAIL was mostly a cross over a loop (DAGGER-O, 18); HOOK-L was two shapes, a comma (HOOK-L, 3) and
+pairs of slanted strokes / nested chevrons (DBL-SLASH 14, CHEVRON2 10); CIRC-TAIL was a junk drawer (X, comma,
+o, blobs, faint marks); RHO is a loop on a stem like a magnifier (LOOP-STEM, 9).
+
+**2. `tools/glyph_atlas.py classify --exclude-page`** (commit b08f48f): the target page's own boxes never vote;
+help line and docstring updated; `tools/tests/test_glyph_atlas.py` gains a case that classifies a wholly
+unlabelled second page from the first page's per-box overrides and a case that a page with nothing else to vote
+with fails loudly. Test passes (`ok`). This replaces GOLD-4A's standalone workaround.
+
+**3. Cryptogram 4's 228 disagreement columns, settled on the image with the new inventory**
+(`disagreements_classes.tsv`, one row per column of GOLD-4A's reconciled draft, kept as
+`glyphs/c4_draft_gold4a.tsv`; `scripts/gold4c_inventory.py` derives the classes mechanically from box_labels.tsv):
+
+| class | columns | share | what it means |
+|---|---|---|---|
+| inventory confusion | 174 | 76% | 128 where one pass used a `MISC-*` bucket or the kNN `_` class (one id for several shapes); 46 where the shape read on the image had no id at all in the 68-id inventory, so both passes reached for different impure ids (e.g. PHI vs LOOP-TAIL for an Ø, TRIPOD vs PCT for a %) |
+| segmentation | 34 | 15% | 22 columns where one pass has a box the other lacks; 12 where the box is several signs merged (`MULTI`) or noise |
+| reading error | 20 | 9% | both ids exist and stay distinct in the new inventory; 14 where one pass had it right, 6 where neither did |
+
+So GOLD-4A's 22.4% agreement measured the inventory, not the legibility of the page: three quarters of the
+disagreement is two ids for one shape or one id for two shapes. The 9% reading-error residue (about 20 of 283
+signs) is the floor a second blind pass on this inventory has to beat; the 80% gate is reachable in principle.
+
+**4. Pass A rebuilt for all four cryptograms** from box_labels.tsv (`passA.tsv`, 1315 rows, now with a family
+column) and written to `ciphertext_draft.tsv` (same rows, single pass A; `ciphertext.txt` untouched -- the
+next Sonnet job is a blind pass B against `glyphs/inventory.png` and decides it). N/K/IC per cryptogram with
+`scripts/compute_ic.py`'s own controls (fr16 and en16_repo text at the same N, uniform random at the same N and
+K, 20 trials each; full four-way table in `glyphs/ic_inventory.txt`; sign ids, `_`/`MULTI` excluded):
+
+| group | N | K | IC target | IC fr16 | IC en16 | IC uniform (same K) |
+|---|---|---|---|---|---|---|
+| #1 | 132 | 58 | 0.0397 | 0.0694 | 0.0915 | 0.0172 |
+| #2 (2a+2b) | 734 | 123 | 0.0465 | 0.0696 | 0.0989 | 0.0082 |
+| #3 | 116 | 59 | 0.0352 | 0.0695 | 0.0915 | 0.0169 |
+| #4 (4a+4b) | 269 | 85 | 0.0282 | 0.0704 | 0.0973 | 0.0118 |
+| combined | 1251 | 160 | 0.0391 | 0.0697 | 0.1022 | 0.0063 |
+
+On families the same rows read 0.0452 / 0.0506 / 0.0390 / 0.0300 / 0.0435 (K 56 / 121 / 57 / 84 / 158). Reading
+this against GOLD-4A's table: K more than doubled (69 -> 160) and the uniform control fell accordingly (0.0145
+-> 0.0063), while the target IC barely moved (0.038 -> 0.039): the text is now **six times** its uniform-random
+control at the same K and N, still at 56% of French and 38% of English. Cryptogram 4's IC fell from 0.055 to
+0.028 with K 49 -> 85: GOLD-4A's kNN had been forcing c4's boxes into ids it already had (a collapse the
+"higher IC" reflected), and by eye c4 is the most varied page (85 ids in 269 signs; c2 has 123 in 734). None of
+this is a reading; grade S throughout, 0 H, 0 C. Rule 10: nothing here is a novelty claim.
+
+**Limits, stated plainly.** (a) The eye labels are one pass by one session, graded by that session's own
+confidence; the H/M/L shares above are self-assessed, and the matched check is the blind pass B the brief
+names as the next job, not anything in this section. (b) 36 composite ids are a naming decision, not a finding
+that they are single signs; a base+mark reading of the same boxes would give a smaller K and a higher IC, and
+the names make that re-count mechanical. (c) 29 boxes are `_` (faint marks, bleed-through, dust) and 35 are
+`MULTI` (several signs in one box, mostly c2's ornate lines and c4a's lines 11-13): these are segmentation
+work, not inventory work, and are excluded from the IC rows above and flagged in box_labels.tsv. (d) The IC
+controls are letter frequencies of running text; a matched control for a 160-symbol homophonic or code design
+at N=1251 (rule 3) has not been run and is the cheap test before any solver: `tools/family_run.py` with a
+synthetic homophonic cipher at this N and K would say whether 0.039 is what such a design gives.
+
+Reproduce: `cd ciphers/debosnys-1883 && python3 scripts/gold4c_inventory.py --check` (exit 0 when passA.tsv,
+ciphertext_draft.tsv, disagreements_classes.tsv and glyphs/ic_inventory.txt match box_labels.tsv).
+
+Suggested next (one line each, not started): blind pass B (Sonnet) on `glyphs/strips/` against
+`glyphs/inventory.png`, all four cryptograms, 80% gate per line; a base+mark re-count of the 36 composite ids
+against marks.tsv's mark classes; a matched synthetic homophonic control at N=1251, K=160 through
+`tools/family_run.py` before any IC-based claim.
+
+Requests this job: none (disk and CPU only). Subagents: none.

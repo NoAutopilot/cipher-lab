@@ -1,0 +1,34 @@
+GOLD-4C inventory (box_labels.tsv), 25 Sept 2026. Controls: compute_ic.py, fr16 / en16_repo text at the
+same N (20 trials), uniform random string at the same N and K (20 trials). "excl" drops _ and MULTI boxes.
+
+== sign ids, including _/MULTI ==
+group                  N    K  IC_target    IC_fr    IC_en  IC_uniform
+c1                   136   60     0.0376   0.0695   0.0916      0.0166
+c2 (2a+2b)           778  125     0.0429   0.0695   0.0991      0.0080
+c3                   118   61     0.0340   0.0693   0.0914      0.0165
+c4 (4a+4b)           283   87     0.0269   0.0704   0.0975      0.0115
+combined (all)      1315  162     0.0365   0.0698   0.1012      0.0062
+
+== sign ids, excluding _/MULTI ==
+group                  N    K  IC_target    IC_fr    IC_en  IC_uniform
+c1                   132   58     0.0397   0.0694   0.0915      0.0172
+c2 (2a+2b)           734  123     0.0465   0.0696   0.0989      0.0082
+c3                   116   59     0.0352   0.0695   0.0915      0.0169
+c4 (4a+4b)           269   85     0.0282   0.0704   0.0973      0.0118
+combined (all)      1251  160     0.0391   0.0697   0.1022      0.0063
+
+== families (PCT-SLASH->PCT, BAR-SOLID->BLOB), including _/MULTI ==
+group                  N    K  IC_target    IC_fr    IC_en  IC_uniform
+c1                   136   58     0.0428   0.0695   0.0916      0.0172
+c2 (2a+2b)           778  123     0.0466   0.0695   0.0991      0.0081
+c3                   118   59     0.0377   0.0693   0.0914      0.0169
+c4 (4a+4b)           283   86     0.0286   0.0704   0.0975      0.0117
+combined (all)      1315  160     0.0405   0.0698   0.1012      0.0063
+
+== families (PCT-SLASH->PCT, BAR-SOLID->BLOB), excluding _/MULTI ==
+group                  N    K  IC_target    IC_fr    IC_en  IC_uniform
+c1                   132   56     0.0452   0.0694   0.0915      0.0178
+c2 (2a+2b)           734  121     0.0506   0.0696   0.0989      0.0083
+c3                   116   57     0.0390   0.0695   0.0915      0.0174
+c4 (4a+4b)           269   84     0.0300   0.0704   0.0973      0.0120
+combined (all)      1251  158     0.0435   0.0697   0.1022      0.0063

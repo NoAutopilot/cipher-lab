@@ -1,1316 +1,1316 @@
-line	position	sign	confidence	source
-c1_L01	1	MISC-33	L	cluster-map
-c1_L01	2	MISC-13	L	cluster-map
-c1_L01	3	TRIDENT	H	cluster-map
-c1_L01	4	X	H	cluster-map
-c1_L01	5	MISC-71	L	cluster-map
-c1_L01	6	DASH-H	H	cluster-map
-c1_L01	7	MISC-03	L	cluster-map
-c1_L01	8	Y-CURL	M	cluster-map
-c1_L01	9	MISC-82	L	cluster-map
-c1_L01	10	MISC-31	L	cluster-map
-c1_L01	11	MISC-46	L	cluster-map
-c1_L01	12	MISC-78	L	cluster-map
-c1_L01	13	MISC-36	L	cluster-map
-c1_L01	14	X	H	cluster-map
-c1_L01	15	MISC-31	L	cluster-map
-c1_L01	16	MISC-33	L	cluster-map
-c1_L01	17	MISC-60	L	cluster-map
-c1_L01	18	X	H	cluster-map
-c1_L01	19	X	H	cluster-map
-c1_L01	20	BAR-SOLID	M	cluster-map
-c1_L01	21	MISC-55	L	cluster-map
-c1_L01	22	X	H	cluster-map
-c1_L02	1	SUN	M	cluster-map
-c1_L02	2	MISC-87	L	cluster-map
-c1_L02	3	PCT	H	cluster-map
-c1_L02	4	PCT	H	cluster-map
-c1_L02	5	MISC-33	L	cluster-map
-c1_L02	6	MISC-87	L	cluster-map
-c1_L02	7	TRIPOD	M	cluster-map
-c1_L02	8	X	H	cluster-map
-c1_L02	9	CIRC-TAIL	M	cluster-map
-c1_L02	10	MISC-31	L	cluster-map
-c1_L02	11	MISC-20	L	cluster-map
-c1_L02	12	X	H	cluster-map
-c1_L02	13	MISC-05	L	cluster-map
-c1_L02	14	MISC-13	L	cluster-map
-c1_L02	15	Y-CURL	M	cluster-map
-c1_L02	16	MISC-29	L	cluster-map
-c1_L02	17	X	H	cluster-map
-c1_L02	18	PCT	H	cluster-map
-c1_L02	19	MISC-05	L	cluster-map
-c1_L02	20	CRESCENT	H	cluster-map
-c1_L02	21	MISC-17	L	cluster-map
-c1_L03	1	BAR-THIN	M	cluster-map
-c1_L03	2	X	H	cluster-map
-c1_L03	3	MISC-55	L	cluster-map
-c1_L03	4	DELTA-TAIL	M	cluster-map
-c1_L03	5	WAVE	M	cluster-map
-c1_L03	6	MISC-00	L	cluster-map
-c1_L03	7	X	H	cluster-map
-c1_L03	8	MISC-80	L	cluster-map
-c1_L03	9	GEAR-DOT	M	cluster-map
-c1_L03	10	X	H	cluster-map
-c1_L03	11	LOOP-TAIL	M	cluster-map
-c1_L03	12	PCT	H	cluster-map
-c1_L03	13	BAR-SOLID	M	cluster-map
-c1_L03	14	TRIDENT	H	cluster-map
-c1_L03	15	PCT	H	cluster-map
-c1_L03	16	MISC-71	L	cluster-map
-c1_L03	17	MISC-35	L	cluster-map
-c1_L03	18	EYE-DOT	M	cluster-map
-c1_L03	19	MISC-31	L	cluster-map
-c1_L03	20	TRIPOD	M	cluster-map
-c1_L03	21	DASH-H	H	cluster-map
-c1_L03	22	MISC-21	L	cluster-map
-c1_L03	23	MISC-79	L	cluster-map
-c1_L03	24	MISC-46	L	cluster-map
-c1_L03	25	NOTE	H	cluster-map
-c1_L03	26	PHI	H	cluster-map
-c1_L03	27	BAR-SOLID	M	cluster-map
-c1_L03	28	PCT	H	cluster-map
-c1_L03	29	MISC-31	L	cluster-map
-c1_L04	1	MISC-67	L	cluster-map
-c1_L04	2	MISC-06	L	cluster-map
-c1_L04	3	DELTA-TAIL	M	cluster-map
-c1_L04	4	CIRC-TAIL	M	cluster-map
-c1_L04	5	LOOP-TAIL	M	cluster-map
-c1_L04	6	BAR-THIN	M	cluster-map
-c1_L04	7	RHO	H	cluster-map
-c1_L04	8	VEE	H	cluster-map
-c1_L04	9	MISC-83	L	cluster-map
-c1_L04	10	HOOK-L	H	cluster-map
-c1_L04	11	DASH-H	H	cluster-map
-c1_L04	12	MISC-03	L	cluster-map
-c1_L04	13	PCT	H	cluster-map
-c1_L04	14	WAVE	M	cluster-map
-c1_L04	15	MISC-67	L	cluster-map
-c1_L04	16	MISC-87	L	cluster-map
-c1_L04	17	MISC-36	L	cluster-map
-c1_L04	18	X	H	cluster-map
-c1_L04	19	MISC-30	L	cluster-map
-c1_L04	20	VENUS	H	cluster-map
-c1_L04	21	MISC-43	L	cluster-map
-c1_L04	22	TRIPOD	M	cluster-map
-c1_L04	23	MISC-31	L	cluster-map
-c1_L05	1	PCT	H	cluster-map
-c1_L05	2	BAR-SERIF	H	cluster-map
-c1_L05	3	BAR-SERIF	H	cluster-map
-c1_L05	4	Y-CURL	M	cluster-map
-c1_L05	5	TRIPOD	M	cluster-map
-c1_L05	6	MISC-30	L	cluster-map
-c1_L05	7	X	H	cluster-map
-c1_L05	8	CROSS-T	M	cluster-map
-c1_L05	9	Y-CURL	M	cluster-map
-c1_L05	10	MISC-67	L	cluster-map
-c1_L05	11	DELTA-TAIL	M	cluster-map
-c1_L05	12	MISC-79	L	cluster-map
-c1_L05	13	X	H	cluster-map
-c1_L05	14	Y-CURL	M	cluster-map
-c1_L05	15	X	H	cluster-map
-c1_L05	16	PCT	H	cluster-map
-c1_L05	17	MISC-06	L	cluster-map
-c1_L05	18	BAR-SERIF	H	cluster-map
-c1_L05	19	BAR-SOLID	M	cluster-map
-c1_L05	20	MISC-07	L	cluster-map
-c1_L05	21	Y-CURL	M	cluster-map
-c1_L05	22	X	H	cluster-map
-c1_L05	23	MISC-13	L	cluster-map
-c1_L06	1	PCT	H	cluster-map
-c1_L06	2	LOOP-TAIL	M	cluster-map
-c1_L06	3	X	H	cluster-map
-c1_L06	4	MISC-67	L	cluster-map
-c1_L06	5	X	H	cluster-map
-c1_L06	6	MISC-05	L	cluster-map
-c1_L06	7	CRESCENT	H	cluster-map
-c1_L06	8	PCT	H	cluster-map
-c1_L06	9	X	H	cluster-map
-c1_L06	10	MISC-43	L	cluster-map
-c1_L06	11	MISC-76	L	cluster-map
-c1_L06	12	CIRC-TAIL	M	cluster-map
-c1_L06	13	Y-CURL	M	cluster-map
-c1_L06	14	CIRC-TAIL	M	cluster-map
-c1_L06	15	MISC-13	L	cluster-map
-c1_L06	16	MISC-17	L	cluster-map
-c1_L06	17	PHI	H	cluster-map
-c1_L06	18	MISC-17	L	cluster-map
-c2a_L01	1	BAR-THIN	M	cluster-map
-c2a_L01	2	MISC-21	L	cluster-map
-c2a_L01	3	X	H	cluster-map
-c2a_L01	4	MISC-82	L	cluster-map
-c2a_L01	5	MISC-76	L	cluster-map
-c2a_L01	6	Y-CURL	M	cluster-map
-c2a_L01	7	MISC-21	L	cluster-map
-c2a_L01	8	MISC-67	L	cluster-map
-c2a_L01	9	CIRC-TAIL	M	cluster-map
-c2a_L01	10	X	H	cluster-map
-c2a_L01	11	MISC-13	L	cluster-map
-c2a_L01	12	AMP	H	cluster-map
-c2a_L01	13	MISC-75	L	cluster-map
-c2a_L01	14	CIRC-O	H	cluster-map
-c2a_L01	15	X	H	cluster-map
-c2a_L01	16	MISC-54	L	cluster-map
-c2a_L01	17	MISC-33	L	cluster-map
-c2a_L01	18	MISC-05	L	cluster-map
-c2a_L01	19	V-DOT	M	cluster-map
-c2a_L01	20	MISC-17	L	cluster-map
-c2a_L01	21	BAR-THIN	M	cluster-map
-c2a_L01	22	CIRC-O	H	cluster-map
-c2a_L01	23	DASH-H	H	cluster-map
-c2a_L01	24	MISC-31	L	cluster-map
-c2a_L01	25	PCT	H	cluster-map
-c2a_L01	26	EYE-DOT	M	cluster-map
-c2a_L01	27	DASH-H	H	cluster-map
-c2a_L01	28	X	H	cluster-map
-c2a_L01	29	MISC-75	L	cluster-map
-c2a_L01	30	RHO	H	cluster-map
-c2a_L01	31	MISC-03	L	cluster-map
-c2a_L01	32	X	H	cluster-map
-c2a_L01	33	MISC-55	L	cluster-map
-c2a_L01	34	DASH-V	M	cluster-map
-c2a_L02	1	SUN	M	cluster-map
-c2a_L02	2	MISC-87	L	cluster-map
-c2a_L02	3	MISC-33	L	cluster-map
-c2a_L02	4	MISC-20	L	cluster-map
-c2a_L02	5	TRIDENT	H	cluster-map
-c2a_L02	6	MISC-05	L	cluster-map
-c2a_L02	7	MISC-33	L	cluster-map
-c2a_L02	8	TRIDENT	H	cluster-map
-c2a_L02	9	MISC-76	L	cluster-map
-c2a_L02	10	MISC-83	L	cluster-map
-c2a_L02	11	SUN	M	cluster-map
-c2a_L02	12	X	H	cluster-map
-c2a_L02	13	DELTA-TAIL	M	cluster-map
-c2a_L02	14	DELTA-TAIL	M	cluster-map
-c2a_L02	15	BAR-THIN	M	cluster-map
-c2a_L02	16	TRIDENT	H	cluster-map
-c2a_L02	17	BAR-SERIF	H	cluster-map
-c2a_L02	18	MISC-11	L	cluster-map
-c2a_L02	19	PCT	H	cluster-map
-c2a_L02	20	DELTA-TAIL	M	cluster-map
-c2a_L02	21	X	H	cluster-map
-c2a_L02	22	X	H	cluster-map
-c2a_L02	23	MISC-46	L	cluster-map
-c2a_L02	24	MISC-55	L	cluster-map
-c2a_L02	25	PHI	H	cluster-map
-c2a_L02	26	MISC-36	L	cluster-map
-c2a_L02	27	MISC-64	L	cluster-map
-c2a_L02	28	DASH-V	M	cluster-map
-c2a_L03	1	MISC-60	L	cluster-map
-c2a_L03	2	MISC-43	L	cluster-map
-c2a_L03	3	VENUS	H	cluster-map
-c2a_L03	4	MISC-00	L	cluster-map
-c2a_L03	5	X	H	cluster-map
-c2a_L03	6	X	H	cluster-map
-c2a_L03	7	PHI	H	cluster-map
-c2a_L03	8	MISC-37	L	cluster-map
-c2a_L03	9	VENUS	H	cluster-map
-c2a_L03	10	MISC-30	L	cluster-map
-c2a_L03	11	X	H	cluster-map
-c2a_L03	12	MISC-33	L	cluster-map
-c2a_L03	13	MISC-82	L	cluster-map
-c2a_L03	14	MISC-30	L	cluster-map
-c2a_L03	15	PCT	H	cluster-map
-c2a_L03	16	X	H	cluster-map
-c2a_L03	17	WAVE	M	cluster-map
-c2a_L03	18	MISC-05	L	cluster-map
-c2a_L03	19	BAR-SOLID	M	cluster-map
-c2a_L03	20	X	H	cluster-map
-c2a_L03	21	TRIDENT	H	cluster-map
-c2a_L03	22	BAR-SOLID	M	cluster-map
-c2a_L03	23	Y-CURL	M	cluster-map
-c2a_L03	24	MISC-33	L	cluster-map
-c2a_L03	25	X	H	cluster-map
-c2a_L03	26	MISC-35	L	cluster-map
-c2a_L04	1	BAR-THIN	M	cluster-map
-c2a_L04	2	BAR-THIN	M	cluster-map
-c2a_L04	3	BAR-THIN	M	cluster-map
-c2a_L04	4	BAR-SOLID	M	cluster-map
-c2a_L04	5	MISC-75	L	cluster-map
-c2a_L04	6	X	H	cluster-map
-c2a_L04	7	X	H	cluster-map
-c2a_L04	8	MISC-24	L	cluster-map
-c2a_L04	9	MISC-30	L	cluster-map
-c2a_L04	10	AMP	H	cluster-map
-c2a_L04	11	MISC-21	L	cluster-map
-c2a_L04	12	MISC-30	L	cluster-map
-c2a_L04	13	MISC-41	L	cluster-map
-c2a_L04	14	V-DOT	M	cluster-map
-c2a_L04	15	HOOK-L	H	cluster-map
-c2a_L04	16	MISC-32	L	cluster-map
-c2a_L04	17	MISC-20	L	cluster-map
-c2a_L04	18	DELTA-TAIL	M	cluster-map
-c2a_L04	19	X	H	cluster-map
-c2a_L04	20	X	H	cluster-map
-c2a_L04	21	MISC-55	L	cluster-map
-c2a_L04	22	MISC-37	L	cluster-map
-c2a_L04	23	PCT	H	cluster-map
-c2a_L04	24	WAVE	M	cluster-map
-c2a_L04	25	BAR-THIN	M	cluster-map
-c2a_L04	26	BAR-THIN	M	cluster-map
-c2a_L04	27	DASH-V	M	cluster-map
-c2a_L05	1	CIRC-TAIL	M	cluster-map
-c2a_L05	2	MISC-76	L	cluster-map
-c2a_L05	3	DASH-V	M	cluster-map
-c2a_L05	4	BAR-SOLID	M	cluster-map
-c2a_L05	5	SUN	M	cluster-map
-c2a_L05	6	MISC-05	L	cluster-map
-c2a_L05	7	X	H	cluster-map
-c2a_L05	8	MISC-31	L	cluster-map
-c2a_L05	9	RHO	H	cluster-map
-c2a_L05	10	CRESCENT	H	cluster-map
-c2a_L05	11	CRESCENT	H	cluster-map
-c2a_L05	12	BAR-SOLID	M	cluster-map
-c2a_L05	13	BAR-SERIF	H	cluster-map
-c2a_L05	14	X	H	cluster-map
-c2a_L05	15	CIRC-O	H	cluster-map
-c2a_L05	16	MISC-55	L	cluster-map
-c2a_L05	17	X	H	cluster-map
-c2a_L05	18	X	H	cluster-map
-c2a_L05	19	MISC-87	L	cluster-map
-c2a_L05	20	X	H	cluster-map
-c2a_L05	21	WAVE	M	cluster-map
-c2a_L05	22	MISC-46	L	cluster-map
-c2a_L05	23	MISC-67	L	cluster-map
-c2a_L05	24	MISC-05	L	cluster-map
-c2a_L05	25	MISC-74	L	cluster-map
-c2a_L05	26	X	H	cluster-map
-c2a_L05	27	PHI	H	cluster-map
-c2a_L05	28	MISC-74	L	cluster-map
-c2a_L05	29	HOOK-L	H	cluster-map
-c2a_L05	30	HOOK-L	H	cluster-map
-c2a_L05	31	BAR-SERIF	H	cluster-map
-c2a_L05	32	DELTA-TAIL	M	cluster-map
-c2a_L05	33	X	H	cluster-map
-c2a_L05	34	BAR-THIN	M	cluster-map
-c2a_L06	1	BAR-THIN	M	cluster-map
-c2a_L06	2	X	H	cluster-map
-c2a_L06	3	MISC-06	L	cluster-map
-c2a_L06	4	BAR-THIN	M	cluster-map
-c2a_L06	5	MISC-06	L	cluster-map
-c2a_L06	6	X	H	cluster-map
-c2a_L06	7	MISC-13	L	cluster-map
-c2a_L06	8	X	H	cluster-map
-c2a_L06	9	MISC-75	L	cluster-map
-c2a_L06	10	MISC-06	L	cluster-map
-c2a_L06	11	MISC-67	L	cluster-map
-c2a_L06	12	MISC-13	L	cluster-map
-c2a_L06	13	MISC-67	L	cluster-map
-c2a_L06	14	CROSS-T	M	cluster-map
-c2a_L06	15	MISC-05	L	cluster-map
-c2a_L06	16	MISC-75	L	cluster-map
-c2a_L06	17	PHI	H	cluster-map
-c2a_L06	18	PCT	H	cluster-map
-c2a_L06	19	X	H	cluster-map
-c2a_L06	20	HOOK-L	H	cluster-map
-c2a_L06	21	HOOK-L	H	cluster-map
-c2a_L06	22	CIRC-O	H	cluster-map
-c2a_L06	23	MISC-17	L	cluster-map
-c2a_L06	24	MISC-87	L	cluster-map
-c2a_L06	25	CIRC-O	H	cluster-map
-c2a_L06	26	VEE	H	cluster-map
-c2a_L06	27	MISC-79	L	cluster-map
-c2a_L06	28	PCT	H	cluster-map
-c2a_L06	29	X	H	cluster-map
-c2a_L06	30	VENUS	H	cluster-map
-c2a_L06	31	PCT	H	cluster-map
-c2a_L07	1	MISC-81	L	cluster-map
-c2a_L07	2	MISC-67	L	cluster-map
-c2a_L07	3	MISC-82	L	cluster-map
-c2a_L07	4	MISC-37	L	cluster-map
-c2a_L07	5	BAR-SOLID	M	cluster-map
-c2a_L07	6	DELTA-TAIL	M	cluster-map
-c2a_L07	7	MISC-17	L	cluster-map
-c2a_L07	8	MISC-36	L	cluster-map
-c2a_L07	9	X	H	cluster-map
-c2a_L07	10	MISC-31	L	cluster-map
-c2a_L07	11	MISC-24	L	cluster-map
-c2a_L07	12	VENUS	H	cluster-map
-c2a_L07	13	MISC-31	L	cluster-map
-c2a_L07	14	X	H	cluster-map
-c2a_L07	15	MISC-24	L	cluster-map
-c2a_L07	16	MISC-74	L	cluster-map
-c2a_L07	17	MISC-35	L	cluster-map
-c2a_L07	18	X	H	cluster-map
-c2a_L07	19	MISC-33	L	cluster-map
-c2a_L07	20	MISC-82	L	cluster-map
-c2a_L07	21	X	H	cluster-map
-c2a_L07	22	X	H	cluster-map
-c2a_L07	23	MISC-05	L	cluster-map
-c2a_L07	24	MISC-13	L	cluster-map
-c2a_L07	25	MISC-05	L	cluster-map
-c2a_L07	26	AMP	H	cluster-map
-c2a_L07	27	PHI	H	cluster-map
-c2a_L07	28	MISC-41	L	cluster-map
-c2a_L07	29	MISC-17	L	cluster-map
-c2a_L07	30	X	H	cluster-map
-c2a_L07	31	MISC-31	L	cluster-map
-c2a_L07	32	BAR-SERIF	H	cluster-map
-c2a_L08	1	DASH-H	H	cluster-map
-c2a_L08	2	BAR-THIN	M	cluster-map
-c2a_L08	3	X	H	cluster-map
-c2a_L08	4	X	H	cluster-map
-c2a_L08	5	MISC-50	L	cluster-map
-c2a_L08	6	PCT	H	cluster-map
-c2a_L08	7	X	H	cluster-map
-c2a_L08	8	Y-CURL	M	cluster-map
-c2a_L08	9	MISC-80	L	cluster-map
-c2a_L08	10	CIRC-O	H	cluster-map
-c2a_L08	11	MISC-29	L	cluster-map
-c2a_L08	12	MISC-76	L	cluster-map
-c2a_L08	13	MISC-41	L	cluster-map
-c2a_L08	14	TRIPOD	M	cluster-map
-c2a_L08	15	GEAR-DOT	M	cluster-map
-c2a_L08	16	MISC-29	L	cluster-map
-c2a_L08	17	WAVE	M	cluster-map
-c2a_L08	18	MISC-43	L	cluster-map
-c2a_L08	19	MISC-29	L	cluster-map
-c2a_L08	20	MISC-71	L	cluster-map
-c2a_L08	21	MISC-29	L	cluster-map
-c2a_L08	22	MISC-67	L	cluster-map
-c2a_L08	23	MISC-29	L	cluster-map
-c2a_L08	24	MISC-29	L	cluster-map
-c2a_L08	25	MISC-31	L	cluster-map
-c2a_L08	26	BAR-SERIF	H	cluster-map
-c2a_L09	1	GEAR-DOT	M	cluster-map
-c2a_L09	2	AMP	H	cluster-map
-c2a_L09	3	MISC-64	L	cluster-map
-c2a_L09	4	MISC-05	L	cluster-map
-c2a_L09	5	X	H	cluster-map
-c2a_L09	6	MISC-05	L	cluster-map
-c2a_L09	7	MISC-76	L	cluster-map
-c2a_L09	8	BAR-SOLID	M	cluster-map
-c2a_L09	9	MISC-43	L	cluster-map
-c2a_L09	10	MISC-67	L	cluster-map
-c2a_L09	11	MISC-07	L	cluster-map
-c2a_L09	12	MISC-67	L	cluster-map
-c2a_L09	13	BAR-SOLID	M	cluster-map
-c2a_L09	14	MISC-21	L	cluster-map
-c2a_L09	15	MISC-55	L	cluster-map
-c2a_L09	16	BAR-SOLID	M	cluster-map
-c2a_L09	17	BAR-SOLID	M	cluster-map
-c2a_L09	18	MISC-29	L	cluster-map
-c2a_L09	19	DELTA-TAIL	M	cluster-map
-c2a_L09	20	CROSS-T	M	cluster-map
-c2a_L09	21	PHI	H	cluster-map
-c2a_L09	22	MISC-46	L	cluster-map
-c2a_L09	23	MISC-40	L	cluster-map
-c2a_L09	24	MISC-40	L	cluster-map
-c2a_L09	25	CIRC-TAIL	M	cluster-map
-c2a_L09	26	MISC-32	L	cluster-map
-c2a_L09	27	MISC-37	L	cluster-map
-c2a_L09	28	CRESCENT	H	cluster-map
-c2a_L09	29	BAR-SOLID	M	cluster-map
-c2a_L09	30	MISC-74	L	cluster-map
-c2a_L09	31	MISC-75	L	cluster-map
-c2a_L09	32	MISC-54	L	cluster-map
-c2a_L09	33	MISC-54	L	cluster-map
-c2a_L09	34	Y-CURL	M	cluster-map
-c2a_L09	35	MISC-32	L	cluster-map
-c2a_L09	36	EYE-DOT	M	cluster-map
-c2a_L09	37	MISC-17	L	cluster-map
-c2a_L09	38	CIRC-TAIL	M	cluster-map
-c2a_L09	39	MISC-20	L	cluster-map
-c2a_L09	40	PCT	H	cluster-map
-c2a_L09	41	DASH-V	M	cluster-map
-c2a_L10	1	TRIPOD	M	cluster-map
-c2a_L10	2	VENUS	H	cluster-map
-c2a_L10	3	CIRC-TAIL	M	cluster-map
-c2a_L10	4	MISC-13	L	cluster-map
-c2a_L10	5	MISC-17	L	cluster-map
-c2a_L10	6	MISC-11	L	cluster-map
-c2a_L10	7	MISC-07	L	cluster-map
-c2a_L10	8	MISC-05	L	cluster-map
-c2a_L10	9	SUN	M	cluster-map
-c2a_L10	10	MISC-20	L	cluster-map
-c2a_L10	11	MISC-05	L	cluster-map
-c2a_L10	12	NOTE	H	cluster-map
-c2a_L10	13	MISC-05	L	cluster-map
-c2a_L10	14	SUN	M	cluster-map
-c2a_L10	15	DELTA-TAIL	M	cluster-map
-c2a_L10	16	MISC-64	L	cluster-map
-c2a_L10	17	MISC-87	L	cluster-map
-c2a_L10	18	LOOP-TAIL	M	cluster-map
-c2a_L10	19	MISC-31	L	cluster-map
-c2a_L10	20	MISC-41	L	cluster-map
-c2a_L10	21	MISC-24	L	cluster-map
-c2a_L10	22	CRESCENT	H	cluster-map
-c2a_L10	23	X	H	cluster-map
-c2a_L10	24	X	H	cluster-map
-c2a_L10	25	Y-CURL	M	cluster-map
-c2a_L10	26	MISC-41	L	cluster-map
-c2a_L10	27	Y-CURL	M	cluster-map
-c2a_L10	28	WAVE	M	cluster-map
-c2a_L10	29	PCT	H	cluster-map
-c2a_L10	30	X	H	cluster-map
-c2a_L10	31	X	H	cluster-map
-c2a_L10	32	MISC-33	L	cluster-map
-c2a_L10	33	BAR-THIN	M	cluster-map
-c2a_L11	1	MISC-76	L	cluster-map
-c2a_L11	2	VENUS	H	cluster-map
-c2a_L11	3	EYE-DOT	M	cluster-map
-c2a_L11	4	X	H	cluster-map
-c2a_L11	5	MISC-05	L	cluster-map
-c2a_L11	6	MISC-41	L	cluster-map
-c2a_L11	7	CROSS-T	M	cluster-map
-c2a_L11	8	MISC-05	L	cluster-map
-c2a_L11	9	MISC-31	L	cluster-map
-c2a_L11	10	MISC-24	L	cluster-map
-c2a_L11	11	MISC-06	L	cluster-map
-c2a_L11	12	MISC-03	L	cluster-map
-c2a_L11	13	X	H	cluster-map
-c2a_L11	14	WAVE	M	cluster-map
-c2a_L11	15	PCT	H	cluster-map
-c2a_L11	16	PCT	H	cluster-map
-c2a_L11	17	AMP	H	cluster-map
-c2a_L11	18	Y-CURL	M	cluster-map
-c2a_L11	19	MISC-31	L	cluster-map
-c2a_L11	20	MISC-11	L	cluster-map
-c2a_L11	21	RHO	H	cluster-map
-c2a_L11	22	BAR-THIN	M	cluster-map
-c2a_L11	23	WAVE	M	cluster-map
-c2a_L11	24	X	H	cluster-map
-c2a_L11	25	MISC-24	L	cluster-map
-c2a_L11	26	MISC-54	L	cluster-map
-c2a_L11	27	Y-CURL	M	cluster-map
-c2a_L11	28	X	H	cluster-map
-c2a_L11	29	MISC-37	L	cluster-map
-c2a_L11	30	X	H	cluster-map
-c2a_L11	31	MISC-36	L	cluster-map
-c2a_L11	32	DASH-V	M	cluster-map
-c2a_L12	1	X	H	cluster-map
-c2a_L12	2	VENUS	H	cluster-map
-c2a_L12	3	PCT	H	cluster-map
-c2a_L12	4	BAR-SERIF	H	cluster-map
-c2a_L12	5	X	H	cluster-map
-c2a_L12	6	MISC-41	L	cluster-map
-c2a_L12	7	BAR-SOLID	M	cluster-map
-c2a_L12	8	MISC-17	L	cluster-map
-c2a_L12	9	BAR-SOLID	M	cluster-map
-c2a_L12	10	X	H	cluster-map
-c2a_L12	11	MISC-29	L	cluster-map
-c2a_L12	12	X	H	cluster-map
-c2a_L12	13	MISC-05	L	cluster-map
-c2a_L12	14	AMP	H	cluster-map
-c2a_L12	15	AMP	H	cluster-map
-c2a_L12	16	MISC-36	L	cluster-map
-c2a_L12	17	RHO	H	cluster-map
-c2a_L12	18	MISC-60	L	cluster-map
-c2a_L12	19	MISC-13	L	cluster-map
-c2a_L12	20	MISC-21	L	cluster-map
-c2a_L12	21	MISC-67	L	cluster-map
-c2a_L12	22	DELTA-TAIL	M	cluster-map
-c2a_L12	23	NOTE	H	cluster-map
-c2a_L12	24	MISC-50	L	cluster-map
-c2a_L12	25	MISC-50	L	cluster-map
-c2a_L12	26	EYE-DOT	M	cluster-map
-c2a_L12	27	X	H	cluster-map
-c2a_L12	28	X	H	cluster-map
-c2a_L12	29	MISC-82	L	cluster-map
-c2a_L12	30	PCT	H	cluster-map
-c2a_L12	31	BAR-SOLID	M	cluster-map
-c2a_L12	32	CROSS-T	M	cluster-map
-c2a_L12	33	PHI	H	cluster-map
-c2a_L12	34	MISC-46	L	cluster-map
-c2a_L12	35	MISC-64	L	cluster-map
-c2a_L12	36	DASH-V	M	cluster-map
-c2a_L13	1	MISC-55	L	cluster-map
-c2a_L13	2	MISC-05	L	cluster-map
-c2a_L13	3	VENUS	H	cluster-map
-c2a_L13	4	BAR-SOLID	M	cluster-map
-c2a_L13	5	BAR-THIN	M	cluster-map
-c2a_L13	6	MISC-55	L	cluster-map
-c2a_L13	7	MISC-71	L	cluster-map
-c2a_L13	8	WAVE	M	cluster-map
-c2a_L13	9	PCT	H	cluster-map
-c2a_L13	10	HOOK-L	H	cluster-map
-c2a_L13	11	EYE-DOT	M	cluster-map
-c2a_L13	12	X	H	cluster-map
-c2a_L13	13	V-DOT	M	cluster-map
-c2a_L13	14	MISC-37	L	cluster-map
-c2a_L13	15	MISC-67	L	cluster-map
-c2a_L13	16	PCT	H	cluster-map
-c2a_L13	17	MISC-83	L	cluster-map
-c2a_L13	18	Y-CURL	M	cluster-map
-c2a_L13	19	PHI	H	cluster-map
-c2a_L13	20	RHO	H	cluster-map
-c2a_L13	21	EYE-DOT	M	cluster-map
-c2a_L13	22	SUN	M	cluster-map
-c2a_L13	23	MISC-31	L	cluster-map
-c2a_L13	24	BAR-SOLID	M	cluster-map
-c2a_L13	25	BAR-SOLID	M	cluster-map
-c2a_L13	26	X	H	cluster-map
-c2a_L13	27	MISC-82	L	cluster-map
-c2a_L13	28	BAR-SERIF	H	cluster-map
-c2a_L13	29	BAR-SERIF	H	cluster-map
-c2a_L13	30	X	H	cluster-map
-c2a_L13	31	BAR-SOLID	M	cluster-map
-c2a_L13	32	X	H	cluster-map
-c2a_L13	33	MISC-21	L	cluster-map
-c2a_L13	34	MISC-36	L	cluster-map
-c2a_L13	35	X	H	cluster-map
-c2a_L13	36	CROSS-T	M	cluster-map
-c2a_L13	37	MISC-13	L	cluster-map
-c2a_L13	38	MISC-43	L	cluster-map
-c2a_L13	39	MISC-35	L	cluster-map
-c2a_L14	1	PCT	H	cluster-map
-c2a_L14	2	LOOP-TAIL	M	cluster-map
-c2a_L14	3	RHO	H	cluster-map
-c2a_L14	4	MISC-67	L	cluster-map
-c2a_L14	5	MISC-11	L	cluster-map
-c2a_L14	6	VENUS	H	cluster-map
-c2a_L14	7	X	H	cluster-map
-c2a_L14	8	MISC-36	L	cluster-map
-c2a_L14	9	X	H	cluster-map
-c2a_L14	10	MISC-30	L	cluster-map
-c2a_L14	11	TRIPOD	M	cluster-map
-c2a_L14	12	MISC-76	L	cluster-map
-c2a_L14	13	PHI	H	cluster-map
-c2a_L14	14	WAVE	M	cluster-map
-c2a_L14	15	X	H	cluster-map
-c2a_L14	16	X	H	cluster-map
-c2a_L14	17	MISC-87	L	cluster-map
-c2a_L14	18	EYE-DOT	M	cluster-map
-c2a_L14	19	MISC-06	L	cluster-map
-c2a_L14	20	PCT	H	cluster-map
-c2a_L14	21	MISC-80	L	cluster-map
-c2a_L14	22	X	H	cluster-map
-c2a_L14	23	MISC-67	L	cluster-map
-c2a_L14	24	Y-CURL	M	cluster-map
-c2a_L14	25	X	H	cluster-map
-c2a_L14	26	X	H	cluster-map
-c2a_L14	27	EYE-DOT	M	cluster-map
-c2a_L14	28	MISC-13	L	cluster-map
-c2a_L14	29	PHI	H	cluster-map
-c2a_L14	30	MISC-43	L	cluster-map
-c2a_L14	31	BAR-SERIF	H	cluster-map
-c2a_L15	1	SUN	M	cluster-map
-c2a_L15	2	MISC-43	L	cluster-map
-c2a_L15	3	NOTE	H	cluster-map
-c2a_L15	4	MISC-55	L	cluster-map
-c2a_L15	5	BAR-SOLID	M	cluster-map
-c2a_L15	6	BAR-SOLID	M	cluster-map
-c2a_L15	7	BAR-SOLID	M	cluster-map
-c2a_L15	8	BAR-SERIF	H	cluster-map
-c2a_L15	9	BAR-SOLID	M	cluster-map
-c2a_L15	10	BAR-SOLID	M	cluster-map
-c2a_L15	11	MISC-43	L	cluster-map
-c2a_L15	12	MISC-30	L	cluster-map
-c2a_L15	13	MISC-54	L	cluster-map
-c2a_L15	14	X	H	cluster-map
-c2a_L15	15	MISC-33	L	cluster-map
-c2a_L15	16	MISC-05	L	cluster-map
-c2a_L15	17	MISC-64	L	cluster-map
-c2a_L15	18	PCT	H	cluster-map
-c2a_L15	19	MISC-17	L	cluster-map
-c2a_L15	20	EYE-DOT	M	cluster-map
-c2a_L15	21	X	H	cluster-map
-c2a_L15	22	MISC-55	L	cluster-map
-c2a_L15	23	X	H	cluster-map
-c2a_L15	24	MISC-41	L	cluster-map
-c2a_L15	25	Y-CURL	M	cluster-map
-c2a_L15	26	X	H	cluster-map
-c2a_L15	27	WAVE	M	cluster-map
-c2a_L15	28	NOTE	H	cluster-map
-c2a_L15	29	MISC-11	L	cluster-map
-c2a_L15	30	MISC-41	L	cluster-map
-c2a_L15	31	X	H	cluster-map
-c2a_L15	32	MISC-82	L	cluster-map
-c2a_L15	33	PCT	H	cluster-map
-c2a_L15	34	DELTA-TAIL	M	cluster-map
-c2a_L15	35	MISC-46	L	cluster-map
-c2a_L15	36	BAR-SERIF	H	cluster-map
-c2a_L16	1	MISC-33	L	cluster-map
-c2a_L16	2	X	H	cluster-map
-c2a_L16	3	BAR-SOLID	M	cluster-map
-c2a_L16	4	SUN	M	cluster-map
-c2a_L16	5	MISC-29	L	cluster-map
-c2a_L16	6	MISC-24	L	cluster-map
-c2a_L16	7	X	H	cluster-map
-c2a_L16	8	MISC-31	L	cluster-map
-c2a_L16	9	PCT	H	cluster-map
-c2a_L16	10	WAVE	M	cluster-map
-c2a_L16	11	MISC-05	L	cluster-map
-c2a_L16	12	CIRC-TAIL	M	cluster-map
-c2a_L16	13	MISC-20	L	cluster-map
-c2a_L16	14	MISC-54	L	cluster-map
-c2a_L16	15	MISC-82	L	cluster-map
-c2a_L16	16	MISC-07	L	cluster-map
-c2a_L16	17	X	H	cluster-map
-c2a_L16	18	X	H	cluster-map
-c2a_L16	19	MISC-55	L	cluster-map
-c2a_L16	20	PCT	H	cluster-map
-c2a_L16	21	MISC-37	L	cluster-map
-c2a_L16	22	MISC-24	L	cluster-map
-c2a_L16	23	X	H	cluster-map
-c2a_L16	24	Y-CURL	M	cluster-map
-c2a_L16	25	BAR-SOLID	M	cluster-map
-c2a_L16	26	X	H	cluster-map
-c2a_L16	27	BAR-SOLID	M	cluster-map
-c2a_L16	28	MISC-55	L	cluster-map
-c2a_L16	29	Y-CURL	M	cluster-map
-c2a_L16	30	X	H	cluster-map
-c2a_L16	31	WAVE	M	cluster-map
-c2a_L16	32	MISC-05	L	cluster-map
-c2a_L17	1	BAR-THIN	M	cluster-map
-c2a_L17	2	Y-CURL	M	cluster-map
-c2a_L17	3	CROSS-T	M	cluster-map
-c2a_L17	4	NOTE	H	cluster-map
-c2a_L17	5	PCT	H	cluster-map
-c2a_L17	6	MISC-29	L	cluster-map
-c2a_L17	7	VEE	H	cluster-map
-c2a_L17	8	MISC-80	L	cluster-map
-c2a_L17	9	MISC-33	L	cluster-map
-c2a_L17	10	LOOP-TAIL	M	cluster-map
-c2a_L17	11	MISC-36	L	cluster-map
-c2a_L17	12	MISC-43	L	cluster-map
-c2a_L17	13	MISC-13	L	cluster-map
-c2a_L17	14	HOOK-L	H	cluster-map
-c2a_L17	15	MISC-40	L	cluster-map
-c2a_L17	16	MISC-24	L	cluster-map
-c2a_L17	17	MISC-06	L	cluster-map
-c2a_L17	18	MISC-11	L	cluster-map
-c2a_L17	19	MISC-06	L	cluster-map
-c2a_L17	20	MISC-20	L	cluster-map
-c2a_L17	21	BAR-SOLID	M	cluster-map
-c2a_L17	22	BAR-SOLID	M	cluster-map
-c2a_L17	23	LOOP-TAIL	M	cluster-map
-c2a_L17	24	NOTE	H	cluster-map
-c2a_L17	25	MISC-36	L	cluster-map
-c2a_L17	26	X	H	cluster-map
-c2a_L17	27	MISC-00	L	cluster-map
-c2a_L17	28	MISC-32	L	cluster-map
-c2a_L17	29	MISC-60	L	cluster-map
-c2a_L17	30	MISC-32	L	cluster-map
-c2a_L17	31	DASH-V	M	cluster-map
-c2b_L01	1	X	H	cluster-map
-c2b_L01	2	CIRC-TAIL	M	cluster-map
-c2b_L01	3	TRIPOD	M	cluster-map
-c2b_L01	4	X	H	cluster-map
-c2b_L01	5	X	H	cluster-map
-c2b_L01	6	PHI	H	cluster-map
-c2b_L01	7	MISC-29	L	cluster-map
-c2b_L01	8	BAR-THIN	M	cluster-map
-c2b_L01	9	BAR-THIN	M	cluster-map
-c2b_L01	10	CROSS-T	M	cluster-map
-c2b_L01	11	DASH-H	H	cluster-map
-c2b_L01	12	BAR-THIN	M	cluster-map
-c2b_L01	13	X	H	cluster-map
-c2b_L01	14	TRIPOD	M	cluster-map
-c2b_L01	15	MISC-87	L	cluster-map
-c2b_L01	16	CIRC-TAIL	M	cluster-map
-c2b_L01	17	X	H	cluster-map
-c2b_L01	18	EYE-DOT	M	cluster-map
-c2b_L01	19	MISC-29	L	cluster-map
-c2b_L01	20	X	H	cluster-map
-c2b_L01	21	PHI	H	cluster-map
-c2b_L01	22	VEE	H	cluster-map
-c2b_L01	23	CROSS-T	M	cluster-map
-c2b_L01	24	X	H	cluster-map
-c2b_L01	25	BAR-SOLID	M	cluster-map
-c2b_L01	26	DELTA-TAIL	M	cluster-map
-c2b_L01	27	X	H	cluster-map
-c2b_L01	28	MISC-07	L	cluster-map
-c2b_L01	29	TRIDENT	H	cluster-map
-c2b_L01	30	TRIPOD	M	cluster-map
-c2b_L01	31	MISC-03	L	cluster-map
-c2b_L01	32	BAR-THIN	M	cluster-map
-c2b_L01	33	MISC-13	L	cluster-map
-c2b_L01	34	CRESCENT	H	cluster-map
-c2b_L01	35	MISC-82	L	cluster-map
-c2b_L01	36	MISC-24	L	cluster-map
-c2b_L01	37	BAR-THIN	M	cluster-map
-c2b_L02	1	MISC-75	L	cluster-map
-c2b_L02	2	PCT	H	cluster-map
-c2b_L02	3	MISC-43	L	cluster-map
-c2b_L02	4	MISC-41	L	cluster-map
-c2b_L02	5	MISC-29	L	cluster-map
-c2b_L02	6	MISC-40	L	cluster-map
-c2b_L02	7	X	H	cluster-map
-c2b_L02	8	LOOP-TAIL	M	cluster-map
-c2b_L02	9	BAR-SOLID	M	cluster-map
-c2b_L02	10	Y-CURL	M	cluster-map
-c2b_L02	11	MISC-07	L	cluster-map
-c2b_L02	12	MISC-29	L	cluster-map
-c2b_L02	13	CIRC-TAIL	M	cluster-map
-c2b_L02	14	X	H	cluster-map
-c2b_L02	15	MISC-05	L	cluster-map
-c2b_L02	16	MISC-07	L	cluster-map
-c2b_L02	17	MISC-13	L	cluster-map
-c2b_L02	18	X	H	cluster-map
-c2b_L02	19	MISC-31	L	cluster-map
-c2b_L02	20	X	H	cluster-map
-c2b_L02	21	MISC-55	L	cluster-map
-c2b_L02	22	BAR-SOLID	M	cluster-map
-c2b_L02	23	MISC-55	L	cluster-map
-c2b_L02	24	Y-CURL	M	cluster-map
-c2b_L02	25	MISC-32	L	cluster-map
-c2b_L02	26	MISC-50	L	cluster-map
-c2b_L03	1	MISC-30	L	cluster-map
-c2b_L03	2	X	H	cluster-map
-c2b_L03	3	MISC-13	L	cluster-map
-c2b_L03	4	MISC-40	L	cluster-map
-c2b_L03	5	X	H	cluster-map
-c2b_L03	6	BAR-THIN	M	cluster-map
-c2b_L03	7	MISC-13	L	cluster-map
-c2b_L03	8	CIRC-O	H	cluster-map
-c2b_L03	9	X	H	cluster-map
-c2b_L03	10	X	H	cluster-map
-c2b_L03	11	MISC-78	L	cluster-map
-c2b_L03	12	SUN	M	cluster-map
-c2b_L03	13	X	H	cluster-map
-c2b_L03	14	LOOP-TAIL	M	cluster-map
-c2b_L03	15	MISC-37	L	cluster-map
-c2b_L03	16	MISC-07	L	cluster-map
-c2b_L03	17	MISC-21	L	cluster-map
-c2b_L03	18	X	H	cluster-map
-c2b_L03	19	TRIDENT	H	cluster-map
-c2b_L03	20	VEE	H	cluster-map
-c2b_L03	21	CRESCENT	H	cluster-map
-c2b_L03	22	MISC-07	L	cluster-map
-c2b_L03	23	AMP	H	cluster-map
-c2b_L03	24	WAVE	M	cluster-map
-c2b_L03	25	PCT	H	cluster-map
-c2b_L03	26	Y-CURL	M	cluster-map
-c2b_L03	27	MISC-55	L	cluster-map
-c2b_L03	28	GEAR-DOT	M	cluster-map
-c2b_L03	29	MISC-80	L	cluster-map
-c2b_L03	30	HOOK-L	H	cluster-map
-c2b_L03	31	LOOP-TAIL	M	cluster-map
-c2b_L04	1	Y-CURL	M	cluster-map
-c2b_L04	2	MISC-32	L	cluster-map
-c2b_L04	3	LOOP-TAIL	M	cluster-map
-c2b_L04	4	X	H	cluster-map
-c2b_L04	5	MISC-40	L	cluster-map
-c2b_L04	6	MISC-31	L	cluster-map
-c2b_L04	7	MISC-46	L	cluster-map
-c2b_L04	8	DELTA-TAIL	M	cluster-map
-c2b_L04	9	MISC-30	L	cluster-map
-c2b_L04	10	VEE	H	cluster-map
-c2b_L04	11	Y-CURL	M	cluster-map
-c2b_L04	12	X	H	cluster-map
-c2b_L04	13	MISC-31	L	cluster-map
-c2b_L04	14	MISC-75	L	cluster-map
-c2b_L04	15	X	H	cluster-map
-c2b_L04	16	PCT	H	cluster-map
-c2b_L04	17	WAVE	M	cluster-map
-c2b_L04	18	DELTA-TAIL	M	cluster-map
-c2b_L04	19	MISC-41	L	cluster-map
-c2b_L04	20	CIRC-O	H	cluster-map
-c2b_L04	21	X	H	cluster-map
-c2b_L04	22	VEE	H	cluster-map
-c2b_L04	23	Y-CURL	M	cluster-map
-c2b_L04	24	MISC-31	L	cluster-map
-c2b_L04	25	X	H	cluster-map
-c2b_L04	26	MISC-00	L	cluster-map
-c2b_L04	27	MISC-30	L	cluster-map
-c2b_L04	28	MISC-33	L	cluster-map
-c2b_L05	1	MISC-76	L	cluster-map
-c2b_L05	2	MISC-76	L	cluster-map
-c2b_L05	3	DELTA-TAIL	M	cluster-map
-c2b_L05	4	PCT	H	cluster-map
-c2b_L05	5	WAVE	M	cluster-map
-c2b_L05	6	PHI	H	cluster-map
-c2b_L05	7	VENUS	H	cluster-map
-c2b_L05	8	MISC-24	L	cluster-map
-c2b_L05	9	MISC-24	L	cluster-map
-c2b_L05	10	AMP	H	cluster-map
-c2b_L05	11	WAVE	M	cluster-map
-c2b_L05	12	PCT	H	cluster-map
-c2b_L05	13	MISC-29	L	cluster-map
-c2b_L05	14	LOOP-TAIL	M	cluster-map
-c2b_L05	15	MISC-36	L	cluster-map
-c2b_L05	16	HOOK-L	H	cluster-map
-c2b_L05	17	HOOK-L	H	cluster-map
-c2b_L05	18	CIRC-O	H	cluster-map
-c2b_L05	19	X	H	cluster-map
-c2b_L05	20	MISC-05	L	cluster-map
-c2b_L05	21	CIRC-TAIL	M	cluster-map
-c2b_L05	22	MISC-37	L	cluster-map
-c2b_L05	23	BAR-THIN	M	cluster-map
-c2b_L06	1	WAVE	M	cluster-map
-c2b_L06	2	GEAR-DOT	M	cluster-map
-c2b_L06	3	MISC-87	L	cluster-map
-c2b_L06	4	MISC-21	L	cluster-map
-c2b_L06	5	X	H	cluster-map
-c2b_L06	6	X	H	cluster-map
-c2b_L06	7	PHI	H	cluster-map
-c2b_L06	8	MISC-81	L	cluster-map
-c2b_L06	9	MISC-33	L	cluster-map
-c2b_L06	10	CROSS-T	M	cluster-map
-c2b_L06	11	MISC-06	L	cluster-map
-c2b_L06	12	WAVE	M	cluster-map
-c2b_L06	13	X	H	cluster-map
-c2b_L06	14	MISC-50	L	cluster-map
-c2b_L06	15	CROSS-T	M	cluster-map
-c2b_L06	16	MISC-71	L	cluster-map
-c2b_L06	17	X	H	cluster-map
-c2b_L06	18	LOOP-TAIL	M	cluster-map
-c2b_L06	19	WAVE	M	cluster-map
-c2b_L06	20	PCT	H	cluster-map
-c2b_L06	21	MISC-32	L	cluster-map
-c2b_L06	22	PHI	H	cluster-map
-c2b_L06	23	MISC-11	L	cluster-map
-c2b_L06	24	X	H	cluster-map
-c2b_L06	25	X	H	cluster-map
-c2b_L06	26	MISC-37	L	cluster-map
-c2b_L06	27	BAR-SERIF	H	cluster-map
-c2b_L06	28	MISC-32	L	cluster-map
-c2b_L06	29	MISC-37	L	cluster-map
-c2b_L06	30	MISC-30	L	cluster-map
-c2b_L06	31	BAR-THIN	M	cluster-map
-c2b_L07	1	SUN	M	cluster-map
-c2b_L07	2	VENUS	H	cluster-map
-c2b_L07	3	CROSS-T	M	cluster-map
-c2b_L07	4	MISC-05	L	cluster-map
-c2b_L07	5	HOOK-L	H	cluster-map
-c2b_L07	6	HOOK-L	H	cluster-map
-c2b_L07	7	DASH-H	H	cluster-map
-c2b_L07	8	MISC-29	L	cluster-map
-c2b_L07	9	X	H	cluster-map
-c2b_L07	10	MISC-33	L	cluster-map
-c2b_L07	11	Y-CURL	M	cluster-map
-c2b_L07	12	X	H	cluster-map
-c2b_L07	13	MISC-33	L	cluster-map
-c2b_L07	14	MISC-83	L	cluster-map
-c2b_L07	15	MISC-60	L	cluster-map
-c2b_L07	16	MISC-21	L	cluster-map
-c2b_L07	17	X	H	cluster-map
-c2b_L07	18	CIRC-TAIL	M	cluster-map
-c2b_L07	19	CIRC-TAIL	M	cluster-map
-c2b_L07	20	MISC-41	L	cluster-map
-c2b_L07	21	LOOP-TAIL	M	cluster-map
-c2b_L07	22	CRESCENT	H	cluster-map
-c2b_L07	23	X	H	cluster-map
-c2b_L07	24	MISC-30	L	cluster-map
-c2b_L07	25	MISC-24	L	cluster-map
-c2b_L07	26	MISC-79	L	cluster-map
-c2b_L08	1	MISC-07	L	cluster-map
-c2b_L08	2	DELTA-TAIL	M	cluster-map
-c2b_L08	3	MISC-46	L	cluster-map
-c2b_L08	4	TRIDENT	H	cluster-map
-c2b_L08	5	PCT	H	cluster-map
-c2b_L08	6	MISC-78	L	cluster-map
-c2b_L08	7	VEE	H	cluster-map
-c2b_L08	8	X	H	cluster-map
-c2b_L08	9	PCT	H	cluster-map
-c2b_L08	10	MISC-17	L	cluster-map
-c2b_L08	11	EYE-DOT	M	cluster-map
-c2b_L08	12	MISC-60	L	cluster-map
-c2b_L08	13	MISC-11	L	cluster-map
-c2b_L09	1	BAR-SERIF	H	cluster-map
-c2b_L09	2	MISC-17	L	cluster-map
-c2b_L09	3	BAR-SERIF	H	cluster-map
-c2b_L09	4	MISC-32	L	cluster-map
-c2b_L09	5	CIRC-TAIL	M	cluster-map
-c2b_L09	6	X	H	cluster-map
-c2b_L09	7	MISC-71	L	cluster-map
-c2b_L09	8	MISC-82	L	cluster-map
-c2b_L09	9	X	H	cluster-map
-c2b_L09	10	WAVE	M	cluster-map
-c2b_L09	11	PCT	H	cluster-map
-c2b_L09	12	MISC-64	L	cluster-map
-c2b_L09	13	CROSS-T	M	cluster-map
-c2b_L09	14	MISC-83	L	cluster-map
-c3_L01	1	SUN	M	cluster-map
-c3_L01	2	MISC-37	L	cluster-map
-c3_L01	3	PCT	H	cluster-map
-c3_L01	4	CIRC-TAIL	M	cluster-map
-c3_L01	5	MISC-40	L	cluster-map
-c3_L01	6	MISC-54	L	cluster-map
-c3_L01	7	MISC-33	L	cluster-map
-c3_L01	8	MISC-46	L	cluster-map
-c3_L01	9	MISC-20	L	cluster-map
-c3_L01	10	X	H	cluster-map
-c3_L01	11	MISC-13	L	cluster-map
-c3_L01	12	X	H	cluster-map
-c3_L01	13	MISC-05	L	cluster-map
-c3_L01	14	WAVE	M	cluster-map
-c3_L01	15	PCT	H	cluster-map
-c3_L01	16	X	H	cluster-map
-c3_L01	17	CROSS-T	M	cluster-map
-c3_L01	18	MISC-35	L	cluster-map
-c3_L01	19	HOOK-L	H	cluster-map
-c3_L01	20	MISC-79	L	cluster-map
-c3_L01	21	MISC-06	L	cluster-map
-c3_L01	22	WAVE	M	cluster-map
-c3_L01	23	EYE-DOT	M	cluster-map
-c3_L01	24	TRIPOD	M	cluster-map
-c3_L01	25	MISC-05	L	cluster-map
-c3_L01	26	MISC-29	L	cluster-map
-c3_L01	27	X	H	cluster-map
-c3_L01	28	MISC-46	L	cluster-map
-c3_L01	29	X	H	cluster-map
-c3_L01	30	MISC-20	L	cluster-map
-c3_L01	31	BAR-SERIF	H	cluster-map
-c3_L01	32	MISC-76	L	cluster-map
-c3_L01	33	MISC-17	L	cluster-map
-c3_L01	34	MISC-32	L	cluster-map
-c3_L01	35	BAR-THIN	M	cluster-map
-c3_L02	1	PCT	H	cluster-map
-c3_L02	2	SUN	M	cluster-map
-c3_L02	3	MISC-54	L	cluster-map
-c3_L02	4	BAR-SOLID	M	cluster-map
-c3_L02	5	PCT	H	cluster-map
-c3_L02	6	MISC-80	L	cluster-map
-c3_L02	7	MISC-46	L	cluster-map
-c3_L02	8	Y-CURL	M	cluster-map
-c3_L02	9	PHI	H	cluster-map
-c3_L02	10	MISC-75	L	cluster-map
-c3_L02	11	MISC-21	L	cluster-map
-c3_L02	12	NOTE	H	cluster-map
-c3_L02	13	MISC-67	L	cluster-map
-c3_L02	14	MISC-36	L	cluster-map
-c3_L02	15	MISC-40	L	cluster-map
-c3_L02	16	X	H	cluster-map
-c3_L02	17	MISC-17	L	cluster-map
-c3_L02	18	CIRC-TAIL	M	cluster-map
-c3_L02	19	MISC-21	L	cluster-map
-c3_L02	20	PHI	H	cluster-map
-c3_L02	21	MISC-13	L	cluster-map
-c3_L02	22	MISC-74	L	cluster-map
-c3_L02	23	X	H	cluster-map
-c3_L02	24	Y-CURL	M	cluster-map
-c3_L02	25	MISC-05	L	cluster-map
-c3_L02	26	X	H	cluster-map
-c3_L02	27	WAVE	M	cluster-map
-c3_L02	28	PCT	H	cluster-map
-c3_L02	29	MISC-05	L	cluster-map
-c3_L02	30	MISC-81	L	cluster-map
-c3_L02	31	WAVE	M	cluster-map
-c3_L02	32	X	H	cluster-map
-c3_L02	33	MISC-64	L	cluster-map
-c3_L03	1	MISC-13	L	cluster-map
-c3_L03	2	MISC-40	L	cluster-map
-c3_L03	3	X	H	cluster-map
-c3_L03	4	TRIDENT	H	cluster-map
-c3_L03	5	Y-CURL	M	cluster-map
-c3_L03	6	DELTA-TAIL	M	cluster-map
-c3_L03	7	X	H	cluster-map
-c3_L03	8	PCT	H	cluster-map
-c3_L03	9	MISC-05	L	cluster-map
-c3_L03	10	MISC-46	L	cluster-map
-c3_L03	11	MISC-13	L	cluster-map
-c3_L03	12	MISC-71	L	cluster-map
-c3_L03	13	MISC-31	L	cluster-map
-c3_L03	14	Y-CURL	M	cluster-map
-c3_L03	15	X	H	cluster-map
-c3_L03	16	MISC-54	L	cluster-map
-c3_L03	17	MISC-55	L	cluster-map
-c3_L03	18	MISC-46	L	cluster-map
-c3_L03	19	X	H	cluster-map
-c3_L03	20	MISC-17	L	cluster-map
-c3_L03	21	MISC-55	L	cluster-map
-c3_L03	22	SUN	M	cluster-map
-c3_L03	23	MISC-43	L	cluster-map
-c3_L03	24	MISC-36	L	cluster-map
-c3_L03	25	MISC-05	L	cluster-map
-c3_L03	26	TRIDENT	H	cluster-map
-c3_L03	27	X	H	cluster-map
-c3_L03	28	Y-CURL	M	cluster-map
-c3_L03	29	X	H	cluster-map
-c3_L03	30	MISC-41	L	cluster-map
-c3_L03	31	MISC-35	L	cluster-map
-c3_L03	32	MISC-54	L	cluster-map
-c3_L04	1	MISC-41	L	cluster-map
-c3_L04	2	GEAR-DOT	M	cluster-map
-c3_L04	3	PCT	H	cluster-map
-c3_L04	4	MISC-21	L	cluster-map
-c3_L04	5	TRIPOD	M	cluster-map
-c3_L04	6	MISC-20	L	cluster-map
-c3_L04	7	Y-CURL	M	cluster-map
-c3_L04	8	HOOK-L	H	cluster-map
-c3_L04	9	DASH-H	H	cluster-map
-c3_L04	10	LOOP-TAIL	M	cluster-map
-c3_L04	11	X	H	cluster-map
-c3_L04	12	MISC-07	L	cluster-map
-c3_L04	13	Y-CURL	M	cluster-map
-c3_L04	14	MISC-36	L	cluster-map
-c3_L04	15	PHI	H	cluster-map
-c3_L04	16	BAR-SOLID	M	cluster-map
-c3_L04	17	BAR-SOLID	M	cluster-map
-c3_L04	18	BAR-SERIF	H	cluster-map
-c4a_L01	1	MISC-05	L	knn-xpage(share=0.40)
-c4a_L01	2	_	M	knn-xpage(share=0.44)
-c4a_L01	3	X	M	knn-xpage(share=0.40)
-c4a_L01	4	PHI	M	knn-xpage(share=0.62)
-c4a_L01	5	X	M	knn-xpage(share=1.00)
-c4a_L01	6	MISC-05	L	knn-xpage(share=0.38)
-c4a_L01	7	MISC-17	L	knn-xpage(share=0.41)
-c4a_L01	8	BAR-SERIF	M	knn-xpage(share=0.60)
-c4a_L01	9	LOOP-TAIL	M	knn-xpage(share=1.00)
-c4a_L01	10	X	M	knn-xpage(share=1.00)
-c4a_L01	11	X	M	knn-xpage(share=0.42)
-c4a_L01	12	X	M	knn-xpage(share=0.60)
-c4a_L01	13	PCT	M	knn-xpage(share=0.42)
-c4a_L01	14	WAVE	M	knn-xpage(share=0.41)
-c4a_L02	1	MISC-24	L	knn-xpage(share=0.41)
-c4a_L02	2	PCT	M	knn-xpage(share=0.81)
-c4a_L02	3	X	M	knn-xpage(share=0.39)
-c4a_L02	4	X	M	knn-xpage(share=0.61)
-c4a_L02	5	X	M	knn-xpage(share=0.80)
-c4a_L02	6	MISC-54	L	knn-xpage(share=0.40)
-c4a_L02	7	CROSS-T	M	knn-xpage(share=0.62)
-c4a_L02	8	MISC-21	L	knn-xpage(share=0.22)
-c4a_L02	9	MISC-33	L	knn-xpage(share=0.40)
-c4a_L02	10	MISC-67	L	knn-xpage(share=0.40)
-c4a_L02	11	VENUS	M	knn-xpage(share=0.43)
-c4a_L02	12	X	M	knn-xpage(share=1.00)
-c4a_L02	13	CIRC-TAIL	M	knn-xpage(share=0.44)
-c4a_L03	1	SUN	M	knn-xpage(share=1.00)
-c4a_L03	2	VEE	M	knn-xpage(share=0.22)
-c4a_L03	3	MISC-55	L	knn-xpage(share=0.64)
-c4a_L03	4	X	M	knn-xpage(share=0.83)
-c4a_L03	5	MISC-31	L	knn-xpage(share=1.00)
-c4a_L03	6	MISC-17	L	knn-xpage(share=0.39)
-c4a_L03	7	AMP	M	knn-xpage(share=0.80)
-c4a_L03	8	X	M	knn-xpage(share=0.62)
-c4a_L03	9	Y-CURL	M	knn-xpage(share=0.59)
-c4a_L03	10	LOOP-TAIL	M	knn-xpage(share=0.38)
-c4a_L03	11	PCT	M	knn-xpage(share=0.60)
-c4a_L03	12	X	M	knn-xpage(share=1.00)
-c4a_L03	13	MISC-32	L	knn-xpage(share=0.43)
-c4a_L04	1	LOOP-TAIL	M	knn-xpage(share=0.39)
-c4a_L04	2	PCT	M	knn-xpage(share=0.59)
-c4a_L04	3	TRIPOD	M	knn-xpage(share=0.58)
-c4a_L04	4	X	M	knn-xpage(share=0.58)
-c4a_L04	5	MISC-05	L	knn-xpage(share=0.60)
-c4a_L04	6	MISC-05	L	knn-xpage(share=0.60)
-c4a_L04	7	VENUS	M	knn-xpage(share=0.38)
-c4a_L04	8	_	M	knn-xpage(share=0.21)
-c4a_L04	9	PCT	M	knn-xpage(share=0.43)
-c4a_L04	10	BAR-SOLID	M	knn-xpage(share=0.81)
-c4a_L04	11	WAVE	M	knn-xpage(share=0.80)
-c4a_L04	12	HOOK-L	M	knn-xpage(share=0.53)
-c4a_L04	13	CIRC-O	M	knn-xpage(share=0.62)
-c4a_L04	14	X	M	knn-xpage(share=1.00)
-c4a_L04	15	MISC-31	L	knn-xpage(share=0.81)
-c4a_L04	16	PCT	M	knn-xpage(share=0.41)
-c4a_L04	17	MISC-55	L	knn-xpage(share=1.00)
-c4a_L04	18	MISC-17	L	knn-xpage(share=0.41)
-c4a_L05	1	VEE	M	knn-xpage(share=0.80)
-c4a_L05	2	CRESCENT	M	knn-xpage(share=0.45)
-c4a_L05	3	TRIPOD	M	knn-xpage(share=0.81)
-c4a_L05	4	WAVE	M	knn-xpage(share=0.59)
-c4a_L05	5	MISC-36	L	knn-xpage(share=0.22)
-c4a_L05	6	_	M	knn-xpage(share=0.41)
-c4a_L05	7	X	M	knn-xpage(share=1.00)
-c4a_L05	8	GEAR-DOT	M	knn-xpage(share=0.41)
-c4a_L05	9	MISC-55	L	knn-xpage(share=0.42)
-c4a_L05	10	X	M	knn-xpage(share=0.81)
-c4a_L05	11	MISC-54	L	knn-xpage(share=0.21)
-c4a_L05	12	MISC-30	L	knn-xpage(share=0.40)
-c4a_L05	13	CROSS-T	M	knn-xpage(share=0.61)
-c4a_L05	14	BAR-SOLID	M	knn-xpage(share=0.61)
-c4a_L05	15	_	M	knn-xpage(share=0.23)
-c4a_L05	16	Y-CURL	M	knn-xpage(share=0.23)
-c4a_L05	17	GEAR-DOT	M	knn-xpage(share=0.41)
-c4a_L05	18	MISC-55	L	knn-xpage(share=0.40)
-c4a_L06	1	_	M	knn-xpage(share=0.21)
-c4a_L06	2	CROSS-T	M	knn-xpage(share=0.60)
-c4a_L06	3	HOOK-L	M	knn-xpage(share=0.40)
-c4a_L06	4	DASH-H	M	knn-xpage(share=0.62)
-c4a_L06	5	DELTA-TAIL	M	knn-xpage(share=0.22)
-c4a_L06	6	MISC-54	L	knn-xpage(share=0.41)
-c4a_L06	7	_	M	knn-xpage(share=0.58)
-c4a_L06	8	_	M	knn-xpage(share=0.60)
-c4a_L06	9	VENUS	M	knn-xpage(share=0.42)
-c4a_L06	10	PHI	M	knn-xpage(share=0.21)
-c4a_L06	11	MISC-05	L	knn-xpage(share=0.80)
-c4a_L06	12	_	M	knn-xpage(share=0.41)
-c4a_L06	13	MISC-33	L	knn-xpage(share=0.21)
-c4a_L06	14	MISC-05	L	knn-xpage(share=0.39)
-c4a_L06	15	PCT	M	knn-xpage(share=0.21)
-c4a_L07	1	PCT	M	knn-xpage(share=1.00)
-c4a_L07	2	X	M	knn-xpage(share=0.61)
-c4a_L07	3	MISC-20	L	knn-xpage(share=0.41)
-c4a_L07	4	_	M	knn-xpage(share=0.22)
-c4a_L07	5	MISC-46	L	knn-xpage(share=0.41)
-c4a_L07	6	X	M	knn-xpage(share=0.61)
-c4a_L07	7	PCT	M	knn-xpage(share=0.40)
-c4a_L07	8	MISC-05	L	knn-xpage(share=0.60)
-c4a_L07	9	TRIDENT	M	knn-xpage(share=0.41)
-c4a_L07	10	PHI	M	knn-xpage(share=1.00)
-c4a_L07	11	WAVE	M	knn-xpage(share=0.42)
-c4a_L07	12	PCT	M	knn-xpage(share=0.41)
-c4a_L07	13	MISC-33	L	knn-xpage(share=0.81)
-c4a_L07	14	CIRC-TAIL	M	knn-xpage(share=0.47)
-c4a_L08	1	MISC-17	L	knn-xpage(share=0.40)
-c4a_L08	2	_	M	knn-xpage(share=0.43)
-c4a_L08	3	DELTA-TAIL	M	knn-xpage(share=0.62)
-c4a_L08	4	Y-CURL	M	knn-xpage(share=0.40)
-c4a_L08	5	MISC-05	L	knn-xpage(share=0.62)
-c4a_L08	6	X	M	knn-xpage(share=0.81)
-c4a_L08	7	X	M	knn-xpage(share=0.59)
-c4a_L08	8	GEAR-DOT	M	knn-xpage(share=0.63)
-c4a_L08	9	WAVE	M	knn-xpage(share=0.79)
-c4a_L08	10	CROSS-T	M	knn-xpage(share=1.00)
-c4a_L08	11	X	M	knn-xpage(share=0.81)
-c4a_L08	12	CROSS-T	M	knn-xpage(share=0.42)
-c4a_L08	13	X	M	knn-xpage(share=0.40)
-c4a_L08	14	X	M	knn-xpage(share=0.61)
-c4a_L08	15	MISC-33	L	knn-xpage(share=1.00)
-c4a_L08	16	LOOP-TAIL	M	knn-xpage(share=0.57)
-c4a_L08	17	PCT	M	knn-xpage(share=0.37)
-c4a_L09	1	MISC-05	L	knn-xpage(share=0.38)
-c4a_L09	2	Y-CURL	M	knn-xpage(share=0.61)
-c4a_L09	3	VENUS	M	knn-xpage(share=0.21)
-c4a_L09	4	BAR-SOLID	M	knn-xpage(share=1.00)
-c4a_L09	5	MISC-33	L	knn-xpage(share=0.39)
-c4a_L09	6	_	M	knn-xpage(share=0.39)
-c4a_L09	7	NOTE	M	knn-xpage(share=0.61)
-c4a_L09	8	MISC-29	L	knn-xpage(share=1.00)
-c4a_L09	9	VENUS	M	knn-xpage(share=0.40)
-c4a_L09	10	MISC-33	L	knn-xpage(share=1.00)
-c4a_L09	11	TRIPOD	M	knn-xpage(share=0.59)
-c4a_L09	12	_	M	knn-xpage(share=0.40)
-c4a_L09	13	MISC-82	L	knn-xpage(share=0.42)
-c4a_L09	14	VENUS	M	knn-xpage(share=0.40)
-c4a_L09	15	BAR-SOLID	M	knn-xpage(share=0.79)
-c4a_L10	1	MISC-43	L	knn-xpage(share=0.20)
-c4a_L10	2	PCT	M	knn-xpage(share=0.23)
-c4a_L10	3	NOTE	M	knn-xpage(share=0.43)
-c4a_L10	4	SUN	M	knn-xpage(share=0.77)
-c4a_L10	5	X	M	knn-xpage(share=0.80)
-c4a_L10	6	BAR-SERIF	M	knn-xpage(share=1.00)
-c4a_L10	7	CRESCENT	M	knn-xpage(share=0.42)
-c4a_L10	8	MISC-24	L	knn-xpage(share=0.20)
-c4a_L10	9	BAR-SOLID	M	knn-xpage(share=0.83)
-c4a_L10	10	X	M	knn-xpage(share=0.79)
-c4a_L10	11	MISC-29	L	knn-xpage(share=0.61)
-c4a_L10	12	MISC-29	L	knn-xpage(share=0.44)
-c4a_L10	13	X	M	knn-xpage(share=0.79)
-c4a_L10	14	X	M	knn-xpage(share=1.00)
-c4a_L10	15	X	M	knn-xpage(share=0.60)
-c4a_L10	16	TRIPOD	M	knn-xpage(share=0.38)
-c4a_L10	17	PCT	M	knn-xpage(share=0.21)
-c4a_L11	1	MISC-07	L	knn-xpage(share=0.21)
-c4a_L11	2	LOOP-TAIL	M	knn-xpage(share=0.58)
-c4a_L11	3	PHI	M	knn-xpage(share=0.81)
-c4a_L11	4	MISC-29	L	knn-xpage(share=0.80)
-c4a_L11	5	MISC-29	L	knn-xpage(share=1.00)
-c4a_L11	6	MISC-17	L	knn-xpage(share=0.40)
-c4a_L11	7	MISC-33	L	knn-xpage(share=0.63)
-c4a_L11	8	TRIPOD	M	knn-xpage(share=0.60)
-c4a_L11	9	RHO	M	knn-xpage(share=0.81)
-c4a_L11	10	MISC-71	L	knn-xpage(share=0.22)
-c4a_L11	11	MISC-55	L	knn-xpage(share=0.60)
-c4a_L12	1	MISC-29	L	knn-xpage(share=0.78)
-c4a_L12	2	MISC-46	L	knn-xpage(share=0.20)
-c4a_L12	3	PHI	M	knn-xpage(share=0.40)
-c4a_L12	4	TRIPOD	M	knn-xpage(share=0.42)
-c4a_L12	5	WAVE	M	knn-xpage(share=0.40)
-c4a_L12	6	MISC-30	L	knn-xpage(share=0.23)
-c4a_L12	7	X	M	knn-xpage(share=0.40)
-c4a_L12	8	WAVE	M	knn-xpage(share=0.40)
-c4a_L12	9	CROSS-T	M	knn-xpage(share=0.21)
-c4a_L12	10	BAR-SOLID	M	knn-xpage(share=0.61)
-c4a_L12	11	MISC-37	L	knn-xpage(share=0.43)
-c4a_L12	12	Y-CURL	M	knn-xpage(share=0.40)
-c4a_L12	13	X	M	knn-xpage(share=0.39)
-c4a_L12	14	MISC-32	L	knn-xpage(share=0.23)
-c4a_L12	15	_	M	knn-xpage(share=0.41)
-c4a_L12	16	X	M	knn-xpage(share=0.40)
-c4a_L12	17	MISC-17	L	knn-xpage(share=0.40)
-c4a_L12	18	X	M	knn-xpage(share=1.00)
-c4a_L12	19	MISC-31	L	knn-xpage(share=0.61)
-c4a_L13	1	SUN	M	knn-xpage(share=1.00)
-c4a_L13	2	X	M	knn-xpage(share=0.81)
-c4a_L13	3	VENUS	M	knn-xpage(share=0.59)
-c4a_L13	4	MISC-33	L	knn-xpage(share=0.40)
-c4a_L13	5	X	M	knn-xpage(share=0.40)
-c4a_L13	6	MISC-21	L	knn-xpage(share=0.20)
-c4a_L13	7	MISC-07	L	knn-xpage(share=0.21)
-c4a_L13	8	VEE	M	knn-xpage(share=1.00)
-c4a_L13	9	DASH-H	M	knn-xpage(share=0.21)
-c4a_L13	10	PCT	M	knn-xpage(share=1.00)
-c4a_L13	11	DASH-H	M	knn-xpage(share=0.74)
-c4a_L13	12	X	M	knn-xpage(share=1.00)
-c4a_L13	13	LOOP-TAIL	M	knn-xpage(share=0.59)
-c4a_L13	14	X	M	knn-xpage(share=0.40)
-c4a_L13	15	MISC-21	L	knn-xpage(share=0.21)
-c4a_L13	16	CIRC-O	M	knn-xpage(share=0.63)
-c4a_L13	17	MISC-13	L	knn-xpage(share=0.43)
-c4a_L14	1	_	M	knn-xpage(share=0.42)
-c4a_L14	2	MISC-43	L	knn-xpage(share=0.20)
-c4a_L14	3	X	M	knn-xpage(share=0.40)
-c4a_L14	4	X	M	knn-xpage(share=1.00)
-c4a_L14	5	X	M	knn-xpage(share=0.39)
-c4a_L14	6	CROSS-T	M	knn-xpage(share=0.61)
-c4a_L14	7	MISC-31	L	knn-xpage(share=0.61)
-c4a_L14	8	MISC-05	L	knn-xpage(share=0.39)
-c4a_L14	9	Y-CURL	M	knn-xpage(share=0.81)
-c4a_L14	10	X	M	knn-xpage(share=0.61)
-c4a_L14	11	MISC-29	L	knn-xpage(share=1.00)
-c4a_L14	12	MISC-21	L	knn-xpage(share=0.22)
-c4a_L14	13	MISC-55	L	knn-xpage(share=1.00)
-c4b_L01	1	HOOK-L	M	knn-xpage(share=0.57)
-c4b_L01	2	_	M	knn-xpage(share=0.40)
-c4b_L01	3	X	M	knn-xpage(share=0.62)
-c4b_L01	4	MISC-24	L	knn-xpage(share=0.40)
-c4b_L01	5	MISC-46	L	knn-xpage(share=0.41)
-c4b_L01	6	TRIPOD	M	knn-xpage(share=0.21)
-c4b_L01	7	BAR-SOLID	M	knn-xpage(share=0.80)
-c4b_L01	8	MISC-05	L	knn-xpage(share=0.80)
-c4b_L01	9	PCT	M	knn-xpage(share=0.41)
-c4b_L01	10	DELTA-TAIL	M	knn-xpage(share=0.39)
-c4b_L01	11	MISC-40	L	knn-xpage(share=0.20)
-c4b_L02	1	_	M	knn-xpage(share=0.44)
-c4b_L02	2	MISC-05	L	knn-xpage(share=1.00)
-c4b_L02	3	MISC-13	L	knn-xpage(share=0.62)
-c4b_L02	4	MISC-05	L	knn-xpage(share=0.61)
-c4b_L02	5	MISC-31	L	knn-xpage(share=0.21)
-c4b_L02	6	X	M	knn-xpage(share=0.54)
-c4b_L02	7	MISC-33	L	knn-xpage(share=0.62)
-c4b_L02	8	PCT	M	knn-xpage(share=0.81)
-c4b_L02	9	_	M	knn-xpage(share=0.43)
-c4b_L02	10	AMP	M	knn-xpage(share=0.42)
-c4b_L02	11	MISC-76	L	knn-xpage(share=0.22)
-c4b_L02	12	Y-CURL	M	knn-xpage(share=0.41)
-c4b_L02	13	PCT	M	knn-xpage(share=0.42)
-c4b_L02	14	PCT	M	knn-xpage(share=0.81)
-c4b_L02	15	DASH-H	M	knn-xpage(share=0.72)
-c4b_L03	1	MISC-05	L	knn-xpage(share=0.38)
-c4b_L03	2	MISC-36	L	knn-xpage(share=0.63)
-c4b_L03	3	X	M	knn-xpage(share=0.40)
-c4b_L03	4	HOOK-L	M	knn-xpage(share=0.79)
-c4b_L03	5	EYE-DOT	M	knn-xpage(share=0.81)
-c4b_L03	6	Y-CURL	M	knn-xpage(share=0.60)
-c4b_L03	7	MISC-31	L	knn-xpage(share=0.80)
-c4b_L03	8	MISC-20	L	knn-xpage(share=1.00)
-c4b_L03	9	TRIPOD	M	knn-xpage(share=0.22)
-c4b_L03	10	_	M	knn-xpage(share=0.78)
-c4b_L03	11	_	M	knn-xpage(share=0.21)
-c4b_L03	12	TRIPOD	M	knn-xpage(share=0.40)
-c4b_L03	13	WAVE	M	knn-xpage(share=0.59)
-c4b_L04	1	_	M	knn-xpage(share=0.40)
-c4b_L04	2	_	M	knn-xpage(share=0.62)
-c4b_L04	3	_	M	knn-xpage(share=0.39)
-c4b_L04	4	X	M	knn-xpage(share=0.81)
-c4b_L04	5	_	M	knn-xpage(share=0.80)
-c4b_L04	6	_	M	knn-xpage(share=0.41)
-c4b_L04	7	_	M	knn-xpage(share=0.59)
-c4b_L04	8	HOOK-L	M	knn-xpage(share=0.84)
-c4b_L04	9	HOOK-L	M	knn-xpage(share=0.81)
-c4b_L04	10	EYE-DOT	M	knn-xpage(share=0.61)
-c4b_L04	11	_	M	knn-xpage(share=0.40)
-c4b_L04	12	MISC-13	L	knn-xpage(share=0.40)
-c4b_L04	13	EYE-DOT	M	knn-xpage(share=0.39)
-c4b_L04	14	_	M	knn-xpage(share=0.58)
-c4b_L04	15	MISC-24	L	knn-xpage(share=0.38)
-c4b_L04	16	PCT	M	knn-xpage(share=0.41)
-c4b_L05	1	MISC-21	L	knn-xpage(share=0.21)
-c4b_L05	2	_	M	knn-xpage(share=0.39)
-c4b_L05	3	X	M	knn-xpage(share=0.81)
-c4b_L05	4	TRIDENT	M	knn-xpage(share=0.62)
-c4b_L05	5	PCT	M	knn-xpage(share=0.40)
-c4b_L05	6	PCT	M	knn-xpage(share=0.20)
-c4b_L05	7	MISC-17	L	knn-xpage(share=0.41)
-c4b_L05	8	DELTA-TAIL	M	knn-xpage(share=1.00)
-c4b_L05	9	_	M	knn-xpage(share=0.39)
-c4b_L05	10	_	M	knn-xpage(share=0.60)
-c4b_L05	11	MISC-36	L	knn-xpage(share=0.61)
-c4b_L05	12	_	M	knn-xpage(share=0.22)
-c4b_L05	13	X	M	knn-xpage(share=1.00)
-c4b_L05	14	_	M	knn-xpage(share=0.22)
+line	position	sign	family	confidence	source
+c1_L01	1	O-TILDE	O-TILDE	H	eye-split:MISC-33
+c1_L01	2	PCT-SLASH	PCT	H	eye-split:MISC-13
+c1_L01	3	TRIDENT	TRIDENT	H	cluster-map:39
+c1_L01	4	X	X	H	cluster-map:4
+c1_L01	5	LAMBDA	LAMBDA	H	eye-split:MISC-71
+c1_L01	6	DASH-H	DASH-H	H	cluster-map:61
+c1_L01	7	CC-O	CC-O	H	eye-split:MISC-03
+c1_L01	8	Y-CURL	Y-CURL	H	cluster-map:19
+c1_L01	9	II-DASH	II-DASH	H	eye-split:MISC-82
+c1_L01	10	OX-TILDE	OX-TILDE	H	eye-split:MISC-31
+c1_L01	11	PCT-SLASH	PCT	M	eye-split:MISC-46
+c1_L01	12	O-SLASH	O-SLASH	H	eye-split:MISC-78
+c1_L01	13	C-BAR-X	C-BAR-X	H	eye-split:MISC-36
+c1_L01	14	X	X	M	cluster-map:26
+c1_L01	15	XX-TILDE	XX-TILDE	H	eye-split:MISC-31
+c1_L01	16	O-TILDE	O-TILDE	H	eye-split:MISC-33
+c1_L01	17	PICT-HORSE	PICT-HORSE	H	eye-split:MISC-60
+c1_L01	18	X	X	H	cluster-map:47
+c1_L01	19	X	X	M	cluster-map:26
+c1_L01	20	BAR-SOLID	BLOB	M	cluster-map:10
+c1_L01	21	BLOB	BLOB	M	eye-split:MISC-55
+c1_L01	22	X	X	M	cluster-map:28
+c1_L02	1	SUN	SUN	H	eye-split:SUN
+c1_L02	2	VENUS	VENUS	H	eye-split:MISC-87
+c1_L02	3	PCT	PCT	H	cluster-map:66
+c1_L02	4	PCT	PCT	M	cluster-map:57
+c1_L02	5	O-TILDE	O-TILDE	M	eye-split:MISC-33
+c1_L02	6	SIX-CURL	SIX-CURL	M	eye-split:MISC-87
+c1_L02	7	A-LOOP	A-LOOP	H	eye-resplit:TRIPOD
+c1_L02	8	X	X	M	cluster-map:62
+c1_L02	9	X	X	H	eye-resplit:CIRC-TAIL
+c1_L02	10	OO-TILDE	OO-TILDE	H	eye-split:MISC-31
+c1_L02	11	O-PLUS	O-PLUS	M	eye-split:MISC-20
+c1_L02	12	X	X	M	cluster-map:28
+c1_L02	13	PCT-SLASH	PCT	H	eye-split:MISC-05
+c1_L02	14	CC-O	CC-O	H	eye-split:MISC-13
+c1_L02	15	Y-CURL	Y-CURL	H	cluster-map:19
+c1_L02	16	_	_	L	eye-split:MISC-29
+c1_L02	17	X	X	H	cluster-map:47
+c1_L02	18	PCT	PCT	H	cluster-map:9
+c1_L02	19	VENUS	VENUS	M	eye-split:MISC-05
+c1_L02	20	PICT-FACE	PICT-FACE	M	eye-resplit:CRESCENT
+c1_L02	21	O-DASH2	O-DASH2	M	eye-split:MISC-17
+c1_L03	1	BAR-THIN	BAR-THIN	M	cluster-map:51
+c1_L03	2	X	X	M	cluster-map:26
+c1_L03	3	BLOB	BLOB	M	eye-split:MISC-55
+c1_L03	4	DAGGER-O	DAGGER-O	H	eye-resplit:DELTA-TAIL
+c1_L03	5	O-TILDE	O-TILDE	M	eye-resplit:WAVE
+c1_L03	6	O-SLASH	O-SLASH	M	eye-split:MISC-00
+c1_L03	7	X	X	M	cluster-map:28
+c1_L03	8	_	_	L	eye-split:MISC-80
+c1_L03	9	C-DOT	C-DOT	M	eye-resplit:GEAR-DOT
+c1_L03	10	X	X	M	cluster-map:52
+c1_L03	11	CC-DASH	CC-DASH	M	eye-resplit:LOOP-TAIL
+c1_L03	12	PCT	PCT	M	cluster-map:57
+c1_L03	13	BAR-SOLID	BLOB	M	cluster-map:10
+c1_L03	14	TRIDENT	TRIDENT	H	cluster-map:39
+c1_L03	15	PCT	PCT	H	cluster-map:66
+c1_L03	16	LAMBDA-DASH	LAMBDA-DASH	H	eye-split:MISC-71
+c1_L03	17	DOLLAR	DOLLAR	M	eye-split:MISC-35
+c1_L03	18	CIRC-O	CIRC-O	M	eye-resplit:EYE-DOT
+c1_L03	19	OX-TILDE	OX-TILDE	H	eye-split:MISC-31
+c1_L03	20	PCT	PCT	H	eye-resplit:TRIPOD
+c1_L03	21	DASH-H	DASH-H	H	cluster-map:61
+c1_L03	22	ARCH-DASH	ARCH-DASH	M	eye-split:MISC-21
+c1_L03	23	PICT-RUNNER	PICT-RUNNER	H	eye-split:MISC-79
+c1_L03	24	HASH	HASH	H	eye-split:MISC-46
+c1_L03	25	NOTE	NOTE	H	cluster-map:63
+c1_L03	26	MULTI	MULTI	L	eye-resplit:PHI
+c1_L03	27	BAR-SOLID	BLOB	M	cluster-map:10
+c1_L03	28	PCT	PCT	H	cluster-map:9
+c1_L03	29	XX-TILDE	XX-TILDE	H	eye-split:MISC-31
+c1_L04	1	CC-DOT	CC-DOT	L	eye-split:MISC-67
+c1_L04	2	DBL-SLASH	DBL-SLASH	M	eye-split:MISC-06
+c1_L04	3	DAGGER-O	DAGGER-O	H	eye-resplit:DELTA-TAIL
+c1_L04	4	HOOK-L	HOOK-L	M	eye-resplit:CIRC-TAIL
+c1_L04	5	O-DASHBELOW	O-DASHBELOW	M	eye-resplit:LOOP-TAIL
+c1_L04	6	BAR-THIN	BAR-THIN	M	cluster-map:12
+c1_L04	7	LOOP-STEM	LOOP-STEM	H	eye-resplit:RHO
+c1_L04	8	VEE	VEE	H	cluster-map:59
+c1_L04	9	PICT-TREE	PICT-TREE	H	eye-split:MISC-83
+c1_L04	10	DBL-SLASH	DBL-SLASH	M	eye-resplit:HOOK-L
+c1_L04	11	DASH-H	DASH-H	H	cluster-map:61
+c1_L04	12	O-DASHBELOW	O-DASHBELOW	M	eye-split:MISC-03
+c1_L04	13	PCT	PCT	H	cluster-map:66
+c1_L04	14	O-TILDE	O-TILDE	M	eye-resplit:WAVE
+c1_L04	15	ARC-LOOPS	ARC-LOOPS	H	eye-split:MISC-67
+c1_L04	16	X-BAR	X-BAR	M	eye-split:MISC-87
+c1_L04	17	X-CURL	X-CURL	M	eye-split:MISC-36
+c1_L04	18	X	X	M	cluster-map:53
+c1_L04	19	AMP	AMP	L	eye-split:MISC-30
+c1_L04	20	VENUS	VENUS	H	cluster-map:49
+c1_L04	21	F-LETTER	F-LETTER	M	eye-split:MISC-43
+c1_L04	22	A-LOOP	A-LOOP	H	eye-resplit:TRIPOD
+c1_L04	23	DOTS-TILDE	DOTS-TILDE	H	eye-split:MISC-31
+c1_L05	1	PCT	PCT	H	cluster-map:66
+c1_L05	2	BAR-THIN	BAR-THIN	M	eye-resplit:BAR-SERIF
+c1_L05	3	BAR-THIN	BAR-THIN	M	eye-resplit:BAR-SERIF
+c1_L05	4	Y-CURL	Y-CURL	M	cluster-map:88
+c1_L05	5	A-LOOP	A-LOOP	H	eye-resplit:TRIPOD
+c1_L05	6	MULTI	MULTI	L	eye-split:MISC-30
+c1_L05	7	X	X	H	cluster-map:25
+c1_L05	8	CROSS-T	CROSS-T	H	cluster-map:48
+c1_L05	9	Y-CURL	Y-CURL	H	cluster-map:19
+c1_L05	10	O-BRACKET	O-BRACKET	L	eye-split:MISC-67
+c1_L05	11	DIAMOND	DIAMOND	M	eye-resplit:DELTA-TAIL
+c1_L05	12	O-SLASH	O-SLASH	M	eye-split:MISC-79
+c1_L05	13	X	X	M	cluster-map:28
+c1_L05	14	Y-CURL	Y-CURL	H	cluster-map:19
+c1_L05	15	X	X	H	cluster-map:56
+c1_L05	16	PCT	PCT	M	cluster-map:57
+c1_L05	17	DOLLAR	DOLLAR	M	eye-split:MISC-06
+c1_L05	18	BLOB	BLOB	M	eye-resplit:BAR-SERIF
+c1_L05	19	BAR-SOLID	BLOB	M	cluster-map:45
+c1_L05	20	II-SLASH	II-SLASH	M	eye-split:MISC-07
+c1_L05	21	Y-CURL	Y-CURL	H	cluster-map:19
+c1_L05	22	X	X	M	cluster-map:22
+c1_L05	23	DAGGER-O	DAGGER-O	H	eye-split:MISC-13
+c1_L06	1	PCT	PCT	H	cluster-map:66
+c1_L06	2	O-SLASH	O-SLASH	M	eye-resplit:LOOP-TAIL
+c1_L06	3	X	X	H	cluster-map:84
+c1_L06	4	O-TILDE	O-TILDE	M	eye-split:MISC-67
+c1_L06	5	X	X	M	cluster-map:52
+c1_L06	6	A-LOOP	A-LOOP	M	eye-split:MISC-05
+c1_L06	7	O-DASH2	O-DASH2	M	eye-resplit:CRESCENT
+c1_L06	8	PCT	PCT	M	cluster-map:57
+c1_L06	9	X	X	M	cluster-map:28
+c1_L06	10	Y-LOOPS	Y-LOOPS	M	eye-split:MISC-43
+c1_L06	11	X-BAR	X-BAR	M	eye-split:MISC-76
+c1_L06	12	CIRC-O	CIRC-O	M	eye-resplit:CIRC-TAIL
+c1_L06	13	Y-CURL	Y-CURL	M	cluster-map:88
+c1_L06	14	CIRC-O	CIRC-O	M	eye-resplit:CIRC-TAIL
+c1_L06	15	S-CURL	S-CURL	M	eye-split:MISC-13
+c1_L06	16	SLASH-BAR	SLASH-BAR	M	eye-split:MISC-17
+c1_L06	17	PHI	PHI	H	eye-resplit:PHI
+c1_L06	18	T-LETTER	T-LETTER	M	eye-split:MISC-17
+c2a_L01	1	BAR-THIN	BAR-THIN	M	cluster-map:51
+c2a_L01	2	BRACKET	BRACKET	M	eye-split:MISC-21
+c2a_L01	3	X	X	H	cluster-map:56
+c2a_L01	4	CC-DASH	CC-DASH	H	eye-split:MISC-82
+c2a_L01	5	EIGHT	EIGHT	L	eye-split:MISC-76
+c2a_L01	6	Y-CURL	Y-CURL	M	cluster-map:88
+c2a_L01	7	N-LETTER	N-LETTER	L	eye-split:MISC-21
+c2a_L01	8	QQ-O	QQ-O	L	eye-split:MISC-67
+c2a_L01	9	C-DOT	C-DOT	L	eye-resplit:CIRC-TAIL
+c2a_L01	10	X	X	M	cluster-map:28
+c2a_L01	11	PCT-SLASH	PCT	H	eye-split:MISC-13
+c2a_L01	12	AMP	AMP	H	cluster-map:69
+c2a_L01	13	X	X	M	eye-split:MISC-75
+c2a_L01	14	CIRC-O	CIRC-O	H	cluster-map:42
+c2a_L01	15	X	X	H	cluster-map:56
+c2a_L01	16	O-SLASH	O-SLASH	M	eye-split:MISC-54
+c2a_L01	17	O-DASH2	O-DASH2	H	eye-split:MISC-33
+c2a_L01	18	X	X	H	eye-split:MISC-05
+c2a_L01	19	V-DOT	V-DOT	M	cluster-map:85
+c2a_L01	20	_	_	L	eye-split:MISC-17
+c2a_L01	21	BAR-THIN	BAR-THIN	M	cluster-map:12
+c2a_L01	22	CIRC-O	CIRC-O	H	cluster-map:42
+c2a_L01	23	DASH-H	DASH-H	H	cluster-map:61
+c2a_L01	24	IOI-TILDE	IOI-TILDE	M	eye-split:MISC-31
+c2a_L01	25	PCT	PCT	H	cluster-map:66
+c2a_L01	26	CIRC-O	CIRC-O	M	eye-resplit:EYE-DOT
+c2a_L01	27	DASH-H	DASH-H	H	cluster-map:61
+c2a_L01	28	X	X	M	cluster-map:26
+c2a_L01	29	X	X	H	eye-split:MISC-75
+c2a_L01	30	LOOP-STEM	LOOP-STEM	H	eye-resplit:RHO
+c2a_L01	31	DOT-LINE-O	DOT-LINE-O	M	eye-split:MISC-03
+c2a_L01	32	X	X	M	cluster-map:28
+c2a_L01	33	BLOB	BLOB	M	eye-split:MISC-55
+c2a_L01	34	DASH-V	DASH-V	M	cluster-map:15
+c2a_L02	1	PICT-LEAF	PICT-LEAF	H	eye-split:SUN
+c2a_L02	2	BOX-GRID	BOX-GRID	M	eye-split:MISC-87
+c2a_L02	3	O-TILDE	O-TILDE	M	eye-split:MISC-33
+c2a_L02	4	LOOP-TAIL	LOOP-TAIL	M	eye-split:MISC-20
+c2a_L02	5	TRIDENT	TRIDENT	H	cluster-map:39
+c2a_L02	6	PCT-SLASH	PCT	H	eye-split:MISC-05
+c2a_L02	7	II-DASH	II-DASH	M	eye-split:MISC-33
+c2a_L02	8	TRIDENT	TRIDENT	H	cluster-map:39
+c2a_L02	9	PICT-BOTTLE	PICT-BOTTLE	H	eye-split:MISC-76
+c2a_L02	10	PICT-TREE	PICT-TREE	H	eye-split:MISC-83
+c2a_L02	11	SUN	SUN	H	eye-split:SUN
+c2a_L02	12	X	X	M	cluster-map:26
+c2a_L02	13	NINE	NINE	L	eye-resplit:DELTA-TAIL
+c2a_L02	14	FIVE	FIVE	M	eye-resplit:DELTA-TAIL
+c2a_L02	15	BAR-THIN	BAR-THIN	M	cluster-map:12
+c2a_L02	16	TRIDENT	TRIDENT	H	cluster-map:39
+c2a_L02	17	BAR-THIN	BAR-THIN	L	eye-resplit:BAR-SERIF
+c2a_L02	18	PICT-FACE	PICT-FACE	M	eye-split:MISC-11
+c2a_L02	19	PCT	PCT	H	cluster-map:9
+c2a_L02	20	DAGGER-O	DAGGER-O	H	eye-resplit:DELTA-TAIL
+c2a_L02	21	X	X	M	cluster-map:26
+c2a_L02	22	X	X	M	cluster-map:62
+c2a_L02	23	II-DASH	II-DASH	H	eye-split:MISC-46
+c2a_L02	24	BLOB	BLOB	M	eye-split:MISC-55
+c2a_L02	25	PHI	PHI	H	eye-resplit:PHI
+c2a_L02	26	OX-TILDE	OX-TILDE	M	eye-split:MISC-36
+c2a_L02	27	BUCKET	BUCKET	M	eye-split:MISC-64
+c2a_L02	28	DASH-V	DASH-V	M	cluster-map:15
+c2a_L03	1	PICT-EAGLE	PICT-EAGLE	H	eye-split:MISC-60
+c2a_L03	2	V-LOOP	V-LOOP	M	eye-split:MISC-43
+c2a_L03	3	VENUS	VENUS	H	cluster-map:49
+c2a_L03	4	CC-DASH	CC-DASH	M	eye-split:MISC-00
+c2a_L03	5	X	X	M	cluster-map:14
+c2a_L03	6	X	X	M	cluster-map:28
+c2a_L03	7	PHI	PHI	H	eye-resplit:PHI
+c2a_L03	8	X-CURL	X-CURL	M	eye-split:MISC-37
+c2a_L03	9	VENUS	VENUS	H	cluster-map:49
+c2a_L03	10	EIGHT	EIGHT	L	eye-split:MISC-30
+c2a_L03	11	X	X	H	cluster-map:4
+c2a_L03	12	O-DASH2	O-DASH2	H	eye-split:MISC-33
+c2a_L03	13	CC-DASH	CC-DASH	H	eye-split:MISC-82
+c2a_L03	14	LAMBDA	LAMBDA	H	eye-split:MISC-30
+c2a_L03	15	PCT	PCT	M	cluster-map:57
+c2a_L03	16	X	X	H	cluster-map:25
+c2a_L03	17	O-SLASH	O-SLASH	L	eye-resplit:WAVE
+c2a_L03	18	BOX-GRID	BOX-GRID	H	eye-split:MISC-05
+c2a_L03	19	BAR-SOLID	BLOB	M	cluster-map:10
+c2a_L03	20	X	X	M	cluster-map:26
+c2a_L03	21	TRIDENT	TRIDENT	H	cluster-map:39
+c2a_L03	22	BAR-SOLID	BLOB	M	cluster-map:8
+c2a_L03	23	Y-CURL	Y-CURL	H	cluster-map:19
+c2a_L03	24	O-DASH2	O-DASH2	H	eye-split:MISC-33
+c2a_L03	25	X	X	M	cluster-map:53
+c2a_L03	26	BAR-THIN	BAR-THIN	M	eye-split:MISC-35
+c2a_L04	1	BAR-THIN	BAR-THIN	M	cluster-map:12
+c2a_L04	2	BAR-THIN	BAR-THIN	M	cluster-map:12
+c2a_L04	3	BAR-THIN	BAR-THIN	M	cluster-map:51
+c2a_L04	4	BAR-SOLID	BLOB	M	cluster-map:10
+c2a_L04	5	VENUS	VENUS	M	eye-split:MISC-75
+c2a_L04	6	X	X	M	cluster-map:14
+c2a_L04	7	X	X	M	cluster-map:26
+c2a_L04	8	ARCH-DOTS	ARCH-DOTS	L	eye-split:MISC-24
+c2a_L04	9	SMILE	SMILE	L	eye-split:MISC-30
+c2a_L04	10	AMP	AMP	H	cluster-map:69
+c2a_L04	11	II-DASH	II-DASH	M	eye-split:MISC-21
+c2a_L04	12	NINE	NINE	L	eye-split:MISC-30
+c2a_L04	13	SCROLL-X	SCROLL-X	M	eye-split:MISC-41
+c2a_L04	14	V-DOT	V-DOT	M	cluster-map:85
+c2a_L04	15	DBL-SLASH	DBL-SLASH	M	eye-resplit:HOOK-L
+c2a_L04	16	BLOB	BLOB	M	eye-split:MISC-32
+c2a_L04	17	WAVE	WAVE	M	eye-split:MISC-20
+c2a_L04	18	DAGGER-O	DAGGER-O	H	eye-resplit:DELTA-TAIL
+c2a_L04	19	X	X	M	cluster-map:52
+c2a_L04	20	X	X	H	cluster-map:25
+c2a_L04	21	BLOB	BLOB	M	eye-split:MISC-55
+c2a_L04	22	C-BAR-X	C-BAR-X	M	eye-split:MISC-37
+c2a_L04	23	PCT	PCT	H	cluster-map:66
+c2a_L04	24	OX-TILDE	OX-TILDE	M	eye-resplit:WAVE
+c2a_L04	25	BAR-THIN	BAR-THIN	M	cluster-map:12
+c2a_L04	26	BAR-THIN	BAR-THIN	M	cluster-map:12
+c2a_L04	27	DASH-V	DASH-V	M	cluster-map:15
+c2a_L05	1	_	_	L	eye-resplit:CIRC-TAIL
+c2a_L05	2	_	_	M	eye-split:MISC-76
+c2a_L05	3	DASH-V	DASH-V	M	cluster-map:15
+c2a_L05	4	BAR-SOLID	BLOB	M	cluster-map:10
+c2a_L05	5	PICT-HOUSE	PICT-HOUSE	H	eye-split:SUN
+c2a_L05	6	EIGHT	EIGHT	L	eye-split:MISC-05
+c2a_L05	7	X	X	M	cluster-map:28
+c2a_L05	8	OX-TILDE	OX-TILDE	H	eye-split:MISC-31
+c2a_L05	9	LOOP-STEM	LOOP-STEM	H	eye-resplit:RHO
+c2a_L05	10	C-DOT	C-DOT	H	eye-resplit:CRESCENT
+c2a_L05	11	C-DOT	C-DOT	H	eye-resplit:CRESCENT
+c2a_L05	12	BAR-SOLID	BLOB	M	cluster-map:10
+c2a_L05	13	BAR-THIN	BAR-THIN	M	eye-resplit:BAR-SERIF
+c2a_L05	14	X	X	M	cluster-map:14
+c2a_L05	15	CIRC-O	CIRC-O	H	cluster-map:42
+c2a_L05	16	BLOB	BLOB	M	eye-split:MISC-55
+c2a_L05	17	X	X	M	cluster-map:62
+c2a_L05	18	X	X	M	cluster-map:53
+c2a_L05	19	X	X	H	eye-split:MISC-87
+c2a_L05	20	X	X	M	cluster-map:28
+c2a_L05	21	MULTI	MULTI	L	eye-resplit:WAVE
+c2a_L05	22	T-LETTER	T-LETTER	H	eye-split:MISC-46
+c2a_L05	23	S-CURL	S-CURL	L	eye-split:MISC-67
+c2a_L05	24	PCT	PCT	H	eye-split:MISC-05
+c2a_L05	25	O-TILDE	O-TILDE	M	eye-split:MISC-74
+c2a_L05	26	X	X	M	cluster-map:28
+c2a_L05	27	PHI	PHI	H	eye-resplit:PHI
+c2a_L05	28	O-TILDE	O-TILDE	M	eye-split:MISC-74
+c2a_L05	29	DBL-SLASH	DBL-SLASH	M	eye-resplit:HOOK-L
+c2a_L05	30	DBL-SLASH	DBL-SLASH	M	eye-resplit:HOOK-L
+c2a_L05	31	_	_	L	eye-resplit:BAR-SERIF
+c2a_L05	32	DAGGER-O	DAGGER-O	M	eye-resplit:DELTA-TAIL
+c2a_L05	33	X	X	M	cluster-map:28
+c2a_L05	34	BAR-THIN	BAR-THIN	M	cluster-map:51
+c2a_L06	1	BAR-THIN	BAR-THIN	M	cluster-map:12
+c2a_L06	2	X	X	M	cluster-map:26
+c2a_L06	3	_	_	M	eye-split:MISC-06
+c2a_L06	4	BAR-THIN	BAR-THIN	M	cluster-map:51
+c2a_L06	5	DOLLAR	DOLLAR	M	eye-split:MISC-06
+c2a_L06	6	X	X	H	cluster-map:47
+c2a_L06	7	PCT-SLASH	PCT	M	eye-split:MISC-13
+c2a_L06	8	X	X	M	cluster-map:26
+c2a_L06	9	X	X	M	eye-split:MISC-75
+c2a_L06	10	THREE	THREE	L	eye-split:MISC-06
+c2a_L06	11	WAVE	WAVE	M	eye-split:MISC-67
+c2a_L06	12	PCT-SLASH	PCT	H	eye-split:MISC-13
+c2a_L06	13	STAR	STAR	H	eye-split:MISC-67
+c2a_L06	14	CROSS-T	CROSS-T	H	cluster-map:48
+c2a_L06	15	CC-DASH	CC-DASH	H	eye-split:MISC-05
+c2a_L06	16	II-DASH	II-DASH	H	eye-split:MISC-75
+c2a_L06	17	PHI	PHI	H	eye-resplit:PHI
+c2a_L06	18	PCT	PCT	H	cluster-map:9
+c2a_L06	19	X	X	M	cluster-map:53
+c2a_L06	20	DBL-SLASH	DBL-SLASH	M	eye-resplit:HOOK-L
+c2a_L06	21	DBL-SLASH	DBL-SLASH	M	eye-resplit:HOOK-L
+c2a_L06	22	CIRC-O	CIRC-O	H	cluster-map:42
+c2a_L06	23	O-DASH2	O-DASH2	M	eye-split:MISC-17
+c2a_L06	24	C-BAR-X	C-BAR-X	M	eye-split:MISC-87
+c2a_L06	25	CIRC-O	CIRC-O	H	cluster-map:42
+c2a_L06	26	VEE	VEE	H	cluster-map:59
+c2a_L06	27	WAVE-V	WAVE-V	M	eye-split:MISC-79
+c2a_L06	28	PCT	PCT	H	cluster-map:66
+c2a_L06	29	X	X	M	cluster-map:26
+c2a_L06	30	VENUS	VENUS	H	cluster-map:49
+c2a_L06	31	PCT	PCT	H	cluster-map:9
+c2a_L07	1	X-DOT	X-DOT	M	eye-split:MISC-81
+c2a_L07	2	ARCH-DASH	ARCH-DASH	M	eye-split:MISC-67
+c2a_L07	3	II-DASH	II-DASH	H	eye-split:MISC-82
+c2a_L07	4	NINE-BAR	NINE-BAR	L	eye-split:MISC-37
+c2a_L07	5	BAR-SOLID	BLOB	M	cluster-map:8
+c2a_L07	6	DAGGER-O	DAGGER-O	H	eye-resplit:DELTA-TAIL
+c2a_L07	7	C-DOT	C-DOT	M	eye-split:MISC-17
+c2a_L07	8	QQ-O	QQ-O	L	eye-split:MISC-36
+c2a_L07	9	X	X	M	cluster-map:28
+c2a_L07	10	OX-TILDE	OX-TILDE	H	eye-split:MISC-31
+c2a_L07	11	STAR	STAR	H	eye-split:MISC-24
+c2a_L07	12	VENUS	VENUS	H	cluster-map:49
+c2a_L07	13	OO-TILDE	OO-TILDE	H	eye-split:MISC-31
+c2a_L07	14	X	X	M	cluster-map:28
+c2a_L07	15	PICT-FIGURE	PICT-FIGURE	L	eye-split:MISC-24
+c2a_L07	16	PICT-ARROW	PICT-ARROW	H	eye-split:MISC-74
+c2a_L07	17	PICT-TREE	PICT-TREE	M	eye-split:MISC-35
+c2a_L07	18	X	X	M	cluster-map:53
+c2a_L07	19	O-DASH2	O-DASH2	H	eye-split:MISC-33
+c2a_L07	20	CC-DASH	CC-DASH	M	eye-split:MISC-82
+c2a_L07	21	X	X	H	cluster-map:47
+c2a_L07	22	X	X	M	cluster-map:62
+c2a_L07	23	CROSS-T	CROSS-T	H	eye-split:MISC-05
+c2a_L07	24	C-DOT	C-DOT	M	eye-split:MISC-13
+c2a_L07	25	STAR	STAR	H	eye-split:MISC-05
+c2a_L07	26	AMP	AMP	H	cluster-map:69
+c2a_L07	27	PHI	PHI	H	eye-resplit:PHI
+c2a_L07	28	SCROLL-X	SCROLL-X	M	eye-split:MISC-41
+c2a_L07	29	SLASH	SLASH	H	eye-split:MISC-17
+c2a_L07	30	X	X	M	cluster-map:53
+c2a_L07	31	OX-TILDE	OX-TILDE	H	eye-split:MISC-31
+c2a_L07	32	_	_	L	eye-resplit:BAR-SERIF
+c2a_L08	1	DASH-H	DASH-H	H	cluster-map:61
+c2a_L08	2	BAR-THIN	BAR-THIN	M	cluster-map:12
+c2a_L08	3	X	X	H	cluster-map:4
+c2a_L08	4	X	X	H	cluster-map:25
+c2a_L08	5	_	_	L	eye-split:MISC-50
+c2a_L08	6	PCT	PCT	M	cluster-map:57
+c2a_L08	7	X	X	H	cluster-map:56
+c2a_L08	8	Y-CURL	Y-CURL	H	cluster-map:19
+c2a_L08	9	X	X	L	eye-split:MISC-80
+c2a_L08	10	CIRC-O	CIRC-O	H	cluster-map:42
+c2a_L08	11	PICT-CROSSED	PICT-CROSSED	L	eye-split:MISC-29
+c2a_L08	12	MULTI	MULTI	L	eye-split:MISC-76
+c2a_L08	13	QQ-O	QQ-O	L	eye-split:MISC-41
+c2a_L08	14	X	X	M	eye-resplit:TRIPOD
+c2a_L08	15	GEAR-DOT	GEAR-DOT	M	eye-resplit:GEAR-DOT
+c2a_L08	16	XX-TILDE	XX-TILDE	L	eye-split:MISC-29
+c2a_L08	17	XX-TILDE	XX-TILDE	M	eye-resplit:WAVE
+c2a_L08	18	II-O	II-O	M	eye-split:MISC-43
+c2a_L08	19	O-DOTS	O-DOTS	L	eye-split:MISC-29
+c2a_L08	20	A-LOOP	A-LOOP	M	eye-split:MISC-71
+c2a_L08	21	OX-TILDE	OX-TILDE	L	eye-split:MISC-29
+c2a_L08	22	ARCH-DASH	ARCH-DASH	M	eye-split:MISC-67
+c2a_L08	23	MULTI	MULTI	L	eye-split:MISC-29
+c2a_L08	24	MULTI	MULTI	L	eye-split:MISC-29
+c2a_L08	25	XX-TILDE	XX-TILDE	M	eye-split:MISC-31
+c2a_L08	26	_	_	L	eye-resplit:BAR-SERIF
+c2a_L09	1	GEAR-DOT	GEAR-DOT	M	eye-resplit:GEAR-DOT
+c2a_L09	2	AMP	AMP	H	cluster-map:69
+c2a_L09	3	DOUBLE-LOOP	DOUBLE-LOOP	L	eye-split:MISC-64
+c2a_L09	4	LAMBDA	LAMBDA	H	eye-split:MISC-05
+c2a_L09	5	X	X	M	cluster-map:52
+c2a_L09	6	II-DASH	II-DASH	M	eye-split:MISC-05
+c2a_L09	7	H-LETTER	H-LETTER	M	eye-split:MISC-76
+c2a_L09	8	BAR-SOLID	BLOB	M	cluster-map:10
+c2a_L09	9	D-LETTER	D-LETTER	M	eye-split:MISC-43
+c2a_L09	10	D-LETTER	D-LETTER	M	eye-split:MISC-67
+c2a_L09	11	L-LETTER	L-LETTER	M	eye-split:MISC-07
+c2a_L09	12	M-LETTER	M-LETTER	M	eye-split:MISC-67
+c2a_L09	13	BAR-SOLID	BLOB	M	cluster-map:10
+c2a_L09	14	F-LETTER	F-LETTER	M	eye-split:MISC-21
+c2a_L09	15	BLOB	BLOB	M	eye-split:MISC-55
+c2a_L09	16	BAR-SOLID	BLOB	M	cluster-map:10
+c2a_L09	17	BAR-SOLID	BLOB	M	cluster-map:45
+c2a_L09	18	MULTI	MULTI	L	eye-split:MISC-29
+c2a_L09	19	DAGGER-O	DAGGER-O	H	eye-resplit:DELTA-TAIL
+c2a_L09	20	CROSS-T	CROSS-T	M	cluster-map:68
+c2a_L09	21	PHI	PHI	H	eye-resplit:PHI
+c2a_L09	22	B-SCRIPT	B-SCRIPT	L	eye-split:MISC-46
+c2a_L09	23	II-DASH	II-DASH	M	eye-split:MISC-40
+c2a_L09	24	MULTI	MULTI	L	eye-split:MISC-40
+c2a_L09	25	DBL-SLASH	DBL-SLASH	L	eye-resplit:CIRC-TAIL
+c2a_L09	26	BLOB	BLOB	M	eye-split:MISC-32
+c2a_L09	27	MULTI	MULTI	L	eye-split:MISC-37
+c2a_L09	28	C-DOT	C-DOT	M	eye-resplit:CRESCENT
+c2a_L09	29	BAR-SOLID	BLOB	M	cluster-map:10
+c2a_L09	30	O-TILDE	O-TILDE	M	eye-split:MISC-74
+c2a_L09	31	X	X	M	eye-split:MISC-75
+c2a_L09	32	PHI	PHI	H	eye-split:MISC-54
+c2a_L09	33	ARC-LOOPS	ARC-LOOPS	M	eye-split:MISC-54
+c2a_L09	34	Y-CURL	Y-CURL	H	cluster-map:19
+c2a_L09	35	BLOB	BLOB	M	eye-split:MISC-32
+c2a_L09	36	CIRC-O	CIRC-O	L	eye-resplit:EYE-DOT
+c2a_L09	37	PCT-SLASH	PCT	M	eye-split:MISC-17
+c2a_L09	38	CC-DASH	CC-DASH	L	eye-resplit:CIRC-TAIL
+c2a_L09	39	OX	OX	H	eye-split:MISC-20
+c2a_L09	40	PCT	PCT	H	cluster-map:66
+c2a_L09	41	DASH-V	DASH-V	M	cluster-map:15
+c2a_L10	1	FIVE	FIVE	L	eye-resplit:TRIPOD
+c2a_L10	2	VENUS	VENUS	H	cluster-map:49
+c2a_L10	3	_	_	L	eye-resplit:CIRC-TAIL
+c2a_L10	4	II-DASH	II-DASH	H	eye-split:MISC-13
+c2a_L10	5	PCT-SLASH	PCT	L	eye-split:MISC-17
+c2a_L10	6	F-LETTER	F-LETTER	L	eye-split:MISC-11
+c2a_L10	7	QQ-O	QQ-O	M	eye-split:MISC-07
+c2a_L10	8	X	X	H	eye-split:MISC-05
+c2a_L10	9	SUN	SUN	H	eye-split:SUN
+c2a_L10	10	LOOP-TAIL	LOOP-TAIL	M	eye-split:MISC-20
+c2a_L10	11	PCT	PCT	M	eye-split:MISC-05
+c2a_L10	12	NOTE	NOTE	H	cluster-map:63
+c2a_L10	13	CC-DASH	CC-DASH	H	eye-split:MISC-05
+c2a_L10	14	X-O	X-O	M	eye-split:SUN
+c2a_L10	15	MULTI	MULTI	L	eye-resplit:DELTA-TAIL
+c2a_L10	16	PICT-FISH	PICT-FISH	L	eye-split:MISC-64
+c2a_L10	17	PCT-SLASH	PCT	H	eye-split:MISC-87
+c2a_L10	18	O-SLASH	O-SLASH	M	eye-resplit:LOOP-TAIL
+c2a_L10	19	DOTS-TILDE	DOTS-TILDE	M	eye-split:MISC-31
+c2a_L10	20	PICT-BARREL	PICT-BARREL	M	eye-split:MISC-41
+c2a_L10	21	DBL-SLASH	DBL-SLASH	M	eye-split:MISC-24
+c2a_L10	22	SIX-CURL	SIX-CURL	L	eye-resplit:CRESCENT
+c2a_L10	23	X	X	M	cluster-map:28
+c2a_L10	24	X	X	M	cluster-map:62
+c2a_L10	25	Y-CURL	Y-CURL	H	cluster-map:19
+c2a_L10	26	SCROLL-X	SCROLL-X	M	eye-split:MISC-41
+c2a_L10	27	Y-CURL	Y-CURL	M	cluster-map:88
+c2a_L10	28	DOTS-TILDE	DOTS-TILDE	M	eye-resplit:WAVE
+c2a_L10	29	PCT	PCT	H	cluster-map:66
+c2a_L10	30	X	X	H	cluster-map:47
+c2a_L10	31	X	X	H	cluster-map:84
+c2a_L10	32	O-DASH2	O-DASH2	H	eye-split:MISC-33
+c2a_L10	33	BAR-THIN	BAR-THIN	M	cluster-map:51
+c2a_L11	1	GEAR-DOT	GEAR-DOT	M	eye-split:MISC-76
+c2a_L11	2	VENUS	VENUS	H	cluster-map:49
+c2a_L11	3	_	_	L	eye-resplit:EYE-DOT
+c2a_L11	4	X	X	M	cluster-map:62
+c2a_L11	5	EIGHT	EIGHT	L	eye-split:MISC-05
+c2a_L11	6	CC-O	CC-O	L	eye-split:MISC-41
+c2a_L11	7	CROSS-T	CROSS-T	M	cluster-map:68
+c2a_L11	8	CC-DASH	CC-DASH	H	eye-split:MISC-05
+c2a_L11	9	XX-TILDE	XX-TILDE	H	eye-split:MISC-31
+c2a_L11	10	MULTI	MULTI	L	eye-split:MISC-24
+c2a_L11	11	S-CURL	S-CURL	L	eye-split:MISC-06
+c2a_L11	12	SQUIG-DOT	SQUIG-DOT	L	eye-split:MISC-03
+c2a_L11	13	X	X	H	cluster-map:47
+c2a_L11	14	WAVE	WAVE	H	eye-resplit:WAVE
+c2a_L11	15	PCT	PCT	M	cluster-map:57
+c2a_L11	16	PCT	PCT	M	cluster-map:57
+c2a_L11	17	AMP	AMP	H	cluster-map:69
+c2a_L11	18	Y-CURL	Y-CURL	M	cluster-map:88
+c2a_L11	19	XX-TILDE	XX-TILDE	H	eye-split:MISC-31
+c2a_L11	20	STAR	STAR	H	eye-split:MISC-11
+c2a_L11	21	LOOP-STEM	LOOP-STEM	H	eye-resplit:RHO
+c2a_L11	22	BAR-THIN	BAR-THIN	M	cluster-map:12
+c2a_L11	23	CC-O	CC-O	L	eye-resplit:WAVE
+c2a_L11	24	X	X	M	cluster-map:14
+c2a_L11	25	WAVE-V	WAVE-V	L	eye-split:MISC-24
+c2a_L11	26	C-DOT	C-DOT	M	eye-split:MISC-54
+c2a_L11	27	Y-CURL	Y-CURL	M	cluster-map:88
+c2a_L11	28	X	X	M	cluster-map:53
+c2a_L11	29	CC-O	CC-O	M	eye-split:MISC-37
+c2a_L11	30	X	X	H	cluster-map:25
+c2a_L11	31	O-BAR-O	O-BAR-O	H	eye-split:MISC-36
+c2a_L11	32	DASH-V	DASH-V	M	cluster-map:15
+c2a_L12	1	X	X	M	cluster-map:52
+c2a_L12	2	VENUS	VENUS	H	cluster-map:49
+c2a_L12	3	PCT	PCT	M	cluster-map:57
+c2a_L12	4	BAR-THIN	BAR-THIN	M	eye-resplit:BAR-SERIF
+c2a_L12	5	X	X	M	cluster-map:22
+c2a_L12	6	S-CURL	S-CURL	L	eye-split:MISC-41
+c2a_L12	7	BAR-SOLID	BLOB	M	cluster-map:10
+c2a_L12	8	PCT-SLASH	PCT	H	eye-split:MISC-17
+c2a_L12	9	BAR-SOLID	BLOB	M	cluster-map:45
+c2a_L12	10	X	X	M	cluster-map:52
+c2a_L12	11	MULTI	MULTI	L	eye-split:MISC-29
+c2a_L12	12	X	X	M	cluster-map:14
+c2a_L12	13	X-DASH	X-DASH	M	eye-split:MISC-05
+c2a_L12	14	AMP	AMP	H	cluster-map:69
+c2a_L12	15	AMP	AMP	H	cluster-map:69
+c2a_L12	16	C-BAR-X	C-BAR-X	M	eye-split:MISC-36
+c2a_L12	17	LOOP-STEM	LOOP-STEM	H	eye-resplit:RHO
+c2a_L12	18	PICT-LEAF	PICT-LEAF	H	eye-split:MISC-60
+c2a_L12	19	EIGHT	EIGHT	H	eye-split:MISC-13
+c2a_L12	20	C-DOT	C-DOT	M	eye-split:MISC-21
+c2a_L12	21	STAR	STAR	H	eye-split:MISC-67
+c2a_L12	22	MULTI	MULTI	L	eye-resplit:DELTA-TAIL
+c2a_L12	23	NOTE	NOTE	H	cluster-map:63
+c2a_L12	24	QUESTION	QUESTION	M	eye-split:MISC-50
+c2a_L12	25	QUESTION	QUESTION	M	eye-split:MISC-50
+c2a_L12	26	CIRC-O	CIRC-O	M	eye-resplit:EYE-DOT
+c2a_L12	27	X	X	M	cluster-map:28
+c2a_L12	28	X	X	M	cluster-map:14
+c2a_L12	29	C-DOT	C-DOT	M	eye-split:MISC-82
+c2a_L12	30	PCT	PCT	M	cluster-map:57
+c2a_L12	31	BAR-SOLID	BLOB	M	cluster-map:45
+c2a_L12	32	CROSS-T	CROSS-T	M	cluster-map:68
+c2a_L12	33	PHI	PHI	H	eye-resplit:PHI
+c2a_L12	34	X-SLASH	X-SLASH	M	eye-split:MISC-46
+c2a_L12	35	PICT-JUG	PICT-JUG	M	eye-split:MISC-64
+c2a_L12	36	DASH-V	DASH-V	M	cluster-map:15
+c2a_L13	1	BLOB	BLOB	M	eye-split:MISC-55
+c2a_L13	2	ARCH-DASH	ARCH-DASH	M	eye-split:MISC-05
+c2a_L13	3	VENUS	VENUS	H	cluster-map:49
+c2a_L13	4	BAR-SOLID	BLOB	M	cluster-map:10
+c2a_L13	5	BAR-THIN	BAR-THIN	M	cluster-map:12
+c2a_L13	6	BLOB	BLOB	M	eye-split:MISC-55
+c2a_L13	7	ARC-LOOPS	ARC-LOOPS	H	eye-split:MISC-71
+c2a_L13	8	WAVE	WAVE	H	eye-resplit:WAVE
+c2a_L13	9	PCT	PCT	H	cluster-map:66
+c2a_L13	10	DBL-SLASH	DBL-SLASH	M	eye-resplit:HOOK-L
+c2a_L13	11	CIRC-O	CIRC-O	M	eye-resplit:EYE-DOT
+c2a_L13	12	X	X	H	cluster-map:47
+c2a_L13	13	V-DOT	V-DOT	M	cluster-map:85
+c2a_L13	14	X-CURL	X-CURL	M	eye-split:MISC-37
+c2a_L13	15	STAR	STAR	H	eye-split:MISC-67
+c2a_L13	16	PCT	PCT	H	cluster-map:66
+c2a_L13	17	PICT-TREE	PICT-TREE	H	eye-split:MISC-83
+c2a_L13	18	Y-CURL	Y-CURL	H	cluster-map:19
+c2a_L13	19	PHI	PHI	H	eye-resplit:PHI
+c2a_L13	20	LOOP-STEM	LOOP-STEM	L	eye-resplit:RHO
+c2a_L13	21	CIRC-O	CIRC-O	L	eye-resplit:EYE-DOT
+c2a_L13	22	PICT-HOUSE	PICT-HOUSE	H	eye-split:SUN
+c2a_L13	23	DOTS-TILDE	DOTS-TILDE	M	eye-split:MISC-31
+c2a_L13	24	BAR-SOLID	BLOB	M	cluster-map:8
+c2a_L13	25	BAR-SOLID	BLOB	M	cluster-map:8
+c2a_L13	26	X	X	H	cluster-map:84
+c2a_L13	27	_	_	L	eye-split:MISC-82
+c2a_L13	28	BLOB	BLOB	M	eye-resplit:BAR-SERIF
+c2a_L13	29	BAR-THIN	BAR-THIN	M	eye-resplit:BAR-SERIF
+c2a_L13	30	X	X	H	cluster-map:56
+c2a_L13	31	BAR-SOLID	BLOB	M	cluster-map:10
+c2a_L13	32	X	X	M	cluster-map:62
+c2a_L13	33	LOOP-STEM	LOOP-STEM	M	eye-split:MISC-21
+c2a_L13	34	O-BAR-CC	O-BAR-CC	M	eye-split:MISC-36
+c2a_L13	35	X	X	H	cluster-map:84
+c2a_L13	36	CROSS-T	CROSS-T	M	cluster-map:68
+c2a_L13	37	O-TILDE	O-TILDE	M	eye-split:MISC-13
+c2a_L13	38	BUCKET	BUCKET	M	eye-split:MISC-43
+c2a_L13	39	BAR-THIN	BAR-THIN	L	eye-split:MISC-35
+c2a_L14	1	PCT	PCT	H	cluster-map:66
+c2a_L14	2	O-SLASH	O-SLASH	M	eye-resplit:LOOP-TAIL
+c2a_L14	3	LOOP-STEM	LOOP-STEM	H	eye-resplit:RHO
+c2a_L14	4	QQ-O	QQ-O	L	eye-split:MISC-67
+c2a_L14	5	EIGHT	EIGHT	L	eye-split:MISC-11
+c2a_L14	6	VENUS	VENUS	H	cluster-map:49
+c2a_L14	7	X	X	H	cluster-map:25
+c2a_L14	8	X-CURL	X-CURL	M	eye-split:MISC-36
+c2a_L14	9	X	X	H	cluster-map:25
+c2a_L14	10	MULTI	MULTI	L	eye-split:MISC-30
+c2a_L14	11	A-LOOP	A-LOOP	H	eye-resplit:TRIPOD
+c2a_L14	12	X-CURL	X-CURL	M	eye-split:MISC-76
+c2a_L14	13	PHI	PHI	H	eye-resplit:PHI
+c2a_L14	14	WAVE	WAVE	H	eye-resplit:WAVE
+c2a_L14	15	X	X	M	cluster-map:14
+c2a_L14	16	X	X	M	cluster-map:52
+c2a_L14	17	SLASH	SLASH	M	eye-split:MISC-87
+c2a_L14	18	CIRC-O	CIRC-O	M	eye-resplit:EYE-DOT
+c2a_L14	19	CC-DASH	CC-DASH	H	eye-split:MISC-06
+c2a_L14	20	PCT	PCT	H	cluster-map:66
+c2a_L14	21	X	X	M	eye-split:MISC-80
+c2a_L14	22	X	X	M	cluster-map:62
+c2a_L14	23	O-BAR-CC	O-BAR-CC	M	eye-split:MISC-67
+c2a_L14	24	Y-CURL	Y-CURL	M	cluster-map:88
+c2a_L14	25	X	X	M	cluster-map:53
+c2a_L14	26	X	X	H	cluster-map:4
+c2a_L14	27	CIRC-O	CIRC-O	M	eye-resplit:EYE-DOT
+c2a_L14	28	PCT-SLASH	PCT	H	eye-split:MISC-13
+c2a_L14	29	PHI	PHI	H	eye-resplit:PHI
+c2a_L14	30	_	_	L	eye-split:MISC-43
+c2a_L14	31	BAR-THIN	BAR-THIN	L	eye-resplit:BAR-SERIF
+c2a_L15	1	PICT-ANCHOR	PICT-ANCHOR	H	eye-split:SUN
+c2a_L15	2	THREE	THREE	L	eye-split:MISC-43
+c2a_L15	3	NOTE	NOTE	H	cluster-map:63
+c2a_L15	4	BLOB	BLOB	M	eye-split:MISC-55
+c2a_L15	5	BAR-SOLID	BLOB	M	cluster-map:10
+c2a_L15	6	BAR-SOLID	BLOB	M	cluster-map:10
+c2a_L15	7	BAR-SOLID	BLOB	M	cluster-map:10
+c2a_L15	8	BAR-THIN	BAR-THIN	M	eye-resplit:BAR-SERIF
+c2a_L15	9	BAR-SOLID	BLOB	M	cluster-map:45
+c2a_L15	10	BAR-SOLID	BLOB	M	cluster-map:45
+c2a_L15	11	MULTI	MULTI	L	eye-split:MISC-43
+c2a_L15	12	II-DASH	II-DASH	H	eye-split:MISC-30
+c2a_L15	13	C-DOT	C-DOT	M	eye-split:MISC-54
+c2a_L15	14	X	X	H	cluster-map:84
+c2a_L15	15	O-DASH2	O-DASH2	H	eye-split:MISC-33
+c2a_L15	16	PCT	PCT	H	eye-split:MISC-05
+c2a_L15	17	C-DOT	C-DOT	M	eye-split:MISC-64
+c2a_L15	18	PCT	PCT	H	cluster-map:66
+c2a_L15	19	X	X	M	eye-split:MISC-17
+c2a_L15	20	CIRC-O	CIRC-O	M	eye-resplit:EYE-DOT
+c2a_L15	21	X	X	M	cluster-map:53
+c2a_L15	22	BLOB	BLOB	M	eye-split:MISC-55
+c2a_L15	23	X	X	H	cluster-map:84
+c2a_L15	24	X-SLASH	X-SLASH	L	eye-split:MISC-41
+c2a_L15	25	Y-CURL	Y-CURL	H	cluster-map:19
+c2a_L15	26	X	X	M	cluster-map:53
+c2a_L15	27	CHEVRON2	CHEVRON2	L	eye-resplit:WAVE
+c2a_L15	28	NOTE	NOTE	H	cluster-map:63
+c2a_L15	29	O-BRACKET	O-BRACKET	M	eye-split:MISC-11
+c2a_L15	30	AMP	AMP	L	eye-split:MISC-41
+c2a_L15	31	X	X	H	cluster-map:84
+c2a_L15	32	DOUBLE-LOOP	DOUBLE-LOOP	H	eye-split:MISC-82
+c2a_L15	33	PCT	PCT	H	cluster-map:9
+c2a_L15	34	DAGGER-O	DAGGER-O	H	eye-resplit:DELTA-TAIL
+c2a_L15	35	X-SLASH	X-SLASH	M	eye-split:MISC-46
+c2a_L15	36	_	_	L	eye-resplit:BAR-SERIF
+c2a_L16	1	O-TILDE	O-TILDE	H	eye-split:MISC-33
+c2a_L16	2	X	X	H	cluster-map:25
+c2a_L16	3	BAR-SOLID	BLOB	M	cluster-map:8
+c2a_L16	4	PICT-CROWN	PICT-CROWN	M	eye-split:SUN
+c2a_L16	5	MULTI	MULTI	L	eye-split:MISC-29
+c2a_L16	6	CC-DASH	CC-DASH	L	eye-split:MISC-24
+c2a_L16	7	X	X	M	cluster-map:26
+c2a_L16	8	OX-TILDE	OX-TILDE	H	eye-split:MISC-31
+c2a_L16	9	PCT	PCT	H	cluster-map:9
+c2a_L16	10	WAVE	WAVE	H	eye-resplit:WAVE
+c2a_L16	11	PCT	PCT	H	eye-split:MISC-05
+c2a_L16	12	C-DOT	C-DOT	L	eye-resplit:CIRC-TAIL
+c2a_L16	13	HOOK-P	HOOK-P	L	eye-split:MISC-20
+c2a_L16	14	A-LOOP	A-LOOP	M	eye-split:MISC-54
+c2a_L16	15	BLOB-LOOP	BLOB-LOOP	L	eye-split:MISC-82
+c2a_L16	16	QQ-O	QQ-O	M	eye-split:MISC-07
+c2a_L16	17	X	X	H	cluster-map:84
+c2a_L16	18	X	X	H	cluster-map:84
+c2a_L16	19	BLOB	BLOB	M	eye-split:MISC-55
+c2a_L16	20	PCT	PCT	H	cluster-map:9
+c2a_L16	21	X-CURL	X-CURL	M	eye-split:MISC-37
+c2a_L16	22	X-DASH	X-DASH	L	eye-split:MISC-24
+c2a_L16	23	X	X	M	cluster-map:53
+c2a_L16	24	Y-CURL	Y-CURL	H	cluster-map:19
+c2a_L16	25	BAR-SOLID	BLOB	M	cluster-map:8
+c2a_L16	26	X	X	M	cluster-map:22
+c2a_L16	27	BAR-SOLID	BLOB	M	cluster-map:8
+c2a_L16	28	BLOB	BLOB	M	eye-split:MISC-55
+c2a_L16	29	Y-CURL	Y-CURL	M	cluster-map:88
+c2a_L16	30	X	X	H	cluster-map:84
+c2a_L16	31	WAVE	WAVE	H	eye-resplit:WAVE
+c2a_L16	32	PCT	PCT	H	eye-split:MISC-05
+c2a_L17	1	BAR-THIN	BAR-THIN	M	cluster-map:12
+c2a_L17	2	Y-CURL	Y-CURL	M	cluster-map:88
+c2a_L17	3	CROSS-T	CROSS-T	H	cluster-map:48
+c2a_L17	4	NOTE	NOTE	H	cluster-map:63
+c2a_L17	5	PCT	PCT	H	cluster-map:66
+c2a_L17	6	PICT-ANCHOR	PICT-ANCHOR	M	eye-split:MISC-29
+c2a_L17	7	VEE	VEE	H	cluster-map:59
+c2a_L17	8	X	X	H	eye-split:MISC-80
+c2a_L17	9	II-DASH	II-DASH	M	eye-split:MISC-33
+c2a_L17	10	O-SLASH	O-SLASH	M	eye-resplit:LOOP-TAIL
+c2a_L17	11	C-BAR-X	C-BAR-X	M	eye-split:MISC-36
+c2a_L17	12	MULTI	MULTI	L	eye-split:MISC-43
+c2a_L17	13	BOX-X	BOX-X	H	eye-split:MISC-13
+c2a_L17	14	DBL-SLASH	DBL-SLASH	M	eye-resplit:HOOK-L
+c2a_L17	15	LOOP-TAIL	LOOP-TAIL	L	eye-split:MISC-40
+c2a_L17	16	TILDE-DASH	TILDE-DASH	L	eye-split:MISC-24
+c2a_L17	17	C-DOT	C-DOT	L	eye-split:MISC-06
+c2a_L17	18	VENUS	VENUS	L	eye-split:MISC-11
+c2a_L17	19	AMP	AMP	M	eye-split:MISC-06
+c2a_L17	20	OX	OX	H	eye-split:MISC-20
+c2a_L17	21	BAR-SOLID	BLOB	M	cluster-map:45
+c2a_L17	22	BAR-SOLID	BLOB	M	cluster-map:45
+c2a_L17	23	M-LETTER	M-LETTER	L	eye-resplit:LOOP-TAIL
+c2a_L17	24	NOTE	NOTE	H	cluster-map:63
+c2a_L17	25	OX-TILDE	OX-TILDE	M	eye-split:MISC-36
+c2a_L17	26	X	X	H	cluster-map:4
+c2a_L17	27	NINE	NINE	L	eye-split:MISC-00
+c2a_L17	28	BLOB	BLOB	M	eye-split:MISC-32
+c2a_L17	29	PICT-BIRD	PICT-BIRD	H	eye-split:MISC-60
+c2a_L17	30	_	_	L	eye-split:MISC-32
+c2a_L17	31	DASH-V	DASH-V	M	cluster-map:15
+c2b_L01	1	X	X	M	cluster-map:22
+c2b_L01	2	_	_	L	eye-resplit:CIRC-TAIL
+c2b_L01	3	PCT-SLASH	PCT	M	eye-resplit:TRIPOD
+c2b_L01	4	X	X	M	cluster-map:26
+c2b_L01	5	X	X	M	cluster-map:22
+c2b_L01	6	PHI	PHI	H	eye-resplit:PHI
+c2b_L01	7	PICT-LEAF	PICT-LEAF	M	eye-split:MISC-29
+c2b_L01	8	BAR-THIN	BAR-THIN	M	cluster-map:12
+c2b_L01	9	BAR-THIN	BAR-THIN	M	cluster-map:12
+c2b_L01	10	CROSS-T	CROSS-T	M	cluster-map:68
+c2b_L01	11	DASH-H	DASH-H	H	cluster-map:61
+c2b_L01	12	BAR-THIN	BAR-THIN	M	cluster-map:51
+c2b_L01	13	X	X	H	cluster-map:25
+c2b_L01	14	A-LOOP	A-LOOP	M	eye-resplit:TRIPOD
+c2b_L01	15	X-DASH	X-DASH	M	eye-split:MISC-87
+c2b_L01	16	_	_	L	eye-resplit:CIRC-TAIL
+c2b_L01	17	X	X	M	cluster-map:26
+c2b_L01	18	CIRC-O	CIRC-O	M	eye-resplit:EYE-DOT
+c2b_L01	19	OX-TILDE	OX-TILDE	L	eye-split:MISC-29
+c2b_L01	20	X	X	H	cluster-map:25
+c2b_L01	21	PHI	PHI	H	eye-resplit:PHI
+c2b_L01	22	VEE	VEE	H	cluster-map:59
+c2b_L01	23	CROSS-T	CROSS-T	H	cluster-map:48
+c2b_L01	24	X	X	M	cluster-map:53
+c2b_L01	25	BAR-SOLID	BLOB	M	cluster-map:45
+c2b_L01	26	DAGGER-O	DAGGER-O	H	eye-resplit:DELTA-TAIL
+c2b_L01	27	X	X	H	cluster-map:47
+c2b_L01	28	CC-DASH	CC-DASH	M	eye-split:MISC-07
+c2b_L01	29	TRIDENT	TRIDENT	H	cluster-map:39
+c2b_L01	30	PCT-SLASH	PCT	M	eye-resplit:TRIPOD
+c2b_L01	31	Z-CURL	Z-CURL	H	eye-split:MISC-03
+c2b_L01	32	BAR-THIN	BAR-THIN	M	cluster-map:12
+c2b_L01	33	BOX-8	BOX-8	H	eye-split:MISC-13
+c2b_L01	34	O-DASH2	O-DASH2	M	eye-resplit:CRESCENT
+c2b_L01	35	DOUBLE-LOOP	DOUBLE-LOOP	H	eye-split:MISC-82
+c2b_L01	36	OO-DASH	OO-DASH	M	eye-split:MISC-24
+c2b_L01	37	BAR-THIN	BAR-THIN	M	cluster-map:51
+c2b_L02	1	VEE	VEE	M	eye-split:MISC-75
+c2b_L02	2	PCT	PCT	M	cluster-map:57
+c2b_L02	3	MULTI	MULTI	L	eye-split:MISC-43
+c2b_L02	4	CC-DASH	CC-DASH	H	eye-split:MISC-41
+c2b_L02	5	CHAIN	CHAIN	M	eye-split:MISC-29
+c2b_L02	6	Y-CURL	Y-CURL	L	eye-split:MISC-40
+c2b_L02	7	X	X	H	cluster-map:4
+c2b_L02	8	O-SLASH	O-SLASH	M	eye-resplit:LOOP-TAIL
+c2b_L02	9	BAR-SOLID	BLOB	M	cluster-map:45
+c2b_L02	10	Y-CURL	Y-CURL	M	cluster-map:88
+c2b_L02	11	X-BAR-CC	X-BAR-CC	M	eye-split:MISC-07
+c2b_L02	12	MULTI	MULTI	L	eye-split:MISC-29
+c2b_L02	13	BLOB	BLOB	L	eye-resplit:CIRC-TAIL
+c2b_L02	14	X	X	M	cluster-map:26
+c2b_L02	15	CC-DASH	CC-DASH	H	eye-split:MISC-05
+c2b_L02	16	X-BAR-CC	X-BAR-CC	M	eye-split:MISC-07
+c2b_L02	17	EIGHT	EIGHT	M	eye-split:MISC-13
+c2b_L02	18	X	X	M	cluster-map:53
+c2b_L02	19	OX-TILDE	OX-TILDE	H	eye-split:MISC-31
+c2b_L02	20	X	X	H	cluster-map:4
+c2b_L02	21	BLOB	BLOB	M	eye-split:MISC-55
+c2b_L02	22	BAR-SOLID	BLOB	M	cluster-map:10
+c2b_L02	23	BLOB	BLOB	M	eye-split:MISC-55
+c2b_L02	24	Y-CURL	Y-CURL	M	cluster-map:88
+c2b_L02	25	BLOB	BLOB	M	eye-split:MISC-32
+c2b_L02	26	BAR-THIN	BAR-THIN	L	eye-split:MISC-50
+c2b_L03	1	II-DASH	II-DASH	H	eye-split:MISC-30
+c2b_L03	2	X	X	M	cluster-map:14
+c2b_L03	3	X-LOOP	X-LOOP	M	eye-split:MISC-13
+c2b_L03	4	QQ-DASH	QQ-DASH	L	eye-split:MISC-40
+c2b_L03	5	X	X	M	cluster-map:14
+c2b_L03	6	BAR-THIN	BAR-THIN	M	cluster-map:51
+c2b_L03	7	SLASH3	SLASH3	H	eye-split:MISC-13
+c2b_L03	8	CIRC-O	CIRC-O	H	cluster-map:42
+c2b_L03	9	X	X	H	cluster-map:25
+c2b_L03	10	X	X	M	cluster-map:22
+c2b_L03	11	O-SLASH	O-SLASH	H	eye-split:MISC-78
+c2b_L03	12	SUN	SUN	M	eye-split:SUN
+c2b_L03	13	X	X	M	cluster-map:22
+c2b_L03	14	O-SLASH	O-SLASH	M	eye-resplit:LOOP-TAIL
+c2b_L03	15	X-CURL	X-CURL	M	eye-split:MISC-37
+c2b_L03	16	II-O	II-O	H	eye-split:MISC-07
+c2b_L03	17	ARCH-DASH	ARCH-DASH	H	eye-split:MISC-21
+c2b_L03	18	X	X	M	cluster-map:26
+c2b_L03	19	TRIDENT	TRIDENT	H	cluster-map:39
+c2b_L03	20	VEE	VEE	H	cluster-map:59
+c2b_L03	21	E-BAR	E-BAR	M	eye-resplit:CRESCENT
+c2b_L03	22	II-O	II-O	H	eye-split:MISC-07
+c2b_L03	23	AMP	AMP	H	cluster-map:69
+c2b_L03	24	WAVE	WAVE	H	eye-resplit:WAVE
+c2b_L03	25	PCT	PCT	H	cluster-map:66
+c2b_L03	26	Y-CURL	Y-CURL	H	cluster-map:19
+c2b_L03	27	BLOB	BLOB	M	eye-split:MISC-55
+c2b_L03	28	CIRC-O	CIRC-O	M	eye-resplit:GEAR-DOT
+c2b_L03	29	X	X	H	eye-split:MISC-80
+c2b_L03	30	DBL-SLASH	DBL-SLASH	M	eye-resplit:HOOK-L
+c2b_L03	31	O-SLASH	O-SLASH	M	eye-resplit:LOOP-TAIL
+c2b_L04	1	Y-CURL	Y-CURL	H	cluster-map:19
+c2b_L04	2	BLOB	BLOB	M	eye-split:MISC-32
+c2b_L04	3	O-DASHBELOW	O-DASHBELOW	M	eye-resplit:LOOP-TAIL
+c2b_L04	4	X	X	H	cluster-map:25
+c2b_L04	5	II-DASH	II-DASH	H	eye-split:MISC-40
+c2b_L04	6	OX-TILDE	OX-TILDE	H	eye-split:MISC-31
+c2b_L04	7	ARCH	ARCH	H	eye-split:MISC-46
+c2b_L04	8	DAGGER-O	DAGGER-O	H	eye-resplit:DELTA-TAIL
+c2b_L04	9	MULTI	MULTI	L	eye-split:MISC-30
+c2b_L04	10	VEE	VEE	H	cluster-map:59
+c2b_L04	11	Y-CURL	Y-CURL	M	cluster-map:88
+c2b_L04	12	X	X	H	cluster-map:47
+c2b_L04	13	O-TILDE	O-TILDE	M	eye-split:MISC-31
+c2b_L04	14	CRESCENT	CRESCENT	M	eye-split:MISC-75
+c2b_L04	15	X	X	H	cluster-map:47
+c2b_L04	16	PCT	PCT	H	cluster-map:66
+c2b_L04	17	WAVE	WAVE	H	eye-resplit:WAVE
+c2b_L04	18	DAGGER-O	DAGGER-O	H	eye-resplit:DELTA-TAIL
+c2b_L04	19	X-SLASH	X-SLASH	M	eye-split:MISC-41
+c2b_L04	20	CIRC-O	CIRC-O	H	cluster-map:42
+c2b_L04	21	X	X	M	cluster-map:52
+c2b_L04	22	VEE	VEE	H	cluster-map:59
+c2b_L04	23	Y-CURL	Y-CURL	H	cluster-map:19
+c2b_L04	24	OX-TILDE	OX-TILDE	H	eye-split:MISC-31
+c2b_L04	25	X	X	M	cluster-map:28
+c2b_L04	26	SEVEN	SEVEN	M	eye-split:MISC-00
+c2b_L04	27	EIGHT	EIGHT	L	eye-split:MISC-30
+c2b_L04	28	BUCKET	BUCKET	M	eye-split:MISC-33
+c2b_L05	1	O-SLASH	O-SLASH	M	eye-split:MISC-76
+c2b_L05	2	S-CURL	S-CURL	L	eye-split:MISC-76
+c2b_L05	3	DAGGER-O	DAGGER-O	H	eye-resplit:DELTA-TAIL
+c2b_L05	4	PCT	PCT	H	cluster-map:9
+c2b_L05	5	WAVE	WAVE	H	eye-resplit:WAVE
+c2b_L05	6	VEE	VEE	M	eye-resplit:PHI
+c2b_L05	7	VENUS	VENUS	H	cluster-map:49
+c2b_L05	8	OX	OX	M	eye-split:MISC-24
+c2b_L05	9	MULTI	MULTI	L	eye-split:MISC-24
+c2b_L05	10	AMP	AMP	H	cluster-map:69
+c2b_L05	11	WAVE	WAVE	H	eye-resplit:WAVE
+c2b_L05	12	PCT	PCT	H	cluster-map:66
+c2b_L05	13	PICT-D	PICT-D	L	eye-split:MISC-29
+c2b_L05	14	NINE	NINE	M	eye-resplit:LOOP-TAIL
+c2b_L05	15	X-BAR-CC	X-BAR-CC	M	eye-split:MISC-36
+c2b_L05	16	DBL-SLASH	DBL-SLASH	L	eye-resplit:HOOK-L
+c2b_L05	17	CHEVRON	CHEVRON	M	eye-resplit:HOOK-L
+c2b_L05	18	CIRC-O	CIRC-O	H	cluster-map:42
+c2b_L05	19	X	X	H	cluster-map:84
+c2b_L05	20	PCT	PCT	H	eye-split:MISC-05
+c2b_L05	21	CIRC-O	CIRC-O	L	eye-resplit:CIRC-TAIL
+c2b_L05	22	O-SLASH	O-SLASH	M	eye-split:MISC-37
+c2b_L05	23	BAR-THIN	BAR-THIN	M	cluster-map:51
+c2b_L06	1	WAVE	WAVE	M	eye-resplit:WAVE
+c2b_L06	2	GEAR-DOT	GEAR-DOT	M	eye-resplit:GEAR-DOT
+c2b_L06	3	X	X	M	eye-split:MISC-87
+c2b_L06	4	ARCH-O	ARCH-O	H	eye-split:MISC-21
+c2b_L06	5	X	X	M	cluster-map:26
+c2b_L06	6	X	X	H	cluster-map:84
+c2b_L06	7	PHI	PHI	H	eye-resplit:PHI
+c2b_L06	8	X-SLASH	X-SLASH	M	eye-split:MISC-81
+c2b_L06	9	O-DASH2	O-DASH2	H	eye-split:MISC-33
+c2b_L06	10	CROSS-T	CROSS-T	H	cluster-map:48
+c2b_L06	11	VENUS	VENUS	H	eye-split:MISC-06
+c2b_L06	12	OX-TILDE	OX-TILDE	M	eye-resplit:WAVE
+c2b_L06	13	X	X	H	cluster-map:4
+c2b_L06	14	QQ-O	QQ-O	M	eye-split:MISC-50
+c2b_L06	15	CROSS-T	CROSS-T	M	cluster-map:68
+c2b_L06	16	PICT-FACE	PICT-FACE	H	eye-split:MISC-71
+c2b_L06	17	X	X	M	cluster-map:52
+c2b_L06	18	NINE	NINE	M	eye-resplit:LOOP-TAIL
+c2b_L06	19	WAVE	WAVE	H	eye-resplit:WAVE
+c2b_L06	20	PCT	PCT	M	cluster-map:57
+c2b_L06	21	CROSS-T	CROSS-T	L	eye-split:MISC-32
+c2b_L06	22	PHI	PHI	H	eye-resplit:PHI
+c2b_L06	23	ARROW-O	ARROW-O	L	eye-split:MISC-11
+c2b_L06	24	X	X	H	cluster-map:25
+c2b_L06	25	X	X	M	cluster-map:62
+c2b_L06	26	O-SLASH	O-SLASH	M	eye-split:MISC-37
+c2b_L06	27	_	_	L	eye-resplit:BAR-SERIF
+c2b_L06	28	_	_	L	eye-split:MISC-32
+c2b_L06	29	J-DOTS	J-DOTS	L	eye-split:MISC-37
+c2b_L06	30	A-LOOP	A-LOOP	M	eye-split:MISC-30
+c2b_L06	31	BAR-THIN	BAR-THIN	M	cluster-map:51
+c2b_L07	1	SUN	SUN	H	eye-split:SUN
+c2b_L07	2	VENUS	VENUS	H	cluster-map:49
+c2b_L07	3	CROSS-T	CROSS-T	H	cluster-map:48
+c2b_L07	4	CC-DASH	CC-DASH	H	eye-split:MISC-05
+c2b_L07	5	CHEVRON2	CHEVRON2	M	eye-resplit:HOOK-L
+c2b_L07	6	CHEVRON2	CHEVRON2	M	eye-resplit:HOOK-L
+c2b_L07	7	DASH-H	DASH-H	H	cluster-map:61
+c2b_L07	8	MULTI	MULTI	L	eye-split:MISC-29
+c2b_L07	9	X	X	M	cluster-map:22
+c2b_L07	10	O-TILDE	O-TILDE	H	eye-split:MISC-33
+c2b_L07	11	Y-CURL	Y-CURL	H	cluster-map:19
+c2b_L07	12	X	X	H	cluster-map:56
+c2b_L07	13	E-BAR	E-BAR	H	eye-split:MISC-33
+c2b_L07	14	S-CURL	S-CURL	L	eye-split:MISC-83
+c2b_L07	15	V-PCT-BLOB	V-PCT-BLOB	L	eye-split:MISC-60
+c2b_L07	16	CC-DASH	CC-DASH	M	eye-split:MISC-21
+c2b_L07	17	X	X	M	cluster-map:28
+c2b_L07	18	DASH-H	DASH-H	M	eye-resplit:CIRC-TAIL
+c2b_L07	19	DASH-H	DASH-H	M	eye-resplit:CIRC-TAIL
+c2b_L07	20	QUESTION	QUESTION	L	eye-split:MISC-41
+c2b_L07	21	O-SLASH	O-SLASH	M	eye-resplit:LOOP-TAIL
+c2b_L07	22	C-DOT	C-DOT	H	eye-resplit:CRESCENT
+c2b_L07	23	X	X	M	cluster-map:53
+c2b_L07	24	MULTI	MULTI	L	eye-split:MISC-30
+c2b_L07	25	Z-CURL	Z-CURL	L	eye-split:MISC-24
+c2b_L07	26	WAVE-V	WAVE-V	M	eye-split:MISC-79
+c2b_L08	1	DOTS-TILDE	DOTS-TILDE	M	eye-split:MISC-07
+c2b_L08	2	DAGGER-O	DAGGER-O	H	eye-resplit:DELTA-TAIL
+c2b_L08	3	X	X	H	eye-split:MISC-46
+c2b_L08	4	TRIDENT	TRIDENT	H	cluster-map:39
+c2b_L08	5	PCT	PCT	H	cluster-map:9
+c2b_L08	6	O-SLASH	O-SLASH	H	eye-split:MISC-78
+c2b_L08	7	VEE	VEE	H	cluster-map:59
+c2b_L08	8	X	X	M	cluster-map:14
+c2b_L08	9	PCT	PCT	H	cluster-map:9
+c2b_L08	10	S-CURL	S-CURL	M	eye-split:MISC-17
+c2b_L08	11	CIRC-O	CIRC-O	M	eye-resplit:EYE-DOT
+c2b_L08	12	PICT-FACE	PICT-FACE	H	eye-split:MISC-60
+c2b_L08	13	STAR	STAR	H	eye-split:MISC-11
+c2b_L09	1	_	_	L	eye-resplit:BAR-SERIF
+c2b_L09	2	_	_	M	eye-split:MISC-17
+c2b_L09	3	_	_	L	eye-resplit:BAR-SERIF
+c2b_L09	4	_	_	L	eye-split:MISC-32
+c2b_L09	5	DBL-SLASH	DBL-SLASH	M	eye-resplit:CIRC-TAIL
+c2b_L09	6	X	X	M	cluster-map:26
+c2b_L09	7	_	_	M	eye-split:MISC-71
+c2b_L09	8	CC-DASH	CC-DASH	H	eye-split:MISC-82
+c2b_L09	9	X	X	M	cluster-map:28
+c2b_L09	10	WAVE	WAVE	H	eye-resplit:WAVE
+c2b_L09	11	PCT	PCT	H	cluster-map:66
+c2b_L09	12	DOUBLE-LOOP	DOUBLE-LOOP	M	eye-split:MISC-64
+c2b_L09	13	CROSS-T	CROSS-T	H	cluster-map:48
+c2b_L09	14	PICT-ARROW	PICT-ARROW	M	eye-split:MISC-83
+c3_L01	1	PICT-RUNNER	PICT-RUNNER	H	eye-split:SUN
+c3_L01	2	OX-TILDE	OX-TILDE	M	eye-split:MISC-37
+c3_L01	3	PCT	PCT	H	cluster-map:9
+c3_L01	4	CC-DASH	CC-DASH	L	eye-resplit:CIRC-TAIL
+c3_L01	5	NINE-DASH	NINE-DASH	L	eye-split:MISC-40
+c3_L01	6	PHI	PHI	H	eye-split:MISC-54
+c3_L01	7	O-DASH2	O-DASH2	M	eye-split:MISC-33
+c3_L01	8	PCT-SLASH	PCT	H	eye-split:MISC-46
+c3_L01	9	HOOK-P	HOOK-P	L	eye-split:MISC-20
+c3_L01	10	X	X	H	cluster-map:47
+c3_L01	11	II-DASH	II-DASH	M	eye-split:MISC-13
+c3_L01	12	X	X	M	cluster-map:53
+c3_L01	13	LAMBDA	LAMBDA	M	eye-split:MISC-05
+c3_L01	14	X-CURL	X-CURL	M	eye-resplit:WAVE
+c3_L01	15	PCT	PCT	M	cluster-map:57
+c3_L01	16	X	X	M	cluster-map:22
+c3_L01	17	CROSS-T	CROSS-T	M	cluster-map:68
+c3_L01	18	PICT-TREE	PICT-TREE	M	eye-split:MISC-35
+c3_L01	19	CHEVRON2	CHEVRON2	M	eye-resplit:HOOK-L
+c3_L01	20	O-BAR-O	O-BAR-O	M	eye-split:MISC-79
+c3_L01	21	Y-CURL	Y-CURL	M	eye-split:MISC-06
+c3_L01	22	WAVE	WAVE	H	eye-resplit:WAVE
+c3_L01	23	CIRC-O	CIRC-O	M	eye-resplit:EYE-DOT
+c3_L01	24	X-DOT	X-DOT	L	eye-resplit:TRIPOD
+c3_L01	25	ARCH-O	ARCH-O	M	eye-split:MISC-05
+c3_L01	26	PICT-HORSE	PICT-HORSE	H	eye-split:MISC-29
+c3_L01	27	X	X	H	cluster-map:47
+c3_L01	28	CIRC-O	CIRC-O	L	eye-split:MISC-46
+c3_L01	29	X	X	M	cluster-map:28
+c3_L01	30	O-II	O-II	L	eye-split:MISC-20
+c3_L01	31	_	_	L	eye-resplit:BAR-SERIF
+c3_L01	32	HOOK-O	HOOK-O	L	eye-split:MISC-76
+c3_L01	33	PCT-SLASH	PCT	L	eye-split:MISC-17
+c3_L01	34	BLOB	BLOB	L	eye-split:MISC-32
+c3_L01	35	BAR-THIN	BAR-THIN	M	cluster-map:51
+c3_L02	1	PCT	PCT	M	cluster-map:57
+c3_L02	2	SUN	SUN	H	eye-split:SUN
+c3_L02	3	A-LOOP	A-LOOP	M	eye-split:MISC-54
+c3_L02	4	BAR-SOLID	BLOB	M	cluster-map:8
+c3_L02	5	PCT	PCT	M	cluster-map:57
+c3_L02	6	X	X	M	eye-split:MISC-80
+c3_L02	7	U-CROSS	U-CROSS	M	eye-split:MISC-46
+c3_L02	8	Y-CURL	Y-CURL	M	cluster-map:88
+c3_L02	9	PHI	PHI	H	eye-resplit:PHI
+c3_L02	10	II-DASH	II-DASH	H	eye-split:MISC-75
+c3_L02	11	ARCH-DASH	ARCH-DASH	H	eye-split:MISC-21
+c3_L02	12	NOTE	NOTE	H	cluster-map:63
+c3_L02	13	O-DASH-DOTS	O-DASH-DOTS	L	eye-split:MISC-67
+c3_L02	14	II-SLASH	II-SLASH	M	eye-split:MISC-36
+c3_L02	15	O-DASHBELOW	O-DASHBELOW	M	eye-split:MISC-40
+c3_L02	16	X	X	H	cluster-map:84
+c3_L02	17	Y-CURL	Y-CURL	M	eye-split:MISC-17
+c3_L02	18	CIRC-O	CIRC-O	L	eye-resplit:CIRC-TAIL
+c3_L02	19	A-DASH	A-DASH	M	eye-split:MISC-21
+c3_L02	20	PHI	PHI	H	eye-resplit:PHI
+c3_L02	21	II-SLASH	II-SLASH	M	eye-split:MISC-13
+c3_L02	22	VEE	VEE	H	eye-split:MISC-74
+c3_L02	23	X	X	M	cluster-map:26
+c3_L02	24	Y-CURL	Y-CURL	H	cluster-map:19
+c3_L02	25	Z-CURL	Z-CURL	L	eye-split:MISC-05
+c3_L02	26	X	X	H	cluster-map:47
+c3_L02	27	OX-TILDE	OX-TILDE	M	eye-resplit:WAVE
+c3_L02	28	PCT	PCT	H	cluster-map:9
+c3_L02	29	II-O	II-O	M	eye-split:MISC-05
+c3_L02	30	X-O	X-O	L	eye-split:MISC-81
+c3_L02	31	WAVE	WAVE	H	eye-resplit:WAVE
+c3_L02	32	X	X	M	cluster-map:14
+c3_L02	33	BOX-M	BOX-M	M	eye-split:MISC-64
+c3_L03	1	X-O	X-O	M	eye-split:MISC-13
+c3_L03	2	X-CURL	X-CURL	M	eye-split:MISC-40
+c3_L03	3	X	X	H	cluster-map:25
+c3_L03	4	TRIDENT	TRIDENT	H	cluster-map:39
+c3_L03	5	Y-CURL	Y-CURL	H	cluster-map:19
+c3_L03	6	U-DASH	U-DASH	M	eye-resplit:DELTA-TAIL
+c3_L03	7	X	X	H	cluster-map:47
+c3_L03	8	PCT	PCT	H	cluster-map:9
+c3_L03	9	II-O	II-O	M	eye-split:MISC-05
+c3_L03	10	X-SLASH	X-SLASH	M	eye-split:MISC-46
+c3_L03	11	O-TILDE	O-TILDE	M	eye-split:MISC-13
+c3_L03	12	DIAMOND	DIAMOND	H	eye-split:MISC-71
+c3_L03	13	II-TILDE	II-TILDE	M	eye-split:MISC-31
+c3_L03	14	Y-CURL	Y-CURL	M	cluster-map:88
+c3_L03	15	X	X	M	cluster-map:53
+c3_L03	16	EIGHT	EIGHT	L	eye-split:MISC-54
+c3_L03	17	BLOB	BLOB	M	eye-split:MISC-55
+c3_L03	18	O-SLASH	O-SLASH	H	eye-split:MISC-46
+c3_L03	19	X	X	M	cluster-map:26
+c3_L03	20	C-DOT	C-DOT	M	eye-split:MISC-17
+c3_L03	21	BLOB	BLOB	M	eye-split:MISC-55
+c3_L03	22	SUN	SUN	H	eye-split:SUN
+c3_L03	23	MULTI	MULTI	L	eye-split:MISC-43
+c3_L03	24	X-CURL	X-CURL	M	eye-split:MISC-36
+c3_L03	25	PCT	PCT	H	eye-split:MISC-05
+c3_L03	26	TRIDENT	TRIDENT	H	cluster-map:39
+c3_L03	27	X	X	H	cluster-map:4
+c3_L03	28	Y-CURL	Y-CURL	H	cluster-map:19
+c3_L03	29	X	X	M	cluster-map:53
+c3_L03	30	SCROLL-X	SCROLL-X	M	eye-split:MISC-41
+c3_L03	31	X-DOT	X-DOT	M	eye-split:MISC-35
+c3_L03	32	DAGGER-O	DAGGER-O	M	eye-split:MISC-54
+c3_L04	1	LOOP-STEM	LOOP-STEM	L	eye-split:MISC-41
+c3_L04	2	CIRC-O	CIRC-O	M	eye-resplit:GEAR-DOT
+c3_L04	3	PCT	PCT	H	cluster-map:66
+c3_L04	4	II-O	II-O	M	eye-split:MISC-21
+c3_L04	5	A-LOOP	A-LOOP	H	eye-resplit:TRIPOD
+c3_L04	6	WAVE	WAVE	M	eye-split:MISC-20
+c3_L04	7	Y-CURL	Y-CURL	M	cluster-map:88
+c3_L04	8	CHEVRON2	CHEVRON2	M	eye-resplit:HOOK-L
+c3_L04	9	DASH-H	DASH-H	H	cluster-map:61
+c3_L04	10	NINE-BAR	NINE-BAR	M	eye-resplit:LOOP-TAIL
+c3_L04	11	X	X	M	cluster-map:26
+c3_L04	12	S-CURL	S-CURL	L	eye-split:MISC-07
+c3_L04	13	Y-CURL	Y-CURL	M	cluster-map:88
+c3_L04	14	C-BAR-X	C-BAR-X	M	eye-split:MISC-36
+c3_L04	15	QUESTION	QUESTION	M	eye-resplit:PHI
+c3_L04	16	BAR-SOLID	BLOB	M	cluster-map:10
+c3_L04	17	BAR-SOLID	BLOB	M	cluster-map:10
+c3_L04	18	BAR-THIN	BAR-THIN	M	eye-resplit:BAR-SERIF
+c4a_L01	1	PICT-HEART	PICT-HEART	M	eye-split:c4-knn-MISC-05
+c4a_L01	2	Y-CURL	Y-CURL	M	eye-split:c4-knn-_
+c4a_L01	3	II-DASH	II-DASH	H	eye-check:X
+c4a_L01	4	O-SLASH	O-SLASH	M	eye-check:PHI
+c4a_L01	5	S-CURL	S-CURL	L	eye-check:X
+c4a_L01	6	NOTE	NOTE	H	eye-split:c4-knn-MISC-05
+c4a_L01	7	EIGHT	EIGHT	L	eye-split:c4-knn-MISC-17
+c4a_L01	8	QUESTION	QUESTION	M	eye-check:BAR-SERIF
+c4a_L01	9	VENUS	VENUS	H	eye-check:LOOP-TAIL
+c4a_L01	10	X	X	H	eye-check:X
+c4a_L01	11	TAURUS	TAURUS	M	eye-check:X
+c4a_L01	12	PCT-SLASH	PCT	H	eye-check:X
+c4a_L01	13	Y-CURL	Y-CURL	M	eye-check:PCT
+c4a_L01	14	WAVE	WAVE	H	eye-check:WAVE
+c4a_L02	1	CC-DASH	CC-DASH	L	eye-split:c4-knn-MISC-24
+c4a_L02	2	PCT-SLASH	PCT	H	eye-check:PCT
+c4a_L02	3	S-CURL	S-CURL	L	eye-check:X
+c4a_L02	4	X	X	H	eye-check:X
+c4a_L02	5	X	X	H	eye-check:X
+c4a_L02	6	LAMBDA	LAMBDA	H	eye-split:c4-knn-MISC-54
+c4a_L02	7	CROSS-T	CROSS-T	H	eye-check:CROSS-T
+c4a_L02	8	O-SLASH	O-SLASH	M	eye-split:c4-knn-MISC-21
+c4a_L02	9	O-TILDE	O-TILDE	H	eye-split:c4-knn-MISC-33
+c4a_L02	10	STAR	STAR	H	eye-split:c4-knn-MISC-67
+c4a_L02	11	VENUS	VENUS	H	eye-check:VENUS
+c4a_L02	12	X	X	H	eye-check:X
+c4a_L02	13	DASH-H	DASH-H	L	eye-check:CIRC-TAIL
+c4a_L03	1	SUN	SUN	H	eye-check:SUN
+c4a_L03	2	MULTI	MULTI	L	eye-check:VEE
+c4a_L03	3	BLOB	BLOB	M	eye-split:c4-knn-MISC-55
+c4a_L03	4	X	X	H	eye-check:X
+c4a_L03	5	OO-TILDE	OO-TILDE	H	eye-split:c4-knn-MISC-31
+c4a_L03	6	II-DASH	II-DASH	M	eye-split:c4-knn-MISC-17
+c4a_L03	7	CC-O	CC-O	M	eye-check:AMP
+c4a_L03	8	X	X	H	eye-check:X
+c4a_L03	9	Y-CURL	Y-CURL	M	eye-check:Y-CURL
+c4a_L03	10	LOOP-TAIL	LOOP-TAIL	M	eye-check:LOOP-TAIL
+c4a_L03	11	X-CURL	X-CURL	M	eye-check:PCT
+c4a_L03	12	X	X	H	eye-check:X
+c4a_L03	13	BLOB	BLOB	M	eye-split:c4-knn-MISC-32
+c4a_L04	1	OMEGA	OMEGA	M	eye-check:LOOP-TAIL
+c4a_L04	2	PCT	PCT	H	eye-check:PCT
+c4a_L04	3	A-LETTER	A-LETTER	M	eye-check:TRIPOD
+c4a_L04	4	X	X	H	eye-check:X
+c4a_L04	5	THETA-BAR	THETA-BAR	M	eye-split:c4-knn-MISC-05
+c4a_L04	6	CC-DASH	CC-DASH	H	eye-split:c4-knn-MISC-05
+c4a_L04	7	VENUS	VENUS	H	eye-check:VENUS
+c4a_L04	8	RAM	RAM	M	eye-split:c4-knn-_
+c4a_L04	9	PCT-SLASH	PCT	H	eye-check:PCT
+c4a_L04	10	BLOB	BLOB	M	eye-check:BAR-SOLID
+c4a_L04	11	WAVE	WAVE	H	eye-check:WAVE
+c4a_L04	12	CHEVRON2	CHEVRON2	M	eye-check:HOOK-L
+c4a_L04	13	CIRC-O	CIRC-O	H	eye-check:CIRC-O
+c4a_L04	14	X	X	H	eye-check:X
+c4a_L04	15	OX-TILDE	OX-TILDE	H	eye-split:c4-knn-MISC-31
+c4a_L04	16	PCT-SLASH	PCT	H	eye-check:PCT
+c4a_L04	17	BLOB	BLOB	M	eye-split:c4-knn-MISC-55
+c4a_L04	18	HOOK-L	HOOK-L	M	eye-split:c4-knn-MISC-17
+c4a_L05	1	VEE	VEE	H	eye-check:VEE
+c4a_L05	2	O-DASH2	O-DASH2	M	eye-check:CRESCENT
+c4a_L05	3	PCT-SLASH	PCT	M	eye-check:TRIPOD
+c4a_L05	4	WAVE	WAVE	H	eye-check:WAVE
+c4a_L05	5	II-O	II-O	H	eye-split:c4-knn-MISC-36
+c4a_L05	6	ARCH-O	ARCH-O	M	eye-split:c4-knn-_
+c4a_L05	7	X	X	H	eye-check:X
+c4a_L05	8	CIRC-O	CIRC-O	M	eye-check:GEAR-DOT
+c4a_L05	9	BLOB	BLOB	M	eye-split:c4-knn-MISC-55
+c4a_L05	10	X	X	H	eye-check:X
+c4a_L05	11	O-SLASH	O-SLASH	M	eye-split:c4-knn-MISC-54
+c4a_L05	12	PCT-SLASH	PCT	H	eye-split:c4-knn-MISC-30
+c4a_L05	13	Y-LOOPS	Y-LOOPS	M	eye-check:CROSS-T
+c4a_L05	14	BLOB	BLOB	M	eye-check:BAR-SOLID
+c4a_L05	15	PCT-SLASH	PCT	H	eye-split:c4-knn-_
+c4a_L05	16	Y-CURL	Y-CURL	M	eye-check:Y-CURL
+c4a_L05	17	CIRC-O	CIRC-O	M	eye-check:GEAR-DOT
+c4a_L05	18	BLOB	BLOB	M	eye-split:c4-knn-MISC-55
+c4a_L06	1	O-PLUS	O-PLUS	M	eye-split:c4-knn-_
+c4a_L06	2	X-DASH	X-DASH	M	eye-check:CROSS-T
+c4a_L06	3	CHEVRON2	CHEVRON2	M	eye-check:HOOK-L
+c4a_L06	4	DASH-H	DASH-H	H	eye-check:DASH-H
+c4a_L06	5	DIAMOND	DIAMOND	M	eye-check:DELTA-TAIL
+c4a_L06	6	ARROW-UP	ARROW-UP	M	eye-split:c4-knn-MISC-54
+c4a_L06	7	X	X	H	eye-split:c4-knn-_
+c4a_L06	8	X	X	H	eye-split:c4-knn-_
+c4a_L06	9	VENUS	VENUS	H	eye-check:VENUS
+c4a_L06	10	MARS	MARS	M	eye-check:PHI
+c4a_L06	11	PCT	PCT	H	eye-split:c4-knn-MISC-05
+c4a_L06	12	EIGHT	EIGHT	L	eye-split:c4-knn-_
+c4a_L06	13	THETA-BAR	THETA-BAR	M	eye-split:c4-knn-MISC-33
+c4a_L06	14	O-DASH2	O-DASH2	H	eye-split:c4-knn-MISC-05
+c4a_L06	15	QUESTION	QUESTION	M	eye-check:PCT
+c4a_L07	1	PCT	PCT	H	eye-check:PCT
+c4a_L07	2	O-DASHBELOW	O-DASHBELOW	M	eye-check:X
+c4a_L07	3	MULTI	MULTI	L	eye-split:c4-knn-MISC-20
+c4a_L07	4	S-CURL	S-CURL	L	eye-split:c4-knn-_
+c4a_L07	5	PCT-SLASH	PCT	L	eye-split:c4-knn-MISC-46
+c4a_L07	6	X	X	H	eye-check:X
+c4a_L07	7	O-TILDE	O-TILDE	M	eye-check:PCT
+c4a_L07	8	VEE	VEE	H	eye-split:c4-knn-MISC-05
+c4a_L07	9	V-LOOP	V-LOOP	M	eye-check:TRIDENT
+c4a_L07	10	O-SLASH	O-SLASH	M	eye-check:PHI
+c4a_L07	11	WAVE	WAVE	H	eye-check:WAVE
+c4a_L07	12	PCT-SLASH	PCT	M	eye-check:PCT
+c4a_L07	13	O-DASH2	O-DASH2	H	eye-split:c4-knn-MISC-33
+c4a_L07	14	HOOK-L	HOOK-L	M	eye-check:CIRC-TAIL
+c4a_L08	1	TWO	TWO	M	eye-split:c4-knn-MISC-17
+c4a_L08	2	MULTI	MULTI	L	eye-split:c4-knn-_
+c4a_L08	3	DAGGER-O	DAGGER-O	M	eye-check:DELTA-TAIL
+c4a_L08	4	EIGHT	EIGHT	L	eye-check:Y-CURL
+c4a_L08	5	O-SLASH	O-SLASH	M	eye-split:c4-knn-MISC-05
+c4a_L08	6	X	X	H	eye-check:X
+c4a_L08	7	MULTI	MULTI	L	eye-check:X
+c4a_L08	8	CIRC-O	CIRC-O	M	eye-check:GEAR-DOT
+c4a_L08	9	WAVE	WAVE	H	eye-check:WAVE
+c4a_L08	10	CROSS-T	CROSS-T	H	eye-check:CROSS-T
+c4a_L08	11	X	X	H	eye-check:X
+c4a_L08	12	Y-LOOPS	Y-LOOPS	M	eye-check:CROSS-T
+c4a_L08	13	X-BAR	X-BAR	M	eye-check:X
+c4a_L08	14	X-SLASH	X-SLASH	M	eye-check:X
+c4a_L08	15	O-TILDE	O-TILDE	H	eye-split:c4-knn-MISC-33
+c4a_L08	16	VENUS	VENUS	H	eye-check:LOOP-TAIL
+c4a_L08	17	QUESTION	QUESTION	M	eye-check:PCT
+c4a_L09	1	XX-TILDE	XX-TILDE	L	eye-split:c4-knn-MISC-05
+c4a_L09	2	Y-CURL	Y-CURL	M	eye-check:Y-CURL
+c4a_L09	3	VENUS	VENUS	H	eye-check:VENUS
+c4a_L09	4	BLOB	BLOB	M	eye-check:BAR-SOLID
+c4a_L09	5	TAURUS	TAURUS	M	eye-split:c4-knn-MISC-33
+c4a_L09	6	NOTE	NOTE	H	eye-split:c4-knn-_
+c4a_L09	7	NOTE	NOTE	M	eye-check:NOTE
+c4a_L09	8	PICT-ARROW	PICT-ARROW	M	eye-split:c4-knn-MISC-29
+c4a_L09	9	OMEGA	OMEGA	M	eye-check:VENUS
+c4a_L09	10	O-TILDE	O-TILDE	H	eye-split:c4-knn-MISC-33
+c4a_L09	11	X	X	M	eye-check:TRIPOD
+c4a_L09	12	X-CURL	X-CURL	M	eye-split:c4-knn-_
+c4a_L09	13	CC-DASH	CC-DASH	H	eye-split:c4-knn-MISC-82
+c4a_L09	14	VENUS	VENUS	M	eye-check:VENUS
+c4a_L09	15	BLOB	BLOB	M	eye-check:BAR-SOLID
+c4a_L10	1	X-SLASH	X-SLASH	M	eye-split:c4-knn-MISC-43
+c4a_L10	2	O-DOT-STEM	O-DOT-STEM	L	eye-check:PCT
+c4a_L10	3	NOTE	NOTE	M	eye-check:NOTE
+c4a_L10	4	PICT-RUNNER	PICT-RUNNER	H	eye-check:SUN
+c4a_L10	5	X	X	H	eye-check:X
+c4a_L10	6	_	_	L	eye-check:BAR-SERIF
+c4a_L10	7	C-DOT	C-DOT	M	eye-check:CRESCENT
+c4a_L10	8	MULTI	MULTI	L	eye-split:c4-knn-MISC-24
+c4a_L10	9	BLOB	BLOB	M	eye-check:BAR-SOLID
+c4a_L10	10	X	X	M	eye-check:X
+c4a_L10	11	PICT-HOUSE	PICT-HOUSE	L	eye-split:c4-knn-MISC-29
+c4a_L10	12	MULTI	MULTI	L	eye-split:c4-knn-MISC-29
+c4a_L10	13	X	X	H	eye-check:X
+c4a_L10	14	X	X	H	eye-check:X
+c4a_L10	15	O-SLASH	O-SLASH	M	eye-check:X
+c4a_L10	16	DELTA	DELTA	H	eye-check:TRIPOD
+c4a_L10	17	_	_	L	eye-check:PCT
+c4a_L11	1	ARCH-DASH	ARCH-DASH	H	eye-split:c4-knn-MISC-07
+c4a_L11	2	II-O	II-O	H	eye-check:LOOP-TAIL
+c4a_L11	3	O-SLASH	O-SLASH	M	eye-check:PHI
+c4a_L11	4	MULTI	MULTI	L	eye-split:c4-knn-MISC-29
+c4a_L11	5	MULTI	MULTI	L	eye-split:c4-knn-MISC-29
+c4a_L11	6	_	_	M	eye-split:c4-knn-MISC-17
+c4a_L11	7	O-TILDE	O-TILDE	M	eye-split:c4-knn-MISC-33
+c4a_L11	8	PCT-SLASH	PCT	M	eye-check:TRIPOD
+c4a_L11	9	LOOP-STEM	LOOP-STEM	M	eye-check:RHO
+c4a_L11	10	DELTA	DELTA	H	eye-split:c4-knn-MISC-71
+c4a_L11	11	BLOB	BLOB	M	eye-split:c4-knn-MISC-55
+c4a_L12	1	PICT-LEAF	PICT-LEAF	M	eye-split:c4-knn-MISC-29
+c4a_L12	2	O-SLASH	O-SLASH	M	eye-split:c4-knn-MISC-46
+c4a_L12	3	LOOP-TAIL	LOOP-TAIL	L	eye-check:PHI
+c4a_L12	4	Y-CURL	Y-CURL	L	eye-check:TRIPOD
+c4a_L12	5	OX-TILDE	OX-TILDE	L	eye-check:WAVE
+c4a_L12	6	ARCH-DASH	ARCH-DASH	M	eye-split:c4-knn-MISC-30
+c4a_L12	7	X	X	L	eye-check:X
+c4a_L12	8	WAVE	WAVE	H	eye-check:WAVE
+c4a_L12	9	VEE	VEE	L	eye-check:CROSS-T
+c4a_L12	10	BLOB	BLOB	M	eye-check:BAR-SOLID
+c4a_L12	11	X-CURL	X-CURL	H	eye-split:c4-knn-MISC-37
+c4a_L12	12	Y-CURL	Y-CURL	L	eye-check:Y-CURL
+c4a_L12	13	O-DASHBELOW	O-DASHBELOW	L	eye-check:X
+c4a_L12	14	BLOB	BLOB	M	eye-split:c4-knn-MISC-32
+c4a_L12	15	SIGMA	SIGMA	H	eye-split:c4-knn-_
+c4a_L12	16	QUESTION	QUESTION	M	eye-check:X
+c4a_L12	17	QUESTION	QUESTION	M	eye-split:c4-knn-MISC-17
+c4a_L12	18	X	X	H	eye-check:X
+c4a_L12	19	OX	OX	M	eye-split:c4-knn-MISC-31
+c4a_L13	1	PICT-ANCHOR	PICT-ANCHOR	H	eye-check:SUN
+c4a_L13	2	X	X	H	eye-check:X
+c4a_L13	3	DAGGER-O	DAGGER-O	M	eye-check:VENUS
+c4a_L13	4	F-LETTER	F-LETTER	L	eye-split:c4-knn-MISC-33
+c4a_L13	5	EIGHT	EIGHT	L	eye-check:X
+c4a_L13	6	BOX-GRID	BOX-GRID	H	eye-split:c4-knn-MISC-21
+c4a_L13	7	Y-LOOPS	Y-LOOPS	L	eye-split:c4-knn-MISC-07
+c4a_L13	8	Y-CURL	Y-CURL	M	eye-check:VEE
+c4a_L13	9	U-CUP	U-CUP	M	eye-check:DASH-H
+c4a_L13	10	PCT	PCT	H	eye-check:PCT
+c4a_L13	11	WAVE	WAVE	M	eye-check:DASH-H
+c4a_L13	12	X	X	H	eye-check:X
+c4a_L13	13	VENUS	VENUS	M	eye-check:LOOP-TAIL
+c4a_L13	14	X-DASH	X-DASH	M	eye-check:X
+c4a_L13	15	II-DASH	II-DASH	H	eye-split:c4-knn-MISC-21
+c4a_L13	16	CIRC-O	CIRC-O	H	eye-check:CIRC-O
+c4a_L13	17	DAGGER-O	DAGGER-O	H	eye-split:c4-knn-MISC-13
+c4a_L14	1	TWO	TWO	M	eye-split:c4-knn-_
+c4a_L14	2	MULTI	MULTI	L	eye-split:c4-knn-MISC-43
+c4a_L14	3	X	X	H	eye-check:X
+c4a_L14	4	X	X	H	eye-check:X
+c4a_L14	5	DIAMOND	DIAMOND	M	eye-check:X
+c4a_L14	6	X-DASH	X-DASH	M	eye-check:CROSS-T
+c4a_L14	7	IOI-TILDE	IOI-TILDE	M	eye-split:c4-knn-MISC-31
+c4a_L14	8	U-DASH	U-DASH	M	eye-split:c4-knn-MISC-05
+c4a_L14	9	Y-CURL	Y-CURL	M	eye-check:Y-CURL
+c4a_L14	10	SIGMA	SIGMA	H	eye-check:X
+c4a_L14	11	MULTI	MULTI	L	eye-split:c4-knn-MISC-29
+c4a_L14	12	NOTE	NOTE	M	eye-split:c4-knn-MISC-21
+c4a_L14	13	BLOB	BLOB	M	eye-split:c4-knn-MISC-55
+c4b_L01	1	CHEVRON2	CHEVRON2	M	eye-check:HOOK-L
+c4b_L01	2	RAM	RAM	M	eye-split:c4-knn-_
+c4b_L01	3	X	X	H	eye-check:X
+c4b_L01	4	STAR	STAR	H	eye-split:c4-knn-MISC-24
+c4b_L01	5	HASH	HASH	H	eye-split:c4-knn-MISC-46
+c4b_L01	6	ARROW-UP	ARROW-UP	M	eye-check:TRIPOD
+c4b_L01	7	X	X	L	eye-check:BAR-SOLID
+c4b_L01	8	SMILE	SMILE	M	eye-split:c4-knn-MISC-05
+c4b_L01	9	PCT-SLASH	PCT	M	eye-check:PCT
+c4b_L01	10	S-CURL	S-CURL	L	eye-check:DELTA-TAIL
+c4b_L01	11	PICT-ARROW	PICT-ARROW	M	eye-split:c4-knn-MISC-40
+c4b_L02	1	DELTA	DELTA	H	eye-split:c4-knn-_
+c4b_L02	2	DOTS-DASH	DOTS-DASH	L	eye-split:c4-knn-MISC-05
+c4b_L02	3	ARROW-O	ARROW-O	M	eye-split:c4-knn-MISC-13
+c4b_L02	4	CC-O	CC-O	M	eye-split:c4-knn-MISC-05
+c4b_L02	5	OX-TILDE	OX-TILDE	H	eye-split:c4-knn-MISC-31
+c4b_L02	6	X	X	H	eye-check:X
+c4b_L02	7	O-DASH2	O-DASH2	H	eye-split:c4-knn-MISC-33
+c4b_L02	8	PCT-SLASH	PCT	M	eye-check:PCT
+c4b_L02	9	Y-CURL	Y-CURL	M	eye-split:c4-knn-_
+c4b_L02	10	II-SLASH	II-SLASH	L	eye-check:AMP
+c4b_L02	11	DOLLAR	DOLLAR	M	eye-split:c4-knn-MISC-76
+c4b_L02	12	LOOP-TAIL	LOOP-TAIL	L	eye-check:Y-CURL
+c4b_L02	13	S-CURL	S-CURL	L	eye-check:PCT
+c4b_L02	14	PCT	PCT	H	eye-check:PCT
+c4b_L02	15	WAVE	WAVE	M	eye-check:DASH-H
+c4b_L03	1	S-CURL	S-CURL	L	eye-split:c4-knn-MISC-05
+c4b_L03	2	X-BAR-CC	X-BAR-CC	M	eye-split:c4-knn-MISC-36
+c4b_L03	3	SUN	SUN	M	eye-check:X
+c4b_L03	4	CHEVRON2	CHEVRON2	M	eye-check:HOOK-L
+c4b_L03	5	GEAR-DOT	GEAR-DOT	M	eye-check:EYE-DOT
+c4b_L03	6	CHEVRON2	CHEVRON2	M	eye-check:Y-CURL
+c4b_L03	7	OX-TILDE	OX-TILDE	H	eye-split:c4-knn-MISC-31
+c4b_L03	8	PICT-FACE	PICT-FACE	M	eye-split:c4-knn-MISC-20
+c4b_L03	9	NOTE	NOTE	H	eye-check:TRIPOD
+c4b_L03	10	ARCH-DASH	ARCH-DASH	H	eye-split:c4-knn-_
+c4b_L03	11	O-TILDE	O-TILDE	L	eye-split:c4-knn-_
+c4b_L03	12	PCT-SLASH	PCT	M	eye-check:TRIPOD
+c4b_L03	13	WAVE	WAVE	H	eye-check:WAVE
+c4b_L04	1	DIAMOND	DIAMOND	M	eye-split:c4-knn-_
+c4b_L04	2	SIGMA	SIGMA	H	eye-split:c4-knn-_
+c4b_L04	3	ARCH-O	ARCH-O	M	eye-split:c4-knn-_
+c4b_L04	4	X	X	H	eye-check:X
+c4b_L04	5	VENUS	VENUS	H	eye-split:c4-knn-_
+c4b_L04	6	MULTI	MULTI	L	eye-split:c4-knn-_
+c4b_L04	7	EIGHT	EIGHT	L	eye-split:c4-knn-_
+c4b_L04	8	CHEVRON	CHEVRON	M	eye-check:HOOK-L
+c4b_L04	9	CHEVRON	CHEVRON	M	eye-check:HOOK-L
+c4b_L04	10	CIRC-O	CIRC-O	M	eye-check:EYE-DOT
+c4b_L04	11	SLASH	SLASH	H	eye-split:c4-knn-_
+c4b_L04	12	II-O	II-O	H	eye-split:c4-knn-MISC-13
+c4b_L04	13	CIRC-O	CIRC-O	M	eye-check:EYE-DOT
+c4b_L04	14	CIRC-O	CIRC-O	L	eye-split:c4-knn-_
+c4b_L04	15	THETA-BAR	THETA-BAR	M	eye-split:c4-knn-MISC-24
+c4b_L04	16	S-CURL	S-CURL	L	eye-check:PCT
+c4b_L05	1	O-DOT-STEM	O-DOT-STEM	M	eye-split:c4-knn-MISC-21
+c4b_L05	2	PICT-CROSSED	PICT-CROSSED	L	eye-split:c4-knn-_
+c4b_L05	3	LOOP-STEM	LOOP-STEM	M	eye-check:X
+c4b_L05	4	V-LOOP	V-LOOP	M	eye-check:TRIDENT
+c4b_L05	5	M-LETTER	M-LETTER	L	eye-check:PCT
+c4b_L05	6	THREE	THREE	L	eye-check:PCT
+c4b_L05	7	SLASH	SLASH	M	eye-split:c4-knn-MISC-17
+c4b_L05	8	TAURUS	TAURUS	M	eye-check:DELTA-TAIL
+c4b_L05	9	OMEGA-O	OMEGA-O	L	eye-split:c4-knn-_
+c4b_L05	10	SCROLL-X	SCROLL-X	L	eye-split:c4-knn-_
+c4b_L05	11	PICT-GLASS	PICT-GLASS	L	eye-split:c4-knn-MISC-36
+c4b_L05	12	EIGHT	EIGHT	M	eye-split:c4-knn-_
+c4b_L05	13	X	X	H	eye-check:X
+c4b_L05	14	S-CURL	S-CURL	L	eye-split:c4-knn-_

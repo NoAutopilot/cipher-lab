@@ -1,295 +1,1316 @@
-line	position	sign	confidence	alt	why
-c4a_L01	1	MISC-05	M	B:MISC-37	differ
-c4a_L01	2	_	M	B:HOOK-L	differ
-c4a_L01	3	X	M	B:BAR-THIN	differ
-c4a_L01	4	PHI	M		agree-flagged
-c4a_L01	5	X	M		agree-flagged
-c4a_L01	6	MISC-05	M	B:NOTE	differ
-c4a_L01	7	MISC-17	M	B:BAR-THIN	differ
-c4a_L01	8	BAR-SERIF	M	B:BAR-THIN	differ
-c4a_L01	9	LOOP-TAIL	M	B:DASH-H	differ
-c4a_L01	10	X	M		agree-flagged
-c4a_L01	11	WAVE	M	A:-	gap
-c4a_L01	12	X	M	B:MISC-36	differ
-c4a_L01	13	X	M		agree-flagged
-c4a_L01	14	PCT	M	B:-	gap
-c4a_L01	15	WAVE	M		agree-flagged
-c4a_L02	1	MISC-24	M	B:MISC-37	differ
-c4a_L02	2	PCT	M	B:BAR-THIN	differ
-c4a_L02	3	X	M		agree-flagged
-c4a_L02	4	X	M		agree-flagged
-c4a_L02	5	X	M		agree-flagged
-c4a_L02	6	MISC-54	M	B:TRIPOD	differ
-c4a_L02	7	CROSS-T	M	B:MISC-32	differ
-c4a_L02	8	MISC-21	M	B:MISC-32	differ
-c4a_L02	9	MISC-33	M	B:BAR-THIN	differ
-c4a_L02	10	MISC-67	M	B:SUN	differ
-c4a_L02	11	VENUS	M	B:CIRC-O	differ
-c4a_L02	12	X	M		agree-flagged
-c4a_L02	13	CIRC-TAIL	M	B:DASH-H	differ
-c4a_L03	1	SUN	M		agree-flagged
-c4a_L03	2	VEE	M	B:PCT	differ
-c4a_L03	3	MISC-55	M	B:MISC-50	differ
-c4a_L03	4	X	M		agree-flagged
-c4a_L03	5	MISC-31	M	B:CRESCENT	differ
-c4a_L03	6	MISC-17	M	B:BAR-SOLID	differ
-c4a_L03	7	AMP	M	B:MISC-36	differ
-c4a_L03	8	X	M		agree-flagged
-c4a_L03	9	Y-CURL	M	B:HOOK-L	differ
-c4a_L03	10	LOOP-TAIL	M	B:DELTA-TAIL	differ
-c4a_L03	11	PCT	M	B:MISC-75	differ
-c4a_L03	12	X	M		agree-flagged
-c4a_L03	13	MISC-32	M	B:DASH-H	differ
-c4a_L04	1	LOOP-TAIL	M	B:DELTA-TAIL	differ
-c4a_L04	2	PCT	M	B:CIRC-O	differ
-c4a_L04	3	TRIPOD	M	B:MISC-46	differ
-c4a_L04	4	X	M		agree-flagged
-c4a_L04	5	MISC-05	M	B:-	gap
-c4a_L04	6	MISC-05	M	B:GEAR-DOT	differ
-c4a_L04	7	VENUS	M	B:MISC-32	differ
-c4a_L04	8	_	M	B:RHO	differ
-c4a_L04	9	PCT	M		agree-flagged
-c4a_L04	10	Y-CURL	M	A:-	gap
-c4a_L04	11	DASH-H	M	A:-	gap
-c4a_L04	12	BAR-SOLID	M	B:WAVE	differ
-c4a_L04	13	WAVE	M		agree-flagged
-c4a_L04	14	HOOK-L	M	B:BAR-THIN	differ
-c4a_L04	15	CIRC-O	M	B:MISC-32	differ
-c4a_L04	16	X	M		agree-flagged
-c4a_L04	17	MISC-31	M		agree-flagged
-c4a_L04	18	PCT	M	B:-	gap
-c4a_L04	19	MISC-55	M	B:Y-CURL	differ
-c4a_L04	20	MISC-17	M	B:BAR-THIN	differ
-c4a_L05	1	VEE	M		agree-flagged
-c4a_L05	2	HOOK-L	M	A:-	gap
-c4a_L05	3	CIRC-O	M	A:-	gap
-c4a_L05	4	BAR-THIN	M	A:-	gap
-c4a_L05	5	CRESCENT	M		agree-flagged
-c4a_L05	6	TRIPOD	M	B:-	gap
-c4a_L05	7	WAVE	M	B:MISC-32	differ
-c4a_L05	8	MISC-36	M	B:GEAR-DOT	differ
-c4a_L05	9	_	M	B:MISC-33	differ
-c4a_L05	10	X	M		agree-flagged
-c4a_L05	11	GEAR-DOT	M	B:CIRC-O	differ
-c4a_L05	12	MISC-55	M	B:WAVE	differ
-c4a_L05	13	X	M		agree-flagged
-c4a_L05	14	MISC-54	M	B:-	gap
-c4a_L05	15	MISC-30	M	B:WAVE	differ
-c4a_L05	16	CROSS-T	M	B:X	differ
-c4a_L05	17	BAR-SOLID	M	B:TRIDENT	differ
-c4a_L05	18	_	M	B:HOOK-L	differ
-c4a_L05	19	Y-CURL	M		agree-flagged
-c4a_L05	20	GEAR-DOT	M	B:-	gap
-c4a_L05	21	MISC-55	M	B:DASH-H	differ
-c4a_L06	1	_	M	B:RHO	differ
-c4a_L06	2	CROSS-T	M	B:BAR-SOLID	differ
-c4a_L06	3	HOOK-L	M		agree-flagged
-c4a_L06	4	DASH-H	M		agree-flagged
-c4a_L06	5	DELTA-TAIL	M	B:BAR-SERIF	differ
-c4a_L06	6	MISC-54	M	B:DASH-H	differ
-c4a_L06	7	_	M	B:EYE-DOT	differ
-c4a_L06	8	_	M	B:X	differ
-c4a_L06	9	VENUS	M		agree-flagged
-c4a_L06	10	PHI	M	B:HOOK-L	differ
-c4a_L06	11	MISC-05	M	B:BAR-THIN	differ
-c4a_L06	12	_	M	B:X	differ
-c4a_L06	13	MISC-33	M	B:VENUS	differ
-c4a_L06	14	MISC-05	M	B:BAR-SOLID	differ
-c4a_L06	15	PCT	M	B:BAR-THIN	differ
-c4a_L07	1	PCT	M		agree-flagged
-c4a_L07	2	X	M	B:CIRC-TAIL	differ
-c4a_L07	3	MISC-20	M	B:HOOK-L	differ
-c4a_L07	4	_	M	B:DASH-H	differ
-c4a_L07	5	MISC-46	M	B:X	differ
-c4a_L07	6	X	M		agree-flagged
-c4a_L07	7	PCT	M	B:VEE	differ
-c4a_L07	8	MISC-05	M	B:VEE	differ
-c4a_L07	9	TRIDENT	M	B:VEE	differ
-c4a_L07	10	PHI	M		agree-flagged
-c4a_L07	11	WAVE	M		agree-flagged
-c4a_L07	12	PCT	M	B:BAR-THIN	differ
-c4a_L07	13	MISC-33	M	B:CIRC-O	differ
-c4a_L07	14	CIRC-TAIL	M	B:HOOK-L	differ
-c4a_L08	1	MISC-17	M	B:BAR-SERIF	differ
-c4a_L08	2	_	M	B:Y-CURL	differ
-c4a_L08	3	DELTA-TAIL	M		agree-flagged
-c4a_L08	4	Y-CURL	M	B:PCT	differ
-c4a_L08	5	MISC-05	M	B:DASH-H	differ
-c4a_L08	6	X	M		agree-flagged
-c4a_L08	7	X	M	B:HOOK-L	differ
-c4a_L08	8	GEAR-DOT	M	B:DASH-H	differ
-c4a_L08	9	WAVE	M		agree-flagged
-c4a_L08	10	CROSS-T	M	B:BAR-THIN	differ
-c4a_L08	11	X	M		agree-flagged
-c4a_L08	12	CROSS-T	M		agree-flagged
-c4a_L08	13	X	M	B:MISC-17	differ
-c4a_L08	14	X	M		agree-flagged
-c4a_L08	15	MISC-33	M	B:WAVE	differ
-c4a_L08	16	LOOP-TAIL	M	B:DELTA-TAIL	differ
-c4a_L08	17	PCT	M	B:BAR-THIN	differ
-c4a_L09	1	MISC-05	M	B:-	gap
-c4a_L09	2	Y-CURL	M	B:MISC-67	differ
-c4a_L09	3	VENUS	M	B:X	differ
-c4a_L09	4	BAR-SOLID	M	B:RHO	differ
-c4a_L09	5	MISC-33	M	B:DASH-H	differ
-c4a_L09	6	_	M	B:MISC-11	differ
-c4a_L09	7	NOTE	M		agree-flagged
-c4a_L09	8	DELTA-TAIL	M	A:-	gap
-c4a_L09	9	MISC-60	M	A:-	gap
-c4a_L09	10	MISC-29	M	B:MISC-71	differ
-c4a_L09	11	VENUS	M	B:DELTA-TAIL	differ
-c4a_L09	12	MISC-33	M	B:X	differ
-c4a_L09	13	TRIPOD	M	B:X	differ
-c4a_L09	14	_	M	B:BAR-THIN	differ
-c4a_L09	15	MISC-82	M	B:MISC-64	differ
-c4a_L09	16	VENUS	M		agree-flagged
-c4a_L09	17	BAR-SOLID	M	B:-	gap
-c4a_L10	1	MISC-43	M	B:X	differ
-c4a_L10	2	PCT	M	B:BAR-THIN	differ
-c4a_L10	3	NOTE	M	B:DELTA-TAIL	differ
-c4a_L10	4	SUN	M	B:MISC-60	differ
-c4a_L10	5	X	M		agree-flagged
-c4a_L10	6	BAR-SERIF	M	B:-	gap
-c4a_L10	7	CRESCENT	M		agree-flagged
-c4a_L10	8	DASH-H	M	A:-	gap
-c4a_L10	9	MISC-24	M	B:VENUS	differ
-c4a_L10	10	BAR-SOLID	M	B:DASH-H	differ
-c4a_L10	11	X	M		agree-flagged
-c4a_L10	12	MISC-29	M	B:MISC-07	differ
-c4a_L10	13	MISC-29	M		agree-flagged
-c4a_L10	14	X	M		agree-flagged
-c4a_L10	15	X	M		agree-flagged
-c4a_L10	16	X	M	B:DELTA-TAIL	differ
-c4a_L10	17	TRIPOD	M	B:MISC-32	differ
-c4a_L10	18	PCT	M	B:DASH-H	differ
-c4a_L11	1	MISC-07	M	B:BAR-SOLID	differ
-c4a_L11	2	LOOP-TAIL	M	B:BAR-THIN	differ
-c4a_L11	3	PHI	M	B:DELTA-TAIL	differ
-c4a_L11	4	MISC-29	M	B:CIRC-TAIL	differ
-c4a_L11	5	MISC-29	M	B:MISC-13	differ
-c4a_L11	6	MISC-17	M	B:MISC-60	differ
-c4a_L11	7	MISC-33	M	B:EYE-DOT	differ
-c4a_L11	8	TRIPOD	M	B:BAR-THIN	differ
-c4a_L11	9	RHO	M		agree-flagged
-c4a_L11	10	MISC-71	M	B:MISC-32	differ
-c4a_L11	11	MISC-55	M	B:DASH-H	differ
-c4a_L12	1	MISC-60	M	A:-	gap
-c4a_L12	2	MISC-29	M	B:DASH-H	differ
-c4a_L12	3	MISC-46	M	B:DELTA-TAIL	differ
-c4a_L12	4	PHI	M	B:BAR-THIN	differ
-c4a_L12	5	TRIPOD	M	B:X	differ
-c4a_L12	6	WAVE	M	B:X	differ
-c4a_L12	7	MISC-30	M	B:BAR-THIN	differ
-c4a_L12	8	X	M		agree-flagged
-c4a_L12	9	WAVE	M	B:MISC-31	differ
-c4a_L12	10	CROSS-T	M	B:MISC-50	differ
-c4a_L12	11	BAR-SOLID	M	B:BAR-SERIF	differ
-c4a_L12	12	MISC-37	M	B:X	differ
-c4a_L12	13	Y-CURL	M		agree-flagged
-c4a_L12	14	X	M	B:-	gap
-c4a_L12	15	MISC-32	M	B:MISC-50	differ
-c4a_L12	16	_	M	B:MISC-21	differ
-c4a_L12	17	X	M	B:HOOK-L	differ
-c4a_L12	18	MISC-17	M	B:BAR-THIN	differ
-c4a_L12	19	X	M		agree-flagged
-c4a_L12	20	MISC-31	M	B:VENUS	differ
-c4a_L13	1	SUN	M		agree-flagged
-c4a_L13	2	X	M		agree-flagged
-c4a_L13	3	VENUS	M	B:CRESCENT	differ
-c4a_L13	4	MISC-33	M	B:Y-CURL	differ
-c4a_L13	5	X	M	B:BAR-THIN	differ
-c4a_L13	6	MISC-21	M	B:MISC-32	differ
-c4a_L13	7	MISC-07	M	B:MISC-41	differ
-c4a_L13	8	VEE	M		agree-flagged
-c4a_L13	9	DASH-H	M	B:MISC-46	differ
-c4a_L13	10	PCT	M		agree-flagged
-c4a_L13	11	DASH-H	M		agree-flagged
-c4a_L13	12	X	M		agree-flagged
-c4a_L13	13	LOOP-TAIL	M	B:VEE	differ
-c4a_L13	14	X	M		agree-flagged
-c4a_L13	15	MISC-21	M	B:MISC-64	differ
-c4a_L13	16	CIRC-O	M	B:WAVE	differ
-c4a_L13	17	MISC-13	M	B:VENUS	differ
-c4a_L14	1	_	M	B:HOOK-L	differ
-c4a_L14	2	MISC-43	M	B:VENUS	differ
-c4a_L14	3	X	M	B:VENUS	differ
-c4a_L14	4	X	M		agree-flagged
-c4a_L14	5	X	M	B:MISC-83	differ
-c4a_L14	6	CROSS-T	M	B:BAR-THIN	differ
-c4a_L14	7	MISC-31	M	B:PCT	differ
-c4a_L14	8	MISC-05	M	B:MISC-32	differ
-c4a_L14	9	Y-CURL	M	B:DELTA-TAIL	differ
-c4a_L14	10	X	M	B:MISC-21	differ
-c4a_L14	11	MISC-29	M	B:TRIDENT	differ
-c4a_L14	12	MISC-21	M	B:MISC-54	differ
-c4a_L14	13	MISC-55	M	B:DASH-H	differ
-c4b_L01	1	HOOK-L	M		agree-flagged
-c4b_L01	2	_	M	B:MISC-41	differ
-c4b_L01	3	X	M		agree-flagged
-c4b_L01	4	MISC-24	M	B:MISC-67	differ
-c4b_L01	5	MISC-46	M	B:MISC-32	differ
-c4b_L01	6	TRIPOD	M	B:MISC-17	differ
-c4b_L01	7	BAR-SOLID	M	B:MISC-03	differ
-c4b_L01	8	MISC-05	M	B:HOOK-L	differ
-c4b_L01	9	PCT	M	B:Y-CURL	differ
-c4b_L01	10	DELTA-TAIL	M	B:EYE-DOT	differ
-c4b_L01	11	MISC-40	M	B:MISC-17	differ
-c4b_L02	1	_	M	B:MISC-32	differ
-c4b_L02	2	MISC-05	M	B:MISC-76	differ
-c4b_L02	3	MISC-13	M	B:DELTA-TAIL	differ
-c4b_L02	4	MISC-05	M	B:HOOK-L	differ
-c4b_L02	5	MISC-31	M	B:MISC-32	differ
-c4b_L02	6	X	M	B:BAR-THIN	differ
-c4b_L02	7	MISC-33	M	B:DASH-H	differ
-c4b_L02	8	PCT	M	B:MISC-32	differ
-c4b_L02	9	_	M	B:HOOK-L	differ
-c4b_L02	10	AMP	M	B:DELTA-TAIL	differ
-c4b_L02	11	MISC-76	M	B:BAR-SERIF	differ
-c4b_L02	12	Y-CURL	M		agree-flagged
-c4b_L02	13	PCT	M	B:Y-CURL	differ
-c4b_L02	14	PCT	M		agree-flagged
-c4b_L02	15	DASH-H	M		agree-flagged
-c4b_L03	1	MISC-05	M	B:MISC-32	differ
-c4b_L03	2	MISC-36	M	B:MISC-31	differ
-c4b_L03	3	X	M	B:MISC-31	differ
-c4b_L03	4	HOOK-L	M	B:MISC-17	differ
-c4b_L03	5	EYE-DOT	M	B:CIRC-O	differ
-c4b_L03	6	Y-CURL	M	B:MISC-17	differ
-c4b_L03	7	MISC-31	M	B:EYE-DOT	differ
-c4b_L03	8	MISC-20	M	B:MISC-11	differ
-c4b_L03	9	TRIPOD	M	B:NOTE	differ
-c4b_L03	10	_	M	B:MISC-07	differ
-c4b_L03	11	_	M	B:MISC-32	differ
-c4b_L03	12	TRIPOD	M	B:BAR-THIN	differ
-c4b_L03	13	WAVE	M		agree-flagged
-c4b_L04	1	_	M	B:MISC-32	differ
-c4b_L04	2	_	M	B:MISC-21	differ
-c4b_L04	3	_	M	B:VENUS	differ
-c4b_L04	4	X	M		agree-flagged
-c4b_L04	5	MISC-50	M	A:-	gap
-c4b_L04	6	_	M	B:RHO	differ
-c4b_L04	7	_	M	B:BAR-THIN	differ
-c4b_L04	8	_	M	B:NOTE	differ
-c4b_L04	9	HOOK-L	M	B:DASH-H	differ
-c4b_L04	10	HOOK-L	M		agree-flagged
-c4b_L04	11	EYE-DOT	M	B:-	gap
-c4b_L04	12	_	M	B:DASH-H	differ
-c4b_L04	13	MISC-13	M	B:BAR-THIN	differ
-c4b_L04	14	EYE-DOT	M	B:DASH-H	differ
-c4b_L04	15	_	M	B:MISC-50	differ
-c4b_L04	16	MISC-24	M	B:GEAR-DOT	differ
-c4b_L04	17	PCT	M	B:Y-CURL	differ
-c4b_L05	1	MISC-21	M	B:RHO	differ
-c4b_L05	2	_	M	B:MISC-06	differ
-c4b_L05	3	X	M	B:HOOK-L	differ
-c4b_L05	4	TRIDENT	M	B:CRESCENT	differ
-c4b_L05	5	PCT	M	B:BAR-SOLID	differ
-c4b_L05	6	PCT	M	B:MISC-32	differ
-c4b_L05	7	MISC-17	M	B:Y-CURL	differ
-c4b_L05	8	DELTA-TAIL	M		agree-flagged
-c4b_L05	9	_	M	B:CIRC-TAIL	differ
-c4b_L05	10	_	M	B:X	differ
-c4b_L05	11	MISC-36	M	B:MISC-64	differ
-c4b_L05	12	_	M	B:BAR-SOLID	differ
-c4b_L05	13	X	M		agree-flagged
-c4b_L05	14	_	M	B:MISC-37	differ
+line	position	sign	family	confidence	note
+c1_L01	1	O-TILDE	O-TILDE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L01	2	PCT-SLASH	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L01	3	TRIDENT	TRIDENT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L01	4	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L01	5	LAMBDA	LAMBDA	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L01	6	DASH-H	DASH-H	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L01	7	CC-O	CC-O	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L01	8	Y-CURL	Y-CURL	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L01	9	II-DASH	II-DASH	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L01	10	OX-TILDE	OX-TILDE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L01	11	PCT-SLASH	PCT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L01	12	O-SLASH	O-SLASH	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L01	13	C-BAR-X	C-BAR-X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L01	14	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L01	15	XX-TILDE	XX-TILDE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L01	16	O-TILDE	O-TILDE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L01	17	PICT-HORSE	PICT-HORSE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L01	18	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L01	19	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L01	20	BAR-SOLID	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L01	21	BLOB	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L01	22	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L02	1	SUN	SUN	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L02	2	VENUS	VENUS	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L02	3	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L02	4	PCT	PCT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L02	5	O-TILDE	O-TILDE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L02	6	SIX-CURL	SIX-CURL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L02	7	A-LOOP	A-LOOP	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L02	8	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L02	9	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L02	10	OO-TILDE	OO-TILDE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L02	11	O-PLUS	O-PLUS	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L02	12	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L02	13	PCT-SLASH	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L02	14	CC-O	CC-O	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L02	15	Y-CURL	Y-CURL	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L02	16	_	_	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L02	17	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L02	18	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L02	19	VENUS	VENUS	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L02	20	PICT-FACE	PICT-FACE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L02	21	O-DASH2	O-DASH2	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L03	1	BAR-THIN	BAR-THIN	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L03	2	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L03	3	BLOB	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L03	4	DAGGER-O	DAGGER-O	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L03	5	O-TILDE	O-TILDE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L03	6	O-SLASH	O-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L03	7	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L03	8	_	_	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L03	9	C-DOT	C-DOT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L03	10	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L03	11	CC-DASH	CC-DASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L03	12	PCT	PCT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L03	13	BAR-SOLID	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L03	14	TRIDENT	TRIDENT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L03	15	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L03	16	LAMBDA-DASH	LAMBDA-DASH	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L03	17	DOLLAR	DOLLAR	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L03	18	CIRC-O	CIRC-O	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L03	19	OX-TILDE	OX-TILDE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L03	20	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L03	21	DASH-H	DASH-H	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L03	22	ARCH-DASH	ARCH-DASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L03	23	PICT-RUNNER	PICT-RUNNER	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L03	24	HASH	HASH	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L03	25	NOTE	NOTE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L03	26	MULTI	MULTI	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L03	27	BAR-SOLID	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L03	28	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L03	29	XX-TILDE	XX-TILDE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L04	1	CC-DOT	CC-DOT	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L04	2	DBL-SLASH	DBL-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L04	3	DAGGER-O	DAGGER-O	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L04	4	HOOK-L	HOOK-L	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L04	5	O-DASHBELOW	O-DASHBELOW	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L04	6	BAR-THIN	BAR-THIN	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L04	7	LOOP-STEM	LOOP-STEM	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L04	8	VEE	VEE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L04	9	PICT-TREE	PICT-TREE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L04	10	DBL-SLASH	DBL-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L04	11	DASH-H	DASH-H	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L04	12	O-DASHBELOW	O-DASHBELOW	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L04	13	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L04	14	O-TILDE	O-TILDE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L04	15	ARC-LOOPS	ARC-LOOPS	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L04	16	X-BAR	X-BAR	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L04	17	X-CURL	X-CURL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L04	18	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L04	19	AMP	AMP	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L04	20	VENUS	VENUS	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L04	21	F-LETTER	F-LETTER	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L04	22	A-LOOP	A-LOOP	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L04	23	DOTS-TILDE	DOTS-TILDE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L05	1	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L05	2	BAR-THIN	BAR-THIN	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L05	3	BAR-THIN	BAR-THIN	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L05	4	Y-CURL	Y-CURL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L05	5	A-LOOP	A-LOOP	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L05	6	MULTI	MULTI	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L05	7	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L05	8	CROSS-T	CROSS-T	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L05	9	Y-CURL	Y-CURL	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L05	10	O-BRACKET	O-BRACKET	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L05	11	DIAMOND	DIAMOND	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L05	12	O-SLASH	O-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L05	13	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L05	14	Y-CURL	Y-CURL	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L05	15	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L05	16	PCT	PCT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L05	17	DOLLAR	DOLLAR	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L05	18	BLOB	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L05	19	BAR-SOLID	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L05	20	II-SLASH	II-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L05	21	Y-CURL	Y-CURL	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L05	22	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L05	23	DAGGER-O	DAGGER-O	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L06	1	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L06	2	O-SLASH	O-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L06	3	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L06	4	O-TILDE	O-TILDE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L06	5	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L06	6	A-LOOP	A-LOOP	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L06	7	O-DASH2	O-DASH2	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L06	8	PCT	PCT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L06	9	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L06	10	Y-LOOPS	Y-LOOPS	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L06	11	X-BAR	X-BAR	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L06	12	CIRC-O	CIRC-O	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L06	13	Y-CURL	Y-CURL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L06	14	CIRC-O	CIRC-O	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L06	15	S-CURL	S-CURL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L06	16	SLASH-BAR	SLASH-BAR	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L06	17	PHI	PHI	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c1_L06	18	T-LETTER	T-LETTER	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L01	1	BAR-THIN	BAR-THIN	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L01	2	BRACKET	BRACKET	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L01	3	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L01	4	CC-DASH	CC-DASH	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L01	5	EIGHT	EIGHT	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L01	6	Y-CURL	Y-CURL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L01	7	N-LETTER	N-LETTER	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L01	8	QQ-O	QQ-O	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L01	9	C-DOT	C-DOT	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L01	10	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L01	11	PCT-SLASH	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L01	12	AMP	AMP	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L01	13	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L01	14	CIRC-O	CIRC-O	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L01	15	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L01	16	O-SLASH	O-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L01	17	O-DASH2	O-DASH2	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L01	18	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L01	19	V-DOT	V-DOT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L01	20	_	_	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L01	21	BAR-THIN	BAR-THIN	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L01	22	CIRC-O	CIRC-O	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L01	23	DASH-H	DASH-H	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L01	24	IOI-TILDE	IOI-TILDE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L01	25	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L01	26	CIRC-O	CIRC-O	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L01	27	DASH-H	DASH-H	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L01	28	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L01	29	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L01	30	LOOP-STEM	LOOP-STEM	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L01	31	DOT-LINE-O	DOT-LINE-O	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L01	32	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L01	33	BLOB	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L01	34	DASH-V	DASH-V	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L02	1	PICT-LEAF	PICT-LEAF	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L02	2	BOX-GRID	BOX-GRID	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L02	3	O-TILDE	O-TILDE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L02	4	LOOP-TAIL	LOOP-TAIL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L02	5	TRIDENT	TRIDENT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L02	6	PCT-SLASH	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L02	7	II-DASH	II-DASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L02	8	TRIDENT	TRIDENT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L02	9	PICT-BOTTLE	PICT-BOTTLE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L02	10	PICT-TREE	PICT-TREE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L02	11	SUN	SUN	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L02	12	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L02	13	NINE	NINE	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L02	14	FIVE	FIVE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L02	15	BAR-THIN	BAR-THIN	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L02	16	TRIDENT	TRIDENT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L02	17	BAR-THIN	BAR-THIN	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L02	18	PICT-FACE	PICT-FACE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L02	19	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L02	20	DAGGER-O	DAGGER-O	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L02	21	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L02	22	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L02	23	II-DASH	II-DASH	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L02	24	BLOB	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L02	25	PHI	PHI	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L02	26	OX-TILDE	OX-TILDE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L02	27	BUCKET	BUCKET	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L02	28	DASH-V	DASH-V	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L03	1	PICT-EAGLE	PICT-EAGLE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L03	2	V-LOOP	V-LOOP	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L03	3	VENUS	VENUS	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L03	4	CC-DASH	CC-DASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L03	5	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L03	6	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L03	7	PHI	PHI	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L03	8	X-CURL	X-CURL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L03	9	VENUS	VENUS	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L03	10	EIGHT	EIGHT	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L03	11	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L03	12	O-DASH2	O-DASH2	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L03	13	CC-DASH	CC-DASH	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L03	14	LAMBDA	LAMBDA	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L03	15	PCT	PCT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L03	16	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L03	17	O-SLASH	O-SLASH	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L03	18	BOX-GRID	BOX-GRID	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L03	19	BAR-SOLID	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L03	20	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L03	21	TRIDENT	TRIDENT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L03	22	BAR-SOLID	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L03	23	Y-CURL	Y-CURL	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L03	24	O-DASH2	O-DASH2	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L03	25	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L03	26	BAR-THIN	BAR-THIN	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L04	1	BAR-THIN	BAR-THIN	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L04	2	BAR-THIN	BAR-THIN	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L04	3	BAR-THIN	BAR-THIN	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L04	4	BAR-SOLID	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L04	5	VENUS	VENUS	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L04	6	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L04	7	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L04	8	ARCH-DOTS	ARCH-DOTS	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L04	9	SMILE	SMILE	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L04	10	AMP	AMP	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L04	11	II-DASH	II-DASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L04	12	NINE	NINE	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L04	13	SCROLL-X	SCROLL-X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L04	14	V-DOT	V-DOT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L04	15	DBL-SLASH	DBL-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L04	16	BLOB	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L04	17	WAVE	WAVE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L04	18	DAGGER-O	DAGGER-O	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L04	19	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L04	20	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L04	21	BLOB	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L04	22	C-BAR-X	C-BAR-X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L04	23	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L04	24	OX-TILDE	OX-TILDE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L04	25	BAR-THIN	BAR-THIN	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L04	26	BAR-THIN	BAR-THIN	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L04	27	DASH-V	DASH-V	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L05	1	_	_	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L05	2	_	_	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L05	3	DASH-V	DASH-V	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L05	4	BAR-SOLID	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L05	5	PICT-HOUSE	PICT-HOUSE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L05	6	EIGHT	EIGHT	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L05	7	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L05	8	OX-TILDE	OX-TILDE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L05	9	LOOP-STEM	LOOP-STEM	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L05	10	C-DOT	C-DOT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L05	11	C-DOT	C-DOT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L05	12	BAR-SOLID	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L05	13	BAR-THIN	BAR-THIN	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L05	14	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L05	15	CIRC-O	CIRC-O	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L05	16	BLOB	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L05	17	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L05	18	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L05	19	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L05	20	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L05	21	MULTI	MULTI	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L05	22	T-LETTER	T-LETTER	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L05	23	S-CURL	S-CURL	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L05	24	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L05	25	O-TILDE	O-TILDE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L05	26	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L05	27	PHI	PHI	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L05	28	O-TILDE	O-TILDE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L05	29	DBL-SLASH	DBL-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L05	30	DBL-SLASH	DBL-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L05	31	_	_	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L05	32	DAGGER-O	DAGGER-O	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L05	33	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L05	34	BAR-THIN	BAR-THIN	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L06	1	BAR-THIN	BAR-THIN	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L06	2	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L06	3	_	_	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L06	4	BAR-THIN	BAR-THIN	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L06	5	DOLLAR	DOLLAR	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L06	6	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L06	7	PCT-SLASH	PCT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L06	8	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L06	9	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L06	10	THREE	THREE	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L06	11	WAVE	WAVE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L06	12	PCT-SLASH	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L06	13	STAR	STAR	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L06	14	CROSS-T	CROSS-T	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L06	15	CC-DASH	CC-DASH	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L06	16	II-DASH	II-DASH	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L06	17	PHI	PHI	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L06	18	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L06	19	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L06	20	DBL-SLASH	DBL-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L06	21	DBL-SLASH	DBL-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L06	22	CIRC-O	CIRC-O	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L06	23	O-DASH2	O-DASH2	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L06	24	C-BAR-X	C-BAR-X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L06	25	CIRC-O	CIRC-O	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L06	26	VEE	VEE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L06	27	WAVE-V	WAVE-V	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L06	28	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L06	29	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L06	30	VENUS	VENUS	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L06	31	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L07	1	X-DOT	X-DOT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L07	2	ARCH-DASH	ARCH-DASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L07	3	II-DASH	II-DASH	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L07	4	NINE-BAR	NINE-BAR	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L07	5	BAR-SOLID	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L07	6	DAGGER-O	DAGGER-O	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L07	7	C-DOT	C-DOT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L07	8	QQ-O	QQ-O	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L07	9	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L07	10	OX-TILDE	OX-TILDE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L07	11	STAR	STAR	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L07	12	VENUS	VENUS	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L07	13	OO-TILDE	OO-TILDE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L07	14	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L07	15	PICT-FIGURE	PICT-FIGURE	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L07	16	PICT-ARROW	PICT-ARROW	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L07	17	PICT-TREE	PICT-TREE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L07	18	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L07	19	O-DASH2	O-DASH2	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L07	20	CC-DASH	CC-DASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L07	21	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L07	22	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L07	23	CROSS-T	CROSS-T	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L07	24	C-DOT	C-DOT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L07	25	STAR	STAR	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L07	26	AMP	AMP	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L07	27	PHI	PHI	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L07	28	SCROLL-X	SCROLL-X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L07	29	SLASH	SLASH	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L07	30	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L07	31	OX-TILDE	OX-TILDE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L07	32	_	_	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L08	1	DASH-H	DASH-H	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L08	2	BAR-THIN	BAR-THIN	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L08	3	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L08	4	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L08	5	_	_	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L08	6	PCT	PCT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L08	7	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L08	8	Y-CURL	Y-CURL	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L08	9	X	X	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L08	10	CIRC-O	CIRC-O	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L08	11	PICT-CROSSED	PICT-CROSSED	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L08	12	MULTI	MULTI	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L08	13	QQ-O	QQ-O	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L08	14	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L08	15	GEAR-DOT	GEAR-DOT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L08	16	XX-TILDE	XX-TILDE	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L08	17	XX-TILDE	XX-TILDE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L08	18	II-O	II-O	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L08	19	O-DOTS	O-DOTS	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L08	20	A-LOOP	A-LOOP	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L08	21	OX-TILDE	OX-TILDE	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L08	22	ARCH-DASH	ARCH-DASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L08	23	MULTI	MULTI	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L08	24	MULTI	MULTI	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L08	25	XX-TILDE	XX-TILDE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L08	26	_	_	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L09	1	GEAR-DOT	GEAR-DOT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L09	2	AMP	AMP	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L09	3	DOUBLE-LOOP	DOUBLE-LOOP	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L09	4	LAMBDA	LAMBDA	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L09	5	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L09	6	II-DASH	II-DASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L09	7	H-LETTER	H-LETTER	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L09	8	BAR-SOLID	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L09	9	D-LETTER	D-LETTER	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L09	10	D-LETTER	D-LETTER	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L09	11	L-LETTER	L-LETTER	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L09	12	M-LETTER	M-LETTER	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L09	13	BAR-SOLID	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L09	14	F-LETTER	F-LETTER	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L09	15	BLOB	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L09	16	BAR-SOLID	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L09	17	BAR-SOLID	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L09	18	MULTI	MULTI	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L09	19	DAGGER-O	DAGGER-O	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L09	20	CROSS-T	CROSS-T	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L09	21	PHI	PHI	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L09	22	B-SCRIPT	B-SCRIPT	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L09	23	II-DASH	II-DASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L09	24	MULTI	MULTI	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L09	25	DBL-SLASH	DBL-SLASH	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L09	26	BLOB	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L09	27	MULTI	MULTI	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L09	28	C-DOT	C-DOT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L09	29	BAR-SOLID	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L09	30	O-TILDE	O-TILDE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L09	31	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L09	32	PHI	PHI	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L09	33	ARC-LOOPS	ARC-LOOPS	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L09	34	Y-CURL	Y-CURL	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L09	35	BLOB	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L09	36	CIRC-O	CIRC-O	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L09	37	PCT-SLASH	PCT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L09	38	CC-DASH	CC-DASH	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L09	39	OX	OX	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L09	40	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L09	41	DASH-V	DASH-V	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L10	1	FIVE	FIVE	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L10	2	VENUS	VENUS	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L10	3	_	_	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L10	4	II-DASH	II-DASH	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L10	5	PCT-SLASH	PCT	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L10	6	F-LETTER	F-LETTER	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L10	7	QQ-O	QQ-O	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L10	8	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L10	9	SUN	SUN	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L10	10	LOOP-TAIL	LOOP-TAIL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L10	11	PCT	PCT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L10	12	NOTE	NOTE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L10	13	CC-DASH	CC-DASH	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L10	14	X-O	X-O	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L10	15	MULTI	MULTI	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L10	16	PICT-FISH	PICT-FISH	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L10	17	PCT-SLASH	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L10	18	O-SLASH	O-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L10	19	DOTS-TILDE	DOTS-TILDE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L10	20	PICT-BARREL	PICT-BARREL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L10	21	DBL-SLASH	DBL-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L10	22	SIX-CURL	SIX-CURL	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L10	23	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L10	24	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L10	25	Y-CURL	Y-CURL	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L10	26	SCROLL-X	SCROLL-X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L10	27	Y-CURL	Y-CURL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L10	28	DOTS-TILDE	DOTS-TILDE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L10	29	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L10	30	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L10	31	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L10	32	O-DASH2	O-DASH2	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L10	33	BAR-THIN	BAR-THIN	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L11	1	GEAR-DOT	GEAR-DOT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L11	2	VENUS	VENUS	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L11	3	_	_	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L11	4	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L11	5	EIGHT	EIGHT	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L11	6	CC-O	CC-O	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L11	7	CROSS-T	CROSS-T	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L11	8	CC-DASH	CC-DASH	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L11	9	XX-TILDE	XX-TILDE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L11	10	MULTI	MULTI	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L11	11	S-CURL	S-CURL	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L11	12	SQUIG-DOT	SQUIG-DOT	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L11	13	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L11	14	WAVE	WAVE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L11	15	PCT	PCT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L11	16	PCT	PCT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L11	17	AMP	AMP	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L11	18	Y-CURL	Y-CURL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L11	19	XX-TILDE	XX-TILDE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L11	20	STAR	STAR	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L11	21	LOOP-STEM	LOOP-STEM	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L11	22	BAR-THIN	BAR-THIN	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L11	23	CC-O	CC-O	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L11	24	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L11	25	WAVE-V	WAVE-V	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L11	26	C-DOT	C-DOT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L11	27	Y-CURL	Y-CURL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L11	28	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L11	29	CC-O	CC-O	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L11	30	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L11	31	O-BAR-O	O-BAR-O	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L11	32	DASH-V	DASH-V	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L12	1	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L12	2	VENUS	VENUS	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L12	3	PCT	PCT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L12	4	BAR-THIN	BAR-THIN	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L12	5	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L12	6	S-CURL	S-CURL	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L12	7	BAR-SOLID	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L12	8	PCT-SLASH	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L12	9	BAR-SOLID	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L12	10	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L12	11	MULTI	MULTI	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L12	12	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L12	13	X-DASH	X-DASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L12	14	AMP	AMP	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L12	15	AMP	AMP	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L12	16	C-BAR-X	C-BAR-X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L12	17	LOOP-STEM	LOOP-STEM	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L12	18	PICT-LEAF	PICT-LEAF	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L12	19	EIGHT	EIGHT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L12	20	C-DOT	C-DOT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L12	21	STAR	STAR	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L12	22	MULTI	MULTI	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L12	23	NOTE	NOTE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L12	24	QUESTION	QUESTION	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L12	25	QUESTION	QUESTION	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L12	26	CIRC-O	CIRC-O	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L12	27	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L12	28	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L12	29	C-DOT	C-DOT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L12	30	PCT	PCT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L12	31	BAR-SOLID	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L12	32	CROSS-T	CROSS-T	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L12	33	PHI	PHI	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L12	34	X-SLASH	X-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L12	35	PICT-JUG	PICT-JUG	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L12	36	DASH-V	DASH-V	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L13	1	BLOB	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L13	2	ARCH-DASH	ARCH-DASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L13	3	VENUS	VENUS	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L13	4	BAR-SOLID	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L13	5	BAR-THIN	BAR-THIN	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L13	6	BLOB	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L13	7	ARC-LOOPS	ARC-LOOPS	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L13	8	WAVE	WAVE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L13	9	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L13	10	DBL-SLASH	DBL-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L13	11	CIRC-O	CIRC-O	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L13	12	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L13	13	V-DOT	V-DOT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L13	14	X-CURL	X-CURL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L13	15	STAR	STAR	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L13	16	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L13	17	PICT-TREE	PICT-TREE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L13	18	Y-CURL	Y-CURL	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L13	19	PHI	PHI	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L13	20	LOOP-STEM	LOOP-STEM	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L13	21	CIRC-O	CIRC-O	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L13	22	PICT-HOUSE	PICT-HOUSE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L13	23	DOTS-TILDE	DOTS-TILDE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L13	24	BAR-SOLID	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L13	25	BAR-SOLID	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L13	26	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L13	27	_	_	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L13	28	BLOB	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L13	29	BAR-THIN	BAR-THIN	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L13	30	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L13	31	BAR-SOLID	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L13	32	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L13	33	LOOP-STEM	LOOP-STEM	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L13	34	O-BAR-CC	O-BAR-CC	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L13	35	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L13	36	CROSS-T	CROSS-T	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L13	37	O-TILDE	O-TILDE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L13	38	BUCKET	BUCKET	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L13	39	BAR-THIN	BAR-THIN	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L14	1	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L14	2	O-SLASH	O-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L14	3	LOOP-STEM	LOOP-STEM	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L14	4	QQ-O	QQ-O	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L14	5	EIGHT	EIGHT	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L14	6	VENUS	VENUS	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L14	7	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L14	8	X-CURL	X-CURL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L14	9	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L14	10	MULTI	MULTI	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L14	11	A-LOOP	A-LOOP	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L14	12	X-CURL	X-CURL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L14	13	PHI	PHI	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L14	14	WAVE	WAVE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L14	15	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L14	16	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L14	17	SLASH	SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L14	18	CIRC-O	CIRC-O	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L14	19	CC-DASH	CC-DASH	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L14	20	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L14	21	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L14	22	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L14	23	O-BAR-CC	O-BAR-CC	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L14	24	Y-CURL	Y-CURL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L14	25	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L14	26	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L14	27	CIRC-O	CIRC-O	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L14	28	PCT-SLASH	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L14	29	PHI	PHI	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L14	30	_	_	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L14	31	BAR-THIN	BAR-THIN	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L15	1	PICT-ANCHOR	PICT-ANCHOR	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L15	2	THREE	THREE	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L15	3	NOTE	NOTE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L15	4	BLOB	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L15	5	BAR-SOLID	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L15	6	BAR-SOLID	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L15	7	BAR-SOLID	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L15	8	BAR-THIN	BAR-THIN	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L15	9	BAR-SOLID	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L15	10	BAR-SOLID	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L15	11	MULTI	MULTI	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L15	12	II-DASH	II-DASH	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L15	13	C-DOT	C-DOT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L15	14	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L15	15	O-DASH2	O-DASH2	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L15	16	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L15	17	C-DOT	C-DOT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L15	18	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L15	19	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L15	20	CIRC-O	CIRC-O	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L15	21	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L15	22	BLOB	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L15	23	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L15	24	X-SLASH	X-SLASH	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L15	25	Y-CURL	Y-CURL	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L15	26	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L15	27	CHEVRON2	CHEVRON2	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L15	28	NOTE	NOTE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L15	29	O-BRACKET	O-BRACKET	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L15	30	AMP	AMP	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L15	31	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L15	32	DOUBLE-LOOP	DOUBLE-LOOP	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L15	33	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L15	34	DAGGER-O	DAGGER-O	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L15	35	X-SLASH	X-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L15	36	_	_	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L16	1	O-TILDE	O-TILDE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L16	2	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L16	3	BAR-SOLID	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L16	4	PICT-CROWN	PICT-CROWN	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L16	5	MULTI	MULTI	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L16	6	CC-DASH	CC-DASH	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L16	7	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L16	8	OX-TILDE	OX-TILDE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L16	9	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L16	10	WAVE	WAVE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L16	11	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L16	12	C-DOT	C-DOT	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L16	13	HOOK-P	HOOK-P	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L16	14	A-LOOP	A-LOOP	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L16	15	BLOB-LOOP	BLOB-LOOP	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L16	16	QQ-O	QQ-O	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L16	17	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L16	18	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L16	19	BLOB	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L16	20	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L16	21	X-CURL	X-CURL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L16	22	X-DASH	X-DASH	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L16	23	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L16	24	Y-CURL	Y-CURL	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L16	25	BAR-SOLID	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L16	26	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L16	27	BAR-SOLID	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L16	28	BLOB	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L16	29	Y-CURL	Y-CURL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L16	30	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L16	31	WAVE	WAVE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L16	32	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L17	1	BAR-THIN	BAR-THIN	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L17	2	Y-CURL	Y-CURL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L17	3	CROSS-T	CROSS-T	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L17	4	NOTE	NOTE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L17	5	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L17	6	PICT-ANCHOR	PICT-ANCHOR	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L17	7	VEE	VEE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L17	8	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L17	9	II-DASH	II-DASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L17	10	O-SLASH	O-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L17	11	C-BAR-X	C-BAR-X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L17	12	MULTI	MULTI	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L17	13	BOX-X	BOX-X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L17	14	DBL-SLASH	DBL-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L17	15	LOOP-TAIL	LOOP-TAIL	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L17	16	TILDE-DASH	TILDE-DASH	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L17	17	C-DOT	C-DOT	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L17	18	VENUS	VENUS	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L17	19	AMP	AMP	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L17	20	OX	OX	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L17	21	BAR-SOLID	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L17	22	BAR-SOLID	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L17	23	M-LETTER	M-LETTER	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L17	24	NOTE	NOTE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L17	25	OX-TILDE	OX-TILDE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L17	26	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L17	27	NINE	NINE	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L17	28	BLOB	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L17	29	PICT-BIRD	PICT-BIRD	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L17	30	_	_	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2a_L17	31	DASH-V	DASH-V	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L01	1	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L01	2	_	_	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L01	3	PCT-SLASH	PCT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L01	4	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L01	5	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L01	6	PHI	PHI	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L01	7	PICT-LEAF	PICT-LEAF	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L01	8	BAR-THIN	BAR-THIN	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L01	9	BAR-THIN	BAR-THIN	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L01	10	CROSS-T	CROSS-T	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L01	11	DASH-H	DASH-H	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L01	12	BAR-THIN	BAR-THIN	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L01	13	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L01	14	A-LOOP	A-LOOP	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L01	15	X-DASH	X-DASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L01	16	_	_	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L01	17	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L01	18	CIRC-O	CIRC-O	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L01	19	OX-TILDE	OX-TILDE	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L01	20	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L01	21	PHI	PHI	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L01	22	VEE	VEE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L01	23	CROSS-T	CROSS-T	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L01	24	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L01	25	BAR-SOLID	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L01	26	DAGGER-O	DAGGER-O	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L01	27	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L01	28	CC-DASH	CC-DASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L01	29	TRIDENT	TRIDENT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L01	30	PCT-SLASH	PCT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L01	31	Z-CURL	Z-CURL	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L01	32	BAR-THIN	BAR-THIN	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L01	33	BOX-8	BOX-8	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L01	34	O-DASH2	O-DASH2	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L01	35	DOUBLE-LOOP	DOUBLE-LOOP	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L01	36	OO-DASH	OO-DASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L01	37	BAR-THIN	BAR-THIN	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L02	1	VEE	VEE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L02	2	PCT	PCT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L02	3	MULTI	MULTI	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L02	4	CC-DASH	CC-DASH	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L02	5	CHAIN	CHAIN	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L02	6	Y-CURL	Y-CURL	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L02	7	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L02	8	O-SLASH	O-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L02	9	BAR-SOLID	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L02	10	Y-CURL	Y-CURL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L02	11	X-BAR-CC	X-BAR-CC	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L02	12	MULTI	MULTI	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L02	13	BLOB	BLOB	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L02	14	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L02	15	CC-DASH	CC-DASH	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L02	16	X-BAR-CC	X-BAR-CC	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L02	17	EIGHT	EIGHT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L02	18	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L02	19	OX-TILDE	OX-TILDE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L02	20	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L02	21	BLOB	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L02	22	BAR-SOLID	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L02	23	BLOB	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L02	24	Y-CURL	Y-CURL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L02	25	BLOB	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L02	26	BAR-THIN	BAR-THIN	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L03	1	II-DASH	II-DASH	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L03	2	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L03	3	X-LOOP	X-LOOP	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L03	4	QQ-DASH	QQ-DASH	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L03	5	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L03	6	BAR-THIN	BAR-THIN	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L03	7	SLASH3	SLASH3	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L03	8	CIRC-O	CIRC-O	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L03	9	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L03	10	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L03	11	O-SLASH	O-SLASH	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L03	12	SUN	SUN	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L03	13	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L03	14	O-SLASH	O-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L03	15	X-CURL	X-CURL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L03	16	II-O	II-O	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L03	17	ARCH-DASH	ARCH-DASH	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L03	18	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L03	19	TRIDENT	TRIDENT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L03	20	VEE	VEE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L03	21	E-BAR	E-BAR	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L03	22	II-O	II-O	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L03	23	AMP	AMP	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L03	24	WAVE	WAVE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L03	25	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L03	26	Y-CURL	Y-CURL	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L03	27	BLOB	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L03	28	CIRC-O	CIRC-O	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L03	29	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L03	30	DBL-SLASH	DBL-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L03	31	O-SLASH	O-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L04	1	Y-CURL	Y-CURL	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L04	2	BLOB	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L04	3	O-DASHBELOW	O-DASHBELOW	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L04	4	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L04	5	II-DASH	II-DASH	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L04	6	OX-TILDE	OX-TILDE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L04	7	ARCH	ARCH	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L04	8	DAGGER-O	DAGGER-O	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L04	9	MULTI	MULTI	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L04	10	VEE	VEE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L04	11	Y-CURL	Y-CURL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L04	12	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L04	13	O-TILDE	O-TILDE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L04	14	CRESCENT	CRESCENT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L04	15	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L04	16	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L04	17	WAVE	WAVE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L04	18	DAGGER-O	DAGGER-O	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L04	19	X-SLASH	X-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L04	20	CIRC-O	CIRC-O	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L04	21	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L04	22	VEE	VEE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L04	23	Y-CURL	Y-CURL	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L04	24	OX-TILDE	OX-TILDE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L04	25	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L04	26	SEVEN	SEVEN	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L04	27	EIGHT	EIGHT	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L04	28	BUCKET	BUCKET	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L05	1	O-SLASH	O-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L05	2	S-CURL	S-CURL	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L05	3	DAGGER-O	DAGGER-O	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L05	4	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L05	5	WAVE	WAVE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L05	6	VEE	VEE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L05	7	VENUS	VENUS	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L05	8	OX	OX	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L05	9	MULTI	MULTI	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L05	10	AMP	AMP	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L05	11	WAVE	WAVE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L05	12	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L05	13	PICT-D	PICT-D	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L05	14	NINE	NINE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L05	15	X-BAR-CC	X-BAR-CC	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L05	16	DBL-SLASH	DBL-SLASH	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L05	17	CHEVRON	CHEVRON	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L05	18	CIRC-O	CIRC-O	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L05	19	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L05	20	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L05	21	CIRC-O	CIRC-O	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L05	22	O-SLASH	O-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L05	23	BAR-THIN	BAR-THIN	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L06	1	WAVE	WAVE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L06	2	GEAR-DOT	GEAR-DOT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L06	3	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L06	4	ARCH-O	ARCH-O	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L06	5	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L06	6	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L06	7	PHI	PHI	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L06	8	X-SLASH	X-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L06	9	O-DASH2	O-DASH2	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L06	10	CROSS-T	CROSS-T	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L06	11	VENUS	VENUS	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L06	12	OX-TILDE	OX-TILDE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L06	13	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L06	14	QQ-O	QQ-O	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L06	15	CROSS-T	CROSS-T	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L06	16	PICT-FACE	PICT-FACE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L06	17	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L06	18	NINE	NINE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L06	19	WAVE	WAVE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L06	20	PCT	PCT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L06	21	CROSS-T	CROSS-T	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L06	22	PHI	PHI	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L06	23	ARROW-O	ARROW-O	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L06	24	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L06	25	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L06	26	O-SLASH	O-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L06	27	_	_	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L06	28	_	_	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L06	29	J-DOTS	J-DOTS	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L06	30	A-LOOP	A-LOOP	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L06	31	BAR-THIN	BAR-THIN	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L07	1	SUN	SUN	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L07	2	VENUS	VENUS	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L07	3	CROSS-T	CROSS-T	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L07	4	CC-DASH	CC-DASH	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L07	5	CHEVRON2	CHEVRON2	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L07	6	CHEVRON2	CHEVRON2	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L07	7	DASH-H	DASH-H	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L07	8	MULTI	MULTI	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L07	9	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L07	10	O-TILDE	O-TILDE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L07	11	Y-CURL	Y-CURL	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L07	12	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L07	13	E-BAR	E-BAR	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L07	14	S-CURL	S-CURL	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L07	15	V-PCT-BLOB	V-PCT-BLOB	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L07	16	CC-DASH	CC-DASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L07	17	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L07	18	DASH-H	DASH-H	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L07	19	DASH-H	DASH-H	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L07	20	QUESTION	QUESTION	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L07	21	O-SLASH	O-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L07	22	C-DOT	C-DOT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L07	23	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L07	24	MULTI	MULTI	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L07	25	Z-CURL	Z-CURL	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L07	26	WAVE-V	WAVE-V	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L08	1	DOTS-TILDE	DOTS-TILDE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L08	2	DAGGER-O	DAGGER-O	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L08	3	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L08	4	TRIDENT	TRIDENT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L08	5	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L08	6	O-SLASH	O-SLASH	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L08	7	VEE	VEE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L08	8	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L08	9	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L08	10	S-CURL	S-CURL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L08	11	CIRC-O	CIRC-O	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L08	12	PICT-FACE	PICT-FACE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L08	13	STAR	STAR	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L09	1	_	_	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L09	2	_	_	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L09	3	_	_	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L09	4	_	_	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L09	5	DBL-SLASH	DBL-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L09	6	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L09	7	_	_	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L09	8	CC-DASH	CC-DASH	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L09	9	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L09	10	WAVE	WAVE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L09	11	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L09	12	DOUBLE-LOOP	DOUBLE-LOOP	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L09	13	CROSS-T	CROSS-T	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c2b_L09	14	PICT-ARROW	PICT-ARROW	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L01	1	PICT-RUNNER	PICT-RUNNER	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L01	2	OX-TILDE	OX-TILDE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L01	3	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L01	4	CC-DASH	CC-DASH	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L01	5	NINE-DASH	NINE-DASH	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L01	6	PHI	PHI	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L01	7	O-DASH2	O-DASH2	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L01	8	PCT-SLASH	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L01	9	HOOK-P	HOOK-P	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L01	10	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L01	11	II-DASH	II-DASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L01	12	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L01	13	LAMBDA	LAMBDA	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L01	14	X-CURL	X-CURL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L01	15	PCT	PCT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L01	16	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L01	17	CROSS-T	CROSS-T	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L01	18	PICT-TREE	PICT-TREE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L01	19	CHEVRON2	CHEVRON2	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L01	20	O-BAR-O	O-BAR-O	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L01	21	Y-CURL	Y-CURL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L01	22	WAVE	WAVE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L01	23	CIRC-O	CIRC-O	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L01	24	X-DOT	X-DOT	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L01	25	ARCH-O	ARCH-O	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L01	26	PICT-HORSE	PICT-HORSE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L01	27	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L01	28	CIRC-O	CIRC-O	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L01	29	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L01	30	O-II	O-II	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L01	31	_	_	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L01	32	HOOK-O	HOOK-O	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L01	33	PCT-SLASH	PCT	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L01	34	BLOB	BLOB	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L01	35	BAR-THIN	BAR-THIN	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L02	1	PCT	PCT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L02	2	SUN	SUN	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L02	3	A-LOOP	A-LOOP	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L02	4	BAR-SOLID	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L02	5	PCT	PCT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L02	6	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L02	7	U-CROSS	U-CROSS	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L02	8	Y-CURL	Y-CURL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L02	9	PHI	PHI	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L02	10	II-DASH	II-DASH	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L02	11	ARCH-DASH	ARCH-DASH	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L02	12	NOTE	NOTE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L02	13	O-DASH-DOTS	O-DASH-DOTS	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L02	14	II-SLASH	II-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L02	15	O-DASHBELOW	O-DASHBELOW	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L02	16	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L02	17	Y-CURL	Y-CURL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L02	18	CIRC-O	CIRC-O	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L02	19	A-DASH	A-DASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L02	20	PHI	PHI	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L02	21	II-SLASH	II-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L02	22	VEE	VEE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L02	23	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L02	24	Y-CURL	Y-CURL	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L02	25	Z-CURL	Z-CURL	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L02	26	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L02	27	OX-TILDE	OX-TILDE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L02	28	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L02	29	II-O	II-O	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L02	30	X-O	X-O	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L02	31	WAVE	WAVE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L02	32	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L02	33	BOX-M	BOX-M	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L03	1	X-O	X-O	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L03	2	X-CURL	X-CURL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L03	3	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L03	4	TRIDENT	TRIDENT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L03	5	Y-CURL	Y-CURL	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L03	6	U-DASH	U-DASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L03	7	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L03	8	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L03	9	II-O	II-O	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L03	10	X-SLASH	X-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L03	11	O-TILDE	O-TILDE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L03	12	DIAMOND	DIAMOND	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L03	13	II-TILDE	II-TILDE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L03	14	Y-CURL	Y-CURL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L03	15	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L03	16	EIGHT	EIGHT	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L03	17	BLOB	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L03	18	O-SLASH	O-SLASH	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L03	19	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L03	20	C-DOT	C-DOT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L03	21	BLOB	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L03	22	SUN	SUN	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L03	23	MULTI	MULTI	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L03	24	X-CURL	X-CURL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L03	25	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L03	26	TRIDENT	TRIDENT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L03	27	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L03	28	Y-CURL	Y-CURL	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L03	29	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L03	30	SCROLL-X	SCROLL-X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L03	31	X-DOT	X-DOT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L03	32	DAGGER-O	DAGGER-O	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L04	1	LOOP-STEM	LOOP-STEM	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L04	2	CIRC-O	CIRC-O	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L04	3	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L04	4	II-O	II-O	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L04	5	A-LOOP	A-LOOP	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L04	6	WAVE	WAVE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L04	7	Y-CURL	Y-CURL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L04	8	CHEVRON2	CHEVRON2	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L04	9	DASH-H	DASH-H	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L04	10	NINE-BAR	NINE-BAR	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L04	11	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L04	12	S-CURL	S-CURL	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L04	13	Y-CURL	Y-CURL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L04	14	C-BAR-X	C-BAR-X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L04	15	QUESTION	QUESTION	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L04	16	BAR-SOLID	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L04	17	BAR-SOLID	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c3_L04	18	BAR-THIN	BAR-THIN	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L01	1	PICT-HEART	PICT-HEART	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L01	2	Y-CURL	Y-CURL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L01	3	II-DASH	II-DASH	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L01	4	O-SLASH	O-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L01	5	S-CURL	S-CURL	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L01	6	NOTE	NOTE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L01	7	EIGHT	EIGHT	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L01	8	QUESTION	QUESTION	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L01	9	VENUS	VENUS	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L01	10	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L01	11	TAURUS	TAURUS	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L01	12	PCT-SLASH	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L01	13	Y-CURL	Y-CURL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L01	14	WAVE	WAVE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L02	1	CC-DASH	CC-DASH	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L02	2	PCT-SLASH	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L02	3	S-CURL	S-CURL	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L02	4	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L02	5	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L02	6	LAMBDA	LAMBDA	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L02	7	CROSS-T	CROSS-T	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L02	8	O-SLASH	O-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L02	9	O-TILDE	O-TILDE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L02	10	STAR	STAR	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L02	11	VENUS	VENUS	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L02	12	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L02	13	DASH-H	DASH-H	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L03	1	SUN	SUN	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L03	2	MULTI	MULTI	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L03	3	BLOB	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L03	4	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L03	5	OO-TILDE	OO-TILDE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L03	6	II-DASH	II-DASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L03	7	CC-O	CC-O	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L03	8	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L03	9	Y-CURL	Y-CURL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L03	10	LOOP-TAIL	LOOP-TAIL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L03	11	X-CURL	X-CURL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L03	12	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L03	13	BLOB	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L04	1	OMEGA	OMEGA	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L04	2	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L04	3	A-LETTER	A-LETTER	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L04	4	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L04	5	THETA-BAR	THETA-BAR	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L04	6	CC-DASH	CC-DASH	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L04	7	VENUS	VENUS	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L04	8	RAM	RAM	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L04	9	PCT-SLASH	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L04	10	BLOB	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L04	11	WAVE	WAVE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L04	12	CHEVRON2	CHEVRON2	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L04	13	CIRC-O	CIRC-O	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L04	14	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L04	15	OX-TILDE	OX-TILDE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L04	16	PCT-SLASH	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L04	17	BLOB	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L04	18	HOOK-L	HOOK-L	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L05	1	VEE	VEE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L05	2	O-DASH2	O-DASH2	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L05	3	PCT-SLASH	PCT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L05	4	WAVE	WAVE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L05	5	II-O	II-O	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L05	6	ARCH-O	ARCH-O	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L05	7	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L05	8	CIRC-O	CIRC-O	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L05	9	BLOB	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L05	10	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L05	11	O-SLASH	O-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L05	12	PCT-SLASH	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L05	13	Y-LOOPS	Y-LOOPS	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L05	14	BLOB	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L05	15	PCT-SLASH	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L05	16	Y-CURL	Y-CURL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L05	17	CIRC-O	CIRC-O	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L05	18	BLOB	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L06	1	O-PLUS	O-PLUS	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L06	2	X-DASH	X-DASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L06	3	CHEVRON2	CHEVRON2	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L06	4	DASH-H	DASH-H	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L06	5	DIAMOND	DIAMOND	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L06	6	ARROW-UP	ARROW-UP	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L06	7	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L06	8	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L06	9	VENUS	VENUS	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L06	10	MARS	MARS	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L06	11	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L06	12	EIGHT	EIGHT	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L06	13	THETA-BAR	THETA-BAR	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L06	14	O-DASH2	O-DASH2	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L06	15	QUESTION	QUESTION	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L07	1	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L07	2	O-DASHBELOW	O-DASHBELOW	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L07	3	MULTI	MULTI	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L07	4	S-CURL	S-CURL	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L07	5	PCT-SLASH	PCT	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L07	6	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L07	7	O-TILDE	O-TILDE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L07	8	VEE	VEE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L07	9	V-LOOP	V-LOOP	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L07	10	O-SLASH	O-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L07	11	WAVE	WAVE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L07	12	PCT-SLASH	PCT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L07	13	O-DASH2	O-DASH2	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L07	14	HOOK-L	HOOK-L	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L08	1	TWO	TWO	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L08	2	MULTI	MULTI	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L08	3	DAGGER-O	DAGGER-O	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L08	4	EIGHT	EIGHT	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L08	5	O-SLASH	O-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L08	6	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L08	7	MULTI	MULTI	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L08	8	CIRC-O	CIRC-O	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L08	9	WAVE	WAVE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L08	10	CROSS-T	CROSS-T	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L08	11	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L08	12	Y-LOOPS	Y-LOOPS	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L08	13	X-BAR	X-BAR	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L08	14	X-SLASH	X-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L08	15	O-TILDE	O-TILDE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L08	16	VENUS	VENUS	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L08	17	QUESTION	QUESTION	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L09	1	XX-TILDE	XX-TILDE	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L09	2	Y-CURL	Y-CURL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L09	3	VENUS	VENUS	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L09	4	BLOB	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L09	5	TAURUS	TAURUS	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L09	6	NOTE	NOTE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L09	7	NOTE	NOTE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L09	8	PICT-ARROW	PICT-ARROW	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L09	9	OMEGA	OMEGA	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L09	10	O-TILDE	O-TILDE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L09	11	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L09	12	X-CURL	X-CURL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L09	13	CC-DASH	CC-DASH	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L09	14	VENUS	VENUS	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L09	15	BLOB	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L10	1	X-SLASH	X-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L10	2	O-DOT-STEM	O-DOT-STEM	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L10	3	NOTE	NOTE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L10	4	PICT-RUNNER	PICT-RUNNER	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L10	5	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L10	6	_	_	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L10	7	C-DOT	C-DOT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L10	8	MULTI	MULTI	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L10	9	BLOB	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L10	10	X	X	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L10	11	PICT-HOUSE	PICT-HOUSE	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L10	12	MULTI	MULTI	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L10	13	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L10	14	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L10	15	O-SLASH	O-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L10	16	DELTA	DELTA	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L10	17	_	_	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L11	1	ARCH-DASH	ARCH-DASH	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L11	2	II-O	II-O	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L11	3	O-SLASH	O-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L11	4	MULTI	MULTI	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L11	5	MULTI	MULTI	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L11	6	_	_	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L11	7	O-TILDE	O-TILDE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L11	8	PCT-SLASH	PCT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L11	9	LOOP-STEM	LOOP-STEM	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L11	10	DELTA	DELTA	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L11	11	BLOB	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L12	1	PICT-LEAF	PICT-LEAF	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L12	2	O-SLASH	O-SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L12	3	LOOP-TAIL	LOOP-TAIL	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L12	4	Y-CURL	Y-CURL	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L12	5	OX-TILDE	OX-TILDE	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L12	6	ARCH-DASH	ARCH-DASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L12	7	X	X	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L12	8	WAVE	WAVE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L12	9	VEE	VEE	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L12	10	BLOB	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L12	11	X-CURL	X-CURL	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L12	12	Y-CURL	Y-CURL	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L12	13	O-DASHBELOW	O-DASHBELOW	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L12	14	BLOB	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L12	15	SIGMA	SIGMA	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L12	16	QUESTION	QUESTION	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L12	17	QUESTION	QUESTION	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L12	18	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L12	19	OX	OX	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L13	1	PICT-ANCHOR	PICT-ANCHOR	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L13	2	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L13	3	DAGGER-O	DAGGER-O	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L13	4	F-LETTER	F-LETTER	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L13	5	EIGHT	EIGHT	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L13	6	BOX-GRID	BOX-GRID	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L13	7	Y-LOOPS	Y-LOOPS	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L13	8	Y-CURL	Y-CURL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L13	9	U-CUP	U-CUP	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L13	10	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L13	11	WAVE	WAVE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L13	12	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L13	13	VENUS	VENUS	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L13	14	X-DASH	X-DASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L13	15	II-DASH	II-DASH	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L13	16	CIRC-O	CIRC-O	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L13	17	DAGGER-O	DAGGER-O	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L14	1	TWO	TWO	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L14	2	MULTI	MULTI	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L14	3	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L14	4	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L14	5	DIAMOND	DIAMOND	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L14	6	X-DASH	X-DASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L14	7	IOI-TILDE	IOI-TILDE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L14	8	U-DASH	U-DASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L14	9	Y-CURL	Y-CURL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L14	10	SIGMA	SIGMA	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L14	11	MULTI	MULTI	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L14	12	NOTE	NOTE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4a_L14	13	BLOB	BLOB	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L01	1	CHEVRON2	CHEVRON2	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L01	2	RAM	RAM	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L01	3	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L01	4	STAR	STAR	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L01	5	HASH	HASH	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L01	6	ARROW-UP	ARROW-UP	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L01	7	X	X	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L01	8	SMILE	SMILE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L01	9	PCT-SLASH	PCT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L01	10	S-CURL	S-CURL	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L01	11	PICT-ARROW	PICT-ARROW	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L02	1	DELTA	DELTA	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L02	2	DOTS-DASH	DOTS-DASH	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L02	3	ARROW-O	ARROW-O	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L02	4	CC-O	CC-O	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L02	5	OX-TILDE	OX-TILDE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L02	6	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L02	7	O-DASH2	O-DASH2	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L02	8	PCT-SLASH	PCT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L02	9	Y-CURL	Y-CURL	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L02	10	II-SLASH	II-SLASH	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L02	11	DOLLAR	DOLLAR	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L02	12	LOOP-TAIL	LOOP-TAIL	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L02	13	S-CURL	S-CURL	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L02	14	PCT	PCT	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L02	15	WAVE	WAVE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L03	1	S-CURL	S-CURL	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L03	2	X-BAR-CC	X-BAR-CC	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L03	3	SUN	SUN	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L03	4	CHEVRON2	CHEVRON2	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L03	5	GEAR-DOT	GEAR-DOT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L03	6	CHEVRON2	CHEVRON2	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L03	7	OX-TILDE	OX-TILDE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L03	8	PICT-FACE	PICT-FACE	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L03	9	NOTE	NOTE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L03	10	ARCH-DASH	ARCH-DASH	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L03	11	O-TILDE	O-TILDE	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L03	12	PCT-SLASH	PCT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L03	13	WAVE	WAVE	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L04	1	DIAMOND	DIAMOND	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L04	2	SIGMA	SIGMA	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L04	3	ARCH-O	ARCH-O	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L04	4	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L04	5	VENUS	VENUS	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L04	6	MULTI	MULTI	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L04	7	EIGHT	EIGHT	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L04	8	CHEVRON	CHEVRON	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L04	9	CHEVRON	CHEVRON	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L04	10	CIRC-O	CIRC-O	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L04	11	SLASH	SLASH	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L04	12	II-O	II-O	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L04	13	CIRC-O	CIRC-O	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L04	14	CIRC-O	CIRC-O	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L04	15	THETA-BAR	THETA-BAR	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L04	16	S-CURL	S-CURL	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L05	1	O-DOT-STEM	O-DOT-STEM	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L05	2	PICT-CROSSED	PICT-CROSSED	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L05	3	LOOP-STEM	LOOP-STEM	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L05	4	V-LOOP	V-LOOP	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L05	5	M-LETTER	M-LETTER	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L05	6	THREE	THREE	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L05	7	SLASH	SLASH	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L05	8	TAURUS	TAURUS	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L05	9	OMEGA-O	OMEGA-O	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L05	10	SCROLL-X	SCROLL-X	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L05	11	PICT-GLASS	PICT-GLASS	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L05	12	EIGHT	EIGHT	M	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L05	13	X	X	H	single pass A (box_labels.tsv); blind pass B on this inventory pending
+c4b_L05	14	S-CURL	S-CURL	L	single pass A (box_labels.tsv); blind pass B on this inventory pending
