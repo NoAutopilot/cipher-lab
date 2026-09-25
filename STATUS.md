@@ -110,6 +110,8 @@ Check-in 25 Sept 04:25 UTC: LX-ED could not reach Textos Politicos 1993 by any c
 
 Check-in 25 Sept 04:55 UTC: OX closed on handoff 04:35 (ASKS 46 Heinsius request, LOCAL-QUEUE L11 AN Marine B7). PX live: PX-01 Brochado letterbook 1712-13 (cipher with in-volume decipherments) to check-solved at its 05:03 check-in; the dictionary-code scout found nothing new copy-free. No [SO-] pull request yet; L10 still queued. PX is the only live lane.
 
+Check-in 25 Sept 05:56 UTC: PX live. PX-01 Brochado letterbook (antt-msliv0638-brochado-1712): check-solved went blocked (Doria 1944 unreadable) then open on a Google Books search-within of that edition with live hits elsewhere in it (cifra p.151, Londres in the preface), so the zero hits for the London-embassy vocabulary are a real negative; the intake gate held. A second DigitArq harvest (PX-SCDIGI4) is running. HOSTS wrote the 38-host table into the Access playbook. No [SO-] pull request; L10, L11 still queued on the owner's machine. ASKS 47 lists five optional discovery keys.
+
 ## Parent handoff (cipher-lab-7b, session_01K7ZbE95o1pUW5gof8VA5PR, from 18:45 UTC 24 Sept 2026; 7a was session_01EFmUvFAifLKGdBSsW9mjEG, 23 Sept 15:12 to 24 Sept 18:45), kept current
 
 The parent orchestrator runs the hourly check-in (trigger trig_01Ks1wNXPjfn7XW9EucmV9ru (parent 7b, 30-minute cadence while a worker runs, 90 otherwise), self-bound, re-armed by send_later at every firing; its prompt is the
