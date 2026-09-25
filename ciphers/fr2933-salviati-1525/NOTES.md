@@ -1663,7 +1663,7 @@ Requests: none (disk only). Regenerate: `python3 tools/family_run.py specs/fr293
 
 ## DSN2: non-vowel marks and word edges (25 Sept 2026, LANE R8)
 
-Worker LANE R8 DSN2 (Fable, cap $10, box 45 minutes), 23:10-DONETIME UTC. Brief `.claude/briefs/runs/2026-09-25-lane-r8-dsn2-salviati-marks.md`
+Worker LANE R8 DSN2 (Fable, cap $10, box 45 minutes), 23:10-23:42 UTC. Brief `.claude/briefs/runs/2026-09-25-lane-r8-dsn2-salviati-marks.md`
 (DSN sec.5 (a) and (c)). Disk only, no hosts, no subagents. **No reading; grades stay H0 C0 S0 M0 I0; no reading_dsn2.txt; nothing for
 the re-derivation.** Nomenclator words (DSN sec.5 (b)) were out of scope and are not touched: one line, still untested, needs a word-level scorer.
 
@@ -1704,7 +1704,7 @@ suggestion asked for; the excess over the eight bases' own types is the 5% error
 226-263 without the restriction because fewer of their tokens are marked.
 
 **3. Reading of the numbers.** Every control clears the gate on every seed (nine of nine; the lowest, V3 seed 2 at 72.5%, is the
-boundary variant with the fewest marked bases, and its 0%-error ceiling was not run -- see 5). Every target sits 0.3-0.5 per symbol
+boundary variant with the fewest marked bases, whose 0%-error ceiling is 93.9% -- see 5). Every target sits 0.3-0.5 per symbol
 below its own control on every seed (V1: 0.52; V3: 0.32-0.40; V2: 0.44-0.54), the same shape as DSN (0.27-0.40) and CM3, with the judge
 placing every decode between the shuffled null (-1.857) and real prose (-0.911), no Italian word hits above shuffle level, and no
 stable mark map: V1's anneal collapses the three numeral marks to one vowel (u on seeds 1 and 3, o on seed 2; V2 likewise u/u on seeds 1-2) and reads `~` as n on
@@ -1720,14 +1720,17 @@ orchestrator's.
 **4. Where it was not found.** The decodes are at `families/syllabary-{1,2,3}-err=0.05,marks=mixed.txt`, `...,marks=mixed,boundary=1.txt`,
 `...,bases=8,boundary=1.txt`; none carries a run of Italian; nothing was searched outside the disk (no hosts).
 
-**5. Not done, one line each.** The 0%-error ceilings for the three variants were not run (the nine 24-restart control+target
-pairs filled the 45-minute box on four cores; DSN's ceiling for the base design is 98%, and V1's 93-96% at 5% error says its
-headroom is the same, but V3 seed 2's 72.5% wants its ceiling before that seed's negative counts fully) -- `--control-only --seeds 3
---param err=0 --param bases=8 --param boundary=1`, about 6 minutes at 6 restarts. Next design steps the numbers suggest: (a) the
-second mark family as a following consonant class (`marks=~:nm,#:rst,+:rst,dot:rst,*:aeiou` or a per-mark explicit list) rather
-than doubling, which the language can supply at the target's 14.8%; (b) nomenclator words for the marked types on e, S7, ] (DSN
-sec.5 (b), word-level scorer); (c) `tools/tests/test_family_run.py` was not re-run under CPU load (the suffix change touches no
-default path; the syllabary test passed, 4 s).
+**5. 0%-error ceilings** (control-only, 3 seeds, 6 restarts, rule 3's headroom check, HYPOTHESES.md 23:39-23:40, `control_curve.tsv`
+designs `syl-mix-0`, `syl-mix-b-0`, `syl-b8-0`): V1 **96.7 / 88.4 / 99.0%** (mean 94.7), V2 **98.5 / 98.3 / 97.7%** (98.1), V3
+**98.4 / 93.9 / 94.4%** (95.5). Every variant is an easy design for this solver at N=2,820 when the transcription is clean, as DSN's
+was (98%); the 5% error costs V3 seed 2 about 21 points (93.9 -> 72.5) and the others 0-10, so the negatives of sec.3 are measured
+against controls with headroom, not against a solver that cannot read the design.
+
+**6. Not done, one line each.** (a) The second mark family as a following consonant class (`marks=~:nm,#:rst,+:rst,dot:rst,*:aeiou`,
+or an explicit per-mark list), which the language can supply at the target's 14.8% where plain doubling cannot (sec.1) -- one more
+`--param` row, no code change. (b) Nomenclator words for the marked types on e, S7, ] (DSN sec.5 (b)): needs a word-level scorer and a
+word list, out of scope here. (c) `tools/tests/test_family_run.py` was not re-run (CPU was full for the whole box; the suffix change
+touches no default path, and `tools/tests/test_syllabary.py` passes in 4 s).
 
 Requests: none (disk only). Regenerate: `python3 tools/family_run.py specs/fr2933-salviati-1525.json --family syllabary --seed S --seeds 1
 --restarts 24 --param err=0.05 --param marks=mixed` (V1), `... --param marks=mixed --param boundary=1` (V2), `... --param bases=8
