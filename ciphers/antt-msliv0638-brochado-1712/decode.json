@@ -19,6 +19,30 @@
         "# agreement between this decode and that plaintext.",
         "# tokens {total}: {HCSMIU} (U = code with no key.tsv row; M = key value held by <65% majority)"
       ]
+    },
+    {
+      "ciphertext": "body_ciphertext.tsv",
+      "key": "key.tsv",
+      "format": "tsv",
+      "line_column": "run_id",
+      "folio_column": "leaf",
+      "style": "concat",
+      "reading": "reading_body.txt",
+      "tokens": "reading_body_tokens.tsv",
+      "header": [
+        "# antt-msliv0638-brochado-1712 body cipher runs (outside the appendix m0279-296), decoded against the",
+        "# same key.tsv the appendix's own Deciffrada glosses built (key source grade 'period', PX-BROKEY/",
+        "# PX-BROKEY2/PX-BROGLYPH). m0179-r1/m0180-r1 (letters 80/81) are CONTROLS: the appendix already carries",
+        "# their plaintext (Carta 80/81) independently of this key, so their agreement with plaintext_appendix.tsv",
+        "# is a check on the key, not a reading. m0275-r1+m0276-r1+m0276-r2 (letter 134) has no appendix entry",
+        "# (past Carta 123, the appendix's highest) -- this is the genuine candidate reading (PX-BRODEC, 25 Sept",
+        "# 2026). Grade combines the key's own per-code grade (key.tsv 'grade' column) with this file's own",
+        "# transcription-pass grade (its 'conf' column, added by scripts/09_body_prep.py from the existing",
+        "# 'grade' column): a token grades C only when both the code is grade C in key.tsv AND the transcription",
+        "# agreed (conf=H); either one at M pulls the token down to M; an unkeyed code (no key.tsv row, mostly the",
+        "# unresolved ff?/dd?/+? glyphs) grades U, shown as the unkeyed marker below.",
+        "# tokens {total}: {HCSMIU}"
+      ]
     }
   ]
 }

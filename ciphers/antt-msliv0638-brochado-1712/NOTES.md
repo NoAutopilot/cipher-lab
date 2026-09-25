@@ -752,3 +752,106 @@ reported outside the repo.
 No network access; this pass worked entirely from the images already on disk (`images/full_PT-TT-MSLIV-0638_
 m0280.jpg.jpg` etc., fetched by PX-BROKEY/PX-CS01) and the TSVs already on disk. No subagents. Cost: not
 visible to me.
+
+## PX-BRODEC (25 Sept 2026): decode.json extended, controls gate failed, stopped per brief
+
+Worker PX-BRODEC (Sonnet, session_01NEq1D4d8STWRc3sbmXuUM3), job: decode the body cipher runs with the
+period key, controls first, then spec/judge/re-derivation (rule 7). No network access used.
+
+### Step 1: `decode.json` extended to cover the body
+
+Added a second job to `decode.json` (`ciphertext_appendix.tsv`'s job is unchanged) that runs
+`tools/decode_key.py` against `body_ciphertext.tsv` + `key.tsv`, writing `reading_body.txt` and
+`reading_body_tokens.tsv`. `scripts/09_body_prep.py` (new, idempotent) makes two small, reproducible edits
+to `body_ciphertext.tsv` first: (1) adds a `conf` column duplicating the existing `grade` column (H/M, the
+transcription-pass agreement grade), since `tools/decode_key.py`'s own uncertain-confidence logic looks for
+a column literally named `conf`/`confidence` to force a token to grade M regardless of the key's per-code
+grade -- this reuses the shared script unmodified (this worker's file scope excludes `tools/`) rather than
+adding a private decoder; (2) corrects `letter_no` from `none` to `134` for the `m0275`/`m0276` rows, per
+PX-BROBODY2's already-established finding (m0273 read directly as page 134, continuous through m0277) --
+a metadata correction from a fact already on file, not a ciphertext repair (rule 2 is about the transcribed
+tokens, untouched).
+
+The combination works without touching `tools/decode_key.py`: for each body token, the mechanical grade is
+the key's own per-code grade (key.tsv's `grade` column, C or M) unless the transcription's own `conf` is M,
+which forces the token down to M regardless; a code absent from `key.tsv` grades U. This is exactly rule
+4/the brief's step 1 scheme (C = code C in key.tsv *and* token H in transcription; M = either at M; U =
+unkeyed).
+
+`python3 tools/decode_key.py ciphers/antt-msliv0638-brochado-1712 --check` exits 0 (both jobs up to date):
+`body_ciphertext.tsv: tokens 111: C 75, M 25, U 11`.
+
+### Step 2: controls -- both under the 80% gate; stopped here per the brief
+
+`scripts/10_body_control.py` (new) decodes `m0179-r1` (letter 80) and `m0180-r1` (letter 81) from
+`reading_body_tokens.tsv` and compares each, letter by letter, against `plaintext_appendix.tsv`'s own
+Carta 80/81 Deciffrada line (stripped of spaces/the trailing "V./V.Sa/V.mce" closing abbreviation, folded to
+base letters) using `difflib.SequenceMatcher` over the two letter sequences -- the same alignment convention
+`tools/reconcile_passes.py` and this target's own `scripts/07_reconcile.py` already use (`equal` opcodes =
+agreement, `replace`/`insert`/`delete` = disagreement, over the longer sequence), rather than a fixed-index
+comparison, since `m0179-r1` is already known to carry 2 more tokens than the appendix's own stored
+ciphertext for the same letter (PX-BROBODY).
+
+```
+== m0179-r1 vs Carta 80 ==
+  body decode (19 tokens): humfinodespropp_ito
+  appendix plaintext, stripped (17 letters, from "Hum fim do proposito"): humfimdoproposito
+  agreement: 13/19 = 68.4%
+  opcodes: replace body[5:6]='n' plain[5:7]='md'; delete body[7:10]='des' plain[8:8]='';
+           replace body[14:16]='p_' plain[12:14]='os'
+
+== m0180-r1 vs Carta 81 ==
+  body decode (22 tokens): oof_i_l_uislhdcpmu_ic_
+  appendix plaintext, stripped (19 letters, from "O S.d± Luis the Communica±"): osdluisthecommunica
+  agreement: 11/22 = 50.0%
+  opcodes: replace body[1:6]='of_i_' plain[1:3]='sd'; delete body[7:8]='_' plain[4:4]='';
+           replace body[11:12]='l' plain[7:8]='t'; replace body[13:14]='d' plain[9:10]='e';
+           replace body[15:16]='p' plain[11:13]='om'; replace body[18:19]='_' plain[15:16]='n';
+           replace body[21:22]='_' plain[18:19]='a'
+```
+
+**Both controls are under the brief's 80% gate (68.4% and 50.0%). Per the brief ("If either control is
+under 80%, stop after step 2 and report why"), this job stops here** -- steps 3 (letter 134's full
+Portuguese + English gloss), 4 (spec + judge) and 5 (fresh-instance re-derivation) are **not run** this
+pass. Status line stays `partial` (unchanged), per the brief.
+
+**Why, per run -- this points mostly at transcription/segmentation and the appendix's own copy, not at the
+key being wrong:**
+
+- **m0179-r1 / Carta 80 (68.4%).** The first 13 of 19 body tokens are the *same codes in the same order* as
+  all but the last 4 of the appendix's 17 stored tokens for Carta 80 (PX-BROBODY already established this
+  byte-for-byte match) -- decoding identical codes through the identical key necessarily gives identical
+  letters, so this prefix is not an independent check of anything beyond determinism. Of the genuine
+  disagreement: one is the *same* homophone conflicts.tsv's own internal check already names for this exact
+  entry (code `14`'s majority value is `n`, decoded here, where this occurrence's own Deciffrada wants `m`
+  -- a documented minority reading, not a new failure). The rest (`delete ... 'des'`, `replace 'p_'/'os'`)
+  falls exactly where the body page shows 2 extra tokens (`11`, `55`) plus the still-unresolved `ff?` glyph
+  that the appendix's stored ciphertext does not have at all for this entry (PX-BROBODY, image-verified at
+  5x zoom) -- an appendix-transcription gap already on file, not a body-decode error. Taken together, the
+  actual novel disagreement is small: one known homophone plus one known token-count gap, not a broadly
+  wrong key.
+- **m0180-r1 / Carta 81 (50.0%).** Two compounding, already-flagged problems, neither new: (1) `conflicts.tsv`
+  itself records Carta 81 as `0 compared -- no resolved tokens` for the appendix's *own* internal
+  key-vs-Deciffrada check (PX-BROKEY2) -- i.e. this entry could not be validated even against its own source
+  before this control ran, a pre-existing gap in the anchoring, not something this job introduced; (2) the
+  Deciffrada line used as ground truth here ("O S.d± Luis the Communica± V.") is itself flagged in NOTES.md
+  (PX-BROBODY) as looking corrupted -- "the" reading inside nominally-Portuguese text is the tell -- so a
+  low score against it is partly a low score against noisy ground truth, not evidence the decode is wrong.
+  PX-BROBODY also found the body's own digit grouping for this run is ambiguous in several places (its `85`
+  could be `8`+`5`, its `57` could be `5`+`7`), unresolved before this pass; that ambiguity, not chased
+  further here (out of this job's step 2 scope, which is compare-and-stop), likely explains more of the gap
+  than the key does.
+
+**Not a verdict that the key is broken** -- both explanations point at (a) known, already-logged
+transcription/segmentation gaps between the body page and the appendix's stored transcription, and (b) for
+Carta 81 specifically, a ground-truth copy already flagged as corrupted -- rather than at systematic
+key error. The next worker who wants to clear this gate should, in priority order: (1) fix the appendix's
+own 2-missing-token gap for Carta 80 (image-verified, straightforward); (2) resolve `m0180-r1`'s digit-
+grouping ambiguity against the image before re-running this control; (3) only then decide whether letter
+134's decode (already mechanically produced in `reading_body_tokens.tsv`/`reading_body.txt` by step 1, not
+otherwise written up or judged this pass) is worth spec/judge/re-derivation.
+
+### Host report
+
+No network access; this pass worked entirely from the images, TSVs and key already on disk. No subagents
+(steps 3-5, which would have used one, were not reached).
