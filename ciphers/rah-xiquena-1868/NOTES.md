@@ -1,11 +1,11 @@
-solved
+found-solved
 
 **Status correction, 25 Sept 2026 (LANE R6 worker Y10):** the top line above was `open`, set by LANE CX2's
 check-solved sweep before the image was seen. The image (all 8 leaves now fetched, see the "Y10" section
 below) shows this item is not a cipher at all: the archived "Copia del telegrama cifrado" is a plaintext-only
 file copy, certified `Es copia conforme` and signed by the Conde de Xiquena. Same pattern as
 `ciphers/rah-canada-1869/AUDIT.md`'s correction of that target — a catalogue title naming a "telegrama/nota
-cifrado" describes what was transmitted, not what the archive kept on file. Not classified as to novelty here
+cifrado" describes what was transmitted, not what the archive kept on file. Status word set to `found-solved` by the LANE R6 orchestrator, 25 Sept 2026 18:55 UTC: the archive keeps the telegram's clear text, so there is no ciphertext left to read, and `solved` would imply a decipherment of ours. Not classified as to novelty here
 (rule 10) — routed to LANE V6.
 
 RAH's own OAI-PMH DIDL record (`oai:bibliotecadigital.rah.es:15711`, registro id 15711, found via a keyed Europeana search this pass) read in full by this worker: no `dc:description` field and no "Publicado" note anywhere in its metadata, only creator/date/title/rights/subject/8 page-image refs; Google Books full-text searched (`GOOGLE_BOOKS_KEY`, `&country=US`) for "Xiquena" + "telegrama" + "cifrado"/"Isabel", 6 hits, none a confirmed match (control: the query mechanism returns real full-view hits, e.g. `Diario de las Sesiones de Cortes` and `Gedeón` 1898, proving the search executes; none names this telegram); one leaf fetched via `tools/browser_fetch.js --binary` (idImagen 10141611, page 1 of 8) and eye-checked by this worker, confirming the catalogue's own "Leg. XXIV, nº 158" archival mark but showing only the dossier's blank cover, not the telegram text.

@@ -1877,6 +1877,15 @@
    "line": "ANTT FCC/001/0021/00026 carries an 1865 syllabic nomenclator encipherment worksheet with the clerk's own Portuguese plaintext written over every code; we rebuilt a 52-row partial key from it (grade C 63, M 19, U 2 of 84 tokens). No printing of the letter or its text was located (search log in AUDIT.md), class N0. Nothing was deciphered: the plaintext was on the leaf, as in the Clairambault 1067 and RAH Canada precedents; the result is a period key and a dataset (about 52 codes, homophones for con, ca, pa), with three codes carrying two values unresolved.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/antt-fcc-costacabral-1865",
    "key": "period"
+  },
+  {
+   "date": "25 Sept 2026",
+   "kind": "cryptanalysis",
+   "key": "ours",
+   "title": "BnF Espagnol 142 f.22, instruction to the Baron de Mercy, Barneton, 6 June 1648: 521 numeric code tokens read by homophonic cryptanalysis with a matched control",
+   "grade": "S 494, M 27 of 521 (H 0, C 0: cryptanalytic result); anneal beats the matched control by 167-181 points on 4+ seeds; decode_key.py --check 0; fresh-instance re-derivation byte-identical; judge FAIL on es17 and es17c, but the letter's own clear words FAIL the same judge, so the judge cannot decide here",
+   "line": "Legible Spanish (Cleves, the Elector of Brandenburg, three thousand infantry in two or three regiments, the Duchess of Chevreuse). No verifier class yet; with LANE V6.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/espagnol142-mercy-1648"
   }
  ],
  "lanes": [
