@@ -855,3 +855,165 @@ otherwise written up or judged this pass) is worth spec/judge/re-derivation.
 
 No network access; this pass worked entirely from the images, TSVs and key already on disk. No subagents
 (steps 3-5, which would have used one, were not reached).
+
+## PX-BRODEC2 (25 Sept 2026): leave-one-out control with a matched synthetic control -- gate fails, stopped
+
+Worker PX-BRODEC2 (Sonnet, session_01Ro1R6jX36gpMg7qPXi2VxB), job: replace PX-BRODEC's gate (which compared
+body decodes against the appendix's own Deciffrada glosses and measured the period decipherer's
+abbreviation/paraphrase habit as much as the key -- see "Why this job" note in the job brief) with a
+leave-one-out control over the appendix's own aligned code-letter pairs, gated against a matched synthetic
+control per CLAUDE.md rule 3. No network access used.
+
+### Step 1: leave-one-out control (`scripts/11_loo_control.py`)
+
+For each of the 19 appendix entries that contributed aligned code-letter pairs to `key.tsv`
+(`scripts/_pairs.json`, 391 pairs total -- see the entry list in the script), the key is rebuilt from every
+OTHER entry's pairs using 04_build_key.py's exact majority rule (base-fold accents, majority letter per
+code), then that held-out entry's own pairs are predicted from the rebuilt key. A code with zero
+observations anywhere else counts as "unkeyed without this entry", reported separately from the accuracy
+of codes that ARE keyed elsewhere.
+
+**Matched synthetic control** (rule 3): the same 40 codes as `key.tsv`, each keeping its own global
+`n_occurrences`, but with the code<->letter assignment randomly shuffled (permuting key.tsv's `value`
+column across the 40 codes, so each letter keeps the same homophone group SIZE it has in the real key, only
+which codes serve it is randomised) and then applied FORWARD to the appendix's own real plaintext letters
+at all 391 aligned positions (for each real position's true letter, a synthetic code is drawn from the
+shuffled group for that letter, weighted by the drawn code's own real `n_occurrences` so the synthetic
+cipher's code frequencies approximate the real profile in aggregate). Same true letters, same entry
+membership and span sizes as the real data; only which code stands for each letter is randomised. Fixed
+seed 20260925, one run, not cherry-picked. The exact same LOO procedure then runs on this synthetic cipher.
+
+```
+POOLED (real target):      compared=379 correct=304 agreement=80.2%  unkeyed=12/391 (3.1%)
+POOLED (synthetic control): compared=389 correct=376 agreement=96.7%  unkeyed=2/391 (0.5%)
+gap (real - synthetic): -16.4 points
+gate (>=80% AND within 10 points of synthetic): FAIL
+```
+
+The real target clears the bare 80% floor (80.2%) but the gap to its own matched control is -16.4 points,
+outside the brief's +/-10-point band -- **the gate fails on the gap condition, not the floor.** Per rule 3's
+own caveat about controls with no headroom: this control is NOT near ceiling in the sense that would make
+it uninformative (96.7%, not ~100%, and its own unkeyed share is nonzero), so the -16.4 point gap is a real
+signal, not an artifact of a saturated control. Full per-entry table in the script's output (re-run
+`python3 scripts/11_loo_control.py`); worst-dragging entries (real pct - synthetic pct, most negative
+first):
+
+| entry | real | synthetic | gap | n compared |
+|---|---|---|---|---|
+| Carta 79 | 26.7% | 93.3% | -66.7 | 15 |
+| Carta 80 | 50.0% | 100.0% | -50.0 | 16 |
+| Passage 2a (m0284) | 53.8% | 100.0% | -46.2 | 13 |
+| Carta 15 | 66.7% | 100.0% | -33.3 | 12 |
+| Passage 3a (m0286) | 75.0% | 100.0% | -25.0 | 8 |
+| Carta 101 | 80.0% | 100.0% | -20.0 | 5 |
+| Passage 2a (m0294) | 80.0% | 100.0% | -20.0 | 10 |
+| Carta 96 | 77.3% | 95.5% | -18.2 | 22 |
+| Carta 91 | 79.2% | 96.3% | -17.1 | 24 |
+| Carta 72 | 79.3% | 93.1% | -13.8 | 29 |
+| Carta 13 | 80.6% | 94.3% | -13.6 | 31 |
+| Carta 73 | 83.9% | 96.8% | -12.9 | 31 |
+| Passage 3a (m0284) | 84.2% | 94.4% | -10.2 | 19 |
+
+Only Carta 105 (94.7 vs 100), Passage 2a m0292 (100 vs 100, tied) and Carta 58 (85.7 vs 83.3, the single
+entry where real beats synthetic) sit within 10 points. Reading: most entries individually generalise
+worse than a clean, noiseless homophonic substitution of the same shape would -- consistent with the real
+system carrying genuine scribal/transcription noise on top of whatever the key itself gets right, spread
+fairly broadly rather than concentrated in one or two outlier entries (13 of 19 entries drag the pooled
+gap past -10 points on their own).
+
+**Per the brief, the gate fails: steps 3-5 (letter 134 decode, spec, judge, fresh re-derivation) are NOT
+run this pass.** Status stays `partial`.
+
+### Step 2: the m0179-r1/m0180-r1 vs Carta 80/81 comparison, re-stated as information (no threshold)
+
+`scripts/12_gloss_diff.py` re-does PX-BRODEC's body-vs-gloss comparison with the gloss's own abbreviations
+kept visible, and classifies every disagreement as **key value** (homophone minority), **transcription**
+(an M-graded/unresolved body token, or the 2 tokens PX-BROBODY found in the image but missing from the
+appendix's own stored copy), or **gloss** (the compiler's own abbreviation/paraphrase/corruption). No
+threshold is applied.
+
+**m0179-r1 vs Carta 80.** Removing the 2 already-documented extra body tokens (positions 14-15, codes 11
+and 55, present in the body image but absent from the appendix's own stored Carta 80 cipher) leaves a
+17-token sequence that matches the appendix's own stored Carta 80 codes exactly, position for position,
+except one glyph (body's unresolved `ff?` where the appendix has a plain `f`). Comparing this 17-token
+decode against the gloss "Hum fim do proposito" (17 letters, no abbreviations in this particular gloss)
+position by position:
+
+```
+raw Deciffrada gloss: 'Hum fim do proposito V.'
+gloss folded (17):    humfimdoproposito
+body decode (17, extras removed): matches appendix's own stored sequence, ff? in place of the appendix's 'f'
+9 agree; 5 KEY VALUE (homophone minority): pos6 code14 n-majority/m-minority, pos7 code15 o-majority/
+  d-minority, pos10 code4 s-majority/r-minority, pos11 code55 p-majority/o-minority, pos12 code12
+  r-majority/p-minority (every one of these gloss-wanted letters is a genuine minority observation already
+  present in that code's own key.tsv 'all_observed_letters' tally -- not a new or invented homophone);
+3 TRANSCRIPTION: pos8/pos9 (body tokens graded conf=M by the two blind transcription passes), pos14 (the
+  unresolved ff?/f glyph).
+Plus the 2 extra-token positions (14,15 in the raw 19-token count), also TRANSCRIPTION (appendix-copy gap).
+```
+
+So of the raw 19 body tokens: 9 agree outright, 5 are genuine key-value homophones (all independently
+attested minorities of otherwise-majority codes), and 5 are transcription-side (2 extra tokens + 2 M-graded
+disagreements + 1 unresolved glyph). This fully accounts for PX-BRODEC's raw 68.4% figure without any
+unexplained residue, and confirms the earlier worker's qualitative read (mostly known, already-logged
+causes) -- but the true self-consistency of this entry, done positionally, is **58.8% (10/17)**, not the
+87% conflicts.tsv reports for Carta 80's own internal check.
+
+**A measurement bug found in `06_decode_agreement.py`/`conflicts.tsv` while doing this comparison.** That
+script (PX-BROKEY2's "the key must re-read its own source" control) compares the global-key decode of an
+entry's own codes against that entry's own aligned pairs using `difflib.SequenceMatcher` over the two
+letter *sequences*, rather than index-by-index. For Carta 80 both sequences are the same length (17) with
+no real insertions/deletions, so a positional comparison is the correct one and gives 10/17 = 58.8% true
+agreement (verified directly: `expected = ['h','u','m','f','i','m','d','o','p','r','o','p','o','s','i','t','o']`,
+`decoded = ['h','u','m','f','i','n','o','d','e','s','p','r','o','s','i','t','o']`, 7 positions disagree).
+But `SequenceMatcher`'s LCS-style alignment, faced with several repeated letters (o, p, d) at nearby
+positions, finds a *different*, shorter edit script: it slides 2 of the 7 true mismatches onto a
+same-letter coincidence a few positions away and counts them as `equal` (hiding them), and drops 2 more
+entirely as an unindexed `delete` opcode that `06_decode_agreement.py`'s own tally loop does not count
+into either `compared` or `agree` -- leaving only 2 of the 7 real mismatches visible, on a shrunken
+denominator of 15 instead of 17, for a reported 86.7% (matches `conflicts.tsv`'s row exactly: `15  13  87%
+m!=n; o!=e`). **This is a genuine measurement bug, not a modelling choice** -- it applies to every entry
+whose expected/decoded sequences are the same length (i.e. every entry with no unresolved/dropped tokens),
+and there is no reason to think Carta 80 is the only one affected; PX-BROKEY2's headline "340/384 = 88.5%"
+self-consistency figure for the whole appendix likely overstates true positional agreement by a similar
+margin. **Flagged, not fixed this pass** (would touch `scripts/06_decode_agreement.py`, `conflicts.tsv` and
+the headline figure in the "PX-BROKEY2, step 3" section above -- out of this job's brief; a fix should
+replace the `difflib` diff with a direct index-wise comparison for any entry where
+`len(expected)==len(decoded_known)`, keeping `difflib` only for entries with a genuine length mismatch from
+dropped/unresolved tokens). This finding is independent of the LOO/synthetic-control gate above (which does
+not use `06_decode_agreement.py` or `difflib` at all) and does not change its FAIL verdict -- if anything it
+suggests the appendix's true self-consistency is somewhat lower than previously stated, consistent with the
+LOO gate's own finding of a real (not artifactual) shortfall against the synthetic ceiling.
+
+**m0180-r1 vs Carta 81.** Cannot be checked the same way: the appendix's own stored Carta 81 cipher has 23
+tokens but its own gloss ("O S.d± Luis the Communica± V.") folds to only 19 letters -- a 4-token count
+mismatch **in the appendix's own copy**, independent of the body run entirely. This is exactly why
+`scripts/03_align_pairs.py` excluded Carta 81 from `_pairs.json` in the first place (`conflicts.tsv`: "0
+resolved tokens (entry had no usable anchors)") -- Carta 81 contributed **zero** observations to `key.tsv`
+and cannot be checked against itself. The body's own 22-token run additionally has its own unresolved
+digit-grouping ambiguity against both the appendix's 23 tokens and the 19-letter gloss (PX-BROBODY: e.g.
+body's `85` at position 4 could be one token or two). And the gloss text itself is separately flagged as
+likely corrupted (PX-BROBODY: "the" embedded in otherwise-Portuguese text is not a Portuguese word).
+**Classification: TRANSCRIPTION (dominant: the appendix's own 23-vs-19 count mismatch, plus the body's
+digit-grouping ambiguity) and GLOSS (the "the" corruption) -- there is no KEY VALUE evidence to classify
+for this entry**, since it never contributed to the key and there is no reliable letter-for-letter ground
+truth to compare against. PX-BRODEC's raw 50.0% figure for this run is not informative about the key
+either way.
+
+### Not done this pass, next steps
+
+- The gate failed, so letter 134 (m0275-r1+m0276-r1+m0276-r2, ~70 tokens) remains undecoded and unspecced;
+  the next worker on this target should not re-run the same gate without first addressing what actually
+  drags it down (see the per-entry table above -- Carta 79, Carta 80, Passage 2a m0284 and Carta 15 account
+  for most of the pooled shortfall).
+- The `06_decode_agreement.py`/`conflicts.tsv` measurement bug above is a concrete, scoped fix (index-wise
+  comparison when lengths match) that would give an honest self-consistency figure for the whole appendix;
+  worth doing before trusting any future "control" built on that script.
+- Carta 81's own appendix transcription (23 tokens vs a 19-letter gloss) and its gloss's "the" corruption
+  are both worth a fresh image re-check before this entry is used for anything.
+
+### Host report
+
+No network access; this pass worked entirely from the TSVs and key already on disk (`_pairs.json`,
+`key.tsv`, `ciphertext_appendix.tsv`, `plaintext_appendix.tsv`, `reading_body_tokens.tsv`). No subagents.
+Cost: not visible to me.
