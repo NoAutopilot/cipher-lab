@@ -1,0 +1,457 @@
+leaf	order	code	gloss	note
+190	1	204	Batavia	
+190	2	1091	neuf	
+190	3	1089	Juillet	
+190	4	1197	.	
+190	5	689	de	
+190	6	965	port	
+190	7	587	où	
+190	8	1195	est	
+190	9	966	le	
+190	10	1092	batimens	
+190	11	190	est	
+190	12	1090	A	
+190	13	574	Deux	
+190	14	736	cent	
+190	15	738	lieues	
+190	16	204		
+190	17	1091		
+190	18	1089		
+190	19	1197		
+190	20	689		
+190	21	965		
+190	22	587		
+190	23	1195		
+190	24	966		
+190	25	1092		
+190	26	190		
+190	27	1090		
+190	28	574		
+190	29	736		
+190	30	738		
+190	31	564		
+190	32	204		
+190	33	692		
+190	34	820		
+190	35	1128		
+190	36	659		
+190	37	998		
+190	38	404		
+190	39	581		
+190	40	60		
+190	41	142		
+190	42	138		
+190	43	168		
+190	44	447		
+190	45	656		
+190	46	893		
+190	47	227		
+190	48	889		
+190	49	393		
+190	50	104		
+190	51	1174		
+190	52	1192		
+190	53	739		
+190	54	581		
+190	55	472		
+190	56	823		
+190	57	766		
+190	58	496		
+190	59	1179		
+190	60	393		
+190	61	511		
+190	62	883		
+190	63	526		
+190	64	1150		
+190	65	494		
+190	66	689		
+190	67	381		
+190	68	25		
+190	69	875		
+190	70	771		
+190	71	882		
+190	72	91		
+190	73	12		
+190	74	966		
+190	75	558		
+190	76	571		
+190	77	53		
+190	78	411		
+190	79	771		
+190	80	810		
+190	81	1096		
+190	82	221		
+190	83	439		
+190	84	743		
+190	85	225		
+190	86	448		
+190	87	1113		
+190	88	728		
+190	89	1122		
+190	90	851		
+190	91	624		
+190	92	771		
+190	93	140		
+190	94	994		
+190	95	659		
+190	96	980		
+190	97	195		
+190	98	25		
+190	99	1192		
+190	100	221		
+190	101	380		
+190	102	721		
+190	103	186		
+190	104	1116		
+190	105	299		
+190	106	771		
+190	107	371		
+190	108	766		
+190	109	1142		
+190	110	738		
+190	111	822		
+190	112	1098		
+190	113	13		
+190	114	883		
+190	115	862		
+190	116	766		
+190	117	140		
+190	118	1096		
+190	119	131		
+190	120	605		
+190	121	1193		
+190	122	511		
+190	123	454		
+190	124	558		
+190	125	571		
+190	126	53		
+190	127	236		
+190	128	564		
+190	129	448		
+190	130	335		
+190	131	722		
+190	132	516		
+190	133	167		
+190	134	990		
+190	135	354		
+190	136	810		
+190	137	1146		
+190	138	48		
+190	139	605		
+190	140	571		
+190	141	757		
+190	142	1086		
+190	143	738		
+190	144	766		
+190	145	558		
+190	146	571		
+190	147	53		
+190	148	411		
+190	149	771		
+190	150	647		
+190	151	904		
+190	152	13		
+190	153	406		
+190	154	822		
+190	155	840		
+190	156	1142		
+190	157	861		
+190	158	850		
+190	159	315		
+190	160	144		
+190	161	1035		
+190	162	728		
+190	163	156		
+190	164	1052		
+190	165	688		
+190	166	264		
+190	167	1197		corrected, uncertain (digit appears overwritten)
+190	168	396		
+190	169	327		
+190	170	190		
+190	171	1096		
+190	172	571		
+190	173	1082		
+190	174	79		
+190	175	441		
+190	176	497		
+190	177	689		
+190	178	536		
+190	179	843		
+190	180	990		
+190	181	420		
+191	1	204	Batavia	
+191	2	1091	neuf	
+191	3	1089	Juillet	
+191	4	1197	.	
+191	5	689	de	
+191	6	965	port	
+191	7	587	où	
+191	8	1195	est	
+191	9	966	le	
+191	10	1092	batimens	
+191	11	190	est	
+191	12	1090	A	
+191	13	574	Deux	
+191	14	736	cent	
+191	15	738	lieues	
+191	16	564	de	
+191	17	204	Batavia	
+191	18	692	;	
+191	19	820	L'	
+191	20	1128	ennemi	
+191	21	659	a	
+191	22	998	des	
+191	23	404	croisières	
+191	24	581	Sur	
+191	25	60	tous	
+191	26	142	les	
+191	27	158	pointes	uncertain (reads like 'pointes', possibly 'points')
+191	28	168	;	
+191	29	447	Je	
+191	30	656	ne	
+191	31	893	puis	
+191	32	227	sans	
+191	33	889	expose	corrected (struck-through variant beneath it)
+191	34	393	r	
+191	35	104	l'	
+191	36	1174	intérêts	
+191	37	1192	et	
+191	38	739	la	
+191	39	581	sur	
+191	40	472	e	
+191	41	823	té	
+191	42	766	Du	
+191	43	496	navire	
+191	44	1179	oblige	
+191	45	393	r	
+191	46	511	le	
+191	47	883	Capitaine	
+191	48	526	affréter	corrected, uncertain (heavily overwritten/struck cell)
+191	49	1150	avoir	
+191	50	494	terminé	corrected ('le' inserted above as caret correction)
+191	51	689	corvette	crossed-out (whole word struck, no replacement written)
+191	52	381	chargent	
+191	53	25	à	
+191	54	875	ât	uncertain (syllable fragment)
+191	55	771	t	
+191	56	882	tente	uncertain (syllable fragment)
+191	57	91	Dre	uncertain (syllable fragment)
+191	58	221	l'	
+191	59	439	article	
+191	60	743	trois	
+191	61	225	De	
+191	62	448	la	
+191	63	1113	licence	
+191	64	728	.	
+191	65	1122		crossed-out, illegible
+191	66	851	prét	
+191	67	624	fe	uncertain (syllable fragment)
+191	68	771	t	
+191	69	140	de	
+191	70	994	Sur	
+191	71	659	a	
+191	72	980	ba	uncertain (syllable fragment)
+191	73	195	y	uncertain (syllable fragment)
+191	74	25	a	
+191	75	1192	et	
+191	76	221	l'	
+191	77	380	ad	uncertain (syllable fragment)
+191	78	721	mi	uncertain (cursive ambiguous m/u)
+191	79	186	ni	uncertain (syllable fragment)
+191	80	1116	st	uncertain (cursive ambiguous s+t / s+i)
+191	81	299	ra	uncertain (syllable fragment)
+191	82	771	t	
+191	83	371	eur	uncertain (syllable fragment)
+191	84	766	Du	
+191	85	1142	même	
+191	86	738	lieu	
+191	87	822	Donne	uncertain (syllable fragment)
+191	88	1098	ront	uncertain (syllable fragment)
+191	89	13	aux	
+191	90	883	Capitaines	
+191	91	862	lors	
+191	92	766	Du	
+191	93	140	Dé	
+191	94	1096	part	
+191	95	131	un	
+191	96	605	état	
+191	97	1193	détail	
+191	98	511	le	
+191	99	454	et	
+191	100	558	cer	uncertain, page ends mid-word (continues on a leaf not supplied)
+199	1	427	onze	
+199	2	1089	Juillet	
+199	3	728	.	
+199	4	689	Le	
+199	5	980	ba	uncertain (syllable fragment)
+199	6	1052	la	
+199	7	587	ou	
+199	8	1023	N°.	
+199	9	997	4	
+199	10	1096	part	
+199	11	571	ti	uncertain (syllable fragment)
+199	12	564	de	
+199	13	980	Ba	
+199	14	195	y	
+199	15	1077	on	uncertain
+199	16	656	ne	
+199	17	966	Le	
+199	18	427	onze	
+199	19	43	mars	
+199	20	190	en	
+199	21	568	ar	uncertain (syllable fragment)
+199	22	976	ri	uncertain (syllable fragment)
+199	23	363	vé	uncertain (syllable fragment)
+199	24	659	à	
+199	25	980	Ba	
+199	26	831	gno	uncertain, unclear reading
+199	27	696	van	uncertain
+199	28	706	gi	uncertain
+199	29	689	Le	
+199	30	574	deux	
+199	31	1089	Juillet	
+199	32	527	j	uncertain
+199	33	353	C.	uncertain
+199	34	190	en	
+199	35	60		illegible, crossed-out
+199	36	219	ce	
+199	37	424	que	
+199	38	447	Je	
+199	39	1187	va	uncertain (syllable fragment)
+199	40	740	is	uncertain (syllable fragment)
+199	41	354	Je	
+199	42	99	n'	
+199	43	663	ai	
+199	44	796	pas	
+199	45	12	encore	
+199	46	594	reçu	
+199	47	1104	les	
+199	48	609	Dépêches	
+199	49	1000	qu'il	
+199	50	965	porte	
+199	51	168	;	
+199	52	437	s	uncertain
+199	53	1077	on	
+199	54	568	ar	
+199	55	976	ri	
+200	1	363	vé	
+200	2	1190	e	uncertain
+200	3	1195	en	
+200	4	131	un	
+200	5	1049	événement	uncertain (digits crowded, could be 1019)
+200	6	36	heureux	
+200	7	355	car	uncertain, possible subscript addition
+200	8	196	il	
+200	9	195	y	
+200	10	25	a	
+200	11	102	peu	
+200	12	140	de	
+200	13	762	jours	
+200	14	131	un	
+200	15	472	e	uncertain, single letter
+200	16	625	frigate	
+200	17	1128	ennemie	
+200	18	144	était	
+200	19	338	dans	
+200	20	1122	S	uncertain
+200	21	566	Détroit	
+200	22	980	Ba	
+200	23	331	Li	
+200	24	454	et	uncertain numeral form
+200	25	998	des	
+200	26	104	Croisières	
+200	27	808	Sont	
+200	28	13	aise	uncertain
+200	29	152	Sud	
+200	30	516	et	
+200	31	667	au	
+200	32	172	Nord	
+200	33	841	de	
+200	34	469	ces	
+200	35	1096	par	
+200	36	1194	ages	(forms 'parages' with previous cell's 'par')
+200	37	1197	.	
+200	38	76	on	
+200	39	1079	fait	uncertain
+200	40	570	débarquer	
+200	41	219	ce	
+200	42	1119	qui	
+200	43	102	peut	
+200	44	87	venir	
+200	45	434	par	
+200	46	535	fer	uncertain
+200	47	989	re	uncertain, syllable fragment
+200	48	841	de	
+200	49	694	crainte	
+200	50	647	que	
+200	51	511	le	
+200	52	1092	Bâtiment	uncertain
+200	53	656	ne	
+200	54	893	puis	uncertain
+200	55	713	Se	uncertain
+200	56	87	venir	
+200	57	434		crossed-out
+200	58	535		crossed-out
+200	59	989		crossed-out
+200	60	841		crossed-out
+200	61	694		crossed-out
+200	62	617		crossed-out
+200	63	511		crossed-out
+200	64	1092		crossed-out
+200	65	656		crossed-out
+200	66	893		crossed-out
+200	67	713		crossed-out
+200	68	87		crossed-out
+200	69	1090	a	
+200	70	1132	Su	uncertain (syllable fragment)
+200	71	744	ra	uncertain (syllable fragment)
+200	72	980	ba	uncertain (syllable fragment)
+200	73	195	y	uncertain (syllable fragment)
+200	74	25	a.	
+200	75	990	.	
+200	76	1018	nos	
+200	77	574	deux	
+200	78	625	frigates	
+200	79	1134	seules	
+200	80	848	pe	uncertain, possibly truncated 'peu'
+200	81	102	peu	
+200	82	534	vent	uncertain
+200	83	741	tenir	
+200	84	264	la	
+200	85	146	mer	
+200	86	168	;	
+200	87	1082	avec	
+200	88	791	celle	
+200	89	682	de	
+200	90	21	bre	uncertain, syllable fragment of a month name
+200	91	1116	si	uncertain (cursive ambiguous)
+200	92	1106	elles	
+200	93	545	pour	
+200	94	780	roient	uncertain (syllable fragment)
+200	95	529	nous	
+200	96	140	de	
+200	97	331	li	uncertain (syllable fragment)
+200	98	304	vr	uncertain (syllable fragment)
+200	99	760	er	uncertain (syllable fragment)
+200	100	564	de	
+200	101	444	l'	uncertain (numeral cursive, reads like 'AAA')
+200	102	1128	ennemi	
+200	103	527	;	
+200	104	1122	le	
+200	105	989	re	uncertain (syllable fragment)
+200	106	89	tard	
+200	107	682	de	
+200	108	1008	leur	
+200	109	568	ar	uncertain (syllable fragment)
+200	110	976	ri	uncertain (syllable fragment)
+200	111	363	vé	uncertain (syllable fragment)
+200	112	1190	e	uncertain
+200	113	190	on	uncertain
+200	114	131	un	
+200	115	95	grand	
+200	116	607	mal	uncertain first digit (607 or 809)
+200	117	36	heur	uncertain (abbreviated form of 'heureux')
+200	118	1197	.	
+200	119	120	Fin.	end-of-document marker, not a decoded word
+200	120	814	Treize	
