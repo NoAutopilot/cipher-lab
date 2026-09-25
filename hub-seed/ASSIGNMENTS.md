@@ -472,3 +472,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T17:31Z	session_012H13Lr87WvKvzsuhmyM6GD	done	bBUL bullet-tuscany-1944 test 1	pushed
 2026-09-25T17:31Z	session_01WZHcenYMEBmsycwsAeFDeF	done	bMCC mccormick-1999 test 1	pushed 8d4cedb
 2026-09-25T17:29Z	session_01Ngn3y84Z3NdpyGnFDjF9Kz	SO-CLOSE done $1.15 D, archived	PRs 10-12 closed, files landed 502f64a	
+2026-09-25T17:30Z	session_01EYdaFpKDG8Ptu14Z14bs9L	retrospective j (Sonnet, cap 10)	17 ledger rows since retro i	brief .claude/briefs/retrospective.md, prompt inline

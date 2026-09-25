@@ -19,3 +19,5 @@ Common tail (paste into every brief):
 > output pasted in, and stands only after a fresh-instance re-derivation from the spec and key. Do not start other
 > targets. Never print or commit credentials, and never echo a credential into your own transcript: no unfiltered `env`, no `curl -v` or `set -x` on a call that carries one (Access playbook item 3). A negative's done line carries
 > target and control numbers side by side, or it is not a negative (rule 3).
+
+> Wall-clock box (every worker brief): "stop and push at $<cap> or at <minutes> minutes, whichever first." The box is also a minimum: a worker does not stop early with the job undone while budget and minutes remain; it stops at the cap, at the minutes, or at the brief being met, and says which (LEARN-2026-09-25-1718 item 2, from the R6 common brief).
