@@ -499,3 +499,130 @@ own output (TSV, no new images) but not for another image-heavy step in this fol
 Hosts this step: none (all crops cut from images already fetched by YX-TR349; no gallica.bnf.fr requests). No
 subagents this step (atlas-building was this worker's own visual/scripted work, within the brief's step 1, which
 does not call for subagents until step 2).
+
+**Step 2: two fresh blind passes against the atlas.** Two Sonnet subagents (the brief's cap of 2), each given only
+`images/lines/line01.jpg`..`line33.jpg` and `images/atlas/sheet.jpg`+`atlas.tsv` -- not each other's output, not
+`key_alpha.tsv`/`key_nomen.tsv`, not `passA.tsv`/`passB.tsv` -- transcribed every token as a digit group or an
+atlas code (S01-S26, or `X?` for a shape matching none of the 26). Both independently flagged the "2429"/"3"
+archival stamp on line 1 and excluded it per instructions (confirmed correct again this session, see below).
+`passC.tsv`: 1155 tokens (506 digit / 649 sign, 635 H / 520 M, 252 `X?`). `passD.tsv`: 1063 tokens (549 digit / 514
+sign, 455 H / 608 M, 341 `X?`). One process note for the ledger: this worker committed `passC.tsv` once already
+(commit 134cd3f) while its subagent was still mid-write (1090 of 1155 rows -- the agent had not yet returned);
+caught via the repo's stop-hook untracked-file check plus a rebase conflict, fixed with a follow-up commit once
+the agent's actual completion notification arrived and the file was verified against the agent's own reported
+totals (506/649/635/520/252, exact match). Lesson for the next worker: wait for the subagent's completion report,
+not just for the output file to exist, before committing/pushing its output -- an async agent can still be
+writing to a file that already exists on disk.
+
+**Step 3: reconciliation and gate.** `python3 tools/reconcile_passes.py passC.tsv passD.tsv --crops images/lines
+--rows`:
+
+```
+line  A-signs  B-signs  agree  cols  share
+01  33  22  17  33  0.52
+02  35  27  13  36  0.36
+03  33  36  20  41  0.49
+04  36  29  21  38  0.55
+05  35  32  17  37  0.46
+06  37  35  19  38  0.50
+07  39  41  21  46  0.46
+08  36  31  16  37  0.43
+09  40  33  21  42  0.50
+10  39  38  20  45  0.44
+11  41  58  19  62  0.31
+12  37  38  18  44  0.41
+13  37  33  15  40  0.38
+14  38  36  20  42  0.48
+15  39  32  17  43  0.40
+16  39  31  19  39  0.49
+17  30  32  11  33  0.33
+18  25  35   5  35  0.14
+19  35  42  13  47  0.28
+20  30  32  13  33  0.39
+21  32  27  15  34  0.44
+22  33  31  19  38  0.50
+23  30  27  11  31  0.35
+24  40  35  14  43  0.33
+25  39  29  15  39  0.38
+26  33  26   8  33  0.24
+27  39  24  14  40  0.35
+28  35  26  17  35  0.49
+29  38  28  13  39  0.33
+30  28  27   8  30  0.27
+31  29  28   8  31  0.26
+32  36  35  12  41  0.29
+33  29  27  13  32  0.41
+lines 33  signs A 1155  B 1063  agree 502/1277 = 39.3%  (nw)
+```
+
+**Gate call: FAILS clearly.** 39.3% pooled, against the brief's 60% line; no line reaches 0.55 (line 04 is the
+best at 0.55, then line 01 at 0.52); the weakest (line 18) is 0.14. Unlike the two loose/tight-split numbers
+YX-TR349B reported last session (39.9%/65.6%/60.9%/51.9%, where the aggregate figure the tool itself prints sat
+at or above 60% on three of four measures and only the partial-atlas figure fell under), this session's number
+is the single, honest measure: passC and passD share the *same* atlas vocabulary by construction (both were
+shown the identical 26-crop sheet and told to use its codes), so there is no loose/tight split left to argue
+about -- a literal S0x-vs-S0x (or digit-vs-digit) string match on the shared codes already *is* the tight
+measure. **The atlas did not fix the underlying disagreement; it just removed the excuse that the two passes
+were using incomparable private vocabularies.** That the tightened, apples-to-apples number (39.3%) comes in
+*below* last session's own tightest figure (51.9%, the partial 8-correspondence CANON mapping) says the atlas
+approach was the right call methodologically (transcription.md's lesson), but this particular leaf is genuinely
+this hard to transcribe blind, not merely hard to reconcile across mismatched vocabularies.
+
+**Diagnostic: segmentation-policy mismatch tested and ruled out as the main cause.** `passC.tsv` tokenizes small
+inter-group separator/virgule/vertical-bar marks as their own `X?` sign far more often than `passD.tsv` does (237
+such tokens in passC vs 90 in passD -- grep -c on each pass's note column for "separator|virgule|vertical
+(bar|stroke)|double-dash"), which looked like it could be inflating the disagreement count by itself. Tested by
+stripping every such token from both passes and re-running the reconciler: agreement *drops* to 33.5% (352/1050),
+not up -- so the passes actually agree on placing separator marks about as often as they agree on anything else,
+and removing them just removes some of the easier matches. The 39.3% gap is real disagreement about what the ink
+says, not a segmentation-policy artifact. (Script: ad hoc, not committed -- filters both passes' `X?` rows whose
+note matches the separator regex and re-runs `reconcile_passes.py`; reproduce from this note if needed.)
+
+**One eye-check done, as the brief allows ("settle disagreements... on lines where time allows").** Read line 1
+(`images/lines/line01.jpg`) at 3x vertical stretch, split left/right. Confirms two things at high confidence:
+(1) the "2429"/"3" archival stamp both passes correctly excluded is genuinely there, upper right, in a smaller
+hand, matching prior workers' identification -- unchanged. (2) **New finding: token 1 in both passes (passC
+"cursive fragment... possibly plaintext heading tail" / passD "cursive script before first digit, possible
+plaintext salutation") is neither cipher nor plaintext -- it is a circular BnF library ownership stamp
+("BIBLIOTHEQUE IMP[ERIALE]..." or similar, an oval/circular stamp with radial lettering) partially overlapping
+the start of the line, the same kind of archival mark already identified on the *key* leaf (fr.20974 p.57's
+"BIBLIOTHEQUE IMP" stamp next to the Nulles row, images/atlas/p57_doubles_nulles.jpg). Both passes' grade-M
+"plaintext fragment" reading of this mark should be dropped from any future pass/draft as a stamp, not
+transcribed as text or cipher. Recorded here rather than silently edited into `ciphertext_draft.tsv` -- the
+draft stays exactly as the reconciler wrote it (see below).
+
+**Did not attempt full per-line hand-settlement beyond that one check.** Line 1 is the *lowest*-disagreement line
+in the whole table (16 columns) and even it does not resolve cleanly by eye: several of its 16 disagreement
+columns are not competing readings of the same mark but a genuine segmentation mismatch (e.g. col 5, passC token
+5 = `X?` "double-dash separator" between the digit groups at that point in the line, passD has no token there at
+all -- passD's own segmentation simply did not split a pen-lift gap that passC did). Forcibly picking a winner at
+each such column would not add real confidence, it would just look more settled than it is (the exact trap
+YX-TR349B's handoff flagged). Given the diagnostic above shows this is not a fixable-by-atlas or
+fixable-by-hand-eyeballing-one-line problem but a genuine high-disagreement leaf, this worker is stopping at the
+gate report rather than manufacturing a partial settle.
+
+**`ciphertext_draft.tsv` (regenerated by this session's reconciler, committed) stays the mechanical draft, NOT
+promoted to `ciphertext.tsv`.** Per the brief: gate fails, so step 4 (decode.json, spec, judge, matched control,
+re-derivation) is not attempted this session. `disagreements.tsv` and `agreement.tsv` also regenerated
+(overwriting last session's passA/passB-based versions).
+
+**Files:** `passC.tsv`, `passD.tsv` (this session's two blind passes); `disagreements.tsv`,
+`ciphertext_draft.tsv`, `agreement.tsv` (regenerated from passC/passD via `tools/reconcile_passes.py`, replacing
+the passA/passB-based versions from last session -- `passA.tsv`/`passB.tsv` and their `_norm`/`_atlas`/
+`_digitsonly` derivatives and `reconcile_metrics.py` are left in place as the prior session's record, not deleted).
+
+**Grades (rule 4):** 0 H/C/S claimed as a reading this pass -- nothing decoded, same as last session. The
+transcription confidence grades (H/M) describe legibility, not cryptanalysis.
+
+**Handoff:** the atlas removed one confound (mismatched sign vocabulary) and the diagnostic above rules out
+another (segmentation-policy noise) -- what remains is that this leaf's ink is genuinely hard to read blind at
+~50% or worse per line even with a shared reference sheet. Two ways to move this forward that this worker did not
+have time for: (a) a third, non-blind pass whose only job is to settle `disagreements.tsv` column by column
+against the image with the two passes' notes open side by side (not blind -- explicitly a reconciliation pass,
+the brief's step "past the gate" tooling but run *before* the gate as a deliberate exception, since blind
+re-passes have now been tried twice at the 51.9%/39.3% level without closing the gap); (b) tighten the atlas
+crops further where a single S0x code may be conflating two distinct marks (this worker cut each crop from a
+single occurrence in the key, not checked against multiple occurrences in the ciphertext itself -- a sign that
+looks unambiguous once in the key may still be one of several ciphertext-only marks with no key-row match at
+all, which is exactly what `X?` is for, but a pass under time pressure may reach for the nearest S0x instead).
+Kind stays **recovery** (key source: `published` identification of a `period` key sheet).
