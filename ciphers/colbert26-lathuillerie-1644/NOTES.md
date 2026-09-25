@@ -376,3 +376,97 @@ images, no refetch), `specs/colbert26-lathuillerie-1644.json` (new), this NOTES.
 time). No credentials. Cost not visible to this worker (same `get_session` limitation KX-LATHKEY2 recorded);
 paced by scope (3 canvases + 1 reconciliation pass, explicit stop rather than a live dollar reading) against the
 brief's $10 stall alarm.
+
+## KX-LATHCT1 (25 Sept 2026)
+
+Breadth-lane cheap test 1 (`specs/colbert26-lathuillerie-1644.json`, `cheap_tests_in_order` item 1), job
+`.claude/briefs/runs/2026-09-25-lane-kx-lathct1.md`. No network, no transcription, no crib test, no anneal.
+Script: `ct1_profile.py` (deterministic, `SEED=20260925`, `N_CONTROL=200`), output `ct1_results.tsv`.
+
+**Tokens used.** Only positions the two passes agree on (`ciphertext.tsv` vs `passB.tsv`, via
+`disagreements.tsv`'s `a_pos`; a "settled from crop" row counts as agreed since `ciphertext.tsv` was already
+corrected to the value both passes now share). Canvas 20+21+27: 293 of 370 used (77 dropped). Canvas 30: 147 of
+149 used (2 dropped -- the 2 rows KX-LATHTR left "genuinely ambiguous"; the 2 rows it settled from the crop are
+counted as agreed).
+
+**Profiles** (sign classes, distinct-per-100, repeat rate, index of coincidence on the sign stream):
+
+| corpus | N | distinct | distinct/100 | repeat rate | IC | class shares |
+|---|---|---|---|---|---|---|
+| A = canvas 20+21+27 | 293 | 80 | 27.3 | 0.727 | 0.0228 | d2=.567, l1=.300, l2p=.058, d1=.048, mark=.024, d3p=.003 |
+| B = canvas 30 | 147 | 48 | 32.7 | 0.673 | 0.0323 | d2=1.000 |
+| K1646 (clair1067 `ciphertext.txt`, our own 19 May 1646 letter, key_1646.tsv's own text) | 338 | 84 | 24.9 | 0.751 | 0.0249 | d2=.382, l1=.228, mark=.246, l2p=.053, sym=.062, d1=.015, d3p=.015 |
+| K1659 (fr5160 `ciphertext_f67.tsv` cipher-only, 10 Oct 1659, key_1659.tsv reads it 92.3%) | 546 | 83 | 15.2 | 0.848 | 0.0308 | d2=.623, d1=.158, mark=.214, d3p=.005 |
+| K1647 (`key_brienne_1647.tsv`, Tomokiyo's published table, different correspondent D'Estrades) | n/a -- key TABLE only, we hold no ciphertext of ours actually enciphered under it | 102 distinct codes | -- | -- | -- | l1=12, d2=25, mark=56, l2p=4, d1=3, sym=2 |
+
+B's class shares (100% two-digit numbers, zero letter-codes) confirm KX-LATHTR/the spec's flag by the numbers:
+canvas 30 is not drawing on the same sign repertoire as canvas 20+21+27 at all (A has 30.0% bare-letter + 5.8%
+letter-code + 2.4% marked codes; B has none of those classes).
+
+**Per-corpus control** (200 synthetic mixed-nomenclator texts of the same N and the same *distinct-code* count
+per class -- not token-occurrence counts, which would overstate K -- code->French-letter assignment randomised
+and weighted by real French unigram frequency from `tools/data/fr16`, letters run through the resulting table):
+real IC sits at the 99th-100th percentile and real distinct/100 at the 100th percentile of all four corpora
+(A, B, K1646, K1659) against their own matched control -- i.e. all four real ciphertexts reuse codes *less* than
+a simple letter-level homophone-nomenclator model of the same K predicts. This lands the same way on all four,
+including the two corpora we already hold real keys for, so it is best read as a limitation of this control (a
+syllable/word nomenclator, which real 17th-century French nomenclators of this kind generally are, spreads usage
+more evenly than a pure per-letter homophone table) rather than a finding that distinguishes the La Thuillerie
+canvases from the held keys. Full numbers in `ct1_results.tsv`.
+
+**Pairwise code-inventory Jaccard**, with two calibration controls per pair (200 reps each): "different key,
+same design" (two independent synthetic tables of the matched K/class-shares drawn from the same restricted
+code-space -- the chance floor from a shared small alphabet, e.g. only 90 possible 2-digit codes) and "same key"
+(one synthetic table, two disjoint texts of the observed N's drawn from it -- what real reuse of the identical
+table would look like at this N, given not every code need appear in a short excerpt):
+
+| pair | observed Jaccard | different-key control (mean, range) | observed percentile in it | same-key control (mean, range) |
+|---|---|---|---|---|
+| A vs B | 0.255 | 0.292 [0.196, 0.391] | 15.0 | 0.764 [0.645, 0.892] |
+| A vs K1646 | 0.242 | 0.229 [0.163, 0.302] | 76.5 | 0.852 [0.745, 0.935] |
+| A vs K1647 | 0.138 | 0.120 [0.077, 0.159] | 91.5 | 0.754 [0.672, 0.846] |
+| A vs K1659 | 0.226 | 0.216 [0.156, 0.283] | 73.5 | 0.862 [0.782, 0.927] |
+| B vs K1646 | 0.245 | 0.215 [0.148, 0.282] | 92.0 | 0.750 [0.622, 0.863] |
+| B vs K1647 | 0.145 | 0.098 [0.056, 0.145] | 100.0 | 0.530 [0.415, 0.673] |
+| B vs K1659 | 0.236 | 0.221 [0.170, 0.284] | 77.5 | 0.771 [0.663, 0.889] |
+
+Every held-key comparison (A or B against K1646, K1647 or K1659) lands inside or barely above the ordinary
+"different key, same restricted code-space" chance range, and every one sits far below what "same key" produces
+at this N (0.53-0.86). A vs B sits *below* the mean of even the different-key chance floor (15th percentile),
+consistent with B not sharing A's alphabet at all (it has none of A's letter/mark codes, see profile above).
+
+**Verdicts (rule 3, both numbers given above):**
+- **A (canvas 20+21+27) vs B (canvas 30): different alphabet**, not one design. B's class-share profile has
+  zero bare-letter, letter-code or marked signs (100% two-digit numbers) against A's 30.0/5.8/2.4%, and the
+  Jaccard overlap (0.255) sits below the mean of pure chance overlap for two unrelated tables sharing the same
+  90-slot two-digit code space (0.292), far short of the 0.764 a real shared table would produce at this N.
+  Whether canvas 30 is a distinct sub-table of the same office's system (e.g. a numerals-only phase) or an
+  unrelated table cannot be told from this test; only that it is not the same alphabet as 20+21+27.
+- **A vs key_1646 (clair1067, Brienne to the Queen of Poland, 19 May 1646): different key family.** Observed
+  Jaccard 0.242 sits at the 76.5th percentile of the different-key chance distribution (unremarkable) and far
+  below the same-key expectation of 0.852.
+- **A vs key_brienne_1647 (Tomokiyo's published D'Estrades table): different key family.** Observed 0.138 at
+  the 91.5th percentile of chance, same-key expectation 0.754.
+- **A vs key_1659 (fr5160, Le Tellier office, 1659): different key family.** Observed 0.226 at the 73.5th
+  percentile of chance, same-key expectation 0.862.
+- **B vs key_1646: different key family.** Observed 0.245 at the 92.0th percentile of chance (highest of the
+  three B comparisons, still short of the 0.750 same-key expectation).
+- **B vs key_brienne_1647: cannot tell cleanly, but points away from same key.** The calibration is weaker here
+  because K1647 has far fewer 2-digit codes (25) than B (48), which pulls the same-key control itself down to
+  0.530 (vs 0.75-0.86 for the other pairs); observed 0.145 sits at the very top edge of the different-key chance
+  range (0.145, the control's own maximum) and well below 0.530.
+- **B vs key_1659: different key family.** Observed 0.236 at the 77.5th percentile of chance, same-key
+  expectation 0.771.
+
+**Net answer to the job's question:** no, this cluster is not the same key as key_1646, key_brienne_1647 or
+key_1659_ext (fr5160's key_1659 base table) at this N, on a matched control for all seven pairs tested; and
+canvas 20+21+27 is not the same alphabet as canvas 30 either. This is a same-office structural comparison, not
+a full solve -- absence of a Jaccard match does not rule out the cluster being read by hand-annealing its own
+table later; it only rules out *reusing* one of the three tables already on disk. `cheap_test_done` in the spec
+records this as the completed first test; per the breadth-lane rule (CLAUDE.md 3a) this cluster's next test
+(cheap test 2, the crib-placement check) would need a new job -- not run here.
+
+Files: `ct1_profile.py`, `ct1_results.tsv` (new), this NOTES.md section, `specs/colbert26-lathuillerie-1644.json`
+(`cheap_test_done` only), ROOM.md. Hosts: none (no network; the French-letter-frequency reference is
+`tools/data/fr16/lettresindites00marg_djvu.txt.gz`, already on disk). No subagents. Cost not visible to this
+worker.

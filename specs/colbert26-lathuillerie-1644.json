@@ -35,7 +35,23 @@
  ],
  "matched_control": "not yet built -- see cheap test 1; must match N, K and the cipher's DESIGN (rule 3 lesson of 24 Sept 2026: a simple-substitution control at the same N/K is not a matched control for a mixed nomenclator)",
  "judge": {"language": "fr", "min_word_cover": 0.4, "control_samples": 100, "note": "17th-century French (u/v, i/j folded, estoit/roy/luy/ie spellings) -- LESSONS.md section 2"},
- "cheap_test_done": {},
+ "cheap_test_done": {
+  "test": "1. sign-class profile + code-inventory Jaccard, matched synthetic-nomenclator control (same K/class-shares, French plaintext from tools/data/fr16 via a letter-frequency-weighted homophone table)",
+  "date": "25 Sept 2026",
+  "worker": "KX-LATHCT1 (session_01DSypDSZzmMZmmo2fFXuD5g)",
+  "script": "ciphers/colbert26-lathuillerie-1644/ct1_profile.py, seed 20260925, 200 synthetic reps per test; full numbers in ct1_results.tsv and NOTES.md section 'KX-LATHCT1 (25 Sept 2026)'",
+  "tokens_used": "A(canvas20+21+27) 293/370 agreed (77 dropped); B(canvas30) 147/149 agreed (2 dropped)",
+  "results": [
+   {"pair": "A vs B", "observed_jaccard": 0.255, "diff_key_control_mean": 0.292, "diff_key_control_range": [0.196, 0.391], "observed_percentile": 15.0, "same_key_control_mean": 0.764, "verdict": "different alphabet -- B is 100% two-digit numbers (zero letter/mark codes vs A's 30.0/5.8/2.4%), Jaccard below the different-key chance mean, far below same-key expectation"},
+   {"pair": "A vs key_1646 (clair1067 ciphertext.txt)", "observed_jaccard": 0.242, "diff_key_control_mean": 0.229, "diff_key_control_range": [0.163, 0.302], "observed_percentile": 76.5, "same_key_control_mean": 0.852, "verdict": "different key family"},
+   {"pair": "A vs key_brienne_1647.tsv (code inventory only, no attested text of ours)", "observed_jaccard": 0.138, "diff_key_control_mean": 0.120, "diff_key_control_range": [0.077, 0.159], "observed_percentile": 91.5, "same_key_control_mean": 0.754, "verdict": "different key family"},
+   {"pair": "A vs key_1659 (fr5160 ciphertext_f67.tsv, cipher tokens only)", "observed_jaccard": 0.226, "diff_key_control_mean": 0.216, "diff_key_control_range": [0.156, 0.283], "observed_percentile": 73.5, "same_key_control_mean": 0.862, "verdict": "different key family"},
+   {"pair": "B vs key_1646", "observed_jaccard": 0.245, "diff_key_control_mean": 0.215, "diff_key_control_range": [0.148, 0.282], "observed_percentile": 92.0, "same_key_control_mean": 0.750, "verdict": "different key family"},
+   {"pair": "B vs key_brienne_1647.tsv", "observed_jaccard": 0.145, "diff_key_control_mean": 0.098, "diff_key_control_range": [0.056, 0.145], "observed_percentile": 100.0, "same_key_control_mean": 0.530, "verdict": "cannot tell cleanly (weak calibration: K1647 has far fewer 2-digit codes than B), but observed sits at the diff-key control's own maximum and well below the same-key mean -- points away from same key"},
+   {"pair": "B vs key_1659", "observed_jaccard": 0.236, "diff_key_control_mean": 0.221, "diff_key_control_range": [0.170, 0.284], "observed_percentile": 77.5, "same_key_control_mean": 0.771, "verdict": "different key family"}
+  ],
+  "net_answer": "not the same key as key_1646, key_brienne_1647 or key_1659 at this N on a matched control for all seven pairs; canvas 20+21+27 and canvas 30 are not one alphabet either. A same-office structural negative, not a full solve -- does not rule out the cluster being read by its own cryptanalysis later."
+ },
  "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); left empty deliberately per this job's brief -- do NOT run a test from this spec without wiring cheap_test_done and a matched control first (rule 3)",
  "written": "25 Sept 2026, LANE KX worker KX-LATHTR (session_011zG1PJqCaitaLcZ2FyTxeg), Sonnet, for job .claude/briefs/runs/2026-09-25-lane-kx-lathtr.md"
 }

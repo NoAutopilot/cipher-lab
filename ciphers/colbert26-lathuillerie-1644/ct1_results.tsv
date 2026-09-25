@@ -1,0 +1,27 @@
+# ct1_profile.py -- SEED=20260925, N_CONTROL=200
+tokens_used	A(20+21+27)	293	dropped	77	of	370
+tokens_used	B(30)	147	dropped	2	of	149
+
+## Per-corpus profile (real) + matched-control percentile (200 synthetic mixed-nomenclator texts, same N/class-shares, French plaintext from tools/data/fr16)
+corpus	N	distinct	distinct_per_100	repeat_rate	ic	class_shares
+A_canvas20+21+27	293	80	27.30	0.727	0.0228	d1=0.048,d2=0.567,d3p=0.003,l1=0.300,l2p=0.058,mark=0.024
+B_canvas30	147	48	32.65	0.673	0.0323	d2=1.000
+K1646_ciphertext.txt	338	84	24.85	0.751	0.0249	d1=0.015,d2=0.382,d3p=0.015,l1=0.228,l2p=0.053,mark=0.246,sym=0.062
+K1659_ciphertext_f67	546	83	15.20	0.848	0.0308	d1=0.158,d2=0.623,d3p=0.005,mark=0.214
+
+K1647_key_brienne_1647.tsv	n/a (key TABLE only, no attested running text of ours under it)	distinct=102	class_counts={'l1': 12, 'sym': 2, 'l2p': 4, 'd1': 3, 'mark': 56, 'd2': 25}
+
+## Per-corpus control lines
+A_canvas20+21+27	control_ic	mean 0.017 range[0.013,0.025]	observed_pctile	99.0	control_distinct_per_100	mean 24.353 range[21.502,25.939]	observed_pctile	100.0	control_repeat_rate	mean 0.756 range[0.741,0.785]	observed_pctile	0.0
+B_canvas30	control_ic	mean 0.032 range[0.023,0.052]	observed_pctile	61.5	control_distinct_per_100	mean 26.748 range[21.769,29.932]	observed_pctile	100.0	control_repeat_rate	mean 0.733 range[0.701,0.782]	observed_pctile	0.0
+K1646_ciphertext.txt	control_ic	mean 0.016 range[0.013,0.024]	observed_pctile	100.0	control_distinct_per_100	mean 22.547 range[20.710,23.964]	observed_pctile	100.0	control_repeat_rate	mean 0.775 range[0.760,0.793]	observed_pctile	0.0
+K1659_ciphertext_f67	control_ic	mean 0.016 range[0.013,0.024]	observed_pctile	100.0	control_distinct_per_100	mean 14.328 range[13.370,15.018]	observed_pctile	100.0	control_repeat_rate	mean 0.857 range[0.850,0.866]	observed_pctile	0.0
+
+## Pairwise code-inventory Jaccard (observed) + calibration (200 reps each)
+A_canvas20+21+27	vs	B_canvas30	observed_jaccard	0.255	diff_key_control	mean 0.292 range[0.196,0.391]	observed_pctile_in_diff_key	15.0	same_key_control	mean 0.764 range[0.645,0.892]
+A_canvas20+21+27	vs	K1646	observed_jaccard	0.242	diff_key_control	mean 0.229 range[0.163,0.302]	observed_pctile_in_diff_key	76.5	same_key_control	mean 0.852 range[0.745,0.935]
+A_canvas20+21+27	vs	K1647	observed_jaccard	0.138	diff_key_control	mean 0.120 range[0.077,0.159]	observed_pctile_in_diff_key	91.5	same_key_control	mean 0.754 range[0.672,0.846]
+A_canvas20+21+27	vs	K1659	observed_jaccard	0.226	diff_key_control	mean 0.216 range[0.156,0.283]	observed_pctile_in_diff_key	73.5	same_key_control	mean 0.862 range[0.782,0.927]
+B_canvas30	vs	K1646	observed_jaccard	0.245	diff_key_control	mean 0.215 range[0.148,0.282]	observed_pctile_in_diff_key	92.0	same_key_control	mean 0.750 range[0.622,0.863]
+B_canvas30	vs	K1647	observed_jaccard	0.145	diff_key_control	mean 0.098 range[0.056,0.145]	observed_pctile_in_diff_key	100.0	same_key_control	mean 0.530 range[0.415,0.673]
+B_canvas30	vs	K1659	observed_jaccard	0.236	diff_key_control	mean 0.221 range[0.170,0.284]	observed_pctile_in_diff_key	77.5	same_key_control	mean 0.771 range[0.663,0.889]
