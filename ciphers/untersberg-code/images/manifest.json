@@ -2,17 +2,34 @@
   "source": "Salzburg Museum, Sammlung Online (sammlung-online.salzburgmuseum.at), IIIF Image API 2",
   "object": "BIB HS 2398 -- 'Die Propheceyung, so im Undtersperg zu Reichenhall geschehen ist, im 1523. Jahr' (Lazarus Gitschner attribution)",
   "detail_page": "https://sammlung-online.salzburgmuseum.at/detail/collection/0a5aec0c-2c55-4eab-addc-a2c08e4b6f93",
-  "note": "The object has 28 digitised leaves/openings (Media_Key_0..27) via this IIIF endpoint, /iiif/iiif/2/{media_id}/full/{size},/0/default.jpg. Only ONE was fetched at above-thumbnail resolution this pass (see images[0] below); the rest were sampled only as 300px-wide thumbnails (not committed, scratchpad only, not counted toward the 30 MB budget) to locate the folio carrying an inscription. fetched 25 Sept 2026 by LANE B4 worker bUNT3.",
+  "note": "The object has 28 digitised leaves/openings via this IIIF endpoint, /iiif/iiif/2/{media_id}/full/{size},/0/default.jpg. Media ids in display order (0-indexed = opening-1) extracted from the detail page's embedded data, 25 Sept 2026 by LANE B4 worker bUNT4.",
   "images": [
     {
       "file": "hs2398_f52v-53r_candidate.jpg",
       "media_id": "e0f9d823-c1bc-4adf-9351-2a4190cb82af",
+      "opening": 27,
       "iiif_url_fetched": "https://sammlung-online.salzburgmuseum.at/iiif/iiif/2/e0f9d823-c1bc-4adf-9351-2a4190cb82af/full/1225,/0/default.jpg",
-      "fetched_size_px": "1225x766 (this pass; native/max per info.json is 4900x3064, not re-fetched)",
+      "fetched_size_px": "1225x766 (fetched by bUNT3; native/max per info.json is 4900x3064, not re-fetched)",
       "sha1": "93c00d8ab41860838d869248619528e815f3689d",
       "size_bytes": 188867,
-      "foliation_visible": "pencil folio numbers '52' (left/verso) and '53' (right/recto) plus a separate '27' at the far top-right corner (a second, older foliation or the manuscript's own internal numbering -- not disambiguated this pass)",
-      "content": "a two-page opening, each side showing a crowned/allegorical figure holding a scroll or tablet inscribed with short pseudo-writing (left tablet ~3 short lines, e.g. 'CFCYFCTOT / EOLL18YEM / GAECEL9O' as read casually from the image, NOT a careful transcription; right tablet ~3 lines of continuous capitals, e.g. 'ISYRLAEDET REUZCEIHS / SYFEKS7ERY... / ET(?)ALLAXCVUOMH6O', plus a third short inscribed label near a bare tree on the right page). This does NOT obviously match the spec's 6-line/228-character 'S. d. d. occo. x.' abbreviation-style transcription in specs/untersberg-code.json -- treat as an UNCONFIRMED candidate for 'the cave inscription' page, not a match, pending a careful re-check against Schmeh's own scienceblogs.de image. See NOTES.md."
+      "foliation_visible": "pencil folio numbers '52' (left/verso) and '53' (right/recto) plus a separate '27' at the far top-right corner",
+      "status": "RULED OUT this pass (bUNT4, 25 Sept 2026): two crowned/allegorical figures each holding a tablet -- does not match Herzog 1929's Bild 2 (a single figure at a rock/cave with a chapel and pine trees) or the six-line inscription's arch-framed rock-tablet layout confirmed at opening 11 below. Kept on disk as a ruled-out candidate, not deleted, since it may be Herzog's separate 'fol. 27' comparandum inscription mentioned in his footnote apparatus (not yet checked -- see NOTES.md)."
+    },
+    {
+      "file": "hs2398_opening11_inscription_leaf.jpg",
+      "media_id": "dc46a099-dee5-42d5-857c-bd97c80315ab",
+      "opening": 11,
+      "iiif_url_fetched": "https://sammlung-online.salzburgmuseum.at/iiif/iiif/2/dc46a099-dee5-42d5-857c-bd97c80315ab/full/4884,/0/default.jpg",
+      "fetched_size_px": "4884x3052 (native/max)",
+      "sha1": "148f4bf98ac315d364a1461a108057f7e62a7e1f",
+      "size_bytes": 2972353,
+      "foliation_visible": "pencil pagination '20' (top-left, left/verso page) and '21' (bottom, right/recto page) -- consistent with Herzog 1929's own foliation of this same manuscript as 'fol. 10\\'' (verso) / 'fol. 11' (recto): pencil page = 2x Herzog folio number for a verso, 2x+1 for a recto.",
+      "content": "CONFIRMED MATCH to Herzog 1929's Bild 2/fol. 10'-11 (see NOTES.md 'Leaf identified' section): left page shows the six-line inscription painted as text inside an arch-topped frame drawn on a red rock tablet (matching Herzog's footnote d, p.29: 'Die Inschrift wird nach oben hin von einem Bogen eingerahmt' -- the inscription is framed above by an arch), with a standing figure pointing at/copying the tablet and a seated armed figure beside it; right page continues the narrative prose, which reads almost word-for-word against Herzog's printed text for fol. 11 ('Und wie ich solang geschaut und abgeschriben hab, in dem ist es Abend worden...'). NOT independently transcribed here per brief scope ('do not transcribe' -- a later blind pass will)."
     }
-  ]
+  ],
+  "openings_sampled_not_matching": {
+    "8": "ee3545c6-fea4-46d1-a743-ea3c1a836256 -- plain narrative text, no illustration (not committed)",
+    "9": "c11153a3-a996-49b9-b14f-5bb30a9f0b12 -- end of narrative text with scribal flourish + library stamp; next page blank with faint show-through of the facing illustration (not committed)",
+    "10": "56503bb8-1dd3-4aa7-84ed-cf300e4e0612 -- Bild 1 (title + 5-figure group portrait) on the left page, Bild 2 (single figure, chapel, pine trees, rock/cave entrance -- the scene immediately BEFORE the inscription tablet) on the right page; this is Herzog's fol. 10 recto, the leaf facing the one committed above (not committed this pass, easily refetchable at media id 56503bb8-1dd3-4aa7-84ed-cf300e4e0612 if a later pass wants the full Bild-1/Bild-2/inscription three-page sequence)"
+  }
 }
