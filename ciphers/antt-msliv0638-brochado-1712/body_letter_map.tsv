@@ -1,0 +1,22 @@
+image	page_no_seen	method	notes
+m0001	n/a	full (PX-BROBODY)	front cover, no text
+m0030	n/a	full (PX-BROBODY)	no number visible on this leaf; dated 19 Jun 1712 (closing date); earliest full-res leaf checked
+m0060	22	full (PX-BROBODY)	number clearly visible top of page
+m0090	33	full (PX-BROBODY)	number clearly visible top of page
+m0120	n/a	full (PX-BROBODY)	no number visible on this leaf (closing page only); dated 2 Oct 1712
+m0150	n/a	full (PX-BROBODY)	no number visible on this leaf (mid-letter page, Strafford/Bullingbrook); undated on visible page
+m0169	n/a	full (PX-BROBODY2, this pass)	no number visible on this leaf (closing page); dated 9 Abril de 1713; no cipher
+m0177	79	full (PX-BROBODY2, this pass)	number "79" clearly visible top of page -- CIPHER at foot of page (run cut off, continues to next unfetched leaf), matches appendix "Carta 79" entry (control, not re-transcribed this pass: rule 3 spend-on-no-appendix priority)
+m0179	80	full (PX-BROBODY)	number "80" visible; cipher run (see body_ciphertext.tsv), matches appendix "Carta 80"
+m0180	81	full (PX-BROBODY)	number "81" visible; cipher run, matches appendix "Carta 81" (token-alignment unresolved, see NOTES.md PX-BROBODY section)
+m0181	82 (inferred)	full (PX-BROBODY)	number not directly read by PX-BROBODY, inferred from position between dated leaves; not independently reconfirmed this pass
+m0210	n/a	full (PX-BROBODY)	no number visible on this leaf; dated 27 Jun 1713 (closing date, newly read this pass -- PX-BROBODY's table had this leaf's date blank); no cipher
+m0270	133	full (PX-BROKEY/PX-BROBODY)	number "133" visible; dated 15 Oct 1713; no cipher
+m0271	n/a	full (PX-BROBODY2, this pass)	no number visible on this leaf (mid-letter); no cipher
+m0272	n/a	full (PX-BROBODY2, this pass)	no number visible on this leaf; dated 22 Outubro 1713 (closing date); no cipher -- a DIFFERENT letter from the page-134/135 span below, closes before it
+m0273	134	full (PX-BROBODY2, this pass)	number "134" clearly visible top of page; no cipher on this page itself (opens the page-134 letter)
+m0274	n/a	full (PX-BROBODY2, this pass)	no number visible (continuation of 134); no cipher; mentions "Tractado antigo 668" (a plain reference number, not cipher)
+m0275	n/a	full (PX-BROBODY2, this pass)	no number visible (continuation of 134) -- CIPHER RUN FOUND, new this pass, runs to bottom of page and continues onto m0276 (see body_ciphertext.tsv)
+m0276	n/a	full (PX-BROKEY; re-examined PX-BROBODY2 this pass)	no number visible (continuation of 134); cipher continues from m0275, then two more runs (PX-BROKEY's original find); no appendix entry anywhere in this span -- consistent with letter 134 being past the appendix's highest entry (Carta 123)
+m0277	unclear (~"35"? not legible with confidence)	full (PX-BROBODY2, this pass)	continuation of 134; no cipher; closing date read as "Londres 22 de Outubro de 1713" -- NOTE this conflicts in date order with m0272's same date on a different letter; not resolved this pass, flagged for the key-application worker
+m0278	135	full (PX-BROBODY2, this pass)	number "135" clearly visible top of page; new letter, dated 29 Outubro de 1713; no cipher

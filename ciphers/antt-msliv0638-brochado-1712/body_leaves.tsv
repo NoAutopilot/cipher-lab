@@ -50,3 +50,13 @@ m0289	thumb (stride 8) -- OUT OF SCOPE, inside appendix (m0279-296, PX-BROPASSB'
 m0297	thumb (stride 8)	blank/near-blank leaf just after appendix end	no	n/a
 m0300	full	blank leaf, "T" rubricator's guide-letter watermark only, no text	no	n/a
 m0305	thumb (stride 8)	blank/near-blank leaf near volume end	no	n/a
+m0169	full (PX-BROBODY2)	plain Portuguese letter prose, closing page dated "Londres 9 de Abril de 1713"	no	n/a
+m0177	full (PX-BROBODY2)	page "79"; plain prose re: Madrid/Cartagena negotiations, CIPHER at foot of page (run cut off at page bottom, continues onto next unfetched leaf) -- matches appendix "Carta 79" entry, a control not re-transcribed this pass	YES (control, appendix-covered)	79 (page no.)
+m0271	full (PX-BROBODY2)	plain prose re: Parlamento/passage negotiations, no page number visible on this crop	no	n/a
+m0272	full (PX-BROBODY2)	plain prose, dated "Londres 22 de Outubro de 1713"; no page number visible on this crop; a different, earlier-closing letter than the m0273-277 span below	no	n/a
+m0273	full (PX-BROBODY2)	page "134"; opens a new letter	no	134 (page no.)
+m0274	full (PX-BROBODY2)	continuation of 134, no number visible; mentions "Tractado antigo 668" (plain reference number)	no	n/a (cont. of 134)
+m0275	full (PX-BROBODY2)	continuation of 134, no number visible -- CIPHER RUN FOUND, new this pass (33 tokens, m0275-r1), continues directly onto m0276's already-known run with NO plain text at the page break	YES	n/a (cont. of 134)
+m0276	full (PX-BROKEY; re-examined PX-BROBODY2)	continuation of 134 -- cipher continues from m0275 (see m0275-r1 + m0276-r1 in body_ciphertext.tsv), then a second run (m0276-r2); no appendix entry anywhere in this span (letter 134 is past the appendix's highest entry, Carta 123)	YES	n/a (cont. of 134)
+m0277	full (PX-BROBODY2)	continuation of 134, no cipher; closing date read as "Londres 22 de Outubro de 1713" (page number not legible with confidence, possibly "35" -- flagged, not resolved)	no	n/a (cont. of 134)
+m0278	full (PX-BROBODY2)	page "135"; new letter, dated "Londres 29 de Outubro de 1713"	no	135 (page no.)

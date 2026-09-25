@@ -559,3 +559,114 @@ m0300) + 2 more full-resolution requests to bound the m0180 find (m0179, m0181) 
 pass, all through the tool's own >=3s pacing, under the 60-request session cap. m0270 and m0276 were copied
 from PX-BROKEY's already-fetched images rather than re-requested. No other host touched. 2 Sonnet subagents
 (blind transcription passes A and B, run in parallel, per this job's brief).
+
+## PX-BROBODY2 (25 Sept 2026): letter->image map, widened sweep, NEW cipher found on m0275
+
+Worker PX-BROBODY2 (Sonnet, session_01QiEShd8soBEjyGJrPwUxe9), job: map body image -> letter number, widen the
+body sweep for cipher-bearing leaves targeted by letter number (appendix-covered letters as cheap controls,
+no-appendix letters as priority, and the leaves around m0276 specifically), full transcription for any new
+finds. **No decoding was done, per the brief.** Only worker on `digitarq.arquivos.pt` this pass (claimed in
+ROOM.md). Built on PX-BROBODY's and PX-BROKEY's prior finds without altering their rows.
+
+### Letter/page-number map (`body_letter_map.tsv`)
+
+Confirmed by direct reading of the manuscript's own page number, not by thumbnail guessing (rule 2: a blurry
+141x128 thumbnail is not a reliable source for a precise digit string, so this worker did not fabricate
+per-leaf numbers from them -- see "Method note" below). All confirmed points:
+
+| image | page no. | date on page (if any) |
+|---|---|---|
+| m0060 | 22 | -- |
+| m0090 | 33 | -- |
+| m0177 | **79** (new this pass) | -- |
+| m0179 | 80 | Londres 28 Abril 1713 |
+| m0180 | 81 | Londres 2 Maio 1713 |
+| m0270 | 133 | Londres 15 Outubro 1713 |
+| m0273 | **134** (new this pass) | -- |
+| m0278 | **135** (new this pass) | Londres 29 Outubro 1713 |
+
+**New confirmation of PX-BROBODY's finding:** page 79 (m0177) carries a cipher run at the foot of the page and
+the appendix has a "Carta 79" entry -- a third data point (after 80/81) that the body's own page number and
+the appendix's "Carta N" label are the same number, at least across this 79-135 stretch. Local image-per-letter
+density: ~1-2 images per letter number in the 79-135 range (m0177->m0270 is 93 leaves for 54 numbers, ~1.72
+images/letter), consistent with mostly single-leaf (recto+blank/short-verso) letters. This is *not* extrapolated
+into a formula and used to invent numbers for unchecked leaves -- `body_letter_map.tsv` records only what was
+actually read on each leaf, "n/a" where no number was visible on that image, with a note when the number was
+inferred from context rather than read (m0181=82, carried over from PX-BROBODY, still not independently
+reconfirmed this pass).
+
+**Method note:** thumbnail digits were not legible with confidence at 141x128px (tried reading several already-
+downloaded thumbnails directly and via the montage tool -- `tools/digitarq_fetch.py --montage` failed outright,
+`ModuleNotFoundError: No module named 'PIL'`, not installed in this environment, flagged for whoever next
+touches that tool). Given the choice between guessing numbers from an illegible source (rule 2 violation) and
+spending host requests on full-resolution confirmation, this pass fetched full-resolution images instead of
+extrapolating from thumbnails.
+
+### Widened sweep: NEW cipher run found on m0275, extending the known m0276 run
+
+Per the brief's specific instruction ("the letters around m0276, looking for cipher runs"), fetched full
+resolution for all 6 unfetched leaves bounding m0276 on both sides: m0271, m0272, m0273 (already partly known),
+m0274, m0275, m0277, m0278 (7 requests; m0270 and m0276 already on disk from PX-BROKEY/PX-BROBODY).
+
+**m0275 (previously unchecked at full resolution -- the stride-8 thumbnail sweep skipped it) carries a genuine
+cipher run of 33 tokens at the foot of the page, introduced by the plain sentence "O Estrangeiro está
+grandemente empenhado/enganado [passA/passB disagree on this one plain word, not cipher] achado seu novo
+Tractado, e não sei se este", running to the bottom of the page with no plain-text resumption before the page
+ends.** Two blind Sonnet subagent passes (image only, no access to any other file, no access to each other):
+31/33 tokens agree exactly (93.9%), comfortably above the two thresholds in `transcription.md` (60% floor,
+third-pass trigger at >10% disagreement). The 2 disagreeing positions (line 1 token 8, line 2 token 14) are the
+same doubled-letter glyph shape already flagged unresolved elsewhere in this exact passage (`ff?` at m0179-r1
+pos16 and m0276-r1 pos10) -- transcribed `ff?`/`dd?` by analogy to that precedent, graded M, not independently
+resolved by a third re-check this pass. Reconciled table appended to `body_ciphertext.tsv` as run `m0275-r1`
+(33 positions, 31 H + 2 M).
+
+**This run continues directly into the already-recorded `m0276-r1` (PX-BROKEY's find, 17 tokens): `m0275-r1`'s
+last token and `m0276-r1`'s first token ("55") sit across a page break with zero intervening plain text.** The
+true extent of this passage is therefore 33 + 17 = 50 cipher tokens before the first plain interruption ("mas
+isto hé impossivel..."), not the 17 tokens previously on file for `m0276-r1` alone -- `m0276-r1`/`m0276-r2`
+themselves are left unchanged (this worker's file scope did not include re-touching PX-BROKEY's rows beyond
+this note), but any future spec/judge/key-application run against this passage needs to read `m0275-r1` +
+`m0276-r1` + `m0276-r2` together as one continuous 70-token run, not `m0276-r1`/`m0276-r2` alone.
+
+No cipher found on m0271, m0272, m0274, m0277, m0278 (all read at full resolution, plain prose). This is
+consistent with PX-BROKEY's finding that m0276's passage has no appendix entry: the whole m0273-277 span
+belongs to one letter numbered **134** (read directly off m0273), past the appendix's highest entry (Carta
+123) -- a genuine ciphertext-only passage, structurally explained rather than a one-off anomaly. m0278 opens a
+new letter, page 135, dated 29 Oct 1713, no cipher.
+
+One loose end not resolved this pass: m0272 and m0277 both appear to close with the same date, "Londres 22 de
+Outubro de 1713" -- on two different letters (m0272 is a short note re: Parlamento passage-negotiations; m0277
+closes the page-134 letter that opens at m0273). Either Brochado wrote two dispatches the same day, or one of
+these two date readings is wrong; not chased further this pass (out of scope: no decoding, no re-dating). Also
+unresolved: m0277's own page number was not legible with confidence (a digit shape possibly "35", not
+transcribed into `body_letter_map.tsv` as a reading).
+
+### Appendix-letter control check (spent cheaply, per the brief)
+
+m0177 = page 79, matches the appendix's existing "Carta 79" entry (a cipher run is visible at the foot of the
+page, cut off before the page ends -- consistent with the appendix already carrying its decipherment). Per the
+brief's instruction to spend most of the budget on no-appendix letters, this control was **not** transcribed in
+full this pass (that would duplicate work the appendix already covers) -- recorded in `body_letter_map.tsv` and
+`body_leaves.tsv` as a positive control only.
+
+### Not done this pass (next worker)
+
+- Still nowhere near exhaustive coverage of the 278 body leaves (this pass adds 9 more full-resolution leaves
+  to PX-BROBODY's 12, i.e. ~21/278, ~7.5%) -- the m0275 find shows cipher can hide on a leaf a stride-8
+  thumbnail sweep skips entirely between two already-known cipher leaves, so denser full-resolution coverage
+  (not thumbnail) remains the highest-value next step, especially in the untouched 90-169 and 182-269 leaf
+  ranges.
+- m0181's page number (82) is still only inferred, not independently reread this pass.
+- The m0272/m0277 same-date puzzle above.
+- No decoding, no key application, no spec/judge run -- per this job's brief. The next worker to touch
+  `key.tsv`/decoding needs to treat `m0275-r1`+`m0276-r1`+`m0276-r2` as one 70-token run, not two runs on one
+  leaf.
+
+### Host report
+
+`digitarq.arquivos.pt`: 9 full-resolution requests this pass (m0271, m0272, m0273, m0274, m0275, m0277, m0278,
+then m0169, m0177), all through the tool's own >=3s pacing, well under the 60-request session cap. m0270 and
+m0276 read from disk (already fetched by PX-BROKEY/PX-BROBODY), zero new requests. No other host touched. 2
+Sonnet subagents (blind transcription passes A and B on m0275, run per this job's brief; one ran synchronously,
+one in the background -- both blind to each other and to every file but the one named image). Cost: not
+visible to me.
