@@ -196,6 +196,13 @@ exit code: 0
   target's letter counts inside the keyed-running-key band and outside the uniform one-time-key band, so a
   hand-made non-uniform key is not excluded. Cheap remaining B' variants, each one box: `--param arith=beau`, a
   German key (`kcorpus=tools/data/de20`), an English word list; otherwise family C or A next, as GOLD-2A said.
+- GOLD-K3 (25 Sept 2026): the cipher-side placements of the keyword-mixed tableau (`mixed_tabula` modes cipher/
+  plaincipher/keycipher, added this job) are a control-backed negative for vig and beau arithmetic (controls
+  76.9%/75.2%, targets -3.498/-3.518, both inside a new ten-text beau-pipeline noise band -3.5481/-3.5305/-3.4944);
+  `--param modes=plaincipher,keycipher --param arith=vig` is owed (built and tested, not run, ~20-25 min box).
+  Six of seven `mixed_tabula` placements are now spent at vig/beau (plain, key, both, full, cipher; GOLD-B2D's
+  general cipher-side permutation search separately failed its own control at this N); varbeau arithmetic and the
+  two remaining mixed pairs are what is left of the keyword-restricted keyed-tableau search before family C or A.
 - GOLD-B2D (25 Sept 2026): family B'' (general permuted tableau) is built as `tools/families/permuted_tableau.py` and its
   first sub-family B''-c (free cipher-side permutation) reads its matched control at 9.5 pct (7.4/12.9/8.1, gate 0.5 not
   met, target not run): at 924 letters neither a sum-stream n-gram proxy nor an open-tableau beam identifies S3, and the

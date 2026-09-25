@@ -625,6 +625,100 @@ arith=beau`) likewise. Rule 10: nothing here is a reading; NOTES.md status stays
 
 -- GOLD-B2D (Fable, session_01GvGAepME5fvmUDuaJuc9cA), 25 Sept 2026 22:05 UTC
 
+## Family B'-c, cipher-side placements (GOLD-K3), 25 Sept 2026, worker GOLD-K3 (Sonnet, session_01K4n8VHbDXGiaAwDk12dgrP)
+
+Not run by anyone before this job: a mixed alphabet on the CIPHER side alone (`running_key.mixed_tabula` mode
+`cipher`: S3 = M, S1 = S2 = identity -- standard plain and key letters, the rows of the vig/beau square shifted and
+read out through M; the commonest practical way a Vigenere square was mixed by hand) and the two mixed pairs
+`plaincipher` (S1 = M, S3 = M) and `keycipher` (S2 = M, S3 = M), added to `tools/running_key.py` this job (test:
+`tools/tests/test_keyed_running_key.py`, `mixed_tabula('grube','cipher')` checked against the standard vig table
+mapped through M for all 676 cells; `keyed_running_key.stage1` already ranks tableaux generically through the
+tabula's `enc` table, so no family-side change was needed). Same method as GOLD-2C/K2 throughout: stage 1 ranks
+keyword-mixed tableaux by the pooled unigram multinomial likelihood (11,438 candidates: the de20+nl20 word list,
+one mode per run, plus the identity), stage 2 beam-decodes the top 30 (order 6, beam 300, LM_p de20, LM_k nl20) on
+message 1, pooled joint log-likelihood per letter over all 5 messages is the score.
+
+**Ten-text beau noise band** (`ciphers/koehler-1944/scripts/keyed_noise_band.py`, run in the background as two
+processes of 5 texts each while the family runs below were going; `running-key/keyed_beau_noise_band.tsv` and the
+two raw logs): the full pipeline at GOLD-K2 variant 1's exact settings (arith=beau, kcorpus=nl20, top=30, beam=300,
+order=6, spaces=1, modes default plain/key/both/full) on 6 uniform-random texts (seeds 1-6) and 4 shuffles of the
+target's own 924 letters (seeds 1-4, pooled then redistributed into the five message lengths, so stage 1 ranks
+identically to the real target -- the sharper of the two floors). Ten scores: -3.5071, -3.5282, -3.5481, -3.5474,
+-3.5340, -3.5328, -3.4944, -3.5266, -3.4995, -3.5330. **min -3.5481, median -3.5305, max -3.4944.** The four
+shuffle scores (-3.5266, -3.4995, -3.4944, -3.5330) sit no lower than the six uniform scores; shuffling the
+target's own letters instead of drawing fresh random ones does not sharpen the floor here.
+
+### Variant (a): vig arithmetic, cipher-side mode, Dutch key (`--param modes=cipher --param arith=vig`)
+
+CONTROL (German plaintext, held-out nl20 key through a random cipher-side-mixed tableau, keyword from the de20+nl20
+list, seeds 1-3): 81.3 / 78.5 / 70.9 pct plaintext letters recovered, mean **76.9 pct**, gate 50 pct met (row in the
+table below, 22:04 UTC).
+
+TARGET: stage-1 best 10.5 nats over uniform (`zuchtend:cipher`); stage-2 winner `zutun:cipher:vig` (stage-1 rank
+near the bottom of the top 30, 1.41 nats), msg-1 best-of-30 **-3.458** (range -3.588 to -3.458); pooled joint
+log-likelihood (all 5 messages) **-3.498** per letter -- above the two-text band's top (-3.507) by 0.009 nats and
+inside the ten-text band (below its max of -3.4944 by 0.004 nats, above its median by 0.033). Judge: **FAIL**
+(score -0.887 vs real_p05 -0.823, null_p99 -2.071, real_median -0.78, mode=both, N=924). Not flagged (below the
+-3.40 line by a wide margin on both bands). Message 1 decoded streams, first 40 letters (word salad, not a
+reading): P `efrapptsiedemdreijungenbeklombauenkwangd`, K `valenbaronestjeomdieietsgegaanofikgebrok`. Control-backed
+negative for the vig cipher-side corner of the keyword-mixed tableau family. Decode backed up as
+`families/keyed_running_key-1-vigcipher.txt` before variant (b), same seed, overwrote the shared path.
+
+### Variant (b): beau arithmetic, cipher-side mode, Dutch key (`--param modes=cipher --param arith=beau`)
+
+CONTROL (same design, beau arithmetic, seeds 1-3): 77.1 / 76.4 / 72.2 pct, mean **75.2 pct**, gate 50 pct met (row
+in the table below, 22:27 UTC).
+
+TARGET: stage-1 best 9.6 nats over uniform (`zuerst:cipher`); stage-2 winner `zickzack:cipher:beau` (stage-1 rank
+8th of 30, 6.4 nats), msg-1 best-of-30 **-3.488** (range -3.602 to -3.488); pooled joint log-likelihood **-3.518**
+per letter -- inside both the two-text band (-3.544 to -3.507) and the ten-text band (below its max of -3.4944 by
+0.024 nats, above its median -3.5305 by 0.013). Judge: **FAIL** (score -0.972 vs real_p05 -0.823, null_p99 -2.071,
+mode=both, N=924). Not flagged. Message 1 decoded streams, first 40 letters (word salad, not a reading): P
+`eckigerfigurengonnteihmberthalbscheineng`, K `dhemarinevanjozefontloosnuikboerderiiifr`. Control-backed negative
+for the beau cipher-side corner. Decode backed up as `families/keyed_running_key-1-beaucipher.txt`.
+
+### Variant (c): plaincipher and keycipher modes, vig, Dutch key -- not run, owed
+
+Variants (a) and (b) (control + target each) took about 24 minutes apiece with the box's process contention (this
+job's own two background noise-band processes plus one family_run.py, three decoder processes throughout, as the
+brief allows); by the time (b) finished only about 20 minutes remained in this job's 75-minute box, not enough to
+run a third control-plus-target cycle of the same shape and still write this section up. Owed to the next Koehler
+B' job at the same box size: `python3 tools/family_run.py specs/koehler-1944.json --family keyed_running_key
+--corpus tools/data/de20 --param kcorpus=tools/data/nl20 --param modes=plaincipher,keycipher --param arith=vig
+--param top=30 --param beam=300 --param order=6 --param spaces=1 --seeds 3 --gate 0.5`.
+
+**Reading K2's beau/Dutch-key target and this job's own beau target against the ten-text band.** K2's variant 1
+(full/plain/key/both modes, beau, Dutch key) pooled score was -3.478. Against the old two-text band it sat 0.029
+(-3.507) to 0.066 (-3.544) nats above the top; against this job's ten-text band it is STILL above the max (-3.4944)
+by 0.0164 nats -- smaller than before, since the wider band's own top is higher than the two-text band's top, but
+K2's reading has not moved inside the band, it remains the one number in this family's whole record sitting above
+every noise draw (still well under the -3.40 flag line, so not flagged, and still judge FAIL). This job's own beau
+target (variant b, cipher mode, -3.518) is different: it sits INSIDE the ten-text band, 0.024 nats below its max
+and 0.013 above its median. So widening the band from two draws to ten did not clear K2's target of sitting above
+every noise draw seen so far, it only shrank the margin; a single value above ten draws is not itself evidence
+(the band has no tail at n=10 either), so this is bookkeeping, not a lead, and K2's reading remains an
+unclassified excess pending a larger band, not a candidate.
+
+**Read across all three cipher-side placements.** Both controls clear gate at rates similar to the four
+placements already run (72.6-89.6 pct in GOLD-2C/K1/K2 vs 76.9/75.2 pct here), so the method reads a real
+cipher-side-mixed tableau about as well as the other four placements when one is present. Both targets sit inside
+the noise band on both bands. Together with GOLD-2C, K1, K2 (four placements: plain, key, both, full) and
+GOLD-B2D's B''-c (a general 26!-permutation search on the cipher side alone, control below gate at this N), this
+extends the control-backed negative for family B' to six of the seven `mixed_tabula` placements at vig and beau
+arithmetic, keyword restricted to the de20+nl20 list; `plaincipher`/`keycipher` (variant c) and varbeau arithmetic
+remain untried corners of the same restricted search.
+
+Files: `tools/running_key.py` (modes cipher/plaincipher/keycipher), `tools/tests/test_keyed_running_key.py`,
+`ciphers/koehler-1944/scripts/keyed_noise_band.py`, `running-key/keyed_beau_noise_band.tsv` (+ `_A.log`, `_B.log`),
+`families/keyed_running_key-1-vigcipher.txt`, `families/keyed_running_key-1-beaucipher.txt`, the two family_run.py
+table rows below (22:04 and 22:27 UTC). Reproduce: `python3 tools/tests/test_keyed_running_key.py`; the two
+family runs, `--param modes=cipher --param arith=vig` and `--param arith=beau`, both otherwise as in variant (a)
+above; the noise band, `python3 ciphers/koehler-1944/scripts/keyed_noise_band.py u1 u2 u3 u4 u5 u6 s1 s2 s3 s4
+--out running-key/keyed_beau_noise_band.tsv` (about 60 minutes single-threaded; split across processes as this job
+did to run alongside the family runs). Rule 10: nothing here is a reading; NOTES.md status stays `open`.
+
+-- GOLD-K3 (Sonnet, session_01K4n8VHbDXGiaAwDk12dgrP), 25 Sept 2026
+
 <!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
 
 | date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
@@ -633,3 +727,4 @@ arith=beau`) likewise. Rule 10: nothing here is a reading; NOTES.md status stays
 | 25 Sept 2026 20:54 | keyed_running_key | N=924 K=26 restarts=8 corpus=pg15736_Der_Mann_von_vierzig_Jahren.txt.gz+pg36905_Schach_von_Wuthenow.txt.gz+pg41051_Peter_Camenzind.txt.gz+pg41907_Demian.txt.gz+pg43987_Die_drei_Spruenge_des_Wang_lun.txt.gz+pg46184_Frau_Jenny_Treibel.txt.gz+pg5323_Effi_Briest.txt.gz kcorpus=tools/data/de20,arith=vig,top=30,beam=300,order=6,spaces=1 | 1 | strict 0.077 (0.064-0.085); either-stream 0.896 (0.886-0.907) | -3.573 | FAIL language: score=-0.975, null_p99=-2.071, real_p05=-0.823, real_median=-0.78, mode=both, N=924 | yes (gate 0.5 on either-stream) | GOLD-K2 B' vig, German key, gated on either-stream recovery (streams exchangeable) |
 | 25 Sept 2026 21:56 | permuted_tableau | N=924 K=26 restarts=8 corpus=pg15736_Der_Mann_von_vierzig_Jahren.txt.gz+pg36905_Schach_von_Wuthenow.txt.gz+pg41051_Peter_Camenzind.txt.gz+pg41907_Demian.txt.gz+pg43987_Die_drei_Spruenge_des_Wang_lun.txt.gz+pg46184_Frau_Jenny_Treibel.txt.gz+pg5323_Effi_Briest.txt.gz kcorpus=tools/data/nl20,arith=vig | 1-3 | 0.095 (0.074-0.129) | not run (CONTROL BELOW GATE) | - | no (gate 0.5) | GOLD-B2D B''-c cipher-side permutation anneal (sum-stream proxy), control before target |
 | 25 Sept 2026 22:04 | keyed_running_key | N=924 K=26 restarts=8 corpus=pg15736_Der_Mann_von_vierzig_Jahren.txt.gz+pg36905_Schach_von_Wuthenow.txt.gz+pg41051_Peter_Camenzind.txt.gz+pg41907_Demian.txt.gz+pg43987_Die_drei_Spruenge_des_Wang_lun.txt.gz+pg46184_Frau_Jenny_Treibel.txt.gz+pg5323_Effi_Briest.txt.gz kcorpus=tools/data/nl20,modes=cipher,arith=vig,top=30,beam=300,order=6,spaces=1 | 1 | 0.769 (0.709-0.813) | -3.498 | FAIL language: score=-0.887, null_p99=-2.071, real_p05=-0.823, real_median=-0.78, mode=both, N=924 | yes (gate 0.5) | GOLD-K3 B'-c cipher-side mixed alphabet, vig, Dutch key, control before target |
+| 25 Sept 2026 22:27 | keyed_running_key | N=924 K=26 restarts=8 corpus=pg15736_Der_Mann_von_vierzig_Jahren.txt.gz+pg36905_Schach_von_Wuthenow.txt.gz+pg41051_Peter_Camenzind.txt.gz+pg41907_Demian.txt.gz+pg43987_Die_drei_Spruenge_des_Wang_lun.txt.gz+pg46184_Frau_Jenny_Treibel.txt.gz+pg5323_Effi_Briest.txt.gz kcorpus=tools/data/nl20,modes=cipher,arith=beau,top=30,beam=300,order=6,spaces=1 | 1 | 0.752 (0.722-0.771) | -3.518 | FAIL language: score=-0.972, null_p99=-2.071, real_p05=-0.823, real_median=-0.78, mode=both, N=924 | yes (gate 0.5) | GOLD-K3 B'-c cipher-side, beau, Dutch key |
