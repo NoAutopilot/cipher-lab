@@ -21,7 +21,9 @@ Recovery on a control is TOKEN accuracy (every letter the token stands for right
 inserted one in neither numerator nor denominator), the CM3 convention, so the numbers sit beside CM3's rows.
 
 params: err (0.05), gap (2), use (auto = matched to the target's marked share, or a number 0..1), iters (120000),
-order (3), uni_weight (1.0). The control's truth alignment and the last solve's per-token decode are kept in the
+order (3), uni_weight (1.0), assign (regular: one vowel per mark string on every base; irregular: one vowel per marked
+code+mark type, the base still the consonant -- the control is the same regular-assignment cipher read through the
+looser key, so the irregular solver's control number says how much the extra freedom costs). The control's truth alignment and the last solve's per-token decode are kept in the
 module (_STASH) between family_run.py's make_control / solve / score_recovery calls, as codemark_curve.py's
 TRUTH_INDEX does. Test: python3 tools/tests/test_syllabary.py"""
 import random
@@ -164,14 +166,16 @@ def make_control(spec, seed, corpora, params):
     return [seq], "".join(toks), [rest]
 
 
-def expand(seq):
-    """Tokens -> symbol stream: C<code>, then M<marks> when marked."""
+def expand(seq, assign="regular"):
+    """Tokens -> symbol stream: C<code>, then a vowel symbol when marked: M<marks> under the regular assignment (the
+    same mark names the same vowel on every base), M<code^marks> under assign=irregular (each marked TYPE names its own
+    vowel, as in the Venetian keys with irregular arrangement; the base still gives the consonant)."""
     out, spans = [], []
     for t in seq:
         code, mark = split_tok(t)
         a = len(out); out.append("C" + code)
         if mark:
-            out.append("M" + mark)
+            out.append("M" + (t if assign == "irregular" else mark))
         spans.append((a, len(out)))
     return out, spans
 
@@ -179,7 +183,7 @@ def expand(seq):
 def solve(cipher_msgs, spec, seed, restarts, corpora, params):
     model = ha.Model(corpora, _p(params, "order", 3))
     seq = [s for m in cipher_msgs for s in m]
-    stream, spans = expand(seq)
+    stream, spans = expand(seq, params.get("assign", "regular"))
     allowed = {s: VOW for s in stream if s.startswith("M")}
     res = ha.solve(stream, model, restarts, _p(params, "iters", 120000), seed, _p(params, "uni_weight", 1.0), allowed=allowed)
     sc, key = res[0][:2]

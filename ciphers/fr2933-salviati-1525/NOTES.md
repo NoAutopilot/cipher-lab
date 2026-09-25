@@ -1571,3 +1571,92 @@ Regenerate: `CM_RESTARTS=24 CM_ERR=0.05 python3 control/codemark_curve.py contro
 runs on four cores), `CM_ERR=0.07` likewise, `CM_ORDER=5 CM_BACKOFF=1` for the backoff rows (about 6 min), `CM_RESTARTS=24
 python3 control/codemark_curve.py target cm SEED --leaves all` for seeds 4-6; the error-rate table is
 `python3 control/error_rate.py` (added).
+
+## DSN: next design family (25 Sept 2026, LANE R8)
+
+Worker LANE R8 DSN (Fable, cap $15, box 90 minutes), 22:24-22:50 UTC. Brief `.claude/briefs/runs/2026-09-25-lane-r8-dsn-salviati-design.md`.
+Disk only, no hosts, no subagents. **No reading; grades stay H0 C0 S0 M0 I0; no reading_dsn.txt; nothing for the re-derivation.**
+Spec written: `specs/fr2933-salviati-1525.json` (built by `build_spec.py` from the eight settled leaf files, one line per sign run,
+`row_pattern` for the plain-box interleaving; `build_spec.py --check` exits 1 when stale). Family: `tools/families/syllabary.py`,
+registered in `tools/family_run.py`; offline test `tools/tests/test_syllabary.py` (4 s). Rows: HYPOTHESES.md (family_run) and
+`control_curve.tsv` (design `syl`, `syl-irr`). Decodes: `families/syllabary-{1,2,3}.txt` (regular assignment; seeds 1 and 3 regenerated at 22:45 after the irregular run overwrote them, byte-identical scores -10229.499 / -10264.154) and `families/syllabary-irregular-{1,3}.txt`; comparison `dsn_compare.py`.
+
+**1. Design chosen: a partial syllabary with regular assignment** -- every base code is a letter (36 homophonic codes), and a
+superscript mark on a consonant base is the vowel that follows it, the same mark naming the same vowel on every base, the scribe
+using a syllable sign only part of the time. Why this one, from the target's own statistics (`build_spec.py`'s constraints block;
+tabulation in this section's commit): (i) the five marks `~ 1 dot 5 7` recur as a set on six bases -- g carries all five, lam
+five, a five, eps four, m four, H three -- and those 528 tokens are 59% of the 894 marked tokens, which is what a five-vowel row
+on a handful of consonant signs looks like, while w, tee, nt, bh, rz, S, dl, psi (about 900 tokens) are marked under 10% of the
+time; (ii) the period parallel is the Venetian letter-plus-superscript family of exactly this milieu (venetian.htm: BnF fr.2988,
+fr.3019, fr.20506, fr.3022, Clair.327 f.279-280, 1525-1528, LANE R5 B's design near-miss), where syllables are "a letter followed
+by one or two digits" and -a -e -i -o -u get a consistent figure (Zifra Granda, Bonavoglia 2019); (iii) CM3's control says a
+letter-per-type reading at 5% error would have been found (62-86%), so the untested space is types worth more or less than one
+letter, and a two-letter syllable on 32% of tokens is the largest such departure the marks can carry; (iv) a null hypothesis is
+not indicated by the data: every frequent bare type has a strong neighbour association (KL of the next/previous base-code
+distribution against the marginal, ratio to a within-run shuffle baseline 2.0-5.3 for the twelve commonest types, S4 3.9 and
+dl 5.3 from the S4-dl bigram, 30 of S4's 60 tokens), whereas nulls would sit near 1.0; (v) the marked types are the ones with
+weak association (ratio 1.1-1.5 for e^dot, a^1, g^1, ]^ot, m^, eps^1, H^1|o), consistent with a token whose last letter is a
+vowel, after which Italian is nearly free. Read against LANE R4 P's `vi` (24 Sept, N=720, the first transcription at 83.5% pass
+agreement, every consonant+vowel merged, 51% marked vs the target's 34%, noise-free control): this is the same hypothesis on the
+settled pooled transcription with a use rate matched to the target's 31.7% marked share and the CM3 measured-error control.
+
+**2. Control design** (`syllabary.make_control`): a window of the it16 judge corpus (held out of the solver's model) laid on the
+target's own row pattern (`row_pattern`, plain boxes withholding 2 letters each as in P/CM/CM3), CV pairs merged into one token
+with probability `use` (bisected until the marked share matches the target's: use 0.67-0.69, marked share 0.318-0.319 vs
+0.317), the target's 36 base codes allotted to letters and its 40 mark strings to vowels by frequency deficit (P's rule), then
+the CM3 error mix at the token level (5%: 62-72 deletions, 38-40 insertions, 19-24 code confusions per seed). Symbol count
+69-72 against the target's 76 (36 codes + 40 marks); at the code+mark TYPE level the control has 278-316 types against 223,
+because marks fall on any consonant homophone rather than on the target's eight mark-carrying bases -- a looser match, noted,
+not fixed (suggestion below). Solver: P's expansion (code symbol, then mark symbol restricted to a e i o u) through
+`tools/homophonic_anneal.py`, order 3, 6 restarts x 120,000 iterations, uni_weight 1. Recovery is CM3's token accuracy.
+
+**3. Controls** (token accuracy, seeds 1/2/3; score per symbol; the clean plaintext scores -2.33 / -2.30 / -2.30 per letter
+under each seed's model):
+
+| stream | token accuracy | best score / symbol | gate 0.6 (2 of 3; family_run gates the mean) |
+|---|---|---|---|
+| 0% error (the ceiling, rule 3 headroom check) | **99.3 / 97.6 / 97.8%** | -2.32 / -2.29 / -2.30 | met |
+| measured mix, 5% | **95.0 / 94.0 / 93.0%** | -2.38 / -2.37 / -2.36 | **met (3 of 3)** |
+| bracket top, 7% | **83.6 / 89.5 / 91.3%** | -2.48 / -2.43 / -2.41 | met (3 of 3) |
+| irregular assignment (a vowel per marked type, 286-315 vowel symbols), 5%, 6 restarts | 17.7 / 24.2 / 22.9% | -2.59 / -2.52 / -2.59 | **not met -- CONTROL BELOW GATE, target not run** |
+| irregular assignment, 5%, 24 restarts | **78.3 / 24.2 / 85.2%** (seed 2's best restart is the 6-restart one) | -2.39 / -2.52 / -2.32 | met on seeds 1 and 3 (family_run's per-seed gate), target run on those two |
+
+The 0%-error ceiling is 98%, so the design is an easy one for this solver at N=2,820 (as P's `vi` was at 720: 93-96%); that is
+the headroom the brief asked to check -- it means a target that were this design would read, not that the test is uninformative.
+The 5% and 7% controls lose 4-10 points to the error, far less than cm lost (62-86% at 5%), because the solver has 76 symbols
+to place instead of 223.
+
+**4. Target** (the pooled eight leaves, 2,820 tokens -> 3,714 symbols, same solver and setting, seeds 1/2/3;
+`families/syllabary-{1,2,3}.txt`, `python3 ciphers/fr2933-salviati-1525/dsn_compare.py`):
+
+| seed | best score | per symbol | judge (it, N=3714) | first 60 letters |
+|---|---|---|---|---|
+| 1 | -10229.5 | -2.754 | FAIL -1.365 (null_p99 -1.857, real_p05 -0.911) | euiengiuietaeiecouianonorinoesiasolanoilftteeaseuosoiolamefi |
+| 2 | -10300.5 | -2.773 | FAIL -1.367 | altecpirtereaniuortesocoinsouineionosoiaprdieeioroiononotepa |
+| 3 | -10264.2 | -2.764 | FAIL -1.365 | aotentitterealimatteronoaprouileioseroilardieeiotoioloseseau |
+
+Cross-seed letter agreement 19.2% (1/2), 24.1% (1/3), 35.2% (2/3), against 93-95% self-consistency on the controls; hits of 30
+common Italian words of five letters or more: 0 in every decode, 0 in three shuffles of each; the mark-to-vowel maps disagree
+across seeds (`1` = o / e / o, `#` = a / o / e, `+` = e / o / o), so no syllable row is stable. **Target -2.75 to -2.77 per symbol
+against controls at -2.36 to -2.38 (5%) and -2.41 to -2.48 (7%)**: 0.27 per symbol below the worst 7% control seed, about
+1,000 nats over the stream, and the judge places every decode between the shuffled null and real prose, where cm's decodes also
+sat. So the regular-assignment partial syllabary is a **control-backed negative at 5% and at 7%**, conditional on (i) CM3's error
+estimate, (ii) regular assignment -- though the irregular form (a vowel per marked type, 223 symbols) is a control-backed negative too on the two seeds whose 24-restart control reads 78-85%: target -2.689 / -2.686 per symbol against -2.39 / -2.32, judge FAIL -1.311 / -1.298, seeds 1/3 agreeing on 10.1% of letters, 0 word hits (`families/syllabary-irregular-{1,3}.txt`, `dsn_compare.py --prefix irregular 1 3`); seed 2's control stays below the gate, (iii) every mark
+string read as a vowel, including the second mark family `# + dot o ot` that sits on e, S7, ] and Z rather than on the five-mark
+bases, and (iv) the control's looser type-level K (278-316 vs 223). The target stays `partial` (NEAR.md is the orchestrator's).
+
+**5. What this leaves.** Types are not one letter (CM3) and marked types are not consonant+vowel under one mark-to-vowel table
+(this section). Untested, in the order the statistics suggest: (a) the second mark family as something other than a vowel --
+`~` is the period abbreviation stroke for a suspended n or m (151 tokens, the commonest mark), `#`/`+`/`dot` on e and S7 could be
+doubling or a following consonant: one `--param` extension of this family (a mark's allowed letters set per mark string, e.g.
+`~` -> n m) with the generator merging the matching pairs; (b) marked types as whole words (a nomenclator), which needs word-level
+scoring and a word list, not the letter anneal; (c) the sign/plain boundary: plain boxes are whole words, so runs start and end
+at word boundaries -- a boundary-aware model (a word-edge symbol at every run edge in both control and target) is one cheap row
+in this family (`gap` and a boundary flag). Suggestions, one line each, not done: restrict control marks to the target's eight
+mark-carrying bases so the type-level K matches; give `family_run.py` a decode-file suffix per `--param` set (a second variant
+of one family on one seed overwrites the first's `families/<family>-<seed>.txt`; this run copied the files by hand and the
+irregular variant never reached its target run, so nothing was lost).
+
+Requests: none (disk only). Regenerate: `python3 tools/family_run.py specs/fr2933-salviati-1525.json --family syllabary --seed S
+--seeds 1 --restarts 6 --param err=0.05` (control seed S then target seed S, about 2 min each); `--control-only --seeds 3
+--param err=0` and `err=0.07` for the ceiling and bracket rows; `--param assign=irregular` for the irregular rows.
