@@ -1,0 +1,6 @@
+host	requests	status
+api.crossref.org	3	ok
+api.openalex.org	8	ok
+api.semanticscholar.org	8	blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=Postma%20Johan%20de%20Witt%20Coenraad%20van%20Beuningen%20correspondentie%20Noordse%20oorlog
+be-api.us.archive.org	6	ok
+www.googleapis.com	6	ok

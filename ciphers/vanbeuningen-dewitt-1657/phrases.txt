@@ -1,0 +1,10 @@
+# Distinctive phrases for print_check.py, vanbeuningen-dewitt-1657.
+# Drawn from plaintext_print.txt (Brieven aan Johan de Witt I, pp.405-406) and reading.txt (the cipher
+# copy's own decode). The plaintext is already known to be in print (Japikse 1919); this check is for a
+# SEPARATE prior print of the cipher copy's decipherment, its key, or secondary-literature discussion of it.
+Rijcxhoffmeester
+geobtineert op sijn versoeck
+onopgelost cijfer van een andere hand
+Vereenichde Nederlanden te discrediteren
+prompte realiteyten is hier het credijt
+Coningh van Denemarcken uyt Londen heeft geschreven

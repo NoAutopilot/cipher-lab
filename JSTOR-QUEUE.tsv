@@ -71,3 +71,4 @@ ciphers/august-van-saksen-1561-64	READ: https://www.jstor.org/stable/40941620 (P
 ciphers/antt-linhares-chave	"Linhares" AND "cifra" AND ("dicionário" OR Vieyra)	2026-09-25	queued	
 ciphers/antt-linhares-chave	"Sousa Coutinho" AND ("chave de uma cifra" OR "Diccionario")	2026-09-25	queued	
 ciphers/antt-linhares-chave	"Rodrigo de Sousa Coutinho" AND ("Rio de Janeiro") AND cifra AND correspondência	2026-09-25	queued	
+ciphers/vanbeuningen-dewitt-1657	"Van Beuningen" AND "De Witt" AND (cijfer OR cipher OR sleutel) AND (Noordse OR Denemarken OR 1657)	2026-09-25	queued	
