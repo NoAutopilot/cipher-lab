@@ -51,6 +51,19 @@ two positions) are NOT in the key; five of Remarque's eight positions are NOT in
 `[remarque-e2-cand]`); `[v-plain]` (2061's "de" D-position) is cited as probably the same sign as `[v-tall]`
 but not merged outright.
 
+**Update after the rule-7 fresh-instance re-derivation (NOTES.md "Reading"):** a fourth, independent pass
+(given only glyph codes + gloss words + images, not this file or key.tsv) reproduced all 13 confirmed signs
+above at 100% agreement with zero contradictions, and independently reached the same AA-compression and
+F-drop hypotheses used here. It additionally proposed values for the still-unkeyed candidates, all consistent
+with this worker's own working hypotheses (not contradicting anything in the confirmed table), but each still
+resting on one word-instance only, so kept OUT of key.tsv:
+`[x-dot]`->a (its own confidence: low-medium, "could be a doubling mark rather than literally A"),
+`[g-loop]`->l (medium-high), `y`->s (medium, matches key.tsv's own `y`->s exactly),
+`[defensie-i-cand]`->i (medium-high), `[defensie-e-cand]`->e (medium-high),
+`[remarque-r1-cand]`->r, `[remarque-m-cand]`->m, `[remarque-r2-cand]`->r (2nd R homophone),
+`[remarque-q-cand]`->q, `[remarque-u-cand]`->u, `[remarque-e2-cand]`->e (all high confidence, direct 1:1
+position in an unambiguous 8-glyph/8-letter word, but still single-instance).
+
 Other shapes seen but not yet tied to any word in the key (noted by the 2007A-pass subagent while reading
 nota.jpg/aanmerkinge.jpg, not used here): `[hash]` (an invented two-or-three-stroke "ladder"/tally mark,
 recurs often), `ÿ` (y with two dots), `Ö` (O with two dots), `[2dot]` (a floating two-dot mark, possibly a

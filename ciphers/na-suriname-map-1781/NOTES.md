@@ -237,10 +237,30 @@ question and the `[delta]`/`[lambda]` question flagged in `conflicts.tsv`.
 
 A fourth subagent, given only the glyph-code segmentation of `ciphertext.tsv` (sign codes and word/position,
 no plaintext values) and the known gloss word for each cipher word, plus the crop images -- NOT `key.tsv`,
-NOT `glyphs.md`, NOT this worker's reasoning -- independently re-derived a letter value for each sign.
-[Result and agreement percentage to be filled in once the subagent returns; if this worker's session ends
-before that, the next worker should read the pending re-derivation and complete this paragraph before the
-target moves toward stage 9.]
+NOT `glyphs.md`, NOT this worker's reasoning -- independently re-derived a letter value for each sign, and
+was explicitly asked to flag any sign that got two different letters at two different positions.
+
+**Result: agreement 13/13 (100%) on every sign in key.tsv, zero contradictions.** The subagent independently
+re-derived N=[h-loop]/[l-bare], A=[delta], V=5, E=7/[ezh-dot]/[a-plain], L=c, P=[s-loop], G=G, R=[o-plain],
+D=[v-tall] -- matching this worker's key.tsv exactly, including which signs are homophones of which letter.
+It cross-checked every code that recurs across word-positions in the given set and found none assigned to
+two different letters. It also independently arrived at the same two structural hypotheses this worker used
+for the two 8-letters/7-glyphs words: Generaal's doubled AA compressed to one glyph ([x-dot], tentative A,
+its own words "low-medium confidence... could instead be a non-letter duplicate-previous-sign marker" --
+matching this worker's own stated caveat in glyphs.md) and Defensie's F silently dropped (rejecting the
+alternative "drop the final E" specifically because it would force `7`=F and `[h-loop]`=E, both of which
+contradict signs already confirmed elsewhere -- the same reasoning this worker used, reached independently).
+It additionally proposed letter values for the still-unkeyed Defensie-tail and Remarque-tail positions
+(y/[defensie-i-cand]/[defensie-e-cand] -> S/I/E; [remarque-r1-cand]/[remarque-m-cand]/[remarque-r2-cand]/
+[remarque-q-cand]/[remarque-u-cand]/[remarque-e2-cand] -> R/M/R/Q/U/E), all consistent with -- not
+contradicting -- this worker's own working hypotheses, but each still resting on a single word-instance with
+no cross-word confirmation, so **not** promoted to key.tsv's grade-C table; recorded as corroborated
+candidates in `glyphs.md` instead. No difference beyond that -- i.e. nothing that would send the key back --
+was found.
+
+**Conclusion: the 13-sign key stands as reported, independently re-derived at 100% agreement.** This is
+still, deliberately, a partial key (see "What was not done" above) -- the re-derivation confirms what is
+here is solid, not that it is sufficient to read 2039/2046/2077.
 
 ### Hosts and requests (this pass)
 
