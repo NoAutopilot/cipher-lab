@@ -149,3 +149,42 @@ via repository)` for curl / default Chromium UA for browser_fetch.js. No 403/alt
 seen from either host — the failures were a proxy-side connection reset (`ws_closed_mid_exchange`,
 confirmed via `/__agentproxy/status`) and an intermittent "upstream request failed" on the IIIF image
 tile service, not a bot block.
+
+## Y3: transcription (25 Sept 2026, LANE R6)
+
+Brief: LANE R6 Y3, disk-only transcription of the cipher leaf from `images/f106_full.png` (no Gallica
+fetch). Viewed the image full-resolution (1280x1800 PNG, a two-page spread) before cutting any crops or
+starting passes, per the brief's own escape clause ("if the image is too coarse to read... stop").
+
+**Stopping this pass: the image on disk is not the cipher leaf.** It is confirmed (again, more
+definitively than the 24 Sept note that first flagged it) to be a printed engraved portrait, not a page of
+"Avis de Flandre, chiffrés":
+
+- Left-hand page: blank, with only faint stains/foxing (no ink, no impression of writing visible at full
+  resolution).
+- Right-hand page: a printed oval-frame engraved portrait, captioned in Latin around the frame
+  "FRANCISCVS DE NEVFVILLE DE VILLEROY ARCHIEP. ET COMES LVGD. GALLIAR. PRIMAS" (François de Neufville de
+  Villeroy, archbishop and count of Lyon, primate of the Gauls), with an episcopal coat of arms below the
+  frame, printed page numbers "137" and "83" in the top margin (two different pagination systems from the
+  volume's compiled printed matter, matching the 24 Sept note), and a "Bibliothèque Royale" round library
+  stamp. No manuscript text, no numerals, no cipher symbols, no interlinear gloss anywhere on either page.
+
+This is not a resolution or coarseness problem — there is nothing cipher-shaped on this leaf to transcribe
+at any resolution. It reconfirms the 24 Sept access-route finding: the naive canvas-to-folio mapping
+(canvas index + 1 = folio number) used to fetch this image does not hold for this volume, and the actual
+manuscript leaf "Fol. 106 et suiv." carrying "Avis de Flandre, chiffrés" (per the BnF finding aid) has
+still not been located. `images/manifest.json`'s own fetch note already said as much; this pass adds a
+closer visual confirmation (the full caption text and both page numbers, not just "a portrait was seen")
+so a future access worker does not need to re-fetch and re-view this same leaf to rule it out again.
+
+No crops were cut and no transcription passes were run: there is no ciphertext-bearing content on this
+image to pass over, and fabricating a transcription of the printed Latin caption (or of nothing) would
+misrepresent the target. Per the brief, no cryptanalysis and no new fetch were attempted either.
+
+**Suggestion (one line, not actioned):** the next worker on this target needs a Gallica fetch (out of this
+brief's scope: disk-only) to actually locate folio 106 et seq. in the true manuscript foliation — e.g. by
+paging sequentially from a known-calibrated anchor canvas, or by checking Lauer's *Catalogue des
+manuscrits de la collection Clairambault* (already flagged 24 Sept, ark:/12148/bpt6k209158x) for this
+volume's own collation note, before any further transcription attempt.
+
+Hosts touched this pass: none (disk-only, per brief). Requests: 0.
