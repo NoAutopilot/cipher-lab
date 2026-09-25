@@ -3,7 +3,7 @@ A	12	digit	H	atlas/p57_alpha_seg1.jpg	agrees across this worker's own read, both
 A	14	digit	H	atlas/p57_alpha_seg1.jpg	as above
 A	16	digit	H	atlas/p57_alpha_seg1.jpg	struck through with a horizontal line in the manuscript -- void/cancelled code, not a live homophone; kept here for the record, excluded from decode use
 A	28	digit	H	atlas/p57_alpha_seg1.jpg	as above
-B	S01	sign	M	atlas/p57_alpha_seg1.jpg	non-digit sign, an ornate script capital that superficially resembles "N" or a looped flourish with a horizontal cross-stroke; not yet cropped to its own atlas file (time-boxed), located in seg1 directly under the "B" header (itself written as a decorative capital that resembles the digits "23")
+B	S01	sign	M	atlas/S01_letter_B_sign.png	non-digit sign, an ornate script capital that superficially resembles "N" or a looped flourish with a horizontal cross-stroke; one of two homophones for B (with digit 3); located directly under the "B" header (itself written as a decorative capital that resembles the digits "23")
 B	3	digit	H	atlas/p57_alpha_seg1.jpg	clear digit stacked below B's sign
 C	9	digit	H	atlas/p57_alpha_seg1.jpg	single homophone, clear in both this worker's read and both subagent passes
 D	5	digit	H	atlas/p57_alpha_seg1.jpg	single homophone, clear
