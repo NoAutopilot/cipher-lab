@@ -1911,8 +1911,8 @@
     },
     {
       "name": "Lane ZX, three partial targets (owner account)",
-      "live": 2,
-      "focus": "Clair 349 Este-Guise 1556: key sheet read once turned 90 degrees (52 H / 10 M); Opus transcription passes agree 70.7 percent (gate 60), being settled, decode next. Brochado letter 134 on the near-solve register (thin codes). Barriere 1654 negative with a control"
+      "live": 0,
+      "focus": "closed on handoff 23:15: Clair 349 Este-Guise 1556 found-solved (N0, key period, text known -- AUDIT.md V7-CL349, 25 Sept 2026: the letter is printed in clear in Guise Memoires-journaux, Michaud-Poujoulat 1e ser. t.6 pp.238-239, missed by the earlier check-solved sweep's pp.316-320 read of the same volume); Brochado letter 134 stays on the near-solve register (thin codes); Barriere 1654 closed-negative with a control"
     },
     {
       "name": "Lane CX2, check-solved round 2 (owner account)",

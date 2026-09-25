@@ -1,4 +1,5 @@
-partial
+found-solved
+Verifier V7-CL349, 25 Sept 2026 (AUDIT.md): N0, key period, text known. The ciphered part of the Cardinal of Ferrara's letter to Guise of 3/4 January 1557 (BnF Clairambault 349, f.3) was already deciphered on the leaf by an interlinear hand and its text is printed in clear in Guise's *Memoires-journaux* (Michaud-Poujoulat 1e ser. t.6, pp.238-239, IA nouvellecollecti06michuoft). Applying the period key of BnF fr.20974 no.15, identified by Tomokiyo, regenerates that text (H 29, C 260, M 611, I 98, U 22 of 1020 tokens): a key-and-leaf alignment, not a decipherment.
 Check-solved verdict (YX-CS349, 25 Sept 2026; restated here so it sits beside the status word): Ribier, *Lettres et memoires d'estat* (1666, IA bub_gb_bOnmNv2ZLVoC and bub_gb_qWTswSr32NYC) read and grepped in full; Guise *Memoires-journaux* (Michaud-Poujoulat 1e serie t.6, IA nouvellecollecti06michuoft, pp.316-320) read -- the 4 Jan 1557 letter is not printed; full section further down. **Corrected by the verifier V7-CL349, 25 Sept 2026 (AUDIT.md): the letter IS printed in clear in that same volume, pp.238-239 (dated 3 Jan. 1556 o.s.), which the sweep did not read; class N0, key period, text known.**
 
 ## YX-TR349 (25 Sept 2026): key transcription, step 1 of 3

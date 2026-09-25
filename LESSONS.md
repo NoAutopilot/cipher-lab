@@ -193,3 +193,17 @@ files also printed the `iiif_lines` block's pixel boxes (the prior line y-ranges
 box before eye-checking it, though no glyph content was exposed. A blind-transcription or blind-re-read brief
 names `images/manifest.json`'s `iiif_lines` block as off-limits alongside the plaintext and key, or hands the
 worker a manifest stripped of that block -- line-box geometry alone can bias a supposedly blind re-transcription.
+
+## Grep the whole edition volume, not one page range (25 Sept 2026, clair349-este-guise-1556)
+
+YX-CS349's check-solved sweep read Guise, *Memoires-journaux* (Michaud-Poujoulat 1e ser. t.6) at pp.316-320 and
+called the Cardinal of Ferrara's 3/4 Jan 1557 letter to Guise "not printed"; the letter is on pp.238-239 of the
+*same volume*, about 8,000 lines earlier in the cached djvu text, and prints the letter in clear phrase for
+phrase against the decode ("Scipion", "capitaine Livio Grosso", "les forces que vous menez"). The verifier
+(V7-CL349, AUDIT.md) caught it with a plain grep of the whole volume's OCR for two or three distinctive words
+from the decoded text, not a search confined to the pages near the sender's name and the letter's own date.
+Cost of the miss: about USD 185 of transcription and cryptanalysis on a letter that was already in print
+(YX-TR349/ZX-TR349D/ZX-DEC349, LANE ZX/YX). Lesson for check-solved: when a candidate sender/recipient edition
+is identified, grep the *whole* edition volume for the date and the correspondents' names (and, once any
+tentative decode exists, for two or three of its distinctive words), never a page range picked by proximity to
+where the letter was expected to sit; a volume's letters are not always printed in strict date order.
