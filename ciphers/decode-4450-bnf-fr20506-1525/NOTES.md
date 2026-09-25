@@ -1,5 +1,5 @@
 open
-DECODE RecordsView/4450 and DocumentsList read by this worker (no attached document, confirmed again); Tomokiyo's `venetian.htm` read in full by this worker (fresh fetch, not the local snapshot, which lacks this page); Bourdeau's `vasto1527/n20/ranzo_c017.txt`/`ranzo_c018.txt` witness grepped fresh in a new shallow clone — f.136 remains a copy of the still-undeciphered Ranzo letter fr.2988 f.9, no decipherment of that system has landed anywhere searched since the 24 Sept 2026 sweep below.
+DECODE RecordsView/4450 and DocumentsList read by this worker (no attached document, confirmed again); Tomokiyo's `venetian.htm` read in full by this worker (fresh fetch, not the local snapshot, which lacks this page); Bourdeau's `vasto1527/n20/ranzo_c017.txt`/`ranzo_c018.txt` witness grepped fresh in a new shallow clone — f.136 remains a copy of the still-undeciphered Ranzo letter fr.2988 f.9, no decipherment of that system has landed anywhere searched since the 24 Sept 2026 sweep below. Desjardins *Négociations diplomatiques de la France avec la Toscane* vol.2 and Molini *Documenti di storia italiana* (both job-brief-named editions, both read in full by this worker via archive.org djvu text) carry no occurrence of the fr.2988 f.9 / fr.20506 f.136 letter or its Ranzo/Garbino code; Molini does independently attest the covername "Garbino" for a *different* family's ciphered correspondence (Girolamo Centurione, not Girolamo/Hieronimo Ranzo) -- see follow-up section below.
 
 # decode-4450-bnf-fr20506-1525
 
@@ -15,6 +15,48 @@ Re-verdict per `.claude/briefs/check-solved.md`. This target's NOTES.md did not 
 6. **Print/calendar (b).** Not applicable in the usual sense — no printed edition of this specific unsigned 1525-1550 despatch exists; the relevant "edition" is the manuscript archetype fr.2988 f.9 itself (Gallica) and Bourdeau's own transcription of it, both already checked in searches (c)/(e) above and in the existing D2 section below.
 
 **Verdict: open**, unchanged from 24 Sept 2026. Status stays `open`, not `partial`: a copy relationship and a matched second-witness alignment are established (94.1%, see D2 below), but no decipherment of the underlying Ranzo/Garbino system exists anywhere searched, so there is no reading to grade. Not "new"; not "unpublished" (rule 10) — a search result, not a discovery. Requests this pass: `cryptiana.web.fc2.com` 1 (fresh fetch, curl -L browser UA, 200 after redirect, shared rate budget with bl-gualterio-1700's fetch in this same batch), WebSearch 1, github.com 0 (reused this batch's shared shallow clones), no DECODE login (cached catalogue sufficient).
+
+### Standard-edition follow-up (LANE CX, 25 Sept 2026)
+
+Job brief's two named printed sources, both fetched and read in full from archive.org djvu text (no browser
+tool needed, no challenge on this host):
+
+1. **Desjardins, *Négociations diplomatiques de la France avec la Toscane*, vol. 2** (archive.org
+   `gri_33125010469852`, 1886 printing, 54,636-line djvu text; internal date coverage late 1524-1527, confirmed
+   by its own table of contents headings, "SOIXANTE-TROIS LETTRES, DU 19 NOVEMBRE 1524 AU 13 AVRIL 1525" and
+   "QUARANTE-QUATRE DÉPÈCHES, DU 4 DÉCEMBRE 1526 AU 14 AOÛT 1527" -- squarely inside this target's own
+   1525-1550 window). "Ranzo" 2 hits, both OCR false positives on the unrelated Italian verb *ranzonare*/
+   *ranzoneranno* ("to ransom"), not the surname. "Garbino" 0 hits. No occurrence of the letter or its code.
+2. **Molini, *Documenti di storia italiana*** (archive.org, 2 distinct physical volumes each scanned twice by
+   Google Books: `documentidistor00moligoog`/`01moligoog` and `documentidistor02moligoog`/`03moligoog`, all four
+   fetched; 00/01 are the same volume at two OCR passes, confirmed by identical "Garbino" hit contexts, likewise
+   02/03). "Ranzo" hits in all four are OCR false positives on *ranzon*/*ranzonare* ("ransom"), as in Desjardins.
+   **"Garbino" 3 hits each in 00/01 and 02/03 -- a real, non-false-positive occurrence of the covername**, but
+   for a **different person**: document No. CLXIV, "Martino Centurione, da Burgos 17 Gen. 1528, a Girolamo suo
+   figlio, a Genova," carries a marginal note explaining that Girolamo (Seronimo) **Centurione** of Genoa was to
+   receive letters from the Imperial court in cipher, *"sono adrissate di corte di Cesare in Genova al predetto
+   Ieron.° et da Genova per ditto Ieronimo inviate ad Martino suo padre"* under the covername **Garbino** --
+   i.e. a Genoese banking-family correspondence (Centurione), 1528, structurally identical in shape (a son at
+   the Imperial court ciphering news home to his father under the name "Garbino") to the Ranzo/Garbino system
+   Bourdeau names for this target, but **a different Girolamo, a different family, three years later than this
+   target's earliest possible date, and not naming Ranzo, fr.2988, fr.20506 or fr.3022 anywhere nearby**. This
+   is not a match for the target letter and is not treated as one; flagged here only because "Garbino" is
+   otherwise a rare enough string that an independent, non-Ranzo attestation of the same covername convention
+   is worth a future worker's attention if the wider Garbino-code question (is "Garbino" a generic diplomatic
+   covername reused by unrelated correspondents, or does Centurione's usage connect to Ranzo's some other way?)
+   is ever picked up -- not run further here, out of this brief's scope (no cryptanalysis, no attribution work).
+3. No occurrence of "fr.2988", "fr.20506", "fr.3022", "Vasto", "Gattinara" (Ranzo's patron, per Tomokiyo) tied
+   to Ranzo by name in either edition.
+
+Requests this section: archive.org 6 (1 advancedsearch for Desjardins, 1 `_djvu.txt` fetch; 1 advancedsearch
+for Molini, 4 `_djvu.txt` fetches), all `-L` follow, >=1.6s apart, descriptive UA, all HTTP 200. No browser
+tool, no github, no DECODE login (nothing new to fetch there this pass).
+
+`python3 tools/intake_gate_check.py ciphers/decode-4450-bnf-fr20506-1525` output: see done line.
+
+**Verdict: unchanged, stays open.** Both job-brief-named editions are now directly read with no hit for the
+target's own letter; the Ranzo/Garbino system remains undeciphered everywhere searched across this and the
+prior 24-25 Sept passes.
 
 ## What this is
 
