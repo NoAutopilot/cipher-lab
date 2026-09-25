@@ -39,6 +39,8 @@ its state is only what it committed, so read its handoff and its lanes' ROOM lin
 
 ## Opening a lane
 
+Intake gate (25 Sept 2026): before any deep work (transcription, key application, cryptanalysis) on a target, read its check-solved verdict against .claude/briefs/check-solved.md: an `open` whose sentence does not name the standard edition and the pages or full-text search actually read, or that names an edition it could not open, is `blocked`, whatever word it uses. Send a check-solved worker first. (Linhares, 25 Sept: an `open` with the sender-family edition unread went to deep work; the verifier held it at N3 for that reason.)
+
 File the lane orchestrator brief and a COMMON for its workers under .claude/briefs/runs/<date>-lane-<x>-*.md (the
 2026-09-25 LX, DX and OX files are the latest pattern), commit, post a ROOM claim line, then spawn the lane
 orchestrator (Opus). The lane orchestrator writes each job brief to a file before spawning its Sonnet workers,

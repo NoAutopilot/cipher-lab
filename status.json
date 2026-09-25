@@ -617,6 +617,10 @@
  ],
  "log": [
   {
+   "when": "25 Sep, 04:05",
+   "what": "Intake gate: Linhares had gone to deep work on an 'open' verdict whose sender-family edition was unread. Rule added to CLAUDE.md, parent.md and the lane briefs; a worker is reading Textos Políticos 1993 now."
+  },
+  {
    "when": "25 Sep, 03:32",
    "what": "Van Beuningen 1657: verifier classes the key and decipherment of the cipher copy N3; the letter's text is N1 (printed 1919, whose footnote calls the cipher unsolved)."
   },
@@ -1026,8 +1030,8 @@
    "date": "25 Sept 2026",
    "kind": "recovery",
    "title": "Linhares dictionary code: the book is Vieyra's 1809 pocket dictionary, and the letter fragment reads",
-   "grade": "N3 (no prior decipherment located; AUDIT.md); H 25, M 1 of 26 groups",
-   "line": "The key sheet in the Condes de Linhares papers (ANTT PT/TT/CLNH/0086/11) says each number points to a page, column and word of 'o Diccionario'. LANE LX tested free scans against its worked example and found the book: A New Pocket Dictionary of the Portuguese and English Languages, abridged from Vieyra, Part I, London 1809; all twelve example groups land on the exact word. The two-page mid-letter fragment on m0002 then decodes 25 of 26 groups at grade H, one at M; pages 1 and 4 of the letter are not in the item, so no connected gloss is offered yet. A separate verifier classes both the reading and the identification N3. Safe sentence in AUDIT.md.",
+   "grade": "N3 (no prior decipherment located; AUDIT.md); H 25, M 1 of 26 groups; sender-family edition (Textos Políticos 1993) not yet read",
+   "line": "The key sheet in the Condes de Linhares papers (ANTT PT/TT/CLNH/0086/11) says each number points to a page, column and word of 'o Diccionario'. LANE LX tested free scans against its worked example and found the book: A New Pocket Dictionary of the Portuguese and English Languages, abridged from Vieyra, Part I, London 1809; all twelve example groups land on the exact word. The two-page mid-letter fragment on m0002 then decodes 25 of 26 groups at grade H, one at M; pages 1 and 4 of the letter are not in the item, so no connected gloss is offered yet. A separate verifier classes both the reading and the identification N3. Safe sentence in AUDIT.md. Held below N4, and its check-solved re-opened on 25 Sept: the edition most likely to print this letter, Coutinho's Textos Políticos, Económicos e Financeiros (Banco de Portugal, 1993), has not yet been read; a worker is on it.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/antt-linhares-chave"
   },
   {
