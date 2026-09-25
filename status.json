@@ -1,5 +1,5 @@
 {
- "updated": "25 Sept 2026, 16:17 UTC",
+ "updated": "25 Sept 2026, 16:35 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -617,6 +617,10 @@
  ],
  "log": [
   {
+   "when": "25 Sep, 16:35",
+   "what": "Linhares counts again: language judge PASS on the pt18 corpus (-1.051 vs threshold -1.122), reproduced by LANE V6. Digby: N0, Wheatstone 1862 deciphered this very document (Add MS 6912)."
+  },
+  {
    "when": "25 Sep, 15:45",
    "what": "Usage restored on both accounts. Other account opens R6, V6, B2 and takes the Linhares judge re-run; owner account opens ZX and CX2 on work that does not overlap."
   },
@@ -1088,8 +1092,7 @@
    "line": "The key sheet in the Condes de Linhares papers (ANTT PT/TT/CLNH/0086/11) says each number points to a page, column and word of 'o Diccionario'. LANE LX tested free scans against its worked example and found the book: A New Pocket Dictionary of the Portuguese and English Languages, abridged from Vieyra, Part I, London 1809; all twelve example groups land on the exact word. The two-page mid-letter fragment on m0002 then decodes 25 of 26 groups at grade H, one at M; pages 1 and 4 of the letter are not in the item, so no connected gloss is offered yet. A separate verifier classes both the reading and the identification N3. Safe sentence in AUDIT.md. On 25 Sept the Portuguese language judge, re-run on a corpus of the letter's own period (Correio Braziliense and O Investigador Portuguez, 1808-1819, 3.2 million letters), passes the reading (-1.044 against a real-text floor of -1.100; 192 of 200 genuine period windows pass the same gate), so the reading now counts; it stays below N4 because the edition most likely to print this letter, Coutinho's Textos Políticos, Económicos e Financeiros (Banco de Portugal, 1993), has not yet been read; a worker is on it.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/antt-linhares-chave",
    "key": "ours",
-   "text": "new",
-   "qa_flag": "Held since 12:45: the rule-7 language judge (new pt17 corpus) FAILs the reading narrowly: -1.147 vs real_p05 -1.102 after the judge's comment-header bug was fixed (wrong-key level -1.462). LX-JUDGE (verdict C): the judge separates real 1808 Portuguese from wrong-key Vieyra headword strings (AUC about 0.95); the reading beats 183 of 200 wrong-key strings and sits at the 5.5th percentile of real prose, and real 1808 prose itself fails this threshold 8.5% of the time (corpus 150 years older than the letter). Inconclusive, so not counted. Settles it: a Portuguese corpus of about 1780-1830 for the judge, or more of the letter (pages 1 and 4 are not in the item)."
+   "text": "new"
   },
   {
    "date": "25 Sept 2026",
