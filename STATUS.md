@@ -150,6 +150,27 @@ Salviati and Seure with costed briefs, N4 copy-free scouts (Bourdeau's copy-free
 stops, a successor parent reads this section, the lane table,
 the last check-in prompt (list_triggers), takes over the trigger with update_trigger persistent_session_id, and continues.
 
+## LANE OX handoff (session_01BE3g8tWbS4T24KXMpShHt4), 25 September 2026, 04:38 UTC
+
+Pool of 12 orphaned open, copy-free targets; triage `.claude/briefs/runs/2026-09-25-lane-ox-triage.md`; job briefs
+`2026-09-25-lane-ox-*.md`. 19 worker sessions (all Sonnet), about $89 of worker usage (one F, OX-HEL, stalled on an
+AskUserQuestion prompt; COMMON now forbids it), orchestrator about $6. No live workers, no pending check-in.
+
+| target | outcome (25 Sept 2026) | next |
+|---|---|---|
+| vanbeuningen-dewitt-1657 | partial. Cipher copy found (NA 3.01.17 inv.1538 ff.210-211, plain copy ff.208-209); ciphertext 862 tokens; key by known-plaintext alignment (align.py): 53 codes/21 letters, 446/517 coded tokens C, 70 M, codes 11 and 40 genuinely ambiguous; decode_key --check 0; fresh re-derivation agreed. AUDIT.md: letter text N1 (Fruin/Japikse 1919 pp.405-406), key/decipherment of the cipher copy N3. | SO-VANBEUNINGEN-1657 queued (parent assigns the check when the PR lands); N4 needs Postma 2006 read (JSTOR/owner). |
+| vaudemont-willemiii-1699 | found-solved: Japikse KS24 n.220 p.242 prints the 25 Mar 1699 letter from Robethon's deciphered exemplaar. | none |
+| breda-statengeneraal-1624-25 | found-solved (plaintext in print): Van der Hoeven, Geschiedenis der vesting Breda (1868) Bijlage XIX, clear text, not marked as a decipherment (N2 shape); Van der Kemp IV p.391 negative. | none unless a verifier wants the ciphertext mapped (copy order NA 1.01.02 inv.4945) |
+| clairambault1225-paget-1714 | partial. Two nomenclator letters, Pierre Paget, vice-consul at Genoa, 8 Apr and 28 Aug 1714, f.60-66; ciphertext 2340 tokens (500 cipher, 122 codes, same key); four interlinear glosses. Attempt 1 negative with matched control (target 0% extension/2 contradictions vs control 8.2%/0). | LOCAL-QUEUE row for AN Marine B7 (1714-16, Paget originals, possibly fuller decipherment); no second cryptanalysis attempt. |
+| willem-van-hessen-1567 | open, target cipher only in the KHA original (REQUEST.md). Siblings: 174 printed (Groen, Lettre CCLXIX) with a nomenclator key leaf in its bundle; 1069 (1563) carries an interlinear decipherment, no printed edition; its sign read stopped at the 60% gate (glyph atlas started, 10 signs). | Optional: read 1069's interlinear German decipherment as paleography (not glyph-by-glyph), then a verifier; needs the check-solved intake gate first. |
+| hellen-frederick-1752 | open in NOTES.md but effectively blocked: Fagel 5206 runs Oct 1752-Jul 1753 (no 4 Jan 1752 despatch); ciphertext DECODE-only, account lacks document permission (ASKS 42). | waits on ASKS 42 |
+| la-garde-1577 | open; two control-backed negatives on file; GSME/LMSAC/Groen print check negative; GSME digits confirm the transcription (25/27, 18/18). | only lead: WVO 6467's manuscript margin "solution", unconfirmed |
+| Heinsius five (borssele-heinsius-1714, heinsius-hermitage-1704, heinsius-dopff-1702, heinsius-vanhaersolte-1703, rumpf-vandebie-heinsius-1716-19) | archive-only (NA 3.01.19 incl. key items 2315-2317 not digitised); one consolidated request in borssele-heinsius-1714/REQUEST.md, ASKS 46 (H.A. 1836 first). | owner's copy order |
+
+Lessons applied to the lane briefs: known-plaintext keys by scripted word alignment, not hand matching; date-bracket a
+volume from a few header crops before paging it; an unfamiliar symbol alphabet needs a glyph atlas before blind passes;
+no AskUserQuestion in unwatched sessions. Retrospective trigger: OX-HEL scored F (flagged to the parent 03:18).
+
 ## LANE LX handoff (session_01UXTpujdthrPiBDUG57oNwf), 25 September 2026, 03:12 UTC
 
 - **Target:** `ciphers/antt-linhares-chave` (ANTT PT/TT/CLNH/0086/11, DigitArq docId a03cef08d3c04758aa148f5be56d3401). Status `partial`: letter pages 2-3 read, pages 1 and 4 not in this item.
