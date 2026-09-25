@@ -47,5 +47,14 @@
  "model": "Sonnet",
  "status_24_Sept_2026": "open; claimed solutions (Sams 1970, Roberts, Henderson 2011, Packwood 2020, Belanger 2025-26) none accepted; Bourdeau: famous list, not attempted",
  "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run is under cheap_test_done with its control",
- "written": "24 Sept 2026 by the survey worker (session_013GkMQP9y84gHGG4pSSwaQj), claude-fable-5-1"
+ "written": "24 Sept 2026 by the survey worker (session_013GkMQP9y84gHGG4pSSwaQj), claude-fable-5-1",
+ "cheap_test_done": {
+  "test": 1,
+  "result": "blocked",
+  "date": "25 Sept 2026",
+  "method": "bDOR (Sonnet, session_01XseK9i9AnL9C1yMiqd75gj): searched for the text of Alice Elgar's July 1897 covering letter to Mrs Penny that enclosed the cipher, needed as test 1's index source. archive.org advancedsearch found two Powell 1937 copies: in.ernet.dli.2015.155431 (open, access-restricted-item: None) and edwardelgarmemor0000mrsr (1947 printing, lending-only). Read the open copy's full OCR text (4845 lines): its Appendix (p.97-98) and p.9 narrative both describe the covering letter's existence but do not quote it; the only letter text the book prints nearby is a different, earlier one (Elgar to Dora herself, 'Forli Malvern March 4', book p.8). Cipher Mysteries' dedicated 'timeline, texts, and Keith Massey' post (ciphermysteries.com, 15 Nov 2019) likewise quotes only that same March 4 letter, not the July covering letter. Wase 2025's abstract (OpenAlex, keyed) is the MASC-negative result only, no letter text. Full log: specs/cheap-tests/dorabella-1897/test1-letter-search.md.",
+  "cost": "under cap",
+  "control": "not run -- no letter text to run the index rule against, so no candidate plaintext and nothing to control for",
+  "note": "test not run; the Enigma Variations dedication half of test 1 also not fetched, since the brief's block condition covers the whole test once its first input is unreachable"
+ }
 }
