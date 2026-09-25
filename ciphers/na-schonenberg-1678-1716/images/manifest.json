@@ -1,0 +1,51 @@
+{
+  "source": "service.archief.nl (Nationaal Archief, IIIF-style file API)",
+  "fetched": "2026-09-25",
+  "items": [
+    {
+      "file": "NL-HaNA_1.02.04_63_0001.jpg",
+      "url": "https://service.archief.nl/api/file/v1/default/fc3a8d42-b89e-4715-9753-0320355365c7",
+      "size_px": [1946, 2618],
+      "toegang": "1.02.04",
+      "invnr": 63,
+      "scan_id": "fc3a8d42-b89e-4715-9753-0320355365c7",
+      "note": "single leaf, recto only, as confirmed by the item page's drupal-settings-json viewer.response (availability DIGITALIZED, 1 scan)"
+    },
+    {
+      "file": "crop_top.jpg",
+      "derived_from": "NL-HaNA_1.02.04_63_0001.jpg",
+      "region_px_original": [400, 300, 1946, 700],
+      "note": "2x upscale crop of the opening salutation/first cipher line, for close reading of the interlinear gloss"
+    },
+    {
+      "file": "crop_mid1.jpg",
+      "derived_from": "NL-HaNA_1.02.04_63_0001.jpg",
+      "region_px_original": [0, 600, 1946, 1000],
+      "note": "1.6x upscale crop, body lines 3-6"
+    },
+    {
+      "file": "crop_mid2.jpg",
+      "derived_from": "NL-HaNA_1.02.04_63_0001.jpg",
+      "region_px_original": [0, 950, 1946, 1350],
+      "note": "1.6x upscale crop, body lines 6-9"
+    },
+    {
+      "file": "crop_mid3.jpg",
+      "derived_from": "NL-HaNA_1.02.04_63_0001.jpg",
+      "region_px_original": [0, 1300, 1946, 1700],
+      "note": "1.6x upscale crop, body lines 9-12, includes 'Aquy' marginal note"
+    },
+    {
+      "file": "crop_mid4.jpg",
+      "derived_from": "NL-HaNA_1.02.04_63_0001.jpg",
+      "region_px_original": [0, 1650, 1946, 2050],
+      "note": "1.6x upscale crop, closing lines and the final UNGLOSSED cipher block before the address"
+    },
+    {
+      "file": "crop_bottom.jpg",
+      "derived_from": "NL-HaNA_1.02.04_63_0001.jpg",
+      "region_px_original": [0, 2000, 1946, 2450],
+      "note": "1.6x upscale crop, address line 'A Doña Antonija de Albanylla &a'"
+    }
+  ]
+}
