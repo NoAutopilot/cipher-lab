@@ -1,4 +1,4 @@
-open
+found-solved
 
 # Vaudemont to Willem III / Bentinck, mostly in unsolved cipher, *25 March 1699
 
@@ -85,3 +85,100 @@ Search log (rule 10): reported above, per source. Not classified for novelty. Re
 shared with HU4/HU5 fetches earlier in this same pass), `www.nationaalarchief.nl` 0 (not applicable, archive is
 in Nottingham not the Netherlands), `github.com` 0 (reused clones already on disk this session). WebSearch 1.
 No subagents.
+
+## Update, 25 September 2026 (LANE OX OX-VAU, session_01QWGkEdftoGy7RQ2rKaGyuh) -- the "ontcijferde brief" resolved, status changed to found-solved
+
+Job: read the edition's front-matter/footnote conventions for the asterisk and "ontcijferd/onopgelost"
+wording, and identify what letter the KS24 p.812 index's "ook een ontcijferde brief is aanwezig" ("a
+deciphered letter is ALSO present") refers to. Host `resources.huygens.knaw.nl` only, one request at a
+time, >=1.5s apart.
+
+**Correction inherited from `sources/huygens/NOTES.md`'s round 2 (24 Sept 2026):** that pass found the KS24
+p.812 asterisk does not reliably mark cipher letters at all (3 of 4 spot-checked asterisked letters in this
+same Vaudemont run are ordinary prose) and that the real per-letter index is a third viewer accessor,
+`retroboeken/willemiii/toc1/index_html` ("Chron. lijst brieven"), which gives real letter numbers. Used it
+here: query `correspondent:ustring:utf-8=Vaudemont` (172 hits, batch_start=0 and 100) maps the 25 March 1699
+letter to **n. 220, Eerste gedeelte, deel 2, KS 24, p. 242**, immediately preceded by **n. 219, 18 Maart
+1699, p. 241** ("*18 Maart (met bijlage)" in the p.812 index) and followed by n. 221, 15 April 1699, p. 244.
+
+**The letter itself (p.242), read directly (not the OCR snippet):** the printed text opens "J'ay receu par
+l'ordinaire de dimanche passe la lettre que vous m'aves fais l'honneur de m'escrire..." and a long middle
+passage (military/financial figures for the Milanese: troop numbers, artillery, tax revenue committed to
+Mr. de Leganes) is set in distinctive letter-spaced type, unlike the rest of the letter and unlike n.219 and
+n.221 either side of it. **Footnote 1 on p.242, quoted in full:**
+> "Deze brief is grootendeels in cijferschrift aanwezig; er is ook een exemplaar in opgelost cijferschrift
+> (van Robethon's hand), dat ik in den tekst volg."
+> ("This letter survives mostly in cipher; there is ALSO a copy in solved cipher [in the hand of Robethon,
+> Willem III's secretary], which I follow in the text.")
+
+This is the edition's own explanation of "grootendeels in onopgelost cijferschrift; ook een ontcijferde
+brief is aanwezig" from the p.812 index -- word for word the same two facts, in the editor's own voice, at
+the letter itself. **The "ontcijferde brief" is not a separate letter elsewhere in the Vaudemont run (round
+1's own guess); it is a second exemplaar of this exact letter (25 March 1699), already deciphered in
+Robethon's hand, which Japikse used as his copy-text.** Round 1's inference is superseded; this is the
+"decisive check against the actual leaf" that both round 1's own verdict and `sources/huygens/NOTES.md`
+caveat 2 called for.
+
+**The letter-spacing convention, confirmed independently at two other places in the same volume (KS24),
+searched via the retroboeken "Zoek" full-text accessor with `source_id=2`:** footnote 1, p.38 (letter no.
+32, Sunderland to Willem III, 20 June 1693): "De gespatieerd gedrukte woorden zijn in den brief uit
+cijferschrift opgelost" ("The letter-spaced printed words are, in the letter, deciphered from cipher");
+p.131 (search snippet only, not opened in full this pass, budget): "...onderstreepte passages, in den tekst
+gespatieerd, waren klaarblijkelijk bestemd [...] gecijferd te worden, en zijn daarom gespatieerd gedrukt."
+This is edition-wide house style, not something specific to the Vaudemont letters: letter-spaced printed
+text = a passage that was in cipher in the source Japikse worked from, now printed decoded. A "Zoek" search
+for `cijfer`/`gespatieerd` restricted to source_id=2 found no hit in the front matter's own roman-numeral
+pages (I-XXXI or so, not individually fetched this pass) -- the general statement of the convention, if
+written out once rather than repeated per footnote, most likely sits in deel 1's (KS23) front matter, not
+re-stated in this deel; not read this pass (out of scope, flagged below).
+
+**No numeric ciphertext is printed anywhere in this edition for this letter.** Only Robethon's already-
+deciphered French text is printed (with the letter-spacing marking which words came from cipher); the
+manuscript ciphertext itself is not transcribed or reproduced. `ciphertext.tsv` is therefore not populated
+from this source -- there is nothing here to grade H/C/S/M/I as ciphertext, only a printed plaintext, graded
+H (read directly from the edition page). `plaintext_print.txt` holds the letter-spaced passage in full plus
+a description of what surrounds it; the full p.243-244 continuation (ordinary roman type, not cipher-
+marked) was read from the OCR html but not fully retyped, since it is not needed to answer the cipher-
+system question this pass covers.
+
+**Confirmed also from n.219 (p.241, 18 Maart 1699, "met bijlage" in the p.812 index):** the letter itself is
+ordinary plain French (a report on Comte Boselli's deposition and banishment from Venice, with a Latin
+extract still attached as an enclosure per footnote 4) -- not cipher, no letter-spacing, no footnote about a
+decipherment. But its closing lines are the first mention of a cipher between these two correspondents:
+"...comme je suis persuade que vous scaures bien des choses sur cette matiere, je vous prie de vous
+souvenir, Milord, que nous avons un chifre et que ce que vous me feres l'honeur de me mander, ne cour pas
+risque d'estre jamais sceu ailleurs" ("...remember, my lord, that we have a cipher, and that what you do me
+the honour of writing to me will run no risk of ever being known elsewhere"). Read together with n.220's
+footnote, the sequence is: 18 March, Vaudemont proposes/reminds Bentinck they have a cipher for sensitive
+material; 25 March, one week later, he uses it for the first time (or an early time) in this run, for the
+Milanese financial/military figures; the letter survives at the archive mostly in that cipher, but a
+solved exemplaar in Robethon's own hand also survives and is what Japikse actually printed. n.221 (15 April
+1699, p.244, the tail of which was read alongside n.220's own tail) is ordinary prose, no cipher.
+
+**Verdict: found-solved, not open.** A contemporary decipherment of this letter survives (Robethon's hand)
+and its text is already in print (Japikse 1937-ish KS24, exact publication year not checked this pass).
+This is a "cryptanalytic result" grade question that does not arise -- nothing here was cryptanalysed by us
+or by anyone we can attribute; per rule 10 this is reported as found in this source, not classified for
+novelty (a verifier's job, not this worker's).
+
+**REQUEST.md implication:** the copy-order case is weaker now than round 1's framing assumed, since the
+letter's content is already published via Robethon's decipherment. A copy of the original manuscript cipher
+(and, if it survives separately, Robethon's own decipherment sheet) at the Portland (Welbeck) collection,
+University of Nottingham, would still be useful for a system/key comparison against other Willem III-era
+ciphers (e.g. the Heinsius `sources/huygens/NOTES.md` "Cijferschrift" leads, invnrs 2315-2317, or any
+Bentinck-circle key), but it is no longer a blocker to reading this specific letter's content -- updated in
+REQUEST.md.
+
+**Not done this pass (flagged, not a blocker):** the general statement of the letter-spacing convention in
+KS23 deel 1's front matter (if it exists there rather than only being repeated per-footnote); a check of
+whether any of the other asterisked-but-unopened Vaudemont letters in the p.812 index (round 2's ~20 count)
+also carry a Robethon-hand decipherment, which would be the natural next step for the broader Vaudemont
+cipher-letter sweep flagged repeatedly in `sources/huygens/NOTES.md`; reading the whole of p.243 (not
+letter-spaced, judged out of scope for the cipher question).
+
+Requests this pass: `resources.huygens.knaw.nl` 11 (1 reachability/toc1 fetch, 2 toc1 batches, 1
+pages.json?source=2, 3 page-html fetches [241, 242, 244], 2 "Zoek" search-term fetches [gespatieerd,
+cijfer], 1 page-html fetch for p.38, 4 image fetches [38 x2 -- first attempt wrongly 3-digit-padded, second
+correct; 241, 242; 244 returned HTTP 200 with Content-Length 0, a real server-side gap, not retried further
+per the one-retry rule]). All >=1.5s apart, descriptive User-Agent. No other hosts. No subagents (brief
+allowed none). Well under the $5 stall-alarm cap.

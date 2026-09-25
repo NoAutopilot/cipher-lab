@@ -16,15 +16,23 @@ playbook already states these papers are not copy-free. No online catalogue sear
 number was run this pass (out of scope for check-solved; the next step is establishing the Manuscripts and
 Special Collections catalogue entry for this specific 1699 letter before any copy can be requested).
 
-**A second, related lead in the same source, not yet a separate row:** the same index page (KS 24 p.812) marks
-at least 20 further letters in the Vaudemont correspondence, 1695-1701, with the same cipher asterisk, none
-individually read this pass. One of them is, per the index's own note on the 25 March entry, already
-deciphered ("ook een ontcijferde brief is aanwezig") -- finding which one, from the Huygens retroboeken viewer
-alone (no archive visit needed for that step), would identify a solved sibling before any copy order is placed.
-That triage is cheap and copy-free; worth doing before committing to a request for the 25 March original.
+**Update, 25 September 2026 (OX-VAU):** the "ontcijferde brief" is resolved -- it is not a separate letter.
+The edition itself (n. 220, p.242, footnote 1) states that this same 25 March 1699 letter survives mostly in
+cipher AND that a second exemplaar, already deciphered in Robethon's hand (Willem III's secretary), also
+exists; Japikse printed that solved exemplaar as the letter's running text (the letter-spaced passage on
+p.242). **The letter's content is therefore already published** (see NOTES.md's 25 Sept update and
+`plaintext_print.txt`) -- this is no longer an open cryptanalysis target, it is found-solved via a
+contemporary decipherment already in print. A copy order is **no longer needed to read this letter**.
 
-**Where to send it:** University of Nottingham, Manuscripts and Special Collections (Portland (Welbeck)
-collection). Contact/request route not tested this session -- check the current enquiry/reproduction-request
-process on nottingham.ac.uk before writing.
+It would still be useful, at lower priority, for a system/key comparison against other Willem III/Bentinck-
+or Heinsius-circle ciphers of the period (see `sources/huygens/NOTES.md`'s Heinsius "Cijferschrift" leads,
+NA 3.01.19 invnrs 2315-2317): a photograph of (a) the original 25 March 1699 letter in cipher and (b) the
+Robethon-hand decipherment exemplaar Japikse worked from, both Portland (Welbeck) collection, University of
+Nottingham -- item-level call numbers not identified (no online catalogue search run for either item).
 
-**Status:** waiting on you. Stage 2 (verified unsolved) -- see NOTES.md's check-solved sweep.
+**Where to send it (if pursued):** University of Nottingham, Manuscripts and Special Collections (Portland
+(Welbeck) collection). Contact/request route not tested this session -- check the current enquiry/
+reproduction-request process on nottingham.ac.uk before writing.
+
+**Status:** not waiting on you for this letter's content (found-solved, see NOTES.md). The system-comparison
+copy above is optional and not urgent.

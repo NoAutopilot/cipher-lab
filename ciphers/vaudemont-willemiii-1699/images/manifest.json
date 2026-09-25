@@ -1,15 +1,45 @@
 {
-  "source": "printed edition page image (Correspondentie van Willem III en van Hans Willem Bentinck, eerste gedeelte, deel 2, KS 24, retroboeken viewer), not the archive original",
+  "source": "printed edition page images (Correspondentie van Willem III en van Hans Willem Bentinck, eerste gedeelte, deel 2, KS 24, retroboeken viewer), not the archive original",
   "host": "resources.huygens.knaw.nl",
-  "fetched": "2026-09-24",
   "images": [
     {
       "file": "willemiii_ks24_0812.jpg",
+      "fetched": "2026-09-24",
       "edition": "Correspondentie van Willem III en van Hans Willem Bentinck, eerste gedeelte, deel 2, KS 24",
       "printed_page": 812,
       "content": "Alphabetische lijst van brieven -- the Vaudemont correspondent index, listing every letter by date with an asterisk marking cipher letters; the 25 March 1699 entry carries the note 'grootendeels in onopgelost cijferschrift; ook een ontcijferde brief is aanwezig'",
       "url": "https://resources.huygens.knaw.nl/retroapp/service_willemiii/willemiii_1_2/images/willemIII_deel1_2egedeelte_ks24_0812.jpg"
+    },
+    {
+      "file": "willemiii_ks24_0038.jpg",
+      "fetched": "2026-09-25",
+      "edition": "Correspondentie van Willem III en van Hans Willem Bentinck, eerste gedeelte, deel 2, KS 24",
+      "printed_page": 38,
+      "content": "Letter no. 32 (Sunderland to Willem III, 20 June 1693), footnote 1: 'De gespatieerd gedrukte woorden zijn in den brief uit cijferschrift opgelost' -- the edition's general statement that letter-spaced type marks a passage decoded from cipher. Fetched to confirm the convention seen at p.242 is house style, not specific to Vaudemont.",
+      "url": "https://resources.huygens.knaw.nl/retroapp/service_willemiii/willemiii_1_2/images/willemIII_deel1_2egedeelte_ks24_0038.jpg"
+    },
+    {
+      "file": "willemiii_ks24_0241.jpg",
+      "fetched": "2026-09-25",
+      "edition": "Correspondentie van Willem III en van Hans Willem Bentinck, eerste gedeelte, deel 2, KS 24",
+      "printed_page": 241,
+      "content": "Letter no. 219 (Vaudemont, 18 March 1699, 'met bijlage'): ordinary plain French, not cipher. Closing lines are the first mention of a shared cipher between Vaudemont and Bentinck ('nous avons un chifre').",
+      "url": "https://resources.huygens.knaw.nl/retroapp/service_willemiii/willemiii_1_2/images/willemIII_deel1_2egedeelte_ks24_0241.jpg"
+    },
+    {
+      "file": "willemiii_ks24_0242.jpg",
+      "fetched": "2026-09-25",
+      "edition": "Correspondentie van Willem III en van Hans Willem Bentinck, eerste gedeelte, deel 2, KS 24",
+      "printed_page": 242,
+      "content": "Letter no. 220 (Vaudemont, *25 March 1699, the target). A middle passage is printed in letter-spaced type; footnote 1 states the letter survives mostly in cipher and that a solved exemplaar in Robethon's hand also exists, which Japikse follows in the text. This is the edition's own resolution of the p.812 index's 'ook een ontcijferde brief is aanwezig'.",
+      "url": "https://resources.huygens.knaw.nl/retroapp/service_willemiii/willemiii_1_2/images/willemIII_deel1_2egedeelte_ks24_0242.jpg"
     }
   ],
-  "note": "This is the edition's own index page, not a letter text and not the manuscript. No archive shelfmark or inventory number is given on this page for the 25 March 1699 letter; the originals of this correspondence are in the Portland Papers, University of Nottingham (not Nationaal Archief 3.01.19), which CLAUDE.md's Access playbook already notes are NOT copy-free."
+  "not_fetched": [
+    {
+      "printed_page": 244,
+      "reason": "resources.huygens.knaw.nl returned HTTP 200 with Content-Length 0 for this page image (a real server-side gap, confirmed by response headers, not a rate-limit or transcription issue); not retried further per the one-retry rule. The page's OCR html was fetched and read instead (tail of letter no. 220, start of no. 221, both quoted/paraphrased in NOTES.md and plaintext_print.txt)."
+    }
+  ],
+  "note": "These are the edition's own printed-page scans, not the archive manuscript. No archive shelfmark or inventory number is given anywhere in this edition for the 25 March 1699 letter or its Robethon-hand decipherment exemplaar; both are held in the Portland (Welbeck) collection, University of Nottingham (not Nationaal Archief 3.01.19), per CLAUDE.md's Access playbook -- not copy-free."
 }

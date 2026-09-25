@@ -1,0 +1,53 @@
+Source: N. Japikse (ed.), Correspondentie van Willem III en van Hans Willem Bentinck, eersten graaf van
+Portland, eerste gedeelte, deel 2 (KS 24), no. 220, pp. 242-244 (Huygens retroboeken/willemiii viewer,
+resources.huygens.knaw.nl, fetched 25 Sept 2026). Grade: H (read directly from the printed edition page).
+
+Japikse's own footnote 1 on p.242 (quoted in full in NOTES.md) states that this letter survives mostly in
+cipher, that a second exemplaar in already-solved cipher (opgelost cijferschrift) in Robethon's hand also
+exists, and that HE FOLLOWS THAT SOLVED EXEMPLAAR for the printed text below. The edition's general
+convention (footnote, p.38: "De gespatieerd gedrukte woorden zijn in den brief uit cijferschrift opgelost")
+is that letter-spaced typography marks words the manuscript had in cipher, now printed decoded. In the
+transcription below, [SPACED] ... [/SPACED] marks the letter-spaced portion of the printed page (the
+decoded cipher passage); the rest of the letter was written and survives in plain French.
+
+---
+
+220. (VAN CHARLES HENRI DE LORRAINE, PRINS VAN VAUDEMONT. 25 Maart 1699).
+
+J'ay receu par l'ordinaire de dimanche passe la lettre que vous m'aves fais l'honneur de m'escrire, Milord,
+du 21 febr./3 mars, et pour y repondre je vous diray seulement que
+
+[SPACED]
+aujourd'huy, s'il se tire du Milanois trois millions d'escus et quelque chose de plus, le tout est employe
+au payement des tribunaux, des offices de guerre, des generaux des trouppes, de l'artillerie, a l'entretien
+des places et aux frais extraordinaires des marches et changements des garnisons, du pain et des fourages,
+le tout employe a ce que dessus, sans qu'il y ait un sol a mettre en reserve ou a employer par dessus ce
+qui est dit, tous les revenus du Roy ayant este engagez par anticipation par Mr. de Leganes pour plusieurs
+annees, jusques a la fin desquelles et au degagement des dits revenus il n'y a pas un sol a trouver. Par
+cette raison ne restant plus rien a engager, les places sont en tres mechant estat de fortification et sans
+magazins. Le pais ne peut ni ne doit contribuer a leur reparation, c'est au Roy d'Espagne a y pourvoir de
+ses deniers. Le corps d'artillerie qui est a l'arcenal general de Pavie, est en tres bon estat, comme aussy
+le train d'artillerie de campagne de vingt cinq a 30 pieces de canon avec tout ce qui en depend, toujours
+prest a marcher, n'y manquant que les chevaux qu'un entrepreneur est oblige de fournir toutes les fois
+qu'on les luy demande. Toute l'infanterie, en estat de service, consiste en neuf mille hommes et la
+cavallerie avec les dragons en trois mille chevaux, en tres bon estat.
+[/SPACED]
+
+Il faut considerer que, si la guerre [-- text continues onto p.243, not transcribed here; the letter-spaced
+passage above (p.242) is the part relevant to the cipher/decipherment question this pass covers; the rest
+of the letter (p.243-244, ordinary roman type, not cipher-marked) discusses general politics, a fortress's
+strategic importance, and closes with the ordinary courtesies --].
+
+[p.244, closing:] ... Voila, Milord, ce que je puis vous dire a la haste et grossierement pour obeir aux
+ordres de Sa Mte., a laquelle je me donne l'honeur d'escrire qu'elle le scaura par vous; au surplus je
+considere, Milord, les affaires generales d'a present tout come vous; il n'est question que de voir dans
+peu la tournure qu'elles prendront; faitte moy la justice de me croire tousjours, quoy qu'il arrive, avec
+toutte la veneration et la sincerite possible entierement a vostre disposition.
+
+Not transcribed here (roman type, not the cipher-marked passage; read from the page image, not retyped
+character by character; this file preserves what is needed for the cipher-system question only): the
+opening two sentences before the spaced passage, and the whole of p.243 and most of p.244 up to the
+closing quoted above. See images/willemiii_ks24_0242.jpg (and _0241.jpg for the preceding letter, n.219)
+for the full page. Page 244's image was not obtainable this pass (server returned HTTP 200, Content-Length
+0 -- a real gap on the host, not a transcription choice); its OCR html was read and is quoted/paraphrased
+above and in NOTES.md.
