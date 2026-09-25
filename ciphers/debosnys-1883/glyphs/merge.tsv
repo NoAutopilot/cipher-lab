@@ -1,94 +1,94 @@
 kind	cluster	sign_id	desc	confidence
-sign	0	MISC-00	small mixed junk (arrow/slash/dot/dbl-dash), n=4, not one shape	L
-sign	1	BAR-SERIF	tall thin vertical stroke with small foot/serif	H
-sign	2	HOOK-L	small left-opening hook/curl (comma-like)	H
-sign	3	MISC-03	mixed small squiggles (numeral-like), n=5, not one shape	L
+sign	0	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents O-SLASH 1, CC-DASH 1, NINE 1, SEVEN 1] was MISC-00: small mixed junk (arrow/slash/dot/dbl-dash), n=4, not one shape	L
+sign	1	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents BAR-THIN 9, _ 8, BLOB 2] was BAR-SERIF: tall thin vertical stroke with small foot/serif	H
+sign	2	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents DBL-SLASH 10, CHEVRON2 4, CHEVRON 1] was HOOK-L: small left-opening hook/curl (comma-like)	H
+sign	3	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents CC-O 1, O-DASHBELOW 1, DOT-LINE-O 1, SQUIG-DOT 1, ...] was MISC-03: mixed small squiggles (numeral-like), n=5, not one shape	L
 sign	4	X	plain X cross (St Andrew's cross)	H
-sign	5	MISC-05	heterogeneous bucket (pct/square/triangle/circle-x/arrow), n=32 -- needs by-eye split, not one sign	L
-sign	6	MISC-06	mixed loopy shapes (ampersand/Venus/tally/z-curl), n=11 -- not one shape	L
-sign	7	MISC-07	mixed complex glyphs (house-like/varied), n=11 -- not one shape	L
+sign	5	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents PCT 7, CC-DASH 5, PCT-SLASH 2, X 2, ...] was MISC-05: heterogeneous bucket (pct/square/triangle/circle-x/arrow), n=32 -- needs by-eye split, not one sign	L
+sign	6	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents DOLLAR 2, DBL-SLASH 1, _ 1, THREE 1, ...] was MISC-06: mixed loopy shapes (ampersand/Venus/tally/z-curl), n=11 -- not one shape	L
+sign	7	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents QQ-O 2, X-BAR-CC 2, II-O 2, II-SLASH 1, ...] was MISC-07: mixed complex glyphs (house-like/varied), n=11 -- not one shape	L
 sign	8	BAR-SOLID	fully-inked solid vertical bar/wedge	M
 sign	9	PCT	double-loop percent-like sign	H
 sign	10	BAR-SOLID	solid vertical block, wider/rounder top -- same family as c8, heavier ink	M
-sign	11	MISC-11	mixed pictogram-like (sunburst-small/circle-P/figure), n=8 -- not one shape	L
+sign	11	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents STAR 2, PICT-FACE 1, F-LETTER 1, EIGHT 1, ...] was MISC-11: mixed pictogram-like (sunburst-small/circle-P/figure), n=8 -- not one shape	L
 sign	12	BAR-THIN	thin vertical stroke, some slightly curved like ( or l	M
-sign	13	MISC-13	mixed complex (figure-8/pct/key-like), n=21 -- not one shape	L
+sign	13	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents PCT-SLASH 5, II-DASH 2, EIGHT 2, O-TILDE 2, ...] was MISC-13: mixed complex (figure-8/pct/key-like), n=21 -- not one shape	L
 sign	14	X	bold/doubled-stroke X variant	M
 sign	15	DASH-V	short vertical dash/tick (possibly punctuation)	M
-sign	16	SUN	sunburst pictogram (majority of cluster); a few rare pictograms (anchor/runner/wheel) also fell in here, not split out -- see exemplars	M
-sign	17	MISC-17	mixed diagonal strokes/arrows, n=16 -- not one shape	L
-sign	18	GEAR-DOT	small round sign with internal dot/spokes	M
+sign	16	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents SUN 7, PICT-HOUSE 2, PICT-LEAF 1, X-O 1, ...] was SUN: sunburst pictogram (majority of cluster); a few rare pictograms (anchor/runner/wheel) also fell in here, not split out -- see exemplars	M
+sign	17	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents PCT-SLASH 4, O-DASH2 2, _ 2, C-DOT 2, ...] was MISC-17: mixed diagonal strokes/arrows, n=16 -- not one shape	L
+sign	18	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents GEAR-DOT 3, CIRC-O 2, C-DOT 1] was GEAR-DOT: small round sign with internal dot/spokes	M
 sign	19	Y-CURL	Y/chi-like forked stroke with curl	H
-sign	20	MISC-20	mixed hook/circle shapes, n=10 -- not one shape	L
-sign	21	MISC-21	mixed complex glyphs (E-bar/omega/P/tally), n=13 -- not one shape	L
+sign	20	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents LOOP-TAIL 2, WAVE 2, OX 2, HOOK-P 2, ...] was MISC-20: mixed hook/circle shapes, n=10 -- not one shape	L
+sign	21	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents ARCH-DASH 3, BRACKET 1, N-LETTER 1, II-DASH 1, ...] was MISC-21: mixed complex glyphs (E-bar/omega/P/tally), n=13 -- not one shape	L
 sign	22	X	bold X variant	M
-sign	23	LOOP-TAIL	small loop with descending tail (a/d-like)	H
-sign	24	MISC-24	mixed pictogram-ish squiggles, n=13 -- not one shape	L
+sign	23	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents O-SLASH 8, M-LETTER 1] was LOOP-TAIL: small loop with descending tail (a/d-like)	H
+sign	24	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents MULTI 2, ARCH-DOTS 1, STAR 1, PICT-FIGURE 1, ...] was MISC-24: mixed pictogram-ish squiggles, n=13 -- not one shape	L
 sign	25	X	clean X, larger	H
 sign	26	X	X-dominant but noisy cluster (arrow/dot/hourglass outliers present), n=21	M
-sign	27	WAVE	horizontal wave/S-curve stroke	H
+sign	27	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents WAVE 4, OX-TILDE 3, O-TILDE 1, MULTI 1] was WAVE: horizontal wave/S-curve stroke	H
 sign	28	X	bold/doubled X variants	M
-sign	29	MISC-29	mixed pictogram squiggles (spider-like/circle-pct/infinity), n=18 -- not one shape	L
-sign	30	MISC-30	mixed (staff/flag/A/tally), n=13 -- not one shape	L
-sign	31	MISC-31	mixed swirl/hook variants ("ox" pairs, spiral), n=22 -- not one shape	L
-sign	32	MISC-32	mixed solid blocks (square/triangle/arrow), n=11 -- not one shape	L
-sign	33	MISC-33	mixed hook/circle-tailed shapes, n=18 -- not one shape	L
-sign	34	PHI	phi-like: loop crossed by a vertical stroke	H
-sign	35	MISC-35	mixed thin marks (line/small figure/X), n=6 -- not one shape	L
-sign	36	MISC-36	mixed complex squiggles, n=14 -- not one shape	L
-sign	37	MISC-37	mixed complex squiggles (bird-like/hook), n=12 -- not one shape	L
-sign	38	CIRC-TAIL	circle or loop with a small tail/hook	M
+sign	29	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents MULTI 7, OX-TILDE 2, _ 1, PICT-CROSSED 1, ...] was MISC-29: mixed pictogram squiggles (spider-like/circle-pct/infinity), n=18 -- not one shape	L
+sign	30	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents MULTI 4, EIGHT 2, II-DASH 2, AMP 1, ...] was MISC-30: mixed (staff/flag/A/tally), n=13 -- not one shape	L
+sign	31	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents OX-TILDE 9, XX-TILDE 5, DOTS-TILDE 3, OO-TILDE 2, ...] was MISC-31: mixed swirl/hook variants ("ox" pairs, spiral), n=22 -- not one shape	L
+sign	32	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents BLOB 7, _ 3, CROSS-T 1] was MISC-32: mixed solid blocks (square/triangle/arrow), n=11 -- not one shape	L
+sign	33	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents O-DASH2 8, O-TILDE 6, II-DASH 2, BUCKET 1, ...] was MISC-33: mixed hook/circle-tailed shapes, n=18 -- not one shape	L
+sign	34	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents PHI 8, MULTI 1] was PHI: phi-like: loop crossed by a vertical stroke	H
+sign	35	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents BAR-THIN 2, PICT-TREE 2, DOLLAR 1, X-DOT 1] was MISC-35: mixed thin marks (line/small figure/X), n=6 -- not one shape	L
+sign	36	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents C-BAR-X 4, X-CURL 3, OX-TILDE 2, QQ-O 1, ...] was MISC-36: mixed complex squiggles, n=14 -- not one shape	L
+sign	37	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents X-CURL 4, O-SLASH 2, C-BAR-X 1, NINE-BAR 1, ...] was MISC-37: mixed complex squiggles (bird-like/hook), n=12 -- not one shape	L
+sign	38	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents CIRC-O 4, _ 4, C-DOT 2, DBL-SLASH 2, ...] was CIRC-TAIL: circle or loop with a small tail/hook	M
 sign	39	TRIDENT	trident/psi-like fork (V with extra prong)	H
-sign	40	MISC-40	mixed small glyphs (bird-track/staff/circle-crossbar), n=9 -- not one shape	L
-sign	41	MISC-41	mixed ornate scissor-like shapes, n=14 -- not one shape	L
+sign	40	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents II-DASH 2, MULTI 1, LOOP-TAIL 1, Y-CURL 1, ...] was MISC-40: mixed small glyphs (bird-track/staff/circle-crossbar), n=9 -- not one shape	L
+sign	41	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents SCROLL-X 4, X-SLASH 2, QQ-O 1, PICT-BARREL 1, ...] was MISC-41: mixed ornate scissor-like shapes, n=14 -- not one shape	L
 sign	42	CIRC-O	plain circle/donut (letter O / zero-like)	H
-sign	43	MISC-43	mixed ornate (V-loop/box/staff/hook), n=12 -- not one shape	L
-sign	44	CRESCENT	crescent/C-shape, moon-like	H
+sign	43	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents MULTI 4, F-LETTER 1, Y-LOOPS 1, V-LOOP 1, ...] was MISC-43: mixed ornate (V-loop/box/staff/hook), n=12 -- not one shape	L
+sign	44	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents C-DOT 4, O-DASH2 2, PICT-FACE 1, SIX-CURL 1, ...] was CRESCENT: crescent/C-shape, moon-like	H
 sign	45	BAR-SOLID	solid vertical bar, clean, same family as c8/c10	M
-sign	46	MISC-46	mixed pct-ish plus rare letters (A, T), n=14 -- not one shape	L
+sign	46	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents X-SLASH 3, PCT-SLASH 2, HASH 1, II-DASH 1, ...] was MISC-46: mixed pct-ish plus rare letters (A, T), n=14 -- not one shape	L
 sign	47	X	clean X, tall	H
 sign	48	CROSS-T	Latin cross / dagger (cross with horizontal bar near top)	H
 sign	49	VENUS	loop over a small cross/tail (Venus-symbol-like)	H
-sign	50	MISC-50	small mixed marks (short vertical + dot), n=5 -- possibly attribute marks misclassified as signs	L
+sign	50	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents QUESTION 2, _ 1, BAR-THIN 1, QQ-O 1] was MISC-50: small mixed marks (short vertical + dot), n=5 -- possibly attribute marks misclassified as signs	L
 sign	51	BAR-THIN	thin vertical bar/dashed variant, same family as c12	M
 sign	52	X	X with a small loop/tail at the base (variant)	M
 sign	53	X	bold doubled X / starburst variants	M
-sign	54	MISC-54	mixed ornate loop-with-descender (bird-head-like), n=10 -- not one shape	L
-sign	55	MISC-55	mixed solid filled rounded/blocky shapes, n=18 -- several distinct solid pictograms, not one shape	L
+sign	54	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents PHI 2, C-DOT 2, A-LOOP 2, O-SLASH 1, ...] was MISC-54: mixed ornate loop-with-descender (bird-head-like), n=10 -- not one shape	L
+sign	55	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents BLOB 18] was MISC-55: mixed solid filled rounded/blocky shapes, n=18 -- several distinct solid pictograms, not one shape	L
 sign	56	X	clean X	H
 sign	57	PCT	percent-like variants (a few outliers: T, ?)	M
-sign	58	WAVE	small wave/zigzag, same family as c27	M
+sign	58	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents WAVE 3, XX-TILDE 1, DOTS-TILDE 1] was WAVE: small wave/zigzag, same family as c27	M
 sign	59	VEE	V or checkmark stroke	H
-sign	60	MISC-60	rare pictograms (animal/bird silhouettes), n=6 -- likely several distinct pictograms, not one sign	L
+sign	60	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents PICT-HORSE 1, PICT-EAGLE 1, PICT-LEAF 1, PICT-BIRD 1, ...] was MISC-60: rare pictograms (animal/bird silhouettes), n=6 -- likely several distinct pictograms, not one sign	L
 sign	61	DASH-H	short horizontal dash/bar	H
 sign	62	X	X with curl/dot variant	M
 sign	63	NOTE	loop with descending tail (musical-note/letter-b-like)	H
-sign	64	MISC-64	mixed boxy pictograms (bucket/boxed-M/hook/U/star), n=7 -- not one shape	L
-sign	65	TRIPOD	triangular/tripod-like shape with legs	M
+sign	64	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents DOUBLE-LOOP 2, BUCKET 1, PICT-FISH 1, PICT-JUG 1, ...] was MISC-64: mixed boxy pictograms (bucket/boxed-M/hook/U/star), n=7 -- not one shape	L
+sign	65	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents A-LOOP 6, PCT-SLASH 2, PCT 1, X 1, ...] was TRIPOD: triangular/tripod-like shape with legs	M
 sign	66	PCT	percent-like, heavy confirming cluster, same family as c9/c57	H
-sign	67	MISC-67	mixed ornate loop pictograms (M-shape/asterisk/spiral), n=17 -- not one shape	L
+sign	67	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents STAR 3, QQ-O 2, ARCH-DASH 2, CC-DOT 1, ...] was MISC-67: mixed ornate loop pictograms (M-shape/asterisk/spiral), n=17 -- not one shape	L
 sign	68	CROSS-T	Latin cross / dagger, bold variant, same family as c48	M
 sign	69	AMP	ampersand-like ligature (loop + crossbar)	H
-sign	70	WAVE	larger/ornate wave/S-curve, same family as c27/c58	M
-sign	71	MISC-71	mixed pictograms (crown-like/winged-T/moon+circle), n=7 -- not one shape	L
-sign	72	RHO	loop with descending tail (rho/P-like)	H
-sign	73	EYE-DOT	solid round shape with a white gap/dot (eye-like)	M
-sign	74	MISC-74	mixed small hook/check shapes, n=5 -- not one shape	L
-sign	75	MISC-75	bold X/dagger-like variants, ambiguous between X and CROSS-T families	L
-sign	76	MISC-76	mixed ornate (H-ladder/bottle/pct/spiral), n=11 -- not one shape	L
-sign	77	DELTA-TAIL	circle/loop with a tail, cursive-delta-like	M
-sign	78	MISC-78	mixed bird-head/hook shapes, n=3, small sample	L
-sign	79	MISC-79	mixed small squiggle/hook, n=5, small sample	L
-sign	80	MISC-80	bold X/star with cross-hatching, uncertain X-family variant	L
-sign	81	MISC-81	mixed small (arrow-circle/star/X), n=3, small sample	L
-sign	82	MISC-82	mixed circle/loop varieties (tally/tadpole/teardrop), n=11 -- not one shape	L
-sign	83	MISC-83	mixed pictogram (bird/scepter/checkmark), n=5, small sample	L
+sign	70	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents WAVE 7, O-TILDE 1, O-SLASH 1, CC-O 1, ...] was WAVE: larger/ornate wave/S-curve, same family as c27/c58	M
+sign	71	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents LAMBDA 1, LAMBDA-DASH 1, A-LOOP 1, ARC-LOOPS 1, ...] was MISC-71: mixed pictograms (crown-like/winged-T/moon+circle), n=7 -- not one shape	L
+sign	72	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents LOOP-STEM 7] was RHO: loop with descending tail (rho/P-like)	H
+sign	73	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents CIRC-O 12, _ 1] was EYE-DOT: solid round shape with a white gap/dot (eye-like)	M
+sign	74	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents O-TILDE 3, PICT-ARROW 1, VEE 1] was MISC-74: mixed small hook/check shapes, n=5 -- not one shape	L
+sign	75	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents X 4, II-DASH 2, VENUS 1, VEE 1, ...] was MISC-75: bold X/dagger-like variants, ambiguous between X and CROSS-T families	L
+sign	76	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents X-BAR 1, EIGHT 1, PICT-BOTTLE 1, _ 1, ...] was MISC-76: mixed ornate (H-ladder/bottle/pct/spiral), n=11 -- not one shape	L
+sign	77	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents DAGGER-O 13, MULTI 2, DIAMOND 1, NINE 1, ...] was DELTA-TAIL: circle/loop with a tail, cursive-delta-like	M
+sign	78	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents O-SLASH 3] was MISC-78: mixed bird-head/hook shapes, n=3, small sample	L
+sign	79	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents WAVE-V 2, PICT-RUNNER 1, O-SLASH 1, O-BAR-O 1] was MISC-79: mixed small squiggle/hook, n=5, small sample	L
+sign	80	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents X 5, _ 1] was MISC-80: bold X/star with cross-hatching, uncertain X-family variant	L
+sign	81	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents X-DOT 1, X-SLASH 1, X-O 1] was MISC-81: mixed small (arrow-circle/star/X), n=3, small sample	L
+sign	82	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents CC-DASH 4, II-DASH 2, DOUBLE-LOOP 2, C-DOT 1, ...] was MISC-82: mixed circle/loop varieties (tally/tadpole/teardrop), n=11 -- not one shape	L
+sign	83	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents PICT-TREE 3, S-CURL 1, PICT-ARROW 1] was MISC-83: mixed pictogram (bird/scepter/checkmark), n=5, small sample	L
 sign	84	X	clean bold X	H
 sign	85	V-DOT	V/vee with a dot above	M
-sign	86	PHI	phi-like loop-with-vertical-stroke, same family as c34	H
-sign	87	MISC-87	mixed ornate (staff/loop/pct/Venus-like), n=10 -- not one shape	L
+sign	86	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents PHI 9, VEE 1, QUESTION 1] was PHI: phi-like loop-with-vertical-stroke, same family as c34	H
+sign	87	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents X 2, VENUS 1, SIX-CURL 1, X-BAR 1, ...] was MISC-87: mixed ornate (staff/loop/pct/Venus-like), n=10 -- not one shape	L
 sign	88	Y-CURL	Y/chi-fork/dagger-tail, same family as c19 (or possibly a key pictogram)	M
-sign	89	LOOP-TAIL	small loop-tail variant, same family as c23	M
+sign	89	PER-BOX	[GOLD-4C 25 Sept 2026: split per box by eye, see box_labels.tsv; contents O-DASHBELOW 2, NINE 2, CC-DASH 1, NINE-BAR 1] was LOOP-TAIL: small loop-tail variant, same family as c23	M
 mark	0	M-TILDE	short horizontal wave/tilde above the sign	H
 mark	1	M-DOT-FLAG	small flag-like blob mark	M
 mark	2	M-RING	small ring/donut mark	H
