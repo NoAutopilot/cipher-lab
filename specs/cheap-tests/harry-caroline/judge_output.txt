@@ -1,0 +1,4 @@
+ok   length: got=74, min=60, max=80
+FAIL language: score=-1.442, null_p99=-1.848, real_p05=-0.919, real_median=-0.811, mode=both, N=74
+ok   words: cover=0.662, min=0.6, real_text_median_cover=0.946
+FAIL - harry-caroline-1863 (a PASS is a gate for a verifier, not a reading; rule 10)

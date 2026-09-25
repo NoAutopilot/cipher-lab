@@ -38,5 +38,15 @@
  "model": "Sonnet",
  "status_24_Sept_2026": "open per Schmeh 2017; no later solution found 24 Sept 2026",
  "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run is under cheap_test_done with its control",
+ "cheap_test_done": {
+  "test": 1,
+  "date": "25 Sept 2026",
+  "method": "specs/cheap-tests/harry-caroline/run_test1.py -- tools/subst_hillclimb.py MASC with word boundaries, joint 74-letter (see letter-count note) Harry+Caroline text, t/u/g single-letter-word symbols fixed to a/I over all 8 combinations (max_homo=2, needed since 3 distinct symbols cannot all map into {a,i} under a strict 1:1 MASC), corpus tools/data/pg2701_mobydick.txt, restarts=15 iters=1500 seed=1",
+  "result": "FAIL (negative) -- best combo {t:a,u:i,g:i} score_per_token=-1.005, reading 'ie ore tidinterea oun as leshing oth dthera a iisher i anddin rs i hate un ssten rods ho hsse'; tools/judge_plaintext.py FAILs on language (score=-1.442 vs null_p99=-1.848, real_p05=-0.919) though it clears letters and words checks; excluding Ebcvgfm from scoring (name variant) does not improve (score -1.049)",
+  "control": "same solver/restarts/seed=1, real English words of the identical 20-word length pattern from tools/data/pg1661_holmes.txt (source distinct from the solver's own corpus), random 1:1 MASC, blind (no fixed symbols), 3 seeds: 33.8%, 31.1%, 16.2% letters correct",
+  "target_vs_control": "target FAILs the language judge outright (never resembles English); control recovers 16-34% of letters blind on a same-design real-English MASC -- the setup can partially read a matched design, so the target's outright language FAIL is informative, not a tooling artifact",
+  "script": "specs/cheap-tests/harry-caroline/run_test1.py",
+  "output": "specs/cheap-tests/harry-caroline/{test1_main.json,test1_control.json,judge_output.txt,README.md}"
+ },
  "written": "24 Sept 2026 by the survey worker (session_013GkMQP9y84gHGG4pSSwaQj), claude-fable-5-1"
 }

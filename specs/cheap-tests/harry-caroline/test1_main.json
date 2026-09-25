@@ -1,0 +1,197 @@
+{
+ "n_letters_joint": 74,
+ "word_lengths": [
+  2,
+  3,
+  10,
+  3,
+  2,
+  7,
+  3,
+  6,
+  1,
+  6,
+  1,
+  6,
+  2,
+  1,
+  4,
+  2,
+  5,
+  4,
+  2,
+  4
+ ],
+ "note_spec_letter_counts": "spec's harry_letters=44/caroline_letters=27 (71 total) do not match a direct extraction of the message bodies (harry 43, caroline 31, 74 total); recorded here, not corrected in the spec by this worker.",
+ "all_combos_sorted_by_score": [
+  {
+   "fixed": {
+    "t": "a",
+    "u": "i",
+    "g": "i"
+   },
+   "score_per_token": -1.0049174523913584
+  },
+  {
+   "fixed": {
+    "t": "i",
+    "u": "i",
+    "g": "a"
+   },
+   "score_per_token": -1.0314143906638684
+  },
+  {
+   "fixed": {
+    "t": "a",
+    "u": "a",
+    "g": "i"
+   },
+   "score_per_token": -1.0320222754491537
+  },
+  {
+   "fixed": {
+    "t": "a",
+    "u": "a",
+    "g": "a"
+   },
+   "score_per_token": -1.037512678085034
+  },
+  {
+   "fixed": {
+    "t": "i",
+    "u": "a",
+    "g": "i"
+   },
+   "score_per_token": -1.0401297675993197
+  },
+  {
+   "fixed": {
+    "t": "i",
+    "u": "i",
+    "g": "i"
+   },
+   "score_per_token": -1.0427473714265267
+  },
+  {
+   "fixed": {
+    "t": "a",
+    "u": "i",
+    "g": "a"
+   },
+   "score_per_token": -1.0465839061636328
+  },
+  {
+   "fixed": {
+    "t": "i",
+    "u": "a",
+    "g": "a"
+   },
+   "score_per_token": -1.0731744889001262
+  }
+ ],
+ "best_combo": {
+  "fixed": {
+   "t": "a",
+   "u": "i",
+   "g": "i"
+  },
+  "score_per_token": -1.0049174523913584,
+  "reading_words": [
+   "ie",
+   "ore",
+   "tidinterea",
+   "oun",
+   "as",
+   "leshing",
+   "oth",
+   "dthera",
+   "a",
+   "iisher",
+   "i",
+   "anddin",
+   "rs",
+   "i",
+   "hate",
+   "un",
+   "ssten",
+   "rods",
+   "ho",
+   "hsse"
+  ],
+  "key": {
+   "a": "t",
+   "b": "e",
+   "c": "s",
+   "d": "e",
+   "e": "l",
+   "f": "n",
+   "g": "i",
+   "h": "o",
+   "i": "u",
+   "j": "u",
+   "k": "o",
+   "l": "t",
+   "m": "g",
+   "n": "d",
+   "o": "n",
+   "p": "a",
+   "q": "r",
+   "s": "d",
+   "t": "a",
+   "u": "i",
+   "v": "h",
+   "w": "s",
+   "x": "h",
+   "z": "r"
+  }
+ },
+ "best_combo_excluding_ebcvgfm": {
+  "score_per_token": -1.0493135447768518,
+  "reading_words": [
+   "io",
+   "pro",
+   "oilieuerea",
+   "dan",
+   "rt",
+   "pon",
+   "lohorr",
+   "a",
+   "iither",
+   "i",
+   "ressin",
+   "st",
+   "i",
+   "haue",
+   "he",
+   "ttoon",
+   "rdst",
+   "nd",
+   "htto"
+  ],
+  "key": {
+   "a": "u",
+   "b": "e",
+   "c": "t",
+   "d": "o",
+   "f": "n",
+   "g": "i",
+   "h": "d",
+   "i": "h",
+   "j": "a",
+   "k": "p",
+   "l": "o",
+   "n": "s",
+   "o": "e",
+   "p": "r",
+   "q": "s",
+   "s": "l",
+   "t": "a",
+   "u": "i",
+   "v": "n",
+   "w": "t",
+   "x": "h",
+   "z": "r"
+  }
+ },
+ "homophone_note": "t, u, g are three distinct cipher symbols each standing alone as a single-letter word at least once; English single-letter words are only 'a'/'I', so a strict one-to-one MASC cannot map all three into {a,i} without a collision -- ran with max_homo=2 (homophones allowed) to make the fix satisfiable at all; this alone is a negative sign for a plain one-to-one MASC reading of the single-letter words."
+}
