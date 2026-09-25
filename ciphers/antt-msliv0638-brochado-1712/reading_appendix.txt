@@ -5,9 +5,9 @@
 # no spec/judge for this target yet, and every entry here is already given in plaintext by the
 # manuscript's own Deciffrada line (see plaintext_appendix.tsv); see conflicts.tsv for the per-entry
 # agreement between this decode and that plaintext.
-# tokens 1702: H 0, C 1371, S 0, M 292, I 0, U 39 (U = code with no key.tsv row; M = key value held by <65% majority)
-m0280 Carta 13 | estesmnistrosestamquemosconuencemaisospdadehesemairiteeitesestamaperdereaseguieoceucroiectoothesogeeieodauidaedahoneaeesigiamasuaginganca
-m0281 Carta 15 | da·moutqu·a·ainhamndoueaceogoeae·eeicoehgmacaetacom·eimentosamandauaeesocesoquaseuco·a
+# tokens 1702: H 0, C 1420, S 0, M 243, I 0, U 39 (U = code with no key.tsv row; M = key value held by <65% majority)
+m0280 Carta 13 | estesmnistrosestamquemosconuencemaisospdadehesemairiteeitesestamaperdereaseguiroceucroiectoothesogreirodauidaedahoneaeesigiamasuaginganca
+m0281 Carta 15 | da·moutqu·a·ainhamndoueaceogoeae·eeicoehgmacaetacom·eimrntosamandauaeesocesoquaseuco·a
 m0281 Carta 23 | sairdebulingbrocnossoinimigo
 m0282 Carta 30 | asocradoduquedebuquincan
 m0282 Carta 58 | onaofoisemdetiuenciansobornodaspesoassabeicoqaqducamdosaiustes
@@ -31,7 +31,7 @@ m0288 Passage 2a | esteshomasfechadoatodanopapelode·aforotratamstodos
 m0289 Carta 89 | atndaquetstohemen·rabomseralhdmetam·edo
 m0289 Carta 91 | segundoprometeapoucauidadam
 m0289 Carta 92 | esteutlhacohstadeclaradofrancese·umdhstesdias·antandoe·ca·ado·docbt·ssehum·ilpamdeprauoissescomfbeca
-m0290 Carta 93 | enamhstae·boainte··genciacomoafortepulinebrocee
+m0290 Carta 93 | enamhstae·boainte··genciacomoafortepulinrbrocrr
 m0290 Passage 2a | quecuel·aouoshupdpoderiamestarnhsete·poforadosunddoudoein·sterioneuundoasindispo··coesdahihasuioldnciasdos··nistros
 m0291 Passage 3a | pel·osnh·ucs·entmadadoprinciphdehanouerporescociaparapreuiniradopc
 m0291 Carta 94 | pudesseenueruonharestarainha

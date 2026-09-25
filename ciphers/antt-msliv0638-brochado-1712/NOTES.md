@@ -670,3 +670,85 @@ m0276 read from disk (already fetched by PX-BROKEY/PX-BROBODY), zero new request
 Sonnet subagents (blind transcription passes A and B on m0275, run per this job's brief; one ran synchronously,
 one in the background -- both blind to each other and to every file but the one named image). Cost: not
 visible to me.
+
+## PX-BROGLYPH (25 Sept 2026): the z/7/2 glyph settled, key rebuilt
+
+Worker PX-BROGLYPH (Sonnet), job: settle PX-BROPASSB's dominant disagreement pair (z<->7, 2<->7 -- 87 of 183
+replace-disagreements, see "PX-BROPASSB" above) from the page images and rebuild the key. Full method and
+crop-by-crop evidence in `glyphs.md`; summary here.
+
+**Tool.** `tools/glyph_atlas.py` (the existing shared segment/cluster/atlas/classify pipeline for
+invented-alphabet pages, built for dupuy452/fr.2933) gained a `crop` subcommand: cut one or more individual,
+upscaled PNG crops either straight from a plain image by pixel box, or from a prior `segment` run's own
+sign/mark boxes -- CLAUDE.md Usage 8 ("add an option to the tool, not a private copy"), since neither
+`iiif_lines.py` (IIIF only) nor the rest of `glyph_atlas.py` (a full labelled-atlas pipeline, more than a
+one-off dispute needs) fit. Offline test in `tools/tests/test_glyph_atlas.py`. 20 crops in `images/crops/`.
+
+**Finding.** One recurring glyph -- a period "barred 7" (horizontal top stroke, diagonal, mid-stroke
+crossbar) -- read inconsistently as `z`, `7`, or (twice, pass B only) `2` by both transcription passes,
+uniform across all 9 leaves checked (m0280, m0281, m0282, m0289-m0294) whether currently labelled `z` or `7`,
+including the *agreed* `z` instances (both passes agreeing was two passes sharing one misreading, not
+evidence of a real letter z: CLAUDE.md rule 2, image over transcription). Distinguishable from this scribe's
+own plain-hand cursive z (`images/crops/m0280_plain_naofaz3.png`, "não faz") and from a genuine loop-shaped
+numeral 2 (multiple side-by-side crops, e.g. `m0294_carta110_line2.png`). Settled: every `z` token (70,
+disputed and agreed) and the 58 z<->7-disputed `7`s -> `7`; the 29 2<->7-disputed positions -> `2` (pass B
+misread an unambiguous loop-2, a separate, ordinary digit slip).
+
+**Settlement (`scripts/08_settle_glyphs.py`, run from `disagreements.tsv` + the two appendix TSVs, no
+network).** Adds a `grade` column to `ciphertext_appendix.tsv` (per token) and `plaintext_appendix.tsv`
+(per entry, H only if every one of its tokens is H) and rewrites `cipher_line` to match the settled tokens
+(re-segmenting each entry's line with 01_segment.py's own chunk logic so the two files stay in the sync it
+requires). Grade H: already agreed, or crop-checked this pass (the 9 leaves above). Grade M: the 96 other
+replace-disagreements, the 3 delete and 67 insert/extra-b structural mismatches (none crop-checked this
+job -- a harder, different problem, see glyphs.md), and the z/7/2 disputes on 4 leaves not individually
+re-viewed (m0283, m0286, m0287, m0288 -- resolved by the same rule since every checked leaf agreed with zero
+counterexamples, but not itself crop-confirmed). Result: **1588/1702 tokens grade H (93.3%), 114 grade M
+(6.7%)**; 7 `z` tokens remain (disputes against something other than 7, e.g. `z` vs `rr`/`e`/`2`, not
+investigated this pass -- left as `z`, ungraded H).
+
+**Raw agreement with pass B barely moves (1520/1770 = 85.88%, was 1516/1766 = 85.84%, `scripts/07_reconcile.py
+--report-only`, new flag this job) -- and that is not a bug.** Pass B's two transcription subagents each
+picked a *different* convention for the same glyph (`passB_cipher_1.tsv`, m0280-288: calls it `z`;
+`passB_cipher_2.tsv`, m0289-296: calls it `7`) and applied it consistently within their own half -- exactly
+the signature of one ambiguous sign read differently by different transcribers, which is the evidence for
+"one sign" in the first place (glyphs.md). Settling every instance to `7` therefore *improves* raw agreement
+with pass B on m0289-294 but *reduces* it on m0280-288, netting out near zero; the 29 kept-as-`2` positions
+stay disagreements with B by design. "Matches pass B" and "graded H" are different metrics here on purpose:
+the grade column is this job's own settlement confidence (crop-checked or not), not a re-score against a
+second transcriber whose own two halves already disagreed with each other about which reading to prefer.
+
+**Key rebuild (`scripts/01-04`, re-run in order, no network).** Anchoring unchanged (37/38 entries, 391
+aligned pairs -- the glyph settlement doesn't touch plain-word anchoring). `key.tsv`: **40 codes, 29 at grade
+C (was 28)**. Code `7`: 11 obs / M (`e` 55%) -> **27 obs / C (`e` 21/27 = 78%)** -- absorbs the settled z/7
+instances and moves grade. Code `z`: 18 obs / C (`e` 83%) -> 2 obs / C (`r` 100%, the two residual
+unsettled-leaf pairs -- both genuinely `r`, not a regression). Code `2`: unchanged, 18 obs / M (`d` 56%,
+`e` second) -- none of its anchored/paired observations were touched by this settlement (the 2<->7 disputes
+that got kept as `2` weren't part of the 03_align_pairs.py sample). `scripts/06_decode_agreement.py`'s
+control (does `decode_key.py` mechanically reproduce 03_align_pairs.py's own ground-truth pairs) is
+**unchanged, 340/384 = 88.5%** -- expected, since no code's *majority* letter flipped, only confidence; a
+control that tests "same output" is insensitive to a confidence-only change by construction.
+
+**`decode_key.py --check`: exits 0.** Overall decode confidence over all 1702 tokens: **C 1420, M 243, U 39
+(was C 1371, M 292, U 39)** -- +49 grade-C decoded tokens, 0 change in U (unkeyed codes untouched).
+
+| | before (PX-BROKEY2) | after (PX-BROGLYPH) |
+|---|---|---|
+| Anchored entries | 37/38 | 37/38 (unchanged) |
+| Aligned code-letter pairs | 391 | 391 (unchanged) |
+| key.tsv codes / grade C | 40 / 28 | 40 / 29 |
+| decode_key.py --check tokens | C 1371, M 292, U 39 | C 1420, M 243, U 39 |
+| 06_decode_agreement control | 340/384 = 88.5% | 340/384 = 88.5% (unchanged) |
+| ciphertext_appendix.tsv grade | (no grade column) | H 1588/1702 = 93.3%, M 114/1702 = 6.7% |
+| raw token agreement vs pass B | 1516/1766 = 85.84% | 1520/1770 = 85.88% (see note above -- not the settlement metric) |
+
+**Not done this pass** (next worker, per this job's brief's scope): the 96 non-z/7/2 replace-disagreements
+and the 67 insert/delete/extra-b structural mismatches are still open (grade M); a body-passage sweep beyond
+m0276/m0179/m0180 (PX-BROBODY, concurrent); `specs/antt-msliv0638-brochado-1712.json` + `tools/judge_plaintext.py`;
+a fresh-instance re-derivation blind to these scripts, per rule 7, before any reading from this target is
+reported outside the repo.
+
+### Host report (PX-BROGLYPH)
+
+No network access; this pass worked entirely from the images already on disk (`images/full_PT-TT-MSLIV-0638_
+m0280.jpg.jpg` etc., fetched by PX-BROKEY/PX-CS01) and the TSVs already on disk. No subagents. Cost: not
+visible to me.

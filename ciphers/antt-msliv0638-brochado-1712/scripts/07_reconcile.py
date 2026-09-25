@@ -33,6 +33,14 @@ import difflib
 import sys
 from pathlib import Path
 
+REPORT_ONLY = "--report-only" in sys.argv
+# --report-only (added PX-BROGLYPH, 25 Sept 2026): print the agreement numbers against passB without
+# touching disagreements.tsv/agreement.tsv/ciphertext_appendix.tsv/plaintext_appendix.tsv or the 90% gate --
+# for checking a post-settlement agreement rate against pass B after a hand-settlement pass (e.g.
+# scripts/08_settle_glyphs.py) that deliberately keeps some of pass A's tokens over pass B's on crop
+# evidence, so "matches passB" is a report figure here, not the grading rule (grades come from the
+# settlement script itself, which knows which side it sided with and why).
+
 D = Path(__file__).resolve().parent.parent
 
 
@@ -131,10 +139,11 @@ def main():
         {"leaf": l, "entry_label": e, "a_position": p, "a_token": at, "b_token": bt, "kind": kind}
         for (l, e, p, at, bt, kind) in disagreements
     ]
-    write_tsv(D / "disagreements.tsv", disagreements_rows,
-              ["leaf", "entry_label", "a_position", "a_token", "b_token", "kind"])
-    write_tsv(D / "agreement.tsv", agreement_rows,
-              ["leaf", "entry_label", "a_tokens", "b_tokens", "agree", "aligned", "share"])
+    if not REPORT_ONLY:
+        write_tsv(D / "disagreements.tsv", disagreements_rows,
+                  ["leaf", "entry_label", "a_position", "a_token", "b_token", "kind"])
+        write_tsv(D / "agreement.tsv", agreement_rows,
+                  ["leaf", "entry_label", "a_tokens", "b_tokens", "agree", "aligned", "share"])
 
     # deciffrada_line word-level agreement (exact full-line string match is too strict a
     # metric for a >=1000-char line -- one accent or spacing slip fails the whole line even
@@ -169,7 +178,10 @@ def main():
     print(f"token agreement (gate metric): {total_agree}/{total_aligned} = {tok_rate:.4f}")
     print(f"deciffrada_line exact full-string match: {line_exact_agree}/{line_total} = {line_rate:.4f}")
     print(f"deciffrada_line word-level agreement: {word_agree}/{word_total} = {word_rate:.4f}")
-    print(f"disagreements: {len(disagreements_rows)} rows -> disagreements.tsv")
+    print(f"disagreements: {len(disagreements_rows)} rows" + ("" if REPORT_ONLY else " -> disagreements.tsv"))
+
+    if REPORT_ONLY:
+        return 0
 
     if tok_rate < 0.90:
         print("GATE: token agreement under 90% -- stopping after writing the numbers "
