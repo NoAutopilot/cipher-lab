@@ -1,0 +1,8 @@
+msg	group_index	schmeh2021	bourdeau_msgspy	note
+237	15	nogex	mogex	single-letter (n/m); Bourdeau's koehler_cryptologia.png agrees with msgs.py but that PNG appears to be a rendered reproduction of msgs.py itself, not a scan of the 1981 journal page (see GOLD-1A ARCHIVE.md) -- not independent confirmation
+178	9	gwymn	gwwmn	single-letter (y/w); same PNG caveat as above
+178	36	avl	evl	single-letter (a/e), last group of msg 178; same PNG caveat as above
+137	9	ayddg	ayddq	single-letter (g/q); Bourdeau's own explicitly-flagged correction, sourced to "Norbert's corrections, Schmeh 2017 comment #7, Schmeh's 2021 repost" per msgs.py docstring -- the only one of the six with a cited source. Bourdeau's own abwehr/NOTES.md and profile.json both independently call this "message 137, group 17" (not group 9 by this worker's 1-indexed count of msgs.py's own text) -- an internal inconsistency in Bourdeau's own files, not resolved here
+229	28	hkisf	hklsf	single-letter (i/l); same PNG caveat as above
+229	40	albon	alhon	single-letter (b/h); same PNG caveat as above
+140	all	(matches Bourdeau exactly)	(matches Schmeh exactly)	no discrepancy in message "140"
