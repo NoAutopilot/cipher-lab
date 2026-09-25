@@ -27,6 +27,30 @@ def write_norm(src, dst):
             w.writerow([line, pos, 'SIGN' if kind == 'sign' else token, kind, grade, rest[0] if rest else ''])
 
 
+CANON = {
+    'z-flourish': 'C1-tieflourish', 'tie-flourish': 'C1-tieflourish',
+    'Ao-ligature': 'C2-Ao', 'Ao-lig': 'C2-Ao',
+    'ff-ligature': 'C3-ff', 'ff-lig': 'C3-ff',
+    'hash-mark': 'C4-hash', 'hash': 'C4-hash',
+    'tc-ligature': 'C5-tc', 'tc-sign': 'C5-tc',
+    'uu-ligature': 'C6-uu', 'uu-sign': 'C6-uu',
+    'loop-Y': 'C7-Y', 'Y-mark': 'C7-Y',
+    'to-ligature': 'C8-to', 'to': 'C8-to',
+}  # the 8 sign-shape correspondences this worker is confident of (matching descriptions in both passes'
+   # own notes, AND the NW aligner independently placing them at the same column repeatedly before any
+   # remapping) -- everything else keeps its own pass-specific label, i.e. is NOT credited as agreement
+
+
+def write_atlas(src, dst):
+    with open(src) as f, open(dst, 'w', newline='') as g:
+        r = csv.reader(f, delimiter='\t'); w = csv.writer(g, delimiter='\t')
+        w.writerow(next(r))
+        for line, pos, token, kind, grade, *rest in r:
+            if kind == 'sign':
+                token = CANON.get(token, token)
+            w.writerow([line, pos, token, kind, grade, rest[0] if rest else ''])
+
+
 def write_digitsonly(src, dst):
     with open(src) as f, open(dst, 'w', newline='') as g:
         r = csv.reader(f, delimiter='\t'); w = csv.writer(g, delimiter='\t')
@@ -54,6 +78,11 @@ if __name__ == '__main__':
     write_norm(a, an); write_norm(b, bn)
     print('\nsign-normalized (sign tokens -> placeholder "SIGN"):')
     print(reconcile(an, bn, os.path.join(HERE, '_scratch_norm')))
+
+    aa, ba = os.path.join(HERE, 'passA_atlas.tsv'), os.path.join(HERE, 'passB_atlas.tsv')
+    write_atlas(a, aa); write_atlas(b, ba)
+    print('\npartial cross-pass sign atlas (8 confident shape correspondences only, everything else unmapped):')
+    print(reconcile(aa, ba, os.path.join(HERE, '_scratch_atlas')))
 
     ad, bd = os.path.join(HERE, 'passA_digitsonly.tsv'), os.path.join(HERE, 'passB_digitsonly.tsv')
     write_digitsonly(a, ad); write_digitsonly(b, bd)

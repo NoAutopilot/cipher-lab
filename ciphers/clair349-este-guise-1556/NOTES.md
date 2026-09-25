@@ -388,19 +388,29 @@ passes (flagging this as the gap for a successor, not glossing over it):
 | basis | agree | note |
 |---|---|---|
 | raw (`passA.tsv`/`passB.tsv` as committed) | **453/1135 = 39.9%** | dominated by sign-label vocabulary mismatch, not real disagreement — see below |
-| sign-normalized (every `sign`-kind token → placeholder `SIGN`) | **746/1137 = 65.6%** | "did both passes agree a sign belongs here", not which one |
+| sign-normalized (every `sign`-kind token → placeholder `SIGN`) | **746/1137 = 65.6%** | loose upper bound: "did both passes agree a sign belongs here", not which one |
+| partial cross-pass sign atlas (8 confident shape correspondences only) | **591/1139 = 51.9%** | tighter, more honest measure: only the sign pairs this worker actually has evidence for (matching descriptions in both passes' own notes, confirmed by the NW aligner already placing them at the same column repeatedly before any remapping — `z-flourish`≈`tie-flourish`, `Ao-ligature`≈`Ao-lig`, `ff-ligature`≈`ff-lig`, `hash-mark`≈`hash`, `tc-ligature`≈`tc-sign`, `uu-ligature`≈`uu-sign`, `loop-Y`≈`Y-mark`, `to-ligature`≈`to`) count as agreement; everything else (roughly 30 more distinct labels per pass, `R-loop`/`R-mark`, `cross-mark`/`plus-mark` or `x-mark`, `m-ligature`/`m-sign`, `flag-mark`/`loop-sign`, `tau-mark`/`pi-mark`, `f-hook`/`bar`, and more) stays unmapped rather than guessed |
 | digit-only (sign rows dropped, digit rows renumbered per line) | **437/717 = 60.9%** | agreement on the decode-critical digit stream alone, unconfounded by sign vocabulary |
 
-All three regenerate exactly via `python3 ciphers/clair349-este-guise-1556/reconcile_metrics.py` (pasted output
-above). Per-line breakdown (sign-normalized, `--rows`): lines 1–20 mostly 0.6–0.9 (line 12 the low outlier at
-0.54); **lines 21–33 are consistently weak, 8 of 13 under 0.60** (line 32 the low point at 0.42). This reads as
-a genuine difficulty gradient down the page (more crowding, fainter ink, or simply accumulating fatigue in
-both blind passes), not a single bad line dragging an otherwise-clean average down.
+All four regenerate exactly via `python3 ciphers/clair349-este-guise-1556/reconcile_metrics.py` (pasted output
+above). Per-line breakdown (partial-atlas basis, `--rows`): **no line reaches 0.70; most sit 0.4–0.65, several
+(lines 7, 8, 12, 17, 25, 29, 31, 32) are at or below 0.45.** This is a materially worse and more informative
+picture than the sign-normalized number's "mostly 0.6–0.9 on lines 1–20" — the loose metric was crediting a
+lot of matches between signs that are probably not the same mark. Real difficulty is spread across the whole
+page, not concentrated only in the bottom third as the looser measure suggested (though the bottom third,
+lines 21–33, is still the weaker half on every measure tried).
 
-**Gate call: PASS, but marginal and not eye-settled — step 3 not attempted this session.** The 39.9%/65.6%/
-60.9% figures all sit at or above PROCESS-2026-09-24 proposal 4's 60% line by the aggregate measure the tool
-itself prints (matching how YX-BARB reported its own normalized number as the single headline figure), so this
-is not the "under 60%, stop, build an atlas instead of a third pass" case on its face. But unlike YX-BARB
+**Gate call: marginal on the loose measures, arguably FAILS on the tighter one — step 3 not attempted this
+session.** The raw/sign-normalized/digit-only figures (39.9%/65.6%/60.9%) sit at or above PROCESS-2026-09-24
+proposal 4's 60% line by the aggregate number the tool itself prints (matching how YX-BARB reported its own
+normalized number as the single headline figure), but the partial-atlas figure — built from only the sign
+correspondences this worker actually has evidence for, rather than crediting "any sign matches any sign" —
+comes in at 51.9%, under the line. Read together, these four numbers say the same thing PROCESS-2026-09-24
+predicted for a mixed digit/sign page without a shared atlas: the ciphertext-side glyph atlas this worker did
+not have time to build properly (only 8 of an estimated ~30-38 distinct sign shapes cross-mapped, from textual
+description alone, not full re-inspection of every occurrence) is the actual blocker, not a third blind pass.
+Given that, this worker is treating the gate as **not safely passed** rather than leaning on the loosest
+number available. But unlike YX-BARB
 (who, at 90.5%, settled all 38 real disagreements from the image by hand before calling the target done), this
 worker did **not** hand-settle the 391 sign-normalized (682 raw) disagreement columns from the image — with
 roughly half the individual lines still under 60% even on the fairest measure, and ~30 minutes left in the
@@ -428,7 +438,9 @@ it from the line entirely rather than align it as a disagreement.**
 **Files:** `images/lines/line01.jpg`–`line33.jpg` (the 33 real cipher lines, corrected boundary mapping,
 recipe in `images/manifest.json`); `passA.tsv`, `passB.tsv` (blind transcriptions, committed as each pass
 produced them); `passA_norm.tsv`/`passB_norm.tsv`, `passA_digitsonly.tsv`/`passB_digitsonly.tsv`,
-`reconcile_metrics.py` (the three-metric reproducibility script and its inputs); `disagreements.tsv`,
+`passA_atlas.tsv`/`passB_atlas.tsv`, `reconcile_metrics.py` (the four-metric reproducibility script, its
+`CANON` dict of the 8 confident sign correspondences, and its inputs — a successor extending `CANON` with more
+correspondences and re-running the script is the fastest way to improve on 51.9%); `disagreements.tsv`,
 `ciphertext_draft.tsv`, `agreement.tsv` (raw reconciliation, mechanical only, not eye-settled — see above).
 `tools/decode_key.py` gained a `load_keys`/merge-key-file option (job `"key"` as a list, e.g.
 `["key_alpha.tsv", "key_nomen.tsv"]`) and a more permissive key-TSV header/column detector (needed once
