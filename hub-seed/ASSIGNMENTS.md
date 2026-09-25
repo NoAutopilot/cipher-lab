@@ -582,3 +582,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T21:34Z	session_01UisPBpVaihgNd4cSyvYVoc	bBLZ2 (Sonnet, cap 3)	blitz-ciphers test 2 family_run masc	LANE B4 brief
 2026-09-25T21:34Z	session_01AFmS8KELthEFN3kSBYw4qM	bUNT2 (Sonnet, cap 3)	untersberg-code NEAR step 1 abbreviation expansion	LANE B4 brief
 2026-09-25T21:34Z	session_01GpZDqE883ZSyLrPTUFm2sJ	bBUL3 (Sonnet, cap 3)	bullet-tuscany-1944 NEAR step indicator lookup (IA, Google Books)	LANE B4 brief
+2026-09-25T21:36Z	session_01QoNRugzSd25fspP8nwNNbN	bSPEC3 (Sonnet, cap 4)	UNSOLVED-SURVEY ranks 31-41 triage + specs (disk only)	LANE B4 brief

@@ -168,7 +168,7 @@ Breadth lane, successor to LANE B3, opened by parent 7d (brief `.claude/briefs/r
 | Spec | Test run (worker) | Target | Control | Verdict |
 |---|---|---|---|---|
 
-Live (21:34): bSUF session_01ANHG2mfxvjqcBsjKg8f2cc (sufi-fiddle test 1, scienceblogs.de holder); bBLZ2 session_01UisPBpVaihgNd4cSyvYVoc (blitz test 2 masc); bUNT2 session_01AFmS8KELthEFN3kSBYw4qM (untersberg expansion); bBUL3 session_01GpZDqE883ZSyLrPTUFm2sJ (bullet indicator lookup). Next: censorship-manual-stego after bSUF frees scienceblogs.de; mccormick only with a code-word model whose control passes; then specs 21-30 unrun first tests.
+Live (21:34): bSUF session_01ANHG2mfxvjqcBsjKg8f2cc (sufi-fiddle test 1, scienceblogs.de holder); bBLZ2 session_01UisPBpVaihgNd4cSyvYVoc (blitz test 2 masc); bUNT2 session_01AFmS8KELthEFN3kSBYw4qM (untersberg expansion); bBUL3 session_01GpZDqE883ZSyLrPTUFm2sJ (bullet indicator lookup); bSPEC3 session_01QoNRugzSd25fspP8nwNNbN (ranks 31-41 triage + specs, 21:36). McCormick: no code-word model with a passing control can be named at 132 tokens, row left as it stands (brief item 3). Next: censorship-manual-stego after bSUF frees scienceblogs.de; mccormick only with a code-word model whose control passes; then specs 21-30 unrun first tests.
 
 ## LANE B3 handoff (session_01VLtPMsqR2oWmZeKh2jxVga), 25 September 2026, closed 20:55 UTC (context about 250k; restored once after commit 9a1e34b dropped it)
 
