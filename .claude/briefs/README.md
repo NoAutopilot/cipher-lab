@@ -24,6 +24,25 @@ Common tail (paste into every brief):
 
 > Before the first action, also read the last 20 lines of UPDATES.md (changes instituted across both accounts since your brief was written; they override an older brief where they conflict).
 
+**Spawning a session (parent or lane orchestrator, 25 Sept 2026, RETRO-2026-09-25l).** Every `create_session`
+call passes `source_url` and `source_revision` explicitly, and the prompt opens with the brief file's path and
+the one-line reason the job exists, before any cap or rule text -- see `.claude/briefs/parent.md`'s "Opening a
+lane" section for the wording and the incident (three sessions this window stopped at their first turn on a
+missing repository source and an injection-suspicion trip). A lane orchestrator spawning its own Sonnet workers
+follows the same convention.
+
+**Sizing a unit-loop brief's box (25 Sept 2026, RETRO-2026-09-25l).** When a job loops over discrete same-shaped
+units (a native-resolution crop fetch, an eye-bisected token comparison, a full control+target `family_run.py`
+pair), a round-number wall-clock box can be crossed from well under to well over in the single step of starting
+one more unit: R7-AT55V (13 Gallica native crops) ran 1.23x its $6 cap, R7-MEYE (122 eye-bisected tokens) ran
+1.86x its $2.50 cap, GOLD-K2 (a family-variant sweep) jumped from about 56% to 89% of its 75-minute box starting
+one more ~25-minute control+target variant. Size the cap and the box from (planned unit count x a per-unit
+cost/time estimate drawn from the nearest comparable ledger row) plus one unit of margin, state the unit count
+and the per-unit estimate in the brief itself, and have the worker stop before starting a unit that would cross
+80% of either figure -- not only after aggregate elapsed time crosses 80%, which one large unit can jump past in
+a single step. See CLAUDE.md Usage item 6 for the full incident and the subagent-level precedent (GOLD-4D) this
+extends.
+
 ## The consolidator pattern, for standing campaigns
 
 A target that has run more than two `tools/family_run.py` families is a standing campaign, not a one-shot job, and

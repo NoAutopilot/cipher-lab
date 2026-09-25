@@ -316,6 +316,18 @@ Every brief states a cap in dollars of usage (the session metadata's cost figure
    visual-transcription call to one page or one cryptogram against the reference sheet, never the whole
    inventory in one call, and have the orchestrator read `get_session` on that worker at a fixed short interval
    (15 minutes, GOLD's own fix) rather than trusting the box alone when a job includes a large-inventory match.
+   The same mispricing recurs at the primary worker's own level, not only inside a subagent call, whenever a
+   brief's job loops over discrete same-shaped visual or multi-variant units: LANE R7's native-crop atlas
+   re-pass (AT55V, 25 Sept, 13 Gallica native crops) ran 1.23x its $6 cap, its blind eye-bisection pass (MEYE,
+   same day, 122 tokens) ran 1.86x its $2.50 cap, and LANE GOLD's family-variant sweep (GOLD-K2, same day)
+   crossed from about 56% to 89% of its 75-minute box in the single step of starting a second ~25-minute
+   control+target variant, landing 9% over its $6 cap. In each case the worker correctly did not stop mid-unit
+   (the box is a minimum too, per this section's own rule); the brief's box was sized as a round number of
+   minutes, not as (planned unit count x a per-unit cost/time estimate drawn from the nearest comparable ledger
+   row) plus one unit of margin. Size a unit-loop brief's cap and box from the per-unit rate, state the unit
+   count and the per-unit estimate in the brief itself, and have the worker stop before starting a unit that
+   would cross 80% of either figure -- not only after aggregate elapsed time crosses 80%, which one large unit
+   can jump past in a single step.
 7. **Stop when the brief is met.** A worker does not continue into follow-ups (a sweep of sister copies, an
    audit of its own) that its brief did not name; it writes the follow-up as a one-line suggestion in NOTES.md.
 8a. **Rules become tools (25 Sept 2026, UPDATES.md).** A rule that the ledger shows broken twice gets a mechanical check in

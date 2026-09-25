@@ -1,6 +1,11 @@
 # Breadth worker (LANE B)
 
-Spec: `specs/<slug>.json`. Run `cheap_tests_in_order[0]` and its matched control, nothing else. Write both
+Spec: `specs/<slug>.json`. Run `cheap_tests_in_order[0]` and its matched control, nothing else. If test 1 is a bare
+IC/frequency statistic rather than a `family_run.py` family, read `specs/README.md`'s "Ordering
+cheap_tests_in_order" paragraph first (25 Sept 2026, RETRO-2026-09-25l) -- at N>=150-200 that statistic usually
+lands inside more than one candidate family's control band and settles nothing (bBLZ, 25 Sept), where the
+cheapest applicable `family_run.py` family returns a categorical PASS/FAIL instead; below that length, say so
+in the spec rather than re-running IC. Write both
 numbers into the spec's `cheap_test_done` (with date, method, cost). Judge any candidate plaintext with
 `tools/judge_plaintext.py` and paste its output. Cap $3, or $6 if the first test needs an image fetch plus a
 two-pass transcription (never both a subagent pass B and a fetch in the same $3 job -- RETRO-2026-09-25j: bMOU ran
