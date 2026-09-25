@@ -1,9 +1,58 @@
+open
+Google Books full-text search of Boltanski 2006, Les ducs de Nevers et l'État royal (volume dsInahmnar8C), returned genuine, verifiable snippets from that book (confirming the search-within control works on this specific volume) but none tying it to fr.4687 or a cipher; Ferrari 1999, the other named edition, is paywalled (academia.edu 403) and queued as LOCAL-QUEUE.tsv row L8.
+
 # BnF fr.4687 — Marguerite Paléologue, duchesse de Mantoue, to Louis de Gonzague, duc de Nevers, 1562-1564
 
-Status: open
+Status: open (see the "## Check-solved (LANE CX, 25 Sept 2026)" section below for the formal verdict citation).
 
 Check-solved pass, 24 September 2026 (Sonnet, orchestrator brief for M13-M16). Editions-first + one-leaf pass;
 a formal six-source check-solved run is still owed before board promotion.
+
+## Check-solved (LANE CX, 25 Sept 2026)
+
+Formal six-source sweep per `.claude/briefs/check-solved.md`, completing the 24 Sept "Class gate" section below
+(which already did most of sources 1-3, 5-6) rather than repeating it, and adding source 4 (DECODE), which that
+section did not check.
+
+1. **Web search.** Three queries this pass: `"Marguerite Paléologue" "Nevers" chiffre cipher solved OR "Claude"
+   OR "GPT" solves`, `"Marguerite Paléologue" "4687" cipher chiffre solved Vals AI Claude decipherment`, and a
+   narrower Bourdeau-catalogue check. All surfaced only the BnF archivesetmanuscrits notice for fr.4687 itself
+   (now indexed/readable via search snippet, confirming Français 4687 was formerly catalogued **Ancien fonds
+   9509** — a new identifier, not previously on file, close to but not confirmed identical to the "no. 9510...
+   Marguerite Paléologue... à M. de Nevers, 1559" entry the 24 Sept pass flagged from *Dictionnaire des
+   manuscrits* as a different, earlier, unconfirmed letter), general Schneier/model-solve-announcement posts
+   (Urquhart 1653, Cyphral Distich, medieval-cipher AI-assist stories — none about this letter), and academic
+   ciphertext-decipherment papers unrelated to this correspondence. No hit names this letter, this cipher, or a
+   solution to it.
+2. **Standard edition/calendar.** As line 2 states and the 24 Sept "Class gate" section details at length:
+   Boltanski 2006 search-within found real content from the book but nothing tying it to fr.4687; Ferrari 1999
+   could not be opened (academia.edu 403) and is queued (LOCAL-QUEUE.tsv row L8, already present, not duplicated
+   this pass). This is the gate-passing controlled full-text search per line 2.
+3. **Community lists.** Tomokiyo's `nevers.htm` already read in full by the 24 Sept pass (no hit — confirmed the
+   catalogue covers a different volume, fr.3995, by period and relationship, see "Key candidates" section below).
+   No Cipherbrain/Schmeh-specific page found; the web search above is this worker's equivalent check.
+4. **DECODE** (not covered by the 24 Sept "Class gate" section — this worker's addition). Aymeloglu's cached
+   DECODE catalogue mirror (`catalogue/decode-catalog.csv`, fresh clone) grepped for "paleolog"/"paléolog"/
+   "4687"/"mantoue"/"mantova": 10 hits, all **Archivio di Stato di Mantova** items (Archivio Gonzaga E.V.3/E.I.2,
+   1395 and 1540-1699) — a different holding archive, different busta/folio numbers, different (mostly later or
+   unspecified) dates, no correspondent match to Marguerite Paléologue or Louis de Gonzague as duc de Nevers.
+   Zero hits for "4687" itself. `sources/decode/records-non-decrypted-2026-09-24.tsv` (local cache): zero hits
+   for the same terms.
+5. **Bourdeau** (`github.com/dbourdeau/cyphersolver`, fresh depth-1 clone by this worker, 25 Sept 2026, not the
+   24 Sept pass's clone): `grep -ril "paleologue\|paléologue\|4687"` — zero hits, confirming the 24 Sept finding
+   on a fresh clone.
+6. **Aymeloglu** (`github.com/aaymeloglu/unsolved-ciphers`, fresh depth-1 clone by this worker, 25 Sept 2026):
+   same grep (outside the DECODE-catalogue-mirror hits already covered under item 4) — zero hits.
+
+**Verdict: open, unchanged.** The controlled full-text search (item 2/line 2) and the fresh DECODE/Bourdeau/
+Aymeloglu checks (items 4-6) find nothing tying this correspondence, its cipher, or a decipherment to any prior
+source. Ferrari 1999 remains the one open risk (paywalled, queued). The extensive ciphertext-only cryptanalysis
+below (negative with matched controls at 900 signs) stands unchanged by this pass. Novelty not classified (rule
+10; not this brief's job).
+
+Requests this pass: github.com 2 (fresh shallow clones, dbourdeau + aaymeloglu, deleted after grep). WebSearch 3
+queries. No other hosts (Google Books/academia.edu/JSTOR work reuses the 24 Sept pass's already-logged results,
+not repeated). No subagents, no logins, no credentials.
 
 ## Correction to the queue row
 
