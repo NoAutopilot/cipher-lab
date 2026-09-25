@@ -1,53 +1,51 @@
 code	key_values	n_agreed_gloss_tokens	n_match	n_mismatch	match_share	example_mismatches
 16	E	76	63	13	0.83	11:20 gloss='i' vs key=['E']; 15:35 gloss='o' vs key=['E']; 17:8 gloss='c' vs key=['E']; 17:17 gloss='c' vs key=['E']; 22:4 gloss='a' vs key=['E']
 26	E	60	41	19	0.68	02:10 gloss='u' vs key=['E']; 03:7 gloss='c' vs key=['E']; 04:8 gloss='t' vs key=['E']; 05:9 gloss='r' vs key=['E']; 10:12 gloss='u' vs key=['E']
-5	D,L	46	35	11	0.76	16:9 gloss='x' vs key=['D', 'L']; 18:16 gloss='cy' vs key=['D', 'L']; 19:10 gloss='que' vs key=['D', 'L']; 19:26 gloss='en' vs key=['D', 'L']; 23:20 gloss='f' vs key=['D', 'L']
+5	D,L	46	35	11	0.76	16:9 gloss='x' vs key=['D', 'L']; 18:16 gloss='cy' vs key=['D', 'L']; 19:10 gloss='que' vs key=['D', 'L']; 19:26 gloss='en' vs key=['D', 'L']; 23:19 gloss='f' vs key=['D', 'L']
+S36	S	44	32	12	0.73	03:1 gloss='ss' vs key=['S']; 04:9 gloss='f' vs key=['S']; 09:9 gloss='f' vs key=['S']; 11:42 gloss='f' vs key=['S']; 11:53 gloss='f' vs key=['S']
 15	N	43	39	4	0.91	06:7 gloss='en' vs key=['N']; 11:30 gloss='h' vs key=['N']; 14:24 gloss='u' vs key=['N']; 18:30 gloss='u' vs key=['N']
-S36	S	41	32	9	0.78	03:1 gloss='ss' vs key=['S']; 04:9 gloss='f' vs key=['S']; 09:9 gloss='f' vs key=['S']; 11:42 gloss='f' vs key=['S']; 11:53 gloss='f' vs key=['S']
 60	I	37	17	20	0.46	02:8 gloss='z' vs key=['I']; 04:30 gloss='z' vs key=['I']; 05:26 gloss='z' vs key=['I']; 07:18 gloss='t' vs key=['I']; 11:34 gloss='l' vs key=['I']
-S34	R	36	29	7	0.81	18:4 gloss='f' vs key=['R']; 23:18 gloss='s' vs key=['R']; 24:9 gloss='x' vs key=['R']; 24:37 gloss='x' vs key=['R']; 25:15 gloss='x' vs key=['R']
-9	C,DOUBLES:ss(round)	33	26	7	0.79	12:29 gloss='n' vs key=['C', 'DOUBLES:ss(round)']; 20:11 gloss='e' vs key=['C', 'DOUBLES:ss(round)']; 20:22 gloss='e' vs key=['C', 'DOUBLES:ss(round)']; 21:1 gloss='e' vs key=['C', 'DOUBLES:ss(round)']; 21:15 gloss='t' vs key=['C', 'DOUBLES:ss(round)']
+S34	R	36	29	7	0.81	18:4 gloss='f' vs key=['R']; 23:17 gloss='s' vs key=['R']; 24:9 gloss='x' vs key=['R']; 24:36 gloss='x' vs key=['R']; 25:15 gloss='x' vs key=['R']
 S37	T,fit	33	32	1	0.97	11:2 gloss='tc' vs key=['T', 'fit']
 12	A	32	31	1	0.97	14:22 gloss='d' vs key=['A']
+9	C,DOUBLES:ss(round)	32	26	6	0.81	12:29 gloss='n' vs key=['C', 'DOUBLES:ss(round)']; 20:11 gloss='e' vs key=['C', 'DOUBLES:ss(round)']; 20:22 gloss='e' vs key=['C', 'DOUBLES:ss(round)']; 21:1 gloss='e' vs key=['C', 'DOUBLES:ss(round)']; 21:15 gloss='t' vs key=['C', 'DOUBLES:ss(round)']
 102	V	29	27	2	0.93	10:17 gloss='-' vs key=['V']; 28:13 gloss='d' vs key=['V']
-62	E	28	23	5	0.82	01:10 gloss='i' vs key=['E']; 23:17 gloss='u' vs key=['E']; 24:12 gloss='z' vs key=['E']; 27:29 gloss='a' vs key=['E']; 33:8 gloss='r' vs key=['E']
+62	E	28	23	5	0.82	01:10 gloss='i' vs key=['E']; 23:16 gloss='u' vs key=['E']; 24:12 gloss='z' vs key=['E']; 27:28 gloss='a' vs key=['E']; 33:8 gloss='r' vs key=['E']
 44	O	24	22	2	0.92	17:3 gloss='e' vs key=['O']; 25:29 gloss='po' vs key=['O']
 14	A	23	22	1	0.96	14:32 gloss='u' vs key=['A']
 64	I	22	7	15	0.32	01:1 gloss='z' vs key=['I']; 02:16 gloss='z' vs key=['I']; 03:27 gloss='l' vs key=['I']; 04:17 gloss='z' vs key=['I']; 09:5 gloss='z' vs key=['I']
 82	O	22	20	2	0.91	18:29 gloss='e' vs key=['O']; 26:29 gloss='s' vs key=['O']
-7	V	21	20	1	0.95	06:19 gloss='y' vs key=['V']
 104	V	19	19	0	1.00	
+S31	P	19	17	2	0.89	11:55 gloss='r' vs key=['P']; 31:21 gloss='t' vs key=['P']
 X	(not in key)	19	0	19	0.00	17:15 gloss='faut' vs key=(code not in key); 17:27 gloss='t' vs key=(code not in key); 17:31 gloss='o' vs key=(code not in key); 18:14 gloss='quil' vs key=(code not in key); 19:12 gloss='n' vs key=(code not in key)
-S31	P	18	17	1	0.94	11:55 gloss='r' vs key=['P']
+7	V	18	17	1	0.94	06:19 gloss='y' vs key=['V']
 S32	Q,n'aye	18	9	9	0.50	01:18 gloss='quel' vs key=['Q', "n'aye"]; 03:21 gloss='que' vs key=['Q', "n'aye"]; 04:23 gloss='quel' vs key=['Q', "n'aye"]; 06:34 gloss='que' vs key=['Q', "n'aye"]; 07:7 gloss='quel' vs key=['Q', "n'aye"]
-S33	R	18	14	4	0.78	21:21 gloss='u' vs key=['R']; 24:2 gloss='f' vs key=['R']; 27:30 gloss='ra' vs key=['R']; 29:9 gloss='e' vs key=['R']
+S33	R	18	14	4	0.78	21:21 gloss='u' vs key=['R']; 24:2 gloss='f' vs key=['R']; 27:29 gloss='ra' vs key=['R']; 29:9 gloss='e' vs key=['R']
 28	A	15	15	0	1.00	
 S35	S	12	1	11	0.08	01:19 gloss='so' vs key=['S']; 03:30 gloss='so' vs key=['S']; 07:8 gloss='so' vs key=['S']; 07:31 gloss='so' vs key=['S']; 12:10 gloss='vos' vs key=['S']
+S27	L	11	5	6	0.45	08:20 gloss='f' vs key=['L']; 10:27 gloss='-' vs key=['L']; 12:4 gloss='r' vs key=['L']; 19:1 gloss='s' vs key=['L']; 22:30 gloss='f' vs key=['L']
 S29	M	11	9	2	0.82	18:17 gloss='gm' vs key=['M']; 19:16 gloss='on' vs key=['M']
 S38	T	11	11	0	1.00	
 22	DOUBLES:sc?,pour	9	6	3	0.67	12:32 gloss='pu' vs key=['DOUBLES:sc?', 'pour']; 20:30 gloss='bo' vs key=['DOUBLES:sc?', 'pour']; 28:21 gloss='w' vs key=['DOUBLES:sc?', 'pour']
-S27	L	9	4	5	0.44	08:20 gloss='f' vs key=['L']; 10:27 gloss='-' vs key=['L']; 12:4 gloss='r' vs key=['L']; 19:1 gloss='s' vs key=['L']; 22:30 gloss='f' vs key=['L']
 68	(not in key)	8	0	8	0.00	05:22 gloss='tt' vs key=(code not in key); 07:26 gloss='ll' vs key=(code not in key); 08:11 gloss='ll' vs key=(code not in key); 17:18 gloss='ll' vs key=(code not in key); 18:20 gloss='ll' vs key=(code not in key)
 S16	Le Duc de Guyse	7	0	7	0.00	02:12 gloss='d' vs key=['Le Duc de Guyse']; 02:30 gloss='d' vs key=['Le Duc de Guyse']; 03:17 gloss='d' vs key=['Le Duc de Guyse']; 04:5 gloss='d' vs key=['Le Duc de Guyse']; 04:7 gloss='d' vs key=['Le Duc de Guyse']
 24	I	6	3	3	0.50	09:31 gloss='z' vs key=['I']; 17:24 gloss='tt' vs key=['I']; 23:4 gloss='t' vs key=['I']
 73	Y	6	4	2	0.67	12:16 gloss='ll' vs key=['Y']; 13:12 gloss='z' vs key=['Y']
 S30	N	6	6	0	1.00	
-S52	ne	6	0	6	0.00	11:25 gloss='lle' vs key=['ne']; 12:11 gloss='m' vs key=['ne']; 21:13 gloss='m' vs key=['ne']; 26:16 gloss='m' vs key=['ne']; 27:20 gloss='ac' vs key=['ne']
+S52	ne	6	0	6	0.00	11:25 gloss='lle' vs key=['ne']; 12:11 gloss='m' vs key=['ne']; 21:13 gloss='m' vs key=['ne']; 26:16 gloss='m' vs key=['ne']; 27:19 gloss='ac' vs key=['ne']
 S28	M	5	5	0	1.00	
 S40	Z	5	1	4	0.20	03:13 gloss='r' vs key=['Z']; 07:14 gloss='r' vs key=['Z']; 08:4 gloss='r' vs key=['Z']; 14:38 gloss='x' vs key=['Z']
 17	H	4	2	2	0.50	13:36 gloss='ch' vs key=['H']; 21:30 gloss='s' vs key=['H']
 S02	F	4	4	0	1.00	
-S23	armee de mer	4	0	4	0.00	01:11 gloss='s' vs key=['armee de mer']; 22:17 gloss='e' vs key=['armee de mer']; 29:7 gloss='f' vs key=['armee de mer']; 31:1 gloss='fa' vs key=['armee de mer']
 S44	NULLES:9	4	0	4	0.00	04:24 gloss='se' vs key=['NULLES:9']; 18:12 gloss='t' vs key=['NULLES:9']; 20:6 gloss='p' vs key=['NULLES:9']; 28:11 gloss='r' vs key=['NULLES:9']
 11	(not in key)	2	0	2	0.00	06:29 gloss='n' vs key=(code not in key); 10:3 gloss='n' vs key=(code not in key)
+3	B	2	1	1	0.50	28:29 gloss='bo' vs key=['B']
 4	(not in key)	2	0	2	0.00	02:19 gloss='t' vs key=(code not in key); 08:32 gloss='f' vs key=(code not in key)
 58	DOUBLES:tt	2	2	0	1.00	
 76	DOUBLES:mm	2	0	2	0.00	15:19 gloss='u' vs key=['DOUBLES:mm']; 32:29 gloss='umm' vs key=['DOUBLES:mm']
 8	(not in key)	2	0	2	0.00	30:18 gloss='b3' vs key=(code not in key); 32:28 gloss='o' vs key=(code not in key)
 S03	G	2	0	2	0.00	02:18 gloss='a' vs key=['G']; 02:22 gloss='a' vs key=['G']
 S13	artillerie	2	0	2	0.00	21:4 gloss='t' vs key=['artillerie']; 21:26 gloss='tu' vs key=['artillerie']
-S17	Monsr [ ],fist	2	1	1	0.50	30:12 gloss='l' vs key=['Monsr [ ]', 'fist']
-S64	quant	2	0	2	0.00	24:17 gloss='b' vs key=['quant']; 28:29 gloss='bo' vs key=['quant']
 S76	Le Duc d'Aumale	2	0	2	0.00	13:10 gloss='r' vs key=["Le Duc d'Aumale"]; 21:9 gloss='r' vs key=["Le Duc d'Aumale"]
 06	(not in key)	1	0	1	0.00	33:7 gloss='uu' vs key=(code not in key)
 18	DOUBLES:cc	1	0	1	0.00	32:24 gloss='u' vs key=['DOUBLES:cc']
@@ -56,8 +54,9 @@ S76	Le Duc d'Aumale	2	0	2	0.00	13:10 gloss='r' vs key=["Le Duc d'Aumale"]; 21:9 
 6	(not in key)	1	0	1	0.00	18:18 gloss='e' vs key=(code not in key)
 72	(not in key)	1	0	1	0.00	15:7 gloss='i' vs key=(code not in key)
 87	(not in key)	1	0	1	0.00	25:9 gloss='o' vs key=(code not in key)
-S04	&	1	0	1	0.00	27:12 gloss='e' vs key=['&']
+S04	&	1	0	1	0.00	27:11 gloss='e' vs key=['&']
 S14	leurs	1	0	1	0.00	08:24 gloss='g' vs key=['leurs']
+S23	armee de mer	1	0	1	0.00	01:11 gloss='s' vs key=['armee de mer']
 S45	NULLES:10	1	0	1	0.00	14:20 gloss='toue' vs key=['NULLES:10']
-S60	vne?	1	0	1	0.00	29:29 gloss='o' vs key=['vne?']
+S60	vne?	1	0	1	0.00	29:28 gloss='o' vs key=['vne?']
 S65	mon?	1	0	1	0.00	30:21 gloss='wol' vs key=['mon?']

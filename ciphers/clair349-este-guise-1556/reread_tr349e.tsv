@@ -1,0 +1,157 @@
+line	position	old	new	partner	gloss_seen	reason
+18	4	S34	keep	-	f	ink is capital A with crossbar joined to a small o = S34 Ao (key r), same form as pos 23 Ao; gloss above is a tall f with two crossbars (not the looped r written over pos 23), so gloss f disagrees with ink; not S02 (no x-with-descender plus t)
+18	8	S21	S36	-	-	long-s stroke from above (top hooking right) ending in a single crossbar/x at the foot, stem stops straight below the bar with no leftward tail = the letter-body S36 form (x over long descender, key s); confused with S21 (f with mid crossbar and a tail curling left). Gives e-s-c-r-i-t
+18	19	60	keep	-	t	ink clearly 6 + o = 60 (key i); decode m-e-i-ll-e-u-r needs i; gloss t disagrees
+18	21	26	keep	-	u	ink clearly z + 6 = 26 (key e), fits meilleur; gloss above is a small u with two dots, disagrees with ink
+18	29	82	keep	-	e?	ink 8 + z = 82 (key o), fits v-o-l-o-n-t-e; gloss is a small c/e-like curl over the 2, ambiguous (could be an open o)
+18	30	15	keep	-	u	ink 1 + 5 (is-shape) = 15 (key n), fits volonte; gloss is two minims (u or n, identical in this hand)
+19	1	S27	keep	-	l	ink tall doubled stem with crossbar, both stems descending = S27 (key l); gloss above is an l (looped head), not s, so no disagreement
+19	11	S62	keep	-	-	ink is a delta-like loop whose ascender curls into a long tilde, with a stem through it and a short foot; not S31 (letter-body S31 in l.14 p.4 is a clear circle standing on a cross, circle above the bar); S62 kept at M, it is the only S62 in the letter and the decode (par) fits
+19	14	60	keep	-	l	ink clearly 6 + o = 60 (key i); decode n'a iamais needs i; gloss is a short l with a tick, disagrees
+19	18	64	keep	-	h	ink clearly 6 + 4 = 64 (key i); decode m-a-i-s needs i; gloss h disagrees
+19	19	S21	S36	-	-	tall long-s stroke hooked at the top with a single crossbar low on the stem, stem ends straight, no left-curling tail = letter-body S36 (key s); confused with S21 f-shape. Gives mais
+19	29	60	keep	-	none	ink clearly 6 + o = 60 (key i), fits meille(ure); the l-like stroke above is the tail of line 18's divider stroke (line 18 s2 x~1818) descending into the gloss zone, not a gloss
+20	5	S21	S36	-	-	thick long-s stroke from above crossed low by a diagonal thin bar forming an x, no tail curl = S36 (key s); confused with S21. Gives e-s-p-e-r-a-n-c-e
+20	21	S21	S36	-	-	long-s stroke with hook at top running into a diagonal crossbar near its foot (x over descender) = S36 (key s); confused with S21. Gives reuscira
+20	23	60	keep	-	l	ink clearly 6 + o = 60 (key i), fits reuscira; gloss is a short l-like stroke, disagrees
+21	4	S13	keep	-	t	ink is an upright plain plus, same as the S13 crop; no long-s stroke from above and no o/c attached, so not S36/S37/S38; gloss t and decode c'est need t (see NOTE)
+21	9	S76	?	-	r	ink is a capital A with hooked top, crossbar and long left leg sweeping down-left = S76 plain A as drawn; but the crossbar runs right into a faint grey trace where S34's o would sit, and gloss r and decode heure want S34 (Ao, key r); cannot tell S76 from a faded S34
+21	11	60	keep	-	t	ink clearly 6 + o = 60 (key i), fits ie; gloss t disagrees
+21	13	S52	keep	-	m	ink is a lattice (three strokes across three) = S52 'ne', overwritten by a heavy descender from line 20; decode ie ne fits; gloss is three minims (m, or ne read as minims)
+21	17	64	keep	-	t	ink clearly 6 + 4 = 64 (key i); gloss t touches the top of the 6 but is a separate gloss mark
+21	18	S21	S36	-	-	long-s stroke from above with a top hook, crossed near its foot by a thin diagonal bar (x), stem ends at the cross = S36 (key s); confused with S21 f-shape
+21	20	60	keep	-	t	ink clearly 6 + o = 60 (key i), fits dire; gloss t-like tick disagrees
+21	21	S33	keep	-	u	ink R-like: hooked top, two legs, left leg sweeping down-left = S33 (key r), fits dire; gloss above is a u with two dots, disagrees
+21	26	S13	keep	-	to	ink is an upright plain plus before Ao, same as S13 crop; gloss above reads to/tv spanning plus and A; decode au-?-re (autre) needs t (see NOTE)
+21	30	17	keep	-	h	ink 1 + 7 = 17 (key h), fits chose; gloss above is an h, not s (listed gloss s is a misread)
+21	32	S23	S36	-	s	ink is a thick short stroke crossed by a thin diagonal = single x, under a separate long-s gloss stroke = letter-body S36 (key s), as recoded elsewhere ("single x under a long-s gloss"); confused with S23 (cursive curl with horizontal tail). Gives chos(e)
+22	4	16	keep	-	a	ink is clearly '16' (i6); gloss a matches A's 16, which key_alpha marks struck/void, so gloss a vs key e is the decipherer using the cancelled A homophone, not a transcription error
+22	5	S21	S36	-	-	tall long-s stem with a hook to the right at top and a cross-stroke at the baseline, thin tail below = the key's S cell drawn as one sign (x across the long-s descender, S36); confused with S21 (f with arc and mid crossbar). Same sign as L24 pos 4/14 where 'resouldre','ensemble' need s. No gloss written over it. Moderate confidence (decode 'na s tant' still unclear)
+22	11	16	keep	-	e	ink '16' clear; gloss is two small crescents, the glossator's e (same mark as over 26 at pos 19/28), not u; 'encore' needs e
+22	16	26	keep	-	d	ink is z + 6 = 26 plainly; gloss is a d-like bowl with ascender; ink and gloss disagree, keep ink ('encore' already complete at pos 16, see pos 17)
+22	17	S23	S36	-	s?	stand-alone x: thin diagonal crossed by a heavy short down-stroke, no loop or horizontal tail = S36 (x, s); confused with S23 (x/z-like with horizontal tail). Gives 'encores retourne'; same stand-alone x glossed s at L24 pos 30
+22	23	S69	S34	-	r	ink is a straight two-legged A with a small hooked v/o joined = S34 (Ao, r); S69 has a looped cursive A with a large curled v. Gloss is the glossator's z-like r; 'retourne' needs r
+22	29	S46	keep	-	-	crossed t with a j-like tail, exact match to S46 (dict); 'de dict lieu' reads as text
+22	30	S27	keep	-	l	ink is the tall doubled crossed long-s pair = S27 (L); gloss is the glossator's l drawn with a cross-stroke (like the key's own L header), read as f
+22	31	64	keep	-	i	ink '64' clear; gloss is a tall stem with a crossbar = glossator's I (same form as the key's I header), read as f
+23	1	60	keep	-	i	ink '60' clear; gloss is the tall crossed-stem I of the glossator, read as t
+23	4	24	keep	-	i	ink 'z4' = 24 clear; gloss is the glossator's crossed-stem I, read as t
+23	6	7	DEL	7	y	see pos 7: the '7' and the following 3-shape are one code 73 (Y); gloss over the 7 is a looped y
+23	7	S64	73	6	-	3-shape directly after a 7 with no gap = second digit of 73 (Y, key alpha_Y); confused with S64 (3-shape 'quant'). Reads 'que iay envoye'
+23	13	S74	keep	-	-	heavy c-hook over a diagonal stem crossed by a long bar with a foot blob: the S74 '4 with extra hook' shape; not S31 (no closed circle, stem diagonal) nor S36. Same sign at L25 pos 19; see NOTE
+23	14	60	keep	-	i	ink '60' clear; gloss is a small crossed-stem I, read as t
+23	17	62	keep	-	u	ink '6z' = 62 clear; gloss is u-shaped over a crescent (u as listed, but may be the glossator's e); keep ink
+23	18	S34	keep	-	r	ink is A + small o = S34; gloss is an r-form (heavy F/ꝛ-like); the 's' listed belongs to the S36 x at pos 19
+23	30	S69	S34	-	r	line-end sign is a straight two-legged A with a small hooked v = S34 (r), not the looped cursive A of S69; gloss is the glossator's x-like r; 'aduiser' needs r
+24	2	S33	keep	-	r	ink is the pi-like R sign with two legs = S33; gloss is the glossator's small z/x-like r, not f
+24	4	S21	S36	-	-	long-s stem hooked right at top, cross-stroke at the baseline with a thin tail below = S36 as drawn in the key's S cell; confused with S21 (f). 'resouldre' needs s
+24	9	S34	keep	-	r	ink A + o = S34; the x-like gloss is the glossator's r
+24	12	62	keep	-	e	ink '6z' = 62; gloss is an e loop with a stroke over it (e/en), read as z
+24	14	S21	S36	-	-	same long-s-with-cross-at-foot sign as pos 4 = S36, confused with S21; 'ensemble' needs s
+24	17	S64	3	-	b	3-shape standing alone after S29 'uu' = digit 3 (B, key alpha_B row 2); identical in form to the S64 crop, so the gloss b and 'ensemble' decide it; confused with S64
+24	23	S21	S36	-	-	same long-s-with-cross-at-foot sign = S36, confused with S21; 'des moyens' needs s
+24	26	7	DEL	27	y	see pos 27: '7' + following 3-shape = 73; gloss over the 7 is a looped y (listed as v)
+24	27	S64	73	26	-	3-shape with a flat top bar immediately after the 7 = second digit of 73 (Y); confused with S64. Reads 'des moyens'
+24	37	S34	keep	-	r	ink A + closed o = S34; x-like gloss is the glossator's r
+25	2	26	keep	-	a	ink 'z6' = 26 clear; gloss looks like a with a mark; 'tenir' needs e, keep ink
+25	4	60	keep	-	i	ink '60' clear; gloss is a tall thin stroke = glossator's i, read as l; 'tenir'
+25	8	26	keep	-	e	ink 'z6' clear; the double-crescent over the 6 is e; the l-like mark read as part of 'le' sits over the 5 at pos 7
+25	15	S34	keep	-	r	ink A + o = S34; x-like gloss = glossator's r ('executer')
+25	19	S74	keep	-	-	same c-hook + crossed diagonal stem sign as L23 pos 13 = S74 shape; see NOTE
+25	21	S21	S36	-	-	long-s stem with hook at top and cross-stroke at the baseline = S36, confused with S21
+25	23	64	keep	-	i?	ink '64' clear; gloss is a heavy stem with two crossbars (F-like), probably the glossator's I; keep ink
+25	29	44	keep	-	po?	ink '44' clear at line end; the superscript 'po' sits over the 9/44 junction and may belong to pos 28
+26	2	26	keep	-	c	ink clearly z + 6 = 26 (key e); gloss is a small c-shaped curl, the c/e form of this glossator, not a disagreement of substance
+26	8	16	keep	-	u	ink clearly 1 + 6 = 16 (key e); fits a-ss-e-u-r-e-r (asseurer); gloss u disagrees
+26	10	S34	keep	-	u	ink capital A with crossbar joined to small o = S34 Ao (key r), fits asseurer; gloss u (with breve) disagrees
+26	11	26	keep	-	c	ink clearly z + 6 = 26 (key e), fits asseurer; gloss c/e-like curl
+26	14	S53	keep	-	-	ink straddles the tick: flat-topped 3 whose lower bowl runs into a long tail sweeping down-left to a blob = S53 (3/8 curl with tail); not S64 (compact 3, no long tail) and not the digit 3 (B); after S32 que, S53 'dict' fits "que [le]dict"
+26	16	S52	keep	-	m	ink lattice, three verticals across three-four horizontals = S52 (key word 'ne'); not S04 (two across two); decode "ne s'i fera" fits; gloss is three minims (m, or 'ne' read as minims)
+26	20	16	keep	-	i	ink clearly 1 + 6 = 16 (key e), fits s'i fera; gloss is an i-like tick, disagrees
+26	26	16	keep	-	u	ink clearly 1 + 6 = 16 (key e); gloss u sits between the 1 and 6, disagrees
+26	29	82	keep	-	s	ink clearly 8 + z = 82 (key o); the small s gloss sits in the gap between the S36 x and the 8 and probably glosses the S36; if it is this token's gloss it disagrees
+27	2	S20	keep	-	-	ink is a flat 3-shaped top with crossbar joined to a looped R-like body whose right leg ends in a foot; no key letter sign matches (not S33 R: S33 has no 3-top; not digit 3: has the R body); nearest crop S20 (looped R with tail); kept at M
+27	6	16	keep	-	co	ink clearly 1 + 6 = 16 (key e), fits a-d-u-e-r-t-y (aduerty); gloss co/omega-like, disagrees
+27	10	7	DEL	11	-	merge partner: the 7 (long top stroke, diagonal leg) is the first digit of 73 at pos 11
+27	11	S64	73	10	-	ink is a small flat-topped 3 standing just right of the 7 at digit spacing (gap about 25 px, same as 1-4, 10-2 in this line) = the pair 7+3 = 73 (key Y); gives a-d-u-e-r-[t]-y "aduerty & que"; confused with S64 (3-shape) because the 3 was read as a sign by itself; same 7+3 pair at 29/21-22
+27	12	S04	keep	-	e	ink hash of two strokes across two = S04 (key &), not S52 (three across three); gloss e-like (et) agrees in substance
+27	15	26	keep	-	c	ink clearly z + 6 = 26 (key e), fits de deca; gloss c/e curl
+27	17	16	keep	-	c	ink 1 + 6 across the tick = 16 (key e), fits de deca; gloss c/e curl
+27	20	S52	keep	-	ac	ink lattice three verticals across three-four horizontals = S52 (key 'ne'); decode "de deca ne s'espargnera rie(n)" fits exactly; gloss ac disagrees (glossator's misreading)
+27	22	16	keep	-	u	ink clearly 1 + 6 = 16 (key e), fits s'espargnera; gloss u disagrees
+27	29	62	keep	-	a	ink 6 + z = 62 (key e), fits espargn-e-ra; gloss a is shifted (the glossator wrote 'ra' over the next sign)
+27	30	S33	keep	-	ra	ink R-like: loop on top, two legs = S33 (key r), fits espargne-r-a; gloss 'ra' covers this sign and the following 14
+27	34	26	keep	-	c	ink z + 6 = 26 (key e), fits rie(n); gloss c/e curl
+28	1	S12	?	-	-	ink at line start is a small plain letter t (short stem, short crossbar near the top), no circle at the crossing, so not the S12 crop (cross with small o); also not S13 (symmetric plus) nor S37/S38 (no o/c attached); decode wants n (rie|n) or nothing; cannot assign a code
+28	5	S57	keep	-	-	ink small c-curl with a horizontal hooked stroke into its mouth = S57 crop (key 'tout'); decode "de tout ce" fits, a genuine word code
+28	9	S23	S36	-	-	ink is a single x (thick stroke crossed by a thin diagonal) with a long-s stroke coming down from above to just over it = letter-body S36 (key s), as at 18-21; confused with S23 (cursive curl with horizontal tail); gives "ce que s[e] pourra faire"
+28	13	102	keep	-	d?	ink 1 + 0 + z = 102 (key u), fits pourra; the tall d-like gloss is a loop under the descender of line 27's S32 y, which drops into this gloss zone; if a gloss d it disagrees
+28	29	S64	3	-	bo	ink flat-topped 3-shape directly before 44, with 'bo' (written like 60) above = digit 3 (key B, alpha_B row 3); gives "venir a b-o|ut" (a bout); same form as the recoded 24/17 digit 3; confused with S64 (identical 3-shape crop), gloss and decode decide
+29	5	64	keep	-	i	ink clearly 6 + 4 = 64 (key i); gives s-i-l (s'il) with the next 5; the short stroke above the 6 is an i-like gloss; the large looped b-like mark stands over pos 6 (the 5) and is the listed 'b'
+29	7	S23	S36	-	-	ink is a single x at the baseline with a long-s stroke hooked at the top descending from above onto it = letter-body S36 (key s); the listed gloss 'f' is the S36's own upper stroke; confused with S23; gives "s'il s-e-r-a possible"
+29	9	S33	keep	-	e	ink R-like with loop top and two legs, a stroke through the top = S33 (key r), fits sera; gloss e belongs to the preceding 16
+29	16	S64	3	-	bl	ink small round-topped 3 just past the tick, gloss 'bl' (written 6L) spanning it and the next 5 = digit 3 (key B, alpha_B cell drawn round-topped); gives po-ss-i-b-l-e (possible); confused with S64 3-shape
+29	19	60	keep	-	I	ink clearly 6 + o = 60 (key i); the f-like mark above is a crossed capital I/J of the glossator (sentence start "I'ay"), not an f; decode "i'ay enuoie" fits
+29	21	7	DEL	22	v	merge partner: the 7 (long thick top stroke with a leg down-left) carries the small 3 tucked below-right of its top stroke; pair is 73 at pos 22
+29	22	S64	73	21	-	ink (checked on the full page, clair349_f9_right_full.jpg x~2520, y~5290) is a small flat-topped 3 touching the underside of the 7's top stroke = 7+3 = 73 (key Y); gives "i'a-y enuoie"; confused with S64 3-shape
+29	29	S60	?	-	o	ink is a closed oval loop on top with a long S-shaped tail running down into line 30; does not match the S60 crop (double-arched y/yogh, no closed loop); closest crops are S14/S22 (loop over curl, word codes) or S03 (key G, but its tail runs flat along the baseline); gloss o (with a detached loop above); cannot choose
+30	1	S23	S36	-	-	lone x at line start, a long stroke coming down from above into its upper-left arm; this is the letter's S36 (s), confused with S23 (small x/z with flat right stroke); no gloss over it
+30	8	60	keep	-	none (i?)	ink is 6+0 = 60 (i); the "t" listed as gloss is the 6's own tall ascender with a nick, not a separate gloss; allemaigne needs i
+30	12	S17	S27	-	L	ff ligature with hooked/arched tops and both stems descending below the baseline = S27 (L), confused with S17 (straight tt with crossbar sitting on the baseline); gloss is a clear cursive L (les-quelz)
+30	15	S63	S32	-	q	y-shaped sign: small hooked left arm, long flat right arm, stem descending and curling left = S32 (Q); confused with S63 (q on a crossed stem) because the gloss q's tail runs down into the sign's flat arm; lesquelz
+30	20	S52	keep	-	m/ne	3x3 lattice = S52 (ne), unambiguous; gloss is a cursive "m"-like group that may be "ne"
+30	21	S65	keep	-	vol	tall leaf-shaped loop = S65, unambiguous; gloss reads "vol"/"wol" (word gloss, not a letter)
+30	22	26	keep	-	e	ink is z+6 = 26 (e); gloss is the decipherer's double-tick e-form (reads like u with diaeresis), the same form he puts over 16/26 elsewhere, not u
+31	1	S23	S36	-	f/long-s	lone x (two crossing strokes, no t-join and no tail, so not S02 F) = S36 per the letter's lone-x form, confused with S23; ink and gloss may disagree: gloss above is f or long s (crossbar ambiguous), "a" sits over pos2; if the gloss is f the word is "fait" and the ink would need S02
+31	3	60	keep	-	i	ink 6+0 = 60 (i); gloss is a tall undotted i stroke, not l (fait)
+31	8	26	keep	-	e	ink z+6 = 26 (e); gloss is the decipherer's double-tick e-form (x/r-like), not r (entendre)
+31	11	S64	DEL	-	-	not a cipher sign: the small 3/z-shaped mark stands at gloss height directly above the A of pos12 and is that token's gloss (r rotunda); only one such mark exists, so the transcription counted the gloss as a code (3-shape S64); entend-r-e reads without it
+31	12	S34	keep	-	r	capital A joined to closed o = S34 (R); its gloss is the r-rotunda written like z/3 (the mark mis-entered as pos11)
+31	22	9	S31	-	p	circle whose stem runs down past the line crop to a crossbar at its foot (visible in the top of line32_s2) = S31 (P), confused with 9 because the s-crops cut off the stem and cross; gloss p sits over it (the listed "t" is the last letter of the "fait" gloss); "fait penser que"
+31	23	16	keep	-	e	ink 1+6 = 16 (e); the p gloss belongs to pos22, the gloss over this 6 is the e-form
+31	26	26	keep	-	e	ink z+6 = 26 (e); gloss is a dot plus short tick (the double-tick e-form), not i (penser)
+32	16	26	keep	-	e	ink z+6 = 26 (e); gloss over the z is the double-tick e-form; the listed "c" belongs to pos18 (9, c)
+32	24	18	keep	-	e-form (u with diaeresis)	ink is 1+8 = 18 (cc), matching the key's cc cell exactly; gloss over it is the same double-tick u-form as over e-signs, so gloss and key disagree; ink kept
+33	2	S63	keep	-	-	(ink uncertain) small c-hook at top, stem slanting down to the lower left with a hook, and a horizontal bar crossing the stem on both sides; the crossing bar fits S63 (q on crossed stem); alternatives S32 (Q, y-shape, arm not crossing) and S02 (F, x+tail) considered and less close; no gloss
+33	3	S17	S27	-	L	ff with arched/hooked tops and both stems descending well below the baseline = S27 (L), confused with S17; gloss is a cursive L (les ennemis), not f
+33	5	S21	S36	-	-	long-s stroke from above (hooked top) ending in a cross/x at its foot = S36 (s), confused with S21 (f-like with tail); les
+33	8	62	keep	-	unclear (r-like or part of "emy")	ink 6+z = 62 (e), matches key E cell; gloss above is a smeared group (blob + r-rotunda-like stroke) running across 62 and S29; text needs e (ennemis)
+# NOTE line 20 pos 6 (S44, gloss p): ink is a small circle on a long stem crossed low (circle-on-cross), and the decode es-p-erance needs p; looks like S31 (key P), not the null S44; worth a re-read.
+# NOTE line 20 pos 13 (X, gloss q): a circle-on-stem mark similar to pos 6 with gloss q above; decode esperance q(ue) elle.
+# NOTE line 21 pos 4 and pos 26: an upright plain plus stands where t is needed twice (c'est, autre) and the glossator wrote t both times; the key's t signs are S37/S38 (to, tc). Either the scribe used S13 for t or dropped the o/c; a key-level question, not a transcription one.
+# NOTE the S21/S36 confusion is systematic: the letter-body S36 is a long-s stroke from above ending in a single cross or x; the key's S21 crop (f with mid crossbar and left-curling tail) resembles it. Every S21 target in lines 18-21 was S36 on the ink.
+# ANCHOR line 18: counted from 16 7 | Ao m (gloss m) 12 16, then 9 S33 64 S44 tc, the ily group (quil) and uui (S29), then 60 68 26 104 Ao | 62 7 44 5 82 15 to.
+# ANCHOR line 19: ff (S27) 14 to 28 15 tc 16 Ao, the tall y (S32) and the que gloss, then 60 i4 uuu z8 64 before the f, then | z6 ss to 16 ct 5 (m z6 60 68 16.
+# ANCHOR line 20: 7 Ao 62 16 then the x (pos 5) and the circle-on-stem with p gloss; 62 R 14 15 9 26; then 7 16 68 26 R 16 104, the x (pos 21), 9 60 Ao 14 5 82 15 to 22.
+# ANCHOR line 21: 9 z6 ss + z6 17 16 7 A 62 60 62 lattice ss across the tick, then 9 7 64 x 5 60 R 16 | 12 102 + Ao 26 9 17 44 x at line end.
+# NOTE S21 as used in L22-25 is never the f-with-arc of the atlas crop: every instance is a long s with a cross-stroke at its foot, i.e. the key's S cell (S35 stem + S36 x) written as one sign. Suggest treating it as S36 (s) wherever it appears in lines 18-33, not just here
+# NOTE the 3-shape (S64 crop) is the period numeral 3: standing alone it is B (code 3); right after a 7 it completes 73 (Y). Check other S64 tokens for a preceding 7
+# NOTE S74 (L23 pos 13, L25 pos 19) is always followed by 60 and sits where a short letter group is expected ('envoye [S74] ieuers', 'mae[S74]i s lien'); the ink is consistent between the two, so this is a key/value question, not a transcription one
+# NOTE L24 pos 33 X (gloss f) is a crossed x joined to a t = S02 (F); L24 pos 30 is the stand-alone x S36 glossed s, the reference for L22 pos 17
+# NOTE L25 pos 22 (5) has a heavy B-like mark above it, darker than the glosses; possibly an S01 correction or insertion, worth a check
+# NOTE L25 pos 9 is transcribed 87 (not a key code); the ink looks like 8 plus a separate long 7-stroke under a heavy loop, worth a re-read
+# ANCHOR L22: z6 | then the ornate f, 'to', and the Ao-z6-x-pi-z6-to run at the s1 tick; on s2, 104 Ao na 6z | 5 z6 tJ ff 64 102 at line end
+# ANCHOR L23: 60 8z Y (S32 with its q gloss) at the start, the big crossed c-4 sign at the s1 tick, and 6z Ao x on s2 followed by 22 (gloss po)
+# ANCHOR L24: the # (S04) and pi at line start, the | after i6, the uu (S29 gloss m) before the lone 3, and + | Y x at the end on s2
+# ANCHOR L25: 'to' at the start, 22 with gloss po at pos 6, the heavy 8 with the big loop at pos 9, the Ao and S28 m at the s1 tick, the | before 5 9 44 at the end
+# NOTE line 26 pos 6-7 (S27 + 4) and line 29 pos 13-14 (S27 + 4): both sit where 'ss' is needed (a-ss-eurer, po-ss-ible); the ink is a doubled long stroke followed by a 4, which may be the key's 54 (ss long) with the 5 written as a long-s stroke; worth a re-read against dbl_ss_long.jpg.
+# NOTE line 26 pos 27 (X, gloss n): ink looks like the letters 'ua'/'na' on the baseline; the key's N cell shows S30 'cma'; possibly S30 without a visible c-hook.
+# NOTE line 27 pos 8-9 (X + 6): a crossed t joined to a 6/o-like loop; with 73 after it gives aduer-t-y, so X+6 is likely one t sign (S37 'to'); worth a re-read.
+# NOTE line 28 pos 11 (S44, gloss r): ink is a circle standing on a crossed stem, and "se pourra" needs p: likely S31 (key P), not the null S44, as at 20/6.
+# NOTE line 28 pos 8 (S39): "de tout ce q[ue] se pourra faire" wants que; the ink is a q-like loop with a descender; check against S32/S63.
+# NOTE line 29 pos 3-4 (S35 then 5): the only marks are a long-s stroke from above followed by one small 5-like s; together they are S35 (long s + small s), so the separate 5 at pos 4 is probably the second half of S35; merged, the line reads s-i-l sera possible.
+# NOTE line 23 "iau[quant]enuoe": probably the same 7 + 3 = 73 (i'ay enuoye) as 29/21-22; check the ink.
+# ANCHOR line 26: counted from uu-mark z6 S40 . | S35 z8 S27 4, then 16 104 Ao z6 R y at s1, S53 on the tick, 66 lattice + 60 x 16 Ao 14 y S35 15 16 'ua' S36 82 64 at line end.
+# ANCHOR line 27: 62 then the 3-topped R, 14 5 102 16 Ao, the crossed-t-with-6, 7, small 3, # , y, 5 z6 5 16 across the tick, 9 28 lattice + 16 S35 S31 12 Ao g 15 62 R 14 LA 60 26 at line end.
+# ANCHOR line 28: t 5 5 16 S57 9 z6, the q-like S39, x under a long-s stroke, 16, circle-on-cross, 44 102 56 28 at s1; after the tick X(f) 28 64 Ao 16 22 5 104 26 15 60 Ao 12, the 3, 44 at line end.
+# ANCHOR line 29: 102 to at line start, long-s + 5, 64 5, x under long-s, 16 R 14 circle-on-cross 82 S27 4 24; after the tick the small 3 with 'bl' gloss, 5 z6 60 28, 7+3, 16 15 102 44 64 62, the looped tail sign, 26 15 at line end.
+# NOTE line 30: pos4 "68[ll]" -- key ll is 69, not 68; check ink. pos18 8 decodes b but glosses over 8/S40 read "lz" (lesquelz); 8 is not in the key letter list.
+# NOTE line 30: gloss convention -- the decipherer's e is a double-tick u-like mark; several "u"/"i"/"r"/"c" gloss readings in 30-33 are this e-form.
+# NOTE line 32: pos17 X (unknown) is a long-s stroke from above ending in a cross at its foot = S36 (s): es-c-h-a-u-ff... "eschauff-".
+# NOTE line 32: pos22 S34 (no gloss) sits raised at gloss height between 102 and 66; it may be the gloss over 66 (ff) rather than a cipher token; eschauffe(e)s needs no r.
+# NOTE line 32: pos28 8[o] -- 8 is not an O sign (82/44); check whether it is 82 merged with a neighbour.
+# NOTE line 33: pos7 06 carries gloss "nn" (listed uu) -- nn in the key is 106; check whether 1 of pos6 or a 1 is lost. pos11 "4" after 60 is a crossed "+" where ennemis needs s (possibly S36/x form). Text reads "comme [5 S63] les ennemis vouldroient faire".
+# ANCHOR line 30: counted from the lone x at s1 x~720, then 5/12/68/16/cm(S28), the black blot (pos9 X, gloss g), the ff (pos12, gloss L) and the lattice S52 at s2 x~900.
+# ANCHOR line 31: counted from the x with "fa" gloss, the two "to" (S37) signs at pos4/pos7, the Ao at s1 x~1720 and the "fait" gloss over pos21, then the ſx (S36) at pos25.
+# ANCHOR line 32: counted from the ſs (S35) at s2 x~500 (pos14), 73 with gloss y, and the 9/17 with glosses c/h (pos18-19), then 66 18 x | 9 8 76 16.
+# ANCHOR line 33: counted from the 5 at s1 x~700, the big descending ff (pos3), the long-s-with-cross (pos5), the uuu (S29) and the divider before 102/44/104.

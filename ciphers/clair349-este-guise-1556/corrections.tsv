@@ -125,9 +125,12 @@ line	position	old	new	partner	reason	grade
 27	2	2	DEL	1	closes 62	M
 27	6	10	102	7	1 0 z group, u gloss; 102=V	M
 27	7	2	DEL	6	closes 102	M
+27	12	7	DEL	13	ZX-TR349E: merge partner: the 7 (long top stroke, diagonal leg) is the first digit of 73 at pos 11	M
+27	13	S64	73	12	ZX-TR349E: ink is a small flat-topped 3 standing just right of the 7 at digit spacing (gap about 25 px, same as 1-4, 10-2 in this line) = the pair 7+3 = 73 (key Y); gives a-d-u-e-r-[t]-y "aduerty & que"; confused with S64 (3-shape) because the 3 was read as a sign by itself; same 7+3 pair at 29/21-22	M
 27	23	4	S36	-	cross after the S52 hash, s gloss; lone 4 not a code	M
 27	33	1	14	34	1 4 adjacent; 14=A (partner row, not in input list)	M
 27	34	4	DEL	33	closes 14	M
+28	9	S23	S36	-	ZX-TR349E: ink is a single x (thick stroke crossed by a thin diagonal) with a long-s stroke coming down from above to just over it = letter-body S36 (key s), as at 18-21; confused with S23 (cursive curl with horizontal tail); gives "ce que s[e] pourra faire"	M
 28	12	4	44	13	4 4 after S44, o gloss over first; 44=O	M
 28	13	4	DEL	12	second 4 of 44	M
 28	14	10	102	15	clear 1 0 z group; 102=V though gloss reads d	M
@@ -136,13 +139,17 @@ line	position	old	new	partner	reason	grade
 28	17	6	DEL	16	rr gloss over s-form 5 + 6; closes 56	M
 28	26	10	104	27	1 0 4 group, u gloss; 104=V	M
 28	27	4	DEL	26	closes 104	M
+28	33	S64	3	-	ZX-TR349E: ink flat-topped 3-shape directly before 44, with 'bo' (written like 60) above = digit 3 (key B, alpha_B row 3); gives "venir a b-o|ut" (a bout); same form as the recoded 24/17 digit 3; confused with S64 (identical 3-shape crop), gloss and decode decide	M
 29	1	10	102	2	1 0 z group at line start, u gloss; 102=V	M
 29	2	2	DEL	1	closes 102	M
+29	8	S23	S36	-	ZX-TR349E: ink is a single x at the baseline with a long-s stroke hooked at the top descending from above onto it = letter-body S36 (key s); the listed gloss 'f' is the S36's own upper stroke; confused with S23; gives "s'il s-e-r-a possible"	M
 29	13	8	82	14	8 z after S31, o gloss over 8; 82=O	M
 29	14	2	DEL	13	closes 82	M
 29	17	2	24	18	z 4 pair, i gloss; 24=I	M
 29	18	4	DEL	17	closes 24	M
-29	24	4	7	-	a 7 with a z-like double bar on top, v gloss; 7=V	M
+29	19	S64	3	-	ZX-TR349E: ink small round-topped 3 just past the tick, gloss 'bl' (written 6L) spanning it and the next 5 = digit 3 (key B, alpha_B cell drawn round-topped); gives po-ss-i-b-l-e (possible); confused with S64 3-shape	M
+29	24	4	DEL	25	a 7 with a z-like double bar on top, v gloss; 7=V; ZX-TR349E: merge partner: the 7 (long thick top stroke with a leg down-left) carries the small 3 tucked below-right of its top stroke; pair is 73 at pos 22	M
+29	25	S64	73	24	ZX-TR349E: ink (checked on the full page, clair349_f9_right_full.jpg x~2520, y~5290) is a small flat-topped 3 touching the underside of the 7's top stroke = 7+3 = 73 (key Y); gives "i'a-y enuoie"; confused with S64 3-shape	M
 29	28	10	102	29	1 0 z group, u gloss; 102=V	M
 29	29	2	DEL	28	closes 102	M
 29	30	4	44	31	4 4, o gloss; 44=O	M

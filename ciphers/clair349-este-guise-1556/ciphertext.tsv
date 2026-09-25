@@ -914,31 +914,30 @@ line	position	sign	gloss	confidence	source	why
 27	7	S34		H	both	agree
 27	8	X		M	G	upright with hooked top and two bars (as 26/24); no gloss visible beyond a dot
 27	9	6		M	G	6 joined to next 7 by its bar (could be one group 67)
-27	10	7		M	G	7 after the 6 (possibly 67 with pos11)
-27	11	S64		M	H	flat-topped 3-shape = atlas S64
-27	12	S04	e	M	G	hash; small e/c-like mark above right
-27	13	S32	q	M	H	symmetric Y, 9/q-loop above as gloss
-27	14	5	d	H	both	agree
-27	15	26	c	M	H	z6 group, c-with-dot mark over the z
-27	16	5	d	M	G	d-like loop above between 5 and 1
-27	17	16	c	M	H	small c mark over the 16
-27	18	9	c	H	both	agree
-27	19	28	a	M	H	z8 group, a over the join
-27	20	S52	ac	M	G	'ac' above the lattice
-27	21	S36	s	M	recode	cross after the S52 hash, s gloss; lone 4 not a code
-27	22	16	u	M	G	u-like mark above 16
-27	23	S35		M	new	very tall long s descending + small s = S35; no gloss seen
-27	24	S31	p	M	G	circle standing on a cross, p above
-27	25	12	a	H	both	agree
-27	26	S34	r	M	H	r gloss above Ao (clear in zoom)
-27	27	X	g	M	H	closed rho-like loop at body level with long tail below (not crossed, so not S63); g above
-27	28	15	n	H	both	agree
-27	29	62	a	M	H	6z tight pair, a over the 6
-27	30	S33	ra	H	both	agree
-27	31	14		M	recode	1 4 adjacent; 14=A (partner row, not in input list)
-27	32	X	r	M	new	L-stroke joined to plain A (LA ligature, not atlas S76/S24); r above
-27	33	60	i	H	both	agree
-27	34	26	c	M	new	z6 group at line end, c-like mark above the join
+27	10	73		M	recode	ZX-TR349E: ink is a small flat-topped 3 standing just right of the 7 at digit spacing (gap about 25 px, same as 1-4, 10-2 in this line) = the pair 7+3 = 73 (key Y); gives a-d-u-e-r-[t]-y "aduerty & que"; confused with S64 (3-shape) because the 3 was read as a sign by itself; same 7+3 pair at 29/21-22
+27	11	S04	e	M	G	hash; small e/c-like mark above right
+27	12	S32	q	M	H	symmetric Y, 9/q-loop above as gloss
+27	13	5	d	H	both	agree
+27	14	26	c	M	H	z6 group, c-with-dot mark over the z
+27	15	5	d	M	G	d-like loop above between 5 and 1
+27	16	16	c	M	H	small c mark over the 16
+27	17	9	c	H	both	agree
+27	18	28	a	M	H	z8 group, a over the join
+27	19	S52	ac	M	G	'ac' above the lattice
+27	20	S36	s	M	recode	cross after the S52 hash, s gloss; lone 4 not a code
+27	21	16	u	M	G	u-like mark above 16
+27	22	S35		M	new	very tall long s descending + small s = S35; no gloss seen
+27	23	S31	p	M	G	circle standing on a cross, p above
+27	24	12	a	H	both	agree
+27	25	S34	r	M	H	r gloss above Ao (clear in zoom)
+27	26	X	g	M	H	closed rho-like loop at body level with long tail below (not crossed, so not S63); g above
+27	27	15	n	H	both	agree
+27	28	62	a	M	H	6z tight pair, a over the 6
+27	29	S33	ra	H	both	agree
+27	30	14		M	recode	1 4 adjacent; 14=A (partner row, not in input list)
+27	31	X	r	M	new	L-stroke joined to plain A (LA ligature, not atlas S76/S24); r above
+27	32	60	i	H	both	agree
+27	33	26	c	M	new	z6 group at line end, c-like mark above the join
 28	1	S12		M	G	small t-like cross at line start
 28	2	5		M	G	thin s-shaped 5 (H's t-mark is pos1)
 28	3	5		M	G	bold s-shaped 5, same height as the one before; not long-s + small s
@@ -947,7 +946,7 @@ line	position	sign	gloss	confidence	source	why
 28	6	9		H	both	agree
 28	7	26	e	M	new	z6 group; two-tick dotted mark above (read e)
 28	8	S39		M	G	9/d loop joined to long descending s = S39; no gloss
-28	9	S23		H	both	agree
+28	9	S36		M	recode	ZX-TR349E: ink is a single x (thick stroke crossed by a thin diagonal) with a long-s stroke coming down from above to just over it = letter-body S36 (key s), as at 18-21; confused with S23 (cursive curl with horizontal tail); gives "ce que s[e] pourra faire"
 28	10	16	e	M	G	closed e-like blob above 16
 28	11	S44	r	M	G	loop on a stem crossed at top (S44); r-like mark above
 28	12	44	o	M	recode	4 4 after S44, o gloss over first; 44=O
@@ -967,7 +966,7 @@ line	position	sign	gloss	confidence	source	why
 28	26	60	i	H	both	agree
 28	27	S34	r	H	both	agree
 28	28	12	a	H	both	agree
-28	29	S64	bo	M	G	flat-topped 3-shape; large 'bo' (looks like 60) written above
+28	29	3	bo	M	recode	ZX-TR349E: ink flat-topped 3-shape directly before 44, with 'bo' (written like 60) above = digit 3 (key B, alpha_B row 3); gives "venir a b-o|ut" (a bout); same form as the recoded 24/17 digit 3; confused with S64 (identical 3-shape crop), gloss and decode decide
 28	30	44		M	G	two 4s after the S64
 29	1	102	u	M	recode	1 0 z group at line start, u gloss; 102=V
 29	2	S37	t	H	both	agree
@@ -975,7 +974,7 @@ line	position	sign	gloss	confidence	source	why
 29	4	5		H	both	agree
 29	5	64	b	M	new	64 pair; tall b/l-like mark over the 6
 29	6	5		H	both	agree
-29	7	S23	f	H	both	agree
+29	7	S36	f	M	recode	ZX-TR349E: ink is a single x at the baseline with a long-s stroke hooked at the top descending from above onto it = letter-body S36 (key s); the listed gloss 'f' is the S36's own upper stroke; confused with S23; gives "s'il s-e-r-a possible"
 29	8	16	e	M	G	e-like dotted mark above 16
 29	9	S33	e	M	H	pi-shape with two legs and crossed top = S33; e loop at top right is the gloss
 29	10	14	a	H	both	agree
@@ -984,22 +983,21 @@ line	position	sign	gloss	confidence	source	why
 29	13	S27		H	both	agree
 29	14	4		H	both	agree
 29	15	24	i	M	recode	z 4 pair, i gloss; 24=I
-29	16	S64		M	G	faint flat-topped 3-shape present; big interlinear '6C' above 29/20-21
+29	16	3		M	recode	ZX-TR349E: ink small round-topped 3 just past the tick, gloss 'bl' (written 6L) spanning it and the next 5 = digit 3 (key B, alpha_B cell drawn round-topped); gives po-ss-i-b-l-e (possible); confused with S64 3-shape
 29	17	5		M	G	s-shaped 5 after the S64
 29	18	26	e	M	new	z6 group, two-tick mark above (read e)
 29	19	60	f	H	both	agree
 29	20	28	a	M	H	z + triangular 8, a over the join
-29	21	7	v	M	recode	a 7 with a z-like double bar on top, v gloss; 7=V
-29	22	S64		M	new	flat-topped 3-shape below-right of the 4
-29	23	16	e	M	G	two-tick mark above (read e)
-29	24	15	n	H	both	agree
-29	25	102	u	M	recode	1 0 z group, u gloss; 102=V
-29	26	44	o	M	recode	4 4, o gloss; 44=O
-29	27	64	i	M	H	64 pair, i-stroke over it
-29	28	62	e	M	G	two-tick mark (read e)
-29	29	S60	o	M	G	loop with long S-tail curling down into line 30 (yogh/rho), o above
-29	30	26		M	recode	z6 pair after S60, e gloss over 6; 26=E
-29	31	15	n	H	both	agree
+29	21	73		M	recode	ZX-TR349E: ink (checked on the full page, clair349_f9_right_full.jpg x~2520, y~5290) is a small flat-topped 3 touching the underside of the 7's top stroke = 7+3 = 73 (key Y); gives "i'a-y enuoie"; confused with S64 3-shape
+29	22	16	e	M	G	two-tick mark above (read e)
+29	23	15	n	H	both	agree
+29	24	102	u	M	recode	1 0 z group, u gloss; 102=V
+29	25	44	o	M	recode	4 4, o gloss; 44=O
+29	26	64	i	M	H	64 pair, i-stroke over it
+29	27	62	e	M	G	two-tick mark (read e)
+29	28	S60	o	M	G	loop with long S-tail curling down into line 30 (yogh/rho), o above
+29	29	26		M	recode	z6 pair after S60, e gloss over 6; 26=E
+29	30	15	n	H	both	agree
 30	1	S36		M	recode	ZX-TR349E: lone x at line start, a long stroke coming down from above into its upper-left arm; this is the letter's S36 (s), confused with S23 (small x/z with flat right stroke); no gloss over it
 30	2	5	m	M	H	m-like mark in the interline directly over the 5
 30	3	12	a	M	H	a directly over 12

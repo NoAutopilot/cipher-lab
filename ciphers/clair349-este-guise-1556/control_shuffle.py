@@ -4,7 +4,8 @@ the key plus exceptions, nulls dropped, homographs at their first value, unread 
 dividers left where they are, 5 seeds; each rendered in reading.txt's concat layout and judged with
 tools/judge_plaintext.py on the same spec. Same letters, same line lengths, same word-break count: only the order
 differs, so a PASS on the target and FAIL on the controls says the order carries French, not the letter mix.
-Usage: python3 control_shuffle.py [--seeds 5]"""
+Usage: python3 control_shuffle.py [--seeds 5] [--lines 18-33]
+--lines (ZX-TR349E, 25 Sept 2026) judges only that line range, target and controls alike."""
 import collections, csv, json, os, random, subprocess, sys
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.join(HERE, '..', '..')
 SPEC = os.path.join(ROOT, 'specs', 'clair349-este-guise-1556.json')
@@ -42,6 +43,9 @@ def judge(text, tag):
 if __name__ == '__main__':
     n = int(sys.argv[sys.argv.index('--seeds') + 1]) if '--seeds' in sys.argv else 5
     L = lines()
+    if '--lines' in sys.argv:
+        a, b = map(int, sys.argv[sys.argv.index('--lines') + 1].split('-'))
+        L = collections.OrderedDict((k, v) for k, v in L.items() if a <= int(k) <= b)
     t = judge(render(L), 'target')
     print('target (unshuffled, same renderer):', 'PASS' if t['pass'] else 'FAIL', json.dumps(t['checks']))
     for s in range(n):
