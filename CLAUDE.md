@@ -542,6 +542,13 @@ search is reachable but functionally unusable, drowned in unfiltered noise).
    `CORE_API_KEY` (CORE open-access full text, `Authorization: Bearer`; for verifiers' scholarship searches). Where a key
    is absent, fall back to the keyless route and say so in NOTES.md; a missing key never blocks a job.
 
+   **Key probe, 25 Sept 2026.** Presence check (name only, no values printed): `EUROPEANA_API_KEY` set, `DPLA_API_KEY`
+   set, `DDB_API_KEY` unset, `APE_API_KEY` unset, `CORE_API_KEY` unset. One test query per set key, key passed only via
+   its environment variable: Europeana Search API (`query=cipher&rows=1`) returned HTTP 200, `success: true`,
+   `totalResults: 1668`; DPLA (`q=cipher&page_size=1`) returned HTTP 200, `count: 805`. Both keys work from this
+   container. Fresh worker sessions started after this point pick up both variables automatically; sessions already
+   running before this point do not see newly-added environment variables and should not be assumed to have them.
+
 ## Improvement loop
 
 The orchestrator writes a LEDGER.md row when it archives a worker (role, model, cost, outcome code, lesson).
