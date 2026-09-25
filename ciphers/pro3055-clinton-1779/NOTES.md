@@ -1,4 +1,5 @@
 partial
+**Update, 25 Sept 2026 (parent worker FOLLOWUP-2315, L16): the two Cornwallis-to-Clinton letters that were blocking deep work (PRO 30/55/32/2 item 3689, 16 Aug 1781; PRO 30/55/33/7 item 3813, 3 Oct 1781) are both printed in B.F. Stevens, *The Campaign in Virginia, 1781* (1888), read from archive.org: text known for both, citations and page quotes in the "Stevens 1888" section below. The other six named items (2380, 2894, 3803, 3833/33 x2, 4833, 6009, 6012) are unaffected and stay at their existing footing (see "Verdict" below); status stays `partial` for the folder as a whole because most of its items remain unresolved.**
 HMC Report on American Manuscripts (1904-09) read by this worker via the TNA Discovery item-level API (the calendar's own published text, across PRO 30/55/19, /24, /32, /33, /42, /53) plus a be-api full-text search across five archive.org scans of the same Report for entry "2894" (control "Clinton" confirmed the search path works; target "2894" returned no hit in any scan checked); the more specific edition for the Yorktown-dated items -- Ian Saberton, *The Cornwallis Papers* pt.11 (Naval & Military Press, 2010) -- was identified this sweep as the likely holder of a decipherment but was not opened (Google Books gives `NO_PAGES`, not on Internet Archive, not JSTOR/HathiTrust/academia.edu). GBOOKS pass (25 Sept 2026, below): Saberton's `NO_PAGES` confirmed unchanged even with `country=US`, but a separate, fully public-domain 1888 edition -- B. F. Stevens (ed.), *The Campaign in Virginia, 1781: An Exact Reprint of Six Rare Pamphlets on the Clinton-Cornwallis Controversy* -- explicitly cross-references both target letters by page number and tags the 3 Oct 1781 one `[In cypher.]`; not yet read (needs archive.org/HathiTrust, out of this worker's network scope).
 
 ## Check-solved round 2 (LANE CX2, 25 Sept 2026)
@@ -152,3 +153,72 @@ calendar. Separately, identify the British Museum/Library item that matches PRO 
 French-fleet, 3-May, seven-ships-of-the-line detail is a specific enough crib for a BL catalogue search) —
 that may close this one item without any cryptanalysis. Do not order or email; this can all be done from the
 desk with archive.org and the BL's own online catalogue.
+
+## Stevens 1888 read from archive.org (25 Sept 2026, parent worker FOLLOWUP-2315, L16)
+
+Per the GBOOKS lead above: B. F. Stevens (ed.), *The Campaign in Virginia, 1781: An Exact Reprint of Six Rare
+Pamphlets on the Clinton-Cornwallis Controversy... With Very Numerous Important Unpublished Manuscript Notes*
+(London, 1888), 2 vols. Both volumes are on archive.org, full text, no login: `campaigninvirgin01stevuoft` (vol.1,
+the chronological reference list, "Number I/II/..." cross-referencing "Letter ii. <page>") and
+`campaigninvirgin02stevuoft` (vol.2, "Letter ii", the actual reprinted correspondence with Clinton's manuscript
+notes and the "Chronological Correspondence" catalogue of additional copies). Fetched both `_djvu.txt` files
+(archive.org/download, browser UA, 2 requests 1.5s apart).
+
+**16 Aug 1781, Cornwallis to Clinton (PRO 30/55/32/2, item 3689).** Vol.1's chronological list: "Number VIII. [185]
+Earl Cornwallis to Sir Henry Clinton, K.B. dated York-town, i6th August, 1781. see Letter ii. 126." -- no
+`(In Cypher.)` tag (contrast Number VII [183], Clinton's 11 Aug letter, and Number I [189], Cornwallis's 31 Aug
+letter, both explicitly tagged `(In Cypher.)` in the same list). Vol.2's catalogue cross-references it as item
+"141" ("141B: Cornwallis to Clinton, 16 August 1781, answer[185] i.90 ... Same as No. 141 with variations shown
+in margins pp 127-128"; three copies B/F/S listed). At real printed pp.127-128 (vol.2 djvu text, running heads
+"125/CLINTON-CORNWALLIS CONTROVERSY" and "CHRONOLOGICAL CORRESPONDENCE/129" bracket the passage; the margin
+notes there cite copies S, B and F by letter, matching 141B/141F/141S), the letter is printed **in full, in
+clear English, with no cipher notation anywhere in it**:
+
+> "I have received your Excellency's Dispatches of the 15th & 26th Ult° which I shall answer by the first safe
+> opportunity. I beg that your Excellency will be pleased to order it to be notified to the Port of New-York,
+> that Portsmouth is evacuated, to prevent Vessels from going into that harbour. I have the honour to be with
+> great respect, Sir, Your most obedient & most humble Servant. CORNWALLIS. His Excellency Sir Henry Clinton.
+> K.B. &c &c &c."
+
+This is short (the whole reply), which is consistent with vol.1's own list not tagging it as ciphered; it does not
+by itself confirm or rule out that the manuscript at Kew (PRO 30/55/32/2, catalogued "[Original written in
+cypher]" per NOTES.md's Source table) used cipher for a passage Stevens silently normalised, but no such passage
+or cipher indicator appears in Stevens's transcription or its margin apparatus. Grade for a future reading: text
+known (C), source published.
+
+**3 Oct 1781, Cornwallis to Clinton (PRO 30/55/33/7, item 3813).** Vol.1: "Number XII. [201] Earl Cornwallis to
+Sir Henry Clinton, K.B. dated York-Town, Virginia, October 3, 1781. (In Cypher.) see Letter ii. 174." Vol.2's
+catalogue: "163 CORNWALLIS to CLINTON, 3 October 1781, ls ei 19/138. Answer [201] i.92, Correspondence [56] i.136,
+with Clinton's Manuscript Notes from each," followed immediately by the full text at real pp.174-175 (running
+heads "174/CLINTON-CORNWALLIS CONTROVERSY" and "CHRONOLOGICAL CORRESPONDENCE/175" bracket it):
+
+> "York Town Virginia 3 Oct 1781. Sir, I received your Letter of the 25th of September, last night. The Enemy
+> are encamped about two miles from us; on the night of the 30th of Sept they broke ground & made two Redoubts
+> about eleven hundred Yards from our Works... They have finished their Redoubts, & I expect they will go on
+> with their Work this night... I can see no means of forming a junction with me but by York River, and I do
+> not think that any diversion would be of use to us. Our Accounts of the Strength of the French Fleet have in
+> general been, that they were Thirty-five or Thirty-six Sail of the Line... I see little chance of my Being
+> able to send persons to wait for you at the Capes, but I will if possible. I have the honour to be with great
+> respect, Sir, Your most obedient and most humble Servant, CORNWALLIS. His Excellency Sir Henry Clinton K.B.
+> &c. &c. &c."
+
+with the editorial footnote at the end: **"*[From here partly in cypher with a translation.]"** -- i.e. Stevens's
+1888 printed text is not merely a calendar paraphrase but includes a period/editorial translation of the passage
+that was in cipher in the manuscript, so the full letter (cipher portion included) is readable in clear here.
+This matches TNA's own catalogue tag for item 3813 (`[In cypher.]`) exactly, and Stevens's apparatus cross-refers
+seven surviving copies of this letter (163B/F/S/V/E/R/M, across the Answer, Correspondence, Tarleton, Germain
+French-translation, and two House-of-Lords copy series), all "same as No.163 with variations shown in margins
+pp.174-175". Grade for a future reading: text known (C), source published, translation not original cipher-group
+text.
+
+**Requests.** archive.org 2 (download, browser UA, 1.5s apart), no login, no other hosts. Both volumes kept only
+as scratch fetches this session (not committed to the repo; both are large full-book OCR dumps and the citation
+above is sufficient to re-fetch: `archive.org/download/campaigninvirgin01stevuoft/campaigninvirgin01stevuoft_djvu.txt`,
+`.../campaigninvirgin02stevuoft/campaigninvirgin02stevuoft_djvu.txt`).
+
+**Caveat.** This is a djvu OCR read straight from the plain text, not a check against the page image; a future
+worker should confirm both quoted passages against the actual page images at archive.org (BookReader,
+`campaigninvirgin02stevuoft`, leaves around pp.127-128 and pp.174-175) before treating either as a final grade-C
+reading, particularly the item-boundary for the 16 Aug letter, which this pass inferred from the page-range
+citation and the matching copy-letter footnotes (S/B/F) rather than from an explicit "No. 141" heading directly
+above the text.
