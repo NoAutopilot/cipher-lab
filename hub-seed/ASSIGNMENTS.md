@@ -604,3 +604,6 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T22:21Z	session_018jVRWWFAwhnL8teJke1vX7	RETRO-APPLY-L (Sonnet, cap 6)	apply RETRO-2026-09-25l + LEARN 2118 items 3,4,5,7 + LEARN 2133
 2026-09-25T22:21Z	session_018VkFfDWY4drC9a9aozmop9	LANE V7 orchestrator (Opus, cap 50)	verifiers (clair349 when ZX posts ready), en judge corpus folds, QA 23:40; brief 2026-09-25-lane-v7-orchestrator.md
 2026-09-25T22:21Z	session_01RUhLrpkEtWxVLVVDoYdsvm	LANE R8 orchestrator (Opus, cap 60)	Salviati design change (Fable), BnF Francais 3034 item 68 and 5761 item 3 intake; brief 2026-09-25-lane-r8-orchestrator.md
+2026-09-25T22:23Z	session_01FLjcM3ouXzN9UMGShs8gRo	R8-DSN (Fable, cap 15)	Salviati next design family + matched control; brief 2026-09-25-lane-r8-dsn-salviati-design.md
+2026-09-25T22:23Z	session_01YL7WDoj97YNvL21iRwn1cF	R8-L3034 (Sonnet, cap 4)	Francais 3034 item 68 intake, check-solved, images; brief 2026-09-25-lane-r8-l3034-landriano.md
+2026-09-25T22:23Z	session_01UcAsvJkJRnZjE7gJpk8dD1	R8-K5761 (Sonnet, cap 4)	fr5761 intake gate repair + sign inventory; brief 2026-09-25-lane-r8-k5761-election-key.md
