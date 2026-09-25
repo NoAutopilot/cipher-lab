@@ -1,0 +1,14 @@
+{
+  "source": "resources.huygens.knaw.nl retroboeken viewer (retroapp service_oldenbarnevelt), Bescheiden betreffende het beleid van Johan van Oldenbarnevelt, deel 2 (1602-1613), GS 108, ed. A.J. Veenendaal",
+  "landing_page": "https://resources.huygens.knaw.nl/retroboeken/oldenbarnevelt/",
+  "fetched_utc": "2026-09-25",
+  "note": "Letter no. 92 (P. van Brederode to Oldenbarnevelt, 21 Feb 1605, printed in cipher) runs pp.110-111 (page_index 124-125, source=2). pp.108-109 and p.112 fetched as surrounding context (end of no.91, start of no.93 -- neither carries cipher). voorwerk_XIII.jpg is the editor's preface page where he states this is the only ciphered item in the volume and he could not find the key.",
+  "pages": [
+    {"printed_page": "108", "page_index": "122", "file": "p108.jpg", "html_url": "https://resources.huygens.knaw.nl/retroapp/service_oldenbarnevelt/2/html/oldenbarneveld_2_gs108_0108.html", "content": "end of no. 91 (De raadsheren in het Hof van Holland aan Oldenbarnevelt, 21 dec 1604); no cipher"},
+    {"printed_page": "109", "page_index": "123", "file": "p109.jpg", "html_url": "https://resources.huygens.knaw.nl/retroapp/service_oldenbarnevelt/2/html/oldenbarneveld_2_gs108_0109.html", "content": "continuation of no. 91; no cipher"},
+    {"printed_page": "110", "page_index": "124", "file": "p110.jpg", "html_url": "https://resources.huygens.knaw.nl/retroapp/service_oldenbarnevelt/2/html/oldenbarneveld_2_gs108_0110.html", "content": "end of no. 91's citation; no. 92 [P. van Brederode aan Oldenbarnevelt], 21 feb 1605, begins -- cipher present"},
+    {"printed_page": "111", "page_index": "125", "file": "p111.jpg", "html_url": "https://resources.huygens.knaw.nl/retroapp/service_oldenbarnevelt/2/html/oldenbarneveld_2_gs108_0111.html", "content": "no. 92 continues and ends, citation 'A.R.A., Holland 2613, e. Duplicata.'; no. 93 (Louise Juliana) begins -- cipher present"},
+    {"printed_page": "112", "page_index": "126", "file": "p112.jpg", "html_url": "https://resources.huygens.knaw.nl/retroapp/service_oldenbarnevelt/2/html/oldenbarneveld_2_gs108_0112.html", "content": "end of no. 93 (French, Louise Juliana); no. 94 begins; no cipher"},
+    {"printed_page": "voorwerk XIII", "page_index": "voorwerk_XIII", "file": "voorwerk_XIII.jpg", "html_url": "https://resources.huygens.knaw.nl/retroapp/service_oldenbarnevelt/2/html/oldenbarneveld_2_gs108_voorwerk_XIII.html", "content": "editor's preface: 'Cijferschrift kwam in dit deel maar in een stuk voor, nr. 92; ik zou het hebben opgelost, als ik gekund had. Maar de sleutel erop heb ik niet kunnen vinden, en de brief bood te weinig vergelijkingsmateriaal om daaruit de oplossing te halen.'"}
+  ]
+}

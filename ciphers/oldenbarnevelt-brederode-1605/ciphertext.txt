@@ -1,0 +1,74 @@
+Source: Bescheiden betreffende het beleid van Johan van Oldenbarnevelt, ed. A.J. Veenendaal, deel II
+(1602-1613), GS 108 ('s-Gravenhage, Martinus Nijhoff, RGP Grote Serie), no. 92, pp. 110-111. Digital
+edition: resources.huygens.knaw.nl/retroboeken/oldenbarnevelt (retroapp service_oldenbarnevelt, source=2,
+page_index=124-125). OCR text below, checked by eye against the page images in images/p110.jpg and
+images/p111.jpg on 25 Sept 2026 (image over transcription, CLAUDE.md rule 2) -- matches exactly, including
+every numeral group. As printed, never repaired: OCR line-break hyphens and spaced-out letters (e.g. "lek"
+for "Ick", "t o t" for "tot") are kept as the edition's own typesetting reproduces the manuscript, not
+corrected here.
+
+The editor's own heading brackets the sender's name, meaning it is supplied by the editor, not read from an
+explicit signature -- the letter itself ends "UE. onderdanigen ende getrouwen dienaer" with no name before
+the archival citation.
+
+=== p.110 ===
+
+92. [P. VAN BREDERODE AAN OLDENBARNEVELT], 21 februari 1605.
+
+Edele, erntfesten, hoochgeleerden, seer wijse ende voorsinnige heere,
+lek hebbe U E. voorghisteren particulierelijck verwitticht, wat alhier tot dien tijt verloopen was twelcken
+'t landt ende die gemeene saecken mochte betreffen. Zeeder hebb' ick van den 671 van den 611 ende 612
+vernoomen, dat die saecke daer ick U E. hiervooren van geschreeven hebbe, niet alleen sooveel die persoonen
+aengaet beslooten is, maer oock alle anderen circonstantiën derselver saecke; waerover den voornoombde
+gesommeert hebbende, mij te verclaren tzelven dat mij oock onderscheydelijcke mael in eum casum beloeft is
+geweest, hebb' ick gheen ander antwoort kennen becommen als dat hij neffens 578 337 241 97 409 420 108 289
+bevel heeft om met 741 daer van te handelen ende in geval van accord, datter oock noch 146 110 252 433 van de
+zijde van 611 ende 612 dese somer sal gefourneert werden, sonder dat men verclaren will wanneer ofte hoeveel,
+wat remonstrancie ofte instantie dat ick daerop gedaen hebbe ter contrarie. Plessen is oock van deselve
+meeninck, alsmede 636, maer twijfelen off daer reeckeninge op te maecken sij; in alle gevallen is dese
+dilatie zeer schadelijck om veel respecten, maer namentlijck om die 241 200 50 160 440 210 300 217 te
+beginnen, hoewel dat Plessen meent dat men deselven deshalven niet en derft vercleyneren, ten anderen dat
+dusdanige achterhouding d'anderen, dewelcke op de verseeckeringe dat 611 mede tsijn doen sal teruggen soude
+mogen treeden, soo sij sulx verstaen, gelijckerwijs die humeuren seer wonderlijck sijn. Het is alles seer
+ernstlijck geremonstreert, men heeft die 671, oock mede 613, seer hooch gerecommendeert, dat sij sulx in
+acht wilde neemen ende in haere wederomcompste helpen vorderen, want hem niet weyniger als 't landt daeran
+gelegen is; twelcken sij belooft hebben respective te doen, ende sijn alsoo derwerts aen in groote
+naersticheyt voor twee daghen vertrocken.
+617 is op ghisterenavont alhier angelandt; hebbe met hem gecommuniceert; sijn reys is vruchtbaer. 624 heeft
+sich wel om veel gewichtige oorsaecken willen
+
+=== p.111 ===
+
+excuseeren, maer is eyntelijck geïnduceert geworden dat hij XLII 80 457 505 416 425 103 294 439 150 462 250
+90 belooft heeft, doch op verseeckering dat 611 mede doen sal; ende hoewel die quota wel wat meer bedraecht,
+soo heeft men aldaer verclaert, dat men niet meer voor dese mael en mach doen, om seer gewichtige oorsaecke.
+628 hadde te vooren simpliciter belooft sijn quota, als ick U E. hier voormaels verwitticht hebbe, maer in
+'t wederom reysen van 617 heeft hem een schriftelijck antwoordt gegeven, waerin men die belofte op 30.000
+reduceert ende op die conditie dat 611 tsijn oock doen sal; d'oorsaeck van dese vermindering is, dat 628
+ende 630 noch niet eens sijn, maer soo sulx geschiet, verhoopt men 't verder oock well bij 630 te
+vercrijgen; tgunt 616 ende 617 daertoe doen sullen, bedraecht sooveel als dat 628 doet; 636 ende 49 314 30
+467 387 170 sullen oock 12 off 13.000 doen; men verhoept dat 656 oock wat tewegen brengen sal ende men sal
+noch voor de misse bij 657 ende 631, die allebeyde machtich sijn, aenhouwen, alsoock bij 623, 703 ende 704,
+alwaer men oock verhoopt wat te verwerven. Hierentuschen maeckt 617 staet op tselve, dat men nu voor
+verseeckert houdt.
+Van 577 102 481 529 433 122 315 460 361 130 410 108 330 ende 144 133 322 410 137 169 218 290 140 322 468
+492 340 272 507 ende is vermeent metten eersten sich tot sulx te begeven om puyck te becommen.
+Schouwenberch is alhier voor weynich dagen aengelanckt, heeft bij 605 geobtineert, dat hij 119 415 230 139
+200 344 316 99 127 411 461 uyt sijn voornempste 339 314 105 129 418 438 40 466 136 321 lichten mach ende
+iaerlix deselve uyt sulcken vervollen. U E. houdt voor verseeckert, dat alhier met eene sonderlinge sorge
+tot het gemeene besten gearbeyt werdt ende dattet oversulx noodich sij dese sonderlijcke genegentheyt met
+alle meugelicke beneficentie t'onderhouden.
+Men heeft alhier advijs dat 588 aen 628 geschreeven heeft, hoe dat hij verstaen heeft 't voorneemen van 617
+ende looft tzelve, begeert dat men 't helpt; verclaert dat hem een welgevallen daeran geschiet, begeert doch
+dat men hem particulierelijck adviseert wat daervan te verwachten staet. Dit sal U E. alleen dienen tot een
+voor-advijs. Verhoope denselven met het naetste breeder ende met meerder particulariteyten ende
+verseeckerheyt te schrijven. Ick verhoope dat Godt dit beginsel zegenen ende mettertijt tot een grooter
+ende vaster gront (die oock van nooden is, soo men die Roomsche ende Spaensche lighe teruggen wil drijven)
+om sijnes heyligen naems willen, tot schanden sijner vianden brenghen sal, twelcke Hij ons door sijne
+genaden verleenen wil ende U E. met sijne gansche edele familie sijnen vaderlijcken zegen in lanckdurich
+ende voorspoedich leven.
+Uyt Heydelberg, desen 21en february 1605.
+                                                                    U E.
+                                                onderdanigen ende getrouwen dienaer
+
+A.R.A., Holland 2613, e. Duplicata.
