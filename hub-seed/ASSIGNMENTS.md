@@ -559,3 +559,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T20:40Z	session_01Fe2ED9BVfMXVgB728sJ9Kr	LEARN done $0.10 X, archived	stopped on injection suspicion; respawned as LEARN-2
 2026-09-25T20:40Z	session_015aWAEGAyRXSR3wi3znjRd8	LEARN-2 (Sonnet, cap 5)	cross-account read, window since 17:18; brief learn-cross-account.md
 2026-09-25T20:40Z	session_01M9XHYBXkupfXbhK1kVhZLW	retrospective l (Sonnet, cap 10)	13 rows since retro k, USD 89; NEAR review; breadth first-test format; STATUS.md section loss 9a1e34b; LEARN injection stop
+2026-09-25T20:44Z	session_01Qcv68Pn46JNXkktRXTv6DL	GOLD-D1 done $6.17 D-, archived by LANE GOLD2	branch (b): base-level K128 control 0.859 clean, 0.314 at 10 pct noise; K160 0.440 clean
