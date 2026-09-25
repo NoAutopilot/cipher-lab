@@ -616,3 +616,7 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T23:10Z	session_016mix2braGhxmwG75H3Sg5p	R8-DSN2 (Fable, cap 10)	Salviati non-vowel marks + run-edge word boundary (syllabary --param); brief 2026-09-25-lane-r8-dsn2-salviati-marks.md
 2026-09-25T23:10Z	session_018jVRWWFAwhnL8teJke1vX7	RETRO-APPLY-L done $2.32 D, archived	proposals 1,3,4 applied; 2 and LEARN items already applied by the other account
 2026-09-25T23:10Z	session_01Ejqu6thJi7yhQfwsvet3ms	PR-LAND (Sonnet, cap 3)	land local-runner PRs 13-15 (L10, L12, L3 reports), update LOCAL-QUEUE rows, close PRs
+2026-09-25T23:21Z	session_01XmwGTxPa6AU4yqYGmh9zUf	bUNT4 done $3.49 D-, archived	Herzog 1929 p.28 + 11 witnesses; leaf confirmed
+2026-09-25T23:21Z	session_015FBjwkU6pMXuMQM2WViqvs	bBLZ3 (Sonnet, cap 3)	blitz test 3: homophonic K=48 case-sensitive + German masc	LANE B4 brief (parent yes 23:10)
+2026-09-25T23:21Z	session_019i3c33EszuAXT9UXQ8KdBd	bSUF3 (Sonnet, cap 3)	sufi test 3: read as Arabic script	LANE B4 brief (parent yes 23:10)
+2026-09-25T23:21Z	session_019XZDskAaPy3rL6qEKARyfJ	bUNT5 (Sonnet, cap 3)	untersberg collation vs Herzog witnesses	LANE B4 brief (parent yes 23:10)
