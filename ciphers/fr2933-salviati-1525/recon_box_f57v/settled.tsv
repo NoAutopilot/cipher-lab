@@ -1,0 +1,79 @@
+line	pos	code	marks	source	reason
+1	1	]	o|dot	BC	C agrees with B (]) against A (y): loop above + open-box-left shape matches ']' atlas; A's 'y' would need forked-hook strokes not present
+1	3	_		BC	C agrees with B (_) against A (eps): cursive E-t ligature opening plain 'et', not eps (atlas eps is a tighter pinched curl)
+1	4	_		BC	C agrees with B (_) against A (+): continues the same plain 'et' ligature as pos3, joined cross-stroke is a plain t not an isolated + sign
+1	5	_		BC	C agrees with B (_) against A (p): cursive 'Pr' opening 'Prometto', clear looped P with r flourish, plain
+1	7	_		BC	C agrees with B (_) against A (#): plain cursive 'etto' (double-o loop with crossbar), completing 'Prometto'
+1	13	+		AC	C agrees with A (+) against B (#): single crossing stroke (vertical x horizontal) with a small flourish tick above; matches '+' atlas single-cross rather than '#'s grid of multiple crossing strokes
+1	15	w	1|5	BC	C agrees with B (w) against A (_): numeral-like '1''5' flourish over a forked hook/tail shape matches 'w' atlas; sits between two agreed cipher signs (Lx@14, y@16)
+1	19	a		BC	C agrees with B (a) against A (_): clean cursive 'a', atlas 'a' match; flanked by cipher signs on both sides (g@18, S read at 20) so kept as the cipher-code 'a' (visually = plain a), not a plain letter
+1	20	S		AC	C agrees with A (S) against B (_): clean single S-squiggle stroke matches 'S' atlas; sits between two cipher 'a' calls (19,21), kept as sign against B's plain read
+1	21	a	1	BC	C agrees with B (a) against A (_): same 'a' shape and context as pos19, numeral-1 flourish mark matches both passes' shared mark call
+2	3	Z		BC	C agrees with B (Z) against A (_): two-tier construction (small hook above, curled Z/2-like body below) matches 'Z' atlas exemplars with an 'n+'-style mark over a curled main body
+2	8	lam	~	BC	C agrees with B (lam) against A (_): single diagonal stroke matches 'lam' atlas (plain diagonal/upright stroke) better than a plain letter here
+2	11	#	o	BC	C agrees with B (#) against A (_): busy crossing strokes match '#' atlas grid shape
+2	13	phi		BC	C agrees with B (phi) against A (_): circle-loop with a diagonal stroke crossing the top matches 'phi' atlas (circle+slash) closely
+2	23	_		BC	C agrees with B (_) against A (w): flat single wavy connecting stroke, no forked vertical structure of the 'w' atlas; reads as a plain ligature/flourish
+3	2	dl		BC	C agrees with B (dl) against A (_): loop-with-descender-tail shape matches 'dl' atlas
+3	4	e		BC	C agrees with B (e) against A (ch): clean 'E'-with-crossbar shape matches 'e' atlas (several e exemplars show hash-like crossbars) better than 'ch's single hook-loop shape
+3	26	w		AC	C agrees with A (w) against B (_): clear forked-hook double-stroke shape matches 'w' atlas
+4	2	Z		BC	C agrees with B (Z) against A (_): prominent curled Z/2-shaped main stroke with a small mark above matches 'Z' atlas
+4	4	eps	5	BC	C agrees with B (eps) against A (_): two small stacked curl marks, genuinely weak/ambiguous read; kept to B's eps+5 as the closer guess
+4	8	w	1	BC	C agrees with B (w) against A (_): clean double-loop 'w' shape, close match to atlas 'w' cursive double-hook
+4	11	L		BC	C agrees with B (L) against A (_): simple angular hook stroke matches 'L' atlas (numeral marks below are separate)
+5	4	e	#	BC	C agrees with B (e) against A (_): hash mark above a rounded loop matches 'e' atlas cross+circle exemplars
+5	9	Z		BC	C agrees with B (Z) against A (_): n+-style mark above a curled Z-shaped body, same pattern as pos2/3 and 4/2
+5	10	S7	1	BC	C agrees with B (S7) against A (_): clean numeral-7-shaped stroke, close match to atlas 'S7'
+5	22	e	dot	BC	C agrees with B (e) against A (Z): rounded 'c'-loop with a dot above matches 'e' atlas better than Z's jagged n+/2 shape
+6	25	g	~	BC	C agrees with B (g) against A (_): clean loop-plus-descending-tail ('9'-like) shape, close match to 'g' atlas
+7	18	_		BC	C agrees with B (_) against A (S7): smooth double-hump cursive stroke (like plain m/n), not S7's angular numeral-7 shape
+7	22	L		BC	C agrees with B (L) against A (y): simple single diagonal stroke with a small hook at the base matches 'L' atlas better than y's forked complexity
+8	1	_		BC	C agrees with B (_) against A (]): stray flat stroke crossed by a diagonal, consistent with archival-stamp bleed-through ink in this region (line8 pos3-5 already independently read as stamp text 'octobre' per L5's notes), not a clean ']' glyph
+9	7	_		AC	C agrees with A (_) against B (bh): large sweeping curved loops match the round archival stamp border ink bleeding into this line (L5's notes: stamp overlaps lines 8-9), not the compact 'bh' hook shape
+9	8	_	1	AC	C agrees with A (_) against B (y): crossing diagonal strokes in the same stamp/bleed region as pos7 and the leaf's noted pos4/8/16 stamp interference; kept plain per L5's independent stamp identification
+11	14	o.	dot	3-way->C	A=_ B=H C=o., all differ; C's independent 'circle with centered dot' is an exact match to the 'o.' atlas plate; neither A's plain read nor B's 'H' (open loop/hook shapes) matches this filled-circle-plus-dot shape
+12	1	phi		BC	C agrees with B (phi) against A (bh): clean circle crossed by a long diagonal stroke, exact 'phi' atlas match
+12	16	e		BC	C agrees with B (e) against A (_): cursive loop matches 'e' atlas; marks below (dot, numeral-3-like stroke) read tentatively, consistent with A's own flagged mark uncertainty
+13	20	y		AC	C agrees with A (y) against B (_): loop-plus-tail shape with a '3'-like flourish on top matches 'y' atlas numeral-marked hook exemplars
+14	16	e	dot|+	BC	C agrees with B (e) against A (_): clean cursive loop matches 'e' atlas; dot and + marks below both passes already agree on
+15	7	e		BC	C agrees with B (e) against A (eps): rounded loop with a smooth curling tail matches 'e' atlas's rounder style better than eps's tighter pinched curl (this leaf's known eps/e confusable pair)
+15	8	#		BC	C agrees with B (#) against A (_): clear crossing hash strokes at top, genuine '#' glyph
+16	1	_		BC	C agrees with B (_) against A (eps): loop+cross ligature, same 'Et'-opening shape as line1 pos3/4, plain
+16	2	_		BC	C agrees with B (_) against A (+): continues the same plain ligature as pos1
+16	3	_		BC	C agrees with B (_) against A (S7): clear cursive 'no' fragment, plain
+16	5	_		BC	C agrees with B (_) against A (lam): two plain diagonal connecting strokes, no hook/loop features of a sign; weak read but consistent with the plain run
+16	8	_		BC	C agrees with B (_) against A (y): clear cursive word fragment ('sog'), plain
+16	11	_		BC	C agrees with B (_) against A (N): joined cursive strokes (plain m/n-like), part of the plain run
+16	12	_		BC	C agrees with B (_) against A (ch): scripted loop resembling cursive 'ch' but part of an ordinary plain word here, not an isolated sign
+16	13	_		BC	C agrees with B (_) against A (N): simple plain cursive stroke, part of the plain run
+16	14	_		BC	C agrees with B (_) against A (S): small dotted 's.' abbreviation-like shape, plain
+16	17	_		BC	C agrees with B (_) against A (g): plain cursive 'cy' fragment
+16	18	_		BC	C agrees with B (_) against A (p): clear cursive 'Pa', opens the word 'Pagare' named in L5's notes
+16	27	_		BC	C agrees with B (_) against A (p): plain cursive fragment resuming after the pos23-25 cipher insertion
+16	28	_		BC	C agrees with B (_) against A (w): plain cursive fragment, same resumed-plain-text stretch as pos27
+17	10	_		BC	C agrees with B (_) against A (e): clear cursive 'qui', part of 'Contentato qui'
+17	13	_		BC	C agrees with B (_) against A (Lx): clear cursive 'Ma'
+17	14	_		BC	C agrees with B (_) against A (N): joined cursive stroke, part of 'faccendo'
+17	19	_		BC	C agrees with B (_) against A (y): plain cursive fragment, part of 'gra[n]'
+17	20	_		BC	C agrees with B (_) against A (g): plain cursive fragment, continues same word
+17	21	_		BC	C agrees with B (_) against A (a): plain cursive fragment, continues same word
+17	22	_		BC	C agrees with B (_) against A (lam): single short plain connecting stroke
+17	24	_		BC	C agrees with B (_) against A (bh): clear cursive 'lilig', part of 'diligentia'
+17	25	_		BC	C agrees with B (_) against A (g): plain cursive fragment continuing 'diligentia'
+17	26	_		BC	C agrees with B (_) against A (tee): plain cursive fragment continuing 'diligentia'
+17	27	_		BC	C agrees with B (_) against A (lam): plain cursive fragment, tail of 'diligentia'
+17	30	_		BC	C agrees with B (_) against A (v): simple 'v' stroke, part of the 'V.S.' abbreviation closing the sentence
+17	31	_		BC	C agrees with B (_) against A (S): small dotted 's' shape, part of 'V.S.'
+17	32	_		BC	C agrees with B (_) against A (y): 's' with tail, continues 'V.S.'
+18	2	_		BC	C agrees with B (_) against A (w): flat wavy connecting stroke, same shape as line2 pos23's plain ligature
+18	5	_		BC	C agrees with B (_) against A (N): bold N-like flourish but within the plain 'el Beveraggio' stretch named in L5's notes, kept plain
+18	6	_		BC	C agrees with B (_) against A (eps): loop shape within the same plain stretch, likely a cursive letter of 'Beveraggio'
+18	8	_		BC	C agrees with B (_) against A (bh): clear cursive capital 'B' opening 'Beveraggio'
+18	11	_		BC	C agrees with B (_) against A (p): clear cursive 'rag', matches '...veraggio'
+18	18	a		BC	C agrees with B (a) against A (_): clean cursive 'a' shape; sits after the plain 'el Beveraggio' stretch ends (L5's notes: cipher resumes after pos13), kept as the cipher-code 'a'
+18	22	a	1	BC	C agrees with B (a) against A (lam): same 'a' shape and context as pos18, within the resumed-cipher stretch; numeral-1 mark shared by both passes
+20	1	_		BC	C agrees with B (_) against A (L): straight vertical-plus-foot stroke identical to the 'L' atlas shape, but reads as the capital L opening 'La' given the whole-line closing-formula context
+20	3	_		BC	C agrees with B (_) against A (eps): small looped flourish, part of the abbreviation/diacritic on 'p[rese]nte'
+20	10	_		BC	C agrees with B (_) against A (tee): plain letter fragment, part of 'stata'
+20	14	_		BC	C agrees with B (_) against A (m): arc-plus-stroke shape, plain letter fragment within 'suggellata'
+20	17	_		BC	C agrees with B (_) against A (p): clear cursive 'Vo', part of 'volte'
