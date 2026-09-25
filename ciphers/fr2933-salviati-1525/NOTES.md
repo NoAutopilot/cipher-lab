@@ -1,5 +1,11 @@
 open
 
+Desjardins/Canestrini, *Négociations diplomatiques de la France avec la Toscane*, tomes I-III (archive.org
+gri_33125017127347, gri_33125010469852, gri_33125017127461) read in full and grepped for "Salviati", "octobre
+1525", "octobris", "chiffre" by this worker; tome II's own printed Salviati correspondence (a real section,
+"Correspondance du cardinal Salviati, légat en Lombardie") runs January-April 1525 only and the series then
+jumps straight to October 1526, so no 16 October 1525 Salviati letter or its decipherment is in this edition.
+
 # Cardinal Giovanni Salviati cipher letter, 16 Oct 1525 -- BnF Français 2933, no. 11
 
 QUEUE row: M35 (`sources/solver-diffs/2026-09-24-lane-g3-gallica6.tsv`, "Sixth pass (LANE G3), 24 September 2026").
@@ -743,3 +749,90 @@ and f54v's 349 (1,089 total across three leaves), and four more leaves (f.55v-f.
 tokens each, the pooled ciphertext is close to the ~2,800-token threshold LANE R4 P's control curve set for
 testing the code+mark (cm) homophonic model -- worth re-running `codemark_curve.py target cm` once f.56v or
 f.57r lands, without waiting for all six.
+
+## Check-solved (LANE R6 S0, 25 Sept 2026)
+
+Worker LANE R6 S0 (Sonnet, cap $4, session_01Jdm1SGVot6mYUt5pHttiCt), 15:44-15:5x UTC. Closes the one real gap
+the 24 Sept check-solved sweep flagged (Desjardins/Canestrini Toscane never full-text searched) so this target
+clears `tools/intake_gate_check.py`. Disk fetches only (archive.org, web search); no images, no key trials, no
+solving.
+
+**1. Desjardins/Canestrini, *Négociations diplomatiques de la France avec la Toscane* (1859-1886).**
+archive.org identifiers found via `advancedsearch.php` (8 hits: gri_ scans tomes I-VI 1886 + two bub_gb_ 1859
+scans of tome I): fetched the three tomes most likely to cover 1525 (I, II, III) as full `_djvu.txt`.
+- Tome I (`gri_33125017127347`, 1.72 MB text): 15 "salviat" hits, all 15th-century Salviati family members
+  (Francesco, Giuliano, Lottus -- 1416-1499); no "octobre 1525"/"octobris 1525" match. Its own preface (line
+  446) names "la correspondance du cardinal Salviati" as a source used across "ces deux premiers volumes"
+  (tomes I-II) for the period up to the Peace of Cambrai (1529) -- confirming tomes I-II are the right ones
+  to search, and that no further tome need be checked for this correspondent's letters of this era.
+- Tome II (`gri_33125010469852`, 2.49 MB text): 60 "salviati" hits. A real, named section, "CORRESPONDANCE DU
+  CARDINAL SALVIATI, LÉGAT EN LOMBARDIE" (Giovanni Salviati, legate to the imperial camp in Lombardy after
+  Pavia), runs from "Rome, 4 janvier 1525" to "Rome, 26-31 mars, 1 avril 1525" -- every dateline in the
+  section checked by regex, none later than early April 1525. Immediately after, the volume's next dated
+  letters (a different correspondence, "Acciajuoli à Ghiberti et à Jacopo Salviati", dispatches to the
+  cardinal's father) jump straight to "Beaugency, 5 octobre 1526": **no dateline anywhere in the volume falls
+  between 1 April 1525 and 5 October 1526.** No "octobre 1525"/"octobris 1525"/"XVI octobris" match anywhere
+  in the file. Control word: "chiffre" appears 3 times (including an unrelated footnote "Chiffre non
+  déchiffré" on a different, uncredited cipher passage elsewhere in the volume, not Salviati's), confirming
+  the OCR reads French text correctly.
+- Tome III (`gri_33125017127461`, 2.05 MB text, needed one retry after two transient 500/502 errors --
+  server-side, not a challenge or block): 41 "salviati" hits, all a different, later Salviati (Antonio Maria
+  Salviati, nuncio to France under Pius V, 1570s-72 per its own footnote at line 32441); every dated letter in
+  this volume falls in the 1560s-1590s. No 1525 material at all; not the right volume.
+- **Conclusion: the Desjardins/Canestrini series prints Cardinal Giovanni Salviati's Lombardy-legation letters
+  of Jan-April 1525 only. It has no letter, and no decipherment, for his 16 October 1525 Spain-legation letter
+  -- that whole period (the gap the target's own letter falls in) is simply absent from this edition.**
+
+**2. Printed Salviati Spain-legation/nunciature letters and correspondents, 1525-26.**
+- **Castiglione's *Lettere*** (Serassi ed., Rome/Padua 1769-71, 2 vols; Castiglione was papal nuncio in Spain
+  at the same court and period as Salviati's legation): fetched both volumes' full text
+  (`bub_gb_ZJMxff7r4LUC` vol.1 "Famigliari + tre primi libri di Negozj", 950 KB; `bub_gb_laRnTtJmsDAC` vol.2
+  "tre ultimi libri di Negozi", 1.22 MB). 8 "salviati" hits in vol.1, 17 in vol.2, all discussing Salviati as a
+  third party (his legation, his father Jacopo, his reception at court) -- no letter *by* Salviati and no
+  cipher passage attributed to him. Every 1525 dateline in both volumes checked: vol.1 has exactly one, "In
+  Madrid alli 14. di Marzo. MDXXV."; vol.2 has exactly three, all December ("Toledo ... IX. di Dicembre
+  MDXXV." twice, "... XVIII. di Decembre MDXXV." once). **No dateline between 14 March and 9 December 1525 is
+  printed in Castiglione's letters at all -- October 1525 is a gap in this edition too**, not only in
+  Desjardins. Control word: "cifra"/"chiffre"-family words appear 11 times in vol.2, confirming OCR reads.
+- **Balan, *Monumenta reformationis lutheranae ex tabulariis secretioribus S. Sedis, 1521-1525*** (1884, 2
+  vols spanning exactly the target's year): fetched both volumes' full text (`monumentareform01vatigoog` 1.55
+  MB, `monumentareform02vatigoog` 1.73 MB). **0 "salviati" hits in either volume** (this edition's documents
+  are German-Reformation/Curia correspondence, not the Spain legation). Control word "cifr" appears once in
+  each volume, confirming OCR reads.
+- **Lettere di principi** (Ruscelli's anthology, 3 vols, 1564): fetched vol.2 only (`letterediprincip02char`,
+  1.39 MB) as the volume most likely by date-range to carry 1520s political correspondence. **0 "salviati"
+  hits**; "cifra"/"chiffre"-family words appear 9 times, confirming OCR reads. Vols 1 and 3 not fetched this
+  pass (out of cap; a real gap, flagged as a follow-up, not scored as a negative for this source).
+- Web search (`"cardinal Salviati" 1525 legate Spagna cifra lettera "16 ottobre" OR "XVI octobris"`; `Balan
+  "Monumenta reformationis" Salviati 1525 Spagna nunzio cifra`): surfaced only general Salviati biography
+  (Wikipedia, Treccani, Cathopedia, cardinals.fiu.edu -- all confirm the 1525-26 Spain legation dates already
+  on file, none names this letter or a decipherment) and an unrelated Wikisource transcription of a *Charles V
+  to* Salviati letter (not this direction, not this date, not enciphered).
+
+**3. Model-solve announcement search** (check-solved.md's seventh family, added 24 Sept 2026).
+`"Salviati" cipher fr.2933 solves Claude GPT decipherment 2026`; `Vals AI blog cardinal Salviati cipher letter
+solved`. Both searches return only the one known 2026 model-solve announcement on record (Vals AI / Boris
+Cherny, 31 Aug-14 Sept 2026, Claude Fable 5.1 on Sir Thomas Urquhart's 1653 *Cyphral Distich* -- schneier.com,
+vals.ai, itdoeswhatnow.com, explainx.ai): unrelated cipher, unrelated century, unrelated correspondent. No
+model-solve announcement names Salviati, fr.2933, or BnF Français 2933 in any result.
+
+**Verdict: stays open.** Six standard/likely editions read in full this pass (Desjardins/Canestrini tomes I-
+III, Castiglione vols 1-2, Balan vols 1-2) plus one anthology volume (Lettere di principi vol.2) and the model-
+solve family: no letter, key or decipherment for BnF fr.2933 no.11 located in any of them. Combined with the
+24 Sept sweep (web, cryptiana/cipherbrain, DECODE, Bourdeau, Aymeloglu -- all negative) and the 24 Sept key
+search (LANE R5 B: Meister 1906, Carte Strozziane, Pieper 1894, OpenAlex, Semantic Scholar -- no key), the
+target has now had a genuinely wide search with no hit; not found-solved, not blocked (every edition named
+here was opened and read). Where not found: Desjardins/Canestrini I-III, Castiglione (Serassi) I-II, Balan
+I-II, Lettere di principi II, web search, Vals AI/model-solve announcements. Not chased this pass, out of cap:
+Lettere di principi vols 1 and 3; the AAV's own Nunziature di Spagna archival inventory (not reachable by
+search, per the 24 Sept key-search pass); Vatican Secret Archive Segreteria di Stato Spagna fondo directly.
+
+Requests: archive.org 9 `_djvu.txt` fetches (Desjardins I/II/III, Castiglione I/II, Balan I/II, Lettere di
+principi II) + 1 `advancedsearch.php` query, each ≥1.5s apart, one item (Desjardins III) needed one retry
+after two transient 500/502 server errors (not a challenge/block, no further retries taken). WebSearch 4
+queries. No Gallica, no de-crypt.org, no credentials, no subagents.
+
+```
+$ python3 tools/intake_gate_check.py fr2933-salviati-1525
+fr2933-salviati-1525: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+```
