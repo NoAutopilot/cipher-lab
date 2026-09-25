@@ -1,4 +1,4 @@
-open
+partial
 NA 4.VEL's own finding-aid text read directly (the item page's embedded catalogue JSON -- `unittitle`,
 `scopecontent`, `bioghist` -- for every item in the invnr range 2030A5-2090C, i.e. the whole Suriname
 fortification-survey block of this toegang) plus the Atlas of Mutual Heritage pages for VEL2039 (page
@@ -170,3 +170,84 @@ decipherment published anywhere found) and all are copy-free (digitised, no logi
 2007A (twin + on-sheet gloss) and 2061 (on-sheet gloss) are the two strongest recovery-lane candidates in
 this cluster and belong on the board ahead of 2039/2046/2077. A transcription pass on 2061 should first
 check whether the gloss continues past the header block this pass looked at.
+
+## Reading (VX-RD03, 25 Sept 2026)
+
+**Intake gate checked:** VX-CS04's check-solved verdict above names the standard sources read (NA's own
+finding aid, Atlas of Mutual Heritage, den Heijer via Atlas of Mutual Heritage's citation) and the pages
+read -- passes the 25 Sept 2026 intake gate.
+
+**What this job set out to do:** (1) build a key from 2007A's on-sheet gloss + 2007B's plain twin + 2061's
+on-sheet gloss; (2) decode 2039/2046/2077's ciphered legend/cartouche text with that key. Part (1) produced
+a real, if partial, result; part (2) was not reached -- see "What was not done" below.
+
+### Key source and method
+
+Fetched 2007B (the plain-Dutch twin of 2007A, referenced in the check-solved pass but never downloaded --
+`images/2007b_full.jpg` + title/Nota/Remarque crops) and native-resolution IIIF crops of 2007A's own
+"Nota A-F" and "Remarque" paragraphs (`images/2007a_nota_af_block.jpg`, `images/2007a_remarque_af_block.jpg`
+-- both carry their own interlinear gloss too, a bonus find beyond this job's scope, not transcribed).
+
+Three independent transcription passes then read the short, clearly-glossed label lines: this worker's own
+pixel-by-pixel reading of 2007A's title block ("Generaal Plan van Defensie...") and "Remarque" heading; a
+Sonnet subagent's independent blind reading of the same 2007A crops (title/nota/aanmerkinge); a second
+Sonnet subagent's independent blind reading of 2061's title + battery-header block. Passes agreed on the
+glyph sequence for every word checked except one position in "Plan" and the tail of "Defensie" (both
+flagged, see `conflicts.tsv`).
+
+Reconciling the three passes against the known gloss text (`plain_votes.tsv`) produced **13 confirmed cipher
+signs** (`key.tsv`, all grade **C**: known plaintext, read from the sheets' own interlinear glosses and
+2007B's twin -- this is a **period** key in rule-10 terms, and **ours** in the 25 Sept 2026 key-source sense:
+recovered by this worker's own alignment, not copied from a published source). The cipher is a **homophonic
+monoalphabetic substitution** over Dutch: N, A and E each already show 2-4 distinct signs; the sign set mixes
+Latin-letter-shaped glyphs, two digits used as letters (5=v, 7=e), and at least one invented mark not yet
+tied to a letter. Province/bastion place-names are left in plain Dutch on every sheet checked; only
+descriptive clauses are enciphered. Full atlas and every occurrence: `glyphs.md`. Every rejected or
+unresolved candidate sign, with the specific disagreement: `conflicts.tsv`.
+
+**Control (rule 3):** `tools/decode_key.py ciphers/na-suriname-map-1781 --check` regenerates
+`reading.txt`/`reading_tokens.tsv` from `ciphertext.tsv` + `key.tsv` + `plain_votes.tsv` and exits 0 (up to
+date). Output: **38 tokens: C 25, M 1, U 12.** The 25 grade-C tokens agree with the known gloss at every
+position (100%) -- this is the key re-reading its own source material, i.e. a self-consistency check, not
+an independent test (the key was built from exactly this data, so agreement here is expected and does not
+by itself demonstrate the key transfers to new text). Grade counts: **C 25, M 1 (a two-way reader
+disagreement on one "Plan" position, see conflicts.tsv), U 12 (glyphs not yet keyed).** No H, no S, no I
+tokens. This target has no matching judge spec run yet (see below), so no judge output is pasted here for
+the key-source control -- `specs/na-suriname-map-1781.json` documents why.
+
+### What was not done (stopped honestly short of the job brief's step 2/3/4)
+
+Thirteen signs is real progress but well short of the ~20+ a Dutch legend sentence needs to read as more
+than scattered letters. **2039, 2046 and 2077 were not transcribed against this key this pass.** A by-eye
+spot check of 2039's title cartouche (`images/2039_cartouche.jpg`, "Spcxl 5Ah sf3r F,") found roughly a
+quarter to a third of its glyphs matched a confirmed sign -- too sparse to report as a reading rather than
+noise, so no ciphertext.tsv/decode was built for any target sheet, and the judge was not run against a
+target (rule 7's judge step applies to a candidate reading; producing one honestly needs the next step
+below first). `specs/na-suriname-map-1781.json` is written and the judge block is configured (`language: nl,
+min_word_cover: 0.4`) for whoever completes this.
+
+**Next step for a follow-on worker:** transcribe the already-fetched, already-glossed
+`images/2007a_nota_af_block.jpg` and `images/2007a_remarque_af_block.jpg` (the full "Nota A-F" and
+"Remarque" paragraphs on 2007A, both carrying their own interlinear gloss, both untouched this pass) --
+this is far more crib material than the title block alone and would likely add 10+ more confirmed signs
+before 2039/2046/2077 are worth attempting. Also worth resolving first: the `[v-tall]`/`[v-plain]` D-sign
+question and the `[delta]`/`[lambda]` question flagged in `conflicts.tsv`.
+
+### Fresh-instance re-derivation (rule 7)
+
+A fourth subagent, given only the glyph-code segmentation of `ciphertext.tsv` (sign codes and word/position,
+no plaintext values) and the known gloss word for each cipher word, plus the crop images -- NOT `key.tsv`,
+NOT `glyphs.md`, NOT this worker's reasoning -- independently re-derived a letter value for each sign.
+[Result and agreement percentage to be filled in once the subagent returns; if this worker's session ends
+before that, the next worker should read the pending re-derivation and complete this paragraph before the
+target moves toward stage 9.]
+
+### Hosts and requests (this pass)
+
+`service.archief.nl`: 6 requests (2007B full-size default JPEG; 2007A's IIIF info.json; two native-resolution
+IIIF region crops for the Nota-A-F and Remarque blocks, one superseded by a corrected region), all >=1.5s
+apart, descriptive-then-browser User-Agent (matching the playbook's note that this host wants a browser UA),
+all HTTP 200, no 429/403/challenge. No other host touched this pass (no new NA catalogue page fetches, no web
+search, no DECODE). 2 Sonnet subagents used for independent transcription passes (2007A crops; 2061 crops),
+plus a third launched for the fresh-instance re-derivation above (at most 2 concurrent at any time, per the
+job brief).
