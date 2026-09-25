@@ -25,7 +25,8 @@ ROOM.md shrink guard.
 --digest was added from RETRO-2026-09-24d (subject 3): an orchestrator checking in across several live lanes had no
 way to read ROOM.md short of the full, growing file, unlike a worker's own "last 30 lines" rule.
 """
-import os, re, subprocess, sys, time
+import os
+import sys, re, subprocess, sys, time
 
 ROOT = subprocess.run(["git", "rev-parse", "--show-toplevel"], capture_output=True, text=True).stdout.strip()
 ROOM = os.path.join(ROOT, "ROOM.md")
@@ -70,6 +71,13 @@ def start():
         near = [l for l in open("NEAR.md", encoding="utf-8") if l.startswith("| ") and not l.startswith("| Target") and not l.startswith("|---")]
         if near:
             print(f"NEAR.md: {len(near)} near-solve rows -- a target there is never closed-negative (rule 5): " + ", ".join(l.split("|")[1].strip().split(" ")[0] for l in near))
+    # Key probe (25 Sept 2026, UPDATES.md): names only, so a session sees at once which credentials its container
+    # carries and which the repo has not documented yet (a key added on one account was missed by the other).
+    try:
+        import subprocess as _sp
+        print(_sp.run([sys.executable, "tools/key_probe.py", "--quiet"], capture_output=True, text=True, timeout=10).stdout.strip())
+    except Exception as e:  # never block a start on the probe
+        print(f"key probe skipped: {e}")
     except FileNotFoundError:
         pass
     return 0

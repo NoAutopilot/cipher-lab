@@ -641,6 +641,17 @@ search is reachable but functionally unusable, drowned in unfiltered noise).
    `CORE_API_KEY` (set 25 Sept 2026, probe 22:58 UTC: HTTP 200 with `Authorization: Bearer`, path `v3/search/works/` with the trailing slash -- without it the API answers 301 to an HTML redirect; keyless calls get 429) (CORE open-access full text, `Authorization: Bearer`; for verifiers' scholarship searches). Where a key
    is absent, fall back to the keyless route and say so in NOTES.md; a missing key never blocks a job.
 
+   **Key probe, 25 Sept 2026, 22:44 UTC (parent 7d, after the owner reported that keys added on one account for a worker there were
+   missed by the other).** `python3 tools/key_probe.py` lists, by name only, every credential variable this container carries
+   against the list documented here, and `tools/room.py --start` prints its one-line summary at every session start; a name it
+   reports as "set but not in CLAUDE.md" is documented here (what it is for, which tool reads it) before any worker uses it.
+   Present on this account at 22:44: the eleven above plus REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET (24 Sept, tools/reddit fetch
+   briefs), and three the repository had not recorded: AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY (no region variable set) and
+   CLOUDSDK_AUTH_ACCESS_TOKEN (Google Cloud SDK access token; no project variable set). Their purpose is not recorded anywhere in
+   the repository as of 22:44 (ASKS row: the owner names the service and the job they were added for); until then no worker calls
+   AWS or Google Cloud with them. Unset: DDB_API_KEY, APE_API_KEY, CORE_API_KEY, NARA_API_KEY. The two accounts' environments are
+   configured separately: a key added for one account is added on the other too, and each parent runs the probe at start.
+
    **Key probe, 25 Sept 2026.** Presence check (name only, no values printed): `EUROPEANA_API_KEY` set, `DPLA_API_KEY`
    set, `DDB_API_KEY` unset, `APE_API_KEY` unset, `CORE_API_KEY` unset. One test query per set key, key passed only via
    its environment variable: Europeana Search API (`query=cipher&rows=1`) returned HTTP 200, `success: true`,
