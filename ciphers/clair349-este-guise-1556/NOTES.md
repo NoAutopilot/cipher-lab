@@ -195,3 +195,59 @@ this pass (Ribier, both copies; Baguenault de Puchesse) that the 24 Sept sweep h
 public (Tomokiyo, fr.20974 no.15) and the letter remains identified and photographed down to the folio. Per
 rule 10, still not "open" (a lead exists) and not "found-solved" (no plaintext of this letter exists in print
 anywhere found). Proceeding to part 2 of this job brief (image fetch only, no decode).
+
+## Part 2: image fetch, 25 September 2026 (LANE YX worker YX-CS349)
+
+Fetched to `images/` at native Gallica resolution (browser UA, 1.5-3s apart; full request count below). No
+transcription, no decoding — this section only records what the leaves show, for the lane orchestrator to brief
+a solver against.
+
+**The ciphertext letter (Clair 349, canvas f9 = catalogue f.3).** `images/clair349_f9_native.jpg` (full spread)
+and `images/clair349_f9_right_full.jpg` (right page only, full native resolution 3895x6604). The right page
+carries a contemporary date "**4. janvier 1556**" (old-style; = **4 January 1557** new-style) top-left, matching
+Tomokiyo's citation exactly, a BnF ownership stamp, and archival marks "2429"/"3" in the margin. **The
+ciphertext itself: dense arbitrary-symbol and figure groups with no visible word-spacing, arranged in
+continuous prose lines (not columns/blocks); by eye-count from the image, approximately 33 lines fill the
+page** (not a transcription — a future pass should count from the image, not trust this number). The design
+(mixed arbitrary symbols and Arabic figures, no visible separators) matches guise.htm's own general note on
+cipher no.15 ("mainly arbitrary symbols... also use figures") and Tomokiyo's key crop. The facing left page is
+continuous plain French cursive (the reply, or a covering/docket text) — not cipher.
+
+**Leaves either side (checked, per the brief, for continuation): no cipher on either.** `clair349_f8_native.jpg`
+(preceding leaf) is unrelated prior material headed "Henry 2. Grisons" (Swiss/Grey Leagues affairs, plain
+French, marginal dates 1550/1554) — a different document, not part of this correspondence.
+`clair349_f10_native.jpg` (following leaf, folio mark "f.4" visible) continues the same plain-French docket/reply
+text from f9's left page on its own left page; its right page is blank (faint watermark, a small pencil "11"
+only). **The letter's cipher is confined to the single page, canvas f9 right — it does not continue.**
+
+**The key (BnF fr.20974, cipher no.15, Tomokiyo's fr.20974 no.15 = p.57-60, 69-72).** fr.20974's Gallica
+manifest carries no folio/page labels (all canvases "NP", like fr16092/fr5160 per CLAUDE.md's host table) so
+`tools/gallica_folio.py --anchor` could not calibrate from labels alone. This worker instead fetched
+page-number-corner crops of two canvases to fit an offset (canvas 25 -> printed page 47, canvas 29 -> printed
+page 55 — a clean +2-pages-per-canvas fit over that span), then verified by eye that the resulting canvas 30
+(page 57) and canvas 37 (page 69) show the exact tables cropped in Tomokiyo's `guise/BnFfr20974f57.png` and
+`f69.png`. Two irregularities worth flagging for a solver: **canvas 31 also reads page "57"** and its content is
+visually near-identical to canvas 30 — almost certainly a second scan pass of the same leaf rather than a
+distinct page (not a foldout: no extra width visible) — and **canvas 32 reads page "59" with both sides blank**,
+so pages 58-59 (inside the catalogued p.57-60 range) appear to carry no key content.
+- `images/fr20974_p57_key.jpg` (canvas 30): a **substitution alphabet** (each letter with 1-3 symbol/figure
+  homophones — visibly a "Doubles"/nulls design, matching Tomokiyo's caption), and below it the start of a
+  **nomenclator table** (numeric-code-to-word columns) that Tomokiyo's own crop deliberately excludes ("For the
+  nomenclature etc., see the original") — this image shows it. Nomenclator size not counted this pass (would
+  need a transcription); by eye, several dozen entries are visible on this one page alone.
+- `images/fr20974_p69_key.jpg` (canvas 37): a **second, denser 4-column nomenclator table**, with a small paper
+  slip pasted into the middle of the table (a period correction or addition — a good crib to align, since a
+  correction implies an error the corrector could name) and a "Nomenclator" section header.
+
+**Requests this part:** gallica.bnf.fr — 11 successful fetches (fr20974 canvases 25, 29 corner-crop, 29
+full-check, 30, 31, 31 corner-crop, 32, 37; Clair349 canvases 9 full, 9 right-crop, 8, 10) plus 4
+`ws_closed_mid_exchange` tunnel resets recovered on retry (2nd or 3rd attempt each, the documented pattern from
+24 Sept's NOTES — not a Gallica block, confirmed by the immediate-retry success each time), all >=1.5-2s apart,
+well under the 40-request cap this brief set. cryptiana.web.fc2.com 2 (Tomokiyo's own f57/f69 crops, fetched
+only as an eye-check reference for calibrating the Gallica canvases, not committed to the repo).
+
+**State at close, for the lane orchestrator:** target is ready for a solver brief. Two independent blind
+transcription passes of `clair349_f9_right_full.jpg` (~33 lines) plus a careful transcription of the two key
+leaves into `key.tsv` (nomenclator entries especially — undercounted here) are the next steps; the p.58-59 gap
+and the canvas-30/31 duplicate are worth a solver's own eye-check before transcribing, in case this worker's
+page-number reading is wrong on either. Kind stays **recovery** per the 24 Sept verdict.

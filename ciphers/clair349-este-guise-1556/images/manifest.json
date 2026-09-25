@@ -1,7 +1,8 @@
 {
-  "ark": "ark:/12148/btv1b9000668z",
-  "source": "Gallica IIIF, BnF Clairambault 349",
-  "note": "Manuscript foliation 'f.3' (per catalogue and Tomokiyo's guise.htm) corresponds to Gallica canvas f9 (no folio labels in the manifest; offset taken from Tomokiyo's own deep link, confirmed by independent fetch).",
+  "ark_clair349": "ark:/12148/btv1b9000668z",
+  "ark_fr20974": "ark:/12148/btv1b9062131g",
+  "source": "Gallica IIIF, BnF Clairambault 349 (ciphertext) and BnF fr.20974 (key)",
+  "note": "Manuscript foliation 'f.3' (per catalogue and Tomokiyo's guise.htm) corresponds to Gallica canvas f9 in btv1b9000668z (no folio labels in that manifest; offset taken from Tomokiyo's own deep link, confirmed by independent fetch, 24 Sept 2026). fr.20974's manifest also carries no folio/page labels (all 'NP'); this worker (25 Sept 2026) calibrated Gallica canvas -> printed page number by fetching page-number-corner crops of canvases 25 (p.47) and 29 (p.55) -- a clean +2-pages-per-canvas fit -- then confirmed by eye that canvas 30 (p.57) and canvas 37 (p.69) show the two key tables Tomokiyo's guise.htm crops (guise/BnFfr20974f57.png, f69.png) are cropped from. Canvas 31 (also p.57) duplicates canvas 30's content almost exactly -- likely a second scan pass of the same leaf, not a distinct page; canvas 32 (p.59) is blank on both sides.",
   "files": [
     {
       "file": "f9_thumb.jpg",
@@ -9,7 +10,55 @@
       "image_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9000668z/f9/full/,400/0/native.jpg",
       "manuscript_folio": "f.3 (per catalogue)",
       "fetched": "2026-09-24T03:37Z",
-      "content": "Two-leaf spread; right page dense arbitrary-symbol ciphertext matching the fr.20974 no.15 key design; left page continuous plain French cursive."
+      "content": "Low-res thumbnail, superseded by clair349_f9_native.jpg below."
+    },
+    {
+      "file": "clair349_f9_native.jpg",
+      "canvas": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9000668z/canvas/f9",
+      "image_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9000668z/f9/full/,900/0/native.jpg",
+      "manuscript_folio": "f.3 (per catalogue); dated '4. janvier 1556' (old-style; = 4 Jan. 1557 new-style) in a contemporary hand top-left of the right page, matching Tomokiyo's citation exactly",
+      "fetched": "2026-09-25T11:30Z",
+      "content": "Two-leaf spread. Right page: THE ciphertext letter -- dense arbitrary-symbol/figure groups, no visible word spacing, approx. 33 lines by eye-count (not transcribed), BnF ownership stamp and archival numbers '2429'/'3' in the margin. Left page: continuous plain French cursive (the reply or a covering/docket text, not cipher)."
+    },
+    {
+      "file": "clair349_f9_right_full.jpg",
+      "canvas": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9000668z/canvas/f9",
+      "image_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9000668z/f9/pct:50,0,50,100/full/0/native.jpg",
+      "manuscript_folio": "f.3, right page only, full native resolution (3895x6604) for a future transcription pass",
+      "fetched": "2026-09-25T11:30Z",
+      "content": "Same ciphertext page as clair349_f9_native.jpg, cropped to the right leaf only at full native resolution (not downscaled to 900px)."
+    },
+    {
+      "file": "clair349_f8_native.jpg",
+      "canvas": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9000668z/canvas/f8",
+      "image_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9000668z/f8/full/,700/0/native.jpg",
+      "manuscript_folio": "preceding leaf",
+      "fetched": "2026-09-25T11:30Z",
+      "content": "NO cipher. Unrelated prior material headed 'Henry 2. Grisons' (Swiss/Grey Leagues affairs), plain French, with marginal date references to 1550/1554 -- a different document, not part of this letter."
+    },
+    {
+      "file": "clair349_f10_native.jpg",
+      "canvas": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9000668z/canvas/f10",
+      "image_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9000668z/f10/full/,700/0/native.jpg",
+      "manuscript_folio": "following leaf (f.4 per visible folio mark)",
+      "fetched": "2026-09-25T11:30Z",
+      "content": "NO cipher. Left page continues the plain-French docket/reply text from f9's left page; right page blank (faint watermark, small pencil '11' only). The letter's ciphertext does not continue past f9 -- confined to one page."
+    },
+    {
+      "file": "fr20974_p57_key.jpg",
+      "canvas": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9062131g/canvas/f30",
+      "image_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9062131g/f30/full/,600/0/native.jpg",
+      "manuscript_page": "p.57 (this worker's own calibration, see manifest note; matches Tomokiyo's guise/BnFfr20974f57.png crop)",
+      "fetched": "2026-09-25T11:30Z",
+      "content": "First of the two key leaves for cipher no.15 (Guise <-> Hippolyte d'Este, cardinal de Ferrare). Right page: a substitution alphabet (letters with symbol/figure equivalents, several per letter -- homophones), rows labelled 'Doubles' and 'Nullete[z]'/nulls, and below that a nomenclator table ('Nomencl[at]... ' column headers) listing numeric codes against words/names -- more complete than Tomokiyo's tight alphabet-only crop, which explicitly says the nomenclature is not shown there. Left page blank except a small top-left docket note."
+    },
+    {
+      "file": "fr20974_p69_key.jpg",
+      "canvas": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9062131g/canvas/f37",
+      "image_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9062131g/f37/full/,600/0/native.jpg",
+      "manuscript_page": "p.69 (this worker's own calibration, see manifest note; matches Tomokiyo's guise/BnFfr20974f69.png crop)",
+      "fetched": "2026-09-25T11:30Z",
+      "content": "Second key leaf for the same cipher no.15. Right page: a second, denser nomenclator table in 4 columns of code:word pairs, with a small paper slip pasted into the middle of the table (a correction/addition, visible as a distinct rectangle over the text) and a 'Nomenclator' section header. Left page mostly blank with a short docket line top-left."
     }
   ]
 }
