@@ -1,0 +1,1234 @@
+line	position	token	kind	gloss	grade	note
+01	1	w:Monsieur	plain		H	s1 address word left of stamp
+01	2	64	digit	z	H	s1 gloss a crossed z-like letter
+01	3	12	digit	a	M	s1 gloss a or n
+01	4	73	digit	y	M	s1 gloss above 7; 7 and 3 read as one code
+01	5	S34	sign	r	H	s1 Ao shape; gloss r or x
+01	6	26	digit	c	H	s1
+01	7	9	digit	s	M	s1 centre on the tick, marginally left; gloss s or r
+01	8	16	digit	e	H	s2
+01	9	104	digit	u	H	s2 gloss above 10
+01	10	S27	sign	l	M	s2 doubled long-s with crossbar; small dash before gloss
+01	11	62	digit	i	M	s2 gloss a dot/tick, i?
+01	12	S23	sign	s	M	s2 small x-shape, could be S36
+01	13	|	divider		H	s2
+01	14	5	digit	l	M	s2
+01	15	16	digit	e	H	s2
+01	16	58	digit	ll	M	s2 gloss crossed ll (or tt); first digit resembles s, may be 68
+01	17	S40	sign	r	M	s2 gloss r or z
+01	18	62	digit	c	M	s2 gloss c or e
+01	19	S32	sign	qual	M	s2 Y with hooked top; could be S79; gloss 'qual' written as a word
+01	20	S35	sign	so	M	s2 long s + looped s; could be S51; small a above the following divider
+01	21	|	divider		H	s2
+01	22	12	digit	a	H	s2
+01	23	S31	sign	p	M	s2 circle on cross, cross runs down into line 02
+01	24	5	digit	l	H	s2
+01	25	26	digit	c	H	s2
+02	1	162	digit		M	s1 stamp rim over gloss zone; could be 16 2
+02	2	|	divider		H	s1
+02	3	S29	sign	m	H	s1
+02	4	26	digit	c	M	s1 gloss c or i
+02	5	4	digit	f	M	s1 tall long-s gloss; split 26/4 (alt 2/64)
+02	6	9	digit	c	M	s1
+02	7	S34	sign	r	M	s1 gloss r or z
+02	8	60	digit	z	M	s1 gloss crossed z
+02	9	S40	sign	z	M	s1
+02	10	26	digit	u	M	s1 gloss two ticks, u?
+02	11	|	divider		H	s1
+02	12	S16	sign	d	M	s1 tall long-s; gloss d-like (theta shape)
+02	13	10	digit	u	H	s1
+02	14	2	digit		M	s2 centre just right of tick
+02	15	|	divider		M	s2 curved '(' stroke read as divider
+02	16	7	digit	u	H	s2
+02	17	64	digit	z	H	s2
+02	18	15	digit	n	M	s2 second digit a small curved stroke
+02	19	S03	sign	a	M	s2 loop with long tail descending right
+02	20	4	digit	t	M	s2
+02	21	104	digit	u	H	s2
+02	22	S30	sign	n	M	s2 'na' shape, c-hook faint
+02	23	S03	sign	a	M	s2 same looped-tail sign, tail runs into divider
+02	24	|	divider		H	s2
+02	25	60	digit	i	M	s2
+02	26	26	digit	c	M	s2
+02	27	4	digit	f	M	s2 tall curved gloss
+02	28	S29	sign	m	M	s2 uu with a leading hook; gloss c-hook+m
+02	29	16	digit		M	s2 6 may be 0
+02	30	|	divider		H	s2
+02	31	S16	sign	d	M	s2
+02	32	104	digit	u	H	s2
+02	33	|	divider		M	s2 double stroke
+02	34	S31	sign	p	M	s2
+02	35	12	digit	a	H	s2
+02	36	w:g?	plain		M	s2 isolated large g/9-shaped mark in right margin at paper edge; may be archival
+03	1	S27	sign	c	M	s1 tall long-s pair with a crossed stroke below (4-like); small c at top right read as gloss; could be X?
+03	2	62	digit		H	s1
+03	3	|	divider		H	s1
+03	4	22	digit	po	M	s1 gloss 'po' over both digits; could be 2 + 2
+03	5	|	divider		H	s1
+03	6	S34	sign	z	H	s1 gloss crossed z
+03	7	26	digit	r	M	s1 gloss r or c above 2; split 26/4 (alt 2/64)
+03	8	4	digit	f	M	s1 tall long-s gloss
+03	9	S31	sign	p	M	s1
+03	10	82	digit	u	M	s1 8 then flat 2; gloss two ticks (u?)
+03	11	15	digit	n	M	s1 second digit a curved stroke; could be 11
+03	12	9	digit	r	M	s1 a thin vertical stroke crosses the 9 (divider?)
+03	13	S40	sign		M	s1 large n-shape with looped right leg and long descender; loop joined to following 2
+03	14	2	digit	c	M	s1
+03	15	6	digit		H	s2
+03	16	|	divider		H	s2
+03	17	5	digit	d	M	s2 5 without clear flag; gloss d/theta
+03	18	16	digit	c	M	s2
+03	19	9	digit	c	M	s2
+03	20	26	digit	c	H	s2
+03	21	S32	sign	que	M	s2 Y with hooked top; could be S79; gloss 'que'
+03	22	|	divider		M	s2 thin vertical stroke
+03	23	4	digit	f	M	s2 tall long-s gloss
+03	24	9	digit	c	H	s2
+03	25	60	digit	i	M	s2 gloss i or l
+03	26	S31	sign	p	M	s2
+03	27	64	digit	r	M	s2 gloss r or i
+03	28	44	digit	o	M	s2 gloss o or p over first 4; could be 4 + 4
+03	29	15	digit	n	M	s2 first digit an ink blot, second a curved stroke
+03	30	S35	sign	so	M	s2 long s + S; small a/q above following divider
+03	31	|	divider		H	s2
+03	32	14	digit	a	M	s2 gloss above the 4
+03	33	S34	sign	z	H	s2
+03	34	16	digit	c	H	s2
+04	1	4	digit	f	M	s1 tall long-s gloss
+04	2	S31	sign	p	H	s1
+04	3	82	digit	o	M	s1 8 then flat 2; gloss o above 8; could be 8 + 2
+04	4	S30	sign	n	M	s1 'na' shape, no clear c-hook
+04	5	5	digit	d	M	s1 curved 5-like stroke; gloss d/theta
+04	6	104	digit	u	H	s1
+04	7	5	digit	d	M	s1
+04	8	26	digit	t	M	s1 gloss t sits over the 6; could be 2 + 6
+04	9	4	digit	f	M	s1 tall long-s gloss
+04	10	|	divider		H	s1
+04	11	7	digit	u	M	s1 gloss u or ic
+04	12	S40	sign		M	s1 a tall hooked stroke above, probably from line 03, no clear gloss
+04	13	5	digit	?	M	s1 gloss an &-like/crossed-s letter
+04	14	16	digit	c	H	s1
+04	15	4	digit	f	M	s2 gloss long s with a loop, maybe fe
+04	16	14	digit	a	M	s2
+04	17	64	digit	z	H	s2
+04	18	S37	sign	t	M	s2 crossed t joined to o
+04	19	|	divider		M	s2 thick vertical with ink blot
+04	20	22	digit	po	M	s2 first 2 blotted
+04	21	5	digit	l	M	s2
+04	22	16	digit	c	H	s2
+04	23	S79	sign	quel	M	s2 u-like stroke joined to y with long tail; gloss 'quel'; could be S32
+04	24	4	digit	f	M	s2 gloss long-s descending into the 4, maybe 'se'/'fe'; could be S74
+04	25	|	divider		M	s2 thin stroke
+04	26	62	digit		H	s2
+04	27	4	digit	f	M	s2 tall long-s gloss
+04	28	S37	sign	t	M	s2
+04	29	82	digit	o	M	s2 gloss o above 8
+04	30	60	digit	z	H	s2
+04	31	S38	sign	t	M	s2 crossed t joined to c
+04	32	|	divider		H	s2 slash
+04	33	104	digit	?	M	s2 loop/L-shape above may be a descender from line 03, not a gloss
+05	1	26	digit	c	H	s1
+05	2	15	digit	n	M	s1 second digit a curved stroke
+05	3	10	digit	u	H	s1
+05	4	2	digit		H	s1
+05	5	|	divider		H	s1
+05	6	S31	sign	p	H	s1
+05	7	28	digit	a	M	s1 gloss sits over the 8; could be 2 + 8
+05	8	S34	sign	r	M	s1
+05	9	5	digit	d	M	s1
+05	10	26	digit	r	M	s1 gloss r or c
+05	11	9	digit	c	H	s1
+05	12	14	digit	a	M	s1 gloss over 4, a or n
+05	13	|	divider		H	s1
+05	14	S31	sign	p	H	s1
+05	15	12	digit	a	M	s2 straddles tick, centre marginally right; gloss a-like hook
+05	16	S40	sign	r	M	s2
+05	17	S27	sign	l	M	s2 gloss hooked tall stroke
+05	18	26	digit	c	H	s2
+05	19	4	digit	f	M	s2 tall long-s gloss; split 26/4 (alt 2/64)
+05	20	S32	sign	q	M	s2 y-shape with hooks on both arms and bottom loop; could be S60
+05	21	10	digit	u	H	s2
+05	22	2	digit		M	s2 could belong to 102
+05	23	16	digit	c	H	s2
+05	24	68	digit	ll	M	s2 gloss ll or tt
+05	25	62	digit	c	H	s2
+05	26	S35	sign		M	s2 long s + s; no separate gloss seen
+05	27	|	divider		H	s2
+05	28	60	digit	z	H	s2
+05	29	12	digit	a	H	s2
+05	30	73	digit	y	M	s2 3 written small and flat; gloss y or r
+05	31	|	divider		H	s2
+05	32	26	digit	c	H	s2
+06	1	4	digit	f	M	s1 tall long-s gloss
+06	2	S38	sign	t	M	s1 crossed t joined to c
+06	3	16	digit	c	H	s1
+06	4	|	divider		H	s1
+06	5	3	digit	?	M	s1 flat-topped 3 (could be S64); gloss B/&-like, illegible
+06	6	60	digit	i	M	s1
+06	7	15	digit	n	M	s1 second digit curved; gloss c-n
+06	8	|	divider		H	s1
+06	9	S42	sign		H	s1 two looped S
+06	10	26	digit		M	s1 no gloss seen
+06	11	S30	sign		M	s1 'ua'/'na' shape without hook
+06	12	|	divider		H	s1 slash
+06	13	4	digit	f	H	s1 4 partly blotted; gloss f
+06	14	44	digit	o	M	s1 gloss o over first 4; could be 4 + 4
+06	15	S34	sign	r	H	s1 straddles tick, centre left
+06	16	S37	sign	t	H	s2
+06	17	|	divider		H	s2
+06	18	12	digit	a	M	s2 ink blot after the 2
+06	19	7	digit	y	M	s2 gloss y or r; tail may make it 73
+06	20	S16	sign		M	s2 tall long-s top over a small zigzag; maybe same as the xi-shape later in this line
+06	21	4	digit		M	s2
+06	22	16	digit	c	H	s2
+06	23	|	divider		H	s2
+06	24	5	digit	d	H	s2
+06	25	26	digit	c	M	s2 gloss over the 6, not the 2; could be 2 + 6
+06	26	15	digit	n	M	s2
+06	27	S37	sign	t	H	s2
+06	28	62	digit	c	H	s2
+06	29	11	digit	n	M	s2 two straight strokes (same gloss as the 15s)
+06	30	5	digit	d	H	s2
+06	31	S20	sign	z	M	s2 looped R with tail, dot after; gloss z or t
+06	32	16	digit	c	H	s2
+06	33	|	divider		H	s2
+06	34	S32	sign	que	M	s2 Y-shape; gloss 'que'
+06	35	X?	X?	l	M	s2 small s-over-z zigzag (xi-like); gloss l may belong to next 16
+06	36	16	digit	c	M	s2
+06	37	4	digit	f	M	s2
+06	38	4	digit	f	M	s2
+07	1	82	digit	o	M	s1 gloss o over 8
+07	2	S34	sign	r	H	s1
+07	3	9	digit	c	M	s1 gloss c (ascender from line 06 above it)
+07	4	16	digit	c	M	s1
+07	5	4	digit	s	M	s1 5-shaped gloss (s) between 6 and 4; split 16/4 (alt 1/64)
+07	6	|	divider		H	s1
+07	7	S79	sign	quel	M	s1 u-stroke joined to y; gloss 'quel'; could be S32
+07	8	S35	sign	so	M	s1 long s + s; small a above following divider
+07	9	|	divider		H	s1
+07	10	S29	sign	m	H	s1
+07	11	26	digit	c	H	s1
+07	12	15	digit	n	M	s1
+07	13	16	digit	c	H	s1
+07	14	S40	sign	z	M	s1
+07	15	|	divider		H	s2 slash
+07	16	S35	sign		M	s2 tall long s + 5-like s; no gloss
+07	17	44	digit	o	M	s2 gloss o over first 4
+07	18	60	digit	t	M	s2
+07	19	26	digit	c	M	s2
+07	20	15	digit	n	M	s2
+07	21	S37	sign	t	H	s2
+07	22	|	divider		H	s2
+07	23	S37	sign	t	H	s2
+07	24	|	divider		M	s2 thin stroke
+07	25	26	digit	c	M	s2
+07	26	68	digit	ll	M	s2
+07	27	16	digit	c	H	s2
+07	28	4	digit	s	M	s2 5-shaped gloss
+07	29	|	divider		M	s2 faint slash
+07	30	S79	sign	que	M	s2 'ny' shape; could be S32
+07	31	S35	sign	so	M	s2 small a-mark above next token
+07	32	S29	sign	m	M	s2 gloss 'ma' spans uu and 12; m assigned here
+07	33	12	digit	a	M	s2
+07	34	15	digit	n	M	s2
+07	35	5	digit	d	M	s2
+07	36	16	digit	c	M	s2 gloss c or e
+07	37	|	divider		H	s2 slash
+08	1	7	digit		M	s1 small tick after the 7
+08	2	|	divider		H	s1
+08	3	S06	sign		M	s1 c-hook joined to a crossed f/4 shape
+08	4	S40	sign	r	M	s1 gloss a tiny v-tick, r?
+08	5	S30	sign	n	M	s1 'na' shape
+08	6	44	digit	o	M	s1 gloss o over first 4
+08	7	15	digit	n	M	s1
+08	8	4	digit	f	M	s1 tall long-s gloss
+08	9	16	digit	c	M	s1
+08	10	104	digit	u	H	s1
+08	11	68	digit	ll	M	s1
+08	12	26	digit	c	H	s1
+08	13	S29	sign	m	H	s1
+08	14	62	digit	c	M	s2 ink blot on the 2; gloss c or u
+08	15	15	digit	n	M	s2
+08	16	S37	sign	t	H	s2
+08	17	|	divider		H	s2
+08	18	22	digit	po	M	s2 first 2 wavy; gloss p (crossed, maybe 'pro') + o
+08	19	|	divider		H	s2
+08	20	S27	sign	l	M	s2
+08	21	16	digit	c	H	s2
+08	22	S40	sign	r	M	s2 dot after
+08	23	26	digit	c	H	s2
+08	24	S14	sign	g	M	s2 loop with tail curling down-left; could be S03
+08	25	12	digit	a	H	s2
+08	26	S34	sign	r	H	s2
+08	27	5	digit	d	H	s2
+08	28	|	divider		H	s2
+08	29	5	digit	d	M	s2
+08	30	10	digit	u	H	s2
+08	31	2	digit		M	s2 could belong to 102
+08	32	|	divider		H	s2
+08	33	4	digit	f	M	s2 4 heavily blotted
+08	34	12	digit	a	H	s2
+08	35	60	digit	i	M	s2
+08	36	S37	sign	t	M	s2 crossed t joined to a/o
+09	1	S35	sign		M	s1 very tall long s at line start + 5-like s
+09	2	104	digit	u	M	s1 gloss u or a
+09	3	4	digit	f	M	s1 tall long-s gloss
+09	4	5	digit	d	H	s1
+09	5	64	digit	z	H	s1
+09	6	9	digit	c	H	s1
+09	7	S38	sign	t	H	s1
+09	8	|	divider		H	s1
+09	9	4	digit	f	M	s1 tall long-s gloss
+09	10	60	digit	i	M	s1
+09	11	5	digit	l	M	s1
+09	12	|	divider		H	s1
+09	13	4	digit	f	M	s1
+09	14	16	digit	c	H	s1
+09	15	S31	sign	p	H	s1
+09	16	S34	sign	r	H	s1
+09	17	26	digit	c	M	s2 on the tick, centre right
+09	18	S35	sign		M	s2 tall long s + s
+09	19	16	digit	c	H	s2
+09	20	15	digit	n	M	s2
+09	21	S37	sign	t	H	s2
+09	22	62	digit	c	H	s2
+09	23	|	divider		H	s2
+09	24	S20	sign	z	M	s2 R-like with hooked top; could be S33
+09	25	14	digit	a	M	s2
+09	26	|	divider		H	s2
+09	27	82	digit	o	M	s2
+09	28	9	digit	c	M	s2
+09	29	14	digit	a	M	s2
+09	30	4	digit	f	M	s2 tall long-s gloss
+09	31	24	digit	z	M	s2 gloss crossed z over the 2
+09	32	44	digit	o	M	s2
+09	33	15	digit	n	M	s2 first digit blotted, looks like a small 4
+09	34	|	divider		H	s2 thick stroke
+09	35	5	digit	d	M	s2
+09	36	16	digit	c	H	s2
+09	37	5	digit	l	M	s2
+09	38	26	digit	c	H	s2
+09	39	|	divider		H	s2
+10	1	S37	sign	t	M	s1 left margin rule before it skipped
+10	2	14	digit	a	H	s1
+10	3	11	digit	n	M	s1 two minims joined like u
+10	4	S38	sign	t	H	s1
+10	5	16	digit	c	M	s1 6 touches following Ao
+10	6	S34	sign	r	H	s1
+10	7	|	divider		H	s1
+10	8	S31	sign	p	H	s1
+10	9	12	digit	a	H	s1
+10	10	S40	sign	r	H	s1 dot after
+10	11	9	digit	c	M	s1
+10	12	26	digit	u	M	s1
+10	13	S35	sign		M	s1 tall long s + s
+10	14	S37	sign	t	M	s1 a second t-like mark above as well
+10	15	16	digit	c	M	s1 6 lies just right of tick, token centre left
+10	16	|	divider		H	s2 slash
+10	17	10	digit		M	s2 loop above is a descender from line 09, not a gloss; 1 fused with slash
+10	18	2	digit		M	s2 could belong to 102
+10	19	44	digit	o	H	s2
+10	20	64	digit	z	H	s2
+10	21	26	digit	c	H	s2
+10	22	|	divider		H	s2
+10	23	5	digit	l	M	s2
+10	24	12	digit	a	H	s2
+10	25	S29	sign	m	H	s2
+10	26	12	digit	a	H	s2
+10	27	26	digit	c	H	s2
+10	28	4	digit	f	M	s2 tall long s rises from and descends through the 4 (possibly one f-like sign, cf S21)
+10	29	16	digit	c	H	s2
+10	30	15	digit	n	M	s2
+10	31	9	digit	c	H	s2
+10	32	82	digit	o	M	s2
+10	33	S40	sign	r	M	s2 a dotted descender from line 09 crosses it; dot after
+10	34	62	digit	c	H	s2
+10	35	4	digit	f	M	s2 tall long-s gloss/stem
+10	36	|	divider		H	s2
+11	1	22	digit	po	M	s1 ROW A (crop 11 holds two text rows; row A upper, row B lower, numbered A then B)
+11	2	S37	sign	t	M	s1 row A; gloss t(c?)
+11	3	82	digit	o	M	s1 row A
+11	4	104	digit	u	H	s1 row A
+11	5	S38	sign	t	H	s1 row A
+11	6	16	digit	c	H	s1 row A
+11	7	4	digit	f	M	s1 row A tall long-s gloss
+11	8	|	divider		H	s1 row A
+11	9	28	digit	n	M	s1 row A; gloss n or a over the 8
+11	10	10	digit	u	H	s1 row A
+11	11	2	digit		M	s1 row A; could belong to 102
+11	12	S38	sign	t	M	s1 row A; blotted
+11	13	S34	sign	r	H	s1 row A
+11	14	16	digit	c	M	s1 row A; straddles tick, centre about on it
+11	15	4	digit	f	M	s2 row A
+11	16	|	divider		H	s2 row A
+11	17	82	digit	o	M	s2 row A
+11	18	9	digit	c	H	s2 row A
+11	19	12	digit	a	H	s2 row A
+11	20	4	digit	f	M	s2 row A
+11	21	16	digit	i	M	s2 row A; gloss a short stroke (i), not the usual c
+11	22	44	digit	o	H	s2 row A
+11	23	15	digit	n	M	s2 row A
+11	24	4	digit	f	M	s2 row A; k-like: tall long s with 4-arm
+11	25	|	divider		H	s2 row A
+11	26	S52	sign	lle	M	s2 row A; lattice about 3x3 (could be S04); gloss 'llc'/'lle'
+11	27	10	digit	u	H	s2 row A
+11	28	2	digit		M	s2 row A
+11	29	44	digit	o	H	s2 row A
+11	30	64	digit	z	H	s2 row A
+11	31	14	digit	a	H	s2 row A
+11	32	15	digit	n	M	s2 row A; ascender over gloss is from line above
+11	33	S38	sign	t	H	s2 row A
+11	34	S31	sign	p	H	s2 row A
+11	35	82	digit	o	M	s2 row A; gloss d/o-like
+11	36	60	digit	l	M	s1 ROW B; gloss l or i
+11	37	S30	sign	n	M	s1 row B 'na'
+11	38	S38	sign	t	H	s1 row B
+11	39	S58	sign	?	M	s1 row B; crossed long s + 2-shape; gloss is an &/of-like letter inside a drawn box (correction?)
+11	40	12	digit	a	H	s1 row B
+11	41	S27	sign	l	M	s1 row B
+11	42	14	digit	a	H	s1 row B
+11	43	10	digit	u	H	s1 row B
+11	44	2	digit		M	s1 row B
+11	45	4	digit	f	H	s1 row B; small separate f gloss
+11	46	S34	sign	r	H	s1 row B
+11	47	16	digit	c	H	s1 row B
+11	48	10	digit	u	H	s1 row B
+11	49	2	digit		M	s1 row B
+11	50	44	digit	o	M	s1 row B; straddles tick
+11	51	73	digit		M	s2 row B; 7 crossed/joined to flat 3 (z-like); could be 4+2
+11	52	|	divider		H	s2 row B
+11	53	26	digit	c	H	s2 row B
+11	54	5	digit	?	M	s2 row B; ink blot over gloss zone and after it
+11	55	6	digit	c	M	s2 row B; a digit may be hidden under the ink blot before it
+11	56	4	digit	f	M	s2 row B
+11	57	|	divider		H	s2 row B
+11	58	S31	sign	r	M	s2 row B; body read from line-12 crop top; could be 58 as in line 01
+11	59	S40	sign	r	M	s2 row B
+11	60	28	digit	a	M	s2 row B
+11	61	S37	sign	t	H	s2 row B
+11	62	60	digit	z	M	s2 row B; crossed z/f gloss
+11	63	S32	sign	q	M	s2 row B; y with hooked arms (as line 05)
+11	64	104	digit	u	H	s2 row B
+11	65	62	digit	c	H	s2 row B
+11	66	4	digit	f	M	s2 row B; large C-shaped long-s gloss; 4 blotted
+11	67	|	divider		H	s2 row B
+11	68	S79	sign	que	M	s2 row B; 'ny' shape
+11	69	|	divider		M	s2 row B
+11	70	73	digit		M	s2 row B; 7 is an ink blot
+11	71	S40	sign	z	M	s2 row B; hooked top
+12	1	28	digit	a	M	s1 gloss over 2/8
+12	2	64	digit	i	M	s1 gloss i or l
+12	3	S38	sign		M	s1 marks above belong to line-11 row B
+12	4	S27	sign	r	M	s1 gloss r/v-like; a long descender from line-11 row B runs past it
+12	5	24	digit	i	M	s1 could be 2 + 4
+12	6	26	digit	c	H	s1
+12	7	10	digit	u	M	s1 1 is an ink blot
+12	8	2	digit		M	s1
+12	9	|	divider		H	s1
+12	10	S32	sign	q	M	s1 Y-shape; could be S79
+12	11	S35	sign	so	M	s1 gloss b/s-o plus a small z-like mark
+12	12	S52	sign	m	M	s1 lattice 3x3; gloss m or rn
+12	13	S35	sign	s	M	s1 tall long s + s; gloss a long-s letter; straddles tick, centre left
+12	14	44	digit	o	M	s2
+12	15	60	digit	i	M	s2
+12	16	62	digit	c	M	s2
+12	17	73	digit	ll	M	s2 heavy ll/tt gloss over 7
+12	18	S44	sign		M	s2 p-loop with crossed stem; mark above is the cross of the S31 in line-11 row B
+12	19	S40	sign		M	s2 omega-shaped with feet
+12	20	S31	sign	p	H	s2
+12	21	12	digit	a	H	s2
+12	22	54	digit	fr	M	s2 gloss long-s + r with tilde; could be 5 + 4
+12	23	26	digit	?	M	s2 faint multi-letter gloss (y-a-3-o-t?) spans 26 and 9
+12	24	9	digit	?	M	s2 see previous note
+12	25	12	digit		M	s2
+12	26	|	divider		H	s2
+12	27	22	digit	pu	M	s2 gloss p (crossed) + u/o
+12	28	|	divider		H	s2
+13	1	12	digit		M	s1 marks above are descenders from line 12
+13	2	S31	sign		M	s1 c-like loop on a cross; cross above is from line 12
+13	3	S34	sign		M	s1
+13	4	62	digit	c	M	s1 gloss e/c
+13	5	4	digit		M	s1 the tall stroke above is a descender from line 12, not a gloss
+13	6	S32	sign	q	M	s1 Y with looped left arm; loop may be the q gloss
+13	7	S35	sign	so	M	s1
+13	8	14	digit	a	H	s1
+13	9	10	digit	u	H	s1
+13	10	2	digit		M	s1
+13	11	S76	sign	r	M	s1 plain A, no o
+13	12	16	digit	c	H	s1
+13	13	73	digit	z	M	s1 gloss crossed z/y over the 7; the 3 is crossed by the divider
+13	14	|	divider		H	s1
+13	15	62	digit	c	H	s1
+13	16	15	digit	n	H	s2
+13	17	S37	sign	t	H	s2
+13	18	16	digit	c	H	s2
+13	19	S30	sign	n	M	s2 'na'
+13	20	5	digit	d	H	s2
+13	21	104	digit	u	H	s2
+13	22	|	divider		H	s2
+13	23	9	digit	c	H	s2
+13	24	44	digit	o	M	s2 gloss o or a
+13	25	7	digit	u	M	s2 gloss run 'u u v c' spans 7, 61 and 8
+13	26	61	digit	?	M	s2 see previous
+13	27	8	digit	c	M	s2 8 with loop descender (could be S51); may join 61
+13	28	|	divider		H	s2
+13	29	S37	sign	t	H	s2
+13	30	44	digit	o	H	s2
+13	31	104	digit	u	H	s2
+13	32	S37	sign	t	H	s2
+13	33	26	digit	c	M	s2
+13	34	4	digit	f	M	s2 tall long-s gloss
+13	35	|	divider		H	s2
+13	36	9	digit	c	H	s2
+13	37	17	digit	ch	M	s2 gloss 'ch' over 1-7; could be 1 + 7
+13	38	82	digit	o	M	s2
+13	39	4	digit	f	M	s2 tall long-s gloss
+14	1	26	digit		H	s1
+14	2	S35	sign		M	s1 tall long s + s
+14	3	|	divider		M	s1 thin stroke
+14	4	S31	sign	p	H	s1
+14	5	14	digit	a	H	s1
+14	6	54	digit		M	s1 could be 5 + 4; strokes above are from line 13
+14	7	16	digit		M	s1
+14	8	S40	sign	r	H	s1
+14	9	82	digit	o	H	s1
+14	10	15	digit	n	H	s1
+14	11	S37	sign	t	H	s1
+14	12	|	divider		H	s1
+14	13	S61	sign		M	s1 5/3-like body with open loop on top reaching gloss level (loop may be a y gloss)
+14	14	4	digit	f	M	s1 large crossed f gloss
+14	15	12	digit	a	H	s1
+14	16	60	digit	i	M	s2
+14	17	S34	sign	r	H	s2
+14	18	16	digit	c	H	s2
+14	19	|	divider		H	s2
+14	20	S45	sign	toute	M	s2 reversed-3 curl with a crossbar (euro-like); gloss word 'toute' spans it and the next code
+14	21	|	divider		H	s2
+14	22	12	digit	a	M	s2 gloss a with a stroke through it (d-like)
+14	23	64	digit	z	H	s2
+14	24	15	digit	u	M	s2 gloss u or n
+14	25	4	digit	f	M	s2 tall long-s gloss
+14	26	60	digit	i	M	s2 gloss an ink dot
+14	27	|	divider		H	s2
+14	28	S32	sign	q	M	s2 Y; large q-loop gloss
+14	29	|	divider		H	s2
+14	30	S35	sign	so	M	s2
+14	31	|	divider		M	s2 thin stroke
+14	32	14	digit	a	M	s2 gloss a or u
+14	33	5	digit	d	H	s2
+14	34	10	digit	u	M	s2 1 is an ink blot
+14	35	2	digit		M	s2
+14	36	60	digit	i	M	s2
+14	37	4	digit	f	M	s2
+14	38	16	digit	c	H	s2
+14	39	S40	sign	r	M	s2 gloss r or x
+14	40	26	digit	c	H	s2
+14	41	2	digit		M	s2 faint z at paper edge
+15	1	X?	X?		M	s1 ink blot joined to a large wavy 2/hook stroke at line start (flourish or damaged sign, cf S06)
+15	2	S35	sign	so	M	s1
+15	3	12	digit	a	H	s1
+15	4	104	digit	u	H	s1
+15	5	S34	sign	r	H	s1
+15	6	16	digit	c	M	s1 stroke over the 1
+15	7	S20	sign	i	M	s1 R-like with cross-tail; gloss a dot/tick
+15	8	|	divider		M	s1 thin stroke
+15	9	62	digit	c	H	s1
+15	10	15	digit	n	H	s1
+15	11	S37	sign	t	H	s1
+15	12	26	digit	u	M	s1
+15	13	S30	sign	n	M	s1 'na'
+15	14	5	digit	d	M	s1 on the tick, centre marginally left
+15	15	7	digit	u	M	s2 7 heavily inked
+15	16	|	divider		H	s2
+15	17	9	digit	c	H	s2
+15	18	82	digit	o	H	s2
+15	19	7	digit	u	M	s2 gloss run 'u u m' over 7 6 1
+15	20	6	digit	um	M	s2 could be 61 with the next 1
+15	21	16	digit	c	M	s2
+15	22	|	divider		H	s2
+15	23	60	digit	z	H	s2
+15	24	62	digit	c	H	s2
+15	25	7	digit	u	H	s2
+15	26	44	digit		M	s2 hooked stroke above is from line 14
+15	27	10	digit	u	H	s2
+15	28	2	digit		M	s2
+15	29	5	digit	?	M	s2 gloss position covered by an ink blot
+15	30	82	digit	o	H	s2
+15	31	60	digit	i	M	s2
+15	32	4	digit	f	M	s2 tall long-s gloss
+15	33	|	divider		H	s2 tall stroke joined to the 4 (H-like)
+15	34	S28	sign	m	H	s2
+15	35	26	digit	c	H	s2
+15	36	58	digit	tt	M	s2 first digit s-like
+15	37	16	digit	o	M	s2
+15	38	w:cna	plain		M	s2 small letters at gloss height in the right margin, no code under them
+16	1	S53	sign		M	s1 looped 3/8-like curl with tail running down-left, joined to the 7
+16	2	7	digit		M	s1 could form one sign with the preceding curl (cf S74)
+16	3	S34	sign	r	H	s1
+16	4	62	digit	c	H	s1
+16	5	S35	sign		M	s1 tall long s + s
+16	6	10	digit	u	H	s1
+16	7	2	digit		M	s1
+16	8	4	digit	f	M	s1 tall long-s gloss
+16	9	|	divider		H	s1
+16	10	5	digit	r	M	s1 gloss r/x-like
+16	11	14	digit	a	H	s1
+16	12	S31	sign	p	H	s1
+16	13	S34	sign	r	H	s1
+16	14	12	digit	a	H	s1
+16	15	S37	sign	t	H	s1
+16	16	60	digit	i	M	s1 0 lies on the tick
+16	17	S32	sign	q	M	s2 y with hooked barred arms (as line 05)
+16	18	10	digit	u	H	s2
+16	19	2	digit		M	s2
+16	20	16	digit	c	H	s2
+16	21	|	divider		H	s2
+16	22	5	digit	d	H	s2
+16	23	7	digit	u	H	s2
+16	24	|	divider		H	s2
+16	25	9	digit	c	H	s2
+16	26	28	digit	a	H	s2
+16	27	22	digit	pr	M	s2 first 2 blotted and 3-like; glosses p and r/k
+16	28	60	digit	i	H	s2
+16	29	S38	sign	t	H	s2
+16	30	12	digit	a	H	s2
+16	31	64	digit	i	M	s2
+16	32	15	digit	n	H	s2
+16	33	16	digit	c	H	s2
+16	34	|	divider		H	s2
+16	35	S27	sign	l	H	s2
+16	36	24	digit	i	M	s2 gloss i over an ink dot; long filler stroke follows
+16	37	X?	X?		M	s2 m-shaped mark with dot at right edge after the filler stroke (maybe S70/S49 or a catchword)
+17	1	104	digit	u	M	s1 4 set apart from 10; a long horizontal stroke runs under 104 64 44 (underline or cancel)
+17	2	64	digit	z	H	s1
+17	3	44	digit	o	M	s1 gloss p/o-like over first 4
+17	4	9	digit	c	H	s1
+17	5	16	digit	c	H	s1
+17	6	S32	sign	fait	M	s1 Y with looped left arm; gloss word 'fait'
+17	7	14	digit	a	H	s1
+17	8	16	digit	c	H	s1
+17	9	12	digit	a	H	s1
+17	10	15	digit	n	H	s1
+17	11	S37	sign	t	H	s1
+17	12	X?	X?		M	s1 vertical stroke with two slanting crossbars (double-barred cross)
+17	13	|	divider		M	s2
+17	14	S58	sign		M	s2 crossed long s with a 7/2-shaped tail
+17	15	X?	X?	faut	M	s2 c-hook joined to a z-shape with tail below; gloss word 'faut' over it and the 9
+17	16	9	digit		M	s2 gloss zone taken by 'faut'
+17	17	16	digit	c	M	s2
+17	18	68	digit	ll	H	s2
+17	19	104	digit	u	M	s2 0 blotted
+17	20	60	digit	r	M	s2 gloss v/r-like
+17	21	|	divider		H	s2
+17	22	S32	sign	q	M	s2 y with hooked barred arms
+17	23	7	digit	u	H	s2
+17	24	24	digit	tt	M	s2 gloss H-like (tt)
+17	25	5	digit		M	s2 faint, tick after
+17	26	|	divider		H	s2
+17	27	X?	X?	t	M	s2 TRUNCATED: large C-shape with T-like top; line slopes below crop bottom from here on
+17	28	12	digit	a	M	s2 TRUNCATED: only tops visible
+17	29	10	digit	u	M	s2 TRUNCATED
+17	30	2	digit		M	s2 TRUNCATED
+17	31	S37	sign	t	M	s2 TRUNCATED
+17	32	X?	X?	o	M	s2 TRUNCATED: 8/delta-like loop, maybe 82 or S31
+17	33	X?	X?	u	M	s2 TRUNCATED: only the gloss u visible, code below crop edge; line-end dash follows
+18	1	16	digit	e	M	s1; x780; two-stroke gloss mark read as e (could be c)
+18	2	7	digit	u	H	s1; x855
+18	3	|	divider		M	s1; x890; thin diagonal stroke x890
+18	4	S34	sign	f	M	s1; x930; A joined to o
+18	5	S28	sign	m	M	s1; x985; thin c-hook then m with tilde
+18	6	12	digit	a	H	s1; x1030
+18	7	16	digit	e	M	s1; x1195; two-stroke gloss mark read as e (could be c)
+18	8	S21	sign		M	s1; x1265; x1260 f-like, tall curved top, crossbar
+18	9	9	digit	?	M	s1; x1330; mark above mixed with descender from line above
+18	10	S33	sign		M	s1; x1395; x1370-1420 long-s leg with crossbar and second leg, dot after
+18	11	64	digit	z	M	s1; x1480; gloss 3/z-shaped
+18	12	S44	sign	t	M	s1; x1580; loop on crossed stem with foot
+18	13	S38	sign	t	M	s1; x1630
+18	14	X?	X?	quil	M	s1; x1760; x1730-1790 cursive cluster like 'ily'
+18	15	X?	X?		M	s1; x1855; x1830-1885 long heavy descender with flat hooked flourish at top
+18	16	X?	X?	cy	M	s1; x1912; x1900-1925 small s-shaped curl with descending tail
+18	17	S29	sign	gm	M	s2; x2010; x1965-2060 run of minims
+18	18	6	digit	e	M	s2; x2095; two-stroke gloss mark read as e (could be c)
+18	19	60	digit	t	H	s2; x2165
+18	20	68	digit	ll	M	s2; x2255
+18	21	2	digit	u	M	s2; x2330
+18	22	6	digit		M	s2; x2385; x2385 faint stroke above, not read as gloss
+18	23	10	digit	u	H	s2; x2440
+18	24	4	digit		H	s2; x2515
+18	25	S34	sign	r	M	s2; x2585; gloss r- or z-like
+18	26	|	divider		H	s2; x2640
+18	27	62	digit	?	M	s2; x2700; gloss mark merged with descender from line above
+18	28	7	digit	u	H	s2; x2780
+18	29	4	digit	o	H	s2; x2860
+18	30	4	digit		H	s2; x2920
+18	31	8	digit	f	M	s2; x2960; gloss l/f-like with crossbar
+18	32	8	digit		M	s2; x3005; P-shaped 8
+18	33	2	digit	?	M	s2; x3070; two blobs above, possibly descender of line above
+18	34	15	digit	u	M	s2; x3140
+18	35	S37	sign	t	H	s2; x3220
+18	36	16	digit	e	M	s2; x3300; two-stroke gloss mark read as e (could be c)
+18	37	|	divider		M	s2; x3340; thin slash through/after the 6 at x3330
+18	38	52	digit	d	M	s2; x3400; s-shaped 5 then z
+18	39	6	digit	e	M	s2; x3490; two-stroke gloss mark read as e (could be c)
+19	1	S27	sign	s	M	s1; x785; gloss long s
+19	2	14	digit	a	H	s1; x860
+19	3	S37	sign	t	M	s1; x975; faint to
+19	4	2	digit	a	H	s1; x1040
+19	5	8	digit		H	s1; x1085
+19	6	15	digit	n	H	s1; x1165
+19	7	S38	sign	t	H	s1; x1255
+19	8	16	digit	e	M	s1; x1365; two-stroke gloss mark read as e (could be c)
+19	9	S34	sign	r	M	s1; x1455; tilde over A plus r-like gloss
+19	10	S32	sign	t	M	s1; x1545; bold y/gamma with long descender
+19	11	5	digit	que	M	s1; x1590; gloss 'que' spans over 5 and next sign
+19	12	S44	sign		M	s1; x1645; loop on stem with crossbar, long tilde flourish on top
+19	13	X?	X?	n	M	s1; x1740; x1705-1780 'ua': two minims then closed a-shape
+19	14	12	digit	a	H	s1; x1830
+19	15	60	digit	l	M	s1; x1925; s1/s2 boundary near 1950
+19	16	14	digit	a	H	s2; x2015
+19	17	S29	sign	on	H	s2; x2135; four minims
+19	18	2	digit	a	H	s2; x2230
+19	19	8	digit		H	s2; x2275
+19	20	64	digit	n	M	s2; x2355; gloss n-like with ascender
+19	21	S21	sign		M	s2; x2440; tall f with crossbar
+19	22	|	divider		M	s2; x2500; thin slash
+19	23	2	digit		M	s2; x2530
+19	24	6	digit	e	M	s2; x2585; two-stroke gloss mark
+19	25	S35	sign		M	s2; x2645; long s + small s(5-shape)
+19	26	S37	sign	t	H	s2; x2735
+19	27	16	digit	e	M	s2; x2820; two-stroke gloss mark
+19	28	X?	X?	et	M	s2; x2925; c-hook joined to crossed t with long stem (ct order, reverse of S38)
+19	29	5	digit	?	M	s2; x3020; faint s-shaped 5
+19	30	S28	sign	m	H	s2; x3095
+19	31	2	digit		M	s2; x3190
+19	32	6	digit	e	M	s2; x3240; faint 6
+19	33	60	digit	l	M	s2; x3305
+19	34	68	digit	ll	H	s2; x3380
+19	35	16	digit	e	M	s2; x3475; two-stroke gloss mark
+20	1	7	digit		H	s1; x765
+20	2	S34	sign	r	M	s1; x825; small r-like mark above A
+20	3	62	digit	e	M	s1; x945; two-stroke gloss mark
+20	4	16	digit	e	M	s1; x1060; two-stroke gloss mark
+20	5	S21	sign		M	s1; x1130; tall stroke through a crossbar joined to preceding 6 (same shape as line18 x1265)
+20	6	S44	sign	p	M	s1; x1215; loop on stem with foot
+20	7	62	digit	e	M	s1; x1290; two-stroke gloss mark
+20	8	S33	sign	r	M	s1; x1385; loop top, two legs
+20	9	14	digit	a	H	s1; x1470
+20	10	15	digit	n	H	s1; x1570
+20	11	9	digit	e	M	s1; x1645; blob+hairline gloss mark
+20	12	26	digit	e	M	s1; x1750; two-stroke gloss mark centred between 2 and 6
+20	13	X?	X?		M	s1; x1865; circle on a descending stem, long crossbar through the circle top, 2-shaped hook rising above (like S31 upside down)
+20	14	7	digit	u	H	s1; x1945
+20	15	16	digit	e	M	s2; x2025; two-stroke gloss mark
+20	16	68	digit	ll	H	s2; x2120
+20	17	26	digit	e	M	s2; x2240; two-stroke gloss mark between 2 and 6
+20	18	S33	sign		M	s2; x2345; pi-like: crossbar with two legs, R/p-like loop on top, dot after
+20	19	16	digit	e	M	s2; x2430
+20	20	10	digit	u	M	s2; x2485
+20	21	4	digit		H	s2; x2545; faint vertical crease just right of it
+20	22	S21	sign		M	s2; x2650; tall f with crossbar
+20	23	9	digit	e	M	s2; x2690
+20	24	60	digit	?	M	s2; x2770; gloss t/r-like blob
+20	25	S34	sign	r	M	s2; x2850; z/r-like gloss
+20	26	14	digit	a	H	s2; x2955
+20	27	58	digit	d	M	s2; x3060
+20	28	2	digit	o	M	s2; x3140; gloss o/e-like
+20	29	15	digit	n	H	s2; x3220
+20	30	S37	sign		H	s2; x3300; tall t
+20	31	22	digit	bo	M	s2; x3410; two faint grey 2s under a bold bo/to-like mark read as gloss (same combination as line 23 x2990, line 25 x1250)
+21	1	9	digit		H	s1; x765
+21	2	2	digit	?	M	s1; x815; small blob above, may be stroke of line 20
+21	3	6	digit		M	s1; x870; ascender stroke from line above crosses it
+21	4	S35	sign		M	s1; x935; long s with top hook then small s/8-shape
+21	5	4	digit	t	M	s1; x1015; cross-shaped with short tail
+21	6	26	digit	e	M	s1; x1090; two-stroke gloss mark
+21	7	17	digit		M	s1; x1210; heavy mark above is foot of line 20 sign
+21	8	16	digit	e	M	s1; x1285
+21	9	7	digit	u	H	s1; x1355
+21	10	S76	sign		M	s1; x1415; A with long crossbar and hooked apex
+21	11	62	digit	e	M	s1; x1510
+21	12	60	digit	t	M	s1; x1610
+21	13	62	digit	e	M	s1; x1720
+21	14	S52	sign	m	M	s1; x1820; heavily inked lattice, several strokes each way
+21	15	|	divider		M	s1; x1900; thin diagonal stroke, could be a thin 1
+21	16	8	digit	le	M	s1; x1935; gloss tall l plus e-mark
+21	17	9	digit	t	M	s2; x2000
+21	18	7	digit	u	H	s2; x2060
+21	19	6	digit	t	M	s2; x2150; gloss t touches the 6
+21	20	4	digit		H	s2; x2220
+21	21	S21	sign		M	s2; x2285; tall long-s with crossbar
+21	22	5	digit	d	M	s2; x2350
+21	23	60	digit	t	M	s2; x2420
+21	24	S33	sign	e	M	s2; x2510; pi-like with loop top, e-mark at right above
+21	25	16	digit		M	s2; x2600
+21	26	|	divider		H	s2; x2650
+21	27	12	digit	a	H	s2; x2695
+21	28	10	digit	u	H	s2; x2800
+21	29	2	digit		H	s2; x2865
+21	30	4	digit	to	M	s2; x2925; cross-shaped
+21	31	S34	sign		M	s2; x2985
+21	32	2	digit	e	M	s2; x3075; blob and dash above
+21	33	6	digit		M	s2; x3130; faint
+21	34	9	digit	e	M	s2; x3195
+21	35	17	digit	s	M	s2; x3250; gloss S/5-like
+21	36	4	digit	o	H	s2; x3335
+21	37	4	digit	s	M	s2; x3405; tall long-s above read as gloss
+21	38	S23	sign		M	s2; x3470; small x with tail
+22	1	26	digit		M	s1; x790; 2 and 6 close
+22	2	|	divider		M	s1; x830; slash through the 6
+22	3	X?	X?	n	M	s1; x895; 'ua' minim cluster: two minims then closed a-shape (as line 19 x1740)
+22	4	16	digit	e	M	s1; x995; gloss a/e-like mark with dots
+22	5	S21	sign		M	s1; x1090; tall f with crossbar, thin lead-in stroke from left
+22	6	S37	sign	t	H	s1; x1150
+22	7	14	digit	a	H	s1; x1230
+22	8	15	digit	n	H	s1; x1335
+22	9	S37	sign	t	H	s1; x1415
+22	10	|	divider		H	s1; x1460
+22	11	16	digit	u	M	s1; x1510; gloss u-like bowl (or e-mark)
+22	12	15	digit	n	H	s1; x1590
+22	13	9	digit	e	M	s1; x1660; c-shaped gloss mark
+22	14	4	digit	o	M	s1; x1725
+22	15	4	digit		H	s1; x1780
+22	16	S34	sign		M	s1; x1855; heavily inked A with hooked apex joined to small o
+22	17	2	digit	d	M	s1; x1935; gloss d-like
+22	18	6	digit		M	s2; x1995
+22	19	S23	sign	e	M	s2; x2060; x with tail
+22	20	S33	sign		M	s2; x2165; pi-like with R/p-like loop top and dot after
+22	21	26	digit	e	M	s2; x2275; two-stroke gloss mark over the 2
+22	22	S37	sign	t	M	s2; x2345
+22	23	8	digit	o	H	s2; x2400
+22	24	2	digit		H	s2; x2475
+22	25	10	digit	u	H	s2; x2545
+22	26	4	digit	z	M	s2; x2650; gloss z/3-like
+22	27	S69	sign		M	s2; x2715; A followed by hooked v
+22	28	X?	X?	n	M	s2; x2790; 'na' minim cluster with closed a (as x895)
+22	29	62	digit	e	M	s2; x2875
+22	30	|	divider		H	s2; x2920
+22	31	52	digit	d	M	s2; x2990; 5 and 2 spaced apart, d-like gloss between them
+22	32	6	digit	e	M	s2; x3115
+22	33	S46	sign		M	s2; x3180; h-like: crossed stem with second leg hooked (tJ)
+22	34	S27	sign	f	M	s2; x3265; gloss l-like with crossbar
+22	35	64	digit	f	M	s2; x3350; gloss l-like with crossbar
+22	36	10	digit	u	H	s2; x3425
+22	37	2	digit		H	s2; x3490
+23	1	60	digit	t	M	s1; x785; gloss t/f-like cross with loop
+23	2	8	digit	o	H	s1; x860
+23	3	2	digit		H	s1; x920
+23	4	X?	X?		M	s1; x990; Y-shaped stem with a large closed loop (9/e-like) sitting above it
+23	5	24	digit	t	M	s1; x1090; gloss t-like cross between 2 and 4
+23	6	14	digit	a	H	s1; x1200
+23	7	7	digit	v	M	s1; x1290; small v/y gloss
+23	8	S64	sign		M	s1; x1350; 3/z-shape with descender (yogh-like)
+23	9	2	digit	e	M	s1; x1450; dot before it at x1420
+23	10	6	digit		M	s1; x1520
+23	11	15	digit	n	H	s1; x1575
+23	12	7	digit	u	H	s1; x1640
+23	13	4	digit	o	M	s1; x1720; loop gloss touches the stem
+23	14	4	digit		H	s1; x1770
+23	15	16	digit		M	s1; x1840
+23	16	S74	sign		M	s1; x1935; 4 with a c/9-curl on top-left
+23	17	60	digit	t	M	s2; x2065
+23	18	2	digit	e	M	s2; x2165
+23	19	6	digit		M	s2; x2230
+23	20	10	digit	u	H	s2; x2300
+23	21	2	digit		H	s2; x2350
+23	22	62	digit	u	M	s2; x2420; gloss u with breve
+23	23	S34	sign	s	M	s2; x2520; heavy A joined to o
+23	24	4	digit		M	s2; x2590; cross with tail
+23	25	5	digit	f	M	s2; x2660; gloss f/long-s crossed
+23	26	10	digit	u	H	s2; x2720
+23	27	2	digit		H	s2; x2780
+23	28	6	digit	i	M	s2; x2830; gloss dotted i-stroke
+23	29	4	digit		H	s2; x2880
+23	30	22	digit	po	M	s2; x2990; first 2 written as a c-curl
+23	31	12	digit	a	M	s2; x3080; a ?-like hook with a dot stands above/before at x3055-3095, not read as gloss
+23	32	5	digit	d	M	s2; x3140
+23	33	10	digit	u	H	s2; x3190
+23	34	2	digit		H	s2; x3235
+23	35	60	digit	i	M	s2; x3315; gloss short stroke
+23	36	4	digit	s	M	s2; x3390; cross with tail under a tall long-s gloss
+23	37	16	digit	e	M	s2; x3450
+23	38	S69	sign		M	s2; x3520; large A with long crossbar ending in a hook
+24	1	S04	sign		H	s1; x765; hash, two strokes each way
+24	2	S33	sign	f	M	s1; x850; pi-like with R-loop top
+24	3	26	digit	e	M	s1; x945
+24	4	S21	sign		M	s1; x1025; tall long-s through a cross
+24	5	8	digit	o	M	s1; x1080
+24	6	2	digit		M	s1; x1130
+24	7	10	digit	u	H	s1; x1200
+24	8	2	digit		H	s1; x1260
+24	9	5	digit	f	M	s1; x1310; gloss l with crossbar
+24	10	5	digit	d	M	s1; x1350; thin s
+24	11	S34	sign	x	M	s1; x1395; A with gloss x/r above, joined to o
+24	12	16	digit	e	M	s1; x1480
+24	13	|	divider		H	s1; x1520
+24	14	62	digit	z	M	s1; x1575; gloss z/3 with bar
+24	15	15	digit	n	H	s1; x1665
+24	16	S21	sign		M	s1; x1725; tall long-s through a cross
+24	17	2	digit	e	H	s1; x1790
+24	18	6	digit		M	s1; x1850
+24	19	S29	sign	m	M	s1; x1905; minims 'uu' after the 6
+24	20	S64	sign	b	M	s2; x1975; z/3 with descender
+24	21	5	digit	l	M	s2; x2030
+24	22	16	digit	e	M	s2; x2080
+24	23	X?	X?		M	s2; x2170; heavy filled diagonal leaf-shaped stroke, possibly an ink blot or a heavy divider
+24	24	5	digit	d	M	s2; x2230; gloss 9/d-like, large
+24	25	26	digit	e	M	s2; x2300
+24	26	S21	sign		M	s2; x2400; tall long-s through a cross
+24	27	S29	sign	m	M	s2; x2470
+24	28	4	digit	o	M	s2; x2560; loop on the upright
+24	29	4	digit		H	s2; x2620
+24	30	7	digit	v	M	s2; x2680; gloss heavy v/y
+24	31	S64	sign		M	s2; x2730; z/3 with descender
+24	32	16	digit	e	M	s2; x2785
+24	33	15	digit	n	M	s2; x2845
+24	34	4	digit	s	M	s2; x2935; gloss 5/s-shaped
+24	35	|	divider		H	s2; x2965
+24	36	X?	X?		M	s2; x3010; Y-shaped stem with a large 9/e-loop above and an arching flourish over it (same sign as line 23 x990)
+24	37	X?	X?	f	M	s2; x3090; hook-headed stem with two thin crossbars (crossed-pound shape)
+24	38	12	digit	a	H	s2; x3160
+24	39	7	digit	u	H	s2; x3250
+24	40	5	digit	d	M	s2; x3310; large long-s-like 5 with descender
+24	41	S34	sign	x	M	s2; x3380; A joined to a small c/o
+24	42	14	digit	a	H	s2; x3450
+25	1	S37	sign	t	M	s1; x765
+25	2	26	digit	a	M	s1; x850; gloss a-like with tail
+25	3	15	digit	n	H	s1; x950
+25	4	60	digit	l	M	s1; x1040; gloss tall stroke
+25	5	S34	sign	r	M	s1; x1130
+25	6	22	digit	po	M	s1; x1255; first 2 as a c-curl
+25	7	5	digit	f	M	s1; x1360; gloss long f at x1395 between 5 and 2
+25	8	2	digit	e	M	s1; x1430
+25	9	68	digit	o	M	s1; x1500; 8 carries a heavy loop on top
+25	10	7	digit		M	s1; x1580; bar crosses the preceding 8
+25	11	16	digit	e	M	s1; x1640
+25	12	S39	sign		M	s1; x1715; small closed loop joined to a long-s descender
+25	13	14	digit		M	s1; x1780
+25	14	2	digit		H	s1; x1840
+25	15	S37	sign	t	M	s1; x1895
+25	16	62	digit	e	M	s2; x1995
+25	17	S34	sign	x	M	s2; x2100; gloss small x/k
+25	18	S28	sign	m	M	s2; x2190; c-hook joined to m
+25	19	8	digit	a	M	s2; x2290; short dash before the 8
+25	20	62	digit	e	M	s2; x2375
+25	21	S74	sign		M	s2; x2500; 4 with a c-curl on top (as line 23 x1935)
+25	22	60	digit	i	M	s2; x2630
+25	23	S21	sign		M	s2; x2730; f with crossbar
+25	24	5	digit	?	M	s2; x2810; bold p-with-box mark (pB) written above and joined by a stem to the 5, read as gloss
+25	25	64	digit	f	M	s2; x2910; bold F-like gloss (as line 22 x3350)
+25	26	26	digit	e	M	s2; x3040; line drops here
+25	27	15	digit	n	H	s2; x3140
+25	28	|	divider		M	s2; x3205; long thin slash
+25	29	5	digit	bo	M	s2; x3240; bold bo gloss
+25	30	9	digit		M	s2; x3310; ?-like hook stands above-left, not read as gloss
+25	31	4	digit	po	M	s2; x3390; bold po gloss
+25	32	4	digit		H	s2; x3450
+26	1	X?	X?	uu	M	s1; x765; bold closed D/U-like loop with a dot inside and a heavy left stem
+26	2	2	digit	e	M	s1; x810
+26	3	6	digit	?	M	s1; x860; gloss 8/&-like
+26	4	X?	X?		M	s1; x920; n-like squiggle with an open right loop and a dot after (cf S40)
+26	5	|	divider		M	s1; x1000; long thin curved stroke before the 5
+26	6	5	digit	bo	M	s1; x1030; bold bo gloss
+26	7	2	digit	r	M	s1; x1110
+26	8	8	digit	a	M	s1; x1175
+26	9	S27	sign		M	s1; x1250; double long s with crossbar
+26	10	4	digit		H	s1; x1290
+26	11	16	digit	u	M	s1; x1340
+26	12	10	digit	u	H	s1; x1440
+26	13	4	digit		H	s1; x1500
+26	14	S34	sign	u	M	s1; x1580; gloss u/y
+26	15	2	digit	i	M	s1; x1640
+26	16	6	digit		M	s1; x1710
+26	17	S33	sign		M	s1; x1770; R-like: loop on top, two legs
+26	18	X?	X?		M	s1; x1880; Y-shaped stem with a large 9/e-loop above and a flourish (as line 24 x3010)
+26	19	S53	sign		M	s2; x1970; 3-curl with a descending tail
+26	20	66	digit		M	s2; x2060; two 6 with closed heads, could be S15-like signs
+26	21	S52	sign	m	M	s2; x2180; lattice, 3 across 3
+26	22	4	digit	f	M	s2; x2280; heavy cross with tail
+26	23	60	digit	i	M	s2; x2355
+26	24	X?	X?	f	M	s2; x2450; upright crossed by two horizontal bars (double cross), tail below
+26	25	16	digit	i	M	s2; x2560
+26	26	S34	sign	x	M	s2; x2640
+26	27	14	digit	a	H	s2; x2720
+26	28	S79	sign	q	M	s2; x2820; y with heavy stroke
+26	29	|	divider		M	s2; x2880; long thin curved stroke before the 5
+26	30	5	digit	bo	M	s2; x2930; bold bo gloss
+26	31	15	digit	n	M	s2; x3020; gloss ?n (3-hook and n)
+26	32	16	digit	u	M	s2; x3090
+26	33	X?	X?	n	M	s2; x3170; 'na' minim cluster with closed a (as line 22 x895)
+26	34	S21	sign		M	s2; x3260; tall long-s through a cross
+26	35	8	digit	s	M	s2; x3310
+26	36	2	digit		H	s2; x3370
+26	37	6	digit	i	M	s2; x3410
+26	38	4	digit		H	s2; x3460
+27	1	6	digit		M	s1; x685; first token, at the ruling
+27	2	2	digit		M	s1; x750; 2 with an extra short bar above it (double stroke)
+27	3	S67	sign		M	s1; x820; 3-shape joined to a looped 2/a-like stroke
+27	4	14	digit	a	H	s1; x915
+27	5	5	digit	d	M	s1; x975
+27	6	10	digit	u	H	s1; x1045
+27	7	2	digit		H	s1; x1100
+27	8	16	digit	?	M	s1; x1180; curly gloss (e/w-like) above
+27	9	S34	sign		H	s1; x1270
+27	10	X?	X?	x	M	s1; x1350; upright crossed by two bars with hooked top (as line 26 x2450)
+27	11	6	digit		M	s1; x1400; 6 joined to the following 7 by its bar
+27	12	7	digit		M	s1; x1435
+27	13	5	digit		M	s1; x1490; flat-topped 3-like 5
+27	14	S04	sign	e	M	s1; x1560; hash with a dot before it
+27	15	X?	X?		M	s1; x1690; Y-shaped stem with a 9-loop above and a flourish over (as line 24 x3010)
+27	16	5	digit	d	M	s1; x1750
+27	17	2	digit	e	M	s1; x1810
+27	18	6	digit		M	s1; x1860
+27	19	5	digit	d	M	s1; x1925; s1
+27	20	16	digit		M	s2; x1965; s2
+27	21	9	digit	c	M	s2; x2045; 9 with long tail
+27	22	2	digit	a	H	s2; x2100
+27	23	8	digit		H	s2; x2160
+27	24	S52	sign	ac	M	s2; x2250; lattice 3 across 3
+27	25	4	digit	s	M	s2; x2360; plain cross with tail
+27	26	16	digit	u	M	s2; x2455
+27	27	|	divider		M	s2; x2515; heavy long s-like stroke
+27	28	5	digit		M	s2; x2560
+27	29	S31	sign	p	M	s2; x2595; circle standing on a cross
+27	30	12	digit	a	H	s2; x2640
+27	31	S34	sign	x	M	s2; x2730; A joined to o
+27	32	15	digit	n	H	s2; x2860
+27	33	6	digit	a	M	s2; x2950
+27	34	2	digit		M	s2; x2990; dot below-left
+27	35	S33	sign	ra	M	s2; x3080; R-like with long legs
+27	36	1	digit		M	s2; x3125; single 1 with dot above
+27	37	4	digit		H	s2; x3180
+27	38	X?	X?	x	M	s2; x3250; L-like stroke joined to plain A (cf S76, S24)
+27	39	60	digit	i	M	s2; x3315
+27	40	2	digit		H	s2; x3385
+27	41	6	digit	e	M	s2; x3470
+28	1	S12	sign		M	s1; x705; small t-like cross
+28	2	5	digit		M	s1; x760; thin long-s-like 5
+28	3	5	digit		M	s1; x810; bold 5
+28	4	16	digit		M	s1; x870
+28	5	S57	sign		M	s1; x965; c-curl with a horizontal bar ending in a hook (arrow-like G)
+28	6	w:tour	plain		H	s1; x1010; fluent cursive word written above the codes at x980-1060
+28	7	9	digit		M	s1; x1060
+28	8	2	digit	e	M	s1; x1110
+28	9	6	digit		M	s1; x1170
+28	10	S39	sign		M	s1; x1235; 9/g-like loop joined to a long s descender
+28	11	S23	sign		M	s1; x1310; x-cross
+28	12	16	digit	e	M	s1; x1385
+28	13	S44	sign	r	M	s1; x1470; loop on a long stem crossed twice (phi-like)
+28	14	4	digit	o	M	s1; x1530; small o gloss above
+28	15	4	digit		H	s1; x1580
+28	16	10	digit	d	M	s1; x1660
+28	17	2	digit		H	s1; x1720
+28	18	|	divider		M	s1; x1780; thin curved long-s-like stroke
+28	19	6	digit	rr	M	s1; x1815; gloss rr/ce
+28	20	2	digit		H	s1; x1870
+28	21	8	digit	a	M	s1; x1935; s1, centre left of tick
+28	22	X?	X?	f	M	s2; x2040; upright crossed by two bars (as line 26 x2450)
+28	23	2	digit	a	H	s2; x2100
+28	24	8	digit		H	s2; x2150
+28	25	6	digit	i	M	s2; x2210
+28	26	4	digit		H	s2; x2250
+28	27	S34	sign	z	M	s2; x2320
+28	28	16	digit	e	M	s2; x2425
+28	29	22	digit	w	M	s2; x2560; first 2 as a c-curl
+28	30	5	digit		M	s2; x2650; dot and n-like mark above at x2680 not assigned
+28	31	10	digit	u	M	s2; x2735; u gloss between 10 and 4
+28	32	4	digit		H	s2; x2810
+28	33	2	digit	e	M	s2; x2900
+28	34	6	digit		M	s2; x2960
+28	35	15	digit	n	H	s2; x3015
+28	36	60	digit	i	M	s2; x3120
+28	37	S34	sign	r	M	s2; x3220
+28	38	12	digit	a	H	s2; x3335
+28	39	S64	sign	bo	M	s2; x3420; z/3 with descender
+28	40	44	digit		M	s2; x3490
+29	1	10	digit	u	M	s1; x705
+29	2	2	digit		H	s1; x790
+29	3	S37	sign	t	M	s1; x880; cross above read as gloss t
+29	4	S21	sign		M	s1; x985; very long heavy long-s descending from above the line with a crossbar at the 5
+29	5	5	digit		M	s1; x1030
+29	6	6	digit	b	M	s1; x1070; faint b-like gloss
+29	7	4	digit		H	s1; x1110
+29	8	5	digit		M	s1; x1160; 3-like 5
+29	9	S23	sign	f	M	s1; x1265
+29	10	16	digit	e	M	s1; x1340
+29	11	X?	X?		M	s1; x1390; tall stem with a crossbar and a k-like loop to the right (cf S44, S46)
+29	12	14	digit	a	H	s1; x1475
+29	13	S31	sign	p	M	s1; x1570; circle on cross
+29	14	8	digit	o	M	s1; x1630
+29	15	2	digit	u	M	s1; x1700
+29	16	S27	sign		M	s1; x1760; tall double long-s with crossbar, left stem descends to the baseline
+29	17	4	digit		M	s1; x1800
+29	18	2	digit	e	M	s1; x1890
+29	19	4	digit		M	s1; x1945; s1, centre just left of tick
+29	20	S64	sign	?	M	s2; x2010; small 3-shape
+29	21	5	digit		M	s2; x2050
+29	22	2	digit		H	s2; x2130
+29	23	6	digit	e	M	s2; x2200
+29	24	60	digit	f	M	s2; x2295; F-like gloss with bar
+29	25	2	digit	a	M	s2; x2360; a gloss sits between 2 and 8
+29	26	8	digit		M	s2; x2440; top of 8 reads as a triangle in this crop (checked against line 30 crop)
+29	27	X?	X?	v	M	s2; x2515; crossed 7-like stroke with a 5-like curl beneath (7+5?)
+29	28	16	digit	e	M	s2; x2615; dot before it at x2555
+29	29	15	digit	n	M	s2; x2680
+29	30	10	digit	u	M	s2; x2755
+29	31	2	digit		H	s2; x2830
+29	32	4	digit	o	M	s2; x2905; o/d-like gloss
+29	33	4	digit		H	s2; x2960
+29	34	6	digit	t	M	s2; x3010; faint 6
+29	35	4	digit		H	s2; x3050
+29	36	62	digit	e	M	s2; x3130
+29	37	S60	sign	o	M	s2; x3230; rho/yogh-like curl: loop with tail curving down-left
+29	38	2	digit		M	s2; x3320
+29	39	6	digit	e	M	s2; x3400
+29	40	15	digit	n	M	s2; x3460
+30	1	S23	sign		M	s1; x720; x-cross with tail
+30	2	5	digit		M	s1; x800
+30	3	12	digit		M	s1; x880; marks above are line 29's sign
+30	4	|	divider		M	s1; x950; very long thin vertical hairline through the line
+30	5	68	digit		M	s1; x995; ll-like strokes above belong to line 29 (not read as gloss)
+30	6	16	digit	e	M	s1; x1090; grey ink blot over the 1
+30	7	S28	sign	m	M	s1; x1170
+30	8	2	digit	a	M	s1; x1260
+30	9	8	digit		H	s1; x1310
+30	10	60	digit	b	M	s1; x1405
+30	11	X?	X?		M	s1; x1510; heavy ink blot x1480-1560 covering the sign(s)
+30	12	5	digit	i	M	s1; x1570; thin s-like 5 under an i-like mark
+30	13	2	digit	e	M	s1; x1660; two blobs above between 2 and 6
+30	14	6	digit		M	s1; x1715
+30	15	S17	sign	l	M	s1; x1785; ff with crossbar
+30	16	1	digit		M	s1; x1845; 1 stands apart
+30	17	6	digit	e	M	s1; x1880; 6 with a long curved ascender sweeping up-right to x1960
+30	18	4	digit		M	s1; x1940; s1, centre left of tick
+30	19	S31	sign		M	s2; x2040; g/9-loop standing on a cross with loop
+30	20	7	digit	u	M	s2; x2110
+30	21	16	digit	e	M	s2; x2195
+30	22	X?	X?	b	M	s2; x2265; bold filled s-curl joined to a z/2 at the base, with a tall b/3-like mark above (read as gloss)
+30	23	X?	X?		M	s2; x2360; n-like squiggle with an open right loop and a dot after (as line 26 x920
+30	24	S52	sign	m	M	s2; x2455; lattice 3 across 3
+30	25	S65	sign	?	M	s2; x2535; tall open leaf-shaped loop
+30	26	26	digit	e	M	s2; x2625
+30	27	15	digit	n	M	s2; x2720
+30	28	9	digit	e	M	s2; x2780
+30	29	4	digit	o	M	s2; x2835
+30	30	4	digit		H	s2; x2900
+30	31	S34	sign	x	M	s2; x2965
+30	32	16	digit	e	M	s2; x3040; dots above x3020
+30	33	4	digit	s	M	s2; x3120; cross with long bar
+30	34	S33	sign	x	M	s2; x3210; pi-like with loop, long legs
+30	35	|	divider		M	s2; x3265; dot/short stroke after the sign
+30	36	64	digit	?	M	s2; x3305; heavy blob above (end of line 29's curl, or a gloss)
+30	37	16	digit	e	M	s2; x3390
+30	38	15	digit	n	M	s2; x3460; gloss r1-like marks read as n
+31	1	S23	sign	fa	M	s1; x725; heavy x-cross with a lead-in stroke
+31	2	12	digit		H	s1; x815
+31	3	60	digit	l	M	s1; x925
+31	4	S37	sign	t	M	s1; x1020; cross above read as gloss t
+31	5	16	digit	e	M	s1; x1140
+31	6	X?	X?	n	M	s1; x1225; 'ua' minim cluster with closed a (as line 19 x1740)
+31	7	S37	sign	t	M	s1; x1320; cross above read as gloss t
+31	8	2	digit	e	M	s1; x1430
+31	9	6	digit		M	s1; x1510
+31	10	15	digit	n	M	s1; x1575
+31	11	5	digit	d	M	s1; x1655
+31	12	S34	sign	z	M	s1; x1735; thin vertical stroke from above crosses it at x1760
+31	13	62	digit		M	s1; x1830; horizontal bar left of the 6 joins a heavy descender from line 30
+31	14	|	divider		M	s1; x1890; long diagonal slash
+31	15	X?	X?		M	s2; x1955; heavy hooked horizontal stroke with a long descender (hook-and-drop shape), centre near the tick
+31	16	S14	sign		M	s2; x2040; large spiral E-like curl with a wide arc above and a descender below
+31	17	10	digit		M	s2; x2090
+31	18	2	digit		H	s2; x2130
+31	19	64	digit		M	s2; x2215
+31	20	|	divider		M	s2; x2270; thin long-s stroke directly before the minims
+31	21	S29	sign	m	M	s2; x2310; three minims
+31	22	2	digit		M	s2; x2490
+31	23	6	digit		M	s2; x2545; could be 26 with the 2
+31	24	X?	X?	fait	M	s2; x2630; pound-like sign: z/2 with a looped left stroke and a crossbar
+31	25	9	digit	t	M	s2; x2730
+31	26	1	digit	x	M	s2; x2790; lone 1
+31	27	6	digit	e	M	s2; x2850
+31	28	15	digit	n	M	s2; x2925
+31	29	4	digit	s	M	s2; x3005; cross
+31	30	2	digit	e	M	s2; x3085
+31	31	6	digit		M	s2; x3140
+31	32	S34	sign	x	M	s2; x3210
+31	33	S79	sign	q	M	s2; x3295; V with a long stem descending below the line
+31	34	5	digit	l	M	s2; x3365; L-like gloss between 5 and 1
+31	35	16	digit	e	M	s2; x3440
+32	1	S36	sign		M	s1; x715; heavy x crossed by a tall long-s stroke rising above the line
+32	2	9	digit	c	M	s1; x790; dot before the gloss c
+32	3	17	digit	h	M	s1; x875; gloss 6/h-like
+32	4	4	digit	o	M	s1; x985
+32	5	4	digit		H	s1; x1030
+32	6	|	divider		M	s1; x1110; long heavy wedge stroke descending below the line
+32	7	8	digit		M	s1; x1160; small 8/delta-like with a dot
+32	8	6	digit	e	M	s1; x1225
+32	9	2	digit		H	s1; x1265
+32	10	4	digit	s	M	s1; x1340; tall long-s gloss above
+32	11	15	digit	n	M	s1; x1435
+32	12	4	digit	y	M	s1; x1530; cross with a long diagonal tail
+32	13	S64	sign		M	s1; x1570; 3-shape with tail after the cross
+32	14	S36	sign		M	s1; x1640; heavy x crossed by a tall long-s stroke rising above
+32	15	8	digit	o	M	s1; x1700
+32	16	2	digit		H	s1; x1750
+32	17	X?	X?	n	M	s1; x1830; 'ua' minim cluster with closed a (as line 19 x1740)
+32	18	S37	sign	t	M	s1; x1915; cross above read as gloss t
+32	19	S35	sign		M	s2; x2080; long heavy long-s with a small s at its right
+32	20	4	digit	y	M	s2; x2150; cross with a long diagonal tail
+32	21	S64	sign		M	s2; x2180; 3-shape with tail
+32	22	2	digit		H	s2; x2250
+32	23	6	digit	e	M	s2; x2300
+32	24	X?	X?		M	s2; x2355; heavy wedge-shaped stem with a hooked head curling right, joined at its base to a bar (4-like)
+32	25	9	digit	c	M	s2; x2430
+32	26	17	digit	h	M	s2; x2490; gloss 6/h-like
+32	27	12	digit	a	M	s2; x2610; gloss a over the 1, dot over the 2
+32	28	10	digit	u	M	s2; x2720; cross above belongs to line 31
+32	29	2	digit		M	s2; x2780; sits low under the following A
+32	30	S34	sign		M	s2; x2815; A joined to small o, written higher than the digits
+32	31	6	digit		M	s2; x2870
+32	32	6	digit		M	s2; x2920
+32	33	18	digit	u	M	s2; x2975; gloss u with two dots
+32	34	4	digit	s	M	s2; x3060; long-s gloss with a long head stroke
+32	35	|	divider		M	s2; x3110; thin diagonal slash
+32	36	9	digit	c	M	s2; x3145
+32	37	8	digit	o	M	s2; x3195; bold 8
+32	38	7	digit	umm	M	s2; x3265; gloss 'umm' spans 7 and 6, continued by a long horizontal line above 16 to the margin
+32	39	6	digit		M	s2; x3310
+32	40	16	digit		M	s2; x3395
+33	1	5	digit		M	s1; x715; small s-shaped 5
+33	2	S31	sign		M	s1; x815; 9-loop standing on a crossbar with a descending tail
+33	3	S17	sign	t	M	s1; x925; heavy ff with crossbar, both legs descending
+33	4	2	digit		H	s1; x1010
+33	5	6	digit	e	M	s1; x1065
+33	6	X?	X?		M	s1; x1115; heavy wedge-shaped long stroke crossing an A/4-like mark (same sign as line 32 x2355)
+33	7	16	digit	e	M	s1; x1215
+33	8	06	digit	uu	M	s1; x1305; o-shaped 0 then 6
+33	9	62	digit	e	M	s1; x1400; gloss e/r-like
+33	10	S29	sign	?	M	s1; x1530; three minims
+33	11	60	digit		M	s1; x1665
+33	12	4	digit		M	s1; x1740; cross with long bar
+33	13	|	divider		H	s1; x1790
+33	14	10	digit	u	M	s1; x1830
+33	15	2	digit		H	s1; x1895
+33	16	4	digit	o	M	s2; x2050
+33	17	4	digit		H	s2; x2100
+33	18	10	digit	u	M	s2; x2170
+33	19	4	digit		H	s2; x2255
+33	20	5	digit	f	M	s2; x2300; bold 5
+33	21	5	digit	d	M	s2; x2350; small 5
+33	22	S34	sign	r	M	s2; x2420
+33	23	8	digit	o	M	s2; x2490
+33	24	2	digit		H	s2; x2590
+33	25	6	digit	i	M	s2; x2650; stroke above
+33	26	4	digit		H	s2; x2690
+33	27	16	digit	e	M	s2; x2760
+33	28	15	digit	n	M	s2; x2855
+33	29	S37	sign	t	M	s2; x2960; cross above read as gloss t
+33	30	X?	X?		M	s2; x3060; upright crossed by two long horizontal bars (as line 26 x2450)
+33	31	12	digit		M	s2; x3160
+33	32	w:fau	plain		M	s2; x3230; fluent cursive 'Fau..' written above x3170-3300 with a long horizontal line to x3480 ending in a hook
+33	33	60	digit		M	s2; x3250
+33	34	S34	sign		M	s2; x3320
+33	35	2	digit		H	s2; x3410
+33	36	6	digit		M	s2; x3465; last token of the letter
