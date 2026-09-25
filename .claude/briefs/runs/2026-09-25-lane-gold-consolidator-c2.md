@@ -1,4 +1,4 @@
-JOB GOLD-CONS2: LANE GOLD consolidator, cycle 2 (both targets). Fable (claude-fable-5-1). Stop and push at $15 or 60 minutes, whichever first. No subagents. Lane: LANE GOLD2 orchestrator session_013JXDgLDkW2y5Ldi2gWzTkY (Fable). Written 25 Sept 2026 21:08 UTC by the orchestrator from the three cycle-2 done lines pasted below.
+JOB GOLD-CONS2: LANE GOLD consolidator, cycle 2 (both targets). Fable (claude-fable-5-1). Stop and push at $15 or 60 minutes, whichever first. No subagents. Lane: LANE GOLD2 orchestrator session_013JXDgLDkW2y5Ldi2gWzTkY (Fable). Written 25 Sept 2026 21:06 UTC by the orchestrator from the three cycle-2 done lines pasted below.
 
 INTAKE_GATE_OUTPUT (live, 21:05 UTC): koehler-1944: open (line 1) -- edition/page or full-text-search citation found within 6 lines (exit 0) | debosnys-1883: open (line 1) -- edition/page or full-text-search citation found within 6 lines (exit 0)
 
