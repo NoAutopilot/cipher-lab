@@ -1,4 +1,4 @@
-LANE B4 access worker bUNT3: untersberg-code, the Salzburg Museum Hs. 2398 catalogue entry and image. Sonnet (claude-sonnet-5). Cap $2.50 or 25 minutes from your first `date -u`, whichever first. No subagents. Parent: LANE B4 orchestrator session_01V2WMavWGMeAUYELUpmyEcX (written 25 Sept 2026 22:14 UTC).
+LANE B4 access worker bUNT3: untersberg-code, the Salzburg Museum Hs. 2398 catalogue entry and image. Sonnet (claude-sonnet-5). Cap $2.50 or 25 minutes from your first `date -u`, whichever first. No subagents. Parent: LANE B4 orchestrator session_01V2WMavWGMeAUYELUpmyEcX (written 25 Sept 2026 about 22:11 UTC; clock read 22:10).
 Common rules: `.claude/briefs/runs/2026-09-25-lane-b3-common.md` (it governs; read "LANE B3" as "LANE B4") and `.claude/briefs/runs/2026-09-25-lanes-7b-COMMON.md`.
 
 Why: the Untersberg text is shaped like scribal abbreviation (NEAR.md row), and the expander's control was weak because the transcription is a blog reproduction; the named next step is the primary source, Salzburg Museum Hs. 2398 (found by bSPEC2; see specs/untersberg-code.json and ciphers/untersberg-code/NOTES.md).

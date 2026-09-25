@@ -593,3 +593,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T22:10Z	session_01AFmS8KELthEFN3kSBYw4qM	bUNT2 done $1.56 D, archived	untersberg expander weak control, no reading
 2026-09-25T22:10Z	session_01GpZDqE883ZSyLrPTUFm2sJ	bBUL3 done $2.87 N, archived	bullet indicator: M-209 form only, parked
 2026-09-25T22:10Z	session_01QoNRugzSd25fspP8nwNNbN	bSPEC3 done $1.25 N, archived	ranks 31-41: 0 specs / 11 no spec
+2026-09-25T22:12Z	session_01381WRXGttryywgiDbmXB9B	bCEN (Sonnet, cap 3)	censorship-manual-stego test 1 (scienceblogs.de holder)	LANE B4 brief
+2026-09-25T22:12Z	session_01ENRheqa2wuDyK4Jo4GYWjU	bUNT3 (Sonnet, cap 2.5)	untersberg-code Hs. 2398 catalogue/image lookup	LANE B4 brief
