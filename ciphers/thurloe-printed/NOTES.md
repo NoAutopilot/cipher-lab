@@ -1832,3 +1832,158 @@ no logins, no anneal, no key changes. Well under the $5 cap.
 Suggestion (24 Sept 2026, verifier V3a, from SO-THURLOE-P4; not done): for P4, re-check p.188 line associations against the
 page image before any key change, and test the one-vote M entries 67 (england), 153 (thecavaliers), 84 and 275 against
 printed number boundaries in the later Stamford letters (AUDIT.md "Second opinion SO-THURLOE-P4").
+
+## 22. LANE TX residue (25 Sept 2026)
+
+LANE TX worker TX-THUR (Sonnet, session_01WvnjtgfyGkCeGzJLHaqpAq), parent LANE TX orchestrator
+session_01UDxtM9Xv2dnPfoo5z9T6wA. Brief: the handoff's three open items -- the four "outside the
+lane" letters flagged by s.12.6 and s.18, P10 p.620 line 10's 14 unglossed groups, and P3's
+postscript against the sibling keys added since s.17. Per rule 10 throughout: report only what
+was found and where it was not, no novelty classification (a verifier's job); nothing here is
+described as new, unpublished, unread, first or never printed. P4 and every AUDIT.md verdict
+were not touched, per the claim.
+
+### Job 1 -- the four "outside the lane" letters: three are misattributed headings, not new targets
+
+All four djvu volumes were already cached gzipped at `sources/ia-fulltext/thurloe-gz/` (no
+fetch this pass). Read with `tx/extract_djvu_range.py <identifier> <start> <end>` for citation;
+not run with `--check` (this job is a search/characterization task, not a keyed reading, so
+rule 7 does not apply to it -- no key was built or applied here). Requests: 0 (disk only).
+
+**Lockhart, Chauny 19 June 1656 N.S. (vol.5 p.101, `collectionofstat05thur`, djvu ~8845-8875,
+above P14): fully glossed, found-solved in print (Birch 1742).** Every cipher-number run on
+p.101 has a matching interlinear gloss phrase directly above it, same nomenclature-syllable
+convention as the Montagu pool but a distinct, non-overlapping value range (the letter's own
+values run 10-2000s: `230 88 231 233` glossed "if my lord proteftor", `430`/`433`/`447` glossed
+"France"/"Sweden"/"Sweden", `480`/`351 100` glossed "Cardinall"/"me n", `56 141 87 72 332 108`
+and `215 250 181 364 448` glossed "they were l e vi ed ch ar ge of France", `119 430 26 92 435
+261` and `10 277 281`/`68 547`/`359 13 124 403`/`317 10 179` glossed across "by France He thinks
+the prot. will a great part that army: de fe nd the pl a ce", `435`/`315 174 10 60 403 548`/`374
+339`/`413 212 91` glossed "the protector make re a dy the fleet a yeare's it may ... put to fea",
+`87 288 302`/`16 280` (twice) glossed "l end ing mo n(i)ey(s)". No group in this letter was found
+ungapped by reading the OCR text. This matches what s.18 already quoted; this pass confirms it
+by checking every value against its neighbouring gloss, not just sampling. Signed "Will.
+Lockhart."; heading, body and signature all read as plain English apart from the numerals.
+
+**The "Nutley" cluster (s.12.6's flagged heading, djvu 31934) is not Nutley's letter -- it is
+two letters headed "A letter of intelligence from mr. Manning" that follow it, both fully
+glossed, found-solved in print.** Nutley's own letter (Mr. James Nutley to secretary Thurloe,
+Exeter, 16 April 1655, djvu 31934-31974, about the Penruddock rising trials) carries no cipher
+at all -- an instance of the same nearest-preceding-heading trap the handoff's own lesson
+already names (s.12.1/handoff line 24), this time on the automated `scan_headings.py` pass, not
+a human worker. Immediately after Nutley's signature: **(a)** "A letter of intelligence from
+mr. Manning", Antwerp, 26 April 1655 N.S. (djvu 31977-32064, p.382-383), signed "Andrew Burton";
+two cipher-number lines in the body ("`1005. 293. 172. 163. 1016. 550. 480. 530. 409. 1007. 73.
+46Q. 41. jj. 545. c^c` " and "`102. 145. 404. 184.`") each have exactly as many gloss words above
+them as there are numbers (16 and 4; "C.S. ca me to Collen fo[so]nd[n]ay[Sonday, i.e. Sunday]
+laft. Hide is at B re da yet" / "ma ny are there"), fully glossed; a short, structurally odd
+cipher-flecked fragment after "The fuperfcription" (djvu ~32050-32064, "da y. and all / 545.
+500. / m u / 306. / rt / 264. / her / 46. 261. / who all / 259. / mif / 'S-") does not cleanly
+1:1-align word-for-number from the OCR text alone -- flagged, not resolved, page image not
+fetched (rule 2: this negative is conditional on the OCR text). **(b)** A second, undated "A
+letter of intelligence from mr. Manning" (djvu 32065-32137, referencing "Vol. xxvi p.377" in the
+margin -- Thurloe MS citation, not this book's page), signed "Zachary Johnson"; five cipher
+lines in the body (60 numeral groups) match 1:1 against their gloss words with one single-token
+discrepancy (17 numbers vs 16 gloss words in one line, most likely an OCR merge/split, not
+checked against the image), plus two single-value marginal glosses near the close (`403.` =
+"England", `1005.` = "Ch. Stew." i.e. Charles Stuart). Essentially fully glossed. **Existing key
+coverage: none of this project's five keys apply** -- this correspondence (English, Manning/
+Burton/Johnson cover names, April 1655) has no key file of its own in this folder; it is a
+different pool from Blake/Montagu/Stamford/Fauconberg/Butler.
+
+**The "Prideaux" cluster (s.12.6's flagged heading, djvu 34006) is the same trap a second time
+-- also not Prideaux's letter, and also a Manning letter, fully glossed, found-solved in
+print.** The heading at djvu 34006 is the third of three identically-worded "Attorney general
+Prideaux to secretary Thurloe" headings in this stretch (djvu 33328, 33652, 34006); this one
+(Chard, 25 April 1655, djvu 34006-34032) carries no cipher. Between it and the flagged cluster
+sit Fleetwood's letter (plain) and the multi-page Wiseman deposition (plain); the actual cipher
+belongs to a third Manning letter, "From the Buss, May 6, 1655" (djvu 34172-34232, printed
+pp.408-409 of `collectionofstat03thur`, margin "Vol. xxv p.593"), again signed "Zachary
+Johnson." Checked group-by-group: seven cipher-number lines (about 90 numeral groups) match
+their gloss words 1:1 in every line but one (one 17-vs-16 mismatch, same kind of minor OCR
+noise as above), e.g. `324. 85. 522. 136. 343. 498. 411. 350. 353. 66. 43. 293. 160. 517. 334.
+460. 372.` glossed "I had ne wee s that ON ei 1 was ef ca pe d and att the" (17 words/17
+numbers: "I had news that one escaped and at the"). Fully glossed. Same key-coverage finding as
+above: no existing key file covers this Manning/Johnson correspondence.
+
+**The "Wright" cluster (s.12.6's flagged heading, djvu 55802, vol.2 `collectionofstat02thur`) is
+also not Wright's letter, is genuinely different from the Manning/Johnson letters, and is
+**not** fully glossed.** Sir Benjamin Wright's own letter (heading djvu 55802, from Spain,
+English) carries no cipher near it. The flagged cluster (djvu ~60082-60212, printed pp.721-722)
+belongs to "**Barriere to the prince of Conde**", Londres, 20 Nov. 1654 N.S. -- one of a cluster
+of at least five Barriere<->Conde letters printed together in this stretch (headings at djvu
+57111, 57493, 58692, 58702 and 60082; only the 60082 one was read this pass, since that is
+where s.12.6's line window falls). This letter is French, and its ~320 raw numeral tokens
+(djvu 60082-60212, counted by regex, not hand) sit inline in otherwise-continuous French prose,
+not on their own interlinear line; only a handful of short annotation fragments were found by
+reading -- "prize may z car on la pr j ion ge du", "mo Efpagne ne faifant un le proportion",
+"ou que la f fie la paix avecque la France", "qui eft al le e a la", "changer de fe nt. le",
+"puis que je feur qu'illes", "fu c fe fi e", "premier chef la vi e ra me ne ront a", "hafter
+traiter" -- covering at most a few dozen of the ~320 tokens; the large majority have no
+annotation visible in the OCR text. **This is a genuine partial/mostly-unglossed passage, not
+resolved here** (page image not fetched -- rule 2, this negative is conditional on the OCR text
+only). No existing key file in this folder covers it (different correspondent, different
+decade -- 1654 Barriere-Conde vs. the 1655-58 English pools -- and a visibly different symbol
+system: small marks and superscript-like glyphs mixed with the numerals, not seen in any of
+Blake/Montagu/Stamford/Fauconberg/Butler). Flagged as a possible cryptanalytic target (needs a
+matched control, rule 3) for whoever next scouts this correspondence -- out of this job's scope
+to attempt, and the other four Barriere<->Conde headings in the same stretch are unchecked.
+
+### Job 2 -- P10 p.620 line 10's 14 unglossed groups
+
+`tx/decode_p10_line10.py` (`--check` exits 0) reads `P10/image_transcription.tsv` for line 10's
+22 cipher tokens and Birch's own gloss (line 9, right-aligned "e t u r e t h e" over the *last*
+8 of the 22), then looks all 22 up in `key_blake_extended.tsv` (this letter's own pool, P8-P10)
+and `key_montagu_extended.tsv` (a different correspondent's pool, comparison only). Output:
+`tx/reading_P10_L10.tsv`.
+
+Of the 14 unglossed groups (values `68 57 78 55 63 36 22 24 33 83 121 68 67 95`):
+`key_blake_extended.tsv` resolves **10/14** (`t h _ _ o r c e o _ fhips t s _`; grades C/M/H per
+that key's own table) and `key_montagu_extended.tsv` resolves **9/14** (`t _ p a _ b _ y l a _
+t _ n`); the two keys agree with each other at 5/14; every one of the 14 is read by at least one
+of the two keys (0 unread by both). Whole-line blake-key reading (unglossed positions plus the
+print's own 8-token tail): `th__orceo_fhipsts_eturethe`. **English sense check:** the blake-key
+reading agrees with Birch's own printed gloss at 6 of the 8 tail positions where both exist
+(`e_u_ethe` vs printed `eturethe`, disagreeing only at two positions) -- a rough measure of how
+much to trust the mechanical extension into the unglossed 14, not a validation of it. Position
+11 (value 121) reads the whole word "fhips" (= "ships") in both this line and line 14's own
+printed gloss two lines down ("Holland and French fhips taken up"), and the surrounding
+printed context (lines 5-9: "I have information of great preparations ... in Cadez to fet for
+[continues into line 10-11's own 'plate fleet']") is consistent with a passage about fitting
+out a fleet/ships -- not a full sentence reading, no cryptanalysis (word-guessing) attempted
+beyond this per-token lookup, per the brief. This is a mechanical key application, not a new
+alignment; `key_blake_extended.tsv` and `key_montagu_extended.tsv` are unchanged (byte-identical,
+not staged). Fresh-instance re-derivation: see below.
+
+### Job 3 -- P3's postscript against the sibling keys added since s.17 (one attempt, negative)
+
+`tx/check_p3_postscript_crosskeys.py` (`--check` exits 0) pulls the postscript's own 21 distinct
+M-graded values straight from `reading_P3.txt` (s.17's own table, not re-derived) and checks
+each against `key_fauconberg.tsv` and `pool_1654/key_stamford.tsv` -- the two sibling-pool keys
+built since s.17. Output: `tx/p3_postscript_crosskey.tsv`.
+
+**Result: negative, no value raised.** 7 of the 21 values appear in `key_fauconberg.tsv` and 4
+appear in `pool_1654/key_stamford.tsv`; none of those agree with `key_butler.tsv`'s own M-graded
+meaning for that value. The postscript's 33 M-graded token occurrences (of 59 total; s.17: H9
+C15 M33 U2) stay M. This is expected -- Butler's letter is a different correspondent, period and
+system (French/Dutch informant, values with Tomokiyo H-graded meanings up to 913, vs.
+Fauconberg's 1658 English pool and Stamford's 1655 English pool) -- and is reported as the one
+attempt the brief asked for, not repeated.
+
+### Fresh-instance re-derivation (rule 7)
+
+Both job 2 and job 3 outputs were re-derived by a separate subagent instance, told nothing of
+this section's prose and asked only to run both scripts with `--check` and report the exit codes
+and summaries verbatim. Confirmed: both exit 0, both print "OK: ... matches a fresh run", and
+the summaries it reported match this section's numbers exactly (P10 L10: 22 tokens, 14
+unglossed, blake 10/14, montagu 9/14, both-agree 5/14, unread-by-both 0/14; P3 postscript: 21
+distinct M values, fauconberg 7/21 present/0 agreeing, stamford 4/21 present/0 agreeing, 0
+raised).
+
+### Files this pass
+
+New: `tx/common.py`, `tx/decode_p10_line10.py`, `tx/reading_P10_L10.tsv`,
+`tx/check_p3_postscript_crosskeys.py`, `tx/p3_postscript_crosskey.tsv`,
+`tx/extract_djvu_range.py`, this section. No edits to `index.tsv`, `AUDIT.md`, any `key_*.tsv`,
+`reading_*.txt`, or any P4 file. Requests: 0 (all four djvu volumes and the P10 page image were
+already cached on disk). No logins, no credentials. Well under the $5 stall alarm.

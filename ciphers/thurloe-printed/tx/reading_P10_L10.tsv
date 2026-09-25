@@ -1,0 +1,23 @@
+pos	value	printed_gloss	blake_meaning	blake_grade	montagu_meaning	montagu_grade	status
+1	68		t	C	t	C	unglossed_in_print
+2	57		h	M		U	unglossed_in_print
+3	78			U	p	M	unglossed_in_print
+4	55			U	a	C	unglossed_in_print
+5	63		o	C		U	unglossed_in_print
+6	36		r	H	b	C	unglossed_in_print
+7	22		c	C		U	unglossed_in_print
+8	24		e	H	y	C	unglossed_in_print
+9	33		o	H	l	C	unglossed_in_print
+10	83			U	a	C	unglossed_in_print
+11	121		fhips	C		U	unglossed_in_print
+12	68		t	C	t	C	unglossed_in_print
+13	67		s	M		U	unglossed_in_print
+14	95			U	n	C	unglossed_in_print
+15	24	e	e	H	y	C	glossed_in_print
+16	22	t	c	C		U	glossed_in_print
+17	39	u	u	H	d	C	glossed_in_print
+18	96	r	t	C	h	M	glossed_in_print
+19	54	e	e	H	r	C	glossed_in_print
+20	38	t	t	H		U	glossed_in_print
+21	27	h	h	C	n	C	glossed_in_print
+22	24	e	e	H	y	C	glossed_in_print
