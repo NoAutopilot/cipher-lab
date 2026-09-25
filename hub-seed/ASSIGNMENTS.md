@@ -468,3 +468,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T17:17Z	session_01Mm3Ez9uXdarTGdxaCxezPQ	LANE R6 L1c done $3.19 D, archived	salviati f55v pass C	334 tokens
 2026-09-25T17:15Z	session_01JfbSKy1t6b5fuLQexnv8KL	LANE R6 L2b (Sonnet, cap 8)	salviati f56r pass B 11-19 + gate	brief 2026-09-25-lane-r6-l2b-l5c-salviati-finish.md
 2026-09-25T17:15Z	session_01Tswh7FNr6HZppsfKZ8ChJU	LANE R6 L5c (Sonnet, cap 5)	salviati f57v pass C	same
+2026-09-25T17:17Z	session_01UP2nZhnHzDiGi7HR29obCr	LANE R6 Y9 (Sonnet, cap 6)	berthier-napoleon-1812 plate + crib	brief 2026-09-25-lane-r6-y9-berthier.md
