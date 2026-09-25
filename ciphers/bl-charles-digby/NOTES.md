@@ -1,4 +1,80 @@
-open
+found-solved
+Wheatstone's 1862 published decipherment (Philobiblon Society *Miscellanies*, read in full by this worker via
+*The Scientific Papers of Sir Charles Wheatstone*, archive.org id `the-scientific-papers-of-sir-charles-wheatstone`,
+pp.321-330) matches BL Add MS 6912's own catalogue record (`searcharchives.bl.uk/catalog/032-003442981`, read in
+full) on physical description, date range and acquisition mode — a strong circumstantial identification (the
+pamphlet itself states no shelfmark), not a documentary certainty.
+
+## Check-solved (LANE CX, 25 Sept 2026) — Wheatstone match resolved: found-solved
+
+The prior sweep (24 Sept 2026, below) found Wheatstone's 1862 pamphlet but could not confirm it was Add MS 6912
+specifically, because neither the pamphlet nor the *Notes and Queries* bibliography entry gives a shelfmark. This
+pass fetched the pamphlet's own full text and the BL's individual catalogue record (not just the QUEUE row's
+truncated quote) and compared them point by point:
+
+1. **The pamphlet itself, read in full.** Fetched
+   `ia600901.us.archive.org/9/items/the-scientific-papers-of-sir-charles-wheatstone/...djvu.txt` (1 request; this
+   volume of Wheatstone's collected scientific papers reprints the 1862 Philobiblon Society piece complete,
+   pp.321-330, found via `be-api.us.archive.org/fts/v1/search?q="pour le Sieur de Goffe"`, which also returned the
+   *Notes and Queries* 1877 bibliography hit from the prior pass among 15 total hits). It contains Sir Henry
+   Ellis's covering letter of 1 June 1858 to Wheatstone, quoted verbatim: "A good many years ago the Trustees of
+   the British Museum purchased, at a large price, what appeared, and no doubt must be, a very important document
+   in cipher; occupying seven folio pages closely filled with numerals; every page signed at top by King Charles
+   the First, and countersigned below by Lord Digbye." The deciphered text itself is headed "INSTRUCTIONS POUR LE
+   SIEUR DE GOFFE" and concerns "le marriage du prince et la princesse" — i.e. the 1641 marriage of Prince William
+   of Orange to Princess Mary, Charles I's daughter — addressed to the agent Stephen Goffe for delivery to the
+   Prince of Orange.
+2. **BL's individual catalogue record, read in full** (not just QUEUE's truncated quote): fetched
+   `searcharchives.bl.uk/?q=Add+MS+6912&search_field=all_fields&format=json` then
+   `searcharchives.bl.uk/catalog/032-003442981.json` (2 requests). Fields, quoted verbatim: `scope_and_content_tsi`
+   "Long original paper in cypher, signed by King Charles I, and countersigned by George, Lord Digby, on every
+   page. It has originally been indorsed 'Instructions for Digbie'."; `date_range_tsi` "1640s" (`start_date_tsi`
+   1640, `end_date_tsi` 1649); `extent_tsi` "1 volume (5 folios)"; `source_of_acquisition_tsi` "Purchased in
+   18--".
+3. **Four points of agreement, none individually conclusive, jointly strong:**
+   - Physical description is essentially verbatim: "every page signed at top by King Charles the First, and
+     countersigned below by Lord Digbye" (Ellis, 1858) vs "signed by King Charles I, and countersigned by George,
+     Lord Digby, on every page" (BL catalogue). A page-by-page Charles-I-signs/Digby-countersigns pattern is an
+     unusual, specific detail unlikely to recur by chance across two different manuscripts.
+   - Date range: BL's 1640-1649 bracket squarely contains 1641, the year of the Orange marriage the deciphered
+     text is about.
+   - Acquisition mode: BL's "Purchased in 18--" matches Ellis's account of a Trustees' purchase "at a large
+     price", rather than a gift, bequest or transfer — a distinguishing, not generic, provenance fact.
+   - Extent: BL's "5 folios" is compatible with Ellis's "seven folio pages" (a folio has two sides; five folios
+     can carry up to ten written pages, so seven written pages fits without contradiction), though this point
+     alone would not discriminate a match from a near-miss.
+   - Set against this: the pamphlet's own heading names Goffe, and the BL docket names Digby — but these are not
+     in tension once read as different things (the docket is who the instructions were entrusted to /
+     countersigned by; the enciphered text's own internal heading is who the mission's instructions are for), the
+     same resolution the 24 Sept pass already proposed without being able to confirm it.
+   - No source read by either pass states the BL shelfmark inside the pamphlet or the *Notes and Queries* entry;
+     the identification rests entirely on this multi-point circumstantial match, not a documentary link.
+4. **Bruce, *Charles I in 1646* (Camden Society, 1856)**, checked per this batch's job brief: fetched in full
+   (`archive.org` id `charlesiinlette00chargoog`, `_djvu.txt`, 1 request) and grepped for cipher/cypher/Digby/
+   Goffe (30 hits). This is a **different** correspondence — Charles I's own letters in cipher to Queen Henrietta
+   Maria, 1646, deciphered by Bruce's own 19th-century key — with no mention of Goffe, the Orange marriage, or a
+   document matching Add MS 6912's description; Digby appears only as a name in the letters' content (recipient
+   of instructions elsewhere), not as a countersigning party to any cipher discussed. Ruled out as the relevant
+   edition for this item.
+
+**Verdict: found-solved, README class F1** (the plaintext is in print — Wheatstone's 1862 decipherment — but BL's
+own catalogue record for Add MS 6912 does not cite it, so the specialist catalogue does not link this manuscript
+to its published reading). Not "new"; not "first" (rule 10) — Wheatstone read and published this 164 years before
+this sweep, if the identification holds. **What this leaves to hand on:** (a) Wheatstone's full translation and
+his numeral-substitution key (letters + a French vocabulary keyed by number, e.g. 320=les/the, 376=pour/for,
+474=Angleterre, 495=le roi d'Angleterre) are already in `/tmp/wheatstone_papers.txt` this session (not committed;
+pp.321-330 of the archive.org text) and should be transcribed into this folder as a machine-readable key/reading
+if the identification is confirmed; (b) a correction to BL's own catalogue record (it cites no published
+decipherment) is a contribution in its own right, independent of whether Add MS 6912 is or is not this exact item.
+**Confidence and what would raise it to certain:** examining the physical item (or a photograph) against
+Wheatstone's plate of the cipher key, or finding the pamphlet's own manuscript source note (the Philobiblon
+Society's presentation copies sometimes name the lending institution and shelfmark on a flyleaf not reprinted in
+the *Scientific Papers* reprint) would settle it; this worker did not attempt either (out of scope: no images, no
+cryptanalysis). A verifier session should treat this as the primary open question before any outward report.
+
+Requests this pass: `archive.org`-family 3 (`be-api.us.archive.org/fts/v1/search`, the Wheatstone scientific-papers
+`_djvu.txt`, the Bruce 1856 `_djvu.txt`), `searcharchives.bl.uk` 2 (search + individual record JSON). No
+subagents, no images, no logins.
 
 # King Charles I's cipher instructions countersigned by Lord Digby — BL Add MS 6912
 
@@ -73,6 +149,9 @@ the sense that rule requires. The match is close enough that this is not treated
 caveat below.
 
 ## Verdict
+
+**(superseded by the found-solved verdict at the top of this file, LANE CX, 25 Sept 2026 — the Wheatstone
+identification this section calls "a check this sweep could not complete" was completed in that pass.)**
 
 **Open, stage 2 verified unsolved (conditional on a check this sweep could not complete): whether BL Add MS
 6912 is the same document Wheatstone deciphered and published in 1862, or a sibling in the same

@@ -1,4 +1,50 @@
 open
+Clarke's *Life of James the Second* vol.1 (archive.org `lifeofjamessecon01inne`, full text read/grepped by this
+worker, its 1669 section at lines ~30281-30650 read directly) and CSP Domestic Charles II, Oct.1668-Dec.1669
+(archive.org `sim_..._october-1668-december-1669`, full text read/grepped) both searched for cipher/cypher/
+decipher with a control (both terms independently confirmed present and searchable elsewhere in the same
+corpus): no hit connects to the Duke of York or to Add MS 21483's 1669 letters.
+
+## Check-solved (LANE CX, 25 Sept 2026) — the two named editions closed out
+
+The prior sweep (24 Sept 2026, below) identified Clarke's *Life of James the Second* and CSP Domestic 1669 as the
+two standard sources to search but did not complete either full-text search. This pass did both:
+
+1. **Clarke, *Life of James the Second* (1816), vol.1.** Fetched
+   `ia601804.us.archive.org/32/items/lifeofjamessecon01inne/lifeofjamessecon01inne_djvu.txt` (1 request) and
+   grepped for "cipher"/"cypher"/"decipher" (case-insensitive): 5 hits total in the whole volume, at lines 5206,
+   5212, 5230 (a different, 1647 episode — the Duke's own cipher during his 1648 escape attempt as a boy, given to
+   Mrs Kilvert and later claimed burnt — not 1669), 21224 (a figurative use, "meer Cypher", unrelated), and 43483
+   (also figurative, unrelated). The volume's own 1669 section (James's conversation with Fr. Simons about
+   converting to Catholicism, lines ~30281-30650, confirmed as the actual 1669 material by its own page dating)
+   contains none of the 5 hits — read directly, no cipher/cypher/decipher word appears in it. Control: the search
+   does return real hits elsewhere in the same file (the 1647 episode), confirming the absence in the 1669 section
+   is a genuine negative, not a broken search. `lifeofjamessecon01inne` is a single volume (47,243 lines,
+   1633-1701 in one book per its own running dates); no second volume was located or needed.
+2. **CSP Domestic, Charles II, Oct.1668-Dec.1669.** Located via `archive.org` advancedsearch
+   (`title:(calendar state papers domestic charles 1668)`, 1 request) as
+   `sim_great-britain-public-record-papers-domestic-charles-ii_october-1668-december-1669` — exactly the volume
+   covering 1669. Fetched its `_djvu.txt` (1 request, 113,914 lines) and grepped "cipher"/"cypher": 3 hits. Line
+   15334, Capt. Ant. Deane to Williamson, "a letter in character (cypher) to my friend" about French ship
+   intelligence — unrelated correspondents, no Duke of York connection. Line 26956, a naval muster certificate for
+   HMS Sapphire with "shorthand notes, undeciphered", 16 Jan. 1669 — a different kind of encoding (shorthand, not
+   cipher), unrelated subject (ship's company numbers), no Duke of York connection. Line 112860, an index entry
+   "Venetian Ciphers" (diplomatic correspondence of the Venetian ambassador, a routine calendar cross-reference,
+   not this item). Control: "duke of york" appears 73 times in this same volume (routine references, calendared in
+   detail), confirming the calendar's coverage of the Duke reaches this volume and a genuine cipher item involving
+   him would very likely be indexed; none of the 73 mentions coincides with a cipher/cypher hit. No entry
+   resembling Add MS 21483's ff.1-8 (anonymous political letters with a partial name-key) found.
+3. Community lists, DECODE, Bourdeau, Aymeloglu: unchanged from the 24 Sept pass below (all negative for this
+   shelfmark), not re-run this pass.
+
+**Verdict: open, stage 2 verified unsolved.** Both editions the prior pass named as unclosed are now read in full
+and grepped with a control; neither prints, discusses, or calendars this item's cipher letters. Not "new"; not
+"unpublished" (rule 10) — a search result, not a discovery. Not digitised (BL Add MS 21483); no REQUEST.md drafted
+this pass (unchanged from the 24 Sept assessment — the ff.1-8 pairing with its own partial name-key is still the
+efficient next physical-access step, per the QUEUE row).
+
+Requests this pass: `archive.org`-family 3 (1 advancedsearch + 2 `_djvu.txt` fetches, well under the good-citizen
+cap, 1.5s+ apart). No subagents, no images, no logins.
 
 # Anonymous 1669 cipher letters to James (Duke of York, later James II) with a partial name-key — BL Add MS 21483
 
@@ -45,6 +91,9 @@ general provenance as much of this queue's Jacobite material), but this sweep di
 against it. That is the first thing to close out before treating this as a live cryptanalysis target.
 
 ## Verdict
+
+**(the "not full-text searched this sweep" conditional below was closed out by LANE CX, 25 Sept 2026 — see the
+Check-solved section above; both editions are now read and grepped, both negative.)**
 
 **Open, stage 2 verified unsolved (conditional): Clarke's *Life of James the Second* (1816) and CSP Domestic
 1669 not full-text searched this sweep; DECODE, both solver repositories, Cryptiana and general web all
