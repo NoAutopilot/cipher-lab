@@ -6439,3 +6439,99 @@ letters carry the matching cipher unresolved -- worth a full-record fetch before
 
 Kind: scout (this subsection files leads only; it does not promote to the board or classify novelty, per rule 10
 and the lane brief).
+
+---
+
+Worker VX-SCEU (Sonnet), host family (c) only: `api.europeana.eu`, Dutch holdings (Nationaal Archief), Nordic
+holdings (Riksarkivet/Rigsarkivet/Digitalarkivet/National Library Finland, reachability only). Row prefix VX-E.
+
+**Europeana: zero rows, pure noise.** 32 queries against `api.europeana.eu/record/v2/search.json` (key not set --
+`test -n "$EUROPEANA_API_KEY"` false this session, used `wskey=api2demo`), single terms and AND/phrase
+combinations from the brief's word list plus obvious compounds (`cijferschrift`, `ontcijfering`, `chiffrerad`,
+`chiffernyckel`, `cifferskrift`, `dechiffrement`, `cijferbrief`, `gedechiffreerd`, `"in cijfers"`, `"ontcijferde
+brief"`, `chiffernøgle`, `"dechiffreret brev"`, `"chiffrerat brev"`, `brief AND chiffre AND sleutel`, `chiffre AND
+depeche`, `chiffre AND gezant`, `"clef du chiffre"`, `"clé du chiffre"`, `dechiffrerad`, `chiffer AND nøgle`,
+`geheimschrift`, `geheimskrift`, `hemlig skrift`, `"in cijferschrift"`, `"met sleutel"`, etc.). Every non-zero
+result read (titles/dataProvider/type): `cijferschrift` and `"in cijfers"` hit only modern numbered-music-notation
+and statistics material; `chiffrerad`/`chiffre AND depeche`/`"clef du chiffre"` hit unrelated Gallica-aggregated
+book titles (decipherment-of-hieroglyphs monographs, an 18th-c. flambeau, a dyer's recipe book) and one Gallica
+Ligue/Nevers recueil already excluded by VX-SCGAL above; `geheimschrift` (80 hits, the only three-figure count)
+is entirely 19th/20th-c. printed manuals on secret writing and stage magic, no manuscript letter. Europeana's
+free-text search is metadata/title-based and dominated by modern photo/museum/printed-book records for every
+term tried here -- it surfaced nothing resembling the lane's target pattern in this pass. Not recommended for a
+repeat sweep without a much narrower, archive-specific query strategy (e.g. restricting `DATA_PROVIDER` to a
+named Nordic/Dutch archive first).
+
+**Nationaal Archief (`www.nationaalarchief.nl`): 3 real rows, plus one direct hit on an existing board target.**
+The site's `/onderzoeken/zoeken` search is a client-rendered SPA (the plain `?zoekterm=`/`?search_term=` URLs
+50x to the homepage or an empty shell; `tools/browser_fetch.js --type "#edit-search-term=<term>" --wait 3000`
+against `/onderzoeken/collectie` reliably submits the real search box and lands on a working
+`/onderzoeken/zoeken?searchTerm=<term>&...` URL). `cijferschrift`: **51 archiefstukken in 35 archieven**; the
+"Bevat digitaal materiaal" facet checkbox (click, not a URL param -- `?dao=true` alone does not filter)
+narrows this to **7 archiefstukken in 5 archieven that are actually digitised** (the other 42 are
+"Bekijken: studiezaal" only, i.e. leads, not rows). Per-item detail pages embed the real image data in
+`drupal-settings-json`'s `viewer.response` (`"availability":"DIGITALIZED"`, full-size JPEG at
+`https://service.archief.nl/api/file/v1/default/<scan-id>`, IIIF `info.json` alongside) -- this is the same
+service.archief.nl route CLAUDE.md's host table already documents for item pages, now confirmed reachable from a
+live in-SPA search hit too, not just a pre-known inventory number.
+
+| id | Holding / shelfmark | Date(s) | Sender -> recipient | Undeciphered material | Key or decipherment beside it | Image URL tested (full size) + leaf | Copy-free | Scout note |
+|---|---|---|---|---|---|---|---|---|
+| VX-E01 | Nationaal Archief 1.02.04 (Archief van F. van Schonenberg, Gezant in Spanje en Portugal, 1678-1716), invnr 63 | z.d. (undated, within 1678-1716) | Unknown sender (van Schonenberg's outgoing-letters series) -> "Doña Antonia de Albanylla" | One full page, entirely enciphered: numeric groups (2-3 digits) under handwritten Spanish plaintext, ~30 lines | **(iii) interlinear decipherment on the same leaf** -- the Spanish plaintext is written by hand directly above almost every cipher-number group, word by word, for the whole letter (eye-checked, see image) | `https://service.archief.nl/api/file/v1/default/fc3a8d42-b89e-4715-9753-0320355365c7` (NL-HaNA_1.02.04_63_0001.jpg, 1946x2618) -- single leaf, recto only | Yes | Van Schonenberg was the Dutch envoy to Madrid (1687-1702) then Lisbon (1702-1717); this item sits in his own outgoing-correspondence series. The interlinear gloss looks contemporary (same ink family, not a modern pencil annotation) but that is a call for whoever transcribes it, not this scout. Distinct from HU3 (Schonenberg-to-Heinsius letter no.185, NA 3.01.19 invnr 1445, "cijferschrift niet opgelost", already in this file line ~3845) -- different archive, different correspondent pair, not a duplicate. No printed edition of this envoy's Iberian correspondence located this pass (not searched exhaustively -- out of scout scope). |
+| VX-E02 | Nationaal Archief 1.02.20 (Archief van de Legatie in Turkije, 1668-1810), invnr 164, "Sleutels cijferschrift" | Undated (within the archive's 1668-1810 span; column headings suggest an early-18th-c. secretariat hand) | N/A -- a standalone key/nomenclator, not a letter | N/A (the key itself) | **(i) key/nomenclator table**, ~900+ numbered entries across two pages, columns headed by phrase-position ("1.", "101.", ..."601. begin des briefs", "801. einde des briefs" -- Dutch/French diplomatic vocabulary to number) | `https://service.archief.nl/api/file/v1/default/f1149d00-f7cd-498b-b37c-24d424bb6dd5` (NL-HaNA_1.02.20_164_0001.jpg, 5000x3904, page 1 of 2) | Yes | **Flag, not a fresh target: this same toegang (1.02.20) already holds an open board item, `ciphers/roell-vandedem-1809` (invnr 804, two undeciphered letters DECODE R1469/R1470, 2585 groups/931 distinct, heavily homophonic, dated 9 Feb 1809, attributed -- disputed -- to Röell, addressed to Van Dedem tot de Gelder, the Dutch ambassador at Constantinople in this period, i.e. plausibly this same legation's own correspondence). That target's NOTES.md (24 Sept 2026) checked DECODE for a key ("no key for this code") and Röell's *own* papers (NA 2.21.008.78, no codebook) but never checked whether the Legatie Turkije archive's *own* inventory holds a codebook -- it does (this item). Whether this ~900-entry nomenclator is the right period/system for R1469/1470's 931-distinct-group cipher is unverified (not this scout's job); the natural next step is a worker comparing this key's numbering scheme against R1469/1470's group list before any transcription attempt. See "Adds to existing rows" note below; not filed as a new row's ciphertext side since the ciphertext (invnr 804) is already tracked. |
+| VX-E03 | Nationaal Archief 3.01.14 (Archief van Johan van Oldenbarnevelt, 1586-1619), invnr 2442 | 23 Dec 1605 (copy, early 17th c.) | Don Juan Gara de Senisteros -> Juan de la Pena (intercepted Spanish correspondence, copied into Oldenbarnevelt's own papers) | "Missive... afschrift... Merendeels in cijferschrift" -- most of one page is a Spanish-alphanumeric substitution cipher (mixed letter+digit groups, e.g. "s8crd4r37", "c35c7 g7n c4l82"), embedded in an otherwise plain-Spanish letter | **None visible on this leaf** -- no interlinear gloss, no adjoining key found in this pass (the leaf itself is copy-free and eye-checked; whether a decipherment or key sits elsewhere in this same archive was not checked, out of scope for this scout) | `https://service.archief.nl/api/file/v1/default/3f72fc28-348d-42ae-974f-3a94f3c76007` (NL-HaNA_3.01.14_2442_0001.jpg, 2690x3750) | Yes (image), but **fails this lane's own gate** -- listed for completeness only, since no key/decipherment was found beside it this pass; a cryptanalysis-lane candidate, not a recovery-lane row, unless a sibling/key turns up elsewhere in 3.01.14. Oldenbarnevelt ran the States-General's own decryption office, so intercepted Spanish ciphers with a contemporary Dutch decipherment elsewhere in this archive are plausible -- worth a dedicated within-archive sweep this scout didn't have budget for. |
+
+**Adds to existing rows:** `ciphers/roell-vandedem-1809` (open, kind cryptanalysis, NA toegang 1.02.20 invnr 804)
+-- add invnr 164 "Sleutels cijferschrift" (same toegang, VX-E02 above, image tested and copy-free) as an unchecked
+key candidate; NOTES.md's existing key search (DECODE, Röell's own papers) never covered the legation archive's
+own inventory.
+
+**Drop-check.** Grepped QUEUE.md, CATALOG.md, LANDSCAPE.md, every `ciphers/*/NOTES.md`, `sources/wvo/NOTES.md`,
+`sources/huygens/NOTES.md` for every distinctive name/shelfmark above (Nanningh Kaiser, Dirck Schaep, J. Royer,
+van Schonenberg, Albanylla, Oldenbarnevelt, Senisteros, toegang numbers 1.02.04/1.02.20/3.01.14) before filing:
+no collision except the two noted inline above (HU3 for Schonenberg -- different item, not a duplicate; toegang
+1.02.20 for roell-vandedem-1809 -- same toegang, different invnr, filed as "adds to existing rows" not a new
+row). No live ROOM.md claim (last 6 hours) on any of these shelfmarks by this or another account's lanes.
+
+**Non-copy-free leads (not numbered rows) -- Nationaal Archief, "Bevat digitaal materiaal" unchecked (studiezaal
+only), from the same `cijferschrift` search, 5 archives / 44 items not otherwise itemised above:**
+
+- **1.01.02 (Staten-Generaal, 1431-1796), 5 items, all studiezaal-only.** Two carry an explicit contemporary
+  translation alongside the cipher, the strongest leads in this list: "12561.142 Lijsten van gesneuvelden op de
+  vloot in de Sont aan de Staten-Generaal in cijferschrift overgezonden. **Met vertalingen**" (casualty lists
+  from the fleet in the Sound, sent enciphered, 1650s, with translations) and "Brief van Dirck Schaep,
+  extraordinaris envoye, te Stockholm, aan griffier H. Fagel... 1674 augustus 11 -- **Eén bijlage in cijferschrift
+  met vertaling**" (one enclosure in cipher, with translation). Also: Nanningh Kaiser (Copenhagen) to griffier
+  Ruysch, partly in cipher, 13 Oct 1653, no translation noted; a second Dirck Schaep/Fagel exchange, 14 Feb 1674,
+  cipher enclosure, no translation noted; a bundle of cipher notes re. the 1672 Spanish invasion of the Veluwe,
+  no translation noted.
+- **1.13.15 (Archief van J. Royer, overleden 1783, 1560-1762), 2 items, studiezaal-only.** Archive-level note:
+  "Er zijn tevens enkele stukken in cijferschrift **(ontcijferd)**" -- explicitly marked already deciphered.
+- **1.10.02 (Archief van Leo van Aitzema, ca.1580-1669, 1584-1669), 3 items, studiezaal-only** -- not individually
+  read this pass (budget), flagged only.
+- **3.20.66.01 (familie De Witt-Beijerman, 1635-1730), 3 items, studiezaal-only** -- not individually read.
+- **1.11.01.01, 1.01.01.13, 1.01.50, 1.02.17 (Legatie Oostenrijkse Nederlanden), 1.10.102 (Van Nagell),
+  1.10.26 (C.W.F. Dumas), 1.10.40, 1.10.97 (familie Hop), 1.13.20, 2.01.01.01, 2.05.10.21/2.05.14.05 (Zwitserland
+  legatie/consulaat), 2.05.25 (Van Karnebeek), 2.05.44/2.05.45/2.05.47 (Gezantschappen GB/Denemarken/Frankrijk),
+  and several later (19th-20th c.) items on pages 3-4 of the result list** -- titles only, not individually
+  expanded (page 2-4 results collapsed, budget); C.W.F. Dumas (a documented cipher user in the Franklin/American
+  Revolution correspondence) is the standout worth a follow-up pass.
+
+**Nordic holdings.** Reachability only, per brief instruction, given Europeana's poor yield and the Dutch side's
+much higher return absorbing most of this session's budget. `sok.riksarkivet.se` 200 (root) but its search
+endpoint is not `/sok?Sok=` (404, tested once) -- a client-rendered app, real query URL not found this pass.
+`www.kb.dk` 200 (root only, not queried further). `www.arkivverket.no` 301 (redirect, not followed). `digi.
+kansalliskirjasto.fi` 200 (root only, not queried further). None of the four Nordic hosts was searched this pass
+beyond the single reachability probe the brief asks for -- flagged for a dedicated follow-up scout with its own
+budget, not attempted here given Dutch-side yield already used most of this session's time.
+
+**Per-host request counts:** `api.europeana.eu` 32 (well under the 80 cap). `www.nationaalarchief.nl` ~28 (curl +
+`tools/browser_fetch.js`, all >=1.5s apart, several spent on SPA selector/filter debugging before the working
+`--type "#edit-search-term=<term>"` and facet-click patterns were found -- a few over the brief's 25-per-host
+guidance; no 429/403/challenge seen at any point, all HTTP 200). `service.archief.nl` 3 (full-size image fetches
+for VX-E01/E02/E03, well under the general host cap). `sok.riksarkivet.se` 1, `www.kb.dk` 1, `www.arkivverket.no`
+1, `digi.kansalliskirjasto.fi` 1 (reachability probes only). No WebSearch, no DECODE, no credentials, no
+subagents (both allowed, neither needed for this pass).
+
+Kind: scout (this subsection files leads only; it does not promote to the board or classify novelty, per rule 10
+and the lane brief).
