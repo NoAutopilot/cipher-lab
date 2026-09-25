@@ -29,19 +29,47 @@
   "language": "de",
   "letters_min": 100,
   "control_samples": 100,
-  "note": "Russian/Polish corpora are not on disk; add them as 'corpora' when fetched"
+  "note": "Russian/Polish corpora are not on disk; add them as 'corpora' when fetched",
+  "corpora": [
+   "tools/data/de20/pg5323_Effi_Briest.txt.gz",
+   "tools/data/de20/pg46184_Frau_Jenny_Treibel.txt.gz",
+   "tools/data/de20/pg36905_Schach_von_Wuthenow.txt.gz",
+   "tools/data/de20/pg41051_Peter_Camenzind.txt.gz",
+   "tools/data/de20/pg41907_Demian.txt.gz",
+   "tools/data/de20/pg43987_Die_drei_Spruenge_des_Wang_lun.txt.gz",
+   "tools/data/de20/pg15736_Der_Mann_von_vierzig_Jahren.txt.gz"
+  ],
+  "corpora_note": "de16/composed_enhg.txt (LANG_CORPORA default for de) is Early New High German, wrong period for a target found 2015, Soviet era (post-1945, pre-1991 by provenance); de20 (25 Sept 2026, GOLD-C) is 1880-1940 German prose, 2.49M letters folded -- still not a perfect period match for a Soviet-era text, but the closest register on disk, set here per GOLD-KAL1's brief rather than left on the ENHG default"
  },
  "value": "moderate; 58 reader comments without a solution, but no machine run across the candidate languages is on record",
  "model": "Sonnet",
  "status_24_Sept_2026": "open per Schmeh 2017; nothing later found 24 Sept 2026",
  "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run is under cheap_test_done with its control",
  "written": "24 Sept 2026 by the survey worker (session_013GkMQP9y84gHGG4pSSwaQj), claude-fable-5-1",
- "cheap_test_done": {
-  "test": 1,
-  "date": "25 Sept 2026",
-  "method": "Fetched both cryptogram images from scienceblogs.de; used the full transcript already on the saved post (Thomas Ernst, comment #32, not the separate Russian dirty.ru thread, which was not fetched once the on-page transcript was found) as ciphertext.txt; checked it row by row against the images (own pass, spot-check resolution, not a second blind reconciled pass); computed N/K/IC and matched-N IC controls for transliterated Russian (one Gutenberg fetch, id 30774) and German (tools/data/de16).",
-  "target": "N=978 K=36 IC=0.0657",
-  "control": "ru (transliterated, Gutenberg 30774): IC mean=0.0563 range=(0.0543-0.0605), 20 windows N=978, seed 42; de (tools/data/de16/composed_enhg.txt): IC mean=0.0724 range=(0.0676-0.0765), 20 windows N=978 from a 6855-letter corpus (heavily overlapping, not independent), seed 42; Polish not fetched (one-Gutenberg-fetch budget spent on Russian)",
-  "verdict": "not conclusive for language: target IC sits above the Russian control's range and near/inside the German control's range, which is not the direction a hard/soft-split K=36 alphabet would be expected to move IC if the plaintext really is one of these languages under simple substitution or transliteration. Row-level transcription check found no disagreement beyond a known labelling convention (Ernst's 'x' for the hard-sign-like glyph)."
- }
+ "cheap_test_done": [
+  {
+   "test": 1,
+   "date": "25 Sept 2026",
+   "method": "Fetched both cryptogram images from scienceblogs.de; used the full transcript already on the saved post (Thomas Ernst, comment #32, not the separate Russian dirty.ru thread, which was not fetched once the on-page transcript was found) as ciphertext.txt; checked it row by row against the images (own pass, spot-check resolution, not a second blind reconciled pass); computed N/K/IC and matched-N IC controls for transliterated Russian (one Gutenberg fetch, id 30774) and German (tools/data/de16).",
+   "target": "N=978 K=36 IC=0.0657",
+   "control": "ru (transliterated, Gutenberg 30774): IC mean=0.0563 range=(0.0543-0.0605), 20 windows N=978, seed 42; de (tools/data/de16/composed_enhg.txt): IC mean=0.0724 range=(0.0676-0.0765), 20 windows N=978 from a 6855-letter corpus (heavily overlapping, not independent), seed 42; Polish not fetched (one-Gutenberg-fetch budget spent on Russian)",
+   "verdict": "not conclusive for language: target IC sits above the Russian control's range and near/inside the German control's range, which is not the direction a hard/soft-split K=36 alphabet would be expected to move IC if the plaintext really is one of these languages under simple substitution or transliteration. Row-level transcription check found no disagreement beyond a known labelling convention (Ernst's 'x' for the hard-sign-like glyph)."
+  },
+  {
+   "test": "2-crib",
+   "date": "25 Sept 2026",
+   "method": "GOLD-KAL1: word-pattern crib test of Frank's (Cipherbrain comment #58, 19 Feb 2021) claim that the plaintext is a chapter of the 1876 Russian Synodal Bible. tools/data/ru19 (Synodal Bible, 78 books, fetched this job) as vocabulary+chapter index; ciphers/kaliningrad-2015/scripts/pattern_crib.py, beam-search word-pattern constraint propagation, both tokenisation conventions (A: letter+apostrophe merged, K=36; B: apostrophe its own sign, K=27).",
+   "target": "convention A: 22/187 words matched (0.118), 0.649 letters mapped, best chapter John 6 (14/22, 0.636 cover); convention B: 23/187 words matched (0.123), 0.714 letters mapped, best chapter Ezekiel 39 (19/23, 0.826 cover)",
+   "control": "3 seeds each convention, full-vocab and chapter-held-out: convention A mean letters-recovered 0.999 (a) / 0.997 (b); convention B mean 0.997 (a) / 0.997 (b); gate 0.9 MET on all four. Shuffle null (3 seeds): words-matched share max 0.096 (A) / 0.080 (B); best-chapter coverage over half also fires in 5 of 6 null seeds (mean 0.632, range 0.467-0.750).",
+   "verdict": "no flag on the primary criterion (target words-matched share vs null max, diff 0.022 A / 0.043 B, both under the 0.2 bar); the secondary criterion (best chapter covers over half the decoded words) is literally met in both conventions but the null shows it fires on pure noise at this N (only 22-23 words matched) too -- flagged to ROOM per the brief's mechanical rule, not read as evidence for Frank's claim. Full tables and reasoning in ciphers/kaliningrad-2015/HYPOTHESES.md. Ernst's 2017 claim names no text/method and remains untestable as stated."
+  },
+  {
+   "test": "2-homophonic-de",
+   "date": "25 Sept 2026",
+   "method": "GOLD-KAL1: tools/family_run.py --family homophonic, --param profile=target, judge.corpora repointed to tools/data/de20 (1880-1940 German prose, same set as koehler-1944.json) with a corpora_note (de16/ENHG is wrong period for a Soviet-era target). Cipher: ciphers/kaliningrad-2015/ciphertext_signs.tsv (convention A, N=978 K=36).",
+   "target": "judge FAIL: score=-1.605, null_p99=-2.083, real_p05=-0.817, real_median=-0.782, N=978",
+   "control": "profile=target, 3 seeds: recovery 0.992/0.960/0.994, mean 0.982 (0.960-0.994). Gate 0.9 MET.",
+   "verdict": "control-backed negative for German light-homophonic substitution at K=36, profile=target, de20 (1880-1940) register. No decoded text described (judge did not pass)."
+  }
+ ]
 }

@@ -181,3 +181,30 @@ unconfirmed.
 kaliningrad-2015: open (line 1) -- edition/page or full-text-search citation found within 6 lines
 ```
 Exit code: 0.
+
+## GOLD-KAL1, crib test and German homophonic, 25 Sept 2026
+
+LANE GOLD2's reserve breadth test (cheap_tests_in_order[2], the spec's own "2-crib"/"2-homophonic-de" entries).
+Two families, both control-first (CLAUDE.md rule 3). Fetched `tools/data/ru19` (Russian Synodal Bible, 78
+books, one HTTP request to api.getbible.net) as a vocabulary and chapter index for a pure-Python word-pattern
+crib solver (`ciphers/kaliningrad-2015/scripts/pattern_crib.py`) testing "Frank"'s Feb 2021 claim (Cipherbrain
+comment #58) that the plaintext is a chapter of the 1876 Synodal Bible. Control gate (>=0.9 letters recovered
+on a real chapter window, 3 seeds, both tokenisation conventions, with and without the chapter held out of the
+vocabulary): MET, means 0.997-0.999. Target: only 22-23 of 187 crib-matchable words matched a Bible vocabulary
+form under either convention (11.8-12.3 pct) -- well within the shuffle-null's own range (6.4-9.6 pct), no
+flag on the primary word-match criterion. A secondary criterion (one chapter covering over half the decoded
+words) is literally met in both conventions (John 6 at 63.6 pct, Ezekiel 39 at 82.6 pct) but the same shuffle
+null clears that bar in 5 of 6 seeds too, so it is flagged to ROOM per the brief's mechanical rule and NOT
+read as evidence for Frank's claim -- full tables and the corpus-scale reason the held-out control barely
+differs from the full-vocabulary one are in HYPOTHESES.md. Ernst's 2017 "political... cross-language
+polyalphabetic" claim (comment #50-52) names no text or method and remains untestable as stated.
+
+German light homophonic substitution (`tools/family_run.py --family homophonic --param profile=target`, K=36,
+judge repointed to `tools/data/de20`, 1880-1940 German, since the default `de` corpus is Early New High German
+and wrong for a Soviet-era target): control 0.982 mean recovery (3 seeds, gate 0.9 MET), target judge **FAIL**
+(-1.605 vs real_p05 -0.817). Control-backed negative for this family at this K and register.
+
+Status stays `open` (rule 10: nothing here is a reading -- no H/C/S/M/I tokens claimed). Not closed-negative:
+only two of the languages in `language_candidates` (ru via the crib test, de via homophonic) have been tested
+with a control, and Polish, Lithuanian and a Russian simple substitution remain untried (no Cyrillic-alphabet
+mode in `homophonic_anneal.py`, out of this job's scope). See HYPOTHESES.md for full numbers and commands.
