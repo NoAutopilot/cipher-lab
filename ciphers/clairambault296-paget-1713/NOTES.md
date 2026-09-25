@@ -212,3 +212,66 @@ Requests this section: gallica.bnf.fr 36 (32 canvases attempted at 200px: 29 ok 
 f221 -- failed twice each = 6 requests for those three, so 35 at 200px; + 1 re-fetch of f311 at 800px), all
 >=1.5s apart, UA `cipher-lab research script (contact via repository)`. No 403/429/challenge seen (all
 failures were `Connection reset by peer`, not a block signal). No other host. Status stays `open`.
+
+## Y4: leaf located (25 Sept 2026, LANE R6)
+
+**Not located.** LANE R6 worker Y4 (Sonnet, cap $4/40 min). Picked up worker T's lead ("the volume's few
+manuscript letters cluster in this last stretch") and swept it at fine grain instead of T's step-10, plus spot
+checks in three earlier unswept gaps. Manifest already cached (`sources/gallica-manifests/btv1b9000759b.json`,
+316 canvases, all label `NP`, reused from worker O/P -- no new manifest fetch).
+
+**Every canvas from f291 to f316 fetched at 600px** (27 canvases; f290, f292, f295, f306, f315 failed once each
+on `Connection reset by peer`, one-retry rule applied -- f306 recovered on retry, f290/f292/f295/f315 not
+retried further, 22+1 = 23 of 27 seen). Result, eye-checked:
+
+- **f291-f305: all printed matter**, continuing worker P's "Oraison funèbre de Monseigneur le Dauphin" pamphlet
+  (page stamps 595-621 visible, running-text funeral oration, no manuscript, no cipher) -- extends P's finding
+  well past the single f300/f311 probes P and T ran, with no gaps.
+- **f306-f311: a real manuscript cluster that T's step-10 sweep missed** (T sampled ...,301,311 and so skipped
+  302-310 entirely). Six manuscript canvases in a row, all French administrative/naval correspondence to
+  Pontchartrain, plain prose, no numerals, no cipher, none naming Paget or dated 14 January:
+  - f306: letter dated "Cognac le 18e aoust 1713"
+  - f307: letter dated "a Rochefort ce 18e avril 1713", signed "Lepinay" ("...Monseigneur qu'il y a tantost de
+    quatre ans que j'ay eu avec tout la satisfaction qu'il [e]st possible recueilly les fruits de vos
+    remarques...")
+  - f308: letter opening "Monseigneur", ink-stained top edge, illegible seal
+  - f309-f310: further manuscript leaves, same hand family as f308, continuing prose, page stamps visible but
+    not legible at 600px
+  - f311: **worker T's already-found item confirmed** -- "a Blayes ce 8e juillet 1713", signed, page stamp
+    "613" -- not the target (wrong date, wrong place, no cipher).
+- **f312-f313: blank/near-blank backing leaves** (faint offset show-through only, page stamp "594" visible on
+  f312's left half).
+- **f314: marbled paste-down endpaper** (inside back cover, not a content leaf).
+- **f316: Gallica's own "Contraste insuffisant / NF Z 43-120-14" end-of-digitisation calibration card** (not a
+  volume leaf) -- confirms f306-f313 is the volume's *last* content gathering; nothing manuscript follows it.
+
+So the manuscript block runs f306-f313 (8 canvases, the entire final gathering before the binding), not just
+T's single f311 hit -- but it is French provincial/naval correspondence from ports (Rochefort, Cognac, Blaye),
+dated April-August 1713, not the 14 January 1713 Paget item and not obviously connected to it.
+
+**Three earlier unswept gaps spot-checked** (canvases that fall between every prior worker's step-10 or -30
+samples: f15, f45, f75, f105, f155, f185, f215, f245, f275 -- 9 attempted, f45/f155 failed once each, not
+retried, 7 seen): all seven are printed matter (a "Chronique d'Adhelme"/"Vie de Louis le Debonnaire" scholarly
+piece at f15, "Seconde Requeste de la Dame de Sainte Laurence" at f75, a "procez verbal"/Cusson legal-affair
+pamphlet at f105, "Oraison Funebre" pamphlets at f185/f245, "Plainte de la Vertu" at f275) -- no new manuscript
+canvas found outside the f306-f313 block by this sample.
+
+**Conclusion:** the target letter was not seen in ~68 of 316 canvases checked across this and the three prior
+passes (worker O's manifest check, worker P's 8 probes, worker T's 32-sample sweep, this pass's 27+9). The one
+confirmed manuscript block in the volume (f306-f313) is not it. Given printed pamphlets dominate everywhere
+sampled and this pass found manuscript leaves only in the volume's very last gathering, the Paget letter -- if
+digitised in this ark at all -- most likely sits in one of the roughly 240 still-unchecked canvases, in a run
+too short (the f306-f313 block was 6-8 canvases wide) to be caught by any step-10 sampling; a full sequential
+eye-check (every canvas, not sampled) is the only remaining reliable method, and is outside this brief's
+$4/40 min box. Status stays `open`; not blocked.
+
+No leaves fetched at native resolution and no images/manifest.json written (brief: fetch native-res only once
+pinned). The 30 probe images (600px) are in this worker's scratchpad only, not committed, per worker T's same
+practice -- re-fetching any one is a single cheap request (`https://gallica.bnf.fr/iiif/ark:/12148/
+btv1b9000759b/f<N>/full/600,/0/native.jpg`).
+
+Requests this section: gallica.bnf.fr 37 (27 canvases f290-f316 attempted at 600px, 4 failed once
+each/not retried further + 1 retry of f306 that succeeded = 28; + 9 gap canvases f15/f45/f75/f105/f155/f185/
+f215/f245/f275 attempted, 2 failed once each/not retried = 9), all >=2s apart, UA `cipher-lab research script
+(contact via repository)`. No 403/429/challenge seen (all failures `Connection reset by peer`, transient, same
+pattern worker T logged). No other host used (brief restricts this worker to gallica.bnf.fr only).
