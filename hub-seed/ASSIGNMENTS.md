@@ -597,3 +597,7 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T22:12Z	session_01ENRheqa2wuDyK4Jo4GYWjU	bUNT3 (Sonnet, cap 2.5)	untersberg-code Hs. 2398 catalogue/image lookup	LANE B4 brief
 2026-09-25T22:16Z	session_019a43vGLshPA8EZvcuNjGCG	GOLD-D2 done $1.61 D, archived by LANE GOLD2	(c) for the letter families: base level 0.385 at 5 pct, 0.322 at 7.5 pct noise
 2026-09-25T22:16Z	session_01GvGAepME5fvmUDuaJuc9cA	GOLD-B2D done $9.46 D, archived by LANE GOLD2	B double-prime-c control 9.5 pct, below gate; B double-prime parked (identifiability, needs about 5000 letters)
+2026-09-25T22:20Z	session_01UpWfpbLwYL1xmDG1vFyi6h	LANE R7 orchestrator done $6.88 D, archived by parent 7d	handoff STATUS.md LANE R7 handoff; 9 workers; queue spent 22:08
+2026-09-25T22:20Z	session_01V2BHwhVh1k72qSYuBFCyGd	LANE V6 orchestrator done $8.95 D, archived by parent 7d	handoff STATUS.md LANE V6 handoff; 10 workers 34.57; V7 from it
+2026-09-25T22:20Z	session_01KcXfAtaB23N8aGrxpkTVky	retrospective l done $1.77 D, archived	RETRO-2026-09-25l.md, 4 proposals
+2026-09-25T22:20Z	session_017EMUc9dWLDu9DEQbJCXByH	LEARN-3 done $1.33 Q, archived	LEARN-2026-09-25-2133.md, 2 practices
