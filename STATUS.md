@@ -112,6 +112,8 @@ Check-in 25 Sept 04:55 UTC: OX closed on handoff 04:35 (ASKS 46 Heinsius request
 
 Check-in 25 Sept 05:56 UTC: PX live. PX-01 Brochado letterbook (antt-msliv0638-brochado-1712): check-solved went blocked (Doria 1944 unreadable) then open on a Google Books search-within of that edition with live hits elsewhere in it (cifra p.151, Londres in the preface), so the zero hits for the London-embassy vocabulary are a real negative; the intake gate held. A second DigitArq harvest (PX-SCDIGI4) is running. HOSTS wrote the 38-host table into the Access playbook. No [SO-] pull request; L10, L11 still queued on the owner's machine. ASKS 47 lists five optional discovery keys.
 
+06:17 UTC, owner priority more solves: LANE TX (session_01UDxtM9Xv2dnPfoo5z9T6wA, printed ciphertext + WVO 5551), LANE KX (session_01JPoYAFvVfraJibxQdQfrqp, key reuse: our ~60 key tables against every unread ciphertext, and each key's office against unread letters), parent worker AUD2 (session_01NTKxpfXJHgtJsE3FsX7cKB, second audits of Linhares and the van Beuningen key); PX told to put Brochado first. The WVO Lodewijk/Jan van Nassau pool is mostly printed by Groen and already classed; one unclassed letter (5551) went to TX.
+
 ## Parent handoff (cipher-lab-7b, session_01K7ZbE95o1pUW5gof8VA5PR, from 18:45 UTC 24 Sept 2026; 7a was session_01EFmUvFAifLKGdBSsW9mjEG, 23 Sept 15:12 to 24 Sept 18:45), kept current
 
 The parent orchestrator runs the hourly check-in (trigger trig_01Ks1wNXPjfn7XW9EucmV9ru (parent 7b, 30-minute cadence while a worker runs, 90 otherwise), self-bound, re-armed by send_later at every firing; its prompt is the
