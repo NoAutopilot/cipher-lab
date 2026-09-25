@@ -42,3 +42,47 @@ canvas_index_0based	f_url	folio_ink_number_read	content
 212	f213	189	heraldry armorial plate, 16 coats of arms, "Cambout Duc de Coislin" -- Order of Saint-Esprit promotion gallery continues, unrelated to the Noailles bundle
 214	f215	~191	engraved portrait, oval frame, partial caption "DUX ET..." -- promotion gallery continues
 216	f217	192	LEFT: numeric memorandum (sums in livres/sols/deniers style: "600/[500]/700/1100/300/1600/500/3300" etc) -- NOT cipher-shaped, looks like an accounts total; RIGHT: heading "[?]amont -a Villeguiers", blank oval ghost-impression from facing plate
+217	f218	(not read, 400px full-page)	printed portrait "LVD MARQ DE ROCHEFORT PAR FRANC"
+222	f223	(not read)	blank/near-blank leaves
+227	f228	(not read)	manuscript letter, plain French prose, two mounted leaves, stained -- no numerals/cipher
+232	f233	(not read)	manuscript letter continuation, plain prose
+237	f238	(not read)	printed pamphlet pages ~210-211
+242	f243	(not read)	printed title page "ORAISON FUNEBRE DE TRESHAUT...FRANCOIS HENRY DE MONTMORANCY DUC DE LUXEMBOURG..." (1695)
+247	f248	(not read)	printed pamphlet pages ~110-111
+252	f253	(not read)	printed pamphlet pages ~i16/365 (Montmorency oraison funebre continues)
+257	f258	(not read)	printed pamphlet pages ~377/di
+262	f263	(not read)	printed pamphlet pages ~ii/112 (Montmorency oraison continues)
+267	f268	(not read)	printed pamphlet pages ~139-141 (Luxembourg material)
+272	f273	(not read)	mounted manuscript letter fragment, plain prose, stained
+277	f278	(not read)	mounted wax-seal/signature clippings, "RABEL DE MONTMORENCY" annotation -- genealogical proof collection, not a letter
+282	f283	(not read)	printed portrait "FRANCOIS HENRI DE MONTMORANCY DUC DE LUXEMBOURG" full-length, armed figure
+287	f288	(not read)	printed engraving, monument/column with allegorical figures, no caption read
+292	f293	(not read)	printed pamphlet pages ~265/441
+297	f298	(not read)	printed pamphlet pages ~377/459 (cross-ref to c227/c237 pagination series)
+302	f303	FAILED TWICE, not retried (connection reset by peer both attempts)	not read
+307	f308	(not read)	printed pamphlet pages ~577/459
+312	f313	(not read)	manuscript letter, plain French prose, two pages, signature area
+317	f318	(not read)	manuscript letter with wax seal impression preserved, signed, plain prose
+322	f323	(not read)	manuscript letter, plain prose, heavily corrected/annotated draft
+327	f328	(not read)	printed title page "Declaration du Roy sur l'innocence de...Duc de Montmorency..." Paris 1576
+332	f333	(not read)	printed royal declaration text, signed "HENRY", sealed "grand seel", dated 1576
+337	f338	(not read)	manuscript letter fragment (left leaf only), blank facing leaf
+339	f340	(not read)	blank leaves, near end of volume
+15	f16	(not read)	printed pamphlet, royalist/religious supplication text
+20	f21	(not read)	printed portrait "EMANUEL DE CRUSSOL DUC D'UZES..." Order of Saint-Esprit, "Promotion du 31 Decembre 1688"
+25	f26	(not read)	printed portrait, partial, Latin caption "...RANI PRAEFECT..."
+35	f36	(not read)	printed portrait "LE MARECHAL DE GRAMONT DUC ET PAIR DE FRANCE" dated 1663
+40	f41	FAILED TWICE, not retried (connection reset by peer both attempts)	not read
+45	f46	(not read)	printed portrait, armored figure, "grand maistre de l'artillerie, lieutenant g[eneral]"
+50	f51	(not read)	printed portrait, dark plate, armorial crest below frame
+55	f56	(not read)	printed pamphlet "FACTUM POUR DAME HORTENCE MANCINI DUCHESSE MAZARIN..." with portrait plate
+65	f66	(not read)	printed pamphlet text, Mancini/Mazarin testament dispute continues
+70	f71	(not read)	printed pamphlet text, Mazarin family continues
+78	f79	(not read)	printed pamphlet text, "Cardinal"/Mazarin/testament material continues
+82	f83	FAILED TWICE, not retried (connection reset by peer both attempts)	not read
+86	f87	(not read)	printed portrait "FRANCOIS DE NEUVILLE DUC DE VILLEROY ET DE BEAUPREAU"
+95	f96	(not read)	printed portrait, full-length armored figure with baton, landscape background, captioned "Francois de Neuville Duc de Villeroy et de Beaupreau, Pair et Marechal de France..."
+108	f109	(not read)	printed portrait, repeat of Villeroy figure
+111	f112	(not read)	printed title page "ORAISON FVNEBRE DE MONSEIGNEUR LE MARESCHAL DVC DE VILLEROY" (Villefranche, 1685)
+121	f122	(not read)	printed pamphlet text continues (Villeroy oraison funebre)
+126	f127	(not read)	printed portrait "HENRY-FRANCOIS DE FOIX DE CANDALE, Duc de Randan, Pair de France..."

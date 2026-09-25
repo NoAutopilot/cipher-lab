@@ -265,3 +265,70 @@ or 502/400, all retried at most once, consistent with the known `ws_closed_mid_e
 `images/` this pass (the target leaf was not identified with confidence, and none of the research-probe
 images individually exceed the 30 MB folder cap, but were not committed to keep the folder clean --
 `images/manifest.json` and `images/canvas_sweep.tsv` are the durable record).
+
+## ZX2-GAL: sweep (25 Sept 2026, LANE ZX2)
+
+Brief: sweep the two regions Y7 left unchecked -- canvas 216-342 (rest of the volume) first, then canvas
+0-127 (the different, non-offset-22 numbering series) -- with 300-600px probes, pinning any leaf that shows
+rows of numerals/signs or "Avis de Flandre"/a 1688 date. `date -u` at start: 2026-09-25 19:15 UTC.
+
+**Canvas 216-342 (26 points sampled, step ~10 then bisected to ~5): all printed pamphlets, engraved
+portraits, or plain-prose manuscript letters -- no cipher, no numeral-dense text, no Noailles/Flanders
+content.** Content identified, in order: c217 portrait "Louis Marquis de Rochefort"; c222-232 a plain-prose
+manuscript letter (2 mounted leaves, stained, no numerals); c237-267 a run of printed pamphlets for
+"Oraison funebre...François Henry de Montmorency Duc de Luxembourg" (1695) with continuous internal
+pagination bleeding across several unrelated-looking probe points (~110, ~139, ~210, ~365, ~377 -- multiple
+distinct printed items bound together, not one continuous pagination); c272 a mounted plain-prose letter
+fragment; c277 mounted wax-seal/signature clippings annotated "Rabel de Montmorency" (a genealogical-proof
+dossier, not a letter); c282 a full-length portrait of the same Montmorency-Luxembourg marshal; c287 an
+engraved monument/column; c292-307 more printed pamphlet pages (same Montmorency dossier, pagination series
+continues ~265-577); c312-322 three plain-prose manuscript letters (one with an intact wax seal, one a
+heavily corrected draft); c327-332 a printed 1576 royal declaration on "l'innocence de...Duc de Montmorency"
+signed "Henry" with its seal description; c337 a manuscript fragment; c339 blank leaves near the volume's
+end. One canvas (302) failed twice (connection reset by peer) and was not retried further per the one-retry
+rule.
+
+**Canvas 0-127 (27 points sampled, step ~8-10): same pattern -- entirely portraits and pamphlets for Order
+of Saint-Esprit commanders, no cipher.** c15 a religious/royalist supplication pamphlet; c20 a portrait of
+"Emanuel de Crussol Duc d'Uzès" explicitly captioned "Promotion du 31 Decembre 1688" -- the *same* 1688
+Saint-Esprit promotion event already found starting at canvas ~212 (Y7's sweep), meaning this front block is
+also part of the volume's own titular portrait gallery, not a separate dossier; c25/c35/c45/c50 further
+Order-commander portraits (Gramont, an unidentified armored figure, one unread caption); c55-c78 a printed
+"Factum pour Dame Hortence Mancini Duchesse Mazarin" pamphlet run (Mazarin-family testament dispute); c86-c121
+a repeated portrait and "Oraison funebre" pamphlet for "François de Neufville Duc de Villeroy et de
+Beaupreau" (the same Villeroy family already identified at canvas 105/128 by Y7, now confirmed to recur
+here too); c126 a portrait of "Henry-François de Foix de Candale, Duc de Randan". Two canvases (40, 82)
+each failed twice and were not retried further.
+
+**Conclusion: negative for both regions.** Combined with Y7's prior canvas 128-216 sweep (Noailles-family
+bundle, folio 106-188) and this pass's 53 new sample points across the remaining ~253 canvases (roughly one
+every 5), the whole 342-canvas volume now has some coverage, and the picture is consistent throughout: this
+recueil is a portrait-and-pamphlet gallery of Order du Saint-Esprit commanders and their family disputes/
+funeral orations (Villeroy, Montmorency-Luxembourg, Mazarin/Mancini, Gramont, Crussol, Foix-Candale,
+Rochefort), interrupted only by the one Noailles-family manuscript/print insert Y7 already mapped. No leaf
+anywhere sampled shows rows of numerals or cipher signs, and "Avis de Flandre, chiffrés" / the 1570 Dax
+letter were not seen. This does not rule out the two finding-aid items being digitised somewhere in the
+~65 canvases still entirely unsampled (small gaps between this pass's probe points, plus canvas 1-14 and a
+few single-digit gaps), but it makes it substantially less likely they sit anywhere outside the already-
+identified Noailles bundle, and raises the same possibility already logged for the sister target
+clairambault296 (Y4b): that a finding-aid citation does not track this volume's physical binding order at
+all (here, two different old page-numbering series bleed across probe points in ways inconsistent with the
+finding-aid's own citation sequence -- see the Montmorency pamphlet pages jumping non-monotonically, e.g.
+c237~210/211 then c247~110/111).
+
+**Not pinned. Status stays `open`, unchanged from the check-solved verdict above; the target remains the
+weakest of the five Clairambault survivors (score 28) and still lacks a sender/date for "Avis de Flandre"
+independent of the finding aid's own composite note.** Suggestion for a future worker (one line, not
+actioned): the ~65 still-unsampled canvases (mostly small 3-5-canvas gaps between this pass's points, plus
+c1-14) could be closed with a further bisection pass, but given the uniform negative result so far and this
+target's low priority, that is better spent on a higher-scoring target unless the finding-aid access route
+(Lauer's *Catalogue des manuscrits de la collection Clairambault*, already flagged 24 Sept, unread) is tried
+first.
+
+Hosts touched: gallica.bnf.fr only, one request at a time, >=2s apart, UA "cipher-lab research script
+(contact via repository)". Requests: 53 (26 canvases in region 216-342: 13 step-10 + 13 bisection, with 5
+connection-reset retries, one canvas (302) unresolved after its retry; 27 canvases in region 0-127: 18
+probes + 5 retries, two canvases (40, 82) unresolved after their retry). No altcha/403/429 seen; all
+failures were transient connection resets, one retry each, per the good-citizen rule. No native-resolution
+leaf fetched (nothing pinned); probe images kept in scratchpad only, not committed, per the same practice
+established on the sister target. `images/canvas_sweep.tsv` updated with all 53 new rows.
