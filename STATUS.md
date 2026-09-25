@@ -150,7 +150,7 @@ Salviati and Seure with costed briefs, N4 copy-free scouts (Bourdeau's copy-free
 stops, a successor parent reads this section, the lane table,
 the last check-in prompt (list_triggers), takes over the trigger with update_trigger persistent_session_id, and continues.
 
-## LANE OX handoff (session_01BE3g8tWbS4T24KXMpShHt4), 25 September 2026, 04:38 UTC
+## LANE OX handoff (session_01BE3g8tWbS4T24KXMpShHt4), 25 September 2026, 04:35 UTC
 
 Pool of 12 orphaned open, copy-free targets; triage `.claude/briefs/runs/2026-09-25-lane-ox-triage.md`; job briefs
 `2026-09-25-lane-ox-*.md`. 19 worker sessions (all Sonnet), about $89 of worker usage (one F, OX-HEL, stalled on an
