@@ -95,3 +95,62 @@ queries. No subagents, no images, no logins, no key testing.
 - **Background page:** `sources/cryptiana/web/charlesii2.htm` (other Ormond and Arran ciphers, which look similar but seem different).
 - **Ideas:** Only about 20 code groups, too few for statistical attack. Best route is to compare against the known Ormond-Arran keys in charlesii2.htm and test partial matches. Also check Daniel Bourdeau's site (dbourdeau.github.io/cyphersolver), who solved the 1634-35 Ormonde-Maltravers cipher in September 2026.
 - **Solver status (19 Sept 2026):** Not attempted by either project beyond noting it is about 20 groups written as a test. Below unicity. Needs another letter in the same cipher.
+
+## YX-ORM (25 Sept 2026)
+
+**Job:** recovery test -- apply Tomokiyo's three reconstructed Ormond-Longford keys (charlesii2.htm) to the target's
+20 code groups, each against a matched control (rule 3). Keys and script: `keys/cipher{1,2,3}.tsv`,
+`keys/apply_and_control.py` (also checks the tsv's 20 groups against `ciphertext.txt` and exits 1 if stale).
+
+**Key provenance, corrected from Tomokiyo's page.** Cipher 2 and Cipher 3 are *not* Tomokiyo's own reconstructions
+as his prose might suggest -- they are the **printed key tables in the HMC volumes themselves** ("Key to the
+Cipher used in the Letters of the Earl of Longford to the Duke of Ormond", HMC Ormonde n.s. vol.6 p.xix-xxii and
+vol.7 p.xx), supplied to the editor by a Mrs. Lomas who deciphered Longford's letters, and transcribed here in
+full from `archive.org/download/cu31924091754089/cu31924091754089_djvu.txt` (vol.6, lines ~1188-2140) and
+`.../cu31924091754097/cu31924091754097_djvu.txt` (vol.7, lines ~1291-1330) -- grade H throughout (read from a key
+source per rule 4), a few OCR-ambiguous entries (e.g. vol.6 "268 kn", "357 wa" for "she"? left as printed) marked
+M. This is a **published key** (Mrs. Lomas's, via the HMC editor), not ours -- key source = `published` if this
+ever reaches an AUDIT.md. Cipher 1 (vol.5 p.454ff, 1680) has no printed table in either volume fetched this pass;
+only Tomokiyo's own PNG image (not in this repo's `sources/` snapshot) shows the full reconstruction. `keys/cipher1.tsv`
+holds only the 15 codes independently confirmed by the HMC editor's own worked example on vol.5 p.498 ("579[our]
+446[letter] 64[s] 725[to] 566[Ormond] 86[ar] 27[e] 552[o] 582[pe] 59[n] 240[ed] 551[on] 736[that] 681[si] 206[de]",
+quoted on charlesii2.htm) -- not a usable fraction of what is presumably an ~800-entry table, so the Cipher 1 row
+below is not a real test of that key, only a placeholder showing why: those 15 confirmed codes happen to share no
+value with the target's 20 groups. **Tomokiyo's own unpublished attempt to apply the *full* Cipher 1 key to this
+exact target (HTML comment in charlesii2.htm, already logged above under Check-solved point 4) remains the only
+real Cipher 1 test on record; not repeated by this worker.**
+
+**Control (rule 3):** for each key, 1,000 random draws of 20 integers uniform in [32,732] (the target's own
+observed min/max), scored for coverage against that key's defined codes, seed 1. This tests whether the target's
+raw hit count is better than picking 20 numbers blind in the same range would do against that key's code density
+-- not a null-cipher control (there is no ciphertext-design match for a ~20-group nomenclator fragment to
+control against), but the rule-3 control the brief names for a coverage gate.
+
+| Key | Source | Defined codes | Target coverage | Control mean (1000 draws) | Control 99th pctile | P(random >= target coverage) | Verdict |
+|---|---|---|---|---|---|---|---|
+| Cipher 1 (1680, vol.5) | Tomokiyo PNG, not on disk; only 15 confirmed codes here | 15 | 0/20 (0%) | 0.38 | 2 | not meaningful (see above) | not a real test -- insufficient key data |
+| Cipher 2 (Longford, vol.6 p.xix, published/Lomas) | HMC vol.6 OCR, this pass | 328 | 5/20 (25%) | 6.38 | 11 | 34.9% | **negative** -- below the control mean |
+| Cipher 3 (Longford, vol.7 p.xx, published/Lomas) | HMC vol.7 OCR, this pass | 37 | 3/20 (15%) | 1.01 | 3 | 7.8% | **negative** -- common by chance, not above the 99th pctile |
+
+**Matched groups (for the record, not a reading -- coverage did not clear the control gate for either key):**
+Cipher 2: 445=re, 33=i, 93=bring, 384=of, 32=h. Cipher 3: 445=um, 425=the, 440=Tyrconnel (the last plausible as a
+name in this circle, but one hit in 20 with the other two matches contributing no coherent sense, and 8 of the
+20 target groups -- 726, 700, 720, 732, 573, 526, 643, and borderline 342 -- exceed Cipher 3's own printed range
+entirely, cap 445, which is itself close to a structural argument against this key independent of the control).
+
+**Verdict: no key fits.** Neither Cipher 2 nor Cipher 3 clears "coverage above the control's 99th percentile and
+the covered words read sensibly in context" (brief's gate); Cipher 1 cannot be tested with the data on disk, and
+Tomokiyo's own full-key attempt (already on file) was rejected on a frequency-mismatch basis. This does not
+change the target's status (`open`, stage 2 verified unsolved, unchanged from Check-solved above): a negative
+against three named keys, one incompletely tested, is not a claim that no key exists. Not new, not first, not
+previously untried in full (rule 10) -- Tomokiyo tried Cipher 1 himself; this worker adds a first documented test
+of Cipher 2 and Cipher 3 against this specific passage, both negative.
+
+**Next, for a future worker:** fetch `charlesii2_Ormond_Longford1.png` from the live cryptiana site
+(cryptiana.web.fc2.com, not yet tried this pass, not in the good-citizen host table) to get Cipher 1's full table
+and run a genuine coverage test for it; or treat this target as archived at "below unicity, three named keys
+tried, no sibling letter found" until one turns up.
+
+Requests this pass: `archive.org` 2 (`cu31924091754089_djvu.txt`, `cu31924091754097_djvu.txt`, one retry needed
+on each for a 302 redirect, `curl -L`, >=1.5s apart, both >200KB text fetched once to disk and read from disk
+after). No other hosts, no subagents, no logins, no credentials.
