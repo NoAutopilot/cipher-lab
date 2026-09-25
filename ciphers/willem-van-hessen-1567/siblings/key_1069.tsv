@@ -1,0 +1,20 @@
+sign_desc	value	grade	image_ref
+# briefnr 1069 (Willem van Hessen to Willem van Oranje, 23 Mar 1563, KHAG B 12,6 "origineel"), interlinear decipherment
+# in a contemporary hand above the cipher, siblings/01069_p2.png (and p3, p4), line 1 of p2 only, read this pass.
+# 'sign_desc' is a plain-language description of the hand-drawn glyph (not a Unicode transcription -- the system
+# is not in Unicode); see the image_ref crop for the actual shape. grade H = the gloss letter above the sign is
+# clearly and unambiguously written; M = gloss legible but the letter identification (or the underlying word
+# reading, e.g. m/n, b/p confusion) is uncertain. Word read as a whole: "...mit Gr(u/m)(n/mb)ach(s)" -- matches
+# Wilhelm von Grumbach, the outlawed knight at the center of the Grumbach Feud/siege of Gotha, the same affair
+# mentioned in the target's own WVO Inhoud field for 1127 (28 Jan 1567) -- consistent political context between
+# the sibling and the target, three-plus years apart.
+capital-H-with-crossbar	t	H	siblings/01069_p2.png (line 1, symbol 1, end of "mit")
+backward-C-loop	g	H	siblings/01069_p2.png (line 1, symbol 2, start of "Gr..ach")
+bold-dagger-crossbar	r	M	siblings/01069_p2.png (line 1, symbol 3)
+double-hump-w-shape	u	M	siblings/01069_p2.png (line 1, symbol 4; gloss could be u or the scribe's own uncertainty mark)
+small-o-with-hooked-tail	n	M	siblings/01069_p2.png (line 1, symbol 5; plausibly the decipherer's "m" misread by this worker, or vice versa)
+yogh-3-shape	p	M	siblings/01069_p2.png (line 1, symbol 6; plausibly "b" -- Grumbach not Grumpach)
+capital-X-cross	a	H	siblings/01069_p2.png (line 1, symbol 7)
+h-with-horizontal-bar	c	H	siblings/01069_p2.png (line 1, symbol 8)
+pi-like-capital-Π	h	H	siblings/01069_p2.png (line 1, symbol 9)
+capital-R	s	H	siblings/01069_p2.png (line 1, symbol 10, end of "...achs")

@@ -1,0 +1,56 @@
+type	value	sign_desc	grade	image_ref
+# Page 11 of the 00174.pdf bundle (Hessisches Staatsarchiv Marburg, Bestand 3II, Nassau-Niederlande, Korr. 1567
+# -- the same box/PDF fetched for WVO briefnr 174, but this leaf is a loose nomenclator/alphabet KEY, not part of
+# letter 174's own 4 leaves (its foliation and hand differ from 174's letter text) -- almost certainly a sibling
+# cipher-book leaf from elsewhere in the same 1567 correspondence bundle. Page is written sideways (rotated -90);
+# siblings/00174_p11_rot.png is the rotated crop used for this reading. grade H = the plaintext word/letter label
+# is clearly legible in the source hand; M = legible but the specific glyph shape is hard to pin down from this
+# scan resolution, or the word reading itself is uncertain (marked in value with a trailing '?'). 'sign_desc' is
+# a plain-language description, not a Unicode transcription -- these are invented glyphs, not a real alphabet.
+# Most alphabet letters and several nomenclator words carry 2-3 homophone signs (only the first/clearest is
+# recorded here); see the image for the rest. A separate row "Nulla" lists ~12 null (meaningless) signs.
+alphabet	a	blot(illegible)/double-dagger/X (3 homophones)	M	siblings/00174_p11_rot.png (top row, col 1)
+alphabet	b	small triangle Δ	H	siblings/00174_p11_rot.png (top row, col 2)
+alphabet	c	h-with-crossbar (+ a second sign below)	H	siblings/00174_p11_rot.png (top row, col 3)
+alphabet	d	cross X (+ a second sign below)	H	siblings/00174_p11_rot.png (top row, col 4)
+alphabet	e	square with a dot	H	siblings/00174_p11_rot.png (top row, col 5)
+alphabet	f	capital Pi-like glyph	H	siblings/00174_p11_rot.png (top row, col 6)
+alphabet	g	loop-d shape (+ "6", "II", a curl -- 4 homophones)	M	siblings/00174_p11_rot.png (top row, col 7)
+alphabet	h	figure-6-like loop (+ a sun/circle-dot sign)	M	siblings/00174_p11_rot.png (top row, col 8)
+alphabet	i	figure-8 (+ a dagger/cross)	H	siblings/00174_p11_rot.png (top row, col 9)
+alphabet	k	y-like curl	M	siblings/00174_p11_rot.png (top row, col 10)
+alphabet	l	numeral-2-like glyph	M	siblings/00174_p11_rot.png (top row, col 11)
+alphabet	m	slashed-z (+ "3")	M	siblings/00174_p11_rot.png (top row, col 12)
+alphabet	n	hash #	H	siblings/00174_p11_rot.png (top row, col 13)
+alphabet	o	hooked-b/rho-like curl	M	siblings/00174_p11_rot.png (top row, col 14)
+alphabet	p	omega/w-like loop	M	siblings/00174_p11_rot.png (top row, col 15)
+alphabet	r	long horizontal ligature joining two small signs	M	siblings/00174_p11_rot.png (top row, right area)
+alphabet	s	reversed-3/yogh	M	siblings/00174_p11_rot.png (top row, right area)
+alphabet	t	figure-8 over a circle-cross (sun sign)	M	siblings/00174_p11_rot.png (top row, right area)
+alphabet	x	numeral 3	M	siblings/00174_p11_rot.png (top row, far right)
+alphabet	z	numeral 0	M	siblings/00174_p11_rot.png (top row, far right)
+nulls	NULLA (12 filler signs, decode to nothing)	delta, v, gamma-like, 1, 3, 4, double-dagger, hash, currency-like, barred-cross, bracket, T, Pi	H (label "Nulla" clearly written)	siblings/00174_p11_rot.png (second row)
+nomenclator	Hispaniae rex (King of Spain)	blot/ligature/hook (3 homophones)	H	siblings/00174_p11_rot.png (word-list row 1)
+nomenclator	Franciae rex (King of France)	v-shape / two-dot / comma-hook	H	siblings/00174_p11_rot.png (word-list row 2)
+nomenclator	Hispania (Spain)	Aries-like M-legs / asterisk / theta-like	H	siblings/00174_p11_rot.png (word-list row 3)
+nomenclator	Gallia (France)	asterisk / ink blot / phi-like	H	siblings/00174_p11_rot.png (word-list row 4)
+nomenclator	Card[inal] Au[?]as?	M-shape / P-like / inverted-T	M	siblings/00174_p11_rot.png (word-list row 5; word reading uncertain)
+nomenclator	Guise (House of Guise)	hash / triple-asterisk / circled-X	H	siblings/00174_p11_rot.png (word-list row 6)
+nomenclator	Conde (Prince of Conde)	double-dagger / sigma-like / a	H	siblings/00174_p11_rot.png (word-list row 7)
+nomenclator	Connestable (Constable of France)	g-with-hook / sigma-variant / pi	H	siblings/00174_p11_rot.png (word-list row 8)
+nomenclator	Bapst (the Pope)	m / currency-like / R-like	H	siblings/00174_p11_rot.png (word-list row 9)
+nomenclator	Card[inal] Lorraine	numeral-7-like / pi-variant / reversed-n	H	siblings/00174_p11_rot.png (word-list row 10)
+nomenclator	La gouvernante? (the Governess, likely Margaret of Parma)	6-like / cursive-e / epsilon	M	siblings/00174_p11_rot.png (word-list row 11; word reading uncertain)
+nomenclator	Religio nostra (our [Protestant] religion)	H-with-bar / g / cross-circle	H	siblings/00174_p11_rot.png (word-list row 12)
+nomenclator	Religio papistica (the Papist religion)	multiplication-like / A-with-bar / roman-III	H	siblings/00174_p11_rot.png (word-list row 13)
+nomenclator	iure? (uncertain word)	k-like / reversed-F / AE-ligature	M	siblings/00174_p11_rot.png (word-list row 14; word reading uncertain)
+nomenclator	bellu(m)? (war)	K / circled-dot / three-dots	M	siblings/00174_p11_rot.png (word-list row 15; word reading uncertain)
+nomenclator	imperium	reversed-pi / cursive-phi / cursive-loop	H	siblings/00174_p11_rot.png (word-list row 16)
+nomenclator	Imperator (the Emperor)	cross-hook / sun-circle / lambda-like	H	siblings/00174_p11_rot.png (right word-list row 1)
+nomenclator	Maximilian[us] (Emperor Maximilian II, r. from 1564)	reversed-N / reversed-N-variant / Pisces-like symbol	H	siblings/00174_p11_rot.png (right word-list row 2)
+nomenclator	Augspurg? (Augsburg)	ampersand-like / ligature / cross	M	siblings/00174_p11_rot.png (right word-list row 3; word reading uncertain)
+nomenclator	Reingraff (the Wild- und Rheingraf)	ligature / question-mark-like / triple-hash	H	siblings/00174_p11_rot.png (right word-list row 4)
+nomenclator	Engelandt (England)	d-with-stroke / hook / H-ligature	H	siblings/00174_p11_rot.png (right word-list row 5)
+nomenclator	Denmar[cken] (Denmark)	smudged/illegible / hook / R	M	siblings/00174_p11_rot.png (right word-list row 6)
+nomenclator	Schweden (Sweden)	z-like / double-v / E	H	siblings/00174_p11_rot.png (right word-list row 7)
+nomenclator	Rom (Rome)	lambda/wedge / oe-ligature / P	H	siblings/00174_p11_rot.png (right word-list row 8)

@@ -1,0 +1,40 @@
+{
+  "source": "Huygens Institute, Briefwisseling van Willem van Oranje (WVO) database, resources.huygens.knaw.nl/wvo",
+  "note": "Free PDF scans, no login. Fetched 25 September 2026 by OX-WVH (curl, browser-contact User-Agent, >=1.5s apart).",
+  "files": [
+    {
+      "file": "01069.pdf",
+      "briefnr": 1069,
+      "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=1069",
+      "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/01000-01999/01069.pdf",
+      "date": "23 March 1563",
+      "correspondent": "from Willem van Hessen (William IV, Landgrave of Hesse-Kassel)",
+      "shelfmark": "Koninklijk Huisarchief Den Haag, B 12, 6 (the ORIGINAL itself, per WVO's Brongegevens this pass)",
+      "pages": 7,
+      "status": "p1: plain closing/signature leaf. p2-p4: the cipher passage, WITH a contemporary interlinear decipherment in a second, smaller hand written above (and between) the cipher lines -- confirms WVO's Opmerkingen 'bij het origineel een exemplaar in cijferschrift en met ontcijfering'. p5-p6: plain-text postscript (news from France). p7: outer address leaf ('Breda, Nassauen gewandt...').",
+      "renders": ["01069_p1.png .. 01069_p7.png (200dpi, kept). 01069_p2_hi.png (400dpi) was used for key extraction then deleted for the 30MB/folder budget -- refetch the PDF and re-render at dpi=400 page index 1 if finer zoom is needed again."],
+      "key_extract": "key_1069.tsv (10 sign->letter pairs from p2 line 1 only, 'grunpachs' = plausibly 'Grumbachs', Wilhelm von Grumbach)"
+    },
+    {
+      "file": "00174.pdf",
+      "briefnr": 174,
+      "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=174",
+      "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/00000-00999/00174.pdf",
+      "date": "9 April 1567",
+      "correspondent": "to Willem van Hessen (i.e. from William of Orange)",
+      "shelfmark": "listed as Hessisches Staatsarchiv Marburg, Bestand 3II, Nassau-Niederlande, Korr. 1567 in the WVO Brongegevens PDF link, but this 12-page PDF is a scan of a wider run of the same archival box/bundle, not only letter 174's own leaves -- foliation jumps (198, 194, ...) across the 12 pages confirm several distinct items are bundled together.",
+      "pages": 12,
+      "status": "p1-p10ish: letter 174 and neighbouring items' text, cipher passages present but with NO interlinear decipherment visible on the manuscript pages themselves (unlike 1069). p11: a LOOSE NOMENCLATOR/ALPHABET KEY leaf (rotated -90 in the scan), giving a plaintext a-z alphabet with homophonic cipher signs plus a nulls list plus ~24 nomenclator code-words (Hispaniae rex, Franciae rex, Gallia, Guise, Conde, Connestable, Bapst, Card. Lorraine, Religio nostra/papistica, Imperator, Maximilianus, Reingraff, Engelandt, Schweden, Rom, etc.) -- almost certainly the 'aan het eind van het ontwerp... aangegeven welke namen door cijfers dienden te worden vervangen' key WVO's Opmerkingen describes for 174, though it sits with a different hand/foliation from 174's own 4 leaves and may belong to a sibling item in the same 1567 bundle.",
+      "renders": ["00174_p1.png (200dpi, kept, the letter's own cipher opening) and 00174_p11_rot.png (the key leaf, rotated to reading orientation, kept) are the only pages kept for the 30MB/folder budget. p2-p10 and p12 (200dpi) and p1_hi (300dpi) were rendered and reviewed this pass (see NOTES.md for what each showed) then deleted -- refetch the PDF at the pdf_url above and re-run the fitz render loop (dpi=200) to get them back."],
+      "key_extract": "key_174_nomenclator.tsv (26-letter alphabet + nulls + ~24 nomenclator words, mostly H-graded on the plaintext label, M-graded on exact glyph shape)"
+    }
+  ],
+  "printed_edition_check": {
+    "174": "Groen van Prinsterer, Archives ou correspondance inedite de la Maison d'Orange-Nassau, serie 1 deel 3 (1567-1572), pp.54-57, Lettre CCLXIX ('Le Prince d'Orange au Landgrave Guillaume de Hesse. Sur la situation desesperee des Puys-Bas et sa resolution de se retirer en Allemagne') -- viewed via resources.huygens.knaw.nl/retroboeken (JS viewer, browser_fetch.js), full continuous German plaintext, NO cipher markers/footnotes/italics anywhere in the printed run. Given WVO's own note that a decipherment copy exists beside the original, Groen printed the letter already-deciphered and seamlessly, so briefnr 174's plaintext (cipher passage included) IS already in print (1835-1847) -- not a candidate on its own, matches its own table entry.",
+    "1069": "No 'editie' row in WVO's Brongegevens for 1069 (only the two manuscript sources). Not found printed elsewhere this pass (no further search run -- out of this brief's scope). '1069 solved elsewhere' in the earlier scout tsv row means solved ON THE DOCUMENT (the contemporary interlinear decipherment confirmed this pass), not in a printed edition."
+  },
+  "hosts_this_pass": {
+    "resources.huygens.knaw.nl": "2 record pages (174, 1069) + 2 PDFs (01069.pdf 4.65MB, 00174.pdf 9.51MB), all curl, >=1.5s apart, browser-contact User-Agent",
+    "resources.huygens.knaw.nl (retroboeken viewer, JS)": "3 page renders via tools/browser_fetch.js (p54, p55, p56), >=1.5s apart"
+  }
+}

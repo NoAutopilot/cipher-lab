@@ -94,3 +94,89 @@ existing table (which covers 1127 above):
 Neither is a candidate; neither changes 1127's own cryptanalysis status above. Requests this pass:
 resources.huygens.knaw.nl 1 (briefnr 1069 detail page, shared with the wider 9-page batch logged in
 `sources/wvo/NOTES.md`); 174 read from `sources/wvo/cipher-letters-2026-09-24.tsv` only, no fresh fetch.
+
+## OX-WVH, 25 September 2026: siblings 174 and 1069 fetched and eye-checked, sign-system check
+
+Brief: `.claude/briefs/runs/2026-09-25-lane-ox-wvh.md`. Files fetched into `siblings/` (manifest.json there has
+full detail; folder trimmed to 21 MB total to stay under the 30 MB/folder guidance -- both source PDFs and
+several intermediate renders were deleted after review, refetch URLs are in the manifest).
+
+**1. Briefnr 174 (9 Apr 1567, William of Orange to Willem van Hessen).** WVO record read in full
+(Brongegevens, Opmerkingen). Its PDF (`pdf_url` in manifest, listed against the Hessisches Staatsarchiv Marburg
+row) is a 12-page scan of a wider run of the same 1567 correspondence box, not only this letter's own 4 leaves
+-- foliation jumps across the 12 pages confirm several distinct items are bundled in one PDF. Letter 174's own
+cipher passages (p1-p10ish of the PDF) carry **no interlinear decipherment on the manuscript itself** -- plain
+cipher blocks of geometric/arrow-style signs (Δ, arrows, □, ○, R, 8, Z, Π, X), visually a different "font" from
+1069's system (below). **Page 11 of the same PDF is a loose nomenclator/alphabet KEY leaf** (different hand and
+foliation from 174's own letter, so probably a sibling item from the same bundle, not literally part of letter
+174) -- rotated -90 in the scan (`siblings/00174_p11_rot.png`). It gives: a plaintext a-z alphabet with 1-4
+homophonic cipher signs per letter; a "Nulla" row of ~12 null signs; and roughly 24 nomenclator code-words with
+their own homophonic signs, covering exactly the political vocabulary of the mid-1560s French/Imperial/Dutch
+crisis -- Hispaniae rex, Franciae rex, Hispania, Gallia, Guise, Conde, Connestable, Bapst, Card. Lorraine,
+Religio nostra / Religio papistica, La gouvernante(?), Imperator, Maximilianus (Emperor Maximilian II, reigning
+from 1564 -- dates this key to 1564 or later), Reingraff, Engelandt, Denmark, Schweden, Rom, imperium. This
+matches WVO's Opmerkingen for 174 almost exactly ("aan het eind van het ontwerp ... is aangegeven welke namen
+door cijfers dienden te worden vervangen"), though the leaf's own foliation/hand doesn't cleanly match 174's 4
+pages, so it is reported here as "found in the same bundle", not confirmed as 174's own appendix. Extracted to
+`siblings/key_174_nomenclator.tsv` (grade H on the plaintext label almost throughout; grade M on a handful of
+uncertain word readings and most exact glyph shapes, since these are invented signs with no Unicode equivalent
+-- see the image for the true shape).
+
+**Printed edition check (brief item 4, 174):** Groen van Prinsterer, *Archives ou correspondance inedite de la
+Maison d'Orange-Nassau*, serie 1 deel 3 (1567-1572), pp.54-57, Lettre CCLXIX, viewed page-by-page via
+resources.huygens.knaw.nl/retroboeken (`tools/browser_fetch.js`, a JS viewer). The full letter prints as
+continuous German plaintext with no cipher markers, footnotes or italics anywhere -- since WVO's own Opmerkingen
+says a decipherment copy exists beside the original, Groen printed the already-deciphered text seamlessly. So
+**briefnr 174's plaintext, cipher passage included, has been in print since 1835-1847.** This matches its
+existing table entry ("solved on leaf") and confirms it is not a candidate on its own; no new folder opened.
+
+**2. Briefnr 1069 (23 Mar 1563, Willem van Hessen to William of Orange, answer to nr. 1068).** WVO record read
+in full. Its PDF is the KHAG **origineel** itself (B 12, 6), 7 pages: p1 plain closing/signature leaf; **p2-p4
+are the cipher passage, each WITH a contemporary interlinear decipherment written in a second, smaller hand
+directly above the cipher lines** -- confirms WVO's Opmerkingen "bij het origineel een exemplaar in
+cijferschrift en met ontcijfering" literally and visibly (`siblings/01069_p2.png` etc.). p5-p6 are a plain-text
+postscript (news from France); p7 is the outer address leaf, confirming the record. Read closely (400dpi crop)
+for line 1 of p2 only: the gloss spells out (with some letter ambiguity) "...mit Gr[u/m][n/mb]ach[s]", plausibly
+"Grumbachs" -- Wilhelm von Grumbach, the outlawed knight whose feud (siege of Gotha, Dec 1566-Apr 1567) is the
+same affair named in the TARGET's own WVO Inhoud field for 1127 (28 Jan 1567), three-plus years later --
+consistent political context across this correspondent's letters even though 1563 predates the Feud's acute
+phase. Extracted 10 sign->letter pairs to `siblings/key_1069.tsv` (7 grade H, 3 grade M; only line 1 of p2 read
+this pass -- p2's remaining lines and p3-p4 are unread, flagged as the clear next step for a dedicated
+transcription pass, out of this brief's scope).
+
+**Printed edition check (brief item 4, 1069):** no "editie" row in WVO's Brongegevens for 1069 -- only the two
+manuscript sources (HSAM minuut, KHAG origineel). Not found printed elsewhere this pass (no further search run,
+out of brief scope). Note for the orchestrator: the earlier scout tsv's "solved elsewhere (edition not resolved
+this pass)" for 1069 is corrected by this pass -- 1069 is solved **on the document itself** (contemporary
+interlinear decipherment, confirmed by eye above), not in a printed edition; no edition exists to resolve.
+
+**3. Do 174 and 1069 use the same cipher system (sign shapes)?** Not conclusively the same, and probably not
+identical, but with one suggestive overlap. 1069's interlinear system (curvy, zodiac/alchemical-flavoured signs:
+H, œ-loop, dagger-cross, W-hump, hooked-o, yogh, X, h-with-bar, Π, R) and 174's own letter-body cipher (angular
+arrows, Δ, □, ○, Z, Π, X, R) read visually as different "fonts", and the loose key leaf on 174's page 11 reads
+as a third, more astrological-symbol-heavy set (☉, a Pisces-like sign, roman-numeral-like marks) again distinct
+from both. The one specific match worth flagging: the sign this worker reads as "h-with-a-horizontal-crossbar"
+decodes to plaintext **c** in *both* 1069's interlinear gloss (this pass, line 1 of p2) and 174's alphabet key
+(page 11, column c) -- by eye, at this scan resolution, not a certain match, but a concrete, checkable one for a
+follow-up pass with a side-by-side crop. No other pair was checked closely enough to compare. Overall: same
+cryptographic tradition and design (homophonic substitution with word-nomenclature and nulls, arbitrary
+invented signs, not a real alphabet or shorthand), consistent with a shared Hessian chancery workshop across
+this correspondent's letters and years, but not demonstrated to be the literal same key. A dedicated
+side-by-side glyph comparison (crop every distinct sign from both systems at matched zoom, align by decoded
+letter) is the clean next step and was out of this brief's scope (no decoding beyond sign-system identity).
+
+**4. The target's own ciphertext (1127) -- still not copy-free.** No change from the existing REQUEST.md /
+images/manifest.json finding: only the draft (crib, no cipher) is online; the original at KHAG A 11/XIV
+B/15-43, where the cipher itself sits, has no PDF in the WVO database. This pass did not find it via 174 or
+1069's records either (174 and 1069 are a different letter-pair, at KHAG/HSAM/HHStAW shelfmarks that do not
+overlap with 1127's). REQUEST.md stands unchanged. The two siblings fetched this pass are useful once the
+original is in hand: 1069 demonstrates this correspondent's cipher letters do carry legible interlinear
+decipherments (so the original of 1127, if any decipherment survives beside it, may too), and 174's bundle
+carries a period-correct nomenclator key covering exactly the vocabulary (rulers, factions, religion, empire)
+1127's own Inhoud (the Grumbach Feud) would need.
+
+**Kind unchanged: cryptanalysis (crib available)**, still pending the original being imaged. Status: **open**,
+copy status: **partial**, unchanged.
+
+Hosts this pass: resources.huygens.knaw.nl 2 record pages + 2 PDFs (curl, browser-contact UA, >=1.5s apart) + 3
+retroboeken viewer pages (`tools/browser_fetch.js`, >=1.5s apart). No other host used.
