@@ -269,13 +269,13 @@ whole of block A with the resulting key, judge, and re-derive fresh.
 (`scratchpad/crops/blockA_full.jpg`, `_part2.jpg`, `_part3.jpg`, plus several tighter per-token zooms) and read
 the 23 `low`-confidence tokens directly from the crops (this session), while a second, fully blind Sonnet
 subagent (no context beyond "transcribe this handwriting", not shown passA/passB/ciphertext.tsv or any
-confidence flags) read the same three crops independently as a genuine third pass. The subagent's read did
-not return before this job's time box closed (background task, still running after 13+ minutes on a mixed
-image-reading task); its result was **not available to incorporate into this report** -- flagged in ROOM.md
-for whoever picks this target up next; if it lands after this session ends it should be diffed against
-`overrides.tsv` below rather than trusted blind. Everything below this line is this session's own close
-reading plus mechanical dictionary cross-checks, not a two-independent-reader settlement, and is graded
-accordingly (no token here is graded H or C).
+confidence flags) read the same three crops independently as a genuine third pass (it took just over 17
+minutes and 178k tokens -- image-heavy palaeography passes are slow; do not assume one will return quickly).
+Its transcription (81 items, since it also transcribed the surrounding plain Spanish words CT03's ciphertext.tsv
+never captured) agreed with the committed transcription on the great majority of tokens and confirmed several
+disputed ones outright (token 20 `8n234r`, token 13/45 `d8s3g28nc4`, token 28 `s2c7nd3c37n`, token 7 `85p8`
+character-for-character). This is genuinely a third independent read, not this session's own reasoning, and
+is credited as such below.
 
 **What the close read actually settled (`overrides.tsv`, one row per changed/upgraded token):**
 - **Token 9** (`d8sf7.` low): re-read at native resolution and 3-4x digital zoom
@@ -295,18 +295,29 @@ accordingly (no token here is graded H or C).
   (`calez` completing "gon+calez" = Gonçález; `enuiar` = enviar, "to send"; `dios` = Dios, God; `nos` = nos,
   "us"). The `low` confidence on these was about the glyph, and dictionary decoding resolves it without a new
   crop being needed. Upgraded to S.
-- **Tokens 5, 61, 66, 68** (`h4l4d7`→halado/hallado, `gg238`→gguie/guie with a stylistic doubled initial,
-  `3`→i as the period spelling of the conjunction "y", `c7n23nc8`→conuince, close to conviene/convence):
-  plausible real or near-real words, not independently glyph-confirmed this pass. Graded M.
-- **Remaining 14 tokens** (6, 7, 8, 10, 31, 33, 35, 43, 49, 50, 55, 57, 59, 65) still do not decode to
-  recognisable Spanish even after this pass -- several contain a digit outside the established key (6 in
-  tokens 6/31; 5 in token 7) which is the actual signature of a transcription error (a genuinely mis-shaped or
-  mis-read glyph, not a new homophone -- CT03's key already accounts for every vowel with one digit each and
-  has no headroom for a sixth or seventh value), others decode to valid-key nonsense strings (`aeei`,
-  `ceddui`, `elay`...) that read like a segmentation or letter-substitution error rather than a wrong digit.
-  These are exactly the tokens a genuine third glyph pass (the subagent read, not returned in time) was meant
-  to settle; left at grade I, unresolved, per rule 7 (a failed-check candidate is reported as such, not as a
-  reading).
+- **Tokens 61, 66, 68** (`gg238`→gguie/guie with a stylistic doubled initial, `3`→i as the period spelling of
+  the conjunction "y", `c7n23nc8`→conuince, close to conviene/convence): plausible real or near-real words,
+  not independently glyph-confirmed by the subagent's pass either. Graded M.
+- **Token 5** (`h4l4d7` low): the blind subagent independently reads **`h4d4d7`**, agreeing with passB against
+  passA/the committed transcription -- 2 of 3 sources now support `h4d4d7` over `h4l4d7`. Revised the working
+  token to `h4d4d7`, decoding to `hadado`, plausibly "ha dado" (has given) with an unmarked word-break rather
+  than "hallado" (found). Still M, not S -- the word segmentation is not settled.
+- **Token 10** (`d8sp2vs` low): the subagent splits this stretch differently (`d8sp` + `28s` instead of one
+  token `d8sp2vs`); recombined, that reads `d8sp28s`, which decodes cleanly to **`despues`** (después,
+  afterwards) -- a common real word, and exactly the correction this session had already guessed from a v/8
+  mix-up before the subagent's read came back. The subagent itself flagged this exact stretch (its items
+  16-21) as its single lowest-confidence segmentation call, so this stays M, not S.
+- **Token 7** (`85p8` low): the subagent reads the identical `85p8` character-for-character -- 2 of 2
+  independent reads now agree exactly. This is therefore a confirmed transcription, not a misread glyph, and
+  its digit 5 is real: it falls outside the established a/e/i/o/u=4/8/3/7/2 key, which is a design question
+  (a sixth cipher value -- a consonant or a null -- not yet solved) rather than a transcription-quality
+  problem. Left at grade I, but the note changes from "needs a fresh crop" to "needs the sixth symbol solved".
+- **Remaining 13 tokens** (6, 8, 31, 33, 35, 43, 49, 50, 55, 57, 59, 65, plus 7 above) still do not decode to
+  recognisable Spanish even after two independent close reads -- some contain a digit outside the established
+  key (6 in tokens 6/31, 5 in token 7) which two agreeing reads now show is a real glyph, not a misread (see
+  token 7); others decode to valid-key nonsense strings (`aeei`, `ceddui`, `elay`...) that read like a
+  segmentation problem rather than a wrong digit. Left at grade I, unresolved, per rule 7 (a failed-check
+  candidate is reported as such, not as a reading).
 
 **Cross-block corroboration (a finding, not part of this job's brief, worth flagging):** token 13 and token 45
 both read `d8s3g28nc4` and both decode cleanly to `de` + `siguenca` = **"de Sigüença"** -- the same
@@ -325,32 +336,32 @@ does not apply; `apply_key.py` plays the same "reproducible, `--check` fails on 
 --tokens reading_tokens.tsv --meta reading_meta.txt --block A` regenerates `reading.txt` and
 `reading_tokens.tsv`; `--check` exits 1 if either is stale.
 
-Grade counts (68 tokens): **S=50, M=4, I=14** (H=0, C=0 -- no key source, no known plaintext; this is a
+Grade counts (68 tokens): **S=50, M=5, I=13** (H=0, C=0 -- no key source, no known plaintext; this is a
 cryptanalytic result per rule 4).
 
 **Reading, with English gloss (fragments; unread stretches marked `[?]`):**
-> secretario cisco[Fran]cisco gon calez[Gonçález] halado[hallado] `[?]` `[?]` `[?]` desto.[of this] `[?]`
-> que salio[that (something) went out/turned out] de siguenca[of/from Sigüença] i[y, and] no he podido
-> allar[I have not been able to find] para enuiar[to send] mismas palabras[the same words] que son
-> particulares[that are specific] imas[y mas, and more] para su condicion[for its condition] que por
-> `[?]` `[?]` `[?]` de `[?]`, de donde[from where] he colegido[I have gathered/inferred] que cuando se
-> `[?]` el de siguenca[the (bishop/matter) of Sigüença] el duque `[?]` `[?]` ria `[?]` algo en orden a
+> secretario cisco[Fran]cisco gon calez[Gonçález] hadado[ha dado?, has given] `[?]` `[?]` `[?]` desto.[of this]
+> despues[después, afterward] que salio[that (something) went out/turned out] de siguenca[of/from Sigüença]
+> i[y, and] no he podido allar[I have not been able to find] para enuiar[to send] mismas palabras[the same
+> words] que son particulares[that are specific] imas[y mas, and more] para su condicion[for its condition]
+> que por `[?]` `[?]` `[?]` de `[?]`, de donde[from where] he colegido[I have gathered/inferred] que cuando
+> se `[?]` el de siguenca[the (bishop/matter) of Sigüença] el duque `[?]` `[?]` ria `[?]` algo en orden a
 > `[?]` halando[finding/hallando] de '25,[of the 25th,] ilas `[?]`, dios.[Dios, God] gguie[guíe, may [He]
 > guide] como sea[however it may be] `[?]` `[?]` i[y, and] nos conuince[nos convence/conviene, it
 > convinces/suits us]
 
 A coherent thread runs through what decodes: the secretary Francisco Gonçález, the bishopric/matter of
 Sigüença mentioned twice, an inability to find the right words to send, and a closing "Dios guíe como sea"
-(God guide, however it may be) -- but roughly a fifth of the tokens (14/68) remain unread, so this is a
+(God guide, however it may be) -- but roughly a fifth of the tokens (13/68) remain unread, so this is a
 partial reading, not a finished one.
 
 **Judge.** `python3 tools/judge_plaintext.py specs/na-oldenbarnevelt-2442-1605.json --file reading.txt`:
 ```
-FAIL language: score=-1.225, null_p99=-1.937, real_p05=-0.847, real_median=-0.782, mode=both, N=321
-ok   words: cover=0.735, min=0.5, real_text_median_cover=0.907
+FAIL language: score=-1.195, null_p99=-1.937, real_p05=-0.847, real_median=-0.782, mode=both, N=321
+ok   words: cover=0.745, min=0.5, real_text_median_cover=0.907
 FAIL - na-oldenbarnevelt-2442-1605
 ```
-Improved over VX-CT03's FAIL (score -1.26 -> -1.225; word-cover 0.729 -> 0.735) but still a FAIL on the
+Improved over VX-CT03's FAIL (score -1.26 -> -1.195; word-cover 0.729 -> 0.745) but still a FAIL on the
 language check -- clears the null/gibberish bound (-1.937) but short of the real-text 5th percentile (-0.847).
 This is a **candidate that failed the language check, not a reading** (rule 7). The 14 remaining I-graded
 tokens (roughly a fifth of the sign stream) are almost certainly what is holding the score down; the language
@@ -359,38 +370,41 @@ check is sensitive to any wrong run of 4 characters, so unresolved garbage token
 Quijote I, 1605, Gutenberg #2000) -- not modern Spanish, and in fact the same *year* as this letter, so it is
 already the right reference; no change to the judge or the spec's corpus is called for.
 
-**Fresh-instance re-derivation.** Not completed in this session's time box -- the two background subagents
-(block A third-pass read above, and the block C2 fresh pass below) were both still running when the 45-minute
-wall-clock box closed, and a third slot (this job's brief step 5) was never opened, since COMMON rule 10 caps
-this job at 2 subagents at once and neither of the two running ever freed a slot. **Not done; flagged as the
-next step for a successor**, along with incorporating the block-A blind subagent's read (if/when it lands) and
-attempting the fresh block C2 (and B/C1) passes below.
+**Fresh-instance re-derivation.** A third subagent was given only `ciphertext.tsv` and the block-A image crops
+(explicitly not `digit_key.json`, `overrides.tsv`, `reading.txt` or this NOTES.md) and asked to derive the
+digit->letter key from repetition/structure alone and produce its own reading. It was still running when this
+job's wall-clock box closed (launched once a slot freed at the 25-minute mark; these image-heavy passes have
+taken 17-20 minutes each all session) and its result is **not in this report**. Flagged in ROOM.md; a
+successor should compare its independently-derived key against `digit_key.json` token-by-token agreement
+before trusting either.
 
-## 6. VX-RD04, 25 Sept 2026: block C2 (and B, C1) fresh-crop attempt -- not completed
+## 6. VX-RD04, 25 Sept 2026: block C2 fresh-crop pass -- design confirmed further, reading still not reconciled
 
 The job brief's step 2 asked for fresh line-by-line crops and two independent passes on block C2 (49.7%
 agreement, held back by VX-CT03) and any other block CT03 did not use (B, C1). Cropped block C2 (folio 56,
-second cipher passage, `images/006_...jpg`) at native resolution
-(`scratchpad/crops/blockC2_p1.jpg`, `_p2.jpg`) and sent one fresh, fully blind Sonnet subagent to transcribe
-it line by line with no context; that subagent's result also had not returned when this session's time box
-closed (see above -- both of this job's subagent slots were occupied by long-running image-reading tasks for
-this entire session).
+second cipher passage, `images/006_...jpg`) at native resolution (`scratchpad/crops/blockC2_p1.jpg`, `_p2.jpg`)
+and sent one fresh, fully blind Sonnet subagent to transcribe it line by line with no context (~20 minutes,
+194k tokens). Its 95-item transcription (31 plain-prose words + 64 cipher tokens) independently confirms the
+lead-in plaintext reads "...el obispo de Sigüença...don Anto Vanegas del consejo supremo de Aragon" (its own
+segmentation reads "confesso"/"aragon" for "consejo"/"Aragón" -- plausible glyph-level misreads, not touched
+here), and its cipher-token reading decodes under the same a/e/i/o/u=4/8/3/7/2 key to several more clean, real
+Spanish words with **no forcing**: `leuantada,` (levantada, raised -- also `high` confidence in the old passB),
+`diligencia` (matches passA exactly), `penan` (matches passA exactly), plus `como`, `pero`, `se`, `alguna`,
+`con`, `del`, `dar`, `lo`, `i`. This is now a **third independent transcription** landing on several of the
+same words as passA and/or passB -- real, useful corroboration that the digit-substitution design and key
+generalise beyond block A.
 
-**What was established without a fresh crop pass, as supporting evidence for a successor:** decoding the
-*existing* passA and passB tokens for C2 (`transcription/passA.tsv`, `passB.tsv` -- not re-cropped, just
-re-read through the same a/e/i/o/u=4/8/3/7/2 key already established from block A) turns up numerous clean,
-unforced real Spanish words in both passes independently: passA -- `algunos` (some), `con` (with),
-`dictamen` (ruling), `diligencia` (diligence), `camino` (road/way), `mucho` (much), `occassion`
-(period-spelled ocasión); passB -- `dice` (says), `como` (as/like), `abran` (they will have), `medios`
-(means), `pero` (but), `levantada` (raised, already `high` confidence), `esto`/`este` (this), `alguna`
-(some), `algunos`, `occassion` again. The same key that block A confirms decodes real Spanish in an
-independently-transcribed block, which is evidence the digit-substitution design and key generalise across
-the letter -- but passA and passB disagree sharply on line *count* for this block (6 physical lines / 42
-tokens vs. 10 / 72), which is a genuine segmentation problem a fresh crop pass needs to settle, not something
-dictionary cross-checking alone can fix. **Status: open, not attempted further; block B and C1 not touched at
-all this job** (no time remained after block A and the C2 crop/subagent launch). Left for a successor,
-one line: *fresh line-by-line crops + two blind passes for B, C1 and C2, using the block-A method above
-(read the crop first, cross-check every low/nonsense token against the established digit key before assuming
-it needs a new crop) and reconcile against the 60% gate.*
+**Not reconciled into a working ciphertext.tsv for C2 this job.** The three passes (passA, passB, this
+session's fresh pass) still disagree on token segmentation in several places (e.g. "ministro" reads as
+`m3nb3str7`/`m3nb3st87`/`m3n8st87` across the three -- all close, none identical), and one very frequent
+5-character token this fresh pass reads as `gr8` (decoding to nonsense "gre") appears 5 times in its
+transcription in positions where "que" (`q28`) would fit grammatically every time -- a plausible g/q and r/2
+glyph-shape confusion worth checking against the image directly, and if confirmed would resolve 5 tokens at
+once. Proper reconciliation (sequence-align three passes, settle disagreements from the image, apply the
+60% gate) needs more time than remained in this job's box. **Status: open.** Block B and C1 not touched at
+all this job (no time remained). Left for a successor, one line: *sequence-align these three C2 passes
+(`transcription/passA.tsv`, `passB.tsv`, this session's subagent report above, not yet saved as a TSV --
+copy it into `transcription/passC_fresh.tsv` first), check the "gr8"=que hypothesis against the image, then
+do the same fresh-crop treatment for B and C1.*
 
 Do not classify novelty (rule 10); nothing here is a finished reading and no claim of first/unread is made.

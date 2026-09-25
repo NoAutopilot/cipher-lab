@@ -3,12 +3,12 @@ A	1	s8cr8t4r37	s8cr8t4r37	secretario	S	medium
 A	2	c3sc7	c3sc7	cisco	S	high	
 A	3	g7n	g7n	gon	S	high	
 A	4	c4l8z	c4l8z	calez	S	low	"c4l8z -> calez, combines with token 3 g7n(gon) = ""goncalez"" (period spelling of Gonzalez); real name, dictionary-confirmed (VX-RD04)"
-A	5	h4l4d7	h4l4d7	halado	M	low	h4l4d7 -> halado (hallado, found/met with); plausible one-l period spelling, not yet independently glyph-confirmed this pass
+A	5	h4l4d7	h4d4d7	hadado	M	low	revised per the blind third-pass subagent (VX-RD04), which independently reads 'h4d4d7' (agreeing with passB, 2 of 3 sources) rather than committed 'h4l4d7' (passA only, 1 of 3): decodes 'hadado', plausibly 'ha dado' (has given) with an unmarked word-break rather than 'hallado'; still not an independently glyph-confirmed clean word this pass
 A	6	m236v8nqs	m236v8nqs	mui6venqs	I	low	
-A	7	85p8	85p8	e5pe	I	low	
+A	7	85p8	85p8	e5pe	I	low	'85p8' confirmed character-for-character by the blind third-pass subagent (2 of 2 independent reads now agree) -- the glyph is solidly 85p8, not a misread; decodes 'e5pe' with digit 5 outside the established a/e/i/o/u=4/8/3/7/2 key. Digit 5 recurring in a confirmed glyph (also token 57) suggests a 6th cipher value (consonant or null) not yet solved, not a transcription error; left unresolved
 A	8	v4nc4s	v4nc4s	vancas	I	low	
 A	9	d8sf7.	d8st7.	desto.	S	low	glyph re-read (VX-RD04, native-res crop): the 4th character is a long-s/t ligature, not 'f' -- committed raw_token 'd8sf7.' misread it; corrected token decodes to 'desto.' (of/from this), a common real word
-A	10	d8sp2vs	d8sp2vs	despuvs	I	low	
+A	10	d8sp2vs	d8sp28s	despues	M	low	blind third-pass subagent (VX-RD04) splits this stretch as 'd8sp' + '28s' rather than committed 'd8sp2vs'; recombined and decoded this reads cleanly as 'despues' (después, after/afterwards), a common real word -- but the subagent itself flagged this exact stretch (its items 16-21) as its lowest-confidence segmentation call, so kept at M, not S
 A	11	q28	q28	que	S	medium	
 A	12	s4l37	s4l37	salio	S	high	
 A	13	d8s3g28nc4	d8s3g28nc4	desiguenca	S	high	
