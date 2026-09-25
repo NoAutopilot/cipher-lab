@@ -1,4 +1,5 @@
 partial
+Check-solved verdict (YX-CS349, 25 Sept 2026; restated here so it sits beside the status word): Ribier, *Lettres et memoires d'estat* (1666, IA bub_gb_bOnmNv2ZLVoC and bub_gb_qWTswSr32NYC) read and grepped in full; Guise *Memoires-journaux* (Michaud-Poujoulat 1e serie t.6, IA nouvellecollecti06michuoft, pp.316-320) read -- the 4 Jan 1557 letter is not printed; full section further down.
 
 ## YX-TR349 (25 Sept 2026): key transcription, step 1 of 3
 
