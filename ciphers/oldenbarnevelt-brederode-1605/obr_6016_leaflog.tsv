@@ -1,0 +1,95 @@
+order	date_read	cipher_numerals	key_table	interlinear	note
+1	1602-1603 (folder cover)	no	no	no	"TX-KEYS: folder-cover leaf, ""1602 en 1603"" handwritten; confirms year-divided loose bundle"
+100	(none, different sub-doc)	no	no	no	"TX-KEYS: bound negotiation register/journal leaf, archival page ""73""/""28"", index-tab ""Bouillon"" visible, distinct bound sub-document"
+180	den 3en Octob. (year not given)	no	no	no	"TX-KEYS: bound negotiation journal leaf, archival page ""136"", dealings with ""syne Churf. Excellentie"" and ""Marquis Hans Sigismundt"""
+260	1605-1606 (folder cover)	no	no	no	"TX-KEYS/this pass: folder-cover leaf handwritten ""1605-1606"" -- the year-folder for our target's date"
+261	21 Feb 1605 era (no explicit date read)	no	no	no	"TX-KEYS: Brederode reporting journey ""nae Heydelbergh"" and dealings with Marquis Joachim Ernst van Brandenburg -- on-topic, no cipher"
+262	same leaf as 261, re-scan	no	no	no	TX-KEYS: unfolded/re-scanned, no new content
+263	none visible	no	no	no	Dutch letter, plain prose, diplomatic/political content, no date read
+264	none visible	no	no	no	"Dutch letter, plain prose, mentions ""Marquis Spinola"" etc, no date read"
+265	24 Octobre 1604	no	no	no	"Dutch letter signed ""P. Brederode"", archival page 213/313 area; plain prose"
+266	none visible	no	no	no	"Address leaf with wax seal (verso) facing start of Dutch letter, plain prose, ""Rijks Archief"" stamp"
+267	none visible	no	no	no	English/Dutch mixed letter, plain prose, diplomatic content
+268	none visible	no	no	no	"Dutch letter, plain prose, religious/political (""christelijk"") discussion"
+269	none visible	no	no	no	Dutch letter, plain prose, mentions Nederlanden, Spagnaert, tyranny
+270	(not legible this leaf)	no	no	no	"Dutch prose, page 217, discusses ""de sake"" (the matter), no cipher"
+271	"13 October (partial, ""13 octaby"")"	no	no	no	"Dutch letter, plain prose; contains ""1000 mylen"" (miles) as an explicit distance figure in running prose, not a code group"
+272	none visible	no	no	no	"Dutch letter, plain prose; contains explicit troop/money figures ""4000"", ""300"", ""5000"" in running prose (context: soldiers/guilders), not cipher code groups"
+273	none visible	no	no	no	"Dutch letter, plain prose; contains ""300"" as an explicit figure in running prose"
+274	16 March 1605, Heidelberg	no	no	no	"Letter CLOSING + signature ""Pieter van Brederode"", dated ""16 Marty 1605"" from Heidelberg (a DIFFERENT Brederode Heidelberg letter than the 21 Feb 1605 target); facing leaf mostly blank with a small torn paper fragment bearing a few words"
+275	2 April 1605 (Heydelbergh, per marginal header)	no	no	no	Dutch prose, page 215, no cipher
+276	1600 visible (partial, likely a year within text)	no	no	no	Dutch letter, plain prose, legal/procedural content
+277	21 visible (partial, unclear if date)	no	no	no	Dutch letter, plain prose
+278	none visible	no	no	no	"Dutch letter, plain prose; contains explicit sums ""700"", ""617"" in running prose (money/valuation context), not cipher code groups"
+279	"dates ""8 May"", day figures ""20/21/22"" visible in prose"	no	no	no	"Dutch letter/account discussion of exchange rates; explicit figures ""570"", ""605"", ""617"", ""4"", ""30"" all in prose context describing rates/dates, not cipher code groups"
+280	2 April 1605 (Franckfort, end of letter)	no	no	no	"Dutch letter ending ""franckfort 2en April 1605"", signed; bleed-through of a different letter mentioning ""Oldenbarnevelt"" visible on facing page (archival pencil no. 220/222)"
+281	(not legible; same cluster as 261)	no	no	no	"Dutch prose, page 222, mentions ""Marquis Joachim Ernst van Brandenburgh"" again -- same correspondence cluster as leaf 261"
+282	(not legible)	no	no	no	"Dutch prose, page 223, mentions ""Capitain Schouwlanden"", troop/money context (""1000"") but plain accounting language in running prose, not a code list"
+283	(not legible)	no	no	no	Dutch prose, page 224, no cipher
+284	(not legible)	no	no	no	"Dutch prose, page 225; native-res crop read in full: discusses sending ""duplicata"" of letters to ""den advocaet"" (Oldenbarnevelt) and ""sijn Excellentie"" -- generic logistics of correspondence, NOT our target letter, plain text throughout"
+285	(financial account, later date implied)	no	no	no	"Dutch prose, page 226; native-res crop: financial/accounting passage about payment terms discussing years written ""616"" ""617"" ""636"" (=1616/1617/1636, contracted form) and florin sums (""7500"", ""620"") -- explicit money/date numerals in running accounting prose, not a name-code nomenclator; content is clearly LATER than 1605 despite low image order, confirming this bundle interleaves multiple paginated sub-documents"
+286	26 July 1605(?), Frankfurt	no	no	no	"Letter CLOSING + signature ""P. Brederode"", dated ""Franckfort"" ~26 Julii 1605(?); recto mostly blank"
+287	"April (partial, ""duplicatie"" of April letter)"	no	no	no	"Address leaf (blank verso) facing start of new letter referencing ""April"" and a duplicate"
+288	15 May 1606 visible	no	no	no	"Financial/account page: explicit sums ""7000 gulden"", ""2000 gulden"" etc in running account prose, not cipher"
+289	12(?) April 1605, Frankfurt	no	no	no	"Letter CLOSING + signature ""Pieter van Brederode"", ""wt Franckfort desen 12 April 1605""; left page financial account with ""2600 gulden"" etc explicit sums"
+290	10 Mars 1605 (dated header)	no	no	no	"Financial ledger of bills of exchange (""lettres de change"") for ""monsieur de Brederode, agent des Messeigneurs les Estats generaulx"", dated 10 Mars 1605; lists plain florin sums (2000, 7000, 3410.84, 1500, 26591.10, 1105, 2000; total 19680) by named payee (Guillaume Caffijn, Jaques Carbonel, etc.) -- a plain accounting table, not a code/nomenclator"
+291	Novembre(?) context, undated precisely	no	no	no	"Damaged/torn leaf; left ""page"" as viewed is actually mirror/bleed-through text from the facing leaf's ink showing through the thin paper (legible reversed) -- a FRENCH financial account/ledger listing florins sums (6000, 5000, 4000, 2000, 1560, 1108, 1900, total ~19000), not prose cipher; fetched extra at 2000px to confirm mirror-image nature, no cipher/table"
+292	Novembre (partial, likely 1606)	no	no	no	"French financial account statement ""Sieur de Brederode, Agent de Mess[eigneu]rs les Etats Generaulx"", itemized sums and running totals (6716.134, 24233, 130.6, 24462.15, 17660 etc, all with ""£"" livre/florin notation) -- formal accounting ledger, not a nomenclator/key table"
+293	none, blank leaf	no	no	no	Blank leaf pair (faint bleed-through only), archive folio numbers 227/228 visible
+294	none visible	no	no	no	Address leaf with wax seal facing start of Dutch letter, plain prose
+295	1 Maij 1605 (new doc header, right page)	no	no	no	"Left page continues an Oldenbarnevelt/Brederode/Frankfort financial passage (sum ""17660""), page ~50; right page begins new Latin-titled document dated 1 Maij 1605, page 233"
+296	none visible	no	no	no	Latin letter, plain prose
+297	none visible	no	no	no	Latin letter, plain prose
+298	none visible	no	no	no	Latin letter closing, remainder of leaf blank
+299	"~16 June 1605(?), ""Oldenburg"" heading visible"	no	no	no	"French letter mentioning explicit currency sums ""cinq mille dallers"" (5000 thalers, spelled out) and ""£17600"" (livres, with £ mark) in running prose -- money context, not cipher code groups; address leaf on facing page"
+300	(not legible)	no	no	no	"German document, ""Was der Hoch und Wolgebornen..."" title, 'S RYKS ARCHIEF stamp, archival page 57/231 -- different document type/language, still no cipher"
+301	28 May 1605	no	no	no	"German letter closing ""den 28 May anno 1605"", Nürnberg mentioned; plain prose"
+302	7 July 1605	no	no	no	"Dutch letter closing ""wt Schaffhausen desen 7 July 1605"" signed P. Brederode; plain prose"
+303	"none visible (""14 Augusti"" partial)"	no	no	no	Address leaf with wax seal facing start of Dutch letter; plain prose
+304	1607(?) partial	no	no	no	Dutch letter, plain prose, diplomatic content
+305	September 1605 (Franckfort, letter closing)	no	no	no	"Dutch letter signed ""P. Brederode"", page 243, mentions ""Duijtschlandt"""
+306	Julii 1605	no	no	no	"Latin letter dated ""...Julii 1605""; uses standard Latin epistolary abbreviations (not cipher)"
+307	none visible	no	no	no	Address leaf with wax seal facing start of German letter; plain prose
+308	1605 (partial, closing)	no	no	no	German letter, plain prose, closing dated 1605
+309	none visible	no	no	no	German letter, plain prose
+310	1605 (partially legible, bottom of left page)	no	no	no	German text, page 245
+311	none visible	no	no	no	"German document labelled ""Copey"", plain prose"
+312	29 August 1605	no	no	no	"German document labelled ""Copey"", dated ""29 August Anno 1605""; plain prose"
+313	"1605 (partial, ""Extract auss..."")"	no	no	no	German extract document, plain prose
+314	7 September 1605	no	no	no	"German document (Kurfürst letter), ""Copey"" label, dated ""7 Septembris Anno 1605""; plain prose"
+315	"(item marker ""7"" visible)"	no	no	no	End of a document section, right page blank, archival pages 258/260 visible
+316	"21 October (partial, flap dated ""anno 1605"")"	no	no	no	"Address leaf with wax seal, flap inscribed ""anno 1605""; Dutch letter mentions ""brieff van 21 Octobri""; plain prose"
+317	none visible	no	no	no	Dutch letter, plain prose, mentions Sweden and Denmark
+318	29 November 1605, Hanau	no	no	no	"Dutch letter closing ""wt Hanau desen 29en Novembris 1605"" signed P. Brederode; plain prose"
+319	none, faded/blank	no	no	no	Faint bleed-through only, largely blank verso; some faint marginal jottings, illegible/not cipher-shaped
+320	Lesten Januarij 1605 (dated header)	no	no	no	"List of circular letters sent to princes/cities via ""Agent In Duitschlandt Doctor Peter Van Brederode"" -- addressees include Electors, Dukes, and free cities (Osnabruck, Nurnberg, Zurich, Bern, Basel, Schaffhausen, Lubeck, Hamburg, Bremen), dated end of Jan 1605; plain list of place names, not a numeral code"
+321	"8 January 1605 (main letter); attached slip signed ""21 [8bris/Octobris] anno 1604"""	no	no	no	"Dutch/German letter (dated Bramming, 8 Jan 1605) with an ATTACHED SLIP listing two columns of place-names/territories (Wurtenburg, Baden, Coburg, Holstein, Mecklenburg, Pommern, Lüneburg, Dennemarck, Stifft Bremen, Stifft Magdeburg / Stadt Nürnberg, Straßburg, Metz, Basel and other Evangelical, imperial cities, Bremen, Lübeck, Hamburg) -- a political list of Protestant Estates/free cities, NOT a numeral cipher key: no numbers are paired with the names, only plain place-names in two columns; examined at 2400px to confirm. Logged in detail since it superficially resembles a ""list"" but does not match the key/nomenclator pattern (no codes)"
+322	anno 1605 (partial, flap)	no	no	no	Same document as o321 continued; blank/verso side of the attached slip showing several wax seal impressions bleeding through; text visible is a repeat of o321's opening lines (bleed-through), no cipher
+323	none visible	no	no	no	"Dense Dutch draft/minute, plain prose, ""Rijks Archief"" stamp"
+324	7 November 1605(6?)	no	no	no	"Dense Dutch draft with multiple attached slips, closing dated ""7en November 160[5/6]""; plain prose"
+325	none visible (continuation)	no	no	no	Continuation of o324's draft correspondence; plain prose
+326	none visible	no	no	no	Multi-layered Dutch/German document re: Marquis Joachim Ernst von Brandenburg, several attached slips; plain prose
+327	none visible	no	no	no	Continuation of o326 document (Joachim Ernst/Brandenburg matter); plain prose
+328	none visible	no	no	no	Continuation of o326/327 document; a blank grey repair/reinforcement patch obscures part of the right page; remaining text plain prose
+329	1606 written on a repair patch (archival, not part of original text)	no	no	no	"Continuation of o326-328 document; a repair patch bears a modern pencil ""1606"" (archival dating note, not part of the cipher/letter text); underlying prose plain"
+330	24 Aug (year not confirmed)	no	no	no	"Dutch prose, page 285-ish, mentions ""Marquis Joachim Ernst van Brandenburgh te Middelburgh"""
+331	20 November 1605, Hanau	no	no	no	"Dutch letter closing ""wt Hanau desen 20 [November] 1605"" signed P. Brederode, mentions Marquis Joachim; plain prose"
+332	20 Junij 1605 (marginal header, partially legible)	no	no	no	Dutch prose, page 264/364, wax seal visible on facing leaf
+333	none visible	no	no	no	"Dutch letter, plain prose, mentions ""21"" (unclear context, possibly a date)"
+334	"26th (partial, ""26eme"")"	no	no	no	French letter, plain prose, diplomatic content re: Empire/Spain
+335	(not legible)	no	no	no	"French prose, page 371, ""Empire""/""Espagnols"" policy discussion"
+336	"24 June (partial, ""24 Junii"")"	no	no	no	French document, plain prose, diplomatic content re: Empire/Spain/Catholic League
+337	8 May 1606	no	no	no	"French letter closing ""8e May 1606"", signed; plain prose"
+338	21 [Apr?]ilis 1605	no	no	no	"German letter from ""Fridericus Pfaltzgraff von Rhein"" (Elector Palatine Frederick IV) himself, page 281, item-marker ""A"" in margin"
+339	"none visible (mentions ""23"" and ""26"" as day-numbers within prose)"	no	no	no	Copia (copy) label; French letter, plain prose, diplomatic/religious peace negotiation content
+340	(not legible)	no	no	no	"French prose, page 276, ""l'Espagnol""/monarchy discussion"
+341	6 May (year not confirmed, cross-ref to leaf 344)	no	no	no	French prose, page 277, Empire/Ligue discussion
+342	1604 and 1606 (both as years mentioned within running prose)	no	no	no	French document, plain prose, diplomatic content (Duc de Bouillon, Cleves-Julich context)
+343	May 1605 (letter on left); undated diagram (right)	no	no	no	"Left: Latin legal document closing ""May 1605"" signed ""Pedro Actor""/""Antonio Roelkerio"". RIGHT PAGE: a bracketed/tree-structured Latin outline of legal categories (Regis Hispaniae, Rebellio, Calumnia, Legalitas, etc, with sub-branches) -- this is a legal-argument classification diagram, NOT a nomenclator/cipher key: it pairs Latin category terms with sub-terms via brackets, no numbers or codes anywhere on the page"
+344	"response dated per header ""du 6 May 1605"""	no	no	no	"French ""Responce sur les poincts"", numbered response points 1-8 (enumeration, not code), page ~309"
+345	none visible	no	no	no	Left: French memoire in short question/answer format (re: Hungary, Transylvania, Bohemia religious matters). Right: Dutch letter, plain prose. Neither shows numerals or codes
+346	22 May 1605	no	no	no	"Dutch letter closing ""wt Cranau(?) desen 22 May 1605"" signed P. Brederode; plain prose"
+347	23 July 1606	no	no	no	Short dated note/slip, wax seal visible on facing leaf
+348	none legible (faded bleed-through)	no	no	no	"Faint bleed-through text plus a blank grey repair patch obscuring the centre of the page; last leaf of the range examined (adjacent to already-checked blank leaf 349 and the ""1607-1608"" folder-cover at 350)"
+349	(blank leaf)	no	no	no	Completely blank verso, immediately before the 1607-1608 divider
+350	1607-1608 (folder cover)	no	no	no	"Folder-cover leaf handwritten ""1607 - 1608"" -- confirms the 1605-1606 folder runs image order 260-349; walk stopped here per job brief"

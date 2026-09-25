@@ -119,7 +119,14 @@ Digital edition text and page images: no login, no blocks, resources.huygens.kna
   OpenAlex/Semantic Scholar abstract check or JSTOR-QUEUE.tsv.
 - Den Tex's *Oldenbarnevelt* biography (dbnl.org, full text online) not yet read -- host TLS-failed twice
   this pass; retry from a fresh session/container.
-- "A.R.A., Holland 2613" (and "2589") not traced to a current Nationaal Archief toegang/invnr.
+- "A.R.A., Holland 2613" (and "2589") does NOT match toegang 3.01.04.01's (Staten van Holland) own numbering
+  by direct EAD lookup (YX-OBR, 25 Sept 2026, below) -- likely a pre-reorganisation "dubbelen Holland" series
+  number not yet traced to its current home; NA's own catalogue search (client-rendered, needs a real browser)
+  not yet tried for this.
+- NL-HaNA 1.01.02 inv. 6016's whole "1605-1606" year-folder (image order 260-349) has now been read leaf by
+  leaf (YX-OBR, 25 Sept 2026, below) with no cipher, key or interlinear decipherment found -- this specific
+  lead is closed. The bundle's other year-folders (1602-1603 at order 1, 1607-1608 starting order 350, and
+  onward to 1613) have not been walked.
 - No transcription-for-decoding pass has been done; the ~121-token count above is a by-eye description, not
   a token-by-token key-recovery transcription.
 
@@ -277,3 +284,105 @@ pass). No logins, no credentials used.
 all >=2s apart, descriptive User-Agent. `resources.huygens.knaw.nl/wvo`: 1. `github.com`: 2 shallow clones
 (reused for grep, not committed). `dbnl.org`: 2 (both failed, TLS `SSL_ERROR_SYSCALL`, one retry per the
 good-citizen rule, not retried further). No logins, no blocks other than dbnl.org.
+
+## YX-OBR (25 Sept 2026)
+
+Job: `.claude/briefs/runs/2026-09-25-lane-yx-obr.md`, two copy-free routes on the two open leads TX-KEYS left
+(archival-citation trace; NA 1.01.02 inv. 6016 leaf walk). **Both routes are negative: no key, no clear copy,
+no cipher passage found.** Per the brief, since neither route yielded a key or a clear copy, no transcription
+or decode was attempted this pass.
+
+### Route A: tracing "A.R.A., Holland 2613, e. Duplicata" / "Holland 2589, b 4" to a modern toegang
+
+The brief's own hypothesis was NA toegang 3.01.04.01 (Staten van Holland en West-Friesland, 1572-1795).
+Confirmed the toegang's title matches via its landing page. Fetched the whole EAD XML (2.97 MB,
+`nationaalarchief.nl/onderzoeken/archief/3.01.04.01/download/xml`) and grepped for exact `<unitid>` values
+`2613`/`2589` (allowing an optional trailing letter, e.g. `2613e`): **zero matches**. The only raw-string hits
+for "2613"/"2589" anywhere in the 2.97 MB file are accidental substrings inside unrelated `hdl.handle.net`
+UUIDs, not archival numbers -- confirmed by inspecting each hit's context.
+
+The toegang's own processing notes ("Gebruikte nummering") state the pre-1880 numbering was largely retained,
+and it carries a concordance appendix ("Concordantie van de oude nummering naar de nummering in deze
+omgeknipte en bijgewerkte inventaris") whose abbreviation legend defines `D.H.` = "dubbelen Holland" (Holland
+duplicates) -- a striking match to the RGP citation's "Holland 2613 ... Duplicata" wording. But the
+concordance table itself (1,170 rows, parsed in full) contains **no `D.H.`-prefixed row at all**: the
+abbreviation is defined in the shared legend but never used in this toegang's actual old-to-new mapping,
+meaning the "dubbelen Holland" series is not held (or not separately concorded) under 3.01.04.01.
+
+Cross-checked NA 1.01.02 (Staten-Generaal, the toegang TX-KEYS already explored for other reasons) as a
+sanity check on the "old number = modern unitid" assumption: this toegang's own EAD *does* contain unitid
+`2613` and `2589` verbatim -- but both are 12-volume bound registers dated **1754-1756** respectively
+(confirmed by reading each `<unitdate>` in context), over a century after our 1605 letter. Coincidental
+modern renumbering, not a match.
+
+**Conclusion (negative, route A, S-grade search result):** the archival citation "Holland 2613"/"Holland
+2589" in Veenendaal's edition does not resolve to either of the two most plausible modern toegangen
+(3.01.04.01 Staten van Holland, 1.01.02 Staten-Generaal) by direct number lookup in their EAD finding aids.
+It most likely refers to a pre-reorganisation numbering scheme (an old "dubbelen Holland"/Loketkas series)
+renumbered or merged into a toegang not identified this pass. NA's own catalogue search
+(`nationaalarchief.nl/onderzoeken?q=...`) is client-side rendered (Angular/React shell, no server-rendered
+results reachable by curl, confirmed by fetching the search page and finding no results markup, only the
+query string echoed back in a JS blob) -- a real-browser search for "dubbelen Holland" was not tried this
+pass (out of route A's stated method, which was "confirm from the finding aid... not by assumption", already
+done). A single web-search attempt via `google.com/search` returned an unparseable bot-challenge page (heavily
+obfuscated JS, no plain results) and was not retried, per the good-citizen rule and because Google search is
+not a documented route in CLAUDE.md's Access playbook.
+
+### Route B: walking NA 1.01.02 inv. 6016 from image order 261
+
+Built the full image-order -> file-UUID map from the bundle's METS XML (`service.archief.nl/gaf/api/mets/v1/
+4153f78f-3369-4801-93bc-c3eb9b39012c`, 624 entries, saved to scratch as `order_map.json`; the IIIF image base
+path is constant for the whole object, `41/53/f7/8f/33/69/48/01/93/bc/c3/eb/9b/39/01/2c/<uuid>.jp2`, so any
+page can be fetched directly at `.../full/<width>,/0/default.jpg` without re-parsing the METS per leaf).
+
+Read every one of the 91 leaves from image order 260 (the "1605-1606" folder-cover leaf TX-KEYS already
+found) through order 350 -- which turned out to BE the next year-divider leaf, handwritten "1607 - 1608",
+immediately after a blank verso at order 349. **The whole "1605-1606" folder has now been read leaf by leaf;
+full per-leaf log in `obr_6016_leaflog.tsv` beside this file (order, date read if legible, cipher/key/
+interlinear yes-no, one-line note).**
+
+**No numeral-code cipher, no key/nomenclator table, and no interlinear decipherment found on any of the 91
+leaves.** Every leaf is plain running prose -- Dutch, French, German or Latin -- covering diplomatic
+correspondence, financial/exchange-rate accounts, legal memoranda and political lists (an addressee list of
+princes and free cities for circular letters sent via Brederode, dated end of Jan 1605; a two-column list of
+Imperial/Protestant territories and cities, dated Oct 1604; a Latin legal-argument outline). Several leaves
+carry explicit multi-digit numbers, but always in an unambiguous plain context -- money sums in guilders/
+florins/thalers, distances in miles, exchange rates, dates written in contracted form (e.g. "616" for 1616)
+-- never a standalone code group substituting for a name or word the way no. 92's ~121 tokens do. Two leaves
+that looked cipher-like at a glance on closer inspection were not: order 291 (mirror-image ink bleed-through
+from the facing leaf, itself a plain French financial ledger) and order 321 (a two-column place-name list
+with no numerals at all, examined at 2400px to rule out).
+
+The folder contains **several other letters signed by Pieter van Brederode himself**, none in cipher: 24 Oct
+1604; 16 Mar 1605 from Heidelberg (order 274 -- a different Heidelberg letter than our 21 Feb 1605 target);
+10 May 1605; ~12 Apr 1605 from Frankfurt (order 289); ~26 Jul 1605 from Frankfurt (order 286); 7 Jul 1605
+from Schaffhausen; Sept 1605 from Frankfurt; 20 Nov and 29 Nov 1605 from Hanau; 23 Jul 1606. A letter from
+Elector Palatine Frederick IV himself also appears (order 338, dated ~21 April 1605). None of this
+correspondence is enciphered -- consistent with Veenendaal's own statement (already on file) that no. 92 is
+the volume's only ciphered item, now extended to: this entire adjoining year-folder of the agent's own
+incoming-papers series carries no cipher either. No duplicate or copy of the specific 21 Feb 1605 letter was
+spotted (order 261's on-topic Heidelberg/Brandenburg leaf, already flagged by TX-KEYS, remains the closest
+thing to it and is not itself the letter).
+
+**This closes the route B lead as stated in the brief.** A successor could walk the bundle's other
+year-folders (order 1-259 for 1602-1604, order 350-624 for 1607-1613) if a duplicate is still wanted, but
+that is a new, unbudgeted search, not a continuation of this job.
+
+### Method (subagent use)
+
+Fetched the coarse skeleton (every ~20th leaf, then gap-filled at 5-10 leaf granularity, then leaf-by-leaf
+around the transition) personally; one Sonnet subagent (per the brief's "a subagent may look at batches of
+images" allowance, 1 of the 2 permitted) filled the remaining 62 unchecked orders in the same range with the
+same fetch method and log schema, so the combined `obr_6016_leaflog.tsv` covers all 91 leaves with no gaps
+(verified programmatically). The subagent worked from the scratchpad only, touched no repository file, and
+reported back inline; its findings are merged into the log and narrative above, not taken on faith --
+cross-checked its yes/no cipher flags against its own per-leaf notes, all consistent with "no".
+
+### Hosts/requests this section
+
+`service.archief.nl`: ~106 (1 METS fetch, ~41 image fetches by this worker directly including 2 higher-res
+re-fetches for closer inspection, ~64 image fetches by the one subagent including 2 higher-res re-fetches),
+all >=1.5-1.8s apart, well under the brief's 150 cap, descriptive User-Agent. `www.nationaalarchief.nl`: 5
+(toegang 3.01.04.01 landing page, its EAD XML, toegang 1.01.02 landing page, its EAD XML, one client-rendered
+search page that returned no usable results), well under the brief's 30 cap. `google.com`: 1 (bot-challenge
+page, not retried, not a documented route). No logins, no credentials, no blocks/429s encountered.
