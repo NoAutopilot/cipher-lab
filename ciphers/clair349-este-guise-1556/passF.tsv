@@ -1,0 +1,1020 @@
+line	position	token	kind	gloss	grade	note
+01	1	6	digit		H	"stamp (BnF ownership seal) and archival numbers ""2429""/""fol.1""/""3"" in upper margin skipped per instructions; faint pencil marks near x~850-950 also skipped as non-cipher"
+01	2	S13	sign	?	H	plus/cross mark; tiny gloss mark above illegible
+01	3	12	digit		H	"written as ""1"" + z-curl (digit 2)"
+01	4	S79	sign		H	y-shape
+01	5	73	digit		H
+01	6	S34	sign	?	H	Ao ligature; tiny gloss mark above illegible
+01	7	|	divider		M	drawn as short horizontal double-dash (not vertical/slanted); recurring separator, distinct from the true vertical/slanted bar strokes also seen in this line
+01	8	6	digit		H
+01	9	9	digit		H
+01	10	16	digit		H
+01	11	10	digit		H
+01	12	4	digit		H
+01	13	S27	sign	?	H	tall doubled long-s with crossbar (ff); tiny gloss dash above illegible
+01	14	6	digit	?	H	small double-dot mark above, illegible as a letter
+01	15	|	divider		M	same horizontal double-dash mark as position 7
+01	16	5	digit		H
+01	17	|	divider		H	true bold vertical/slanted divider stroke
+01	18	5	digit		H
+01	19	16	digit	?	H	small mark above, illegible
+01	20	S40	sign	?	M	ornate hooked entry-stroke rising into n-shape whose right leg closes into a loop, small dot after; tentative match, low confidence
+01	21	6	digit	?	H	double-dot mark above, illegible
+01	22	|	divider		M	same horizontal double-dash mark as position 7
+01	23	X?	X?		M	"bold capital V joined by continuous stroke to a swirling closed loop (beta/long-s-like); no confident atlas match, closest candidates S51/S39; a small cursive marginal annotation reading roughly ""qual s[?]a"" sits above this area in a larger, more fluent hand than the digit-glosses -- not transcribed as a token, possibly a later reader's note"
+01	24	|	divider		H	true bold vertical divider stroke
+01	25	12	digit		H
+01	26	X?	X?		M	"small cursive lowercase ""a"" with a trailing comma-like flourish, at main baseline size; no exact atlas match"
+01	27	S44	sign		H	p-like loop with crossed stem
+01	28	S21	sign		M	hooked ascender with tail; tentative match
+01	29	05	digit		H	"0 and ""5"" written joined"
+01	30	|	divider		M	same horizontal double-dash mark as position 7
+01	31	6	digit		H	last token before right edge of leaf
+02	1	|	divider	m	H	true bold vertical divider; top of crop shows bottom sliver of line01's stamp curve, not transcribed
+02	2	S29	sign	?	M	three minims (uu)
+02	3	|	divider		M	horizontal double-dash style divider (as line01)
+02	4	6	digit	c	H
+02	5	S13	sign		H	plus/cross mark
+02	6	9	digit	?	H
+02	7	S69	sign		H	capital A with hooked v (Av)
+02	8	X?	X?		M	hooked ascender ('b'/'6'-like) + o + large hooked n/omega-loop with trailing dot, continuous ligature; no confident atlas match, cf. S47/S40
+02	9	|	divider		M	horizontal double-dash style divider
+02	10	6	digit		H
+02	11	|	divider	?	H	true bold vertical divider; small mark above resembling a numeral, uncertain as a gloss letter
+02	12	10	digit	u	H
+02	13	|	divider		M	horizontal double-dash style divider
+02	14	|	divider	u	H	true bold vertical divider
+02	15	S79	sign		M	y-shape
+02	16	64	digit	?	H	small mark above, illegible
+02	17	S30	sign		M	c-hook joined to na
+02	18	6	digit		H
+02	19	S19	sign		M	small plain circle, distinct in size/shape from the numeral 0 seen elsewhere
+02	20	|	divider	?	M	horizontal double-dash style divider; tiny double-dot mark above
+02	21	6	digit	?	H
+02	22	S28	sign		M	c-hook joined to m, with extra trailing loops (uio-like) beyond the core atlas shape
+02	23	104	digit	u	H
+02	24	|	divider		H	true bold vertical divider
+02	25	S44	sign		H	p-like loop with crossed stem
+02	26	12	digit		H	last token before right edge of leaf
+03	1	X?	X?		M	tall looped ascender crossed by a diagonal stroke resembling numeral 4; possibly a sign+digit pair, ambiguous; top of crop shows sliver of line02, not transcribed
+03	2	22	digit		H	"written as ""2"" + z-curl"
+03	3	|	divider		H	true bold vertical divider
+03	4	S34	sign	z	H	Ao ligature
+03	5	|	divider		M	horizontal double-dash style divider
+03	6	64	digit		H
+03	7	S63	sign		M	vertical stroke with crossed tick near top and closed loop at bottom; tentative q-like match
+03	8	X?	X?		M	loop with hooked descender resembling a stylised 9; no confident atlas match
+03	9	|	divider		M	horizontal double-dash style divider
+03	10	11	digit	n	H
+03	11	61	digit		M	"digit boundary uncertain, may be ""6"" ""1"" separate"
+03	12	|	divider		H	true bold vertical divider
+03	13	9	digit		M	read as separate single-digit tokens with small gaps; boundary uncertain
+03	14	5	digit		M	see note above
+03	15	1	digit		M	see note above
+03	16	6	digit		M	see note above
+03	17	9	digit		M	see note above
+03	18	X?	X?		M	bold V/loop ligature similar to line01 pos.23/line02 pos.8, tail curling into an S-shape; no confident atlas match
+03	19	|	divider		H	true bold vertical divider
+03	20	S13	sign		M	plus/cross mark, low confidence at this resolution
+03	21	9	digit	o	M
+03	22	X?	X?		M	small n-shape, low confidence
+03	23	X?	X?		M	swirl ('S') closing into 'o' then a small loop ('9'); ligature, no confident atlas match
+03	24	|	divider		M
+03	25	5	digit		M
+03	26	|	divider		H	true bold vertical divider
+03	27	1	digit		M
+03	28	4	digit		H
+03	29	S44	sign		H	p-like loop with crossed stem
+03	30	12	digit	z	H
+03	31	S34	sign		H	Ao ligature
+03	32	16	digit		H	last token before right edge of leaf
+04	1	X?	X?		M	bold X/cross joined to a vertical p-loop-over-8 ligature; no confident atlas match, low confidence overall for this line's dense mid-section
+04	2	|	divider		M	horizontal double-dash style divider
+04	3	S30	sign	d	M	c-hook joined to na
+04	4	104	digit	u	H
+04	5	|	divider	z	M	horizontal double-dash style divider
+04	6	6	digit		H
+04	7	S13	sign		M	plus/cross mark
+04	8	|	divider		H	true bold vertical divider
+04	9	S40	sign		M	ornate hooked n/omega-loop shape (cf. line01 pos.20); tentative
+04	10	5	digit		H
+04	11	16	digit		H
+04	12	S54	sign		M	f with a closed loop
+04	13	0	digit		M	round shape, could be sign S19 instead of digit 0
+04	14	S13	sign		M	plus/cross (x-shaped) mark
+04	15	14	digit	z	H
+04	16	64	digit		H
+04	17	X?	X?		M	"crossed-t-like shape resembling ""to""; no confident atlas match"
+04	18	|	divider		M	horizontal double-dash style divider
+04	19	22	digit		M	digit boundary uncertain
+04	20	5	digit		M	"digit boundary uncertain; small cursive marginal annotation resembling ""quel"" visible nearby, not transcribed as a token"
+04	21	6	digit	dv	M
+04	22	S44	sign		H	p-like loop with crossed stem
+04	23	62	digit		H
+04	24	S13	sign		M	plus/cross (x-shaped) mark
+04	25	S37	sign	z	M	crossed t joined to o
+04	26	60	digit		H
+04	27	S38	sign		M	crossed t joined to c, with a tick
+04	28	|	divider		H	true bold vertical divider
+04	29	104	digit		H
+04	30	S64	sign		M	3-shape with a trailing tail; last token before right edge of leaf, low confidence
+05	1	S21	sign	z	M	hooked ascender with tail
+05	2	6	digit		H
+05	3	15	digit	n	M	digit boundary uncertain
+05	4	10	digit	u	M	digit boundary uncertain
+05	5	|	divider		M	horizontal double-dash style divider
+05	6	S44	sign	z	M	p-like loop with crossed stem
+05	7	S34	sign	9	M	Ao ligature; low confidence on gloss
+05	8	26	digit		M	written as z-curl(2) + 6; boundary uncertain
+05	9	9	digit		H
+05	10	14	digit		H
+05	11	1	digit		M
+05	12	S44	sign		M	p-like loop with crossed stem, low confidence
+05	13	|	divider		M	horizontal double-dash style divider
+05	14	X?	X?		M	small n/loop shape; no confident atlas match
+05	15	S27	sign		M	tall doubled long-s with crossbar (ff)
+05	16	|	divider		M	horizontal double-dash style divider
+05	17	64	digit		H
+05	18	X?	X?		M	loop flourish; no confident atlas match
+05	19	102	digit		M	written as 10 + z-curl(2); boundary uncertain
+05	20	16	digit		M
+05	21	68	digit		M	digit boundary uncertain
+05	22	62	digit		M
+05	23	S21	sign		M	hooked ascender with tail, low confidence
+05	24	5	digit		M
+05	25	|	divider		H	true bold vertical divider
+05	26	601	digit		M	digit run, boundary uncertain
+05	27	2	digit		M	z-curl alone, standalone digit 2
+05	28	7	digit		M
+05	29	|	divider		H	true bold vertical divider
+05	30	26	digit		M	last legible cluster before right edge; low confidence for this line's second half throughout
+06	1	S13	sign		M	plus/cross (x-shaped) mark
+06	2	X?	X?	?	M	"crossed ascender resembling ""to""; no confident atlas match"
+06	3	16	digit		H
+06	4	|	divider		H	true bold vertical divider
+06	5	3	digit	0	M
+06	6	X?	X?	2	M	"hooked ligature resembling ""bo"" plus loop, cf. line02 pos.8; low confidence"
+06	7	69	digit		M
+06	8	|	divider		M	horizontal double-dash style divider
+06	9	9	digit		H
+06	10	X?	X?		M	ua-like ligature; no confident atlas match
+06	11	|	divider		H	true bold vertical divider
+06	12	S54	sign		M	f with a closed loop
+06	13	4	digit		H
+06	14	4	digit		H
+06	15	S34	sign		H	Ao ligature
+06	16	S37	sign		M	crossed t joined to o
+06	17	|	divider		H	true bold vertical divider
+06	18	12	digit	a	H
+06	19	5	digit		M
+06	20	X?	X?		M	loop flourish; no confident atlas match
+06	21	S13	sign		M	plus/cross mark
+06	22	16	digit		H
+06	23	|	divider		M	horizontal double-dash style divider
+06	24	26	digit	9	M	written as z-curl(2) + 6
+06	25	S13	sign		M	plus/cross mark
+06	26	1	digit		H
+06	27	X?	X?		M	"crossed ascender resembling ""to""; no confident atlas match"
+06	28	62	digit		M
+06	29	X?	X?		M	small n-shape; no confident atlas match
+06	30	S40	sign		M	ornate hooked n/omega-loop shape, cf. line01 pos.20; tentative
+06	31	16	digit		H
+06	32	|	divider		H	true bold vertical divider
+06	33	S79	sign		M	"y-shape, low confidence; small cursive marginal annotation resembling ""quel"" visible nearby, not transcribed as a token"
+06	34	5	digit		H
+06	35	16	digit		H
+06	36	S13	sign		M	plus/cross mark
+06	37	S13	sign		M	plus/cross mark; last token before right edge of leaf
+07	1	5	digit	0	M
+07	2	|	divider		M	horizontal double-dash style divider
+07	3	S34	sign		H	Ao ligature
+07	4	9	digit		H
+07	5	16	digit		H
+07	6	S13	sign		M	plus/cross mark
+07	7	|	divider		H	true bold vertical divider
+07	8	5	digit		M	"small cursive marginal annotation resembling ""quel 60?"" visible nearby, not transcribed as a token"
+07	9	|	divider		H	true bold vertical divider
+07	10	S29	sign		M	three minims (uu)
+07	11	|	divider		M	horizontal double-dash style divider
+07	12	6	digit		H
+07	13	15	digit		M
+07	14	16	digit		H
+07	15	S40	sign		M	ornate hooked n/omega-loop shape, cf. line01 pos.20; tentative
+07	16	|	divider		H	true bold vertical divider
+07	17	S21	sign		M	hooked ascender with tail
+07	18	544	digit		M	digit run, boundary uncertain
+07	19	6	digit		H
+07	20	02	digit		M
+07	21	61	digit		M
+07	22	S37	sign		M	crossed t joined to o
+07	23	|	divider		H	true bold vertical divider
+07	24	S37	sign		M	crossed t joined to o
+07	25	|	divider		M	horizontal double-dash style divider
+07	26	26	digit		M	written as z-curl(2) + 6
+07	27	6	digit		H
+07	28	S27	sign		M	tall doubled long-s with crossbar (ff)
+07	29	16	digit		H
+07	30	S13	sign		M	plus/cross mark
+07	31	|	divider		H	true bold vertical divider
+07	32	X?	X?		M	"small ligature resembling ""ny""; no confident atlas match; small cursive marginal annotation (""quo...mand[é]..."") visible nearby, not transcribed as tokens"
+07	33	S21	sign		M	hooked ascender with tail
+07	34	S29	sign		M	three minims (uu)
+07	35	12	digit		H
+07	36	15	digit		M
+07	37	16	digit		H	last token before right edge of leaf
+08	1	77	digit		H
+08	2	|	divider		H	true bold vertical divider
+08	3	X?	X?		M	"ligature resembling ""ra""; no confident atlas match"
+08	4	62	digit		M
+08	5	S13	sign		M	plus/cross mark
+08	6	S30	sign		M	c-hook joined to na
+08	7	44	digit	n	H
+08	8	S21	sign		M	hooked ascender with tail
+08	9	16	digit		H
+08	10	10	digit		M
+08	11	4	digit		H
+08	12	65	digit		M
+08	13	26	digit		M	written as z-curl(2) + 6
+08	14	S29	sign		M	three minims (uu)
+08	15	6	digit		H
+08	16	215	digit		M	digit run, boundary uncertain
+08	17	S37	sign		M	crossed t joined to o
+08	18	|	divider		H	true bold vertical divider
+08	19	X?	X?		M	"loop flourish resembling ""po""; no confident atlas match"
+08	20	|	divider		H	true bold vertical divider
+08	21	S27	sign		M	tall doubled long-s with crossbar (ff)
+08	22	16	digit		H
+08	23	26	digit		M	written as z-curl(2) + 6
+08	24	12	digit		H
+08	25	S34	sign		H	Ao ligature
+08	26	|	divider		H	true bold vertical divider
+08	27	102	digit	5	M	written as 10 + z-curl(2)
+08	28	|	divider		H	true bold vertical divider
+08	29	X?	X?		M	dense crossed blot, possibly ink blot rather than a sign; low confidence
+08	30	12	digit		H
+08	31	60	digit		M	last legible cluster before right edge; low confidence
+09	1	|	divider		H	true bold vertical divider
+09	2	5104	digit		M	digit run, boundary uncertain
+09	3	S13	sign		M	plus/cross mark
+09	4	5	digit		H
+09	5	64	digit		H
+09	6	9	digit		H
+09	7	S38	sign		M	crossed t joined to c, with a tick
+09	8	|	divider		H	true bold vertical divider
+09	9	S13	sign		M	plus/cross mark
+09	10	605	digit		M	digit run, boundary uncertain
+09	11	|	divider		H	true bold vertical divider
+09	12	S21	sign		M	hooked ascender with tail
+09	13	16	digit		H
+09	14	X?	X?		M	"ligature resembling ""gr""; no confident atlas match"
+09	15	S34	sign		H	Ao ligature
+09	16	26	digit		M	written as z-curl(2) + 6
+09	17	5	digit		H
+09	18	16	digit		H
+09	19	115	digit		M	digit run, boundary uncertain
+09	20	S37	sign		M	crossed t joined to o
+09	21	62	digit		M	written as z-curl(2) + 6
+09	22	|	divider		H	true bold vertical divider
+09	23	S40	sign		M	ornate hooked n/omega-loop shape, cf. line01 pos.20; tentative
+09	24	14	digit		H
+09	25	S13	sign	5a	M	plus/cross mark
+09	26	|	divider		H	true bold vertical divider
+09	27	9	digit		H
+09	28	14	digit		H
+09	29	S21	sign		M	hooked ascender with tail
+09	30	24	digit	7	M	written as 2 + 4, or z-curl(2)+4; boundary uncertain
+09	31	S12	sign		M	small cross/dagger mark
+09	32	S13	sign		M	plus/cross mark
+09	33	X?	X?		M	ornate loop shape; no confident atlas match
+09	34	|	divider		H	true bold vertical divider
+09	35	16	digit		H
+09	36	62	digit		M	written as z-curl(2) + 6
+09	37	61	digit		M	last token before right edge of leaf
+10	1	S37	sign	po	M	crossed t joined to o
+10	2	1	digit		M
+10	3	4	digit		H
+10	4	X?	X?		M	small n-shape; no confident atlas match
+10	5	S38	sign		M	crossed t joined to c, with a tick
+10	6	6	digit		H
+10	7	S34	sign		H	Ao ligature
+10	8	|	divider		H	true bold vertical divider
+10	9	3	digit		M
+10	10	X?	X?		M	"ligature resembling ""ar""; no confident atlas match"
+10	11	12	digit		H
+10	12	X?	X?		M	small n-shape; no confident atlas match
+10	13	26	digit		M	written as z-curl(2) + 6
+10	14	S21	sign		M	hooked ascender with tail
+10	15	S37	sign		M	crossed t joined to o
+10	16	16	digit		H
+10	17	102	digit		M	written as 1 + 0 + z-curl(2); boundary uncertain
+10	18	24	digit		M	written as z-curl(2) + 4, or 2 + 4; boundary uncertain
+10	19	64	digit		H
+10	20	26	digit		M	written as z-curl(2) + 6
+10	21	|	divider		H	true bold vertical divider
+10	22	512	digit		M	digit run, boundary uncertain
+10	23	S29	sign		M	three minims (uu)
+10	24	26	digit		M	written as z-curl(2) + 6
+10	25	S21	sign		M	hooked ascender with tail
+10	26	16	digit		H
+10	27	115	digit		M	digit run, boundary uncertain
+10	28	98	digit		M	digit run, boundary uncertain
+10	29	|	divider		M	horizontal double-dash style divider
+10	30	X?	X?		M	ornate loop shape; no confident atlas match
+10	31	62	digit		M	written as z-curl(2) + 6
+10	32	S21	sign		M	hooked ascender with tail
+10	33	|	divider		H	true bold vertical divider
+10	34	5	digit		M	last legible token before right edge; low confidence
+11	1	22	digit		M	line is unusually tall (222px); low confidence throughout
+11	2	S37	sign		M	crossed t joined to o
+11	3	X?	X?		M	"small cursive cluster resembling ""bonate""/""bonatc"" sits below-left of this token in a larger, more fluent hand than the digit-glosses -- not transcribed as tokens, possibly a later reader's marginal annotation or bleed-through"
+11	4	S13	sign		M	plus/cross mark
+11	5	S38	sign		M	crossed t joined to c, with a tick
+11	6	104	digit		M	digit run, boundary uncertain
+11	7	S24	sign		M	two-letter-looking ligature (L+B/8)
+11	8	12	digit		H
+11	9	X?	X?		M	"bold crossbarred ""A"" ligature, cf. S41; tentative"
+11	10	14	digit	a	H
+11	11	102	digit		M	written as 1+0+z-curl(2)
+11	12	|	divider		H	true bold vertical divider
+11	13	251	digit	z	M	digit run, boundary uncertain
+11	14	S13	sign		M	plus/cross mark
+11	15	S38	sign		M	crossed t joined to c, with a tick
+11	16	S34	sign		M	Ao ligature
+11	17	16	digit		H
+11	18	S13	sign		M	plus/cross mark
+11	19	|	divider		H	true bold vertical divider
+11	20	82	digit		M	written as 8 + z-curl(2)
+11	21	9	digit		M
+11	22	12	digit	u	M
+11	23	016	digit		M
+11	24	102	digit		M	written as 1+0+z-curl(2)
+11	25	44	digit		M
+11	26	X?	X?		M	crossed flourish; no confident atlas match
+11	27	|	divider		H	true bold vertical divider
+11	28	S04	sign		M	hash/lattice mark
+11	29	102	digit		M	written as 1+0+z-curl(2); a dense ink blot sits nearby, not transcribed as a token
+11	30	S21	sign		M	hooked ascender with tail
+11	31	X?	X?		M	ornate double-loop ligature; no confident atlas match
+11	32	S13	sign	a	M	plus/cross mark
+11	33	9	digit		M
+11	34	244	digit		M	digit run, boundary uncertain
+11	35	641	digit		M	digit run, boundary uncertain
+11	36	4	digit		H
+11	37	15	digit		M
+11	38	S38	sign		M	crossed t joined to c, with a tick
+11	39	104	digit	z	M	digit run, boundary uncertain
+11	40	S19	sign		M	small plain circle
+11	41	82	digit		M	"written as 8 + z-curl(2); small cursive marginal annotation resembling ""quel"" visible nearby, not transcribed as a token; last legible tokens before right edge of leaf, low confidence for this entire line"
+12	1	4	digit		M	line is unusually tall (215px); low confidence throughout
+12	2	S38	sign		M	crossed t joined to c, with a tick
+12	3	X?	X?		M	ornate loop ligature; no confident atlas match
+12	4	24	digit		M	written as z-curl(2) + 4
+12	5	269	digit		M	digit run, boundary uncertain
+12	6	X?	X?		M	dense round blot, possibly ink blot rather than a sign
+12	7	|	divider		H	true bold vertical divider
+12	8	S79	sign		M	y-shape, low confidence
+12	9	S21	sign		M	hooked ascender with tail
+12	10	S04	sign		M	hash/lattice mark
+12	11	S21	sign		M	hooked ascender with tail
+12	12	544	digit		M	digit run, boundary uncertain
+12	13	60	digit		M
+12	14	62	digit		M	written as z-curl(2) + 6
+12	15	73	digit		M
+12	16	S40	sign		M	ornate hooked n/omega-loop ligature (F+omega); tentative
+12	17	X?	X?		M	p-loop with hook; no confident atlas match
+12	18	12	digit		M	written as 1 + z-curl(2)
+12	19	24	digit		M	written as z-curl(2) + 4
+12	20	6	digit		H
+12	21	|	divider		H	true bold vertical divider
+12	22	8	digit		M
+12	23	X?	X?		M	"ornate looped ligature resembling ""Sn""; no confident atlas match"
+12	24	12	digit		M	written as 1 + z-curl(2)
+12	25	269	digit		M	digit run, boundary uncertain
+12	26	12	digit		M	written as 1 + z-curl(2)
+12	27	|	divider		H	true bold vertical divider
+12	28	12	digit		M	last legible token before right edge of leaf; low confidence for this entire line
+13	1	12	digit		H
+13	2	S13	sign		M	plus/cross mark
+13	3	S34	sign		H	Ao ligature
+13	4	62	digit		M	written as z-curl(2) + 6
+13	5	S13	sign		M	plus/cross mark
+13	6	S44	sign		H	p-like loop with crossed stem
+13	7	S79	sign		M	y-shape, low confidence
+13	8	5	digit		H
+13	9	14	digit		H
+13	10	102	digit		M	written as 1+0+z-curl(2)
+13	11	S76	sign		M	plain capital A
+13	12	16	digit		H
+13	13	23	digit		M	digit run, boundary uncertain
+13	14	|	divider		H	true bold vertical divider
+13	15	62	digit		M	written as z-curl(2) + 6
+13	16	15	digit		M
+13	17	S37	sign		M	crossed t joined to o
+13	18	6	digit		H
+13	19	S30	sign		M	c-hook joined to na
+13	20	5	digit		H
+13	21	104	digit		M
+13	22	|	divider		H	true bold vertical divider
+13	23	94	digit		M
+13	24	476	digit		M	digit run, boundary uncertain
+13	25	6	digit		H
+13	26	16	digit		H
+13	27	|	divider		H	true bold vertical divider
+13	28	S37	sign		M	crossed t joined to o
+13	29	4	digit		H
+13	30	104	digit		M
+13	31	S37	sign		M	crossed t joined to o
+13	32	62	digit		M	written as z-curl(2) + 6
+13	33	S13	sign		M	plus/cross mark
+13	34	|	divider		H	true bold vertical divider
+13	35	S21	sign		M	hooked ascender with tail
+13	36	X?	X?		M	"ligature resembling ""ch""; no confident atlas match"
+13	37	9	digit		H
+13	38	178	digit		M	digit run, boundary uncertain
+13	39	52	digit		M	last legible token before right edge of leaf, written as z-curl(2)+5 or 5+z-curl(2); low confidence
+14	1	26	digit		M	written as z-curl(2) + 6
+14	2	S21	sign		M	hooked ascender with tail
+14	3	5	digit	3	M
+14	4	S13	sign		M	plus/cross mark
+14	5	604	digit		M	digit run, boundary uncertain
+14	6	14	digit		H
+14	7	54	digit		H
+14	8	16	digit	u	H
+14	9	X?	X?		M	small n-shape; no confident atlas match
+14	10	15	digit		M
+14	11	S37	sign		M	crossed t joined to o
+14	12	|	divider		H	true bold vertical divider
+14	13	X?	X?		M	"ligature resembling ""sy""; no confident atlas match"
+14	14	S13	sign		M	plus/cross mark
+14	15	12	digit		H
+14	16	60	digit		M
+14	17	S34	sign		H	Ao ligature
+14	18	16	digit		H
+14	19	|	divider		H	true bold vertical divider
+14	20	12	digit		H
+14	21	6	digit		H
+14	22	S13	sign		M	plus/cross mark
+14	23	15	digit		M
+14	24	S21	sign		M	hooked ascender with tail
+14	25	60	digit		H
+14	26	|	divider		H	true bold vertical divider
+14	27	S79	sign		M	y-shape, low confidence
+14	28	|	divider		H	true bold vertical divider
+14	29	15	digit		M
+14	30	14	digit		H
+14	31	102	digit		M	written as 1+0+z-curl(2)
+14	32	60	digit		H
+14	33	S21	sign		M	hooked ascender with tail
+14	34	16	digit		H
+14	35	X?	X?		M	small n-shape; no confident atlas match
+14	36	26	digit		M	last token before right edge of leaf, written as z-curl(2)+6
+15	1	X?	X?		M	dense blot, possibly ink blot rather than a sign; low confidence
+15	2	X?	X?		M	"looped ""S""-ligature; no confident atlas match"
+15	3	12	digit		M	written as 1 + z-curl(2)
+15	4	104	digit		M
+15	5	S34	sign		H	Ao ligature
+15	6	16	digit		M
+15	7	X?	X?		M	"looped ""S""-ligature (cont); no confident atlas match"
+15	8	62	digit		M	written as z-curl(2) + 6
+15	9	15	digit		M
+15	10	S37	sign		M	crossed t joined to o
+15	11	26	digit		M	written as z-curl(2) + 6
+15	12	S30	sign		M	c-hook joined to na
+15	13	5	digit		H
+15	14	|	divider		H	true bold vertical divider
+15	15	98	digit		M	digit run, boundary uncertain
+15	16	76	digit		M
+15	17	16	digit		H
+15	18	|	divider		H	true bold vertical divider
+15	19	60	digit		H
+15	20	26	digit		M	written as z-curl(2) + 6
+15	21	7	digit		H
+15	22	44	digit		H
+15	23	102	digit		M	written as 1+0+z-curl(2)
+15	24	52	digit		M	digit run, boundary uncertain
+15	25	60	digit		H
+15	26	S75	sign		M	bold capital H
+15	27	X?	X?		M	small m-shape; no confident atlas match
+15	28	26	digit		M	written as z-curl(2) + 6
+15	29	58	digit		M
+15	30	16	digit		M	last legible token before right edge of leaf; small cursive marginal annotation visible nearby, not transcribed as a token; low confidence for this entire line
+16	1	X?	X?		M	cross-loop ligature; no confident atlas match
+16	2	S34	sign	12	M	Ao ligature
+16	3	62	digit		M	written as z-curl(2) + 6
+16	4	S21	sign		M	hooked ascender with tail
+16	5	102	digit		M	written as 1+0+z-curl(2)
+16	6	|	divider		H	true bold vertical divider
+16	7	5	digit		H
+16	8	14	digit		H
+16	9	9	digit		M
+16	10	S34	sign		H	Ao ligature
+16	11	12	digit		M	written as 1 + z-curl(2)
+16	12	S37	sign		M	crossed t joined to o
+16	13	60	digit		H
+16	14	X?	X?		M	crossed loop; no confident atlas match
+16	15	102	digit		M	written as 1+0+z-curl(2)
+16	16	16	digit		H
+16	17	|	divider		H	true bold vertical divider
+16	18	5	digit		H
+16	19	7	digit		H
+16	20	9	digit		M
+16	21	744	digit		M	digit run, boundary uncertain
+16	22	102	digit		M	written as 1+0+z-curl(2)
+16	23	52	digit		M
+16	24	60	digit		H
+16	25	X?	X?		M	"ligature resembling ""ff+e""; no confident atlas match"
+16	26	60	digit		H
+16	27	S13	sign		M	plus/cross mark
+16	28	12	digit		M	written as 1 + z-curl(2)
+16	29	64	digit		H
+16	30	15	digit		M
+16	31	16	digit		H
+16	32	|	divider		H	true bold vertical divider
+16	33	X?	X?		M	Ao-phi combined ligature; no confident atlas match
+16	34	4	digit		M	"dense ink blot nearby, not transcribed as a token; last legible token before right edge of leaf; small cursive marginal annotation (""m"") visible, not transcribed; low confidence for this entire line"
+17	1	104	digit	u	M
+17	2	64	digit		H
+17	3	S13	sign		M	plus/cross mark
+17	4	916	digit		M	"digit run, boundary uncertain; small cursive marginal annotation resembling ""fait a"" visible nearby, not transcribed as a token"
+17	5	X?	X?		M	"tall ascender (""V""-like); no confident atlas match"
+17	6	14	digit		H
+17	7	16	digit		H
+17	8	12	digit		M	written as 1 + z-curl(2)
+17	9	15	digit		M
+17	10	S37	sign		M	crossed t joined to o
+17	11	S13	sign		M	plus/cross mark
+17	12	|	divider		H	true bold vertical divider
+17	13	S21	sign		M	hooked ascender with tail
+17	14	7	digit		M	"small cursive marginal annotation resembling ""fait"" visible nearby, not transcribed as a token"
+17	15	S27	sign		M	tall doubled long-s with crossbar (ff)
+17	16	62	digit		M	written as z-curl(2) + 6
+17	17	104	digit		M
+17	18	40	digit		M
+17	19	9	digit		M
+17	20	|	divider		H	true bold vertical divider
+17	21	24	digit		M	written as z-curl(2) + 4
+17	22	5	digit		M
+17	23	|	divider		H	true bold vertical divider
+17	24	X?	X?		M	"ligature resembling ""ffa""; no confident atlas match"
+17	25	142	digit		M	digit run, boundary uncertain
+17	26	102	digit		M	written as 1+0+z-curl(2)
+17	27	X?	X?		M	ornate hash-like ligature; no confident atlas match
+17	28	4	digit		M	"last legible token before right edge of leaf; small cursive marginal annotation (""m"") visible nearby, not transcribed; low confidence for this entire line"
+18	1	167	digit	u	M	digit run, boundary uncertain
+18	2	S37	sign		M	crossed t joined to o
+18	3	X?	X?		M	small m-shape; no confident atlas match
+18	4	12	digit		M	written as 1 + z-curl(2)
+18	5	16	digit		H
+18	6	S21	sign		M	hooked ascender with tail
+18	7	9	digit		H
+18	8	S21	sign		M	hooked ascender with tail
+18	9	64	digit		H
+18	10	S13	sign		M	plus/cross mark
+18	11	S13	sign		M	"plus/cross mark; small cursive marginal annotation resembling ""guil..."" visible nearby, not transcribed as a token"
+18	12	X?	X?		M	"looped ligature resembling ""ny""; no confident atlas match"
+18	13	S29	sign		M	three minims (uu)
+18	14	60	digit		H
+18	15	60	digit		H
+18	16	62	digit		M	written as z-curl(2) + 6
+18	17	104	digit		M
+18	18	S34	sign		H	Ao ligature
+18	19	|	divider		H	true bold vertical divider
+18	20	62	digit		M	written as z-curl(2) + 6
+18	21	74	digit		M
+18	22	48	digit		M
+18	23	S21	sign		M	hooked ascender with tail
+18	24	24	digit		M	written as z-curl(2) + 4
+18	25	S37	sign		M	crossed t joined to o
+18	26	12	digit		M	written as 1 + z-curl(2)
+18	27	102	digit		M	written as 1+0+z-curl(2)
+18	28	S37	sign		M	crossed t joined to o
+18	29	9	digit		M
+18	30	7	digit		M	"last legible token before right edge of leaf; small cursive marginal annotation (""tas"") visible, not transcribed; low confidence for this entire line"
+19	1	S27	sign		M	tall doubled long-s with crossbar (ff)
+19	2	14	digit	a	H
+19	3	S37	sign		M	crossed t joined to o
+19	4	62	digit		M	written as z-curl(2) + 6
+19	5	15	digit		M
+19	6	S38	sign		M	crossed t joined to c, with a tick
+19	7	16	digit		H
+19	8	S34	sign		H	Ao ligature
+19	9	X?	X?	que	M	"looped ""Y""-ligature; no confident atlas match"
+19	10	S21	sign		M	hooked ascender with tail
+19	11	X?	X?		M	"ligature resembling ""ua""; no confident atlas match"
+19	12	12	digit		M	written as 1 + z-curl(2)
+19	13	60	digit		H
+19	14	14	digit		H
+19	15	S29	sign		M	three minims (uu)
+19	16	28	digit		M
+19	17	64	digit		H
+19	18	S21	sign		M	hooked ascender with tail
+19	19	26	digit		M	written as z-curl(2) + 6
+19	20	744	digit		M	digit run, boundary uncertain
+19	21	58	digit		M
+19	22	15	digit		M
+19	23	S37	sign		M	crossed t joined to o
+19	24	126	digit		M	digit run, boundary uncertain
+19	25	52	digit		M
+19	26	9	digit		M
+19	27	S21	sign		M	hooked ascender with tail
+19	28	S37	sign		M	crossed t joined to o
+19	29	16	digit		H
+19	30	S13	sign		M	plus/cross mark
+19	31	5	digit		H
+19	32	X?	X?		M	small m-shape; no confident atlas match
+19	33	26	digit		M	written as z-curl(2) + 6
+19	34	60	digit		H
+19	35	6	digit		H
+19	36	S27	sign		M	tall doubled long-s with crossbar (ff)
+19	37	16	digit		H	last token before right edge of leaf
+20	1	S34	sign		H	Ao ligature
+20	2	62	digit		M	written as z-curl(2) + 6
+20	3	S21	sign		M	hooked ascender with tail
+20	4	64	digit		M
+20	5	X?	X?		M	small ligature; no confident atlas match
+20	6	69	digit		M	digit run, boundary uncertain
+20	7	62	digit		M	written as z-curl(2) + 6
+20	8	X?	X?		M	small n-ligature; no confident atlas match
+20	9	14	digit		H
+20	10	15	digit		M
+20	11	9	digit		M
+20	12	26	digit		M	written as z-curl(2) + 6
+20	13	X?	X?		M	loop flourish; no confident atlas match
+20	14	7	digit		H
+20	15	16	digit		H
+20	16	S27	sign		M	tall doubled long-s with crossbar (ff)
+20	17	26	digit		M	written as z-curl(2) + 6
+20	18	X?	X?		M	small n-ligature; no confident atlas match
+20	19	1016	digit		M	digit run, boundary uncertain
+20	20	4	digit		H
+20	21	S21	sign		M	hooked ascender with tail
+20	22	960	digit		M	digit run, boundary uncertain
+20	23	S34	sign		H	Ao ligature
+20	24	14	digit		H	dense ink blot nearby, not transcribed as a token
+20	25	15	digit		M
+20	26	S37	sign		M	crossed t joined to o
+20	27	X?	X?		M	"loop flourish resembling ""bo""; no confident atlas match; last token before right edge of leaf"
+21	1	29	digit		M	digit run, boundary uncertain
+21	2	S21	sign		M	hooked ascender with tail
+21	3	5	digit		H
+21	4	S13	sign		M	plus/cross mark
+21	5	26	digit		M	written as z-curl(2) + 6
+21	6	X?	X?		M	"ligature resembling ""th""; no confident atlas match"
+21	7	16	digit		H
+21	8	X?	X?		M	"ligature resembling ""7A""; no confident atlas match, cf. S76"
+21	9	62	digit		M	written as z-curl(2) + 6
+21	10	S13	sign		M	plus/cross mark
+21	11	60	digit		H
+21	12	X?	X?		M	small z-ligature; no confident atlas match
+21	13	S04	sign		M	hash/lattice mark
+21	14	18	digit		H
+21	15	97	digit		H
+21	16	64	digit		H
+21	17	S21	sign		M	hooked ascender with tail
+21	18	9	digit		H
+21	19	60	digit		H
+21	20	X?	X?		M	small n-shape; no confident atlas match
+21	21	16	digit		H
+21	22	|	divider		H	true bold vertical divider
+21	23	12	digit		M	written as 1 + z-curl(2)
+21	24	102	digit		M	written as 1+0+z-curl(2)
+21	25	S37	sign		M	crossed t joined to o
+21	26	S34	sign		H	Ao ligature
+21	27	62	digit		M	written as z-curl(2) + 6
+21	28	9	digit		H
+21	29	174	digit		M	digit run, boundary uncertain
+21	30	S21	sign		M	hooked ascender with tail
+21	31	4	digit		H	last token before right edge of leaf
+22	1	|	divider		H	true bold vertical divider
+22	2	9	digit		H
+22	3	S30	sign		M	c-hook joined to na
+22	4	16	digit		H
+22	5	S21	sign		M	hooked ascender with tail
+22	6	S37	sign		M	crossed t joined to o
+22	7	14	digit		H
+22	8	1	digit		M
+22	9	15	digit		M
+22	10	S37	sign		M	crossed t joined to o
+22	11	|	divider		H	true bold vertical divider
+22	12	16	digit		H
+22	13	15	digit		M
+22	14	94	digit		M
+22	15	4	digit		H
+22	16	X?	X?		M	Ao-like loop ligature; no confident atlas match
+22	17	26	digit		M	written as z-curl(2) + 6
+22	18	X?	X?		M	bold X/cross; no confident atlas match
+22	19	S40	sign		M	ornate hooked n/omega-loop ligature; tentative
+22	20	26	digit		M	written as z-curl(2) + 6
+22	21	S37	sign		M	crossed t joined to o
+22	22	5	digit		H
+22	23	104	digit		M
+22	24	S34	sign		H	Ao ligature
+22	25	S30	sign		M	c-hook joined to na
+22	26	62	digit		M	written as z-curl(2) + 6
+22	27	|	divider		H	true bold vertical divider
+22	28	52	digit		M	digit run, boundary uncertain
+22	29	S13	sign		M	plus/cross mark
+22	30	S27	sign		M	tall doubled long-s with crossbar (ff)
+22	31	64	digit		H
+22	32	102	digit		M	last token before right edge of leaf, written as 1+0+z-curl(2)
+23	1	708	digit		M	digit run, boundary uncertain
+23	2	|	divider		H	true bold vertical divider
+23	3	S79	sign		M	y-shape, low confidence
+23	4	24	digit		M	written as z-curl(2) + 4
+23	5	14	digit		H
+23	6	X?	X?		M	small n-shape; no confident atlas match
+23	7	7	digit		H
+23	8	44	digit		H
+23	9	16	digit		H
+23	10	X?	X?		M	hooked cross ligature; no confident atlas match, cf. S13
+23	11	60	digit		H
+23	12	26	digit		M	written as z-curl(2) + 6
+23	13	102	digit		M	written as 1+0+z-curl(2)
+23	14	62	digit		M	written as z-curl(2) + 6
+23	15	S21	sign		M	hooked ascender with tail
+23	16	64	digit		H
+23	17	S21	sign		M	hooked ascender with tail
+23	18	102	digit		M	written as 1+0+z-curl(2)
+23	19	64	digit		H
+23	20	22	digit		M	digit run, boundary uncertain
+23	21	X?	X?		M	"small ligature resembling ""po""; no confident atlas match"
+23	22	12	digit		M	written as 1 + z-curl(2)
+23	23	102	digit		M	written as 1+0+z-curl(2)
+23	24	60	digit		H
+23	25	S21	sign		M	hooked ascender with tail
+23	26	16	digit		H
+23	27	S13	sign		M	plus/cross mark; last token before right edge of leaf
+24	1	S04	sign		M	hash/lattice mark
+24	2	X?	X?		M	small n-shape; no confident atlas match
+24	3	26	digit		M	written as z-curl(2) + 6
+24	4	S21	sign		M	hooked ascender with tail
+24	5	28	digit		M	digit run, boundary uncertain
+24	6	102	digit		M	written as 1+0+z-curl(2)
+24	7	5	digit		H
+24	8	S34	sign		H	Ao ligature
+24	9	16	digit		H
+24	10	|	divider		H	true bold vertical divider
+24	11	62	digit		M	written as z-curl(2) + 6
+24	12	15	digit		M
+24	13	S21	sign		M	hooked ascender with tail
+24	14	26	digit		M	written as z-curl(2) + 6
+24	15	S29	sign		M	three minims (uu)
+24	16	26	digit		M	written as z-curl(2) + 6
+24	17	5	digit		H
+24	18	16	digit		H	dense ink blot nearby, not transcribed as a token
+24	19	26	digit		M	written as z-curl(2) + 6
+24	20	S21	sign		M	hooked ascender with tail
+24	21	S29	sign		M	three minims (uu)
+24	22	4	digit		H
+24	23	X?	X?		M	small n-ligature; no confident atlas match
+24	24	5	digit		H
+24	25	X?	X?		M	bold H-like shape; no confident atlas match, cf. S75
+24	26	X?	X?		M	V-loop ligature similar to line01 pos.23; no confident atlas match
+24	27	S21	sign		M	hooked ascender with tail
+24	28	12	digit		M	written as 1 + z-curl(2)
+24	29	7	digit		H
+24	30	S34	sign		H	Ao ligature
+24	31	14	digit		H	last token before right edge of leaf
+25	1	S37	sign		M	crossed t joined to o
+25	2	26	digit		M	written as z-curl(2) + 6
+25	3	15	digit		M
+25	4	60	digit		H
+25	5	S34	sign		H	Ao ligature
+25	6	220	digit		M	digit run, boundary uncertain
+25	7	56	digit		M
+25	8	X?	X?		M	"looped ligature resembling ""B"", cf. S24; no confident atlas match"
+25	9	16	digit		H
+25	10	12	digit		M	written as 1 + z-curl(2)
+25	11	S37	sign		M	crossed t joined to o
+25	12	6	digit		H
+25	13	S34	sign		H	Ao ligature
+25	14	X?	X?		M	small m-shape; no confident atlas match
+25	15	25	digit		M	digit run, boundary uncertain
+25	16	6	digit		H
+25	17	X?	X?		M	crossed flourish; no confident atlas match
+25	18	60	digit		H
+25	19	S21	sign		M	hooked ascender with tail
+25	20	X?	X?		M	"looped ligature resembling ""B"", cf. S24; no confident atlas match"
+25	21	364	digit		M	digit run, boundary uncertain
+25	22	26	digit		M	written as z-curl(2) + 6
+25	23	15	digit		M
+25	24	X?	X?		M	"looped ""Y""-ligature; no confident atlas match"
+25	25	5	digit		H
+25	26	9	digit		H
+25	27	44	digit		H	last token before right edge of leaf
+26	1	X?	X?		M	V-loop ligature similar to line01 pos.23; no confident atlas match
+26	2	26	digit		M	written as z-curl(2) + 6
+26	3	X?	X?		M	"ligature resembling ""ba""; no confident atlas match"
+26	4	5	digit		H
+26	5	26	digit		M	written as z-curl(2) + 6
+26	6	S27	sign		M	tall doubled long-s with crossbar (ff)
+26	7	16	digit		H
+26	8	10	digit		M
+26	9	S13	sign		M	plus/cross mark
+26	10	S34	sign		H	Ao ligature
+26	11	26	digit		M	written as z-curl(2) + 6
+26	12	X?	X?		M	flourish resembling capital A/R; no confident atlas match, cf. S76
+26	13	S79	sign		M	y-shape, low confidence
+26	14	X?	X?		M	"double-loop ""3""-like shape; no confident atlas match"
+26	15	S17	sign		M	double-cross/ff/H-like ligature
+26	16	X?	X?		M	crossed flourish; no confident atlas match
+26	17	60	digit		H
+26	18	S21	sign		M	hooked ascender with tail
+26	19	16	digit		H
+26	20	S34	sign	a	H	Ao ligature
+26	21	14	digit		H
+26	22	S79	sign	q	M	y-shape, low confidence
+26	23	60	digit		H
+26	24	X?	X?		M	"looped ""nu""-ligature; no confident atlas match"
+26	25	15	digit		M
+26	26	16	digit		H
+26	27	S30	sign		M	c-hook joined to na
+26	28	X?	X?		M	crossed flourish; no confident atlas match
+26	29	62	digit		M	written as z-curl(2) + 6
+26	30	64	digit		H	last token before right edge of leaf
+27	1	6	digit		H
+27	2	|	divider		H	true bold vertical divider
+27	3	32	digit		M	written as 3 + z-curl(2)
+27	4	14	digit		H
+27	5	X?	X?		M	looped flourish; no confident atlas match
+27	6	102	digit		M	written as 1+0+z-curl(2)
+27	7	X?	X?		M	"looped ""Y""-ligature; no confident atlas match"
+27	8	S34	sign		H	Ao ligature
+27	9	S17	sign		M	double-cross/ff/H-like ligature
+27	10	73	digit		H
+27	11	S52	sign		M	lattice, three strokes across three
+27	12	X?	X?		M	looped flourish; no confident atlas match
+27	13	26	digit		M	written as z-curl(2) + 6
+27	14	16	digit		H
+27	15	9	digit		H
+27	16	28	digit		M	digit run, boundary uncertain
+27	17	S52	sign		M	lattice, three strokes across three
+27	18	S13	sign		M	plus/cross mark
+27	19	16	digit		H
+27	20	S21	sign		M	hooked ascender with tail
+27	21	12	digit		M	written as 1 + z-curl(2)
+27	22	S34	sign		H	Ao ligature
+27	23	|	divider		H	true bold vertical divider
+27	24	15	digit		M
+27	25	62	digit		M	written as z-curl(2) + 6
+27	26	S21	sign		M	hooked ascender with tail
+27	27	14	digit		H
+27	28	S76	sign		M	plain capital A
+27	29	62	digit		M	last token before right edge of leaf, written as z-curl(2) + 6
+28	1	S27	sign		M	tall doubled long-s with crossbar (ff)
+28	2	16	digit		H	"small cursive marginal annotation resembling ""tou..."" visible nearby, not transcribed as a token"
+28	3	9	digit		H
+28	4	15	digit		M
+28	5	S21	sign		M	hooked ascender with tail
+28	6	X?	X?		M	looped shape; no confident atlas match
+28	7	9	digit		H
+28	8	26	digit		M	written as z-curl(2) + 6
+28	9	X?	X?		M	small ligature; no confident atlas match
+28	10	16	digit		H
+28	11	S13	sign		M	plus/cross mark
+28	12	44	digit		H
+28	13	102	digit		M	written as 1+0+z-curl(2)
+28	14	X?	X?		M	"flourish resembling ""uu""; no confident atlas match"
+28	15	26	digit		M	written as z-curl(2) + 6
+28	16	5	digit		H
+28	17	S04	sign		M	hash/lattice mark
+28	18	28	digit		M	digit run, boundary uncertain
+28	19	64	digit		H
+28	20	S34	sign		H	Ao ligature
+28	21	16	digit		H
+28	22	26	digit		M	written as z-curl(2) + 6
+28	23	5	digit		H
+28	24	104	digit		M
+28	25	26	digit		M	written as z-curl(2) + 6
+28	26	915	digit		M	digit run, boundary uncertain
+28	27	60	digit		H
+28	28	S34	sign		H	Ao ligature
+28	29	12	digit		M	written as 1 + z-curl(2)
+28	30	344	digit		M	last token before right edge of leaf, digit run boundary uncertain
+29	1	102	digit		M	written as 1+0+z-curl(2)
+29	2	S37	sign		M	crossed t joined to o
+29	3	S21	sign		M	hooked ascender with tail
+29	4	64	digit		H
+29	5	X?	X?		M	"looped ""B""-shape; no confident atlas match"
+29	6	X?	X?		M	bold X/cross; no confident atlas match
+29	7	X?	X?		M	R-like flourish, cf. S13/S33; no confident atlas match
+29	8	14	digit		H
+29	9	X?	X?		M	"looped ""B""-shape; no confident atlas match"
+29	10	8	digit		H
+29	11	14	digit		H
+29	12	24	digit		M	written as z-curl(2) + 4
+29	13	X?	X?		M	6C-like ligature; no confident atlas match
+29	14	26	digit		M	written as z-curl(2) + 6
+29	15	X?	X?		M	7-cross flourish; no confident atlas match
+29	16	60	digit		H
+29	17	X?	X?		M	Av-like ligature, cf. S69; no confident atlas match
+29	18	244	digit		M	digit run, boundary uncertain; top of crop shows sliver repeating line28's tail, not transcribed
+29	19	64	digit		M
+29	20	X?	X?		M	small flourish; no confident atlas match
+29	21	611	digit		M	last legible token before right edge of leaf; digit run boundary uncertain; low confidence throughout this line's second half
+30	1	X?	X?		M	bold X/cross; no confident atlas match
+30	2	512	digit		M	digit run, boundary uncertain
+30	3	S27	sign		M	tall doubled long-s with crossbar (ff)
+30	4	69	digit		M
+30	5	|	divider		H	true bold vertical divider
+30	6	X?	X?		M	small m-shape; no confident atlas match
+30	7	60	digit		M	dense ink blot nearby, not transcribed as a token
+30	8	26	digit		M	written as z-curl(2) + 6
+30	9	S27	sign		M	tall doubled long-s with crossbar (ff)
+30	10	164	digit		M	digit run, boundary uncertain
+30	11	X?	X?		M	"looped flourish resembling ""γ7""; no confident atlas match"
+30	12	9	digit		H
+30	13	652	digit		M	digit run, boundary uncertain
+30	14	X?	X?		M	32-like loop shape; no confident atlas match
+30	15	S04	sign		M	hash/lattice mark
+30	16	X?	X?		M	small hooked flourish; no confident atlas match
+30	17	615	digit		M	digit run, boundary uncertain
+30	18	744	digit		M	digit run, boundary uncertain
+30	19	64	digit		H
+30	20	26	digit		M	written as z-curl(2) + 6
+30	21	615	digit		M	digit run, boundary uncertain
+30	22	9	digit		M
+30	23	44	digit		H
+30	24	S34	sign		H	Ao ligature
+30	25	16	digit		H
+30	26	X?	X?		M	crossed hooked flourish; no confident atlas match
+30	27	641	digit		M	last legible token before right edge of leaf; digit run boundary uncertain; low confidence for this line's second half
+31	1	12	digit		M	written as 1 + z-curl(2)
+31	2	60	digit		H
+31	3	S13	sign		M	plus/cross mark
+31	4	16	digit		H
+31	5	X?	X?		M	"looped ligature resembling ""uud""; no confident atlas match"
+31	6	S37	sign		M	crossed t joined to o
+31	7	26	digit		M	written as z-curl(2) + 6
+31	8	5	digit		H
+31	9	X?	X?		M	looped flourish; no confident atlas match
+31	10	S34	sign		H	Ao ligature
+31	11	64	digit		H
+31	12	X?	X?		M	looped flourish; no confident atlas match
+31	13	S17	sign		M	double-cross/ff/H-like ligature
+31	14	X?	X?		M	y-like shape; no confident atlas match
+31	15	X?	X?		M	looped flourish; no confident atlas match
+31	16	S37	sign		M	crossed t joined to o
+31	17	64	digit		H
+31	18	X?	X?		M	small m-shape; no confident atlas match
+31	19	26	digit		M	written as z-curl(2) + 6
+31	20	S21	sign		M	hooked ascender with tail
+31	21	159	digit		M	digit run, boundary uncertain
+31	22	44	digit		H
+31	23	S34	sign		H	Ao ligature
+31	24	16	digit		H
+31	25	S13	sign		M	plus/cross mark
+31	26	X?	X?		M	small n-ligature; no confident atlas match
+31	27	64	digit		H	"small cursive marginal annotation resembling ""fact"" visible nearby, not transcribed as a token"
+31	28	1611	digit		M	digit run, boundary uncertain
+31	29	6	digit		M	last legible token before right edge of leaf; low confidence for this line's second half
+32	1	X?	X?		M	small looped flourish; no confident atlas match
+32	2	S75	sign		M	bold capital H
+32	3	917	digit		M	digit run, boundary uncertain
+32	4	S13	sign		M	plus/cross mark
+32	5	S21	sign		M	hooked ascender with tail
+32	6	56	digit		M
+32	7	24	digit		M	written as z-curl(2) + 4
+32	8	S13	sign		M	plus/cross mark
+32	9	15	digit		M
+32	10	73	digit		H
+32	11	X?	X?		M	"cross joined to ""8""; no confident atlas match"
+32	12	82	digit		M	written as 8 + z-curl(2)
+32	13	S30	sign		M	c-hook joined to na
+32	14	S37	sign		M	crossed t joined to o
+32	15	102	digit		M	written as 1+0+z-curl(2)
+32	16	S21	sign		M	hooked ascender with tail
+32	17	5	digit		H
+32	18	73	digit		H
+32	19	26	digit		M	written as z-curl(2) + 6
+32	20	S21	sign		M	hooked ascender with tail
+32	21	56	digit		M
+32	22	917	digit		M	digit run, boundary uncertain
+32	23	102	digit		M	written as 1+0+z-curl(2)
+32	24	S13	sign		M	plus/cross mark
+32	25	S76	sign		M	plain capital A
+32	26	6618	digit		M	digit run, boundary uncertain
+32	27	S13	sign		M	plus/cross mark
+32	28	957	digit		M	digit run, boundary uncertain
+32	29	616	digit		M	digit run, boundary uncertain; a bold horizontal end-of-line flourish/underline follows, not transcribed as a token; last token before right edge of leaf, low confidence throughout this line
+33	1	X?	X?		M	"small cursive ""s""-like mark; no confident atlas match; last line of the leaf, remainder of the crop below is blank page"
+33	2	X?	X?		M	bold crossed 2-leg loop; no confident atlas match
+33	3	X?	X?		M	bold crossed double-leg ligature; no confident atlas match
+33	4	|	divider		M	horizontal double-dash style divider
+33	5	6	digit		H
+33	6	S21	sign		M	hooked ascender with tail
+33	7	16	digit		H
+33	8	60	digit		M	digit run, boundary uncertain
+33	9	62	digit		M	written as z-curl(2) + 6, or 0/6 then z-curl(2); low confidence
+33	10	S29	sign		M	three minims (uu)
+33	11	60	digit		H
+33	12	S13	sign		M	plus/cross mark
+33	13	|	divider		H	true bold vertical divider
+33	14	102	digit		M	written as 1+0+z-curl(2); a long horizontal pen flourish follows, not transcribed as a token
+33	15	44	digit		H
+33	16	104	digit		M
+33	17	S21	sign		M	hooked ascender with tail
+33	18	X?	X?		M	looped flourish; no confident atlas match
+33	19	S34	sign		M	Ao ligature, low confidence
+33	20	611	digit		M	digit run, boundary uncertain
+33	21	S13	sign		M	"plus/cross mark; small cursive marginal annotation resembling ""fau..."" visible nearby, not transcribed as a token; a bracket-like closing flourish follows at the page edge, marking the end of the text; last token of the transcription"
