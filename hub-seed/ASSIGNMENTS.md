@@ -489,3 +489,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T17:53Z	session_01Umzu5kUhXYdLmYkiC7Yrh9	TOOL-FAMILY (Fable, cap 25)	tools/family_run.py control-first family runner; room.py done-line warnings	prompt inline; UPDATES.md rows 4-5
 2026-09-25T18:14Z	session_01JgaFwLL9NQAT23xpr59ZZh	done	bWOO te-wood-1950 test 1	pushed 22eaead
 2026-09-25T18:14Z	session_01XavLajPispv8YaywQUjLWK	done	bSCO scorpion-1991 test 1	pushed
+2026-09-25T18:13Z	session_01UPvnBQxYHoncGSjmr2sgyA	LANE B2 bRUB (Sonnet, cap 3)	rubin-1953 intake + test 1 images + single pass	brief 2026-09-25-lane-b2-rubin-1953.md
+2026-09-25T18:13Z	session_01LX1KVigw2GyV3JG3YBHUcm	LANE B2 bINT (Sonnet, cap 3)	retro intake check-solved moustier-altars, kaliningrad-2015	brief 2026-09-25-lane-b2-intake-mou-kal.md
