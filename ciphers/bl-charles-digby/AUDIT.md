@@ -96,8 +96,7 @@ Wheatstone p.330) would make it certain; this was not attempted (BL images unava
 | Clarendon State Papers, Thurloe, Gardiner | not searched | Groen's clear print made them unnecessary for the class | -- |
 | JSTOR | queued | one row appended to JSTOR-QUEUE.tsv | never blocking |
 
-Requests: archive.org 12 (advancedsearch 2, metadata 3, djvu downloads 5 of which one returned 500, plus the fts host
-below counted separately), be-api.us.archive.org 14, searcharchives.bl.uk 5, api.openalex.org 1,
+Requests: archive.org 10 (advancedsearch 2, metadata 3, djvu downloads 5 of which one returned 500), be-api.us.archive.org 14, searcharchives.bl.uk 5, api.openalex.org 1,
 api.semanticscholar.org 1, Google Books 0. No subagents, no logins, no images.
 
 ## 4. Postmortem
