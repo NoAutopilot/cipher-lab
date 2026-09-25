@@ -21,7 +21,7 @@
   "count": 32,
   "structure_hint": "the Goldberg Variations are aria + 30 variations + aria da capo = 32 movements; the novel is built on them and on the 64 DNA codons; J appears 19 times, mostly first or middle",
   "not_amino_acids": "J, O and B occur, which are not amino-acid one-letter codes",
-  "hypothesis_on_record": "Stefan Wagner (Cipherbrain 2015): initials of 32 people; JSB = Johann Sebastian Bach"
+  "hypothesis_on_record": "Initials of names, JSB=Johann Sebastian Bach/Semper Dei Gloria: in print at least since Herman & Lernout, Mosaic 31.4 (Dec 1998): 162 (found 25 Sept 2026 via Thomas 2006's abstract, not yet read directly -- JSTOR-QUEUE.tsv row queued); Thomas, Notes on Contemporary Literature 36:3 (2006) extends it with an unread family-members sub-hypothesis; Stefan Wagner's Cipherbrain 2015 comment restates the same idea 17 years later, independently as far as is known."
  },
  "cheap_tests_in_order": [
   "1. Print check first (rule 1): J. T. Thomas, 'Deciphering the code in Richard Powers's The Gold Bug Variations' (thefreelibrary id a0159331538; the article's own title claims a decipherment; the cloud gets 403, so an owner-machine row) and Powers scholarship in the open indexes. Cost $1.",
@@ -38,6 +38,15 @@
  "value": "moderate; the author is alive and the answer is presumably known to him; a print check may close it at N0/N1",
  "model": "Sonnet",
  "status_24_Sept_2026": "open per Schmeh 2017; Bourdeau: 'not settleable by cryptanalysis'; print check pending",
+ "cheap_test_done": [
+  {
+   "test": "1. Print check + open-index scholarship pass",
+   "date": "25 Sept 2026",
+   "method": "thefreelibrary.com direct fetch (403, one attempt, not retried); OpenAlex (3 search queries + 1 full-record pull, key header), Semantic Scholar (2 search queries, key header), Crossref (1 query); full log in specs/cheap-tests/powers-1991/test1-print-check.md",
+   "result": "not found-solved -- no source read gives a full 32-triplet name key. OpenAlex's indexed abstract of Thomas 2006 (W337305991) is substantial (reproduced in the log) and shows the 'initials' hypothesis is in print at least since Herman & Lernout, Mosaic 31.4 (Dec 1998): 162 -- earlier than the Stefan Wagner 2015 Cipherbrain comment the spec previously credited alone -- and that Thomas 2006 extends it with an untested family-members sub-hypothesis the abstract does not resolve. Two owner-machine reads queued (JSTOR-QUEUE.tsv row for Herman & Lernout 1998; LOCAL-QUEUE.tsv row L15 for the Thomas 2006 full text) to check whether either source completes a name-by-name key. This is a search result, not a novelty classification (rule 10); status stays open pending those reads and a verifier.",
+   "cost": "under $1 (well under the $3 cap)"
+  }
+ ],
  "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run is under cheap_test_done with its control",
  "written": "24 Sept 2026 by the survey worker (session_013GkMQP9y84gHGG4pSSwaQj), claude-fable-5-1"
 }
