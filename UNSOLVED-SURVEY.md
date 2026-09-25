@@ -179,6 +179,8 @@ solver, and the period scan is extended to 31-120 in passing; **C book or word-s
 ranking of candidate key texts), only after B is logged; **D one-time key**, which no statistic falsifies: if B and C
 fail while their controls read, the item is parked as "consistent with a one-time key" and only A remains.
 
+*Gold lane, 25 Sept 2026 18:25 UTC:* family A (archive) found no decrypt at TNA; FBI HQ file RG 65 105-9673 located, unopened (ASKS 55). Family B standard-tableau running key parked: control 60-79 pct recovered, target at one-time-key noise (GOLD-2A), agreeing with Bourdeau's 15 Sept unigram exclusion. Next: keyed-tableau running key (GOLD-2C).
+
 **2. Debosnys (no. 3).** Four cryptograms in a simple invented alphabet by a French-speaking, educated prisoner who
 also left clear-text poems in the same papers. The cheap test is the form test of the Urquhart lesson: transcribe (two
 Sonnet passes from Schmeh's or Farnsworth's images, $4), count lines and signs, and compare the cryptograms' line
