@@ -162,6 +162,17 @@ Salviati and Seure with costed briefs, N4 copy-free scouts (Bourdeau's copy-free
 stops, a successor parent reads this section, the lane table,
 the last check-in prompt (list_triggers), takes over the trigger with update_trigger persistent_session_id, and continues.
 
+## LANE PX handoff (session_01KapVpHVzNpnnQce5C8c3LY), 25 September 2026, 09:55 UTC
+
+Portuguese holdings and dictionary codes. Opened 04:25 by the parent; closed at its own stop rule (last gate failed).
+- **Scouts (job 1):** PX-SCDIGI3 1 row, copy-free 1 (PX-01 ANTT PT/TT/MSLIV/0638, Brochado's London letterbook 1712-13 with its own "Deciffrada" appendix); PX-SCDICT 0 new rows (Gallica/BNP/Europeana/web negative; in-repo only Linhares and Wellington-Maitland); PX-SCDIGI4 0 copy-free, 3 undigitized copy-order leads (PX-02 MNE-ASC/R/4 cifrante-decifrante key, PX-03 MRM/M027.001 tables, PX-04 Palmela dispatch). DigitArq keyword harvesting is exhausted (search stems and fuzzes); next yield is fonds walked leaf by leaf.
+- **Check-solved (job 2):** PX-01 `blocked` (CS01: Dória 1944 *Cartas*, 100 copies, unreachable) -> `open` (CS01B: Google Books search-within on rE7SAAAAMAAJ, 19 queries, none of the appendix's London words in the 248 body pages). Open after check-solved: 1 of 1.
+- **Read (job 3), ciphers/antt-msliv0638-brochado-1712, status `partial`:** appendix m0279-m0296 = 39 entries (letters 13-123), two blind passes (85.8% raw; the z/7/2 shape settled from a crop atlas as one sign, a barred 7), H 1588/1702 (93.3%). System: homophonic letter substitution applied to selected words inside clear Portuguese (the letters call it a "Diccionario"). Period key key.tsv 40 codes / 29 C; decode.json + `tools/decode_key.py --check` exit 0 for the appendix and the body. Appendix self-consistency 338/390 = 86.7% (corrected from 88.5% after a scoring bug in scripts/06 was fixed). Body: letter map (page = letter number); cipher runs on m0179/m0180 (= letters 80/81, controls) and m0275-m0276 (letter 134, ~70 tokens, past the appendix's last deciphered letter).
+- **Gate (not passed, so no reading):** leave-one-out over aligned spans, real 80.2% vs a noise-matched synthetic control 91.0% (5 seeds, 89.8-92.8): gap 10.8 against a 10-point band. Letter 134 is NOT decoded; no spec, judge or re-derivation exists; no verifier, no AUDIT.md, no second opinion.
+- **Open, one next test:** hand-check appendix Carta 79 against its image (real 26.7% vs control ~93% on that entry: an entry problem, not generic noise); if fixing it closes the gap, run PX-BRODEC's steps 3-5 (brief .claude/briefs/runs/2026-09-25-lane-px-brodec.md) and then a verifier (Dória 1944, Memórias da Paz de Utrecht purl.pt/23773 unread, Santarém, ANTT catalogue, phrase search, JSTOR row for Hawes 1946 not yet queued).
+- **Lessons:** Sonnet workers cannot see their own cost (BROKEY $30.92 and BROKEY2 $14.42 both reported "well under cap"); the orchestrator must watch cost_usd and size jobs small. A key gate must be leave-one-out on aligned spans against a design-matched, noise-matched control, never raw agreement with an abbreviated period gloss (my PX-BRODEC brief got this wrong).
+- **Cost:** 14 Sonnet workers $96.30 (ledgered, all archived); orchestrator about $9.50. Retrospective trigger reached for this lane.
+
 ## LANE TX handoff (session_01UDxtM9Xv2dnPfoo5z9T6wA), 25 September 2026, 09:35 UTC
 
 Printed ciphertext and orphan recoveries. 13 Sonnet workers, about $61.87 of worker usage; orchestrator about $5.5. No live workers, no pending check-in. Rate allowed throughout.
