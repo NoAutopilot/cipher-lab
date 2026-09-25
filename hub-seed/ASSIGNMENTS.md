@@ -570,3 +570,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T21:06Z	session_01WDJiUb1ijocbB3N3LtsLWk	GOLD-K1 done $6.36 D, archived by LANE GOLD2	nl_dev 3.4M letters; B control 84.3 pct vs target -3.588/-3.640 in noise; B-prime control 84.8 vs -3.583 in noise
 2026-09-25T21:07Z	session_01SPixjGTp23T4YyxPvHwkWs	GOLD-CONS2 consolidator cycle 2 (Fable, cap 15, 60 min)	koehler-1944 + debosnys-1883 top blocks, cycle-3 briefs	brief 2026-09-25-lane-gold-consolidator-c2.md
 2026-09-25T21:23Z	R7-MREV, R7-SSIB	MREV 2.56 D, SSIB 2.72 N; archived	LEDGER rows 25 Sep LANE R7	
+2026-09-25T21:23Z	session_01DmqmRev6DYkbVnSgrr2r5Q	R7-CM3 (Fable, cap 10, 75 min)	fr2933-salviati-1525 measured-error control + word-aware model	brief 2026-09-25-lane-r7-cm3-salviati-measured.md
