@@ -12,6 +12,18 @@ the check that would catch it if the two ever drifted), or a code graded C from 
 letter than the one a specific occurrence's own span shows (a homophone -- expected and reported, not a
 bug). Per-position source: scripts/_pairs.json (leaf, entry_label, and token in original per-entry, per-
 position order, produced by 03_align_pairs.py in the same order it reads ciphertext_appendix.tsv's rows).
+
+PX-BRODEC3 (25 Sept 2026) fix: PX-BRODEC2 found that comparing expected vs. decoded via
+difflib.SequenceMatcher, even when the two sequences are the SAME LENGTH (no real insertion/deletion --
+every one of an entry's tokens resolved to a pair), lets the LCS-style alignment slide real mismatches
+onto a same-letter coincidence a few positions away and drop others as an unindexed 'delete' opcode this
+script's own tally never counted -- understating both compared and mismatches (Carta 80: true 10/17=58.8%
+positional agreement reported as 15/13->86.7% via conflicts.tsv's old row). Fixed: when
+len(expected)==len(decoded_known), compare position by position directly (no difflib at all -- there is
+no alignment ambiguity to resolve when nothing was inserted or deleted). difflib.SequenceMatcher is used
+ONLY when the two sequences differ in length (a real gap -- an unresolved/dropped token), and that entry's
+detail column says so explicitly so a reader can tell which entries got the exact count and which got an
+aligned estimate.
 """
 
 ROOT = '/home/user/cipher-lab/ciphers/antt-msliv0638-brochado-1712'
@@ -56,21 +68,37 @@ for key, decoded_vals in by_entry_tokens.items():
         rows.append((key[0], key[1], 0, 0, '', 'no resolved tokens (entry had no usable anchors)'))
         continue
     decoded_known = [v for v in decoded_vals if v is not None]
-    sm = difflib.SequenceMatcher(a=expected, b=decoded_known, autojunk=False)
-    compared = agree = 0
     mismatches = []
-    for tag, i1, i2, j1, j2 in sm.get_opcodes():
-        if tag == 'equal':
-            compared += i2 - i1; agree += i2 - i1
-        elif tag == 'replace':
-            n = min(i2 - i1, j2 - j1)
-            compared += n
-            for k in range(n):
-                mismatches.append(f"{expected[i1+k]}!={decoded_known[j1+k]}")
+    if len(expected) == len(decoded_known):
+        # No insertion/deletion possible -- compare position by position, no difflib. This is the
+        # exact-count case difflib's LCS alignment used to misreport (PX-BRODEC2).
+        compared = len(expected)
+        agree = 0
+        for e, d in zip(expected, decoded_known):
+            if e == d:
+                agree += 1
+            else:
+                mismatches.append(f"{e}!={d}")
+        note = '; '.join(mismatches)
+    else:
+        # Lengths genuinely differ (an unresolved/dropped token) -- difflib is the right tool here,
+        # and the entry says so rather than presenting an aligned estimate as an exact count.
+        sm = difflib.SequenceMatcher(a=expected, b=decoded_known, autojunk=False)
+        compared = agree = 0
+        for tag, i1, i2, j1, j2 in sm.get_opcodes():
+            if tag == 'equal':
+                compared += i2 - i1; agree += i2 - i1
+            elif tag == 'replace':
+                n = min(i2 - i1, j2 - j1)
+                compared += n
+                for k in range(n):
+                    mismatches.append(f"{expected[i1+k]}!={decoded_known[j1+k]}")
+        note = (f"[difflib-aligned, length gap: expected {len(expected)} resolved letters, "
+                f"{len(decoded_known)} keyed decode values] " + '; '.join(mismatches))
     total_compared += compared; total_agree += agree
     pct = 100.0 * agree / compared if compared else 0.0
     if agree != compared or compared < len(expected):
-        rows.append((key[0], key[1], compared, agree, f"{pct:.0f}%", '; '.join(mismatches) or
+        rows.append((key[0], key[1], compared, agree, f"{pct:.0f}%", note or
                      f"length gap: expected {len(expected)} resolved letters, {len(decoded_known)} keyed decode values"))
 
 rows.sort(key=lambda r: (r[0], r[1]))

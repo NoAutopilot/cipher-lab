@@ -1,22 +1,22 @@
 leaf	entry_label	compared	agree	pct	detail
-m0280	Carta 13	35	31	89%	u!=g; r!=e; r!=e; v!=g
-m0281	Carta 15	12	9	75%	p!=d; r!=u; r!=e
+m0280	Carta 13	35	33	94%	[difflib-aligned, length gap: expected 35 resolved letters, 137 keyed decode values] u!=g; v!=g
+m0281	Carta 15	12	9	75%	[difflib-aligned, length gap: expected 12 resolved letters, 80 keyed decode values] p!=d; r!=u; r!=e
 m0282	Carta 30	0	0		no resolved tokens (entry had no usable anchors)
-m0282	Carta 58	7	6	86%	j!=o
-m0282	Carta 61	33	29	88%	v!=s; e!=d; j!=i; e!=d
-m0283	Carta 70	35	32	91%	j!=i; h!=c; a!=n
+m0282	Carta 58	7	6	86%	[difflib-aligned, length gap: expected 7 resolved letters, 62 keyed decode values] j!=o
+m0282	Carta 61	33	29	88%	[difflib-aligned, length gap: expected 33 resolved letters, 58 keyed decode values] v!=s; e!=d; j!=i; e!=d
+m0283	Carta 70	35	32	91%	[difflib-aligned, length gap: expected 35 resolved letters, 66 keyed decode values] j!=i; h!=c; a!=n
 m0284	Carta 71	0	0		no resolved tokens (entry had no usable anchors)
-m0284	Passage 2a	11	9	82%	l!=d; f!=s
+m0284	Passage 2a	13	8	62%	l!=d; e!=s; f!=o; o!=e; r!=s
 m0284	Passage 3a	19	16	84%	o!=m; e!=h; v!=u
-m0285	Carta 72	29	23	79%	v!=u; o!=m; g!=u; j!=i; o!=u; g!=u
+m0285	Carta 72	29	23	79%	[difflib-aligned, length gap: expected 29 resolved letters, 53 keyed decode values] v!=u; o!=m; g!=u; j!=i; o!=u; g!=u
 m0285	Passage 4a	0	0		no resolved tokens (entry had no usable anchors)
 m0285	Passage 5a	0	0		no resolved tokens (entry had no usable anchors)
-m0286	Carta 73	29	26	90%	p!=o; s!=o; v!=u
+m0286	Carta 73	31	26	84%	p!=o; e!=d; u!=e; s!=o; v!=u
 m0286	Carta 74	0	0		no resolved tokens (entry had no usable anchors)
-m0286	Passage 3a	8	6	75%	n!=m; g!=u
+m0286	Passage 3a	8	6	75%	[difflib-aligned, length gap: expected 8 resolved letters, 25 keyed decode values] n!=m; g!=u
 m0287	Carta 78	0	0		no resolved tokens (entry had no usable anchors)
-m0287	Carta 79	14	13	93%	s!=t
-m0287	Carta 80	15	13	87%	m!=n; o!=e
+m0287	Carta 79	14	13	93%	[difflib-aligned, length gap: expected 15 resolved letters, 66 keyed decode values] s!=t
+m0287	Carta 80	17	10	59%	m!=n; d!=o; o!=d; p!=e; r!=s; o!=p; p!=r
 m0288	Carta 81	0	0		no resolved tokens (entry had no usable anchors)
 m0288	Carta 85	0	0		no resolved tokens (entry had no usable anchors)
 m0288	Passage 2a	0	0		no resolved tokens (entry had no usable anchors)
@@ -26,11 +26,11 @@ m0289	Carta 92	0	0		no resolved tokens (entry had no usable anchors)
 m0290	Carta 93	0	0		no resolved tokens (entry had no usable anchors)
 m0290	Passage 2a	0	0		no resolved tokens (entry had no usable anchors)
 m0291	Carta 94	0	0		no resolved tokens (entry had no usable anchors)
-m0291	Carta 96	22	18	82%	e!=d; v!=u; h!=d; e!=s
+m0291	Carta 96	22	18	82%	[difflib-aligned, length gap: expected 22 resolved letters, 42 keyed decode values] e!=d; v!=u; h!=d; e!=s
 m0291	Passage 3a	0	0		no resolved tokens (entry had no usable anchors)
-m0292	Carta 101	5	4	80%	e!=m
+m0292	Carta 101	5	4	80%	[difflib-aligned, length gap: expected 5 resolved letters, 28 keyed decode values] e!=m
 m0293	Carta 106	0	0		no resolved tokens (entry had no usable anchors)
 m0293	Carta 107	0	0		no resolved tokens (entry had no usable anchors)
 m0293	Passage 2a	0	0		no resolved tokens (entry had no usable anchors)
 m0294	Carta 110	0	0		no resolved tokens (entry had no usable anchors)
-m0294	Passage 2a	10	8	80%	d!=e; r!=n
+m0294	Passage 2a	10	8	80%	[difflib-aligned, length gap: expected 10 resolved letters, 24 keyed decode values] d!=e; r!=n

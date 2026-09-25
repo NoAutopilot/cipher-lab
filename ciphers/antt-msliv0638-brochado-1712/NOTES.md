@@ -328,7 +328,10 @@ Carta 30/58/61/70/72/73/74/79/80/91/92/96/101/105/106/107 etc. that DO appear in
 still had every one of their individual CODE-run spans land on the mismatch side rather than the pairs
 side; see `03_align_pairs.py`'s own mismatch printout for the per-span detail). Of those 19, **3 entries
 decode at 100% agreement with their own pairs** (Carta 23, Carta 105, m0292's Passage 2a) and **16 are
-listed in `conflicts.tsv`** at 75-93% agreement (384 positions compared overall, 340 agree, 88.5%). Every
+listed in `conflicts.tsv`** at 59-94% agreement (~~384 positions compared overall, 340 agree, 88.5%~~ --
+**corrected by PX-BRODEC3, 25 Sept 2026: 390 compared, 338 agree, 86.7%**, after fixing a measurement bug
+in `scripts/06_decode_agreement.py` -- see the "PX-BRODEC3" section below for why the old figure both
+over- and under-stated different entries, not only the pooled total). Every
 recorded disagreement is a **homophone case**, not a decoding bug: each mismatching position is a code
 whose `key.tsv` value is the tallied *majority* letter (grade C, >=65% of >=2 observations) but this
 particular occurrence's own aligned letter was one of the *minority* readings the same code also carries
@@ -725,8 +728,10 @@ unsettled-leaf pairs -- both genuinely `r`, not a regression). Code `2`: unchang
 `e` second) -- none of its anchored/paired observations were touched by this settlement (the 2<->7 disputes
 that got kept as `2` weren't part of the 03_align_pairs.py sample). `scripts/06_decode_agreement.py`'s
 control (does `decode_key.py` mechanically reproduce 03_align_pairs.py's own ground-truth pairs) is
-**unchanged, 340/384 = 88.5%** -- expected, since no code's *majority* letter flipped, only confidence; a
-control that tests "same output" is insensitive to a confidence-only change by construction.
+~~unchanged, 340/384 = 88.5%~~ -- **corrected by PX-BRODEC3, 25 Sept 2026: 390 compared, 338 agree, 86.7%**
+(the 340/384 figure was computed by a script with a measurement bug, fixed after this pass; see the
+"PX-BRODEC3" section below) -- the underlying reasoning here still holds (no code's *majority* letter
+flipped in this rebuild, only confidence), it is only the reported number that was wrong.
 
 **`decode_key.py --check`: exits 0.** Overall decode confidence over all 1702 tokens: **C 1420, M 243, U 39
 (was C 1371, M 292, U 39)** -- +49 grade-C decoded tokens, 0 change in U (unkeyed codes untouched).
@@ -737,7 +742,7 @@ control that tests "same output" is insensitive to a confidence-only change by c
 | Aligned code-letter pairs | 391 | 391 (unchanged) |
 | key.tsv codes / grade C | 40 / 28 | 40 / 29 |
 | decode_key.py --check tokens | C 1371, M 292, U 39 | C 1420, M 243, U 39 |
-| 06_decode_agreement control | 340/384 = 88.5% | 340/384 = 88.5% (unchanged) |
+| 06_decode_agreement control | 340/384 = 88.5% (script had a measurement bug -- see PX-BRODEC3) | 338/390 = 86.7% (corrected, PX-BRODEC3) |
 | ciphertext_appendix.tsv grade | (no grade column) | H 1588/1702 = 93.3%, M 114/1702 = 6.7% |
 | raw token agreement vs pass B | 1516/1766 = 85.84% | 1520/1770 = 85.88% (see note above -- not the settlement metric) |
 
