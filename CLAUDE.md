@@ -158,6 +158,10 @@ takes none of its targets.
 3. **Orchestrator** promotes to the board only after check-solved, at most a handful at a time, choosing by
    score and by the three kinds together, so the board always carries at least one recovery and one
    cryptanalysis candidate and never fills with editions.
+   Selection rule, pools first (25 Sept 2026, UPDATES.md): between two candidates of equal expected value, take the one that
+   belongs to a sign pool -- one sender, office and key family with 2,000 or more signs across its letters -- over a single
+   short letter; every reading on the board so far came from a period key or a pool of siblings, and the controls say our
+   solvers read code+mark only at pooled lengths. Famous short items enter only through the standing gold lane.
    Selection rule (24 Sept 2026): rank by expected value = P(the first cheap test moves it) x value / cost, not by
    fame or by scout score alone. Prefer items with a transcription on disk, a formal constraint (a known key family,
    a crib, a host text, a form), a language with a corpus in tools/data, and no published matched-control negative.
@@ -268,6 +272,11 @@ Every brief states a cap in dollars of usage (the session metadata's cost figure
    the two disagree on more than a tenth of the rows.
 7. **Stop when the brief is met.** A worker does not continue into follow-ups (a sweep of sister copies, an
    audit of its own) that its brief did not name; it writes the follow-up as a one-line suggestion in NOTES.md.
+8a. **Rules become tools (25 Sept 2026, UPDATES.md).** A rule that the ledger shows broken twice gets a mechanical check in
+   tools/ with an offline test, and its prose shrinks to one line naming the tool. Precedents: `tools/intake_gate_check.py`
+   (the intake gate), `tools/room.py` (ROOM.md hygiene), `tools/ledger_check.py` (outcome codes), `tools/family_run.py`
+   (rule 3: a hypothesis family runs on a target only after its matched control has run and read; both numbers are written
+   side by side to `ciphers/<t>/HYPOTHESES.md`).
 8. **Shared scripts before new ones (24 Sept 2026).** Each has `--help` and an offline test in `tools/tests/`; a
    target that needs something they lack gets an option added to the tool, not a private copy.
    `tools/gallica_folio.py ARK --folio 35` reads the manifest's canvas labels once, gives the canvas and native image

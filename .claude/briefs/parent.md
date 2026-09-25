@@ -6,7 +6,7 @@ check-in (send_later, self-bound, re-armed at every firing) whose prompt is its 
 
 ## On start, before any other action
 
-Read, in this order: CLAUDE.md in full; STATUS.md from the top through every "Parent handoff" and "LANE <X> handoff"
+Read, in this order: UPDATES.md (the cross-account changelog; also re-read its tail at every check-in and log there any change you institute); CLAUDE.md in full; STATUS.md from the top through every "Parent handoff" and "LANE <X> handoff"
 section and the "Lane structure" table (they are long; do not stop at the first screen); BUDGETS.md (the scaling
 rule); ASKS.md; the last 60 lines of ROOM.md; tools/second_opinion_runner_prompt.md; tools/jstor_runner_brief.md and
 tools/local_runner_brief.md; the newest lane briefs under .claude/briefs/runs/. Then `list_triggers` (what is

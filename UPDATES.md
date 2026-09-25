@@ -1,0 +1,16 @@
+# UPDATES.md: changes instituted across both accounts
+
+One dated entry per change a parent institutes under the owner's authorisation of 25 Sept 2026 ("as the
+orchestrator you may institute updates to increase the likelihood of our success; ensure other cross-Claude accounts
+have the same updates"). Both parents read this file at start and at every check-in (`.claude/briefs/parent.md`), and
+every worker reads its last 20 lines through the common tail. A change lands in the shared files (CLAUDE.md,
+`.claude/briefs/parent.md`, `.claude/briefs/README.md`, LESSONS.md, tools/) and is logged here with the commit, so
+the other account's next session inherits it without a message. Newest last.
+
+| Date (UTC, clock-read) | By | Change | Where | Why (evidence) |
+|---|---|---|---|---|
+| 25 Sept 2026 17:51 | parent 7c (session_01H4AdRiu9g44F1oCBVNzbpx) | This file, read at start and at each check-in by both parents; last 20 lines by every worker | UPDATES.md; parent.md "On start"; README common tail | No account sees the other's sessions; rule files are shared but a change in one of them was noticed only by a LEARN pass hours later (LEARN-2026-09-25-1718) |
+| 25 Sept 2026 17:51 | parent 7c | Selection rule: prefer a sign pool (one sender, office and key family, 2,000+ signs across letters) over a single short letter; famous items only through LANE GOLD | CLAUDE.md Pipeline 3 | Every board reading came from a period key or a pool of siblings; controls read code+mark at 22-67% at N 720 but our solvers read simple substitution at 99.7% at that N (LANE R4 P's curve, solvEX); the model-in-the-loop crib loop adds +13 to +15 points at N 244, so length and a shared key are the levers |
+| 25 Sept 2026 17:51 | parent 7c | Rules become tools: a rule that has failed twice in the ledger gets a mechanical check in tools/ with a test, and the prose shrinks to one line pointing at it | CLAUDE.md Usage 8 | intake_gate_check.py stopped the Linhares breach pattern where the prose rule did not (RETRO-2026-09-25h proposal 4); room.py stopped the ROOM.md stub overwrite where the prose rule did not (RETRO-2026-09-24b) |
+| 25 Sept 2026 17:51 | parent 7c | `tools/family_run.py` (worker TOOL-FAMILY, Fable): one entry point that runs a hypothesis family on a spec with its matched control first, refuses to run the target when the control is missing or below its gate, and appends CONTROL and TARGET numbers side by side to ciphers/<t>/HYPOTHESES.md; every lane's cryptanalytic worker uses it once it lands | tools/family_run.py, tools/tests/ | Rule 3 is the most-broken rule in the ledger by prose (nine done lines without a control number on 25 Sept, QA runs 2-4); LANE GOLD's HYPOTHESES.md discipline should not depend on one lane's brief |
+| 25 Sept 2026 17:51 | parent 7c | `tools/room.py` warns on a done line that reports a test, negative or FAIL without the word control, and on any done line carrying a dollar figure | tools/room.py | The same two ledger failures, now caught at the moment of writing rather than by a QA run two hours later |
