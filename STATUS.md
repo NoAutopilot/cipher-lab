@@ -90,6 +90,22 @@ identified, the catalogue's date and senders corrected. The "first verified N3" 
 Orange 1572 detector candidate also fell (partial decipherment printed 1842). Zero unique solves today; two
 over-claims prevented by the gates before anything left the repository.
 
+## LANE V6 handoff (session_01V2BHwhVh1k72qSYuBFCyGd), 25 September 2026, written 21:42 UTC (context 431k; V7 starts here)
+
+Brief: `.claude/briefs/runs/2026-09-25-lane-v6-orchestrator.md` with `2026-09-25-lanes-7b-COMMON.md`. Orchestrator usage 7.59 at 21:41 (get_session); workers 31.79 over 9 ledger rows plus V6-QA3 (live at handoff). Every worker below is ledgered and archived except QA3.
+
+Results (all AUDIT.md classes copied to status.json by the parents):
+- **Linhares (antt-linhares-chave): judge PASS** on the new `tools/data/pt18` corpus (Correio Braziliense + Investigador Portuguez 1808-1819, 3.23M letters, test in tools/tests): -1.051 vs real_p05 -1.122, null_p99 -1.452 (FAIL under pt17 Vieira). qa_flag cleared by the owner-account parent 16:35. Status word stays blocked (intake gate, separate).
+- **bl-charles-digby: N0, key published** (Wheatstone 1862); plaintext already in clear in Groen van Prinsterer 1859 2e ser. IV pp.101-104; date corrected to May 1644.
+- **antt-fcc-costacabral-1865: N0, key period**; clerk's plaintext over every code; status solved.
+- **rah-xiquena-1868: N0, found-solved**, no ciphertext on the leaves (clear file copy of a cipher telegram); retire, not a catch.
+- **espagnol142-mercy-1648 (BnF Espagnol 144 f.22): N3, key ours, after two audits** (V6-MERCY 19:19, V6-MERCY2 20:39). Outreach gate 2 NOT met: JSTOR-QUEUE rows 80-83 (owner answers or waives), a page read of Lonchay-Cuvelier IV (HathiTrust mdp.39015014126620, seqs ~56-130; owner machine), APW 505 x3. Post-audit: R7 shuffled-stream control supports the reading (target -1154.3 vs shuffle mean -1488.5, matched control -1336.2); R7-MREV moved Cleues -> Eleues, so Cleves is no longer read -- logged in AUDIT.md and the still-queued SO-MERCY-F22 prompt (c0cc233e); flagged the status.json board line to parent 7d.
+- **Second-opinion PRs 10-12**: citation-checked (24 confirmed, 2 not confirmed, 1 unreachable, no class moves); two errors in our own files corrected in NOTES.md (Linhares key trim from either end; Nassau 5551 Pfalzgraf Christoph).
+- **Rolling QA**: QA/2026-09-25-1740.md (3 failures, all fixed by owners), QA/2026-09-25-1940.md (0 failures), QA/2026-09-25-2140.md (V6-QA3 session_01GRf9w9SE2oHdVFybQkQWRS, Sonnet, cap 5, started 21:41 -- V7 reads its done line, ledgers and archives it).
+
+For V7 (open items): (1) ledger and archive V6-QA3; (2) next rolling QA ~23:40 with `.claude/briefs/runs/2026-09-25-lane-v6-qa.md` (window from 21:40); (3) verifiers for any "for LANE V6/V7: reading ready" line (templates: `2026-09-25-lane-v6-mercy.md`, `-costa.md`; Opus, cap 10, 60 min); (4) when the owner answers rows 80-83 and the Lonchay-Cuvelier IV page read lands, a short gate-2 closer for Mercy; (5) clair349-este-guise-1556 (ZX): its leaf carries an interlinear contemporary decipherment -- when ZX posts reading ready, start the verifier from the clair1067 precedent (N0 on the leaf). Retrospective trigger (12 rows or 60) not yet met on V6 rows alone.
+Lessons: verifiers ran 5-16 minutes on 30-60 minute boxes and 2-7 dollars on 4-10 caps -- boxes can be halved for single-item verifiers; a reading change after an audit must be pushed into AUDIT.md and any queued SO prompt the same hour.
+
 ## LANE R7 handoff (session_01UpWfpbLwYL1xmDG1vFyi6h), 25 September 2026, kept current (last 21:24 UTC)
 
 Recovery and deep work, successor to LANE R6; opened 20:00 by parent 7c (now 7d). Brief .claude/briefs/runs/2026-09-25-lane-r7-orchestrator.md;
