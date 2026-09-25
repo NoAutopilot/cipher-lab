@@ -40,6 +40,16 @@ session and every subagent, cloud or local.
    error. Before diffing two renderings of the same underlying text for a gate, normalize both to one
    convention (expand abbreviations, one case, one punctuation set) or the gate measures whichever side
    transcribes more literally, not correctness.
+   A language corpus can be the wrong *era* even when it is the right language. Lesson of 25 Sept 2026
+   (V6-PTCORP, antt-linhares-chave): `tools/judge_plaintext.py`'s `pt17` corpus is Vieira, 17th-century Portuguese;
+   the target is an 1808-1819 letter. Under pt17 the reading FAILed (-1.145 vs real_p05 -1.101) and real prose
+   itself false-negatived 8.5% of the time; swapping to a corpus built from the letter's own period and register
+   (pt18: Correio Braziliense and O Investigador Portuguez, 1808-1819) PASSed the same reading (-1.051 vs real_p05
+   -1.122) and dropped the real-prose false-negative rate to 4.0% -- both sides of the gate moved together, which
+   is what a calibration fix looks like, not threshold-shopping. Before running a language judge on a target with a
+   specific date and register, check whether tools/data's corpus for that language is era-matched; if not, building
+   one is a cheap job (about 12 minutes, V6-PTCORP) worth doing before trusting a FAIL or a PASS
+   (RETRO-2026-09-25i proposal 2).
 4. **Grade every claimed reading per token:** H read from a key source, C from known plaintext, S cryptanalytic
    with a control, M uncertain, I inferred or repaired. Give the counts. No H or C means "cryptanalytic result".
 5. **Status vocabulary** in the first lines of every NOTES.md: `open`, `partial`, `solved`, `closed-negative`,

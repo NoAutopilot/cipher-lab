@@ -48,7 +48,13 @@ File the lane orchestrator brief and a COMMON for its workers under .claude/brie
 2026-09-25 LX, DX and OX files are the latest pattern), commit, post a ROOM claim line, then spawn the lane
 orchestrator (Opus). The lane orchestrator writes each job brief to a file before spawning its Sonnet workers,
 ledgers every report, runs its own check-ins, feeds the second-opinion queue after its verifier reaches N3, and
-writes "LANE <X> handoff" in STATUS.md when it stops.
+keeps a "LANE <X> handoff" section in STATUS.md current from its first worker report onward (results table, open
+items with costs so far), the same way this file's own "Handing over" section asks of the parent -- updated after
+every worker archives, not written once at a clean stop that a `rejected` rate-limit read can cut off before it
+arrives (24 Sept 2026: three lane orchestrators and five workers died 22:11-23:14 UTC having read
+`allowed_warning` for hours already, none had written anything, and a separate closer session spent $6.03
+reconstructing all three from disk -- LEDGER.md rows for R5, N4, B and the closer; RETRO-2026-09-25i proposal 1). A
+brief that names this file inherits the instruction; it does not need restating per lane.
 
 ## Handing over
 
