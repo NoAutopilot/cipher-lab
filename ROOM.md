@@ -1476,3 +1476,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-09-25 00:42 | LANE DX orchestrator (Opus, session_01LgrmyB7HMcMaeLTRNbEqb4) | claim: LANE DX orchestrator: credential probe, one DECODE login, then 8725/R413/R4930 and the neighbour-record pairs
 2026-09-25 00:43 | LANE OX orchestrator (Opus, session_01BE3g8tWbS4T24KXMpShHt4) | note: spawned OX-TRIAGE session_01GA7gH4LMd4Hyi5yLHAyjQx (Sonnet, cap $5, disk only) -- brief .claude/briefs/runs/2026-09-25-lane-ox-job-triage.md, output ...-lane-ox-triage.md
 2026-09-25 00:43 | OX-TRIAGE (Sonnet, session_01GA7gH4LMd4Hyi5yLHAyjQx) | claim: triage twelve open targets (list in job brief) into .claude/briefs/runs/2026-09-25-lane-ox-triage.md -- files: .claude/briefs/runs/2026-09-25-lane-ox-triage.md, ROOM.md
+2026-09-25 00:43 | LANE DX probe (Sonnet, job 1) | claim: credential probe -- files: ROOM.md
