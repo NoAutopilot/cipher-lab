@@ -331,3 +331,103 @@ No difference beyond these is unresolved.
   handful more codes to the key, since it continues the same dispatch's vocabulary as leaf 191.
 - The 13 M-graded/homophonic codes in `conflicts.tsv` (especially 689, 190, 1195) are worth a closer look at
   the original leaves if a future pass needs higher-confidence decoding of a token keyed to one of them.
+
+## Sweep for more key source (VX-RD02B, 25 Sept 2026)
+
+Job: find more key source for dispatch No.1 ("Numero Un"), in order: (1) sweep the outer 233-leaf bundle for a
+"Numero Un" decipherment or Primata/Duplicata copy CS05/RD02 did not see; (2) check neighbouring invnrs 11, 13
+and any invnr whose description names Janssens/Java/cijfer/ontcijfering; (3) re-decode with anything found.
+
+### (1) Densified sweep of invnr 12 outside leaves 180-210
+
+CS05's original sample covered leaves 1-179 and 211-233 only sparsely (every ~5.6th leaf, 34 points). This pass
+fetched `service.archief.nl` thumbnails for 42 of the remaining 167 unsampled leaves in that range (every 4th
+leaf, IIIF `/thumb/`), eye-checked each: **all 42 are plain prose, tabular registers, or blank** -- no cipher
+digit anywhere, no "Numero" heading. Two leaves (211, 230) initially looked numeric at thumbnail resolution and
+were re-fetched at full IIIF resolution to check: leaf 211 turned out to be the hit described below; leaf 230
+is an ordinary arithmetic/accounting jotting (sums, not code groups) with an unrelated slip of prose pasted on,
+not a cipher. This sweep, like CS05's, is still a sample (spacing 4, not exhaustive) of the 1-179 and 211-233
+ranges; a single-leaf item between sample points could still be missed.
+
+**But leaves 210-219, immediately after the already-exhaustively-checked 180-210 range, were then checked
+individually** (CS05/RD02's earlier "leaves 180-210" claim turns out to have stopped exactly at leaf 210, one
+leaf short of a real hit) -- see "New dispatch found" below. Leaves 215-217 (checked individually after) are
+unrelated 1812 Bibliothèque Impériale correspondence about the papers of the late Governor of Batavia
+Frederik van Boekholtz/Eijsinghe; no more cipher material found through leaf 219. Leaves 1-179 and 218-233
+remain only sparsely sampled.
+
+Host requests this step: `service.archief.nl` 42 (sweep thumbnails, every 1.6s) + 2 (leaves 211/230 full-res
+re-fetch) + ~13 (leaves 208-219 medium-res + 210/211/212/214 full-res) = 57, all ≥1.5s apart, all HTTP 200.
+
+### (2) Neighbouring invnrs
+
+Fetched the toegang 2.01.27.05 overview page (`nationaalarchief.nl/onderzoeken/archief/2.01.27.05`), which
+lists every invnr 1-57 with its archival description inline (this is the actual invnr-level finding aid, not
+leaf-level -- invnr 12's 233 scanned leaves are all ONE invnr, an unusually large grab-bag folder; most other
+invnrs are much smaller dossiers). Descriptions containing "Janssens": invnr 7 ("Analyses" of missives received
+since Nov 1810 from Governors-General Daendels and Janssens, with partial French translation, drawn up by the
+Chef der Divisie) and invnr 26 ("Missiven van de Gouverneur-Generaal J.W. Janssens aan de Minister van Marine en
+Koloniën van het Keizerrijk. Met bijlagen" -- Janssens' own registered outgoing-letter series, separate from
+invnr 12's unregistered incoming pieces). No description contains "cijfer", "ontcijfering", or "geheimschrift".
+Invnrs 11 and 13 (named in the brief) do not mention Janssens or Java at all (11: unordered original missives
+from the Emperor/Minister to Daendels; 13: a financial decision re: colonial-affairs receiver P. de Munnick).
+
+- **invnr 11** (22 scans): description checked, no Janssens/Java/cipher content -- not swept further.
+- **invnr 13** (6 scans): description checked, financial/administrative -- not swept further.
+- **invnr 26** (191 scans, Janssens' own missives to the Minister): sparse sample, every 8th leaf (24 leaves),
+  `service.archief.nl` thumbnails. All 24 are plain prose letters/reports or administrative register tables
+  (an alphabetical name/subject index within the volume) -- **no cipher digit found**. This is a sparse sample
+  of a 191-leaf bundle, not exhaustive.
+- **invnr 7** (190 scans, "Analyses" with partial French translation): sparse sample, every 24th leaf (8
+  leaves). All 8 are financial/accounting ledger tables ("Balans" register) or blank -- **no cipher digit, no
+  narrative analysis of a specific dispatch found in this sample**; the volume looks more like an accounts
+  ledger than the textual précis its title suggested, at least in the leaves sampled.
+
+Host requests this step: `nationaalarchief.nl` 5 (toegang overview + invnr 7/11/13/26 item pages) +
+`service.archief.nl` 32 (24 invnr26 thumbnails + 8 invnr7 thumbnails), all ≥1.5s apart, all HTTP 200.
+
+**No "Numero Un" decipherment or Primata/Duplicata copy found anywhere in this pass** -- neither in the
+densified invnr 12 sweep nor in the four neighbouring invnrs checked. Leaf 188 remains the only known copy of
+dispatch No.1, still without a decipherment on file.
+
+### New dispatch found: No.5, "1ère Expédition" (leaves 210-214)
+
+Not what this job set out to find (it is not "Numero Un"), but it is squarely "any other deciphered Janssens
+dispatch" per the brief, and it is new key source. A fifth numbered dispatch survives in **three parallel
+forms** on leaves immediately after the range CS05/RD02 had called fully checked:
+
+- **Leaves 210 (right page) - 212 (left page)**: the interlinear decipherment (numeric code above, French
+  word/syllable below), heading "No.5  1er Expédition", ending "Fin. Batavia 7. aoust." signed "Janssens".
+- **Leaf 211**: a separate slip of paper **pasted onto** the lower part of the decipherment page, carrying a
+  clean raw-cipher-only copy headed "No. Cinq. 1ère expédition." -- one continuous unbroken run of ~70 numeric
+  codes with no gloss, the same relationship as the No.2/No.3 clean-copy-plus-decipherment pairs but here
+  physically attached to the decipherment leaf rather than a separate leaf.
+- **Leaf 214**: a **plain, unenciphered French fair copy** of the same dispatch -- "No 5. 1re Expédition" /
+  "Une expédition forte de 71 voiles en arrivée le 4 aoust devant la Rade; et débarque les troupes à l'Isle de
+  la Ville — Nous avons détruit nos magasins de Sucre, Caffé et poivre — nous nous sommes portés dans le Camp
+  retranché destiné pour cela depuis Six mois — Il en probable que dans quelques jours une affaire décisive
+  aura lieu. Batavia 7. Aoust. Signé Janssens." (transcribed by this worker directly from the full-resolution
+  image, `no5_plaintext.txt`; plain legible French, not a code-reading judgment call, so not run through a
+  two-pass blind reconciliation the way the coded leaves are).
+
+This last item is new for this target: every other key source so far has been a *period decipherment* (grade
+C, "cryptanalytic-adjacent" per rule 4's own caveat that a working decipherment is not a fair key table). Leaf
+214 is an independent plain-language original of the SAME message that was also enciphered and deciphered two
+leaves earlier -- the closest thing to ground truth this bundle offers, and a genuine control for the
+No.2/No.3/No.5 key as a whole (not just a self-consistency check against the same decipherment's own gloss).
+
+Content: a 71-sail hostile expedition arrived 4 August off Batavia, landed troops at the Isle de la Ville
+(Onrust), the defenders destroyed their sugar/coffee/pepper stores and withdrew to the entrenched camp prepared
+for six months, a decisive engagement expected within days -- this is the British invasion of Java, days before
+the landing that took Batavia (historically, the British East India Company expedition under Auchmuty/Stopford
+landed at Cilincing 4 August 1811). Nearby leaf 208's plain-text letter (right page, headed "No.4 Première
+Expédition", Batavia 3 Août, signed Janssens, **not enciphered**) independently confirms the same picture one
+day earlier: "L'Amiral Stopford commande sur nos côtes 18 à 20 bâtiments, dont 6 vaisseaux... une expédition des
+plus formidables est sur le point d'arriver... Les dépêches dont le bâtiment No.4 étoit porteur, ne me sont pas
+parvenues" (the No.4 dispatches were lost in transit). Leaf 208's left page also carries the tail end of a
+different decipherment (code+gloss table, ending "3 Août. Signé Vanteau" on leaf 209) -- a different signer,
+not Janssens, not transcribed this pass (out of this job's scope), flagged here as a lead.
+
+Two blind Sonnet subagent transcription passes of the No.5 interlinear decipherment + pasted clean-copy slip
+were launched (`keysource_no5_passA/B.tsv`, `no5_cleancopy_passA/B.tsv`); reconciliation, key.tsv merge,
+redecode of leaf 188, judge re-run and fresh-instance re-derivation of the newly added codes follow below.
