@@ -39,3 +39,8 @@ Confirmed PHYSICAL/no scans, same method as 946/2317. Requesting 946, 1034 and 2
 remains the single most useful combination: 946 and 1034 are the same correspondent's two cipher instances 19
 months apart (comparing their numbers directly is not possible from print -- see NOTES.md's HU10 addendum), and
 2317 is the one candidate key in the archive that might open either or both.
+
+## See also
+
+This target's request is folded into the consolidated Heinsius-circle request (priority 2 of 4) at
+`ciphers/borssele-heinsius-1714/REQUEST.md`, "Consolidated Heinsius-circle request (NA 3.01.19), 25 Sept 2026".

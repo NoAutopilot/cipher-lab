@@ -26,3 +26,9 @@ transcribed and attempted by LANE R2 worker H1 with a negative-with-control resu
 series.
 
 **Status:** waiting on you. Stage 2 (verified unsolved) -- see NOTES.md's check-solved sweep.
+
+## See also
+
+This target's request is folded into the consolidated Heinsius-circle request (priority 4 of 4, lowest of the
+circle) at `ciphers/borssele-heinsius-1714/REQUEST.md`, "Consolidated Heinsius-circle request (NA 3.01.19), 25
+Sept 2026".

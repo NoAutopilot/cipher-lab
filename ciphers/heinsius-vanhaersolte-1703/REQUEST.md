@@ -20,3 +20,9 @@ heinsius-dopff-1702/REQUEST.md`.
 **Where to send it:** Nationaal Archief, The Hague, via their standard reproduction-request route.
 
 **Status:** waiting on you. Stage 2 (verified unsolved) -- see NOTES.md's check-solved sweep.
+
+## See also
+
+This target's request is folded into the consolidated Heinsius-circle request (priority 3 of 4, together with
+H.A. 2315 and heinsius-dopff-1702's H.A. 756) at `ciphers/borssele-heinsius-1714/REQUEST.md`, "Consolidated
+Heinsius-circle request (NA 3.01.19), 25 Sept 2026".

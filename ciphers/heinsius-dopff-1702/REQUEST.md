@@ -19,3 +19,9 @@ IIIF URLs).
 (nationaalarchief.nl contact form or reading-room copy order). Not tested this session.
 
 **Status:** waiting on you. Stage 2 (verified unsolved) -- see NOTES.md's check-solved sweep.
+
+## See also
+
+This target's request is folded into the consolidated Heinsius-circle request (priority 3 of 4, together with
+H.A. 2315 and heinsius-vanhaersolte-1703's H.A. 841) at `ciphers/borssele-heinsius-1714/REQUEST.md`,
+"Consolidated Heinsius-circle request (NA 3.01.19), 25 Sept 2026".
