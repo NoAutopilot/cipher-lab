@@ -1,0 +1,14 @@
+JOB GOLD-1A: Köhler family A, recovery (archive lookup). Sonnet (claude-sonnet-5). Stop and push at $6 or 45 minutes, whichever first. Lane: LANE GOLD orchestrator session_01DKDynpdEwZK5EokxtjCM3P. Written 25 Sept 2026.
+
+Read first: `.claude/briefs/runs/2026-09-24-lane-r4-common.md`, `.claude/briefs/runs/2026-09-25-lanes-7b-COMMON.md` (binding), CLAUDE.md Access playbook (TNA Discovery API; good-citizen rule), `ciphers/koehler-1944/NOTES.md` (intake verdict), `ciphers/koehler-1944/HYPOTHESES.md` if present, `specs/koehler-1944.json`. Claim in ROOM.
+Intake gate (pasted by the orchestrator at launch):
+INTAKE_GATE_OUTPUT
+
+Question: does any archive file describe or hold a decrypt, key or cipher system for Walter Koehler's five February-1944 messages to Abwehrleitstelle Frankreich / Paris Funkstelle? A held decrypt ends the item as found-solved (for LANE V6); a described system goes to HYPOTHESES.md as a constraint for families B-D.
+Do, one host at a time:
+1. TNA Discovery API (`https://discovery.nationalarchives.gov.uk/API/search/records?sps.searchQuery=...`, JSON, Accept: application/json; record details `/API/records/v1/details/{id}`), at most 120 calls, >= 1.5 s apart: KV 2 personal files on Walter Koehler / Köhler / Kohler (and any codename in Johnson's or Kahn's account, e.g. the FBI/MI5 codename if one is given in the sources you read); HW 19 (ISOS) and HW 20/HW 40 for Abwehr Paris / Leitstelle Frankreich traffic Jan-Mar 1944 with the USA; KV 3 on Abwehr agents in the USA. Record each item reference, title, covering dates, description, digitised yes/no, and whether it mentions a decrypt, key, book or cipher.
+2. Kahn, Cryptologia 5:2 (1981): find the article's reference to the archive letter that quotes the five messages (OpenAlex/CrossRef metadata with the keys; the abstract; any open copy; a Taylor & Francis landing page read once). If the full text is paywalled, add a JSTOR-QUEUE.tsv row (read the file's header for the format) and one LOCAL-QUEUE row if the owner's machine would help.
+3. FBI Vault (vault.fbi.gov, search "Koehler") and NARA catalog (catalog.archives.gov is keyless-unusable; try its public web search once) for "Walter Koehler" / RG 65; record what exists.
+4. Johnson's Warfare History Network article (the spec's source for the prayer-book cipher): read once, note what it says about the Paris messages' system and its own sources.
+Write `ciphers/koehler-1944/ARCHIVE.md` (table of items with references, and a one-paragraph answer), append a "Family A, recovery" section to `ciphers/koehler-1944/HYPOTHESES.md` (create the file with a short top-summary placeholder if absent; append-only), and add a REQUEST.md plus an ASKS.md row for any copy order that looks decisive (the person orders; never a worker). Do not decode anything.
+Done line: items found per series, decrypt described yes/no, request count per host, no cost figure. Rule 10 wording only.

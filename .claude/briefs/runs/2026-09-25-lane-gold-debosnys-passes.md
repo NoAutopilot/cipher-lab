@@ -1,0 +1,14 @@
+JOB GOLD-4A: Debosnys test 1 completed: cryptogram 4, merged sign inventory, second pass, reconcile. Sonnet (claude-sonnet-5). Stop and push at $6 or 60 minutes, whichever first. Lane: LANE GOLD orchestrator session_01DKDynpdEwZK5EokxtjCM3P. Written 25 Sept 2026.
+
+Read first: `.claude/briefs/runs/2026-09-24-lane-r4-common.md` (at most ONE Sonnet subagent, for the second pass only, writing its TSV to disk per page; commit per page), `.claude/briefs/runs/2026-09-25-lanes-7b-COMMON.md` (binding), `ciphers/debosnys-1883/NOTES.md` in full (LANE B2's single machine pass, and the intake verdict above it), `tools/glyph_atlas.py --help`, `tools/reconcile_passes.py --help`. Claim in ROOM.
+Intake gate (pasted by the orchestrator at launch):
+INTAKE_GATE_OUTPUT
+
+Do:
+1. Fetch cryptogram 4 (4a, 4b) once from the URLs in `sources/schmeh/posts/03-debosnys.html` (2 requests to scienceblogs.de, browser UA as B2 used, >= 2 s apart) into `images/`, add to manifest.json.
+2. Merged sign inventory: the 90 clusters are a deliberate over-split. Using the contact sheets (`glyphs/sheet_signs_0*.png`, `sheet_marks.png`) and crops, merge clusters that are the same sign into `glyphs/merge.tsv` (cluster -> sign id, one-line shape description, confidence). Pictograms (horse, sun, bird, anchor...) are signs too. Run segmentation on 4a/4b with the same parameters and map them into the same inventory. Pass A = the machine segmentation mapped through merge.tsv.
+3. Pass B, blind to pass A's sequence: one Sonnet subagent transcribes each cipher line from the line crops, left to right, using only the merged inventory sheet (a labelled reference sheet you build from merge.tsv), writing `passB.tsv` per page to disk; you commit it per page.
+4. `tools/reconcile_passes.py passA.tsv passB.tsv --crops ...`; settle disagreements.tsv rows on the image yourself. Write `ciphertext.txt` from the reconciled draft ONLY if per-line agreement is >= 80 percent (otherwise keep B2's draft file, and write the reconciled draft as ciphertext_draft.tsv with the agreement figure). Normalise both passes to one sign-id convention before diffing (7b COMMON point 3).
+5. Recompute per cryptogram (1, 2, 3, 4): lines, signs per line (a table: this is the input to the form test GOLD-4B), N, K, IC, with the matched controls of `scripts/compute_ic.py` (French, English, uniform at the same N and K). Also note any sign that behaves like a word divider (very frequent, never adjacent to itself, evenly spaced).
+Write a "GOLD-4A, test 1 completed" section in NOTES.md with every number, and put the line-structure table in `ciphers/debosnys-1883/lines.tsv`. Do not decode, do not anneal, do not read the clear poem (that is GOLD-4B). Push per stage.
+Done line: K merged, agreement, N/K/IC per cryptogram vs controls, request count per host, no cost figure. Rule 10 wording only.
