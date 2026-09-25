@@ -283,6 +283,31 @@
    "eye_check": "plain prose, short, signed, no cipher"
   },
   {
+   "order": 180,
+   "local_thumb": "images/180.jpg",
+   "eye_check": "plain prose (French), signed, no cipher"
+  },
+  {
+   "order": 181,
+   "local_thumb": "images/181.jpg",
+   "eye_check": "plain prose, no cipher"
+  },
+  {
+   "order": 182,
+   "local_thumb": "images/182.jpg",
+   "eye_check": "plain prose, dated 1814, no cipher"
+  },
+  {
+   "order": 183,
+   "local_thumb": "images/183.jpg",
+   "eye_check": "plain prose, no cipher"
+  },
+  {
+   "order": 184,
+   "local_thumb": "images/184.jpg",
+   "eye_check": "plain prose, signed, no cipher"
+  },
+  {
    "order": 185,
    "label": "NL-HaNA_2.01.27.05_12_0185.jpg",
    "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/a4e0dc01-43ca-4e11-aa69-6d47e81a5cca",
@@ -316,7 +341,8 @@
    "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/bf152dd2-ce11-493c-bf0e-828193041803.jp2/info.json",
    "local_thumb": "images/188.jpg",
    "local_med": "images/188_med.jpg",
-   "eye_check": "RAW CIPHER ONLY: rows of pure numeric groups, no interlinear gloss, heading eye-read as 'Numero [illegible digit].' ends 'Signe [name, illegible]'"
+   "eye_check": "RAW CIPHER ONLY, no gloss anywhere on the leaf found so far: heading reads Numero Un. Triplicata (corrects VX-CS05 illegible-digit read -- this is dispatch No.1, Triplicata not Duplicata); ends Signe [name]",
+   "local_hires_2561": "images/188_hi.jpg"
   },
   {
    "order": 189,
@@ -334,7 +360,8 @@
    "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/41b9da74-07f2-481d-b2f2-7301302f5943.jp2/info.json",
    "local_thumb": "images/190.jpg",
    "local_med": "images/190_med.jpg",
-   "eye_check": "CIPHER+DECIPHERMENT: heading eye-read 'N.2' '(Duplicata)', rows of numeric code with French word/syllable directly below each number, opens '...Batavia, neuf Juillet...' -- continuous readable French"
+   "eye_check": "Right page top: short glossed excerpt of dispatch Numero Deux (the same text leaf 191 glosses in full); below it, headed Numero Deux. (Duplicata), a CIPHERTEXT-ONLY clean copy of the same dispatch (confirmed: its closing codes 1082.79.441.497.689.536.843.990.420 match leaf 192 bottom -- Gouverneur General le trente Juin. Fin.)",
+   "local_hires_2561": "images/190_hi.jpg"
   },
   {
    "order": 191,
@@ -343,7 +370,8 @@
    "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/0bf1881b-67af-451c-8f94-69a97aad98fc.jp2/info.json",
    "local_thumb": null,
    "local_med": "images/191_med.jpg",
-   "eye_check": "CIPHER+DECIPHERMENT (continuation of 190): same numeric+word grid, readable French narrative about a frigate, wind, unable to leave port; left page is a plain-prose letter (different item, verso of the bifolio) with ink squiggle and archive stamp"
+   "eye_check": "CIPHER+DECIPHERMENT, heading N.2 (Duplicata): full interlinear French gloss word/syllable under (most) codes, several scribal corrections (crossed-out drafts); continues onto leaf 192",
+   "local_hires_2561": "images/191_hi.jpg"
   },
   {
    "order": 192,
@@ -352,7 +380,8 @@
    "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/5f81190c-4c3e-42bd-847e-dcecb5b4f9b4.jp2/info.json",
    "local_thumb": "images/192.jpg",
    "local_med": "images/192_med.jpg",
-   "eye_check": "RAW CIPHER ONLY: rows of pure numeric groups, no gloss, ends 'Signe [name]'"
+   "eye_check": "CIPHER+DECIPHERMENT, direct continuation of leaf 191s N.2 (Duplicata) gloss (the word split cer-/ti.fi.e. = certifie spans the 191/192 leaf boundary); ends Gouverneur General le trente Juin. Fin. Signe [name]",
+   "local_hires_2561": "images/192_hi.jpg"
   },
   {
    "order": 193,
@@ -406,7 +435,8 @@
    "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/e58671b6-0977-4bf2-93aa-f01c431a2b1f.jp2/info.json",
    "local_thumb": "images/198.jpg",
    "local_med": "images/198_med.jpg",
-   "eye_check": "RAW CIPHER ONLY: heading eye-read 'Numero 2' '(Duplicata)', dense rows of pure numeric groups, no gloss, ends with a signature"
+   "eye_check": "RAW CIPHER ONLY, heading reads Numero Trois (Duplicata) (corrects VX-CS05 eye-read Numero 2 -- pixel match confirms this is dispatch No.3, matching leaves 199-200s opening codes exactly), no gloss anywhere; ends with a signature",
+   "local_hires_2561": "images/198_hi.jpg"
   },
   {
    "order": 199,
@@ -415,7 +445,8 @@
    "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/9d81a97b-0b19-45ee-8c82-3637d7117c61.jp2/info.json",
    "local_thumb": null,
    "local_med": "images/199_med.jpg",
-   "eye_check": "CIPHER+DECIPHERMENT: heading eye-read 'Numero 3.' '(Duplicata)', numeric code + French word grid, left page blank with archive stamp and ink blot"
+   "eye_check": "CIPHER+DECIPHERMENT, heading Numero 3. (Duplicata): 5-column table, each cell one numeric code with its French gloss word below, read row-major left to right; continues onto leaf 200",
+   "local_hires_2561": "images/199_hi.jpg"
   },
   {
    "order": 200,
@@ -424,7 +455,18 @@
    "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/9c01a739-6ed2-4229-9a7f-38c4850207ec.jp2/info.json",
    "local_thumb": null,
    "local_med": "images/200_med.jpg",
-   "eye_check": "CIPHER+DECIPHERMENT (continuation of 199): dense numeric+word grid both pages, several entries crossed out/corrected, reads as continuous naval-intelligence French prose ending 'Fin.'"
+   "eye_check": "CIPHER+DECIPHERMENT, direct continuation of leaf 199s 5-column table; several crossed-out/corrected cells; ends Fin. Signe [name], dated onze Juillet",
+   "local_hires_2561": "images/200_hi.jpg"
+  },
+  {
+   "order": 201,
+   "local_thumb": "images/201.jpg",
+   "eye_check": "mostly blank, tabular column headers only, no cipher"
+  },
+  {
+   "order": 202,
+   "local_thumb": "images/202.jpg",
+   "eye_check": "plain prose letter, no cipher"
   },
   {
    "order": 203,
@@ -436,6 +478,31 @@
    "eye_check": "blank"
   },
   {
+   "order": 204,
+   "local_thumb": "images/204.jpg",
+   "eye_check": "tabular form (columnar, handwritten words not digits), no cipher"
+  },
+  {
+   "order": 205,
+   "local_thumb": "images/205.jpg",
+   "eye_check": "tabular form (columnar), no cipher"
+  },
+  {
+   "order": 206,
+   "local_thumb": "images/206.jpg",
+   "eye_check": "tabular form (columnar), no cipher"
+  },
+  {
+   "order": 207,
+   "local_thumb": "images/207.jpg",
+   "eye_check": "plain prose, no cipher"
+  },
+  {
+   "order": 208,
+   "local_thumb": "images/208.jpg",
+   "eye_check": "blank / mostly blank"
+  },
+  {
    "order": 209,
    "label": "NL-HaNA_2.01.27.05_12_0209.jpg",
    "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/f1775c8e-3ed3-4348-8c3d-d2bc72c57ace",
@@ -443,6 +510,11 @@
    "local_thumb": "images/209.jpg",
    "local_med": null,
    "eye_check": "mostly blank, a few words top-left corner, no cipher"
+  },
+  {
+   "order": 210,
+   "local_thumb": "images/210.jpg",
+   "eye_check": "plain prose, signed, no cipher"
   },
   {
    "order": 215,
@@ -480,5 +552,6 @@
    "local_med": null,
    "eye_check": "blank/edge leaf, end of bundle"
   }
- ]
+ ],
+ "note_25sept_VX-RD02": "gap leaves 180-184/201-202/204-208/210 thumbnailed (all plain prose/tabular, no cipher); leaves 188/190/191/192/198/199/200 refetched at IIIF full/2561 for transcription (images/NNN_hi.jpg)"
 }

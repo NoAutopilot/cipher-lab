@@ -1,5 +1,4 @@
 open
-
 Colenbrander's *Gedenkstukken der Algemeene Geschiedenis van Nederland 1795-1840*, Deel VI (huygens retroboeken
 sources 9/10/11), full-text search for "Janssens" and independent read of the Inleiding footnote, by this worker
 (25 Sept 2026): the edition names this exact archival series and a decipherment item in it ("In n°. 11 de berichten
