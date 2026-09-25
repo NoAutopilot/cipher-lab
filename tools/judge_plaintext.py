@@ -37,6 +37,16 @@ LANG_CORPORA = {
     "en": [DATA / "pg1661_holmes.txt", DATA / "pg2701_mobydick.txt"],
     "de": [DATA / "de16" / "composed_enhg.txt"],
     "fr": [DATA / "fr16" / "lettresdecatheri01cathuoft_djvu.txt.gz"],
+    "it": [DATA / "it16" / "alcuneletteredip00ferr.txt", DATA / "it16" / "delleletterefam02seghgoog.txt",
+           DATA / "it16" / "lettereinedited00tassgoog.txt", DATA / "it16" / "lettereinedited01cibrgoog.txt",
+           DATA / "it16" / "lettereineditedi01carouoft.txt", DATA / "it16" / "letterescrittea01vanzgoog.txt"],
+    "pt": [DATA / "pt17" / "vieira_cartas_tomoIV_1855.txt.gz", DATA / "pt17" / "vieira_cartas_1912.txt.gz"],
+    # nl, es, la (25 Sept 2026, YX-PTJUDGE): tools/data/nl_repo, es_repo, la_repo each hold only one or two
+    # target's own committed readings/plaintext-print files (a few KB each, nowhere near the ~200k-character
+    # floor a language check needs, and for es_repo/la_repo the sole file *is* the target's own reading --
+    # circular per CLAUDE.md "never use a target's own reading as its corpus"). Not wired. A future worker
+    # who fetches a real nl/es/la period corpus (Internet Archive djvu.txt or a Google Books full-view volume,
+    # never the target's own material) of at least ~200k letters can add it here the way "it"/"pt" are done.
 }
 FOLD = str.maketrans({"ä": "ae", "ö": "oe", "ü": "ue", "ß": "ss", "é": "e", "è": "e", "ê": "e", "à": "a", "ç": "c",
                       "ù": "u", "û": "u", "î": "i", "ô": "o", "â": "a", "ë": "e", "ï": "i",
