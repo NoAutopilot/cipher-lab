@@ -123,6 +123,135 @@ Digital edition text and page images: no login, no blocks, resources.huygens.kna
 - No transcription-for-decoding pass has been done; the ~121-token count above is a by-eye description, not
   a token-by-token key-recovery transcription.
 
+## Key hunt (TX-KEYS, 25 Sept 2026, 08:57-09:15 UTC)
+
+Job: find a key sheet or deciphered sibling of Pieter Cornelisz. van Brederode's cipher, 1600-1610, per
+`.claude/briefs/runs/2026-09-25-lane-tx-keys.md`. **No key sheet or deciphered sibling found this pass**; one
+substantial unexplored lead identified (NA 1.01.02 inv. 6016) and one access gap (de Leeuw et al. 2022, transient
+connection failure, not a paywall).
+
+### 1. NA 3.01.14 (Oldenbarnevelt archief), full EAD XML
+
+Downloaded the whole finding aid as XML (`nationaalarchief.nl/onderzoeken/archief/3.01.14/download/xml`, 4.97 MB,
+4448 items) and grepped locally for `sleutel` (3), `cijfer` (2), `chiffre` (0), `Brederode` (30). All read in
+context:
+- `sleutel`/`cijfer` hits are unrelated: a 1586 "verdeelsleutel" (division formula for money, not a cipher key);
+  a key sheet for the **Buzanval** cipher (Oldenbarnevelt's correspondence with Choart de Buzanval, French
+  ambassador -- invnr 2028, "Stuk houdende de sleutel voor de decodering van de code die Johan van Oldenbarnevelt
+  gebruikte in zijn correspondentie met Paul Choart, heer Van Buzanval"); a cipher/decode note on a different
+  bundle (1598-1602/1605-1609 correspondence with France, invnr not captured, "Bij de missive van 1598 augustus
+  10 bevindt zich een sleutel"). None involve Brederode.
+- Of the 30 Brederode hits, two are digitised items in this same archive by our exact correspondent, but **not
+  cipher**: invnr **2477** (bundle "Missiven van Johan van Oldenbarnevelt" 1609) contains an item-level entry
+  "Missive van Johan van Oldenbarnevelt aan Pieter Corneliszn. van Brederode... van 2 november 1609... concept",
+  printed RGP 108 pp.378-379; invnr **1699** is "Missive van Pieter Corneliszn. van Brederode, diplomatiek agent
+  in Duitsland, aan Johan van Oldenbarnevelt van 18 juni 1612", printed RGP 108 pp.517-521, digitised (dao METS
+  link present). Both are in RGP 108, the **same printed volume** as our target letter -- but the editor's own
+  preface (already quoted above) states no. 92 is the *only* ciphered item in the whole volume, so neither of
+  these two letters is itself in cipher; they are plain correspondence between the same two people, useful only
+  as biographical context, not as a key/sibling route.
+- No other Brederode item in this archive is flagged as ciphered or carries a "sleutel" annotation.
+
+### 2. NA 1.01.02 (Staten-Generaal), full EAD XML -- the one substantial lead
+
+Downloaded the whole finding aid (22.7 MB, 28,573 items). `sleutel` (3, none relevant: a physical door-key
+dispute 1585, a "Sleutel geheimschrift" for **Ottoman/Constantinople** governments and ministers, invnr 12578.1,
+unrelated correspondent/period), `cijferschrift` (5, all dated 1629-1674, outside 1600-1610), `chiffre` (0).
+
+**"Liassen Agent Brederode"** (invnr range 6016-6024, series description "Ingekomen brieven en stukken van
+Pieter van Brederode, Agent van de Staten-Generaal in Duitsland en Zwitsersland, 1602-1637") is a dedicated,
+year-bundled series of this exact correspondent's papers held at the States-General archive, not the
+Oldenbarnevelt archive. Invnr **6016** covers **1602-1613** and is digitised, public domain (METS
+`https://service.archief.nl/gaf/api/mets/v1/4153f78f-3369-4801-93bc-c3eb9b39012c`, 624 page images). Fetched 6
+sample images (order 1, 100, 180, 260, 261, 262; method and URLs in `images/manifest.json`'s
+`na_101_02_6016_note`) to characterise it:
+- Order 1: folder-cover leaf handwritten "1602 en 1603" -- confirms the bundle is loose, year-divided, **not
+  letter-indexed**.
+- Order 260: folder-cover leaf handwritten **"1605-1606"** -- the exact year-folder for our target.
+- Order 261 (the very next leaf): Brederode reporting his journey "nae Heydelbergh" and dealings with "Marquis
+  Joachim Ernest van Brandenburg" -- on-topic for the same mission as our target letter (written from
+  Heidelberg, 21 Feb 1605), though not visibly in cipher on this one leaf.
+- Order 100/180 land in a different bound sub-document (a negotiation register/journal with its own archival
+  page numbers, an index-tab margin visible at order 100) bound into the same digitised file -- the 624 pages
+  are not one uniform letter-bundle.
+- **No numeral cipher seen on any of the 6 sampled leaves.** This is far too small a sample to call a negative:
+  the 1605-1606 folder's extent (order 261 to the next divider) was not located, and no page-by-page read was
+  done (out of this job's scope/budget -- no subagents, $5 stall cap).
+- A separate item, not checked for digitisation this pass: "Stukken betreffende de zending... van doctor Pieter
+  Brederode naar de Zwitserse kantons, 1605. Met retroacta, 1587-1604" (a 1605 Swiss mission dossier, distinct
+  from the German/Heidelberg mission our target concerns).
+
+**This is the strongest open lead from this pass.** A future capture worker should read NL-HaNA 1.01.02 inv.
+6016 image order ~261 through the next year-divider leaf, watching for (a) any duplicate/copy of the 21 Feb 1605
+letter itself, (b) any nearby passage in the same numeral-code system with an interlinear gloss or an attached
+key note (the archive is known to sometimes catalogue cipher items "met het cijfer", i.e. with the key attached
+-- see the statengeneraal search below).
+
+### 3. NA 3.20.07 (Van Brederode family archive) -- checked in full, negative
+
+Found via web search (not previously in this repo): toegang 3.20.07, "Inventaris van het archief van de familie
+Van Brederode", (1248)-1697, only 112 items -- small enough to fetch and grep whole. Zero `sleutel`/`cijfer`/
+`chiffre` hits. One `Oldenbarnevelt` hit: invnr 28, letters of 20 Jan and 9 March 1616 to **Walraven IV** van
+Brederode (a different branch/generation than our Pieter Corneliszn.), irrelevant to this target. Per the search
+snippet, part of the wider Brederode family archive is held at the Fürstliches Haus- und Landesarchiv Detmold
+(Germany) -- out of scope for the Nationaal Archief, not checked this pass.
+
+### 4. Huygens retroboeken/statengeneraal (Resolutiën der Staten-Generaal 1576-1630), Deel 13 OR (1604-1606, GS 101)
+
+Confirmed the accessor mechanics for this book (`searchText`, `search_term:ustring:utf-8=<term>&source_id=13OR`,
+per the method `sources/huygens/NOTES.md` round 2 documented for the sibling books) and ran three searches
+against the volume covering our exact date range:
+- `Brederode`: 39 hits. The most relevant, p.101 (`page_index=113`, full OCR page read, not just the snippet):
+  "Oldenbarnevelt deelde 21 Februari een brief van Brederode mede van ongeveer dezelfde inhoud; er werd nog
+  uitgesteld er een besluit over te nemen" -- the States-General's own resolution records that Oldenbarnevelt
+  personally communicated a letter from Brederode to the assembly on **21 February 1605**, on a matter the
+  surrounding text says could not be put "in brieven of geschriften" (in letters or writings) -- i.e. sensitive
+  enough to need oral/secure handling, consistent with (though not proof of) the letter's partial cipher. No
+  archival citation is given for this specific incoming letter (Oldenbarnevelt reported it in person, so the
+  resolution's own footnotes cite only the *replies*, e.g. footnote "10) De brief aan Brederode: R.A., S.G. 5888
+  (minuut)" on p.96, and "Beide brieven: R.A., S.G. 5968" for the 1-2 March replies). This is strong
+  corroboration that our target letter (or one essentially like it, same date) reached The Hague and was acted
+  on, but it is not a key or a decipherment.
+- `sleutel`: 1 hit, p.630, a literal door/lock key ("de sleutel van de plaats waar de..."), irrelevant.
+- `cijfer`: 1 hit, p.649, "R.A., S.G. 7106 (orig., met het cijfer); beide gedrukt" -- about a **different**
+  correspondent ("De Castries"), but establishes that this same archive's resolution editors do sometimes note
+  when an item is filed "met het cijfer" (with its cipher key attached); no such note anywhere near the
+  Brederode hits in this volume.
+
+### 5. De Leeuw et al., "Keys with nomenclatures in the early modern Europe" -- access gap, not a paywall
+
+Identified via OpenAlex (keyed): Megyesi, Tudor, Láng, Lehofer, Kopal, de Leeuw, Waldispühl, *Cryptologia*,
+published **2022** (not 2024 as my job brief said -- DOI `10.1080/01611194.2022.2113185`), and it **is** open
+access (OpenAlex `is_oa: true`, hybrid), with two repository mirrors: `uu.diva-portal.org` and `edit.elte.hu`.
+Abstract read via OpenAlex's inverted index: a general survey of 1,600+ historical cipher keys from 10
+countries, no country or correspondent named in the abstract. Full text **not read this pass**: the DiVA mirror
+reset the connection twice (`curl: (35) Recv failure`, one retry per the good-citizen rule), the ELTE mirror
+404'd on both URL forms OpenAlex gave, and the DOI resolver itself is Cloudflare-challenged from this
+environment. This is a transient/environment access problem, not a subscription block -- worth a plain retry
+from a fresh session or a LOCAL-QUEUE.tsv row for a home-IP fetch of
+`https://uu.diva-portal.org/smash/get/diva2:1718372/FULLTEXT01`, not a JSTOR row (the paper is not on JSTOR).
+
+### 6. Den Tex, *Johan van Oldenbarnevelt* (dbnl.org) -- retried once, now reachable, read in full, negative
+
+The host TLS-failed twice in an earlier pass; per the job brief, retried once more this pass and it worked
+(`dbnl.org/tekst/tex_003joha01_01/`, 200). This is the Jan den Tex **and Ali Ton** one-volume abridged edition
+(not the original 5-volume unabridged biography), downloadable whole as
+`tex_003joha01_01/tex_003joha01_01.pdf` (307 pages, fetched once, 1.5s+ between the two dbnl.org requests).
+Extracted full text (`pdftotext`, installed this pass) and grepped: `Brederode` (6 hits, all "Pieter Corneliszn.
+Brederode", confirms he is Oldenbarnevelt's calvinist agent in Germany and discusses the April 1605 Brandenburg/
+Palatinate subsidy negotiations that our target letter's mission concerns) but **zero** hits for `sleutel`,
+`cijferschrift` or `chiffre` anywhere in the volume. Genuine negative for this specific (abridged) edition; the
+original unabridged Den Tex biography is a different, longer text not confirmed reachable the same way.
+
+### Hosts/requests this section
+
+`nationaalarchief.nl`: ~8 (3.01.14 page + XML, 1.01.02 page + XML, 3.20.07 page + XML, site search page).
+`service.archief.nl`: ~8 (1 METS fetch, 6 image fetches, all >=1.5s apart). `resources.huygens.knaw.nl`: ~10
+(retroboeken index, statengeneraal TOC x2, 3 searches, pages.json, 1 real page). `api.openalex.org`: 1 (keyed).
+`uu.diva-portal.org`: 2 (both failed, connection reset, one retry per good-citizen rule, not retried further).
+`edit.elte.hu`: 2 (both 404). `doi.org`: 1 (403, Cloudflare). `dbnl.org`: 2 (index page, PDF; both 200 this
+pass). No logins, no credentials used.
+
 ## Search log (rule 1, dated 25 Sept 2026)
 
 1. Web search (multiple queries: "Brederode Oldenbarnevelt cijfer 1605 sleutel ontcijferd"; "'van Brederode'
