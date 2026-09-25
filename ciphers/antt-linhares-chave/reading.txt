@@ -1,6 +1,7 @@
 # antt-linhares-chave m0002, decoded against Vieyra 1809 Part I (BOOK.md) via key.tsv (LX-DEC, 25 Sept 2026; LX-FIX, 25 Sept 2026)
-# tokens 26: H 25, C 0, S 0, M 1, I 0, U 0 (U = sign not covered by the key; there should be none -- every group in
-# ciphertext.tsv has a key.tsv row, including the one null and the one remaining M-graded group, 283219/cagar)
+# tokens 26: H 24, C 0, S 0, M 2, I 0, U 0 (U = sign not covered by the key; there should be none -- every group in
+# ciphertext.tsv has a key.tsv row, including the one null and the two M-graded groups, 283219/cagar and
+# 3241315/justa (LX-QAFIX, 25 Sept 2026: a fresh independent re-derivation disagreed on the latter)
 # Portuguese as decoded, one line per manuscript line (page_of_letter + line). English gloss below in NOTES.md.
 2 1	para supprir o seu lugar junto com man o
 2 2	d justa he segredo ate [null] o ministerio

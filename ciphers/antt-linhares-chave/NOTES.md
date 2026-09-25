@@ -605,3 +605,92 @@ rule 7). Files touched: `key.tsv`, `ciphertext.tsv`, `decode.json` (header text 
 `reading_tokens.tsv`, `images/book/` (9 new page images + manifest entries), `images/crops/` (2 new crops), this
 file. archive.org requests this pass: 10 (leaves 92-96, 98, 100-103; 1.6s apart, sequential, User-Agent
 `cipher-lab research script (contact via repository)`, no login, no 429/403 seen).
+
+## Fresh-instance re-derivation of the corrected reading (LX-QAFIX, 25 Sept 2026)
+
+QA flag (`QA/2026-09-25-0638.md` row 8, CLAUDE.md rule 7): the only fresh-instance re-derivation on file (LX-DEC,
+01:48) matched the superseded H20/M6 reading, not LX-FIX's correction (H25/M1, `p3l1pos4` 285219->283219 plus 5
+M->H upgrades). This pass ran a new one against the *current* key.tsv/reading.txt.
+
+**Method:** one fresh Sonnet subagent, told nothing about this project, this key, this reading, or any prior
+worker's conclusions. Given only: (1) the key's parse rule restated in prose (page/column/rank from the digits;
+leading digit 4-9 = null; subscript trims letters from the end; every bold headword line counts once, including
+reflexive/homograph pairs on their own bold lines; a definition spilling over from the previous column does not
+count); (2) the 26 raw digit groups from `ciphertext.tsv` (location, digit string, trim subscript only -- not the
+already-computed book_page/book_col/rank columns, and not `key.tsv`/`reading.txt`); (3) paths to the 23 already-
+committed Vieyra 1809 page images under `images/book/`. It parsed each group's page/column/rank itself, counted
+each column from the image, and reported one table plus its own flags. Full raw report kept in this session's
+transcript; not re-quoted verbatim here.
+
+**Agreement table** (26 groups; "match" = same headword/token, accents aside):
+
+| loc | group | claimed (key.tsv) | fresh subagent | match? |
+|---|---|---|---|---|
+| 2/1/1 | 328928 | para (H) | Pára | yes |
+| 2/1/2 | 336227 | supprir (H) | Supprir | yes |
+| 2/1/3 | 328511 | o (H) | O | yes |
+| 2/1/4 | 335412 | seu (H) | Séu, Súa | yes |
+| 2/1/5 | 3251217 | lugar (H) | Lugár | yes |
+| 2/1/6 | 3241220 | junto (H) | Júnto | yes |
+| 2/1/7 | 311021 | com (H) | Com | yes |
+| 2/1/8 | 325532 | man (H) | Mán | yes |
+| 2/1/9 | 328521 | o (H) | O | yes |
+| 2/2/1 | 313211 | d (H) | D | yes |
+| 2/2/2 | 3241315 | justa (H) | **Jus** | **no** |
+| 2/2/3 | 322332 | he (H) | Hé | yes |
+| 2/2/4 | 3350320 | segredo (H) | Segrédo | yes |
+| 2/2/5 | 260118 | ate (H) | Até | yes |
+| 2/2/6 | 829011 | [null] (H) | NULL | yes |
+| 2/2/7 | 328131 | o (H) | O | yes |
+| 2/2/8 | 326624 | ministerio (H) | Ministério | yes |
+| 3/1/1 | 3295112 | pela (H) | Péla | yes |
+| 3/1/2 | 326223 | memoria (H) | Memória | yes |
+| 3/1/3 | 316211 | do (H) | Do | yes |
+| 3/1/4 | 283219 | cagar (M) | **no rank19 found** (column counted to 18) | **no** |
+| 3/1/5 | 324726 | lhe (H) | Lhe | yes |
+| 3/1/6 | 3293211 | pauperr (H) | Paupérr | yes |
+| 3/1/7 | 338326 | ven (H) | Ven | yes |
+| 3/1/8 | 322231 | ha (H) | Há | yes |
+| 3/2/1 | 3250121 | logo (H) | Lógo | yes |
+
+**Agreement: 24/26.** Two disagreements:
+
+1. **2/2/2 (`3241315`, page241 col3 rank15, claimed "justa", graded H).** The fresh subagent independently counted
+   the column and landed on rank15 = "Jus", one entry short of "Justa" -- the identical disagreement the *original*
+   (stale, pre-LX-FIX) fresh re-derivation already flagged (see "Reading (LX-DEC...)" section above, "p2l2pos2");
+   LX-DEC's own re-check at the time called the subagent's count mistaken and kept "Justa" at H. This pass's fresh
+   subagent, working from the raw digits with no exposure to that prior exchange, reached the same "Jus" answer
+   again -- two independent blind counts now agree with each other against the one on file. Per this brief's rule
+   (lower an H grade on a fresh-instance disagreement; do not argue it back up), **`justa` is downgraded H -> M**
+   in `key.tsv` and `ciphertext.tsv`; not re-adjudicated by this worker. The open question (whether "Junto, prepos."
+   atop column 3 counts as its own headword, per the every-bold-line convention already used everywhere else in
+   this decode) is left for a future pass with fresh eyes on `images/book/newpocketdiction00viey_leaf0255_p241.jpg`.
+2. **3/1/4 (`283219`, page83 col2 rank19, claimed "cagar", already graded M).** The fresh subagent counted only 18
+   headwords in that column (ending at "Caganítas") where LX-FIX's systematic table recorded 23. This group was
+   already M, not H, so the brief's downgrade rule does not apply to it; recorded here for the record, not
+   resolved further -- a third count of this specific column, independent of both LX-FIX's and this pass's
+   subagent's, is the natural next step before anyone treats it as settled at any grade.
+
+Both disagreements are on the same short list of columns whose headword count this project has struggled to
+pin down exactly (241/3 and 83/2); every other one of the 26 groups, including every group LX-FIX changed this
+session, reproduced cleanly under a genuinely independent re-derivation.
+
+**Grade counts after this pass (rule 4):** H 24, M 2, C 0, S 0, I 0, U 0 (26 total; was H 25, M 1). `key.tsv`,
+`ciphertext.tsv` and `decode.json` (header text) updated; `python3 tools/decode_key.py ciphers/antt-linhares-chave
+--check` regenerates `reading.txt`/`reading_tokens.tsv` and exits 0.
+
+Updated reading (Portuguese as decoded, grade in brackets):
+
+> [p.2] para[H] supprir[H] o[H] seu[H] lugar[H] junto[H] com[H] man[H] o[H]
+> d[H] justa[M] he[H] segredo[H] ate[H] {[null]} o[H] ministerio[H]
+> [p.3] pela[H] memoria[H] do[H] cagar[M] lhe[H] pauperr[H] ven[H] ha[H]
+> logo[H]
+
+QA flag row 8 cleared: the current claimed reading (now H24/M2) has its own matching fresh-instance re-derivation
+on file, agreement recorded group by group, and the one real disagreement was resolved by lowering the grade, not
+by arguing it back up. `specs/antt-linhares-chave.json`'s judge output is unaffected by a single H->M grade change
+(still vacuous, no `pt` corpus, per the "Reading (LX-DEC...)" section above); not re-run.
+
+Not run this pass: a third look at either disputed column; Part II of the volume; any further novelty search
+(AUDIT.md's N3/N3 verdicts and search log are unaffected by a token-grade change and are not touched by this
+worker, per this pass's brief).
