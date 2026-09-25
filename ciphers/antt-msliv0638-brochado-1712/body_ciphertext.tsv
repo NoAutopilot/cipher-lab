@@ -1,0 +1,79 @@
+leaf	letter_no	run_id	position	token	token_type	grade	note	context_before	context_after
+m0179	80	m0179-r1	1	10	digit	H	passA=passB	sobre a Politica desta reposta que naõ hé mais qe	e alguã/algua coisa mais á manhaã lhe darei os
+m0179	80	m0179-r1	2	26	digit	H	passA=passB	sobre a Politica desta reposta que naõ hé mais qe	e alguã/algua coisa mais á manhaã lhe darei os
+m0179	80	m0179-r1	3	18	digit	H	passA=passB	sobre a Politica desta reposta que naõ hé mais qe	e alguã/algua coisa mais á manhaã lhe darei os
+m0179	80	m0179-r1	4	16	digit	H	passA=passB	sobre a Politica desta reposta que naõ hé mais qe	e alguã/algua coisa mais á manhaã lhe darei os
+m0179	80	m0179-r1	5	8	digit	H	passA=passB	sobre a Politica desta reposta que naõ hé mais qe	e alguã/algua coisa mais á manhaã lhe darei os
+m0179	80	m0179-r1	6	14	digit	H	passA=passB	sobre a Politica desta reposta que naõ hé mais qe	e alguã/algua coisa mais á manhaã lhe darei os
+m0179	80	m0179-r1	7	15	digit	H	passA=passB	sobre a Politica desta reposta que naõ hé mais qe	e alguã/algua coisa mais á manhaã lhe darei os
+m0179	80	m0179-r1	8	2	digit	M	passA=12 passB=2, resolved 2 by 3x image re-check (worker)	sobre a Politica desta reposta que naõ hé mais qe	e alguã/algua coisa mais á manhaã lhe darei os
+m0179	80	m0179-r1	9	7	digit	M	passA=2 passB=7?, resolved 7 by 3x image re-check (worker)	sobre a Politica desta reposta que naõ hé mais qe	e alguã/algua coisa mais á manhaã lhe darei os
+m0179	80	m0179-r1	10	4	digit	H	passA=passB	sobre a Politica desta reposta que naõ hé mais qe	e alguã/algua coisa mais á manhaã lhe darei os
+m0179	80	m0179-r1	11	55	digit	H	passA=passB	sobre a Politica desta reposta que naõ hé mais qe	e alguã/algua coisa mais á manhaã lhe darei os
+m0179	80	m0179-r1	12	12	digit	H	passA=passB	sobre a Politica desta reposta que naõ hé mais qe	e alguã/algua coisa mais á manhaã lhe darei os
+m0179	80	m0179-r1	13	15	digit	H	passA=passB	sobre a Politica desta reposta que naõ hé mais qe	e alguã/algua coisa mais á manhaã lhe darei os
+m0179	80	m0179-r1	14	11	digit	H	passA=passB	sobre a Politica desta reposta que naõ hé mais qe	e alguã/algua coisa mais á manhaã lhe darei os
+m0179	80	m0179-r1	15	55	digit	H	passA=passB	sobre a Politica desta reposta que naõ hé mais qe	e alguã/algua coisa mais á manhaã lhe darei os
+m0179	80	m0179-r1	16	ff?	letter	H	passA=passB, genuinely unusual doubled-loop glyph, value not settled	sobre a Politica desta reposta que naõ hé mais qe	e alguã/algua coisa mais á manhaã lhe darei os
+m0179	80	m0179-r1	17	8	digit	H	passA=passB	sobre a Politica desta reposta que naõ hé mais qe	e alguã/algua coisa mais á manhaã lhe darei os
+m0179	80	m0179-r1	18	3	digit	H	passA=passB	sobre a Politica desta reposta que naõ hé mais qe	e alguã/algua coisa mais á manhaã lhe darei os
+m0179	80	m0179-r1	19	15	digit	H	passA=passB	sobre a Politica desta reposta que naõ hé mais qe	e alguã/algua coisa mais á manhaã lhe darei os
+m0180	81	m0180-r1	1	15	digit	H	passA=passB	que vem, e antaõ/entaõ darei a memoria por que	tudo. Naõ referi o Diario do Parlamento
+m0180	81	m0180-r1	2	25	digit	H	passA=passB	que vem, e antaõ/entaõ darei a memoria por que	tudo. Naõ referi o Diario do Parlamento
+m0180	81	m0180-r1	3	16	digit	H	passA=passB	que vem, e antaõ/entaõ darei a memoria por que	tudo. Naõ referi o Diario do Parlamento
+m0180	81	m0180-r1	4	85	digit	H	passA=85? passB=85, same value	que vem, e antaõ/entaõ darei a memoria por que	tudo. Naõ referi o Diario do Parlamento
+m0180	81	m0180-r1	5	8	digit	H	passA=passB	que vem, e antaõ/entaõ darei a memoria por que	tudo. Naõ referi o Diario do Parlamento
+m0180	81	m0180-r1	6	57	digit	H	passA=passB	que vem, e antaõ/entaõ darei a memoria por que	tudo. Naõ referi o Diario do Parlamento
+m0180	81	m0180-r1	7	20	digit	H	passA=passB	que vem, e antaõ/entaõ darei a memoria por que	tudo. Naõ referi o Diario do Parlamento
+m0180	81	m0180-r1	8	+?	unclear	M	passA=+? passB=7, worker's 3x re-check: a cross/dagger-shaped mark, not a plain digit 7 nor any letter seen elsewhere in this volume's key.tsv -- unresolved, flagged for a key-aware worker	que vem, e antaõ/entaõ darei a memoria por que	tudo. Naõ referi o Diario do Parlamento
+m0180	81	m0180-r1	9	26	digit	H	passA=passB	que vem, e antaõ/entaõ darei a memoria por que	tudo. Naõ referi o Diario do Parlamento
+m0180	81	m0180-r1	10	8	digit	H	passA=passB	que vem, e antaõ/entaõ darei a memoria por que	tudo. Naõ referi o Diario do Parlamento
+m0180	81	m0180-r1	11	4	digit	H	passA=passB	que vem, e antaõ/entaõ darei a memoria por que	tudo. Naõ referi o Diario do Parlamento
+m0180	81	m0180-r1	12	20	digit	H	passA=passB	que vem, e antaõ/entaõ darei a memoria por que	tudo. Naõ referi o Diario do Parlamento
+m0180	81	m0180-r1	13	10	digit	H	passA=passB	que vem, e antaõ/entaõ darei a memoria por que	tudo. Naõ referi o Diario do Parlamento
+m0180	81	m0180-r1	14	2	digit	H	passA=passB	que vem, e antaõ/entaõ darei a memoria por que	tudo. Naõ referi o Diario do Parlamento
+m0180	81	m0180-r1	15	5	digit	H	passA=passB	que vem, e antaõ/entaõ darei a memoria por que	tudo. Naõ referi o Diario do Parlamento
+m0180	81	m0180-r1	16	55	digit	M	passA=15 passB=55, resolved 55 by 3x image re-check (worker)	que vem, e antaõ/entaõ darei a memoria por que	tudo. Naõ referi o Diario do Parlamento
+m0180	81	m0180-r1	17	18	digit	H	passA=passB	que vem, e antaõ/entaõ darei a memoria por que	tudo. Naõ referi o Diario do Parlamento
+m0180	81	m0180-r1	18	26	digit	H	passA=passB	que vem, e antaõ/entaõ darei a memoria por que	tudo. Naõ referi o Diario do Parlamento
+m0180	81	m0180-r1	19	54	digit	H	passA=passB	que vem, e antaõ/entaõ darei a memoria por que	tudo. Naõ referi o Diario do Parlamento
+m0180	81	m0180-r1	20	8	digit	H	passA=passB=8, passB self-flagged uncertain	que vem, e antaõ/entaõ darei a memoria por que	tudo. Naõ referi o Diario do Parlamento
+m0180	81	m0180-r1	21	5	digit	H	passA=passB	que vem, e antaõ/entaõ darei a memoria por que	tudo. Naõ referi o Diario do Parlamento
+m0180	81	m0180-r1	22	57	digit	H	passA=passB	que vem, e antaõ/entaõ darei a memoria por que	tudo. Naõ referi o Diario do Parlamento
+m0276	none	m0276-r1	1	55	digit	H	passA=passB	none (leaf begins here, no preceding text on this crop)	mas isto hé impossivel/imposivel, nem o tempo o
+m0276	none	m0276-r1	2	17	digit	M	passA=17 passB=47, resolved 17 by 3x image re-check (worker)	none (leaf begins here, no preceding text on this crop)	mas isto hé impossivel/imposivel, nem o tempo o
+m0276	none	m0276-r1	3	12	digit	H	passA=passB	none (leaf begins here, no preceding text on this crop)	mas isto hé impossivel/imposivel, nem o tempo o
+m0276	none	m0276-r1	4	23	digit	H	passA=passB	none (leaf begins here, no preceding text on this crop)	mas isto hé impossivel/imposivel, nem o tempo o
+m0276	none	m0276-r1	5	14	digit	H	passA=passB	none (leaf begins here, no preceding text on this crop)	mas isto hé impossivel/imposivel, nem o tempo o
+m0276	none	m0276-r1	6	d	letter	H	passA=passB	none (leaf begins here, no preceding text on this crop)	mas isto hé impossivel/imposivel, nem o tempo o
+m0276	none	m0276-r1	7	f	letter	H	passA=passB	none (leaf begins here, no preceding text on this crop)	mas isto hé impossivel/imposivel, nem o tempo o
+m0276	none	m0276-r1	8	16	digit	H	passA=passB	none (leaf begins here, no preceding text on this crop)	mas isto hé impossivel/imposivel, nem o tempo o
+m0276	none	m0276-r1	9	17	digit	H	passA=passB	none (leaf begins here, no preceding text on this crop)	mas isto hé impossivel/imposivel, nem o tempo o
+m0276	none	m0276-r1	10	ff?	letter	H	passA=passB, same doubled-loop glyph as m0179 position 16, value not settled	none (leaf begins here, no preceding text on this crop)	mas isto hé impossivel/imposivel, nem o tempo o
+m0276	none	m0276-r1	11	z	letter	M	passA=z passB=7, resolved z by 3x image re-check (worker)	none (leaf begins here, no preceding text on this crop)	mas isto hé impossivel/imposivel, nem o tempo o
+m0276	none	m0276-r1	12	12	digit	H	passA=passB	none (leaf begins here, no preceding text on this crop)	mas isto hé impossivel/imposivel, nem o tempo o
+m0276	none	m0276-r1	13	5	digit	H	passA=passB	none (leaf begins here, no preceding text on this crop)	mas isto hé impossivel/imposivel, nem o tempo o
+m0276	none	m0276-r1	14	z	letter	M	passA=7 passB=z, resolved z by 3x image re-check (worker)	none (leaf begins here, no preceding text on this crop)	mas isto hé impossivel/imposivel, nem o tempo o
+m0276	none	m0276-r1	15	x	letter	M	passA=7 passB=x, resolved x by 3x image re-check (worker)	none (leaf begins here, no preceding text on this crop)	mas isto hé impossivel/imposivel, nem o tempo o
+m0276	none	m0276-r1	16	d	letter	H	passA=passB	none (leaf begins here, no preceding text on this crop)	mas isto hé impossivel/imposivel, nem o tempo o
+m0276	none	m0276-r1	17	12	digit	H	passA=passB	none (leaf begins here, no preceding text on this crop)	mas isto hé impossivel/imposivel, nem o tempo o
+m0276	none	m0276-r2	1	x	letter	H	passA=passB	mas isto hé impossivel/imposivel, nem o tempo o permite, e só serve	Cá naõ cuido de dizer que o novo Enviado/Enviádo
+m0276	none	m0276-r2	2	z	letter	M	passA=z passB=7, resolved z by 3x image re-check (worker)	mas isto hé impossivel/imposivel, nem o tempo o permite, e só serve	Cá naõ cuido de dizer que o novo Enviado/Enviádo
+m0276	none	m0276-r2	3	55	digit	H	passA=passB	mas isto hé impossivel/imposivel, nem o tempo o permite, e só serve	Cá naõ cuido de dizer que o novo Enviado/Enviádo
+m0276	none	m0276-r2	4	52	digit	H	passA=passB	mas isto hé impossivel/imposivel, nem o tempo o permite, e só serve	Cá naõ cuido de dizer que o novo Enviado/Enviádo
+m0276	none	m0276-r2	5	15	digit	H	passA=passB	mas isto hé impossivel/imposivel, nem o tempo o permite, e só serve	Cá naõ cuido de dizer que o novo Enviado/Enviádo
+m0276	none	m0276-r2	6	26	digit	H	passA=passB	mas isto hé impossivel/imposivel, nem o tempo o permite, e só serve	Cá naõ cuido de dizer que o novo Enviado/Enviádo
+m0276	none	m0276-r2	7	y	letter	H	passA=passB	mas isto hé impossivel/imposivel, nem o tempo o permite, e só serve	Cá naõ cuido de dizer que o novo Enviado/Enviádo
+m0276	none	m0276-r2	8	20	digit	H	passA=passB	mas isto hé impossivel/imposivel, nem o tempo o permite, e só serve	Cá naõ cuido de dizer que o novo Enviado/Enviádo
+m0276	none	m0276-r2	9	25	digit	H	passA=passB	mas isto hé impossivel/imposivel, nem o tempo o permite, e só serve	Cá naõ cuido de dizer que o novo Enviado/Enviádo
+m0276	none	m0276-r2	10	f	letter	H	passA=passB	mas isto hé impossivel/imposivel, nem o tempo o permite, e só serve	Cá naõ cuido de dizer que o novo Enviado/Enviádo
+m0276	none	m0276-r2	11	24	digit	H	passA=passB	mas isto hé impossivel/imposivel, nem o tempo o permite, e só serve	Cá naõ cuido de dizer que o novo Enviado/Enviádo
+m0276	none	m0276-r2	12	e	letter	H	passA=passB	mas isto hé impossivel/imposivel, nem o tempo o permite, e só serve	Cá naõ cuido de dizer que o novo Enviado/Enviádo
+m0276	none	m0276-r2	13	3	digit	H	passA=passB	mas isto hé impossivel/imposivel, nem o tempo o permite, e só serve	Cá naõ cuido de dizer que o novo Enviado/Enviádo
+m0276	none	m0276-r2	14	17	digit	H	passA=passB	mas isto hé impossivel/imposivel, nem o tempo o permite, e só serve	Cá naõ cuido de dizer que o novo Enviado/Enviádo
+m0276	none	m0276-r2	15	20	digit	H	passA=passB	mas isto hé impossivel/imposivel, nem o tempo o permite, e só serve	Cá naõ cuido de dizer que o novo Enviado/Enviádo
+m0276	none	m0276-r2	16	t	letter	H	passA=passB	mas isto hé impossivel/imposivel, nem o tempo o permite, e só serve	Cá naõ cuido de dizer que o novo Enviado/Enviádo
+m0276	none	m0276-r2	17	19	digit	H	passA=passB	mas isto hé impossivel/imposivel, nem o tempo o permite, e só serve	Cá naõ cuido de dizer que o novo Enviado/Enviádo
+m0276	none	m0276-r2	18	m	letter	H	passA=passB	mas isto hé impossivel/imposivel, nem o tempo o permite, e só serve	Cá naõ cuido de dizer que o novo Enviado/Enviádo
+m0276	none	m0276-r2	19	a	letter	H	passA=passB	mas isto hé impossivel/imposivel, nem o tempo o permite, e só serve	Cá naõ cuido de dizer que o novo Enviado/Enviádo
+m0276	none	m0276-r2	20	d	letter	H	passA=passB	mas isto hé impossivel/imposivel, nem o tempo o permite, e só serve	Cá naõ cuido de dizer que o novo Enviado/Enviádo
