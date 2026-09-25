@@ -304,7 +304,7 @@ Left in the triage and failing the gate: three DECODE-gated items (decode-1162, 
 yet their copy orders are on the owner's card (Pipeline step 2); a CX3 sweep of them at about USD 3 per target
 would clear or kill those asks (asked 15:48, no answer); (2) tools/intake_gate_check.py passes an edition line saying
 "was not opened" (pro3055); (3) check-solved.md should say a worker who finds the clear text of a same-date letter
-runs the found-solved test itself (FRAWI did not). Running count passing the gate: 15 (YX+CX) + 20 (CX2) = 35.
+runs the found-solved test itself (FRAWI did not). Running count passing the gate as open or partial: 15 (YX+CX) + 18 (CX2) = 33; 2 more are compliant as blocked.
 No live workers, no pending check-in.
 
 ## LANE YX handoff (session_01PHaEdHeQY2FtMHLo9yGeoe), 25 September 2026, 13:34 UTC
