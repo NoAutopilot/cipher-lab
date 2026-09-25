@@ -1,0 +1,79 @@
+book_nr	name	slug	chapters	raw_utf8_bytes	sha1	letters_after_fold	file
+1	Бытие	bytie	50	296144	a6ba3d5af1fcc2539fb9604aab1f6f1fde122f4a	129162	01_bytie.txt.gz
+2	Исход	ishod	40	250889	c5568ca0837a29f3e968febdbe01b95224c5ce4b	110502	02_ishod.txt.gz
+3	Левит	levit	27	183116	3ed4fbc890b5dbd4ab0b9d59cc3ccd4930fa53d7	81047	03_levit.txt.gz
+4	Числа	chisla	36	250798	cb4551f0aa298d058f1de1494843abd47f010f3c	111092	04_chisla.txt.gz
+5	Второзаконие	vtorozakonie	34	223529	2cdc563a7c01e5804aad0c3ffe7144184762ca7c	98076	05_vtorozakonie.txt.gz
+6	Иисуса Навина	iisusa_navina	24	151366	57fcea54b3eacb7eb5b3e5177a030560e0ae2158	66672	06_iisusa_navina.txt.gz
+7	Судей	sudei	21	143097	6349ca146e5a0eca277bcd6af5f3dc35fd355da8	62988	07_sudei.txt.gz
+8	Руфь	ruf	4	19667	13ff44b0416c4e0b4c79148b65ffa9335a4e7dfd	8595	08_ruf.txt.gz
+9	1-я Царств	ya_carstv	31	195933	32d91a6766e685ccf608aac92974b2e41c315e7e	85941	09_ya_carstv.txt.gz
+10	2-я Царств	ya_carstv	24	161317	2f8dd585e56bd0f13e1e81c4f2c31aaf0c1a490f	70761	10_ya_carstv.txt.gz
+11	3-я Царств	ya_carstv	22	194122	34ff563ea250a78a3b8266ba2882160ae259cfe9	85605	11_ya_carstv.txt.gz
+12	4-я Царств	ya_carstv	25	177423	dfff225e7ddbb6646681d12eb97dcefdd86d1ffa	78075	12_ya_carstv.txt.gz
+13	1-я Паралипоменон	ya_paralipomenon	29	159334	186baf440cbafa0620bb05e0816d33462a943167	69989	13_ya_paralipomenon.txt.gz
+14	2-я Паралипоменон	ya_paralipomenon	36	209203	fcd9f03cccfa4b5751c4e4f765267dc5dd9be88e	92527	14_ya_paralipomenon.txt.gz
+79	Молитва Манассии	molitva_manassii	1	3248	d51f72b81255ed7aaaf65b9a3aecdced8a5f49c2	1449	79_molitva_manassii.txt.gz
+15	Ездры	ezdry	10	58827	d7955c5aa6f703abbe68539ff2183225f0c7987c	26057	15_ezdry.txt.gz
+16	Неемии	neemii	13	82427	ffee15384f5585da5159eb4bfbe2fec5046f2d81	36397	16_neemii.txt.gz
+67	1-я Ездры	ya_ezdry	9	90440	d391f8a1efee76ed28d5bf18009fdaad047ad320	40236	67_ya_ezdry.txt.gz
+69	Товит	tovit	14	54433	ad3e9b6896e6d879d71efdf2a420d99c72e216ed	23913	69_tovit.txt.gz
+70	Юдифь	yudif	16	85668	e18bd729a7cc4c0005ffd5f6c4f0f1b281a38ff3	37906	70_yudif.txt.gz
+17	Есфирь	esfir	10	69620	16c5a3332ca8435810a374dfac89cbe1784fc3d8	30893	17_esfir.txt.gz
+18	Иов	iov	42	142205	bd71ee682c5f44859183e6fd3fc700d04a05b46e	62273	18_iov.txt.gz
+19	Псалтирь	psaltir	151	333237	7e629b33c99ac4e95f37882a0100b627bca4640f	146120	19_psaltir.txt.gz
+20	Притчи	pritchi	31	127301	b61ba63a7854d5d3777e3297bcaa1da4c0beaad8	56391	20_pritchi.txt.gz
+21	Екклесиаст	ekklesiast	12	43652	ea2dffda4a8224e6701027bb72d8474b03bd51a7	19124	21_ekklesiast.txt.gz
+22	Песнь Песней	pesn_pesnei	8	21942	ec8897628d405bc6ddfca524c06ea1903371af38	9645	22_pesn_pesnei.txt.gz
+73	Премудрость Соломона	premudrost_solomona	19	82941	a0b478a9fcb29413405fbb051e742984c9687c9a	37006	73_premudrost_solomona.txt.gz
+74	Сирах	sirah	51	216357	ef044941e30ea4592fa4e21374639600d553a619	95903	74_sirah.txt.gz
+23	Исаия	isaiya	66	279477	1eefdef47994fc12b24bd2f75c807459123b19df	123049	23_isaiya.txt.gz
+24	Иеремия	ieremiya	52	324275	427c9c64f934ce3fecd5989d9dd33c7dbd1aa6f7	142871	24_ieremiya.txt.gz
+25	Плач Иеремии	plach_ieremii	5	26218	736c6c2edeb0a1e09b83aeacc5c879577a2570b8	11594	25_plach_ieremii.txt.gz
+84	Послание Иеремии	poslanie_ieremii	1	13646	03bd18d88246e795869e6b7b46f80cb738880b4b	6014	84_poslanie_ieremii.txt.gz
+75	Варух	varuh	5	25582	e897ecebf2798e9c31dcaf68cc1b8734a2ce4847	11275	75_varuh.txt.gz
+26	Иезекииль	iezekiil	48	295869	58e8aee4ab400aae7c31f28c575d35dca83e522f	130291	26_iezekiil.txt.gz
+27	Даниил	daniil	14	121729	2e2fde74f090d7db3067f8ad36096b2cc635ad41	53855	27_daniil.txt.gz
+28	Осия	osiya	14	39009	4ff45516eec19c6e73d104cab76b1de67319be51	17054	28_osiya.txt.gz
+29	Иоиль	ioil	3	15191	e2496cabe8dd4f5fcd09e60da8191a8c246d2014	6713	29_ioil.txt.gz
+30	Амос	amos	9	31726	aba151c0e5fd7c65c680520584a3ccef162f5493	13965	30_amos.txt.gz
+31	Авдий	avdii	1	4942	2623cd469bebe4e81fa8598cdbb252b8a4838b95	2181	31_avdii.txt.gz
+32	Иона	iona	4	9825	b02c9bbf0dfb39d3d48efa6ffc1c2e0718b64d07	4285	32_iona.txt.gz
+33	Михей	mihei	7	23583	1578e941e42f4525214f01478fa60b5106a2a691	10393	33_mihei.txt.gz
+34	Наум	naum	3	9911	96cd5ab93fbd2c6b038dc6ff0648d4cc1f29ae3f	4387	34_naum.txt.gz
+35	Аввакум	avvakum	3	11673	0aee6d3d3e4ae35d2c0d52dbf576548e788a8221	5163	35_avvakum.txt.gz
+36	Софония	sofoniya	3	12354	788b0b86c01dd915a584a9bc6e6fcb856b0bb24a	5477	36_sofoniya.txt.gz
+37	Аггей	aggei	2	8746	2d8e41b2089bfc43591448b29d9920abdcd82427	3861	37_aggei.txt.gz
+38	Захария	zahariya	14	47146	112dc623c87341960fe2d4de11ec1eb9c245862f	20719	38_zahariya.txt.gz
+39	Малахия	malahiya	4	14288	ec48acad5d0b21fc9b7e1e3e8ef2f23a985ce1ae	6301	39_malahiya.txt.gz
+80	1-я Маккавеев	ya_makkaveev	16	183819	65256542a7df6cafe9dbf7efb528a787708d96f5	81721	80_ya_makkaveev.txt.gz
+81	2-я Маккавеев	ya_makkaveev	15	134423	53d317d93752512f710f412d8643a930272250b3	60358	81_ya_makkaveev.txt.gz
+82	3-я Маккавеев	ya_makkaveev	7	60521	4bdd79c6056658376e0b01f7fec13c79f885fd75	27246	82_ya_makkaveev.txt.gz
+68	2-я Ездры	ya_ezdry	16	154809	232daba933b9c51812de31a052f32d15d711dbf1	68439	68_ya_ezdry.txt.gz
+40	Матфей	matfei	28	180063	cc278e64da9f4015a12e297a1b6bc38c69dd64f8	79137	40_matfei.txt.gz
+41	Марк	mark	16	112555	d12a726aa21558bfe777b144d70488ba1cf2aaf6	49398	41_mark.txt.gz
+42	Лука	luka	24	192013	65f5abed1a72e4550c082f689062b0de61367465	84406	42_luka.txt.gz
+43	Иоанн	ioann	21	143581	4cbaf2b7b96ea7688defbf54f983b25bee762acd	62544	43_ioann.txt.gz
+44	Деяния	deyaniya	28	190649	2fed5a70f408f2547acb8954e51501a204597ca9	84359	44_deyaniya.txt.gz
+59	Иакову	iakovu	5	18973	488c20991a1b9a56ab245d2bc456e299ebb845bd	8368	59_iakovu.txt.gz
+60	1-е Петру	e_petru	5	20037	b318c2df58a6094a56f395cdfa3a9cb68b0e0b76	8911	60_e_petru.txt.gz
+61	2-е Петру	e_petru	3	12929	607ba6ac9c3940d57e215924286480038ef3c59e	5786	61_e_petru.txt.gz
+62	1-е Иоанну	e_ioannu	5	19480	748b81a25b71f3faf9372fa1c7ca158e92dc10f4	8461	62_e_ioannu.txt.gz
+63	2-е Иоанну	e_ioannu	1	2429	d7a3ea9cf5def61013f6c9a6469945f2f912b9c6	1066	63_e_ioannu.txt.gz
+64	3-е Иоанну	e_ioannu	1	2454	cf288c56b429338a75d488fe6b881af268dd45df	1085	64_e_ioannu.txt.gz
+65	Иуде	iude	1	5421	c1f20bddd39ac41161278b0585b22acc54084b56	2421	65_iude.txt.gz
+45	Римлянам	rimlyanam	16	74492	7fd28a65f87186cf79d516f21959c3e6485811b7	32919	45_rimlyanam.txt.gz
+46	1-е Коринфянам	e_korinfyanam	16	72517	86f1972b932c5f0fa4866c9537f21b7ffd1f8bda	31874	46_e_korinfyanam.txt.gz
+47	2-е Коринфянам	e_korinfyanam	13	48184	dad0c1b8c6b7bf3d4c03b86b899ced8325621c3b	21164	47_e_korinfyanam.txt.gz
+48	Галатам	galatam	6	24366	f10d789213767be19f2792a41076fb58919daa7b	10760	48_galatam.txt.gz
+49	Ефесянам	efesyanam	6	24156	4c4d6bbd9a34c85809c9f72e472c08c894f72c49	10737	49_efesyanam.txt.gz
+50	Филиппийцам	filippiicam	4	17487	3bccdff15df3ef80316706fa19959c2c392a5082	7718	50_filippiicam.txt.gz
+51	Колоссянам	kolossyanam	4	16375	d2b0e6f05e4a784880d0f543bed79ed3f8a950a5	7261	51_kolossyanam.txt.gz
+52	1-е Фессалоникийцам	e_fessalonikiicam	5	15045	5ef5accd51b9cf57bb5beae0dd4569390797254d	6616	52_e_fessalonikiicam.txt.gz
+53	2-е Фессалоникийцам	e_fessalonikiicam	3	8409	d0ebfca1332bb9500e62209ddf54a8896c3edad3	3721	53_e_fessalonikiicam.txt.gz
+54	1-е Тимофею	e_timofeyu	6	19822	b3644410f2621e6af0c652a1c00455c305e2883a	8839	54_e_timofeyu.txt.gz
+55	2-е Тимофею	e_timofeyu	4	13487	12573bee9398f9cd780f81503ab3b69ab8a8f071	5984	55_e_timofeyu.txt.gz
+56	Титу	titu	3	8145	851191b5bbb7ec194d07b019c1eda7b40069cc9e	3631	56_titu.txt.gz
+57	Филимону	filimonu	1	3526	60e4ec69e0925593b169a956d05a68a4373564b3	1544	57_filimonu.txt.gz
+58	Евреям	evreyam	13	55578	6b9b028216ef7f0c4fb9cd5e5dd0f295621d195f	24689	58_evreyam.txt.gz
+66	Откровение	otkrovenie	22	89835	70eaece57bd54e801c4784f5baf13bc0e58f4ad6	39486	66_otkrovenie.txt.gz
