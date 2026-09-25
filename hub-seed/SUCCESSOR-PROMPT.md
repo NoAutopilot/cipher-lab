@@ -1,6 +1,6 @@
 # Successor prompt for the cipher-lab parent orchestrator
 
-Written by parent 7b, 24 Sept 2026 20:54 UTC. Paste the block below into a fresh Claude Code session on
+Written by parent 7b, 24 Sept 2026 20:54 UTC; updated 25 Sept 2026 15:40 UTC. Paste the block below into a fresh Claude Code session on
 github.com/NoAutopilot/cipher-lab (model claude-fable-5-1, or the strongest available) to pick up the parent's
 work if this session stops, the seven-day window is rejected, or a new chat is needed. Everything the successor needs
 is in the repository; nothing lives only in a transcript. Update the session ids in this file whenever a parent hands over.
@@ -24,8 +24,6 @@ your own with send_later (30 minutes while any lane or worker runs, 90 otherwise
 trigger's prompt with your session id. Post a ROOM.md line "parent 7c: took over from 7b at <time>". Then do
 the duties when the trigger fires and otherwise wait for the owner. If any session reads `rejected`: interrupt
 every live lane and worker, post "rejected at <time>: every lane stops" in ROOM.md, note it in BUDGETS.md, and
-re-arm for Sat 26 Sept 2026 13:00 UTC. Restart order after a reset: R5's successor on Salviati f.55v-f.57v and
-the Nevers key no.60 atlas, N4's successor on its firm nominations and the Torre do Tombo codices, V5 when a
-reading posts, the survey's rank-one cheap test. Your own hand-over point is 750k context: update this file
+re-arm for Sat 26 Sept 2026 13:00 UTC. Live lanes on 25 Sept 2026 from 15:39 UTC: LANE R6 session_018MWpKL71WnBxA8k4ejVkBS, LANE V6 session_01V2BHwhVh1k72qSYuBFCyGd, LANE B2 session_01NS12APP1R55K6TGZrBbP97 (caps and briefs in hub-seed/ASSIGNMENTS.md; common rules in .claude/briefs/runs/2026-09-25-lanes-7b-COMMON.md). The other account's parent is session_01FXDfYR3CvGk7tcid1Aav1n; its lanes are closed until its window resets about 05:00 UTC 26 Sept; coordinate only through ROOM.md and STATUS.md. Your own hand-over point is 750k context: update this file
 and the Parent handoff, then stop.
 ```

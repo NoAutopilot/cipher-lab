@@ -401,3 +401,6 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-24T21:53Z	session_pending_retrog	Retrospective g (Sonnet, cap 0)	RETRO-2026-09-24g.md	22 rows, $88 since retro f
 2026-09-24T21:53Z	session_pending_decode	DECODE look at R2742 and R2077 (Sonnet, cap )	baluze103 and fr3789 NOTES; sources/decode/records/	N4 flag 21:44; brief 2026-09-24-decode-r2742-r2077.md
 2026-09-25T15:36Z	session_01MRsU1QGjSKNQ5oCejANVXg	closer 7b (Sonnet, cap )	ledger and handoffs for the eleven sessions of 24 Sept	brief 2026-09-25-closer-7b-lanes.md
+2026-09-25T15:39Z	session_018MWpKL71WnBxA8k4ejVkBS	LANE R6 orchestrator (Opus, cap 80)	Salviati leaves + code+mark; YX's 13 gate-passing targets	brief 2026-09-25-lane-r6-orchestrator.md + lanes-7b-COMMON
+2026-09-25T15:39Z	session_01V2BHwhVh1k72qSYuBFCyGd	LANE V6 orchestrator (Opus, cap 50)	pt 1780-1830 judge corpus + Linhares; Charles-Digby verifier; readings; rolling QA	brief 2026-09-25-lane-v6-orchestrator.md
+2026-09-25T15:39Z	session_01NS12APP1R55K6TGZrBbP97	LANE B2 orchestrator (Opus, cap 25)	breadth: first cheap tests, next tests, ten more specs	brief 2026-09-25-lane-b2-orchestrator.md

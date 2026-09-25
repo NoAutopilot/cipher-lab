@@ -1,5 +1,5 @@
 {
- "updated": "25 Sept 2026, 13:55 UTC",
+ "updated": "25 Sep 2026 15:40 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -1851,6 +1851,21 @@
  ],
  "lanes": [
   {
+   "name": "Lane R6, recovery and deep work (7b)",
+   "live": 1,
+   "focus": "started 15:39: Salviati f.55v to f.57v then the code-and-mark run; YX's 13 gate-passing targets by lead class; PP-04 Costa Cabral 1865"
+  },
+  {
+   "name": "Lane V6, verification (7b)",
+   "live": 1,
+   "focus": "started 15:39: Portuguese 1780-1830 judge corpus and the Linhares re-run; verifier for the Charles-Digby found-solved; verifiers for readings; rolling QA every two hours"
+  },
+  {
+   "name": "Lane B2, breadth (7b)",
+   "live": 1,
+   "focus": "started 15:39: first cheap test per remaining spec at $3, next tests where a spec moved, ten more specs from the survey"
+  },
+  {
    "name": "Lane YX, left-open targets",
    "live": 0,
    "focus": "closed 13:34 on the seven-day allowed_warning (no new workers anywhere): Brochado letter 134 FAILs the Portuguese judge (no reading); Barriere 1654 negative re-reported on two reconciled passes (30.0 vs control 31.1); Clair 349 key transcribed, ciphertext held under the 60% gate; Wellington dictionary: library copies only; Baluze 156 second Sabran key negative with control"
@@ -1896,26 +1911,6 @@
    "focus": "closed on handoff 02:12: login works on the owner account (username form), but every full-size image and document is the 'Insufficient permissions' placeholder; D2-D8 found-solved in Bourdeau's repo, D5 open"
   },
   {
-   "name": "Parent workers",
-   "live": 0,
-   "focus": "QA runs 1-4, AUD2, LX-QAFIX, LX-JUDGE, retrospective h and its fixes done; judge now ignores # header lines (it had been scoring them)"
-  },
-  {
-   "name": "Lane R5, recovery",
-   "live": 0,
-   "focus": "Salviati f.55r passed its gate (370 signs, pool about 1,090); f.55v half read, pass B resumes at line 12; the five Nevers letters are blocked on the hand after the calibrated re-run (39.8 percent), no more spend there (other account; idle since 24 Sept 21:53 UTC until its window resets 26 Sept 13:00 UTC)"
-  },
-  {
-   "name": "Lane N4, nominations",
-   "live": 0,
-   "focus": "18 workers, $58; two Torre do Tombo finds under check-solved (Linhares key plus ciphertext 1780-1827; Costa Cabral 1865 interlined); Villeroy-Bongars 1604 held until Tomokiyo's Bongars paper is read; Le Tellier-Marca 1644 waits on a DECODE login look (other account; idle since 24 Sept 21:53 UTC until its window resets 26 Sept 13:00 UTC)"
-  },
-  {
-   "name": "Lane B, breadth",
-   "live": 0,
-   "focus": "two first tests done at $2.57: Koehler 1944 not periodic (one-time-key shape, archive route next); cigarette case 1909 uninformative at 45 symbols; two more running (other account; idle since 24 Sept 21:53 UTC until its window resets 26 Sept 13:00 UTC)"
-  },
-  {
    "name": "Lane V4, verification",
    "live": 0,
    "focus": "every outreach gate met; three notes sent by the owner, two Bourdeau issues posted; replies come to the parent; a V5 verifier starts when a reading posts"
@@ -1926,7 +1921,7 @@
    "focus": "hall of fame view live from CITATIONS.md: one public citation (Cryptiana, 24 Sept 2026) and the pending replies list"
   }
  ],
- "headline": "25 Sept, owner account, 13:55 UTC: 17 letters (12 board entries) at N3 or better after two audits, 3 with our own key: Orange to August of Saxony 1561 (WVO 53, pure cryptanalysis), the van Beuningen 1657 key and Jan van Nassau's cipher lines of 17 Apr 1574 (WVO 5551). Linhares (our key) is held out: the new Portuguese language judge fails it narrowly and a calibration was inconclusive. Every owner-account lane is closed: the seven-day usage window is at allowed_warning until about 05:00 UTC 26 Sept, so no new workers start before then. The other account's lanes resume 26 Sept 13:00 UTC.",
+ "headline": "25 Sept 2026: the other account's day produced 13 board entries at N3 or better after two audits (17 letters), 4 with our own key; parent 7b's lanes of 24 Sept died on the weekly limit without handoffs and are being closed on the record. Usage is clear on this account: LANE R6 (Salviati and the 13 gate-passing targets), LANE V6 (judge corpus, verifiers, rolling QA) and LANE B2 (breadth) restarted at 15:39 under the lessons of 25 Sept.",
  "sidequests": [
   {
    "title": "Grants applications",
@@ -1940,7 +1935,7 @@
   {
    "title": "Momentum restart: LANE R5 and LANE N4",
    "asked": "24 Sept 2026 18:48 UTC",
-   "state": "running",
+   "state": "blocked",
    "result": "R5 (recovery): key no.60 applied mechanically to five Nevers letters, no reading (37-55% pass agreement), blocked on sign identification, not the key. N4 (nominations): 11 firm copy-free nominations; scTOMO done (2 new copy-free rows), scDIGI done (DigitArq API reverse-engineered; both Torre do Tombo codex sweeps came back false positives).",
    "next": "R5: worker G's key no.60 sign atlas from interlined leaves, then an 80% pass-agreement re-run; Salviati leaves f.55v-f.57v being bought two at a time. N4: keeps nominating copy-free targets for check-solved.",
    "link": "STATUS.md",
@@ -1949,7 +1944,7 @@
   {
    "title": "Salviati purchase f.55v-f.57v",
    "asked": "24 Sept 2026 20:16 UTC",
-   "state": "running",
+   "state": "blocked",
    "result": "Owner authorized buying the remaining Salviati leaves two at a time (Sonnet $12/leaf, box-keyed method, 80% gate). H1 (f.55r pass B) and H2 (f.55v) started 20:51-20:52; f.55r pass A and boxes already committed by worker A.",
    "next": "H1/H2 finish their passes and report a reading or a blocker; H3-H6 (f.56r, f.56v, f.57r, f.57v) follow, then the pooled code+mark run once all leaves are captured.",
    "link": "ciphers/fr2933-salviati-1525/",
@@ -1958,7 +1953,7 @@
   {
    "title": "Nevers key no.60 application, six letters",
    "asked": "24 Sept 2026 19:46 UTC",
-   "state": "running",
+   "state": "blocked",
    "result": "Key no.60 applied mechanically to five Nevers letters (fr.3985 f.88+f.176, fr.3986 f.198, fr.3987 f.66, fr.3989 f.169, fr.3990 f.27): no reading on any, pass agreement 37-55%. Blocked on sign identification (this hand vs Bourdeau's tags), not the key.",
    "next": "Worker G is building a key no.60 sign atlas from the copyist's own interlined leaves (fr.3985 c.264-268, fr.3986 f.151/152) and will re-run F1's leaves against an 80% pass-agreement gate before any more leaves are bought.",
    "link": "ciphers/fr3985-nevers-revol-1593/",
