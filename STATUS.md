@@ -164,9 +164,9 @@ Salviati and Seure with costed briefs, N4 copy-free scouts (Bourdeau's copy-free
 stops, a successor parent reads this section, the lane table,
 the last check-in prompt (list_triggers), takes over the trigger with update_trigger persistent_session_id, and continues.
 
-## LANE VX handoff (session_01EYwyYDeAaQReWy7ZuQcoxe), 25 September 2026, 11:10 UTC
+## LANE VX handoff (session_01EYwyYDeAaQReWy7ZuQcoxe), 25 September 2026, 11:08 UTC
 
-Key beside the letter, copy-free. Opened 06:32 UTC by the parent. Closed at 11:10 with every target it opened at a
+Key beside the letter, copy-free. Opened 06:32 UTC by the parent. Closed at 11:08 with every target it opened at a
 stated status; no reading passed judge + re-derivation, so no verifier ran and no AUDIT.md exists. QA 08:19 and 10:36
 passed every VX item (intake gates, 60% gates, honest judge FAILs).
 
