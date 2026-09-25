@@ -484,3 +484,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T17:45Z	session_0165uktQtXTmrEztFN5qpUD4	LANE R6 M2 (Fable, cap 15)	mercy graded reading	brief 2026-09-25-lane-r6-m2-mercy-read.md
 2026-09-25T17:53Z	session_017rxxceHwgprCiwpPHqyfyy	done	bCPH copenhagen-1835 test 1	pushed 80bba20, a431a02
 2026-09-25T17:53Z	session_01AxNo7QrGTDFfx5FzTXLJnc	done	bPOL pollaky-1865-1875 test 1	pushed 44f757e
+2026-09-25T17:52Z	session_01JgaFwLL9NQAT23xpr59ZZh	LANE B2 bWOO (Sonnet, cap 3)	te-wood-1950 test 1 running-key dictionary attack	brief 2026-09-25-lane-b2-te-wood-1950.md
+2026-09-25T17:52Z	session_01XavLajPispv8YaywQUjLWK	LANE B2 bSCO (Sonnet, cap 3)	scorpion-1991 test 1 images + single pass	brief 2026-09-25-lane-b2-scorpion-1991.md
