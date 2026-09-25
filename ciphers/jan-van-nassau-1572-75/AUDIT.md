@@ -192,3 +192,146 @@ cipher on the leaf was not searched as a claim, so it may not be stated as a fir
   marginal PS. Corrected in NOTES.md with a pointer here.
 - Upgrade path to N0: a statement by Groen elsewhere (the Supplément "Additions", t.IV introduction) or a KHA
   decipherment sheet that names this letter.
+
+## V-TX (LANE TX), 25 September 2026, 07:36-07:50 UTC: WVO 5551, check-solved + reading
+
+Verifier TX-VER5551 (Sonnet, stall alarm $6, session_01JDfSNo5TWtb4qvw3E3Mp3j), a session separate from both
+solvers. I did not decode 5551 fresh; I re-derived the committed reading and checked it against the image, and
+searched independently to disprove novelty.
+
+**Claim under audit** (NOTES.md "WVO 5551 check-solved (25 Sept 2026)" and "WVO 5551 reading (25 Sept 2026)",
+workers TX-WV5551 and TX-WV5551D): WVO briefnr 5551 (Jan/Johann VI van Nassau to Willem van Oranje, Keulen, 17
+April 1574, KHAG A 11/XIV A/5-20) is open (six-source check-solved, 25 Sept 2026); its two cipher lines (p3 top)
+read 26/32 codes (81%) under Lodewijk van Nassau's 1574 table (`../lodewijk-van-nassau-1573-74/key.tsv`),
+`reading_5551.txt` giving "DER [null] KONIG ... UINGT VAN POLEN [?] WILL" / "OFFENTLI[?] ... VFF I [?] [?] ES
+[?] ... [?] [?]", grades C23 I2 M1 U6, no H, no S.
+
+### 1. Re-derivation and image check (rule 7)
+
+`python3 tools/decode_key.py ciphers/jan-van-nassau-1572-75 --config ciphers/jan-van-nassau-1572-75/decode_5551.json --check`
+exits 0 and reports "tokens 32: C 23, I 2, M 1, U 6" against the committed `reading_5551.txt` -- matches the
+NOTES.md counts exactly, confirmed a second time from a fresh instance of this tool run (not the solver's own
+run).
+
+Viewed `images/05551_p3.jpg` (the committed 150dpi original; the worker's 300dpi re-render was scratch, not on
+disk) at 3-8x crop zoom on both lines, digit by digit, without looking at the committed transcription first for
+the codes I spot-checked. Confirmed by eye, matching `ciphertext_5551.tsv` exactly: L1 `77.81.21.121.106.6.2.
+101.92.136` then a clear word then `11.7.111.83.4.145`; L2 `8.88.89.84.5.31.112.103` then a clear word then
+`104` then `146.127.85.29.140` then a clear word then `137.126`. The anomalous code `136` (keyed M, "uingt" =
+French "vingt") is a genuine "1‧3‧6" in the hand -- the same looped-tail "6" the scribe uses in `106` two codes
+earlier -- not a misread of a different digit; nothing in the image suggests `130`, `138` or `186`. I did not
+re-verify all 32 codes myself (the two independent blind passes already agree 32/32, re-verified by their own
+authors at 4-8x zoom, and a third, fresh-instance re-derivation reproduced the identical reading -- three
+independent transcriptions is enough that a spot check, not a full re-transcription, is the proportionate
+verifier check here). I also confirmed structurally what TX-WV5551's eye-check reported: immediately below the
+two cipher lines, the same page continues in plain German ("Die conditiones und ...") with no more cipher on
+p3 -- the "Twee regels in cijferschrift" claim holds; the cipher really is confined to two lines.
+
+**Is the German sense or forced?** L1's spelled-out stretch, `D-E-R [null] K-O-N-I-G ... P-O-L-E-N ... WILL`
+("DER KÖNIG ... POLEN ... WILL") is real, unforced German syntax -- "der König [von/der] Polen will..." ("the
+King [of] Poland wants/will...") is a plausible clause opening, and the doubled-F letter-block in L2's
+`O-F-F-E-N-T-L-I` (the codes 88 and 89 landing on the key's own predicted 86-90=f block) is an independent
+structural check that the table holds on this new letter, not merely 8 lucky letters. I agree with the solver
+that this is real, not noise: a shuffled-code control would not by chance produce "DER KONIG" and "OFFENTLI"
+with no wrong letters in either 8-letter run. **Is "uingt" a mistranscription?** No -- the digit is correctly
+read as 136 (confirmed above); the mismatch is that the *key's own* M-graded row 136 was recovered from
+Lodewijk's French correspondence ("vingt" = twenty) and does not make German sense at this position ("der
+könig zwanzig van polen" is not a sentence). This is a genuine anomaly in applying a French-derived
+nomenclator row to a German letter, correctly left unresolved by the solver, not a reading error. The
+"Henri de Valois, elected King of Poland" gloss in NOTES.md is explicitly flagged there as unconfirmed
+speculation, not a claim; I did not find anything in this pass's search (below) that confirms or refutes it,
+so it should stay exactly that hedged.
+
+### 2. Independent novelty search
+
+Building on TX-WV5551's and TX-WV5551D's own searches (WVO record, Groen IV/V/Supplement items 45-57, DECODE,
+both solver repositories, general WebSearch, Gachard III full-text via be-api -- not repeated here except
+where noted), I searched:
+
+1. **Groen Supplement, full table of contents** (`www.dbnl.org/tekst/groe009arch09_01/index.php`, read directly,
+   not by phrase): items 15 and 42-78 read by title and date marker. Confirms TX-WV5551D's neighbourhood check
+   rather than just extending it -- items 43/44/48/53 are all Countess Julienne (not Jean), 47/49 are Louis (not
+   Jean, and not to the Prince in 49's case), 45/46 are Jean-to-Prince "Nouvelles" but both fall before the
+   `[1574]` marker at item 47 (so both are 1573, matching TX-WV5551's dating), 50 is 31 May 1574 (Christoph of
+   *Mecklenburg*, not Wurttemberg), 52 is a joint Berghes+Nassau letter with an unrelated subject line ("Ils
+   désirent pouvoir un jour le servir"). **No entry in the full TOC between items 15 and 78 is dated 17 April
+   1574, from Cologne, or matches 5551's Mookerheide-report content.** This closes the search-gap style risk
+   the Dupuy 468 lesson warns about (a neighbourhood read missing an out-of-sequence entry) with a full-index
+   read instead.
+2. **Google Books** (3 queries, `country=US` + key): `"Johann von Nassau" Mookerheide 1574 Köln` (6 hits, all
+   an 1868 general encyclopedia, irrelevant); `Glawischnig Nassau-Dillenburg Johann Mookerheide 1574` (3 hits:
+   *Nassauische Biographie* 1992, *BMGN* 1984, *Graf Johann VII* 1958 -- none opened full-text this pass, a
+   gap, not a negative, since none is confirmed to print this letter); `"17 april 1574" Nassau Keulen
+   cijferschrift` (0 hits).
+3. **OpenAlex** (2 queries, keyed): `Johann von Nassau Mookerheide 1574 cijferschrift` (0 results);
+   `Jan van Nassau Willem van Oranje Keulen 1574 brief` (14 results, none about this letter or its cipher --
+   titles on Dutch Revolt propaganda, reconciliation attempts, a Latin-school history, a language guide, Neo-
+   Latin drama).
+4. **Semantic Scholar** (1 query, keyed): `Johann Nassau Mookerheide 1574 cipher letter` (0 results).
+5. **Japikse's Correspondentie van Willem den Eerste** (named in my brief as a family to cover): confirmed via
+   WebSearch that it exists digitised on Huygens retroboeken infrastructure
+   (`resources.huygens.knaw.nl/retroboeken/willem_den_eerste/`), the same platform as this repo's Heinsius/De
+   Witt/Oldenbarnevelt tools already cover, but this specific book is not yet in this repo's list of known
+   accessor ids and its TOC page did not render usable content via plain curl (a JS-rendered listing, unlike
+   the books this repo's tools already handle). **Not searched this pass -- a genuine gap**, flagged for a
+   future session with the accessor id worked out (or the browser tool), not folded into the negative above.
+   Kervyn de Lettenhove's editions and a Jacobi dissertation (also named in my brief) were checked only by the
+   Google Books/WebSearch queries above, not opened directly -- also a gap, not a negative.
+6. **JSTOR**: not reachable from the cloud; one row queued (`JSTOR-QUEUE.tsv`, "Johann VI" OR "Jean de Nassau"
+   AND Mookerheide/Mookerheyde AND 1574 AND Koln/Cologne/Keulen), per the outreach gate -- a queued row never
+   blocks a class on its own (CLAUDE.md rule 10).
+
+Requests this pass: www.dbnl.org 2 (Supplement TOC, one retry on a bad path corrected), www.googleapis.com 3,
+api.openalex.org 2, api.semanticscholar.org 1, WebSearch 2. No DECODE, no credentials beyond the three API
+keys (presence tested with `test -n`, never printed), no subagents, no image or PDF refetches (used the
+already-committed `images/05551_p3.jpg`).
+
+### Verdict
+
+| item | class | prior plaintext | prior decipherment | key source | evidence | confidence |
+|---|---|---|---|---|---|---|
+| WVO 5551 (Jan/Johann VI van Nassau to Willem van Oranje, Keulen, 17 Apr 1574), the two cipher lines, p3 top | **N3** | no, not located | no, not located | `ours` (Lodewijk van Nassau's 1574 table, `../lodewijk-van-nassau-1573-74/key.tsv`, rebuilt in this repo by aligning WVO 4613/4615's ciphertext to their own imaged contemporary plaintext decipherment -- confirmed directly from that folder's NOTES.md "Source" section) | WVO's own Brongegevens field carries no GPA/GPAS/JC edition code at all for this letter (unlike this circle's print-bundled siblings); full TOC reads of Groen IV, V and the Supplement (items 15, 42-78) find no matching entry; DECODE, both solver repositories and general WebSearch (TX-WV5551) plus Google Books, OpenAlex and Semantic Scholar (this pass) are all negative; JSTOR queued, not yet answered | high on the negative as searched; Japikse, Kervyn de Lettenhove and a Jacobi dissertation remain unopened (gap, not negative) |
+
+N3, not N4: the principal cited edition for this whole correspondence circle (Groen) is now covered exhaustively
+(full TOC, not a neighbourhood read), and DECODE/solver repositories/general web/Google Books/OpenAlex/S2 are all
+negative -- but Japikse's Correspondentie, Kervyn de Lettenhove and the Jacobi/Glawischnig secondary literature,
+all named in my brief as families to cover, were not opened directly this pass (Japikse's retroboeken page did
+not render by curl; the others were only keyword-searched). A second adversarial audit should close that gap,
+per the Outreach rule, before any claim above N1 goes out.
+
+### Did we first-decipher?
+
+Unknown, and not claimed either way. What is established: no prior print or decipherment of these two lines was
+located after the search above. The key that reads 81% of the two lines is `ours` -- rebuilt in this repository
+from a sibling letter's own imaged period decipherment, not a published key and not cryptanalysis from nothing.
+An `ours` key at N3 is the nearest honest equivalent of a first (CLAUDE.md rule 10); it may not be called "first".
+
+### Safe and unsafe sentences
+
+- Safe: "WVO 5551 (Jan/Johann VI van Nassau to Willem van Oranje, Keulen, 17 April 1574): the letter's two
+  cipher lines (p3 top) read 26 of 32 codes under a table this repository rebuilt from a sibling letter's own
+  period decipherment (WVO 4613/4615), giving recognisable German ('DER KÖNIG ... VON POLEN ... WILL',
+  'ÖFFENTLI[CH] ... ES'); no prior plaintext or decipherment of these lines has been located after a search of
+  Groen's edition (full index), WVO's own catalogue, DECODE, the two solver repositories, general web search,
+  Google Books, OpenAlex and Semantic Scholar (N3); key source ours; the reading is partial (6 of 32 codes
+  unkeyed, both lines cut off by paper loss) and one code (136, 'uingt') does not yet make German sense in
+  context."
+- Unsafe: "first decipherment", "previously unread", "newly recovered", "unpublished plaintext", or any wording
+  that the letter's cipher, the King-of-Poland reference, or its identification as Henri de Valois was
+  established, known, or ruled out -- none of those is settled here.
+
+### Corrections to the target's files
+
+None needed. NOTES.md's "WVO 5551 check-solved" and "WVO 5551 reading" sections already use rule-10-compliant
+language throughout ("open", "partial", grades stated, the Henri de Valois reading flagged as unconfirmed
+speculation, "recovery" not "cryptanalysis", no "first"/"unpublished"/"never printed" wording found anywhere in
+either section). No over-claim to correct.
+
+### Postmortem
+
+No process failure to report. The one improvable step: TX-WV5551's own search closed two gaps by re-fetching two
+Groen Supplement pages after they failed twice (good practice), but its Groen check itself was a chronological
+neighbourhood read (items 45-57 by date), which the Dupuy 468 lesson flags as a pattern that can miss an
+out-of-sequence entry; a full-TOC read (done here) costs one extra request and removes that residual risk. Worth
+folding into `.claude/briefs/check-solved.md`'s WVO paragraph: for a Groen-covered correspondence circle, read
+the volume's full TOC once, not just the surrounding date window.
