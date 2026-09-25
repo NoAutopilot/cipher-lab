@@ -1346,8 +1346,8 @@ Opus subagents with lines_h crops (lines 01-21 and 22-33). The second stopped af
 finish. Both returned 200 rows, including partner rows. `corrections.tsv` (line, position as in ZX-TR349D's
 ciphertext.tsv, old, new, partner, reason, grade M) holds the **172 applied changes**. Ten rows the subagents marked `?` were
 left as they were (2/19, 3/13, 8/32, 18/18, 26/7, 27/11, 29/16, 30/18, 32/34, 33/12). The commonest changes: `4` to
-S36 about 45 times and `4` to S02 4 times; a digit merged into one code with DEL on its partner about 55 times (102 15,
-44 9, 26 9, 82 5, 104 5 and others); `S40` to S33 11 times. All 68s stayed 68: the second digit is a two-loop 8 on
+S36 45 times and `4` to S02 4 times; a digit merged into one code with DEL on its partner 51 times (102 15,
+44 9, 26 10, 104 5, 82 4 and others; one divider re-read as the 5 of 56 at 28/16); `S40` to S33 11 times. All 68s stayed 68: the second digit is a two-loop 8 on
 every instance, so it may be the writer's own form of 69. `promote_settled.py` now applies corrections.tsv, and its
 `--check` exits 0. ciphertext.tsv has 1123 rows (was 1174).
 Key-vs-gloss on ciphertext.tsv (`key_vs_gloss.py --ciphertext ciphertext.tsv [--lenient]`): **exact 544/862 = 63.1%
