@@ -23,6 +23,11 @@ N counts sign tokens. Token accuracy: a token is right when every letter it stan
       class cannot split a sign. Its ceiling (the majority letter per merged symbol) is about 88% on the control.
   CM_NOISE=p (LANE R6 CM) replaces a share p of control tokens by a type drawn at the target's frequencies; CM_TOL=p
   (LANE R6 CM2) solves with the error-tolerant anneal (tools/homophonic_anneal.py --noise), suffix _tol<p>.
+  --merge FILE [FILE ...] (LANE R7 ATF55V, 25 Sept 2026): one or more TSV files with a "kind" column; every row with
+  kind=merge and columns from_type, to_type (a code+mark string "CODE^MARKS", e.g. "H^o|1") maps from_type onto
+  to_type on every leaf's stream, before stats/control/target build anything -- a crop-verified merge decision
+  (ciphers/fr2933-salviati-1525/merges_f55v.tsv) applies codebook-wide, not just on the leaf it was found on. Rows
+  of other kinds (keep_distinct, insufficient_n) are read and ignored. Chained merges resolve to a fixed point.
 """
 import csv, json, os, random, sys, time
 from collections import Counter
@@ -60,7 +65,31 @@ LEAVES = ("f54r", "f54v")
 if "--leaves" in sys.argv:
     _i = sys.argv.index("--leaves"); _v = sys.argv[_i + 1]; del sys.argv[_i:_i + 2]
     LEAVES = LEAVES_ALL if _v == "all" else tuple(_v.split(","))
-RSUF = ("" if RESTARTS == 6 else f"_r{RESTARTS}") + (f"_tol{TOL:g}" if TOL else "") + (f"_rob{ROBUST:g}" if ROBUST else "")
+
+# --merge FILE [FILE ...] (LANE R7 ATF55V, 25 Sept 2026): see module docstring.
+MERGE_MAP = {}
+if "--merge" in sys.argv:
+    _i = sys.argv.index("--merge"); _j = _i + 1
+    while _j < len(sys.argv) and not sys.argv[_j].startswith("--"):
+        _j += 1
+    _files = sys.argv[_i + 1:_j]
+    del sys.argv[_i:_j]
+    for _f in _files:
+        for _row in csv.DictReader(open(_f), delimiter="\t"):
+            if _row.get("kind") == "merge":
+                MERGE_MAP[_row["from_type"]] = _row["to_type"]
+
+
+def resolve_merge(t):
+    """Follow MERGE_MAP to a fixed point (guards against a cycle)."""
+    seen = set()
+    while t in MERGE_MAP and t not in seen:
+        seen.add(t)
+        t = MERGE_MAP[t]
+    return t
+
+
+RSUF = ("" if RESTARTS == 6 else f"_r{RESTARTS}") + (f"_tol{TOL:g}" if TOL else "") + (f"_rob{ROBUST:g}" if ROBUST else "") + ("_merged" if MERGE_MAP else "")
 SUFFIX = "" if LEAVES == ("f54r", "f54v") else "_all" if LEAVES == LEAVES_ALL else "_" + "-".join(LEAVES)
 
 
@@ -69,10 +98,21 @@ def excluded(leaf, x):
     return leaf == "f57r" and x["line"] == "17" and float(x["pos"]) >= 15
 
 
+def apply_merge(x):
+    """MERGE_MAP is keyed on plain boxes too ('_^'), harmless since none are ever merge targets."""
+    if not MERGE_MAP or x["code"] == "_":
+        return x
+    t = resolve_merge(f"{x['code']}^{x['marks']}")
+    nc, nm = t.split("^", 1)
+    if nc != x["code"] or nm != x["marks"]:
+        x = dict(x, code=nc, marks=nm)
+    return x
+
+
 def rows(leaf=None):
     r = []
     for lf in ([leaf] if leaf else LEAVES):
-        r += [dict(x, leaf=lf) for x in csv.DictReader(open(f"{D}/../ciphertext_{lf}.tsv"), delimiter="\t")
+        r += [apply_merge(dict(x, leaf=lf)) for x in csv.DictReader(open(f"{D}/../ciphertext_{lf}.tsv"), delimiter="\t")
               if not excluded(lf, x)]
     return r
 

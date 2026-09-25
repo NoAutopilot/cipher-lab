@@ -1,0 +1,13 @@
+{
+  "note": "LANE R7 ATF55V, 25 Sept 2026: five native-resolution crops (native_g_check/) and three (native_e_check/) fetched from Gallica IIIF, ark btv1b90600674, canvas f57 (info.json width 8150 height 5560), to settle mark-vs-no-mark disputes the 1600px reference (f55v_ref1600.jpg, pct:0,0,50,100 of the same canvas) was too coarse to resolve. Scale factor from f55v_ref1600.jpg pixels to native: 4075/1600 = 2.546875 (left half of the canvas, so no x-offset). URL pattern: https://gallica.bnf.fr/iiif/ark:/12148/btv1b90600674/f57/{x},{y},{w},{h}/full/0/default.jpg. 9 requests total this session (1 info.json + 8 region fetches, one retry after a connection reset), >=2s apart, browser User-Agent per the Access playbook.",
+  "files": {
+    "native_g_check/g_bare_03_006.jpg": "region 1400,900,350,400 -- around f55v_03_006 (g^, recorded marks='' but the image shows an unrecorded '3' mark touching the sign)",
+    "native_g_check/g_bare_01_019.jpg": "region 3300,520,350,300 -- around f55v_01_019 (g^, genuinely bare)",
+    "native_g_check/g_mark1_09_019.jpg": "region 2800,2250,350,350 -- around f55v_09_019 (g^1)",
+    "native_g_check/g_mark5_16_004.jpg": "region 1350,3700,350,350 -- around f55v_16_004 (g^5)",
+    "native_g_check/g_dot_02_002.jpg": "region 1150,780,350,350 -- around f55v_02_002 (g^dot)",
+    "native_e_check/e_bare_01_015.jpg": "region 2900,550,350,350 -- around f55v_01_015 (e^, bare)",
+    "native_e_check/e_hash_05_001.jpg": "region 1100,1400,350,350 -- around f55v_05_001 (e^#)",
+    "native_e_check/e_hash_06_012.jpg": "region 2380,1600,350,350 -- around f55v_06_012 (e^#)"
+  }
+}
