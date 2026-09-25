@@ -139,3 +139,140 @@ line	pos	code	marks	action	conf	note
 5	24	_		plain	H	part of legible plain word "stretto", misread as N
 5	25	_		confirm	H	plain, "stretto" continuing
 5	26	_		plain	H	part of legible plain word "stretto" (the "tto" ending), misread as #
+6	1	_		delete	H	pure archive-stamp texture (thin gray printed circular stamp ink), no pen ink at all -- same stamp visible bottom-left of this strip
+6	2	_		delete	H	archive-stamp texture, no pen ink
+6	3	_		delete	H	archive-stamp texture, no pen ink
+6	4	_	dot	confirm	H	dot of the "i" in "mirabil...", plain
+6	5	a		plain	H	"a" of "mirabil", plain italic, misread as sign a
+6	6	_		confirm	H
+6	7	_		confirm	H
+6	8	_		confirm	H
+6	9	_		confirm	M	"me" of "mirabilme[n]te", low share but plain is correct
+6	10	#		plain	H	abbreviation flourish over "mirabilme[n]te" plus the colon after it, plain, misread as sign #
+6	11	y		plain	H	"Po" (P+o joined in one connected blob), plain cursive, misread as sign y
+6	12	v		plain	H	"v" of the "v.s." abbreviation, plain, misread as sign v (shape coincidence)
+6	13	S		plain	H	"s" of the "v.s." abbreviation, plain, misread as sign S (shape coincidence)
+6	14	_	1	confirm	H	"facci", plain (mark is an artifact of the letter's own flourish, not a real cipher mark)
+6	15	_		confirm	M
+6	16	N		plain	H	"pa" of "lopa", plain cursive, misread as sign N
+6	17	_	dot	confirm	M	"C" of "Caldamentz", plain (dot is the classifier picking up the loop of the capital)
+6	18	_		confirm	H
+6	19	_		confirm	H
+6	20	_		confirm	M
+6	21	eps		plain	H	"et" ligature (plain Italian conjunction), epsilon-shaped, misread as sign eps -- the eps/e confusable pattern named in the brief
+6	22	tee		plain	M	long-s ("f"-shaped) start of "sollecita", plain, misread as sign tee
+6	23	_		confirm	H
+6	24	_		confirm	M
+6	25	_	dot	confirm	M	period after "sollecita", plain punctuation
+6	26	S		confirm	H	isolated capital S at line end, clean match to atlas S, real cipher sign (not part of the plain run)
+7	1	_		delete	H	pure archive-stamp texture, no pen ink
+7	2	_		delete	H	archive-stamp texture (stippled rubber-stamp pattern), no pen ink
+7	3	_		delete	H	archive-stamp texture (stamp border), no pen ink
+7	4	_	dot	delete	H	archive-stamp texture (printed stamp text, reads like "...TON..."), no pen ink
+7	5	_	o|dot	delete	H	archive-stamp texture, no pen ink
+7	6	_		delete	H	archive-stamp texture, no pen ink
+7	7	S	#	confirm	H	clear "S." -- real cipher sign S; the "#" mark is really just an ordinary trailing period beside it, kept as documented
+7	8	S4		confirm	H
+7	9	y		confirm	M
+7	10	tee		confirm	H
+7	11	L		confirm	M
+7	12	w		confirm	H
+7	13	w		confirm	M
+7	14	tee		confirm	H
+7	15	o.		confirm	H
+7	16	U	1	correct	M	rounded open loop with a rightward curling tail and a digit-like mark above (reads as "1", may be two digits "14"); doesn't cleanly match any exemplar -- closest family is U; share was low (.40), flagged uncertain
+7	17	rz		confirm	H
+7	18	o.		confirm	H
+7	19	g	3	correct	H	base code g confirmed; classifier missed the clear superscript "3" mark, added here
+7	20	w		confirm	H
+7	21	Z	dot|ot	confirm	H
+7	22	lam		confirm	H
+7	23	bh		confirm	H
+7	24	e	dot|#	confirm	H
+7	25	v	#	confirm	M
+7	26	y		confirm	H
+7	27	y		confirm	H
+7	28	Z		confirm	H
+7	29	S7		confirm	H
+7	30	e	#	correct	H	clear looped-e with a # mark above, misread as L
+7	31	f	dot	confirm	M
+7	32	U		correct	H	clean U-bracket shape, misread as N despite low share (.41)
+8	1	_	1|?	delete	H	pure archive-stamp texture (same stamp as lines 6-7), no pen ink
+8	2	w		confirm	H
+8	3	bh		confirm	H
+8	4	a	~	confirm	H
+8	5	nt		confirm	M
+8	6	bh		confirm	H
+8	7	phi		confirm	H
+8	8	o.		confirm	H
+8	9	tee		confirm	H
+8	10	U		confirm	H
+8	11	g	5	confirm	H
+8	12	]	o	confirm	H
+8	13	S7		confirm	H
+8	14	#	o	confirm	H
+8	15	w		confirm	H
+8	16	]	dot|o	confirm	H
+8	17	rz		confirm	H
+8	18	a	5	confirm	H
+8	19	tee		confirm	H
+8	20	lam	5	confirm	H
+8	21	a	1	confirm	H
+8	22	]	ot	confirm	H
+8	23	y	dot	confirm	H
+8	24	U		confirm	H	clean U shape despite low share (.41)
+8	25	w		confirm	H
+8	26	bh		confirm	H
+8	27	m		confirm	H
+8	28	g	5|3	correct	M	base code g confirmed; classifier missed two superscript marks above it (read tentatively as "5" and a tick/"3"); box is tall enough to also touch the tops of the neighboring m (27) and lam (29), whose own boxes carry no marks
+8	29	lam		confirm	H
+8	30	S		confirm	H
+9	1	y		confirm	H
+9	2	bh		confirm	H
+9	3	g	7	confirm	H
+9	4	eps	5	confirm	H
+9	5	w		confirm	H
+9	6	e	+	correct	H	clear looped-e with a + mark above, misread as plain -- same e+mark pattern as line2 pos15
+9	7	lam		confirm	H
+9	8	S		delete	H	this box is just the superscript mark sitting above the lam sign at pos 7 (mis-segmented as its own glyph tagged S); no independent ink beyond that mark
+9	9	H	1|o	confirm	H
+9	10	a	1	confirm	H
+9	11	S7		confirm	H
+9	12	e	dot	confirm	H
+9	13	S7	#	confirm	H
+9	14	nt		correct	M	matches nt's cursive n-plus-cross shape; misread as plain (share .48)
+9	15	S7	#	confirm	H
+9	16	o.		correct	H	clear ring-with-dot, misread as plain despite decent share (.79)
+9	17	bh		correct	H	clear tall stem with hooked top, misread as plain despite share 1.00
+9	18	psi		correct	H	matches psi's compound epsilon+y-tail shape closely (one box, not two glyphs); misread as plain (share .42) -- the psi/y confusable family named in the brief
+9	19	e	dot|#	confirm	H
+9	20	g	dot|~	confirm	H
+9	21	eps	5	confirm	H
+9	22	S7		confirm	H
+9	23	L		confirm	M
+9	24	S7		confirm	M
+9	25	g		confirm	M	ambiguous e/g loop shape, share only .40
+9	26	#		confirm	H
+9	27	S7		confirm	H
+9	28	lam		correct	M	thin diagonal stroke matches lam better than g; small box (w=18) makes this uncertain, share was .61
+9	29	o.	~	confirm	H
+9	30	S7		confirm	M
+10	1	g		confirm	H
+10	2	a	1	confirm	H
+10	3	phi		confirm	H
+10	4	S4		confirm	H
+10	5	tee		plain	M	part of the plain aside "5." after S4 (digit/punctuation), misread as tee, share .56
+10	6	Lx		plain	M	"M.to" abbreviation (capital M + superscript "to"), plain, misread as Lx, share .61
+10	7	_		confirm	M	"mj", plain cursive, share .53
+10	8	nt		plain	M	"ha", plain cursive, misread as nt, share .74
+10	9	_		confirm	H	"quest" word blob
+10	10	e		plain	H	continuation of the plain phrase, misread as e
+10	11	_		confirm	H	tiny stray mark/serif, plain
+10	12	_	dot	confirm	M	"[e]tto", plain
+10	13	ch		plain	H	"ch" digraph of a plain word, misread as sign ch (shape coincidence)
+10	14	g		plain	H	letter of a plain word, misread as sign g
+10	15	_	dot	confirm	H
+10	16	tee		plain	M	"p" of a plain word (e.g. "pensiera"), misread as tee
+10	17	_		confirm	M
+10	18	_		confirm	H
+10	19	N		plain	H	"ra" ending of a plain word, plain cursive, misread as sign N -- same N-misread pattern as line6 pos16
