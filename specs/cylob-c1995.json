@@ -2,22 +2,53 @@
  "slug": "cylob-c1995",
  "rank": 15,
  "schmeh_top50": 50,
- "name": "Cylob cryptogram (booklet sold in a London bookshop)",
- "date": "c.1995 (per survey; not independently confirmed in the source found this pass)",
+ "name": "Cylob cryptogram (booklet found free in a London bookshop)",
+ "date": "c.1995-1996 per Cylob's (Chris Jeffs') own account, confirmed from Cipherbrain post 50; not narrowed further",
  "language_candidates": [
-  "?"
+  "none confirmed -- post 50 states the booklet contains no letters or numbers"
  ],
- "ciphertext_pending": "No transcription and no full post text found on disk. sources/schmeh/posts/ has files for every other target in this batch but none for Cylob (checked: no 50-*.txt/html). The item is post 50 of Schmeh's Top 50 list, found instead in the list's own summary page, sources/schmeh/top50-scienceblogs.txt lines 118-123: '### 50. Cylob cryptogram [https://scienceblogs.de/klausis-krypto-kolumne/2017/02/08/the-top-50-unsolved-encrypted-messages-50-the-cylob-cryptogram/] ... Number 50 is the Cylob cryptogram, a truly mysterious book.' with a thumbnail at https://scienceblogs.de/klausis-krypto-kolumne/files/2017/02/Cylob-50-bar.png. A fetch of the full post URL above (host scienceblogs.de, same host confirmed reachable 25 Sept 2026) would give the actual description and scan(s); survey row 15 additionally cites Futility Closet's April 2026 coverage as a second source, not yet located or fetched.",
- "alphabet": "24 symbols per survey row (reader 'Torsten'); unconfirmed independently this pass",
+ "primary_sources": {
+  "post": "https://scienceblogs.de/klausis-krypto-kolumne/2017/02/08/the-top-50-unsolved-encrypted-messages-50-the-cylob-cryptogram/",
+  "fetched_to": ["sources/schmeh/posts/50-cylob.html", "sources/schmeh/posts/50-cylob.txt", "sources/schmeh/posts/50-cylob-all.html", "sources/schmeh/posts/50-cylob-all.txt"],
+  "fetched_25_Sept_2026": true,
+  "german_2015_article_url": "https://scienceblogs.de/klausis-krypto-kolumne/2015/05/01/cylob-manuskript-ein-ungeloestes-raetsel/",
+  "german_2015_article_fetched": false,
+  "encrypted_books_list_entry": "00056 on Schmeh's List of Encrypted Books (linked from post 50, not fetched)",
+  "partial_transcription_url": "https://cloud.rotering-net.de/public.php?service=files&t=4d7d9aaa54244fba485ad528a82fb050",
+  "partial_transcription_note": "linked from post 50's own text ('A partial transcription of the Cylob cryptogram is available here'); host is cloud.rotering-net.de, not scienceblogs.de, so out of this brief's scope; not fetched. Natural next cheap test.",
+  "futility_closet_url": "not located this pass (survey row 15 cites Futility Closet Apr 2026 as a second source)"
+ },
+ "ciphertext_pending": "No transcription on disk. Post 50's own text: 'the Cylob cryptogram mainly consists of a sequence of rectangles containing geometrical patterns. The booklet doesn't contain any letters or numbers.' This is Schmeh's own primary-source description, not the survey's paraphrase, and it weighs against treating this as a classical alphabetic cipher at all -- closer to the gold-bar/pictogram family already judged 'not settleable' by Bourdeau. The post embeds only 11 of the claimed 20 pages (images/scans list below); the remaining 9 pages' source is unresolved.",
+ "images": {
+  "fetched": false,
+  "note": "not fetched this pass per brief (test 1 is the post fetch only; images are a later job)",
+  "embedded_in_post_50": [
+   "https://scienceblogs.de/klausis-krypto-kolumne/files/2015/05/Cylob-01-614.png",
+   "https://scienceblogs.de/klausis-krypto-kolumne/files/2015/05/Cylob-02-614.png",
+   "https://scienceblogs.de/klausis-krypto-kolumne/files/2015/05/Cylob-03-614.png",
+   "https://scienceblogs.de/klausis-krypto-kolumne/files/2015/05/Cylob-04-614.png",
+   "https://scienceblogs.de/klausis-krypto-kolumne/files/2015/05/Cylob-05-614.png",
+   "https://scienceblogs.de/klausis-krypto-kolumne/files/2015/05/Cylob-06-614.png",
+   "https://scienceblogs.de/klausis-krypto-kolumne/files/2015/05/Cylob-07-614.png",
+   "https://scienceblogs.de/klausis-krypto-kolumne/files/2015/05/Cylob-08-614.png",
+   "https://scienceblogs.de/klausis-krypto-kolumne/files/2015/05/Cylob-09-614.png",
+   "https://scienceblogs.de/klausis-krypto-kolumne/files/2015/05/Cylob-10-614.png",
+   "https://scienceblogs.de/klausis-krypto-kolumne/files/2015/05/Cylob-11-614.png"
+  ],
+  "cover_thumbnail": "https://scienceblogs.de/klausis-krypto-kolumne/files/2017/02/Cylob-50-bar.png",
+  "caveat": "post 50's text says 'the book has 20 pages' but only 11 distinct page images (numbered 01-11, reused unchanged from Schmeh's May 2015 German article on the same item) are embedded in either the paginated or the ?all=1 render of this post. Pages 12-20 are either on the un-fetched 2015 article, the un-fetched Encrypted Books list page, or genuinely not shown here -- not resolved this pass."
+ },
+ "alphabet": "unconfirmed from any primary source read this pass; the survey's '24 symbols (reader Torsten)' claim has no match anywhere in post 50's text or its 7-comment thread (no commenter named Torsten; no symbol count stated) -- do not treat it as established until traced to a primary source (candidates: the un-fetched Encrypted Books list page, or research external to the survey's cited sources)",
  "constraints": {
-  "form": "20 pages of grids, per survey row 15 (UNSOLVED-SURVEY.md); not independently confirmed from a primary source this pass since the full post was not fetched",
-  "attempted_by": "a reader named 'Torsten', per the survey row; no detail on method or outcome found",
-  "caveat": "everything in this spec beyond the top50-scienceblogs.txt excerpt above is carried over from UNSOLVED-SURVEY.md's own row and has not been independently re-verified against Schmeh's full post 50 or the Futility Closet piece this pass (no network in this brief)"
+  "form": "per post 50's own primary-source text: 'a sequence of rectangles containing geometrical patterns... doesn't contain any letters or numbers', described across (claimed) 20 pages; NOT confirmed as a fixed discrete symbol alphabet",
+  "attempted_by": "no reader named 'Torsten' found in post 50; per Schmeh's own text, 'many people have sent me comments and suggestions' over two years but 'nobody has come up with a real clue'; reader theories logged in the post's comment thread: piano/mixer-channel notation (tomtoo), computer print-statement guess (Seth), Maya glyphs (Elmar Vogt), Pokemon room-design resemblance (Jan) -- none a claimed solution",
+  "caveat": "the survey row's 'attempted_by Torsten' and '24 symbols' are not corroborated by this pass's primary-source read; flagged for correction in UNSOLVED-SURVEY.md by the orchestrator"
  },
  "cheap_tests_in_order": [
-  "1. Fetch Cipherbrain post 50 in full (the URL above) to sources/schmeh/posts/50-cylob.txt, matching the pattern used for every other post in this batch, and update this spec's ciphertext/alphabet/constraints fields from the primary source rather than the survey row's summary. Cost $1, Sonnet.",
-  "2. Once a transcription of the 20 grid pages exists, run a symbol-frequency / index-of-coincidence test against the closest-fitting language family suggested by the booklet's context (Cylob is a London-based musician; English is the default candidate absent other evidence), with a matched control of the same grid structure and symbol count. Cost $2-3.",
-  "3. Before treating this as a classical substitution cipher, check whether the 'grids' structure matches a known puzzle-book format (word-search, crossword-style grid, or a musical/game notation rather than a language cipher) -- Bourdeau's own assessment (per survey row: 'not settleable') suggests the form itself may not be a conventional cipher. Cost under $1 once transcribed."
+  "1. DONE 25 Sept 2026 (LANE B3, bCYL): fetched Cipherbrain post 50 in full to sources/schmeh/posts/50-cylob.html/.txt and 50-cylob-all.html/.txt; updated this spec from the primary source. See cheap_test_done.1.",
+  "2. Fetch the linked partial-transcription file (cloud.rotering-net.de, out of this brief's host scope) -- may already give a transcription without transcribing 20 pages from scratch. Check what format it is before committing to test 3. Cost ~$1, Sonnet.",
+  "3. Once a transcription exists (from test 2, or the 11 embedded page images if test 2 fails): before treating this as a language cipher at all, run the structural check post 50's own text now supports directly -- is this a fixed discrete alphabet with token-like repetition (a cipher), or continuously varying geometric patterns with no repeated units (a pattern/art object, per Schmeh's and Bourdeau's own read)? A symbol-frequency / IC test only makes sense if the first question comes back 'alphabet'. Cost $2-3, matched control of the same grid structure and symbol count once the design is known.",
+  "4. If test 3 finds a real alphabet: symbol-frequency / IC test against English (Cylob is a London-based musician) with a matched control, per the original test 2. Cost $2-3."
  ],
  "matched_control": "not yet run; no ciphertext on disk to test",
  "judge": {
@@ -25,9 +56,18 @@
   "letters_max": 100000,
   "control_samples": 100
  },
- "value": "low: Bourdeau assesses it as 'not settleable' by cryptanalysis per the survey row, form and even basic facts (symbol count, page count) unconfirmed from a primary source by this pass",
+ "value": "low: Bourdeau assesses it as 'not settleable' by cryptanalysis (cyphersolver TARGETS.md, top50/NOTES.md: grouped with Blitz/Untersberg as 'provenance or authenticity unresolved'); post 50's own primary-source text ('doesn't contain any letters or numbers') now independently supports that assessment rather than just carrying it over from the survey",
  "model": "Sonnet",
- "status_25_Sept_2026": "open per UNSOLVED-SURVEY.md row 15; primary source (Cipherbrain post 50) not yet fetched to this repo as of 25 Sept 2026",
- "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run goes under cheap_test_done with its control. judge block is a deliberately unconstrained placeholder (letters_min=1, letters_max=100000, no language) since neither the alphabet nor the total symbol count is confirmed from a primary source; replace entirely once cheap test 1 fetches the real post.",
- "written": "25 Sept 2026 by LANE B2 worker bSPEC (session_016UPMZ7UBvMWu2PEsWNiFyC), claude-sonnet-5"
+ "status_25_Sept_2026": "open per UNSOLVED-SURVEY.md row 15 and confirmed by this pass's minimal check-solved (Cipherbrain post 50 + 7-comment thread, both solver repos grepped, OpenAlex 0 hits, Semantic Scholar 929 hits none relevant) -- see ciphers/cylob-c1995/NOTES.md. Primary source (Cipherbrain post 50) now fetched to this repo.",
+ "cheap_test_done": {
+  "1": {
+   "date": "25 Sept 2026",
+   "worker": "LANE B3 bCYL (Sonnet, session_01VG15i7g45rvWQF6hgXCKmU)",
+   "action": "Fetched Cipherbrain post 50 (2 requests to scienceblogs.de, >=1.5s apart, browser UA, both HTTP 200: the default paginated render and the ?all=1 combined render for the full article + all 7 comments in one extra request) to sources/schmeh/posts/50-cylob.html/.txt and 50-cylob-all.html/.txt. Updated ciphertext/alphabet/constraints/images fields above from the primary source. Images (20 grid pages) not fetched: only 11 are embedded in the post at all, and the brief scopes this test to the post fetch only.",
+   "corrections_from_survey": "form is 'rectangles with geometrical patterns, no letters or numbers' not a confirmed discrete alphabet; the '24 symbols/Torsten' claim not found in this post; provenance (Dillon's Arts bookshop, later Waterstone's, central London) confirmed; new lead -- a partial-transcription link at cloud.rotering-net.de, not yet fetched (out of host scope this pass)",
+   "control": "not applicable -- a fetch, not a cryptanalytic test, per brief"
+  }
+ },
+ "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run goes under cheap_test_done with its control. judge block is still a deliberately unconstrained placeholder (letters_min=1, letters_max=100000, no language) since no alphabet or symbol count is confirmed from a primary source and the form itself may not be a language cipher (see constraints.form).",
+ "written": "25 Sept 2026 by LANE B2 worker bSPEC (session_016UPMZ7UBvMWu2PEsWNiFyC), claude-sonnet-5; updated 25 Sept 2026 by LANE B3 worker bCYL (session_01VG15i7g45rvWQF6hgXCKmU) from the fetched primary source"
 }
