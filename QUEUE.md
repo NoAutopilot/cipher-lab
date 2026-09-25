@@ -6536,3 +6536,115 @@ subagents (both allowed, neither needed for this pass).
 
 Kind: scout (this subsection files leads only; it does not promote to the board or classify novelty, per rule 10
 and the lane brief).
+
+---
+
+Worker VX-SCNA (Sonnet), Nationaal Archief round 2 in depth. Row prefix VX-N. Brief: finish `cijferschrift`
+(every result page, digitised or not), run new terms (`ontcijferd`, `ontcijfering`, `gedechiffreerd`,
+`dechiffrement`, `déchiffré`, `sleutel cijfer`, `sleutels`, `cijfers`, `in cijfer`, `chiffre`, `chiffres`,
+`cifra`), and go deep on four named follow-ups (1.01.02 Sont/Schaep items, 1.10.02 Aitzema, 3.20.66.01
+De Witt-Beijerman, 1.10.26 Dumas). Same target pattern as VX-SCEU above (undeciphered cipher beside a key, a
+sibling's decipherment, or an interlinear gloss), copy-free only for numbered rows.
+
+**Three new copy-free rows**, all found by expanding round 1's own `cijferschrift` digitised-filter results
+(4.VEL invnr 2007A/2007B, missed in round 1's page-1-only sample) and by the new terms `ontcijfering` and
+`in cijfer` (neither tried in round 1).
+
+| id | Holding / shelfmark | Date(s) | Sender -> recipient | Undeciphered material | Key or decipherment beside it | Image URL tested (full size) + leaf | Copy-free | Scout note |
+|---|---|---|---|---|---|---|---|---|
+| VX-N01 | Nationaal Archief 4.VEL (Collectie buitenlandse kaarten Leupe), invnr 2007A/2007B | 1781 | Unattributed Dutch/Surinam defence engineer (map, not a letter) | invnr 2007A, "Blad 1, cijferschrift": an entire manuscript map of the mouth of the Suriname river and Fort Zeelandia/Paramaribo, title cartouche, legend and every place-name label written in a letter-substitution cipher (eye-checked: whole sheet, not a passage) | **(ii) a full sibling decipherment on a separate sheet in the same invnr pair** -- invnr 2007B is catalogued "Blad 2, kopie, cijferschrift vertaald, 1781": the identical map, same coastline/fortress outline, redrawn with every label in plain Dutch ("Generaal Plan van Defensie van den Mond van de Rivier Suriname...1781", legend A-F, "Paramaribo", "Mangro Bosch" etc., eye-checked side by side) | `https://service.archief.nl/api/file/v1/default/daf5a571-6419-4086-9ae3-711a588a7efc` (2007A, NL-HaNA_4.VEL_2007A.jpg, 5000x3753) and `https://service.archief.nl/api/file/v1/default/222db0d8-5e8a-4023-9417-cfa290e8646f` (2007B, NL-HaNA_4.VEL_2007B.jpg, 5000x3771) | Yes (both) | A map rather than a letter, but the same "whole document in cipher + its own contemporary plain-Dutch twin" pattern as the Brochado letterbook precedent -- unusually clean because the two sheets are literally the same drawing, so every cipher label can be matched to its plain counterpart by position, not just by content. Same archief (4.VEL) also holds invnr 2039 ("Plan van het fortress Nieuw Amsterdam", "Gedeeltelijk in cijferschrift") with no decipherment sibling found in this pass -- eye-checked only via thumbnail (legend box too small to read at that size), fails this lane's gate, listed for completeness only, a cryptanalysis-lane candidate if picked up. |
+| VX-N02 | Nationaal Archief 2.01.27.05 (Hollandse Divisie bij het Ministerie van Marine en Koloniën te Parijs, 1810-1814), invnr 12 | Bundle covers Oct 1811 report + enclosures "van 20 juni 1811 tot 7 augustus 1811" + Dec 1811/Jan 1813 letters; the decipherment leaves eye-checked are undated within that span | Gouverneur-Generaal J.W. Janssens (Batavia/Java) -> the Minister (Hollandse Divisie, Paris) | Archival description: "missiven in cijfer van dezelfde aan dezelfde van 20 juni 1811 tot 7 augustus 1811 **met bijgevoegde ontcijfering**" (cipher dispatches with attached decipherment) -- a large bundle (233 scanned leaves) filed under Janssens' report of the surrender of Java to the British, 1811 | **(ii) decipherment leaves found and eye-checked in the same bundle**: leaves (scan order) 199 and 200 of 233 are full pages of a numeric nomenclator decipherment -- a 4-5-digit code number written directly above/beside its French plaintext word, in rows (e.g. "625./frigate 1128./ennemie 144./dans...", "1018./nos 574./deux 625./frigates...", ending "Fin."), reading as a naval-intelligence dispatch about enemy frigates blockading a strait, wind, a ship unable to leave port, awaiting reinforcement -- consistent with the Java-surrender context. Leaves sampled at roughly 4% coverage (9+6+4+2 of 233) elsewhere in the bundle are plain French/Dutch prose, no cipher digits -- the raw cipher-only original (numbers without the interlinear French) was not located in this pass's sampling and is likely elsewhere in the same 233-leaf bundle | `https://service.archief.nl/api/file/v1/default/9c01a739-6ed2-4229-9a7f-38c4850207ec` (leaf/scan order 200, NL-HaNA_2.01.27.05_12_0200.jpg) and `.../4229b518-9671-4ae5-a3f1-da180635d74d` (order 199) tested; full scan list (233 leaves) at `.../archief/2.01.27.05/invnr/@12` | Yes | Found via the new term `ontcijfering` (0 rows for this term elsewhere; digitised filter = 2 archiefstukken/2 archieven, the other a non-item context hit). A large bundle -- whoever transcribes this should page through all 233 leaves rather than assume 199-200 are the only decipherment pages; the description names three distinct enclosure groups (Oct 5 report, the June-Aug cipher run, Dec 1811/Jan 1813 letters) so more may be present. |
+| VX-N03 | Nationaal Archief 2.01.27.02 (Raad der Aziatische Bezittingen en Etablissementen, 1800-1806), invnr 209 | 20 Nov 1800 (Amsterdam), with a postscript/triplicate note dated 20 April 1801 | Mr. J.C. Smissaert (secretary of the Raad) -> C.J. Prediger, Raad van Indië, Batavia | Catalogued as "Minuut-secrete missive... bijgevoegde overbrenging in cijfer" (draft secret missive with an attached cipher transmission) | **(ii)/(i) hybrid, the strongest form: the SAME letter in both plain Dutch and full cipher on the same leaf** -- eye-checked scan order 2 of 5: left half of the leaf is the plain-Dutch letter dated "20 Nov. 1800" addressed "aan Prediger" and signed "Uwe... vriend"; right half of the same leaf is the identical letter re-written entirely in a symbol/character cipher (dense rows of non-alphabetic marks, not simple digits -- a symbol-substitution cipher, not a nomenclator), same line breaks roughly matching the plain text's paragraphing | `https://service.archief.nl/api/file/v1/default/a9eb3ad8-af67-41bc-b3d1-e63e3e7f0179` (scan order 2 of 5, NL-HaNA_2.01.27.02_209_0002.jpg); full item at `.../archief/2.01.27.02/invnr/@209` (5 leaves total, all eye-checked) | Yes | The best pair of this pass: a true parallel plain/cipher text (not just a decipherment written after the fact), which is the easiest case for key recovery by direct alignment, no cryptanalysis needed once transcribed. Found via the new term `in cijfer` (digitised filter = 5 archieven: 4.VEL, 1.02.04, 1.02.20, 2.01.27.05 -- all already covered above/in VX-E -- plus this one, new). Same archief (2.01.27.02) also holds invnr 317, "Stukken over het aan Elout en Van Grasveld medegegeven cijfer" (documents *about* a cipher issued to two named officials) -- not opened this pass, a companion-key lead for whoever transcribes invnr 209. |
+
+**Adds to existing rows:** none this pass (all three above are new archival units, no existing QUEUE/ciphers row
+found for 2.01.27.05, 2.01.27.02 or 4.VEL invnr 2007A/2007B by shelfmark, sender or place-name grep).
+
+**Non-copy-free leads (not numbered rows) -- the standout of this pass, and two key-only resources:**
+
+- **Nationaal Archief 3.20.66.01 (familie De Witt-Beijerman), invnr 175/182/183, studiezaal-only (confirmed:
+  item detail page's own viewer JSON gives `"scans":[]`, and the page itself says "Wilt u een verzoek doen om
+  het archiefstuk te bekijken? Stuur dan een e-mail naar info@nationaalarchief.nl").** The single strongest lead
+  of this pass despite failing the copy-free gate. The finding-aid's own item sequence: invnr 175 "aan Cornelis
+  de Witt van Johan de Witt. 1672 Maart 8" (in cijferschrift), ... invnr 182 "aan Cornelis de Witt van Johan de
+  Witt. 1672 Maart 29" (in cijferschrift), invnr **183, immediately next**, "**Oplossing van een gedeelte van het
+  cijferschrift, vermoedelijk uit den voorgaanden brief**" (solution of part of the cipher, presumably from the
+  preceding letter) -- i.e. a contemporary partial decipherment of invnr 182, filed right beside it, in the
+  papers of Johan and Cornelis de Witt from the weeks immediately before their murder in the Rampjaar (August
+  1672). Two cipher letters (175, 182) plus a named decipherment (183) of one of them, in the country's most
+  famous 17th-century political-assassination archive -- worth a copy order ahead of the other leads below.
+- **Nationaal Archief 1.10.29 (familie Fagel, 1513-1927), invnr 499 "Cijfers geheimschrift" and invnr 824
+  "'Chiffre particulier pour la correspondance écrite avec Monsieur le Prince d'Orange'" -- both digitised,
+  copy-free, both eye-checked (499: 5 leaves, a numbered nomenclator table headed "chiffre de 1807", columns by
+  letter-group with number ranges; 824: 15 leaves, same numbered-table layout, undated).** Key-only items, no
+  ciphertext letter named in either item's own catalogue entry, so neither is a row under this lane's gate (the
+  M12 pattern) -- but flagged because the Fagel family supplied the States-General's own cipher secretaries
+  ("Pieter, translateur en secretaris der cijfers van de Staten-Generaal", found via the term `cijfers`): the
+  1.01.02 Sont/Schaep cipher enclosures logged by round 1 (addressed to "griffier H. Fagel") are exactly the kind
+  of correspondence these keys could have been used for. Worth a cross-match (numbering scheme vs. the Sont/Schaep
+  and other undated Dutch diplomatic ciphertexts already on file) before a transcription pass on either.
+- **Nationaal Archief 1.02.07 (Legaties in Zweden, Pruisen, Polen en Saksen, 1674-1810)** -- context-page hit for
+  `in cijfer` ("Borch droeg... het cijfer... over"), not an item-level hit, not expanded this pass.
+- **VOC (1.04.02), `in cijfer`: 29 full-text-transcription hits inside daily journals (dagregisters), titled only
+  by date range** (e.g. "1734 feb. 28 - juni 30"), not opened -- this is the VOC's page-level OCR/transcription
+  search, not a catalogue description match, so each hit needs its own leaf read to tell cipher from routine
+  numeral use; flagged as an unexplored, potentially large vein for a dedicated VOC-focused follow-up, out of
+  this pass's budget. The generic terms `sleutels` (682 archiefstukken/10 archieven digitised) and `cijfers` (67/59)
+  were both confirmed noise-dominated by sampling (door/lock/cabinet "sleutels", statistical "cijfers") and closed
+  without a full sweep, the same call round 1 made for Gallica's "table de chiffre".
+- **`cijferschrift`, remaining studiezaal-only archieven (pages 2-4 of the 35, titles only, not individually
+  expanded beyond the four named follow-ups above and 1.13.15/1.13.20's already-logged "ontcijferd" note):**
+  1.11.01.01, 1.01.01.13, 1.01.50, 1.02.17, 1.10.102, 1.10.40, 1.10.97, 1.13.20, 2.01.01.01, 2.05.10.21,
+  2.05.14.05, 2.05.25, 2.05.44, 2.05.45, 2.05.47, 2.12.20, 2.13.91, 2.14.39, 2.21.008.69, 2.21.044, 2.21.070,
+  3.01.26, 3.22.01.01 -- titles read, mostly 19th-20th c. legation/consulate/ministry archives (routine "chiffre"
+  telegram-code references likely), 1-2 items each; 1.01.01.00/1.01.01.01 repeat the same S. de Wind
+  bibliography citation already logged by round 1 (a secondary-source mention, not a digitised item).
+  1.01.02 (Sont/Schaep, 5 items), 1.10.02 (Aitzema, 3 items) and 1.10.26 (Dumas, 1 item) individually expanded
+  and read this pass (below); none added a new row.
+
+**Named follow-ups, individually read this pass (Snel overzicht expanded for each):**
+- **1.01.02 (Staten-Generaal), 5 items** -- confirms round 1's summary exactly, no new find: the two
+  "met vertalingen" items (12561.142 casualty-list cipher, Dirck Schaep/Fagel 11 Aug 1674 enclosure) are the
+  strongest of the five but studiezaal-only; the 14 Feb 1674 Schaep letter and the Nanningh Kaiser/Veluwe items
+  carry cipher with no translation noted.
+- **1.10.02 (Aitzema), 3 items -- closes this archief, no row.** Item 45 (his own legation minute-report,
+  "eigenhandig", self-authored cipher with his own corrections) and item 1-8 (his personal diary, self-authored
+  cipher "nu en dan") are Aitzema's *own* cipher, not an intercepted/undeciphered correspondence -- outside this
+  lane's pattern by definition (he held his own key). Item 47-51 (letters from his uncle Foppe, "verscheidene...
+  zijn in cijferschrift") has no key/decipherment named. No row.
+- **1.10.26 (Dumas), 1 item -- closes this archief, no row.** Invnr 104, "Sleutel of voorbeeld van cijferschrift"
+  ("Uit inventaris Dumas n°. XI") -- a standalone key, no ciphertext letter identified in the same hit; the
+  M12 pattern again. Not digitised. Dumas (Franklin/American-Revolution-era cipher user) is worth a dedicated
+  within-archive sweep for a matching ciphertext, out of this pass's scope.
+- **3.20.66.01 (De Witt-Beijerman) -- see the standout lead above.**
+
+**New-term totals (digitised-filter count / total count, `-` = filter had no matches so total taken plain):**
+`ontcijferd` 0/26 (13 archieven; not expanded, budget spent on `ontcijfering`'s stronger hit instead).
+`ontcijfering` 2/2 (one context hit, one real item = VX-N02). `gedechiffreerd` 0/0. `dechiffrement` 0/0.
+`déchiffré` 0/0. `sleutel cijfer` -- click failed (0 digitised), total not re-checked (budget). `sleutels`
+682/not counted (noise, see above). `cijfers` 67/not counted (mostly noise; the one Fagel hit followed up).
+`in cijfer` 5 digitised archieven/69 total (39 archieven) -- VX-N03 plus four already-covered archives.
+`chiffre` 1/1 (Fagel invnr 824, followed up above). `chiffres` 0 digitised/2 total (not expanded).
+`cifra` 0/0.
+
+**Drop-check.** Grepped QUEUE.md, CATALOG.md, LANDSCAPE.md, every `ciphers/*/NOTES.md`, `sources/wvo/NOTES.md`,
+`sources/huygens/NOTES.md` for every shelfmark and distinctive name above (4.VEL, 2007A, 2007B, 2.01.27.05,
+2.01.27.02, Janssens, Hollandse Divisie, Smissaert, Prediger, Elout, Van Grasveld, 3.20.66.01, De Witt-Beijerman,
+Cornelis de Witt, 1.10.29, Fagel, Chiffre particulier, Dumas 1.10.26): no collisions except the two already-known
+targets this pass explicitly did not touch (roell-vandedem-1809 / toegang 1.02.20, and toegang 1.02.04/3.01.14,
+per the job brief). No live ROOM.md claim (last 6 hours) on any of these shelfmarks by another lane or account.
+
+**Per-host request counts:** `www.nationaalarchief.nl` ~40 (curl x2 confirming round 1's finding that the plain
+search URL never renders results without JS, then `tools/browser_fetch.js`, all >=1.5s apart; several spent on
+xpath-selector debugging for the "Snel overzicht" expand buttons and three calls that errored without saving
+when a 0-digitised-result term left no facet checkbox to click, retried without `--click`). `service.archief.nl`
+**37** -- over this job's own 30-request guidance (2007A/2007B/2039 full-size + thumbnail/full-size sampling of
+the 233-leaf 2.01.27.05 bundle at roughly 4% coverage across three rounds + Fagel 499/824 + the 2.01.27.02 invnr
+209 five-leaf item), all HTTP 200, none of it against the ≤1.5s pacing floor -- flagged here rather than hidden,
+no 429/403/challenge seen at any point, but the lane orchestrator should know the cap was exceeded by content-
+verification image fetches (each new row needed its cipher leaf actually seen, not just its catalogue
+description trusted) rather than by search traffic. No WebSearch, no DECODE, no credentials. No subagents (both
+allowed, neither needed for this pass -- the drop-check greps and image eye-checks were fast enough to do
+directly).
+
+Kind: scout (this subsection files leads only; it does not promote to the board or classify novelty, per rule 10
+and the lane brief).
