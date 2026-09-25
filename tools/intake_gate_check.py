@@ -34,20 +34,30 @@ Two further fixes (25 Sept 2026, LANE CX handoff via STATUS.md):
    antt-msliv0638-brochado-1712's "NO_PAGES/no-preview, so unreadable page-by-page" line, which
    must keep passing -- that edition *was* read, through a different route, this pass).
 
+Third fix (25 Sept 2026, QA/2026-09-25-1740.md failure 2): the verdict regex knew only
+`open|partial|blocked|found-solved`, so a NOTES.md whose status word is `solved`,
+`closed-negative` or `offline-only` (CLAUDE.md rule 5's status vocabulary, ungated by the
+intake-gate rule -- that rule only speaks to `open`) fell through to "no verdict word found"
+and exited 1 as ambiguous (antt-fcc-costacabral-1865, status `solved` since 17:03 that day).
+`solved`, `closed-negative` and `offline-only` are now recognised terminal verdicts, exiting 0
+labelled with their own word and gated for citation evidence exactly like `blocked` -- the
+intake gate has nothing to say about a target that is no longer in play.
+
 Usage:
   tools/intake_gate_check.py <target>
     <target> is either a path (ciphers/<name>) or a bare target name under ciphers/.
 
-Exit 0: the verdict word found in NOTES.md is `blocked` (already compliant, nothing to gate),
-  or it is `open`, `partial` or `found-solved` and the same NOTES.md names a standard edition
-  together with a page number or a full-text-search phrase within a few lines of the verdict
-  word, with no nearby phrase saying that (or another) named edition was not actually read.
+Exit 0: the verdict word found in NOTES.md is `blocked`, `solved`, `closed-negative` or
+  `offline-only` (already terminal, nothing to gate), or it is `open`, `partial` or
+  `found-solved` and the same NOTES.md names a standard edition together with a page number or
+  a full-text-search phrase within a few lines of the verdict word, with no nearby phrase saying
+  that (or another) named edition was not actually read.
 Exit 1: the verdict is `open`, `partial` or `found-solved` with no such citation nearby, or
   `open`/`partial` with a citation but also a nearby phrase (`unread`, `not read`, `could not
   open`, `paywalled`) saying a named edition was not read -- CLAUDE.md's Pipeline intake gate
-  says either shape must read `blocked` instead -- or no open/partial/blocked/found-solved
-  verdict word was found at all. Either way this errs toward blocked: an ambiguous NOTES.md is
-  not treated as a pass.
+  says either shape must read `blocked` instead -- or no recognised verdict word (open, partial,
+  blocked, found-solved, solved, closed-negative, offline-only) was found at all. Either way this
+  errs toward blocked: an ambiguous NOTES.md is not treated as a pass.
 
 This checks the citation is present near the verdict word; it does not itself verify the
 citation is real or that the edition was genuinely read (that is still the check-solved
@@ -63,9 +73,15 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # A verdict line, after stripping markdown list/heading markers, starts with the bare word
 # (CLAUDE.md rule 5's status vocabulary) followed by a non-word character or end of line.
-# `partial` and `found-solved` are gated like `open` (25 Sept 2026); every other status word
-# (solved, closed-negative, offline-only) is untouched.
-VERDICT_RE = re.compile(r'^[\s\-*>#]*\b(open|partial|blocked|found-solved)\b', re.IGNORECASE)
+# `partial` and `found-solved` are gated like `open` (25 Sept 2026); `solved`, `closed-negative`
+# and `offline-only` are terminal like `blocked` -- no citation needed (25 Sept 2026, this fix).
+VERDICT_RE = re.compile(
+    r'^[\s\-*>#]*\b(open|partial|blocked|found-solved|solved|closed-negative|offline-only)\b',
+    re.IGNORECASE,
+)
+
+# Verdicts that need no citation evidence: already compliant/terminal, nothing to gate.
+TERMINAL_WORDS = ("blocked", "solved", "closed-negative", "offline-only")
 
 CONTEXT_LINES = 6  # how many lines after the verdict line count as "nearby"
 
@@ -94,13 +110,14 @@ NEGATIVE_RE = re.compile(
 def find_verdict(lines):
     """Return (word, line_index) for the effective verdict line, or (None, None).
 
-    Scans top-down for the first open/partial/blocked line. If that line reads `open` or
-    `partial` but a `blocked` line follows within CONTEXT_LINES, `blocked` is the effective
-    verdict, whatever word came first -- this is the exact shape of antt-linhares-chave/NOTES.md
-    (`partial` on line 1, then "blocked (pending ...) ... this verdict is corrected from `open`
-    to `blocked`" starting two lines later): CLAUDE.md's own intake-gate wording is "is `blocked`,
-    whatever word it uses", so a nearby correction to blocked always wins over the stale word
-    before it, exactly as it did before `partial` was added to VERDICT_RE (25 Sept 2026).
+    Scans top-down for the first recognised verdict line (open, partial, blocked, found-solved,
+    solved, closed-negative, offline-only). If that line reads anything but `blocked` and a
+    `blocked` line follows within CONTEXT_LINES, `blocked` is the effective verdict, whatever
+    word came first -- this is the exact shape of antt-linhares-chave/NOTES.md (`partial` on
+    line 1, then "blocked (pending ...) ... this verdict is corrected from `open` to `blocked`"
+    starting two lines later): CLAUDE.md's own intake-gate wording is "is `blocked`, whatever
+    word it uses", so a nearby correction to blocked always wins over the stale word before it,
+    exactly as it did before `partial` was added to VERDICT_RE (25 Sept 2026).
     """
     for i, line in enumerate(lines):
         m = VERDICT_RE.match(line)
@@ -150,9 +167,12 @@ def check(notes_text):
     lines = notes_text.splitlines()
     word, idx = find_verdict(lines)
     if word is None:
-        return 1, "no open/partial/blocked/found-solved verdict word found in NOTES.md -- ambiguous, treat as blocked"
-    if word == "blocked":
-        return 0, f"blocked (line {idx + 1}) -- already compliant, nothing to gate"
+        return 1, (
+            "no open/partial/blocked/found-solved/solved/closed-negative/offline-only verdict "
+            "word found in NOTES.md -- ambiguous, treat as blocked"
+        )
+    if word in TERMINAL_WORDS:
+        return 0, f"{word} (line {idx + 1}) -- already terminal, nothing to gate"
     # word in ("open", "partial", "found-solved") -- gated identically for citation presence
     context = nearby_context(lines, idx)
     if word != "found-solved":

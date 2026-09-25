@@ -17,6 +17,14 @@ a real citation is also present nearby -- fr4687-paleologue-nevers before its co
 real-repo shape (a genuine full-text-search citation for one edition, alongside "Ferrari 1999 ... is
 paywalled" for another). The word-boundary match must not fire on antt-msliv0638-brochado-1712's
 "unreadable page-by-page" (that edition was read a different way this pass, and must keep passing).
+
+Also covers a third fix (25 Sept 2026, QA/2026-09-25-1740.md failure 2): `solved`, `closed-negative`
+and `offline-only` are now recognised terminal verdicts, exiting 0 labelled with their own word and
+needing no citation -- antt-fcc-costacabral-1865 (`solved` since 17:03) and thurloe-barriere-1654
+(`closed-negative` since 17:18, ahead of a stale `open` correction lower in the file) are the real-repo
+cases that used to exit 1 (or resolve to the wrong stale word) before this fix. A synthetic case pins
+that a verdict word appearing only inside prose, never as a line's leading word, still leaves a file
+ambiguous.
 Run: python3 tools/tests/test_intake_gate_check.py"""
 import os
 import sys
@@ -42,8 +50,11 @@ def check_real(target, expect_code, expect_word_in_message):
 # antt-linhares-chave: corrected to `blocked` after the Linhares breach -- must read blocked, exit 0
 check_real("antt-linhares-chave", 0, "blocked")
 
-# two open verdicts naming a standard edition with pages, or a full-text search -- must pass, exit 0
-check_real("thurloe-barriere-1654", 0, "open")
+# thurloe-barriere-1654's current top-of-file status word is `closed-negative` (set 25 Sept 2026
+# 17:18 UTC, after the `open` correction below it) -- terminal, exit 0, needs no citation. Before
+# this fix `closed-negative` was unrecognised, so find_verdict fell through to the stale `open`
+# correction lower in the file; this is the exact real-repo case of the bug this fix targets.
+check_real("thurloe-barriere-1654", 0, "closed-negative")
 check_real("colbert26-lathuillerie-1644", 0, "open")
 
 # two real-repo `partial` verdicts with a citation right on the verdict line -- must pass, exit 0
@@ -174,12 +185,53 @@ ok = code == 0
 fails += not ok
 print(("PASS" if ok else "FAIL"), "synthetic open-not-read-cover-to-cover", f"-> code={code} message={message!r}")
 
+# real repo: antt-fcc-costacabral-1865, status `solved` since 25 Sept 2026 17:03 -- the exact
+# case QA/2026-09-25-1740.md failure 2 found exiting 1 as ambiguous before this fix.
+check_real("antt-fcc-costacabral-1865", 0, "solved")
+
+# synthetic: `solved` needs no citation nearby -- must pass, exit 0, labelled solved
+SYNTH_SOLVED_NO_CITATION = "solved\n\nNo edition or page named anywhere near this line.\n"
+code, message = gate.check(SYNTH_SOLVED_NO_CITATION)
+ok = code == 0 and "solved" in message
+fails += not ok
+print(("PASS" if ok else "FAIL"), "synthetic solved-no-citation", f"-> code={code} message={message!r}")
+
+# synthetic: `closed-negative` needs no citation nearby -- must pass, exit 0, labelled closed-negative
+SYNTH_CLOSED_NEGATIVE_NO_CITATION = "closed-negative\n\nNo edition or page named anywhere near this line.\n"
+code, message = gate.check(SYNTH_CLOSED_NEGATIVE_NO_CITATION)
+ok = code == 0 and "closed-negative" in message
+fails += not ok
+print(("PASS" if ok else "FAIL"), "synthetic closed-negative-no-citation", f"-> code={code} message={message!r}")
+
+# synthetic: `offline-only` needs no citation nearby -- must pass, exit 0, labelled offline-only
+SYNTH_OFFLINE_ONLY_NO_CITATION = "offline-only\n\nNo edition or page named anywhere near this line.\n"
+code, message = gate.check(SYNTH_OFFLINE_ONLY_NO_CITATION)
+ok = code == 0 and "offline-only" in message
+fails += not ok
+print(("PASS" if ok else "FAIL"), "synthetic offline-only-no-citation", f"-> code={code} message={message!r}")
+
+# synthetic: the only occurrence of a recognised verdict word sits inside prose, not as a line's
+# leading word -- must still be ambiguous, exit 1, not mistaken for a real verdict.
+SYNTH_VERDICT_WORD_IN_PROSE = (
+    "# A target with no leading verdict line\n\n"
+    "This letter was solved by the sender's own gloss, but that word never leads a line here, "
+    "and the target is not closed-negative or offline-only either -- just prose mentioning those "
+    "words in passing.\n"
+)
+code, message = gate.check(SYNTH_VERDICT_WORD_IN_PROSE)
+ok = code == 1
+fails += not ok
+print(("PASS" if ok else "FAIL"), "synthetic verdict-word-in-prose-only", f"-> code={code} message={message!r}")
+
 if fails:
     print(f"{fails} failure(s)")
     sys.exit(1)
 print("ok: intake_gate_check reads antt-linhares-chave and fr4687-paleologue-nevers as blocked, "
-      "thurloe-barriere-1654 and colbert26-lathuillerie-1644 as compliant open verdicts, "
-      "clair349-este-guise-1556 and antt-msliv0638-brochado-1712 as compliant partial verdicts, "
-      "gates found-solved for citation presence like open/partial, and errs toward blocked on the "
-      "no-citation, far-citation, no-verdict-word and unread/not-read/could-not-open/paywalled "
-      "synthetic cases (without tripping on the 'unreadable' substring)")
+      "thurloe-barriere-1654 as a terminal closed-negative and colbert26-lathuillerie-1644 as a "
+      "compliant open verdict, clair349-este-guise-1556 and antt-msliv0638-brochado-1712 as "
+      "compliant partial verdicts, gates found-solved for citation presence like open/partial, "
+      "treats solved/closed-negative/offline-only as terminal verdicts needing no citation "
+      "(antt-fcc-costacabral-1865 real-repo case), and errs toward blocked on the no-citation, "
+      "far-citation, no-verdict-word, verdict-word-in-prose-only and "
+      "unread/not-read/could-not-open/paywalled synthetic cases (without tripping on the "
+      "'unreadable' substring)")
