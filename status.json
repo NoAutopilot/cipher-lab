@@ -1,5 +1,5 @@
 {
- "updated": "25 Sep 2026, 18:28 UTC",
+ "updated": "25 Sep 2026, 19:08 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -2161,17 +2161,10 @@
   },
   {
    "target": "mccormick-1999",
-   "title": "McCormick notes: above English, vowel-dropped and shuffled controls on IC and n-gram cover",
-   "next": "spec test 2 against the same three controls",
+   "title": "McCormick notes: masc excluded (test 2, controls 0.994/0.985, target FAIL on English and vowel-dropped English); still above every control on IC and n-gram cover",
+   "next": "homophonic family through family_run.py with the same controls (B3, $3)",
    "lane": "B2",
-   "touched": "25 Sept 2026 18:30"
-  },
-  {
-   "target": "pollaky-1865-1875",
-   "title": "Pollaky ads 3-4: IC inside the English control range",
-   "next": "second pass, then masc and columnar families through family_run.py",
-   "lane": "B2",
-   "touched": "25 Sept 2026 18:30"
+   "touched": "25 Sept 2026 19:08"
   },
   {
    "target": "antt-msliv0638-brochado-1712",
