@@ -1,5 +1,13 @@
 open
 
+Groen van Prinsterer, *Archives ou correspondance inedite de la Maison d'Orange-Nassau*, 1e serie t.III
+(Leide, S. et J. Luchtmans, 1836; archive.org `archivesoucorre04housgoog`, confirmed by its own title page
+"TOME III. 1567-1572", 136 letters pp.1-137) read by this worker via its own table of contents (pp.
+xci-xcvi, the 1567 section, Lettres CCLIII-CCLXXXIX) and a full-text search of its `_djvu.txt` (Grumbach,
+Gotha, Cassel, Hessen, Landgrave -- control hit confirmed: "No CCLXIXs" at the letter already on file as
+briefnr 174/Lettre CCLXIX, pp.54-57) -- no letter from the Landgrave to the Prince dated 28 Jan 1567, or
+naming the Grumbach affair, found; absent.
+
 # Willem van Hessen to Willem van Oranje, partly unsolved cipher, 28 January 1567
 
 QUEUE row: NB3 (`QUEUE.md`, "Dutch and Belgian archives (LANE N scout of 24 September 2026)").
@@ -271,3 +279,79 @@ Hosts this pass: resources.huygens.knaw.nl 2 requests (1 PDF re-fetch of `01069.
 400dpi since the committed 200dpi PNGs were too coarse for glyph-level work; 1 record-page fetch for item 5),
 both curl, browser-contact UA, >=1.5s apart. No other host. 2 Sonnet subagents (the two blind passes on p2
 line 1), well under the $6 stall-alarm cap even after both ran to completion.
+
+## YX-CSHES, 25 September 2026: formal check-solved sweep (intake gate)
+
+Brief: `.claude/briefs/runs/2026-09-25-lane-yx-cshes.md`, against `.claude/briefs/check-solved.md`. This target
+had never had a check-solved verdict against that brief's six-source form (the OX passes above establish
+provenance and siblings, not a check-solved sweep); `tools/intake_gate_check.py willem-van-hessen-1567` before
+this pass: exit 1, "`open` (line 1) with no standard-edition citation... within 6 lines". This pass runs the
+sweep directly (Sonnet, no Workflow tool, no subagents) and writes the compliant sentence above.
+
+1. **Groen van Prinsterer, 1e serie t.III (1567-1572).** As the sentence above: fetched
+   `archivesoucorre04housgoog_djvu.txt` (archive.org; its own Google-Books-scan identifier is not tome-ordered
+   -- confirmed the actual tome by reading each candidate's own title page/"TOME n." line before use, see the
+   identifiers ruled out below, since `archivesoucorre03housgoog` is in fact Tome IV, not III). Read the
+   volume's own table of contents (1567 section, pp. i-xcvi of the front matter,
+   Lettres CCLIII-CCLXXXIX): the letters near 28 Jan 1567 (CCLIII p.1, CCLIV p.7, CCLV p.9, CCLVI p.10, CCLVII
+   p.13, dated 7-8 Jan 1567) are Prince-to-Landgrave, Schwartz-to-Prince and Nuenar-to-Jean de Nassau, not
+   Landgrave-to-Prince; the next Landgrave-to-Prince letter in the TOC (CCLXXVIII, p.107, "il lui envoie un
+   ouvrage de Melanchthon") is dated well after 9 Apr 1567 (CCLXIX, briefnr 174, pp.54-57). Full-text search
+   for "Grumbach" (1 hit, an editorial footnote to a different letter, Schwartz on the Duke of Saxony, 8 Jan),
+   "Gotha", "Cassel"/"Kassel" (8 hits, none on a Landgrave-to-Prince letter of Jan 1567), "1567" (51 hits, none
+   at "28 janvier"/"28e de Janvier" for a Kassel dateline -- the one 28 Jan hit found, Lettre CCLIX p.18, is
+   dated "De Bruxelle, le 28 de Janvier 1567" and is about Valenciennes, apparently to the Prince, unrelated).
+   Control hit confirmed: "No CCLXIXs" (OCR for "No. CCLXIX.") at the letter already on file (briefnr 174).
+   Verdict: **absent from this volume.**
+   Ruled out first by checking each one's own title page (not tome-ordered by archive.org identifier):
+   `archivesoucorre03housgoog`=Tome IV (1572-1574), `archivesoucorre02housgoog`=Tome II, `archivesoucorre00housgoog`
+   =Tome I, `archivesoucorre01housgoog`=Tome VI, `archivesoucorre05housgoog`=Tome II (second copy),
+   `archivesoucorre06housgoog`=Tome I (second copy), `archivesoucorre07housgoog`=Tome III (second copy of the
+   volume actually used, not fetched, redundant).
+2. **Gachard, Correspondance de Guillaume le Taciturne, t.II-III.** `correspondancede02will` (1850, its own
+   text: "derniers mois de 1566 et au commencement de 1567", the right period) fetched and full-text searched:
+   "Hesse"/"landgrave" hits are all in the editorial introduction, about Philip I "the Magnanimous" (William
+   IV's late father) and the 1560 marriage negotiation, not a 1567 letter; "Cassel"/"Kassel", "28 janvier": 0
+   hits. `correspondancede03will` (1850) fetched: covers 1568-1577 (its own text: "au commencement de 1568"),
+   out of range, 0 hits for "1567" at all -- confirms t.III does not reach back to Jan 1567. Verdict:
+   **absent from t.II; t.III out of the letter's date range.**
+3. **Kluckhohn/Menzel (Hessen's letters, if printed).** WebSearch found no dedicated printed edition of
+   Wilhelm IV of Hesse-Kassel's own political correspondence; his letters are described (by Deutsche
+   Biographie and related pages) as scattered across Groen (above), Kluckhohn's *Briefe Friedrich's des
+   Frommen* (Elector Palatine Frederick III, not Hesse's own edition) and von Bezold's *Briefe des
+   Pfalzgrafen Johann Casimir*. Fetched Kluckhohn's volume (`bub_gb_oHmkQnY39ZcC_djvu.txt`, confirmed by its
+   own text "Friedrich des Frommen" as the right/only Kluckhohn volume found) and full-text searched: "28.
+   Januar 1567"/"Januar 28 1567": 0 hits; "Grumbach" (1 hit, a different letter's subject line) and "Gotha"
+   (8 hits, all Frederick III's own correspondence about the siege, none a Landgrave-to-Orange letter of Jan
+   1567). Verdict: **absent**, and no Hesse-specific printed edition exists to check further.
+4. **WVO's own notes.** Covered exhaustively above (OX-WVH, OX-WV69): Opmerkingen states the original's cipher
+   is "onopgelost" (unsolved); no "editie" row for 1127 itself.
+5. **Cipherbrain / community lists.** WebSearch (`"Willem van Hessen" 1567 cipher decipherment Grumbach Gotha
+   letter cryptiana OR cipherbrain`) returned the Grumbach Feud's own Wikipedia article and Cipherbrain's
+   general presence, nothing naming this letter, its cipher or a solution. `sources/cryptiana/web/dutch.htm`
+   was already read in full by the 24 Sept check-solved pass (no mention); not re-read this pass.
+6. **DECODE listing.** `sources/decode/records-non-decrypted-2026-09-24.tsv`,
+   `records-non-decrypted-2026-09-24-diff.tsv` and `records-decrypted-2026-09-24.tsv` grepped for "hessen",
+   "kassel", "1127", "huisarchief.*a.*11", "willem.*oranje": the numeric "1127" hits are an unrelated Modena
+   item (DECODE's own record numbering, not WVO's); no KHA A11/XIV B or Willem van Hessen 1567 record in any
+   of the three cached listings. Not re-crawled live this pass (the cached snapshot is one day old and is a
+   full non-decrypted+partially-decrypted+decrypted dump, not a per-target query that could be stale in a way
+   that matters here). Verdict: **absent.**
+7. **Both solver repositories.** Fresh `git clone --depth 1` of both (25 Sept 2026) and
+   `grep -ril "hessen\|1127\|kassel"`: cyphersolver's only "Hesse" hit is `hesse1603/` (Henri IV to Landgrave
+   *Maurice* of Hesse-Kassel, 1603 -- confirmed by reading its NOTES.md header, a different Landgrave, sender
+   and century) and every "1127" hit is a DECODE record id in an unrelated target (`jantini1517/t1127.txt`,
+   `caprile1519/decode/rec1127.htm`), confirmed by reading each file's content. unsolved-ciphers has zero
+   filename or content hits at all for "hessen"/"1127"/"kassel". Verdict: **absent from both.**
+
+**Verdict: open**, unchanged. No standard edition, community list, DECODE record or solver repository names
+this letter, its cipher or a decipherment; WVO's own curators independently confirm the cipher is unsolved.
+The letter is genuinely absent from the seven sources above (all directly read/grepped by this worker, not
+quoted from another source's summary), not merely unfound by a shallow pass. Intake gate:
+`tools/intake_gate_check.py willem-van-hessen-1567` now exits 0 (verified after writing this section).
+
+Hosts this pass: archive.org 11 requests (metadata x2 + 9 `_djvu.txt` fetches: 03/02/00/01/04/05/06/07housgoog,
+correspondancede02will, correspondancede03will -- all curl, `-A "cipher-lab research script (contact via
+repository)"`, >=1.5s apart, all HTTP 200 after following the one redirect each needed `-L` for). No other
+network host (WebSearch used for the Kluckhohn/Menzel and Cipherbrain items, not counted against the
+good-citizen per-host budget). No subagents.
