@@ -404,3 +404,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T15:39Z	session_018MWpKL71WnBxA8k4ejVkBS	LANE R6 orchestrator (Opus, cap 80)	Salviati leaves + code+mark; YX's 13 gate-passing targets	brief 2026-09-25-lane-r6-orchestrator.md + lanes-7b-COMMON
 2026-09-25T15:39Z	session_01V2BHwhVh1k72qSYuBFCyGd	LANE V6 orchestrator (Opus, cap 50)	pt 1780-1830 judge corpus + Linhares; Charles-Digby verifier; readings; rolling QA	brief 2026-09-25-lane-v6-orchestrator.md
 2026-09-25T15:39Z	session_01NS12APP1R55K6TGZrBbP97	LANE B2 orchestrator (Opus, cap 25)	breadth: first cheap tests, next tests, ten more specs	brief 2026-09-25-lane-b2-orchestrator.md
+2026-09-25T15:43Z	session_01VpqAcYQpYgyJQ5FGmP3wBp	LANE B2 bHAR2 (Sonnet, cap 3)	harry-caroline-1863 cheap test 1 MASC + control	brief 2026-09-25-lane-b2-harry-caroline-1863.md
+2026-09-25T15:43Z	session_013mFADMi7WyV1rEVzUMNnir	LANE B2 bLIM2 (Sonnet, cap 3)	lima-1916 cheap test 1 commercial-code grep + control	brief 2026-09-25-lane-b2-lima-1916.md
