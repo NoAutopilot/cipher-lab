@@ -427,7 +427,7 @@ Getting the material is most of the work. Try routes in this order and record wh
    Google Books: the API answers unauthenticated requests with HTTP 429 after a few dozen calls. The person
    has set GOOGLE_BOOKS_KEY in the environment (20 Sept 2026): append `&key=$GOOGLE_BOOKS_KEY` to every
    `www.googleapis.com/books/v1/volumes` call. Full-text hits still need the volume to be full view; use
-   `filter=full` and read pages through the volume's `accessInfo` links. Never print the key.
+   `filter=full` and read pages through the volume's `accessInfo` links. Never print the key. **Cloud fix (25 Sept 2026, 22:55 UTC, parent probe):** from this container the keyed call returns HTTP 403 `unknownLocation` ("Cannot determine user location for geographically restricted operation"); adding `&country=US` to the same call clears it (full-view search and `searchInfo.textSnippet` on PARTIAL volumes both answered). Every Google Books API call from the cloud carries `country=US`; a `NO_PAGES` verdict recorded before this date without it is not a test.
    **OpenAlex and Semantic Scholar keys (24 Sept 2026).** OpenAlex retired its mailto "polite pool" in February 2026
    and meters a daily credit budget per caller; keyless callers are counted per IP, and every cloud session shares one
    egress IP, which is why all of them saw 429 on 24 Sept 2026. The person has set `OPENALEX_KEY` (a free key from
