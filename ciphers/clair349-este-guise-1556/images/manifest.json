@@ -1,90 +1,97 @@
 {
-  "ark_clair349": "ark:/12148/btv1b9000668z",
-  "ark_fr20974": "ark:/12148/btv1b9062131g",
-  "source": "Gallica IIIF, BnF Clairambault 349 (ciphertext) and BnF fr.20974 (key)",
-  "note": "Manuscript foliation 'f.3' (per catalogue and Tomokiyo's guise.htm) corresponds to Gallica canvas f9 in btv1b9000668z (no folio labels in that manifest; offset taken from Tomokiyo's own deep link, confirmed by independent fetch, 24 Sept 2026). fr.20974's manifest also carries no folio/page labels (all 'NP'); this worker (25 Sept 2026) calibrated Gallica canvas -> printed page number by fetching page-number-corner crops of canvases 25 (p.47) and 29 (p.55) -- a clean +2-pages-per-canvas fit -- then confirmed by eye that canvas 30 (p.57) and canvas 37 (p.69) show the two key tables Tomokiyo's guise.htm crops (guise/BnFfr20974f57.png, f69.png) are cropped from. Canvas 31 (also p.57) duplicates canvas 30's content almost exactly -- likely a second scan pass of the same leaf, not a distinct page; canvas 32 (p.59) is blank on both sides.",
-  "files": [
-    {
-      "file": "f9_thumb.jpg",
-      "canvas": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9000668z/canvas/f9",
-      "image_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9000668z/f9/full/,400/0/native.jpg",
-      "manuscript_folio": "f.3 (per catalogue)",
-      "fetched": "2026-09-24T03:37Z",
-      "content": "Low-res thumbnail, superseded by clair349_f9_native.jpg below."
-    },
-    {
-      "file": "clair349_f9_native.jpg",
-      "canvas": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9000668z/canvas/f9",
-      "image_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9000668z/f9/full/,900/0/native.jpg",
-      "manuscript_folio": "f.3 (per catalogue); dated '4. janvier 1556' (old-style; = 4 Jan. 1557 new-style) in a contemporary hand top-left of the right page, matching Tomokiyo's citation exactly",
-      "fetched": "2026-09-25T11:30Z",
-      "content": "Two-leaf spread. Right page: THE ciphertext letter -- dense arbitrary-symbol/figure groups, no visible word spacing, approx. 33 lines by eye-count (not transcribed), BnF ownership stamp and archival numbers '2429'/'3' in the margin. Left page: continuous plain French cursive (the reply or a covering/docket text, not cipher)."
-    },
-    {
-      "file": "clair349_f9_right_full.jpg",
-      "canvas": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9000668z/canvas/f9",
-      "image_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9000668z/f9/pct:50,0,50,100/full/0/native.jpg",
-      "manuscript_folio": "f.3, right page only, full native resolution (3895x6604) for a future transcription pass",
-      "fetched": "2026-09-25T11:30Z",
-      "content": "Same ciphertext page as clair349_f9_native.jpg, cropped to the right leaf only at full native resolution (not downscaled to 900px)."
-    },
-    {
-      "file": "clair349_f8_native.jpg",
-      "canvas": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9000668z/canvas/f8",
-      "image_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9000668z/f8/full/,700/0/native.jpg",
-      "manuscript_folio": "preceding leaf",
-      "fetched": "2026-09-25T11:30Z",
-      "content": "NO cipher. Unrelated prior material headed 'Henry 2. Grisons' (Swiss/Grey Leagues affairs), plain French, with marginal date references to 1550/1554 -- a different document, not part of this letter."
-    },
-    {
-      "file": "clair349_f10_native.jpg",
-      "canvas": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9000668z/canvas/f10",
-      "image_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9000668z/f10/full/,700/0/native.jpg",
-      "manuscript_folio": "following leaf (f.4 per visible folio mark)",
-      "fetched": "2026-09-25T11:30Z",
-      "content": "NO cipher. Left page continues the plain-French docket/reply text from f9's left page; right page blank (faint watermark, small pencil '11' only). The letter's ciphertext does not continue past f9 -- confined to one page."
-    },
-    {
-      "file": "fr20974_p57_key.jpg",
-      "canvas": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9062131g/canvas/f30",
-      "image_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9062131g/f30/full/,600/0/native.jpg",
-      "manuscript_page": "p.57 (this worker's own calibration, see manifest note; matches Tomokiyo's guise/BnFfr20974f57.png crop)",
-      "fetched": "2026-09-25T11:30Z",
-      "content": "600px-wide thumbnail, superseded by fr20974_p57_native.jpg below (this file's 'Nomenclator'/4-column and pasted-slip description below was wrong -- see the native entry's correction, YX-TR349 25 Sept 2026)."
-    },
-    {
-      "file": "fr20974_p57_native.jpg",
-      "canvas": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9062131g/canvas/f30",
-      "image_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9062131g/f30/full/full/0/native.jpg",
-      "manuscript_page": "p.57",
-      "fetched": "2026-09-25T12:20Z",
-      "content": "Full native resolution (7463x5964 before rotation) of the same leaf as fr20974_p57_key.jpg, fetched by YX-TR349 because the ,600px version was not legible enough for symbol-level transcription. Right page carries, top to bottom: a substitution alphabet (A-Z plus a tironian-et sign, each with 1-3 numeric homophone codes, some struck through), a row headed 'Doubles' (digraph codes) with a short 'Nulles' column to its right, a row headed 'Monosillabes' (short French words with numeric codes) continuing across two more unheaded rows of words+codes below. Left page (facing verso): a vertical list of French words/phrases each paired with one symbol or short code. CORRECTION to this worker's own earlier same-session read of the 600px version: there is no separate 'Nomenclator' table and no pasted slip on this leaf -- that description matches p.69 below, which turned out (at native res) to carry the *same* Alphabet/Doubles/Monosillabes template as p.57, not a distinct 4-column nomenclator; the 'Nomenclator'/slip wording in the prior fr20974_p69_key.jpg manifest entry was also wrong, superseded below."
-    },
-    {
-      "file": "fr20974_p69_key.jpg",
-      "canvas": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9062131g/canvas/f37",
-      "image_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9062131g/f37/full/,600/0/native.jpg",
-      "manuscript_page": "p.69 (this worker's own calibration, see manifest note; matches Tomokiyo's guise/BnFfr20974f69.png crop)",
-      "fetched": "2026-09-25T11:30Z",
-      "content": "600px-wide thumbnail, superseded by fr20974_p69_native.jpg below. Its 'second, denser nomenclator table in 4 columns... pasted slip' description was wrong (YX-TR349, 25 Sept 2026): re-read at native resolution, this leaf carries the same Alphabet/Doubles/Monosillabes template as p.57, not a distinct 4-column table, and no pasted slip is visible."
-    },
-    {
-      "file": "fr20974_p69_native.jpg",
-      "canvas": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9062131g/canvas/f37",
-      "image_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9062131g/f37/full/full/0/native.jpg",
-      "manuscript_page": "p.69",
-      "fetched": "2026-09-25T12:20Z",
-      "content": "Full native resolution (7451x5958 before rotation), fetched by YX-TR349 for the same legibility reason as p57_native. Same template as p.57 (Alphabet / Doubles+Nulles / Monosillabes x2 rows / word row, plus a facing-page word list) -- this is a second correspondent-specific key sharing fr.20974's standard chancery layout, not a different kind of table. Spot check: the 'Doubles' numeric codes read the same on both leaves (22.18.66.69.76.106.52.56.54.58.9), consistent with the doubles/nulls portion of the template being fixed across the book's keys while the alphabet and word list are per-correspondent -- not yet confirmed against a third key in this book."
-    },
-    {
-      "file": "lines/line01.jpg .. lines/line33.jpg",
-      "source": "derived from clair349_f9_right_full.jpg via tools/iiif_lines.py --image clair349_f9_right_full.jpg --overlap 0 --debug (prefix f9right), 25 Sept 2026 (YX-TR349B)",
-      "content": "The 33 real ciphertext lines of f.3 right page, one stitched image per line (line01=top..line33=bottom). iiif_lines.py detected 37 bands total (centres 568,1316,1444,1792,1922,...,5612,5781,6402); checked each against the debug overlay before use: band 1 (centre 568) is blank upper margin, band 2 (centre 1316) is blank, band 3 (centre 1444) is the \"4. januier 1556\" date/seal/archival-mark line (not cipher), bands 4-36 (centres 1792..5781, 33 bands) are the real cipher text lines = line01..line33 here, band 37 (centre 6402) is blank lower margin. This corrects the prior handoff note (YX-TR349) that treated the raw 37-band count as ~33 lines by eye-count coincidence without checking which bands were spurious -- the true mapping is offset by 3 at the top and 1 at the bottom, not a uniform eye-count match. Each line image is the two iiif_lines.py segments (s1 full width [0,2400), s2 right-anchored [1495,3895)) re-stitched with the 905px duplicate region trimmed from s1 before concatenation (s1 cropped to [0,1495), then s2 appended), so no token appears twice. The intermediate raw f9right_L*_s1/s2.jpg segment crops and the debug overlay were deleted after this check to stay under the 30MB folder cap; regenerate with the exact command above if needed (deterministic from clair349_f9_right_full.jpg, already on disk)."
-    },
-    {
-      "file": "atlas/xq_crops/, atlas/sign_crops/, atlas/xq_sheet.jpg, atlas/sign_sheet.jpg",
-      "source": "derived from images/lines/*.jpg via xq_sample.py (ZX-349B, 25 Sept 2026), python3 xq_sample.py {xq|sign} --seed 42 --n 40",
-      "content": "40 X?-token crops and 40 matched-atlas-sign-token crops, fixed seed 42, sampled from the pooled passC.tsv+passD.tsv (593 X? tokens, 570 S0x tokens). No per-token pixel bounding boxes exist for this ciphertext (unlike dupuy452-carpi-1520/glyphs/classified.tsv's real x,y,w,h) -- each crop's window is a PROPORTIONAL ESTIMATE (token position / that pass's token count for the line, times line width), generous but approximate; xq_index.tsv/sign_index.tsv record the estimate window and the pass's own note text for every sampled token so a mis-centred crop can still be judged from the description. Several crops in xq_sheet.jpg/sign_sheet.jpg landed on blank margin or the page's dark binding edge because of this imprecision (documented in NOTES.md ZX-349B, not corrected this pass)."
-    }
-  ]
+ "ark_clair349": "ark:/12148/btv1b9000668z",
+ "ark_fr20974": "ark:/12148/btv1b9062131g",
+ "source": "Gallica IIIF, BnF Clairambault 349 (ciphertext) and BnF fr.20974 (key)",
+ "note": "Manuscript foliation 'f.3' (per catalogue and Tomokiyo's guise.htm) corresponds to Gallica canvas f9 in btv1b9000668z (no folio labels in that manifest; offset taken from Tomokiyo's own deep link, confirmed by independent fetch, 24 Sept 2026). fr.20974's manifest also carries no folio/page labels (all 'NP'); this worker (25 Sept 2026) calibrated Gallica canvas -> printed page number by fetching page-number-corner crops of canvases 25 (p.47) and 29 (p.55) -- a clean +2-pages-per-canvas fit -- then confirmed by eye that canvas 30 (p.57) and canvas 37 (p.69) show the two key tables Tomokiyo's guise.htm crops (guise/BnFfr20974f57.png, f69.png) are cropped from. Canvas 31 (also p.57) duplicates canvas 30's content almost exactly -- likely a second scan pass of the same leaf, not a distinct page; canvas 32 (p.59) is blank on both sides.",
+ "files": [
+  {
+   "file": "f9_thumb.jpg",
+   "canvas": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9000668z/canvas/f9",
+   "image_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9000668z/f9/full/,400/0/native.jpg",
+   "manuscript_folio": "f.3 (per catalogue)",
+   "fetched": "2026-09-24T03:37Z",
+   "content": "Low-res thumbnail, superseded by clair349_f9_native.jpg below."
+  },
+  {
+   "file": "clair349_f9_native.jpg",
+   "canvas": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9000668z/canvas/f9",
+   "image_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9000668z/f9/full/,900/0/native.jpg",
+   "manuscript_folio": "f.3 (per catalogue); dated '4. janvier 1556' (old-style; = 4 Jan. 1557 new-style) in a contemporary hand top-left of the right page, matching Tomokiyo's citation exactly",
+   "fetched": "2026-09-25T11:30Z",
+   "content": "Two-leaf spread. Right page: THE ciphertext letter -- dense arbitrary-symbol/figure groups, no visible word spacing, approx. 33 lines by eye-count (not transcribed), BnF ownership stamp and archival numbers '2429'/'3' in the margin. Left page: continuous plain French cursive (the reply or a covering/docket text, not cipher)."
+  },
+  {
+   "file": "clair349_f9_right_full.jpg",
+   "canvas": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9000668z/canvas/f9",
+   "image_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9000668z/f9/pct:50,0,50,100/full/0/native.jpg",
+   "manuscript_folio": "f.3, right page only, full native resolution (3895x6604) for a future transcription pass",
+   "fetched": "2026-09-25T11:30Z",
+   "content": "Same ciphertext page as clair349_f9_native.jpg, cropped to the right leaf only at full native resolution (not downscaled to 900px)."
+  },
+  {
+   "file": "clair349_f8_native.jpg",
+   "canvas": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9000668z/canvas/f8",
+   "image_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9000668z/f8/full/,700/0/native.jpg",
+   "manuscript_folio": "preceding leaf",
+   "fetched": "2026-09-25T11:30Z",
+   "content": "NO cipher. Unrelated prior material headed 'Henry 2. Grisons' (Swiss/Grey Leagues affairs), plain French, with marginal date references to 1550/1554 -- a different document, not part of this letter."
+  },
+  {
+   "file": "clair349_f10_native.jpg",
+   "canvas": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9000668z/canvas/f10",
+   "image_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9000668z/f10/full/,700/0/native.jpg",
+   "manuscript_folio": "following leaf (f.4 per visible folio mark)",
+   "fetched": "2026-09-25T11:30Z",
+   "content": "NO cipher. Left page continues the plain-French docket/reply text from f9's left page; right page blank (faint watermark, small pencil '11' only). The letter's ciphertext does not continue past f9 -- confined to one page."
+  },
+  {
+   "file": "fr20974_p57_key.jpg",
+   "canvas": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9062131g/canvas/f30",
+   "image_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9062131g/f30/full/,600/0/native.jpg",
+   "manuscript_page": "p.57 (this worker's own calibration, see manifest note; matches Tomokiyo's guise/BnFfr20974f57.png crop)",
+   "fetched": "2026-09-25T11:30Z",
+   "content": "600px-wide thumbnail, superseded by fr20974_p57_native.jpg below (this file's 'Nomenclator'/4-column and pasted-slip description below was wrong -- see the native entry's correction, YX-TR349 25 Sept 2026)."
+  },
+  {
+   "file": "fr20974_p57_native.jpg",
+   "canvas": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9062131g/canvas/f30",
+   "image_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9062131g/f30/full/full/0/native.jpg",
+   "manuscript_page": "p.57",
+   "fetched": "2026-09-25T12:20Z",
+   "content": "Full native resolution (7463x5964 before rotation) of the same leaf as fr20974_p57_key.jpg, fetched by YX-TR349 because the ,600px version was not legible enough for symbol-level transcription. Right page carries, top to bottom: a substitution alphabet (A-Z plus a tironian-et sign, each with 1-3 numeric homophone codes, some struck through), a row headed 'Doubles' (digraph codes) with a short 'Nulles' column to its right, a row headed 'Monosillabes' (short French words with numeric codes) continuing across two more unheaded rows of words+codes below. Left page (facing verso): a vertical list of French words/phrases each paired with one symbol or short code. CORRECTION to this worker's own earlier same-session read of the 600px version: there is no separate 'Nomenclator' table and no pasted slip on this leaf -- that description matches p.69 below, which turned out (at native res) to carry the *same* Alphabet/Doubles/Monosillabes template as p.57, not a distinct 4-column nomenclator; the 'Nomenclator'/slip wording in the prior fr20974_p69_key.jpg manifest entry was also wrong, superseded below."
+  },
+  {
+   "file": "fr20974_p69_key.jpg",
+   "canvas": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9062131g/canvas/f37",
+   "image_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9062131g/f37/full/,600/0/native.jpg",
+   "manuscript_page": "p.69 (this worker's own calibration, see manifest note; matches Tomokiyo's guise/BnFfr20974f69.png crop)",
+   "fetched": "2026-09-25T11:30Z",
+   "content": "600px-wide thumbnail, superseded by fr20974_p69_native.jpg below. Its 'second, denser nomenclator table in 4 columns... pasted slip' description was wrong (YX-TR349, 25 Sept 2026): re-read at native resolution, this leaf carries the same Alphabet/Doubles/Monosillabes template as p.57, not a distinct 4-column table, and no pasted slip is visible."
+  },
+  {
+   "file": "fr20974_p69_native.jpg",
+   "canvas": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9062131g/canvas/f37",
+   "image_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9062131g/f37/full/full/0/native.jpg",
+   "manuscript_page": "p.69",
+   "fetched": "2026-09-25T12:20Z",
+   "content": "Full native resolution (7451x5958 before rotation), fetched by YX-TR349 for the same legibility reason as p57_native. Same template as p.57 (Alphabet / Doubles+Nulles / Monosillabes x2 rows / word row, plus a facing-page word list) -- this is a second correspondent-specific key sharing fr.20974's standard chancery layout, not a different kind of table. Spot check: the 'Doubles' numeric codes read the same on both leaves (22.18.66.69.76.106.52.56.54.58.9), consistent with the doubles/nulls portion of the template being fixed across the book's keys while the alphabet and word list are per-correspondent -- not yet confirmed against a third key in this book."
+  },
+  {
+   "file": "lines/line01.jpg .. lines/line33.jpg",
+   "source": "derived from clair349_f9_right_full.jpg via tools/iiif_lines.py --image clair349_f9_right_full.jpg --overlap 0 --debug (prefix f9right), 25 Sept 2026 (YX-TR349B)",
+   "content": "The 33 real ciphertext lines of f.3 right page, one stitched image per line (line01=top..line33=bottom). iiif_lines.py detected 37 bands total (centres 568,1316,1444,1792,1922,...,5612,5781,6402); checked each against the debug overlay before use: band 1 (centre 568) is blank upper margin, band 2 (centre 1316) is blank, band 3 (centre 1444) is the \"4. januier 1556\" date/seal/archival-mark line (not cipher), bands 4-36 (centres 1792..5781, 33 bands) are the real cipher text lines = line01..line33 here, band 37 (centre 6402) is blank lower margin. This corrects the prior handoff note (YX-TR349) that treated the raw 37-band count as ~33 lines by eye-count coincidence without checking which bands were spurious -- the true mapping is offset by 3 at the top and 1 at the bottom, not a uniform eye-count match. Each line image is the two iiif_lines.py segments (s1 full width [0,2400), s2 right-anchored [1495,3895)) re-stitched with the 905px duplicate region trimmed from s1 before concatenation (s1 cropped to [0,1495), then s2 appended), so no token appears twice. The intermediate raw f9right_L*_s1/s2.jpg segment crops and the debug overlay were deleted after this check to stay under the 30MB folder cap; regenerate with the exact command above if needed (deterministic from clair349_f9_right_full.jpg, already on disk)."
+  },
+  {
+   "file": "atlas/xq_crops/, atlas/sign_crops/, atlas/xq_sheet.jpg, atlas/sign_sheet.jpg",
+   "source": "derived from images/lines/*.jpg via xq_sample.py (ZX-349B, 25 Sept 2026), python3 xq_sample.py {xq|sign} --seed 42 --n 40",
+   "content": "40 X?-token crops and 40 matched-atlas-sign-token crops, fixed seed 42, sampled from the pooled passC.tsv+passD.tsv (593 X? tokens, 570 S0x tokens). No per-token pixel bounding boxes exist for this ciphertext (unlike dupuy452-carpi-1520/glyphs/classified.tsv's real x,y,w,h) -- each crop's window is a PROPORTIONAL ESTIMATE (token position / that pass's token count for the line, times line width), generous but approximate; xq_index.tsv/sign_index.tsv record the estimate window and the pass's own note text for every sampled token so a mis-centred crop can still be judged from the description. Several crops in xq_sheet.jpg/sign_sheet.jpg landed on blank margin or the page's dark binding edge because of this imprecision (documented in NOTES.md ZX-349B, not corrected this pass)."
+  },
+  {
+   "file": "lines_g/line01.jpg .. lines_g/line33.jpg",
+   "source": "derived from clair349_f9_right_full.jpg via tools/iiif_lines.py --image clair349_f9_right_full.jpg --overlap 0 --top-margin 45 --prefix f9right --debug --out <tmp> (25 Sept 2026, ZX-TR349C), reproducing the SAME 37-band detection as the old images/lines (centres 568,1316,1444,1792,1922,...,5781,6402 -- bit-identical to YX-TR349B run, confirmed by rerun), bands 4-36 = line01..line33 (unchanged mapping). --top-margin 45 (new CLI option added to tools/iiif_lines.py this session, per transcription.md: add an option to the shared tool rather than write a private crop script) subtracts 45px from each band TOP edge only (clamped to 0), pulling in the whitespace/interlinear-gloss zone above each code line that the un-margined images/lines crops cut into; the BOTTOM edge of every band is unchanged from images/lines. Segments and stitching exactly as images/lines: s1 [0,2400) cropped to [0,1495), s2 [1495,3895) appended, 905px duplicate region trimmed, no token appears twice. Regenerate deterministically with the command above (clair349_f9_right_full.jpg already on disk) plus the stitch step (ad hoc, documented in NOTES.md ZX-TR349C, not committed as a script).",
+   "content": "Same 33 real ciphertext lines as images/lines, recut with 45px more top margin per line to include the small interlinear gloss hand sitting just above each code line (identified by ZX-KEY349). Eye-checked at line01 (first), line17 (middle), line33 (last): each line's own gloss is fully visible, not clipped at the top edge; a thin sliver (tight-pitch lines) to most (loosest-pitch lines) of the PREVIOUS line's own bottom row is also visible at the top of some crops as a side effect of the fixed-pixel margin against a variable line pitch (83-225px measured) -- intentional overlap, not a segmentation error, and the current line's own row is always the larger/lower row in the crop.",
+   "superseded": "images/lines/ (33 files, no gloss margin) DELETED this session to stay under the 30MB folder cap (was 35.4MB with both; 31.1MB with lines_g alone) -- nothing on disk depends on its path (checked: only NOTES.md prose and this manifest referenced it), and it is bit-for-bit reproducible from clair349_f9_right_full.jpg with the command in entry 9 (--top-margin 0, i.e. omitted) if ever needed again.",
+   "date": "2026-09-25T17:41Z"
+  }
+ ]
 }

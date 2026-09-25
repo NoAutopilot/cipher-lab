@@ -3,7 +3,7 @@
 
   python3 tools/iiif_lines.py (URL | --ark ARK --canvas N | --image FILE) --out ciphers/<target>/images
           [--region x,y,w,h] [--columns x0:x1] [--prefix f69] [--distance PX] [--prominence N] [--ink 170]
-          [--smooth 1] [--lines-per-crop 1] [--max-width 2400] [--overlap 150] [--debug] [--dry-run]
+          [--smooth 1] [--lines-per-crop 1] [--max-width 2400] [--overlap 150] [--top-margin PX] [--debug] [--dry-run]
   URL: an IIIF image URL (any form: service base, info.json, or a full .../region/size/rotation/quality.jpg).
   Needs numpy and Pillow (pip install numpy pillow); no scipy.
 
@@ -171,6 +171,9 @@ def main(argv=None):
     ap.add_argument('--ink', type=int, default=170); ap.add_argument('--smooth', type=int, default=1)
     ap.add_argument('--lines-per-crop', type=int, default=1)
     ap.add_argument('--max-width', type=int, default=2400); ap.add_argument('--overlap', type=int, default=150)
+    ap.add_argument('--top-margin', type=int, default=0,
+                     help='extra px included above each band\'s top edge (e.g. to capture an interlinear gloss '
+                          'sitting just above the line); the bottom edge is unchanged, clamped to 0')
     ap.add_argument('--quality', type=int, default=85, help='JPEG quality of the crops')
     ap.add_argument('--debug', action='store_true'); ap.add_argument('--dry-run', action='store_true')
     a = ap.parse_args(argv)
@@ -196,6 +199,8 @@ def main(argv=None):
     x0, x1 = (map(int, a.columns.split(':')) if a.columns else (0, im.width))
     centres, params = detect(gray, x0, x1, a.ink, a.smooth, a.distance, a.prominence)
     bb = bands(centres, im.height, a.lines_per_crop)
+    if a.top_margin:
+        bb = [(max(0, top - a.top_margin), bot, nl) for top, bot, nl in bb]
     segs = segments(x0, x1, a.max_width, a.overlap)
     print(f'{src} ({how}): region {im.width}x{im.height}, {len(centres)} lines, {len(bb)} bands x {len(segs)} segments; '
           f"pitch {params['pitch_autocorr']} distance {params['distance']} prominence {params['prominence']}")

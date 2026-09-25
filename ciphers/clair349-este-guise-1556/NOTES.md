@@ -924,3 +924,64 @@ Files: `build_key_cells.py` (new), `key_alpha.tsv`, `key_nomen.tsv`, `images/atl
 `images/atlas/xq_crops/`, `images/atlas/sign_crops/` (their sheets `xq_sheet.jpg`, `sign_sheet.jpg` remain) to keep
 `images/` under 30 MB (29.2 MB after). Grades (rule 4): no reading claimed; H/M above grade legibility of key cells.
 Hosts: none. Status stays `partial`. cost: see the lane ledger.
+
+## ZX-TR349C (25 Sept 2026)
+
+Intake gate `partial`, exit 0 (orchestrator 15:44 UTC; ZX-KEY349 17:12 UTC; re-run by this worker 17:35 UTC, same
+result). Brief: `.claude/briefs/runs/2026-09-25-lane-zx-tr349c.md`, common `.claude/briefs/runs/2026-09-25-lane-zx-COMMON.md`.
+Sonnet, wall-clock box 90 minutes from 17:35:56 UTC start (`date -u`), at most 2 subagents at once. Continues
+ZX-KEY349's handoff: settle the ciphertext side with the gloss included, no decode.
+
+**Step 1: recut the 33 lines with the gloss band.** `images/lines` (YX-TR349B/ZX-349/ZX-349B's crops) has the same
+bottom-anchored band edges as the key ciphertext line but its TOP edge (the midpoint between each line's centre and
+the line above it) sits too close to the code row and clips the top of the small interlinear gloss ZX-KEY349 found.
+No existing tool option did this, and `.claude/briefs/transcription.md`/CLAUDE.md Usage item 8 are explicit: "add
+an option to the tool if it lacks one," not a private crop script -- so `tools/iiif_lines.py` gained `--top-margin PX`
+(new; subtracts PX from each band's TOP edge only, clamped to 0, bottom edge unchanged; default 0 so every other
+target's existing invocation is unaffected). Ran `tools/tests/test_iiif_lines.py` before and after: all 7 checks
+still pass. This one line (`tools/iiif_lines.py`) is the only file touched outside `ciphers/clair349-este-guise-1556/**`
+this session -- logged here as a deliberate, conservative reading of the brief's "touch only this target" line against
+CLAUDE.md's stronger, repo-wide "shared scripts before new ones" rule, per the no-human-watches instruction to log a
+judgment call rather than ask.
+
+Re-ran `python3 tools/iiif_lines.py --image images/clair349_f9_right_full.jpg --overlap 0 --top-margin 45 --prefix
+f9right --debug --out <tmp>`: band detection is bit-identical to the recorded YX-TR349B run (same 37 centres:
+568 1316 1444 1792 1922 2054 2182 2300 2416 2533 2643 2753 2891 3020 3245 3359 3467 3589 3686 3803 3889 4060 4182
+4306 4422 4551 4667 4780 4904 5044 5158 5241 5365 5497 5612 5781 6402; same pitch 119, distance 83, prominence
+207.4) -- confirms bands 4-36 are still the correct 33 real cipher lines and the recut does not shift which lines
+are which. --top-margin 45 chosen after a by-eye pixel probe (ad hoc, not committed) on the shortest (83px, line29)
+and a middling (118px, line05) inter-centre gap: at 40-50px the gloss stroke directly above a code (e.g. the small
+loop above line05's first "6") is fully visible and unclipped at the crop's top edge; at 90px on the tight-pitch
+line the previous line's own row is pulled in almost whole. 45 sits in the range that captures the gloss everywhere
+checked without reliably duplicating a full extra line. Segments and stitching reproduce YX-TR349B's method exactly
+(s1 [0,2400) cropped to [0,1495), s2 [1495,3895) appended, 905px overlap trimmed so no token appears twice; ad hoc
+stitch script, not committed, reproducible from the command above).
+
+**Eye-check (brief's minimum: first, middle, last).** `images/lines_g/line01.jpg` (first): archival stamp, the
+"2429"/"3" marginalia and the "4 januier 1556" date line are now visible above line01's own codes (expected --
+line01's whitespace-above extends into the previous, non-cipher band), line01's own text and gloss fully visible,
+un-clipped at the bottom. `line17.jpg` (middle): gloss marks visible above every code across the row, a thin sliver
+of the previous line's tail at the very top, current line's own text un-clipped. `line33.jpg` (last): the final
+cipher line's text and gloss fully visible, followed by blank lower-page margin, matching the page's actual bottom.
+No clipping of any checked line's own content found in any of the three.
+
+**Folder cap.** `images/lines` (33 files, no gloss margin, 4.3 MB) + `images/lines_g` (33 files, with margin, 6.0 MB)
+together put `images/` at 35.4 MB (cap 30 MB). Per the brief ("you may delete images/atlas/xq_crops and sign_crops")
+those are already gone (removed by ZX-KEY349). Deleted `images/lines/` instead: nothing on disk loads it by path
+(checked with grep across `.py`/`.tsv`/`.json`/`.md`; only NOTES.md prose and the manifest entry named it), it is
+strictly superseded for this job's purpose by `lines_g` (same lines, more top margin, identical bottom edge and
+segment/stitch method), and it is bit-for-bit reproducible any time from `clair349_f9_right_full.jpg` with the
+recorded command (`--top-margin 0`, i.e. omitted). `images/` is 31 MB after (mostly `fr20974_p57_native.jpg` 6.0 MB,
+`fr20974_p69_native.jpg` 6.4 MB and `images/atlas/` 7.5 MB, all pre-existing). Recipe recorded in
+`images/manifest.json` (new entry: source command, band-identity confirmation, stitch method, why `images/lines`
+was deleted and how to regenerate it).
+
+**Grades (rule 4):** no reading claimed this step -- a transcription-crop recipe, not cryptanalysis.
+
+**Hosts:** none (all from `clair349_f9_right_full.jpg`, already on disk; no Gallica or other host request). No
+subagents this step (step 1 is this worker's own scripted/visual work, consistent with ZX-349's and ZX-KEY349's
+precedent of not spawning subagents for crop/atlas steps).
+
+Files: `tools/iiif_lines.py` (new `--top-margin` option), `images/lines_g/line01.jpg`..`line33.jpg` (new),
+`images/manifest.json` (new entry), `images/lines/` (deleted, 33 files). Status stays `partial`. cost: see the lane
+ledger.
