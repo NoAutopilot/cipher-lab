@@ -1,0 +1,149 @@
+line	pos	code	marks	action	conf	note
+1	1	bh		correct	M	recrop: tall stem + small hooked loop upper-mid + tail to dot matches bh exemplars far better than y's closed-loop tail; y-cluster dist here (4.412) was the highest of any y-call on this leaf; h/bh-adjacent judgment call
+1	2	ch		confirm	H	recrop: clean match; this exact box is itself one of the atlas's own ch exemplars
+1	3	_		plain	M	plain cursive stretch (reads '...lo Truono...'); classifier itself low-share _ (0.60)
+1	4	_		confirm	H	part of same plain-cursive stretch as pos3, classifier share 1.00
+1	5	_		confirm	H	part of same plain-cursive stretch, classifier share 1.00
+1	6	_		confirm	H	part of same plain-cursive stretch, classifier share 1.00
+1	7	_		confirm	H	recrop shows plain cursive '...ruo...' (part of 'Truono'), classifier share 1.00 despite w-cluster proximity
+1	8	_		correct	M	recrop shows plain cursive continuing ('...ouo...'), not a w sign; classifier's own w-guess was only 0.80
+1	9	_		confirm	M	recrop shows plain cursive tail ('Af/Nf'-like), classifier share 0.81
+1	10	dl		correct	M	recrop shows a clear closed-loop + tilde-tail shape (dl), not g; classifier's g guess had share 0.59/dist 6.162 (poor fit). Box also contains a separate '+' sign immediately to its right -- see split row 10.5
+1	10.5	+		correct	M	split: box f56v_01_010 contains two signs, a dl (this row's pos10) and a separate '+' cross to its right; recrop shows them as clearly distinct strokes with a gap between
+1	11	psi		confirm	M	confusable psi/y checked via tight recrop: clear V-fork at top + straight, unclosed tail = psi, not y (y would close into a loop at the bottom, as seen at pos1/pos13-area bh and at true y's elsewhere on this leaf)
+1	12	nt		confirm	H	clean n+cross shape, share 1.00
+1	13	bh		confirm	H	clean stem+hooked-loop+tail, dist 1.465 (tight fit), share 1.00
+1	14	a	5	correct	M	recrop shows bold cursive 'a' with a clear s/5-hook mark above (mark_desc '5'); classifier's own _ guess was low-share (0.80) and this sits in an unbroken cipher run between bh(13) and tee(16)
+1	15	a	5	correct	M	same a+5 pattern as pos14 (identical composition), corrected from low-share _ (0.80)
+1	16	tee		confirm	H	clean vertical-stroke-with-right-bar shape, share 1.00
+1	17	lam		confirm	H	clean Λ shape, share 1.00
+1	18	S		confirm	H	clean S/5-squiggle, share 1.00
+1	19	Z	dot|ot	confirm	H	clean Z shape, share 1.00, confusable Z/L checked -- no L-like right-angle present
+1	20	g		confirm	H	clean 9-loop shape, share 1.00
+1	21	lam	7	confirm	H	clean Λ shape with 7-mark, share 1.00
+1	22	rz		confirm	H	clean low wavy 'lying-z' shape with ~ mark, share 1.00
+1	23	g		confirm	H	clean 9-loop shape, share 1.00
+1	24	a	5	correct	M	recrop shows the same S/5-hook-above-bold-a pattern as pos14/15, not plain; classifier's own guess was low-share _ (0.75) and this sits between g(23) and tee(25) in an unbroken cipher run
+1	25	tee		confirm	H	clean vertical-stroke-with-right-bar shape, share 1.00
+1	26	lam		confirm	H	clean Λ shape, share 1.00
+1	27	S		confirm	H	clean S/5-squiggle, share 1.00
+1	28	_		confirm	M	recrop shows a stem + hooked v-like element + 2 dots; visually suggestive of 'v' but classifier's plain-cluster fit was its highest-confidence call anywhere nearby (share 1.00); read as plain cursive (dotted letter, e.g. 'si'/'fi'), dots likely ordinary i-dots not a cipher mark, so marks left blank
+1	29	bh	dot	confirm	H	clean stem+hooked-loop+tail+dot, share 1.00
+1	30	Z	#	correct	M	raw per-box code guess was already Z (cluster label conflicted at _, share only 0.43); recrop shows a Z (top bar + diagonal + bottom bar) with a '#' mark overlaid near the top, matching Z's own marks_seen (#:4)
+1	31	phi	dot	confirm	M	share 0.83 checked: clean φ (slashed circle on a stem) with dot above, matches atlas phi well
+1	32	w		confirm	H	clean cursive w/omega with lead-in stroke, share 1.00
+2	1	v	dot	confirm	M	share 0.40 checked via wide context crop: a rounded hooked-left-arm curl ('u'-like) matching atlas v, with a dot above
+2	2	y		correct	M	recrop/wide-context crop shows a clear cursive y (hook + closed descender loop) right after pos1's v; classifier's own guess was low-share _ (0.60)
+2	3	S7		confirm	H	clean 7-shaped sign, share 1.00
+2	4	y	5	confirm	H	clean y with s/5-hook mark, share 1.00
+2	5	w		confirm	H	clean cursive w, share 1.00
+2	6	Z	ot	confirm	H	clean Z shape, share 1.00
+2	7	lam		confirm	H	clean Λ shape, share 1.00
+2	8	g	~	confirm	H	clean 9-loop with ~ mark, share 1.00
+2	9	e	#	correct	M	recrop shows the looped-e bowl with a clear # mark above that the classifier's marks field missed (code itself already e, share 1.00)
+2	10	tee		confirm	H	clean vertical-stroke-with-right-bar, share 1.00
+2	11	K	1	confirm	H	clean K, share 1.00
+2	12	phi	5	confirm	M	share 0.81 checked: clean φ (slashed circle on stem) with 5-hook mark, matches atlas phi well
+2	13	U		confirm	H	clean ⊔ square-cup shape, share 1.00
+2	14	w		confirm	H	clean cursive w, share 1.00
+2	15	bh		confirm	H	clean stem+hooked-loop+tail, dist 1.784, share 1.00
+2	16	lam	~	confirm	H	clean Λ with ~ mark, share 1.00
+2	17	_		confirm	H	recrop shows a stem with a closed loop AT THE BOTTOM (plain d/l/h style), distinct from bh's small hooked loop upper-right; matches the atlas's own retired h/d/ll-confusion note; share 1.00 for plain
+2	18	bh		confirm	H	clean stem+hooked-loop+tail, dist 1.657, share 1.00
+2	19	g		confirm	H	clean 9-loop, share 1.00
+2	20	Z		confirm	M	share 0.82 checked: clean small zigzag shape, matches atlas Z
+2	21	Z		confirm	H	clean Z shape, share 1.00
+2	22	g		confirm	H	clean 9-loop, share 1.00
+2	23	S		confirm	H	clean S/5-squiggle, share 1.00
+2	24	e	#	correct	M	recrop shows the looped-e bowl with a clear # mark above, missed by the classifier's marks field (code itself already e, share 1.00)
+2	25	p	1	confirm	H	clean p, share 1.00
+2	26	eps	o	confirm	H	clean two-stacked-open-bowl epsilon shape with o mark, share 1.00
+2	27	tee		confirm	M	share 0.79 checked: clean vertical-stroke-with-right-bar (asymmetric, not the symmetric '+'), matches atlas tee
+2	28	p		confirm	H	clean p, share 1.00
+2	29	_		correct	M	recrop shows clearly readable plain cursive ('...barmj...'/end-of-line word), not a cipher nt sign; classifier's own cluster label already disagreed (_ vs raw nt guess), share only 0.60
+3	1	g	dot	correct	M	recrop shows a 9-loop-with-tail shape (loop at top, tail curving left below) matching atlas g, not y's forked-top/closed-bottom-loop pattern; classifier was confident (1.00) but g and y are visually close in this hand
+3	2	_	dot	confirm	M	share 0.85 boundary checked: stem+small-loop+tail, h/bh-adjacent but flows fluidly with the plain word beginning at pos3 ('li...'); read as plain per classifier
+3	3	_		confirm	H	plain cursive stretch continues ('li...'), share 0.80
+3	4	_	dot	confirm	H	plain cursive stretch, share 0.80
+3	5	_		confirm	H	plain cursive stretch, share 1.00
+3	6	_	dot	confirm	H	recrop shows clearly readable plain cursive word 'fatto', share 0.81
+3	7	_		confirm	M	recrop shows plain cursive continuing ('gra'); classifier's own guess was already plain (_, share 0.80). A small Λ-like flourish with what looks like a 5-hook sits at the foot of this box but reads as a decorative under-flourish of the plain word rather than a separate cipher sign; not confident enough to split
+3	8	_		confirm	H	plain cursive stretch continues, share 1.00
+3	9	_		correct	M	recrop shows only a short plain diagonal stroke (the ascender-tip of the capital T that begins 'Torto' at pos10), not a lam sign; classifier's raw guess was low-share (0.63)
+3	10	_		confirm	H	recrop shows clearly readable plain cursive 'Tor...' (start of 'Torto'), share 1.00
+3	11	_		correct	M	recrop shows plain cursive '...to' completing 'Torto', not a # sign; classifier's own guess was low-share (0.81)
+3	12	lam		confirm	H	recrop shows a clean Λ shape right after 'Torto' ends, share 1.00 -- cipher run resumes here
+3	13	nt		correct	M	recrop shows an n-loop joined to a crossed stroke (n+), matching atlas nt, not f; classifier's raw guess was low-share (0.41)
+3	14	+		correct	M	recrop shows a plain symmetric cross (bar both sides of the vertical), matching atlas '+', not Z; classifier's raw guess was low-share (0.43)
+3	15	y		confirm	H	clean y (hook + closed descender loop), share 1.00
+3	16	e	+	correct	M	recrop shows looped-e bowl with a '+' mark above, not the 'dot' recorded by the classifier's marks field; code itself already e, share 1.00
+3	17	e		correct	M	recrop shows a clean looped-e bowl (a thin grey diagonal crossing it is a paper crease/scratch, not ink); classifier's own guess was low-share _ (0.83)
+3	18	rz		confirm	H	clean low wavy 'lying-z' shape, share 1.00
+3	19	g	7	confirm	H	clean 9-loop with 7 mark, share 1.00
+3	20	g		confirm	H	clean 9-loop, share 1.00
+3	21	Z		confirm	H	clean Z shape, share 1.00
+3	22	S7		confirm	H	clean 7-shaped sign, share 1.00
+3	23	+		correct	M	recrop shows a plain symmetric cross with a dot to the right, matching atlas '+', not '#'; classifier's raw guess was low-share (0.59)
+3	24	rz	dot	confirm	H	clean low wavy shape with dot, share 1.00
+3	25	S7		confirm	H	clean 7-shaped sign, share 1.00
+3	26	lam		confirm	H	clean Λ shape, share 1.00
+3	27	_		correct	L	recrop shows only a heavy ink blot/smudge with no clear nt (or any other) shape recoverable; classifier's cluster label already agreed on _ even though its raw guess (nt) was very low-share (0.61)
+3	28	a		correct	M	recrop shows a bold cursive 'a' with a trailing tail, not Lx's Λ-with-crossed-leg structure; classifier's guess was share 0.78
+3	29	wd		correct	M	recrop shows a w/omega shape joined to a tall right-hand stroke ending in a hook+dot, matching atlas wd, not g; classifier's cluster label already disagreed (_ vs raw g guess), share only 0.62
+3	30	p		confirm	M	share 0.81 checked: stem+loop+tail, less flourished than typical 'Pu'-style p exemplars but closest match among the 36 codes
+3	31	_		confirm	M	share 0.61 checked: simple plain curved stroke, no code shape recoverable
+3	32	H		correct	M	recrop shows a clean blockish H (matching atlas H, including its small numeral-like ticks), not plain; classifier's own guess was low-share _ (0.81)
+4	1	w		confirm	H	clean cursive w, share 1.00
+4	2	tee		confirm	H	clean vertical-stroke-with-right-bar, share 1.00
+4	3	rz		confirm	H	clean low wavy shape, share 1.00
+4	4	y		confirm	H	clean y, share 1.00
+4	5	lam		confirm	H	clean Λ shape, share 1.00
+4	6	lam	1	confirm	H	clean Λ with 1 mark, share 1.00
+4	7	S7		confirm	H	clean 7-shaped sign, share 1.00
+4	8	U		confirm	M	share 0.82 checked: clean ⊔ square-cup shape, matches atlas U
+4	9	w		confirm	H	clean cursive w, share 1.00
+4	10	bh		confirm	H	clean stem+hooked-loop+tail, dist 1.541, share 1.00
+4	11	a	~	confirm	H	clean bold cursive a with ~ mark, share 1.00
+4	12	nt		confirm	M	share 0.78 checked: n-loop joined to crossed stroke (n/2 + cross variant), matches atlas nt
+4	13	bh		confirm	H	clean stem+hooked-loop+tail, dist 1.460, share 1.00
+4	14	dl		confirm	H	clean closed-loop+tilde-tail shape, share 1.00
+4	15	Lx		confirm	H	clean Λ-with-crossed-leg shape, share 1.00
+4	16	g		correct	M	recrop shows a 9-loop-with-tail shape matching atlas g (loop at top, tail below), not the y/f the classifier's two signals disagreed on (raw y 0.82 vs cluster f)
+4	17	w		confirm	M	share 0.40 checked: clean cursive w with long lead-in stroke, matches atlas w well despite the low share
+4	18	tee		confirm	M	share 0.81 checked: clean vertical-stroke-with-right-bar, matches atlas tee
+4	19	Z	dot	correct	M	recrop shows an n/2-like ascender flourish above a Z body, matching the same natural Z-flourish pattern seen in the atlas's own Z exemplars (e.g. f54r_13_012); classifier's two signals disagreed (raw y 0.41 vs cluster Z) -- going with Z
+4	20	eps	~	confirm	H	clean two-stacked-open-bowl epsilon with ~ mark, share 1.00
+4	21	g		confirm	H	clean 9-loop, share 1.00
+4	22	Z		confirm	H	clean Z shape, share 1.00
+4	23	phi		confirm	H	clean φ (slashed circle on stem), share 1.00
+4	24	w		confirm	M	share 0.61 checked: clean cursive w, matches atlas w
+4	25	w		confirm	H	clean cursive w, share 1.00
+4	26	psi		confirm	H	clean forked-top/straight-tail shape, share 1.00
+4	27	S7		confirm	H	clean 7-shaped sign, share 1.00
+4	28	_		confirm	H	plain, share 1.00
+4	29	S7		confirm	H	clean 7-shaped sign, share 1.00
+5	1	eps	~	confirm	H	clean two-stacked-open-bowl epsilon with ~ mark, share 1.00
+5	2	wd		confirm	H	clean w+tall-right-stroke shape, share 1.00
+5	3	o.		confirm	H	clean ring-with-dot-inside shape, share 1.00
+5	4	w		confirm	H	clean cursive w, share 1.00
+5	5	g	5	confirm	H	clean 9-loop with 5 mark, share 1.00
+5	6	a		correct	M	recrop shows a bold cursive 'a', not g; classifier's raw guess was low-share (0.42) and cluster disagreed (_)
+5	7	y		correct	M	recrop/wide-context crop shows two clearly distinct y-shaped signs (hook+closed descender loop) merged in one wide box; classifier's own guess was low-share _ (0.82). Split into this row (first y) and pos7.5 (second y)
+5	7.5	y		correct	M	split: second of two y signs merged into box f56v_05_007 (see pos7 note)
+5	8	_		confirm	H	plain, share 1.00
+5	9	e	+	correct	M	recrop shows a clean looped-e bowl, not g; classifier's two signals disagreed (raw e 0.66 vs cluster g); + mark already recorded matches the mark visible above
+5	10	_	dot	confirm	H	plain, share 1.00
+5	11	psi		confirm	H	clean forked-top/straight-tail shape, share 1.00
+5	12	_		confirm	H	plain, share 1.00
+5	13	w		confirm	H	clean cursive w, share 1.00
+5	14	g		confirm	M	share 0.75 checked: 9-loop shape with a small flourish above (read as part of the sign, not a standard listed mark, left blank); matches atlas g reasonably; classifier's cluster label disagreed (_) but the raw g guess is the better shape match
+5	15	m	~	confirm	H	clean cursive m with ~ mark, share 1.00
+5	16	w		confirm	H	clean cursive w, share 1.00
+5	17	m	1	confirm	H	clean cursive m with 1 mark, share 1.00
+5	18	w		confirm	H	clean cursive w, share 1.00
+5	19	lam	~	confirm	H	clean Λ with ~ mark, share 1.00
+5	20	e		confirm	H	clean looped-e bowl, share 1.00
+5	21	wd		confirm	H	clean w+tall-right-stroke shape, share 1.00
+5	22	bh	7	correct	M	share 0.83 checked: clean stem+hooked-loop+tail with a 7 mark visible at the foot, matching atlas bh; classifier's cluster label disagreed (_) but the raw bh guess is the better shape match
+5	23	K	1	confirm	H	clean K with 1 mark, share 1.00
+5	24	nt		correct	L	share 0.60 checked: box is tall/ambiguous with what may be two components; the dominant lower shape (n-loop+cross) matches atlas nt reasonably, but a small hook/dot above it is unexplained (possibly bleed from the neighbouring K at pos23, or a mark) -- low confidence
