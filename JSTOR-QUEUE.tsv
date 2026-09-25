@@ -81,3 +81,6 @@ ciphers/espagnol142-mercy-1648	("abbé de Mercy" OR "abad de Mercy" OR "Abt von 
 ciphers/espagnol142-mercy-1648	("Leopold Wilhelm" OR "Léopold-Guillaume" OR "Leopoldo Guillermo") AND (Cleves OR Clèves OR Kleve) AND Brandenburg AND 1648	2026-09-25	queued	
 ciphers/espagnol142-mercy-1648	("Mercy" OR "Merci") AND (Cleves OR Clèves OR Kleve OR Cleve) AND 1648 AND (Spain OR Espagne OR spanisch OR Leopold OR Léopold)	2026-09-25	queued	
 ciphers/espagnol142-mercy-1648	("Pierre Ernest de Mercy" OR "Pierre-Ernest de Mercy" OR "abbé d'Acey") AND (Leopold OR Léopold OR Chevreuse OR 1648)	2026-09-25	queued	
+ciphers/clair349-este-guise-1556	("cardinal de Ferrare" OR "Ippolito d'Este" OR "Hippolyte d'Este") AND Guise AND (1557 OR 1556) AND (chiffre OR cipher OR lettre)	2026-09-25	queued	
+ciphers/clair349-este-guise-1556	("Clairambault 349" OR "Clair. 349") AND (Guise OR Ferrare)	2026-09-25	queued	
+ciphers/clair349-este-guise-1556	("capitaine Livio" OR "capitano Livio") AND (Guise OR Ferrare OR Ferrara) AND 1557	2026-09-25	queued	

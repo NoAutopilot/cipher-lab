@@ -1,5 +1,5 @@
 partial
-Check-solved verdict (YX-CS349, 25 Sept 2026; restated here so it sits beside the status word): Ribier, *Lettres et memoires d'estat* (1666, IA bub_gb_bOnmNv2ZLVoC and bub_gb_qWTswSr32NYC) read and grepped in full; Guise *Memoires-journaux* (Michaud-Poujoulat 1e serie t.6, IA nouvellecollecti06michuoft, pp.316-320) read -- the 4 Jan 1557 letter is not printed; full section further down.
+Check-solved verdict (YX-CS349, 25 Sept 2026; restated here so it sits beside the status word): Ribier, *Lettres et memoires d'estat* (1666, IA bub_gb_bOnmNv2ZLVoC and bub_gb_qWTswSr32NYC) read and grepped in full; Guise *Memoires-journaux* (Michaud-Poujoulat 1e serie t.6, IA nouvellecollecti06michuoft, pp.316-320) read -- the 4 Jan 1557 letter is not printed; full section further down. **Corrected by the verifier V7-CL349, 25 Sept 2026 (AUDIT.md): the letter IS printed in clear in that same volume, pp.238-239 (dated 3 Jan. 1556 o.s.), which the sweep did not read; class N0, key period, text known.**
 
 ## YX-TR349 (25 Sept 2026): key transcription, step 1 of 3
 
@@ -242,7 +242,7 @@ the gate-passing citation sentence is now the second line of this file. Six sour
       letter identified with Clair 349 f.3 (Tomokiyo's dated "4 January 1556" old-style = 4 Jan. 1557 new-style).
       No heading or footnote near these four printed letters says they were deciphered from cipher; read as
       given, they are additional context on the correspondent pair and its dates, not a decipherment of the
-      target leaf. **New finding, not previously on file.**
+      target leaf. **New finding, not previously on file.** **Correction (V7-CL349, 25 Sept 2026): the same volume prints the target letter itself in clear at pp.238-239 ("la lettre suivante de monseigneur le cardinal de Ferrare", "De Ferrare, ce 3e jour de janvier 1556"); the "does not print the specific letter" statement above is wrong. See AUDIT.md.**
    c. **Este/Ippolito d'Este correspondence edition — searched, found one, read.** Web search surfaced Gustave
       Baguenault de Puchesse, "Négociations de Henri II avec le duc de Ferrare, d'après des documents inédits
       (1555-1557)", *Revue des questions historiques* 3e année t.5 (1868), pp.485-515 — the sender-family
