@@ -584,3 +584,6 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T21:34Z	session_01GpZDqE883ZSyLrPTUFm2sJ	bBUL3 (Sonnet, cap 3)	bullet-tuscany-1944 NEAR step indicator lookup (IA, Google Books)	LANE B4 brief
 2026-09-25T21:36Z	session_01QoNRugzSd25fspP8nwNNbN	bSPEC3 (Sonnet, cap 4)	UNSOLVED-SURVEY ranks 31-41 triage + specs (disk only)	LANE B4 brief
 2026-09-25T21:39Z	session_01SPixjGTp23T4YyxPvHwkWs	GOLD-CONS2 done $7.90 D, archived by LANE GOLD2	fff3352; three c3 briefs (K3 cipher-side, B2D permuted tableau design, D2 base-level noise curve)
+2026-09-25T21:39Z	session_01K4n8VHbDXGiaAwDk12dgrP	GOLD-K3 koehler B-prime-c cipher-side placements + 10-text beau band (Sonnet, cap 6, 75 min)	brief 2026-09-25-lane-gold-c3-koehler-bprime-cipher-side.md
+2026-09-25T21:39Z	session_01GvGAepME5fvmUDuaJuc9cA	GOLD-B2D koehler B-double-prime-c permuted-tableau design (Fable, cap 12, 90 min)	brief 2026-09-25-lane-gold-c3-koehler-bprime2-design.md
+2026-09-25T21:39Z	session_019a43vGLshPA8EZvcuNjGCG	GOLD-D2 debosnys base-level noise curve, controls only (Sonnet, cap 3, 30 min)	brief 2026-09-25-lane-gold-c3-debosnys-base-curve.md
