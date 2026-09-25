@@ -1,0 +1,36 @@
+
+==== case-sensitive ====
+target N=581 K=48
+target pooled IC = 0.0351
+target most common: [('E', 55), ('D', 39), ('e', 34), ('M', 28), ('C', 27), ('j', 26), ('d', 25), ('T', 19)]
+control_monoalphabetic_english_pooled_IC	mean=0.0614	min=0.0541	max=0.0697	n=50
+control_uniform_random_pooled_IC (K=48, theory~0.0208)	mean=0.0192	min=0.0186	max=0.0204	n=50
+control_homophonic_english_pooled_IC	mean=0.0213	min=0.0200	max=0.0228	n=50
+target periodic IC scan p=2..20: p2=0.0356, p3=0.0352, p4=0.0353, p5=0.0349, p6=0.0359, p7=0.0345, p8=0.0354, p9=0.0335, p10=0.0349, p11=0.0353, p12=0.0355, p13=0.0372, p14=0.0349, p15=0.0358, p16=0.0380, p17=0.0377, p18=0.0353, p19=0.0326, p20=0.0359
+target periodic scan peak: p=16 IC=0.0380 (vs pooled IC=0.0351, vs uniform~0.0208)
+control_periodic_vigenere_english (period -> pooled_IC mean[min,max], scan_peak mean[min,max]):
+  p= 2  pooled_IC mean=0.0406 [0.0329,0.0496]  scan_peak mean=0.0651 [0.0608,0.0733]  scan_recovered_true_period=20/20
+  p= 3  pooled_IC mean=0.0333 [0.0267,0.0435]  scan_peak mean=0.0627 [0.0534,0.0692]  scan_recovered_true_period=20/20
+  p= 5  pooled_IC mean=0.0294 [0.0256,0.0399]  scan_peak mean=0.0636 [0.0583,0.0692]  scan_recovered_true_period=20/20
+  p= 7  pooled_IC mean=0.0254 [0.0230,0.0341]  scan_peak mean=0.0628 [0.0568,0.0696]  scan_recovered_true_period=20/20
+  p=10  pooled_IC mean=0.0236 [0.0216,0.0281]  scan_peak mean=0.0651 [0.0584,0.0726]  scan_recovered_true_period=20/20
+  p=15  pooled_IC mean=0.0219 [0.0199,0.0240]  scan_peak mean=0.0626 [0.0519,0.0718]  scan_recovered_true_period=20/20
+  p=20  pooled_IC mean=0.0219 [0.0200,0.0253]  scan_peak mean=0.0622 [0.0567,0.0696]  scan_recovered_true_period=20/20
+
+==== case-folded ====
+target N=581 K=25
+target pooled IC = 0.0628
+target most common: [('e', 89), ('d', 64), ('m', 37), ('j', 36), ('c', 30), ('l', 26), ('r', 25), ('z', 25)]
+control_monoalphabetic_english_pooled_IC	mean=0.0647	min=0.0592	max=0.0705	n=50
+control_uniform_random_pooled_IC (K=25, theory~0.0400)	mean=0.0385	min=0.0378	max=0.0399	n=50
+control_homophonic_english_pooled_IC	mean=0.0421	min=0.0400	max=0.0447	n=50
+target periodic IC scan p=2..20: p2=0.0630, p3=0.0628, p4=0.0630, p5=0.0627, p6=0.0643, p7=0.0639, p8=0.0623, p9=0.0613, p10=0.0624, p11=0.0622, p12=0.0647, p13=0.0637, p14=0.0631, p15=0.0642, p16=0.0662, p17=0.0627, p18=0.0641, p19=0.0580, p20=0.0636
+target periodic scan peak: p=16 IC=0.0662 (vs pooled IC=0.0628, vs uniform~0.0400)
+control_periodic_vigenere_english (period -> pooled_IC mean[min,max], scan_peak mean[min,max]):
+  p= 2  pooled_IC mean=0.0515 [0.0470,0.0663]  scan_peak mean=0.0674 [0.0619,0.0726]  scan_recovered_true_period=19/20
+  p= 3  pooled_IC mean=0.0473 [0.0427,0.0553]  scan_peak mean=0.0672 [0.0620,0.0749]  scan_recovered_true_period=20/20
+  p= 5  pooled_IC mean=0.0437 [0.0396,0.0479]  scan_peak mean=0.0671 [0.0624,0.0715]  scan_recovered_true_period=20/20
+  p= 7  pooled_IC mean=0.0422 [0.0398,0.0456]  scan_peak mean=0.0652 [0.0602,0.0697]  scan_recovered_true_period=20/20
+  p=10  pooled_IC mean=0.0413 [0.0392,0.0441]  scan_peak mean=0.0665 [0.0602,0.0729]  scan_recovered_true_period=20/20
+  p=15  pooled_IC mean=0.0403 [0.0389,0.0436]  scan_peak mean=0.0653 [0.0602,0.0717]  scan_recovered_true_period=20/20
+  p=20  pooled_IC mean=0.0397 [0.0383,0.0417]  scan_peak mean=0.0649 [0.0599,0.0729]  scan_recovered_true_period=20/20

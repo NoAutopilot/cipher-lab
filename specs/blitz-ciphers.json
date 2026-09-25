@@ -26,13 +26,23 @@
   "2. Fetch the six untranscribed page images (Blitz-Cipher-0{1..6}.jpg, scienceblogs.de) and transcribe pages 1-6 blind, to check whether the same symbol/punctuation inventory and case pattern recurs across all eight pages (a real book cipher should be internally consistent; an ad hoc forgery might not be). Cost $2-3.",
   "3. Compare the punctuation-character positions (., ~, *, &, %, @, ;, :, -) across lines for a positional pattern (e.g. marking word or sentence boundaries, or homophone-group boundaries) before assuming they are cipher content rather than structural markers. Cost $1."
  ],
- "matched_control": "not yet run; test 1 above specifies three matched-control designs (monoalphabetic, periodic-polyalphabetic, homophonic English, same N/K as the two transcribed pages)",
- "cheap_test_done": [],
+ "matched_control": "run 25 Sept 2026 (bBLZ): monoalphabetic, periodic-polyalphabetic (period 2-20) and homophonic-substitution English controls, both K=25 (case-folded) and K=48 (case-sensitive), N=581 -- see cheap_test_done and ciphers/blitz-ciphers/NOTES.md",
+ "cheap_test_done": [
+  {
+   "test": 1,
+   "date": "25 Sept 2026",
+   "worker": "bBLZ",
+   "method": "IC/frequency profile (specs/cheap-tests/blitz-ciphers/ic_profile.py, 50-sample matched controls) plus tools/family_run.py --control-only calibration (masc, homophonic, periodic_vigenere), disk-only, English corpus tools/data/pg1661_holmes.txt",
+   "target": "pooled IC case-folded (K=25) 0.0628, case-sensitive (K=48) 0.0351; periodic scan p=2-20 flat both readings (case-folded 0.0580-0.0662, case-sensitive 0.0326-0.0380), no period detected",
+   "control": "monoalphabetic English pooled IC 0.0647 [0.0592,0.0705] K=25 / 0.0614 [0.0541,0.0697] K=48; homophonic English 0.0421 [0.0400,0.0447] K=25 / 0.0213 [0.0200,0.0228] K=48; uniform-random 0.0385 K=25 / 0.0192 K=48; periodic-Vigenere-period-20 pooled 0.0397 K=25 / 0.0219 K=48, scan-peak ~0.062-0.065 both (period recovered 19-20/20 trials, confirming scan power at this N); family_run.py control-only recovery: masc 0.999, homophonic (K=48) 0.996, periodic_vigenere 1.000 -- all near ceiling, controls have real power at N=581",
+   "verdict": "inconclusive, no family confirmed or excluded outright -- case-folded IC reads as ordinary English-level (inside the monoalphabetic control's range, above the periodic/homophonic controls' flattened ranges); case-sensitive IC sits between the homophonic and monoalphabetic control ranges, matching neither; no periodic signature detected in either reading despite the scan having demonstrated power down to period 20 at this N. Not a control-backed negative (no gate was set or failed; the spec's judge deliberately has no language, so no PASS/FAIL was computed) and not a solve -- a statistics-only profile. Next untried step is the spec's own test 2 (fetch and transcribe the remaining 6 pages), not run this pass per brief."
+  }
+ ],
  "judge": {
-  "letters_min": 130,
-  "letters_max": 340,
+  "letters_min": 570,
+  "letters_max": 590,
   "control_samples": 200,
-  "note": "letters_min/max is a rough range across the two transcribed pages combined (page 7 approx 400 raw characters including punctuation, page 8 approx 150 -- letters-only count not yet computed, narrow once test 1 folds it); 'language' deliberately omitted"
+  "note": "letters_min/max updated 25 Sept 2026 (bBLZ, test 1): combined letters-only count across both transcribed pages, case-folded, is exactly 581 (case-sensitive also 581, same stream, K differs); 'language' still deliberately omitted (test 1 did not confirm a single classical design to score against, per Pelling's own multi-hypothesis framing)"
  },
  "value": "low: a strong, multi-source authenticity dispute (Pelling's own structural suspicion, SantaColoma's direct forgery claim, Nickell-criterion provenance failure on every count) makes this more a forensic-authenticity question than a pure cryptanalytic one -- a fluent decode would be notable regardless, but absence of one proves little given only 2 of 8 pages are even transcribed",
  "model": "Sonnet",
