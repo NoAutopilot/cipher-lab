@@ -281,3 +281,186 @@ line	pos	code	marks	action	conf	note
 13	23	rz		confirm	H	
 13	24	_		plain	M	resembles a plain cursive fragment ("7e"-like)
 13	25	_	ot|dot|~	plain	M	resembles a plain cursive fragment (partially cropped)
+14	1	o.		confirm	H	
+14	2	S7		confirm	H	
+14	3	p		confirm	H	
+14	4	g		confirm	L	digit-"8"-like shape on zoom, ambiguous, tentative
+14	5	o.		confirm	H	
+14	6	S7		confirm	H	
+14	7	lam		confirm	H	
+14	8	y	~	confirm	H	
+14	9	S		confirm	H	
+14	10	]	o	confirm	H	
+14	11	g		confirm	H	
+14	12	_		plain	M	simple "1"-stroke mark only, no base sign
+14	13	_		plain	M	digit-like marks ("1,0") only, no base sign
+14	14	nt		confirm	H	
+14	15	g	1	confirm	M	
+14	16	e	dot|+	correct	M	loop+dot shape matches "e" on zoom, not plain as classifier proposed
+14	17	a	1	confirm	H	
+14	18	e	#	confirm	H	
+14	19	lam	1	confirm	M	
+14	20	e	dot	confirm	M	
+14	21	]	o	confirm	H	
+14	22	g		confirm	H	
+14	23	S7		confirm	H	
+14	24	phi		confirm	M	
+14	25	]	o	confirm	H	
+14	26	_		plain	M	hook+dash shape, ambiguous, kept plain per classifier
+14	27	w		confirm	H	
+14	28	y		confirm	H	
+14	29	lam		confirm	H	
+14	30	eps	1	confirm	H	
+14	31	_		plain	M	loop shape resembling "e"/a flourish at line end, kept plain per classifier
+15	1	wd		confirm	H	
+15	2	bh		confirm	H	
+15	3	y		confirm	H	
+15	4	nt		confirm	L	digit+zigzag+cross combo, ambiguous on zoom, tentative
+15	5	bh		confirm	H	
+15	6	w		confirm	H	
+15	7	e		correct	M	zoom shows a simple single loop matching "e", not the two-bowl "eps"
+15	8	#		correct	M	zoom clearly shows a double-bar cross, not plain
+15	9	lam		confirm	H	
+15	10	w		confirm	H	
+15	11	tee		confirm	H	
+15	12	_		plain	M	circle+y merged shape, ambiguous
+15	13	lam		confirm	H	
+15	14	m	~	confirm	H	
+15	15	g		confirm	H	
+15	16	g		confirm	H	
+15	17	a	1	confirm	H	
+15	18	S7		confirm	H	
+15	19	e	#	confirm	H	
+15	20	g	1	confirm	H	
+15	21	m	~	confirm	H	
+15	22	w		confirm	H	
+15	23	a	1	confirm	H	
+15	24	g		confirm	H	
+15	25	S4	~	confirm	H	
+15	26	dl		confirm	H	
+16	1	_		plain	H	part of the plain ligature "et" at line start (same "et" pattern as line 1)
+16	2	_		plain	H	part of "et"
+16	3	_		plain	H	part of the plain word "no[n]"
+16	4	_		plain	H	part of "no[n]"
+16	5	_		plain	H	accent/abbreviation tilde over "no[n]"
+16	6	_		plain	H	part of the legible plain word "bisognerà"
+16	7	_		plain	H	part of "bisognerà"
+16	8	_		plain	H	part of "bisognerà"
+16	9	_		plain	H	part of "bisognerà"
+16	10	_		plain	H	part of "bisognerà"
+16	11	_		plain	H	part of "bisognerà"
+16	12	_		plain	H	end of "bisognerà"
+16	13	_		plain	H	part of the plain word "così"
+16	14	_		plain	H	part of "così"
+16	15	_		plain	H	part of "così"
+16	16	_		plain	H	plain "v.s." abbreviation ("Vostra Signoria")/"chi"
+16	17	_		plain	H	part of legible plain text ("facci"/"Pagare" region)
+16	18	_		plain	H	part of legible plain text
+16	19	_		plain	H	part of legible plain text
+16	20	_		plain	H	part of legible plain text ("chi"/"hi")
+16	21	_		plain	H	part of legible plain text
+16	22	_		plain	H	tall ascender, part of legible plain text
+16	23	#		confirm	H	genuine sign -- reads visually as three repeated "#" marks in a row ("+++") right after the plain word "Pagare", a deliberate cipher insertion into an otherwise plain sentence
+16	24	#		confirm	H	second of the three "#" signs
+16	25	#		confirm	H	third of the three "#" signs
+16	26	_		plain	M	small "8"-like glyph after the three "#" signs, ambiguous, kept plain per classifier
+16	27	_		plain	H	part of the plain word "più" ("more") ending the line
+16	28	_		plain	H	part of "più"
+17	1	_		plain	M	tiny mark, part of the legible plain sentence opening "habbiamo"
+17	2	_		plain	H	part of "habbiamo Contentato qui: Ma faccendo [con] gra[n] diligentia V.S." -- this entire line reads as continuous legible plain Italian
+17	3	_		plain	H	part of the plain sentence
+17	4	_		plain	H	part of the plain sentence
+17	5	_		plain	H	part of the plain sentence
+17	6	_		plain	H	part of the plain sentence
+17	7	_		plain	H	part of the plain sentence
+17	8	_		plain	H	part of the plain sentence
+17	9	_		plain	M	tiny mark within the plain sentence
+17	10	_		plain	H	classifier proposed "e" but this is a plain letter within the legible sentence
+17	11	_		plain	H	part of the plain sentence
+17	12	_		plain	H	part of the plain sentence
+17	13	_		plain	H	classifier proposed "Lx" but this is a plain letter within the legible sentence
+17	14	_		plain	H	classifier proposed "N" but this is a plain letter (end of "co[n]") within the legible sentence
+17	15	_		plain	H	part of the plain sentence
+17	16	_		plain	H	part of the plain sentence
+17	17	_		plain	H	part of the plain sentence
+17	18	_		plain	H	part of the plain sentence
+17	19	_		plain	H	classifier proposed "y" but this is a plain letter ("diligentia") within the legible sentence
+17	20	_		plain	H	classifier proposed "g" but this is a plain letter within the legible sentence
+17	21	_		plain	H	classifier proposed "a" but this is a plain letter within the legible sentence
+17	22	_		plain	H	classifier proposed "lam" but this is a plain letter within the legible sentence
+17	23	_		plain	H	part of the plain sentence
+17	24	_		plain	H	classifier proposed "bh" but this is a plain letter within the legible sentence
+17	25	_		plain	H	classifier proposed "g" but this is a plain letter within the legible sentence
+17	26	_		plain	H	classifier proposed "tee" but this is a plain letter within the legible sentence
+17	27	_		plain	H	classifier proposed "lam" but this is a plain letter (part of "V.S.") within the legible sentence
+17	28	_		plain	H	part of the plain sentence
+17	29	_		plain	H	part of the plain sentence
+17	30	_		plain	H	classifier proposed "v" but this is a plain letter ("V.S.") within the legible sentence
+17	31	_		plain	H	classifier proposed "S" but this is a plain letter ("V.S.") within the legible sentence
+17	32	_		plain	H	classifier proposed "y" but this is the plain sentence's final letter/flourish
+18	1	_		plain	H	tiny flourish dash at line start
+18	2	_		plain	H	classifier proposed "w" but this is a flat horizontal flourish/paraph before the word, not a sign
+18	3	_		plain	H	part of the legible plain phrase at line start (reads roughly "dia el Beveraggio.")
+18	4	_		plain	H	part of the plain phrase
+18	5	_		plain	H	classifier proposed "N" but this is a plain letter within the legible phrase
+18	6	_		plain	H	classifier proposed "eps" but this is a plain letter ("el") within the legible phrase
+18	7	_		plain	H	part of the plain phrase
+18	8	_		plain	H	classifier proposed "bh" but this is the capital "B" of "Beveraggio" within the legible phrase
+18	9	_		plain	H	part of "Beveraggio"
+18	10	_		plain	H	part of "Beveraggio"
+18	11	_		plain	H	classifier proposed "p" but this is a plain letter ("r") within "Beveraggio"
+18	12	_		plain	H	part of "Beveraggio"
+18	13	_		plain	H	end of "Beveraggio."; cipher signs resume after this point
+18	14	S4		confirm	H	cipher resumes after the plain "...Beveraggio." clause
+18	15	dl		confirm	H	
+18	16	Lx		confirm	M	
+18	17	_		plain	M	small marks only on zoom, no clear base sign
+18	18	a		correct	M	zoom clearly shows the bold cipher "a" sign shape, not plain as classifier proposed
+18	19	_		plain	M	simple vertical stroke only
+18	20	S7		confirm	H	
+18	21	#		confirm	H	
+18	22	a	1	correct	M	zoom confirms the cluster hint "a" (bold cipher "a" shape) over the script classifier's "lam"
+18	23	S7		confirm	H	
+18	24	e	#	confirm	H	
+18	25	g		confirm	H	
+18	26	m	~	confirm	H	
+18	27	w		confirm	H	
+18	28	lam	~	confirm	H	
+18	29	nt		confirm	H	
+18	30	_		plain	L	loop shape, edge-cropped on zoom, genuinely ambiguous
+19	1	_	1	plain	H	single digit-like mark only, no base sign
+19	2	rz		confirm	H	
+19	3	tee		confirm	H	
+19	4	e	dot|+	confirm	H	
+19	5	_		plain	H	
+19	6	tee		confirm	H	
+19	7	o.		confirm	H	
+19	8	eps		confirm	H	
+19	9	lam		confirm	H	
+19	10	e	dot|+	confirm	H	
+19	11	sq		confirm	H	
+19	12	_		plain	H	
+19	13	psi		confirm	H	
+19	14	lam		confirm	H	
+19	15	S4		confirm	H	
+19	16	Lx		confirm	H	
+19	17	_		plain	L	smooth hook/wave shape, low share, genuinely ambiguous
+20	1	_		plain	H	classifier proposed "L" but this is the plain letter "L" opening the legible closing-formula sentence "La p[rese]nte è stata suggellata due volte." ("This [letter] has been sealed twice")
+20	2	_		plain	H	part of the plain sentence ("p[rese]nte" abbreviation)
+20	3	_		plain	H	classifier proposed "eps" but this is the plain accented letter "è" within the legible sentence
+20	4	_		plain	H	part of the plain sentence
+20	5	_		plain	H	part of "stata"
+20	6	_		plain	H	part of "stata"
+20	7	_		plain	H	part of the plain sentence
+20	8	_		plain	H	part of the plain sentence
+20	9	_		plain	H	part of the plain sentence
+20	10	_		plain	H	classifier proposed "tee" but this is a plain "t" within "suggellata"
+20	11	_		plain	H	part of "suggellata"
+20	12	_		plain	H	part of "suggellata"
+20	13	_		plain	H	part of "suggellata"
+20	14	_		plain	H	classifier proposed "m" but this is the plain letter "D" of "Due" within the legible sentence
+20	15	_		plain	H	part of "Due"
+20	16	_		plain	H	part of "Due"
+20	17	_		plain	H	classifier proposed "p" but this is a plain letter ("v" of "volte") within the legible sentence
+20	18	_		plain	H	part of "volte"
+20	19	_		plain	H	end of "volte" / trailing flourish
