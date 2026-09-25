@@ -1,5 +1,5 @@
 {
- "updated": "25 Sept 2026, 09:35 UTC",
+ "updated": "25 Sept 2026, 10:40 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -616,6 +616,26 @@
   }
  ],
  "log": [
+  {
+   "when": "25 Sep, 10:30",
+   "what": "LANE YX opens on what TX and PX left open; retrospective h's four fixes go to a worker; third rolling quality audit starts."
+  },
+  {
+   "when": "25 Sep, 09:55",
+   "what": "LANE PX closes: Brochado letterbook key rebuilt (40 codes), body letter 134 still unread; control gate missed by 0.8 points."
+  },
+  {
+   "when": "25 Sep, 09:35",
+   "what": "WVO 5551 counts: N3 after two audits, key ours, quality audit clear. 18 letters, 4 with our own key."
+  },
+  {
+   "when": "25 Sep, 08:25",
+   "what": "Linhares counts: quality flags cleared, fresh re-derivation 24 of 26, one group lowered H to M (now H 24, M 2)."
+  },
+  {
+   "when": "25 Sep, 07:10",
+   "what": "Van Beuningen key counts after its second audit (N3; the letter's text was already printed)."
+  },
   {
    "when": "25 Sep, 04:05",
    "what": "Intake gate: Linhares had gone to deep work on an 'open' verdict whose sender-family edition was unread. Rule added to CLAUDE.md, parent.md and the lane briefs; a worker is reading Textos Políticos 1993 now."
@@ -1818,9 +1838,29 @@
  ],
  "lanes": [
   {
-   "name": "Lane PX, Portuguese holdings and dictionary codes",
+   "name": "Lane YX, left-open targets",
+   "live": 3,
+   "focus": "opened 10:30 after TX and PX closed: Brochado letter 134 (Carta 79 image check, then the control gate), the 1605 Brederode letter's key hunt (NA 1.01.02 inv. 6016), and a triage of every open target no lane holds; Paget waits on local runner L11"
+  },
+  {
+   "name": "Lane VX, key beside the letter",
+   "live": 2,
+   "focus": "8 copy-free rows from Dutch and Nordic archives. Janssens, Java 1811: dispatch No.5 survives as cipher, interlinear decipherment and a plain fair copy (key 208 codes). Suriname maps 1781: key 17 signs. Oldenbarnevelt 1605: Spanish digit cipher, key re-derived, judge not yet passed. Schonenberg partial. No reading past judge yet; handoff after the last two workers"
+  },
+  {
+   "name": "Lane KX, key reuse",
    "live": 1,
-   "focus": "opened 04:25: DigitArq harvest found PX-01, José da Cunha Brochado's London embassy letterbook 1712-13 (ANTT MSLIV/0638), cipher passages with deciphered excerpts in the same volume; dictionary-code scout found no new copy-free row; check-solved next"
+   "focus": "cross-match tool repaired: 8 of 35 keys pass the positive control, no new matches. Colbert 26 La Thuillerie 1645-48: the second hand's notes are topic notes, not a decipherment (09:03 claim withdrawn); 4 of 21 canvases transcribed, a cheap test against the Brienne-office keys decides the rest"
+  },
+  {
+   "name": "Lane TX, printed ciphertext",
+   "live": 0,
+   "focus": "closed on handoff 09:34: WVO 5551 (Jan van Nassau, 17 Apr 1574) N3 after two audits, key ours, second opinion queued, Marburg copy unchecked; Thurloe P10 N0 (Powell 1937); Barriere 1654 negative with a control; Brederode 1605 open, no key (to YX)"
+  },
+  {
+   "name": "Lane PX, Portuguese holdings and dictionary codes",
+   "live": 0,
+   "focus": "closed on handoff 09:55: Brochado letterbook (ANTT MSLIV/0638) key rebuilt from its own Deciffrada appendix, 40 codes / 29 C, appendix read at 93 percent H; body letter 134 undeciphered, control gate missed by 0.8 points (to YX)"
   },
   {
    "name": "Lane LX, Linhares dictionary code",
@@ -1838,6 +1878,11 @@
    "focus": "closed on handoff 02:12: login works on the owner account (username form), but every full-size image and document is the 'Insufficient permissions' placeholder; D2-D8 found-solved in Bourdeau's repo, D5 open"
   },
   {
+   "name": "Parent workers",
+   "live": 2,
+   "focus": "QA run 3 (rolling quality audit from 08:25) and RETRO-APPLY-H (retrospective h's four fixes: shared brief tail, control normalization, ledger code Q, a script for the intake gate) running; AUD2, LX-QAFIX, QA runs 1-2 and RETRO-H done"
+  },
+  {
    "name": "Lane R5, recovery",
    "live": 0,
    "focus": "Salviati f.55r passed its gate (370 signs, pool about 1,090); f.55v half read, pass B resumes at line 12; the five Nevers letters are blocked on the hand after the calibrated re-run (39.8 percent), no more spend there (other account; idle since 24 Sept 21:53 UTC until its window resets 26 Sept 13:00 UTC)"
@@ -1853,11 +1898,6 @@
    "focus": "two first tests done at $2.57: Koehler 1944 not periodic (one-time-key shape, archive route next); cigarette case 1909 uninformative at 45 symbols; two more running (other account; idle since 24 Sept 21:53 UTC until its window resets 26 Sept 13:00 UTC)"
   },
   {
-   "name": "Parent workers",
-   "live": 0,
-   "focus": "retrospective g running (22 rows, $88 since f); a DECODE-login worker checks record R2742 (Le Tellier-Marca 1644, 'Decrypted') and R2077 (the Marie de Medicis key); rfetch2 and retro-apply p closed (other account; idle since 24 Sept 21:53 UTC until its window resets 26 Sept 13:00 UTC)"
-  },
-  {
    "name": "Lane V4, verification",
    "live": 0,
    "focus": "every outreach gate met; three notes sent by the owner, two Bourdeau issues posted; replies come to the parent; a V5 verifier starts when a reading posts"
@@ -1868,7 +1908,7 @@
    "focus": "hall of fame view live from CITATIONS.md: one public citation (Cryptiana, 24 Sept 2026) and the pending replies list"
   }
  ],
- "headline": "Night of 24-25 Sept, owner account: three new lanes (LX, DX, OX). The Linhares dictionary code (ANTT, Condes de Linhares) was broken open: the book is Vieyra's 1809 Portuguese-English pocket dictionary, all twelve worked-example groups fit, and the letter fragment on m0002 reads 25 of 26 groups at grade H; a separate verifier classes both the reading and the dictionary identification N3 (no prior print or decipherment located). DECODE now logs in, but full-size images and documents stay permission-blocked until the DECRYPT role upgrade (ASKS 42/43). The other account's lanes are idle until its window resets 26 Sept 13:00 UTC. Evening of 24 Sept: fifteen readings at N4; the outreach set is sent and replies come to the parent. The owner chose momentum at 18:48: R5 and N4 restarted, and the parent's own picks ran their controls (image detector: gate failed; crib loop: helps at short lengths only; Z13 forum mechanism: fails its control). Six Nevers letters sit under Tomokiyo's key no.60, blocked on the scribe's hand, with the calibration leaf identified. A Fable survey is ranking the public unsolved lists with an approach per item. Successor prompt: hub-seed/SUCCESSOR-PROMPT.md.",
+ "headline": "25 Sept, owner account, 10:40 UTC: 18 letters (13 board entries) at N3 or better after two audits, 4 of them with our own key: Orange to August of Saxony 1561 (WVO 53, pure cryptanalysis), the van Beuningen 1657 key, the Linhares dictionary code (Vieyra 1809; check-solved blocked until Textos Politicos 1993 is read on your machine, L10) and Jan van Nassau's cipher lines of 17 Apr 1574 (WVO 5551). Three counted today, each after two audits and a clean rolling quality check. Live lanes: YX (left-open targets), VX (keys beside the letter, Dutch archives), KX (key reuse). TX, PX, LX, OX and DX closed on their handoffs. The other account's lanes are idle until 26 Sept 13:00 UTC. Retrospective h ran; its four fixes are being applied.",
  "sidequests": [
   {
    "title": "Grants applications",
