@@ -35,18 +35,55 @@
   "date": "25 Sept 2026",
   "method": "tools/homophonic_anneal.py (1:1 MASC anneal, order=3, restarts=8, iters=40000) on the 98-letter Pelling transcription, scored against Danish (tools/data/da19/, built this pass), German (tools/data/de16/) and English (tools/data/pg1661_holmes.txt+pg2701_mobydick.txt) corpora, each with a matched control (real plaintext of that language enciphered as a K=23/N=98 MASC and solved blind, 3 seeds). Script/output: specs/cheap-tests/copenhagen-1835/ (rerun.sh, README.md).",
   "worker": "LANE B2 worker bCPH",
-  "target_scores": {"da": -221.9, "de": -233.3, "en": -236.4},
+  "target_scores": {
+   "da": -221.9,
+   "de": -233.3,
+   "en": -236.4
+  },
   "control_scores_3seeds": {
-   "da": {"letters_correct_pct": [63.3, 0.0, 73.5], "score_range": [-222.0, -207.1]},
-   "de": {"letters_correct_pct": [80.6, 85.7, 85.7], "score_range": [-202.3, -198.2]},
-   "en": {"letters_correct_pct": [93.9, 93.9, 93.9], "score_range": [-200.0, -200.0]}
+   "da": {
+    "letters_correct_pct": [
+     63.3,
+     0.0,
+     73.5
+    ],
+    "score_range": [
+     -222.0,
+     -207.1
+    ]
+   },
+   "de": {
+    "letters_correct_pct": [
+     80.6,
+     85.7,
+     85.7
+    ],
+    "score_range": [
+     -202.3,
+     -198.2
+    ]
+   },
+   "en": {
+    "letters_correct_pct": [
+     93.9,
+     93.9,
+     93.9
+    ],
+    "score_range": [
+     -200.0,
+     -200.0
+    ]
+   }
   },
   "result": "not moved: no legible decode in any language. Weak, asymmetric positive signal for Danish over German/English (target's da score sits inside the da control's own real-plaintext score range, unlike de/en where the target scores well below the control range) -- but the da control's own blind recovery is low and erratic (0-73.5%), so this is not a clean solve-rate comparison. Full reasoning and two caveats (da19 corpus is smaller/noisier than de/en; the en control's ~94% is a Gutenberg-boilerplate ceiling artifact, not a real MASC-recovery baseline) in specs/cheap-tests/copenhagen-1835/README.md. rule 10: no novelty wording, nothing solved to classify. Test 2 not run per brief."
  },
  "judge": {
   "letters_min": 90,
   "letters_max": 115,
-  "control_samples": 200
+  "control_samples": 200,
+  "language": "da19",
+  "min_word_cover": 0.6,
+  "note": "da19 wired 25 Sept 2026 by LANE B2 (1845 Historisk Tidsskrift). Era caveat (rule 3): the note is post-war, the corpus 1845; treat a FAIL near the real_p05 line as uncalibrated, not a negative."
  },
  "value": "medium: ACA-failed, 13-comment thread, small clean target (monoalphabetic per multiple independent commenters) but no wired Danish corpus and an unresolved transcription discrepancy",
  "model": "Sonnet",
