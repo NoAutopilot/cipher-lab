@@ -1,4 +1,8 @@
 open
+Provisional (25 Sept 2026, QA/YX-FIX): section 8's matched-control negative (29.3% vs control avg 33.4%) rests on
+one unreconciled transcription pass (`passA.tsv` only, no second blind pass landed -- see section 8); a pass B
+and reconciled re-run is briefed separately as YX-BARB, and this negative should be treated as provisional until
+that lands.
 Standard edition read by this worker: Birch, *A Collection of the State Papers of John Thurloe* (1742), vol. 2,
 pp.685-686, 690-691, 704, 721-722, read from page images (archive.org `collectionofstat02thur`, leaves 693-694,
 698-699, 712, 729-730; `images/manifest.json`); British History Online's edition of the same volume,
@@ -266,7 +270,8 @@ homophone codes, so ground truth is known):
 `python3 coverage_test.py` and `python3 matched_control.py --seeds 10` reproduce these numbers (both scripts
 read only `passA.tsv`/`key_gloss.tsv` and, for the control, `tools/data/fr16`; no network).
 
-**Verdict: negative with a matched control.** The target's raw coverage (29.3%) is not distinguishable from --
+**Verdict: negative with a matched control, provisional** (see the note under the status line: rests on
+`passA.tsv` alone, no second pass reconciled yet; YX-BARB runs pass B separately). The target's raw coverage (29.3%) is not distinguishable from --
 and is in fact slightly *below* -- what an unrelated control of the identical design achieves purely by chance
 (avg 33.4%, and the control's own sense rate on its "newly covered" tokens is a respectable 74% purely because
 the reused homophone codes decode to ultra-common short words that are correct at a high prior rate anywhere in
