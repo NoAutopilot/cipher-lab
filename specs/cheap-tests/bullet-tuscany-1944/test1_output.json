@@ -1,0 +1,285 @@
+{
+ "target": {
+  "cipher_body_len": 44,
+  "claimed_plaintext_len": 39,
+  "length_mismatch": 5,
+  "mismatch_implication": "Vigenere, Beaufort, variant Beaufort and simple substitution are all length-preserving (one ciphertext letter per plaintext letter); with 44 cipher letters and only 39 claimed plaintext letters, no key of any of these families can map the full 44-letter body onto this plaintext under any of them -- 5 cipher letters have no plaintext counterpart at all. Schmeh's prose rejection is confirmed mechanically, not just on plausibility grounds. The scan below is a fallback probe: does ANY contiguous 39-letter window of the 44-letter body (6 possible offsets) look consistent with a short-period key or a MASC under the claimed plaintext, in case the poster silently dropped 5 letters (e.g. treating part of the body as further metadata).",
+  "alignment_scan": {
+   "offsets_tested": 6,
+   "per_offset": [
+    {
+     "offset": 0,
+     "window": "CBFUKYYEVOZILOOZVNCWJKQRSAWBYZUGYTZWYBA",
+     "families": {
+      "vigenere": {
+       "best_period": 20,
+       "best_score": 0.5385
+      },
+      "beaufort": {
+       "best_period": 20,
+       "best_score": 0.5128
+      },
+      "variant_beaufort": {
+       "best_period": 20,
+       "best_score": 0.5385
+      }
+     },
+     "masc": {
+      "violations": 37,
+      "n_pairs": 39,
+      "distinct_cipher_letters": 21,
+      "distinct_plain_letters": 19
+     }
+    },
+    {
+     "offset": 1,
+     "window": "BFUKYYEVOZILOOZVNCWJKQRSAWBYZUGYTZWYBAT",
+     "families": {
+      "vigenere": {
+       "best_period": 18,
+       "best_score": 0.5128
+      },
+      "beaufort": {
+       "best_period": 20,
+       "best_score": 0.5641
+      },
+      "variant_beaufort": {
+       "best_period": 18,
+       "best_score": 0.5128
+      }
+     },
+     "masc": {
+      "violations": 38,
+      "n_pairs": 39,
+      "distinct_cipher_letters": 21,
+      "distinct_plain_letters": 19
+     }
+    },
+    {
+     "offset": 2,
+     "window": "FUKYYEVOZILOOZVNCWJKQRSAWBYZUGYTZWYBATR",
+     "families": {
+      "vigenere": {
+       "best_period": 19,
+       "best_score": 0.5385
+      },
+      "beaufort": {
+       "best_period": 20,
+       "best_score": 0.5128
+      },
+      "variant_beaufort": {
+       "best_period": 19,
+       "best_score": 0.5385
+      }
+     },
+     "masc": {
+      "violations": 37,
+      "n_pairs": 39,
+      "distinct_cipher_letters": 21,
+      "distinct_plain_letters": 19
+     }
+    },
+    {
+     "offset": 3,
+     "window": "UKYYEVOZILOOZVNCWJKQRSAWBYZUGYTZWYBATRS",
+     "families": {
+      "vigenere": {
+       "best_period": 19,
+       "best_score": 0.5385
+      },
+      "beaufort": {
+       "best_period": 18,
+       "best_score": 0.5128
+      },
+      "variant_beaufort": {
+       "best_period": 19,
+       "best_score": 0.5385
+      }
+     },
+     "masc": {
+      "violations": 37,
+      "n_pairs": 39,
+      "distinct_cipher_letters": 20,
+      "distinct_plain_letters": 19
+     }
+    },
+    {
+     "offset": 4,
+     "window": "KYYEVOZILOOZVNCWJKQRSAWBYZUGYTZWYBATRSU",
+     "families": {
+      "vigenere": {
+       "best_period": 20,
+       "best_score": 0.5897
+      },
+      "beaufort": {
+       "best_period": 20,
+       "best_score": 0.5385
+      },
+      "variant_beaufort": {
+       "best_period": 20,
+       "best_score": 0.5897
+      }
+     },
+     "masc": {
+      "violations": 39,
+      "n_pairs": 39,
+      "distinct_cipher_letters": 20,
+      "distinct_plain_letters": 19
+     }
+    },
+    {
+     "offset": 5,
+     "window": "YYEVOZILOOZVNCWJKQRSAWBYZUGYTZWYBATRSUA",
+     "families": {
+      "vigenere": {
+       "best_period": 20,
+       "best_score": 0.5641
+      },
+      "beaufort": {
+       "best_period": 20,
+       "best_score": 0.5385
+      },
+      "variant_beaufort": {
+       "best_period": 20,
+       "best_score": 0.5641
+      }
+     },
+     "masc": {
+      "violations": 38,
+      "n_pairs": 39,
+      "distinct_cipher_letters": 20,
+      "distinct_plain_letters": 19
+     }
+    }
+   ]
+  }
+ },
+ "controls": [
+  {
+   "seed": 1,
+   "families": {
+    "vigenere": {
+     "true_period": 4,
+     "recovered_best_period": 4,
+     "recovered_best_score": 1.0,
+     "period_found": true
+    },
+    "beaufort": {
+     "true_period": 5,
+     "recovered_best_period": 5,
+     "recovered_best_score": 1.0,
+     "period_found": true
+    },
+    "variant_beaufort": {
+     "true_period": 6,
+     "recovered_best_period": 6,
+     "recovered_best_score": 1.0,
+     "period_found": true
+    }
+   },
+   "masc": {
+    "violations": 0,
+    "n_pairs": 39,
+    "distinct_cipher_letters": 19,
+    "distinct_plain_letters": 19
+   }
+  },
+  {
+   "seed": 2,
+   "families": {
+    "vigenere": {
+     "true_period": 3,
+     "recovered_best_period": 3,
+     "recovered_best_score": 1.0,
+     "period_found": true
+    },
+    "beaufort": {
+     "true_period": 4,
+     "recovered_best_period": 4,
+     "recovered_best_score": 1.0,
+     "period_found": true
+    },
+    "variant_beaufort": {
+     "true_period": 5,
+     "recovered_best_period": 5,
+     "recovered_best_score": 1.0,
+     "period_found": true
+    }
+   },
+   "masc": {
+    "violations": 0,
+    "n_pairs": 39,
+    "distinct_cipher_letters": 19,
+    "distinct_plain_letters": 19
+   }
+  },
+  {
+   "seed": 3,
+   "families": {
+    "vigenere": {
+     "true_period": 4,
+     "recovered_best_period": 4,
+     "recovered_best_score": 1.0,
+     "period_found": true
+    },
+    "beaufort": {
+     "true_period": 7,
+     "recovered_best_period": 7,
+     "recovered_best_score": 1.0,
+     "period_found": true
+    },
+    "variant_beaufort": {
+     "true_period": 5,
+     "recovered_best_period": 5,
+     "recovered_best_score": 1.0,
+     "period_found": true
+    }
+   },
+   "masc": {
+    "violations": 0,
+    "n_pairs": 39,
+    "distinct_cipher_letters": 19,
+    "distinct_plain_letters": 19
+   }
+  }
+ ],
+ "summary": {
+  "families": {
+   "vigenere": {
+    "target_best_score_any_offset": 0.5897,
+    "control_recovered_scores": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "control_period_found_all_seeds": true
+   },
+   "beaufort": {
+    "target_best_score_any_offset": 0.5641,
+    "control_recovered_scores": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "control_period_found_all_seeds": true
+   },
+   "variant_beaufort": {
+    "target_best_score_any_offset": 0.5897,
+    "control_recovered_scores": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "control_period_found_all_seeds": true
+   }
+  },
+  "masc": {
+   "target_min_violations_any_offset": 37,
+   "control_violations": [
+    0,
+    0,
+    0
+   ]
+  }
+ }
+}

@@ -32,6 +32,15 @@
   "3. Index-of-coincidence test on the 44-letter body to distinguish monoalphabetic from polyalphabetic before committing to a specific family, matched control: English plaintext N=44 under each candidate family. Cost under $1."
  ],
  "matched_control": "not yet run; test 2 above names the design (English plaintext, N=44, same cipher family, same solver); flagged in advance that N=44 is small enough that even a correct method's control may read only partially",
+ "cheap_test_done": {
+  "1": {
+   "date": "25 Sept 2026",
+   "method": "specs/cheap-tests/bullet-tuscany-1944/run_test1.py -- length check (44 cipher letters vs 39 claimed-plaintext letters, decisive on its own for length-preserving families), then a 6-offset scan of every contiguous 39-letter window of the cipher body against the claimed plaintext under Vigenere, Beaufort, variant Beaufort (derived keystream scored for periodicity, periods 1-20) and simple substitution (cipher-to-plaintext mapping consistency/injectivity), with a matched control: the same claimed plaintext enciphered under a real random key of each family (3 seeds), identical script run on the result",
+   "target_verdict": "length mismatch 44 vs 39 (diff 5) rules out a full-body mapping under any of these length-preserving families outright. Fallback 6-offset scan: best periodicity score any offset/family 0.564-0.590 (Vigenere/variant Beaufort 0.590, Beaufort 0.564), all from the degenerate high-period end (period 20, ~2 samples/residue class); at short periods 1-7, where a real key would plausibly sit, target scores only 0.08-0.31, near chance. MASC: minimum 37 of 39 cipher-plaintext pairs violate consistency/injectivity at the best offset (39 at the worst).",
+   "control_verdict": "control (3 seeds) cleanly recovers its planted key for every polyalphabetic family: recovered score 1.0, true period found at all 3 seeds. MASC control: 0 violations, all 3 seeds.",
+   "conclusion": "no key of Vigenere, Beaufort, variant Beaufort or simple substitution maps the 44-letter cipher body to the forum-claimed plaintext; the method demonstrably works (control recovers cleanly) so the target's failure is not a broken test. M-209-style check subsumed by the Beaufort scan (periods 1-20 covers the 'at minimum fixed-period' bar); 39-44 derived letters are too few to test the M-209's own pin/lug structure, not pursued further. Closes the rejected forum claim mechanically per the brief; does not test other cipher families against an undetermined plaintext. Test 2 not run (brief: run test 1 only)."
+  }
+ },
  "judge": {
   "language": "en",
   "letters_min": 40,
