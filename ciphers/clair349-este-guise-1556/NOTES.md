@@ -1,5 +1,87 @@
 partial
 
+## YX-TR349 (25 Sept 2026): key transcription, step 1 of 3
+
+`python3 tools/intake_gate_check.py ciphers/clair349-este-guise-1556`:
+```
+ciphers/clair349-este-guise-1556: partial (line 1) -- edition/page or full-text-search citation found within 6 lines
+EXIT: 0
+```
+Gate passes; proceeded to deep work per this brief (`.claude/briefs/runs/2026-09-25-lane-yx-tr349.md`).
+
+**Step 1 (key transcription) done at reduced confidence; steps 2-3 (ciphertext transcription, decode) not started this
+session -- see "Handoff" below.**
+
+**Image quality correction, first action this session.** The key images already on disk (`images/fr20974_p57_key.jpg`,
+`images/fr20974_p69_key.jpg`, fetched by YX-CS349) were only 750x600px (a Gallica `,600` IIIF size request), too low-
+resolution for confident symbol-level reading -- individual homophone digits and signs are only a few pixels tall at
+that size. Fetched full native resolution for both canvases (`f30/full/full/0/native.jpg`, `f37/full/full/0/native.jpg`,
+~7460x5960px each, 2 Gallica requests, 2s apart, browser UA, both HTTP 200) as `fr20974_p57_native.jpg` /
+`fr20974_p69_native.jpg`; manifest.json updated with both new entries and corrections to the old entries' content
+descriptions, which turned out to be wrong once native resolution was available (no "4-column nomenclator" table, no
+pasted correction slip on either leaf -- both leaves in fact carry the *same* template: Alphabet / Doubles+Nulles /
+Monosillabes x2 rows / a further word row, plus a facing-page word list, differing between p.57 and p.69 mainly in
+that word list, i.e. in the addressee-specific names -- the Doubles-row digits read identically on both leaves,
+22.18.66.69.76.106.52.56.54.58.9, consistent with a fixed chancery template in fr.20974 personalised per
+correspondent; not confirmed against a third key in the book). This determines a design correction: the earlier
+description of the ciphertext as "arbitrary symbols and figures" (YX-CS349) is more precisely a **substitution
+alphabet mixing numeral homophones and invented non-numeral signs for the same letters** (e.g. this pass's letter B
+has one digit homophone, `3`, and one non-digit sign homophone), not a symbol-only design.
+
+**Method.** Cropped six sections per key leaf (alphabet row, doubles+nulles row, two monosyllable rows, a further
+word row, and the facing-page word list) at native resolution. Two Sonnet subagents (the brief's cap of at most two)
+each blind-read all twelve crops (six per leaf) independently, neither seeing the other's output or this worker's own
+reading, and returned a TSV with a grade (H/M) and note per cell. This worker then closely re-examined the alphabet
+row itself at very high zoom (3-5x on 100-200px-wide slices) since it is the single highest-value section, resolving
+several genuine three-way disagreements from the image directly (e.g. letter B's cell holds a non-digit sign *plus*
+the digit 3, which one subagent had conflated into "3" alone and the other could not read at all; letter F's homophone
+is a non-digit sign that happens to resemble the letter "H", distinct from the real letter H's own cell two columns
+over, which both subagents had partly confused).
+
+**Result: the front half of the alphabet (A-I/J) plus the whole Doubles/Nulles row settle at grade H** (cross-checked
+across this worker's own read, both blind subagent passes, and -- for Doubles -- the identical row on the p69 leaf):
+A={12,14,28; 16 struck/void}, B={a sign + 3}, C=9, D=5, E={26,16,62}, I/J={60,64,24}, Doubles pc/cc/ff/ll/mm/nn/pp all
+read cleanly (22,18,66,69,76,106,52). **The back half of the alphabet (L through &) and most of the Monosillabes/
+word-list code columns do not settle this pass** -- the manuscript is genuinely crowded there (up to 3 stacked
+homophones per letter in a narrow column, several ligatured abbreviations that may be bleed-through from the facing
+page rather than codes), and this worker's own close reading did not converge with either subagent closely enough to
+commit a confident reading; see `key_alpha.tsv` rows marked `unresolved`/M and the note on each. The word LISTS
+(monosyllables, the facing-page name/place list) are mostly legible as **words** even where their numeric/sign codes
+are not -- captured in `key_nomen.tsv` with the words at reasonable confidence and codes graded M or left `?`.
+
+**Files:** `key_alpha.tsv` (47 rows: 20 H / 27 M -- Alphabet A-I/J plus all ten Doubles digits, and the two Nulles-
+adjacent sign IDs, at H; L-Z and both Nulles rows' exact sign shapes at M), `key_nomen.tsv` (59 rows: 5 H / 54 M --
+mostly words at M because their codes did not resolve), `images/atlas/` (17 reference crops: 6 alphabet-row segments
+`p57_alpha_seg1-6.jpg` at 1.5x zoom, `p57_doubles_nulles.jpg`, `p57_monosyl_row1/2.jpg`, `p57_lastword_row.jpg`,
+`p57_left_wordlist.jpg`, and the p69 equivalents for cross-checking -- these are section-level crops, not one crop
+per individual sign as the brief's "S01, S02..." scheme implies; a genuine per-glyph atlas of the ~15-20 distinct
+non-digit signs identified (coded S01-S26 in the two TSVs by description only, not yet cropped to their own files)
+is follow-up work, noted below). `images/manifest.json` updated. Total `images/` folder size 23MB (cap 30MB).
+
+**Grades:** H 25 / M 81 across both TSVs (106 rows total); 0 I/C (no known-plaintext or key-source-independent
+readings attempted this pass -- this whole key is itself the "key source", graded H only where the manuscript image
+is unambiguous to two-plus independent readers).
+
+**Hosts this session:** gallica.bnf.fr 2 requests (native-resolution key leaves, browser UA, 2s apart, both HTTP
+200). No other hosts. 2 Sonnet subagents (blind key-table reads, within the brief's 2-subagent cap).
+
+**Handoff for steps 2-3 (not started, time-boxed out):** Ciphertext line-cutting was tested (not committed) --
+`python3 tools/iiif_lines.py --image images/clair349_f9_right_full.jpg --out ciphers/clair349-este-guise-1556/images
+--prefix f9right --debug` on the already-fetched full-resolution right page detects 37 line-bands (pitch ~119px);
+eye-count from YX-CS349 was ~33, so a few detected bands are likely blank margin/date-line artifacts at the top and
+bottom, not real ciphertext lines -- check the debug overlay before starting passes, per transcription.md. The
+ciphertext itself (checked directly, not merely assumed) is a genuine mix of numeral groups and a smaller number of
+non-numeral signs matching this key's design, consistent with cipher no.15. Next steps in order: (1) a further
+close-reading or expert pass to settle the L-Z alphabet cells and the Nulles/Monosillabes codes this pass left
+unresolved -- ideally with a column-boundary detection script (an ink-projection profile like `iiif_lines.py`'s row
+detection, but on columns) rather than eyeballing, since manual column assignment is the main source of remaining
+disagreement; (2) per this brief's step 2, cut the ciphertext line crops for real, two blind subagent passes against
+the atlas, reconcile with `tools/reconcile_passes.py`, gate at 60% agreement; (3) per step 3, merge `key_alpha.tsv`
++ `key_nomen.tsv` into a decode.json-driven `tools/decode_key.py` run (an option to merge two key files will be
+needed, per the brief, since this target has two separate TSVs rather than one key.tsv+exceptions.tsv pair), write
+`specs/clair349-este-guise-1556.json`, and run `judge_plaintext.py`. Kind stays **recovery** per the 24 Sept
+verdict (key source: `published` identification of a `period` key sheet, per this brief).
+
 Ribier, *Lettres et memoires d'estat* (1666, IA `bub_gb_bOnmNv2ZLVoC` pp.316-320/livre IV annee 1540, and IA
 `bub_gb_qWTswSr32NYC` pp.[imagecount 831] reaching Dec. 1557) read and grepped in full by this worker for
 "Ferrare"/"Guise": no letter matching this correspondence; Guise's own *Memoires-journaux* (Michaud-Poujoulat,

@@ -1,0 +1,60 @@
+section	word_or_phrase	code	kind	grade	crop	note
+MONOSYL1	dict	?	unresolved	M	atlas/p57_monosyl_row1.jpg	word clear; this worker's crop cuts the code row for the whole "Monosillabes" line 1 at its lower edge -- neither this worker nor either blind subagent pass could read the codes for this row with confidence; a re-crop 200-300px taller is needed
+MONOSYL1	fist	?	unresolved	M	atlas/p57_monosyl_row1.jpg	word read as "fist"/"fust" (long-s); code unresolved, see above
+MONOSYL1	fit	?	unresolved	M	atlas/p57_monosyl_row1.jpg	code unresolved
+MONOSYL1	nest	?	unresolved	M	atlas/p57_monosyl_row1.jpg	word ambiguous m/n first letter; code unresolved
+MONOSYL1	avez	?	unresolved	M	atlas/p57_monosyl_row1.jpg	word uncertain (nauez/auez/navez all suggested); code unresolved
+MONOSYL1	quel	?	unresolved	M	atlas/p57_monosyl_row1.jpg	code unresolved
+MONOSYL1	quil	?	unresolved	M	atlas/p57_monosyl_row1.jpg	code unresolved
+MONOSYL1	fait	?	unresolved	M	atlas/p57_monosyl_row1.jpg	word clear; code unresolved
+MONOSYL1	pour	?	unresolved	M	atlas/p57_monosyl_row1.jpg	word clear; code unresolved
+MONOSYL1	doux	?	unresolved	M	atlas/p57_monosyl_row1.jpg	word clear (or "Sous"/"bous", secretary d/S/b ambiguous); code unresolved
+MONOSYL1	mon	?	unresolved	M	atlas/p57_monosyl_row1.jpg	abbreviated "m con -- dot"; code unresolved
+MONOSYL1	dict	?	unresolved	M	atlas/p57_monosyl_row1.jpg	second occurrence in this row; code unresolved
+MONOSYL1	je	?	unresolved	M	atlas/p57_monosyl_row1.jpg	word clear; code unresolved
+MONOSYL1	est	?	unresolved	M	atlas/p57_monosyl_row1.jpg	word clear; code unresolved
+MONOSYL2	avec	8	digit	M	atlas/p57_monosyl_row2.jpg	word and digit both fairly clear; two of three transcriptions (this worker, one subagent) read 8
+MONOSYL2	tout	2	digit	M	atlas/p57_monosyl_row2.jpg	digit read as 2 by this worker and one subagent; the other subagent read "a"
+MONOSYL2	fault	?	unresolved	M	atlas/p57_monosyl_row2.jpg	code shape disputed across all three reads (52-ligature / B2 / fl2); not safe to commit
+MONOSYL2	hault	?	unresolved	M	atlas/p57_monosyl_row2.jpg	code read as a looped L-shape by one pass, unresolved
+MONOSYL2	en	?	unresolved	M	atlas/p57_monosyl_row2.jpg	word possibly "en"/"ung"/"im"; code unresolved (a "9"-like mark suggested but not confirmed)
+MONOSYL2	oy	?	unresolved	M	atlas/p57_monosyl_row2.jpg	code unresolved
+MONOSYL2	par	?	unresolved	M	atlas/p57_monosyl_row2.jpg	code unresolved
+MONOSYL2	tant	?	unresolved	M	atlas/p57_monosyl_row2.jpg	code disputed between 9/3/q; not safe to commit
+MONOSYL2	quant	?	unresolved	M	atlas/p57_monosyl_row2.jpg	code disputed between 3/z; not safe to commit
+MONOSYL2	mon	?	unresolved	M	atlas/p57_monosyl_row2.jpg	second "mon"-like entry in this row (nont/vont also suggested); code unresolved
+MONOSYL2	nont	S11	sign	M	atlas/p57_monosyl_row2.jpg	non-digit sign: a small circle with a bar/cross through it, agreed by all three reads as a distinct symbol (not a digit)
+MONOSYL2	une	S12	sign	M	atlas/p57_monosyl_row2.jpg	non-digit sign: a small cross/dagger mark, agreed by all three reads as a distinct symbol (not a digit)
+LASTWORD	de	?	unresolved	M	atlas/p57_lastword_row.jpg	word clear; code read variously as a letter-shaped mark ("h"/"b") -- not safe to commit
+LASTWORD	florence	?	unresolved	M	atlas/p57_lastword_row.jpg	NOTE: "florence" also appears in the left_wordlist below with a different code ("y") -- this may be a second, distinct nomenclator entry (e.g. a place-name vs. an adjective/common-word homonym) rather than a duplicate; not resolved which
+LASTWORD	douze	?	unresolved	M	atlas/p57_lastword_row.jpg	word/code both disputed across the three reads; not safe to commit
+LASTWORD	ami	A	letter_sign	M	atlas/p57_lastword_row.jpg	code read as a clear capital "A" by two of three passes
+LASTWORD	mal	M	letter_sign	M	atlas/p57_lastword_row.jpg	code read as a clear capital "M" by two of three passes
+LASTWORD	escu	?	unresolved	M	atlas/p57_lastword_row.jpg	word and code both uncertain (also read as "fua"/"esma")
+LASTWORD	artillerie	S13	sign	M	atlas/p57_lastword_row.jpg	non-digit sign: a plus/cross mark, agreed by all three reads
+LASTWORD	ligue	99	digit	M	atlas/p57_lastword_row.jpg	digit/doubled-loop read as "99" by two of three passes
+LASTWORD	beaute	T	letter_sign	M	atlas/p57_lastword_row.jpg	code read as a capital "T"-like mark by two of three passes
+LASTWORD	leurs	S14	sign	M	atlas/p57_lastword_row.jpg	non-digit sign: a script capital "E"-like loop
+LASTWORD	?	?	unresolved	M	atlas/p57_lastword_row.jpg	final word of the row not confidently read by any of the three passes (candidates: "mumpvcs", "sone", a heavily abbreviated flourish); code likewise unresolved
+LEFTLIST_P57	Le Roy de Boheme	S15	sign	H	atlas/p57_left_wordlist.jpg	word clear; code is a simple lowercase "e"-like loop, agreed by two of three passes
+LEFTLIST_P57	Le Roy	?	unresolved	M	atlas/p57_left_wordlist.jpg	no code visible on this line in any of the three reads -- possibly continues onto the next line's entry
+LEFTLIST_P57	Le Duc de Guyse	S16	sign	H	atlas/p57_left_wordlist.jpg	word clear; code is a tall long-s-like flourish, agreed by two of three passes; this is almost certainly the Guise addressee's own name-code
+LEFTLIST_P57	Le Duc d'Aumale	A	letter_sign	H	atlas/p57_left_wordlist.jpg	word and code (capital A) agree across all three passes, and match the identical line on p69 -- highest-confidence word-list entry
+LEFTLIST_P57	Monsr	S17	sign	M	atlas/p57_left_wordlist.jpg	word abbreviated/partly blotted; code read as a double-cross or "ff"/"H" ligature, not fully agreed
+LEFTLIST_P57	Nemours	?	unresolved	M	atlas/p57_left_wordlist.jpg	word tentative (also read "Nonneux"); no code seen
+LEFTLIST_P57	Aumale (variant spelling)	?	unresolved	M	atlas/p57_left_wordlist.jpg	tentative second entry near "Aumale"; no code seen
+LEFTLIST_P57	Espagnols	?	unresolved	M	atlas/p57_left_wordlist.jpg	word very tentative; no code seen
+LEFTLIST_P57	France	S18	sign	M	atlas/p57_left_wordlist.jpg	abbreviated "fran"; code is a distinctive figure-eight/infinity-like double loop, agreed by all three passes and matches the identical line on p69
+LEFTLIST_P57	Suisse/Savoie	S19	sign	M	atlas/p57_left_wordlist.jpg	word disputed (Suisse vs Savoye); code is a circle-shaped mark, agreed by all three passes and matches p69
+LEFTLIST_P57	gendarmerie	S20	sign	M	atlas/p57_left_wordlist.jpg	word tentative; code is a looped capital resembling "R", agreed loosely by all three and matches p69
+LEFTLIST_P57	haulte ligue	S21	sign	M	atlas/p57_left_wordlist.jpg	code is a lowercase "f"-like mark, agreed by all three and matches p69
+LEFTLIST_P57	gens de pied	S22	sign	M	atlas/p57_left_wordlist.jpg	code is a looped/tailed mark, agreed loosely by all three and matches p69
+LEFTLIST_P57	armee de mer	S23	sign	M	atlas/p57_left_wordlist.jpg	code is a small x/z-like cursive mark, agreed by all three and matches p69
+LEFTLIST_P57	cardinal de [Lorraine?]	S24	sign	M	atlas/p57_left_wordlist.jpg	word heavily abbreviated ("car. de"); code is a two-letter-looking ligature (L+B or similar), agreed loosely by all three and matches p69; the bracketed completion is this worker's guess, not transcribed
+LEFTLIST_P57	Rome	S25	sign	M	atlas/p57_left_wordlist.jpg	code is a single cursive loop
+LEFTLIST_P57	Naples	c	letter_sign	H	atlas/p57_left_wordlist.jpg	word and code (lowercase c) agree across all three passes
+LEFTLIST_P57	Milan	dd	letter_sign	M	atlas/p57_left_wordlist.jpg	code read as a doubled loop/letter shape by two of three passes
+LEFTLIST_P57	Florence	y	letter_sign	H	atlas/p57_left_wordlist.jpg	word and code (lowercase y) agree across all three passes
+LEFTLIST_P57	Ferrare	S26	sign	M	atlas/p57_left_wordlist.jpg	word clear; code is "nre" (abbreviation, "nostre"?) plus a following flourish sign -- likely marks this as the correspondent's OWN side (cardinal de Ferrare = the letter-writer), not a simple place-code; not resolved
+LEFTLIST_P57	Sienne	?	unresolved	M	atlas/p57_left_wordlist.jpg	rightmost entry, partly cut by the crop edge; word and code both unresolved
+LEFTLIST_P69	[differs from p57 -- a second correspondent's own name-code list, not transcribed row by row this pass]	?	unresolved	M	atlas/p69_left_wordlist.jpg	spot check only: "Le Duc d'Aulme"/A, "fran"/(figure-eight sign), "gens de pied", "armee de mer", "cardinal de", "Naples"/c, "Milan"/dd, "Florence"/y all read the same as p57 (see key_alpha.tsv note on the doubles row -- consistent with a shared chancery template for common words/places, personalised only for the addressee-specific top rows); the top rows here name a different set of dignitaries ("L'Empereur", "Le Roy d'Allemagne", etc. per one blind pass) appropriate to a different correspondent's key, not transcribed to row-level confidence this pass
