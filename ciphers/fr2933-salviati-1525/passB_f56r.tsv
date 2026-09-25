@@ -276,3 +276,47 @@ line	pos	code	marks	action	conf	note
 10	17	_		confirm	M
 10	18	_		confirm	H
 10	19	N		plain	H	"ra" ending of a plain word, plain cursive, misread as sign N -- same N-misread pattern as line6 pos16
+11	1	_		plain	H	"ma" ("but"), plain Italian cursive opening the line
+11	2	_		plain	M	"ch"-ligature (che/chi?), plain cursive, low share (.39) already flagged this
+11	3	_		plain	M	tail/loop of the same ligature, continuation of pos2
+11	4	_		plain	H	"gl" of "gli" ("the"), plain cursive
+11	5	_		plain	H	ascender "b" of "besognu" ("bisogno", need), plain cursive
+11	6	_		plain	M	"e" of "besognu", low share (.79->lam) already flagged this as uncertain
+11	7	_		plain	H	"sognu" body of the word "besognu", plain cursive
+11	8	_		plain	M	flourish/abbreviation stroke after "besognu"; does not match an established sign shape well (low share .46), likely still the same plain phrase
+11	9	_		plain	M	"yy"-like ligature continuing the plain phrase (low share .44)
+11	10	_		plain	M	raised "n" suspension mark over a stroke, plain-cursive abbreviation misread as sign Z
+11	11	_		plain	M	scribal "9"/con- suspension loop misread as sign g
+11	12	m	~	confirm	H
+11	13	_		confirm	M	faint ghost/bleed-through stroke behind pos14's bold ink, no independent stroke of its own
+11	14	bh		confirm	H
+11	15	y		confirm	H
+11	16	tee		confirm	H
+11	17	e	dot	confirm	M	mark reads as a doubled dot/hash rather than a single dot, but the e-loop shape is clear
+11	18	eps	1|dot	confirm	H
+11	19	e	#	confirm	M	overlaps box 20's ink (same bleed-through pattern as 13/14); e-loop clear, mark ambiguous
+11	20	S4		confirm	M
+11	21	_		confirm	M	loop-with-rightward-tail shape does not clearly match an established cluster; left as blank, share (.61) already flagged this
+12	1	g		confirm	H
+12	2	nt		confirm	H
+12	3	y		confirm	H
+12	4	S4	1	confirm	H
+12	5	dl		confirm	H
+12	6	Lx		confirm	M
+12	7	dl		confirm	M
+12	8	S4		confirm	H
+12	9	_		correct	M	clear rounded hook ("6"-like) stroke, not blank ink; does not match an established cluster confidently, closest is dl
+12	10	]	o	confirm	H
+12	11	Z		confirm	H
+12	12	S7		confirm	H
+12	13	lam		confirm	H
+12	14	sq		confirm	H	unmistakable square glyph
+12	15	y	#	correct	M	loop shape without a clear descender tail, closer to e/eps than y; low share (.48) already flagged this
+12	16	eps	1	confirm	H
+12	17	w		confirm	H
+12	18	e	dot|+	confirm	H
+12	19	S7	+	confirm	H
+12	20	]	ot	confirm	H
+12	21	eps	5	confirm	M
+12	22	Z	ot	correct	M	bracket-like "⊐" shape closer to the ] cluster than Z; low share (.59) already flagged this
+12	23	Z		correct	M	tall stroke with crossbar at line's right edge, more like a t/d-cross shape than Z; low share (.41) already flagged this, possibly a catchword/paragraph mark rather than a cipher sign
