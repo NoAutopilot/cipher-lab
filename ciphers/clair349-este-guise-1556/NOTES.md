@@ -788,3 +788,126 @@ session).
 **Hosts this session:** none (all work from images already on disk). No subagents (the brief's step 1 does not
 call for subagents; this worker's own visual/scripted work throughout, consistent with ZX-349's step 1
 precedent).
+
+## ZX-KEY349 (25 Sept 2026)
+
+Intake gate `partial`, exit 0 (orchestrator 15:44 UTC, ZX-349B 16:38 UTC, re-run by this worker 17:12 UTC). Brief:
+`.claude/briefs/runs/2026-09-25-lane-zx-key349.md`. Opus, one key-reading session, no host requests (all from the
+native images already on disk; no Gallica fetch was needed), one Sonnet subagent for the blind cross-read.
+
+**Why the earlier reads stalled.** The key is written sideways on fr.20974 p.57 (and p.69). Turned 90 degrees clockwise
+(`build_key_cells.py` documents the frame), every column of the L-Z alphabet, the Doubles, the Nulles, both
+Monosillabes rows, the last word row and the name list reads cleanly at native resolution: the columns are not crowded,
+the earlier section crops were read on their side. p.69 carries the same template in the same hand and was read as a
+cross-check cell by cell (alphabet, Doubles, Nulles, name list agree with p.57; differences noted per row).
+
+**Step 1: every cell read.** `build_key_cells.py` holds one hand-measured box per cell and writes
+`images/atlas/key_cells/` (104 crops at 0.4 scale), `key_alpha.tsv` and `key_nomen.tsv` (same columns as before; new
+`kind` values `void` for A's struck 16 and `none` for list entries with no code); `--check` exits 1 if the TSVs are
+stale. Values read (value: codes, top to bottom):
+
+A 12 14 [16 struck] 28 | B S01 3 | C 9 | D 5 | E 26 16 62 | F S02 | G S03 | H 17 | I/J 60 64 24 | L S27 5 | M S28 S29 |
+N S30 15 | O 82 44 | P S31 | Q S32 | R S33 S34 | S S35 S36 | T S37 S38 | V 102 7 104 | X S39 | Y 73 | Z S40 | & S04 S05.
+Doubles: sc?/22 cc/18 ff/66 ll/69 mm/76 nn/106 pp/52 rr/56 long-ss/54 tt/58 round-ss/9. Nulles (ten signs, two rows,
+under a heading read on p.69 as "Pour lire suivante: sont la precedente nulle", wording M): S06-S10, S41-S45.
+Monosillabes, last row and name list: see `key_nomen.tsv` (60 rows; 56 carry a code).
+
+Homographs in the key as drawn (logged, not resolved): 5 is D's only code and L's second; 22 is the Doubles "sc?" code
+and "pour"; 9 is C and the round-ss double; S37 ("to") is T's first homophone and "fit"; S17 (two crossed t) is
+"Monsr" and "fist"; S32 is Q and "n'aye". A letter-level decode will need context (or the gloss, below) to split them.
+
+| table | before (YX-TR349) | after (this pass) |
+|---|---|---|
+| key_alpha.tsv | 47 rows: 20 H / 27 M, 9 `unresolved` | 62 rows: 52 H / 10 M, 0 unresolved |
+| key_nomen.tsv | 59 rows: 5 H / 54 M, 33 without a code | 60 rows: 44 H / 16 M, 4 without a code (3 of them have none on the leaf) |
+
+**Blind cross-read of the M cells:** one Sonnet subagent read the 27 M cells blind (native-scale crops, values hidden, labels m01-m27; key in the worker's scratchpad). Its code agreed with this worker's on 21 of 27 (M/S28+S29, T/S37 (second read 'ta' for S38), &/S04+S05, sc?/22, the eleven word codes fist, fit, dict, n'aye, avec, une, mon, florin, douze, arm., escus, beaute, munitions?, Le Roy mre (read as digit 4), Sienne?, and 'no code' on Nemours and Espagnols?). Disagreed or unread on 6: D (saw a hook squiggle, not 5), S (saw S35+S36 as one tall crossed sign), rr (read 16 for 56), long-ss and round-ss (crop cut the digit; the Doubles band is now extended to y 1520 in the script) and 'cy?' (unclear). Taken over from the blind read: florin(s) (was florens), beaute (was beaulte?), douze? (this worker had Venize; two readers against one). Those rows stay or go M as noted in the TSVs.
+
+**Corrections (row, old, new, reason):**
+
+| row | old | new | reason |
+|---|---|---|---|
+| H | 17 M | 17 H | directly under the H header on both leaves |
+| L | ? unresolved | S27 + 5 | rotated read; ff-like sign and 5 are L's column |
+| M | ? unresolved | S28 + S29 | "cm" and "uu" signs |
+| N | ? unresolved | S30 + 15 | "cma" sign and 15 |
+| O | ? unresolved | 82 + 44 | the "82" YX-TR349 placed in the M/N cluster is O's |
+| P | ? unresolved | S31 | circle-on-cross |
+| Q | ? unresolved | S32 | |
+| R | ? unresolved | S33 + S34 | S34 is the "Ao" shape (see question b) |
+| S | 73 M | S35 + S36 | 73 is Y's, not S's |
+| T | 104 M | S37 + S38 | "to" and "tc"; 104 is V's |
+| V | ? unresolved | 102 + 7 + 104 | |
+| X | 73 M | S39 | 73 is Y's |
+| Y | ? unresolved | 73 | |
+| Z | S04 M | S40 | the # (S04) is &'s first code |
+| & | S05 M | S04 + S05 | |
+| F | S02 M (crop wrong) | S02 H, re-cropped | ZX-349's S02 crop showed G's header "6 ." |
+| G | S03 M | S03 H | |
+| DOUBLES qq / ff2 / st / ss | 56 / 54 / 58 / 9 | rr / long-ss / tt / round-ss, same digits | pair letters re-read; digits unchanged |
+| NULLES | 5 signs (S06-S10) | 10 signs (S06-S10, S41-S45) | second row of five was never read |
+| MONOSYL1 (14 rows, all `?`) | codes unresolved; "je" | codes S46, S17, S37, S47, S32, S48, S49, S50, 22, S51, S52, S53, S54, S55; "il" | code row read (the earlier crop cut it); "Jl" is il |
+| MONOSYL2 avec / tout | 8 / 2 | S56 / S57 | both are signs, not digits |
+| MONOSYL2 fault..quant, mon | ? | S58-S65 | read |
+| LASTWORD de / florence / douze / ami / escu / beaute / ? | ? / ? / ? / A / ? / T / ? | S66 / S67 (florin(s)) / S68 (douze?) / S69 (arm.) / S71 / S72 / S73 (munitions?) | re-read; "ami" was a misreading; "A" on arm. is A+hooked v, not a plain A |
+| LASTWORD mal | M | S70 (mil) | word is mil |
+| LEFTLIST Le Roy mre (new), L'Empereur (new) | absent | S74, S75 | two top rows were not in the table |
+| LEFTLIST Aumale / Naples / Milan / Florence | letter_sign A / c / dd / y | S76 / S77 / S78 / S79 | given atlas codes so passes can use them |
+| LEFTLIST Suisse/Savoie | S19 M | Suisses S19 H | long ss legible |
+| LEFTLIST Sienne | ? | S80 ("de sire" cluster) M | |
+| LEFTLIST_P69 | one summary row | dropped | p.69 list read in full: same names and same codes as p.57 (Le Roy d'[Angleterre] and aumalle struck on p.69) |
+
+**Step 2: atlas extended.** `images/atlas/atlas.tsv` and `sheet.jpg` now carry S01-S80 (S27-S80 new, crops from the
+key image only, shape descriptions only; S02 re-cropped). ciphertext types from `images/atlas/xq_types.tsv` that now
+have an atlas code: sign_to_ligature -> S37; sign_Ao_ligature -> S34; sign_R_loop -> S33 (R) or S20 (gendarmerie),
+two candidates; sign_Y_like -> S32 or S79; sign_u_like -> S29; sign_s_like -> S35. separator_z_curl -> no sign: it is
+the digit 2 (question a). separator_vertical_bar, separator_double_dash, sign_other_letterlike (114): no code assigned
+(the last is a catch-all of one-off descriptions; S28 "cm" and S30 "cma" match its "Cml-like" / "nao"-like notes by
+description but no token was checked).
+
+**Step 3, the three questions.**
+
+The first check that settles all three: **the ciphertext leaf carries a small interlinear hand above many codes.**
+YX-TR349B, ZX-349 and ZX-349B logged these as "plaintext fragments bleeding through" ("quel", "que", "bon"). At native
+resolution on `images/clair349_f9_right_full.jpg` they sit one above each code, in a smaller hand, and on the tokens this
+worker checked they agree with the key values read above: 64 under "j", 12 under "a", 73 under "y", S34 under "r" (three
+times), 26 and 62 under "e", 16 under "e", 9 under "c", 104 under "u", S27 under "l", 5 under "l", 58 under "tt", S33
+under "r", S31 under "p", 82 under "o", 15 under "n", and |22| under "pour". This is a contemporary decipherment on the
+original, i.e. known plaintext for most of the letter (grade C once transcribed). It was used here only as evidence
+about the key; no line was decoded and nothing is reported as a reading (brief step 4).
+
+(a) **separator_vertical_bar (157) and separator_z_curl (162).** Neither is in the Nulles row (S06-S10, S41-S45; the
+nearest shape, S45, a small reversed-3, is not the ciphertext's z). The z-curl is **the digit 2** in this hand, the same
+z-form the key uses for 12, 22, 62, 82, 102: "1z" is glossed a (12), "z6" and "6z" e (26, 62), "2z" pour (22). Passes
+that coded it as a separator split two-digit groups (so 12 became "1" + separator). The vertical bar is not in the
+key at all; on the two instances checked it brackets a nomenclator code (|22| glossed "pour", i.e. the word, not the
+Doubles pair that shares 22), so it reads as a word-code marker, not a null. Evidence: 4 z-curl and 2 bar instances
+checked against the gloss; not every one of the 319 was checked.
+
+(b) **Ao-ligature (39).** It is in the key: R's second homophone, S34 (p.57 and p.69, R column, row 2), a hooked A
+joined to o. Three ciphertext instances checked against the gloss: line 1 (after 73), line 3 (after |22|), line 8
+(after 12): all three glossed "r". Not a plaintext abbreviation. (The key's S69, the code of "arm.", is a similar A
+with a hooked v, and S76, Aumale's code, is a plain A; passes must keep the three apart.)
+
+(c) **Share of the ciphertext's recurring sign types with an atlas code.** Pooled passC+passD (2218 tokens): 1625
+already carried a digit or S01-S26; adding the z-curl as digit 2 (162) and the six named letter-like types (to 35, Ao
+39, R-loop 25, Y 12, u 10, s 9 = 130) gives **1917 / 2218 = 86.4%** of tokens with a key code; the bar (157, 7.1%) is
+explained as a word-code bracket; unexplained: sign_other_letterlike 114 + double dash 7 = 121 (5.5%); noise (gloss 10,
+blot 13, crop edge 1) 1.1%. By type, all six named recurring letter-like types now have a candidate code (6 of 6) and
+the two separator families are explained. dupuy452's control: 99.8% of 5725 tokens on a key entry. clair349 is not yet
+at that level, but on this count the gap is the 5.5% catch-all, not the key; and the 86.4% rests on shape matches by
+type, not per-token checks, so it is an upper-bound estimate until fresh passes code against the new atlas.
+
+**Next job (one line):** two fresh blind passes over `images/lines/line01-33.jpg` against `images/atlas/sheet.jpg`
+S01-S80, told that the z-shaped mark is the digit 2 (write "12", "62", never a separator), that a vertical bar is
+transcribed as `|` (a word-code bracket, not a null and not a sign), that the small interlinear letters above the codes
+are a gloss to be transcribed in a separate column (not as cipher tokens), and to keep S34 / S69 / S76 apart; then a
+third, separate job transcribes the gloss line by line as known plaintext (C), which will settle the key's homographs
+(5, 22, 9, S17, S32, S37) before any decode. The line crops cut off part of the gloss: the gloss job should recut the
+lines from `clair349_f9_right_full.jpg` with the band above each line included.
+
+Files: `build_key_cells.py` (new), `key_alpha.tsv`, `key_nomen.tsv`, `images/atlas/atlas.tsv`, `images/atlas/sheet.jpg`,
+`images/atlas/S02_sign.jpg` (re-crop), `images/atlas/S27-S80_sign.jpg`, `images/atlas/key_cells/` (104). Removed:
+`images/atlas/xq_crops/`, `images/atlas/sign_crops/` (their sheets `xq_sheet.jpg`, `sign_sheet.jpg` remain) to keep
+`images/` under 30 MB (29.2 MB after). Grades (rule 4): no reading claimed; H/M above grade legibility of key cells.
+Hosts: none. Status stays `partial`. cost: see the lane ledger.

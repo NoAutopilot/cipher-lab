@@ -26,14 +26,14 @@ MONOSYL2	mon?	S65	sign	M	atlas/key_cells/monosyl2_23.jpg	word mon/mem (M); code 
 MONOSYL2	mont	S11	sign	H	atlas/key_cells/monosyl2_24.jpg	code circle with bar
 MONOSYL2	vne	S12	sign	H	atlas/key_cells/monosyl2_25.jpg	word une; code long cross with circle at crossing
 LASTWORD	de	S66	sign	H	atlas/key_cells/lastword_26.jpg	code plain letter h
-LASTWORD	florens	S67	sign	M	atlas/key_cells/lastword_27.jpg	word 'floren' + abbreviation mark (florins/florentins, M); code 3a/sa
-LASTWORD	Venize	S68	sign	M	atlas/key_cells/lastword_28.jpg	word Venize (V flourish; YX-TR349 read douze); code a written cluster 'Soule'
+LASTWORD	florin(s)	S67	sign	H	atlas/key_cells/lastword_27.jpg	word 'floren' + abbreviation mark; blind cross-read: florin / sa (agrees)
+LASTWORD	douze?	S68	sign	M	atlas/key_cells/lastword_28.jpg	word douze (YX-TR349 and the blind cross-read) or Venize (this worker); code a written cluster 'Soule' (blind: Souk)
 LASTWORD	arm.	S69	sign	M	atlas/key_cells/lastword_29.jpg	word arm./armee (M); code capital A with hooked v -- close to S34 (Ao) and to S76 (A); passes must separate them
 LASTWORD	mil	S70	sign	H	atlas/key_cells/lastword_30.jpg	code script capital M
 LASTWORD	escus	S71	sign	M	atlas/key_cells/lastword_31.jpg	word escu(s) (M); code 8-like loop open at top
 LASTWORD	artillerie	S13	sign	H	atlas/key_cells/lastword_32.jpg	code plus
 LASTWORD	ligue	99	digit	H	atlas/key_cells/lastword_33.jpg	
-LASTWORD	beaulte?	S72	sign	M	atlas/key_cells/lastword_34.jpg	word beaulte/traicte (M); code script capital T
+LASTWORD	beaute	S72	sign	H	atlas/key_cells/lastword_34.jpg	blind cross-read beaute / T (agrees)
 LASTWORD	leurs	S14	sign	H	atlas/key_cells/lastword_35.jpg	
 LASTWORD	munitions?	S73	sign	M	atlas/key_cells/lastword_36.jpg	word 'mumstois'-like, munitions? (M); code a written cluster 'Sou'
 LEFTLIST	Le Roy mre	S74	sign	M	atlas/key_cells/leftlist_37.jpg	code a 4-shape with extra hooked stroke, hard to tell from digit 4

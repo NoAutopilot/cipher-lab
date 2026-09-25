@@ -28,7 +28,7 @@ ALPHA = [
                         ("28", "digit", "H", "row 4")]),
     ("B", (1220, 1400), [("S01", "sign", "H", "row 1, ornate N-like sign; same on p69"), ("3", "digit", "H", "row 2")]),
     ("C", (1380, 1480), [("9", "digit", "H", "single homophone")]),
-    ("D", (1465, 1570), [("5", "digit", "M", "an s-form 5, same shape as L's row-2 '5'; one digit for two letters is a conflict in the key as drawn, not resolved; p69 cell blotted")]),
+    ("D", (1465, 1570), [("5", "digit", "M", "an s-form 5, same shape as L's row-2 '5' (the blind cross-read saw only a hook squiggle); one digit for two letters is a conflict in the key as drawn, not resolved; p69 cell blotted")]),
     ("E", (1590, 1730), [("26", "digit", "H", "row 1"), ("16", "digit", "H", "row 2 (not A's struck 16)"), ("62", "digit", "H", "row 3")]),
     ("F", (1700, 1840), [("S02", "sign", "H", "crossed x joined to t ('xt'); S02 re-cropped this session, the ZX-349 crop showed G's header instead")]),
     ("G", (1840, 1965), [("S03", "sign", "H", "e-like loop with long tail")]),
@@ -42,7 +42,7 @@ ALPHA = [
     ("Q", (2860, 3000), [("S32", "sign", "H", "y-like sign with left hook")]),
     ("R", (3020, 3150), [("S33", "sign", "H", "row 1, R-like loop with two legs; the header's flourish runs into it"),
                          ("S34", "sign", "H", "row 2, capital A joined to small o ('Ao'); YX-TR349/ZX-349B read this cell as part of a 'to' cluster")]),
-    ("S", (3150, 3265), [("S35", "sign", "H", "row 1, long s + small s"), ("S36", "sign", "M", "row 2, x drawn across the long descender of S35; p69 shows the same x")]),
+    ("S", (3150, 3265), [("S35", "sign", "M", "row 1, long s + small s"), ("S36", "sign", "M", "row 2, x drawn across the long descender of S35; p69 shows the same x; the blind cross-read saw S35+S36 as ONE tall crossed sign -- one or two homophones is open")]),
     ("T", (3280, 3410), [("S37", "sign", "H", "row 1, crossed t + o ('to')"), ("S38", "sign", "M", "row 2, crossed t + c with a tick ('tc')")]),
     ("V", (3410, 3525), [("102", "digit", "H", "row 1"), ("7", "digit", "H", "row 2; a second small 7 written above it (correction or confirmation); p69 has a struck number here and 7 below"), ("104", "digit", "H", "row 3")]),
     ("X", (3530, 3635), [("S39", "sign", "H", "d-loop joined to long s")]),
@@ -51,7 +51,7 @@ ALPHA = [
     ("&", (3920, 4085), [("S04", "sign", "H", "row 1, hash of two by two strokes"), ("S05", "sign", "M", "row 2, a-like squiggle with tail")]),
 ]
 
-DOUBLES_Y = (1230, 1480)
+DOUBLES_Y = (1230, 1520)
 DOUBLES = [  # (pair as written, x0, x1, code, grade, note)
     ("sc?", 1440, 1620, "22", "M", "digit H; the pair is a long-s/p-like letter + c, read sc or pc; 22 is also the code of 'pour' (Monosillabes)"),
     ("cc", 1650, 1760, "18", "H", ""), ("ff", 1780, 1900, "66", "H", "tall doubled f"),
@@ -105,14 +105,14 @@ NOMEN = [
     ("MONOSYL2", "mont", (3380, 2250, 3580, 2560), "S11", "sign", "H", "code circle with bar"),
     ("MONOSYL2", "vne", (3650, 2250, 3830, 2570), "S12", "sign", "H", "word une; code long cross with circle at crossing"),
     ("LASTWORD", "de", (1040, 2580, 1190, 2900), "S66", "sign", "H", "code plain letter h"),
-    ("LASTWORD", "florens", (1200, 2580, 1530, 2900), "S67", "sign", "M", "word 'floren' + abbreviation mark (florins/florentins, M); code 3a/sa"),
-    ("LASTWORD", "Venize", (1610, 2580, 1880, 2900), "S68", "sign", "M", "word Venize (V flourish; YX-TR349 read douze); code a written cluster 'Soule'"),
+    ("LASTWORD", "florin(s)", (1200, 2580, 1530, 2900), "S67", "sign", "H", "word 'floren' + abbreviation mark; blind cross-read: florin / sa (agrees)"),
+    ("LASTWORD", "douze?", (1610, 2580, 1880, 2900), "S68", "sign", "M", "word douze (YX-TR349 and the blind cross-read) or Venize (this worker); code a written cluster 'Soule' (blind: Souk)"),
     ("LASTWORD", "arm.", (1980, 2580, 2180, 2900), "S69", "sign", "M", "word arm./armee (M); code capital A with hooked v -- close to S34 (Ao) and to S76 (A); passes must separate them"),
     ("LASTWORD", "mil", (2270, 2580, 2450, 2900), "S70", "sign", "H", "code script capital M"),
     ("LASTWORD", "escus", (2570, 2580, 2850, 2900), "S71", "sign", "M", "word escu(s) (M); code 8-like loop open at top"),
     ("LASTWORD", "artillerie", (2920, 2580, 3260, 2900), "S13", "sign", "H", "code plus"),
     ("LASTWORD", "ligue", (3370, 2580, 3580, 2900), "99", "digit", "H", ""),
-    ("LASTWORD", "beaulte?", (3660, 2580, 3860, 2900), "S72", "sign", "M", "word beaulte/traicte (M); code script capital T"),
+    ("LASTWORD", "beaute", (3660, 2580, 3860, 2900), "S72", "sign", "H", "blind cross-read beaute / T (agrees)"),
     ("LASTWORD", "leurs", (3960, 2580, 4200, 2900), "S14", "sign", "H", ""),
     ("LASTWORD", "munitions?", (4210, 2580, 4670, 2900), "S73", "sign", "M", "word 'mumstois'-like, munitions? (M); code a written cluster 'Sou'"),
     ("LEFTLIST", "Le Roy mre", (200, 30, 700, 120), "S74", "sign", "M", "code a 4-shape with extra hooked stroke, hard to tell from digit 4"),
