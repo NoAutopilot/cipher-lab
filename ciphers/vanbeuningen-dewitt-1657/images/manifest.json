@@ -1,15 +1,61 @@
 {
-  "source": "printed edition page image (Brieven aan Johan de Witt, Japikse ed., retroboeken viewer), not the Nationaal Archief manuscript",
-  "host": "resources.huygens.knaw.nl",
-  "fetched": "2026-09-24",
-  "images": [
+  "sources": [
     {
-      "file": "dewitt_01_405.jpg",
-      "edition": "Brieven aan Johan de Witt, Japikse ed., Deel 1",
-      "printed_page": 405,
-      "content": "Van Beuningen circle letter, 19/29 Sep 1657 (a copy not in Van Beuningen's own hand); footnote states the same letter also survives as a separate unsolved cipher copy, in another hand",
-      "url": "https://resources.huygens.knaw.nl/retroapp/service_dewitt/aandewitt_01/images/AAN_DEWITT_01_405.jpg"
+      "source": "printed edition page image (Brieven aan Johan de Witt, Japikse ed., retroboeken viewer)",
+      "host": "resources.huygens.knaw.nl",
+      "fetched": "2026-09-24",
+      "images": [
+        {
+          "file": "dewitt_01_405.jpg",
+          "edition": "Brieven aan Johan de Witt, Japikse ed., Deel 1",
+          "printed_page": 405,
+          "content": "Van Beuningen circle letter, 19/29 Sep 1657 (a copy not in Van Beuningen's own hand); footnote states the same letter also survives as a separate unsolved cipher copy, in another hand"
+        }
+      ]
+    },
+    {
+      "source": "Nationaal Archief EAD inventory NA 3.01.17 (Johan de Witt), inv.nr 1538, full-year bundle 'Missiven van Coenraed van Beuningen ... 1657' (289 leaf-images), fetched via service.archief.nl/api/file/v1/default/<uuid>, no login, PUBLIC DOMAIN (rightsMD RIGHTSCATEGORY=\"PUBLIC DOMAIN\" in the item's own METS)",
+      "host": "www.nationaalarchief.nl, service.archief.nl",
+      "fetched": "2026-09-25",
+      "inventory_url": "https://www.nationaalarchief.nl/onderzoeken/archief/3.01.17/download/xml",
+      "mets_url_pattern": "https://service.archief.nl/gaf/api/mets/v1/<mets-uuid> (per-inv.nr METS; the inv.nr 1538 mets uuid is dfa4b121-2476-41cf-8a1c-d784ec6f2050, resolved from the EAD's <dao> handle)",
+      "note_on_page_numbering": "leaf order (ORDER 1-289) within inv.nr 1538 as given by the METS structMap; each fetched JPEG is a two-page (verso+recto) spread, ~4.8-5.0 Mpx wide, several MB each",
+      "images": [
+        {
+          "file": "NL-HaNA_3.01.17_1538_0206.jpg",
+          "order": 206,
+          "content": "end of a DIFFERENT Van Beuningen dispatch of 19/29 Sept 1657 (on Brandenburg/Poland/Sweden), and start of another letter -- NOT the target letter; kept for context so a later worker does not re-identify it as the target"
+        },
+        {
+          "file": "NL-HaNA_3.01.17_1538_0207.jpg",
+          "order": 207,
+          "content": "continuation and close of the Brandenburg/Poland letter above, also dated Coppenhaghen 19/29 September 1657 -- a second, separate same-day dispatch, not the target"
+        },
+        {
+          "file": "NL-HaNA_3.01.17_1538_0208.jpg",
+          "order": 208,
+          "content": "PLAIN COPY, leaf 1: docket at top reads (abbreviated) '...de 19en Octob. 1657' matching the printed edition's footnote quote of De Witt's endorsement 'beantwoort den 19en October 1657'; body opens 'Mijn Heer, Hier wert van dag tot dag met groot impatientie verlangt na [...] Rosewinge...' -- matches Brieven aan Johan de Witt I p.405 word for word from its first line"
+        },
+        {
+          "file": "NL-HaNA_3.01.17_1538_0209.jpg",
+          "order": 209,
+          "content": "PLAIN COPY, leaf 2 (continuation, signature, date): ends 'UEd: ootmoedigen en verplichten dienaer, [signed] Van Beuningen' and 'Coppenhagen de 19/29 [Septem]bris 1657' -- confirms the double Julian/Gregorian date the printed edition cites as '(19/29 September 1657)'"
+        },
+        {
+          "file": "NL-HaNA_3.01.17_1538_0210.jpg",
+          "order": 210,
+          "content": "CIPHER COPY, leaf 1 ('van een andere hand' per the footnote -- visibly a different, more cramped hand than 0208/0209): opens 'Hier voort van dag tot dag met groot impatientie verlangt na U [cipher numbers]...' -- same opening as the plain copy, with the content words replaced by comma-separated 2-digit numeric groups and colons apparently marking word boundaries; plain Dutch function words (mijn, heer, met, over, onder, daer, etc.) are left uncoded"
+        },
+        {
+          "file": "NL-HaNA_3.01.17_1538_0211.jpg",
+          "order": 211,
+          "content": "CIPHER COPY, leaf 2 (continuation, signature, date): ends '... Godt Blijve, Mijn Heer, UEd: ootmoedigen [en] verplichten dienaer, [signed] Van Beuningen' and 'Coppenhaghen den 19/29 [Septem]bris 1657' -- same closing formula and identical double date as the plain copy, confirming this is the cipher copy of the SAME letter, not of the other 19/29 Sept dispatch on ff.206-207"
+        }
+      ]
     }
   ],
-  "note": "The printed edition text on this page is the plain copy; the cipher copy 'van een andere hand' is not printed and not imaged this pass -- its archive location (NA 3.01.17, De Witt's own archive, or elsewhere) was not resolved this pass."
+  "cipher_crops": {
+    "note": "single-page crops of NL-HaNA_3.01.17_1538_0210/0211 (the cipher leaves only, right half of 0210 and left half of 0211) cut for the transcription passes",
+    "files": ["cipher_crops/0210_right.jpg", "cipher_crops/0211_left.jpg"]
+  }
 }
