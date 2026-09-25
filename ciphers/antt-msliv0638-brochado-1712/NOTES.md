@@ -348,6 +348,82 @@ fresh-instance re-derivation blind to this worker's scripts.
 
 No network access; this pass worked entirely from the images and TSVs already on disk.
 
+## PX-BROPASSB (25 Sept 2026): second blind pass, reconciliation -- gated at 85.8%, not rebuilt
+
+Worker PX-BROPASSB (Sonnet, session_01GqwFqqfntPyB2tgNpibc5p), job: this job brief's step 2
+(second blind transcription pass B + reconcile against pass A + rebuild key). PX-BROKEY2's
+own background pass-B subagent (claimed 07:30, progress logged 07:48-07:51) never landed on
+disk or in git before that worker was interrupted at $14.42 (08:01 ROOM line) -- confirmed by
+`git log` and `ls` on this folder at the start of this job: no `passB_*` files existed. This
+job re-ran pass B from scratch rather than assuming any partial background work survived.
+
+**Pass B method:** two Sonnet subagents, run in parallel, each reading full-resolution images
+directly (`images/full_PT-TT-MSLIV-0638_m0NNNN.jpg.jpg`) with no access to any existing
+transcription, key, reading, or this file -- genuinely blind, split m0280-288 (22 entries,
+1026 coded tokens) / m0289-296 (17 entries, 734 coded tokens). Both subagents were given only
+the (leaf, entry_label) index (a structural key, not cipher/plaintext content) so their output
+could be matched row-for-row against pass A; both confirmed every expected entry present and
+found no extra ones. `passB_cipher_1/2.tsv` + `passB_plain_1/2.tsv` (per-batch) merged into
+`passB_cipher.tsv` (1760 coded-token rows) and `passB_plain.tsv` (39 entry rows); entry-key
+sets diffed identical to pass A's before reconciling (`diff <(cut -f1,2 ...) ...` empty both
+ways).
+
+**Reconciliation:** `tools/reconcile_passes.py` does not fit this layout (it expects a
+per-line-of-image pass keyed by a crop id in `wide`/`long` format, not a per-entry token table
+keyed by `entry_label` with no crop directory), so wrote `scripts/07_reconcile.py` per the
+job brief's fallback clause. Per entry, aligns pass A's and pass B's ordered coded-token lists
+with `difflib.SequenceMatcher` (trailing `?`/`±` uncertainty markers stripped for comparison
+only); `equal` opcodes count as agreement, `replace`/`delete`/`insert` as disagreement, exactly
+as `tools/reconcile_passes.py`'s own doc string defines its agreement metric (aligned columns
+where every pass agrees, over total aligned columns).
+
+**Result: token agreement 1516/1766 = 85.84%, under the job brief's 90% gate.**
+Deciffrada-line word-level agreement (a looser check, word by word rather than one exact
+1000+-character string): 404/558 = 72.4%; exact full-line string match is a near-useless
+metric here (3/38 = 7.9%) since a single accent or spacing difference anywhere in a long line
+fails the whole line even when every word agrees -- reported for completeness, not used as the
+gate. Per the job brief ("If agreement is under 90%, stop after writing the numbers and flag
+it"), this job stopped here: `disagreements.tsv` (250 rows) and `agreement.tsv` (39 rows, one
+per entry, share 61.5%-100%) are written; `ciphertext_appendix.tsv` and `plaintext_appendix.tsv`
+are **unchanged** (no grade column added, no settling attempted, no key rebuild, no
+`decode_key.py --check` re-run) -- reverted after a first script draft wrote them speculatively
+before the gate check was in place.
+
+**The shortfall is not diffuse noise -- it is dominated by one recurring glyph confusion.**
+Per-entry agreement ranges 61.5%-100% with no single leaf or entry responsible (transcription.md's
+"stop and report the blocker" case, not a "one bad leaf" case). But counting the 183 `replace`
+disagreements by (pass-A token, pass-B token) pair: **`z`<->`7` (33+25=58) and `2`<->`7` (29)
+account for 87 of 183 replace-disagreements (47.5%)** -- pass A consistently read a particular
+recurring code-symbol shape as `z` or `2` where pass B consistently read the same shape as `7`,
+across many different entries and both leaf batches (so it is not one subagent's idiosyncrasy
+confined to one image). Next in size: `7`<->`5` (9), `c`<->`e` (6), `55`<->`11` (6, a possible
+digit-run miscount rather than a single-glyph misread), `8`<->`g` (3), `b`<->`6` (3). This
+strongly suggests a single graphically ambiguous secretary-hand shape (plausibly a script
+numeral that can read as either "7" or a looped "z"/"2") drives most of the gap, not a broad
+transcription-quality problem -- both subagents' own uncertainty notes (`passB_notes_1.md`,
+`passB_notes_2.md`) independently flagged "4/7, 2/z, 5/8/S, 6/G" as the hand's main confusable
+set before this quantitative check was run.
+
+**Flagged, not done this job (out of step 2's scope once the gate failed):** a targeted image
+check of the z/2-vs-7 shape (ideally with a cropping tool, which this folder does not yet use --
+these are full-leaf DigitArq JPEGs, not IIIF crops) could resolve close to half the
+disagreements from a single settled reading rather than requiring a full third pass; worth
+trying before committing to `transcription.md`'s "third pass, not a fourth" route. `key.tsv`
+already carries a grade-C `z->e` mapping (11/12 obs, PX-BROKEY2) and no strong prior mapping
+for `7` or `2` as letter-codes (both are the small recurring digit codes described in
+PX-BROKEY's "system" section) -- so which reading is right has a real effect on which parts of
+the appendix decode, not merely a transcription nicety.
+
+### Host report (PX-BROPASSB)
+
+No network access; images already on disk from PX-BROKEY's pass. 2 Sonnet subagents (the two
+blind transcription batches), each with image-reading tools only, no git/network access, per
+COMMON's 2-subagent cap.
+
+### Host report (PX-BROKEY2, prior pass)
+
+No network access. See "PX-BROKEY2, step 3" section above.
+
 ### Host report (PX-BROKEY, prior pass)
 
 `digitarq.arquivos.pt`: 24 full-resolution leaf-fetch requests (m0281, m0286-288, m0284-285, m0294-296,

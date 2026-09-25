@@ -1,0 +1,251 @@
+leaf	entry_label	a_position	a_token	b_token	kind
+m0280	Carta 13	4	7	z	replace
+m0280	Carta 13	14	7	z	replace
+m0280	Carta 13	21	7	z	replace
+m0280	Carta 13	40	2	z	replace
+m0280	Carta 13	41	y	5	replace
+m0280	Carta 13	49	y	4	replace
+m0280	Carta 13	51	12	18	replace
+m0280	Carta 13	(extra in B)		8	extra-b
+m0280	Carta 13	(extra in B)		300	insert
+m0280	Carta 13	66	11	55	replace
+m0280	Carta 13	68	9±	5	replace
+m0280	Carta 13	71	9±	5	replace
+m0280	Carta 13	79	z	5	replace
+m0280	Carta 13	99	z	5	replace
+m0280	Carta 13	102	z	5	replace
+m0280	Carta 13	116	7	5	replace
+m0280	Carta 13	118	7	5	replace
+m0280	Carta 13	135	m	(missing in B)	delete
+m0281	Carta 15	3	g±	5	replace
+m0281	Carta 15	10	z±	z	replace
+m0281	Carta 15	12	g±	5	replace
+m0281	Carta 15	23	7	5	replace
+m0281	Carta 15	26	7	5	replace
+m0281	Carta 15	28	b±	6	replace
+m0281	Carta 15	30	7	5	replace
+m0281	Carta 15	33	4±	4	replace
+m0281	Carta 15	34	7	5	replace
+m0281	Carta 15	39	7	5	replace
+m0281	Carta 15	46	7	5	replace
+m0281	Carta 15	52	b	6	replace
+m0281	Carta 15	53	7	5	replace
+m0281	Carta 15	56	z	2	replace
+m0281	Carta 15	69	7	z	replace
+m0281	Carta 15	(extra in B)		19	extra-b
+m0281	Carta 15	(extra in B)		b	extra-b
+m0281	Carta 15	(extra in B)		5	extra-b
+m0281	Carta 23	6	7	z	replace
+m0281	Carta 23	(extra in B)		g	insert
+m0282	Carta 58	(extra in B)		19	insert
+m0282	Carta 58	(extra in B)		8	insert
+m0282	Carta 58	(extra in B)		4	insert
+m0282	Carta 58	(extra in B)		a	insert
+m0282	Carta 58	13	a	4	replace
+m0282	Carta 58	21	14	19	replace
+m0282	Carta 58	45	13	18	replace
+m0282	Carta 58	47	13	18	replace
+m0282	Carta 61	2	7	z	replace
+m0282	Carta 61	10	7	z	replace
+m0282	Carta 61	17	7	z	replace
+m0282	Carta 61	22	7	z	replace
+m0282	Carta 61	27	7	z	replace
+m0282	Carta 61	41	2	z	replace
+m0283	Carta 70	1	11	55	replace
+m0283	Carta 70	10	7	z	replace
+m0283	Carta 70	53	b±	6	replace
+m0283	Carta 70	(extra in B)		14	extra-b
+m0283	Carta 70	(extra in B)		17	extra-b
+m0283	Carta 70	(extra in B)		12	extra-b
+m0283	Carta 70	(extra in B)		4	extra-b
+m0283	Carta 70	(extra in B)		19	extra-b
+m0283	Carta 70	63	310±	3	replace
+m0283	Carta 70	64	400±	10	replace
+m0283	Carta 70	(extra in B)		400	extra-b
+m0283	Carta 70	(extra in B)		10	insert
+m0283	Carta 70	(extra in B)		17	insert
+m0285	Carta 72	19	c	e	replace
+m0285	Carta 72	25	c	e	replace
+m0285	Carta 72	39	x	z	replace
+m0285	Carta 72	45	c	e	replace
+m0285	Carta 72	54	12±	18	replace
+m0285	Passage 4a	3	c	e	replace
+m0285	Passage 4a	(extra in B)		5	insert
+m0285	Passage 4a	(extra in B)		5	insert
+m0285	Passage 4a	(extra in B)		22	insert
+m0285	Passage 4a	(extra in B)		3	insert
+m0285	Passage 4a	(extra in B)		17	insert
+m0285	Passage 5a	(extra in B)		14	insert
+m0286	Carta 73	8	7	z	replace
+m0286	Carta 73	15	23	28	replace
+m0286	Carta 74	1	7	z	replace
+m0286	Carta 74	3	6	b	replace
+m0286	Carta 74	7	4±	L	replace
+m0286	Carta 74	(extra in B)		z	insert
+m0286	Carta 74	(extra in B)		12	insert
+m0286	Carta 74	43	7	z	replace
+m0286	Carta 74	(extra in B)		c	insert
+m0286	Carta 74	(extra in B)		g	insert
+m0286	Carta 74	(extra in B)		4	insert
+m0286	Carta 74	(extra in B)		p	insert
+m0286	Carta 74	(extra in B)		y	insert
+m0286	Carta 74	(extra in B)		5	insert
+m0286	Carta 74	(extra in B)		d	insert
+m0286	Carta 74	(extra in B)		4	insert
+m0286	Carta 74	(extra in B)		x	insert
+m0286	Carta 74	(extra in B)		19	insert
+m0286	Carta 74	(extra in B)		6	insert
+m0286	Carta 74	(extra in B)		15	insert
+m0286	Carta 74	(extra in B)		m	insert
+m0286	Carta 74	(extra in B)		f	insert
+m0286	Carta 74	(extra in B)		26	insert
+m0286	Carta 74	(extra in B)		20	insert
+m0286	Carta 74	48	7	z	replace
+m0286	Carta 74	67	7	z	replace
+m0286	Passage 3a	7	7	z	replace
+m0286	Passage 3a	22	7	z	replace
+m0287	Carta 78	5	7	x	replace
+m0287	Carta 79	24	c	e	replace
+m0287	Carta 79	28	7	z	replace
+m0287	Carta 80	9	7	z	replace
+m0288	Carta 81	15	7	z	replace
+m0288	Carta 85	7	7	z	replace
+m0288	Carta 85	18	q	(missing in B)	delete
+m0288	Carta 85	36	7	z	replace
+m0288	Passage 2a	12	7	z	replace
+m0288	Passage 2a	32	7	z	replace
+m0288	Passage 2a	45	4	y	replace
+m0289	Carta 89	9	3	34	replace
+m0289	Carta 89	10	4	(missing in B)	replace
+m0289	Carta 89	18	38±	33	replace
+m0289	Carta 89	23	18	13	replace
+m0289	Carta 89	36	58±	58	replace
+m0289	Carta 91	8	55	11	replace
+m0289	Carta 91	16	55	11	replace
+m0289	Carta 91	27	18	11	replace
+m0289	Carta 91	(extra in B)		8	extra-b
+m0289	Carta 92	6	3	8	replace
+m0289	Carta 92	14	3	8	replace
+m0289	Carta 92	25	16	15	replace
+m0289	Carta 92	33	y±	p	replace
+m0289	Carta 92	58	y±	ff	replace
+m0289	Carta 92	62	56±	55	replace
+m0289	Carta 92	(extra in B)		6	extra-b
+m0289	Carta 92	65	5	52	replace
+m0289	Carta 92	66	21	1	replace
+m0289	Carta 92	81	2	12	replace
+m0289	Carta 92	83	55	11	replace
+m0289	Carta 92	96	16	10	replace
+m0289	Carta 92	(extra in B)		c	extra-b
+m0289	Carta 92	(extra in B)		h	extra-b
+m0289	Carta 92	(extra in B)		11	extra-b
+m0289	Carta 92	(extra in B)		15	extra-b
+m0289	Carta 92	(extra in B)		26	extra-b
+m0289	Carta 92	(extra in B)		5	extra-b
+m0289	Carta 92	(extra in B)		25	extra-b
+m0289	Carta 92	(extra in B)		x	extra-b
+m0289	Carta 92	(extra in B)		7	extra-b
+m0289	Carta 92	(extra in B)		c	extra-b
+m0289	Carta 92	(extra in B)		g	extra-b
+m0289	Carta 92	(extra in B)		m	extra-b
+m0289	Carta 92	(extra in B)		p	extra-b
+m0289	Carta 92	(extra in B)		d	extra-b
+m0289	Carta 92	(extra in B)		14	extra-b
+m0289	Carta 92	(extra in B)		y	extra-b
+m0289	Carta 92	(extra in B)		5	extra-b
+m0289	Carta 92	(extra in B)		17	extra-b
+m0290	Carta 93	14	8	g	replace
+m0290	Carta 93	36	11	h	replace
+m0290	Carta 93	39	8	g	replace
+m0290	Carta 93	41	z	e	replace
+m0290	Carta 93	46	z	rr	replace
+m0290	Carta 93	47	z	(missing in B)	replace
+m0290	Passage 2a	6	z	7	replace
+m0290	Passage 2a	8	h	t	replace
+m0290	Passage 2a	17	2	7	replace
+m0290	Passage 2a	18	55	11	replace
+m0290	Passage 2a	21	z	7	replace
+m0290	Passage 2a	34	z	7	replace
+m0290	Passage 2a	37	h	4	replace
+m0290	Passage 2a	44	2	7	replace
+m0290	Passage 2a	50	2	7	replace
+m0290	Passage 2a	53	2	7	replace
+m0290	Passage 2a	61	z	7	replace
+m0290	Passage 2a	67	c	e	replace
+m0290	Passage 2a	76	2	7	replace
+m0290	Passage 2a	79	55	11	replace
+m0290	Passage 2a	(extra in B)		ff	insert
+m0290	Passage 2a	82	9	(missing in B)	delete
+m0290	Passage 2a	85	z	7	replace
+m0290	Passage 2a	98	2	7	replace
+m0291	Carta 94	4	z	7	replace
+m0291	Carta 94	8	z	7	replace
+m0291	Carta 94	11	z	7	replace
+m0291	Carta 94	19	z	7	replace
+m0291	Carta 96	3	2	7	replace
+m0291	Carta 96	16	2	7	replace
+m0291	Carta 96	22	2	7	replace
+m0291	Carta 96	28	2	7	replace
+m0291	Carta 96	33	2	7	replace
+m0291	Carta 96	34	f	ff	replace
+m0291	Carta 96	35	f	(missing in B)	replace
+m0291	Carta 96	38	12	22	replace
+m0291	Carta 96	39	z	7	replace
+m0291	Passage 3a	4	h	7	replace
+m0291	Passage 3a	13	g	y	replace
+m0291	Passage 3a	14	z	7	replace
+m0291	Passage 3a	28	8	2	replace
+m0291	Passage 3a	32	z	7	replace
+m0291	Passage 3a	40	55	11	replace
+m0291	Passage 3a	43	z	7	replace
+m0292	Carta 101	5	55	15	replace
+m0292	Carta 101	7	2	7	replace
+m0292	Carta 101	13	52	12	replace
+m0292	Carta 101	16	2	7	replace
+m0292	Carta 101	26	2	7	replace
+m0292	Carta 105	2	z	7	replace
+m0292	Carta 105	6	2	7	replace
+m0292	Carta 105	7	z	7	replace
+m0292	Carta 105	12	z	7	replace
+m0292	Carta 105	13	5	6	replace
+m0292	Carta 105	17	z	7	replace
+m0292	Carta 105	20	2	7	replace
+m0292	Carta 105	32	z	7	replace
+m0292	Carta 105	36	z	7	replace
+m0292	Passage 2a	5	z	7	replace
+m0292	Passage 2a	8	z	7	replace
+m0292	Passage 2a	22	z	7	replace
+m0293	Carta 106	6	8	g	replace
+m0293	Carta 106	10	z	7	replace
+m0293	Carta 106	12	2	7	replace
+m0293	Carta 106	15	2	7	replace
+m0293	Carta 106	16	2	7	replace
+m0293	Carta 106	23	d	e	replace
+m0293	Carta 106	30	z	7	replace
+m0293	Carta 106	36	2	7	replace
+m0293	Carta 106	38	2	7	replace
+m0293	Carta 106	40	2	7	replace
+m0293	Carta 107	9	2	7	replace
+m0293	Carta 107	15	2	7	replace
+m0293	Passage 2a	6	z	7	replace
+m0293	Passage 2a	20	17	rr	replace
+m0293	Passage 2a	22	z	7	replace
+m0294	Carta 110	12	55	54	replace
+m0294	Carta 110	20	55	54	replace
+m0294	Carta 110	22	z	7	replace
+m0294	Carta 110	25	z	7	replace
+m0294	Carta 110	29	z	7	replace
+m0294	Carta 110	30	2	7	replace
+m0294	Carta 110	31	z	7	replace
+m0294	Carta 110	32	18	19	replace
+m0294	Carta 110	40	z	7	replace
+m0294	Passage 2a	1	z	7	replace
+m0294	Passage 2a	7	z	7	replace
+m0294	Passage 2a	9	4	7	replace
+m0294	Passage 2a	13	2	7	replace
+m0294	Passage 2a	14	2	7	replace
+m0294	Passage 2a	16	14	54	replace
+m0294	Passage 2a	17	2	7	replace
+m0294	Passage 2a	23	2	7	replace
+m0294	Passage 2a	25	107±	10	replace
+m0294	Passage 2a	(extra in B)		7	extra-b
