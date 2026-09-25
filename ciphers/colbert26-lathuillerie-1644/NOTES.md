@@ -148,8 +148,14 @@ canvas 20/21/26/19/22 close reads itself.
 
 ## Kind
 
-Recovery (a contemporary decipherment already exists on the document for at least one letter; cryptanalysis was
-not attempted and per the brief is out of scope here).
+Cryptanalysis, not recovery (corrected 25 Sept 2026; ROOM.md 09:59 and 10:00, LANE KX orchestrator, retracting
+this section's own earlier framing): the second hand's interlinear notes are short topical/paraphrase glosses
+near a cipher run ("Je parle des Suedois" over 11 tokens), not a word-per-code decipherment -- see "Important
+correction to the 'period decipherment' framing" below, which reads every token on canvas 20 against its nearby
+gloss and finds no line meets the brief's own C-grade bar (legible and consistent across occurrences). No period
+key exists on the document; any key here has to come from cryptanalysis (mixed nomenclator, ~129 distinct signs
+across the four transcribed canvases) using the paraphrase glosses only as topic/content cribs, not as a ready
+substitution table.
 
 ## KX-LATHKEY2 (25 Sept 2026)
 
@@ -340,17 +346,34 @@ for 20/21/27 is pass A only, unreconciled beyond this worker's own single read. 
 KX-LATHKEY2 recorded for canvas 20 alone; it still applies, now with a second pass's disagreement list attached
 so a successor can settle from `disagreements.tsv` directly rather than re-transcribing from scratch.
 
+**Held back (25 Sept 2026, QA/YX-FIX correction): canvas 21's 57.6% two-pass agreement is below this repo's 60%
+transcription-agreement gate (CLAUDE.md Usage item 6, "scripts read, models judge" / the reproducibility bar the
+same day's VX-CT03 and VX-RD04B held their own sub-60% blocks to).** Canvas 21's pass-A rows in `ciphertext.tsv`
+are not deleted -- they stay on disk, flagged, per rule 7 (reproducible readings) -- but they are not settled
+ciphertext and must not be counted in any total, spec field or cheap test that presents canvas 20/21/27/30 as
+"transcribed and reconciled." Canvas 20 (81.0%) and canvas 27 (78.4%) clear the 60% floor on two-pass agreement
+even though their individual disagreements are not yet hand-settled against the crop; only canvas 21 is held
+back on this ground.
+
 ### Folder size
 
 29.6 MB (30,223,184 bytes) after this job's pushes -- functionally at the brief's 30 MB cap. A canvas-32 pass
 (or any further canvas) will need either smaller crops (narrower region, lower JPEG quality) or trimming
 `images/crops/` reference copies (out of this job's writable-paths list) before adding more images.
 
-### Alphabet, this job's total (canvases 20+21+27+30 combined, `ciphertext.tsv` after reconciliation)
+### Alphabet, this job's total (canvases 20+21+27+30 combined, `ciphertext.tsv` as pass-A transcription)
+
+Correction (25 Sept 2026, QA/YX-FIX): "after reconciliation" above overstated this. Only canvas 30's 4
+disagreements were actually settled by hand against the crop (see above); canvas 20 and 27 are pass A only,
+unreconciled but above the 60% gate; canvas 21 is pass A only, held back below the 60% gate (see above) and
+excluded from any total this repo presents as settled.
 
 519 tokens, 129 distinct signs: 355 numeric-token occurrences (84 distinct numbers) and 164 letter/mark-token
 occurrences (45 distinct marks). Most frequent: `11`/`y` (18 each), `83`/`31` (17 each), `d`/`21` (13 each).
-Full counts are in `specs/colbert26-lathuillerie-1644.json`'s alphabet block, not restated here.
+This total still includes canvas 21's 96 held-back tokens -- it is a transcription-progress count, not a
+settled-ciphertext count; a settled total (canvas 20+27+30 only, canvas 21 excluded per the hold-back above)
+is not yet computed here. Full counts are in `specs/colbert26-lathuillerie-1644.json`'s alphabet block, not
+restated here; that spec's own `ciphertext` field is corrected separately to mark canvas 21 held back.
 
 ### Not done this job (successor's queue, cheapest/highest-value first)
 

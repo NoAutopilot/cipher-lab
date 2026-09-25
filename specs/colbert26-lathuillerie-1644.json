@@ -3,10 +3,10 @@
  "name": "BnF Melanges de Colbert 26 part I, La Thuillerie -> Servien, 1644-48 (canvases 20-63, mixed nomenclator)",
  "date": "1645-1648 (canvas 20-21: 6 Apr 1645; canvas 27: 25 May 1646; canvas 30 [+32 untranscribed]: 8 May 1646; canvas 26 possibly a different correspondent, 17 Mars 1646, excluded from this spec)",
  "language_candidates": ["fr"],
- "ciphertext": "ciphers/colbert26-lathuillerie-1644/ciphertext.tsv (canvases 20, 21, 27, 30 transcribed and reconciled; 16 more cipher-bearing canvases on the leaf map -- 32,33,35,36,39,40,47,48,49,50,51,54,55,56,62,63 -- not yet transcribed, see NOTES.md 'Not done this job')",
+ "ciphertext": "ciphers/colbert26-lathuillerie-1644/ciphertext.tsv (canvases 20, 21, 27, 30 transcribed; only canvas 30's 4 disagreements were actually reconciled by hand against the crop -- canvas 20 (81.0% two-pass agreement) and 27 (78.4%) are pass-A-only but above the 60% transcription-agreement gate; canvas 21 (57.6%) is pass-A-only and BELOW the 60% gate (CLAUDE.md Usage item 6) -- its rows stay in ciphertext.tsv, flagged, but are NOT settled ciphertext and must be excluded from any test or total this spec presents as reconciled/settled, corrected 25 Sept 2026 per QA/2026-09-25-1036.md rows 9-10; 16 more cipher-bearing canvases on the leaf map -- 32,33,35,36,39,40,47,48,49,50,51,54,55,56,62,63 -- not yet transcribed, see NOTES.md 'Not done this job')",
  "ciphertext_source": "Gallica ark btv1b10035069t, canvases 20-63 (folio 17-59); native page crops on disk at ciphers/colbert26-lathuillerie-1644/images/crops/canvas{N}_full.jpg (2400px wide), fetched by KX-LATHKEY/KX-LATHKEY2, read 25 Sept 2026",
  "alphabet": {
-  "note": "counts from the 4 canvases transcribed so far only (519 tokens total); will grow and shift as the remaining 16 canvases are added -- not a final inventory",
+  "note": "counts from the 4 canvases transcribed so far only (519 tokens total); will grow and shift as the remaining 16 canvases are added -- not a final inventory. Includes canvas 21's 96 held-back tokens (57.6% two-pass agreement, below the 60% transcription gate, corrected 25 Sept 2026) -- this is a transcription-progress count, not a settled-ciphertext count.",
   "total_tokens": 519,
   "distinct_signs": 129,
   "numeric_tokens": 355,
@@ -26,7 +26,7 @@
   "canvas 27's clear-text context names 'le Comte de Trautmandorff', 'Duche et Principaulte de l'Empire du Comte de Meurs', 'M. le P. d'Orange' -- concrete, externally checkable historical content around (not naming) its cipher runs",
   "sender/recipient/date is fixed per letter (see ciphertext.tsv canvas column and NOTES.md), so runs from the same canvas or the same letter's two leaves (20+21) are the same key more confidently than runs pooled across different dated letters",
   "known keys of the same office/period on disk for a structural comparison: ciphers/clair1067-brienne-poland-1646/key_1646.tsv, ciphers/clair1067-brienne-poland-1646/key_brienne_1647.tsv, ciphers/fr5160-letellier-1653/key_1659_ext.tsv",
-  "transcription is a single worker's pass A for canvases 20/21/27, reconciled against a blind second pass (passB.tsv) only for agreement percentage -- 109 of 113 token-level disagreements are NOT settled against the crop yet (disagreements.tsv); canvas 30 alone was hand-settled (2 of 4 disagreements corrected, 2 left ambiguous)"
+  "transcription is a single worker's pass A for canvases 20/21/27, checked against a blind second pass (passB.tsv) only for agreement percentage -- 109 of 113 token-level disagreements are NOT settled against the crop yet (disagreements.tsv); canvas 30 alone was hand-settled (2 of 4 disagreements corrected, 2 left ambiguous). Canvas 21's agreement (57.6%) is below the repo's 60% transcription gate (corrected 25 Sept 2026): its rows are not deleted but must be treated as unsettled and excluded from anything presented as reconciled ciphertext; canvas 20 (81.0%) and 27 (78.4%) clear the gate despite being unreconciled beyond pass A."
  ],
  "cheap_tests_in_order": [
   "1. Frequency/homophone structure of ciphertext.tsv's alphabet vs the key_1646 / key_brienne_1647 / fr5160 key_1659_ext designs (same office/period, different correspondence) -- code-count distribution, digit-width histogram, index of coincidence per symbol class -- with a matched synthetic control of the same N and K. Also run canvas 20/21 vs canvas 30 against EACH OTHER (same office, different apparent design) before assuming they are one alphabet.",
@@ -40,7 +40,7 @@
   "date": "25 Sept 2026",
   "worker": "KX-LATHCT1 (session_01DSypDSZzmMZmmo2fFXuD5g)",
   "script": "ciphers/colbert26-lathuillerie-1644/ct1_profile.py, seed 20260925, 200 synthetic reps per test; full numbers in ct1_results.tsv and NOTES.md section 'KX-LATHCT1 (25 Sept 2026)'",
-  "tokens_used": "A(canvas20+21+27) 293/370 agreed (77 dropped); B(canvas30) 147/149 agreed (2 dropped)",
+  "tokens_used": "A(canvas20+21+27) 293/370 agreed (77 dropped); B(canvas30) 147/149 agreed (2 dropped) -- NOTE (25 Sept 2026, QA/YX-FIX): A pools canvas 21's tokens, since held back under the 60% transcription gate as unsettled; this cheap test predates that correction and is left on file as a historical record, not rerun (out of this fix's scope), but any reuse of its A-group figures should treat them as resting partly on unsettled transcription",
   "results": [
    {"pair": "A vs B", "observed_jaccard": 0.255, "diff_key_control_mean": 0.292, "diff_key_control_range": [0.196, 0.391], "observed_percentile": 15.0, "same_key_control_mean": 0.764, "verdict": "different alphabet -- B is 100% two-digit numbers (zero letter/mark codes vs A's 30.0/5.8/2.4%), Jaccard below the different-key chance mean, far below same-key expectation"},
    {"pair": "A vs key_1646 (clair1067 ciphertext.txt)", "observed_jaccard": 0.242, "diff_key_control_mean": 0.229, "diff_key_control_range": [0.163, 0.302], "observed_percentile": 76.5, "same_key_control_mean": 0.852, "verdict": "different key family"},
