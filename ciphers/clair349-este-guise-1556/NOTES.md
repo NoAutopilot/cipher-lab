@@ -1565,3 +1565,39 @@ Not done (brief): the fresh-session re-derivation (rule 7) and any novelty class
 Files: `corrections.tsv`, `ciphertext.tsv`, `exceptions.tsv`, `gloss_votes.tsv`, `key_vs_gloss.tsv`, `reading.txt`,
 `reading_tokens.tsv`, `reading_vs_gloss.tsv`, `reading_en.txt`, `control_shuffle.py` (`--lines`), `reread_tr349e.tsv`
 (new). specs/ not touched. cost: see the lane ledger.
+
+## ZX-RD349 re-derivation (25 Sept 2026)
+
+Rule-7 fresh-instance re-derivation, per `.claude/briefs/runs/2026-09-25-lane-zx-rd349.md`. This session did not
+read NOTES.md above this section, reading.txt or the solver's other files; it worked only from
+specs/clair349-este-guise-1556.json, key_alpha.tsv, key_nomen.tsv, ciphertext.tsv, exceptions.tsv, decode.json,
+build_decode.py, gloss_votes.tsv and tools/decode_key.py.
+
+1. **Pipeline reproduction.** Copied the target folder to scratch. `build_decode.py --check` reported outputs
+   current; regenerating wrote key_decode.tsv (111 rows), gloss_votes.tsv (857 rows) and exceptions.tsv (347
+   rows), each byte-identical to the committed file. `tools/decode_key.py <scratch>` (and `--check`) regenerated
+   reading.txt and reading_tokens.tsv (1020 tokens: H 29, C 260, M 611, I 98, U 22) byte-identical to the
+   committed files. No differences at any stage of the pipeline.
+
+2. **Independent application.** Wrote `rederive_rd349.py` (committed alongside this section), which reads
+   key_alpha.tsv and key_nomen.tsv directly -- not key_decode.tsv -- with its own flattening (DOUBLES:xx pairs,
+   NULLES:n -> NULL, V -> u, I/other letters lower-cased; key_nomen word_or_phrase taken literally), merges the
+   two tables by code (a repeated code with two different values kept as `a|b`, never overwritten), and applies
+   the result to ciphertext.tsv token by token. A position named in exceptions.tsv takes that row's stated value
+   exactly; everything else comes from the key alone. Of 1020 tokens: 347 came from an exceptions.tsv row, 651
+   from the key directly (0 of those left ambiguous as `a|b` -- every code that carries two values in the key
+   tables turned out to have an exceptions.tsv row at every one of its ciphertext positions), and 22 were unkeyed
+   signs with no exceptions row (output `?`), matching the committed U grade count exactly.
+
+3. **Diff.** Compared the 1020 independently-derived values against reading_tokens.tsv token by token, after
+   normalizing both (lower case, u=v, i=j, long s=s; doubled-letter codes are already printed as the pair in
+   both files). Tokens compared: 1020. Tokens differing: **0**. (No differing tokens exist, so the question of
+   how many are graded M/I/U is moot -- none needed that allowance.)
+
+   No table of H/C-graded differences, because there were no differences of any grade.
+
+**Rule 7 verdict: PASS.** The committed reading_tokens.tsv reproduces byte-for-byte from build_decode.py and
+tools/decode_key.py, and every one of its 1020 token values also reproduces from an independent, freshly-written
+application of key_alpha.tsv + key_nomen.tsv + exceptions.tsv to ciphertext.tsv. No SEND BACK list.
+
+cost: see the lane ledger
