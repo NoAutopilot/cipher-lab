@@ -1,0 +1,88 @@
+line	pos	code_a	marks_a	code_b	marks_b	note
+1	8	o.	1	phi		DIFFER
+1	8.5	MISSING		g	+	one pass missing this box
+2	6	bh		_		DIFFER
+2	7	tee		_		DIFFER
+2	8	tee		_		DIFFER
+2	9	N		_		DIFFER
+2	10	S		_		DIFFER
+2	11	Lx		_		DIFFER
+2	12	v		_		DIFFER
+2	16	#		+		DIFFER
+2	18	_		o.		DIFFER
+3	5	#		+		DIFFER
+3	12	S4		_		DIFFER
+3	25	f		_		DIFFER
+4	3	S		_		DIFFER
+4	8	p		_		DIFFER
+4	19	eps		_		DIFFER
+4	20	_		rz		DIFFER
+5	11	_	+	S7	+	DIFFER
+5	23	g	dot	_		DIFFER
+5	29	eps		_		DIFFER
+6	4	S7	dot	_		DIFFER
+6	16	_	#	S7	#	DIFFER
+6	20	_		o.		DIFFER
+7	13	lam	7	a	1|5	DIFFER
+7	15	m	3	S7	3	DIFFER
+7	30	Z		_		DIFFER
+8	15	_		rz	3	DIFFER
+8	22	S		_		DIFFER
+8	24	H	dot	_		DIFFER
+8	26	S		_		DIFFER
+8	28	N		_		DIFFER
+9	1	S7		_		DIFFER
+9	2	tee		_		DIFFER
+9	3	g	dot	_		DIFFER
+9	11	tee		+		DIFFER
+9	14	_		S		DIFFER
+10	1	y	dot	]	o	DIFFER
+10	2	_		Lx		DIFFER
+10	4	y		phi		DIFFER
+10	6	_		lam	3	DIFFER
+10	19	_		Lx		DIFFER
+10	22	_	dot	Lx	dot	DIFFER
+11	3	sq	ot	]	ot	DIFFER
+11	4	_		w		DIFFER
+11	8	S7		tee		DIFFER
+11	16	_		g		DIFFER
+11	22	_		dl		DIFFER
+11	22.5	MISSING		f		one pass missing this box
+12	3	S7		_		DIFFER
+13	3	S7		tee		DIFFER
+13	6	_		S7	dot	DIFFER
+13	7	Z		nt		DIFFER
+14	7	_				DIFFER
+14	13	_		f		DIFFER
+14	18	_		nt		DIFFER
+14	19	_		N		DIFFER
+14	20	_		S		DIFFER
+15	7	_	5	S7	5	DIFFER
+15	7.5	MISSING		H		one pass missing this box
+15	18	_	~	eps	~	DIFFER
+15	20	+		#		DIFFER
+16	10	g		y		DIFFER
+16	12	]		[		DIFFER
+16	13	nt		dl		DIFFER
+16	26	y		w		DIFFER
+17	1	_		S		DIFFER
+17	2	_		N		DIFFER
+17	3	_	1|1	S		DIFFER
+17	5	g		S7		DIFFER
+17	7	_		S	dot	DIFFER
+17	9	y		f		DIFFER
+17	10	e		_		DIFFER
+17	14	_	dot	bh	dot	DIFFER
+17	17	#		_		DIFFER
+18	1	y		_		DIFFER
+18	2	p		_		DIFFER
+18	4	#		_		DIFFER
+18	5	y		_		DIFFER
+18	6	_		S		DIFFER
+18	7	_		nt		DIFFER
+18	7.5	MISSING		S	~	one pass missing this box
+18	10	Lx		_		DIFFER
+18	13	S	7	_		DIFFER
+18	15	H		_		DIFFER
+18	18	N		_		DIFFER
+19	18	Z		S7	+	DIFFER
