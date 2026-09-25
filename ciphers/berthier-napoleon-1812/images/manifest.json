@@ -1,0 +1,20 @@
+{
+  "source": "Persee, J. Vilcoq, \"Le Chiffre sous le Premier Empire\", Revue Historique des Armees 25e annee no.4 (1969) p.24",
+  "doc_id": "rharm_0035-3299_1969_num_25_4_8686",
+  "page_id": "rharm_0035-3299_1969_num_25_4_T1_0024_0003",
+  "fetched": "25 Sept 2026",
+  "files": {
+    "plate_t1_0024_0003_1.png": {
+      "url": "https://www.persee.fr/renderIllustration/rharm_0035-3299_1969_num_25_4_T1_0024_0003_1.png",
+      "size_px": "1060x1429",
+      "note": "highest resolution Persee serves for this plate; the full-page renderPage/..._<N>.jpg endpoint ignores its width parameter and returns a fixed 1217x1833 whole-page image (lower effective resolution for the illustration crop than this standalone illustration render)"
+    },
+    "numbers_block.png": "crop of the plate below the archive seal, the number-group block only (y >= 34% of plate height)",
+    "numbers_top.png": "numbers_block.png upper half, 2x resize, lines 1-11",
+    "numbers_bot.png": "numbers_block.png lower half, 2x resize, lines 11(cut)-22, given to the pass-B subagent alongside numbers_top.png",
+    "settle_*.png": "tight 3-5x zoom crops around individual disagreements between pass A/B or between the settled reading and ciphertext.txt, used to adjudicate each one by eye"
+  },
+  "requests": {
+    "persee.fr": "main doc page 1, page-fragment probes 2, illustration PNG 1, whole-page JPG probe 3 (same cached response, testing width param) = 7 total, >=1.5s apart"
+  }
+}

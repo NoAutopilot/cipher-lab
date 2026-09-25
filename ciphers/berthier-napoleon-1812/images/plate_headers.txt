@@ -1,0 +1,20 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/1.1 200 200
+Date: Fri, 25 Sep 2026 17:18:26 GMT
+Server: Apache
+Strict-Transport-Security: max-age=63072000; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1
+Set-Cookie: JSESSIONID=3E02E4914B69C5EE956B1EDE122FFCBE.portail1; Path=/; Secure; HttpOnly
+ETag: 6208e89a837a8ddd81905901d091cbcc
+Cache-Control: no-cache, no-transform
+Last-Modified: Sun, 25 May 2025 22:00:00 GMT
+Content-Length: 245339
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Headers: X-Requested-With, Content-Type
+X-Robots-Tag: noindex, nofollow, noarchive
+Content-Type: image/png
+
