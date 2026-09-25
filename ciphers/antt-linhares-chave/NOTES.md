@@ -69,4 +69,41 @@ No book, key application, or decode was attempted -- the book is unidentified, s
 
 - Try to identify the specific "Diccionario" (candidates above are guesses); a period Portuguese-household dictionary bibliography search, or an ANTT archivist's note, might narrow it.
 - Re-try `bportugal.pt`'s Textos Políticos PDF from a different route (it may simply block the proxy's egress IP; a direct browser fetch was not tried).
-- A transcription pass on m0002 (and any other Linhares maços with live ciphertext) to get an exact digit-by-digit reading, once/if the book is found.
+- Decode `ciphertext.tsv` once the dictionary is identified (LX-BOOK).
+
+## Transcription of m0002 (LX-TR, 25 Sept 2026)
+
+`ciphertext.tsv` (26 groups: 9+8 across page "2"'s two lines, 8+1 across page "3"'s two lines) is the
+committed digit-by-digit reading, grade H throughout, columns page_of_letter/line/pos/group/trim/book_page/
+book_col/rank/is_null/grade. Every row parses under the key's own rule (checked programmatically): a normal
+group's first digit d1∈{1,2,3} gives the page as the next d1 digits, the following digit∈{1,2,3} is the
+column, the remainder (≥1 digit) is the rank; one group (page 2, line 2, pos 6, `829011`, trim 5) starts
+with 8 and is a null (no book_page/col/rank). No group failed to parse; none was forced to fit.
+
+Method: two independent blind Sonnet subagent passes from the image alone (`passA.tsv`, `passB.tsv`, neither
+saw the other or this file), each self-checking its own reads against the key's parse rule and re-cropping
+ambiguous digits before finalizing. Reshaped into `tools/reconcile_passes.py`'s long format (temp files, not
+committed) and reconciled: **21/26 = 80.8% exact agreement** (well above the 60% stop-and-report threshold),
+5 disagreement columns, matching a fully independent manual comparison of the two files. All 5 settled by
+this worker from fresh 8-12x crops of the image (not from either pass):
+
+| location | pass A | pass B | settled | how |
+|---|---|---|---|---|
+| p2 l1 pos1 | 328928 | 328923 | **328928** | 8x zoom on the group alone shows the last two digits clearly as "28", not "23" |
+| p2 l2 pos4 | 3350320 | 3360320 | **3350320** | the disputed digit's shape (small open hook, no closed bottom loop) matches this scribe's "5" elsewhere (e.g. in `335412`) and not the fully closed loop this scribe uses for "6" (e.g. in the `m86/11` header, `260118`, `326624`) |
+| p3 l1 pos1 | 329512 (6 digits) | 3295112 (7 digits) | **3295112** | a wide 7x crop clearly shows 7 digits, "3295112"; pass A dropped a digit |
+| p3 l1 pos4 | 287219 (graded M) | 285219 | **285219** | 10x zoom shows a small caret-inserted "5" written *above* the line between "28" and "219" — a scribal correction the scribe squeezed in after the fact; pass A read the caret mark as part of a "7" |
+| p3 l1 pos6 | 3293211 | 329231 (6 digits) | **3293211** | 12x zoom across two overlapping crops shows a doubled final stroke ("...2,1,1") that pass B read as a single "1"; the full 7-digit sequence parses (page 293, col 2, rank 11) |
+
+Both readings parsed validly under the key rule in every disagreement case (the self-check does not
+disambiguate a legibility call), so all five were settled purely from the image, not from which one parsed.
+
+`key_example.tsv`: re-read the worked example on m0003 digit by digit (12 groups across its two lines),
+independent of this file's own quote of the same passage. All 12 match the existing NOTES.md transcription
+exactly and all parse under the key rule, including the two groups (1131 and 322212) the key text itself
+works through step by step on m0003-m0004 — this worker's parse of those two agrees with the key's own stated
+result (pag.1/col.3/rank.1 and pag.222/col.1/rank.2 respectively). This is an independent check on the parse,
+not a new derivation of the rule.
+
+Grades: all 26 `ciphertext.tsv` rows and all 12 `key_example.tsv` rows are H (read directly off the image,
+confirmed by re-crop where the two blind passes disagreed). No group was left at grade M.
