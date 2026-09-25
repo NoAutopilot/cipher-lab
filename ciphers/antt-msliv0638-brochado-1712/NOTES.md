@@ -221,7 +221,92 @@ that wasn't used for alignment (Carta 123 has no cipher; a handful of entries ha
 15, 58, 73, 74, 92, 110 -- these still need a hand check since something about their plain-word wording didn't
 match `deciffrada_line` verbatim, worth a look before trusting the key on them); (3) only then the body sweep.
 
+## PX-BROKEY2 (25 Sept 2026): alignment repair (step 2 of this worker's brief)
+
+Worker PX-BROKEY2 (Sonnet), job: make the period key rule-7 sound (second blind transcription pass +
+reconcile, alignment repair, decode.json + `--check`). This section covers step 2 (alignment repair);
+step 1 (second blind pass) was running as a background subagent while this work was done and is
+reconciled in the section below once it lands; step 2's key.tsv will be rebuilt again after that
+reconciliation updates ciphertext_appendix.tsv/plaintext_appendix.tsv.
+
+**Root causes found for the 8 zero-anchor entries** (Carta 13, 15, 58, 61, 73, 74, 92, and m0288's
+Passage 2a -- one more than the 7 the prior worker's hand-check had flagged), each confirmed against the
+full-resolution image:
+
+1. **Word-boundary bug (Carta 13, Carta 15, and most others' partial mismatches).** The old anchor
+   script searched for each plain word as a raw case-insensitive *substring* of `deciffrada_line`, so a
+   short word matched *inside* a longer one before its own real occurrence -- e.g. "tem" matched inside
+   "in**tem**dem" long before the actual standalone "tem" near the end of Carta 13, and "a" (a genuine
+   one-letter Portuguese word) matched inside almost any word containing that letter. Every plain word in
+   both entries is genuinely present in the image at its own position; the search just found the wrong
+   one first and threw off every anchor after it. Fixed: `02_anchor.py` now tokenises `deciffrada_line`
+   into whole words and matches plain chunks against whole words only, scanning forward from the current
+   position (never backward, never inside another word).
+2. **Genuine scribal variation (Carta 58, Carta 73), hand-checked against the image, not transcription
+   errors:** Carta 58's cipher line plainly reads "N.Exã" where its own Deciffrada reads "V.Exª" -- both
+   are the same honorific ("Vossa Excelência"), the compiler was simply inconsistent about the leading
+   letter of the abbreviation. Carta 73's cipher line reads "dous" where its Deciffrada reads "dois" --
+   both are valid, interchangeable period spellings of "two" (Portuguese orthography wasn't standardised
+   yet; the same u/v looseness already noted for the `26` code's u/v split in the prior pass). Added as
+   explicit equivalences (`HONORIFIC_RE`, `DOUS_DOIS`) rather than generic fuzzy matching, to avoid
+   introducing false positives elsewhere.
+3. **A cipher chunk glued across a decif word boundary (m0288 Passage 2a):** the cipher line writes
+   "aporta" as one word where the Deciffrada spells it "a porta" (two words) -- `find_next` now also
+   tries a plain word against two consecutive decif words concatenated.
+4. **Two entries (Carta 74, Carta 92) are coded letter-for-letter with *no* plain words interspersed at
+   all**, confirmed against the image (every space-separated chunk in their cipher_line is dot-joined
+   digits/single letters, no real word anywhere) -- unlike every other appendix entry, which mixes in
+   plain Portuguese. Their *stored* `ciphertext_appendix.tsv` token row had drifted out of sync with their
+   own `cipher_line` text (a transcription-pass inconsistency between the two tables written in the same
+   pass), which made the old segmenter fall through to treating a whole code run as one unmatched "plain
+   word". Fixed in `01_segment.py`: a multi-piece chunk that is entirely code-shaped (digits/single
+   letters only) is now segmented as CODE from its own pieces even when it doesn't line up with the
+   stale stored token stream.
+5. **One entry (Carta 110, m0294) still fails after all of the above** -- the plain word transcribed as
+   "duvida" does not occur anywhere in its own Deciffrada text ("Este Velhaco não responder-me foge de mim
+   **devo** esta vergonha à sua mentira."), and "vergonhar" (transcribed) vs. Deciffrada's "vergonha" is a
+   verb/noun mismatch, not an abbreviation. Read against the image again this pass but not confidently
+   resolved either way (the word is short and the hand is cramped at that exact spot) -- left unresolved
+   rather than guessed; flagged for the second blind pass / a fresh image re-check, not silently corrected.
+   `key.tsv`'s data is unaffected either way since 03_align_pairs.py safely excludes an entry's unresolved
+   spans from the tally rather than guessing.
+
+**Also fixed:** the anchor script's per-entry `ok` flag used to require at least one resolved plain word,
+which wrongly flagged the appendix's fully-coded entries (Carta 30, and now 74/92) as "ANCHOR-FAIL" even
+though they need zero anchors (the whole line is one CODE run). An entry with zero unresolved words is
+`ok` regardless of how many plain words it has (including none). `03_align_pairs.py`'s span boundaries
+now walk outward to the *nearest resolved* anchor on each side instead of only the immediate neighbour, so
+one unplaced word costs only the spans touching it, not the rest of the entry (this was the actual
+mechanism that recovered Carta 13/15's data once the word-boundary and lookahead-window bugs above were
+fixed -- an earlier version of this same walk-outward change, before the lookahead window bug was found,
+initially *lost* pairs by mis-attributing skipped words to the wrong neighbour; kept here only as a
+lesson in the script's own comment, not repeated).
+
+**Result:** entries fully or partially anchored: 37/38 (was 31/38); zero-anchor: 1 (Carta 110, above; was
+8). Aligned code-letter pairs: 391 (was 306). `key.tsv`: 40 codes, 28 at grade C (was 38 codes, 26 at grade
+C) -- gains include `11→p` (M→C, 2 obs), `13→q` (M→C, 3 obs), `10→h` (6→9 obs), `12→r` (22→25), `4→s`
+(18→26), `5→c` (8→11), `8→i` (19→24), `17→a` (20→23), `18→m` (15→18), `19→e` (15→20, see caveat below),
+`20→l` (5→6), `23→a` (3→4), `26→u` stays M but firms up (14→17 obs), `3→t` (16→18), `y→a` (8→17), `z→e`
+(12→18), plus two brand-new grade-C codes from Carta 13/15 (`9±→r`, `a→t`, `m→n` gains one more
+observation). **Two codes moved C→M** with the new data rather than being forced to stay C: `7` (was
+C at 6/7="e"; now 11 obs, "e" only 6/11=55%, plus new `o` and `r` readings -- see the `q.mos` case below)
+and `e` (was C at 2/2="g"; now 6 obs, "g" only 3/6=50%, plus `u`/`v` readings). Both downgrades are the
+grading rule doing its job on newly-recovered conflicting evidence, not a regression to force back up:
+one instance behind the `7→o` reading is code run `13.c.7.18.` decoding to "q.mos" letter-for-letter
+against Carta 13's own Deciffrada abbreviation "q.mos" (short for "quantos") -- the cipher apparently
+encodes the *written* abbreviated form, not the expanded word, exactly as many tokens as letters
+(4-for-4); worth a second look once the appendix has more coverage, not resolved this pass.
+
+Method unchanged from the prior pass (`01_segment.py` → `02_anchor.py` → `03_align_pairs.py` →
+`04_build_key.py`, run in order, no network); only the three scripts' internal logic changed, described
+above. Key source grade is still `period` (rebuilt by us from the volume's own contemporary
+decipherments).
+
 ### Host report (this pass)
+
+No network access; this pass worked entirely from the images and TSVs already on disk.
+
+### Host report (PX-BROKEY, prior pass)
 
 `digitarq.arquivos.pt`: 24 full-resolution leaf-fetch requests (m0281, m0286-288, m0284-285, m0294-296,
 m0270, m0200, m0276, m0279-283, m0289-293 -- note m0289-293 were already on disk from PX-CS01's earlier pass
