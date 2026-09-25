@@ -1,0 +1,1175 @@
+line	position	sign	gloss	confidence	source	why
+01	1	64	z	M	both	gloss is a z-shape with a crossbar, no long-s stem
+01	2	12	a	H	both	agree
+01	3	73	y	H	both	agree
+01	4	S34	r	H	both	agree
+01	5	26	e	M	both	two-part gloss (lower curve + detached top-right stroke), same form as agreed e over 16
+01	6	9	s	H	both	agree
+01	7	16	e	H	both	agree
+01	8	104	u	H	both	agree
+01	9	S27	l	H	both	agree
+01	10	62	i	H	both	agree
+01	11	S23	s	H	both	agree
+01	12	|		H	both	agree
+01	13	5	l	H	both	agree
+01	14	16	e	H	both	agree
+01	15	58	tt	M	both	gloss two stems joined by a crossbar (H-like), crossed so tt not ll
+01	16	S40	r	H	both	agree
+01	17	62	e	M	both	two-part e-form gloss
+01	18	S32	quel	M	both	gloss q + two minims + small letter + l; no a-bowl like the 'a' glosses; low confidence
+01	19	S35	so	H	both	agree
+01	20	|	a	M	H	small 'a' written above the divider stroke, right of 'so' gloss; same raised-a pattern after S35 in lines 03 and 07
+01	21	12	a	H	both	agree
+01	22	S31	p	M	G	circle on a cross; cross seen at top of line02 crop
+01	23	5	l	H	both	agree
+01	24	26	e	M	both	two-part e-form gloss
+02	1	102		M	H	middle digit is a closed 0 with no ascender, not 6; stamp rim above, no gloss
+02	2	|		H	both	agree
+02	3	S29	m	H	both	agree
+02	4	26	e	M	both	two-part gloss (blob + detached top-right dot), e-form; neither pass
+02	5	4	s	M	G	2 and 6 read as one 26 (gloss over the 2, as in line01 26); 4 separate with its own tall gloss; gloss is a tall long-s with no crossbar
+02	6	9	s	M	H	gloss matches the agreed s over 9 in line01 pos6 (blob + up-right stroke)
+02	7	S34	r	H	both	agree
+02	8	60	z	M	G	gloss is the crossed-z form (as line01 pos1)
+02	9	S40	r	M	H	gloss is the 2-shaped r, identical to the agreed r over S40 in line01
+02	10	26	u	H	both	agree
+02	11	|		H	both	agree
+02	12	S16	d	H	both	agree
+02	13	102	u	M	H	one code 102, spacing like 104; gloss u over 10
+02	14	|		H	both	agree
+02	15	7	u	H	both	agree
+02	16	64	z	M	G	crossed-z gloss as line01 pos1
+02	17	15	n	H	both	agree
+02	18	S03	a	H	both	agree
+02	19	4	t	H	both	agree
+02	20	104	u	H	both	agree
+02	21	S30	n	H	both	agree
+02	22	S03	a	H	both	agree
+02	23	|		H	both	agree
+02	24	60	i	M	G	gloss is a single minim, no crossbar
+02	25	26	e	M	H	two-part e-form gloss
+02	26	4	s	M	G	26 + 4 as pos5; tall long-s gloss touches the 4 top, no crossbar of its own
+02	27	S29	m	H	both	agree
+02	28	16		H	both	agree
+02	29	|		H	both	agree
+02	30	S16	d	H	both	agree
+02	31	104	u	H	both	agree
+02	32	|		H	both	agree
+02	33	S31	p	M	G	circle on cross, cross clear at top of line03 crop
+02	34	12	a	H	both	agree
+03	1	4	ss	M	H	a clear 4 at line level; above it two tall long-s strokes joined by a top bar (gloss, like other tall glosses over 4), no crossbar; small c-like mark at top right unassigned
+03	2	62		H	both	agree
+03	3	|		H	both	agree
+03	4	22	po	H	both	agree
+03	5	|		H	both	agree
+03	6	S34	r	M	H	gloss is the 2-shaped r; the crossing thin diagonal is the tail of line02's 9
+03	7	26	c	M	new	2 and 6 one code as elsewhere; gloss a single curve with top-right flag attached (c-with-horn), not the two-part e; r possible
+03	8	4	s	M	G	4 alone; tall long-s gloss without crossbar
+03	9	S31	p	H	both	agree
+03	10	82	o	M	H	gloss over the 8 is a small closed loop, o; low confidence
+03	11	15	n	H	both	agree
+03	12	9	c	M	new	gloss is a c-curve with a top bar; the vertical through it is the faint divider line, so not q
+03	13	S40	r	M	H	arch sign; gloss r sits above the S40/6 junction; S40 is r elsewhere
+03	14	62		M	H	a separate small 6-loop with stem and a 2 inside the S40 flourish; S40 atlas has no inner loop
+03	15	6		H	both	agree
+03	16	|		H	both	agree
+03	17	S16	d	M	H	thin short long-s with a hairline hooked top, no 5-flag or bottom hook (compare 5 in line04 pos21); d gloss as other S16
+03	18	16	e	M	H	two-part e-form gloss
+03	19	9	s	M	H	blob with rightward stroke, matches s-form over 9 in line01; partly merged with line02 descender; c possible
+03	20	26	e	M	H	two-part e-form gloss
+03	21	S32	que	M	G	gloss reads que; the tall stroke after it is the gloss of the 4 (pos23)
+03	22	|		H	both	agree
+03	23	4	s	M	H	tall long-s gloss, no crossbar
+03	24	9	c	H	both	agree
+03	25	60	i	M	G	short stroke with small top-left serif, minim height; not a tall l
+03	26	S31	p	M	G	gloss stem with a bowl at top right and a crossbar, crossed p as in line01 pos22
+03	27	64	l	M	H	gloss short upright with a foot curling right; not the crossed-z form; low confidence
+03	28	44	o	M	G	one code 44 with gloss o over the first digit
+03	29	15	n	H	both	agree
+03	30	S35	so	H	both	agree
+03	31	|	a	M	H	raised 'a' after the 'so' gloss, above the divider, as line01 pos20
+03	32	14	a	H	both	agree
+03	33	S34	r	M	H	2-shaped r gloss
+03	34	16	e	M	H	two-part e-form gloss
+04	1	4	s	M	H	tall long-s joined to the 4 top, no crossbar
+04	2	S31	p	H	both	agree
+04	3	82	o	H	both	agree
+04	4	S30	n	H	both	agree
+04	5	S16	d	M	H	thin short long-s stroke with hairline top, matches S16 not the flagged 5 (line04 pos21)
+04	6	104	u	H	both	agree
+04	7	S16	d	M	H	same thin long-s form as pos5
+04	8	26	t	H	both	agree
+04	9	4	f	H	both	agree
+04	10	|		H	both	agree
+04	11	7	u	H	both	agree
+04	12	S40	r	M	H	a small 2-shaped knot on a descender from line 03 above the S40; low confidence
+04	13	5	l	M	H	loop at the foot of line03's S40 leg descending here reads as script l over the 5; 5 is l elsewhere
+04	14	16	e	M	H	two-part e-form gloss
+04	15	4	f	H	both	agree
+04	16	14	a	H	both	agree
+04	17	64	z	M	G	crossed-z gloss
+04	18	S37	t	H	both	agree
+04	19	|		H	both	agree
+04	20	22	po	H	both	agree
+04	21	5	l	H	both	agree
+04	22	16	e	M	H	two-part e-form gloss
+04	23	S32	quel	M	H	u-stroke + y with long tail = S32's top-left hook; gloss quel as other S32
+04	24	S44	se	M	H	stem crossed low with a closed loop to the right at top (p-like loop, crossed stem), not a 4 diagonal; gloss tangled with line03 descenders, se or fe
+04	25	|		H	both	agree
+04	26	62	e	M	H	two-part e-like gloss above the 62
+04	27	4	s	M	G	clear 4 (stem, crossbar, slanted top); tall long-s gloss with no crossbar
+04	28	S37	t	H	both	agree
+04	29	82	o	H	both	agree
+04	30	60	z	M	G	crossed-z gloss
+04	31	S38	t	H	both	agree
+04	32	|		H	both	agree
+04	33	104		M	H	loop above is line03's final 6 descending; no gloss. A z-like mark in the gloss zone right of 104 over a colon is not a code
+05	1	26	e	M	H	two-part e-form gloss; the tall stroke right of it is a line04 descender
+05	2	15	n	H	both	agree
+05	3	102	u	M	H	one code 102, gloss u over the 10
+05	4	|		H	both	agree
+05	5	S31	p	H	both	agree
+05	6	28	a	H	both	agree
+05	7	S34	r	H	both	agree
+05	8	S16	d	M	H	thin short long-s stroke with d gloss, as line04 pos5
+05	9	26	r	H	both	agree
+05	10	9	c	M	G	gloss a single c-curve with top flag, not two-part
+05	11	14	a	H	both	agree
+05	12	|		H	both	agree
+05	13	S31	p	H	both	agree
+05	14	12	a	H	both	agree
+05	15	S40	r	H	both	agree
+05	16	S27	l	H	both	agree
+05	17	26	e	M	new	2 and 6 one code; gloss is two-part (blob + dot) e-form, not a dotted i
+05	18	4	s	M	G	4 alone; tall long-s gloss, no crossbar
+05	19	S32	q	H	both	agree
+05	20	102	u	M	H	one code 102, gloss u over the 10
+05	21	16	e	M	H	two-part e-form gloss
+05	22	68	tt	M	H	crossed double stem gloss, tt
+05	23	62	e	M	H	two-part e-form gloss
+05	24	S35		H	both	agree
+05	25	|		H	both	agree
+05	26	60	z	M	G	crossed-z gloss
+05	27	12	a	H	both	agree
+05	28	73	y	H	both	agree
+05	29	|		H	both	agree
+05	30	26	e	M	H	lower curve + upper hook, e-form
+06	1	4	s	M	H	tall long-s joined to the 4 top, no crossbar
+06	2	S38	t	H	both	agree
+06	3	16	e	M	H	two-part e-form gloss
+06	4	|		H	both	agree
+06	5	3	?	H	both	agree
+06	6	60	i	M	G	i over the 6; the t above the 0 sits higher and is the bottom cross of line05's S31
+06	7	15	en	M	H	first gloss letter two-part e-form, then n
+06	8	|		H	both	agree
+06	9	S42		H	both	agree
+06	10	26		M	G	one code 26, no gloss
+06	11	S30		H	both	agree
+06	12	|		H	both	agree
+06	13	4	f	M	G	double-barred 4; gloss f has a visible crossbar
+06	14	44	o	M	G	one code 44, gloss o over the first 4, second 4 unglossed (as line03 pos29)
+06	15	S34	r	H	both	agree
+06	16	S37	t	H	both	agree
+06	17	|		H	both	agree
+06	18	12	a	H	both	agree
+06	19	7	y	M	G	gloss a y-form (two top strokes and a tail), as agreed y over 73
+06	20	?		M	?	tall long-s from the gloss zone descends into a zigzag plus an s-curl below the line; could be S16 (tall hooked long-s) or a small 5/S53 whose tall top is the gloss s of the 4 at pos23; not settled
+06	21	4		H	both	agree
+06	22	16	e	M	H	two-part e-form gloss
+06	23	|		H	both	agree
+06	24	5	d	H	both	agree
+06	25	26	e	M	new	one code 26; gloss over the 6 is the two-part e-form
+06	26	15	n	H	both	agree
+06	27	S37	t	H	both	agree
+06	28	62	e	M	H	two-part e-form gloss
+06	29	11	n	H	both	agree
+06	30	5	d	H	both	agree
+06	31	S40	r	M	H	arch with descending left leg and right leg, no closed top loop (not S20); gloss the 2-shaped r crossed by a line05 descender
+06	32	16	e	M	H	two-part e-form gloss
+06	33	|		H	both	agree
+06	34	S32	que	M	G	gloss reads que, ending over the next sign; the l stands apart
+06	35	5	l	M	new	sign is a flagged 5; the lower a-shape is line07's raised gloss a (seen in line07 crop); gloss l sits just right, as 5=l elsewhere
+06	36	16	e	M	H	two-part e-form gloss over the 6
+06	37	4	s	M	H	tall long-s gloss without crossbar, unlike the crossed f over pos41
+06	38	4	f	H	both	agree
+07	1	82	o	M	G	one code 82, gloss o over the 8
+07	2	S34	r	H	both	agree
+07	3	9	c	M	G	gloss c; the stroke rising from it is the bottom of line06's divider (checked across both crops)
+07	4	16	e	M	H	two-part e-form gloss
+07	5	4	s	H	both	agree
+07	6	|		H	both	agree
+07	7	S32	quel	M	H	u-stroke + y = S32 with its top-left hook; gloss quel
+07	8	S35	so	H	both	agree
+07	9	|		H	both	agree
+07	10	S29	m	H	both	agree
+07	11	26	e	M	H	two-part e-form gloss
+07	12	15	n	H	both	agree
+07	13	16	e	M	H	two-part e-form gloss
+07	14	S40	r	M	H	gloss is the 2-shaped r with a downstroke
+07	15	|		H	both	agree
+07	16	S35		H	both	agree
+07	17	44	o	M	G	one code 44, gloss o over the first 4
+07	18	60	t	H	both	agree
+07	19	26	e	M	H	two-part e-form gloss
+07	20	15	n	H	both	agree
+07	21	S37	t	H	both	agree
+07	22	|		H	both	agree
+07	23	S37	t	H	both	agree
+07	24	|		H	both	agree
+07	25	26	e	M	new	one code 26; the two-part e gloss sits over the 2/6 gap
+07	26	68	ll	H	both	agree
+07	27	16	e	M	H	two-part e-form gloss
+07	28	4	s	H	both	agree
+07	29	|		H	both	agree
+07	30	S32	que	M	H	n/u stroke + y = S32; gloss que
+07	31	S35	so	H	both	agree
+07	32	S29	m	H	both	agree
+07	33	12	a	H	both	agree
+07	34	15	n	H	both	agree
+07	35	5	d	H	both	agree
+07	36	16	e	M	H	c with a detached top stroke, e-form
+07	37	|		H	both	agree
+08	1	75		M	H	after the 7 a second digit: a top flag with a faint body going down-left, overlapped by the divider; read 5; no gloss
+08	2	|		H	both	agree
+08	3	S06		M	G	large open c-loop joined to a crossed stroke, matches S06 atlas better than S74 small hook; no gloss
+08	4	S40	r	H	both	agree
+08	5	S30	n	H	both	agree
+08	6	44	o	M	G	one code 44, gloss o over the first 4
+08	7	15	n	H	both	agree
+08	8	4	s	M	H	tall long-s joined to the 4 top, no crossbar
+08	9	16	e	M	H	two-part e-form gloss
+08	10	104	u	H	both	agree
+08	11	68	ll	H	both	agree
+08	12	26	e	M	new	one code 26; gloss is the two-part e-form over the 2
+08	13	S29	m	H	both	agree
+08	14	62	e	M	H	two-part e-form gloss (lower curve + upper blob)
+08	15	15	n	H	both	agree
+08	16	S37	t	H	both	agree
+08	17	|		H	both	agree
+08	18	22	po	M	G	wavy 2 + z = 22 (as agreed 22 po on lines 03/04); gloss crossed p + o, maybe pro
+08	19	|		H	both	agree
+08	20	S27	f	M	H	gloss has a crossbar through its stem: f, not the looped l seen over S27 elsewhere
+08	21	16	e	M	H	two-part e-form gloss
+08	22	S40	r	M	G	arch with long left leg and dot after (S40 form, no delta loop); gloss 2-shaped r crossed by a line07 stroke
+08	23	26	e	M	H	two-part e-form gloss
+08	24	S14	g	M	G	small loop with a long tail sweeping down-left into an S-curve; closer to S14 than to a plain 9; gloss g
+08	25	12	a	H	both	agree
+08	26	S34	r	H	both	agree
+08	27	5	d	H	both	agree
+08	28	|		H	both	agree
+08	29	S16	d	M	H	thin long-s stroke with hairline top, d gloss
+08	30	102	u	M	H	one code 102, gloss u over the 10
+08	31	|		H	both	agree
+08	32	4	f	M	G	blotted cross with arms like a 4, no long descender below the blot; gloss a crossed f
+08	33	12	a	H	both	agree
+08	34	60	i	H	both	agree
+08	35	S37	t	H	both	agree
+09	1	S35		H	both	agree
+09	2	104	u	H	both	agree
+09	3	4	s	M	both	cross 4; gloss a tall tapering long-s stroke, no crossbar, no l-foot
+09	4	5	d	H	both	agree
+09	5	64	z	M	both	gloss a crossed z
+09	6	9	c	M	both	one-stroke c with top flag (not the two-stroke e)
+09	7	S38	t	H	both	agree
+09	8	|		H	both	agree
+09	9	4	f	M	G	cross-form 4 ending at baseline (no descender, so not S36); rising f/long-s gloss with a left nub at mid-height
+09	10	60	i	H	both	agree
+09	11	5	l	H	both	agree
+09	12	|		H	both	agree
+09	13	4	s	M	both	gloss long s with head, no crossbar at gloss height
+09	14	16	e	M	both	gloss is two-stroke secretary e (crescent + separate top tick)
+09	15	S31	p	H	both	agree
+09	16	S34	r	H	both	agree
+09	17	26	e	M	G	z+6 tight pair, single two-stroke e gloss over the 2
+09	18	S35		H	both	agree
+09	19	16	e	M	both	two-stroke e gloss
+09	20	15	n	H	both	agree
+09	21	S37	t	H	both	agree
+09	22	62	e	M	both	two-stroke e gloss
+09	23	|		H	both	agree
+09	24	S33	r	M	new	two-legged pi/R shape with foot, top spike/gloss r; matches S33 better than S20 or S40
+09	25	14	a	H	both	agree
+09	26	|		H	both	agree
+09	27	82	o	H	both	agree
+09	28	9	c	M	both	one-stroke c gloss
+09	29	14	a	H	both	agree
+09	30	4	s	M	both	tall long s rising, no crossbar at gloss height
+09	31	24	z	M	both	gloss a crossed z
+09	32	44	o	M	G	two cross-4s tight together, open o gloss over the first
+09	33	45	?	M	new	small hooked (closed) 4 then 5, tight pair; blotted mark above the 4, crossed by line-08 descender
+09	34	|		H	both	agree
+09	35	5	d	H	both	agree
+09	36	16	e	M	both	two-stroke e gloss
+09	37	5	l	H	both	agree
+09	38	26	e	M	G	z+6 tight pair, two-stroke e gloss over the 2
+09	39	|		H	both	agree
+10	1	S37	t	H	both	agree
+10	2	14	a	H	both	agree
+10	3	11	n	H	both	agree
+10	4	S38	t	H	both	agree
+10	5	16	e	M	both	two-stroke e gloss
+10	6	S34	r	H	both	agree
+10	7	|		H	both	agree
+10	8	S31	p	H	both	agree
+10	9	12	a	H	both	agree
+10	10	S40	r	H	both	agree
+10	11	9	c	M	both	one-stroke c with flag; stroke above it is a line-09 descender
+10	12	26	u	M	both	gloss over the 6 is an open u (two minims), not a closed o
+10	13	S35		H	both	agree
+10	14	S37	t	H	both	agree
+10	15	16	e	M	both	two-stroke e gloss
+10	16	|		H	both	agree
+10	17	102	-	M	H	slash, then 1 0 2 spaced tightly as one code; loop above the 0 is the end of line-09's long-s descender, not a gloss
+10	18	44	o	M	G	two cross-4s together, o gloss over the first
+10	19	64	z	M	both	gloss crossed z
+10	20	26	e	M	both	two-stroke e over the 2
+10	21	|		H	both	agree
+10	22	5	l	H	both	agree
+10	23	12	a	M	both	open secretary a (curved left stroke), not u
+10	24	S29	m	H	both	agree
+10	25	12	a	H	both	agree
+10	26	26	e	M	both	two-stroke e over the 2
+10	27	S27	-	M	H	looped long-s stem and a second straight stem descending below the line, joined by a crossbar = S27; no separate gloss
+10	28	16	e	M	both	two-stroke e gloss
+10	29	15	n	H	both	agree
+10	30	9	c	M	both	one-stroke c gloss
+10	31	82	o	M	G	8+z tight, o gloss over the 8 (dotted line from above ends in it)
+10	32	S40	r	H	both	agree
+10	33	62	e	M	both	two-stroke e over the 6
+10	34	4	s	M	both	gloss a tall thick long s, no crossbar
+10	35	|		H	both	agree
+11	1	22	po	H	both	agree
+11	2	S37	tc	M	both	gloss (seen whole in line-10 crop bottom) is crossed t + one-stroke c with flag, like the S38 form
+11	3	82	o	H	both	agree
+11	4	104	u	H	both	agree
+11	5	S38	t	H	both	agree
+11	6	16	e	M	both	two-stroke e gloss
+11	7	4	s	M	new	cross 4 whose strokes end near the baseline (no long descender, so not S36); tall long s rising, no crossbar
+11	8	|		H	both	agree
+11	9	28	a	M	H	gloss is a secretary a over the 8
+11	10	102	u	M	H	1 0 2 one code, u gloss over the 1/0
+11	11	S38	t	H	both	agree
+11	12	S34	r	H	both	agree
+11	13	16	e	M	both	two-stroke e gloss
+11	14	4	s	M	both	tall headed long s, no crossbar at gloss height
+11	15	|		H	both	agree
+11	16	82	o	H	both	agree
+11	17	9	c	H	both	agree
+11	18	12	a	H	both	agree
+11	19	4	s	M	both	tall headed long s over cross 4, no crossbar at gloss height
+11	20	16	i	H	both	agree
+11	21	44	o	M	G	two 4s tight, o gloss over the first
+11	22	15	n	H	both	agree
+11	23	4	s	M	new	closed-form 4 (as in 104) with a tall headed long s rising from its stem; no crossbar; not an atlas sign
+11	24	|		H	both	agree
+11	25	S52	lle	H	both	agree
+11	26	102	u	M	H	1 0 2 tight, u gloss over the 1/0
+11	27	44	o	M	G	two 4s, o gloss over the first
+11	28	64	z	M	both	crossed z gloss
+11	29	14	a	H	both	agree
+11	30	15	h	M	both	gloss clearly h (tall ascender with arch)
+11	31	S38	t	H	both	agree
+11	32	S31	p	H	both	agree
+11	33	82	o	H	both	agree
+11	34	60	l	H	both	agree
+11	35	S30	n	H	both	agree
+11	36	S38	t	H	both	agree
+11	37	S58	?	M	G	long s crossed by a 2-shape descending into row below; small letter inside a drawn box above (correction?), unread
+11	38	12	a	H	both	agree
+11	39	S27	l	M	G	A-like looped stem fused to crossed ff with descending stems = S27
+11	40	14	a	H	both	agree
+11	41	102	u	M	H	1 0 2 tight, u gloss
+11	42	4	f	H	both	agree
+11	43	S34	r	H	both	agree
+11	44	16	e	M	both	two-stroke e gloss
+11	45	102	u	M	H	1 0 2 tight, u gloss over the 1/0
+11	46	44	o	M	G	4 4 with o gloss over the first, straddling the tick
+11	47	73		M	G	line-12 crop top shows crossed 7 joined to a round-bottomed 3, not a z-2
+11	48	|		H	both	agree
+11	49	26	e	M	both	two-stroke e over the 2
+11	50	5	?	M	G	5 at the left edge of the ink blot; gloss zone blotted
+11	51	?		M	H	large ink blot about 3 digits wide; a token may be hidden, none visible
+11	52	6	?	M	both	gloss a small filled blob at the blot edge, c/e not distinguishable
+11	53	4	f	H	both	agree
+11	54	|		H	both	agree
+11	55	S31	r	H	both	agree
+11	56	S40	r	H	both	agree
+11	57	28	a	H	both	agree
+11	58	S37	t	H	both	agree
+11	59	60	z	M	both	crossed z gloss
+11	60	S32	q	H	both	agree
+11	61	104	u	H	both	agree
+11	62	62	e	M	both	two-stroke e gloss
+11	63	4	s	M	new	x-shaped 4 under a large headed long s (gloss); stem end hidden by row-A strokes, no clear long descender, so not S36
+11	64	|		H	both	agree
+11	65	S32	que	M	H	n/hook-like left part before the y = S32's hooked arm; gloss q-u-e, the tall stroke after it is the stem of row A's S31
+11	66	|		H	both	agree
+11	67	73		M	G	blotted 7 + 3-shape one code; only a faint grey tick above the 3, no legible gloss
+11	68	S40	z	M	G	z-shaped gloss above the looped n (visible in line-11 crop bottom)
+12	1	28	a	H	both	agree
+12	2	64	i	M	G	short single stroke over the 6, no l-foot or loop
+12	3	S38		M	G	crossed mark above is the descending S58 of line-11 row B, not a gloss
+12	4	S27	r	M	new	A-like stem fused to crossed ff with descending stems = S27 (same shape as line-11 row B pos 42); gloss r; the thin vertical after it is row B S27's descender, not a divider
+12	5	24	i	H	both	agree
+12	6	26	e	M	both	two-stroke e gloss
+12	7	102	u	M	H	1 (ink blot) 0 2 tight, u gloss
+12	8	|		H	both	agree
+12	9	S32	que	M	H	gloss is q with a bar above (que abbreviation)
+12	10	S35	vos	M	H	gloss three letters v/b, o, final s (3-shaped)
+12	11	S52	m	H	both	agree
+12	12	S35	s	H	both	agree
+12	13	44	o	M	G	two 4s tight, one o gloss between/over them
+12	14	60	i	H	both	agree
+12	15	62	e	M	both	two-stroke e gloss
+12	16	73	ll	M	G	heavy gloss of two tall joined strokes, no arch (ll rather than n)
+12	17	S44		M	G	mark above is the lower end of line-11 row B's divider and S31 cross, not a gloss
+12	18	S40		H	both	agree
+12	19	S31	p	M	new	circle standing on a cross (same as pos 28), not a 9; p gloss
+12	20	12	a	M	H	1 z with a gloss
+12	21	54	s?	M	new	5 and 4 tight with one two-letter gloss spanning both (long s/f without crossbar + a hook, e or r); G also read 54
+12	22	26		M	H	z 6, no gloss
+12	23	|		M	H	divider stroke before the S31
+12	24	S31	p	H	both	agree
+12	25	28	a	M	H	z 8 with a gloss (G skipped this group)
+12	26	S40	r	M	H	n-shape with closed loop and crossbar, r-like gloss; G's 12 here is misaligned
+12	27	5	d	M	H	single 5 before 26; faint small gloss word spans 30-33
+12	28	26	o	M	H	faint gloss letter o in the small word above
+12	29	9	n	M	H	faint gloss letter n in the small word above
+12	30	12		H	both	agree
+12	31	|		H	both	agree
+12	32	22	pu	H	both	agree
+12	33	|		H	both	agree
+13	1	12	a	M	H	gloss a sits between the lines (seen in line-12 crop bottom), a separate letter, not a descender
+13	2	S31	p	M	H	crossed-stem p gloss above (line-12 crop bottom), separate from line-12 strokes
+13	3	S34	r	M	H	small r gloss above the Ao
+13	4	62	e	M	both	two-stroke e gloss
+13	5	4		M	G	the tall stroke above is the descending stem of line-12's S27, not a gloss
+13	6	S32	q	H	both	agree
+13	7	S35	vo	M	new	gloss is v/b-like looped letter + o + dot (seen whole across line-12/13 crops); not s-o, not u-e
+13	8	14	a	H	both	agree
+13	9	102	u	M	H	1 0 z tight, u gloss
+13	10	S76	r	H	both	agree
+13	11	16	e	M	both	two-stroke e gloss
+13	12	73	z	M	G	crossed 7 + 3 with a long tail crossed by the divider; gloss a 3/z-shaped letter
+13	13	|		H	both	agree
+13	14	62	e	M	both	two-stroke e gloss
+13	15	15	n	H	both	agree
+13	16	S37	t	H	both	agree
+13	17	16	e	M	both	two-stroke e gloss
+13	18	S30	n	H	both	agree
+13	19	5	d	H	both	agree
+13	20	104	u	H	both	agree
+13	21	|		H	both	agree
+13	22	9	c	H	both	agree
+13	23	44	o	M	G	two 4s, o/a-like gloss between them
+13	24	7	u	M	G	7 with its own u gloss (7 u is an agreed code elsewhere); H's second 4 belongs to 44
+13	25	61	?	M	G	6 and 1 each have a u-like gloss letter over them (u, u/w); segmentation of 6-1-8 uncertain, H read 7 6 + 1 6
+13	26	8	c	M	G	8 with looped tail (last digit is an 8, not a 6); one-stroke c gloss above
+13	27	|		H	both	agree
+13	28	S37	t	H	both	agree
+13	29	44	o	M	G	two 4s, o gloss between
+13	30	104	u	H	both	agree
+13	31	S37	t	H	both	agree
+13	32	26	e	M	both	two-stroke e over the 2
+13	33	4	s	M	both	headed long s gloss, no crossbar
+13	34	|		H	both	agree
+13	35	9	c	H	both	agree
+13	36	17	ch	H	both	agree
+13	37	82	o	H	both	agree
+13	38	4	s	M	both	headed long s gloss, no crossbar
+14	1	26		M	G	z+6 tight, no gloss
+14	2	S35		H	both	agree
+14	3	|		H	both	agree
+14	4	S31	p	H	both	agree
+14	5	14	a	H	both	agree
+14	6	54		M	G	5+4 tight; tall strokes above run up to the crop top = line-13 descenders, not glosses
+14	7	16		M	G	g/8-like curl above is the curled tail of line-13's S35 long s, not a gloss
+14	8	S40	r	H	both	agree
+14	9	82	o	H	both	agree
+14	10	15	n	H	both	agree
+14	11	S37	t	H	both	agree
+14	12	|		H	both	agree
+14	13	S61		M	G	5-body whose top stroke continues without a break into an open loop above = S61; no separate gloss
+14	14	4	f	M	G	x-form 4 at baseline; heavy f with crossbar descends into it (gloss), no long descender below the line
+14	15	12	a	H	both	agree
+14	16	60	i	H	both	agree
+14	17	S34	r	H	both	agree
+14	18	16	e	M	both	two-stroke e gloss
+14	19	|		H	both	agree
+14	20	S45	toue	M	new	open c/epsilon curl with a bar through it (S45, not the Q-like S14); gloss reads t-o-u-e
+14	21	|		H	both	agree
+14	22	12	d	M	H	d-shaped gloss over the 2
+14	23	64	z	M	both	crossed z gloss
+14	24	15	u	H	both	agree
+14	25	4	f	H	both	agree
+14	26	60	i	H	both	agree
+14	27	|		H	both	agree
+14	28	S32	q	M	G	large closed spiral loop gloss, same position/form as the q loop on other S32s
+14	29	|		H	both	agree
+14	30	S35	so	H	both	agree
+14	31	|		H	both	agree
+14	32	14	u	M	H	gloss is two equal minims (u)
+14	33	5	d	M	G	5 with d gloss directly above
+14	34	102	u	M	new	1 (ink blot) 0 2 tight; u gloss over the 0 (H's d belongs to the 5 before it)
+14	35	60	i	H	both	agree
+14	36	4	f	H	both	agree
+14	37	16	e	M	both	two-stroke e gloss
+14	38	S40	x	M	H	gloss is two crossing diagonals (x), unlike the footed r over the Ao in this line
+14	39	26	e	M	both	two-stroke e over the 2
+14	40	2		M	G	faint z-shaped 2 at the paper edge, ink present
+15	1	X		H	both	agree
+15	2	S35	vo	M	new	gloss letters v/b-looped + o (seen in line-14 crop bottom), same form as line 13 pos 7
+15	3	12	a	H	both	agree
+15	4	104	u	H	both	agree
+15	5	S34	r	H	both	agree
+15	6	16	e	M	both	two-stroke e gloss (6 overwritten by a line-14 stroke)
+15	7	72	i	M	new	crossed 7 whose diagonal runs into a looped z-base with a long foot (7+2 fused, as H); only a dot above the foot (i-dot gloss as G)
+15	8	|		H	both	agree
+15	9	62	e	M	both	two-stroke e gloss
+15	10	15	n	H	both	agree
+15	11	S37	t	H	both	agree
+15	12	26	u	M	G	z+6 tight, u gloss over the 2
+15	13	S30	n	H	both	agree
+15	14	5	d	H	both	agree
+15	15	7	u	H	both	agree
+15	16	|		H	both	agree
+15	17	9	c	H	both	agree
+15	18	82	o	M	G	8+z one code with o gloss; tall stroke above the z is line-14's long divider running down, not an l gloss
+15	19	7	u	M	G	7 with its own u gloss (agreed code 7 u elsewhere)
+15	20	6	um	M	G	uncertain segmentation: glosses u / m-like over 6 and 1; H reads 7+6 as 76 'uu'. Same 7-6-1-x pattern as line 13 pos 25-27
+15	21	16	e	M	both	two-stroke e over the final 6
+15	22	|		H	both	agree
+15	23	60	z	M	both	crossed z gloss
+15	24	62	e	M	both	two-stroke e gloss
+15	25	7	u	H	both	agree
+15	26	44		M	G	two 4s; the hook-with-dot above is the lower end of line-14's divider, not a gloss
+15	27	102	u	M	H	1 0 z tight, u gloss over the 0
+15	28	5	?	H	both	agree
+15	29	82	o	H	both	agree
+15	30	60	i	H	both	agree
+15	31	4	f	H	both	agree
+15	32	|		M	G	tall stroke rising above and descending below the line, joined to the 4's arm (a divider), not a separate bold H sign
+15	33	S28	m	M	G	open c-hook joined to m = S28 (no descending tail as S49)
+15	34	26	e	M	both	two-stroke e over the 2
+15	35	58	tt	H	both	agree
+15	36	16	o	H	both	agree
+16	1	S53		M	G	3/8-like looped curl with a tail running down-left; touches but is distinct from the following 7
+16	2	7		M	G	plain 7 (top bar + diagonal, no 4-cross), so the pair is not S74
+16	3	S34	r	H	both	agree
+16	4	62	e	M	both	two-stroke e gloss
+16	5	S35		H	both	agree
+16	6	102	u	M	H	1 0 z tight, u gloss over the 0
+16	7	4	s	M	both	headed long s rising from the cross 4, no crossbar
+16	8	|		H	both	agree
+16	9	5	x	M	H	gloss two crossing strokes (x), unlike the footed r over the Ao in this line
+16	10	14	a	H	both	agree
+16	11	S31	p	H	both	agree
+16	12	S34	r	H	both	agree
+16	13	12	a	H	both	agree
+16	14	S37	t	H	both	agree
+16	15	60	i	H	both	agree
+16	16	S32	q	H	both	agree
+16	17	102	u	M	H	1 0 z tight, u gloss
+16	18	16	e	M	both	two-stroke e gloss
+16	19	|		H	both	agree
+16	20	5	d	H	both	agree
+16	21	7	u	H	both	agree
+16	22	|		H	both	agree
+16	23	9	c	H	both	agree
+16	24	28	a	H	both	agree
+16	25	52	pr	M	new	s-curl digit (5-like, possibly 3; dot at its foot) + z, tight; p gloss over the first, r over the second; stems of glosses touch the digits
+16	26	60	i	H	both	agree
+16	27	S38	t	H	both	agree
+16	28	12	a	H	both	agree
+16	29	64	i	M	G	short single stroke with a small head over the 6, no l-foot
+16	30	15	n	H	both	agree
+16	31	16	e	M	both	two-stroke e gloss
+16	32	|		H	both	agree
+16	33	S27	l	M	G	A-like stem fused to crossed ff = S27 (as line 11 pos 42, line 12 pos 5); gloss an l with a foot and a cross-stroke
+16	34	24	i	H	both	agree
+16	35	X		H	both	agree
+17	1	104	u	H	both	agree
+17	2	64	z	M	both	gloss is a 3/z-shaped mark over the 6
+17	3	44	e	M	G	44 with one gloss over first 4; gloss is an epsilon/e-like loop (could be s), not o
+17	4	9	c	H	both	agree
+17	5	16	e	M	both	two-stroke gloss (hook plus stroke) read e, as in the agreed 16 e at 19/8
+17	6	S32	fait	H	both	agree
+17	7	14	a	H	both	agree
+17	8	16	c	M	both	c directly above 16; the cross higher up is a descender from line 16
+17	9	12	a	H	both	agree
+17	10	15	n	H	both	agree
+17	11	S37		M	both	heavy t-top belongs to the sign; no separate gloss above
+17	12	X		M	G	vertical stroke with two slanting crossbars (double-barred cross), no 4 tail; not S36
+17	13	|		H	both	agree
+17	14	S58		M	G	crossed long s with 2/7-shaped tail; tall stroke above is a descender from line 16, no gloss
+17	15	X	faut	M	G	c-hook joined to a z-shape with tail below; gloss word faut over it
+17	16	9	c	M	H	first of two c glosses after faut sits over 9
+17	17	16	c	M	both	second c gloss over 16 (tall l beside it is a line-16 descender)
+17	18	68	ll	M	G	6 then 8 with descender; gloss ll
+17	19	104	u	M	G	1, blotted 0, 4 under one gloss u (same code as line start)
+17	20	60	r	M	G	delta-like 6 then round 0; gloss r/v; uncertain 6 vs 8
+17	21	|		H	both	agree
+17	22	S32	q	H	both	agree
+17	23	7	u	H	both	agree
+17	24	24	tt	M	G	z then 4, one H/tt-like gloss over both
+17	25	5		H	both	agree
+17	26	|		H	both	agree
+17	27	X	t	M	G	heavy hooked long stroke (top bulb curls right, descends below line), cross gloss t; like S16 but no top loop
+17	28	12	a	M	G	seen at top of line18_s2: 1 z, gloss a
+17	29	10	u	M	G	line18_s2 top: 1 0, gloss u
+17	30	2		M	G	line18_s2 top: lone z, no gloss
+17	31	S37	t	M	G	line18_s2 top: crossed t joined to o, gloss t
+17	32	X	o	M	G	line18_s2 top: 8-like closed bottom loop with top stroke curling back; gloss small o
+17	33	7	u	M	new	line18_s2 top: final code is a 7 (G's X, code below crop); gloss u to its right before the line-end dash
+18	1	16	e	M	both	two-stroke gloss, same form as agreed 16 e at 19/8
+18	2	7	u	H	both	agree
+18	3	|		M	G	thin separate diagonal stroke between 7 and Ao, not the 7's tail
+18	4	S34	f	M	G	capital A joined to closed o; F-like gloss above
+18	5	S28	m	M	G	thin c-hook lead-in then m, no descending tail
+18	6	12	a	H	both	agree
+18	7	16	e	M	both	two-stroke gloss, same form as agreed 16 e at 19/8
+18	8	S21		M	G	tall f-like stroke with curved top and low crossbar
+18	9	9	c	M	H	small hook above 9, partly merged with a descender from line 17
+18	10	S33		H	both	agree
+18	11	64	z	H	both	agree
+18	12	S44	t	M	G	small mark above the loop-on-stem sign read as gloss t (uncertain)
+18	13	S38	t	H	both	agree
+18	14	X	quil	M	G	written cluster like ily (minims then y) under the single gloss word quil; H split it 11+S79
+18	15	X		H	both	agree
+18	16	5	cy	M	H	s-shaped 5 with descending tail, gloss letters cy above
+18	17	S29	gm	M	G	run of minims with gloss gm(m) above
+18	18	6	e	M	both	two-stroke gloss read e (as agreed 19/8)
+18	19	60	t	H	both	agree
+18	20	68	ll	M	G	gloss ll (second l looped); same 68 ll as line 17
+18	21	2	u	H	both	agree
+18	22	6		H	both	agree
+18	23	10	u	H	both	agree
+18	24	4		H	both	agree
+18	25	S34	r	H	both	agree
+18	26	|		H	both	agree
+18	27	62	?	H	both	agree
+18	28	7	u	H	both	agree
+18	29	44	o	M	new	4 4 with one gloss o over the first 4 (as 44 in line 17); uncertain split
+18	30	8	l	M	G	lone 8 with gloss l (crossed l), gloss not f; uncertain split
+18	31	82	e	M	H	8 then z; two-stroke gloss between them read e (as agreed 19/8); uncertain split
+18	32	15	u	H	both	agree
+18	33	S37	t	H	both	agree
+18	34	16	e	M	G	1 6 under one two-stroke barred gloss, read e
+18	35	|		H	both	agree
+18	36	12	d	M	H	thick 1 then z (no 5), large d gloss above
+18	37	6	e	M	both	two-stroke gloss read e
+18	38	|		M	H	tall thin stroke rising after the 6
+19	1	S27	s	H	both	agree
+19	2	14	a	H	both	agree
+19	3	S37	t	H	both	agree
+19	4	28	a	M	H	z then 8 with one gloss a over the z
+19	5	15	n	H	both	agree
+19	6	S38	t	H	both	agree
+19	7	16	e	H	both	agree
+19	8	S34	r	H	both	agree
+19	9	S32		M	H	the T-shape above the y is the base of line 18's S44 descending, not a gloss
+19	10	5	que	M	G	gloss que begins directly over the s-shaped 5
+19	11	S62		M	new	loop with a slash through it and a long tilde flourish (delta with slash, as H), gloss que belongs to the 5 (as G)
+19	12	X	n	H	both	agree
+19	13	12	a	H	both	agree
+19	14	60	l	M	G	gloss is a vertical with a small hook, no clear crossbar: l (t possible)
+19	15	14	a	H	both	agree
+19	16	S29	on	H	both	agree
+19	17	28	a	M	H	z then 8, one gloss a
+19	18	64	h	M	H	gloss is an h with ascender
+19	19	S21		H	both	agree
+19	20	|		M	G	thin faint slash before the z is a divider, not a 1
+19	21	2		M	G	lone z after the divider
+19	22	6	e	M	G	two-stroke gloss read e (as agreed 19/8)
+19	23	S35		H	both	agree
+19	24	S37	t	H	both	agree
+19	25	16	e	M	G	two-stroke gloss read e
+19	26	X	et	M	G	c-hook then crossed t (ct order), reverse of S38; kept apart
+19	27	5	en	M	new	s-shaped 5 with a 3n/en-like gloss above it
+19	28	S28	m	M	G	gloss over the c-hook-m is a plain m
+19	29	2		M	G	the stroke before z is the m's last leg; z has no gloss
+19	30	6	e	M	G	two-stroke gloss sits over the 6, read e
+19	31	60	l	H	both	agree
+19	32	68	ll	H	both	agree
+19	33	16	e	M	G	two-stroke gloss read e
+20	1	7	u	M	H	u-like gloss above the 7 at the crop top
+20	2	S34	r	H	both	agree
+20	3	62	e	M	G	two-stroke gloss read e
+20	4	16	e	M	G	two-stroke gloss above the 16 at crop top
+20	5	S21		M	G	tall stroke with crossbar and curved top, lead-in from the 6; same shape settled S21 at 18/8
+20	6	S44	p	H	both	agree
+20	7	62	e	M	G	two-stroke gloss read e
+20	8	S33	r	M	G	clear r gloss above the pi-shape
+20	9	14	a	H	both	agree
+20	10	15	n	H	both	agree
+20	11	9	e	M	G	two-stroke hook gloss read e
+20	12	26	e	M	G	two-stroke gloss centred over 2 and 6
+20	13	X		M	G	circle on descending stem, crossbar through the circle top, hook at top right; crossbar not on the stem so not S63
+20	14	7	u	H	both	agree
+20	15	16	e	M	G	two-stroke gloss read e
+20	16	68	ll	H	both	agree
+20	17	26	e	M	G	two-stroke gloss between 2 and 6
+20	18	S33		M	G	the crossed dark mark above is the long stem of line 19's ct sign descending, not a gloss
+20	19	16	e	M	G	two-stroke gloss read e, no u
+20	20	104	u	M	H	1 0 4 with gloss u over the 10
+20	21	S21		H	both	agree
+20	22	9	e	M	G	two-stroke hook gloss read e
+20	23	60	l	M	new	short vertical with curl and blob, l-like (t possible); not c
+20	24	S34	r	M	G	r-like gloss with flourish, as S34 r elsewhere
+20	25	14	a	H	both	agree
+20	26	58	d	H	both	agree
+20	27	2	o	H	both	agree
+20	28	15	n	H	both	agree
+20	29	S37		M	G	the tall cross above is the sign's own t, no separate gloss
+20	30	22	bo	M	G	two faint grey 2s on the baseline under a bold bo mark read as gloss (uncertain: could be an overwritten S47)
+21	1	9	e	M	H	hook-shaped two-stroke mark above the 9 at crop top, read e
+21	2	26	e	M	H	z then 6 under one two-blob gloss, read e (H's u doubtful)
+21	3	S35		H	both	agree
+21	4	S13	t	M	H	plain cross, no 4 hook or tail (checked at 6x)
+21	5	26	e	M	G	two-stroke gloss read e
+21	6	17		M	G	heavy mark above is the foot of line 20's S44 descending, not a gloss
+21	7	16	e	M	G	two-stroke gloss read e
+21	8	7	u	H	both	agree
+21	9	S76	r	M	H	small r/k-like gloss above the barred A
+21	10	62	e	M	G	two-stroke gloss read e
+21	11	60	t	H	both	agree
+21	12	62	e	M	G	two-stroke gloss read e
+21	13	S52	m	M	G	three minims (m) above the lattice
+21	14	S35	le	M	new	long s then small 8/s shape, as agreed S35 at pos4; gloss thick l plus 3/e-like mark
+21	15	9	t	H	both	agree
+21	16	7	u	H	both	agree
+21	17	64	t	M	H	6 then 4, single gloss t over the 6
+21	18	S21		H	both	agree
+21	19	5	d	H	both	agree
+21	20	60	t	H	both	agree
+21	21	S33	u	M	H	gloss u above the pi-shape, a small hook at its right
+21	22	16		H	both	agree
+21	23	|		H	both	agree
+21	24	12	a	H	both	agree
+21	25	10	u	H	both	agree
+21	26	2		H	both	agree
+21	27	S13	tu	M	H	plain cross, no 4 hook; gloss tu spans cross and Ao
+21	28	S34		H	both	agree
+21	29	26	e	M	new	z then faint 6, two-stroke gloss over the z read e
+21	30	9	e	M	G	two-stroke gloss read e
+21	31	17	s	M	G	tall looped long-s-like gloss (s), not h
+21	32	4	o	H	both	agree
+21	33	4	s	M	G	tall long s (no crossbar) above the second 4 read as gloss s
+21	34	S23		H	both	agree
+22	1	26	?	M	G	z and 6 close, one code; a dark a/u-like mark high above may be its gloss or interference from line 21
+22	2	|		H	both	agree
+22	3	X	n	H	both	agree
+22	4	16	a	M	H	small a-like mark with dots above the 16 (e possible)
+22	5	S21		H	both	agree
+22	6	S37	t	H	both	agree
+22	7	14	a	H	both	agree
+22	8	15	n	H	both	agree
+22	9	S37	t	H	both	agree
+22	10	|		H	both	agree
+22	11	16	u	H	both	agree
+22	12	15	n	H	both	agree
+22	13	9	c	M	H	single c-hook gloss, not the two-stroke e form
+22	14	4	o	H	both	agree
+22	15	4		H	both	agree
+22	16	S34		H	both	agree
+22	17	26	d	M	H	z straddles the tick, 6 follows; d-like gloss over the z
+22	18	S23	e	M	G	two-stroke hook gloss sits above the x
+22	19	S33		M	G	blob above is fused with a descender from line 21, read as interference (H's u possible)
+22	20	26	e	M	G	two-stroke gloss over the 2
+22	21	S37	t	H	both	agree
+22	22	82	o	M	H	8 with descender then z; single o gloss over the 8
+22	23	10	u	H	both	agree
+22	24	4	z	H	both	agree
+22	25	S69		M	G	A with a raised hooked v-like element, not a closed o on the baseline
+22	26	X	n	H	both	agree
+22	27	62	e	M	G	two-stroke gloss read e
+22	28	|		H	both	agree
+22	29	52	d	M	G	5 then z under a d-like gloss over the 5
+22	30	6	e	M	G	two-stroke gloss sits directly over the 6, not between z and 6
+22	31	S46		H	both	agree
+22	32	S27	f	H	both	agree
+22	33	64	f	M	G	crossed l/f-like gloss, joined to a descender from line 21 (t possible)
+22	34	10	u	H	both	agree
+22	35	2		H	both	agree
+23	1	60	t	H	both	agree
+23	2	82	o	M	H	8 then z; single o gloss over the 8
+23	3	S32	?	M	H	Y with long stem as S32; the large closed 9/q-like loop sitting on its left arm is probably a gloss (g/q), unsure
+23	4	24	t	H	both	agree
+23	5	14	a	H	both	agree
+23	6	7	v	H	both	agree
+23	7	S64		H	both	agree
+23	8	26	e	M	new	z then 6, two-stroke gloss over the z read e
+23	9	15	n	H	both	agree
+23	10	7	u	H	both	agree
+23	11	4	o	M	G	small closed loop gloss; the stem it touches is the 4's own ascender
+23	12	4		H	both	agree
+23	13	16		H	both	agree
+23	14	S74		M	G	4 with a c/9-shaped hooked stroke on its top left, as atlas S74
+23	15	60	t	H	both	agree
+23	16	26	e	M	new	z then 6, two-stroke gloss over the z read e
+23	17	10	u	H	both	agree
+23	18	2		H	both	agree
+23	19	62	u	H	both	agree
+23	20	S34	s	M	G	heavy A (flagged apex) joined to o; gloss s/5-shaped over the o
+23	21	4		H	both	agree
+23	22	5	f	H	both	agree
+23	23	10	u	H	both	agree
+23	24	2		H	both	agree
+23	25	64	i	M	H	6 then 4, dotted i gloss over the 6
+23	26	22	po	H	both	agree
+23	27	12	a	M	G	a over the z of 12; a bold dotted ?/3-like mark over the 1 left unassigned (H's z possible)
+23	28	5	d	M	G	large d-like gloss sits over the 5
+23	29	10	u	H	both	agree
+23	30	2		H	both	agree
+23	31	60	i	M	G	short undotted vertical gloss, no crossbar
+23	32	4	s	M	G	tall long s above meets a cross with its own descending tail; read 4 with gloss s (as 21/37)
+23	33	16	e	M	G	two-stroke gloss read e
+23	34	S69	?	M	G	A with long crossbar ending in a hooked v at right; small x/c-like mark above unclear
+24	1	S04		H	both	agree
+24	2	S33	f	M	G	f-like mark (stem with bars) above the pi-shape read as gloss f
+24	3	26	e	M	G	two-stroke gloss read e
+24	4	S21		H	both	agree
+24	5	82	o	M	H	8 then z, single o gloss over the 8
+24	6	10	u	H	both	agree
+24	7	2		H	both	agree
+24	8	5	f	M	G	crossed l/f-like gloss, as 22/36
+24	9	5	d	H	both	agree
+24	10	S34	x	M	G	gloss is a small x with a dot-like tick, not r
+24	11	16	e	M	G	two-stroke gloss read e
+24	12	|		H	both	agree
+24	13	62	z	H	both	agree
+24	14	15	n	H	both	agree
+24	15	S21		H	both	agree
+24	16	26	e	M	new	z then 6, two-stroke gloss over the z read e
+24	17	S29	m	H	both	agree
+24	18	S64	b	H	both	agree
+24	19	5	l	H	both	agree
+24	20	16	e	M	G	two-stroke gloss read e
+24	21	X		H	both	agree
+24	22	5	d	H	both	agree
+24	23	26	e	M	G	two-stroke gloss over the z read e
+24	24	S21		H	both	agree
+24	25	S29	m	H	both	agree
+24	26	4	o	M	G	small closed loop sitting on the 4's upright read as gloss o (as 23/13); S54 possible
+24	27	4		H	both	agree
+24	28	7	v	M	G	heavy v-shaped gloss (as agreed 7 v at 23/7)
+24	29	S64		M	G	z-like top with a curled descending tail, as agreed S64 at pos20
+24	30	16	e	M	G	dot plus small curved stroke, read as the two-stroke e (i possible)
+24	31	15	n	H	both	agree
+24	32	4	s	M	G	s/5-shaped gloss above the cross
+24	33	|		H	both	agree
+24	34	S32	?	M	H	Y with long stem; closed 9-like loop under an arching flourish above its left arm (same form as 23/4), part-of-sign vs gloss unsettled
+24	35	X	f	M	G	hook-headed stem with two thin crossbars to the right, not an x; gloss f
+24	36	12	a	H	both	agree
+24	37	7	u	H	both	agree
+24	38	5	d	H	both	agree
+24	39	S34	x	M	G	gloss small x, as pos11
+24	40	14	a	H	both	agree
+25	1	S37	t	H	both	agree
+25	2	26	a	H	both	agree
+25	3	15	n	H	both	agree
+25	4	60	l	M	G	tall vertical gloss with slight hook, no crossbar
+25	5	S34	r	H	both	agree
+25	6	22	po	H	both	agree
+25	7	5	?	M	new	bold ?-shaped hook with a dot above the 5 (same mark as at 23/31, 25/30); neither f nor d settled
+25	8	26	le	M	new	z then 6; gloss l over the z and a two-stroke e over the 6 (H read lc)
+25	9	87	o	M	new	8 with a heavy loop above it (gloss o) and the 7's top bar running left through the 8; 8 and 7 tied into one code, unsure (H read a single X sign)
+25	10	16	e	M	G	two-stroke gloss read e
+25	11	S39		M	G	small closed loop at left joined to a long-s descender, as atlas S39
+25	12	10	u	M	H	1 then 0 with a u gloss touching its top, not 14
+25	13	2		H	both	agree
+25	14	S37	t	H	both	agree
+25	15	62	e	M	G	two-stroke gloss read e
+25	16	S34	x	M	G	gloss small x with a dot, not r
+25	17	S28	m	H	both	agree
+25	18	8	a	M	G	short flat dash before the 8 has no z diagonal; read 8 alone (H's 28 possible)
+25	19	62	e	M	G	faint two-stroke mark over the 62 read e (weak)
+25	20	S74		M	G	4 with a c-curl and hooked stroke on top left, as 23/16 and atlas S74
+25	21	60	i	M	G	short undotted vertical gloss, no crossbar
+25	22	S21		H	both	agree
+25	23	5	?	M	G	5/3-shaped digit on the baseline under a bold p/B box mark joined by a stem; bold mark read as gloss (unsure, H read one X sign)
+25	24	64	f	H	both	agree
+25	25	26	e	M	G	two-stroke gloss read e
+25	26	15	n	H	both	agree
+25	27	|		M	G	long thin slash before the 5
+25	28	5	o	M	new	s-shaped 5; the bold b-stroke above is the descender of line 24's long 5, leaving gloss o
+25	29	9	?	M	H	bold ?-shaped hook above the 9 (same mark as 25/7), letter not settled
+25	30	44	po	M	H	4 4 with bold po gloss spanning both
+26	1	X	uu	M	G	V/U with dot inside, gloss uu above; H has it at pos4
+26	2	26	c	M	H	z and 6 written as one group, single c-mark over the z (an &-like mark also sits over the 6)
+26	3	S40		M	new	n-shape with right leg curling into loop, dot after = atlas S40 (G's squiggle, H's S40 at pos6)
+26	4	S35	bo	M	new	tall long s + small s with bo above = atlas S35
+26	5	28	a	M	H	z8 one group, a gloss over the join
+26	6	S27		H	both	agree
+26	7	4		H	both	agree
+26	8	16	u	M	G	u-shaped mark above the 16
+26	9	10	u	H	both	agree
+26	10	4		H	both	agree
+26	11	S34	u	M	G	u with hooked left stroke above Ao
+26	12	26	c	M	H	z6 group with c-like mark (thick comma) over the z
+26	13	S33		H	both	agree
+26	14	S32		M	H	symmetric Y on long stem; loop with dot over left arm is part of the sign, not a gloss
+26	15	S53		M	G	long s rising into a 3-curl at top, one continuous glyph (matches S53), no small s
+26	16	66		M	G	two 6s with curled heads, digit-sized
+26	17	S52	m	H	both	agree
+26	18	4	f	M	G	cross with tail; tall long-s/f mark at gloss height above
+26	19	60	i	H	both	agree
+26	20	X	f	M	G	vertical with hooked top crossed by two bars; not the S23 x-with-tail shape; f above
+26	21	16	i	H	both	agree
+26	22	S34	r	M	H	r-like gloss (stem with arm) above Ao, same as agreed 28/36
+26	23	14	a	H	both	agree
+26	24	S32	q	M	new	symmetric Y on long stem (S32 as elsewhere), q/9-shaped gloss above
+26	25	S35	bo	M	H	long s + small 5-like s, bo above
+26	26	15	n	M	G	n over the 15 (3-hook further left)
+26	27	16	u	M	G	u directly over 16
+26	28	X	n	M	G	ua cluster, n above it
+26	29	4	s	M	new	cross with tail, a long-s rises from its left arm at gloss height (read 4 + gloss s as at 27/25)
+26	30	8	s	M	G	8 with small s/o-like mark above (closer to s)
+26	31	2		M	G	lone z, no gloss
+26	32	64	i	M	H	64 tight pair, i over the 6
+27	1	6		H	both	agree
+27	2	2		H	both	agree
+27	3	S20		M	H	3-top joined to looped R-like body with foot; closer to S20 than to S67 'sa'
+27	4	14	a	H	both	agree
+27	5	5	d	H	both	agree
+27	6	10	u	H	both	agree
+27	7	2		H	both	agree
+27	8	16	co	M	H	co/w-like mark over 16
+27	9	S34		H	both	agree
+27	10	X		M	G	upright with hooked top and two bars (as 26/24); no gloss visible beyond a dot
+27	11	6		M	G	6 joined to next 7 by its bar (could be one group 67)
+27	12	7		M	G	7 after the 6 (possibly 67 with pos11)
+27	13	S64		M	H	flat-topped 3-shape = atlas S64
+27	14	S04	e	M	G	hash; small e/c-like mark above right
+27	15	S32	q	M	H	symmetric Y, 9/q-loop above as gloss
+27	16	5	d	H	both	agree
+27	17	26	c	M	H	z6 group, c-with-dot mark over the z
+27	18	5	d	M	G	d-like loop above between 5 and 1
+27	19	16	c	M	H	small c mark over the 16
+27	20	9	c	H	both	agree
+27	21	28	a	M	H	z8 group, a over the join
+27	22	S52	ac	M	G	'ac' above the lattice
+27	23	4	s	M	G	plain cross with tail; separate long-s above it
+27	24	16	u	M	G	u-like mark above 16
+27	25	S35		M	new	very tall long s descending + small s = S35; no gloss seen
+27	26	S31	p	M	G	circle standing on a cross, p above
+27	27	12	a	H	both	agree
+27	28	S34	r	M	H	r gloss above Ao (clear in zoom)
+27	29	X	g	M	H	closed rho-like loop at body level with long tail below (not crossed, so not S63); g above
+27	30	15	n	H	both	agree
+27	31	62	a	M	H	6z tight pair, a over the 6
+27	32	S33	ra	H	both	agree
+27	33	1		M	G	lone 1 with clear gap before the 4
+27	34	4		M	G	4 separate from the 1
+27	35	X	r	M	new	L-stroke joined to plain A (LA ligature, not atlas S76/S24); r above
+27	36	60	i	H	both	agree
+27	37	26	c	M	new	z6 group at line end, c-like mark above the join
+28	1	S12		M	G	small t-like cross at line start
+28	2	5		M	G	thin s-shaped 5 (H's t-mark is pos1)
+28	3	5		M	G	bold s-shaped 5, same height as the one before; not long-s + small s
+28	4	16		H	both	agree
+28	5	S57		H	both	agree
+28	6	9		H	both	agree
+28	7	26	e	M	new	z6 group; two-tick dotted mark above (read e)
+28	8	S39		M	G	9/d loop joined to long descending s = S39; no gloss
+28	9	S23		H	both	agree
+28	10	16	e	M	G	closed e-like blob above 16
+28	11	S44	r	M	G	loop on a stem crossed at top (S44); r-like mark above
+28	12	4	o	M	G	small o above 4
+28	13	4		H	both	agree
+28	14	10	d	H	both	agree
+28	15	2		H	both	agree
+28	16	|		M	G	thin curved long-s stroke alone before the 6, not doubled S27
+28	17	6	rr	M	G	rr above the 6
+28	18	28	a	M	new	z8 group; a over the 8
+28	19	X	f	M	G	vertical crossed by two bars (as 26/24), f above
+28	20	28	a	M	H	z8 group, a above the z
+28	21	64	i	M	H	64 tight pair, i over the 6
+28	22	S34	r	M	H	r-rotunda-like mark above Ao
+28	23	16	e	M	G	two comma-strokes above 16 (two-tick mark read e)
+28	24	22	w	M	G	w above; the cross over the first z is where line 27's long-s descender ends
+28	25	5	n	M	H	n-like mark above the 5
+28	26	10	u	H	both	agree
+28	27	4		H	both	agree
+28	28	26	e	M	new	z6 group; two-blob mark over z (read e, H read a)
+28	29	15	n	H	both	agree
+28	30	60	i	H	both	agree
+28	31	S34	r	H	both	agree
+28	32	12	a	H	both	agree
+28	33	S64	bo	M	G	flat-topped 3-shape; large 'bo' (looks like 60) written above
+28	34	44		M	G	two 4s after the S64
+29	1	10	u	H	both	agree
+29	2	2		H	both	agree
+29	3	S37	t	H	both	agree
+29	4	S35		M	new	very tall long s from above the line; with the agreed small 5 (pos5) it forms S35 -- reconciler: pos5 is its small s
+29	5	5		H	both	agree
+29	6	64	b	M	new	64 pair; tall b/l-like mark over the 6
+29	7	5		H	both	agree
+29	8	S23	f	H	both	agree
+29	9	16	e	M	G	e-like dotted mark above 16
+29	10	S33	e	M	H	pi-shape with two legs and crossed top = S33; e loop at top right is the gloss
+29	11	14	a	H	both	agree
+29	12	S31	p	H	both	agree
+29	13	8	o	H	both	agree
+29	14	2	u	H	both	agree
+29	15	S27		H	both	agree
+29	16	4		H	both	agree
+29	17	2	i	M	H	i-like stroke with comma above the z
+29	18	4		H	both	agree
+29	19	S64		M	G	faint flat-topped 3-shape present; big interlinear '6C' above 29/20-21
+29	20	5		M	G	s-shaped 5 after the S64
+29	21	26	e	M	new	z6 group, two-tick mark above (read e)
+29	22	60	f	H	both	agree
+29	23	28	a	M	H	z + triangular 8, a over the join
+29	24	4	v	M	new	cross with long diagonal tail (a 4) with v-like gloss; the 3-curl beneath is a separate S64 (row 27.5), same as 32/12-13
+29	25	S64		M	new	flat-topped 3-shape below-right of the 4
+29	26	16	e	M	G	two-tick mark above (read e)
+29	27	15	n	H	both	agree
+29	28	10	u	H	both	agree
+29	29	2		H	both	agree
+29	30	4	o	H	both	agree
+29	31	4		H	both	agree
+29	32	64	i	M	H	64 pair, i-stroke over it
+29	33	62	e	M	G	two-tick mark (read e)
+29	34	S60	o	M	G	loop with long S-tail curling down into line 30 (yogh/rho), o above
+29	35	2		H	both	agree
+29	36	6	e	M	G	comma+stroke two-tick mark (read e)
+29	37	15	n	H	both	agree
+30	1	S23		H	both	agree
+30	2	5	m	M	H	m-like mark in the interline directly over the 5
+30	3	12	a	M	H	a directly over 12
+30	4	68	ll	M	H	two long-s strokes in the interline over 68
+30	5	16	e	M	G	two-tick mark (read e)
+30	6	S28	m	H	both	agree
+30	7	28	a	M	H	z8 group, a above
+30	8	60	t	M	H	stem with hook/cross stroke = t
+30	9	X	g	M	H	ink blot over a sign, g visible above
+30	10	5	i	M	G	short i-like strokes above
+30	11	26	e	M	new	z6 group; two-tick mark above z (read e)
+30	12	S17	l	H	both	agree
+30	13	16	e	M	new	1 and 6 with two-tick mark centred above them
+30	14	4		M	G	4 touching the 6; a long ascender from the 6 sweeps over it (not a second 6)
+30	15	S63		M	new	q-loop on a crossed stem with a loop at the bottom = q with crossed descender; no gloss
+30	16	7	u	H	both	agree
+30	17	16	e	M	G	two-tick mark (read e)
+30	18	8	b3	M	new	bold filled 8 (open-s form of 8) after the 16, joined at its base to the S40; 'b3' above
+30	19	S40		M	H	n-shape with right leg curling (as 26/4)
+30	20	S52	m	H	both	agree
+30	21	S65	wol	M	new	tall leaf-shaped loop = S65; 'wol' above with a bar
+30	22	26	u	M	H	u-like mark above
+30	23	15	n	H	both	agree
+30	24	9	c	M	H	c above 9 (as agreed 9 c elsewhere)
+30	25	4	o	H	both	agree
+30	26	4		M	G	no gloss over this 4; the r belongs to the Ao
+30	27	S34	r	M	both	r mark sits just left over the Ao
+30	28	16	e	M	G	two-tick mark over 16; the long-s above belongs to the next sign
+30	29	4	s	M	G	cross with tail, long s above as gloss (as 27/25)
+30	30	S33	r	M	H	r above the pi sign
+30	31	64		M	G	no gloss; blob above is line 29's curl
+30	32	16	e	M	G	two-tick mark (read e)
+30	33	15	n	M	G	broken n-like marks above
+31	1	S23	fa	M	G	f-like crossed mark and a above the sign
+31	2	12		H	both	agree
+31	3	60	l	H	both	agree
+31	4	S37	t	H	both	agree
+31	5	16	e	M	G	two-dot mark (read e)
+31	6	X	n	H	both	agree
+31	7	S37	t	H	both	agree
+31	8	2	r	M	H	r-rotunda-like mark above z
+31	9	6		H	both	agree
+31	10	15	n	H	both	agree
+31	11	5	d	H	both	agree
+31	12	S64		M	H	3-shape on the line body joined to the Ao; the d-loop above it is the agreed 5's gloss
+31	13	S34	z	M	G	small z mark above the A
+31	14	62		H	both	agree
+31	15	|		H	both	agree
+31	16	X		M	G	hooked horizontal with long descender; the spiral above is the end of line 30's S63 tail, not a gloss
+31	17	10		H	both	agree
+31	18	2		H	both	agree
+31	19	64		H	both	agree
+31	20	|		M	G	thin tall stroke before the minims, lower than them
+31	21	S29	m	H	both	agree
+31	22	26		M	H	z6 group; the k/h mark above is the tail of line 30's S65
+31	23	X	fait	M	G	Z/2 with looped left stroke and crossbar, word 'fait' above
+31	24	9	t	M	G	t above the 9
+31	25	1	p	M	new	lone 1 (only one 6 follows); v/p-like mark above
+31	26	6	e	M	G	looped e-like mark above
+31	27	15	n	H	both	agree
+31	28	4	s	M	G	cross with long s above it (4 + gloss s)
+31	29	2	i	M	H	dotted i above the z
+31	30	6		H	both	agree
+31	31	S34	r	M	H	r above Ao
+31	32	S32	q	M	new	symmetric Y on long stem (S32 as 26/28); q/9 above
+31	33	5	l	M	G	L-like mark above between 5 and 1
+31	34	16	e	M	G	two-tick mark (read e)
+32	1	S36		M	G	heavy x crossed by a tall rising stroke (same as agreed 32/14)
+32	2	9	c	H	both	agree
+32	3	17	h	H	both	agree
+32	4	4	o	H	both	agree
+32	5	4		H	both	agree
+32	6	S35		M	new	huge wedge long s + small s = S35
+32	7	62	e	M	H	6z tight pair, two-tick mark over 6 (read e)
+32	8	4	s	M	G	cross with long s above (4 + gloss s)
+32	9	15	n	H	both	agree
+32	10	4	y	M	G	cross with long diagonal tail = 4; y above
+32	11	S64		M	G	flat-topped 3-shape right of the 4 (separate glyph)
+32	12	S36		H	both	agree
+32	13	8	o	H	both	agree
+32	14	2		H	both	agree
+32	15	X	n	H	both	agree
+32	16	S37	t	H	both	agree
+32	17	S35		H	both	agree
+32	18	4	y	M	G	cross with diagonal tail, y above
+32	19	S64		M	G	flat-topped 3-shape after it
+32	20	26	c	M	new	z6 group, c mark above
+32	21	X		H	both	agree
+32	22	9	c	H	both	agree
+32	23	17	h	H	both	agree
+32	24	12	a	H	both	agree
+32	25	10	u	H	both	agree
+32	26	2		H	both	agree
+32	27	S34		M	G	A joined to o written above the line over the 2 (interlinear, possibly an insertion)
+32	28	6		H	both	agree
+32	29	6		M	G	no gloss over this 6; the iu marks sit over the 18
+32	30	18	u	M	G	u with dots over 18
+32	31	4	s	M	G	cross with tall long s above (4 + gloss s)
+32	32	|		H	both	agree
+32	33	9	c	M	G	bold 9 after the slash, c above
+32	34	8	o	M	G	separate bold 8, o above
+32	35	7	umm	M	G	umm gloss starts over the 7, bar continues right
+32	36	6		M	G	single 6 between 7 and 16 (only 7 6 1 6 visible)
+32	37	16		H	both	agree
+33	1	5		H	both	agree
+33	2	S63		M	H	9/q-loop on a crossbar with slanting descender = q with crossed descender
+33	3	S17	f	M	H	tall crossed mark above ff reads f
+33	4	2		H	both	agree
+33	5	6	e	M	G	two-tick mark (read e)
+33	6	S21		M	H	heavy f-like long s with hooked top crossing a bar, descends below the line = S21
+33	7	16	e	M	G	two-tick mark above 16 (read e)
+33	8	06	uu	M	G	0 and 6 tight together, gap from the 16; uu above
+33	9	62	r	M	new	r-like mark above the 62
+33	10	S29		M	G	three minims; the long bar above is an abbreviation-like stroke, not a letter gloss
+33	11	60		H	both	agree
+33	12	4		M	G	cross with long bar, read as 4
+33	13	|		H	both	agree
+33	14	10	u	H	both	agree
+33	15	2		H	both	agree
+33	16	4	o	H	both	agree
+33	17	4		H	both	agree
+33	18	10	u	H	both	agree
+33	19	4		M	G	no gloss over this 4; the f is over the next 5
+33	20	5	f	M	G	f directly above the bold 5
+33	21	5	d	M	G	d directly above the small 5
+33	22	S34	r	H	both	agree
+33	23	8	o	H	both	agree
+33	24	2		H	both	agree
+33	25	64	i	M	H	64 pair, i over 6
+33	26	16	e	M	G	two-tick mark (read e)
+33	27	15	n	H	both	agree
+33	28	S37	t	H	both	agree
+33	29	X		M	G	vertical crossed by two long bars (as 26/24), not S23 x-with-tail
+33	30	12		H	both	agree
+33	31	60		H	both	agree
+33	32	S34		H	both	agree
+33	33	2		H	both	agree
+33	34	6		H	both	agree

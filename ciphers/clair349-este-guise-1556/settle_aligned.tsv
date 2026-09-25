@@ -1,0 +1,1277 @@
+line	pos	status	G_sign	G_gloss	H_sign	H_gloss	G_note	H_note
+01	1	GLOSS	64	z	64	f	s1 gloss a crossed z-like letter	s1 gloss a long-s/f-like letter, uncertain
+01	2	agree	12	a	12	a	s1 gloss a or n	s1
+01	3	agree	73	y	73	y	s1 gloss above 7; 7 and 3 read as one code	s1 the 3 is a flat-topped z-shape with tail, could be sign S64; gloss sits over the 7
+01	4	agree	S34	r	S34	r	s1 Ao shape; gloss r or x	s1 Ao; gloss r or t
+01	5	GLOSS	26	c	26	e	s1	s1
+01	6	agree	9	s	9	s	s1 centre on the tick, marginally left; gloss s or r	s1 centred on the tick, counted s1
+01	7	agree	16	e	16	e	s2	s2
+01	8	agree	104	u	104	u	s2 gloss above 10	s2
+01	9	agree	S27	l	S27	l	s2 doubled long-s with crossbar; small dash before gloss	s2 a short dash also above, left of the gloss l
+01	10	agree	62	i	62	i	s2 gloss a dot/tick, i?	s2
+01	11	agree	S23	s	S23	s	s2 small x-shape, could be S36	s2 x-shaped cross, no long descender
+01	12	agree	|		|		s2	s2
+01	13	agree	5	l	5	l	s2	s2
+01	14	agree	16	e	16	e	s2	s2
+01	15	GLOSS	58	ll	58	tt	s2 gloss crossed ll (or tt); first digit resembles s, may be 68	s2 first stroke long-s-like, second P/8-like; could be a sign; gloss looks tt (or H)
+01	16	agree	S40	r	S40	r	s2 gloss r or z	s2
+01	17	GLOSS	62	c	62	e	s2 gloss c or e	s2
+01	18	GLOSS	S32	qual	S32	quel	s2 Y with hooked top; could be S79; gloss 'qual' written as a word	s2 Y with flag; gloss is the word quel in the gloss hand
+01	19	agree	S35	so	S35	so	s2 long s + looped s; could be S51; small a above the following divider	s2 long s + s
+01	20	GLOSS	|		|	a	s2	s2 a gloss 'a' sits just above the divider
+01	21	agree	12	a	12	a	s2	s2
+01	22	SIGN	S31	p	9	p	s2 circle on cross, cross runs down into line 02	s2
+01	23	agree	5	l	5	l	s2	s2
+01	24	GLOSS	26	c	26	e	s2	s2
+02	1	SIGN	162		102		s1 stamp rim over gloss zone; could be 16 2	s1 library stamp rim runs just above; no gloss visible
+02	2	agree	|		|		s1	s1
+02	3	agree	S29	m	S29	m	s1	s1 minims uu
+02	4	GLOSS	26	c	26	i	s1 gloss c or i	s1 gloss small, i or e
+02	5	SIGN	4	f	64	f	s1 tall long-s gloss; split 26/4 (alt 2/64)	s1 gloss a tall f/long-s
+02	6	GLOSS	9	c	9	s	s1	s1
+02	7	agree	S34	r	S34	r	s1 gloss r or z	s1 Ao
+02	8	GLOSS	60	z	60	f	s1 gloss crossed z	s1 gloss f-like with crossbars
+02	9	GLOSS	S40	z	S40	r	s1	s1
+02	10	agree	26	u	26	u	s1 gloss two ticks, u?	s1
+02	11	agree	|		|		s1	s1
+02	12	agree	S16	d	S16	d	s1 tall long-s; gloss d-like (theta shape)	s1 long-s stroke without clear top loop
+02	13	SIGN	10	u	-		s1	
+02	14	SIGN	2		102	u	s2 centre just right of tick	s1 the 2 sits on the tick; token centre left of it
+02	15	agree	|		|		s2 curved '(' stroke read as divider	s2 curved stroke like (
+02	16	agree	7	u	7	u	s2	s2
+02	17	GLOSS	64	z	64	f	s2	s2
+02	18	agree	15	n	15	n	s2 second digit a small curved stroke	s2 second stroke long-s-like, read as 5
+02	19	agree	S03	a	S03	a	s2 loop with long tail descending right	s2 loop with long tail descending then right; S22 possible
+02	20	agree	4	t	4	t	s2	s2 lone cross-with-tail, read as digit 4
+02	21	agree	104	u	104	u	s2	s2
+02	22	agree	S30	n	S30	n	s2 'na' shape, c-hook faint	s2 na shape; c-hook faint
+02	23	agree	S03	a	S03	a	s2 same looped-tail sign, tail runs into divider	s2 loop with long tail
+02	24	agree	|		|		s2	s2
+02	25	GLOSS	60	i	60	t	s2	s2 gloss t or l
+02	26	GLOSS	26	c	26	e	s2	s2 gloss e or i
+02	27	SIGN	4	f	64	f	s2 tall curved gloss	s2 gloss a large f above
+02	28	agree	S29	m	S29	m	s2 uu with a leading hook; gloss c-hook+m	s2 minims; gloss m with a leading curl
+02	29	agree	16		16		s2 6 may be 0	s2 no gloss seen
+02	30	agree	|		|		s2	s2
+02	31	agree	S16	d	S16	d	s2	s2 long-s stroke
+02	32	agree	104	u	104	u	s2	s2
+02	33	agree	|		|		s2 double stroke	s2
+02	34	SIGN	S31	p	9	p	s2	s2
+02	35	agree	12	a	12	a	s2	s2
+03	1	SIGN	S27	c	4	ff	s1 tall long-s pair with a crossed stroke below (4-like); small c at top right read as glo	s1 cross-with-tail; above/left two thick tall long-s strokes joined by a top bar with smal
+03	2	agree	62		62		s1	s1
+03	3	agree	|		|		s1	s1
+03	4	agree	22	po	22	po	s1 gloss 'po' over both digits; could be 2 + 2	s1 gloss po (second letter o or e)
+03	5	agree	|		|		s1	s1
+03	6	GLOSS	S34	z	S34	r	s1 gloss crossed z	s1 Ao
+03	7	SIGN	26	r	2	e	s1 gloss r or c above 2; split 26/4 (alt 2/64)	s1 lone 2; gloss small c/e/r-like
+03	8	SIGN	4	f	64	f	s1 tall long-s gloss	s1 gloss a tall f
+03	9	agree	S31	p	S31	p	s1	s1 circle on a cross with a stem above; gloss p plus a tick
+03	10	GLOSS	82	u	82	o	s1 8 then flat 2; gloss two ticks (u?)	s1 8 and 2 slightly spaced, read as one code; gloss over the 8
+03	11	agree	15	n	15	n	s1 second digit a curved stroke; could be 11	s1 5 in long-s form
+03	12	GLOSS	9	r	9	q	s1 a thin vertical stroke crosses the 9 (divider?)	s1 a thin vertical stroke runs through it (possible faint divider); gloss q or g
+03	13	GLOSS	S40		S40	r	s1 large n-shape with looped right leg and long descender; loop joined to following 2	s1 large arch with looped right leg, joined to the following 62; gloss r sits over the 62
+03	14	SIGN	2	c	62		s1	s1 small 6-loop and 2 inside the S40 flourish
+03	15	agree	6		6		s2	s2 lone 6
+03	16	agree	|		|		s2	s2
+03	17	SIGN	5	d	S16	d	s2 5 without clear flag; gloss d/theta	s2 small long-s stroke, same shape as the other d-glossed long-s signs; could be digit 5
+03	18	GLOSS	16	c	16	e	s2	s2
+03	19	GLOSS	9	c	9	s	s2	s2
+03	20	GLOSS	26	c	26	e	s2	s2
+03	21	GLOSS	S32	que	S32	quel	s2 Y with hooked top; could be S79; gloss 'que'	s2 gloss quel
+03	22	agree	|		|		s2 thin vertical stroke	s2 thin faint vertical
+03	23	GLOSS	4	f	4	s	s2 tall long-s gloss	s2 large cross, could be S13; gloss tall long s
+03	24	agree	9	c	9	c	s2	s2
+03	25	GLOSS	60	i	60	l	s2 gloss i or l	s2
+03	26	GLOSS	S31	p	S31	t	s2	s2 circle on a cross; gloss cross-like t
+03	27	GLOSS	64	r	64	l	s2 gloss r or i	s2 gloss l or f
+03	28	SIGN	-		4	o		s2 gloss o or v
+03	29	SIGN	44	o	4		s2 gloss o or p over first 4; could be 4 + 4	s2 no gloss seen
+03	30	agree	15	n	15	n	s2 first digit an ink blot, second a curved stroke	s2
+03	31	agree	S35	so	S35	so	s2 long s + S; small a/q above following divider	s2
+03	32	GLOSS	|		|	a	s2	s2 an a-like gloss mark above the divider
+03	33	agree	14	a	14	a	s2 gloss above the 4	s2 could be 1 and 4 separately; gloss over the 4
+03	34	GLOSS	S34	z	S34	r	s2	s2
+03	35	GLOSS	16	c	16	e	s2	s2
+04	1	GLOSS	4	f	4	s	s1 tall long-s gloss	s1 x-like cross; gloss a tall long s (or f) rising at left
+04	2	agree	S31	p	S31	p	s1	s1 circle on a cross, p-like top
+04	3	agree	82	o	82	o	s1 8 then flat 2; gloss o above 8; could be 8 + 2	s1 8 and 2 slightly spaced, read as one code; gloss over the 8
+04	4	agree	S30	n	S30	n	s1 'na' shape, no clear c-hook	s1 na shape
+04	5	SIGN	5	d	S16	d	s1 curved 5-like stroke; gloss d/theta	s1 small long-s stroke
+04	6	agree	104	u	104	u	s1	s1
+04	7	SIGN	5	d	S16	d	s1	s1 small long-s stroke
+04	8	agree	26	t	26	t	s1 gloss t sits over the 6; could be 2 + 6	s1 gloss t (possibly te)
+04	9	agree	4	f	4	f	s1 tall long-s gloss	s1 gloss a large f/long s
+04	10	agree	|		|		s1	s1
+04	11	agree	7	u	7	u	s1 gloss u or ic	s1
+04	12	GLOSS	S40		S40	r	s1 a tall hooked stroke above, probably from line 03, no clear gloss	s1
+04	13	GLOSS	5	?	5	l	s1 gloss an &-like/crossed-s letter	s1 gloss script l
+04	14	GLOSS	16	c	16	e	s1	s1
+04	15	agree	4	f	4	f	s2 gloss long s with a loop, maybe fe	s2 double-barred cross; gloss crossed f
+04	16	agree	14	a	14	a	s2	s2
+04	17	GLOSS	64	z	64	f	s2	s2
+04	18	agree	S37	t	S37	t	s2 crossed t joined to o	s2 to
+04	19	agree	|		|		s2 thick vertical with ink blot	s2 heavy stroke over the next 2
+04	20	agree	22	po	22	po	s2 first 2 blotted	s2
+04	21	agree	5	l	5	l	s2	s2
+04	22	GLOSS	16	c	16	e	s2	s2
+04	23	SIGN	S79	quel	S32	quel	s2 u-like stroke joined to y with long tail; gloss 'quel'; could be S32	s2 u-y shape with long descender; gloss quel
+04	24	SIGN	4	f	S44	se	s2 gloss long-s descending into the 4, maybe 'se'/'fe'; could be S74	s2 crossed stem with loop at top right; gloss se or fe
+04	25	agree	|		|		s2 thin stroke	s2
+04	26	GLOSS	62		62	e	s2	s2
+04	27	SIGN	4	f	S23	s	s2 tall long-s gloss	s2 x cross; gloss a large long s
+04	28	agree	S37	t	S37	t	s2	s2 to
+04	29	agree	82	o	82	o	s2 gloss o above 8	s2 8 and 2 slightly spaced, read as one code; gloss over the 8
+04	30	GLOSS	60	z	60	f	s2	s2
+04	31	agree	S38	t	S38	t	s2 crossed t joined to c	s2 tc
+04	32	agree	|		|		s2 slash	s2
+04	33	GLOSS	104	?	104		s2 loop/L-shape above may be a descender from line 03, not a gloss	s2 loop above is the descender of line 03's final 6, no gloss seen; a colon follows; a z/3
+05	1	GLOSS	26	c	26	e	s1	s1 gloss c/e with a stroke after it
+05	2	agree	15	n	15	n	s1 second digit a curved stroke	s1
+05	3	SIGN	10	u	-		s1	
+05	4	SIGN	2		102	u	s1	s1
+05	5	agree	|		|		s1	s1
+05	6	agree	S31	p	S31	p	s1	s1 circle on a cross
+05	7	agree	28	a	28	a	s1 gloss sits over the 8; could be 2 + 8	s1 2 and 8 slightly spaced, read as one code; gloss a or n over the 8
+05	8	agree	S34	r	S34	r	s1	s1 Ao
+05	9	SIGN	5	d	S16	d	s1	s1 small long-s stroke
+05	10	agree	26	r	26	r	s1 gloss r or c	s1 gloss r-like (or e)
+05	11	GLOSS	9	c	9	e	s1	s1 gloss e or c
+05	12	agree	14	a	14	a	s1 gloss over 4, a or n	s1
+05	13	agree	|		|		s1	s1
+05	14	agree	S31	p	S31	p	s1	s1 circle on a cross
+05	15	agree	12	a	12	a	s2 straddles tick, centre marginally right; gloss a-like hook	s1 straddles near the tick, centre left
+05	16	agree	S40	r	S40	r	s2	s2
+05	17	agree	S27	l	S27	l	s2 gloss hooked tall stroke	s2
+05	18	SIGN	26	c	2	i	s2	s2 lone 2; gloss dotted i
+05	19	SIGN	4	f	64	f	s2 tall long-s gloss; split 26/4 (alt 2/64)	s2 gloss a large long s/f
+05	20	agree	S32	q	S32	q	s2 y-shape with hooks on both arms and bottom loop; could be S60	s2 y-like with hook at top left; gloss q
+05	21	SIGN	10	u	-		s2	
+05	22	SIGN	2		102	u	s2 could belong to 102	s2
+05	23	GLOSS	16	c	16	e	s2	s2
+05	24	GLOSS	68	ll	68	tt	s2 gloss ll or tt	s2 gloss tt
+05	25	GLOSS	62	c	62	e	s2	s2
+05	26	agree	S35		S35		s2 long s + s; no separate gloss seen	s2 tall crossed long s followed by a 5/s shape; no separate gloss seen
+05	27	agree	|		|		s2	s2
+05	28	GLOSS	60	z	60	f	s2	s2
+05	29	agree	12	a	12	a	s2	s2
+05	30	agree	73	y	73	y	s2 3 written small and flat; gloss y or r	s2 3 faint and low; gloss y-like
+05	31	agree	|		|		s2	s2
+05	32	GLOSS	26	c	26	e	s2	s2
+06	1	GLOSS	4	f	4	s	s1 tall long-s gloss	s1 cross; a thick tall long-s stroke rises from it (gloss s, or part of the sign)
+06	2	agree	S38	t	S38	t	s1 crossed t joined to c	s1 tc; gloss a crossed t
+06	3	GLOSS	16	c	16	e	s1	s1
+06	4	agree	|		|		s1	s1
+06	5	agree	3	?	3	?	s1 flat-topped 3 (could be S64); gloss B/&-like, illegible	s1 z-shaped 3 with a tail (could be sign S64); gloss a B/25-like mark, illegible
+06	6	GLOSS	60	i	60	it	s1	s1 gloss i over the 6 and t over the 0; could be 6 and 0 separately
+06	7	GLOSS	15	n	15	en	s1 second digit curved; gloss c-n	s1 1 and a short 5 stroke; gloss en or cn
+06	8	agree	|		|		s1	s1
+06	9	agree	S42		S42		s1 two looped S	s1 two looped S side by side, 66-like; no gloss
+06	10	SIGN	-		2			s1 no gloss
+06	11	SIGN	26		6		s1 no gloss seen	s1 no gloss
+06	12	agree	S30		S30		s1 'ua'/'na' shape without hook	s1 'ua'/na shape, no c-hook seen, no gloss
+06	13	agree	|		|		s1 slash	s1
+06	14	SIGN	-		4	f		s1 gloss f
+06	15	GLOSS	4	f	4	o	s1 4 partly blotted; gloss f	s1 gloss o
+06	16	SIGN	44	o	4		s1 gloss o over first 4; could be 4 + 4	s1 no gloss
+06	17	agree	S34	r	S34	r	s1 straddles tick, centre left	s1 Ao, centred left of the tick
+06	18	agree	S37	t	S37	t	s2	s2 to
+06	19	agree	|		|		s2	s2
+06	20	agree	12	a	12	a	s2 ink blot after the 2	s2
+06	21	GLOSS	7	y	7	r	s2 gloss y or r; tail may make it 73	s2 gloss r (x-like)
+06	22	SIGN	S16		S53	s	s2 tall long-s top over a small zigzag; maybe same as the xi-shape later in this line	s2 tall flourish from top into a 3/8-like curl with tail; the long-s top may be a gloss s
+06	23	agree	4		4		s2	s2 cross, no gloss of its own
+06	24	GLOSS	16	c	16	e	s2	s2
+06	25	agree	|		|		s2	s2
+06	26	agree	5	d	5	d	s2	s2 gloss a d-like loop above (shared with 5/2)
+06	27	SIGN	-		2			s2
+06	28	SIGN	26	c	6	e	s2 gloss over the 6, not the 2; could be 2 + 6	s2
+06	29	agree	15	n	15	n	s2	s2
+06	30	agree	S37	t	S37	t	s2	s2 to
+06	31	GLOSS	62	c	62	e	s2	s2
+06	32	agree	11	n	11	n	s2 two straight strokes (same gloss as the 15s)	s2 two minims, u-like; could be S29
+06	33	agree	5	d	5	d	s2	s2 gloss a d-loop with long stem
+06	34	SIGN	S20	z	S40	r	s2 looped R with tail, dot after; gloss z or t	s2 R-like loop with looped leg and a dot after; a cross above may be gloss r or line-05 de
+06	35	GLOSS	16	c	16	e	s2	s2
+06	36	agree	|		|		s2	s2
+06	37	GLOSS	S32	que	S32	quel	s2 Y-shape; gloss 'que'	s2 Y with gloss quel
+06	38	SIGN	X	l	S53	l	s2 small s-over-z zigzag (xi-like); gloss l may belong to next 16	s2 3/8-like curl with tail; gloss l
+06	39	GLOSS	16	c	16	e	s2	s2
+06	40	GLOSS	4	f	4	s	s2	s2 gloss tall long s
+06	41	agree	4	f	4	f	s2	s2 gloss f
+07	1	SIGN	-		8	o		s1
+07	2	SIGN	82	o	2		s1 gloss o over 8	s1 no gloss
+07	3	agree	S34	r	S34	r	s1	s1 Ao with a mark on the A; gloss r
+07	4	GLOSS	9	c	9	d	s1 gloss c (ascender from line 06 above it)	s1 gloss d-like (script d)
+07	5	GLOSS	16	c	16	e	s1	s1
+07	6	agree	4	s	4	s	s1 5-shaped gloss (s) between 6 and 4; split 16/4 (alt 1/64)	s1 gloss an s-shaped mark above
+07	7	agree	|		|		s1	s1
+07	8	SIGN	S79	quel	S32	quel	s1 u-stroke joined to y; gloss 'quel'; could be S32	s1 uy shape; gloss quel
+07	9	agree	S35	so	S35	so	s1 long s + s; small a above following divider	s1 long s + s; gloss So with a flourish (Sos?)
+07	10	agree	|		|		s1	s1
+07	11	agree	S29	m	S29	m	s1	s1 three minims
+07	12	GLOSS	26	c	26	e	s1	s1
+07	13	agree	15	n	15	n	s1	s1
+07	14	GLOSS	16	c	16	e	s1	s1
+07	15	GLOSS	S40	z	S40	r	s1	s1 reversed-omega/R-like, trailing stroke to the tick; centre left of tick
+07	16	agree	|		|		s2 slash	s2
+07	17	agree	S35		S35		s2 tall long s + 5-like s; no gloss	s2 tall long s + 5; the tall stroke may be a gloss s
+07	18	SIGN	-		4	o		s2
+07	19	SIGN	44	o	4		s2 gloss o over first 4	s2 no gloss
+07	20	agree	60	t	60	t	s2	s2
+07	21	GLOSS	26	c	26	e	s2	s2
+07	22	agree	15	n	15	n	s2	s2
+07	23	agree	S37	t	S37	t	s2	s2 to
+07	24	agree	|		|		s2	s2
+07	25	agree	S37	t	S37	t	s2	s2 to
+07	26	agree	|		|		s2 thin stroke	s2 faint thin stroke
+07	27	SIGN	-		2	e		s2 gloss over the 2/6 gap
+07	28	SIGN	26	c	6		s2	s2 read as separate from preceding 2; could be 26
+07	29	agree	68	ll	68	ll	s2	s2 gloss ll (or tl)
+07	30	GLOSS	16	c	16	e	s2	s2
+07	31	agree	4	s	4	s	s2 5-shaped gloss	s2 gloss s-like
+07	32	agree	|		|		s2 faint slash	s2 faint
+07	33	SIGN	S79	que	S32	que	s2 'ny' shape; could be S32	s2 ny shape; gloss que
+07	34	agree	S35	so	S35	so	s2 small a-mark above next token	s2 gloss So with flourish
+07	35	agree	S29	m	S29	m	s2 gloss 'ma' spans uu and 12; m assigned here	s2
+07	36	agree	12	a	12	a	s2	s2
+07	37	agree	15	n	15	n	s2	s2
+07	38	agree	5	d	5	d	s2	s2
+07	39	GLOSS	16	c	16	e	s2 gloss c or e	s2
+07	40	agree	|		|		s2 slash	s2
+08	1	SIGN	7		75		s1 small tick after the 7	s1 no gloss seen
+08	2	agree	|		|		s1	s1
+08	3	SIGN	S06		S74		s1 c-hook joined to a crossed f/4 shape	s1 loop joined to a 4-cross (4 with extra hooked stroke); no gloss seen
+08	4	agree	S40	r	S40	r	s1 gloss a tiny v-tick, r?	s1 gloss a small r/tick
+08	5	agree	S30	n	S30	n	s1 'na' shape	s1 'na' shape
+08	6	SIGN	-		4	e		s1 gloss e or o
+08	7	SIGN	44	o	4		s1 gloss o over first 4	s1 no gloss
+08	8	agree	15	n	15	n	s1	s1
+08	9	GLOSS	4	f	4	s	s1 tall long-s gloss	s1 cross with a tall long-s stroke rising (gloss s)
+08	10	GLOSS	16	c	16	e	s1	s1 gloss e/i
+08	11	agree	104	u	104	u	s1	s1
+08	12	agree	68	ll	68	ll	s1	s1
+08	13	SIGN	-		2	e		s1 lone 2; gloss c/e
+08	14	SIGN	26	c	6		s1	s1 could join the 2 as 26
+08	15	agree	S29	m	S29	m	s1	s2 minims uu; centred just right of tick
+08	16	GLOSS	62	c	62	e	s2 ink blot on the 2; gloss c or u	s2
+08	17	agree	15	n	15	n	s2	s2
+08	18	agree	S37	t	S37	t	s2	s2 to
+08	19	agree	|		|		s2	s2
+08	20	SIGN	22	po	X	tou	s2 first 2 wavy; gloss p (crossed, maybe 'pro') + o	s2 wavy double z-stroke with a cross, small 'tou'-like letters above; maybe 22 overwritten
+08	21	agree	|		|		s2	s2
+08	22	GLOSS	S27	l	S27	f	s2	s2 heavy doubled crossed long-s; gloss a tall f
+08	23	GLOSS	16	c	16	e	s2	s2
+08	24	SIGN	S40	r	S62	x	s2 dot after	s2 lambda/delta-like shape with a stroke and a dot after; gloss r/x-like; S40 possible
+08	25	GLOSS	26	c	26	e	s2	s2
+08	26	SIGN	-		6			s2 no gloss
+08	27	SIGN	S14	g	9	g	s2 loop with tail curling down-left; could be S03	s2 ornate 9 with curl; gloss g
+08	28	agree	12	a	12	a	s2	s2
+08	29	agree	S34	r	S34	r	s2	s2 Ao
+08	30	agree	5	d	5	d	s2	s2 gloss d-loop
+08	31	agree	|		|		s2	s2
+08	32	SIGN	5	d	-		s2	
+08	33	SIGN	10	u	S16	d	s2	s2 long-s stroke
+08	34	SIGN	2		102	u	s2 could belong to 102	s2
+08	35	agree	|		|		s2	s2
+08	36	SIGN	4	f	S36	f	s2 4 heavily blotted	s2 heavy blotted x over a descender; gloss f
+08	37	agree	12	a	12	a	s2	s2
+08	38	agree	60	i	60	i	s2	s2
+08	39	agree	S37	t	S37	t	s2 crossed t joined to a/o	s2 to
+09	1	agree	S35		S35		s1 very tall long s at line start + 5-like s	s1 very tall long s curving down (bracket-like) followed by a 5/s; the tall stroke could b
+09	2	agree	104	u	104	u	s1 gloss u or a	s1 gloss u or a
+09	3	GLOSS	4	f	4	l	s1 tall long-s gloss	s1 x-like cross; gloss a heavy tall stroke (l/s)
+09	4	agree	5	d	5	d	s1	s1 gloss 9/d-shaped loop
+09	5	GLOSS	64	z	64	f	s1	s1 gloss f over the 6
+09	6	GLOSS	9	c	9	e	s1	s1 gloss c/e
+09	7	agree	S38	t	S38	t	s1	s1 tc
+09	8	agree	|		|		s1	s1
+09	9	SIGN	4	f	S36	f	s1 tall long-s gloss	s1 x crossed over a stem rising into a tall f-like stroke (the rising stroke may be the gl
+09	10	agree	60	i	60	i	s1	s1
+09	11	agree	5	l	5	l	s1	s1
+09	12	agree	|		|		s1	s1 thin
+09	13	GLOSS	4	f	4	s	s1	s1 cross with a tall long-s rising (gloss s)
+09	14	GLOSS	16	c	16	e	s1	s1
+09	15	agree	S31	p	S31	p	s1	s1 circle on a cross; gloss y/p-like
+09	16	agree	S34	r	S34	r	s1	s1 Ao
+09	17	SIGN	-		2	e		s1 on the tick, centre just left
+09	18	SIGN	26	c	6		s2 on the tick, centre right	s2 hooked 6 crossed by a long descender from line 08
+09	19	agree	S35		S35		s2 tall long s + s	s2 long s + s; tall stroke above could be the descender of line 08
+09	20	GLOSS	16	c	16	e	s2	s2
+09	21	agree	15	n	15	n	s2	s2
+09	22	agree	S37	t	S37	t	s2	s2 to
+09	23	GLOSS	62	c	62	e	s2	s2
+09	24	agree	|		|		s2	s2 tall stroke
+09	25	SIGN	S20	z	S40	r	s2 R-like with hooked top; could be S33	s2 R-shape with crossed stem; gloss x/r
+09	26	agree	14	a	14	a	s2	s2
+09	27	agree	|		|		s2	s2
+09	28	agree	82	o	82	o	s2	s2
+09	29	GLOSS	9	c	9	e	s2	s2 gloss c/e
+09	30	agree	14	a	14	a	s2	s2
+09	31	GLOSS	4	f	4	s	s2 tall long-s gloss	s2 cross with tall long s rising (gloss s/f)
+09	32	GLOSS	24	z	24	f	s2 gloss crossed z over the 2	s2 gloss a z-shaped f
+09	33	SIGN	-		4	s		s2 gloss s
+09	34	SIGN	-		4			s2 no gloss
+09	35	SIGN	44	o	4	?	s2	s2 small hooked 4, crossed by line 08 descender; blotted gloss above
+09	36	SIGN	15	n	5	?	s2 first digit blotted, looks like a small 4	s2 blotted gloss above
+09	37	agree	|		|		s2 thick stroke	s2 may be only the descender of line 08's sign
+09	38	agree	5	d	5	d	s2	s2 gloss d-loop
+09	39	GLOSS	16	c	16	e	s2	s2
+09	40	agree	5	l	5	l	s2	s2
+09	41	SIGN	-		2	e		s2
+09	42	SIGN	26	c	6		s2	s2
+09	43	agree	|		|		s2	s2
+10	1	agree	S37	t	S37	t	s1 left margin rule before it skipped	s1 to
+10	2	agree	14	a	14	a	s1	s1
+10	3	agree	11	n	11	n	s1 two minims joined like u	s1 two minims (u-like); could be a sign
+10	4	agree	S38	t	S38	t	s1	s1 tc
+10	5	GLOSS	16	c	16	e	s1 6 touches following Ao	s1
+10	6	agree	S34	r	S34	r	s1	s1 Ao
+10	7	agree	|		|		s1	s1
+10	8	agree	S31	p	S31	p	s1	s1 circle on a cross; gloss y/p-like
+10	9	agree	12	a	12	a	s1	s1
+10	10	agree	S40	r	S40	r	s1 dot after	s1 R-shape with a dot after
+10	11	GLOSS	9	c	9	e	s1	s1 gloss c/e
+10	12	GLOSS	26	u	26	o	s1	s1 gloss over the 6; could be 2 and 6 separately
+10	13	agree	S35		S35		s1 tall long s + s	s1 tall long s + 5
+10	14	agree	S37	t	S37	t	s1 a second t-like mark above as well	s1 to
+10	15	GLOSS	16	c	16	e	s1 6 lies just right of tick, token centre left	s1 on the tick, centre left
+10	16	agree	|		|		s2 slash	s2
+10	17	SIGN	10		102	d	s2 loop above is a descender from line 09, not a gloss; 1 fused with slash	s2 gloss a d/b-like loop (maybe a descender from line 09)
+10	18	SIGN	2		4	o	s2 could belong to 102	s2
+10	19	SIGN	44	o	4		s2	s2 no gloss
+10	20	GLOSS	64	z	64	f	s2	s2 gloss z-shaped f
+10	21	GLOSS	26	c	26	e	s2	s2 gloss over the 2
+10	22	agree	|		|		s2	s2
+10	23	agree	5	l	5	l	s2	s2
+10	24	GLOSS	12	a	12	u	s2	s2 gloss u over the 2
+10	25	agree	S29	m	S29	m	s2	s2
+10	26	agree	12	a	12	a	s2	s2
+10	27	GLOSS	26	c	26	e	s2	s2 gloss over the 2
+10	28	SIGN	4	f	S27		s2 tall long s rises from and descends through the 4 (possibly one f-like sign, cf S21)	s2 tall looped crossed long-s pair; no separate gloss seen
+10	29	GLOSS	16	c	16	e	s2	s2
+10	30	SIGN	-		|			s2 thin
+10	31	agree	15	n	15	n	s2	s2
+10	32	GLOSS	9	c	9	e	s2	s2 gloss c/e
+10	33	SIGN	-		8	o		s2 read separately from 9; could be 98
+10	34	SIGN	82	o	2		s2	s2 no gloss
+10	35	agree	S40	r	S40	r	s2 a dotted descender from line 09 crosses it; dot after	s2 R-shape with crossed stem and a dot
+10	36	GLOSS	62	c	62	e	s2	s2
+10	37	GLOSS	4	f	4	s	s2 tall long-s gloss/stem	s2 gloss tall long s
+10	38	agree	|		|		s2	s2
+11	1	agree	22	po	22	po	s1 ROW A (crop 11 holds two text rows; row A upper, row B lower, numbered A then B)	s1 UPPER ROW: the line-11 crop holds two cipher rows (upper '22 to 82...', lower '6 o ua t
+11	2	GLOSS	S37	t	S37	te	s1 row A; gloss t(c?)	s1 upper row; to; gloss te/tc
+11	3	agree	82	o	82	o	s1 row A	s1 upper row; gloss over the 8
+11	4	agree	104	u	104	u	s1 row A	s1 upper row
+11	5	agree	S38	t	S38	t	s1 row A	s1 upper row; tc; gloss t with a tick
+11	6	GLOSS	16	c	16	e	s1 row A	s1 upper row; gloss c/e
+11	7	SIGN	4	f	S36	s	s1 row A tall long-s gloss	s1 upper row; x over a long stroke rising into a tall s (gloss)
+11	8	agree	|		|		s1 row A	s1 upper row
+11	9	GLOSS	28	n	28	a	s1 row A; gloss n or a over the 8	s1 upper row; gloss a over the 8
+11	10	SIGN	10	u	-		s1 row A	
+11	11	SIGN	2		102	u	s1 row A; could belong to 102	s1 upper row
+11	12	agree	S38	t	S38	t	s1 row A; blotted	s1 upper row; tc heavily inked/overwritten
+11	13	agree	S34	r	S34	r	s1 row A	s1 upper row; Ao
+11	14	GLOSS	16	c	16	e	s1 row A; straddles tick, centre about on it	s1 upper row; centre left of tick
+11	15	GLOSS	4	f	4	s	s2 row A	s2 upper row; cross with a tall long s rising (gloss s)
+11	16	agree	|		|		s2 row A	s2 upper row thin
+11	17	agree	82	o	82	o	s2 row A	s2 upper row
+11	18	agree	9	c	9	c	s2 row A	s2 upper row; gloss c/e
+11	19	agree	12	a	12	a	s2 row A	s2 upper row
+11	20	GLOSS	4	f	4	s	s2 row A	s2 upper row; tall long s crossing a 4 (gloss s)
+11	21	agree	16	i	16	i	s2 row A; gloss a short stroke (i), not the usual c	s2 upper row
+11	22	SIGN	-		64	o		s2 upper row
+11	23	SIGN	44	o	4		s2 row A	s2 upper row
+11	24	agree	15	n	15	n	s2 row A	s2 upper row
+11	25	SIGN	4	f	X		s2 row A; k-like: tall long s with 4-arm	s2 upper row; k-like shape with a tall long-s ascender joined (possibly S56 or S39)
+11	26	agree	|		|		s2 row A	s2 upper row
+11	27	agree	S52	lle	S52	lle	s2 row A; lattice about 3x3 (could be S04); gloss 'llc'/'lle'	s2 upper row; lattice three by three; gloss 'lle'
+11	28	SIGN	10	u	102	u	s2 row A	s2 upper row
+11	29	SIGN	2		4	o	s2 row A	s2 upper row
+11	30	SIGN	44	o	4		s2 row A	s2 upper row
+11	31	GLOSS	64	z	64	f	s2 row A	s2 upper row
+11	32	agree	14	a	14	a	s2 row A	s2 upper row
+11	33	GLOSS	15	n	15	h	s2 row A; ascender over gloss is from line above	s2 upper row; gloss h
+11	34	agree	S38	t	S38	t	s2 row A	s2 upper row
+11	35	agree	S31	p	S31	p	s2 row A	s2 upper row
+11	36	agree	82	o	82	o	s2 row A; gloss d/o-like	s2 upper row
+11	37	agree	60	l	60	l	s1 ROW B; gloss l or i	s1 LOWER ROW starts; gloss l-like stroke over the 6
+11	38	agree	S30	n	S30	n	s1 row B 'na'	s1 lower row; 'ua' shape
+11	39	agree	S38	t	S38	t	s1 row B	s1 lower row; tc
+11	40	SIGN	S58	?	X	?	s1 row B; crossed long s + 2-shape; gloss is an &/of-like letter inside a drawn box (corre	s1 lower row; a box/shield drawn over a long s with a small a inside; possibly a correctio
+11	41	agree	12	a	12	a	s1 row B	s1 lower row
+11	42	SIGN	S27	l	X	l	s1 row B	s1 lower row; large capital A fused with a crossed ff (S76 + f?)
+11	43	agree	14	a	14	a	s1 row B	s1 lower row
+11	44	SIGN	10	u	-		s1 row B	
+11	45	SIGN	2		102	u	s1 row B	s1 lower row
+11	46	agree	4	f	4	f	s1 row B; small separate f gloss	s1 lower row; gloss crossed f
+11	47	agree	S34	r	S34	r	s1 row B	s1 lower row; Ao
+11	48	GLOSS	16	c	16	e	s1 row B	s1 lower row
+11	49	SIGN	10	u	102	u	s1 row B	s1 lower row
+11	50	SIGN	2		4	o	s1 row B	s1 lower row
+11	51	SIGN	44	o	4		s1 row B; straddles tick	s2 lower row
+11	52	SIGN	73		72		s2 row B; 7 crossed/joined to flat 3 (z-like); could be 4+2	s2 lower row; crossed 7 joined to a z-2; could be 42
+11	53	agree	|		|		s2 row B	s2 lower row
+11	54	GLOSS	26	c	26	e	s2 row B	s2 lower row
+11	55	GLOSS	5	?	5		s2 row B; ink blot over gloss zone and after it	s2 lower row
+11	56	SIGN	-		X	?		s2 lower row; token under a large ink blot, illegible
+11	57	GLOSS	6	c	6	e	s2 row B; a digit may be hidden under the ink blot before it	s2 lower row
+11	58	agree	4	f	4	f	s2 row B	s2 lower row; tall f crossing a 4
+11	59	agree	|		|		s2 row B	s2 lower row
+11	60	agree	S31	r	S31	r	s2 row B; body read from line-12 crop top; could be 58 as in line 01	s2 lower row; circle on a cross
+11	61	agree	S40	r	S40	r	s2 row B	s2 lower row
+11	62	agree	28	a	28	a	s2 row B	s2 lower row
+11	63	agree	S37	t	S37	t	s2 row B	s2 lower row
+11	64	GLOSS	60	z	60	f	s2 row B; crossed z/f gloss	s2 lower row; gloss f/t
+11	65	agree	S32	q	S32	q	s2 row B; y with hooked arms (as line 05)	s2 lower row; y with crossbar; gloss q
+11	66	agree	104	u	104	u	s2 row B	s2 lower row
+11	67	GLOSS	62	c	62	e	s2 row B	s2 lower row
+11	68	SIGN	4	f	S36	s	s2 row B; large C-shaped long-s gloss; 4 blotted	s2 lower row; x over a long descender, tall s above
+11	69	agree	|		|		s2 row B	s2 lower row
+11	70	SIGN	S79	que	S32	quil	s2 row B; 'ny' shape	s2 lower row; 'ny' shape; gloss quil/quel
+11	71	agree	|		|		s2 row B	s2 lower row
+11	72	SIGN	-		X			s2 lower row; solid filled triangular blot-sign
+11	73	SIGN	73		S64	e	s2 row B; 7 is an ink blot	s2 lower row; 3-shape; gloss e-like
+11	74	GLOSS	S40	z	S40		s2 row B; hooked top	s2 lower row; n-shape with looped leg at line end
+12	1	agree	28	a	28	a	s1 gloss over 2/8	s1
+12	2	GLOSS	64	i	64	l	s1 gloss i or l	s1 gloss l/i over the 6
+12	3	GLOSS	S38		S38	t	s1 marks above belong to line-11 row B	s1 tc; gloss a heavy crossed t
+12	4	SIGN	-		X	p		s1 large A with a crossed f-hook at right (not plain S76, no hooked v); gloss p/r
+12	5	SIGN	S27	r	|		s1 gloss r/v-like; a long descender from line-11 row B runs past it	s1 thin
+12	6	agree	24	i	24	i	s1 could be 2 + 4	s1 gloss i
+12	7	GLOSS	26	c	26	e	s1	s1 gloss over the 2
+12	8	SIGN	10	u	-		s1 1 is an ink blot	
+12	9	SIGN	2		102	u	s1	s1 the 1 is blotted
+12	10	agree	|		|		s1	s1
+12	11	GLOSS	S32	q	S32	que	s1 Y-shape; could be S79	s1 Y; gloss q with bar (que)
+12	12	GLOSS	S35	so	S35	vos	s1 gloss b/s-o plus a small z-like mark	s1 long s + s; gloss 'vos'
+12	13	agree	S52	m	S52	m	s1 lattice 3x3; gloss m or rn	s1 lattice; gloss m; S04 possible
+12	14	agree	S35	s	S35	s	s1 tall long s + s; gloss a long-s letter; straddles tick, centre left	s2 tall long s + 5; tall stroke may be gloss s
+12	15	SIGN	-		4	o		s2
+12	16	SIGN	44	o	4		s2	s2
+12	17	agree	60	i	60	i	s2	s2
+12	18	GLOSS	62	c	62	e	s2	s2 gloss c/e
+12	19	GLOSS	73	ll	73	n	s2 heavy ll/tt gloss over 7	s2 heavy gloss like N/u
+12	20	GLOSS	S44		S44	ct	s2 p-loop with crossed stem; mark above is the cross of the S31 in line-11 row B	s2 crossed-stem loop; gloss small 'ct'/'3t'
+12	21	agree	S40		S40		s2 omega-shaped with feet	s2 omega shape; no gloss seen
+12	22	SIGN	-		9	p		s2
+12	23	SIGN	-		12	a		s2
+12	24	SIGN	-		5			s2 small s-shaped 5
+12	25	SIGN	-		4	se		s2 gloss 'se'/'ſe' tall
+12	26	SIGN	-		26			s2
+12	27	SIGN	-		|			s2
+12	28	agree	S31	p	S31	p	s2	s2 circle on a cross
+12	29	SIGN	-		28	a		s2
+12	30	SIGN	12	a	S40	r	s2	s2 R/omega with a crossbar; gloss r-like
+12	31	SIGN	54	fr	5	d	s2 gloss long-s + r with tilde; could be 5 + 4	s2 faint gloss 'pardon' written small above tokens 30-33
+12	32	GLOSS	26	?	26	o	s2 faint multi-letter gloss (y-a-3-o-t?) spans 26 and 9	s2
+12	33	GLOSS	9	?	9	n	s2 see previous note	s2
+12	34	agree	12		12		s2	s2
+12	35	agree	|		|		s2	s2
+12	36	agree	22	pu	22	pu	s2 gloss p (crossed) + u/o	s2 gloss pu/po
+12	37	agree	|		|		s2	s2
+13	1	GLOSS	12		12	a	s1 marks above are descenders from line 12	s1
+13	2	GLOSS	S31		S31	p	s1 c-like loop on a cross; cross above is from line 12	s1
+13	3	GLOSS	S34		S34	r	s1	s1
+13	4	GLOSS	62	c	62	e	s1 gloss e/c	s1
+13	5	GLOSS	4		4	s	s1 the tall stroke above is a descender from line 12, not a gloss	s1 tall f/long s rising (gloss)
+13	6	agree	S32	q	S32	q	s1 Y with looped left arm; loop may be the q gloss	s1 Y with a q-loop gloss at top
+13	7	GLOSS	S35	so	S35	ue	s1	s1 gloss ue/we spanning
+13	8	agree	14	a	14	a	s1	s1
+13	9	SIGN	10	u	-		s1	
+13	10	SIGN	2		102	u	s1	s1
+13	11	agree	S76	r	S76	r	s1 plain A, no o	s1 plain capital A; gloss heavy R-like
+13	12	GLOSS	16	c	16	e	s1	s1
+13	13	SIGN	73	z	72	s	s1 gloss crossed z/y over the 7; the 3 is crossed by the divider	s1 crossed 7 joined to 2; gloss a z/3-like s
+13	14	agree	|		|		s1	s1
+13	15	GLOSS	62	c	62	e	s1	s1
+13	16	agree	15	n	15	n	s2	s2
+13	17	agree	S37	t	S37	t	s2	s2
+13	18	GLOSS	16	c	16	e	s2	s2
+13	19	agree	S30	n	S30	n	s2 'na'	s2 ua shape
+13	20	agree	5	d	5	d	s2	s2 s-shaped 5; gloss d-like
+13	21	agree	104	u	104	u	s2	s2
+13	22	agree	|		|		s2	s2
+13	23	agree	9	c	9	c	s2	s2
+13	24	SIGN	44	o	4	o	s2 gloss o or a	s2
+13	25	SIGN	7	u	4		s2 gloss run 'u u v c' spans 7, 61 and 8	s2
+13	26	SIGN	61	?	76	uu	s2 see previous	s2 gloss letters 'uuue' span tokens 25-26; could be 7 and 6 separately
+13	27	SIGN	8	c	16	ue	s2 8 with loop descender (could be S51); may join 61	s2
+13	28	agree	|		|		s2	s2
+13	29	agree	S37	t	S37	t	s2	s2
+13	30	SIGN	-		4	o		s2
+13	31	SIGN	44	o	4		s2	s2
+13	32	agree	104	u	104	u	s2	s2
+13	33	agree	S37	t	S37	t	s2	s2
+13	34	GLOSS	26	c	26	e	s2	s2
+13	35	GLOSS	4	f	4	s	s2 tall long-s gloss	s2 tall long s gloss
+13	36	agree	|		|		s2	s2
+13	37	agree	9	c	9	c	s2	s2
+13	38	agree	17	ch	17	ch	s2 gloss 'ch' over 1-7; could be 1 + 7	s2 gloss 'ch'
+13	39	agree	82	o	82	o	s2	s2
+13	40	GLOSS	4	f	4	s	s2 tall long-s gloss	s2 tall long s gloss
+14	1	SIGN	-		2			s1 lone 2; could join 6 as 26
+14	2	SIGN	26		6		s1	s1 no gloss
+14	3	agree	S35		S35		s1 tall long s + s	s1 tall long s + 5; no separate gloss seen
+14	4	agree	|		|		s1 thin stroke	s1
+14	5	agree	S31	p	S31	p	s1	s1 circle on a cross; gloss cross-like p/t
+14	6	agree	14	a	14	a	s1	s1
+14	7	SIGN	-		5	f		s1 gloss tall stroke (f/l), shared with next
+14	8	SIGN	54		4	s	s1 could be 5 + 4; strokes above are from line 13	s1 gloss tall long s
+14	9	GLOSS	16		16	e	s1	s1 gloss 3/e-like
+14	10	agree	S40	r	S40	r	s1	s1
+14	11	agree	82	o	82	o	s1	s1
+14	12	agree	15	n	15	n	s1	s1
+14	13	agree	S37	t	S37	t	s1	s1 to
+14	14	agree	|		|		s1	s1
+14	15	SIGN	S61		5	s	s1 5/3-like body with open loop on top reaching gloss level (loop may be a y gloss)	s1 gloss curly s/p
+14	16	SIGN	4	f	S36	f	s1 large crossed f gloss	s1 x over a long stem; gloss a heavy crossed f
+14	17	agree	12	a	12	a	s1	s1
+14	18	agree	60	i	60	i	s2	s2 centred right of tick
+14	19	agree	S34	r	S34	r	s2	s2 Ao
+14	20	GLOSS	16	c	16	e	s2	s2
+14	21	agree	|		|		s2	s2
+14	22	SIGN	S45	toute	S14	tous	s2 reversed-3 curl with a crossbar (euro-like); gloss word 'toute' spans it and the next c	s2 script E-like loop; gloss 'tous'/'toue'
+14	23	agree	|		|		s2	s2
+14	24	GLOSS	12	a	12	d	s2 gloss a with a stroke through it (d-like)	s2 gloss d sits between the 2 and the next 6
+14	25	GLOSS	64	z	64	f	s2	s2 gloss z-shaped f
+14	26	agree	15	u	15	u	s2 gloss u or n	s2
+14	27	agree	4	f	4	f	s2 tall long-s gloss	s2 gloss tall f
+14	28	agree	60	i	60	i	s2 gloss an ink dot	s2 gloss heavy dot/i
+14	29	agree	|		|		s2	s2
+14	30	GLOSS	S32	q	S32	g	s2 Y; large q-loop gloss	s2 V/Y shape; gloss a large G-like spiral
+14	31	agree	|		|		s2	s2
+14	32	agree	S35	so	S35	so	s2	s2 long s + s; gloss 'So'
+14	33	agree	|		|		s2 thin stroke	s2
+14	34	GLOSS	14	a	14	u	s2 gloss a or u	s2 gloss u
+14	35	SIGN	5	d	-		s2	
+14	36	SIGN	10	u	-		s2 1 is an ink blot	
+14	37	SIGN	2		102	d	s2	s2 the 1 is a blot; gloss d
+14	38	agree	60	i	60	i	s2	s2
+14	39	agree	4	f	4	f	s2	s2 gloss tall f crossing the 4
+14	40	GLOSS	16	c	16	e	s2	s2
+14	41	GLOSS	S40	r	S40	x	s2 gloss r or x	s2 n with looped leg; gloss x-like
+14	42	GLOSS	26	c	26	e	s2	s2
+14	43	SIGN	2		-		s2 faint z at paper edge	
+15	1	agree	X		X		s1 ink blot joined to a large wavy 2/hook stroke at line start (flourish or damaged sign, 	s1 large ink blot followed by an n/ʌ-shaped stroke (possibly S40 under a blot)
+15	2	SIGN	-		|			s1 long slanting stroke
+15	3	GLOSS	S35	so	S35	vos	s1	s1 long s + s; gloss 'vos' (partly above)
+15	4	agree	12	a	12	a	s1	s1
+15	5	agree	104	u	104	u	s1	s1
+15	6	agree	S34	r	S34	r	s1	s1 Ao
+15	7	GLOSS	16	c	16	e	s1 stroke over the 1	s1 heavy, partly blotted
+15	8	SIGN	S20	i	72	s	s1 R-like with cross-tail; gloss a dot/tick	s1 R/7-like joined to 2; gloss s-like
+15	9	agree	|		|		s1 thin stroke	s1
+15	10	GLOSS	62	c	62	e	s1	s1
+15	11	agree	15	n	15	n	s1	s1
+15	12	agree	S37	t	S37	t	s1	s1 to; gloss heavy t
+15	13	SIGN	-		2	u		s1 lone 2; gloss u
+15	14	SIGN	26	u	6		s1	s1 may join 2 as 26
+15	15	agree	S30	n	S30	n	s1 'na'	s1 ua shape
+15	16	agree	5	d	5	d	s1 on the tick, centre marginally left	s2 gloss d
+15	17	agree	7	u	7	u	s2 7 heavily inked	s2 heavy 7
+15	18	agree	|		|		s2	s2
+15	19	agree	9	c	9	c	s2	s2
+15	20	SIGN	82	o	8	o	s2	s2 read separately; could be 98
+15	21	SIGN	7	u	2	l	s2 gloss run 'u u m' over 7 6 1	s2 tall stroke above (gloss l, or descender from line 14)
+15	22	SIGN	6	um	76	uu	s2 could be 61 with the next 1	s2 gloss 'uuu' spans 76 and 16
+15	23	GLOSS	16	c	16	e	s2	s2
+15	24	agree	|		|		s2	s2
+15	25	GLOSS	60	z	60	f	s2	s2 gloss z-shaped f
+15	26	GLOSS	62	c	62	e	s2	s2
+15	27	agree	7	u	7	u	s2	s2
+15	28	SIGN	44		4	s	s2 hooked stroke above is from line 14	s2 gloss s/dot with stroke
+15	29	SIGN	10	u	4		s2	s2
+15	30	SIGN	2		102	u	s2	s2
+15	31	agree	5	?	5	?	s2 gloss position covered by an ink blot	s2 gloss blotted (L-shaped blot)
+15	32	agree	82	o	82	o	s2	s2
+15	33	agree	60	i	60	i	s2	s2
+15	34	agree	4	f	4	f	s2 tall long-s gloss	s2 gloss tall f crossing the 4
+15	35	SIGN	|		S75		s2 tall stroke joined to the 4 (H-like)	s2 bold capital H
+15	36	SIGN	S28	m	S49	m	s2	s2 m with descending tail, preceded by a curl; gloss m
+15	37	GLOSS	26	c	26	e	s2	s2 gloss over the 2/6
+15	38	agree	58	tt	58	tt	s2 first digit s-like	s2 gloss tt
+15	39	agree	16	o	16	o	s2	s2 gloss o over the 6
+16	1	SIGN	S53		-		s1 looped 3/8-like curl with tail running down-left, joined to the 7	
+16	2	SIGN	7		S74		s1 could form one sign with the preceding curl (cf S74)	s1 looped curl joined to a 4/7-like stroke; no gloss seen
+16	3	agree	S34	r	S34	r	s1	s1 Ao
+16	4	GLOSS	62	c	62	e	s1	s1 gloss c/e
+16	5	agree	S35		S35		s1 tall long s + s	s1 very tall long s + 5
+16	6	SIGN	10	u	-		s1	
+16	7	SIGN	2		102	u	s1	s1
+16	8	GLOSS	4	f	4	s	s1 tall long-s gloss	s1 tall long s rising through the 4 (gloss)
+16	9	agree	|		|		s1	s1
+16	10	GLOSS	5	r	5	x	s1 gloss r/x-like	s1 gloss x/r
+16	11	agree	14	a	14	a	s1	s1
+16	12	agree	S31	p	S31	p	s1	s1 circle on a cross
+16	13	agree	S34	r	S34	r	s1	s1 Ao
+16	14	agree	12	a	12	a	s1	s1
+16	15	agree	S37	t	S37	t	s1	s1 to
+16	16	agree	60	i	60	i	s1 0 lies on the tick	s1 centre left of tick
+16	17	agree	S32	q	S32	q	s2 y with hooked barred arms (as line 05)	s2 Y/7 with long crossbar; gloss q
+16	18	SIGN	10	u	-		s2	
+16	19	SIGN	2		102	u	s2	s2
+16	20	GLOSS	16	c	16	e	s2	s2
+16	21	agree	|		|		s2	s2
+16	22	agree	5	d	5	d	s2	s2
+16	23	agree	7	u	7	u	s2	s2
+16	24	agree	|		|		s2	s2
+16	25	agree	9	c	9	c	s2	s2
+16	26	agree	28	a	28	a	s2	s2 gloss a over the 2
+16	27	SIGN	-		S37	t		s2 partly cut; to-like
+16	28	SIGN	22	pr	X	rr	s2 first 2 blotted and 3-like; glosses p and r/k	s2 3/5-like curl with a dot, followed by a z; gloss heavy 'rr'; may be S64 plus 2
+16	29	agree	60	i	60	i	s2	s2
+16	30	agree	S38	t	S38	t	s2	s2 tc
+16	31	agree	12	a	12	a	s2	s2
+16	32	GLOSS	64	i	64	l	s2	s2
+16	33	agree	15	n	15	n	s2	s2
+16	34	GLOSS	16	c	16	e	s2	s2 gloss c/e
+16	35	agree	|		|		s2	s2
+16	36	SIGN	S27	l	X	f	s2	s2 large capital A fused with a crossed f (same shape as line 12 pos 4); gloss f/l
+16	37	agree	24	i	24	i	s2 gloss i over an ink dot; long filler stroke follows	s2 gloss i with a blot
+16	38	agree	X		X		s2 m-shaped mark with dot at right edge after the filler stroke (maybe S70/S49 or a catchw	s2 small m-like mark at the right edge above a ruled stroke; may be a catchword, not ciphe
+17	1	agree	104	u	104	u	s1 4 set apart from 10; a long horizontal stroke runs under 104 64 44 (underline or cancel	s1 a ruled horizontal stroke crosses the line from here to the tick
+17	2	SIGN	-		4			s1 no gloss
+17	3	GLOSS	64	z	64	f	s1	s1 gloss z-shaped f
+17	4	SIGN	-		4			s1
+17	5	SIGN	-		4	s		s1 cross with a long-s stroke rising (gloss s/f)
+17	6	SIGN	44	o	4		s1 gloss p/o-like over first 4	s1
+17	7	agree	9	c	9	c	s1	s1 gloss c
+17	8	GLOSS	16	c	16	e	s1	s1
+17	9	agree	S32	fait	S32	fait	s1 Y with looped left arm; gloss word 'fait'	s1 Y with looped top; gloss 'fait' (a flourished f)
+17	10	agree	14	a	14	a	s1	s1 gloss a
+17	11	GLOSS	16	c	16	t	s1	s1 gloss t (crossed)
+17	12	agree	12	a	12	a	s1	s1
+17	13	agree	15	n	15	n	s1	s1
+17	14	GLOSS	S37	t	S37		s1	s1 to with a heavy t; no gloss seen
+17	15	SIGN	X		4		s1 vertical stroke with two slanting crossbars (double-barred cross)	s1 cross over a long-s stroke that falls to the tick (possibly S36)
+17	16	agree	|		|		s2	s1 on the tick
+17	17	SIGN	S58		S46	f	s2 crossed long s with a 7/2-shaped tail	s2 crossed long s with a j/7-like tail; gloss tall f
+17	18	SIGN	X	faut	S14	fait	s2 c-hook joined to a z-shape with tail below; gloss word 'faut' over it and the 9	s2 script E-curl; gloss 'fait' plus c/d letters
+17	19	GLOSS	9		9	c	s2 gloss zone taken by 'faut'	s2
+17	20	GLOSS	16	c	16	e	s2	s2
+17	21	SIGN	-		S58	ll		s2 6 joined to a z/8 flourish (crossed long s + 2); gloss 'll'/'fl'
+17	22	SIGN	68	ll	102	u	s2	s2 the 0 is blotted
+17	23	SIGN	104	u	4		s2 0 blotted	s2
+17	24	SIGN	60	r	82	r	s2 gloss v/r-like	s2 gloss r
+17	25	agree	|		|		s2	s2
+17	26	agree	S32	q	S32	q	s2 y with hooked barred arms	s2 y with long crossbar; gloss q
+17	27	agree	7	u	7	u	s2	s2
+17	28	SIGN	-		2			s2
+17	29	SIGN	24	tt	4	h	s2 gloss H-like (tt)	s2 gloss H-like
+17	30	agree	5		5		s2 faint, tick after	s2 small s-shaped 5
+17	31	agree	|		|		s2	s2
+17	32	SIGN	X	t	-		s2 TRUNCATED: large C-shape with T-like top; line slopes below crop bottom from here on	
+17	33	SIGN	12	a	-		s2 TRUNCATED: only tops visible	
+17	34	SIGN	10	u	-		s2 TRUNCATED	
+17	35	SIGN	2		-		s2 TRUNCATED	
+17	36	SIGN	S37	t	-		s2 TRUNCATED	
+17	37	SIGN	X	o	-		s2 TRUNCATED: 8/delta-like loop, maybe 82 or S31	
+17	38	SIGN	X	u	S16	t	s2 TRUNCATED: only the gloss u visible, code below crop edge; line-end dash follows	s2 heavy long s with a curl, gloss t; the cipher row then drops below the crop bottom (tok
+18	1	GLOSS	16	e	16	c	s1; x780; two-stroke gloss mark read as e (could be c)	s1 small c/s-like gloss above the 6
+18	2	agree	7	u	7	u	s1; x855	s1
+18	3	SIGN	|		-		s1; x890; thin diagonal stroke x890	
+18	4	SIGN	S34	f	S37	f	s1; x930; A joined to o	s1 crossed t joined to o; F-like mark above read as gloss
+18	5	SIGN	S28	m	S49	m	s1; x985; thin c-hook then m with tilde	s1 m with lead-in stroke
+18	6	agree	12	a	12	a	s1; x1030	s1
+18	7	GLOSS	16	e	16	c	s1; x1195; two-stroke gloss mark read as e (could be c)	s1
+18	8	SIGN	S21		S59		s1; x1265; x1260 f-like, tall curved top, crossbar	s1 tall looped l crossed low; could be a tall 4
+18	9	GLOSS	9	?	9	c	s1; x1330; mark above mixed with descender from line above	s1 small hook above, near a descender from line above
+18	10	agree	S33		S33		s1; x1395; x1370-1420 long-s leg with crossbar and second leg, dot after	s1 pi-shape with tall left leg, crossbar and dot after (could be S10)
+18	11	agree	64	z	64	z	s1; x1480; gloss 3/z-shaped	s1 gloss 3/z-like
+18	12	GLOSS	S44	t	S44		s1; x1580; loop on crossed stem with foot	s1 crossed t-top over a closed loop on a stem with base bar; t-top may be a gloss
+18	13	agree	S38	t	S38	t	s1; x1630	s1
+18	14	SIGN	-		11			s1 two minims, second taller (il)
+18	15	SIGN	X	quil	S79		s1; x1760; x1730-1790 cursive cluster like 'ily'	s1 y
+18	16	agree	X		X		s1; x1855; x1830-1885 long heavy descender with flat hooked flourish at top	s1 tall descending stroke with flat hook to the right at top
+18	17	SIGN	X	cy	5		s1; x1912; x1900-1925 small s-shaped curl with descending tail	s1 lone s-shaped 5 (could be S53), under the letters cy
+18	18	GLOSS	S29	gm	S29		s2; x2010; x1965-2060 run of minims	s2 minims (auu-like)
+18	19	GLOSS	6	e	6	c	s2; x2095; two-stroke gloss mark read as e (could be c)	s2
+18	20	agree	60	t	60	t	s2; x2165	s2 0 has a short descender; gloss t or l
+18	21	GLOSS	68	ll	68	lk	s2; x2255	s2 8 has a crossed descender (could be S63)
+18	22	agree	2	u	2	u	s2; x2330	s2 lone z
+18	23	agree	6		6		s2; x2385; x2385 faint stroke above, not read as gloss	s2
+18	24	agree	10	u	10	u	s2; x2440	s2
+18	25	agree	4		4		s2; x2515	s2
+18	26	agree	S34	r	S34	r	s2; x2585; gloss r- or z-like	s2 Ao
+18	27	agree	|		|		s2; x2640	s2
+18	28	agree	62	?	62	?	s2; x2700; gloss mark merged with descender from line above	s2 hook above 6 joined to a descender from line above
+18	29	agree	7	u	7	u	s2; x2780	s2
+18	30	SIGN	4	o	-		s2; x2860	
+18	31	GLOSS	4		4	o	s2; x2920	s2
+18	32	SIGN	8	f	-		s2; x2960; gloss l/f-like with crossbar	
+18	33	SIGN	8		48	l	s2; x3005; P-shaped 8	s2 split of 4 4 8 8 2 into codes uncertain
+18	34	SIGN	2	?	82	c	s2; x3070; two blobs above, possibly descender of line above	s2
+18	35	agree	15	u	15	u	s2; x3140	s2 5 written as long-s shape
+18	36	agree	S37	t	S37	t	s2; x3220	s2
+18	37	SIGN	-		1	e		s2 gloss e with bar
+18	38	SIGN	16	e	6		s2; x3300; two-stroke gloss mark read as e (could be c)	s2 crossed by a thin slash
+18	39	agree	|		|		s2; x3340; thin slash through/after the 6 at x3330	s2 thin slash
+18	40	SIGN	52	d	12	d	s2; x3400; s-shaped 5 then z	s2 gloss d-like, larger
+18	41	GLOSS	6	e	6	c	s2; x3490; two-stroke gloss mark read as e (could be c)	s2 large 6 with tall thin stroke; c-like mark above
+18	42	SIGN	-		|			s2 thin tall stroke after the 6
+19	1	agree	S27	s	S27	s	s1; x785; gloss long s	s1 gloss long-s shape
+19	2	agree	14	a	14	a	s1; x860	s1
+19	3	agree	S37	t	S37	t	s1; x975; faint to	s1
+19	4	SIGN	2	a	-		s1; x1040	
+19	5	SIGN	8		28	a	s1; x1085	s1 8 could open the next code
+19	6	agree	15	n	15	n	s1; x1165	s1
+19	7	agree	S38	t	S38	t	s1; x1255	s1
+19	8	agree	16	e	16	e	s1; x1365; two-stroke gloss mark read as e (could be c)	s1
+19	9	agree	S34	r	S34	r	s1; x1455; tilde over A plus r-like gloss	s1
+19	10	GLOSS	S32	t	S32		s1; x1545; bold y/gamma with long descender	s1 y-like with hook and long descender
+19	11	GLOSS	5	que	5		s1; x1590; gloss 'que' spans over 5 and next sign	s1 lone s-shaped 5
+19	12	SIGN	S44		S62	que	s1; x1645; loop on stem with crossbar, long tilde flourish on top	s1 delta/d-like with long flourish over it; gloss que may belong to the 5
+19	13	agree	X	n	X	n	s1; x1740; x1705-1780 'ua': two minims then closed a-shape	s1 u joined to a (ua ligature), not in atlas
+19	14	agree	12	a	12	a	s1; x1830	s1
+19	15	GLOSS	60	l	60	t	s1; x1925; s1/s2 boundary near 1950	s2 gloss t or l
+19	16	agree	14	a	14	a	s2; x2015	s2
+19	17	agree	S29	on	S29	on	s2; x2135; four minims	s2
+19	18	SIGN	2	a	-		s2; x2230	
+19	19	SIGN	8		28	a	s2; x2275	s2
+19	20	GLOSS	64	n	64	h	s2; x2355; gloss n-like with ascender	s2
+19	21	agree	S21		S21		s2; x2440; tall f with crossbar	s2 f with crossbar and descending tail
+19	22	SIGN	|		-		s2; x2500; thin slash	
+19	23	SIGN	2		12		s2; x2530	s2 preceded by a dot
+19	24	GLOSS	6	e	6	c	s2; x2585; two-stroke gloss mark	s2
+19	25	agree	S35		S35		s2; x2645; long s + small s(5-shape)	s2 long s followed by s, long s rises high
+19	26	agree	S37	t	S37	t	s2; x2735	s2
+19	27	GLOSS	16	e	16	c	s2; x2820; two-stroke gloss mark	s2
+19	28	SIGN	X	et	S38	et	s2; x2925; c-hook joined to crossed t with long stem (ct order, reverse of S38)	s2
+19	29	GLOSS	5	?	5		s2; x3020; faint s-shaped 5	s2 lone s-shaped 5
+19	30	GLOSS	S28	m	S28	en	s2; x3095	s2 gloss 3n/en-like
+19	31	SIGN	2		12	m	s2; x3190	s2
+19	32	GLOSS	6	e	6	c	s2; x3240; faint 6	s2
+19	33	agree	60	l	60	l	s2; x3305	s2
+19	34	agree	68	ll	68	ll	s2; x3380	s2
+19	35	GLOSS	16	e	16	c	s2; x3475; two-stroke gloss mark	s2
+20	1	GLOSS	7		7	u	s1; x765	s1
+20	2	agree	S34	r	S34	r	s1; x825; small r-like mark above A	s1
+20	3	GLOSS	62	e	62	c	s1; x945; two-stroke gloss mark	s1
+20	4	GLOSS	16	e	16		s1; x1060; two-stroke gloss mark	s1
+20	5	SIGN	S21		S59		s1; x1130; tall stroke through a crossbar joined to preceding 6 (same shape as line18 x126	s1 tall looped stroke crossed low, same shape as line 18; could be a tall 4
+20	6	agree	S44	p	S44	p	s1; x1215; loop on stem with foot	s1 crossed top over closed loop on long stem
+20	7	GLOSS	62	e	62	c	s1; x1290; two-stroke gloss mark	s1
+20	8	GLOSS	S33	r	S33		s1; x1385; loop top, two legs	s1
+20	9	agree	14	a	14	a	s1; x1470	s1
+20	10	agree	15	n	15	n	s1; x1570	s1
+20	11	GLOSS	9	e	9	c	s1; x1645; blob+hairline gloss mark	s1
+20	12	GLOSS	26	e	26	c	s1; x1750; two-stroke gloss mark centred between 2 and 6	s1 6 may be its own code
+20	13	SIGN	X		S63		s1; x1865; circle on a descending stem, long crossbar through the circle top, 2-shaped hoo	s1 q-like with crossbar joined from the 6, stem descending
+20	14	agree	7	u	7	u	s1; x1945	s2
+20	15	GLOSS	16	e	16	c	s2; x2025; two-stroke gloss mark	s2
+20	16	agree	68	ll	68	ll	s2; x2120	s2
+20	17	GLOSS	26	e	26	c	s2; x2240; two-stroke gloss mark between 2 and 6	s2
+20	18	GLOSS	S33		S33	u	s2; x2345; pi-like: crossbar with two legs, R/p-like loop on top, dot after	s2 tall-legged pi shape with dot after; mark above read as gloss
+20	19	GLOSS	16	e	16	u	s2; x2430	s2
+20	20	SIGN	10	u	-		s2; x2485	
+20	21	SIGN	4		104	u	s2; x2545; faint vertical crease just right of it	s2
+20	22	agree	S21		S21		s2; x2650; tall f with crossbar	s2 tall f with crossbar
+20	23	GLOSS	9	e	9	c	s2; x2690	s2
+20	24	GLOSS	60	?	60	c	s2; x2770; gloss t/r-like blob	s2
+20	25	GLOSS	S34	r	S34	e	s2; x2850; z/r-like gloss	s2
+20	26	agree	14	a	14	a	s2; x2955	s2
+20	27	agree	58	d	58	d	s2; x3060	s2
+20	28	agree	2	o	2	o	s2; x3140; gloss o/e-like	s2
+20	29	agree	15	n	15	n	s2; x3220	s2
+20	30	GLOSS	S37		S37	t	s2; x3300; tall t	s2
+20	31	SIGN	-		S47			s2 tall crossed ascender joined to o, written higher; z below it
+20	32	SIGN	22	bo	2		s2; x3410; two faint grey 2s under a bold bo/to-like mark read as gloss (same combination 	s2 z under the preceding sign
+21	1	GLOSS	9		9	c	s1; x765	s1
+21	2	SIGN	2	?	-		s1; x815; small blob above, may be stroke of line 20	
+21	3	SIGN	6		26	u	s1; x870; ascender stroke from line above crosses it	s1 2 and 6 may be separate codes
+21	4	agree	S35		S35		s1; x935; long s with top hook then small s/8-shape	s1 long s followed by small s
+21	5	SIGN	4	t	S13	t	s1; x1015; cross-shaped with short tail	s1 plain cross, no tail
+21	6	GLOSS	26	e	26	c	s1; x1090; two-stroke gloss mark	s1
+21	7	GLOSS	17		17	th	s1; x1210; heavy mark above is foot of line 20 sign	s1 large th-like gloss, may be interference from line above
+21	8	GLOSS	16	e	16	c	s1; x1285	s1
+21	9	agree	7	u	7	u	s1; x1355	s1
+21	10	GLOSS	S76		S76	r	s1; x1415; A with long crossbar and hooked apex	s1 A with bar, no o after; left stroke joins the 7
+21	11	GLOSS	62	e	62	c	s1; x1510	s1
+21	12	agree	60	t	60	t	s1; x1610	s1
+21	13	GLOSS	62	e	62	c	s1; x1720	s1
+21	14	GLOSS	S52	m	S52		s1; x1820; heavily inked lattice, several strokes each way	s1 lattice; a descender from the line above runs through it
+21	15	SIGN	|		-		s1; x1900; thin diagonal stroke, could be a thin 1	
+21	16	SIGN	8	le	S35	?	s1; x1935; gloss tall l plus e-mark	s1 long s followed by 8-like s; 3-like mark above
+21	17	agree	9	t	9	t	s2; x2000	s2
+21	18	agree	7	u	7	u	s2; x2060	s2
+21	19	SIGN	6	t	-		s2; x2150; gloss t touches the 6	
+21	20	SIGN	4		64	t	s2; x2220	s2
+21	21	agree	S21		S21		s2; x2285; tall long-s with crossbar	s2 tall f with crossbar
+21	22	agree	5	d	5	d	s2; x2350	s2 small s-shaped 5, d-like gloss above
+21	23	agree	60	t	60	t	s2; x2420	s2
+21	24	GLOSS	S33	e	S33	u	s2; x2510; pi-like with loop top, e-mark at right above	s2
+21	25	agree	16		16		s2; x2600	s2 preceded by a dot
+21	26	agree	|		|		s2; x2650	s2
+21	27	agree	12	a	12	a	s2; x2695	s2
+21	28	agree	10	u	10	u	s2; x2800	s2
+21	29	agree	2		2		s2; x2865	s2 lone z; may belong to 10 as 102
+21	30	SIGN	4	to	S13	tu	s2; x2925; cross-shaped	s2 cross joined to the following Ao; gloss tu over both
+21	31	agree	S34		S34		s2; x2985	s2
+21	32	SIGN	2	e	-		s2; x3075; blob and dash above	
+21	33	SIGN	6		26	c	s2; x3130; faint	s2
+21	34	GLOSS	9	e	9	c	s2; x3195	s2
+21	35	GLOSS	17	s	17	h	s2; x3250; gloss S/5-like	s2 gloss H-like
+21	36	agree	4	o	4	o	s2; x3335	s2
+21	37	GLOSS	4	s	4	f	s2; x3405; tall long-s above read as gloss	s2 4 with a tall long-s stroke over it; stroke read as gloss f (could be S59-type sign)
+21	38	agree	S23		S23		s2; x3470; small x with tail	s2 x with a descending right leg (could be S36)
+22	1	SIGN	-		2	?		s1 mark high above, unclear
+22	2	SIGN	26		6		s1; x790; 2 and 6 close	s1
+22	3	agree	|		|		s1; x830; slash through the 6	s1 slash through the 6
+22	4	agree	X	n	X	n	s1; x895; 'ua' minim cluster: two minims then closed a-shape (as line 19 x1740)	s1 u joined to a (ua ligature), as on line 19
+22	5	GLOSS	16	e	16	a	s1; x995; gloss a/e-like mark with dots	s1
+22	6	agree	S21		S21		s1; x1090; tall f with crossbar, thin lead-in stroke from left	s1 tall f with crossbar
+22	7	agree	S37	t	S37	t	s1; x1150	s1
+22	8	agree	14	a	14	a	s1; x1230	s1
+22	9	agree	15	n	15	n	s1; x1335	s1
+22	10	agree	S37	t	S37	t	s1; x1415	s1
+22	11	agree	|		|		s1; x1460	s1 slash after the o
+22	12	agree	16	u	16	u	s1; x1510; gloss u-like bowl (or e-mark)	s1
+22	13	agree	15	n	15	n	s1; x1590	s1
+22	14	GLOSS	9	e	9	c	s1; x1660; c-shaped gloss mark	s1
+22	15	agree	4	o	4	o	s1; x1725	s1 dot after
+22	16	agree	4		4		s1; x1780	s1
+22	17	agree	S34		S34		s1; x1855; heavily inked A with hooked apex joined to small o	s1 Ao with heavy top (could be S69)
+22	18	SIGN	2	d	-		s1; x1935; gloss d-like	
+22	19	SIGN	6		26	d	s2; x1995	s2 z straddles the ticks
+22	20	GLOSS	S23	e	S23		s2; x2060; x with tail	s2 x with descending right leg (could be S36)
+22	21	GLOSS	S33		S33	u	s2; x2165; pi-like with R/p-like loop top and dot after	s2
+22	22	GLOSS	26	e	26	c	s2; x2275; two-stroke gloss mark over the 2	s2 preceded by a dot
+22	23	agree	S37	t	S37	t	s2; x2345	s2
+22	24	SIGN	8	o	-		s2; x2400	
+22	25	SIGN	2		82	o	s2; x2475	s2
+22	26	agree	10	u	10	u	s2; x2545	s2
+22	27	agree	4	z	4	z	s2; x2650; gloss z/3-like	s2 3/z-like gloss
+22	28	SIGN	S69		S34		s2; x2715; A followed by hooked v	s2
+22	29	agree	X	n	X	n	s2; x2790; 'na' minim cluster with closed a (as x895)	s2 u joined to a (ua ligature)
+22	30	GLOSS	62	e	62	c	s2; x2875	s2
+22	31	agree	|		|		s2; x2920	s2
+22	32	SIGN	52	d	5	d	s2; x2990; 5 and 2 spaced apart, d-like gloss between them	s2 s-shaped 5, d-like gloss
+22	33	SIGN	6	e	26	u	s2; x3115	s2
+22	34	agree	S46		S46		s2; x3180; h-like: crossed stem with second leg hooked (tJ)	s2 crossed t with j tail
+22	35	agree	S27	f	S27	f	s2; x3265; gloss l-like with crossbar	s2 gloss long-s/f
+22	36	GLOSS	64	f	64	t	s2; x3350; gloss l-like with crossbar	s2
+22	37	agree	10	u	10	u	s2; x3425	s2
+22	38	agree	2		2		s2; x3490	s2 may belong to 10 as 102
+23	1	agree	60	t	60	t	s1; x785; gloss t/f-like cross with loop	s1 gloss t/f-like
+23	2	SIGN	8	o	-		s1; x860	
+23	3	SIGN	2		82	o	s1; x920	s1 2 may be its own code
+23	4	SIGN	X		S32		s1; x990; Y-shaped stem with a large closed loop (9/e-like) sitting above it	s1 large Y; a closed loop above its left arm (could be a gloss g)
+23	5	agree	24	t	24	t	s1; x1090; gloss t-like cross between 2 and 4	s1
+23	6	agree	14	a	14	a	s1; x1200	s1
+23	7	agree	7	v	7	v	s1; x1290; small v/y gloss	s1 gloss v or y
+23	8	agree	S64		S64		s1; x1350; 3/z-shape with descender (yogh-like)	s1 3-shape (looped z); could be digit 2 or 3 closing a code 72/73
+23	9	SIGN	2	e	-		s1; x1450; dot before it at x1420	
+23	10	SIGN	6		26	c	s1; x1520	s1
+23	11	agree	15	n	15	n	s1; x1575	s1
+23	12	agree	7	u	7	u	s1; x1640	s1
+23	13	GLOSS	4	o	4	p	s1; x1720; loop gloss touches the stem	s1 gloss p/o
+23	14	agree	4		4		s1; x1770	s1
+23	15	agree	16		16		s1; x1840	s1
+23	16	SIGN	S74		S63		s1; x1935; 4 with a c/9-curl on top-left	s1 c/q-like loop on a long crossbar with descending stem (could be S31)
+23	17	agree	60	t	60	t	s2; x2065	s2
+23	18	SIGN	2	e	-		s2; x2165	
+23	19	SIGN	6		26	c	s2; x2230	s2
+23	20	agree	10	u	10	u	s2; x2300	s2
+23	21	agree	2		2		s2; x2350	s2 may belong to 10 as 102
+23	22	agree	62	u	62	u	s2; x2420; gloss u with breve	s2
+23	23	GLOSS	S34	s	S34	?	s2; x2520; heavy A joined to o	s2 two-letter gloss above, ks-like
+23	24	agree	4		4		s2; x2590; cross with tail	s2 cross joined to the o (could be S13)
+23	25	agree	5	f	5	f	s2; x2660; gloss f/long-s crossed	s2
+23	26	agree	10	u	10	u	s2; x2720	s2
+23	27	agree	2		2		s2; x2780	s2
+23	28	SIGN	6	i	-		s2; x2830; gloss dotted i-stroke	
+23	29	SIGN	4		64	i	s2; x2880	s2
+23	30	agree	22	po	22	po	s2; x2990; first 2 written as a c-curl	s2 first z crossed
+23	31	GLOSS	12	a	12	z	s2; x3080; a ?-like hook with a dot stands above/before at x3055-3095, not read as gloss	s2 large dotted 3/z above; placement uncertain
+23	32	GLOSS	5	d	5	a	s2; x3140	s2
+23	33	agree	10	u	10	u	s2; x3190	s2 a d-like mark also above the 1
+23	34	agree	2		2		s2; x3235	s2
+23	35	GLOSS	60	i	60	t	s2; x3315; gloss short stroke	s2
+23	36	SIGN	4	s	S21		s2; x3390; cross with tail under a tall long-s gloss	s2 tall long-s stroke over a cross
+23	37	GLOSS	16	e	16	i	s2; x3450	s2
+23	38	SIGN	S69		S76	c	s2; x3520; large A with long crossbar ending in a hook	s2 A with bar; could be S69
+24	1	agree	S04		S04		s1; x765; hash, two strokes each way	s1 hash; mark far above probably from line 23
+24	2	GLOSS	S33	f	S33	z	s1; x850; pi-like with R-loop top	s1 z-like mark on top may be part of the sign
+24	3	GLOSS	26	e	26	c	s1; x945	s1
+24	4	agree	S21		S21		s1; x1025; tall long-s through a cross	s1 tall f with crossbar
+24	5	SIGN	8	o	-		s1; x1080	
+24	6	SIGN	2		82	o	s1; x1130	s1
+24	7	agree	10	u	10	u	s1; x1200	s1
+24	8	agree	2		2		s1; x1260	s1 may belong to 10 as 102
+24	9	GLOSS	5	f	5	l	s1; x1310; gloss l with crossbar	s1
+24	10	agree	5	d	5	d	s1; x1350; thin s	s1
+24	11	GLOSS	S34	x	S34	r	s1; x1395; A with gloss x/r above, joined to o	s1
+24	12	GLOSS	16	e	16	c	s1; x1480	s1
+24	13	agree	|		|		s1; x1520	s1
+24	14	agree	62	z	62	z	s1; x1575; gloss z/3 with bar	s1 3-like gloss
+24	15	agree	15	n	15	n	s1; x1665	s1
+24	16	agree	S21		S21		s1; x1725; tall long-s through a cross	s1 tall f with crossbar
+24	17	SIGN	2	e	-		s1; x1790	
+24	18	SIGN	6		26	c	s1; x1850	s1
+24	19	agree	S29	m	S29	m	s1; x1905; minims 'uu' after the 6	s1 minims
+24	20	agree	S64	b	S64	b	s2; x1975; z/3 with descender	s2 3-shape with descending loop; straddles the ticks
+24	21	agree	5	l	5	l	s2; x2030	s2
+24	22	GLOSS	16	e	16	c	s2; x2080	s2
+24	23	agree	X		X		s2; x2170; heavy filled diagonal leaf-shaped stroke, possibly an ink blot or a heavy divid	s2 heavy slanted ink blot or blotted sign
+24	24	agree	5	d	5	d	s2; x2230; gloss 9/d-like, large	s2
+24	25	GLOSS	26	e	26	c	s2; x2300	s2
+24	26	agree	S21		S21		s2; x2400; tall long-s through a cross	s2 tall f with crossbar
+24	27	agree	S29	m	S29	m	s2; x2470	s2 minims with lead-in stroke
+24	28	SIGN	4	o	S54		s2; x2560; loop on the upright	s2 closed loop on a stem (could be an 8)
+24	29	agree	4		4		s2; x2620	s2
+24	30	GLOSS	7	v	7	y	s2; x2680; gloss heavy v/y	s2 7 with crossbar
+24	31	SIGN	S64		2		s2; x2730; z/3 with descender	s2 low flat z
+24	32	GLOSS	16	e	16	i	s2; x2785	s2
+24	33	agree	15	n	15	n	s2; x2845	s2 a large s/5-like mark also stands above it
+24	34	GLOSS	4	s	4		s2; x2935; gloss 5/s-shaped	s2 cross (could be S13)
+24	35	agree	|		|		s2; x2965	s2
+24	36	SIGN	X		S32		s2; x3010; Y-shaped stem with a large 9/e-loop above and an arching flourish over it (same	s2 Y with closed loop on top of the left arm
+24	37	SIGN	X	f	S23	f	s2; x3090; hook-headed stem with two thin crossbars (crossed-pound shape)	s2 x with tail
+24	38	agree	12	a	12	a	s2; x3160	s2
+24	39	agree	7	u	7	u	s2; x3250	s2
+24	40	agree	5	d	5	d	s2; x3310; large long-s-like 5 with descender	s2
+24	41	GLOSS	S34	x	S34	r	s2; x3380; A joined to a small c/o	s2
+24	42	agree	14	a	14	a	s2; x3450	s2
+25	1	agree	S37	t	S37	t	s1; x765	s1
+25	2	agree	26	a	26	a	s1; x850; gloss a-like with tail	s1 gloss a or u
+25	3	agree	15	n	15	n	s1; x950	s1
+25	4	GLOSS	60	l	60	t	s1; x1040; gloss tall stroke	s1
+25	5	agree	S34	r	S34	r	s1; x1130	s1
+25	6	agree	22	po	22	po	s1; x1255; first 2 as a c-curl	s1
+25	7	GLOSS	5	f	5	d	s1; x1360; gloss long f at x1395 between 5 and 2	s1 gloss d/?-like
+25	8	SIGN	2	e	-		s1; x1430	
+25	9	SIGN	68	o	26	lc	s1; x1500; 8 carries a heavy loop on top	s1 two gloss marks, l then c
+25	10	SIGN	7		X		s1; x1580; bar crosses the preceding 8	s1 looped B/8-like head on a long crossbar with a descending 7-like tail
+25	11	GLOSS	16	e	16	c	s1; x1640	s1
+25	12	SIGN	S39		S16		s1; x1715; small closed loop joined to a long-s descender	s1 tall long-s with loop at top right
+25	13	SIGN	14		10	u	s1; x1780	s1
+25	14	agree	2		2		s1; x1840	s1
+25	15	agree	S37	t	S37	t	s1; x1895	s1 straddles the ticks, centre left
+25	16	GLOSS	62	e	62	c	s2; x1995	s2
+25	17	GLOSS	S34	x	S34	r	s2; x2100; gloss small x/k	s2
+25	18	agree	S28	m	S28	m	s2; x2190; c-hook joined to m	s2
+25	19	SIGN	8	a	28	a	s2; x2290; short dash before the 8	s2 small z before the 8
+25	20	GLOSS	62	e	62		s2; x2375	s2
+25	21	SIGN	S74		S63		s2; x2500; 4 with a c-curl on top (as line 23 x1935)	s2 c/q loop on long crossbar with stem; loop may be a gloss cy
+25	22	GLOSS	60	i	60	t	s2; x2630	s2
+25	23	agree	S21		S21		s2; x2730; f with crossbar	s2 tall f with crossbar
+25	24	SIGN	5	?	X		s2; x2810; bold p-with-box mark (pB) written above and joined by a stem to the 5, read as 	s2 same sign as s1: looped B/8-like head on crossbar, 5/3-like tail below
+25	25	agree	64	f	64	f	s2; x2910; bold F-like gloss (as line 22 x3350)	s2 bold F-like gloss
+25	26	GLOSS	26	e	26	c	s2; x3040; line drops here	s2
+25	27	agree	15	n	15	n	s2; x3140	s2
+25	28	SIGN	|		-		s2; x3205; long thin slash	
+25	29	SIGN	5	bo	S35	o	s2; x3240; bold bo gloss	s2 heavy descender from line above lands on it
+25	30	GLOSS	9		9	z	s2; x3310; ?-like hook stands above-left, not read as gloss	s2 3-like gloss
+25	31	SIGN	4	po	-		s2; x3390; bold po gloss	
+25	32	SIGN	4		44	po	s2; x3450	s2
+26	1	SIGN	X	uu	-		s1; x765; bold closed D/U-like loop with a dot inside and a heavy left stem	
+26	2	SIGN	2	e	-		s1; x810	
+26	3	SIGN	6	?	-		s1; x860; gloss 8/&-like	
+26	4	GLOSS	X		X	uu	s1; x920; n-like squiggle with an open right loop and a dot after (cf S40)	s1 V/U-shape with a small loop inside, like a shield or U with inner o
+26	5	SIGN	|		26	c	s1; x1000; long thin curved stroke before the 5	s1
+26	6	SIGN	5	bo	S40		s1; x1030; bold bo gloss	s1 n-shape with right leg curling (reversed omega); dot after
+26	7	SIGN	2	r	S35		s1; x1110	s1 long s then small s
+26	8	SIGN	8	a	28	a	s1; x1175	s1
+26	9	agree	S27		S27		s1; x1250; double long s with crossbar	s1 doubled tall long s with crossbar
+26	10	agree	4		4		s1; x1290	s1
+26	11	GLOSS	16	u	16	c	s1; x1340	s1
+26	12	agree	10	u	10	u	s1; x1440	s1
+26	13	agree	4		4		s1; x1500	s1
+26	14	GLOSS	S34	u	S34	r	s1; x1580; gloss u/y	s1 gloss r/k-like
+26	15	SIGN	2	i	-		s1; x1640	
+26	16	SIGN	6		26	c	s1; x1710	s1
+26	17	agree	S33		S33		s1; x1770; R-like: loop on top, two legs	s1 pi-shape with looped top
+26	18	SIGN	X		S32	c	s1; x1880; Y-shaped stem with a large 9/e-loop above and a flourish (as line 24 x3010)	s1 Y with closed loop over left arm (loop read as gloss c?)
+26	19	SIGN	S53		S35	z	s2; x1970; 3-curl with a descending tail	s2 long s then s; 3-like gloss; straddles the ticks
+26	20	SIGN	66		X		s2; x2060; two 6 with closed heads, could be S15-like signs	s2 two ligatured 6-like looped signs (66 or two S03 curls)
+26	21	agree	S52	m	S52	m	s2; x2180; lattice, 3 across 3	s2 lattice, three strokes across three; m-like mark above
+26	22	GLOSS	4	f	4		s2; x2280; heavy cross with tail	s2 cross (could be S13)
+26	23	agree	60	i	60	i	s2; x2355	s2
+26	24	SIGN	X	f	S23	f	s2; x2450; upright crossed by two horizontal bars (double cross), tail below	s2 x with double crossbar and tail
+26	25	agree	16	i	16	i	s2; x2560	s2
+26	26	GLOSS	S34	x	S34	r	s2; x2640	s2
+26	27	agree	14	a	14	a	s2; x2720	s2
+26	28	SIGN	S79	q	-		s2; x2820; y with heavy stroke	
+26	29	SIGN	|		S32	g	s2; x2880; long thin curved stroke before the 5	s2 Y; gloss g/q
+26	30	SIGN	5	bo	S35	bo	s2; x2930; bold bo gloss	s2 long s then 5-like s
+26	31	GLOSS	15	n	15	z	s2; x3020; gloss ?n (3-hook and n)	s2
+26	32	GLOSS	16	u	16	n	s2; x3090	s2
+26	33	GLOSS	X	n	X	u	s2; x3170; 'na' minim cluster with closed a (as line 22 x895)	s2 u joined to a (ua ligature), as on lines 19 and 22
+26	34	SIGN	S21		-		s2; x3260; tall long-s through a cross	
+26	35	SIGN	8	s	-		s2; x3310	
+26	36	SIGN	2		S36		s2; x3370	s2 x with a tall crossed stroke rising above (dagger over x)
+26	37	SIGN	6	i	82	o	s2; x3410	s2
+26	38	SIGN	4		64	i	s2; x3460	s2
+27	1	agree	6		6		s1; x685; first token, at the ruling	s1
+27	2	agree	2		2		s1; x750; 2 with an extra short bar above it (double stroke)	s1 double-barred z (=), read as 2
+27	3	SIGN	S67		S20		s1; x820; 3-shape joined to a looped 2/a-like stroke	s1 looped R-like with tail, a 3/z joined at left
+27	4	agree	14	a	14	a	s1; x915	s1
+27	5	agree	5	d	5	d	s1; x975	s1
+27	6	agree	10	u	10	u	s1; x1045	s1
+27	7	agree	2		2		s1; x1100	s1 may belong to 10 as 102
+27	8	GLOSS	16	?	16	co	s1; x1180; curly gloss (e/w-like) above	s1
+27	9	agree	S34		S34		s1; x1270	s1 underlined by a bar (line-below stroke?)
+27	10	GLOSS	X	x	X		s1; x1350; upright crossed by two bars with hooked top (as line 26 x2450)	s1 crossed-out/overwritten cluster (7 or F over 6, with 7 after); crossed-out code
+27	11	SIGN	6		-		s1; x1400; 6 joined to the following 7 by its bar	
+27	12	SIGN	7		-		s1; x1435	
+27	13	SIGN	5		S64		s1; x1490; flat-topped 3-like 5	s1 3/z-shape
+27	14	GLOSS	S04	e	S04		s1; x1560; hash with a dot before it	s1 hash, dot before
+27	15	SIGN	X		S32	q	s1; x1690; Y-shaped stem with a 9-loop above and a flourish over (as line 24 x3010)	s1 Y; gloss q/g, bar above
+27	16	agree	5	d	5	d	s1; x1750	s1
+27	17	SIGN	2	e	-		s1; x1810	
+27	18	SIGN	6		26	c	s1; x1860	s1
+27	19	GLOSS	5	d	5		s1; x1925; s1	s1 s-shaped 5 joined to next 1
+27	20	GLOSS	16		16	c	s2; x1965; s2	s2 straddles the ticks
+27	21	agree	9	c	9	c	s2; x2045; 9 with long tail	s2
+27	22	SIGN	2	a	-		s2; x2100	
+27	23	SIGN	8		28	a	s2; x2160	s2
+27	24	GLOSS	S52	ac	S52	a	s2; x2250; lattice 3 across 3	s2 lattice three by three; gloss ac above
+27	25	SIGN	4	s	S13		s2; x2360; plain cross with tail	s2 cross, tail left
+27	26	GLOSS	16	u	16		s2; x2455	s2 tall long-s stroke rising above (from sign after)
+27	27	SIGN	|		-		s2; x2515; heavy long s-like stroke	
+27	28	SIGN	5		S27	a	s2; x2560	s2 very tall long s descending, joined to s
+27	29	SIGN	S31	p	X	p	s2; x2595; circle standing on a cross	s2 circle standing on a cross (like S31 but taller)
+27	30	agree	12	a	12	a	s2; x2640	s2
+27	31	GLOSS	S34	x	S34	r	s2; x2730; A joined to o	s2
+27	32	SIGN	-		S63	g		s2 q/g-like with long looping descender
+27	33	agree	15	n	15	n	s2; x2860	s2
+27	34	SIGN	6	a	-		s2; x2950	
+27	35	SIGN	2		62	a	s2; x2990; dot below-left	s2
+27	36	agree	S33	ra	S33	ra	s2; x3080; R-like with long legs	s2 tall looped pi with long tail
+27	37	SIGN	1		-		s2; x3125; single 1 with dot above	
+27	38	SIGN	4		14		s2; x3180	s2 dot above
+27	39	SIGN	X	x	S76	r	s2; x3250; L-like stroke joined to plain A (cf S76, S24)	s2 A preceded by L stroke (LA)
+27	40	agree	60	i	60	i	s2; x3315	s2
+27	41	SIGN	2		-		s2; x3385	
+27	42	SIGN	6	e	26		s2; x3470	s2
+28	1	SIGN	S12		-		s1; x705; small t-like cross	
+28	2	SIGN	5		X		s1; x760; thin long-s-like 5	s1 small t-like mark at line start (could be S37 or a stray gloss)
+28	3	SIGN	5		S35		s1; x810; bold 5	s1 long s then s (two s-shapes)
+28	4	agree	16		16		s1; x870	s1
+28	5	agree	S57		S57		s1; x965; c-curl with a horizontal bar ending in a hook (arrow-like G)	s1 c-curl with a hooked tail right (could be S45)
+28	6	agree	9		9		s1; x1060	s1
+28	7	SIGN	2	e	-		s1; x1110	
+28	8	SIGN	6		26	c	s1; x1170	s1
+28	9	SIGN	S39		X	g	s1; x1235; 9/g-like loop joined to a long s descender	s1 tall ligature of two long descending strokes with loop, like 'd' joined to 'l' (dl/gl)
+28	10	agree	S23		S23		s1; x1310; x-cross	s1 x
+28	11	GLOSS	16	e	16	c	s1; x1385	s1
+28	12	SIGN	S44	r	S13	po	s1; x1470; loop on a long stem crossed twice (phi-like)	s1 cross with p-like loop on top (could be S44)
+28	13	GLOSS	4	o	4		s1; x1530; small o gloss above	s1
+28	14	agree	4		4		s1; x1580	s1
+28	15	agree	10	d	10	d	s1; x1660	s1
+28	16	agree	2		2		s1; x1720	s1 may belong to 10 as 102
+28	17	SIGN	|		S27	rr	s1; x1780; thin curved long-s-like stroke	s1 long s preceding the 6
+28	18	GLOSS	6	rr	6		s1; x1815; gloss rr/ce	s1
+28	19	SIGN	2		-		s1; x1870	
+28	20	SIGN	8	a	-		s1; x1935; s1, centre left of tick	
+28	21	SIGN	X	f	-		s2; x2040; upright crossed by two bars (as line 26 x2450)	
+28	22	SIGN	2	a	28	a	s2; x2100	s1
+28	23	SIGN	8		S23	f	s2; x2150	s2 x with double crossbar
+28	24	SIGN	6	i	28	a	s2; x2210	s2
+28	25	SIGN	4		64	i	s2; x2250	s2
+28	26	GLOSS	S34	z	S34	r	s2; x2320	s2
+28	27	GLOSS	16	e	16	c	s2; x2425	s2
+28	28	GLOSS	22	w	22	tw	s2; x2560; first 2 as a c-curl	s2 first z crossed; gloss tw/tu with dots
+28	29	GLOSS	5		5	n	s2; x2650; dot and n-like mark above at x2680 not assigned	s2 heavy s-shaped 5
+28	30	agree	10	u	10	u	s2; x2735; u gloss between 10 and 4	s2 gloss u with a large looped d-stroke
+28	31	agree	4		4		s2; x2810	s2
+28	32	SIGN	2	e	-		s2; x2900	
+28	33	SIGN	6		26	a	s2; x2960	s2
+28	34	agree	15	n	15	n	s2; x3015	s2
+28	35	agree	60	i	60	i	s2; x3120	s2
+28	36	agree	S34	r	S34	r	s2; x3220	s2
+28	37	agree	12	a	12	a	s2; x3335	s2
+28	38	SIGN	S64	bo	-		s2; x3420; z/3 with descender	
+28	39	SIGN	44		344	60	s2; x3490	s2 a larger '60' is written above, same size as the codes; may be an interlinear correctio
+29	1	agree	10	u	10	u	s1; x705	s1
+29	2	agree	2		2		s1; x790	s1 may belong to 10 as 102
+29	3	agree	S37	t	S37	t	s1; x880; cross above read as gloss t	s1 crossed t with o; large cross above read as gloss t
+29	4	SIGN	S21		S27		s1; x985; very long heavy long-s descending from above the line with a crossbar at the 5	s1 very tall long s descending into next line
+29	5	agree	5		5		s1; x1030	s1 small s-shaped 5, low
+29	6	SIGN	6	b	-		s1; x1070; faint b-like gloss	
+29	7	SIGN	4		64		s1; x1110	s1 tall stroke from line above crosses the 6
+29	8	agree	5		5		s1; x1160; 3-like 5	s1 3/5-like, below a looped d/ll-shaped mark (possibly a gloss or line-above ink)
+29	9	agree	S23	f	S23	f	s1; x1265	s1 x with tail
+29	10	GLOSS	16	e	16		s1; x1340	s1 dot above
+29	11	SIGN	X		S33	e	s1; x1390; tall stem with a crossbar and a k-like loop to the right (cf S44, S46)	s1 pi-shape with crossed top; gloss e/k
+29	12	agree	14	a	14	a	s1; x1475	s1 cross above as well (may be gloss t)
+29	13	agree	S31	p	S31	p	s1; x1570; circle on cross	s1 circle on a cross, loop crossed above
+29	14	agree	8	o	8	o	s1; x1630	s1
+29	15	agree	2	u	2	u	s1; x1700	s1
+29	16	agree	S27		S27		s1; x1760; tall double long-s with crossbar, left stem descends to the baseline	s1 doubled tall long s with crossbar (π-like), joined to s
+29	17	agree	4		4		s1; x1800	s1 preceded by s-curl read as part of S27
+29	18	GLOSS	2	e	2	i	s1; x1890	s1
+29	19	agree	4		4		s1; x1945; s1, centre just left of tick	s1 straddles the ticks, centre left
+29	20	SIGN	S64	?	-		s2; x2010; small 3-shape	
+29	21	SIGN	5		-		s2; x2050	
+29	22	SIGN	2		35	6c	s2; x2130	s2 3 written as looped z; larger '6C' above, may be an interlinear correction rather than 
+29	23	SIGN	6	e	26	?	s2; x2200	s2 two dots above
+29	24	agree	60	f	60	f	s2; x2295; F-like gloss with bar	s2 0 may be 8/o; gloss F-like
+29	25	SIGN	2	a	-		s2; x2360; a gloss sits between 2 and 8	
+29	26	SIGN	8		28	a	s2; x2440; top of 8 reads as a triangle in this crop (checked against line 30 crop)	s2
+29	27	SIGN	X	v	73	p	s2; x2515; crossed 7-like stroke with a 5-like curl beneath (7+5?)	s2 crossed 7 joined to a 3/z; could be S13 + S64
+29	28	GLOSS	16	e	16	?	s2; x2615; dot before it at x2555	s2 two dots above
+29	29	agree	15	n	15	n	s2; x2680	s2
+29	30	agree	10	u	10	u	s2; x2755	s2
+29	31	agree	2		2		s2; x2830	s2
+29	32	agree	4	o	4	o	s2; x2905; o/d-like gloss	s2 lower half cut at crop edge (read with line 30 crop)
+29	33	agree	4		4		s2; x2960	s2
+29	34	SIGN	6	t	-		s2; x3010; faint 6	
+29	35	SIGN	4		64	i	s2; x3050	s2
+29	36	GLOSS	62	e	62	?	s2; x3130	s2 two dots above
+29	37	SIGN	S60	o	X	o	s2; x3230; rho/yogh-like curl: loop with tail curving down-left	s2 rho/8-like loop with long tail curling down right
+29	38	agree	2		2		s2; x3320	s2 dot below
+29	39	GLOSS	6	e	6	c	s2; x3400	s2
+29	40	agree	15	n	15	n	s2; x3460	s2
+30	1	agree	S23		S23		s1; x720; x-cross with tail	s1 x with tail
+30	2	GLOSS	5		5	m	s1; x800	s1 large M-like mark above (may be ink from line 29)
+30	3	GLOSS	12		12	a	s1; x880; marks above are line 29's sign	s1 gloss a with long-s strokes after (all or ll)
+30	4	SIGN	|		-		s1; x950; very long thin vertical hairline through the line	
+30	5	GLOSS	68		68	ll	s1; x995; ll-like strokes above belong to line 29 (not read as gloss)	s1
+30	6	GLOSS	16	e	16	?	s1; x1090; grey ink blot over the 1	s1 dark blot on the 1
+30	7	agree	S28	m	S28	m	s1; x1170	s1 c-hook joined to m
+30	8	SIGN	2	a	-		s1; x1260	
+30	9	SIGN	8		28	a	s1; x1310	s1
+30	10	GLOSS	60	b	60	t	s1; x1405	s1
+30	11	GLOSS	X		X	g	s1; x1510; heavy ink blot x1480-1560 covering the sign(s)	s1 solid black rectangle (blot or deletion) over a sign; g-like gloss at its top
+30	12	GLOSS	5	i	5	?	s1; x1570; thin s-like 5 under an i-like mark	s1 two dots above
+30	13	SIGN	2	e	-		s1; x1660; two blobs above between 2 and 6	
+30	14	SIGN	6		26	?	s1; x1715	s1 two dots above
+30	15	agree	S17	l	S17	l	s1; x1785; ff with crossbar	s1 ff-like double stem with crossbar; gloss L-like
+30	16	SIGN	1		-		s1; x1845; 1 stands apart	
+30	17	SIGN	6	e	16	?	s1; x1880; 6 with a long curved ascender sweeping up-right to x1960	s1 two dots above
+30	18	SIGN	4		64		s1; x1940; s1, centre left of tick	s1 straddles the ticks; tall long-s hook rises over it
+30	19	SIGN	S31		X	q	s2; x2040; g/9-loop standing on a cross with loop	s2 2/z-shape with a q/loop rising from it, crossed
+30	20	agree	7	u	7	u	s2; x2110	s2
+30	21	GLOSS	16	e	16	?	s2; x2195	s2 dots above
+30	22	SIGN	X	b	68	b3	s2; x2265; bold filled s-curl joined to a z/2 at the base, with a tall b/3-like mark above	s2 gloss b3/l3
+30	23	SIGN	X		S40		s2; x2360; n-like squiggle with an open right loop and a dot after (as line 26 x920	s2 n-shape with right leg curling (reversed omega)
+30	24	agree	S52	m	S52	m	s2; x2455; lattice 3 across 3	s2 lattice three by three
+30	25	SIGN	S65	?	X	wol	s2; x2535; tall open leaf-shaped loop	s2 tall narrow looped stroke (Q/0-like); gloss 'wol' with a long bar
+30	26	GLOSS	26	e	26	u	s2; x2625	s2
+30	27	agree	15	n	15	n	s2; x2720	s2
+30	28	GLOSS	9	e	9	c	s2; x2780	s2
+30	29	agree	4	o	4	o	s2; x2835	s2
+30	30	GLOSS	4		4	r	s2; x2900	s2
+30	31	GLOSS	S34	x	S34	u	s2; x2965	s2
+30	32	GLOSS	16	e	16		s2; x3040; dots above x3020	s2 tall long-s stroke above
+30	33	SIGN	4	s	S23		s2; x3120; cross with long bar	s2 cross joined to 6 (could be 4)
+30	34	GLOSS	S33	x	S33	r	s2; x3210; pi-like with loop, long legs	s2 lower half cut off
+30	35	SIGN	|		-		s2; x3265; dot/short stroke after the sign	
+30	36	GLOSS	64	?	64		s2; x3305; heavy blob above (end of line 29's curl, or a gloss)	s2 lower half cut off
+30	37	GLOSS	16	e	16	?	s2; x3390	s2 lower half cut off; dots above
+30	38	GLOSS	15	n	15	?	s2; x3460; gloss r1-like marks read as n	s2 lower half cut off; dots above
+31	1	GLOSS	S23	fa	S23	a	s1; x725; heavy x-cross with a lead-in stroke	s1 x with double crossbar; gloss a with a crossed mark
+31	2	agree	12		12		s1; x815	s1
+31	3	agree	60	l	60	l	s1; x925	s1
+31	4	agree	S37	t	S37	t	s1; x1020; cross above read as gloss t	s1
+31	5	GLOSS	16	e	16	?	s1; x1140	s1 two dots above
+31	6	agree	X	n	X	n	s1; x1225; 'ua' minim cluster with closed a (as line 19 x1740)	s1 u joined to a (ua ligature)
+31	7	agree	S37	t	S37	t	s1; x1320; cross above read as gloss t	s1
+31	8	GLOSS	2	e	2	r	s1; x1430	s1
+31	9	agree	6		6		s1; x1510	s1
+31	10	agree	15	n	15	n	s1; x1575	s1 gloss over the 1
+31	11	agree	5	d	5	d	s1; x1655	s1
+31	12	SIGN	-		S64	z		s1 3/z joined to the following Ao
+31	13	GLOSS	S34	z	S34		s1; x1735; thin vertical stroke from above crosses it at x1760	s1
+31	14	agree	62		62		s1; x1830; horizontal bar left of the 6 joins a heavy descender from line 30	s1 horizontal bar above
+31	15	agree	|		|		s1; x1890; long diagonal slash	s1 long slash
+31	16	GLOSS	X		X	g	s2; x1955; heavy hooked horizontal stroke with a long descender (hook-and-drop shape), cen	s2 hooked 7/z-like with long descender, closed loop above (gloss g/9)
+31	17	SIGN	S14		-		s2; x2040; large spiral E-like curl with a wide arc above and a descender below	
+31	18	agree	10		10		s2; x2090	s2
+31	19	agree	2		2		s2; x2130	s2
+31	20	agree	64		64		s2; x2215	s2
+31	21	SIGN	|		-		s2; x2270; thin long-s stroke directly before the minims	
+31	22	agree	S29	m	S29	m	s2; x2310; three minims	s2 minims (uu/ui)
+31	23	SIGN	2		-		s2; x2490	
+31	24	SIGN	6		26	h	s2; x2545; could be 26 with the 2	s2 gloss h/k
+31	25	GLOSS	X	fait	X		s2; x2630; pound-like sign: z/2 with a looped left stroke and a crossbar	s2 bold Z/2 with a loop at left under the word 'fait'
+31	26	GLOSS	9	t	9		s2; x2730	s2
+31	27	SIGN	1	x	16	p	s2; x2790; lone 1	s2
+31	28	GLOSS	6	e	6	c	s2; x2850	s2
+31	29	agree	15	n	15	n	s2; x2925	s2
+31	30	SIGN	4	s	S21		s2; x3005; cross	s2 cross with tall long-s rising from it
+31	31	GLOSS	2	e	2	i	s2; x3085	s2 dots below/above
+31	32	agree	6		6		s2; x3140	s2
+31	33	GLOSS	S34	x	S34	r	s2; x3210	s2
+31	34	SIGN	S79	q	S32	g	s2; x3295; V with a long stem descending below the line	s2 Y with long stem (read from line 32 crop)
+31	35	GLOSS	5	l	5		s2; x3365; L-like gloss between 5 and 1	s2
+31	36	GLOSS	16	e	16	l	s2; x3440	s2 lower half cut off at right end
+32	1	SIGN	S36		X		s1; x715; heavy x crossed by a tall long-s stroke rising above the line	s1 bold crossed hooked mark (tick-like, like a heavy crossed l/t) with dot after
+32	2	agree	9	c	9	c	s1; x790; dot before the gloss c	s1
+32	3	agree	17	h	17	h	s1; x875; gloss 6/h-like	s1
+32	4	agree	4	o	4	o	s1; x985	s1
+32	5	agree	4		4		s1; x1030	s1
+32	6	SIGN	|		-		s1; x1110; long heavy wedge stroke descending below the line	
+32	7	SIGN	8		-		s1; x1160; small 8/delta-like with a dot	
+32	8	SIGN	6	e	S35		s1; x1225	s1 very tall long s joined to small s
+32	9	SIGN	2		62	?	s1; x1265	s1 two dots above
+32	10	SIGN	4	s	S21		s1; x1340; tall long-s gloss above	s1 cross with tall long-s rising from it
+32	11	agree	15	n	15	n	s1; x1435	s1
+32	12	SIGN	4	y	-		s1; x1530; cross with a long diagonal tail	
+32	13	SIGN	S64		73	y	s1; x1570; 3-shape with tail after the cross	s1 7 crossed, 3 below-right; could be S13 + S64
+32	14	agree	S36		S36		s1; x1640; heavy x crossed by a tall long-s stroke rising above	s1 x with a tall stroke rising above
+32	15	agree	8	o	8	o	s1; x1700	s1
+32	16	agree	2		2		s1; x1750	s1
+32	17	agree	X	n	X	n	s1; x1830; 'ua' minim cluster with closed a (as line 19 x1740)	s1 u joined to a (ua ligature)
+32	18	agree	S37	t	S37	t	s1; x1915; cross above read as gloss t	s1
+32	19	SIGN	-		|			s1 vertical stroke after the o
+32	20	agree	S35		S35		s2; x2080; long heavy long-s with a small s at its right	s2 tall long s then s
+32	21	SIGN	4	y	-		s2; x2150; cross with a long diagonal tail	
+32	22	SIGN	S64		73	y	s2; x2180; 3-shape with tail	s2 same crossed 7 with 3
+32	23	GLOSS	2		2	?	s2; x2250	s2 dots above
+32	24	GLOSS	6	e	6		s2; x2300	s2
+32	25	agree	X		X		s2; x2355; heavy wedge-shaped stem with a hooked head curling right, joined at its base to	s2 bold L/h-shaped blotted sign
+32	26	agree	9	c	9	c	s2; x2430	s2
+32	27	agree	17	h	17	h	s2; x2490; gloss 6/h-like	s2
+32	28	agree	12	a	12	a	s2; x2610; gloss a over the 1, dot over the 2	s2
+32	29	agree	10	u	10	u	s2; x2720; cross above belongs to line 31	s2 small cross also above
+32	30	agree	2		2		s2; x2780; sits low under the following A	s2 large A-like mark written above (unclear if gloss)
+32	31	SIGN	S34		-		s2; x2815; A joined to small o, written higher than the digits	
+32	32	agree	6		6		s2; x2870	s2
+32	33	GLOSS	6		6	iu	s2; x2920	s2
+32	34	GLOSS	18	u	18		s2; x2975; gloss u with two dots	s2
+32	35	SIGN	4	s	S21		s2; x3060; long-s gloss with a long head stroke	s2 cross with tall long-s rising above
+32	36	agree	|		|		s2; x3110; thin diagonal slash	s2 slash
+32	37	SIGN	9	c	-		s2; x3145	
+32	38	SIGN	8	o	98		s2; x3195; bold 8	s2 bold 8 with crossbar
+32	39	GLOSS	7	umm	7		s2; x3265; gloss 'umm' spans 7 and 6, continued by a long horizontal line above 16 to the 	s2
+32	40	SIGN	6		16		s2; x3310	s2
+32	41	agree	16		16		s2; x3395	s2
+33	1	agree	5		5		s1; x715; small s-shaped 5	s1 s-shaped 5 at line start
+33	2	SIGN	S31		S63		s1; x815; 9-loop standing on a crossbar with a descending tail	s1 q with crossed descender, closed loop on top
+33	3	GLOSS	S17	t	S17	f	s1; x925; heavy ff with crossbar, both legs descending	s1 double stem with crossbar, stems descend far; gloss f/1
+33	4	agree	2		2		s1; x1010	s1
+33	5	GLOSS	6	e	6	?	s1; x1065	s1 two dots above
+33	6	SIGN	X		S21		s1; x1115; heavy wedge-shaped long stroke crossing an A/4-like mark (same sign as line 32 	s1 tall long-s with crossbar and descending tail
+33	7	GLOSS	16	e	16		s1; x1215	s1
+33	8	SIGN	-		60			s1
+33	9	SIGN	06	uu	6		s1; x1305; o-shaped 0 then 6	s1
+33	10	GLOSS	62	e	62		s1; x1400; gloss e/r-like	s1
+33	11	GLOSS	S29	?	S29		s1; x1530; three minims	s1 minims (uu)
+33	12	agree	60		60		s1; x1665	s1
+33	13	SIGN	4		S13		s1; x1740; cross with long bar	s1 cross
+33	14	agree	|		|		s1; x1790	s1
+33	15	agree	10	u	10	u	s1; x1830	s1
+33	16	agree	2		2		s1; x1895	s1 may belong to 10 as 102
+33	17	agree	4	o	4	o	s2; x2050	s2
+33	18	agree	4		4		s2; x2100	s2
+33	19	agree	10	u	10	u	s2; x2170	s2
+33	20	GLOSS	4		4	l	s2; x2255	s2
+33	21	GLOSS	5	f	5	d	s2; x2300; bold 5	s2
+33	22	GLOSS	5	d	5		s2; x2350; small 5	s2 small s-shaped 5 joined to the Ao
+33	23	agree	S34	r	S34	r	s2; x2420	s2
+33	24	agree	8	o	8	o	s2; x2490	s2
+33	25	agree	2		2		s2; x2590	s2
+33	26	SIGN	6	i	-		s2; x2650; stroke above	
+33	27	SIGN	4		64	i	s2; x2690	s2 gloss 1/i above the 6
+33	28	GLOSS	16	e	16	?	s2; x2760	s2 dots above
+33	29	agree	15	n	15	n	s2; x2855	s2
+33	30	agree	S37	t	S37	t	s2; x2960; cross above read as gloss t	s2
+33	31	SIGN	X		S23		s2; x3060; upright crossed by two long horizontal bars (as line 26 x2450)	s2 x with double crossbar
+33	32	agree	12		12		s2; x3160	s2
+33	33	agree	60		60		s2; x3250	s2
+33	34	agree	S34		S34		s2; x3320	s2
+33	35	agree	2		2		s2; x3410	s2
+33	36	agree	6		6		s2; x3465; last token of the letter	s2
