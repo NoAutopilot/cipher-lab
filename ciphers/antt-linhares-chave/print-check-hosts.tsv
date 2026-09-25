@@ -1,0 +1,7 @@
+host	requests	status
+api.crossref.org	3	ok
+api.openalex.org	10	ok
+api.semanticscholar.org	2	blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22segredo%20at%C3%A9%20o%20minist%C3%A9rio%22
+archive.org	1	ok
+be-api.us.archive.org	8	ok
+www.googleapis.com	8	ok

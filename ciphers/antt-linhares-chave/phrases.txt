@@ -1,0 +1,10 @@
+# antt-linhares-chave: distinctive decoded phrases (LX-VER, 25 Sept 2026)
+# spelling as decoded (archaic Portuguese, u/v i/j long-s folded per print_check.py)
+segredo ate o ministerio
+segredo até o ministério
+pela memoria do
+pela memória do
+supprir o seu lugar
+suprir o seu lugar
+seu lugar junto com
+para supprir o seu lugar
