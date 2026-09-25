@@ -87,11 +87,753 @@
    "content": "40 X?-token crops and 40 matched-atlas-sign-token crops, fixed seed 42, sampled from the pooled passC.tsv+passD.tsv (593 X? tokens, 570 S0x tokens). No per-token pixel bounding boxes exist for this ciphertext (unlike dupuy452-carpi-1520/glyphs/classified.tsv's real x,y,w,h) -- each crop's window is a PROPORTIONAL ESTIMATE (token position / that pass's token count for the line, times line width), generous but approximate; xq_index.tsv/sign_index.tsv record the estimate window and the pass's own note text for every sampled token so a mis-centred crop can still be judged from the description. Several crops in xq_sheet.jpg/sign_sheet.jpg landed on blank margin or the page's dark binding edge because of this imprecision (documented in NOTES.md ZX-349B, not corrected this pass)."
   },
   {
-   "file": "lines_g/line01.jpg .. lines_g/line33.jpg",
-   "source": "derived from clair349_f9_right_full.jpg via tools/iiif_lines.py --image clair349_f9_right_full.jpg --overlap 0 --top-margin 45 --prefix f9right --debug --out <tmp> (25 Sept 2026, ZX-TR349C), reproducing the SAME 37-band detection as the old images/lines (centres 568,1316,1444,1792,1922,...,5781,6402 -- bit-identical to YX-TR349B run, confirmed by rerun), bands 4-36 = line01..line33 (unchanged mapping). --top-margin 45 (new CLI option added to tools/iiif_lines.py this session, per transcription.md: add an option to the shared tool rather than write a private crop script) subtracts 45px from each band TOP edge only (clamped to 0), pulling in the whitespace/interlinear-gloss zone above each code line that the un-margined images/lines crops cut into; the BOTTOM edge of every band is unchanged from images/lines. Segments and stitching exactly as images/lines: s1 [0,2400) cropped to [0,1495), s2 [1495,3895) appended, 905px duplicate region trimmed, no token appears twice. Regenerate deterministically with the command above (clair349_f9_right_full.jpg already on disk) plus the stitch step (ad hoc, documented in NOTES.md ZX-TR349C, not committed as a script).",
-   "content": "Same 33 real ciphertext lines as images/lines, recut with 45px more top margin per line to include the small interlinear gloss hand sitting just above each code line (identified by ZX-KEY349). Eye-checked at line01 (first), line17 (middle), line33 (last): each line's own gloss is fully visible, not clipped at the top edge; a thin sliver (tight-pitch lines) to most (loosest-pitch lines) of the PREVIOUS line's own bottom row is also visible at the top of some crops as a side effect of the fixed-pixel margin against a variable line pitch (83-225px measured) -- intentional overlap, not a segmentation error, and the current line's own row is always the larger/lower row in the crop.",
-   "superseded": "images/lines/ (33 files, no gloss margin) DELETED this session to stay under the 30MB folder cap (was 35.4MB with both; 31.1MB with lines_g alone) -- nothing on disk depends on its path (checked: only NOTES.md prose and this manifest referenced it), and it is bit-for-bit reproducible from clair349_f9_right_full.jpg with the command in entry 9 (--top-margin 0, i.e. omitted) if ever needed again.",
-   "date": "2026-09-25T17:41Z"
+   "file": "lines_h/line01_s1.jpg .. lines_h/line33_s2.jpg",
+   "source": "python3 tools/iiif_lines.py --image clair349_f9_right_full.jpg --top-margin 45 --prefix f9right --debug --out <tmp> (default --max-width 2400, default --overlap), 25 Sept 2026, ZX-TR349D; bands 4-36 = line01..line33 (same 37-band detection as lines_g, centres 568,1316,...,5781,6402); crops renamed lineNN_sK.jpg and NOT stitched; each 2400 px wide.",
+   "overlap": {
+    "s1_x": [
+     0,
+     2400
+    ],
+    "s2_x": [
+     1495,
+     3895
+    ],
+    "overlap_x_page": [
+     1495,
+     2400
+    ],
+    "count_boundary_x_page": 1950,
+    "rule": "a token whose centre is left of page x=1950 is counted in s1 only, otherwise in s2 only. The boundary is drawn on every crop as two small red ticks (5x12 px) at the top and bottom edges: s1 x=1950, s2 x=455. Passes stop s1 at the ticks and start s2 at the ticks."
+   },
+   "content": "Same 33 cipher lines as the deleted lines_g (which were the stitched 3895 px form of these segments), cut under 2500 px so no image is downscaled on reading. lines_g deleted (reproducible from the lines_g manifest recipe). Eye-checked line01, line17, line33 (ZX-TR349D).",
+   "crops": [
+    {
+     "crop": "lines_h/line01_s1.jpg",
+     "band": 4,
+     "box": [
+      0,
+      1573,
+      2400,
+      1857
+     ],
+     "count_boundary_x_in_crop": 1950
+    },
+    {
+     "crop": "lines_h/line01_s2.jpg",
+     "band": 4,
+     "box": [
+      1495,
+      1573,
+      3895,
+      1857
+     ],
+     "count_boundary_x_in_crop": 455
+    },
+    {
+     "crop": "lines_h/line02_s1.jpg",
+     "band": 5,
+     "box": [
+      0,
+      1812,
+      2400,
+      1988
+     ],
+     "count_boundary_x_in_crop": 1950
+    },
+    {
+     "crop": "lines_h/line02_s2.jpg",
+     "band": 5,
+     "box": [
+      1495,
+      1812,
+      3895,
+      1988
+     ],
+     "count_boundary_x_in_crop": 455
+    },
+    {
+     "crop": "lines_h/line03_s1.jpg",
+     "band": 6,
+     "box": [
+      0,
+      1943,
+      2400,
+      2118
+     ],
+     "count_boundary_x_in_crop": 1950
+    },
+    {
+     "crop": "lines_h/line03_s2.jpg",
+     "band": 6,
+     "box": [
+      1495,
+      1943,
+      3895,
+      2118
+     ],
+     "count_boundary_x_in_crop": 455
+    },
+    {
+     "crop": "lines_h/line04_s1.jpg",
+     "band": 7,
+     "box": [
+      0,
+      2073,
+      2400,
+      2241
+     ],
+     "count_boundary_x_in_crop": 1950
+    },
+    {
+     "crop": "lines_h/line04_s2.jpg",
+     "band": 7,
+     "box": [
+      1495,
+      2073,
+      3895,
+      2241
+     ],
+     "count_boundary_x_in_crop": 455
+    },
+    {
+     "crop": "lines_h/line05_s1.jpg",
+     "band": 8,
+     "box": [
+      0,
+      2196,
+      2400,
+      2358
+     ],
+     "count_boundary_x_in_crop": 1950
+    },
+    {
+     "crop": "lines_h/line05_s2.jpg",
+     "band": 8,
+     "box": [
+      1495,
+      2196,
+      3895,
+      2358
+     ],
+     "count_boundary_x_in_crop": 455
+    },
+    {
+     "crop": "lines_h/line06_s1.jpg",
+     "band": 9,
+     "box": [
+      0,
+      2313,
+      2400,
+      2474
+     ],
+     "count_boundary_x_in_crop": 1950
+    },
+    {
+     "crop": "lines_h/line06_s2.jpg",
+     "band": 9,
+     "box": [
+      1495,
+      2313,
+      3895,
+      2474
+     ],
+     "count_boundary_x_in_crop": 455
+    },
+    {
+     "crop": "lines_h/line07_s1.jpg",
+     "band": 10,
+     "box": [
+      0,
+      2429,
+      2400,
+      2588
+     ],
+     "count_boundary_x_in_crop": 1950
+    },
+    {
+     "crop": "lines_h/line07_s2.jpg",
+     "band": 10,
+     "box": [
+      1495,
+      2429,
+      3895,
+      2588
+     ],
+     "count_boundary_x_in_crop": 455
+    },
+    {
+     "crop": "lines_h/line08_s1.jpg",
+     "band": 11,
+     "box": [
+      0,
+      2543,
+      2400,
+      2698
+     ],
+     "count_boundary_x_in_crop": 1950
+    },
+    {
+     "crop": "lines_h/line08_s2.jpg",
+     "band": 11,
+     "box": [
+      1495,
+      2543,
+      3895,
+      2698
+     ],
+     "count_boundary_x_in_crop": 455
+    },
+    {
+     "crop": "lines_h/line09_s1.jpg",
+     "band": 12,
+     "box": [
+      0,
+      2653,
+      2400,
+      2822
+     ],
+     "count_boundary_x_in_crop": 1950
+    },
+    {
+     "crop": "lines_h/line09_s2.jpg",
+     "band": 12,
+     "box": [
+      1495,
+      2653,
+      3895,
+      2822
+     ],
+     "count_boundary_x_in_crop": 455
+    },
+    {
+     "crop": "lines_h/line10_s1.jpg",
+     "band": 13,
+     "box": [
+      0,
+      2777,
+      2400,
+      2955
+     ],
+     "count_boundary_x_in_crop": 1950
+    },
+    {
+     "crop": "lines_h/line10_s2.jpg",
+     "band": 13,
+     "box": [
+      1495,
+      2777,
+      3895,
+      2955
+     ],
+     "count_boundary_x_in_crop": 455
+    },
+    {
+     "crop": "lines_h/line11_s1.jpg",
+     "band": 14,
+     "box": [
+      0,
+      2910,
+      2400,
+      3132
+     ],
+     "count_boundary_x_in_crop": 1950
+    },
+    {
+     "crop": "lines_h/line11_s2.jpg",
+     "band": 14,
+     "box": [
+      1495,
+      2910,
+      3895,
+      3132
+     ],
+     "count_boundary_x_in_crop": 455
+    },
+    {
+     "crop": "lines_h/line12_s1.jpg",
+     "band": 15,
+     "box": [
+      0,
+      3087,
+      2400,
+      3302
+     ],
+     "count_boundary_x_in_crop": 1950
+    },
+    {
+     "crop": "lines_h/line12_s2.jpg",
+     "band": 15,
+     "box": [
+      1495,
+      3087,
+      3895,
+      3302
+     ],
+     "count_boundary_x_in_crop": 455
+    },
+    {
+     "crop": "lines_h/line13_s1.jpg",
+     "band": 16,
+     "box": [
+      0,
+      3257,
+      2400,
+      3413
+     ],
+     "count_boundary_x_in_crop": 1950
+    },
+    {
+     "crop": "lines_h/line13_s2.jpg",
+     "band": 16,
+     "box": [
+      1495,
+      3257,
+      3895,
+      3413
+     ],
+     "count_boundary_x_in_crop": 455
+    },
+    {
+     "crop": "lines_h/line14_s1.jpg",
+     "band": 17,
+     "box": [
+      0,
+      3368,
+      2400,
+      3528
+     ],
+     "count_boundary_x_in_crop": 1950
+    },
+    {
+     "crop": "lines_h/line14_s2.jpg",
+     "band": 17,
+     "box": [
+      1495,
+      3368,
+      3895,
+      3528
+     ],
+     "count_boundary_x_in_crop": 455
+    },
+    {
+     "crop": "lines_h/line15_s1.jpg",
+     "band": 18,
+     "box": [
+      0,
+      3483,
+      2400,
+      3637
+     ],
+     "count_boundary_x_in_crop": 1950
+    },
+    {
+     "crop": "lines_h/line15_s2.jpg",
+     "band": 18,
+     "box": [
+      1495,
+      3483,
+      3895,
+      3637
+     ],
+     "count_boundary_x_in_crop": 455
+    },
+    {
+     "crop": "lines_h/line16_s1.jpg",
+     "band": 19,
+     "box": [
+      0,
+      3592,
+      2400,
+      3744
+     ],
+     "count_boundary_x_in_crop": 1950
+    },
+    {
+     "crop": "lines_h/line16_s2.jpg",
+     "band": 19,
+     "box": [
+      1495,
+      3592,
+      3895,
+      3744
+     ],
+     "count_boundary_x_in_crop": 455
+    },
+    {
+     "crop": "lines_h/line17_s1.jpg",
+     "band": 20,
+     "box": [
+      0,
+      3699,
+      2400,
+      3846
+     ],
+     "count_boundary_x_in_crop": 1950
+    },
+    {
+     "crop": "lines_h/line17_s2.jpg",
+     "band": 20,
+     "box": [
+      1495,
+      3699,
+      3895,
+      3846
+     ],
+     "count_boundary_x_in_crop": 455
+    },
+    {
+     "crop": "lines_h/line18_s1.jpg",
+     "band": 21,
+     "box": [
+      0,
+      3801,
+      2400,
+      3974
+     ],
+     "count_boundary_x_in_crop": 1950
+    },
+    {
+     "crop": "lines_h/line18_s2.jpg",
+     "band": 21,
+     "box": [
+      1495,
+      3801,
+      3895,
+      3974
+     ],
+     "count_boundary_x_in_crop": 455
+    },
+    {
+     "crop": "lines_h/line19_s1.jpg",
+     "band": 22,
+     "box": [
+      0,
+      3929,
+      2400,
+      4121
+     ],
+     "count_boundary_x_in_crop": 1950
+    },
+    {
+     "crop": "lines_h/line19_s2.jpg",
+     "band": 22,
+     "box": [
+      1495,
+      3929,
+      3895,
+      4121
+     ],
+     "count_boundary_x_in_crop": 455
+    },
+    {
+     "crop": "lines_h/line20_s1.jpg",
+     "band": 23,
+     "box": [
+      0,
+      4076,
+      2400,
+      4244
+     ],
+     "count_boundary_x_in_crop": 1950
+    },
+    {
+     "crop": "lines_h/line20_s2.jpg",
+     "band": 23,
+     "box": [
+      1495,
+      4076,
+      3895,
+      4244
+     ],
+     "count_boundary_x_in_crop": 455
+    },
+    {
+     "crop": "lines_h/line21_s1.jpg",
+     "band": 24,
+     "box": [
+      0,
+      4199,
+      2400,
+      4364
+     ],
+     "count_boundary_x_in_crop": 1950
+    },
+    {
+     "crop": "lines_h/line21_s2.jpg",
+     "band": 24,
+     "box": [
+      1495,
+      4199,
+      3895,
+      4364
+     ],
+     "count_boundary_x_in_crop": 455
+    },
+    {
+     "crop": "lines_h/line22_s1.jpg",
+     "band": 25,
+     "box": [
+      0,
+      4319,
+      2400,
+      4486
+     ],
+     "count_boundary_x_in_crop": 1950
+    },
+    {
+     "crop": "lines_h/line22_s2.jpg",
+     "band": 25,
+     "box": [
+      1495,
+      4319,
+      3895,
+      4486
+     ],
+     "count_boundary_x_in_crop": 455
+    },
+    {
+     "crop": "lines_h/line23_s1.jpg",
+     "band": 26,
+     "box": [
+      0,
+      4441,
+      2400,
+      4609
+     ],
+     "count_boundary_x_in_crop": 1950
+    },
+    {
+     "crop": "lines_h/line23_s2.jpg",
+     "band": 26,
+     "box": [
+      1495,
+      4441,
+      3895,
+      4609
+     ],
+     "count_boundary_x_in_crop": 455
+    },
+    {
+     "crop": "lines_h/line24_s1.jpg",
+     "band": 27,
+     "box": [
+      0,
+      4564,
+      2400,
+      4723
+     ],
+     "count_boundary_x_in_crop": 1950
+    },
+    {
+     "crop": "lines_h/line24_s2.jpg",
+     "band": 27,
+     "box": [
+      1495,
+      4564,
+      3895,
+      4723
+     ],
+     "count_boundary_x_in_crop": 455
+    },
+    {
+     "crop": "lines_h/line25_s1.jpg",
+     "band": 28,
+     "box": [
+      0,
+      4678,
+      2400,
+      4842
+     ],
+     "count_boundary_x_in_crop": 1950
+    },
+    {
+     "crop": "lines_h/line25_s2.jpg",
+     "band": 28,
+     "box": [
+      1495,
+      4678,
+      3895,
+      4842
+     ],
+     "count_boundary_x_in_crop": 455
+    },
+    {
+     "crop": "lines_h/line26_s1.jpg",
+     "band": 29,
+     "box": [
+      0,
+      4797,
+      2400,
+      4974
+     ],
+     "count_boundary_x_in_crop": 1950
+    },
+    {
+     "crop": "lines_h/line26_s2.jpg",
+     "band": 29,
+     "box": [
+      1495,
+      4797,
+      3895,
+      4974
+     ],
+     "count_boundary_x_in_crop": 455
+    },
+    {
+     "crop": "lines_h/line27_s1.jpg",
+     "band": 30,
+     "box": [
+      0,
+      4929,
+      2400,
+      5101
+     ],
+     "count_boundary_x_in_crop": 1950
+    },
+    {
+     "crop": "lines_h/line27_s2.jpg",
+     "band": 30,
+     "box": [
+      1495,
+      4929,
+      3895,
+      5101
+     ],
+     "count_boundary_x_in_crop": 455
+    },
+    {
+     "crop": "lines_h/line28_s1.jpg",
+     "band": 31,
+     "box": [
+      0,
+      5056,
+      2400,
+      5199
+     ],
+     "count_boundary_x_in_crop": 1950
+    },
+    {
+     "crop": "lines_h/line28_s2.jpg",
+     "band": 31,
+     "box": [
+      1495,
+      5056,
+      3895,
+      5199
+     ],
+     "count_boundary_x_in_crop": 455
+    },
+    {
+     "crop": "lines_h/line29_s1.jpg",
+     "band": 32,
+     "box": [
+      0,
+      5154,
+      2400,
+      5303
+     ],
+     "count_boundary_x_in_crop": 1950
+    },
+    {
+     "crop": "lines_h/line29_s2.jpg",
+     "band": 32,
+     "box": [
+      1495,
+      5154,
+      3895,
+      5303
+     ],
+     "count_boundary_x_in_crop": 455
+    },
+    {
+     "crop": "lines_h/line30_s1.jpg",
+     "band": 33,
+     "box": [
+      0,
+      5258,
+      2400,
+      5431
+     ],
+     "count_boundary_x_in_crop": 1950
+    },
+    {
+     "crop": "lines_h/line30_s2.jpg",
+     "band": 33,
+     "box": [
+      1495,
+      5258,
+      3895,
+      5431
+     ],
+     "count_boundary_x_in_crop": 455
+    },
+    {
+     "crop": "lines_h/line31_s1.jpg",
+     "band": 34,
+     "box": [
+      0,
+      5386,
+      2400,
+      5554
+     ],
+     "count_boundary_x_in_crop": 1950
+    },
+    {
+     "crop": "lines_h/line31_s2.jpg",
+     "band": 34,
+     "box": [
+      1495,
+      5386,
+      3895,
+      5554
+     ],
+     "count_boundary_x_in_crop": 455
+    },
+    {
+     "crop": "lines_h/line32_s1.jpg",
+     "band": 35,
+     "box": [
+      0,
+      5509,
+      2400,
+      5696
+     ],
+     "count_boundary_x_in_crop": 1950
+    },
+    {
+     "crop": "lines_h/line32_s2.jpg",
+     "band": 35,
+     "box": [
+      1495,
+      5509,
+      3895,
+      5696
+     ],
+     "count_boundary_x_in_crop": 455
+    },
+    {
+     "crop": "lines_h/line33_s1.jpg",
+     "band": 36,
+     "box": [
+      0,
+      5651,
+      2400,
+      6091
+     ],
+     "count_boundary_x_in_crop": 1950
+    },
+    {
+     "crop": "lines_h/line33_s2.jpg",
+     "band": 36,
+     "box": [
+      1495,
+      5651,
+      3895,
+      6091
+     ],
+     "count_boundary_x_in_crop": 455
+    }
+   ]
   }
  ]
 }
