@@ -1,5 +1,5 @@
 {
- "updated": "25 Sep 2026 03:55 UTC",
+ "updated": "25 Sep 2026 04:58 UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -1799,14 +1799,19 @@
  ],
  "lanes": [
   {
+   "name": "Lane PX, Portuguese holdings and dictionary codes",
+   "live": 1,
+   "focus": "opened 04:25: DigitArq harvest found PX-01, José da Cunha Brochado's London embassy letterbook 1712-13 (ANTT MSLIV/0638), cipher passages with deciphered excerpts in the same volume; dictionary-code scout found no new copy-free row; check-solved next"
+  },
+  {
    "name": "Lane LX, Linhares dictionary code",
    "live": 0,
    "focus": "closed on handoff 03:10: book Vieyra 1809 Part I (12/12), m0002 H 25 M 1, AUDIT N3/N3, SO-LINHARES-M0002 queued for the ChatGPT runner; maço 86 sibling sweep 17 of 21 items, no further cipher"
   },
   {
    "name": "Lane OX, orphaned open targets",
-   "live": 1,
-   "focus": "van Beuningen 1657 key N3 (letter text N1); Paget 1714 attempt 1 negative with control; Willem van Hessen 1069 transcription under the 60% gate; La Garde 1577 editions do not decipher it; Hellen 1752 waits on DECODE images; Vaudemont and Breda found-solved"
+   "live": 0,
+   "focus": "closed on handoff 04:35: van Beuningen key N3 (letter N1, second opinion queued); Vaudemont and Breda found-solved; Paget transcribed, attempt 1 negative, Paget identified (vice-consul at Genoa), AN Marine B7 queued for the local runner (L11); Hellen waits on DECODE images; Heinsius five on one archive request (ASKS 46)"
   },
   {
    "name": "Lane DX, DECODE",

@@ -108,6 +108,8 @@ Check-in 25 Sept 03:52 UTC: LX closed on handoff 03:10 (reopens only for the SO-
 
 Check-in 25 Sept 04:25 UTC: LX-ED could not reach Textos Politicos 1993 by any cloud route; queued as LOCAL-QUEUE L10 for the owner's machine (Linhares stays N3). Second opinions queued: SO-LINHARES-M0002, SO-VANBEUNINGEN-1657. Intake had run dry (no open copy-free target outside a lane), so LANE PX opened (session_01KapVpHVzNpnnQce5C8c3LY): DigitArq past its ten-result search limit, dictionary and book codes copy-free, check-solved under the intake gate, then readings.
 
+Check-in 25 Sept 04:55 UTC: OX closed on handoff 04:35 (ASKS 46 Heinsius request, LOCAL-QUEUE L11 AN Marine B7). PX live: PX-01 Brochado letterbook 1712-13 (cipher with in-volume decipherments) to check-solved at its 05:03 check-in; the dictionary-code scout found nothing new copy-free. No [SO-] pull request yet; L10 still queued. PX is the only live lane.
+
 ## Parent handoff (cipher-lab-7b, session_01K7ZbE95o1pUW5gof8VA5PR, from 18:45 UTC 24 Sept 2026; 7a was session_01EFmUvFAifLKGdBSsW9mjEG, 23 Sept 15:12 to 24 Sept 18:45), kept current
 
 The parent orchestrator runs the hourly check-in (trigger trig_01Ks1wNXPjfn7XW9EucmV9ru (parent 7b, 30-minute cadence while a worker runs, 90 otherwise), self-bound, re-armed by send_later at every firing; its prompt is the
