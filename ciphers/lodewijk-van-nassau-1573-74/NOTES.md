@@ -1220,12 +1220,19 @@ The Hague to [Holland]"), consistent in context though unglossed there. 221 had 
 key.tsv; `axnames/still_unread.tsv` lists it with 3 unread occurrences in 4610/4611. Blind pass A: "'Hollande' --
 sits directly above the very first number, '221' (high confidence, clean vertical alignment)."
 
-**Finding 3 (M, corroborating, not new): 133 confirmed NULL by a second contemporary source.** 5557 leaf 2 (WVO
-PDF page 2 of 4), the gloss "kein" (German "none") sits above code `133` in the run "...107.83.103.3.**133**...".
-names.tsv already has 133 = NULL at grade C (9 observations, aligned against 5810's Groen print); this gloss is an
-independent contemporary confirmation from a different letter, not a new value. Blind pass A could not confidently
-read this specific word ("I cannot confidently read a clean word 'kein' here -- the writing is compressed"), so
-this attestation is graded M, not H, pending the second blind pass.
+**Finding 3, WITHDRAWN after the second blind pass -- do not treat 133 as glossed.** My own first read of 5557
+leaf 2 placed a short gloss ("kein", German "none") directly above code `133` in the run
+"...107.83.103.3.**133**...", which would have been a corroborating (not new) confirmation of names.tsv's existing
+133=NULL (C, 9 observations from 5810). Blind pass A could not confidently read the word at all. **Blind pass B
+placed the same gloss's position over `107`, not `133`** -- explicitly flagging the mismatch against this file's
+own name ("I want to flag this explicitly since it may run counter to an existing reading... based on pure
+horizontal position... the word sits over '107', not '133'"), with medium-high confidence on that position. With
+my own read and two blind passes giving three different answers on where this one gloss actually sits (and none
+of the three confident on the word itself), this is not a usable attestation for either 107 or 133 -- both are
+<=120 anyway (out of this brief's >120 scope) and 133 already has 9 independent C-grade observations from 5810, so
+nothing is lost by dropping it. Recorded here as a *process* finding: a single eyeballed alignment on a compressed,
+multi-word line is not reliable even with a pixel-gridline overlay: two more independent reads are needed before
+trusting a position call like this, exactly as the brief specified two blind passes for.
 
 **221/192 are the two solid new fills this pass got; the brief's named priority codes (146, 156, 157, 172, 182,
 187) were NOT filled.** Specifically checked and came up empty:
@@ -1267,11 +1274,17 @@ later, summarising a passage's subject rather than decoding a specific code (con
 "kein", "Vorrad" also reading like short thematic labels rather than literal per-code values); (b) 5557 uses a
 different table from key.tsv's for these low codes. Not resolved; flagged rather than guessed.
 
-**Two blind Sonnet subagent passes** (crops only, no prior reading shown, one call per leaf's worth of crops):
-pass A transcribed all 5 committed crops independently and agreed with this pass's H-grade reads on 221->Hollande
-and (position, not exact wording) 192->the gloss immediately above it; it could not confidently read "kein" over
-133 (graded that finding M rather than H accordingly). [Pass B result to be added if it lands before this section
-is pushed; if not, note here that only one blind pass completed within the box.]
+**Two blind Sonnet subagent passes** (crops only, no prior reading shown, one call per leaf's worth of crops; both
+landed before the box ended). Both independently confirm the two H-grade finds: 221=Hollando (both: high
+confidence, clean alignment) and the gloss ending "-gne" (consistent with (le Roy) d'Espagne) directly above 192
+(pass A: high position confidence; pass B: medium-high). Both also independently confirm 241=Zellando (already
+C-grade in names.tsv). Neither pass could confidently read or place the "kein"-like gloss near 133/107 -- pass A
+called the word illegible, pass B placed its position over 107, not 133 -- so that finding is withdrawn (see
+above), which is exactly the kind of miscall two blind passes are supposed to catch before it reaches names.tsv.
+Pass B additionally read a second, previously-unnoticed gloss in the 05557_p2_jar_94.png crop ("beritten"(?), i.e.
+"mounted"/"on horseback", over the second occurrence of 82) and refined "Graf von Holl[andt]" as one phrase
+spanning several numbers rather than a single word over 93 -- both <=120, out of this brief's >120 scope, noted
+for whoever next looks at 5557's low-code annotations (see the flag above).
 
 Rule 10: no novelty words used. Rule 3: no controls run this pass (no numeric threshold gated); the two new
 values (192, 221) are grade H per rule 4 (read from a contemporary key source, i.e. a period gloss), not
