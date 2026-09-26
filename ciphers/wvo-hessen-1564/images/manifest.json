@@ -1,0 +1,45 @@
+{
+  "fetched": "2026-09-26",
+  "worker": "NX-WVO1109",
+  "items": [
+    {
+      "briefnr": 1109,
+      "record_url": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=1109",
+      "record_html": "raw/wvo_1109_record.html",
+      "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/01000-01999/01109.pdf",
+      "pdf_local": "raw/01109.pdf",
+      "pdf_size_bytes": 4436045,
+      "pages": 5,
+      "images": {
+        "images/01109_p0.jpg": "f.22r (docket '1564. Sept.16.', foliation 22) -- plain German, opening",
+        "images/01109_p1.jpg": "f.22v continuation -- plain German",
+        "images/01109_p2.jpg": "f.24 (foliation '24') -- plain German closing, dated 'Bruxelle ... Septembris Anno [1]564', signed Willem Printz zu Uranien",
+        "images/01109_p3.jpg": "f.23 (foliation '23'), headed 'ad 1564. Sept. 18.' -- the cipher ENCLOSURE proper, mixed clear-German/cipher-sign text, ~16 lines, no gloss, no key on the leaf",
+        "images/01109_p3_crop400.jpg": "400dpi re-render of p3's upper ~2/3 (clip 60,60,1360,520 at 400dpi from the PDF), for sign-shape legibility",
+        "images/01109_p3_crop400_top.jpg": "top third of the 400dpi crop above",
+        "images/01109_p3_crop400_mid.jpg": "middle third of the 400dpi crop above",
+        "images/01109_p4.jpg": "outer address/docket leaf -- 'Praesentatum ... 28 Sept Anno [15]64', addressed to Landgrave Wilhelm zu Hessen, wax seal fragment"
+      },
+      "regen": "curl -A 'cipher-lab research script (contact via repository)' https://resources.huygens.knaw.nl/media/wvo/images/01000-01999/01109.pdf -o raw/01109.pdf; python3 -c \"import pymupdf; d=pymupdf.open('raw/01109.pdf'); [p.get_pixmap(dpi=200).save(f'images/01109_p{i}.jpg') for i,p in enumerate(d)]\" (adjust to re-save as JPEG)"
+    },
+    {
+      "briefnr": 1107,
+      "record_url": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=1107",
+      "record_html": "raw/wvo_1107_record.html",
+      "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/01000-01999/01107.pdf",
+      "pdf_local": "raw/01107.pdf",
+      "pdf_size_bytes": 1741434,
+      "pages": 4,
+      "images": {
+        "images/01107_p0.jpg": "KHAG origineel, opening -- plain German, no cipher",
+        "images/01107_p1.jpg": "continuation -- plain German",
+        "images/01107_p2.jpg": "continuation/closing -- plain German",
+        "images/01107_p3.jpg": "outer address leaf, wax seal, docket -- plain, no cipher"
+      },
+      "regen": "curl -A 'cipher-lab research script (contact via repository)' https://resources.huygens.knaw.nl/media/wvo/images/01000-01999/01107.pdf -o raw/01107.pdf; same render as above"
+    }
+  ],
+  "other_sources": {
+    "raw/groen_t1.txt": "archive.org identifier archivesoucorre00housgoog (Groen van Prinsterer, Archives 1e serie tome I, 1552-1565), _djvu.txt, fetched for the check-solved full-text sweep. Not this target's own primary source -- refetch with: curl -L -A 'cipher-lab research script (contact via repository)' https://archive.org/download/archivesoucorre00housgoog/archivesoucorre00housgoog_djvu.txt -o raw/groen_t1.txt"
+  }
+}
