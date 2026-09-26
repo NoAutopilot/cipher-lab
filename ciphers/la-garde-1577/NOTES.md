@@ -795,3 +795,69 @@ worker's job, not this one's.
 
 Requests: none (all crops cut locally from images already on disk; no network fetch this pass). One Sonnet
 subagent (general-purpose Agent, blind read of two crops, no candidates shown). Cost: see the lane ledger.
+
+## WC-LAGARDE2 (26 Sept 2026, LANE WC worker)
+
+**Job:** the owner's stuck-rule try -- the materially different family the sign system itself suggests (numerals
+1-24 carrying overlines and loop marks: base code = letter and the mark = a following vowel (syllabary), or
+signs standing for whole words (wordcode)) -- run via `tools/family_run.py` rather than this target's own
+hand-rolled `solve_l2.py`, since neither `syllabary` nor `wordcode` had been tried on this target before.
+
+**Step 0 (intake gate):** `python3 tools/intake_gate_check.py la-garde-1577` -> `la-garde-1577: open (line 1) --
+edition/page or full-text-search citation found within 6 lines` (exit 0).
+
+**Step 1: spec.** `specs/la-garde-1577.json` written by the new `ciphers/la-garde-1577/build_spec.py`, pooling both
+letters' 239 primary-reading tokens (the same count WC-LAGARDE's own settling pass reported; excludes the 6
+trailing witness-only insertion rows in `ciphertext_6179_v2.tsv` that L4 already flagged "not counted in the
+totals") into code^mark tokens: a bare numeral is `N^`, an overlined one `N^ol`, one carrying the loop-crossbar
+flourish `N^lp`, and a free-standing flourish with no attached digit (11 of the 239, WC-LAGARDE's settling did not
+change this) its own base code `MARK^` -- the same choice `solve_l2.py --mark-signs` already makes for these rows.
+27 distinct base codes (numerals 1-24 plus '07' and '29', which do not fit that range at the current transcription,
+plus MARK), 48 code+mark types, marks 195 bare / 39 overline / 5 loop-crossbar (18.4% marked share). `row_pattern`
+is one manuscript-line run of S's per pooled `ciphertext` line with a single plain-box gap between runs -- this
+transcription recorded only the cipher tokens, not the interleaving plain French words, so there is no finer
+honest pattern to write than the one `family_run.py`'s own no-pattern default already builds from the same message
+lengths; it is written out explicitly anyway so the run/gap structure is visible in the spec file. `judge` block:
+language fr, corpora both `tools/data/fr16` volumes (matching L2/L4/WC-LAGARDE's own corpus choice), letters
+200-380.
+
+**Step 2: syllabary.** `python3 tools/family_run.py specs/la-garde-1577.json --family syllabary --seeds 3
+--measured-error 0.23 --param err=0.23 --gate 0.6 --label "WC-LAGARDE2 stuck-rule try"` (0.23 = mid of WC-LAGARDE's
+measured 20.1-25.5% pass disagreement; `--param err=0.23` was accepted alongside `--measured-error 0.23` with no
+argument conflict). Control (N=228-233, K=48-49, base code = letter, an overline/loop mark = the following vowel,
+5% error bracket widened to 23% to match this transcription's own measured disagreement): **recovery 0.159 / 0.393
+/ 0.603, mean 0.385** -- **CONTROL BELOW GATE** (0.6). Target not run; row appended to HYPOTHESES.md by the tool
+itself.
+
+**Step 3: wordcode** (time remained well under the 80% box line). `python3 tools/family_run.py
+specs/la-garde-1577.json --family wordcode --seeds 3 --measured-error 0.23 --param codes=marked --param err=0.23
+--gate 0.6 --label "WC-LAGARDE2 stuck-rule try"` (`--param` is `action="append"` in this tool -- two separate
+`--param` flags, not one string, the one adjustment needed beyond the brief's literal command line). Control
+(N=227-233, K=39-46, marked numerals as whole-word/name codes; per-class breakdown printed by the tool: letters
+class recovery 0.119-0.722, codes class 0.000-0.073 with 80-87% of code tokens landing in the control's own word
+list): **recovery 0.280 / 0.586 / 0.096, mean 0.321** -- **CONTROL BELOW GATE** (0.6). Target not run.
+
+**Result: both families untestable at 239 tokens and this error level, not a negative for either (rule 3).** A
+control this far below its own gate (0.32-0.39 against 0.6) at N=239 means neither family's own solver can read a
+control cipher of the same length, sign count and design under this transcription's measured error, so a target
+run would prove nothing about the target either way -- per rule 3 and the brief's own step 4, this is recorded as
+"not a test at this N and error," not as a control-backed negative the way the monoalphabetic/homophonic and
+periodic families were in L4/WC-LAGARDE. This is consistent with `specs/README.md`'s general observation that
+`family_run.py`'s families need roughly N>=150-200 for the control itself to have power, and both new families
+here add a second axis of freedom (the mark/vowel assignment, or the code/word split) on top of the same short
+pooled length that already strained the periodic-Vigenere control in L4's own solve_l2.py runs (test B's control
+still read 100% there only because a period-5 short key is a much smaller search than an open mark-to-vowel or
+letter-to-word assignment).
+
+**Status: stays `open`** (rule 5). Not `closed-negative`: the ladder is not exhausted -- `masc`/`running_key` via
+`tools/family_run.py` have still not been tried on this target (WC-LAGARDE's own recommendation), and syllabary/
+wordcode themselves are untested-by-this-tool at this N and error (not refuted), per CLAUDE.md's "second attempt"
+paragraph: a further tuning of the same knob (a lower --gate, a different --param) is not the next test; a
+genuinely different instrument or new material is. Concretely: (1) pooling more of the same numeral-cipher family
+would raise N past the point where these controls have power (ZX2-LAG's sibling sweep found no same-system
+sibling among the 1576-1579 Orange-circle letters checked so far, but did flag 6136, Reinier Cant 14 Feb 1576, as a
+different, much larger unsolved numeral cipher, K>=150+ -- not a pooling match for this target); (2) a lower --gate
+would not fix a control this far below 0.6, since the gate reflects whether the family's own solver has power at
+this N at all, not a threshold tuned to this target. Spec's `cheap_test_done` filled with both rows' numbers.
+
+Requests: none (no network this pass). No subagents. Cost: see the lane ledger.

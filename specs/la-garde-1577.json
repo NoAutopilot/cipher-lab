@@ -1,0 +1,67 @@
+{
+ "slug": "la-garde-1577",
+ "name": "La Garde, superintendent of Schoonhoven, to Willem van Oranje, 28 Nov 1577 (WVO 6179), pooled with Marnix van St. Aldegonde to Willem van Oranje, 2 Nov 1577 (WVO 6467) -- same dot-separated 1-24 numeral cipher family, two of its signs carrying an overline or a loop-crossbar flourish mark",
+ "language_candidates": [
+  "fr"
+ ],
+ "ciphertext_source": "resources.huygens.knaw.nl/wvo/app/brief?nr=6179 and nr=6467; reconciled two/three-witness transcription (ciphertext_6179_v2.tsv, ciphertext_6467_v2.tsv; NOTES.md sections L1-L4 and WC-LAGARDE), all 9 previously-unresolved cells settled by WC-LAGARDE (26 Sept 2026) from the images already on disk; measured pass-to-pass disagreement 20.1% (rows carrying a witness alt), M-grade rate 21.8% (NOTES 'WC-LAGARDE' counts)",
+ "ciphertext_date": "transcription 24-26 Sept 2026 (L1-L4, WC-LAGARDE); spec built 26 Sept 2026 by build_spec.py (WC-LAGARDE2)",
+ "alphabet": "27 base codes (numerals 1-24 plus '07' and '29', two recurring flourishes not fitting that range at this transcription's current reading, and 'MARK' for a free-standing flourish with no attached digit) each optionally carrying one mark: 'ol' a plain overline, 'lp' the loop-crossbar flourish; 48 code+mark types over 239 pooled sign tokens (marks: 195 bare, 39 overline, 5 loop-crossbar)",
+ "ciphertext": [
+  "15^ 16^ 22^ 23^ 1^ 10^ 3^ 14^ 5^ 10^lp 11^ 11^ol 13^ 14^ 3^ 15^ 17^ 12^ 15^ 6^ 19^ 14^",
+  "10^ 16^ol 14^ 7^ 17^ 22^ 10^ 2^ 1^ 12^ 19^ol 24^ol 14^ 20^ 2^ol 6^ 17^ 20^ol 11^ 8^ 11^ 6^ 1^ 2^ 20^",
+  "9^ol 9^ 14^ol 3^ 20^ 14^ 5^ 15^ 10^",
+  "24^ 1^ 2^ 11^ 21^ 10^ 3^ 4^",
+  "29^ol 12^ 24^ 21^ 6^ 10^ 20^ 16^ 4^ 7^ol 11^ 17^ 10^ 16^ MARK^ 12^ 15^ 7^ol 10^ 23^ol 16^ 3^ 11^ol 19^ 3^ 5^ 1^ 16^ol 1^",
+  "16^ 10^ol 7^ 23^ol 17^ 24^ 29^ol 12^ol 16^ 10^ol 8^ 18^ol 10^ 8^ 16^ 4^ 6^ 22^ 24^ 4^",
+  "8^ 16^ 9^ 21^ 5^ 10^ol 18^ol 1^lp 16^ 19^ 1^ 13^ 8^ 10^ MARK^ 2^ 12^ 9^ 20^ 21^",
+  "8^ 2^ MARK^ 15^ 6^ 18^ 12^ 5^ 9^ 12^ MARK^ 18^ 14^ 24^ 17^ 21^ 18^ 12^ MARK^",
+  "1^ 16^ 7^ 17^ 2^ol 6^ 10^ MARK^ 10^ 3^ 9^ 21^ 23^ol 5^ 3^ MARK^ 2^ 13^ 23^ol 5^ 1^ 10^ 8^ol MARK^ 24^ol",
+  "20^ol 8^ 9^ 9^ol 13^ 7^ 22^ 3^ 8^ 4^ 14^ MARK^ 11^ 19^ 7^ 15^",
+  "7^ 8^ 2^ol 11^ 10^ 19^ 14^ 12^ 9^lp",
+  "3^ 07^ 4^ 14^lp 4^ol 8^ 11^ 2^ol 4^ 07^ 11^ 24^ 3^ 9^lp",
+  "2^ol 17^ol 5^ 11^",
+  "10^ 8^ol 2^ 10^ 5^ 7^ol",
+  "9^ 07^ 4^ 10^ol 8^ol 9^ 07^ MARK^ 4^ 7^ 1^ 3^ol 12^"
+ ],
+ "row_pattern": "SSSSSSSSSSSSSSSSSSSSSS_SSSSSSSSSSSSSSSSSSSSSSSSS_SSSSSSSSS_SSSSSSSS_SSSSSSSSSSSSSSSSSSSSSSSSSSSSS_SSSSSSSSSSSSSSSSSSSS_SSSSSSSSSSSSSSSSSSSS_SSSSSSSSSSSSSSSSSSS_SSSSSSSSSSSSSSSSSSSSSSSSS_SSSSSSSSSSSSSSSS_SSSSSSSSS_SSSSSSSSSSSSSS_SSSS_SSSSSS_SSSSSSSSSSSSS_",
+ "constraints": [
+  "239 pooled tokens, two letters (WVO 6179 and 6467)",
+  "6467 margin note 'Justifier le faict du grand' beside run 1 is an unconfirmed gloss, not a crib -- it matches the letter's own main-text clause 'justifier le faict de Gand' one word off, per two independent print editions (NOTES 'Y1: the 6467 margin'); solve_l2.py's crib test (up to 6 nulls, both spellings) already finds no consistent many-to-one sign-to-letter map",
+  "value range capped at 24 with heavy reuse (10 appears roughly once per 10 tokens; 25 distinct base digit values over 228 numeral tokens in the original L1 count) -- read by L1 as more consistent with numbers-for-letters than a word nomenclator, before the syllabary/wordcode hypothesis was tried",
+  "monoalphabetic/homophonic substitution (both mark-stripped and marks-as-distinct-signs) and periodic Vigenere/Beaufort (periods 1-14) are both control-backed negatives at every injected-error level from 8% up through the transcription's own measured 20-26% disagreement range (NOTES 'L4', 'WC-LAGARDE'); not yet tried via tools/family_run.py: syllabary, wordcode (this spec)"
+ ],
+ "cheap_tests_in_order": [
+  "syllabary: base code = numeral (letter), an overline or loop-crossbar mark = the following vowel (tools/families/syllabary.py) -- the materially different family the sign system's own two marks suggest, over the already-tried monoalphabetic/homophonic and periodic designs (owner's stuck-rule try, README common tail 18:53)",
+  "wordcode: numeral runs read as a letter-or-word nomenclator inside sign runs (tools/families/wordcode.py) -- marked numerals as whole-word/name codes rather than syllable vowels"
+ ],
+ "cheap_test_done": [
+  {
+   "date": "26 Sept 2026 (WC-LAGARDE2, Sonnet)",
+   "worker": "WC-LAGARDE2 (Sonnet)",
+   "method": "tools/family_run.py --family syllabary, seeds 1-3, --measured-error 0.23 --param err=0.23 --gate 0.6",
+   "control_result": "N=228/227/233, K=48/49/48; recovery 0.159 / 0.393 / 0.603, mean 0.385",
+   "target_result": "not run (CONTROL BELOW GATE, mean 0.385 < 0.6)",
+   "verdict": "untestable at 239 tokens and 23% error, not a negative (rule 3) -- the control itself cannot read a cipher of this length/design at this error, so a target run would settle nothing"
+  },
+  {
+   "date": "26 Sept 2026 (WC-LAGARDE2, Sonnet)",
+   "worker": "WC-LAGARDE2 (Sonnet)",
+   "method": "tools/family_run.py --family wordcode, seeds 1-3, --measured-error 0.23 --param codes=marked --param err=0.23 --gate 0.6",
+   "control_result": "N=228/227/233, K=46/39/43; recovery 0.280 / 0.586 / 0.096, mean 0.321 (per-class: letters 0.119-0.722, codes 0.000-0.073)",
+   "target_result": "not run (CONTROL BELOW GATE, mean 0.321 < 0.6)",
+   "verdict": "untestable at 239 tokens and 23% error, not a negative (rule 3), same reason as syllabary above"
+  }
+ ],
+ "judge": {
+  "language": "fr",
+  "corpora": [
+   "tools/data/fr16/lettresdecatheri01cathuoft_djvu.txt.gz",
+   "tools/data/fr16/lettresdecatheri02cathuoft_djvu.txt.gz"
+  ],
+  "letters_min": 200,
+  "letters_max": 380,
+  "control_samples": 60
+ },
+ "written": "26 Sept 2026, LANE WC worker WC-LAGARDE2 (Sonnet), .claude/briefs/runs/2026-09-26-lane-wc-lagarde2.md"
+}
