@@ -1,6 +1,6 @@
 partial
 
-Per item (moved off line 1 by the LANE NX orchestrator, 26 Sept 2026, rule 5): found-solved (item 1); item 2 partial (key described, not found); item 3 partial (leaf carries its own interlinear decipherment -- see 26 Sept 2026 section below)
+Per item (moved off line 1 by the LANE NX orchestrator, 26 Sept 2026, rule 5): found-solved (item 1); item 2 partial (key described, not found); item 3 partial. Item 3 citation (26 Sept 2026, NX-MOR2): Rodríguez Villa's t.4 (Google Books v3kzAQAAIAAJ, *Documentos justificativos ... contiene los últimos años*, 1908, publicDomain ALL_PAGES) read by full-text search for "Herrera" + "7 de noviembre de 1820" and for "Romerito" -- no hit for this exact letter (only a different, later Herrera-to-Morillo letter "de 20 del actual" re: Romerito/Ferrus/Pedraza is quoted there, p. cited in the volume's own text, a different date); Contreras, *Catálogo de la Colección Pablo Morillo* (Madrid 1988, Google Books ohJPjaGKOk8C), full-text search for "Romerito" "Guanare" confirms this item's own catalogue entry (Sig. 9/7666, ff.420-420v, 7 de noviembre de 1820) exists in print as a description only, no plaintext or cipher table given. t.2 (1815 docs) still not located digitised anywhere.
 
 # Royalist ciphered letters to/from General Pablo Morillo — RAH cluster (1817, 1817, 1820)
 
