@@ -1,4 +1,5 @@
 open
+check-solved citations: Groen van Prinsterer, Archives 1re serie t.IV-V and Supplement read per letter (5549: Suppl. pp.140-148 no.45, dbnl full text + J5I image check, 24 Sept 2026; 5551: V-TX check-solved, 25 Sept 2026; 5207/5213/5218/5221/5222/5200 printed in clear, csWV3/J1). LANE AX, 26 Sept 2026.
 
 (Per letter, 24 Sept 2026: 5218, 5222 and 5200 found-solved, all printed in clear in Groen; 5200 is N1 per AUDIT.md V6. 5549 claimed by LANE R3 (Groen Suppl. prints raw undeciphered numbers). 5207, 5213, 5221 CORRECTED 24 Sept 2026, LANE N2 csWV3, from "open" to printed-in-clear: see "csWV3: correction of 5207/5213/5221" section below -- these three are no longer open candidates.)
 
