@@ -1,0 +1,37 @@
+code	value	tier	note
+6	a	primary
+t	b	primary	letter-code (mixed digit/letter alphabet per Tomokiyo)
+7	c	primary
+u	d	primary	letter-code
+8	e	primary
+x	f	primary	letter-code
+9	g	primary	blind subagent read flagged this cell ambiguous (digit "9" vs letter "g", open loop with curling tail); both passes leaned toward 9
+y	h	primary	letter-code
+z	i	primary	letter-code
+Z	k	primary	letter-code (capital Z distinct from lowercase z)
+3	l	primary
+b	m	primary	letter-code (reuses plaintext letter b as a code)
+c	o	primary	letter-code
+5	p	primary
+d	q	primary	letter-code
+i	r	primary	letter-code
+e	s	primary	letter-code
+a	t	primary	letter-code
+f	u	primary	letter-code
+h	x	primary	letter-code
+g	y	primary	letter-code
+?	z	primary	row2 cell for z shows a hook/curl symbol, not a digit or plain letter -- unclear, needs a closer crop
+15	k	homophone2	second code for k (row4); row3 letter above it read "k" clearly
+16	l	homophone2	second code for l
+17	m	homophone2	second code for m
+18	?	homophone2	numeral only, no companion letter legible in row3 for this column (col 4, under header d) -- pairing uncertain
+20	n	homophone2	second code for n (n does not appear as a header letter at all, consistent with Tomokiyo's "lacks n"; it only appears here as a homophone-layer plaintext letter)
+21	?	homophone2	numeral only (col 6, under header f), no companion letter clearly legible
+22	?	homophone2	numeral only (col 6 second value) -- unclear
+23	o	homophone2	row3 shows a rounded glyph read as "o" or "0"; ambiguous with digit zero, marked low-confidence
+24	?	homophone2	numeral only (col 8, under header h) -- unclear
+25	?	homophone2	numeral only -- unclear
+26	p	homophone2
+28	?	homophone2	row3 letter above illegible in this pass (col under header k)
+29	g	homophone2	row3 letter looked like "g" repeated -- low confidence, may duplicate the primary g->9 mapping in error
+30	?	homophone2	col under header m, row2 already gives m's own second code b->30? see key_f274_names.tsv note

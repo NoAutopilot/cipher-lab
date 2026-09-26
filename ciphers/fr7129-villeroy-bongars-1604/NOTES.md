@@ -212,3 +212,138 @@ claim is made (rule 10); this is a description of what four thumbnail pages show
 
 Status unchanged: `blocked` (per the M9 gate: Tomokiyo's paper still unread). file_shrink_guard
 clean on NOTES.md and images/sweep/*.
+
+## KEY-7129: full-resolution capture of the three key tables + a shape test on the target's cipher block (26 Sept 2026)
+
+Per `.claude/briefs/runs/2026-09-26-parent-key-7129.md`. **No reading claim, no status change** -- status stays
+`blocked` (the M9 gate is unaffected by this pass).
+
+### Step 1: prior-print check
+
+Re-grepped `sources/cryptiana/web/bongars.htm` (the only local Tomokiyo mirror) for "7129", "270", "274",
+"Villeroy", "1604", "Bongars". Confirms, verbatim, what was already quoted in this file's Identification
+section from an earlier pass -- no new print found, but the passage matters enough to restate plainly for
+this job's purpose:
+
+> **no.1 (f.270-271)**: "Full two pages of code words for names and common words." Used in a 1609 Henry IV
+> letter and in Bongars' own 1602 letters, "along with the cipher of no.3" -- not named for the target.
+>
+> **no.2 (f.274)**: "Cipher alphabet with Arabic figures and Latin letters... Substitution alphabet includes
+> 'k'... (but lacks 'n'!)... **I have not seen an actual use of this cipher.** According to Desenclos and Vial
+> (2014), this cipher was used at least in the first letters of Henry IV in 1594." -- Tomokiyo explicitly has
+> never seen this cipher (no.2, f.274) actually applied to any letter, and dates its known use to 1594, a
+> decade before the target.
+>
+> **no.3 (f.275) "Bongars' Cipher (1604-1611)"**: "Cipher alphabet with Latin letters and other symbols.
+> Graphic symbols, Latin letters with an umlaut, Arabic figures (6-99; 1-43 with an overbar) for names and
+> common words... This cipher is used in letters from Villeroy to Bongars in July to November 1604 (BnF
+> fr.7129, f.253-f.268)... **This cipher can solve an undeciphered letter, dated 2 November 1604 and signed by
+> Villeroy, in BnF fr.7129, f.268** (see below)."
+
+**No decipherment of f.268 is printed anywhere on the page** -- this confirms rather than lifts the M9 gate
+(unchanged from the earlier pass). But it is worth being explicit here because this job's own brief named
+f.274 (no.2) as the primary transcription target and f.275 (no.3) as lower priority ("gets a description and a
+row count only unless time remains"): **Tomokiyo's own text says the opposite of what a naive read of the
+folio order suggests** -- no.2/f.274 is a cipher he has never seen used, dated eleven years too early, while
+no.3/f.275 is the one he names, by folio and date, as the actual key for this exact letter. This job followed
+the brief's step order (f.274 fully, f.270-271 and f.275 partially) since it was already committed to by the
+time this was re-confirmed, but the finding changes what the shape test in step 4 should be read to mean (see
+below) and should steer any future pass's priority to f.275 first.
+
+### Step 2: full-resolution fetch
+
+6 Gallica IIIF `native.jpg` fetches (browser UA, >=2s apart, one retry after a `Recv failure: Connection reset
+by peer` on f.271r): f.268r (canvas 541), f.268v (542), f.270r (545), f.271r (547), f.274r (553), f.275r
+(555). Recto only (the tables read as complete on the recto in every case checked; verso not fetched this
+pass to stay well under the 12-image cap). Saved to `images/keys/` with `manifest.json`. Native sizes 3669-4510
+x 5914 px -- all far over the 2500px reading limit, so every transcription pass below worked from a further
+crop, not the full page. `file_shrink_guard.py` run on this folder before the final push (see done line).
+
+### Step 3: key capture
+
+**f.274 (Tomokiyo's no.2).** `keys/key_f274.tsv`: the primary alphabet-substitution row, all 22 header letters
+(a,b,c,d,e,f,g,h,i,k,l,m,o,p,q,r,s,t,u,x,y,z -- skips j, n, w, matching Tomokiyo's "includes k... lacks n").
+Each plaintext letter's code is either a two-digit-style Arabic numeral or another single Latin letter written
+in the same hand, mixed deliberately (matches Tomokiyo's "Arabic figures and Latin letters"). A second,
+partial homophone layer (a smaller second letter + a second numeral per column) was transcribed where legible
+and marked "?" where the second value could not be resolved this pass (columns under d, f, h, k, m have an
+unresolved second numeral). A blind second read of the primary row was run this pass (Sonnet subagent, given
+only `f274_topgrid_L.jpg`/`f274_topgrid_R.jpg`, no theory, no access to this worker's own reading): it agreed
+on 20 of 22 primary-row cells exactly (a=6, c=7, d=u, e=8, f=x, h=y, i=z, k=Z, l=3, m=b, o=c, p=5, q=d, r=i,
+s=e, t=a, u=f, x=h, y=g, and independently read b=t matching this worker's own read); it flagged the same two
+cells this worker was already unsure of as ambiguous (g: digit "9" vs letter "g", both passes leaned 9; z: no
+confident code legible, possibly cut off or a symbol). `keys/key_f274_names.tsv`: 45 of an estimated ~74 title/
+dignitary codes (26-79, plus 40-58 from a second list at the foot of the page) -- names and their numeric codes
+for the King, Queen, princes, marshals, and foreign rulers, cited by which of the four columnar blocks on the
+page they came from. Not independently blind-checked (out of this pass's time).
+
+**f.270-271 (Tomokiyo's no.1).** `keys/key_f270.tsv`: this table's hand is markedly harder to read than
+f.274's ruled grid (a dense secretary hand with no ruled cells), and this pass captured only a structural
+description plus two very-low-confidence sample pairs, not a row count of confident transcriptions -- flagged
+honestly as such rather than padded. The load-bearing finding is structural, not row-by-row: the table is
+built entirely from short pronounceable code-*words* (2-6 letters) paired with plain-French meaning-words, in
+about 8 repeated column-pairs across the two folios -- **no numerals appear anywhere in this table** in either
+crop viewed. `tools/key_design.py`'s fresh build marks this file `usable=no` ("only 1 codes carry a readable
+value with this loader"), correctly reflecting that this pass did not produce a real key table, only a
+description; a future pass transcribing it properly should expect this to flip to `usable=yes` once populated.
+
+**f.275 (Tomokiyo's no.3, "Bongars' Cipher 1604-1611", the one Tomokiyo names for the target letter).**
+Description only, per this brief's own scoping (time did not remain to transcribe it after the above), but
+worth recording in more than one line since it corroborates the shape test below: the page carries (a) a
+left-margin column of roughly 24-27 unique **graphic symbols** (not letters, not digits -- glyphs resembling
+crosses, hooks, alchemical/planetary-style marks), each paired with a one- or two-digit number, functioning as
+the alphabet/short-value layer; (b) a large two-sub-column table of **plain French words paired with two-digit
+numbers running from roughly 1 to 99** (place names, common words, function words); (c) a name/title list in
+the same style as f.274's, using the same symbol set as (a) rather than plain numerals for some entries. This
+matches Tomokiyo's description of no.3 field-for-field ("Graphic symbols, Latin letters with an umlaut, Arabic
+figures (6-99; 1-43 with an overbar) for names and common words") and, importantly, **matches the target's own
+cipher-block shape far better than f.274 does** (see step 4).
+
+### Step 4: shape test (not a reading)
+
+`ciphertext_candidate.txt`: a first-pass, admittedly rough transcription of the 6-line cipher block at the
+foot of f.268r (candidate only -- a later transcription lane makes the file of record). 97 tokens counted
+programmatically: ~39 numeral-shaped tokens (7 of them written with an overbar, matching Tomokiyo's "1-43 with
+an overbar" for no.3), ~37 letter-shaped tokens (several with what reads as a doubled dot/diaeresis mark,
+matching no.3's "Latin letters with an umlaut"), 8 occurrences of one recurring curled hook glyph (matching
+no.3's "symbols for doubling/cancelling the preceding letter"), and the rest unclear. **This shape --
+overlined and plain numerals mixed with umlaut-marked letters and a recurring non-alphabetic symbol -- matches
+f.275 (no.3)'s design, not f.274 (no.2)'s (a clean per-column numeral/letter alphabet grid with no overlines,
+no diacritic marks, and no recurring symbol).**
+
+Per the brief's own step 4 instruction, the test was run against `key_f274.tsv` since that is what was fully
+captured this pass: `shape_test_f274.py` decodes `ciphertext_candidate.txt` against `key_f274.tsv` and against
+20 class-shuffled copies of the same key (values reshuffled among the same codes -- coverage itself cannot
+differ under this shuffle, since it depends only on the code set, not the values, so the discriminating
+statistic is the `fr` NgramModel score of the decoded letter-stream, per the bCAS/AX-5799 lesson about
+controls that cannot vary on the axis being measured):
+
+```
+tokens: 97
+coverage (tokens whose code is in key_f274.tsv, tier-agnostic): 0.268
+decoded letter-stream length: 26
+fr16 NgramModel score of the real decode: -1.7444
+20 class-shuffled keys (rule 3 control): mean score -2.1019, sd 0.1898
+z (real vs shuffled-key control): 1.88
+```
+
+**z=1.88 is below both `key_crossmatch.py`'s own "weak" bar (z_shuffled>=3) and its "hit" bar (>=4); coverage
+at 0.268 is low.** This is a control-backed negative for f.274 against this cipher block, consistent with (not
+contradicted by) step 1's finding that Tomokiyo has never seen no.2 used and dates it to 1594, and consistent
+with the shape match pointing at f.275 instead. It is not evidence against the letter being solvable --
+Tomokiyo names f.275 (no.3) as the correct key, which this pass did not have time to capture into a testable
+key file.
+
+### What a solver (or the next KEY-7129-style pass) should do next
+
+Transcribe `key_f275.tsv` (the symbol table, cipher no.3) first -- it is the cipher Tomokiyo names for this
+exact letter, its shape matches the target's cipher block far better than f.274's does, and this pass's
+control-backed negative on f.274 removes it as a live candidate for a first attempt. A proper transcription of
+`ciphertext_candidate.txt` (this pass's version is a rough first read, not the file of record) should precede
+any real decode attempt against whichever key is captured. Status stays `blocked` regardless (M9 gate).
+
+Requests this pass: gallica.bnf.fr 6 (1 retry). No other host. No credentials. 1 Sonnet subagent (blind
+alphabet-grid read). Files: `images/keys/{manifest.json,f268r_canvas541.jpg,f268v_canvas542.jpg,
+f270r_canvas545.jpg,f271r_canvas547.jpg,f274r_canvas553.jpg,f275r_canvas555.jpg}`, `keys/{key_f274.tsv,
+key_f274_names.tsv,key_f270.tsv}`, `ciphertext_candidate.txt`, `shape_test_f274.py`, KEY-DESIGN.tsv (rebuilt),
+KEY-OFFICES.tsv (+1 row).

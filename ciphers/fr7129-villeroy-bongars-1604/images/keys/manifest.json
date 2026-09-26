@@ -1,0 +1,16 @@
+{
+  "source": "BnF fr.7129 (ark:/12148/btv1b8555834s), full native-resolution IIIF fetch",
+  "fetched": "26 Sept 2026",
+  "why": "KEY-7129 job: capture the three key/nomenclator tables IMG-FETCH flagged near the target letter f.268 (ff.270-271, 274, 275), plus f.268 itself for a candidate ciphertext shape test. Canvas rule (confirmed by IMG-FETCH's sweep): canvas = 2*folio + 5 for recto, 2*folio + 6 for verso.",
+  "files": {
+    "f268r_canvas541.jpg": {"folio": "268r", "canvas": 541, "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8555834s/f541/full/full/0/native.jpg", "note": "target letter, cipher block at the foot"},
+    "f268v_canvas542.jpg": {"folio": "268v", "canvas": 542, "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8555834s/f542/full/full/0/native.jpg", "note": "target letter continuation"},
+    "f270r_canvas545.jpg": {"folio": "270r", "canvas": 545, "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8555834s/f545/full/full/0/native.jpg", "note": "Tomokiyo's cipher no.1: word/code nomenclator table"},
+    "f271r_canvas547.jpg": {"folio": "271r", "canvas": 547, "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8555834s/f547/full/full/0/native.jpg", "note": "cipher no.1 continuation", "fetch_note": "one retry after Recv failure: Connection reset by peer"},
+    "f274r_canvas553.jpg": {"folio": "274r", "canvas": 553, "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8555834s/f553/full/full/0/native.jpg", "note": "Tomokiyo's cipher no.2: alphabet-substitution grid + title list; Tomokiyo: 'I have not seen an actual use of this cipher' -- not the key named for f.268"},
+    "f275r_canvas555.jpg": {"folio": "275r", "canvas": 555, "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8555834s/f555/full/full/0/native.jpg", "note": "Tomokiyo's cipher no.3, 'Bongars' Cipher (1604-1611)' -- explicitly named as the key for Villeroy-to-Bongars letters July-Nov 1604 including f.268 ('This cipher can solve an undeciphered letter, dated 2 November 1604 and signed by Villeroy, in BnF fr.7129, f.268')"}
+  },
+  "requests": {
+    "gallica.bnf.fr": "6 native.jpg fetches (1 needed one retry after Recv failure: Connection reset by peer), all >=2s apart, browser-style UA"
+  }
+}

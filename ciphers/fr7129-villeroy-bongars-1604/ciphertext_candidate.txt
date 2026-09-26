@@ -1,0 +1,21 @@
+# CANDIDATE transcription -- KEY-7129 job, 26 Sept 2026. NOT the file of record.
+# Cipher block at the foot of BnF fr.7129 f.268r (Villeroy to Bongars, 2 Nov 1604), 6 lines.
+# Source: images/keys/f268r_canvas541.jpg, native 3721x5914, cipher block approx y=1560-5914/2225 of the
+# 1400px preview (i.e. roughly the bottom 30% of the recto). Read at native resolution in two overlapping
+# ~2000px-wide crops (scratchpad crops f268r_cipher_left2.jpg / _right2.jpg, not committed -- regenerate
+# from the manifest URL + this file's own crop coordinates if needed).
+#
+# Token legend: a bare 1-2 digit number is written as digits (e.g. "78"); a number the scribe wrote with an
+# overbar (per Tomokiyo: "1-43 with an overbar") is written "^NN"; [SYM] marks a recurring curled hook glyph
+# (looks like a stylised open parenthesis with a tail) that appears very frequently between other tokens --
+# not a digit or a plain Latin letter, consistent with Tomokiyo's "symbols for doubling/cancelling the
+# preceding letter" for cipher no.3; a plain single Latin letter is written as itself; "?" marks a token this
+# pass could not read with confidence. This transcription is a first pass for a SHAPE test only (rule 3 /
+# CLAUDE.md "no reading claim") -- do not decode from it.
+
+^7 17 un [SYM] 7 0 26 ^3z ^9z un 28 un
+[SYM] 26 ^ff yg dyBod [SYM] 88 25 0 72 ^1 un 0 25 96 un 2a
+72 17 un 4 ft [SYM] uy y 1b 43 un y 15 61 7 un un
+[SYM] 3 dy π 9y y 7 30 7 un 81 7 ss o vy ft 40
+61 π b [SYM] a 4 6a p 48 g y y5 25 09 d 5 e
+[SYM] un un 43 π [SYM] ^2 ^49 kd ? f p y 15 c od πg
