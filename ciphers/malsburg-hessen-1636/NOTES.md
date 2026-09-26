@@ -466,3 +466,96 @@ above), `recon_0028/`, `recon_0030/` (re-run with the full map), `tools/reconcil
 `tools/tests/test_reconcile_passes.py`.
 
 Hosts: none (all work from images and pass TSVs already on disk).
+
+## Record 505 f.23 (bMAL23, 26 Sept 2026)
+
+Intake gate re-run: `python3 tools/intake_gate_check.py malsburg-hessen-1636` -> `malsburg-hessen-1636: partial
+(line 1)`, exit 0.
+
+**Crop step.** `python3 tools/iiif_lines.py --image images/hstam_4_h_1411_0023.jpg --out crops/0023 --debug` ->
+region 2226x2930, 52 lines, 52 bands x 1 segment. Debug overlay checked. The clear/cipher boundary is not where
+bMALC's low-resolution estimate placed it: reading the crops directly (not just eyeballing the debug overlay),
+L01 is the salutation/header line, L02-L13 are clear German prose (13 clear lines, not ~8), and L14 opens with
+two or three clear words ("bestand gegeben,") before the cipher block starts mid-line and runs solid to L52
+(39 cipher-bearing lines, L14-L52). `clear_0023.txt` transcribes L01-L13 in a single non-blind pass (this
+worker read the crops directly) -- flagged LOW CONFIDENCE throughout: this is dense 17th-century chancery
+cursive at the edge of what a non-specialist single pass can read, provided as crib context only, not cited as
+an H/C-grade reading (rule 2).
+
+**Two blind passes, four blocks.** L14-L52 (39 lines) split into four blocks of <=10 lines (L14-23, L24-33,
+L34-43, L44-52); each block's crop paths (never a full leaf) given to two fresh Sonnet subagents per block,
+neither seeing the other's output or any other repository file, both given bMALG's glyph-convention paragraph
+verbatim. 8 subagent calls total (Usage 6 pricing: 4 blocks x 2 passes, not the brief's rough 5x2=10 estimate,
+since the real clear/cipher boundary gave fewer cipher lines than bMALC's rough estimate). Per-block token
+counts: block1 (L14-23) A=403/B=406, block2 (L24-33) A=394/B=392, block3 (L34-43) A=368/B=372, block4 (L44-52)
+A=323/B=318. Pushed after each block.
+
+**Reconcile.** `python3 tools/reconcile_passes.py transcription/pass_a_0023.tsv transcription/pass_b_0023.tsv
+--sign-map glyph_map.tsv --crops crops/0023 --out-dir recon_0023` (the four blocks' pass files concatenated
+first, line ids unique across blocks) -> lines 39, signs A 1490 B 1488, agree 1237/1503 = 82.3% (nw), 266
+disagreement rows.
+
+**Settling from the image.** 267 disagreement rows (266 data rows) is well over the 50-row settle cap, so
+settling targeted the highest-value patterns rather than working row by row: five recurring value-pair
+patterns were each confirmed by zooming (PIL crop + 2-6x upscale, `recon_0023/zoom/`) on 2-4 independent
+occurrences before generalizing to every instance of that exact pair, plus four one-off L14 tokens settled
+individually --
+
+| pattern (A/B canonical) | n | zoomed at | settled to | grade | note |
+|---|---|---|---|---|---|
+| 26 / 16 | 11 | L14 x2, L17 x2, L18 | 16 | H | pass A mislabelled the established i6->16 dotted-cursive-1 shape (glyph_map.tsv, H, 36 occurrences on f.28) as the ambiguous z-hook; not a new convention, a mis-tagged instance of the existing one |
+| 16 / 10 | 23 | L34 pos12, L36 | 16 | H | same i6->16 shape read correctly by pass A as literal "16"; pass B misread the dotted-i as a "0" |
+| 61 / 01 | 7 | L36 | 61 | H | plain "6" + dotted-1, order reversed from the i6 pattern; pass B misread the leading 6 as 0 |
+| Und / und | 4 | (case only, no zoom needed) | Und | H | bMALG's own case convention: canonical is the capital mark, already an H-grade clear word |
+| 22 / 2 | 10 | L45 | -- left M | not settled -- kept M/open (see below) |
+| L14 pos12 | 1 | L14_mid | 19 | H | dotted-1 + loop-9 |
+| L14 pos19 | 1 | L14_gap | 11 | H | two matching dotted strokes, no crossbar for a 4 |
+| L14 pos34 | 1 | L14_right | 80 | H | round figure-eight, not 30 |
+| L14 pos36 | 1 | L14_right | 55 | H | two matching 5-shapes |
+
+49 rows settled (at the cap), all recorded with a `why` column note in `recon_0023/ciphertext_draft.tsv`
+(`settled:<reason>`) rather than silently overwritten. The `22/2` pattern (10 rows) was zoomed and the stroke
+count genuinely confirmed as doubled (matching pass A's "zz"), but z remains grade M per bMALG (shape not
+settled to a confirmed digit, only the token-count question was resolved) -- left as an open M rather than
+counted against the 50-row cap, since choosing between two M-grade readings isn't the same operation as
+confirming an H-grade digit. Two segmentation-only disagreements (L14 pos18 `56`/`z56`, pos37 `27`/`77`) were
+looked at and left open per bMALG's own guidance ("these look like token-boundary/segmentation disagreements
+... a different question from glyph shape ... stay open disagreements"). The remaining ~210 disagreement rows
+were not individually zoomed (over the 50-row cap) and stay at grade M.
+
+**Result.** N=1503 signs, K=164 distinct values. Grade counts after settling: H=1286 (85.6%), M=217 (14.4%).
+
+**Gate.** `python3 tools/leaf_pool_gate.py --leaf recon_0023/ciphertext_draft.tsv --pool ciphertext.txt --seed
+20260926 --json recon_0023/gate.json`:
+```
+leaf recon_0023/ciphertext_draft.tsv: N=1503 K=164 M=0.144 (<= 0.15) offform=0.039 (<= 0.05) vocab overlap 0.865;
+cosine real 0.826 vs relabel mean 0.435 p95 0.515 -> ADMITTED
+  offform examples: AH FF GG Gauß ILLEGIBLE Y1 agindest antwort auff dato daß es
+```
+All three gates met (M 0.144<=0.15; off-form 0.039<=0.05; cosine 0.826 well above the relabel p95 0.515) --
+f.23 is admitted to the pool. Not yet merged into `ciphertext.txt` (out of this job's scope; the orchestrator
+admits per CLAUDE.md rule 3's per-leaf merge gate).
+
+**L34/L38/L41/L42 plain-script spans.** These four lines (all in blocks 3-4) carry short runs of plain cursive
+German interleaved with the numeral code rather than being solid cipher (matches the pattern already seen on
+507/508's postscripts) -- pass A's block3 call read one such span as "Befehlshaber Gauß" (L34, opening words);
+zoomed directly (`recon_0023/zoom/L34_start.jpg`) and confirmed there genuinely is cursive prose there (not a
+subagent fabrication), but the exact reading is not confirmed to H and is left as pass A's plain-text guess at
+grade M in the draft, flagged here rather than promoted. A future job could zoom these four spans specifically.
+
+Files: `crops/0023/` (52 line crops + manifest; debug overlay recompressed then dropped from git, regenerable
+in one command from images/hstam_4_h_1411_0023.jpg), `clear_0023.txt`,
+`transcription/pass_{a,b}_0023_block{1,2,3,4}.tsv` + concatenated `pass_{a,b}_0023.tsv`, `recon_0023/`
+(disagreements.tsv, ciphertext_draft.tsv, agreement.tsv, gate.json, zoom/ -- 11 settling-zoom images kept at
+reduced JPEG quality, matching the settled rows above, redundant/duplicate zooms pruned).
+
+**Folder-size flag for the orchestrator.** This job's own net addition (crops/0023 + recon_0023 +
+transcription increment) is about 2.2 MB; the folder crossed 30 MB (30.5 MB after this job's own crops were
+recompressed to quality 45-55 and the regenerable debug overlay dropped from git) because `images/` (22.6 MB,
+16 leaf images from bMALC's earlier fetch, none of them mine) plus `crops/0028`/`crops/0030` (4.6 MB, bMALG's)
+were already close to the line before this job started. Not shrunk further here: doing that safely needs the
+AX2-SHRINK regen-verified process (byte-identical re-derivation check before deleting anything), which is a
+separate, larger job than this one's brief -- flagged for the lane orchestrator per rule 7/Usage 8a rather than
+improvised.
+
+Hosts: none (image already on disk from bMALC's fetch).
