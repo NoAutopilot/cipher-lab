@@ -500,3 +500,104 @@ JSTOR family: searched on the owner's machine 24 Sept 2026, 4 rows, 0 candidates
 Open indexes: OpenAlex (`api.openalex.org/works?search=...`) and Semantic Scholar (`/graph/v1/paper/search`) retried once each from the cloud at about 17:21 UTC: both HTTP 429 (shared free daily budget used up). The owner's run of 24 Sept 2026 (ASKS 34) covered Thurloe, Eckert and Blathwayt only; this target's queries are owed (ASKS row 44, `outreach/openalex-s2-owner-queries-2.md`).
 
 Outward drafts written this session (status drafted, nothing sent): see `outreach/` and CONTRIBUTIONS.md.
+
+## Revision log (26 Sept 2026, LANE AX): readings revised after this audit
+
+Worker AX-REDERIV (Sonnet), brief `.claude/briefs/runs/2026-09-26-lane-ax-rederiv.md`. This is a log entry, not a
+verifier pass: it records what changed in the readings after every class above was assigned, and names what a
+verifier should re-check. It sets no N-class and changes none of the classes recorded above.
+
+**What changed.** Since this AUDIT.md's classes were assigned, two LANE AX workers (AX-NAMES2, AX-MERGE, both
+26 Sept 2026, logged in this folder's NOTES.md) built `key_full.tsv` -- `key.tsv` plus 22 codes newly licensed
+from (a) contemporary interlinear glosses on sibling WVO letters 5550 and 4496 (grade H, rule 4), (b) Groen's
+own printed French at the exact 5797 cluster (grade C), and (c) >=4-observation empty-NULL codes from the
+sibling-letter aligner (`names.tsv`, grade C) -- and regenerated `reading_{4610,4611,4616}_full.txt` and the
+5797 spots file (`reading_5797_full.txt`) from it. `revisions_for_audit.tsv` (249 rows) is the full diff against
+the `key.tsv`-only readings this AUDIT.md's classes were written against; this session (AX-REDERIV) independently
+re-derived all four readings fresh from `key_full.tsv` and the transcriptions and found them byte-for-byte
+identical to the committed files (0 tokens differing from a from-scratch regeneration; NOTES.md AX-REDERIV
+section, 26 Sept 2026) -- the revision content below is confirmed reproducible, not merely committed.
+
+**Counts per letter** (NULL placements: a `?`/unkeyed position resolved to a silent null, no letter recovered;
+word/name changes: a position now reads a person/place/title):
+
+| letter | class above | NULL placements | word/name changes | total revised | U before -> after |
+|---|---|---|---|---|---|
+| 4610 | N4 | 122 | 11 | 133 | 288 -> 155 |
+| 4611 | N4 | 88 | 8 | 96 | 227 -> 131 |
+| 4616 | N4 | 1 | 0 | 1 | 26 -> 25 |
+| 4612 | N3 | -- | -- | 0 (not touched; still no reading, key_full does not license a table change) | unchanged |
+| 5797 (spots file, not yet classed above) | not classed | 15 | 4 | 19 | 31 -> 12 |
+
+226 NULL + 23 word/name = 249 total, matching `revisions_for_audit.tsv`'s row count exactly (checked by this
+session directly against the file, not copied from a prior summary). Note for whoever next reads this: an
+earlier in-progress count (AX-NAMES2, before AX-MERGE's second pass) cited "14" word/name rows; the current,
+committed `revisions_for_audit.tsv` has 23 (AX-MERGE's pass added the 192/roidespagne and 221/hollande rows
+after AX-NAMES2 wrote that figure). The 23 below is what is actually on disk.
+
+**The 23 word/name changes, individually** (position, old value graded U with no letter, new value and grade;
+source tag keyed below):
+
+| letter | line | pos | old -> new | grade | source |
+|---|---|---|---|---|---|
+| 4610 | p1_L33 | 2 | ? U -> roidespagne | H | [S-192] |
+| 4610 | p1_L34 | 12 | ? U -> roidespagne | H | [S-192] |
+| 4610 | p2_L02 | 1 | ? U -> roidespagne | M | [S-192] (M: sign-confidence downgrade at this position) |
+| 4610 | p2_L11 | 18 | ? U -> hollande | H | [S-221] |
+| 4610 | p3_L03 | 20 | ? U -> pfaltzgraf | H | [S-153], see flag below |
+| 4610 | p3_L08 | 2 | ? U -> roidespagne | H | [S-192] |
+| 4610 | p3_L09 | 11 | ? U -> pfaltzgraf | H | [S-153], see flag below |
+| 4610 | p3_L13 | 1 | ? U -> roidespagne | H | [S-192] |
+| 4610 | p3_L15 | 6 | ? U -> herzogvonalba | C | [S-200] |
+| 4610 | p3_L15 | 10 | ? U -> franckreich | H | [S-202] |
+| 4610 | p3_L22 | 14 | ? U -> roidespagne | H | [S-192] |
+| 4611 | p1_L14 | 12 | ? U -> herzogvonalba | C | [S-200] |
+| 4611 | p1_L24 | 7 | ? U -> harlem | C | [S-223] |
+| 4611 | p2_L01 | 14 | ? U -> hollande | H | [S-221] |
+| 4611 | p2_L02 | 10 | ? U -> herzogvonalba | C | [S-200] |
+| 4611 | p2_L10 | 3 | ? U -> hollande | H | [S-221] |
+| 4611 | p2_L17 | 18 | ? U -> herzogvonalba | C | [S-200] |
+| 4611 | p2_L20 | 4 | ? U -> herzogvonalba | M | [S-200] (M: sign-confidence downgrade at this position) |
+| 4611 | p2_L20 | 14 | ? U -> herzogvonalba | C | [S-200] |
+| 5797 | p5_spot3 | 2 | ? U -> herzogvonsachsen | C | [S-154] |
+| 5797 | p5_spot3 | 7 | ? U -> landgraf | H | [S-161], see key-source check below |
+| 5797 | p6_control_abso | 4 | ? U -> herzogvonalba | M | [S-200] (M: sign-confidence downgrade at this position) |
+| 5797 | p7_spot2 | 1 | ? U -> pfaltzgraf | H | [S-153], see flag below |
+
+Source key: [S-153] "5550 leaf 2 contemporary interlinear gloss 'Palsgrave' over 153 (x2, runs p2-5, p2-11)".
+[S-161] "5550 leaf 2 contemporary interlinear gloss 'Lantgrave' over 161 (run p2-11, bey 153.161 und)".
+[S-192] "4496 (WVO PDF p4) contemporary interlinear gloss 'R. d'Espagne' over 192, confirmed by two independent
+blind Sonnet passes (AX-GLOSS)". [S-221] "4496 (WVO PDF p4) contemporary interlinear gloss 'Hollando' over 221
+(x3), corroborated unglossed in 4614 p1 'tiré de la Haye en 221'". [S-200] "Groen IV p.224 prints 'vom Herzog
+von Alba absondern' at 5797 p6 'von 200.122.132.142 abso-'" (print-at-cluster, grade C by rule 4; the one M row
+per letter is this session's transcription-confidence downgrade, not a different source). [S-202] "5550
+contemporary interlinear gloss over 202 (x4, runs p1-1, p2-3, p2-9, p2-15)". [S-223] "aligned to Groen IV
+CDLXVIII (5810) print, 3 of 3 observations agree". [S-154] "Groen IV pp.223-224 prints 'Bey dem Herzog von
+Sachsen und' at 5797 p5 'Bey 154.124.144.134 und'".
+
+**Key-source check on 153/161 (this session, AX-REDERIV) -- flag for the next verifier.** I opened WVO 5550
+(the source PDF, not on disk before this session) myself and read the interlinear gloss before opening any
+transcription of it (NOTES.md AX-REDERIV section has the crops and full account). Code 161's single occurrence
+and one of code 153's two occurrences (the run "153.161. und", page 2) carry an unambiguous per-code gloss
+reading "Pfaltzgraue" over 153 and "Lanttgraue" over 161 -- this independently confirms the H grade for both.
+**Code 153's other occurrence** (the run "153.130.90.1.79.173", same page) carries a different gloss, "Ertz-
+hertzoge vnd graf" (Archduke and Count), spanning the six-code run rather than a single word over 153 -- **not**
+a confirmation of "Palsgrave" at that spot as [S-153]'s "(x2, ...)" wording implies. This does not overturn the H
+grade (the p2-11 occurrence and the 5797 p7_spot2 match against Groen's clear frame both still support
+153=pfaltzgraf independently), but a verifier re-confirming the classes above should know the source note's "x2"
+corroboration for code 153 is only half borne out by an independent read, and treat the three rows tagged
+"[S-153], see flag below" (4610 p3_L03, 4610 p3_L09, 5797 p7_spot2) accordingly.
+
+**For the verifier.** The N-classes above (4610, 4611, 4616 at N4; 4612 at N3) were assigned against the
+`key.tsv`-only readings, before `key_full.tsv` existed. These revisions add proper names, place names and
+titles read from period interlinear glosses (Palsgrave/Pfaltzgraf, Landgrave, King of Spain, Holland, Duke of
+Alba, France, Harlem, Duke of Saxony) plus additional silent-null placements; they do not add any new plaintext
+content that was not already implied by the earlier reading's unresolved `?` positions, and this session's own
+print/gloss searches (rule 10 sense) were not run -- no new novelty search was done here. A verifier should
+confirm the classes still hold given the added name content (in particular, whether any of the eight now-named
+titles/places changes what a phrase search for 4610/4611/4616 should have tried) before this folder's classes
+are treated as current against `key_full.tsv`. Not done here: novelty was not reclassified, per the brief's
+scope; this is a log, not an audit pass.
+
+SO-LODEWIJK-1573-74 (`SECOND-OPINIONS-QUEUE.tsv`): a note was appended to that row's last column pointing back
+here, since the second opinion answered was against the pre-`key_full` reading.

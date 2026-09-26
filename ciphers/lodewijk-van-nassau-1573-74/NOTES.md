@@ -1407,3 +1407,80 @@ list, now stale relative to v2, flagged for whoever next touches them): `axnames
 sanity_4503.out,still_unread.tsv,null_raw.tsv,falsenull_diag.out}` -- none of their headline numbers depend on
 123/128/136/192/221 (5810/5811/4503 don't contain 192/221 either, per the same occurrence check), but they were
 built against key_full v1 and should be re-run before being cited again. Novelty not classified (rule 10).
+
+## AX-REDERIV: fresh re-derivation and key-source check (26 Sept 2026, LANE AX)
+
+Worker AX-REDERIV (Sonnet), brief `.claude/briefs/runs/2026-09-26-lane-ax-rederiv.md`, started 03:11 UTC (clock
+read). Freshness rule followed: step 1 read only `specs/lodewijk-5797.json`, `key_full.tsv`, `ciphertext_{5797,
+4610,4611,4616}.tsv`, `decode_{5797,4610,4611,4616}_full.json` and `tools/decode_key.py`; NOTES.md's AX-NAMES2/
+AX-MERGE sections and `revisions_for_audit.tsv` were opened only after step 1's outputs were written (below).
+
+**(1) Fresh-instance re-derivation (rule 7).** `python3 tools/decode_key.py ciphers/lodewijk-van-nassau-1573-74
+--config <decode_N_full.json> --check` for each of the four `decode_*_full.json` configs, then independently
+regenerated each reading into the scratchpad (never over the committed files, via a copy of each config
+retargeting `reading`/`tokens` to the scratchpad) and `diff`ed byte for byte against the committed
+`reading_<n>_full.txt` / `_full_tokens.tsv`:
+
+| letter | tokens (H/C/S/M/I/U) | differing tokens (scratch vs committed) | of which non-M |
+|---|---|---|---|
+| 5797 | 73 (C 15, H 2, I 3, M 41, U 12) | 0 | 0 |
+| 4610 | 1545 (C 1203, H 9, I 58, M 120, U 155) | 0 | 0 |
+| 4611 | 1393 (C 913, H 2, I 71, M 276, U 131) | 0 | 0 |
+| 4616 | 261 (C 208, I 1, M 27, U 25) | 0 | 0 |
+
+**Re-derivation PASSES for all four letters**: `--check` reported "reading up to date" on every config, and a
+fully independent regeneration into the scratchpad diffed byte-for-byte identical (0 differing tokens, so
+trivially 0 differing tokens beyond the M grade) against every committed reading and token file. Rule 7's
+condition for the AUDIT-move gate is met: nothing here sends a reading back.
+
+**(2) Key-source check, key_full rows 153 and 161** (grade H, source "5550 leaf 2 contemporary interlinear
+gloss ... over 153 / 161"). `05550.pdf` not on disk (`ciphers/jan-van-nassau-1572-75/images/` has no `05550*`);
+fetched `https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05550.pdf` once (200, reachability
+checked first, descriptive UA, 1 request), rendered to PNG with `pymupdf` (installed this session, no
+`pdftoppm`/`fitz` binary present) at 300-1200dpi crops. Read the leaf myself before opening anyone's
+transcription of it (`revisions_for_audit.tsv`'s source column, key_full.tsv's note column, and AX-GLOSS's own
+prose were all read only afterward, in step 3).
+
+Code 161 occurs once on this leaf, in the run "153.161. und andere so bu[ndnus]..." (page 2 of 4, the row
+starting "68.36.9.76.3.37.26.135"). The interlinear gloss directly above this run reads two words, one over each
+number: **over 153, "Pfaltzgraue"; over 161, "Lanttgraue"** -- a clean, unambiguous one-gloss-word-per-code
+correspondence. This independently confirms key_full's H-graded values (153=pfaltzgraf/Palsgrave, i.e. Count
+Palatine; 161=landgraf/Landgrave) for this occurrence. Crop:
+`images_wv2/crops_rederiv/05550_p2_153-161_gloss.png`.
+
+Code 153 occurs a second time on the same leaf, in the run "153.130.90.1.79.173" (same page, a few lines above
+the first). key_full's note describes this as the second of "x2" occurrences reading "Palsgrave". **My own
+reading of this second occurrence does not confirm that**: the interlinear gloss above this six-code run reads
+"Ertzhertzoge vnd graf" (Archduke and Count) as a phrase spanning the run, not a single word "Palsgrave"/
+"Pfaltzgraue" positioned over 153 specifically -- three gloss words over six codes, the leading word ("Ertz-
+hertzoge") sitting above 153 itself. "Erzherzog" (Archduke) and "Pfalzgraf" (Count Palatine/Palsgrave) are
+different noble titles in contemporary German usage; I could not reconcile the two readings by eye and am not
+attempting to (out of this brief's scope, and not mine to resolve). Crop:
+`images_wv2/crops_rederiv/05550_p2_153-130-run_gloss.png` (context crop, full run + gloss).
+**Flag for the orchestrator/AX-GLOSS lane**: key_full's source note "(x2, runs p2-5, p2-11)" for code 153
+overstates what I independently read -- only one of the two cited occurrences (run p2-11, "153.161") shows an
+unambiguous per-code "Palsgrave" gloss; the other (run p2-5, "153.130.90.1.79.173") shows a different, multi-
+word phrase whose relationship to a fixed value for code 153 is not established by my reading alone. This does
+not by itself overturn the H grade (the p2-11 occurrence still supports it cleanly, and 153=pfaltzgraf also
+reads correctly at 5797 p7_spot2 against Groen's clear frame, AX-NAMES2 table), but the "x2" corroboration claim
+in the note is not fully borne out and the row is not as doubly-attested as its source line implies.
+
+**(3) Key-source check, 4496 gloss over 192 and 221** (time allowed). `04496.pdf` fetched once (200, 1 request,
+2s after the 05550 request), page 4 of 5 rendered and cropped. Line 2 of the page reads "221.134.125.8. et
+241.113.85.124.192. pour 113.82...". Directly above **221** (the first number of the line) sits the gloss
+**"Hollando"**; directly above **192** sits the gloss **"[Le] R. d'Espagne"** ("[the] King of Spain") -- both
+clean, isolated, one-code correspondences, read before opening AX-GLOSS's own transcription. This independently
+confirms key_full's H-graded values (221=hollande, 192=roidespagne). Crops:
+`images_wv2/crops_rederiv/04496_p4_221_hollando_gloss.png`, `images_wv2/crops_rederiv/04496_p4_192_espagne_gloss.png`.
+
+**(4) AUDIT.md and SECOND-OPINIONS-QUEUE.tsv.** Per the brief, appended an append-only "Revision log" section to
+AUDIT.md (counts and the 23 individually-listed word/name changes from `revisions_for_audit.tsv`, the 153 gloss
+flag above, and a note that a verifier should re-confirm the N-classes); no N-class changed. Appended one
+sentence to `SECOND-OPINIONS-QUEUE.tsv` row SO-LODEWIJK-1573-74's last column.
+
+Hosts: `resources.huygens.knaw.nl` 2 requests (05550.pdf, 04496.pdf), >=2s apart, descriptive UA, both HTTP 200
+(reachability checked with a HEAD-style status probe first on each). No other hosts. No subagents.
+
+Files: this section; `images_wv2/crops_rederiv/{05550_p2_153-161_gloss.png,05550_p2_153-130-run_gloss.png,
+04496_p4_221_hollando_gloss.png,04496_p4_192_espagne_gloss.png}`; `AUDIT.md` (append only); `SECOND-OPINIONS-QUEUE.tsv`
+(one cell). Novelty not classified (rule 10); no N-class changed (out of scope, per the brief).
