@@ -40,8 +40,7 @@ full texts, 26 Sept 2026). No printed decipherment found by any search logged in
 
 **(ii) A-42, ff.441-442 — a period decipherment sheet, same legajo, cheap to add.** The Índice's own entry
 (inv. 6501) reads "Texto descifrado de los párrafos en cifra de los tres documentos anteriores: Cartas de
-Alonso [Sánchez — exact continuation not resolved]" — a contemporary decipherment of **three** Alonso Sánchez
-letters, not yet matched to specific inv. numbers. Requested regardless since it is two folios in the same
+Alonso [Sánchez — exact continuation not resolved]" — a contemporary decipherment of what the Índice's own entries show to be **one** Alonso Sánchez letter of 17 Jun 1528 in three exemplars (inv. 6498-6500), per OUT-CHECK-2's reading of the index on 26 Sept 2026 -- so it validates the Sánchez key against one letter, not a group. Requested regardless since it is two folios in the same
 legajo as items already being asked for; if it decodes any of the group (i) rows above, or the crib pairs in
 (iii), it settles one or more of them for free.
 
