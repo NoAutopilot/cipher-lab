@@ -1,0 +1,9 @@
+COMMON RULES (LANE SALV worker; parent LANE SALV orchestrator, session_01PUAQ15dRtV3yV1eskpRLg5; lane goal: fr2933-salviati-1525, Cardinal Giovanni Salviati, 16 Oct 1525, BnF Francais 2933 no. 11 f.54r-57v -- give the code types their context by transcribing the plain Italian between the sign runs, then score code types against it with a matched control; intake gate exit 0, 26 Sept 2026 20:44 UTC: `fr2933-salviati-1525: open (line 1) -- edition/page or full-text-search citation found within 6 lines`).
+
+Everything in `.claude/briefs/runs/2026-09-26-lane-arm-COMMON.md` applies unchanged, reading "LANE SALV" for "LANE ARM", `ciphers/fr2933-salviati-1525/` for `ciphers/armstrong-madison-1808/`, and with these differences:
+- Claim as `LANE SALV worker <JOB-ID>`; flags and done lines are "for LANE SALV".
+- Hosts for this lane: archive.org (advancedsearch, metadata, `_djvu.txt`, be-api fts) and gallica.bnf.fr IIIF image API only (browser User-Agent, >=2 s apart, the URLs already recorded in `ciphers/fr2933-salviati-1525/regen_images.sh` / `images/manifest.json`, at most 20 requests per session). No other host unless your job brief names it.
+- Read first: `ciphers/fr2933-salviati-1525/NOTES.md` lines 1-12 and the sections your job brief names (the file is 2,100+ lines: grep the heading, read that section, not the whole file).
+- The target stays `partial` (rule 5). No reading exists; do not write one. Never write solved, new, first, unpublished; never write the owner's name.
+- Folder under 30 MB (CLAUDE.md access playbook): commit crops only if the folder stays under 30 MB (check `du -sh` before committing); otherwise commit the crop script and a manifest, not the crops, and say so.
+- Before the final push: `python3 tools/file_shrink_guard.py <every existing file you touched>` and paste its output into your done line.
