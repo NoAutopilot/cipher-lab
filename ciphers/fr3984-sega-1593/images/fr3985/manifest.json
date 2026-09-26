@@ -1,0 +1,23 @@
+{
+  "source": "BnF fr.3985 (ark:/12148/btv1b90606498), canvases f6-f16, native-resolution IIIF fetch",
+  "fetched": "26 Sept 2026",
+  "why": "NEXT-STEPS.tsv row fr3984-sega-1593: the earlier csED2 pass (24 Sept 2026) flagged that it had not fetched the fr.3985 leaf itself to check the date and hand against Goujet 1758's print; csCS2c (24 Sept 2026) viewed canvases f6-f16 at reduced resolution (1000px) and identified f15 as item no.7 (Mauclerc to Creil) but did not save any image to disk. This fetch saves full-resolution copies and adds two zoom crops to resolve csCS2c's own flagged '3 or possibly 4' date ambiguity and to check the marginal item number it read as '7'.",
+  "files": {
+    "f06.jpg": {"url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90606498/f6/full/2000,/0/native.jpg", "canvas": 6, "item": "3 (Italian letter, Giovan Piemarino, unrelated)"},
+    "f07.jpg": {"url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90606498/f7/full/2000,/0/native.jpg", "canvas": 7, "item": "3 continued"},
+    "f08.jpg": {"url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90606498/f8/full/2000,/0/native.jpg", "canvas": 8, "item": "3 continued, dated '8 d'aoust 1593' per csCS2c"},
+    "f09.jpg": {"url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90606498/f9/full/2000,/0/native.jpg", "canvas": 9, "item": "unlabelled (between items 3 and 4)", "note": "fetched after one retry (Recv failure: Connection reset by peer)"},
+    "f10.jpg": {"url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90606498/f10/full/2000,/0/native.jpg", "canvas": 10, "item": "4 (address leaf only, 'Abiagino...notario in Tortona')"},
+    "f11.jpg": {"url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90606498/f11/full/2000,/0/native.jpg", "canvas": 11, "item": "5 (French, dated '3 aoust 1593', unrelated)"},
+    "f12.jpg": {"url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90606498/f12/full/2000,/0/native.jpg", "canvas": 12, "item": "5 continued", "note": "fetched after one retry"},
+    "f13.jpg": {"url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90606498/f13/full/2000,/0/native.jpg", "canvas": 13, "item": "6 (blank docket leaf per csCS2c)", "note": "fetched after one retry"},
+    "f14.jpg": {"url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90606498/f14/full/2000,/0/native.jpg", "canvas": 14, "item": "address leaf, 'Monseigneur le Duc de Nevers...'"},
+    "f15.jpg": {"url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90606498/f15/full/2000,/0/native.jpg", "canvas": 15, "item": "the Mauclerc-to-Creil letter itself", "native_size_px": "4728x6578"},
+    "f16.jpg": {"url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90606498/f16/full/2000,/0/native.jpg", "canvas": 16, "item": "verso/address side of the Mauclerc letter, docket 'Mauclerc'", "note": "fetched after one retry"},
+    "date_crop_f15b.jpg": {"url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90606498/f15/200,750,1800,350/1800,/0/native.jpg", "note": "native-resolution region crop of the dateline, top-left of f15 -- reads unambiguously '3 d'aoust 1593.'"},
+    "num_crop_f15c.jpg": {"url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90606498/f15/3500,700,700,500/900,/0/native.jpg", "note": "native-resolution region crop of the top-right marginal numeral on f15 -- reads '4', not '7' as csCS2c's 1000px-resolution pass read it"}
+  },
+  "requests": {
+    "gallica.bnf.fr": "11 full-page IIIF fetches (4 needed one retry each after Recv failure: Connection reset by peer) + 1 info.json + 2 region crops (1 failed attempt at wrong coordinates, corrected) = 17, all >=1.8s apart, browser-style UA"
+  }
+}

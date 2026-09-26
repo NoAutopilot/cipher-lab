@@ -199,3 +199,53 @@ manifest x1 (`btv1b90606498`), image fetches f6-f16 inclusive (11 canvases, seve
 `ws_closed_mid_exchange` proxy reset, logged per the good-citizen rule) plus 2 high-resolution region crops on
 f15 to try to resolve the "3" vs "4" date reading (inconclusive, not pursued further -- Gallica request budget
 for this brief, <=25, was reached here and no further Gallica calls were made this session).
+
+## IMG-FETCH: fr.3985 leaf saved to disk, date and item-number crops (26 Sept 2026)
+
+Per NEXT-STEPS.tsv's row: fetched canvases f6-f16 of BnF fr.3985 (`btv1b90606498`) at native
+resolution (2000px width; f15's own native size is 4728x6578) and saved them to `images/fr3985/`
+with `manifest.json` -- csCS2c (24 Sept 2026) viewed these same canvases but at 1000px and did not
+save anything to disk, so this is the first time this leaf exists as a file in the repo. 11 page
+fetches (4 needed one retry after `Recv failure: Connection reset by peer`) plus 2 region crops at
+full native resolution, all >=1.8s apart.
+
+**Date line, resolved.** csCS2c's own read flagged "3 [or possibly 4, period numeral shapes for
+3/4 are easily confused at this resolution] d'aoust 1593" (that pass's 1000px image). A native-
+resolution region crop of the same line (`date_crop_f15b.jpg`) reads unambiguously: the day-of-month
+numeral is an open, flat-topped curl -- the period "3" shape -- clearly distinct from the closed,
+tailed "9" bowls two words later in "1593." **The manuscript's own dateline reads "3 d'aoust 1593,"
+not 4.** This means Goujet 1758's printed heading, "A Paris, le quatre d'Août 1593" ("4 August"),
+disagrees with the manuscript by one day. csCS2c's finding that the letter (sender, subject matter)
+matches the print is not affected by this -- Goujet's heading also differs from the manuscript in
+other small ways typical of an editor normalising a copy (the print gives a dateline "A Paris,"
+while the manuscript's own head is bare "3 d'aoust 1593." with no place-name visible in this crop) --
+but the date itself is a genuine one-day discrepancy between the manuscript and the 1758 print, not
+resolved by this pass (an editorial slip in 1758, a mis-transcription of the numeral by Goujet's own
+source, or two different copies of the same letter are all possible; not adjudicated here, out of
+scope for an image-fetch job).
+
+**Marginal item number, corrected.** csCS2c read a numeral "7" at the top right margin of f15 and
+used it to identify the leaf as the bundle's item no.7. A native-resolution crop of that same corner
+(`num_crop_f15c.jpg`) shows a bold numeral with a crossed diagonal stroke and a short tail -- **this
+reads as "4," not "7."** (For comparison, the same crop also shows a separate looping mark below the
+numeral that could be misread as part of a digit but is a distinct cursive flourish, not a second
+numeral.) This is a correction to csCS2c's own reading, not a challenge to its identification of the
+letter: the sender (signed "Mauclerc" at the foot of f15 and docketed "Mauclerc" vertically on f16's
+margin, both re-confirmed in this pass's full-page images) and subject matter (Mayenne's stalling,
+the oath before the papal legate, Spanish demands over the Guise-Infanta match) are the stronger
+identifiers csCS2c and csED2 relied on, and neither depends on the marginal numeral. Whether Goujet's
+or Bourdeau's "no. 7" comes from this marginal mark, a different (archival) numbering, or the
+bundle's overall item count is not resolved here -- flagged for whoever next touches the catalogue
+question, not pursued further (out of scope: no cryptanalysis, no catalogue reconciliation).
+
+**Hand and cipher, re-confirmed.** f15's full page (this pass's own image, not just csCS2c's
+description) is ordinary secretary-hand French from the salutation to the signature, with no digit
+groups or symbol substitutions anywhere on the leaf; f16 (verso) shows only the bleed-through of the
+recto's text, an ink blot, and the vertical "Mauclerc" docket label -- also no cipher. This matches
+csCS2c's finding: the leaf is a clear-text copy, never enciphered, sitting in an otherwise-enciphered
+bundle.
+
+Status unchanged: `found-solved` (fr.3985 no.7, grade F2, a clear-text copy, not a decipherment) /
+`blocked` (fr.3984 nos. 6, 8, 88, 90). No decoding, transcription or novelty classification performed
+(rule 10; out of scope for an image-fetch job). file_shrink_guard clean on NOTES.md and
+images/fr3985/*.
