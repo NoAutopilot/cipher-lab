@@ -97,3 +97,14 @@ archive's per-item handling for what is very likely one research question.
 **Recommended next step:** a single TNA page-copy order covering f.142, f.144, f.146, f.214 and f.222; if
 f.144's "French titles" turns out to be a real substitution/nomenclator key, this converts from a
 cryptanalysis candidate to a recovery (key-in-archive) target immediately on receipt of the copy.
+
+## NX-UNBLOCK (26 Sept 2026)
+
+Free-route pass per CLAUDE.md's NX-UNBLOCK brief: checked TNA's current record-copying fee page
+(`nationalarchives.gov.uk/help-with-your-research/record-copying/fees/`, read 19:01 UTC 26 Sept 2026 --
+page check £9.92/record, digital copy up to A3 £1.52/copy) and tried the TNA Discovery search API for a
+fresh digitisation check (`discovery.nationalarchives.gov.uk/API/search/records?sps.searchQuery=...`); it
+returned HTTP 500, not retried per the good-citizen single-retry rule. No new free scan or edition found for
+this item this pass; digitisation status stands as already recorded in this folder's REQUEST.md. This item
+is now item in the consolidated order `outreach/tna-page-copy-batch.md` (ASKS row 73, status backlog) rather
+than a standalone TNA order.

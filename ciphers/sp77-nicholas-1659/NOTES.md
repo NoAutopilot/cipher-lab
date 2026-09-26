@@ -95,3 +95,14 @@ f.289 — see REQUEST.md.
 Egerton MS. 2550 (ff. 24, 78 and its full contents list) for a key catalogued under "Sir L.R." or "San
 Sebastian" specifically, since the manuscript is already established as a repository of Nicholas's cipher
 keys for other correspondents — not chased this pass (no BL access on this lane).
+
+## NX-UNBLOCK (26 Sept 2026)
+
+Free-route pass per CLAUDE.md's NX-UNBLOCK brief: checked TNA's current record-copying fee page
+(`nationalarchives.gov.uk/help-with-your-research/record-copying/fees/`, read 19:01 UTC 26 Sept 2026 --
+page check £9.92/record, digital copy up to A3 £1.52/copy) and tried the TNA Discovery search API for a
+fresh digitisation check (`discovery.nationalarchives.gov.uk/API/search/records?sps.searchQuery=...`); it
+returned HTTP 500, not retried per the good-citizen single-retry rule. No new free scan or edition found for
+this item this pass; digitisation status stands as already recorded in this folder's REQUEST.md. This item
+is now item in the consolidated order `outreach/tna-page-copy-batch.md` (ASKS row 73, status backlog) rather
+than a standalone TNA order.

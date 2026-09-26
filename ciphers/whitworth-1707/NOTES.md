@@ -199,3 +199,14 @@ than folded into the closed-negative count.
 | 2026-09-19 | HathiTrust catalogue and full-text search | HTTP 403 from this environment; not checked |
 | 2026-09-19 | Google Books API for the Sbornik | No results returned |
 | 2026-09-19 | DECODE quick search box | Ignores the query; field searches (x_sender, x_c_holder, x_origin_region with z_*=LIKE) work and were used |
+
+## NX-UNBLOCK (26 Sept 2026)
+
+Free-route pass per CLAUDE.md's NX-UNBLOCK brief: checked TNA's current record-copying fee page
+(`nationalarchives.gov.uk/help-with-your-research/record-copying/fees/`, read 19:01 UTC 26 Sept 2026 --
+page check £9.92/record, digital copy up to A3 £1.52/copy) and tried the TNA Discovery search API for a
+fresh digitisation check (`discovery.nationalarchives.gov.uk/API/search/records?sps.searchQuery=...`); it
+returned HTTP 500, not retried per the good-citizen single-retry rule. No new free scan or edition found for
+this item this pass; digitisation status stands as already recorded in this folder's REQUEST.md. This item
+is now item in the consolidated order `outreach/tna-page-copy-batch.md` (ASKS row 73, status backlog) rather
+than a standalone TNA order.

@@ -98,3 +98,14 @@ f.103 — see REQUEST.md.
 to spare should check the `note` field of every item in SP 78/232 individually (not by keyword) for other
 "partly/wholly in cipher" siblings, and check the Hardwicke Papers (1778) for Joseph Yorke's Paris
 correspondence — neither chased this pass.
+
+## NX-UNBLOCK (26 Sept 2026)
+
+Free-route pass per CLAUDE.md's NX-UNBLOCK brief: checked TNA's current record-copying fee page
+(`nationalarchives.gov.uk/help-with-your-research/record-copying/fees/`, read 19:01 UTC 26 Sept 2026 --
+page check £9.92/record, digital copy up to A3 £1.52/copy) and tried the TNA Discovery search API for a
+fresh digitisation check (`discovery.nationalarchives.gov.uk/API/search/records?sps.searchQuery=...`); it
+returned HTTP 500, not retried per the good-citizen single-retry rule. No new free scan or edition found for
+this item this pass; digitisation status stands as already recorded in this folder's REQUEST.md. This item
+is now item in the consolidated order `outreach/tna-page-copy-batch.md` (ASKS row 73, status backlog) rather
+than a standalone TNA order.
