@@ -770,3 +770,11 @@ Items 5 (an undated note enclosed in item 4) and 6 ("Private to Mr M: 30th augus
 item 6 is most plausibly the 30 Aug 1808 letter whose cipher postscript Bourdeau decoded in THE=972
 (crib_sources.md; inferred from the date, not checked on the frame). Net: the docket batch is THE=972 office
 correspondence; no pool candidate. Family E stays **continue** for the correspondents' papers (ARM-LIV, ARM-JEF).
+
+## Family E, ARM-LIV recorded by LANE ARM2 (orchestrator, 26 Sept 2026 12:09 UTC; worker session_01L5aKfjboKCFPb2GkeoExiu, done 11:45)
+
+A search, not a test (no coded passage found, so nothing to screen). All five Robert R. Livingston-to-Madison letters
+of 1807-1809 in the LC Madison Papers (22 Mar 1807, 17 May 1807, 8 Jan 1808, 5 Feb 1808, 24 Jan 1809) are wholly in
+clear; the one cipher remark (22 Mar 1807) concerns the Burr/Wilkinson cipher, and the 8 Jan 1808 mention of Armstrong
+is the ordinary pouch. Detail: NOTES.md, crib_sources.md, pool/LIVINGSTON.tsv. WE027 (Livingston's own code) remains
+untested for want of a table. Family E: Livingston lead closed as a search result; ARM-JEF next.
