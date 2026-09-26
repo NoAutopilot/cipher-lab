@@ -1,0 +1,304 @@
+## Skiplinks
+ 
+ 
+Tekst [#content]
+ 
+Verantwoording en downloads [#subnav]
+ 
+Doorverwijzing en noten [#tekst_en_noten]
+ 
+  
+  
+ 
+   Ga naar de homepage  [/] 
+ 
+ 
+ 
+    [/] 
+ 
+ 
+
+## Hoofdmenu
+Menu 
+
+ 
+Literatuur & taal [#Literatuur_&_taal]
+ 
+Auteurs [/auteurs/index.php]
+ 
+Beschikbare titels [/titels/index.php]
+ 
+Literatuur [/letterkunde/index.php]
+ 
+Taalkunde [/taalkunde/index.php]
+ 
+Collectie Limburg [/letterkunde/limburg/index.php]
+ 
+Collectie Friesland [/letterkunde/fries/index.php]
+ 
+Collectie Suriname [/letterkunde/suriname/index.php]
+ 
+Collectie Zuid-Afrika [/letterkunde/zuidafrika/index.php]
+ 
+
+ 
+Selecties [#Selecties]
+ 
+Collectie jeugdliteratuur [/onzekinderboeken/index.php]
+ 
+Basisbibliotheek [/basisbibliotheek/index.php]
+ 
+Tijdschriften/jaarboeken [/titels/tijdschriften/titels_tijdschriften.php]
+ 
+Naslagwerken [/titels/titels_naslagwerken.php]
+ 
+Collectie e-books [/letterkunde/ebooks/index.php]
+ 
+Collectie publiek domein [/letterkunde/pd/index.php]
+ 
+Calendarium [/calendarium/index.php]
+ 
+Atlas [/atlas/index.php]
+ 
+
+ 
+Periode [#Periode]
+ 
+Middeleeuwen [/titels/index.php?c=15]
+ 
+Periode 1550-1700 [/titels/index.php?c=17]
+ 
+Achttiende eeuw [/titels/index.php?c=18]
+ 
+Negentiende eeuw [/titels/index.php?c=19]
+ 
+Twintigste eeuw [/titels/index.php?c=20]
+ 
+Eenentwintigste eeuw [/titels/index.php?c=21]
+ 
+
+ 
+ 
+    
+Archives ou correspondance inédite de la maison d'Orange-Nassau (première série). Tome IV 1572-1574 (1837)
+sluit verantwoording en downloads
+
+    
+
+## Informatie terzijde
+  
+ 
+  [index.php] 
+ Toon afbeelding van titelpagina van Archives ou correspondance inédite de la maison d'Orange-Nassau (première série). Tome IV 1572-1574 [groe009arch04_01_tpg.gif] 
+ 
+
+Verantwoording [colofon.php]
+
+Inhoudsopgave [index.php] 
+
+### Downloads
+
+ PDF van tekst (2.65 MB) [/tekst/groe009arch04_01/groe009arch04_01.pdf] 
+ 
+ XML (1.14 MB) [/nieuws/xml.php?id=groe009arch04] 
+
+ tekstbestand [/nieuws/text.php?id=groe009arch04] 
+
+Vul zoekterm(en) inDoorzoek de hele tekst
+
+### Genre
+non-fictie
+
+### Subgenre
+non-fictie/brieven
+
+non-fictie/geschiedenis/Opstand
+
+© zie Auteursrecht en gebruiksvoorwaarden [/titels/gebruiksvoorwaarden.php?id=groe009arch04].
+ 
+   
+ 
+ 
+ 
+ Selecteer waarin je wilt zoeken  Zoek alles Zoeken naar auteurs Zoeken naar titels Zoeken in teksten   
+ Zoek naar auteurs, titels en in teksten Zoeken 
+   
+ 
+   
+  
+  
+
+# Archives ou correspondance inédite de la maison d'Orange-Nassau (première série). Tome IV 1572-1574 [index.php]
+(1837)–G. Groen van Prinsterer [/auteurs/auteur.php?id=groe009]– Auteursrechtvrij [/titels/gebruiksvoorwaarden.php?id=groe009arch04]
+
+  
+Vorige [groe009arch04_01_0024.php] Volgende [groe009arch04_01_0026.php]
+ 
+ 
+ 	 
+	
+
+	
+  
+	
+
+	
+ [pagina 79]  
+[p. 79]
+
+	
+
+	
+  
+
+### * Lettre CDIX. 
+ Le Prince d'Orange à ses frères Jean, Louis, et Henri, Comtes de Nassau. Dispositions peu favorables de l'Empereur.
+ 
+ Ga naar margenoot+ [#165]Messieurs mes frères, vous entendrés par la lettre de Saincte Aldegonde ce qui se passe pardeçà et pourtant n'en useray icy de redite; seulement cette servira pour vous prier que je puisse entendre de vous ce que je doibs espérer de ce que a esté icy traitté par Hellinge, et pareillement s'il y a apparence que aulcun appointement se polra faire ou non; d'autant que j'entens que l'Empereur auroit escrit au Conte Palatin qu'il vouloit assister le Duc, le priant et commandant de faire le mesme ce que n'est pas signe de paix ny d'appointement. Pourtant je vous prie m'en mander vostre advis. Et à tant, après m'estre bien affectueusement recommandé à vos bonnes grâces, prieray Dieu vous maintenir, Messieurs mes frères, en Sa sainte protection et sauvegarde. Escrit à Delff en Hollande, ce 3 d'apvril 1573.
+ 
+ 
+ 
+VostreGa naar voetnoot1 [#166] bien bon frère à vous faire service,
+ 
+ 
+ 
+ Guillaume de Nassau.
+ 
+ 
+ 
+A Messieur mes frères les Comtes Jehan, Ludwig, et Henry, Comtes de Nassau, Catzenelbogen etc.
+
+	 
+ 
+ 
+
+ 
+  
+ margenoot+ [#165T] 
+ 
+1573. Avril.
+  
+ 
+ 
+ 
+  
+ voetnoot1 [#166T] 
+ 
+Vostre - service. Autographe.
+  
+ 
+ 
+ 
+ 
+
+  
+ 
+ 
+
+ 
+Vorige [groe009arch04_01_0024.php] Volgende [groe009arch04_01_0026.php]
+
+  
+    
+
+## Footer navigatie
+ 
+ 
+     
+  
+ 
+
+### Over DBNL
+ 
+ 
+ Wat is DBNL? [/overdbnl/index.php] 
+ 
+ Over ons [/overdbnl/organisatie.php] 
+ 
+ Selectie- en editieverantwoording [/overdbnl/selectie.php] 
+ 
+ 
+ 
+ 
+
+### Voor gebruikers
+ 
+ 
+ Gebruiksvoorwaarden/Terms of Use [/overdbnl/copyright.php] 
+ 
+ Informatie voor rechthebbenden [/overdbnl/rechthebbenden.php] 
+ 
+ Disclaimer [/overdbnl/disclaimer.php] 
+ 
+ Privacy [/overdbnl/privacyverklaring.php] 
+ 
+ Toegankelijkheid [/toegankelijkheid/index.php] 
+ 
+ Responsible disclosure [/overdbnl/responsible-disclosure.php] 
+ 
+ 
+ 
+ 
+
+### Contact
+ 
+ 
+ Contactformulier [/overdbnl/vragen.php] 
+ 
+ Veelgestelde vragen [/overdbnl/faq.php] 
+ 
+ Vacatures [/overdbnl/stages.php] 
+ 
+  
+  
+ 
+ 
+ 
+
+### Partners
+ 
+ 
+   Ga naar kb.nl   [https://www.kb.nl]  
+ 
+   Ga naar taalunie.org   [https://www.taalunie.org]  
+ 
+   Ga naar Bibliothecair Erfgoed.be   [https://bibliothecairerfgoed.be]  
+ 
+  
+
+ 
+ 
+
+### Over het gehele werk
+
+#### titels
+
+ Archives ou correspondance inédite de la maison d'Orange-Nassau (première série) [/titels/titel.php?id=groe009arch00]
+
+#### auteurs
+
+over  Willem van Oranje [/auteurs/auteur.php?id=will019]
+
+over Philips van Marnix van Sint Aldegonde [/auteurs/auteur.php?id=marn001]
+
+#### plaatsen
+
+over Haarlem [/atlas/plaats.php?id=haarl001]
+
+over Alkmaar [/atlas/plaats.php?id=alkma001]
+
+#### landen
+
+over Frankrijk [/buitengaats/land.php?id=frank01]
+
+over Duitsland [/buitengaats/land.php?id=duits01]
+
+over Groot-Brittannië (en Noord-Ierland) [/buitengaats/land.php?id=groot01]
+
+over Spanje [/buitengaats/land.php?id=spanj01]
+
+### Over dit hoofdstuk/artikel
+
+#### datums
+
+3 april 1573 [/calendarium/?d=15730403]
