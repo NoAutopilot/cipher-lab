@@ -1,0 +1,231 @@
+line	pos	token	kind	gloss_above	confidence
+66:1	1	impostor	clear	Detractor	high
+66:1	2	et	clear		high
+66:1	3	43	code		high
+66:1	4	14	code		high
+66:1	5	20	code		high
+66:1	6	23	code		high
+66:1	7	17	code		high
+66:1	8	42	code		high
+66:1	9	20	code		high
+66:1	10	13	code		high
+66:1	11	23	code		high
+66:1	12	ille	clear		high
+66:2	1	et	clear		high
+66:2	2	fine	clear		high
+66:2	3	confcientia	clear		high
+66:2	4	29	code	B	high
+66:2	5	12	code	u	high
+66:2	6	23.	code	r	high
+66:2	7	41	code	g	high
+66:2	8	12	code	u	high
+66:2	9	51	code	n	high
+66:2	10	43	code	d	high
+66:2	11	us,	clear		high
+66:3	1	17	code	a	high
+66:3	2	51	code	n	high
+66:3	3	20	code	t	high
+66:3	4	46	code	i	high
+66:3	5	42	code	d	high
+66:3	6	46	code	i	high
+66:3	7	12	code	u	high
+66:3	8	21	code	s	high
+66:3	9	43	code	D	high
+66:3	10	12	code	a	high
+66:3	11	51	code	n	high
+66:3	12	13	code	o	high
+66:3	13	43,	code	d	high
+66:3	14	im-	clear		high
+66:4	1	importunitate	clear		high
+66:4	2	et	clear		high
+66:4	3	garrulitate,	clear		high
+66:4	4	in	clear		high
+66:4	5	mundo	clear		high
+66:4	6	ne=	clear		high
+66:5	1	mini	clear		high
+66:5	2	fecundus,	clear		high
+66:5	3	cum	clear		high
+66:5	4	addicto	clear		high
+66:5	5	fuo	clear		high
+66:5	6	focio,	clear		high
+66:5	7	25	code		high
+66:5	8	er=	clear		high
+66:6	1	40	code		high
+66:6	2	46	code		high
+66:6	3	43	code		high
+66:6	4	13	code		high
+66:6	5	ac	clear		high
+66:6	6	25	code	p	high
+66:6	7	23	code	r	high
+66:6	8	13	code	o	high
+66:6	9	42	code	d	high
+66:6	10	46	code	i	high
+66:6	11	20	code	t	high
+66:6	12	13	code	o	high
+66:6	13	23	code	r	high
+66:6	14	14.	code	e	high
+66:7	1	+	null?		low
+66:7	2	Datis	clear		high
+66:7	3	fub	clear		high
+66:7	4	202.	ref		high
+66:7	5	51	code	n	high
+66:7	6	13	code	o	high
+66:7	7	29	code	b	high
+66:7	8	46	code	i	high
+66:7	9	21	code	s	high
+66:7	10	et	clear		high
+66:7	11	46	code		high
+66:7	12	21=	code		high
+66:8	1	,,	null?		low
+66:8	2	20	code		high
+66:8	3	46	code		high
+66:8	4	afflicta	clear		high
+66:8	5	25	code	p	high
+66:8	6	17	code	a	high
+66:8	7	20	code	t	high
+66:8	8	23	code	r	high
+66:8	9	46	code	i	high
+66:8	10	15	code	a	high
+66:8	11	caufuit.	clear		high
+66:9	1	ac	clear		high
+66:9	2	illum	clear		high
+66:9	3	25	code	p	high
+66:9	4	46	code	i	high
+66:9	5	15,	code	a	high
+66:9	6	m	clear	m	high
+66:9	7	14	code	e	high
+66:9	8	m	clear	m	high
+66:9	9	13	code	o	high
+66:9	10	23	code	r	high
+66:9	11	46	code	i	high
+66:9	12	15	code	e	high
+66:9	13	de=	clear		high
+66:10	1	40	code		high
+66:10	2	12	code		high
+66:10	3	51	code		high
+66:10	4	42	code		high
+66:10	5	20	code		high
+66:10	6	21	code		high
+66:10	7	m,	clear	m	high
+66:10	8	25	code		high
+66:10	9	23	code		high
+66:10	10	46	code		high
+66:10	11	42	code		high
+66:10	12	46=	code		high
+66:11	1	25	code		high
+66:11	2	14	code		high
+66:11	3	m,	clear		high
+66:11	4	21	code	S	high
+66:11	5	14	code	e	high
+66:11	6	23	code	r	high
+66:11	7	29	code	b	high
+66:11	8	17	code	a	high
+66:11	9	51	code	n	high
+66:11	10	12	code	u	high
+66:11	11	m	clear	m	high
+66:11	12	21	code		high
+66:11	13	14=	code		high
+66:12	1	43	code		high
+66:12	2	12	code		high
+66:12	3	19	code		high
+66:12	4	46	code		high
+66:12	5	20.	code		high
+66:12	6	quorum	clear		high
+66:12	7	mendacijs	clear		high
+66:12	8	et	clear		high
+66:12	9	43	code		high
+66:12	10	14=	code		high
+66:13	1	42	code		high
+66:13	2	14	code		high
+66:13	3	25	code		high
+66:13	4	20	code		high
+66:13	5	46	code		high
+66:13	6	13	code		high
+66:13	7	51	code		high
+66:13	8	46	code		high
+66:13	9	29	code		high
+66:13	10	us	clear		high
+66:13	11	pulchris	clear		high
+66:13	12	ver=	clear		high
+66:14	1	bis,	clear		high
+66:14	2	13	code		high
+66:14	3	29	code		high
+66:14	4	12	code		high
+66:14	5	13	code		high
+66:14	6	49	code		high
+66:14	7	12	code		high
+66:14	8	his	clear		high
+66:14	9	42	code		high
+66:14	10	23	code		high
+66:14	11	14	code		high
+66:14	12	43	code		high
+66:14	13	eas,	clear		high
+66:15	1	et	clear		high
+66:15	2	42	code	c	high
+66:15	3	13	code	o	high
+66:15	4	51	code	n	high
+66:15	5	21	code	s	high
+66:15	6	46	code	i	high
+66:15	7	49	code	l	high
+66:15	8	46	code	i	high
+66:15	9	17	code	a	high
+66:15	10	omnium	clear		high
+66:15	11	aliorum.	clear		high
+66:16	1	23	code		high
+66:16	2	14	code		high
+66:16	3	21	code		high
+66:16	4	25	code		high
+66:16	5	17	code		high
+66:16	6	eas,	clear		high
+66:16	7	in	clear		high
+66:16	8	grandes	clear		high
+66:16	9	51	code	n	high
+66:16	10	13	code	o	high
+66:16	11	21,	code	s	high
+66:17	1	et	clear		high
+66:17	2	istam	clear		high
+66:17	3	50	code	m	high
+66:17	4	46	code	i	high
+66:17	5	21	code	s	high
+66:17	6	14	code	e	high
+66:17	7	23	code	r	high
+66:17	8	17	code	a	high
+66:17	9	50	code	m	high
+66:17	10	25	code	p	high
+66:17	11	17	code	a	high
+66:17	12	20	code	t	high
+66:17	13	23	code	r	high
+66:17	14	46=	code	i	high
+66:18	1	,,	null?		low
+66:18	2	17	code	a	high
+66:18	3	50,	code	m	high
+66:18	4	46	code	i	high
+66:18	5	51	code	n	high
+66:18	6	20	code	t	high
+66:18	7	23	code	r	high
+66:18	8	46	code	i	high
+66:18	9	42	code	c	high
+66:18	10	17	code	a	high
+66:18	11	?it	clear		high
+66:18	12	43	code		high
+66:18	13	46	code		high
+66:18	14	4?:	code		low
+66:19	1	40	code		high
+66:19	2	46	code		high
+66:19	3	42	code		high
+66:19	4	12	code		high
+66:19	5	49	code		high
+66:19	6	20	code		high
+66:19	7	17	code		high
+66:19	8	tes.	clear		high
+66:19	9	O	clear		high
+66:19	10	si	clear		high
+66:19	11	46	code		high
+66:19	12	51	code		high
+66:19	13	20	code		high
+66:19	14	e49.	code		high
+66:20	1	,,	null?		low
+66:20	2	49	code		high
+66:20	3	46	code		high
+66:20	4	41	code		high
+66:20	5	evehs?	clear		high

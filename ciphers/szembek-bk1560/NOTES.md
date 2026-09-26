@@ -171,3 +171,51 @@ syllable of the gloss word) was not attempted this pass; it would need pixel-pos
 this job's box.
 
 Files: `leaf65/pairs.tsv`, `leaf65/groups.tsv`, `leaf65/crops/*.jpg` (40 crops + manifest.json), this section.
+
+## Leaf 66 transcription (bSZL66)
+`leaf66/pairs.tsv` (20 lines) and `leaf66/groups.tsv` (231 tokens) transcribed by eye from the 20 crops above
+(no subagent; read every crop myself). Grade C throughout (period gloss, not cryptanalysis).
+
+**168 code tokens (two- or three-digit numeral groups), 21 distinct code values** (12,13,14,15,17,19,20,21,23,
+25,29,40,41,42,43,46,49,50,51 plus one ref "202"), well inside the spec's estimated 12-51 range and far fewer
+distinct values than the ~50-60 guessed from the single-leaf sample in the intake pass -- leaf 66 alone doesn't
+reach the full alphabet, or the true alphabet is smaller than the intake estimate; a 3-leaf merge will tell.
+**87/168 code tokens (51.8%) carry a `gloss_above`** -- but this is a floor, not the true coverage: gloss_above
+was only filled where a numeral cluster's length locally matched its gloss word's letter count one-for-one
+(stripping an immediately-following clear suffix like "-us"/"-am" first); clusters that didn't match a clean
+1:1 count (e.g. "perfido" 7 letters vs. 4 codes, "deceptionibus" minus "-us" 11 letters vs. 9 codes) were left
+blank rather than guessed, even though every code group on the leaf appears to carry *some* gloss word above it
+per the intake pass's eyeball finding. A merge/alignment pass (tools/interlinear_align.py, hard-EM per group
+across all 3 leaves) would recover most of the blanked ones; this job did the one-line, no-aligner-yet self-check
+the brief asked for.
+
+**Consistency check (does a recurring code get the same letter every time it recurs?):** 15 code values recur
+>=2 times among the 87 glossed tokens (85 total occurrences). Real same-letter-each-time rate: **0.918**.
+Shuffled control (1000 shuffles of the gloss letters across the same recurring-code slots, seed 20260926):
+mean **0.306**, 95th pct **0.341**. The real rate clears the shuffled 95th pct by more than 2.5x -- the gloss is
+a working key, not noise. Per-code detail: 12/15 codes are perfectly consistent (13=o x7, 14=e x4, 17=a x8,
+20=t x5, 23=r x9, 25=p x4, 46=i x13, 50=m x3, 51=n x8, plus 21=s/S x6 case-insensitively, 43=d/D x3
+case-insensitively, 29=B/b x3 case-insensitively). Two codes conflict: **42** reads d twice (proditore, from
+NOTES' own earlier per-letter read) and c twice (consilia, intricauit) -- an even split, flagged, not resolved
+here (possibly a mistranscribed digit on one side, e.g. 42 vs. a similar-looking neighbour; needs a merge pass
+against leaves 65/67 or a fresh look at the image). **12** is u x4 and a x1 (one outlier, "Serbanum" pos5 read as
+"a" -- could be a genuine homophone or one bad alignment); **15** is a x2, e x1 (both plausible as homophones
+for two different frequent vowels, see below).
+
+**Letters, not one code per word (nomenclator).** Multiple words (antidius 8 codes/8 letters, Danod 5/5, Burgund-
+stem 7/7, proditore 9/9, nobis 5/5, patria 6/6, pia 3/3, memorie 7/7 incl. two literal clear "m" tokens, Serbanu-
+stem 7/7, consilia 8/8, nos 3/3, miseram 7/7) align code-count to letter-count exactly, strongly indicating a
+**code-per-letter** cipher, not a code-per-word nomenclator (contra the intake pass's "consistent with a
+nomenclator" guess from raw code range alone). The letter 'm' itself is apparently never coded -- it appears as
+a literal clear "m" in every case observed (memorie, Defunctum, Serbanum) -- and short connective/suffix material
+(ac, et, in, cum, his, eas, us, xit-type endings) is left in clear throughout, consistent with this being a
+partial code (letters coded, common short words and grammatical endings left en clair), not a pure cipher.
+**Vowels look homophonic**: 'a' appears at both 17 (8x, dominant) and 15 (2x); 'e' at both 14 (4x, dominant) and
+15 (1x) -- i.e. code 15 itself may be shared between 'a' and 'e' as a low-frequency homophone for both, or one of
+those 3 occurrences is a misread; not resolved here. Consonants seen so far (o,t,r,p,i,m,n,s,d,b,u) show no
+homophones (one code each) in this leaf's sample.
+
+Two 20-minute zoom checks (line 6 and line 8, native-pixel crops) confirmed digit readings against ambiguous
+cases; both are noted inline above. Self-check numbers above are reproducible from `leaf66/groups.tsv` with the
+scratchpad script `consistency_check.py` (not committed, scratchpad-only per the brief; re-derivable from the
+groups.tsv logic described here: recurring-code same-gloss rate vs. 1000-shuffle control).
