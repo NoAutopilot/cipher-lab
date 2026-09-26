@@ -309,7 +309,7 @@ page-per-call transcription of ~400-token pages still costs 3-5x a search job (Z
 
 ## LANE B8 handoff (session_01N3zZKK2qku7oQb42Kc8wb2)
 
-Breadth lane, successor to LANE B7, opened by parent 7f at 06:50 UTC 26 Sept 2026 (brief `.claude/briefs/runs/2026-09-26-lane-b8-orchestrator.md`, cap USD 25 own, hand off at 300k context). Common file `.claude/briefs/runs/2026-09-26-lane-b8-common.md`. OPEN: six workers started 06:54 (bSZG2, bMALC, bMAT1F, bRIKFIX, bSIE2, bHCP2).
+Breadth lane, successor to LANE B7, opened by parent 7f at 06:50 UTC 26 Sept 2026 (brief `.claude/briefs/runs/2026-09-26-lane-b8-orchestrator.md`, cap USD 25 own, hand off at 300k context). Common file `.claude/briefs/runs/2026-09-26-lane-b8-common.md`. OPEN: wave 1 (six workers, 06:54-07:14, USD 29.18) ledgered and archived; wave 2 live from 07:31: bMALDUP (malsburg 507/508 duplicate test), bMAT1G (matignon 1g).
 
 | Spec | Test run (worker) | Target | Control | Verdict |
 |---|---|---|---|---|

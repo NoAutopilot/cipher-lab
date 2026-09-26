@@ -767,3 +767,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T07:27Z	session_01FzjVKQ9ezApi6N9ArxmPsx	ARM-DESIGN (Fable, cap 12)	code design verdict + family C spec	brief 2026-09-26-lane-arm-design.md; LANE ARM
 2026-09-26T07:27Z	session_01Q7vUk2LfBnnua3tK5V7Cem	ARM-A2 (Sonnet, cap 3)	sibling-table transfer sweep	brief 2026-09-26-lane-arm-a2.md; LANE ARM
 2026-09-26T07:27Z	session_011LGV2dxSLTnpHb7CwrzoqB	ARM-REC2 (Sonnet, cap 5)	Founders via Wayback step 1	brief 2026-09-26-lane-arm-rec2.md; LANE ARM
+2026-09-26T07:31Z	session_01XPmVzcgLWv8ShuEU1vM7Nm	LANE B8 bMALDUP (Sonnet, cap 6)	malsburg-hessen-1636 507/508 duplicate test, first 10 cipher lines of ff.28/30	brief 2026-09-26-lane-b8-maldup.md
+2026-09-26T07:31Z	session_01Q4gkNUdbG5zwr1wBUeowh2	LANE B8 bMAT1G (Opus, cap 6)	matignon-mayenne-1586 NEAR 1g pass B + fresh-seed control	brief 2026-09-26-lane-b8-mat1g.md
