@@ -313,6 +313,12 @@ Breadth lane, successor to LANE B7, opened by parent 7f at 06:50 UTC 26 Sept 202
 
 | Spec | Test run (worker) | Target | Control | Verdict |
 |---|---|---|---|---|
+| szembek-bk1560 | leaves 65/67 letter gloss pass B + per-leaf control (bSZG2) | 65: 0.881; 67: 0.806; reading unchanged C 384 / M 50 | shuffle p95 0.281; 0.337 | per-leaf merge gate cleared; nothing for V8 |
+| malsburg-hessen-1636 | homophonic control at projected N + leaf extent (bMALC) | ~6,680 more signs on 11 leaves; 507/508 near-duplicates | 0.928 / 0.844 / 0.976 at N=1000/2000/3000 (0.392 at 352) | pooling licensed; transcribe next |
+| matignon-mayenne-1586 | NEAR 1f native crops f.78v/79r (bMAT1F, Opus, 1.8x) | Bourdeau f78 merges page l.10/l.11, ~55 signs missing; f.79r l.1-2 59.5% | not re-run | partial; NEAR (1g) |
+| riksarkivet-r4282-1628 | QA7 count reconcile (bRIKFIX) | B counts 8, 3, 8, mean 6.3 (spec right) | n/a | NOTES/STATUS fixed |
+| siena-concistoro-2308 | homophonic pools 6+24, 20+23 (bSIE2) | FAIL -1.372 / -1.384 (real_p05 -0.925 / -0.954) | 0.985 / 0.842 (it16, era flag) | open; homophonic excluded on both pools |
+| hessen-1824 | masc, running_key, homophonic (bHCP2) | masc FAIL; homophonic FAIL | 0.823; running_key 0.372 below gate; 0.878 | partial, NEAR row (running_key non-test) |
 
 ## LANE B7 handoff (session_018gKxHSiPYa5NPQuXYELQUk)
 
