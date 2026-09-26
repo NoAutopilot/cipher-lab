@@ -1,0 +1,17 @@
+{
+  "ark": "btv1b9059865k",
+  "note": "Leaf-view job only (LANE NX NX-3151N33, 26 Sept 2026); no transcription, no line-cutting.",
+  "files": [
+    {"path": "survey/f59.jpg", "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9059865k/f59/full/500,/0/native.jpg", "canvas": 59, "note": "opening f.58v(blank)/f.59r(mostly blank, faint docket top-left), 500px survey"},
+    {"path": "survey/f59_1500.jpg", "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9059865k/f59/full/1500,/0/native.jpg", "canvas": 59, "note": "same opening, 1500px"},
+    {"path": "survey/f60.jpg", "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9059865k/f60/full/500,/0/native.jpg", "canvas": 60, "note": "opening f.59v/f.59r area, 500px survey"},
+    {"path": "survey/f61.jpg", "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9059865k/f61/full/500,/0/native.jpg", "canvas": 61, "note": "opening f.59v(left)/f.60r(right, folio no. '60' visible top right) -- f.60r carries the letter opening, two cipher blocks and the first two marginal-gloss fragments, 500px survey"},
+    {"path": "survey/f62.jpg", "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9059865k/f62/full/500,/0/native.jpg", "canvas": 62, "note": "opening f.60v(left, third/longest cipher block + closing + date + seal)/f.61r(right, outer address panel 'A Monseigneur ... le Cardinal de Lorraine', docket '1558'), 500px survey"},
+    {"path": "survey/f62_1500.jpg", "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9059865k/f62/full/1500,/0/native.jpg", "canvas": 62, "note": "same opening, 1500px -- addressee legible"},
+    {"path": "survey/f62_left_2000.jpg", "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9059865k/f62/pct:0,0,50,100/2000,/0/native.jpg", "canvas": 62, "note": "f.60v only, 2000px -- third cipher block with its own marginal gloss, closing paragraph, dateline ('...Nouembre'), signature and seal remnant"},
+    {"path": "src_ark_12148_btv1b9059865k_f61_3900_0_4030_5659.jpg", "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9059865k/f61/3900,0,4030,5659/full/0/native.jpg", "canvas": 61, "region": "3900,0,4030,5659", "note": "f.60r right leaf, native resolution, via tools/iiif_lines.py (--debug output and per-line crops made then deleted: not needed, no transcription in scope)"},
+    {"path": "preview_small.jpg", "note": "derived: src_ark...f61... downscaled 3x for overview reading"},
+    {"path": "cipher_blocks_full.jpg", "note": "derived: crop of the native f.60r source, y=2850-3950, downscaled to 2400px wide -- both f.60r cipher blocks plus the plain-text line between them"},
+    {"path": "margin_gloss1_zoom.jpg", "note": "derived: crop+2x zoom of the inner margin beside the first f.60r cipher block -- reads '...en mauluaise / ...gouuernemet / ...de q affaires', matching guiche1551/NOTES.md's gloss citation"}
+  ]
+}
