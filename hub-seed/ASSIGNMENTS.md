@@ -948,3 +948,6 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T19:50Z	session_012tDJCM8L5NqcVa5PSawajj	SO-LAND-26	done 1.90 D (get_session), ledgered, retitled ARCHIVED, archived by 7i	PR 26 landed dbbb9c0, confirms-N4
 2026-09-26T19:50Z	session_01CwLeVtAWfVgbSXxCABdT8b	RETRO-APPLY-V	done 3.33 D (get_session), ledgered, retitled ARCHIVED, archived by 7i	9525f0b, 4 of 4
 2026-09-26T19:48Z	session_01V3dieQhJPuLUQBcGWTyNJB	OUT-CHECK-Q (Opus, cap 5)	gate 7 check of the six quote drafts, then SEND-QUEUE rows S2-S7	brief 2026-09-26-parent-out-check-q.md; parent 7i
+2026-09-26T20:06Z	session_013CUb7MLM9fsBYw3YmYv5ZQ	ARM3-LIVCODE	done 7.25 D (get_session), ledgered, retitled ARCHIVED, archived by LANE ARM3	Livingston 1803-04 cipher items screened, no match; Brant Papers named
+2026-09-26T20:06Z	session_01MMCuqEpombZkK7dk5Qaqyt	ARM3-ADJ	done 2.78 D (get_session), ledgered, retitled ARCHIVED, archived by LANE ARM3	non-result at N=28
+2026-09-26T20:06Z	session_01HxYpi65CvbqzdSS53XhW4N	ARM3-LOOP	done 9.25 D (get_session), ledgered, retitled ARCHIVED, archived by LANE ARM3	gain gate not met (9.2 < 10), target not run
