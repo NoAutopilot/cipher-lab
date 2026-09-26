@@ -467,6 +467,101 @@ above), `recon_0028/`, `recon_0030/` (re-run with the full map), `tools/reconcil
 
 Hosts: none (all work from images and pass TSVs already on disk).
 
+## Record 507 f.28 (bMAL28, 26 Sept 2026) -- PARTIAL, stopped at cost cap
+
+Intake gate re-run: `python3 tools/intake_gate_check.py malsburg-hessen-1636` -> `partial` (line 1), exit 0.
+
+**Scope.** f.28 has 57 detected lines total (`tools/iiif_lines.py`, region 2126x2546, matches bMALC/bMALDUP's
+prior count exactly); L01-L04 are the clear salutation, L05-L57 (53 lines) are cipher. L05-L14 (10 lines) already
+had two reconciled blind passes from bMAL2/bMAL3/bMALDUP/bMALG. This job's remit was the remaining ~42-43 lines
+in 5 blocks of <=10 lines each, two fresh blind Sonnet-subagent passes per block, reconciled with the bMALG sign-map,
+settled against f.30 as witness, then `tools/leaf_pool_gate.py`.
+
+**Done: blocks 1-3 (L15-L44, 30 lines), two blind passes each** (6 subagent calls: `pass_{a,b}_0028_b{1,2,3}.tsv`).
+Re-cut f.28's full 57-line crop set and f.30's full 59-line set (`tools/iiif_lines.py`, byte-identical manifest
+boxes to bMALC's prior sweep) so blocks 4-5's crops are on disk for a follow-up job even though this job did not
+reach them.
+
+**Not done: blocks 4-5 (L45-L57, 13 lines).** This job hit its cost cap before starting them. Per Usage 6/CLAUDE.md
+cost discipline ("stop before starting a unit that would cross 80% of cap"): after block 2 (4 calls) the
+orchestrator-read cost was already 70.4% of the $12 cap (one of the 4 calls ran far outside the ~$0.9/call estimate
+this job's brief was priced on -- 216,829 subagent tokens and 178 tool-use turns vs ~100k tokens/12 tool-uses for
+the other three -- a single-call overrun the wall-clock box cannot catch, the same shape as CLAUDE.md Usage 6's
+GOLD-4D/AT55V/AX-COMP2 paragraphs, here on a call-count-priced job rather than a page-count-priced one). After
+block 3's two calls the cost was 90.5%, past the 80% stop line -- this job stopped there rather than starting
+blocks 4-5, and did not attempt per-image disagreement settling either (see below), which would have needed more
+image-reading turns at a point where none of the remaining ~$1.15 was budgeted for it.
+
+**Finding: embedded clear-text spans mid-cipher, not previously flagged.** bMALDUP/bMALC's extent estimate called
+f.28 "dense cipher for the rest of the leaf" from a low-resolution overlay glance, with no line-by-line read. Both
+blind passes on block 3 (L35-44), independently and before either saw the other's work, flagged short clauses of
+ordinary German cursive prose embedded mid-line in the cipher stream, not cipher groups:
+- **L36**: pass A "hiet dab allb so muss zufordern sein Vnd hernacher antwortling", pass B "bin dab allß so muß zu
+  fordern was fleiß haben allein" -- both passes agree this is prose starting "...(h)ie(t)/bin da(b)(s) all(e/es)(s)
+  so mu(s)(s)(s) zu fordern..." at the same line position (between cipher runs "...79.63." and "...54.61.z.S.W...").
+  Neither reading is confident enough to grade above M; a dedicated zoom pass is needed to fix the wording.
+- **L39**: pass A "wollest das fromm ding schreiben nach massgab wiederumb alsofort seyn", pass B "welfat das frinom
+  fing forüben nach maening kagen wiedert alsint frim" -- same location (between "...16.z." and "71.83.z6..."),
+  same rough shape ("...das from(m) ... nach ma(ss/ening) ... wieder(umb/t) al(so/sint) ..."), same low confidence.
+- **L44**: pass A read a third short clause here ("ich diss mahl etwas gewesen", flagged as its own most-uncertain
+  reading); pass B flagged the same position as prose but returned `[PLAIN:ILLEGIBLE]` rather than guessing words.
+  Weakest of the three -- may be prose, may be a garbled mark run; needs the image, not adjudicated here.
+
+This is a genuine finding worth flagging for whoever transcribes blocks 4-5 or settles these three spans: f.28 is
+not solid nomenclator code throughout, it has short plaintext asides bracketed by cipher on at least two (possibly
+three) lines, which changes the sign-pool accounting in bMALC's extent.tsv (those spans are prose, not additional
+K=95 signs) and could itself be a crib if the wording is fixed by a careful image zoom. Not resolved by this job
+(out of budget); the `[PLAIN:...]` tokens are carried into the reconciled draft below as their own aligned column
+(`--keep-plain`), not dropped, so they are visible to whoever settles them next.
+
+**Reconciliation (L05-L44, 40 of 53 cipher lines).** Concatenated the existing L05-L14 reformatted passes
+(`pass_{a,b}_0028_r.tsv`) with the three new blocks into `pass_{a,b}_0028_full.tsv`, then:
+```
+python3 tools/reconcile_passes.py transcription/pass_a_0028_full.tsv transcription/pass_b_0028_full.tsv \
+  --sign-map glyph_map.tsv --crops crops/0028 --out-dir recon_0028_full --keep-plain
+  -> lines 40  signs A 1797  B 1742  agree 1404/1827 = 76.8% (nw); disagreement columns 423
+```
+Per-line agreement 55.6%-93.3% (`recon_0028_full/agreement.tsv`), consistent with bMALDUP's 66.0-76.5% on the same
+leaf's denser lines and above bMAL3's cleaner f.3/f.12 postscripts (89.7/96.2%) only where the line itself is
+cleaner (L17 87.2%, L23 93.3%) -- no single block is uniformly worse, agreement varies line by line with local
+ink quality.
+
+**Settling: NOT done.** 423 disagreement rows over 40 lines is far beyond the brief's own "at most 60" settling
+budget, and this job had no cost margin left to open even 60 image pairs against the f.30 witness (each settle
+needs the f.28 crop, the aligned f.30 crop found by neighbouring-agreed-group position, and often a zoom crop of
+each -- the method bMAL3/bMALG used). `recon_0028_full/disagreements.tsv` (423 rows) and `ciphertext_draft.tsv`
+(1827 signs, all disagreement positions at grade M per the reconciler's default) are committed as-is, unsettled,
+for the next job. f.30's full L15-L59 crop set is on disk and pushed for that job to use directly.
+
+**Gate (mechanical, on the unsettled draft):**
+```
+python3 tools/leaf_pool_gate.py --leaf recon_0028_full/ciphertext_draft.tsv --pool ciphertext.txt --json recon_0028_full/gate.json
+-> N=1827 K=174 M=0.232 (<=0.15 NOT met) offform=0.024 (<=0.05 met) vocab overlap 0.806;
+   cosine real 0.681 vs relabel mean 0.413 p95 0.514 (met, real > p95) -> HELD
+```
+HELD on the M-share gate alone (0.232 vs 0.15) -- entirely explained by the unsettled disagreements above, not a
+same-system problem: the cosine gate (the one that would show a different key or noise) passes comfortably (0.681
+real vs 0.514 p95, well clear). Off-form share also passes (0.024): most non-digit tokens are the recognised
+marks; the `[PLAIN:...]` clauses and a handful of `ILLEGIBLE`s make up the offform total, listed in the tool's own
+output. **This leaf is admissible on the same-system test; it is held only pending settling the M-graded rows**,
+unlike bMALDUP's f.28-vs-f.30 alignment test (a different question -- copy-vs-reenciphered -- not a pool-admission
+gate). K=174 across L05-44 (up from bMAL3's K=95 on L05/L12 alone) is itself expected: more lines see more of the
+nomenclator's code space, not a design change.
+
+**Next steps (not this job):** (1) transcribe blocks 4-5 (L45-L57, 13 lines, crops already on disk in `crops/0028`)
+the same way; (2) settle `recon_0028_full/disagreements.tsv`'s 423 rows against the f.28 image and the f.30
+witness (crops on disk in `crops/0030`), at least the highest-value ones first (recurring codes, not singletons);
+(3) re-run the gate after settling -- the cosine/offform gates already pass, so settling M down should clear the
+M-share gate on its own without a design question to resolve; (4) a dedicated zoom pass on L36/L39/L44's
+`[PLAIN:...]` spans to fix the wording, which may be a crib.
+
+Files: `crops/0028/` (all 57 L-crops, `hstam_4_h_1411_0028_lines_debug.jpg` overlay, manifest.json), `crops/0030/`
+(all 59 L-crops for witness use, manifest.json), `transcription/pass_{a,b}_0028_b{1,2,3}.tsv` (raw subagent
+output), `transcription/pass_{a,b}_0028_full.tsv` (concatenated L05-L44), `recon_0028_full/` (disagreements.tsv,
+ciphertext_draft.tsv, agreement.tsv, gate.json).
+
+Hosts: none (all work from images already on disk).
+
 ## Record 505 f.23 (bMAL23, 26 Sept 2026)
 
 Intake gate re-run: `python3 tools/intake_gate_check.py malsburg-hessen-1636` -> `malsburg-hessen-1636: partial
