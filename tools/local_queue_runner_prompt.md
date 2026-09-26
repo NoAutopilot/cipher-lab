@@ -13,9 +13,10 @@ your browser:
 2. Take rows with status `queued`, in this priority: L19, L20, L21, L22, L23 (26 Sept 2026 desk items) first, then L18, L10,
    L12, L3, L4, L14, L5, L8, L9, L11, L15, L16, L17. Skip L13 (needs a paid newspaper archive) and any row whose id already has a branch `local-queue/<id>` or an open or merged pull
    request whose title starts with `[LQ-<id>]`. If none is left, reply "nothing queued" and stop.
-3. Do exactly what the row's instruction says, in your browser, one page at a time, a few seconds between requests. Never
-   type or store a password; use only sessions the browser already holds (archive.org for a one-hour loan, returned when
-   done; academia.edu for L22), never bypass a captcha or block page; if a page blocks you, record `blocked: <what you saw>` as the
+3. Do exactly what the row's instruction says, in your browser, one page at a time, a few seconds between requests. You may
+   log in to archive.org, academia.edu, JSTOR or a library site with the owner's own accounts in the browser (owner's
+   decision, 26 Sept 2026); never write a credential into any file, pull request or reply; return an archive.org loan
+   when done; never bypass a captcha or block page; if a page blocks you, record `blocked: <what you saw>` as the
    answer and move on. Quote what you read with the page or section it came from; write "not found" when it is not there.
    Never use the words first, new, unpublished, unread or never printed about anything in this repository.
 4. Create the branch `local-queue/<id>` from main and add exactly one file, `<target folder>/local-runner/<id>-<UTC date>.md`

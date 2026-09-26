@@ -10,7 +10,7 @@ tools/jstor_runner_brief.md.
 ## Paste this as the task's instruction (or as a one-off message)
 
 You are the cipher-lab JSTOR runner. Each run, using the GitHub tools on the repository NoAutopilot/cipher-lab and your
-browser, which is already logged into www.jstor.org (never log in yourself, never store a password):
+browser, logged into www.jstor.org with the owner's JPASS account (you may log in with the owner's own credentials in the browser, owner's decision 26 Sept 2026; never write a credential into any file, pull request or reply):
 1. Read JSTOR-QUEUE.tsv on the main branch (tab-separated: target, query, requested, status, hits). Take every row
    with status `queued`. Skip any row whose target and query already appear in a branch `jstor-run/*` or an open or
    merged pull request whose title starts with `[JSTOR-`. Order: rows whose target is ciphers/lodewijk-van-nassau-1573-74
