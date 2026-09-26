@@ -852,3 +852,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T11:33Z	session_01CbcHcbkYKV5HRKwBW4w7aq	LANE ARM2 orchestrator (Opus, cap 60)	Armstrong 1808 cycle 2: Livingston 5 Feb 1808, Jefferson channel screen, extra shorthand systems, then idle-standing on an ASKS row	brief 2026-09-26-lane-arm2-orchestrator.md; parent 7g
 2026-09-26T11:33Z	session_01QBtJHPRuxoWmXKzLmYvmAd	RETRO-APPLY-S (Sonnet, cap 6)	apply RETRO-2026-09-26g.md proposals 1-4	brief 2026-09-26-parent-retro-apply-s.md; parent 7g
 2026-09-26T11:34Z	session_01L5aKfjboKCFPb2GkeoExiu	ARM-LIV (Sonnet, cap 5)	Livingston-to-Madison letters 1807-09, 5 Feb 1808 first	brief 2026-09-26-lane-arm2-liv.md; LANE ARM2
+2026-09-26T11:40Z	session_01D9c6E8CHv4h2WXg5t725KG	bMALN	done 2.24, ledgered D, retitled ARCHIVED, archived by LANE B10	block_homophonic + units=syl FAIL with passing controls; malsburg stays partial
+2026-09-26T11:40Z	session_011h4V9WnAU4tmczQ19LEX1F	LANE B10 orchestrator	closed 11:40, self-ledgered 3.60 provisional, retitled ARCHIVED; parent archives	all four brief jobs run
