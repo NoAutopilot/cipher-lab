@@ -137,7 +137,7 @@ def anneal(seq, model, iters, rng, uni_w, t0=4.0, fixed=None, allowed=None, init
     anneal is free to move away from it exactly as from any other starting point (this only seeds, never fixes)."""
     o = model.order
     signs = sorted(set(seq))
-    letters = list(ALPHA)
+    letters = list(getattr(model, "alpha", ALPHA))  # a unit model (families/homophonic.py units=syl) carries its own
     weights = [model.freq[a] for a in letters]
     lf = {a: math.log(model.freq[a]) for a in letters}
     pos = {s: [i for i, x in enumerate(seq) if x == s] for s in signs}
@@ -201,7 +201,7 @@ def anneal_noisy(seq, model, iters, rng, uni_w, noise, t0=4.0, fixed=None, allow
     forms first. Returns (score, key, free)."""
     o = model.order
     signs = sorted(set(seq))
-    letters = list(ALPHA)
+    letters = list(getattr(model, "alpha", ALPHA))  # a unit model (families/homophonic.py units=syl) carries its own
     weights = [model.freq[a] for a in letters]
     lf = {a: math.log(model.freq[a]) for a in letters}
     pos = {s: [i for i, x in enumerate(seq) if x == s] for s in signs}

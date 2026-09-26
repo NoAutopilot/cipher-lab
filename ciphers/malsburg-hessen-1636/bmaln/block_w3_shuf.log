@@ -1,0 +1,8 @@
+family block_homophonic: contiguous-block homophonic table (--param width=5 offset=0 lo=1 hi=120): the solver anneals the block -> letter map only; control = same width/offset, random block order, target's value profile
+spec specs/malsburg-hessen-1636.json slug malsburg-hessen-1636
+ciphertext: 53 message(s), N=1629 signs, K=96 distinct, tokens=tsv (target letters shuffled, seed 1, false-positive floor)
+corpora: tools/data/de16/composed_enhg.txt
+control seeds [1], restarts 8, gate 0.6, params width=3,offset=0,lo=0,hi=99,shuffle_target=1
+row -> ciphers/malsburg-hessen-1636/HYPOTHESES.md; decode -> ciphers/malsburg-hessen-1636/families/block_homophonic-1-shuffle1-width=3,offset=0,lo=0,hi=99-bmalnblockhomoph.txt
+CONTROL seed 1: N=1629 K=89 recovery 0.317 score -4777.90
+CONTROL BELOW GATE: mean 0.317 < 0.6; target not run; row appended to ciphers/malsburg-hessen-1636/HYPOTHESES.md

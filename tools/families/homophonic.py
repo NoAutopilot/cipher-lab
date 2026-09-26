@@ -16,8 +16,20 @@ profile param) is unchanged: homophonic_anneal.make_control's frequency-proporti
 noise=p (the Salviati recipe, ciphers/fr2933-salviati-1525/control/codemark_curve.py, LANE R6 CM): after the
 control cipher is built (either allotment above), a share p of its tokens are redrawn -- weighted by the
 target's own type-frequency profile, mapped by rank onto the control's own K sign labels -- standing in for a
-transcription error rate on the real page. Default 0 leaves the control untouched."""
+transcription error rate on the real page. Default 0 leaves the control untouched.
+
+units=syl (bMALN, 26 Sept 2026, malsburg-hessen-1636): a letter+syllable homophonic design -- a sign stands for a
+letter OR a common syllable/bigram (period German tables of the 1600s mix both). The corpus is cut into units by
+greedy longest match over `syl` (--param syl=und,der,sch,... ; default SYL_DE below), each unit becomes one private
+character, and the SAME annealer (homophonic_anneal.anneal, whose alphabet now follows model.alpha) assigns one unit
+per sign under a unit n-gram model (order param, default 2 for units: on a 48-unit alphabet the unit trigram is
+too sparse for the anneal to find the true key even when it scores it higher -- measured bMALN, clean N=1500 K=60:
+order 3 recovered 0.00-0.26, order 2 0.16-0.87 per restart; use --param iters=150000 and >= 8 restarts). The control is
+a unit window of N units under the same profile/noise options; recovery = share of unit positions read correctly.
+The target decode is written expanded back to letters (split_decode), so the judge reads ordinary text."""
+import math
 import random
+import re
 import homophonic_anneal as ha
 from families import draw_window
 from collections import Counter
@@ -25,6 +37,67 @@ from collections import Counter
 DESCRIPTION = ("homophonic substitution (homophonic_anneal.py, control = make_control at the target's N and K; "
                "--param profile=target matches the target's own sign-count profile; --param noise=p redraws a "
                "share p of control tokens at the target's own type frequencies)")
+
+
+SYL_DE = "und,der,die,das,sch,ein,ch,en,er,ei,ie,st,ge,be,in,an,te,de,nd,ss,ck,au,ng,re"
+_UCH = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+
+
+def _units(params):
+    syl = [u for u in str(params.get("syl", SYL_DE)).split(",") if u]
+    if len(syl) > len(_UCH):
+        raise SystemExit(f"homophonic units=syl: at most {len(_UCH)} syllables")
+    return sorted(syl, key=len, reverse=True), {u: _UCH[i] for i, u in enumerate(syl)}
+
+
+def encode_units(text, params):
+    """Folded letters -> unit string (one char per unit, greedy longest match over the syllable list)."""
+    syl, code = _units(params)
+    t, out, i = ha.fold(text), [], 0
+    while i < len(t):
+        for u in syl:
+            if t.startswith(u, i):
+                out.append(code[u]); i += len(u); break
+        else:
+            out.append(t[i]); i += 1
+    return "".join(out)
+
+
+def expand_units(s, params):
+    _, code = _units(params)
+    inv = {c: u for u, c in code.items()}
+    return "".join(inv.get(c, c) for c in s)
+
+
+class UnitModel:
+    """homophonic_anneal.Model's interface over a unit alphabet (letters + one private char per syllable)."""
+    def __init__(self, unit_texts, order=3, k=0.5, alpha=None):
+        s = "".join(unit_texts)
+        self.alpha = alpha
+        self.order = order
+        self.n = Counter(s[i:i + order] for i in range(len(s) - order + 1))
+        self.c = Counter(s[i:i + order - 1] for i in range(len(s) - order + 2))
+        self.uni = Counter(s)
+        tot = sum(self.uni.values())
+        self.freq = {a: (self.uni[a] + 0.5) / (tot + 0.5 * len(alpha)) for a in alpha}
+        self.k, self.V = k, len(alpha)
+        self.cache = {}
+
+    def logp(self, g):
+        v = self.cache.get(g)
+        if v is None:
+            v = math.log((self.n[g] + self.k) / (self.c[g[:-1]] + self.k * self.V))
+            self.cache[g] = v
+        return v
+
+
+def _unit_model(unit_texts, params):
+    _, code = _units(params)
+    return UnitModel(unit_texts, _p(params, "order", 2), alpha=ha.ALPHA + "".join(code.values()))
+
+
+def _is_units(params):
+    return params.get("units", "") == "syl"
 
 
 def _p(params, k, d):
@@ -92,6 +165,8 @@ def _inject_noise(seq, noise, target_counts, seed):
 
 def make_control(spec, seed, corpora, params):
     N, K = params["N"], params["K"]
+    if _is_units(params):
+        return _make_control_units(corpora, N, K, seed, params)
     text = ha.fold("\n".join(corpora))
     plain, rest = draw_window(text, N, seed, lambda w: len(set(w)) <= K)
     model = ha.Model([rest], _p(params, "order", 3))
@@ -107,7 +182,79 @@ def make_control(spec, seed, corpora, params):
     return [seq], p, [rest]
 
 
+def _make_control_units(corpora, N, K, seed, params):
+    """units=syl control: an N-unit window (held out of training), K homophones over the units, same profile /
+    noise options as the letter design. Returns plain as the unit string; training text as a unit string too."""
+    u = encode_units("\n".join(corpora), params)
+    plain, rest = draw_window(u, N, seed, lambda w: len(set(w)) <= K)
+    model = _unit_model([rest], params)
+    noise = float(params.get("noise", 0) or 0)
+    target_counts = _target_sign_counts(params) if (params.get("profile", "") == "target" or noise) else None
+    if params.get("profile", "") == "target":
+        seq, p, truth = _make_control_profile_units(plain, K, N, model, seed, target_counts)
+    else:
+        seq, p, truth = _make_control_profile_units(plain, K, N, model, seed, None)
+    if noise:
+        seq = _inject_noise(seq, noise, target_counts, seed)
+    return [seq], p, [rest]
+
+
+def _make_control_profile_units(plain, K, N, model, seed, target_counts):
+    """_make_control_profile's fair-share allotment on a unit string (no fold). target_counts None: K split by
+    frequency (every present unit gets >= 1)."""
+    rng = random.Random(seed + 1000)
+    p = plain[:N]
+    cnt = Counter(p)
+    units = [a for a, _ in cnt.most_common()]
+    L = len(units)
+    if target_counts:
+        counts = sorted((list(target_counts) + [1] * K)[:K], reverse=True)
+    else:
+        counts = sorted([max(1, round(N / K))] * K, reverse=True)
+    reserve = counts[-L:] if L <= len(counts) else counts + [1] * (L - len(counts))
+    remaining = counts[:len(counts) - L] if L <= len(counts) else []
+    alloc = {a: [reserve[i]] for i, a in enumerate(reversed(units))}
+    want = {a: model.freq[a] * N for a in units}
+    got = {a: alloc[a][0] for a in units}
+    for b in remaining:
+        a = min(units, key=lambda a: got[a] / want[a] if want[a] > 0 else float("inf"))
+        alloc[a].append(b)
+        got[a] += b
+    homs, i = {}, 0
+    for a in units:
+        homs[a] = [f"s{i + j}" for j in range(len(alloc[a]))]
+        i += len(alloc[a])
+    seq = [rng.choices(homs[a], weights=alloc[a])[0] for a in p]
+    return seq, p, {s: a for a, ss in homs.items() for s in ss}
+
+
+def split_decode(dec, msgs):
+    """Only for units=syl (set by solve through _LAST_UNITS): one expanded-letter line per message."""
+    if _LAST_UNITS is None:
+        return None
+    lines, pos = [], 0
+    for m in msgs:
+        lines.append(expand_units(dec[pos:pos + len(m)], _LAST_UNITS)); pos += len(m)
+    return lines
+
+
+_LAST_UNITS = None
+
+
 def solve(cipher_msgs, spec, seed, restarts, corpora, params):
+    global _LAST_UNITS
+    _LAST_UNITS = None
+    if _is_units(params):
+        # corpora arrive as raw text for the target and as unit strings (the control's held-out rest) for a control
+        # a unit string has no whitespace or punctuation; raw corpus text always has spaces
+        texts = [c if re.fullmatch(r"[a-zA-Z0-9]*", c[:5000]) else encode_units(c, params) for c in corpora]
+        model = _unit_model(texts, params)
+        seq = [s for m in cipher_msgs for s in m]
+        res = ha.solve(seq, model, restarts, _p(params, "iters", 40000), seed, _p(params, "uni_weight", 1.0))
+        sc, key = res[0]
+        _LAST_UNITS = dict(params)
+        return "".join(key[x] for x in seq), sc, {"restart_scores": [round(r[0], 1) for r in res],
+                                                 "key": {k: expand_units(v, params) for k, v in key.items()}}
     model = ha.Model(corpora, _p(params, "order", 3))
     seq = [s for m in cipher_msgs for s in m]
     res = ha.solve(seq, model, restarts, _p(params, "iters", 40000), seed, _p(params, "uni_weight", 1.0))
