@@ -4,6 +4,24 @@ LANE ARM, opened 26 Sept 2026 06:49 UTC (owner's decision 06:40). One section pe
 numbers side by side (CLAUDE.md rule 3). The top block is rewritten only by a cycle consolidator; everything
 below "## ARM-CODES corpus" is append-only and is the record the summary is drawn from.
 
+## Summary, cycle 2 (LANE ARM2 orchestrator, Opus, session_01CbcHcbkYKV5HRKwBW4w7aq, 26 Sept 2026 13:44 UTC; written by the orchestrator per the ARM2 brief item 4, since no candidate pool appeared; cycle 1's block below stands unchanged)
+
+**Status: open** (unchanged; no family beat a matched control, so no NEAR.md row, rule 5). ARM-S3 wrote "partial" in
+its own section; this block keeps `open`, the same reading ARM-CONS1 gave cycle 1's non-test for family C -- the
+parent may revisit. Cycle 2 ran four jobs; every number is in the sections below.
+
+| Family | Jobs | CONTROL / screen | TARGET | Status | Reason |
+|---|---|---|---|---|---|
+| E recovery / sibling pool | ARM-POOL2, ARM-LIV, ARM-JEF | screens only (one line, N=14-27): six other coded letters, all THE=972 (coverage 70-93%, digit-0/1 7-34%, digit-2/3/5/9 21-53%) | target: low THE972 coverage, digit-0/1 about 43%, 2/3/5/9 about 13%, top digit 0 | **exhausted for reachable material** | No second letter in the target's code in: the frame-0645 docket (4 of 6 located, all THE=972); the five Livingston-to-Madison letters 1807-09 (all clear); all 35 pages of the Armstrong-Jefferson channel and the unchecked Armstrong items (all clear); LC cipher/cypher-tagged items 1806-1810 (one more, 4 May 1806, THE=972). Madison's "concerted with another correspondent" remains unexplained. Unreached: other correspondents' papers outside LOC/RG 59, WE027 (no copy), and whatever the Madison Papers editors hold. |
+| S shorthand marks | ARM-S3 | Taylor known-answer re-run 0.487 / 0.500 vs ARM-S2's 0.532 / 0.289 (freq drift 0.211, over the 0.1 tolerance); Pitman control on file 0.429 / 0.295 | Blanchard 0.175 / 0.403, Annet 0.653 / n-a, Holdsworth 0.267 / 0.172, Lewis 0.526 / 0.202 | **retired: untested-by-this-tool** (rule 3, repeated-attempt shape c) | The subagent symbol-match's own known answer moves 0.21 between sessions, more than any margin it could show; ARM-S2's six exclusions stand as recorded but carry that drift caveat. Annet's top shape score (0.653) ties Mavor (0.653) and Gurney (0.659), both excluded, within the drift -- not a lead distinguishable from noise, so no structural follow-up is licensed. Ten systems plus Lewis 1820 checked, none identified; the marks remain most plausibly a private symbol set, untestable at about 220 marks. A new instrument (e.g. a period specialist's eye) or more marks, not another pass. |
+| A1, A2, B, C, D, judge | none this cycle | as cycle 1 | as cycle 1 | **as cycle 1** | C stays parked at N=369: 139 singleton tokens cap any context-only objective near the gate; only more same-code ciphertext changes it. |
+
+**Lane state: idle-standing** (CLAUDE.md "Operating model"). Every cheap step this lane can take without a person has
+been taken; what would move the target is (a) a second letter in this code, or (b) a key, a decode or an editor's note
+naming the correspondent -- both most likely in the hands of the Papers of James Madison editors, who have read the whole
+correspondence. The blocker is the ASKS row named in STATUS.md "LANE ARM2 handoff"; the outreach draft is
+`outreach/armstrong-madison-editors.md` (status draft, AUDIT.md-gated).
+
 ## Summary, cycle 1 (consolidator ARM-CONS1, Fable, 26 Sept 2026 09:44 UTC; replaces the orchestrator's "Ladder" block of 06:49)
 
 **Status: open.** Cycle 1 ran 13 jobs (TOMO-REPLY intake, ARM-CODES, ARM-EN18, ARM-REC, ARM-A2, ARM-REC2, ARM-DESIGN,
