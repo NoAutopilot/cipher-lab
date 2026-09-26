@@ -931,3 +931,28 @@ usable alphabetical order) stands; a dictionary code is now one more excluded de
 
 No network access this pass (offline, per the brief's U1 scope; U2-U4's fetches were not reached). 0 requests to
 any host.
+## ARM3-COR pass, 26 Sept 2026 (LANE ARM3 worker ARM3-COR) -- other-correspondents pool, no pool candidate
+
+Full detail in `HYPOTHESES.md`'s new "Family E, ARM3-COR" section; images/manifest in `pool/cor/`. Weber 1979
+(`unitedstatesdipl0000webe`, still print-disabled, fts-searched anyway) ties Warden biographically to Armstrong
+("formerly private secretary to General John Armstrong") and gives Joel Barlow's own later nomenclator (as
+minister himself, 1811-12, post-dates the target), but ties no code to "Armstrong and [correspondent]" and
+corrects `tools/data/uscodes-1800/README.md`'s WE027 attribution (Weber's own text: "Livingston to King", not
+Livingston<->Madison -- flagged, not fixed, out of this job's file list). Six candidates searched in loc.gov's
+James Madison Papers and Thomas Jefferson Papers (1806-1810): Bowdoin (24 Jefferson-Papers hits), Warden (25+5),
+Skipwith (7+1), Barlow (25+6, all post-target on the Madison side), Mason (mixed, no Armstrong link found), Parker
+(0 hits either collection -- Daniel Parker not located at all). No `q=NAME cipher`/`cypher` hit for any candidate
+in either collection. The nearest-date letter to 20 Feb 1808 for Bowdoin, Warden, Skipwith and Barlow was read in
+full (11 manuscript pages, this worker directly, no subagent): all wholly clear, zero numeral groups. Skipwith's
+8 Mar 1808 letter independently names "Mr. Warden, the Secretary of Genl Armstrong" and discusses Armstrong's
+State Department correspondence directly -- real content about Armstrong, no cipher. `pool/cor/overlap_test.py`
+built (target top-20 values vs a pooled THE=972 sample vs 200 random draws) as reusable infrastructure for a
+future candidate; no candidate needed it this pass (baseline run: THE=972 sample scores at chance, 1/81 shared,
+confirming the test discriminates). Net: no pool candidate found on this route. Family E's remaining open route
+(not attempted, out of this brief's scope): the Armstrong-Warden or Armstrong-Skipwith correspondence directly,
+if it survives anywhere, rather than either man's letters *to* Jefferson/Madison.
+
+Requests: be-api.us.archive.org 13, archive.org advancedsearch.php/metadata 4 (MHS Bowdoin-Temple Papers volume
+403/302 access-restricted, consistent with the documented print-disabled finding), www.loc.gov ~28 (2 with a
+transient HTTP/2 stream error, retried once each per the good-citizen rule), tile.loc.gov 15. All >=1.5s apart,
+descriptive User-Agent, no 429/403/challenge on any host. No logins, no credentials touched, no subagent calls.

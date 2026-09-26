@@ -999,3 +999,82 @@ family of contiguous/alphabetical codes.
 
 No network access this job (offline, per brief U1's own scope; U2-U4 not reached). 0 requests to any host.
 Script and full output: `dict/dict_control.py`, `dict/dict_stats.tsv`.
+## Family E, ARM3-COR other correspondents (26 Sept 2026, LANE ARM3 worker ARM3-COR)
+
+Screen/search, not a control-backed result on the target (no candidate with numeral groups was found -- rule 3's
+matched-control machinery is reported below as infrastructure, run against the known THE=972 sample, for a
+successor who does find a coded candidate). Six candidates from the brief: James Bowdoin, David Bailie Warden,
+Fulwar Skipwith, Daniel Parker, Joel Barlow, John Mason.
+
+**U1 Weber lookup, no code tied to Armstrong-and-someone or to Bowdoin (not a `flag:` per the brief's own
+trigger condition, but worth recording).** `archive.org/advancedsearch.php` confirms Weber 1979 has exactly one
+identifier, `unitedstatesdipl0000webe` (already on file, `printdisabled`, not borrowable -- tools/data/uscodes-1800/
+README.md). `be-api.us.archive.org/fts/v1/search` full-text-searched it anyway (works on lending-only items per the
+Access playbook) for "Armstrong", "Bowdoin", "Warden", "Skipwith", "Parker", "Barlow", "Mason", "nomenclator",
+"WE027", "1700", "code 27", "twenty-seven". Verbatim snippets found (this item's own `page_num` field reads a flat
+670 on every hit -- per the Access playbook's own documented IA full-text caveat this is not a real page locator,
+so no page number is cited):
+- "successor as minister to France, General John Armstrong, wrote 40 letters in code to James Madison beginning"
+  -- matches this target's own file (NOTES.md: ~40 letters in THE=972).
+- "French government chose and accredited a Mr. David Warden, formerly private secretary to General John
+  Armstrong ... who accepted. According to Barlow, Warden demanded that his aunt, Mrs. Barlow, give up the
+  legation's seals" -- **biographical, not cryptographic**: Warden's 1808 appointment as US consul at Paris and a
+  dispute with Joel Barlow's aunt (the previous consul's widow) over consular papers/seals, not a cipher
+  arrangement. Confirms Warden really was "the Secretary of Genl Armstrong" (independently corroborated below,
+  Skipwith's own letter).
+- "Concluding his letter, Barlow encoded most of the following observation... Barlow used a nomenclator in which
+  '1700' represented..." -- **Joel Barlow's own later cipher** (as US minister to France himself, 1811-12, after
+  his predecessor "died en route" -- i.e. this is Barlow encoding his *own* despatches years after the target
+  letter, not a code shared with Armstrong in 1806-08). Not chased further (out of scope: post-dates the target,
+  and Weber's index gives no group values to test).
+- WE027 provenance, a correction worth flagging for a successor interested in that code (not this target directly):
+  "reconstructed over 1000 of the elements in the WE027 code. Livingston to King, Paris, January 25, 1802" --
+  Weber's own text ties WE027 to **Livingston-to-King** correspondence, not "Livingston<->Madison" as
+  `tools/data/uscodes-1800/README.md`'s table currently states (citing the same Weber pages). Flagged here, not
+  corrected in that README by this worker (out of this job's file list).
+- **Zero hits** for "Bowdoin" and "Skipwith" anywhere in Weber's index. **Zero hits** for "code 27" specifically.
+  No code anywhere in Weber is tied to "Armstrong and [a named correspondent]" as a pairing.
+
+**U2-U7, loc.gov James Madison Papers + Thomas Jefferson Papers, `dates=1806/1809` or `/1810`, correct facet form
+(`/collections/<slug>/?q=...&dates=...&fo=json` -- the `fa=partof:` form silently returns 0 regardless of query,
+per NOTES.md's own prior flag; not repeated here).**
+
+| Candidate | `q=NAME` hits (name only) | `q=NAME cipher`/`cypher` hits | Nearest-date letter to 20 Feb 1808 screened | Result |
+|---|---|---|---|---|
+| James Bowdoin | Madison Papers 0; Jefferson Papers 24 (mostly Bowdoin<->Jefferson, 1806-08, joint-commissioner era) | 0/0 both collections | 17 Feb 1808 (mtjbib018255, Bowdoin to Jefferson, London) -- full 4 pages read | **wholly clear, 0 numeral groups.** Bowdoin was in London by this date ("since my late arrival here"...leaving for Bath then the US), not Paris; letter is British-trade-policy commentary via David Williams, no mention of Armstrong or a cipher. |
+| David Bailie Warden | Madison Papers 5 (all 1809); Jefferson Papers 25 (1806-09) | 0/0 both collections | 8 Apr 1808 (mtjbib015691, Warden to Jefferson) -- 1 page, complete | **wholly clear, 0 numeral groups.** Routine book/plough transmittal (Lasteyrie, Humboldt). Independently named as "the Secretary of Genl Armstrong" in Skipwith's 8 Mar 1808 letter (below) -- the Weber biographical note and this letter's own signature both confirm the same man, but neither shows a cipher. |
+| Fulwar Skipwith | Madison Papers 1 (7 Sept 1806); Jefferson Papers 7 (1806-08) | 0/0 both collections | 8 Mar 1808 (mtjbib018343, Skipwith to Jefferson) -- full 4 pages read | **wholly clear, 0 numeral groups.** Names "Mr. Warden, the Secretary of Genl Armstrong" directly and discusses "the correspondence of Genl Armstrong with the Department of State" (Skipwith's own consular dispute with Armstrong over his Exequatur) -- real content about Armstrong's correspondence, but no cipher, no numerals anywhere in the 4 pages. |
+| Daniel Parker | 0 hits either collection, either date window, `"Daniel Parker"` exact phrase | n/a (no items to search) | none found | **search result, not a negative**: no letter from/to Daniel Parker located in either collection 1806-1810. |
+| Joel Barlow | Madison Papers 6 (all 1809, post-target); Jefferson Papers 25 (1806-09, dense correspondence) | 0/0 both collections (his own later nomenclator, per Weber above, is 1811-12, no group values published) | 23 Jan 1808 (mtjbib018139, Barlow to Jefferson) -- 1 page, complete | **wholly clear, 0 numeral groups.** Personal/literary letter (a Columbiad specimen gift), no mention of Armstrong. |
+| John Mason | Madison Papers 4 (John Mason + Thomson Mason + Armistead T. Mason mixed, 1808); Jefferson Papers 6 (mostly unrelated Masons) | 0/0 both collections; `q="Mason" "Armstrong"` also 0 | not screened (no signal tying this John Mason to Armstrong's Paris channel found in any search) | **search result, not a negative**: no connection to Armstrong located; not chased into full-letter reads given the brief's per-candidate budget and the absence of any Paris/Armstrong signal (contrast Warden/Skipwith, both independently tied to Armstrong by name). |
+
+**Overlap-test infrastructure (brief step b) built and run as a baseline, no candidate needed it.** None of the
+five screened candidates' nearest-date letters carried any numeral groups to test (0/0 across ~11 manuscript pages
+read directly). `pool/cor/overlap_test.py` implements the brief's matched control (target's own top-20 most
+frequent group values -- computed this pass from `ciphertext.txt`'s 369 tokens: **17, 18, 38, 1, 14, 12, 47, 170,
+1480, 1267, 48, 176, 11, 240, 760, 1340, 76, 45, 671, 41** -- against a pooled sample of the known THE=972 letters'
+own explicit group values already recorded in NOTES.md/pool/*.tsv (81 tokens: 15 Feb 1808 screen, 22 Feb 1808's two
+embedded passages, the 9 March/frame-0643 duplicate's opening line, and the 27 Dec 1807 interlinear-gloss runs) and
+200 random draws of the same N uniform over 1-1899. CONTROL baseline (`--the972-control`): THE=972 sample shares
+1/81 (1.2%) of the target's top-20 values; random draws of N=81 hit >=3 shared 5.0% of trials (mean 0.90 shared) --
+the THE=972 sample sits at chance, as expected for a genuinely different code, confirming the test has real
+discriminating power for a future candidate.
+
+**Net effect on family E:** no pool candidate. The two correspondents independently and specifically named as
+sharing Armstrong's actual working circle (Warden, his secretary -- named by both Weber and Skipwith; Skipwith
+himself, in an active dispute with Armstrong over consular authority) both correspond with Jefferson in wholly
+clear text at the dates checked closest to the target letter. This is consistent with, not a refutation of,
+Madison's "concerted with another correspondent" remark: a private cipher used *between Armstrong and that
+correspondent* would not necessarily appear in either man's correspondence *with Jefferson or Madison* -- the
+sibling letter, if one exists, is more likely in whatever archive holds the Armstrong-Warden or Armstrong-Skipwith
+correspondence directly (not searched this pass; out of the brief's routes, which specified letters *to Madison or
+Jefferson*). Named as the next step for a successor, not attempted here.
+
+Requests this pass: archive.org be-api.us.archive.org 11 (Weber fts queries) + 2 (advancedsearch + MHS
+Bowdoin-Temple-Papers fts sanity checks), archive.org advancedsearch.php 2, archive.org metadata/download 2 (MHS
+volume, 403/302 access-restricted, confirmed not reachable, consistent with the Access playbook's documented
+finding). www.loc.gov ~28 (12 name-only collection searches with dates filter + 12 name+cipher/cypher searches,
+2 with a transient `HTTP/2 stream ... INTERNAL_ERROR` retried once each per the good-citizen rule + 5 item-metadata
+`?fo=json` fetches). tile.loc.gov 15 (7 master-resolution page fetches + 8 service-derivative thumbnail fetches).
+All >=1.5s apart, descriptive User-Agent, no 429/403/challenge seen on any host. No logins, no credentials touched.
+No subagent calls (all image reads done directly by this worker).
