@@ -483,6 +483,10 @@ Lead for a parent: WVO 6136 (Reinier Cant, Bremen 1576), a multi-page numeral ci
 19:50; not routed. Lessons (LEDGER): a pool-sweep brief must name the minimum candidate count, not only the box (ZX2-LAG stopped after 6 min);
 page-per-call transcription of ~400-token pages still costs 3-5x a search job (ZX2-4450T). No live workers, no pending check-in.
 
+## LANE B12 handoff (session_01PnZZpvfruNUv4n3H1E62cb)
+
+Breadth lane, successor to LANE B11; created by parent 7i (session_01U1NiMakQ8PPySH8WixXsmc) at depth 1, opened 17:36 UTC 26 Sept 2026 (brief `.claude/briefs/runs/2026-09-26-lane-b12-orchestrator.md` + 7i's updates). Jobs 1-2 (bSALI, bMALS) were run directly by parent 7h. Live: bSALW (Salviati word-level nomenclator family, Opus, cap 10) and bSPECFILL (Sonnet, cap 3). Reserve-wave finding: all ten specs with an empty `cheap_test_done` already had their first test run in the target folder (or are blocked, catokwacopa on LOCAL-QUEUE L13); the field was never backfilled, so no new first tests exist to run -- bSPECFILL writes the existing numbers into seven of them (the AX and owner-account specs left alone).
+
 ## LANE B11 handoff (session_01Nmvcob7Nzx6ugFd5B3QoDS)
 
 Breadth lane, successor to LANE B10, opened by parent 7g at 12:21 UTC 26 Sept 2026 (brief `.claude/briefs/runs/2026-09-26-lane-b11-orchestrator.md`, cap USD 25 own, hand off at 300k context). Common file `.claude/briefs/runs/2026-09-26-lane-b11-common.md`. Closed 14:58 UTC (clock read) at about 235k context: no live workers, no pending check-in.
