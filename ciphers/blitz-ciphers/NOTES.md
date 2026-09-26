@@ -210,3 +210,80 @@ tools/data/en/README.md) -- a FAIL of unknown reliability by the rule 3 amendmen
 judge resolved `de` through LANG_CORPORA to de16 (Early New High German) while the control used de20: control and judge
 sit on different German registers (the pt17/pt18 lesson), so (b) is weaker evidence against a 1940s German plaintext
 than its numbers suggest; a rerun with the judge on de20 (`judge.corpora`) is the cheap fix. Status stays open; NEAR row.
+
+## Test 2 (26 Sept 2026, bBLZ5, LANE B5): fetch pages 1-6 and internal-consistency check -- FAILS at the structural level
+
+Intake gate re-run per brief: `python3 tools/intake_gate_check.py blitz-ciphers` -> `blitz-ciphers: open (line 3) --
+edition/page or full-text-search citation found within 6 lines`, exit 0.
+
+**Fetch.** All six untranscribed page images (`Blitz-Cipher-01.jpg` .. `Blitz-Cipher-06.jpg`) fetched from
+scienceblogs.de (the host named in the brief; URLs already on file in the already-fetched Cipherbrain post text,
+`sources/schmeh/posts/41-blitz.txt`, so no re-fetch of the blog page itself was needed). `ciphers/blitz-ciphers/
+images/manifest.json` (URL, size, sha1 per file); folder 1.5 MB, well under the 30 MB cap. Requests: 7 to
+scienceblogs.de (1 reachability probe + 6 fetches), >=2 s apart, descriptive UA, no 429/403/challenge.
+
+**Rule 2 stop before transcribing per the brief's literal instructions.** The brief asked for "one blind pass per
+page ... same case and punctuation conventions as the two pages on file" (mixed-case Latin letters plus ASCII
+punctuation `. ~ * & % @ ; : -`, per Pelling's own transcription quoted in the spec). Viewing all six images shows
+this convention does not apply to pages 1-6 at all: they are not continuous lines of that alphabet. Forcing a
+Latin-letter transliteration onto glyphs that are not Latin letters, with no key or legend to ground the mapping,
+would fabricate data rather than transcribe it (CLAUDE.md rule 2, "image over transcription" -- and by extension,
+never invent a transcription convention where none exists). Reported instead as a structural description per page
+in `ciphers/blitz-ciphers/pages_1-6.tsv` (page, description, caption lines, diagram content, approximate sign
+count, note), which is the honest substitute and still answers the consistency question the test asks.
+
+**What pages 1-6 actually show, all six confirmed by direct image inspection:** an invented ornate glyph/rune
+script (angular strokes, loops, dot- and cedilla-like diacritics) in a single register -- no visually distinct
+upper/lower case pair for any glyph the way the page 7/8 transcription shows e.g. 'C' vs 'c'. Most of each page is
+occupied by elaborate geometric/diagram constructions with no counterpart on pages 7/8 at all: a large ~20x20
+ruled grid with one glyph per cell and red dots marking scattered cells, magic-square style (page 03); repeated
+7-cell hexagonal-honeycomb figures with glyphs at cells and on radiating stalks (pages 02, 04); nested
+polygon-in-circle and interlocking-triangle/hexagram compass constructions (pages 04, 05, 06); a pentagon and a
+triangle each containing glyphs (page 05); a red circular wax-seal-style monogram device (page 01). Short caption
+lines and marginal glyph groups surround the diagrams on every page; page 05's three top lines are the longest
+continuous glyph runs found in pages 1-6 (~20-24 signs each, comparable in length to a page 7/8 line) but even
+that page is built around an arrow-and-box diagram, not a bare running block of lines. One glyph (page 02,
+top-right) closely resembles the classical alchemical/astrological symbol for Mercury -- the first recognisable
+non-invented symbol among the invented glyphs, worth flagging for anyone assessing authenticity or trying a
+symbol-substitution family later.
+
+**Approximate sign counts** (rough visual tally of caption/label glyphs per page, NOT a verified letter-by-letter
+transcription and not comparable one-for-one to the page 7/8 letter count, which is unbroken running ciphertext):
+page 01 ~90, page 02 ~40 (+~20-25 more at diagram vertices), page 03 ~110 outside the grid (+~350-400 more inside
+the grid alone -- by far the densest page and the only tabular/grid layout among all eight pages), page 04 ~45
+(+~30 at diagram vertices), page 05 ~110, page 06 ~85. Caption-only total across pages 1-6 is roughly 480 signs;
+including page 03's grid pushes it to roughly 855-880 -- an order of magnitude estimate only, given the difficulty
+of reliably segmenting an unfamiliar invented script by eye without a reference glyph key (the same caution
+CLAUDE.md's transcription-cost lesson gives for signs-matched-against-a-reference-sheet jobs). **No comparable
+letters-only N is added to the spec's judge N=581** (pages 1-6 contain no Latin letters at all under any plausible
+reading), so `judge.letters_min/max` (570/590) and every family_run.py test run so far against `ciphertext_letters_cf.txt`
+stay exactly as they were -- pages 1-6 cannot feed the same masc/homophonic pipeline without a wholly new glyph-key
+and tokenisation scheme, which is out of scope for this cheap test.
+
+**Consistency verdict (the brief's actual question): FAILS, decisively, at the structural level, before any
+character-level statistic is needed.** The brief's own within-document control (case-pair ratios and inventory
+spread between page-7 and page-8 halves) cannot even be computed for pages 1-6, because the measurement itself
+does not transfer: there is no case duality to measure (single-register glyphs, no upper/lower pairing) and no
+ASCII punctuation stream to fold into a letters-only count. The two transcribed pages (7, 8) are dense,
+diagram-free, unbroken running lines of a mixed-case Latin-letter-plus-punctuation cryptogram; the six untranscribed
+pages (1-6) are short glyph captions wrapped around elaborate compass-and-straightedge geometric diagrams in a
+wholly different, single-register invented script. **The same symbol/punctuation inventory and case pattern do
+not recur across the eight pages** -- if anything, the book (as photographed) appears to combine at least two
+visually and structurally distinct sign systems, not one internally consistent cipher applied uniformly across
+all eight leaves. This bears directly on the authenticity dispute already on file above (Pelling's own hedged
+"combines three cipher styles at once" suspicion, SantaColoma's direct forgery claim): a real historical cipher
+book switching wholesale between an unbroken-text substitution cipher and an entirely different diagram-heavy
+occult/alchemical-symbol system, with no visible transitional or bridging material across the six-page gap, is at
+least as consistent with an assembled/pastiche modern object as with a single coherent period cryptosystem. This
+is a structural observation from the images, not a cryptanalytic claim and not a novelty verdict (rule 10) --
+report only; a verifier or a later worker with time to build a real glyph-key would be needed to say more.
+
+**cheap_test_done row 2 in specs/blitz-ciphers.json** records this (date, method, both "numbers": the approximate
+caption-sign counts by page, and the explicit non-transfer of the case-pair/inventory control). Status stays
+`open` (the brief's cap did not include running a family test on any new N -- none is available in the first
+place -- and this finding, while structurally decisive, is not itself a control-backed cryptanalytic negative in
+rule 3's sense, so no NEAR.md row is owed for this step). Next untried step: pages 1-6 need their own
+glyph-inventory key (a distinct-shape catalogue built from the images, analogous to a Bourdeau-style sign
+inventory) before any family_run.py-style test could run on them at all; that key-building pass is not this job.
+
+**Requests**: scienceblogs.de 7 (all this stage; 0 to any other host).
