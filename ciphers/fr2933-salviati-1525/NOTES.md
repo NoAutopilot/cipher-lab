@@ -2229,3 +2229,26 @@ each >=1.5s apart, well under the 60-request cap; one download needed a retry fo
 $ python3 tools/file_shrink_guard.py ciphers/fr2933-salviati-1525/NOTES.md ciphers/fr2933-salviati-1525/kp/hits.tsv ciphers/fr2933-salviati-1525/kp/wordlist.txt ciphers/fr2933-salviati-1525/kp/manifest.tsv
 ```
 (output pasted in the done line)
+
+## SALV-CTX: context-word option for wordcode, matched control (26 Sept 2026, LANE SALV)
+
+Worker SALV-CTX (Opus), 21:26-21:4x UTC, brief `.claude/briefs/runs/2026-09-26-lane-salv-j2a-context.md` (job 2a).
+Synthetic material only; the target was not run.
+- Corpus `tools/data/it16dip/` (Castiglione's Lettere vols 1-2 incl. his 1525-29 Negozi from Charles V's court,
+  Desjardins t. II Italian despatches, Lettere di principi I-III; long-s repaired), wired as `LANG_CORPORA["it16dip"]`.
+  Leave-one-file-out false-negative rate at N=2500: 47.2% (folds 2.0-96.0%) vs `it` 34.6% (12.5-59.5%) -- neither is a
+  reliable judge at this length (table in tools/data/it16dip/README.md).
+- `tools/families/wordcode.py --param context=<tsv>` (run_index, prev_word, next_word): padded trigrams across the run
+  edge plus an add-k word bigram (`ctxw`); in a control `context=control ctxshare=S` supplies the withheld words.
+- Control, 3 seeds, 8x80k, err 0.064, it16dip: code-class mean blind 0.302, context 1.0 0.374, context 0.5 0.375; lower
+  with context on seeds 1-2, higher only on the blind run's failed seed 3; hapax code types 0.000 in every arm.
+  **Pre-registered gate not met at ctxshare 1.0 or 0.5** (HYPOTHESES.md "wordcode + context, SALV-CTX control").
+  Caveat: the it16dip control's code share (0.18-0.30) is under the target's 0.323; a share-matched rerun is the named
+  check before reading this as a statement about context scoring in general. The target stays `partial`.
+Regenerate: `python3 tools/data/it16dip/build.py --raw DIR` (after fetching the MANIFEST.tsv URLs);
+`python3 tools/data/it16dip/holdout_check.py --lang it16dip` (and `--lang it`); the three control runs:
+`python3 tools/family_run.py specs/fr2933-salviati-1525.json --family wordcode --control-only --seeds 3 --restarts 8
+--corpus tools/data/it16dip --param err=0.064 --param iters=80000 [--param context=control --param ctxshare=1.0|0.5]`.
+Suggestion (not run): job 2b as briefed is not licensed; a cheaper next check is the same control at the target's
+code share, and a vocabulary that can hold the hapax words (SALV-KP's `kp/wordlist.txt` added via a vocab option) --
+only 35-48% of hapax truth words are in the 1,000-word list.

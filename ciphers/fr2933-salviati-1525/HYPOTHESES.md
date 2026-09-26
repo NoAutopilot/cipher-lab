@@ -78,3 +78,50 @@ Settings for all three runs: `tools/family_run.py specs/fr2933-salviati-1525.jso
 --seeds 3 --restarts 8 --corpus tools/data/it16dip --param err=0.064 --param iters=80000` (bSALW's 6.4% row; codes=marked,
 codeletters=0 are the defaults), control seeds 1-3 in every run; (ii)/(iii) add `--param context=control --param
 ctxshare=1.0|0.5`. Control only; the target is not run.
+
+family_run.py rows (control-only, written to a scratch --out per run so three parallel runs could not interleave their appends, copied here verbatim):
+
+| date (UTC) | family | parameters | seed(s) | control recovery | target | judge | gated | label |
+|---|---|---|---|---|---|---|---|---|
+| 26 Sept 2026 21:38 | wordcode | N=2839 K=236 restarts=8 corpus=bub_gb_ZJMxff7r4LUC.txt.gz+bub_gb_laRnTtJmsDAC.txt.gz+gri_33125010469852.txt.gz+letterediprincip01char.txt.gz+letterediprincip02char.txt.gz+letterediprincip03char.txt.gz err=0.064,iters=80000 | 1-3 | 0.755 (0.596-0.854) | not run (control-only) | - | yes | SALV-CTX (i) blind, it16dip |
+| 26 Sept 2026 21:38 | wordcode | N=2839 K=236 restarts=8 corpus=bub_gb_ZJMxff7r4LUC.txt.gz+bub_gb_laRnTtJmsDAC.txt.gz+gri_33125010469852.txt.gz+letterediprincip01char.txt.gz+letterediprincip02char.txt.gz+letterediprincip03char.txt.gz err=0.064,iters=80000,context=control,ctxshare=1.0 | 1-3 | 0.800 (0.766-0.840) | not run (control-only) | - | yes | SALV-CTX (ii) context ctxshare=1.0, it16dip |
+| 26 Sept 2026 21:38 | wordcode | N=2839 K=236 restarts=8 corpus=bub_gb_ZJMxff7r4LUC.txt.gz+bub_gb_laRnTtJmsDAC.txt.gz+gri_33125010469852.txt.gz+letterediprincip01char.txt.gz+letterediprincip02char.txt.gz+letterediprincip03char.txt.gz err=0.064,iters=80000,context=control,ctxshare=0.5 | 1-3 | 0.798 (0.772-0.841) | not run (control-only) | - | yes | SALV-CTX (iii) context ctxshare=0.5, it16dip |
+
+Per seed (token accuracy; codes split by whether the clean truth word occurs once (hapax) or more as a code token in
+that control; stdout "per class" lines, logs of 26 Sept 2026 21:36-21:38 UTC):
+
+| run | seed | blended | letters | codes | codes-hapax | codes-repeated |
+|---|---|---|---|---|---|---|
+| (i) blind | 1 | 0.854 | 0.952 | 0.392 | 0.000 (n=124) | 0.523 (n=373) |
+| (i) blind | 2 | 0.816 | 0.945 | 0.513 | 0.000 (n=103) | 0.584 (n=745) |
+| (i) blind | 3 | 0.596 | 0.757 | 0.000 | 0.000 (n=101) | 0.000 (n=502) |
+| (i) blind | mean | 0.755 | 0.885 | **0.302** | 0.000 | 0.369 |
+| (ii) context, ctxshare=1.0 | 1 | 0.840 | 0.952 | 0.316 | 0.000 | 0.421 |
+| (ii) context, ctxshare=1.0 | 2 | 0.794 | 0.933 | 0.468 | 0.000 | 0.533 |
+| (ii) context, ctxshare=1.0 | 3 | 0.766 | 0.882 | 0.338 | 0.000 | 0.406 |
+| (ii) context, ctxshare=1.0 | mean | 0.800 | 0.922 | **0.374** | 0.000 | 0.453 |
+| (iii) context, ctxshare=0.5 | 1 | 0.841 | 0.952 | 0.318 | 0.000 | 0.424 |
+| (iii) context, ctxshare=0.5 | 2 | 0.780 | 0.912 | 0.469 | 0.000 | 0.534 |
+| (iii) context, ctxshare=0.5 | 3 | 0.772 | 0.890 | 0.337 | 0.000 | 0.404 |
+| (iii) context, ctxshare=0.5 | mean | 0.798 | 0.918 | **0.375** | 0.000 | 0.454 |
+
+Headroom check: blind code-class mean 0.302 < 0.70, so the gate could be tested.
+Gate: code-class mean rises +0.072 (1.0) and +0.073 (0.5), under the +0.10 required; per seed it FALLS on seeds 1 and 2
+(0.392 -> 0.316/0.318, 0.513 -> 0.468/0.469) and rises only on seed 3, which is the blind run's search failure (codes
+0.000, letters 0.757) -- the context terms changed that seed's anneal trajectory, not the code assignment on seeds
+that searched well. Blended mean not lower (0.755 -> 0.800/0.798).
+
+**Verdict: gate not met at ctxshare 1.0, not met at ctxshare 0.5.** The context option adds no reproducible margin on
+the code class in this control; job 2b is not licensed by this control.
+
+Diagnostics (same controls rebuilt at err=0, no solve, 26 Sept 2026 21:39 UTC):
+- Hapax code tokens are 0.000 in every arm. Only 36-48 of 101-124 hapax truth words (0.35-0.48) are in the solver's
+  1,000-word list at all (repeated: 0.92-0.99); the other half cannot be read by any setting, and the reachable half
+  was not read either -- one word bigram at a run edge does not pin a type seen once.
+- The control's own context is right: e.g. seed 1 runs 1-3 carry (uoleua | come), (come | piu), (piu | signorie),
+  the withheld words on either side, shared between neighbouring runs across a one-word gap.
+- Design mismatch to name (rule 3 Salviati paragraph): on it16dip the control's code token share is 0.175 / 0.299 /
+  0.212 against the target's 0.323 (on it16, bSALW matched 0.28-0.33). The bisection on the common-word part does
+  not reach the share with this noisier vocabulary. Both arms share the mismatch, so the blind-vs-context comparison
+  stands, but a control at the target's code share is not yet run; a rerun there (or on `it`) is the named check
+  before this negative is read as a design statement about context scoring.
