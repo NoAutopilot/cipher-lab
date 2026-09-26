@@ -1,0 +1,17 @@
+SALV-PLAIN3 (LANE SALV job 1, last two leaves: plain-Italian boxes on f.57r (43 plain boxes) and f.57v (172); Sonnet, cap USD 18 stall alarm, wall-clock box 80 minutes from your first `date -u`). Written 26 Sept 2026 by LANE SALV orchestrator (session_01PUAQ15dRtV3yV1eskpRLg5) after the 23:17 UTC clock read.
+
+COMMON RULES: `.claude/briefs/runs/2026-09-26-lane-salv-COMMON.md` in full. Claim as `LANE SALV worker SALV-PLAIN3`. Intake gate 26 Sept 2026 20:44 UTC: `fr2933-salviati-1525: open (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0.
+
+METHOD: SALV-PLAIN1's protocol, unchanged (read `.claude/briefs/runs/2026-09-26-lane-salv-j1a-plain.md` and NOTES.md sections "SALV-PLAIN1" and "SALV-PLAIN2" in full; reuse `crop_plain_leaf.py`, `recon_plain_diff.py` and the file formats). The crops are not committed (folder size): regenerate the f57r/f57v renders with `./regen_images.sh page f57r_ref1600.jpg` / `f57v_ref1600.jpg` plus the 2400-px fetch as j1a describes (at most 4 gallica requests, >=2 s apart) and re-run `crop_plain_leaf.py f57r` / `f57v`; paste the command and summary into NOTES.md before any subagent call.
+
+ONE CHANGE, FOR COST. SALV-PLAIN2 cost about USD 12 a leaf against SALV-PLAIN1's 5, largely because the worker's own context grew with every image it opened. So: YOU DO NOT OPEN CROP IMAGES YOURSELF. Every image goes to a Sonnet subagent: pass A and pass B as before (one call per leaf per pass), and the reconciliation as ONE further Sonnet subagent call per leaf that receives only the disagreeing rows (from recon_plain_diff.py) and the crops of the lines they sit on, and returns a settled row per disagreement (`R`) or `M`. Your own work is scripts, merging and writing. Reconciliation from the image, not by confidence alone (the f55v/f56v fallback is what this brief avoids).
+
+UNITS (8): U0 setup; f57r pass A, pass B, reconciliation; f57v pass A, pass B, reconciliation; U7 merge. Per-unit estimate USD 1.8 and about 7 minutes (f57r's units are smaller). Stop before starting a unit that would cross 80% of the box (64 minutes); do f57r first.
+
+ALSO: the box SALV-PLAIN2 flagged (f56v line 18 pos 19, missing from the crop manifest): check why in crop_plain_leaf.py and say so in one line; fix the script only if the cause is a clear bug, and do not re-run f56v.
+
+OUTPUT: `plain_f57r.tsv`, `plain_f57v.tsv`; `plain_boxes.tsv` extended to all eight leaves (earlier rows unchanged); `build_ciphertext_with_plain.py --check` and `build_spec.py --check` exit 0; the [C] count for f57r/f57v added to SALV-PLAIN2's table form; NOTES.md section "## SALV-PLAIN3: plain-Italian boxes, f.57r-f.57v (26 Sept 2026, LANE SALV)" with the per-leaf row (plain boxes, A/R/M, raw A/B disagreement %, reconciliation method), and one line totalling all eight leaves (boxes, A/R/M, [C] reconciled / one-pass-only).
+
+FILES: ciphers/fr2933-salviati-1525/{plain_crops/f57r, plain_crops/f57v, plain_pass*_f57*.tsv, recon_plain_f57*/, plain_f57r.tsv, plain_f57v.tsv, plain_boxes.tsv, ciphertext_with_plain.txt, crop_plain_leaf.py (clear bug only), NOTES.md (append)}, ROOM.md. Never HYPOTHESES.md, NEAR.md, the spec, ciphertext_*.tsv, tools/.
+
+Report what was transcribed and left illegible; no reading, no summary of the letter's content, no novelty wording. Push after each leaf with `python3 tools/room.py --push <paths>`; done line "for LANE SALV" with the figures and file_shrink_guard output; final reply one paragraph (answer first, files, requests per host, "cost: see the lane ledger"); stop.

@@ -975,3 +975,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T22:41Z	session_01DZTHcDXCHaFRuoTKcQg9Kw	SALV-CTX2	done 3.24 D (get_session), ledgered, retitled ARCHIVED, archived by LANE SALV	gate not met at matched share (+0.037); context option untested-by-this-tool
 2026-09-26T22:46Z	session_016C1DYK9Ap1s7BLPuDN2xod	MAL-GG	done 3.06 D (get_session), ledgered, retitled ARCHIVED, archived by parent 7j	f.23 GG is two cipher letter-signs; G.G. label count stays 2
 2026-09-26T22:48Z	session_0133FKBRgxRwBiNsQsVimhUf	MAL-F15 (Sonnet, cap 6)	malsburg-hessen-1636: f.15 clear-prose transcription, two blind passes on line crops plus reconcile, crib rows, label counts	brief 2026-09-26-parent-ytbiz-mal-f15.md; parent 7j
+2026-09-26T23:20Z	session_01Ce9bMS77iRL3NQTSPWdbwS	SALV-PLAIN2	done 28.09 D- (get_session), ledgered, retitled ARCHIVED, archived by LANE SALV	f56r+f56v transcribed; f57r/f57v left
