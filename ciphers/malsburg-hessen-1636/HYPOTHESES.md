@@ -42,6 +42,13 @@ Statistic: raw occurrence count of the doubled-letter monogram labels G.G./A.A./
 `clear_00*.txt`, against a doubled-letter-pair control (every `L.L.`/`LL` for all 26 letters, same files).
 Full detail and named next step: NOTES.md "MAL-MONO (26 Sept 2026)".
 
+**MAL-GG verdict (26 Sept 2026):** f.23 L46 pos.21 paleographically compared against the f.32/f.33 crops
+(own read + one blind Sonnet subagent read, NOTES.md "MAL-GG") -- f.23's mark is a single connected
+ligature with no per-letter flourish, unlike f.32/f.33's two individually-flourished separate letters,
+and bare "G" is already an attested ordinary cipher-alphabet sign (9x on disk, 7x on f.23 itself); M-grade
+verdict is **two adjacent cipher letter-signs, not the same reused monogram** -- the monogram-label count
+for G.G. stays at 2 (f.32, f.33), not 3, and the nomenclator family is not opened on this evidence.
+
 TARGET (on-disk raw count): G.G.=3 (f.32 M, f.33 M, **f.23 L46 pos.21 H -- new, a bare `GG` sign inside the
 running cipher, not a naming clause**), A.A.=1 (f.33 M only), K.K.=0 on disk (bMALS's one sighting is a
 direct image read not captured by any file this job scanned). CONTROL, other 23 letters: raw median 0, raw

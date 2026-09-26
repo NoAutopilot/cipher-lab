@@ -1531,3 +1531,109 @@ nomenclator family; it reports the count and control for the orchestrator to wei
    the cipher block, needs reading for this specific question.
 
 Files: `mono_search.py`, `mono_control.py`, `mono_hits.tsv`. No hosts (disk only).
+
+## MAL-GG (26 Sept 2026, parent worker MAL-GG, disk-only, no leaf pass)
+
+Intake gate re-run: `python3 tools/intake_gate_check.py ciphers/malsburg-hessen-1636` -> `partial (line 1)
+-- edition/page or full-text-search citation found within 6 lines`, exit 0.
+
+Job: MAL-MONO's own named next step (this file, "Named next step" item 1) -- read the f.23 L46 pos.21
+`GG` crop against the f.32/f.33 monogram crops and decide whether it is the same reused two-letter label
+or two adjacent cipher letter-signs that happen to read G G. Paleographic comparison only, no gloss, no
+key claim, no family run.
+
+**U1 crops located.** `crops/0023/hstam_4_h_1411_0023_L46.jpg` (full line crop, native res, 2226x53 --
+very low native height); `crops/0032/hstam_4_h_1411_0032_spanA.jpg` (bMALS's 4x span crop, "X.X. oder
+[sigil] nach G.G. genannt"); `crops/0033/hstam_4_h_1411_0033_spanA.jpg` (bMALS's 4x span crop, "mit G.G.
+A.A. oder K.K.", crib row 11.N at `0033_L2` position 18).
+
+**U2 comparison.** Both reads below worked from the crop files only; the subagent was given only the
+three paths and the six questions, blind to this worker's own reads and to the hypothesis.
+
+| # | question | this worker (own read) | Sonnet subagent (blind) | kept |
+|---|---|---|---|---|
+| f.23 L46 pos.21 | 1 stops | none clearly visible between or after the two loops at this resolution (native crop only 53px tall; degrades badly past ~6x zoom) | period before (part of "84."), period after the mark, none between the two letters | subagent's (more confident, plausible) |
+| | 2 ligature/separate | ambiguous on first look, but a closer 6x crop shows the two loops touching/joined by a stroke at the top | single continuous ligature, one unbroken connecting stroke | **agree**: ligature |
+| | 3 height vs neighbours | taller than the surrounding digits | taller than digits, near cap-height | agree |
+| | 4 ink/pen | consistent with the surrounding cipher run, no insertion | consistent, no insertion | agree |
+| | 5 overline/box | none | none | agree |
+| f.32 naming span | 1 stops | gap (no stop) between the two letters, one stop after the pair | no stop between, one stop after the pair | agree |
+| | 2 ligature/separate | **two clearly separate letters**, re-examined at 3x on the source crop (`f32_GG.jpg`, scratchpad): each loop is a complete, independent letterform with its own stem and underline flourish, no connecting stroke visible between them | continuous ligature, single unbroken stroke | **disagree -- kept this worker's own read**: direct inspection of the 4x-native span crop at 3x further zoom shows a plain gap between the two loops with no top connecting stroke, unlike f.23's mark; the subagent's "ligature" call for this crop does not match what is visible in the image at this resolution (which is much higher-fidelity than f.23's, so the disagreement is not a resolution artifact here) |
+| | 3 height | taller/more formal than surrounding prose, descenders below baseline | taller, matches capitals elsewhere on the line | agree |
+| | 4 ink | consistent with surrounding prose | consistent (subagent separately noted the diamond sigil nearby is heavier ink -- a different mark, not this one) | agree |
+| | 5 overline/box | none (each letter has its own underline-flourish serif, not a shared overline) | none for this mark | agree |
+| f.33 naming list (1st of 3 monograms) | 1 stops | gap between the two letters, stop after the pair | no stop between, one stop after the pair | agree |
+| | 2 ligature/separate | **two clearly separate letters**, re-examined at 4x (`f33_GG_tight.jpg`, scratchpad): same independent-loop-plus-underline-flourish construction as f.32, no connecting stroke | continuous ligature | **disagree -- kept this worker's own read**, same basis as f.32 above |
+| | 3 height | taller, matches the other two monograms and the capital N earlier in the line | taller, matches the other two marks and capital N | agree |
+| | 4 ink | consistent with rest of line, same pen as the other two monograms | consistent, same pen | agree |
+| | 5 overline/box | none | none | agree |
+
+**Resolution of the ligature disagreement.** f.32 and f.33 are both cut from bMALS's tight 4x-native-res
+span crops (`spanwork/spanA_reconcile.md`, MAL-MONO/bMALS's own precedent); a further 3-4x digital zoom on
+top of that still leaves individually resolvable strokes (`f32_GG.jpg`, `f33_GG_tight.jpg`, scratchpad).
+At that resolution both marks show two independently complete letterforms -- each with its own loop,
+stem, descender and underline serif -- separated by a plain gap, not joined by any stroke. f.23's crop is
+the raw `tools/iiif_lines.py` line-band output at native resolution (no extra zoom applied by any prior
+pass), only 53px tall; digital zoom past ~6x on that source degrades to interpolation noise rather than
+resolving new strokes. So this worker keeps its own read of f.32/f.33 (two separate letters, high
+confidence, directly visible) over the subagent's "ligature" call for those two -- but treats f.23's own
+ligature/joined read (agreed by both this worker and the subagent, on the same source) as the better-
+supported reading for that occurrence specifically.
+
+**A construction difference, not just a resolution gap.** f.32 and f.33's "G.G." is built the same way
+in both places: two independently drawn, individually flourished letters (each its own loop-stem-
+descender-underline), a small gap between them, one stop after the pair -- a consistent, deliberate
+monogram convention reused across both leaves. f.23's mark, by contrast, reads as a single connected
+ligature with no individual descender/flourish visible on either loop, taller than the digit stream but
+without the formal apparatus (per-letter underline serif) that marks f.32/f.33's monogram as a distinct,
+elevated label. This is evidence *against* the same-object reading, independent of the resolution
+caveat above.
+
+**A second, disk-grounded fact bearing on the same question.** Bare single "G" (no stop, not doubled) is
+already an attested member of this cipher's ordinary letter-sign alphabet: 9 occurrences in
+`pool/pooled.tsv`, 7 of them on f.23 itself (`grep`: lines L18, L24, L28, L31, L33, L37, L45, plus 2 on
+ff.3/12), most graded H, mixed in among digit codes exactly the way L46's own "Y", "F" (both bare letter
+signs) sit beside "GG" in this same line (context_after "Y 22 48 83 F"). A bare cipher-alphabet letter
+appearing twice in immediate sequence (as "G" then "G", read by the transcription pass as one fused
+token) is therefore not an inherently surprising event on this leaf -- it does not require a reused
+monogram label to explain it.
+
+**(a) Verdict: two adjacent cipher letter-signs, not the same monogram -- M grade, not undecidable.**
+Both the construction difference (ligature vs two individually-flourished separate letters) and the
+disk fact that bare G is an ordinary, frequently-attested sign on this exact leaf point the same way.
+This is a paleographic/statistical read, not a resolved cryptanalytic fact (M grade, rule 4); the
+resolution caveat on f.23's own crop means it is not pushed to H.
+
+**(b) Context on L46.** The clear words immediately before the run (`pool/pooled.tsv` rows 1592-1596,
+already transcribed, grade M): "Weil man plotzlich gezwungt gewest" ("because one was suddenly forced/
+compelled to be", M-graded per-token). These clear words are followed immediately by six digit codes
+(28. 15. 13. 37. 70. 84., positions 15-20, H-graded) *before* reaching the GG token at position 21 --
+the run does not sit adjacent to the clear words at all; it is embedded six code-positions deep inside
+the following cipher block, then followed immediately by more bare letter/digit signs (Y 22 48 83 F 11).
+This is not the syntactic shape of f.32/f.33's naming clauses ("X.X. oder [mark] nach G.G. genannt",
+"...N. mit G.G. A.A. oder K.K.") -- both of those sit directly inside a clear-prose sentence, immediately
+governed by a preposition ("nach", "mit") naming or introducing the mark. L46's position 21 has no such
+governing clear word nearby; it sits mid-cipher-run, the shape a codeword or a repeated ordinary sign
+would take, not the shape a naming clause takes. This supports (a)'s verdict independently of the crop
+comparison.
+
+**(c) Consistent-word count for the monogram object, both ways stated:** if the same object (rejected
+above, but stated for completeness per the brief), G.G. would stand at 3 raw sightings across 2 records
+(MAL-MONO's count). Under this job's verdict (two different objects), the monogram-label count stays at
+**2** (f.32, f.33 only, both M grade, both from the naming-clause construction) and the f.23 occurrence
+is reclassified as an ordinary bare-letter-sign doubling, not a monogram sighting -- it does not add to
+the nomenclator gate's occurrence count for G.G. as a label.
+
+**(d) Named next step.** Not "family_run.py --family nomenclator" on G.G. as a name-class crib: this
+job's verdict removes the third sighting that would have supported opening it. The named next step
+carried forward from MAL-MONO's item 2 stands: **the f.15 clear-prose transcription**
+(`hstam_4_h_1411_0015`, record 503 1/3, per `extent.tsv` the highest ratio of untranscribed clear German
+prose to cipher of any leaf not yet read) is the likeliest source of a genuine fourth G.G./A.A./K.K.
+naming-clause sighting, at an estimated cost of about USD 4-5 for a single non-blind read of the clear
+portion only (CLAUDE.md Usage 6 per-page floor).
+
+Status stays `partial` (rule 5). No key claim, no "solved"/"new"/"first"/"unpublished" wording.
+
+Files (scratchpad, not committed): `f32_GG.jpg`, `f33_GG_tight.jpg`, `f23_GG_v3.jpg`, `f23_GG_v4.jpg` --
+all reproducible from the same source crops/boxes already on disk (`crops/{0023,0032,0033}/manifest.json`),
+same convention as bMALS's own uncommitted `digitcompare_*.jpg` files. No hosts (disk only).
