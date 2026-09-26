@@ -911,3 +911,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T17:29Z	session_018gBDXQEvTTFHzLFsEvZAVr	MAIL-PREP	done 4.61 D (get_session), ledgered, retitled ARCHIVED, archived by 7i	6 mailbox json drafts, unchecked
 2026-09-26T17:29Z	session_01Lh5PGixsyj5GHsTdvbc6JR	SYSTEM-MAP	done 2.98 D (get_session), ledgered, retitled ARCHIVED, archived by 7i	SYSTEM.md + system_map_check
 2026-09-26T17:29Z	session_01Vhu8sRCdAUKSRF3GAdTfF7	OUT-CHECK (Opus, cap 6)	gate 7 fact check of the six mailbox drafts; reports to 7i	brief 2026-09-26-parent-out-check.md; parent 7i
+2026-09-26T17:31Z	session_01MDf1zFTkxAsyd6zLUgYTdK	QA13 (Sonnet, cap 4)	rolling QA, window 14:33 to start; reports for the parent	brief 2026-09-26-lane-v10-qa13.md; parent 7i
+2026-09-26T17:33Z	session_01Pd7VDFHfeiUfPdJ2TQP7j1	RETRO-APPLY-U (Sonnet, cap 6)	apply RETRO-2026-09-26i.md proposals 1-4 (file_shrink_guard, lineage-depth standing rule amended, reconciliation pricing, runner-prompt edit rule)	brief 2026-09-26-parent-retro-apply-u.md; parent 7i
