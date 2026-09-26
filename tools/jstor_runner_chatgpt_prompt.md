@@ -27,6 +27,11 @@ browser, logged into www.jstor.org with the owner's JPASS account (you may log i
    letter)`.
 4. For every `candidate:` hit, open the article in JSTOR's online page viewer and read it there (never click Download
    PDF); add one sentence after the hit saying whether it prints, calendars or discusses the target letter, with the page.
+   Login check first (26 Sept 2026, after the 20:13 run read four candidates as previews): if the page shows "Register
+   for a free account", "This is a preview" or "Log in through your library" instead of the reader, you are not logged
+   in -- log in to www.jstor.org with the JPASS account before reading, then reopen the article. A row whose candidate
+   was seen only as a preview is recorded `blocked: not logged in` in its `read` cell, never as read; the repository
+   side requeues it for the next run.
 5. Create the branch `jstor-run/<UTC date>-<hhmm>` from main and add exactly one file,
    `jstor-runs/<UTC date>-<hhmm>.tsv`, tab-separated with a header row `target	query	hits	read`, one row per query
    answered, `read` = the one-sentence outcome of step 4 or `-`. Open a pull request from that branch to main titled
