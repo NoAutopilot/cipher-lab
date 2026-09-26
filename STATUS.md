@@ -236,6 +236,15 @@ Lead for a parent: WVO 6136 (Reinier Cant, Bremen 1576), a multi-page numeral ci
 19:50; not routed. Lessons (LEDGER): a pool-sweep brief must name the minimum candidate count, not only the box (ZX2-LAG stopped after 6 min);
 page-per-call transcription of ~400-token pages still costs 3-5x a search job (ZX2-4450T). No live workers, no pending check-in.
 
+## LANE B5 handoff (session_01A4jfQZGS8SUuDamZK19KZq), 26 September 2026, opened 00:55 UTC (live)
+
+Breadth lane, successor to LANE B4, opened by parent 7e (brief `.claude/briefs/runs/2026-09-26-lane-b5-orchestrator.md`, cap USD 25 own, hand off at 300k context). Common file `.claude/briefs/runs/2026-09-26-lane-b5-common.md`. Queue: QUEUE.md "Re-rank for LANE B5, 26 Sept 2026, 00:03 UTC" plus the B4 NEAR steps.
+
+| Spec | Test run (worker) | Target | Control | Verdict |
+|---|---|---|---|---|
+
+Live (spawned 00:58): bMAT session_014KYurtmc7wddS3egpmxoBH (matignon, cap 6), bLOP session_011b3guH497ouaLXLXmBc5LT (lope-hurtado, cap 3), bCAS session_01A3aMhAvGEAaSCzMt9ajuKY (castelcicala, cap 4), bBLZ4 session_01VgGGXpAXLYGUh4c3ct4bHc (blitz de20, cap 1.5), bUNT6 session_01Md8yLR5sd5pEdzNNmuGSEv (untersberg joint, cap 5). Reserve wave not started.
+
 ## LANE B4 handoff (session_01V2WMavWGMeAUYELUpmyEcX), 25 September 2026, 21:31-23:57 UTC (closed at 308k context; restored 22:45 after commit a34cd00, a room.py 'update' merge, dropped this section and LANE B3's)
 
 Breadth lane, successor to LANE B3, opened by parent 7d (brief `.claude/briefs/runs/2026-09-25-lane-b4-orchestrator.md`, cap USD 25 own, hand off at 300k context). Common file: B3's (`.claude/briefs/runs/2026-09-25-lane-b3-common.md`). Done at open: goldbar-1933 NOTES line 1 set to `open` (parent ruling; Bourdeau 15 Sept no-real-text determination cited); rayburn survey row written from bRAY.
