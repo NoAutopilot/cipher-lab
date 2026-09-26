@@ -1,119 +1,127 @@
 code	value	grade	occurrences	agree	empty	others
-1	n	H	18	17	1	
-2	n	H	47	39	5	o:1,t:1,u:1
-3	n	H	17	16	0	e:1
-4	n	H	15	10	2	u:2,s:1
-5	n	H	16	14	0	x:1,z:1
-6	o	H	30	26	2	s:1,t:1
-7	o	H	17	15	0	n:1,s:1
-8	o	H	17	13	1	n:2,a:1
-9	o	H	26	21	0	n:2,g:1,f:1,u:1
-10	o	H	31	29	1	n:1
-11	p	H	3	2	1	
-12	p	H	18	17	0	s:1
-13	p	H	10	9	0	i:1
-14	p	H	6	6	0	
-15	p	H	5	5	0	
-16	q	H	9	9	0	
-17	q	H	6	6	0	
-18	q	M	4	2	0	e:1,z:1
-19	q	H	2	2	0	
-20	q	M	8	4	0	m:1,r:1,s:1,u:1
-21	r	H	52	47	1	c:2,l:1,n:1
-22	r	H	27	25	2	
+1	n	H	24	23	1	
+2	n	H	74	66	5	o:1,t:1,u:1
+3	n	H	26	24	0	e:1,v:1
+4	n	H	24	18	3	u:2,s:1
+5	n	H	21	17	1	x:2,z:1
+6	o	H	44	40	2	s:1,t:1
+7	o	H	33	29	0	n:3,s:1
+8	o	H	21	17	1	n:2,a:1
+9	o	H	33	28	0	n:2,g:1,f:1,u:1
+10	o	H	40	38	1	n:1
+11	p	H	4	3	1	
+12	p	H	26	26	0	
+13	p	H	18	16	0	e:1,i:1
+14	p	H	9	9	0	
+15	p	H	6	6	0	
+16	q	H	12	12	0	
+17	q	H	9	9	0	
+18	q	H	7	5	0	e:1,z:1
+19	q	H	5	5	0	
+20	q	M	9	4	0	m:1,o:1,r:1,s:1,u:1
+21	r	H	94	87	1	c:2,e:1,l:1,n:1,w:1
+22	r	H	37	35	1	s:1
 23	r	H	18	16	2	
-24	r	H	18	14	3	s:1
-25	r	H	15	14	0	e:1
-26	s	H	44	34	4	z:3,c:1,t:1,x:1
-27	s	H	32	25	0	c:2,t:2,l:1,r:1,z:1
-28	s	H	24	18	2	z:2,q:1,r:1
-29	s	H	19	14	1	z:3,r:1
-30	s	H	23	20	1	a:1,l:1
-31	t	H	53	49	3	n:1
-32	t	H	24	22	1	e:1
-33	t	H	22	19	2	e:1
-34	t	H	10	8	0	a:1,s:1
-35	t	H	9	8	1	
-36	u	H	33	29	2	n:2
-37	u	H	25	19	3	b:1,n:1,t:1
-38	u	H	13	11	1	s:1
-39	u	H	23	18	1	t:3,a:1
-40	u	H	59	53	2	a:2,o:1,s:1
+24	r	H	20	16	3	s:1
+25	r	H	19	17	0	c:1,s:1
+26	s	H	69	53	8	z:5,c:1,t:1,x:1
+27	s	H	45	35	2	r:2,t:2,z:2,c:1,l:1
+28	s	H	30	23	2	z:2,q:1,r:1,x:1
+29	s	H	24	19	1	z:3,r:1
+30	s	H	27	23	1	l:2,a:1
+31	t	H	77	70	4	n:1,o:1,u:1
+32	t	H	35	31	2	e:2
+33	t	H	23	20	2	e:1
+34	t	H	11	8	1	a:1,s:1
+35	t	H	10	8	1	u:1
+36	u	H	53	49	2	n:2
+37	u	H	38	32	3	b:1,n:1,t:1
+38	u	H	21	19	1	s:1
+39	u	H	27	22	1	t:3,a:1
+40	u	H	84	79	1	a:2,o:1,s:1
+41	a	M	1	1	0	
+42	x	M	1	1	0	
 46	x	H	2	2	0	
-51	y	H	2	2	0	
-52	y	H	4	3	0	s:1
+51	y	H	3	2	0	i:1
+52	y	M	6	3	0	i:2,s:1
 53	y	M	1	1	0	
-56	z	H	4	4	0	
-57	x	M	1	1	0	
-60	z	H	2	2	0	
-61	a	H	47	42	2	o:2,c:1
-62	a	H	24	21	2	e:1
+56	z	H	6	4	0	x:2
+57	x	H	2	2	0	
+58	x	M	1	1	0	
+60	z	H	3	2	0	s:1
+61	a	H	80	73	3	n:2,c:1,o:1
+62	a	H	38	34	1	e:2,n:1
 63	a	H	22	20	0	e:2
-64	a	H	15	11	0	e:2,o:2
-65	a	H	19	18	0	e:1
-66	b	H	4	4	0	
-67	b	H	6	4	1	d:1
+64	a	H	16	12	0	e:2,o:2
+65	a	H	20	18	1	e:1
+66	b	H	5	5	0	
+67	b	H	8	6	1	d:1
 68	b	M	1	1	0	
 69	b	H	2	2	0	
-70	u	H	5	3	0	b:2
-71	c	M	17	8	6	s:3
-72	c	H	18	16	0	s:2
-73	c	H	6	5	1	
-74	c	H	5	4	1	
-75	c	H	7	5	1	s:1
-76	d	H	22	17	1	m:1,n:1,s:1,u:1
-77	d	H	23	20	1	a:1,q:1
-78	d	H	5	5	0	
-79	d	H	6	4	2	
-80	d	M	7	3	0	e:2,l:1,f:1
-81	e	H	77	68	5	u:2,a:1,o:1
-82	e	H	77	69	3	o:2,a:1,i:1,f:1
-83	e	H	33	31	2	
-84	e	H	36	33	3	
-85	e	H	40	31	7	l:1,f:1
-86	f	H	10	9	1	
-87	e	M	10	5	1	t:2,d:1,f:1
-88	f	H	4	3	0	t:1
+70	b	M	6	3	0	u:3
+71	c	H	30	24	4	s:2
+72	c	H	29	24	0	s:3,n:1,r:1
+73	c	H	9	8	1	
+74	c	H	6	5	1	
+75	c	M	9	4	3	d:1,s:1
+76	d	H	23	18	1	m:1,n:1,s:1,u:1
+77	d	H	35	32	1	a:1,q:1
+78	d	H	12	12	0	
+79	d	H	10	8	2	
+80	d	M	9	4	1	e:2,l:1,f:1
+81	e	H	116	104	7	u:2,a:1,l:1,o:1
+82	e	H	110	100	5	o:2,a:1,i:1,f:1
+83	e	H	43	41	2	
+84	e	H	47	44	3	
+85	e	H	53	42	8	a:1,l:1,f:1
+86	f	H	12	11	1	
+87	e	M	12	4	2	f:3,t:2,d:1
+88	f	H	5	4	0	t:1
 89	s	M	1	1	0	
-90	f	M	8	4	2	l:1,n:1
-91	g	H	11	8	0	e:1,r:1,s:1
+90	f	H	10	6	2	l:1,n:1
+91	g	H	15	11	1	e:1,r:1,s:1
 92	g	M	4	2	0	e:1,q:1
-93	g	M	1	1	0	
+93	g	M	2	1	1	
 94	g	H	4	3	0	e:1
-96	r	M	11	5	1	h:4,g:1
-97	h	H	3	3	0	
+95	h	H	4	3	0	f:1
+96	h	M	14	7	1	r:5,g:1
+97	h	H	4	4	0	
 98	h	H	2	2	0	
 100	g	M	3	1	1	h:1
-101	i	H	32	25	1	y:3,j:2,a:1
-102	i	H	32	24	3	y:5
-103	i	H	17	13	1	j:1,l:1,y:1
-104	i	H	13	10	0	y:3
-105	i	H	14	13	1	
-107	i	M	2	1	0	m:1
-111	l	H	35	33	2	
-112	l	H	26	25	1	
-113	l	H	13	12	0	o:1
+101	i	H	43	33	2	y:4,j:2,a:1,e:1
+102	i	H	53	37	5	y:7,j:3,u:1
+103	i	H	18	13	1	j:2,l:1,y:1
+104	i	H	18	14	0	y:3,j:1
+105	i	H	19	14	1	y:3,j:1
+107	i	H	4	3	0	m:1
+111	l	H	42	40	1	r:1
+112	l	H	43	37	4	r:2
+113	l	H	16	14	0	o:1,r:1
 114	l	H	13	12	0	m:1
-115	l	H	10	9	1	
-116	m	H	6	5	0	q:1
-117	m	H	10	10	0	
-118	m	H	12	8	3	l:1
-119	m	H	2	2	0	
-120	m	H	12	12	0	
-121	NULL	H	3	3	3	
-122	NULL	H	3	3	3	
-123	NULL	M	1	1	1	
+115	l	H	12	12	0	
+116	m	H	7	6	0	q:1
+117	m	H	12	12	0	
+118	m	H	14	10	3	l:1
+119	m	H	4	4	0	
+120	m	H	18	18	0	
+121	NULL	H	10	9	9	ommel:1
+122	NULL	H	7	5	5	l:2
+123	NULL	H	4	3	3	l:1
 126	f	M	1	1	0	
-127	gm	M	3	1	0	m:1,tenirpourvous:1
-129	m	M	1	1	0	
+127	m	H	3	2	0	"adjudicated from aligned context: lon.gue[127]ent (longuement), ""un [127]ois"" (mois); third occurrence sits in a span the cipher omits (""tenir pour vous""); key_full has NULL"
+129	m	H	1	1	0	adjudicated from aligned context: quinze [129]ille (mille); key_full has NULL
 131	NULL	H	5	3	3	debverions:2
-132	aires	M	2	1	1	
+132	aires	M	4	1	2	z:1
 138	vantaigedevoza	M	1	1	0	
 142	NULL	H	2	2	2	
 150	NULL	M	1	1	1	
-172	lecontejean	M	1	1	0	
-217	srgeertruydenb	M	1	1	0	
-221	hollan	M	2	1	0	hollande:1
-241	zeelande	M	1	1	0	
-289	rancfort	M	1	1	0	
-337	reystres	M	1	1	0	
+172	le Conte Jean	H	1	1	0	"adjudicated from aligned context: trouvera mon frere [172] lequel = decipherment ""mon frere le Conte Jean lequel"""
+177	m	H	1	1	0	adjudicated from aligned context: jesty[177]e que (jestyme); no key_full row
+217	Sr Geertruydenbergh	H	3	3	0	"adjudicated from aligned context: all three occurrences over ""Sr Geertruydenbergh"" (vers / sur / ceulx de)"
+221	Hollande	H	2	2	0	"adjudicated from aligned context: retire de la haye en [221]; ""estatz de [221] et [241]"""
+241	Zeelande	H	1	1	0	adjudicated from aligned context: estatz de hollande et [241]
+270	Bommel	H	2	2	0	"adjudicated from aligned context: Geertruydenbergh et [270] pour ce que; ""qui sont a [270]"""
+272	Nyeumeghen	H	1	1	0	adjudicated from aligned context: du costel de [272] en cas que
+289	Francfort	H	1	1	0	adjudicated from aligned context: est party pour [289] ou il trouvera
+337	Reystres	H	1	1	0	adjudicated from aligned context: que [337] ayent fait
+815	s	M	1	1	0	

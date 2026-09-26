@@ -1,0 +1,12 @@
+code	value	consistent	occurrences	note
+172	le Conte Jean	1	1	"trouvera mon frere [172] lequel" = decipherment "mon frere le Conte Jean lequel"
+217	Sr Geertruydenbergh	3	3	all three occurrences over "Sr Geertruydenbergh" (vers / sur / ceulx de)
+221	Hollande	2	2	"retire de la haye en [221]"; "estatz de [221] et [241]"
+241	Zeelande	1	1	"estatz de hollande et [241]"
+270	Bommel	2	2	"Geertruydenbergh et [270] pour ce que"; "qui sont a [270]"
+272	Nyeumeghen	1	1	"du costel de [272] en cas que"
+289	Francfort	1	1	"est party pour [289] ou il trouvera"
+337	Reystres	1	1	"que [337] ayent fait"
+127	m	2	3	"lon.gue[127]ent" (longuement), "un [127]ois" (mois); third occurrence sits in a span the cipher omits ("tenir pour vous"); key_full has NULL
+129	m	1	1	"quinze [129]ille" (mille); key_full has NULL
+177	m	1	1	"jesty[177]e que" (jestyme); no key_full row

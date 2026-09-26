@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """AX-COMP (26 Sept 2026): from tools/interlinear_align.py output for letter N, write key_N.tsv (period key,
-grade H where >= 2 alignments agree on the value and they are >= 60% of its alignments, else M), and
+grade H where >= 2 alignments agree on the value and they are >= 60% of its alignments, else M; a code listed
+in axcomp/adjudicate_N.tsv -- a code > 120 whose meaning was read by eye from its aligned contexts, because the
+aligner's chunk boundaries around a name are fuzzy -- takes that value at grade H, with its count), and
 axcomp/compare_N.tsv against key_full.tsv and key_5799.tsv (agree / new code / conflict).
 
     python3 axcomp/keys.py N           reads axcomp/align_N.tsv, axcomp/rawkey_N.tsv
@@ -14,7 +16,7 @@ TOP = os.path.dirname(HERE)
 
 
 def norm(v):
-    return v.lower().replace('v', 'u').replace('j', 'i').replace('y', 'i')
+    return v.lower().replace(' ', '').replace('h', '').replace('v', 'u').replace('j', 'i').replace('y', 'i')
 
 
 def load_key(path):
@@ -39,7 +41,17 @@ def build(n):
     rows = []
     with open(os.path.join(HERE, 'rawkey_%s.tsv' % n), encoding='utf-8') as f:
         raw = {r['value']: r for r in csv.DictReader(f, delimiter='\t')}
+    adj = {}
+    ap = os.path.join(HERE, 'adjudicate_%s.tsv' % n)
+    if os.path.exists(ap):
+        with open(ap, encoding='utf-8') as f:
+            adj = {r['code']: r for r in csv.DictReader(f, delimiter='\t')}
     for code in sorted(total, key=lambda c: int(c)):
+        if code in adj:
+            a = adj[code]
+            rows.append([code, a['value'], 'H', total[code], int(a['consistent']), empty[code],
+                         'adjudicated from aligned context: ' + a['note']])
+            continue
         r = raw.get(code)
         tot, emp = total[code], empty[code]
         if r is None or (emp >= 2 and emp >= 0.6 * tot):
