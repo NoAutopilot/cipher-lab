@@ -2327,3 +2327,84 @@ total, the four crops cited above; `images_wv2/crops_4612` itself untouched, per
 test_homophonic_anneal_init.py`, this section. `key_full.tsv`, `key.tsv` and `key_4612.tsv` (not created --
 no key change to report) untouched. No network requests (all images and corpora already on disk). No
 subagents (all crop-reading and anneal work done directly by this worker). cost: see the lane ledger.
+
+## AX2-172: code 172, 4614 vs 7206 (26 Sept 2026, LANE AX2)
+
+Worker AX2-172 (Opus), brief `.claude/briefs/runs/2026-09-26-lane-ax2-172.md`, started 05:59:54 UTC (clock read).
+Hosts: `resources.huygens.knaw.nl` 1 request (07206.pdf, HTTP 200, descriptive UA), rendered locally
+(`pdftoppm -r 300 -jpeg 07206.pdf p`, scratchpad; crops cut with PIL from that render, boxes in
+`axmerge4/crops/` file names). 4614 read from the existing crops (`images_wv2/crops_comp/04614_p1_L02.jpg`,
+`04614_p3_L01.jpg`, `images_wv2/crops_rederiv/04614_decipherment_p5_L06_zoom.jpg`). No subagents.
+`key_full.tsv`, `names.tsv`, `AUDIT.md` untouched.
+
+**Verdict: (c). The name codes (145-350) differ by direction of correspondence; the letter codes (1-120) do not.**
+Letters from the brothers to Willem (Lodewijk 4613/4614/4615, Jan 5550) use one name list ("list A", the one
+key_full holds); Willem's outgoing letters to his brothers (7206, 30 Jan 1574; 7205, 16 Jan 1574) use another
+("list B"). 172 is not a slip on either side: it is le Conte Jean in list A and Lumbres in list B. 5797 (Jan and
+Lodewijk to Willem, 22 Oct 1573) is a brothers-to-Willem letter and its one testable name code sides with
+list A (below), so **5797 p6_spot4's 172 = le Conte Jean stands on list A's value**; the 7206 conflict no longer
+contests it, but the key source is still a single 4614 occurrence.
+
+**Q1, digits (by eye, against confirmed digits on the same line).**
+
+| letter, line | run | reading | evidence |
+|---|---|---|---|
+| 4614 p1_L02_c pos 17 | 82.172.111 | 172, H | 7 matches the flat-topped 7s of "117.7" earlier on the line; no loop, not 8 |
+| 7206 p3_L10a | 150.139.172 | 172, H | clean; same 7 as "74" on the line above (`axmerge4/crops/07206_p3_172a_*`) |
+| 7206 p3_L13a | 122.127.129.172.130 | 172, H | clean (`07206_p3_172b_*`); the second null reads 127 or 128, both NULL |
+| 7206 p4_L13 | 77.83.150.172.122 | 172, M | middle digit is a 7 written over another stroke (a correction); the 7 is clear, whatever lies under it is not (`07206_p4_172c_*`) |
+
+**Q2, where the period words sit.** In 7206 the context codes are nulls, so 172 alone is the name:
+139 is NULL in 7206 ("a la 132 336 139 et toutesfois" = "a la fanterie et toutesfois"); 150 falls where the clear
+copy has no word four times ("...contre nous 150 | Que toutesfois", "mille 339 150 et mille"), so it is NULL in
+this letter; 122/127/129/130 are C-NULL in key_full. So:
+- p3_L10a "voiaige de 150 139 172" = p8 "voiage de mons[ieu]r de Lumbres": "monsr de" is the clear copy's wording,
+  not a code; **172 = Lumbres**.
+- p3_L13a "Je crains que 122 127 129 172 130 seroit ledict" = p8 "je crains que led[it] Lumbres feroit led[it]
+  voiage" (AX2-BLANKS transcribed "ce[dit]"; the crop reads "led[it]"): **172 = Lumbres**, "ledit" not ciphered.
+- p4_L13 "le voiay[ge] 77 83 150 172 122 moyennant" = p8 "le voiage dud[i]t Lumbres moyennant": d-e + null +
+  **172 = Lumbres**.
+- 4614 p1_L02_c "m o n f r e r e 172 l e q u e l" = companion leaf "mon frere le Conte Jean lequel": 172 is the only
+  sign between "frere" and "lequel"; **172 = le Conte Jean**.
+
+**Q3, other name codes across the two sets of letters (read by eye from crops; not the aligner column).**
+
+| code | list A (brothers -> Willem) | list B (Willem -> brothers) | |
+|---|---|---|---|
+| 172 | le Conte Jean (4614, 1x H) | Lumbres (7206, 3x) | differ |
+| 217 | Sr Geertruydenbergh (4614 x3 H; "sur 217 et 270 pour ce" = "sur Sr Geertruydenbergh et Bommel pour ce") | Bommel (7206 p3_L03b "personne a 137 217 / pour vous y attendre" = "personne a Boomel pour vous y attendre", H; 7205 p5_L02 line-end "sur 217" before the clear "Je vois par vre lre" = "venir sur boomel. Je vois par vre lre", M) | differ |
+| 339 | harquebouziers (4613 aligned, C; 5557 gloss "Schutzen") | Landsknechtz (7206 p3_L06b "si oultre les quatre mille 339 141 vous eussiez" = "si oultre les quatre mille Landsknechtz vous eussiez", H) | differ |
+| 202 | Franckreich (5550 gloss x4, H) | Angleterre (7206 p4_L11 "sa correspondance avec la 122 202 131 et croy pour aucun mauvais effect" = "avec l'Angleterre, non pour aultruy mauvais effect", H) | differ |
+| 336 | Fussvolck (5557 gloss "Voetvolck") | fanterie (7206 "a la 132 336 139 et") | agree |
+| 312 | ville de (4613) | ville (7206 "estant la 312 de grande garde") | agree |
+| Bommel | 270 (4613/4615, 4614) | 217 | different codes |
+| Maastricht | 273 (4613) | 276 (7206 "prendre 125 276 136 estant la ville" = "prendre Mastrich, estant la ville") | different codes |
+| Duke of Saxony | 154 (5797, Groen print, C) | 196 (7206 x3: "entre le Roy de Pollogne et 196", "que 143 196 se mectroit", "du 146 141 196") | different codes |
+
+Four codes disagree and three places/persons carry different codes, against 99/100 agreement on codes 1-120
+(AX2-BLANKS). One decipherer's slip cannot explain four disagreements in three different letters, so the name
+section is a separate list for each direction. 7205's single 339 sighting sits at the clear "aulcuns deniers"
+(M transcription, heavy bleed-through), which fits neither list's Landsknechtz/harquebusiers; left unresolved, not
+used.
+
+**Which list 5797 follows.** By direction, list A (sender Jan and Lodewijk, like 5550 and 4613-4615). One direct
+test: 5797 p5 writes Saxony as 154 (Groen IV pp.223-224 prints "Bey dem Herzog von Sachsen und" there, C), while
+list B writes the Duke of Saxony as 196 at all three of its places. So 5797 is not on list B at that code. No
+5797 code contradicts list A. The date gap (5797 Oct 1573; 5550 Dec 1573; 4614 Apr 1574) is inside list A's
+attested span.
+
+**Per-occurrence grades (rule 4).** 4614 172 = le Conte Jean: H (1). 7206 172 = Lumbres: H value at 3, with the p4
+transcription at M (so H 2, M 1 on the digit). 5797 p6_spot4 172 = le Conte Jean: H by key source from list A
+(1 occurrence), list membership of 5797 from direction plus one C datum (154), i.e. unchanged value, unchanged
+grade, key source uncontested by 7206 because 7206 is list B.
+
+**Consequence for tooling (not applied here).** key_full's codes >= 145 must not be applied to 7205/7206; their
+name codes need their own list (key_7206.tsv's aligner values above 120 already show it: 217 "oomel", 339 "l").
+Proposed notes for key_full, values unchanged: `axmerge4/proposal.tsv` (four KEEP_NOTE lines for
+`axnames/build_key_full.py`). Not in this brief: whether 5801 (Willem to Jan and Lodewijk, May 1573), where 172
+occurs 6x mid-run at M under key_full, is list B; AX2-5801 holds that letter.
+
+Rule 10: no novelty words. Rule 3: no numeric gate here (a reading of period clear copies against their ciphers,
+not a cryptanalytic claim).
+
+Files: `axmerge4/proposal.tsv`, `axmerge4/crops/*.jpg` (11 crops, 476 KB), this section.
