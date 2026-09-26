@@ -774,3 +774,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T07:35Z	session_01MGncH2nJEj9FQRnatv4qWY	retrospective q (Sonnet, cap 10)	27 ledger rows since retro p; file RETRO-2026-09-26e.md	brief 2026-09-26-parent-retrospective-q.md; parent 7f
 2026-09-26T07:34Z	session_01FqtHRokzQgvScmsA2afxDi	V9-QA8 (Sonnet, cap 4)	rolling QA, window 05:44 to start	brief 2026-09-26-lane-v9-qa8.md; LANE V9
 2026-09-26T07:35Z	session_01NhugJDkasdqheBs99gGJ6G	V9-NA172-3 (Opus, cap 3)	verifier note lodewijk 5797 p6_spot4 after AX2-5801ADJ	brief 2026-09-26-lane-v9-na172-3.md; LANE V9
+2026-09-26T07:36Z	session_01J57XZYekjroNoFt7SoSS3W	parent 7f done about 26 dollars, handed over to 7g	04:46 to 07:36 UTC 26 Sept; about 530k context
+2026-09-26T07:36Z	session_01Jb4UHR8so3yBUG1NTMdf6C	parent 7g (Fable, Orchestrator 8, live)	took over from 7f; hub-seed/SUCCESSOR-PROMPT.md; arms its own first check-in
