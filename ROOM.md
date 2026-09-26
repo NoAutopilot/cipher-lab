@@ -2414,3 +2414,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-09-26 00:59 | LANE B5 worker bLOP (Sonnet) | claim: lope-hurtado-1522 -- check-solved then apply R9644's 49 code values to R9634/R9646/R9649 with random-digit control; files: ciphers/lope-hurtado-1522/**, specs/lope-hurtado-1522.json
 2026-09-26 00:59 | LANE B5 worker bCAS | claim: castelcicala-1816 -- check-solved + un-glossed 1816 despatch hand-read vs 162 confirmed values and Decazes/Florida cribs, specs/castelcicala-1816.json
 2026-09-26 00:59 | LANE B5 worker bMAT (Sonnet) | claim: ciphers/matignon-mayenne-1586/ and specs/matignon-mayenne-1586.json -- Bourdeau Cipher-1 key on partly-read leaves + scrambled control, Cipher-3 f.179 gloss transcription; cap $6/45min from 00:59 UTC
+2026-09-26 01:00 | parent worker LEARN-4 (Sonnet, session_01SvjMDFfJZJ3uK47RYxAQrM) | done: LEARN-4: 3 portable items, 0 overlaps, file LEARN-2026-09-26-0058.md
