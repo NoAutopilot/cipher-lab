@@ -1,4 +1,4 @@
-status: drafted 26 Sept 2026 by the owner-account parent (drafter); awaiting the pre-send fact check (CLAUDE.md Outreach 7) by a separate session; the person reviews and sends from his own account in the existing thread (Tomokiyo's address stays out of this file)
+status: HELD by the owner 26 Sept 2026 ("holding off on Tomokiyo for now, we return to him if we have a solve"); drafted 26 Sept by the owner-account parent; OUT-CHECK-3's checked: line applies when it lands; not to be sent until the owner says so, after a solve
 to: S. Tomokiyo (reply in the existing thread)
 subject: Re: Raince 1525 and the Cryptiana unsolved list: which items have images online?
 links: unsolved=https://cryptiana.web.fc2.com/code/unsolved.htm; raince-post=https://cryptiana.blogspot.com/2026/09/a-cipher-between-louise-of-savoy-and.html; citations=https://github.com/NoAutopilot/cipher-lab/blob/main/CITATIONS.md; repo=https://github.com/NoAutopilot/cipher-lab
