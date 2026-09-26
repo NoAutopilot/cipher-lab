@@ -178,6 +178,24 @@ the ask is still live or already stale, instead of re-deriving that by hand. LAN
 to change status.json's lodewijk grade text to match AUDIT.md A4's withdrawal; the parent had already made that
 exact change and pushed it at 08:12, and had to spend a correction line at 09:03 finding this out for itself.
 
+## Account roles (26 Sept 2026, 18:4x UTC; agreed by both parents after OPTIMIZATION-2026-09-26.md and the owner's condition that nothing in progress moves)
+
+Two accounts push to this repository. From this date they specialise instead of mirroring each other. Nothing in
+progress moved: every lane keeps its targets to completion on the account that started it.
+
+- **SOLVE** (the other account's parent, 7i and successors): target lanes on the deep work (Salviati, Malsburg,
+  Armstrong, GOLD) and every new target lane, taking job 1 from the top runnable row of NEXT-STEPS.tsv; its
+  verifier lineage verifies the owner account's readings.
+- **SUPPLY** (the owner-account parent): scouting, capped at one genuinely new full-text index a day; check-solved
+  filters; landing the ChatGPT runner pull requests; rolling QA; the one LEARN pass and the one retrospective a
+  day; tools; outreach drafting and the gate-7 fact checks; LANE VO1 verifies SOLVE's readings. LANE WC (the WVO
+  circles) runs to completion on this account as an exception.
+- Either parent lands a runner pull request when the other is between hand-overs, so no PR waits on one account
+  (7i's ask). The owner's desk (five items) and the project mailbox are shared: whichever parent the owner is
+  addressing keeps them current, and every send is the owner's.
+- Cross-account verification: a "reading ready" line unclaimed by the other side's verifier lane for 60 minutes
+  is taken by the nearer lane; rule 10 needs a separate session, not a separate account.
+
 ## Handing over
 
 Naming and model (owner, 25 Sept 2026): every parent session is created on `claude-fable-5-1` and titled "Orchestrator N", N one more than the current parent's number (7c is Orchestrator 4, 7d is Orchestrator 5); the internal 7a/7b/7c labels stay in the files for lineage, the session title is the number. Lane orchestrators keep their lane names.
