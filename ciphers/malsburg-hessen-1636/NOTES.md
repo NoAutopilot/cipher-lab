@@ -1328,3 +1328,106 @@ Files: `images/{hstam_4_h_1411_0032,0033}.jpg`, `images/manifest.json`, `crops/{
 `cribs_control.py`, `pool_match.py`, HYPOTHESES.md.
 
 Hosts: `api.hcportal.eu`, 2 requests (both image regen), 1.5s apart, none retried.
+
+## bMALS: crib-span token reconciliation (26 Sept 2026, LANE B11 handoff step 2, parent 7h)
+
+Disk-only job (no hosts): token-level reconciliation of bMALX's two named leads -- span (a) the
+"X.X. oder [mark] nach G.G. genannt" naming pattern (both leaves), span (b) the "Extrait/Extract
+... schreibt auf" header (f.32 only) -- from the crops already on disk, per CLAUDE.md Pipeline 3a
+and Usage 6 (one span per subagent call). Two independent blind Sonnet subagent reads per span (4
+calls total), then this worker reconciled per token from the source images, never from the prior
+passes' text.
+
+**Crops.** bMALX's existing 380px overlapping bands (`crops/{0032,0033}/manifest.json`) cover
+multiple manuscript lines each, not "that span only" (CLAUDE.md Usage 6); this job cut three
+tighter derivative crops from the same source files/boxes, the same kind of documented deviation
+bMALX itself made from `tools/iiif_lines.py` for the same leaves: `hstam_4_h_1411_0032_spanA.jpg`
+(box `[1150,2065,2114,2140]`, 4x), `hstam_4_h_1411_0033_spanA.jpg` (box `[1100,235,2164,320]`,
+4x), `hstam_4_h_1411_0032_spanB.jpg` (box `[0,1360,2114,1500]`, 2.8x); all three added to their
+leaf's `manifest.json` with box/scale/source_file/sha1. Both passes per span read only the crop(s)
+for that span, no other file, no context beyond the image.
+
+**Span (a) -- both occurrences, reconciled.** Full working comparison in `spanwork/spanA_reconcile.md`.
+
+- **f.32 occurrence ("X.X. oder [mark] nach G.G./C.C. ...").** Both fresh blind passes agree,
+  unprompted and independently, that the token after "oder" is not a letter at all: a solid
+  black-filled lozenge/diamond (a ~45-degree rotated square), the same height as the surrounding
+  capitals. This settles the brief's framing for this occurrence: the second mark here is neither
+  "K.K." nor "A.A." -- it is a drawn sigil. Both passes also independently flag the identical
+  specific ambiguity for the monogram after "nach": a round closed loop, ambiguous between "G.G."
+  and "C.C." in this hand (not a new disagreement between the two fresh passes -- a shared,
+  correctly-flagged ambiguity). Grade M (no key source, rule 4); "G.G." kept as the working label
+  per bMALX's own precedent, "C.C." logged as the standing alternative.
+- **f.33 occurrence ("... N. mit G.G. [?] oder K.K.").** bMALX's own two original passes disagreed
+  ("GG. A.A." pass A vs "G.G. oder K.K." pass B), read by this job's brief as one ambiguous mark.
+  Both fresh independent passes here agree the line actually carries THREE two-letter monograms in
+  sequence -- "G.G." (clear, both passes), a second monogram both passes best-read as "A.A." (one
+  pass hedges "H.H./N.N." as the visual alternative; both agree A.A. is the stronger reading), then
+  "K.K." (clear, both passes) -- with "oder" appearing only between the 2nd and 3rd, never between
+  the 1st and 2nd ("G.G. A.A. oder K.K.", not "G.G. oder A.A." or "G.G. oder K.K." alone). bMALX's
+  original pass A and pass B each caught a different two of the same three; there was no true
+  disagreement to average, only an incomplete read on each side. Settled: the second-mark reading
+  is "A.A." (best reading, M grade; the middle monogram's exact letter is the one residual
+  ambiguity, not the G.G./K.K.-vs-A.A. framing in the brief).
+
+**Span (b) -- header, reconciled.** Both fresh passes read: "Extract 70.56.10.28. [D/P].39.27.
+91.79.24.16.30. schreiben auf 115.S.13.15.35.22.[digit].63. dom/dem 16[.]/26[.] Mart. 1637." (all
+other digits agree exactly between the two fresh passes and with bMALX's original read).
+Two tokens needed this worker's own reconciliation from the source image rather than the two fresh
+passes alone:
+- **The digit before "63.":** three-way disagreement across every read so far -- bMALX's original
+  blind pass read "98", this job's fresh pass 1 read "48", fresh pass 2 read "28". Direct
+  comparison against this leaf's own unambiguous "7" (in "70", "79") and "9"/"2" forms (isolated
+  crops `digitcompare_ref70.jpg`, `digitcompare_ref79.jpg`, `digitcompare_ambig.jpg` in
+  `spanwork/`, not committed -- reproducible from the same boxes) shows the first digit's
+  diagonal-stroke-with-flag shape matches this leaf's "7" exactly (not the z-flourish used for "2"
+  elsewhere on the same line, e.g. "22."), and the second digit's stacked double-loop matches this
+  leaf's "8" forms, not a "9"'s single loop-and-tail. Settled as **78** (worker's own read from the
+  image, grade M; supersedes all three prior blind reads, none of which matched).
+- **The letter before "39.":** both fresh passes flag D-vs-P ambiguity on the isolated glyph. This
+  document uses a letter+number code prefix elsewhere (`D.10`, `D.13`, `D.26`, `D.79` all attested
+  in passA/cribs.tsv on this leaf) with no attested "P."-prefixed code; the glyph's large closed
+  loop with a below-baseline tail is consistent with this leaf's other "D" forms. Read as **D.39**
+  on that internal-consistency basis (bMALX's original blind pass already read it this way without
+  flagging ambiguity); genuinely ambiguous in isolation, kept at grade M, not upgraded to a firmer
+  grade by this reasoning alone.
+- **The date:** both fresh passes independently notice a stacked or adjacent "16"/"26" day figure
+  (one underlined) before "Mart. 1637", matching bMALX's original "dem [16]. den [26]." reading --
+  read as a dual Old-Style/New-Style day-of-month (16/26 March 1637, the ~10-day Julian/Gregorian
+  gap of the period), consistent with rule 6's o.s./n.s. convention elsewhere in this project. A
+  small flourish between the date figures and "Mart." is flagged by both fresh passes as
+  unidentified (ordinal-suffix mark or decorative dash); not resolved, M, out of this job's scope.
+  The "dem/dom/den" abbreviation itself stays M (every read sees the same ink shape, "d" + vowel +
+  "m/n"; not settled to one specific word).
+
+**Consistent-word count (the nomenclator gate).** No new code value crosses from unattested to a
+consistent word across 3+ occurrences from this job: "G.G." and "K.K." are each attested once as
+codenames in the naming span (f.32's "G.G." and f.33's "G.G./K.K." are the same two labels reused,
+but that is 2 occurrences of the *pattern*, not 3 independent occurrences of one resolved word each
+value), "A.A." attested once, the f.32 diamond sigil is not a word at all, and D.39/S.13/78 are
+digit/letter-prefixed codes with no candidate gloss from this job (out of scope: no cryptanalysis,
+per the brief). **Consistent-word count: 0**, same as bMALX -- this job settles which glyphs are on
+the page, not what they mean; the orchestrator's 3+ threshold for opening a nomenclator family is
+still not met.
+
+**Verdict.** Status stays `partial` (rule 5): this is a paleographic settlement, not a cryptanalytic
+result -- no key claim, no H/C grade anywhere in this section. Both named leads from bMALX are now
+read as precisely as two blind passes plus direct image comparison can take them; the "second mark:
+K.K. or A.A." question the brief posed turns out to rest on two different objects (a drawn sigil on
+f.32, a three-monogram list on f.33), not one ambiguous mark.
+
+One-line follow-up suggestion (out of this job's scope): the "G.G./A.A./K.K." three-monogram list
+and the f.32 diamond sigil are candidate codename labels for a nomenclator crib if a fourth
+occurrence of any of them turns up elsewhere in the pool -- worth a targeted grep of
+`pool/pooled.tsv` and the other ff.16/23/24/28 clear-clause files for these exact letter pairs
+before any further blind leaf work.
+
+Files: `crops/0032/{hstam_4_h_1411_0032_spanA.jpg,hstam_4_h_1411_0032_spanB.jpg}`,
+`crops/0033/hstam_4_h_1411_0033_spanA.jpg`, `crops/{0032,0033}/manifest.json` (updated),
+`spanwork/spanA_reconcile.md` (working notes, kept for the record).
+
+Note: this cipher's folder is now 32 MB (over the 30 MB convention; already at ~31 MB before this
+job's ~1 MB of new crops) -- a one-line flag, not fixed here (out of scope; the last shrink pass was
+bMALS's own folder-shrink job earlier the same day).
+
+Hosts: none (disk only, per the brief).

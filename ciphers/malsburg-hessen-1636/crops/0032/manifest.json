@@ -1,105 +1,131 @@
 {
-  "bands": [
-    {
-      "crop": "hstam_4_h_1411_0032_B01.jpg",
-      "box": [
-        0,
-        0,
-        2114,
-        380
-      ],
-      "scale": 1,
-      "source_file": "hstam_4_h_1411_0032.jpg",
-      "sha1": "7531c9dee0cb1c214d5f77c37d57623a7ed3e56f"
-    },
-    {
-      "crop": "hstam_4_h_1411_0032_B02.jpg",
-      "box": [
-        0,
-        320,
-        2114,
-        700
-      ],
-      "scale": 1,
-      "source_file": "hstam_4_h_1411_0032.jpg",
-      "sha1": "8908ce4362b25764bb276179a9c1a07a927a785d"
-    },
-    {
-      "crop": "hstam_4_h_1411_0032_B03.jpg",
-      "box": [
-        0,
-        640,
-        2114,
-        1020
-      ],
-      "scale": 1,
-      "source_file": "hstam_4_h_1411_0032.jpg",
-      "sha1": "b4af23bce6cbffefebc6cb585d2dfe170bfd9fdb"
-    },
-    {
-      "crop": "hstam_4_h_1411_0032_B04.jpg",
-      "box": [
-        0,
-        960,
-        2114,
-        1340
-      ],
-      "scale": 1,
-      "source_file": "hstam_4_h_1411_0032.jpg",
-      "sha1": "1090a4cb490627db6e8b6df7dae99ee47a1292fc"
-    },
-    {
-      "crop": "hstam_4_h_1411_0032_B05.jpg",
-      "box": [
-        0,
-        1280,
-        2114,
-        1660
-      ],
-      "scale": 1,
-      "source_file": "hstam_4_h_1411_0032.jpg",
-      "sha1": "ae86e7d5e79dead331c5fe0e164d59750f314d18"
-    },
-    {
-      "crop": "hstam_4_h_1411_0032_B06.jpg",
-      "box": [
-        0,
-        1600,
-        2114,
-        1980
-      ],
-      "scale": 1,
-      "source_file": "hstam_4_h_1411_0032.jpg",
-      "sha1": "062b796e1af940355739196245ce4d823974dcc4"
-    },
-    {
-      "crop": "hstam_4_h_1411_0032_B07.jpg",
-      "box": [
-        0,
-        1920,
-        2114,
-        2300
-      ],
-      "scale": 1,
-      "source_file": "hstam_4_h_1411_0032.jpg",
-      "sha1": "a48ed53687a8021bbc8c41dfb2e4c8f693cc0496"
-    },
-    {
-      "crop": "hstam_4_h_1411_0032_B08.jpg",
-      "box": [
-        0,
-        2240,
-        2114,
-        2512
-      ],
-      "scale": 1,
-      "source_file": "hstam_4_h_1411_0032.jpg",
-      "sha1": "ef5ebae5e1e3d948a8c52f1207542e4afd25eb37"
-    }
-  ],
-  "source_dims": [
+ "bands": [
+  {
+   "crop": "hstam_4_h_1411_0032_B01.jpg",
+   "box": [
+    0,
+    0,
+    2114,
+    380
+   ],
+   "scale": 1,
+   "source_file": "hstam_4_h_1411_0032.jpg",
+   "sha1": "7531c9dee0cb1c214d5f77c37d57623a7ed3e56f"
+  },
+  {
+   "crop": "hstam_4_h_1411_0032_B02.jpg",
+   "box": [
+    0,
+    320,
+    2114,
+    700
+   ],
+   "scale": 1,
+   "source_file": "hstam_4_h_1411_0032.jpg",
+   "sha1": "8908ce4362b25764bb276179a9c1a07a927a785d"
+  },
+  {
+   "crop": "hstam_4_h_1411_0032_B03.jpg",
+   "box": [
+    0,
+    640,
+    2114,
+    1020
+   ],
+   "scale": 1,
+   "source_file": "hstam_4_h_1411_0032.jpg",
+   "sha1": "b4af23bce6cbffefebc6cb585d2dfe170bfd9fdb"
+  },
+  {
+   "crop": "hstam_4_h_1411_0032_B04.jpg",
+   "box": [
+    0,
+    960,
+    2114,
+    1340
+   ],
+   "scale": 1,
+   "source_file": "hstam_4_h_1411_0032.jpg",
+   "sha1": "1090a4cb490627db6e8b6df7dae99ee47a1292fc"
+  },
+  {
+   "crop": "hstam_4_h_1411_0032_B05.jpg",
+   "box": [
+    0,
+    1280,
+    2114,
+    1660
+   ],
+   "scale": 1,
+   "source_file": "hstam_4_h_1411_0032.jpg",
+   "sha1": "ae86e7d5e79dead331c5fe0e164d59750f314d18"
+  },
+  {
+   "crop": "hstam_4_h_1411_0032_B06.jpg",
+   "box": [
+    0,
+    1600,
+    2114,
+    1980
+   ],
+   "scale": 1,
+   "source_file": "hstam_4_h_1411_0032.jpg",
+   "sha1": "062b796e1af940355739196245ce4d823974dcc4"
+  },
+  {
+   "crop": "hstam_4_h_1411_0032_B07.jpg",
+   "box": [
+    0,
+    1920,
+    2114,
+    2300
+   ],
+   "scale": 1,
+   "source_file": "hstam_4_h_1411_0032.jpg",
+   "sha1": "a48ed53687a8021bbc8c41dfb2e4c8f693cc0496"
+  },
+  {
+   "crop": "hstam_4_h_1411_0032_B08.jpg",
+   "box": [
+    0,
+    2240,
     2114,
     2512
-  ],
-  "method": "manual PIL band crop, box=[0,y0,w,y1] native res, band_h=380 overlap=60 (bMALX; tools/iiif_lines.py --lines-per-crop 3 clipped mid-line ascenders/descenders at this leafs tight 44-48px line pitch, so used overlapping fixed-height bands instead, reproducible from box+source_file)"
+   ],
+   "scale": 1,
+   "source_file": "hstam_4_h_1411_0032.jpg",
+   "sha1": "ef5ebae5e1e3d948a8c52f1207542e4afd25eb37"
+  },
+  {
+   "crop": "hstam_4_h_1411_0032_spanA.jpg",
+   "box": [
+    1150,
+    2065,
+    2114,
+    2140
+   ],
+   "scale": 4,
+   "source_file": "hstam_4_h_1411_0032.jpg",
+   "sha1": "c7c4517c555777993c0be5a6ffe3cb519dfaaa90",
+   "note": "bMALS span (a): X.X. oder [mark] nach G.G. genannt, tight zoom, 4x native res"
+  },
+  {
+   "crop": "hstam_4_h_1411_0032_spanB.jpg",
+   "box": [
+    0,
+    1360,
+    2114,
+    1500
+   ],
+   "scale": 2.8,
+   "source_file": "hstam_4_h_1411_0032.jpg",
+   "sha1": "f00b74b1972158b3e9469fcc21f0e01683a6d374",
+   "note": "bMALS span (b): Extrait 70.56.10.28 ... schreibt auf header, tight zoom, 2.8x native res"
+  }
+ ],
+ "source_dims": [
+  2114,
+  2512
+ ],
+ "method": "manual PIL band crop, box=[0,y0,w,y1] native res, band_h=380 overlap=60 (bMALX; tools/iiif_lines.py --lines-per-crop 3 clipped mid-line ascenders/descenders at this leafs tight 44-48px line pitch, so used overlapping fixed-height bands instead, reproducible from box+source_file)"
 }

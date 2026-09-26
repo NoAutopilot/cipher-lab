@@ -1,70 +1,83 @@
 {
-  "bands": [
-    {
-      "crop": "hstam_4_h_1411_0033_B01.jpg",
-      "box": [
-        0,
-        0,
-        2164,
-        380
-      ],
-      "scale": 1,
-      "source_file": "hstam_4_h_1411_0033.jpg",
-      "sha1": "651dabc10a5958df2516c01fb10260bfe4af76be"
-    },
-    {
-      "crop": "hstam_4_h_1411_0033_B02.jpg",
-      "box": [
-        0,
-        320,
-        2164,
-        700
-      ],
-      "scale": 1,
-      "source_file": "hstam_4_h_1411_0033.jpg",
-      "sha1": "f749d7a723c397a884dbbf35bf31ca2790165865"
-    },
-    {
-      "crop": "hstam_4_h_1411_0033_B03.jpg",
-      "box": [
-        0,
-        640,
-        2164,
-        1020
-      ],
-      "scale": 1,
-      "source_file": "hstam_4_h_1411_0033.jpg",
-      "sha1": "456290b601b8aaea95cfb3b9af3fc351d31d2710"
-    },
-    {
-      "crop": "hstam_4_h_1411_0033_B04.jpg",
-      "box": [
-        0,
-        960,
-        2164,
-        1340
-      ],
-      "scale": 1,
-      "source_file": "hstam_4_h_1411_0033.jpg",
-      "sha1": "c25fadcfb5f8d2d77ca67b5ebadf6e3ab3381d6a"
-    },
-    {
-      "crop": "hstam_4_h_1411_0033_B05.jpg",
-      "box": [
-        0,
-        1280,
-        2164,
-        1660
-      ],
-      "scale": 1,
-      "source_file": "hstam_4_h_1411_0033.jpg",
-      "sha1": "24474ce101a01da9e85eecc0159b67c8fe4022b6"
-    }
-  ],
-  "source_dims": [
+ "bands": [
+  {
+   "crop": "hstam_4_h_1411_0033_B01.jpg",
+   "box": [
+    0,
+    0,
     2164,
-    2516
-  ],
-  "method": "manual PIL band crop, box=[0,y0,w,y1] native res, band_h=380 overlap=60 (bMALX; same reason as 0032)",
-  "note": "B06-B08 not kept: confirmed blank/verso-bleedthrough only, no recto text (bMALX read); regenerable from images/hstam_4_h_1411_0033.jpg box=[0,1600,2164,2516] via the same band script if needed again."
+    380
+   ],
+   "scale": 1,
+   "source_file": "hstam_4_h_1411_0033.jpg",
+   "sha1": "651dabc10a5958df2516c01fb10260bfe4af76be"
+  },
+  {
+   "crop": "hstam_4_h_1411_0033_B02.jpg",
+   "box": [
+    0,
+    320,
+    2164,
+    700
+   ],
+   "scale": 1,
+   "source_file": "hstam_4_h_1411_0033.jpg",
+   "sha1": "f749d7a723c397a884dbbf35bf31ca2790165865"
+  },
+  {
+   "crop": "hstam_4_h_1411_0033_B03.jpg",
+   "box": [
+    0,
+    640,
+    2164,
+    1020
+   ],
+   "scale": 1,
+   "source_file": "hstam_4_h_1411_0033.jpg",
+   "sha1": "456290b601b8aaea95cfb3b9af3fc351d31d2710"
+  },
+  {
+   "crop": "hstam_4_h_1411_0033_B04.jpg",
+   "box": [
+    0,
+    960,
+    2164,
+    1340
+   ],
+   "scale": 1,
+   "source_file": "hstam_4_h_1411_0033.jpg",
+   "sha1": "c25fadcfb5f8d2d77ca67b5ebadf6e3ab3381d6a"
+  },
+  {
+   "crop": "hstam_4_h_1411_0033_B05.jpg",
+   "box": [
+    0,
+    1280,
+    2164,
+    1660
+   ],
+   "scale": 1,
+   "source_file": "hstam_4_h_1411_0033.jpg",
+   "sha1": "24474ce101a01da9e85eecc0159b67c8fe4022b6"
+  },
+  {
+   "crop": "hstam_4_h_1411_0033_spanA.jpg",
+   "box": [
+    1100,
+    235,
+    2164,
+    320
+   ],
+   "scale": 4,
+   "source_file": "hstam_4_h_1411_0033.jpg",
+   "sha1": "86c0ba47cde932535fab50737f1c9de9648ace5d",
+   "note": "bMALS span (a): mit G.G. oder K.K. (second mark), tight zoom, 4x native res"
+  }
+ ],
+ "source_dims": [
+  2164,
+  2516
+ ],
+ "method": "manual PIL band crop, box=[0,y0,w,y1] native res, band_h=380 overlap=60 (bMALX; same reason as 0032)",
+ "note": "B06-B08 not kept: confirmed blank/verso-bleedthrough only, no recto text (bMALX read); regenerable from images/hstam_4_h_1411_0033.jpg box=[0,1600,2164,2516] via the same band script if needed again."
 }
