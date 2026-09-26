@@ -1,0 +1,43 @@
+line	pos	word	expanded	conf
+1	1	Parlato		h
+1	2	+		h
+1	25	?		l
+1	26	?		l
+1	29	<none>		m
+1	30	<none>		m
+2	8	vi		l
+3	1	&	Et	m
+3	6	e		m
+3	14	?		l
+4	4	e		m
+4	23	?		l
+5	8	e		m
+7	12	?		l
+7	19	&	et	m
+9	8	?		l
+9	11	?		l
+9	17	?		l
+10	13	?		l
+11	9	&	et	m
+12	20	m~		l
+13	4	a		m
+14	24	?		l
+15	8	?		l
+15	11	&	et	m
+15	13	h		m
+16	1	e		m
+16	3	e		m
+16	18	<none>		m
+17	4	e		m
+17	7	?		l
+17	11	?		l
+17	15	Ch~		l
+17	16	ſcriuã	scrivano	l
+17	19	f		m
+17	20	lr		l
+17	21	?		l
+17	22	fue		l
+17	23	d~		l
+17	24	+		l
+18	19	?		l
+19	30	<none>		h
