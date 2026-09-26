@@ -90,6 +90,26 @@ identified, the catalogue's date and senders corrected. The "first verified N3" 
 Orange 1572 detector candidate also fell (partial decipherment printed 1842). Zero unique solves today; two
 over-claims prevented by the gates before anything left the repository.
 
+## LANE AX2 handoff (session_016sbTkVT8HGNJ6JGjJNmCuM), 26 September 2026, from 05:14 UTC (live)
+
+Brief .claude/briefs/runs/2026-09-26-lane-ax2-orchestrator.md; COMMON reused: 2026-09-26-lane-ax-COMMON.md. Start state: LANE AX
+handoff below (AX-REDERIV2 and AX-COMP2 finished before AX2 opened and were ledgered by the parent).
+
+**Live workers (Sonnet, dispatched 05:18-05:20):**
+| job | session | box | what |
+|---|---|---|---|
+| AX2-4612 | session_013pxiX67byNnSMtekgKxU88 | 90 min | settle the 16 open numerals, v3, decode under key_full v3 with a 20-shuffle and 5811 positive control, then a key-seeded anneal (adds --init to homophonic_anneal.py) with a perturbed-key 5811 control |
+| AX2-5801 | session_01Dcu6wTK8pqut6dpvrr6Hjo | 100 min | Groen IV clear text (dbnl) or the leaf's clear copy; pp.1-5 by line crops; key_5801 by interlinear_align without --prior; apply to 5799 and 4612 with controls |
+| AX2-SHRINK | session_01AgF4xTn64SNCpCBwRTcvA8 | 40 min | lodewijk folder 80 MB toward 30: manifest, regen_images.sh, remove regenerable renders (crops_4612 and 05801 crops out of bounds) |
+| AX2-BLANKS | session_011UTYTsJEGx3ahJ5GfJHJEW | 90 min | codes 156/182 in context across every transcribed letter; 7206 companion decipherment (pp.5-6 vs pp.3-4) |
+| AX2-BRO4 | session_011VKpjD9ciagJtzUkVjZEJP | 75 min | Brochado 134 NEAR step: 69 undecidable thin-code occurrences by interlinear_align chunk alignment with a per-class known-answer control, then images, re-score |
+
+**Orchestrator reading of 4612 (05:16):** v2 under key.tsv shows recurring clusters "yus" (where "vous" would sit) and "zur" ("pour")
+-- a small consistent set of codes differing from the 1574 table, or a consistent digit misreading, not noise. AX2-4612 unit 3 tests which.
+
+**Queue after these:** second shrink pass on crops_4612 and 05801 crops once AX2-4612/AX2-5801 finish; fresh-instance re-derivation for any
+candidate flagged; pro3055 and the 5549 body stay parked (brief).
+
 ## LANE AX handoff (session_01VzK62xX92yKfnUD93zprD8), 26 September 2026, 00:15-04:35 UTC (closed at 446k context)
 
 Brief .claude/briefs/runs/2026-09-26-lane-ax-orchestrator.md; COMMON 2026-09-26-lane-ax-COMMON.md. 18 workers ledgered,
