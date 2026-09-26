@@ -1,0 +1,28 @@
+{
+ "n": 891,
+ "k": 156,
+ "m_share": 0.367,
+ "offform_share": 0.0786,
+ "offform_examples": [
+  "4H",
+  "9z7",
+  "ILLEGIBLE",
+  "[PLAIN:Aus]",
+  "[PLAIN:Gen: Lieut: sagt auff 7. Comp: patente au\u00dfgefertiget, dardurch also in seinem quartier...]",
+  "[PLAIN:Lud.]",
+  "[PLAIN:Regimenter ins felt gebracht, Mit alsAus Ras mas nicht accommodiren, kans Land duft]",
+  "[PLAIN:Rud?]",
+  "[PLAIN:Wegs gryfstinbrs abex mgt pflingzos vallnzz eis effylnzz mnwvrmg]?",
+  "[PLAIN:al\u00df nichts fein theil ist in Reichs protection genommen ist, so]",
+  "[PLAIN:an ihr ... (illegible cursive span)]",
+  "[PLAIN:kein tractament Au\u00df Forderung viel f\u00fcr sey; ihr habt dieses drinnen bericht wohl Nor 3.]"
+ ],
+ "vocab_overlap": 0.8081,
+ "cosine_real": 0.8288,
+ "cosine_relabel_mean": 0.4575,
+ "cosine_relabel_p95": 0.5586,
+ "gate_quality": false,
+ "gate_form": false,
+ "gate_system": true,
+ "admitted": false
+}

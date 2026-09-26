@@ -1,0 +1,28 @@
+{
+ "n": 876,
+ "k": 144,
+ "m_share": 0.3562,
+ "offform_share": 0.0628,
+ "offform_examples": [
+  "4H",
+  "9z7",
+  "ILLEGIBLE",
+  "f",
+  "j",
+  "q",
+  "y",
+  "z0",
+  "z07",
+  "z1",
+  "z11",
+  "z2"
+ ],
+ "vocab_overlap": 0.8219,
+ "cosine_real": 0.8296,
+ "cosine_relabel_mean": 0.4593,
+ "cosine_relabel_p95": 0.5584,
+ "gate_quality": false,
+ "gate_form": false,
+ "gate_system": true,
+ "admitted": false
+}

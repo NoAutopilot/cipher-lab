@@ -653,6 +653,117 @@ AX2-SHRINK regen-verified process (byte-identical re-derivation check before del
 separate, larger job than this one's brief -- flagged for the lane orchestrator per rule 7/Usage 8a rather than
 improvised.
 
+## Record 503 f.16 (bMAL16, 26 Sept 2026)
+
+Intake gate re-run: `python3 tools/intake_gate_check.py malsburg-hessen-1636` -> `malsburg-hessen-1636: partial
+(line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0.
+
+**Crop step.** The leaf image (`images/hstam_4_h_1411_0016.jpg`, 4308x3052) is a two-page opening; the
+right-hand panel is a separate clear-text name/docket list (per bMALC's extent note), not part of this letter,
+so only the left page was cropped: `python3 tools/iiif_lines.py --image images/hstam_4_h_1411_0016.jpg --out
+crops/0016 --region 0,0,2200,3052 --debug` -> region 2200x3052, 46 lines. Region boundary confirmed visually
+(a 1/3-scale preview and a zoomed strip around the spine) before cropping: the left page's own text sits well
+clear of the gutter at this width, and the debug overlay (checked, then recompressed and dropped from git,
+regenerable in one command) confirmed the 46 line-cuts track the manuscript lines cleanly.
+
+**Extent, read directly (not just the low-resolution estimate).** L01-L05 are clear German prose (header);
+L06 opens clear then the cipher starts mid-line ("...protection genommen ist," then digit groups); L07-L26 are
+dense cipher; L27 is mixed (cipher head, clear tail); **L28-L34 (7 lines) are a second embedded clear-prose
+passage mid-letter** (own paragraph, "Gen: Lieut: hab auff 7. Comp: patente ausgefertiget..."), not previously
+flagged by bMALC's low-resolution pass -- the same phenomenon bMAL28 found on f.28 (L36/L39/L44), now confirmed
+on a second leaf of this letter-series; L35-L42 resume dense cipher (L42 mixed, clear tail); L43-L46 are the
+clear close, date and signature. `clear_0016.txt`: L01-05, L28-32, L34, the L42 clear tail and L43-46
+transcribed directly by this worker (non-blind, single pass, LOW CONFIDENCE, crib context only per rule 2 --
+dense 17th-century chancery cursive at the edge of what a non-specialist single pass can read).
+
+**Two blind passes, four blocks covering L06-L42 (37 lines).** Blocks: L06-14, L15-23, L24-32, L33-42 (9,9,9,10
+lines). Each block's crop paths only (never the full leaf) given to two fresh Sonnet subagents, neither seeing
+the other's output or any other repository file, both given bMALG's glyph-convention paragraph verbatim, both
+told to write embedded clear-prose spans as a single `[PLAIN:...]` token rather than guess digits. 8 subagent
+calls total. Per-block sign counts: block1 A=270/B=145(+2 PLAIN), block2 A=248/B=245, block3 A=123(+7
+PLAIN)/B=123(+5 PLAIN), block4 A=258(+2 PLAIN)/B=241(+3 PLAIN). Pushed after each block landed.
+
+**Finding: inconsistent tokenization of the ambiguous `z` stroke, not a shape disagreement.** bMALG's pasted
+instruction reads "...transcribe it as `z` (not as `2`, not merged into the next digit)"; several subagent
+passes (block2 pass B most heavily -- 50 of its own tokens; block4 pass A -- 21) read this as an instruction to
+keep `z` as its own TSV row, separate from the digit it visually touches, while every existing `glyph_map.tsv`
+row (`z6`, `z9`, `zz`, `7z`, ...) records the stroke FUSED to its neighbour as one raw token -- the same
+manuscript mark, tokenized two different ways by different passes. Unmerged, this cost an alignment
+gap/insertion at every occurrence (e.g. pass A's fused `z6`, mapped by the sign-map to canonical `26`, against
+pass B's split `z`+`6`, mapped to `2`+`6` as two tokens) that cascaded into spurious downstream mismatches for
+the rest of the line -- the raw agreement before any fix was only 69.3% (nw), well below bMAL23/bMAL28's
+figures even for a hard leaf. Wrote `transcription/merge_z_tokens.py` (new, one-off but generalizable): merges
+a bare `z`(`?`) token with an immediately following bare 1-2-digit(`?`) token into one fused `zN` token,
+matching the established glyph_map.tsv shape, before the sign-map substitution and alignment. Applied to both
+concatenated pass files (`pass_a_0016.tsv` 899->879 rows, 20 merges; `pass_b_0016.tsv` 858->798 rows, 60
+merges) -> `pass_{a,b}_0016_zm.tsv`. Re-reconciling on the merged files raised agreement to 71.6% and cut
+disagreement rows from 302 to 253, collapsing the large repeated clusters (`27`/`7` x6, `26`/`6` x4, `16`/`2`
+x3, etc., all the same z-segmentation artifact) down to a set of genuinely diverse, mostly-singleton value
+disagreements -- the real per-token disagreement rate on this leaf, not inflated by a tokenization mismatch
+between passes.
+
+**Reconcile.** `python3 tools/reconcile_passes.py transcription/pass_a_0016_zm.tsv transcription/pass_b_0016_zm.tsv
+--sign-map glyph_map.tsv --crops crops/0016 --out-dir recon_0016 --keep-plain` -> lines 37, signs A 879 B 798,
+agree 638/891 = 71.6% (nw), 253 disagreement rows (104 residual segmentation-gap rows -- still some z-fusion
+edge cases the merge script's narrow pattern doesn't catch, plus genuine digit-group-boundary splits like
+`7054` vs `54`+other; 16 rows where a pass's `[PLAIN:...]` wording differs from the other's, expected since
+both are independent low-confidence prose readings; 133 real single-token value disagreements).
+
+**Settling from the image.** 133 real-value disagreements is over the 50-row cap; rather than work row by row,
+checked the recurring patterns by frequency (as bMAL23 did) -- most of the remaining top patterns (`12`/`16`,
+`70`/`79`, `4`/`42`, `2`/`22`, `24`/`44`, `24`/`74`, `48`/`98`, ...) occur only 2-3 times each with no single
+dominant cluster, unlike the z-fusion artifact above; zoomed the one pattern with 3 independent occurrences
+across 3 different lines and passes, all agreeing in direction (`84`/`87`, one pass consistently read `87`
+where the image and the other pass read `84`): `recon_0016/zoom/{L07,L14,L39}_zoom.jpg` (2x/3x PIL upscale).
+Confirmed on 2 of the 3 (L07 pos4, L14 pos8) directly against the image -- the digit after `8` matches this
+line's own `4`-shapes elsewhere (e.g. L14's own `43`, L07's own `44`), not its `7`-shapes (a distinct diagonal
+stroke, e.g. L07's `7054`/`37`/`70`) -- settled all 3 occurrences (L07 pos4, L14 pos8, L39 pos16) to canonical
+`84`, grade H, `why` column records `settled:...`. The remaining ~130 disagreement rows were not individually
+zoomed (each pattern too thin, at 1-3 occurrences, to justify the same high-confidence generalization the z-fix
+and the 84/87 pattern supported) and stay at grade M -- per CLAUDE.md rule 2, a reading not confirmed by the
+image is left uncertain, not filled in to raise the agreement figure.
+
+**Result.** `recon_0016/ciphertext_draft.tsv`: N=891 rows (876 cipher-stream signs + 15 `[PLAIN:...]` embedded
+clear-prose rows), K=144 distinct non-plain sign values. Grade counts: H=564 (63.3%), M=327 (36.7%, includes 8
+ILLEGIBLE). This leaf reads harder than f.23/f.28/f.30: three different subagent passes independently flagged
+it as unusually difficult at crop resolution (two rows of ink bleeding into one crop on L08/L09, a second
+embedded clear-prose block, several capital marks outside the established set -- `V`, `T`(none here), `B`,
+`P?`, `E?`, `Z?` -- flagged, not corrected, per bMALG's own convention).
+
+**Gate.** Ran on both the full draft and a cipher-only view (PLAIN rows dropped -- they are not cipher signs
+and the gate's own off-form share is not the right measure of embedded clear prose, which is already
+separately recorded in clear_0016.txt):
+```
+full draft:   N=891 K=156 M=0.367 (> 0.15) offform=0.079 (> 0.05) cosine 0.829 vs relabel p95 0.559 -> HELD
+cipher-only:  N=876 K=144 M=0.356 (> 0.15) offform=0.063 (> 0.05) cosine 0.830 vs relabel p95 0.558 -> HELD
+```
+`recon_0016/gate.json`, `recon_0016/gate_ciphonly.json`. HELD on both quality gates (M-share, off-form), same
+as bMAL28's f.28 -- the M-share is a settling gap on a genuinely hard leaf, not a different-system signal: the
+cosine gate (the one that actually tests whether this leaf's value-frequency profile matches the established
+pool, per the tool's own orthogonal-control design) clears its p95 comfortably on both views (0.829-0.830 vs
+0.558-0.559), consistent with the same nomenclator. Not admitted to the pool this job (per CLAUDE.md rule 3's
+per-leaf merge gate, held pending further settling, not merged at a passing leaf's grade).
+
+Files: `crops/0016/` (46 line crops + manifest; debug overlay dropped from git, regenerable in one command),
+`clear_0016.txt`, `transcription/pass_{a,b}_0016_block{1,2,3,4}.tsv` + concatenated
+`pass_{a,b}_0016.tsv` + `merge_z_tokens.py` (new tool) + z-merged `pass_{a,b}_0016_zm.tsv`, `recon_0016/`
+(disagreements.tsv, ciphertext_draft.tsv, ciphertext_draft_ciphonly.tsv, agreement.tsv, gate.json,
+gate_ciphonly.json, zoom/ -- 3 settling-zoom images).
+
+**Folder-size flag for the orchestrator (repeat of bMAL23's flag).** This job's own net addition (crops/0016 +
+recon_0016 + transcription increment) is about 2.4 MB; the folder was already over 30 MB before this job
+started (bMAL23 flagged it at 30.5 MB) and is now about 37 MB. Not shrunk here, same reasoning as bMAL23: needs
+the AX2-SHRINK regen-verified process, a separate job.
+
+**Suggested next step (not this job, one-line per rule 7).** `merge_z_tokens.py`'s fix is generalizable to any
+future malsburg-hessen-1636 pass pair that mixes fused and split `z`-digit tokenization; worth folding into
+`reconcile_passes.py --sign-map` itself (or documenting as a required pre-pass step in bMALG's own instruction
+paragraph, since the instruction wording is what caused the split in the first place) rather than re-applying
+by hand on every future leaf of this letter.
+
+Hosts: none (image already on disk from bMALC's earlier fetch, all work from images/crops/pass files already
+on disk or produced this job).
+
 Hosts: none (image already on disk from bMALC's fetch).
 
 ## Pooled homophonic (bMALH, 26 Sept 2026)
