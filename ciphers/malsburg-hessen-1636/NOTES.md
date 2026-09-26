@@ -731,3 +731,84 @@ Files: HYPOTHESES.md (6 rows); families/homophonic-1-profile=target-bmalhpooledn
 families/homophonic-1-profile=target-bmalhfullpooln18.txt (full-pool decode);
 families/homophonic-1-shuffle1-profile=target-bmalhpooledn1828.txt (shuffle floor decode). Did not touch
 NEAR.md or pool/ (orchestrator's call per this job's brief). Hosts: none (all local).
+
+## Record 505 f.24 (bMAL24, 26 Sept 2026) -- PARTIAL, stopped at cost cap
+
+Intake gate re-run: `python3 tools/intake_gate_check.py malsburg-hessen-1636` -> `partial` (line 1), exit 0.
+
+**Scope correction.** bMALC's low-resolution overlay glance called f.24 "continues the cipher for ~9 more
+lines (~180 signs) then closes in clear" -- the same kind of rough estimate bMAL23 already found wrong for
+f.23's boundary. Reading the crops directly (`tools/iiif_lines.py --image images/hstam_4_h_1411_0024.jpg
+--out crops/0024 --debug` -> region 2254x2938, 45 lines, 45 bands x 1 segment): L01-L32 is solid cipher
+(continuing f.23's block with no clear break at the top of the leaf), not ~9 lines -- 32 cipher-bearing
+lines. L33 onward is clear German closing the letter (dateline "Wesel, den 7/17. Februarij Anno 1637",
+matching record 505's 7 Feb 1637 metadata date) plus a postscript about supplies/clothing in a second,
+looser hand (L42-L45) and a final signature ("Otto Vander Mal[s]ß[burg], Bürger") below the auto-detected
+region, not separately cropped. `clear_0024.txt` transcribes L33-L45 in one non-blind low-confidence pass
+(crib only, rule 2, same convention as clear_0023.txt) -- mentions Jean de Wert crossing the Rhine and
+Gallas's forces on the Moselle, matching clear_0023.txt's L06 reference to the same events.
+
+**Done: block 1 only (L01-L08, 8 of 32 cipher lines), two blind passes** (2 Sonnet subagent calls:
+`pass_{a,b}_0024_block1.tsv`, 200/199 tokens). Both passes independently flagged German prose/gloss fused
+into several crops (L02-L04, L06, L08) and excluded it from the per-token TSV as outside the defined token
+types -- the same embedded-clear-text-mid-cipher pattern bMAL28 found on f.28/f.30 (L34/L36/L38/L39), here
+recurring on f.24's opening lines.
+
+**Not done: blocks 2-4 (L09-L32, 24 lines).** This job stopped after block 1 rather than starting block 2,
+per Usage 6/CLAUDE.md cost discipline: the brief's own pricing (~9 lines = 1 block = 2 calls) assumed
+bMALC's wrong estimate, and each of this block's 2 subagent calls ran close to 190k tokens (191002/185482),
+in the same range as the single-call overruns that put bMAL28 and AX-COMP2 over cap (CLAUDE.md Usage 6).
+With the real leaf 3.5x longer than priced and no way for this worker to read its own cost mid-session
+(only the orchestrator's `get_session` can), continuing into 3 more blocks (6 more calls) at this
+per-call weight would very likely blow the $6 cap the way bMAL23's 8-call job ran to $16.27 on a leaf of
+comparable size. Stopped here and reported partial, matching bMAL28's own precedent.
+
+**Reconcile.** `python3 tools/reconcile_passes.py transcription/pass_a_0024_block1.tsv
+transcription/pass_b_0024_block1.tsv --sign-map glyph_map.tsv --crops crops/0024 --out-dir recon_0024` ->
+lines 8, signs A 200 B 199, agree 152/211 = 72.0% (nw), 59 disagreement rows -- well over this job's 20-row
+settle cap. Two rows (L01 pos18, L05 pos6) matched bMAL23's own already-zoom-confirmed `26/16 -> 16, H`
+pattern (the i6->16 dotted-cursive-1 shape misread as the z-hook by one pass) exactly, on the same hand/
+leaf-family -- settled to `16`, grade H, by precedent rather than a fresh zoom (`why` column:
+`settled:precedent-bMAL23(26/16->16,H)`). The rest of the 59 disagreement rows are mostly misalignment
+cascades from the two passes differently excluding the embedded-gloss spans noted above (a whole line's
+tail shifts once one pass drops tokens the other kept) rather than clean single-token digit disputes, so
+they were not individually zoomed against the 20-row cap; left at grade M.
+
+**Result (block 1 only).** N=211 signs, K=83 distinct values. H=154 (73.0%), M=57 (27.0%).
+
+**Gate (block 1 only, explicitly partial -- not the whole leaf).** `python3 tools/leaf_pool_gate.py --leaf
+recon_0024/ciphertext_draft.tsv --pool pool/pooled.tsv --seed 20260926 --json recon_0024/gate.json`:
+```
+leaf ciphers/malsburg-hessen-1636/recon_0024/ciphertext_draft.tsv: N=211 K=83 M=0.270 (<= 0.15) offform=0.019
+(<= 0.05) vocab overlap 0.910; cosine real 0.777 vs relabel mean 0.311 p95 0.399 -> HELD
+  offform examples: ILLEGIBLE
+```
+HELD on the M-share gate (0.270 > 0.15) -- the same shape as bMAL28's HELD result: cosine passes decisively
+(0.777 well above the relabel p95 0.399, same system) and off-form is fine (0.019), so this is a settling
+gap on an 8-line partial slice, not a negative. Not merged into pool/pooled.tsv (orchestrator's call, and
+this is a partial leaf slice regardless).
+
+**Follow-up for the next job:** transcribe blocks 2-4 (L09-L32, 24 lines, 6 more subagent calls at the
+recalibrated ~0.4-0.5/line rate this leaf is running), reconcile against block 1, settle the gloss-exclusion
+misalignments by re-instructing both passes to mark embedded prose spans explicitly (e.g. a `[GLOSS]`
+placeholder token) rather than silently skipping position numbers, then re-run the gate on the full L01-L32
+draft. `clear_0024.txt`'s postscript/signature reading could also use a second, independent pass if this
+leaf is wanted for anything beyond crib context.
+
+**Folder shrink (Unit 2).** Before this job: 34 MB (over the 30 MB line; crops/0024's own 2.2 MB net
+addition on top of an already-32 MB folder). Deleted the regenerable debug-overlay images across every
+`crops/*/` folder (0003, 0012, 0024, 0028, 0030 -- 0016 and 0023 already had none), each one re-derivable in
+one command from its logged `iiif_lines.py` invocation (this job's own crop command above; f.3/f.12/f.28/f.30's
+commands are in bMAL2/bMALDUP's NOTES.md sections). After: 32 MB -- still over the 30 MB line. Per this job's
+own brief ("if still over 30 MB, stop and say so; do not delete leaf images"), stopped here: `images/` (23 MB)
+is the largest component and out of scope for this job to touch, and every remaining `crops/*/` folder's line
+crops are cited by a `recon_*/ciphertext_draft.tsv` or `disagreements.tsv` (or, for crops/0016, by a live
+sibling job, bMAL16, not this job's to touch). A proper shrink needs the AX2-SHRINK regen-verified process
+(byte-identical re-derivation check before deleting any image) across the whole `images/` folder -- a larger,
+separate job, flagged for the lane orchestrator per rule 7/Usage 8a rather than improvised here.
+
+Files: `crops/0024/` (45 line crops + manifest, debug overlay dropped), `clear_0024.txt`,
+`transcription/pass_{a,b}_0024_block1.tsv`, `recon_0024/` (disagreements.tsv, ciphertext_draft.tsv,
+agreement.tsv, gate.json).
+
+Hosts: none (image already on disk from bMALC's fetch).

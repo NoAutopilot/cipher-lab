@@ -1,0 +1,17 @@
+{
+ "n": 211,
+ "k": 83,
+ "m_share": 0.2701,
+ "offform_share": 0.019,
+ "offform_examples": [
+  "ILLEGIBLE"
+ ],
+ "vocab_overlap": 0.91,
+ "cosine_real": 0.7772,
+ "cosine_relabel_mean": 0.3109,
+ "cosine_relabel_p95": 0.3994,
+ "gate_quality": false,
+ "gate_form": true,
+ "gate_system": true,
+ "admitted": false
+}
