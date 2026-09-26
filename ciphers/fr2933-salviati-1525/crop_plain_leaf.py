@@ -34,6 +34,10 @@ SOURCES = {
     "f54v": ("images/f54v_ref2400.jpg", 80, 80, 1.5),
     "f55r": ("images/f55r_ref2400.jpg", 80, 80, 1.5),
     "f55v": ("images/f55v_ref2400.jpg", 80, 80, 1.5),
+    "f56r": ("images/f56r_ref2400.jpg", 80, 80, 1.5),
+    "f56v": ("images/f56v_ref2400.jpg", 80, 80, 1.5),
+    "f57r": ("images/f57r_ref2400.jpg", 80, 80, 1.5),
+    "f57v": ("images/f57v_ref2400.jpg", 80, 80, 1.5),
 }
 
 
