@@ -1,0 +1,29 @@
+Record 503, f.16 (hstam_4_h_1411_0016.jpg), left page only (the right-hand panel is a
+separate clear name/docket list, not part of this letter). LOW CONFIDENCE, single
+non-blind pass by this worker (bMAL16), dense 17th-century chancery cursive at the
+edge of what a non-specialist single pass can read -- crib context only, not cited
+as an H/C-grade reading (CLAUDE.md rule 2). Line ids match crops/0016 crop file stems.
+
+L01 Auf Befehl im Röm[ischen] wenig tragt Contribution begehrt, das aber dasselbe damit nicht invasio[nes]
+L02 nes ingebiete gross mögen, nembt vor alle 400. Röm[isch] gehet solches, das ist für Zeug das C[?]f eines
+L03 pfrim, das er nicht weiter graviret werden solle, bekommens Röm[isch] [heil?] gaben keine ausschreib[ung]
+L04 darauf bekommens sonwil er nicht ausschlagen er habe das gestallt Resolution des C[?]f erwarttes
+L05 erwarttes C[?]f auf Klostung, damit was ein 400. Röm[isch] bekommens mogen, welche der [best?]
+L06 (clear head only) als nichts sein, wiel er in Kreyerische protection genommen ist, -- cipher follows mid-line
+
+[block 3 embedded clear passage, L28-32, transcribed here from the same direct read
+rather than re-read by the blind passes below -- LOW CONFIDENCE]
+L28 Gen: Lieut: hab auff 7. Comp: patente ausgefertiget, dardurch alsdann in dero gnaden gewahrsam
+L29 zu nicht anzeigen gemacht, sollt nun das Rauberey mit sambt mas[?] hergehen des
+L30 darbeigelth doch gedacht tractiret dazu kommen, kommen noch dass gewiss alle
+L31 regimenter ins feldt gehen, dieweilen das mas nicht accommodiren den land dieff[?]
+L32 vom tractamen[t] und foerderung viel zu hoch, ihr habt einfach bringt wohl den 3.
+L33 (clear head only) tages geschriebes aber nicht pflichters vollzug, bis Bescheid einwerung -- cipher tail follows
+L34 morgen ehe geschribener kommt, und dünckt mich nicht verkehrt Vergl nicht abzufallen
+
+[closing, after the cipher ends]
+L42 (clear tail only, after cipher) -- Ihr [Fürst?]
+L43 hiermit in Gottes gnedigst und freundtlich bewahr[end], und mich in ewig[e] gnaden befehl[end]
+L44 Datum Rusfell den 30. Januarii ao 1637
+L45 Zele: 9. Februarij  (marginal note, different ink -- likely a receipt/registration date)
+L46 Vnser lassungen gehorsamer Diener  Otto von der Malsburg
