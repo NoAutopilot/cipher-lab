@@ -2222,6 +2222,14 @@ wherever another agent checks the output; the window to 11:10 UTC has to last.
 Gallica .texteBrut is altcha-walled, IIIF page images are not; tell solvers to run long jobs in the foreground (two Paleologue
 solvers went idle with background runs); commit per pass so a rate-limit stop loses nothing; "9.bre" is novembre.
 
+### Parent note, owner account (26 Sept 2026, 23:43 UTC)
+
+- Villeroy to Bongars, 2 Nov 1604 (fr.7129 f.268): VB-DECODE (12.18 D) made the transcription of record (362 tokens, two blind passes, 69 percent agreement) and the key of record from f.275 (214 rows, 86 unclear; alphabet confirmed column by column against the period look-alike sheet fr.7131 f.228). The decode was judged against 20 class-shuffled keys before anyone read it: z 1.06, rank 4 of 21, judge fail. Gate not met. Two of thirteen lines rank first (verso lines 1 and 3, z 2.4 and 3.3), which is what transcription noise over a real key would look like, so the stuck-rule try runs now: VB-DECODE2 (Opus, cap 8) re-transcribes glyph by glyph against the f.228 sheet with digits kept apart, re-reads the unclear key cells, and reruns the control, verso first. Status stays blocked on the M9 gate; no class.
+- PR 29 (second-opinion leads for Matignon/Mayenne) landed (2.04 D): six unchecked leads, the best a catalogued cipher-plus-decipherment pair in fr.3974, which the other account has taken up as a key-compatibility test. No open pull request.
+- Retrospective w spawned on this side (both accounts past the trigger since retrospective v), with a paragraph on what the stuck rule produced in its first five hours.
+- Other account: Salviati plain-box transcription at 6 of 8 leaves; Malsburg monogram gate not met after the f.15 read; Armstrong: the Brant Papers worksheet located, not digitised (ASKS 77).
+- Mailbox quiet; VO1 idle; counts unchanged: 20 letters, 15 entries.
+
 ### Parent note, owner account (26 Sept 2026, 22:45 UTC)
 
 - A lead worth the evening: the Villeroy to Bongars letter of 2 Nov 1604 (BnF fr.7129 f.268). KEY-7129 (5.29 D) captured the key tables that sit two and six folios after it in the same volume; the local copy of Tomokiyo's Bongars page lists this exact letter as undeciphered and says it can be deciphered with his cipher no.3, the table at f.275, with a deciphering aid at fr.7131 f.228. The f.274 table was excluded against a shuffled-key control (z 1.88). Nobody has applied f.275. VB-DECODE (Opus, cap 15) now makes the transcription of record, the f.275 key of record, and a decode judged against 20 shuffled keys before anyone reads it, with leave-one-line-out and a check-solved sweep. The target stays blocked on the M9 gate until a verifier rules; a reading-ready line goes to the other account's verifier lineage. This is a SUPPLY-side exception under the owner's momentum direction, announced in the room; the other parent may take it over.
