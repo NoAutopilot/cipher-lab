@@ -660,3 +660,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T01:32Z	session_01TKAwAdJ81TasQKeoCkXug5	bSCORE (Sonnet, cap 3)	score VX/KX/KT/PX backlog into QUEUE-scores.json	brief 2026-09-26-lane-b5-score.md; LANE B5
 2026-09-26T01:35Z	session_01DT6RBTD79xaeQ7VDd4wkkP	bBLZ5 (Sonnet, cap 6)	blitz-ciphers pages 1-6 fetch + blind pass + consistency control	brief 2026-09-26-lane-b5-blitz-pages.md; LANE B5
 2026-09-26T01:35Z	session_018rGmoW7iWQMi5zDpzGtAwW	bMAT2 (Sonnet, cap 4)	matignon-mayenne-1586 read/unread split, M/U two-context with control	brief 2026-09-26-lane-b5-matignon-mu.md; LANE B5
+2026-09-26T01:41Z	session_015aTDvg65RN4QfJMyHPY14c	V7-QA5 (Sonnet, cap 5)	rolling QA window 23:41-01:41	LANE V7 brief job 3
