@@ -2151,6 +2151,55 @@ Files: `ciphers/lodewijk-van-nassau-1573-74/{images_manifest_full.tsv,regen_imag
 images_wv2/crops_gloss/**,images_wv2/crops_rederiv/**,ax2_5801/crops/**,NOTES.md,AUDIT.md}` (citation renames
 only in AUDIT.md). Hosts: resources.huygens.knaw.nl, 1 request (04614.pdf, regen test only).
 
+**Fourth pass (26 Sept 2026, AX2-SHRINK4, LANE AX2), `images_wv2/*.jpg` root full pages + line-crop
+re-encode in `images/` and `images_wv2/crops_comp/**`.** Orchestrator decision at 08:05 UTC: step 1, thin
+`images_wv2`'s six letters' full-page scans to one sample page per letter; step 2 if still over, re-encode
+line crops at JPEG q70. Before: 38088 KB (37.2 MB).
+
+**Step 1 -- `images_wv2/*.jpg` root pages.** All 27 pages already carried their WVO `pdf_url` in
+`images_wv2/manifest.json` (checked per-brief before touching anything). `git rm`'d 21 of the 27, keeping one
+page per letter (`p1` of each: `04503_p1.jpg`, `05194_p1.jpg`, `05797_p1.jpg`, `05799_p1.jpg` -- its only page,
+untouched -- `05810_p1.jpg`, `05811_p1.jpg`); none of the 21 removed pages is individually cited by filename
+anywhere outside `images_manifest_full.tsv`/`images_wv2/manifest.json` (checked per file: only `04503_p1.jpg`
+and the blanket range note `05797_p1.jpg`..`p8.jpg` at NOTES.md:595, "copy-free, already on disk", are named,
+both about the kept `p1` or a set-level copy-status remark, not a specific page cited as evidence). Regen
+test (1 request to resources.huygens.knaw.nl, 05797.pdf, `./regen_images.sh page 5797 2` after installing the
+missing `pymupdf`/`Pillow` packages this container lacked): rendered `05797_p2.jpg` from the freshly fetched
+PDF, sha1 `c465218c34218e6db1c803d5870d0a9c37211a92` -- identical to the pre-removal committed file, confirming
+`images_wv2`'s convention (pymupdf, 150dpi, JPEG q80) is still reproducible for this brief. After step 1:
+32740 KB (32.0 MB) -- still over 30 MB by about 2 MB.
+
+**Step 2 -- line-crop re-encode.** Brief's method: JPEG q70, same dimensions, `images/` and
+`images_wv2/crops_comp/**`. Applied to all 483 line-crop files (`images/*_L*.jpg`, 347 files -- full pages and
+the two `*_lines_debug.jpg` overlays excluded, neither is a crop; `images_wv2/crops_comp/*.jpg`, 136 files,
+`manifest.json` excluded) by decoding the currently-committed JPEG and re-saving, no resize. At q70: saved
+1839 KB, total 31240 KB (30.5 MB) -- still over the 30 MB line by about 500 KB. Rather than double-compress
+(re-encoding the already-q70 output a second time, which stacks generation loss for no clear gain), reverted
+the 483 files to their committed originals (`git checkout -- images/ images_wv2/crops_comp/`, cheap since
+nothing had been committed yet) and re-ran the same script at q65 directly from the originals in one pass:
+saved 2851 KB, total 29804 KB (29.1 MB), under the rule. Logged here as the judgement call the brief's q70
+number didn't quite clear (COMMON's "no human watches a worker session" rule: took the more conservative single
+re-encode over stacking a second lossy pass at the letter of the brief's stated quality).
+
+**Legibility check (rule 3's own kind of check, requested by the brief): three re-encoded crops eyeballed
+before/after at 100%.** `images/04610_p1_L01.jpg` (small text line), `images_wv2/crops_comp/07205_p4_L04.jpg`
+(dense multi-line numeral crop, the one AX2-SHRINK3 flagged as still over 300 KB before its own downscale),
+`images_wv2/crops_comp/05801_p1_L06.jpg` (superscript-heavy cipher line). All three: no visible difference
+between the q80/q85-original and the q65 re-encode at the pixel dimensions on disk; every numeral and letter
+that was legible before is legible after.
+
+**Inventory.** 21 `images_wv2/*.jpg` rows in `images_manifest_full.tsv` updated with a
+"removed AX2-SHRINK4... original at commit `fd9d781f`" note (rows kept, not deleted, matching prior passes'
+convention); 483 line-crop rows (`images/*_L*.jpg`, `images_wv2/crops_comp/*.jpg`) updated with new
+bytes/sha1 and a "re-encoded JPEG q65... original at commit `fd9d781f`" note. Every row's bytes/sha1 now
+matches the file on disk (checked programmatically, 0 mismatches of 673 non-header rows).
+
+After: folder total 29864 KB (29.2 MB) -- **under the 30 MB rule**, with about 850 KB margin.
+
+Files: `ciphers/lodewijk-van-nassau-1573-74/{images_manifest_full.tsv,images_wv2/*.jpg,images/*_L*.jpg,
+images_wv2/crops_comp/**,NOTES.md}` (this paragraph). Hosts: resources.huygens.knaw.nl, 1 request (05797.pdf,
+regen test only).
+
 ## AX2-4612: 4612 v3, key_full decode and key-seeded anneal (26 Sept 2026, LANE AX2)
 
 Worker AX2-4612 (Sonnet), brief `.claude/briefs/runs/2026-09-26-lane-ax2-4612.md`, started 05:22 UTC (clock
