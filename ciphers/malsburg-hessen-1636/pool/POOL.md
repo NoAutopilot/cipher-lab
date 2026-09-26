@@ -14,4 +14,4 @@ off-form <= 0.05, value-frequency cosine against the pool > relabel p95; CLAUDE.
 
 Pool at 09:35 UTC: **1,828 signs**, 173 distinct values (includes about 4% off-form signs from f.23, graded M).
 
-At the LANE B9 close (10:20 UTC): pool unchanged at 1,828 signs. bMALH ran homophonic profile=target on it: control 0.637, target FAIL (HYPOTHESES.md).
+At the LANE B9 close (10:17 UTC): pool unchanged at 1,828 signs. bMALH ran homophonic profile=target on it: control 0.637, target FAIL (HYPOTHESES.md).
