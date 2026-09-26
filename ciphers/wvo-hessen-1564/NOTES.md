@@ -167,3 +167,124 @@ Hosts this pass: resources.huygens.knaw.nl 4 requests (2 record pages + 2 PDFs, 
 >=2s apart, all HTTP 200); archive.org 1 request (`archivesoucorre00housgoog_djvu.txt`, curl -L, browser-
 contact UA, HTTP 200). No other host. No subagents (all reading and image inspection done directly by this
 worker). WebSearch used for item 6 above (not counted against the good-citizen per-host budget).
+
+## NX-WVO174, 26 September 2026: does the 174 key read 1109? Tested -- no.
+
+Brief: `.claude/briefs/runs/2026-09-26-lane-nx-wvo174.md`. Tests the one concrete lead this folder's own
+"Next step" paragraph named: `willem-van-hessen-1567/siblings/key_174_nomenclator.tsv` (Orange's own cipher
+to the same recipient, 9 Apr 1567, 3 years after 1109) against 1109's own cipher enclosure. Not editing
+`willem-van-hessen-1567/` (read-only, per the brief).
+
+**1. Crops.** `python3 tools/iiif_lines.py --image images/01109_p3_400full.jpg --out images/crops --region 550,100,2750,1950 --prefix f23 --debug`
+(a fresh 400dpi full-page render of PDF page index 3, `images/01109_p3_400full.jpg`, not previously on disk;
+the 200dpi `01109_p3.jpg` from the earlier pass was too coarse for line-cropping). Detected 18 lines (debug
+overlay checked, `images/crops/f23_lines_debug.jpg` -- correctly finds the body text block and skips the
+docket/date line above and the signature below; a couple of bands are one manuscript line split into two
+detected bands where letters hang low, harmless for line-crop transcription). 36 crops (`f23_L01..L18_s{1,2}.jpg`).
+
+**2. Transcribe.** Two independent blind Sonnet subagents per batch of 6 lines (3 batches x 2 passes = 6
+calls, per the box's own budget), each given only the crop images and a plain-language reference-shape
+inventory built from `key_174_nomenclator.tsv`'s `sign_desc` column with the `value` (letter/word) column
+stripped out -- shapes only, no meanings, so a pass could reuse consistent terminology without being told
+what any sign decodes to. Raw outputs in `align/pass{A,B}_L{01-06,07-12,13-18}.tsv`.
+
+**Pass agreement**: token-count agreement (not a per-token alignment -- see caveat below) is pass A 290
+tokens (81 clear, 209 cipher) vs pass B 335 tokens (90 clear, 245 cipher), 290/335 = 86.6% by raw count, but
+per-line segmentation disagrees substantially in the densest all-cipher lines (e.g. L02: 20 vs 23 tokens;
+L05: 24 vs 27; L11: 21 vs 20 but different shapes; both passes flag this themselves as low-confidence in
+their own reports). This matches the precedent already on file for this manuscript tradition
+(`willem-van-hessen-1567/NOTES.md`, OX-WV69, 25 Sept 2026: a full-line-strip crop is "exactly the failure
+mode" for invented-sign transcription; a tight per-glyph atlas is the fix, and building one for all 18 lines
+was out of this box). Pass A was used as the primary reconciled transcription for the test below (an
+arbitrary but fixed, documented choice); full manual per-token reconciliation of every disagreement against
+the crops was not completed given the 75-minute box -- this is a real limitation, not hidden.
+
+**3. Gates (written before decoding, per the brief).**
+
+**(a) Coverage** -- share of 1109's cipher-sign tokens whose plain-language shape description matches
+something in key_174's own inventory (any of its 20 alphabet-letter shapes or 12 null shapes), scored by a
+fixed deterministic classifier (`align/classify.py`, a priority-ordered regex list applied identically to
+every token and to both passes -- it cannot be tuned toward a preferred outcome since it was written and
+frozen before either the coverage or the decode number was computed):
+
+| pass | cipher tokens | matched (alphabet+null) | coverage |
+|---|---|---|---|
+| A | 209 | 131 | 62.7% |
+| B | 245 | 165 | 67.3% |
+
+**Both below the brief's 70% gate.** Per the brief: "below 70 percent means the key is a different system:
+stop and say so." Reported here rather than silently stopping, per rule 3's "report both numbers" and the
+brief's own step 5 ("both numbers side by side"), and gate (b) was still run for the same reason.
+
+**(b) Reading** -- `ciphertext.tsv` (tools/decode_key.py 'tsv' format, from pass A's classified tokens) +
+`key.tsv` (key_174's own 20 letter values, its own grades: H for b,c,d,e,f,i,n; M for the other 13) +
+`decode.json` -> `python3 tools/decode_key.py ciphers/wvo-hessen-1564 --check`:
+```
+ciphertext.tsv: tokens 209: H 58, M 61, U 90
+reading up to date
+```
+(H/M counts are key_174's own per-letter grades on the 119 matched-and-decoded tokens; U = the 90 tokens
+key_174 has no shape for at all, rendered as unkeyed, not guessed.)
+
+Scored the resulting reading (clear words as transcribed + key_174-decoded cipher runs, one continuous
+string) with `tools/judge_plaintext.py`'s own 4-gram German model (`tools/data/de16`) and its word-cover
+statistic, against 20 shuffles of the SAME 18 codes' VALUES (`align/build_and_test.py`, seed fixed). The
+shuffle changes which letter each shape-code maps to; it does not touch which tokens counted as
+shape-matched in gate (a) above, so it tests (b) only, not (a) -- CLAUDE.md rule 3's "a control must be able
+to fail differently from the target" check.
+
+| pass used for tokens | real score | shuffle score range (n=20) | real cover | shuffle cover range (n=20) | real beats shuffle max? |
+|---|---|---|---|---|---|
+| A | -1.578 | [-1.653, -1.567] | 0.175 | [0.166, 0.241] | **no** (score and cover both) |
+| B | -1.600 | [-1.652, -1.567] | 0.176 | [0.154, 0.190] | **no** (score and cover both) |
+
+Both independent transcription passes agree: the real decode sits inside the shuffle-noise band, not above
+it -- on pass A the real cover (0.175) is actually below the shuffle mean (0.181).
+
+**Official judge (rule 7, `specs/wvo-hessen-1564.json`)**:
+```
+ok   length: got=651, min=100, max=2000
+FAIL language: score=-1.565, null_p99=-1.641, real_p05=-0.444, real_median=-0.428, mode=both, N=651
+FAIL words: cover=0.095, min=0.5, real_text_median_cover=0.77
+FAIL - wvo-hessen-1564 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+The candidate is barely above the *shuffled-null* ceiling (-1.565 vs -1.641) and nowhere near real German
+prose (-0.444 at the 5th percentile) -- consistent with the shuffle-vs-shuffle result above, not a
+borderline case. `tools/data/de16` is the only period-matched (Early New High German) German corpus on
+disk, but per its own README it is 8.5KB of model-composed pastiche, "NOT a historical source", a single
+file with no fold structure to report a reliability spread for (CLAUDE.md rule 3's fold-count amendment) --
+flagged, but the FAIL margin here is wide enough that this corpus's own authenticity does not change the
+verdict.
+
+**Grades.** Per CLAUDE.md rule 4: no token here is graded above S (cryptanalytic, sibling-key transfer) even
+where key_174 itself grades a letter H -- key_174's own H/C/M grades describe how well *that* letter is read
+off *174's own* leaf (rule 4's own worked example), not whether it is the right key for *this* document.
+Since gate (b) fails, no token from this attempt is reported as a reading at all; `key.tsv`'s grade column
+is retained only as a record of key_174's own internal grading for anyone who re-derives this test.
+
+**4. Verdict: PARK -- below unicity, 174 key does not transfer.** Both gates fail, both numbers side by side
+above, reproducible via `python3 ciphers/wvo-hessen-1564/align/build_and_test.py` and
+`python3 tools/judge_plaintext.py specs/wvo-hessen-1564.json --file ciphers/wvo-hessen-1564/reading.txt`.
+Status stays **open** (rule 5 -- this is one ruled-out lead, not every family in the ladder). This does not
+contradict the qualitative sign-shape resemblance noted in the previous pass (triangles, crosses, squares,
+Pi/hash marks, figure-8s and y-curls genuinely do recur in both documents -- gate (a)'s 63-67% shows real,
+if partial, shape overlap) -- it shows that shape-family resemblance alone is not the same as sharing the
+same key, consistent with `willem-van-hessen-1567/NOTES.md`'s own finding for 1069 vs 174 (2 of 10 sampled
+signs matched, 1 was a same-shape-different-letter contradiction). A caveat on the negative itself: given
+the pass-agreement and coverage limitations above, this rules out "174's key reads 1109 straightforwardly at
+line-crop resolution," not "no version of 174's key could ever read 1109" -- a tight per-glyph atlas (the
+fix OX-WV69 already named for 1069) could still change the coverage number, though the gate (b) shuffle
+result is the more decisive of the two (a coverage fix cannot rescue a decode that already sits inside the
+shuffle-noise band on the tokens it did cover).
+
+**Next step for a successor, not pursued this pass (out of box/budget):** a tight per-glyph atlas for 1109
+itself (same fix already named for 1069 in `willem-van-hessen-1567/NOTES.md`), which would let a real
+per-token reconciliation replace pass A's arbitrary-primary-pick and give a firmer coverage number; absent
+that, this specific lead (174's key) is closed and the folder's remaining option is a blind attempt with a
+matched code+mark control (CLAUDE.md rule 3), not another sibling-key transfer.
+
+Files this pass: `images/01109_p3_400full.jpg`, `images/crops/**`, `align/**` (pass tables, classify.py,
+build_and_test.py, make_ciphertext.py), `ciphertext.tsv`, `key.tsv`, `decode.json`, `reading.txt`,
+`reading_tokens.tsv`, `../../specs/wvo-hessen-1564.json` (new), this NOTES.md section, ROOM.md. No network
+this pass (all images already on disk from NX-WVO1109). 6 Sonnet subagents (2 passes x 3 line-batches, at
+most 2 concurrent per CLAUDE.md Usage rule 6).

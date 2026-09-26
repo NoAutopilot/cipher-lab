@@ -1,0 +1,104 @@
+L01	1	clear	m[i]r
+L01	2	clear	R[o]u
+L01	3	clear	nen
+L01	4	clear	auc[g/ß]
+L01	5	clear	i[n]fr[au]n[d]t
+L01	6	clear	e[r]
+L01	7	cipher	small loop with a trailing dot, ligature-like curl (uncertain whether sign or scribal flourish/abbreviation mark)
+L01	8	cipher	small cross-like mark, partially cut off at crop edge
+L02	1	cipher	figure-8-like loop (matches ref #9/#18 "figure-8")
+L02	2	clear	[y/v]
+L02	3	clear	met
+L02	4	cipher	double-dagger (ref #1/null-list "double-dagger")
+L02	5	cipher	cross-with-tail / X-like ligature, two vertical strokes crossed near top
+L02	6	cipher	looped "9"/"6"-like curl (ref #7 "loop-d shape/6/curl")
+L02	7	clear	anen
+L02	8	clear	n[i].
+L02	9	cipher	small y-like curl (ref #10)
+L02	10	clear	vo
+L02	11	cipher	circle with a cross/dot through it, sun-sign-like (ref #8 "sun-circle-dot")
+L02	12	clear	a
+L02	13	clear	e
+L02	14	cipher	long-s / figure-8 ligature descending below the line
+L02	15	clear	en
+L02	16	cipher	figure-8-over-loop hybrid (ref #18 "figure-8 over a circle-cross")
+L02	17	clear	a[?]
+L02	18	cipher	small curl/sigma-shape (ref #15 "omega/w-like loop", tentative)
+L02	19	clear	w[1/i]
+L02	20	cipher	cross (X) (ref #4)
+L03	1	cipher	P-like glyph with a hooked/looped tail (ref #14 "hooked-b/rho-like curl")
+L03	2	cipher	small circle/loop with a short tail
+L03	3	cipher	t-shaped mark: vertical stroke with a short crossbar near the top
+L03	4	cipher	loop with a diagonal tail, omega/w-like (ref #15)
+L03	5	cipher	small triangle (ref #2, Δ)
+L03	6	cipher	Y-like glyph with a horizontal crossbar (crossed-y)
+L03	7	cipher	e-shaped loop with a crossing stroke
+L03	8	cipher	T-shape with a short tail (null-list "T")
+L03	9	cipher	double-dagger (ref #1/null "double-dagger")
+L03	10	cipher	m/omega-like loop with a hook
+L03	11	cipher	h-with-crossbar (ref #3, exact match)
+L03	12	cipher	numeral 3 (three vertical bars, roman-numeral-like) (ref #19)
+L03	13	cipher	C-shaped curve with a trailing dot
+L03	14	cipher	small comma/tick mark (possibly punctuation, not a sign)
+L03	15	cipher	gamma-like curl (null-list "gamma-like")
+L03	16	cipher	T-shape with a dot above it
+L03	17	cipher	square with a dot (ref #5, exact match)
+L03	18	cipher	cross with a short vertical tail (t/cross hybrid)
+L03	19	cipher	figure-8 shape, small (ref #9)
+L03	20	cipher	figure-8 shape, larger loop
+L03	21	cipher	cross (X) (ref #4)
+L03	22	cipher	slashed-z / "3"-like glyph (ref #12)
+L03	23	cipher	H-like glyph with a horizontal bar through it
+L03	24	cipher	looped "9"/"6"-like curl (ref #7)
+L03	25	cipher	numeral 3 / three-bar glyph (ref #19), partly cut at crop edge
+L04	1	clear	[?]e
+L04	2	cipher	square-ish glyph with a small dot (ref #5, tentative)
+L04	3	clear	d[?]
+L04	4	cipher	circle/loop with a small tail (ref #7-ish)
+L04	5	clear	e
+L04	6	clear	v[o/r]o
+L04	7	clear	a[n/u]
+L04	8	clear	t[?]
+L04	9	cipher	small loop, "p"-like tail descending (ref #14-ish)
+L04	10	clear	z[o/e]
+L04	11	clear	,
+L04	12	cipher	cross (small, thin) (ref #4)
+L04	13	clear	[?]t[?]
+L04	14	clear	un[g/ß]en
+L04	15	clear	[?]e[?]
+L05	1	cipher	small "x"-like double stroke (null "v"-like or crossed mark)
+L05	2	cipher	numeral 3 / three-bar glyph (ref #19)
+L05	3	cipher	figure-8-like loop (ref #9)
+L05	4	cipher	T-shape / cross with short crossbar
+L05	5	cipher	cross with a longer vertical tail
+L05	6	cipher	slashed-z / "3"-like glyph (ref #12)
+L05	7	cipher	double-dagger (ref #1)
+L05	8	cipher	small looped curl (long-s-like)
+L05	9	cipher	y-like curl (ref #10)
+L05	10	cipher	m-shaped loop, three humps
+L05	11	cipher	circle with a small dot/tail (o-with-mark)
+L05	12	cipher	small loop with a tail, cursive-e-like
+L05	13	cipher	hooked mark, arrow/tick-like
+L05	14	cipher	m/omega-loop, larger
+L05	15	cipher	small triangle (ref #2, Δ) with a dot above (delta-with-dot)
+L05	16	cipher	m/omega-loop, smaller variant
+L05	17	cipher	small looped curl, s-like
+L05	18	cipher	curl with a tail, y-like
+L05	19	cipher	curl with a small hook, a-like
+L05	20	cipher	curl with a cross-stroke, crossed-a
+L05	21	cipher	curl, y-like
+L05	22	cipher	vertical stroke with a small hook at top (lambda/wedge-like)
+L05	23	cipher	small loop, "8"-like
+L05	24	cipher	crossed stroke, thin cross
+L06	1	clear	[?]m
+L06	2	clear	e
+L06	3	clear	n.
+L06	4	clear	[G/Ç]a[B/ss]en
+L06	5	clear	d[a/o]
+L06	6	cipher	small cross with a curved tail (t/cross hybrid, ref #18-ish "figure-8 over circle-cross" tentative)
+L06	7	clear	[?]
+L06	8	cipher	small circle/loop with a superscript dot (ref #5-ish "square/circle with a dot")
+L06	9	clear	e
+L06	10	cipher	B-like loop with a small flag/tail (ref #14 "hooked-b" or a plain cursive "B")
+L06	11	clear	[i/1]n
+L06	12	clear	[f/s][?]

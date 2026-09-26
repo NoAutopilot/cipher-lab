@@ -1,0 +1,291 @@
+line	pos	sign	conf
+L01	1	[PLAIN:m[i]r]	
+L01	2	[PLAIN:R[o]u]	
+L01	3	[PLAIN:nen]	
+L01	4	[PLAIN:auc[g/ß]]	
+L01	5	[PLAIN:i[n]fr[au]n[d]t]	
+L01	6	[PLAIN:e[r]]	
+L01	7	UNM	?
+L01	8	d	
+L02	1	i	
+L02	2	[PLAIN:[y/v]]	
+L02	3	[PLAIN:met]	
+L02	4	NULL	
+L02	5	d	
+L02	6	g	
+L02	7	[PLAIN:anen]	
+L02	8	[PLAIN:n[i].]	
+L02	9	k	
+L02	10	[PLAIN:vo]	
+L02	11	t	
+L02	12	[PLAIN:a]	
+L02	13	[PLAIN:e]	
+L02	14	i	
+L02	15	[PLAIN:en]	
+L02	16	t	
+L02	17	[PLAIN:a[?]]	
+L02	18	p	
+L02	19	[PLAIN:w[1/i]]	
+L02	20	d	
+L03	1	o	
+L03	2	UNM	?
+L03	3	UNM	?
+L03	4	p	
+L03	5	b	
+L03	6	UNM	?
+L03	7	UNM	?
+L03	8	UNM	?
+L03	9	NULL	
+L03	10	p	
+L03	11	c	
+L03	12	x	
+L03	13	UNM	?
+L03	14	UNM	?
+L03	15	NULL	
+L03	16	UNM	?
+L03	17	e	
+L03	18	d	
+L03	19	i	
+L03	20	i	
+L03	21	d	
+L03	22	m	
+L03	23	UNM	?
+L03	24	g	
+L03	25	x	
+L04	1	[PLAIN:[?]e]	
+L04	2	e	
+L04	3	[PLAIN:d[?]]	
+L04	4	UNM	?
+L04	5	[PLAIN:e]	
+L04	6	[PLAIN:v[o/r]o]	
+L04	7	[PLAIN:a[n/u]]	
+L04	8	[PLAIN:t[?]]	
+L04	9	UNM	?
+L04	10	[PLAIN:z[o/e]]	
+L04	11	[PLAIN:,]	
+L04	12	d	
+L04	13	[PLAIN:[?]t[?]]	
+L04	14	[PLAIN:un[g/ß]en]	
+L04	15	[PLAIN:[?]e[?]]	
+L05	1	UNM	?
+L05	2	x	
+L05	3	i	
+L05	4	d	
+L05	5	d	
+L05	6	m	
+L05	7	NULL	
+L05	8	UNM	?
+L05	9	k	
+L05	10	UNM	?
+L05	11	UNM	?
+L05	12	UNM	?
+L05	13	UNM	?
+L05	14	p	
+L05	15	b	
+L05	16	p	
+L05	17	UNM	?
+L05	18	UNM	?
+L05	19	UNM	?
+L05	20	d	
+L05	21	UNM	?
+L05	22	UNM	?
+L05	23	UNM	?
+L05	24	d	
+L06	1	[PLAIN:[?]m]	
+L06	2	[PLAIN:e]	
+L06	3	[PLAIN:n.]	
+L06	4	[PLAIN:[G/Ç]a[B/ss]en]	
+L06	5	[PLAIN:d[a/o]]	
+L06	6	t	
+L06	7	[PLAIN:[?]]	
+L06	8	e	
+L06	9	[PLAIN:e]	
+L06	10	o	
+L06	11	[PLAIN:[i/1]n]	
+L06	12	[PLAIN:[f/s][?]]	
+L07	1	NULL	
+L07	2	g	
+L07	3	t	
+L07	4	i	
+L07	5	k	
+L07	6	[PLAIN:.]	
+L07	7	UNM	?
+L07	8	f	
+L07	9	d	
+L07	10	b	
+L07	11	UNM	?
+L07	12	d	
+L07	13	m	
+L07	14	NULL	
+L07	15	o	
+L07	16	m	
+L07	17	g	
+L07	18	UNM	?
+L07	19	UNM	?
+L07	20	k	
+L07	21	UNM	?
+L08	1	[PLAIN:G[e]ff[e]r]	
+L08	2	UNM	?
+L08	3	[PLAIN:s]	
+L08	4	[PLAIN:.]	
+L08	5	[PLAIN:Fr[a]nc[e]]	
+L08	6	[PLAIN:wor[d]en]	
+L08	7	[PLAIN:r[a]]	
+L08	8	UNM	?
+L09	1	f	
+L09	2	i	
+L09	3	e	
+L09	4	UNM	?
+L09	5	UNM	?
+L09	6	UNM	?
+L09	7	d	
+L09	8	NULL	
+L09	9	UNM	?
+L09	10	k	
+L09	11	UNM	?
+L09	12	g	
+L09	13	o	
+L09	14	l	
+L09	15	NULL	
+L09	16	m	
+L09	17	[PLAIN:e]	
+L09	18	[PLAIN:r]	
+L09	19	UNM	?
+L09	20	o	
+L09	21	i	
+L09	22	k	
+L09	23	UNM	?
+L09	24	m	
+L09	25	s	
+L10	1	[PLAIN:man]	
+L10	2	[PLAIN:ir]	
+L10	3	[PLAIN:d,]	
+L10	4	[PLAIN:v]	
+L10	5	[PLAIN:äd]	
+L10	6	[PLAIN:ern]	
+L10	7	[PLAIN:zwei]	
+L10	8	[PLAIN:ma[h]l]	
+L10	9	[PLAIN:.]	
+L11	1	d	
+L11	2	o	
+L11	3	UNM	?
+L11	4	NULL	
+L11	5	m	
+L11	6	UNM	?
+L11	7	UNM	?
+L11	8	n	
+L11	9	m	
+L11	10	i	
+L11	11	NULL	
+L11	12	k	
+L11	13	z	
+L11	14	o	
+L11	15	i	
+L11	16	UNM	?
+L11	17	UNM	?
+L11	18	UNM	?
+L11	19	f	
+L11	20	UNM	?
+L12	1	[PLAIN:[S]agen]	
+L12	2	[PLAIN:vnd]	
+L12	3	[PLAIN:t[au]s[ent]]	
+L12	4	[PLAIN:zwei]	
+L12	5	[PLAIN:ma[h]l]	
+L12	6	[PLAIN:.]	
+L13	1	UNM	?
+L13	2	c	
+L13	3	f	
+L13	4	UNM	?
+L13	5	NULL	
+L13	6	g	
+L13	7	i	
+L13	8	d	
+L13	9	o	
+L13	10	k	
+L13	11	m	
+L13	12	UNM	?
+L13	13	d	
+L13	14	o	
+L13	15	c	
+L13	16	f	
+L13	17	z	
+L13	18	UNM	?
+L13	19	i	
+L13	20	UNM	?
+L13	21	d	
+L13	22	k	
+L13	23	e	
+L13	24	p	
+L14	1	[PLAIN:b[ur]]	
+L14	2	i	
+L14	3	UNM	?
+L14	4	UNM	?
+L14	5	[PLAIN:ren]	
+L14	6	[PLAIN:mussen]	
+L14	7	[PLAIN:dermaſſen]	
+L15	1	g	
+L15	2	UNM	?
+L15	3	UNM	?
+L15	4	UNM	?
+L15	5	UNM	?
+L15	6	[PLAIN:e]	
+L15	7	UNM	?
+L15	8	UNM	?
+L15	9	UNM	?
+L15	10	UNM	?
+L15	11	o	
+L15	12	UNM	?
+L15	13	UNM	?
+L15	14	i	
+L15	15	m	
+L15	16	i	
+L15	17	UNM	?
+L15	18	g	
+L15	19	UNM	?
+L15	20	UNM	?
+L15	21	d	
+L16	1	[PLAIN:das]	
+L16	2	a	
+L16	3	[PLAIN:w]	
+L16	4	[PLAIN:rer]	
+L16	5	[PLAIN:f]	
+L16	6	[PLAIN:rnc[k]]	
+L16	7	UNM	?
+L16	8	[PLAIN:t]	
+L16	9	[PLAIN:or]	
+L16	10	[PLAIN:e[?]]	
+L16	11	[PLAIN:g[?]]	
+L17	1	m	
+L17	2	NULL	
+L17	3	UNM	?
+L17	4	UNM	?
+L17	5	UNM	?
+L17	6	d	
+L17	7	UNM	?
+L17	8	UNM	?
+L17	9	i	
+L17	10	UNM	?
+L17	11	e	
+L17	12	UNM	?
+L17	13	o	
+L17	14	c	
+L17	15	f	
+L17	16	i	
+L17	17	UNM	?
+L17	18	UNM	?
+L17	19	[PLAIN:e]	
+L17	20	g	
+L17	21	m	
+L17	22	[PLAIN:e]	
+L17	23	UNM	?
+L17	24	[PLAIN:worden]	
+L18	1	UNM	?
+L18	2	m	
+L18	3	i	
+L18	4	k	
+L18	5	i	
+L18	6	UNM	?
+L18	7	[PLAIN:Der]	
+L18	8	[PLAIN:m]	
+L18	9	[PLAIN:m]	
+L18	10	[PLAIN:[abbreviated word, indistinct]]	

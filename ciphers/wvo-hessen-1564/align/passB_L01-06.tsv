@@ -1,0 +1,105 @@
+L01	1	clear	m[.]
+L01	2	clear	r
+L01	3	clear	R[o]u
+L01	4	clear	nen
+L01	5	clear	aucg
+L01	6	clear	i
+L01	7	clear	nfr
+L01	8	clear	an
+L01	9	clear	n[.]dt
+L01	10	clear	e[r],
+L01	11	cipher	small curled flourish/tittle mark at the line's right edge, cut off by the crop boundary
+L02	1	cipher	hooked-b / rho-like curl (P-shape with a small loop at top)
+L02	2	cipher	z-like curl with a short crossbar (slashed-z / yogh variant)
+L02	3	cipher	double-dagger
+L02	4	cipher	T-shape with a crossbar (numeral-7-like glyph with a bar)
+L02	5	cipher	gamma-like curl
+L02	6	clear	e
+L02	7	cipher	small cross with a foot (tau-like / h-with-crossbar variant)
+L02	8	cipher	hash (#)
+L02	9	cipher	numeral-2-like glyph
+L02	10	cipher	h-with-crossbar
+L02	11	cipher	capital Pi-like glyph (Π) / triple horizontal-bar (roman numeral III)
+L02	12	clear	E.
+L02	13	cipher	y-like curl
+L02	14	cipher	small cross with a foot (tau-like)
+L02	15	cipher	square with a dot
+L02	16	cipher	barred cross (upside-down T with a crossbar)
+L02	17	cipher	figure-8 / loop-d shape
+L02	18	cipher	elongated figure-8-like loop
+L02	19	cipher	cross (X)
+L02	20	cipher	slashed-z / numeral 3
+L02	21	cipher	H-like glyph with a crossbar
+L02	22	cipher	small triangle (Δ)
+L02	23	cipher	capital Pi-like glyph (Π) / "II"
+L03	1	cipher	figure resembling numeral 8 / loop-eight
+L03	2	cipher	M-shape with splayed legs (Aries-like M-legs)
+L03	3	clear	et (small ligature, uncertain -- could be a scribal and-mark rather than a word)
+L03	4	cipher	double-dagger with an extra bar
+L03	5	cipher	h-with-crossbar
+L03	6	cipher	loop-d shape / curl ("6"-like)
+L03	7	cipher	loop-d shape / curl ("6"-like), second instance
+L03	8	cipher	figure resembling numeral 8, second instance
+L03	9	cipher	y-like curl
+L03	10	cipher	gamma-like curl
+L03	11	cipher	two small numeral-like glyphs together (resembling "24", uncertain)
+L03	12	cipher	H-like glyph with a crossbar
+L03	13	cipher	figure-8-like loop with a small dot
+L03	14	cipher	small cross with a foot (tau-like)
+L03	15	cipher	hash (#)
+L03	16	cipher	capital Pi-like glyph (Π) / "III"
+L03	17	cipher	thin cross (X)
+L03	18	clear	en
+L03	19	cipher	figure-8 / loop-d shape
+L03	20	cipher	small circle with a tail (numeral-0-like glyph with a hook)
+L03	21	clear	a[s]
+L03	22	cipher	slashed-z / numeral 3
+L03	23	clear	w[1] (uncertain, small letter-numeral pair)
+L03	24	cipher	cross (X), larger, at the line's right edge
+L04	1	clear	reg[.] (uncertain, small flourish after "reg")
+L04	2	clear	d
+L04	3	clear	ge[v]roa[u]t
+L04	4	clear	olp
+L04	5	clear	zo[1] (uncertain -- "zo" followed by a numeral- or letter-like loop)
+L04	6	cipher	solid dark wedge/heart-shaped ink blot
+L04	7	clear	tunge[n]
+L04	8	clear	en
+L04	9	cipher	small loop/curl glyph (numeral-9-like or 'g'-loop)
+L04	10	cipher	partial glyph, cut off at the crop's right edge
+L05	1	cipher	R-like curl combined with a small loop ("R8"-like compound shape)
+L05	2	cipher	capital Pi-like glyph (Π) / triple horizontal-bar (III)
+L05	3	cipher	z-like curl
+L05	4	cipher	capital Pi-like glyph (Π) / triple horizontal-bar (III), second instance
+L05	5	cipher	T-shape / plain cross with a straight top
+L05	6	cipher	T-with-crossbar (Ŧ-like)
+L05	7	cipher	numeral-7-like glyph
+L05	8	cipher	hash-like cluster (‡ / #)
+L05	9	cipher	figure-8 / loop-d shape
+L05	10	cipher	hooked rho-like curl
+L05	11	cipher	m-shaped triple-hump glyph
+L05	12	cipher	small circle with a dot (o-with-dot, umlaut-like)
+L05	13	clear	e
+L05	14	clear	o[r] (uncertain, small cursive letters)
+L05	15	cipher	H-like glyph with a crossbar
+L05	16	cipher	small triangle (Δ)
+L05	17	cipher	H-like glyph with a crossbar, second instance
+L05	18	cipher	figure-8 / loop-d shape
+L05	19	cipher	gamma-like curl
+L05	20	cipher	delta-like curl
+L05	21	cipher	loop-a curl (small circle with a tail)
+L05	22	cipher	small curl (epsilon/comma-like)
+L05	23	cipher	gamma-like curl, second instance
+L05	24	cipher	gamma-like curl, third instance
+L05	25	cipher	wedge/lambda-like glyph
+L05	26	cipher	figure-8 / loop-d shape, second instance
+L05	27	cipher	cross shape, cut off at the crop's right edge
+L06	1	clear	m
+L06	2	clear	c
+L06	3	clear	n[.]: (small abbreviation-like cluster ending in a colon)
+L06	4	clear	gaben
+L06	5	clear	da
+L06	6	cipher	cross with a small loop/hook at the top (dagger-cross variant)
+L06	7	clear	e
+L06	8	cipher	circle with a cross inside (sun-circle / circle-cross sign)
+L06	9	clear	in
+L06	10	cipher	partial glyph/short stroke, cut off at the crop's right edge

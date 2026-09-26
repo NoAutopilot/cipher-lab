@@ -1,0 +1,23 @@
+# wvo-hessen-1564 f.23 (1109 cipher enclosure), decoded against willem-van-hessen-1567's
+# sibling key_174_nomenclator.tsv (NX-WVO174, 26 Sept 2026). Test only -- see NOTES.md gate
+# (a)/(b): coverage ~63-67%, real decode does not beat a 20-key-value-shuffle control on
+# tools/data/de16 4-gram score or word-cover. STATUS: open, park -- key does not transfer.
+# Grades: H 58, M 61, U 90. U = sign not covered by key_174's alphabet (incl. NULL/filler).
+L01	M[I]R R[O]U NEN AUC[G/SS] I[N]FR[AU]N[D]T E[R] [UNM] d
+L02	i [Y/V] MET [NULL] d g ANEN N[I]. k VO t A E i EN t A[?] p W[1/I] d
+L03	o [UNM] [UNM] p b [UNM] [UNM] [UNM] [NULL] p c x [UNM] [UNM] [NULL] [UNM] e d i i d m [UNM] g x
+L04	[?]E e D[?] [UNM] E V[O/R]O A[N/U] T[?] [UNM] Z[O/E] , d [?]T[?] UN[G/SS]EN [?]E[?]
+L05	[UNM] x i d d m [NULL] [UNM] k [UNM] [UNM] [UNM] [UNM] p b p [UNM] [UNM] [UNM] d [UNM] [UNM] [UNM] d
+L06	[?]M E N. [G/Ç]A[B/SS]EN D[A/O] t [?] e E o [I/1]N [F/S][?]
+L07	[NULL] g t i k . [UNM] f d b [UNM] d m [NULL] o m g [UNM] [UNM] k [UNM]
+L08	G[E]FF[E]R [UNM] S . FR[A]NC[E] WOR[D]EN R[A] [UNM]
+L09	f i e [UNM] [UNM] [UNM] d [NULL] [UNM] k [UNM] g o l [NULL] m E R [UNM] o i k [UNM] m s
+L10	MAN IR D, V ÄD ERN ZWEI MA[H]L .
+L11	d o [UNM] [NULL] m [UNM] [UNM] n m i [NULL] k z o i [UNM] [UNM] [UNM] f [UNM]
+L12	[S]AGEN VND T[AU]S[ENT] ZWEI MA[H]L .
+L13	[UNM] c f [UNM] [NULL] g i d o k m [UNM] d o c f z [UNM] i [UNM] d k e p
+L14	B[UR] i [UNM] [UNM] REN MUSSEN DERMASSEN
+L15	g [UNM] [UNM] [UNM] [UNM] E [UNM] [UNM] [UNM] [UNM] o [UNM] [UNM] i m i [UNM] g [UNM] [UNM] d
+L16	DAS a W RER F RNC[K] [UNM] T OR E[?] G[?]
+L17	m [NULL] [UNM] [UNM] [UNM] d [UNM] [UNM] i [UNM] e [UNM] o c f i [UNM] [UNM] E g m E [UNM] WORDEN
+L18	[UNM] m i k i [UNM] DER M M [ABBREVIATED WORD, INDISTINCT]

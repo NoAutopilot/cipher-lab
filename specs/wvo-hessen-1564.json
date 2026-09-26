@@ -1,0 +1,30 @@
+{
+  "slug": "wvo-hessen-1564",
+  "name": "WVO briefnr 1109, Willem van Oranje to Wilhelm IV, Landgrave of Hesse, 18 Sept 1564, cipher enclosure f.23",
+  "date": "18 September 1564",
+  "language_candidates": ["de"],
+  "ciphertext_source": "ciphers/wvo-hessen-1564/images/01109_p3.jpg (HSAM, Bestand 3II, Nassau-Niederlande, Korr. 1564-1565, f.23), line crops in images/crops/ (tools/iiif_lines.py). Transcribed this pass by two independent blind Sonnet subagent passes per batch of 6 lines (align/passA_*.tsv, align/passB_*.tsv); pass A used as the primary reconciled transcription for ciphertext.tsv (documented choice, full manual per-token reconciliation against pass B not completed given the box).",
+  "alphabet": "mixed clear German words and an invented cipher-sign system (not a real alphabet, not shorthand); test candidate: willem-van-hessen-1567/siblings/key_174_nomenclator.tsv (Orange's own cipher to the same recipient, 9 Apr 1567, 3 years later)",
+  "constraints": {
+    "sender": "Willem van Oranje (William of Orange)",
+    "recipient": "Wilhelm IV, Landgrave of Hesse-Kassel",
+    "enclosure_lines": 18,
+    "cipher_tokens_pass_a": 209,
+    "cipher_tokens_pass_b": 245,
+    "key_under_test": "willem-van-hessen-1567/siblings/key_174_nomenclator.tsv (20 alphabet letters a,b,c,d,e,f,g,h,i,k,l,m,n,o,p,r,s,t,x,z + 12 nulls + 24 word-nomenclator signs; grades H for 7 letters, M for 13, per its own header)"
+  },
+  "cheap_test_done": [
+    "NX-WVO174, 26 Sept 2026 (this worker): gate (a) coverage -- share of 1109's cipher-sign tokens whose plain-language shape description matches something in key_174's inventory (alphabet-class or null shapes), via a fixed deterministic classifier (align/classify.py, same rule set applied identically to every token so it cannot be tuned toward a preferred outcome). Pass A: 131/209 = 62.7%. Pass B: 165/245 = 67.3%. BOTH BELOW the brief's 70% coverage gate -- 'a different system: stop and say so'.",
+    "NX-WVO174, 26 Sept 2026: gate (b) reading -- decoded ciphertext.tsv with key.tsv (key_174's own values) via tools/decode_key.py, scored with tools/judge_plaintext.py's own NgramModel (tools/data/de16, a 4-gram German log-score) and its word-cover statistic, against 20 shuffles of the SAME 18 codes' VALUES (the shuffle changes which letter each code maps to; it does not touch which tokens are coverage-matched, so it is a real test of gate (b) only, not of gate (a) -- CLAUDE.md rule 3). Pass A: real score -1.578 vs shuffle range [-1.653, -1.567] (real does NOT beat shuffle max); real cover 0.175 vs shuffle range [0.166, 0.241] (real is BELOW shuffle mean 0.181). Pass B: real score -1.600 vs shuffle range [-1.652, -1.567] (real ~= shuffle mean -1.599, does not beat max); real cover 0.176 vs shuffle range [0.154, 0.190] (real close to shuffle mean 0.162, does not beat max). Both independent transcription passes agree: the 174 key does not read 1109 above a random relabelling of its own alphabet.",
+    "Verdict: PARK -- below unicity, 174 key does not transfer. Both gates (a) and (b) fail, both numbers side by side above, reproducible from align/build_and_test.py."
+  ],
+  "judge": {
+    "language": "de",
+    "letters_min": 100,
+    "letters_max": 2000,
+    "min_word_cover": 0.5,
+    "control_samples": 200,
+    "corpora": ["tools/data/de16/composed_enhg.txt"],
+    "corpora_note": "tools/data/de16 is the ONLY German-language corpus on disk whose period (Early New High German) matches this 1564 target (de19 is 1814-1817, de20 is 1880-1940) -- but per its own README it is 8.5KB of MODEL-COMPOSED pastiche prose written for n-gram statistics, 'NOT a historical source', a single file with no fold structure, so no per-fold reliability spread can be reported (CLAUDE.md rule 3's fold-count amendment) -- there is only one fold. A PASS or FAIL against it is informational only, not a calibrated historical-register judgment; it is used here only because the brief names it and because the real finding (gate a and b both fail) does not turn on this corpus's authenticity."
+  }
+}

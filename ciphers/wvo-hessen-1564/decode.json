@@ -1,0 +1,17 @@
+{
+  "ciphertext": "ciphertext.tsv",
+  "key": "key.tsv",
+  "format": "tsv",
+  "style": "spaced",
+  "include_clear": true,
+  "reading": "reading.txt",
+  "tokens": "reading_tokens.tsv",
+  "header": [
+    "# wvo-hessen-1564 f.23 (1109 cipher enclosure), decoded against willem-van-hessen-1567's",
+    "# sibling key_174_nomenclator.tsv (NX-WVO174, 26 Sept 2026). Test only -- see NOTES.md gate",
+    "# (a)/(b): coverage ~63-67%, real decode does not beat a 20-key-value-shuffle control on",
+    "# tools/data/de16 4-gram score or word-cover. STATUS: open, park -- key does not transfer.",
+    "# Grades: {grades_sorted}. U = sign not covered by key_174's alphabet (incl. NULL/filler)."
+  ],
+  "token_columns": [["line", "line"], ["pos", "pos"], ["sign", "raw"], ["value", "value"], ["grade", "grade"]]
+}
