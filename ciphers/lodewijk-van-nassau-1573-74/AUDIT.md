@@ -1055,3 +1055,74 @@ Requests (this session): archive.org 4 (print_check 2, advancedsearch 1, Bezold 
 (print_check 16, Glawischnig fts 4); www.googleapis.com 10 (print_check 8, by hand 2); api.openalex.org 8;
 api.crossref.org 8. No subagents. Files: `phrases.txt` (V8C block), `print-check-v8c.tsv`, `print-check-v8c-hosts.tsv`;
 IA caches in the scratchpad, not committed.
+
+## V8 second audit (A3): 5797 p6_spot4 (26 Sept 2026)
+
+Verifier V8-NA172-2 for LANE V8 (session_01YRuw3TCf7d1w85DLmYNnw4), 26 Sept 2026, 05:45-05:55 UTC (`date -u` read).
+Separate session from the solver lane (AX) and from V8-NA5797, V8-NA5797-2 and V8-NA172. Scope: V8C.5, the Cologne
+literature. Nothing decoded; no key, ciphertext, decode or reading file touched.
+
+### A3.1 Verdict: N4 lowered to **N2**
+
+| item | prior plaintext | prior decipherment | class | key |
+|---|---|---|---|---|
+| 5797 p6_spot4, code 172 "[le Conte Jean] zeuget diesen morgen Kölln" | **yes, in substance**: Lossen, *Der Kölnische Krieg* I (Gotha 1882), p.212: "Graf Johann aber brach in aller Stille am 22. Oktober nach Arnsberg auf zum Kölner Kurfürsten" -- the same day as 5797 ("Datum Dillenbergk, am 22sten Octobris Ao 1573", Groen IV CDXLIV) and the same person and errand that the blank plus Groen's clear words give | none located: Lossen does not quote or cite CDXLIV (no "IV, 217-226" citation anywhere in the volume; his Groen citations for 1573 are IV 63*, 127*, 294, 342, 350 and Suppl. 140*), does not fill the blank, and says of the one cipher letter he cites (Jan to Orange, 21 Nov 1573, Suppl. p.140*) "ist leider nicht entziffert" | **N2** (plaintext content known elsewhere; no prior mapping of this ciphertext to it found) | `period` (4614 decipherment), table `ours` -- unchanged |
+
+Why lowered: rule 10's N3/N4 need "no prior plaintext located". The blank carries one fact -- who set out from Dillenburg
+towards the Elector of Cologne on the morning of 22 Oct 1573 -- and Lossen printed that fact, day and all, in 1882, from
+the Dillenburg papers (his p.214 n.2 cites Dill. A. C. 368 fol. 25, Jan's own draft relation of the talks, and fol. 32,
+Jan's report of 1 Nov 1573, the file V8C.2 knew as STAW 171 C 368). V8C.2 had the October talks from Bezold and
+Glawischnig only in general ("im Oktober", "im Winter"); Lossen's exact day turns "consistent with the literature" into
+"the literature already says it". Our result is the mapping: a period key value (172) placed into Groen's one-code blank.
+That is an independent confirmation of Lossen from the cipher side, not new information. V8C's `text: known` for the
+letter stands; the spot is now `text: known` in substance too.
+
+Not a break of the reading. Lossen corroborates 172 = Count Johann (day, direction, subject in the singular), so the
+H grade of 172 in key_full and the M grade of the 5797 token are unaffected. Minor difference, not a conflict: Lossen
+says Arnsberg (the Elector's residence), Groen's clear text says "Kölln" (read as "to Cologne", i.e. the Elector).
+
+Correction to V8C.3: Lossen I **is** on the Internet Archive (four copies: `bub_gb_QnURAAAAYAAJ`, `derklnischekrie01lossgoog`,
+`derklnischekrie00lossgoog`, `bub_gb_bW0IAAAAQAAJ`, found by `title:(kölnische krieg)`; V8C searched by creator only).
+The "Kramer 1937" of V8C and of the brief is **Karl Heinrich Graff**, *Der Kölner Kurfürst Salentin von Isenburg* (1937;
+Google Books `e24-AAAAYAAJ` / `K5UQMwEACAAJ`, NO_PAGES; reviewed 1939 per CrossRef).
+
+### A3.2 Search log (Cologne family)
+
+| family | status | method | result |
+|---|---|---|---|
+| Lossen, Der Kölnische Krieg I (1882) | **searched inside** | IA djvu text of two copies (`bub_gb_QnURAAAAYAAJ` Fraktur OCR, `derklnischekrie01lossgoog` clean OCR), grep Groen/Prinsterer, Arnsberg, Oktober, zeuget/zeucht, diesen morgen, entziffert/chiffr, IV 21x/22x; pp.211-215 read | **p.212, 22 Oct departure of Graf Johann to the Elector** (A3.1); no quotation of 5797, no CDXLIV citation, no filled blank; "entziffert" 1 hit (Suppl. 140*, a different letter, "nicht entziffert") |
+| Lossen's other Salentin work (vol. II 1897; Masius letters 1886, `bub_gb_xj0OAAAAQAAJ`) | not read | vol. II covers 1582-86; Masius letters end with Masius's death (April 1573) | out of the October 1573 window by date; not opened |
+| Graff 1937 (Salentin monograph) | unreachable | Google Books keyed, country=US: NO_PAGES both records; IA creator search 0 | JSTOR row appended |
+| Kurköln/Salentin literature, open indexes | searched | OpenAlex keyed ("Salentin Isenburg Nassau 1573", 3 results: Neuss archive inventory 1897, Reichshofrat Antiqua 8, an inventory 2022); CrossRef (8 rows: Graff reviews 1939, Visitationsprotokolle 1569, noise) | nothing on Jan's 22 Oct journey or 5797 |
+| Semantic Scholar, HAL, Persée, CORE | not searched this pass | time box; V8/A2/V8C covered them for the letter; CORE_API_KEY unset | -- |
+| Phrase control and name phrase, Google Books | searched | `"zeuget diesen morgen"` (7 hits: 6 copies of Groen IV + one 1763 hymnal, unrelated); Salentin + "Graf Johann" + 1573 + Arnsberg (0) | only Groen prints the passage, blank as ever |
+| HHStAW Abt. 171 C 368 (Arcinsys Hessen) | unreachable by plain URL | `arcinsys.hessen.de` detail URL answers 302 (session/JS app); not pursued further | Lossen's footnote gives the file's content (Jan's draft relation, fol. 25; report of 1 Nov 1573, fol. 32) |
+| JSTOR | queued | 1 row appended (Graff/Salentin + Arnsberg + Oktober 1573) | never blocks a class on its own; the earlier V8C row is still queued |
+
+### A3.3 Safe and unsafe sentences (replace V8C.4)
+
+- **Safe:** "In the same letter (Dillenburg, 22 Oct 1573), the one-code blank Groen leaves before 'zeuget diesen morgen
+  Kölln' is valued as the name code 'le Conte Jean' (Count Johann of Nassau), from the contemporary decipherment of the
+  sibling letter WVO 4614, placed with our own letter table; the 5797 sign is read at a single pass (grade M). The fact
+  it supplies is already in print: Lossen, Der Kölnische Krieg I (1882), p.212, has Count Johann leave quietly on
+  22 October 1573 for the Elector of Cologne at Arnsberg. The cipher confirms Lossen; no prior decipherment of this blank
+  located (N2)."
+- **Unsafe:** anything in V8C.4's unsafe list, and in addition "no prior plaintext", "N4", "reveals who went to Cologne",
+  or any wording that presents the identity or date of the journey as information the cipher adds.
+
+### A3.4 Gate 2
+
+Second adversarial audit done for p6_spot4: **yes** (class lowered N4 -> N2). JSTOR rows open: the V8C row (Salentin +
+Johann von Nassau + 1573 + Köln) and this pass's row. Gate 2 for an outward post above N1 is met on the search side
+subject to those two rows; the post, if any, must use A3.3's sentence and cite Lossen p.212.
+
+### A3.5 Postmortem
+
+Failure: V8C searched Lossen by creator name only, concluded "not on IA", and read him by snippet; the title search found
+four full-text copies in one call. The brief's author name for the 1937 monograph (Kramer) was wrong (Graff), which would
+have sent a catalogue search astray. Corrections carried: `second-opinions/PROMPT-chatgpt.md` (dated note, A3.3 sentence
+replaces V8C.4's), SECOND-OPINIONS-QUEUE.tsv row SO-LODEWIJK-1573-74 (note). V8C.1's N4 and V8C.4's safe sentence are
+superseded by A3.1/A3.3.
+
+Requests (this session): archive.org 5 (advancedsearch 3, djvu 2); api.openalex.org 1; api.crossref.org 1;
+www.googleapis.com 3; arcinsys.hessen.de 1. No subagents. IA caches in the scratchpad, not committed.

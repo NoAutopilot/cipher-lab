@@ -50,3 +50,11 @@ morning to Cologne') is valued as a name code, 'le Conte Jean' (Count Johann of 
 decipherment of the sibling letter WVO 4614, the blank located with our own letter table; the sign in 5797 is read at a
 single pass (grade M); no prior decipherment of this blank located (N4). That Count Johann negotiated with the Elector
 of Cologne in October 1573 is already known (Bezold 1882; Glawischnig 1973)."
+
+Note (verifier V8-NA172-2, A3, 26 Sept 2026): V8C's N4 for the p6 blank is lowered to N2 (AUDIT.md A3). If re-queued,
+use A3.3's sentence instead of V8C.4's: "In the same letter (Dillenburg, 22 Oct 1573), the one-code blank Groen leaves
+before 'zeuget diesen morgen Kölln' is valued as the name code 'le Conte Jean' (Count Johann of Nassau), from the
+contemporary decipherment of the sibling letter WVO 4614, placed with our own letter table; the 5797 sign is read at a
+single pass (grade M). The fact it supplies is already in print: Lossen, Der Kölnische Krieg I (1882), p.212, has Count
+Johann leave quietly on 22 October 1573 for the Elector of Cologne at Arnsberg. The cipher confirms Lossen; no prior
+decipherment of this blank located (N2)."
