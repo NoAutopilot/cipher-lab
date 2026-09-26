@@ -90,71 +90,53 @@ identified, the catalogue's date and senders corrected. The "first verified N3" 
 Orange 1572 detector candidate also fell (partial decipherment printed 1842). Zero unique solves today; two
 over-claims prevented by the gates before anything left the repository.
 
-## LANE AX handoff (session_01VzK62xX92yKfnUD93zprD8), 26 September 2026, from 00:15 UTC (live)
+## LANE AX handoff (session_01VzK62xX92yKfnUD93zprD8), 26 September 2026, 00:15-04:35 UTC (closed at 446k context)
 
-Brief .claude/briefs/runs/2026-09-26-lane-ax-orchestrator.md; COMMON 2026-09-26-lane-ax-COMMON.md.
+Brief .claude/briefs/runs/2026-09-26-lane-ax-orchestrator.md; COMMON 2026-09-26-lane-ax-COMMON.md. 18 workers ledgered,
+184.54 dollars (plus AX-COMP2 and AX-REDERIV2 still live at close, not ledgered); orchestrator about 11 dollars.
 
-- **Premise correction, job 1 (00:19 UTC).** The harvest's 15 "not stated / not nominated" WVO letters were all triaged on
-  24 Sept (LANE N/N2/R2/R3/V2): 4503, 5194, 5200, 5207, 5213, 5218, 5221, 5222, 5799, 5810, 5811 and 10260 are printed in clear
-  in Groen (text known; 5200, 5549 PS N1; 4503, 5811 N0); 8246 and 10260 are found-solved folders; 5549's body (539 numerals,
-  the "verendertte" cipher) has no key after fit tests on 5204-5209, 5213, 5550, 5552, 5557, 5575 and a matched-control crib
-  run that failed its own control (J7). So key reuse on the pool is spent except two items:
-  (a) **5797** (22 Oct 1573): Groen IV CDXLIV prints it but notes "plusieurs passages n'ont pu etre dechiffres" (about seven
-  spots); the 1574 table (ours) reads the brothers' autumn-1573 "alte Ciffer" (J5S) and has never been applied to 5797 -> AX-5797.
-  (b) **5799** (3 Apr 1573, Groen IV CDIX in clear) and **4612** (6 Mar 1574, N3, no reading) are the two letters the table
-  does not read. Orchestrator fit check: values 1-120 grouped in blocks of five give IC 0.062 (4612) / 0.072 (5799) vs a
-  random-block null median 0.051, p95 0.057 -> probably the same block design with another letter order. AX-5799 aligns 5799
-  to Groen (key ours, 5799's text N1) and tries it on 4612 and the 5549 body with shuffled-key controls; a block-constrained
-  Opus cryptanalysis of 4612 via family_run.py only if that fails.
-- **Workers (dispatched 00:20 UTC, Sonnet):** AX-5797 session_01RfSNoU45Mqmh5Gk8gQjPGP (box 60); AX-5799 session_01AeQexCRuXtPoVQ3wFxrK6h (box 75); AX-BRO3 session_01UY47E7pTTfCD7tVDcrtYJy (box 75); AX-STEV session_01V91nNBXmbzPKu39Rs3Sojb (box 40).
-- **Round 1 results (00:31-00:42 UTC, all four stopped well inside their boxes).** AX-5797: key.tsv reads 5797 (six control
-  words beside the gaps, 0/120 shuffled hits), but all six of Groen's missing-subject spots sit on codes 124-217 the table has no
-  row for -> AX-NAMES. AX-5799: key_5799 78 codes (5 C) from p1 only; 4612 and the 5549 body fail a run-length gate whose control
-  is invariant under shuffling, so this is NOT a negative on 4612 (rule 3); 4612 stays open for a block-constrained Opus run after
-  AX-NAMES. AX-BRO3: 80 more thin-code observations, 11 agree / 0 contradict / 69 undecidable, percentile unchanged 5.0; NEAR row
-  updated (next: re-segment the 34 drifted appendix entries, not dispatched). AX-STEV: 3689 and 3813 printed in clear in Stevens
-  1888 (text known); 3753, 3784 newly named and 3803 re-categorised, items 12 not 8, text-known 2/12; L16 done -> AX-STEV2.
-- **Round 2 (dispatched 01:00 UTC):** AX-NAMES (Opus, session_01FUKBtJ4gn3r3mb6E1B7SLY, box 120): name codes >120 from 5810/5811/4503/5549 PS/5550-5557 glosses
-  against Groen, held-out control on 5811, then 5797 spots and 4610/4611/4616 U tokens. AX-STEV2 (Sonnet, session_0134PRrczWWoivtkjqpMm6FL, box 50). Round 1 sessions archived.
-- **Round 2 results (01:14-01:16 UTC).** AX-NAMES: codes 121-149 are nulls; 153 Pfalzgraf, 161 Landgraf, 171 Prinz zu Oranien,
-  202 Franckreich (5550/5557 period glosses), 154 Herzog von Sachsen, 200 Herzog von Alba (Groen at the 5797 cluster); its held-out
-  gate sat at ceiling and did not pass, so no merge. By lookup two of Groen's 5797 gaps take a gloss-attested value (p5 "und
-  [161 Landgraf] ist willens", p7 "[153 Pfalzgraf] helt sich wol"); 156, 172, 182 unread. AX-STEV2: 3753, 3784, 3803 printed in
-  clear in Stevens (text known); pro3055 5/12 text known, the rest are Haldimand-circle items with HMC paraphrases.
-- **Round 3 (dispatched 01:43 UTC):** AX-NAMES2 (Opus, session_01W4KMKWTRuNmpCUv451zkYg, box 90): key_full under the
-  orchestrator's per-class re-gate (brief, 01:42 decision) and re-decodes of 5797/4610/4611/4616; AX-GLOSS (Sonnet,
-  session_01Cx3EnnY1E8isoTx5MaoCDk, box 80): glosses over codes >120 in 4496/4614/7205/7206/7208/5801/5552/5557; AX-4612 (Opus,
-  session_01UTwKsUHBs6T3cMnHypSBRh, box 120): new tools/families/block_homophonic.py, control first; AX-HMC (Sonnet,
-  session_017XPFZSTXYEe8EbS1fpLgWf, box 45): pro3055's seven HMC items.
-- **Round 3 results (01:48-02:18 UTC).** AX-NAMES2: key_full (+22 rows, 0 regressions); 5797 gaps p5 "und [161 Landgraf] ist
-  willens" and p7 "[153 Pfaltzgraf] helt sich wol" take values from 5550's period gloss (H); 4610/4611/4616 U 541 -> 320.
-  AX-GLOSS: 192 Roi d'Espagne, 221 Hollande (4496 gloss); 156/172/182 (the other 5797 gaps) unglossed in 8 letters; 4614, 7205,
-  5801 carry full period decipherments. AX-4612: block/homophonic families all fail on 4612 with passing controls, but its
-  transcription agreed only 47.8% -- not a negative on the letter. AX-HMC: pro3055 7 remaining items read in HMC, decipherment
-  leads at PRO 30/55/11 and BL Add MS 21807; text-known 5/12.
-- **Round 4 (dispatched 02:26 UTC):** AX-MERGE (Sonnet, session_01NxxwHge1YefpeAtfgy344Y, box 40): key_full v2 (123/136 keep
-  key.tsv values; 128 NULL; +192, 221) and readings incl. 5549 PS; AX-COMP (Opus, session_01NLaiLofiue34WZbv3gUgX8, box 120):
-  4614/5801/7205 companion decipherments via interlinear_align.py; AX-4612TR (Sonnet, session_01WQbFqLnWqcUDcty8kWX4Uy, box 75);
-  AX-HMC2 (Sonnet, session_01SQos7GnZJKugHxc9kqdDme, box 45). After AX-MERGE: fresh-instance re-derivation of the 5797 spot
-  reading, AUDIT.md/SO propagation of the 4610/4611/4616 revisions, then 'for LANE V7: reading ready'.
-- **Round 4 so far (03:10 UTC).** AX-MERGE: key_full v2, 0 regressions, 5797 gaps with a value 2/6 (161 Landgraf, 153 Pfaltzgraf,
-  both H from the 5550 gloss); 192 is in 5549's body, not its postscript (orchestrator premise corrected). AX-HMC2: pro3055 parked at
-  5/12 text known -- the Haldimand-circle items' decipherments are cited in TNA PRO 30/55/11 (old numbering, not mappable) and BL Add
-  MS 21807; both need images a person orders. AX-REDERIV (Sonnet, session_01Xxh6zMHd5SLBu7kPk2ZGAU, box 50, from 03:10): fresh
-  rule-7 re-derivation, the 5550 gloss read over 153/161 from the leaf, AUDIT.md revision log + SO-LODEWIJK note. Still running:
-  AX-COMP (43 min, 4614 unit 1) and AX-4612TR (43 min). jan-van-nassau-1572-75 got an intake citation line (gate exits 0).
-- **03:37 UTC: reading ready posted for LANE V8** (WVO 5797 two gaps: "und [161 Landgraf] ist willens", "[153 Pfaltzgraf]
-  helt sich wol", H from the 5550 gloss read on the leaf; AX-REDERIV byte-identical re-derivation of 5797/4610/4611/4616; AUDIT.md
-  revision log for the N4 letters; flag: the other cited 153 run's gloss reads "Ertzhertzoge vnd graf"). AX-4612TR: p1 passes
-  80.1% (was 47.8%), p2 line-wrap misaligned, no v2 yet -> AX-4612TR2 (Sonnet, session_01NQeJ8XP8WZFygUnU43eYV3, box 60, from
-  03:38). AX-COMP still on 4614 at 70 min, 40.75 dollars (box to 04:26).
-- **04:01 UTC.** V8 started verifier V8-NA5797 (03:51) on the 5797 claim + the N4 class re-check. AX-COMP: 4614's period
-  decipherment gives 172 = le Conte Jean (a third 5797 gap, "[Graf Johann] zeuget diesen morgen Kölln") but conflicts with key_full
-  on 127/129/123/107/95/57 -- V8 told at 03:59 before its verdict. AX-MERGE3 (Opus, session_01Xi8ifejhB3BQmnYiA9tVoV, box 60): known-
-  answer test of each conflict on Groen-printed 5810/5811/4503, key_full v3. AX-COMP2 (Sonnet, session_01N7aHJSdzPiprYZF5GpiD8a,
-  box 90): 7205 by line crops. AX-4612TR2 running (box to 04:38). 5801 (maybe 5799's table) not yet started.
-- **Ledger:** 15 workers, 174.11 dollars. The two costliest (AX-4612TR 44.28, AX-COMP 57.31) both fed full pages to pass calls.
-- **For the parent:** nothing on the board yet from this lane.
+**Result.** WVO 5797 (Jan and Lodewijk van Nassau to Orange, Dillenburg, 22 Oct 1573): two of the blanks Groen IV CDXLIV left
+undeciphered read "[153 Pfaltzgraf] helt sich wol" and "und [161 Landgraf] ist willens" -- **N4 by V8-NA5797 (04:09, AUDIT.md
+V8.2-V8.6)**, key period (5550 interlinear gloss for the names) + ours (Lodewijk 1574 table), letter text otherwise N0 (Groen).
+4610/4611/4616 stay N4 after the key_full revisions (V8 confirmed). status.json row held by qa_flag until V8-NA5797-2 (second
+adversarial audit, session_01LojfFrWYJp3xMaRbwmKWtC, started 04:28) and a clean QA window. A third blank, p6 "[172 le Conte Jean]
+zeuget diesen morgen [155 Kölln, M]", comes from 4614's period decipherment via key_full v3; V8 classes it only after AX-REDERIV2.
+
+**Job 1 premise corrected (00:19).** 13 of the harvest's 15 letters were already triaged 24 Sept and are printed in clear in Groen;
+key reuse on the pool was spent except 5797's blanks and the unread 4612/5799.
+
+**Live at close -- AX2 adopts:** AX-REDERIV2 (Sonnet, session_018L6cN6FzsYC9oZb3VFaGk6, box 50 from 04:31): fresh re-derivation of the
+key_full v3 readings, 172 key-source check on the 4614 leaf, AUDIT.md "Revision log v3", SO-LODEWIJK note, then a 'for LANE V8:'
+line. AX-COMP2 (Sonnet, session_01N7aHJSdzPiprYZF5GpiD8a, box to 05:31, 7.98 dollars at 04:30): 7205 against its period
+decipherment by line crops; looking for the still-unread codes 156 and 182 (5797 p8/p7 blanks), 146, 150, 157, 187.
+
+**Keys and files (ciphers/lodewijk-van-nassau-1573-74).** key.tsv (1574 table, untouched); key_full.tsv v3 built only by
+axnames/build_key_full.py (--check): codes 121-149 mostly nulls, name codes from glosses (5550, 4496) and period decipherment
+(4614); 123 (l) and 129 (NULL) stay dual M -- orchestrator decision 04:31: no context rule until a letter with a period
+decipherment settles them in context. key_4614.tsv, key_5799.tsv (weak: 5 C of 78, p1 only), names.tsv, axgloss/, axcomp/,
+axmerge3/. Folder is 78 MB, over the 30 MB rule (V8 04:29): AX2 should keep manifests and shrink/relocate the 300-dpi 4612 renders
+and full-page crops.
+
+**Open leads, in order of expected value.**
+1. **4612 may read under the 1574 table after all.** v2 transcription (AX-4612TR2): French-word share under key.tsv 68.6% vs 20
+   value shuffles mean 41.5, max 61.3. Next: look at legibility run by run, then key_full v3 decode + judge + control. The earlier
+   AX-4612 block/homophonic negatives ran on the 47.8%-agreement transcription and are not tests of the letter.
+2. **5801** (28 May 1573, attached period decipherment pp.1-5, clear copy pp.7-9; Groen IV via dbnl): may be 5799's table, the key
+   4612/5799 would need if (1) fails. Crops cut at images_wv2/crops_comp/05801_*. Brief with line crops per pass call.
+3. **Remaining 5797 blanks** p7_spot6 (182) and p8_spot7 (156): AX-COMP2's 7205, then 5552/5557 leaves, 7206/7208 had no glosses.
+4. **5549 body** (Jan's "verendertte" cipher, 539 numerals): no sibling key found in 12 letters; 4614/7205/5801 are 1574 letters to
+   Lodewijk, not Jan -- low.
+5. **Brochado letter 134** (NEAR row updated 00:59): re-segment the 34 drifted appendix entries from images so 69 undecidable
+   thin-code occurrences can be read; not dispatched.
+6. **pro3055** parked partial at 5/12 text known (all five Cornwallis-Clinton items printed in clear in Stevens 1888; the Haldimand
+   items' decipherments cited in PRO 30/55/11 old numbering and BL Add MS 21807 -- images a person orders).
+
+**Lessons (ledgered).** (1) Full-page images fed to transcription pass calls cost about 10 dollars each (AX-4612TR 44.28,
+AX-COMP 57.31): cut line crops first. (2) Positional pass agreement is meaningless once passes wrap lines differently -- align by
+content (AX-4612TR2: "80.1/49.7" were really 88.3/74.3). (3) A held-out gate for a null-heavy map cannot fail; re-gate per class or
+on known answers (AX-NAMES -> AX-NAMES2; now in CLAUDE.md rule 3). (4) A control orthogonal to the statistic is a non-test (AX-5799;
+now in CLAUDE.md rule 3). (5) Check an orchestrator's own merge rule against known plaintext before applying it (AX-NAMES2 caught
+123/136). (6) Workers here finished far inside their boxes (6-24 min of 40-120) -- size by the job, not a round number.
 
 ## LANE ZX handoff (session_01MxueEQJUGF9PWJiYcVyvBM), 25 September 2026, 15:42-22:20 UTC (closed)
 
