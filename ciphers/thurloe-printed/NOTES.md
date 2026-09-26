@@ -2126,3 +2126,31 @@ to a JSTOR-QUEUE or LOCAL-QUEUE row. Its LOCAL-QUEUE catalogue-lookup steps (L19
 (26 Sept 2026); the reproduction request itself (`outreach/bodleian-rawl-a24-p4.md`) is already drafted and
 already on ASKS row 30. No free route remains; genuinely blocked on the owner's reproduction order. No change
 made.
+
+## 25. Local runner L19/L24 recheck (26 Sept 2026, PR 27, landed by PR-LAND-7)
+
+The owner's desk runner rechecked L19/L24 (PR 27, LOCAL-RUNNER-RECHECK-2026-09-26.md) and went further than
+the original passes: it opened all three MARCO "Connections" item records under the third volume part,
+**MS. Rawl. A. 24\*** (ark:/29072/x0f4752g9867, March 1655, 66 leaves, also "NOT AVAILABLE ONLINE"), not just
+A. 24/1 and A. 24/2. Two of the three carry March 1655 dates, matching Birch's month for the Stamford/Calais
+letter:
+
+| Date | A.24* shelfmark | Item | Records | Separated Materials note |
+|---|---|---|---|---|
+| 16 Mar 1655 | fols.75, 95, 96 | "Intercepted letter [professedly on commercial business] from one Johan Laurens..." to Jacob von Oorschott, "With a translation" | MARCO ark:/29072/x05q47rp5098; Archives 820474 | "For fol. 75, see MS. Rawl. A. 24/1." |
+| 7 Mar 1655 | fols.97, 109-112 | Four mercantile letters to Cornelius Vanderhoeve of Antwerp, signed Rob. Shawe, Zach. Gardiner and initials | MARCO ark:/29072/x0hh63sv97x3; Archives 820475 | "For fols. 97, 109-111, see MS. Rawl. A. 24/1." |
+| (undated) | fol.427 | "Prisoners bayled forth of his highness's Tower of London" | MARCO ark:/29072/x041687j33zv; Archives 820476 | none |
+
+Fol. 75 (16 Mar 1655 item) is new: it was not among the folios L24 already found moved from A.24/1 to A.24*
+(71-72, 87-91a-b, 95-96, 98a-b, 103, 106, 112, 145, 180, 182a-b, 192, 213-214a-b, 229-231a-b -- 95-96 is on
+that list, 75 is not, and this item's own note says fol.75 itself is still catalogued under A.24/1, only 95-96
+having moved). None of the three A.24* records names Stamford or Calais, or explicitly labels a cipher,
+decipherment or enclosure; "With a translation" is not by itself a decipherment. **The modern folio for
+Birch's "vol. xxiv p.73, 76" is still not established** -- this narrows the search (two candidate March-1655
+items, both intercepted/foreign correspondence, one touching fol.75) without resolving it. A separate
+collection-wide search (`archives.bodleian.ox.ac.uk` exact-phrase "Rawl. A. 24", 40 cards, 37 item + 3 volume
+records) found no additional Stamford/Calais/cipher/decipher text; "Translation" occurs in two cards (consistent
+with the two items above). Both volumes remain "NOT AVAILABLE ONLINE" per MARCO, consistent with L19/L24.
+Status and the reproduction request (outreach/bodleian-rawl-a24-p4.md, ASKS row 30) are unchanged: still with
+the owner. LOCAL-QUEUE.tsv rows L19 and L24 stay `done` (their own verdicts stand); this recheck is additional
+catalogue detail, not a new row.

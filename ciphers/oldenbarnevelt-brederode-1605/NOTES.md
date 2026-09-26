@@ -115,8 +115,10 @@ Digital edition text and page images: no login, no blocks, resources.huygens.kna
 
 ## Open (for whoever continues)
 
-- De Leeuw et al. 2024 "Keys with nomenclatures" (Cryptologia 48(2)) not yet read -- queue for
-  OpenAlex/Semantic Scholar abstract check or JSTOR-QUEUE.tsv.
+- De Leeuw et al. 2022 "Keys with nomenclatures" (Cryptologia 48(2), 2024) now read in full by the local
+  runner (LOCAL-QUEUE row L12, see "Local runner L12 recheck" below): no qualifying individual Dutch key
+  1600-1610 found in the paper itself; this closes the paper as a lead but does not rule out an individual
+  record in DECODE.
 - Den Tex's *Oldenbarnevelt* biography (dbnl.org, full text online) not yet read -- host TLS-failed twice
   this pass; retry from a fresh session/container.
 - "A.R.A., Holland 2613" (and "2589") does NOT match toegang 3.01.04.01's (Staten van Holland) own numbering
@@ -386,3 +388,35 @@ all >=1.5-1.8s apart, well under the brief's 150 cap, descriptive User-Agent. `w
 (toegang 3.01.04.01 landing page, its EAD XML, toegang 1.01.02 landing page, its EAD XML, one client-rendered
 search page that returned no usable results), well under the brief's 30 cap. `google.com`: 1 (bot-challenge
 page, not retried, not a documented route). No logins, no credentials, no blocks/429s encountered.
+
+## Local runner L12 recheck (26 Sept 2026)
+
+LOCAL-QUEUE.tsv row L12 (item 5 above's access gap), answered by the owner's desk runner, PR 27
+(LOCAL-RUNNER-RECHECK-2026-09-26.md, landed by PR-LAND-7): the exact Uppsala DiVA mirror PDF
+(`uu.diva-portal.org/smash/get/diva2:1718372/FULLTEXT01`) downloaded cleanly from a non-cloud IP, HTTP 200,
+application/pdf, 7,750,993 bytes, 44 pages (Megyesi, Tudor, Láng, Lehofer, Kopal, de Leeuw, Waldispühl,
+"Keys with nomenclatures in the early modern Europe", Cryptologia 48(2), 2024, DOI
+10.1080/01611194.2022.2113185; article pp.97-139, PDF pagination differs -- citations below use the PDF's
+own printed page numbers). PDF SHA-256 `5773415c2feacb746fafd524d904adcbe378f753ddc863712f3d177da803e27c`.
+
+All 44 pages text-extracted; case-insensitive search for `Dutch`, `Oldenbarnevelt`, `Brederode`,
+`States-General`, `States General`, `1600`, `1605`, `1610`, plus stems `Oldenbarnevel\w*`, `Brederod\w*`,
+`Staten`, `Holland` and the 1600-1610 date range: **no hits anywhere in the paper**. "Netherlands" occurs
+only in sample/archive descriptions, an affiliation and references. Three passages checked by eye against
+the extracted text: article p.8/PDF p.9 (Sec.4, "Sample of keys": 1,610 keys registered in DECODE by 14 June
+2021, images/metadata in DECODE, not itemised in the paper); article p.33/PDF p.34 (Sec.8.3, "Regional
+tendencies": the Netherlands is one of the groups excluded from that regional analysis for having "less than
+10 keys each" -- a statement about that analysis, not a total-sample count); article pp.40-41/PDF pp.41-42
+(Appendix, "List of Archives": the Dutch institutions listed are Koninklijk Huisarchief, Museum voor
+Communicatie and Nationaal Archief, The Hague -- institutions, not individual shelfmarks/correspondents/
+dates).
+
+**Bounded S-grade negative: no individually identified Dutch/Netherlands/Oldenbarnevelt/Brederode/
+States-General key dated 1600-1610 is named in this paper's text, tables or appendix.** This closes the
+paper itself as a lead (item 5 above, "access gap" resolved). It does not rule out an individual record
+surviving only in DECODE's own database (the paper cites DECODE as the primary source, not itself), which
+this recheck did not exhaustively search -- a DECODE search by date range/country remains open, per DECODE's
+listing-only access (CLAUDE.md Access playbook).
+
+LOCAL-QUEUE.tsv row L12: `done 26 Sept 2026`. Status stays `open`: no key or sibling found for this letter
+by any route tried to date.

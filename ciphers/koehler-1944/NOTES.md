@@ -51,7 +51,9 @@ was "checked against the Cryptologia printing" but explicitly counts only 1 corr
 differences are unexplained by that note -- possibly present already in whatever earlier Schmeh post or reader
 correction Bourdeau started from, not confirmed by this worker against Kahn's page or an image. Per rule 2 this
 worker has NOT changed ciphertext.txt to match either version; both readings are recorded here for whoever next
-gets an image of Cryptologia 5(2) p.69 (identified below) or the TNA original. `flag`ged in ROOM.md.
+gets an image of Cryptologia 5(2) pp.65-66 (GOLD-1A's corrected cite, confirmed again by publisher metadata,
+"Local runner L21 recheck" below; the article's true pagination, not the be-api `page_num` field's "69" noted
+at item 1 below) or the TNA original. `flag`ged in ROOM.md.
 
 ## Check-solved search log (this worker, 25 Sept 2026, date -u confirmed 16:47-16:58 UTC)
 
@@ -231,3 +233,11 @@ exit code: 0
   groups, the msg-3 header and length remain unverified against the printing. Access block, not a content
   finding; family A (archive lookup) for this row now needs a different route (Farago, ASKS 55b, or a NARA
   request) rather than a further IA borrow attempt.
+- **Local runner L21 recheck (26 Sept 2026, PR 27, landed by PR-LAND-7):** a third attempt, same IA item,
+  again failed -- "502 Bad Gateway"/"[Errno 111] Connection refused", a gateway failure distinct from the
+  print-disabled-tier block the first two attempts hit. The six groups and the msg-3 header/length remain
+  unread. New corroboration only: Taylor & Francis's own article metadata (DOI 10.1080/0161-118191855841,
+  https://www.tandfonline.com/doi/abs/10.1080/0161-118191855841) independently confirms David Kahn,
+  "GERMAN SPY CRYPTOGRAMS", Cryptologia 5(2) (1981), pp.65-66 -- the same pp.65-66 GOLD-1A already corrected
+  this file to; publisher access itself then stopped at Cloudflare's verification page, no article image
+  obtained. LOCAL-QUEUE row L21 stays `queued`; no new route past the print-disabled/gateway block found.
