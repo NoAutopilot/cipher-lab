@@ -15,3 +15,8 @@
 6. Email drafts are written unwrapped: one paragraph per line, blank line between paragraphs, no hard line breaks
    inside a paragraph, and the metadata header (status/to/subject) above a blank line. Hard-wrapped Markdown pastes
    into a mail client as broken lines (26 Sept 2026).
+
+
+## Project mailbox (26 Sept 2026)
+
+The owner created cipherlab.research@gmail.com and connected it to the parent through the Gmail connector on both accounts. The parent places each ready draft in the mailbox as a Gmail draft (from `outreach/mailbox/<slug>.json`, prepared by a worker with the recipient address verified on the institution's own page that day and the CONTRIBUTIONS.md row written first); the owner reviews and presses send, so the 23 Sept 2026 directive (emails stay the person's) is unchanged. The sign-off is substituted in the mailbox only; the repository never carries the owner's name (rule 9). Replies are read by the parent at check-ins and recorded in the draft's file and CONTRIBUTIONS.md before anyone answers; the parent that owns the draft's target answers, the other only routes.
