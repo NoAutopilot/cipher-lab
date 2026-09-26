@@ -702,3 +702,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T04:20Z	session_011ouUumGuE7kf1jQyeRoPpr	retrospective o done $3.35 D, archived	RETRO-2026-09-26c.md, 5 proposals; RETRO-APPLY-O pending (7e)
 2026-09-26T04:29Z	session_01VcUH8oeEMrrMHxssn2Yhxw	V8-NA5797	done 4.61, ledgered D, archived (5797 blanks N4)	
 2026-09-26T04:29Z	session_01LojfFrWYJp3xMaRbwmKWtC	V8-NA5797-2 (Opus, cap 10)	second adversarial audit, lodewijk 5797 (gate 2)	brief 2026-09-26-lane-v8-nassau5797-2.md; LANE V8
+2026-09-26T04:40Z	session_01AQwk5zWLCGvxyuPFhwaHDD	DECODE-ACCESS (Sonnet, cap 4)	access-mode field vs account role; bounced addressee	brief 2026-09-26-parent-decode-access-mode.md; parent 7e
