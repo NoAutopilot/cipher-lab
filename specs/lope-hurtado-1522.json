@@ -1,0 +1,29 @@
+{
+ "slug": "lope-hurtado-1522",
+ "name": "Lope Hurtado de Mendoza (Rome) to Charles V, 1522 -- RAH Salazar 9/26, DECODE R9634/R9646/R9649",
+ "language_candidates": ["es"],
+ "ciphertext_pending": "R9634: no transcription in dbourdeau/cyphersolver and not fetched this job (disk/git-only cap, no DECODE login/image hosts). R9646, R9649: transcriptions exist only embedded in Bourdeau's own read_r9646.md/read_r9649.md prose (not a standalone ciphertext.tsv); not extracted this job (see cheap_test_done).",
+ "alphabet": "code+mark: three-letter latin-trigram nomenclator codes (que=ton, de=zar, por=top, ...) plus a homophonic letter alphabet for spelled-out words, per Bourdeau's key_codes.tsv and key_1522_from1524*.tsv (dbourdeau/cyphersolver lopehurtado/); no 16th-c. Spanish corpus on disk for a judge score (es17/es17c are 17th-c. -- era mismatch, CLAUDE.md rule 3's pt17/pt18 lesson).",
+ "constraints": [
+  "key: period, ours (Bourdeau's) -- recovered by crib alignment of R9644's own ciphered leaf against its contemporary clear copy (ff. 241-242), extended with R9648, R9650, R9649's own clear copy, and a related 1524 key carried back. 49 rows graded confirmed in key_codes.tsv, 31 more probable.",
+  "R9649 already read 97% (86/89 tokens) by Bourdeau from the record's OWN contemporary clear copy (f. 268r) -- effectively found-solved for this job, not by us.",
+  "R9646 already read 84% (99/118 tokens) by Bourdeau, no crib of its own, using the full accumulated key (49-value key_codes.tsv PLUS values won from R9649's crib and the 1524 key) -- a strict superset of the 49-value key this job's brief named.",
+  "R9634 has no transcription anywhere in dbourdeau/cyphersolver (confirmed by grep of the whole clone); Bourdeau's own NOTES.md still lists it 'not-attempted... no reading file exists' as of the cloned commit."
+ ],
+ "cheap_tests_in_order": [
+  "1. Apply key_codes.tsv's 49 confirmed values to R9634, R9646 and R9649 via tools/decode_key.py, with a matched control (the same key against 3 random-digit strings of matching length/alphabet/unigram frequency, 5 seeds); report groups covered, target vs control. [This job's assignment -- see cheap_test_done: found not to be a live test for 2 of 3 records, and blocked for the third.]"
+ ],
+ "matched_control": "not run -- see cheap_test_done",
+ "cheap_test_done": {
+  "test": 1,
+  "result": "blocked / superseded",
+  "date": "26 Sept 2026",
+  "method": "bLOP (Sonnet, LANE B5 worker): cloned dbourdeau/cyphersolver (commit fc0c9e865d0fae67ca92d19750d2b09ab11972e0, 2026-09-25) and read only lopehurtado/ before deleting the clone. Found the brief's own premise confirmed stale for 2 of the 3 records: R9649 is already 97% (86/89 tokens) read by Bourdeau from the record's OWN clear copy (read_r9649.md), independent of R9644's crib; R9646 is already 84% (99/118) read using the 49-value key_codes.tsv PLUS additional values from R9649's crib and a 1524 key carried back (read_r9646.md) -- a strict superset of the 49-value key this test would apply. Re-running the 49-value-only key against either record's transcription cannot exceed coverage Bourdeau's own, larger key already achieved, and cannot resolve the tokens his fuller apparatus already left unread (no crib, isolated codes/spelled words with one unsettled sign). R9634 has no transcription anywhere in the cloned repository (grep -ril 9634, whole clone) and this job's cap is disk-and-git only (no DECODE login -- full-size DECODE images are account-wide blocked regardless per CLAUDE.md's Access playbook -- and no image hosts), so per the brief ('If a record has no transcription in Bourdeau's repository, stop at that record and say so') no test could be run on it this job. Full log: ciphers/lope-hurtado-1522/NOTES.md.",
+  "cost": "under cap",
+  "control": "not run -- no live target test exists for R9646/R9649 (superseded by Bourdeau's own fuller reads already on file) and R9634 has no transcription to test (blocked); a control without a target comparison is not a result (CLAUDE.md rule 3)",
+  "note": "What would actually move this target: (1) a transcription of R9634 from a DECODE image, tested against the FULL accumulated key, not just the 49-value subset -- a separate, larger job outside this cap; (2) the R9646 (19/118) and R9649 (3/89) unread remainders need better images (DECODE serves ~1700px/folio, per Bourdeau's own measured ceiling), not a key fix; (3) two further, wholly unread Hurtado letters at the BNE named in aaymeloglu's bne-ranked.md (MSS/18697/29, MSS/20212/27) that neither project has checked."
+ },
+ "judge": null,
+ "status": "partial",
+ "written": "26 Sept 2026, LANE B5 worker bLOP"
+}
