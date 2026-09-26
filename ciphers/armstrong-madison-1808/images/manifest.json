@@ -36,7 +36,16 @@
       "height": 2608,
       "bytes": 1180973,
       "sha1": "6787a336f18821853b2514d606d9030195fc9e77"
+    },
+    {
+      "file": "M34-014-0033.jpg",
+      "iiif_id": "lz/dc-metro/rg-059/603720/M34/M34-014/M34-014-0033.jpg",
+      "width": 3888,
+      "height": 3264,
+      "bytes": 1238722,
+      "sha1": "004e77471a50d24284ae05ac1561b2cee8e4a769",
+      "note": "ARM-POOL, 26 Sept 2026: fetched to cover the last ~37 numeral groups of the target letter that ARM-TR found missing from frames 29-32; not yet transcribed or diffed against ciphertext.txt (a successor job, not this one)"
     }
   ],
-  "not_fetched": "image 33 and other roll-14 frames outside the 29-32 range this brief names; the item has 664 images/1 file total"
+  "not_fetched": "other roll-14 frames outside the 29-33 range this brief names; the item has 664 images/1 file total; see pool/manifest.json (ARM-POOL, 26 Sept 2026) for the roll-14 survey's own low-res thumbnails and pool-candidate native fetches"
 }
