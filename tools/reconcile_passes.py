@@ -3,6 +3,7 @@
 
   python3 tools/reconcile_passes.py passA.tsv passB.tsv [passC.tsv] [--out-dir DIR] [--crops DIR]
           [--method nw|difflib] [--halves] [--line-sub PAT REPL] [--split-chars] [--keep-dots] [--keep-plain] [--rows]
+          [--sign-map FILE]
 
 Lesson answered (LEDGER.md, 23-24 Sept 2026): every reconciler (Raince, Gramont, Paleologue) spent its first dollars
 recomputing the same alignment before it could look at a single disagreement. Scripts read, models judge: this does
@@ -20,7 +21,10 @@ Normalising: a trailing '?' on a sign marks it uncertain (the pass flagged it); 
 flagged too (lower-case m, 'medium' in the Anhalt and Gramont passes, does not;
 --flag-conf sets the list). '.' dots and [PLAIN:...] / w: clear words are dropped unless --keep-dots / --keep-plain. --split-chars
 splits each group into single characters (unsegmented digit ciphers). --halves joins 'f30r_L01a' + 'f30r_L01b' into
-line 'f30r_L01' (half-line crops).
+line 'f30r_L01' (half-line crops). --sign-map FILE reads a glyph-convention table (header pass_reading, canonical,
+plus any other columns, e.g. evidence/count/grade -- ignored here) and substitutes each pass token's exact reading
+for its canonical value before alignment, applied to every pass equally (malsburg-hessen-1636's bMALG glyph_map.tsv:
+a reading pass calling the same stroke 'i' in one line and '1' in another stops looking like a disagreement).
 
 Alignment: per line, pass B (and C) aligned to pass A, the reference, by Needleman-Wunsch over signs (match +1,
 mismatch -1, gap -1), or by difflib's matching blocks with --method difflib (the measure fr2980-gramont
@@ -50,7 +54,19 @@ def norm_sign(t, a):
     if t in ('', '-'):
         return None
     flagged = t.endswith('?') and t != '[?]'
-    return t.rstrip('?') if flagged else t, flagged
+    sign = t.rstrip('?') if flagged else t
+    sign_map = getattr(a, 'sign_map', None)
+    if sign_map:
+        sign = sign_map.get(sign, sign)
+    return sign, flagged
+
+
+def load_sign_map(path):
+    """pass_reading -> canonical, from a TSV with header pass_reading, canonical, ... (extra columns ignored)."""
+    rows = [l.rstrip('\n').split('\t') for l in open(path, encoding='utf-8') if l.strip() and not l.startswith('#')]
+    head = rows[0]
+    pi, ci = head.index('pass_reading'), head.index('canonical')
+    return {r[pi]: r[ci] for r in rows[1:] if len(r) > max(pi, ci) and r[ci]}
 
 
 def load_pass(path, a):
@@ -159,8 +175,11 @@ def main(argv=None):
     ap.add_argument('--flag-conf', default=','.join(sorted(FLAG_CONF)), help='confidences that flag a sign')
     ap.add_argument('--rows', action='store_true', help='print one line per manuscript line')
     ap.add_argument('--no-write', action='store_true', help='print only (used by the test)')
+    ap.add_argument('--sign-map', dest='sign_map_file',
+                     help='TSV pass_reading<TAB>canonical[...]; substitutes each raw pass token before alignment')
     a = ap.parse_args(argv)
     a.flag = set(a.flag_conf.split(','))
+    a.sign_map = load_sign_map(a.sign_map_file) if a.sign_map_file else {}
     if not 2 <= len(a.passes) <= 3:
         ap.error('give two or three pass files')
     loaded = [load_pass(p, a) for p in a.passes]

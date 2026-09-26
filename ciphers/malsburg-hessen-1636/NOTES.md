@@ -365,3 +365,104 @@ would give consistent pairs; this pattern is transcription noise (pass agreement
 **a copy read through noise**, pending a settle on the crops. Consequence: `equivalences.tsv` is NOT a list of
 equivalences and must not feed a key (grade nothing from it). Useful instead: the second copy is a free extra witness
 when transcribing 507 -- transcribe ff.28-29 once, and use ff.30-31 only to settle disagreements.
+
+## Glyph conventions (bMALG, 26 Sept 2026)
+
+Intake gate re-run: `python3 tools/intake_gate_check.py malsburg-hessen-1636` -> `malsburg-hessen-1636: partial
+(line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0.
+
+**Question.** ff.3/12 (bMAL3, H-grade, N=352) have no lowercase `i` or `z` sign anywhere in the established
+alphabet (95 values: 2-3 digit numbers, single digits `4`/`7`, and the marks D/G/H/L/N/O/S/W/X/Y/#/Und). ff.28/30
+(bMALDUP)'s blind passes wrote `i` and `z` constantly (`ii`, `i6`, `zz`, `1z`...) and pass agreement fell to
+66.0%/76.5% (nw). Census of all 8 pass TSVs (`transcription/pass_{a,b}_{0003,0012,0028,0030}_r.tsv`): 0003/0012
+have zero letter-containing signs; 0028/0030 have ~150 distinct letter-containing readings, dominated by `i`/`z`
+compounds (`ii` 62, `zz` 61, `i6` 36, `6i` 32, `3i` 27, `5i` 26, `z6` 25, `7i` 23, `7z` 23, ... down to singletons).
+
+**`i` = digit `1` (H, shape-settled).** Both passes independently AGREE (ciphertext_draft H rows) on tokens like
+`ii` (0028 L07 c17), `i6` (0028 L08 c12, c27), `6i` (0028 L08 c30, c39) -- not just disagreements. Zoomed 10-12x
+on 0028 L08 cc.23-24 (`i0`, `i6`) against the line's own agreed digit `1` in `51`/`107` (cc.1-4, also H-agreed):
+same short vertical stroke with a raised dot/flick in both places -- this hand's numeral `1` carries a dot that
+makes it read as a lowercase dotted `i` to a blind transcriber, not a separate sign. Disagreements.tsv shows the
+identical pattern at token level, both leaves: `10/i0`, `16/i6`, `31/3i`, `51/3i`, `13/i3`, `149/i49`,
+`15/i5`, `193/i7i`, `148/i48` etc. -- one pass reads `1`, the other `i`, rest of the token matches, no
+counter-example found in either leaf. **Mapped `i`->`1` wherever the letter appears alone or fused with a digit
+(`ii`->`11`, `i6`->`16`, `6i`->`61`, ...), grade H.**
+
+**`z` = most likely digit `2`, grade M (not shape-settled).** `z` behaves differently from the established marks:
+D/G/H/L/N/O/S/W/X/Y/# never fuse with a digit anywhere in the H-grade ciphertext.txt (checked: all 20 occurrences
+across f.3/f.12 stand alone), but `z` fuses with a digit in the large majority of its ~330 occurrences (`4z`,
+`z6`, `zz`, `7z`, `z5`, `z9`...) -- not the same kind of sign. Disagreement pairs where the position and the other
+digit match and only `z`-vs-a-digit differs: 9 clean pairs read `2` in one pass, `z` in the other (`z5/25` x2,
+`z4/24`, `8z/82`, `z73/273`, `z00/200`, `z6/26`, `z9/29` x2) against 2 clean pairs against `3` (`z/3`, `4z/43`).
+Zoomed 10x on 0030 L14 (the densest run of z/2 disagreements) and on 0028 L06/L08's `4z`/`7z`: the stroke is a
+sharp angular diagonal, sometimes doubled (`zz`), distinct at this resolution from the established `2` shape
+(open curl-top) or `3` shape (double hump) elsewhere in the same lines, but the visual check could not confirm
+digit identity to H -- consistent with a period numeral `2` given a hooked/looped cursive tail in this denser
+hand (a documented period form), but not ruled out as a distinct 12th mark. Kept at **grade M: canonical `2`,
+majority hypothesis from the 9:2 disagreement-pattern count, not confirmed by shape alone.** A future job with a
+third pass or per-token image zoom (bMALDUP's own recommendation) should settle it properly; do not promote to H
+without that.
+
+**Compounds.** `glyph_map.tsv` mechanically substitutes `i`->`1`, `z`->`2` character-wise for every distinct raw
+pass reading of length <=3 that consists only of digits plus `i`/`z` (59 rows, 23 H / 36 M). Longer merges
+(`zz7i`, `z778`, `9z239`, `733i`, `iz55`...) are NOT mapped -- these look like token-boundary/segmentation
+disagreements between the two passes (bMALDUP already flagged `zz`+`7i` fusing into one pass's `zz7i` where the
+other kept two tokens), a different question from glyph shape, and mapping them would fabricate 4-5 digit "codes"
+outside the established 1-3 digit design. They stay open disagreements for a future per-token image settle.
+Signs mixing `i`/`z` with any other unvalidated letter (`yi`, `ib`, `4ud`, `bLS`...) are likewise left unmapped.
+
+**Degenerate-optimum check (brief's own warning).** Applying only the H-grade rows (`i`/`ii` and their digit
+compounds, `glyph_map_H_only.tsv`, 24 rows) already recovers real signal without touching the uncertain `z`
+rows -- ruling out that the gain is manufactured by folding everything into one bucket:
+
+| leaf | baseline (bMALDUP) | H-only (`i`/`ii` compounds) | H+M (full map, incl. `z`/`zz`) |
+|---|---|---|---|
+| f.28 (0028) | 328/497 = 66.0% | 357/497 = 71.8% | 364/497 = 73.2% |
+| f.30 (0030) | 355/464 = 76.5% | 359/464 = 77.4% | 368/464 = 79.3% |
+
+H-only accounts for most of the gain on f.28 (+5.8 of +7.2 points) and about half on f.30 (+0.9 of +2.8 points);
+`z` adds a further, smaller, still-real improvement on top, consistent with a real but less certain effect
+rather than one mapping doing all the work. `recon_0028/` and `recon_0030/` (disagreements.tsv,
+ciphertext_draft.tsv, agreement.tsv) are overwritten with the H+M run above, superseding bMALDUP's raw-noise
+draft; `equivalences.tsv`/`dup_align.tsv` from bMALDUP are untouched (out of scope, already flagged unusable by
+the orchestrator's check).
+
+**Case: D/d, V/v, N/n -- not significant, transcription noise.** Direct same-position evidence: 0030 L06 c3, pass
+A wrote `v`, pass B wrote `V` for the identical stroke (disagreements.tsv) -- the only clean case-only swap found,
+and it matches how `V` behaves everywhere else in this job's data (8 other occurrences, all capital, all
+standalone, all either agreed or off by a digit elsewhere in the line, never a segmentation change). `D`: 0028 has
+4 consistent capital `D` readings (both passes, 4 positions) matching the established mark; 0030's 2 lowercase `d`
+readings come from pass A alone with no `D`/`d` agreement from pass B at either position -- one-sided, read as
+pass-A noise on a hard leaf, not a genuine `d` sign. `N`/`n`: `N` is a well-established, frequently-agreed
+standalone mark (e.g. 0028 L08 c29, H); the 4 lowercase `n` occurrences sit in positions where the other pass
+reads something structurally unrelated (`i03`, other multi-char noise), not a same-stroke case swap like `V`/`v`
+-- **not** treated as a case variant of `N` and not merged into it (would be exactly the degenerate-optimum
+folding the brief warns against); left as unresolved noise. **Convention: canonical case is always the capital
+mark (D, N, V, ...); a lowercase reading of a known mark is transcriber noise, but a lowercase letter that does
+not correspond to any known mark in context (like most of the `n` instances) is not automatically that mark.**
+
+**Other marks noticed, out of scope for this job.** 0028/0030 also show standalone capital marks absent from the
+f.3/f.12 alphabet -- `V` (8x), `T` (11x), `K`/`R`/`B`/`E`/`F`/`M`/`C`/`Q` (2-4x each), and a capital `Z` (distinct
+from lowercase `z`, 4x, e.g. `Zoo`/`z00` disagreement at 0028 L14/0030 L14) -- plus a recurring compound
+(`du`/`Xu3`/`Xu5`, 3-4x, likely one more mark or abbreviation, not resolved here). These are a mark-inventory
+question for a future job, not this one; flagged here per rule 7 rather than investigated.
+
+**Instruction for the next transcription/pass subagent (paste verbatim):** "This leaf's cursive `1` is written
+with a raised dot and will look like a lowercase `i` -- read it as `1`. A sharp angular diagonal stroke, often
+doubled, that doesn't match any digit or the established marks (D,G,H,L,N,O,S,W,X,Y,#) may be the digit `2` in a
+hooked cursive form, or may be a separate sign -- transcribe it as `z` (not as `2`, not merged into the next
+digit) and let reconciliation apply the convention; do not guess between the two. Marks are always capital and
+always their own token, never fused to a digit (`D`, `N`, `V`, `G`, `H`, `L`, `O`, `S`, `W`, `X`, `Y`, `#`); if you
+write one lowercase, it will be corrected by convention, not treated as a different sign."
+
+**Tool.** `tools/reconcile_passes.py --sign-map FILE` (new): reads `pass_reading`/`canonical` columns from a TSV
+(other columns ignored) and substitutes the exact raw token for its canonical value in every pass before
+alignment, so a reading that only differs by this kind of glyph convention stops scoring as a disagreement.
+Offline test added (`tools/tests/test_reconcile_passes.py`, three checks: no-map baseline, mapped full agreement,
+draft carries canonical signs) -- `python3 tools/tests/test_reconcile_passes.py` exits 0.
+
+Files: `glyph_map.tsv` (59 rows), `glyph_map_H_only.tsv` (24-row H-grade subset, for the before/after check
+above), `recon_0028/`, `recon_0030/` (re-run with the full map), `tools/reconcile_passes.py`,
+`tools/tests/test_reconcile_passes.py`.
+
+Hosts: none (all work from images and pass TSVs already on disk).
