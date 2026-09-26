@@ -78,3 +78,13 @@ up in EM4). No subagents.
 ## Files
 
 None (no ciphertext transcribed — check-solved only).
+
+## Cross-reference: EM3 confirmed found-solved, 26 Sept 2026
+
+Parent worker EM3-CHECK (per SCOUT-OWN-3 D4) confirmed the correction candidate flagged above: EM3's Austen
+(25 Feb 1691, p. 224) and Sedley (3 Mar 1691, p. 225) letters, same shelfmark MS. Eng. misc. c. 382, both carry
+an EMLO manifestation-level note reading "Included in the manifestation is a letter written in cipher,
+deciphered interline, and the key to the cipher used" — stronger evidence than this file's own volume-title
+inference, since it is per-manifestation, not per-collection. Verdict found-solved, grade M (catalogue-based,
+not a direct image read — Digital Bodleian still has no image under this shelfmark). Full note: QUEUE.md,
+"EM3 check-solved, 26 Sept 2026".

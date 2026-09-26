@@ -3720,6 +3720,61 @@ GETs — the search backend for the named `ckcc.huygens.knaw.nl` host, see above
 curl hosts ≥1.5s apart, one request at a time. No logins, no credentials, no subagents, no image opened or
 transcribed, no novelty wording, nothing promoted or check-solved.
 
+### EM3 check-solved, 26 Sept 2026 (parent worker EM3-CHECK, per SCOUT-OWN-3 D4)
+
+**Verdict: found-solved (both letters).** EM3's two named letters -- Austen, 25 Feb 1691 (Bodleian MS Eng.
+misc. c. 382, p. 224) and Sedley, 3 Mar 1691 (same shelfmark, p. 225) -- are already deciphered in the primary
+source itself. This is not the EM5-style inference from the volume's collection-level finding-aid title;
+EMLO's own **manifestation-level** catalogue note for each of the two letters (fetched directly from
+`emlo.bodleian.ox.ac.uk/solr/all/select`, comment records `uuid_e32ea874-928c-4859-8f7c-9ef5a4008410` (Austen)
+and `uuid_bfd2072f-d4fa-4dfb-9a7e-b71f251a64f8` (Sedley), both `bibo_Note`) reads, verbatim and identically for
+both: **"Included in the manifestation is a letter written in cipher, deciphered interline, and the key to the
+cipher used."** Both manifestation records (`uuid_975125ed-...` p.224, `uuid_5e1beb32-...` p.225) are typed
+`dcterms_type: "Manuscript copy"`, consistent with the collection finding-aid's own title for c.382 as a whole
+("Volume of copies by John Wallis of political correspondence deciphered by him for the government... with
+keys to the ciphers used, 1669-70, 1688-95, 1702-3" -- confirmed by direct read of
+`archives.bodleian.ox.ac.uk/repositories/2/resources/3901` via the browser tool, Anubis-challenge-gated to
+curl, cleared by a real headless Chromium fetch this pass; language of materials "French", most correspondence
+"French ambassadors... to Louis XIV... or from Jacobites", extent 352 leaves).
+
+**The third EM3 item (Cardigan, 28-30 Jun 1690, p. 221) stays open/unconfirmed** -- its own manifestation
+comment (`uuid_00215910-ffdc-4e2f-b1bc-44746180acad`) reads only "Included in the manifestation is a letter
+written with implicit cryptographic features", with no "deciphered"/"key" wording, a materially different and
+weaker note than Austen/Sedley's. Not check-solved by this pass (the brief named only Austen and Sedley); do
+not promote or transcribe it without its own check-solved pass.
+
+**Print check (per brief item 2):** no whole-volume grep run this pass (CSPD 1690-91, HMC reports, Beeley &
+Scriba's Wallis edition, Macpherson's *Original Papers* were not fetched and read in full -- out of this $2/
+30-min box once the EMLO manifestation note settled the verdict). Two targeted Google Books queries
+(`"Wallis" "Eng. misc. c. 382"`, `"Austen" "Sedley" "James II" cipher`, both `&country=US`) found nothing
+naming this shelfmark's cipher content specifically -- one incidental hit each on an unrelated *Spectator*
+1986 "Austen"/"Sedley" combination and on *The Bodleian Library Record* 1962 (an accessions listing consistent
+with the finding-aid's own "Bought from Bristol Baptist College, 1962" line, not a cipher discussion). Both
+solver repositories (fresh shallow clones, grepped for "Eng. misc. c. 382", "Austen", "Sedley" in a Wallis/
+James II/1691 context) have no hit. **This print-check gap means the rule-10 N-class is not settled by this
+pass** -- a verifier session (or a future check-solved pass) still needs the four named volumes read in full
+before any N-class above N3 is claimed; what *is* settled is that this is not an open cryptanalytic target,
+because the cipher is already deciphered in the manuscript itself, by Wallis, in period.
+
+**Digital Bodleian (brief item 3):** confirmed again this pass, `digital.bodleian.ox.ac.uk/search/?q=%22Eng.
+misc. c. 382%22` returns "No items found" -- no free image online, consistent with the EM5 pass's same finding
+9 days earlier. No copy ordered.
+
+**Grade:** M, not H -- this rests on EMLO's own cataloguer's description of the manuscript's contents (Emma
+Grummitt, 18 June 2025, who evidently examined the item to abstract, date and transcribe its address/date-mark
+lines), not on this worker's own read of a page image (none exists online) or of Beeley & Scriba's edition.
+The note's specificity (per-manifestation, not per-volume; states cipher + interline decipherment + key all
+three present) is considerably stronger than EM5's volume-title inference, but is still a catalogue claim, not
+grade H or C.
+
+**Action:** EM3 should not be promoted to the board or given a campaign; the correct label is found-solved
+(M-grade, pending verifier N-class), the mirror case to EM5. No `ciphers/` folder opened (per brief). Requests
+this pass: `archives.bodleian.ox.ac.uk` 1 curl (403/Anubis) + 1 browser_fetch.js (200); `emlo.bodleian.ox.ac.uk`
+9 Solr GETs, ≥1.5s apart, no login; `digital.bodleian.ox.ac.uk` 1 browser_fetch.js; `googleapis.com/books` 2,
+`&country=US` + key; `github.com` 2 shallow clones (grepped, kept on disk, no hit). No subagents, no images
+opened beyond the two rendered HTML pages above, no novelty wording used (rule 10 -- N-class not assigned by
+this pass, that is a verifier's job).
+
 ### EMLO beyond EM1-EM3 (LANE N2 harvest of 24 September 2026)
 
 Row of `.claude/briefs/runs/2026-09-24-lane-n2-scEM2.md`. Widened the productive EMLO Solr route above beyond
