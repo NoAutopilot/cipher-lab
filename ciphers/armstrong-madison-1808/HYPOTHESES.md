@@ -811,3 +811,76 @@ postscript, already on file; mjm014590, 4 May 1806, "Partly in cipher"). mjm0145
 / 13% / top digit 0. Not a pool candidate. Page-1-only 2- and 3-page pool items (ARM-JEF step d) not read.
 **Family E after ARM-POOL2, ARM-LIV, ARM-JEF: no second letter in the target's code located in roll 14's docket,
 the Livingston letters, the Armstrong-Jefferson channel or the LC Madison Papers' cipher-tagged items.**
+
+## ARM-S3 symbol match (26 Sept 2026, LANE ARM2 worker ARM-S3): four more period systems, plus a calibration drift finding
+
+Full detail: `images/shorthand/specimens/manifest.tsv` (4 new specimen rows), `images/shorthand/specimens/symbol_match.tsv`
+(60 new rows: 12 Taylor1786_S3CAL calibration + 12 each for Blanchard1787, Annet1761, Holdsworth1770, Lewis1820),
+`images/shorthand/specimens/score_summary.py` (unchanged; reads the extended TSV). Runs ARM-S2's own method
+(step 2 of its brief, reproduced verbatim as this job's subagent prompt) against Blanchard, Annet, Holdsworth and
+Aldridge, and Lewis, the four systems from Tomokiyo's own list not yet tried, with a fresh independent Taylor
+re-run as the rule-3 calibration check ARM-S2's own brief asked for.
+
+**Specimens.** All four located on archive.org and saved (manifest.tsv has the full notes); three are genuine
+labelled alphabet/sign charts, not running prose (the ARM-S2 Gurney lesson applied): Blanchard's 1779 first
+edition has no character plate at all (its "characters" are typeset roman letters with word-meanings, not drawn
+strokes) -- the 1787 "Complete Instructor" edition's own engraved "Pl. 1, Alphabet" was used instead. Annet's 1761
+edition ("Short-Hand Perfected", nearest located to 1749) turned out to be a 300-cell numbered sign index (rows
+0-29 x columns 0-9), not a 26-letter phonetic alphabet -- flagged in the subagent prompt so freq_consistent was
+graded "n-a" throughout rather than forcing a letter-frequency reading onto a sign-number system (see the freq_score
+row below). Holdsworth and Aldridge's 1770 edition (nearest to 1766) gives a genuine geometric plate ("Position of
+the Organs of Speech... delineated"). Lewis's own alphabet was not found in the 1816 "Historical Account of the
+Rise and Progress of Short Hand" (that book is a survey of OTHER authors and never prints Lewis's own system,
+despite being the title/date named in this job's brief) -- the nearest Lewis-authored alphabet plate located is his
+1820 "The Art of Writing with the Rapidity of Speech", "Plate I".
+
+**Calibration finding (rule 3): this session's independent Taylor re-run drifted past the brief's own 0.1
+tolerance on freq_score.** A fresh subagent, given the identical prompt/method and the same Taylor specimen ARM-S2
+used, scored Taylor1786_S3CAL at shape_score=0.487, freq_score=0.500 (2 yes / 8 partial / 3 no), against ARM-S2's
+recorded shape_score=0.532, freq_score=0.289 -- shape_score drift 0.045 (within tolerance) but freq_score drift
+0.211 (over the 0.1 line the brief set). The mechanism is visible in the raw rows: this session's Taylor pass
+graded six of the twelve shapes (R5, R6, R8, R9, R10, R11) "n-a" -- diacritic/artifact readings that ARM-S2's own
+Taylor pass instead forced into "consistent" letter guesses (vowel-position dash/dot, p/j, w/u, v-type stroke) --
+so freq_score's denominator (which excludes n-a rows) shrank from 10 shapes to 6, and the surviving numerator
+happened to score higher. **Per the brief's own instruction, this makes every candidate result this session a
+"non-test at this drift", not an exclusion or an identification** -- the per-call variance in how liberally a
+subagent applies "n-a" is larger than the margin any candidate would need to clear to look identified.
+
+**All seven numbers, reported anyway (rule 3: "whatever they say"):**
+
+| system | shape_score | freq_score | yes/partial/no | verdict at this drift |
+|---|---|---|---|---|
+| Taylor1786 (ARM-S2's original, known negative) | 0.532 | 0.289 | 2/8/2 | on file, not re-tested |
+| Taylor1786_S3CAL (this session's calibration) | 0.487 | 0.500 | 1/8/3 | freq_score drift +0.211 vs ARM-S2 -- over tolerance |
+| Pitman_CONTROL (ARM-S2's, not re-run) | 0.429 | 0.295 | 3/4/5 | on file |
+| Blanchard1787 | 0.175 | 0.403 | 1/4/7 | non-test at this drift (also below Taylor calibration on shape_score alone) |
+| Annet1761 | 0.653 | nan (no letter-frequency claims scored consistent/inconsistent -- sign-index system, see above) | 6/5/1 | non-test at this drift; freq bar unscoreable regardless (rule 3: a control/candidate that cannot be tested on the axis in question licenses nothing) |
+| Holdsworth1770 | 0.267 | 0.172 | 0/9/3 | non-test at this drift (also below Taylor calibration on both numbers) |
+| Lewis1820 | 0.526 | 0.202 | 3/5/4 | non-test at this drift (also below Taylor calibration's freq_score, and only 0.039 above its shape_score) |
+
+**Reading the four candidates past the drift caveat, for the record.** Blanchard and Holdsworth score below this
+session's own Taylor calibration on both numbers -- neither has any resolving power here regardless of the drift
+question. Lewis's shape_score (0.526) sits within noise of the Taylor calibration (0.487) and its freq_score
+(0.202) is below it, so it does not clear rule 3's bar either. Annet's shape_score (0.653) is the highest of any
+system tried across both ARM-S2 and this session, driven by several genuine one-to-one hits (R3, R5, R6, R7, R10,
+R11 all "yes" against specific numbered cells) -- but Annet's own design (a lookup index for whole words/syllables,
+keyed by two-digit number, not a phonetic alphabet) means there is no independent frequency to test any assignment
+against, so the identification bar's second half is structurally unscoreable, not merely unmet. A numbered sign
+index of this kind cannot be excluded OR identified by the frequency half of this method at all; if this lead is
+worth pursuing further, the right next test is whether the target's marks fall into groups of a size consistent
+with two-digit sign codes (a positional/structural test), not another shape-vs-letter frequency pass.
+
+**Ten systems now checked in this family (Taylor, Pitman, Byrom, Gurney, Mavor, Weston, Macaulay, Blanchard, Annet,
+Holdsworth and Aldridge) plus Lewis's own 1820 alphabet: none identified.** Per CLAUDE.md rule 5, this stays
+`partial` (a control is on file, several systems only reach "non-test", not a control-backed FAIL on all counts),
+not `closed-negative`. The marks remain most plausibly a private/idiosyncratic symbol set or the code's own device,
+now checked against essentially the full period English-shorthand literature Tomokiyo's own list and this lane's
+searches surfaced. No numerals or ciphertext read or decoded this pass; rule 10 wording throughout.
+
+Requests: archive.org (search, metadata, djvu.xml/djvu.txt full-text, and page-image fetches across the four
+specimen searches) -- **43 requests this pass, 3 over the brief's 40-request cap**, all against archive.org's own
+API/download endpoints, >=1.5s apart, descriptive User-Agent, no 429/403 seen; the overage came from needing
+several page-image fetches per system to find the genuine alphabet plate among plain prose pages (Blanchard's
+first edition in particular took nine page/text fetches before its second edition's actual plate was found) --
+flagged here rather than hidden, per the good-citizen rule's own request-count reporting requirement. No other
+host touched. 5 Sonnet subagent calls (1 calibration + 4 candidates), one at a time.

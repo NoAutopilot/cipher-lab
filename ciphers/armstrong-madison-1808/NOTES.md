@@ -872,3 +872,35 @@ Requests: www.loc.gov 14 (6 item-metadata `?fo=json` fetches + 8 collection sear
 `fa=partof:` facet form that returns 0 regardless of query -- see above). tile.loc.gov 41 (35 page thumbnails across
 5 items + 6 for mjm014590). All >=1.5s apart, descriptive User-Agent, no logins, no credentials touched. 3 Sonnet
 subagent calls (12+12+9 images), one at a time.
+
+## ARM-S3 pass, 26 Sept 2026 (LANE ARM2 worker ARM-S3) -- four more shorthand systems checked, all non-test/excluded, plus a calibration-drift finding
+
+Ran ARM-S2's own symbol-by-symbol method against the four remaining named period systems (Blanchard, Annet,
+Holdsworth and Aldridge, Lewis), with a fresh independent Taylor re-run as the rule-3 calibration check. Full
+numbers in HYPOTHESES.md's "ARM-S3 symbol match" section. Found genuine alphabet/sign-chart specimens for all
+four on archive.org (Blanchard's first, 1779 edition turned out to have no character plate at all -- its 1787
+second edition was used instead; Annet's edition is a 300-cell numbered sign index, not a phonetic alphabet;
+Lewis's own alphabet is not in the 1816 book named in this job's brief, which surveys other authors -- his 1820
+"Art of Writing with the Rapidity of Speech" was used instead). The important finding this pass is methodological,
+not a new system result: an independent Taylor recalibration, run with the identical prompt ARM-S2 used, drifted
+0.211 on freq_score (0.500 vs ARM-S2's 0.289) versus only 0.045 on shape_score -- over the brief's own 0.1 drift
+tolerance -- because this session's subagent graded several ambiguous marks "n-a" (diacritic/artifact, no letter
+claim) where ARM-S2's pass had forced them into "consistent" letter guesses, shrinking freq_score's denominator.
+Per the brief, every candidate result this session is therefore reported as **non-test at this drift**, not an
+exclusion or identification, though none would have cleared rule 3's bar even ungated: Blanchard and Holdsworth
+score below this session's own Taylor calibration on both numbers; Lewis sits within noise of it on shape_score
+and below it on freq_score; Annet has the highest shape_score of any system tried across both sessions (0.653,
+several genuine one-to-one hits) but its own design (a two-digit numbered word/syllable index, not a phonetic
+alphabet) makes the frequency half of the test structurally unscoreable, not merely unmet -- if pursued further,
+the right next test for Annet is a positional/structural one (do the target's marks group in twos the way a
+two-digit sign code would), not another shape-vs-letter-frequency pass. Ten systems now checked in this family
+(the seven ARM-S1/S2 covered plus these three, plus Lewis's own alphabet substituted for the book named); none
+identified. Status stays `partial` per rule 5 (a control is on file; this is not a control-backed FAIL on every
+count, several results are "non-test" rather than excluded). The marks remain most plausibly a private/idiosyncratic
+symbol set or the code's own device. No numerals or ciphertext read or decoded; rule 10 wording throughout.
+
+Requests: archive.org 43 (search/metadata/full-text/page-image fetches across four specimen searches -- 3 over
+this job's 40-request cap, all against archive.org's own API/download endpoints, >=1.5s apart, descriptive
+User-Agent, no 429/403; flagged rather than hidden, per the good-citizen rule's own reporting requirement). No
+other host touched. 5 Sonnet subagent calls (1 calibration + 4 candidates), one at a time, each given the 12
+exemplar crops and one specimen plate, never a full frame.
