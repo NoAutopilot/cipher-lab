@@ -314,7 +314,11 @@ def warnings_for(role, signal, own_id=_UNSET):
       stamp by more than a couple of minutes: the stamp is machine-generated from time.gmtime() at append time,
       so a typed time is either redundant (matches) or wrong (an estimate written from memory) -- 26 Sept 2026,
       parent 7g's own take-over line wrote 'at 07:41 UTC' against its own 07:37 stamp and needed a second line to
-      correct it."""
+      correct it. On a 'took over'/'take-over'/'handoff'/'hand-off'/'hands over' signal specifically, this raises
+      SystemExit (REFUSED) instead of returning a warning: a take-over/handoff line has no content that ever
+      needs a typed digit (the stamp is its only clock), and the WARNING alone still let two such lines into
+      ROOM.md wrong the same day (parent 7g, then parent 7h, RETRO-2026-09-26h), each needing a second line to
+      correct. Every other signal shape keeps the WARNING, unchanged."""
     if own_id is _UNSET:
         own_id = _own_session_id()
     w = []
@@ -342,9 +346,16 @@ def warnings_for(role, signal, own_id=_UNSET):
         typed_minutes = int(m.group(1)) * 60 + int(m.group(2))
         stamp_minutes = int(time.strftime("%H", time.gmtime())) * 60 + int(time.strftime("%M", time.gmtime()))
         if abs(typed_minutes - stamp_minutes) > 2:
-            w.append(f"WARNING: signal text says 'at {m.group(1)}:{m.group(2)} UTC' but this line's own stamp is "
-                      f"{time.strftime('%H:%M', time.gmtime())} UTC -- the stamp is authoritative, drop the typed "
-                      f"time or use '(clock read)' with no digits (26 Sept 2026, parent 7g takeover line)")
+            msg = (f"signal text says 'at {m.group(1)}:{m.group(2)} UTC' but this line's own stamp is "
+                   f"{time.strftime('%H:%M', time.gmtime())} UTC -- the stamp is authoritative, drop the typed "
+                   f"time or use '(clock read)' with no digits (26 Sept 2026, parent 7g takeover line)")
+            if re.match(r"\s*(took over|take-?over|handoff|hand-off|hands over)\b", sig, re.I):
+                # 26 Sept 2026, RETRO-2026-09-26h: a WARNING here still let 7g's AND 7h's take-over lines into
+                # ROOM.md wrong, each needing a second line to correct -- a take-over/handoff line never needs a
+                # typed digit (the stamp is the only clock it has), so this is a refusal, not a warning.
+                raise SystemExit(f"REFUSED: {msg} -- a take-over/handoff line carries no typed digits, only "
+                                  f"'(clock read)'; rewrite and re-run")
+            w.append(f"WARNING: {msg}")
     return w
 
 

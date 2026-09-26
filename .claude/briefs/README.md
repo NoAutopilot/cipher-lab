@@ -112,3 +112,11 @@ applied unchanged, and three named cycle-3 briefs written from it.
   applies if the first unit runs hotter). A lane orchestrator that recalibrates a rate this way adds the new
   precedent here in the same close-out pass that writes its STATUS.md handoff, rather than leaving it for a
   retrospective to notice a second time.
+- **Run `print_check.py` on your own decoded phrases before posting "reading ready" (26 Sept 2026, V9-MOR,
+  rah-morillo-1817 item 3).** A verifier finding the plaintext already in print through `tools/print_check.py`'s
+  `ia-global` pass on the solver's own decoded phrases, when the solver never ran it, wastes the verifier's full
+  search-log pass on something a cheap script check would have shown first. Before the ROOM line that says
+  "reading ready" (or the equivalent status change to a candidate reading), run `tools/print_check.py <target>`
+  on 2-4 distinctive decoded phrases and cite the `ia-global` (and, where a key is present, `gbooks`/`openalex`)
+  result in the done line -- a "no hit" is still worth stating (it is evidence for the verifier's own search
+  log, CLAUDE.md rule 10), not just a "found it" worth reporting.

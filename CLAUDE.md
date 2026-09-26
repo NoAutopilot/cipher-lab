@@ -146,6 +146,18 @@ session and every subagent, cloud or local.
    negative on this target was drawn from an error band the transcription cannot back up: not a design
    exclusion, a non-test, and the row moves to `partial` (rule 5) with the named next step being a transcription
    pass to lower the measured error, not a further family attempt at the same noise levels.
+   A per-session calibration re-run against a known negative (the family_run.py "control first" discipline,
+   Usage item 8, applied to a job scored by a subagent rather than a script) stops the job before any candidate
+   is scored when the calibration itself misses its own pre-registered tolerance -- the same control-before-
+   target order `tools/family_run.py` already enforces mechanically, not a caveat written after the candidates
+   are scored anyway. Lesson of 26 Sept 2026 (ARM-S3, armstrong-madison-1808): the brief's own step 2 already
+   required a Taylor re-run and a 0.1 tolerance check before the four candidate calls, and the freq_score drift
+   (0.211) was known at that point to be over twice the tolerance -- but the brief told the worker to caveat the
+   result, not to stop, so all four candidate calls ran anyway (about USD 3.6 of the session's 12.67, 2.1x its
+   cap) to produce scores nobody could use. A job brief that scores several candidates against a per-session
+   calibration states the calibration step as a gate ("if the drift exceeds tolerance, stop here, log
+   'non-test at this drift' for the family, and do not run the candidate calls"), not as a caveat to attach to
+   candidate results computed regardless.
 4. **Grade every claimed reading per token:** H read from a key source, C from known plaintext, S cryptanalytic
    with a control, M uncertain, I inferred or repaired. Give the counts. No H or C means "cryptanalytic result".
    Two H-grade period decipherments that disagree on one code are a data conflict, not a transcription error to
@@ -760,6 +772,7 @@ nothing, not that the host is untried.
 | Library of Congress (loc.gov) | JSON search/item API (`?fo=json`); `tile.loc.gov` IIIF image tiles; `crowd.loc.gov` By the People transcriptions | none | `www.loc.gov` and `tile.loc.gov` yes, reliable, 200; `crowd.loc.gov` 403 to curl with both descriptive and browser UA | `www.loc.gov/search/?fo=json&q=...` | not specified | QUEUE.md ("Library of Congress digitised manuscripts", LANE N, 24 Sept 2026) |
 | NARA (catalog.archives.gov) | catalog search JSON, API v2 | requires an `x-api-key`, requested by email per NARA's own GitHub README; not set in this environment | HTTP-reachable (200) but functionally unusable without the key -- the plain search UI returns huge unfiltered, noise-dominated result counts | catalog search JSON needs the key, but the **public IIIF Image API v3 serves page images with no key** (ARM-IMG, 26 Sept 2026 08:19 UTC: render the item's search page with `tools/browser_fetch.js` to get the NAID and the image identifiers, then fetch each frame at its own native size; a size wider than native returns the app HTML at HTTP 200, so check the content-type); worked example NAID 188671566 (RG 59 M34 roll 14, frames 0029-0032) in ciphers/armstrong-madison-1808/images/manifest.json | 1.5s apart, one frame at a time | ciphers/armstrong-madison-1808/NOTES.md (ARM-IMG); QUEUE.md (free-key gap for search) |
 | Bodleian (digital.bodleian.ox.ac.uk) | IIIF/search for digitised manuscripts | none | yes, 200 direct | search/IIIF at digital.bodleian.ox.ac.uk | not specified | QUEUE.md; STATUS.md (`archives.bodleian.ox.ac.uk` is the separate Archives & Manuscripts catalogue, copy-order only) |
+| EMLO / Bodleian Solr (emlo.bodleian.ox.ac.uk/solr/all/select) | per-manifestation catalogue notes (`bibo_Note`), stronger than the collection-title inference | none | yes, plain GET, reliable | `emlo.bodleian.ox.ac.uk/solr/all/select?q=...` -- query the item's own manifestation record for `bibo_Note`, not just the finding-aid's volume title | ~1.5s apart | QUEUE.md "EM3 check-solved, 26 Sept 2026"; LEARN-2026-09-26-1313.md |
 | CUDL (cudl.lib.cam.ac.uk) | search JSON + IIIF manifests | none | inconsistent -- 403 to plain curl in one pass, answered real queries via the browser tool in an earlier pass the same day; zero cipher-yielding rows found either way | browser tool | not specified | QUEUE.md; STATUS.md; sources/solver-diffs/2026-09-24-lane-n-oxbridge-digital.tsv |
 | Beinecke (Yale, collections.library.yale.edu) | IIIF images | none | catalogue search is bot-challenged to plain curl; item-level IIIF fetch works via the browser tool once the item is identified (confirmed on two targets) | browser tool, item ID known first; `dataverse.yale.edu` hosts some material openly (CC0, no login) | <=15-40/session | QUEUE.md; ROOM.md; STATUS.md |
 | Folger (catalog.folger.edu, luna.folger.edu) | catalogue, LUNA image repository | none | **no** -- "Human Verification" bot-check page, 403/202-challenge/503 across every attempt, 24 Sept 2026 | none found -- email Folger reference for a digital image or LUNA link | n/a | QUEUE.md; QUEUE-scores.json; STATUS.md |

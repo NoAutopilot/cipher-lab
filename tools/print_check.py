@@ -27,6 +27,10 @@ phrasing ('cifra no descifrada', 'cifra non decifrata', 'nicht entziffert', 'chi
 deciphered', and language variants), then check whether the edition prints cipher groups at all before treating a
 hit as a candidate.
 
+Precondition for a "reading ready" ROOM.md line (26 Sept 2026, V9-MOR): run this on the decode's own distinctive
+phrases before posting that a reading is ready for a verifier, not only at the verifier step -- `--phrases` can
+point at a small ad hoc file of 2-4 decoded phrases when `phrases.txt` does not yet exist for the target.
+
 Per source:
   ia        a cached _djvu.txt (searched for in sources/ia-fulltext, tools/data, ciphers/*/, and --cache, plain or .gz)
             is searched exactly (normalised) and by proximity (all words in order within a short window, for OCR

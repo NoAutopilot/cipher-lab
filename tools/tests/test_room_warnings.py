@@ -50,16 +50,34 @@ def test_warnings():
     # no "please change"/"still says" at all -> no warning from this check
     assert W("w", "flag: status.json needs a look") == []
 
-    # typed clock time far from the line's own stamp -> WARNING; near or absent -> none
+    # typed clock time far from the line's own stamp, on a non-handoff signal -> WARNING; near or absent -> none
     import time as _time
     frozen = _time.struct_time((2026, 9, 26, 7, 37, 0, 5, 269, 0))
     old_gmtime = room.time.gmtime
     room.time.gmtime = lambda *a: frozen
     try:
-        w = W("parent 7g", "handoff: took over from 7f at 07:41 UTC 26 Sept 2026 (clock read)")
+        w = W("parent 7g", "done: closed target-a at 07:41 UTC 26 Sept 2026 (clock read)")
         assert any(s.startswith("WARNING: signal text says 'at 07:41 UTC'") for s in w), w
-        assert W("parent 7g", "handoff: took over at 07:38 UTC (clock read)") == []
-        assert W("parent 7g", "handoff: took over (clock read)") == []
+        assert W("parent 7g", "done: closed target-a at 07:38 UTC (clock read)") == []
+        assert W("parent 7g", "done: closed target-a (clock read)") == []
+
+        # a mismatched typed time on a "took over"/"handoff" signal REFUSES (SystemExit), not a warning
+        # (26 Sept 2026, RETRO-2026-09-26h -- the WARNING alone let two such lines into ROOM.md wrong the
+        # same day: parent 7g's "at 07:41 UTC" against a 07:37 stamp, then parent 7h's own take-over line)
+        for sig in (
+            "handoff: took over from 7f at 07:41 UTC 26 Sept 2026 (clock read)",
+            "take-over: from 7g at 07:41 UTC (clock read)",
+            "hand-off from 7g at 07:41 UTC (clock read)",
+            "hands over to 7h at 07:41 UTC (clock read)",
+        ):
+            try:
+                W("parent 7g", sig)
+                assert False, f"expected SystemExit for: {sig}"
+            except SystemExit as e:
+                assert str(e).startswith("REFUSED:"), e
+        # same signal shapes, but the typed time matches (or is absent) -> unaffected, no warning, no exit
+        assert W("parent 7g", "handoff: took over from 7f at 07:38 UTC (clock read)") == []
+        assert W("parent 7g", "handoff: took over from 7f (clock read)") == []
     finally:
         room.time.gmtime = old_gmtime
 
