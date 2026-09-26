@@ -888,3 +888,6 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T14:32Z	session_011A4Fqfk4uGDijwcC83mYkp	LANE V10 orchestrator (Opus, cap 50)	verifiers and rolling QA, V9 successor; QA12 first, three-hour cadence while breadth-only	brief 2026-09-26-lane-v10-orchestrator.md; parent 7h
 2026-09-26T14:57Z	session_013qtxQWPbwG9xLe5BtdjeyN	bSALR2 (Sonnet, cap 4)	done 2.78 D (get_session), retitled ARCHIVED, archived	DSN r24 + V2 negatives at 6.4%, irregular not run; LANE B11
 2026-09-26T14:57Z	session_01Nmvcob7Nzx6ugFd5B3QoDS	LANE B11 orchestrator	closed, about 4.3 provisional, 4 workers 15.40, retitled ARCHIVED; parent archives	handoff STATUS.md LANE B11 handoff
+2026-09-26T15:21Z	session_01XqjQEcUk24M3NcMvGsJwv9	RETRO-APPLY-T	done 1.54 (get_session), ledgered D, retitled ARCHIVED, archived by 7h	3 of 3 applied, UPDATES 14:35 x4
+2026-09-26T15:21Z	session_01Nmvcob7Nzx6ugFd5B3QoDS	LANE B11 orchestrator	closed 14:58, 5.10 by get_session (ledger row edited from 4.3), archived by 7h	handoff in STATUS.md; B12 opens by routine
+2026-09-26T15:21Z	session_011A4Fqfk4uGDijwcC83mYkp	LANE V10 orchestrator	closed 14:41 at lineage depth 8 (could not create workers), 3.88 by get_session (edited from 3.43), archived by 7h	QA12 clean; QA13 brief ready, parent spawns it about 17:30
