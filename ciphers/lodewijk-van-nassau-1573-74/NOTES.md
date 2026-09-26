@@ -1833,3 +1833,63 @@ words) and to re-run the fresh-instance re-derivation (rule 7) on the v3 reading
 Requests: none (disk only). No subagents. Files: `axnames/build_key_full.py`, `key_full.tsv`,
 `reading_{5797,4610,4611,4616}_full{.txt,_tokens.tsv}`, `revisions_for_audit.tsv`, `axmerge3/**`, this section.
 Novelty not classified (rule 10).
+
+## AX-REDERIV2: fresh re-derivation on key_full v3 and 172 key-source check (26 Sept 2026, LANE AX)
+
+Worker AX-REDERIV2 (Sonnet), brief `.claude/briefs/runs/2026-09-26-lane-ax-rederiv2.md`, started 04:32 UTC (clock
+read), box 50 min. Amendments applied: key is `key_full.tsv` v3 (after AX-MERGE3, 04:07 UTC); step 2 is the
+key-source check of 172 from 4614's period decipherment, not the 5550 gloss (already done by AX-REDERIV, v2,
+above); step 3's AUDIT.md section is "Revision log v3", from the regenerated `revisions_for_audit.tsv` and
+`axmerge3/diff_v2_v3.tsv`.
+
+**(1) Fresh-instance re-derivation (rule 7).** Freshness rule followed: step 1 read only `specs/lodewijk-5797.json`,
+`key_full.tsv`, `ciphertext_{5797,4610,4611,4616}.tsv`, `decode_{5797,4610,4611,4616}_full.json` and
+`tools/decode_key.py`; NOTES.md's AX-NAMES2/AX-MERGE/AX-MERGE3 sections and `revisions_for_audit.tsv` were opened
+only after step 1's outputs were written (below). `tools/decode_key.py ciphers/lodewijk-van-nassau-1573-74
+--config <decode_N_full.json> --check` for each of the four `decode_*_full.json` configs reported "reading up to
+date" for all four. Independently regenerated each reading into an isolated scratchpad mirror (a fresh directory
+holding only copies of the four `ciphertext_*.tsv` files, `key_full.tsv` and the four `decode_*_full.json`
+configs -- not the committed target directory, so nothing outside the mirror could be touched) and diffed
+byte-for-byte against the committed `reading_<n>_full.txt` / `_full_tokens.tsv`:
+
+| letter | tokens (v3 grade counts) | differing tokens (scratch mirror vs committed) | of which non-M |
+|---|---|---|---|
+| 5797 | 73 (C 14, H 2, I 2, M 44, U 11) | 0 | 0 |
+| 4610 | 1545 (C 1195, H 9, I 55, M 131, U 155) | 0 | 0 |
+| 4611 | 1393 (C 902, H 3, I 67, M 291, U 130) | 0 | 0 |
+| 4616 | 261 (C 208, I 1, M 27, U 25) | 0 | 0 |
+
+**Re-derivation PASSES for all four letters on v3**: `--check` reported "reading up to date" on every config, and
+the independent scratchpad-mirror regeneration diffed byte-for-byte identical (0 differing tokens) against every
+committed reading and token file. Rule 7's condition for the AUDIT-move gate is met with no exceptions; this
+supersedes AX-REDERIV's v2 re-derivation above with the same result on the v3 readings.
+
+**(2) Key-source check, code 172 (4614 period decipherment, per amendment).** Located the occurrence myself first:
+`ciphertext_4614.tsv` line `04614_p1_L02_c` pos 17 (value `172`, confidence M, `agree-flagged`). Viewed the cipher
+line crop (`images_wv2/crops_comp/04614_p1_L02.jpg`, pre-existing) -- pure numerals, no interlinear gloss, so the
+decipherment is on the separate companion leaf, not written above the cipher itself. Fetched
+`https://resources.huygens.knaw.nl/media/wvo/images/04000-04999/04614.pdf` once (reachability checked first, 200,
+descriptive UA, 1 request), rendered pp.5-6 (the companion plaintext decipherment leaf, per `decipherment_4614.txt`'s
+own header) with `pdftoppm` (installed this session via `apt-get install -y poppler-utils`, no binary present
+before) at 200dpi, 1654x2339 px, under the 2500px crop convention. Read the relevant line myself, before opening
+AX-COMP's `decipherment_4614.txt` or `key_4614.tsv`: "...est party pour Francfort. on il trouvera mon frere. le
+Conte Jean lequel est allé pour entendre la charge du sieur [Fergonse?]..." -- the words immediately following
+"mon frere" and preceding "lequel" are **"le Conte Jean"**. This independently confirms `key_full` v3's H-graded
+value for 172 (172 = le Conte Jean, AX-COMP/AX-MERGE3). Crops: `images_wv2/crops_rederiv/04614_decipherment_p5_full.jpg`
+(full companion leaf), `images_wv2/crops_rederiv/04614_decipherment_p5_L06_zoom.jpg` (zoomed line).
+
+**(3) AUDIT.md and SECOND-OPINIONS-QUEUE.tsv.** Appended an append-only "Revision log v3" section to AUDIT.md:
+updated per-letter counts from the regenerated `revisions_for_audit.tsv` (259 rows: 226 NULL, 33 word/name, +10
+word/name since v2's 23), the 2 value-changed rows (172, individually) plus the 28 grade-only rows
+(codes 129, 95) from `axmerge3/diff_v2_v3.tsv`, the orchestrator's 123/129 context-rule decision (no context
+rule adopted; both stay dual readings graded M until a letter with a period decipherment settles them in
+context, verbatim per the brief), a note that p6_spot4 (172) supersedes the V8 audit section's "not read" listing
+for that spot, and a note for the verifier. No N-class changed. Appended one sentence to
+`SECOND-OPINIONS-QUEUE.tsv` row SO-LODEWIJK-1573-74's last column (v3-specific, alongside the existing v2 note).
+
+Hosts: `resources.huygens.knaw.nl` 1 request (04614.pdf), descriptive UA, HTTP 200 (reachability checked first).
+No other hosts. No subagents.
+
+Files: this section; `images_wv2/crops_rederiv/{04614_decipherment_p5_full.jpg,04614_decipherment_p5_L06_zoom.jpg}`;
+`AUDIT.md` (append only); `SECOND-OPINIONS-QUEUE.tsv` (one cell). Novelty not classified (rule 10); no N-class
+changed (out of scope, per the brief).
