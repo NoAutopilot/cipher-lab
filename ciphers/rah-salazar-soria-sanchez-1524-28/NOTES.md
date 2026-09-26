@@ -458,3 +458,8 @@ one-retry rule already exhausted by the two attempts landing as one logical try)
 WebSearch: 2 queries. No DECODE login, no image opened, no transcription, no novelty wording (rule 10).
 
 queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.
+
+## JSTOR runner, 26 Sept 2026
+
+- `"Lope de Soria" AND "Alonso Sánchez" AND "Carlos V" AND cifra`: no relevant hit (0 results, none about the letter).
+- `"Colección Salazar y Castro" AND "en cifra"`: no relevant hit (0 results, none about the letter).

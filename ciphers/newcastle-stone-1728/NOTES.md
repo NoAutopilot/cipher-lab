@@ -87,3 +87,14 @@ left as the next worker's first move). `github.com`: shared shallow clone with t
 Discovery calls (out of this brief's hosts). No Google Books calls (queries logged above as pending).
 
 queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.
+
+## JSTOR runner, 26 Sept 2026
+
+- `"Andrew Stone" AND Newcastle AND 1728 AND cipher`: no relevant hit (1 result, none about the letter).
+- `"Stanhope" AND "Walpole" AND "private letter" AND 1728`: one **candidate, unread, reread needed** (the
+  runner's browser was not logged in to JPASS on this run) -- Basil Williams, "The Foreign Policy of England
+  under Walpole (Continued)", The English Historical Review 16(62), 1901, pp. 308-327,
+  https://www.jstor.org/stable/548655 (blocked: "This is a preview. Log in through your library", whether pp.
+  308-327 discuss the 19 December 1728 note could not be determined). Requeued in JSTOR-QUEUE.tsv, not `done`;
+  see ASKS.md. Context only, not read: Thompson 2006 (stable/10.7722/j.ctt14brtmp.13), Hatton 2001
+  (stable/j.ctt1bh4cbj.15).

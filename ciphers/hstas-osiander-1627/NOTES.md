@@ -80,3 +80,8 @@ Host requests this section: archive.org 1 (advancedsearch, 121 hits, no further 
 Pregizer Vorwort), WebSearch 3.
 
 queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.
+
+## JSTOR runner, 26 Sept 2026
+
+- `"Lukas Osiander" AND Diarium AND Württemberg AND Geheimschrift`: no relevant hit (0 results, none about the letter).
+- `"Diarium Rerum Wirtenbergicarum et Variarum"`: no relevant hit (0 results, none about the letter).

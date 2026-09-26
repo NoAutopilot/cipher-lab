@@ -311,3 +311,9 @@ Napoleon, Dantzig, 6 Nov 1813). Status unchanged: `open`, no key, no cryptanalyt
 Requests this section: persee.fr 17 (6 page JPGs + 9 OCR fragments + 2 retries), >=1.8s apart,
 browser-style UA, no 429/403. file_shrink_guard clean on NOTES.md and images/persee/*.
 
+## JSTOR runner, 26 Sept 2026
+
+- `"Berthier" AND "Neufchâtel" AND 1812 AND chiffre`: context only, no hit about the letter -- Louis Madelin,
+  "Les lettres de Napoléon à Marie-Louise", Revue des Deux Mondes 25(4), 1935, pp. 749-781,
+  https://www.jstor.org/stable/44847985.
+- `"maréchal Berthier" AND "22 décembre 1812"`: no relevant hit (0 results, none about the letter).

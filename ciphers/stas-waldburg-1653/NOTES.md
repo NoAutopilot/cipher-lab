@@ -82,3 +82,8 @@ Host requests this section: archive.org 3 (advancedsearch + metadata + djvu.txt 
 archive.org identifier is volume 3 and its year range).
 
 queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.
+
+## JSTOR runner, 26 Sept 2026
+
+- `"Waldburg" AND "Christoph Karl" AND 1653 AND Geheimschrift`: no relevant hit (0 results, none about the letter).
+- `"Truchsessin Maria Walburga" AND Essen`: no relevant hit (0 results, none about the letter).

@@ -114,3 +114,8 @@ it directly; REQUEST.md's GLA copy-order route (for the two shelfmarks themselve
 question) stands unchanged and blocked, waiting on the owner.
 
 queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.
+
+## JSTOR runner, 26 Sept 2026
+
+- `"Claudia de Medici" AND "Baden-Baden" AND 1633 AND Geheimschrift`: no relevant hit (0 results, none about the letter).
+- `"Escher von Binningen" AND Breisach AND Aldringen`: no relevant hit (0 results, none about the letter).

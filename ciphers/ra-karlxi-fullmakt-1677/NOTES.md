@@ -198,3 +198,10 @@ further." Recommend: re-run the standard check-solved sweep's edition-search ste
 rather than treating the edition question as still fully open.
 
 queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.
+
+## JSTOR runner, 26 Sept 2026
+
+- `"Karl XI" AND fullmakt AND 1677 AND chiffer`: no relevant hit (0 results, none about the letter).
+- `"Sverges traktater med främmande magter" AND 1677`: context only, no hit about the letter -- Svante Norrhem,
+  "The uses of French subsidies in Sweden, 1632-1729" (book chapter, Subsidies, Diplomacy, and State Formation
+  in Europe, 1494-1789), 2020, pp. 93-117, https://www.jstor.org/stable/jj.29685549.9.

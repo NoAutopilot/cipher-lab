@@ -70,3 +70,8 @@ straightforward key application.
 24 Sept 2026: no personal data logged here.
 
 queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.
+
+## JSTOR runner, 26 Sept 2026
+
+- `"Mauritz Vellingk" AND Hamburg AND 1713 AND chiffer`: no relevant hit (0 results, none about the letter).
+- `"Bremen-Verden" AND "neutralitetstraktaten 1713"`: no relevant hit (0 results, none about the letter).

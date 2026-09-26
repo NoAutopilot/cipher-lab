@@ -80,3 +80,8 @@ step (a named search of general coup historiography) was not attempted either, f
 risk stays open, unclosed. REQUEST.md (Riksarkivet reading-room copy order) stands unchanged.
 
 queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.
+
+## JSTOR runner, 26 Sept 2026
+
+- `"Crusenstolpe" AND 1809 AND chiffer`: no relevant hit (0 results, none about the letter).
+- `"spionrapporter" AND "revolutionen 1809" AND Ericsberg`: no relevant hit (0 results, none about the letter).

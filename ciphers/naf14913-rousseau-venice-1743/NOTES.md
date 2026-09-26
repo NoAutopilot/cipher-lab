@@ -120,3 +120,31 @@ owner's own Cairn access for the article itself, plus a WorldCat check for Labro
 target's `open` status or its "do not promote" recommendation pending those reads.
 
 queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.
+
+## JSTOR runner, 26 Sept 2026
+
+Four queries run (ChatGPT JSTOR runner, [JSTOR-2026-09-26-2013], PR 28). The runner's browser was **not
+logged in to JPASS** on this run, so three of the four candidate hits below could not actually be read online
+(JSTOR showed a "Register for a free account" prompt or "This is a preview. Log in through your library"
+instead of the reader) -- requeued in JSTOR-QUEUE.tsv as "reread needed", not `done`. See ASKS.md (row filed
+this session) for the owner to re-log the runner in and re-fire, or read the four blocked candidates himself.
+
+- `"Montaigu" AND "Rousseau" AND "Venise" AND (chiffre OR déchiffrement OR "dépêches")`: two **candidate prior
+  print, unread** -- Antoine Hatzenberger, "Correspondance diplomatique de Jean-Jacques Rousseau: L'initiation
+  à l'art politique dans les 'Dépêches de Venise'", Archives de Philosophie 78(2), 2015, pp. 323-342,
+  https://www.jstor.org/stable/24719303 (blocked: "Register for a free account"); M. Thomas, "Nouvelles
+  acquisitions latines et françaises du Département des manuscrits de la Bibliothèque nationale pendant les
+  années 1965-1968", Bibliothèque de l'École des chartes 127(1), 1969, pp. 87-212,
+  https://www.jstor.org/stable/42957196 (blocked: preview/library-login wall) -- the Thomas article covers
+  NAF 14913's acquisition by the BnF, the Hatzenberger article's title names the "Dépêches de Venise" directly.
+  Neither has been read; this is a search result (rule 10), not a verdict. Context only, not read: Delon 2020-21
+  (stable/28022594), Roche & Launay 1968 (stable/40951201).
+- `"Correspondance diplomatique de Jean-Jacques Rousseau" AND "Dépêches de Venise"`: same Hatzenberger 2015
+  candidate as above, same block, reread needed.
+- `"Rousseau" AND "Montaigu" AND Venise AND déchiffrement`: same two candidates (Hatzenberger 2015, Thomas
+  1969) as the first query, same blocks, reread needed.
+- `"venitiens en faveur de la Reine de Hongrie"`: no relevant hit (0 results).
+
+For the parent/verifier: this target has two unread candidate prior-print articles (Hatzenberger 2015, Thomas
+1969) -- route a check-solved/verifier read once the reread (logged-in) pass confirms what they say about the
+NAF 14913 decipherments.

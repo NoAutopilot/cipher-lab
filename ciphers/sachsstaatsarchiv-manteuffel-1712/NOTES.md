@@ -72,3 +72,8 @@ around "Chiffren de S. Exc. Mgr. le C. de Flemming, Loc." and check whether it r
 it does not serve one.
 
 queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.
+
+## JSTOR runner, 26 Sept 2026
+
+- `"Manteuffel" AND "Flemming" AND 1712 AND Chiffre`: no relevant hit (2 results, none about the letter).
+- `"Krauske" AND "Chiffre-Auflösungen" AND Manteuffel`: no relevant hit (0 results, none about the letter).

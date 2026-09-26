@@ -82,3 +82,8 @@ in scope) or the article is read by another route (ILL, a library proxy, or a di
 Host requests this section: WebFetch 1 (Anubis-blocked), WebSearch 2, archive.org 1 (advancedsearch, 0 hits).
 
 queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.
+
+## JSTOR runner, 26 Sept 2026
+
+- `"Wolfgang Julius von Hohenlohe" AND 1679 AND chiffriert`: no relevant hit (0 results, none about the letter).
+- `"Sf 35 Bü 161" OR "Melchior" AND "Hohenlohe" AND Wien AND Prag`: no relevant hit (0 results, none about the letter).

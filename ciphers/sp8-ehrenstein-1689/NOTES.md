@@ -70,3 +70,8 @@ correspondence search for any of the three; (3) check whether SP 8's neighbourin
 8/7+) hold a general cipher key for William III's continental correspondents — not searched this pass.
 
 queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.
+
+## JSTOR runner, 26 Sept 2026
+
+- `"Ehrenstein" AND "Bernsdorff" AND 1689 AND cypher`: no relevant hit (0 results, none about the letter).
+- `"Guldenstolp" AND "Ehrenstein"`: no relevant hit (0 results, none about the letter).

@@ -103,3 +103,13 @@ plus 1 earlier metadata/djvu.txt pair for `11094270bsb` before finding the right
 IA slot).
 
 queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.
+
+## JSTOR runner, 26 Sept 2026
+
+- `"Heinrich der Jüngere" AND Braunschweig AND 1519 AND Geheimschrift`: no relevant hit (0 results, none about the letter).
+- `"Hildesheimer Stiftsfehde" AND 1519 AND Heinrich`: context only, no hit about the letter -- Thomas Vogtherr,
+  "Konkurrenten um die Vormacht, Gegner im Glauben: Welfen im 16. Jahrhundert" (book chapter, Die Welfen), 2014,
+  pp. 45-50, https://www.jstor.org/stable/j.ctv1169361.9; Rainer Postel, "Zur Sozialgeschichte Niedersachsens im
+  Zeitalter des Bauernkrieges", Geschichte und Gesellschaft Sonderheft 1, 1975, pp. 79-104,
+  https://www.jstor.org/stable/40194765; F. J. Stopp, "Henry the Younger of Brunswick-Wolfenbüttel", Journal of
+  the Warburg and Courtauld Institutes 33, 1970, pp. 200-234, https://www.jstor.org/stable/750896.

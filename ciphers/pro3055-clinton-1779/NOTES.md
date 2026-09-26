@@ -589,3 +589,15 @@ the cipher tag, date and correspondents, but neither source prints the deciphere
 still open. No decoding attempted; no novelty classification made (rule 10, left to a verifier).
 
 queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.
+
+## JSTOR runner, 26 Sept 2026
+
+- `"Cornwallis" AND "Clinton" AND "York Town" AND 1781 AND cipher`: one **candidate, unread, reread needed**
+  (the runner's browser was not logged in to JPASS on this run) -- Marquis de Lafayette, "Victory at Yorktown:
+  August 30-December 23, 1781" (book chapter, Lafayette in the Age of the American Revolution -- Selected
+  Letters and Papers, 1776-1790, vol. April 1-December 23, 1781), 1981, pp. 367-452,
+  https://www.jstor.org/stable/10.7591/j.ctv75d1c8.9 (blocked: "Access through your school, college or
+  institution", whether pp. 367-452 print, calendar or discuss the 3 October 1781 Cornwallis-to-Clinton letter
+  could not be checked). Requeued in JSTOR-QUEUE.tsv, not `done`; see ASKS.md. Context only, not read: Willcox
+  1945 (stable/1879815), Larrabee 1932 (stable/24601667), Greene Papers vol. IX 1997 (stable/10.5149/9781469687995_conrad.12).
+- `"Common cipher" AND Cornwallis AND Saberton`: no relevant hit (0 results, none about the letter).
