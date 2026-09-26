@@ -1,6 +1,14 @@
-status: sent 24 Sept 2026 (one email covering both DECODE asks; reply pending)
+status: sent 24 Sept 2026 to decode@stp.lingfil.uu.se; bounced (owner report, 26 Sept 2026 ~04:30 UTC).
+  Addressee corrected 26 Sept 2026 (DECODE-ACCESS): de-crypt.org's own footer has that Uppsala address
+  commented out of its live HTML as of 26 Sept 2026 (termsofuse.php, a separate/stale page, still shows it) --
+  the PI moved to Stockholm University, which is almost certainly why the old mailbox is dead. Re-send to the
+  address below.
 subject: DECODE: full-size page image access for this account
-to: DECODE maintainers via https://de-crypt.org (contact form or the address on the site), or the account's Personal Data page if a role upgrade is self-service
+to: Prof. Beáta Megyesi, beata.megyesi@ling.su.se (Stockholm University Department of Linguistics staff
+  directory, https://www.su.se/english/profiles/beba5639, read 26 Sept 2026 -- DECODE's own footer names her
+  as Principal Investigator and lists no PI email directly; this is her current institutional address).
+  cc consideration: Mihály Héder (Hosting/System administrator, Budapest, per the same footer) has no public
+  email found this pass -- send to Megyesi alone unless a reply asks to loop him in.
 
 Our account can log in and browse records, but every full-size page scan it requests -- by name, not by
 guessing -- comes back as the same fixed placeholder image ("forbidden.png"), while the 200px thumbnails work

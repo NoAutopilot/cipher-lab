@@ -328,3 +328,79 @@ record 3754's page image opens as the same "Insufficient permissions to so see t
 (IMG_R3754_I23011_P.jpg), thumbnail fine. So the full-size block is an account role, not a session, proxy or browser
 issue; no worker should retry it. The request for a role upgrade (both asks in one email) went to the DECRYPT project
 mailbox on 24 Sept 2026 (CONTRIBUTIONS.md); until it is answered, DECODE gives thumbnails and record text only.
+
+## Access mode field tested, and the bounced addressee fixed (DECODE-ACCESS, 26 September 2026)
+
+Parent worker DECODE-ACCESS (`.claude/briefs/runs/2026-09-26-parent-decode-access-mode.md`), for parent 7e. The
+owner reported the 24 Sept 2026 access-request email (ASKS row 42/43, CONTRIBUTIONS.md) bounced. Two questions:
+does the "Access mode" field explain the block as a per-record holding-archive restriction rather than our
+account's role, and where should the request actually go.
+
+**1. Verdict: account-wide role, not a per-record restriction.** Every DECODE record checked shows "Access
+mode: Authentication required", with no exceptions found. Login-free, plain curl, >=2s apart, 21 RecordsView
+fetches (`sources/decode/access-modes-2026-09-26.tsv`) spanning six different holding institutions and two
+different legal jurisdictions -- BnF (2077, 9451), British Library (8395, 8398, 9227, 8483, 9225), BAV Vatican
+(215, 221, 233, 301, 10, 149), AAV/ASV (5622), Archivo General de Simancas (9963, 9960), Österreichisches
+Staatsarchiv (1601, the brief's own Vienna example, and 1212), and Florence State Archives (3754) -- plus four
+more already on file from earlier sessions (8725, and the 24 Sept BL cluster in `ciphers/boswell-1628/NOTES.md`,
+`ciphers/intercepted-royalist-1646/NOTES.md`, `ciphers/randolph-sussex-1569/NOTES.md`), 25 records total, zero
+variation. DECODE's own advanced-search filter for this field is a no-op: `RecordsList?x_access_mode=1&z_access_mode=%3D&cmd=search`
+and `...=2...` both return the same 10,106-record total as the unfiltered listing (unlike `x_status`, which
+genuinely filters, per `tools/decode_list.py`'s own finding) -- the site gives no way to search for a record with
+a different access mode, consistent with there not being one to find. The "Additional Information: the image is
+not in the public domain, publishing it is only possible with the permission of the archive/Library" note that
+accompanies many (not all) of these records is boilerplate explaining why a login is required *at all* -- it
+names whichever institution holds the item ("archive"/"Library" interchangeably) but reads identically across
+totally unrelated holders (BnF, BAV, AGS, ÖStA, BL), and it is present on records our account CAN read the
+thumbnail of and absent on some records (215, 221, 233, 301, 10, 149) that are just as firmly blocked -- it does
+not track the placeholder outcome. It is not the same signal as the "Insufficient permissions to see the full
+image" error DECODE shows when an image is actually requested, which is an account-role message, not an
+archive-copyright message.
+
+One login (`tools/decode_browser_login.js`, the single-attempt rule), record 2077 (the Marie de Medicis key,
+ASKS row 43's blocker, never before login-tested) plus `--fetch-page RecordsView/8395` (the Barriere target),
+`--guess-fullsize`, `--delay 1800 --max-files 10`: all 5 of 2077's guessed full-size filenames
+(`IMG_R2077_I14888_P1.png` through `I14892_P5.png`) came back sha1 `035489a0605851154ab88372216354b63596ca22`,
+986x568 PNG -- byte-identical to the placeholder already confirmed for R3754/R3761/R3758/R1162/8725/413/4930/
+1172/1180, extending the same account-wide result to a fifth+ holding institution (BnF) and directly to ASKS row
+43's target. 8395's thumbnails fetched fine (real, distinct images); its own guessed-fullsize names were not
+requested this pass (kept the login to 10 requests, well under the 60-request cap, one at a time, >=1.8s apart).
+No public/open-mode record existed to run the brief's intended public-vs-authenticated contrast (finding 1 above
+is why), so the login was spent on a fifth, previously-untested holder plus a directly-blocked target instead,
+which answers the same question (does this account's block correlate with the record's own terms, or not) with a
+fifth negative data point rather than a repeat of Florence/Vienna/BL. Combined with the existing R3754
+cross-account proof (Bourdeau's own login reads the identical file at 5512x3674; ours gets the placeholder) and
+the owner's own browser reproducing "Insufficient permissions to see the full image" (24 Sept 2026 16:50 UTC),
+the verdict is **account-wide role**, not per-record archive terms: CLAUDE.md's DECODE host-table row already
+says this ("a role/permission gate, not a route problem"), so no correction is needed there.
+
+**2. Why the email bounced, and the fixed addressee.** de-crypt.org's own home page footer (`id="contact"`) has
+the block naming `decode@stp.lingfil.uu.se` **commented out** in the live HTML
+(`<!--  <div class="block-5"> <span class="title-footer">Contact</span> ... decode@stp.lingfil.uu.se ... --> `,
+read 26 Sept 2026) -- the site itself has stopped publishing that address, even though `termsofuse.php` (a
+separate, apparently unmaintained page) still shows it uncommented. The live footer instead names, with no email
+for either: Principal Investigator Prof. Beáta Megyesi, Stockholm University, Department of Linguistics, Sweden;
+Hosting/System administrator Mihály Héder, Budapest, Hungary. This matches the brief's note that the PI moved to
+Stockholm University -- the Uppsala mailbox (`lingfil.uu.se` is Uppsala's Department of Linguistics and
+Philology) is very likely dead because of that move, which is the simplest explanation for the bounce.
+
+Stockholm University's own staff directory gives Prof. Megyesi's current institutional address, read 26 Sept
+2026: `beata.megyesi@ling.su.se` (`https://www.su.se/english/profiles/beba5639`, "Beata Megyesi - Stockholm
+University", found via `www.su.se/english/search?query=megyesi`). This is a public-facing university staff page,
+not a private individual's personal contact (CLAUDE.md rule 9/Access playbook item 4's "never a private
+individual's address" is about people outside an institution, e.g. a dealer or a private owner; a professor's
+university directory listing is the institutional contact for her role, the same category as an archive's own
+"contact us" address). `outreach/decode-image-access.md`'s recipient line is updated to this address, dated, in
+place of the generic "DECODE maintainers via the site or Personal Data page" line and the dead Uppsala address.
+ASKS.md row 42 updated with the addressee fix and this verdict.
+
+Also worth flagging, not part of this job's mandate: the DECRYPT project's own public "About" text says "all
+records in the database are open to the public" -- in clear tension with the account-wide full-image block this
+and prior sessions have confirmed. Worth quoting back verbatim if a reply from Megyesi/Héder disputes that a
+role gate exists at all.
+
+Requests this pass: de-crypt.org 21 RecordsView (login-free, sample) + 3 (search-form/filter-probe reads,
+login-free) + login-session (2 login, 1 primary RecordsView, 1 fetch-page, 10 filesrv fetches) = 37, all >=1.5-2s
+apart, one at a time, well under the 40-request login-free cap and the 60-request login-session convention. One
+login. `su.se` 5 requests (2 search, 1 profile redirect, 1 profile, 1 staff-listing 404), >=1.5s apart, well
+under any per-host cap. No credentials printed.
