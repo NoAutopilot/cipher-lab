@@ -1,0 +1,816 @@
+line	position	sign	confidence	alt	why
+07205_p5_L01	1	210	M		agree-flagged
+07205_p5_L01	2	104	M		agree-flagged
+07205_p5_L01	3	84	M	B:4	differ
+07205_p5_L01	4	103	M		agree-flagged
+07205_p5_L01	5	38	M		agree-flagged
+07205_p5_L01	6	81	M		agree-flagged
+07205_p5_L01	7	74	M		agree-flagged
+07205_p5_L01	8	70	M	A:-	gap
+07205_p5_L01	9	60	M	B:10	differ
+07205_p5_L01	10	101	M	B:9	differ
+07205_p5_L01	11	4	M		agree-flagged
+07205_p5_L01	12	82	M		agree-flagged
+07205_p5_L01	13	75	M		agree-flagged
+07205_p5_L01	14	84	M	B:80	differ
+07205_p5_L01	15	12	M		agree-flagged
+07205_p5_L01	16	85	M	B:3	differ
+07205_p5_L01	17	2	M	B:19	differ
+07205_p5_L01	18	192	M	B:24	differ
+07205_p5_L01	19	1	M	B:11	differ
+07205_p5_L01	20	104	M	B:4	differ
+07205_p5_L01	21	81	M		agree-flagged
+07205_p5_L01	22	20	M		agree-flagged
+07205_p5_L01	23	38	M		agree-flagged
+07205_p5_L01	24	104	M	B:10	differ
+07205_p5_L01	25	w:pourroit	M		agree-flagged
+07205_p5_L01	26	w:a	H		agree
+07205_p5_L01	27	w:faire	M		agree-flagged
+07205_p5_L01	28	121	M		agree-flagged
+07205_p5_L01	29	73	M		agree-flagged
+07205_p5_L01	30	8	M	B:-	gap
+07205_p5_L01	31	37	M		agree-flagged
+07205_p5_L01	32	22	M	B:20	differ
+07205_p5_L01	33	31	M		agree-flagged
+07205_p5_L01	34	2	M	A:-	gap
+07205_p5_L01	35	82	M	B:33	differ
+07205_p5_L01	36	331	M	B:1	differ
+07205_p5_L01	37	102	M		agree-flagged
+07205_p5_L01	38	12	M		agree-flagged
+07205_p5_L01	39	8	M	B:-	gap
+07205_p5_L01	40	71	M		agree-flagged
+07205_p5_L01	41	99	M		agree-flagged
+07205_p5_L01	42	82	M	B:2	differ
+07205_p5_L01	43	120	M		agree-flagged
+07205_p5_L01	44	22	M	B:-	gap
+07205_p5_L01	45	3	M		agree-flagged
+07205_p5_L01	46	18	M		agree-flagged
+07205_p5_L01	47	104	M		agree-flagged
+07205_p5_L01	48	82	M		agree-flagged
+07205_p5_L01	49	38	M		agree-flagged
+07205_p5_L01	50	8	M	B:-	gap
+07205_p5_L01	51	37	M		agree-flagged
+07205_p5_L01	52	27	M	B:29	differ
+07205_p5_L01	53	13	M		agree-flagged
+07205_p5_L01	54	10	M		agree-flagged
+07205_p5_L01	55	39	M	B:29	differ
+07205_p5_L01	56	24	M		agree-flagged
+07205_p5_L01	57	21	M		agree-flagged
+07205_p5_L01	58	8	M	B:3	differ
+07205_p5_L01	59	4	M		agree-flagged
+07205_p5_L01	60	12	M		agree-flagged
+07205_p5_L01	61	82	M		agree-flagged
+07205_p5_L01	62	2	M		agree-flagged
+07205_p5_L01	63	78	M		agree-flagged
+07205_p5_L01	64	21	M		agree-flagged
+07205_p5_L01	65	84	M		agree-flagged
+07205_p5_L01	66	18	M	B:-	gap
+07205_p5_L01	67	10	M	B:150	differ
+07205_p5_L01	68	w:auoit	M	B:w:aucois	differ
+07205_p5_L02	1	11	M		agree-flagged
+07205_p5_L02	2	84	M	B:48	differ
+07205_p5_L02	3	12	M		agree-flagged
+07205_p5_L02	4	12	M		agree-flagged
+07205_p5_L02	5	48	M		agree-flagged
+07205_p5_L02	6	55	M	B:-	gap
+07205_p5_L02	7	w:autant	M	B:-	gap
+07205_p5_L02	8	w:par	M	B:-	gap
+07205_p5_L02	9	w:une	M	B:w:grand	differ
+07205_p5_L02	10	w:homme	M	B:w:vin	differ
+07205_p5_L02	11	w:pieces	M	B:w:theorique	differ
+07205_p5_L02	12	w:entre	M	B:w:paroles	differ
+07205_p5_L02	13	w:pour	M		agree-flagged
+07205_p5_L02	14	w:bagues	M	B:w:bagouet	differ
+07205_p5_L02	15	w:et	M	B:w:a	differ
+07205_p5_L02	16	w:or	M	B:w:fer	differ
+07205_p5_L02	17	w:quoy	M		agree-flagged
+07205_p5_L02	18	w:on	M		agree-flagged
+07205_p5_L02	19	w:parle	M		agree-flagged
+07205_p5_L02	20	140	M	B:w:de	differ
+07205_p5_L02	21	147	M		agree-flagged
+07205_p5_L02	22	106	M	B:-	gap
+07205_p5_L02	23	65	M	B:-	gap
+07205_p5_L02	24	18	M	B:-	gap
+07205_p5_L02	25	6	M	B:52	differ
+07205_p5_L02	26	199	M	B:19	differ
+07205_p5_L02	27	13	M		agree-flagged
+07205_p5_L02	28	81	M	B:9	differ
+07205_p5_L02	29	113	M	B:213	differ
+07205_p5_L02	30	121	M		agree-flagged
+07205_p5_L02	31	82	M		agree-flagged
+07205_p5_L02	32	12	M		agree-flagged
+07205_p5_L02	33	23	M		agree-flagged
+07205_p5_L02	34	104	M		agree-flagged
+07205_p5_L02	35	27	M		agree-flagged
+07205_p5_L02	36	85	M	B:-	gap
+07205_p5_L02	37	7	M	B:89	differ
+07205_p5_L02	38	86	M	B:77	differ
+07205_p5_L02	39	5	M	B:82	differ
+07205_p5_L02	40	84	M	B:4	differ
+07205_p5_L02	41	82	M		agree-flagged
+07205_p5_L02	42	31	M		agree-flagged
+07205_p5_L02	43	15	M	B:10	differ
+07205_p5_L02	44	35	M		agree-flagged
+07205_p5_L02	45	83	M		agree-flagged
+07205_p5_L02	46	78	M		agree-flagged
+07205_p5_L02	47	28	M		agree-flagged
+07205_p5_L02	48	101	M		agree-flagged
+07205_p5_L02	49	6	M	B:-	gap
+07205_p5_L02	50	15	M	B:-	gap
+07205_p5_L02	51	183	M	B:83	differ
+07205_p5_L02	52	103	M		agree-flagged
+07205_p5_L02	53	85	M	B:-	gap
+07205_p5_L02	54	30	M	B:-	gap
+07205_p5_L02	55	6	M	B:80	differ
+07205_p5_L02	56	37	M		agree-flagged
+07205_p5_L02	57	29	M	B:290	differ
+07205_p5_L02	58	128	M	B:121	differ
+07205_p5_L02	59	37	M		agree-flagged
+07205_p5_L02	60	22	M		agree-flagged
+07205_p5_L02	61	21	M		agree-flagged
+07205_p5_L02	62	82	M		agree-flagged
+07205_p5_L02	63	86	M	B:80	differ
+07205_p5_L02	64	83	M		agree-flagged
+07205_p5_L02	65	202	M	B:102	differ
+07205_p5_L02	66	23	M		agree-flagged
+07205_p5_L02	67	27	M		agree-flagged
+07205_p5_L02	68	38	M		agree-flagged
+07205_p5_L02	69	23	M		agree-flagged
+07205_p5_L02	70	217	M		agree-flagged
+07205_p5_L02	71	20	M	B:-	gap
+07205_p5_L02	72	85	M	B:-	gap
+07205_p5_L02	73	60	M	B:40	differ
+07205_p5_L02	74	85	M		agree-flagged
+07205_p5_L02	75	129	M		agree-flagged
+07205_p5_L02	76	11	M		agree-flagged
+07205_p5_L02	77	23	M		agree-flagged
+07205_p5_L02	78	85	M	B:-	gap
+07205_p5_L02	79	39	M	B:-	gap
+07205_p5_L02	80	85	M	B:-	gap
+07205_p5_L02	81	15	M	B:89	differ
+07205_p5_L02	82	85	M	B:19	differ
+07205_p5_L02	83	55	M	B:25	differ
+07205_p5_L02	84	85	M	B:28	differ
+07205_p5_L02	85	55	M		agree-flagged
+07205_p5_L02	86	85	M	B:18	differ
+07205_p5_L02	87	101	M		agree-flagged
+07205_p5_L02	88	55	M		agree-flagged
+07205_p5_L02	89	w:car	M	A:-	gap
+07205_p5_L02	90	w:que	M	B:w:pour	differ
+07205_p5_L02	91	w:par	M		agree-flagged
+07205_p5_L02	92	w:bruxelles	M		agree-flagged
+07205_p5_L02	93	w:commis	M		agree-flagged
+07205_p5_L02	94	127	M		agree-flagged
+07205_p5_L02	95	192	M		agree-flagged
+07205_p5_L02	96	104	M		agree-flagged
+07205_p5_L02	97	81	M		agree-flagged
+07205_p5_L02	98	32	M		agree-flagged
+07205_p5_L02	99	81	M		agree-flagged
+07205_p5_L02	100	28	M		agree-flagged
+07205_p5_L02	101	837	M	B:37	differ
+07205_p5_L02	102	140	M		agree-flagged
+07205_p5_L02	103	14	M		agree-flagged
+07205_p5_L02	104	21	M		agree-flagged
+07205_p5_L02	105	104	M		agree-flagged
+07205_p5_L02	106	2	M		agree-flagged
+07205_p5_L02	107	6	M	B:-	gap
+07205_p5_L02	108	10	M	B:-	gap
+07205_p5_L02	109	6	M	B:-	gap
+07205_p5_L02	110	55	M	B:-	gap
+07205_p5_L02	111	13	M	B:-	gap
+07205_p5_L02	112	85	M	B:18	differ
+07205_p5_L02	113	3	M	B:25	differ
+07205_p5_L02	114	181	M	B:31	differ
+07205_p5_L02	115	27	M	B:81	differ
+07205_p5_L02	116	10	M	B:213	differ
+07205_p5_L02	117	211	M	B:215	differ
+07205_p5_L02	118	283	M	B:28	differ
+07205_p5_L02	119	139	M	B:131	differ
+07205_p5_L02	120	82	M		agree-flagged
+07205_p5_L02	121	20	M		agree-flagged
+07205_p5_L02	122	33	M	B:53	differ
+07205_p5_L02	123	85	M	B:25	differ
+07205_p5_L02	124	27	M		agree-flagged
+07205_p5_L02	125	30	M		agree-flagged
+07205_p5_L02	126	114	M	B:44	differ
+07205_p5_L02	127	34	M		agree-flagged
+07205_p5_L02	128	808	M	B:800	differ
+07205_p5_L02	129	115	M		agree-flagged
+07205_p5_L02	130	103	M		agree-flagged
+07205_p5_L02	131	85	M	B:-	gap
+07205_p5_L02	132	81	M		agree-flagged
+07205_p5_L02	133	84	M	A:-	gap
+07205_p5_L02	134	29	M	A:-	gap
+07205_p5_L02	135	82	M	A:-	gap
+07205_p5_L02	136	88	M	A:-	gap
+07205_p5_L02	137	24	M	A:-	gap
+07205_p5_L02	138	84	M	A:-	gap
+07205_p5_L02	139	28	M	A:-	gap
+07205_p5_L02	140	281	M	A:-	gap
+07205_p5_L02	141	27	M	A:-	gap
+07205_p5_L02	142	113	M	A:-	gap
+07205_p5_L02	143	2	M	A:-	gap
+07205_p5_L02	144	28	M	A:-	gap
+07205_p5_L02	145	88	M	A:-	gap
+07205_p5_L02	146	87	M	A:-	gap
+07205_p5_L02	147	101	M	A:-	gap
+07205_p5_L02	148	22	M	A:-	gap
+07205_p5_L02	149	8	M	A:-	gap
+07205_p5_L03	1	85	M	B:-	gap
+07205_p5_L03	2	81	M		agree-flagged
+07205_p5_L03	3	6	M	B:109	differ
+07205_p5_L03	4	191	M	B:111	differ
+07205_p5_L03	5	29	M		agree-flagged
+07205_p5_L03	6	86	M	B:80	differ
+07205_p5_L03	7	36	M	B:34	differ
+07205_p5_L03	8	20	M		agree-flagged
+07205_p5_L03	9	85	M	B:5	differ
+07205_p5_L03	10	129	M		agree-flagged
+07205_p5_L03	11	1	M	A:-	gap
+07205_p5_L03	12	w:grand	M	A:-	gap
+07205_p5_L03	13	w:petit	M	A:-	gap
+07205_p5_L03	14	w:grand	M	A:-	gap
+07205_p5_L03	15	w:sil	M	A:-	gap
+07205_p5_L03	16	w:vous	M	A:-	gap
+07205_p5_L03	17	w:moymoo	M	A:-	gap
+07205_p5_L03	18	28	M	A:-	gap
+07205_p5_L03	19	0	M	B:102	differ
+07205_p5_L03	20	58	M	B:68	differ
+07205_p5_L03	21	35	M		agree-flagged
+07205_p5_L03	22	71	M	A:-	gap
+07205_p5_L03	23	51	M		agree-flagged
+07205_p5_L03	24	15	M	B:-	gap
+07205_p5_L03	25	85	M	B:-	gap
+07205_p5_L03	26	1	M	B:-	gap
+07205_p5_L03	27	88	M	B:84	differ
+07205_p5_L03	28	599	M	B:39	differ
+07205_p5_L03	29	37	M		agree-flagged
+07205_p5_L03	30	111	M	B:-	gap
+07205_p5_L03	31	4	M	B:114	differ
+07205_p5_L03	32	85	M		agree-flagged
+07205_p5_L03	33	52	M		agree-flagged
+07205_p5_L03	34	82	M		agree-flagged
+07205_p5_L03	35	2	M		agree-flagged
+07205_p5_L03	36	31	M		agree-flagged
+07205_p5_L03	37	90	M	B:70	differ
+07205_p5_L03	38	101	M		agree-flagged
+07205_p5_L03	39	85	M	B:91	differ
+07205_p5_L03	40	332	M		agree-flagged
+07205_p5_L03	41	85	M	B:82	differ
+07205_p5_L03	42	27	M	B:29	differ
+07205_p5_L03	43	184	M	B:84	differ
+07205_p5_L03	44	128	M		agree-flagged
+07205_p5_L03	45	w:sbng	M		agree-flagged
+07205_p5_L03	46	85	M	A:-	gap
+07205_p5_L03	47	35	M	A:-	gap
+07205_p5_L03	48	58	M	A:-	gap
+07205_p5_L03	49	w:comman	M	B:25	differ
+07205_p5_L03	50	w:mais	M	B:10	differ
+07205_p5_L03	51	149	M	B:49	differ
+07205_p5_L03	52	82	M		agree-flagged
+07205_p5_L03	53	14	M		agree-flagged
+07205_p5_L03	54	34	M		agree-flagged
+07205_p5_L03	55	22	M		agree-flagged
+07205_p5_L03	56	84	M		agree-flagged
+07205_p5_L03	57	13	M		agree-flagged
+07205_p5_L03	58	21	M		agree-flagged
+07205_p5_L03	59	82	M		agree-flagged
+07205_p5_L03	60	85	M	B:-	gap
+07205_p5_L03	61	24	M		agree-flagged
+07205_p5_L03	62	85	M	B:89	differ
+07205_p5_L03	63	19	M		agree-flagged
+07205_p5_L03	64	35	M	B:32	differ
+07205_p5_L03	65	85	M	B:84	differ
+07205_p5_L03	66	113	M		agree-flagged
+07205_p5_L03	67	18	M	A:-	gap
+07205_p5_L03	68	15	M	A:-	gap
+07205_p5_L03	69	58	M	A:-	gap
+07205_p5_L03	70	85	M		agree-flagged
+07205_p5_L03	71	35	M	A:-	gap
+07205_p5_L03	72	391	M	B:39	differ
+07205_p5_L03	73	83	M		agree-flagged
+07205_p5_L03	74	85	M	B:58	differ
+07205_p5_L03	75	90	M		agree-flagged
+07205_p5_L03	76	85	M	B:-	gap
+07205_p5_L03	77	21	M	B:25	differ
+07205_p5_L03	78	82	M		agree-flagged
+07205_p5_L03	79	131	M		agree-flagged
+07205_p5_L03	80	w:se	M	B:90	differ
+07205_p5_L03	81	w:faisoit	M	B:w:faict	differ
+07205_p5_L03	82	w:par	M		agree-flagged
+07205_p5_L03	83	w:quelquun	M		agree-flagged
+07205_p5_L03	84	147	M		agree-flagged
+07205_p5_L03	85	85	M		agree-flagged
+07205_p5_L03	86	89	M		agree-flagged
+07205_p5_L03	87	88	M		agree-flagged
+07205_p5_L03	88	84	M		agree-flagged
+07205_p5_L03	89	34	M	A:-	gap
+07205_p5_L03	90	90	M	A:-	gap
+07205_p5_L03	91	w:mmy	M	B:29	differ
+07205_p5_L03	92	293	M	B:3	differ
+07205_p5_L03	93	85	M	B:84	differ
+07205_p5_L03	94	12	M		agree-flagged
+07205_p5_L03	95	14	M		agree-flagged
+07205_p5_L03	96	85	M	B:25	differ
+07205_p5_L03	97	23	M		agree-flagged
+07205_p5_L03	98	85	M	B:-	gap
+07205_p5_L03	99	102	M		agree-flagged
+07205_p5_L03	100	27	M		agree-flagged
+07205_p5_L03	101	33	M		agree-flagged
+07205_p5_L03	102	21	M		agree-flagged
+07205_p5_L03	103	84	M		agree-flagged
+07205_p5_L03	104	113	M		agree-flagged
+07205_p5_L03	105	85	M	B:-	gap
+07205_p5_L03	106	85	M	B:-	gap
+07205_p5_L03	107	85	M	B:84	differ
+07205_p5_L03	108	3	M		agree-flagged
+07205_p5_L03	109	83	M		agree-flagged
+07205_p5_L03	110	37	M		agree-flagged
+07205_p5_L03	111	10	M		agree-flagged
+07205_p5_L03	112	112	M		agree-flagged
+07205_p5_L03	113	38	M	B:101	differ
+07205_p5_L03	114	74	M	B:100	differ
+07205_p5_L03	115	32	M		agree-flagged
+07205_p5_L03	116	85	M	B:102	differ
+07205_p5_L03	117	10	M		agree-flagged
+07205_p5_L03	118	30	M	B:38	differ
+07205_p5_L03	119	10	M		agree-flagged
+07205_p5_L03	120	85	M	B:-	gap
+07205_p5_L03	121	113	M		agree-flagged
+07205_p5_L03	122	85	M	B:-	gap
+07205_p5_L03	123	10	M	B:-	gap
+07205_p5_L03	124	38	M	B:-	gap
+07205_p5_L03	125	85	M	B:89	differ
+07205_p5_L03	126	11	M	B:102	differ
+07205_p5_L03	127	85	M	B:88	differ
+07205_p5_L03	128	85	M	B:115	differ
+07205_p5_L03	129	85	M	B:105	differ
+07205_p5_L03	130	32	M	B:132	differ
+07205_p5_L03	131	12	M		agree-flagged
+07205_p5_L03	132	85	M	B:84	differ
+07205_p5_L03	133	22	M		agree-flagged
+07205_p5_L03	134	11	M		agree-flagged
+07205_p5_L03	135	85	M	B:91	differ
+07205_p5_L03	136	23	M		agree-flagged
+07205_p5_L03	137	33	M	A:-	gap
+07205_p5_L03	138	111	M	A:-	gap
+07205_p5_L03	139	15	M	A:-	gap
+07205_p5_L03	140	29	M	A:-	gap
+07205_p5_L03	141	115	M		agree-flagged
+07205_p5_L03	142	114	M		agree-flagged
+07205_p5_L03	143	84	M		agree-flagged
+07205_p5_L03	144	20	M		agree-flagged
+07205_p5_L03	145	139	M		agree-flagged
+07205_p5_L03	146	w:mais	M		agree-flagged
+07205_p5_L03	147	w:se	M	B:-	gap
+07205_p5_L03	148	w:que	M	B:w:les	differ
+07205_p5_L03	149	25	M		agree-flagged
+07205_p5_L03	150	78	M		agree-flagged
+07205_p5_L03	151	85	M	B:52	differ
+07205_p5_L03	152	11	M		agree-flagged
+07205_p5_L03	153	13	M	B:113	differ
+07205_p5_L03	154	85	M	B:3	differ
+07205_p5_L03	155	24	M		agree-flagged
+07205_p5_L03	156	81	M		agree-flagged
+07205_p5_L03	157	1	M		agree-flagged
+07205_p5_L03	158	75	M		agree-flagged
+07205_p5_L03	159	85	M		agree-flagged
+07205_p5_L03	160	18	M		agree-flagged
+07205_p5_L04	1	21	M	A:-	gap
+07205_p5_L04	2	21	M	A:-	gap
+07205_p5_L04	3	82	M	A:-	gap
+07205_p5_L04	4	25	M	A:-	gap
+07205_p5_L04	5	134	M	A:-	gap
+07205_p5_L04	6	83	M	A:-	gap
+07205_p5_L04	7	90	M	A:-	gap
+07205_p5_L04	8	114	M	A:-	gap
+07205_p5_L04	9	84	M	A:-	gap
+07205_p5_L04	10	150	H		settled from image (AX-COMP2, 26 Sept 2026): 150 clearly legible, run 134.83.90.114.84.150.120
+07205_p5_L04	11	120	M	A:-	gap
+07205_p5_L04	12	82	M		agree-flagged
+07205_p5_L04	13	104	M		agree-flagged
+07205_p5_L04	14	92	M		agree-flagged
+07205_p5_L04	15	27	M		agree-flagged
+07205_p5_L04	16	83	M		agree-flagged
+07205_p5_L04	17	74	M		agree-flagged
+07205_p5_L04	18	5	M		agree-flagged
+07205_p5_L04	19	22	M		agree-flagged
+07205_p5_L04	20	21	M		agree-flagged
+07205_p5_L04	21	86	M		agree-flagged
+07205_p5_L04	22	15	M		agree-flagged
+07205_p5_L04	23	10	M		agree-flagged
+07205_p5_L04	24	5	M		agree-flagged
+07205_p5_L04	25	7	M		agree-flagged
+07205_p5_L04	26	84	M		agree-flagged
+07205_p5_L04	27	15	M		agree-flagged
+07205_p5_L04	28	72	M		agree-flagged
+07205_p5_L04	29	83	M		agree-flagged
+07205_p5_L04	30	13	M		agree-flagged
+07205_p5_L04	31	85	M	B:-	gap
+07205_p5_L04	32	127	M		agree-flagged
+07205_p5_L04	33	w:qui	M		agree-flagged
+07205_p5_L04	34	w:est	M		agree-flagged
+07205_p5_L04	35	w:le	M	B:-	gap
+07205_p5_L04	36	w:tresorier	M	B:-	gap
+07205_p5_L04	37	w:comet	M	B:w:cheu	differ
+07205_p5_L04	38	w:qui	M	B:w:verite	differ
+07205_p5_L04	39	w:ce	M	B:w:comme	differ
+07205_p5_L04	40	w:mois	M	B:w:union	differ
+07205_p5_L04	41	w:semble	M	B:w:embla	differ
+07205_p5_L04	42	40	M		agree-flagged
+07205_p5_L04	43	98	M	B:58	differ
+07205_p5_L04	44	81	M		agree-flagged
+07205_p5_L04	45	37	M		agree-flagged
+07205_p5_L04	46	114	M		agree-flagged
+07205_p5_L04	47	47	M		agree-flagged
+07205_p5_L04	48	127	M		agree-flagged
+07205_p5_L04	49	39	M		agree-flagged
+07205_p5_L04	50	34	M	B:29	differ
+07205_p5_L04	51	85	M	B:45	differ
+07205_p5_L04	52	149	M	B:158	differ
+07205_p5_L04	53	60	M		agree-flagged
+07205_p5_L04	54	21	M		agree-flagged
+07205_p5_L04	55	10	M		agree-flagged
+07205_p5_L04	56	105	M		agree-flagged
+07205_p5_L04	57	32	M		agree-flagged
+07205_p5_L04	58	98	M	B:68	differ
+07205_p5_L04	59	101	M		agree-flagged
+07205_p5_L04	60	85	M	B:82	differ
+07205_p5_L04	61	2	M		agree-flagged
+07205_p5_L04	62	39	M		agree-flagged
+07205_p5_L04	63	81	M		agree-flagged
+07205_p5_L04	64	105	M		agree-flagged
+07205_p5_L04	65	23	M		agree-flagged
+07205_p5_L04	66	27	M		agree-flagged
+07205_p5_L04	67	93	M		agree-flagged
+07205_p5_L04	68	132	M		agree-flagged
+07205_p5_L04	69	140	M		agree-flagged
+07205_p5_L04	70	72	M	B:-	gap
+07205_p5_L04	71	85	M	B:92	differ
+07205_p5_L04	72	118	M		agree-flagged
+07205_p5_L04	73	85	M	B:205	differ
+07205_p5_L04	74	105	M		agree-flagged
+07205_p5_L04	75	83	M		agree-flagged
+07205_p5_L04	76	2	M		agree-flagged
+07205_p5_L04	77	85	M	B:5	differ
+07205_p5_L04	78	85	M	B:84	differ
+07205_p5_L04	79	38	M		agree-flagged
+07205_p5_L04	80	104	M		agree-flagged
+07205_p5_L04	81	84	M		agree-flagged
+07205_p5_L04	82	39	M		agree-flagged
+07205_p5_L04	83	127	M	B:-	gap
+07205_p5_L04	84	w:premier	M	B:w:premiere	differ
+07205_p5_L04	85	w:que	M		agree-flagged
+07205_p5_L04	86	w:se	M		agree-flagged
+07205_p5_L04	87	w:la	M	B:w:elle	differ
+07205_p5_L04	88	w:ma	M	B:w:me	differ
+07205_p5_L04	89	w:faict	H		agree
+07205_p5_L04	90	w:responce	M	B:-	gap
+07205_p5_L04	91	w:sicu	M	B:-	gap
+07205_p5_L04	92	w:ce	M	B:-	gap
+07205_p5_L04	93	w:nest	M	B:w:respondre	differ
+07205_p5_L04	94	131	M		agree-flagged
+07205_p5_L04	95	150	M	B:190	differ
+07205_p5_L04	96	122	M		agree-flagged
+07205_p5_L04	97	17	M		agree-flagged
+07205_p5_L04	98	37	M		agree-flagged
+07205_p5_L04	99	82	M		agree-flagged
+07205_p5_L04	100	131	M		agree-flagged
+07205_p5_L04	101	38	M		agree-flagged
+07205_p5_L04	102	1	M		agree-flagged
+07205_p5_L04	103	94	M		agree-flagged
+07205_p5_L04	104	114	M		agree-flagged
+07205_p5_L04	105	85	M	B:55	differ
+07205_p5_L04	106	2	M		agree-flagged
+07205_p5_L04	107	91	M		agree-flagged
+07205_p5_L04	108	84	M		agree-flagged
+07205_p5_L04	109	102	M		agree-flagged
+07205_p5_L04	110	92	M		agree-flagged
+07205_p5_L04	111	83	M		agree-flagged
+07205_p5_L04	112	77	M		agree-flagged
+07205_p5_L04	113	82	M		agree-flagged
+07205_p5_L04	114	85	M	B:-	gap
+07205_p5_L04	115	84	M		agree-flagged
+07205_p5_L04	116	37	M		agree-flagged
+07205_p5_L04	117	23	M		agree-flagged
+07205_p5_L04	118	94	M		agree-flagged
+07205_p5_L04	119	130	M	A:-	gap
+07205_p5_L04	120	102	M	A:-	gap
+07205_p5_L04	121	120	M	B:131	differ
+07205_p5_L05	1	121	M		agree-flagged
+07205_p5_L05	2	75	M	B:45	differ
+07205_p5_L05	3	83	M		agree-flagged
+07205_p5_L05	4	5	M	B:102	differ
+07205_p5_L05	5	22	M	B:213	differ
+07205_p5_L05	6	9	M	B:1	differ
+07205_p5_L05	7	31	M		agree-flagged
+07205_p5_L05	8	28	M	B:20	differ
+07205_p5_L05	9	105	M		agree-flagged
+07205_p5_L05	10	113	M		agree-flagged
+07205_p5_L05	11	85	M	B:-	gap
+07205_p5_L05	12	2	M		agree-flagged
+07205_p5_L05	13	84	M	B:4	differ
+07205_p5_L05	14	33	M		agree-flagged
+07205_p5_L05	15	83	M		agree-flagged
+07205_p5_L05	16	120	M		agree-flagged
+07205_p5_L05	17	11	M		agree-flagged
+07205_p5_L05	18	28	M		agree-flagged
+07205_p5_L05	19	128	M		agree-flagged
+07205_p5_L05	20	w:an	M	A:-	gap
+07205_p5_L05	21	w:mostre	M	A:-	gap
+07205_p5_L05	22	w:la	M	A:-	gap
+07205_p5_L05	23	w:main	M	A:-	gap
+07205_p5_L05	24	w:que	M	B:w:sur	differ
+07205_p5_L05	25	139	M		agree-flagged
+07205_p5_L05	26	9	M	B:19	differ
+07205_p5_L05	27	30	M		agree-flagged
+07205_p5_L05	28	28	M		agree-flagged
+07205_p5_L05	29	92	M	B:52	differ
+07205_p5_L05	30	37	M		agree-flagged
+07205_p5_L05	31	22	M		agree-flagged
+07205_p5_L05	32	8	M		agree-flagged
+07205_p5_L05	33	2	M		agree-flagged
+07205_p5_L05	34	27	M		agree-flagged
+07205_p5_L05	35	12	M		agree-flagged
+07205_p5_L05	36	83	M		agree-flagged
+07205_p5_L05	37	21	M		agree-flagged
+07205_p5_L05	38	8	M		agree-flagged
+07205_p5_L05	39	40	M		agree-flagged
+07205_p5_L05	40	37	M		agree-flagged
+07205_p5_L05	41	2	M		agree-flagged
+07205_p5_L05	42	83	M	B:84	differ
+07205_p5_L05	43	312	M		agree-flagged
+07205_p5_L05	44	124	M		agree-flagged
+07205_p5_L05	45	w:a	M	B:-	gap
+07205_p5_L05	46	w:mectre	M	B:-	gap
+07205_p5_L05	47	w:la	M	B:-	gap
+07205_p5_L05	48	w:main	M	B:-	gap
+07205_p5_L05	49	85	M	B:84	differ
+07205_p5_L05	50	37	M		agree-flagged
+07205_p5_L05	51	80	M		agree-flagged
+07205_p5_L05	52	84	M		agree-flagged
+07205_p5_L05	53	38	M		agree-flagged
+07205_p5_L05	54	47	M		agree-flagged
+07205_p5_L05	55	9	M		agree-flagged
+07205_p5_L05	56	30	M		agree-flagged
+07205_p5_L05	57	85	M	B:55	differ
+07205_p5_L05	58	104	M		agree-flagged
+07205_p5_L05	59	83	M		agree-flagged
+07205_p5_L05	60	1	M		agree-flagged
+07205_p5_L05	61	95	M		agree-flagged
+07205_p5_L05	62	85	M	B:55	differ
+07205_p5_L05	63	37	M		agree-flagged
+07205_p5_L05	64	33	M		agree-flagged
+07205_p5_L05	65	81	M	B:84	differ
+07205_p5_L05	66	27	M		agree-flagged
+07205_p5_L05	67	81	M	B:84	differ
+07205_p5_L05	68	32	M		agree-flagged
+07205_p5_L05	69	17	M		agree-flagged
+07205_p5_L05	70	37	M		agree-flagged
+07205_p5_L05	71	83	M		agree-flagged
+07205_p5_L05	72	85	M	B:55	differ
+07205_p5_L05	73	113	M		agree-flagged
+07205_p5_L05	74	9	M		agree-flagged
+07205_p5_L05	75	21	M		agree-flagged
+07205_p5_L05	76	28	M		agree-flagged
+07205_p5_L05	77	104	M		agree-flagged
+07205_p5_L05	78	112	M		agree-flagged
+07205_p5_L05	79	5	M		agree-flagged
+07205_p5_L05	80	53	M		agree-flagged
+07205_p5_L05	81	84	M		agree-flagged
+07205_p5_L05	82	3	M	A:-	gap
+07205_p5_L05	83	38	M	B:84	differ
+07205_p5_L05	84	29	M	B:23	differ
+07205_p5_L05	85	82	M		agree-flagged
+07205_p5_L05	86	72	M	A:-	gap
+07205_p5_L05	87	12	M	B:2	differ
+07205_p5_L05	88	112	M	B:142	differ
+07205_p5_L05	89	30	M		agree-flagged
+07205_p5_L05	90	28	M		agree-flagged
+07205_p5_L05	91	114	M		agree-flagged
+07205_p5_L05	92	101	M		agree-flagged
+07205_p5_L05	93	81	M		agree-flagged
+07205_p5_L05	94	37	M		agree-flagged
+07205_p5_L06	1	79	M		agree-flagged
+07205_p5_L06	2	82	M		agree-flagged
+07205_p5_L06	3	29	M		agree-flagged
+07205_p5_L06	4	84	M		agree-flagged
+07205_p5_L06	5	11	M		agree-flagged
+07205_p5_L06	6	85	M	B:105	differ
+07205_p5_L06	7	77	M	B:44	differ
+07205_p5_L06	8	82	M		agree-flagged
+07205_p5_L06	9	139	M		agree-flagged
+07205_p5_L06	10	w:trois	M	A:-	gap
+07205_p5_L06	11	w:cegn	M	A:-	gap
+07205_p5_L06	12	w:pourquoy	M	B:w:moy	differ
+07205_p5_L06	13	w:merfaict	M	B:w:faict	differ
+07205_p5_L06	14	w:auoir	M	B:w:avoir	differ
+07205_p5_L06	15	w:tant	M		agree-flagged
+07205_p5_L06	16	w:plus	M		agree-flagged
+07205_p5_L06	17	143	M		agree-flagged
+07205_p5_L06	18	124	M		agree-flagged
+07205_p5_L06	19	28	M		agree-flagged
+07205_p5_L06	20	105	M		agree-flagged
+07205_p5_L06	21	2	M		agree-flagged
+07205_p5_L06	22	103	M		agree-flagged
+07205_p5_L06	23	28	M		agree-flagged
+07205_p5_L06	24	3	M	B:35	differ
+07205_p5_L06	25	21	M		agree-flagged
+07205_p5_L06	26	82	M		agree-flagged
+07205_p5_L06	27	8	M		agree-flagged
+07205_p5_L06	28	12	M		agree-flagged
+07205_p5_L06	29	102	M		agree-flagged
+07205_p5_L06	30	2	M		agree-flagged
+07205_p5_L06	31	101	M		agree-flagged
+07205_p5_L06	32	9	M		agree-flagged
+07205_p5_L06	33	11	M	B:-	gap
+07205_p5_L06	34	79	M	B:119	differ
+07205_p5_L06	35	30	M		agree-flagged
+07205_p5_L06	36	192	M		agree-flagged
+07205_p5_L06	37	142	M		agree-flagged
+07205_p5_L06	38	83	M		agree-flagged
+07205_p5_L06	39	20	M		agree-flagged
+07205_p5_L06	40	85	M	B:51	differ
+07205_p5_L06	41	14	M		agree-flagged
+07205_p5_L06	42	9	M		agree-flagged
+07205_p5_L06	43	34	M		agree-flagged
+07205_p5_L06	44	23	M		agree-flagged
+07205_p5_L06	45	131	M		agree-flagged
+07205_p5_L06	46	w:les	M		agree-flagged
+07205_p5_L06	47	w:nouuelles	M	B:w:nouvelles	differ
+07205_p5_L06	48	w:que	H		agree
+07205_p5_L06	49	w:par	H		agree
+07205_p5_L06	50	w:la	H		agree
+07205_p5_L06	51	w:voye	M		agree-flagged
+07205_p5_L06	52	w:dangleterre	M		agree-flagged
+07205_p5_L06	53	w:nous	M		agree-flagged
+07205_p5_L06	54	w:sont	M	B:w:font	differ
+07205_p5_L06	55	w:venues	M	B:w:si	differ
+07205_p5_L06	56	w:comme	M	B:w:conches	differ
+07205_p5_L06	57	132	M		agree-flagged
+07205_p5_L06	58	74	M		agree-flagged
+07205_p5_L06	59	9	M		agree-flagged
+07205_p5_L06	60	119	M		agree-flagged
+07205_p5_L06	61	117	M		agree-flagged
+07205_p5_L06	62	82	M		agree-flagged
+07205_p5_L06	63	90	M		agree-flagged
+07205_p5_L06	64	24	M		agree-flagged
+07205_p5_L06	65	84	M		agree-flagged
+07205_p5_L06	66	102	M		agree-flagged
+07205_p5_L06	67	29	M		agree-flagged
+07205_p5_L06	68	71	M		agree-flagged
+07205_p5_L06	69	99	M		agree-flagged
+07205_p5_L06	70	82	M		agree-flagged
+07205_p5_L06	71	115	M		agree-flagged
+07205_p5_L06	72	84	M		agree-flagged
+07205_p5_L06	73	5	M		agree-flagged
+07205_p5_L06	74	33	M		agree-flagged
+07205_p5_L06	75	105	M		agree-flagged
+07205_p5_L06	76	114	M		agree-flagged
+07205_p5_L06	77	85	M	B:86	differ
+07205_p5_L06	78	15	M		agree-flagged
+07205_p5_L06	79	81	M		agree-flagged
+07205_p5_L06	80	2	M		agree-flagged
+07205_p5_L06	81	28	M		agree-flagged
+07205_p5_L06	82	81	M		agree-flagged
+07205_p5_L06	83	28	M		agree-flagged
+07205_p5_L06	84	38	M		agree-flagged
+07205_p5_L06	85	21	M		agree-flagged
+07205_p5_L06	86	11	M		agree-flagged
+07205_p5_L06	87	21	M		agree-flagged
+07205_p5_L06	88	82	M		agree-flagged
+07205_p5_L06	89	1	M		agree-flagged
+07205_p5_L06	90	80	M		agree-flagged
+07205_p5_L06	91	23	M		agree-flagged
+07205_p5_L06	92	85	M		agree-flagged
+07205_p5_L06	93	29	M		agree-flagged
+07205_p5_L06	94	128	M		agree-flagged
+07205_p5_L06	95	82	M		agree-flagged
+07205_p5_L06	96	31	M		agree-flagged
+07205_p5_L07	1	94	M	B:90	differ
+07205_p5_L07	2	101	M		agree-flagged
+07205_p5_L07	3	102	M		agree-flagged
+07205_p5_L07	4	22	M		agree-flagged
+07205_p5_L07	5	83	M		agree-flagged
+07205_p5_L07	6	120	M		agree-flagged
+07205_p5_L07	7	85	M		agree-flagged
+07205_p5_L07	8	30	M	B:38	differ
+07205_p5_L07	9	23	M		agree-flagged
+07205_p5_L07	10	79	M		agree-flagged
+07205_p5_L07	11	21	M		agree-flagged
+07205_p5_L07	12	104	M		agree-flagged
+07205_p5_L07	13	24	M		agree-flagged
+07205_p5_L07	14	32	M		agree-flagged
+07205_p5_L07	15	7	M		agree-flagged
+07205_p5_L07	16	37	M		agree-flagged
+07205_p5_L07	17	28	M		agree-flagged
+07205_p5_L07	18	112	M		agree-flagged
+07205_p5_L07	19	83	M		agree-flagged
+07205_p5_L07	20	28	M		agree-flagged
+07205_p5_L07	21	w:fidelles	M	B:w:fidelle	differ
+07205_p5_L07	22	w:elles	M	B:w:allant	differ
+07205_p5_L07	23	130	M		agree-flagged
+07205_p5_L07	24	85	M		agree-flagged
+07205_p5_L07	25	30	M		agree-flagged
+07205_p5_L07	26	27	M		agree-flagged
+07205_p5_L07	27	28	M		agree-flagged
+07205_p5_L07	28	55	M		agree-flagged
+07205_p5_L07	29	18	M		agree-flagged
+07205_p5_L07	30	39	M		agree-flagged
+07205_p5_L07	31	82	M		agree-flagged
+07205_p5_L07	32	85	M	B:45	differ
+07205_p5_L07	33	10	M		agree-flagged
+07205_p5_L07	34	40	M		agree-flagged
+07205_p5_L07	35	39	M		agree-flagged
+07205_p5_L07	36	81	M		agree-flagged
+07205_p5_L07	37	84	M		agree-flagged
+07205_p5_L07	38	37	M		agree-flagged
+07205_p5_L07	39	147	M		agree-flagged
+07205_p5_L07	40	128	M		agree-flagged
+07205_p5_L07	41	119	M		agree-flagged
+07205_p5_L07	42	84	M		agree-flagged
+07205_p5_L07	43	29	M		agree-flagged
+07205_p5_L07	44	28	M		agree-flagged
+07205_p5_L07	45	84	M		agree-flagged
+07205_p5_L07	46	71	M		agree-flagged
+07205_p5_L07	47	23	M		agree-flagged
+07205_p5_L07	48	83	M		agree-flagged
+07205_p5_L07	49	w:seroit	M		agree-flagged
+07205_p5_L07	50	w:faict	H		agree
+07205_p5_L07	51	131	M		agree-flagged
+07205_p5_L07	52	85	M	B:55	differ
+07205_p5_L07	53	299	M		agree-flagged
+07205_p5_L07	54	81	M		agree-flagged
+07205_p5_L07	55	31	M		agree-flagged
+07205_p5_L07	56	130	M		agree-flagged
+07205_p5_L07	57	21	M		agree-flagged
+07205_p5_L07	58	91	M	B:94	differ
+07205_p5_L07	59	82	M		agree-flagged
+07205_p5_L07	60	2	M		agree-flagged
+07205_p5_L07	61	133	M		agree-flagged
+07205_p5_L07	62	70	M		agree-flagged
+07205_p5_L07	63	101	M		agree-flagged
+07205_p5_L07	64	81	M		agree-flagged
+07205_p5_L07	65	2	M		agree-flagged
+07205_p5_L07	66	18	M		agree-flagged
+07205_p5_L07	67	38	M		agree-flagged
+07205_p5_L07	68	82	M		agree-flagged
+07205_p5_L07	69	94	M		agree-flagged
+07205_p5_L07	70	84	M		agree-flagged
+07205_p5_L07	71	70	M	B:74	differ
+07205_p5_L07	72	103	M		agree-flagged
+07205_p5_L07	73	74	M		agree-flagged
+07205_p5_L07	74	33	M		agree-flagged
+07205_p5_L07	75	120	M		agree-flagged
+07205_p5_L07	76	84	M		agree-flagged
+07205_p5_L07	77	28	M		agree-flagged
+07205_p5_L07	78	29	M		agree-flagged
+07205_p5_L07	79	101	M	B:81	differ
+07205_p5_L07	80	71	M		agree-flagged
+07205_p5_L07	81	21	M		agree-flagged
+07205_p5_L07	82	81	M		agree-flagged
+07205_p5_L07	83	121	M		agree-flagged
+07205_p5_L07	84	w:pat	M	B:w:sen	differ
+07205_p5_L07	85	w:sruinces	M	B:w:ensuivra	differ
+07205_p5_L08	1	w:seuetam	M	B:w:secretem	differ
+07205_p5_L08	2	w:torneure	M	B:w:jespere	differ
+07205_p5_L08	3	w:doues	M	B:w:bien	differ
+07205_p5_L08	4	w:tiran	M	B:w:tirant	differ
+07205_p5_L08	5	w:tor	M	B:w:sur	differ
+07205_p5_L08	6	w:combien	M		agree-flagged
+07205_p5_L08	7	129	M		agree-flagged
+07205_p5_L08	8	115	M		agree-flagged
+07205_p5_L08	9	82	M		agree-flagged
+07205_p5_L08	10	25	M	B:125	differ
+07205_p5_L08	11	14	M		agree-flagged
+07205_p5_L08	12	21	M		agree-flagged
+07205_p5_L08	13	104	M		agree-flagged
+07205_p5_L08	14	4	M	B:1	differ
+07205_p5_L08	15	71	M	B:81	differ
+07205_p5_L08	16	83	M		agree-flagged
+07205_p5_L08	17	27	M		agree-flagged
+07205_p5_L08	18	77	M		agree-flagged
+07205_p5_L08	19	101	M		agree-flagged
+07205_p5_L08	20	81	M		agree-flagged
+07205_p5_L08	21	1	M		agree-flagged
+07205_p5_L08	22	34	M		agree-flagged
+07205_p5_L08	23	9	M		agree-flagged
+07205_p5_L08	24	38	M		agree-flagged
+07205_p5_L08	25	32	M		agree-flagged
+07205_p5_L08	26	82	M		agree-flagged
+07205_p5_L08	27	20	M	B:26	differ
+07205_p5_L08	28	114	M		agree-flagged
+07205_p5_L08	29	81	M		agree-flagged
+07205_p5_L08	30	30	M	B:35	differ
+07205_p5_L08	31	21	M		agree-flagged
+07205_p5_L08	32	25	M		agree-flagged
+07205_p5_L08	33	70	M		agree-flagged
+07205_p5_L08	34	82	M		agree-flagged
+07205_p5_L08	35	30	M		agree-flagged
+07205_p5_L08	36	19	M		agree-flagged
+07205_p5_L08	37	104	M		agree-flagged
+07205_p5_L08	38	93	M		agree-flagged
+07205_p5_L08	39	1	M		agree-flagged
+07205_p5_L08	40	81	M		agree-flagged
+07205_p5_L08	41	27	M		agree-flagged
+07205_p5_L08	42	29	M		agree-flagged
