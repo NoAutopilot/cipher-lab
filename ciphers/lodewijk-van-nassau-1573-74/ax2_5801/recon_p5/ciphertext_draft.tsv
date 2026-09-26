@@ -1,0 +1,720 @@
+line	position	sign	confidence	alt	why
+05801_p5_L01	1	84	M	B:04	differ
+05801_p5_L01	2	55	M		agree-flagged
+05801_p5_L01	3	62	M		agree-flagged
+05801_p5_L01	4	3	M		agree-flagged
+05801_p5_L01	5	32	M		agree-flagged
+05801_p5_L01	6	102	M	B:132	differ
+05801_p5_L01	7	69	M	B:63	differ
+05801_p5_L01	8	4	M		agree-flagged
+05801_p5_L01	9	14	M		agree-flagged
+05801_p5_L01	10	5	M		agree-flagged
+05801_p5_L01	11	7	M		agree-flagged
+05801_p5_L01	12	83	M	B:82	differ
+05801_p5_L01	13	132	H		agree
+05801_p5_L01	14	129	H		agree
+05801_p5_L01	15	72	M	B:-	gap
+05801_p5_L01	16	60	M	B:112	differ
+05801_p5_L01	17	79	M		agree-flagged
+05801_p5_L01	18	36	M		agree-flagged
+05801_p5_L01	19	27	M	B:29	differ
+05801_p5_L01	20	47	M		agree-flagged
+05801_p5_L01	21	27	M		agree-flagged
+05801_p5_L01	22	132	H		agree
+05801_p5_L01	23	47	M	B:17	differ
+05801_p5_L01	24	12	M	B:62	differ
+05801_p5_L01	25	199	M		agree-flagged
+05801_p5_L01	26	125	M		agree-flagged
+05801_p5_L01	27	132	H		agree
+05801_p5_L01	28	=Toutefois	M	B:-	gap
+05801_p5_L01	29	=ne	M	B:=Rencontré	differ
+05801_p5_L01	30	=avons	M	B:=l'avons	differ
+05801_p5_L01	31	=point	M	B:=pourveu	differ
+05801_p5_L01	32	=aupres	M	B:=d'acquis	differ
+05801_p5_L01	33	=sil	M	B:=s'il	differ
+05801_p5_L01	34	=y	H		agree
+05801_p5_L01	35	=a	M	B:=avoit	differ
+05801_p5_L01	36	=quelque	M	B:=quelques	differ
+05801_p5_L01	37	=moyen	H		agree
+05801_p5_L01	38	=de	H		agree
+05801_p5_L01	39	=la	M	A:-	gap
+05801_p5_L01	40	=mettre	M	A:-	gap
+05801_p5_L01	41	=en	M	A:-	gap
+05801_p5_L01	42	=escripvre	M	A:-	gap
+05801_p5_L01	43	=le	M		agree-flagged
+05801_p5_L01	44	=conte	M	A:-	gap
+05801_p5_L01	45	=mettre	M	B:=Loys	differ
+05801_p5_L01	46	=a	M	B:=de	differ
+05801_p5_L01	47	=escripre	M	B:=Nassau	differ
+05801_p5_L02	1	=a	M	B:-	gap
+05801_p5_L02	2	=al	M	B:-	gap
+05801_p5_L02	3	=Glogmie	M	B:=Glogme	differ
+05801_p5_L02	4	172	M		agree-flagged
+05801_p5_L02	5	132	H		agree
+05801_p5_L02	6	129	H		agree
+05801_p5_L02	7	62	M		agree-flagged
+05801_p5_L02	8	37	M		agree-flagged
+05801_p5_L02	9	82	M		agree-flagged
+05801_p5_L02	10	80	M		agree-flagged
+05801_p5_L02	11	32	M		agree-flagged
+05801_p5_L02	12	65	M	B:66	differ
+05801_p5_L02	13	102	M		agree-flagged
+05801_p5_L02	14	74	M	B:34	differ
+05801_p5_L02	15	35	M		agree-flagged
+05801_p5_L02	16	87	M	B:84	differ
+05801_p5_L02	17	83	M	B:63	differ
+05801_p5_L02	18	38	M		agree-flagged
+05801_p5_L02	19	83	M		agree-flagged
+05801_p5_L02	20	73	M		agree-flagged
+05801_p5_L02	21	157	M		agree-flagged
+05801_p5_L02	22	132	H		agree
+05801_p5_L02	23	129	H		agree
+05801_p5_L02	24	175	M	B:145	differ
+05801_p5_L02	25	150	M		agree-flagged
+05801_p5_L02	26	=Je	M		agree-flagged
+05801_p5_L02	27	=suis	M		agree-flagged
+05801_p5_L02	28	=en	M	B:-	gap
+05801_p5_L02	29	=demande	M		agree-flagged
+05801_p5_L02	30	=estoit	M	A:-	gap
+05801_p5_L02	31	=et	M	A:-	gap
+05801_p5_L02	32	=estat	M	B:=a	differ
+05801_p5_L02	33	=ou	M	B:=fin	differ
+05801_p5_L02	34	=dequoy	M	B:=de	differ
+05801_p5_L02	35	=il	M	B:=pourvoir	differ
+05801_p5_L02	36	=plus	M		agree-flagged
+05801_p5_L02	37	=particulierement	M		agree-flagged
+05801_p5_L02	38	=quelle	M	B:-	gap
+05801_p5_L02	39	=sera	M	B:-	gap
+05801_p5_L02	40	=nostre	M	B:=quoy	differ
+05801_p5_L02	41	=resolution	M	B:=pour	differ
+05801_p5_L02	42	132	H		agree
+05801_p5_L02	43	129	H		agree
+05801_p5_L02	44	190	M		agree-flagged
+05801_p5_L02	45	73	M		agree-flagged
+05801_p5_L02	46	71	M	B:41	differ
+05801_p5_L02	47	86	M		agree-flagged
+05801_p5_L02	48	87	M		agree-flagged
+05801_p5_L02	49	82	M		agree-flagged
+05801_p5_L02	50	102	M		agree-flagged
+05801_p5_L02	51	24	M		agree-flagged
+05801_p5_L02	52	83	M		agree-flagged
+05801_p5_L02	53	52	M		agree-flagged
+05801_p5_L02	54	59	M		agree-flagged
+05801_p5_L02	55	79	M		agree-flagged
+05801_p5_L02	56	7	M		agree-flagged
+05801_p5_L02	57	109	M		agree-flagged
+05801_p5_L02	58	39	M		agree-flagged
+05801_p5_L02	59	=Du	M		agree-flagged
+05801_p5_L02	60	=bout	M		agree-flagged
+05801_p5_L02	61	170	M		agree-flagged
+05801_p5_L02	62	126	M		agree-flagged
+05801_p5_L02	63	132	H		agree
+05801_p5_L02	64	22	M		agree-flagged
+05801_p5_L02	65	82	M		agree-flagged
+05801_p5_L02	66	37	M		agree-flagged
+05801_p5_L02	67	26	M		agree-flagged
+05801_p5_L02	68	30	M		agree-flagged
+05801_p5_L02	69	105	M		agree-flagged
+05801_p5_L02	70	25	M		agree-flagged
+05801_p5_L02	71	132	H		agree
+05801_p5_L02	72	62	M		agree-flagged
+05801_p5_L02	73	190	M		agree-flagged
+05801_p5_L02	74	71	M	B:41	differ
+05801_p5_L02	75	132	H		agree
+05801_p5_L02	76	126	M		agree-flagged
+05801_p5_L02	77	122	M		agree-flagged
+05801_p5_L02	78	18	M		agree-flagged
+05801_p5_L02	79	5	M		agree-flagged
+05801_p5_L02	80	190	M		agree-flagged
+05801_p5_L02	81	126	M	B:132	differ
+05801_p5_L02	82	190	M		agree-flagged
+05801_p5_L02	83	129	H		agree
+05801_p5_L02	84	73	M		agree-flagged
+05801_p5_L02	85	87	M		agree-flagged
+05801_p5_L02	86	82	M		agree-flagged
+05801_p5_L02	87	126	M		agree-flagged
+05801_p5_L02	88	140	M		agree-flagged
+05801_p5_L02	89	61	M		agree-flagged
+05801_p5_L02	90	36	M		agree-flagged
+05801_p5_L02	91	132	H		agree
+05801_p5_L02	92	49	M	B:-	gap
+05801_p5_L02	93	101	M		agree-flagged
+05801_p5_L02	94	2	M		agree-flagged
+05801_p5_L02	95	7	M		agree-flagged
+05801_p5_L02	96	132	H		agree
+05801_p5_L03	1	83	M		agree-flagged
+05801_p5_L03	2	112	M		agree-flagged
+05801_p5_L03	3	114	M		agree-flagged
+05801_p5_L03	4	83	M		agree-flagged
+05801_p5_L03	5	125	M		agree-flagged
+05801_p5_L03	6	129	M		agree-flagged
+05801_p5_L03	7	72	M		agree-flagged
+05801_p5_L03	8	22	M		agree-flagged
+05801_p5_L03	9	132	H		agree
+05801_p5_L03	10	129	H		agree
+05801_p5_L03	11	83	M		agree-flagged
+05801_p5_L03	12	31	M		agree-flagged
+05801_p5_L03	13	59	M		agree-flagged
+05801_p5_L03	14	37	M		agree-flagged
+05801_p5_L03	15	22	M		agree-flagged
+05801_p5_L03	16	=faicte	M	B:=faune	differ
+05801_p5_L03	17	192	M		agree-flagged
+05801_p5_L03	18	121	M		agree-flagged
+05801_p5_L03	19	116	M	B:115	differ
+05801_p5_L03	20	81	M		agree-flagged
+05801_p5_L03	21	132	H		agree
+05801_p5_L03	22	190	M	B:140	differ
+05801_p5_L03	23	82	M		agree-flagged
+05801_p5_L03	24	25	M	B:35	differ
+05801_p5_L03	25	92	M		agree-flagged
+05801_p5_L03	26	73	M	A:-	gap
+05801_p5_L03	27	81	M	A:-	gap
+05801_p5_L03	28	2	M	A:-	gap
+05801_p5_L03	29	73	M		agree-flagged
+05801_p5_L03	30	81	M		agree-flagged
+05801_p5_L03	31	132	H		agree
+05801_p5_L03	32	129	H		agree
+05801_p5_L03	33	140	M		agree-flagged
+05801_p5_L03	34	22	M		agree-flagged
+05801_p5_L03	35	12	M	A:-	gap
+05801_p5_L03	36	223	M		agree-flagged
+05801_p5_L03	37	=pour	M		agree-flagged
+05801_p5_L03	38	=Sr	M	A:-	gap
+05801_p5_L03	39	=Fgm	M	B:=Jan	differ
+05801_p5_L03	40	=Idyo	M	B:=Hoyo	differ
+05801_p5_L03	41	124	M		agree-flagged
+05801_p5_L03	42	132	H		agree
+05801_p5_L03	43	190	M		agree-flagged
+05801_p5_L03	44	129	H		agree
+05801_p5_L03	45	121	M		agree-flagged
+05801_p5_L03	46	150	M		agree-flagged
+05801_p5_L03	47	=Pour	M		agree-flagged
+05801_p5_L03	48	=Cuoyr	M	B:=Cuype	differ
+05801_p5_L03	49	116	M		agree-flagged
+05801_p5_L03	50	7	M		agree-flagged
+05801_p5_L03	51	2	M		agree-flagged
+05801_p5_L03	52	27	M		agree-flagged
+05801_p5_L03	53	102	M		agree-flagged
+05801_p5_L03	54	83	M		agree-flagged
+05801_p5_L03	55	40	M		agree-flagged
+05801_p5_L03	56	23	M		agree-flagged
+05801_p5_L03	57	132	H		agree
+05801_p5_L03	58	12	M		agree-flagged
+05801_p5_L03	59	113	M		agree-flagged
+05801_p5_L03	60	38	M		agree-flagged
+05801_p5_L03	61	118	M		agree-flagged
+05801_p5_L03	62	88	M		agree-flagged
+05801_p5_L03	63	67	M		agree-flagged
+05801_p5_L03	64	78	M		agree-flagged
+05801_p5_L03	65	81	M		agree-flagged
+05801_p5_L03	66	7	M		agree-flagged
+05801_p5_L03	67	=France	M		agree-flagged
+05801_p5_L03	68	202	M		agree-flagged
+05801_p5_L03	69	13	M		agree-flagged
+05801_p5_L03	70	7	M		agree-flagged
+05801_p5_L03	71	59	M		agree-flagged
+05801_p5_L03	72	25	M		agree-flagged
+05801_p5_L03	73	132	H		agree
+05801_p5_L03	74	125	M		agree-flagged
+05801_p5_L03	75	199	M		agree-flagged
+05801_p5_L03	76	59	M		agree-flagged
+05801_p5_L03	77	40	M		agree-flagged
+05801_p5_L03	78	24	M		agree-flagged
+05801_p5_L03	79	32	M		agree-flagged
+05801_p5_L03	80	66	M		agree-flagged
+05801_p5_L03	81	105	M		agree-flagged
+05801_p5_L03	82	32	M	A:-	gap
+05801_p5_L03	83	77	M		agree-flagged
+05801_p5_L03	84	25	M		agree-flagged
+05801_p5_L03	85	129	M		agree-flagged
+05801_p5_L03	86	63	M		agree-flagged
+05801_p5_L03	87	32	M		agree-flagged
+05801_p5_L03	88	83	M		agree-flagged
+05801_p5_L03	89	72	M		agree-flagged
+05801_p5_L03	90	192	M		agree-flagged
+05801_p5_L03	91	37	M		agree-flagged
+05801_p5_L04	1	=contenant	M	B:-	gap
+05801_p5_L04	2	=se	M	B:	differ
+05801_p5_L04	3	=la	M	B:152	differ
+05801_p5_L04	4	=paix	M	B:71	differ
+05801_p5_L04	5	132	M	B:171	differ
+05801_p5_L04	6	152	M	B:3	differ
+05801_p5_L04	7	7	M	B:62	differ
+05801_p5_L04	8	38	M	B:4	differ
+05801_p5_L04	9	21	M	B:54	differ
+05801_p5_L04	10	24	M		agree-flagged
+05801_p5_L04	11	34	M	B:54	differ
+05801_p5_L04	12	30	M		agree-flagged
+05801_p5_L04	13	71	M	A:-	gap
+05801_p5_L04	14	56	M		agree-flagged
+05801_p5_L04	15	102	M		agree-flagged
+05801_p5_L04	16	71	M	B:99	differ
+05801_p5_L04	17	139	M		agree-flagged
+05801_p5_L04	18	=la	M	A:-	gap
+05801_p5_L04	19	=paix	M	A:-	gap
+05801_p5_L04	20	63	M		agree-flagged
+05801_p5_L04	21	37	M		agree-flagged
+05801_p5_L04	22	83	M		agree-flagged
+05801_p5_L04	23	=Isce	M	B:-	gap
+05801_p5_L04	24	138	M	B:-	gap
+05801_p5_L04	25	=Riez	M	B:77	differ
+05801_p5_L04	26	72	M		agree-flagged
+05801_p5_L04	27	27	M		agree-flagged
+05801_p5_L04	28	75	M		agree-flagged
+05801_p5_L04	29	67	M		agree-flagged
+05801_p5_L04	30	32	M		agree-flagged
+05801_p5_L04	31	32	M	B:52	differ
+05801_p5_L04	32	30	M		agree-flagged
+05801_p5_L04	33	=de	M	B:-	gap
+05801_p5_L04	34	57	M	B:54	differ
+05801_p5_L04	35	31	M		agree-flagged
+05801_p5_L04	36	28	M		agree-flagged
+05801_p5_L04	37	63	M		agree-flagged
+05801_p5_L04	38	26	M	B:36	differ
+05801_p5_L04	39	28	M		agree-flagged
+05801_p5_L04	40	102	M		agree-flagged
+05801_p5_L04	41	33	M	A:-	gap
+05801_p5_L04	42	22	M		agree-flagged
+05801_p5_L04	43	=en	M	B:-	gap
+05801_p5_L04	44	81	M	B:51	differ
+05801_p5_L04	45	3	M		agree-flagged
+05801_p5_L04	46	42	M		agree-flagged
+05801_p5_L04	47	72	M		agree-flagged
+05801_p5_L04	48	82	M	A:-	gap
+05801_p5_L04	49	29	M		agree-flagged
+05801_p5_L04	50	32	M		agree-flagged
+05801_p5_L04	51	=de	M	B:82	differ
+05801_p5_L04	52	=guerre	M		agree-flagged
+05801_p5_L04	53	331	M		agree-flagged
+05801_p5_L04	54	=prenant	M		agree-flagged
+05801_p5_L04	55	=fondement	M		agree-flagged
+05801_p5_L04	56	=sur	M	B:=pour	differ
+05801_p5_L04	57	91	M		agree-flagged
+05801_p5_L04	58	42	M	B:72	differ
+05801_p5_L04	59	31	M		agree-flagged
+05801_p5_L04	60	32	M	B:72	differ
+05801_p5_L04	61	22	M		agree-flagged
+05801_p5_L04	62	82	M	A:-	gap
+05801_p5_L04	63	12	M		agree-flagged
+05801_p5_L04	64	27	M		agree-flagged
+05801_p5_L04	65	34	M		agree-flagged
+05801_p5_L04	66	73	M	B:-	gap
+05801_p5_L04	67	38	M	B:79	differ
+05801_p5_L04	68	27	M		agree-flagged
+05801_p5_L04	69	28	M	A:-	gap
+05801_p5_L04	70	28	M		agree-flagged
+05801_p5_L04	71	81	M	B:83	differ
+05801_p5_L04	72	85	M		agree-flagged
+05801_p5_L04	73	62	M	A:-	gap
+05801_p5_L04	74	91	M		agree-flagged
+05801_p5_L04	75	117	M		agree-flagged
+05801_p5_L04	76	142	M		agree-flagged
+05801_p5_L04	77	129	M		agree-flagged
+05801_p5_L04	78	117	M	B:-	gap
+05801_p5_L04	79	132	M		agree-flagged
+05801_p5_L04	80	86	M	A:-	gap
+05801_p5_L05	1	83	M	B:65	differ
+05801_p5_L05	2	26	M		agree-flagged
+05801_p5_L05	3	27	M		agree-flagged
+05801_p5_L05	4	42	M	B:62	differ
+05801_p5_L05	5	76	M		agree-flagged
+05801_p5_L05	6	102	M	B:82	differ
+05801_p5_L05	7	37	M		agree-flagged
+05801_p5_L05	8	22	M		agree-flagged
+05801_p5_L05	9	203	M	B:-	gap
+05801_p5_L05	10	132	M		agree-flagged
+05801_p5_L05	11	190	M		agree-flagged
+05801_p5_L05	12	67	M		agree-flagged
+05801_p5_L05	13	73	M		agree-flagged
+05801_p5_L05	14	2	M	B:92	differ
+05801_p5_L05	15	34	M		agree-flagged
+05801_p5_L05	16	82	M		agree-flagged
+05801_p5_L05	17	3	M		agree-flagged
+05801_p5_L05	18	=France	M		agree-flagged
+05801_p5_L05	19	=et	M	B:-	gap
+05801_p5_L05	20	=Durdella	M	B:-	gap
+05801_p5_L05	21	102	M	B:202	differ
+05801_p5_L05	22	82	M		agree-flagged
+05801_p5_L05	23	27	M		agree-flagged
+05801_p5_L05	24	72	M		agree-flagged
+05801_p5_L05	25	68	M		agree-flagged
+05801_p5_L05	26	32	M		agree-flagged
+05801_p5_L05	27	83	M	A:-	gap
+05801_p5_L05	28	63	M	A:-	gap
+05801_p5_L05	29	83	M		agree-flagged
+05801_p5_L05	30	63	M		agree-flagged
+05801_p5_L05	31	36	M		agree-flagged
+05801_p5_L05	32	200	M		agree-flagged
+05801_p5_L05	33	142	M	B:172	differ
+05801_p5_L05	34	150	M		agree-flagged
+05801_p5_L05	35	=Dont	M	B:-	gap
+05801_p5_L05	36	=le	M	B:-	gap
+05801_p5_L05	37	=Roy	M	B:-	gap
+05801_p5_L05	38	=ayt	M	B:-	gap
+05801_p5_L05	39	=les	M	B:-	gap
+05801_p5_L05	40	=advancer	M	B:-	gap
+05801_p5_L05	41	=quoyque	M	B:=Quoy	differ
+05801_p5_L05	42	=la	M		agree-flagged
+05801_p5_L05	43	=ligne	M	A:-	gap
+05801_p5_L05	44	=coyne	M	B:=pour	differ
+05801_p5_L05	45	=le	M		agree-flagged
+05801_p5_L05	46	=Sr	M		agree-flagged
+05801_p5_L05	47	=d'Ellemont	M	A:-	gap
+05801_p5_L05	48	=dallemont	M	B:=De	differ
+05801_p5_L05	49	=et	M	B:=nos	differ
+05801_p5_L05	50	=vous	M	B:=venues	differ
+05801_p5_L05	51	=voye	M	B:=a	differ
+05801_p5_L05	52	=la	M		agree-flagged
+05801_p5_L05	53	=venue	M	B:=commission	differ
+05801_p5_L05	54	=opportune	M	B:=entiere	differ
+05801_p5_L05	55	=quoyque	M	B:=Quoy	differ
+05801_p5_L05	56	=les	M		agree-flagged
+05801_p5_L05	57	=advis	M	B:-	gap
+05801_p5_L05	58	=mesmes	M	B:=avons	differ
+05801_p5_L05	59	=affinsit	M	B:=exprimé	differ
+05801_p5_L05	60	=puisqu	M	B:=Esperant	differ
+05801_p5_L05	61	=on	M	B:=que	differ
+05801_p5_L05	62	=ne	M		agree-flagged
+05801_p5_L05	63	=se	M	B:=me	differ
+05801_p5_L05	64	=peult	M	B:=sera	differ
+05801_p5_L05	65	=fournir	M	B:=point	differ
+05801_p5_L05	66	=voire	M	B:=Voire	differ
+05801_p5_L05	67	=quand	M	B:=quoy	differ
+05801_p5_L05	68	=il	M	B:=qu'il	differ
+05801_p5_L05	69	=ne	M		agree-flagged
+05801_p5_L05	70	=feroit	M		agree-flagged
+05801_p5_L05	71	=autre	M		agree-flagged
+05801_p5_L05	72	=effect	M		agree-flagged
+05801_p5_L05	73	=neantmoins	M	B:=neanmoins	differ
+05801_p5_L05	74	=je	M	B:=Je	differ
+05801_p5_L05	75	=voulu	M	B:=pense	differ
+05801_p5_L05	76	=vous	M	B:=bien	differ
+05801_p5_L05	77	=en	M	B:=pouvoir	differ
+05801_p5_L05	78	62	M		agree-flagged
+05801_p5_L05	79	77	M		agree-flagged
+05801_p5_L05	80	7	M		agree-flagged
+05801_p5_L05	81	77	M		agree-flagged
+05801_p5_L05	82	8	M		agree-flagged
+05801_p5_L05	83	22	M		agree-flagged
+05801_p5_L05	84	132	H		agree
+05801_p5_L05	85	140	M		agree-flagged
+05801_p5_L05	86	42	M		agree-flagged
+05801_p5_L05	87	9	M	B:7	differ
+05801_p5_L05	88	82	M		agree-flagged
+05801_p5_L05	89	38	M		agree-flagged
+05801_p5_L05	90	29	M		agree-flagged
+05801_p5_L05	91	77	M		agree-flagged
+05801_p5_L05	92	37	M		agree-flagged
+05801_p5_L05	93	192	M		agree-flagged
+05801_p5_L05	94	13	M	B:-	gap
+05801_p5_L06	1	83	M	B:82	differ
+05801_p5_L06	2	54	M		agree-flagged
+05801_p5_L06	3	113	M		agree-flagged
+05801_p5_L06	4	83	M		agree-flagged
+05801_p5_L06	5	71	M		agree-flagged
+05801_p5_L06	6	73	M	B:93	differ
+05801_p5_L06	7	5	M		agree-flagged
+05801_p5_L06	8	83	M	B:-	gap
+05801_p5_L06	9	22	M	B:-	gap
+05801_p5_L06	10	123	M	B:-	gap
+05801_p5_L06	11	83	M	B:-	gap
+05801_p5_L06	12	112	M	B:-	gap
+05801_p5_L06	13	54	M	B:-	gap
+05801_p5_L06	14	1	M	B:-	gap
+05801_p5_L06	15	9	M	B:-	gap
+05801_p5_L06	16	102	M	B:-	gap
+05801_p5_L06	17	50	M	B:-	gap
+05801_p5_L06	18	83	M		agree-flagged
+05801_p5_L06	19	31	M	B:-	gap
+05801_p5_L06	20	84	M		agree-flagged
+05801_p5_L06	21	52	M		agree-flagged
+05801_p5_L06	22	132	H		agree
+05801_p5_L06	23	77	M		agree-flagged
+05801_p5_L06	24	84	M		agree-flagged
+05801_p5_L06	25	27	M		agree-flagged
+05801_p5_L06	26	72	M		agree-flagged
+05801_p5_L06	27	30	M		agree-flagged
+05801_p5_L06	28	73	M	B:-	gap
+05801_p5_L06	29	85	M	B:-	gap
+05801_p5_L06	30	132	M	B:-	gap
+05801_p5_L06	31	22	M	B:-	gap
+05801_p5_L06	32	120	M	B:-	gap
+05801_p5_L06	33	84	M	B:-	gap
+05801_p5_L06	34	3	M	B:-	gap
+05801_p5_L06	35	32	M	B:-	gap
+05801_p5_L06	36	12	M	B:-	gap
+05801_p5_L06	37	=[illegible name]	M	B:-	gap
+05801_p5_L06	38	129	M	B:128	differ
+05801_p5_L06	39	134	M	B:154	differ
+05801_p5_L06	40	125	M		agree-flagged
+05801_p5_L06	41	136	M		agree-flagged
+05801_p5_L06	42	=Le	M	B:=Je	differ
+05801_p5_L06	43	=fault	M	B:=suis	differ
+05801_p5_L06	44	=aviser	M	B:=direct	differ
+05801_p5_L06	45	=quoy	M		agree-flagged
+05801_p5_L06	46	141	M		agree-flagged
+05801_p5_L06	47	122	M		agree-flagged
+05801_p5_L06	48	132	M	A:-	gap
+05801_p5_L06	49	132	M		agree-flagged
+05801_p5_L06	50	42	M		agree-flagged
+05801_p5_L06	51	132	M		agree-flagged
+05801_p5_L06	52	129	M		agree-flagged
+05801_p5_L06	53	15	M		agree-flagged
+05801_p5_L06	54	72	M		agree-flagged
+05801_p5_L06	55	132	H		agree
+05801_p5_L06	56	129	M	B:124	differ
+05801_p5_L06	57	148	M		agree-flagged
+05801_p5_L06	58	12	M		agree-flagged
+05801_p5_L06	59	17	M	B:47	differ
+05801_p5_L06	60	13	M		agree-flagged
+05801_p5_L06	61	129	M		agree-flagged
+05801_p5_L06	62	133	M		agree-flagged
+05801_p5_L06	63	51	M		agree-flagged
+05801_p5_L06	64	127	M		agree-flagged
+05801_p5_L06	65	191	M		agree-flagged
+05801_p5_L06	66	7	M		agree-flagged
+05801_p5_L06	67	131	M	B:171	differ
+05801_p5_L06	68	73	M	B:43	differ
+05801_p5_L06	69	81	M		agree-flagged
+05801_p5_L06	70	28	M		agree-flagged
+05801_p5_L06	71	32	M		agree-flagged
+05801_p5_L06	72	62	M		agree-flagged
+05801_p5_L06	73	132	M	A:-	gap
+05801_p5_L06	74	190	M		agree-flagged
+05801_p5_L06	75	27	M		agree-flagged
+05801_p5_L06	76	12	M	A:-	gap
+05801_p5_L06	77	64	M		agree-flagged
+05801_p5_L06	78	144	M		agree-flagged
+05801_p5_L06	79	125	M		agree-flagged
+05801_p5_L06	80	83	M		agree-flagged
+05801_p5_L06	81	36	M		agree-flagged
+05801_p5_L06	82	50	M		agree-flagged
+05801_p5_L06	83	132	M		agree-flagged
+05801_p5_L06	84	67	M		agree-flagged
+05801_p5_L06	85	64	M	B:84	differ
+05801_p5_L06	86	102	M		agree-flagged
+05801_p5_L06	87	83	M	A:-	gap
+05801_p5_L06	88	82	M	A:-	gap
+05801_p5_L06	89	28	M	A:-	gap
+05801_p5_L06	90	147	M	A:-	gap
+05801_p5_L07	1	=Je	M		agree-flagged
+05801_p5_L07	2	=vous	M		agree-flagged
+05801_p5_L07	3	=pouvez	M		agree-flagged
+05801_p5_L07	4	=donner	M		agree-flagged
+05801_p5_L07	5	=nous	M	A:-	gap
+05801_p5_L07	6	=autres	M	A:-	gap
+05801_p5_L07	7	140	M	A:-	gap
+05801_p5_L07	8	54	M	A:-	gap
+05801_p5_L07	9	22	M	A:-	gap
+05801_p5_L07	10	7	M	A:-	gap
+05801_p5_L07	11	34	M	A:-	gap
+05801_p5_L07	12	28	M	A:-	gap
+05801_p5_L07	13	30	M	A:-	gap
+05801_p5_L07	14	84	M	A:-	gap
+05801_p5_L07	15	124	M	A:-	gap
+05801_p5_L07	16	13	M	A:-	gap
+05801_p5_L07	17	62	M	A:-	gap
+05801_p5_L07	18	102	M	A:-	gap
+05801_p5_L07	19	35	M	A:-	gap
+05801_p5_L07	20	132	M	A:-	gap
+05801_p5_L07	21	59	M	A:-	gap
+05801_p5_L07	22	104	M	A:-	gap
+05801_p5_L07	23	2	M	A:-	gap
+05801_p5_L07	24	35	M	A:-	gap
+05801_p5_L07	25	12	M	A:-	gap
+05801_p5_L07	26	72	M	A:-	gap
+05801_p5_L07	27	84	M	A:-	gap
+05801_p5_L07	28	140	M	A:-	gap
+05801_p5_L07	29	72	M	A:-	gap
+05801_p5_L07	30	125	M	A:-	gap
+05801_p5_L07	31	132	M	A:-	gap
+05801_p5_L07	32	84	M	A:-	gap
+05801_p5_L07	33	105	M	A:-	gap
+05801_p5_L07	34	72	M	A:-	gap
+05801_p5_L07	35	64	M	A:-	gap
+05801_p5_L07	36	31	M	A:-	gap
+05801_p5_L07	37	84	M	A:-	gap
+05801_p5_L07	38	3	M	A:-	gap
+05801_p5_L07	39	140	M	A:-	gap
+05801_p5_L07	40	=bon	M	B:197	differ
+05801_p5_L07	41	=ordre	M	B:125	differ
+05801_p5_L07	42	140	M		agree-flagged
+05801_p5_L07	43	124	M		agree-flagged
+05801_p5_L07	44	132	M		agree-flagged
+05801_p5_L07	45	83	M	B:82	differ
+05801_p5_L07	46	115	M		agree-flagged
+05801_p5_L07	47	142	M		agree-flagged
+05801_p5_L07	48	9	M		agree-flagged
+05801_p5_L07	49	102	M		agree-flagged
+05801_p5_L07	50	34	M		agree-flagged
+05801_p5_L07	51	139	M		agree-flagged
+05801_p5_L07	52	84	M	B:-	gap
+05801_p5_L07	53	22	M	B:-	gap
+05801_p5_L07	54	7	M	B:-	gap
+05801_p5_L07	55	34	M	B:-	gap
+05801_p5_L07	56	28	M	B:-	gap
+05801_p5_L07	57	30	M	B:-	gap
+05801_p5_L07	58	84	M	B:-	gap
+05801_p5_L07	59	124	M		agree-flagged
+05801_p5_L07	60	132	M		agree-flagged
+05801_p5_L07	61	83	M	B:82	differ
+05801_p5_L07	62	115	M		agree-flagged
+05801_p5_L07	63	132	M		agree-flagged
+05801_p5_L07	64	53	M		agree-flagged
+05801_p5_L07	65	145	M		agree-flagged
+05801_p5_L07	66	150	M		agree-flagged
+05801_p5_L07	67	124	M		agree-flagged
+05801_p5_L07	68	83	M	B:-	gap
+05801_p5_L07	69	102	M	B:-	gap
+05801_p5_L07	70	35	M	B:-	gap
+05801_p5_L07	71	132	M	B:-	gap
+05801_p5_L07	72	59	M	B:-	gap
+05801_p5_L07	73	109	M	B:-	gap
+05801_p5_L07	74	2	M		agree-flagged
+05801_p5_L07	75	35	M		agree-flagged
+05801_p5_L07	76	124	M		agree-flagged
+05801_p5_L07	77	12	M		agree-flagged
+05801_p5_L07	78	140	M		agree-flagged
+05801_p5_L07	79	150	M	B:110	differ
+05801_p5_L07	80	76	M	B:30	differ
+05801_p5_L07	81	39	M	B:31	differ
+05801_p5_L07	82	34	M		agree-flagged
+05801_p5_L07	83	83	M		agree-flagged
+05801_p5_L07	84	125	M	B:-	gap
+05801_p5_L07	85	132	M	B:-	gap
+05801_p5_L07	86	72	M	B:-	gap
+05801_p5_L07	87	84	M	B:-	gap
+05801_p5_L07	88	140	M	B:-	gap
+05801_p5_L07	89	72	M	B:-	gap
+05801_p5_L07	90	125	M		agree-flagged
+05801_p5_L07	91	132	M		agree-flagged
+05801_p5_L07	92	84	M		agree-flagged
+05801_p5_L07	93	105	M		agree-flagged
+05801_p5_L07	94	39	M	B:59	differ
+05801_p5_L07	95	39	M	B:59	differ
+05801_p5_L07	96	9	M		agree-flagged
+05801_p5_L07	97	125	M		agree-flagged
+05801_p5_L07	98	132	M		agree-flagged
+05801_p5_L07	99	9	M		agree-flagged
+05801_p5_L07	100	4	M	B:9	differ
+05801_p5_L07	101	132	M		agree-flagged
+05801_p5_L07	102	72	M	B:-	gap
+05801_p5_L07	103	64	M	B:-	gap
+05801_p5_L07	104	39	M	B:-	gap
+05801_p5_L07	105	84	M	B:-	gap
+05801_p5_L07	106	3	M	B:-	gap
+05801_p5_L07	107	140	M	B:-	gap
+05801_p5_L07	108	147	M	B:197	differ
+05801_p5_L07	109	125	M		agree-flagged
+05801_p5_L07	110	6	M	A:-	gap
+05801_p5_L07	111	132	M		agree-flagged
+05801_p5_L07	112	125	M		agree-flagged
+05801_p5_L07	113	190	M		agree-flagged
+05801_p5_L07	114	99	M		agree-flagged
+05801_p5_L07	115	83	M	B:82	differ
+05801_p5_L07	116	123	M	B:133	differ
+05801_p5_L07	117	190	M		agree-flagged
+05801_p5_L08	1	28	M		agree-flagged
+05801_p5_L08	2	61	M		agree-flagged
+05801_p5_L08	3	3	M		agree-flagged
+05801_p5_L08	4	27	M		agree-flagged
+05801_p5_L08	5	132	H		agree
+05801_p5_L08	6	124	M		agree-flagged
+05801_p5_L08	7	32	M		agree-flagged
+05801_p5_L08	8	8	M		agree-flagged
+05801_p5_L08	9	39	M		agree-flagged
+05801_p5_L08	10	35	M		agree-flagged
+05801_p5_L08	11	82	M		agree-flagged
+05801_p5_L08	12	30	M	B:-	gap
+05801_p5_L08	13	87	M	B:-	gap
+05801_p5_L08	14	7	M	B:-	gap
+05801_p5_L08	15	102	M	B:-	gap
+05801_p5_L08	16	25	M	B:-	gap
+05801_p5_L08	17	72	M	B:-	gap
+05801_p5_L08	18	5	M	B:-	gap
+05801_p5_L08	19	113	M	B:-	gap
+05801_p5_L08	20	62	M	B:-	gap
+05801_p5_L08	21	172	M	B:-	gap
+05801_p5_L08	22	140	M	B:-	gap
+05801_p5_L08	23	27	M		agree-flagged
+05801_p5_L08	24	62	M		agree-flagged
+05801_p5_L08	25	34	M		agree-flagged
+05801_p5_L08	26	64	M		agree-flagged
+05801_p5_L08	27	25	M		agree-flagged
+05801_p5_L08	28	12	M		agree-flagged
+05801_p5_L08	29	134	M		agree-flagged
+05801_p5_L08	30	125	M		agree-flagged
+05801_p5_L08	31	112	M		agree-flagged
+05801_p5_L08	32	83	M	B:-	gap
+05801_p5_L08	33	140	M	B:-	gap
+05801_p5_L08	34	145	M	B:-	gap
+05801_p5_L08	35	27	M	B:-	gap
+05801_p5_L08	36	85	M	B:-	gap
+05801_p5_L08	37	72	M	B:-	gap
+05801_p5_L08	38	6	M	B:-	gap
+05801_p5_L08	39	38	M	B:-	gap
+05801_p5_L08	40	24	M	B:-	gap
+05801_p5_L08	41	25	M	B:-	gap
+05801_p5_L08	42	132	M	B:-	gap
+05801_p5_L08	43	=et	M	B:-	gap
+05801_p5_L08	44	=Harlem	M		agree-flagged
+05801_p5_L08	45	80	M		agree-flagged
+05801_p5_L08	46	81	M		agree-flagged
+05801_p5_L08	47	223	M		agree-flagged
+05801_p5_L08	48	=A	M		agree-flagged
+05801_p5_L08	49	=tant	M		agree-flagged
+05801_p5_L08	50	=pour	M	B:-	gap
+05801_p5_L08	51	=Normandie	M	B:=sur	differ
+05801_p5_L08	52	=luy	M	B:=commandement	differ
+05801_p5_L08	53	=asseurer	M	B:=bien	differ
+05801_p5_L08	54	=quil	M	B:=affectionne	differ
+05801_p5_L08	55	=a	M		agree-flagged
+05801_p5_L08	56	=vos	M		agree-flagged
+05801_p5_L08	57	=choses	M	A:-	gap
+05801_p5_L08	58	=Dieu	M	A:-	gap
+05801_p5_L08	59	=quil	M	A:-	gap
+05801_p5_L08	60	=ait	M	A:-	gap
+05801_p5_L08	61	=maintien	M	A:-	gap
+05801_p5_L08	62	=vostre	M	A:-	gap
+05801_p5_L08	63	=xxviij	M	A:-	gap
+05801_p5_L08	64	=mars	M	A:-	gap
+05801_p5_L08	65	=1573	M	A:-	gap
+05801_p5_L08	66	8	M	A:-	gap
+05801_p5_L08	67	39	M	A:-	gap
+05801_p5_L08	68	35	M	A:-	gap
+05801_p5_L08	69	82	M	A:-	gap
+05801_p5_L08	70	30	M	A:-	gap
+05801_p5_L08	71	87	M	A:-	gap
+05801_p5_L08	72	7	M	A:-	gap
+05801_p5_L08	73	102	M	A:-	gap
+05801_p5_L08	74	29	M	A:-	gap
+05801_p5_L08	75	42	M	A:-	gap
+05801_p5_L08	76	7	M	A:-	gap
+05801_p5_L08	77	113	M	A:-	gap
+05801_p5_L08	78	62	M	A:-	gap
+05801_p5_L08	79	172	M	A:-	gap
+05801_p5_L08	80	=bons	M	B:140	differ
+05801_p5_L08	81	=amis	M	B:125	differ
+05801_p5_L08	82	=pourra	M	B:112	differ
+05801_p5_L08	83	=dire	M	B:82	differ
+05801_p5_L08	84	=quil	M	B:140	differ
+05801_p5_L08	85	=ny	M	B:145	differ
+05801_p5_L08	86	=maistulx	M	B:27	differ
+05801_p5_L08	87	=nauffres	M	B:85	differ
+05801_p5_L08	88	=vous	M	B:72	differ
+05801_p5_L08	89	=faires	M	B:6	differ
+05801_p5_L08	90	=en	M	B:38	differ
+05801_p5_L08	91	=la	M	B:29	differ
+05801_p5_L08	92	=plus	M	B:28	differ
+05801_p5_L08	93	=prompte	M	B:172	differ
+05801_p5_L08	94	=diligence	M	B:=Vostre	differ
+05801_p5_L08	95	=faicte	M	B:=bien	differ
+05801_p5_L08	96	=a	M	B:=bon	differ
+05801_p5_L08	97	=Delft	M	B:=frere	differ
+05801_p5_L08	98	=ce	M	B:=pour	differ
+05801_p5_L08	99	=viij	M	B:=vous	differ
+05801_p5_L08	100	=mars	M	B:=faire	differ
+05801_p5_L08	101	1573	M	B:=service	differ
+05801_p5_L09	1	=Guill[aum]e	M	B:=Guillaume	differ
+05801_p5_L09	2	=de	M		agree-flagged
+05801_p5_L09	3	=Nassau	M		agree-flagged
