@@ -5,3 +5,8 @@ corpora: tools/data/fr16/lettresdecatheri01cathuoft_djvu.txt.gz, tools/data/fr16
 control seeds [1, 2, 3], restarts 8, gate 0.6, params profile=target
 row -> ciphers/lodewijk-van-nassau-1573-74/HYPOTHESES.md; decode -> ciphers/lodewijk-van-nassau-1573-74/families/homophonic-1-profile=target-ax4612h3freehomo.txt
 CONTROL seed 1: N=775 K=91 recovery 0.959 score -1593.03
+CONTROL seed 2: N=775 K=87 recovery 0.443 score -1846.55
+CONTROL seed 3: N=775 K=93 recovery 0.579 score -1828.29
+TARGET best score -1865.040; decode -> ciphers/lodewijk-van-nassau-1573-74/families/homophonic-1-profile=target-ax4612h3freehomo.txt; judge: FAIL language: score=-1.213, null_p99=-1.718, real_p05=-0.944, real_median=-0.818, mode=both, N=775
+row appended to ciphers/lodewijk-van-nassau-1573-74/HYPOTHESES.md
+exit 0
