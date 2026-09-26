@@ -1735,3 +1735,41 @@ touches no default path, and `tools/tests/test_syllabary.py` passes in 4 s).
 Requests: none (disk only). Regenerate: `python3 tools/family_run.py specs/fr2933-salviati-1525.json --family syllabary --seed S --seeds 1
 --restarts 24 --param err=0.05 --param marks=mixed` (V1), `... --param marks=mixed --param boundary=1` (V2), `... --param bases=8
 --param boundary=1` (V3); about 6 minutes per seed alone, control then target. Test: `python3 tools/tests/test_syllabary.py`.
+
+## SALV-DIAG: extending the control error sweep 10-14 pct (26 Sept 2026, RETRO-2026-09-26a diagnostic)
+
+Worker parent SALV-DIAG (Sonnet, cap $3, box 35 minutes), 09:53-10:06 UTC. Brief
+`.claude/briefs/runs/2026-09-26-parent-salv-diag.md`. Disk only, no hosts, no subagents. **No reading; no family re-run on the
+target; status stays partial.** Regular-assignment syllabary design (DSN sec.1), control-only, 3 seeds, 6 restarts, same corpus
+and settings as DSN's own 0/5/7% rows, `--param err=0.10/0.12/0.14`:
+
+| err | recovery (seed 1/2/3) | mean | gate 0.6 | score/symbol (seed 1/2/3) | mean |
+|---|---|---|---|---|---|
+| 0.10 | 90.2 / 87.2 / 89.5% | 0.889 | met (3/3) | -3.235 / -3.248 / -3.247 | -3.243 |
+| 0.12 | 26.1 / 76.3 / 88.4% | 0.636 | met (mean only; seed 1 alone at 26.1%) | -3.578 / -3.371 / -3.268 | -3.405 |
+| 0.14 | 86.5 / 83.9 / 83.2% | 0.845 | met (3/3) | -3.280 / -3.318 / -3.287 | -3.295 |
+
+(score/symbol = best restart score / stream length, the same quantity DSN's decode-file header calls `score_per_symbol`; recovered
+directly since `--control-only` does not write a decode file, using `score / sum(len(m) for m in cm)` from the tool's own control
+loop, which is the same stream-length denominator `solve()` uses.)
+
+Compared against DSN's own 5%/7% control rows (score/symbol -2.36 to -2.38 at 5%, -2.41 to -2.48 at 7%) and the target's own
+reading (-2.754 to -2.773/symbol, regular assignment, DSN sec.4; -2.686 to -2.689, irregular assignment, two gated seeds): **the
+crossover is not inside 10-14 pct, it is already behind it.** By 10% error the control's score/symbol (-3.235 to -3.248) is
+already well past (more negative than) the target's own stuck range, and 12%/14% stay in the same -3.27 to -3.58 band --
+noisy but not recovering back up to the target's -2.75 to -2.77. The crossover sits **between 7% and 10%** (control -2.41 to
+-2.48 at 7%, sinking past -3.2 by 10%): a jump of about 0.8 nats over 3 points, much steeper than the 0.06-0.1 nats per 2 points
+seen from 0% to 7% -- not a smooth degradation but a cliff, consistent with 12%'s seed 1 recovery collapsing to 26.1% (a single
+restart failing to converge) while seeds 2/3 stay at 76-88%: past about 8-9% error this solver's anneal starts failing to
+converge on some seeds rather than degrading gracefully on all of them.
+
+**This crossover (about 8-9%) sits inside the plausible true-error range** (the 14.6% raw pass A/B disagreement figure this
+diagnostic was asked to check it against, CLAUDE.md rule 3's PX-BRODEC-style notation caveat aside): per the brief's own decision
+rule, the design-family negatives (DSN sec.3-4, DSN2) are **non-tests at the plausible measured error**, not evidence the design
+is wrong. Named next step: **transcription pass C** (cut the raw disagreement below the 5-7% band the 5%/7% controls were run
+at) before any further design variant is worth funding; the word-level nomenclator scorer (DSN sec.5(b)) is not the next USD 10
+until that pass runs, per the brief. NEAR.md and this target's own next-step cell updated accordingly; no family was re-run on
+the target itself; status stays `partial`.
+
+Regenerate: `python3 tools/family_run.py specs/fr2933-salviati-1525.json --family syllabary --control-only --seeds 3 --restarts 6
+--param err=0.10` (`0.12`, `0.14`); about 2.3 minutes each, control-only (no target run, no cost beyond CPU).
