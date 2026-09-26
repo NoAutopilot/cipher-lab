@@ -369,3 +369,101 @@ qualifying held-out tokens above today's N=15) or a structural constraint on gro
 lengths are currently free 0-14 letters; a lexicon-constrained beam search over the code's likely entries, the way
 Forster 1644's solve used a lexicon rather than free n-gram hill-climbing, per LESSONS.md section 2, is untried).
 Status unchanged: `open` (the target's own status line; not touched by this job beyond this dated section).
+
+## NX-LAU2, 26 September 2026 (LANE NX worker, desk search for more glossed Lauriere/Nevers material)
+
+Brief `.claude/briefs/runs/2026-09-26-lane-nx-lau2.md`. Desk search and image look only, per this brief -- no
+transcription, no alignment, no cryptanalysis. NX-LAU's own next step (26 Sept, above) named "another glossed
+Laurière letter" as the cheapest untried move; this session searched for one and, more usefully, found a
+candidate period *key* (rule 3's own framing: "a period KEY in that list would beat any number of glosses").
+
+### Candidates found
+
+| shelfmark | item/folio | ark / canvas | date | cipher? | glossed? | rough count | notes |
+|---|---|---|---|---|---|---|---|
+| Français 3625 no.10 (known) | f.10r, item 10 | btv1b52511322v, canvas 31 | 13 Jul 1593 | yes | yes | 7 runs (R1-R7) | already on file, NX-LAU's own control target |
+| Français 3625 no.55 (target) | f.66r, item 55 | btv1b52511322v, canvas 143 | 9 Jul 1593 | yes | no (2 words only) | n/a | the target letter itself |
+| **Français 3632 no.8 (new)** | f.15, item 8 | **not digitized** -- no Gallica ark found (Gallica SRU checked, no hit; finding-aid page carries no `pictoGallica` badge / no `btv1b*` link) | undated in the finding aid (volume spans roughly 1590 to after 1593, per neighbouring items 6 and 46) | yes ("avec chiffre et déchiffrement" per the finding aid's own wording) | **yes, per the finding-aid text** (same "avec chiffre et déchiffrement" construction BnF uses for no.10, which is known-glossed) -- not visually confirmed, no image available | unknown, not viewed | new Laurière-to-Nevers letter, not in either solver repo, not in DECODE's local snapshot (`grep 3632` on `sources/decode/*.tsv`, no hit); a copy-order or archive-visit target (REQUEST.md/ASKS.md), not copy-free |
+| **BnF fr.3995 no.57 (Tomokiyo catalogue, new)** | fol.102 | `btv1b525085665` (fr.3995's own Gallica ark, per `nevers.htm`'s intro); no.57's own canvas within that book not resolved this pass | Feb 1593 (endorsement date; the cipher was reused through Aug 1593 per Tomokiyo) | n/a -- this is a **key table**, not a letter | n/a | n/a | **viewed in full**, `sources/cryptiana/web/nevers_no57.png` (fetched this pass, 930 KB, a "mosaicized from three images" composite already on Tomokiyo's own page) -- see below |
+| BnF fr.3985 fol.58 (the letter no.57's own key was used on) | fol.58 | `btv1b90606498` (confirmed via IIIF manifest metadata: Shelfmark "Français 3985"), 485 canvases, **no folio labels at all** (same shape as fr.16092 in the CLAUDE.md host table -- needs eye-checked `--anchor` pairs before a specific canvas can be fetched) | 12 Aug 1593 | yes | no (this is the key's *application*, not a second glossed source) | n/a | not viewed this pass (canvas unresolved, kept within the 10-image budget); next worker's first step if pursuing this key |
+
+### The no.57 finding, in more detail
+
+Tomokiyo's `nevers.htm` catalogues BnF fr.3995 no.57 (fol.102, Feb 1593) as: "Substitution by symbols.
+Homophones. Figures 1-72 represent two-letter syllables and 73-98 represent double letters. 99-353 represent
+words, while 1-69 with an overbar represent provinces and towns. Special symbols represent names." He names its
+correspondent as **"Mons. de Laveriere" [Honoré Mauroy La Verrière]** (his own bracketed identification, not an
+OCR artefact -- the endorsement itself reads "Mons. de Laveriere" on fol.102v, place "Chartres"), and cites its use
+"in a letter from Laveriere to the Duke of Nevers, Poissy, 12 August 1593 (BnF fr.3985 fol.58)."
+
+**This is not confirmed to be the same person as our target's "Laurière."** The names are visually close
+("Laveriere" / "Laurière") but Tomokiyo's own gloss treats them as a specific, named individual (La Verrière,
+not La Rivière or Laurière), and BnF's finding-aid search (below) returns "Laurière" and "Laveriere"/"La
+Verrière" as distinct name-authority entries. Flagging the resemblance, not asserting identity.
+
+What is worth testing, without doing the test here (out of this brief's scope): the *range structure* Tomokiyo
+describes for no.57 (short function-word codes at or below 72, full-word codes in 99-353) is compatible on its
+face with every one of Bourdeau's twelve already-published (grade C) meanings for fr.3625's own code --
+`59`=du, `25`=le/la/que, `26`=a/de (all <=72, the syllable/short-word band) and `335`=le Roy, `346`=volonté,
+`141`=soit, `288`=Catholique, `334`, `107` (all in 99-353, the word band) -- with no value from either list
+falling outside where the other would predict it. This is a desk-level compatibility check (comparing two
+already-published range descriptions), not a new decode of anything, and it is exactly the kind of match rule 3
+says to control before trusting: whether fr.3625's cipher *is* fr.3995 no.57, a closely related system reused
+across correspondents to Nevers in 1593 (several of Tomokiyo's other entries document exactly that pattern, e.g.
+no.36 "Chiffre pour Monsieur de Nevers avec le Roy" used by several senders), or an unrelated coincidence of a
+common design convention needs a real test (apply no.57's actual table, read off the same entries Bourdeau's 12
+anchors give, and gate against a shuffled/relabelled control per rule 3) before it is reported as anything more
+than "worth testing."
+
+Bourdeau's own `champagne1590/NOTES.md` (checked again this pass at the same commit `fc0c9e865d0fae67ca92d19750d2b09ab11972e0`
+as NX-LAU used) states he reviewed Tomokiyo's nevers.htm catalogue and tested **no.46** against a different,
+unrelated fr.3623 cipher ("does not fit") -- he does not record testing no.57 against anything, and specifically
+against fr.3625: no.57 is an untested candidate, not a ruled-out one.
+
+### BnF search method (step 1)
+
+`archivesetmanuscrits.bnf.fr`'s own free-text name search (`POST resultatRechercheSimple.html`,
+`TEXTE_LIBRE_INPUT=Lauriere`, per the route QUEUE.md's M22 pass already documented) searches the whole BnF
+manuscripts catalogue, not one shelfmark range, so it supersedes this brief's narrower ask (walk fr.3620-3650,
+fr.3980-4020, fr.4700s by hand): 33 raw hits, of which exactly three are the 1592-94 Nevers-correspondence sense
+of the name (fr.3625 no.10, fr.3625 no.55, and the new fr.3632 no.8 above); the rest are unrelated people sharing
+the surname across other centuries (Philippe de Pompadour marquis de Laurière, François Laurière, Dorré de
+Laurière's legal treatise, a 1972 reader-letter correspondent, a Louis Bertrand correspondence item). Gallica SRU
+(`dc.title`/general queries for "Français 3632", "Français 3985") was used only to check digitization status of
+the two new leads, not as a name search (SRU indexes catalogue-title-level metadata, not item-level finding-aid
+text, confirmed again this pass -- consistent with NX-LAU's own 24 Sept finding for fr.3625's Gomberville check).
+
+### Step 2 (Bourdeau) and step 3 (Tomokiyo key list)
+
+Both folded into the sections above: Bourdeau's `champagne1590/` names no other Lauriere letter and tested only
+no.46 from Tomokiyo's key list; Tomokiyo's own list gives no.57 as a real, previously-unconsidered-for-this-target
+candidate key. `gallica_sweep/bnf_candidates.txt` (Bourdeau's own broader keyword sweep across the Colbert/Dupuy/
+Ségur/Navarre/Villeroy/Bellièvre/Nevers volumes, checked this pass) has exactly one "Lauri" hit, the same fr.3625
+no.55 already on file -- no coverage of fr.3980-4020 or fr.4700s specifically (it is a keyword sweep of SRU hits,
+not an exhaustive per-shelfmark walk), consistent with the BnF name-search above being the more complete route.
+
+### Next step
+
+Two independent leads, in order of promise: (1) **test BnF fr.3995 no.57's published table against fr.3625's
+known codes** (a real decode-and-gate exercise, rule 3 control included, not a glossed-letter alignment problem
+at all -- if it fits, this replaces the whole "find more glosses" approach). This needs no new image: no.57's
+table is already on disk (`sources/cryptiana/web/nevers_no57.png`) and fr.3625's ciphertext is already on disk
+(`bourdeau_ref/ct_3625_55.txt`, `align/runs.tsv`). (2) If (1) fails, **fr.3632 no.8** is a second glossed Laurière
+letter to fold into NX-LAU's leave-one-out alignment (would raise N from today's 15 qualifying tokens), but it is
+not digitized -- write a REQUEST.md/ASKS.md row for a BnF copy order or reading-room visit before it can be used.
+Status unchanged: `open`.
+
+Requests this session: cryptiana.web.fc2.com 2 (1 reachability check, 1 image fetch, both HTTP 200, 1.5s+ apart);
+archivesetmanuscrits.bnf.fr 6 (1 reachability re-check of the fr.3625 record, HTTP 200; 2 failed attempts at the
+bare site root, `ws_closed_mid_exchange` tunnel resets per `/__agentproxy/status`, one retry per the good-citizen
+rule, not pursued further since the deep-link routes worked fine; 1 search POST, HTTP 200; 2 attempts at the
+fr.3632 record, 1 tunnel reset + 1 retry succeeded, HTTP 200); gallica.bnf.fr 4 (3 SRU queries, 1 IIIF manifest
+fetch, all HTTP 200, 1.5s+ apart); github.com 1 shallow clone (`dbourdeau/cyphersolver`, grep only, deleted after
+use). No aymeloglu/unsolved-ciphers clone this pass (NX-LAU already re-checked it this session's window and
+found nothing for this target; re-cloning it again added nothing new to search for a name query that repo's own
+earlier grep already covered).
+
+Credit: S. Tomokiyo, "Catalogue of Ciphers (Mainly Related to Duke of Nevers) in BnF fr.3995" (cryptiana.web.fc2.com/code/nevers.htm)
+for the no.57 catalogue entry and key-table image; D. Bourdeau, cyphersolver (`champagne1590/`), for the prior
+key-list review this session cross-checked. Rule 10: no novelty claim made; this is a search result, listing
+candidates for a future worker, not a reading.

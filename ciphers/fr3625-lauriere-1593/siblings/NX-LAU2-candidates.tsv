@@ -1,0 +1,6 @@
+shelfmark	item_folio	ark_or_canvas	date	cipher	glossed	rough_group_count	notes
+Français 3625 no.10 (known)	f.10r item 10	btv1b52511322v canvas 31	13 Jul 1593	yes	yes	7 runs (R1-R7)	already on file, NX-LAU control target
+Français 3625 no.55 (target)	f.66r item 55	btv1b52511322v canvas 143	9 Jul 1593	yes	no (2 words)	n/a	the target letter itself
+Français 3632 no.8 (new)	f.15 item 8	not digitized, no Gallica ark found	undated in finding aid (volume ~1590-1593+)	yes	yes, per finding-aid text (avec chiffre et dechiffrement)	unknown, not viewed	new Lauriere-to-Nevers letter; needs a BnF copy order or reading-room visit; not in DECODE local snapshot or either solver repo
+BnF fr.3995 no.57 key table (new)	fol.102	btv1b525085665, canvas within not resolved	Feb 1593 (reused through Aug 1593)	n/a (key, not a letter)	n/a	n/a	viewed in full, sources/cryptiana/web/nevers_no57.png; correspondent "Laveriere/La Verriere" NOT confirmed same person as "Lauriere"; range structure compatible on its face with Bourdeau's 12 published meanings -- untested, needs a real decode+control per rule 3
+BnF fr.3985 fol.58 (no.57 key's own application)	fol.58	btv1b90606498, 485 canvases, no folio labels	12 Aug 1593	yes	no (key application, not a second glossed source)	n/a	not viewed this pass; canvas needs eye-checked --anchor pairs (same shape as fr.16092 in the CLAUDE.md host table)

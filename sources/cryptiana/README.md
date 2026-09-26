@@ -73,3 +73,9 @@ descriptive User-Agent, all HTTP 200.
 | `blog/2026-09-a-cipher-between-louise-of-savoy-and.html` | https://cryptiana.blogspot.com/2026/09/a-cipher-between-louise-of-savoy-and.html | 26 Sep 2026, ~06:36 UTC | 89594 | 82ba3461600e937c4eefd85f0c2700f2ae28e5aa | Tomokiyo's post on the Raince/Carpi letter, citing our AUDIT.md (via "Ryan Turner", the pseudonym already in use per rule 9) |
 | `blog/2026-06-undecoded-armstrongs-letter-1808-sent.html` | https://cryptiana.blogspot.com/2026/06/undecoded-armstrongs-letter-1808-sent.html | 26 Sep 2026, ~06:36 UTC | 85731 | 1e3c9b03b05ac7b1e80caa351a4dd731eb9cc6b6 | Tomokiyo's 4 June 2026 post pointing at his updated `web/madison_armstrong.htm` article (already on disk from an earlier sweep) |
 | `blog/dbourdeau-cyphersolver-armstrong.html` | https://dbourdeau.github.io/cyphersolver/armstrong.html | 26 Sep 2026, ~06:36 UTC | 36000 | fde7d4c764f53a2e05a97a976f038333550d80dc | Bourdeau's write-up of a *different* Armstrong-Madison letter (the 30 Aug 1808 postscript, code THE=972) -- named in ciphers/armstrong-madison-1808/NOTES.md as the source of the THE=972 sibling-code table |
+
+## Added 26 September 2026 (ciphers/fr3625-lauriere-1593, NX-LAU2 desk search)
+
+| File | URL | Fetched | Bytes | For |
+|---|---|---|---|---|
+| `web/nevers_no57.png` | https://cryptiana.web.fc2.com/code/nevers_no57.png | 26 Sep 2026, ~09:34 UTC | 930301 | BnF fr.3995 no.57's key table image (fol.102, "Mons. de Laveriere" to Nevers) -- a candidate period key for fr.3625's Laurière cipher, structurally compatible on its face with Bourdeau's twelve already-published code meanings; not confirmed as the same system. See ciphers/fr3625-lauriere-1593/NOTES.md "NX-LAU2" section. |
