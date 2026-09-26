@@ -727,3 +727,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T05:20Z	session_0165ngZj99X1vWbYwRJVZ3Qu	LANE B7 bSZM (Sonnet, cap 3)	szembek-bk1560 merge: aligner key, shuffle control, reading, judge, print_check	brief 2026-09-26-lane-b7-szmerge.md
 2026-09-26T05:20Z	session_019XtyxkfHUUVLkhazHEjhGQ	LANE B7 bZES (Sonnet, cap 3)	zeschau-seebach-1841 intake + R5005 crib on R5006-8	brief 2026-09-26-lane-b7-zes.md
 2026-09-26T05:20Z	session_01AbUqt3f3Ep8ivJfSTDCgn5	LANE B7 bMAL3 (Sonnet, cap 3)	malsburg reconcile + spec + IC/family_run	brief 2026-09-26-lane-b7-mal3.md
+2026-09-26T05:20Z	session_01FS7JkXfECRNTU6KGZEdLqK	PR-LAND-2	done 1.99, ledgered D, retitled ARCHIVED, archived by 7f	PRs 16-20 landed df988ad; JSTOR 80-83/88-91 no relevant hit
