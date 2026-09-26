@@ -67,3 +67,8 @@ applied unchanged, and three named cycle-3 briefs written from it.
   files it (KEYS.md, ASKS.md, ROOM.md); the owner adds it on both accounts; a later fresh session announces it in ROOM.md. Do the
   part of the job that does not need it and stop; never ask for a value in chat, never print one.
 - Session titles (owner, 26 Sept 2026): a session you create is titled `LIVE <name>`; before you `archive_session` it, rename it `ARCHIVED <name> (done <clock time>, $<cost> <code>)`. A finished session left without the ARCHIVED prefix, or a live one without LIVE, is an orphan-check flag. Both accounts follow this; see `.claude/briefs/parent.md`, Handing over.
+- **Orphan check (26 Sept 2026, ORPHAN-TOOL).** A lane orchestrator saves its own `list_sessions`/`list_triggers`
+  and runs `python3 tools/orphan_check.py --sessions S --triggers T` on its own workers before writing its
+  handoff, acting on every line it prints (adopt, ledger+archive, delete the trigger, or backfill an ASSIGNMENTS
+  row) so a handoff never hands off an orphan it could have caught itself; the parent's own check-in duty 3a runs
+  the same tool across the whole account.

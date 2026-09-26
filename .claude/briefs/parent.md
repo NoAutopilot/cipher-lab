@@ -45,6 +45,12 @@ its state is only what it committed, so read its handoff and its lanes' ROOM lin
    2026: LANE B2 handed off at 425k against a 300k line, 41 percent over, with no context figure seen by the
    parent before that hand-off line itself; LANE R6 handed off at 505k against 500k, on the line, the same
    window -- the difference is whether the line was watched before it was crossed).
+3a. **Orphan check** (26 Sept 2026, ORPHAN-TOOL, owner's ask: "make sure we don't have any orphaned tasks
+   across orchestrator swaps, and make sure this is systematized"). At every check-in, save `list_sessions`
+   (mine: true, limit 100) and `list_triggers` to files under your scratchpad and run `python3
+   tools/orphan_check.py --sessions S --triggers T`; act on every line it prints in this same check-in (adopt
+   an orphan session into a lane, ledger and archive a stale one, delete an orphan trigger, chase or supersede a
+   stale claim, backfill an unledgered ASSIGNMENTS row) before re-arming.
 4. **Second opinions** (tools/second_opinion_runner_prompt.md, "Our side of the loop"). List open pull requests whose
    title starts with `[SO-`; set the matching SECOND-OPINIONS-QUEUE.tsv row to `posted` with the PR number; hand it
    in ROOM.md to the lane that owns the folder, or to the verification lane. Route GitHub writes (closing PRs,
@@ -117,3 +123,8 @@ Naming and model (owner, 25 Sept 2026): every parent session is created on `clau
 
 Keep a "Parent handoff (<account>)" section in STATUS.md current: session id, check-in trigger id, live lanes, the
 owner's standing decisions. A successor reads it, takes over the trigger with update_trigger, and continues.
+
+Before writing the handoff, the outgoing parent runs `python3 tools/orphan_check.py --sessions S --triggers T`
+(duty 3a) and pastes a clean result into the hand-over line; a non-clean result is acted on first, not handed
+off unresolved. The successor runs the same command as its first duty after the reading list, before taking
+over the trigger.
