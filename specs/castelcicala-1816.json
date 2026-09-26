@@ -1,0 +1,35 @@
+{
+ "slug": "castelcicala-1816",
+ "name": "Principe di Castelcicala (London, Paris) despatches to Naples, un-glossed 1816 letters, ASNa Esteri 2337",
+ "date": "1816-1823 (this test scoped to the 16 un-glossed records dated or era-placed 1816-20)",
+ "language_candidates": ["it"],
+ "ciphertext_source": "ciphers/castelcicala-1816/ciphertext.txt -- Bourdeau's dbourdeau/cyphersolver castelcicala1816/transcripts/R*.txt (commit fc0c9e8, 25 Sept 2026, CC BY 4.0), copied verbatim (see NOTES.md); DECODE R9553-R9589, ASNa Ministero degli affari esteri busta 2337",
+ "alphabet": "numeric code groups 1-2460, dots between groups, groups of 5+ digits are nulls",
+ "constraints": {
+  "system": "homophonic two-part nomenclator, ~2,450 groups, syllables/words/names, local alphabetical runs (e.g. 2201 che, 2205 ci, 2211 di, 2221 fi, 2230 l, 2231 l', 2232 la)",
+  "key_source": "162 values recovered by Bourdeau from 4 contemporary interlinear decipherments (R9566 p3, R9569, R9571, R9589) plus alphabetical-run inference; his escalation log named one step not done -- hand-reading the un-glossed 1816 letters against the Decazes/Florida crib themes",
+  "other_code_records": "R9586, R9588 use a different code (values ~100-1100), excluded"
+ },
+ "cheap_tests_in_order": [
+  "1. Hand-read the un-glossed 1816-era letters against Bourdeau's 162 confirmed values and the Decazes/Florida crib vocabulary already in key.tsv, proposing new values only where a group fits the same word in >=2 independent contexts (rule 4, S grade). No control needed for a crib-driven hand read (the brief's own framing); report a shuffled-order coverage control per rule 3 regardless."
+ ],
+ "cheap_test_done": [
+  {
+   "test": 1,
+   "date": "26 Sept 2026",
+   "worker": "bCAS (LANE B5)",
+   "method": "Concordance of every un-keyed group in the 16 un-glossed 1816-era records, ranked by frequency, read by eye against already-keyed neighbours and the whole corpus (including the 4 glossed records, for cross-checking). Proposed a value only where the same group sits in an identical short frame in >=2 independent letters, or is confirmed a second time against its own glossed value inside the crib letter itself.",
+   "target": "1816 un-glossed target set (16 records, 7,492 main-code groups, nulls excluded): coverage 3,268/7,492 = 0.4362 before -> 3,406/7,492 = 0.4546 after 3 new S-grade values (+138 tokens, +1.84 points). Whole corpus (25 main-code records, 9,286 groups): 4,342/9,286 = 0.4676 -> 4,505/9,286 = 0.4851.",
+   "control": "Shuffled-order control (3 seeds), same key, same 16 records, group order shuffled within each record: 3,406/7,492 = 0.4546 every seed -- identical to the target's own 'after' figure. This is expected, not a finding: tools/decode_key.py is a pure per-token substitution (no neighbour-dependence), so the coverage fraction cannot depend on group order by construction. Reported per the brief's rule-3 requirement; see NOTES.md for why it is uninformative about reading coherence specifically (a word-sequence language-model control would be needed for that, not run this cap).",
+   "verdict": "Partial gain: 3 new S-grade key values (1378=a, 154=a [homophone of 1378], 605=enza [homophone of the already-glossed 1606]), each attested in >=2 independent un-glossed letters (154 and 1378 both immediately before 'V.E.'; 605 completing 'confer[enza]' after the already-keyed stem 2403=confer, cross-checked against the crib letter R9566's own glossed 1606=enza for the same word). No group among the Decazes/Florida content vocabulary itself (Cuba, Isola, Cattolica, Onis, cessione) recurred enough in the un-glossed set to confirm a new value; those themes are already exhausted in Bourdeau's 162. One unresolved lead (group 2261 + already-keyed 'do', collocating with 'Inghil' twice) named in NOTES.md, not committed. No letter reads through. Per CLAUDE.md rule 5 as amended, this is a control-backed reproducible gain over the inherited key, not a negative and not found-solved: `partial`."
+  }
+ ],
+ "judge": {
+  "note": "No judge run. QUEUE.md flags that tools/data has no 19th-century Italian corpus (it16 is 16th-c., a ~300-year era mismatch for this 1816-23 target); the brief explicitly says grade by eye rather than paste a mismatched judge line."
+ },
+ "value": "moderate: one office, one two-part homophonic code, >10,000 signs pooled across 27 records, already 43-49% keyed from real cribs -- the kind of pooled-length target CLAUDE.md's selection rule prefers over a single short letter",
+ "model": "Sonnet",
+ "status_26_Sept_2026": "partial (inherited from Bourdeau, unchanged in kind; this session added 3 S-grade values and 1.8-2.2 points of coverage on the un-glossed 1816 subset and the whole corpus respectively)",
+ "schema_note": "cheap_tests_in_order[0] is the brief's own instruction, already run; no test 2 attempted this pass.",
+ "written": "26 Sept 2026 by LANE B5 worker bCAS, claude-sonnet-5"
+}
