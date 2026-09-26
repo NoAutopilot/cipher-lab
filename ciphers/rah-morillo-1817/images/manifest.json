@@ -30,6 +30,88 @@
       "cipher_groups_approx": 21,
       "interlinear_decipherment": true,
       "note": "Recto only carries ciphertext; verso is the plain-text signature/address block. The interlinear plaintext reads several groups without ambiguity by eye (see NOTES.md): 51.18.50.7.51.56.33.18=Romerito; 24.+.27.18=Pa[s]o (matches 'Paso' once 24=p and 27=s are cross-checked against 'por'=24.18.51 and 'oficiales'=18.5.56.3.56.+.8.7.27); 7.8=el; 3.18.16=con; 18.5.56.3.56.+.8.7.27=oficiales. This is an eye check only -- no full transcription or key file written this pass."
+    },
+    {
+      "record_id": 5195,
+      "oai_identifier": "oai:bibliotecadigital.rah.es:5195",
+      "rah_sig": "9/7666, leg.23, f), ff.432v-433",
+      "title": "Morillo a Herrera en carta particular... clave para asuntos reservados... Barquisimeto, 28 de octubre de 1820.",
+      "dc_format": "2 ff.",
+      "fetched_by": "NX-MOR4",
+      "images": [
+        {"file": "10088734.jpg", "idImagen": 10088734, "size": "3136x3882", "content": "f.432v -- plain prose, military intelligence report, closing line names 'la adjunta clave para los asuntos reservados' (matches the catalogue title); no ciphertext"},
+        {"file": "10088735.jpg", "idImagen": 10088735, "size": "3165x3935", "content": "f.433 -- end of the 28 Oct letter (dated 'tengo 4 Noviembre 1820' at the close, i.e. finished/copied 4 Nov), then a NEW, uncatalogued register entry begins immediately below: 'Nuevo Caño baja 12 Nov de 1820 -- Mi estimado Herrera: he recibido las apreciables de V. de 7 y 8, la 1a en cifra; quedo enterado de lo que...' (continues onto an unfetched folio). No ciphertext visible on this page; the 'en cifra' reference corroborates item 3 (Herrera's letter of the 7th) was ciphertext, per Morillo's own acknowledgement, but this reply itself is not shown to be ciphered on the part captured."}
+      ],
+      "key_table_present": false,
+      "cipher_present": false,
+      "note": "No numeral ciphertext on either image. RAH search for a distinctly-catalogued 'Morillo a Herrera, 12 Nov 1820' record found nothing (searched 'Morillo a Herrera' exhaustively -- see candidates.tsv); the Nuevo Cano continuation is very likely uncatalogued register material on the next folio, not fetched this pass (out of this job's scope; flagged as a lead)."
+    },
+    {
+      "record_id": 4332,
+      "oai_identifier": "oai:bibliotecadigital.rah.es:4332",
+      "rah_sig": "9/7663, leg.20, e), ff.623-625v",
+      "title": "Aldama a Morillo... adjunta una nota con la clave que utilizará en caso necesario. Calabozo, 28 de abril de 1819.",
+      "dc_format": "3 ff.",
+      "fetched_by": "NX-MOR4",
+      "images": [
+        {"file": "10085214.jpg", "idImagen": 10085214, "size": "2509x3188", "content": "f.623 -- plain prose, military report; no cipher"},
+        {"file": "10085215.jpg", "idImagen": 10085215, "size": "2539x3139", "content": "f.623v (continuation) -- plain prose; no cipher"},
+        {"file": "10085216.jpg", "idImagen": 10085216, "size": "2322x3188", "content": "f.624 -- A KEY TABLE headed 'Aldama.': vowels a-e-i-o-u each paired with a distinct tally/comb-stroke glyph (a=small drawn box under a vertical stroke; e/i/o/u=vertical stroke plus a 2-4-tooth comb shape, tooth-count varying by vowel). NOT a numeral-per-letter system -- a wholly different design from key_5186."},
+        {"file": "10085217.jpg", "idImagen": 10085217, "size": "2311x3230", "content": "f.624v -- blank verso, same key table bleeding through from the recto (pencil-faint mirror image, not new content)"},
+        {"file": "10085218.jpg", "idImagen": 10085218, "size": "2584x3163", "content": "f.625 -- plain prose, explicitly states 'No tengo una clave... Tengo hecho este trabajo, y me valgo de la que incluyo. Ella me servira tambien... si tengo que comunicarle alguna cosa [secreta]' -- Aldama made his own key from scratch and encloses it for future use"},
+        {"file": "10085219.jpg", "idImagen": 10085219, "size": "2507x3172", "content": "f.625v -- closing, signed 'Juan de Aldama'"}
+      ],
+      "key_table_present": true,
+      "key_design": "vowel-only tally/comb glyphs, not numerals -- a third, distinct cipher system in the same fonds (alongside key_5186's numeral-per-letter code and the Ministry-of-War nomenclator on records 1306/1487 below)",
+      "cipher_present": false,
+      "note": "A genuine period key table, but for a correspondent (Aldama) and design wholly incompatible with key_5186 -- no ciphertext exists in this record to test coverage against, and the vowel-glyph design itself rules out key_5186 by inspection (rule 3: match the design, not just call it a cipher)."
+    },
+    {
+      "record_id": 4537,
+      "oai_identifier": "oai:bibliotecadigital.rah.es:4537",
+      "rah_sig": "9/7664, leg.21, f), ff.280v-281",
+      "title": "Morillo a Pereira indicandole la clave que debe utilizar... Calabozo, 19 de julio de 1819.",
+      "dc_format": "3 ff.",
+      "fetched_by": "NX-MOR4",
+      "images": [
+        {"file": "10089531.jpg", "idImagen": 10089531, "size": "2351x3314", "content": "f.280v -- plain prose register copy, names 'la adjunta clave' and instructs a copy be given to Comandante Eugenio Arana; no ciphertext, no key table"},
+        {"file": "10089532.jpg", "idImagen": 10089532, "size": "2394x3332", "content": "f.281 -- new entry begins (19 Jul 1819, Calabozo, to Pereira, re: an 800-man expedition); plain prose"},
+        {"file": "10089533.jpg", "idImagen": 10089533, "size": "2351x3314", "content": "f.281v -- close of that entry then two more register entries (21 Jul, 25 Jul 1819) begin; all plain prose, no ciphertext"}
+      ],
+      "key_table_present": false,
+      "cipher_present": false,
+      "note": "Morillo's own outgoing copybook again (like item 2 and record 5195) -- the enclosed key it repeatedly references is never itself in the copybook, only named. No ciphertext on any of the 3 images."
+    },
+    {
+      "record_id": 1306,
+      "oai_identifier": "oai:bibliotecadigital.rah.es:1306",
+      "rah_sig": "9/7654, leg.11, a), ff.150-152",
+      "title": "El Ministro Eguía a Morillo, contestando a su despacho de 22 de julio... Madrid, 28 de octubre de 1818. (RAH note: 'cifrado casi todo y encabezado con el caracter de Muy reservado')",
+      "dc_format": "6 images fetched of the record's folios (only f.150-151 examined this pass)",
+      "fetched_by": "NX-MOR4",
+      "images": [
+        {"file": "10076236.jpg", "idImagen": 10076236, "size": "3384x4752", "content": "f.150 -- 'Ministerio de Guerra 754' heading (period archival hand, purple ink, confirms 'Esta cifrado casi todo'), plain preamble ('He dado cuenta al Rey de la carta de V.E. de 22 de Julio...'), then a long numeral cipher block begins ('En cuanto 12o.7.12.16.15.4o.1.18.4o.15...'), values include a small square (null?) sign"},
+        {"file": "10076237.jpg", "idImagen": 10076237, "size": "3375x4723", "content": "f.150v/continuation -- cipher block continues, ~20 more lines of numeral groups, values seen: 1,2,3,4,7,9,10,12,13,14,15,16,17,18,19,40,50,60,100,120 plus square and '+' auxiliary signs"},
+        {"file": "10076238.jpg", "idImagen": 10076238, "size": "3291x4600", "content": "f.151 -- headed (period archival purple ink) 'Adjunto al doc.to 754. Descifrado' -- THE PERIOD DECIPHERMENT of f.150's cipher block, in full plain Spanish ('En cuanto a los refuerzos de mar y tierra que V.E. necesita y pide con tanta urgencia S.M. me previene diga a V.E. que por ahora es imposible embiar uno ni otro...'), ending 'De Real orden' with an archival note '(sigue en el documento final)'"}
+      ],
+      "key_table_present": true,
+      "key_design": "Numeral nomenclator/code with values well above key_5186's range (up to at least 120, heavy use of exact multiples of ten: 10,40,50,60,100,120 alongside small values 1-19) plus '+' and a square auxiliary sign -- a fourth, distinct system (the Ministerio de Guerra office cipher used in dispatches TO Morillo, not the field cipher Herrera used)",
+      "cipher_present": true,
+      "note": "Design mismatch with key_5186 is decisive without a full transcription pass (rule 3: 'a different numeral range means a different key -- say so and stop', this job's own brief step 3a): key_5186's codes never exceed 56 and never repeat as exact multiples of ten; this cipher's dominant tokens (40,60,100,120...) fall entirely outside key_5186's codebook. This document already carries its own period decipherment on the facing leaf (f.151) AND the RAH catalogue's own note says it is published in Rodriguez Villa t.III doc.754 pp.693-4 -- a second full known-plaintext pair in this fonds, but a different correspondent channel (Ministry-to-Morillo, not Herrera-to-Morillo) and out of this job's scope (testing key_5186's transfer, not recovering a new key)."
+    },
+    {
+      "record_id": 1487,
+      "oai_identifier": "oai:bibliotecadigital.rah.es:1487",
+      "rah_sig": "9/7655, leg.12, a), ff.158-161v",
+      "title": "El Ministro de la Guerra (Alos) a Morillo, trasladandole copia del despacho remitido al Virrey del Peru... Madrid, 4 de diciembre de 1819. (title: 'Despacho muy reservado y cifrado')",
+      "dc_format": "8 images available (only f.158 fetched this pass, to confirm the pattern)",
+      "fetched_by": "NX-MOR4",
+      "images": [
+        {"file": "10075658.jpg", "idImagen": 10075658, "size": "3460x4722", "content": "f.158 -- 'Ministerio de Guerra 158', 'Muy reservado', 'Despacho muy reservado y cifrado -- 4 de Diciembre 1819', partial cipher (many plain words interspersed with numeral groups): 'El Rey N.S. se ha enterado de diferentes oficios comunicados [numerals]... Esto Expedicionario [numerals]... havia entrado este en su [numerals]... las Tropas [numerals]...'. Same numeral pattern as record 1306: heavy multiples of ten (12o=120, 4o=40, 1oo=100, 5o=50, 6o=60) mixed with 1-19."}
+      ],
+      "key_table_present": false,
+      "cipher_present": true,
+      "note": "Same Ministerio de Guerra office cipher as record 1306 (design match: identical tens-pattern, same '+' and square auxiliary signs), used as a partial cipher here (names/places only, not full prose). Design incompatible with key_5186 for the same reason as 1306 -- not pursued further (already-published per RAH's own note, Rodriguez Villa t.IV doc.814; out of this job's scope). Remaining 7 images not fetched (pattern already established, folder-size budget conserved)."
     }
   ]
 }

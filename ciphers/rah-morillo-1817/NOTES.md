@@ -488,3 +488,112 @@ decode, not a claim of new plaintext or new discovery.
 
 Status stays **partial** (rule 5); no change to the key, ciphertext, gloss or reading files (this job's brief
 was a re-derivation check, not a key revision).
+
+## NX-MOR4 (26 September 2026, LANE NX worker, key_5186 transfer search)
+
+### Question and answer
+
+Brief: does any OTHER cipher text in the Morillo papers at the RAH (Sig. 9/7650-9/7690, 1815-1821) carry
+numeral ciphertext that `key_5186.tsv` (item 3's leaf-derived key) can be applied to? **Answer: no candidate
+found this pass carries ciphertext compatible with key_5186's design.** Two genuinely ciphered documents were
+found (records 1306, 1487, both Ministerio de Guerra dispatches TO Morillo), but both use a different, larger
+numeral system (values up to 120+, heavy exact-multiples-of-ten) that cannot be key_5186 by inspection alone
+(rule 3: "a different numeral range means a different key -- say so and stop", this job's own brief step 3a).
+A third document (record 4332, Aldama to Morillo) carries a real period key table, but for vowels only, in a
+tally/comb-glyph design with no numerals at all -- also incompatible by design. Full search log below.
+
+### Step 1: RAH catalogue search (`bibliotecadigital.rah.es`, POST to `resultados_busqueda.do`)
+
+Terms tried, `busq_general=`: `cifra`, `cifrada`, `cifrado`, `clave`, `en cifra`, `Herrera`, `Morillo cifra`,
+`Morillo clave`, `Morillo a Herrera`, `Morillo Herrera espías Guanare`, `Nuevo Caño Herrera`. `cifra`/`en
+cifra` each return the same 4 hits as the 24 Sept 2026 scout found (item 2's own proposal letter + 3
+cartographic false positives, "cifra" = map-scale legend). `cifrado` returns the same 2 hits the 24 Sept scout
+logged and flagged for a successor: records **RAH20090013407** (id 1487, Alós, 4 Dec 1819, "Despacho muy
+reservado y cifrado") and **RAH20090011595** (id 1306, Eguía, 28 Oct 1818) -- both Ministerio de Guerra
+dispatches to Morillo, both noted by RAH's own cataloguer as already printed in Rodríguez Villa. `clave`
+(410 hits, far too broad on its own) and `Morillo clave` (a narrower, decisive combination) surface a set of
+Morillo-fonds letters mentioning a cipher key that the earlier scout's narrower term list missed:
+`RAH20090041851` (id 4332, Aldama→Morillo, 28 Apr 1819, "adjunta una nota con la clave"), `RAH20090043909`
+(id 4537, Morillo→Pereira, 19 Jul 1819, "indicándole la clave que debe utilizar"), `RAH20090050488` (id 5195,
+Morillo→Herrera, 28 Oct 1820, same legajo/signature as item 3, "clave para asuntos reservados"),
+`RAH20090016125` (id 1759, a second copy of item 2's own 19 Nov 1817 letter, different legajo), plus two
+letters explicitly saying the correspondent **lacks** a key (`RAH20090026988`, `RAH20100000069`, excluded) and
+one idiom false positive ("lugares clave" = key/strategic locations, `RAH20090047891`, excluded). Full list
+with record ids, signatures, dates and per-candidate notes: `rederiv_transfer/candidates.tsv`. Requests:
+`bibliotecadigital.rah.es` POST search ~13 (>=3s apart), record-detail GETs ~11 (>=3s apart), all HTTP 200
+except one single-hit query that 302-redirected straight to the record (RAH's own behaviour for a one-result
+search, not an error).
+
+### Step 1b: Contreras 1988 catalogue (Google Books, key+country=US)
+
+Two queries: `cifra Contreras Coleccion Morillo` and `"carta cifrada" Morillo` (both keyed, `country=US`).
+The `"carta cifrada" Morillo` query's only hit inside Contreras's own catalogue (`ohJPjaGKOk8C`) is the
+snippet already on file for item 3 itself ("...Morillo en carta cifrada dándole noticias de Romerito... Sig.
+9/7666, leg. 23, f), ff. 420-420v. Herrera a Morillo..." -- the same 4.529/4.530 entries NX-MOR2 already cited)
+-- no other "carta cifrada" entry for this fonds turned up in this catalogue via full-text search. The other
+7 hits from this query and the 2 hits from the first are unrelated 20th-century secondary works citing
+Morillo's papers generically, not RAH catalogue entries. Requests: `www.googleapis.com/books` 2.
+
+### Step 2: images fetched for 4 candidates (`tools/browser_fetch.js --binary`, OAI-PMH didl route)
+
+Per this job's brief cap (up to 4 candidates), the four ranked highest by relevance to Herrera/Guanare or
+Morillo's own headquarters were fetched in full; the two `cifrado`-tagged Ministry dispatches were fetched
+afterward (time and folder-size budget allowed) since they are the only records anywhere in this search
+confirmed by their own catalogue text to carry actual ciphertext. Full per-image findings are in
+`images/manifest.json` (records 5195, 4332, 4537, 1306, 1487) and `rederiv_transfer/candidates.tsv`; summary:
+
+| record (id) | sender→recipient, date | images | ciphertext? | key table? | verdict |
+|---|---|---|---|---|---|
+| 5195 | Morillo→Herrera, 28 Oct 1820 | 2/2 fetched | no | no | plaintext only; f.433 shows an uncatalogued continuation entry (Nuevo Caño, 12 Nov 1820) opening "he recibido las apreciables de V. de 7 y 8, la 1a en cifra" -- Morillo acknowledging Herrera's letters of the 7th (item 3) and 8th, confirming item 3 was ciphertext, but the reply's own text (not captured beyond this line) is not shown ciphered |
+| 4332 | Aldama→Morillo, 28 Apr 1819 | 6/6 fetched | no | **yes** | f.624, headed "Aldama.": a-e-i-o-u each paired with a distinct tally/comb-stroke glyph (not numerals). Letter (f.625) says Aldama built this key himself, for future use, not this letter |
+| 4537 | Morillo→Pereira, 19 Jul 1819 | 3/3 fetched | no | no | plaintext register copybook; names "la adjunta clave" repeatedly, table never present (same absence pattern as item 2) |
+| 1759 | Morillo→Min. de Guerra, 19 Nov 1817 (2nd copy) | 0/2, fetch failed | -- | -- | RAH server returned a Java/Tomcat error page mislabelled `image/jpeg` on both images, twice (1 retry after 6s pause); not pursued further, lowest-priority candidate |
+| 1306 | Eguía (Min. de Guerra)→Morillo, 28 Oct 1818 | 3 of 6 fetched | **yes** | **yes** | f.150-150v: long numeral cipher block (values 1-19, plus 10/40/50/60/100/120, a square and "+" auxiliary sign). f.151: the document's OWN period decipherment, headed "Adjunto al doc.to 754. Descifrado" |
+| 1487 | Alós (Min. de Guerra)→Morillo, 4 Dec 1819 | 1 of 8 fetched | **yes** | not checked | f.158: partial cipher (names/places only), same numeral pattern as 1306 (10/40/50/60/100/120, square, "+") -- confirmed same system, not pursued further |
+
+### Step 3: coverage/design gate against key_5186
+
+Per this job's brief step 3(a), a different numeral range is grounds to stop without a full transcription
+pass. `key_5186.tsv`'s 17 codes are `{18, +, 7, 51, 56, 27, 16, 24, 3, 4, 6, 33, 8, 30, 5, 50, BOX}` -- every
+numeral code is <=56, and none of them recur as exact multiples of ten. Records 1306 and 1487's cipher blocks
+are dominated by codes that are exact multiples of ten (10, 40, 50, 60, 100, 120) standing alongside small
+values 1-19 -- a visibly different two-tier design, and several of their tokens (100, 120) exceed key_5186's
+maximum code (56) outright, which key_5186 categorically cannot produce. This is decisive without transcribing
+the full block: **design mismatch, not tested further** (rule 3's "match the design" lesson, restated in this
+job's own brief). Record 4332's key table is vowel-only tally glyphs, not numerals at all -- also excluded by
+design, and moot besides since that record's own letter is plaintext (no ciphertext exists there to test
+coverage against). No coverage percentage is reported for any candidate: none of the fetched records pairs a
+key_5186-compatible numeral cipher with anything to measure coverage on (rule 3's own requirement that a
+control/comparison be capable of failing -- there is no numeral-per-letter ciphertext in this batch for
+key_5186 to be tested against at all, so a coverage number would not test anything).
+
+### Step 4: the 26=v (Bolivar) hypothesis
+
+Not testable this pass: it requires a second key_5186-style numeral cipher text to test 26's occurrences
+against, and no candidate found this pass carries one. Not adopted into `key_5186.tsv` (unchanged, per NX-MOR2/
+NX-MOR3's own scope limits).
+
+### A genuine finding, out of this job's scope: a second solved cipher in the fonds
+
+Records 1306 and 1487 (Ministerio de Guerra→Morillo dispatches, 1818 and 1819) are real period ciphertext with
+their own attached period decipherment (record 1306's f.151, "Adjunto al doc.to 754. Descifrado") and, per
+RAH's own catalogue notes, already published (Rodríguez Villa t.III doc.754 pp.693-4 and t.IV doc.814
+respectively) -- the same "found-solved" shape as item 1 (Enrile→Morillo, 9/7658). This is a fourth distinct
+cipher system in the Morillo fonds (alongside key_5186's Herrera-Morillo field code, Aldama's personal
+vowel-glyph code, and now this Ministerio de Guerra office nomenclator), used across at least two dispatches a
+year apart with the same tens-pattern design -- a lead for a future scout/campaign (recovering this office's
+own key from the attached decipherment would be a new key-recovery job, not a key_5186 transfer test), not
+pursued further here since it is outside this job's brief.
+
+### Files, hosts, status
+
+Files: `ciphers/rah-morillo-1817/{NOTES.md, rederiv_transfer/candidates.tsv, images/manifest.json,
+images/10088734.jpg, images/10088735.jpg, images/10085214-19.jpg, images/10089531-33.jpg,
+images/10076236-38.jpg, images/10075658.jpg}`. Hosts: `bibliotecadigital.rah.es` POST search ~13, record-detail
+GET ~11, OAI-PMH GetRecord ~6 (all >=2-3s apart, HTTP 200) + `imagen_id.do` via `tools/browser_fetch.js
+--binary` ~23 attempts for 20 successful images (2 failed on record 1759 after 1 retry; a few needed the
+tool's own internal retry for Anubis, none needed a second manual retry beyond the one used for 1759), one at
+a time, >=3-4s apart; `www.googleapis.com/books` 2 (keyed, `country=US`, never printed). Images folder: 25 MB
+(under the 30 MB cap). No subagents used. Status stays **partial** (rule 5) -- no key/reading file changed.
+Per this job's brief: stopping here; the orchestrator decides whether a follow-up job pursues records 1306/1487
+as their own key-recovery target.
