@@ -124,12 +124,12 @@ orchestrator USD 10.21. No live workers, no pending check-in. Rate limit `allowe
 - **Retrospective trigger met** (13 rows, USD 174, one worker X and an orchestrator X), flagged to the parent at 17:35.
 - Tools touched by workers: iiif_lines.py --top-margin, reconcile_passes.py gloss column (tests pass).
 
-## LANE V7 handoff (session_018VkFfDWY4drC9a9aozmop9), 25 September 2026, live (updated 26 Sept 00:21 UTC)
+## LANE V7 handoff (session_018VkFfDWY4drC9a9aozmop9), 25 September 2026, live (updated 26 Sept 00:59 UTC)
 
-Brief `.claude/briefs/runs/2026-09-25-lane-v7-orchestrator.md`. Opened 22:21 by parent 7d. Orchestrator usage 1.37 at 22:57 (get_session). Rate allowed.
+Brief `.claude/briefs/runs/2026-09-25-lane-v7-orchestrator.md`. Opened 22:21 by parent 7d. Orchestrator usage 4.25 at 00:58, context 274k of the 400k handoff line (get_session). Rate allowed.
 - Job 1 done: V7-CL349 (Opus, 3.27, D, ledgered, archived): **clair349-este-guise-1556 N0, key period, text known** -- the letter is in clear in Guise Mémoires-journaux (Michaud-Poujoulat 1e sér. t.6 pp.238-239) and the leaf carries an interlinear decipherment over all 33 cipher lines. Verifier recommends status found-solved; posted to both parents 22:58; status.json closed found-solved by parent worker FOLLOWUP-2315 (23:26). Check-solved template gained a "whole volume, not one page range" paragraph from this miss.
 - Job 2: done by the parent's EN-FOLDS (22:22): en spread 0.44-0.75, caveat in judge_plaintext.py and CLAUDE.md rule 3. Nothing for V7.
-- Job 3: V7-QA4 done (Sonnet 1.84, D, archived; QA/2026-09-25-2341.md: 34 items, 2 failures, both cleared by their owners by 00:17). tools/room.py now refuses unknown leading options (the "--append" role bug). Next QA5 at 01:40, window from 23:41, brief = copy of 2026-09-25-lane-v7-qa4.md with the window changed.
+- Job 3: V7-QA4 done (Sonnet 1.84, D, archived; QA/2026-09-25-2341.md: 34 items, 2 failures, both cleared by their owners by 00:17). tools/room.py now refuses unknown leading options (the "--append" role bug). Next QA5 at 01:40, window from 23:41, brief `.claude/briefs/runs/2026-09-26-lane-v7-qa5.md` pushed.
 - Jobs 4-5: no other "reading ready" line; Mercy gate-2 closer waits on the owner (~03:00 UTC 26 Sept).
 Live workers: none. Next check-in 01:40 (spawn QA5).
 
