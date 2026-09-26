@@ -1,0 +1,13 @@
+{
+ "slug": "lodewijk-van-nassau-1573-74-ax2-5801-aux",
+ "name": "AX2-5801 auxiliary judge spec (fr16, reused from specs/lodewijk-4612.json) for scoring candidate readings under key_5801 (5799, 4612) -- not a target spec, judge block only",
+ "judge": {
+  "language": "fr",
+  "corpora": [
+   "tools/data/fr16/lettresdecatheri01cathuoft_djvu.txt.gz",
+   "tools/data/fr16/lettresdecatheri02cathuoft_djvu.txt.gz",
+   "tools/data/fr16/lettresindites00marg_djvu.txt.gz"
+  ],
+  "corpora_note": "fr16, era/register-matched to this 1573-74 correspondence circle (same corpus as specs/lodewijk-4612.json); per-fold spread caveat applies (rule 3, under the ~5-file threshold)"
+ }
+}
