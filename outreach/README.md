@@ -20,3 +20,5 @@
 ## Project mailbox (26 Sept 2026)
 
 The owner created cipherlab.research@gmail.com and connected it to the parent through the Gmail connector on both accounts. The parent places each ready draft in the mailbox as a Gmail draft (from `outreach/mailbox/<slug>.json`, prepared by a worker with the recipient address verified on the institution's own page that day and the CONTRIBUTIONS.md row written first); the owner reviews and presses send, so the 23 Sept 2026 directive (emails stay the person's) is unchanged. The sign-off is substituted in the mailbox only; the repository never carries the owner's name (rule 9). Replies are read by the parent at check-ins and recorded in the draft's file and CONTRIBUTIONS.md before anyone answers; the parent that owns the draft's target answers, the other only routes.
+
+Gate 7 (26 Sept 2026): no mailbox draft is sent until a separate checking session has written a `checked:` line in the draft's header (CLAUDE.md Outreach gate 7); the parent replaces the Gmail draft with the checked text before telling the owner it is ready.
