@@ -252,6 +252,12 @@ def main(a):
         return push(msg, a[1:])
     if a[0] == "--digest":
         return digest(a[1:])
+    if a[0].startswith("-"):
+        # 26 Sept 2026 (V7-QA4): "--append" and other unknown flags were written into ROOM.md as the role
+        # (23 lines by then); the role is a name, so an unknown flag is refused before anything is appended.
+        print(f"room.py: unknown option {a[0]!r}; usage: tools/room.py \"role: target\" \"signal text\"",
+              file=sys.stderr)
+        return 2
     if len(a) < 2:
         print(__doc__); return 1
     for w in warnings_for(a[0], a[1]):

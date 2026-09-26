@@ -636,3 +636,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T00:00Z	session_01LyZokc7XR1SYPKgWTCFMUX	retrospective m (Sonnet, cap 10)	24 rows since retro l; lane lifetimes, breadth source, key loop overlap, STATUS guard
 2026-09-26T00:00Z	session_01JU8giKGTHWz4Zm1HyWK1VW	SCOUT-RERANK (Sonnet, cap 6)	QUEUE.md re-rank for a LANE B5
 2026-09-26T00:02Z	session_01QR7XH9k8XQmzHPZRRwbVN7	GOLD-KAL1 done $4.61 D, archived by LANE GOLD3	crib control gate met (0.997-0.999), target 0.118/0.123 vs null max 0.096/0.080 (no flag on the primary criterion; chapter-cover criterion also fires on the null 5/6); German homophonic control 0.982 mean vs target FAIL -1.605: control-backed negative
+2026-09-26T00:20Z	session_01TSaDecnpcuv3SpXK43KNFd	V7-QA4 done $1.84 D, archived	QA/2026-09-25-2341.md, 34 items, 2 failures, both cleared
