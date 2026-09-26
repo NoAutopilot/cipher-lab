@@ -74,6 +74,28 @@ descriptive User-Agent, all HTTP 200.
 | `blog/2026-06-undecoded-armstrongs-letter-1808-sent.html` | https://cryptiana.blogspot.com/2026/06/undecoded-armstrongs-letter-1808-sent.html | 26 Sep 2026, ~06:36 UTC | 85731 | 1e3c9b03b05ac7b1e80caa351a4dd731eb9cc6b6 | Tomokiyo's 4 June 2026 post pointing at his updated `web/madison_armstrong.htm` article (already on disk from an earlier sweep) |
 | `blog/dbourdeau-cyphersolver-armstrong.html` | https://dbourdeau.github.io/cyphersolver/armstrong.html | 26 Sep 2026, ~06:36 UTC | 36000 | fde7d4c764f53a2e05a97a976f038333550d80dc | Bourdeau's write-up of a *different* Armstrong-Madison letter (the 30 Aug 1808 postscript, code THE=972) -- named in ciphers/armstrong-madison-1808/NOTES.md as the source of the THE=972 sibling-code table |
 
+## crypto.htm index, 26 September 2026 (parent worker CRYPT-FETCH)
+
+198 of 275 crypto.htm-linked pages fetched (198 fetched, 0 failed, 0 blocked; one request at a
+time, >=1.5s apart, descriptive UA, all HTTP 200); `web/manifest_2026-09-26.tsv` has file/url/
+status/bytes/sha1/utc per fetch. `sources/cryptiana` now 15 MB (well under the 30 MB cap). All
+278 pages now on disk (77 pre-existing + 198 fetched + 3 index/dated variants) indexed by script
+into `CRYPTO-INDEX.tsv` (page, title, office_era, tables, key_row_lines, undeciphered_mentions,
+shelfmarks, bytes, fetched_date); office_era is a keyword-rule tag from titles/shelfmarks only
+(not page bodies), coarse by design -- 69 pages fall to "other" and are unclassified, not
+excluded. Top 20 pages by key-row lines (CRYPT-KEYS's queue): haldimand.htm (395),
+patent.htm (93, a Japanese patent-search methods page, likely not real key rows -- re-check),
+telegraph2.htm (36), venetian.htm (33), fieldcode1.htm (25), panizzardi.htm (25), nevers.htm (22),
+civilwar1.htm (21), wheatstn.htm (20), spanish3.htm (18), fronde.htm (15), porta.htm (15),
+alaska.htm (14), breaking.htm/breakingJ.htm (13 each), unsolved-2026-09-24.htm (13), spanish4.htm
+(12), unsolved.htm (12), vowel.htm (10), arnold.htm (9). 37 pages carry an undeciphered/unsolved
+mention plus a numbered shelfmark not found (case/space-insensitive substring) in CATALOG.md --
+candidates for the scout, never promoted here: nevers.htm, spanish3.htm, henryiii.htm, louisxiii.htm,
+GL.htm, bongars.htm, louisxiv0.htm, mary.htm, francis.htm, elizabeth.htm, henryiv.htm, henryiv2.htm,
+league.htm, phelippes.htm, guise.htm, danzay.htm, mazarin.htm, savoy.htm, mantua.htm, mayenne.htm,
+crypto.htm, and 16 more (full list in CRYPTO-INDEX.tsv, grep for undeciphered_mentions>0). Not
+started: key-table extraction (CRYPT-KEYS) and methods digest (CRYPT-LESSONS), queued next.
+
 ## Added 26 September 2026 (ciphers/fr3625-lauriere-1593, NX-LAU2 desk search)
 
 | File | URL | Fetched | Bytes | For |
