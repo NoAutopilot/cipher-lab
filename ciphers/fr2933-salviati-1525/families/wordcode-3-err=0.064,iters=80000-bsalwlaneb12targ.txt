@@ -1,0 +1,391 @@
+# fr2933-salviati-1525 wordcode seed 3 restarts 8 26 Sept 2026 18:02 UTC; control mean 0.759 (0.759-0.759); score -7334.167
+# {"restart_scores": [-7334.2, -7371.3, -7374.4, -7375.4, -7377.3, -7397.2, -7418.2, -7456.1], "score_per_token": -2.5834, "code_tokens_decoded": 620, "name_types": 0, "code_words": [["che", 582], ["di", 33], ["la", 2], ["il", 2], ["del", 1]], "err": 0.064, "vocab_k": 298, "common_a": 3, "code_share": 0.28, "target_code_share": 0.323, "code_types": 182, "extra_code_names": 0, "control_types": 214, "del": 100, "ins": 59, "code": 26, "per_class": {"letters": 0.9, "codes": 0.399, "n_letters": 2044, "n_codes": 795, "codes_in_wordlist": 0.87}}
+ai
+nurgoinusa CHE CHE in
+aeli
+teleio CHE eoioe CHE
+CHE CHE CHE om CHE suo DI
+i CHE ilmen CHE o CHE l
+ilr
+rr
+io CHE
+CHE eiet DI iui CHE lir CHE CHE lilnodi
+omet CHE idiut CHE
+r
+riet CHE ne CHE iu CHE
+CHE CHE
+iosinattiiniu
+sigiu CHE
+u CHE mea CHE nrenu CHE CHE DI tnu CHE soall
+iaire CHE CHE eils
+CHE CHE
+easii CHE CHE re
+DI
+ii
+i CHE
+a
+e
+noneannanil CHE CHE ia CHE
+CHE il CHE uein CHE
+geno CHE linaiae
+nioe DI elsi CHE a CHE CHE CHE
+CHE i CHE CHE en CHE suo
+io CHE CHE a CHE enioa
+l CHE u
+CHE
+CHE iela CHE
+iusesi CHE CHE eree
+e
+CHE CHE iaeeai
+CHE CHE CHE iaii CHE
+oonrret
+re CHE CHE CHE e
+e
+la
+e
+o
+e
+e
+DI
+CHE
+ails
+r
+a
+o CHE e CHE ili CHE giu CHE an CHE sle DI re
+meireo
+i
+CHE CHE eti CHE oa
+aasi
+ia
+e
+o
+igiu CHE
+CHE CHE
+de CHE u CHE auiuanoio
+miu CHE iili
+i CHE DI me
+pendeo
+a CHE i CHE
+a CHE giaa CHE ini CHE CHE ino CHE
+CHE ia CHE
+tele CHE an CHE CHE DI
+ii CHE ueue
+mi
+li
+CHE inauna CHE e CHE i CHE li CHE a
+CHE CHE a
+au
+CHE
+ai CHE un CHE aso
+o
+CHE CHE iioi CHE oiid
+CHE
+CHE etalemai CHE CHE etaenea
+aa
+ri
+se
+ai CHE lilncli
+CHE
+CHE
+t
+ei CHE e
+CHE suoiuiadioimioi
+ai
+so
+ie CHE CHE esii CHE eo CHE en CHE uessia CHE
+CHE oiuleeai
+s
+roa CHE CHE uan
+tinetea CHE iaioiiioria
+o
+este
+si
+iioa CHE CHE gile CHE lioa CHE idiru
+rei CHE CHE cisea CHE CHE ili
+u
+i CHE iil CHE CHE e
+si
+si
+a
+DI
+s
+rei
+o CHE CHE CHE
+elute CHE notinioleuielcil
+luettesione CHE e
+ili CHE CHE e DI ui CHE CHE ia
+louaieioneui
+CHE ioaia CHE iuie
+aa
+a CHE due CHE aso CHE CHE CHE CHE CHE aiaoi
+ii
+eueo
+u CHE CHE in
+si CHE CHE CHE asotiiliu CHE a
+ioil CHE e CHE a
+ree
+siei
+CHE
+e
+o
+a DI in CHE CHE eeteai
+a CHE
+ea CHE CHE inael CHE e CHE CHE
+na
+a CHE i CHE CHE nu CHE ie
+adoa
+re
+i CHE uioiuet CHE io
+e CHE e
+l
+uesanesanniuiaiun
+lilnuioilil
+lion
+tii
+iu CHE i
+gile CHE lai CHE
+uilin
+niilueetil CHE laiea
+CHE ia CHE iee
+i CHE CHE di
+r
+a CHE etii
+i
+CHE i
+es
+e
+i
+esier
+u
+ni CHE esin CHE CHE ai CHE iuossi CHE ll
+ileoidiau
+i CHE leeannira
+e
+eiiaeietia
+e
+ee
+CHE in CHE CHE CHE seire
+e
+risoni CHE i CHE e
+e
+ari
+si
+e
+rei CHE DI noniienere
+e
+e
+seii
+CHE ii CHE e CHE taac CHE CHE CHE i
+CHE CHE CHE
+a CHE clii CHE
+rei DI e
+oiuia CHE eei DI sul
+CHE CHE de
+reaiila DI aso CHE al
+tuioii CHE nu CHE
+uriiniois
+a DI
+osi
+CHE soealei CHE e CHE CHE il CHE r
+CHE
+s
+eraision CHE ina CHE lit
+ui CHE a CHE
+CHE CHE CHE CHE CHE sono CHE CHE CHE CHE
+DI nea CHE DI
+CHE ee CHE CHE io CHE
+CHE CHE suooaoleree CHE la CHE e CHE r
+e
+oreiiiaenon CHE
+CHE so
+iui
+i
+CHE i CHE i
+CHE uetasuodoaloi
+ile
+CHE es
+t CHE iiieoi CHE uia CHE etredi
+roiui CHE ie
+riiioeiie CHE aee CHE CHE e CHE CHE t CHE
+rei
+CHE
+an DI ei
+s
+agi
+CHE e CHE CHE CHE CHE mii CHE
+LA CHE etale DI
+CHE inceceaai CHE seiaac CHE CHE ai CHE loei
+ilrei
+a
+a
+d
+o CHE
+ai DI
+re CHE CHE
+CHE la CHE CHE ensa CHE CHE otu CHE i CHE CHE sir
+si
+orietliet CHE sa
+lio CHE iaalisia CHE CHE CHE lie CHE DI emoidili CHE io
+CHE a CHE lieeeea
+i DI CHE aiae CHE
+adiu CHE i CHE
+CHE es
+asieliu CHE l
+CHE ia CHE sersoesa CHE CHE CHE
+nuetasil CHE CHE CHE CHE o CHE edeire
+e
+uola
+e
+si
+a
+droitiiil CHE alii CHE nu CHE moole CHE ag
+iu CHE iuiligc CHE e CHE ima CHE i CHE CHE CHE DI giurina
+ou CHE CHE i CHE na CHE CHE e CHE CHE i CHE luaa DI CHE eteitenee
+i CHE irii
+i
+a
+oi
+i
+e
+l
+uoi CHE DEL CHE r
+iio CHE eier
+CHE lened CHE ie CHE CHE CHE CHE l
+sdiuet CHE aiiale CHE i CHE CHE CHE iuete CHE
+CHE i CHE CHE CHE oo CHE leneu
+el CHE iiiet
+alo
+eiiir
+eiiiiioe CHE e CHE s
+acio
+i CHE nn CHE i
+e
+le CHE
+oooet CHE ooasi
+gnii
+uo
+eiaiu CHE CHE ina CHE i CHE CHE i CHE ina
+CHE CHE CHE i
+moe CHE i CHE ne CHE ioegium
+uillia CHE CHE DI ie
+CHE
+niio CHE aa CHE ileilen
+ese
+e
+iiaon CHE egiu CHE iueiiii CHE CHE iliiiae
+e
+CHE sliceoo
+CHE
+a
+iilisimasuoi
+inoneieitase DI CHE riil
+oiletse
+CHE eiu CHE asoolai CHE ioi CHE CHE edi CHE CHE CHE
+tuione CHE CHE iin
+CHE CHE IL CHE CHE oase CHE CHE
+dil
+CHE i
+lli
+i
+esui CHE il CHE iuee
+iiisla CHE mi CHE ilet CHE
+CHE la
+i CHE CHE oi CHE CHE eio
+i
+diuleo
+il CHE uidiu
+i CHE CHE leiail CHE ai CHE DI a CHE aedioneeti
+CHE io
+s
+iieauoiui CHE iea
+a
+rei
+rei CHE i CHE ui CHE i CHE CHE CHE ti CHE CHE ueu CHE CHE
+i CHE
+t CHE dinsi CHE
+o CHE sonoi CHE diuleoidio CHE CHE
+CHE in DI
+rei CHE eoil
+CHE CHE sol CHE nu CHE CHE so CHE e
+dil
+CHE nuet CHE moo CHE CHE teli CHE de
+uetaso
+e CHE CHE edil
+nuetlilaetene CHE CHE CHE iloa
+iu CHE CHE i CHE si CHE CHE soli CHE CHE enei CHE ala
+i CHE e CHE CHE CHE CHE uoua
+u CHE redieo
+ii DI i CHE CHE CHE
+e CHE e CHE a CHE CHE li CHE eennanuet CHE etlu CHE ria
+ilt CHE t CHE CHE CHE CHE
+CHE CHE
+leuiel CHE CHE CHE
+icesi
+i CHE i CHE CHE ali CHE iun
+CHE neuaet
+ii CHE CHE CHE e DI CHE
+CHE olaeleeoiil CHE
+ilimiooali CHE CHE ao CHE elani
+ie DI
+lio
+i CHE ila CHE msolacnleruilli
+CHE inu CHE tlireai CHE e CHE slaeooten
+io CHE
+eioael CHE CHE
+e CHE
+l
+ioen CHE LA suoiui
+n
+ussu CHE luasilla CHE
+ioalci CHE
+ial
+li
+ela
+ier
+ttde CHE el CHE itila CHE ai CHE e
+CHE eui
+le CHE li CHE i CHE i CHE e CHE dioon CHE nelcieiee CHE CHE e
+CHE CHE
+reiiuooeea CHE luioa
+ooleeiamia CHE
+iial
+nerei
+reian
+uals
+e CHE i
+iooa
+CHE suoi
+CHE la CHE lenea CHE tasinn CHE CHE e CHE CHE l
+et CHE CHE sa IL CHE leneei CHE e CHE CHE sol CHE
+CHE nuet CHE ciile
+CHE ieo CHE l
+oatee
+iiloidiielreieoi
+el
+tni
+ln
+ala
+i
+rei
+CHE e CHE sesie CHE CHE CHE maasil
+i
+in
+l
+n
+ulenoae CHE
+ne CHE i
+CHE
+o
+diortoelinioisiaoaia
+leeilenna CHE i
+i CHE e CHE CHE CHE CHE CHE iei CHE
+ion CHE
+suoiuiatnii
+nlii CHE e CHE CHE li CHE ide
+ttt
+rei
+e
+et CHE e CHE ilimi
+ai CHE
+ilsnee
+anri

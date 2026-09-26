@@ -1,0 +1,391 @@
+# fr2933-salviati-1525 wordcode seed 1 restarts 8 26 Sept 2026 17:58 UTC; control mean 0.633 (0.391-0.759); score -7254.226
+# {"restart_scores": [-7254.2, -7266.5, -7334.6, -7372.2, -7400.6, -7451.7, -7453.7, -7545.6], "score_per_token": -2.5552, "code_tokens_decoded": 697, "name_types": 0, "code_words": [["che", 628], ["di", 61], ["la", 8]], "err": 0.064, "vocab_k": 298, "common_a": 3, "code_share": 0.28, "target_code_share": 0.323, "code_types": 182, "extra_code_names": 0, "control_types": 214, "del": 100, "ins": 59, "code": 26, "per_class": {"letters": 0.9, "codes": 0.399, "n_letters": 2044, "n_codes": 795, "codes_in_wordlist": 0.87}}
+ao
+noumiino CHE a CHE CHE in
+i CHE ui
+t CHE neea CHE CHE iora CHE
+CHE CHE CHE a CHE CHE uor CHE
+e CHE il DI CHE r CHE i CHE n
+ill
+ll
+ei CHE
+CHE CHE iet CHE ioi CHE lil CHE CHE uiuridi
+i DI CHE t CHE odiot CHE
+l
+liet CHE ne CHE io CHE
+CHE CHE
+iidorittionio
+semio CHE
+o CHE DI CHE a DI rlero CHE CHE DI tno CHE ui CHE lu
+iiole CHE CHE CHE ild
+DI CHE
+CHE asii CHE CHE le
+DI
+oo
+i CHE
+i
+e
+rar CHE arranil CHE CHE ii DI
+CHE iu CHE oeor CHE
+m CHE ra CHE uiraii CHE
+reiadelsi CHE a CHE CHE CHE
+CHE i CHE CHE er CHE uor
+o CHE CHE CHE i CHE CHE reia
+u CHE o
+DI
+CHE ieni CHE
+io DI CHE so CHE selea
+a
+CHE CHE ii CHE CHE ai
+CHE CHE CHE iiie CHE
+iirlust
+les CHE CHE e
+a
+la
+e
+a
+a
+e
+CHE
+CHE
+ails
+u
+a
+r CHE e CHE ile CHE mio CHE ar CHE une CHE le
+mailer
+i
+CHE CHE eti CHE ia
+aaso
+oa
+e
+a
+imio CHE
+CHE DI
+uelo CHE a DI i CHE areei
+LA io CHE iiui
+o CHE CHE LA CHE
+ser DI er
+i CHE i CHE
+a CHE miia CHE eno DI CHE imi CHE
+CHE ia CHE
+t CHE le CHE ar CHE CHE DI
+i DI CHE CHE eue
+DI e
+no
+CHE eraorise DI e CHE ui CHE a
+CHE CHE a
+ao
+CHE
+io CHE CHE r CHE aui
+i
+LA CHE iiii CHE ieid
+CHE
+CHE etale CHE ai CHE CHE etaerna
+aa
+lo
+se
+io CHE lilrale
+CHE
+CHE
+t
+ei DI e
+CHE duiioiadiiiuore
+io
+di
+ia CHE CHE esoi CHE CHE i CHE er CHE CHE essia CHE
+CHE iioleaae
+s
+lia CHE CHE CHE ar
+tinetaa CHE oaoriiiilia
+a
+esta
+so
+oiia CHE DI mine CHE ueia CHE odiuo
+lei CHE CHE aidia CHE mile
+o
+i CHE iol CHE le
+so
+so
+a
+CHE
+s
+leo
+i CHE CHE CHE
+anote CHE ritimorneoienael
+noett CHE diare CHE e
+elo CHE CHE euoi CHE CHE ia
+nioaoeiirioi
+CHE iiaia CHE i CHE ie
+aa
+a CHE boe CHE aui CHE CHE CHE CHE CHE aiiio
+ii
+eo CHE i
+o CHE CHE e CHE
+di CHE CHE DI auitionio CHE a
+eiin CHE CHE CHE a
+lea
+soai
+CHE
+e
+i
+a CHE e CHE CHE CHE eeteai
+i CHE
+aa CHE CHE ini CHE l CHE e CHE CHE
+ra
+i CHE i CHE CHE ro CHE ie
+a CHE aa
+le
+i CHE oiiioet CHE ii
+e CHE a
+l
+o CHE mirederrioeaion
+uiureeiilil
+uii CHE
+tio
+io CHE i
+mine CHE uio CHE
+oilen
+CHE iono CHE etin CHE naiea
+CHE o CHE CHE oea
+e CHE CHE di
+u
+i CHE etio
+i
+CHE e
+es
+s
+o
+esoau
+o
+ri CHE esire CHE ai CHE ooredi CHE lu
+ineiodia CHE
+i CHE neaareela
+e
+eiii CHE ietea
+e
+ae
+sora CHE CHE diele
+a
+li CHE iri CHE i CHE e
+s
+ili
+so
+a
+leo CHE erraiierele
+e
+e
+leoi
+CHE ii CHE CHE CHE taaa CHE CHE so
+CHE CHE CHE
+a CHE alii CHE
+lee CHE a
+iio DI a CHE eai CHE dol
+CHE CHE DI e
+leioini CHE aui CHE au
+toeioi CHE ro CHE
+olioreiis
+i CHE
+a CHE o
+CHE uieauei CHE s CHE CHE i DI CHE l
+CHE
+s
+CHE liodiar CHE iri CHE uit
+oe CHE a DI
+CHE CHE CHE CHE CHE sare CHE CHE CHE DI
+DI raa CHE CHE
+CHE se CHE CHE ose
+CHE CHE uoiiail CHE lee CHE la CHE e CHE l
+e
+aleoiiaerar CHE
+CHE ui
+i DI i
+i
+CHE i CHE e
+soetauoidaalii
+iua
+CHE e CHE
+t CHE oiieii CHE oii CHE etledi
+liioi CHE ee
+lioii CHE iie CHE aee CHE CHE e CHE CHE t CHE
+lei
+CHE
+ar CHE ai
+CHE
+imi
+CHE e CHE CHE CHE CHE mii CHE
+LA CHE etile CHE
+sorasauaai CHE deiaia CHE CHE ao CHE niei
+illeo
+a
+a
+d
+a CHE
+ai DI
+le CHE CHE
+CHE la CHE CHE erui CHE CHE ito CHE i CHE CHE dil
+so
+alietliet CHE ua
+nii CHE iaanedia CHE CHE CHE uie CHE CHE e DI iodini CHE ii
+CHE a CHE ui CHE esaa
+e DI DI iiie CHE
+adio CHE i DI
+CHE ed
+adienio CHE l
+CHE ii CHE deusme CHE a CHE CHE CHE
+roetasin CHE CHE CHE CHE i CHE e CHE eele
+s
+DI ila
+e
+so
+a
+CHE liotiionsinii CHE ro CHE DI iile CHE am
+io CHE ioenoma CHE e CHE i DI iso CHE CHE CHE CHE miouira
+io CHE CHE i CHE ra CHE CHE e CHE CHE i CHE noaa DI CHE eteiterae
+i CHE eloi
+i
+a
+ai
+o
+e
+u
+oio CHE DI CHE l
+iiiseiel
+CHE lera CHE CHE ie CHE CHE CHE CHE l
+ddioet CHE aieile CHE e CHE CHE CHE ioete CHE
+CHE i CHE CHE CHE ii CHE ner CHE o
+en CHE ieiet
+aui
+eoiil
+eoioiiie CHE e CHE u
+iaei
+i CHE r CHE CHE i
+e
+n CHE CHE
+iiiet CHE iiasi
+mrei
+oa
+eoaiossora CHE i DI uisora
+CHE DI CHE i
+mie CHE i CHE r CHE CHE osemio CHE
+oillia CHE DI eoa
+CHE
+rioi CHE ai CHE ileouer
+sua
+e
+ioiir CHE emio CHE ioeiiio CHE CHE ileiiae
+e
+CHE uniasii
+CHE
+a
+iiuidi CHE auesi
+irareieomase DI CHE uion
+iinetde
+meio CHE auiinii CHE ori CHE DI CHE me LA CHE CHE
+toiare CHE CHE oim
+CHE DI CHE CHE CHE iase CHE CHE
+din
+CHE i
+nui
+o
+auoi CHE in CHE imaa
+ie CHE une CHE di CHE inet CHE
+ini
+o CHE CHE ii CHE CHE eoi
+o
+mionei
+in CHE oodio
+e CHE CHE ueiain CHE CHE o CHE DI a CHE a CHE diimaeti
+si DI
+s
+ioepoiioi CHE iei
+a
+lai
+leoso CHE DI CHE CHE i CHE CHE CHE ti CHE DI oe DI CHE CHE
+o CHE
+t CHE CHE imui CHE
+i CHE sinie DI dioleiodii CHE CHE
+sore
+uei CHE eiil
+CHE LA sin CHE ro CHE DI ui CHE e
+din
+CHE roet CHE dii CHE CHE t CHE ui CHE ue
+oetaui
+a CHE CHE edin
+reetlinieter DI CHE CHE CHE ilia
+io CHE CHE o CHE di DI CHE uiui CHE CHE erei CHE ili
+i CHE e CHE CHE DI doioa
+o CHE uediei
+ii CHE i CHE LA CHE
+e CHE s CHE a CHE DI ui CHE CHE CHE rraroet CHE CHE tno CHE uii
+int CHE t CHE CHE CHE CHE
+CHE CHE
+neoiens CHE CHE
+iaeso
+i CHE e CHE CHE aue CHE ier
+DI CHE eoa CHE t
+ee CHE s CHE e CHE CHE
+CHE ani CHE neeiione
+inediirani CHE CHE ar CHE elari
+ie DI
+lii
+i CHE ini CHE DI siniarlauoinni
+CHE imo CHE tnileio CHE e CHE uni CHE iiter
+ii CHE
+eiiael CHE CHE
+e CHE
+l
+iier CHE suoiioi
+r
+o CHE uo CHE noasinla CHE
+iiilae CHE
+iau
+ne
+eni
+i CHE l
+ttdesel CHE etila CHE iine
+CHE eoi
+ne CHE ue CHE i CHE i CHE e CHE diir CHE CHE reuaieoee CHE CHE e
+CHE CHE
+leoi CHE ii CHE sa CHE n CHE iia
+iil CHE aia CHE ii CHE
+eiau
+relei
+leiar
+oalu
+e CHE i
+iiia
+CHE uoii
+CHE la CHE lerai CHE tasinr CHE DI e DI CHE l
+ete CHE uia CHE laresi CHE e CHE CHE uil CHE
+CHE roet CHE aione
+CHE iei CHE u
+iat CHE e
+ioniodiienleieio
+el
+tri
+lr
+ala
+o
+lei
+CHE e CHE u CHE di CHE CHE CHE CHE diasin
+i
+er
+n
+r
+oneraa CHE CHE
+r CHE CHE o
+LA
+i
+diiuti CHE uireiisiaiiii
+neainerma CHE i
+i CHE e CHE CHE CHE CHE CHE iee CHE
+iir CHE
+uoiioiatrio
+ruii CHE e CHE CHE ui CHE i DI e
+ttt
+lei
+s
+et CHE e CHE iui CHE i
+io CHE
+onsrea
+arli

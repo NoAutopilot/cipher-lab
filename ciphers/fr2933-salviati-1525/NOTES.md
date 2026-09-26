@@ -2057,3 +2057,58 @@ python3 tools/family_run.py specs/fr2933-salviati-1525.json --family syllabary -
         --param assign=irregular --restarts 24 --seeds 3 --seed 1 --gate 0.6 \
         --label "LANE B11 bSALI: DSN irregular 24 restarts, target seed 1, measured err"
 ```
+
+## bSALW: word-level nomenclator family (26 Sept 2026, LANE B12)
+
+Worker bSALW (Opus, session_0153QCxE3Pe2uk1aGmAtSMwt), 17:39-18:06 UTC, disk only, no hosts. Tests DSN sec. 5 b (marked
+types stand for whole words or names, a nomenclator inside the sign runs), the design the letter anneal cannot score.
+
+**Design** (`tools/families/wordcode.py`, registered in `tools/family_run.py`, test `tools/tests/test_wordcode.py`, SYSTEM.md row):
+1. Each sign type = one Italian letter or one whole word; `codes=marked` makes the 200 marked types (918 tokens, 32.3%)
+   code-capable (word from the it16 top-1000 list, or a `<NAME>` wildcard, at most 8 types, -6 per occurrence), the 36 bare types letters.
+2. Each spec line is a run bounded by words at both edges; a code word is bounded; word edges inside a letter stretch are invisible.
+3. Score: trigrams without a boundary by an unspaced it16 model, trigrams touching a boundary by a spaced model (segmentation
+   term), + 0.5 x log(p(word) x 1000) per code, + 0.5 x KL letter term over letter types only. Anneal, 8 restarts x 80k moves.
+4. Control: held-out it16 words laid on the target's own 389 run lengths, plain gaps withholding whole words (row_pattern box
+   counts); code vocabulary = top-a words + rarer window words until the code-type count nears the target's (168-182 vs 200),
+   a bisected on the code token share (0.28-0.33 vs 0.323); N 2839, K 199-215 (target 236); CM3 error mix at 6.4%.
+5. Recovery = token accuracy, blended and per class (letters / codes); `codes_in_wordlist` = code tokens the word list can read at all.
+
+Calibration before any target run (0% error, seed 1, 1 restart x 20k): KL over code-word letters too read 0.00-0.20, over
+letter types only 0.72 (uni_weight 0.5); codeletters=1 (a marked type may also be a letter) read 0.00-0.44. Defaults set to
+those settings; then one search-budget raise (4x40k -> 8x80k) on the 0% ceiling, not repeated.
+
+**Control table** (family_run.py rows in HYPOTHESES.md, 17:51-18:02)
+
+| run | seed 1 | seed 2 | seed 3 | mean | letters (per seed) | codes (per seed; in word list) |
+|---|---|---|---|---|---|---|
+| 0% ceiling, 4x40k | 0.760 | 0.143 | 0.782 | 0.562 (below gate) | 0.85 / 0.20 / 0.93 | 0.58 / 0.01 / 0.41 |
+| 0% ceiling, 8x80k | 0.830 | 0.402 | 0.830 | 0.687 | 0.95 / 0.41 / 0.96 | 0.58 / 0.39 / 0.51 (0.84-0.87) |
+| 6.4% measured error, 8x80k | 0.747 | 0.391 | 0.759 | 0.632 (gate 0.6 met) | 0.84 / 0.46 / 0.90 | 0.56 / 0.23 / 0.40 (0.84-0.87) |
+
+Seed 2 is a search failure at every budget (score -6865 vs -5592/-5620 on seeds 1 and 3). The code class reads 0.23-0.56
+at 6.4% against a 0.84-0.87 word-list ceiling: rule 3's unbalanced-class paragraph applies -- the blended gate is carried by
+the letter class (68-72% of tokens), and the control's power on the code assignment itself is weak.
+
+**Target** (6.4% control gate met): seed 1 score -7254.2 (-2.555/token), seed 3 -7334.2 (-2.583/token), against the
+control's -5620.5 / -6865.4 / -5592.1 (-1.99 / -2.43 / -2.00 per token): the target sits below even the failed control
+seed. Shuffled target (seed 1): -7587.0 (-2.672/token). Judge (spec block, it16):
+- target seed 1: `FAIL language: score=-1.061, null_p99=-1.858, real_p05=-0.875, real_median=-0.821, mode=both, N=4164`
+- target seed 3: `FAIL language: score=-1.108, null_p99=-1.863, real_p05=-0.903, real_median=-0.824, mode=both, N=4042`
+- shuffled target: `FAIL language: score=-1.098, null_p99=-1.869, real_p05=-0.916, real_median=-0.833, mode=both, N=4045`
+The shuffle floor does not PASS, so the judge is not voided as a gate for this family at this N; the real target scores
+barely above its own shuffle (-1.061/-1.108 vs -1.098).
+
+Italian word hits: none beyond the forced code words. Both target seeds collapse the marked types onto "che" (628 and 582
+of the decoded code tokens), "di" (61) and "la" (8); the shuffled target does the same ("che" 575). Letter stretches read
+as vowel-heavy fragments ("noumiino", "iidorittionio"), not Italian. Cross-seed agreement: 70 of 389 lines identical
+(mostly single-token lines), character similarity 0.54 on the first 3000 letters. Decodes:
+`families/wordcode-{1,3}-err=0.064,iters=80000-*.txt`, `families/wordcode-1-shuffle1-*.txt`. (The decode header's
+per_class/vocab fields are the last control seed's stash, not target statistics.)
+
+**Verdict (rule 3 words):** a control-backed negative for the letter-or-word nomenclator design at the measured 6.4%
+error, strong for the letter class (control 0.84-0.90 on two of three seeds; target letter stretches not Italian) and
+weak for the code class (control 0.23-0.56). The target stays `partial`; no reading candidate. Missing ingredient,
+named as the next step rather than a further tuning of this family: the untranscribed plain-Italian boxes between runs --
+with the context words on disk, a code type would be scored against the words around it (a word bigram at every run
+edge), which is the only thing that can pin down rare code types (108 of the 200 marked types are hapax).
