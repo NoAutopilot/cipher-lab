@@ -1,0 +1,28 @@
+{
+ "slug": "szembek-bk1560",
+ "name": "Szembek family papers: \"List zaszyfrowany\" (encrypted letter), early 18th c.",
+ "date": "18w. (catalogued as 18th century; volume covers 1698-1731, the reign of Augustus II)",
+ "kind": "recovery",
+ "language": "la",
+ "source": "PAN Biblioteka Kórnicka, sygn. BK1560-1 (Mf6795), within \"Akta do panowania Augusta II. Vol.1\"; digitised by Wielkopolska Digital Library. Catalogue: https://www.wbc.poznan.pl/dlibra/publication/430427/edition/343124?language=en . Public domain, unrestricted access. Bourdeau CATALOGUE.md #348 (read 26 Sept 2026): \"length and system not yet checked. No reading found.\" Not in Aymeloglu's catalogue.",
+ "ciphertext_pending": "not transcribed this pass (sampling job only, bSZEM, 26 Sept 2026); images fetched to ciphers/szembek-bk1560/images/ (3 leaves, manifest.json). See ciphers/szembek-bk1560/NOTES.md for what was read from the images.",
+ "alphabet": "two-digit decimal code groups (values observed in the low teens to low fifties, e.g. 12, 14, 17, 20, 21, 23, 25, 42, 43, 46, 49, 50, 51), space-separated, interspersed with plain Latin connective words and a few names left en clair; two 3-digit numbers (202, 203) are cross-reference numbers to other items in the same bound volume, not cipher",
+ "constraints": {
+  "leaves": 3,
+  "approx_lines": 55,
+  "approx_cipher_tokens": "~300-350 two-digit code groups (rough estimate, lines x groups/line -- not a transcription count)",
+  "approx_distinct_codes": "roughly 50-60 distinct two-digit values, consistent with a nomenclator (code-per-syllable/word), not a full alphabet cipher; a handful of codes (42, 14, 21, 46) recur very often",
+  "gloss_finding": "IMPORTANT: nearly every code group on all three leaves has a period (or near-period) interlinear gloss written above it in a lighter sepia ink, giving that code's apparent plaintext Latin word (examples: leaf 1 'Celsissimus Princeps', 'Christianam', 'conscientiam', 'procedimus'; leaf 2 'Detractor', 'Burgundus', 'Danod', 'patriae', 'defuncto Principem'; leaf 3 'promissiones', 'aula', 'delationes', 'vindictam sumat', 'Pergenbeio' [a name, twice], 'occisus'). This was not mentioned in Bourdeau's catalogue entry and not found in any search -- nobody appears to have opened the image before this job. Not verified for completeness or whether the gloss is contemporary with the letter or a later archival hand.",
+  "provenance": "bound among the papers of Jan Szembek, Crown Chancellor of Poland 1700-1731; the volume's other items are Polish crown diplomatic correspondence of the Great Northern War / Augustus II era (letters to/from Augustus II, Charles XII, Saxon military commissioners, papal nuncios, etc.)"
+ },
+ "cheap_tests_in_order": [
+  "1. RECOVERY, not cryptanalysis (CLAUDE.md's lead-classes-beat-queue-rank order: an interlinear gloss ranks above cryptanalysis): transcribe the interlinear gloss from all three leaves into a code-value -> Latin-word key table (grade C: the plaintext word comes from the manuscript's own apparent period gloss, not from breaking the cipher). Matched control: after building the key table, check how often the SAME code value gets the SAME glossed word at every recurrence across the three leaves (a real, consistent key must repeat cleanly); as the control, randomly permute which glossed word is attached to which code occurrence and recompute the same repeat-consistency rate -- a shuffled assignment should reproduce high consistency only by chance, much less often than the real transcription, especially for codes that recur 3+ times (e.g. 42, 14, 21, 46 as noted above). Report both rates. If the real transcription's consistency is high and clearly separated from the shuffled control, the gloss is a working key and the letter is read at grade C directly, no substitution-cipher attack needed. Est. cost $3-4 (one careful transcription pass of 3 leaves at ~110 code groups each, plus the shuffle control), Sonnet, image-only (no further fetch).",
+  "2. Fallback only if test 1's gloss coverage is too incomplete or inconsistent to read the letter (e.g. many code groups with no gloss, or the consistency check fails): treat as a from-scratch nomenclator/homophonic-substitution recovery problem, tools/family_run.py --family homophonic on the transcribed code stream (N~300-350, K~50-60) against a matched Latin control (tools/data/la), gated per rule 3 before any target run."
+ ],
+ "judge": {
+  "language": "la",
+  "min_word_cover": 0.5,
+  "note": "la is listed in tools/data per CLAUDE.md but this worker did not check its corpus era/register match for early-18th-c. chancery Latin; verify before trusting a FAIL/PASS (CLAUDE.md rule 3's corpus-era lesson)."
+ },
+ "cheap_test_done": []
+}

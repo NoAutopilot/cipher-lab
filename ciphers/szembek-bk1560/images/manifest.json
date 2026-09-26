@@ -1,0 +1,40 @@
+{
+ "source": "PAN Biblioteka Kórnicka, sygn. BK1560-1 (Mf6795), digitised by Wielkopolska Digital Library (wbc.poznan.pl)",
+ "catalogue_page": "https://www.wbc.poznan.pl/dlibra/publication/430427/edition/343124?language=en",
+ "package_url": "https://www.wbc.poznan.pl/Content/343124/download/",
+ "note": "Item is 'List zaszyfrowany' ('Encrypted letter'), 3 leaves foliated 65-67 of the bound volume 'Akta do panowania Augusta II. Vol.1' (150 leaves, 37x24 cm). dLibra edition id 343124, publication id 430427. Public domain / unrestricted access per the catalogue page. Fetched once 26 Sept 2026 by bSZEM (LANE B6); 6 requests to wbc.poznan.pl total (catalogue page in two languages, content page, directory.djvu, the download zip, one HEAD), all >=1.5s apart; one additional OAI-PMH METS request hit a JS proof-of-work challenge page and was not retried.",
+ "files": [
+  {
+   "file": "343124_List_zaszyfrowany.zip",
+   "source_url": "https://www.wbc.poznan.pl/Content/343124/download/",
+   "fetched": "2026-09-26T04:15Z",
+   "size_bytes": 1937193,
+   "sha1": "ee013d33304eac5d2b616841f103b2ce0f4f639e",
+   "content": "Original dLibra download package: readme.txt, directory.djvu, and the 3 page DjVu files (065_0001.djvu 300dpi 3552x4632, 066_0001.djvu 300dpi 3354x4185, 067_0001.djvu 300dpi 3314x4571). Kept as the source copy; the 3 page DjVus were decoded once (djvulibre ddjvu -> tiff -> resized JPEG below) and the intermediate TIFF/extracted DjVu files were deleted to stay under the folder budget."
+  },
+  {
+   "file": "065_0001.jpg",
+   "manuscript_folio": "f.65 (per the volume's own corner numbering, visible top-right as 'f.40' in an older foliation and '1' at top-right in a newer one -- two foliation systems are visible on this leaf; page 1 of the 3-page item)",
+   "fetched": "2026-09-26T04:17Z",
+   "size_bytes": 815068,
+   "sha1": "ff4710e06f835d4afc6677e67b936dd1e57f1816",
+   "content": "Downsampled from the source DjVu (3552x4632 native) to 1800px wide JPEG. Latin numeral-cipher letter, two-digit code groups interspersed with plain Latin connective words, with a period interlinear gloss (lighter sepia ink) above nearly every code group giving its plaintext word -- see NOTES.md."
+  },
+  {
+   "file": "066_0001.jpg",
+   "manuscript_folio": "f.66 (page 2 of the 3-page item)",
+   "fetched": "2026-09-26T04:17Z",
+   "size_bytes": 773753,
+   "sha1": "6d25faf8ab0a8301c024ce70631875fcc4876935",
+   "content": "Downsampled from the source DjVu (3354x4185 native) to 1800px wide JPEG. Continuation, same cipher + interlinear-gloss pattern; glossed words include Detractor, Burgundus, Danod, antidius, patriae, defuncto Principem, Serbanum reduxit, deceptionibus."
+  },
+  {
+   "file": "067_0001.jpg",
+   "manuscript_folio": "f.67, marked '2' top-right in the newer foliation (page 3, final page of the item)",
+   "fetched": "2026-09-26T04:17Z",
+   "size_bytes": 838728,
+   "sha1": "c7cd4ba87e6ac619b3a7b980b4b45542c459ccc0",
+   "content": "Downsampled from the source DjVu (3314x4571 native) to 1800px wide JPEG. Continuation, ends partway down the page (~17 lines vs ~19 on the first two leaves). Glossed words include promissiones, aula, defuncto, Principi, hinc, delationes, falsa/comperta, vindictam sumat, Pergenbeio (a name, twice), occisus, caput, Honorarie, Sityka."
+  }
+ ]
+}
