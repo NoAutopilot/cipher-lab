@@ -47,3 +47,15 @@ Gurney1752	R9	yes	descender resembling italic y/p/g	consistent	2.3% fits low-fre
 Gurney1752	R10	partial	most likely "&" ampersand (appears twice as "&c."); alternative guess z far less plausible	inconsistent	as letter z, 2.3% is far above real z (~0.07%); as "&" this isn't a single-letter comparison at all
 Gurney1752	R11	partial	shallow bowl resembling italic v/r	consistent	1.8% roughly fits a rarer letter such as v; shape too generic in italic cursive to be confident
 Gurney1752	R12	yes	large closing paraph/ornamental flourish ending the page's final sentence, NOT a letter	n-a	matches this page's own large loop-tailed closing flourish; a special-use printer's mark, not a common letter
+Mavor1792	R1	partial	m	inconsistent	33.9% share cannot be any single letter (max real English letter ~12.7%); shape matches Mavor's m glyph but frequency rules out a literal m-mapping
+Mavor1792	R2	partial	f	inconsistent	loop+short tail resembles Mavor's f (loop+tail) or the sh digraph; 13.1% far exceeds either f (~2.2%) or sh (~1.5%)
+Mavor1792	R3	yes	h/r	consistent	Mavor gives h and r the identical back-curving hook glyph; 10.8% close to h+r combined (~12%)
+Mavor1792	R4	partial	d	consistent	left-opening hook matches Mavor's d (open curve); 5.4% vs English d ~4.3%
+Mavor1792	R5	yes	s	consistent	baseline short dash matches Mavor's s exactly; 5.0% vs English s ~6.3%; superscript-tick variant echoes Mavor's own vowel-place marking convention
+Mavor1792	R6	yes	o/u/y	consistent	isolated dot exactly matches Mavor's shared dot glyph for o, u, y; 4.5% plausible for one of these vowels
+Mavor1792	R7	yes	l	consistent	diagonal slash matches Mavor's l exactly; 3.6% close to English l ~4.0%
+Mavor1792	R8	no	-	n-a	two-loop-plus-slash compound has no counterpart among single labeled letters; closest is the str/thr ligature column, a stretch
+Mavor1792	R9	yes	p	consistent	hook with descender matches Mavor's p (loop+tail); 2.3% close to English p ~1.9%
+Mavor1792	R10	partial	ch (angle-bracket digraph)	inconsistent	no true zigzag exists in the plate (Mavor's z is a plain dash); closest angular shape is the ch chevron, whose true rate (<1%) is lower than observed 2.3%
+Mavor1792	R11	yes	n	inconsistent	shallow concave-up cup is exact shape match to Mavor's n, but n should read ~6-7% in English, not 1.8%
+Mavor1792	R12	partial	gj	consistent	large loop+descender resembles Mavor's combined gj glyph; 0.9% plausible for a rare/combined letter
