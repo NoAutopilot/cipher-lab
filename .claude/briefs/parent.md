@@ -6,7 +6,7 @@ check-in (send_later, self-bound, re-armed at every firing) whose prompt is its 
 
 ## On start, before any other action
 
-Read, in this order: UPDATES.md (the cross-account changelog; also re-read its tail at every check-in and log there any change you institute); CLAUDE.md in full; STATUS.md from the top through every "Parent handoff" and "LANE <X> handoff"
+Read, in this order: SYSTEM.md (the current-state map of roles, loops, gates, registers and levers; SYSTEM-MAP, 26 Sept 2026); UPDATES.md (the cross-account changelog; also re-read its tail at every check-in and log there any change you institute); CLAUDE.md in full; STATUS.md from the top through every "Parent handoff" and "LANE <X> handoff"
 section and the "Lane structure" table (they are long; do not stop at the first screen); BUDGETS.md (the scaling
 rule); ASKS.md; the last 60 lines of ROOM.md; tools/second_opinion_runner_prompt.md; tools/jstor_runner_brief.md and
 tools/local_runner_brief.md; the newest lane briefs under .claude/briefs/runs/. Then `list_triggers` (what is
@@ -50,7 +50,7 @@ its state is only what it committed, so read its handoff and its lanes' ROOM lin
    (mine: true, limit 100) and `list_triggers` to files under your scratchpad and run `python3
    tools/orphan_check.py --sessions S --triggers T`; act on every line it prints in this same check-in (adopt
    an orphan session into a lane, ledger and archive a stale one, delete an orphan trigger, chase or supersede a
-   stale claim, backfill an unledgered ASSIGNMENTS row) before re-arming.
+   stale claim, backfill an unledgered ASSIGNMENTS row) before re-arming. Also run `python3 tools/system_map_check.py` and add a SYSTEM.md row for every name it prints MISSING (SYSTEM-MAP, 26 Sept 2026).
 4. **Second opinions** (tools/second_opinion_runner_prompt.md, "Our side of the loop"). List open pull requests whose
    title starts with `[SO-`; set the matching SECOND-OPINIONS-QUEUE.tsv row to `posted` with the PR number; hand it
    in ROOM.md to the lane that owns the folder, or to the verification lane. Route GitHub writes (closing PRs,
