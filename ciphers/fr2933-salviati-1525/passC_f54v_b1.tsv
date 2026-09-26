@@ -1,0 +1,21 @@
+line	pos	code	marks	conf	note
+1	16	U	H	two vertical strokes joined at bottom, open top, matches U atlas
+1	28	U	H	larger square-cup shape, open top, matches U
+1	29	g	~	M	9-loop shape with curved wave-like stroke above, matches g+~ mark
+3	11	y	#	M	hooked curling tail sign, double-bar cross mark above; could be e/psi, picked y for open (non-closed) curl
+5	16	S7	H	numeral-7-like hooked sign, matches S7 atlas
+5	18	wd	M	w-hump shape joined to tall right stroke, matches wd (ud-like) atlas
+6	27	tee	M	diagonal vertical stroke with crossbar to the right, F-like, matches tee
+7	2	+	M	simple standing cross on the line, isolated sign, matches +
+8	3	_	L	flowing double-hump cursive shape, reads as ordinary script (vu/nu), not a distinct cipher glyph
+8	6	S	H	S-curve sign; flanking dots read as separator punctuation, not marks
+8	7	m	M	rounded multi-hump cursive shape, matches m; dot to left is context/separator
+8	15	nt	M	n-hump with long trailing stroke to the right, matches nt (n+ ligature)
+8	19	ch	M	S/c-curve followed by tall looped stroke, matches ch ligature
+8	21	v	M	short hook stroke over an S/5-like curve, matches recurring v atlas pattern
+8	22	f	L	long stroke with crossbar, partly obscured by neighbours, best match f
+8	24	a	H	bold cursive a, closed bowl, matches a atlas exactly
+8	27	+	L	faint crossing strokes, best read as +
+9	6	H	L	faint two-stroke crossed shape with trailing squiggle, tentative H
+9	17	tee	~	M	vertical stroke with crossbar and wave mark above
+9	17.5	S7	M	numeral-7-like hooked sign just below/right of 9/17, likely an inserted interlinear sign
