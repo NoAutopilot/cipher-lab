@@ -42,3 +42,12 @@ registered families, so appended here by hand rather than by the tool. Gate: con
 token reading, 3 seeds, before any target run. -->
 
 | 26 Sept 2026 05:51 | homophonic (key-seeded, --init) | N=833 K=96 restarts=8 iters=40000 order=3 corpus=lettresdecatheri01cathuoft_djvu.txt.gz+lettresdecatheri02cathuoft_djvu.txt.gz+lettresindites00marg_djvu.txt.gz, init=key_full with 20% of 120 codes reassigned | 1-3 | 0.699 (0.643-0.731) | not run (CONTROL BELOW GATE) | - | no (gate 0.90) | AX2-4612 key-seeded anneal, control = 5811 cut to N=833, per-seed 0.731/0.643/0.723; a 150000-iter re-check of seed 1 alone reached 0.786, still below gate -- not under-converged at 40000, the design itself cannot repair a 20%-wrong key at this N/K |
+
+<!-- Below: tools/key_repair.py (local per-code repair against fr16 order-5 total logp), LANE AX2
+26 Sept 2026, AX2-4612S -- not one of family_run.py's registered families, appended by hand. Gate (a):
+null control (key_full applied to its own correctly-keyed 5811-cut ciphertext) proposes <=2 changes.
+Gate (b): known-answer control, 3 seeds (8 codes swapped in pairs + 2 hidden as bigrams) recovers
+>=6/8 on average AND <=2 false changes on the other codes. -->
+
+| 26 Sept 2026 06:56 | key_repair (local per-code, not a family_run.py family) | N=833 (5811 cut) margin=3.0 rounds=4 candidates=26 letters+NULL+60 bigrams+20 trigrams | 1 (null) | not applicable | 100/110 codes changed (152 change-events) | - | no (gate <=2 false positives) | AX2-4612S (a) null control on key_full/5811-cut |
+| 26 Sept 2026 06:56 | key_repair (local per-code, not a family_run.py family) | N=833 (5811 cut) margin=3.0 rounds=4, 8 codes swapped in 4 pairs + 2 hidden as bigrams, seeded 46120+seed | 1-3 | 0.000 recovery (0.000-0.000); max 88 false changes | not run on 4612/5799 (CONTROL BELOW GATE) | - | no (gate >=0.75 recovery AND <=2 false changes) | AX2-4612S (b) known-answer control; root cause: total (not mean) logp of the decoded stream unconditionally rewards deleting a code to NULL, since every character's own logp is negative -- see NOTES.md AX2-4612S section |

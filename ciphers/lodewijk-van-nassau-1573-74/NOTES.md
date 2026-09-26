@@ -2644,3 +2644,133 @@ Rule 4 counts for key_5801_adj.tsv's glossed occurrences: H 11 (172 x1, 192 x2, 
 No reading of the letter is claimed. Rule 3: no numeric gate; this is a reading of period glosses and a print
 against the cipher, not a cryptanalytic claim. Rule 10: no novelty words.
 Not done in the box: the p1/p2 occurrences of 172/192 and the six unchecked 331s, which need zooms from the crops.
+
+## AX2-4612S: local key repair with syllable values (26 Sept 2026, LANE AX2)
+
+Worker AX2-4612S (Sonnet), per `.claude/briefs/runs/2026-09-26-lane-ax2-4612s.md`, box 75 min from
+06:40:27 UTC. Tests H-S (AX2-4612's own hypothesis): 4612 v3 might use key_full for most codes but a
+small set of rare-letter codes (x, y, z, b, k, q, h) for two-letter syllables or other letters instead.
+
+**Unit 1: tool.** `tools/key_repair.py` (`--help`; offline test `tools/tests/test_key_repair.py`, 10
+checks against a small hand-built fake n-gram model, no real fr16 corpus needed, runs in well under a
+second). Per-code greedy local search: for each code present in the given ciphertext (most frequent
+first), try its current value, the 26 letters, NULL, the 60 most frequent French bigrams and 20 most
+frequent trigrams from the fr16 corpus (computed from `tools/french16_ngram.py`'s own corpus text,
+folded, sliding 2-/3-window counts, ties broken alphabetically for determinism); score each candidate
+by the fr16 order-5 model's total `logp` of the whole decoded stream (clear words folded in as fixed
+context, every other code at its current working value); keep the best candidate only if it beats the
+current value's score by more than `--margin` (default 3.0). Sweep rounds until nothing changes or
+`--rounds` (default 4). Deterministic (fixed code order, fixed candidate order, no randomness
+anywhere). Both tests pass.
+
+**Gates, written here at 06:56 UTC before any control number below was computed (verbatim from the
+brief):** "(a) Null control: run key_repair from key_full unchanged; count proposed changes (false
+positives). (b) Known-answer control, 3 seeds: ... Gate: across seeds, >= 6 of 8 altered codes
+recovered to the right value on average AND <= 2 false changes in (a) and on untouched codes in (b). A
+control below gate = CONTROL BELOW GATE; stop and say so (not a negative)." Design choice for (b), per
+the brief's own fallback clause ("if that is too awkward, instead SWAP..."): re-enciphering 5811's
+plaintext letter-by-letter so a chosen code's two plaintext letters merge into one occurrence is a
+real reimplementation of `axnames`-style alignment and did not fit this box; used the SWAP design
+instead. Both controls run on `ax4612tr/ciphertext_5811_cut833.tsv` (5811's own ciphertext, cut to
+4612 v3's N=833, key_full's own known-correct reading) against `key_full.tsv`.
+
+**(a) Null control.** `python3 tools/key_repair.py ax4612tr/ciphertext_5811_cut833.tsv --key
+key_full.tsv --out-key /tmp/null_control_key.tsv --out-changes ax2_4612s/null_control_changes.tsv
+--margin 3.0 --rounds 4`:
+```
+110 codes of key_full present in this ciphertext (>=1 occurrence); 100 of them (91%) proposed changed
+across 152 change-events over 4 rounds (many codes flip more than once: e.g. code 98, seen once,
+'h'->NULL, then NULL->'c', then 'c'->'p', then 'p'->'t' across successive rounds -- a chase, not a
+converging repair). 94 of the 152 change-events (62%) move to NULL, several with very large claimed
+gains against the model's own two highest-frequency codes (31 't'(x27)->NULL gain 172.8; 22 'r'(x20)
+->NULL gain 132.4; 83 'e'(x21)->NULL gain 100.1; 37 'u'(x37)->NULL gain 94.1) -- deleting the
+*most*-attested letters in the whole cut gains the most, exactly the length-bias direction the
+diagnosis below predicts. The rest replace one single letter with a different, equally arbitrary one
+(8 'o'(x18)->'e' gain 111.5; 58 'z'(x6)->'u' gain 86.8). key_full is the known-correct key for this
+letter (rule 3's own positive control elsewhere in this file). 100 false positives against a gate of
+<=2.
+```
+**Diagnosis (not a coin-flip noise result -- a structural flaw in the scoring rule as literally
+specified):** the objective is the *total* (summed, not averaged) log-probability of the decoded
+stream. Every character's own log-probability is negative (no letter is ever certain, p<1), so
+deleting a character by mapping its code to NULL always *removes* a negative term from the sum and
+therefore always raises the total score, regardless of whether the deleted letter was the correct
+one. NULL (0 characters) beats every non-empty candidate on this objective alone unless the letter
+being kept is so contextually predictable that the fr16 model's per-character cost of keeping it is
+smaller than the margin -- which is rarely true for a French text's own rarer letters (b, c, f, g, h,
+k, q, v, x, y, z), i.e. for exactly the letters most likely to appear in a real cipher's rarer codes.
+This reproduces on the algorithm's own known-good other use in this session: a same-algorithm smoke
+run on `ciphertext_5799.tsv`/`key_5799.tsv` (a different, smaller target, --rounds 1) proposed changes
+on the large majority of codes seen, most of them to NULL, several to an unrelated single letter with
+a large claimed "gain" -- the same pathology, not specific to 5811/key_full.
+
+**(b) Known-answer control, 3 seeds.** `ax2_4612s/known_answer_control.py` builds, per seed, a
+perturbed `key_full` (8 codes used >=5 times in the 5811 cut, drawn without replacement, RNG seeded
+`46120+seed`, arranged into 4 pairs whose letter values are swapped; 2 further such codes' values
+replaced by a bigram from the fr16 top-60 list that is *not* their true letter, "hiding" them as
+syllable codes), runs `tools/key_repair.py` from that perturbed key on the same 5811 cut, and compares
+the repaired key to the *original* key_full (recovery: swapped code's repaired value == its true
+key_full letter; false change: any code outside the 10 perturbed ones whose repaired value differs
+from key_full):
+```
+55 codes used >=5 times with a single-letter key_full value (the eligible pool).
+seed 0: swap 63,78,8,7,23,87,64,76 (paired 63<->78, 8<->7, 23<->87, 64<->76); hide 39,73 as bigrams.
+  recovered 0/8 swapped codes to their true letter; 0/2 hidden-bigram codes reverted either.
+  false changes on the other 158 untouched codes: 84.
+seed 1: swap 73,12,61,9,81,112,72,113; hide 39,29.
+  recovered 0/8; 0/2 hidden reverted. False changes: 88.
+seed 2: swap 64,61,39,63,28,29,105,77; hide 58,33.
+  recovered 0/8; 0/2 hidden reverted. False changes: 88.
+
+GATE: mean recovery 0.000 (>= 0.75 needed)? False. Max false changes across seeds 88 (<= 2 needed)? False.
+```
+0 of 24 swapped-code instances (8 codes x 3 seeds) recovered their true key_full letter in any seed --
+not "mostly recovered with a few misses", a clean zero. The perturbation itself is invisible to the
+algorithm: with 84-88 of the other 158 untouched codes *also* getting rewritten every time, the 8
+swapped codes' fate is decided by the same NULL-seeking cascade as (a), not by whether the search
+can find their true letter again.
+
+**Gate verdict: CONTROL BELOW GATE on both halves, by roughly two orders of magnitude** ((a) 100 false
+positives vs a gate of <=2; (b) 0.0 mean recovery vs a gate of >=0.75, and up to 88 false changes vs
+<=2). Per the brief and CLAUDE.md rule 3: stop here; this is not a negative about 4612's or 5799's own
+key, and no key change is proposed on their strength.
+
+**Root cause (not a coincidence of margin or corpus, a structural property of "total log-probability
+of the whole decoded stream" as the objective).** Every character's own log-probability under any
+n-gram model is strictly negative (no letter is ever certain). Summing (rather than averaging) over
+the stream means each character can only ever *subtract* from the total score. Mapping a code to NULL
+removes that character's negative term entirely, which unconditionally raises the total score by that
+term's full magnitude -- regardless of whether the deleted letter was correct. A real letter only
+survives against NULL if the model's own per-character cost of keeping it is smaller than `--margin`
+in absolute terms, which is true for very predictable letters in strong context but false for most of
+a real French text's rarer letters (exactly the letters that a homophonic table's rarer codes, x, y,
+z, b, k, q, h -- H-S's own list -- are likely to hold), and NULL keeps winning against a bigram or
+trigram candidate for the same reason once nearby codes have themselves already been NULLed (fewer
+real characters left to give the longer candidate a fair context). This is independent of `--margin`'s
+value in the range tried (a higher margin would raise the bar for adopting an incorrect single-letter
+substitution but does nothing to stop the systematic NULL-ward pull, since NULL's "gain" over a real
+letter scales with how improbable the model finds that letter in context, not with a fixed constant);
+raising the margin enough to stop NULL-seeking would also block the very syllable-value substitutions
+this tool exists to find. The fix (not attempted this box, since it changes the brief's own specified
+objective, and the box's remaining time went to writing this up clearly instead) is to score by *mean*
+log-probability per character (bits/char), or some other length-normalised or length-penalised
+objective, so that deleting information is only rewarded when it is genuinely less costly than keeping
+a real, low-probability letter -- not unconditionally.
+
+**Verdict for AX2-4612S as a whole.** Unit 1 (the tool) works exactly as specified and is
+deterministic (offline test, `tools/tests/test_key_repair.py`, 10 checks, all pass) -- the bug is in
+the brief's own scoring objective, not in the implementation of it. Unit 2's controls both fail by
+roughly two orders of magnitude, so per rule 3 unit 3 (running key_repair on 4612 v3 and 5799) was not
+attempted: a tool this far below its own null control cannot produce a result distinguishable from
+noise on either target, and running it anyway would risk exactly the kind of unearned "candidate ready
+for re-derivation" flag rule 3 exists to prevent. `key_full.tsv`, `key.tsv`, `key_5799.tsv` untouched;
+no `key_4612_repair.tsv`/`key_5799_repair.tsv` produced. H-S itself is neither confirmed nor refuted by
+this box -- the instrument built to test it was not sound enough to run on either target, which is a
+different thing from a negative result about the hypothesis. Next step for a successor: re-score with
+mean (not total) log-probability per character, keeping candidate generation and the round-sweep
+structure unchanged, and re-run both controls before touching 4612/5799 again.
+
+Files: `tools/key_repair.py`, `tools/tests/test_key_repair.py`, `ax2_4612s/{null_control_changes.tsv,
+known_answer_control.py,known_answer_control.log}`, this section. `key_full.tsv`, `key.tsv`,
+`key_5799.tsv` untouched (rule 3: a control below gate means the target is not run; no
+`key_4612_repair.tsv`/`key_5799_repair.tsv` produced this box). No network. No images.
