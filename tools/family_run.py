@@ -289,6 +289,16 @@ def main(argv=None):
     dsuffix = f"-shuffle{a.shuffle_target}" if a.shuffle_target is not None else ""
     if a.param:  # DSN2 (25 Sept 2026): variants of one family on one seed no longer overwrite each other's decode
         dsuffix += "-" + re.sub(r"[^A-Za-z0-9=.,~#+_-]", "_", ",".join(a.param))[:80]
+    if a.label:
+        # bBLZ4 (26 Sept 2026): two runs of the same family/seed/params on different corpora (an English judge
+        # rerun on German text, say) wrote the same families/<family>-<seed>.txt and silently overwrote each
+        # other (bBLZ3's masc-1-de.txt collided with bBLZ2's own masc-1.txt). Prefer a corpus-derived tag (the
+        # thing that actually varied); fall back to the label itself. Only added when --label is given, so a
+        # caller that never passes one keeps the exact old filename.
+        tag_src = os.path.splitext(os.path.basename((a.corpus[0] if a.corpus else "").rstrip("/")))[0] or a.label
+        tag = re.sub(r"[^A-Za-z0-9]+", "", tag_src).lower()[:16]
+        if tag:
+            dsuffix += f"-{tag}"
     plan = (f"family {a.family}: {fam.DESCRIPTION}\nspec {a.spec} slug {slug}\nciphertext: {len(msgs)} message(s), "
             f"N={N} signs, K={K} distinct, tokens={mode}" +
             (f" (target letters shuffled, seed {a.shuffle_target}, false-positive floor)" if a.shuffle_target is not None else "") +
