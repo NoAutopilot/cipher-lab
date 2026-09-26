@@ -1,4 +1,6 @@
-found-solved (item 1); item 2 partial (key described, not found); item 3 partial (leaf carries its own interlinear decipherment -- see 26 Sept 2026 section below)
+partial
+
+Per item (moved off line 1 by the LANE NX orchestrator, 26 Sept 2026, rule 5): found-solved (item 1); item 2 partial (key described, not found); item 3 partial (leaf carries its own interlinear decipherment -- see 26 Sept 2026 section below)
 
 # Royalist ciphered letters to/from General Pablo Morillo — RAH cluster (1817, 1817, 1820)
 
