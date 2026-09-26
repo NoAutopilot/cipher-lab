@@ -1,8 +1,10 @@
 solved
-Reading ready (bSZM, 26 Sept 2026): all three leaves decoded at grade C from the manuscript's own period
-interlinear gloss (letter-per-code key, pooled 3-leaf consistency 0.878 vs shuffle 95th pct 0.204). See
-"Merge (bSZM, 26 Sept 2026)" below. Novelty not yet classified -- needs a verifier's AUDIT.md (rule 10); this
-job does not classify novelty.
+Solved from the leaf's own period decipherment (V8-SZEM AUDIT.md, 26 Sept 2026: N0, key `period`, text not located in
+print): a contemporary interlinear gloss spells out every cipher word on ff.65-67; we transcribed cipher and gloss and
+rebuilt from it the 22-sign letter key, which regenerates the gloss's reading (434 code tokens, C 384 / M 50; bSZR rule-7
+re-derivation exit 0). The plaintext is the gloss's, not a cryptanalytic result of ours. See AUDIT.md for the safe
+sentence; "first", "unread" or "unpublished" wording is not allowed (rule 10). Earlier header (bSZM, superseded): "all
+three leaves decoded at grade C from the manuscript's own period interlinear gloss ... Novelty not yet classified".
 Checked 26 Sept 2026 by bSZEM: this worker read the item's own three DjVu page images directly, full-page (leaves
 foliated 65-67, publication/430427/edition/343124, fetched from wbc.poznan.pl and read from page images).
 Bourdeau CATALOGUE.md #348 (fresh shallow clone, HEAD at clone time) says "Free
@@ -16,6 +18,8 @@ naming Szembek or Kórnik; one web search for the item's Polish title and shelfm
 page itself, nothing else. This worker also read the item directly: downloaded and decoded all three DjVu page
 images (leaves foliated 65-67, publication/430427/edition/343124) from wbc.poznan.pl and viewed them full-page.
 No prior decipherment, transcription or publication of this letter found anywhere searched.
+(V8-SZEM correction, 26 Sept 2026: true of print and of other projects, but the leaf itself carries a period
+decipherment -- the interlinear gloss -- so "no prior decipherment" must not be repeated; see AUDIT.md.)
 
 # Szembek BK 1560 -- "List zaszyfrowany"
 
@@ -55,7 +59,7 @@ proditore", "patriae", "defuncto Principem", "Serbanum reduxit", "deceptionibus"
 name, appears twice), "occisus", "caput", "Honorarie", "Sityka"). This looks like a period (or near-period)
 decipherment written directly onto the manuscript by a contemporary hand, not a modern pencil annotation -- the
 gloss ink and the cipher-number ink both look 18th-century. It is NOT mentioned in Bourdeau's catalogue entry
-("length and system not yet checked" -- consistent with nobody having opened the image before this job) and was
+("length and system not yet checked" -- consistent with nobody having opened the image before this job [V8-SZEM: a guess about other people, not evidence; drop it]) and was
 not found in any search above. This worker did not verify whether the gloss is complete, whether it is
 contemporary with the letter or a later archival hand, or whether it decodes every code group -- that needs a
 transcription pass, not this sampling job.
@@ -309,7 +313,7 @@ mean rate 0.871; no class of exactly 2 occurrences. Per-code detail in `consiste
 per-occurrence overrides, grade M, where that occurrence's own aligned letter disagrees with its code's
 pooled mode -- e.g. code 42's known d/c split from bSZL66 resolves to mode 'c' with the 'd' occurrences kept
 as M exceptions rather than silently overwritten), `decode.json`. `python3 tools/decode_key.py
-ciphers/szembek-bk1560 --check` exits 0. **Grades: C 388, M 46, U 0** of 434 real code tokens (no code is
+ciphers/szembek-bk1560 --check` exits 0. **Grades: C 388, M 46, U 0** [superseded: C 384, M 50 after B7's 05:50 downgrade of codes 19/24/48] of 434 real code tokens (no code is
 unglossed after pooling all three leaves). `reading.txt` reads as legible connected Latin prose across all
 three leaves (e.g. "Celsissimus Princeps qui ... conscientiam procedimus", "afflicta patria", "defunctum
 principem, Serbanum me duxit", "vindictam sumat", "de Pergenbeio fiat").

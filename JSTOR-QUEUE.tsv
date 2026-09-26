@@ -91,3 +91,5 @@ ciphers/lodewijk-van-nassau-1573-74	"Wetterauer Grafenverein" AND Schmidt AND (1
 ciphers/lodewijk-van-nassau-1573-74	Dathenus AND 1573 AND (Oranien OR Orange OR Oranje) AND (Nassau OR Dillenburg) AND (Kassel OR Heidelberg OR Pfalz OR Hessen) AND (Chiffre OR cipher OR cijfer)	2026-09-26	done 2026-09-26	no relevant hit (3 results, none about the letter)
 ciphers/lodewijk-van-nassau-1573-74	Salentin AND 1573 AND ("Johann von Nassau" OR "Jan van Nassau" OR "Jean de Nassau") AND (Köln OR Koln OR Cologne OR Keulen) AND (Groen OR Prinsterer OR Oktober OR October)	2026-09-26	queued	
 ciphers/lodewijk-van-nassau-1573-74	(Salentin OR "Salentin von Isenburg") AND (Graff OR Arnsberg) AND ("Johann von Nassau" OR "Graf Johann") AND ("Oktober 1573" OR "October 1573" OR 1573)	2026-09-26	queued	
+ciphers/szembek-bk1560	"Szembek" AND (cipher OR szyfr OR cyfra OR "list zaszyfrowany") AND (Kórnik OR Kórnicka OR "BK 1560")	2026-09-26	queued	
+ciphers/szembek-bk1560	(Brâncoveanu OR Brancovanus OR Brancovan) AND (Serban OR Cantacuzino) AND (impostor OR detractor) AND (Burgundus OR Burgundian) AND (Poland OR Szembek OR "Augustus II")	2026-09-26	queued	

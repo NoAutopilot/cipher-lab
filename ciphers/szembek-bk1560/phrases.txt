@@ -1,5 +1,6 @@
-# szembek-bk1560 (bSZM, 26 Sept 2026): distinctive decoded phrases and names from the merged 3-leaf reading
-# (reading.txt), for print_check.py's search log. A miss is a search result, not a novelty verdict (rule 10).
+# szembek-bk1560: distinctive phrases for print_check.py's search log. A miss is a search result, not a novelty
+# verdict (rule 10). bSZM (26 Sept 2026) rows first; V8-SZEM (26 Sept 2026) added the letter's own CLEAR-TEXT
+# phrases (written en clair on the leaf, so any printed edition would carry them verbatim) and a positive control.
 Celsissimus Princeps
 conscientiam procedimus
 christianam procedimus
@@ -10,3 +11,20 @@ Pergenbeio
 Burgundus
 Serbanum
 Sityka
+# V8-SZEM clear-text phrases (as transcribed on the leaf)
+debita veneratur salutatione
+impostor et detractor
+importunitate et garrulitate
+in mundo nemini fecundus
+cum addicto suo socio
+perfido ac proditore
+sed hoc remittimus ad divinam justitiam
+quae omnia scit et videt
+quorum mendaciis et deceptionibus
+pro pudore silentio obvolvi deberent
+Deus justissimus secundum opera et conscientiam illorum
+per fraudes unius sui falsi amici
+caput in rem honorarii missum
+Serbanum reduxit
+# positive control (V8-SZEM): a phrase from Zaluski, Epistolarum historico-familiarium t.1 (1709), IA bub_gb_RMM33dayMRYC
+Ablegatum nostrum extraordinarium
