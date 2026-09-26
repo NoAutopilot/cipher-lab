@@ -1,0 +1,86 @@
+line	pos	code	marks	source	reason
+1	5	tee		split	A=Z B=tee C=+; C note: curved lead-in stroke into full crossing (both arms), on the line
+1	8	g	dot	BC	A=_ B=g C=g; C note: two stacked/retraced loop-tail shapes, bold, like doubled 9
+1	27	+		split	A=# B=+ C=f; C note: long crossbar stroke with hooked top, matches f exemplars
+2	1	#		split	A=Z B=# C=S7; C note: 7-shape with double-cross mark directly above
+2	1.5	S7	#	BC	A=MISSING B=S7 C=S7; C note: same crop as pos1 (duplicate), same glyph
+2	5	wd		BC	A=g B=wd C=wd; C note: w-body joined to tall right stroke ending in loop, wd ligature
+2	20	Z		BC	A=_ B=Z C=Z; C note: complex n+-like upper part flowing into swirl tail, matches Z's varied atlas forms
+2	20.5	S7		split	A=MISSING B=S7 C=Z; C note: near-identical crop to pos20, same complex glyph
+2	26	eps	5	BC	A=_ B=eps C=eps; C note: two stacked open bowls, open right, no closed loop
+2	26.5	g	7	BC	A=MISSING B=g C=g; C note: 9/g loop-tail shape following the eps, left neighbor visible at edge
+3	7	m		BC	A=_ B=m C=m; C note: three-hump cursive m, bold
+3	7.5	S7		BC	A=MISSING B=S7 C=S7; C note: 7-shape below the m, distinct sign
+3	13	v		BC	A=_ B=v C=v; C note: arc rising into hooked loop on right, matches v
+3	19	o.		BC	A=_ B=o. C=o.; C note: ring with central dot; cursive y visible as right neighbor
+4	22	S7		split	A=_ B=S7 C=g; C note: bold loop-tail (9-shape) right of a partial 7; center falls on the g
+4	28	wd		BC	A=f B=wd C=wd; C note: w-body with tall joining stroke and loop tail, matches wd
+4	29	y		BC	A=g B=y C=y; C note: cursive y with looped tail
+5	2	]	o	BC	A=Z B=] C=]; C note: small ot/of mark above a box open to the left
+5	15	o.		BC	A=_ B=o. C=o.; C note: clean ring with center dot
+5	19	m	dot	BC	A=_ B=m C=m; C note: bold three-hump m
+5	24	]	ot	BC	A=w B=] C=]; C note: box shape open to the left, no mark visible
+5	26	Z		AC	A=Z B=_ C=Z; C note: hooked cursive stroke resembling a 2/Z form
+6	20	g		split	A=nt B=g C=Z; C note: curvy hook-and-tail flourish above a partial loop; ambiguous among Z/S/rz shapes
+7	15	m		BC	A=_ B=m C=m; C note: three-hump m above a 7-shape
+7	15.5	S7		BC	A=MISSING B=S7 C=S7; C note: 7-shape below the m, same crop as pos15
+7	17	w		BC	A=Z B=w C=w; C note: w with lead-in stroke, above a 7-shape and a loop
+7	17.5	S7		BC	A=MISSING B=S7 C=S7; C note: 7-shape below the w, same crop as pos17
+7	23	w		BC	A=_ B=w C=w; C note: w with lead-in stroke, left of a marked g
+7	23.5	g	1	BC	A=MISSING B=g C=g; C note: 9-loop shape with a short stroke/mark above, right of the w
+8	3	a		BC	A=_ B=a C=a; C note: bold cursive a
+8	12	g	~	split	A=psi B=g C=y; C note: cursive y with looped tail
+8	22	#		BC	A=_ B=# C=#; C note: tall double-barred cross standing on the line
+8	22.5	o.		BC	A=MISSING B=o. C=o.; C note: ring with dot, right of the # sign
+8	25	m		BC	A=_ B=m C=m; C note: bold three-hump m
+9	3	#		split	A=Z B=# C=S7; C note: 7-shape with double-cross mark above
+9	3.5	S7	#	BC	A=MISSING B=S7 C=S7; C note: same crop as pos3, same glyph
+9	4	#		split	A=_ B=# C=e; C note: looped e (single bowl, loop at top) with double-cross mark above
+9	4.5	e	#	BC	A=MISSING B=e C=e; C note: same crop as pos4, same glyph
+9	12	o.		BC	A=_ B=o. C=o.; C note: ring with dot, left of a 7-shape
+9	12.5	S7		BC	A=MISSING B=S7 C=S7; C note: 7-shape right of the o. sign
+9	13	bh		BC	A=_ B=bh C=bh; C note: tall stem with small hooked loop at upper right, leftmost in a bh/w/S7/o. run
+9	13.1	w		BC	A=MISSING B=w C=w; C note: w with lead-in stroke, second in the run
+9	13.2	S7		BC	A=MISSING B=S7 C=S7; C note: 7-shape tail following the w, third in the run
+9	13.3	o.		BC	A=MISSING B=o. C=o.; C note: ring with dot, fourth in the run, partial a visible as right neighbor
+9	18	g		BC	A=_ B=g C=g; C note: looped 9-shape with an upper flourish resembling a 3
+10	7	m	~	BC	A=_ B=m C=m; C note: bold m, wavy curl above resembling tilde/3-shape
+10	16	S7		split	A=Z B=S7 C=nt; C note: hooked curve crossed by short stroke, n+ shape
+10	20	#		BC	A=nt B=# C=#; C note: two parallel strokes each crossed, double-barred cross on line
+11	15	o.		BC	A=y B=o. C=o.; C note: ring with central dot, clean circle
+11	15.5	S7		BC	A=MISSING B=S7 C=S7; C note: 7-shaped stroke below the ring
+11	19	+		BC	A=# B=+ C=+; C note: single cross standing on line
+12	9	o.		BC	A=nt B=o. C=o.; C note: ring with dot, left of pair
+12	9.5	nt		BC	A=MISSING B=nt C=nt; C note: n-loop merging into crossed stroke right of o.
+12	21.5	H		BC	A=MISSING B=H C=H; C note: bold H with top flourish, dominant sign
+13	5	w		split	A=_ B=w C=N; C note: large curvy double-loop shape, cursive N
+13	17	lam		split	A=_ B=lam C=y; C note: vertical stroke with loop and dot, ambiguous with p/g
+13	17.5	v		BC	A=MISSING B=v C=v; C note: broad open curve, hooked left arm
+13	21	w		BC	A=f B=w C=w; C note: omega-like double hump with lead-in stroke
+13	21.5	o.		BC	A=MISSING B=o. C=o.; C note: ring with dot right of w
+14	6	#		BC	A=p B=# C=#; C note: double cross between plain a and o. context
+14	10	dl		BC	A=_ B=dl C=dl; C note: small loop with curling tail rising to upper right
+14	20	y		BC	A=_ B=y C=y; C note: left of pair of looped-tail signs
+14	20.5	y		BC	A=MISSING B=y C=y; C note: right of pair, same looped-tail shape
+14	25	g		BC	A=_ B=g C=g; C note: 9/g-shaped loop, left of y neighbour
+14	26	y		BC	A=f B=y C=y; C note: looped-tail sign right of g
+15	3	y		BC	A=_ B=y C=y; C note: bold looped-tail sign, upper of pair
+15	3.5	S		split	A=MISSING B=S C=e; C note: closed loop/bowl below y, numeral-3-like
+15	9	H		BC	A=_ B=H C=H; C note: bold H with top flourish
+15	16	S7		BC	A=_ B=S7 C=S7; C note: 7-shaped stroke above lam
+15	16.5	lam		BC	A=MISSING B=lam C=lam; C note: tall Λ, two strokes meeting at apex
+16	22	Z		BC	A=_ B=Z C=Z; C note: bold Z stroke below n+ context
+17	6	phi		BC	A=_ B=phi C=phi; C note: small slashed circle on long stem
+17	6.5	_		split	A=MISSING B=_ C=bh; C note: tall stem with hooked loop upper right, below phi
+17	17	v		AC	A=v B=_ C=v; C note: curved v with hooked left arm
+17	18	S		AC	A=S B=_ C=S; C note: S/ʃ curve
+17	19	_		split	A=y B=_ C=f; C note: long f with crossbar
+17	22	_		split	A=nt B=_ C=m; C note: three-hump cursive m
+17	24	_		split	A=lam B=_ C=nt; C note: hook plus crossing horizontal stroke
+18	4	S7		split	A=w B=S7 C=S4; C note: diagonal slash crossing a horizontal bar/foot
+18	22	bh		BC	A=tee B=bh C=bh; C note: tall stem with hooked loop upper right
+19	9	g		BC	A=_ B=g C=g; C note: 9/g loop shape
+19	13	f		split	A=y B=f C=+; C note: single cross on line
+19	23	nt		BC	A=Lx B=nt C=nt; C note: n loop plus crossed stroke, clear n+ shape
+19	25	tee		split	A=g B=tee C=S7; C note: 7-shaped stroke with cross mark above
+19	25.5	y	7	BC	A=MISSING B=y C=y; C note: looped-tail sign right of S7

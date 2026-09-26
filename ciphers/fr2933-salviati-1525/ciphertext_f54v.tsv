@@ -14,7 +14,7 @@ line	pos	code	marks	grade
 1	13	H	5	AB
 1	14	y		AB
 1	15	_		AB
-1	16	U		settled
+1	16	U	H	settledC
 1	17	w		AB
 1	18	bh		AB
 1	19	a	~	AB
@@ -26,8 +26,8 @@ line	pos	code	marks	grade
 1	25	tee		AB
 1	26	e	dot	AB
 1	27	eps	dot|1	AB
-1	28	U		settled
-1	29	g		settled
+1	28	U	H	settledC
+1	29	g	~	settledC
 2	1	g	dot|dot	AB
 2	2	S7		AB
 2	3	lam		AB
@@ -66,7 +66,7 @@ line	pos	code	marks	grade
 3	8	g	~	AB
 3	9	Z		AB
 3	10	S7		AB
-3	11	#	dot	settled
+3	11	#	dot	split
 3	12	psi		AB
 3	13	lam		AB
 3	14	lam	5	AB
@@ -128,9 +128,9 @@ line	pos	code	marks	grade
 5	13	y		AB
 5	14	_		AB
 5	15	_		AB
-5	16	S7		settled
+5	16	S7	H	settledC
 5	17	]	o	AB
-5	18	w		settled
+5	18	w		split
 5	19	nt		AB
 5	20	y		AB
 5	21	w		AB
@@ -165,9 +165,9 @@ line	pos	code	marks	grade
 6	24	e		AB
 6	25	_		AB
 6	26	S4		AB
-6	27	+		settled
+6	27	+		split
 7	1	eps		AB
-7	2	_		settled
+7	2	+	M	settledC
 7	3	_		AB
 7	4	_		AB
 7	5	_		AB
@@ -195,11 +195,11 @@ line	pos	code	marks	grade
 7	27	_		AB
 8	1	_		AB
 8	2	_		AB
-8	3	_		settled
+8	3	_	L	settledC
 8	4	_		AB
 8	5	_		AB
-8	6	_		settled
-8	7	_		settled
+8	6	S	H	settledC
+8	7	_		split
 8	8	_		AB
 8	9	_		AB
 8	10	_		AB
@@ -207,25 +207,25 @@ line	pos	code	marks	grade
 8	12	_		AB
 8	13	_		AB
 8	14	_		AB
-8	15	_		settled
+8	15	_		split
 8	16	_		AB
 8	17	_		AB
 8	18	_		AB
-8	19	_		settled
+8	19	_		split
 8	20	_		AB
-8	21	_		settled
-8	22	_		settled
+8	21	_		split
+8	22	_		split
 8	23	_		AB
-8	24	_		settled
+8	24	a	H	settledC
 8	25	_		AB
 8	26	_		AB
-8	27	L		settled
+8	27	L		split
 9	1	dl		AB
 9	2	Lx		AB
 9	3	[	dot	AB
 9	4	S7		AB
 9	5	_		AB
-9	6	#	dot	settled
+9	6	#	dot	split
 9	7	]		AB
 9	8	w	dot|#	AB
 9	9	y		AB
@@ -236,23 +236,23 @@ line	pos	code	marks	grade
 9	14	f		AB
 9	15	w		AB
 9	16	y		AB
-9	17	nt		settled
-9	17.5	S7		B-split
+9	17	nt		split
+9	17.5	S7	M	settledC
 9	18	tee		AB
 9	19	K		AB
 9	20	phi		AB
 9	21	_		AB
 9	22	rz		AB
 9	23	tee		AB
-10	1	]		settled
+10	1	]		split
 10	2	y		AB
 10	3	_		AB
 10	4	g		AB
 10	5	S7	1	AB
 10	6	#	dot	AB
-10	7	eps	5	settled
+10	7	eps	5	settledC
 10	8	S7		AB
-10	9	eps		settled
+10	9	eps		split
 10	10	tee		AB
 10	11	Lx		AB
 10	12	e	#	AB
@@ -265,10 +265,10 @@ line	pos	code	marks	grade
 10	19	eps	#	AB
 10	20	S7		AB
 10	21	eps		AB
-10	22	tee		settled
+10	22	tee	1	settledC
 10	23	nt		AB
 10	24	e		AB
-10	25	S7	5	settled
+10	25	S7	5	split
 11	1	Z	dot	AB
 11	2	y		AB
 11	3	nt		AB
@@ -276,16 +276,16 @@ line	pos	code	marks	grade
 11	5	Z		AB
 11	6	S7		AB
 11	7	p		AB
-11	8	S		settled
+11	8	S		split
 11	9	phi		AB
-11	10	_		settled
-11	11	_		settled
+11	10	_		settledC
+11	11	_		settledC
 11	12	_		AB
-11	13	_		settled
-11	14	_		settled
+11	13	eps		settledC
+11	14	_		split
 11	15	_		AB
 11	16	_		AB
-11	17	_		settled
+11	17	_		split
 11	18	_		AB
 11	19	S4		AB
 11	20	y		AB
@@ -293,23 +293,23 @@ line	pos	code	marks	grade
 11	22	]	o	AB
 11	23	eps	1	AB
 11	24	m	7	AB
-11	25	S		settled
-11	25.5	lam		B-split
+11	25	S		split
+11	25.5	lam		settledC
 11	26	_		AB
 12	1	L		AB
-12	2	g		settled
+12	2	g		settledC
 12	3	[		AB
 12	4	S7		AB
 12	5	#		AB
 12	6	w	1	AB
 12	7	psi		AB
 12	8	]	ot	AB
-12	9	+		settled
+12	9	+		settledC
 12	10	e		AB
 12	11	tee		AB
 12	12	K		AB
 12	13	g		AB
-12	13.5	g		B-split
+12	13.5	g		settledC
 12	14	nt		AB
 12	15	y		AB
 12	16	S4		AB
@@ -330,7 +330,7 @@ line	pos	code	marks	grade
 13	3	eps		AB
 13	4	tee		AB
 13	5	_		AB
-13	6	_		settled
+13	6	_		settledC
 13	7	_		AB
 13	8	_		AB
 13	9	+		AB
@@ -343,7 +343,7 @@ line	pos	code	marks	grade
 13	16	w		AB
 13	17	o.		AB
 13	18	S7		AB
-13	19	eps	7	settled
+13	19	eps	7	settledC
 13	20	m	~	AB
 13	21	phi		AB
 13	22	y		AB
@@ -351,17 +351,17 @@ line	pos	code	marks	grade
 13	24	]	o	AB
 13	25	tee		AB
 13	26	f		AB
-13	27	w		settled
-13	27.5	m		B-split
+13	27	w		settledC
+13	27.5	m		settledC
 13	28	bh		AB
 14	1	_		AB
-14	2	_		settled
+14	2	_		settledC
 14	3	_		AB
-14	4	_		settled
+14	4	_		settledC
 14	5	_		AB
 14	6	_		AB
 14	7	_		AB
-14	8	_		settled
+14	8	_		settledC
 14	9	_		AB
 14	10	_		AB
 14	11	S4		AB
@@ -370,7 +370,7 @@ line	pos	code	marks	grade
 14	14	H	o|1	AB
 14	15	]	o	AB
 14	16	g	5	AB
-14	16.5	g		B-split
+14	16.5	g		settledC
 14	17	]		AB
 14	18	g	ot	AB
 14	19	psi		AB
@@ -391,7 +391,7 @@ line	pos	code	marks	grade
 15	9	S4	o	AB
 15	10	dl		AB
 15	11	_		AB
-15	12	_		settled
+15	12	_		settledC
 15	13	_		AB
 15	14	_		AB
 15	15	_		AB
@@ -399,51 +399,51 @@ line	pos	code	marks	grade
 15	17	eps		AB
 15	18	+		AB
 15	19	_		AB
-15	20	_		settled
+15	20	_		settledC
 15	21	eps		AB
 15	22	+		AB
-15	23	_		settled
+15	23	_		settledC
 15	24	_		AB
-16	1	_		settled
-16	2	_		settled
-16	3	_		settled
+16	1	_		split
+16	2	_		split
+16	3	S		settledC
 16	4	_		AB
-16	5	_		settled
+16	5	_		split
 16	6	_		AB
-16	7	_		settled
-16	8	_		settled
+16	7	_		split
+16	8	_		settledC
 16	9	_		AB
-16	10	_		settled
+16	10	_		settledC
 16	11	_		AB
 16	12	_		AB
 16	13	_		AB
 16	14	_		AB
 16	15	_		AB
 16	16	_		AB
-16	17	_		settled
+16	17	_		settledC
 16	18	_		AB
 16	19	_		AB
 16	20	_		AB
 16	21	_		AB
-16	22	_		settled
+16	22	_		settledC
 16	23	_		AB
 16	24	_		AB
-17	1	_		settled
+17	1	_		settledC
 17	2	_		AB
 17	3	_		AB
 17	4	_		AB
 17	5	_		AB
 17	6	_		AB
-17	7	_		settled
-17	8	_		settled
+17	7	ch	+	settledC
+17	8	_		settledC
 17	9	_		AB
 17	10	_		AB
 17	11	_		AB
-17	12	_		settled
+17	12	_		settledC
 17	13	_		AB
 17	14	_		AB
-17	15	_		settled
-17	16	_		settled
+17	15	eps		settledC
+17	16	_		split
 17	17	_		AB
 17	18	_		AB
 17	19	_		AB
@@ -456,11 +456,11 @@ line	pos	code	marks	grade
 18	7	H	1|o	AB
 18	8	Z	ot	AB
 18	9	_		AB
-18	10	w	1	settled
-18	11	o.		settled
+18	10	w	1	split
+18	11	o.		settledC
 18	12	bh		AB
-18	13	#		settled
-18	13.5	S7		B-split
+18	13	#		settledC
+18	13.5	S7		settledC
 18	14	g	dot	AB
 18	15	lam		AB
 18	16	y		AB
@@ -472,7 +472,7 @@ line	pos	code	marks	grade
 18	22	o.		AB
 18	23	S7		AB
 18	24	bh		AB
-18	25	w		settled
+18	25	w		settledC
 18	26	S7		AB
 18	27	o.		AB
 18	28	g	5	AB
@@ -498,7 +498,7 @@ line	pos	code	marks	grade
 19	17	tee		AB
 19	18	e	+	AB
 19	19	e	#	AB
-19	20	e	#	settled
+19	20	S7		settledC
 19	21	#	dot|ot	AB
 19	22	bh		AB
 19	23	w		AB

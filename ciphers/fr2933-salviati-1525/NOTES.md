@@ -1773,3 +1773,62 @@ the target itself; status stays `partial`.
 
 Regenerate: `python3 tools/family_run.py specs/fr2933-salviati-1525.json --family syllabary --control-only --seeds 3 --restarts 6
 --param err=0.10` (`0.12`, `0.14`); about 2.3 minutes each, control-only (no target run, no cost beyond CPU).
+
+## bSALC: pass C, remaining leaves (26 Sept 2026)
+
+Worker bSALC (LANE B10; Opus orchestrating 8 Sonnet subagent calls, cap $8, box 60 min), 10:46-11:01 UTC. Brief
+`.claude/briefs/runs/2026-09-26-lane-b10-bSALC.md`. Disk only, no hosts. **No reading; no family re-run; grades stay H0 C0 S0 M0 I0.**
+
+**Method.** `glyphs/crops/` rebuilt with `glyph_atlas.py segment` (committed glyph files restored with `git checkout -- glyphs/`).
+`crop_passC_leaf.py <leaf>` (L1c's `crop_passC.py` generalised; reads only line/pos from `recon_box_<leaf>/disagreements.tsv`,
+never the A/B calls) cut 5x crops with neighbour context; `montage_passC_leaf.py <leaf>` stacked them per line, splitting any
+montage over 2,200 px. Commands run: `python3 crop_passC_leaf.py f54v` (and f55r, f56v, f57r, f56r): 68/61/61/85/79 rows,
+0 without a box. Each leaf's lines were split into two batches (lines 1-9, 10-19); one blind Sonnet call per batch got only
+`passC_crops/CODEBOOK.txt` (the codes and shape descriptions from `glyphs/labels.json`), the two atlas plates and the montage
+paths, and wrote `passC_<leaf>_b1/_b2.tsv` (merged into `passC_<leaf>.tsv`). `settle_passC_leaf.py <leaf>`: 2-of-3 base-code
+majority wins; a three-way split takes a crop arbitration from `THREE_WAY.tsv` if one exists (the 18 L1c/L5c arbitrations on
+f55v/f57v, carried over) or else pass B's call provisionally, source `split`, writes `recon_box_<leaf>/settled_passC.tsv`.
+The 76 new three-way splits were **not** arbitrated on the crop (cost); they are listed in the settled_passC files.
+**f.56r (unit 5) was not run:** its settle was one reader against 5x recrops (L2b), so it still lacks an independent third read,
+but starting it would have crossed 80% of the cap; its crops and montages are cut (`crop_passC_leaf.py f56r`) for a successor.
+
+**Per leaf** (disputed boxes: C with B / C with A / three-way):
+
+| leaf | disputed | BC | AC | split |
+|---|---|---|---|---|
+| f54v | 68 | 36 | 8 | 24 |
+| f55r | 61 | 39 | 9 | 13 |
+| f55v (L1c) | 87 | 50 | 20 | 17 (arbitrated) |
+| f56v | 61 | 37 | 5 | 19 |
+| f57r | 85 | 62 | 3 | 20 |
+| f57v (L5c) | 78 | 71 | 6 | 1 (arbitrated) |
+| f56r | 79 | no pass C | | |
+| **total** | 519 | 295 | 51 | 94 |
+
+**Results** (`python3 passC_error_estimate.py`), seven leaves, 3,554 boxes, 2,450 signs:
+- (a) residual disagreement, boxes with no 2-of-3 majority: **94 / 3,554 = 2.6%** of boxes (was 519 = 14.6% A-vs-B);
+  f.56r's 79 boxes are still one-reader settled.
+- (b) pass C dissent from any majority on the formerly disputed boxes: **94 / 440 = 21.4%** (CM3's proxy from f55v+f57v alone
+  was 11%; the four new leaves are harder, 76 / 275 = 27.6%). Where C joined a majority it sided with B 295 times, A 51.
+  Every three-way split but one has at least two readers calling a sign: the residual is base-code substitution, not
+  sign/plain indel.
+- (c) implied error of the settled text: **about 4.4% per box, 6.4% per sign token** (157 expected wrong boxes). Method, one
+  sentence: CM3's model with pass C now measured on 440 of 519 disputed boxes -- a majority-settled disputed box is wrong with
+  probability q = 21.4% (the third reader's own neither-rate at a hard box), a three-way split 1/2 (1/3 if arbitrated on the
+  crop), f.56r's unrevisited disputed boxes 27% (CM3), agreed boxes 0.6% both-wrong -- and per sign = per box x 3,554 / 2,450.
+- **Compared with SALV-DIAG's 8-9% crossover:** 6.4% per sign token is below it, but inside the 5-7% band the DSN controls
+  were run at, with 1.5-2.5 points of margin; the estimate is model-based (q is a proxy, the split-wrong rate is assumed), so
+  treat it as "probably below the cliff", not measured below it. Note the estimate is *higher* than CM3's 4.9% because q was
+  measured on harder leaves; the gain from pass C is that the error is now mostly code substitution at 94 listed boxes
+  rather than unlocated. Its mix differs from CM3_MIX (more substitution, fewer indels): a re-run control should use it.
+
+**Rebuild** (estimate below 8%, per the brief): `python3 build_ciphertext_passC.py` re-set every disputed row of
+`ciphertext_<leaf>.tsv` for the six leaves from `settled_passC.tsv` (grades `settledC` / `split`; f.54r and f.56r unchanged).
+Rows changed: f54v 15 (8 base code), f55r 16 (12), f55v 0, f56v 8 (6), f57r 8 (3), f57v 3 (0; marks only) = 50 rows, 29 base
+code. The older per-leaf `build_ciphertext_<leaf>.py` scripts would revert this; `build_ciphertext_passC.py` supersedes them.
+`python3 build_spec.py`: **spec ciphertext 2,820 -> 2,839 tokens, 223 -> 236 code+mark types**, row_pattern 2,820 -> 2,839 S
+(token diff vs the previous spec: 22 replaced, 20 inserted, 2 deleted); `build_spec.py --check` exits 0. No family re-run.
+
+Suggestions (not done): arbitrate the 76 new three-way splits on the crop (grade M), then run pass C on f.56r
+(crops already cut: `python3 crop_passC_leaf.py f56r && python3 montage_passC_leaf.py f56r`, 2 Sonnet calls); re-run the
+syllabary control at err=0.064 with the substitution-heavy mix before trusting a family verdict at this N.

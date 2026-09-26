@@ -1,0 +1,46 @@
+line	pos	code	marks	conf	note
+1	5	+		M	curved lead-in stroke into full crossing (both arms), on the line
+1	8	g		M	two stacked/retraced loop-tail shapes, bold, like doubled 9
+1	27	f		H	long crossbar stroke with hooked top, matches f exemplars
+2	1	S7	#	H	7-shape with double-cross mark directly above
+2	1.5	S7	#	H	same crop as pos1 (duplicate), same glyph
+2	5	wd		M	w-body joined to tall right stroke ending in loop, wd ligature
+2	20	Z		M	complex n+-like upper part flowing into swirl tail, matches Z's varied atlas forms
+2	20.5	Z		M	near-identical crop to pos20, same complex glyph
+2	26	eps		H	two stacked open bowls, open right, no closed loop
+2	26.5	g		M	9/g loop-tail shape following the eps, left neighbor visible at edge
+3	7	m		H	three-hump cursive m, bold
+3	7.5	S7		H	7-shape below the m, distinct sign
+3	13	v		H	arc rising into hooked loop on right, matches v
+3	19	o.		M	ring with central dot; cursive y visible as right neighbor
+4	22	g		M	bold loop-tail (9-shape) right of a partial 7; center falls on the g
+4	28	wd		M	w-body with tall joining stroke and loop tail, matches wd
+4	29	y		H	cursive y with looped tail
+5	2	]	ot	H	small ot/of mark above a box open to the left
+5	15	o.		H	clean ring with center dot
+5	19	m		H	bold three-hump m
+5	24	]		H	box shape open to the left, no mark visible
+5	26	Z		M	hooked cursive stroke resembling a 2/Z form
+6	20	Z		L	curvy hook-and-tail flourish above a partial loop; ambiguous among Z/S/rz shapes
+7	15	m		H	three-hump m above a 7-shape
+7	15.5	S7		H	7-shape below the m, same crop as pos15
+7	17	w		M	w with lead-in stroke, above a 7-shape and a loop
+7	17.5	S7		M	7-shape below the w, same crop as pos17
+7	23	w		M	w with lead-in stroke, left of a marked g
+7	23.5	g	1	M	9-loop shape with a short stroke/mark above, right of the w
+8	3	a		H	bold cursive a
+8	12	y		H	cursive y with looped tail
+8	22	#		H	tall double-barred cross standing on the line
+8	22.5	o.		H	ring with dot, right of the # sign
+8	25	m		H	bold three-hump m
+9	3	S7	#	H	7-shape with double-cross mark above
+9	3.5	S7	#	H	same crop as pos3, same glyph
+9	4	e	#	H	looped e (single bowl, loop at top) with double-cross mark above
+9	4.5	e	#	H	same crop as pos4, same glyph
+9	12	o.		M	ring with dot, left of a 7-shape
+9	12.5	S7		M	7-shape right of the o. sign
+9	13	bh		M	tall stem with small hooked loop at upper right, leftmost in a bh/w/S7/o. run
+9	13.1	w		M	w with lead-in stroke, second in the run
+9	13.2	S7		M	7-shape tail following the w, third in the run
+9	13.3	o.		M	ring with dot, fourth in the run, partial a visible as right neighbor
+9	18	g		M	looped 9-shape with an upper flourish resembling a 3
