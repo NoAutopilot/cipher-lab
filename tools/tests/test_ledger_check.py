@@ -38,18 +38,44 @@ SAMPLE = [
     # QA/audit-only row, unique session, the new Q code (RETRO-2026-09-25h proposal 3) -- must be
     # accepted as valid, not flagged
     "| 25 Sep | Parent worker QA run 3, rolling quality audit | Sonnet | session_01Q00000000000000000000 | 2.94 | Q | 12 items, 0 live failures |\n",
+    # PR-LAND-5 shape (RETRO-2026-09-26j item 5): first row's Cost cell is placeholder text, not
+    # a number, so find_cost_index() cannot pair it with an Outcome cell at all -- only the
+    # session-index fallback can see this row's session id
+    "| 26 Sep | PR-LAND-5 placeholder-cost row | Sonnet | session_0184Cjg9WnwGotCxKhi6no2F | cap 4, exact figure pending the parent's own get_session read at archive | D | placeholder cost |\n",
+    # PR-LAND-5 shape, second row: same session id, a real cost cell -- the fallback and the
+    # normal path must agree this is the same session, i.e. a duplicate
+    "| 26 Sep | PR-LAND-5 real-cost row | Sonnet | session_0184Cjg9WnwGotCxKhi6no2F | 2.01 | D | real cost |\n",
+    # LQ-L20-LAND shape: first row's Cost cell is "parent's get_session" (placeholder), second
+    # row has a real number and even a different outcome code (D vs D-)
+    "| 26 Sep | LQ-L20-LAND placeholder-cost row | Sonnet | session_019DNzwRqjndogyeTymb7Hqw | parent's get_session | D | placeholder cost |\n",
+    "| 26 Sep | LQ-L20-LAND real-cost row | Sonnet | session_019DNzwRqjndogyeTymb7Hqw | 3.71 | D- | real cost |\n",
 ]
 
 dup_sessions, bad_outcomes = ledger_check.check(SAMPLE)
 
 fails = 0
 
-if list(dup_sessions.keys()) != ["session_01Dup0000000000000000000"]:
-    print(f"FAIL: expected exactly one duplicate session id, got {list(dup_sessions.keys())}")
+expect_dups = {
+    "session_01Dup0000000000000000000",
+    "session_0184Cjg9WnwGotCxKhi6no2F",  # PR-LAND-5: placeholder-cost row + real-cost row
+    "session_019DNzwRqjndogyeTymb7Hqw",  # LQ-L20-LAND: placeholder-cost row + real-cost row
+}
+if set(dup_sessions.keys()) != expect_dups:
+    print(f"FAIL: expected duplicate session ids {expect_dups}, got {set(dup_sessions.keys())}")
     fails += 1
-elif len(dup_sessions["session_01Dup0000000000000000000"]) != 2:
-    print("FAIL: expected the duplicate session id to be seen on exactly 2 rows")
-    fails += 1
+else:
+    for sid in expect_dups:
+        if len(dup_sessions[sid]) != 2:
+            print(f"FAIL: expected {sid} to be seen on exactly 2 rows, got {len(dup_sessions[sid])}")
+            fails += 1
+
+# the session-index fallback: a row whose Cost cell is placeholder text still surfaces its
+# session id (RETRO-2026-09-26j item 5) -- confirm the (lineno, "(unparsed)", cost) shape
+for sid in ("session_0184Cjg9WnwGotCxKhi6no2F", "session_019DNzwRqjndogyeTymb7Hqw"):
+    unparsed_rows = [r for r in dup_sessions.get(sid, []) if r[1] == "(unparsed)"]
+    if len(unparsed_rows) != 1:
+        print(f"FAIL: expected exactly one fallback-parsed row for {sid}, got {len(unparsed_rows)}")
+        fails += 1
 
 bad_lines = {lineno for lineno, _, _ in bad_outcomes}
 # line numbers are 1-indexed positions in SAMPLE: the "A" row is line 8, "F-rl" is line 10

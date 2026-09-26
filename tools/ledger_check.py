@@ -73,6 +73,19 @@ def find_cost_index(fields):
     return None
 
 
+def find_session_index(fields):
+    """Fallback when find_cost_index() finds no numeric-cost/outcome pair: locate the Session cell directly
+    by SESSION_ID_RE regardless of what sits beside it, so a placeholder-cost row ("cap N, exact figure
+    pending...", "parent's get_session") still registers its session id for duplicate detection. Lesson of
+    26 Sept 2026: two real duplicate pairs this window (PR-LAND-5, LQ-L20-LAND) each had one row whose Cost
+    cell was placeholder text, which made find_cost_index() return None for that row and drop its session id
+    out of the check -- the later row with a real number was then seen only once, never flagged."""
+    for i, f in enumerate(fields):
+        if SESSION_ID_RE.match(f):
+            return i
+    return None
+
+
 def leading_token(field):
     if not field:
         return ""
@@ -115,7 +128,10 @@ def check(lines):
             continue  # header row
         cost_i = find_cost_index(fields)
         if cost_i is None or cost_i + 1 >= len(fields):
-            continue  # not a well-formed data row
+            si = find_session_index(fields)
+            if si is not None and si + 1 < len(fields):
+                seen_sessions.setdefault(fields[si], []).append((lineno, "(unparsed)", fields[si + 1]))
+            continue
         outcome_field = fields[cost_i + 1]
         session_field = fields[cost_i - 1] if cost_i - 1 >= 3 else None
         lesson = fields[-1] if len(fields) > cost_i + 1 else ""

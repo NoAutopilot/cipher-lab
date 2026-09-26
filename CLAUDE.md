@@ -244,7 +244,13 @@ recipient can check the search log; (4) rule 10 wording only; (5) the post is lo
 date, recipient, class and link, before it is sent; (6) every outward note carries the links a recipient can verify
 from their desk without asking us: the repository folder (AUDIT.md, key, reading), the primary source image (the
 Gallica or IIIF ark at the leaf), and the printed edition it rests on, at the page cited, on archive.org or HathiTrust.
-(7) Pre-send fact check (owner, 26 Sept 2026): before the person sends any outward note, a separate session (never the drafter) reads the draft against every file and source it cites, tries to falsify each factual sentence (counts, dates, shelfmarks, names, what was and was not checked, the recipient address on the institution's own page) and writes its verdict as a `checked:` line in the draft's header naming what it corrected; a draft without that line is not sent, and the mailbox draft is updated to the checked text. A subject line, a recipient line and a sign-off left blank for the person are part of every draft. The recipient line
+(7) Pre-send fact check (owner, 26 Sept 2026): before the person sends any outward note, a separate session (never the drafter) reads the draft against every file and source it cites, tries to falsify each factual sentence (counts, dates, shelfmarks, names, what was and was not checked, the recipient address on the institution's own page) and writes its verdict as a `checked:` line in the draft's header naming what it corrected; a draft without that line is not sent, and the mailbox draft is updated to the checked text.
+    The same pass also confirms the draft's voice matches outreach/README.md rule 1a ("I" for what the person
+    does, "we" for what the agents did) as one more sentence class to falsify, not a separate session -- a
+    voice error is a `checked:`-line correction like any other (26 Sept 2026: OUT-CHECK-V existed only because
+    the voice rewrite happened after OUT-CHECK's own pass; with rule 1a in place a drafting worker gets the
+    voice right the first time and one OUT-CHECK pass covers both).
+A subject line, a recipient line and a sign-off left blank for the person are part of every draft. The recipient line
 carries the institution's public contact address (read from its own contact page, with the date) so the person can send
 without looking it up; a private individual's address never goes in the file (24 Sept 2026, owner: "I gotta have an email address"). A negative with a matched control is a contribution too.
 (8) Project mailbox (owner, 26 Sept 2026): agents may send from cipherlab.research@gmail.com only a draft whose CONTRIBUTIONS.md row exists, whose pre-send fact check (7) has passed, and whose first paragraph carries the AI-disclosure sentence (outreach/README.md rule 1); one sender per draft, the parent that owns the target; every send logged before it goes.
@@ -349,6 +355,17 @@ thing. Nothing else stops two agents transcribing the same folio. Write ROOM lin
 **Rebase before you write to a shared file.** `QUEUE.md`, `QUEUE-scores.json`, `status.json`, `STATUS.md`
 and `ROOM.md` are written by everybody. Fetch and rebase immediately before editing, and when a row
 conflicts, keep both facts rather than overwriting someone else's finding.
+
+**Name a job-brief file for the account that writes it.** `.claude/briefs/runs/<date>-<role>.md` collides the
+same way: two accounts wrote `2026-09-26-parent-out-check-2.md` within about ten minutes of each other on
+26 Sept 2026 (the owner-account parent's RAH/Dresden fact check, 7i's mailbox voice re-check), and the second
+write silently replaced the first, restored only because the overwriting session happened to notice and flag
+it. A filename built only from the date and a repeatable role name (`parent-out-check-2`, `parent-retro-apply`)
+can repeat across two accounts working the same day; include the writing account's `CIPHERLAB_ACCOUNT` tag
+whenever the role name is one that could recur (`2026-09-26-parent-ytbiz-out-check-2.md`), and fetch
+immediately before writing any file under `.claude/briefs/runs/`, the same discipline as the files above -- if
+the path already exists with a commit from a different session in the last hour, pick a new suffix rather
+than overwrite.
 
 New people and their agents start at `ONBOARDING.md`. Everyone records their own plan limits in
 `BUDGETS.md`, because no account can see another account's rate limits.
@@ -497,7 +514,15 @@ Every brief states a cap in dollars of usage (the session metadata's cost figure
 7. **Stop when the brief is met.** A worker does not continue into follow-ups (a sweep of sister copies, an
    audit of its own) that its brief did not name; it writes the follow-up as a one-line suggestion in NOTES.md.
 8a. **Rules become tools (25 Sept 2026, UPDATES.md).** A rule that the ledger shows broken twice gets a mechanical check in
-   tools/ with an offline test, and its prose shrinks to one line naming the tool. Precedents: `tools/intake_gate_check.py`
+   tools/ with an offline test, and its prose shrinks to one line naming the tool.
+   A gate built from one incident's shape states, in its own docstring, the row or case kinds it is meant to
+   catch and at least one kind it must NOT block, each backed by an offline test -- a gate that fires on a
+   phrase or pattern with no stated scope will eventually bounce a differently-shaped true answer. Lesson of
+   26 Sept 2026 (PR-LAND-5/LQ-L20-LAND): `tools/lq_answer_check.py`'s first version, built from the L19
+   image-portal "no items" shape, bounced PR 24's L20 answer -- a genuine content negative reached after a
+   successful loan and a full page-by-page read -- fixed the same day by adding row-kind awareness
+   (ia-reader/edition-read/hathitrust-page/jstor skip the catalogue-ladder rungs the image-portal shape needs).
+   Precedents: `tools/intake_gate_check.py`
    (the intake gate), `tools/room.py` (ROOM.md hygiene), `tools/ledger_check.py` (outcome codes),
    `tools/orphan_check.py` (26 Sept 2026: an orphaned session, trigger, ROOM.md claim or unledgered ASSIGNMENTS
    row across an orchestrator or lane swap; run at every parent check-in and both sides of a hand-over,

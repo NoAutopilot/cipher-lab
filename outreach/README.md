@@ -5,6 +5,14 @@
    AI agents (Claude models) working in this open repository, every step logged. An editor of the WVO asked for this
    in so many words on 26 Sept 2026 (outreach/huygens-nassau-saxony.md, Reply, item 5). The first Huygens email did
    not say it; do not repeat that.
+1a. **Voice, not just disclosure (26 Sept 2026).** Write every sentence after the disclosure in the voice of
+   who actually did it: "I" for what the person decides, asks or sends (the request itself, the sign-off);
+   "we" for what the agents did (searched, transcribed, compared, checked, ruled out) -- never smooth a "we"
+   describing agent work into "I", and never let the whole letter read as a report addressed to the person
+   rather than sent by them. Lesson of 26 Sept 2026: MAIL-PREP's first six drafts read like a report and were
+   rewritten in first person by the parent, and the rewrite itself needed a second check (OUT-CHECK-V) because
+   three drafts had smoothed an agent-authored "we" into "I". Write it this way the first time; a drafting
+   worker unsure which voice a sentence takes defaults to "we" and lets gate 7 correct it.
 2. A reading that rests on a recovered key (no key source) is presented as a proposed reading, with the share of
    uncertain signs stated, never as a text (same reply, item 4).
 3. Unseen witnesses (minutes, drafts, later copies the database lists) are named in every summary of a result, with
