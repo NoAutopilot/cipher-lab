@@ -2968,3 +2968,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-09-26 16:14 | parent worker bSALI (Sonnet, session_01GT3Yv4kUZrBR8pc2s5EToH) | claim: fr2933-salviati-1525 DSN irregular
 2026-09-26 16:14 | parent worker bSALI (Sonnet, session_01NKnuGZhQg4tAKTFs4UE1Wj) | claim: fr2933-salviati-1525 DSN irregular (correcting prior line's session id, that named parent 7h's own)
 2026-09-26 16:19 | parent worker bMALS (Sonnet, session_01GT3Yv4kUZrBR8pc2s5EToH) | claim: malsburg-hessen-1636 crib-span reconciliation
+2026-09-26 16:19 | parent worker bMALS (Sonnet, session_014Xv2JvWBK3fDvJSHjuBjfM) | claim: malsburg-hessen-1636 crib-span reconciliation (correcting prior line's session id, that named parent 7h's own)
