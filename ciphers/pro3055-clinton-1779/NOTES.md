@@ -222,3 +222,93 @@ worker should confirm both quoted passages against the actual page images at arc
 reading, particularly the item-boundary for the 16 Aug letter, which this pass inferred from the page-range
 citation and the matching copy-letter footnotes (S/B/F) rather than from an explicit "No. 141" heading directly
 above the text.
+
+## AX-STEV: Stevens 1888 page images (26 Sept 2026, LANE AX)
+
+Per this section's own caveat (25 Sept 2026, FOLLOWUP-2315/GBOOKS), fetched the four printed pages as page images
+and read them directly, rather than the djvu OCR text alone.
+
+**Method.** `archive.org/metadata/campaigninvirgin02stevuoft` (1 request) gave the item's own
+`_page_numbers.json`, which maps printed page 127/128/174/175 to leaf 135/136/182/183 (offset +8 throughout,
+consistent across both target passages -- no offset-change or NP anomaly of the kind `tools/gallica_folio.py`
+warns about for Gallica). Fetched each leaf's JP2 directly out of the item's own `_jp2.zip` via
+`archive.org/download/<id>/<id>_jp2.zip/<id>_jp2%2F<id>_<leaf>.jp2` (no login; this zip-member route returns the
+single-page JP2, HTTP 200, without downloading the 185 MB archive; the BookReaderImages.php route tried first
+404'd, this route did not) and converted locally to JPEG (Pillow), 1400px wide for the repo. Images and a
+manifest at `ciphers/pro3055-clinton-1779/images/stevens1888/` (4 files, 1.9 MB total, well under the 30 MB
+folder cap). Requests: archive.org 5 (1 metadata + 4 leaves), 1.5-1.6s apart, browser User-Agent, no login.
+Separately, re-checked TNA Discovery item-level records for pieces 30/55/32, /33, /42, /53, /19, /24 (6 requests,
+1.5-1.6s apart, `sps.resultsPageSize=250`) to pin exact dates/correspondents for the re-plan table below (Discovery's
+JSON gives `coveringDates`/`startDate`, which the 23 and 25 Sept sweeps had fetched but not transcribed into this
+file for every item).
+
+**What the images confirm.** Both passages read exactly as the 25 Sept OCR-based quotes gave them (page images at
+`images/stevens1888/p127.jpg`, `p128.jpg`, `p174.jpg`, `p175.jpg`; full quotes and citations unchanged from the
+"Stevens 1888 read from archive.org" section above). The 3 Oct 1781 letter's cipher footnote position is now
+precise from the image: the asterisk sits in the body text immediately before the paragraph beginning "I can see
+no means of forming a junction with me but by York River" (p.175), so the manuscript's ciphered portion is that
+final paragraph only (French-fleet strength, junction, the Capes), not the whole letter -- the footnote itself
+("[From here partly in cypher with a translation.]") is set below the signature block, not inline.
+
+**Correction to the 25 Sept OCR-based read (16 Aug 1781 letter, item 3689).** That section stated: "no cipher
+notation anywhere in it... no such passage or cipher indicator appears in Stevens's transcription or its margin
+apparatus." This is wrong and the image shows why: the page-image's endorsement note, printed directly above the
+letter on p.127, reads in full: "*Endorsed* Duplicate. Earl Cornwallis to Sir H. Clinton K.B. York 16th August
+1781 Original rec<sup>d</sup> the 23<sup>d</sup> Aug<sup>t</sup> by the Swallow Dispatch Boat. rec<sup>d</sup>
+30<sup>th</sup> Aug<sup>t</sup> ⅌ L<sup>t</sup> Col<sup>o</sup> de Buy 209. **The Original was written in
+Cypher.**" This matches TNA's own catalogue tag for item 3689 ("[Original written in cypher]") exactly, and the
+letter's own opening line ("This morning I received your Cyphered Letter of the 11th instant, by the Runner")
+refers to *Clinton's* 11 Aug dispatch, a separate item. Grade is unaffected (Stevens prints the deciphered/plain
+text either way; still text known, C), but the sentence claiming no cipher indicator was a misreading of the OCR
+text, which had missed the endorsement's small print. Corrected here rather than silently edited in place, per
+the repo's append-don't-rewrite convention for prior workers' sections.
+
+**New cipher-flagged items found in piece /32 (not in the folder's prior 8/10-item count).** The TNA Discovery
+re-check for exact dates (above) turned up two cipher items in piece 30/55/32 beyond 3689 and 3803, neither
+previously named anywhere in this folder: **3753** (PRO 30/55/32/66, Cornwallis to Clinton, York/Virginia, 31 Aug
+1781, "Two copies of the document, one in part cypher") and **3784** (PRO 30/55/32/97, Cornwallis to Clinton,
+Yorktown, Virginia, 16-17 Sept 1781, "The rest of the document is in cypher"). This confirms the 23 Sept
+check-solved sweep's "five cipher-flagged items found" note for piece /32 (only two, 3689 and 3803, had been
+individually named until now) -- a fifth may still be uncaught: this piece has 311 total Discovery records and
+only the first 250 (the same page size the 23/25 Sept sweeps used) were re-checked this session, so this is not
+a complete sweep of /32, and pieces 33 (355 records, 250 checked), 42 (349, 250), 53 (289, 250), 19 (467, 250)
+and 24 (1220, only 250 = 20%) are checked even less completely -- flagged for a future check-solved re-run, not
+chased further this session (out of this worker's named steps).
+
+**Correction to the "other six/eight" line (line 1 of this file, FOLLOWUP-2315).** That line lists item 3803
+among items that "remain unaffected... at their existing footing" and the "Intake verdict" section (above)
+describes the same six items as "Haldimand/Carleton/general-staff correspondence, not Cornwallis's". TNA
+Discovery's own description of 3803 (`PRO 30/55/32/116`, re-fetched this session) reads "**Clinton to
+Cornwallis**. New York. Two copies of a document, the first in code..." -- it *is* Cornwallis/Clinton
+correspondence, catalogued in the same piece (/32) as 3689, and dated 30 Sept 1781, inside Saberton's CP pt.11
+window. This item was miscategorised in that line; corrected in the table below.
+
+**Re-plan: all 12 named cipher-flagged items across the target (26 Sept 2026).** The folder's item count was
+never actually 8 -- the 23 Sept check-solved sweep found "five" in piece /32 alone (only two named at the time)
+plus items in five other pieces; with 3753/3784 now named, 12 distinct cipher-flagged items are on record. Saberton's
+"Common cipher" (JAR, 6 June 2019; CP pt.11, 23 Jul-19 Oct 1781) covers correspondence between Cornwallis and his
+subordinates and Clinton, within that date window.
+
+| Item | Date | Correspondents | Printed where | Text status | Next step |
+|---|---|---|---|---|---|
+| 3689 (PRO 30/55/32/2) | 16 Aug 1781 | Cornwallis to Clinton | Stevens 1888 vol.2 pp.127-128, page image checked this session | text known (C) -- full letter in clear; manuscript endorsed "Original was written in Cypher" | none; this item is found-solved |
+| 3813 (PRO 30/55/33/7) | 3 Oct 1781 | Cornwallis to Clinton | Stevens 1888 vol.2 pp.174-175, page image checked this session | text known (C) -- full letter in clear; final paragraph only was "partly in cypher with a translation" | none; this item is found-solved |
+| 3753 (PRO 30/55/32/66) | 31 Aug 1781 | Cornwallis to Clinton | not located this sweep -- new item, not previously named in this folder | text unknown | same correspondent pair/edition as 3689 and 3813 -- check Stevens 1888 vol.1's chronological list and vol.2 index for a 31 Aug 1781 entry first; falls inside Saberton's CP pt.11 window, so if Stevens does not have it, **a reading with the Common cipher would be a published-key reading, N2 at best** |
+| 3784 (PRO 30/55/32/97) | 16-17 Sept 1781 | Cornwallis to Clinton | not located this sweep -- new item, not previously named in this folder | text unknown | same as 3753: check Stevens 1888 first; inside Saberton's CP pt.11 window, so **a reading with the Common cipher would be a published-key reading, N2 at best** if not found there |
+| 3803 (PRO 30/55/32/116) | 30 Sept 1781 | Clinton to Cornwallis | not located this sweep | text unknown | correspondent pair and date both fit Saberton's CP pt.11 window -- check Stevens 1888 first; **a reading with the Common cipher would be a published-key reading, N2 at best** if not found there (corrects the "not Cornwallis's" miscategorisation above) |
+| 2380 (PRO 30/55/19/98) | 22 Oct 1779 | Clinton to Haldimand | HMC Report calendar paraphrase only (1904-09), page not opened | partly known (paraphrase, not a verified decipherment) | outside Saberton's Common cipher scope (Haldimand, not Cornwallis/Clinton; also 2 years before the CP pt.11 window) -- open the HMC Report's own printed volume/page |
+| 2894 (PRO 30/55/24/76) | 1780 (year only) | Clinton to Haldimand | content matched to a British Museum/Library comparison copy per HMC's own 1904-09 note | known elsewhere (via the BM/BL copy, not by breaking the cipher) | outside Saberton's scope; locate the BM/BL comparison copy directly (specific enough crib: French fleet, 3 May, seven ships of the line) |
+| 3868 (PRO 30/55/33/65) | 12 Nov 1781 | Clinton to Haldimand | HMC Report calendar paraphrase only, page not opened | partly known | outside Saberton's scope (Haldimand correspondent; also after CP pt.11's 19 Oct 1781 end, i.e. after Yorktown's surrender) -- open the HMC Report |
+| 3853 (PRO 30/55/33/47) | 31 Oct 1781 | Robertson to Haldimand | HMC Report calendar paraphrase only, page not opened | partly known | outside Saberton's scope (Robertson/Haldimand, not Cornwallis/Clinton) -- open the HMC Report |
+| 4833 (PRO 30/55/42/120) | 23 June 1782 | Haldimand to Carleton | HMC Report calendar paraphrase only, page not opened | partly known | outside Saberton's scope entirely (different correspondents, different year, different theatre) -- open the HMC Report |
+| 6009 (PRO 30/55/53/7) | 26 Oct 1782 | Beckwith to Mackenzie | HMC Report calendar paraphrase only, page not opened; describes forwarding a ciphered note, may not itself be cipher text | partly known / may not be a cipher-text item at all | outside Saberton's scope -- open the HMC Report |
+| 6012 (PRO 30/55/53/10) | 26 Oct 1782 | Mackenzie to Patterson | HMC Report calendar paraphrase only, page not opened; describes transmitting a letter in cypher, may not itself be cipher text | partly known / may not be a cipher-text item at all | outside Saberton's scope -- open the HMC Report |
+
+**Status.** Line 1 stays `partial`: 2 of 12 named items are text known (C), 10 remain text-unknown or
+known-only-by-paraphrase/comparison-copy. No deep work (transcription, key application, cryptanalysis) on any of
+the five Cornwallis-Clinton items (3689, 3813, 3753, 3784, 3803) until Stevens 1888 (or Saberton's CP pt.11) has
+been checked for the three still-unlocated ones; the six Haldimand/Carleton/general-staff items stay at the HMC
+paraphrase footing pending the HMC Report's own printed pages.
+
+**Requests this session.** archive.org 5 (1.5-1.6s apart, browser User-Agent, no login); discovery.nationalarchives.gov.uk
+6 (1.5-1.6s apart, descriptive User-Agent). No other hosts.

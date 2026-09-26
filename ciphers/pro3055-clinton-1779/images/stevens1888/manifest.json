@@ -1,0 +1,40 @@
+{
+  "source": "B. F. Stevens (ed.), The Campaign in Virginia, 1781: An Exact Reprint of Six Rare Pamphlets on the Clinton-Cornwallis Controversy. With Very Numerous Important Unpublished Manuscript Notes (London, 1888), vol. 2",
+  "identifier": "campaigninvirgin02stevuoft",
+  "archive_org_item": "https://archive.org/details/campaigninvirgin02stevuoft",
+  "rights": "public domain (possible-copyright-status NOT_IN_COPYRIGHT per archive.org metadata); University of Toronto / Robarts Library scan",
+  "fetched": "26 September 2026",
+  "fetch_method": "archive.org /metadata for page_numbers.json (printed page -> leaf mapping), then direct zip-member fetch of the item's own _jp2.zip (https://archive.org/download/<id>/<id>_jp2.zip/<id>_jp2%2F<id>_<leaf>.jp2), converted to JPEG locally and downsized to 1400px wide for the repo; browser User-Agent, ~1.5-1.6s apart, 5 requests total (1 metadata + 4 leaves; page_numbers.json fetch is bundled in the metadata call's file list, fetched separately as a 5th request)",
+  "page_leaf_mapping": {
+    "127": 135,
+    "128": 136,
+    "174": 182,
+    "175": 183
+  },
+  "images": [
+    {
+      "file": "p127.jpg",
+      "leaf": 135,
+      "printed_page": 127,
+      "shows": "16 Aug 1781, Cornwallis to Clinton (item 141B, = PRO 30/55/32/2, item 3689). Opening: 'Endorsed Duplicate. Earl Cornwallis to Sir H. Clinton K.B. York 16th August 1781 ... The Original was written in Cypher.' Letter body begins 'Duplicate York Town in Virginia 16 Augst 1781. Sir, This morning I received your Cyphered Letter of the 11th instant, by the Runner...' -- printed in clear English throughout this page, continues onto p.128."
+    },
+    {
+      "file": "p128.jpg",
+      "leaf": 136,
+      "printed_page": 128,
+      "shows": "Continuation and end of the 16 Aug 1781 letter (signed CORNWALLIS, addressed to Clinton), followed by the item-141 apparatus: '141B: CORNWALLIS to CLINTON, 16 August 1781, ANSWER [185] i.90 ... Same as No. 141 with variations shown in margins pp 127-128' and '141F: ... CORRESPONDENCE [24] i.135 ... Same as No. 141 with variations shown in margins pp 127-128' -- no cipher tag on either apparatus line itself; the cipher note sits only in the p.127 endorsement above."
+    },
+    {
+      "file": "p174.jpg",
+      "leaf": 182,
+      "printed_page": 174,
+      "shows": "3 Oct 1781, Cornwallis to Clinton (item 163, = PRO 30/55/33/7, item 3813). Apparatus header '163 CORNWALLIS to CLINTON, 3 October 1781, LS RI 19/138. ANSWER [201] i.92, CORRESPONDENCE [56] i.136, with Clinton's Manuscript Notes from each.' Endorsement: 'Lord Cornwallis to Sir H. Clinton K.B. 3d Octr 1781 recd 12th at 2 A.M. 228' -- no cipher word in this endorsement. Letter body begins 'York Town Virginia 3 Octr 1781. Sir, I received your Letter of the 25th of September, last night...' and continues onto p.175."
+    },
+    {
+      "file": "p175.jpg",
+      "leaf": 183,
+      "printed_page": 175,
+      "shows": "End of the 3 Oct 1781 letter. An asterisk in the body text (before the paragraph starting '* I can see no means of forming a junction with me but by York River...') marks the start of the ciphered passage; footnote below the signature block: '* [From here partly in cypher with a translation.]' -- i.e. only the final paragraph (French-fleet strength, junction, Capes) was in cipher in the manuscript, not the whole letter. Apparatus line below: '163B: CORNWALLIS to CLINTON, 3 October 1781, ANSWER [201] i.92 ... Earl Cornwallis to Sir Henry Clinton, dated York-Town, Virginia, October 3, 1781. [In Cypher.]' -- this is the TNA-matching cipher tag, attached to copy 163B specifically."
+    }
+  ]
+}
