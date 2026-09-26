@@ -263,3 +263,94 @@ Hosts: none (all 16 images already on disk). Tool changes: `tools/family_run.py`
 `tools/tests/test_family_run.py` (offline test for it). Folder shrunk back under 30 MB by deleting the 16
 new debug-overlay directories after reading them (regenerable in one command each, same as recorded above
 and in extent.tsv); `crops/0003` and `crops/0012` (pass A/B's own committed crops) untouched.
+
+## 507/508 duplicate test (bMALDUP, 26 Sept 2026)
+
+Intake gate re-run: `python3 tools/intake_gate_check.py malsburg-hessen-1636` -> `partial` (line 1), exit 0.
+
+**Question.** extent.tsv flags 507 (f.28-29, 28 Mar 1637) and 508 (f.30-31, same date) as visually near-
+identical (same header wording, same Bremen/ducats postscript). Is 508 a literal copy of 507's ciphertext,
+the same plaintext re-enciphered with different homophone choices, or two different texts that only look
+alike at a glance?
+
+**Leaf layout (read off the debug overlays before cropping).** Both leaves open with a heading + salutation
++ one sentence of clear German carrying the "hujus"/"Im diploschab" dating phrase (f.28 L01-L04, f.30
+L01-L04, wording near-identical between the two), then dense digit-group cipher begins at L05 on both
+leaves. Crops cut for lines L05-L14 only (10 lines each), `tools/iiif_lines.py --image
+ciphers/malsburg-hessen-1636/images/hstam_4_h_1411_0028.jpg --out ciphers/malsburg-hessen-1636/crops/0028
+--debug` -> region 2126x2546, 57 lines; same for `_0030.jpg` -> region 2084x2548, 59 lines. Both debug
+overlays checked by eye; pruned to the 10 used crops + overlay + manifest per leaf after cutting (manifest.json
+keeps every auto-detected line's box for a future worker).
+
+**Two blind passes per leaf** (4 Sonnet subagent calls, one per leaf per pass, each given only that leaf's
+10 crop paths, no cross-leaf or cross-pass exposure), reformatted to the `line pos sign` convention and
+reconciled with `tools/reconcile_passes.py`:
+
+```
+f.28: pass A 495 signs, pass B 477 signs, agree 328/497 = 66.0% (nw), 169 disagreement columns
+f.30: pass A 451 signs, pass B 448 signs, agree 355/464 = 76.5% (nw), 109 disagreement columns
+```
+
+Agreement is well below bMAL3's f.3/f.12 figures (89.7%/96.2%) -- these crops are denser, lower-contrast
+cursive with more compressed digit groups, and the two passes disagree on far more columns (278 total) than
+this job's budget could settle one-by-one against the image (the brief anticipated "at most 15" crops for
+disagreements, sized against bMAL3's ~10% rate, not this ~30-34% rate). **Disagreements were NOT individually
+settled from the image in this job** -- `recon_0028/ciphertext_draft.tsv` and `recon_0030/ciphertext_draft.tsv`
+carry the reconciler's majority/pass-A-preferred pick at grade M wherever the two passes differed (169/497 and
+109/464 rows respectively); this section's alignment numbers below are built on those M-heavy drafts, not an
+H-grade reading, and are graded S (cryptanalytic signal) throughout, not C or H. A follow-up that wants an
+H-grade transcription of these 20 lines needs a third pass or per-disagreement image zoom, out of this job's
+scope/budget.
+
+**Alignment test** (`dup_align.py`, scratch script, output kept as `dup_align.tsv`/`equivalences.tsv`):
+Needleman-Wunsch global alignment (match +1, mismatch -1, gap -1) of the f.28 draft sign sequence (497 signs)
+against the f.30 draft sign sequence (464 signs); identity = aligned non-gap columns with equal sign.
+
+```
+TARGET   f.28 vs f.30                                    : 210/447 aligned columns identical = 0.4698
+CONTROL-A f.28 vs recon_0003+recon_0012 (different, already-reconciled H-grade text, same cipher/design)
+                                                           : 40/349 = 0.1146
+CONTROL-B f.28 vs 200 shuffles of f.30's own groups (seed 20260926)
+                                                           : mean 0.1137, p95 0.1378, p99 0.1466, range 0.0788-0.1524
+```
+
+Target identity (0.470) is well above both controls (a different genuine text at 0.1146; 200 label-shuffles
+of f.30 itself at mean 0.1137, p95 0.1378) -- about 3.4x the shuffle p95, not a coincidence at this N. It is
+**not** near 1.0, so this is not a byte-for-byte identical ciphertext copy. Per the brief's own verdict rule
+(copy near 1 / re-enciphered well-above-control with structured differing pairs / different texts at control):
+this reads as **same plaintext, re-enciphered** (or read through transcription noise of a copy -- see caveat
+below), not two independent letters.
+
+**Differing pairs (equivalences.tsv, 210 distinct aligned pairs, grade S candidates, not a key).** A
+substantial share look like transcription artifacts common to cursive digit-group reading rather than real
+cipher differences: 12 pairs are flagged `likely_transcription_noise=yes` by a simple digit/letter-confusion
+rule (`1`<->`i`, `0`<->`O`, any `ILLEGIBLE`), e.g. `16<->i6` x5, `11<->ii` x3, `31<->3i` x3 -- the established
+f.3/f.12 H-grade alphabet (`ciphertext.txt`) uses only 2-digit numbers plus a handful of capital-letter marks
+(D, G, H, L, N, O, S, W, X, Y, #); it has **no** lowercase `i` or `z` sign anywhere, which is strong
+circumstantial evidence that this job's blind passes are misreading a numeral shape as a letter on these
+denser lines, on both leaves, in both passes -- not that f.28 and f.30 genuinely differ there. A `z`-tailed
+mark appears very often in this job's transcriptions (`zz`, `1z`, `4z`, `z9`, `z5`, etc.) and is NOT flagged
+noisy by the simple rule above (it doesn't map cleanly to a known digit), but given it is equally absent from
+the established alphabet, its status is unresolved -- flagged here rather than silently trusted. The clean
+(non-letter-confusion) recurring differing pairs are pure digit-for-digit swaps: `5i<->6i` x4 (itself
+z/i-adjacent, treat with the same caution), `30<->36` x3, `70<->40` x2, `74<->44` x2, `87<->67` x2 -- too few
+confidently-clean recurring pairs, and too much plausible noise in the rest, to promote any of them to a
+grade-M or grade-H equivalence without image-level digit-shape zoom (bMAL3's method: compare against
+unambiguous agreed tokens elsewhere in the same line at 5-14x). **Net read: the true identity share between
+f.28 and f.30 is very likely higher than 0.470** (the noise floor from two independent low-resolution blind
+passes plausibly explains much of the 53% mismatch), but this job's data cannot distinguish "same text,
+re-enciphered with some different homophone choices" from "same text, transcribed noisily but actually closer
+to a literal copy" -- both are consistent with what was measured. Either way, 507 and 508 are not independent
+plaintext content, confirming extent.tsv's flag: whoever pools the fond (per bMALC's next-step note) should
+NOT count f.28-29 and f.30-31 as two letters' worth of independent signal, only as (at most) one plaintext's
+worth of ciphertext with a second, less-certain data point on that plaintext's key relationship.
+
+**Verdict: `partial` / re-enciphered-or-noisy-copy** (grade S, well above a matched control but not at copy
+identity 1.0 and not resolvable further within this job's transcription quality). Not `closed-negative` --
+this is a positive relatedness signal, not a negative (rule 5 does not apply; this was never a solve attempt).
+
+Files: `transcription/pass_{a,b}_00{28,30}.tsv` (+ `_r.tsv` reformatted), `recon_00{28,30}/` (disagreements,
+ciphertext_draft, agreement), `crops/00{28,30}/` (10 line crops + debug overlay + manifest each, pruned),
+`dup_align.tsv` (full aligned pair list), `equivalences.tsv` (210 differing pairs with noise flag).
+
+Hosts: none (all images already on disk).
