@@ -1,0 +1,24 @@
+clear_0023.txt -- record 505, leaf f.23 (hstam_4_h_1411_0023.jpg), clear-text lines L01-L13 of the
+tools/iiif_lines.py auto-detection (crops/0023/, 52 lines total; L14 onward is the cipher block, see NOTES.md
+"Record 505 f.23 (bMAL23)"). One pass, read directly from crops/0023/*.jpg by this job's worker (not blind,
+not reconciled, not graded H/M per token) -- flagged LOW CONFIDENCE throughout: this is dense 17th-century
+German chancery cursive (Kurrentschrift) at the limit of what a non-specialist single pass can read reliably.
+Provided as crib context only (rule 2, image over transcription: a negative or a crib read is conditional on
+this being a rough reading). [?] marks a word or short span the worker could not read with any confidence;
+words given without [?] are still an ordinary reading of a hard hand, not a settled transcription -- a
+palaeographer's pass would very likely correct several of them. Do not cite this file as an H-grade or C-grade
+reading.
+
+L01: [date/marginal note, illegible] Ihre [?] hochgeehrter[?] gnädiger [Fürst?] und Herr.
+L02: E. Gn. vom 16. [?] Januar: Ihro geschickte Duplicat ist mir den 15/30. dieses Monats wohl eingehändigt worden, habe auch seinen [Brief?]
+L03: von Münster derentwegen Ihrer nicht[?] mit erhalten und dem [?] 1./11. auf das den 2./12. dieses [?] Königs und dem 5. Januario von Münster ankommen,
+L04: und habe [also?] dem [?] zu[?] [?] im Soldat[?] von dem Duplicat wohl eingehändigt, gefasst[?] handlich[?] beantwortet, dass in unseres[?] das[?]
+L05: der Abschied[?] [?] das [?] mit den 42. Pfund[?] und 300. Commandirten Mannschaft [?] belegt und Herrn[?] nach [?] das[?]
+L06: [?]. Januar aus[?] hierher gegangen sei, das dass[?] Ihre[?] Regiment[?] soll aus[?] [Herrn?] von [?] das jean de Wert[?] geschlagen[?] worden,
+L07: und darauf beruhig[?] [?] [?] das[?] der Commandant zu [Hammenstein?/Westerstein?] mit dem [?] so [?] tag[?] vor ihm[?] schlagen[?] genommen[?]
+L08: [Kommt?] es[?] nicht [?] gerad[?] [?] dem obrist[?] Anders[?] auf[?] [?] gegen recht [Halte?], alles das[?] erforderlich[?] abzunutzen[?] geben[?]
+L09: [?] mein[?] gebracht werde[?] dem Römer[?], dieweil man die Provi[antierung?] mit dem Wagen[?] nicht [ver?]-mieten[?] Temerität[?] als hazard
+L10: gefolget[?] sei, [?] Chaumont[?] aber folgt tags[?] und nach[?] [?] Land[?] [?] [?] verlangt[?] worden, dass er[?] in [pag.?] Fluss[?] mit[?] gefasst[?]
+L11: und mag[?] mit gemeinem[?] Land[?] [?] [?] das sonst[?] nicht fort[?] kommen[?] könnte, als [?] vernehmen[?] sollten, so fasst[?] der[?] [?]
+L12: General Lieutenant[?] [?] [?] [?] willens[?] im Fall allem[?] das nicht[?] nach[?], weil [?] wenig[?] [?] das wenig[?] hierin[?] [?] Zeit
+L13: [?]ig ist, folgigen[?] [Englin?] [?] abgeführt[?] [?] alles[?] [?] erfahren[?] worden, dieser[?] bis[?] gelegt[?] der[?] verpflichtung[?]
