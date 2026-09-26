@@ -1,0 +1,194 @@
+{
+ "A_real_crib_on_real_R4282": {
+  "coverage_frac": 0.4305,
+  "covered_chars": 471,
+  "fully_covered_tokens_ge3": 2,
+  "label": "A: real crib key vs real R4282",
+  "latin_hint_tokens": 4,
+  "num_tokens": 155,
+  "sample_decoded": "_t_n m__save _sp___r _es_ft fv____ n____ n_p_r__pm ___p__e ____ _f__eaf_a__ vpf__v_e_ fs___v_a__ p____p rfse_f __ep____v__e_mn te___m ___a m__v _av__re f______p___e_ f__n _p____n __a __",
+  "total_chars": 1094
+ },
+ "B_synthetic_keys_on_real_R4282": [
+  {
+   "coverage_frac": 0.4305,
+   "covered_chars": 471,
+   "fully_covered_tokens_ge3": 2,
+   "label": "B0: synthetic same-shape key vs real R4282",
+   "latin_hint_tokens": 8,
+   "num_tokens": 155,
+   "sample_decoded": "_m_n a__rsif _re___v _fr_pm pi____ n____ n_e_v__ea ___e__f ____ _p__fsp_s__ iep__i_f_ pr___i_s__ e____e vprf_p __fe____i__f_an mf___a ___s a__i _si__vf p______e___f_ p__n _e____n __s __",
+   "total_chars": 1094
+  },
+  {
+   "coverage_frac": 0.4305,
+   "covered_chars": 471,
+   "fully_covered_tokens_ge3": 2,
+   "label": "B1: synthetic same-shape key vs real R4282",
+   "latin_hint_tokens": 3,
+   "num_tokens": 155,
+   "sample_decoded": "_i_n v__taeg _tf___s _gt_mi me____ n____ n_f_s__fv ___f__g ____ _m__gam_a__ efm__e_g_ mt___e_a__ f____f smtg_m __gf____e__g_vn ig___v ___a v__e _ae__sg m______f___g_ m__n _f____n __a __",
+   "total_chars": 1094
+  },
+  {
+   "coverage_frac": 0.4305,
+   "covered_chars": 471,
+   "fully_covered_tokens_ge3": 2,
+   "label": "B2: synthetic same-shape key vs real R4282",
+   "latin_hint_tokens": 8,
+   "num_tokens": 155,
+   "sample_decoded": "_f_o e__mgai _mt___n _im_sf sa____ o____ o_t_n__te ___t__i ____ _s__igs_g__ ats__a_i_ sm___a_g__ t____t nsmi_s __it____a__i_eo fi___e ___g e__a _ga__ni s______t___i_ s__o _t____o __g __",
+   "total_chars": 1094
+  }
+ ],
+ "C_real_crib_on_shuffled_R4282": [
+  {
+   "coverage_frac": 0.4305,
+   "covered_chars": 471,
+   "fully_covered_tokens_ge3": 3,
+   "label": "C0: real crib key vs shuffled R4282",
+   "latin_hint_tokens": 1,
+   "num_tokens": 155,
+   "sample_decoded": "_f_v _p_____ a__mp__ f___pe _aee_e __p__ aa____eem va__p_e __f_ n___v_v____ n_p_ev___ v______pvs s___vn ______ _e____pps___fff _pp___ p_v_ _fee _pffe_e netanm_m_evnf a_p_ e___r_r ___ e_",
+   "total_chars": 1094
+  },
+  {
+   "coverage_frac": 0.4305,
+   "covered_chars": 471,
+   "fully_covered_tokens_ge3": 4,
+   "label": "C1: real crib key vs shuffled R4282",
+   "latin_hint_tokens": 2,
+   "num_tokens": 155,
+   "sample_decoded": "____ _e___v_ ____ve_ _p__ep ef_n__ rv_e_ f_epvm___ _____v_ ___p _ff___na__p v______va pn_p_r___f mfe_af _aa_pv _f___vp___r_av_ ____pp m__p _p__ _npvn__ _apfapp___r_e f__e __p_ve_ ___ _e",
+   "total_chars": 1094
+  },
+  {
+   "coverage_frac": 0.4305,
+   "covered_chars": 471,
+   "fully_covered_tokens_ge3": 5,
+   "label": "C2: real crib key vs shuffled R4282",
+   "latin_hint_tokens": 1,
+   "num_tokens": 155,
+   "sample_decoded": "f_ef __m_frm v___ee_ _tf___ _n____ fv__v _ppr___f_ aa__n_f _p_p _fpv__ten_e pa__ev__p _f_p__mm__ _a__ma _fe__m t__v_se___e__p_ _ppepa __p_ _p_n ______e __f____f_e___ __f_ _______ epv __",
+   "total_chars": 1094
+  }
+ ],
+ "crib_letter_to_symbols": {
+  "a": {
+   "p": 5
+  },
+  "b": {
+   "g": 1
+  },
+  "d": {
+   "s": 1
+  },
+  "e": {
+   "a": 1,
+   "c": 1,
+   "t": 8
+  },
+  "f": {
+   "b": 2
+  },
+  "g": {
+   "g": 1,
+   "w": 1
+  },
+  "i": {
+   "i": 1,
+   "y": 6
+  },
+  "l": {
+   "a": 1,
+   "p": 1
+  },
+  "m": {
+   "b": 2,
+   "o": 1,
+   "t": 1
+  },
+  "n": {
+   "c": 2,
+   "d": 1,
+   "e": 1
+  },
+  "o": {
+   "a": 1,
+   "d": 1,
+   "g": 1
+  },
+  "p": {
+   "L": 1,
+   "i": 1,
+   "l": 1
+  },
+  "r": {
+   "g": 6,
+   "y": 2
+  },
+  "s": {
+   "3": 2,
+   "b": 1,
+   "e": 1,
+   "s": 2
+  },
+  "t": {
+   "i": 6
+  },
+  "v": {
+   "k": 4
+  }
+ },
+ "crib_mismatches": [
+  {
+   "cipher": "cpikyppatb",
+   "cipher_len": 10,
+   "plain": "natvralem",
+   "plain_len": 9
+  },
+  {
+   "cipher": "gtaygygdieys",
+   "cipher_len": 12,
+   "plain": "religionis",
+   "plain_len": 10
+  }
+ ],
+ "crib_pairs": [
+  {
+   "cipher": "tbbk3dgtb",
+   "plain": "effvsorem"
+  },
+  {
+   "cipher": "bpcwkyey3",
+   "plain": "sangvinis"
+  },
+  {
+   "cipher": "Ltsico",
+   "plain": "pestem"
+  },
+  {
+   "cipher": "ipigyt",
+   "plain": "patrie"
+  },
+  {
+   "cipher": "lgtity",
+   "plain": "preter"
+  },
+  {
+   "cipher": "cpikyppatb",
+   "plain": "natvralem"
+  },
+  {
+   "cipher": "sysikggpiagtb",
+   "plain": "distvrbatorem"
+  },
+  {
+   "cipher": "gtaygygdieys",
+   "plain": "religionis"
+  }
+ ],
+ "r4282_distinct_signs": 34,
+ "r4282_num_tokens": 155,
+ "r4282_total_chars": 1094
+}

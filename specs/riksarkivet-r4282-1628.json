@@ -1,0 +1,31 @@
+{
+ "slug": "riksarkivet-r4282-1628",
+ "name": "Riksarkivet Stockholm, Chifferklaver åda II:113 (DECODE 4282), Latin letter cipher, 1628",
+ "date": "1628 (catalogue range 1600-1699)",
+ "language_candidates": ["la"],
+ "ciphertext_source": "dbourdeau/cyphersolver, riksarkivet1628/r4282_transcription.txt, commit fc0c9e865d0fae67ca92d19750d2b09ab11972e0 (2026-09-25), copied verbatim into ciphers/riksarkivet-r4282-1628/r4282_transcription_bourdeau.txt, credited (MIT code, CC BY 4.0 text). Transcription only, no page image fetched this pass (rule 2 caveat).",
+ "alphabet": "Latin letter shapes plus special signs D (looped-ascender d), L (lambda), T (delta), B (boxed square), E (epsilon), F (phi), A (alpha), M (mu), G, and digits 3 4 5 7 8; a few clear Latin words interspersed",
+ "constraints": {
+  "num_chars": 1094,
+  "num_tokens": 155,
+  "hypothesis": "R4282 may share a key with R4284 (same DECODE catalogue #207 bundle, QUEUE.md G4); R4284's own key-test leaf (four Latin phrases written over their cipher-letter equivalents) is a candidate crib for R4282's alphabet, per QUEUE.md 'Re-rank for LANE B5' rank 4. Not established -- G4's own note: the bundle is four unrelated correspondences, key-sharing is a hypothesis.",
+  "no_wired_language_judge": "tools/judge_plaintext.py LANG_CORPORA has no 'la' key (comment: tools/data/la_repo is circular, target's-own-reading-only, not wired); Latin-likeness graded by eye this pass (see NOTES.md), not by judge_plaintext.py"
+ },
+ "cheap_tests_in_order": [
+  "1. Build the partial key R4284's key-test leaf gives (four Latin phrases over their cipher equivalents) and apply it to R4282; report coverage fraction and Latin-likeness (by eye, no wired corpus) vs a matched control of three same-shape synthetic keys and three shuffles of R4282. Cost $4, Sonnet, disk-only.",
+  "2. Re-check the key-test leaf against the actual Riksarkivet page image (not just Bourdeau's single-pass transcription) to settle the two length-mismatched crib words and whether the leaf reads column-wise rather than the row pairing assumed here.",
+  "3. Apply R4282's own clear-Latin cribs (et qualis sit eius futurus status dubitatur; sed tamen ut res; tractatus magnas admodum; Mittatur nobis responsum) as a second, independent crib source.",
+  "4. Try the remaining 68 of 70 fetched Chifferklaver låda II key records (R4259-R4329) against R4282 (only R4310 and R4296 tried by Bourdeau so far, on R4306/R4284, not R4282)."
+ ],
+ "cheap_test_done": [
+  {
+   "test": 1,
+   "date": "26 Sept 2026",
+   "worker": "bRIK (LANE B5)",
+   "method": "ciphers/riksarkivet-r4282-1628/scripts/crib_test.py (reproducible, --check passes): four (Latin phrase, cipher word) pairs from R4284's key-test leaf aligned char-by-char (two pairs length-mismatched, truncated, logged), letter->sign key built (homophonic), applied to R4282's non-bracketed cipher signs. Three same-shape synthetic-key controls (same sign groupings, letters reshuffled) and three shuffled-R4282 controls (character multiset preserved, order destroyed) run identically.",
+   "target": "coverage 471/1094 chars (0.4305); Latin-hint token count (fixed list of short Latin function words/endings, substring match) = 4 of 155 tokens",
+   "control": "same-shape synthetic keys vs real R4282: coverage 0.4305 (identical by construction), Latin-hint counts 8, 3, 8 (mean 6.3); real crib key vs 3 shuffled-R4282: coverage 0.4305 (identical by construction), Latin-hint counts 1, 2, 1 (mean 1.3)",
+   "verdict": "control-backed negative for this specific crib hypothesis (real crib's Latin-hint count, 4, sits inside/below the same-shape synthetic-key control range 3-8, not above it): the crib's specific letter assignment does not make R4282 read more like Latin than a same-shape key with letters reshuffled would. Not a negative for R4282 in general (68 of 70 key records and the letter's own clear-word cribs are still untried) and not closed-negative (rule 5 as amended) -- partial, flagged for the LANE B5 orchestrator. No language-judge PASS/FAIL claimed (no wired 'la' corpus)."
+  }
+ ]
+}
