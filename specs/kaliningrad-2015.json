@@ -31,15 +31,9 @@
   "control_samples": 100,
   "note": "Russian/Polish corpora are not on disk; add them as 'corpora' when fetched",
   "corpora": [
-   "tools/data/nl20/pg10819_De_kleine_Johannes.txt.gz",
-   "tools/data/nl20/pg10820_Een_liefde.txt.gz",
-   "tools/data/nl20/pg12003_Extaze_Een_Boek_van_Geluk.txt.gz",
-   "tools/data/nl20/pg16881_Het_leven_van_Rozeke_van_Dalen_deel_1.txt.gz",
-   "tools/data/nl20/pg16882_Het_leven_van_Rozeke_van_Dalen_deel_2.txt.gz",
-   "tools/data/nl20/pg19563_Eline_Vere.txt.gz",
-   "tools/data/nl20/pg29719_Dichtertje_De_Uitvreter_Titaantjes.txt.gz"
+   "tools/data/da19/historisktidsskriftdk1s6.txt"
   ],
-  "corpora_note": "GOLD-KAL4, 26 Sept 2026: judge.corpora set to the 7 tools/data/nl20 files for the convention-B Latin-alphabet sweep, unit nl."
+  "corpora_note": "GOLD-KAL4, 26 Sept 2026: judge.corpora set to the tools/data/da19 file for the convention-B Latin-alphabet sweep, unit da."
  },
  "value": "moderate; 58 reader comments without a solution, but no machine run across the candidate languages is on record",
  "model": "Sonnet",
