@@ -256,3 +256,58 @@ Intake gate: `open` -- Chuquet 1912 p.440 was read by this worker with a page nu
 - **Solver status (19 Sept 2026):** Blocked per Bourdeau (cyphersolver/napoleon), 15 Sept 2026: the full ciphertext exists only in Vilcoq 1969, not digitised. Chuquet 1912 prints Berthier's clear letters of 22 Dec 1812 from the same carton, a ready crib. Cryptiana's two pages disagree on one group (356 vs 656).
 
 queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.
+
+## IMG-FETCH: Vilcoq article page images fetched (26 Sept 2026)
+
+Per NEXT-STEPS.tsv's row (search hits named pp.22-24; the article runs only pp.22-27, so "the two
+pages either side" covers the rest of it): fetched all six page images of the article
+(`renderPage` endpoint, 710px width, the same effective resolution the manifest already noted is
+the best Persée serves for a whole page) plus the OCR text overlay for every content block on every
+page (`doc/page/<doc>/<page>` fragments), saved to `images/persee/` with `manifest.json` (URLs,
+page numbers, fetch time). 17 persee.fr requests total, >=1.8s apart, 2 retried once each after a
+`Recv failure: Connection reset by peer` (both succeeded on retry).
+
+**Whether these pages print the target letter's cipher, a decipherment, or neither, quoting the
+OCR line that decides it:**
+
+- **p.22-23** (`frag_0022_0000.html`, `frag_0023_0000.html`): general methodological survey (the
+  1798 Bonaparte/RIMINI cipher, cipher-table sizes by post: "1807 Vienne (3.500 groupes) — 1808
+  Rome (3.000 groupes) — 1812-1813 Varsovie (3.600 groupes) — 1812-1813 Espagne (1.400 groupes)").
+  No mention of Berthier or a 22 Dec 1812 letter on either page. **Neither.**
+- **p.24 block 0** (`frag_0024_0000.html`): article text distinguishing two kinds of ciphered
+  document Vilcoq worked from -- "la lettre chiffrée comportant la traduction soit au-dessus du
+  cryptogramme, soit sur une feuille séparée" (translation supplied) vs. correspondence "en partie
+  en clair et en partie en chiffré" -- then states which one follows: "Nous nous contenterons donc
+  de reproduire ci-après le décryptement exact que nous avons effectué de la lettre du général Rapp
+  à l'Empereur, écrite le 6 novembre 1813" -- the reconstitution that follows (pp.25-27) is
+  **Rapp's letter, not Berthier's**. **Neither**, for the target.
+- **p.24 block 1** (`frag_0024_0001.html`): caption "Tableau de chiffrement. Chiffre utilisé sous
+  le Premier Empire." -- a cipher table plate, not tied to any named letter. **Neither.**
+- **p.24 block 2** (`frag_0024_0002.html`): caption "Correspondance chiffrée adressée au général
+  Marmont, Chef du 11e Corps en 1807." -- a different addressee, a different year. **Neither.**
+- **p.24 block 3** (already on disk as `../plate_t1_0024_0003_1.png` / `../page_0024_0003.html`,
+  not refetched): caption "Correspondance datée du 22 décembre 1812 du maréchal Berthier, Prince de
+  Neufchâtel, à l'Empereur, (Archives Nationales.)" over the manuscript facsimile whose opening
+  groups match `ciphertext.txt`. **This is the target's cipher** (the cryptogram itself, as a
+  photograph of the original) -- confirmed again, not newly found; no plaintext accompanies it.
+- **p.24 block 4** (`frag_0024_0004.html`): caption "Début et fin de la lettre de dix pages du
+  général Rapp à l'Empereur datée de Dantzig, le 6 novembre 1813." -- the Rapp letter's own
+  facsimile, not Berthier's. **Neither.**
+- **p.25-27** (`frag_0025_0000.html` through `frag_0027_0000.html`): the full reconstituted text of
+  Rapp's 6 Nov 1813 Dantzig letter (capitalised words marking what was originally ciphered, per the
+  article's own note at the end: "dans la reconstitution de cette lettre les mots en capitales
+  correspondent aux parties chiffrées du texte original"), signed "Lieutenant-colonel J. Vilcoq,"
+  followed by the editorial closing note inviting readers who want the decryption method for "le
+  document ci-dessus" (the Rapp letter just printed) to contact the author. **This is a
+  decipherment, but of a different letter (Rapp/Dantzig, not Berthier/22 Dec 1812) -- neither for
+  the target.**
+
+**Conclusion, matching and extending LANE CX2's 25 Sept 2026 finding (search-hit level) now that
+every block on every relevant page has been read in full via OCR:** the article prints the target
+letter's cryptogram once (p.24 plate) and no plaintext or decipherment of it anywhere in the piece;
+the only decipherment Vilcoq gives in the whole article is of an unrelated letter (Rapp to
+Napoleon, Dantzig, 6 Nov 1813). Status unchanged: `open`, no key, no cryptanalytic result.
+
+Requests this section: persee.fr 17 (6 page JPGs + 9 OCR fragments + 2 retries), >=1.8s apart,
+browser-style UA, no 429/403. file_shrink_guard clean on NOTES.md and images/persee/*.
+

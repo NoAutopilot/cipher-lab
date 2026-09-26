@@ -1,0 +1,26 @@
+{
+  "source": "Persee, J. Vilcoq, \"Le Chiffre sous le Premier Empire\", Revue Historique des Armees 25e annee no.4 (1969), pp.22-27 (the whole article)",
+  "doc_id": "rharm_0035-3299_1969_num_25_4_8686",
+  "fetched": "26 Sept 2026",
+  "why": "NEXT-STEPS.tsv row berthier-napoleon-1812: fetch the page images of the pages the search hits named (22, 23, 24 -- 'Napoleon' hits pp.22-24, 'Berthier'/'Neufchatel' hits p.24 only, per NOTES.md 25 Sept 2026 LANE CX2) and the pages either side; the article runs only pp.22-27, so this is the full article.",
+  "files": {
+    "page_22.jpg": {"url": "https://www.persee.fr/renderPage/rharm_0035-3299_1969_num_25_4_8686/rharm_0035-3299_1969_num_25_4_T1_0022_0000_710.jpg", "size_px": "710x1094", "page": 22},
+    "page_23.jpg": {"url": "https://www.persee.fr/renderPage/rharm_0035-3299_1969_num_25_4_8686/rharm_0035-3299_1969_num_25_4_T1_0023_0000_710.jpg", "size_px": "710x1093", "page": 23},
+    "page_24.jpg": {"url": "https://www.persee.fr/renderPage/rharm_0035-3299_1969_num_25_4_8686/rharm_0035-3299_1969_num_25_4_T1_0024_0000_710.jpg", "size_px": "710x1086", "page": 24, "note": "full page; the Berthier plate itself was already fetched at higher resolution 25 Sept 2026 as ../plate_t1_0024_0003_1.png (renderIllustration endpoint), not refetched here"},
+    "page_25.jpg": {"url": "https://www.persee.fr/renderPage/rharm_0035-3299_1969_num_25_4_8686/rharm_0035-3299_1969_num_25_4_T1_0025_0000_710.jpg", "size_px": "710x1081", "page": 25},
+    "page_26.jpg": {"url": "https://www.persee.fr/renderPage/rharm_0035-3299_1969_num_25_4_8686/rharm_0035-3299_1969_num_25_4_T1_0026_0000_710.jpg", "size_px": "710x1088", "page": 26},
+    "page_27.jpg": {"url": "https://www.persee.fr/renderPage/rharm_0035-3299_1969_num_25_4_8686/rharm_0035-3299_1969_num_25_4_T1_0027_0000_710.jpg", "size_px": "710x1090", "page": 27},
+    "frag_0022_0000.html": {"url": "https://www.persee.fr/doc/page/rharm_0035-3299_1969_num_25_4_8686/rharm_0035-3299_1969_num_25_4_T1_0022_0000", "note": "OCR text overlay, page 22, one block"},
+    "frag_0023_0000.html": {"url": "https://www.persee.fr/doc/page/rharm_0035-3299_1969_num_25_4_8686/rharm_0035-3299_1969_num_25_4_T1_0023_0000", "note": "OCR text overlay, page 23, one block"},
+    "frag_0024_0000.html": {"url": "https://www.persee.fr/doc/page/rharm_0035-3299_1969_num_25_4_8686/rharm_0035-3299_1969_num_25_4_T1_0024_0000", "note": "OCR text overlay, page 24 block 0 (article body text)"},
+    "frag_0024_0001.html": {"url": "https://www.persee.fr/doc/page/rharm_0035-3299_1969_num_25_4_8686/rharm_0035-3299_1969_num_25_4_T1_0024_0001", "note": "OCR/caption, page 24 block 1: 'Tableau de chiffrement' cipher table plate, unrelated to Berthier; fetched after one retry (Recv failure: Connection reset by peer on first attempt)"},
+    "frag_0024_0002.html": {"url": "https://www.persee.fr/doc/page/rharm_0035-3299_1969_num_25_4_8686/rharm_0035-3299_1969_num_25_4_T1_0024_0002", "note": "OCR/caption, page 24 block 2: Marmont 1807 cipher letter plate, a different cryptogram from the target"},
+    "frag_0024_0004.html": {"url": "https://www.persee.fr/doc/page/rharm_0035-3299_1969_num_25_4_8686/rharm_0035-3299_1969_num_25_4_T1_0024_0004", "note": "OCR/caption, page 24 block 4: Rapp-to-Napoleon letter facsimile plate (6 Nov 1813, Dantzig), a different letter from the target; fetched after one retry"},
+    "frag_0025_0000.html": {"url": "https://www.persee.fr/doc/page/rharm_0035-3299_1969_num_25_4_8686/rharm_0035-3299_1969_num_25_4_T1_0025_0000", "note": "OCR text, page 25: reconstitution (decipherment) of the Rapp letter, not the target"},
+    "frag_0026_0000.html": {"url": "https://www.persee.fr/doc/page/rharm_0035-3299_1969_num_25_4_8686/rharm_0035-3299_1969_num_25_4_T1_0026_0000", "note": "OCR text, page 26: continuation of the Rapp reconstitution"},
+    "frag_0027_0000.html": {"url": "https://www.persee.fr/doc/page/rharm_0035-3299_1969_num_25_4_8686/rharm_0035-3299_1969_num_25_4_T1_0027_0000", "note": "OCR text, page 27: end of the Rapp reconstitution and the editorial note"}
+  },
+  "requests": {
+    "persee.fr": "6 full-page JPGs + 9 OCR-fragment HTML fetches + 2 retries after Recv-failure resets = 17, all >=1.8s apart, browser-style UA"
+  }
+}
