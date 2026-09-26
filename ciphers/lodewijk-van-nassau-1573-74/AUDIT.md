@@ -815,3 +815,132 @@ worker's brief and scope.
 
 SO-LODEWIJK-1573-74 (`SECOND-OPINIONS-QUEUE.tsv`): a note for v3 was appended to that row's last column, alongside
 the existing v2 note.
+
+## V8 second audit (A2): WVO 5797 (26 Sept 2026)
+
+Second adversarial verifier V8-NA5797-2 for LANE V8 (session_01YRuw3TCf7d1w85DLmYNnw4), 26 Sept 2026, 04:30-04:40 UTC
+(`date -u` read). Separate session from the solver lane (AX) and from the first verifier (V8-NA5797, section above).
+Brief: break V8.1's N4 on the two 5797 blanks (CLAUDE.md Outreach gate 2, rule 10). Nothing decoded, aligned or changed
+in any key, ciphertext, decode or reading file.
+
+### A2.1 Verdict
+
+| item | V8.1 class | A2 class | why |
+|---|---|---|---|
+| 5797 p7_spot2, code 153 "[Pfaltzgraf] ... helt sich wol und thut in warheit viel" | N4 | **N4 held** | no print, quotation, paraphrase that fills the blank, or contemporary decipherment of 5797 located in the new families (A2.3); every scholar who uses CDXLIV quotes Groen's clear text only |
+| 5797 p5_spot3, code 161 "Bey dem Herzog von Sachsen und [Landgraf] ... ist willens" | N4 (one word of a four-code blank) | **N4 held**, same limit | as above |
+| 5797 p6_spot4, code 172 "le Conte Jean" (key_full v3, AX-MERGE3 04:07) | not classed | **not classed** | "p6_spot4 held: no v3 re-derivation on file at 04:39 UTC 26 Sept 2026" -- when this step ran, ROOM.md carried AX-REDERIV's rule-7 pass (03:22) on the pre-v3 key only. AX-REDERIV2's v3 re-derivation (ROOM 04:41, 0 differing tokens; section "Revision log v3" above) landed two minutes later, so p6_spot4 is now ready for a verifier; this pass did not audit it |
+| 5797, the letter | N0 | N0 (`text: known`) | Groen IV CDXLIV pp.217-226 (1837) |
+
+Key source: `period` for the two name values (the 5550 interlinear gloss), `ours` for the letter table that locates the
+blanks -- unchanged from V8.1. Confidence: **moderate** (up from V8.5's "lower for scholarship" on the German
+Palatine/Hessian side, which this pass covered; still not covered: Schmidt 1989 inside the book, JSTOR, CORE).
+
+**One correction, p7 (A2.4):** V8.1 describes the p7 blank as "[Pfaltzgraf] helt sich wol"; the blank Groen leaves is
+three codes, `153.146.137` -- 153 Pfaltzgraf H, **146 unread (U)**, 137 NULL C. So the p7 blank, like the p5 blank, is
+read **in part** (one name of a three-code blank). V8.6's safe sentence already says "two of the blanks read in part"
+and stays correct; the V8.1 table row and NOTES.md's "gap filled? yes" rows are annotated.
+
+### A2.2 What was attacked
+
+1. **Did anyone fill the blanks by conjecture or from another copy?** The strongest route to N1/N2 is a historian who
+   quotes CDXLIV and supplies the missing subject, or a clear copy of 5797 (or of a parallel Nassau letter to Heidelberg
+   or Kassel) in the Palatine or Hessian papers. Searched the three editions that print those papers and the two
+   general histories that quote CDXLIV (A2.3). Result: **Kluckhohn** (Briefe Friedrichs des Frommen II, 1872, p.580
+   n.1) cites "Groen van Prinsterer IV, 217 ff." only for Dathenus and says that in autumn 1573 Dathenus took a mission
+   of the Nassau brothers to Orange ("ibid. 220 ff."); **Bezold** (Briefe des Pfalzgrafen Johann Casimir I, 1882, in
+   the 1573 introduction, n.1) cites "Johann, Ludwig und Heinrich von Nassau an Oranien, Dillenburg 22. Okt." at
+   Prinsterer I.4 p.224, paraphrases only the clear Graveneinigung sentence, and adds that the brothers' letter to
+   Orange of 21 Nov (Supplement p.140* ff.) is "nicht dechiffrirt" -- a period scholar recording, in 1882, that these
+   cipher passages had not been read; **Janssen** (Geschichte des deutschen Volkes IV, 1893 ed., "Säcularisationspläne
+   1573", n.2 "Groen van Prinsterer 4, 224"; French translation L'Allemagne ... 1555-1580, 1895) quotes the same clear
+   sentence ("nicht nur etliche Grafen, sondern auch Kurfürsten ...") and nothing from a blank. None prints a word in
+   either blank.
+2. **Does secondary literature state the p7 content anyway?** Blok, Lodewijk van Nassau (1889), on late 1573: "De
+   keurvorst van de Paltz steunde met alle kracht en trachtte ook dien van Saksen te bewegen" -- the Elector Palatine's
+   support is general history (Kluckhohn II nos.684-697 print his letters urging Saxony and Hesse to help Orange), not
+   a reading of the blank and not cited to CDXLIV. This does not lower the class (rule 10 classes the plaintext and the
+   decipherment of this item), but it bounds the claim: **the p7 value adds no historical fact that was not already
+   known**; a safe sentence must not present it as news about the Palatine's policy.
+3. **Did the Groen series itself later fill a blank?** Grep of all 38 cached Groen IA texts for CDXLIV and for
+   back-references "T. IV, p. 21x-22x": Groen V (1838) refers back to IV p.219 twice, both for Dathenus, and to p.226
+   for Bossu; the 2e serie hits for "MCDXLIV" are a different letter (York to Orange, 1681). No errata, supplement or
+   later note fills a 5797 blank. Groen's own Tables des matieres (1847, Google Books full view) was queried by snippet
+   only (A2.3).
+4. **A method gap in the first audit (not a finding against the class).** print_check's listed-source search on the
+   Groen IV copy V8 relies on (`archivesoucorre03housgoog`) returns **no hit for the positive-control phrase** "helt
+   sich wol und thut in warheit viel", in V8's run and in this one: that copy's OCR reads "heit sicb wol mid thut in
+   warheit TÎel" (cached text line 12997), which defeats both the exact and the proximity match. The control succeeds
+   only through ia-global (the two `pringoog` copies) and Google Books (8 Groen copies). So a per-source "no hits" on
+   an OCR-damaged Groen copy is not a test; V8's conclusion stands because V8 also read CDXLIV by hand (dbnl text,
+   `groen/groen_IV_CDXLIV.txt`) and because the variant phrases were also run on ia-global and Google Books. The
+   Fraktur texts of Kluckhohn, Heppe and Rommel are worse (OCR renders "Groen" as "©roen"), so for those the phrase
+   search is recorded but the result rests on the manual grep of dates, "Prinsterer IV, 2xx" citations and context.
+
+### A2.3 Search log (families new to this pass)
+
+| family | status | method | result |
+|---|---|---|---|
+| Kluckhohn, Briefe Friedrich des Frommen II (1572-76), IA `bub_gb_3N1SAAAAcAAJ`; also `briefefriedrichd00frie`, `bub_gb_3U8VAAAAYAAJ` (vol I/both) | searched | djvu text, manual grep (Oct-Nov 1573 register nos.686-699, "Prinsterer IV, 2xx", Chiffre/Ziffer) + print_check phrases | cites Groen IV 217 ff. / 220 ff. (Dathenus), no quotation of a blank; Chiffre 0 in vol II body |
+| Bezold, Briefe des Pfalzgrafen Johann Casimir I (1882), IA `briefedespfalzgr01joha` | searched | same | cites 5797 (Prinsterer I.4 p.224) for the clear Graveneinigung sentence; notes the 21 Nov letter "nicht dechiffrirt"; notes the Palatine archive keeps cipher keys (Ma. 544/15) but few cipher letters |
+| Janssen, Geschichte des deutschen Volkes IV (1893), IA `deutschenvolkesseit04jans`; French tr. 1895 (Google Books `bydeij0MPSoC`) | searched | grep + Google Books snippet | quotes Groen 4, 224 clear text only |
+| Heppe, Geschichte des deutschen Protestantismus II (1853), IA `bub_gb_IilBAAAAcAAJ` | searched | grep | church history, no Nassau letter of Oct 1573 |
+| Rommel, Geschichte von Hessen V (1835), IA `bub_gb_c4AAAAAAcAAJ` | searched | grep | no 1573 Nassau/Orange correspondence |
+| Blok, Lodewijk van Nassau (1889), IA `lodewijkvannass00blokgoog` | searched | grep (Paltz, landgraaf, cijfer, 22 oct) | general statement on Palatine support, no blank filled (A2.2 item 2) |
+| Groen, all cached copies (38) for later fills/errata | searched | grep CDXLIV, "T. IV, p. 21x-22x" | back-references to Dathenus/Bossu only |
+| Groen, Tables des matieres (1847) | snippet only | Google Books `xI9lDKGU5b4C` | index entry "Graveneinigung ... 1573, IV. 46"; PALATIN entries seen are for Frederick V; no page read |
+| Schmidt, Der Wetterauer Grafenverein (1989) | **unreachable inside the book** | Google Books `zxxoAAAAMAAJ` (NO_PAGES; one keyword snippet: Dillenburg as a hub of French diplomacy); CrossRef lists two reviews (BMGN 1995, ZRG GA 1991) | book text not searchable from the cloud; JSTOR row queued |
+| Wilhelm IV of Hessen-Kassel correspondence editions | not located | IA advancedsearch (Landgraf Wilhelm Briefe/Correspondenz 1850-1930): 0 | no printed edition of his 1573 political correspondence found on IA |
+| Google Books | searched | keyed, country=US, 16 calls + 10 in print_check (A2 variants: Pfalzgraue/Pfaltzgrave/Churpfaltz/Pfaltzgraff helt sich wol, Landtgraue/Landgraue/Landgrave ist willens; "22. Oktober 1573" Nassau; "22 octobre 1573" Nassau Orange; Graveneinigung 1573; Grafenverein topical) | name-variant phrases 0; all CDXLIV quotations are of clear text (Groen copies, Janssen, Juste 1865, Sutherland 1961 citing pp.219-226) |
+| Internet Archive full text (ia-global) | searched | print_check, 10 phrases | control phrase finds the two Groen `pringoog` copies; name variants 0 (the one hit set, "Herzog von Sachsen und Landgraf", is numismatics/church-administration, not 1573) |
+| OpenAlex | searched | keyed (Bearer), 12 calls incl. "Wetterauer Grafenverein Nassau 1573", "Johann Casimir Kassel 1573 Oranien" | Past & Present 2021 (dynastic scenario thinking), a 2013 Calvinism volume -- neither concerns the letter |
+| CrossRef | searched (after one retry) | 429 inside print_check; one retry after a pause answered | Schmidt 1989 reviews; Nassau genealogy chapters; nothing on the letter |
+| Semantic Scholar | searched (after one retry) | 429 x2 inside print_check; two retries after a pause answered 200 | 0 results ("Nassau 1573 Graveneinigung Wetterau Pfalz Hessen", "Ludwig Nassau 1573 cipher") |
+| HAL | searched | api.archives-ouvertes.fr, Nassau+1573+chiffre / Grafenverein / Dillenburg+1573 | 0 |
+| Persée | searched | persee.fr search "Nassau 1573 Dillenburg" | 3,774 generic results; first page reviews (Juliana van Stolberg; Kluiver 1578-84) -- nothing on 5797 |
+| CORE | not searched | CORE_API_KEY unset (key probe at session start) | -- |
+| JSTOR | queued | 2 rows appended to `JSTOR-QUEUE.tsv` (Schmidt 1989 reviews / Grafenverein + Chiffre; Dathenus mission Oct 1573) | V8's 2 rows also still open |
+| Marburg (HStAM) / Dresden (HStA) files for a clear copy | not searched | Arcinsys/HStA catalogues not tried (no route in the host table); Bezold says the Hessian material is richer at Marburg | a clear copy there is the one route to N1/N2 this pass could not close |
+
+Files: `print-check-a2.tsv`, `print-check-a2-hosts.tsv` (V8's `print-check.tsv` untouched). IA caches kept in the
+scratchpad, not committed.
+
+### A2.4 Brief items 3 and 4
+
+- **172 / p6_spot4:** held, not classed (A2.1).
+- **123/129 dual-M (AX-MERGE3):** neither code sits inside or beside a classed spot. 123 is in p5_spot5
+  (`131.123.173`, before "ist gestern zue ghen gezogen") and 129 in p8_spot7 (`156.127.135.144.129`, before "begert
+  meiner"); the classed spots are p5_spot3 (`... 161.126.136.146`) and p7_spot2 (`153.146.137`). Neither classed
+  reading changes under either value of 123 or 129. The context rule itself is the solver lane's decision.
+
+### A2.5 Safe and unsafe sentences
+
+- **Safe (unchanged from V8.6, which stays correct):** "In WVO 5797 (Jan and Lodewijk van Nassau to Orange, 22 Oct
+  1573), printed by Groen van Prinsterer in 1837 with several passages left undeciphered, two of the blanks read in
+  part, 'the Palsgrave (Pfaltzgraf) holds well' and '... and the Landgrave ...', by locating them with a letter table
+  recovered by our own cryptanalysis and valuing the two name codes from a contemporary interlinear gloss on the
+  sibling letter WVO 5550; no prior decipherment of these blanks located (N4); the letter's other text is Groen's."
+- **Unsafe:** anything in V8.6's list, plus "the p7 blank is read" (146 is unread in it), "this shows the Palatine
+  supported the Nassau league" as news (known since Kluckhohn 1872), or "le Conte Jean" in 5797 as a reading (p6_spot4
+  is not classed).
+
+### A2.6 Gate 2
+
+**second adversarial audit done: yes** (N4 not broken for p7_spot2 and p5_spot3; p6_spot4 not classed), **open-index
+pass done** (OpenAlex, Semantic Scholar and CrossRef each answered, HAL, Persée; CORE not available), **Google Books
+done**, **JSTOR rows 88, 89 (V8) and 90, 91 (A2) open** -- per the verifier template a queued JSTOR row does not block N4,
+but CLAUDE.md Outreach gate 2 requires them answered or waived by the owner before any post.
+
+### A2.7 Postmortem and corrections
+
+The first audit's N4 holds. Two things it got less than right: the p7 blank was described as if fully read (146 is
+unread; annotated in NOTES.md), and its listed-source positive control silently failed on the Groen IV copy it named
+(OCR), masked by V8's manual reading. NOTES.md line "reads correctly at 5797 p7_spot2 against Groen's clear frame"
+over-states: Groen's frame is blank there, so the frame only shows that a subject fits, it cannot check the value
+(annotated). No sentence in the folder calls 5797 new, first or unpublished. The safe sentence does not change, so
+second-opinions/PROMPT-chatgpt.md is not edited; the SO-LODEWIJK-1573-74 row gets a one-clause dated note.
+
+Requests (this session): archive.org 31 (advancedsearch 15, metadata 8, djvu 8; one at a
+>= 1.6 s apart); be-api.us.archive.org 10; www.googleapis.com 16 (+10 inside print_check); api.openalex.org 12;
+api.crossref.org 2 (1 x 429, 1 answered); api.semanticscholar.org 4 (2 x 429, 2 answered); api.archives-ouvertes.fr 1;
+www.persee.fr 1. No subagents.

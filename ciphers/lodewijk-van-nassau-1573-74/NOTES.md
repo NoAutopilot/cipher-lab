@@ -1041,6 +1041,7 @@ Revisions for the orchestrator: `revisions_for_audit.tsv` (`python3 axnames/revi
 rows 14 (the table above), the rest NULL placements that remove a '?' placeholder and change no letter. I did not edit
 AUDIT.md or SECOND-OPINIONS-QUEUE.tsv.
 [Verifier V8-NA5797, 26 Sept 2026: "gap filled? yes" for p5_spot3 means one word of four codes -- 126 NULL, 136 key_full 'vingt' (M, cannot fit) and 146 (U) still sit in Groen's blank before "ist willens"; and 153's H rests on one clean 5550 gloss (run p2-11, 'Palsgraue'), not two (AUDIT.md V8.2). Class: AUDIT.md V8.1.]
+[Second verifier V8-NA5797-2 (A2), 26 Sept 2026: "gap filled? yes" for p7_spot2 likewise means one name of a three-code blank -- 146 (U) sits between [153 Pfaltzgraf] and "helt sich wol" (137 NULL C). Both classed blanks are read in part. Class held at N4: AUDIT.md A2.1.]
 
 **(5) Judge**, `python3 tools/judge_plaintext.py specs/lodewijk-5797.json --file ciphers/lodewijk-van-nassau-1573-74/reading_5797_full.txt`:
 ```
@@ -1465,6 +1466,7 @@ word phrase whose relationship to a fixed value for code 153 is not established 
 not by itself overturn the H grade (the p2-11 occurrence still supports it cleanly, and 153=pfaltzgraf also
 reads correctly at 5797 p7_spot2 against Groen's clear frame, AX-NAMES2 table), but the "x2" corroboration claim
 in the note is not fully borne out and the row is not as doubly-attested as its source line implies.
+[V8-NA5797-2 (A2), 26 Sept 2026: "reads correctly at 5797 p7_spot2 against Groen's clear frame" over-states -- Groen prints a blank there, so the frame shows only that a subject fits before "helt sich wol"; it cannot check the value of 153. The H rests on the 5550 gloss alone (AUDIT.md V8.2, A2.7).]
 
 **(3) Key-source check, 4496 gloss over 192 and 221** (time allowed). `04496.pdf` fetched once (200, 1 request,
 2s after the 05550 request), page 4 of 5 rendered and cropped. Line 2 of the page reads "221.134.125.8. et

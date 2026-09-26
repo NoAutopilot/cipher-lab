@@ -87,3 +87,5 @@ ciphers/clair349-este-guise-1556	("capitaine Livio" OR "capitano Livio") AND (Gu
 ciphers/thurloe-printed	"Henry Manning" AND (Cologne OR Thurloe) AND (1655 OR spy OR intelligence)	2026-09-26	queued	
 ciphers/lodewijk-van-nassau-1573-74	("Ludwig von Nassau" OR "Louis of Nassau" OR "Johann von Nassau") AND 1573 AND (Chiffre OR cipher OR entziffert) AND (Pfalzgraf OR Landgraf)	2026-09-26	queued	
 ciphers/lodewijk-van-nassau-1573-74	(Graveneinigung OR "Wetterauer Grafenverein") AND 1573 AND Dillenburg AND (Pfalz OR Hessen)	2026-09-26	queued	
+ciphers/lodewijk-van-nassau-1573-74	"Wetterauer Grafenverein" AND Schmidt AND (1573 OR Graveneinigung) AND (Oranien OR Dillenburg) AND (Chiffre OR entziffert OR Pfalzgraf OR Landgraf)	2026-09-26	queued	
+ciphers/lodewijk-van-nassau-1573-74	Dathenus AND 1573 AND (Oranien OR Orange OR Oranje) AND (Nassau OR Dillenburg) AND (Kassel OR Heidelberg OR Pfalz OR Hessen) AND (Chiffre OR cipher OR cijfer)	2026-09-26	queued	

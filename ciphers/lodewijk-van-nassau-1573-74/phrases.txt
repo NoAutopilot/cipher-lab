@@ -11,3 +11,13 @@ Bey dem Herzog von Sachsen und ist willens
 bruit que le duc d'Albe seme icy
 forces du duc d'Albe le capitaine
 frere du roy d'Espagne
+# A2 (V8-NA5797-2, 26 Sept 2026): period-spelling variants, run into print-check-a2.tsv
+Pfalzgraue helt sich wol
+Pfaltzgrave helt sich wol
+Churpfaltz helt sich wol
+Pfaltzgraff helt sich wol
+Pfalzgraf thut in warheit viel
+Sachsen und Landtgraue ist willens
+Sachsen und Landgraue ist willens
+Sachsen und Landgrave ist willens
+Herzog von Sachsen und Landgraf
