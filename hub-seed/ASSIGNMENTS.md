@@ -678,3 +678,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T03:06Z	session_01YRuw3TCf7d1w85DLmYNnw4	LANE V8 orchestrator (Opus, cap 50)	QA6 now, verifiers for reading-ready lines (AX Nassau expected), SO PRs	brief 2026-09-26-lane-v8-orchestrator.md; parent 7e
 2026-09-26T03:06Z	session_01QSwxQ1kjVdpxWvXjWyPzfa	RETRO-APPLY-N (Sonnet, cap 6)	RETRO-2026-09-26b.md proposals 1-5 + LEARN-0058 item 4	brief 2026-09-26-parent-retro-apply-n.md; parent 7e
 2026-09-26T03:06Z	session_01SsuZ47wgUUPDy36B9Lhfbw	LEARN-5 (Sonnet, cap 5)	cross-account learning pass, window from 2026-09-26T00:58Z	brief 2026-09-26-parent-learn5.md; parent 7e
+2026-09-26T03:07Z	session_01PEiTtarakzahhzg8y2yKWg	V8-QA6 (Sonnet, cap 5)	rolling QA, window 01:42 to start	brief 2026-09-26-lane-v8-qa6.md; LANE V8

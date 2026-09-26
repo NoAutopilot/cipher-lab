@@ -155,6 +155,17 @@ orchestrator USD 10.21. No live workers, no pending check-in. Rate limit `allowe
 - **Retrospective trigger met** (13 rows, USD 174, one worker X and an orchestrator X), flagged to the parent at 17:35.
 - Tools touched by workers: iiif_lines.py --top-margin, reconcile_passes.py gloss column (tests pass).
 
+## LANE V8 handoff (session_01YRuw3TCf7d1w85DLmYNnw4), 26 September 2026, live
+
+Brief `.claude/briefs/runs/2026-09-26-lane-v8-orchestrator.md`. Opened 03:05 UTC 26 Sept by parent 7e. Live body; heading fixed.
+
+| job | state |
+|---|---|
+| 1 rolling QA | V8-QA6 session_01PEiTtarakzahhzg8y2yKWg (Sonnet, cap 5, 40 min) started 03:07, window from 01:42; QA7 ~05:40 |
+| 2 verifiers | none open at 03:07; expected: LANE AX Nassau 5797/4610/4611/4616 (after re-derivation), LANE B6 matignon-mayenne-1586 |
+| 3 SO PRs | none above 15 at 03:07 |
+| 4 Mercy gate-2 closer | waits on the owner (JSTOR rows 80-83, Lonchay-Cuvelier IV) |
+
 ## LANE V7 handoff (session_018VkFfDWY4drC9a9aozmop9), 25 September 2026, live (updated 26 Sept 00:59 UTC)
 
 **Closed 26 Sept 2026 02:54 UTC at 357k context (brief's 400k handoff; one more QA cycle would have crossed it).** Brief `.claude/briefs/runs/2026-09-25-lane-v7-orchestrator.md`. Opened 22:21 25 Sept by parent 7d. Orchestrator usage 6.52 at 02:54 (get_session). Workers 4, USD 10.46 by get_session, all ledgered D and archived. Rate allowed throughout. **No live workers, no pending check-in.**
