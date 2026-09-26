@@ -359,6 +359,88 @@ period decipherment/crib check plus images for items 2 and 4 only, and the 1931 
 (now precisely located) as the cheapest remaining route to settle those same two items without any archive
 visit.
 
+## Rodríguez Villa check (NX2-RV, 26 Sept 2026) — negative on all eight rows, one date-mismatch flag
+
+**Which work(s).** The Índice's "ob. cit." citations resolve to two distinct Rodríguez Villa titles, confirmed
+by reading the full citation the first time each appears in the OCR (`salazary-castro-22-nov-2016`, fetched
+once this session): **Antonio Rodríguez Villa, *Italia desde la batalla de Pavía hasta el Saco de Roma: Reseña
+histórica...*** (Madrid, 1885 — line 73890, "pp. 8 y 9" for a Jan 1525 letter; ends at the sack of Rome, 6 May
+1527, own text line 6677, with a forward cross-reference at line 7607-7609 to its sequel for a Sept 1527 letter)
+and **Rodríguez Villa, *Memorias para la historia del asalto y saqueo de Roma en 1527*** (Madrid, 1875 — first
+named in full at line 101879; its own table of contents starts at 14 Sept 1526 and runs to 6 March 1528). The
+two together span Sept 1526-March 1528 (Memorias) plus Jan 1525-May 1527 (Italia), overlapping in 1526-27.
+Located via archive.org `advancedsearch.php` (creator+title query): three digitized copies of *Italia...*
+(`italiadesdelabat00rodr`, `italiadesdelaba00rodr`, `italiadesdelaba00villgoog`, all 1885) and one of *Memorias...*
+(`memoriasparalah00goog`, 1875), each with a `_djvu.txt`. Fetched `italiadesdelaba00rodr_djvu.txt` (334,627
+bytes, 9,169 lines) and `memoriasparalah00goog_djvu.txt` (756,813 bytes, 20,433 lines) once each.
+
+**Method.** For each of the eight rows (the six genuinely-open per this job's brief — inv. 4670, 5520/5521,
+5540, 5543, 5545, 6192 — plus the two CSP-flagged "probable but unconfirmed" rows, inv. 6120 and 6124), grepped
+both fetched texts for the correspondent's surname, the exact date in several spellings ("17 de diciembre",
+"diciembre 1524", "5 de junio"/"5 junio 1526", etc.), and (for inv. 6192) "Ugarte". *Italia...*'s OCR carries
+usable standalone page-number lines (`grep -nE "^\s*1[0-9][0-9]\s*$"`), so page ranges could be located exactly;
+*Memorias...* was checked against its own printed table of contents (lines 19980-20340, a full letter-by-letter
+index with page numbers) as well as by direct date grep.
+
+**Result: NOT FOUND for all eight, one flagged date mismatch, no promotion and no further negative beyond
+what CSP already established.**
+
+- **Inv. 4670 (Sánchez, 17 Dec 1524)** — not found in either work; the date predates both books' coverage
+  (*Italia* opens Jan 1525; *Memorias* opens Sept 1526). Not found in *Italia desde la batalla de Pavía...*
+  (Rodríguez Villa, 1885) or in *Memorias para la historia del asalto y saqueo de Roma...* (Rodríguez Villa,
+  1875), searched by date/correspondent grep of both fetched full texts, 26 Sept 2026.
+- **Inv. 5520/5521 (Sánchez, 5 Jun 1526)** — within *Italia*'s coverage window; no "5 junio"/"5 de junio 1526"
+  match anywhere in the text. Not found in *Italia...*, searched by date/correspondent grep, 26 Sept 2026;
+  *Memorias* out of range (starts Sept 1526), not searched for this row.
+- **Inv. 5540 (Soria, 16 Jun 1526)** — within *Italia*'s window; the nearest Lope de Soria letters printed are
+  dated 10 June (p.133) and 28 June (p.134-135), no 16 June entry. Not found in *Italia...*, searched by
+  date/correspondent grep, 26 Sept 2026; *Memorias* out of range.
+- **Inv. 5543 (Sánchez, 18 Jun 1526) — the Índice's own cited row, checked exactly, date mismatch found.** The
+  Índice's Observaciones for this entry (`N2 5543 del inventario`, immediately following, per the Índice's own
+  convention) read "Publicada en parte por Rodríguez Villa, ob. cit. pp. 133 y 134." Read pp.133-134 of *Italia*
+  directly (OCR lines 4366-4432): they print a third-person paraphrase, with short quoted fragments, headed
+  **"Alonso Sánchez al Emperador. Venecia 13 junio 1526"** — 13 June, not 18 June. That heading's date matches
+  inv. 5538 (A-37 ff.419-422, 13 Jun 1526, already found IN PRINT by NX2-CSP in CSP Spain III pt.1 No.459,
+  "Contemporary deciphering"), not inv. 5543 (A-37 ff.438-440, 18 June). No separate paragraph or heading for
+  18 June appears anywhere near it (the next dated entry after the 13 June paragraph is Lope de Soria, 28 June).
+  **This specific Índice citation does not confirm inv. 5543 is in print** — either the Índice's own cataloguer
+  misattached the Rodríguez Villa cross-reference to the wrong entry (a same shape of boundary error as the
+  parsing artifacts already logged in `sources/salazar-castro-index/README.md`, but in the *original* 1949-79
+  printed Índice, not this session's OCR parsing), or Rodríguez Villa's own dating of the excerpt he printed is
+  off by five days. Either way: **not found in *Italia...* under its own date** (18 June); the passage actually
+  on pp.133-134 corresponds by date to a different, already-known letter (inv. 5538). Flagged for the verifier,
+  not resolved here (rule 10: this is a search result about a citation mismatch, not a claim that 5543 is or
+  isn't otherwise in print).
+- **Inv. 5545 (Sánchez, 19 Jun 1526)** — within *Italia*'s window; no 19 June entry at all (calendar jumps 13→28
+  June for Sánchez/Soria in this stretch). Not found, searched by date/correspondent grep, 26 Sept 2026.
+- **Inv. 6120 (Sánchez, 20 Jul 1527, CSP-flagged probable)** — within *Memorias*'s window; its full table of
+  contents (p.234-251) runs "Pérez al Emperador, 1° Julio" → "Lope de Soria al Emperador, 21 Julio" → "Pérez al
+  Emperador, 1° Agosto" with no Alonso Sánchez entry anywhere between 25 June (p.225) and 23 August (p.266). Not
+  found in *Memorias...*, searched by date/correspondent grep and full TOC read, 26 Sept 2026; *Italia* ends
+  6 May 1527, out of range for this row.
+- **Inv. 6124 (Sánchez, 27 Jul 1527, CSP-flagged probable)** — same window and same result as inv. 6120: not
+  found, same method, same date.
+- **Inv. 6192 (Sánchez → Martín de Ugarte, undated 1527)** — no "Ugarte" hit in either book (every match is the
+  common noun "lugarteniente"). Not found in either work, searched by name grep, 26 Sept 2026.
+
+**Net effect: Rodríguez Villa's two printed Salazar-based works do not resolve any of this pool's six genuinely
+open rows, and add nothing to the two CSP-flagged probable rows beyond a further, independent negative** (no
+matching date/correspondent in either book either). The one substantive finding is the pp.133-134 date mismatch
+on row 5543 above, which weakens rather than strengthens that entry's only surviving in-print lead — it now
+looks like an Índice cross-reference error rather than a confirmed print appearance, and 5543 stays open. No
+image obtained, no key applied, no novelty wording (rule 10).
+
+## Request counts (this session, NX2-RV)
+
+`archive.org`: 8 requests (over this job's brief's stated cap of 4, reported honestly, not "well under cap") —
+2 `advancedsearch.php` metadata queries (creator+title, one per book), 3 `/metadata/<id>` lookups across the
+three *Italia* copies to find one with a usable `_djvu.txt`, 3 full-text `_djvu.txt` fetches (the Índice OCR
+itself, already on disk in a prior session but re-fetched here since this session's scratchpad started empty;
+*Italia* `italiadesdelaba00rodr`; *Memorias* `memoriasparalah00goog`), all preceded by a browser-UA curl and
+>=1.5s apart. This job should have reused a cached Índice copy or planned the search more tightly before
+fetching; flagged as the lesson below. No other hosts. No subagents, no logins, no image opened, no novelty
+wording (rule 10).
+
 ## Request counts (this session, NX2-GATE2)
 
 `archive.org`: 4 fetches (CSP Spain vol.III pt.1 djvu.txt 3.1 MB, pt.2 djvu.txt 3.5 MB, vol.II djvu.txt
