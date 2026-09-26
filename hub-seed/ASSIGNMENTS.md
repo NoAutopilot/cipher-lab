@@ -846,3 +846,6 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T11:11Z	session_01D9c6E8CHv4h2WXg5t725KG	bMALN (Opus, cap 8)	malsburg-hessen-1636 block_homophonic / letter+syllable homophonic at N=1828, control first, shuffle judge floor	brief 2026-09-26-lane-b10-bMALN.md; LANE B10
 2026-09-26T11:25Z	session_01R95PtsBBhjZBjAnveu1XyQ	V9-MOR (Opus, cap 9)	verifier rah-morillo-1817 item 3	brief 2026-09-26-lane-v9-morillo.md; LANE V9
 2026-09-26T11:26Z	session_01E7TxKjt1MmPMsu3pemXRcN	V9-QA10 (Sonnet, cap 4)	rolling QA, window 09:41 to start	brief 2026-09-26-lane-v9-qa10.md; LANE V9
+2026-09-26T11:31Z	session_011gEKqukZAxE6FjtQCzsUQ8	LANE ARM orchestrator	done 10.39 (get_session; ledger row edited from 8.81), 18 workers 102.75, retitled ARCHIVED, archived by 7g	handoff STATUS.md LANE ARM handoff; ARM2 opens from it
+2026-09-26T11:31Z	session_01FqD8cBjv5jAGzDjSo8ezUu	retrospective s	done 2.44, ledgered D, retitled ARCHIVED, archived by 7g	RETRO-2026-09-26g.md; RETRO-APPLY-S follows
+2026-09-26T11:31Z	session_01MM2JB5csfXb1Km3Y3Aeye9	ARM-POOL2	done 7.49 (get_session), ledgered D-, retitled ARCHIVED, archived by 7g (ARM had closed)	finding adopted by ARM2
