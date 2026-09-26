@@ -547,3 +547,23 @@ check (ideally against the manuscript image) would be worth doing before treatin
 contextually plausible but could not position-verify them and declined to report them resolved; this
 session's C grade for both rests on round 1's direct sequential-context reading (L26/34, L29/46), not
 independently reproduced this pass -- also worth a third check.
+
+## NX-UNBLOCK (26 Sept 2026): flag, not an unblock -- NEXT-STEPS.tsv's "needs-edition" reads stale
+
+Before trying a free route, read this row's actual current state: `key.tsv` (53 code-values, 446/517 coded
+tokens grade C), `reading.txt`, and `AUDIT.md` (verifier OX-VBV, LANE OX, 25 Sept 2026, class N3 for the key/
+decipherment, N1 for the plaintext) all already exist, and `status.json` already records `key: "ours"`,
+`text: "known"` for this target. `NEXT-STEPS.tsv`'s extracted "next step" text ("Key recovery was not
+attempted... the next step is a solver session using ciphertext.tsv, plaintext_print.txt...") is from an
+*earlier* paragraph in this same NOTES.md, written before key recovery happened (OX-VB/OX-VBS/OX-VBS2), and
+this file's own top status line still reads `partial` even though the verifier's own AUDIT.md table above
+already shows the key at N3. `tools/next_steps.py`'s "last paragraph naming a next step" extraction picked
+up that stale paragraph rather than the file's true current state (there is no later "next step" bullet after
+the rule-7 re-derivation section, so it fell back to the last match by that phrase).
+
+**Not an image/edition/person blocker at all** -- this is a `next_steps.py` extraction miss on a target whose
+own status line has not been updated to match its AUDIT.md, not something a free-route pass can unblock. Per
+this brief's own scope (never touch status.json or another folder's reading files), left unchanged here;
+flagged in ROOM.md for whoever owns this target's status line and the NEXT-STEPS.tsv regeneration to fix
+(either bump the status line/status.json's own status field to match AUDIT.md, or teach next_steps.py to
+prefer a next-step paragraph that comes after the file's newest dated section).
