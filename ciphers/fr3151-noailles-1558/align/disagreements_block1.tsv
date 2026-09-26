@@ -1,0 +1,46 @@
+line	col	A	B	flagged	crop
+f60r_L01	1	hookC	tbar	AB	
+f60r_L01	3	unk1	loop6	AB	
+f60r_L01	8	arrowL	-	A	
+f60r_L01	9	tbar	-		
+f60r_L01	10	hookC	-	A	
+f60r_L01	14	slash	pipe		
+f60r_L01	17	-	loop6	B	
+f60r_L01	18	unk2	4	A	
+f60r_L01	22	4	hookC	AB	
+f60r_L02	2	circleO	hookC	AB	
+f60r_L02	3	slash	pipe		
+f60r_L02	6	Ymark	-	A	
+f60r_L02	7	2	20		
+f60r_L02	9	Ymark	loop6	AB	
+f60r_L02	10	slash	pipe		
+f60r_L02	12	slash	-		
+f60r_L02	16	hash	-		
+f60r_L02	18	plus	tbar		
+f60r_L02	21	9	-	A	
+f60r_L02	22	arrowL	dotmark	AB	
+f60r_L02	24	-	tbar	B	
+f60r_L02	25	-	9		
+f60r_L02	27	tri	plus	AB	
+f60r_L02	30	slash	pipe	B	
+f60r_L02	32	-	circleO	B	
+f60r_L03	1	5	-	A	
+f60r_L03	2	6	40	AB	
+f60r_L03	3	hash	1		
+f60r_L03	4	tbar	30		
+f60r_L03	5	plus	30		
+f60r_L03	6	plus	4		
+f60r_L03	7	unk3	hash	A	
+f60r_L03	8	2	5	A	
+f60r_L03	10	slash	-		
+f60r_L03	11	hookC	-	A	
+f60r_L03	12	tbar	-		
+f60r_L03	13	9	-		
+f60r_L03	14	13	dotmark	B	
+f60r_L03	15	tri	loop6	AB	
+f60r_L03	16	tri	5	A	
+f60r_L03	18	slash	hookC	B	
+f60r_L03	19	dash	wmark	AB	
+f60r_L03	20	arrowL	hash	A	
+f60r_L03	22	loop6	-	A	
+f60r_L03	24	tbar	-		

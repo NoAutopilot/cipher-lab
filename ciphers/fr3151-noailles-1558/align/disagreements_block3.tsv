@@ -1,0 +1,78 @@
+line	col	A	B	flagged	crop
+f60v_L03	1	unk1	-	A	
+f60v_L03	2	unk2	-	A	
+f60v_L03	4	hash	tbar	B	
+f60v_L03	8	unk2	-	A	
+f60v_L04	4	unk4	tri	AB	
+f60v_L04	6	hookC	starX	AB	
+f60v_L04	8	hookC	unk1	B	
+f60v_L04	10	-	loop6	B	
+f60v_L04	11	Qtail	circleO	B	
+f60v_L04	12	Qtail	circleO	B	
+f60v_L04	15	Qtail	circleO	B	
+f60v_L04	20	hookC	unk2	AB	
+f60v_L04	23	-	1		
+f60v_L04	24	-	hash	B	
+f60v_L04	25	-	dotmark	B	
+f60v_L04	26	-	hookC	B	
+f60v_L05	1	-	hookC	B	
+f60v_L05	2	-	20		
+f60v_L05	3	-	13		
+f60v_L05	4	-	tbar	B	
+f60v_L05	5	-	unk1	B	
+f60v_L05	6	-	loop6	B	
+f60v_L05	7	-	loop6	B	
+f60v_L05	8	-	hash	B	
+f60v_L05	9	-	7	B	
+f60v_L05	10	-	tri	B	
+f60v_L05	13	wmark	tbar	B	
+f60v_L05	14	unk3	unk1	B	
+f60v_L05	15	Qtail	loop6	B	
+f60v_L05	16	Qtail	loop6	B	
+f60v_L05	19	unk4	tri	AB	
+f60v_L05	20	hookC	loop6	B	
+f60v_L05	22	Qtail	unk2	B	
+f60v_L05	26	unk4	tri	AB	
+f60v_L05	28	7	-		
+f60v_L05	30	8	dotmark	B	
+f60v_L05	32	19	tri	B	
+f60v_L06	1	2	tri	AB	
+f60v_L06	3	20	wmark	B	
+f60v_L06	7	-	Qtail	B	
+f60v_L06	9	-	loop6	B	
+f60v_L06	13	Qtail	hookC	B	
+f60v_L06	14	2	unk2	B	
+f60v_L06	17	Ymark	unk2	AB	
+f60v_L06	20	dotmark	Qtail	B	
+f60v_L06	22	arrowL	-		
+f60v_L06	23	2	starX	B	
+f60v_L07	1	7	pipe	B	
+f60v_L07	2	9	Qtail	B	
+f60v_L07	4	hookC	loop6	B	
+f60v_L07	6	8	tri	B	
+f60v_L07	7	9	tri	B	
+f60v_L07	9	9	-		
+f60v_L07	15	Qtail	circleO	B	
+f60v_L07	17	pipe	loop6	B	
+f60v_L07	19	hookC	loop6	B	
+f60v_L07	24	pipe	-	A	
+f60v_L08	1	7	pipe	B	
+f60v_L08	6	unk4	tri	AB	
+f60v_L08	8	Qtail	-		
+f60v_L08	9	tbar	hash	B	
+f60v_L08	14	Qtail	loop6	B	
+f60v_L08	15	dotmark	unk3	B	
+f60v_L08	17	unk4	tri	AB	
+f60v_L08	18	unk4	tri	AB	
+f60v_L08	19	Qtail	hookC	B	
+f60v_L08	23	Ymark	unk2	AB	
+f60v_L08	25	unk5	wmark	AB	
+f60v_L09	2	-	20	B	
+f60v_L09	3	tbar	9	AB	
+f60v_L09	5	-	8	B	
+f60v_L09	6	6	2	AB	
+f60v_L09	7	18	10	AB	
+f60v_L09	9	-	3	B	
+f60v_L09	12	4	-	A	
+f60v_L09	14	plus	tbar	B	
+f60v_L09	15	9	Qtail	AB	

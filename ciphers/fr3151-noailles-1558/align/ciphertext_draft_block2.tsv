@@ -1,0 +1,66 @@
+line	position	sign	confidence	alt	why
+f60r_L05	1	slash	M	A:-	gap
+f60r_L05	2	hash	H		agree
+f60r_L05	3	unk1	M	B:unk2	differ
+f60r_L05	4	loop6	M		agree-flagged
+f60r_L05	5	hookC	M	B:-	gap
+f60r_L05	6	hash	H		agree
+f60r_L05	7	starX	H		agree
+f60r_L05	8	pipe	M	B:unk1	differ
+f60r_L05	9	dotmark	M	B:unk6	differ
+f60r_L05	10	tri	M		agree-flagged
+f60r_L05	11	unk2	M	B:unk5	differ
+f60r_L05	12	20	M		agree-flagged
+f60r_L05	13	unk3	M	B:unk4	differ
+f60r_L05	14	Qtail	M	B:loop6	differ
+f60r_L05	15	circleO	M		agree-flagged
+f60r_L05	16	tbar	H		agree
+f60r_L05	17	tri	H		agree
+f60r_L05	18	6	H		agree
+f60r_L05	19	hash	M	B:-	gap
+f60r_L05	20	hash	M	B:unk3	differ
+f60r_L06	1	Qtail	M	A:-	gap
+f60r_L06	2	dash	M	A:-	gap
+f60r_L06	3	hash	M		agree-flagged
+f60r_L06	4	starX	M	B:-	gap
+f60r_L06	5	pipe	M		agree-flagged
+f60r_L06	6	tbar	M	B:unk7	differ
+f60r_L06	7	20	M	B:unk7	differ
+f60r_L06	8	unk3	M	B:zigzag	differ
+f60r_L06	9	tbar	M	B:starX	differ
+f60r_L06	10	hash	M	B:circleO	differ
+f60r_L06	11	pipe	M	B:wmark	differ
+f60r_L06	12	70	M	B:circleO	differ
+f60r_L06	13	tbar	M	B:zigzag	differ
+f60r_L06	14	unk3	M	B:unk7	differ
+f60r_L06	15	tbar	M	B:starX	differ
+f60r_L06	16	tbar	M	B:10	differ
+f60r_L06	17	Qtail	M	B:wmark	differ
+f60r_L06	18	circleO	M	B:20	differ
+f60r_L07	1	tbar	M	B:-	gap
+f60r_L07	2	dash	M	B:-	gap
+f60r_L07	3	unk4	M	B:-	gap
+f60r_L07	4	tri	M	B:-	gap
+f60r_L07	5	unk3	M	B:-	gap
+f60r_L07	6	20	M	B:-	gap
+f60r_L07	7	tbar	M	B:-	gap
+f60r_L07	8	hash	M	B:-	gap
+f60r_L07	9	pipe	M	B:-	gap
+f60r_L07	10	tri	M	B:arrowL	differ
+f60r_L07	11	unk2	M	B:unk7	differ
+f60r_L07	12	tbar	M		agree-flagged
+f60r_L07	13	2	M	B:-	gap
+f60r_L07	14	hash	H		agree
+f60r_L07	15	10	M	B:-	gap
+f60r_L07	16	tbar	M	B:-	gap
+f60r_L07	17	20	M	B:-	gap
+f60r_L07	18	pipe	M	B:-	gap
+f60r_L07	19	tri	H		agree
+f60r_L07	20	Hmark	H		agree
+f60r_L07	21	loop6	M		agree-flagged
+f60r_L07	22	dotmark	M	B:-	gap
+f60r_L07	23	circleO	H		agree
+f60r_L07	24	wmark	M		agree-flagged
+f60r_L07	25	tri	H		agree
+f60r_L07	26	tbar	M	B:-	gap
+f60r_L07	27	tbar	M	B:unk8	differ

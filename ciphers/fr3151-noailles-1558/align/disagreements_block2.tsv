@@ -1,0 +1,46 @@
+line	col	A	B	flagged	crop
+f60r_L05	1	-	slash		
+f60r_L05	3	unk1	unk2	A	
+f60r_L05	5	hookC	-	A	
+f60r_L05	8	pipe	unk1		
+f60r_L05	9	dotmark	unk6	AB	
+f60r_L05	11	unk2	unk5	AB	
+f60r_L05	13	unk3	unk4	AB	
+f60r_L05	14	Qtail	loop6	A	
+f60r_L05	19	hash	-		
+f60r_L05	20	hash	unk3	A	
+f60r_L06	1	-	Qtail	B	
+f60r_L06	2	-	dash		
+f60r_L06	4	starX	-	A	
+f60r_L06	6	tbar	unk7		
+f60r_L06	7	20	unk7	AB	
+f60r_L06	8	unk3	zigzag	AB	
+f60r_L06	9	tbar	starX		
+f60r_L06	10	hash	circleO		
+f60r_L06	11	pipe	wmark		
+f60r_L06	12	70	circleO	A	
+f60r_L06	13	tbar	zigzag	B	
+f60r_L06	14	unk3	unk7	AB	
+f60r_L06	15	tbar	starX	B	
+f60r_L06	16	tbar	10	B	
+f60r_L06	17	Qtail	wmark	AB	
+f60r_L06	18	circleO	20	AB	
+f60r_L07	1	tbar	-		
+f60r_L07	2	dash	-	A	
+f60r_L07	3	unk4	-	A	
+f60r_L07	4	tri	-		
+f60r_L07	5	unk3	-	A	
+f60r_L07	6	20	-	A	
+f60r_L07	7	tbar	-		
+f60r_L07	8	hash	-		
+f60r_L07	9	pipe	-	A	
+f60r_L07	10	tri	arrowL		
+f60r_L07	11	unk2	unk7	AB	
+f60r_L07	13	2	-		
+f60r_L07	15	10	-		
+f60r_L07	16	tbar	-		
+f60r_L07	17	20	-		
+f60r_L07	18	pipe	-		
+f60r_L07	22	dotmark	-	A	
+f60r_L07	26	tbar	-		
+f60r_L07	27	tbar	unk8	B	

@@ -1,0 +1,84 @@
+line	position	sign	confidence	alt	why
+f60r_L01	1	hookC	M	B:tbar	differ
+f60r_L01	2	20	H		agree
+f60r_L01	3	unk1	M	B:loop6	differ
+f60r_L01	4	9	M		agree-flagged
+f60r_L01	5	hash	H		agree
+f60r_L01	6	tbar	H		agree
+f60r_L01	7	dash	M		agree-flagged
+f60r_L01	8	arrowL	M	B:-	gap
+f60r_L01	9	tbar	M	B:-	gap
+f60r_L01	10	hookC	M	B:-	gap
+f60r_L01	11	tbar	H		agree
+f60r_L01	12	hash	H		agree
+f60r_L01	13	9	H		agree
+f60r_L01	14	slash	M	B:pipe	differ
+f60r_L01	15	10	M		agree-flagged
+f60r_L01	16	9	M		agree-flagged
+f60r_L01	17	loop6	M	A:-	gap
+f60r_L01	18	unk2	M	B:4	differ
+f60r_L01	19	pipe	H		agree
+f60r_L01	20	70	H		agree
+f60r_L01	21	loop6	M		agree-flagged
+f60r_L01	22	4	M	B:hookC	differ
+f60r_L01	23	tbar	H		agree
+f60r_L01	24	dash	M		agree-flagged
+f60r_L01	25	20	H		agree
+f60r_L01	26	9	M		agree-flagged
+f60r_L02	1	Hmark	M		agree-flagged
+f60r_L02	2	circleO	M	B:hookC	differ
+f60r_L02	3	slash	M	B:pipe	differ
+f60r_L02	4	70	M		agree-flagged
+f60r_L02	5	loop6	M		agree-flagged
+f60r_L02	6	Ymark	M	B:-	gap
+f60r_L02	7	2	M	B:20	differ
+f60r_L02	8	tbar	H		agree
+f60r_L02	9	Ymark	M	B:loop6	differ
+f60r_L02	10	slash	M	B:pipe	differ
+f60r_L02	11	9	H		agree
+f60r_L02	12	slash	M	B:-	gap
+f60r_L02	13	10	H		agree
+f60r_L02	14	tri	M		agree-flagged
+f60r_L02	15	6	H		agree
+f60r_L02	16	hash	M	B:-	gap
+f60r_L02	17	hash	H		agree
+f60r_L02	18	plus	M	B:tbar	differ
+f60r_L02	19	plus	M		agree-flagged
+f60r_L02	20	loop6	M		agree-flagged
+f60r_L02	21	9	M	B:-	gap
+f60r_L02	22	arrowL	M	B:dotmark	differ
+f60r_L02	23	2	M		agree-flagged
+f60r_L02	24	tbar	M	A:-	gap
+f60r_L02	25	9	M	A:-	gap
+f60r_L02	26	13	M		agree-flagged
+f60r_L02	27	tri	M	B:plus	differ
+f60r_L02	28	tri	M		agree-flagged
+f60r_L02	29	2	H		agree
+f60r_L02	30	slash	M	B:pipe	differ
+f60r_L02	31	arrowL	M		agree-flagged
+f60r_L02	32	circleO	M	A:-	gap
+f60r_L02	33	hookC	M		agree-flagged
+f60r_L03	1	5	M	B:-	gap
+f60r_L03	2	6	M	B:40	differ
+f60r_L03	3	hash	M	B:1	differ
+f60r_L03	4	tbar	M	B:30	differ
+f60r_L03	5	plus	M	B:30	differ
+f60r_L03	6	plus	M	B:4	differ
+f60r_L03	7	unk3	M	B:hash	differ
+f60r_L03	8	2	M	B:5	differ
+f60r_L03	9	2	M		agree-flagged
+f60r_L03	10	slash	M	B:-	gap
+f60r_L03	11	hookC	M	B:-	gap
+f60r_L03	12	tbar	M	B:-	gap
+f60r_L03	13	9	M	B:-	gap
+f60r_L03	14	13	M	B:dotmark	differ
+f60r_L03	15	tri	M	B:loop6	differ
+f60r_L03	16	tri	M	B:5	differ
+f60r_L03	17	2	H		agree
+f60r_L03	18	slash	M	B:hookC	differ
+f60r_L03	19	dash	M	B:wmark	differ
+f60r_L03	20	arrowL	M	B:hash	differ
+f60r_L03	21	hookC	M		agree-flagged
+f60r_L03	22	loop6	M	B:-	gap
+f60r_L03	23	hash	H		agree
+f60r_L03	24	tbar	M	B:-	gap

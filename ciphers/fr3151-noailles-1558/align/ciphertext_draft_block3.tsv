@@ -1,0 +1,159 @@
+line	position	sign	confidence	alt	why
+f60v_L03	1	unk1	M	B:-	gap
+f60v_L03	2	unk2	M	B:-	gap
+f60v_L03	3	plus	M		agree-flagged
+f60v_L03	4	hash	M	B:tbar	differ
+f60v_L03	5	Qtail	M		agree-flagged
+f60v_L03	6	hash	M		agree-flagged
+f60v_L03	7	pipe	M		agree-flagged
+f60v_L03	8	unk2	M	B:-	gap
+f60v_L04	1	circleO	M		agree-flagged
+f60v_L04	2	wmark	M		agree-flagged
+f60v_L04	3	tbar	M		agree-flagged
+f60v_L04	4	unk4	M	B:tri	differ
+f60v_L04	5	Qtail	M		agree-flagged
+f60v_L04	6	hookC	M	B:starX	differ
+f60v_L04	7	pipe	H		agree
+f60v_L04	8	hookC	M	B:unk1	differ
+f60v_L04	9	tbar	M		agree-flagged
+f60v_L04	10	loop6	M	A:-	gap
+f60v_L04	11	Qtail	M	B:circleO	differ
+f60v_L04	12	Qtail	M	B:circleO	differ
+f60v_L04	13	hash	M		agree-flagged
+f60v_L04	14	tri	M		agree-flagged
+f60v_L04	15	Qtail	M	B:circleO	differ
+f60v_L04	16	hookC	M		agree-flagged
+f60v_L04	17	tbar	M		agree-flagged
+f60v_L04	18	hash	M		agree-flagged
+f60v_L04	19	2	H		agree
+f60v_L04	20	hookC	M	B:unk2	differ
+f60v_L04	21	hookC	M		agree-flagged
+f60v_L04	22	tbar	M		agree-flagged
+f60v_L04	23	1	M	A:-	gap
+f60v_L04	24	hash	M	A:-	gap
+f60v_L04	25	dotmark	M	A:-	gap
+f60v_L04	26	hookC	M	A:-	gap
+f60v_L04	27	hash	M		agree-flagged
+f60v_L05	1	hookC	M	A:-	gap
+f60v_L05	2	20	M	A:-	gap
+f60v_L05	3	13	M	A:-	gap
+f60v_L05	4	tbar	M	A:-	gap
+f60v_L05	5	unk1	M	A:-	gap
+f60v_L05	6	loop6	M	A:-	gap
+f60v_L05	7	loop6	M	A:-	gap
+f60v_L05	8	hash	M	A:-	gap
+f60v_L05	9	7	M	A:-	gap
+f60v_L05	10	tri	M	A:-	gap
+f60v_L05	11	20	M		agree-flagged
+f60v_L05	12	13	H		agree
+f60v_L05	13	wmark	M	B:tbar	differ
+f60v_L05	14	unk3	M	B:unk1	differ
+f60v_L05	15	Qtail	M	B:loop6	differ
+f60v_L05	16	Qtail	M	B:loop6	differ
+f60v_L05	17	hash	M		agree-flagged
+f60v_L05	18	7	M		agree-flagged
+f60v_L05	19	unk4	M	B:tri	differ
+f60v_L05	20	hookC	M	B:loop6	differ
+f60v_L05	21	tbar	M		agree-flagged
+f60v_L05	22	Qtail	M	B:unk2	differ
+f60v_L05	23	dotmark	M		agree-flagged
+f60v_L05	24	10	H		agree
+f60v_L05	25	tri	M		agree-flagged
+f60v_L05	26	unk4	M	B:tri	differ
+f60v_L05	27	9	M		agree-flagged
+f60v_L05	28	7	M	B:-	gap
+f60v_L05	29	7	M		agree-flagged
+f60v_L05	30	8	M	B:dotmark	differ
+f60v_L05	31	wmark	M		agree-flagged
+f60v_L05	32	19	M	B:tri	differ
+f60v_L05	33	hookC	M		agree-flagged
+f60v_L06	1	2	M	B:tri	differ
+f60v_L06	2	Qtail	M		agree-flagged
+f60v_L06	3	20	M	B:wmark	differ
+f60v_L06	4	hash	M		agree-flagged
+f60v_L06	5	7	M		agree-flagged
+f60v_L06	6	hash	M		agree-flagged
+f60v_L06	7	Qtail	M	A:-	gap
+f60v_L06	8	Qtail	M		agree-flagged
+f60v_L06	9	loop6	M	A:-	gap
+f60v_L06	10	Qtail	M		agree-flagged
+f60v_L06	11	hookC	M		agree-flagged
+f60v_L06	12	pipe	M		agree-flagged
+f60v_L06	13	Qtail	M	B:hookC	differ
+f60v_L06	14	2	M	B:unk2	differ
+f60v_L06	15	tri	M		agree-flagged
+f60v_L06	16	Qtail	M		agree-flagged
+f60v_L06	17	Ymark	M	B:unk2	differ
+f60v_L06	18	wmark	M		agree-flagged
+f60v_L06	19	hash	M		agree-flagged
+f60v_L06	20	dotmark	M	B:Qtail	differ
+f60v_L06	21	tri	M		agree-flagged
+f60v_L06	22	arrowL	M	B:-	gap
+f60v_L06	23	2	M	B:starX	differ
+f60v_L06	24	tri	M		agree-flagged
+f60v_L07	1	7	M	B:pipe	differ
+f60v_L07	2	9	M	B:Qtail	differ
+f60v_L07	3	20	H		agree
+f60v_L07	4	hookC	M	B:loop6	differ
+f60v_L07	5	Qtail	M		agree-flagged
+f60v_L07	6	8	M	B:tri	differ
+f60v_L07	7	9	M	B:tri	differ
+f60v_L07	8	Qtail	M		agree-flagged
+f60v_L07	9	9	M	B:-	gap
+f60v_L07	10	tri	M		agree-flagged
+f60v_L07	11	hash	M		agree-flagged
+f60v_L07	12	hookC	M		agree-flagged
+f60v_L07	13	tbar	M		agree-flagged
+f60v_L07	14	wmark	M		agree-flagged
+f60v_L07	15	Qtail	M	B:circleO	differ
+f60v_L07	16	hash	M		agree-flagged
+f60v_L07	17	pipe	M	B:loop6	differ
+f60v_L07	18	20	H		agree
+f60v_L07	19	hookC	M	B:loop6	differ
+f60v_L07	20	hash	M		agree-flagged
+f60v_L07	21	Qtail	M		agree-flagged
+f60v_L07	22	tri	M		agree-flagged
+f60v_L07	23	hash	M		agree-flagged
+f60v_L07	24	pipe	M	B:-	gap
+f60v_L08	1	7	M	B:pipe	differ
+f60v_L08	2	hash	M		agree-flagged
+f60v_L08	3	tbar	M		agree-flagged
+f60v_L08	4	20	H		agree
+f60v_L08	5	hash	M		agree-flagged
+f60v_L08	6	unk4	M	B:tri	differ
+f60v_L08	7	tbar	M		agree-flagged
+f60v_L08	8	Qtail	M	B:-	gap
+f60v_L08	9	tbar	M	B:hash	differ
+f60v_L08	10	Qtail	M		agree-flagged
+f60v_L08	11	Qtail	M		agree-flagged
+f60v_L08	12	hookC	M		agree-flagged
+f60v_L08	13	tbar	M		agree-flagged
+f60v_L08	14	Qtail	M	B:loop6	differ
+f60v_L08	15	dotmark	M	B:unk3	differ
+f60v_L08	16	10	H		agree
+f60v_L08	17	unk4	M	B:tri	differ
+f60v_L08	18	unk4	M	B:tri	differ
+f60v_L08	19	Qtail	M	B:hookC	differ
+f60v_L08	20	Qtail	M		agree-flagged
+f60v_L08	21	tbar	M		agree-flagged
+f60v_L08	22	wmark	M		agree-flagged
+f60v_L08	23	Ymark	M	B:unk2	differ
+f60v_L08	24	tbar	M		agree-flagged
+f60v_L08	25	unk5	M	B:wmark	differ
+f60v_L09	1	9	M		agree-flagged
+f60v_L09	2	20	M	A:-	gap
+f60v_L09	3	tbar	M	B:9	differ
+f60v_L09	4	wmark	M		agree-flagged
+f60v_L09	5	8	M	A:-	gap
+f60v_L09	6	6	M	B:2	differ
+f60v_L09	7	18	M	B:10	differ
+f60v_L09	8	8	M		agree-flagged
+f60v_L09	9	3	M	A:-	gap
+f60v_L09	10	2	M		agree-flagged
+f60v_L09	11	9	M		agree-flagged
+f60v_L09	12	4	M	B:-	gap
+f60v_L09	13	hookC	M		agree-flagged
+f60v_L09	14	plus	M	B:tbar	differ
+f60v_L09	15	9	M	B:Qtail	differ
+f60v_L09	16	2	M		agree-flagged
+f60v_L09	17	8	M		agree-flagged

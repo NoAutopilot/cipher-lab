@@ -147,3 +147,169 @@ QUEUE row for the orchestrator to file (do not edit QUEUE.md/G10 directly — se
 G10's row already covers this item; the correction is that Noailles no. 33 has **three** cipher blocks
 (~200-230 signs) across f.60r/f.60v, not two (~150 signs) confined to f.60r, each with its own period marginal
 gloss (crib), addressee independently confirmed as the Cardinal de Lorraine.
+
+## Transcription + gloss alignment attempt (26 Sept 2026, LANE NX NX-3151G)
+
+Intake gate re-checked: `python3 tools/intake_gate_check.py fr3151-noailles-1558` still exits 0 (the NX-3151N33
+verdict above already names the edition/full-text search read). Claimed in ROOM.md before starting.
+
+### 1. Crops
+
+`tools/iiif_lines.py`, native resolution, one new Gallica fetch (1 connection-reset retried once, per the
+good-citizen rule), the rest cut from sources already on disk:
+
+```
+python3 tools/iiif_lines.py --image images/src_ark_12148_btv1b9059865k_f61_3900_0_4030_5659.jpg \
+  --region 0,2800,4030,2000 --out images/crops --prefix f60r --top-margin 40 --debug
+python3 tools/iiif_lines.py --ark btv1b9059865k --canvas 62 --region 0,0,3966,5655 \
+  --out images/crops --prefix f60v_full --debug
+python3 tools/iiif_lines.py --image images/crops/src_ark_12148_btv1b9059865k_f62_0_0_3966_5655.jpg \
+  --region 0,2050,3966,1400 --out images/crops --prefix f60v --top-margin 30 --debug
+```
+
+Debug overlays (`f60r_lines_debug.jpg`, `f60v_lines_debug.jpg`) checked before any pass. A provisional
+sign-shape legend (`images/crops/sign_legend.md`) was written by this worker from one visual skim, so both
+blind passes on each block would use the same code vocabulary for non-numeral pen-drawn signs (numerals are
+always read as literal digits); this is the same role `tools/glyph_atlas.py` plays elsewhere, done by hand
+here because the corpus is small (~200 signs across 3 blocks).
+
+**Block-boundary correction to the NX-3151N33 intake note above:** block 2 is **3 lines** (f60r L05-L07), not
+"about 5" — the line-detector's bands, confirmed against the debug overlay, show block1 = 3 lines (L01-L03,
+gloss1 beside it) + one plain-French separator line (L04) + block2 = 3 lines (L05-L07, gloss2 beside it),
+then plain prose resumes (L08-L10, not part of any cipher block). Block 3 (f.60v) is 7 lines as the intake
+note said: L03 is a plain/cipher transition line (gloss3 begins beside it), L04-L09 are six lines of pure
+cipher, L09 ends in a clear plaintext tail ("...tant vn hongrie...").
+
+### 2. Transcription: two blind Sonnet passes per block, `tools/reconcile_passes.py`
+
+| block | lines | agreement | worst line | best line |
+|---|---|---|---|---|
+| 1 (f60r L01-L03) | 3 | 45.8% (38/83) | L03 17% | L01 65% |
+| 2 (f60r L05-L07) | 3 | 30.8% (20/65) | L06 11% | L05 50% |
+| 3 (f60v L03-L09) | 7 | 51.3% (81/158) | L05 36% | L06/L07 58% |
+| **all three** | 13 | **45.4% (139/306)** | | |
+
+Both passes on every block independently reported low confidence (heavy `?`/`unkN` use), citing faint ink, a
+gray bleed-through/ghost text from the facing leaf's ink showing through the paper, and difficulty separating
+several of the legend's hook/loop-family codes at this resolution — the same failure mode CLAUDE.md and
+LESSONS.md record for `fr3151-seure-1558`, the sibling cipher bound in the same recueil (38.5-51.7% agreement
+on comparable material, "not box-keyable at this image quality"). Per that precedent: **no hand-settling from
+the image was attempted at any of the three gates above** (all well under the usual 80% bar); `disagreements_
+block{1,2,3}.tsv`/`ciphertext_draft_block{1,2,3}.tsv`/`agreement_block{1,2,3}.tsv` are diagnostic only, kept
+for a future pass with a better image or a key. Numerals fare somewhat better than pen-signs (20, 70, 9, 10, 6
+recur at H-grade agreement in block1), consistent with a nomenclator mixing invented symbols with numeral
+codes — the same convention `fr3151-seure-1558/NOTES.md` describes for its own cipher in this recueil.
+
+Plain-hand words squeezed onto the same physical line as the cipher (both passes noticed independently,
+disagreed on exact spelling, grade M): block1 L03 ends "...mon Seigneur ... muy." (the letter's own clear
+hand resuming mid-line, not a decoded value); block3 L09 ends "...tant vn hongrie[...]" (H-grade for "tant vn
+hongrie", legible on direct inspection, continuing into the next plain paragraph about Italy/Hungary that
+follows the cipher block).
+
+Block2 pass B ran long (49 tool calls, 516s, repeated upscaling) for no gain in agreement over pass A's
+single-look approach (30.8% either way) — a usage-rule note for future briefs of this shape, not a reading
+problem.
+
+### 3. Marginal gloss
+
+One independent Sonnet multimodal read of all three zoomed gloss crops, plus this worker's own direct check
+(the brief's "one careful pass per gloss plus your own check") — both cut off at the same point by the
+binding, disagreeing occasionally on the word itself:
+
+- **Gloss 1** (beside block1, clearest of the three, 3 lines matching L01/L02/L03 1:1 by margin position):
+  "[..] en mal[u]aise" / "[..] gouuernemet" / "[..] de q [iustice?]". Lines 1-2 confirm the intake NOTES's
+  secondhand citation from `guiche1551/NOTES.md` ("en mauluaise", "gouuernemet"). Line 3 disagrees with that
+  citation's "affaires": both this worker's own two direct reads and the independent subagent read the word
+  after "de q" as opening with a tall ascender more consistent with "iustice" than a lowercase "a" — flagged,
+  not resolved.
+- **Gloss 2** (beside block2, L05-L07): markedly lower contrast than the other two; this worker's own two
+  reads and the subagent's read do not agree on a single word ("seigneurie"/"Loysanne"/"fin luy" all floated,
+  none confident). Effectively illegible; not usable for alignment.
+- **Gloss 3** (beside block3, 7 gloss lines, longest of the three): lines 1-4 give partial legible fragments
+  ("chascune chose" the single clearest phrase); lines 5-7 are essentially unreadable. The final fragment
+  ("hongroy[?]") sits beside the block's last line and is topically consistent with the plaintext tail's "un
+  Hongrois", but this is the period reader's own summary word, not necessarily a decode of the adjacent group.
+  Unlike gloss1, **which of the 7 cipher lines each gloss3 fragment sits beside is this worker's own visual
+  inference from vertical position, not a secure pairing** — the margin handwriting cascades continuously and
+  does not visibly break into 7 discrete units aligned one-to-one with the cipher bands.
+
+Full transcript: `align/gloss_read_subagent.md`.
+
+### 4. Alignment attempt and control (gate written before running, per the brief)
+
+**Gate:** leave-one-block-out mean accuracy on cipher values attested at least twice elsewhere >= 0.60 (under
+5 qualifying tokens: the control cannot fail, say so), plus a 10-permutation shuffled-gloss control side by
+side.
+
+**This could not be run as specified.** The brief's design needs, for each of the 3 blocks, an independent
+usable (gloss, cipher) pairing to train on or hold out. On the data actually recovered in step 3: only block
+1 has a gloss legible enough to extract any word at all, and even there each line keeps only 1-3 words (the
+rest lost to the binding). Block 2's gloss is illegible past unconfident fragments; block 3's gloss has a few
+legible words but no secure line-level pairing to specific cipher lines. So there is no second or third block
+with usable gloss data to leave out — the leave-one-**block**-out design has nothing to run on beyond block 1.
+
+**What was run instead, and reported as an honest substitute, not the brief's design:** a leave-one-**line**-
+out self-consistency check within block 1's own 3 (gloss fragment, cipher line) pairs, using
+`tools/interlinear_align.py`'s DP (`--floor 0`, each block1 reconciled-draft sign mapped to a synthetic
+surrogate code, same method `fr3625-lauriere-1593/align/control_lau.py` used for its own sign-heavy
+nomenclator). Script: `align/control_3151.py`.
+
+| held-out line | qualifying values | correct | accuracy |
+|---|---|---|---|
+| f60r_L01 | 12 | 0 | 0.000 |
+| f60r_L02 | 10 | 0 | 0.000 |
+| f60r_L03 | 11 | 0 | 0.000 |
+| **total** | **33** | **0** | **mean 0.000** |
+
+33 qualifying values (>=5, so not a can't-fail non-test by the brief's own caveat) — this is a real test, and
+it returned a clean zero. **Shuffled-pairing control**, 10 permutations of which line's gloss fragment trains
+which (seed 20260926): every permutation also scored exactly 0.000 (22-35 qualifying tokens each). **The true
+pairing is not merely below the 0.60 gate — it is tied with the shuffled-pairing floor at 0.000**, i.e. this
+specific DP/floor-0 method extracts no signal from gloss1's 1-3-word-per-line fragments at all, real pairing
+or scrambled. (Mechanically: each line's gloss is 1-3 words spread by the DP over 10-30 signs, so most signs
+get no chunk; the few generic high-frequency signs — `tbar`, `hash`, `slash` — that do qualify as "attested
+twice" are common enough across all three lines that their DP-assigned top meaning essentially never happens
+to coincide with the specific 1-3 words left in a given held-out line's own fragment, whether the pairing is
+true or scrambled.)
+
+**Verdict: CONTROL BELOW GATE, and additionally not the brief's leave-one-block-out design at all** (only one
+block had any usable gloss). Per the brief ("Only if the control meets its gate"), step 4 (`decode.json`,
+`key.tsv`, `specs/fr3151-noailles-1558.json`, `tools/judge_plaintext.py`) was **not run** — there is no
+control-backed group-level key to apply, and forcing a decode without one would be exactly the kind of
+uncontrolled reading rule 3 exists to prevent. This mirrors `fr3625-lauriere-1593`'s NX-LAU result the same
+morning (0.200 vs 0.60 gate, true pairing not separated from its own shuffle mean of 0.085) with an even
+weaker starting position: Lauriere had an independently published 12-value ground-truth table across 7 runs;
+Noailles has no prior key at all and legible gloss text on only one of its three blocks.
+
+### 5. What this job establishes and what it does not
+
+Established, reproducible from files in this folder: the corrected 3/3/7-line block structure; two blind
+Sonnet transcription passes per block with their reconciled agreement figures (diagnostic, not a reading);
+independent reads of all three marginal glosses with a disagreement flagged against the one existing
+secondhand citation (gloss1 line 3, "iustice" vs "affaires"); a leave-one-line-out self-consistency control
+on the one block with any usable gloss, tied with its own shuffle floor at 0.000.
+
+Not established: any group-level cipher key from this gloss (the data does not support one at the
+confidence this job's own gate requires); a full transcription of any block (all three gates well under the
+usual 80% settling bar); which specific gloss3 fragment belongs to which specific cipher3 line (visual
+inference only). Status stays `open` (rule 5: this is neither a control-backed negative covering the whole
+target's ladder — cryptanalysis without the gloss has not been tried at all — nor a margin that would make it
+`partial`).
+
+### 6. Next step
+
+Not a next step for this job (brief: transcribe, align, gate, stop). For a future pass on this target: (a) a
+higher-contrast or raking-light capture of the inner margin specifically (both f60r glosses and f60v's would
+benefit — the binding-cut text is the bottleneck, not the transcription method) would do more than further
+transcription passes at this image quality, matching `fr3151-seure-1558/NOTES.md`'s own "needs a different
+capture" conclusion on the neighbouring item in this recueil; (b) a plain cryptanalytic attempt on the ~200
+transcribed-but-unsettled signs (homophonic/nomenclator family, matched control, per rule 3) is untried and
+does not depend on the gloss at all — the transcription drafts in `align/ciphertext_draft_block{1,2,3}.tsv`
+are a starting point for it, with the caveat that they are themselves only ~45% agreed and would need
+resettling first.
+
+Files: `images/crops/**` (line crops, debug overlays, sign_legend.md), `images/margin_gloss{1,2,3}_zoom.jpg`,
+`align/**` (pass A/B TSVs per block, reconciler outputs per block, gloss_read_subagent.md, control_3151.py).
+Hosts: gallica.bnf.fr 2 (1 info.json probe, 1 native region fetch, 1 connection-reset retried once). Subagents:
+7 (2 blind transcription passes x 3 blocks + 1 combined gloss read), all Sonnet, one exceeded the usual
+per-call budget (block2 pass B, noted in step 2) — flagged for the lane orchestrator, not itself a finding.
