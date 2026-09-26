@@ -435,3 +435,43 @@ under a different handle, since this one is confirmed to be the 2016 master's-th
 
 Requests this job: roderic.uv.es 3 (handle page, bitstream download, full-item metadata page), each
 paced by processing time, no more than one request in flight at a time, descriptive UA.
+
+## NX-UNBLOCK (26 Sept 2026): a new, closely on-topic 2024 publication found
+
+Per CLAUDE.md's NX-UNBLOCK brief, tried a free route the earlier RODERIC pass had not tried: RODERIC's
+DSpace 7 REST discover-search API (`roderic.uv.es/server/api/discover/search/objects?query=...`), rather
+than the plain HTML `/simple-search` path (404s under the current DSpace 7 frontend). Query "Lope Hurtado
+cifra" surfaces a distinct, much more recent item than the 2016 master's thesis already read:
+
+**María José Bertomeu Masiá, "Una cifra para negociar el matrimonio de Margarita de Parma," in Manuel Heras
+García (ed.), *Italia y España. Una pasión intelectual*, vol. 1, Universidad de Salamanca, 2024, pp. 865-878.**
+(RODERIC handle `10550/108981`, item uuid `d043b69a-037c-48fb-96ff-edd6490a1a9e`.)
+
+Abstract (RODERIC record, in full): "En este capítulo, se estudia la identificación y análisis de una cifra
+utilizada por el emperador Carlos V y Lope Hurtado de Mendoza en las negociaciones del matrimonio de Margarita
+de Parma con Ottavio Farnese." -- i.e. this is a 2024 scholarly identification and analysis of *a* cipher
+between Charles V and Lope Hurtado de Mendoza, our exact correspondent pair, tied to the Margarita de
+Parma/Ottavio Farnese marriage negotiations (which places its cipher's likely date in the 1530s, since
+Margarita was born 1522 and married Ottavio Farnese in 1538 -- later than this target's 1522 letters, so
+probably a different, later cipher instance than R9634/R9646/R9649, but from the same correspondent pair and
+possibly the same office/key family as Tomokiyo's Ko.7/Ko.10).
+
+**Not freely readable**: `dc.rights.accessRights` on the record is `metadata only access` -- confirmed by
+fetching the bitstream download URL directly (`roderic.uv.es/bitstreams/2ed20a19-4a54-4dfb-9085-28e3b22e5fd7/download`),
+which returns an HTML page (370KB, DSpace Angular shell), not a PDF; the handle page carries a
+"Request a copy" link (`/items/d043b69a-037c-48fb-96ff-edd6490a1a9e/request-a-copy?bitstream=...`), DSpace's
+own author-mediated request feature -- a person fills in their name/email/reason and RODERIC emails the
+depositing author (Bertomeu Masiá, `m.jose.bertomeu@uv.es`, given in the record's provenance field) to release
+it or reply directly. No further route tried this pass (a request-a-copy form takes personal data, so it is a
+person's task, not a script's, per rule 9).
+
+**Why this matters more than a normal "check whether a longer 2017 deposit exists":** it doesn't confirm or
+rule out a key for R9634/R9646/R9649 itself (different date, possibly different cipher instance), but it is
+the single most specific, most recent, most directly on-topic secondary source found for this correspondent
+pair's cipher practice -- closer to the point than the 2016 master's thesis (which the prior pass confirmed
+does *not* cover Lope Hurtado at all) and worth reading before any further cryptanalysis attempt on R9634/
+R9646/R9649, since it may name or describe the same key family, office or classification the RAH sender used.
+See `REQUEST.md` for the request-a-copy draft.
+
+Requests this pass: roderic.uv.es 4 (discover-search API, pid/find redirect, handle page, one bitstream
+download attempt), each paced >=1.5s, descriptive UA. Status stays `partial`.
