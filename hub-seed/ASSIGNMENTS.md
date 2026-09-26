@@ -787,3 +787,7 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T08:14Z	session_01MGncH2nJEj9FQRnatv4qWY	retrospective q	done 2.08, ledgered D, retitled ARCHIVED, archived by 7g	RETRO-2026-09-26e.md; RETRO-APPLY-Q follows
 2026-09-26T08:15Z	session_01HdtE6CKSg61AwFoyoHu8gn	RETRO-APPLY-Q (Sonnet, cap 6)	apply RETRO-2026-09-26e.md proposals 1-4	brief 2026-09-26-parent-retro-apply-q.md; parent 7g
 2026-09-26T08:15Z	session_0167Uwemu8CfMzGaGRJJhx6W	LANE B9 orchestrator (Opus, cap 25)	breadth: malsburg pool wave, matignon 1h, hessen-1824 running_key, malsburg 509	brief 2026-09-26-lane-b9-orchestrator.md; parent 7g
+2026-09-26T08:18Z	session_0167Uwemu8CfMzGaGRJJhx6W	LANE B9 orchestrator (Opus, cap 25)	breadth, B8's successor	brief 2026-09-26-lane-b9-orchestrator.md; opened by parent 7g
+2026-09-26T08:18Z	session_01P664dMt8opanbux4TuHPHn	bMALG (Sonnet, cap 2)	malsburg glyph conventions	brief 2026-09-26-lane-b9-malg.md; LANE B9
+2026-09-26T08:18Z	session_0191zH9xnhLoMU7fxsasv8og	bMAT1H (Opus, cap 4)	matignon NEAR (1h) pre-registered gate	brief 2026-09-26-lane-b9-mat1h.md; LANE B9
+2026-09-26T08:18Z	session_01DjNdmE8PmwSrZpR63a3Ntd	bHCP3 (Sonnet, cap 3)	hessen-1824 running_key de19	brief 2026-09-26-lane-b9-hcp3.md; LANE B9
