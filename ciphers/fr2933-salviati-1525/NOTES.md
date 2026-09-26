@@ -1932,3 +1932,74 @@ Status stays `partial` (rule 5). The NEAR.md row is the orchestrator's to update
 **Not run / suggestions (one line each):** DSN2 V2 and DSN irregular at err=0.064 (about 15 min each at 24 restarts); DSN
 regular at 24 restarts x 3 target seeds; a family_run option to print each control's stream length, so control score/symbol
 stops being an approximation.
+
+## bSALR2: DSN regular at 24 restarts x 3 seeds, DSN2 V2 (26 Sept 2026, LANE B11)
+
+Worker bSALR2 (LANE B11, Sonnet, cap $4, box 75 min), 13:37-14:37 UTC. Brief `.claude/briefs/runs/2026-09-26-lane-b11-bSALR2.md`,
+finishing bSALR's job 1. Disk only, no hosts, no subagents, no images. **No reading; grades stay H0 C0 S0 M0 I0.** Same spec
+(pass-C, N=2839, K=236), same `tools/family_run.py --family syllabary --measured-error 0.064`, gate 0.6, it16 judge corpus. Each
+`family_run.py` call took 12-13 minutes real time (24 restarts x 3 control seeds + 1 target seed), matching the brief's "15-18
+min" estimate; a call is NOT sped up by requesting a later `--seed` -- `--seed N --seeds 3` runs control seeds N, N+1, N+2, so
+target seeds 1/2/3 share overlapping control seeds (1-3, 2-4, 3-5) rather than three independent 3-seed batteries. Target
+score/symbol below is the exact `score_per_symbol` field from each decode file's header (bSALR's own convention, confirmed by
+reproducing bSALR's V1/V3 numbers from their committed decode files); control score/symbol is still the same approximation
+bSALR used (control's raw score / (control N x stream/token ratio), ratio 1.323 with no boundary param, 1.597 with
+`boundary=1` -- reproduced from bSALR's own V3 file exactly, confirming the ratio is a property of `boundary`, not `marks`).
+Word hits: dsn_compare.py's 30-word list applied directly to each decode's body text (its `--prefix` matching does not fit
+this tool's `--param`-suffixed filenames), against 3 shuffles, same method as bSALR.
+
+| variant | seeds | control acc / mean | control score/symbol (approx) | TARGET score/symbol | judge (it) | word hits (real/shuffles) | verdict |
+|---|---|---|---|---|---|---|---|
+| DSN regular, 24 restarts | target seed 1, ctrl 1/2/3 | 0.546/0.864/0.921 (0.777) | -2.755 / -2.509 / -2.404 | **-2.743** | FAIL -1.349 | 1 (0/0/0) | target sits *above* (better than) the collapsed seed-1 control (-2.755) but well below seeds 2/3 |
+| DSN regular, 24 restarts | target seed 2, ctrl 2/3/4 | 0.864/0.921/0.945 (0.910) | -2.509 / -2.404 / -2.384 | **-2.727** | FAIL -1.31 | 0 (0/0/0) | target below every seed in this battery |
+| DSN regular, 24 restarts | target seed 3, ctrl 3/4/5 | 0.921/0.945/0.919 (0.928) | -2.404 / -2.384 / -2.436 | **-2.732** | FAIL -1.32 | 0 (0/0/0) | target below every seed in this battery |
+| DSN2 V2 marks=mixed, boundary=1, 24 restarts | target seed 1, ctrl 1/2/3 | 0.872/0.890/0.874 (0.879) | -2.617 / -2.631 / -2.535 | **-3.333** | FAIL -1.478 | 0 (0/0/0) | target 0.70-0.80/symbol below every control seed -- the widest gap of any syllabary variant run so far |
+| DSN irregular (assign=irregular) | not run | - | - | - | - | - | not run: 57 of 75 min elapsed (76%) before this unit could start, and a ~13-15 min run would cross the 80% line (60 min); still a non-test at 6.4% (control read 18-85% at 24 restarts at 5% error, R8 DSN) |
+
+**Reading of the numbers.**
+(i) DSN regular settles bSALR's point (ii): all three target seeds at 24 restarts converge tightly to -2.727..-2.743/symbol
+(a 0.016 spread, against a 0.13 spread across the three battery means), so the -2.753 single-seed result at 6 restarts was
+not a fluke of that one run -- 24 restarts and three independent target seeds land in the same place. This is NOT, however,
+a clean control-backed negative in the same way V1/V3 are: the control's own seed-1 (used in every one of my three batteries
+except the last) reads only 0.546-0.921 depending on which other seeds share its battery, is the weakest of seeds 1-5 by a
+wide margin (seeds 2-5 all read 86-95%), and its own per-symbol score (-2.755) sits *worse* than the target's (-2.743) in
+the first battery. The solver has a real per-seed instability that is not restart-count-limited (it persists 15%->55% from 6
+to 24 restarts, still well below its siblings), and the target's score sits closer to that instability's range than to the
+strong seeds' range. Mean-gate arithmetic (0.777, 0.910, 0.928, all >=0.6) still passes, so this stays a reportable
+control-backed negative on the mean gate, but the same caveat bSALR flagged for the 6-restart run (a control that cannot
+reliably solve its own design at every seed says less about the target than a control that reads cleanly everywhere) still
+applies at 24 restarts, just less severely.
+(ii) DSN2 V2 is the strongest negative in the whole R8/bSALR/bSALR2 run: 0.70-0.80/symbol below every control seed, roughly
+double the gap V1 (0.46) and V3 (0.33) showed at the same error level, and its judge FAIL (-1.478) is the worst of any
+variant here. No shuffle-target run: the brief runs one only if the target's judge PASSes or its score/symbol reaches the
+control's range, and this target is the furthest from either.
+(iii) Every decode across both units has 0-1 Italian word hits, matching its own shuffles (0-1) -- no signal above chance
+anywhere.
+(iv) Same conditions as bSALR's (iv): the 6.4% figure is bSALC's model-based estimate, not a measured two-pass disagreement.
+
+**Verdict on R8 families at the measured error (26 Sept 2026, combining bSALR + bSALR2).** DSN2 V1 (marks=mixed), DSN2 V3
+(bases=8+boundary) and DSN2 V2 (marks=mixed+boundary) are now control-backed negatives at 6.4%, all with the control clearing
+the gate cleanly across three independent seeds (0.809-0.958 range) and the target 0.33-0.80/symbol below every control
+seed -- these three variants are settled for this design at this transcription-error estimate. DSN regular is a weaker
+control-backed negative: the mean gate is met on every one of five distinct control seeds pooled (0.546, 0.864, 0.921, 0.945,
+0.919; mean 0.839), but seed 1 alone is a persistent outlier and the target's score sits inside that outlier's range rather
+than clearly below the family's typical recovery -- reportable, but flagged for a fresh seed-stability check (run DSN regular
+control-only at seeds 6-10, gate the mean only, drop seed 1 if it stays the outlier) before it is cited with the same
+confidence as V1/V2/V3. DSN irregular remains a non-test at 6.4% (not run, box exhausted); R8's own numbers at 5% (18-85% at
+24 restarts) suggest it would need a headroom check before any run is meaningful regardless. Status stays `partial`
+(rule 5); the NEAR.md row is the orchestrator's to update, not this worker's.
+
+Files: `HYPOTHESES.md` (4 new rows, label "LANE B11 bSALR2"), `NOTES.md` (this section),
+`families/syllabary-{1,2,3}-err=0.064-laneb11bsalr2dsn.txt`, `families/syllabary-1-err=0.064,marks=mixed,boundary=1-laneb11bsalr2dsn.txt`.
+Requests: none (disk only). Regenerate (each reproduces its row/decode byte-for-byte, family_run.py seeds its RNGs):
+```
+python3 tools/family_run.py specs/fr2933-salviati-1525.json --family syllabary --measured-error 0.064 --param err=0.064 \
+        --restarts 24 --seeds 3 --seed 1 --gate 0.6 --label "LANE B11 bSALR2: DSN regular 24 restarts, target seed 1, measured err"
+python3 tools/family_run.py specs/fr2933-salviati-1525.json --family syllabary --measured-error 0.064 --param err=0.064 \
+        --restarts 24 --seeds 3 --seed 2 --gate 0.6 --label "LANE B11 bSALR2: DSN regular 24 restarts, target seed 2, measured err"
+python3 tools/family_run.py specs/fr2933-salviati-1525.json --family syllabary --measured-error 0.064 --param err=0.064 \
+        --restarts 24 --seeds 3 --seed 3 --gate 0.6 --label "LANE B11 bSALR2: DSN regular 24 restarts, target seed 3, measured err"
+python3 tools/family_run.py specs/fr2933-salviati-1525.json --family syllabary --measured-error 0.064 --param err=0.064 \
+        --param marks=mixed --param boundary=1 --restarts 24 --seeds 3 --seed 1 --gate 0.6 \
+        --label "LANE B11 bSALR2: DSN2 V2 marks=mixed boundary=1, measured err"
+```
