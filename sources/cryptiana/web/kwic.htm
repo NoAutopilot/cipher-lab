@@ -1,0 +1,82 @@
+<HTML>
+<HEAD>
+<TITLE>
+Creating a KWIC Index with Microsoft Excel
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="KWIC Index, Cipher, Code">
+<link rel=stylesheet type=text/css href=decode2.css>
+</HEAD>
+<style type="text/css">
+<!--
+.copy { 
+  background-color: #ffff66;
+  line-height:14pt;
+}
+-->
+</style>
+
+<BODY>
+<H1>Creating a KWIC Index with Microsoft Excel</H1>
+<H3>KWIC</H3>
+<P>KWIC stands for "key word in context." It is a convenient format for listing occurrences of a specified keyword, with each line including text around each instance of the keyword. Listing of the lines with the keyword aligned vertically facilitates browsing the typical context in which the keyword occurs. It is a standard technique in text analysis and there are tools to create such a KWIC index.</P>
+<P>Similar techniques are useful in codebreaking, in which it is often desired to examine what symbols often follow or precede a given code/cipher group occurs. For such purposes, sophisticated features (e.g., stemming, lemmatization) of KWIC tools for linguists are not required. (There appear to be many tools for creating a KWIC concordance available online.)</P>
+
+<H3>Creating a KWIC Index with Microsoft Excel</H3>
+<P>A simple KWIC listing can be created by using a spreadsheet application such as Microsoft Excel or OpenOffice Calc. The following demonstrates how to create a KIWC listing with Microsoft Excel.</P>
+<P>(1) Enter the text to be analyzed in Cell C1.</P>
+<DIV style="float:right; width:830px;">
+<img src="kwic.png" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+</DIV>
+<P>(2) Enter the keyword ("60 20" in this example) in Cell C2. (It is safe to set the cell category to "Text" under the "Formatting Cells" dialog box.)</P>
+<P>(3) Enter the length of text that should be displayed before and after the keyword ("70" for both in this example) in Cells C3 and C4.</P>
+<P>(4) Enter "<span class="copy">=FIND($C$2,$C$1,1)</span>" in Cell A8. This finds the location of the first occurrence of the keyword ($C$2) in the given text ($C$1).</P>
+<P>(5) Enter "<span class="copy">=FIND($C$2,$C$1,$A8+1)</span>" in Cell A9. This finds the location of the next occurrence after the previous occurrence ($A8) of the keyword ($C$2) in the given text ($C$1).</P>
+<P>(6) Copy Cell A9 to the cells below in Column A as far as the number of occurrences of the keyword. (The exact number is not required. One may just assume some seemingly large enough number.)</P>
+<P>(7) Enter "<span class="copy">=MID($C$1,$A8,LEN($C$2))</span>" in Cell D8. Make sure this cell is on the same line as (4). This extracts, from the text ($C$1), a string of the keyword length (LEN($C$2)) starting at the position found in (4). (Actually, the result is the same if one simply enters "=$C$2".)</P>
+<P>(8) Enter "<span class="copy">=MID($C$1,$A8+LEN($C$2),$C$4)</span>" in Cell E8 (i.e., to the right of (7)). This extracts, from the text ($C$1), a string of the length specified in (3) ($C$4) starting at the end of the keyword ($A8+LEN($C$2)).</P>
+<P>(9) Enter "=MID($C$1,$A8-$C$3,$C$3)" in Cell C8 (i.e., to the left of (7)). This extracts, from the text ($C$1), a string of the length specified in (3) ($C$3) starting the keyword length before the beginning of the keyword ($A8-$C$3).</P>
+<P><b>Correction:</b> The above should be changed to "<span class="copy">=MID($C$1,$A8-MIN($C$3,$A8-1),MIN($C$3,$A8-1))</span>" because otherwise a keyword occurring too early causes an error in the starting position. The MIN function ensures the starting position does not occur before the beginning of the string.</P>
+<P>(10) Copy C8-D8-E8 to the lines below.</P>
+<P>The image above shows a KWIC listing thus obtained.</P>
+
+<H3>Sorting a KWIC Index</H3>
+<P>Sorting the above listing would corrupt the index. The list should be pasted as values (e.g., in a separate sheet) before sorting. In the following, it is assumed that the KWIC listing obtained above has been pasted in columns F, G, and H, starting from the row 3 (see the image below).</P>
+<P>Sorting by the subsequent symbol is straightforward.</P>
+<P>In order to sort by the preceding symbol, some preprocessing is required. In the following, it is assumed that the original ciphertext does not include "*". (Further, it is assumed to have been "cleaned" by collapsing successive spaces into a single space.)</P>
+<P>(1) Find the location of the symbol (figure) preceding the keyword and put it in Cell A3. This is achieved by entering</P>
+<P><span class="copy">=FIND("*", SUBSTITUTE($F3, " ", "*", LEN($F3) - LEN(SUBSTITUTE($F3, " ", ""))-1))</span></P>
+<P>in Cell A3. This formula extracts, from the context before the keyword ($F3), text after the second last space (" "). (As a matter of course, the last space is at the end of $F3.) More specifically, it calculates the number of spaces (" ") in $F3 by comparing its length (LEN($F3)) and the length with every space removed (LEN(SUBSTITUTE($F3, " ", ""))). Then, the second last space (" ") in $F3 is provisionally replaced with an asterisk ("*"). (If "-1" were omitted, the last space would be replaced.) Then, the FIND function finds the location of the second last space.</P>
+<DIV style="float:right; width:830px;">
+<img src="kwic2.png" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+</DIV>
+<P>(2) Extract text from the second last space (A3 obtained in (1)) and put it in B3. This would be the (first) sort key. This can be done by entering "<span class="copy">=MID($F3,$A3,LEN($F3)-$A3)</span>" in B3.</P>
+<P>(3) (Optional) Find the beginning of the two symbols preceding the keyword and put it in Cell C3. This is similar to (1) but "-2" is used instead of "-1". That is, enter "<span class="copy">=FIND("*", SUBSTITUTE($F3, " ", "*", LEN($F3) - LEN(SUBSTITUTE($F3, " ", ""))-2))</span>" in C3.</P>
+<P>(4) (Optional) Extract text from the third last space (D3 obtained in (3)) and put it in Cell D3. Or, enter "<span class="copy">=MID($F3,$C3,LEN($F3)-$C3)</span>" in D3. This would be the second sort key.</P>
+<P>(5) Copy A3, B3 (and optionally C3, D3) into the cells below.</P>
+<P>(6) Now, the sort key in Column B can be used as the sort key in sorting the list. (Optionally, the sort key in Column D may also be used as the second sort key.)</P>
+<br>
+
+<br>
+<br>
+<font size="2">
+&COPY;2018 S.Tomokiyo<br>
+First posted on 23 March 2018. Last modified on 22 May 2018.<br>
+<A HREF="crypto.htm">Cryptiana: Articles on Historical Cryptography</A><BR>
+</font>
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>

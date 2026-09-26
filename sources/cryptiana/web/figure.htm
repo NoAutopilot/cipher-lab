@@ -1,0 +1,438 @@
+<HTML>
+<HEAD>
+<TITLE>
+数字暗号とコード・コンデンサー――コンピューター以前の情報圧縮
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="数字暗号, figure code">
+<link rel=stylesheet type=text/css href=decode2.css>
+</HEAD>
+<style type="text/css">
+<!--
+.regulation { color:#0000A0;}
+.encipher { color:#257117;}
+.numeral { color:#008080;}
+.twoletter { color:#800080;}
+.mutilation { color:#8c001a;}
+.checking { color:#602007;}
+-->
+</style>
+
+<H1>数字暗号とコード・コンデンサー――コンピューター以前の情報圧縮</H1>
+<!--Numerical Codes, Figure Codes, and Code Condensers-->
+
+
+<P>電信が遠隔通信の主役であった時代，単語や句，さらには文を短いコードで置き換えて伝送する電信コードが用いられた．よくできた電信コードを熟練した担当者が使えば費用節減の効果は大きく，通信量の多い企業にとっては専用のコード係を雇うだけの価値があった．その意味では句や文を登録した電信コードブックはみな情報圧縮の効果があるといえる（現代のコンピューター用の情報圧縮（エントロピー符号化）でも，頻出するパターンをリストに登録しておいて短いパターンで表わすという発想は生かされている）．商取引ではさらに，品名・数量・出荷時期などさまざまな情報を一つの数字で表わし，英字コードに直して送信するいわゆる「数字暗号」（figure code）が考案された．時期・地域にもよるがおおむね暗号電報は英字10字までは１語としてカウントされていたので（詳細は<A HREF="telegraph1.htm">別稿（英文）</A>参照），英字10字にいかに効率的に情報を詰め込むかに工夫がこらされた．まさに電信時代の情報圧縮の最たるものといえるだろう．</P>
+<P>典型的な手順は次のようになる．</P>
+<P>１．<b>エンコード段階</b>．数字の各桁でさまざまな情報を表わす．たとえば，１００個の品名のリストに00～99の番号が付けられた表を参照して第１，２桁の数字を決め，１００通りの数量のリストを見て第３，４桁の数字を決め，出荷時期の表を見て第５桁を決めるなどとしていく．</P>
+<P>２．<b>数字変換段階</b>．数字（１０桁，１２桁，１３桁など）を英字１０字のコード語に変換する．</P>
+<P>さまざまな情報をエンコードした数字をわざわざ英字に変換するのには二つの理由がある．国際電信規則では，意味のない英数字の羅列は「サイファー」（「秘辞」・「秘語」）とみなされ，５字で１語と数えられることになっていた．これに対して「単語」である「コード」（「隠語」）は１０字まで認められていたので，英字のほうが１語に詰め込める情報量が多くなる．さらに，数字を伝送する場合，１字でも違えば全く違う数字になってしまうのに対し，英字コードなら送信エラーがあれば登録されていない文字列になって，エラーが発見できる可能性がある．字数当たりの情報量の多い英字コードを使うことで，誤り検出・誤り訂正能力が高いコードを作成する余地があるのである．</P>
+<br>
+<P>目次</P>
+<P><A HREF="#SEC1">数字を使わない初期のエンコード</A></P>
+<P><A HREF="#SEC2">数字によるエンコード</A></P>
+<P><A HREF="#SEC3">数字から英字への変換</A></P>
+<P><A HREF="#SEC4">コード・コンデンサー</A></P>
+<P><A HREF="#SEC5">１０桁までの数字変換表</A></P>
+<P><A HREF="#SEC6">１２桁数字暗号</A></P>
+<P><A HREF="#SEC7">１３桁数字暗号</A></P>
+<P><A HREF="#SEC8">１４桁数字暗号</A></P>
+<P><A HREF="#SEC9">用語について</A></P>
+
+<A NAME="SEC1"></A>
+<H2>数字を使わない初期のエンコード</H2>
+<P>数字の各桁でそれぞれ別種の情報を表わすという発想は単純だが，その方式が普及する前には表を使って複数の情報に英字コードを割り当てるという方式が使われていた．</P>
+
+<P>Meyer's Cotton Telegraph Code (1871)</P>
+<P>Private Telegraphic Code (1871, New Orleans and Liverpool)</P>
+<P>Watts's Telegraphic Cypher (1872, Liverpool)</P>
+<img src="figure2.jpg" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+
+<P>表現すべき情報の一部が変わるたびに全く異なる単語を割り当てるのはまどろっこしい．そこで，接頭辞や接尾辞で特定の意味を表わすもの：</P>
+<P>Electro-Magnetic Telegraph Vocabulary, or, condensing correspondent, designed to communicate commercial and other general intelligence, in abbreviated form and at small expense (1846, Baltimore) by John Wills</P>
+<P>Parker's Combination Telegraph Code (1880) by Thomas Parker</P>
+<P>また，音節に情報を割り当ててそれを組み合わせて「単語」を作るもの：</P>
+<P>Telegraph Cypher for Transmitting Telegrams relating to Foreign News, Stocks, Gold, Cotton, Financial Matters, etc., in a Commercial Form (1867) by Martin K. Thompson</P>
+<P>もあった．</P>
+<img src="figure3.jpg" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+
+<A NAME="SEC2"></A>
+<H2>数字によるエンコード</H2>
+<P>1880年ごろから，数字の各桁に意味をもたせるという発想が登場した．数字によるエンコードをしてから数字を英字に変換するという二段階に分けることで，コードの作成・使用が簡単になる．特に，表現すべき情報は使用者によってさまざまなので，その部分を切り離すことで，使用者がその部分だけ独自に作成できる．（逆に，コード出版者は数字変換に特化した汎用性の高いコードブックを作成することができる．）</P>
+
+<H3>Ager (1880)</H3>
+<P>各桁に意味をもたせるエンコードの初期の例としては，AgerのThe Telegram Code (1880)（これは第３版）のp.ivが，語句を英字コードで表わすコードブックで各エントリーに付された５桁数字を使って数量，価格，品質などの取引情報を一語で表わすことができることを記載している．</P>
+<P>挙げられている例では，Mutualという英字コード（本来はWe recommend purchase of -- as crop is injuredというフレーズを表わすもの）には29795という番号が付されており，この数字のほうを使って，たとえば2が「２１日以内」，9が「グラスゴー宛」，79が「１バレル当たり16シリング9ペンス」，5が注文番号を表わすようにする．具体的に価格などを数字に割り当てるためには，空欄の表が設けられている．</P>
+
+<H3>Ager (1879?)</H3>
+<P>Agerの同様のものが上田貢太郎『外国為替と電信暗号』（1895）で紹介されている．（おそらくAger's Standard Telegram Code of 100,000 Words (1879)とその補遺を指すものと思われるが筆者未見．）</P>
+<P>それによれば，５桁数字の最初の２桁で商品を表わし，後半の３桁は数量・船積時期・代価の組み合わせを表わす．数量・船積時期・代価は，それぞれ別の表を用いて1～5，1～5，1～25の数字に直し，それを組み合わせ表に従って３桁数字に変換する．この組み合わせ表は縦軸に数量・船積時期の５×５＝２５通りの組み合わせ，横軸に２５通りの代価を取って６２５通りの組み合わせに番号を割り当てたものである（表は上田p.41～47）．</P>
+<P>単純に考えると5×5×25＝625通りからなる３種の情報の組み合わせを表わすには5通りの数量に１桁，5通りの船積時期に１桁，25通りの代価に２桁で４桁の数字が必要になりそうだが，４つの表を組み合わせて使うことで一つの３桁数字でエンコードしている．</P>
+<P>こうして取引情報をエンコードした５桁数字を"00000 aafsch", "00001 aakste", "00002 aalbes", ..., "00252 Abbaruffo", ..., "99999 Iravail"のように割り当てたコード表を使って英字の単語に変換する．</P>
+
+<A NAME="SEC3"></A>
+<H2>数字から英字への変換</H2>
+<H3>既存のコードブックの利用</H3>
+<P>このような方式では数字を英字コードに対応付ける表が必要になる．Agerに限らず，多くのコードブックでは英字コードに連番が付されていたので，それを利用して英字コードを使って数字を表わすという発想は電信コード登場後まもないころからあった（<A HREF="telegraph2.htm#SEC13b">別稿（英文）</A>参照）．数字を使ってさまざまな情報をエンコードできることが認識されると，語句のコード化はさておいて，既存のコードブックの数字と英字コードの対応だけを数字から英字コードへの変換に利用することも広まっていった．数字のエンコードのために既存のコードブックの対応表を利用することは，Macgregor's Variation Tables for Code Telegraphing (1881)などで紹介されている．</P>
+
+<H3>数字変換用のコードブック</H3>
+<P>数字を英字コードに変換するためだけのコードブックも登場した．Whitelawによる一連のコードブックはこのように数字と英字コードを対応させるためだけのものである．</P>
+<P>1880年代には５桁数字を英字コードに変換する"Exchange" Codeとか"Nonpareil" Codeなども現われた（<A HREF="telegraph2.htm#SEC11">別稿（英文）</A>参照）．</P>
+<P>数字を英字コードに変換するといっても，25,000 English Words (1879)のように単純に英単語のコードを羅列しただけのものもあれば，Latin Combination Telegraph Code of 10,000 Cypher Words (1908)のようにラテン語の語幹と語尾の組み合わせを使って表わすものもあった．</P>
+<img src="jtelegraph1908imai.jpg" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+
+<H3>変換規則（変換表）</H3>
+<P>現実の単語を使う以上，語幹と語尾の組み合わせを使うなどの工夫をしても，基本的には単語を羅列にならざるをえない．だが，規則によって数字を英字に変換するようにすれば，極端な話，一つの表だけで用は足りる．</P>
+<P>The Westinghouse Code (1902)は１０桁数字を１０字の「単語」に変換する規則を掲載している．具体的には，次のような表を利用して２数字ごとに母音と子音を含む２英字に変換するのである．</P>
+<img src="figure4.jpg" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+
+<!--<TABLE>
+<TR><TD></TD><TD>A</TD><TD>E</TD><TD>I</TD><TD>O</TD><TD>U</TD><TD>Y</TD></TR>
+<TR><TD>B</TD><TD>00</TD><TD>17</TD><TD>34</TD><TD>51</TD><TD>68</TD><TD>84</TD></TR>
+<TR><TD>C</TD><TD>01</TD><TD>18</TD><TD>35</TD><TD>52</TD><TD>69</TD><TD>85</TD></TR>
+<TR><TD>D</TD><TD>02</TD><TD>19</TD><TD>36</TD><TD>53</TD><TD>70</TD><TD>86</TD></TR>
+<TR><TD>F</TD><TD>03</TD><TD>20</TD><TD>37</TD><TD>54</TD><TD>71</TD><TD>87</TD></TR>
+<TR><TD COLSPAN="7">…</TD></TR>
+</TABLE>
+-->
+<P>ただし，当時の国際電信規則では，コード語は英語，フランス語など８か国語のいずれかの本物の単語でなければならないという決まりがあったので，子音＋母音の組み合わせを適宜母音＋子音に入れ換えたり，別途用意されている代替文字を使うなどして単語らしく見えるようにすることを提案している．</P>
+<DIV class="kakomi"><TT>
+例：２つの５桁数字21665 27010を１０字の英字コードに変換する．<br>
+2166527010 → 21 66 52 70 10<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;　 eg vo co ud an → egvocoudan
+</TT></DIV>
+<br>
+<P>１９０３年の国際電信規則改訂（１９０４年施行）により，コード語が本物の単語でなければならないという制約が取り払われ，発音可能であればよいことになった．これにより，英字コード語を機械的に生成することが公式に許されることになった．（以後，人工的に作った英字５字のコードを２語をつなげて１０字として送信することによって，電信料金を半分にすることが主流となる．このへんのいきさつについては<A HREF="telegraph1.htm">別稿（英文）</A>参照．）</P>
+<br>
+<P>China Inland Mission Private Telegraph Code (1907)も１０桁数字を１０字の「単語」に変換する規則を掲載している．次のような表を利用して２数字ごとに母音と子音を含む２英字に変換する．凡例では，ランダムに配された子音の最初の３文字を取ってGYX表と称されている．</P>
+<img src="figure5.jpg" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+<P>孫文を支援した日本人，山田純三郎の同様の二つのコードコンデンサーを<A HREF="chinesecrypto.htm">別稿</A>で紹介した．</P>
+<P>もはやコード語が本物の単語である必要はないので，子音‐母音の順を母音‐子音の順に変えたものは漢字コードを表わすものとしている．漢字を４桁数字で表わすコードはすでにあったので（<A HREF="chinese.htm">別稿</A>参照），８文字コードで漢字２字を，あるいは１０文字コード２語で漢字５字を表わすことができる．</P>
+<br>
+<P>同じような２桁ごとに子音＋母音の２字に変換する表は中川(1916)p.733にも掲載されているが，やはり「単語らしく見える」ようにする工夫は言及されていない．子音・母音を適宜入れ換えて単語らしく見せかける必要もなくなったので，むしろ子音＋母音か母音＋子音の別を使ってエラーチェックをすることも提案されている <span class="note">(中川， Acme)</span>．これは現代でいう情報埋め込みとかデジタル透かしといったものに相当する発想といえる．</P>
+
+<A NAME="SEC4"></A>
+<H2>コード・コンデンサー</H2>
+<P>上記のWestinghouseの表はCode Condenserと称されている．実はこれは数字を介することによって二つのコード語を一語に凝縮して電信料金を半分にするためのものだった．後年の５字コードを見慣れていると二つのコード語をつなげて１０字の１語にするのは自明のことのように思えるが，当時のコード語はKabache, Kabakos, ... など不定字数の「単語」だったので，これを１語にするには特別な工夫が必要だったのである．具体的には，各コード語には５桁の数字が付与されているので，２つ合わせて１０桁とし，それをCode Condenserの表によって英字１０字のコードにすれば，１語として送信できるのである．</P>
+<P>下記で紹介するCosmos Code CondenserやAmerican Condenserもそのようなコード・コンデンサーである．筆者は書名しか見たことがないがPieron's Code Condenser, 50% Economy without changing Codesも同様のものだろう．</P>
+<P>ほかに次のような書名が見られる．</P>
+<P>Premier Code Condenser (1907) by William H. Hawke</P>
+<P>"Two-in-one" code condenser : a standard system for rapidly coding two code phrases in one word with perfect safety... : for use with general or private codes in English, French, German, Dutch, Spanish, Portuguese, Italian, or other language : indispensable to bankers... &c. (1910)</P>
+<P>Composite code condenser. 12 figures in 10 letters or 11 figures in 9 letters (1919) by William George Gerlach</P>
+<P>The Wallaby Code Condenser (1921, Melbourne) by W. E. Rockingham</P>
+
+<H3>米国特許第901,957号（Matthew Bain Dickie, 1908）</H3>
+<P>（<A HREF="http://www.google.com/patents/US901957">Google</A>）回転円板を使って６桁数字（0～199999）を英字５字に変換することによって２つの英字コードを英字１０字で表わせるcode condenserが米国で特許されている．変換の内容は第５～６桁を英字２字に，第３～４桁を英字２字に，第１～２桁（0-19）を英字１字に対応付ける３つの環を回すことによるものである．</P>
+
+<H3>The Acme code condenser (14 figure cyper code) (1911, Kobe) by Hanso Tarao</H3>
+<P>著者・多羅尾範三（京都在住）は1913年に下記の１３桁数字暗号を発表したAlfred H. Taraoと同一人物．</P>
+<P>"14 figure"と銘打ってはいるが，上７桁・下７桁の上限がそれぞれ1249999であり，たとえば下７桁が1250000以上の１４桁数字は変換できない．メインタイトルに「コード・コンデンサー」とあるように，1250000個までの連番が付された任意のコードブックの二つのコード語を１つの１０字コードで表わすためのものである（このような「コンデンサー」で１０桁までのものはBentleyの900 Million Edition （2999929999まで）などすでにいろいろあった）．</P>
+<P>Acmeといえば後年のA.C.Meisenbachによるコードブックが有名だが，これは「絶頂，最高傑作」のような意味のギリシア語由来の単語で，他にもM'Kay's 'Acme' Stock Exchange Signal Code (1886, Dublin)などのタイトルで使われていた．</P>
+<P>基本的には７桁数字の上４桁0000～1249を英字２字に，下３桁000～999を英字２字に変換するのだが，与えられている表を見ると000～249しかない．実は上４桁，下３桁とも250で割った余りのみを表にしたがって英字２字に変換する．つまり，上４桁ならば000, 250, 500, 750, 1000のいずれかを，下３桁ならば000, 250, 500, 750のいずれかを引いた値を表わしていることになるが，何を引いたかの組み合わせ（5×4＝20通り）を英字１字（５字コードの第３字とする）で表わし，これをインデックスと称している．</P>
+<DIV class="kakomi"><TT>
+12670<br>
+1+2+6+7+0＝16→(１位をチェック数字)6<br>
+126706&nbsp;→&nbsp;&nbsp;&nbsp;126&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;706<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(000+126)&nbsp;(500+206)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→LODVU<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(000と500から)インデックスD<br>
+</TT></DIV>
+<P>復号の際には，５字コードの最初の２字と最後の２字からそれぞれ000～249の数字を復元し，インデックスを使ってそれぞれに何を足せばいいかを判別することになる．</P>
+<P>著者は特徴として，(1) JとYを母音として扱っていること．(2)インデックスの使用．(3)インデックスの割り当てを変更することで秘密のコードにできること．(4)１４桁への対応を挙げている．</P>
+
+<H3>Cosmos Code Condenser, A 13 Figure Code, by which two words of any code book, which contains up to 280000 words, are condensed into a combination of 10 letters of alphabet, which is pronounceable (1913, Kobe) invented by Alfred H. Tarao</H3>
+<P>この著者は上記の多羅尾範三と同一人物．</P>
+<P>これは13 Figure Codeと銘打ってはいるが，279999279999までの数字（前半・後半がそれぞれ279999までという意味）を１０字の英字コードで表わすことによって，280000個までの連番が付された任意のコードブックの二つのコード語を１つの１０字コードで表わす（「コンデンサー」）ためのものである．そのために使う「インデックス」は著者は自分の発明だとしている．</P>
+<P>前半と後半の６桁はそれぞれ，上４桁と下２桁に分解され，上４桁はTable Aによって英字２字に変換し，下２桁はTable Bによって英字２字に変換する．ただし，上４桁のほうは700で割った余り（000-699）のみを考慮する．これで前半から第一群，第二群，後半から第四群，第五群の英字２字対が決まる．そして前半・後半の上４桁で余りを取ることによって無視されたのが000, 700, 1400, 2100のいずれであるかの組み合わせにさらにチェック数字（全桁の和の一の位）を加味することによってTable Cから英字２字の第三群が決まる．</P>
+<DIV class="kakomi"><TT>
+&nbsp;&nbsp;&nbsp;(チェック数字：9+9+9+9+9+3+3+3+3+3＝60 → 0)<br>
+99999 33333 → &nbsp;&nbsp;&nbsp;999&nbsp;&nbsp;&nbsp;99&nbsp;&nbsp;&nbsp;&nbsp;333&nbsp;&nbsp;33<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(700+299)&nbsp;&nbsp;&nbsp;&nbsp;(000+333)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;je&nbsp;&nbsp;nn&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ku&nbsp;&nbsp;rz → jennerkurz<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(700と000とチェック数字0から)&nbsp;&nbsp;&nbsp;&nbsp;er<br>
+</TT></DIV>
+
+<A NAME="SEC5"></A>
+<H2>１０桁までの数字変換表</H2>
+<H3>1904年の出版物（Whitelaw他）</H3>
+<P>1904年施行の規則改定に対するコード作成者の反応は早かった．数字変換に限っても１９０４年の段階で早くもいくつかのコードが出版されている．</P>
+<P>WhitelawのTelegraph Cyphers, Pentasyllabic words representing two series of 10-figure groups from 0,000,000,000 to 9,999,999,999 [1904]はおそらく上記のWestinghouseのように１０桁の数字を子音＋母音からなる音節５つ（「５音節」）で表わして１０文字の語に変換するものだと思われる．</P>
+<P>同じ1904年には</P>
+<P>７桁：<i>The Economical Telegram Code Vocabulary of 10,000,000 inconvertible cipher words, each of ten letters, numbered consecutively from 0000000 to 9999999. With terminational order</i> (Bombay)</P>
+<P>８桁：<i>Beith's 10-Letter Combinations (8 Figures)</i> (Manchester),</P>
+<P>９桁：<i>McNicol's Nine Figure Code, or 1,100 Millions Pronounceable Words</i> (Manchester),</P>
+<P>といったものも出版されており，書名からすると同様のものと思われる．</P>
+
+<H3>Practical Examples for Compiling a Private Code, in conjunction with Any 10 or 12 Figure Cypher Code (1912) by Kotaro Ueta</H3>
+<P>本書でいうprivate codeまたはprivate commercial telegraphic codeは本稿でいうところのエンコード表である．数字としてエンコードした情報を英字コードに直すために，"10 figure table"が与えられている（ただし，書名にもあるように任意の１０桁または１２桁の数字変換表を使用可）．</P>
+<P>その表は00-99を２通りの英字２字に変換する２列を含む．まず１０桁数字を５対の数字に分け，１０個の数字の和を別の"Control or Check Table"で調べて対応する５文字（たとえばABBAA）を決定する（和は0～90だが，表は92まである）．この５文字が５対の数字を２字に変換する列を指定する．</P>
+<DIV class="kakomi"><TT>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7+4+6+2+2+7+3+8+1+2＝42→(control tableにより)ABBAA<br>
+7462273812 → 74 62 27 38 12 → (ABBAAに対応する列を参照) ot ri hi ey ar<br></TT>
+</DIV>
+
+<H3>Mosse Condenser (1922)</H3>
+<P>Rudolf-Mosse Code (1922)の付録のMosse Condenserは１０桁数字を１０字の英字コードに変換する．<!--馬場で引用--></P>
+<P>まず１０桁数字を５対の数字に分け，５つの２桁数字の和をcontrol tableで調べて対応する５文字（たとえばBBBAA）を決定する．この５文字が５対の数字を２字に変換する列を指定する．</P>
+<DIV class="kakomi"><TT>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;74+62+27+38+12＝213→(control tableにより)BBBAA<br>
+7462273812 → 74 62 27 38 12 → (BBBAAに対応する列を参照) tu ri hi ey ar<br></TT>
+</DIV>
+
+<H3>The Acme Ten-Figure Code (1923) by A. C. Meisenbach</H3>
+<P>Acme Commodity and Phrase Code (1923)の付録．上記のWestinghouseと同様の２桁数字を英字２字に変換する表である．</P>
+<DIV class="kakomi"><TT>
+2166527010 → 21 66 52 70 10<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;　 ga sa in te da → gasainteda
+</TT></DIV>
+<!--Acme
+<P>Ten Figure Offer Combination</P>
+<P>第１～２桁　Shipping Table</P>
+<P>第３桁　Port and Place Table</P>
+<P>４～５桁　（単位らしい）01: Read quantity as number of bags and price per bagなど</P>
+<P>６～７桁　quantity table</P>
+<P>８～１０桁　U.S.Gold Table / Sterling Table</P>
+<P>５桁数字を，本体のコードに付された数字を手がかりに５文字に変換--></P>
+
+<H3>Saraswatti Cypher Table (10 Figure Code) (1926)</H3>
+<P>神戸の香川商店による"1926 Supplement" to K. Kagawa & Co's Special Code (1926)の付録．上記のWestinghouseと同様の２桁数字を英字２字に変換する表である（母音はA, E, I, O, Uの５つのみ）．さらに"3 Figure Phrase Combination Table"として３桁数字を利用してさまざまな情報をエンコードする表が収録されている．</P>
+
+
+<A NAME="SEC6"></A>
+<H2>１２桁数字暗号</H2>
+<P>１０桁の数字を１０字の英字コードで表わすのはそれほど難しくない．だが１０桁どころか１２桁以上の数字を英字１０字にするものもある．そのような変換表では複数のセクションからなる表を使うものが多い．一部の桁の情報は「どのセクションを使ったか」で表わすことがポイントとなっている．</P>
+<H3>Vollers' 12-Figure System (1906)</H3>
+<P>本書は本質的には６桁数字の上３桁を英字２字に，下３桁を英字３字に対応させることにより５字英字コードに変換する．</P>
+<P>本書では６桁のうち第１・第２桁の00-99は左端にある列を見て２文字に変換する．第３・４桁の00-99および第５・第６桁の00-99はそれぞれ数ページにわたる表の行・列のインデックスとして使って，３文字パターンを決定する．</P>
+
+<H3>The eureka, 12 figure cypher code (Yokohama, 1908) by Ernest Kendall</H3>
+<P>これは６桁数字の上２桁を英字２字（Prefix）に，下４桁を英字３字（Root）に変換する．<!--５字の半語は三字差をもつ．→でも，000000はababaで，250000はacabeだから２字差しかない？-->各ページはかなりの部分が同じ表が繰り返されているが，そのおかげで一つの半語の変換のために参照するのは一ページだけですむようになっている．</P>
+<P>表の上部には00～99に英字２字（Prefix）を対応させる表が繰り返し載っている．表の下部は残る４桁数字を英字３字（Root）に変換する表である．使うには，まずRootの上２桁（６桁数字の第３・４桁）に着目するのがいいと思う．ページの中ほど，Rootの表の上部には00, 01, 02, 03, ... とあるので，まずここを見て必要なブロックが載っているページを開く．次いでそのブロックの上にあるPrefixの表を見て第１・２桁に対応する英字２字を決める．各ブロックは４列に分かれているので，そのブロック内のPrefixがみつかったのと同じ列を見て，Rootの表から下４桁に対応する英字を決める．</P>
+<P>たとえば750104をコード語に変換する場合，まず第３・４桁の01が記されているブロック（p.1）をみつけ，75に対応する英字２字をページ上部のPrefixのブロックでさがす．このページ上部には00～99までの表（２通りが交互に割り当てられている）が毎ブロックに繰り返し掲載されている．75に対してもブロックによってafまたはakが該当するが，01ブロックについてはakである．そして01ブロック内の75＝akがある列内でページ下部の表（00-99に対する英字３字パターンが割り当てられている）を見て04＝apeを知る．</P>
+<DIV class="kakomi">
+750104 → 01でブロック指定，ブロック内で75→ak，その列内で04＝ape
+</DIV>
+<P>なお，本書と同じかもしれないKendall's 12 figure Cypher Code. In strict accordance with the requirements of the London Conference of June-July, 1903, etc. (Lieber Code Co., New York, London, 1908, 35pp.)や，本書と同年のThe "Cheepandi" 12 Figure Cypher Code (1909, New York)，本書の桁数を増やしたバージョンらしいEureka Cipher Code, 13 figures (1919, New York, 69pp.)（これは<A HREF="http://books.google.co.jp/books?id=0hYDAAAAYAAJ&pg=PA150&lpg=PA150&dq=%22eureka+cipher+code%22&source=bl&ots=vzivSEkNzO&sig=wK6MRMt9_P-uL8gD1gB0M5Buduw&hl=ja&sa=X&ei=EgT7U8KxEJX_yQTmh4GYDA&ved=0CDcQ6AEwBA#v=onepage&q=%22eureka%20cipher%20code%22&f=false">Catalog of Copyright Entries</A>にある）というものもWorldCatなどに挙げられている．</P>
+<P>また，Oliver S. Kendallという別人によるThe "International" 12 Figure Cipher Code, Being Composed of a Million Million Artificial Words as Sanctioned by the Telegraphic Conference Held at Lisbon, 1909, Together with a Special Check System for the Correction of Mutilations (1910, 35pp.)などがGoogleで挙げられている．この著者もいろいろなコードを出しているようだが，14桁数字暗号を下記で紹介する．</P>
+
+<H3>Kendall's 12/13 figure cypher code, part I and II complete, 0000000000000/1999999999999, in strict accordance with the requirements of the Telegraphic Conference (1910) by Ernest Kendall</H3>
+<!--On sale by Z.P.Maruya & Co., Ltd. Nihonbashiku, Church & Co. 51 Main Street, Yokohama, E. Kendall P.O. Box No.141, Sannomiya, Kobe-->
+<P>扉ページには版元が"Lieber Code Co., New York-London"とあるが，奥付では発行はジャパンガゼット新聞社（住所は横浜）となっている．また，奥付では著者「ケンダル」の住所は横浜となっているが，扉ページでの連絡先は神戸の私書箱になっている．</P>
+<P>これは本質的には，６桁数字を５字コードに変換することによる１２桁数字変換表といえる．タイトルに謳う「１３桁」は，そのような表をPart I（0で始まる１３桁数字用）とPart II（1で始まる１３桁数字用）の２組用意することで実現している．１３桁まで必要ないというユーザーのために，Part Iだけも別途半額で発売された．</P>
+<P>本質的には，６桁数字は，縦軸の第１～２桁の数字00-99と横軸の第３～４桁の数字00-99を英字３字に変換する（複数ページにまたがる）表と，第５～６桁に対応する２字を求める表によって，英字５字に変換される．Part Iでは，「プレフィックス」（前半６桁に対応）および「サフィックス」（後半６桁に対応）のいずれも同じ表を使うが，Part IIではプレフィックスとサフィックスに別の表が用意されている．</P>
+<P>扉ページは，任意の５ないし６数字暗号を１語で送信できることを謳っている．つまり，コード・コンデンサーとして意図されているのである．</P>
+<P>例として，１３桁数字の最初の２桁をコードブックを指定する指示符とし，第３～７桁，第８～１２桁を指定されたコードブックの二つのコードを指すものとし，第１３桁をチェック数字とすることを提案している．例示されている指示符は：00（次の１０桁はWester UnionまたはABCコードの５桁数字として解釈），01（Western UnionまたはABCの６桁数字の先頭の１を無視したもの），02（Western UnionまたはABCの５桁数字と６桁数字），03（Western UnionまたはABCの６桁数字と５桁数字），04（LiebersまたはA1コード），05（LiebersまたはA1とWestern UnionまたはABC），06（LiebersまたはA1とWestern UnionまたはABCの６桁数字）というものである．</P>
+<P>表中の英字はでたらめに並べてあるわけではなく，混同されそうな文字は大きく異なる数字に割り当てられるよう配慮されているという（たとえばab:00とad:50）．<!--Part Iの５桁・６桁目はページによってVC，CV，CCとなっており，デコードの際に便利--></P>
+
+<H3>Whitelaw's 1 to 12-Figure Groups 0/9 to 000,000,000,000/999,999,999,999 in 10-Letter Pronounceable Cypher (1910)</H3>
+<P>本書は本質的には６桁数字の上３桁を英字２字に，下３桁を英字３字に対応させることにより５字英字コードに変換する．上３桁は各ページの上段の表を見ていって対応する箇所にある英字２字を求める．その同じページの下段の表を参照して下３桁に対応する英字３字を求める．</P>
+<P>筆者も中身は見ていないが，おそらく上段の表は000～999の数字に対応する英字２字を１０ページに分けて示すものだろう．２文字の組み合わせでは676通りしかできず000～999の数字と一対一に対応することはできないので，同じ２字の組み合わせが異なるページに出現するケースもあるはずである．下段の表は各ページでみな同じ３数字を含むが，全ページを通じて同じ３文字の組み合わせは含まないようになっているのだろう．（だから仮に最初の２文字が同じになったとしても，５字コード全体としては同じになることはない．）</P>
+
+<A NAME="SEC7"></A>
+<H2>１３桁数字暗号</H2>
+<H3>Ideal Code Condenser (1909) by K&ouml;lkenbeck</H3>
+<P>Googleによればタイトルをフルに書くと<i>The Ideal Code Condenser: Being a Thirteen Figure Code (0,000,000,000,000 to 9,999,999,999,999) for the Purpose of Enabling a Number of Different Numbered Codes to be Employed in the Same Message at the Rate of Two Phrases to One Code Word, the Recipient Being at the Same Time Informed from which Code to Read Each Part of the Message, with Two-figure Safety Check Against Mutilations. With Full Instructions in English, French and German</i>となる．第２版が<A HREF="http://paperspast.natlib.govt.nz/cgi-bin/paperspast?a=d&d=DOM19131118.2.33.3"><i>The Dominion</i>の1913年11月18日号</A>で紹介されている．コードブックからの二つのコードを一語にするためのものだが，複数のコードブックを使ってもどのコードブックを使えばよいかをちゃんと復号側に伝えられるという．</P>
+
+<H3>The 13 Figure Cypher Code: inconvertible cypher words (each of ten letters) (1914) by Masazo Yamada</H3>
+<P>000 00000 00000から499 99999 99999までの１３桁数字を１０字の英字コードに変換できる（１２／１３桁数字を混用する場合は１３桁数字の第１桁0, 1, 2, 3, 4の代わりに(なし), 0, 1, 2, 3とする）．00-99を英字２字に変換する表が５通り（Section A-E）与えられており，第１桁に応じてTable Iを参照して第２～３桁を英字２字にするSectionを選択し，第４桁に応じてTable IIを参照して第５～６桁，第７～８桁を英字２字にするSectionを選択し，第９桁に応じてTable IIを参照して第１０～１１桁，第１２～１３桁を英字２字にするSectionを選択する．</P>
+<P>発音可能要件を満たすため，Section Aは母音＋子音，Section Bは子音＋母音としており，第２～３字，第１０～１１字はAかBなのでできあがった１０字コードは少なくとも二つは母音を含むことになるが，Section C, D, Eは子音＋子音であり，かなり苦しい綴りも発生する（下記ではあえてそのような例を選んだ）．</P>
+<DIV class="kakomi"><TT>
+2117201140454 → 2 11 | 7 20 11 | 4 04 54<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Section:&nbsp;&nbsp;&nbsp;&nbsp;C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B&nbsp;&nbsp;C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;&nbsp;E<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;be&nbsp;bs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ag&nbsp;vg → bsbebsagvg<br>
+</TT></DIV>
+
+<H3>"Acme Safety First" Thirteen Figure Code (1923) by A. C. Meisenbach</H3>
+<P>Acme Commodity and Phrase Code (1923)の付録．これは１２桁＋チェック数字による１３桁数字を英字１０字に変換するものだが，最初の３桁は最大129という制約がある．まず最初の３桁に対応する５桁数字を見出す，この５桁数字の各桁（1～4のいずれか）は，後続の１０桁＝５対の数字を変換するために使う表を指定する．各表は00-99をそれぞれ英字２字に変換する表となっている．第１表は子音＋母音，第２表は母音＋子音，第３表は子音（B-M）＋子音（N-Z），第４表は子音（N-Z）＋子音（B-M）となっているので，受信側では受け取った英字コードの各対の文字をどの表で数字に戻せばいいかがわかる．</P>
+<P>なお，最初の３桁について，1～4の組み合わせをフルに使えば4<sup>5</sup>＝1024通りの組み合わせが可能なので129までに制限する必要はないはずだが，当時の国際電信規則ではコード語が「発音可能」でなければならないという条件があったので，子音＋子音の組み合わせである「3」「4」が連続せず，先頭にもこないとか，241, 231という並びは子音が４つ連続することになるので避けるといった制限をつけたようだ．（Qを使っていないのも「発音可能」のためだろう．）それでもたとえば126なら24212なのでudxbubcuahなどの奇怪な文字列が生じるのだが，この時期「発音可能」はかなりゆるく解釈されていて，適度に母音がはさまれていれば認められていたようだ．</P>
+<DIV class="kakomi"><TT>
+1283596217150 → 128 35 96 21 71 50<br>
+&nbsp;&nbsp;(128より)indicator:&nbsp;2&nbsp;&nbsp;4&nbsp;&nbsp;2&nbsp;&nbsp;2&nbsp;&nbsp;1<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ak wm eg et na → akwmegetna<br>
+</TT></DIV>
+
+<H3>いろいろな１２～１３桁数字変換表</H3>
+<P>中川静(編)『信書精鑒』(大正５年)（1916）（<A HREF="http://kindai.ndl.go.jp/info:ndljp/pid/953961/383">近代デジタルライブラリー</A>）p.735付近は，12桁以上の数字変換表で当時神戸で使われていたものとして下記ものを挙げている．</P>
+<P>Kendall's 12 Figure Cypher Code<!--GoogleではKendall's 12/13 Figure Cypher Code--></P>
+<P>Voller's 12 Figure System</P>
+<P>Non Plus Ultra Cypher Code (12 Figures)</P>
+<P>Kerr's 13 Figures Code</P>
+<P>Schofield's 13 Figure Condenser<!--Schofield's 13-Figure Telegraph Code (2nd ed., 3rd ed.), Schofield's Symbol-Check Cipher Code (13 Figs.), and Schofield's 12-Figure Code.がEclectic Phrase Codeで言及されている--></P>
+<P>Yamada's 13 Figure Cypher Code</P>
+<P>ただし，１３桁のものについては，第１桁が９まで完全に自由な値を取れるわけではなく，時にできたコード語が発音可能でなくなるため，1916年の時点で「いまだあまねく実用に供せらるるに至らず」としている．</P>
+<P>米国の1916年の<i>Catalogue of Copyright Entries</i> (<A HREF="http://books.google.co.jp/books?id=eBIDAAAAYAAJ&pg=PA1368&lpg=PA1368&dq=%22schofield%27s+13+figure%22&source=bl&ots=yQ6Y4gTpHQ&sig=QGt1KRLUZE5G7jt3BMLwtKgyyak&hl=ja&sa=X&ei=JCdCVMGQH4PXmgWzoYGYCw&ved=0CCYQ6AEwAQ#v=onepage&q=%22schofield%27s%2013%20figure%22&f=false">Google</A>)には<i>Schofield's 13-Figure Telegraph Code</i> (2nd ed., 2枚)が登録されている．</P>
+
+<H3>Oriental Self-checking Three-Letter Code (1st ed. 1930, 2nd ed. 1931, Kobe, Japan) by K. Yamaguchi<!--山口清雄--></H3>
+<P>このコードブックのコード語は英字３字で，コード語３つにチェック文字１つを付加して１０文字のコード語として送信することを想定している．第２版では，これを１３桁の数字暗号<!--13-figure code-->として使うことを提案している．各コード語には４桁数字が付されているので，それを利用して１２桁数字を３つの４桁数字に分けてそれぞれ３文字のコード語に変換するのである．（１３桁目の数字はチェック用．）</P>
+<P>1930年代には「発音可能」の要件が緩和されたので，英字３字の任意の順列を使用できるようになったのである．</P>
+
+<A NAME="SEC8"></A>
+<H2>１４桁数字暗号</H2>
+<P>コードのパターンを制約していた「発音可能」の要件は１９２８年の国際電信規則改正で緩和され，１９３４年から施行となった改正では撤廃された．これにより，１４桁の数字変換も可能になった<!--酒井嘉七『外国電信係読本 : 附・実用二文字標準補助暗号書』（昭和１４年）（1939） p.64-->．</P>
+<P>英字５字（26<sup>5</sup>＝約1188万≒10<sup>7</sup>通りのパターンを表現可能）で７桁までの数を表現できることを考えると，英字１０字なら１４桁も表わせることになる．<!--ただし，１４桁となると英字の自由度をほとんど使うことになるので，エラーチェック機能は低かったはずである．←１３桁，１４桁では数字の中にチェック数字を含めておく--></P>
+
+<H3>The American Condenser: The Only 14-figure Code in Existence : Suitable for All Users of the Western Union Code, A B C Code, A1 Code, Broomhall's Code, Lieber's Code, Etc., Etc. (1906)</H3>
+<P>驚いたことに1906年の段階ですでに１４桁数字暗号らしきものが発売されている．書名の「Condenser」からすると，列挙されているコードブック（まだ５字より長い本物の「単語」らしいコード語を使っている）の２つ～３つのコード語を１４桁数字を介して英字１０字で表現するものだろう．</P>
+
+<H3>Kendall's 14 Figure Cypher Code (London, 1923) by Oliver S. Kendall</H3>
+<!--馬場 フレーム106-->
+<P>７，１４桁目または１４桁目のみをチェック数字に使うものとしており，後者の場合，最初の13桁（７桁目を除く）の数字の合計を５で割った余りをチェック数字とする．いずれにせよ，７，１４桁目は特別な扱いを受ける．</P>
+<P>これもRudol-Mosseのcontrol tableのようなものを使うらしく，第１，２桁によって第３，４桁，第５，６桁，第８，９桁を変換すべき列を決定し，第７，１４桁によって第１０，１１桁，第１２，１３桁を変換すべき列を決定する．第１，２桁，第７，１４桁の情報は，他の桁の変換に「どの表を使ったか」の形で保存されている．</P>
+<DIV class="kakomi"><TT>
+0+3+9+4+1+6 + 7+3+8+1+4+9＝55; 55 mod 5＝0 → チェック数字（第14桁）<br>
+<br>
+0394162738149 → 03 94 16 2 73 81 49 0 → mu xe ki ky ru<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(使用する列)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;7&nbsp;&nbsp;2</TT>
+</DIV>
+<P>ただし，桁数が多ければいいというわけではなく，一般論としては，桁数が多いほど冗長性が低下するので，発音しにくい奇怪な綴りが現われやすくなる一方，誤り検出能力が低下する．このコードについては，馬場は（下記のYatomiのものとともに）「未だ十分にコンデンスの作用が行われない恨がある，即ち数字の半分以下が完全に開けて居らぬ，依って其を一挙に展開せしむるものがAcme (A.C. Meisenbach)の十三位数字暗号で，此はKendallやYatomiよりも進歩して居り其完備せるものである．」と評している（p.208）．</P>
+
+<H3>Meisenbach's Fourteen Figure Code, Etc. (1929)<br>
+Meisenbach's Fourteen Workable Figure Code (1937, London)</H3>
+<P>著者<u>A</u>lbertus <u>C</u>harles <u>Me</u>isenbachは上記のAcme Commodity and Phrase Code (1923) で１３桁数字変換表を公表しており，1928年の規制緩和を受けて早速１４桁版を発表したらしく，1937年にもその改訂版らしきものを刊行している．</P>
+
+<H3>Imoto's Standard 14 Figure Cipher Code (Kobe, 1929) by T. Imoto</H3>
+<P>本書（といっても１０ページ余りの冊子だが）は1928年の国際電信規則改定に則っているとうたっている．これは１４桁を上４桁と下１０桁に分けて変換する．上４桁は1499までとしているが，26<sup>10</sup>＝約1.4×10<sup>14</sup>（１５桁）なので，まだ少し余裕がある．（ただし，１４桁数字の末尾２桁は，５～１２桁を２桁ずつに区切った和（の下２桁）とされており，チェック数字として使うことが想定されている．）</P>
+<P>まずIndicator Table（Rudolf-Mosse Codeのcontrol tableと同様）を参照して上４桁の0000～1499に対応するindicator（５桁数字11111～65122）を求める．indicatorの各桁は1～6までの数のいずれかであり，それがCoding Tableの1～6のうちどの列を見ればいいかを示す．indicatorの５桁の各数字が，下１０桁を２数字ごとに分けた各ペアについてのCoding Tableの列を示す．Coding Tableの各列は，２桁数字を２字英字に変換するものとなっている．（送信される英字１０字は下１０桁に対応するものだが，どの表を使ったかによって上４桁の情報もエンコードされている．）</P>
+<P>Coding Tableの１は母音－子音，２は子音－母音の組み合わせになっており，Indicator Tableの５桁数字が１または２を３つ以上含むようにすることによって，最終的な１０字コードに最低３個の母音が含まれることが保証される．これは改正された電信規約のカテゴリーＡの条件を満たす．</P>
+<DIV class="kakomi"><TT>
+&nbsp;&nbsp;&nbsp;&nbsp;56+78+90+12＝236 → 36 (チェック数字)<br>
+<br>
+123456789012 → &nbsp;&nbsp;&nbsp;&nbsp;1234 56 78 90 12 36 → FQ DL AS OL UB →FQDLASOLUB<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;indicator: 4&nbsp;&nbsp;3&nbsp;&nbsp;1&nbsp;&nbsp;2&nbsp;&nbsp;1<br>
+</TT></DIV>
+<!--<P>情報量を確認してみる．英字２字で表わせるパターン数は26<sup>2</sup>＝676．この変換表では，英字２字は00～99のうちのいずれかを表わすのだが，そのような表が６通りあるので600パターンを表わしていることになる．そのような英字２字の対が５つだと600<sup>5</sup>＝7.776×10<sup>13</sup>で，１０桁は優にカバーできる．さらに，６通りの変換表５つをどう選ぶかによって6<sup>5</sup>＝7776通りのパターンを表わせるので，これで1499までを表わすのも余裕がある．</P>-->
+
+<H3>Imoto's Standard 5 Letter 8 Figure Cipher Code (Kobe, 1929) by T. Imoto</H3>
+<P>Imotoのもう一つの数字変換表をここで扱っておく．これも1928年の国際電信規則改定に則っているとうたっている．これは８桁数字（1799999まで＋チェック数字）を上３桁と下４桁（＋チェック数字）に分けて変換する．上３桁は179までとしているが，26<sup>5</sup>＝約1.188×10<sup>7</sup>（８桁）なので，まだまだ余裕がある．</P>
+<P>まずIndicator Tableを参照して上３桁の000～179に対応するindicator（３桁数字111～665）を求める．indicatorの各桁は1～6までの数のいずれかであり，それがCoding Tableの1～6のうちどの列を見ればいいかを示す．indicatorの３桁の各数字が，下４桁を２数字ごとに分けた各ペアについてのCoding Tableの列と，第８桁のチェック数字についての表を示す．Coding Tableの各列は，２桁数字を２字英字に変換するものとなっている．</P>
+
+<H3>X figure code : 5-letter 7 and 8 figure condenser (Kobe, 1936) by K. Sakai</H3>
+<P>酒井嘉七による英文コードで，1934年発効の国際電信規約に準拠しているとうたっている．任意の７桁数字または11,419,999までの８桁数字を５字英字に変換できるものだが，まず７桁数字の場合を説明する．</P>
+<P>まず最初の２桁に相当する数字が赤で印刷されているセクションをみつける．その表は残り５桁数字のための"Key"と"Odd & Even Mark"が列挙されている．まず残った五桁数字の各桁が奇数（-）・偶数（=）のパターン（2<sup>5</sup>＝32通り）をOdd & Even Marksの欄で求め，それに対応する５桁のKeyを求める．次いでもとの数字（Figure）（10通り）とKey（1～5の5通り）の組み合わせによりCoding Tableを参照して英字１字を決定する．（組み合わせは10×5＝50通りあるのに英字はXを除いた25しかないので，もとの数字が1と2の場合は同じ英字，3と4の場合は同じ英字，などとなる．）このようにして，５桁数字が英字５桁になるのである．</P>
+<DIV class="kakomi">
+<TT>
+12 34567 → （34567より）-=-=- (odd/even) 
+<br> → （12のセクションより）14145 (key) → （Coding Tableより）BQCRY
+</TT>
+</DIV>
+<P>逆に，復号時には英字１字がわかればもとの数字（ただし偶数と奇数の２通りの候補が表に記されている）とKey数字の組み合わせがわかる．５桁のKeyがわかったら，それに対応するエントリーをKeyの列（５進法で記されている）から見つけ出し，その横に書かれている奇偶パターンによりもとの数字を奇偶を含めて確定する．また，そのエントリーが属するセクションの赤字から上２桁がわかる．</P>
+<P>上記では最初の２桁に相当する数字を赤で印刷されているセクションでみつけたが，３桁に相当する部分が赤字でみつかることもある．その場合は残るのは奇偶パターンは４桁（2<sup>4</sup>＝16通り）となり，Keyは２桁目がxになっている．４つの数字は上記と同じようにして英字に対応させるが，２桁目はそのまま英字Xを対応させる．</P>
+<P>さらに，最初の４桁に相当する数字が赤字でみつかることもある．これは８桁数字を５桁英字に変換する場合に使うもので，その場合，残り４桁は上記のようにXを含む５英字にする．</P>
+<P>なお，７桁数字，８桁数字または１４桁数字の末位を通例チェック数字とするとしている．</P>
+
+<H3>Graphical complete seven figure code in English, French, German, basing on figure combination system (1937.8<!--序文は1935だがNDLの表示によった-->, Kobe) by Kenji Shirai</H3>
+<P>白井健次による変換表で，７桁数字（７桁目は第１～６桁の和の一の位を表わすチェック数字）を英字５字に変換する．</P>
+<P>１．第１／２桁，第３／４桁，第５／６桁，第７桁に分ける</P>
+<P>２．第１／２桁，第３／４桁，第５／６桁を使って，△（00-24），○（25-49），◎（50-74），□（75-99）の記号を付された４列からなる表を参照して，各２桁の00-99の数字をそれぞれ英字１字（A-Z；Qなし）に変換．これにより，英字３字と列を表わす３記号からなる列記号（△△△，△△○，……，□□□）が得られる．</P>
+<P>３．行が列記号（△△△，△△○，……，□□□）を表わし，列が第７桁の0-9を表わす表を参照して，第７桁を英字２字に変換．</P>
+<P>４．ステップ２の３字とステップ３の２字で５字の英字コードができる．</P>
+<DIV class="kakomi">
+<TT>1234567 → 12 34 56 7<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;M&nbsp;&nbsp;J&nbsp;&nbsp;G <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;列：△ ○ ◎<br>
+&nbsp;&nbsp;&nbsp;&nbsp;△○◎を使って→SL　　→MJGSL
+</TT>
+</DIV>
+
+
+<P>復号にはまず５字の英字コードを第１～３字，第４～５字に分ける</P>
+<P>１．第４～５字から第７桁の数字と列記号（△△△，△△○，……，□□□）を取得．</P>
+<P>２．列記号（△，○，◎，□）と第１／２／３字からそれぞれ第１／２桁，第３／４桁，第５／６桁を取得．</P>
+
+<H3>Yatomi’s complete seven figure code, 0000000 to 9999999 (1937.10, Tokyo) by Genji Yatomi</H3>
+<P>矢富源次による変換表で，７桁数字を英字５字に変換する．実質的には上記Graphicalと同じ方式である．（チェックの方法は多数あるとしつつ，７桁目または１４桁目をチェック数字とする方式を例示している．）</P>
+<P>１．第１／２桁，第３／４桁，第５／６桁，第７桁に分ける</P>
+<P>２．第１／２桁，第３／４桁，第５／６桁を使って，a（00-24），b（25-49），c（50-74），d（75-99）の記号を付された４列からなるColumn Tableを参照して，各２桁の00-99の数字をそれぞれ英字１字（A-Z；Qなし；列によって割り当てがずれている）に変換．これにより，英字３字と列を表わす３記号からなる列記号（aaa, aab, ……, ddd）が得られる．</P>
+<P>３．行が列記号（aaa, aab, ……, ddd）を表わし，列が第７桁の0-9を表わすIndicator Tableを参照して，第７桁を英字２字に変換．</P>
+<P>４．ステップ２の３字とステップ３の２字で５字の英字コードができる．</P>
+<DIV class="kakomi">
+<TT>1234567 → 12 34 56 7<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;M&nbsp;&nbsp;P&nbsp;&nbsp;S <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;列： a  b c<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;abcを使って→JG　　→MPSJG
+</TT>
+</DIV>
+
+<P>復号にはまず５字の英字コードを第１～３字，第４～５字に分ける</P>
+<P>１．第４～５字からIndicator Tableにより第７桁の数字と列記号（aaa, aab, ……, ddd）を取得．</P>
+<P>２．列記号（a, b, c, d）と第１／２／３字からそれぞれ第１／２桁，第３／４桁，第５／６桁を取得．</P>
+
+
+<H3>酒井の１４桁数字変換表（1939）</H3>
+<P>酒井嘉七『外国電信係読本 : 附・実用二文字標準補助暗号書』（1939）は１４桁数字変換表の二通りの方式を提案している．</P>
+<P>第一の方法（p.65）は，7 FIGURE CONDENSERと称され，７桁数字を５字英字に変換するもので，次のような手順になる．これは実質的に上記Graphicalと同じ方式である（酒井はこれに先立ち上記のX figure codeを発表しているが，こちらのほうが実用的と判断したのだろう）．</P>
+<P>１．第１桁，第２／３桁，第４／５桁，第６／７桁に分ける</P>
+<P>２．第２／３桁，第４／５桁，第６／７桁を使ってSecond Tableを参照→00-99の数字をそれぞれ1～4(Section No.)＋a-zに変換．</P>
+<P>３．First Tableの行がSection Nos. 111-444（第２／３桁，第４／５桁，第６／７桁の情報を含む）を表わし，列が第１桁の0-9を表わす→AA-YPの２字に変換．</P>
+<P>４．ステップ３の２字とステップ２の３字で５字の英字コードができる．</P>
+<DIV class="kakomi">
+<TT>1234567 → 1 23 45 67<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;&nbsp;u&nbsp;&nbsp;r <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Section： 1 &nbsp;2 &nbsp;3<br>
+123を使って→cs　　　→csxur
+</TT>
+</DIV>
+
+
+<P>復号は５字の英字コードを第１／２字，第３～５字に分ける</P>
+<P>１．第１／２字をFirst Tableでさがして第１桁の数字とSection Nos.を取得．</P>
+<P>２．Section No.と第３～５字からSecond Tableを参照してそれぞれ第２／３桁，第４／５桁，第６／７桁を取得．</P>
+
+<P>酒井の記述する第二の方法（p.66）は0-11,881,375までの数字を５桁英字に変換できるというが，実質的には２６進数の計算表である．</P>
+
+
+
+
+<A NAME="SEC9"></A>
+<H2>用語について</H2>
+<P>上記のような手順に関連して，数字暗号（figure code）とかコンデンサー（condenser）といった用語が使われるが，その意味するところは著者によって若干相違がある．</P>
+<H3>コンデンサー（condenser）</H3>
+<P>最も広義には，Rudolf-Mosseは（数字の場合に１語で送信可能な）５字より多くの桁をもつ数字を（コードの場合に１語で送信可能な）英字１０字で表わすものを「コンデンサー」とした．</P>
+<P>ただし，より一般には２つ（以上）の英字コードを１０字の英字コード１語で表わすものをコンデンサーと称する例が多い．Friedman, Report on the history of the use of codes and code language (1928) p.23もこの意味で使っている．code condenserという形ならこの意味だと思っていいだろう．</P>
+<P>一方，阿部暲『外国貿易商用暗号入門』（1949）p.24は「コンデンサー」は１１桁以上の数字を英字１０字に表わす数字変換表の意味で使っている（１０桁の数字を英字１０字に変換するものも「コンデンサー」に入れているものの，本来はその名に値しないとしている）．酒井も数字をその桁数より少ない英字で表わす数字変換表の意味でcondenserを使っている．この意味の場合はfigure condenserといえば誤解はないだろう．</P>
+
+<H3>数字暗号（figure code）</H3>
+<P>「数字暗号（figure code）」の語は，数字の各桁に意味をもたせるエンコードの部分を意味すること，数字を英字コードに変換する部分を意味すること，両者合わせた過程を意味することがあるようだが，一方のみを指している場合でも，他方が当然の前提となっているようだ．（なお，電信コードを離れて一般に「数字暗号」といえば「語句を数字で表わす暗号」を指すのが普通で<!--たとえばアジア歴史資料センターで検索-->，数字を英字コードに変換するのとは逆になっている．）</P>
+<P>酒井嘉七『外国電信係読本』（1939）（p.61以下）ではエンコードの部分を「数字暗号書」，変換の部分を「数字変換表」と称し，後者にCondenserまたはConverterの英語を宛てている．</P>
+<P>馬場誠「貿易技術としての電信暗号」（『商業と経済 : 長崎高等商業学校研究館年報. 第20年 第1冊』（1940）所収）（<A HREF="http://kindai.ndl.go.jp/info:ndljp/pid/1115396/96?tocOpened=1">近代デジタルライブラリー</A>）p.202も，「数字暗号」は「七位・十位・十三位等の数字を使用して各位の数字に特定の用件を表わさせることにする」（つまりエンコードのほうを指す）としつつ，「文字の形式に変化する様にせねばならぬ<!--，即ち0-9に対して適当なるアルファベットを当て其を利用して「暗語」を連成するのである-->」としている．<!--そして，５字より多くの桁をもつ数字を１０字の英字コードで表わすものを「コンデンサー」とするRudolf-Mosse Condenserの定義を採用している．--></P>
+<P>このほかにエンコードを指して使った例として，山口造酒，白井健次『英文商業通信寶<!--宝-->鑑　附十三数字組立暗号電報』（1922）の第XL章をなす別冊付録は「13 FIGURE CODE 十三数字組立暗号電報」と称されているが，内容は数字の各桁によるエンコードである．平子祐次郎のHirako's 13 figure code (1928)もエンコードを扱ったものである（説明はないが英字コードへの変換は当然視されている）．</P>
+<P>一方，桁数を冠したthirteen figure codeのような形では数字変換表を指すことも多い（上記で挙げた書名を参照）．</P>
+
+<P><A HREF="http://books.google.co.jp/books?id=rOQ5AAAAMAAJ">British Books in Print for 1888</A> にはFIGURE CODESという項目がある．ここではその特徴の一つとして「In one word, an Order (or Offer) for any article, with Price, Quality, Shipment, and mode of Transit, can be transmitted.」とあるのでエンコードの部分を指しているが，実際に挙げられている３つのコードブックはその宣伝文句からするといずれも数字を英字コードに直すもののように見受けられる<!--（５桁数字を単語に直すという部分は共通）-->．</P>
+
+<P>Bentleyの電信コードについての解説（<A HREF="http://www.jmcvey.net/cable/harmsworth_2.htm">Codes: Their Nature and Manipulation</A>）ではfigure codeはエンコードと数字変換を合わせたものを指している．<!--Bentley's Phrase Codeの前付けでは数字変換表を指しているらしいがはっきりしない--></P>
+<P>Acme p.900には三つの意味でfigure codeを使いつつ，誤解のない表現となっている例文があるので紹介しておく．すなわち，"thirteen figure code"の表現では数字変換部を指しつつ，同時にエンコード部をprivate figure codeと称している．その直後に現われるfigure codesは両者の総合と見るべきだろう．</P>
+<DIV class="kakomi">
+This <i>thirteen figure code</i> has been incorporated to accommodate practically any <i>private figure code</i> and may be used in conjunction with the Acme Code by those who are familiar with the operation of <i>figure codes</i>.
+</DIV>
+
+<!--<P>電信コードブックそのものも，さまざまな工夫が凝らされた．長い文をまるごと登録してしまえば圧縮効果は大きいが，汎用性が低下する．そこで，パラメーターを取れるようなコード語はかなり早い時期から使われていた．さらには</P>-->
+<br>
+<br>
+<H2>文献</H2>
+<P>本稿で言及している個々のコードブックや参考文献については<A HREF="telegraph2.htm">別稿（英文）</A>参照．</P>
+
+<br>
+<br>
+<font size="2">
+&COPY;2014 S.Tomokiyo<br>
+First posted on 27 August 2014. Last modified on 5 March 2020.<br>
+<A HREF="crypto.htm">Articles on Historical Cryptography</A><BR>
+</font>
+
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>

@@ -1,0 +1,86 @@
+<HTML>
+<HEAD>
+<TITLE>Frequency Count (with Microsoft Excel)
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="Cipher, Code, Frequency Count, Microsoft Excel">
+<link rel=stylesheet type=text/css href=decode2.css>
+
+</HEAD>
+<BODY>
+<H1>Frequency Count (with Microsoft Excel)</H1>
+<H3>Frequency Count Tools for Simple Ciphertext</H3>
+<P>The first step in codebreaking is to count the frequency of symbols/letters occurring in a cryptogram. The resulting frequency counts of the symbols/letters help identifying the plaintext letters by reference to known statistical characteristics of the letters. Such frequency analysis is well-known by Edgar Allan Poe's <i>Gold Bug</i> as well as many other examples (see <A HREF="church.htm">another article</A> for the example of Benjamin Church's cipher). Letter frequency data for various languages is available at, e.g., <A HREF="https://en.wikipedia.org/wiki/Letter_frequency">Wikipedia</A>, <A HREF="http://practicalcryptography.com/cryptanalysis/letter-frequencies-various-languages/">Practical Cryptology</A>, <A HREF="https://www.sttmedia.com/wordcreator-frequencies">WordCreator</A>.</P>
+<P>Today, for a simple text, resources are available on the Web to do the frequency count:</P>
+<P><A HREF="http://www.cryptoprograms.com/tools/frequency">Frequency Counter</A> (CryptoPrograms)</P>
+<P><A HREF="http://rumkin.com/tools/cipher/frequency.php">Frequency Analysis</A> (Rumkin.com)</P>
+<P><A HREF="https://www.mtholyoke.edu/courses/quenell/s2003/ma139/js/count.html">Frequency Counter</A> (Mount Holyoke College)</P>
+<P><A HREF="https://www.dcode.fr/frequency-analysis">Frequency Analysis</A> (Dcode)</P>
+<P><A HREF="http://practicalcryptography.com/cryptanalysis/text-characterisation/monogram-bigram-and-trigram-frequency-counts/">Monogram, Bigram and Trigram frequency counts</A> (Practical Cryptology)</P>
+<P>(After uploading this article, I found the following, which serves for the purpose of this article below.)</P>
+<P><A HREF="http://guidetodatamining.com/ngramAnalyzer/">Online NGram Analyzer</A></P>
+
+
+<H3>Challenge for Ciphertext with More Than 26 Symbols</H3>
+<P>However, the above tools are not applicable when symbols in ciphertext consists of more than one letter such as letter groups or two (or more) digit figures. Whatever symbols are used, as long as there are no more than 26 different symbols (as in the case of monoalphabetic cipher, polyalphabetic cipher, or transposition cipher), the cipher symbols may be replaced by the letters a-z, to which the above tools may be applied. However, frequency counting is also required for ciphertexts employing more than 26 different symbols (as in the case of homophonic substitution cipher, code, or a combination of substitution cipher and code, sometimes called a nomenclator).</P>
+<P>For example, when there is a ciphertext "40 37 22 40 23 13 23 38 17 31 25 ...", a text editor can be used to separate the two-digit figure symbols into records such as:</P>
+<TABLE>
+<TR><TD>
+<span style="line-height: 13px;">
+40<br>
+37<br>
+22<br>
+40<br>
+23<br>
+13<br>
+23<br>
+38<br>
+17<br>
+31<br>
+25<br>
+</span>
+</TD></TR>
+</TABLE>
+
+<P>How can one count the frequency of these records? For a long time since the days of MS-DOS (something like "Command Prompt" of today's Windows operating system), I used tools such as SORTF.EXE or JS.EXE. These were tools for sorting records but had an option to count the frequency of unique records. However, I found to my dismay that these do not appear to work on Windows 10.</P>
+<P>What can I do? Today, many people use Microsoft Excel or other spreadsheet software for data analysis. Such an advanced application must be able to do the simple job of record counting.</P>
+<P>Indeed, Microsoft Excel provides the "FREQUENCY" function but it does not seem to serve for the above purpose.</P>
+<!-- https://exceljet.net/excel-functions/excel-frequency-function -->
+
+<H3>Frequency Count with Microsoft Excel</H3>
+<P>The best way to count the frequency of records of any symbols (that can be handled on PC) appears to be: to create a unique list from the input record list and then use the COUNTIF function.</P>
+<P>The following illustrates this procedure with an example ciphertext: "40 37 22 40 23 13 23 38 17 31 25 36 28 31 22 23 38 36 25 16 24 15 30 36 16 39 21 22 96 12 13 31 31 32 40 35." (I use "Microsoft Excel 2016" in Japanese.)</P>
+<P>A text editor can be used to separate the figures into records by replacing a space with a linebreak ("\n" in my editor). Then, the list of figures is pasted into the columns A and B of Excel.</P>
+<img src="tool1.png" width="600" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+
+<P>The column A is to be used as the input record list. The column B is sorted ("Sort"; "並べ替え") and duplicate records are gathered in unique records ("Remove Duplicates"; "重複の削除"). The resulting column B is a unique list of symbols (figures/records) used in the input record list. <span class="note">(It seems "Remove Duplicates" without sorting first does not provide the desired result.)</span></P>
+<P>Enter "=COUNTIF($A$1:$A$36,$B1)" in cell C1. $A$1 and $A$36 indicate the starting cell and the last cell in the input record list of column A. $B1 specifies the symbol in cell B1 that is to be counted from the input record list. (The dollar sign ($) <i>must not</i> be placed before "1" because this should be what is called "relative cell reference" rather than "absolute cell reference".) (NB. I find "A:A" can select the entire column. So, <b>"=COUNTIF(A:A,$B1)" would be simpler.</b>)</P>
+<P>Copy the formula in cell C1 to the subsequent cells of column C (to the same length as column B). Thanks to the "relative cell reference", the symbol to be counted changes to an appropriate cell. The resultant column C provides frequency counts for the corresponding cells in column B.</P>
+<br>
+<DIV style="border: solid 3px #ff0000; width: 620">
+<P>(<b>NOTE</b>) It appears the COUNTIF function of Microsoft Excel cannot distinguish "01" and "1", even if the number format for the cells is set as "text." When leading zeros are significant, I add a character before each letter (e.g., "_01" and "_1" instead of "01" and "1") to force the program to interpret these as text rather than numbers.</P>
+</DIV>
+
+<br>
+<br>
+<font size="2">
+&COPY;2017 S.Tomokiyo<br>
+First posted on 26 November 2017. Last modified on 3 August 2019.<br>
+<A HREF="crypto.htm">Articles on Historical Cryptography</A><BR>
+</font>
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>

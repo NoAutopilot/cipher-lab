@@ -1,0 +1,536 @@
+<HTML>
+<HEAD>
+<TITLE>Solution of Two Chinese Cipher Telegrams Archived in Japan (1916)
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=UTF-8"> 
+<META HTTP-EQUIV="keyword" CONTENT="Cipher, Code, Chinese">
+<link rel=stylesheet type=text/css href=decode2.css>
+
+<style>
+.responsive-no-bullet-list {
+  /* 1列の最小幅を150pxに設定（画面幅に合わせて自動で2段、3段になります） */
+  columns: 10em;
+  list-style-type: none;
+  /* リストの余白調整 
+  padding-left: 20px; */
+}
+</style>
+</HEAD>
+<BODY>
+
+
+<H1>Solution of Two Chinese Cipher Telegrams Archived in Japan (1916)</H1>
+<P>The present article describes Daniel Bourdeau's solution of two Chinese cipher telegrams (1916) in the Japanese archives, which I presented in <A HREF="chinesecrypto_e.htm#SEC2">another article</A>.</P>
+
+<H2>Sun Yat-sen's Code Condenser (1916)</H2>
+<Table border="0">
+<tr><td>
+<img src="chinesecrypto4.png" width="400" style="margin: 0px;">  </div>
+</td><td>
+<div class="kakomi" style="width: 250">
+3 April 1916, from a "Tanaka" to Sun Yat-sen<br>
+<TT>
+Twelve baxuxupeja<br>
+qicijinati bemigasiqi<br>
+jakebiqoye kufohemige<br>
+tuxaboboba gedoeijiga<br>
+poyevayoxa leyoleveke<br>
+biromapesa vorobenife<br>
+xikebiqoye qekufiyaqa<br>
+tijaqixiqo xitohatula<br>
+xopavajejo ropezpo<br>
+ngobunibai tanaka<br>
+</TT>
+(JACAR B03050738800)
+</div></td></tr></Table>
+<P>A cipher telegram from Tanaka to Sun Yat-sen, dated 3 April 1916, is preserved in the Japanese archives (JACAR B03050738800). Daniel Bourdeau notified me of his solution on 15 September 2026. For full details of his solution and analysis, see his <A HREF="https://dbourdeau.github.io/cyphersolver/sunyatsen.html">github</A>.</P>
+<P>The message consists of 10-letter codes, except for "Twelve" at the beginning (seemingly an indicator specifying the table used) and several groups at the end. Judging from the syllable structure including "qi", "xu", etc., the message may be considered to be created by a code condenser.</P>
+
+<H3>Code Condenser</H3>
+<P>A code condenser translates a four-digit code number into a 4-letter group. Regrouping of such groups into 10-letter groups for transmission reduces the number of telegraphic words and thus the cost.</P>
+<P>As an example, the phrase "明密碼電報" is encoded with a codebook as:</P>
+<P>2494 1378 4316 7193 1032 ....</P>
+<P>Translating every two digits into two letters (consonant+vowel) gives:</P>
+<P>cete ziqi hibu puti yafo ....</P>
+<P>Regrouping into ten-letter groups gives:</P>
+<P>ceteziqihi buputiyafo ....</P>
+<P>Since the international telegraph regulations at the time allowed a pronounceable "word" up to the length of ten letters to be transmitted at a charge for one word (see <A HREF="telegraph1.htm">another article</A>), code condensers served for packing as much information as possible into a "word." If the translation table is kept secret, a code condenser could serve as a means for superencipherment of codebook codes.</P>
+
+<H3>Known Code Condensers</H3>
+<P>Can one identify the specific code condenser used? I had tried the two known code condensers of Yamada Junzaburo, who supported Sun Yat-sen, but they could not read this telegram (see <A HREF="https://cryptiana.blogspot.com/2021/12/sun-yat-sens-coded-telegram-1916.html">my blog</A>).</P>
+<DIV style="float:right; width:500px; padding: 1em; margin: 1em;">
+<img src="chinesecrypto3.png" width="400" style="margin: 10px;"> 
+</DIV>
+<P>Given that there were a variety of code condensers (see <A HREF="figure_e.htm">another article</A>), the number of candidates seemed infinite and I thought it would be impossible to identify the one used here, even if the search range may be somewhat limited by the fact that the standard codebook did not have the figures in the 9000s.</P>
+
+<H3>Reconstructing the Code Condenser</H3>
+<P>Bourdeau noticed that the candidates can be narrowed by inspecting the two known code condensers.</P>
+<P>From these two specimens, he assumed that</P>
+<P>- the condenser table was from the same family of tables with 5 vowels x 20 consonants <span style="font-size: smaller">(the present table is no.12 ("Twelve"), while one of the known tables is marked "no.64")</span>;</P>
+<P>- vowels may be arranged in 5!=120 permutations, while the 20 consonants occur only in 20 cyclic shifts with possible reversal (hence 40 patterns);</P>
+<P>- the numbers may be filled row-wise or column-wise (2 patterns); and</P>
+<P>- 00 may be placed at the beginning or the last (2 patterns).
+<P>With these assumptions, the number of candidates is 120x40x2x2=19,200.</P>
+<P>In view of Sun Yat-sen's known telegrams using an additive of 111 (see <A HREF="chinese_e.htm#SEC2">another article</A>), he further allowed for three possibilities (presumably, no additive, addition, or subtraction). Thus, the total number of candidate keys amounts to 57,600, not intractably large at all!</P>
+<P>Brute force attack was conducted. Specifically, he applied each candidate key table to the letter pairs in the telegram to obtain a sequence of four-figure groups, calculated the cost for the resulting sequence with respect to "a traditional-Chinese character frequency model", with unknown codes penalized. This revealed a single key that scored far better than any other.</P>
+<P>The key he obtained is as follows. (See his <A HREF="https://dbourdeau.github.io/cyphersolver/sunyatsen.html">github</A> for further details and decrypted reading.)</P>
+<img src="chinesecrypto_sun1916.png" width="450" style="margin: 10px;"> 
+
+
+<H2>Huang Xing's Three-Kana Code (1916)</H2>
+<img src="chinesecrypto5.png" width="450" style="margin: 10px;"> 
+<img src="chinesecrypto5b.png" width="280" style="margin: 10px;"> 
+<img src="chinesecrypto5c.png" width="350" style="margin: 10px;"> 
+<div class="kakomi">
+REKUTATA UHOYAKATE SEKANAOKU SAKEKINISE OSUKAKUCHI REUHONIUSU MAKASUSAKU FUREOHIHE YENIKIYEHI TAKASUREU SASHIKIHE WAONIAAHO SAYEHITE UHINAKUTA NEATEMUYE SUHEUHAKA YESOMIKANU TEASUUKU TSUHAKOSE KEKININAKI TEAKETASHI KONUOHIKE HIMIKANO SHIKUSAHE UHATAKASA KEKINIKA ATAREUSASU OSO YUA NIRA KISU<br>
+</div>
+<P>There is a telegram (JACAR B03050731500) that Huang Xing (黄興) <span class="note">(<A HREF="https://ja.wikipedia.org/wiki/%E9%BB%84%E8%88%88">Wikipedia</A>)</span> sent to Lin Hu (林虎) <span class="note">(<A HREF="https://ja.wikipedia.org/wiki/%E6%9E%97%E8%99%8E">Wikipedia</A>)</span> and Li Genyuan (李根源) <span class="note">(<A HREF="https://ja.wikipedia.org/wiki/%E6%9D%8E%E6%A0%B9%E6%BA%90">Wikipedia</A>)</span> in 1916. The three opposed Yuan Shikai, albeit separately from Sun Yat-sen, after the Chinese Revolution, and resided in Japan during some periods.</P>
+<P>This is not technically "unsolved", because the decryption as well as a version rendered in Japanese word ordering (with some annotations and paraphrasing) are attached to it. Still, I could not find out its encryption scheme (see <A HREF="https://cryptiana.blogspot.com/2021/12/chinese-coded-telegram-1916-from-huang.html">my blogpost</A>)</P>
+
+<H3>Three-Kana Code</H3>
+<P>This is different from what would result from the code condensers above in that there are no Cs or Ls, and that there are SHI, CHI instead of SI, TI, etc., which indicates that the syllables are taken from Japanese syllabary. It was not certain for me whether this employed some code condenser or any other encryption scheme.</P>
+<P>Bourdeau identified that this is a three-kana code (see his <A HREF="https://dbourdeau.github.io/cyphersolver/huangxing.html">github</A>).</P>
+<H4>Alignment</H4>
+<P>His transcription of the decryption in Chinese is as follows.</P>
+<DIV class="kakomi">
+隱印崧誥邕行諸兄鑒正發書
+間適接哿電敬悉一切護國
+軍能速入湘贛甚好[章]行嚴何日
+東渡望速啓行先電示興徑
+</DIV>
+<P>Straightforward splitting results in inconsistencies for characters occurring multiple times (行, 電, 速). Bourdeau then thought of omitting 章, which appears to be inserted afterwards, and dropping one syllable (A) at position 106, which yielded perfectly consistent correspondence in every instance: 行 (KE KI NI), 電 (RE U SA), and 速 (HE U HA).</P>
+<img src="chinesecrypto6a.png" width="740" style="margin:1em 1em 1em;"><br>
+<P>(23 September 2026: In stead of dropping A, the transcription O HI should be corrected to CHI. See the subsection "Three-Kana Code" in the next section.)</P>
+
+<H4>Character-Kana Mapping</H4>
+<P>What remains is how the characters are mapped to three-kana code. One would expect that when the characters are sorted according to associated figures in the standard Chinese telegraph code, the kana codes follow some natural ordering (either in A-I-U-E-O order or I-RO-HA order). But it is not the case. (Bourdeau tried all 10!=3,628,800 permutations of the ten consonant rows in the Japanese syllabary.)</P>
+<img src="chinesecrypto6b.png" width="600" style="margin:1em 1em 1em;"><br>
+<P>The possibilities I can think of are:</P>
+<P>- Characters with code numbers under 2000 aligns in A-I-U-E-O order. Is this a coincidence?</P>
+<P>- Did I use a wrong edition of the Chinese codebook, Dian bao Xin bian (電報新編)?</P>
+<P>- Is there not an error in the transcription?</P>
+<P>- Three-kana code was becoming popular in Japan (see <A HREF="jtelegraph_e.htm">another article</A>, e.g. 1906 and 1915 editions of IROHA Code). Is there any chance that the codebook is Japanese?</P>
+<P>(23 September 2026: I successfully identified the mapping formula. See below.)</P>
+
+
+<H2>Deciphering of Telegrams Related to Sun Yat-sen in JACAR</H2>
+<P>A few days after identifying the code condenser to decipher the telegram to Sun Yat-sen ("the Swatow telegram", from JACAR B03050738800) above, <A HREF="https://dbourdeau.github.io/cyphersolver/sunintercepts.html">Daniel Bourdeau</A> found that the telegram was part of a collection of many telegrams (March 1916 to June 1917), which are copies provided by the Communications Bureau of the Japanese Ministry of Communications to the Foreign Ministry (外務省記録 1.6.1.4-2-1-2, 各国内政関係雑纂／支那ノ部／革命党関係（亡命者ヲ含ム）／特定人ノ発受郵便物取調, vols 2–4: B03050088300, B03050088400, B03050089100, B03050090000, B03050090100, B03050090200). He succeeded in deciphering many of them.</P>
+<P>Hopefully, his achievements shed new light for researchers of Sun Yat-sen. For example, a telegram from Shanghai dated 19 May 1916 reports "Yingshi was shot dead by assassins yesterday afternoon in the Yamada house; one assassin and several accomplices arrested." <span class="note">(Bourdeau's translation)</span> It is a report of the assassination of Chen Qimei (陳其美, courtesy name Yingshi [英士]) <span class="note">(<A HREF="">Wikipedia</A>)</span>, who worked with Sun Yat-sen against Yuan Shikai's dictatorship but was assassinated on the day before - 18 May 1916.</P>
+<P>Here, I will limit myself to cryptography.</P>
+
+<H3>Family of Code Condensers</H3>
+<P>Many telegrams were read by applying the same family of code condensers as above to translate the four-letter groups back into four-digit codes that can be looked up in the standard Chinese character code. This revealed seven keys with different permutations of the vowels and different starting positions of the consonants (one uses the reverse alphabet, none uses additives). One key is "Thirtyseventh".</P>
+
+
+<H3>Unsolved Telegrams in Schemes outside the Family Condensers</H3>
+<P>Bourdeau's search found some telegrams that could not be read with the above family of code condensers. He notes the following remains open:</P>
+<P>From July 1916 to June 1917, some (but not all) of the telegrams apparently used a different code condenser, with an additional vowel (y) and consonant (w). Bourdeau's search of about 200,000 tables with the extended pattern found nothing. Judging from the prefix 文密, he considers this involves a table rather than a rule.</P>
+<P>The prefix "wen mi" (文密, encoded as 2429 1378 according to the standard Chinese character code) is found, for example, in JACAR <A HREF="https://www.jacar.archives.go.jp/das/meta/B03050090000">B03050090000</A>, (frame 0416, the left piece; July 1916). <span style="font-size:smaller">(The right piece on the same frame has a preamble "6567 2429 5028 6567 3329 4206 Cg": 轉(forwarding)文羣(Wen Qun<span class="note">(<A HREF="https://zh.wikipedia.org/wiki/%E6%96%87%E7%BE%A3">Wikipedia</A>, <A HREF="https://baike.baidu.com/item/%E6%96%87%E7%BE%A4/10969112">Baidu</A>)</span> 轉(forwarding)滇督(Governor-General of Yunnan). This 文 has nothing to do with 文密.)</span></P>
+<P>For JACAR <A HREF="https://www.jacar.archives.go.jp/das/meta/B03050090200">B03050090200</A>, frames 0509, 0511 (June 1917), Bourdeau observes that groups in these telegrams include sequences that are not consonant–vowel pairs ("myzoasdoke", "liriopen" on frame 0511).</P>
+<P>Yamada's telegram from late May 1916 with no prefix "Thirtyseven" cannot be read with the May 1916 key "yamada1916", which could read every telegram indicated "Thirtyseventh". Since two of them use w as a consonant, Bourdeau considers these are probably early 文密.</P>
+
+<H3>Three-Kana Code</H3>
+<P>Bourdeau did not address the message in three-kana code (<A HREF="https://www.jacar.archives.go.jp/das/meta/B03050089100">B03050089100</A>, frames 0076–0078), which is partially read in frames 0079-0081.</P>
+<P>This gives the following three-kana code groups <span class="note">(where only those for which the reading of the handwriting is relatively certain are given)</span>. These additional materials help identify the mapping between the character and the three-kana code groups.</P>
+<UL class="responsive-no-bullet-list" style="width:auto; font-size:smaller">
+<li>p.1</li>
+<li>ソカホ　黄</li>
+<li>カエタ　克</li>
+<li>カアタ　先★</li>
+<li>ウイチ　生</li>
+<li>レウホ　釜</li>
+<li>ハエタ　奉</li>
+<li>レウサ　電★</li>
+<li>スケハ　知</li>
+<li>カアセ　公</li>
+<li>イキト　抵</li>
+<li>シコヌ　日★★</li>
+<li>ツウシ　等</li>
+<li>ラアネ　庸</li>
+<li>イクニ　才</li>
+<li>サキテ　勉</li>
+<li>テカ？　起</li>
+<li>セイネ　計</li>
+<li>テケツ　賊</li>
+<li>ニウス　正</li>
+<li>スイハ　短</li>
+<li>ヘエニ　適</li>
+<li>カアセ　公</li>
+<li>エケタ　願</li>
+<li>イコト　承</li>
+<li>テキチ　賜</li>
+<li>カアセ　公</li>
+<li>オオハ　首</li>
+<li>カエセ　共</li>
+<li>p.2</li>
+<li>ワカト　情</li>
+<li>サクツ　勢</li>
+<li>ムイヌ　考</li>
+<li>チカニ　査</li>
+<li>ヤイヘ　将</li>
+<li>アアス　来</li>
+<li>カオソ　内</li>
+<li>キクサ　政</li>
+<li>タエヌ　司</li>
+<li>テアソ　頼</li>
+<li>ヤクヘ　導</li>
+<li>ハケツ　大</li>
+<li>ヤエハ　局</li>
+<li>ワケテ　惟</li>
+<li>カアセ　公</li>
+<li>アキヒ　之</li>
+<li>タアシ　庸</li>
+<li>チウチ　梁</li>
+<li>タカサ　啓</li>
+<li>テケシ　超</li>
+<li>サアナ　劉</li>
+<li>エケソ　顕</li>
+<li>アウ[ヘエ]　世</li>
+<li>レコテ　陸</li>
+<li>ニキヒ　栄</li>
+<li>ラエナ　廷</li>
+<li>p.3</li>
+<li>ネアテ　軍</li>
+<li>シエニ　旬</li>
+<li>カオソ　内</li>
+<li>タクネ　可</li>
+<li>ソアン　齎/齋</li>
+<li>タウヘ　即</li>
+<li>ウオタ　由</li>
+<li>カエソ　入</li>
+<li>エカヒ　非</li>
+<li>カウホ　俣</li>
+<li>ラアヒ　幹</li>
+<li>サクシ　協</li>
+<li>チトチ　和</li>
+<li>カエソ　入</li>
+<li>ミカヌ　湘</li>
+<li>タコト　吾</li>
+<li>アカニ　人</li>
+<li>レアシ　難</li>
+<li>セカノ　言</li>
+<li>セクタ　調</li>
+<li>ニエス　此</li>
+<li>レオヒ　間</li>
+<li>ウコホ　理</li>
+<li>タケヒ　参</li>
+<li>セコ[シス]　謀</li>
+<li>アキノ　事</li>
+<li>ミウナ　源</li>
+<li>ヤウヘ　専</li>
+<li>アキテ　任</li>
+<li>p.4</li>
+<li>カイタ　光</li>
+<li>カアセ　公</li>
+<li>シクサ　望</li>
+<li>タカス　哿</li>
+<li>カアセ　公</li>
+<li>イキト　抵</li>
+<li>シコヌ　日</li>
+<li>ネエチ　輔</li>
+<li>タキト　告</li>
+<li>カアセ　公</li>
+<li>ヘイホ　近</li>
+<li>ラクタ　形</li>
+<li>アコト　以</li>
+<li>ヘアノ　進</li>
+<li>ケキニ　行</li>
+<li>シオノ　方</li>
+<li>ウコセ　略</li>
+<li>ネアテ　軍</li>
+<li>レクト　院</li>
+<li>キコチ　擁</li>
+<li>エアテ　虚</li>
+<li>タイニ　名</li>
+<li>マアホ　委</li>
+<li>タオセ　員</li>
+<li>アクト　代</li>
+<li>ケウト　表</li>
+<li>ツウシ　等</li>
+<li>クオト　皆</li>
+<li>チキホ　未</li>
+<li>フケホ　組</li>
+<li>フコツ　織</li>
+<li>サクシ　協</li>
+<li>タキヒ　和</li>
+<li>p.5</li>
+<li>ナエチ　四</li>
+<li>ヤキス　師</li>
+<li>レイフ　長</li>
+<li>キイサ　収</li>
+<li>レイセ　集</li>
+<li>ユニヘ　舊</li>
+<li>ヘイソ　部</li>
+<li>ルイト　葛</li>
+<li>アカヌ　亦</li>
+<li>タウヘ　即</li>
+<li>サキフ　出</li>
+<li>セクタ　調</li>
+<li>アイフ　中</li>
+<li>ミカヌ　湘</li>
+<li>タウヘ　即</li>
+<li>キイセ　擬</li>
+<li>アカス　来</li>
+<li>チケヒ　東</li>
+<li>ヱコヒ　面</li>
+<li>ヘアヌ　達</li>
+<li>ヘイホ　近</li>
+<li>ワカト　情</li>
+<li>ミウ[キナ]　源</li>
+<li>ムクフ　群</li>
+<li>タカス　哿</li>
+</UL>
+
+<P>One can see that this is the same as the three-kana code in Huang Xing's telegram discussed above, in view of common codes: 入 (カエソ), 望 (シクサ), 行 (ケキニ), 軍 (ネアテ). Moreover, 日 (シコヌ) and 東 (チケヒ) reveal that A need not be omitted. Instead, my transcription O HI can be corrected to CHI.</P>
+<img src="chinesecrypto6c.png" width="500" style="margin: 10px;"> 
+<P>Moreover, when this list is sorted by character code, one immediately sees that the first character is in A-I-U-E-O order albeit row-by-row (アカサタナハマヤラワ in the A row, イキシチニヒミリヰ in the I row, ウクスツヌフムユル in the U row, エケセテネヘメレヱ in the E row, and then オコソトノホモヨロ in the O row). In Huang Xing's telegram, the number of characters was not enough to see the pattern, except that characters in the A row was in A-I-U-E-O order.</P>
+<P>Closer inspection reveals that incrementing the character code by 1 steps forward the second character in a cycle of 10 (アイウエオカキクケコ). When the fastest cycle completes, the third character steps according to the reverse A-I-U-E-O order within a subset of サ to ホ (ホヘフヒハノネヌニナトテツチタソセスシサ).</P>
+<P>With Microsft Excel, for a character code at A1, the three-kana representation can be obtained by the following formula:</P>
+<DIV class="kakomi" style="width: auto">
+=MID("アカサタナハマヤラワイキシチニヒミリヰウクスツヌフムユルエケセテネヘメレヱオコソトノホモヨロ", INT(VALUE(A1)/200)+1, 1)  & MID("アイウエオカキクケコ", MOD(VALUE(A1)-1, 10)+1, 1) & MID("ホヘフヒハノネヌニナトテツチタソセスシサ", MOD(INT((VALUE(A1)-1)/10), 20)+1, 1)
+</DIV>
+<!--Googleに生成させたがいろいろ問題があって手で直した
+４桁数字を片仮名３文字に変換するエクセルの関数を作れますか。
+0031はアアヒです。数字が１増えるごとに片仮名の２文字目をアイウエオカキクケコの順に変化させます。コの次はアに戻るので１０周期です。アに戻るとき、片仮名の３文字目を逆５０音順で１進めます。なので、ヒの次はハです。アまで行ったら次はワとします。３文字目がワに戻るとき、片仮名の１文字目を「段ごとの５０音順」で進めます。具体的には「アカサタナハマヤラワイキシチニヒミリウクスツヌフムユルエケセテネヘメレオコソトノホモヨロ」の順です。
+無理なら無理と言ってください。
+
+
+=MID("アカサタナハマヤラワイキシチニヒミリウクスツヌフムユルエケセテネヘメレオコソトノホモヨロ", INT(VALUE(L19)/460)+1, 1)  & MID("アイウエオカキクケコ", MOD(VALUE(L19), 10), 1) & MID("ワロレルリラヨユヤモメムミマホヘフヒハノネヌニナトテツチタソセスシサコケクキカオエウイア", MOD(INT(VALUE(L19)/10), 46)+15, 1)
+００５７までうまくいった
+
+=MID("アカサタナハマヤラワイキシチニヒミリウクスツヌフムユルエケセテネヘメレオコソトノホモヨロ", INT(VALUE(L19)/300)+1, 1)  & MID("アイウエオカキクケコ", MOD(VALUE(L19), 10), 1) & MID("ホヘフヒハノネヌニナトテツチタソセスシサコケクキカオエウイア", MOD(INT(VALUE(L19)/10)+1, 30), 1)
+０１７１までうまくいった
+
+１０で割り切れるときにMODの引数が０になるのを調整
+=MID("アカサタナハマヤラワイキシチニヒミリウクスツヌフムユルエケセテネヘメレオコソトノホモヨロ", INT(VALUE(L19)/300)+1, 1)  & MID("アイウエオカキクケコ", MOD(VALUE(L19)-1, 10)+1, 1) & MID("ホヘフヒハノネヌニナトテツチタソセスシサコケクキカオエウイア", MOD(INT(VALUE(L19)/10)+1, 30), 1)
+
+１字目は２００周期らしい
+=MID("アカサタナハマヤラワイキシチニヒミリウクスツヌフムユルエケセテネヘメレオコソトノホモヨロ", INT(VALUE(L19)/200)+1, 1)  & MID("アイウエオカキクケコ", MOD(VALUE(L19)-1, 10)+1, 1) & MID("ホヘフヒハノネヌニナトテツチタソセスシサコケクキカオエウイア", MOD(INT(VALUE(L19)/10)+1, 30), 1)
+
+３字目にあ行、か行はなかった
+=MID("アカサタナハマヤラワイキシチニヒミリウクスツヌフムユルエケセテネヘメレオコソトノホモヨロ", INT(VALUE(L19)/200)+1, 1)  & MID("アイウエオカキクケコ", MOD(VALUE(L19)-1, 10)+1, 1) & MID("ホヘフヒハノネヌニナトテツチタソセスシサ", MOD(INT(VALUE(L19)/10)+1, 20), 1)
+
+1字目にヰ追加
+=MID("アカサタナハマヤラワイキシチニヒミリヰウクスツヌフムユルエケセテネヘメレオコソトノホモヨロ", INT(VALUE(L19)/200)+1, 1)  & MID("アイウエオカキクケコ", MOD(VALUE(L19)-1, 10)+1, 1) & MID("ホヘフヒハノネヌニナトテツチタソセスシサ", MOD(INT(VALUE(L19)/10)+1, 20), 1)
+
+1字目にヱ追加
+=MID("アカサタナハマヤラワイキシチニヒミリヰウクスツヌフムユルエケセテネヘメレヱオコソトノホモヨロ", INT(VALUE(L19)/200)+1, 1)  & MID("アイウエオカキクケコ", MOD(VALUE(L19)-1, 10)+1, 1) & MID("ホヘフヒハノネヌニナトテツチタソセスシサ", MOD(INT(VALUE(L19)/10)+1, 20), 1)
+
+
+１０で割り切れる場合、３文字目が早く切り替わるのを修正
+=MID("アカサタナハマヤラワイキシチニヒミリヰウクスツヌフムユルエケセテネヘメレヱオコソトノホモヨロ", INT(VALUE(L19)/200)+1, 1)  & MID("アイウエオカキクケコ", MOD(VALUE(L19)-1, 10)+1, 1) & MID("ホヘフヒハノネヌニナトテツチタソセスシサ", MOD(INT((VALUE(L19)-1)/10)+1, 20), 1)
+
+INT((VALUE(L19)-1)/10)+1が２０の倍数の場合にエラーになる
+=MID("アカサタナハマヤラワイキシチニヒミリヰウクスツヌフムユルエケセテネヘメレヱオコソトノホモヨロ", INT(VALUE(L19)/200)+1, 1)  & MID("アイウエオカキクケコ", MOD(VALUE(L19)-1, 10)+1, 1) & MID("ホヘフヒハノネヌニナトテツチタソセスシサ", MOD(INT((VALUE(L19)-1)/10), 20)+1, 1)
+-->
+<P>In the following, the fourth column is the three-kana code calculated by Excel, which matches the first column for most cases. Unmatching instances are where I'm not sure of my transcription of the handwriting. (It is important to reiterate here that the characters hard to read for me are not included here.)</P>
+<UL class="responsive-no-bullet-list" style="width:auto; font-size:smaller">
+<li>アウヘ	世	0013	アウヘ</li>
+<li>アイフ	中	0022	アイフ</li>
+<li>アキヒ	之	0037	アキヒ</li>
+<li>アキノ	事	0057	アキノ</li>
+<li>アカヌ	亦	0076	アカヌ</li>
+<li>アカニ	人	0086	アカニ</li>
+<li>アクト	代	0108	アクト</li>
+<li>アコト	以	0110	アコト</li>
+<li>アキテ	任	0117	アキテ</li>
+<li>アアス〓	来	0171	アアス</li>
+<li>アカス〓	来	0171	アアス</li>
+<li>カアタ	先	0341	カアタ</li>
+<li>カイタ	光	0342	カイタ</li>
+<li>カエタ	克	0344	カエタ</li>
+<li>カエソ	入	0354	カエソ</li>
+<li>カエソ	入	0354	カエソ</li>
+<li>カオソ	内	0355	カオソ</li>
+<li>カオソ	内	0355	カオソ</li>
+<li>カアセ	公	0361	カアセ</li>
+<li>カアセ	公	0361	カアセ</li>
+<li>カアセ	公	0361	カアセ</li>
+<li>カアセ	公	0361	カアセ</li>
+<li>カアセ	公	0361	カアセ</li>
+<li>カアセ	公	0361	カアセ</li>
+<li>カアセ	公	0361	カアセ</li>
+<li>カエセ	共	0364	カエセ</li>
+<li>サキフ	出	0427	サキフ</li>
+<li>サアナ	劉	0491	サアナ</li>
+<li>サキテ	勉	0517	サキテ</li>
+<li>サクツ	勢	0528	サクツ</li>
+<li>サクシ	協	0588	サクシ</li>
+<li>サクシ	協	0588	サクシ</li>
+<li>タウヘ	即	0613	タウヘ</li>
+<li>タウヘ	即	0613	タウヘ</li>
+<li>タウヘ	即	0613	タウヘ</li>
+<li>タケヒ	参	0639	タケヒ</li>
+<li>タクネ	可	0668	タクネ</li>
+<li>タエヌ	司	0674	タエヌ</li>
+<li>タイニ	名	0682	タイニ</li>
+<li>タキト	告	0707	タキト</li>
+<li>タコト	吾	0710	タコト</li>
+<li>チトチ〓	和	0735	タオチ</li>
+<li>タキヒ〓	和	0735	タオチ</li>
+<li>タオセ	員	0765	タオセ</li>
+<li>タカス	哿	0776	タカス</li>
+<li>タカス	哿	0776	タカス</li>
+<li>タアシ	唐	0781	タアシ</li>
+<li>タカサ	啓	0796	タカサ</li>
+<li>ナエチ	四	0934	ナエチ</li>
+<li>ハケツ	大	1129	ハケツ</li>
+<li>ハエタ	奉	1144	ハエタ</li>
+<li>マアホ	委	1201	マアホ</li>
+<li>ヤイヘ	将	1412	ヤイヘ</li>
+<li>ヤクヘ	導	1418	ヤクヘ</li>
+<li>ヤエハ	局	1444	ヤエハ</li>
+<li>ヤキス〓	師	1597	ヤキサ</li>
+<li>ラアヒ	幹	1631	ラアヒ</li>
+<li>ラアネ	庸	1661	ラアネ</li>
+<li>ラエナ	廷	1694	ラエナ</li>
+<li>ラクタ	形	1748	ラクタ</li>
+<li>ワカト	情	1906	ワカト</li>
+<li>ワカト	情	1906	ワカト</li>
+<li>ワケテ	惟	1919	ワケテ</li>
+<li>イクニ	才	2088	イクニ</li>
+<li>イキト	抵	2107	イキト</li>
+<li>イキト	抵	2107	イキト</li>
+<li>イコト	承	2110	イコト</li>
+<li>キコチ	擁	2340	キコチ</li>
+<li>キイセ	擬	2362	キイセ</li>
+<li>キクサ	政	2398	キクサ</li>
+<li>シオノ	方	2455	シオノ</li>
+<li>シコヌ	日	2480	シコヌ</li>
+<li>シコヌ	日	2480	シコヌ</li>
+<li>シエニ	旬	2484	シエニ</li>
+<li>シクサ	望	2598	シクサ</li>
+<li>チキホ	未	2607	チキホ</li>
+<li>チケヒ	東	2639	チケヒ</li>
+<li>チウチ	梁	2773	チウス</li>
+<li>ニウス	正	2973	ニウス</li>
+<li>ニエス	此	2974	ニエス</li>
+<li>ミカヌ	湘	3276	ミカヌ</li>
+<li>ミカヌ	湘	3276	ミカヌ</li>
+<li>ミウナ	源	3293	ミウナ</li>
+<li>ミウナ	源	3293	ミウナ</li>
+<li>ウコホ	理	3810	ウコホ</li>
+<li>ウイチ	生	3932	ウイチ</li>
+<li>ウオタ	由	3945	ウオタ</li>
+<li>ウコセ	略	3970	ウコセ</li>
+<li>クオト	皆	4105	クオト</li>
+<li>スケハ	知	4249	スケハ</li>
+<li>スイハ〓	短	4252	スイノ</li>
+<li>ツウシ	等	4583	ツウシ</li>
+<li>ツウシ	等	4583	ツウシ</li>
+<li>フケホ	組	4809	フケホ</li>
+<li>フコツ	織	4930	フコツ</li>
+<li>ムクフ	群	5028	ムクフ</li>
+<li>ムイヌ	考	5072	ムイヌ</li>
+<li>ユニヘ〓	舊	5283	ユウニ</li>
+<li>ルイト〓	葛	5514	ルエテ</li>
+<li>エアテ	虚	5711	エアテ</li>
+<li>ケキニ	行	5887	ケキニ</li>
+<li>ケウト	表	5903	ケウト</li>
+<li>セカノ	言	6056	セカノ</li>
+<li>セイネ	計	6060	セコノ</li>
+<li>セクタ	調	6148	セクタ</li>
+<li>セクタ	調	6148	セクタ</li>
+<li>セコ[シス]	謀	6180	セコス</li>
+<li>テケツ	賊	6329	テケツ</li>
+<li>テキチ	賜	6337	テキチ</li>
+<li>テカ？	起	6386	テカシ</li>
+<li>テケシ	超	6389	テケシ</li>
+<li>ネアテ	軍	6511	ネアテ</li>
+<li>ネアテ	軍	6511	ネアテ</li>
+<li>ネエチ	輔	6534	ネエチ</li>
+<li>ヘイホ	近	6602	ヘイホ</li>
+<li>ヘイホ	近	6602	ヘイホ</li>
+<li>ヘアノ	進	6651	ヘアノ</li>
+<li>ヘアヌ	達	6671	ヘアヌ</li>
+<li>ヘエニ	適	6684	ヘエニ</li>
+<li>ヘイソ	部	6752	ヘイソ</li>
+<li>レウホ〓	釜	6858	メクノ</li>
+<li>レイフ	長	7022	レイフ</li>
+<li>レオヒ	間	7035	レオヒ</li>
+<li>レクト	院	7108	レクト</li>
+<li>レコテ	陸	7120	レコテ</li>
+<li>レイセ	集	7162	レイセ</li>
+<li>レアシ	難	7181	レアシ</li>
+<li>レウサ	電	7193	レウサ</li>
+<li>エカヒ	非	7236	ヱカヒ</li>
+<li>ヱコヒ	面	7240	ヱコヒ</li>
+<li>エケタ	願	7349	ヱケタ</li>
+<li>オオハ	首	7445	オオハ</li>
+<li>ソカホ	黄	7806	ソカホ</li>
+<li>ソアン〓	齎/齋	7873/7872	ソウヌ/ソイヌ</li>
+</UL>
+<P>The above formula reproduces the three-kana code of the Huang Xing telegram except for a few. In the following, the fourth column was calculated from the formula.</P>
+<UL class="responsive-no-bullet-list" style="width:auto; font-size:smaller">
+<li>0001	一	アアホ	アアホ</li>
+<li>0149	何	アケタ	アケタ</li>
+<li>0338	兄	カクチ	カクチ</li>
+<li>0341	先	カアタ	カアタ</li>
+<li>0354	入	カエソ	カエソ</li>
+<li>0434	切	サエヒ	サエヒ</li>
+<li>0603	印	タウホ	タウホ</li>
+<li>0776	哿	タカス	タカス</li>
+<li>0796	啓	タカサ	タカサ</li>
+<li>0917	嚴	ナキテ	ナキテ</li>
+<li>0948	國	ナクタ	ナクタ</li>
+<li>1170	好	ハコセ	ハコセ</li>
+<li>1516	崧	ヤカテ	ヤカテ</li>
+<li>1777	徑	ラキス	ラキス</li>
+<li>1885	悉	ワオニ	ワオニ</li>
+<li>2234	接	キエヒ	キエヒ</li>
+<li>2417	敬	シキヘ	シキヘ</li>
+<li>2480	日	シコヌ	シコヌ</li>
+<li>2579	書	サクフ〓	シケス</li>
+<li>2598	望	シクサ	シクサ</li>
+<li>2639	東	チケヒ	チケヒ</li>
+<li>2973	正	ニウス	ニウス</li>
+<li>3256	渡	ミカノ	ミカノ</li>
+<li>3276	湘	ミカヌ	ミカヌ</li>
+<li>3928	甚	ウクツ	ウクツ</li>
+<li>4099	發	マカス〓	クケナ</li>
+<li>4355	示	スオソ	スオソ</li>
+<li>5174	能	ムエス	ムエス</li>
+<li>5281	興	ユアニ	ユアニ</li>
+<li>5887	行	ケキニ	ケキニ</li>
+<li>5887	行	ケキニ	ケキニ</li>
+<li>5887	行	ケキニ	ケキニ</li>
+<li>6138	誥	セカナ〓	セクチ</li>
+<li>6175	諸	セオス	セオス</li>
+<li>6233	護	テウヒ	テウヒ</li>
+<li>6373	贛	テアス	テウス</li>
+<li>6511	軍	ネアテ	ネアテ</li>
+<li>6643	速	ヘウハ	ヘウハ</li>
+<li>6643	速	ヘウハ	ヘウハ</li>
+<li>6684	適	ヘエニ	ヘエニ</li>
+<li>6716	邕	オクサ〓	ヘカテ</li>
+<li>7003	鑒	レウホ	レウホ</li>
+<li>7035	間	レオヒ	レオヒ</li>
+<li>7148	隱	レクタ	レクタ</li>
+<li>7193	電	レウサ	レウサ</li>
+<li>7193	電	レウサ	レウサ</li>
+</UL>
+
+
+<br>
+<br>
+<font size="2">
+&COPY;2026 S.Tomokiyo<br>
+First posted on 18 September 2026. Last modified on 23 September 2026. Encoded in UTF-8.<br>
+<A HREF="crypto.htm">Articles on Historical Cryptography</A><BR>
+</font>
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>

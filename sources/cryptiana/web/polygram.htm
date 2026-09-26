@@ -1,0 +1,121 @@
+<HTML>
+<HEAD>
+<TITLE>
+Listing Recurring Polygrams from Ciphertext (with Perl)
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="Cipher, Code, polygram, Perl">
+<link rel=stylesheet type=text/css href=decode2.css>
+</HEAD>
+<BODY>
+<H1>Listing Recurring Polygrams from Ciphertext (with Perl)</H1>
+<P>Finding repetition is an important step in codebreaking. Many tools are available to count bigrams from ciphertext (or any text) (see, e.g., <A HREF="tool2.htm">another article</A>). Some can even find trigrams, tetragrams, pentagrams, and possibly more.</P>
+<P>However, longer n-grams may occur repeatedly. With monoalphabetic substitution ciphers without homophones, repetition of a ten-letter word causes a recurring 10-gram. <font size="2">(With homophonic substitution ciphers, depending on the length of the ciphertext, repetition of a long sequence is relatively rare, and inspecting the context of the few repeating pentagrams is usually sufficient to find longer sequences, if any.)</font> When one is faced with a ciphertext with many recurring patterns, it may be desired to find recurring n-grams without limit to n.</P>
+<P>I wrote a simple Perl script to list recurring polygrams. (Here, I define a polygram to be an n-gram with n being large and indefinite.)</P>
+
+<H3>Polygram Script</H3>
+<P>The following script is to list recurring n-grams (n>=LEN) from CIPHERTEXT.</P>
+<DIV class="kakomi">
+#!/usr/local/bin/perl<br>
+# 複数出現するn-gram (n&gt;=LEN)を検出<br>
+<br>
+$cipher=("CIPHERTEXT");#暗号文を入力<br>
+<br>
+$LEN=10; # $LEN-gram以上の繰り返しを取得<br>
+$i=0;<br>
+while ($i&lt;length($cipher)-$LEN)<br>
+{<br>
+<div style="text-indent: 1em;">	$j=$i+$LEN;<br></div>
+<div style="text-indent: 1em;">	$isany=0;<br></div>
+<div style="text-indent: 1em;">	while ($j&lt;length($cipher)-$LEN)<br></div>
+<div style="text-indent: 2em;">	{	<br></div>
+<div style="text-indent: 2em;">		if(substr($cipher,$i,$LEN) eq substr($cipher,$j,$LEN))<br></div>
+<div style="text-indent: 2em;">		{	$isany++;<br></div>
+<div style="text-indent: 3em;">			$k=1;<br></div>
+<div style="text-indent: 3em;">			while(	substr($cipher,$i,$LEN+$k) eq substr($cipher,$j,$LEN+$k) && <br></div>
+<div style="text-indent: 5em;">					$i+$LEN+$k &lt; length($cipher)<br></div>
+<div style="text-indent: 5em;">				) {$k++;} #比較文字列を伸ばせるだけ伸ばす; 後半の条件判断は不要のはずだが念のため<br></div>
+<div style="text-indent: 3em;">			$recurring=substr($cipher,$i,$LEN+$k-1);<br></div>
+<div style="text-indent: 3em;">			substr($cipher,$j+$LEN-1,1,"*"); #２回ヒットしないようにXで置き換えておく<br></div>
+<div style="text-indent: 3em;">			if ( $isany==1 ) { print ("$recurring\n");} <br></div>
+<div style="text-indent: 3em;">			print ("$recurring\n");<br></div>
+<div style="text-indent: 3em;">			$j=$j+$LEN+$k;<br></div>
+<div style="text-indent: 2em;">		} <br></div>
+<div style="text-indent: 2em;">		else { $j++;}<br></div>
+<div style="text-indent: 1em;">	}<br></div>
+<div style="text-indent: 1em;">	if ($isany &gt; 0) { $i=$i+$LEN+$k;}<br></div>
+<div style="text-indent: 1em;">	else { $i++;}<br></div>
+}<br>
+</DIV>
+
+<H3>Demonstration</H3>
+<P>As an example, when the following is put in place of CIPHERTEXT and LEN is set to 10,</P>
+<DIV class="kakomi" style="word-wrap: break-word;">
+12160176164864242114256.12160542264721648642384252422161764138.:671147122672422141762384176024472172242.70144120847250248625624181216050176226151764556^_86525425417240521782562701761365566714482241301712221071342522423801712160216224-245058156271507132176222612160122401345647216480556126214425252220242486742417^_6^_7^_27132864721722424136212262417458421417482172725^_4^_122210144120847272742507130713262122024212160.18.1765862167652524656240228254246472671547425680130713205562405254241227250725613017026220136256270.21471242413017621027617486472124854254.22242120130713255613623805252212132138116254827017148258242240252428455024218.25825256174172524614240136.2384725723801388556120242527274621471216024641301442450176685256256422024212160134872487417252422121326212222425484212172521222101648647222242842527017220241327270172384170727024413614.02407256470171467021470172121322202422202423805250.2121725041725240244156276727216224240841328055024213624013672782170240122212262402145072716486472220244171622446172121322402224050725455024241817017224701205562541216041717015847222265624021025655024241745848217272541216012240130821202425215088412025424011017417224512854542207132727562128042202422240162134172241227501586242405222713071322162384713216480550242134254174224242174.1841202545560247212227525240252561365425651442404171216072716486472212132121601224013450000
+</DIV>
+<P>one gets the following listing of 10-grams, 11-grams, 12-grams, and 14-grams.</P>
+<DIV class="kakomi">
+01441208472<br>
+01441208472<br>
+121601224013<br>
+121601224013<br>
+12160122401345<br>
+22024212160<br>
+22024212160<br>
+1648647222<br>
+1648647222<br>
+8055024213<br>
+8055024213<br>
+0727164864722<br>
+0727164864722<br>
+121601224*13<br>
+121601224*13<br>
+<br>
+(before debugging substr($cipher,$j,$LEN-1,"*") into substr($cipher,$j+$LEN-1,1,"*"), the result was as follows)<br>
+<br>
+01441208472<br>
+01441208472<br>
+121601224013<br>
+121601224013<br>
+12160122401345<br>
+22024212160<br>
+22024212160<br>
+1648647222<br>
+1648647222<br>
+8055024213<br>
+8055024213<br>
+</DIV>
+
+<H3>Limitations</H3>
+<P>As you may see, the script has limitations.</P>
+<P>&bull;The first "121601224013" should be "12160122401345", but it is printed only up to the length of the second matching "121601224013".</P>
+<P>&bull;More importantly, it doesn't seem to work properly when "121601224013" "12160122401345" "12160122401345" occur in this order (i.e., the second and third occurrences are longer than the first instance). I haven't debugged on this issue. (The cause may be related to the line "substr($cipher,$j,$LEN-1,"*")", but commenting out the line didn't fix it.)</P>
+<P>&bull;I'm not sure whether I treated boundary conditions properly. (I haven't checked if it works properly when two different recurring patterns follow one another without a break.)</P>
+<P>&bull;Redundant entries may be included in the output. The line "substr($cipher,$j,$LEN-1,"*")" is intended to prevent it by corrupting the last character, but it may not work when there are two matching patterns both with the corrupted character.</P>
+<P>&bull;It is slow for a longer ciphertext. The above result can be obtained in an instant (the input is about 1400 bytes). But when I tried with a ciphertext of about 14000 bytes long, it took about twenty seconds. I know this is an O(N<sup>2</sup>) algorithm, in which processing time increases with N<sup>2</sup> (N is the length of CIPHERTEXT), but I'm not sure there is not some bug causing the sluggishness.</P>
+<br>
+<P>Despite all these limitations, I hope this simple script helps codebreaking of ciphertext with many repeating patterns.</P>
+
+<br>
+<br>
+<font size="2">
+&COPY;2018 S.Tomokiyo<br>
+First posted on 11 February 2020. Last modified on 12 February 2020.<br>
+<A HREF="crypto.htm">Cryptiana: Articles on Historical Cryptography</A><BR>
+</font>
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>

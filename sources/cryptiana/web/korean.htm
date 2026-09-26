@@ -1,0 +1,78 @@
+<HTML>
+<HEAD>
+<TITLE>
+Substitution Cipher for Hangul
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=UTF-8"> 
+<META HTTP-EQUIV="keyword" CONTENT="Cipher, Code, Hangul">
+<link rel=stylesheet type=text/css href=decode2.css>
+</HEAD>
+<BODY>
+<H1>Substitution Cipher for Hangul</H1>
+<p>Japanese text can be written with some fifty kana, which can be enciphered with substitution ciphers. (Historical examples can be seen e.g., at <a href="meijijapan.htm">another article</a>). The Chinese language employs thousands of characters, so any practical encryption in Chinese is based on numerical code of those Chinese characters.<p>
+<br />
+<p>What about Korean? I have long wondered whether substitution cipher is possible in Korean script (Hangul). This is because Hangul text is not simply a series of Hangul letters. Instead, two or three Hangul letters (consonant+vowel or consonant+vowel+consonant) are combined to form a syllabic block, which is the unit of writing (morphemic block). Moreover, placement of letters within a block differs depending on the vowel. The vowels for A, E, I (which have a vertical axis) are written to the right of the initial consonant, but the vowels for O and U (which have a horizontal axis) are written <i>under</i> the initial consonant. So, simply substituting one Hangul letter for another may result in a letter sequence that cannot be formed into morphemic blocks.</p>
+<DIV style="float:right; width:600px">
+<img src="korean.png"><br>
+</DIV>
+<p>Googling finds apps to use cipher in Hangul, but I still cannot find historical examples of substitution ciphers in Hangul. Considering that Hangul was not used in official documents until 1894 and that I have seen use of numerical codes for telegraphy (posted <a href="https://cryptiana.blogspot.com/2024/04/korean-telegraphic-code.html">here</a>), substitution in Hangul may not have been common historically.</p>
+<br />
+<p>The following describes four possible schemes for substitution ciphers to work in Hangul, of which I found the third in a book for kids. The second and the third options require use of non-Hangul script (e.g., Arabic figures or other graphic symbols) for the substitution alphabet.</p>
+
+<H3>1.Separate Enciphering for Vowels and Consonants</H3>
+<p>Substitution may be applied in separate groups for consonants and vowels. This way, the "consonant-vowel" grouping is preserved in substitution. This is the approach that AI (Copilot) on my PC gave to my question. Actually, AI at first gave an example of a Caesar cipher of consonants alone. When I asked about vowels, AI gave me a separate substitution table for vowels. I do not know whether this simple scheme really works for actual Hangul text. (For example, I hear not every consonant can be the third element in a block; there are letters that are not simple vowels or consonants.) To my repeated requests to give actual examples, AI simply ignored "in Hangul" and gave websites for the Caesar cipher in Japanese!<p/>
+
+<H3>2.Enciphering of Morphemic Blocks</H3>
+<p>Substitution may also be applied to morphemic blocks rather than to letters. Unicode registers 11,172 Hangul morphemic blocks (399 consisting of two letters + 10,773 consisting of three letters). If we think this whole set as a single alphabet, substitution cipher can be used. (An attempt to use the Vigenere cipher in Hangul (<a href="https://informatika.stei.itb.ac.id/~rinaldi.munir/Kriptografi/2011-2012/Makalah-2012/Makalah-Kripto-2012-014.pdf">pdf</a> in Indonesian?) seems to use this approach.)<p/>
+
+
+<H3>3.Enciphering of Two-Letter Groups and Odd Letters</H3>
+<p>A simple practical solution is to provide for symbols for two-letter combinations (V+C) and also symbols for individual consonants. A C-V-C block can be enciphered with two symbols for CV and C. For example, 한(h-a-n) may be enciphered as 하(h-a) and ﾤ (n).</p>
+<p>I found this scheme in a Korean translation of a book for Japanese kids, Yutaka Hara, <i>Kaiketsu Zorori</i>, vol.11, "Kaiketsu Zorori and the Mysterious Aliens" (Japanese: かいけつゾロリのなぞのうちゅうじん, Korean: 쾌걸 조로리, 수수께끼의 외계인 <span class="note">(<A HREF="https://ko.wikipedia.org/wiki/%EC%BE%8C%EA%B1%B8_%EC%A1%B0%EB%A1%9C%EB%A6%AC">Wikipedia in Korean</A>)</span>). The story does not involve a cipher, but is purported to be originally written in "alienese" (Japanese: うちゅうご, Korean: 우주어). The back endpaper prints a table for reading alienese, which is a substitution cipher table. The Japanese table, also used for riddles for kids, can be found at the publisher's website (<A HREF="https://www.poplar.co.jp/topics/51895.html">here</A> and <A HREF="https://www.poplar.co.jp/topics/54055.html">here</A>). The Korean version is an adaptation of this to the Hangul syllable system.</p>
+<p>To look more closely, the substitution symbols for two-letter blocks in Korean are systematically designed as a combination of two graphic symbols for a consonant and a vowel. The graphic symbols for consonants can be used alone to represent for the third letter in a CVC block (e.g., ﾤ in 인).<p>
+<p>The table also gives alternative symbols for three vowels, which I suppose may be used for double vowels. (It should be remembered that Hangul has a consonant symbol for "no initial consonant".)</p>
+<p>The table includes aspired consonants (e.g., ㅋ) (of which the Hangul letter has an additional stroke) as well as plain consonants (e.g., ㄱ), while it does not include tense consonants (e.g., ㄲ). Since tense consonants are made of doubling the consonant symbol, adding an additional consonant symbol would suffice for representing a syllable with a sense consonant. For example, 끼 may be split to ㄱ기.</p>
+<img src="zorori.png" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+<P>(The above image shows the cipher table in Japanese, Chinese (see my <A HREF="https://cryptiana.blogspot.com/2025/10/a-substitution-cipher-in-chinese-for.html">blogpost</A>), and Korean.)</P>
+
+
+<H3>4. Enciphering Letters without Forming Morphemic Blocks</H3>
+<p>The idea of separately enciphering the final consonant above would inspire enciphering a Hangul script by splitting every morphemic block into letters. For example, 한글 (Han-gul) may be split into ㅎㅏㄴㄱㅡㄹ to be enciphered letter by letter.</p>
+
+<!--宇宙語の紹介文のOCR
+이번 조로리 책은 여러분이 알기 쉽게 우주인의 말을 우리말로 
+바꾸어 만들었답니다. 하지만 우주인은 우주어를 사용하고 있지요 
+이 페이지에 우주어로 된 우주 신문’을 실었습니다. 아래에 있는 
+표를 보고 번역을 해 보세요. 여러분도 어느새 우주어를 읽을 수 
+있게 될 거예요.ここまで
+1—융&되0선。9융I！ —느〔농0끙느‘舍寒30
+조로리 느 ！一	어 [:I 마르 근 조 등아 해 요
+나 조로리는 엄마를 좋아해요 (받침과 이중모음，이중자음에 주의하세요.)-->
+
+<H3>(26 July 2026)</H3>
+<P>I learned that the options under 1., 3., and 4. above were actually used in history (see <A HREF="korean2.htm">another article</A>).</P>
+
+<br>
+<br>
+<font size="2">
+&COPY;2025 S.Tomokiyo<br>
+First posted on 22 March 2025. This article (encoded in UTF-8) incorporates text from my <A HREF="https://cryptiana.blogspot.com/2025/02/substitution-cipher-in-hangul.html">blog post</A> of the same title. Last modified on 26 July 2026.<br>
+<A HREF="crypto.htm">Articles on Historical Cryptography</A><BR>
+</font>
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>
+

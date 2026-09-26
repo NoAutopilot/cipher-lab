@@ -1,0 +1,67 @@
+<HTML>
+<HEAD>
+<TITLE>
+Creating a Contact Chart with Microsoft Excel
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="Cipher, Code, Contact Chart, Excel">
+<link rel=stylesheet type=text/css href=decode2.css>
+</HEAD>
+<BODY>
+<H1>Creating a Contact Chart with Microsoft Excel</H1>
+
+<H3>Contact Analysis</H3>
+<P>In codebreaking, the next step following the basic frequency counting would be bigram counting. However, there are 676 bigrams (for 26-letter alphabets) and inspection of the most frequent few bigrams might not be very helpful. Still, putting bigram statistics in a table may reveal some characteristics of the letters. Such a table is called a contact chart because it shows contacts of each letter: how often each letter is followed/preceded by other letters.</P>
+<P>Contact analysis is explained in, e.g., David Kahn, <i>The Codebreakers</i> (1967), p.100-102. An example of my own use of contact charts is found in <A HREF="vatican.htm">another article</A> (Vatican ciphers) and <A HREF="ormonde.htm">another article</A> (Ormonde's cipher).</P>
+
+<H3>Creating a Contact Chart with Microsoft Excel</H3>
+<P>The following describes how to create a contact chart with a spreadsheet program such as Microsoft Excel. (I use "Microsoft Excel 2016" in Japanese.)</P>
+
+<img src="contact.png" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+
+<P>(1) First, perform frequency counting of single symbols (i.e., unigrams) (see <A HREF="tool1.htm">another artcle</A>) and put the results in Columns A and B in a descending order. (Sorting is not essential but would be convenient to focus on bigrams including most frequent symbols in a contact chart.)</P>
+<br>
+<P>(2) Second, perform frequency counting of bigrams (see <A HREF="tool2.htm">another article</A>) and put the results in Column D and E in a descending order. (Sorting is not necessary.)</P>
+<br>
+<P>(3) Copy Column A and paste it to Column G, which would be the label column for the contact chart.</P>
+<br>
+<P>(4) Copy the unigram listing in Column A (A2, A3, A4, ...) and paste it to a <i>horizontal</i> sequence of cells H1, I1, J1, .... To do this, after copying, right-click on cell H1, choose Paste <u>S</u>pecial (形式を選択して貼り付け(<u>S</u>)), put a check sign in a box for Transpos<u>e</u> (行と列を入れ替える(<u>E</u>)), and click on OK.</P>
+<P>The unigram listing pasted in (3) and (4) do not need to be complete.</P>
+<br>
+<P>(5) Enter<br> =OFFSET($E$1,MATCH($G2&" "&H$1,$D:$D,0)-1,0)<br> in cell H2. This locates the bigram $G2&" "&H$1 (that is, cell G2 followed by H1 with a space in-between) from Column D ($D:$D) and fetches its counting from Column E.</P>
+<br>
+<P>(6) Copy and paste the formula of (5) to the entire contact chart table as large as desired (with H2 at the top left and AC10 at the bottom right in the illustrated example above).</P>
+<P>In the illustrated example, cell K3 shows that the bigram "41 40" occurs 9 times, whereas cell J5 shows the bigram "40 41" occurs 12 times. In the illustrated example, "##" shows where there was no match for the bigram.</P>
+<br>
+<P>(7) When viewing the contact chart thus created, it will be convenient to lock the label row and the label column (those inculding the gray cells in the above example) from scrolling. This can be done by, while cell G1 is selected, selecting a view (表示) tab, clicking on "Freeze Panes" (ウィンドウ枠の固定), and selecting <u>F</u>reeze Panes (ウィンドウ枠の固定(<u>F</u>)), which is the first among the three options: <u>F</u>reeze Panes, Freeze Top <u>R</u>ow, and Freeze First <u>C</u>olumn.</P>
+
+<H3>Contact Chart in the Days of Manual Work</H3>
+<P>In the days of manual work, a contact chart was more necessary than it is today. In those days, rather than creating a contact chart from bigram statistics, a contact chart was made for counting bigrams in the first place by using tallies. The following is from Kahn p.101.</P>
+<P>Repetition of each column head in each cell helps manual working. The symbol in each cell is accompanied by a tally above and another below. The tally above a symbol is a count of how often the symbol of the row is followed by the symbol of that column. The tally below shows the count of the row symbol preceded by the column symbols. Of course, the information is redundant because the chart is symmetrical. (That is, the count of how often A is followed by B is equal to how often B is preceded by A.)</P>
+<img src="contact2.jpg" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+<P>The following is a chart created by Rohrbach in breaking Euler's cipher (see <A HREF="euler.htm">another article</A>). This is easier to create (one does not need to prepare a matrix), though this can only check "a letter following the current letter" (not a letter that the current letter follows).</P>
+<img src="euler1.png" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+
+<br>
+<br>
+<font size="2">
+&COPY;2018 S.Tomokiyo<br>
+First posted on 14 October 2018. Last modified on 3 January 2021.<br>
+<A HREF="crypto.htm">Cryptiana: Articles on Historical Cryptography</A><BR>
+</font>
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>

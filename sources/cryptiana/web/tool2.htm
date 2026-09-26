@@ -1,0 +1,106 @@
+<HTML>
+<HEAD>
+<TITLE>Bigram Count (with Microsoft Excel)
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="Cipher, Code, bigram count, Microsoft Excel">
+<link rel=stylesheet type=text/css href=decode2.css>
+
+</HEAD>
+<BODY>
+<H1>Bigram Count (with Microsoft Excel)</H1>
+<H3>Bigram Count Tools for Simple Text</H3>
+<P>In codebreaking, bigram count is often useful. A bigram is a pattern of a letter (symbol) followed by another. Bigram count shows by what letters (symbols) a particular letter (symbol) is often followed or preceded. In English, for example, if a symbol is always followed by some particular symbol, the combination may be Q+U.</P>
+<P>Bigram frequency data is available at, e.g., <A HREF="https://en.wikipedia.org/wiki/Bigram">Wikipedia</A>.</P>
+<br>
+<P>Today, for a simple text, resources are available on the Web to do the bigram count:</P>
+<P><A HREF="https://www.mtholyoke.edu/courses/quenell/s2003/ma139/js/bigram.html">Bigram Counter</A> (Mount Holyoke College)</P>
+<P><A HREF="https://www.dcode.fr/frequency-analysis">Frequency Analysis</A> (Dcode)</P>
+<P><A HREF="http://practicalcryptography.com/cryptanalysis/text-characterisation/monogram-bigram-and-trigram-frequency-counts/">Monogram, Bigram and Trigram frequency counts</A> (Practical Cryptography)</P>
+<P>Source codes are also found by Googling and may be useful for tuning for specific purposes.</P>
+
+<H3>Handling Symbols Consisting of More Than One Letter</H3>
+<P>The tools above assume the input text (whether encrypted or not) is written in ordinary letters and do not serve for the purpose of counting bigrams in a ciphertext such as "40 37 22 40 23 13 23 38 17 31 25 ...", the kind of ciphertext very often encountered in history. Actually, there is a tool on the Web that can handle this type of input.</P>
+<P><A HREF="http://guidetodatamining.com/ngramAnalyzer/">Online NGram Analyzer</A> (developed by p00d13 1337)</P>
+<P>This might have been the end of this article.</P>
+<P>But before finding this tool, I relied on an approach with Microsoft Excel, which is presented below.</P>
+<P>(Even before that, for a long time, I used a tedious way of creating a list of bigrams with a text editor and then following an ordinary manner to count the records. For example, a regular expression can be used to replace "40 37" with "40) (40 37) (37"; "22 40" with "22) (22 40) (40", etc. to obtain a list of bigram records (40 37) (37 22) (22 40) (40 23) (23 13) (13 23) (23 38) (38 17) (17 31) (31 25)". This reduces the problem into record counting, which can be done with Microsoft Excel as described in <A HREF="tool1.htm">another article</A>.)</P>
+
+
+<H3>Bigram Count with Microsoft Excel</H3>
+<P>The following presents a method of generating a bigram listing from text, which may consist of words or figure groups. Once a bigram listing is obtained, the record counting method of <A HREF="tool1.htm">another article</A> can be used to generate bigram statistics.</P>
+<P>Googling finds several implementations for creating a bigram listing by using simple macros in Microsoft Excel.</P>
+
+
+<DIV class="kakomi2">
+Sub bigrams()<br>
+&nbsp; &nbsp; Dim K As Long, i As Long<br>
+&nbsp; &nbsp; K = 2<br>
+&nbsp; &nbsp; tokens = Split(Range("A1").Value, " ")<br>
+' Splitting the text in A1 into elements in an array "tokens"<br>
+' (The text to be analyzed is put in A1.)<br>
+<br>
+&nbsp; &nbsp; For Each a In tokens<br>
+&nbsp; &nbsp; &nbsp; &nbsp; Cells(K, 1).Value = a<br>
+&nbsp; &nbsp; &nbsp; &nbsp; K = K + 1<br>
+&nbsp; &nbsp; Next a<br>
+' First column receives words in the array<br>
+<br>
+&nbsp; &nbsp; K = 2<br>
+&nbsp; &nbsp; For i = LBound(tokens) To UBound(tokens) - 1<br>
+&nbsp; &nbsp; &nbsp; &nbsp; Cells(K, 2).Value = tokens(i) & " " & tokens(i + 1)<br>
+&nbsp; &nbsp; &nbsp; &nbsp; K = K + 1<br>
+&nbsp; &nbsp; Next i<br>
+' Second column receives a word concatenated with the following word (i.e., a bigram listing)<br>
+<br>
+&nbsp; &nbsp; K = 2<br>
+&nbsp; &nbsp; For i = LBound(tokens) To UBound(tokens) - 2<br>
+&nbsp; &nbsp; &nbsp; &nbsp; Cells(K, 3).Value = tokens(i) & " " & tokens(i + 1) & " " & tokens(i + 2)<br>
+&nbsp; &nbsp; &nbsp; &nbsp; K = K + 1<br>
+&nbsp; &nbsp; Next i<br>
+' Third column will be a trigram listing<br>
+<br>
+End Sub<br>
+</DIV>
+
+<P>Those who are not accustomed with Visual Basic (VBA) (like me) will wonder "Where I should write this script?". (The following worked for me but I'm not sure it is correct. I use "Microsoft Excel 2016" in Japanese.)</P>
+<P>First, paste the text to be analyzed in cell A1.</P>
+<P>Click on "Developer" (開発), then "Visual Basic", which opens a VBE (Visual Basic Editor) window. Click on "Insert" (挿入), then "Module" (標準モジュール (<u>M</u>)), which opens a blank window and adds a default name "Module1" in the list in the left side bar.</P>
+<P>Paste the above script in the blank window. Just closing the window seems to save the script.</P>
+<P>Right-click on "Module1" in the side bar and choose "<u>E</u>xport File" (ファイルのエクスポート (<u>E</u>)). (I used the name "ModuleBigram.bas" but any name with the extension ".bas" will do.)</P>
+<P>Right-click on "Module1" in the side bar and choose "<u>I</u>mport" (ファイルのインポート (<u>I</u>)). (I'm sure I'm doing some redundant operations here but I know no better way.)</P>
+<P>Close the VBE window.</P>
+<P>In the spreadsheet (of which the cell A1 contains the text to be analyzed), click on "Developer" (開発) again and now select "Macros" (マクロ). Select "bigrams" (which is the name of the above script) and click on "Run" (実行).</P>
+<P>The column A will show the original text split into tokens such as words or figure groups. The column B will provide the bigram listing wanted. The column C will give a trigram listing.</P>
+<P>It will be straightforward to modify the above script to list bigrams in reverse order (to serve as a sort key when you want to see what letter (group) precedes (rather than follows) a particular letter (group) most often.) etc. </P>
+
+
+
+<!--開発→Visual BasicでModule1.basをインポートして，実行-->
+
+<!--A1セルにあるテキストのbigram, trigramを生成-->
+
+
+<br>
+<br>
+<font size="2">
+&COPY;2017 S.Tomokiyo<br>
+First posted on 25 December 2017. Last modified on 25 December 2017.<br>
+<A HREF="crypto.htm">Cryptiana: Articles on Historical Cryptography</A><BR>
+</font>
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>

@@ -1,0 +1,156 @@
+<HTML>
+<HEAD>
+<TITLE>
+Korean Cryptography
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=UTF-8"> 
+<META HTTP-EQUIV="keyword" CONTENT="Cipher, Code, Hangul">
+<link rel=stylesheet type=text/css href=decode2.css>
+</HEAD>
+<BODY>
+<H1>Korean Cryptography</H1>
+<P>Hangul, a script for Korean created in the fifteenth century, is not amenable to substitution cipher. Possible options are: 1. separate enciphering for vowels and consonants, 2. enciphering of morphemic blocks as a whole, 3. enciphering of C-V groups and final consonants, and 4. breaking down morphemic blocks for enciphering element by element. (Use of codebooks is another matter. Once the plaintext is encoded in figures or the like, any enciphering scheme is applicable.) Of these four options, the option 1. is the only way to encipher Hangul with Hangul.</P>
+<P>I learned that the options 1., 3., and 4. were actually used by patriots during the Japanese colonial period <span class="note">(Yoon Shin-young & Park Yeon-soo (2019), Jeong (2021), both citing Lee Eun-young (2017))</span>. (The encoding of Hangul in the international character set today is similar to option 2. An instance of option 3 is given in <A HREF="korean.htm">another article</A>.)</P>
+
+<H2>Patriot Ciphers</H2>
+<P>The first of the various codes (ciphers) used by the patriots discovered by the Japanese was from March 1919, in the midst of the March First Movement demanding independence from Japanese rule.<!--Yoon Shin-young & Park Yeon-soo (2019)--></P>
+<P>Two main types of ciphers were: splitting into consonants and vowels to be enciphered separately (option 4) and substitution in Hangul elements after splitting into consonants and vowels (option 1).</P>
+
+<H3>Substitution by Elements</H3>
+<P>Jeong (2021) presents a Japanese report dated 13 November 1919, which demonstrates three ciphers with the plaintext 결사대간다 (meaning "The Suicide Corps goes.").</P>
+<DIV class="kakomi">(i) 1×4+4, 7, 3+8, 1+2, 3<br>
+[*1(ㄱ)x4(ㅕ)+4(ㄹ), 7(사), 3(다)+8(ㅣ), 1(가)+2(ㄴ), 3(다)]</DIV>
+<P>In this old type (i), three separate tables are provided for consonants, vowels, and "consonant+A" combinations. (A is by far the most frequent vowel in Korean.)  Given 1x4+4, for example, Korean readers will know the first "4" should be looked up in the vowels table and the second "4" should be looked up in the consonants table.</P>
+<DIV class="kakomi">(ii) 14+4, 71, 31+8, 11+2, 31<br>
+[*14( ㄱㅕ)+4(ㄹ), 71(ㅅㅏ), 31(ㄷㅏ)+8(ㅣ), 11(ㄱㅏ)+2(ㄴ), 31(ㄷㅏ)] </DIV>
+<P>With the combination table abandoned, the correspondence between Hangul elements and figures is more straightforward. A variant scheme gives "14+4, 710, 310+8, 11+2, 31".</P>
+<DIV class="kakomi">(iii) 119471631681162316 (telegraphic code)<br>
+[*1(ㄱ)19(ㅕ)4(ㄹ)7(ㅅ)16(ㅏ)3(ㄷ)16(ㅏ)8(ㅣ)1(ㄱ)16(ㅏ)2(ㄴ)3(ㄷ)16(ㅏ)]</DIV>
+<P>The table includes numbers 1-25. So whenever "1" or "2" is encountered in the ciphertext, the reader must decide whether it stands on its own or it is the first digit of 10-25.</P>
+
+<H3>Enciphering Hangul with Hangul</H3>
+<P>The following is an example of enciphering Hangul with Hangul. (The plaintext means "the people of Korea".) In the narrative of Jeong (2021), these were devised when Japanese surveillance intensified.</P>
+<img src="HangulSubstitution.png" style="margin:1em 1em 1em;"><br>
+
+<H2>W-K Korean Code</H2>
+<P>The scheme of breaking down Hangul's morphemic block into consonants and vowels, which are to be separately replaced with figures, was also adopted in a code created for the joint operation <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Eagle_Project">Wikipedia</A>)</span> between the Office of Strategic Services of the United States (OSS) and the Korean Liberation Army during the last stage of WWII.</P>
+<P>The code, titled the "W-K Korean Code Table" in English (the title in Korean reads "Hangul Code Table"), was created for radio communication between the Korean Liberation Army and the US military. The work was done in one month by Kim Woo-jeon, who was 23 at the time but was called "General Kim" with respect by the Americans <span class="note">(Yoon Shin-young & Park Yeon-soo (2019))</span>.</P>
+<P>It represents Hangul morphemic blocks of the type C-V (consonant-vowel) by four digits: two for the consonant and another two for the vowel. When the Hangul block is of the type C-V-C, the final consonant <span class="note">(strictly speaking, it is called <i>batchim</i> and is not the same as the initial consonant)</span> is represented by another four-digit group, with the first two digits "00". <span class="note">(The idea is similar to the option 3. mentioned at the beginning.)</span> Numerals (0051-0065), special symbols such as punctuations (0071-0089), and Roman letters (0111-0136) are also assigned four-digit numbers.</P>
+<img src="WKCodeB.png" width="600" style="margin:1em 1em 1em;"><br>
+<P>Besides this Table (B), explicit combinations of C-V are given in Table (A). </P>
+<img src="WKCodeA.png" style="margin:1em 1em 1em;"><br>
+
+<H3>Codes</H3>
+<P>The W-K Korean Code further included groups for frequently used expressions such as "Wait" (7731), "Very Urgent" (7750), and "Busy now" (7716) <span class="note">(Yoon Shin-young & Park Yeon-soo (2019); see also Kim (1995) p.386)</span>.</P>
+
+<H3>Superencipherment</H3>
+<P>Random assignment of row/column numbers should already give some security, but Kim (1995) illustrates superencipherment with a random number table <span class="note">(p.385)</span>. To encipher 간다:</P>
+<DIV class="kakomi"><TT>
+Random numbers from the table (K): 3914    1701     0822<br>
+Plaintext encoded in W-K Code (P): 1130(가)0012(ㄴ) 1330(다)<br>
+To-be-transmitted code groups (C): 2884    1799     9592<br>
+</TT></DIV>
+<P>The superencipherment is done with subtraction. As with the Beaufort cipher, this allows the same procedure to be applied in enciphering and deciphering (C=K-P, P=K-C).</P>
+
+<H3>Left in Archives</H3>
+<P>The W-K Code was never put into operation because Japan surrendered in August 1945. The code was kept in the US National Archives and was declassified only in 1988.</P>
+<P>"W-K" in the name is sometimes described as coming from Clarence Weems <span class="note">(Kim (1995) p.387, Lee Eun-young (n.d.))</span>, US Air Force captain who helped its creation, but Kim Woo-jeon claims in an interview that "W" stands for his middle name and that Weems arrived only when the code was almost complete <span class="note">(Yoon Shin-young & Park Yeon-soo (2019))</span>.</P>
+
+
+<H2>North Korean Ciphers in the 1950s</H2>
+<P>When Japan surrendered, Korea was divided into the Soviet-occupied north and the US-occupied south, which led to the establishment of the Republic of Korea (South Korea) and the Democratic People's Republic of Korea (North Korea) in 1948.</P>
+<P>The following are ciphers of North Korea, taken from John Milmore (2002), <i>#1 Code Break Boy</i>, of which I learned from Torbjörn Andersson from Sweden.</P>
+
+<H3>Simple Ciphers from the Pre-war Period</H3>
+<P>The following are ciphers used shortly before the outbreak of the Korean War on 25 June 1951. As with the W-K Code, elements constituting Hangul blocks are individually mapped to figures.</P>
+<img src="korean1950.png" width="600" style="margin:1em 1em 1em;"><br>
+<P>The first one <span class="note">(p.45, 167, 33)</span> is the simplest, with everything in two digits. It was used by the North Korean Air Force for more than a year. (Later, a similar cipher but assining four figures to each element was used <span class="note">(p.67-69, p.168)</span>.)</P>
+<P>The second one <span class="note">(p.59-60)</span> forms a syllable with an initial consonant (1 or 2 digits), a vowel (1 or 2 digits), and a terminal consonant (1 or 2 digits). "0" or "00" is padded if there is no terminal consonant to form a four-digit group for transmission.</P>
+<P>Before the war, North Korean communications were not marked for monitoring and intercepts were simply classified as "FE" (Far East Unknown) <span class="note">(p.4, 27, 45)</span>.</P>
+
+
+<H3>Main Code of the North Korean Army</H3>
+<P>Soon after the outbreak of the war, a code of 300 entries were used <span class="note">(p.40-41)</span>, with two-digit row number and a one-digit column number for representing frequently used words, numerals, and Hangul elements. Although the code consisted of three-digit units, the digits were sent in groups of four digits <span class="note">(p.40; cf. 33, 102)</span>.</P>
+<P>The major North Korean Army network gradually adopted a code, designated "001", of 1000 entries <span class="note">(p.47-50, 58-59)</span> covering mostly military terms, numerals, Hangul elements, syllables, and place names. It was a one-part code arranged in a kind of alphabetical sequence in Hangul.</P>
+<P>Superencipherment was employed but at first, a sequence of only 20 groups were repeatedly used as additives. Later, the addivie list was expanded to 500 groups, but malpractice of sending the same long message with a simple cipher revealed most of the additives to the US codebreakers. (Simple ciphers were continued in use in lower level networks <span class="note">(p.47, 71)</span>.)</P>
+<P>Another improvement was remaking the codebook into a two-part code <span class="note">(p.73)</span>, but it did not introduce complete randomness. Apparently, numeric strips were simply cut and pasted at shifted positions, as was the standard Russian practice.</P>
+<P>By February 1951, North Korea started to change the 500-group additive page about every four weeks and repaginate the basic codebook about every six or seven weeks. The fact that they did not change the codebook and additives at the same time allowed US codebreakers to keep up with the updates. <span class="note">(p.85, 180)</span></P>
+<P>In late 1951, the superencryption was more and more done with substantially a "one-time pad", which is theoretically unbreakable <span class="note">(p.116, 119)</span>. Such messages were sent in groups of five digits.</P>
+
+<H3>Monome-dinome (Straddling Checkerboard)</H3>
+<P>Commissars, political security officers, used a scheme called "monome-dinome" or "straddling checkerboard" <span class="note">(p.77-81, 169)</span>. As the name implies, it represents an alement by a single digit ("monome") or two digits ("dinome") according to a checkerboard like a Polybius square in which the first row does not have a row number (hence, simply splitting the ciphertext into two-digit groups would result in a true two-digit symbol "straddling" two groups <span class="note">(Kahn)</span>). Similar ciphers were used by a Swedish communist in 1937 during the Spanish Civil War and by a Soviet Spy codenamed Victor in the 1950s <span class="note">(<A HREF="https://en.wikipedia.org/wiki/VIC_cipher">Wikipedia</A>)</span>.</P>
+<img src="korean_straddle.png" width="500" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"> 
+<P>In this simple example, the surname Kim (김, 金) is enciphered as 0-97-4. (In practice, the most frequently used elements are placed on the first row to reduce the length of the ciphertext as well as somewhat flatten digit frequencies.)</P>
+<P>To enhance security, the digits obtained by the checkerboard undergo columnar transposition to form groups of five digits for transmission.</P>
+
+<H3>Transposition Cipher</H3>
+<P>In August 1951, a message from a commander of a regiment turned out to be in a transposition cipher <span class="note">(p.114, 170)</span>
+.</P>
+<DIV class="kakomi">
+군장정입령
+만동들듸리
+민대병길대
+선일미하사
+세지전가백
+인얀국는단
+조이앞진삼
+</DIV>
+<P>To read this, the characters are written in columns in a 5x7 grid. Then, the columns are rearranged so that the first row reads "조선인민군만세(朝鮮人民軍万世, "Long live the Korean People's Army"). The plaintext can be read horizontally from the second row.</P>
+<img src="korean_transposition.png" width="640" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"> 
+
+<H3>US Codebreaking Unit in Tokyo</H3>
+<P>Codebreaking of North Korean traffic was managed by US ASAPAC (Army Security Agency, Pacific) headquartered in Camp Oji, the former First Tokyo Arsenal of the Japanese Imperial Army's Ordnance Corps (東京第一陸軍造兵廠) <span class="note">(<A HREF="https://ja.wikipedia.org/wiki/%E6%9D%B1%E4%BA%AC%E7%AC%AC%E4%B8%80%E9%99%B8%E8%BB%8D%E9%80%A0%E5%85%B5%E5%BB%A0">Wikipedia</A>, <A HREF="https://www.machi-hakken-club.com/2018/06/10/%E7%8E%8B%E5%AD%90-%E3%81%A7%E3%81%B6%E3%82%89%E3%81%A3%E3%81%A8%E6%98%AD%E5%92%8C%E6%AD%B4%E5%8F%B2%E6%95%A3%E6%AD%A9/">local history</A>)</span>. It was under the direction of the overall ASA (Army Security Agency) headquartered at Arlington Hall, but the substantive work on North Korean traffic was done in Tokyo. <span class="note">(p.10, 12-13, 17, 21, 30, 41, 82, 101, 116. 117, 120-121)</span> (Apart from cryptography, descriptions of Japan under occupation from the eyes of a young American soldier <span class="note">(p.29)</span> were also interesting to me.)</P>
+
+<H2>Others</H2>
+<H3>Encoding Tables with Words</H3>
+<P>It is quite common in Western ciphers that figure groups cover some frequent words besides letters in the alphabet. One "Cipher Table No.6202" (제 6202호 암호표) employs three-digit figures (two- or one-digit row number + one-digit column number) to represent Hangul elements, syllables, Arabic figures, and apparently common words <span class="note">(One-time Pad)</span>. (Again, I learned of this table from Torbjörn Andersson.) Somehow, 2, 7, and 0 are used for one-digit row numbers, while 1, 3, 4, 5, 6, 8, and 9 are used in the first digit of two-digit row number.</P>
+<P>In one example in the accompanying instructions, code numbers 141 108 30 115 139 123 197 154 are regrouped into units of five digits: 14110 83011 51391 23197 15400 (the last two zeros are padding). The five-digit group was transmitted after superencipherment by a random number with addition without carry (e.g., 3+8=1). (Of course, the example in the manual does not match the specific Cipher Table 6202.)</P>
+
+
+
+<H3>Encoding Hangul for Communication</H3>
+<P>When telegraphy was introduced in Korea in the late nineteenth century, the text to be transmitted had to be rendered in Chinese characters, which were to be encoded into four-digit groups by using a codebook (漢電). Even after WWII, it appears a telegraph codebook with similar content was used, in view of an edition adapted for use by those who could not read Chinese characters (<i>Korean Telegraphic Code Book, with characters arranged by sounds in English alphabetic order according to the McCune-Reischauer system of transliteration</i>) (see <A HREF="chinese.htm">another article in Japanese</A>).</P>
+<P>In 1888, Morse code for Korean characters (國文字母號碼打法) was introduced (電報章程), which assigned Morse code for consonants and vowels separately <span class="note">(<A HREF="https://encykorea.aks.ac.kr/Article/E0049428">Encyclopedia of Korean Culture</A>, <A HREF="https://www.heritage.go.kr/DATA1/heritage/hub_img/html/cul_4413105290200.html?time=">Korea Heritage Service</A>, <A HREF="https://jsg.aks.ac.kr/dir/view?dataId=JSG_K2-3530">Digital Book</A>, <A HREF="https://m.blog.naver.com/urimaljigi/40144180711">a blog</A>, <A HREF="https://m.blog.naver.com/camlhd2/110189927772">a blog</A>)</span>. So, after all, representing Hangul characters by elements was a natural choice from the first.</P>
+<P>Various schemes based on this approach were developed for 8-bit computers during the early days of the personal computer era. When 16-bit computers became common in the 1990s, double-byte (16-bit) encoding of Hangul blocks (as opposed to encoding element by element) was introduced, though only the selected most widely used characters were represented because of the restriction for compatibility with the international standard as well as the need to include Chinese characters. With the advent of the new international standard, Unicode, 16-bit encoding of the whole 11172 Hangul characters became possible. <span class="note">(Hwang, Jinsang (2005) 5.2, 5.3, <A HREF="https://en.wikipedia.org/wiki/KS_X_1001">Wikipedia</A>)</span></P>
+
+
+
+
+
+
+<H2>References</H2>
+<P>Yoon Shin-young & Park Yeon-soo (2019), "'Mission Complete': The Hangul Code for US-Korea Operations Developed in Just One Month", <A HREF="https://www.dongascience.com/en/news/27132">DoongA Science</A>.</P>
+<P>金祐銓 (1995) [Kim (1995)], "韓國光復軍 O.S.S. 特攻作戰用 한글암호표 W-K KOREAN CODE TABLE (A)(B)", 韓国独立運動史研究 (<A HREF="https://dl.nanet.go.kr/SearchDetailView.do?cn=KINX2001116706">online</A>)</P>
+<P>정인열[Jeong In-yeol](2021), "[독립운동 애국지사, 그들은 달랐다] 암호로 독립전쟁의 말 길(言路) 뚫다" [[Independence Movement Patriots, They Were Different] Clearing a Path for Words in the Independence War through Codes] (<A HREF="https://www.imaeil.com/page/view/2021081211404005294">毎日新聞</A>)</P>
+
+<P>Lee Eun-young [李恩英] (2017), "한국 독립운동과 암호" [Korean Independence Movement and Cryptography] (<A HREF="https://db.history.go.kr/id/hb_179_01_000311">National Library of Korea</A>) (I have not seen this.)</P>
+<P>Lee Eun-young (n.d.), "불후의 광복군" [Immortal Liberation Army] (<A HREF="https://www.nmkpg.go.kr/webzine/story/cn.do?rid=309">National Memorial of the Korean Provisional Government</A>)</P>
+<P>"One-time Pad", <A HREF="https://www.ciphermachinesandcryptology.com/en/onetimepad.htm#otp-numbers">Cipher Machines and Cryptology</A></P>
+<P>Hwang, Jinsang (2005), <i>The Social Shaping of ICTs Standards: A Case of National Coded Character Set Standards Controversy in Korea</i>, <A HREF="https://www.era.lib.ed.ac.uk/bitstream/handle/1842/12253/Hwang2005.pdf">University of Edinburgh</A></P>
+<P>John Milmore (2002), <i>#1 Coode Break Boy</i>, Infinity Publishing</P>
+<P>David Kahn (1993), "Number One from Moscow", CIA Historical Review Program (<A HREF="https://web.archive.org/web/20230319134715/https://www.cia.gov/static/7799f1d576b09d8bce07988c635725db/Number-One-From-Moscow.pdf">Wayback Machine</A>)</P>
+<br>
+<br>
+<font size="2">
+&COPY;2026 S.Tomokiyo<br>
+First posted on 23 July 2026. This article is encoded in UTF-8. Last modified on 16 August 2026.<br>
+<A HREF="crypto.htm">Articles on Historical Cryptography</A><BR>
+</font>
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>
+
+
