@@ -347,3 +347,45 @@ glossed occurrences agree), 24 (i, 1/1, leaf 65 only) and 48 (r, 1/1, leaf 67 on
 in key.tsv. Code 44 (h) is attested only on leaves 65/67 but reads 5/5 consistent and stays C. After the downgrade:
 `decode_key.py --check` exit 0, tokens 434: C 384, M 50, U 0. Judge: `la` is not wired in tools/judge_plaintext.py
 (no period Latin corpus of >= 200k letters on disk); a wiring job with an 18th-c. Latin corpus is briefed (bLAJ).
+
+## Rule-7 re-derivation (bSZR, 26 Sept 2026)
+Fresh session, seen only specs/szembek-bk1560.json and ciphers/szembek-bk1560/{key.tsv,exceptions.tsv,decode.json,
+ciphertext.tsv} before step 2 (NOTES.md above and reading.txt not read until after the independent script ran).
+
+1. `python3 tools/decode_key.py ciphers/szembek-bk1560 --check`: `ciphertext.tsv: tokens 434: C 384, M 50` /
+   `reading up to date`, exit 0. Matches the post-downgrade counts in the "Orchestrator note" section above (the
+   spec's own `cheap_test_done` grades field, C 388/M 46, is now stale -- written before the 05:50 downgrade of
+   codes 19/24/48; the committed key.tsv/decode_key.py output is current, the spec JSON is not).
+2. Independent 30-line script (no tools/decode_key.py; scratchpad `rederive.py`): loads key.tsv, exceptions.tsv
+   (per-occurrence override by folio+line+pos), and ciphertext.tsv's numeric-code rows only (excludes `w:` clear
+   words); applies exceptions where present else the code's key value/grade. 434 tokens, C 384 / M 50 -- exact
+   match to decode_key.py. Diffed both `value` and `grade` columns against reading_tokens.tsv row-for-row (434
+   rows, same folio/line/pos order): **0 value diffs, 0 grade diffs**.
+3. Spot-check, 10 random code tokens (`random.seed(42)` over reading_tokens.tsv's 434 rows), against the leaf
+   crop images (crop paths only, not groups.tsv's own gloss_above field, except where noted):
+   - 65:9:1 (42->c), 65:9:6 (44->h): `leaf65/crops/f65_line09_s1.jpg`, gloss "Christiana" above codes
+     42,20,17,50,42,44,23,46,21,20,46,17,51,17,50 = c,t,a,m,c,h,r,i,s,t,i,a,n,a,m -> matches key at both positions.
+   - 65:2:13 (23->r): `leaf65/crops/f65_line02_s2.jpg` + groups.tsv's own line-1 phrase gloss "Celsissimus
+     Princeps" (recorded before the key was built): codes 1-15 spell exactly "CELSISSIMUSPRINCEPS" letter for
+     letter; pos13 is the 'r' of "PRIN". Match.
+   - 65:14:5 (25->p): groups.tsv gloss_above "procedant" at that position (p). Match.
+   - 65:16:13 (14->e): `leaf65/crops/f65_line16_s2.jpg`, gloss "...uerant" (cut at left edge) above codes
+     46,20,17,12,14 + clear "rant." = i,t,a,u,e,rant -> full line reads "nossoliciteauerant." in reading.txt as
+     "sollicitaverant"; pos13's visible gloss letter is 'e'. Match.
+   - 65:15:6 (17->a): `leaf65/crops/f65_line15_s1.jpg`, gloss "miserant" above codes 50,46,21,14,23,17,51,20 =
+     m,i,s,e,r,a,n,t exactly; pos6 is the 'a'. Match.
+   - 65:10:5 (42->c): `leaf65/crops/f65_line10_s1.jpg`, gloss "conscientiam" above codes 42,13,51,21,42,46 + clear
+     "en" + 20,46,17 = c,o,n,s,c,i,(en),t,i,a; pos5 is the 5th letter, 'c'. Match.
+   - 67:1:13 (13->o): `leaf67/crops/f67_L01_s2.jpg`, gloss "...ssiones" (cut left) above codes
+     25,23,13,50,46,21,21,46,13 = p,r,o,m,i,s,s,i,o -> "promissio(nes)" (spec's own leaf-3 gloss example); pos13
+     is the closing 'o'. Match.
+   - 67:12:10 (21->s), 67:13:1 (50->m): `leaf67/crops/f67_L12_s2.jpg` + `f67_L13_s1.jpg`/`s2.jpg`: codes
+     46,42,20,17,50,21,12 (line12 pos5-11) then 50,17,20 (line13 pos1-3) = i,c,t,a,m,s,u,m,a,t -> "vindictam
+     sumat" (spec's own leaf-3 gloss example, "vindictam vindictam sumat" listed in constraints.gloss_finding);
+     line13's own crop shows no code-aligned letters directly above pos1-3 (the "Pergenbeio" name glossed nearby
+     glosses the next line, 67:14, not this one) so this pair is confirmed via the documented phrase gloss and
+     the word-boundary fit, not a direct per-letter image read.
+   - **10/10** consistent with the visible or previously-documented gloss.
+
+No differences beyond the reading's own M-graded tokens; reading not sent back. Requests: none (disk-only, no
+hosts touched). Cost/time: well under the $1.50 cap and 20-minute box (finished ~5 min in).
