@@ -90,3 +90,7 @@ These folders already hold a transcription and notes:
 
 All pages under `sources/` are copyright S. Tomokiyo and are kept only as a working reference.
 Cite the site (https://cryptiana.web.fc2.com/code/) and the named solvers when using anything from it.
+
+## Licence
+
+MIT (LICENSE, added by the owner 26 Sept 2026): readings, keys, notes and tools may be reused with attribution to the repository. Cite the sources named in "Sources and credit" above for anything taken from them.

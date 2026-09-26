@@ -314,7 +314,7 @@ before committing to the larger BL/TNA/Arsenal batches.
 
 ## 26 Sept 2026, 14:5x UTC -- decisions the Huygens reply raises (parent, owner account)
 
-1. **Licence.** The public repository has no LICENSE file. Until it has one, the WVO editors (or any archive) cannot
+1. **Licence.** DONE 26 Sept 2026: MIT LICENSE committed by the owner. (Was: the public repository has no LICENSE file.) Until it has one, the WVO editors (or any archive) cannot
    legally reuse a reading, a key table or the letters-with-cipher table even if they want to, and "deposit" is an
    empty offer. Decision for the person: a data/text licence for readings, keys and notes (CC BY 4.0 is the usual
    choice for editions and datasets; CC0 if you want no credit condition) and a code licence for tools/ (MIT). One
