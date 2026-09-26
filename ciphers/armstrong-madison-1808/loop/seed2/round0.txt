@@ -1,0 +1,188 @@
+# round 0: N=181 values, cribs=0, best score -1295.6 (-3.231/token); restarts [-1304.02, -1305.89, -1295.63]
+# decode by line: word / value / confidence digit (9 = all restarts agree, * = crib, - = wildcard)
+L01 m   t    the dutch debt due  in   time of war and the people have been so  * are * in  every point of * s   * and in   * of them the citizens of paris to * morris and or  to be an  * of and the * instead of * that war and secretary of state paris february and then * or  even be asked are and belligerent nations or  to france and of the orders of and under the authority of the last session of congress under one of the president of the emperor alexander being now  for the * of * to the vessel was restored and by  the house of * that as great and interesting and would be followed by  * the latter shall * be taken that of the french decree before the receipt of this kind of * if  any such a    posture of things and * of the law  and practice of the parties to the * which were before the * and * trade the em  * of their carrying trade of france to you of the vessel or  cargoes of the debt or  to * roads and the said united states and against the adm  n    * rejected these members of the regular force or  not the slightest inconvenience as i   presume be * the general and political * at * on which under a   * zeal in  the most * of those of in   * under favorable change in  the first intelligence upon the present state of the and th  the * j   ai   * of * as  it certainly is  an  those of the first * of new orleans the same effect every where it   was * the way  of * the military views are taken of this department of state and of * but as this course which it   is  a   cession of louisiana by  way  of the act of congress will decide the im  * of * you wish me  to be the object and the other it is  to be assured of the * of cotton * by  that the * fication of the army and some of the * from the * and the sentiments which it   had the * tion of * is  that of the * it   is  the case of * the is  that of * itself and which with those of
+    750 1780 58  1630  120  1428 1440 1670 30 38  29  93  1811   310  511  350 * 5   * 620 90    1048  30 * 183 * 76  1440 * 51 1720 93  1772     30 783   34 * 163    29  680 83 62 160 * 51 76  71  * 102     74 * 1490 610 29  1840      74 1666  783   906      1   1796 * 680 1340 62 829   5   56  984         290     680 83 380    29  30 36  619    30 56  52    17  1031      33 36  1016 477     33 1390     52    7   30 36  381       30 36  1264    1544      3     1280 284 36  * 30 * 83 58  1501   77  920      1   450 93  820   30 * 95   96 1730  29  880         56  1210  62 1850     450 * 36  576    1470  * 35 1130  95   51 36  1680   123    1330   17  25      51 1270 957  30 * 320 50  1190 1651 270     51 1397   76  * 74 36  1157 29  307      74 36  704     34 71  * 31    1020 1330   17  * 76  * 48    17  156 * 51 1896  274      48    51 380    34 140 51 66  1501   680 1593    74 36  120  680 83 * 1030  1   36  1667 1277   357    1   1199    36  1399 1472 * 1781     1410  912     51 36  1820    1810  680 110 71  1826      1244          96 700 144     35 * 17  1241    56  1198      * 23 * 84 150   52    550 * 1790 620 93  41   * 30 1420  30 1440 * 52    790       1710   620 93  1140  989          384  58  874     770   51 66  1   960 93  * 917 1500 * 33 * 490 28 672       100 160 1420  30 36  1140  * 30 60  1341    17  1100 958    90    1556  1520 590 * 36  1681 30 * 36  1336     1090  5   1130  30 1009 549        51 770   29  30 * 191 96 1270 1846   31    1520 930 550 1801    51 1320      450 1681 33 36  764 30 1394     88   530    66  452 * 74 * 140 1106 520 34 62 93  1350   1   36  19    28 930 34 62 788     30 36  * 30 1750   * 450 1490 36  * 1847     30 71  261  1   10   30 36  * 1200 36  * 56  58  800        150   1520 640 66  * 730  30 * 930 1490 51 66  * 1520 100 93  1250 51 * 36  930 1490 51 * 720    29  150   260  1420  30
+    6   6    3   3     3    3    3    3    9  3   9   9   3      3    3    6   - 3   - 3   3     3     9  - 6   - 6   3    - 9  3    9   3        9  3     6  - 3      9   3   3  6  3   - 9  6   9   - 3       6  - 6    3   9   3         6  3     3     3        3   3    - 3   3    6  3     3   6   3           3       3   3  6      9   9  9   6      9  6   3     9   3         6  9   3    3       6  3        3     3   9  9   6         9  9   3       3         3     3    3   9   - 9  - 3  3   3      3   3        3   3   9   3     9  - 3    3  3     9   3           6   3     6  3        3   - 9   3      3     - 3  3     3    9  9   3      3      3      9   3       9  3    3    9  - 3   3   3    3    3       9  6      6   - 6  9   3    9   3        6  9   3       6  9   - 6     3    3      9   - 6   - 3     9   3   - 9  3     3        3     9  6      6  3   9  9   3      3   3       6  9   3    3   3  - 3     3   9   3    3      3      3   3       9   3    3    - 3        3     3       9  9   3       3     3   3   9   3         3             3  3   3       3  - 9   3       6   3         - 3  - 3  3     3     3   - 3    3   9   3    - 9  3     9  3    - 3     3         3      3   9   3     3            3    3   3       3     9  9   3   3   9   - 3   3    - 6  - 3   3  3         3   3   3     9  9   3     - 9  3   3       9   3    3      3     3     6    3   - 9   3    9  - 9   3        3     3   3     9  3    3          9  3     9   9  - 3   3  3    3      6     6    6   3   3       9  3         3   3    6  9   3   9  3        3    3      9   3   - 6  - 3   3    3   6  6  9   3      3   9   3     3  6   6  6  6       9  9   - 9  3      - 3   6    9   - 6        9  9   3    3   3    9  9   - 3    9   - 6   3   3          3     6    3   9   - 3    9  - 6   6    9  9   - 6    3   9   3    9  - 9   6   6    9  - 6      9   3     3    3     9 
+
+# values by frequency: value count word conf | up to 3 decoded contexts (2 words either side)
+   30  24 of             9 | in time [of] war and ; every point [of] * s ; the citizens [of] paris to
+   36  23 the            9 | and of [the] orders of ; authority of [the] last session ; one of [the] president of
+   51  15 of             9 | in * [of] them the ; an * [of] and the ; taken that [of] the french
+   29   8 and            9 | of war [and] the people ; * morris [and] or to ; that war [and] secretary of
+   93   8 the            9 | war and [the] people have ; of them [the] citizens of ; and by [the] house of
+    1   7 and            3 | paris february [and] then * ; was restored [and] by the ; * roads [and] the said
+  680   6 or             3 | morris and [or] to be ; then * [or] even be ; belligerent nations [or] to france
+   74   6 of             6 | * instead [of] * that ; and secretary [of] state paris ; and * [of] the law
+   17   6 the            9 | and under [the] authority of ; decree before [the] receipt of ; were before [the] * and
+   34   5 to             6 | of paris [to] * morris ; the parties [to] the * ; of france [to] you of
+   62   5 be             6 | or to [be] an * ; or even [be] asked are ; and would [be] followed by
+   56   5 and            6 | asked are [and] belligerent nations ; orders of [and] under the ; and interesting [and] would be
+   66   5 the            9 | you of [the] vessel or ; state of [the] and th ; will decide [the] im *
+   58   4 the            3 | m t [the] dutch debt ; * to [the] vessel was ; intelligence upon [the] present state
+   76   4 and            6 | s * [and] in * ; * of [and] the * ; of things [and] * of
+   83   4 to             3 | and or [to] be an ; nations or [to] france and ; of * [to] the vessel
+   71   4 the            9 | of and [the] * instead ; parties to [the] * which ; or not [the] slightest inconvenience
+ 1490   4 that           6 | of * [that] war and ; * by [that] the * ; * is [that] of the
+   52   4 under          3 | of and [under] the authority ; of congress [under] one of ; on which [under] a *
+   33   4 of             6 | the authority [of] the last ; last session [of] congress under ; ai * [of] * as
+  450   4 by             3 | restored and [by] the house ; be followed [by] * the ; of louisiana [by] way of
+ 1520   4 it             6 | every where [it] was * ; course which [it] is a ; sentiments which [it] had the
+  930   4 is             6 | which it [is] a cession ; other it [is] to be ; of * [is] that of
+ 1440   3 in             3 | debt due [in] time of ; * and [in] * of ; those of [in] * under
+    5   3 are            3 | so * [are] * in ; be asked [are] and belligerent ; military views [are] taken of
+  620   3 in             3 | are * [in] every point ; * zeal [in] the most ; favorable change [in] the first
+   96   3 as             3 | * that [as] great and ; slightest inconvenience [as] i presume ; * but [as] this course
+  150   3 which          3 | * on [which] under a ; the sentiments [which] it had ; itself and [which] with those
+ 1420   3 those          3 | * of [those] of in ; is an [those] of the ; which with [those] of
+  120   2 debt           3 | the dutch [debt] due in ; of the [debt] or to
+   90   2 every          3 | * in [every] point of ; same effect [every] where it
+  783   2 paris          3 | citizens of [paris] to * ; of state [paris] february and
+  160   2 an             3 | to be [an] * of ; certainly is [an] those of
+  380   2 france         6 | or to [france] and of ; trade of [france] to you
+ 1501   2 vessel         3 | to the [vessel] was restored ; of the [vessel] or cargoes
+   95   2 that           3 | of * [that] as great ; be taken [that] of the
+   35   2 be             3 | shall * [be] taken that ; i presume [be] * the
+ 1130   2 taken          3 | * be [taken] that of ; views are [taken] of this
+ 1330   2 before         3 | french decree [before] the receipt ; which were [before] the *
+ 1270   2 this           3 | receipt of [this] kind of ; but as [this] course which
+   31   2 which          6 | the * [which] were before ; this course [which] it is
+   48   2 trade          3 | and * [trade] the em ; their carrying [trade] of france
+  140   2 you            3 | france to [you] of the ; of * [you] wish me
+  550   2 a              3 | which under [a] * zeal ; it is [a] cession of
+ 1140   2 first          3 | in the [first] intelligence upon ; of the [first] * of
+  770   2 state          3 | the present [state] of the ; department of [state] and of
+   28   2 it             3 | * as [it] certainly is ; the other [it] is to
+  100   2 is             3 | it certainly [is] an those ; * it [is] the case
+ 1681   2 way            3 | * the [way] of * ; louisiana by [way] of the
+  750   1 m              6 | [m] t the
+ 1780   1 t              6 | m [t] the dutch
+ 1630   1 dutch          3 | t the [dutch] debt due
+ 1428   1 due            3 | dutch debt [due] in time
+ 1670   1 time           3 | due in [time] of war
+   38   1 war            3 | time of [war] and the
+ 1811   1 people         3 | and the [people] have been
+  310   1 have           3 | the people [have] been so
+  511   1 been           3 | people have [been] so *
+  350   1 so             6 | have been [so] * are
+ 1048   1 point          3 | in every [point] of *
+  183   1 s              6 | of * [s] * and
+ 1720   1 them           3 | * of [them] the citizens
+ 1772   1 citizens       3 | them the [citizens] of paris
+  163   1 morris         3 | to * [morris] and or
+  102   1 instead        3 | the * [instead] of *
+  610   1 war            3 | * that [war] and secretary
+ 1840   1 secretary      3 | war and [secretary] of state
+ 1666   1 state          3 | secretary of [state] paris february
+  906   1 february       3 | state paris [february] and then
+ 1796   1 then           3 | february and [then] * or
+ 1340   1 even           3 | * or [even] be asked
+  829   1 asked          3 | even be [asked] are and
+  984   1 belligerent    3 | are and [belligerent] nations or
+  290   1 nations        3 | and belligerent [nations] or to
+  619   1 orders         6 | of the [orders] of and
+ 1031   1 authority      3 | under the [authority] of the
+ 1016   1 last           3 | of the [last] session of
+  477   1 session        3 | the last [session] of congress
+ 1390   1 congress       3 | session of [congress] under one
+    7   1 one            3 | congress under [one] of the
+  381   1 president      6 | of the [president] of the
+ 1264   1 emperor        3 | of the [emperor] alexander being
+ 1544   1 alexander      3 | the emperor [alexander] being now
+    3   1 being          3 | emperor alexander [being] now for
+ 1280   1 now            3 | alexander being [now] for the
+  284   1 for            3 | being now [for] the *
+   77   1 was            3 | the vessel [was] restored and
+  920   1 restored       3 | vessel was [restored] and by
+  820   1 house          3 | by the [house] of *
+ 1730   1 great          3 | that as [great] and interesting
+  880   1 interesting    3 | great and [interesting] and would
+ 1210   1 would          3 | interesting and [would] be followed
+ 1850   1 followed       3 | would be [followed] by *
+  576   1 latter         3 | * the [latter] shall *
+ 1470   1 shall          3 | the latter [shall] * be
+ 1680   1 french         3 | of the [french] decree before
+  123   1 decree         3 | the french [decree] before the
+   25   1 receipt        3 | before the [receipt] of this
+  957   1 kind           3 | of this [kind] of *
+  320   1 if             3 | of * [if] any such
+   50   1 any            3 | * if [any] such a
+ 1190   1 such           3 | if any [such] a posture
+ 1651   1 a              3 | any such [a] posture of
+  270   1 posture        3 | such a [posture] of things
+ 1397   1 things         6 | posture of [things] and *
+ 1157   1 law            3 | of the [law] and practice
+  307   1 practice       3 | law and [practice] of the
+  704   1 parties        3 | of the [parties] to the
+ 1020   1 were           3 | * which [were] before the
+  156   1 em             3 | trade the [em] * of
+ 1896   1 their          3 | * of [their] carrying trade
+  274   1 carrying       3 | of their [carrying] trade of
+ 1593   1 cargoes        3 | vessel or [cargoes] of the
+ 1030   1 roads          3 | to * [roads] and the
+ 1667   1 said           3 | and the [said] united states
+ 1277   1 united         3 | the said [united] states and
+  357   1 states         3 | said united [states] and against
+ 1199   1 against        3 | states and [against] the adm
+ 1399   1 adm            3 | against the [adm] n *
+ 1472   1 n              3 | the adm [n] * rejected
+ 1781   1 rejected       3 | n * [rejected] these members
+ 1410   1 these          3 | * rejected [these] members of
+  912   1 members        3 | rejected these [members] of the
+ 1820   1 regular        3 | of the [regular] force or
+ 1810   1 force          3 | the regular [force] or not
+  110   1 not            3 | force or [not] the slightest
+ 1826   1 slightest      3 | not the [slightest] inconvenience as
+ 1244   1 inconvenience  3 | the slightest [inconvenience] as i
+  700   1 i              3 | inconvenience as [i] presume be
+  144   1 presume        3 | as i [presume] be *
+ 1241   1 general        3 | * the [general] and political
+ 1198   1 political      3 | general and [political] * at
+   23   1 at             3 | political * [at] * on
+   84   1 on             3 | at * [on] which under
+ 1790   1 zeal           3 | a * [zeal] in the
+   41   1 most           3 | in the [most] * of
+  790   1 favorable      3 | * under [favorable] change in
+ 1710   1 change         3 | under favorable [change] in the
+  989   1 intelligence   3 | the first [intelligence] upon the
+  384   1 upon           3 | first intelligence [upon] the present
+  874   1 present        3 | upon the [present] state of
+  960   1 th             3 | the and [th] the *
+  917   1 j              3 | the * [j] ai *
+ 1500   1 ai             3 | * j [ai] * of
+  490   1 as             3 | of * [as] it certainly
+  672   1 certainly      3 | as it [certainly] is an
+   60   1 new            3 | * of [new] orleans the
+ 1341   1 orleans        3 | of new [orleans] the same
+ 1100   1 same           3 | orleans the [same] effect every
+  958   1 effect         3 | the same [effect] every where
+ 1556   1 where          3 | effect every [where] it was
+  590   1 was            3 | where it [was] * the
+ 1336   1 military       3 | * the [military] views are
+ 1090   1 views          3 | the military [views] are taken
+ 1009   1 this           3 | taken of [this] department of
+  549   1 department     3 | of this [department] of state
+  191   1 but            3 | of * [but] as this
+ 1846   1 course         3 | as this [course] which it
+ 1801   1 cession        3 | is a [cession] of louisiana
+ 1320   1 louisiana      3 | cession of [louisiana] by way
+  764   1 act            3 | of the [act] of congress
+ 1394   1 congress       3 | act of [congress] will decide
+   88   1 will           3 | of congress [will] decide the
+  530   1 decide         3 | congress will [decide] the im
+  452   1 im             3 | decide the [im] * of
+ 1106   1 wish           3 | * you [wish] me to
+  520   1 me             3 | you wish [me] to be
+ 1350   1 object         3 | be the [object] and the
+   19   1 other          3 | and the [other] it is
+  788   1 assured        6 | to be [assured] of the
+ 1750   1 cotton         3 | * of [cotton] * by
+ 1847   1 fication       6 | the * [fication] of the
+  261   1 army           3 | of the [army] and some
+   10   1 some           3 | army and [some] of the
+ 1200   1 from           3 | the * [from] the *
+  800   1 sentiments     3 | and the [sentiments] which it
+  640   1 had            3 | which it [had] the *
+  730   1 tion           3 | the * [tion] of *
+ 1250   1 case           3 | is the [case] of *
+  720   1 itself         6 | of * [itself] and which
+  260   1 with           3 | and which [with] those of

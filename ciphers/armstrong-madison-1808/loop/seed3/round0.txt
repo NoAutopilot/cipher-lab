@@ -1,0 +1,187 @@
+# round 0: N=180 values, cribs=0, best score -1390.2 (-3.450/token); restarts [-1390.21, -1422.99, -1419.39]
+# decode by line: word / value / confidence digit (9 = all restarts agree, * = crib, - = wildcard)
+L01 m    to  the com  * with and abandoned under the present instance the * and other party and even go   out of the and articles above and under the and th  and part of the principle that the * but  at all or as   a  neutral trade from a    french gov ernment have been in the said sum  of dollars and to  be presumed be the * of * on  the of specie payments and * him for the great * of loans and taxes could be * or within french * and of which is that the same time the most * be wanted either * or of the and of my   account is said to * de   la   fayette and procure water in august last though doubtless law of nations as con * and who were * with and * that of could the republic or and * le   * and in the same * of the other documents * ing and * at * the question is of itself and friendly one and will be of no importance to  * esteem and respect * of * and that any man  ner i   shall send them open to all such cases of * and of which might be of great * and which you  are  clear and * of that * tion from the mississippi c    and by   * that of your * and of gen * son and his * and of the president that to  be and of providing an  open a    negotiation and of their * and * who * the a    * interval between the * or other states and of nature and extent of * and that * and * the first * be c    to  be the case i   of this european war and navy during the war against england and the * d  of s    * and if so  that i   did not admit of * during that war and on account of which * his office was * that indeed throughout the union are  suffered that of the * and to be c    department of that * ones might that if this be found that is known that of france that the whole of what may be that of her enemies she  * our  desire of this the office the powers of europe and at war that the * or was it would
+    1879 250 82  1440 * 420  21  917       750   38  427     118      82  * 93  1798  272   21  380  1671 117 41 10  21  680      846   45  750   82  93  360 21  711  41 96  542       3    38  * 1520 90 56  67 1380 35 390     1514  630  1750 1460   281 251     730  58   33 38  1730 1698 22 660     21  651 91 1840     91 38  * 69 * 252 82  69 143    1132     45  * 600 869 38  260   * 69 851   45  1584  120   91 * 17 950    1460   * 45  69 160   88 48   38  190  1267 96  27   * 91 1080   1524   * 17 41 82  45  69 1770 1530    88 1730 89 * 1870 1274 941     21  1751    1081  31 1560   400  827    1010      970 22 1130    20 672 * 45  72  60   * 420  21  * 3    69 120   10  880      17 21  * 1881 * 21  33 38  190  * 41 10  1880  693       * 211 93  * 90 * 38  1409     88 22 164    45  350      70  21  1680 91 41 32 1429       651 * 487    45  536     * 69 * 45  3    49  1620 620 670 540   696  1600 860  89 56  1140 1391  69 * 45  69 560   678   19 69 260   * 45  560   1544 1410 1513  21  * 41 85   * 786  630  10  1060        1360 45  1820 * 3    69 100  * 45  41 689 * 965 21  604 * 45  41 430 1223      3    250 91 93  69 468       810 860  1750 1656        93  69 1211  * 45  * 72  * 430 1750 * 1190     1212    82  * 67 1880  507    93  69 1827   45  586    69 * 45  3    * 45  * 430 937   * 91 1360 250 91 430 980  670 22 86   1587     830 93  213  1394   82  830 150     1088    21  96  * 23 69 1489 * 45  71 908 48   670 770 571 1351  69 * 1394   85   830 45  55 1530    69 560   * 604 1040   47  * 48   1550   878        430 1167  1410 300      3    41 10  * 21  89 78 1360 1021       41 48   * 940  678   85   71 86   19 110   48   88 1830  85   69 914    85   38  960   41 812  11  19 3    69 550 1384    1310 * 1670 1100   69 86   10  1040   82  1521   22 456    45  90 830 48   96  * 17 47  26 1210 
+    9    3   9   3    - 3    6   3         3     3   3       3        9   - 9   3     3     6   3    3    3   9  9   6   6        3     9   3     9   9   3   6   3    9  6   3         3    3   - 6    3  3   3  3    3  3       3     3    3    6      3   3       3    3    6  3   3    3    6  3       6   3   3  3        3  3   - 9  - 6   9   9  3      3        9   - 3   3   3   3     - 9  3     9   3     3     3  - 6  6      6      - 9   9  3     3  3    3   3    3    6   3    - 3  3      3      - 6  9  9   9   9  3    3       3  3    3  - 3    3    3       6   3       3     3  3      3    3      3         3   6  3       3  3   - 9   3   3    - 3    6   - 3    9  3     9   3        6  6   - 3    - 6   6  3   3    - 9  9   3     3         - 6   9   - 3  - 3   3        3  6  3      9   3        3   6   3    3  9  3  3          3   - 3      9   3       - 9  - 9   3    3   3    3   3   3     3    3    3    3  3   3    3     9  - 9   9  3     3     6  9  3     - 9   3     3    3    3     6   - 9  6    - 6    3    9   3           3    9   3    - 3    9  3    - 9   9  3   - 3   6   3   - 9   9  3   3         3    3   3  9   9  3         3   3    3    3           9   9  6     - 9   - 3   - 3   3    - 3        3       9   - 3  3     3      9   9  3      9   3      9  - 9   3    - 9   - 3   3     - 3  3    3   3  3   3    3   6  3    3        3   9   3    3      9   3   3       3       6   6   - 3  9  3    - 9   3  3   3    3   3   3   3     9  - 3      6    3   9   3  3       9  3     - 3   3      3   - 3    3      3          3   3     3    3        3    9  9   - 6   3  3  3    3          9  3    - 3    3     6    3  3    6  3     3    3  3     6    9  6      6    3   3     9  3    3   6  3    9  6   6       6    - 3    3      9  3    9   3      9   3      6  3      9   3  3   3    6   - 6  3   3  3    
+
+# values by frequency: value count word conf | up to 3 decoded contexts (2 words either side)
+   45  21 and            9 | articles above [and] under the ; specie payments [and] * him ; of loans [and] taxes could
+   69  21 of             9 | the * [of] * on ; on the [of] specie payments ; great * [of] loans and
+   21  14 and            6 | * with [and] abandoned under ; other party [and] even go ; of the [and] articles above
+   41  11 of             9 | go out [of] the and ; and part [of] the principle ; * or [of] the and
+   38   9 the            3 | abandoned under [the] present instance ; principle that [the] * but ; been in [the] said sum
+   82   8 the            9 | m to [the] com * ; present instance [the] * and ; and under [the] and th
+    3   8 that           3 | the principle [that] the * ; and * [that] of could ; * and [that] any man
+   91   8 be             3 | and to [be] presumed be ; be presumed [be] the * ; taxes could [be] * or
+   93   7 and            9 | the * [and] other party ; under the [and] th and ; * ing [and] * at
+   10   6 the            9 | out of [the] and articles ; of could [the] republic or ; * of [the] other documents
+   48   6 that           3 | which is [that] the same ; if so [that] i did ; was * [that] indeed throughout
+   22   5 of             6 | said sum [of] dollars and ; doubtless law [of] nations as ; question is [of] itself and
+   85   5 that           6 | * of [that] * tion ; * during [that] war and ; ones might [that] if this
+  430   5 the            3 | and of [the] president that ; who * [the] a * ; and * [the] first *
+   96   4 the            6 | part of [the] principle that ; same time [the] most * ; england and [the] * d
+   17   4 or             6 | be * [or] within french ; either * [or] of the ; the republic [or] and *
+   88   4 is             3 | of which [is] that the ; my account [is] said to ; the question [is] of itself
+  830   4 war            3 | this european [war] and navy ; during the [war] against england ; during that [war] and on
+  250   3 to             3 | m [to] the com ; president that [to] be and ; be c [to] be the
+   90   3 at             3 | * but [at] all or ; and * [at] * the ; europe and [at] war that
+ 1750   3 a              3 | trade from [a] french gov ; an open [a] negotiation and ; * the [a] * interval
+   89   3 to             3 | is said [to] * de ; them open [to] all such ; * and [to] be c
+  670   3 i              3 | man ner [i] shall send ; the case [i] of this ; so that [i] did not
+  560   3 which          3 | and of [which] might be ; * and [which] you are ; account of [which] * his
+   19   3 be             6 | which might [be] of great ; if this [be] found that ; what may [be] that of
+ 1360   3 c              3 | the mississippi [c] and by ; * be [c] to be ; to be [c] department of
+   86   3 this           3 | i of [this] european war ; that if [this] be found ; desire of [this] the office
+  420   2 with           3 | com * [with] and abandoned ; were * [with] and *
+  750   2 under          3 | and abandoned [under] the present ; above and [under] the and
+   56   2 all            3 | but at [all] or as ; open to [all] such cases
+   67   2 or             3 | at all [or] as a ; the * [or] other states
+  630   2 from           3 | neutral trade [from] a french ; * tion [from] the mississippi
+ 1460   2 french         6 | from a [french] gov ernment ; or within [french] * and
+   33   2 in             6 | have been [in] the said ; * and [in] the same
+ 1730   2 said           3 | in the [said] sum of ; account is [said] to *
+  651   2 to             3 | dollars and [to] be presumed ; no importance [to] * esteem
+  260   2 great          3 | for the [great] * of ; be of [great] * and
+  120   2 could          3 | and taxes [could] be * ; that of [could] the republic
+  190   2 same           3 | that the [same] time the ; in the [same] * of
+ 1530   2 account        3 | of my [account] is said ; and on [account] of which
+   72   2 who            3 | * and [who] were * ; and * [who] * the
+ 1880   2 other          3 | of the [other] documents * ; * or [other] states and
+  860   2 open           3 | send them [open] to all ; providing an [open] a negotiation
+  678   2 might          3 | of which [might] be of ; * ones [might] that if
+ 1410   2 are            3 | which you [are] clear and ; the union [are] suffered that
+  604   2 his            3 | son and [his] * and ; which * [his] office was
+ 1394   2 during         3 | and navy [during] the war ; of * [during] that war
+   71   2 if             3 | * and [if] so that ; might that [if] this be
+ 1040   2 office         3 | * his [office] was * ; this the [office] the powers
+   47   2 was            3 | his office [was] * that ; * or [was] it would
+ 1879   1 m              9 | [m] to the
+ 1440   1 com            3 | to the [com] * with
+  917   1 abandoned      3 | with and [abandoned] under the
+  427   1 present        3 | under the [present] instance the
+  118   1 instance       3 | the present [instance] the *
+ 1798   1 other          3 | * and [other] party and
+  272   1 party          3 | and other [party] and even
+  380   1 even           3 | party and [even] go out
+ 1671   1 go             3 | and even [go] out of
+  117   1 out            3 | even go [out] of the
+  680   1 articles       6 | the and [articles] above and
+  846   1 above          3 | and articles [above] and under
+  360   1 th             3 | the and [th] and part
+  711   1 part           3 | th and [part] of the
+  542   1 principle      3 | of the [principle] that the
+ 1520   1 but            6 | the * [but] at all
+ 1380   1 as             3 | all or [as] a neutral
+   35   1 a              3 | or as [a] neutral trade
+  390   1 neutral        3 | as a [neutral] trade from
+ 1514   1 trade          3 | a neutral [trade] from a
+  281   1 gov            3 | a french [gov] ernment have
+  251   1 ernment        3 | french gov [ernment] have been
+  730   1 have           3 | gov ernment [have] been in
+   58   1 been           3 | ernment have [been] in the
+ 1698   1 sum            3 | the said [sum] of dollars
+  660   1 dollars        3 | sum of [dollars] and to
+ 1840   1 presumed       3 | to be [presumed] be the
+  252   1 on             6 | of * [on] the of
+  143   1 specie         3 | the of [specie] payments and
+ 1132   1 payments       3 | of specie [payments] and *
+  600   1 him            3 | and * [him] for the
+  869   1 for            3 | * him [for] the great
+  851   1 loans          3 | * of [loans] and taxes
+ 1584   1 taxes          3 | loans and [taxes] could be
+  950   1 within         6 | * or [within] french *
+  160   1 which          3 | and of [which] is that
+ 1267   1 time           3 | the same [time] the most
+   27   1 most           3 | time the [most] * be
+ 1080   1 wanted         3 | * be [wanted] either *
+ 1524   1 either         3 | be wanted [either] * or
+ 1770   1 my             3 | and of [my] account is
+ 1870   1 de             3 | to * [de] la fayette
+ 1274   1 la             3 | * de [la] fayette and
+  941   1 fayette        3 | de la [fayette] and procure
+ 1751   1 procure        3 | fayette and [procure] water in
+ 1081   1 water          3 | and procure [water] in august
+   31   1 in             3 | procure water [in] august last
+ 1560   1 august         3 | water in [august] last though
+  400   1 last           3 | in august [last] though doubtless
+  827   1 though         3 | august last [though] doubtless law
+ 1010   1 doubtless      3 | last though [doubtless] law of
+  970   1 law            3 | though doubtless [law] of nations
+ 1130   1 nations        3 | law of [nations] as con
+   20   1 as             3 | of nations [as] con *
+  672   1 con            3 | nations as [con] * and
+   60   1 were           3 | and who [were] * with
+  880   1 republic       3 | could the [republic] or and
+ 1881   1 le             3 | and * [le] * and
+  693   1 documents      3 | the other [documents] * ing
+  211   1 ing            6 | documents * [ing] and *
+ 1409   1 question       3 | * the [question] is of
+  164   1 itself         3 | is of [itself] and friendly
+  350   1 friendly       3 | itself and [friendly] one and
+   70   1 one            3 | and friendly [one] and will
+ 1680   1 will           3 | one and [will] be of
+   32   1 no             3 | be of [no] importance to
+ 1429   1 importance     3 | of no [importance] to *
+  487   1 esteem         3 | to * [esteem] and respect
+  536   1 respect        3 | esteem and [respect] * of
+   49   1 any            3 | and that [any] man ner
+ 1620   1 man            3 | that any [man] ner i
+  620   1 ner            3 | any man [ner] i shall
+  540   1 shall          3 | ner i [shall] send them
+  696   1 send           3 | i shall [send] them open
+ 1600   1 them           3 | shall send [them] open to
+ 1140   1 such           3 | to all [such] cases of
+ 1391   1 cases          3 | all such [cases] of *
+ 1544   1 you            3 | and which [you] are clear
+ 1513   1 clear          3 | you are [clear] and *
+  786   1 tion           6 | that * [tion] from the
+ 1060   1 mississippi    3 | from the [mississippi] c and
+ 1820   1 by             3 | c and [by] * that
+  100   1 your           3 | that of [your] * and
+  689   1 gen            3 | and of [gen] * son
+  965   1 son            3 | gen * [son] and his
+ 1223   1 president      3 | of the [president] that to
+  468   1 providing      3 | and of [providing] an open
+  810   1 an             3 | of providing [an] open a
+ 1656   1 negotiation    3 | open a [negotiation] and of
+ 1211   1 their          6 | and of [their] * and
+ 1190   1 interval       3 | a * [interval] between the
+ 1212   1 between        3 | * interval [between] the *
+  507   1 states         3 | or other [states] and of
+ 1827   1 nature         3 | and of [nature] and extent
+  586   1 extent         3 | nature and [extent] of *
+  937   1 first          3 | * the [first] * be
+  980   1 case           3 | be the [case] i of
+ 1587   1 european       3 | of this [european] war and
+  213   1 navy           3 | war and [navy] during the
+  150   1 against        3 | the war [against] england and
+ 1088   1 england        3 | war against [england] and the
+   23   1 d              3 | the * [d] of s
+ 1489   1 s              3 | d of [s] * and
+  908   1 so             3 | and if [so] that i
+  770   1 did            3 | that i [did] not admit
+  571   1 not            3 | i did [not] admit of
+ 1351   1 admit          3 | did not [admit] of *
+   55   1 on             3 | war and [on] account of
+ 1550   1 indeed         3 | * that [indeed] throughout the
+  878   1 throughout     3 | that indeed [throughout] the union
+ 1167   1 union          3 | throughout the [union] are suffered
+  300   1 suffered       3 | union are [suffered] that of
+   78   1 be             3 | and to [be] c department
+ 1021   1 department     3 | be c [department] of that
+  940   1 ones           3 | that * [ones] might that
+  110   1 found          3 | this be [found] that is
+ 1830   1 known          3 | that is [known] that of
+  914   1 france         6 | that of [france] that the
+  960   1 whole          3 | that the [whole] of what
+  812   1 what           3 | whole of [what] may be
+   11   1 may            3 | of what [may] be that
+  550   1 her            6 | that of [her] enemies she
+ 1384   1 enemies        6 | of her [enemies] she *
+ 1310   1 she            6 | her enemies [she] * our
+ 1670   1 our            3 | she * [our] desire of
+ 1100   1 desire         3 | * our [desire] of this
+ 1521   1 powers         3 | office the [powers] of europe
+  456   1 europe         3 | powers of [europe] and at
+   26   1 it             3 | or was [it] would
+ 1210   1 would          3 | was it [would]

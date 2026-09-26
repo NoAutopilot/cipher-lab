@@ -1,0 +1,169 @@
+# round 0: N=162 values, cribs=0, best score -1335.8 (-3.348/token); restarts [-1335.79, -1355.78, -1375.52]
+# decode by line: word / value / confidence digit (9 = all restarts agree, * = crib, - = wildcard)
+L01 * the united states of * s   application by them her own  * to be  * upon his account of the * of men  the * the most * the principle which * to england and holland the state banks of the it  sufficient st   * th  may  be   of use  in  the year the actual constitution and as  a  state of and the president the more favorable circumstances and at the rate of exchange them to you and the new  state to be  paid and on  the part of his being a  * by any legal pro * of the was  to force a    day  or  two of it  and the * and are of * for  let  her enemies in  de  * the at * of * by the secretary of the treasury in  * the at war  is   of great britain the * of war  and privateers before the * and his to judge whether it  is a    * of their the of the writings of both * or  * of * of the * or  of the war  * the idea of * of * of that i    should by her enemies to capture and to which those who have been some time and the more our country and the state of things in europe as  of congress for  the first and maintained by the * and * are * and the second it  was  * and the security of our the writings of gallatin of the * of banks it  pro * his * to those of the * de  sa   majesty et   n  of so   much seems to be  the con * is the more than in case of * tion and to spain who is and on  your hands of spain to gallatin * and the * papers to these circumstances the state of things more than was  due to the whole force which direct and the importance which i    owe to the * that he * from british ships of war  and which would not only of the republic and with * at present than to the object is   to us   is to be  made * with those of and of her enemies to both and the sentiments of the * la   r  * the views of the more necessary and the * of the state that the situation of the
+    * 56  400    1210   28 * 276 1715        77 920  16  1671 * 96 260 * 57   960 647     62 56  * 28 1704 23  * 46  1470 * 23  892       750   * 96 317     93  1730    23  640   730   27 56  426 1089       1372 * 510 1260 1851 28 1554 280 56  761  46  1770   1776         7   956 17 640   3  7   830 1266      31  1191 250       403           93  64 31  1549 28 1196     920  96 50  93  56  1117 640   96 260 177  7   370 56  967  62 320 1121  17 * 77 30  1051  150 * 28 31  1870 78 1720  1120 1620 160 599 62 570 45  56  * 790 930 27 * 1530 1857 16  516     280 151 * 18  64 * 62 * 77 56  1816      62 56  1631     280 * 18  64 1780 1830 28 720   480     23  * 27 1899 790 200        1630   31  * 7   960 49 890   1240    426 90 1120 * 28 180   18  3  31  74       28 1160 * 926 * 28 * 28 31  * 160 27 56  1899 * 56  1544 62 * 27 * 3  29   1090 311    77 16  516     96 971     93  78 1400  251   700 710  816  1140 1227 45  18  42   21  1374    45  23  640   62 318    65 670    956 28 1390     1530 31  1231  7   696        77 56  * 790 * 930 * 7   56  1552   426 1870 * 7   56  1790     62 21  18  74       28 1501     28 56  * 62 730   570 150 * 320 * 78 251   28 56  * 151 1195 80      1640 54 3  1670 120  1441  96 260 23  899 * 90 18  42   47   65 1034 62 * 420  45  96 1380  60  90 45  370 86   1050  28 1380  96 1501     * 45  46  * 1746   78 24    403           830 640   62 318    42   711  1870 220 49 18  1781  1720  1400  1524   45  23  981        750   1090 799 78 56  * 29   2  * 530  820     351   28 1780 93  750   1687  63  836  62 830 1083     45  290  * 64 931     711  78 23  1580   1830 96 1680 90 96 260 1760 * 290  251   27 93  3  85  516     96 1160 93  23  384        62 18  * 1040 40 * 56  486   62 46  42   212       7   56  * 28 56  640   29   56  928       27 56 
+    - 9   3      3      6  - 3   3           3  3    3   3    - 3  3   - 3    3   3       9  9   - 6  6    9   - 6   3    - 9   3         3     - 3  3       3   3       9   3     3     9  9   3   3          3    - 3   3    3    6  3    3   9   3    6   3      3            6   3   6  3     3  6   3   3         9   3    3         3             3   3  9   3    6  3        3    3  3   3   9   3    3     3  3   3    6   3   9   3    9  6   3     6  - 3  3   3     3   - 6  9   3    6  3     3    3    3   3   9  3   6   9   - 9   9   9  - 6    3    3   3       3   3   - 9   3  - 9  - 3  9   3         9  9   3        3   - 9   3  3    6    6  3     3       9   - 9  3    9   3          3      9   - 6   3   6  3     3       3   3  3    - 6  3     9   3  9   6        6  3    - 3   - 6  - 6  9   - 3   9  9   3    - 9   3    9  - 9  - 3  3    3    3      3  3   3       3  3       3   6  3     3     3   3    3    3    3    6   9   3    3   3       6   9   3     9  3      3  3      3   6  3        6    9   3     6   3          3  9   - 9   - 9   - 6   9   3      3   3    - 6   9   3        9  3   9   6        6  3        6  9   - 9  3     3   3   - 6   - 6  3     6  9   - 3   3    3       3    3  3  3    3    3     3  3   9   3   - 3  9   3    3    3  3    9  - 6    6   3  3     3   3  6   3   3    3     6  3     3  3        - 6   6   - 3      6  3     3             3   3     9  3      3    3    3    3   6  9   3     3     3     3      6   9   3          3     3    3   6  9   - 3    3  - 3    3       3     6  3    3   3     3     3   3    9  3   3        6   3    - 3  3       3    6  9   3      6    3  3    3  3  3   3    - 3    3     9  3   3  3   3       3  3    3   9   3          9  9   - 3    3  - 9   6     9  6   3    3         6   9   - 6  9   3     3    9   3         9  9  
+
+# values by frequency: value count word conf | up to 3 decoded contexts (2 words either side)
+   56  22 the            9 | * [the] united states ; account of [the] * of ; banks of [the] it sufficient
+   28  17 of             6 | united states [of] * s ; the * [of] men the ; may be [of] use in
+   62  14 of             9 | his account [of] the * ; the part [of] his being ; or two [of] it and
+   96  11 to             3 | own * [to] be * ; which * [to] england and ; exchange them [to] you and
+   23   9 the            9 | of men [the] * the ; most * [the] principle which ; and holland [the] state banks
+    7   8 and            6 | actual constitution [and] as a ; state of [and] the president ; be paid [and] on the
+   45   8 and            6 | of it [and] the * ; some time [and] the more ; our country [and] the state
+   18   8 the            9 | de * [the] at * ; in * [the] at war ; of their [the] of the
+   93   7 and            3 | to england [and] holland the ; favorable circumstances [and] at the ; to you [and] the new
+   27   7 of             9 | state banks [of] the it ; and are [of] * for ; the * [of] war and
+   31   7 the            9 | the president [the] more favorable ; and at [the] rate of ; * of [the] was to
+  640   6 state          3 | holland the [state] banks of ; as a [state] of and ; the new [state] to be
+   78   6 to             6 | the was [to] force a ; capture and [to] which those ; his * [to] those of
+   77   5 by             3 | s application [by] them her ; a * [by] any legal ; of * [by] the secretary
+    3   5 of             3 | a state [of] and the ; their the [of] the writings ; of * [of] that i
+  260   4 be             3 | * to [be] * upon ; state to [be] paid and ; seems to [be] the con
+   46   4 the            6 | the * [the] most * ; the year [the] actual constitution ; * and [the] * papers
+   64   4 at             3 | circumstances and [at] the rate ; * the [at] * of ; * the [at] war is
+   90   4 is             3 | whether it [is] a * ; con * [is] the more ; spain who [is] and on
+   42   4 more           3 | and the [more] our country ; is the [more] than in ; of things [more] than was
+   16   3 her            3 | by them [her] own * ; for let [her] enemies in ; should by [her] enemies to
+  750   3 which          3 | the principle [which] * to ; the importance [which] i owe ; war and [which] would not
+  426   3 it             3 | of the [it] sufficient st ; judge whether [it] is a ; the second [it] was *
+  280   3 in             3 | of use [in] the year ; her enemies [in] de * ; the treasury [in] * the
+  830   3 the            3 | of and [the] president the ; these circumstances [the] state of ; only of [the] republic and
+ 1870   3 was            3 | of the [was] to force ; second it [was] * and ; more than [was] due to
+  790   3 and            9 | the * [and] are of ; of war [and] privateers before ; the * [and] * are
+  516   3 enemies        3 | let her [enemies] in de ; by her [enemies] to capture ; of her [enemies] to both
+   29   3 that           3 | * of [that] i should ; the * [that] he * ; the state [that] the situation
+  251   3 those          3 | to which [those] who have ; * to [those] of the ; * with [those] of and
+  920   2 them           3 | application by [them] her own ; of exchange [them] to you
+  960   2 his            3 | * upon [his] account of ; * and [his] to judge
+  730   2 banks          3 | the state [banks] of the ; * of [banks] it pro
+  956   2 as             3 | constitution and [as] a state ; in europe [as] of congress
+   17   2 a              6 | and as [a] state of ; his being [a] * by
+  403   2 circumstances  3 | more favorable [circumstances] and at ; to these [circumstances] the state
+  370   2 on             3 | paid and [on] the part ; is and [on] your hands
+  320   2 his            6 | part of [his] being a ; pro * [his] * to
+  150   2 pro            3 | any legal [pro] * of ; banks it [pro] * his
+ 1720   2 force          3 | was to [force] a day ; the whole [force] which direct
+ 1120   2 a              3 | to force [a] day or ; it is [a] * of
+  160   2 or             3 | a day [or] two of ; the * [or] of the
+  570   2 it             3 | two of [it] and the ; of banks [it] pro *
+  930   2 are            9 | * and [are] of * ; and * [are] * and
+ 1530   2 for            6 | of * [for] let her ; of congress [for] the first
+  151   2 de             3 | enemies in [de] * the ; the * [de] sa majesty
+ 1780   2 war            3 | the at [war] is of ; ships of [war] and which
+ 1830   2 is             6 | at war [is] of great ; the object [is] to us
+ 1899   2 war            3 | * of [war] and privateers ; of the [war] * the
+   49   2 to             6 | and his [to] judge whether ; was due [to] the whole
+   74   2 writings       6 | of the [writings] of both ; our the [writings] of gallatin
+ 1160   2 both           3 | writings of [both] * or ; enemies to [both] and the
+ 1090   2 i              3 | of that [i] should by ; importance which [i] owe to
+ 1400   2 which          3 | and to [which] those who ; whole force [which] direct and
+   21   2 our            3 | the more [our] country and ; security of [our] the writings
+  318   2 things         3 | state of [things] in europe ; state of [things] more than
+   65   2 in             3 | of things [in] europe as ; more than [in] case of
+ 1501   2 gallatin       3 | writings of [gallatin] of the ; spain to [gallatin] * and
+ 1380   2 spain          3 | and to [spain] who is ; hands of [spain] to gallatin
+  711   2 than           3 | things more [than] was due ; at present [than] to the
+  290   2 with           3 | republic and [with] * at ; made * [with] those of
+  400   1 united         3 | * the [united] states of
+ 1210   1 states         3 | the united [states] of *
+  276   1 s              3 | of * [s] application by
+ 1715   1 application    3 | * s [application] by them
+ 1671   1 own            3 | them her [own] * to
+   57   1 upon           3 | be * [upon] his account
+  647   1 account        3 | upon his [account] of the
+ 1704   1 men            6 | * of [men] the *
+ 1470   1 most           3 | * the [most] * the
+  892   1 principle      3 | * the [principle] which *
+  317   1 england        3 | * to [england] and holland
+ 1730   1 holland        3 | england and [holland] the state
+ 1089   1 sufficient     3 | the it [sufficient] st *
+ 1372   1 st             3 | it sufficient [st] * th
+  510   1 th             3 | st * [th] may be
+ 1260   1 may            3 | * th [may] be of
+ 1851   1 be             3 | th may [be] of use
+ 1554   1 use            3 | be of [use] in the
+  761   1 year           3 | in the [year] the actual
+ 1770   1 actual         3 | year the [actual] constitution and
+ 1776   1 constitution   3 | the actual [constitution] and as
+ 1266   1 president      3 | and the [president] the more
+ 1191   1 more           3 | president the [more] favorable circumstances
+  250   1 favorable      3 | the more [favorable] circumstances and
+ 1549   1 rate           3 | at the [rate] of exchange
+ 1196   1 exchange       3 | rate of [exchange] them to
+   50   1 you            3 | them to [you] and the
+ 1117   1 new            3 | and the [new] state to
+  177   1 paid           3 | to be [paid] and on
+  967   1 part           3 | on the [part] of his
+ 1121   1 being          3 | of his [being] a *
+   30   1 any            3 | * by [any] legal pro
+ 1051   1 legal          3 | by any [legal] pro *
+ 1620   1 day            3 | force a [day] or two
+  599   1 two            3 | day or [two] of it
+ 1857   1 let            3 | * for [let] her enemies
+ 1816   1 secretary      3 | by the [secretary] of the
+ 1631   1 treasury       3 | of the [treasury] in *
+  720   1 great          3 | is of [great] britain the
+  480   1 britain        3 | of great [britain] the *
+  200   1 privateers     3 | war and [privateers] before the
+ 1630   1 before         3 | and privateers [before] the *
+  890   1 judge          3 | his to [judge] whether it
+ 1240   1 whether        3 | to judge [whether] it is
+  180   1 their          3 | * of [their] the of
+  926   1 or             3 | both * [or] * of
+ 1544   1 idea           3 | * the [idea] of *
+  311   1 should         3 | that i [should] by her
+  971   1 capture        3 | enemies to [capture] and to
+  700   1 who            3 | which those [who] have been
+  710   1 have           3 | those who [have] been some
+  816   1 been           3 | who have [been] some time
+ 1140   1 some           3 | have been [some] time and
+ 1227   1 time           3 | been some [time] and the
+ 1374   1 country        3 | more our [country] and the
+  670   1 europe         3 | things in [europe] as of
+ 1390   1 congress       3 | as of [congress] for the
+ 1231   1 first          3 | for the [first] and maintained
+  696   1 maintained     3 | first and [maintained] by the
+ 1552   1 second         3 | and the [second] it was
+ 1790   1 security       3 | and the [security] of our
+ 1195   1 sa             3 | * de [sa] majesty et
+   80   1 majesty        3 | de sa [majesty] et n
+ 1640   1 et             3 | sa majesty [et] n of
+   54   1 n              3 | majesty et [n] of so
+ 1670   1 so             3 | n of [so] much seems
+  120   1 much           3 | of so [much] seems to
+ 1441   1 seems          3 | so much [seems] to be
+  899   1 con            3 | be the [con] * is
+   47   1 than           3 | the more [than] in case
+ 1034   1 case           3 | than in [case] of *
+  420   1 tion           6 | of * [tion] and to
+   60   1 who            3 | to spain [who] is and
+   86   1 your           3 | and on [your] hands of
+ 1050   1 hands          3 | on your [hands] of spain
+ 1746   1 papers         3 | the * [papers] to these
+   24   1 these          3 | papers to [these] circumstances the
+  220   1 due            3 | than was [due] to the
+ 1781   1 whole          3 | to the [whole] force which
+ 1524   1 direct         3 | force which [direct] and the
+  981   1 importance     3 | and the [importance] which i
+  799   1 owe            3 | which i [owe] to the
+    2   1 he             3 | * that [he] * from
+  530   1 from           3 | he * [from] british ships
+  820   1 british        3 | * from [british] ships of
+  351   1 ships          3 | from british [ships] of war
+ 1687   1 would          3 | and which [would] not only
+   63   1 not            3 | which would [not] only of
+  836   1 only           3 | would not [only] of the
+ 1083   1 republic       3 | of the [republic] and with
+  931   1 present        3 | * at [present] than to
+ 1580   1 object         3 | to the [object] is to
+ 1680   1 us             3 | is to [us] is to
+ 1760   1 made           3 | to be [made] * with
+   85   1 her            3 | and of [her] enemies to
+  384   1 sentiments     3 | and the [sentiments] of the
+ 1040   1 la             3 | the * [la] r *
+   40   1 r              3 | * la [r] * the
+  486   1 views          6 | * the [views] of the
+  212   1 necessary      3 | the more [necessary] and the
+  928   1 situation      3 | that the [situation] of the

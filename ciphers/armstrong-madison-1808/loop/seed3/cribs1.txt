@@ -1,0 +1,2 @@
+# ARM3-LOOP round 1, seed 3, reader's cribs from the round-0 view + ciphertext adjacency only (no truth seen)
+69=the, 45=and, 21=of, 3=in, 93=to, 38=a, 41=that, 91=be, 82=which

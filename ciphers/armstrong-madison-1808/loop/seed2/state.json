@@ -1,0 +1,49 @@
+{
+ "family": "nomenclator",
+ "spec": "specs/armstrong-madison-1808.json",
+ "corpus": [
+  "tools/data/en18/writingsjamesmo02unkngoog.txt.gz",
+  "tools/data/en18/writingsjamesmo11monrgoog.txt.gz",
+  "tools/data/en18/writingsalbertg01gallgoog.txt.gz",
+  "tools/data/en18/writingsofjamesm0007unse_s2a1.txt.gz",
+  "tools/data/en18/writingsofjamesm0008unse.txt.gz",
+  "tools/data/en18/writingsofthomas09jeffiala.txt.gz"
+ ],
+ "holdout": 5,
+ "seed": 2,
+ "restarts": 3,
+ "params": {
+  "sweeps": 30,
+  "phase1": 20,
+  "holdout": 5
+ },
+ "msg_lens": [
+  401
+ ],
+ "N": 353,
+ "K": 181,
+ "singletons": 132,
+ "singletons_particle": 13,
+ "singletons_book": 119,
+ "particle_tokens": 172,
+ "book_tokens": 181,
+ "wild_tokens": 48,
+ "is_target": false,
+ "control_stats": {
+  "coded": 353,
+  "distinct": 181,
+  "distinct_book": 142,
+  "oov_words": 56,
+  "wild_tokens": 48,
+  "book_forms": 1800,
+  "particle_tokens": 172,
+  "distinct_particle": 39,
+  "holdout_index": 5,
+  "book_source": "held"
+ },
+ "rounds": {
+  "0": {
+   "cribs": {}
+  }
+ }
+}

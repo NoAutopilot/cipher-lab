@@ -64,7 +64,8 @@ if os.path.exists(SPEC) and os.path.exists(MS):
         r1 = json.load(open(os.path.join(d, 'round1.json')))
         assert all(r1['key'][v] == truth[v] for v in good) and r1['key'][bad] == 'zzqqx'
         view = subprocess.run(args + ['--view', '1'], check=True, capture_output=True, text=True).stdout
-        assert f'{bad:>5}   1 zzqqx' in view and ' * |' in view, view[:500]
+        vline = [l for l in view.split('\n') if 'zzqqx' in l and l.startswith(f'{bad:>5} ')]
+        assert vline and ' * |' in vline[0], view[:500]
         out = subprocess.run(args + ['--score'], check=True, capture_output=True, text=True).stdout
         rows = [l.split('\t') for l in open(os.path.join(d, 'scores.tsv')).read().split('\n')[1:] if l]
         assert len(rows) == 2 and (rows[1][8], rows[1][9], rows[1][10]) == ('3', '2', '1'), out
