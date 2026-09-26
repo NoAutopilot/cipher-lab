@@ -1,0 +1,322 @@
+line	pos	group	conf	note
+5214p1_L01	1	w:de	L	leading cursive word, hard to parse, best guess
+5214p1_L01	2	w:du?oz	L	illegible middle word, best guess only
+5214p1_L01	3	w:est	L	third word before comma, best guess
+5214p1_L01	4	51	H
+5214p1_L01	5	62	H
+5214p1_L01	6	18	H
+5214p1_L01	7	20	H
+5214p1_L01	8	11	H
+5214p1_L01	9	80	M	written with looped/delta-shaped "8"
+5214p1_L01	10	44	H
+5214p1_L01	11	63	H
+5214p1_L01	12	60	H
+5214p1_L01	13	22	H
+5214p1_L01	14	28	H
+5214p1_L01	15	54	H
+5214p1_L01	16	12	H
+5214p1_L01	17	88	M	looped "8" digits
+5214p1_L01	18	26	M	partially cut at right edge of crop
+5214p1_L02	1	61	H
+5214p1_L02	2	89	H
+5214p1_L02	3	29	H
+5214p1_L02	4	7?	L	trailing flourish, could be "79" or a stray mark
+5214p1_L02	5	w:a	M
+5214p1_L02	6	w:este	M
+5214p1_L02	7	w:pour	M
+5214p1_L02	8	5	H
+5214p1_L02	9	51	H
+5214p1_L02	10	28	H
+5214p1_L02	11	60	H
+5214p1_L02	12	82	M	looped "8" digit
+5214p1_L02	13	77	H
+5214p1_L02	14	66	H
+5214p1_L02	15	75	H
+5214p1_L02	16	43	H
+5214p1_L02	17	81	M	looped "8" digit
+5214p1_L02	18	27	H
+5214p1_L02	19	23	H
+5214p1_L03	1	10	H
+5214p1_L03	2	61	H
+5214p1_L03	3	88	M	looped "8" digits
+5214p1_L03	4	27	H
+5214p1_L03	5	74	H
+5214p1_L03	6	81	M	looped "8" digit
+5214p1_L03	7	w:Cagnvelle	L	unclear proper name/word, best guess only
+5214p1_L03	8	106	H
+5214p1_L03	9	8	L	isolated looped glyph, unclear if standalone or truncated group
+5214p1_L03	10	26	H
+5214p1_L03	11	80	M	looped "8" digit
+5214p1_L03	12	82	M	looped "8" digit
+5214p1_L03	13	31	H
+5214p1_L03	14	12	H
+5214p1_L03	15	43	H
+5214p1_L03	16	52	M	crowded near line edge, two groups run close together
+5214p1_L03	17	43	M	crowded near line edge
+5214p1_L04	1	29	H
+5214p1_L04	2	w:et	H
+5214p1_L04	3	w:na	H
+5214p1_L04	4	w:eu	H
+5214p1_L04	5	9	H
+5214p1_L04	6	83	M	looped "8" digit
+5214p1_L04	7	27	H
+5214p1_L04	8	52	H
+5214p1_L04	9	81	M	looped "8" digit
+5214p1_L04	10	80	M	looped "8" digit
+5214p1_L04	11	8	L	isolated looped glyph, unclear if standalone or truncated
+5214p1_L04	12	20	H
+5214p1_L04	13	28	H
+5214p1_L04	14	70	H
+5214p1_L04	15	70	H
+5214p1_L04	16	87	M	looped "8" digit
+5214p1_L04	17	27	H
+5214p1_L04	18	23	H
+5214p1_L04	19	26	H
+5214p1_L05	1	80	M	looped "8" digit
+5214p1_L05	2	44	H
+5214p1_L05	3	67	H
+5214p1_L05	4	42	H
+5214p1_L05	5	62	H
+5214p1_L05	6	60	H
+5214p1_L05	7	77	H
+5214p1_L05	8	w:La	H
+5214p1_L05	9	w:cause	H
+5214p1_L05	10	w:a	H
+5214p1_L05	11	w:este	H
+5214p1_L05	12	4	H
+5214p1_L05	13	8	L	isolated looped glyph
+5214p1_L05	14	50	H
+5214p1_L05	15	10	H
+5214p1_L05	16	66	H
+5214p1_L05	17	89	M	looped "8" digit
+5214p1_L05	18	79	H
+5214p1_L06	1	43	M	could be 47, tail unclear
+5214p1_L06	2	52	H
+5214p1_L06	3	12	H
+5214p1_L06	4	61	H
+5214p1_L06	5	45	H
+5214p1_L06	6	57	H
+5214p1_L06	7	43	H
+5214p1_L06	8	84	M	looped "8" digit
+5214p1_L06	9	28	H
+5214p1_L06	10	23	H
+5214p1_L06	11	28	H
+5214p1_L06	12	80	M	looped "8" digit
+5214p1_L06	13	16	H
+5214p1_L06	14	63	H
+5214p1_L06	15	88	M	looped "8" digits
+5214p1_L06	16	76	H
+5214p1_L06	17	35	H
+5214p1_L06	18	29	H
+5214p1_L06	19	64	H
+5214p1_L06	20	45	H
+5214p1_L07	1	w:suivant	L	leading word cut off/unclear, best guess
+5214p1_L07	2	w:au	H
+5214p1_L07	3	w:temps	H
+5214p1_L07	4	w:prefix	M
+5214p1_L07	5	8	L	isolated looped glyph
+5214p1_L07	6	62	H
+5214p1_L07	7	81	M	looped "8" digit
+5214p1_L07	8	27	H
+5214p1_L07	9	55	H
+5214p1_L07	10	29	H
+5214p1_L07	11	18	H
+5214p1_L07	12	82	M	looped "8" digit
+5214p1_L07	13	70	H
+5214p1_L07	14	26	H
+5214p1_L07	15	(cc)	L	trailing paragraph/flourish mark at line end, not clearly a numeral or word
+5214p1_L08	1	9	H
+5214p1_L08	2	8	L	isolated looped glyph
+5214p1_L08	3	57	H
+5214p1_L08	4	12	H
+5214p1_L08	5	44	H
+5214p1_L08	6	60	H
+5214p1_L08	7	81	M	looped "8" digit
+5214p1_L08	8	10	H
+5214p1_L08	9	88	M	looped "8" digits
+5214p1_L08	10	97	H
+5214p1_L08	11	12	H
+5214p1_L08	12	75	H
+5214p1_L08	13	56	H
+5214p1_L08	14	27	H
+5214p1_L08	15	80	M	looped "8" digit
+5214p1_L08	16	8	L	isolated looped glyph
+5214p1_L08	17	4	H
+5214p1_L08	18	w:rendus	M
+5214p1_L08	19	w:que	M
+5214p1_L09	1	61	H
+5214p1_L09	2	62	H
+5214p1_L09	3	102	H
+5214p1_L09	4	15	H
+5214p1_L09	5	12	H
+5214p1_L09	6	82	M	looped "8" digit
+5214p1_L09	7	84	M	looped "8" digit
+5214p1_L09	8	26	H
+5214p1_L09	9	12	H
+5214p1_L09	10	88	M	looped "8" digits
+5214p1_L09	11	95	H
+5214p1_L09	12	29	H
+5214p1_L09	13	85	M	looped "8" digit
+5214p1_L09	14	36	H
+5214p1_L09	15	28	H
+5214p1_L09	16	60	H
+5214p1_L09	17	80	M	looped "8" digit
+5214p1_L09	18	24	H
+5214p1_L09	19	27	H
+5214p1_L10	1	35	H
+5214p1_L10	2	87	M	looped "8" digit
+5214p1_L10	3	29	H
+5214p1_L10	4	76	H
+5214p1_L10	5	77	H
+5214p1_L10	6	26	H
+5214p1_L10	7	8	L	isolated looped glyph
+5214p1_L10	8	100	H
+5214p1_L10	9	4	H
+5214p1_L10	10	w:afferment	L	unclear word, best guess
+5214p1_L10	11	w:annuis	L	unclear word, best guess
+5214p1_L10	12	w:pour	M
+5214p1_L10	13	50	H
+5214p1_L10	14	26	H
+5214p1_L10	15	88	M	looped "8" digits
+5214p1_L10	16	77	H
+5214p1_L11	1	w:#	L	leading mark, possibly a paragraph/cross mark not a word
+5214p1_L11	2	w:et	L
+5214p1_L11	3	w:vous	L
+5214p1_L11	4	w:aves	L
+5214p1_L11	5	w:ce	L
+5214p1_L11	6	9	H
+5214p1_L11	7	4	H
+5214p1_L11	8	52	H
+5214p1_L11	9	27	H
+5214p1_L11	10	43	H
+5214p1_L11	11	67	H
+5214p1_L11	12	80	M	looped "8" digit
+5214p1_L11	13	79	H
+5214p1_L11	14	28	H
+5214p1_L11	15	18	H
+5214p1_L11	16	62	H
+5214p1_L11	17	87	M	looped "8" digit
+5214p1_L11	18	76	H
+5214p1_L11	19	80	M	looped "8" digit
+5214p1_L11	20	w:venons	L	unclear, best guess
+5214p1_L11	21	w:il	L
+5214p1_L11	22	w:tient	L
+5214p1_L11	23	w:et	M
+5214p1_L11	24	w:doit	M
+5214p1_L11	25	w:promouvoir	L	unclear word ending, best guess
+5214p1_L11	26	8	L	isolated looped glyph
+5214p1_L11	27	89	M	looped "8" digit
+5214p1_L11	28	63	H
+5214p1_L12	1	76	H
+5214p1_L12	2	22	H
+5214p1_L12	3	28	H
+5214p1_L12	4	88	M	looped "8" digits
+5214p1_L12	5	12	H
+5214p1_L12	6	60	H
+5214p1_L12	7	84	M	looped "8" digit
+5214p1_L12	8	44	H
+5214p1_L12	9	82	M	looped "8" digit
+5214p1_L12	10	103	H
+5214p1_L12	11	88	M	looped "8" digits
+5214p1_L12	12	81	M	looped "8" digit
+5214p1_L12	13	50	H
+5214p1_L12	14	26	H
+5214p1_L12	15	84	M	looped "8" digit
+5214p1_L12	16	44	H
+5214p1_L12	17	28	H
+5214p1_L12	18	61	H
+5214p1_L12	19	23	H
+5214p1_L12	20	76	H
+5214p1_L12	21	28	H
+5214p1_L12	22	102	H
+5214p1_L12	23	29	H
+5214p1_L12	24	61	H
+5214p1_L12	25	18	H
+5214p1_L12	26	62	H
+5214p1_L12	27	76	H
+5214p1_L12	28	28	H
+5214p1_L12	29	82	M	looped "8" digit, dot separators sparse toward line end
+5214p1_L13	1	12	H
+5214p1_L13	2	88	M	looped "8" digits
+5214p1_L13	3	62	H
+5214p1_L13	4	43	H
+5214p1_L13	5	29	H
+5214p1_L13	6	61	H
+5214p1_L13	7	82	M	looped "8" digit
+5214p1_L13	8	26	H
+5214p1_L13	9	61	H
+5214p1_L13	10	18	H
+5214p1_L13	11	63	H
+5214p1_L13	12	81	L	looped "8" digit, crowded with next group, could be 81 or 8+1 separate
+5214p1_L13	13	27	M
+5214p1_L13	14	19	H
+5214p1_L13	15	76	H
+5214p1_L13	16	28	H
+5214p1_L13	17	85	M	looped "8" digit
+5214p1_L13	18	8	L	isolated looped glyph
+5214p1_L13	19	4	H
+5214p1_L13	20	w:Sadventure	L	unclear word, best guess (possibly "S'adventure")
+5214p1_L13	21	w:ou	M
+5214p1_L13	22	w:le	M
+5214p1_L13	23	w:pouvoit	L	unclear, could be "pouvoir"
+5214p1_L13	24	w:g	L	isolated letter, possibly abbreviation
+5214p1_L13	25	8	L	isolated looped glyph
+5214p1_L13	26	12	H
+5214p1_L14	1	27	L	top row of crop shows a partial extra text line (possible bleed-through from adjacent line or a margin continuation); read with low confidence
+5214p1_L14	2	90	L	top row, same caveat
+5214p1_L14	3	30	L	top row, same caveat
+5214p1_L14	4	10	L	top row, same caveat
+5214p1_L14	5	w:Aveu	L	margin note leading word, unclear, best guess
+5214p1_L14	6	w:mt	L	margin note, possibly abbreviation "mt" with tilde
+5214p1_L14	7	23	M	margin note segment
+5214p1_L14	8	27	M	margin note segment
+5214p1_L14	9	51	M	margin note segment
+5214p1_L14	10	29	M	margin note segment
+5214p1_L14	11	57	M	margin note segment
+5214p1_L14	12	26	M	margin note segment
+5214p1_L14	13	19	M	margin note segment
+5214p1_L14	14	88	M	main line begins here; looped "8" digits
+5214p1_L14	15	84	M	looped "8" digit
+5214p1_L14	16	77	H
+5214p1_L14	17	29	H
+5214p1_L14	18	30	H
+5214p1_L14	19	63	H
+5214p1_L14	20	43	H
+5214p1_L14	21	81	M	looped "8" digit
+5214p1_L14	22	10	H
+5214p1_L14	23	83	M	looped "8" digit
+5214p1_L14	24	84	M	looped "8" digit
+5214p1_L14	25	27	H
+5214p1_L14	26	61	H
+5214p1_L14	27	85	M	looped "8" digit
+5214p1_L14	28	29	H
+5214p1_L14	29	77	H
+5214p1_L14	30	106	H
+5214p1_L14	31	8	L	isolated looped glyph, followed by a paragraph-mark flourish at line end
+5214p1_L15	1	84	M	looped "8" digit
+5214p1_L15	2	79	H
+5214p1_L15	3	28	H
+5214p1_L15	4	27	H
+5214p1_L15	5	60	H
+5214p1_L15	6	28	H
+5214p1_L15	7	95	H
+5214p1_L15	8	29	H
+5214p1_L15	9	30	H
+5214p1_L15	10	88	M	looped "8" digits
+5214p1_L15	11	w:Fe	L	abbreviation, unclear
+5214p1_L15	12	w:prie	H
+5214p1_L15	13	w:Dieu	H
+5214p1_L16	1	82	M	looped "8" digit
+5214p1_L16	2	43	H
+5214p1_L16	3	63	H
+5214p1_L16	4	59	H
+5214p1_L16	5	8	L	isolated looped glyph, then line switches to a larger, more formal hand
+5214p1_L16	6	w:Monsieur	H	larger formal hand begins here, likely the letter's plaintext salutation/closing rather than cipher
+5214p1_L16	7	w:mon	H
+5214p1_L16	8	w:frere	H
+5214p1_L16	9	w:vous	M
+5214p1_L16	10	w:mantenes	M	could be "maintenez"
+5214p1_L16	11	w:en	M
+5214p1_L16	12	w:sa	M
+5214p1_L16	13	w:bonne	M
+5214p1_L16	14	w:grace	M	trails into further prose cut off at right edge of crop, not transcribed further

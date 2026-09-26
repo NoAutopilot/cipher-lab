@@ -1,22 +1,255 @@
 {
-  "source": "Huygens Institute, Briefwisseling van Willem van Oranje (WVO) database, resources.huygens.knaw.nl/wvo",
-  "note": "LANE R2 worker C1, 24 Sept 2026: all seven target letters plus siblings 5198/5199/5033 fetched in full (150dpi, JPEG q80, converted from an initial PNG batch that put the folder at 128MB -- see images/inventory.tsv for the per-page eye-check). Groen van Prinsterer's printed edition pages for 5218 and 5222 are bundled directly in their own WVO PDF scans (see NOTES.md 'C1' flag) -- this was not known when the manifest below was first written.",
-  "fetch": "tools pattern: resources.huygens.knaw.nl/media/wvo/images/NNNNN-NNNNN/NNNNN.pdf, rendered at 150dpi with pymupdf, JPEG quality 80",
-  "files": [
-    {"briefnr": 5200, "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5200", "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05200.pdf", "date": "18 October 1572", "correspondent": "to Jan van Nassau, from Zwolle", "pages_in_pdf": 3, "images": ["05200_p1.jpg", "05200_p2.jpg", "05200_p3.jpg"]},
-    {"briefnr": 5207, "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5207", "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05207.pdf", "date": "23 May 1574", "correspondent": "to Jan van Nassau, from Gorinchem", "pages_in_pdf": 3, "images": ["05207_p1.jpg", "05207_p2.jpg", "05207_p3.jpg"]},
-    {"briefnr": 5213, "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5213", "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05213.pdf", "date": "26 November 1574", "correspondent": "to Jan van Nassau, from Delft", "pages_in_pdf": 4, "images": ["05213_p1.jpg", "05213_p2.jpg", "05213_p3.jpg", "05213_p4.jpg"]},
-    {"briefnr": 5218, "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5218", "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05218.pdf", "date": "4 March 1575", "correspondent": "to Jan van Nassau, from Dordrecht", "pages_in_pdf": 8, "images": ["05218_p1.jpg", "05218_p2.jpg", "05218_p3.jpg", "05218_p4.jpg", "05218_p5.jpg", "05218_p6.jpg", "05218_p7.jpg", "05218_p8.jpg"], "note": "pages 5-8 are a bundled scan of Groen van Prinsterer, Lettre DXLII, pp.141-143 -- the letter's own printed text, see NOTES.md flag"},
-    {"briefnr": 5221, "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5221", "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05221.pdf", "date": "30 July 1575", "correspondent": "to Jan van Nassau, from Dordrecht", "pages_in_pdf": 6, "images": ["05221_p1.jpg", "05221_p2.jpg", "05221_p3.jpg", "05221_p4.jpg", "05221_p5.jpg", "05221_p6.jpg"]},
-    {"briefnr": 5222, "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5222", "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05222.pdf", "date": "29 September 1575", "correspondent": "to Jan van Nassau, from Dordrecht", "pages_in_pdf": 12, "images": ["05222_p1.jpg", "05222_p2.jpg", "05222_p3.jpg", "05222_p4.jpg", "05222_p5.jpg", "05222_p6.jpg", "05222_p7.jpg", "05222_p8.jpg", "05222_p9.jpg", "05222_p10.jpg", "05222_p11.jpg", "05222_p12.jpg"], "note": "page 7 is a decipherment/briefing worksheet on a separate leaf; pages 8-12 are a bundled scan of Groen van Prinsterer, Lettre DLXXVII, pp.280-283 -- the letter's own printed text, see NOTES.md flag"},
-    {"briefnr": 5549, "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5549", "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05549.pdf", "date": "21 November 1573", "correspondent": "from Jan van Nassau, from Dillenburg", "pages_in_pdf": 6, "images": ["05549_p1.jpg", "05549_p2.jpg", "05549_p3.jpg", "05549_p4.jpg", "05549_p5.jpg", "05549_p6.jpg"], "note": "German language, not French like the other six"},
-    {"briefnr": 5198, "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5198", "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05198.pdf", "date": "21 September 1572", "correspondent": "to Jan van Nassau, from Mechelen", "pages_in_pdf": 9, "images": ["05198_p1.jpg", "05198_p2.jpg", "05198_p3.jpg", "05198_p4.jpg", "05198_p5.jpg", "05198_p6.jpg", "05198_p7.jpg", "05198_p8.jpg", "05198_p9.jpg"], "sibling_of": "orange-nassau-1572 (same autograph); solved on leaf", "note": "pages 8-9 are a bundled scan of a 19th c. periodical page giving the cipher's key table (mod-3 substitution) -- see NOTES.md flag"},
-    {"briefnr": 5199, "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5199", "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05199.pdf", "date": "24 September 1572", "correspondent": "to Jan van Nassau, from Geel", "pages_in_pdf": 4, "images": ["05199_p1.jpg", "05199_p2.jpg", "05199_p3.jpg", "05199_p4.jpg"], "sibling": "solved on leaf (Groen van Prinsterer; Nepveu tot Ameyde)", "note": "page 3 is a bundled scan of the printed plaintext (Archives ou correspondance inedite de la Maison d'Orange-Nassau, Tome III p.513-514)"},
-    {"briefnr": 5033, "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5033", "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05033.pdf", "date": "19 May 1575", "correspondent": "from Jan van Nassau, from Dillenburg", "pages_in_pdf": 24, "images": ["05033_p1.jpg", "...", "05033_p24.jpg"], "sibling": "solved elsewhere (Groen van Prinsterer)", "note": "heavily faded scan; content not closely characterised this pass, see NOTES.md/inventory.tsv flag"},
-    {"briefnr": 5205, "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5205", "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05205.pdf", "date": "28 April 1574", "correspondent": "to Jan van Nassau, from Dordrecht", "pages_in_pdf": 5, "images": ["05205_p1.jpg", "05205_p2.jpg", "05205_p3.jpg", "05205_p4.jpg", "05205_p5.jpg"], "note": "LANE R4 worker C, 24 Sept 2026, J6 5549-fit step 0: densest cipher page is p1 (all numerals, transcribed j6/fit_5205.tsv); p2 is numerals then clear French; p3 is the address/seal leaf; p4-p5 carry a different hand and a symbol (not numeral) cipher headed 'Graf Otto von Hollandsmigh' -- an unrelated document bundled into this PDF scan, not transcribed, not part of this fit test. PDF itself not committed (10MB combined with 5209; re-fetchable from pdf_url, one request, kept under the good-citizen rule)."},
-    {"briefnr": 5209, "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5209", "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05209.pdf", "date": "24 June 1574", "correspondent": "to Jan van Nassau, from Rotterdam", "pages_in_pdf": 6, "images": ["05209_p1.jpg", "05209_p2.jpg", "05209_p3.jpg", "05209_p4.jpg", "05209_p5.jpg", "05209_p6.jpg"], "note": "LANE R4 worker C, 24 Sept 2026, J6 5549-fit step 0: densest cipher page is p2 (all numerals, no clear-text lines, transcribed j6/fit_5209.tsv); p1 opens and closes in clear French around a shorter numeral block; p3 clear text names the letter as 'escripte du chiffre'; p4 fully clear (postscript). PDF not committed, re-fetchable from pdf_url."},
-    {"briefnr": 5803, "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5803", "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05803.pdf", "date": "13 September 1573", "correspondent": "Willem to Lodewijk van Nassau, from Dordrecht", "pages_in_pdf": 4, "images": ["05803_p1.jpg"], "note": "WC-NASSAU-FIT, 26 Sept 2026: densest cipher page is p1 (fully numerals, ~450 groups, transcribed j6/fit_5803.tsv); p2 top-half also cipher then a clear postscript; p3-4 not imaged here (re-fetchable from pdf_url). Only the fitted page committed."},
-    {"briefnr": 5804, "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5804", "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05804.pdf", "date": "2 October 1573", "correspondent": "Willem to Lodewijk van Nassau, from Delft", "pages_in_pdf": 4, "images": ["05804_p2.jpg"], "note": "WC-NASSAU-FIT, 26 Sept 2026: p1 clear French; densest cipher block is the lower two-thirds of p2 (transcribed j6/fit_5804.tsv), carrying tiny interlinear glosses over some numerals (a partial contemporary decipherment, not transcribed here); p3 has two more cipher blocks plus Willem's own signature; p4 is the address leaf, addressed to 'Messieurs les Comtes Jehan, Loys et Henry de Nassau' -- i.e. to Jan, Lodewijk and Hendrik jointly. Only p2 committed; p1/p3/p4 not imaged here (re-fetchable from pdf_url)."},
-    {"briefnr": 5805, "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5805", "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05805.pdf", "date": "31 October 1573", "correspondent": "Willem to Lodewijk van Nassau, from Delft", "pages_in_pdf": 16, "images": ["05805_p8.jpg"], "note": "WC-NASSAU-FIT, 26 Sept 2026: densest cipher page found by contact-sheet triage is p8 (fully numerals, ~330 groups, transcribed j6/fit_5805.tsv); pp7/9-11 also carry dense cipher, not transcribed this pass. Opmerkingen note the duplicate sent alongside carries German marginalia and was itself sent with WVO 5806 (13 Nov 1573), not itself cijfer-flagged, not fetched -- unseen witness. Only p8 committed; other pages not imaged here (re-fetchable from pdf_url)."}
-  ]
+ "source": "Huygens Institute, Briefwisseling van Willem van Oranje (WVO) database, resources.huygens.knaw.nl/wvo",
+ "note": "LANE R2 worker C1, 24 Sept 2026: all seven target letters plus siblings 5198/5199/5033 fetched in full (150dpi, JPEG q80, converted from an initial PNG batch that put the folder at 128MB -- see images/inventory.tsv for the per-page eye-check). Groen van Prinsterer's printed edition pages for 5218 and 5222 are bundled directly in their own WVO PDF scans (see NOTES.md 'C1' flag) -- this was not known when the manifest below was first written.",
+ "fetch": "tools pattern: resources.huygens.knaw.nl/media/wvo/images/NNNNN-NNNNN/NNNNN.pdf, rendered at 150dpi with pymupdf, JPEG quality 80",
+ "files": [
+  {
+   "briefnr": 5200,
+   "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5200",
+   "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05200.pdf",
+   "date": "18 October 1572",
+   "correspondent": "to Jan van Nassau, from Zwolle",
+   "pages_in_pdf": 3,
+   "images": [
+    "05200_p1.jpg",
+    "05200_p2.jpg",
+    "05200_p3.jpg"
+   ]
+  },
+  {
+   "briefnr": 5207,
+   "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5207",
+   "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05207.pdf",
+   "date": "23 May 1574",
+   "correspondent": "to Jan van Nassau, from Gorinchem",
+   "pages_in_pdf": 3,
+   "images": [
+    "05207_p1.jpg",
+    "05207_p2.jpg",
+    "05207_p3.jpg"
+   ]
+  },
+  {
+   "briefnr": 5213,
+   "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5213",
+   "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05213.pdf",
+   "date": "26 November 1574",
+   "correspondent": "to Jan van Nassau, from Delft",
+   "pages_in_pdf": 4,
+   "images": [
+    "05213_p1.jpg",
+    "05213_p2.jpg",
+    "05213_p3.jpg",
+    "05213_p4.jpg"
+   ]
+  },
+  {
+   "briefnr": 5218,
+   "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5218",
+   "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05218.pdf",
+   "date": "4 March 1575",
+   "correspondent": "to Jan van Nassau, from Dordrecht",
+   "pages_in_pdf": 8,
+   "images": [
+    "05218_p1.jpg",
+    "05218_p2.jpg",
+    "05218_p3.jpg",
+    "05218_p4.jpg",
+    "05218_p5.jpg",
+    "05218_p6.jpg",
+    "05218_p7.jpg",
+    "05218_p8.jpg"
+   ],
+   "note": "pages 5-8 are a bundled scan of Groen van Prinsterer, Lettre DXLII, pp.141-143 -- the letter's own printed text, see NOTES.md flag"
+  },
+  {
+   "briefnr": 5221,
+   "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5221",
+   "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05221.pdf",
+   "date": "30 July 1575",
+   "correspondent": "to Jan van Nassau, from Dordrecht",
+   "pages_in_pdf": 6,
+   "images": [
+    "05221_p1.jpg",
+    "05221_p2.jpg",
+    "05221_p3.jpg",
+    "05221_p4.jpg",
+    "05221_p5.jpg",
+    "05221_p6.jpg"
+   ]
+  },
+  {
+   "briefnr": 5222,
+   "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5222",
+   "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05222.pdf",
+   "date": "29 September 1575",
+   "correspondent": "to Jan van Nassau, from Dordrecht",
+   "pages_in_pdf": 12,
+   "images": [
+    "05222_p1.jpg",
+    "05222_p2.jpg",
+    "05222_p3.jpg",
+    "05222_p4.jpg",
+    "05222_p5.jpg",
+    "05222_p6.jpg",
+    "05222_p7.jpg",
+    "05222_p8.jpg",
+    "05222_p9.jpg",
+    "05222_p10.jpg",
+    "05222_p11.jpg",
+    "05222_p12.jpg"
+   ],
+   "note": "page 7 is a decipherment/briefing worksheet on a separate leaf; pages 8-12 are a bundled scan of Groen van Prinsterer, Lettre DLXXVII, pp.280-283 -- the letter's own printed text, see NOTES.md flag"
+  },
+  {
+   "briefnr": 5549,
+   "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5549",
+   "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05549.pdf",
+   "date": "21 November 1573",
+   "correspondent": "from Jan van Nassau, from Dillenburg",
+   "pages_in_pdf": 6,
+   "images": [
+    "05549_p1.jpg",
+    "05549_p2.jpg",
+    "05549_p3.jpg",
+    "05549_p4.jpg",
+    "05549_p5.jpg",
+    "05549_p6.jpg"
+   ],
+   "note": "German language, not French like the other six"
+  },
+  {
+   "briefnr": 5198,
+   "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5198",
+   "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05198.pdf",
+   "date": "21 September 1572",
+   "correspondent": "to Jan van Nassau, from Mechelen",
+   "pages_in_pdf": 9,
+   "images": [
+    "05198_p1.jpg",
+    "05198_p2.jpg",
+    "05198_p3.jpg",
+    "05198_p4.jpg",
+    "05198_p5.jpg",
+    "05198_p6.jpg",
+    "05198_p7.jpg",
+    "05198_p8.jpg",
+    "05198_p9.jpg"
+   ],
+   "sibling_of": "orange-nassau-1572 (same autograph); solved on leaf",
+   "note": "pages 8-9 are a bundled scan of a 19th c. periodical page giving the cipher's key table (mod-3 substitution) -- see NOTES.md flag"
+  },
+  {
+   "briefnr": 5199,
+   "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5199",
+   "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05199.pdf",
+   "date": "24 September 1572",
+   "correspondent": "to Jan van Nassau, from Geel",
+   "pages_in_pdf": 4,
+   "images": [
+    "05199_p1.jpg",
+    "05199_p2.jpg",
+    "05199_p3.jpg",
+    "05199_p4.jpg"
+   ],
+   "sibling": "solved on leaf (Groen van Prinsterer; Nepveu tot Ameyde)",
+   "note": "page 3 is a bundled scan of the printed plaintext (Archives ou correspondance inedite de la Maison d'Orange-Nassau, Tome III p.513-514)"
+  },
+  {
+   "briefnr": 5033,
+   "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5033",
+   "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05033.pdf",
+   "date": "19 May 1575",
+   "correspondent": "from Jan van Nassau, from Dillenburg",
+   "pages_in_pdf": 24,
+   "images": [
+    "05033_p1.jpg",
+    "...",
+    "05033_p24.jpg"
+   ],
+   "sibling": "solved elsewhere (Groen van Prinsterer)",
+   "note": "heavily faded scan; content not closely characterised this pass, see NOTES.md/inventory.tsv flag"
+  },
+  {
+   "briefnr": 5205,
+   "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5205",
+   "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05205.pdf",
+   "date": "28 April 1574",
+   "correspondent": "to Jan van Nassau, from Dordrecht",
+   "pages_in_pdf": 5,
+   "images": [
+    "05205_p1.jpg",
+    "05205_p2.jpg",
+    "05205_p3.jpg",
+    "05205_p4.jpg",
+    "05205_p5.jpg"
+   ],
+   "note": "LANE R4 worker C, 24 Sept 2026, J6 5549-fit step 0: densest cipher page is p1 (all numerals, transcribed j6/fit_5205.tsv); p2 is numerals then clear French; p3 is the address/seal leaf; p4-p5 carry a different hand and a symbol (not numeral) cipher headed 'Graf Otto von Hollandsmigh' -- an unrelated document bundled into this PDF scan, not transcribed, not part of this fit test. PDF itself not committed (10MB combined with 5209; re-fetchable from pdf_url, one request, kept under the good-citizen rule)."
+  },
+  {
+   "briefnr": 5209,
+   "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5209",
+   "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05209.pdf",
+   "date": "24 June 1574",
+   "correspondent": "to Jan van Nassau, from Rotterdam",
+   "pages_in_pdf": 6,
+   "images": [
+    "05209_p1.jpg",
+    "05209_p2.jpg",
+    "05209_p3.jpg",
+    "05209_p4.jpg",
+    "05209_p5.jpg",
+    "05209_p6.jpg"
+   ],
+   "note": "LANE R4 worker C, 24 Sept 2026, J6 5549-fit step 0: densest cipher page is p2 (all numerals, no clear-text lines, transcribed j6/fit_5209.tsv); p1 opens and closes in clear French around a shorter numeral block; p3 clear text names the letter as 'escripte du chiffre'; p4 fully clear (postscript). PDF not committed, re-fetchable from pdf_url."
+  },
+  {
+   "briefnr": 5803,
+   "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5803",
+   "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05803.pdf",
+   "date": "13 September 1573",
+   "correspondent": "Willem to Lodewijk van Nassau, from Dordrecht",
+   "pages_in_pdf": 4,
+   "images": [
+    "05803_p1.jpg"
+   ],
+   "note": "WC-NASSAU-FIT, 26 Sept 2026: densest cipher page is p1 (fully numerals, ~450 groups, transcribed j6/fit_5803.tsv); p2 top-half also cipher then a clear postscript; p3-4 not imaged here (re-fetchable from pdf_url). Only the fitted page committed."
+  },
+  {
+   "briefnr": 5804,
+   "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5804",
+   "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05804.pdf",
+   "date": "2 October 1573",
+   "correspondent": "Willem to Lodewijk van Nassau, from Delft",
+   "pages_in_pdf": 4,
+   "images": [
+    "05804_p2.jpg"
+   ],
+   "note": "WC-NASSAU-FIT, 26 Sept 2026: p1 clear French; densest cipher block is the lower two-thirds of p2 (transcribed j6/fit_5804.tsv), carrying tiny interlinear glosses over some numerals (a partial contemporary decipherment, not transcribed here); p3 has two more cipher blocks plus Willem's own signature; p4 is the address leaf, addressed to 'Messieurs les Comtes Jehan, Loys et Henry de Nassau' -- i.e. to Jan, Lodewijk and Hendrik jointly. Only p2 committed; p1/p3/p4 not imaged here (re-fetchable from pdf_url)."
+  },
+  {
+   "briefnr": 5805,
+   "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5805",
+   "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05805.pdf",
+   "date": "31 October 1573",
+   "correspondent": "Willem to Lodewijk van Nassau, from Delft",
+   "pages_in_pdf": 16,
+   "images": [
+    "05805_p8.jpg"
+   ],
+   "note": "WC-NASSAU-FIT, 26 Sept 2026: densest cipher page found by contact-sheet triage is p8 (fully numerals, ~330 groups, transcribed j6/fit_5805.tsv); pp7/9-11 also carry dense cipher, not transcribed this pass. Opmerkingen note the duplicate sent alongside carries German marginalia and was itself sent with WVO 5806 (13 Nov 1573), not itself cijfer-flagged, not fetched -- unseen witness. Only p8 committed; other pages not imaged here (re-fetchable from pdf_url)."
+  },
+  {
+   "briefnr": 5214,
+   "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5214",
+   "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05214.pdf",
+   "date": "25 December 1574",
+   "correspondent": "Willem to Jan van Nassau",
+   "pages_in_pdf": 3,
+   "images": [
+    "05214_p1.jpg"
+   ],
+   "note": "WC-NASSAU-FIT2, 26 Sept 2026: densest cipher page is p1 (fol.139, cipher block of ~16 lines plus a left-margin note, transcribed j6/fit_5214.tsv); p2 is the address leaf (blank verso, addressed 'Monsieur mon frere le Conte Jehan de Nassau', confirms Jan as recipient); p3 carries an unrelated document in a different cipher system (cross/plus-sign nulls over French clear text, subject 'l'occasion de Mayenne...l'entreprise d'Anvers') bundled into this PDF scan, not part of this letter, not this letter's oplossing. No oplossing leaf found in this PDF for 5214 itself. cosine 0.37 vs 5549 body -- FAILS the gate (max value only 106 vs body's 345, share_gt99 0.02 vs body's 0.24: a small homophone-range system, not the body's design). Only p1 committed; p2/p3 not imaged here (re-fetchable from pdf_url)."
+  }
+ ]
 }
