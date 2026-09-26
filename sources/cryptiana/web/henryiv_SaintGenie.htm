@@ -1,0 +1,82 @@
+<HTML>
+<HEAD>
+<TITLE>Heavy Use of Nulls in Henry of Navarre's Cipher (1586)
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="code, cipher, Henry IV">
+<link rel=stylesheet type=text/css href=decode2.css>
+<style type="text/css">
+<!--
+.cleartext {
+ color: #0000ff;
+}
+
+
+-->
+</style>
+</HEAD>
+
+<BODY>
+<H1>Heavy Use of Nulls in Henry of Navarre's Cipher (1586)</H1>
+
+<P>Henry of Navarre, later Henry IV of France, used a seemingly simple cipher in May 1586, which however may have had some strength against codebreaking attempts because of heavy use of nulls. The letter is in <i>Recueil des lettres missives de Henri IV</i>, vol.2 (<A HREF="https://gallica.bnf.fr/ark:/12148/bpt6k203962t/f668.item.texteImage">Gallica</A>, <A HREF="https://fr.wikisource.org/wiki/Recueil_des_lettres_missives_de_Henri_IV/Tome_2">Wikisource</A> (yet blank), <A HREF="https://archive.org/details/recueildeslettr02guadgoog/page/218/mode/2up">Internet Archive</A>) (p.219-220, Plate II) and is addressed to Monsieur de Saint Genies (probably Bernard de Gontaut Saint-Geni&egrave;s, seigneur de Campagnac, mentioned in <A HREF="https://fr.wikisource.org/wiki/Recueil_des_lettres_missives_de_Henri_IV/1580/Vers_l%E2%80%99ann%C3%A9e_1580_%E2%80%95_%C3%80_monsieur_de_Sainct_Genies">vol.1</A>).</P>
+
+<DIV style="float:right; width:700px">
+<img src="HenryIV_SaintGenie_decryption.png">
+
+<table border="1"><tr><td>
+Mons<sup>r</sup> de Saint G&eacute;nies, Je vous prie faire travailler incontinent &agrave; faire <i>faire des m&eacute;dailles et chesnes d'or</i> pour les souris <span class="note">(a code word the editor could not identify)</span>. Il sera bon d'en avoir jusqu'&agrave; trente; mais il faut que les <i>chesnes soient</i> plus tost de <i>apparence que de poids</i>. Il seroit bon d'y travailler plus tost que plus tard. Travaill&eacute;s-y, je vous prie. C'est<br>
+Vostre tr&egrave;s affectionn&egrave; maistre et pariait amy,<br>
+HENRY.<br>
+<br>
+Les dictes <i>m&eacute;dailles</i> peuvent estre de dix ou douze <i>escus et les chesnes de cent et deux cens escuz</i>.<br>
+Monsieur, je vous baise les mains tr&egrave;s humblement.
+</td></tr></table>
+</DIV>
+
+<P>According to <A HREF="https://fr.wikisource.org/wiki/Recueil_des_lettres_missives_de_Henri_IV/Pr%C3%A9face">the preface</A> (see around n.34), several letters in cipher in vol.2 for which the key was not found were deciphered by M. de Fr&eacute;ville. In one case (not the present piece), the word "elle" (composed of two letters each repeated twice) gave a breakthrough. The present piece is of the least complex kind among them.</P>
+<P>In these letters, nulls always outnumbered significant symbols. In the present piece, <i>chesnes soient</i> (13 letters) is enciphered with 29 symbols, and thereafter the single word <i>medailles</i> (9 letters) is represented by 23 symbols. This shows more than half of the symbols are meaningless characters.</P>
+<P>The cipher can be reconstructed as follows:</P>
+<img src="HenryIV_SaintGenie_key.png" width="600" style="margin:1em 1em 1em;"><br>
+
+<H3>Reconstruction</H3>
+<P>Partial enciphering helped the reconstruction work because symbol sequences for short phrases such as <i>medailles</i> or <i>chesnes soient</i> can be readily identified. Then, assuming that the same symbol always refers to the same letter or null (i.e., the cipher may be homophonic but not polyphonic), these require that some symbols occurring too many times (e.g., "q") be nulls (provided that the decipherment is correct). (As it turned out, this simplest specimen does not include homophones.)</P>
+<P>From such initial observations, symbols for M and S were tentatively identified. I felt surer of these from another occurrence of the word <i>medailles</i> albeit with different nulls. Visual comparison of the two occurrences then allowed me to spot L. (The symbol for N was also identified at the initial stage but I could not be sure because of the enciphering error of the word <i>soient</i>.)</P>
+<P>In the process, I owe much to CTTS (see George Lasry, "CTTS - CrypTool Transcriber and Solver" (<A HREF="https://dspace.ut.ee/items/a9d7784f-ef60-4c25-b56d-330244c6ece9">HistoCrypt 2026</A>)). One of the many features of CTTS facilitates the work of experimenting with hypothesized reading. For example, starting with one word <i>medailles</i>, by inputting tentative reading for M, S, and many nulls, the tool replaces all the relevant instances with the hypothesized reading. This greatly facilitates working on the remaining symbols (or abandoning the hypothesis if the hypothesis results in garble in other places). After the work has progressed to some extent, it is exciting to see that plaintext words are already visible in the yet unexplored portion.</P>
+
+<H3>Symbol Arbitrarily Ignored?</H3>
+<P>The footnote n.34 of the above-quoted preface says that, apart from such nulls and symbols for letters (including homophones), there are symbols that "represent <i>ad libitum</i> either an alphabetic letter or a meaningless filler". That is, the meaningful symbol may be sometimes used as nulls. This seems to be the case for the "2"-like symbol in this cipher. It represents A but is sometimes used as a null. This may cause confusion even for the intended recipient.</P>
+<P>See the tentative identification of "fa?" near the beginning of the ciphertext. Since the cipher does not appear to have syllable representation, another option is to assign F and A to two of the initial nulls and consider the remaining instances of these symbols as being used as nulls. But this seems too cumbersome for the deciphering clerk.</P>
+
+<H3>Heavy Use of Nulls</H3>
+<P>I have observed some French letters around this period used many nulls (the Bishop of Rennes (1561-1564), Vivonne (1574), Jacques Germigny (1579-1585) (see <A HREF="henryiii.htm">another article</A>), docteur Mauclerc (1593) (see <A HREF="league.htm">another article</A>), and probably others). But more than half of the symbols are nulls in this Navarrian specimen.</P>
+<br>
+<br>
+
+<font size="2">
+&COPY;2026 S.Tomokiyo<br>
+First posted on 6 July 2026. Last modified on 6 July 2026.<br>
+<A HREF="crypto.htm">Articles on Historical Cryptography</A><BR>
+</font>
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>
+
+
+
+
+
+

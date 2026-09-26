@@ -1,0 +1,138 @@
+<HTML>
+<HEAD>
+<TITLE>
+Prince of Orange's Columnar Transposition Cipher
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="code, cipher, Prince of Orange">
+<link rel=stylesheet type=text/css href=decode2.css>
+</HEAD>
+
+<BODY>
+<H1>Prince of Orange's Columnar Transposition Cipher</H1>
+<P><A HREF="http://www.aerobushentertainment.com/crypto/index.php?topic=36.40">tonybaloney</A> transcribes a ciphertext of the Prince of Orange from about 1675, together with its key (which he may have cracked himself). At the time, the Prince of Orange was a leader of a coalition of the Dutch, the Imperialists, and the Spaniards against the powerful French armies under Louis XIV.</P>
+
+<H3>Ciphertext and Plaintext</H3>
+<DIV class="kakomi">
+<b>(1)</b><br>
+      A: H:<br>
+<br>
+oteeeseano&aatdyarurieqehi<br>
+llrsnpsusrqrdiesltryrmunes,<br>
+iieresnyieeeoueetiocolducu<br>
+asusuccuteumuesdAsptponsrn<br>
+opulolsseeorqqrd'at6:ulmeseq<br>
+reetpryoutponlidsrsuossaoo<br>
+ducixhortnrmseaMhoeeur&one<br>
+nateueaisiuiqetoeeoudotaee<br>
+ruo&uslrsdnsrutaBedieencuq.<br>
+rpmglsrhuiynneanirtusdasaa<br>
+nrteleausmrcdsntlteyeabemy<br>
+<br>
+Prince de Orange<br>
+</DIV>
+
+<P>The plaintext, as deciphered from the above ciphertext, is as follows.</P>
+
+<DIV class="kakomi">
+<b>(2)</b><br>
+La derniere resolution qui sut prise auant le depart du compte de Monterey sut d'assieger Ath & il est alle a Bruxelles pour tenir toutes choses prestes pour le 6 du courant ye luy escrys auiourdhuy pour seauoir si les ttous iours dans le mesme sentiment & dabord que ie nauray response & que nous commencer on sa marcher ie uous en donneray aduis.
+</DIV>
+<P>Monterey was the Governor of the Spanish Netherlands since 1670 till he was recalled to Spain in February 1675 <span class="note">(<A HREF="http://en.wikipedia.org/wiki/Juan_Domingo_de_Zu%C3%B1iga_y_Fonseca">Wikipedia</A>)</span>. In the summer of 1674, the allied force planned to siege Ath, which had been held by the French since 1667.</P>
+
+<!--M&eacute;moires du Marquis de la Fare, p.274, the allied force of the Dutch, the Imperialists, and the Spanish led by the Prince of Orange, in which the Count of Monterey participated as a volunteer (because the Prince took the command), planned to siege Ath in 1674.
+https://books.google.co.jp/books?id=evVxwLf2_xoC&pg=PA274&lpg=PA274&dq=monterey+%22assieger+ath%22&source=bl&ots=dl3kbeYs_S&sig=eFd7u9PgTyTYTMCU9PlOAYwHMXg&hl=ja&sa=X&ei=ULQdVcqfMKW-mgWyjoCYBg&ved=0CB0Q6AEwAA#v=onepage&q=ath&f=false
+
+Annales des Provinces-Unies, vol.2, p.528, also describes it was resolved to siege Ath in 1674 but instead Oudenaarde was attempted.
+https://books.google.co.jp/books?id=j0xDAAAAcAAJ&pg=PA528&lpg=PA528&dq=monterey+%22assieger+ath%22&source=bl&ots=64_FgokoBi&sig=0bZ4sJLd7SWwhIJ4xDV7NzrAhTA&hl=ja&sa=X&ei=ULQdVcqfMKW-mgWyjoCYBg&ved=0CDEQ6AEwBA#v=onepage&q=ath&f=false
+
+Recueil de Lettres
+https://books.google.co.jp/books?id=bNFgAAAAcAAJ&pg=PA452&lpg=PA452&dq=%22comte+de+monterey%22+1674&source=bl&ots=KpvNcwibgw&sig=YrMrLqlKQcBOQlyWUDQq9ErOusg&hl=ja&sa=X&ei=87gdVZObHIXcmAWj54C4Dw&ved=0CCMQ6AEwAQ#v=onepage&q=ath&f=false
+
+https://books.google.co.jp/books?id=bNFgAAAAcAAJ&pg=PA452&lpg=PA452&dq=%22comte+de+monterey%22+1674&source=bl&ots=KpvNcwibgw&sig=YrMrLqlKQcBOQlyWUDQq9ErOusg&hl=ja&sa=X&ei=87gdVZObHIXcmAWj54C4Dw&ved=0CCMQ6AEwAQ#v=onepage&q=ath&f=false
+のp.75でもモンテレーが１６７４年にアト攻撃を計画とあり
+-->
+
+<H3>Enciphering by Columnar Transposition</H3>
+<P>The cipher used is so-called columnar transposition. The following describes how columnar transposition works to yield the above ciphertext (1), given the plaintext (2).</P>
+<P>In order to encipher, one first writes the letters in the message in 22 columns. (In this instance, the last four places are padded with "q".)</P>
+<DIV class="kakomi" style="font-size: medium;">
+<b>(3)</b><br>
+<TT>
+12 &nbsp;7 13 16 19 21 &nbsp;5 &nbsp;8 11 14 17 20 22 &nbsp;1 &nbsp;3 &nbsp;6 &nbsp;2 &nbsp;4 &nbsp;9 15 10 18<br>
+&nbsp;l &nbsp;a &nbsp;d &nbsp;e &nbsp;r &nbsp;n &nbsp;i &nbsp;e &nbsp;r &nbsp;e &nbsp;r &nbsp;e &nbsp;s &nbsp;o &nbsp;l &nbsp;u &nbsp;t &nbsp;i &nbsp;o &nbsp;n &nbsp;q &nbsp;u<br>
+&nbsp;i &nbsp;s &nbsp;u &nbsp;t &nbsp;p &nbsp;r &nbsp;i &nbsp;s &nbsp;e &nbsp;a &nbsp;u &nbsp;a &nbsp;n &nbsp;t &nbsp;l &nbsp;e &nbsp;d &nbsp;e &nbsp;p &nbsp;a &nbsp;r &nbsp;t<br>
+&nbsp;d &nbsp;u &nbsp;c &nbsp;o &nbsp;m &nbsp;t &nbsp;e &nbsp;d &nbsp;e &nbsp;M &nbsp;o &nbsp;n &nbsp;t &nbsp;e &nbsp;r &nbsp;e &nbsp;y &nbsp;s &nbsp;u &nbsp;t &nbsp;d' a<br>
+&nbsp;s &nbsp;s &nbsp;i &nbsp;e &nbsp;g &nbsp;e &nbsp;r &nbsp;A &nbsp;t &nbsp;h &nbsp;& &nbsp;i &nbsp;l &nbsp;e &nbsp;s &nbsp;t &nbsp;a &nbsp;l &nbsp;l &nbsp;e &nbsp;a &nbsp;B<br>
+&nbsp;r &nbsp;u &nbsp;x &nbsp;e &nbsp;l &nbsp;l &nbsp;e &nbsp;s &nbsp;p &nbsp;o &nbsp;u &nbsp;r &nbsp;t &nbsp;e &nbsp;n &nbsp;i &nbsp;r &nbsp;t &nbsp;o &nbsp;u &nbsp;t &nbsp;e<br>
+&nbsp;s &nbsp;c &nbsp;h &nbsp;o &nbsp;s &nbsp;e &nbsp;s &nbsp;p &nbsp;r &nbsp;e &nbsp;s &nbsp;t &nbsp;e &nbsp;s &nbsp;p &nbsp;o &nbsp;u &nbsp;r &nbsp;l &nbsp;e &nbsp;6 &nbsp;d<br>
+&nbsp;u &nbsp;c &nbsp;o &nbsp;u &nbsp;r &nbsp;a &nbsp;n &nbsp;t &nbsp;y &nbsp;e &nbsp;l &nbsp;u &nbsp;y &nbsp;e &nbsp;s &nbsp;c &nbsp;r &nbsp;y &nbsp;s &nbsp;a &nbsp;u &nbsp;i<br>
+&nbsp;o &nbsp;u &nbsp;r &nbsp;d &nbsp;h &nbsp;u &nbsp;y &nbsp;p &nbsp;o &nbsp;u &nbsp;r &nbsp;s &nbsp;e &nbsp;a &nbsp;u &nbsp;o &nbsp;i &nbsp;r &nbsp;s &nbsp;i &nbsp;l &nbsp;e<br>
+&nbsp;s &nbsp;t &nbsp;t &nbsp;o &nbsp;u &nbsp;s &nbsp;i &nbsp;o &nbsp;u &nbsp;r &nbsp;s &nbsp;d &nbsp;a &nbsp;n &nbsp;s &nbsp;l &nbsp;e &nbsp;m &nbsp;e &nbsp;s &nbsp;m &nbsp;e<br>
+&nbsp;s &nbsp;e &nbsp;n &nbsp;t &nbsp;i &nbsp;m &nbsp;e &nbsp;n &nbsp;t &nbsp;& &nbsp;d &nbsp;a &nbsp;b &nbsp;o &nbsp;r &nbsp;d &nbsp;q &nbsp;u &nbsp;e &nbsp;i &nbsp;e &nbsp;n<br>
+&nbsp;a &nbsp;u &nbsp;r &nbsp;a &nbsp;y &nbsp;r &nbsp;e &nbsp;s &nbsp;p &nbsp;o &nbsp;n &nbsp;s &nbsp;e &nbsp;& &nbsp;q &nbsp;u &nbsp;e &nbsp;n &nbsp;o &nbsp;u &nbsp;s &nbsp;c<br>
+&nbsp;o &nbsp;m &nbsp;m &nbsp;e &nbsp;n &nbsp;c &nbsp;e &nbsp;r &nbsp;o &nbsp;n &nbsp;s &nbsp;a &nbsp;m &nbsp;a &nbsp;r &nbsp;c &nbsp;h &nbsp;e &nbsp;r &nbsp;i &nbsp;e &nbsp;u<br>
+&nbsp;o &nbsp;u &nbsp;s &nbsp;e &nbsp;n &nbsp;d &nbsp;o &nbsp;n &nbsp;n &nbsp;e &nbsp;r &nbsp;a &nbsp;y &nbsp;a &nbsp;d &nbsp;u &nbsp;i &nbsp;s &nbsp;q &nbsp;q &nbsp;q &nbsp;q<br>
+</TT>
+</DIV>
+<P>The figures on the top row are the key. This may be derived from some agreed word or phrase. (For example, if one chooses a keyword "TULIP", it can be translated to a sequence of figures 4-5-2-1-3 by assigning numbers to the letters in the alphabetical order.)</P>
+<P>Transcribing the letters from these columns in the order of their number gives the following (4). (This is only to illustrate the working of the columnar transposition. In practice, one would be able to write down the above ciphertext (1) from the columns in (3) above.)</P>
+<DIV class="kakomi">
+<b>(4)</b><br>
+<TT>
+&nbsp;1: o t e e e s e a n o & a a <br>
+&nbsp;2: t d y a r u r i e q e h i <br>
+&nbsp;3: l l r s n p s u s r q r d <br>
+&nbsp;4: i e s l t r y r m u n e s,<br>
+&nbsp;5: i i e r e s n y i e e e o <br>
+&nbsp;6: u e e t i o c o l d u c u <br>
+&nbsp;7: a s u s u c c u t e u m u <br>
+&nbsp;8: e s d A s p t p o n s r n <br>
+&nbsp;9: o p u l o l s s e e o r q <br>
+10: q r d'a t 6:u l m e s e q <br>
+11: r e e t p r y o u t p o n <br>
+12: l i d s r s u o s s a o o <br>
+13: d u c i x h o r t n r m s <br>
+14: e a M h o e e u r & o n e <br>
+15: n a t e u e a i s i u i q <br>
+16: e t o e e o u d o t a e e <br>
+17: r u o & u s l r s d n s r <br>
+18: u t a B e d i e e n c u q . <br>
+19: r p m g l s r h u i y n n <br>
+20: e a n i r t u s d a s a a <br>
+21: n r t e l e a u s m r c d <br>
+22: s n t l t e y e a b e m y <br>
+</TT>
+</DIV>
+
+<H3>Deciphering</H3>
+<P>In order for the recipient to decipher the ciphertext (1), one breaks each line into two to get 22 lines in total as in (4) above. (If the lines of the ciphertext were run one into another, one would have to count the total number of letters and figure out that each line should contain 13 letters to get 22 lines. Alternatively, it may be arranged beforehand that the plaintext fills a 13-by-22 grid.) Again, this step is only given for illustration and may be skipped in practice.</P>
+<P>The recipient then writes down the key, which is of course the same as that in (3) used by the sender.</P>
+<DIV class="kakomi">
+<b>(5)</b><br>
+12 &nbsp;7 13 16 19 21 &nbsp;5 &nbsp;8 11 14 17 20 22 &nbsp;1 &nbsp;3 &nbsp;6 &nbsp;2 &nbsp;4 &nbsp;9 15 10 18<br>
+</DIV>
+<P>By writing the 13 letters of each line vertically in a column that is headed by the corresponding number of the key, one would get the plaintext as in (3).</P>
+
+<br>
+<font size="2">
+&COPY;2015 S.Tomokiyo<br>
+First posted on 4 April 2015. Last modified on 4 April 2015.<br>
+<A HREF="crypto.htm">Articles on Historical Cryptography</A><BR>
+</font>
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>

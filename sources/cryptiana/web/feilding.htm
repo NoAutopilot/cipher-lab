@@ -1,0 +1,141 @@
+<HTML>
+<HEAD>
+<TITLE>A Polyalphabetic Cipher of Lord Feilding (1634-1639)
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="Cipher, Code">
+<link rel=stylesheet type=text/css href=decode2.css>
+
+</HEAD>
+<BODY>
+<H1>A Polyalphabetic Cipher of Lord Feilding (1634-1639)</H1>
+
+
+<P>An undeciphered letter is preserved in Papers connected with Lord Feilding's Embassy in Italy held by Warwickshire County Record Office as CR 2017/C157/4 (<A HREF="http://discovery.nationalarchives.gov.uk/details/r/0f97f2c4-5ebf-428a-9a0a-4d61f2c91fb0">catalogue entry</A>). According to <A HREF="http://www.ourwarwickshire.org.uk/content/article/formal-option-civil-war-ciphers-lord-feildings-mystery-coded-letter-nearly-cracked">the county record office's website</A>, it is accompanied by the key with an explanation in French (CR 2017/C157/2), which allows revealing the plaintext of the letter in French.</P>
+
+<DIV style="float:right; width:800px;">
+<img src="feilding.png">
+</DIV>
+<H3>Polyalphabetic Cipher</H3>
+<P>The letter employs a polyalphabetic substitution cipher, which uses three substitution tables in turn. Each cipher permutes letters in pairs.</P>
+
+<table border="1" cellpadding="5">
+<tr><td>a</td><td>e</td><td>i</td><td>o</td><td>u</td><td>h</td><td>m</td><td>p</td><td>r</td><td>t</td></tr>
+<tr><td>b</td><td>c</td><td>d</td><td>f</td><td>g</td><td>l</td><td>n</td><td>q</td><td>s</td><td>x</td></tr>
+</table>
+
+<table border="1" cellpadding="5">
+<tr><td>t</td><td>s</td><td>r</td><td>q</td><td>p</td><td>n</td><td>m</td><td>l</td><td>h</td><td>g</td></tr>
+<tr><td>u</td><td>f</td><td>o</td><td>d</td><td>i</td><td>c</td><td>e</td><td>b</td><td>a</td><td>x</td></tr>
+</table>
+
+<table border="1" cellpadding="5">
+<tr><td>u</td><td>f</td><td>g</td><td>d</td><td>l</td><td>c</td><td>s</td><td>b</td><td>a</td><td>o</td></tr>
+<tr><td>e</td><td>i</td><td>q</td><td>n</td><td>h</td><td>m</td><td>p</td><td>r</td><td>t</td><td>x</td></tr>
+</table>
+<P>To encipher "soldat", the first letter "s", which is found to be paired with "r" in the first table, is enciphered as "r." The next letter "o" is sought in the second table and becomes "r"; the third letter "l" becomes "h" according to the third table. The first table was used again to encipher the fourth letter "d" to "i", and so on. The word "soldat" becomes "rrhiha" in the ciphertext. It can be seen that the same "r" in the ciphertext may correspond to plaintext "s" or "o" (or "b" if the third table is used), which makes codebreaking difficult.</P>
+<P>To add further security, the first and third words in every line are nulls (i.e., to be ignored).</P>
+
+<H3>Deciphering</H3>
+<P>The ciphertext (as seen in an image at the county record office's website) is as follows (with nulls removed).</P>
+<DIV class="kakomi2">
+rrhiha ft cceu hm rftbumxdf<br>
+ux bu qhfrhdx qur xumf<br>
+pbxur quribdu uxqu ereshqc<br>
+ded fxdmdx ftmf tgnem<br>
+lfcc ncnlcf ugt ftmf tgnem<br>
+haxuteaummdx ma rhcp cfscotmmu<br>
+iheetdc sxsuemm gghn dm hcf td<br>
+queregmbr pu hpu gcu erdgmbrhaxprd<br>
+bstuc met qtmf hbdecbhc pu hmes<br>
+stdu ibpbc haxhdxpxm he mhhlmego<br>
+nc bugo uxha dm hcf shhfmf fc<br>
+bur bxgm ux efmffmttmu nbcp<br>
+hmego uribdu fcbugo ssrccup nrd<br>
+befxpu nh ssracnadrd ' rp mc fxmu<br>
+ncf xosfepusf fcbur ouercnhdim<br>
+thmes feqmbdmsof fcbur stdu<br>
+</DIV>
+<P>With the above key, this can be (more or less) deciphered as follows.</P>
+<DIV class="kakomi2">
+... soldat ou m&ecirc;me le bourgeois
+et le paisant des gens sages, d'esprit, et de courage
+qui soient sans aucun
+bien deches eux sans aucun
+atttache[m]ent et sans esp&eacute;ran[c]e 
+d'aucune fortune quad je les ai
+decouvers, je lie une conversattion
+afagn? eux dans la quelle je leur
+fait faire attantion au [m]alheur
+de leur &eacute;tat, je les plains, je
+les loue et m'insinuant dans
+lauur? esprit, je leur promets mon
+amiti&eacute;, ma protection si ce sont
+des officiers, je les recommande 
+a leur superie[urs?] je les fait ....
+</DIV>
+<P>(Several errors are found in the ciphertext. Especially, the proper ordering in using the three tables is broken at least twice, as indicated with a check sign in the image to the right.)</P>
+
+<H3>Lord Feilding's Correspondence</H3>
+<P>Basil Feilding <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Basil_Feilding,_2nd_Earl_of_Denbigh">Wikipedia</A>)</span> (styled Lord Feilding before succeeding his father as 2nd Earl of Denbigh) was King Charles I's ambassador to Venice, then Turin from 1634 to 1639 <span class="note">(Report p.vi, xi, xii)</span>.</P>
+<P>Letters from Peter Morton, agent at Turin <span class="note">(Report p.vi)</span>, occasionally include words in cipher, of which a key is among the papers <span class="note">(Report p.12)</span>. It appears to be a figure code as was becoming common at the time (see <A HREF="strafford.htm">another article</A>). For example, "93" and "94" represent "Montagu" and "French ambassador", respectively <span class="note">(Report p.16)</span>.</P>
+<P>Different kinds of ciphers may have been used with other correspondents <span class="note">(p.40 with Sir Alex Gordoun; p.44 with Duc de Candale)</span>.</P>
+
+<P>His correspondence with foreigners was occasionally in French <span class="note">(Report p.13 with Monsieur Chateauroux; p.15 with Marquis de Pougny, French ambassador in England; p.24 with Syndicate and Council of Geneva; p.44 with Duc de Candale )</span>. His secret correspondence with the Marquis Leganes and the Spanish governor of Vercelli <span class="note">(Report xii)</span> may have been in French as well.</P>
+
+<H3>Memorandum</H3>
+<DIV class="note" style="margin: 0em 1em 0em;">
+#!/usr/local/bin/perl<br>
+# Lord Feilding暗号<br>
+# ３つの換字アルファベットを順に使っていく<br>
+# （このプログラムでは，「順に」は適用せず，暗号化のエラーを考慮して，候補の原字をすべて挙げることにする）<br>
+$alphabet0=("abcdefghilmnopqrstux");<br>
+$alphabet1=("baeicouldhnmfqpsrxgt");<br>
+$alphabet2=("hlnqmsxapbecridofutg");<br>
+$alphabet3=("trmnuiqlfhcdxsgbpaeo");<br>
+$cipher=("rrhiha ft cceu hm rftbumxdf / ux bu qhfrhdx qur xumf / pbxur quribdu uxqu ereshqc / ded fxdmdx ftmf tgnem / lfcc ncnlcf ugt ftmf tgnem / haxuteaummdx ma rhcp cfscotmmu / iheetdc sxsuemm gghn dm hcf td / queregmbr pu hpu gcu erdgmbrhaxprd / bstuc met qtmf hbdecbhc pu hmes / stdu ibpbc haxhdxpxm he mhhlmego / nc bugo uxha dm hcf shhfmf fc / bur bxgm ux efmffmttmu nbcp / hmego uribdu fcbugo ssrccup nrd / befxpu nh ssracnadrd ' rp mc fxmu / ncf xosfepusf fcbur ouercnhdim / thmes feqmbdmsof fcbur stdu");<br>
+			for ($i=0; $i＜length($cipher); $i++)<br>
+			{	$cipherletter = substr($cipher,$i,1); #暗号文の１文字<br>
+				if (! ($cipherletter =~/[a-z]/) ) {print "$line\n"; next;}<br>
+				$k = index($alphabet0,$cipherletter); #その１文字が何番目か<br>
+				$letter1 = substr($alphabet1,$k,1);<br>
+				$letter2 = substr($alphabet2,$k,1);<br>
+				$letter3 = substr($alphabet3,$k,1);<br>
+				print "$letter1 $letter2 $letter3\n";<br>
+			}<br>
+</DIV>
+
+
+<H3>References</H3>
+<P>Civil War Ciphers: Lord Feilding's Mystery Coded Letter (Nearly) Cracked! (2016) (<A HREF="http://www.ourwarwickshire.org.uk/content/article/formal-option-civil-war-ciphers-lord-feildings-mystery-coded-letter-nearly-cracked">Warwickshire County Record Office</A>)</P>
+<P>CR 2017/C157/1-4 (<A HREF="http://discovery.nationalarchives.gov.uk/details/r/0f97f2c4-5ebf-428a-9a0a-4d61f2c91fb0">catalogue entry</A>) ... Location of the source material.</P>
+<P>Report on the Manuscripts of the Earl of Denbigh: Preserved at Newnham Paddox, Warwickshire, (a.k.a. H.M.C.'s report on the Denbigh MSS or HMC's report on the Denbigh papers) Part V (1911) (<A HREF="https://archive.org/details/cu31924028044414">Internet Archive</A>)</P>
+<!--https://books.google.co.jp/books?id=h7A8FW74W0oC&pg=PR15&dq=%22Report+on+the+Denbigh+papers%22&hl=ja&sa=X&ved=0ahUKEwjQh8az6drYAhXLiLwKHWZcCvAQ6AEIKDAA (no preview)-->
+
+<P>CR 2017/C48 (<A HREF="http://discovery.nationalarchives.gov.uk/details/r/0da59f61-1a4f-4a34-bf20-666e70dbbdf0">catalogue entry</A>) ... Despatches and letters received by Basil Lord Feilding as Ambassador in Italy, most of which are calendared in the Report above.</P>
+
+<br>
+<br>
+<font size="2">
+&COPY;2018 S.Tomokiyo<br>
+First posted on 16 2018. Last modified on 16 2018.<br>
+<A HREF="crypto.htm">Cryptiana: Articles on Historical Cryptography</A><BR>
+</font>
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>
+
+

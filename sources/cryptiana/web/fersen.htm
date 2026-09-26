@@ -1,0 +1,305 @@
+<HTML>
+<HEAD>
+<TITLE>
+Ciphers of Marie-Antoinette and Count Axel von Fersen
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="cipher, Marie-Antoinette, Count Axel von Fersen">
+<link rel=stylesheet type=text/css href=decode2.css>
+</HEAD>
+
+<BODY style="background-color:#ffcccc">
+<H1>Ciphers of Marie-Antoinette and Axel von Fersen</H1>
+
+<H2>Ciphers of Marie-Antoinette and Axel von Fersen (1791-1792)</H2>
+<P>The cipher used by Marie-Antoinette and Count Axel von Fersen in their correspondence after the Flight to Varennes is described according to, among others, the paper "I shall love you up to the death" (2009) by Jacques Patarin and Val&eacute;rie Nachef, who conducted a research upon enquiry from a French TV channel.</P>
+<H3>Correspondence after the Flight to Varennes</H3>
+<P>On 20 June 1791, at a time when the French Revolution was becoming increasingly radical, King Louis XVI and Queen Marie-Antoinette left Paris in disguise for a frontier town. However, they were detected and stopped at the town of Varennes (22 June) and brought back to the Tuileries palace (25 June).</P>
+<P>Count Axel von Fersen, a Swede who arranged the escape, accompanied the royal family in the guise of a coachman but parted at the outskirt of Paris in compliance with the King's wish. Arriving on 22 June at Mons in the Austrian Netherlands, where he joined the King's brother, he immediately sent first reports of safe departure from Paris to his father and the King of Sweden. On the next day, however, he heard the failure from Marquis de Bouill&eacute;, who was to guard the royal family with his troops. Fersen wrote to Marie-Antoinette from Brussels on 27 June.</P>
+<P>Marie-Antoinette, on her part, wrote a brief note of a few lines on 28 June to tell him that she was safe and wrote again on 29 June to tell that it was known that Fersen arranged the escape and warned him not to return to Paris or write to her.</P>
+<P>These letters were all written in cipher. (The keyword for the letter of 28 June of Marie-Antoinette was <i>vertu</i> and that for the letter of 29 June was <i>depuis</i>.) After this, Fersen worked indefatigably for the French monarchy as an intermediary between the King and the Queen of France and the King of Sweden and other foreign courts. During the years 1791-1792, some sixty letters between Marie-Antoinette and Fersen are known, almost all of which are written in cipher or invisible ink ("white ink" as they called some kind of it).</P>
+<P>The cipher used between them is a fairly complex one: a polyalphabetic substitution cipher (as opposed to a simple monoalphabetic substitution cipher, which led to the destruction of Mary, Queen of Scots, in the sixteenth century).</P>
+
+<H3>Cipher Table</H3>
+<P>The cipher of Marie-Antoinette and Fersen is based on the following cipher table.</P>
+<P><img src="fersen.jpg"></P>
+<P>(As seen in the first line, the alphabet consists of twenty-three letters and an ampersand. At the time, the letters "i" and "j", "u" and "v" were often regarded as variants of the same letter and there were dictionaries which listed words in an alphabetical order that do not distinguish these letters: <i>vacancy, ulcer, voyager, up, vulgar</i>. Further, the letter "w" is seldom used in French and it is not uncommon that it is omitted in a cipher table. For example, the Bazerie cylinder in the nineteenth century did not have "w". Inclusion of the ampersand in a cipher table is also seen in <A HREF="lovell.htm">Lovell's cipher</A>.)</P>
+<P>In order to understand the use of this cipher table, for the time, we disregard the polyalphabetic aspect and look at only the first line (the "A" line). This line shows pairings of two letters of the alphabet, which indicates enciphering by replacing a letter by its partner in the pair. For example, since A is paired with B, A in the plaintext is enciphered into B in the ciphertext and B is enciphered into A. (Thus, enciphering and deciphering are symmetric.) The word <i>Louis</i> is enciphered as MNTKR (L->M, O->N, U->T, I->K, S->R). Thus, each line of the above cipher table corresponds to one cipher alphabet (set of substitution letters).</P>
+<P>In the history of cryptography, there have been other ciphers based on pairings such as ATBASH (cipher in the Bible) and the Kamasutra cipher. Even the Japanese Police Department and the Department of Justice used such a system in the Meiji period, when Japan started to absorb Western civilization.</P>
+
+<H3>Polyalphabetic Substitution Cipher</H3>
+<P>The above cipher table includes 22 lines from the "A" line to the "Y" line, that is, 22 cipher alphabets (hence, the name "polyalphabetic"). Switching through these 22 substitution patterns renders codebreaking difficult. The order of switching is indicated by a keyword. For example, if the keyword is <i>depuis</i>, the first letter of an epistle is enciphered with the substitution table of the "D" line; the second letter is enciphered with the "E" line; the third letter is enciphered with the "P" line, and so on. In order to make sure to use correct lines during enciphering, it was common to write down a letter of the keyword above (or below) each letter of the plaintext. For example, if "le roi et la reine" (the King and the Queen) is enciphered with the keyword <i>depuis</i>, keyword letters are written above the plaintext as follows.</P>
+<TT>
+<P>keyword: &nbsp;&nbsp;DE PUI SD EP UISDE</P>
+<P>plaintext: le roi et la reine</P>
+</TT>
+<P>This preparation allows one to see the "D" line should be used for enciphering the first letter "l" (which is enciphered into "Q" because "L" is paired with "Q" in the "D" line); the "E" line should be used for enciphering the next letter "e", and so on. It results in the following.</P>
+<TT>
+<P>keyword: &nbsp;&nbsp;&nbsp;DE PUI SD EP UISDE</P>
+<P>plaintext: &nbsp;le roi et la reine</P>
+<P>ciphertext: QU KCE &C BQ PIYRU</P>
+</TT>
+
+<P>The letter "e", which occurs four times in the plaintext, is enciphered differently as U, &, I, U. This diversity makes codebreaking more difficult for polyalphabetic substitution ciphers than for simple monoalphabetic substitution ciphers.</P>
+
+<P>A recipient who receives the ciphertext "QUKCE&CBQPIYRU" would write down keyword letters above the ciphertext in order to determine which line should be used for deciphering each letter.</P>
+<TT>
+<P>keyword: &nbsp;&nbsp;&nbsp;DEPUISDEPUISDE</P>
+<P>ciphertext: QUKCE&CBQPIYRU</P>
+</TT>
+<P>As before, the "D" line is used to decipher the letter "Q" in the ciphertext. Since "Q" is paired with "L" in the "D" line, "Q" is deciphered as "l". The "E" line is used to decipher the next letter "U", and so on.</P>
+<TT>
+<P>keyword: &nbsp;&nbsp;&nbsp;DEPUISDEPUISDE</P>
+<P>ciphertext: QUKCE&CBQPIYRU</P>
+<P>plaintext: &nbsp;leroietlareine</P>
+</TT>
+<P>As seen in the above, word-breaking space is usually suppressed in the ciphertext. Thus, once the deciphering is obtained, the recipient has to break it into words as "le roi et la reine." This is not so difficult but an error in the ciphertext may lead to confusion. See <A HREF="adams3.htm">another article</A>, which describes John Adams' troubles with polyalphabetic ciphers of James Lovell. (In the history of cryptography, there are occasional instances of retaining word-breaking space. As one example, see <A HREF="breaking.htm">Break Cornwallis's Cipher! -- Introductory Codebreaking</A>. Knowledge of word-breaking provides a strong clue for a codebreaker.)
+
+<H3>Manuscript Letters</H3>
+<P>Patarin and Nachef found in the French National Archives some encrypted letters with the keyword written on it. The manuscript letters were edited and published in 1877 by Baron von Klinckowstr&ouml;m, a grandson of an elder sister of Fersen. The manuscript letters, long believed to have been destroyed, were auctioned by descendants of Baron von Klinckowstr&ouml;m in 1982 and purchased by the French National Archives. Two exemplary manuscript sheets are reproduced in the paper of Patarin and Nachef.</P>
+<P>The first one is from a letter dated 8 July 1791 from Marie-Antoinette to Fersen. The keyword <i>courage</i> is written below the ciphertext and deciphered plaintext is written above the ciphertext. This letter is printed in, e.g., Klinckowstrom p.147, according to which the deciphering is in the hand of Fersen. (In this manuscript, Fersen writes keyword letters below the ciphertext, contrary to the above example, in which we wrote keyword letters above the ciphertext.)</P>
+<P>The second one is from a letter dated 10 October 1791 from Fersen to Marie-Antoinette. This shows the plaintext and keyword letters below it. Probably, this sheet was used by Fersen for enciphering. This letter is printed in, e.g., Klinckowstrom p.193, according to which this is a minute in the hand of Fersen. (The actual letter received by Marie-Antoinette was probably lost during the French Revolution.)</P>
+
+<H3>Enciphering Every Other Letter</H3>
+<P>Interestingly, Marie-Antoinette and Fersen enciphered only every other letter and left the other letters unenciphered. In the above example, instead of fully enciphering as</P>
+<TT>
+<P>keyword: &nbsp;&nbsp;&nbsp;DE PUI SD EP UISDE</P>
+<P>plaintext: &nbsp;le roi et la reine</P>
+<P>ciphertext: QU KCE &C BQ PIYRU</P>
+</TT>
+<P style="text-indent: 0em;">only every other letter with a keyword letter assigned is enciphered:</P>
+<TT>
+<P>keyword: &nbsp;&nbsp;&nbsp;D- E-P -U -I -S-D-</P>
+<P>plaintext: &nbsp;le roi et la reine</P>
+<P>ciphertext: QE OON EG LK R&IRE</P>
+</TT>
+<P>The manuscript sheets reproduced in the paper show that keyword letters are assigned to only every other letter and that those letters that are not assigned keyword letters are left unchanged. The only exception to this convention encountered by Patarin and Nachef was Marie-Antoinette's letter of 28 June 1791, in which every letter was enciphered. As noted above, this is the very first letter she wrote to Fersen after the Flight to Varennes to tell him she was safe. Probably, she just enciphered every letter without much thought but the labour of enciphering reminded her of skipping letters.</P>
+<P>It is essential to use keyword letters in the correct order. However, in the above-mentioned letter of 8 July, Fersen, at one point, inadvertently skipped two letters instead of one in assigning keyword letters. This resulted in a garbled deciphering in one passage. (Owing to the convention that the keyword is used from the first letter when a fresh paragraph starts, only one passage was garbled and the subsequent paragraphs were correctly deciphered.) Patarin and Nachef succeeded in revealing the garbled passage by re-deciphering from the ciphertext.</P>
+
+<H3>Problem of Key Agreement, etc.</H3>
+<P>Fersen handled enciphering and deciphering of letters for the King and the Queen at the time he worked for arranging their escape from Paris <span class="note">(Klinckowstrom p.vi, lviii)<!--Heidenstam p.23も？--></span>. Thus, probably Marie-Antoinette and Fersen both had the same cipher table at the time of the Flight to Varennes.<!--A Friend of the Queen p.240はあらかじめ暗号を取り決めていたと断言--></P>
+<P>As pointed out by Patarin and Nachef, however, the keyword changed with each message. Keywords mentioned in their paper and Gylden's paper <!--26 May 1791 is also mentioned in Kahn, p.775--> are as follows.<br>
+<table>
+<tr><td>21 April 1791</td><td>votre (Chelli)</td></tr>
+<tr><td>28 April 1791</td><td>depuis</td></tr>
+<tr><td>3 May 1791</td><td>votre</td></tr>
+<tr><td>6 May 1791</td><td>seroit</td></tr>
+<tr><td>9 May 1791</td><td>seroit</td></tr>
+<tr><td>16 May 1791</td><td>seroit</td></tr>
+<tr><td>20 May 1791</td><td>criton</td></tr>
+<tr><td>23 May 1791</td><td>battre</td></tr>
+<tr><td>26 May 1791</td><td>vertu (Klinckowstrom p.129)</tr>
+<tr><td>30 May 1791</td><td>depens</td></tr>
+<tr><td>10 June 1791</td><td>foible</td></tr>
+<tr><td>13 June 1791</td><td>vertu</td></tr>
+<tr><td>14 June 1791</td><td>vertu</td></tr>
+<tr><td>28 June 1791</td><td>vertu (Klinckowstrom p.142)</tr>
+<tr><td>29 June 1791</td><td>depuis (Klinckowstrom p.152)</tr>
+<tr><td>8 July 1791</td><td>courage (Klinckowstrom p.147)</tr>
+<tr><td>28 September 1791</td><td>situation (Auer)</td></tr>
+<tr><td>19 October 1791</td><td>vertu (Auer)</td></tr>
+<tr><td>17 December 1791</td><td>cause (Auer)</td></tr>
+<tr><td>10 October 1791</td><td>autres (Klinckowstrom p.193)</tr>
+<tr><td>26 March 1792</td><td>beaut&eacute; (Auer)</td></tr>
+<tr><td>9 July 1792</td><td>depuis (not in Klinckowstrom)</tr>
+</table></P>
+<P><!--Different keywords for 28 June and 29 June reflect change of the keyword every day (or every message).-->Use of the same keyword may give a clue but they do not fall on the same day of the week. The rightmost digit of the day may not be significant, either, because the keywords for 28 June and 8 July are not the same.<!--Simplest assumptions may be that there was a schedule of keywords to be used attached to the cipher table or that the bearer of the letter orally conveyed the keyword.--> A rule such as "the keyword should be the third word in the plaintext part of the letter" does not seem to apply in view of the French text of the letters in print. But such an idea of using a particular part of the letter as the key is seen in Fersen's letter to Mademoiselle Taube, sister of Baron de Taube, which gives an example of enciphering by means of a Vigenere table with a keyword "lundi" and then describes as follows <span class="note">(Gylden p.250)</span>.</P>
+<DIV class="kakomi">
+To use this cipher, one must have a key, that is, some word least easy to guess. It is to take the day of the week of writing. That is, in the example above, the key would be lundi [Monday] because the 1st of February is Monday. If it is the 2nd, it would be mardi [Tuesday]; if the 3rd, mercredi [Wednesday], and so on. To make a change, one can underline the place of the dating of the letter, as <U>Stockholm</U>. The underline would indicate that Stockholm is the key. Whenever any day of the week is placed before the date, it signifies that the day is the key; it would be necessary only when one wants a key other than the day of the week of the date, such as mercredi [Wendsday], 1st February.
+</DIV>
+
+<P>It is noted that the letter of 26 May 1791 from Fersen to Marquis de Bouill&eacute <span class="note">(Klinckowstrom p.129-130)</span> and the letter of 25 November 1791 from Marie-Antoinette to Fersen <span class="note">(Klinckowstrom p.231)</span> explicitly convey the keywords in the letters themselves but these keywords are for particular two lines or enclosures of the (ciphered) letters. The keyword for the overall letter of 26 May 1791 was "vertu"<!--Gylden p.252-->. </P>
+<P>(Notes added in February 2019): According to Brocard (2018), describing David Chelli's discovery, an article of Patarin and Nachef in <i>Sciences et Avenir</i> describes the key word exchange of Marie-Antoinette and Fersen: the sender write, at the top of the letter, a number, which indicates the page of a book agreed in advance. The first word of the page is used as the key. Since the same cipher was also used by Bouill&eacute; (see Chelli) and the court in Vienna (see Auer), this means the same book must have been shared by those correspondents, too. I have not yet located the referenced paper.</P>
+<!--L'expediteur de la lettre inscrit un numero en haut de celle-ci renvoyant a la page d'un livre convenu a l'avance dont le premier mot donne la cle du code.
+https://www.sciencesetavenir.fr/archeo-paleo/la-correspondance-amoureuse-et-cryptee-de-marie-antoinette_21590ではないよう-->
+
+<br>
+<P>In addition to the issue of key agreement, there need to be some indication as to whether every letter in an epistle is enciphered or only every other letter is enciphered. As noted above, the epistle of 28 June was fully enciphered but that of 29 June was enciphered only in every other letter. It would have been hardly possible to arrange the letter skipping scheme between these epistles and some prearranged indication must have been made to tell the recipient that the epistle is enciphered only for every other letter. Fersen's memoir for Marie-Antoinette dated 26 November 1791 (see below) may relate to this.</P>
+
+<H3>Keeping up the Correspondence</H3>
+<P>One may wonder how Marie-Antoinette, under the surveillance of the revolutionaries, could have correspondence with Fersen. Indeed, just after the failure of the Flight to Varennes, Marie-Antoinette told Fersen in the letter of 29 June not to return to Paris or write to her and explained that she was watched day and night. Only after the King's acceptance of the constitution in September was the royal family released from the twenty-four hour surveillance <span class="note">(Evelyn Farr p.176)</span> and the correspondence between Marie-Antoinette and Fersen resumed. Letters were sometimes sent by a safe hand, sometimes in a box of rusks or in a parcel of tea or chocolate, or were sewn into the lining of a hat or some clothing <span class="note">(Klinckowstrom p.lxvi)</span>. They may be sent in the cover of the newspaper <i>Moniteur</i> <span class="note">(Gaulot p.303, Klinckowstrom p.185, English p.309)</span>.</P>
+<P>Another question may be how Marie-Antoinette could keep the cipher safe under the surveillance. Considering that the Queen burnt most of her papers in the spring of 1792<span class="note">(Yonge p.359, Evelyn Farr p.190)</span>, she could keep privacy of her papers at least until this time. Though the King and the Queen had to move from Versailles to Paris in October 1791, they lived in their Tuileries palace. (By the way, another monarch, King Charles I of England, who was executed by republicans 140 years before, burnt his ciphers only the day before the execution <span class="note">(see <A HREF="charlesi.htm">another article</A>)</span>.)</P>
+<P>Even if the Queen could keep her ciphers, it was becoming increasingly difficult to keep up the communication. Just before the revolutionary government declared war on Austria in April 1792, Marie-Antoinette wrote:</P>
+<DIV class="kakomi">
+What follows is in the same cipher, but you can have it deciphered by another. Baron B[reteuil] must tell M. de Mercy from me that I dare not write to him directly, or by a secretary because I am horribly watched just now. Perhaps I shall never be able to write to you again.<br>
+<span class="note">Marie-Antoinette to Fersen, 19 April 1792 (Klinckowstrom p.233, English p.319)</span>
+</DIV>
+<P>Marie-Antoinette resumed communication in June. A series of her letters to Fersen (including letters of 5 June, 7 June, 23 June, 26 June, 7 July, 11 July, 15 July, 21 July, 24 July, 1 August but not those of 3 and 6 July and another undated letter received on 9 July 1792) employed a form of business letters addressed to Mr. Rignon and were written in the hand of another person (probably Goguelat) <span class="note">(Klinckowstrom p.289)</span>. Paul Gaulot says this mode of correspondence was adopted because the hitherto employed means such as cipher and invisible ink were no longer sufficient and an important message was hidden in a business letter "at a spot indicated by a sign ... in a manner previously arranged according to a key -- in short, what we should now call a code" <span class="note">(p.303)</span>, though Klinckowstrom simply marks "en chiffre" and Wormeley <span class="note">(p.322)</span> marks "in white ink".<!--Fersen to Marie-Antoinette, 6 March 1792がGoguelat宛のインストラクション?--> Thus, though there is disagreement as to the exact nature of the method employed, Patarin and Nachef's paper tells us that at least Marie-Antoinette's hitherto unknown letter of 9 July 1792 (see below) was written in the same polyalphabetic cipher as described above.</P>
+<P>The letter of 1 August 1792 has one sentence in cipher at the end of the ostentatious business communication: "There is [a message in] white ink." The message conveyed that the life of the King and the Queen was threatened. This was the last letter from Marie-Antoinette to Fersen <span class="note">(listing of Klinckowstrom; Wormeley p.304, 344)</span>. On 10 August, a mob stormed the Tuileries and the royal family took shelter with the Legislative Assembly and was later imprisoned in the Tower of the Temple. This marked the end of the Bourbon monarchy.</P>
+
+<H3>Findings through Decipherment of the Ciphertext</H3>
+<P>Patarin and Nachef re-deciphered the ciphertext in the manuscript by using the cipher table and the keyword written on the manuscript and compared the result with the published text. Recovery of the garbled passage mentioned above is one of their achievements. In the Queen's letter of 29 June 1791, they proved that the omissions in the published text showed Marie-Antoinette's affection for Fersen. It may not be new but, before their work, there were sceptics who asserted the deleted portions represented sensitive diplomatic issues or identity of friends<!--http://books.google.com/books?id=UqqcOU4Zpr4C&printsec=frontcover&dq=marie+antoinette&hl=ja&ei=LBodTYPhIY7IvQPz_czjDQ&sa=X&oi=book_result&ct=result&resnum=1&ved=0CCcQ6AEwAA#v=onepage&q=cipher&f=false p.241によるとKilinckowstromはpolitical secrets or undesirable remarksをフェルセンが消したと述べている-->.</P>
+<P>They further deciphered Marie-Antoinette's letter of 9 July 1792, which they say has not been published before. (Did Fersen leave this letter undeciphered unlike other letters from the Queen or did he or some other person eradicate the deciphering but not the cipher?) This letter includes a passage "... we would have no more happiness if we were separated for ever. Farewell. Feel sorry for me. Love me. Above all do not judge me in all what you will see me doing before you hear me. I would die if I was for a moment disapproved by the one I adore and I will never stop adoring." This clearly shows Marie-Antoinette's affection for Fersen.</P>
+
+<H3>Marie-Antoinette's Love Letter</H3>
+<P>The following letter of Marie-Antoinette to Fersen, written after the Flight to Varennes, has been known.</P>
+<DIV class="kakomi">I can tell you that I love you and I have only time for that. I am well. Do not worry about me. I wish I could know you were too. Write to me in cipher by the post: address it to M. de Brouvne, in a double envelope to M. Gougeno. Let your valet write the addresses. Let me know to whom I should I should send those I could write to you, because I cannot live without that. Farewell, the most loved and the most loving of men. I embrace you with all my heart.<br>
+<span class="note">(This English translation is adapted from Evelyn Farr p.169 with reference to Lucien Maury's text.)</span>
+</DIV>
+<P>This letter is not included in Klinckowstr&ouml;m's publication in 1877 and was published by a Lucien Maury in <i>Revue Bleue</i> for the first time in 1907. Maury states Klinckowstr&ouml;m destroyed the manuscript after his publication but his son provided Maury with a copy of this letter, which had been overlooked. Fersen must have written his deciphering between the lines of the ciphertext but Patarin and Nachef say they could not find the ciphertext.</P>
+<P>While this letter has been often quoted as evidence to show Marie-Antoinette's affection for Fersen, there has been argument about its authenticity. Patarin and Nachef showed that letters of which authenticity has been accepted also include the Queen's expression of affection for Fersen.</P>
+<P>By the way, "M. Brouvne" mentioned in the letter may correspond to "M. Broune" of the letter below.</P>
+<DIV class="kakomi">
+I have your letter of 27th<!--この手紙はKlinckowstromになし-->. This is a very safe way; you can always write to me under this address, or that of M. Broune; but you must put an <i>n</i> on your letters; and the first time put <i>n</i> =<!--フランス語ではn＝deux-->, to be more sure.<br>
+<span class="note">Marie-Antoinette to Fersen, 30 March 1792 (Klinckowstrom 220, English p.315-316)</span>
+</DIV>
+<P>Further, Fersen's minute of a letter of 23 December 1791 to Marie-Antoinette has a marginal note "12 Dec., by the post, Gougenot" <span class="note">(Klinckowstrom p.273)</span> and the name is also mentioned on ibid. p.104 (English p.94). It seems hard to forge a letter with these names.</P>
+
+<H2>Invisible Ink (White Ink)</H2>
+<P>Marie-Antoinette and Fersen occasionally used invisible ink instead of or in addition to cipher. For example, Marie-Antoinette's last letter to Fersen of 1 August 1792 used cipher only to say "There is [a message in] white ink." followed by lines in white ink.</P>
+<P>It appears Fersen started to use white ink in May 1791 <span class="note">(Wormeley p.109)</span>. The following letter of Marie-Antoinette, showing her uneasiness of writing with invisible ink, would be one of her first uses.</P>
+<DIV class="kakomi">
+Little accustomed to writing in this manner, my writing will be indecipherable.<br>
+<span class="note">Marie-Antoinette to Mercy, 14 May 1791 (Feuillet de Conches<sup>1</sup>, Vol.2, p.54)</span>
+</DIV>
+<P>Invisible ink had its troubles. At one time, Marie-Antoinette could not bring out the writing in white ink.</P>
+<DIV class="kakomi">
+It is impossible to bring out M. de Breteuil's writing on the papers with the liquid that the Chevalier de Coigny has brought us. Send me word at once, by post, the right way to use the liquid and of what it is made, because if this is bad we must get some more made.<br>
+<span class="note">Marie-Antoinette to Fersen, 19 October 1791 (Klinckowstrom p.198, English p.168)</span>
+</DIV>
+<P>Notwithstanding, Fersen considered white ink was preferable to cipher when there arose confusion about a "new method of enciphering" (see below).</P>
+<DIV class="kakomi">
+There is another manner, which is less long, and of which we had better make use, namely, to squeeze the juice of a lemon into a glass and write with it; the writing should be between the lines of a gazette or pamphlet; which can be sent to me, addressed either to "Rignon" or simply to me.<br>
+<span class="note">Memoire of Fersen for Marie-Antoinette, 26 November 1791 (Klinckowstrom p.233-257, English p.197)</span>
+</DIV>
+<P>In March 1792, Marie-Antoinette suspected that newspapers for her, which might include Fersen's secret message, were stopped <span class="note">(Marie-Antoinette to Fersen, 20 [2] March 1792, Klinckowstrom p.185, English p.309)</span>. In a response, Fersen advised Marie-Antoinette to use meaningless cipher as a disguise and write the true message in white ink between the lines.</P>
+<DIV class="kakomi">
+When you write to me, it will be better to do it in white ink between the lines of a cipher that means nothing; for they might get the true cipher here.<br>
+<span class="note">Fersen to Marie-Antoinette, 6 March 1792 (Klinckowstrom vol.2 p.199, English p.313)</span>
+</DIV>
+<P>Such a method was employed by Breteuil before: "Do not forget that this memoir, though enciphered, is only written with white ink and that the ciphers mean nothing." <span class="note">(Breteuil to Fersen, 29 May 1791 (Klinckowstrom p.130-131; My translation)</span> Use of white ink between cipher lines <i>that bear actual messages</i> would have required extra care not to write deciphering over the white ink. The following is a warning to that effect.</P>
+<DIV class="kakomi">
+Between the lines of this writing are written in white ink the numbers of the notes that I send you. Make the white ink show out before you decipher the last two lines of this letter; the word for the two is <i>battre</i>.<br>
+<span class="note">Fersen to Marquis de Bouill&eacute;, 26 May 1791 (Klinckowstrom p.129)</span>
+</DIV>
+
+<P>However, invisible ink was prone to discovery when the royal family was more closely watched after the declaration of war against Austria in April 1792.</P>
+<DIV class="kakomi">
+They brought me your last letter, written in white, after they had brought out the writing. This is the second time this has happened. We must take other measures to prevent this trickery. You will see the importance of this warning.<br>
+<span class="note">Marie-Antoinette to Fersen, 6 July 1792 (Klinckowstrom p.318, English p.331)</span>
+</DIV>
+
+<H2>Variety of Fersen's Ciphers</H2>
+<P>Fersen used cipher from early 1790 in his correspondence with Marquis de Bouill&eacute;; Baron de Breteuil, an &eacute;migr&eacute; and the royal family's chief representative abroad<!--http://en.wikipedia.org/wiki/Louis_Auguste_Le_Tonnelier_de_Breteuil; Fatal Friendship p.125-->, whose replacing Jacques Necker had instigated the Revolution; and Baron de Taube, an agent in the confidence of the King of Sweden. Apparently, Fersen used the same enciphering table with these correspondents <span class="note">(Patarin and Nachef, p.2, Section 3)</span>. <!--Indeed, the first three lines of the cipher table used by Fersen for "the letters to and from the co-conspirators" printed in David Kahn, <i>Codebreakers</i>, p.775 are substantially identical with the one described above. Further, Fersen's letter of 26 May 1791 to Bouill&eacute; cited below indicates use of a keyword <i>battre</i>, which means the cipher was not numerical code as was commonly used by diplomats.--></P>
+<P>In addition to the cipher table, Fersen had a small code for expressing some names by a letter of the alaphabet in the royal correspondence: "C" for "the Emperor", "N" for "the King", etc. On the back of the sheet are written "M. Guoguelas (Goguelat?), rue Pelletier, n<sup>o</sup> 8, maison de M. Baron" and lower "Gouguenot (Gougenot?) idem." <span class="note">(Gylden p.255)</span></P>
+<P>Fersen used different ciphers for his Swedish correspondents. Fersen considered the Austrian diplomat Mercy could not decipher the Swedish cipher he used in writing to the King of Sweden <span class="note">(Klinckowstrom p.196, English p.310, 251)</span>, while he warned Marie-Antoinette never to write to him through Mercy because he could decipher all her letters <span class="note">(Klinckowstrom p.221-222, English p.182-184)</span><!--上記のようにメルシーは暗号を共有．マリーアントワネットはそのことを知らなかったわけではないが，フェルセンほどメルシーに対して不信感を持っていなかったということだろう．-->. Further, at least the cipher used with Baron <!--Gustaf Adolf von-->de Nolcken, Swedish minister in London, was different from the one used with Vienna <span class="note">(Klinckowstrom p.190, 191)</span>.</P>
+<P>Fersen's papers include Swedish diplomatic codes of 1778 and 1785, each of which includes 2800 elements for randomly ordered letters, syllables, word endings, and words. <span class="note">(Gylden p.255)</span></P>
+
+<H3>The Cipher between Marie-Antoinette and Fersen Shared with Marquis of Bouill&eacute;</H3>
+<P>In 2017, David Chelli found in London an undeciphered letter (derived from Fersen's archives) between Fersen and the Marquis of Bouill&eacute; dated 21 April 1791, when the Flight to Varennes was being planned. Although the letter was undeciphered, the keyword "votre" written under the lines of ciphertext allowed deciphering according to the same cipher as the one used by between Marie-Antoinette and Fersen.</P>
+<P>See David Chelli, "Fuite &agrave; Varennes, exceptionnel document in&eacute;dit" (<A HREF="https://www.chelli-autographes.com/varennes/">online</A>) and Marie-Am&eacute;lie Brocard, "Correspondance pour Varrenes", <i>Figaro Histoire</i>, June-July 2018 incorporated therein.</P>
+
+<H2>Variety of Marie-Antoinette's Ciphers</H2>
+<H3>Polyalphabetic Cipher with the Court in Vienna</H3>
+<P>Marie-Antoinette used the polyalphabetic cipher in her correspondence with the court in Vienna. A page of a letter of 28 September 1791, preserved in the Habsburg archives and  reproduced in Leopold Auer, "Die Verwendung von Chiffren in der Korrespondenz des Kaiserhofes" in <i>Geheime Post</i> (2015), shows it is the same as the cipher she used with Fersen. With the key "situation" repeatedly written above the letters of the ciphertext, the message can be read "Il est bien important ...." Other keywords found in the letters in the Habsburg archives are "vertu", "beaut&eacute;", and "cause."</P>
+<P>(I thought the polyalphabetic cipher was given by Fersen to Marie-Antoinette but maybe it was the Queen who introduced this cipher in their correspondence.)</P>
+
+<H3>Cipher with Leopold II and Comte de Mercy</H3>
+<P>Marie-Antoinette's use of cipher was not limited to her correspondence with Fersen. Marie-Antoinette is also known to have written in cipher to her brother Leopold II <span class="note">(Arneth<sup>1</sup>)</span>.</P>
+<P>Feuillet de Conches<sup>1</sup> mentions a particular cipher arranged between Marie-Antoinette and Mercy <span class="note">(Vol.2, p.95)</span>.  (When in Paris as Austrian minister, the Comte de Mercy had worked to strengthen the alliance between France and Austria, which materialized as the marriage of Marie-Antoinette into the France in 1770. He was instructed by Maria-Theresa to act as a mentor of the young princess<!--http://www.nndb.com/people/185/000085927/-->. In 1792, he became governor-general of the Austrian Netherlands.)</P>
+<P>On the other hand, Marie-Antoinette appears to have used the cipher with Fersen also in her correspondence with the Comte de Mercy, as the first quotation in the next section shows.</P>
+
+<H3>"New Method of Enciphering"</H3>
+<P>It appears Marie-Antoinette introduced a new method of enciphering in October 1791.</P>
+<DIV class="kakomi">
+This letter is enciphered with the new manner; if you are embarrassed, consult M. de F[ersen]. One must skip one letter.<br>
+<span class="note">Marie-Antoinette to Mercy, 19 October 1791 (Arneth p.215)</span></DIV>
+<P>The Comte de Mercy found this worthless.</P>
+<DIV class="kakomi">
+A proof has just been given to M. de F[ersen] that the new method of enciphering is worthless; he will explain it.<br>
+<span class="note">Mercy to the King, 26 October 1791 (Arneth p.217)</span>
+</DIV>
+<P>Probably, Fersen's explanation mentioned here led to the following exchange.</P>
+<DIV class="kakomi">
+I understand very well all that concerns the cipher, but you must always put the two full stops when the two words end at the same time and leave the j and v; that will facilitate things for us. We have read very easily all that was in white;<br>
+<span class="note">Marie-Antoinette to Fersen, 31 October 1791 (Klinckowstrom p.222, English p.180 adapted here)</span>
+</DIV>
+<DIV class="kakomi">
+I understand very well what you say about the cipher; we will use it thus: we will put one full stop [.] at the beginning; and when there is a letter skipped we will put two full stops [:].<br>
+<span class="note">Fersen's memoir for Marie-Antoinette, 26 November 1791 (Klinckowstrom p.257, English p.197)</span><!--これが上記への返事であることは，この直後にブリュッセルに資金がないと答えていることからも明らか-->
+</DIV>
+<P>This may relate to indication of whether letter skipping is employed or not, though the exact nature of the "new method" is not clear from these letters.</P>
+
+
+
+<H3>Cipher for Monsieur, Comte de Provence (1791)</H3>
+<P>While Marie-Antoinette seems to have arranged a cipher with Fersen before the Flight to Varennes, it was about July 1791 that she sent her brother-in-law, Comte de Provence, a cipher in which he might reply to her <span class="note">(Heidenstam p.51)</span>.</P>
+<P>However, his use of the cipher drew a chiding remark from her: "At length I have succeeded in deciphering your letter, my dear Brother, but it was not without difficulty. There were so many mistakes [in the use of the cipher]. Still, it is not surprising, seeing that you are a beginner and that your letter was a long one. ..." <span class="note">(ibid. p.59)</span></P>
+<P>If a polyalphabetic cipher similar to the one with Fersen was used, it is not surprising that a beginner in cipher made quite a few errors. More than a year after Fersen started to use cipher in writing to Baron de Taube, he received an erroneous enciphered letter from him.</P>
+<DIV class="kakomi">
+I received two days ago yours of the 19th. The cipher of yours of the 8th was so incorrect, and you had forgotten so many things in it that I had the greatest difficulty in the world to make out its meaning. Towards the end the cipher was plainer; ...<br>
+<span class="note">(Fersen to Baron Taube, 9 May 1791)</span>
+</DIV>
+
+<H3>Cipher with Relatives in Italy (1792)</H3>
+<P>Marie-Antoinette had relatives in many courts in Italy, including her elder sisters Maria Carolina, Queen of Naples, and Maria Amalia, Duchess of Parma.</P>
+<P>Marie-Antoinette's cipher with them is recorded in <i>Secret memoirs of the royal family of France, during the revolution</i>, Vol. 2. The author is an English lady-in-waiting to Princess of Lamballe, a confidante of Marie-Antoinette.</P>
+<P>The author says Marie-Antoinette carried on a very extensive correspondence with Edmund Burke<!--Charles Duke Young p.335によると王妃に憲法拒否を助言したよう--> through the medium of Princess of Lamballe and she frequently "deciphered" letters (presumably from Burke) <span class="note">(p.140)</span>.</P>
+<P>Princess of Lamballe was sent to England by the Queen in 1791 to seek help to the French royal family. Twice during her residence in England, the author was sent by Marie-Antoinette with papers communicating the result of the secret mission to the Queen of Naples. On the second of these trips, after reaching the destination after travelling night and day, she was immediately compelled to decipher the papers with the Queen of Naples in the office of the secretary of state <span class="note">(p.140)</span>.</P>
+<P>On 2 August 1792, when the situation was becoming critical, she left Paris with Marie-Antoinette's letters to the Queen of Naples, the Duchess of Parma, and other relatives in Italy. She was entrusted with the cipher and the key for the letters <span class="note">(p.304-326)</span>.</P>
+<P>The cipher used on this occasion is recorded <span class="note">(front matter)</span>.</P>
+<P><img src="fersen2.jpg"></P>
+<P>(The alphabet of this table lacks "k", since it was prepared for the Italian language, in which Marie-Antoinette was fluent.)</P>
+<P>Though different in format, this cipher table works the same way as the one shown above. For example, to encipher "M" with the keyword letter "L", the "IL" line is used to look for "M". Since "M" is paired with "Q", "M" is enciphered as "Q".</P>
+<P>The author found the Duchess of Parma at Colorno and delivered the letter for her as well as the cipher and the key. In a few minutes, she enabled the duchess to decipher the letter. When she delivered the letter to the Queen of Naples, the latter scarcely allowed herself time to decipher it and at every sentence, she exclaimed "Oh, my dear, oh, my adored sister!"</P>
+<P>One reason that the Queen sent the author to Italy was to put her out of imminent danger. On 10 August 1792, the Tuileries was attacked by a mob. Soon thereafter, Princess of Lamballe was separated from the royal family and was killed on 3 September.</P>
+
+<H3>Marie-Antoinette's Book Code</H3>
+<P>Marie-Antoinette's attendant Madame Campan, three years older than her mistress, was in the household of Marie-Antoinette since the latter came from Austria to wed the Dauphin and served her faithfully until separated at the assault on the Tuileries on 10 August 1792.</P>
+<P>Her memoirs record a book code used by Marie-Antoinette:</P>
+<DIV class="kakomi">
+The correspondence between the Queen and the foreign powers was carried on in cipher. That to which she gave the preference can never be detected; but the greatest patience is requisite for its use. Each correspondent must have a copy of the same edition of some work. She selected "Paul and Virginia." The page and line in which the letters required, and occasionally a monosyllable, are to be found are pointed out in ciphers agreed upon. I assisted her in finding the letters, and frequently ciphered, without knowing a single word of its meaning.<br>
+<span class="note">(Madame Campan, <i>Memoirs of Marie Antoinette</i>)</span>
+</DIV>
+<P>The above-mentioned lady-in-waiting to Princess of Lamballe points out that this book code was "merely for the Paris correspondence, and principally for that of Bertrand de Moleville" <span class="note">(p.310)</span>.</P>
+<P>In the sequence of the narrative of Madame Campan, the use of the book code is placed about the time of acceptance of the constitution (September 1791). Molleville was a staunch royalist and was appointed as Minister for the Fleet and the Colonies in October 1791.</P>
+
+<H2>Cipher of Madame Elisabeth</H2>
+<P>Cipher letters of Madame Elisabeth, the youngest sister of Louis XVI, are known. As early as 19 November 1790, she used a cipher in her letter to her close friend, the Marquise of Raigecour <span class="note">(Feuillet de Conches<sup>1</sup>, Vol.1, p.366-367)</span>. Unlike the polyalphabetic system used by Marie-Antoinette and Fersen, this was a simple numerical cipher.</P>
+<P>About the same time (9 November 1790), the Marquise, at Trier, wrote to her husband, "so that [the news of your arrival at Turin] reaches me, I plead you once again not to write to me in cipher." <span class="note">(Feuillet de Conches<sup>2</sup>, p.195)</span></P>
+<P>Several letters from Madame Elisabeth to the Marquise in 1791 used the symbols but not the figures <span class="note">(Feuillet de Conches<sup>1</sup>, p.12, 71, 74, 79, Feuillet de Conches<sup>2</sup>, p.244-245)</span>.</P>
+<P>Around July to August 1792, Madame Elisabeth wrote to the Marquis of Raigecourt. These letters were accompanied by letters for Comte d'Artois and asked the Marquis to give their cipher to the Comte d'Artois. <span class="note">(Feuillet de Conches<sup>2</sup>, p.428-430)</span>. Decipherings of these letters allow partial reconstruction of the cipher.</P>
+<P><img src="elizabeth.jpg"></P>
+<P>It is noted several different figures are assigned to one letter and special symbols are used for names such as Comte d'Artois<!---no friend of the King and the Queen-->, Calonne, and Monsieur. Use of overlines and underlines reminds us of Lafayette-Livingston code, which is also accompanied by underlines or double underlines (see <A HREF="lafayett.htm">another article</A>), but their role is not clear.</P>
+<P>Application of this reconstructed cipher table to the undeciphered cipher portion of the above-mentioned letter of 19 November 1790 reveals a word "adresser", which shows it uses the same cipher.</P>
+
+
+<H2>References</H2>
+<P>Jacques Patarin and Val&eacute;rie Nachef (2009), 'I shall love you up to the death', <A HREF="http://eprint.iacr.org/2009/166">Cryptology ePrint Archive: Report 2009/166</A>, <A HREF="http://eprint.iacr.org/2009/166.pdf">PDF in English</A>, <A HREF="http://www.di.ens.fr/pub/Main/CryptoSeminaire/Marie-Antoinette-Paper.pdf">PDF in French</A>，<A HREF="http://www.di.ens.fr/pub/Main/CryptoSeminaire/Marie-Antoinette-Slides.pdf">PDF of lecture slides</A> <font size="2">*The PDF in French seems to be the original to be referred to.</font></P>
+<P>Yves Gylden (1931), 'Le chiffre particulier de Louis XVI et de Marie-Antoinette lors de la fuite de Varennes', <i>Revue internationale de criminalistique</i></P>
+<br>
+<P>Klinckowstrom (ed.) (1877), <i>Le comte de Fersen et la cour de France</i>, Vol.1 (<A HREF="http://www.archive.org/stream/lecomtedefersen00klingoog">Internet Archive</A>, <A HREF="http://www.archive.org/stream/lecomtedefersen01fersgoog#page/n13/mode/1up">another version</A>), Vol.2 (from 1792) (<A HREF="http://books.google.com/books?id=ENguAAAAMAAJ">Google</A>, <A HREF="http://www.archive.org/stream/lecomtedefersen02fersgoog#page/n9/mode/1up">Internet Archive</A>) <font size="2">*In the citations above, volumes are not shown but would be identified by the date.</font></P>
+<P>Katharine Prescott Wormeley (trans.) (1902), <i>Diary and Correspondence of Count Axel Fersen, Grand-Marshal of Sweden</i> (<A HREF="http://www.archive.org/stream/diarycorresponde00fersiala#page/n7/mode/2up">Internet Archive</A>, <A HREF="http://books.google.com/books?id=SFQjA0vchEYC">reprint at Google</A>) <font size="2">*Simply "English" in some of the citations above. It should be noted that there are omissions in the translation of this volume without any indication.</font></P>
+<P>O. G. Heidenstam (ed.) (1926), <i>The Letters of Marie Antoinette, Fersen and Barnave</i> (<A HREF="http://books.google.com/books?id=KT49qXVjYsQC">reprint at Google</A>)</P>
+<P>Lucien Maury (1907), Revue litt&eacute;raire et critique - Revue Bleue, Num&eacute;ro 17, 5&egrave;me s&eacute;rie, Tome VII, pp. 536-538 (<A HREF="http://www.archive.org/stream/s5revuebleuepoli07pari#page/538/mode/2up/">Internet Archive</A>)</P>
+<P>Feuillet de Conches<sup>1</sup> (ed.), <i>Louis XVI, Marie Antoinette et Madame Elizabeth</i> (Internet Archive: <A HREF="http://www.archive.org/details/louisxvimariean04conggoog">1</A>, <A HREF="http://www.archive.org/details/louisxvimariean03concgoog">2</A>, <A HREF="http://www.archive.org/details/louisxvimariean01conggoog">3</A>, <A HREF="http://www.archive.org/details/louisxvimariean02conggoog">4</A>, <A HREF="http://www.archive.org/details/louisxvimariean02concgoog">5</A>, <A HREF="http://www.archive.org/details/louisxvimariean00concgoog">6</A>)</P>
+<P>Feuillet de Conches<sup>2</sup> (ed.), <i>Correspondance de Madame Elisabeth de France</i> (<A HREF="http://www.archive.org/stream/correspondancede00liuoft">Google</A>)</P>
+<P>Arneth<sup>1</sup> (ed.), <i>Marie Antoinette, Joseph II. und Leopold II.: ihr Briefwechsel</i> (<A HREF="http://books.google.co.jp/books?id=zX9CAAAAcAAJ">Google</A>)</P>
+<P>Arneth<sup>2</sup> (ed)., <i>Marie-Antoinette: correspondance secrete entre Marie-Therese et le c<sup>te</sup> de Mercy-Argenteau</i>, 2nd ed. (Google: <A HREF="http://books.google.com/books?id=hBtcAAAAQAAJ">1</A>, <A HREF="http://books.google.com/books?id=7jMOAAAAQAAJ">2</A>, <A HREF="http://books.google.com/books?id=lhtcAAAAQAAJ">3</A>)</P> 
+<P>Anonymous (1826), <i>Secret memoirs of the royal family of France, during the revolution</i> (vol. 1 <A HREF="http://books.google.co.jp/books?id=PYRjAAAAMAAJ">Google</A>, vol. 2 <A HREF="http://books.google.co.jp/books?id=VX-024ML064C">Google</A>)</P>
+<br>
+<P>Charles Duke Yonge (1877), <i>The life of Marie Antoinette, Queen of France</i> (<A HREF="http://books.google.co.jp/books?id=F9I-AAAAYAAJ">Google</A>)</P>
+<P>Evelyn Farr (1995, 1997), <i>The Untold Love Story: Marie Antoinette & Count Fersen</i></P>
+<P>Paul Gaulot (1895), <i>A Friend of the Queen</i> (<A HREF="http://www.archive.org/stream/afriendqueenmar00hoeygoog#page/n17/mode/1up">Internet Archive</A>, <A HREF="http://books.google.com/books?id=NBrQndm6KCQC">Google</A>)</P>
+<br>
+<font size="2">
+&COPY;2011 S.Tomokiyo<br>
+First posted on 8 January 2011. Last modified on 16 August 2018.<br>
+<A HREF="crypto.htm">Cryptiana: Articles on Historical Cryptography</A><BR>
+</font>
+
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>

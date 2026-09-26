@@ -1,0 +1,244 @@
+<HTML>
+<HEAD>
+<TITLE>
+Polyphonic Substitution in Italian Numerical Ciphers
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="Cipher, Code, Italian cipher">
+<link rel=stylesheet type=text/css href=decode2.css>
+</HEAD>
+<BODY>
+<H1>Polyphonic Substitution in Italian Numerical Ciphers</H1>
+
+<P>A <b>polyphonic substitution</b> cipher uses a single symbol for more than one plaintext letters. This means a plaintext letter is not uniquely determined for a given symbol and it would seem that even an authentic recipient has difficulty in deciphering. This is in contrast to <b>homophonic substitution</b>, which provides more than one cipher symbols for one plaintext letter and thus makes it harder for a third party to decipher without a key but leaves no ambiguity for the proper addressee who has the key.</P>
+<P>Despite such an apparent disadvantage, many polyphonic substitution ciphers are recorded in the 16th-century Italian ciphers, in particular, papal numerical ciphers <span class="note">(Meister p.47, p.57 etc.)</span>. Polyphonic substitution is seen as early as 1538-1542 <span class="note">(Meister p.176)</span> and as late as 1585 <span class="note">(Meister p.345)</span>. At least two were given out in June 1585 by Giovanni Battista Argenti <span class="note">(Meister p.345, 350; the latter provides for dots for avoiding ambiguity; see the next section)</span>, cipher secretary of Sixtus V from April 1585 to April 1591 <span class="note">(Meister p.51)</span>. It appears the polyphonic cipher fell into disuse soon after Argenti came into office. The ciphers sent by Argenti subsequently were regular homophonic substitution ciphers <span class="note">(ibid. p.353, 358, 361, 365, 369, 370, 375, 379, etc.)</span>.</P>
+<!--
+p.176 1536-1542
+p.177 1545
+p.178-9, 181, 182, 185
+p.194 1556-7
+p.222 1543
+p.225
+p.226 1558-0
+p.227
+p.228
+p.229
+p.238 1561-3
+p.242
+p.252 1565
+p.255 1586?
+p.259
+p.289 1583
+p.290 1583
+p.291
+p.293 1584
+p.296 1579, 1582
+p.277 1583
+p.298 1584
+p.316 1585
+p.324 1584
+p.344 1585
+p.345 ....
+-->
+
+<P>The present article presents some examples of such polyphonic substitution ciphers. (For other historical examples of polyphonic ciphers, see <A HREF="mayenne.htm">another article</A>.)</P>
+
+<H2>Distinction by Diacritics</H2>
+<P>Meister describes that some ciphers employed by Gianbattista Argenti under Pope Sixtus V (1585-1590) avoided ambiguity by use of diacritics <span class="note">(Meister p.71-72)</span>. (That is, it is not truly polyphonic.) In particular, when a figure is used without a mark, the more frequent letter is meant, while the less frequent letter is indicated by the figure with a mark (a dot over or below the figure).</P>
+<TABLE border="1">
+<COL align="center" width="30" span="9">
+<TR><TD colspan="9">Null: 9</TD></TR>
+<TR><TD>ad</TD><TD>ef</TD><TD>ig</TD><TD>op</TD><TD>ut</TD><TD>sr</TD><TD>lm</TD><TD>nb</TD><TD>cxz</TD></TR>
+<TR><TD>1</TD><TD>3</TD><TD>4</TD><TD>2</TD><TD>5</TD><TD>6</TD><TD>7</TD><TD>8</TD><TD>0</TD></TR>
+</TABLE>
+
+<DIV class="kakomi2">
+(In the following, the apostrophe (') indicates a dot over the preceding digit.)
+4792'12'1952739'028636'516'397192'1039584536'6177'385'3932'36'3<br>
+91'3641'36'190395'55'49742'6'48042'471028636'548292'36'98'3833'45'<br>
+4292'58'7402<br>
+<br>
+PLAINTEXT<br>
+Il papa vole conservare la pace universalmente e per[o] desidera c[h]e t[u][t]ti li principi la conservino per benefitio publico<br>
+<br>
+DUMP<br>
+4(i) 7(l) 9(-) 2'(p) 1(a) 2'(p) 1(a) 9(-) 5(u) 2(o) 7(l) 3(e) 9'(-) 0(c) 2(o) 8(n) 6(s) 3(e) 6'(r) 5(v) 1(a) 6'(r) 3(e) 9(-) 7(l) 1(a) 9(-) 2'(p) 1(a) 0(c) 3(e) 9(-) 5(u) 8(n) 4(i) 5(u) 3(e) 6'(r) 6(s) 1(a) 7(l) 7'(m) 3(e) 8(n) 5'(t) 3(e) 9(-) 3(e) 2'(p) 3(e) 6'(r) 3(e[o]) <br>
+9(-) 1'(d) 3(e) 6(s) 4(i) 1'(d) 3(e) 6'(r) 1(a) 9(-) 0(c) [h] 3(e) 9(t) 5'([u]) 5([t]) 5'(t) 4(i) 9(-) 7(l) 4(i) 2'(p) 6'(r) 4(i) 8(n) 0(c) 4(i) 2'(p) 4(i) 7(l) 1(a) 0(c) 2(o) 8(n) 6(s) 3(e) 6'(r) 5(u) 4(i) 8(n) 2(o) 9(-) 2'(p) 3(e) 6'(r) 9(-) 8'(b) 3(e) 8(n) 3(e) 3'(f) 4(i) 5'(t) 
+4(i) 2(o) 9(-) 2'(p) 5(u) 8'(b) 7(l) 4(i) 0(c) 2(o)
+</DIV>
+<P>Meister p.350-352 provides a full version of this cipher with a nomenclator (i.e., a code portion or vocabulary portion) consisting of three-figure symbols. One of the two examples given in the cipher --7(m)2(o)8(n)6(r)3(e)1(a)7(l)3(e)-- uses dots under figures for "m" and "r" to indicate the less frequent letter. In the other example, dots over figures are used to indicate that the following three figures form a symbol of the nomenclator (see <A HREF="variable.htm">another article</A> for such a usage of dots).</P>
+
+<H2>True Polyphonic Ciphers</H2>
+<P>Even when diacritics are not used, it appears care was taken so that one of the letters represented by a figure is a frequently used one. In particular, vowels are always represented by different figures.</P>
+
+<H3>Anonymous (1586?)</H3>
+<P>One of the simplest is as follows <span class="note">(Meister p.255)</span>.</P>
+<TABLE border="1">
+<COL align="center" width="30" span="9">
+<TR><TD>at</TD><TD>ef</TD><TD>ig</TD><TD>ol</TD><TD>up</TD><TD>bdz</TD><TD>mhq</TD><TD>ncx</TD><TD>rs</TD></TR>
+<TR><TD>6</TD><TD>1</TD><TD>3</TD><TD>2</TD><TD>4</TD><TD>5</TD><TD>7</TD><TD>9</TD><TD>8</TD></TR>
+</TABLE>
+<P>As the instruction for this cipher notes, "putato" is enciphered as "44666."</P>
+<DIV class="kakomi2">
+4286868339283632486838376868681843665374696276927695662<br>
+<br>
+PLAINTEXT<br>
+Vostra Signoria illustrissima sara servita di quanto m[i] [h]a comandato<br>
+<br>
+DUMP<br>
+4(u) 2(o) 8(s) 6(t) 8(r) 6(a) 8(s) 3(i) 3(g) 9(n) 2(o) 8(r) 3(i) 6(a) 3(i) 2(l) 4(u) 8(s) 6(t) 8(r) 3(i) 8(s) 3(i) 7(m) 6(a) 8(a) 6(a) 8(r) 6(a) 8(s) 1(e) 8(r) 4(u) 3(i) 6(t) 6(a) 5(d) 3(i) 7(q) 4(u) 6(a) 9(n) 6(t) 2(o) 7(m) 6(a) 9(c) 2(o) 7(m) 6(a) 9(n) 5(d) 6(a) 6(t) 2(o) <br>
+</DIV>
+
+<H3>Bishop of Fano (1550)</H3>
+
+<P>That a polyphonic cipher was actually used without diacritics can be seen in letters of Pietro Bertano, Bishop of Fano, to Antoine Perrenot de Granvelle, bishop of Arras and a trusted adviser for Emperor Charles V, dated Rome, 14 November and 11 December 1550 <span class="note">(Bertomeu Masi&aacute; (2009) p.165)</span>. The following is from the postscript of the first letter. (A letter of 22 January 1551 of the same correspondents used a different key not yet reconstructed <span class="note">(Bertomeu Masi&aacute; p.166)</span>.)</P>
+<DIV class="kakomi2">
+tt36133743224568318341568633916336839325653111[.........]<br>
+155636637432922328214114961pp332825613417292132819[......]<br>
+24543822127633415643329833441916414566137639483[.........]<br>
+565313711384914tt314523747831161281282212538432254[......]<br>
+19823256542114163ttpp149614354554112834622693395314[........]<br>
+6613391621395238232382329137374322369139123742494[.....]<br>
+377332937126294pp8417213721271122316141914212374547tt[........]<br>
+3162312568392698392222432952263391621413ttpp<br>
+678311612547695415314pp812822125382926692186676924[.....]<br>
+8611221286368814226294t37414967656913et....<br>
+<br>
+PLAINTEXT (largely based on Bertomeu Masi&aacute; (2009))<br>
+Circa le cose di Parma et di Piac[e]nza non manc[h]o di far[e] tu[tti quelli]<br>
+ufficii che conosco poter[e] venir[e] a comodita et honor com[m]un[e della]<br>
+Sede Apostolica et di Sua M<sup>ta</sup> Cesarea con pace et quiete di Italia ne ma[ncharo mai]<br>
+di far[e] altr[i]mente.<br>
+Credo che [i]l partito proposto da me a V.S.R<sup>ma</sup> de[bba, con]<br>
+un poco di destrez[z]a, venire ad effetto ma bisogna andare [piano per]<br>
+gir[e] acquistando a poco a poco qualche cosa, intanto che se ne [venga]<br>
+alla conclusione.<br>
+Per hora ho voluto scriver[e] questo che del [restante]<br>
+avisaro di mano in mano V.S.R<sup>ma</sup> secondo si acquist[a]ra.<br>
+Il partito del infeudare proposto da Monsignor Pighino e [stato]<br>
+piu tosto mia impressione che venghi di qua, et ....<br>
+<br>
+DUMP<br>
+tt(-) 3(c) 6(i) 1(r) 3(c) 3(a)  7(l) 4(e)  3(c) 2(o) 2(s) 4(e)  5(d) 6(i)  8(p) 3(a) 1(r) 8(m) 3(a)  4(e) 1(t) 5(d) 6(i) 8(p) 6(i) 3(a) 3(c) [e] 9(n) 16(z) 3(a)  36(non) 8(m) 3(a) 9(n) 3(c) [h] 2(o)  5(d) 6(i)  5(f) 3(a) 1(r) [e]  1(t) 1(u) [...]<br>
+1(u) 5(f) 5(f) 6(i) 3(c) 6(i) 6(i) 3(c) 7(h) 4(e)  3(c) 2(o) 9(n) 2(o) 2(s) 3(c) 2(o)  8(p) 2(o) 1(t) 4(e) 1(r) [e]  1(v) 4(e) 9(n) 6(i) 1(r) [e] pp(-) 3(a)  3(c) 2(o) 8(m) 2(o) 5(d) 6(i) 1(t) 3(a)  4(e) 1(t)  7(h) 2(o) 9(n) 2(o) 1(r)  3(c) 2(o) 8(m) [m] 1(u) 9(n) [...]<br>
+2(s) 4(e) 5(d) 4(e)  3(a) 8(p) 2(o) 2(s) 1(t) 2(o) 7(l) 6(i) 3(c) 3(a) 4(e) 1(t)  5(d) 6(i) 43(Sua M<sup>ta</sup> Cesarea) 3(c) 2(o) 9(n)  8(p) 3(a) 3(c) 4(e)  4(e) 1(t)  9(q) 1(u) 6(i) 4(e) 1(t) 4(e)  5(d) 6(i)  6(i) 1(t) 3(a) 7(l) 6(i) 3(a)  9(n) 4(e)  8(m) 3(a) [...]<br>
+5(d) 6(i)  5(f) 3(a) 1(r) [e]  3(a) 7(l) 1(t) 1(r) 3[i?] 8(m) 4(e) 9(n) 1(t) 4(e) tt(-) 3(c) 1(r) 4(e) 5(d) 2(o)  3(c) 7(h) 4(e)  [i] 7(l)  8(p) 3(a) 1(r) 1(t) 6(i) 1(t) 2(o)  8(p) 1(r) 2(o) 8(p) 2(o) 2(s) 1(t) 2(o)  5(d) 3(a)  8(m) 4(e)  3(a) 22(V.S.R<sup>ma</sup>) 5(d) 4(e) [...]<br>
+1(u) 9(n)  8(p) 2(o) 3(c) 2(o)  5(d) 6(i)  5(d) 4(e) 2(s) 1(t) 1(r) 4(e) 16(z) [z] 3(a) tt(-) pp(-) 1(v) 4(e) 9(n) 6(i) 1(r) 4(e)  3(a) 5(d)  4(e) 5(f) 5(f) 4(e) 1(t) 1(t) 2(o)  8(m) 3(a)  4(b) 6(i) 2(s) 2(o) 6(g) 9(n) 3(a)  3(a) 9(n) 5(d) 3(a) 1(r) 4(e) [...]<br>
+6(g) 6(i) 1(r) [e]  3(a) 3(c) 9(q) 1(u) 6(i) 2(s) 1(t) 3(a) 9(n) 5(d) 2(o)  3(a)  8(p) 2(o) 3(c) 2(o)  3(a)  8(p) 2(o) 3(c) 2(o) 9(q) 1(u) 3(a) 7(l) 3(c) 7(h) 4(e)  3(c) 2(o) 2(s) 3(a)  6(i) 9(n) 1(t) 3(a) 9(n) 1(t) 2(o)  3(c) 7(h) 4(e)  2(s) 4(e)  9(n) 4(e) [...]<br>
+3(a)  7(l) 7(l) 3(a)  3(c) 2(o) 9(n) 3(c) 7(l) 1(u) 2(s) 6(i) 2(o) 9(n) 4(e) pp(-) 8(p) 4(e) 1(r)  7(h) 2(o) 1(r) 3(a)  7(h) 2(o)  1(v) 2(o) 7(l) 1(u) 1(t) 2(o)  2(s) 3(c) 1(r) 6(i) 1(v) 4(e) 1(r) [e] 9(q) 1(u) 4(e) 2(s) 1(t) 2(o)  3(c) 7(h) 4(e)  5(d) 4(e) 7(l) tt [...]<br>
+3(a) 1(v) 6(i) 2(s) 3(a) 1(r) 2(o)  5(d) 6(i)  8(m) 3(a) 9(n) 2(o)  6(i) 9(n)  8(m) 3(a) 9(n) 2(o) 22(V.S.R<sup>ma</sup>) 2(s) 4(e) 3(c) 2(o) 9(n) 5(d) 2(o)  2(s) 6(i)  3(a) 3(c) 9(q) 1(u) 6(i) 2(s) 1(t) 4[a?] 1(r) 3(a) tt(-) pp(-)<br>
+6(i) 7(l)  8(p) 3(a) 1(r) 1(t) 6(i) 1(t) 2(o)  5(d) 4(e) 7(l)  6(i) 9(n) 5(f) 4(e) 1(u) 5(d) 3(a) 1(r) 4(e) pp(-) 8(p) 1(r) 2(o) 8(p) 2(o) 2(s) 1(t) 2(o)  5(d) 3(a)  8(m) 2(o) 9(n) 2(s) 6(i) 6(g) 9(n) 2(o) 1(r)  8(p) 6(i) 6(g) 7(h) 6(i) 9(n) 2(o)  4(e)  [...]<br>
+8(p) 6(i) 1(u)  1(t) 2(o) 2(s) 1(t) 2(o)  8(m) 6(i) 3(a) 6(i) 8(m) 8(p) 1(r) 4(e) 2(s) 2(s) 6(i) 2(o) 9(n) 4(e) t(-) 3(c) 7(h) 4(e)  1(v) 4(e) 9(n) 6(g) 7(h) 6(i)  5(d) 6(i)  9(q) 1(u) 3(a) et ....<br>
+</DIV>
+<P>A cipher given to the Bishop of Fano, nuncio to the Emperor, and the Bishop of Aiaccio is similar to this cipher <span class="note">(Meister p.178)</span>.</P>
+
+
+<H3>Camillo Capozucca in Flanders (1579)</H3>
+
+<P><span class="note">(Meister p.296)</span></P>
+<TABLE border="1">
+<COL align="center" width="30" span="9">
+<TR><TD>ab</TD><TD>em</TD><TD>id</TD><TD>of</TD><TD>ul</TD><TD>ng</TD><TD>mp</TD><TD>rt</TD><TD>szc</TD><TD>Nulla</TD></TR>
+<TR><TD>0</TD><TD>2</TD><TD>7</TD><TD>3</TD><TD>5</TD><TD>9</TD><TD>4</TD><TD>8</TD><TD>6</TD><TD>1</TD></TR>
+<TR><TD>qua</TD><TD>que</TD><TD>qui</TD><TD>quo</TD><TD>che</TD><TD>chi</TD><TD>non</TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>50</TD><TD>30</TD><TD>40</TD><TD>29</TD><TD>28</TD><TD>02</TD><TD>03</TD><TD></TD><TD></TD><TD></TD></TR>
+</TABLE>
+<DIV class="kakomi2">
+858871306871434557172677280931...<br>
+<br>
+PLAINTEXT<br>
+Tutti questi populi desiderano [ritornare alla ubidienza et in breve restaranno tutte queste piazze nette.]<br>
+<br>
+8(t)5(u)8(t)8(t)7(i)1(-)30(que)6(s)8(t)7(i)1(-)4(p)3(o)4(p)5(u)5(l)7(i)1(-)7(d)2(e)6(s)7(i)7(d)2(e)8(r)0(a)9(n)3(o)1(-)...<br>
+</DIV>
+
+
+<H3>Cardinal Savello (1)</H3>
+<P>The following is a cipher of Cardinal Savello <span class="note">(Meister p.200)</span>.</P>
+<img src="meister200a.jpg" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+
+<H3>Cardinal Savello (2)</H3>
+<P>The following is another cipher of Cardinal Savello <span class="note">(Meister p.200)</span>.</P>
+<img src="meister200b.jpg" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+<DIV class="kakomi2">
+57736881838146s1170663466<br>
+<br>
+PLAINTEXT<br>
+Il Cardinale si aspetta a Roma.<br>
+<br>
+DUMP<br>
+57(il) 7(C) 36(ar) 8(d) 8(i) 18(na) 38(le) 14(si) 6(a) s(9) 11(p) 7(e) 0(t) 6(a) 6(a) 34(Ro) 6(m) 6(a)</DIV>
+
+<H3>Cardinal Savello (3) (1583)</H3>
+<P>The following is part of a cipher <span class="note">(Meister p.297)</span> given to Costa, Inquisitor in Malta <span class="note">(<A HREF="https://vassallohistory.wordpress.com/2014/02/19/the-inquisitors-in-malta/">The Inquisitors in Malta</A>)</span>, by the order of Cardinal Savello in Rome in 1583.</P>
+<img src="meister297.jpg" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+<P>An example in this cipher is as follows.</P>
+<DIV class="kakomi2">
+(In the following, the apostrophe (') indicates a dot over the preceding letter.)<br>
+170748295827449'906.6859727994075638264975644170128274'29665<br>
+52749855.6149825294'670443752848670596018670456329364+98274859<br>
+174'9656671644998'83.64140'380682749951826470094995906629841'2.7560<br>
+08416259274143.6<br>
+<br>
+PLAINTEXT<br>
+Sono arivato qui in Malta ali oto di Novembre dove son stato ricevuto dal Gran Mastro et da tuti con molta acoglienza con le prime daro aviso dele cose di qua a V.S. Ill<sup>ma</sup> et non mancaro di usare ogni diligentia perche Nostro Signore venga servito et V.S.Ill<sup>ma</sup>.<br>
+<br>
+DUMP<br>
+1(s) 7(o) 0(n) 7(o) 4(-) 8(a) 2(r) 9(i) 5(u) 8(a) 2(t) 7(o) 4(-) 4(-) 9'(qui) 9(i) 0(n) 6.6(Malta) 8(a) 5(l) 9(i) 7(o) 2(t) 7(o) 9(d) 9(i) 4(-) 0(n) 7(o) 5(u) 6(e) 3(m) 8(b) 2(r) 6(e) 4(-) 9(d) 7(o) 5(u) 6(e) 4(-) 4(-) 1(s) 7(o) 0(n) 1(s) 2(t) 8(a) 2(t) 7(o) 4'(-) 2(r) 9(i) 6(c) 6(e) 5(u) 
+5(u) 2(t) 7(o) 4(-) 9(d) 8(a) 5(l) 5.6(Gran Mastro) 1(et) 4(-) 9(d) 8(a) 2(t) 5(u) 2(t) 9(i) 4'(-) 6(c) 7(o) 0(n) 4(-) 4(-) 3(m) 7(o) 5(l) 2(t) 8(a) 4(-) 8(a) 6(c) 7(o) 0(g) 5(l) 9(i) 6(e) 0(n) 1(z) 8(a) 6(c) 7(o) 0(n) 4(-) 5(l) 6(e) 3(p) 2(r) 9(i) 3(m) 6(e) 4+(-) 9(d) 8(a) 2(r) 7(o) 4(-) 8(a) 5(u) 9(i) 
+1(s) 7(o) 4'(-) 9(d) 6(e) 5(l) 6(e) 6(c) 7(o) 1(s) 6(e) 4(-) 4(-) 9(d) 9(i) 8'(qua) 8(a) 3.6(V.S.Ill<sup>ma</sup>) 4(-) 1(et) 4(-) 0'(non) 3(m) 8(a) 0(n) 6(c) 8(a) 2(r) 7(o) 4(-) 9(d) 9(i) 5(u) 1(s) 8(a) 2(r) 6(e) 4(-) 7(o) 0(g) 0(n) 9(i) 4(-) 9(d) 9(i) 5(l) 9(i) 0(g) 6(e) 6[n?] 2(t) 9(i) 8(a) 4(-) 1'(perche) 2.7(Nostro Signore) 5(u) 6(e) 0(n) 
+0(g) 8(a) 4(-) 1(s) 6(e) 2(r) 5(u) 9(i) 2(t) 7(o) 4(-) 1(et) 4(-) 3.6(V.S.Ill<sup>ma</sup>) 
+</DIV>
+
+<H3>Cardinal Savello (4) (1585)</H3>
+<P>The following is part of a cipher <span class="note">(Meister p.298)</span> prepared for the Inquisitor succeeding Costa by the order of Cardinal Savello in 1585.</P>
+<!--Cifra dimandatami da Monsignor Illmo et Revmo Cardinal Savello per dare all'Inquisitore che va a Malta in loco di Monsignor Costa quale torna.-->
+<img src="meister298.jpg" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+<P>An example in this cipher is as follows.</P>
+<DIV class="kakomi2">
+(In the following, the apostrophe (') indicates a dot over the preceding letter. &pound; and &rho; are not-very-close approximate symbols.)<br>
+6'5619.086316473160956064833656393603125809424894600145240<br>
+54631&pound;4234536701417739414'845658647017508417070931336563936038<br>
+4'190660941270928456584565536704&rho;45102041409489562041025744'456<br>
+5164953131&pound;23908017.410.4039394604<br>
+<br>
+PLAINTEXT<br>
+Qui in Malta le cose caminano felicemente, vi trovo molta divotione et obedienza, et spero che ogni cosa sia per passare felicemente. non mancaro usare ogni diligenza, et di tuto daro minuto aviso per ogni corriere che vera a Roma. Il Turco teme molto.<br>
+<br>
+6'(qui) 5(i) 6(n) 1(-) 9.0(Malta) 8(-) 6(l) 3(e) 1(-) 6(c) 4(o) 7(s) 3(e) 1(-) 6(c) 0(a) 9(m) 5(i) 6(n) 0(a) 6(n) 4(o) 8(-) 3(f) 3(e) 6(l) 5(i) 6(c) 3(e) 9(m) 3(e) 6(n) 0(t) 3(e) 1(-) 2(u) 5(i) 8(-) 0(t) 9(r) 4(o) 2(u) 4(o) 8(-) 9(m) 4(o) 6(l) 0(t) 0(a) 1(-) 4(d) 5(i) 2(u) 4(o) 0(t)<br>
+5(i) 4(o) 6(n) 3(e) 1(-) &pound;(et) 4(o) 2(b) 3(e) 4(d) 5(i) 3(e) 6(n) 7(z) 0(a) 1(-) 4(et) 1(-) 7(s) 7(p) 3(e) 9(r) 4(o) 1(-) 4'(che) 8(-) 4(o) 5(g) 6(n) 5(i) 8(-) 6(c) 4(o) 7(s) 0(a) 1(-) 7(s) 5(i) 0(a) 8(-) 4(per) 1(-) 7(p) 0(a) 7(s) 0(a) 9(r) 3(e) 1(-) 3(f) 3(e) 6(l) 5(i) 6(c) 3(e) 9(m) 3(e) 6(n) 0(t) 3(e) 8(-)<br>
+4'[non?] 1(-) 9(m) 0(a) 6(n) 6(c) 0(a) 9(r) 4(o) 1(-) 2(u) 7(s) 0(a) 9(r) 2[e?] 8(-) 4(o) 5(g) 6(n) 5(i) 8(-) 4(d) 5(i) 6(l) 5(i) 5(g) 3(e) 6(n) 7(z) 0(a) 4&rho;(et) 4(d) 5(i) 1(-) 0(t) 2(u) 0(t) 4(o) 1(-) 4(d) 0(a) 9(r) 4(o) 8(-) 9(m) 5(i) 6(n) 2(u) 0(t) 4(o) 1(-) 0(a) 2(u) 5(i) 7(s) 4(o) 4'(per) 4(o) 5(g) 6(n)<br>
+5(i) 1(-) 6(c) 4(o) 9(r) 5(i) 3(e) 1[r?] 3(e) 1(-) &pound;(che) 2(u) 3(e) 9(r) 0(a) 8(-) 0(a) 1(-) 7.4(Roma) 1(-) 0.4(Il Gran Turco) 0(t) 3(e) 9(m) 3(e) 9(m) 4(o) 6(l) 0(t) 4(o)<br>
+</DIV>
+
+<!--他にp.291, 255,350など例多し-->
+
+<H2>References</H2>
+<P>Mar&iacute;a Jos&eacute; Bertomeu Masi&aacute; (2009). <i>La guerra secreta de Carlos V contra el Papa: La cuestion de Parma y Piacenza en la correspondencia del cardenal Granvela</i></P>
+<P>Aloys Meister (1906), <i>Die Geheimschrift im Dienste der Papstlichen Kurie von ihren Anfangen bis zum Ende des XVI. Jahrhunderts</i></P>
+<P>S. Tomokiyo, "A Polyphonic Substitution Cipher of the Catholic League (1592-1593)" (<A HREF="mayenne.htm">Another article</A>) features a polyphonic cipher of the Catholic League in France used in 1592-1593 and also gives other historical examples of polyphonic ciphers.</P>
+<br>
+
+<br>
+<br>
+<font size="2">
+&COPY;2017 S.Tomokiyo<br>
+First posted on 13 March 2017. Last modified on 31 December 2019.<br>
+<A HREF="crypto.htm">Articles on Historical Cryptography</A><BR>
+</font>
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>

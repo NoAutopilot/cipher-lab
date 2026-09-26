@@ -1,0 +1,1349 @@
+<HTML>
+<HEAD>
+<TITLE>
+A Syllabic Cipher (ca.1715) of Cardinal Gualterio Reconstructed Manually
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="Cipher, Code, Gaulterio">
+<link rel=stylesheet type=text/css href=decode2.css>
+</HEAD>
+<BODY>
+<H1>A Syllabic Cipher (ca.1715) of Cardinal Gualterio Reconstructed Manually</H1>
+<P>Cardinal Gualterio was one of the closest advisors to James Francis Edward Stuart, known as the Old Pretender, who sought to regain the British throne which his father James II forfeited. Many of his letters are preserved in the British Library. Though his correspondence in cipher with Saint-Simon is now lost <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Filippo_Antonio_Gualterio_(cardinal)">Wikipedia</A>)</span>, the DECODE database has some papers in cipher from his correspondence with others.</P>
+<br>
+<P>Contents:</P>
+<P><A HREF="#SEC1">Letters of Abb&eacute; Jean D'Estr&eacute;es</A></P>
+<P><A HREF="#SEC2">Correspondence with F. L. de la Cerda and N. De Cordova, Duke of Medina Celi, 1706-1725</A></P>
+<P><A HREF="#SEC3">Gualterio-Torcy Cipher (1718)</A></P>
+<br>
+<A NAME="SEC1"></A>
+<H2>Letters of Abb&eacute; Jean D'Estr&eacute;es</H2>
+<P><b>Add MS 20359</b> (DECODE R8219-R8252), <b>Add MS 20360</b> (R8253-R8294), <b>Add MS 20361</b> (R8295-R8339) include letters of the abb&eacute; J.D. Estr&eacute;es or Jean D'Estr&eacute;es <span class="note">(<A HREF="https://fr.wikipedia.org/wiki/Jean_d%27Estr%C3%A9es_(eccl%C3%A9siastique)">Wikipedia</A>)</span> (vol. 1: January 1703-May 1716, vol. 2: June 1716-March 1717, vol. 3: April 1717-February 1718). D'Estr&eacute;es (1666-1718) was a member of the Council of Foregin Affairs, set up upon the death of Louis XIV under the Regent, Duke of Orleans.</P>
+
+<P>The first four letters (R8219-R8222) are in an incredibly simple cipher (monoalphabetic substitution plus a few code symbols), while the remaining letters use a fuller code. To look more closely, the code used in later letters employ the same substitution alphabet as the first four but additionally employ many symbols for syllables.</P>
+<P>It is not clear whether the code was updated some time between the first four (R8219 and R8220 are from Madrid, 1707) and the letters from 1715-1718, or the enciphering clerk for the first four letters simply did not make full use of the syllabic cipher. To support the latter position, the last letter (R8339 from 28 February 1718, three days before his death) is again almost monoalphabetic. The old style of "5" used in this last letter and the first four letters seems to indicate these were enciphered by someone different from those who enciphered the other letters. Moreover, the Medinaceli letters also used the almost monosyllabic cipher in 1706-1710 (see the next section).</P>
+
+<H3>Manual Reconstruction of Syllable Cipher</H3>
+<P>The monoalphabetic substitution table can be readily reconstructed from the interlinear decipherment in R8219. The syllable symbols could have been difficult, but because of the regularity in the assignment, once a few symbols were revealed, there was no difficulty in reconstructing the whole table. The code symbols for the nomenclature are yet to be identified for the most part.</P>
+
+<P>While new computer algorithms can brreak syllable codes (see <A HREF="https://cryptiana.blogspot.com/2024/07/george-lasrys-paper-on-syllabic-cipher.html">my blog</A>), the manual reconstruction of syllable codes may be of some interest. (My work was based on R8223 and R8224.)</P>
+
+<P>When the substitution alphabet 1-21 was identified, a lot more symbols remained unknown, but I was sure most of 22-170 were syllables. I also knew that syllable symbols can be CV and VC.</P>
+<P>Symbols for syllables can be recovered if one can spot a word where only one syllable remains unidentified.</P>
+<P>19(s) 1(o) 18(u) 6(h) 10(a) 8(i) 94(?) revealed 94=te. Then, it was straightforward to identify 136=om from 3(c) 136(?) 5(p) 94(te) 12(r).</P>
+<P>Then, 8(i) 10(a) 22(?) 84(re) 15(n) 52(?) 46(?) 2(m) 5(p) 94(te) 10(a) reveals 46=co and then 22=y and 52=du. (I had not been aware that 22 was in the substitution alphabet because it did not occur in the interlinear decipherment of the short specimen in R8219.)
+<P>17(q) 99(?) 8(i) 21(e) revealed 99=ue, confirmed by 8(i) 21(e) 99(ue) 18(u) 20(x).</P>
+<P>14(t) 109(?) 5(p) 19(s) 167(?) 5(p) 84(?) suggested 109=em and 84=re. 167 may represent some word but later turned out to be a null. (Some of my initial hypotheses were not solid and had to be corrected later. At first, 21(e) 20(x) 5(p) 85(?) led me to think 85=re, but this turned out to be 85=ri.) 5(p) 84(re) 89(?) 15(n) 14(t) revealed 89=se. 18(u) 140(?) 14(t) 84(re) indicates 140=os. 113=er was also identified (maybe from 84(re) 19(s) 113(?) 18(u) 21(e)).</P>
+<P>The syllables revealed up to this point are as follows:</P>
+<P>46=co</P>
+<P>52=du</P>
+<P>84=re</P>
+<P>85=ri</P>
+<P>89=se</P>
+<P>94=te</P>
+<P>99=ue</P>
+<P>109=em</P>
+<P>113=er</P>
+<P>136=om</P>
+<P>140=os</P>
+<P>The five syllables (84=re, 85=ri, 89=se, 94=te, 99=ue) clearly suggests regularity in the assignment such as 83=ra, 84=re, 85=ri, 86=ro, 87=ru, 88=sa, 89=se, .... The VC syllables (109=em, 113=er, 136=om, 140=os) also seemed to be assigned in regular sequences.</P>
+<P>Although I waited until this time to check the regularity, I felt almost sure of it when I saw 84=re, 85=ri, 94=te or 94=te and 99=ue (I don't remember exactly). The regularity of syllable assignment allowed reconstruction of syllable symbols without any frequency analysis.</P>
+<P>The cipher, with full representation of syllables, is reconstructed as follows.</P>
+<img src="gualterio.png" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;">
+<P>This demonstrates that once the cipher for single letters is broken, syllable symbols could be manually identified one by one. Although the regular assignment immensely facilitates the work, given a sufficient length of the ciphertext, the reconstrusion should be possible whether the assignment is regular or not.</P>
+
+<H3>Content of D'Estr&eacute;es' Letters</H3>
+<P>D'Estr&eacute;es generally sent his reports on a weekly basis. The recipient is called "V[otre] E[minence]", which probably refers to Cardinal Gualterio <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Filippo_Antonio_Gualterio_(cardinal)">Wikipedia</A>)</span>. The metadata in the DECODE database says "mostly ciphertext with cleartext and letters in plaintext", which seems to indicate the plaintext is filed in the volume, but the plaintext letters are not in the DECODE database.</P>
+<P>D'Estr&eacute;es' letters record real-time reactions to historical events such as James Edward's expedition to Scotland (December 1715), Prince Eugene's victory over the Turks (August 1716), Spanish invasion of Sardinia (August 1717), and the Triple Alliance (January 1717). (Actually, these are mentioned in cleartext. Hopefully, the ciphertext contains even more interesting contents.)</P>
+<P>The following presents excerpts of a line or two from each letter, to show they are indeed in the same cipher. Two, used for reconstructing the cipher, are deciphered in full.</P>
+
+<H4>Add MS 20359</H4>
+<H4>R8219 (with interlinear decipherment), Madrid 19 July 1707</H4>
+<DIV class="kakomi2">
+f.38<br>
+18(u) 15(n) 21(e)<br>
+21(e) 15(n) 15(n) 2(m) 1(i) 21(e) 12(r) 21(e) 3(c) 1(o) 15(n) 3(c) 8(i) 13(l) 8(i)<br>
+21(e) 21(e) 5(p) 12(r) 21(e) 19(s) 14(t) 21(e) 10(a) 2(m) 21(e) 19(s) 10(a) 3(c) 12(r)<br>
+8(i) 11(f) 8(i) 21(e) 12(r) 10(a) 19(s) 1(o) 15(n) 10(a) 2(m) 7(b) 8(i) 14(t) 8(i)<br>
+f.38v<br>
+1(o) 15(n) 21(e) 14(t) 10(a) 19(s) 1(o) 15(n) 8(i) 15(n) 14(t) 21(e) 12(r) 21(e)<br>
+14(t)...<br>
+13(l) 1(o) 18(u) 18(v) 8(i) 13(l) 13(l) 21(e)<br>
+...<br>
+352(Card. d'estres)<br>
+501(V.E.)<br>
+4(d) 21(e) 13(l) 10(a) 2(m)<br>
+7(b) 10(a) 19(s) 10(a) 4(d) 10(a) 10(a) 18(u) 21(e) 3(c) 456(Papsid...)<br>
+...<br>
+13(l) 10(a) 15(n) 1(o) 2(m) 8(i) 15(n) 10(a) 14(t) 8(i) 1(o) 15(n)<br>
+</DIV>
+<P>The handwriting of code symbols are hard to read: 352(Card. d'estres), 356(P.ortia???) ("Portugal" is struck out.), 456(Papsid besin???), 470(Roy), 351(Cardinal), 501(V.E.).</P>
+
+<H4>R8220 (with interlinear decipherment), Madrid, 16[?] July 1703[?]</H4>
+<P>384(Medinaceli), 456(Besina???) (this symbol occurs many times), 484(S.M.Cattolica), 399(Francia), 351(Cardinal), 342(Amfe???), 482(Rome).</P>
+
+<H4>R8221</H4>
+<DIV class="kakomi2" style="width: auto">
+12(r) 21(e) 15(n) 4(d) 12(r) 21(e) 3(c) 1(o) 2(m) 5(p) 14(t) 21(e) 4(d) 21(e) 2(m) 10(a) 3(c) 1(o) 15(n)<br>
+4(d) 18(u) 8(i) 14(t) 21(e) 21(e) 14(t) particulierement 10(a) 18(u) 21(e) 3(c) 456<br>
+10(a) 11(f) 8(i) 15(n) 17 18(u) 21(e) 18(u) 1(o) 18(u) 19(s) 2(m) 21(e) 4(d) 1(o) 15(n) 15(n) 8(i) 21(e) 16<br>
+18(u) 1(o) 19(s) 3(c) 1(o) 15(n) 19(s) 21(e) 8(i) 13(l) 19(s) 21(e) 14(t) 17 18(u) 21(e) 4(d) 10(a) 15(n) 19(s)<br>
+13(l) 1(o) 3(c) 3(c) 10(a) 19(s) 8(i) 1(o) 15(n) 18(u) 1(o) 18(u) 19(s) 18(u) 1(o) 8(i) 21(e) 16 10(a) 18(u) 21(e) 3(c) 15(n) 1(o) 19(s)<br>
+10(a) 2(m) 8(i) 19(s) 3(c) 21(e) 17 17 3(c) 13(l) 88 10(a) 18(u) 12(r) 10(a) 10(a) 11(f) 10(a) 8(i) 12(r) 3(c)<br>
+</DIV>
+
+<H4>R8222</H4>
+<DIV class="kakomi2" style="width: auto">
+8(i) 21(e) 3(c) 1(o) 2(m) 5(p) 12(r) 21(e) 15(n) 19(s) 11(f) 1(o) 12(r) 14(t) 17(q) 18(u) 8(i) 13(l) 21(e) 19(s) 14(t)<br>
+14(t) 12(r) 21(e) 16(z) 15(n) 21(e) 3(c) 21(e) 19(s) 19(s) 10(a) 8(i) 12(r) 21(e) 4(d) 21(e) 7(b) 8(i) 21(e) 15(n)<br>
+</DIV>
+
+<H4>R8223, Paris, 4 August 1715</H4>
+<DIV class="kakomi">
+J'ay rendu compte a monsieur le 224 de ce que vous m'avez fait honneur de m'escrire. Il m'a ordonne de vous assurer de son amitie et de son estime et qu'il vous en donneroit des marques solides par des bien faits. Je luy ay explique a cette 287 vostre situation sur vostre 312 de vingt mille livres. Il y est entre plus vivement que je ne puis vous exprimer et il <br>
+(p.2)<!--Manage Imagesにしないとページの順番が乱れる--><br>
+adjousta. Je songe a luy faire du bien. je connois son merite et je veux compter personellement sur son attachement pour moy. Mandez lui ce que je pense et dites lui que mon intention est qui l'escrive a monsieur le 269 sur toutes les affaires generales qui regarderont l'estat sans reserve et 24(?) il est de vos amis et de toute vostre maison. Je souhaite que par vostre canal il min=<br>
+(p.3)<br>
+struise avec la derniere confiance de tout ce qui me poura interesser pe[r]sonellement, soit par rapport au temps present, soit par rapport a l'avenir des vues et des liaisons du 289 avec 338 de celles de 338 avec le 328 et de tout ce qu'il apprendra ou imaginera estre utile. Touchant les renonciations, il ne scauroit trop s'ouvrir sur ces articles et il doit juger par la confiance que je veux avoir en lui de mon estime et de ce que je veux faire pour lui. Je ne doute<br>
+(p.4)<br>
+point que [V.E.] ne responde avec fidelite et capacite aux avances d'un 290 aussi aimable et aussi capable de reconnoitre les services. Le secret se ragarde inviolablement.<br>
+</DIV>
+
+<H5>DUMP for R8223</H5>
+<DIV class="kakomi2" style="width: auto">
+8(i) 10(a) 22(y) 84(re) 15(n) 52(du) 46(co) 2(m) 5(p) 94(te) 10(a) 71(mo) 15(n)<br>
+90(si) 21(e) 152(ur) 64(le) 167(-) 224 49(de) 44(ce) 17(q) 18(u) 21(e) 168(-)<br>
+18(u) 142(ou) 19(s) 2(m) 10(a) 99(ue) 16(z) 53(fa) 127(it) 13(l) 6(h) 137(on) 74(ne)<br>
+152(ur) 4(d) 21(e) 2(m) 114(es) 3(c) 85(ri) 84(re) 120(il) 2(m) 10(a) 139(or)<br>
+4(d) 137(on) 74(ne) 49(de) 101(vo) 153(us) 36(as) 92(su) 84(re) 12(r) 167(-)<br>
+49(de) 91(so) 15(n) 31(am) 8(i) 95(ti) 21(e) 23(et) 4(d) 21(e) 19(s) 137(on)<br>
+114(es) 95(ti) 69(me) 23(et) 17(q) 18(u) 120(il) 18(u) 142(ou) 19(s) 110(en)<br>
+51(do) 166(-) 162(nn) 21(e) 86(ro) 127(it) 4(d) 114(es) 68(ma) 12(r) 17(q)<br>
+18(u) 114(es) 91(so) 65(li) 49(de) 19(s) 78(pa) 12(r) 4(d) 114(es) 40(bi) 110(en) 53(fa)<br>
+127(it) 19(s) 168(-) 8(i) 21(e) 67(lu) 22(y) 10(a) 22(y) 21(e) 20(x) 5(p)<br>
+65(li) 17(q) 18(u) 21(e) 10(a) 44(ce) 165(tt) 21(e) 287 101(vo) 19(s) 14(t) 12(r)<br>
+21(e) 90(si) 97(tu) 10(a) 95(ti) 137(on) 19(s) 152(ur) 18(u) 140(os) 14(t) 84(re)<br>
+312(?) 167(-) 49(de) 18(u) 8(i) 15(n) 9(g) 14(t) 70(mi) 160(ll) 21(e) 13(l) 128(iv)<br>
+84(re) 19(s) 120(il) 22(y) 114(es) 14(t) 110(en) 14(t) 84(re) 5(p) 13(l) 153(us)<br>
+100(vi) 99(ue) 69(me) 15(n) 14(t) 17(q) 99(ue) 8(i) 21(e) 74(ne) 82(pu) 126(is)<br>
+101(vo) 153(us) 13(l) 21(e) 20(x) 5(p) 85(ri) 2(m) 113(er) 168(-) 23(et) 120(il)<br>
+(p.2)<br>
+27(ad) 8(i) 142(ou) 19(s) 93(ta) 8(i) 21(e) 19(s) 137(on) 9(g) 21(e) 10(a) 67(lu) 22(y)<br>
+11(f) 10(a) 125(ir) 21(e) 52(du) 40(bi) 110(en) 8(i) 21(e) 46(co) 162(nn) 1(o) 8(i) 19(s)<br>
+19(s) 137(on) 69(me) 85(ri) 94(te) 23(et) 8(i) 21(e) 99(ue) 18(u) 20(x) 3(c)<br>
+136(om) 5(p) 94(te) 12(r) 5(p) 113(er) 91(so) 74(ne) 160(ll) 21(e) 69(me) 15(n) 14(t)<br>
+19(s) 152(ur) 19(s) 137(on) 37(at) 93(ta) 3(c) 6(h) 21(e) 2(m) 110(en) 14(t) 81(po)<br>
+152(ur) 71(mo) 22(y) 168(-) 2(m) 32(an) 49(de) 16(z) 13(l) 100(vi) 44(ce) 17(q)<br>
+18(u) 21(e) 8(i) 21(e) 79(pe) 15(n) 89(se) 23(et) 50(di) 94(te) 19(s) 67(lu) 8(i)<br>
+17(q) 18(u) 21(e) 71(mo) 15(n) 122(in) 94(te) 15(n) 95(ti) 137(on) 114(es) 14(t) -<br>
+17(q) 18(u) 120(il) 114(es) 3(c) 85(ri) 18(u) 21(e) 10(a) 2(m) 137(on) 90(si) 21(e) 152(ur)<br>
+64(le) 269(some name) | 167(-) 168(-) 92(su) 12(r) 14(t) 1(o) 18(u) 14(t) 114(es) 64(le)<br>
+19(s) 10(a) 158(ff) 10(a) 8(i) 84(re) 19(s) 59(ge) 74(ne) 83(ra) 64(le) 19(s) 17(q) -<br>
+18(u) 8(i) 84(re) 9(g) 35(ar) 49(de) 86(ro) 15(n) 14(t) 13(l) 114(es) 14(t) 37(at) 19(s)<br>
+32(an) 19(s) 84(re) 19(s) 113(er) 18(u) 21(e) 23(et) 24(?) 120(il) 114(es) 14(t) 49(de) -<br>
+18(u) 140(os) 31(am) 126(is) 23(et) 49(de) 96(to) 18(u) 94(te) 18(u) 1(o) 19(s) 14(t) 84(re)<br>
+68(ma) 8(i) 19(s) 137(on) 8(i) 21(e) 19(s) 1(o) 18(u) 6(h) 10(a) 8(i) 94(te) 17(q) 18(u) 21(e) -<br>
+5(p) 35(ar) 18(u) 140(os) 14(t) 12(r) 21(e) 43(ca) 73(na) 13(l) 120(il) 2(m) 122(in)<br>
+(p.3)<br>
+19(s) 14(t) 12(r) 18(u) 8(i) 89(se) 10(a) 99(ue) 3(c) 63(la) 4(d) 113(er) 75(ni) 21(e) 84(re) 46(co)<br>
+15(n) 55(fi) 32(an) 44(ce) 49(de) 96(to) 154(ut) 44(ce) 17(q) 18(u) 8(i) 69(me) 5(p) 142(ou) 83(ra)<br>
+122(in) 94(te) 84(re) 164(ss) 113(er) 79(pe) 5(p) 91(so) 74(ne) 160(ll) 21(e) 69(me) 15(n) 14(t) 168(-)<br>
+91(so) 127(it) 5(p) 35(ar) 83(ra) 163(pp) 139(or) 14(t) 10(a) 18(u) 14(t) 109(em) 5(p) 19(s) 167(-)<br>
+5(p) 84(re) 89(se) 15(n) 14(t) 19(s) 1(o) 127(it) 78(pa) 12(r) 12(r) 33(ap) 81(po) 12(r) 14(t) 10(a) 63(la) -<br>
+99(ue) 75(ni) 12(r) 4(d) 114(es)  102(vu) 114(es) 23(et) 49(de) 19(s) 65(li) 10(a) 8(i) 91(so) 15(n) 19(s) -<br>
+52(du) 289 10(a) 18(u) 104(ec) 338 49(de) 44(ce) 160(ll) 114(es) 49(de) 338 10(a)<br>
+99(ue) 3(c) 64(le) 328 23(et) 49(de) 96(to) 154(ut) 44(ce) 17(q) 18(u) 120(il) 10(a) 163(pp) -<br>
+84(re) 15(n) 4(d) 83(ra) 142(ou) 8(i) 68(ma) 60(gi) 74(ne) | 83(ra) 114(es) 14(t) 84(re) 18(u) 95(ti) 64(le)<br>
+96(to) 144(uc) 6(h) 32(an) 14(t) | 64(le) 19(s) 84(re) 76(no) 15(n) 45(ci) 10(a) 95(ti) 137(on) 19(s) -<br>
+120(il) 74(ne) 19(s) 3(c) 10(a) 18(u) 86(ro) 127(it) 14(t) 12(r) 138(op) 19(s) 142(ou) 18(u) 12(r)<br>
+125(ir) 19(s) 152(ur) 44(ce) 19(s) 35(ar) 95(ti) 3(c) 13(l) 114(es) 23(et) 120(il) 51(do) 127(it) -<br>
+8(i) 18(u) 59(ge) 12(r) 5(p) 35(ar) 63(la) 46(co) 15(n) 55(fi) 32(an) 44(ce) 17(q) 18(u) 21(e) -<br>
+8(i) 21(e) 99(ue) 18(u) 20(x) 10(a) 101(vo) 125(ir) 110(en) 13(l) 100(vi) 49(de) 71(mo) 15(n) -<br>
+114(es) 95(ti) 69(me) 23(et) 49(de) 44(ce) 17(q) 18(u) 21(e) 8(i) 21(e) 99(ue) 18(u) 20(x)<br>
+53(fa) 8(i) 84(re) 81(po) 152(ur) 67(lu) 8(i) 8(i) 21(e) 74(ne) 4(d) 142(ou) 94(te) -<br>
+(p.4)<br>
+81(po) 122(in) 14(t) 17(q) 18(u) 21(e) 379([V.E.]) 74(ne) 12(r) 114(es) 81(po) 15(n) 49(de)<br>
+10(a) 99(ue) 3(c) 55(fi) 49(de) 65(li) 94(te) 23(et) 43(ca) 78(pa) 45(ci) 94(te) 10(a) 18(u)<br>
+20(x) 10(a) 18(u) 32(an) 44(ce) 19(s) 4(d) 150(un) 290 10(a) 18(u) 164(ss) 8(i)<br>
+10(a) 8(i) 68(ma) 7(b) 64(le) 23(et) 10(a) 18(u) 164(ss) 8(i) 43(ca) 78(pa) 7(b) 64(le)<br>
+49(de) 84(re) 46(co) 162(nn) 1(o) 8(i) 14(t) 84(re) 13(l) 114(es) 19(s) 113(er) 100(vi)<br>
+44(ce) 19(s) 64(le) 89(se) 3(c) 12(r) 23(et) 89(se) 83(ra) 9(g) 35(ar) 49(de) 167(-)<br>
+122(in) 100(vi) 135(ol) 25(ab) 64(le) 69(me) 15(n) 14(t) 168(-)<br>
+</DIV>
+
+
+<H4>R8224, 11 August 1715</H4>
+<DIV class="kakomi">
+J'ay rendu compte a monsieur le 224 de ce que V.E. ma fait l'honneur de m'escrire. 350 gouste infiniment vostre maniere d'escrire et depenser sur les affaires et elle m'ordonne de vous repeter ce que j'ay desja eu l'honneur de vous mander qu'elle veut compter sur vostre amitie et sur vostre attachement pour sa personne et qu'elle desire que vous escriviez a monsieur le 269 sur toutes les affaires qui concernent l'estat et que vous me mandiez sans aucune reserve tout ce que vous apprendrez de plus intime par rapport a ses interests. J'ay explique a V.E. <br>
+(p.2)<br>
+ce qu'elle entend par ses interest dans ma lettre precedente non seulement V.E. doit escrire ce qu'elle apprend mais on la prie de faire part de ses vues et de ses reflessions sur tous les projects qu'on peut former sur le present et sur l'avenir cette idee renferme bien des choses. Le secret se ragarde inviolablement et je vous en assure.<br>
+Je puis encore vous dire que monsieur le 224 cherche a faire des arrangemens pour vous faire du bien V.E. peut elle douter qu'il ne le veuille et qu'il ne l'execute lorsqu'il marque au tant d'envie de<br>
+(p.3)<br>
+vous attacher personnellement a lui s'il ne le fait pas dans les comencemens aussi magnifiquement qu'il le voudroit. Les 287 ne manqueront pas dans la suittez un grand 332 24 celui-ci en fournit de frequentes et V.E. auroit en moy un solliciteur Vif? si elle en avoit besoin. Il me semble que monsieur le 224 ne me laissera les moyens d'aquerir du merite au pres de V.E. par mes instantes representations<br>
+<br>
+On suivra vos avis sur le 285 et sur 233. Ne pourriez-vous pas estre instruit des 258 que le<br>
+<br>
+(p.4)<br>
+premier escrit sur les affaires presentes et de ses vues? Je vous demande aussi les vostres sur l'accommodement on pourroit le traitter en priant le 289 de donner des explications dans un bref addresse au 319. Le project seroit bon si le 289 vouloit bien le concerter avec nous. Mais ce chemin-la seroit long et je crains que veuillent brouiller ne se servissens des difficultez qui pourroient se rencontrer dans la negociation pour aigrir le 289 et rendre l'affaire inaccommodable. L'autre project seroit que 263 le 195 receut.<br>
+<br>
+(p.5)f.164<br>
+La 216 en donnant son mandement particulier et en mesurant infiniment ses termes par rapport au 289 et au 356(P.ortia[?]) seur que le 289 fermeroit les yeux et n'approuveroit ni ne desapprouveroit mais aussi qui ne fairoit rien de contraire. Je vous mande ce que j'imagine et je vous prie de me faire part de vos lumieres sur ces deux vues. Je desire la paix et la fin d'une affaire qui ne vaut rien, ni pour 335, ni pour la 243, ni pour l'eglise, ni pour les evesques, et je suis, die[u] merci, bon 222 et romain sans aucune partialite.<br>
+</DIV>
+<P>"Je desire la paix et la fin d'une affaire qui ne vaut rien" -- this sounds like a heart-felt desire of the writer. (Maybe this is about the controversy over an apostolic consitution mentioned below.)</P>
+<br>
+
+<H5>DUMP for R8224</H5>
+<DIV class="kakomi2" style="width: auto">
+(p.1) (f.162)<br>
+8(i) 10(a) 22(y) 84(re) 15(n) 52(du) 3(c) 136(om) 5(p) 94(te) 10(a) 2(m) 1(o) 15(n) 19(s) 8(i) 21(e) 152(ur) 64(le) 224 49(de)<br>
+44(ce) 17(q) 18(u) 21(e) 379([V.E.]) 2(m) 10(a) 53(fa) 127(it) 13(l) 6(h) 1(o) 162(nn) 21(e) 152(ur) 49(de) 2(m) 114(es) 3(c) 85(ri) 84(re)<br>
+350 9(g) 1(o) 18(u) 19(s) 94(te) 122(in) 55(fi) 75(ni) 69(me) 15(n) 14(t) 18(u) 1(o) 19(s) 14(t) 84(re) 68(ma) 75(ni) 21(e)<br>
+84(re) 4(d) 114(es) 3(c) 12(r) 8(i) 84(re) 23(et) 49(de) 79(pe) 15(n) 89(se) 12(r) 92(su) 12(r) 64(le) 19(s) 28(af) 53(fa) 125(ir)<br>
+114(es) 167(-) 23(et) 108(el) 64(le) 2(m) 139(or) 51(do) 162(nn) 21(e) 49(de) 18(u) 1(o) 153(us) 84(re) 79(pe) 94(te) 12(r)<br>
+44(ce) 17(q) 18(u) 21(e)  8(i) 10(a) 22(y) 49(de) 19(s) 8(i) 10(a) 21(e) 18(u) 13(l) 6(h) 1(o) 15(n) 15(n) 21(e) 152(ur) 49(de)<br>
+18(u) 1(o) 18(u) 19(s) 68(ma) 15(n) 49(de) 12(r) 168(-) 17(q) 18(u) 108(el) 64(le) 99(ue) 154(ut) 3(c) 1(o) 2(m) 5(p) 14(t) 21(e) 12(r)<br>
+92(su) 12(r) 101(vo) 19(s) 14(t) 84(re) 10(a) 70(mi) 95(ti) 21(e) 23(et) 92(su) 12(r) 101(vo) 19(s) 14(t) 84(re)<br>
+37(at) 93(ta) 3(c) 6(h) 21(e) 69(me) 15(n) 14(t) 81(po) 152(ur) 88(sa) 79(pe) 12(r) 19(s) 1(o) 162(nn) 21(e) 167(-)<br>
+23(et) 17(q) 18(u) 108(el) 64(le) 49(de) 90(si) 84(re) 17(q) 18(u) 21(e) 101(vo) 153(us) 114(es) 3(c) 85(ri) 100(vi) 21(e) 16(z)<br>
+10(a) 71(mo) 15(n) 90(si) 21(e) 152(ur) 64(le) 269(some name) 92(su) 12(r) 14(t) 1(o) 18(u) 94(te) 19(s) 64(le) 19(s) 28(af)<br>
+53(fa) 8(i) 12(r) 21(e) 19(s) 17(q) 18(u) 8(i) 46(co) 15(n) 44(ce) 12(r) 74(ne) 15(n) 14(t) 13(l) 114(es) 93(ta) 14(t) 23(et)<br>
+17(q) 18(u) 21(e) 101(vo) 153(us) 69(me) 68(ma) 15(n) 50(di) 21(e) 16(z) 88(sa) 15(n) 19(s) 10(a) 18(u) 47(cu) 74(ne)<br>
+84(re) 89(se) 12(r) 99(ue) 96(to) 154(ut) 44(ce) 17(q) 18(u) 21(e) 101(vo) 153(us) 10(a) 163(pp) 84(re) 15(n) 4(d) 84(re) 16(z)<br>
+49(de) 5(p) 13(l) 153(us) 122(in) 95(ti) 69(me) 78(pa) 12(r) 83(ra) 163(pp) 139(or) 14(t) 10(a) 89(se) 19(s)<br>
+122(in) 94(te) 84(re) 19(s) 14(t) 19(s)  8(i) 10(a) 22(y) 21(e) 20(x) 5(p) 13(l) 8(i) 17(q) 18(u) 21(e) 10(a) 379([V.E.])<br>
+(p.2)<br>
+44(ce) 17(q) 18(u) 21(e) 13(l) 13(l) 21(e) 110(en) 94(te) 15(n) 4(d) 5(p) 10(a) 12(r) 89(se) 19(s) 122(in) 94(te) 84(re) 19(s) 14(t)<br>
+48(da) 15(n) 19(s) 68(ma) 64(le) 165(tt) 84(re) 5(p) 84(re) 44(ce) 49(de) 15(n) 94(te) 168(-)<br>
+<br>
+15(n) 1(o) 15(n) 19(s) 21(e) 18(u) 64(le) 69(me) 15(n) 14(t)  379([V.E.]) 51(do) 127(it) 114(es) 3(c) 85(ri) 84(re) 44(ce)<br>
+17(q) 18(u) 108(el) 64(le) 10(a) 163(pp) 12(r) 21(e) 15(n) 4(d)  68(ma) 8(i) 19(s)  167(-) 137(on) 63(la) 5(p) 12(r) 8(i) 21(e)<br>
+49(de) 53(fa) 8(i) 84(re)  78(pa) 12(r) 14(t) 49(de) 89(se) 19(s) 102(vu) 114(es) 23(et) 49(de) 89(se) 19(s) 84(re) 11(f) 13(l)<br>
+114(es) 90(si) 1(o) 15(n) 19(s)  92(su) 12(r)  96(to) 153(us) 64(le) 19(s) 5(p) 12(r) 1(o) 8(i) 21(e) 3(c) 14(t) 19(s) 17(q) 18(u) 137(on)<br>
+79(pe) 154(ut) 11(f) 139(or) 69(me) 12(r) 92(su) 12(r) 64(le) 5(p) 12(r) 21(e) 89(se) 15(n) 14(t) 23(et) 92(su) 12(r)<br>
+13(l) 10(a) 99(ue) 75(ni) 12(r) 44(ce) 165(tt) 21(e) 8(i) 4(d) 21(e) 21(e) 84(re) 15(n) 54(fe) 12(r) 69(me) 40(bi) 110(en) 49(de) 19(s)<br>
+3(c) 6(h) 1(o) 19(s) 21(e) 19(s)  64(le) 89(se) 3(c) 12(r) 21(e) 14(t)  89(se) 83(ra) 9(g) 35(ar) 49(de)  122(in) 100(vi) 1(o)<br>
+63(la) 7(b) 13(l) 21(e) 2(m) 21(e) 15(n) 14(t)  23(et) 8(i) 21(e) 101(vo) 153(us) 110(en) 36(as) 92(su) 84(re)<br>
+<br>
+8(i) 21(e) 82(pu) 126(is) 110(en) 46(co) 84(re) 101(vo) 153(us) 50(di) 84(re) 17(q) 18(u) 21(e) 2(m) 1(o) 15(n) 19(s) 8(i)<br>
+21(e) 152(ur) 64(le) 224 3(c) 6(h) 113(er) 3(c) 6(h) 21(e) 10(a) 11(f) 10(a) 8(i) 12(r) 21(e) 49(de) 19(s) 168(-)<br>
+35(ar) 83(ra) 15(n) 59(ge) 69(me) 15(n) 19(s)  81(po) 152(ur) 101(vo) 153(us) 11(f) 10(a) 8(i) 12(r) 21(e) 52(du) 40(bi) 110(en)<br>
+167(-) 379([V.E.]) 79(pe) 154(ut) 108(el) 64(le) 4(d) 1(o) 18(u) 14(t) 21(e) 12(r) 17(q) 18(u) 120(il) 74(ne) 64(le)<br>
+99(ue) 18(u) 8(i) 160(ll) 21(e) 23(et) 17(q) 18(u) 120(il) 74(ne) 13(l) 21(e) 20(x) 21(e) 47(cu) 94(te) 66(lo) 12(r) 19(s)<br>
+17(q) 18(u) 120(il) | 2(m) 35(ar) 17(q) 18(u) 21(e) 10(a) 18(u) 93(ta) 15(n) 14(t) 4(d) 110(en) 100(vi) 21(e) 49(de)<br>
+<br>
+(p.3) (f.163)<br>
+101(vo) 153(us) 37(at) 93(ta) 3(c) 6(h) 113(er) 5(p) 21(e) 12(r) 91(so) 162(nn) 108(el) 64(le) 69(me) 15(n) 14(t) 10(a)<br>
+13(l) 18(u) 8(i)  19(s) 120(il) 74(ne) 64(le) 53(fa) 127(it) 5(p) 10(a) 19(s) 48(da) 15(n) 19(s) 64(le) 19(s)<br>
+46(co) 69(me) 15(n) 44(ce) 69(me) 15(n) 19(s) 10(a) 18(u) 19(s) 19(s) 8(i)  68(ma) 9(g) 75(ni) 55(fi) 17(q) 18(u) 21(e) 69(me)<br>
+15(n) 14(t)  17(q) 18(u) 120(il) 64(le) 18(u) 1(o) 18(u) 4(d) 12(r) 1(o) 127(it) 64(le) 19(s) | 287 74(ne)<br>
+68(ma) 15(n) 17(q) 18(u) 21(e)  86(ro) 15(n) 14(t)  5(p) 10(a) 19(s) 48(da) 15(n) 19(s) 63(la) 92(su) 127(it) 94(te) 16(z)<br>
+150(un) 9(g) 12(r) 32(an) 4(d) 332 24(?) 44(ce) 67(lu) 8(i) 45(ci) 110(en) 56(fo) 152(ur) 75(ni) 14(t)<br>
+49(de) 11(f) 12(r) 21(e) 17(q) 18(u) 21(e) 15(n) 14(t) 21(e) 19(s)  23(et) 379([V.E.]) 10(a) 18(u) 86(ro) 127(it) 110(en) -<br>
+71(mo) 22(y) 150(un) 91(so) 160(ll) 8(i) 45(ci) 94(te) 152(ur) 18(u) 118(if?) 90(si) 108(el) 64(le) 110(en)<br>
+10(a) 18(u) 1(o) 127(it) 39(be) 91(so) 122(in) 120(il) 69(me) 89(se) 2(m) 7(b) 13(l) 21(e) 17(q) 18(u) 21(e) -<br>
+2(m) 1(o) 15(n) 90(si) 21(e) 152(ur) 64(le) 224 74(ne) 69(me) 13(l) 10(a) 8(i) 164(ss) 21(e) 83(ra) 64(le) 19(s)<br>
+2(m) 1(o) 22(y) 110(en) 19(s) 4(d) 10(a) 17(q) 18(u) 21(e) 85(ri) 12(r) 52(du) 69(me) 85(ri) 94(te) 10(a) 18(u) 5(p) 12(r)<br>
+21(e) 19(s) 49(de) 379([V.E.]) 78(pa) 12(r) 69(me) 19(s) 122(in) 19(s) 14(t) 10(a) 15(n) 94(te) 19(s)  84(re)<br>
+5(p) 12(r) 21(e) 89(se) 15(n) 93(ta) 95(ti) 137(on) 19(s) 167(-) 168(-)<br>
+<br>
+137(on) 92(su) 8(i) 18(u) 83(ra) 101(vo) 19(s) 10(a) 100(vi) 19(s) 92(su) 12(r) 64(le) 285 23(et)<br>
+19(s) 152(ur) 233 167(-) 74(ne) 5(p) 1(o) 18(u) 12(r) 12(r) 8(i) 21(e) 16(z) 101(vo) 153(us) 78(pa) 19(s)<br>
+114(es) 14(t) 84(re) 122(in) 19(s) 14(t) 12(r) 18(u) 127(it) 49(de) 19(s) 258 17(q) 18(u) 21(e) 64(le)<br>
+<br>
+(p.4)<br>
+5(p) 84(re) 70(mi) 113(er) 114(es) 3(c) 12(r) 8(i) 14(t) 92(su) 12(r) 64(le) 19(s) 28(af) 53(fa) 8(i) 12(r) 114(es) 5(p) 84(re)<br>
+89(se) 15(n) 94(te) 19(s) 23(et) 49(de) 89(se) 19(s) 18(u) 18(u) 21(e) 19(s)  8(i) 21(e) 101(vo) 153(us) 49(de)<br>
+68(ma) 15(n) 49(de) 10(a) 18(u) 164(ss) 8(i) 64(le) 19(s) 101(vo) 19(s) 14(t) 12(r) 21(e) 19(s) 19(s) 18(u) 12(r)<br>
+13(l) 26(ac) 46(co) 161(mm) 1(o) 49(de) 69(me) 15(n) 14(t) 168(-) 137(on) 81(po) 18(u) 12(r) 12(r) 1(o) 127(it) 64(le)<br>
+14(t) 12(r) 10(a) 8(i) 165(tt) 21(e) 12(r) 110(en) 5(p) 12(r) 8(i) 32(an) 14(t) 64(le) 289 49(de) 51(do) 162(nn) 113(er)<br>
+49(de) 19(s) 21(e) 20(x) 5(p) 13(l) 8(i) 43(ca) 95(ti) 137(on) 19(s) 48(da) 15(n) 19(s) 150(un)  7(b) 12(r) 21(e) 11(f) -<br>
+27(ad) 4(d) 12(r) 21(e) 164(ss) 21(e) 10(a) 18(u) 319 64(le) 5(p) 12(r) 1(o) 8(i) 21(e) 3(c) 14(t) 89(se) 86(ro) 127(it)<br>
+41(bo) 15(n) 90(si) 64(le) 289 18(u) 1(o) 18(u) 66(lo) 127(it) 40(bi) 110(en) 64(le) 46(co) 15(n) 44(ce) 12(r) 94(te) 12(r)<br>
+10(a) 18(u) 104(ec) 76(no) 153(us) 2(m) 10(a) 8(i) 19(s) 44(ce) 3(c) 6(h) 21(e) 2(m) 8(i) 15(n) 63(la) 89(se) 86(ro) 127(it)<br>
+66(lo) 15(n) 9(g) 23(et) 8(i) 21(e) 3(c) 12(r) 10(a) 8(i) 15(n) 19(s) 17(q) 18(u) 21(e) 99(ue) 18(u) 120(il) 13(l) 21(e)<br>
+15(n) 14(t)  7(b) 86(ro) 18(u) 8(i) 13(l) 13(l) 113(er) 74(ne) 89(se) 19(s) 21(e) 12(r) 100(vi) 164(ss) 21(e) 15(n) 19(s)<br>
+49(de) 19(s) 50(di) 158(ff) 8(i) 47(cu) 13(l) 94(te) 16(z) 17(q) 18(u) 8(i) 5(p) 1(o) 18(u) 12(r) 12(r) 1(o) 8(i) 21(e) 15(n) 14(t)<br>
+89(se) 84(re) 15(n) 46(co) 15(n) 14(t) 12(r) 21(e) 12(r) 48(da) 15(n) 19(s) 63(la) 74(ne) 61(go) 45(ci) 10(a) 95(ti) 137(on)<br>
+81(po) 152(ur) 10(a) 8(i) 9(g) 12(r) 8(i) 12(r) 64(le) 289 23(et) 12(r) 21(e) 15(n) 4(d) 12(r) 21(e) 13(l) 28(af)<br>
+53(fa) 8(i) 84(re) 122(in) 26(ac) 46(co) 161(mm) 1(o) 48(da) 7(b) 13(l) 21(e)  168(-) 167(-) 13(l) 10(a) 18(u) 14(t) 84(re)<br>
+5(p) 12(r) 1(o) 8(i) 21(e) 3(c) 14(t)  89(se) 86(ro) 127(it) 17(q) 18(u) 21(e) 263 64(le) 195 84(re) 44(ce) 154(ut)<br>
+<br>
+(p.5) (f.164)<br>
+63(la) 216 110(en) 4(d) 1(o) 162(nn) 10(a) 15(n) 14(t) 91(so) 15(n) 68(ma) 15(n) 49(de) 69(me) 15(n) 14(t) 5(p) 35(ar)<br>
+95(ti) 47(cu) 65(li) 113(er) 23(et) 110(en) 69(me) 92(su) 83(ra) 15(n) 14(t) 122(in) 55(fi) 75(ni) 69(me) 15(n) 14(t)<br>
+89(se) 19(s) | 14(t) 21(e) 12(r) 2(m) 21(e) 19(s) 5(p) 35(ar) 83(ra) 163(pp) 139(or) 14(t) 10(a) 18(u) 289<br>
+23(et) 10(a) 18(u) 356(P.ortia[?]) 167(-) 89(se) 152(ur) 17(q) 18(u) 21(e) 64(le) 289 11(f) 113(er) 69(me) 86(ro)<br>
+127(it) 64(le) 19(s) 22(y) 21(e) 18(u) 20(x) 23(et) 15(n) 33(ap) 5(p) 12(r) 1(o) 18(u) | 99(ue) 86(ro) 127(it)<br>
+75(ni) 74(ne) 49(de) 19(s) 33(ap) 5(p) 12(r) 1(o) 18(u) 18(u) 21(e) 86(ro) 127(it) 2(m) 10(a) 8(i) 19(s) 10(a) 18(u) 164(ss) 8(i) |<br>
+17(q) 18(u) 120(il) 74(ne) 11(f) 10(a) 8(i) 86(ro) 127(it) 85(ri) 110(en) 49(de) 46(co) 15(n) 14(t) 12(r) 10(a) 8(i) 84(re)<br>
+168(-) 8(i) 21(e) 101(vo) 153(us) 68(ma) 15(n) 49(de) 44(ce) 17(q) 18(u) 21(e) 8(i) 121(im) 10(a) 60(gi) 74(ne)<br>
+23(et) 8(i) 21(e) 101(vo) 153(us) 5(p) 12(r) 8(i) 21(e) 49(de) 69(me) 11(f) 10(a) 8(i) 84(re) 78(pa) 12(r) 14(t) -<br>
+49(de) 101(vo) 19(s) | 67(lu) 70(mi) 21(e) 12(r) 21(e) 19(s) 92(su) 12(r) 44(ce) 19(s) 4(d) 21(e) 18(u) 20(x)<br>
+18(u) 18(u) 21(e) 19(s) 167(-) 8(i) 21(e) 49(de) | 90(si) 84(re) 63(la) 5(p) 10(a) 8(i) 20(x) 23(et) 63(la) 55(fi) 15(n) *je desire la paix et la fin d'une affaire qui ne vaut rien<br>
+4(d) 18(u) 74(ne) 28(af) 53(fa) 8(i) 84(re) 17(q) 18(u) 8(i) 74(ne) 18(u) 10(a) 18(u) 14(t) 85(ri) 110(en) -<br>
+75(ni) 5(p) 142(ou) 12(r) 335 75(ni) 5(p) 142(ou) 12(r) 63(la) 243 75(ni) 5(p) 142(ou) 12(r) -<br>
+13(l) 21(e) 9(g) 13(l) 8(i) 19(s) 21(e)  75(ni) 5(p) 142(ou) 12(r)  64(le) 19(s) 21(e) 18(u) 21(e) 19(s) 17(q) 18(u) 21(e) 19(s)<br>
+23(et) 8(i) 21(e) 92(su) 126(is) 4(d) 8(i) 21(e) 8(i)  2(m) 21(e) 12(r) 45(ci) 41(bo) 15(n) 222 23(et)<br>
+12(r) 1(o) 2(m) 10(a) 8(i) 15(n)   88(sa) 15(n) 19(s)  10(a) 18(u) 47(cu) 74(ne)  78(pa) 12(r) 95(ti) 10(a) 65(li) 94(te)<br>
+</DIV>
+
+<H4>R8225, 18 August 1715</H4>
+<DIV class="kakomi2" style="width: auto">
+8(i) 10(a) 22(y) 13(l) 18(u) 10(a) 263 64(le) 224 63(la) 13(l) 21(e) 14(t) 14(t) 84(re) 49(de) 379([V.E.])
+</DIV>
+
+<H4>R8226</H4>
+<DIV class="kakomi2" style="width: auto">
+167(-) 18(u) 1(o) 8(i) 63(la) 44(ce) 17(q) 18(u) 8(i) 114(es) 14(t) 89(se) 85(ri) 21(e) 18(u) 20(x) 81(po) 152(ur)
+</DIV>
+
+<H4>R8227</H4>
+<DIV class="kakomi2" style="width: auto">
+8(i) 21(e) 19(s) 142(ou) 6(h) 10(a) 8(i) 94(te) 56(fo) 12(r) 14(t) 64(le) 19(s) 10(a) 98(va) 15(n) 93(ta) 59(ge) 19(s)
+</DIV>
+
+<H4>R8228</H4>
+<DIV class="kakomi2" style="width: auto">
+8(i) 21(e) 92(su) 126(is) 11(f) 10(a) 19(s) 3(c) 6(h) 21(e) 17(q) 18(u) 21(e) 13(l) 121(im) 5(p) 87(ru) 49(de) 15(n) 44(ce)<br>
+49(de) 6(h) 18(u) 2(m) 7(b) 21(e) 13(l) 1(o) 14(t) 51(do) 3(c) 94(te) 152(ur) 52(du) 78(pa) 12(r) 95(ti) 11(f) 1(o) 8(i) 7(b) 13(l) 21(e)
+</DIV>
+
+<H4>R8229</H4>
+<DIV class="kakomi2" style="width: auto">
+96(to) 153(us) 64(le) 19(s) 376 19(s) 52(du) 78(pa) 12(r) 95(ti) 49(de) 263 64(le) 195 79(pe) 15(n)<br>
+91(so) 8(i) 21(e) 15(n) 14(t) 24(?) 67(lu) 8(i)  167(-) 120(il) 22(y) 10(a) 49(de) 19(s) 94(te) 19(s) 94(te) 19(s)
+</DIV>
+
+<H4>R8230, 23[?] December 1715</H4>
+<DIV class="kakomi2" style="width: auto">
+120(il) 69(me) 89(se) 2(m) 7(b) 13(l) 21(e) 17(q) 18(u) 21(e) 63(la) 50(di) 19(s) 14(t) 12(r) 8(i) 42(bu) 95(ti)
+</DIV>
+
+<H4>R8231 31 December 1715</H4>
+<DIV class="kakomi2" style="width: auto">
+17(q) 18(u) 1(o) 22(y) 350 10(a) 5(p) 12(r) 8(i) 19(s) 64(le) 5(p) 10(a) 12(r) 95(ti) 49(de) 13(l) 110(en) 18(u)
+</DIV>
+
+<H4>R8232</H4>
+<DIV class="kakomi2" style="width: auto">
+8(i) 10(a) 101(vo) 126(is) 68(ma) 15(n) 49(de) 10(a) 379([V.E.]) 78(pa) 12(r) 64(le) 49(de) 12(r) 75(ni) 113(er)
+</DIV>
+
+<H4>R8233 12 January[?] 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+120(il) 74(ne) 79(pe) 154(ut) 84(re) 153(us) 90(si) 12(r) 17(q) 18(u) 21(e) 78(pa) 12(r) 49(de) 19(s) 70(mi) 83(ra)
+</DIV>
+
+<H4>R8234 20 January[?] 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+8(i) 21(e) 3(c) 12(r) 10(a) 8(i) 15(n) 19(s)  40(bi) 110(en) 17(q) 18(u) 21(e) 64(le) 49(de) 12(r) 75(ni) 21(e) 12(r)
+</DIV>
+
+<H4>R8235 27 January 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+On n'a point receu de nouvelles d'Angleterre ainsy on ne scait rien du Pretendant depuis son arrivee en Escosse. <span class="note">(James Edward landed in Scotland on 22 December 1715)</span><br>
+120(il) 76(no) 153(us) 78(pa) 86(ro) 127(it) 17(q) 18(u) 21(e) 13(l) 255 69(me) 73(na) 59(ge)<br>
+56(fo) 12(r) 14(t) 63(la) 208 4(d) 256 78(pa) 12(r) 83(ra) 5(p) 5(p) 1(o) 12(r) 14(t) 10(a) 89(se) 19(s)<br>
+5(p) 86(ro) 8(i) 21(e) 14(t) 19(s) 92(su) 12(r) 13(l) 254 23(et) 17(q) 18(u) 21(e) 64(le) 319 59(ge)
+</DIV>
+
+<H4>R8236, 3 February 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+6(h) 21(e) 18(u) 12(r) 21(e) 18(u) 19(s) 21(e) 28(af) 53(fa) 8(i) 84(re) 8(i) 114(es) 79(pe) 84(re) 17(q) 18(u)<br>
+10(a) 63(la) 55(fi) 15(n) 137(on) 110(en) 91(so) 12(r) 95(ti) 83(ra) 
+</DIV>
+
+<H4>R8237</H4>
+<DIV class="kakomi2" style="width: auto">
+49(de) 91(so) 18(u) 5(p) 13(l) 21(e) 19(s) 19(s) 21(e) 48(da) 15(n) 19(s) 120(il) 10(a) 18(u) 86(ro) 127(it) 70(mi)<br>
+</DIV>
+
+<H4>R8238, 17 February 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+J'ay receu la lettre que V.E. m'a fait l'honneur de m'ecrire du 28 janvier. elle avoit desja appris par le courrier extraordinaire la nouvelle de l'abbaye de St. Victor, dont M. le Duc d'Orleans l'a gratifier. V.E. merite une pareille grace, et encor mieux.<br>
+Les nouvelles 4(d) 342 91(so) 15(n) 14(t) 17(q) 18(u) 21(e) 64(le) 219(comte) 49(de)<br>
+68(ma) 12(r) 12(r)  68(ma) 15(n) 17(q) 18(u) 1(o) 127(it)  4(d) 35(ar) 69(me) 19(s) | 23(et) 49(de) 81(po) 18(u) 4(d) 12(r) 21(e)
+</DIV>
+<P>*This reveals 219=comte. The Earl of Mar raised the Jacobite standard in 1715.</P>
+
+<H4>R8239, 24 February 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+64(le) 19(s) 28(af) 53(fa) 8(i) 84(re) 19(s) 52(du) 79(pe) 95(ti) 14(t) 324 101(vo) 15(n) 14(t)<br>
+56(fo) 12(r) 14(t) 68(ma) 13(l) 110(en) 342 168(-) 120(il) 10(a) 114(es) 94(te) 130(ob) 65(li) 59(ge)<br>
+4(d) 10(a) 38(ba) 15(n) 51(do) 15(n) 74(ne) 12(r) 5(p) 21(e) 12(r) 14(t) 6(h) 23(et) 49(de) 89(se) 84(re) 95(ti)
+</DIV>
+
+<H4>R8240, 2 March 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+M. le Duc d'Orleans a este oblige de se faire saigner pour une fluxion sur les yeux....<br>
+...<br>
+<!--p.1-->3(c) 6(h) 21(e) 69(me) 15(n) 14(t) 32(an) 45(ci) 110(en) 49(de) 88(sa) 68(ma) 8(i) 91(so) 15(n) 81(po) 152(ur)<br>
+63(la) 243 23(et) 69(me) 19(s) 69(me) 88(sa) 81(po) 65(li) 94(te) 19(s) 89(se) 81(po) 152(ur) 71(mo) 22(y)<br>
+</DIV>
+
+<H4>R8241, 9 March 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+64(le) 79(pe) 95(ti) 14(t) 324 51(do) 127(it) 114(es) 14(t) 84(re) 91(so) 12(r) 95(ti) 49(de)<br>
+243 167(-) 379([V.E.]) 46(co) 2(m) 5(p) 12(r) 110(en) 4(d) 40(bi) 110(en) 17(q) 18(u) 137(on) 74(ne)
+</DIV>
+
+<H4>R8242, 16 March 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+64(le) 79(pe) 95(ti) 14(t) 324 114(es) 14(t) 44(ce) 12(r) 93(ta) 8(i) 74(ne) 69(me) 15(n) 14(t)
+</DIV>
+
+<H4>R8243, 23 March 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+64(le) 79(pe) 95(ti) 14(t) 324 19(s) 114(es) 14(t) 84(re) 95(ti) 84(re) 95(ti) 84(re) 49(de) 46(co) 2(m) 69(me) 12(r) 45(ci)
+</DIV>
+
+<H4>R8244, 30 March 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+90(si) 13(l) 255 99(ue) 154(ut) 49(de) 3(c) 13(l) 10(a) 84(re) 12(r) 63(la) 253 10(a) 18(u) 20(x)<br>
+367 19(s) 23(et) 17(q) 18(u) 120(il) 63(la) 5(p) 142(ou) 19(s) 89(se) 100(vi) 99(ue) 69(me) 15(n) 14(t) 110(en) 
+</DIV>
+
+<H4>R8245, 6 April 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+8(i) 21(e) 92(su) 126(is) 14(t) 12(r) 21(e) 19(s) 53(fa) 19(s) 3(c) 6(h) 21(e) ' 167(-) 262 168(-)
+</DIV>
+
+<H4>R8246 13 avril 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+8(i) 35(ar) 85(ri) 99(ue) 167(-) 262 168(-) 49(de) 63(la) 43(ca) 2(m) 78(pa) 9(g) 74(ne)
+</DIV>
+
+<H4>R8247 20 avril 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+8(i) 21(e) 92(su) 126(is) 53(fa) 19(s) 3(c) 6(h) 21(e) ' 167(-) 262 168(-) 49(de) 19(s) 78(pa) 19(s)
+</DIV>
+
+<H4>R8248 27 avril 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+64(le) 46(co) 15(n) 89(se) 120(il) 49(de) 74(ne) 81(po) 122(in) 14(t) 51(do) 15(n) 74(ne) 12(r) 49(de) 191 19(s)
+</DIV>
+
+<H4>R8249 4 may 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+5(p) 13(l) 18(u) 19(s) 8(i) 21(e) 84(re) 11(f) 13(l) 21(e) 19(s) 3(c) 6(h) 8(i) 19(s) 262 92(su) 12(r) 64(le) 19(s) 
+</DIV>
+
+<H4>R8250 11 may 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+90(si) 13(l) 137(on) 110(en) 3(c) 86(ro) 127(it) 64(le) 278 49(de) 13(l) 255 110(en) 44(ce) 14(t) 94(te)
+</DIV>
+
+<H4>R8251 18 may 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+J'ay l'honneur d'envoyer a V.E. l'arrest du Parlement au sujet des deux mandements de M. l'Evesque de Coulon.<br>
+120(il) 53(fa) 18(u) 14(t) 10(a) 18(u) 142(ou) 113(er) 17(q) 18(u) 120(il) 22(y) 10(a) 21(e) 18(u) 150(un) 21(e)
+</DIV>
+
+<H4>R8252 25 may 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+120(il) 69(me) 78(pa) 86(ro) 127(it) 167(-) 262 167(-) 17(q) 18(u) 21(e) 64(le) 19(s) 440
+</DIV>
+
+<H4>Add MS 20360</H4>
+
+<H4>R8253, 1 June 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+8(i) 10(a) 22(y) 13(l) 6(h) 137(on) 74(ne) 18(u) 12(r) 4(d) 21(e) 3(c) 85(ri) 84(re) 10(a) 379([V.E.]) 44(ce)
+</DIV>
+
+<H4>R8254, 8 June 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+J'ay pass&eacute;, Monseigneur, cinq ou six jours a la campagne et j'en arrive dans le moment<br>
+44(ce) 63(la) 2(m) 109(em) 79(pe) 19(s) 3(c) 6(h) 21(e) 83(ra) 4(d) 21(e) 3(c) 85(ri) 84(re) 10(a) 379([V.E.]) 10(a) 18(u) 19(s) 19(s) 22(y)
+</DIV>
+
+<H4>R8255, 15 June 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+Je vois, Monseigneur, par la lettre que V.E. m'a fait l'honneur de m'ecrire du 26 de l'autre mois que<br>
+64(le) 289 10(a) 5(p) 85(ri) 19(s) 49(de) 19(s) 110(en) 58(ga) 59(ge) 69(me) 15(n) 14(t) 19(s)
+</DIV>
+
+<H4>R8256, 22 June 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+350 2(m) 10(a) 3(c) 6(h) 35(ar) 59(ge) ' 167(-) 262 49(de) 101(vo) 153(us) 68(ma) 12(r) 17(q) 18(u)
+</DIV>
+
+<H4>R8257, 29 June 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+J'ay receu, Monseigneur, les deux lettres que V.E. m'a fait l'honneur de m'ecrire du 9 et du 16 de ce mois.<br>
+8(i) 21(e) 101(vo) 126(is) 96(to) 18(u) 94(te) 19(s) 64(le) 19(s) 336 19(s) ' 17(q) 18(u) 108(el) 64(le)
+</DIV>
+
+<H4>R8258, 6 July 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+Je n'ay point receu, Monseigneur, de lettres de V.E. par l'ordinaire, et je ne comptois pas d'en recevoir, puisque celles du 16 de juin ont est&eacute; apport&eacute;es par le courrier que le S<sup>r</sup> de la Chausse a depesch&eacute;.<br>
+8(i) 37(at) 94(te) 15(n) 4(d) 19(s) 10(a) 99(ue) 3(c) 121(im) 78(pa) 95(ti) 110(en) 44(ce) 64(le) 19(s) 84(re) 19(s)
+</DIV>
+
+<H4>R8259, 13 July 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+J'ay receu, Monseigneur, la lettre que V.E. m'a fait l'honneur de m'ecrire le 2 de ce mois par le retour du courrier de M. le M<sup>al</sup> d'Huxelles president of the Council of Foregin Affairs <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Nicolas_Chalon_du_Bl%C3%A9">Wikipedia</A>)</span>.<br>
+64(le) 19(s) 84(re) 11(f) 13(l) 21(e) 3(c) 95(ti) 137(on) 19(s) 17(q) 18(u) 108(el) 64(le) 46(co) 15(n) 95(ti) 110(en) 14(t) 91(so) 15(n)
+</DIV>
+
+<H4>R8260, 20 July 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+Quoy que je n'aye point receu de lettres de V.E. par l'ordinaire, et que j'aye eu l'honneur de repondre a celles du 2 de ce mois, arriv&eacute;es par le courrier extraord<sup>re</sup>. Je ne laisseray par de mander a V.E. le peu de nouvelles qu'il y a en ce pays-cy.<br>
+263 64(le) 224 49(de) 90(si) 84(re) 49(de) 41(bo) 15(n) 74(ne) 56(fo) 22(y) 63(la) 55(fi) 15(n) 49(de) 13(l)<br>
+28(af) 53(fa) 8(i) 84(re) 49(de) 63(la) 216 23(et) 120(il) 98(va) 53(fa) 8(i) 12(r) 21(e) 89(se) 19(s) 49(de) 12(r) 75(ni)
+</DIV>
+
+<H4>R8261, 27 July 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+J'ay receu, Monseigneur, la lettre que V.E. m'a fait l'honneur de m'ecrire le 7 de ce mois, et je la remercie tres humblement des avis qu'elle me donne sur ce qui regarde mes interests particuliers.<br>
+8(i) 21(e) 74(ne) 19(s) 3(c) 10(a) 126(is) 90(si) 64(le) 19(s) 68(ma) 18(u) 98(va) 126(is) 133(of) 55(fi) 44(ce) 19(s) 49(de)
+</DIV>
+
+<H4>R8262, 3 August 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+8(i) 10(a) 22(y) ' 21(e) 18(u) 13(l) 6(h) 137(on) 74(ne) 18(u) 12(r) 49(de) 101(vo) 125(ir) 44(ce) 68(ma) 95(ti)
+</DIV>
+
+<H4>R8263, 10 August 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+8(i) 21(e) 5(p) 13(l) 10(a) 8(i) 15(n) 19(s) 40(bi) 110(en) 379([V.E.]) 4(d) 114(es) 14(t) 84(re) 130(ob) 65(li) 59(ge) 21(e) 10(a)
+</DIV>
+
+<H4>R8264, 17 August 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+La grande Nouvelle que nous receumes hier par un courrier extraord.<sup>re</sup> de M. le C<sup>te</sup> du Luc, de sa victoire remport&eacute;e par M. le P<sup>ce</sup> Eugene sur les Turcs <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Battle_of_Petrovaradin">Wikipedia</A>)</span> va calmer les inquietudes de l'Italie sur les progrez de l'ennemi du nom Chrestien<br>
+68(ma) 126(is) 120(il) 69(me) 89(se) 2(m) 7(b) 13(l) 21(e)<br>
+110(en) 69(me) 19(s) 69(me) 94(te) 2(m) 5(p) 19(s) 17(q) 18(u) 108(el) 64(le) 51(do) 127(it) 64(le) 19(s) 10(a) 18(u) 9(g) 69(me) 15(n) 94(te)<br>
+</DIV>
+
+<H4>R8265, 24 August 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+J'ay receu a lettre que V.E. m'a fait l'honneur de m'ecrire du 4 de ce mois, et je luy en fais mes tres humbles remercimens.<br>
+M. le Duc d'Orleans a envoy&eacute; un courrier a Strasbourg et M. le Cardinal de Rohan pour le faire revenir icy<br>
+48(da) 15(n) 19(s) 13(l) 114(es) 79(pe) 83(ra) 15(n) 44(ce) 49(de) 81(po) 18(u) 101(vo) 125(ir) 46(co) 15(n)
+</DIV>
+
+<H4>R8266, 31 August 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+... Je compte que
+263 64(le) 198 23(et)<br>
+263 13(l) 21(e) 199 21(e) 3(c) 85(ri) 86(ro) 15(n) 14(t) 90(si) 56(fo) 12(r) 94(te) 69(me) 15(n) 14(t) 10(a) 18(u
+</DIV>
+
+<H4>R8267, 7 September 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+... Luy rien laisser ignorer
+49(de) 44(ce) 17(q) 18(u) 8(i) 100(vi) 110(en) 14(t) 10(a)<br>
+68(ma) 46(co) 15(n) 76(no) 126(is) 88(sa) 15(n) 44(ce) 23(et) 81(po) 152(ur) 84(re) 81(po) 15(n) 4(d) 84(re)
+</DIV>
+
+<H4>R8268, 29 September 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+Je retournay avant hier de la Campagne, Monseigneur, 
+23(et) 8(i) 30(al) 63(la) 22(y) 110(en) 35(ar) 85(ri) 98(va) 15(n) 14(t) 88(sa) 67(lu) 113(er) 263 64(le) 224 168(-) 120(il) 69(me)<br>
+50(di) 14(t) 17(q) 18(u) 120(il) 10(a) 101(vo) 127(it) 10(a) 69(me) 78(pa) 12(r) 64(le) 12(r) 78(pa) 12(r) 83(ra) 5(p) 81(po) 12(r) 14(t) 10(a)
+</DIV>
+
+<H4>R8269, Paris, 5 October 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+Je commence a mieux esperer de la fin des affaires de la Constitution. Il me paroit que M. le Card.<sup>l</sup> de Rohan et M. le Card.<sup>l</sup> de Bissy avec les Evesques acceptans cherchent de bonne foy les moyens de contenter M. le Card.<sup>l</sup> de Noailles et ses adherans....<br>
+...<br>
+43(ca) 19(s) 17(q) 18(u) 30(al) 39(be) 86(ro) 75(ni) <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Giulio_Alberoni">Wikipedia</A>)</span> 91(so) 127(it) 53(fa) 127(it) 193 168(-) 17(q) 18(u) 108(el)<br>
+17(q) 18(u) 21(e) 49(de) 54(fe) 84(re) 15(n) 44(ce) 17(q) 18(u) 21(e) 8(i) 10(a) 22(y) 21(e) 81(po) 152(ur) 64(le) 19(s)
+</DIV>
+
+<H4>R8270, 12 October 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+64(le) 19(s) : 114(es) 79(pe) 83(ra) 15(n) 44(ce) 19(s) 4(d) 26(ac) 46(co) 2(m) 71(mo) 49(de) 69(me) 15(n) 14(t) 92(su) 12(r)
+</DIV>
+
+<H4>R8271 19 October 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+8(i) 21(e) 74(ne) 92(su) 126(is) 78(pa) 19(s) 5(p) 13(l) 18(u) 19(s) 46(co) 15(n) 55(fi) 32(an) 14(t) 17(q) 18(u)
+</DIV>
+
+<H4>R8272 26 October 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+8(i) 10(a) 22(y) : 64(le) 18(u) : 10(a) 350 64(le) 19(s) 258 49(de) 379([V.E.]) 52(du) <u>6</u> 49(de) 44(ce) 71(mo) 126(is)
+</DIV>
+<P>*This shows an underline indicates the number itself. A colon (often omitted in my transcription) is sometimes used to indicate an end of a word. The dash at the end of the line (again often omitted in my transcription) seems to be mere padding, rather than hyphenation of a word spanning two lines.</P>
+<P>350 may refer to a day and 258 may be "lettre" or the like.</P>
+
+<H4>R8273 2 November 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+Je n'ay rien de nouveau a adjouster a ce que j'ay eu l'honneur de marquer a V.E. dans mes precedents lettres.<br>
+8(i) 37(at) 94(te) 15(n) 4(d) 19(s) 89(se) 19(s) 84(re) 19(s) 81(po) 15(n) 89(se) 19(s) 23(et) 89(se) 19(s) 84(re) 11(f) 64(le) 20(x) 8(i) 137(on) 19(s) 168(-)
+</DIV>
+
+<H4>R8274 a Paris le 9 novembre 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+350 37(at) 94(te) 15(n) 51(do) 127(it) 10(a) 99(ue) 3(c) 121(im) 78(pa) 95(ti) 110(en) 44(ce) 63(la) 258 49(de) 379([V.E.])
+</DIV>
+
+<H4>R8275 16 November 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+J'ay receu, Monseigneur, la lettre que V.E. m'a fait l'honneur de m'ecrire du 27 octobre.<br>
+8(i) 21(e) 13(l) 10(a) 22(y) 64(le) 18(u) 21(e) 96(to) 18(u) 94(te) 110(en) 95(ti) 21(e) 84(re) 10(a) 263 64(le) 224<br>
+23(et) 120(il) 2(m) 10(a) 51(do) 15(n) 74(ne) ' 64(le) 19(s) 84(re) 19(s) 81(po) 15(n) 89(se) 19(s) 17(q) 18(u) 21(e) 8(i) 21(e)
+</DIV>
+
+<H4>R8276 23 November 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+Je n'ay rien a respondre a V.E. sur ce que contient la lettre du 30 de ce mois
+120(il) 53(fa) 154(ut) 37(at) 94(te)<br>
+15(n) 4(d) 84(re) 17(q) 18(u) 108(el) 64(le) 10(a) 8(i) 14(t) 5(p) 67(lu) 19(s) : 10(a) 98(va) 15(n) 44(ce) 88(sa) 74(ne) 61(go)<br>
+</DIV>
+
+<H4>R8277 30 November 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+263 64(le) 224 10(a) 33(ap) 5(p) 85(ri) 19(s) 10(a) 99(ue) 3(c) 5(p) 13(l) 10(a) 8(i) 90(si) 12(r)
+</DIV>
+
+<H4>R8278</H4>
+<DIV class="kakomi2" style="width: auto">
+Il n'y a encore rien d'entam&eacute; de puis l'arriv&eacute;e des Evesques sur l'affaire de la Constitution. On attend que M. le Card.<sup>l</sup> de Noailles et ses adherans ayent donn&eacute; leurs reflexions sur la lettre de M. le Card.<sup>l</sup> de Rohan et de ses Evesques. M.
+64(le) 195 23(et) 263 64(le) 198<br>
+69(me) 78(pa) 86(ro) 126(is) 89(se) 15(n) 14(t) 114(es) 14(t) 84(re) 48(da) 15(n) 19(s) 64(le) 19(s) 69(me) 120(il)
+</DIV>
+
+<H4>R8279 7 December 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+8(i) 21(e) 74(ne) 81(po) 18(u) 12(r) 83(ra) 22(y) 81(po) 122(in) 14(t) 84(re) 19(s) 81(po) 15(n) 4(d) 84(re) 44(ce) 14(t)
+</DIV>
+
+<H4>R8280 14 October 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+8(i) 21(e) 46(co) 15(n) 100(vi) 110(en) 19(s) : 10(a) 99(ue) 3(c) 379([V.E.]) 17(q) 18(u) 120(il) 53(fa) 154(ut) 55(fi) 75(ni) 12(r)
+</DIV>
+
+<H4>R8281 21 October 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+Le courrier ordinaire a est&eacute; retard&eacute; par les mauvais temps 
+23(et) 8(i) 21(e) 74(ne) 81(po) 18(u) 12(r) 83(ra) 22(y) 84(re) 44(ce)
+</DIV>
+
+<H4>R8282 28 October 1716</H4>
+<DIV class="kakomi2" style="width: auto">
+379([V.E.]) 74(ne) 51(do) 127(it) 81(po) 122(in) 14(t) 51(do) 18(u) 94(te) 12(r) 49(de) 63(la) 90(si) 15(n) 44(ce) 85(ri)
+</DIV>
+
+<H4>R8283 4 January 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+Le courrier de Rome n'arriva qu'avanthier au soir. hier au matin M. le Duc d'orleans alla au Conseil de Regence. L'apresdin&eacute;e il fit venir chez luy M. le Card.<sup>l</sup> de Noailles avec les Evesques de son parti et quelques autres personnes qui furent admises a cette Conference. elle dura quatre heures. Ce matin S.A.R. est all&eacute;e au Conseil de Regence
+8(i) 21(e) 74(ne) 53(fa) 126(is) 44(ce)<br>
+73(na) 12(r) 84(re) ' 10(a) 379([V.E.]) 17(q) 18(u) 21(e) 81(po) 152(ur) 67(lu) 22(y) 53(fa) 8(i) 84(re) 46(co) 2(m) 5(p)
+</DIV>
+
+<H4>R8284 11 January 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+La Traitt&eacute; de la Triple Alliance fut enfin sign&eacute; le 4 de ce mois (span class="note")(signed on 4 January 1717 in The Hague)(/span) comme je l'avois annonc&eacute; a V.Em.<sup>ce</sup> par ma derniere lettre. Le courrier qui en apporta la nouvelle arriva vendredy a deux heures et demie apres midy, et l'on fera imprimer ce Traitt&eacute; d'abord que les ratifications auront est&eacute; eschang&eacute;es.<br>
+110(en) 37(at) 94(te) 15(n) 48(da) 15(n) 14(t) 8(i) 21(e) 50(di) 83(ra) 22(y) 10(a) 379([V.E.]) 17(q) 18(u) 21(e)
+</DIV>
+
+<H4>R8285 18 January 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+13(l) 286 49(de) 335 100(vi) 110(en) 14(t) 89(se) 18(u) 64(le) 69(me) 15(n) 14(t) 4(d) 35(ar)<br>
+85(ri) 99(ue) 12(r) 23(et) 63(la) 258 17(q) 18(u) 21(e) 379([V.E.]) 2(m) 10(a) 53(fa) 127(it) 13(l)
+</DIV>
+<P>*286 may be "evesque"?</P>
+
+<H4>R8286 25 January 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+263 64(le) 224 10(a) 21(e) 3(c) 142(ou) 94(te) ' 10(a) 99(ue) 3(c) 39(be) 10(a) 18(u) 46(co) 18(u) 5(p) 4(d)
+</DIV>
+<P>*263 may be "Monsieur"?</P>
+
+<H4>R8287 1 February 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+120(il) 114(es) 14(t) 121(im) 81(po) 19(s) 90(si) 7(b) 64(le) 17(q) 18(u) 137(on) 82(pu) 126(is) 89(se) 30(al) 64(le) 12(r)
+</DIV>
+
+<H4>R8288 8 February 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+13(l) 28(af) 53(fa) 8(i) 84(re) 49(de) 63(la) 216 69(me) 95(ti) 110(en) 14(t) : 96(to) 18(u) 19(s) 8(i) 142(ou) 12(r)<br>
+19(s) : 56(fo) 12(r) 14(t) 10(a) 18(u) 3(c) 1(o) 21(e) 18(u) 12(r) 23(et) 8(i) 110(en) 49(de) 90(si) 84(re) 63(la) 55(fi) 15(n)<br>
+10(a) 99(ue) 3(c) 150(un) 21(e) 121(im) 78(pa) 95(ti) 110(en) 44(ce) 17(q) 18(u) 21(e) 8(i) 21(e) 74(ne) : 19(s) 3(c) 10(a) 8(i)<br>
+86(ro) 126(is) 36(as) 89(se) 16(z) 21(e) 20(x) 5(p) 85(ri) 69(me) 12(r) 10(a) 379([V.E.]) 168(-) 8(i) 21(e) 101(vo) 126(is)
+</DIV>
+<P>*216 may be "constitution" <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Unigenitus#Aftermath">Wikipedia</A></span> (cf. R8269, R8278).</P>
+
+<H4>R8289 15 February 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+263 64(le) 251 23(et) 263 64(le) 229 91(so) 15(n) 14(t) 79(pe) 12(r) 92(su) 10(a) 49(de) 16(z) 49(de)<br>
+63(la) 74(ne) 44(ce) 19(s) 90(si) 94(te) 17(q) 18(u) 21(e) 64(le) 19(s) 376 19(s) 138(op) 81(po) 88(sa) 15(n) 19(s)
+</DIV>
+<P>*It seems certain that 263 is "Monsieur" or the like.</P>
+
+<H4>R8290 22 February 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+63(la) 46(co) 15(n) 54(fe) 84(re) 15(n) 44(ce) 17(q) 18(u) 8(i) 89(se) 95(ti) 15(n) 14(t) 99(ue) 15(n) 4(d) 84(re) 50(di)
+</DIV>
+<P>*The days of the week (e.g., "vendredi") is not in the code?</P>
+
+<H4>R8291 1 March 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+L'ordinaire ne fait que d'arriver, et je ne scais ce qui peut l'avoir retard&eacute; le temps estant aussy beau qu'il l'est
+8(i) 21(e) 15(n) 10(a) 22(y) 110(en) 46(co) 84(re) 85(ri) 110(en) 49(de) 81(po)<br>
+90(si) 95(ti) 11(f) 10(a) 68(ma) 15(n) 49(de) 12(r) 44(ce) 14(t) 286 10(a) 379([V.E.]) 92(su) 12(r) 63(la)
+</DIV>
+
+<H4>R8292, 7, 8 March 1717<!--最初のページは７日だがendorsementは7,8--></H4>
+<DIV class="kakomi2" style="width: auto">
+379([V.E.]) 33(ap) 5(p) 84(re) 15(n) 4(d) 83(ra) 78(pa) 12(r) 64(le) 212 17(q) 18(u) 21(e) 13(l) 137(on) 400<br>
+49(de) 79(pe) 19(s) 3(c) 6(h) 21(e) 150(un) 21(e) 76(no) 18(u) 99(ue) 13(l) 64(le) 51(do) 15(n) 14(t) 8(i) 10(a) 22(y) 500<br>
+114(es) 94(te) 5(p) 67(lu) 19(s) 53(fa) 19(s) 3(c) 6(h) 21(e) ' 17(q) 18(u) 21(e) 92(su) 12(r) 5(p) 85(ri) 19(s) 167(-) 168(-)<br>
+Les quatre Evesques que j'ay tousjours marqu&eacute; a V.E. avoir es&eacute; opposez a tout accomodement, s&ccedil;avoir M.M. de Mirepoix, de Senez, de Montpellier et de Boulogne, allerent vendredy dernier a l'assembl&eacute;e de la Facult&eacute; de Theologie....
+</DIV>
+
+<H4>R8293 15 March 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+J'espere que le courrier extraordinaire que l'on depescha mardi dernier, aura pris a Lyon suivant les ordres ...<br>
+64(le) 19(s) 3(c) 6(h) 1(o) 89(se) 19(s) 91(so) 15(n) 14(t) 96(to) 18(u) 19(s) 8(i) 142(ou) 12(r) 19(s) 48(da)
+</DIV>
+
+<H4>R8294 22 March 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+8(i) 21(e) 101(vo) 126(is) 10(a) 99(ue) 3(c) 150(un) 21(e) 20(x) 14(t) 84(re) 69(me) 49(de) 5(p) 13(l) 10(a) 8(i) <br>
+90(si) 12(r) 17(q) 18(u) 21(e) 64(le) 19(s) 28(af) 53(fa) 8(i) 84(re) 19(s) 19(s) 110(en) 58(ga) 59(ge) 15(n) 14(t) 79(pe) 18(u)
+</DIV>
+
+<H4>Add MS 20361</H4>
+
+<H4>R8295 5 April 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+J'ay receu les deux lettres que V.E. m'a fait l'honneur de m'ecrire, du 9 et de 16 mars<br>
+8(i) 21(e) 74(ne) 19(s) 3(c) 10(a) 126(is) 5(p) 67(lu) 19(s) 17(q) 18(u) 21(e) 67(lu) 22(y) 68(ma) 15(n) 49(de) 12(r)
+</DIV>
+
+<H4>R8296 12 April 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+Je suis tres inquiet de ce que V.Em.<sup>ce</sup> m'a fait l'honneur de me mander sur sa sant&eacute;....<br>
+120(il) 69(me) 78(pa) 86(ro) 127(it) 17(q) 18(u) 21(e) 64(le) 289 10(a) 114(es) 94(te) 46(co) 15(n)
+</DIV>
+
+<H4>R8297 19 April 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+8(i) 21(e) 3(c) 12(r) 10(a) 122(in) 19(s) 4(d) 110(en) 17(q) 18(u) 21(e) 64(le) 289 74(ne) 89(se)<br>
+69(me) 5(p) 12(r) 110(en) 74(ne) 110(en) 46(co) 84(re) 48(da) 15(n) 19(s) 64(le) 78(pa) 12(r) 95(ti) 17(q) 18(u) 120(il)
+</DIV>
+
+<H4>R8298 26 April 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+8(i) 21(e) 92(su) 126(is) 96(to) 18(u) 19(s) 8(i) 142(ou) 12(r) 19(s) 109(em) 38(ba) 83(ra) 19(s) 89(se) '<br>
+92(su) 12(r) 44(ce) 17(q) 18(u) 21(e) 8(i) 10(a) 22(y) 10(a) 21(e) 3(c) 85(ri) 84(re) 10(a) 379([V.E.]) 128(iv)<br>
+19(s) 17(q) 18(u) 10(a) 44(ce) 17(q) 18(u) 21(e) 13(l) 137(on) 10(a) 127(it) 84(re) 44(ce) 18(u) 49(de) 19(s)
+</DIV>
+
+<H4>R8299 3 May 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+J'ay receu la lettre que V.Em.<sup>ce</sup> m'a fait l'honneur de m'ecrire du 13 avril par l'ord.<sup>re</sup> et celle du 20 par le retour du Courrier de M. le M.<sup>al</sup> d'Huxelles.<br>
+63(la) 49(de) 12(r) 75(ni) 21(e) 84(re) 69(me) 51(do) 15(n) 74(ne) 49(de)<br>
+9(g) 12(r) 32(an) 49(de) 19(s) 114(es) 79(pe) 83(ra) 15(n) 44(ce) 19(s) 23(et) 120(il) 53(fa) 18(u) 14(t) 10(a) 18(u) 142(ou)
+</DIV>
+
+<H4>R8300 10 May 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+...<br>
+224 92(su) 12(r) 64(le) 19(s) 68(ma) 95(ti) 21(e) 84(re) 19(s) 5(p) 84(re) 89(se) 15(n) 94(te) 19(s)
+</DIV>
+
+<H4>R8301 17 May 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+M. l'abb&eacute; Camisier rendra compte a V.E. du success des demarches que j'ay faites pour le payement d'une ann&eacute;e de sa pension. ...<br>
+137(on) 10(a) 18(u) 83(ra) 49(de) 63(la) 79(pe) 8(i) 74(ne) : 10(a) : 3(c) 86(ro) 8(i) 84(re) 8(i) 3(c) 22(y) 
+</DIV>
+
+<H4>R8302 24 May 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+Je revins hier au soir de la Campagne et j'ay trouv&eacute; en arrivant les deux lettres dont V.Em.<sup>ce</sup> m'a honor&eacute; du 4 et du 11 de ce mois. La derniere est venue par le courrier qui estoit aller chercher la despense pour le mariage de M. le Marquis d'Harcourt avec M<sup>lle</sup> de Louvois.<br>
+3(c) 114(es) 14(t) 33(ap) 78(pa)<br>
+84(re) 2(m) 69(me) 15(n) 14(t) 44(ce) 212 17(q) 100(vi) 10(a) 51(do) 15(n) 74(ne) ' 17(q) 99(ue) 13(l) 17(q) 99(ue)<br>
+122(in) 17(q) 100(vi) 21(e) 97(tu) 49(de) 10(a) 379([V.E.])
+</DIV>
+
+<H4>R8303 31 May 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+8(i) 21(e) 74(ne) 19(s) 3(c) 10(a) 18(u) 86(ro) 126(is) 110(en) 46(co) 84(re) 85(ri) 110(en) 68(ma) 15(n) 49(de)
+</DIV>
+
+<H4>R8304 7 June 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+8(i) 10(a) 22(y) 64(le) 18(u) : 10(a) 263 64(le) 224 63(la) 258 17(q) 99(ue) 379([V.E.]) 2(m)<br>
+10(a) 53(fa) 127(it) 13(l) 6(h) 137(on) 74(ne) 18(u) 12(r) 49(de) 2(m) 21(e) 3(c) 85(ri) 84(re) 52(du) (u)16(/u)<br>
+23(et) 52(du) (u)18(/u) 68(ma) 22(y) : 168(-) 120(il) 2(m) 10(a) 78(pa) 87(ru) 46(co) 15(n) 94(te) 15(n) 14(t)
+</DIV>
+<P>*Months (e.g., "may") are not in the code.</P>
+
+<H4>R8305 14 June 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+8(i) 21(e) 46(co) 15(n) 95(ti) 77(nu) 21(e) 83(ra) 22(y) 49(de) 68(ma) 15(n) 49(de) 12(r) 10(a) 379([V.E.])
+</DIV>
+
+<H4>R8306 21 June 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+8(i) 21(e) 15(n) 10(a) 22(y) 82(pu) 110(en) 46(co) 84(re) 84(re) 15(n) 4(d) 84(re) 46(co) 2(m) 5(p) 94(te) 10(a)
+</DIV>
+
+<H4>R8307 28 June 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+350 114(es) 14(t) 90(si) 131(oc) 47(cu) 79(pe) 21(e) ' 49(de) 19(s) 28(af) 53(fa) 8(i) 84(re) 19(s) 49(de) 55(fi) 73(na)<br>
+15(n) 44(ce) 19(s) 49(de) 44(ce) 13(l) 64(le) 19(s) 49(de) 63(la) 216 23(et) 49(de) 44(ce) 13(l) 13(l) 21(e) 19(s)
+</DIV>
+
+<H4>R8308 5 July 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+8(i) 10(a) 18(u) 142(ou) 21(e) 10(a) 379([V.E.]) 17(q) 99(ue) 8(i) 10(a) 22(y) 114(es) 94(te) ' 96(to) 15(n)
+</DIV>
+
+<H4>R8309 12 July 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+8(i) 21(e) 101(vo) 126(is) 90(si) 79(pe) 18(u) 49(de) 56(fo) 15(n) 49(de) 69(me) 15(n) 14(t) 10(a) 18(u) 20(x)<br>
+5(p) 13(l) 10(a) 122(in) 94(te) 19(s) 17(q) 99(ue) 64(le) 289 10(a) 53(fa) 8(i) 94(te) 19(s) 10(a) 379([V.E.]) 92(su) 12(r) 71(mo) 15(n)
+</DIV>
+
+<H4>R8310 19 July 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+8(i) 21(e) 74(ne) 51(do) 18(u) 94(te) 81(po) 122(in) 14(t) 17(q) 99(ue) 379([V.E.]) 15(n) 10(a) 127(it) 114(es) 94(te) '<br>
+56(fo) 12(r) 14(t) 131(oc) 47(cu) 79(pe) 21(e) 79(pe) 15(n) 48(da) 15(n) 14(t) 64(le) 89(se) 8(i) 142(ou) 12(r) 52(du) 324 10(a)
+</DIV>
+
+<H4>R8311 26 July 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+V.Em.<sup>ce</sup> avoit besoin de repos pour sa sant&eacute;<br>
+64(le) 49(de) 78(pa) 12(r) 14(t)  52(du) 324 98(va) : 101(vo) 18(u) 19(s) 51(do) 15(n) 74(ne) 12(r) 52(du) : 94(te)
+</DIV>
+
+<H4>R8312 2 August 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+Je ne scais, Monseigneur, si je seray plus heureux cette fois-cy que l'autre dans le demande que je fais au Pape en faveur du S<sup>r</sup> fran&ccedil;ois Dum&eacute;es, d'un canonicat dest Gevy de Cambray qui vient encore devaquer par la mort du S<sup>r</sup> Estienne Debounaire. Je supplie tres humblement V.Em.<sup>ce</sup> de vouloir bien employer ses amis a ce sujet.<br>
+90(si) 354 46(co) 15(n) 95(ti) 77(nu) 21(e) 10(a) 69(me) 68(ma) 12(r)<br>
+17(q) 99(ue) 12(r) 79(pe) 18(u) 49(de) 46(co) 15(n) 90(si) 49(de) 83(ra) 95(ti) 137(on) 48(da) 15(n) 19(s)
+</DIV>
+
+<H4>R8313 9 August 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+V.Em.<sup>ce</sup> sera inform&eacute;e avant nous de la destination de la flotte d'Espagne <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Spanish_conquest_of_Sardinia">Wikipedia</A>)</span>. ...<br>
+8(i) 21(e) 74(ne) 19(s) 3(c) 10(a) 18(u) 86(ro) 126(is) 3(c) 86(ro) 8(i) 84(re) 17(q) 99(ue) 44(ce) 14(t)<br>
+35(ar) 69(me) 69(me) 15(n) 14(t) 84(re) 58(ga) 12(r) 49(de) 13(l) 254 10(a) 71(mo) 122(in) 19(s) 17(q) 99(ue) 
+</DIV>
+
+<H4>R8314 16 August 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+8(i) 37(at) 94(te) 15(n) 4(d) 19(s) 10(a) 99(ue) 3(c) 121(im) 78(pa) 95(ti) 110(en) 44(ce) 49(de) 19(s) 76(no) 18(u)<br>
+99(ue) 13(l) 64(le) 19(s) 49(de) 13(l) 176 17(q) 99(ue) 379([V.E.]) 10(a) 18(u) 83(ra) 21(e) 18(u) 52(du) 289
+</DIV>
+
+<H4>R8315 23 August 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+J'ay l'honneur d'ecrire a V.Em.<sup>ce</sup> malgr&eacute; l'incommodit&eacute; dont je viens d'estre attaqu&eacute;, de ....
+Je remercie tres humblement V.Em.<sup>ce</sup> de <br>
+44(ce) 17(q) 18(u) 108(el) 64(le) 10(a) 40(bi) 110(en) 18(u) 142(ou) 67(lu) 50(di) 84(re) 10(a) 18(u) 289 48(da) 15(n) 2(m)
+</DIV>
+
+<H4>R8316 30 August 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+Je n'ay pas eu l'honneur d'ecrire a V.E.<sup>ce</sup> le courrier que l'on a depesch&eacute; a Rome apres la mort de M. l'Archevesque de Bezan&ccedil;on pour demander l'Indult de la Franchecomt&eacute; ....<br>
+137(on) 10(a) 33(ap) 5(p) 12(r) 142(ou) 99(ue) ' 64(le) 78(pa) 12(r) 95(ti) 17(q) 99(ue) 379([V.E.]) 10(a) 5(p) 85(ri)
+</DIV>
+
+<H4>R8317 6 September 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+J'ay l'honneur d'ecrire a V.Em.<sup>ce</sup> avant mon d&eacute;part pour la Campagne, et se la supplie de me pardonner si elle ne re&ccedil;oit pas de mes lettres l'ordinaire prochain. J'ay besoin pour ma sant&eacute; de prendre l'air et de faire de l'exercice, je vais profiter pour ce la du peu de beautemps qui reste dans le mois de septembre et dans les premiers jours d'octobre.<br>
+8(i) 21(e) 79(pe) 15(n) 89(se) 24(?) 379 92(su) 12(r) 64(le) 49(de) 78(pa) 12(r) 14(t) 49(de)<br>
+263 64(le) 223 49(de) 63(la) 54(fe) 18(u) 120(il) 63(la) 49(de) 168(-) 8(i) 21(e) 3(c) 86(ro) 126(is)
+</DIV>
+
+<H4>R8318 20 September 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+J'ay trouv&eacute; a mon retour de la Campagne les deux lettres que V.Em.<sup>ce</sup> fait l'honneur de m'ecrire du 24 et du 31 aoust. je me suis senti si soulag&eacute; par l'air que j'y ay respir&eacute; et pr l'exercice que j'y ay fait, que je compte y aller encore passer une quinzaine de jours.<br>
+8(i) 21(e) 92(su) 126(is) 14(t) 84(re) 19(s) 89(se) 15(n) 90(si) 7(b) 64(le) 69(me) 15(n) ~ 14(t) 130(ob) 65(li) 59(ge) '
+</DIV>
+
+<H4>R8319 27 September 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+8(i) 10(a) 22(y) 46(co) 15(n) 54(fe) 84(re) ' 10(a) 99(ue) 3(c) 263 13(l) 173 93(ta) 70(mi) 90(si)<br>
+113(er) 24(?) 379 13(l) 10(a) 49(de) 90(si) 84(re) ' 92(su) 12(r) 63(la) 166(-) 21(e) 17(q) 18(u) 108(el)<br>
+64(le) : 19(s) 114(es) 96(to) 127(it) 5(p) 86(ro) 81(po) 89(se) ' 4(d) 114(es) 14(t) 84(re) 109(em) 5(p) 66(lo) 22(y) 21(e) 21(e)
+</DIV>
+<!--166=null is based on 51(do) 166(-) 162(nn) 21(e) 86(ro) 127(it) in R8223, but does not fit here."equelle"という単語あるか-->
+<!--〓tamisier?〓-->
+
+<H4>R8320 4 October 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+8(i) 10(a) 22(y) 110(en) 94(te) 15(n) 52(du) 63(la) 64(le) 3(c) 97(tu) 84(re) 49(de) 63(la) 258 17(q) 99(ue)
+</DIV>
+
+<H4>R8321 9 October 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+Enfin la Declaration qui avoit est&eacute; derir&eacute;e<!--?--> par M. le Card.<sup>l</sup> de la Tremoille <span class="note">(<A HREF="https://fr.wikipedia.org/wiki/Joseph-Emmanuel_de_La_Tr%C3%A9moille">Wikipedia</A>)</span> et dont le projet avoit est&eacute; communiqu&eacute; a V.Em.<sup>ce</sup> vient de paroistre....<br>
+</DIV>
+
+<H4>R8322 18 October 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+J'arrivay hier au soir de la Campagne assez a temps pour avoir l'honneur d'ecrire a V.Em.<sup>ce</sup> par l'ordinaire. Je luy suis infinim<sup>t</sup> oblig&eacute; de l'attention qu'elle donne tousjours a mes affaires.<br>
+90(si) 63(la) 71(mo) 12(r) 14(t) 52(du) 193 68(ma) 12(r) 94(te) 13(l) 65(li) <span class="note">(<A HREF="https://fr.wikipedia.org/wiki/Francesco_Martelli">Wikipedia</A>)</span><br>
+110(en) 58(ga) 59(ge) 64(le) 289 10(a) 49(de) 3(c) 63(la) 84(re) 12(r) 263 64(le) 169 49(de) 41(bo) 18(u)<br>
+12(r) 59(ge) 19(s) 193 8(i) 10(a) 22(y) 65(li) 21(e) 18(u) 49(de) 3(c) 86(ro) 8(i) 84(re) 17(q) 99(ue) 379 110(en)
+</DIV>
+<P>*193 may be "Cardinal." (But 351 is also "Cardinal.")</P>
+
+<H4>R8323 25 October 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+J'ay l'honneur de prevenir V.Em.<sup>ce</sup> que je pourray bien aller passer les festes de la Toussaint a Nantevil, si mon frere qui a est&eacute; incommod&eacute; depuis quelques jours, se porte mieux. Ce sera l&egrave; mon dernier voyage a la Campagne. je m'en suis si bien trouv&eacute; que V.Em.<sup>ce</sup> me doit pardonner des absences necessaires pour conserver un bien aussy pretieux que la sant&eacute;.<br>
+8(i) 10(a) 22(y) 70(mi) 21(e) 18(u) 20(x) 46(co) 15(n) 77(nu) 17(q) 99(ue) 8(i) 10(a) 68(ma) 126(is) 10(a) 15(n)<br>
+</DIV>
+
+<H4>R8324 8 November 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+263 13(l) 173 221 114(es) 14(t) 110(en) 55(fi) 15(n) 84(re) 99(ue) 77(nu) 110(en)<br>
+41(bo) 15(n) 74(ne) 88(sa) 15(n) 94(te) ' 168(-) 8(i) 21(e) 92(su) 126(is) 83(ra) 100(vi) 49(de) 91(so) 15(n)<br>
+84(re) 96(to) 18(u) 12(r) 82(pu) 126(is) 17(q) 18(u) 120(il) 10(a) 110(en) 46(co) 84(re) 46(co) 15(n) 14(t)
+</DIV>
+
+<H4>R8325 15 November 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+Je n'ay receu aucunes nouvelles de V.Em.<sup>ce</sup> par le retour de courrier extraordinaire....<br>
+17(q) 18(u) 108(el) 17(q) 99(ue) 19(s) 7(b) 12(r) 142(ou) 120(il) 64(le) 85(ri) 21(e) 19(s) 17(q) 18(u) 120(il) 22(y) 
+</DIV>
+
+<H4>R8326 22 November 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+Je fais mes tres humbles remercimens a V.Em. de la lettre qu'elle m'a faict l'honneur de m'ecrire d'Urbin; ....<br>
+95(ti) 69(me) 15(n) 14(t) 66(lo) 12(r) 19(s) 17(q) 18(u) 120(il) 19(s) 3(c) 86(ro) 8(i) 86(ro) 15(n) 14(t) 81(po) 18(u)
+</DIV>
+
+<H4>R8327 29 November 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+44(ce) 17(q) 99(ue) 263 64(le) 196 15(n) 10(a) 78(pa) 19(s) 46(co) 15(n) 55(fi) 21(e) ' 10(a) 379
+</DIV>
+
+<H4>R8328 6 December 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+Nous attendons dimanche prochain 12<sup>e</sup> de ce mois M. le Card.<sup>l</sup> de Rohan qui a est&eacute; mand&eacute; par S.A.R.<br>
+8(i) 21(e) 15(n) 10(a) 22(y) 78(pa) 19(s) 77(nu) 22(y) 10(a) 18(u) 78(pa) 12(r) 95(ti) 17(q) 18(u) 137(on) 10(a) 5(p) 85(ri) 19(s)
+</DIV>
+
+<H4>R8329 13 December 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+8(i) 10(a) 22(y) 84(re) 44(ce) 18(u) 63(la) 258 17(q) 99(ue) 379 2(m) 10(a) 53(fa) 127(it)<br>
+13(l) 6(h) 137(on) 74(ne) 18(u) 12(r) 49(de) 2(m) 21(e) 3(c) 85(ri) 84(re) 52(du) (u)23(/u) 76(no) 99(ue) 2(m) 7(b) 84(re)
+</DIV>
+
+<H4>R8330 20 December 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+M. le Card.<sup>l</sup> de Rohan arriva icy mardy dernier. ....<br>
+8(i) 21(e) 74(ne) 19(s) 3(c) 10(a) 18(u) 86(ro) 126(is) 17(q) 99(ue) 68(ma) 15(n) 49(de) 12(r) 52(du) 40(bi) 110(en)
+</DIV>
+
+<H4>R8331 27 December 1717</H4>
+<DIV class="kakomi2" style="width: auto">
+Quoyque j'aye est&eacute; fort incommod&eacute; aujourdhuy de vomissemens, je ne laisseray pas d'avoir l'honneur d'ecrire a V.Em.<sup>ce</sup> et de la remercier de l'attention qu'elle donne a ce qui me regarde.<br>
+137(on) 74(ne) 19(s) 3(c) 10(a) 18(u) 86(ro) 127(it) 85(ri) 110(en) 53(fa) 8(i) 84(re) 24(?) 8(i) 21(e) 13(l)<br>
+10(a) 22(y) 68(ma) 15(n) 49(de) ' 5(p) 67(lu) 90(si) 21(e) 18(u) 12(r) 19(s) 56(fo) 126(is) 10(a) 379 17(q) 99(ue)
+</DIV>
+
+<H4>R8332 3 January 1718</H4>
+<DIV class="kakomi2" style="width: auto">
+J'ay receu la lettre dont V.Em.<sup>ce</sup> m'a honor&eacute; du 14 x<sup>bre</sup><br>
+8(i) 21(e) 3(c) 86(ro) 126(is) 17(q) 99(ue) 64(le) 19(s) 114(es) 79(pe) 83(ra) 15(n) 44(ce)<br>
+19(s) 49(de) 263 64(le) 196 81(po) 152(ur) 63(la) 46(co) 15(n) 3(c) 67(lu) 90(si) 137(on) 49(de) 19(s) 28(af)<br>
+53(fa) 8(i) 84(re) 19(s) 49(de) 63(la) 216 74(ne) 91(so) 15(n) 14(t) 78(pa) 19(s) 90(si) 68(ma) 13(l) 56(fo) 15(n) 49(de)
+</DIV>
+
+<H4>R8333 10 January 1718</H4>
+<DIV class="kakomi2" style="width: auto">
+120(il) 69(me) 89(se) 2(m) 7(b) 64(le) 17(q) 99(ue) 64(le) 289 23(et) 263 64(le) 196 49(de) 18(u)
+</DIV>
+
+<H4>R8334 17 January 1718</H4>
+<DIV class="kakomi2" style="width: auto">
+J'ay receu la lettre dont V.Em.<sup>ce</sup> m'a honor&eacute; du 28 Decembre.<br>
+8(i) 21(e) 46(co) 2(m) 69(me) 15(n) 44(ce) 83(ra) 22(y) <sup>5(p)</sup> 10(a) <sup>12(r)</sup> 67(lu) 22(y) 53(fa) 8(i) 84(re) 69(me) 19(s) 14(t)<br>
+84(re) 19(s) 6(h) 149(um) 7(b) 64(le) 19(s) 84(re) 69(me) 12(r) 45(ci) 69(me) 15(n) 19(s) 49(de) 63(la) 46(co) 15(n) 95(ti)
+</DIV>
+<P>*Superscripts are not meant as such. They seem to be merely insertions.</P>
+
+<H4>R8335 24 January 1718</H4>
+<DIV class="kakomi2" style="width: auto">
+Je crois que V.Em.<sup>ce</sup>apprendra bientost le changement qui doit se faire dans les conseils<br>
+120(il) 22(y) 10(a) 5(p) 67(lu) 19(s) 49(de) (u)6(/u) 89(se) 68(ma) 8(i) 74(ne) 19(s) 17(q) 99(ue) 64(le)
+</DIV>
+
+<H4>R8336 31 January 1718</H4>
+<DIV class="kakomi2" style="width: auto">
+8(i) 21(e) 46(co) 2(m) 69(me) 15(n) 44(ce) 83(ra) 22(y) 68(ma) 258 78(pa) 12(r) 150(un) 21(e) 99(ue) 74(ne)<br>
+69(me) 15(n) 14(t) 90(si) 15(n) 62(gu) 65(li) 113(er) 168(-) 99(ue) 15(n) 4(d) 84(re) 50(di) 68(ma) 95(ti) 15(n)
+</DIV>
+
+<H4>R8337 7 February 1718</H4>
+<DIV class="kakomi2" style="width: auto">
+49(de) 82(pu) 126(is) 63(la) 49(de) 12(r) 75(ni) 21(e) 84(re) 258 17(q) 99(ue) 8(i) 10(a) 22(y)<br>
+21(e) 18(u) 13(l) 6(h) 137(on) 74(ne) 18(u) 12(r) 4(d) 21(e) 3(c) 85(ri) 84(re) 10(a) 379 263 64(le) 224
+</DIV>
+
+<H4>R8338 14 February 1718</H4>
+<DIV class="kakomi2" style="width: auto">
+Il m'est rest&eacute;, Monseigneur, une si grande foible ne<!--?〓--> de ma dernier incommodit&eacute;s, ....<br>
+...<br>
+... J'en feray part a S.A.R. et je chercheray dans mon esprit<br>
+10(a) : 22(y) 51(do) 15(n) 74(ne) 12(r) 150(un) 96(to) 18(u) 12(r) 17(q) 100(vi) 82(pu) 126(is) 89(se) 122(in)<br>
+94(te) 84(re) 19(s) 89(se) 12(r) 64(le) 61(go) 18(u) 99(ue) 12(r) 74(ne) 69(me) 15(n) 14(t) 10(a) 63(la) 53(fa) 8(i)<br>
+84(re) 84(re) 18(u) 19(s) 90(si) 12(r)
+</DIV>
+
+<H4>R8339 28 February 1718</H4>
+<DIV class="kakomi2" style="width: auto">
+...<br>
+14(t) 12(r) 10(a) 3(c) 10(a) 19(s) 19(s) 21(e) 12(r) 8(i) 21(e) 19(s) 8(i) 21(e) 18(u) 1(o) 18(u) 19(s)<br>
+5(p) 12(r) 8(i) 21(e) 4(d) 21(e) 15(n) 21(e) 18(u) 18(u) 8(i) 21(e) 15(n) 12(r) 8(i) 21(e) 15(n)<br>
+21(e) 19(s) 3(c) 12(r) 8(i) 12(r) 21(e) 21(e) 14(t) 4(d) 21(e) 2(m) 21(e) 9(g) 10(a) 12(r) 4(d) 21(e) 12(r)<br>
+19(s) 18(u) 12(r) 3(c) 21(e) 13(l) 10(a) 18(u) 15(n) 19(s) 21(e) 3(c) 12(r) 21(e) 14(t) 8(i) 15(n)<br>
+18(u) 8(i) 1(o) 13(l) 10(a) 7(b) 13(l) 21(e)<br>
+13(l) 21(e) 4(d) 18(u) 3(c) 4(d) 10(a) 13(l) 7(b) 21(e) <span class="note">(?<A HREF="https://es.wikipedia.org/wiki/Francisco_%C3%81lvarez_de_Toledo_y_Silva">Wikipedia</A>)</span> 10(a) 18(u) 12(r) 10(a) 18(u) 15(n) 21(e)<br>
+21(e) 15(n) 14(t) 8(i) 21(e) 12(r) 21(e) 3(c) 1(o) 15(n) 11(f) 8(i) 10(a) 15(n) 3(c) 21(e)<br>
+21(e) 15(n) 18(u) 21(e) 21(e) 14(t) 19(s) 21(e) 3(c) 1(o) 15(n) 4(d) 18(u) 8(i) 12(r) 10(a)<br>
+5(p) 10(a) 12(r) 18(u) 1(o) 19(s) 3(c) 1(o) 15(n) 19(s) 21(e) 13(l) 19(s)
+</DIV>
+<P>*monoalphabetic again</P>
+
+<A NAME="SEC2"></A>
+<H2>Correspondence with F. L. de la Cerda and N. De Cordova, Duke of Medina Celi, 1706-1725</H2>
+<P><b>Add MS 20563</b> (DECODE R8166-R8218) is "Papers of Cardinale F. A. Gualterio" including "Correspondence with F. L. de la Cerda and N. De Cordova, Duke of Medina Celi, 1706-1725." <i>Catalogue of the Manuscripts in the Spanish Language in the British Museum</i>, vol.4 (<A HREF="https://www.gutenberg.org/files/52230/52230-h/52230-h.htm">Gutenberg</A>, <A HREF="https://archive.org/details/catalogueofmanu00brituoft/page/208/mode/2up?q=cipher">Internet Archive</A>) describes the volume as follows.</P>
+
+<blockquote style="width: 500pt;">
+Papers of Card. Gualterio: Letters from F. L. de La Cerda <span class="note">(?9th Duke of Medinaceli, who died in 1711? <A HREF="https://en.wikipedia.org/wiki/Luis_Francisco_de_la_Cerda,_9th_Duke_of_Medinaceli">Wikipedia</A>)</span> and Dn. Nicolas de Cordova y de la Zerda <span class="note">(?10th Duke of Medinaceli? <A HREF="https://en.wikipedia.org/wiki/Nicol%C3%A1s_Fern%C3%A1ndez_de_C%C3%B3rdoba,_10th_Duke_of_Medinaceli">Wikipedia</A>)</span>, 1706-25. Those by the former are mostly in cipher, with decipherings in the hand of the Cardinal’s secretary, and range between the 2nd of July 1706 and the 14th of April 1710. At fol. 248 begin the original drafts of the Cardinal’s Italian letters to the Duke [of Medina Celi] between the 8th of February and April 1710, including one to the Marquis Rinucini and another to Signor Barone del Nero, “inviato de S. A. R. di Toscana, in Madrid.” The rest of the volume (ff. 284-306) contains principally letters of Don Nicolas de Cordoba y de la Zerda (sic), tenth duke of Medina Celi, from the 24th of June 1715 to the 25th of August 1725. At fol. 307 is also the draft of an Italian letter, addressed by Cardinal Gualterio to the Duke of Veraguas and to the Count of Aguilar conjointly (Rome, 2 Feb. 1717), and of another to the Duke only (Rome, 27 Apr. 1717).
+</blockquote>
+<P>It appears the cipher with D'Estr&eacute;es was also used by these channels, though these letters are in Italian. (Hence, I called the cipher Gualterio's rather than D'Estr&eacute;es'.)</P>
+<P>The code symbols in these letters (as far as seen below) are not used in D'Est&eacute;es' correspondence quoted above and may be dedicated to the Medinaceli channels.</P>
+
+<H4>R8166, Medinaceli, 3 July 1706 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+21(e) 19(s) 19(s) 1(o) 19(s) 21(e) 10(a) 3(c) 10(a) 18(u) 1(o) , 579 19(s) 10(a) 18(u) 21(e) , 10(a) 21(e) 13(l) 1(o) ,
+</DIV>
+
+<H4>R8167, Morales, 6 July 1706 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+21(e) 12(r) 21(e) 3(c) 21(e) 3(c) 8(i) 4(d) 1(o) 13(l) 10(a) 3(c) 8(i) 11(f) 12(r) 10(a)
+4(d) 21(e) , 589 , 8(i) 589 , 5(p) 18(u) 21(e) 4(d) 21(e) 3(c) 1(o) 15(n) 19(s) 8(i)
+</DIV>
+<P>*589 seems to be V.E. from the decipherment. On the other hand, in the correspondence of D'Est&eacute;es, my reading for 379 is V.E.</P>
+
+<H4>R8168, Medinaceli (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+19(s) 8(i) , 3(c) 1(o) 2(m) 1(o) , 15(n) 1(o) 19(s) , 6(h) 10(a) 16(z) 21(e) 15(n) , 21(e) 19(s) 5(p) 21(e) 12(r) 10(a) 12(r) ,
+</DIV>
+
+<H4>R8169, Medinaceli, 11 August 1706</H4>
+<DIV class="kakomi2" style="width: auto">
+19(s) 21(e) 9(g) 18(u) 15(n) , 13(l) 10(a) , 5(p) 1(o) 19(s) 8(i) 14(t) 18(u) 12(r) 10(a) , 5(p) 12(r) 21(e) 19(s) 21(e) 15(n) 14(t) 21(e) ,
+</DIV>
+
+<H4>R8170, Medinaceli, 18 August 1706</H4>
+<DIV class="kakomi2" style="width: auto">
+15(n) 1(o) , 1(o) 19(s) 14(t) 10(a) 15(n) 14?(t?) 21(e) , 13(l) 1(o) ? 21(e) 15(n) , 13(l) 10(a) , 10(a) 12(r) 14?(t?) 10(a) , 21(e) 15(n) ,
+</DIV>
+
+<H4>R8171, Medinaceli, 10 September 1706 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+3(c) 1(o) 2(m) 1(o) , 4(d) 8(i) 9(g) 1(o) , 21(e) 15(n) , 3(c) 13(l) 10(a) 12(r) 1(o) , y 10(a) 17(q) 18(u) 8(i) , 12(r) 21(e)
+</DIV>
+<P>*"y" is in the clear.</P>
+
+<H4>R8172, Medinaceli, 14 March 1707 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+13(l) 10(a) , 18(u) 21(e) 15(n) 8(i) 4(d) 10(a) , 4(d) 21(e) 13(l) , 19(s) 4(d) 15(n) 1(o) 12(r) , 4(d) 18(u) 3(c) 10(a) , 4(d) 21(e) , 1(o) 12(r) 13(l) 21(e)
+</DIV>
+
+<H4>R8173, Medinaceli, 7 November 1707 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+21(e) 2(m) 8(i) , 15(n) 21(e) 15(n) 14(t) 8(i) 19(s) 8(i) 2(m) 1(o) , 2(m) 8(i) 1(o) , So(-) 19(s) 18(u) 19(s) , 3(c) 1(o) 19(s) 10(a) 19(s) ,
+</DIV>
+<P>*"So" or "50"(?) is a null.</P>
+
+<H4>R8174, Medinaceli, 6 February 1708 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+15(n) 1(o) , 19(s) 10(a) 18(u) 10(a) ? 4(d) 21(e) 16(z) 8(i) 12(r) 10(a) 589(VE) ? 15(n) 1(o) 5(p) 10(a) 12(r)
+</DIV>
+<P>*? seems to be a shorthand in clear.</P>
+
+<H4>R8175, Medinaceli, 20 February 1708 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+4(d) 21(e) 18(u) 8(i) 10(a) 9(g) 21(e) , 4(d) 21(e) 13(l) 561(Rey) 10(a) 455(Campagna) 15(n) 1(o) , 19(s) 21(e) , 6(h) 10(a) 7(b) 13(l) 10(a) ,
+</DIV>
+<P>*561=Rey, 455=Campagna.</P>
+
+<H4>R8176, 27 February 1708 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+19(s) 8(i) 9(g) 18(u) 8(i) 21(e) 15(n) 4(d) 1(o) , 21(e) 13(l) , 19(s) 21(e) 15(n) 14(t) 8(i) 12(r) , 4(d) 21(e) 589(VE),
+</DIV>
+
+<H4>R8177, 5 March 1708 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+3(c) 1(o) 2(m) 1(o) , 12(r) 21(e) 3(c) 1(o) 15(n) 1(o) 16(z) 21(e) , 21(e) 15(n) , 21(e) 13(l) 5(p) 10(a) 5(p) 21(e) 13(l) , 4(d) 21(e) 589(VE) ,
+</DIV>
+
+<H4>R8178, 19 March 1708 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+15(n) 1(o) , 14(t) 21(e) 15(n) 9(g) 1(o) , 5(p) 10(a) 5(p) 21(e) 13(l) , 4(d) 21(e) , 589 , 5(p) 21(e) 12(r) 1(o) , 11(f) 1(o) 12(r) 2(m) 1(o) ,
+</DIV>
+
+<H4>R8179, Medinaceli, 26 March 1708 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+14(t) 21(e) 15(n) 9(g) 1(o) , 514(lettera) , 4(d) 21(e) , 507(Italia) , 21(e) 15(n) , * 2(m) 21(e) , 4(d) 8(i) 3(c) 21(e) 15(n) , 6(h) 10(a) 18(u)
+</DIV>
+<P>*514=lettera, 507=Italia</P>
+
+<H4>R8180, 2 April 1708 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+10(a) 13(l) , 11(f) 8(i) 15(n) , 5(p) 1(o) 12(r) , 21(e) 13(l) , 5(p) 10(a) 5(p) 21(e) 13(l) , 4(d) 21(e) , 20- 4(d) 21(e) , 11(f) 21(e) 7(b)
+12(r) 21(e) 12(r) 1(o) ,
+</DIV>
+<P>*The bar after "20" indicates the number itself.</P>
+
+<H4>R8181, Medinaceli, 9 April 1708 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+15(n) 1(o) , 14(t) 21(e) 15(n) 9(g) 1(o) , 5(p) 10(a) 5(p) 21(e) 13(l) , 4(d) 21(e) , 589(VE) &agrave;? 12(r) 21(e) 19(s) 5(p) 1(o)
+</DIV>
+<P>*&agrave;? seems to be a shorthand in clear.</P>
+
+<H4>R8182, Medinaceli, 23 April 1708 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+2(m) 21(e) , 5(p) 1(o) 15(n) 9(g) 1(o) , 10(a) 11(f) 1(o) 12(r) 2(m) 10(a) 12(r) , 21(e) 19(s) 14(t) 21(e) , 5(p) 10(a) 5(p) 21(e) 13(l) ,
+</DIV>
+
+<H4>R8183, Medinaceli, 7 May 1708 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+19(s) 21(e) 9(g) 18(u) 15(n) , 15(n) 18(u) 21(e) 19(s) 14(t) 12(r) 1(o) , 10(a) 3(c) 18(u) 21(e) 12(r) 4(d) 1(o) , 12(r) 21(e) 19(s)
+</DIV>
+
+<H4>R8184, 14 May 1708 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+15(n) 1(o) , 14(t) 21(e) 15(n) 9(g) 1(o) , 5(p) 10(a) 5(p) 21(e) 13(l) 4(d) 21(e) 589(VE) 10(a) Si 12(r) 21(e) 19(s) 5(p) 1(o) 15(n) 4(d)
+</DIV>
+<P>*"Si" seems to be in clear.</P>
+
+<H4>R8185, Medinaceli, Madrid, 21 May 1708 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+3(c) 10(a) 12(r) 14(t) 10(a) 21(e) 15(n) 3(c) 13(l) 10(a) 12(r) 1(o) , 4(d) 21(e) , 19(s) 8(i) 21(e) 14(t) 21(e) , 4(d) 21(e) 13(l) ,
+</DIV>
+
+<H4>R8186, Medinaceli, 11 June 1708 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+3(c) 1(o) 2(m) 1(o) , 6(h) 10(a) , 14(t) 10(a) 15(n) 14(t) 1(o) , Si 15(n) 8(i) , 4(d) 8(i) 19(s) 3(c) 18(u) 12(r) 12(r) 1(o) , 15(n) 8(i) ,
+</DIV>
+<P>*"Si" seems to be in clear.</P>
+
+<H4>R8187, Medinaceli, 25 June 1708 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+15(n) 1(o) , 14(t) 21(e) 15(n) 9(g) 1(o) , 5(p) 10(a) 5(p) 21(e) 13(l) 4(d) 21(e) , 589(VE) &agrave; Si 12(r) 21(e) 19(s) 5(p) 1(o)
+</DIV>
+<P>*"Si" seems to be in clear.</P>
+
+<H4>R8188, Medinaceli, 9 July 1708 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+3(c) 1(o) 15(n) , 500(grande) , 19(s) 21(e) 15(n) 14(t) 8(i) 2(m) 8(i) 21(e) 15(n) 14(t) 1(o) , 2(m) 8(i) 1(o) , 10(a) 3(c) 18(u) 19(s) 1(o) , 10(a)
+</DIV>
+<P>*500=grande.</P>
+
+<H4>R8189, Medinaceli, Madrid, 23 July 1708 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+2(m) 21(e) 6(h) 10(a) 13(l) 13(l) 1(o) , 19(s) 8(i) 15(n) , 514(lettra) 4(d) 21(e) , 589(VE) 19(s) 21(e) 2(m) 10(a) 15(n) 10(a) 19(s) , 6(h) 10(a) ,
+</DIV>
+
+<H4>R8190, Medinaceli, 20 August 1708 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+3(c) 1(o) 2(m) 1(o) , 589(VE) 6(h) 10(a) 18(u) 12(r) 10(a) , 18(u) 8(i) 19(s) 14(t) 1(o) , 5(p) 1(o) 12(r) , 2(m) 8(i) 19(s) , 10(a) 15(n) 14(t) 21(e) 3(c) 21(e)
+</DIV>
+
+<H4>R8191, Medinaceli, Madrid, 27 August 1708 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+4(d) 21(e) , 4(d) 8(i) 21(e) 16(z) , 8(i) 19(s) 21(e) 8(i) 19(s) , 4(d) 21(e) 13(l) , 5(p) 10(a) 19(s) 10(a) 4(d) 1(o) , 21(e) 19(s) , 21(e) 13(l) ,
+</DIV>
+
+<H4>R8192, Medinaceli, 10 September 1708 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+21(e) 13(l) , 2(m) 10(a) 12(r) 17(q) 18(u) 21(e) 19(s) , 12(r) 8(i) 15(n) 18(u) 3(c) 8(i) 15(n) 8(i) , 2(m) 21(e) , diso 21(e) 13(l)
+</DIV>
+<P>*"diso" is in clear.</P>
+
+<H4>R8193 17 September 1708 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+4(d) 21(e) , 19(s) 21(e) 8(i) 19(s) , 4(d) 21(e) 13(l) , 5(p) 10(a) 19(s) 10(a) 4(d) 1(o) , 21(e) 19(s) , 21(e) 13(l) , 5(p) 10(a) 5(p) 21(e) 13(l) , 3(c) 1(o) 15(n) ,
+</DIV>
+
+<H4>R8194, Medinaceli, 1[?] October 1708 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+4(d) 21(e) 14(t) 12(r) 21(e) 16(z) 21(e) , 4(d) 21(e) 13(l) 5(p) 10(a) 19(s) 10(a) 4(d) 1(o) , 21(e) 19(s) , 21(e) 13(l) , 5(p) 10(a) 5(p) 21(e) 13(l) ,
+</DIV>
+
+<H4>R8195, Medinaceli, 15 October 1708 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+10(a) 3(c) 18(u) 19(s) 1(o) , 10(a) 589(VE) 19(s) 18(u) , 5(p) 10(a) 5(p) 21(e) 13(l) , 4(d) 21(e) 18(u) 21(e) 8(i) 15(n) 14(t) 21(e) , 4(d) 21(e) 13(l) ,
+</DIV>
+
+<H4>R8196, 29 October 1708 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+19(s) 1(o) 15(n) , 14(t) 12(r) 21(e) 19(s) , 19(s) 21(e) 2(m) 10(a) 15(n) 10(a) 19(s) , Si quiere 4(d) 21(e) 16(z) 8(i) 12(r) ,
+</DIV>
+
+<H4>R8197, 5 November 1708 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+21(e) 13(l) 459(Correro[?]) , 5(p) 10(a) 19(s) 10(a) 4(d) 1(o) 10(a) 18(u) 15(n) , Si 19(s) 8(i) 15(n) , 514(letteras) 4(d) 21(e) , 589(VE) , 13(l) 21(e) ,</DIV>
+<P>*459=Correro[?], 514=letteras</P>
+
+<H4>R8198, Medinaceli, 19 November 1708 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+8(i) 10(a) , 19(s) 1(o) 15(n) , 4(d) 1(o) 19(s) , 459(Correro) 19(s) , ? 15(n) 1(o) , 14(t) 21(e) 15(n) 9(g) 1(o) , 514(letteras) 4(d) 21(e) , 589(VE) So ,
+</DIV>
+
+<H4>R8199, Medinaceli, 10 December 1708 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+8(i) 1(o) , 15(n) 1(o) , 19(s) 21(e) , 3(c) 1(o) 2(m) 1(o) , 6(h) 10(a) 16(z) 21(e) 12(r) , 5(p) 10(a) 12(r) 10(a) , 19(s) 10(a)  18(u) 21(e) 12(r) ,
+</DIV>
+
+<H4>R8200, Medinaceli, 17 December 1708 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+10(a) 3(c) 18(u) 19(s) 1(o) , 10(a) 589(VE) , 18(u) 15(n) , 5(p) 10(a) 5(p) 21(e) 13(l) , 19(s) 18(u) 8(i) 1(o) , 4(d) 21(e) , 5(p) 12(r) 8(i)
+</DIV>
+
+<H4>R8201, Medinaceli, 7 January 1709 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+15(n) 1(o) , 5(p) 18(u) 21(e) 4(d) 21(e) , 2(m) 8(i) , 10(a) 2(m) 8(i) 19(s) 14(t) 10(a) 4(d) , 10(a) 18(u) 15(n) , Si 19(s) 8(i) 15(n) , 514(lettera)
+</DIV>
+
+<H4>R8202, Medinaceli, 18 March 1709 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+4(d) 21(e) , 4(d) 8(i) 21(e) 16(z) y 15(n) 18(u) 21(e) 18(u) 21(e) 4(d) 21(e) , 6(h) 21(e) 15(n) 21(e) 12(r) 1(o) , 21(e) 19(s) , 18(u) 15(n) , 5(p) 10(a) 5(p)
+</DIV>
+
+<H4>R8203, Medinaceli, Madrid, 1 April 1709 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+I 18(u) 15(n) 14(t) 1(o) 19(s) , 12(r) 21(e) 3(c) 8(i) 18(u) 1(o) , 14(t) 12(r) 21(e) 19(s) , 5(p) 10(a) 5(p) 21(e) 13(l) 21(e) 19(s) 4(d) 21(e) ,
+</DIV>
+
+<H4>R8204, Medinaceli, Madrid, 15 April 1709 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+...de nuestra amistad
+5(p) 18(u) 21(e) 19(s) , 15(n) 1(o) , 19(s) 1(o) 13(l) 10(a) 2(m) 21(e)
+</DIV>
+
+<H4>R8205, Madrid, 6 May 1709 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+... reduze &agrave; 50 13(l) 10(a) 19(s) , 3(c) 1(o) 19(s) 10(a) 19(s) 4(d) 21(e) , 570(Roma?) , 15(n) 1(o) , 3(c) 1(o) 15(n) 3(c) 13(l) 18(u) 8(i) 4(d) 10(a) 19(s) ,
+</DIV>
+<P>*"50" seems to be a null.</P>
+
+<H4>R8206, Medinaceli, Madrid, 20 May 1709 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+....<br>
+ha impreso 19614 , 19(s) 21(e) , 2(m) 10(a) 15(n) 14(t) 18(u) 7(b) 1(o) , 10(a) 13(l) 21(e)
+</DIV>
+<P>*"19614" seems to be a null.</P>
+
+<H4>R8207, Medinaceli, 10 June 1709 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+589(VE) , 2(m) 21(e) 14(t) 8(i) 21(e) 15(n) 21(e) , 2(m) 18(u) 8(i) , 1(o) 13(l) 18(u) 8(i) 4(d) 10(a) 4(d) 1(o) , y 2(m) 8(i) 19(s) ,
+</DIV>
+
+<H4>R8208, medinaceli, Madrid, 24 June 1709 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+... el correo pasado 5(p) 1(o) 12(r) , 2(m) 21(e) 4(d) 8(i) 1(o) , 4(d) 21(e) 13(l) , 7(b) 10(a) 12(r) 1(o) 15(n) , 4(d) 21(e) 13(l) , 15(n) 21(e) 12(r) 1(o) ,
+</DIV>
+
+<H4>R8209 Medinaceli, Madrid, 8 July 1709 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+... de VEm, Si 14(t) 1(o) 4(d) 1(o) , 21(e) 19(s) , 15(n) 21(e) 3(c) 21(e) 19(s)
+</DIV>
+
+<H4>R8210, Medinaceli, Madrid, 12 August 1709 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+... emperando por 13(l) 10(a) 19(s) , 3(c) 1(o) 19(s) 10(a) 19(s) , 4(d) 21(e) , 10(a) 3(c) 10(a) ,
+</DIV>
+
+<H4>R8211, Medinaceli, Madrid, 9 September 1709 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+... de Vem, y seria duplicarnos &agrave; ambos
+15(n) 18(u) 21(e) 19(s) 14(t) 12(r) 1(o) , 4(d) 1(o) 13(l) 1(o) 12(r) ,
+</DIV>
+
+<H4>R8212, Medinaceli, Madrid, 7 October 1709 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+... decir &agrave; VEm Si 
+50(-) 21(e) 13(l) 561(Rey) , 8(i) 10(a) 18(u) 15(n) Si lle&ograve; , 18(u) 8(i) 1(o) , 8(i) 15(n) 1(o) , 18(u) 21(e) 15(n) 16(z) 8(i) 1(o) , 3(c) 1(o) 2(m) 1(o) ,
+</DIV>
+<P>*50 seems to be a null.</P>
+
+<H4>R8213, Medinaceli, Madrid, 18 September 1709 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+... correspondiente &agrave; 19(s) 18(u) , 10(a) 14(t) 21(e) 15(n) 16(z) 8(i) 1(o) 15(n) , 10(a) 13(l) 10(a) 19(s)
+</DIV>
+
+<H4>R8214, Medinaceli, 9 October 1709 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+... bien si[?] a prender 5(p) 18(u) 21(e) 19(s) , 19(s) 21(e) , 18(u) 21(e)
+</DIV>
+
+<H4>R8215, Medinaceli, Madrid, 3 February 1710 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+... principal 2(m) 21(e) 2(m) 1(o) 12(r)
+14(t) 8(i) 11(f) 8(i) 3(c) 10(a) 15(n) , 8(i) 15(n) 11(f) 8(i) 15(n) 8(i) 14(t) 1(o) , 5(p) 18(u) 21(e) 19(s) , 6(h) 10(a) 13(l) 13(l) 1(o) , 21(e) 15(n)
+</DIV>
+
+<H4>R8216, Madrid, 24 February 1710 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+... Roma 8(i) 19(s) 18(u) , 12(r) 21(e)<br>
+19(s) 1(o) 13(l) 18(u) 16(z) 8(i) 1(o) 15(n) , 4(d) 21(e) , 14(t) 1(o) 2(m) 10(a) 12(r) , 13(l) 10(a) , 5(p) 12(r) 1(o) 14(t) 21(e) 16(z) 8(i) 1(o) 15(n) ,</DIV>
+
+<H4>R8217, Medinaceli, Madrid, 31 March 1710 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+... Intereses de 
+2(m) 8(i) , 19(s) 21(e) 15(n) 1(o) 12(r) 10(a) , 13(l) 10(a) , 5(p) 12(r) 8(i) 15(n) 3(c) 21(e) 19(s) 10(a)
+</DIV>
+
+<H4>R8218, Medinaceli, 14 April 1710 (deciphered)</H4>
+<DIV class="kakomi2" style="width: auto">
+Acuso a V Em el reciuo de dos papeles suyos de
+1<sup>o</sup> y 8 del pasado en que 2(m) 21(e) 21(e) 19(s) 5(p) 12(r) 21(e) 19(s) 10(a) 15(n) 1(o)<br>
+2(m) 21(e) 15(n) 1(o) 19(s) 19(s) 18(u) 10(a) 11(f) * 21(e) 15(n) 16(z) 8(i) 1(o) 15(n) 10(a) 21(e) 19(s) 10(a) 10(a) 3(c) 1(o) 12(r) 1(o)
+</DIV>
+
+<A NAME="SEC3"></A>
+<H2>Gualterio-Torcy Cipher (1718)</H2>
+<P>Gualterio's letter in Italian to the French Foreign Minister Torcy, dated Rome, 19 April 1718, in cipher with interlinear decipherment, allows reconstruction of the code. The following is based on the analysis (including alignment of ciphertext and decipherment as well as the outline of the content) kindly provided by Alexandre Pillon.</P>
+<img src="gualterio2.png" width="800" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;">
+<P>The letter concerns Rakoczi <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Francis_II_R%C3%A1k%C3%B3czi">Wikipedia</A>)</span>. Supported by the French, he led the Hugarian rebels against the Hapsburgs during the War of the Spanish succession. After the change of regime in France upon the death of Louis XIV, he went to the Ottoman Empire in 1717, but the latter signed the Peace of Passarowitz with Austria in July 1718.</P>
+<P>The letter informs Torcy of a move, purportedly instructed by Torcy himself, to negotiate with Venice to help Rakoczi and asks for instructions.</P>
+
+
+
+<H2>References</H2>
+<H3>DECODE</H3>
+<P>H&eacute;der, M ; Megyesi, B. The DECODE Database of Historical Ciphers and Keys: Version 2. In: Dahlke, C; Megyesi, B (eds.) Proceedings of the 5th International Conference on Historical Cryptology HistoCrypt 2022. Linkoping, Sweden : LiU E-Press (2022) pp. 111-114. , 4 p. [<A HREF="https://eprints.sztaki.hu/10338/1/Heder_111_32898863_ny.pdf">pdf</A>]</P>
+<P>Megyesi Be&aacute;ta, Esslinger Bernhard, Forn&eacute;s Alicia, Kopal Nils, L&aacute;ng Benedek, Lasry George, Leeuw Karl de, Pettersson Eva, Wacker Arno, Waldisp&uuml;hl Michelle. Decryption of historical manuscripts: the DECRYPT project. CRYPTOLOGIA 44 : 6 pp. 545-559. , 15 p. (2020) [<A HREF="https://www.tandfonline.com/doi/full/10.1080/01611194.2020.1716410">link</A>]</P>
+<P>Megyesi, B., Blomqvist, N., and Pettersson, E. (2019) The DECODE Database: Collection of Historical Ciphers and Keys. In Proceedings of the 2nd International Conference on Historical Cryptology. HistoCrypt 2019, June 23-25, 2019, Mons, Belgium. NEALT Proceedings Series 37, Link&ouml;ping Electronic Press. [<A HREF="https://cl.lingfil.uu.se/~bea/publ/decode-histocrypt-2019.pdf">pdf</A>]</P>
+
+
+<br>
+<br>
+<font size="2">
+&COPY;2024 S.Tomokiyo<br>
+First posted on 17 September 2024. Gualterio-Torcy Cipher added in February 2025. Last modified on 24 February 2025.<br>
+<A HREF="crypto.htm">Articles on Historical Cryptography</A><BR>
+</font>
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>
+

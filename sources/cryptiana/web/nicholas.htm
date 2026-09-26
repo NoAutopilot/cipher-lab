@@ -1,0 +1,136 @@
+<HTML>
+<HEAD>
+<TITLE>
+Polyalphabetic Cipher Exercise by Royalist Minister Edward Nicholas
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="code, cipher, Edward Nicholas, Vigenere cipher, Beaufort cipher">
+<link rel=stylesheet type=text/css href=decode2.css>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</HEAD>
+
+<BODY>
+
+<H1>Polyalphabetic Cipher Exercise by Royalist Minister Edward Nicholas</H1>
+<H2>Variant Vigenere Cipher (Beaufort Cipher)</H2>
+<P>Egerton MS 2550 includes many cipher keys related to Edward Nicholas, secretary of state for Charles I and Charles II. Among them, Eg. MS 2550 f.39 shows experimenting with a polyalphabetic cipher, i.e., a variant of the Vigenere cipher also known as the Beaufort cipher. A printed Vigenere table (with a 24-letter alphabet without J and U) is in f.86.</P>
+
+<DIV style="float:right; width:600px">
+<img src="EgertonMS2550f86.png" width="600"><br>
+</DIV>
+<H3>Vigenere (C=P+K)</H3>
+<P>At the top of f.39 is written the following:</P>
+<DIV class="kakomi">
+<TT>
+robe rt usrobertu sro<br>
+This is midsummer day<br>
+<s>mxly bn hywhqrezf xsn</s><br>
+<s>bsfn</s><br>
+</TT>
+</DIV>
+
+<P>The first line repeats the keyword ROBERTUS. The second line is the plaintext. </P>
+<P>The third line is a ciphertext obtained through the ordinary Vigenere cipher scheme: C=P+K, where C is ciphertext, P is plaintext, and K is the keyword. In non-mathematical terms, this corresponds to finding a column headed by a plaintext letter (e.g., "T") on the top row, finding a row headed by a keyword letter (e.g., "R"), and identifying a cipher letter (e.g., "M") at the intersection of the row and the column. <span class="note">(There seem to be enciphering errors for the plaintext I and R in MIDSOMMER. The first can be explained if the enciphering was based on the spelling "mEdsommer.")</span></P>
+
+<H3>C=P-K</H3>
+<P>The fourth line is (the beginning of) another ciphertext obtained through C=P-K. (The third character "f" seems to be an error for "g.")</P>
+<P>But these two ciphertexts are struck out.</P>
+
+<H3>Beaufort (C=K-P)</H3>
+<P>In the middle of the sheet is written the following:</P>
+<DIV class="kakomi">
+<TT>
+robe rt usrobertu sro<br>
+This is midsummer day<br>
+xfrl ha hinumreoc oqp<br>
+</TT>
+</DIV>
+<P>This ciphertext can be obtained by another variant of the Vigenere cipher: C=K-P. Compared with the common Vigenere cipher: C=P+K, this switches the roles of ciphertext and key. So, in non-mathematical terms, this corresponds to finding a column headed by a plaintext letter (e.g., "T") on the top row, finding a cell matching the key letter ("R") in that column, and reading off the leftmost letter ("X") of the row to which the cell belongs. This corresponds to what is called the Beaufort cipher. (Alternatively, since this changes the sign of P, we may regard it as the Vigenere cipher with a reversed alphabet.)</P>
+
+<P>This appears to be the adopted scheme. The next example can be explained with the same scheme.</P>
+<DIV class="kakomi">
+<TT>
+rob ertu srob ertusro<br>
+God saue King Charles<br>
+kzx lqyp hhat biscgmu<br>
+</TT>
+</DIV>
+<P>This is accompanied by an explanatory note to the effect that "G" is enciphered by the key "R" as "K" and deciphering "K" by "R" gives "G".</P>
+
+<!--<DIV class="kakomi">
+The copy[?] or the key or word must be the
+second line[?] named in ciphering,
+or in deciphering, as G. by r. leanly[?] your[?]
+to k[?] in ciphering, and so in deciphering k. by R. lads[?] your[?] G.
+</DIV>
+-->
+
+<P>One more example is given in the same scheme.</P>
+<DIV class="kakomi">
+<TT>
+robe rtus rob ertu<br>
+when will you come<br>
+ufwq ukig szf bcgp<br>
+</TT>
+</DIV>
+
+<H3>Assessment</H3>
+<P>It is apparent that portions of f.39 were written at different times. I think at least the main part of the above was written by Nicholas <span class="note">(A specimen of Nicholas' original letter is found in Add MS 18982, f.48 (<A HREF="https://www.bl.uk/manuscripts/Viewer.aspx?ref=add_ms_18982_fs001r">BL</A>. I hope someone can verify the handwriting.)</span>. F.39 is endorsed "New cipher", and this appears to correspond to the entry "7 New Cypher enclosing expenditure" on the "List of Ciphers from West Horseley" (f.26) <span class="note">(Nicholas spent his last years in the manor of West Horsley in Surrey. The reciprocal cipher described in the next section may correspond to "8 My Cypher with the <s>application</s> Lord Jermyn sent by S.Y.C[S.F.C.?]" in the list, which, however, is an inference solely based on the ordering of items, which is not always regular.)</span>. It is yet to be found out how and when Nicholas learned of polyalphabetic ciphers.</P>
+
+
+<P>On the other hand, the printed Vigenere table on f.86 may have been an insertion at a later period.</P>
+<P>Another polyalphabetic table (not Vigenere) possibly from the same period is described in <A HREF="EnglishPolyalphabetic.htm">another article</A>.</P>
+
+<H2>Reciprocal Substitution Cipher (Pairing-based Cipher)</H2>
+<P>In the bottom half of f.39, another scheme (not polyalphabetic) is demonstrated.</P>
+<DIV class="kakomi">
+<TT>
+bouchardinef<br>
+gklmpqstwxyz<br>
+</TT>
+Write these le[tter]s one for another[,] as g for b and b for g, &[?] for nulls[,] make figures or suuni[?] & capitall le[tter]s, & words as and[,] the[,] w^th[,] w^ch.<br>
+Example<br>
+<TT>
+gy RE wxkmyxd 3. qr tklyr<br>
+be &nbsp; &nbsp;inocent &nbsp; &nbsp;as doves<br>
+</TT>
+& the better to obscure[?] this[,] write your[?] letter[?] in french, or Spanishe & that w^ch is in this cipher with in Englishe.<br>
+</DIV>
+<P>This presents the 24 letters of the alphabet in two rows. It starts with a keyword "Bouchardine", followed by the letters not occurring in the keyword in the regular alphabetical order up to "wxyz."</P>
+<P>The two rows make 12 pairs of letters, and the letters of each pair is enciphered into each other. For example, "B" is enciphered as "G" and "G" is enciphered as "B". It is prescribed that figures and capital letters are nulls.</P>
+<P>And in order to better confuse codebreakers, it is advised to write the cleartext in French or Spanish, and use English for enciphered text.</P>
+
+<H2>References</H2>
+<P>CrypTool-Online (<A HREF="https://www.cryptool.org/en/cto/vigenere">Vigenere</A>, <A HREF="https://www.cryptool.org/en/cto/beaufort">Beaufort</A>) ... On this site, you can adapt the alphabet to the 24-letter alphabet without J and U. In order to try different schemes such as C=P+K, C=P-K, C=K-P, I used Microsoft Excel <span class="note">(private filename: EgertonMS2550.xlsx)</span>.</P>
+<P>Inventory of Egerton MS 2550 (<A HREF="http://cryptiana.web.fc2.com/code/EgertonMS2550.csv">CSV<A/>) (This may include many transcription errors.)</P>
+
+<H3>DECRYPT Project</H3>
+<P>Egerton MS f.39 is no.3077 of the DECODE Database maintained by the DECRYPT Project. The "list" at f.26 is no.3067. The Vigenere table at f.86 is no.3105.</P>
+<P>H&eacute;der, M ; Megyesi, B. The DECODE Database of Historical Ciphers and Keys: Version 2. In: Dahlke, C; Megyesi, B (eds.) Proceedings of the 5th International Conference on Historical Cryptology HistoCrypt 2022. Linkoping, Sweden : LiU E-Press (2022) pp. 111-114. , 4 p. [<A HREF="https://eprints.sztaki.hu/10338/1/Heder_111_32898863_ny.pdf">pdf</A>]</P>
+<P>Megyesi Be&aacute;ta, Esslinger Bernhard, Forn&eacute;s Alicia, Kopal Nils, L&aacute;ng Benedek, Lasry George, Leeuw Karl de, Pettersson Eva, Wacker Arno, Waldisp&uuml;hl Michelle. Decryption of historical manuscripts: the DECRYPT project. CRYPTOLOGIA 44 : 6 pp. 545-559. , 15 p. (2020) [<A HREF="https://www.tandfonline.com/doi/full/10.1080/01611194.2020.1716410">link</A>]</P>
+<P>Megyesi, B., Blomqvist, N., and Pettersson, E. (2019) The DECODE Database: Collection of Historical Ciphers and Keys. In Proceedings of the 2nd International Conference on Historical Cryptology. HistoCrypt 2019, June 23-25, 2019, Mons, Belgium. NEALT Proceedings Series 37, Link&ouml;ping Electronic Press. [<A HREF="https://cl.lingfil.uu.se/~bea/publ/decode-histocrypt-2019.pdf">pdf</A>]</P>
+
+<br>
+<br>
+<font size="2">
+&COPY;2023 S.Tomokiyo<br>
+First posted on 20 September 2023. Last modified on 21 September 2023.<br>
+<A HREF="crypto.htm">Articles on Historical Cryptography</A><BR>
+</font>
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>
+

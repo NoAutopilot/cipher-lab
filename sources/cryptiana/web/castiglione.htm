@@ -1,0 +1,124 @@
+<HTML>
+<HEAD>
+<TITLE>A Cipher with Vowel Indicators Used by Papal Nuncio Castiglione (1527)
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="Cipher, Code, Castiglione, Schomberg, vowel indicator, syllabic nomenclator">
+<link rel=stylesheet type=text/css href=decode2.css>
+</HEAD>
+<BODY>
+<H1>A Cipher with Vowel Indicators Used by Papal Nuncio Castiglione (1527)</H1>
+
+<P>Cipher letters of papal nuncio Castiglione written shortly before the Sack of Rome (1527) were deciphered by Marcello Simonetta and Norbert Biermann. In terms of cryptography, the cipher is interesting in being an early example of what I call a vowel indicator system.</P>
+
+<H3>References</H3>
+<P>Simonetta (a descendant of the famous Cicco Simonetta <span class="note">(<A HREF="https://storiainrete.com/un-complotto-contro-carlo-v-crittografia-informatica-e-fake-news/">Storia in Rete</A>)</span>) published the gist of the discovery in a blog post:</P>
+<P>Marcello Simonetta (2023), "Svelati i segreti delle lettere di Castiglione alla vigilia del Sacco di Roma", <A HREF="https://storiainrete.com/svelati-i-segreti-delle-lettere-di-castiglione-alla-vigilia-del-sacco-di-roma/">Storia in Rete</A>, 16 February 2023.</P>
+<P>Both Simonetta and Biermann made presentations in an online meeting Geheimschriftenzoom on 25 May 2023 (<A HREF="https://www.geschichte.uni-wuppertal.de/fileadmin/geschichte/Veranstaltungen/Tagungen_Workshops/2023/Geheimschriftenzoom_25.5.2023_.pdf">program</A>):</P>
+<P>Marcello Simonetta (Florenz): The Courtier as Cryptographer / </P>
+<P>Norbert Biermann (Berlin): Castiglione an Sch&ouml;nberg - eine Silbenchiffre.</P>
+<P>(I thank Norbert for letting me know of this achievement and providing the content of his presentation.)</P>
+
+<H3>Historical Aspects</H3>
+<P>The deciphered letters are those from Baldassare Castiglione to Niccol&ograve; Schomberg, dated 25 March 1527 and 3 April 1527.</P>
+<P>Baldassare Castiglione <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Baldassare_Castiglione">Wikipedia</A>)</span> had been sent by Pope Clement VII to the court of Emperor Charles V in Spain as an apostolic nuncio (ambassador). But his relation with the Emperor was questioned by the Pope when he failed to report the Emperor's intention at the time of the Sack of Rome in May 1527.</P>
+
+<P>Niccol&ograve; Schomberg [Nikolaus von Sch&ouml;nberg], Archbishop of Capua <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Nikolaus_von_Sch%C3%B6nberg">Wikipedia</A>)</span>, was a staunch imperialist <span class="note">(<A HREF="https://www.british-history.ac.uk/cal-state-papers/venice/vol4/pp136-140">CSP Venice</A>)</span>, but he was one of the negotiators on behalf of the Pope in February 1527 <span class="note">(<A HREF="https://www.british-history.ac.uk/cal-state-papers/spain/vol3/no2/pp48-60">CSP Spain</A>)</span>, when the imperial army expelled the Sforza duke<!--『カール五世』p.93　２月にミラノを陥れる-->, who had joined a league against the Emperor.</P>
+<P>The gist of the deciphered text appears to be described in Simonetta's blog.</P>
+
+
+<H3>Codebreaking</H3>
+<P>When Biermann received the scans of the letters from Simonetta, he tried to break the code with his self-written program specialized on homophonic ciphers, but did not succeed. Homophonic solvers would work well when the ciphertext symbols mainly represent individual letters of the alphabet. So, Biermann suspected that the cipher was what he calls a "syllabic nomenclator," that is, a cipher including not only symbols for individual letters but also symbols for syllables.</P>
+<P>Although a homophonic solver that can handle symbols for syllables is not yet available, he eventually succeeded in breaking the cipher manually.</P>
+<P>If tens of syllables were assigned random graphic symbols, the codebreaking would have been extremely difficult. But it often happens that symbols are assigned with some regularity. Biermann knew examples of papal ciphers in which symbols for syllables are systematically formed. In one of such ciphers (see the image), symbols for, e.g., "c", "ce", "ci", "co", and "cu" are formed by a common base symbol for "ca" combined with additional dots or strokes. The additional dots or strokes tend to be the same for the same vowel.</P>
+<DIV style="float: right; width:500px">
+<img src="meister210.png" width="450" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;">
+</DIV>
+<P>With such examples in mind, he assumed that similar symbols with different additional strokes or superscript figures in the Castiglione ciphertext represented a group of syllables like "ba", "be", "bi", "bo", "bu." </P>
+<P>Further, he took into consideration frequency information. The most frequent 12 symbols included several pairs of such similar symbols, which were considered to represent syllables rather than letters.</P>
+<P>In order to guess which syllables these might represent, he needed frequency statistics. He had materials for just that kind of analysis. He had a corpus of Italian texts from about 1550, which he had built when he came to fame by successfully deciphering ciphertexts left by Giovan Battista Bellaso. He broke up the text of his corpus into letters and syllables, and took frequency counts. The most frequent letters/syllables turned out to be:</P>
+<DIV class="kakomi2">
+n a l s o t r <b>re</b> <b>di</b> no <b>te</b> <b>ra</b> si <b>ti</b> i e <b>de</b> ....
+</DIV>
+<P>(Of course, the ranking of single letters in this list is different from the usual letter statistics of the Italian language: e a i o n t r l .... This is because the very frequent "e", for example, occurs often in syllables, thus reducing the frequency of "e" occurring alone. )</P>
+<P>From these statistics, the candidates for the most frequent syllable symbols were re/ra, te/ti, and di/de. The single letters in the list can also be candidates for the most frequent symbols for letters.</P>
+<P>From this initial clue, Biermann successfully identified the values of the symbols. </P>
+<P>Although the specific process is not recorded, he was assisted by a beta of CTTS: Cryptool Transcriber & Solver, developed by George Lasry and the CrypTool team. Among many benefits, this tool facilitates testing different hypotheses to see whether they result in some readable fragments. He had re-transcribed the whole ciphertexts in 2022 to work with CTTS.</P>
+<P>As it turned out, the most frequent pairs of syllables turned out to be "di"/"de" and "re"/"ra." Also, the two most frequent symbols matched the two most frequent letters "n" and "a" in the statistics. This coincidence must have helped in picking up plausible hypotheses in the trials.</P>
+<P>After some letters and syllables were identified, the remaining symbols could be identified one by one "like crossword puzzling" by using his knowledge in the Italian language.</P>
+<P>For example, there was one partially decrypted sequence:</P>
+<DIV class="kakomi2">
+mi [1] fo n de [2] i l ce r [3] [4] o
+</DIV>
+<P>Here, graphic similarity gave a clue. Already identified symbols indicated [1] would share the same initial letter with "ca" "ce" "ci" "co" "cu"; and [2] and [3] should be syllables sharing some common initial letter with each other. (Of course, already identified symbols could be excluded from the candidates.) From these, Biermann could identify [1]=con; [2]=va; [3]=ve, resulting in:</P>
+<DIV class="kakomi2">
+mi con-fonde-va il cer-ve-ll-o<br>
+(confused my mind)
+</DIV>
+
+<P>Identifying symbols for names and places is not possible with just linguistic information. In such cases, Simonetta could use his knowledge of history to fill the gaps. In one example, there was a partially decrypted sequence:</P>
+<DIV class="kakomi2">
+u-na le-tt-[e]-ra al [5] la qua-l-e<br>
+(a letter to [5] which)
+</DIV>
+<P>In this case, Simonetta could identify "papa" (the Pope) fitted [5].</P>
+
+<P>The reconstructed Castiglione-Schomberg Cipher is as follows. (Of course, the regularity allows filling blanks.)</P>
+<img src="castiglione.jpg" width="500" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+
+<H3>Vowel Indicators</H3>
+<P>This "syllabic nomenclator" is what I call a vowel indicator system. The additional strokes or superscript figures are indicative of vowels of the syllables. For example, the superscript "1" and two additional strokes above (or to the left) indicate "e." <span class="note">(I know my appellation is not always accurate. Many later "vowel indicator" systems also have additional strokes for consonants.)</span> This system was widely used in Spanish ciphers during the reign of Philip II, but it was also used in the time of Charles V.</P>
+
+<DIV style="float: right; width:500px">
+<img src="CharlesV1528.jpg" width="450" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;">
+</DIV>
+<P>The earliest examples of ciphers with vowel indicators known to me so far (see <A HREF="vowel.htm">another article</A>) are:</P>
+<P>&bull;Milanese cipher (1530) for use with Camillo Gilmo residing in the Imperial court</P>
+<P>&bull;Doria-Charles V Cipher (1528) (see the image)</P>
+<P>&bull;Leyva's Cipher (1528-1535?)</P>
+<P>&bull;Leyva's Cipher (September 1527)</P>
+<P>The Castiglione-Schomberg Cipher has the following characteristics, shared with some but not all of other vowel indicator systems.</P>
+<P>(a) syllables are represented in more than one way;</P>
+<P>(b) vowel indicators appear to be used consistently for all the consonants;</P>
+<P>(c) base symbols with which vowel indicators are combined are also used to represent the consonants in the letter substitution;</P>
+<P>(d) both superscript figures and additional strokes are used as vowel indicators;</P>
+<P>(e) an indicator is provided for indicating double letters (rather than vowels);</P>
+<P>(f) base symbols with superscript letters 10, 11, 12, ... represent common words beginning with those consonants.</P>
+<P>Of these, Leyva's Cipher (September 1527) has at least (b).</P>
+<P>Leyva's Cipher (1528-1535?) has (d). Notably, unlike most of the other specimens, this lacks (b). For example, the superscript figure "0" is used for po, ri, sa, va, zu. (So, this does not indicate vowels, after all. Of course, this irregularity is good in terms of security.)</P>
+<P>Doria-Charles V Cipher (1528) has (a)(b)(d). Somewhat like (f), a symbol like &chi; combined with a superscript figure is used to represent words and names.</P>
+<P>Milanese cipher (1530) has (b). Somewhat like (f), a letter combined with a rightward stroke and an Arabic figure is used to represent common words and names. The letter is not related to the initial of the word/name represented.</P>
+
+<H3>Did Imperialists Learn Vowel Indicators from Vatican?</H3>
+<P>If the Castiglione-Schomberg Cipher was provided to the apostolic nuncio by the Vatican, it sheds light on early Vatican ciphers. While many Vatican ciphers are known, most are from the period after ca. 1540. A very simple numerical cipher used by a cardinal in 1520 known to me (see <A HREF="schiner.htm">another article</A>) seemed to be an incipient form of numerical ciphers used by the Vatican later in the century. But now the Castiglione-Schomberg Cipher may show that the Vatican still used ciphers other than numerical ciphers as of 1527.</P>
+
+<P>The Castiglione-Schomberg Cipher is also interesting for the study of the history of vowel indicator systems, for it is earlier than the earliest specimen known to me by six months.</P>
+<P>More importantly, if it indeed belonged to the Holy See, it raises a question: how come both the Vatican and the Imperialists began using the same system about the same time. Since it is not likely that the Emperor and the Pope cooperated in ciphers, I wonder whether the Imperialists found this cipher scheme during the Sack of Rome.</P>
+<P>When the Imperial soldiers broke into Rome, the Pope evacuated the Vatican to the Castel Sant'Angelo via a secret passage while the 500 Swiss Guards were annihilated. The Prince of Orange, commanding the troops after the death of the Imperial commander Duke of Bourbon, was lodged at the Vatican, which saved the library and other valuables from looting <span class="note">(Shiono Nanami (1973), <i>Women of the Renaissance</i> (in Japanese), p.68-69)</span>. So, it is possible that the Imperialists had access to the papal ciphers, but it does not necessarily mean that there were people in the headquarters who thought of studying them.</P>
+<P>Of course, there is a possibility that the Castiglione-Schomberg Cipher did not come from the Vatican after all. Before being sent to Spain by the Pope, Castiglione had served as ambassador for Urbino (ca. 1512) and for Mantua (ca. 1520) <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Baldassare_Castiglione">Wikipedia</A>)</span>, and used cipher with Isabella d'Este, Marchioness of Mantua <span class="note">(Shiono op.cit., p.60)</span> and probably many others. It may be worth examining other ciphers used by Castiglione <span class="note">(Hopefully, there may be some leads in Giulio Einaudi (ed.) (2016), <i>Baldassarre Castiglione, Lettere famigliari e diplomatiche</i>, which I have not seen.)</span>.</P>
+<br>
+<H3>Related Article:</H3>
+<P>S. Tomokiyo, <A HREF="http://cryptiana.web.fc2.com/code/vowel.htm">"Tracing the Origin of Vowel Indicators in Spanish Ciphers"</A></P>
+<br>
+<br>
+<font size="2">
+&COPY;2023 S.Tomokiyo<br>
+First posted on 3 June 2023. Last modified on 3 June 2023.<br>
+<A HREF="crypto.htm">Articles on Historical Cryptography</A><BR>
+</font>
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>

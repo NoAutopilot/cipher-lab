@@ -1,0 +1,145 @@
+<HTML>
+<HEAD>
+<TITLE>
+Principles of William Blair's Ciphers (1807)
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="William Blair, Cipher, Rees' Cyclopaedia">
+<link rel=stylesheet type=text/css href=decode2.css>
+</HEAD>
+<BODY>
+<H1>Principles of William Blair's Ciphers (1807)</H1>
+
+
+<P>The article "Cipher, cypher" in Rees' Cyclopaedia (<A HREF="http://archive.org/stream/cyclopaediaoruni08rees#page/176/mode/2up">Internet Archive</A>) contributed by William Blair extends for more than thirty pages of condensed typesetting of an encyclopedia. It compiled various ciphers and solution thereof, including quotations from preceding authors, and was acclaimed by the old <A HREF="http://en.wikisource.org/wiki/Blair,_William_(1766-1822)_(DNB00)">DNB</A> and David Kahn, <i>The Codebreakers</i> (p.788). It is also known as a source for Edgar Allan Poe, the author of the celebrated classic, "Gold Bug" (<A HREF="goldbug.htm">text</A>). Moreover, some time after the Civil War, it was adopted by the US Army in a textbook for the Signal Corps <span class="note">(<A HREF="http://www.nsa.gov/about/_files/cryptologic_heritage/publications/prewii/masked_dispatches.pdf">Masked Dispatches</A> p.95-99)</span>.</P>
+<P>While Blair was a surgeon by profession, he took interest in the topic "as an amusement" (p.180) when he happened to see in 1804 a cipher alphabet consisting of line segments used between King Charles I and the Earl of Glamorgan (later the Marquis of Worcester). In the course of investigation, he discovered a paper which explained one of several cipher schemes described by Glamorgan in a rather ambiguous way (p.186) (see <A HREF="glamorgan.htm">another article</A>).</P>
+<P>Blair considered numerical code, then the mainstream form of diplomatic cipher, was not "the best method of cyphering". He seems to consider that it was "a most tedious and operose employment" (p.188). He preferred a cipher system (as used in the modern terminology, i.e., representation of each letter of the alphabet by another symbol).</P>
+<P>Blair describes several cipher schemes of his own invention and asserts one of them (the dot writing of Plate III or its variants) "might be a very advantageous acquisition in the foreign secretary of state's office" (p.206). Today, however, securing privacy by hiding a newly invented enciphering scheme is out of date. Security of modern cryptography rests on keeping the privacy of the key while the scheme is open to the public.</P>
+<P>Blair provides specimens of his own cipher schemes based on one and the same key. He was confident of the security of his schemes, though he knew the key and the plaintext disclosed in the article might "serve to develope the principle on which this cipher is constructed" (p.207).</P>
+<P>The principles of his schemes were published in Michael Gage (1819), "An Extract taken from Dr. Rees's New Cyclopaedia on the article Cipher, being a real improvement on all the various ciphers which have been made public, and is the first method ever published on a scientific principle. Lately invented by W. Blair, Esq., A.M.; to which is now first, added a Full Discovery of the Principle" <span class="note">(<A HREF="http://en.wikisource.org/wiki/Blair,_William_(1766-1822)_(DNB00)">DNB</A>)</span>. Unable to locate this publication, the present author thought it might be of some interest to the general public to provide a brief description of Blair's schemes together with what he could find out about their principles.</P>
+
+
+<H2>Beads Cipher</H2>
+<P>Blair mentions a method of secret communication for a lady to amuse herself (p.204). It is essentially a quinary (base-five) representation of letters.</P>
+<P>A sufficient number of ornamental beads of five colors (fewer will also do) are provided. Correspondents agree beforehand on combinations of two colors for representing letters. For example, A is represented by red and green, B, red and yellow, E, green and red, and so on. To encipher a message, one is only to string the beads on a thread in pairs according to the plan of combinations.</P>
+
+<H2>Improvement on Oghams</H2>
+<P>Blair provides the following and says that it is not difficult to decipher but is simpler and more regular in its structure than any of the Irish Oghams (p.206).</P>
+<img src="blairII6.jpg" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;">
+
+<H2>Dot Writing</H2>
+<P>The specimen of Plate III (of which the following is the beginning) uses three dots (over the line, upon it, and under it) to represent the letters of the alphabet. The key of the scheme is also printed in the same plate (reproduced below), in which letters of the alphabet are arranged in a nine-by-nine table.</P>
+<img src="blairIII.jpg" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;">
+<DIV style="margin: 0em 3em 0em">
+<TT><b>KEY</b><br>
++-------+-------+-------+<br>
+| b c s | m t l | i e o | <br>
+| g m t | p u h | o i a | <br>
+| j p u | d a n | h o e | <br>
++-------+-------+-------+<br>
+| k d y | f e r | n s i | <br>
+| q f a | l i s | r t o | <br>
+| v l e | h o t | s u a | <br>
++-------+-------+-------+<br>
+| w h i | n c u | t a e | <br>
+| x n o | r d a | u e i | <br>
+| z r . | s f e | a i o | <br>
++-------+-------+-------+<br>
+</TT>
+</DIV>
+<P>The key assigns more places to more frequent letters. This frustrates the orthodox frequency analysis attack. The number of places assigned are 7 (a, e, i, o), 5 (s, t, u), 4 (h, n, r), 3 (d, f, l), 2 (c, m, p), and 1 (b, g, j, k, q, v, w, x, y, z, .).</P>
+<P>(By the way, in describing a deciphering technique on p.195, Blair speaks of grouping of consonants "d, h, n, r, s, t", "c, f, g, l, m, w", "b, k, p", and "q, x, z" in the order from the most frequent to the least frequent. However, within each group, the consonants are merely arranged alphabetically. Poe's use of Blair's article is evident from the statement that the order of frequency of letters in English is "e a o i d h n r s t u y c f g l m w b k p q x z", which is rather far from generally accepted ordering such as ETAONRISH or ETOANIRS. The above assignment of places in the key table clearly shows that Blair recognized "s" and "t" are more frequent than "d, h, n, r".)</P>
+<P>The following paragraph gives the plaintext for this specimen. (It also expresses in italic letters, the author's name, profession, place of residence, and the date of the year).</P>
+<img src="blair1.jpg" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;">
+<P>A clue to the principles of this scheme lies in the division of the nine-by-nine table into three-by-three blocks. It does not require much reasoning to think that four dots represent one place in the table by indicating the vertical place of a block, the vertical place of a letter in the block, the horizontal place of the block, and the horizontal place of the letter in the block. As an example, take the second four-dot group: "over the line", "on the line", "on the line", and "under the line." The first dot "over the line" indicates the first row of blocks. The second dot "on the line" indicates the middle row in the row of blocks (i.e., the row beginning with "gmt" in the key table). The third dot "on the line" indicates the middle column of blocks. The last dot "under the line" indicates the letter in the third column in that block (i.e., "h").</P>
+
+<H2>Figure Cipher</H2>
+<P>The specimen of a figure cipher given on pp.206-207 (of which the following is a part) corresponds to the same plaintext as the above and can be deciphered by the same key.</P>
+<img src="blair2.jpg" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;">
+<P>It would be straightforward to see that this is a simple coordinate scheme. That is, the ciphertext can be divided into bigrams 15-26-18-0-35-46-66-93- (the single digit "0" being a word break), the first digit in each bigram indicates the row and the second digits indicates the column. With this, the specimen can be deciphered as 15(t)-26(h)-18(e)-0-35(a)-46(r)-66(t)-93(.)....</P>
+
+<H2>Alphabetical Cipher</H2>
+<P>The specimen of an alphabetical cipher given on p.207 (reproduced below) also corresponds to the same plaintext as the above and can be "deciphered by the same key".</P>
+<img src="blair3.jpg" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;">
+<P>It is natural to think that this also employs a coordinate scheme of indicating the row and column with alphabetical letters. The fact that the number of letters in the ciphertext is roughly double that in the plaintext shows that two letters in the ciphertext correspond to one letter in the plaintext. The 27=9x3 characters in the alphabet plus "." allows representing each coordinate in three ways.</P>
+<P>However, the assignment of coordinates is not in simple alphabetical order but random. It would not be entitled to be called "the same key" if the random assignment were not in accordance with the letters in the three blocks on the left of the key (the three columns and nine rows of letters).</P>
+<P>After a great deal of trials and errors, the present author found the key to this cipher (complete with the assigned alphabetical coordinates) as shown below. As an example, the bigram BA at the beginning of the ciphertext indicates the row of B (i.e., the first row) and the column of A (i.e., the fifth column), that is, "t". (Since the coordinate assignment is indicated by the three blocks on the left of the key, explicit labelling of coordinates may be eliminated. From the first bigram BA in the ciphertext, the first letter "B" and the latter letter "A" are found on the 1st row and the 5th row, respectively, in the three blocks on the left, which is interpreted to refer to the 1st row and 5th column of the table, "t".)</P>
+<P>This same place can be represented in nine ways: BA, BF, BQ, CA, CF, CQ, SA, SF, and SQ, resulting in better suppression of frequency than the simple coordinate scheme of the figure cipher described above.</P>
+<DIV style="margin: 0em 3em 0em">
+<TT><b>KEY</b><br>
+&nbsp;&nbsp;B G J&nbsp;&nbsp; D A E&nbsp;&nbsp; H O R<br>
+&nbsp;&nbsp;C M P&nbsp;&nbsp; K F L&nbsp;&nbsp; I N .<br>
+&nbsp;&nbsp;S T U&nbsp;&nbsp; Y Q V&nbsp;&nbsp; W X Z<br>
++-------+-------+-------+<br>
+| b c s | m t l | i e o | B C S<br>
+| g m t | p u h | o i a | G M T<br>
+| j p u | d a n | h o e | J P U<br>
++-------+-------+-------+<br>
+| k d y | f e r | n s i | D K Y<br>
+| q f a | l i s | r t o | A F Q<br>
+| v l e | h o t | s u a | E L V<br>
++-------+-------+-------+<br>
+| w h i | n c u | t a e | H I W<br>
+| x n o | r d a | u e i | O N X<br>
+| z r . | s f e | a i o | R . Z<br>
++-------+-------+-------+<br>
+</TT>
+</DIV>
+
+<P>It took more time than expected to find out this scheme. It was partly because the possibilities of such random assignment of coordinates or presence of null characters were considered but not thought probable in view of Blair's challenging tone. It took some time to conclude that, with coordinates in regular alphabetical order, there is no way that BA at the beginning of the ciphertext represents the known plaintext letter "t".</P>
+<P>As in a textbook, frequency of bigrams was counted, which showed high frequency of ".u", "gl", "rp", "ru", and "w." However, too much reliance could not be posed in this result because a single error in the ciphertext would disturb the framework of the bigrams. (Since the number of letters in the ciphertext is odd, it was apparent that there is at least one error. As it turned out, there are quite a few errors in the ciphertext, including omission of "t" as in "art" at the very beginning of the ciphertext.) Further, since a high-frequency letter "e" is given seven different places in the key table, there is no use in automatically associating a high-frequency bigram with "e".</P>
+<P>At this point, it was noted that there is a character that is used 1.5 times more than "e" but was assigned only one place in the key table: a blank or break character (.). There should be a blank character among the high-frequency bigrams. (As it turned out, three of the five high-frequency bigrams indicated above are blanks, with the other two "h" and "e".)</P>
+<P>A high-frequency bigram "ru" appears near the beginning of the ciphertext. Its identification with a blank is consistent with parsing: ba(t)-wm(h)-ka(e)-ru(.). Further, the very end of the ciphertext is "ru", which supports the assumption that "ru" corresponds to a blank or break.</P>
+<P>Next, the ciphertext and the known plaintext were written down (on a computer) in rough alignment with each other. With the assumption that "ba" at the beginning of the ciphertext represents "t", subsequent instances of "ba" were examined and any occurrence of "t" in the plaintext nearby was assumed to correspond to "ba". In this way, the alignment between the ciphertext and the plaintext was adjusted little by little. After working for a while in this manner, one identification led to another and there was no further difficulty in finding out the whole assignment.</P>
+
+<H2>Dotted Text</H2>
+<P>Blair provides a further example in a subsequent paragraph (of which the following is a part). Again, this is decipherable by the same key as the other specimens. He says "the words represented by the points, in this example, may be found in the paragraph itself; so that the student will not have to look far for an interpretation of its contents." The present author has not identified this scheme.</P>
+<img src="blair4.jpg" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;">
+
+<H2>Cryptogram like a Foreign Language</H2>
+<P>At the end of the article, Blair mentions a variant of such a bigram cipher, whereby the resultant cryptogram looks like a foreign language, though "this mode has not any peculiar advantage in practice." (p.207)</P>
+<DIV class="kakomi">
+Plaintext: Relieve us speedily, or we perish; for the enemy has been reinforced, and our provisions are nearly expended.<br>
+Ciphertext: Sika jygam a suva quaxo Rolosak adunabi ye, Rafe quema Lovazig arodi; Moxati Ho hyka Fagiva myne quipaxo Aukava in Onfa yani moxarico, Pangdo Spulzi Jorixa mugaro ya zangor Alfiva yival ponbine Kazeb re linthvath.
+</DIV>
+<P>This appearance can be achieved by using only bigrams consisting of "consonant-vowel" or "vowel-consonant". For example, "e" may be represented by fa, ka, ma, sa va, el; i, by ga, na, ya; n, by gi, ni, yi; y, by ne, ye, and so on. There appear to be some exceptions (consonant-consonant combinations) as n represented by ng or d represented by th.</P>
+<P>The following shows the alignment of the plaintext and the ciphertext. (For the purpose of alignment, spaces are suppressed and "qu" in the ciphertext is represented as "q".)</P>
+<DIV class="kakomi">
+<TT>
+R e l i e v e u s s p e e d i l y , o r w e p e r i s h ; <br>
+SikajygamasuvaqaxoRolosakadunabiye, RafeqemaLovazigarodi; <br>
+<br>
+f o r t h e e n e m y h a s b e e n r e i n f o r c e d,<br>
+MoxatiHohykaFagivamyneqipaxoAukavainOnfayanimoxarico   ,<br>
+<br>
+a n d o u r p r o v i s i o n s a r e n e a r l y e x p e n d e d <br>
+PangdoSpulziJorixamugaroyazangorAlfivayivalponbineKazebrelinthvath.<br></TT>
+</DIV>
+<P>This would remind the reader of a practice in the age of telegraph, whereby suitable occurrence of vowels was ensured because the international telegram charges were lower for pronounceable "words".</P>
+
+<H2>References</H2>
+<P>Rees' Cyclopaedia (1802-1820), (<A HREF="http://archive.org/search.php?query=creator%3A%22Rees%2C%20Abraham%2C%201743-1825%22">Search Internet Archive</A>, <A HREF="http://archive.org/stream/cyclopaediaoruni08rees#page/176/mode/2up">Vol. VIII (1807)</A> (page numbers cited in the above are according to the Internet Archive), <A HREF="http://archive.org/stream/cyclopaediaplates04rees#page/n369/mode/2up">Plates Vol. IV (1820)</A>)<!--; According to <A HREF="http://www.cyclopaedia.org/1819/1819cyclopaedia.html">here</A>, an earlier edition was issued in 1779-1786→これは先行するChambersをReesが再編集したもの-->. For publication dates, see <A HREF="http://en.wikipedia.org/wiki/Rees%27s_Cyclop%C3%A6dia#Printing">Wikipedia</A>. While Rees' Cyclopaedia is often cited with a date of 1819, the year the last volume of text was published, it was actually published serially from 1802 to 1820. The volume containing the article "cipher" was published in 1807. (An explicit reference to the year 1807 is also found in the article.)</P>
+
+<br>
+<br>
+<font size="2">
+&COPY;2012 S.Tomokiyo<br>
+First posted on 23 November 2012. Last modified on 7 August 2013.<br>
+<A HREF="crypto.htm">Articles on Historical Cryptography</A><BR>
+</font>
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>

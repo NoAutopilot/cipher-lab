@@ -1,0 +1,178 @@
+<HTML>
+<HEAD>
+<TITLE>ルイス・キャロルの暗号</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="ルイス・キャロル, 暗号">
+<link rel=stylesheet type=text/css href=decode2.css>
+
+</HEAD>
+<BODY>
+<H1>ルイス・キャロルの暗号</H1>
+<P>『不思議の国のアリス』で知られるルイス・キャロル（Lewis Carroll）の本名はチャールズ・ラトウィッジ・ドジソン (Charles Lutwidge Dodgson）という．Lutwidgeのラテン語形はLudovicであり，これはドイツ語ならLudwig，フランス語ならLouisに当たり，この後者を英語風にしてLewisとなる．Charlesのラテン語形はCarolusであり（「ノースカロライナ」，「カロリング朝」などの名称もこれに由来），これからCarrollとした．アナグラムやアクロスティックといった言葉遊びを多用するドジソンはいくつかの暗号方式を考案してもいる．いわゆるヴィジュネル暗号と同じものもあるが，行列（マトリクス）を使った少し高度なものもある（ドジソンは数学者でもあった）．</P>
+<P>以下，ドジソンが考案・使用した暗号について述べる．</P>
+
+<H3>アルファベット暗号（Alphabet Cipher）（1868）</H3>
+<P>1868年にドジソンはアルファベット暗号と称する暗号を，実際に子供友達への手紙で使ったという（ドジソンには多くの「子供友達」がいた<span class="note">(<A HREF="https://ja.wikipedia.org/wiki/%E3%83%AB%E3%82%A4%E3%82%B9%E3%83%BB%E3%82%AD%E3%83%A3%E3%83%AD%E3%83%AB">Wikipedia</A>)</span>）．これはヴィジュネル暗号として知られているものと同じもので，図のようなアルファベット表（ヴィジュネル表）が基本になっている．表面にこれを印刷して，裏面に説明を書いたカードが残っている <span class="note">(Francine, Fig.1)</span>．</P>
+<DIV style="float:right; width:600px">
+<img src="vigenere.png" width="480" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+</DIV>
+<P>ドジソンはMeet me on Tuesday evening（火曜の晩に会っておくれ）をVIGILANCEというキーワードで暗号化する例を挙げた．暗号化するためにはまず，平文の上にキーワードを繰り返し書いていく．</P>
+<TABLE border="0">
+<TR><TD style="letter-spacing: 5px; line-height: 17pt;">
+キーワード<br>
+　平　文<br>
+　暗号文
+</TD>
+<TD>
+<TT style="letter-spacing: 3px; line-height: 17pt;">
+VIGILANCEVIGILANCEVIGI<br>
+meetmeontuesdayevening<br>
+HMKBXEBPXPMYLLYRXIIQTO
+</TT>
+</TD>
+</TR>
+</TABLE>
+<P>最初のmを暗号化するには，その上のキーワード文字がVであるから，ヴィジュネル表の左端に「V」と書いてある行を見る．つまり，このときは</P>
+<TABLE style="letter-spacing: 3px; line-height: 17pt;">
+<TR><TD style="letter-spacing: 5px; line-height: 17pt;">
+平文<br>
+暗号
+</TD>
+<TD>
+<TT style="letter-spacing: 3px; line-height: 17pt;">
+abcdefghijklmnopqrstuvwxyz<br>
+VWXYZABCDEFGHIJKLMNOPQRSTU
+</TT>
+</TD>
+</TR>
+</TABLE>
+<P>という暗号表を使っていることになる．よってmはHに暗号化される．次のeを暗号化するときは，その上のキーワード文字はIであるから，ヴィジュネル表の左端に「I」と書いてある行を見る．つまり，先ほどとは違い，今度の暗号表は</P>
+<TABLE style="letter-spacing: 3px; line-height: 17pt;">
+<TR><TD style="letter-spacing: 5px; line-height: 17pt;">
+平文<br>
+暗号
+</TD>
+<TD>
+<TT style="letter-spacing: 3px; line-height: 17pt;">
+abcdefghijklmnopqrstuvwxyz<br>
+IJKLMNOPQRSTUVWXYZABCDEFGH
+</TT>
+</TD>
+</TR>
+</TABLE>
+<P>となり，この対応によれば，eはMと暗号化される．その次のeの上のキーワード文字はGであるから，今度はGの行を見ると，eはKと暗号化される．このように，平文文字eが同じでも，その都度異なる文字に暗号化されるので，単純な換字暗号よりも解読が難しくなる．ヴィジュネル暗号は長らく「解読不能」と評されていた．ドジソンも，この暗号はアルファベット表があったとしても，キーワードがわからなければ解読できないと説明している．だが1863年にカシスキ法という解読法が発表されていた．</P>
+
+<H3>テレグラフ暗号（Telegraph Cipher）（1868）</H3>
+<P>やはり1868年の4月22日，ドジソンはやはり子供友達への手紙に使うことになる別の暗号を発明した．これはヴィジュネル暗号の変種を紙片を使って実行するものに相当する．</P>
+<P>鍵アルファベット（ABCDEFGHIJKLMNOPQRSTUVWXYZ）とメッセージ・アルファベット（ABCDEFGHIJKLMNOPQRSTUVWXYZA）を書いた紙片を用意し，鍵アルファベットにおいてキーワード中の鍵字を，メッセージ・アルファベットにおいて暗号化すべき平文文字をみつけ，両者がそろうように２つの紙片をスライドさせる．メッセージ・アルファベットのAの上にあるキーワード・アルファベットの文字が暗号化したものとなる．（紙片をずらしてもメッセージ・アルファベットの左端または右端どちらかのAの上にはキーワード・アルファベットの文字がある．）</P>
+<P>ドジソンが挙げた例はMeet me at six.（６時に会おう）というメッセージをWARというキーワードで暗号化するというもの．</P>
+<TABLE border="0">
+<TR><TD style="letter-spacing: 5px; line-height: 17pt;">
+キーワード<br>
+　平　文<br>
+　暗号文
+</TD>
+<TD>
+<TT style="letter-spacing: 3px; line-height: 17pt;">
+WARWARWARWA<br>
+meetmeatsix<br>
+KWNDONWHZOD
+</TT>
+</TD>
+</TR>
+</TABLE>
+<P>最初のmをキーワード文字Wを使って暗号化する場合，紙片は次のようになる．</P>
+<TABLE>
+<TR><TD>
+<TT>
+鍵アルファベット　　　　　　<span style="border-width: 1px; border-style: solid;">ABCDEFGHIJ<span style="background-color: 00ff00;">K</span>LMNOPQRSTUV<span style="background-color: ffff00;">W</span>XYZ</span><br>
+メッセージ・アルファベット　　　　　　<span style="border-width: 1px; border-style: solid;"><span style="background-color: 00ff00;">A</span>BCDEFGHIJKL<span style="background-color: ffff00;">M</span>NOPQRSTUVWXYZA</span>
+</TT>
+</TD></TR></TABLE>
+<P>鍵字から，平文文字分左に進んだものを暗号文字としているので，(暗号文字)＝(鍵字)－(平文文字)という引き算を行なっていることに相当する．これはボーフォート暗号として知られるヴィジュネル暗号の変種である．（なお，Abelesはドジソンがボーフォート暗号のことを知っていた可能性も十分にあるとしている<s>が，ボーフォート暗号が公表されたのは1870年のことのようだ <span class="note">(<A HREF="https://www.bloomsburycollections.com/book/geographers-biobibliographical-studies-volume-19/francis-beaufort-rn">Marion Hercock, <i>Francis Beaufort, RN</i></A>によれば1870年の刊行らしい；週刊紙<i>The Athenaeum</i> (22 October 1870) (<A HREF="https://books.google.co.jp/books?id=my5JAQAAMAAJ&pg=PA515&dq=%22edward+stanford%22+beaufort+cryptography&hl=ja&sa=X&ved=2ahUKEwirpPa9vKHuAhVqIqYKHVUtATUQ6AEwBXoECAMQAg#v=onepage&q=%22edward%20stanford%22%20beaufort%20cryptography&f=false">Google</A>)に，この月に登場した半ペニー絵葉書用として新刊告知のようなものがある )</span>．</s>）</P>
+<P>ドジソンは自らの発明を4月24日に財務府長官ジョージ・ウォード・ハント（George Ward Hunt）に伝えたが，長官の反応は知られていないという．</P>
+
+
+<H3>鍵母音暗号（Key-Vowel Cipher）（1858）</H3>
+<P>ドジソンは上記の10年前にも２つの暗号を考案したが，日記に記しただけで実際に使われた記録はない．暗号への関心をもったのはもっと早く，1856年2月15日の日記に「『トレイン』誌のために暗号について書くことを考えているが，まず〔編集者のエドマンド・〕イェーツ氏にそのようなテーマが受け入れられるかどうか相談してみる必要がある」と書いている．</P>
+<P>1858年2月24日の日記は「暗号方式を発明した．完全に頭の中に入れて運べるので有望そうと思う」と書いている．これが鍵母音暗号だ（<A HREF="https://www.tandfonline.com/doi/abs/10.1080/0161-119191865740">Lipson & Abeles (1991)</A>の造語らしい）．これは，キーワードの母音の箇所のみを暗号化に使用し，子音の箇所にはランダムな文字を入れるヴィジュネル暗号の変種と言える．</P>
+<P>具体的には，次のような５通りの換字アルファベットを用意する．</P>
+<TABLE border="1" style="letter-spacing: 5px; line-height: 17pt;">
+<TR><TD></TD><TD><TT>ABCDEFGHIJKLMNOPQRSTUVWXYZ</TT></TD></TR>
+<TR>
+<TD>A<br>E<br>I<br>O<br>U</TD>
+<TD><TT>
+YZABCDEFGHIJKLMNOPQRSTUVWX<br>
+ZABCDEFGHIJKLMNOPQRSTUVWXY<br>
+ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+BCDEFGHIJKLMNOPQRSTUVWXYZA<br>
+CDEFGHIJKLMNOPQRSTUVWXYZAB<br>
+</TT></TD></TR>
+</TABLE>
+<P>暗号化のためには，まずヴィジュネル暗号のように暗号化すべき平文の各文字にキーワードの各文字を対応させていくのだが，平文の上にキーワードを繰り返し書いていく普通の運用とは異なり，キーワードの繰り返しを書いて，その母音のところだけに平文文字を書いていく．平文文字を，その文字に対応するキーワードの文字A,E,I,O,Uが付いた行（アルファベット）によって暗号化することはヴィジュネル暗号と同じだ．さらに，キーワードの子音のところにはランダムな文字を入れていく．さらに先頭に３文字，末尾に２文字のランダムな文字を入れる．</P>
+<P>解読の際には，先頭の３文字と末尾の２文字を無視してキーワードの繰り返しを書いていき，母音の箇所のみを対応する換字表（アルファベット）で復号していく．</P>
+
+<H3>行列暗号（Matrix Cipher）（1858）</H3>
+<P>数日後，ドジソンは日記に「前回のものよりずっといい，別の暗号」（行列暗号）を発明したと書いた．これは次のような行列（マトリクス）を使用する．</P>
+<div style="text-align: center;">
+<TABLE border="1">
+<TR><TD>A</TD><TD>F</TD><TD>L</TD><TD>Q</TD><TD>W</TD></TR>
+<TR><TD>B</TD><TD>G</TD><TD>M</TD><TD>R</TD><TD>X</TD></TR>
+<TR><TD>C</TD><TD>H</TD><TD>N</TD><TD>S</TD><TD>Y</TD></TR>
+<TR><TD>D</TD><TD>I</TD><TD>O</TD><TD>T</TD><TD>Z</TD></TR>
+<TR><TD>E</TD><TD>K</TD><TD>P</TD><TD>V</TD><TD>*</TD></TR>
+</TABLE>
+</div>
+<P>これを用いて文字を座標で表わす．たとえばA＝(0,0)，B＝(0,1)，V＝(3,4)といった具合である．暗号化のためには平文文字から鍵字を引き算する．この操作そのものはヴィジュネル暗号の変種と似ているが，各文字を座表式に表わしているため，単純な加減算ではなくなる．たとえば鍵字がB＝(0,1)（マトリクスで１行上の文字で置き換える暗号化）の場合，暗号化はB→A，C→B，D→C，E→D，G→F…などは単純な減算に見えるが，A→Eとなるなど，5行5列の範囲を出るときは違いが出てくる．鍵字がG＝(1,1)（マトリクスで左上の文字で置き換える暗号化）の場合も同様で，G→A，M→F，R→L，X→Qなどの換字はみな単に6を引いただけに見えるが，やはりマトリクスの端に達して折り返す場合には規則的ではなくなる．Abelesの数学的な言い方では，G＝Z<sub>5</sub>×Z<sub>5</sub>という数学的な「群」による非標準算術を使っているということになる．</P>
+<P>ドジソンはさらに，キーワードの何文字目から始めるかを(7.11)のような，暗号文の前に付ける１組の数字で示すことにした．１つめの数字7は意味がなく，２つめの数字11はキーワードを繰り返し書いたときの１１文字めから使い始めることを示す．さらに，(7.11)(1.3)のように２組の数字を付した場合には，２組めの２番目の数字3は，その次に使うキーワードの文字を指定するという（キーワードの文字を順に使っていくのではなく，この例の場合，3つずつ飛ばして使うことになるということらしい）．これら２組（または１組）の数字のあとに英字を付した場合，まずその英字を暗号化し，たとえばK＝(1,4)になったとすると，暗号文の先頭の１文字と末尾の４文字がヌルであることを表わす．</P>
+
+<H3>記憶術（Memoria Technica）</H3>
+<P>ドジソンは数字を文字に置き換えて記憶する記憶術も使った．１８世紀にリチャード・グレイ（Richard Grey）が「記憶術；あるいは人工的な記憶の新方法」（Memoria Technica; or a new Method of Artificial Memory）（<A HREF="https://books.google.co.jp/books?id=ZrNgAAAAcAAJ&printsec=frontcover&dq=%22memoria+technica%22&hl=ja&sa=X&ved=2ahUKEwi7j7-Vy5PuAhVJCqYKHdivBW4Q6AEwAHoECAAQAg#v=onepage&q=%22memoria%20technica%22&f=false">Google</A>）と題して発表したものをアレンジしたものらしい．</P>
+<P>グレイのもともとの方法は数字を次の表に従って文字に置き換えるというものだった．</P>
+<TABLE border="1">
+<TR><TD>1</TD><TD>2</TD><TD>3</TD><TD>4</TD><TD>5</TD><TD>6</TD><TD>7</TD><TD>8</TD><TD>9</TD><TD>0</TD></TR>
+<TR><TD>a</TD><TD>e</TD><TD>i</TD><TD>o</TD><TD>u</TD><TD>au</TD><TD>oi</TD><TD>ei</TD><TD>ou</TD><TD>y</TD></TR>
+<TR><TD>b</TD><TD>d</TD><TD>t</TD><TD>f</TD><TD>l</TD><TD>s</TD><TD>p</TD><TD>k</TD><TD>u</TD><TD>z</TD></TR>
+</TABLE>
+<P>各数字に母音と子音が割り当てられているから，どんな数字の並びでも母音・子音を適当に選んでいけば発音できる単語らしいものに変換できる．これによれば，当時知られていた地球の公転軌道の直径172,102,795（英マイル単位）はDorbterboid-aze-poulと覚えられる．最初のDorbterというのがdiameter of the orbit（軌道の直径）を想起させ，その後の部分が</P>
+<TABLE border="0">
+<TR><TD>b</TD><TD>oi</TD><TD>d</TD><TD>a</TD><TD>z</TD><TD>e</TD><TD>p</TD><TD>ou</TD><TD>l</TD></TR>
+<TR><TD>1</TD><TD>7</TD><TD>2</TD><TD>1</TD><TD>0</TD><TD>2</TD><TD>7</TD><TD>9</TD><TD>5</TD></TR>
+</TABLE>
+<P>として数字列を表わしている．</P>
+<P>これに対し，ドジソンの「記憶術」は次のように子音だけを使って数字を表わす．</P>
+<TABLE border="1">
+<TR><TD>1</TD><TD>2</TD><TD>3</TD><TD>4</TD><TD>5</TD><TD>6</TD><TD>7</TD><TD>8</TD><TD>9</TD><TD>0</TD></TR>
+<TR><TD>b</TD><TD>d</TD><TD>t</TD><TD>f</TD><TD>l</TD><TD>s</TD><TD>p</TD><TD>h</TD><TD>n</TD><TD>z</TD></TR>
+<TR><TD>c</TD><TD>w</TD><TD>j</TD><TD>qu</TD><TD>v</TD><TD>x</TD><TD>m</TD><TD>k</TD><TD>g</TD><TD>r</TD></TR>
+</TABLE>
+<P>そうすれば間を埋める母音を自由に選ぶことで単語を選ぶことができる．さらにそうして選んだ単語を使った詩なり短文なりを作ることによって記憶を助けることができる．</P>
+<P>これは本来は記憶術であってドジソン自身これを暗号とは呼んでいなかったが，友達への手紙で暗号のように使ったことがあるという．</P>
+
+<H3>参考文献</H3>
+<P>Francine F. Abeles (2005), "Lewis Carroll's ciphers: The literary connections", <i>Advances in Applied Mathematics</i> 34 (2005), 697-708 (<A HREF="https://www.academia.edu/16273121/Lewis_Carrolls_Ciphers_The_Literary_Connections">Academia.edu</A>)</P>
+<P>Lewis Carroll's Ciphers (<A HREF="https://lewiscarrollresources.net/ciphers/">Lewis Carroll Resources</A>)</P>
+<!--『不思議の国の論理学』　未見-->
+<br>
+<br>
+<font size="2">
+&COPY;2021 S.Tomokiyo<br>
+First posted on 16 January 2021. Last modified on 19 October 2021.<br>
+<A HREF="crypto.htm">Cryptiana: Articles on Historical Cryptography</A><BR>
+</font>
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>

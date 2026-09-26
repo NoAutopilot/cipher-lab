@@ -1,0 +1,197 @@
+<HTML>
+<HEAD>
+<TITLE>
+William Blencowe's "Safest and Most Expeditious" Cipher
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="code, cipher, William Blencowe, columnar transposition">
+<link rel=stylesheet type=text/css href=decode2.css>
+</HEAD>
+
+<BODY>
+<H1>William Blencowe's "Safest and Most Expeditious" Cipher</H1>
+
+<P>William Blencowe <span class="note">(<A HREF="https://en.wikipedia.org/wiki/William_Blencowe">Wikipedia</A>)</span> was a grandson of the celebrated mathematician and codebreaker, John Wallis (see <A HREF="wallis_e.htm">another article</A>), who taught his skill of deciphering to his grandson. Upon Wallis' death, Blencowe became the first official decipherer of England, and was guaranteed a fixed annual income.</P>
+<P>The papers related to Blencowe in <A HREF="http://www.nationalarchives.gov.uk/a2a/records.aspx?cat=109-mss_1-2_1&cid=2-2#2-2">Lambeth Palace Library</A>, Gibson Papers M930 (<A HREF="http://discovery.nationalarchives.gov.uk/details/rd/73d01250-66bd-4e31-9039-ad1e71ee2cbe">TNA catalogue</A>, <A HREF="http://archives.lambethpalacelibrary.org.uk/CalmView/Record.aspx?src=CalmView.Catalog&id=MSS%2f929-942%2f930&pos=13">Library catalogue</A>) include:</P>
+<blockquote><P>225 Description of a system of cypher entitled 'A method of writing that I count the safest and most expeditious that was euer yet practised when well understood', c.1700. Perhaps by William Blencowe. 5 ff.</P></blockquote>
+<P>The "safest and most expeditious" scheme is a columnar transposition cipher, with the key (the order of columns) hidden by a substitution cipher. An additional twist is in that units of transposition can be bigrams such as fo, la, to, ar, nd, ng, th, tw, and th as well as single letters. In principle, the plaintext can be split into any units. Although the bigrams may mislead codebreakers at first, once transposition is suspected, they would help rather than hinder codebreaking.</P>
+
+<H3>Scheme</H3>
+<H4>1. Enciphering the Key</H4>
+<P>The key (the order of columns), e.g.,</P>
+<P><TT>15 12 10 6 1 14 3 8 5 2 7 9 13 4 11 16</TT></P>
+<P>is enciphered as</P>
+<P><TT>&nbsp;p &nbsp;m &nbsp;k f a &nbsp;o c h e b g i &nbsp;n d &nbsp;l &nbsp;q</TT></P>
+<P>with a substitution cipher:</P>
+<P><TT>a b c d e f g h i &nbsp;k &nbsp;l &nbsp;m &nbsp;n &nbsp;o &nbsp;p &nbsp;q &nbsp;r &nbsp;s &nbsp;t &nbsp;u &nbsp;w &nbsp;x &nbsp;y &nbsp;z</TT></P>
+<P><TT>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24</TT></P>
+<P>Nulls may be added at the beginning and the end.</P>
+
+<H4>2. Filling a Grid</H4>
+<P>The plaintext, broken into single letters or bigrams in any way, is written in a grid, from top to bottom and from left to right, as usual. Some columns are reserved and filled with null characters (or bigrams).</P>
+<P>A comma is appended to the last letter (or bigram) of a word. This is to help the recipient.</P>
+
+<H4>3. Columnar Transposition</H4>
+<P>Letters/bigrams are transcribed columnwise, from bottom upwards, according to the ordering specified by the key.</P>
+<P>The number of lines, which is necessary for the recipient, is written at the bottom. In the example given, "13" is indicated by "(4.1.3.37.)", in which only the middle figures "1" and "3" are significant.</P>
+
+<H4>4. Reading</H4>
+<P>The recipient prepares a grid with a number of lines specified in the ciphertext, and numbers the columns according to the key. The letters/bigrams of the ciphertext is transcribed in the order of columns specified by the key, from bottom upwards.</P>
+
+
+<H3>Dating</H3>
+<P>The plaintext used as an example is about expected counterattack of James II by landing in Scotland. The situation reminds one of battles during the Nine Years War such as the Battle of the Boyne (1690) and the Battle of La Hogue (1692). Even in 1692, Blencowe was yet only nine years old, but of course, even if this counterattack had been really expected at the time, it would not exclude the possibility that the document was made in later years.</P>
+
+
+<H3>Transcription</H3>
+<DIV class="kakomi">
+<P>A method of writing that I count the safest and most expeditious that was euer yet practiced when well understood.</P>
+<P>Theorem</P>
+<P>The writing in 34 
+Columns as within
+lin[?](16) affords more
+variety of positions
+then the
+number of sands
+that would make
+a globe of ten times a
+greater Diameter
+then that
+of our Earth & sea</P>
+<P>vid. Tacquel[?]</P>
+<br>
+<P>(1)</P>
+<P>Let two men Correspond, and agree to
+write one to another in 16 Columnes as on the other leaf.
+and in this order viz
+15.12.10.6.1.14.3.8.5.2.7.9.13.4.11.16.
+And this their key they must place
+on the top, or at the head of a ruled paper
+& it will bee convenient to write them
+in red Ink for distinction.
+And let them agree that the 3 columnes (15) (8) & (16)
+bee nulls, & filld up before they begin to write
+to prevent mistakes.</P>
+<P>And let the number of lines whateuer it bee (as they
+haue occasion) bee markt at the head,
+or, else at the lower end of the letter.
+being ye middle figures for ex. if the number
+of lines exceed not 9, let it bee the two middle
+figures, that signify.</P>
+<P>So then let the number of lines bee (13) & thus express
+(4.1.3.37.) And one of them writes to
+his correspondent as on the other side beginning
+at the lower end of the columnes, & so write upwards.</P>
+<P>And they may eith[?] haue printed papers
+ready ruled, or else they may draw
+lines by the help of a ruled paper underneath
+as I haue don, & when they haue read
+their letters, burn them & to[?] keep no thing
+....</P>
+<br>
+<P>(2)</P>
+<P>But there are thousand other ways of disguising
+the key of the cypher. so as if any one take up
+or find the paper where they are, they can neuer
+find what it is. which will depend upon euery
+mans particular fancy.</P>
+<P>For example
+When they haue made an Alphabet of 
+the 24 letters thus</P>
+<TT>
+<P>a|b|c|d|e|f|g|h|i| k| l| m| n| o|&</P>
+<P>1|2|3|4|5|6|7|8|9|10|11|12|13|14|</P>
+<P>&nbsp;p| q| r| s| t| u| w| x| y| z|</P>
+<P>15|16|17|18|19|20|21|22|23|24|</P>
+</TT>
+<P>Then take the letters answering to the particular
+numbers of the Key, and keep them
+apart[?], & when you haue occasion,
+make a new Alphabet, & you will find
+by them the numbers, p for (15) m for (12) &c.<P>
+<P>p m k f a o c h e b g i n d l q</P>
+<P>And if you will bee more secure
+you may putt 3 (or 4) nulls before
+and as many at the end, suppose 3. Then</P>
+<P>s f m p m k f a o c h e b g i n d l q h p d</P>
+<P>And thus I think it impossible to divine
+that these letters signify the order of 
+Columnes by their respective numbers.</P>
+<br>
+<P>(3)</P>
+<img width="600" src="blencowe1.png" style="margin:1em 1em 1em;"><br>
+<P>[The plaintext reads: Sir, I can assure you that King James is got into Scotland with an Army of twenty thousand Irish & there ar twenty thousand Highlanders who ar al papists joyned with him. And they intend to march towards Edenborough the fourteenth of the next month. And they hope in ye meantime that ye French wil be able to land an Army in ye north.]</P>
+<P>Hauing filld the Cypher hee dictates
+to his clerk or secretary, as follows
+who can neuer know what hee
+writes. And makes him write just[?] two
+columnes in a line</P>
+<br>
+<P>One thing is likewise to bee observed that a comma
+bee at the end of euery word as you write. And the
+Clerk must otherwise make a prick at euery Letter
+& begin to write at the bottom & so upwards.</P>
+<br>
+<P>a.c.e.o.t.ds,th.al,th.an,th,es,an,my,be,m.n.t.o.nd,jo.H.sh,y,in.y.</P>
+<P>A.w.n,th,e.de.in.pi.sa.I.A.g.su.r.to,ye,ho.e,th.c.wth,de.re,en.t.at,</P>
+<P>r.il,ti.A.n.nb.te.sts,nd,ri.rm.ot,re,d,n.m.m.r.ar,nd,ar,ty,us.i.m.c</P>
+<P>in,a.e,d,h,ro.to,y.ig.&,of,to,ou,a.b.d.g.f.p,no,n.is,d,a.p,k.</P>
+<P>ye,b.th.th.of,u.m.n.hl.th.t.S.t.n.e.ye,xt,u.w.A.ho,en.o.w.Ja.I</P>
+<P>th,l.F.pe,n.e,h,hi.rs,ar,ty,la.ki.a.r.in,e.fo.to.m,w.tw.th.nd,ng,Sr,</P>
+<P>no.le,at,ey,th.gh,ar.ed,an.e.w.co.h.n,h,a.n.e.E.ey,pa.ou.d,an,is,as.</P>
+<P>r.p.m,g.f.c,a.n.do,ll,b.m,d.g.b.d.m,p.q.b,s.r,d.c,a.n</P>
+<P>(4.1.3.37.)</P>
+<br>
+<P>[(4) is missing in my copy.]</P>
+<br>
+<P>(5)</P>
+<P>His Correspondent who receiues this Letter,
+finding at the bottom 4.1.3.37. knows that
+its written in 13 Lines. And by his key knows the
+order of Columnes. And therefore draws
+his Lines, as beneath, and marks the Columne
+with red Ink, and then begins with the
+first & 2d Columne to inscribe, till hee
+has filld the Figure, onely where there is
+a prick, hee need make nothing, bec: the
+Letter is confined in a square, and the Commas
+will help him to read it the easier, because
+they terminat each word. And the 15th 8th & 16th
+Columnes hee needs not inscribe,
+being nulls.</P>
+<P>And when hee has filld all the columnes hee may
+read the Letter with pleasure.</P>
+<img width="600" src="blencowe2.png" style="margin:1em 1em 1em;"><br>
+
+<P>Here the Clerk may dictat, & the Correspond^s inscribe, and when hee
+has filld it, it will bee pleasant to find it right.</P>
+</DIV>
+<br>
+<br>
+<font size="2">
+&COPY;2024 S.Tomokiyo<br>
+First posted on 31 March 2024. Last modified on 31 March 2024.<br>
+<A HREF="crypto.htm">Articles on Historical Cryptography</A><BR>
+</font>
+
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>
+
+
+
+
+

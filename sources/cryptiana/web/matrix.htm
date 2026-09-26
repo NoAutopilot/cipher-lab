@@ -1,0 +1,129 @@
+<HTML>
+<HEAD>
+<TITLE>
+Vatican Substitution Ciphers Designed on Alphabetical Matrices
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="Cipher, Code">
+<link rel=stylesheet type=text/css href=decode2.css>
+
+<style type="text/css">
+<!--
+td {
+  text-align: center;
+}
+-->
+</style>
+
+
+</HEAD>
+<BODY>
+<H1>Vatican Substitution Ciphers Designed on Alphabetical Matrices</H1>
+
+
+<P>Suppose you are to make a substitution cipher (in figures), how would you do that? You may just write sequential numbers for the letters of the alphabet, but, of course, the assignment should be random to enhance security. In-between, some ciphers employ an ordering that is not completely alphabetical but has some regularity. The present article describes substitution ciphers whose regularity becomes apparent when the cipher alphabet is written in a matrix (checkerboard) format.</P>
+
+<H3>Substitution Ciphers with Regular Assignment</H3>
+<P>First, the simplest sort of substitution ciphers are reviewed, in which the assignment of figures is almost in alphabetical order.</P>
+<P>The following is a cipher between H. Manetti and Ludovico Castelvetri <span class="note">(Meister (1906), <i>Die Geheimschrift im Dienste der P&auml;pstlichen Kurie</i>, p.211)</span> ("0" and "1" are not used).</P>
+
+<TABLE border="1" cellpadding="2">
+<TR><TD>a</TD><TD>b</TD><TD>c</TD><TD>d</TD><TD>e</TD><TD>f</TD><TD>g</TD><TD>h</TD><TD>i</TD><TD>l</TD><TD>m</TD><TD>n</TD><TD>o</TD><TD>p</TD><TD>q</TD><TD>r</TD><TD>s</TD><TD>t</TD><TD>u</TD><TD>x</TD><TD>z</TD></TR>
+<TR><TD>22</TD><TD>23</TD><TD>24</TD><TD>25</TD><TD>26</TD><TD>27</TD><TD>28</TD><TD>29</TD><TD>32</TD><TD>33</TD><TD>34</TD><TD>35</TD><TD>36</TD><TD>37</TD><TD>38</TD><TD>39</TD><TD>42</TD><TD>43</TD><TD>44</TD><TD>45</TD><TD>46</TD></TR>
+</TABLE>
+
+<P>The following was used by Louis Gonzaga, Duke of Nevers (no.25 of the Nevers Collection, for which see <A HREF="nevers.htm">another article</A>).</P>
+<TABLE border="1"  cellpadding="2">
+<TR><TD>a</TD><TD>b</TD><TD>c</TD><TD>d</TD><TD>e</TD><TD>f</TD><TD>g</TD><TD>h</TD><TD>i</TD><TD>l</TD><TD>m</TD><TD>n</TD><TD>o</TD><TD>p</TD><TD>q</TD><TD>r</TD><TD>s</TD><TD>t</TD><TD>u</TD><TD>x</TD><TD>y</TD><TD>z</TD></TR>
+<TR><TD>32</TD><TD>36</TD><TD>37</TD><TD>38</TD><TD>42</TD><TD>46</TD><TD>47</TD><TD>48</TD><TD>52</TD><TD>56</TD><TD>57</TD><TD>62</TD><TD>65</TD><TD>72</TD><TD>73</TD><TD>74</TD><TD>82</TD><TD>85</TD><TD>92</TD><TD>95</TD><TD>96</TD><TD>97</TD></TR>
+<TR><TD>34</TD><TD></TD><TD></TD><TD></TD><TD>43</TD><TD></TD><TD></TD><TD></TD><TD>53</TD><TD></TD><TD></TD><TD>63</TD><TD>67</TD><TD></TD><TD></TD><TD>75</TD><TD>83</TD><TD>86</TD><TD>93</TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>35</TD><TD></TD><TD></TD><TD></TD><TD>45</TD><TD></TD><TD></TD><TD></TD><TD>54</TD><TD></TD><TD></TD><TD>64</TD><TD>68</TD><TD></TD><TD></TD><TD>76</TD><TD>84</TD><TD>87</TD><TD>94</TD><TD></TD><TD></TD><TD></TD></TR>
+</TABLE>
+
+<P>Yet another example is a cipher of a Spanish agent, don Guerau de Spes printed in Devos (1950) (Cp.25 of <A HREF="spanish3.htm">another article</A>).</P>
+<TABLE border="1"  cellpadding="2">
+<TR><TD>a</TD><TD>b</TD><TD>c</TD><TD>d</TD><TD>e</TD><TD>f</TD><TD>g</TD><TD>h</TD><TD>i</TD><TD>k</TD><TD>l</TD><TD>m</TD><TD>n</TD><TD>o</TD><TD>p</TD><TD>q</TD><TD>r</TD><TD>s</TD><TD>t</TD><TD>v</TD><TD>x</TD><TD>y</TD><TD>z</TD></TR>
+<TR><TD>3</TD><TD>6</TD><TD>9</TD><TD>12</TD><TD>15</TD><TD>18</TD><TD>21</TD><TD>24</TD><TD>27</TD><TD>30</TD><TD>33</TD><TD>36</TD><TD>39</TD><TD>42</TD><TD>45</TD><TD>47</TD><TD>49</TD><TD>51</TD><TD>53</TD><TD>55</TD><TD>58</TD><TD>60</TD><TD>62</TD></TR>
+<TR><TD>4</TD><TD>7</TD><TD>10</TD><TD>13</TD><TD>16</TD><TD>19</TD><TD>22</TD><TD>25</TD><TD>28</TD><TD>31</TD><TD>34</TD><TD>37</TD><TD>40</TD><TD>43</TD><TD>46</TD><TD>48</TD><TD>50</TD><TD>52</TD><TD>54</TD><TD>56</TD><TD>59</TD><TD>61</TD><TD>63</TD></TR>
+<TR><TD>5</TD><TD>8</TD><TD>11</TD><TD>14</TD><TD>17</TD><TD>20</TD><TD>23</TD><TD>26</TD><TD>29</TD><TD>32</TD><TD>35</TD><TD>38</TD><TD>41</TD><TD>44</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>57</TD><TD></TD><TD></TD><TD></TD></TR>
+</TABLE>
+
+<P>Such regular assignment is a weakness before cryptanalysis. Once a couple of letters are identified, the whole cipher alphabet may be inferred, as was the case when I deciphered a letter to the Marquis of Ormonde (see <A HREF="ormonde.htm">another article</A>) and one to Mathieu Schiner (see <A HREF="schiner.htm">another article</A>).</P>
+
+<!--<P>An obvious alternative would have been to write the numbers in random places. It would have been no harder to create a cipher as follows than the regular assignment in the above.</P>
+
+
+<TABLE border="1">
+<TR><TD>a</TD><TD>b</TD><TD>c</TD><TD>d</TD><TD>e</TD><TD>f</TD><TD>g</TD><TD>h</TD><TD>i</TD><TD>l</TD><TD>m</TD><TD>n</TD><TD>o</TD><TD>p</TD><TD>q</TD>.<TD>r</TD><TD>s</TD><TD>t</TD><TD>u</TD><TD>x</TD><TD>z</TD></TR>
+<TR><TD>43</TD><TD>39</TD><TD>34</TD><TD>33</TD><TD>42</TD><TD>23</TD><TD>46</TD><TD>35</TD><TD>28</TD><TD>22</TD><TD>26</TD><TD>28</TD><TD>37</TD><TD>25</TD><TD>32</TD><TD>24</TD><TD>45</TD><TD>29</TD><TD>44</TD><TD>36</TD><TD>38</TD></TR>
+</TABLE>
+-->
+
+<H3>Substitution Ciphers with Regularity in a Matrix</H3>
+<P>Regularity in cipher was crucial in an impressive ciphertext-only attack on a papal cipher by Albert C. Leighton (see <A HREF="leighton.htm">another article</A>). The regularity in this case, however, is not apparent in the original cipher preserved in the Vatican archives and printed in Meister (1906), p.235.</P>
+<img src="leighton2.jpg" width="400" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+
+
+<P>Regularity is clearly seen when the cipher alphabet is formatted in a matrix.</P>
+<table border="0">
+<tr><td>
+<TABLE border="1" cellpadding="3">
+<TR><TD></TD><TD bgcolor="#888888">1</TD><TD bgcolor="#888888">3</TD><TD bgcolor="#888888">5</TD><TD bgcolor="#888888">7</TD><TD bgcolor="#888888">9</TD></TR>
+<TR><TD bgcolor="#888888">1 or 2 or _</TD><TD><b>U</b></TD><TD><b>E</b></TD><TD><b>A</b></TD><TD><b>I</b></TD><TD><b>O</b></TD></TR>
+<TR><TD bgcolor="#888888">3 or 4</TD><TD>Z/et,con</TD><TD>F</TD><TD>B</TD><TD>L</TD><TD>P</TD></TR>
+<TR><TD bgcolor="#888888">5 or 6</TD><TD>non/come</TD><TD>G</TD><TD>C</TD><TD>M</TD><TD>R</TD></TR>
+<TR><TD bgcolor="#888888">7 or 8</TD><TD>quando/avis..</TD><TD>quest</TD><TD>D</TD><TD>N</TD><TD>S</TD></TR>
+<TR><TD bgcolor="#888888">9</TD><TD>letter..</TD><TD>quell</TD><TD>qui</TD><TD>che,chi</TD><TD>T</TD></TR>
+</TABLE>
+</td><td style="text-align:left" valign="bottom">Cipher for Commendone,<br> nuncio in Poland<br> (1563-1565)<br><br></td></tr>
+<tr><td colspan="2"><font size="2">("Z/et,con" means 31 is "Z" and 41 is "et or con." The ciphers herein are reproduced to<br>
+ illustrate the regular assignment of the letters and may not be accurate in other details.)</font></td></tr>
+</table>
+
+<P>The letters are written in alphabetical order in separate columns and all the columns are headed by vowels. Every letter can be represented in two ways, with the first digit being either one of two candidates. (In other words, for the first digit, "1" and "2" are equivalent; so are pairs "3" and "4"; "5" and "6"; and "7" and "8".) Vowels have a third representation, in which the first digit is a blank (denoted "_" herein). Absence of "H" (which is silent in Italian) and "Q" (which occurs only in the combination "QU") is also noted. The second digit is restricted to odd numbers (figures in the nomenclature use even numbers in the second digit).</P>
+
+<H3>More Specimens</H3>
+<P>Meister (1906) includes many other ciphers of similar assignment. (Needless to say, there are also other ciphers that do not fit the pattern.)</P>
+<img src="matrix1.png" width="700" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+<img src="matrix2.png" width="740" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+<P>These examples suggest that similar patterns were often used in the 1550s-1560s. From the following examples, although some ciphers continued to employ regular ordering of the letters, the simplest equivalence in pairs ("1" and "2", "3" and "4", etc.) appear to have been abandoned by the 1570s.</P>
+<img src="matrix3.png" width="500" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+
+<H3>Spanish Blocked-Square Ciphers (1585-1590)</H3>
+<P>The two Spanish ciphers in the 1580s below (see <A HREF="spanish3#SEC9">another article</A>) also have alphabetical ordering in a matrix. Moreover, the matrix form reveals that they are basically made from the same arrangement but with the ordering of rows reversed.</P>
+<img src="spanish3cp37.png" width="650" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+<img src="phelippes1.png" width="650" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+<P>However, as seen in the first image above, the version preserved in the archives is not in matrix form.</P>
+
+<H3>Why Matrix?</H3>
+<P>The alphabetical ordering in a matrix format would not have been a result of assigning figures to serially listed letters a, b, c, ..., z. It seems certain that these ciphers were created by filling a matrix column by column and then transcribing into a serial alphabetical table.</P>
+<P>Why take such a trouble, when it would have been far easier (and far securer) if one had just assigned figures at random?</P>
+<P>The regular ordering in a matrix format is convenient both in enciphering and deciphering, while enhancing security by introducing some irregularity in the correspondence between numerical and alphabetical sequences. Two-dimensional arrangement was actually used in more extensive ciphers encompassing syllables or words (see, e.g., <A HREF="http://cryptiana.web.fc2.com/code/glorious.htm">another article</A>). For the papal ciphers discussed herein (and the two Spanish specimens above), the serial format preserved in the archives seems to indicate that the ciphers were not actually used in matrix form.</P>
+<P>Probably, there is no cryptologically sound reason for use of the matrix in designing these ciphers. That is why similar patterns are not found in the <A HREF="nevers.htm">Nevers Collection</A> or in Devos (1950) (with the Spanish exceptions above).</P>
+<P>One must bear in mind that what is obvious today has not been always so. For example, use of Arabic figures is simpler and yet no less effective than using exotic symbols but it was only in the 17th century that use of Arabic figures became a norm outside Italy <span class="note">(for England, see <A HREF="elizabeth.htm">here</A>; for Spain, see <A HREF="spanish4.htm">here</A>)</span>. Even in Italy, the ciphers in record show initial reluctance to employ three-digit figures. They tended to use diacritics or variant figures to increase the vocabulary <span class="note">(see Meister (1906) in passim)</span>. The extant papal ciphers even include many polyphonic ciphers, which are inconvenient and were not widely used otherwise (see <A HREF="polyphonic.htm">another article</A>).</P>
+<P>Use of a matrix (or checkerboard) in designing substitution ciphers is not a noteworthy cryptologic feature. But the knowledge may help codebreaking of papal ciphers from the same period.</P>
+
+<br>
+<br>
+<font size="2">
+&COPY;2018 S.Tomokiyo<br>
+First posted on 7 September 2018. Last modified on 30 November 2019.<br>
+<A HREF="crypto.htm">Cryptiana: Articles on Historical Cryptography</A><BR>
+</font>
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>
+

@@ -1,0 +1,147 @@
+<HTML>
+<HEAD>
+<TITLE>
+Rotating Grille for Alexander Hamilton
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="Alexander Hamilton, Cipher, Code, rotating grille">
+<link rel=stylesheet type=text/css href=decode2.css>
+</HEAD>
+
+<BODY>
+<H1>Rotating Grille for Alexander Hamilton</H1>
+
+<H2>Rotating Grille for Alexander Hamilton</H2>
+<P>Some years after Alexander Hamilton died (1804) from the wound he received in a duel with Aaron Burr, a packet containing instructions of a cipher was found among his papers. The endorsement states it was forwarded to Hamilton on 23 May 1803. (As to the origin of the document, see the editors' notes in <i>The Papers of Alexander Hamilton</i>.)<P>
+
+<H3>Rotating Grille</H3>
+<P>The method described in the document is what is known as a rotating grille or a turning grille. It was popular at the end of the eighteenth century, notably after C. F. Hindenburg first provided a complete description of the scheme in 1796 <span class="note">(Karl de Leeuw, <i>Cryptology and Statecraft in the Dutch Republic</i>, p.111)</span>.</P>
+
+<P>A grille is a sheet with a grid of squares thereon. Some of the squares are cut out. The figure below shows a procedure to encipher a phrase "The Lord is my shepherd. I shall not be in want." with such a grille.</P>
+
+<P><img src="grille.jpg"></P>
+
+<P>In this example, the grille has a 6-by-6 grid of squares, of which nine are cut out. To begin with, the first nine letters of the phrase (t, h, e, l, o, r, d, i, s) are one by one written in each square cut out, from left to right, top to bottom. Then, the grille is turned by ninety degrees in a predetermined direction (counterclockwise in this example). Then, the next nine letters (m, y, s, h, e, p, h, e, r) are written similarly. After the steps of turning the grille and writing the subsequent nine letters are repeated two more times, every square is filled by exactly one letter.</P>
+<P>Copying the letters written from left to right, top to bottom, the following ciphertext is obtained:<br>
+mtdhyeisthlbehoeapirhldnelwrainnostt.</P>
+
+<H3>Deciphering with a Rotating Grille</H3>
+<P>A recipient should have the same grille as the one used in enciphering. Knowing the grille is 6-by-6, the decipherer copies the enciphered message in a 6-by-6 grid of squares of the same size as the grille:<br>
+<TT style="letter-spacing: 5pt;">
+mtdhye<br>
+isthlb<br>
+ehoeap<br>
+irhldn<br>
+elwrai<br>
+nnostt<br>
+</TT>
+</P>
+<P>Applying the grille, the recipient would read the first nine letters (t, h, e, l, o, r, d, i, s) through the cut out squares. After turning the grille by ninety degrees, the next nine letters can be read, and so on.</P>
+
+<H3>Preparation of a Rotating Grille</H3>
+<P>It is noted that, when enciphering, every time the grille is turned, the cut out squares are precisely positioned at squares not yet filled. To achieve such a feat, the squares of the grille to be cut out should be carefully chosen. The figure below shows a procedure for that.</P>
+
+<P><img src="grille2.jpg"></P>
+
+<P>First, the grid of squares is divided into four 3-by-3 quadrants. The nine squares of each quadrant are numbered 1-9 in a corresponding manner. Then, among the four squares numbered "1", one is selected to be cut out. In the above example, the rightmost square of the top row is cut out. This ensures that each of the four squares numbered "1" is exposed exactly once during enciphering by this particular cut-out square. Similarly, one of the four squares numbered "2" is selected to be cut out. By choosing thus exactly one square to be cut out from among the four squares bearing the same number, it can be ensured that each square can be filled at one of the four rotating positions.</P>
+
+<H3>Rotating Grille for Alexander Hamilton</H3>
+<P>A 6-by-6 grille may be too small to be used for messages in practice. The rotating grille for Hamilton contained 26-by-26 squares.</P>
+<P>The instructions (in French) read as follows (the present author's translation).</P>
+
+<DIV class="kakomi">
+To use the checkerboard included here in place of a cipher
+in order to prevent discovery of your correspondence,
+employ the following manner.
+After having written your letter as usual, prepare the paper, on which you intend to put down your secret copy, of the same size as the square of the checkerboard
+placed on the said paper.
+Fix the square to the paper at the four corners with pins.
+It does not matter at which corner you begin, either A, B, C, or D,
+provided that you take care to turn the checkerboard to the left.
+Thus, if you begin at the corner A, you write your communication
+by placing on the paper prepared to this effect
+only one letter in each square cut out, proceeding from the right to the left, line by line.
+After having written in this manner to the end of the page,
+detach the checkerboard, turn it from the right to the left,
+with A making way for B, and fix it with pins
+by the same holes on your paper for the letter.
+Continue to copy your letter as explained herein above.
+After having filled all the squares cut out of the said page,
+turn again the checkerboard such that B makes way for C.
+By following this manner until you have used the four corners of the checkerboard, you will have filled your paper
+with twenty-six lines, each containing 26 letters.
+In order to avoid any difficulty and confusion, you may designate
+at which corner of the checkerboard you began, by placing at the top of your communication the letter indicating the said corner, for herein above the letter A.
+</DIV>
+
+<H2>Other codes and ciphers</H2>
+<P>Some other codes and ciphers by and for Hamilton are known, though the repertory was far less extensive than that of Thomas Jefferson or John Jay, who experienced foreign missions.</P>
+<H3>Roman Nicknames for Gouverneur Morris (WE095)</H3>
+<P>From 1792 to 1794, Hamilton's friend Gouverneur Morris, staying in Europe since 1789, was US minister residing in France. When Morris learned of his appointment, he wrote to Hamilton and proposed mutual confidential communication<!--cf. Weber p.121-->. Hamilton had a cipher devised and, for the time, proposed substitution of Roman names for some political figures.</P>
+<DIV class="kakomi">
+Will it not be a necessary preliminary to agree upon a cypher? One has been devised for me, which, though simple in execution, is tedious in preparation. I may shortly forward it.<br>
+In the mean time, let us settle some appellations for certain official characters. I will call,<br>
+The President, Scaevola.<br>
+The Vice President, Brutus.<br>
+Secretary of State, Scipio.<br>
+Secretary at War, Sempronius.<br>
+Sec'y of the Treasury, Paulus.<br>
+Attorney General, Lysander.<br>
+Senators.<br>
+Robert Morris, Cato.<br>
+Oliver Ellsworth, Virginius.<br>
+Rufus King, Leonidas.<br>
+George Cabot, Portius.<br>
+Aaron Burr, Saevius.<br>
+Richard Henry Lee, Marcus.<br>
+[James] Monroe, Sydney.<br>
+Ralph Izard, Themistocles.<br>
+Representatives.<br>
+James Madison, Tarquin.<br>
+[Fisher] Ames, Valerius.<br>
+Abraham Baldwin, Hampden.<br>
+John Lawrence, Solon.<br>
+[John F.] Mercer, Tacitus.<br>
+[William Vans] Murray, Livy.<br>
+Thomas Fitzsimmons, Cicero.<br>
+Egbert Benson, Cromwell.<br>
+Jeremiah Wadsworth, Titius.<br>
+Jonathan Trumbull, Quintus.<br>
+[William B.] Giles, Chronus.<br>
+You see that I have avoided characteristic names.<br>
+<span class="note">Alexander Hamilton to Gouverneur Morris, 22 June 1792</span>
+</DIV>
+
+<H3>Book Code based on Entick's Spelling Dictionary</H3>
+<P>In June 1799, Hamilton received from his father-in-law, General Philip Schuyler, "a lengthy and complex code system using Entick's Spelling Dictionary" <span class="note">(Weber p.146 n.9)</span>.</P>
+
+<H3>Projected Hamilton-King Cipher</H3>
+<P>In 1800, Hamilton was preparing a cipher for correspondence with Rufus King, then US minister in London.</P>
+<DIV class="kakomi">
+If the projected cipher was established, I should now have very much to say to you. But for this the arrangement is not yet mature. Soon, however, I hope to make it so, by forwarding to you the counterpart, which is in preparation. I must, however, give you some sketch of our affairs.<br>
+<span class="note">Alexander Hamilton to Rufus King, 5 January 1800</span>
+</DIV>
+
+<br>
+<br>
+<font size="2">
+&COPY;2009 S.Tomokiyo<br>
+First posted on 26 August 2009. Last modified on 26 August 2009.<br>
+<A HREF="crypto.htm">Articles on Historical Cryptography</A><BR>
+</font>
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>

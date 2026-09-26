@@ -1,0 +1,149 @@
+<HTML>
+<HEAD>
+<TITLE>
+Samuel Morland's "New Method" Used for Charles II's Ambassadors
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="code, cipher, Samuel Morland, columnar transposition cipher">
+<link rel=stylesheet type=text/css href=decode2.css>
+</HEAD>
+
+<BODY>
+<H1>Samuel Morland's "New Method" Used for Charles II's Ambassadors</H1>
+<P>TNA SP106/6 contains printed forms with instructions to John Trevor (1668), apparently for columnar transposition cipher. The characteristic design of the key including a caption "CLAVIS UNIVERSALIS" turned out to belong to a scheme printed in Samuel Morland's <i>A New Method of Cryptography</i> (1666).</P>
+<DIV style="float:right; width:703px">
+<img src="morland1.png" width="600" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+<img src="morland2.png" width="600" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+</DIV>
+
+<H2>Application of Samuel Morland's Template in SP106/6</H2>
+<H3>John Trevor, Robert Southwell (SP106/6 no.26)</H3>
+<P>SP106/6 (numbered "26" and "26A"; DECODE no.500 <span class="note">(image files are numbered 0080-0083)</span>) contains two sheets (no.26A) with a printed grid of 21 lines and 34 columns, endorsed "To sr Jo. Trevor of[?] the 9th April 68." The recipient is John Trevor <span class="note">(<A HREF="https://en.wikipedia.org/wiki/John_Trevor_(1626%E2%80%931672)">Wikipedia</A>)</span>, who was engaged in diplomatic negotiations in France.</P>
+<P>The message in the grid reads:</P>
+<DIV class="kakomi">
+Instructions for Our right trusty and welbeloved sir John Trevor Knt Our envoye' extraordinaire with our good Brother the most Xtian King. Att Whitehall the ninth day of Aprill 1668. Whereas in the late Instructions Wee sent you of the fourth instant there may be found one point wanting without which the most Xtian King may make difficulty to admitt the Treaty of Peace Wee have been willing at the instance and intreaty of the ambassadors of the States Generall and accordingly wee do consent that in the Treaty a condition be inserted to this effect. That wee jointly with the said States Generall shall aid and assist the most Xtian King with our Forces for the oblidgeing Spaine to accept the Peace upon the conditions already aggreed to by Us in Our last Instructions to you, yet so as not to be tyed to act by our land forces save within the limits and bounds of the XP<br>
+("XP" is padding (nulls) to completely fill the grid. The text continues to the next sheet.)<br>
+Spanish Netherlands and wee thinke fitt you should now know that this is our last and utmost condescion in this Negotiation and that Wee resolve not to admitt in the Treaty of any specification of the Forces wee are thus to assist France with Nor of any other or further Conditions then these Wee have already aggreed to for the mak[b?]ing the Peace pstulmfrqnptsdoxprntur
+</DIV>
+
+<P>These instructions are about negotiations to end the War of Devolution (1667-1668), French invasion of the Spanish Netherlands, which was a menace for the Dutch. The treaty, concluded at Saint Germain on 25 April 1668 between France, England, and the Dutch Republic, was incorporated into the Treaty of Aix-la-Chappelle signed on 2 May <span class="note">(<A HREF="https://en.wikipedia.org/wiki/War_of_Devolution">Wikipedia</A>)</span>.</P>
+
+<H3>Key</H3>
+<P>The key is in SP106/6 no.26. Under the printed column numbers 1, ..., 34 are handwritten numbers, apparently meant for columnar transposition cipher. The sequence of the 34 numbers 4, 3, 2, 1, 31, 30, 32, 29, ...., 20 in the instruction sheet is taken from the "clavis universalis" (universal key) in the key on the sheet numbered 26. The key comprises three elements:</P>
+<P>(i) "The Numerical Alphabet" for mapping letters A-T and b-s to numbers 1-34.</P>
+<P>(ii) "Private Marks for Names or words", which is a nomenclature (code list).</P>
+<P>(iii) "Clavis Universalis", which consists of 34 sequences of figures. The first sequence numbered "1" in print consists of one figure (1); the second sequence numbered "2" consists of two figures (1, 2); and so on. The 34th sequence numbered "34" indicates permutation of figures 1-34, which is copied in the grid for the instructions for Trevor.</P>
+<P>On the verso side are endorsements "Sr Rob: Southwell's Cypher" and (apparently in a later hand) "Sir Aobut[?] Smithwell." Robert Southwell worked for a peace between Spain and Portugal <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Robert_Southwell_(diplomat)">Wikipedia</A>)</span>. (England was tied with Portugal by the marriage of Charles II with Catherine of Braganza in 1662.) This is consistent with the entry of the nomenclature "King Alfonsus", referring to Alfonso VI of Portugal (r. 1656-1683). I have not identified "Smithwell".</P>
+<P>Usage of the cipher is also written:</P>
+<DIV class="kakomi"> 
+Directions<br>
+1. Let the 7 first letters (or numbers) of the first
+line of every Paragraph bee evermore Nulls.<br>
+2. Let the 8th Letter signify the number of Columns.<br>
+3. Let the 9th Letter signify the number of lines<br>
+4. Let the 10th letter signify the number of nulls that goe to compleat the figure (or Parallelogram) in which the writing is comprehended.<br>
+5. If there be noe nulls to compleat the figure, then let the 10^th: letter be (a) And all the rest of the first line evermore nulls.<br>
+6. At the end of each paragraph let there be added 4 nulls.<br>
+<br>
+To prevent mistakes, it will bee convenient soe to order the busines, as to make every line to containe a certaine number of Columns, and to fill up the line with a null or two as it shall happen. For by this meanes, though these doe escape a fault or two in any one line, it will beget noe errors in any of the rest, & consequenses of errors in that line may easily bee discovered by him who decyphers the letter.<br>
+</DIV>
+<P>These instructions are not about the transposition operation, but specify how to indicate the necessary parameters to the recipient. When the number of column is 34, for example, the transposition key is found on the line numbered "34" in the Clavis Universalis.</P>
+
+<H3>Bernard Gascoigne (SP106/6 no.15)</H3>
+<P>SP106/6 includes another instance of the same printed template for Bernard Gascoigne <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Bernard_Gascoigne">Wikipedia</A>)</span>, with different handwritten content (numbered 15; DECODE no.436 <span class="note">(image files are numbered 0061-0062)</span>).</P>
+<P>The instructions are written on the backside.</P>
+
+<DIV class="kakomi">
+1668 Sir Bernard Gascoigne<br>
+Sir Bernard Gascoigne<br>
+June 8th 68.<br>
+1. Lett the first line bee allwayes Nulls except the 3 Last Letters, the first of which must signify the number of Columnes, the next the number of Lines & the third the nulls that seme[?] to fill up the Lines,
+That[?] it bee so ordred that all superfluous letters at the ende of each line bee nulls.
+</DIV>
+
+<H3>Usage of the Template</H3>
+<P>The above instances indicate ciphers based on the template were provided to Robert Southwell sent to Portugal and also provided to Bernard Gascoigne (June 1668), and that the version for Southwell was also used (or at least tried for use) for John Trevor sent to France (April 1668).</P>
+<P>It will be seen below that the same scheme may also have been used by Sir William Temple, who worked in the Low Countries in concert with Trevor in France<!--Trevor is mentioned in Temple's letters-->.</P>
+
+<H2>Samuel Morland's <i>A New Method of Cryptography</i></H2>
+<P>The template above preserved in SP106/6 turned out to be the one printed on page 5 of Samuel Morland's <i>A New Method of Cryptography</i> (<A HREF="https://luna.folger.edu/luna/servlet/detail/FOLGERCM1~6~6~820367~153378?qvq=w4s%3A%2Fwhat%2FA%2Bnew%2Bmethod%2Bof%2Bcryptography%25252C%2Bhumbly%2Bpresented%2Bto%2Bthe%2Bmost%2Bserene%2BMajesty%2Bof%2BCharles%2Bthe%2BII.%2BBy%2BSamuel%2BMorland%2Bknight%2Band%2Bbaronet%25252C%2Band%2Bone%2Bof%2Bthe%2Bgentlemen%2Bof%2Bhis%2BMajestie%252527s%2Bprivy%2Bchamber%2Bin%2Bordinary.%2B1666.%3Bq%3ACall_Number%3D%22M2781A%22%20%3Bsort%3ACall_Number%2CMPSORTORDER1%2CCD_Title%2CImprint%3Blc%3AFOLGERCM1~6~6&mi=2&trs=4">Folger Shakespeare Library</A>). Ellison (2022), also reproducing the page in Figure 6, demonstrates the transposition scheme in detail. (The handwritten figures in SP106/6 are different from Morland's example.)</P>
+<P>Morland's scheme is not limited to a rectangular shape of the grid and the normal reading direction, but is adaptable to other figures or reading directions as agreed between the correspondents <span class="note">(Ellison (2022), p.28)</span>.</P>
+
+<P>Unlike other publications, Morland's <i>New Method</i> was not printed for the general public, but for the court of Charles II. At the time <i>New Method</i> was printed in 1666, Morland <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Samuel_Morland">Wikipedia</A>)</span> was working in the Post Office (burnt down in the Great Fire of London in September that year) <span class="note">(Ellison (2022) p.13, 51)</span>. Morland also encouraged use of printed templates to facilitate the ciphering work <span class="note">(ibid. p.48)</span>.</P>
+
+<P>It is noted Morland's page does not include the nomenclature as found in the sheets in SP106/6. The English court adapted Morland's idea for its own purposes.</P>
+
+<H2>William Temple's Troubles with Morland's Cipher</H2>
+<P>Troubles with Morland's cipher is mentioned in letters of Sir William Temple's letters.</P>
+<DIV class="kakomi">
+The Hague, 3 February 1668NS (Temple (1701), p.10 <span class="note">(also quoted in Ellison (2022), p.30)</span>)<br>
+I have received two long dispatches from your Lordship of the 18th. by several hands, and except it were about five or six Lines out of Cypher in them, am not one word the Wiser for them both, and know no help in the World for it. If I am such a Dunce, and People will not believe it, all I can say in my defence is, That <b>Sir Samuel Moorland was practising upon me but one half hour at most, just before I came away, when my Head was full both of my Dispatches newly ended, and the disposal of my Journey. He promised to send me the Papers and directions before I went, and I to practise them at my leasure. His part was omitted, and thereupon mine was never thought on, since I came away without either Rules or Practice.</b> The next entertainment I had, was such a Storm, as for three Hours made all the Mariners forget their Meat and their Drink: and after my landing, I may be allow'd to say, I had for Ten Days at least, as hard a pinch of Business as perhaps ever fell to an idle Man's share; .... God Almighty has given it to other Men to make Cyphers and to flie, but to me only to walk upon plain Ground and to read plain Hands, or plain Cyphers at most.
+</DIV>
+<P>Temple could not decipher two letters he received (probably from secretary of state, Arlington <span class="note">(cf. the greeting "My Lord" at the beginning, as opposed to "May it please your Majesty" on p.136; the third person "His Majesty" on p.13)</span>), because Morland let him practice the cipher only for half an hour, in a rush just before his departure <span class="note">(Temple temporarily returned to England and got back to The Hague; Courtenay (1836), p.148, 151)</span>. He pleads for a plain cipher. (He continues to defend himself by pointing out that the business of the letters was moot because the matter was already concluded, probably referring to the Anglo-Dutch alliance in January <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Triple_Alliance_(1668)">Wikipedia</A>)</span>.)</P>
+<P>Surprisingly, Temple discussed the cipher with De Witt, the leader of the Dutch Republic.</P>
+<DIV class="kakomi">
+... the hazard of my Credit with Monsieur de Witt, who received his Packet while I was with him, and gave me mine that was enclosed in it. When I saw it all in that Cypher, I presently shewed it him, and the conjuring Papers that came with it, <b>and the Key</b>, telling him I doubted I should never cast <b>the Figure</b> right, being so new and unpractised in it. He would not believe I could fail, at least, with Pains, and desired me to go about it, saying, he was impatient to know His Majesty's Answer about inserting the Provisional Articles, which could only be known by this dispatch, since my next would bear date after the arrival of the Treaty in England; and thereupon put me in mind of keeping my Promise with them, which I assured him of. I went home, and after six Hours spent in vain, return'd to him again at Ten that Night, and told him, I came to lose all the Credit I had gain'd with him, by telling him a thing I knew very well he had no reason to believe, which was, That they should send me Letters from Court at this time <b>in a Cypher I was able to make not one word of</b>, and so told him my story; He was a little grave at first, but presently smil'd and told me, I had gain'd greater Credit with him and the rest of the States, than I could lose by a greater matter than this, and said, perhaps he could help me in it, being as much vers'd in Cypher as another Man. <b>I very frankly pulled out my Letter, and my Key, and my Paper with the Rules, and upon it we fell to work together for Two Hours,</b> and all to as much purpose as picking Straws, and so we gave it over, but without the least ill humor, or distrust in him, only saying, Things without remedies must pass, and we must stay till my next Letters came, upon which he would believe I would tell him the King's Answer in that Point, as clearly as if I had seen it now.....<br>
+....<br>
+I beg your Lordship to use your old Cypher if you would have any use of your old Servants.
+</DIV>
+<P>The wording such as "Figure" and "Paper with the Rules" seems to indicate the cipher talked of is Morland's transposition scheme as above <span class="note">(Ellison (2022) p.28 points out there is no evidence. It is desired to locate and inspect the original cipher letters.)</span>.</P>
+<P>After this initial complaint, Temple seems to have used cipher without trouble, because he mastered the scheme or his request to revert to the old cipher was granted. His letter dated Brussels, 30 March 1668 NS <span class="note">(Temple (1701) p.19)</span> acknowledges a letter of the 13th (OS?) without any complaint. In a letter dated Brussels, 3 April 1668 NS, Temple explicitly refers to "enclos'd Cypher" (i.e., a letter in cipher) <span class="note">(ibid. p.26)</span>.</P>
+<P>In a letter of 10 April, Temple explains he had not been able to decipher because the cipher letters had not been "exactly written", pointing out that there was no problem this time though he only tried the same way as he had done.</P>
+<DIV class="kakomi">
+Brussels, 10 April 1668 NS (Temple (1701) p.29)<br>
+I Have received your Lordship's of the 23d. past, and perfectly understood all that was written in Cypher, which shews that this has been the first that has come to me exactly written, since to decypher this we went but the ways we try'd in those before.
+</DIV>
+<P>The following shows a problem recurred due to some change in the usage. (Again, the wording "ruled paper" seems to indicate the cipher is Morland's transposition scheme above.)</P>
+<DIV class="kakomi">
+The Hague, 7 June 1669NS (Temple (1699))<br>
+For Sir Samuel Morland's Cypher, we have the Key of it here, but my Secretary tells me, there is something alter'd by you in the rule and use of it, since last year, so that he has been out in something. Mr. Perwick wrote from France for a Tryal between us; therefore I should be glad you would please to send your exact Rule, as you now use it, with a good quantity of the ruled papers, by some safe hand.
+<!--https://quod.lib.umich.edu/e/eebo/A64310.0001.001?type=simple&rgn=full+text&q1=cypher&submit=Go-->
+</DIV>
+
+<H3>Richard Fanshaw's Problems</H3>
+<P>It has to be said that troubles about cipher concern not only Morland's cipher. Richard Fanshaw sent to Spain also had problems with his cipher in his correspondence with Arlington. Probably, the cipher discussed is not Morland's. (At least, the letter is before the publication of Morland's work.)</P>
+<DIV class="kakomi">
+Arlington to Fanshaw, Whitehall, 9 June 1664 (Arlington (1701) p.27)<br>
+In the mean time I am not a little troubled, that you have not been able to understand our Cypher : My Servants say confidently, they have written according to that which was exchanged betwixt us. But, that you may be sure of understanding all I have hitherto written, I have betaken my self to my several Letters, and caused transcripts to be made of the Cypher'd part of them, and send it you here enclosed in Mr. Coventry's; which we will continue to make use of, till you tell me the doubts of mine are cleared to you, or that I have opportunity of sending you another. And because we have daily more evidences of foul play by the way, I must beg of your Excellency not to be niggardly in your Cypher, and specially in things which may give our Neighbours any light into our Transactions, which they are very curious to know.<br>
+<br>
+Whitehall, 23 June 1664<br>
+I hope you have by this time found our Cypher is a practical one. For fear it should not be so, I am preparing another to send you by the first conveniency.
+</DIV>
+
+
+<H2>References</H2>
+<P>Samuel Morland (1666), <i>A New Method of Cryptography</i> (text at <A HREF="https://quod.lib.umich.edu/e/eebo2/A89320.0001.001?view=toc">EEBO (Early English Books Online)</A>; some images available at <A HREF="https://luna.folger.edu/luna/servlet/detail/FOLGERCM1~6~6~820367~153378?qvq=w4s%3A%2Fwhat%2FA%2Bnew%2Bmethod%2Bof%2Bcryptography%25252C%2Bhumbly%2Bpresented%2Bto%2Bthe%2Bmost%2Bserene%2BMajesty%2Bof%2BCharles%2Bthe%2BII.%2BBy%2BSamuel%2BMorland%2Bknight%2Band%2Bbaronet%25252C%2Band%2Bone%2Bof%2Bthe%2Bgentlemen%2Bof%2Bhis%2BMajestie%252527s%2Bprivy%2Bchamber%2Bin%2Bordinary.%2B1666.%3Bq%3ACall_Number%3D%22M2781A%22%20%3Bsort%3ACall_Number%2CMPSORTORDER1%2CCD_Title%2CImprint%3Blc%3AFOLGERCM1~6~6&mi=2&trs=4">Folger Shakespeare Library</A>)</P>
+<P>Katherine Ellison (2022), <i>Secret Writing in the Long Eighteenth Century, Theories and Practices of Cryptology</i>, Cambridge University Press.</P>
+<br>
+<P>Sir William Temple (1699), <i>Letters written by Sir William Temple during his being ambassador at The Hague, to the Earl of Arlington and Sir John Trevor, Secretaries of State to K. Charles II </i> (<A HREF="https://quod.lib.umich.edu/e/eebo/A64310.0001.001?view=toc">EEBO</A>)</P>
+<P>Sir William Temple (1701), <i>Select Letters to the Prince of Orange (now King of England,) King Charles the IId. and the Earl of Arlington upon Important Subjects</i>, vol. III (<A HREF="https://books.google.co.jp/books?id=KQVUAAAAcAAJ">Google</A>)</P>
+<P>Thomas Peregrine Courtenay ed. (1836), <i>Memoirs of the Life, Works, and Correspondence of Sir William Temple, Bart</i> vol.1(<A HREF="https://books.google.nu/books?id=d9UDAAAAQAAJ&hl=ja&source=gbs_navlinks_s">Google</A>), vol.2(<A HREF="https://books.google.co.jp/books/about/Memoirs_of_the_Life_Works_and_Correspond.html?id=7F1NAAAAcAAJ&redir_esc=y">Google</A>)</P>
+<P>Lord Arlington (1701), <i>The Right Honourable the Earl of Arlington's letters</i> (<A HREF="https://archive.org/details/righthonourablee02arli/page/26/mode/2up?q=cypher">Internet Archive</A>)</P>
+<H3>DECODE Database</H3>
+<P>H&eacute;der, M ; Megyesi, B. The DECODE Database of Historical Ciphers and Keys: Version 2. In: Dahlke, C; Megyesi, B (eds.) Proceedings of the 5th International Conference on Historical Cryptology HistoCrypt 2022. Linkoping, Sweden : LiU E-Press (2022) pp. 111-114. , 4 p. [<A HREF="https://eprints.sztaki.hu/10338/1/Heder_111_32898863_ny.pdf">pdf</A>]</P>
+<P>Megyesi Be&aacute;ta, Esslinger Bernhard, Forn&eacute;s Alicia, Kopal Nils, L&aacute;ng Benedek, Lasry George, Leeuw Karl de, Pettersson Eva, Wacker Arno, Waldisp&uuml;hl Michelle. Decryption of historical manuscripts: the DECRYPT project. CRYPTOLOGIA 44 : 6 pp. 545-559. , 15 p. (2020) [<A HREF="https://www.tandfonline.com/doi/full/10.1080/01611194.2020.1716410">link</A>]</P>
+<P>Megyesi, B., Blomqvist, N., and Pettersson, E. (2019) The DECODE Database: Collection of Historical Ciphers and Keys. In Proceedings of the 2nd International Conference on Historical Cryptology. HistoCrypt 2019, June 23-25, 2019, Mons, Belgium. NEALT Proceedings Series 37, Link&ouml;ping Electronic Press. [<A HREF="https://cl.lingfil.uu.se/~bea/publ/decode-histocrypt-2019.pdf">pdf</A>]</P>
+<br>
+<br>
+<font size="2">
+&COPY;2023 S.Tomokiyo<br>
+First posted on 14 October 2023. Last modified on 14 October 2023.<br>
+<A HREF="crypto.htm">Cryptiana: Articles on Historical Cryptography</A><BR>
+</font>
+
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>

@@ -1,0 +1,568 @@
+<HTML>
+<HEAD>
+<TITLE>
+Confederate Ciphers during the Civil War: Various Vigenere Keywords
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="code, cipher, civil war, confederate, vigenere">
+<link rel=stylesheet type=text/css href=decode2.css>
+</HEAD>
+
+<BODY>
+<H1>Confederate Ciphers during the Civil War: Various Vigenere Keywords</H1>
+<P>It is well-known that the Confederates used a polyalphabetic (Vigenere) cipher during the Civil War. The present article describes its use with various keywords, including those other than the well-known three ("Manchester Bluff", "Complete Victory", "Come Retribution"). In particular, the present author recovered a keyword "Where Liberty Dwells, There Is Our Country" used between the Confederate Secretary of State and a commissioner in France.</P>
+<P>In addition, although it is often said that the Confederate ciphers were easy to break, as far as the Vigenere cipher is concerned, evidence before October 1864 is scanty.</P>
+<!--<P>Telegraph and mail codes of the Confederates were broken by Federal telegraphers (signal codes were also deciphered by Union army telegraph officers) <span class="note">(Plum p.35, Bates p.70)</span>.信号についてはいろいろ例があるが，大半はcommon codeではないか．だとしたら南軍も読んでいた．</P>-->
+<P>Confederate ciphers other than Vigenere are treated in <A HREF="civilwar5.htm">a separate article</A>.</P>
+<br>
+<P>Table of Contents:</P>
+<DIV style="margin-left: 2em;">
+<A HREF="#SEC1">Formation of Confederate Signal Corps and Introduction of Vigenere System</A><br>
+<A HREF="#SEC2"><b>"Baltimore"</b> -- Kirby Smith, [Bragg] (September 1862)</A><br>
+<A HREF="#SEC3"><b>"Manchester Bluff"</b> -- J.E. Johnston, Pemberton, A Trans-Mississippi Commander (December 1862-July 1863)</A><br>
+<A HREF="#SEC3b">Jefferson Davis, S. Cooper, Seddon, J.E. Johnston, R.E. Lee (December 1862-  )<br>
+<A HREF="#SEC4"><b>"My Old Kentucky Home"</b> -- W. Preston, Samuel Jones, Buckner (August 1863)</A><br>
+<A HREF="#SEC4b"><b>"Ten ..."</b> -- Longstreet, Ransom, William Preston Johnston (December 1863)</A><br>
+<A HREF="#SEC5"><b>"Our Destiny Is One"</b> (and <b>"Fight and Conquer"</b>, <b>"The Heaven ..."</b>) -- Seddon, Magruder, Polk (March 1864)</A><br>
+<A HREF="#SEC6"><b>"Complete Victory"</b> -- Jefferson Davis, Kirby Smith, R.E. Lee, S.D. Lee, J.G. Walker, Colonel Smith (July 1864-March 1865)</A><br>
+<A HREF="#SEC7"><b>"Come Retribution"</b> -- Jefferson Davis, R.E. Lee, J.E. Johnston, Breckenridge (February-April 1865)</A><br>
+<A HREF="#SEC7b">Agents in Canada (October 1864)</A><br>
+<A HREF="#SEC8"><b>"Frederika Bremer"</b> -- Signal Cipher Code at Charleston</A> (October or November 1864 to January 1865)<br>
+<A HREF="#SEC9"><b>"Where Liberty Dwells, There Is Our Country"</b> -- J.P. Benjamin, John Slidell (January to November 1863)</A><br>
+<A HREF="#SEC10">Physical Device of Confederate Vigenere Cipher</A><br>
+<A HREF="#SEC11">References</A><br>
+</DIV>
+
+<A NAME="SEC1"></A>
+<H2>Formation of Confederate Signal Corps and Introduction of Vigenere System</H2>
+<H3>E.P. Alexander</H3>
+<P>E.P. Alexander is said to be founder of the Confederate signal service. When the war broke out in April 1861, he resigned the US Army and soon joined General Beauregard at Manassas to organize a signal service for the Confederacy <span class="note">(Brown p.21, 43)</span><!--WikiではJune 3, Brown p.53が引用する本人の弁では1 Julyごろ-->. During the Battle of Bull Run on 21 July 1861, Alexander used signal flags to warn Nathan Evans that he was being outflanked, the first instance of such signaling over a long distance in the midst of a combat. He then became chief of ordnance under General J.E. Johnston. He introduced the system he had learned under Myer, founder of the Union Signal Corps, before the war and organized a provisional corps <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Edward_Porter_Alexander#Civil_War_service">Wikipedia</A>; Brown p.44-45, 205; Friedman p.34<!--M文庫p.56-->)</span>.</P>
+<P>Stonewall Jackson professed his appreciation of the signal service he created when, in April 1862, he repeatedly asked for "a man who understand Alexander's system" or "part of Alexander's Signal Corps." <span class="note">(Brown p.219)</span></P>
+<P>In the early spring of 1862, Alexander had his brother J.H. Alexander prepare a circular for initiation of officers and men in the signal service. It was submitted to Seddon, Secretary of War, and was issued as a small pamphlet, to which was attached "a table for compiling cipher dispatches". <span class="note">(Brown p.206)</span> This table is considered to be a Vigenere table <span class="note">(Friedman p.72, ASA p.85)</span>, the cipher scheme widely employed by the Confederates.</P>
+<H3>William Norris</H3>
+<P>On the other hand, William Norris under General Magruder set up a signalling network using flags and colored balls raised on poles in the Yorktown Peninsula in 1861 <span class="note">(<A HREF="https://en.wikipedia.org/wiki/William_Norris_%28Confederate_signal_officer%29">Wikipedia</A>, Brown p.205)</span>. In May 1862, he was placed at the head of the newly established Confederate Signal Corps, attached to the Department of the Adjutant and Inspector-General (S. Cooper), which had some 50 officers (not counting some 1500 detailed from respective commands as necessary) <span class="note">(Brown p.207-209)</span>.</P>
+<P>Norris waited on the Confederate President Jefferson Davis every morning with the cipher despatches from generals <span class="note">(Brown p.210)</span>. This shows that the Confederate Signal Corps managed both telegraph and flag/torch signals<!--傍証はBrown p.208 Vのflags, torchesとp.209のThey were also instructed in the use of the electric telegraph. Friedman p.34でもbothと明記-->, whereas the Union had separate and ill-cooperating Telegraph Corps and Signal Corps <span class="note">(ASA p.35, Friedman p.30, etc.)</span>.</P>
+
+<A NAME="SEC2"></A>
+<H2>"Baltimore" -- Kirby Smith, [Bragg] (September 1862)</H2>
+<H3>E. Kirby Smith and [Bragg] (September 1862)</H3>
+<P>A cipher despatch dated 14 September [1862] from General E. Kirby Smith (probably to General Braxton Bragg) was deciphered by Boklan (2006).</P>
+<P>At this time, Bragg and Smith were engaged in an offensive in east Tennessee and Kentucky to draw the border state of Kentucky to the Confederate side <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Confederate_Heartland_Offensive">Wikipedia</A>)</span>. In August, Bragg at Chattanooga and Smith at Knoxville set on northward movement into Kentucky. Further west of them, Union General Buell moved in parallel towards Bowling Green, and then to Louisville. Bragg took Munfordville after a siege on 15 and 16 September <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Battle_of_Munfordville">Wikipedia</A>)</span>.</P>
+<P>Smith's cipher despatch was written at this time. Smith reported therein to the recipient (probably Bragg) "The enemy rapidly concentrating at Louisville and Covington.... It is important our communication with each other should be kept open...."</P>
+<P>This is a Vigenere cipher (explained in the next section) with a keyword "BALTIMORE". (Norris of the Signal Corps came from Baltimore.)</P>
+<P>Although Bragg won a tactical victory at the Battle of Perryville on 8 October, the Confederate invasion of Kentucky was a failure because they had to withdraw from Kentucky to leave the border state in Union hands.</P>
+
+<A NAME="SEC3"></A>
+<H2>"Manchester Bluff" -- J.E. Johnston, Pemberton, A Trans-Mississippi Commander (December 1862-July 1863)</H2>
+<H3>Pemberton and J.E. Johnston (December 1862)</H3>
+<P>A Confederate cipher message of 26 December 1862 was captured. It was the day General Grant began the operations against Vicksburg, a Confederate strategic point blocking the navigation of the Mississippi. The message was written by Pemberton, who commanded the Confederate army in Mississippi, to J.E. Johnston, commander of the western theater since late November, then at Jackson, capital of Mississippi. <span class="note">(Plum p.36 ff.)</span></P>
+<DIV class="kakomi2">
+VICKSBURG, Dec. 26, 1862.<br>
+Gen. J. E. Johnston, Jackson:<br>
+I prefer oaavvr, it has reference to xhvkjqchff
+abpzelreqpzwnyk to prevent anuzeyxsws
+tpjw at that point, raeelpsghvelvtzfautl
+ilasltlhifnaigtsmmlfgccajd.<br>
+(Signed) J. C. Pemberton,<br>
+Lt. Gen. Comdg.<br>
+</DIV>
+
+<P>The plaintext is as follows.</P>
+<DIV class="kakomi2">
+I prefer <i>Canton</i>. It has reference to <i>fortifications
+at Yazoo City</i> to prevent <i>passage of river</i> at that point. </i>Force
+landed about three thousand, above mouth of river</i>.<br>
+<span class="note">(The above, taken from Plum, is the correct deciphering of the ciphertext, except for correction of a couple of errors. The text in OR, vol.17, Part II, p.806 is slightly different. It may be a draft found in Vicksburg.)</span>
+</DIV>
+<P>The Federal cipherers did not break this cipher. As it happened, after Vicksburg surrendered on 4 July 1863 (the day after the three-day long Battle of Gettysburg), the original telegram was found among Pemberton's ciphers <span class="note">(Plum p.37)</span>. It would help to work out the key in the next year (see below).</P> 
+<!--
+Pratt p.185などではPlumがニューオーリンズで解読チームを率いたことになっているがおかしい．Plum p.39ではthe authorがぱっと見て平文を洞察したというくだりがあるが，執筆時のことだろう．http://www.civilwarsignals.org/standards/servicemanual.pdf　のp.49にもin charge of Union communications at New Orleansとあった；p.44も；ただジェームズ二世やマクレランの記述をみると不正確なのでやはり信用できない
+-->
+<!--<span class="note">(<A HREF="http://www.civilwarsignals.org/standards/servicemanual.pdf">Signal Corps Reenactor's Service Manual</A>)</span>でもtranslated version was found とあるが，at the same timeなどあやしい．-->
+
+<P>This is a Vigenere cipher with keyword "Manchester Bluff." In the table below, the top row indicates keyword letters and the leftmost column indicates plaintext letters, with a ciphertext letter found at the intersection between the column headed by a key letter and the row headed by a plaintext letter. <font size="2">(The symmetry of the table shows that the roles of the keyword and the plaintext may be exchanged. Mathematically, Vigenere is a simple addition P (plaintext) + K (keyword)=C (ciphertext).)</font></P>
+<P>To decipher "oaavvr", each letter is assigned a letter from the keyword:</P>
+<DIV  style="margin-left: 3em;">
+<TT>
+ciphertext: o a a v v r<br>
+keyword: &nbsp; &nbsp;M A N C H E<br>
+plaintext: &nbsp;c a n t o n<br>
+</TT>
+</DIV>
+<P>Look at the column headed by "m", the first letter of the key, and find the cipher letter "o" in the column. Far left from "o" is found the plaintext letter "c". Continuing in this way, the above plaintext is obtained.</P>
+<img src="civil4b.jpg" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+
+<H3>Pemberton and J.E. Johnston (May 1863)</H3>
+<P>Obviously, alignment between ciphertext and keyword letters is crucial with such a polyalphabetic cipher. An omission of a single letter in enciphering garbles the decipherment. During the Revolutionary War, founding fathers such as John Adams were troubled with a similar polyalphabetic cipher (see <A HREF="adams3.htm">another article</A>). (One wisdom with the Confederate cipher is the use of longer keywords than those used four score years before: CR, JOHN, FOR, ... (see <A HREF="lovell.htm">another article</A>).)</P>
+<P>As Pemberton and Johnston continued to use cipher in discussing relief of Vicksburg, they were troubled by the error-prone nature of the scheme. On 25 January 1863, Johnston told Pemberton "Your dispatch in cipher has been received. Nothing after the first word can be deciphered. Repeat." <span class="note">(OR, vol.24, Part III, p.602)</span> A similar request was made by C.L. Stevenson on 28 February <span class="note">(ibid. p.647)</span> and by Frank Gardner on 6 May 1863 <span class="note">(OR, vol.15, p.1076)</span>.</P>
+<P>On 6 May, Johnston told Pemberton to "let me know the location of your troops, number, and places, in cipher." <span class="note">(OR, vol.24, p.839)</span> Pemberton replied the next day <span class="note">(ibid. p.842)</span> but Johnston could not decipher some part of it and told him to reencipher the part about Port Hudson <span class="note">(ibid. p.844)</span>.</P>
+
+<H3>Pemberton and J.E. Johnston (May 1863)</H3>
+<P>In May 1863, they still used the same keyword <span class="note">(Bates p.68)</span>.</P>
+<DIV class="kakomi2">
+Headquarters Department of the Tennessee,<br>
+Near Vicksburg, May [31], 1863. <span class="note">(see PUSG, vol.8, p.294 for the date)</span><br>
+Col. J. C. Kelton, Assistant Adjutant-General, Washington, D.C.<br>
+Colonel: Eight men, with 200,000 percussion caps, were arrested whilst attempting to get through our lines into Vicksburg. The inclosed cipher was found upon them. Having no one with me who has the ingenuity to translate it, I send it to Washington, hoping that some one there may be able to make it out. Should the meaning of this cipher be made out, I request that a copy be sent to me.<br>
+Very respectfully,<br>
+    U. S. GRANT, Major-General.<br>
+<br>
+[Inclosure]<br>
+Jackson, May 25, 1863.<br>
+Lieutenant-General Pemberton: My X A F V. U S L X was V V U F L S J P by the B R C Y A[I] J 200 000 V E G T. S U A J. N E R P. Z I F M. It will be G F O E C S Z O[Q] D as they N T Y M N X. Bragg M J T P H I N Z G a Q R[K] C M K B S E. When it D Z G J X. I will Y O I G. AS. Q H Y. N I T W M do you Y T I A M the I I K M. V F V E Y. How and where is the J S Q M L G U G S F T V E. H B F Y is your R O E E L.<br>
+J. E. Johnston.
+</DIV>
+<P>The cipher operators at Washington soon deciphered this as follows.</P>
+
+<DIV class="kakomi2">
+My <i><u>...</u></i> was <i><u>captured</u></i> by the <i><u>picket</u></i>. 200,000 <i>caps have been sent</i>. It will be <i><u>increased</u></i> as they <i>arrive</i>. Bragg <i>is sending</i> a <i>division</i>. When it <i><u>joins</u></i> I will <i><u>come</u> to you. Which</i> do you <i>think</i> the <i>best route</i>? How and where is the <i>enemy <u>operating</u></i>? <i>What</i> is your <i>force</i>? 
+</DIV>
+<P>It might seem words in the clear here and there and explicit word division allowed breaking of the Vigenere cipher. Actually, however, this deciphering has multiple errors (underlined above) and the correct deciphering is as follows, as was noticed as early as in 1884 <span class="note">(OR, vol.24, part 1, p.39)</span>.</P>
+<DIV class="kakomi2">
+My <i><u>last note</u></i> was <i><u>returned</u></i> by the <i><u>bearer</u></i>. 200,000 <i>caps have been sent</i>. It will be <i><u>continued</u></i> as they <i>arrive</i>. Bragg <i>is sending</i> a <i>division</i>. When it <i><u>comes</u></i> I will <i><u>move</u> to you. Which</i> do you <i>think</i> the <i>best route</i>? How and where is the <i>enemy <u>encamped</u></i>? <i>What</i> is your <i>force</i>?
+</DIV>
+<P>Then, what was the deciphering described by Bates, who was one of the decipherers at the War Department? He admits they did not have the key word and "guessed at the meaning, trying first one word and then another until by analogy we had worked out the entire message." Probably, the War Department team could not identify the key word even when the above text was reached. If the cipher scheme and key words had been known, there should have been no reason that the first two enciphered words could not be deciphered and the errors could not be corrected. Bates boasts the official deciphering "is the same as our translation, with two or three slight differences." One may say so but then, what was correctly deciphered might have been obvious from the background information known at the time (even the introductory note makes it obvious that "VEGT" represents "caps" [meaning explosive device]).</P>
+<P>On 16 June, Colonel George Thom wrote from Washington to Grant "... I send you a translation of Joe Johnston's despatch which I <i>guessed</i> out in about fifteen minutes -- though it may be all <i>wrong</i>. I know nothing of the cipher & nothing of the key." <span class="note">(PUSG vol.8, p.294)</span> The War Department's deciphering might have been similar to this guesswork.</P>
+
+<H3>E. Kirby Smith and J.E. Johnston</H3>
+<P>Enciphering errors were not only made by Pemberton('s cipherer).</P>
+<P>When cipher message from J.E. Johnston at Jackson to E. Kirby Smith, who commanded west of the Mississippi, was received near Vicksburg, it was "bulled", as generally called by telegraph operators. Major Cunningham of Smith's staff tried in vain for twelve hours to make sense of it and ended up in riding past the Federals to General Johnston to find the content of the dispatch. <span class="note">(Plum p.40)</span></P>
+
+<H3>Bottled Message for Pemberton (July 1863)</H3>
+<P>Use of the same key word "Manchester Bluff" between Pemberton and a commander on the west side of the Mississippi across from Vicksburg can be seen in a secret message deciphered in 2010 by David Gaddy and Cmdr. John B. Hunter independently <span class="note">(<A HREF="http://www.dailymail.co.uk/news/article-1341666/CIA-codebreaker-reveals-147-year-old-Civil-War-message-Confederate-desperation.html">Mail Online</A>, <A HREF="http://www.alertboot.com/blog/blogs/endpoint_security/archive/2010/12/29/data-encryption-bottled-civil-war-message-used-vigenere-cipher.aspx">AlertBoot</A>)</span>.</P>
+<P>The despatch, dated 4 July 1863, told Pemberton that he could not expect help from the west side of the river. Actually, Vicksburg surrendered on this very day. The message, rolled up and put in a tiny bottle, was delivered and, in 1896, donated to a museum by a Civil War veteran, Capt. William A. Smith. According to the Mail Online article, the sender is likely to be Major General John G. Walker <span class="note">(<A HREF="https://en.wikipedia.org/wiki/John_George_Walker">Wikipedia</A>)</span>, who commanded the Texas Division (under Kirby Smith) because Walker had William Smith under his command.</P>
+<P>The deciphered message is as follows (slightly corrected (as underlined) by the present author to align with the cipher).</P>
+<DIV class="kakomi2">
+Gen'l Pemberton:<br>
+You can expect no help from this side of the river. Let Gen'l Johnston know, if possible, when you can attack the same point on the enemy's lin<u>e</u>. Inform me also and I will endeavo<u>u</u>r to make a diversion. I have sent <u>you</u> some caps. I subjoin<u> </u>despatch from Ge<u>n.</u> Johnston.
+</DIV>
+<P>The following is a ciphertext <i>reenciphered</i> from the above plaintext with the keyword "Manchester Bluff". (The erroneous repetition of "feqt" in the original is reproduced.) It does not exactly match the original despatch, which appears to include many errors.</P>
+<DIV class="kakomi2">
+sean wieuiiuzh dtg cnp lbhxgk oz bjqb feqt <s>feqt</s> xzbw jjoy 
+tk fhr tpzwk pvu rysq voupzxgg oeph ck uasfkipw plvo jiz hmn nvaeud xyf durj bovpa sf mlv fyyrdelvpl mfysin xy fqeo npk m obpc fyxjfhoht as etov b ocajdsvqu m ztzv tphy dau fqti uttj j dogoaia flwhtxti qltr sea lvlflxfo
+</DIV>
+
+<A NAME="SEC3b"></A>
+<H2>Jefferson Davis, S. Cooper, Seddon, J.E. Johnston, R.E. Lee (December 1862-  )</H2>
+<P>Apart from the one instance of the "Baltimore" keyword in September 1862 (see <A HREF="#SEC2">above</A>), the records of the use of the Vigenere system generally began in December 1862 or early 1863.</P>
+<H3>J.E. Johnston and S. Cooper</H3>
+<P>Before the Vigenere cipher came into use, J.E. Johnston used a dictionary code provided by the President Jefferson Davis in the spring of 1862. In early December 1862, he had trouble in reading the despatch from S. Cooper, Adjutant General of the Confederate Army and a close friend of President Jefferson Davis. Cooper's explanation that the word in cipher could be read by signal officers suggests that he used a Vigenere cipher (which was called the "Government cipher" or "signal corps cipher", as noted below), while Johnston stuck to the dictionary code given by the President. Considering that the signal corps was attached to Cooper's department, it is natural that Cooper was early in adopting the Vigenere system (but it was too early if he used it before ensuring that his correspondent had received it).</P>
+<DIV class="kakomi">
+J.E. Johnston to S. Cooper, Chattanooga, 4 December 1862<br>
+Use the President's cipher of last spring.<br>
+<br>
+J.E. Johnston to S. Cooper, Chattanooga, 4 December 1862<br>
+I have only the cipher the President established with me last spring. I have no signal officer;<br>
+<br>
+S. Cooper to J.E. Johnston, Richmond, 5 December 1862<br>
+The word in cipher can be explained by one of General Bragg's signal officers. The President has not the cipher you refer to. If it is a dictionary cipher, please let me know the particular edition of the dictionary you have, that copies of the same may be obtained here, if possible, to work by.<br>
+<br>
+S. Cooper to J.E. Johnston, Richmond, 8 December 1862<br>
+Your dispatch of yesterday, in cipher, cannot be read; neither the President nor this office has the key. Who is the author, and what edition? A signal officer to be immeidately sent to you.<br>
+<br>
+J.E. Johnston to S. Cooper, Murfreesborough, 8 December 1862<br>
+Your dispatch of to-day received. The cipher was given to me by the President, and used last spring. Revised edition abridged from N. Webster by W.G. Webster. I referred to it in a dispatch from Chattanooga.<br>
+<span class="note">(OR, vol.17, Part II, p.780, 782; vol.20, p.437-438, 440, 444-445)</span>
+</DIV>
+<P>Considering that General Pemberton at Vicksburg used a Vigenere cipher for Johnston on 26 December 1862 (see above), Johnston may have received it this month.</P>
+
+<H3>J.E. Johnston and Jefferson Davis</H3>
+<P>The Vigenere cipher appears to have been introduced between J.E. Johnston and Jefferson Davis by May 1863 (or earlier), in view of the President's reference to "signal cipher" below. Also, Johnston' remark "The two cases of cipher are independent of each other." seems to indicate starting the keyword afresh in the second enciphered portion (see the next subsection).</P>
+
+<DIV class="kakomi">
+J.E. Johnston to Jefferson Davis, Jackson, 21 May 1863<br>
+Your dispatch of the 18th received, but cannot be deciphered.<br>
+<br>
+Jefferson Davis to J.E. Johnston, Richmond, 22 May 1863<br>
+Signal cipher was employed. If you have the book formerly used by us, will resort to that.<br>
+<br>
+J.E. Johnston to Jefferson Davis, Jackson, 27 May 1863<br>
+The two cases of cipher are independent of each other.<br>
+<br>
+(In the meantime, Johnston had to abandon Jackson. Vicksburg fell on 4 July.)<br>
+<br>
+J.E. Johnston to Jefferson Davis, 19 July 1863<br>
+Your dispatch of yesterday cannot be deciphered.<br>
+<br>
+Jefferson Davis to J.E. Johnston, Richmond, 21 July 1863<br>
+Return to me the cipher dispatch of 18th, to enable me to learn why my cipher dispatches to you are illegible.<br>
+<span class="note">(OR, vol.24, p.191, 193, 208)</span>
+</DIV>
+<P>They had a problem even at the last stage of the war. (The telegram repeated on this day will be shown <A HREF="#SEC7">below</A>.)</P>
+<DIV class="kakomi">
+J.E. Johnston to Jefferson Davis, 11 April 1865<br>
+Your cipher dispatch [of 10 April] this moment received. I think I can decipher first paragraph, but rest is unintelligible. Please repeat the whole, paragraphing cipher.<br>
+<span class="note">(OR, vol.47, Part III, p.787)</span>
+</DIV>
+<!--<P>Although errors are commonplace in polyalphabetic cipher, such persistent problems makes one suspect the tension <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Joseph_E._Johnston">Wikipedia</A>)</span> between Johnston and the president underlies them.</P>-->
+
+<H3>J.E. Johnston's Tips</H3>
+<P>Johnston concluded a letter to Seddon, Secretary of War, on 2 June 1863, with a note "Each portion of this dispatch in cipher is independent of the preceding" <span class="note">(OR, vol.24, p.223)</span>. Starting from the first letter of the keyword for each portion could prevent an error from garbling the whole remaining message. On the other hand, he had problem in deciphering a received despatch and had to reply on the basis of "imperfectly deciphered" text <span class="note">(OR, vol.24, p.226)</span>. In the end, he asked Seddon to repeat it using as few words as possible in cipher <span class="note">(OR, vol.24, p.229)</span>.</P>
+<P>On 19 November 1863, Johnston gave similar advice to the President Jefferson Davis: "Recommence cipher in each sentence." <span class="note">(OR, vol.31, Part III, p.715)</span></P>
+<P>Later, Johnston was told by Jefferson Davis to "Begin cipher with each paragraph" on 5 April 1865 <span class="note">(OR, vol.47, Part III, p.755)</span>. It is wondered whether Johnson forgot his own counsel or the President found it too frequent to begin cipher each <i>sentence</i>.</P>
+
+<H3>Seddon and R.E. Lee</H3>
+<P>The Vigenere appears to have been introduced between Seddon, Secretary of War, and R.E. Lee in February 1863 (in view of the references to the mistake in "the first two words" as well as to "trying other words" below). Seddon's proposal of a simple Caesar cipher on 4 February (see <A HREF="civilwar5.htm#SEC5">another article</A>) appears to have been dropped.</P>
+<DIV class="kakomi">
+Seddon to R.E. Lee, Richmond, 15 February 1863<br>
+Not having the key to your cipher, and a mistake having been committed by the telegraph operator in the first two words in cipher, I have been much puzzled to make out your telegram received this morning; and though I had the aid of Maj. [William] Norris, of the Signal Corps, it was not until after my telegram this evening was sent that, by trying other words, I succeeded in deciphering it. The march of Pickett's division to Richmond may, very probably, suffice at present to guard against any sudden attack on this city.<br>
+<span class="note">(OR, vol.18, p.877-878)</span>
+</DIV>
+
+<H3>Seddon and D.H. Hill</H3>
+<P>In June 1863, Seddon's frustration with "the cipher used by the signal corps" was so much that he declared he would use a simple monoalphabetic substitution (see <A HREF="civilwar5.htm#SEC5">another article</A>).</P>
+
+<A NAME="SEC4"></A>
+<H2>"My Old Kentucky Home" -- W. Preston, Samuel Jones, Buckner (August 1863)</H2>
+<H3>Keywords for Particular Correspondents</H3>
+<P>From an early stage, the Confederates arranged a keyword as necessary for particular purposes.</P>
+<DIV class="kakomi">
+E. Kirby Smith to Samuel Jones, Knoxville, 29 December 1862<br>
+If you have the cipher, send by mail some key-word which we can use in correspondence.<br>
+[Jones' reply was "I have no cipher."]<br>
+<span class="note">(OR, vol.20, p.468, 471)</span><br>
+</DIV>
+
+<H3>"My Old Kentucky Home" -- W. Preston, Samuel Jones, Buckner</H3>
+<P>A keyword "My Old Kentucky Home" was shared for a "government cipher", a.k.a., "signal corps cipher" by Generals Buckner, Samuel Jones, and W. Preston. (Buckner <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Simon_Bolivar_Buckner">Wikipedia</A>)</span> was from Kentucky.) It has 17 letters, not 15 as for "Manchester Bluff", "Complete Victory", and "Come Retribution".</P>
+<DIV class="kakomi">
+W. Preston to Samuel<!--索引より--> Jones<!- at Dublin, Va.-->, Abingdon, 1 August 1863<br>
+I send the Government cipher which you desire, with the key sentence used by General Buckner....<br>
+P.S. -- On looking again at your letter, it seems you have the Government cipher, or "signal corps cipher," as it is called, so that I do not send it as stated. We will correspond by it. The key sentence shall be "My Old Kentucky Home." Buckner uses the same.<br>
+<span class="note">(OR, vol.23, Part II, p.947)</span>
+</DIV>
+<!--この次の手紙では同日付でChief of Staffからプレストン宛に暗号が届いた模様．上記PSを書く前に手配していたのだろう．-->
+<P>Actually, Samuel Jones had applied for the Government cipher some months ago and appears to have acquired it himself before Preston got one for him.</P>
+<DIV class="kakomi">
+Samuel Jones to Seddon, 13 May 1863<br>
+I would have preferred answering your telegram of yesterday in cipher, as I do not think it prudent to pass such information in the usual way over the wires; but I am not provided with the cipher in use at the War Department. On the 29th ultimo I wrote to General Cooper, suggesting that he furnish me the cipher in use at his office. As he has not answered my letter, I infer that he does not think proper to send the cipher....<br>
+<span class="note">(OR, vol.25, Part II, p.796)</span>
+</DIV>
+
+<P>Actually, on the same day that Preston was to forward the cipher, Jones, apparently already in possission of the Government cipher, warned against Preston's use of a simple cipher.</P>
+<DIV class="kakomi">
+Samuel Jones to W. Preston, 1 August 1863<br>
+Without having any key whatever to your cipher yesterday, I managed to decipher your telegram. Lieutenant Adams can tell you how I did it. All such ciphers are very imperfect. I know of no good one excepting that used by the Government. Have you it? If so, we had better use it.<br>
+<span class="note">(OR, vol.27, Part III, p.1073)</span>
+</DIV>
+<P>Jones' trust in the cipher can be seen in the following.</P>
+<DIV class="kakomi">
+Samuel Jones to J.W. Frazer (at Cumberland Gap), Abingdon, 6 September 1863<br>
+It may be imprudent, however, to send me such information in writing, unless you have and can use the cipher and key-word used by General Buckner. If you have, inform me in cipher as fully as possible of your condition, sending the communication to me at this place by a thoroughly trustworthy courier. If you have not the cipher send an intelligent officer who can inform me fully.<br>
+<span class="note">(OR, vol.30, Part IV, p.616)</span>
+</DIV>
+<P>Jones even shared a key with the President Jefferson Davis <span class="note">(OR, vol.30, Part IV, p.652, 716)</span>, though it is not clear whether it is the same as the above.</P>
+<!--
+p.652
+Sam. Jones to Jefferson Davis, 15 September 1863
+Your telegram of yesterday received late last night. Owing to some mistake all could not be deciphered.
+
+p.716
+Sam. Jones to Jefferson Davis, 29 September 1863
+I have not been able to decipher all of your dispatch of te 28th,
+-->
+<P>There are reference's to a new key of a cipher used by Buckner.</P>
+<DIV class="kakomi">
+Buckner to Mackall, Chief of Staff at Chattanooga, dated Knoxville, 22 August 1863<br>
+Use the new key if in cipher. Above sent in cipher.<br>
+<span class="note">(OR, vol.30, Part IV, p.536)</span>
+<br>
+Buckner to Seddon, Charleston, Tenn., 2 September 1863<br>
+Use new key for cipher.<br>
+<span class="note">(OR, vol.30, Part IV, p.587)</span>
+</DIV>
+
+<H3>Change of Keywords for All the Departments in the Summer of 1863</H3>
+<P>The following suggest there was a change of the keyword at this time. It is a postscript in reply to Colonel B.S. Ewell's appeal that he could not decipher the President's cipher dispatch forwarded from J.E. Johnston. It shows the same keyword as used by the President was used "in all the military departments." <span class="note">(OR, vol.24, p.236)</span></P>
+<DIV class="kakomi">
+G.W.C. Lee, Colonel and Aide-de-Camp, to Col. B.S. Ewell, Richmond, 6 August 1863<br>
+P.S. -- I have tested parts of your copy, and find no difficulty in deciphering it. The old key was probably used by your officer instead of the new, which, we had been informed by the Chief of the Signal Corps, had been substituted in all the military departments for the old key.
+</DIV>
+<P>Probably, the Confederates thought the previous keyword "Manchester Bluff" was compromised by the fall of Vicksburg in July 1863. Indeed, the papers found in Vicksburg would allow the Federals to work out the key, which, however, was not until more than a year later (see below).</P>
+
+<H3>"In God We Trust"</H3>
+<P>Some author<!--ASA--> refers to a keyword "In God We Trust" but the context of his source <span class="note">(Brown p.210)</span> shows this is only an example for illustration of the scheme.</P>
+
+<A NAME="SEC4b"></A>
+<H2>"Ten ..." -- Longstreet, Ransom, William Preston Johnston (December 1863)</H2>
+<P>In December 1862, when William Preston Johnston <span class="note">(<A HREF="https://en.wikipedia.org/wiki/William_Preston_Johnston">Wikipedia</A>)</span>, aide-de-camp to President Jefferson Davis, hurriedly warned General Longstreet of the defeat at the Battle of Lookout Mountain <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Battle_of_Lookout_Mountain">Wikipedia</A>)</span>, he chose to use a keyword that begins with "Ten", which had just been disused. (The first phrase that comes to mind "Ten Commandments" has exactly 15 letters and seems to match the Confederates' liking.) In reporting to the President, he explained that it was not to waste time in making sure whether Longstreet had the latest keyword.</P>
+<DIV class="kakomi">
+Wm. Preston Johnston to Jefferson Davis, Abingdon, Va., 2 December 1863<br>
+The greater part of to-day has been occupied in the preparation of duplicate letters to General Longstreet ..., putting them in cipher, and dispatching them. One copy I have sent through General Ransom,.... The cipher used begins with "Ten," the last cipher just disused. I thought it better than to risk sending it in one which he might not have received, especially as I understood General Ransom still uses it. Perhaps it would be better to have consulted with Generla Ransom first, but when I considered the possibility of not finding General Ransom at his headquarters and the delay that must occur if I postponed apprising General Longstreet while I waited to find General Ransom, I thought it best to pursue the plan adopted, ....<br>
+<span class="note">(OR, vol.52, Part II, p.566)</span>
+</DIV>
+
+<A NAME="SEC5"></A>
+<H2>"Our Destiny Is One" (and "Fight and Conquer", "The Heaven ...") -- Seddon, Magruder, Polk (March 1864)</H2>
+<P>In February 1864, General Polk used a keyword beginning with "Our ..." (probably "Our Destiny Is One" below) with Seddon, Secretary of War, but one day found a despatch unintelligible. He also found that General Johnston used a different one and proposed a new keyword "Fight and Conquer" (15 Letters) <span class="note">(OR, vol.32, Part II, p.767, 763, 764)</span>.</P>
+<P>As of March 1864, General Magruder and headquarters at Shreveport used a key "Our Destiny Is One" (15 letters) with Richmond. When General R. Taylor could not decipher a despatch of Magruder, he was notified of the key enciphered in a department cipher he used <span class="note">(OR, vol.34, p.496-501)</span>.</P>
+<DIV class="kakomi">
+E. Cunningham, Lieutenant and Aide-de-Camp (at Shreveport, La., Headquarters Trans-Mississippi Department), to R. Taylor (commanding District of West Louisiana), 21 March 1864<br>
+The Richmond key-word (in department cipher) is: Hbv Kis'omaq bvoqye <span class="deciphered">[Our destiny is one]</span>.<br>
+</DIV>
+<P>(Obviously, the transcription of the enciphered key is incorrect. "Hbv Kisomaq" (no comma) can be deciphered as "The Heavens" with the key "Our Destiny" but "bvoqye" just produces a garble. The department key begins with "The Heaven" but the remaining letters cannot be determined.) In this despatch, the department cipher represents 7,000 with "LLZLR" <span class="note">(ibid., p.500)</span></P>
+<!--
+p.498-499
+R. Taylor (in the field) to W.R. Boggs (chief of staff at Shreveport), 19 March 1864
+I regret that, having no key, I have been unable to decipher the dispatches of General Magruder....★p.496でCunningham（at headquarters Trans-Mississippi Department, Shreveport, La., 16 March 1864）がMagruderからの手紙を同封している．
+
+My inability to decipher General Magruder's dispatches is the more annooying as I am particularly desirous of knowing the movements of General Green.
+
+p.500
+南軍R. Taylor to W.R. Boggs, Chief of Staff, Shreveport, dated 20 March 1864
+I am still withont a key to General Magruder's cipher, and conseqnently cannot decide npon movements with a view to a jnnction with General Green.
+...
+LLZLR [7,000]
+
+p.501
+E. Cunningham, Lieutenant and Aide-de-Camp (at Shreveport), to R. Taylor, Shreveport, 21 March 1864
+The Richmond key-word (in department cipher) is: Hbv Kis'omaq bvoqye [Our destiny is one].
+暗号Hbv Kis'omaq bvoqye
+平文Our des tiny is one
+鍵字the hea vens td cla
+
+暗号Hbv Kis'omaq bvoqye
+平文Our des tiny isone
+鍵字the hea vens tdadu
+-->
+
+<A NAME="SEC6"></A>
+<H2>"Complete Victory" -- Jefferson Davis, Kirby Smith, R.E. Lee, S.D. Lee, J.G. Walker, Colonel Smith (July 1864-March 1865)</H2>
+<H3>S.D. Lee and J.G. Walker</H3>
+<P>A new key word "Complete Victory" was sent in July 1864 by S.D. Lee (who had been made prisoner upon the surrender of Vicksburg and exchanged in October 1863; since May 1864, commanding the Department of Alabama and East Louisiana; no relation to R.E. Lee <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Stephen_D._Lee">Wikipedia</A>)</span>) to J.G. Walker, who might have been the sender of the bottled message enciphered with "Manchester Bluff" above.</P>
+<DIV class="kakomi">
+S.D. Lee to J.G. Walker (at Alexandria, La.), 8 July 1864<br>
+... Please communicate this to General Smith. Key word same as used by Colonel Scott. Hereafter use "Complete Victory."<br>
+</DIV>
+
+<H3>Jefferson Davis and E. Kirby Smith (September 1864) -- Federals' Codebreaking</H3>
+<P>The Confederate President Jefferson Davis used the key "Complete Victory" for renewing his order in his despatch dated 30 September 1864 to General E. Kirby Smith, who commanded west of the Mississippi, to cross the river to the east side.</P>
+
+<P>Now, Pemberton's cipher despatch of 26 December 1862 (see above) as well as its original telegram found among the general's papers were brought to telegraph cipherers at New Orleans. With these materials, they worked out the key <span class="note">(Plum p.37, ASA p.90-91)</span>. It showed the principles of the Confederate cipher but the key could not reveal the President's message, which was protected by a different keyword.</P>
+<P>However, with the word divisions and partial enciphering, it would not have been very difficult to guess "By which you may effect O (a) - TPQGEXYK (crossing) - above that part HJ (of) - OPG (the) KWMCT (river)", as pointed out by Plum <span class="note">(p.39)</span>. (By the way, Plum belonged to General Thomas' headquarters at this time and was in Atlanta in this October <span class="note">(Plum vol.2, p.232-233)</span>, not in New Orleans as described by some authors<!--Pratt: Reenacters' Service Manual; etc.-->.)</P>
+<P>Once one hits upon this, the keyword is as good as known.</P>
+<DIV  style="margin-left: 3em;">
+<TT>
+ciphertext: O - TPQGEXYK - HJ - OPG KWMCT<br>
+plaintext: &nbsp;a - crossing - of - the river<br>
+keyword: &nbsp; &nbsp;O &nbsp; RYCOMPLE &nbsp; TE &nbsp; VIC TORYC<br>
+</TT>
+</DIV>
+<P>The President's message was deciphered on 17 October. More than two years after its introduction, this is one of the first instances of breaking into the Confederate Vigenere known to the present author (the other will be described <A HREF="#SEC7b">below</A>). The Confederates' intention of crossing the Mississippi was reported by E.R.S. Canby at New Orleans to Halleck (then, chief of staff under General-in-Chief Grant) and other generals <span class="note">(OR, vol.41, Part IV, p.66<!--Last night we succeeded in deciphering...-->, 25, 29, 69, 199<!--Grant宛て；暗号文以上に詳しい分析？-->, 214, 263; OR Navy, vol.21, p.689, 694)</span>.</P>
+
+<DIV class="kakomi2">
+Montgomery, 30th.<br>
+To Gen'l E. K. Smith,<br>
+Shreveport, La., via Wi.<br>
+What are you doing to execute the instructions
+sent you, to HCDLVW <span class="deciphered">(forward)</span> - XMWQIG <span class="deciphered">(troops)</span> -
+ KM <span class="deciphered">(to)</span> - GOEI <span class="deciphered">(east)</span> - DMWl <span class="deciphered">(side)</span> - JN <span class="deciphered">(of)</span> - VAS <span class="deciphered">(the)</span> -
+DGUGUHDMITD <span class="deciphered">(Mississippi)</span>. - If success will be
+more certain, you can substitute - EJTFKMPG <span class="deciphered">(Wharton's)</span>
+- OPGEEVT <span class="deciphered">(cavalry)</span> KQFARKF <span class="deciphered">(command)</span> - TAG <span class="deciphered">(for)</span>
+- HEEPZZN <span class="deciphered">(Waller's)</span> - BBWYPHDN <span class="deciphered">(infantry)</span> - OMOMNQQG <span class="deciphered">(division)</span>. 
+- By which you may effect O <span class="deciphered">(a)</span> - TPQGEXYK <span class="deciphered">(crossing)</span> 
+- above that part HJ <span class="deciphered">(of)</span> - OPG <span class="deciphered">(the)</span>
+KWMCT <span class="deciphered">(river)</span> - patrolled by the ZMGRIK <span class="deciphered">(larger)</span> -
+GGIUL <span class="deciphered">(class)</span> - CW <span class="deciphered">(of)</span> - EWBNDLXL <span class="deciphered">(gunboats)</span>.<br>
+Jeffn. Davis
+</DIV>
+<P>The Union strengthened the patrol of the Mississippi and prevented the Confederates from crossing the river <!--OR Navy vol.26, p.640-->. The Union's reaction might have been too appropriate that Kirby Smith sensed that the keyword must have been discovered by the enemy and arranged for a new keyword <span class="note">(OR, vol.41, Part IV, p.1062; vol.45, Part I, p.1223<!--同内容-->)</span>.</P>
+
+<H3>R.E. Lee and Alexander Lawton (December 1865)</H3>
+<P>R.E. Lee also used the keyword "Complete Victory" in his letter to Alexander Lawton <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Alexander_Lawton">Wikipedia</A>)</span> dated 19 December 1864, as discovered by Kent Boklan <span class="note">(<A HREF="http://scienceblogs.de/klausis-krypto-kolumne/2016/06/30/wie-ein-us-professor-einen-verschluesselten-brief-aus-dem-19-jahrhundert-loeste/#more-10275">Klausis Krypto Kolumne</A>)</span>.</P>
+
+<H3>R.E. Lee and E. Kirby Smith (March 1865)</H3>
+<P>R.E. Lee also used the keyword "Complete Victory" in his communication to Kirby Smith. Again, Smith was urged to cross the Mississippi.</P>
+<DIV class="kakomi2">
+Head-quarters C.S. Armies, March 24, 1865.<br>
+Gen. E. Kirby Smith, comdg. Trans-Miss. Dept., Gen.: - Vvq
+ecilmympm rvcog ui lhomnides kfch kdf wasptf us tfcfsto abxc
+bjx azjkhmgjsiimivbceq qb ndel ueisu ht kfg auhd egh opcm mfs
+uvajwh xrymcoci yu dddxtmpt iu icjqkpxt es vvjau mvrr twhtc abxc
+iu eoieg o rdcgx en ucr pv ntiptyxec rqvariyyb rgzq rspz rksjcph ptax
+rsp ekez raecdstrzpt mzmseb acgg nsfqvvf mc kfg smhe ftrf wh
+mvv kkge pyh fefm ckfrlisytyxl xj jtbbx rq htxd wbhz awvv fd acgg
+avxwzvv yciag oe nzy fet lgxa scuh.<br>
+I am most respectfully your obdt. servt.,<br>
+(Signed) R.E. Lee.<br>
+<br>
+<span class="deciphered">(The President deems it advisable that
+you should be charged with the military operations on both banks
+of the Miss., and that you should endeavor as promptly as possible to
+cross that river with as large a force as may be prudently withdrawn
+from your present Dept. You will accordingly extend your command
+to the east bank of the Miss., and make arrangements to bring to
+this side such of your present force as you may deem best.)</span><br>
+</DIV>
+<DIV  style="margin-left: 3em;">
+<TT>
+ciphertext: Vvq ecilmympm rvcog...<br>
+plaintext : The President deems...<br>
+keyword &nbsp; : COM PLETEVICT ORYCO...<br>
+</TT>
+</DIV>
+
+
+<A NAME="SEC7"></A>
+<H2>"Come Retribution" -- Jefferson Davis, R.E. Lee, J.E. Johnston, Breckenridge (February-April 1865)</H2>
+<H3>R.E. Lee and Breckenridge (February 1865)</H3>
+<P>At the last stage of the war, when R.E. Lee wrote to Breckenridge, Secretary of War.</P>
+
+<DIV class="kakomi2">
+Confederate States of America, Military Telegraph. Dated Head-quarters, February 25, 1865. Received at Richmond, Va., 12:25 minutes, A.M.<br>
+To Hon. J.C. Breckenridge, Sec'y of War: - I recommend
+that the tsysmee fn qoutwp rfatvvmp ub waqbqtm exfvxj and iswaqjru
+ktmtl are not of immediate necessity, uv kpgfmbpgr mpc thnlfl
+should be lmqhtsp.<br>
+ (Signed) R. E. Lee.<br>
+<br>
+<span class="deciphered">(I recommend that the removal of public property,
+machinery, stores and archives which are not of immediate necessity,
+be commenced. All powder should be secured.)</span>
+</DIV>
+<P>The keyword is "COME RETRIBUTION".</P>
+<DIV  style="margin-left: 3em;">
+<TT>
+ciphertext: tsysmee fn qoutwp rfat...<br>
+plaintext: &nbsp;removal of public prop...<br>
+keyword: &nbsp; &nbsp;COMERET RI BUTION COME...<br>
+</TT>
+</DIV>
+
+<H3>Jefferson Davis and J.E. Johnston (April 1865)</H3>
+<P>On 11 April, Jefferson Davis sent first intelligence of Lee's surrender near Appomattox Courthouse to J.E. Johnston <span class="note">(Freedman p.64-65)</span>. (In the following transcription, capitalization of the ciphertext is ignored. Enciphering errors are not corrected but omission of a letter is marked with "*". Note the keyword is freshly started for every sentence.)</P>
+<DIV class="kakomi2">
+A scout reports that Genl Lee uidvvswvzfx mqs egaz*ox hw pjm tzat near to appomattox Courthouse yesterday No official intelligence of the event dif xyikv qt fbbhyg fasd jhi lpoub As to result Gen H.H. Walker is ordered ywft wsktmt bxzs gq xame cht iu akmsaupuvf ....
+</DIV>
+<P>This deciphers as follows.</P>
+<DIV class="kakomi2">
+A scout reports that General Lee <span class="deciphered">surrendered the remnant of his army</span> near to Appomattox Courthouse yesterday. No official intelligence of the event <span class="deciphered">but there is little room for doubt</span> as to result. Gen. H.H. Walker is ordered <span class="deciphered">with forces here to join you at Greensborough</span>. Let me hear from you there. I will have need to see you to confer as to future action. The above is my telegram of yesterday which is repeated as requested.
+</DIV>
+<P>As the last sentence shows, Johnston could not decipher the despatch when it was first sent <span class="note">(OR, vol.47, Part III, p.777)</span>, of which Johnston tells he could decipher only the first part (see <A HREF="#SEC3b">above</A>). It may have had a different error from the repeated version, which omits a letter in the first part.</P>
+
+
+<A NAME="SEC7b"></A>
+<H2>Agents in Canada (October 1864)</H2>
+<H3>Jacob Thompson -- Federals' Codebreaking</H3>
+<P>The Confederates had agents based in Canada and gathered political and military information about the North for the Richmond government. A cipher despatch from Jacob Thompson <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Jacob_Thompson">Wikipedia</A>)</span> to Jefferson Davis on 13 October 1864 and the President's reply on 19 October 1864 were brought to the War Department by the messenger, who was a double agent and, when passing Washington, used to allow his papers to be copied. These were deciphered by the War Department operators <span class="note">(Bates p.76-81)</span>. They were about Lincoln's expected re-election and the final manoeuvers of the last Confederate attempt to invade the North <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Battle_of_Cedar_Creek">Wikipedia</A>)</span>, during which Jubal Early had once drawn close to Washington, D.C. in July 1864.</P>
+<P>These despatches were in Vigenere cipher in view of Eckert's later testimony that "These dispatches are written in the cipher to which this model <font size="2">[i.e., a cipher cylinder found in J.P. Benjamin's office as described  <A HREF="#SEC10">below</A>]</font> and the paper found in Booth's trunk <font size="2">[i.e., a Vigenere table or "alphabet square cipher" as called by Bates]</font> furnish the key." <span class="note">(<i>Assassination</i> p.41-42; Bates p.84-85; OR, Series II, vol.8, p.857)</span>.</P>
+<P>Bates' war diary shows that the first of these depatches, dated 13 October, was read as of 16 October 1864 <span class="note">(Bates p.79)</span>, the day before the keyword "Complete Victory" was recovered in New Orleans (see <A HREF="#SEC6">above</A>). Although this suggests that the War Department already knew how to tackle the Vigenere cipher, the context in Bates p.294-295 does not mention any other instances. (Anyway, since Thompson arrived in Canada only in May 1864, even if there had been a precedent, it cannot have been earlier by many months.)</P>
+
+<H3>Clement C. Clay</H3>
+<P>Another despatch deciphered by the War Department operators was from Clement C. Clay <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Clement_Claiborne_Clay">Wikipedia</A>)</span>, another agent in Canada, to J.P. Benjamin. It clearly showed that the Confederates' plan of raiding border towns from Canada was (at least secretly) favored by the Canadian government's officials. Secretary Stanton considered the original despatch signed by Clay should be detained for use as evidence in support of the US government's demand on Britain for damages. However, Assistant Secretary Dana pointed out it would reveal their interception of the Confederate agents' communication. President Lincoln solved the dilemma by allowing the messenger (double agent) to carry the despatch forward but arranging at the same time to cause him to be captured en route. <span class="note">(Bates p.80-81)</span></P>
+
+<!--スタントンはcharacterを暗号文字と解釈したようだが，単数なので単に性質か．
+<P>Further documents probably in the same cipher were found in Richmond.</P>
+<DIV class="kakomi">
+Halleck to Stanton, Richmond, 15 May 1865<br>
+I have just completed the examination of Mr. Hunter's papers captured at his house. ... Among them is a letter written by Beverly Tucker <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Nathaniel_Beverley_Tucker_%28journalist%29">Wikipedia</A>)</span> from Montreal, with inclosures of most suspicious character, and calculated, I think, to throw light on the Canadian plot and its connection with rebel authorities here<br>
+<br>
+Stanton to Halleck, Washington, 15 May 1865<br>
+In examining papers please give instructions to preserve and forward everything, no matter how unintelligible or insignificant in appearance, bearing the similitude of a cipher. We have the key that will decipher, and important discoveries are being made.<br>
+<span class="note">(OR, vol.46, Part III, p.1152)</span>
+</DIV>-->
+
+
+<A NAME="SEC8"></A>
+<H2>"Frederika Bremer" -- Signal Cipher Code at Charleston -- Federals' Codebreaking</H2>
+<P>The Confederates used Vigenere cipher not only for telegrams and letters but also for signalling with flags (or torches at night). One specific keyword "Frederika Bremer" is known to have been used around Charleston late in the war <span class="note">(Stone)</span>.</P>
+<P>Charleston was the location where the Civil War started. The Federals made attempts to take it from the beginning but stalemate ensued until the very last stage of the war.</P>
+<!--OR vol.35, Part II, p.403によれば5 April 1864には南軍がsignal bookが奪われたと認識している-->
+<P>In May 1864, Sergeant John D. Colvin of the Union Signal Corps at Fort Strong (better known as Fort Wagner in the hands of the Confederates until September 1863) succeeded in deciphering Confederate common code. Use of fifteen different versions with different starting positions could not prevent his deciphering <span class="note">(cf. OR, vol.35, p.47, 49; OR Series III, vol.4, p.826<!--1864年であることはp.818で確認できる-->; Brown p.213)</span>. Soon, the Confederates realized that their signals were read by the Union and in October or November 1864, they introduced the polyalphabetic system.</P>
+<P>In January 1865, George H. Stone broke this new system. A very long message was sent to General Hardee, which seemed to be a reply to the general's request for a statement of the arms, equipments and stores on Sullivans Island, which had been sent in the common Confederate code and had thus been decoded. When comparing the enciphered message and a supposed translation, he realized that all of the fifteen different codes were used in succession letter by letter in the same message. <span class="note">(Stone, p.147-148)</span> (Actually, the Confederates enciphered the letters with Vigenere and used the same signal code but it is equivalent to using different codes).</P>
+<P>The keyword later turned out to be "Frederika Bremer" <span class="note">(ibid. p.149-150)</span>. It is the name of a Swedish novelist <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Fredrika_Bremer">Wikipedia</A>)</span>, who was known enough in America to be mentioned in Louisa May Alcott, <i>Little Women</i> (1868).</P>
+
+<A NAME="SEC9"></A>
+<H2>"Where Liberty Dwells, There Is Our Country" -- J.P. Benjamin, John Slidell (January to November 1863)</H2>
+<P>The present author recovered a keyword "Where Liberty Dwells, There Is Our Country", taken from Benjamin Franklin. It was used between John Slidell <span class="note">(<A HREF="https://en.wikipedia.org/wiki/John_Slidell">Wikipedia</A>)</span>, a commissioner of the Confederacy to France, and J.P. Benjamin, Confederate Secretary of State.</P>
+<P>The Vigenere cipher with this keyword was used at least in the following despatches.</P>
+<P>Slidell to Benjamin, 11 January 1863 <span class="note">(OR Navy, vol.3, p.639)</span></P>
+<P>Slidell to Benjamin, 11 April 1863 <span class="note">(OR Navy, vol.3, p.738)</span></P>
+<P>Slidell to Benjamin, 20 April 1863 <span class="note">(OR Navy, vol.3, p.741-742)</span></P>
+<P>Slidell to Benjamin, 19 November 1863 <span class="note">(OR Navy, vol.3, p.959)</span></P>
+<P>While <i>OR Navy</i> prints the ciphertext in brackets after the deciphered plaintext, many errors in the printed ciphertext (either due to transcription or enciphering), resulting in mismatch of even the number of letters in a word, posed some difficulty in confirming that the ciphertext indeed corresponds to the plaintext preceding it. But after some trials, the correspondence could be established with each other via a keyword "Where Liberty Dwells, There Is My Country."</P>
+<P><font size="2">(By an interesting editorial error, part of the keyword "ertydwa lls th er    eismyco untrywher" is printed on p.638 instead of its ciphertext counterpart! This jumped into the present author's eyes as a sequence "aaaaaaw aaa aa aa    aaaaaaa aaaaaaaaa" when a Perl script is run on this "ciphertext" with the recovered keyword.)</font></P>
+<P>The following is a sample of enciphering with this keyword.</P>
+<DIV class="kakomi2">
+Slidell to Benjamin, 20 April 1863<br>
+<TT>
+ciphertext: pllvkciqlzv bhotleua mvfq uj mbcam by cmjkse xz us hrrrrj<br>
+keyword &nbsp; : WhereLibert yDwellsT here Is MyCou nt ryWher eL ib ertyDw<br>
+plaintext : tehegraphic despatch from Mr Adams of London to Mr Dayton<br>
+<br>
+ciphertext: eogalprx lqe ffch nux aylhr rptit zzkeljml hgnsb gvwtmznm yamvp<br>
+keyword &nbsp; : ellsTher eIs MyCo unt ryWhe reLib ertyDwel lsThe reIsMyCo untry<br>
+plaintext : advising him that the <i>Japan</i> alias <i>Virginia</i> would probably enter<br>
+<br>
+ciphertext: w mvvrnp qsim lhwv de etss<br>
+keyword &nbsp; : W hereLi bert yDwe ll sThe<br>
+plaintext : a French port near St Malo<br>
+</TT>
+</DIV>
+
+<A NAME="SEC10"></A>
+<H2>Physical Device of Confederate Vigenere Cipher</H2>
+<H3>Vigenere Table on Paper</H3>
+<P>Vigenere cipher can be practiced with a table shown above on a piece of paper. Such a table, however, was provided on a cylinder device (see below) at least for some high-level correspondents.<!--Such a table of the Confederate signal corps was  forwarded on 7 January 1865 by Acting Master Devoe of the US Navy to G.V. Fox, Assistant Secretary of Navy <span class="note">(OR Navy, vol.22, p.9-10)</span>.よく見ると発信地がワシントンなので，このとき捕獲したものではないらしい--></P>
+
+<H3>Confederate Cipher Cylinder</H3>
+<P>A cipher cylinder was also deployed at least in Mobile, Alabama <span class="note">(<A HREF="https://commons.wikimedia.org/wiki/File:Confederate_cipher_wheel_%28Vigenere%29,_captured_at_the_surrender_of_Mobile,_Alabama,_in_May_1865_-_National_Cryptologic_Museum_-_DSC07710.JPG">Wikimedia Commons</A>; the display of this photo appears to show a view from the backside (with a handle for rotation on the left) so the letters look upside down on the image)</span> and around Charleston <span class="note">(Stone, p.149)</span>.</P>
+<P>Two such devices are now extant <span class="note">(<A HREF="https://www.nsa.gov/about/cryptologic_heritage/museum/virtual_tour/museum_tour_text.shtml#union_code_book">NSA</A>)</span>. The other would be the one found in the office of Judah P. Benjamin, Confederate Secretary of State at Richmond, on 6 April 1865 <span class="note">(Bates p.84; <i>Assassination</i> p.41, p.379, where it is called a "cipher machine"<!--it was a key to the official rebel cipherで検索-->)</span>, a few days after the capital was evacuated by the Confederates.</P>
+<P>This Confederate cipher cylinder was a much simpler one than the well-known type such as the Jefferson cylinder (which might have explained the fixed keyword length of 15). It was devised by Captain William N. Barker of the Confederate Signal Corps. It is simply a wooden cylinder around which is wrapped a Vigenere table. The cylinder could rotate under a bar along which was pasted the alphabet and on which was a sliding pointer.<P>
+<P>When enciphering, the pointer is brought to the letter in the key on the bar and the cylinder is rotated until the letter in the word being enciphered is under the bar. Then, the pointer indicates the ciphertext letter. <span class="note">(Brown p.212; Friedman p.57-58)</span></P>
+
+<H3>Cipher Machine/Cipher Box</H3>
+<P>The illustration of a "Confederate cipher machine" on Brown p.212 is of a different type from this because it does not seem to have the pointer <span class="note">(ASA p.98)</span>. It encloses the cylinder in a box which allows only one line of the table to be seen through a slit.</P>
+<P>This may be what General Polk mentions as a "cipher box".</P>
+<DIV class="kakomi">
+Polk to J.E. Johnston, Rome, 10 May 1864<br>
+I have asked orders in ciphers, but on examination I found my cipher box out of place and cannot decipher the dispatch. Shall I report to your headquarters?<br>
+<span class="note">(OR, vol.38, Part IV, p.688)</span>
+</DIV>
+
+
+<H3>Cipher Disk</H3>
+<P>A Confederate cipher disk is also said to be for Vigenere cipher (see, for example, a <A HREF="http://www.cryptomuseum.com/crypto/usa/ccd/index.htm">Crypto Museum site</A>). At the back of the disk is an inscription "F. Labarre" (who created it) and "Richmond VA". Only five are extant today.</P>
+<P>As late as during World War I, the Army Signal School of the American Expeditionary Forces sent to Europe taught use of celluloid cipher disks for polyalphabetic substitution <span class="note">(Friedman, "American Army Field Codes in the American Expeditionary Forces during the First World War", p.32, Appendix 2)</span>.</P>
+<!--<P>The present auther is still lookin for records of its use for Vigenere cipher, though it is imaginable that it was used at least for signal code that used different substitution message by message.</P>-->
+
+<A NAME="SEC11"></A>
+<H2>References</H2>
+<P>William R. Plum, <i>The Military Telegraph During the Civil War in the United States</i>, vol.1 (1882) (<A HREF="https://books.google.co.jp/books?id=trpBAAAAIAAJ">Google</A>), vol.2 (<A HREF="https://archive.org/stream/militarytelegraph02plumrich#page/38/mode/2up/search/fairchild">Internet Archive</A>) [unless specified, vol.1 is meant herein]</P>
+<P>J. Willard Brown (1896), <i>The Signal Corps, U.S.A. in the War of the Rebellion</i> (<A HREF="https://archive.org/stream/signalcorpsusain00brow#page/n7/mode/2up">Internet Archive</A>)</P>
+<P>David Homer Bates (1907), <i>Lincoln in the Telegraph Office: Recollections of the United States Military Telegraph Corps during the Civil War</i> (<A HREF="https://archive.org/details/lincolnintelegra00baterich">Internet Archive</A>, <A HREF="https://books.google.co.jp/books?id=ozZu1hIt_OgC">Google</A>)</P>
+<P>George H. Stone (1909), "Signals at the Siege of Charleston", <i>Lewiston Journal Illustrated Magazine</i>, 30 October & 6 November 1909, reprinted in Donald A. Beattie, Rodney Cole, Charles Waugh, <i>A Distant War Comes Home: Maine in the Civil War Era</i> (1991), p.145-153 (<A HREF="">Google</A>)</P>
+<P>Army Security Agency [ASA], (ed.) Wayne G. Barker, <i>The History of Codes and Ciphers in the United States Prior to World War I</i>, A Cryptographic Series (1946, 1978)</P>
+<P>W.F. Friedman, "History of Cryptology" (<A HREF="https://www.nsa.gov/public_info/_files/friedmanDocuments/LecturesandSpeeches/FOLDER_175/41758839079798.pdf">pdf</A>)</P>
+<P>Kent D. Boklan (2006), "How I Broke the Confederate Code (137 Years Too Late)", <i>Cryptologia</i> 30, p.340-345 (<A HREF="http://www.cwu.edu/~boersmas/cryptology/confederate%20code%20paper.pdf">pdf</A>)</P>
+
+<H3>Basic Resources</H3>
+<P><i>The war of the rebellion: a compilation of the official records of the Union and Confederate armies</i> ("OR") [Series I is meant, unless otherwise specified] (<A HREF="http://ebooks.library.cornell.edu/m/moawar/waro.html">Making of America</A>, <A HREF="http://ehistory.osu.edu/books/official-records">ehistory</A>)</P>
+<P><i>Official records of the Union and Confederate Navies in the War of the Rebellion</i> ("OR Navy" herein) (<A HREF="http://ebooks.library.cornell.edu/m/moawar/ofre.html">Making of America</A>, <A HREF="http://www.wiu.edu/libraries/govpubs/war_ofthe_rebellion/navyRecords.php">Western Illinois University</A>)</P>
+<P>Benn Pitman (ed.), <i>The assassination of President Lincoln and the trial of the conspirators</i> (1865) ("<i>Assassination</i>" herein) (<A HREF="https://archive.org/details/assassinationofp00hero">Internet Archive</A>, <A HREF="https://books.google.co.jp/books?id=hpH_KfWfoCkC&pg=PA41&lpg=PA41&dq=%22it+was+a+key+to+the+official+rebel+cipher%22&source=bl&ots=H1JtO3Y-3U&sig=bWeVm3CqaM5mYEyjAHtKKH7_IoU&hl=ja&sa=X&ved=0ahUKEwjCvK--lr3JAhWB5aYKHW9-ClIQ6AEIHTAA#v=onepage&q=%22it%20was%20a%20key%20to%20the%20official%20rebel%20cipher%22&f=false">Google</A>)</P>
+<br>
+<br>
+<font size="2">
+&COPY;2015 S.Tomokiyo<br>
+First posted on 20 November 2015. Last modified on 8 August 2018<br>
+A digest of the present article is included in <A HREF="civilwar0.htm#SEC2">an overview article</A>.<br>
+<A HREF="crypto.htm">Cryptiana: Articles on Historical Cryptography</A><BR>
+</font>
+
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>

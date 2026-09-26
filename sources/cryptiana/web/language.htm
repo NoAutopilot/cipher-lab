@@ -1,0 +1,105 @@
+<HTML>
+<HEAD>
+<TITLE>
+Is Codebreaking Possible without Knowing the Language?
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="Cipher, Code, codebreaking">
+<link rel=stylesheet type=text/css href=decode2.css>
+</HEAD>
+<BODY>
+<H1>Is Codebreaking Possible without Knowing the Language?</H1>
+
+<P>Is codebreaking possible without knowing the language? -- This question may be interpreted in two ways: (1) Is codebreaking possible without knowing in what language the plaintext is written? or (2) Is codebreaking possible without command of the language of the plaintext?</P>
+
+<P>The answers to these questions may be pretty much obvious. Three centuries ago, John Davys (1737) described in <i>Art of Decyphering</i>, p.40:</P>
+<DIV class="kakomi">
+It is requisite, that the Decypherer should know, or have probable Reason to believe, in what Language the Letter is written; and that he should also be at least moderately skill'd in that Language.
+</DIV>
+<P>Davys considered that these were obvious but mentioned these because he had an episode to tell about codebreaking without knowing the language (see below). The present article presents similar cases.</P>
+
+
+<H2>Is Codebreaking Possible without Knowing in what Language the Plaintext is Written?</H2>
+<P>Usually, identifying or at least assuming the language of the text is the first step of codebreaking. When part of the text (or even only the date line) is in the clear, one might assume that the plaintext is in the same language. The mere information of the sender or recipient often helps identifying the language.</P>
+<P>When such external evidence is not available, frequency analysis of the ciphertext may reveal the language. In the case of monoalphabetic substitution ciphers, different languages have different characteristics in letter frequencies. For example, when the frequency of one symbol is nearly 20 percent of all in the ciphertext and is more than twice that of the runnerup, one can tell the plaintext is in French. When relative frequencies of several letters are considered, more accurate estimate of the language is possible.</P>
+<P>Anyway, subsequent steps of codebreaking proceed according to an assumption of a particular language.</P>
+<P>However, occasionaly, initial assumptions of the language turn out to be wrong. Herbert O. Yardley's <i>The American Black Chamber</i> (Chapter VI) tells how he decoded two mysterious messages transmitted from a German station in 1918. Naturally, he first assumed the plaintext was in German or Spanish but initial attemps with such assumptions led "to a blank wall." In the end, the plaintext turned out to be in English. (See <A HREF="codebreaking.htm#SEC2">another article</A>.)</P>
+
+<H2>Is Codebreaking Possible without Command of the Language?</H2>
+<P>A short answer is: yes, though the process is less efficient than it might be with the command of the language.</P>
+<P>Of course, basic knowledge of the language (orthography, syllable structures, frequency of letters/syllables, vocabulary, etc.) is indispensable but an initial breakthrough into the code/cipher can be made by those not fluent in the language. I recently solved ciphers in Italian (see <A HREF="vatican.htm">another article</A>; yet another article in <A HREF="https://www.tandfonline.com/doi/full/10.1080/01611194.2018.1503207">Cryptologia</A>) and Spanish (see <A HREF="spanish2A.htm">another article</A>) without knowing the languages. <font size="2">(The cited articles demonstrate the limitation posed by my lack of command of the languages. My solutions had to be only preliminary. Moreover, for example, when a peculiar pattern is found in the ciphertext and dictionary search returned a list of words matching the pattern, picking up a plausible candidate is difficult when one cannot recognize the candidate words. In a way, my success relied on knowledge of a few words in those languages by similar English words.)</font></P>
+<P>I have seen other codebreakers mentioning machine translation.</P>
+<P>Historical codebreakers were not always familiar with the languages used in the ciphertext they tackled. Fran&ccedil;ois Vi&egrave;te, known for breaking many Spanish ciphers, was not familiar with Spanish <span class="note">(Pesic (1997), p.16)</span>. David Kahn (1967), <i>The Codebreakers</i>, p.111, comments that solutions without knowing the language are not uncommon, in describing Philibert Babou <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Philibert_Babou">Wikipedia</A>)</span>, who broke foreign ciphers for Francis I of France.<!--Pesic p.17によればヴィジュネルもそのことを記載--></P>
+<P>The following presents some episodes of codebreaking without command of the language.</P>
+<!--FRANCOIS VIETE, FATHER OF MODERN CRYPTANALYSIS - TWO NEW MANUSCRIPTS
+p.16でもVieteがスペイン語を知らずに解読した話が出てくる．ただ、他者が感嘆した、という話。-->
+
+
+<H3>Yardley's Solution of Japanese Coded Telegrams</H3>
+<P>When Herbert O. Yardley started working on Japanese encoded telegrams in 1919, Yardley "knew nothing about the Japanese Language" <span class="note">(<i>The American Black Chamber</i>, p.252; see also Kahn, <i>The Reader of Gentlemen's Mail</i>, p.65-67)</span> and only after the success in codebreaking, he found a translator for his solutions <span class="note">(Kahn p.67-68)</span>.</P>
+
+<H3>Deciphering to a Garbled Message</H3>
+
+<P><i>The manuscripts of His Grace the Duke of Portland</i> (<A HREF="http://archive.org/stream/dukeportlandmanu04greauoft#page/290/mode/2up/search/blenco">Internet Archive</A>), p.290, records the following report of William Blencowe, son-in-law of John Wallis (see <A HREF="wallis_e.htm">another article</A>) and the first official Decipherer of England, to Robert Harley, Secretary of State.</P>
+
+<DIV class="kakomi">
+William Blencowe to Robert Harley, Launceston, 15 March 1706<br>
+On the difficulties he had met with in decyphering a letter sent to him. After discovering as he thought what most of the characters signified he was surprised to find the matter concealed under the cypher to be a gibberish language of which he did not understand a word. Should be inclined to believe himself mistaken in the key, if any cypher could be thought capable of being reduced into a sounding language by two keys differing in many letters.<!--自分の解読した鍵が間違っていると思うところだが，多くの文字が異なっている鍵で言語らしきものが出てくるとは思えないので，やっぱり正しいはず--> The first words of the letter as the key explains it are <i>Precloss quannupila sa monne</i>, and it goes on in that kind of canting language. Will keep the cypher and use more pains to make an intelligible interpretation of it unless Harley, who knows from whose hand it comes, believes that it is incapable of a better explication.
+</DIV>
+<P>That is, Blencowe identified the values of characters but the deciphered text was a garble: "Precloss quannupila sa monne ...." Blencowe considered that, if the key he found were wrong, such readable syllable structure ("sounding language") could not have been produced.</P>
+<P>Possibly, Blencowe found a solution on an assumption of some language but the plaintext was in some other language of similar syllable structures. If this is the case, Blencowe "solved" the cipher without knowing any word of the plaintext. As Kahn (1967), p.111, points out, even without knowing any word of the language, "the alternations of vowels and consonants common to all languages may yet afford some clues."</P>
+
+<H3>Official Decipherer Deciphers without Knowing Swedish</H3>
+<H4>Edward Willes</H4>
+<P>Edward Willes <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Edward_Willes_(bishop)">Wikipedia</A>)</span> learned cryptanalysis from Blencowe while he was a student in Oxford and became a Decipherer in 1716.</P>
+
+<P>Thomas Astle (1784), <i>Origin and Progress of Writing</i> (<A HREF="http://books.google.co.jp/books?id=2LwOAAAAQAAJ&pg=PA234&lpg=PA234&dq=%22what+hindrance+hath+ensued%22&source=bl&ots=De48VpMVbQ&sig=FbPswVQKCfMXCoY8jc3hbSjpd90&hl=ja#v=onepage&q=hindrance&f=false">Google</A>), p.178, describes the following hearsay episode.</P>
+
+<DIV class="kakomi">
+Mr. Welbore Ellis <span class="note">(this one in <A HREF="https://en.wikipedia.org/wiki/Welbore_Ellis,_1st_Baron_Mendip">Wikipedia</A>?)</span> assured me, that the late Earl Granville <span class="note">(<A HREF="https://en.wikipedia.org/wiki/John_Carteret,_2nd_Earl_Granville">Wikipedia</A>)</span>, when Secretary of State, told him, that when he came into office he had his doubts respecting the certainty of deciphering -- That he wrote down two or three sentences in the Swedish language, and afterwards put them into such arbitrary marks or characters, as his mind suggested to him. -- That he sent the paper to the late Dr. Willes, who returned it the next day, and informed his Lordship, that the characters he had sent to him formed certain words, which he had written beneath the cipher, but that he did not understand the language, and Lord Granville declared, that the words were exactly those which he had first written, before be put them into cipher.
+</DIV>
+<P>Earl Granville (John Carteret, who succeeded the earldom in 1744) was a secretary of state in 1721-1724 after serving as an ambassador in Sweden from 1719. At the time, codebreaking was not known among the public and there were many who considered it was nothing but conjectures (see <A HREF="davys_e.htm">another article</A>).</P>
+<P>Decipherer Willes distinguished himself by deciphering messages between Swedish diplomats and was rewarded in 1718<!--Wikipedia; Ellis-->. So, even if it was true that Willes did not understand Swedish, he had experience in deciphering Swedish letters before Carteret came into office.</P>
+<P>As an official decipherer, Willes played a role in prosecution of the Atterbury Plot in 1723 (see <A HREF="atterbury.htm">another article</A>), while the above-quoted John Davys verified the deciphering at the request of the defender (see <A HREF="davys_e.htm">another article</A>).</P>
+
+<H4>John Keill</H4>
+<P>Davys also records the episode of deciphering Swedish cipher without knowing Swedish from another source. (Davys considered it could have been possible only if the cipher was simple (monoalphabetic, no nulls, words separted), it was known that the language was Swedish, and an informant on Swedish was available.)</P>
+<DIV class="kakomi">
+Indeed it <span class="note">[the quotation at the beginning of the present article]</span> is so obvious, that I should hardly have mentioned it myself, had not a Person of unquestionable Credit assured me from the Mouth of Dr John Keil, that he once decyphered a Paper written in Swedish, without knowing a Word of the Swedish Tongue. 
+</DIV>
+<P>John Keill <span class="note">(<A HREF="https://en.wikipedia.org/wiki/John_Keill">Wikipedia</A>)</span> was appointed as a decipherer in 1713 but, being not very successful, was replaced in 1716 <span class="note">(Kenneth Ellis, <i>The Post Office in the Eighteenth Century</i>, p.128)</span>.</P>
+<P><font size="2">(To reconcile Davys' description with Astle's, both "a Person of unquestionable Credit" and "he" have to refer to Willes, but I'm not sure whether such a reading of this English expression is justified.)</font></P>
+
+<H3>Solution of Ciphertext of Chinese</H3>
+<P>Fletcher Pratt (1942), <i>Secret and Urgent</i>, p.31, describes the following episode about codebreakers who worked on the Voynich Manuscript.</P>
+<DIV class="kakomi">
+... some of the same cryptographers had already performed such feats as reading messages which had first been translated into Chinese and then thrown into a complex cipher -- and this without any previous knowledge of Chinese.
+</DIV>
+<P>This sounds like an interesting experiment but I have not located its authentic source.</P>
+<br>
+<br>
+<font size="2">
+&COPY;2019 S.Tomokiyo<br>
+First posted on 12 January 2019. Last modified on 26 December 2019.<br>
+<A HREF="crypto.htm">Cryptiana: Articles on Historical Cryptography</A><BR>
+</font>
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>
+
+
+
+

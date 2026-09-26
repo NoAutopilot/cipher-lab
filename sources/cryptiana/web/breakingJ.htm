@@ -1,0 +1,355 @@
+<HTML>
+<HEAD>
+<TITLE>
+コーンウォリスの暗号を解読せよ！――暗号解読入門
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="Cipher, Code Breaking, Cornwallis">
+<link rel=stylesheet type=text/css href=decode2.css>
+</HEAD>
+
+<BODY>
+<H1>コーンウォリスの暗号を解読せよ！――暗号解読入門</H1>
+
+<P>本稿では，アメリカ独立戦争で実際に使われた暗号文を題材として，初心者向けに暗号解読を例解する．</P>
+
+<H2>クリントン‐コーンウォリス暗号</H2>
+<P>1781年10月，イギリス軍のコーンウォリス将軍がヨークタウンで降伏したことで，事実上，アメリカ独立戦争が終結した．イギリス軍が司令部を置くニューヨーク攻撃の機会をうかがっていたアメリカ軍総司令官ジョージ・ワシントンは，同盟国フランスの艦隊がチェサピーク湾に来航するとの情報を得ると，イギリス側に気づかれることなく軍勢を南下させ，ヨークタウンのコーンウォリスを一気に追い詰めることに成功したのである．</P>
+<P>チェサピーク湾南岸のヨークタウンでの最後の数か月の間，コーンウォリスはニューヨークにいるイギリス軍総司令官サー・ヘンリー・クリントンと頻繁に極秘のメッセージを交換していた．次は，1781年9月24日にクリントンがコーンウォリスに宛てて送った手紙の全文である．</P>
+
+<DIV class="kakomi">
+I was honored yesterday with your Lordship's Letter of the 16th and 17th instant. And 33 40 61 7 32 84 -<br>
+7 22 - 7 - 11 15 15 22 21 5 4 - 24 26 - 22 18 15 - 26 2 7 4 - 7 5 14 -<br>
+4 15 5 15 25 7 2 - 24 26 26 21 8 15 25 23 - 18 15 2 14 - 22 18 21 23 -<br>
+14 7 13 - 21 22 - 21 23 14 15 22 15 25 11 21 5 15 14 - 22 18 7 22 - 7 12 =<br>
+24 19 15 - 5 0 0 0 - 11 15 5 - 25 7 5 3 - 7 5 14 - 26 21 2 15 - 23 18 =<br>
+7 2 2 - 12 15 - 15 11 12 7 25 3 15 14 - 24 5 - 12 24 7 25 14 -<br>
+22 18 15 - 3 21 5 4 23 - 23 18 21 29 23 - 7 5 14 - 22 18 15 - 21 24 =<br>
+21 5 22 - 15 17 15 25 22 21 24 - 5 23 - 24 26 - 22 18 15 - 5 7 19 13 -<br>
+7 5 14 - 7 25 11 13 - 11 7 14 15 - 21 5 - 7 - 26 15 9 - 14 7 13 23 -<br>
+22 24 - 25 15 2 21 15 19 15 - 13 24 6 - 7 5 14 - 7 26 22 15 25 =<br>
+9 7 25 14 23 - 8 24 24 29 15 25 7 22 15 - 9 21 22 18 - 13 24 6 -<br>
+The Fleet 8 24 5 23 21 23 22 23 - 24 26 - 23 - 23 7 21 2 -<br>
+24 26 - 22 18 15 - 2 21 5 15 - 22 18 25 15 15 - 24 26 - 9 18 21 8 18 -<br>
+7 25 15 - 22 18 25 15 15 - 14 15 8 3 15 25 23 -<br>
+<br>
+22 18 15 25 15 - 21 23 - 15 19 15 25 13 -<br>
+25 15 7 23 24 5 - 22 24 18 24 29 15 - 9 15 - 23 18 7 2 2 -<br>
+23 22 7 25 22 - 26 25 24 11 - 18 15 5 8 15 - 7 12 24 6 22 -<br>
+22 18 15 - 5 - 24 8 22 24 12 15 25 I have the Honoor to be<br>
+Your Lordship's most obedient and most humble servant.<br>
+<br>
+PS<br>
+7 14 11 21 25 7 2 - 14 21 4 12 13 - 21 23 - 22 18 21 23 -<br>
+11 24 11 15 5 22 - 7 25 25 21 19 15 14 - 7 22 - 22 18 15 - 18 24 24 3 -<br>
+9 21 22 18 - 22 18 25 15 15 - 23 7 21 2 - 24 26 - 22 18 15 - 2 21 5 15 -<br>
+If a venture without knowing whether<br>
+22 18 15 13 - 8 7 5 - 12 15 - 23 15 15 5 - 12 13 - 6 23 - 21 -<br>
+25 15 1 6 15 23 22 - 22 18 7 22 - 21 26 - 7 22 - 21 23 -<br>
+9 15 2 2 - 6 29 24 5 - 18 15 7 25 21 5 4 - 7 - 8 24 5 23 21 =<br>
+14 15 25 7 12 2 15 - 26 21 25 21 5 4 - 22 24 9 7 25 14 23 -<br>
+22 18 15 - 15 5 22 25 7 5 8 15 - 24 26 - 8 18 15 23 7 29 15 7 3 -<br>
+22 18 25 15 15 - 2 7 25 4 15 - 23 11 24 3 15 23 - 11 7 13 - 12 15 -<br>
+11 7 14 15 - 29 7 25 7 2 2 15 2 - 22 24 - 21 22 - 7 5 14 -<br>
+21 26 - 13 24 6 - 29 24 23 23 15 23 23 - 22 18 15 - 29 24 23 22 -<br>
+7 22 - 4 2 24 6 8 15 23 22 15 25 - 26 24 6 25 -<br>
+<br>
+21 - 23 18 7 2 2 - 23 15 5 14 - 7 5 24 22 18 =<br>
+15 25 - 25 6 5 5 15 25 - 22 24 - 13 24 6 - 21 5 - 7 -<br>
+2 21 22 2 15 - 22 21 11 15 -<br>
+I have received your Lordship's Letter of the 8th instant.<br>
+</DIV>
+
+<P><img src="17810924.jpg"></P>
+
+<H2>頻度解析</H2>
+<P>暗号文を見てまずわかることは，数字が0から33の範囲で，時折40，61，84といった大きな数がはいっているということである．数字の範囲がこのように限られていることを考えると，各数字は特定の単語ではなく，アルファベットの１文字を表わしていると考えられる．</P>
+<P>どんな暗号解読者でもまず最初にすることは，<B>各数字の出現頻度を数える</B>ことである．その結果は次のようになる：<br>
+
+<TABLE border="0">
+<TR><TD width="100">
+15 (87回)<br>
+&nbsp;7 (56回)<br>
+22 (54回)<br>
+24 (42回)<br>
+21 (41回)<br>
+23 (40回)<br>
+25 (40回)<br>
+&nbsp;5 (38回)<br>
+18 (35回)<br>
+&nbsp;2 (26回)<br>
+</TD><TD width="100">
+14 (23回)<br>
+26 (18回)<br>
+11 (14回)<br>
+13 (13回)<br>
+&nbsp;8 (12回)<br>
+12 (11回)<br>
+&nbsp;6 (11回)<br>
+&nbsp;4 (9回)<br>
+29 (8回)<br>
+&nbsp;9 (8回)<br>
+</TD><TD width="100">
+&nbsp;3 (7回)<br>
+19 (5回)<br>
+&nbsp;0 (3回)<br>
+&nbsp;1 (1回)<br>
+17 (1回)<br>
+32 (1回)<br>
+33 (1回)<br>
+40 (1回)<br>
+61 (1回)<br>
+84 (1回)<br>
+</TD></TR></TABLE>
+</P>
+
+<P>ここで，暗号解読者が知っておくべき基本的な事実として，<B>英語で最もよく使われる文字はETAONRISHである</B>というものがある（「エタオンリッシュ」という単語のようにして上位９つの高頻度文字を覚えるというものだが，別の覚え方として，Hを除いた８文字の「a sin to err」というものもある）．実際の順位は前後するかもしれないが，暗号文に現われる上位９つの数字15, 7, 22, 24, 21, 23, 25, 5, 18がE, T, A, O, N, R, I, S, Hに対応する可能性が高い．特に，数字15の頻度は突出しており，おそらくこの15がEを表わすものと思われる．</P>
+<P>暗号解読に際して便利なもう一つの事実は，<B>英語で最も頻繁に使われる単語はtheである</B>というものである．そこで，３文字の組み合わせであって何回も使われているものをさがしてみる．すると，「22 18 15」というシーケンスが12回も使われていることがわかる．よって，この３つの数字が22(T), 18(H), 15(E)ではないかと推測できる．この結果は，上記の高頻度文字とも符合する．</P>
+<P>さらに，この暗号文には，暗号解読を容易にする独特の特徴がある．それは，ハイフン（-）が単語の切れ目を表わしているらしいということである．だとすると，「22 18 15」という３文字の組み合わせは，ちょうど独立した単語を表わすことになり，このことも「22 18 15」がtheに対応するという仮説の裏付けとなる．</P>
+<P><B>単語の切れ目は暗号解読のための強力な手掛かり</B>なのである．ここで，１文字の単語「7」がそこここに表れていることに気がつく．英語で１文字の単語と言ったら「a」か「I」である．上記の頻度計数を見ると，「7」の頻度の高さから，「7」はどちらかというと「a」であると思われる．</P>
+<P>これまでの知見から，どの程度平文（ひらぶん）が明らかになったか見てみることにしよう．</P>
+
+<DIV class="kakomi">
+33 40 61 a 32 84 -<br>
+a t - a - 11 e e t 21 5 4 - 24 26 - t h e - 26 2 a 4 - a 5 14 -<br>
+4 e 5 e 25 a 2 - 24 26 26 21 8 e 25 23 - h e 2 14 - t h 21 23 -<br>
+14 a 13 - 21 t - 21 23 14 e t e 25 11 21 5 e 14 - t h a t - a 12 =<br>
+24 19 e - 5 0 0 0 - 11 e 5 - 25 a 5 3 - a 5 14 - 26 21 2 e - 23 h =<br>
+a 2 2 - 12 e - e 11 12 a 25 3 e 14 - 24 5 - 12 24 a 25 14 -<br>
+t h e - 3 21 5 4 23 - 23 h 21 29 23 - a 5 14 - t h e - 21 24 =<br>
+21 5 t - e 17 e 25 t 21 24 - 5 23 - 24 26 - t h e - 5 a 19 13 -<br>
+a 5 14 - a 25 11 13 - 11 a 14 e - 21 5 - a - 26 e 9 - 14 a 13 23 -<br>
+t 24 - 25 e 2 21 e 19 e - 13 24 6 - a 5 14 - a 26 t e 25 =<br>
+9 a 25 14 23 - 8 24 24 29 e 25 a t e - 9 21 t h - 13 24 6 -<br>
+The Fleet 8 24 5 23 21 23 t 23 - 24 26 - 23 - 23 a 21 2 -<br>
+24 26 - t h e - 2 21 5 e - <span style="background-color:#ffff00">t h 25 e e</span> - 24 26 - 9 h 21 8 h -<br>
+a 25 e - <span style="background-color:#ffff00">t h 25 e e</span> - 14 e 8 3 e 25 23 -<br>
+<span style="background-color:#ffff00">t h e 25 e</span> - 21 23 - e 19 e 25 13 -<br>
+25 e a 23 24 5 - t 24 h 24 29 e - 9 e - 23 h a 2 2 -<br>
+23 t a 25 t - 26 25 24 11 - h e 5 8 e - a 12 24 6 t -<br>
+t h e - 5 - 24 8 t 24 12 e 25 I have the Honoor to be ....<br>
+<br>
+PS<br>
+a 14 11 21 25 a 2 - 14 21 4 12 13 - 21 23 - t h 21 23 -<br>
+11 24 11 e 5 t - a 25 25 21 19 e 14 - a t - t h e - h 24 24 3 -<br>
+9 21 t h - <span style="background-color:#ffff00">t h 25 e e</span> - 23 a 21 2 - 24 26 - t h e - 2 21 5 e -<br>
+If a venture without knowing whether<br>
+<span style="background-color:#99ff00">t h e 13</span> - 8 a 5 - 12 e - 23 e e 5 - 12 13 - 6 23 - 21 -<br>
+25 e 1 6 e 23 t - t h a t - 21 26 - a t - 21 23 -<br>
+9 e 2 2 - 6 29 24 5 - h e a 25 21 5 4 - a - 8 24 5 23 21 =<br>
+14 e 25 a 12 2 e - 26 21 25 21 5 4 - t 24 9 a 25 14 23 -<br>
+t h e - e 5 t 25 a 5 8 e - 24 26 - 8 h e 23 a 29 e a 3 -<br>
+<span style="background-color:#ffff00">t h 25 e e</span> - 2 a 25 4 e - 23 11 24 3 e 23 - 11 a 13 - 12 e -<br>
+11 a 14 e - 29 a 25 a 2 2 e 2 - t 24 - 21 t - a 5 14 -<br>
+21 26 - 13 24 6 - 29 24 23 23 e 23 23 - t h e - 29 24 23 t -<br>
+a t - 4 2 24 6 8 e 23 t e 25 - 26 24 6 25 -<br>
+<br>
+21 - 23 h a 2 2 - 23 e 5 14 - a 5 24 t h =<br>
+e 25 - 25 6 5 5 e 25 - t 24 - 13 24 6 - 21 5 - a -<br>
+2 21 t 2 e - t 21 11 e -<br>
+I have received your Lordship's Letter of the 8th instant.<br>
+</DIV>
+
+<H2>さらなるステップ</H2>
+<P>ここで，「t h 25 e e」や「t h e 25 e」といったシーケンスに気がつく．これから，25はまずRであろう．さらに，平文で書かれた単語whetherのあとに，「t h e 13」という単語が現われる．よって，13はYであろう．</P>
+<P>もっと細かく見てみればさらなるパターンがみつかって，単語を特定できるかもしれないが，ここで上記の知見R(25)や13(Y)をまた当てはめてみる．</P>
+
+<DIV class="kakomi">
+33 40 61 a 32 84 -<br>
+a t - a - 11 e e t 21 5 4 - 24 26 - t h e - 26 2 a 4 - a 5 14 -<br>
+4 e 5 e r a 2 - 24 26 26 21 8 e r 23 - h e 2 14 - t h 21 23 -<br>
+14 a y - 21 t - 21 23 14 e t e r 11 21 5 e 14 - t h a t - a 12 =<br>
+24 19 e - 5 0 0 0 - 11 e 5 - r a 5 3 - a 5 14 - 26 21 2 e - 23 h =<br>
+a 2 2 - 12 e - e 11 12 a r 3 e 14 - 24 5 - 12 24 a r 14 -<br>
+t h e - 3 21 5 4 23 - 23 h 21 29 23 - a 5 14 - t h e - 21 24 =<br>
+21 5 t - e 17 e r t 21 24 - 5 23 - 24 26 - t h e - 5 a 19 y -<br>
+a 5 14 - a r 11 y - 11 a 14 e - 21 5 - a - 26 e 9 - 14 a y 23 -<br>
+t 24 - r e 2 21 e 19 e - y 24 6 - a 5 14 - <span style="background-color:#ffff00">a 26 t e r =<br>
+9 a r 14 23 - 8 24 24 29 e r a t e - 9 21 t h - y 24 6</span> -<br>
+The Fleet 8 24 5 23 21 23 t 23 - 24 26 - 23 - 23 a 21 2 -<br>
+24 26 - t h e - 2 21 5 e - t h r e e - 24 26 - 9 h 21 8 h -<br>
+a r e - t h r e e - 14 e 8 3 e r 23 -<br>
+<br>
+t h e r e - 21 23 - <span style="background-color:#ffff00">e 19 e r y</span> -<br>
+r e a 23 24 5 - t 24 h 24 29 e - 9 e - 23 h a 2 2 -<br>
+23 t a r t - 26 r 24 11 - h e 5 8 e - a 12 24 6 t -<br>
+t h e - 5 - 24 8 t 24 12 e r<br>
+I have the Honoor to be ....<br>
+<br>
+PS<br>
+a 14 11 21 r a 2 - 14 21 4 12 y - 21 23 - t h 21 23 -<br>
+11 24 11 e 5 t - <span style="background-color:#ffff00">a r r 21 19 e 14</span> - a t - t h e - h 24 24 3 -<br>
+9 21 t h - t h r e e - 23 a 21 2 - 24 26 - t h e - 2 21 5 e -<br>
+If a venture without knowing whether<br>
+t h e y - 8 a 5 - 12 e - 23 e e 5 - 12 y - 6 23 - 21 -<br>
+r e 1 6 e 23 t - t h a t - 21 26 - a t - 21 23 -<br>
+9 e 2 2 - 6 29 24 5 - h e a r 21 5 4 - a - 8 24 5 23 21 =<br>
+14 e r a 12 2 e - 26 21 r 21 5 4 - t 24 9 a r 14 23 -<br>
+t h e - <span style="background-color:#ffff00">e 5 t r a 5 8 e</span> - 24 26 - 8 h e 23 a 29 e a 3 -<br>
+t h r e e - 2 a r 4 e - 23 11 24 3 e 23 - 11 a y - 12 e -<br>
+11 a 14 e - 29 a r a 2 2 e 2 - t 24 - 21 t - a 5 14 -<br>
+21 26 - y 24 6 - 29 24 23 23 e 23 23 - t h e - 29 24 23 t -<br>
+a t - 4 2 24 6 8 e 23 t e r - 26 24 6 r -<br>
+<br>
+21 - 23 h a 2 2 - 23 e 5 14 - a 5 24 t h =<br>
+e r - r 6 5 5 e r - t 24 - y 24 6 - 21 5 - a -<br>
+2 21 t 2 e - t 21 11 e -<br>
+I have received your Lordship's Letter of the 8th instant.<br>
+</DIV>
+
+<P>今度は，「a 26 t e r = 9 a r 14 23 - 8 24 24 29 e r a t e - 9 21 t h - y 24 6」というシーケンスが目に留まる．</P>
+<P>まず，26はFであろう．二重ハイフン（=）は単語が次行に続くことを表わしているとすると，おそらく「9 a r 14 23」はwardsであろう．次に，シーケンス「8 24 24 29 e r a t e」は，同じ文字の連続「24 24」が特徴的である．このパターンに合致する単語はcooperateである．前後関係から，次の単語「9 21 t h」はwithで，「y 24 6」はyouであろう．</P>
+<P>これにより26(F), 9(W), 14(D), 23(S), 8(C), 24(O), 29(P), 21(I), 6(U)が一気に同定できた．9(W)はwardsとwithの両方に使われており，24(O)もcooperateとyouの２語に使われており，このようにある部分から推測された文字が他の部分に当てはまるということは，推測の正しさの傍証となる．<br>
+<P>さらに，「e 19 e r y」というパターンから，19はVであると想像がつく．「a r r 21 19 e 14」というシーケンスは「arrives」または「arrived」であろうが，このうち後者が上記で同定された14(D)と整合する．シーケンス「e 5 t r a 5 8 e」はentranceと思われ，これから5(N)および8(C)がわかる．このうち，8(C)はやはり上記のcooperateにおける推測と一致している．<br>
+<P>これらの知見を適用すると，平文のほぼ全容が明らかになる．</P>
+
+<DIV class="kakomi">
+33 40 61 a 32 84 -<br>
+a t - a - <span style="background-color:#ffff00">11 e e t i n 4</span> - o f - t h e - f 2 a 4 - a n d -<br>
+<span style="background-color:#ffff00">4 e n e r a 2 - o f f i c e r s</span> - <span style="background-color:#ffff00">h e 2 d</span> - t h i s -<br>
+d a y - i t - <span style="background-color:#ffff00">i s d e t e r 11 i n e d</span> - t h a t - <span style="background-color:#ffff00">a 12 =<br>
+o v e</span> - <span style="background-color:#ffff00">n 0 0 0 - 11 e n - r a n 3 - a n d - f i 2 e</span> - s h =<br>
+a 2 2 - 12 e - e 11 12 a r 3 e d - o n - 12 o a r d -<br>
+t h e - 3 i n 4 s - s h i p s - a n d - t h e - i o =<br>
+i n t - <span style="background-color:#ffff00">e 17 e r t i o - n s</span> - o f - t h e - n a v y -<br>
+a n d - a r 11 y - 11 a d e - i n - a - f e w - d a y s -<br>
+t o - r e 2 i e v e - y o u - a n d - a f t e r =<br>
+w a r d s - c o o p e r a t e - w i t h - y o u -<br>
+The Fleet c o n s i s t s - o f - s - s a i 2 -<br>
+o f - t h e - 2 i n e - t h r e e - o f - w h i c h -<br>
+a r e - t h r e e - d e c 3 e r s -<br>
+<br>
+t h e r e - i s - e v e r y -<br>
+r e a s o n - t o h o p e - w e - s h a 2 2 -<br>
+s t a r t - f r o 11 - h e n c e - a 12 o u t -<br>
+t h e - n - o c t o 12 e r<br>
+I have the Honoor to be ....<br>
+<br>
+PS<br>
+a d 11 i r a 2 - d i 4 12 y - i s - t h i s -<br>
+11 o 11 e n t - a r r i v e d - a t - t h e - h o o 3 -<br>
+w i t h - t h r e e - s a i 2 - o f - t h e - 2 i n e -<br>
+If a venture without knowing whether<br>
+t h e y - c a n - 12 e - s e e n - 12 y - u s - i -<br>
+<span style="background-color:#ffff00">r e 1 u e s t</span> - t h a t - i f - a t - i s -<br>
+w e 2 2 - u p o n - h e a r i n 4 - a - c o n s i =<br>
+d e r a 12 2 e - f i r i n 4 - t o w a r d s -<br>
+t h e - e n t r a n c e - o f - c h e s a p e a 3 -<br>
+t h r e e - 2 a r 4 e - s 11 o 3 e s - 11 a y - 12 e -<br>
+11 a d e - p a r a 2 2 e 2 - t o - i t - a n d -<br>
+i f - y o u - p o s s e s s - t h e - p o s t -<br>
+a t - 4 2 o u c e s t e r - f o u r -<br>
+<br>
+i - s h a 2 2 - s e n d - a n o t h =<br>
+e r - r u n 5 e r - t o - y o u - i n - a -<br>
+2 i t 2 e - t i 11 e -<br>
+I have received your Lordship's Letter of the 8th instant.<br>
+</DIV>
+
+<P>残った数字を突き止めるのはもう簡単だ．「11 e e t i n 4」からは11(M)と4(G)がわかる．シーケンス「4 e n e r a 2 - o f f i c e r s」はgeneral officersであろうから，さらに2(L)が同定でき，これを使えば次の「h e 2 d」もheldと解読できる．さらに「i t - i s d e t e r 11 i n e d」は上記の11(M)の裏付けとなる（単語の切れ目のハイフンが抜けている）．シーケンス「a 12 = o v e」からは12(B)という対応がわかる．</P>
+<P>ここで，「n 0 0 0」というシーケンスが目につく．英語では同じ文字が３つ続く単語はない（burgess'sのような所有格は別として）．おそらく，この0は暗号ではなく数字の0自身を表わすのだろう．よって，nをもとの暗号数字5に戻して「5 0 0 0」という数字を表わしていると考えられる．すると，軍事用語をちょっと知っていれば，「5 0 0 0 - 11 e n - r a n 3 - a n d - f i 2 e」を「5000 men rank and file」（5000の兵卒）と解読することは難しくはない．これで3(K)という新たな対応も明らかになる．</P>
+<P>「e 17 e r t i o - n s」からは17(X)が同定される（ここではハイフンが余計である）．（<B>実際の暗号解読では，もとの暗号文が誤りを含んでいるかもしれないということを常に念頭に置いておく必要がある．</B>）単語「re1uest」からは「1」がQであることがわかる．</P>
+
+<H2>解読文</H2>
+<P>これでもとの平文が完全に明らかになった．</P>
+
+<DIV class="kakomi">
+33 40 61 a 32 84 <br>
+At a meeting of the flag and<br>
+general officers held this<br>
+day it is determined that ab=<br>
+ove 5000 men rank and file sh=<br>
+all be embarked on board <br>
+the king's ships and the <span style="background-color:#ffff00">io=<br>
+int</span> exertions of the navy <br>
+and army made in a few days <br>
+to relieve you and after=<br>
+wards cooperate with you.<br>
+The Fleet consists of 23 sail <br>
+of the line, three of which <br>
+are three deckers.<br>
+<br>
+There is every <br>
+reason to hope we shall <br>
+start from hence about <br>
+the 5 October.<br>
+I have the Honor to be ....<br>
+<br>
+PS<br>
+Admiral Digby is this <br>
+moment arrived at the Hook <br>
+with three sail of the line.<br>
+If a venture without knowing whether<br>
+they can be seen by us, I<br>
+request that if at [->all]* is<br>
+well upon hearing a consi=<br>
+derable firing towards <br>
+the entrance of Chesapeak<br>
+three large smokes may be <br>
+made parallel to it and <br>
+if you possess the post <br>
+at Gloucester, four.<br>
+<br>
+I shall send anoth=<br>
+er runner to you in a <br>
+litle time.<br>
+I have received your Lordship's Letter of the 8th instant.<br>
+<br>
+（*解読文でat (7 22)となっている箇所は，文脈から，all (7 2 2)とすべきであったことがわかる．）
+</DIV>
+<H2>使用された暗号についての補足</H2>
+<P>以上のことから，上記の手紙で使われている暗号表は次のように再現できる．<br>
+<TT>
+&nbsp;a&nbsp;&nbsp;b&nbsp;&nbsp;c&nbsp;&nbsp;d&nbsp;&nbsp;e&nbsp;&nbsp;f&nbsp;&nbsp;g&nbsp;&nbsp;h&nbsp;&nbsp;i&nbsp;&nbsp;k&nbsp;&nbsp;l&nbsp;&nbsp;m&nbsp;&nbsp;n&nbsp;&nbsp;o&nbsp;&nbsp;p&nbsp;&nbsp;q&nbsp;&nbsp;r&nbsp;&nbsp;s&nbsp;&nbsp;t&nbsp;&nbsp;u&nbsp;&nbsp;v&nbsp;&nbsp;w&nbsp;&nbsp;x&nbsp;&nbsp;y&nbsp;&nbsp;z<br>
+07 12 08 14 15 26 04 18 21 03 02 11 05 24 29 01 25 23 22 06 19 09 17 13 16
+</TT></P>
+<P>これによると，アルファベットの25文字（jはない）が数字1-29で置換される（10, 20, 27, 28は不使用）．（十の位の0は単に桁揃えのために入れたもので意味はない．）</P>
+<P>当時は，iとj，uとvの区別をしないことはめずらしくなかった．この表ではuとvは別々の数字を割り当てられているが，jは独自の数字を割り当てられていない．よって，上記の手紙でjointはiointというスペリングで暗号化されている．</P>
+<P>高頻度の９文字に対応する文字は15(E), 7(A), 22(T), 24(O), 21(I), 23(S), 25(R), 5(N), 18(H)であり，上で紹介したETAONRISH則に合致している．</P>
+<br>
+<P>ところで，先頭に解読されないシーケンス「33 40 61 7(a) 32 84」が残っている．この６つの数字のうち，7(a)以外はすべて上記の暗号表に含まれていない数字である．実はこのシーケンスは暗号表のAのところに7がくるように暗号表をシフトさせることを示す指示符号である．</P>
+<P>たとえば指示符号が14だったとすると，暗号表は次のように変更される．<br>
+<TT>
+&nbsp;a&nbsp;&nbsp;b&nbsp;&nbsp;c&nbsp;&nbsp;d&nbsp;&nbsp;e&nbsp;&nbsp;f&nbsp;&nbsp;g&nbsp;&nbsp;h&nbsp;&nbsp;i&nbsp;&nbsp;k&nbsp;&nbsp;l&nbsp;&nbsp;m&nbsp;&nbsp;n&nbsp;&nbsp;o&nbsp;&nbsp;p&nbsp;&nbsp;q&nbsp;&nbsp;r&nbsp;&nbsp;s&nbsp;&nbsp;t&nbsp;&nbsp;u&nbsp;&nbsp;v&nbsp;&nbsp;w&nbsp;&nbsp;x&nbsp;&nbsp;y&nbsp;&nbsp;z<br>
+14 15 26 04 18 21 03 02 11 05 24 29 01 25 23 22 06 19 09 17 13 16 07 12 08 
+</TT></P>
+<P>数字の並びは変わっていないが，14がAに対応するよう全体的に左にシフトされていることがわかる．</P>
+
+<P>上記の手紙に関しては，使われている暗号は最も簡単な部類のものだったが，イギリス軍は暗号表を適宜シフトさせることで安全性を高めようという配慮はしていたのだった．</P>
+<P>手紙の途中で暗号表をシフトさせることもあるが，コーンウォリスも暗号表のシフトは几帳面に実行するほうだった．たとえばコーンウォリスからクリントンへの1781年9月8日付の手紙の冒頭部分は同じ暗号表を使っているが，18がAのところにくるようシフトされている．<br>
+<TT>
+&nbsp;a&nbsp;&nbsp;b&nbsp;&nbsp;c&nbsp;&nbsp;d&nbsp;&nbsp;e&nbsp;&nbsp;f&nbsp;&nbsp;g&nbsp;&nbsp;h&nbsp;&nbsp;i&nbsp;&nbsp;k&nbsp;&nbsp;l&nbsp;&nbsp;m&nbsp;&nbsp;n&nbsp;&nbsp;o&nbsp;&nbsp;p&nbsp;&nbsp;q&nbsp;&nbsp;r&nbsp;&nbsp;s&nbsp;&nbsp;t&nbsp;&nbsp;u&nbsp;&nbsp;v&nbsp;&nbsp;w&nbsp;&nbsp;x&nbsp;&nbsp;y&nbsp;&nbsp;z<br>
+18 21 03 02 11 05 24 29 01 25 23 22 06 19 09 17 13 16 07 12 08 14 15 26 04
+</TT></P>
+<P>このシフト位置は暗号文のはじめの「44 32 18」によって示されている（暗号表にない44と32は無意味で，18が開始位置を示す）．しばらくするとまた指示符号「43 32 3」が現われ，Aが3に対応するよう暗号表がシフトされる．<br>
+<TT>
+&nbsp;a&nbsp;&nbsp;b&nbsp;&nbsp;c&nbsp;&nbsp;d&nbsp;&nbsp;e&nbsp;&nbsp;f&nbsp;&nbsp;g&nbsp;&nbsp;h&nbsp;&nbsp;i&nbsp;&nbsp;k&nbsp;&nbsp;l&nbsp;&nbsp;m&nbsp;&nbsp;n&nbsp;&nbsp;o&nbsp;&nbsp;p&nbsp;&nbsp;q&nbsp;&nbsp;r&nbsp;&nbsp;s&nbsp;&nbsp;t&nbsp;&nbsp;u&nbsp;&nbsp;v&nbsp;&nbsp;w&nbsp;&nbsp;x&nbsp;&nbsp;y&nbsp;&nbsp;z<br>
+03 02 11 05 24 29 01 25 23 22 06 19 09 17 13 16 07 12 08 14 15 26 04 18 21
+</TT></P>
+<P>場合によっては，１つの手紙の中で暗号表を20回以上も切り換えることもあった．だが，それでもアメリカ側の暗号解読者ジェームズ・ラヴェルによる解読を防ぐことはできなかった（<A HREF="cornwals.htm#129">別稿（英語）</A>の"Substitution by 1-29"の項参照
+．</P>
+
+<br>
+<br>
+<font size="2">
+&COPY;2008 S.Tomokiyo<br>
+First posted on 6 October 2009. Last modified on 6 October 2009.<br>
+<IMG SRC="../mailto.bmp"><BR>
+<A HREF="crypto.htm">Articles on Historical Cryptography</A><BR>
+</font>
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>

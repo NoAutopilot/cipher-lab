@@ -1,0 +1,159 @@
+<HTML>
+<HEAD>
+<TITLE>
+Simulated Paper-and-Pencil Codebreaking of a Ciphered Letter of Mary, Queen of Scots
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="Cipher, Code, codebreaking, Mary Queen of Scots">
+<link rel=stylesheet type=text/css href=decode2.css>
+</HEAD>
+<BODY>
+<H1>Simulated Paper-and-Pencil Codebreaking of a Ciphered Letter of Mary, Queen of Scots</H1>
+<P>Of the variety of ciphers used by Mary, Queen of Scots, many are relatively simple ciphers with some homophones and a few code symbols. But some including those with Michel de Castelnau, French ambassador in London, and James Beaton, Archbishop of Glasgow and Mary's ambassador in Paris, have a larger number of code symbols. Diacritics are used to provide for the larger number of distinct symbols. Considering that such ciphers are preserved in SP53/23, a collection of ciphers broken by the English (John Somer), they were not secure enough.</P>
+<P>The following is a reconstruction (see <A HREF="mary.htm">another article</A>) of a cipher used in Mary's letter to James Beaton, 12 July 1586 (SP53/18/60a):</P>
+<P><img src="mary_SP53_18_60Glasgow.png" width="600" style="margin:1em 1em 1em;"><br></P>
+<P>This particular cipher is not among SP53/23, and was reconstructed by comparing the ciphertext with its decipherment (probably by Thomas Phelippes). Though it is not known whether Phelippes deciphered this from scratch or he used an intercepted key, the present article demonstrates how paper-and-pencil codebreakers could have broken this cipher without access to the key. (It should be reiterated that I did not break this cipher myself. In the following, I made shortcuts here and there by not pursuing possibilities known to be incorrect.)</P>
+<P>For someone interested in doing the same, <A HREF="mary2_transcription.txt">here</A> is a digital transcription of the first page of the letter.</P>
+<br>
+<H4>Frequency Counting</H4>
+<P>The first thing codebreakers should do is frequency counting. The most frequent symbols on the first page are the following:</P>
+<P>"1" (04) 417x (i.e., the symbol that more or less looks like "1", transcribed as 04 in the following, occurs 417 times)</P>
+<P>"/" (01) 264x</P>
+<P>"n" (117) 213x</P>
+<P>"Λ" (66) 209x</P>
+<P>"c" (105) 205x</P>
+<P>"x" (42) 196x</P>
+<P>"T" (55) 143x</P>
+<P>"d" (93) 139x</P>
+<P>"2" (06) 131x</P>
+<P>"H." (51b) 128x</P>
+<P>"∩" (60) 126x</P>
+<P>"ε" (108) 110x</P>
+<P>"x" (126) 97x</P>
+<P>"ap" (99) 92x</P>
+<br>
+<P>The most frequent letters in modern French are E-A-S-T-I-R-N-U, among which the frequency of E is by far the highest. So, "1" (04) is likely to be E. (Of course, we need to remember that the letter frequency changes if a significant part of the text is enciphered with symbols representing syllables rather than letters, in which case the frequency of E, for example, should be reduced because E often occurs in syllables such as DE, CE, SE, ME, ....)</P>
+<br>
+<P>To begin with, 04 is assumed to correspond to E. The runners-up 01, 117, 66, 105 may be among A, S, T, or I, but are not certain.</P>
+<br>
+<H4>Breakthrough with Pattern Matching</H4>
+<P>Scanning the ciphertext for peculiar patterns finds a repetitive pattern:
+<P>93 04 01 93 04 01 (line 13).</P>
+<P>If 04=E, this may be</P>
+<P>93(m) 04(e) 01(s) 93(m) 04(e) 01(s) or </P>
+<P>93(ch) 04(e) 01(r) 93(ch) 04(e) 01(r) or </P>
+<P>93(qu) 04(e) 01(l) 93(qu) 04(e) 01(l...). </P>
+<P>Of these, "mesmes" seems plausible. Line 15 has a singular form: </P>
+<P>93(m) 04(e) 01(s) 93(m) 04(e).</P>
+<P>A similar pattern also occurs on line 20: </P>
+<P>94 04 01 94 04 01. </P>
+<P>Since the graphical symbol of 94 is a mirror image of that of 93, we may assume 93=94=M. This is not 100% sure, but we may pursue this hypothesis for the time. Generally, finding similar patterns with partial differences is a basic technique for identifying homophones.</P>
+<br>
+<P>Examining occurrences of already identified 01(S), 04(E), 93/94(M), one finds (line 4):</P>
+<P>93(M) 04(E) 43 93(M) 04(E),</P>
+<P>which suggests 43=S. The relatively high frequency of 43 is consistent with (if not sufficient to prove) this.</P>
+<br>
+<H4>Unsuccessful Pattern</H4>
+<P>By now, part of words start to be visible here and there. For example, line 13 has </P>
+<P>01(S) 43(S) 04(E) 93(M) 123 .... </P>
+<P>But there are too many words that may fit this pattern. We may try such patterns one by one, but we leave this pattern for the time.</P>
+<br>
+<H4>Looking for Word Fragments</H4>
+<P>Line 20 has </P>
+<P>99 116 06 93(M) 04(E) 01(S) 43(S) 04(E) 44(S). </P>
+<P>Can this be "promesses"? If so, we would get identifications: 99(p) 116(r) 06(o).</P>
+<P>Although this one specimen is not convincing, it perfectly matches </P>
+<P>99(P) 117(R) 06(O) 99(P) 117(R) 04(E). </P>
+<P>It also fits line 19: </P>
+<P>99(P) 117(R) 04(E) 93(M) 66 04(E) 117(R) 04(E) 01(S) ("premieres"), </P>
+<P>which further reveals 66=I. The same word "premiere" is also found on line 8: </P>
+<P>99(P) 117d 04(E) 93(M) 66(I) 04(E) 117(R) 04(E), </P>
+<P>which then reveals 117d=R, which is consistent with the graphical similarity of 117d and 117. The same word seems to occur in yet another pattern on line 15: </P>
+<P>99(P) 117d(R) 04(E) 93(M) 66(I) 44b 04(E), </P>
+<P>which reveals 44b=ER. It is observed that a symbol with a dot like 44b may represent syllables rather than single letters. Such distinction between symbols for letters and symbols for syllables is observed in many other ciphers (which is of course a weakness of the cipher).</P>
+<P>(By the way, in solving an Italian cipher in <A HREF="vatican.htm">another article</A>, I also identified PROPRI, which led to identification PRIMA, in parallel with "propre" and "premier" in the above. These and some other words are useful in providing a breakthrough in codebreaking.)</P>
+<br>
+<H4>Beginning of the Letter</H4>
+<P>Now, the very beginning of the letter is </P>
+<P>131 45b 43(S) 99(P) 44b(ER) 06(O) 66(I) 43(S). </P>
+<P>The first symbol 131 is peculiar in its graphical form and may well be either the recipient's name or a null. If we disregard this for the time, "j'esperois" would be an appropriate beginning of a letter: 45b=JE.</P>
+<br>
+<H4>Matching One after Another</H4>
+<P>By now, fragments of familiar words appear here and there.</P>
+<P>Line 2: 99(P) 117(R) 06(O) 55 04(E) 86b 117(R) 04(E) 43(S)</P>
+<P>may be "procedures". Then, 55=C, 86b=DU. The same line also has</P>
+<P>117d(R) 04(E) 43(S) 99(P) 04(E) 55 61,</P>
+<P>which, given 55=C, should be "respect": 61=T.</P>
+<P>Line 5 has</P>
+<P>55(C) 53 06(O) 01(S) 04(E) 01(S),</P>
+<P>which may be "choses" and reveals 53=H.</P>
+<P>Line 8 has 13 126 13, which may be 13(me) 126(s) 13(me); 13(que) 126(l) 13(que); or 13(che) 126(r) 13(che). Since we already have "mesme" represented by other patterns and "che" may not be so frequent in French, this may be "quelque". It is consistent with the following</P>
+<P>117(R) 04(E) 01(S) 06(O) 126(L) 41 60 125b,</P>
+<P>which indicates 41 would be "U", which in turn matches line 4:</P>
+<P>66(I) 41(U) 43(S) 13(QUE) 01(S) (jusques). </P>
+<br>
+<P>Let's look at line 3: </P>
+<P>68b 105 41(U) 04(E) 55(C) 03. </P>
+<P>Since 68b and 03  are symbols with a dot, they may not be single letters but syllables or short words. Then, they may not be part of the word formed by</P>
+<P>105 41(U) 04(E) 55(C),</P>
+<P>which may be then "avec": 105=A. (Here and elsewhere, the reasoning may not sound watertight. One may come up with a bunch of reasons that the hypothesis is wrong. But pursuing every faint possibility is necessary in codebreaking.)</P>
+<br>
+<H4>Unsuccessful Pattern Revisited</H4>
+<P>Let's revert to the pattern on line 13, which could not be identified before. It is now</P>
+<P>21 105(A) 83 126(L) 66(I) 01(S) 43(S) 04(E) 93(M) 123. </P>
+<P>Since 21 and 123 are symbols with a dot, it seems certain that 123=ENT (..."lissement"). Then, this may be "etablissement" or, in the spelling at the time, "establissement": 21=EST, 83=B, 123=ENT. The identification 83=B is supported by </P>
+<P>line 6: 83(B) 117(R) 41(U) 66(I) 55(C) 60 ("bruict"), which reveals 60=T and </P>
+<P>line 26: 06(O) 83(B) 126(L) 66(I) 97 04(E) 51, which reveals 97=G. </P>
+<P>The suffix 123=ENT is supported by, for example,</P>
+<P>123(ENT) 66(I) 04(E) 117(R) 04(E) 93(M) 123(ENT). </P>
+<P>21=EST is consistent with its frequent occurrence after "C". </P>
+<br>
+<H4>Word Boundaries</H4>
+<P>It should be noted that the ciphertext does not retain word boundaries. (If word boundaries were visible in the ciphertext, pattern matching like the above would have been much easier.) In the above analysis, although I did use hindsight, many patterns are specific enough to reveal words and I believe reasoning like above could have been possible by contemporary paper-and-pencil codebreakers like Phelippes.</P>
+<P>As one example of a problem posed by absence of word boundaries, line 9 has</P>
+<P>108 04 01 04 117 04 20. </P>
+<P>When I inspected use of 04(E) in the ciphertext at an early stage, this was the first interesting pattern because of the repetition of 04 in close intervals. But trying to find a word matching this pattern would lead to a deadend, because this pattern does not correspond to one word. (Since I knew it from hindsight, I skipped this in the above demonstration.)</P>
+<P>Now, applying the reading of symbols already identified, we have on line 9: </P>
+<P>45b(JE) 55(C) 117(R) 06(O) 70(Y) 13(QUE) 55z 108 04(E) 01(S) 04(E) 117(R) 04(E) 20 51z. </P>
+<P>This may be read "je croy que vous ne serez ...", which reveals 55z=VOUS, 108=N, 20=Z:</P>
+<P>55z(VOUS) 108(N) 04(E) 01(S) 04(E) 117(R) 04(E) 20(Z).</P>
+<P>That is, the above pattern spans two words, which caused the failure of the word-level pattern matching. (Actually, 55z is an enciphering error.)</P>
+<br>
+<H4>Percentage of Symbols for Single Letters</H4>
+<P>Codebreakers could proceed like this to reveal one symbol after another. The first 26 lines (out of 62 lines on the first page) of the ciphertext were sufficient to allow the analysis above, though, of course, identification of less frequent symbol would require more materials.</P>
+<P>It would be seen that the above analysis was possible because a major part of the ciphertext consists of symbols representing letters rather than syllables/words. If, for example, the word "mesmes" was not spelled letter by letter (m-e-s-m-e-s), but enciphered by using a symbol for "me" like "me-s-me-s", it would have been harder to find a first breakthgouh.</P>
+<P>In this letter to James Beaton, 2876 symbols (out of 4167 on the first page) are symbols for single letters (69%).</P>
+<br>
+<!--
+Mazarin Brasset Cipherで単独文字の割合を調べる
+Of the 218 symbols, 94 represent single letters (43%).
+Mary-CastelnauのF34
+Of the 1841 symbols, 1345 represent single letters (73%).
+-->
+<H4>Graphical User Interface</H4>
+<P>Although the logical process in the above codebreaking process could have been possible without a computer, I did use a computer tool (CTTS: CrypTool Transcriber & Solver developed by George Lasry and the CrypTool team) to apply established or hypothesized reading of symbols to the ciphertext to find further promising patterns. The same process is possible by paper and pencil, but would be far more tedious.</P>
+
+
+<br>
+<br>
+<font size="2">
+&COPY;2023 S.Tomokiyo<br>
+First posted on 24 August 2023. Last modified on 24 August 2023.<br>
+<A HREF="crypto.htm">Cryptiana: Articles on Historical Cryptography</A><BR>
+</font>
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>

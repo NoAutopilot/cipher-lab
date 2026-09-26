@@ -1,0 +1,516 @@
+<HTML>
+<HEAD>
+<TITLE>
+ジョン・アダムズが解読できなかった暗号
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="ジョン・アダムズ, 暗号, アメリカ独立戦争">
+<style type="text/css">
+<!--
+body {
+  font-size:12pt;
+  line-height:17pt;
+  background-color:#FFFFFF;
+  margin: 0;
+}
+H1 {
+  margin: 0 0 1em;
+  padding: 1em 1em 0.5em;
+  background: #ffffff;
+  border-bottom: #dd0000 dotted 6px;
+  font-size: 20pt;
+  color: #dd0000;
+  text-align: left;
+}
+h2 {
+  margin: 2.5em 0em 1em;
+  padding: 0.2em;
+  border-style: solid;
+  border-width: 2px 0px 2px;
+  border-color: #dd0000;
+  background: #ff9999;
+  font-size:12pt;
+  color: #dd0000;
+}
+table {
+  margin: 1em 2em 1em;
+}
+td {
+  text-align: center;
+}
+.kakomi {
+  margin-left: 2em;
+  padding: 1em;
+  background-color: #ffff66;
+  width: 500px;
+}
+.deciphered {
+  color: #0000ff;
+}
+.undeciphered {
+  color: #ff0000;
+}
+p{ 
+  text-indent: 12pt;
+  margin: 0em 3em 0em;
+  width: 600;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+<H1>ジョン・アダムズが解読できなかった暗号</H1>
+<P>ジョージ・ワシントンの次にアメリカ合衆国第２代大統領となるジョン・アダムズはアメリカ独立戦争の和平交渉を託された全権代表５名のうちの一人だったが，実は交渉方針についての訓令を伝える暗号書簡を解読できなかったことがあった．</P>
+<P>アメリカ独立戦争は1775年に勃発したが，1777年にアメリカ側がサラトガでイギリス軍に対して大勝利を収め，1778年にはフランスという強力な同盟国を獲得するまでになった．そして1779年に最初に和平使節に任命されたのがジョン・アダムズだった．だが同盟国フランスの意向もあって，1781年6月，大陸会議（連合会議）はベンジャミン・フランクリンらも加えた５名を和平に向けたアメリカ側の全権代表とし，6月15日に訓令を可決した<!--<A HREF="http://books.google.com/books?id=JGYUAAAAYAAJ&pg=PA108&dq=%22effectually+secure+the+independence+and+sovereignty+of">A Political and Civil History of the United States of America p.108</A>；訓令文はDiplomatic Correspondenceのvol.9に--><!--Weber p.31もsent after June 15--><!--次のサイトでは6.6 http://books.google.co.jp/books?id=mEIUAAAAYAAJ&pg=PA423&lpg=PA423&dq=%22not+be+such+as+may+effectually+secure+the+independence+and+sovereignty&source=web&ots=uGVUjsNSiP&sig=RVn4Q61Ga_funC_1kKHeH_SmNdc&hl=ja&sa=X&oi=book_result&resnum=1&ct=result#PPA424,M1--><!--http://www.footnote.com/image/400856/は６月６日の原文書-->．</P>
+<P>当時アダムズはオランダ，フランクリンはパリに滞在中である．交渉方針に関する訓令は手紙で伝えなければならないが，戦時中とあって船が拿捕されて手紙がイギリス軍に奪取されるというのは日常茶飯事だったので，重要な部分は暗号化された．もちろん，信頼できる使者に託して，捕獲されそうになったら破棄するということも行なわれていたのだが，船がイギリス艦に追跡されただけで大切な通信文を破棄してしまうといった事例もあって，万一捕獲されても安全なよう暗号が使用された．</P>
+<P>だが，この訓令に使われた暗号をアダムズは解読できなかったのだった．</P>
+
+<h2>アダムズへの訓令に使われた暗号方式</h2>
+<P>使われた暗号は簡単な多表式換字暗号だった．</P>
+<P>換字（かえじ）というのはアルファベットの各文字（今の場合&を含めて２７文字）をでたらめな文字（今の場合は1～27の数字）に置き換えるもので，たとえば次のような換字表でアルファベットと数字を対応させる．
+
+<TABLE border=0>
+<TR>
+<TD>1</TD>
+<TD>2</TD>
+<TD>3</TD>
+<TD>4</TD>
+<TD>5</TD>
+<TD>6</TD>
+<TD>7</TD>
+<TD>8</TD>
+<TD>9</TD>
+<TD>10</TD>
+<TD>11</TD>
+<TD>12</TD>
+<TD>13</TD>
+<TD>14</TD>
+<TD>15</TD>
+<TD>16</TD>
+<TD>17</TD>
+<TD>18</TD>
+<TD>19</TD>
+<TD>20</TD>
+<TD>21</TD>
+<TD>22</TD>
+<TD>23</TD>
+<TD>24</TD>
+<TD>25</TD>
+<TD>26</TD>
+<TD>27</TD>
+</TR>
+<TR>
+<TD><b>C</b></TD>
+<TD>D</TD>
+<TD>E</TD>
+<TD>F</TD>
+<TD>G</TD>
+<TD>H</TD>
+<TD>I</TD>
+<TD>J</TD>
+<TD>K</TD>
+<TD>L</TD>
+<TD>M</TD>
+<TD>N</TD>
+<TD>O</TD>
+<TD>P</TD>
+<TD>Q</TD>
+<TD>R</TD>
+<TD>S</TD>
+<TD>T</TD>
+<TD>U</TD>
+<TD>V</TD>
+<TD>W</TD>
+<TD>X</TD>
+<TD>Y</TD>
+<TD>Z</TD>
+<TD>&</TD>
+<TD>A</TD>
+<TD>B</TD>
+</TR>
+</TABLE>
+</P>
+
+<P>これを使うと，たとえばBOSTONは27 13 17 18 13 12と暗号化される．上の表を使えば解読も簡単にできる．</P>
+<P>多表式換字というのは，文の途中で換字表を適宜切り換える方式をいう．今の場合，次のような２通りの換字表を使って，１文字ごとに上段（Cで始まる行）・下段（Rで始まる行）の換字を切り換えて暗号化するのである．
+<TABLE border=0>
+<TR>
+<TD>1</TD>
+<TD>2</TD>
+<TD>3</TD>
+<TD>4</TD>
+<TD>5</TD>
+<TD>6</TD>
+<TD>7</TD>
+<TD>8</TD>
+<TD>9</TD>
+<TD>10</TD>
+<TD>11</TD>
+<TD>12</TD>
+<TD>13</TD>
+<TD>14</TD>
+<TD>15</TD>
+<TD>16</TD>
+<TD>17</TD>
+<TD>18</TD>
+<TD>19</TD>
+<TD>20</TD>
+<TD>21</TD>
+<TD>22</TD>
+<TD>23</TD>
+<TD>24</TD>
+<TD>25</TD>
+<TD>26</TD>
+<TD>27</TD>
+</TR>
+<TR>
+<TD><b>C</b></TD>
+<TD>D</TD>
+<TD>E</TD>
+<TD>F</TD>
+<TD>G</TD>
+<TD>H</TD>
+<TD>I</TD>
+<TD>J</TD>
+<TD>K</TD>
+<TD>L</TD>
+<TD>M</TD>
+<TD>N</TD>
+<TD>O</TD>
+<TD>P</TD>
+<TD>Q</TD>
+<TD>R</TD>
+<TD>S</TD>
+<TD>T</TD>
+<TD>U</TD>
+<TD>V</TD>
+<TD>W</TD>
+<TD>X</TD>
+<TD>Y</TD>
+<TD>Z</TD>
+<TD>&</TD>
+<TD>A</TD>
+<TD>B</TD>
+</TR>
+<TR>
+<TD><b>R</b></TD>
+<TD>S</TD>
+<TD>T</TD>
+<TD>U</TD>
+<TD>V</TD>
+<TD>W</TD>
+<TD>X</TD>
+<TD>Y</TD>
+<TD>Z</TD>
+<TD>&</TD>
+<TD>A</TD>
+<TD>B</TD>
+<TD>C</TD>
+<TD>D</TD>
+<TD>E</TD>
+<TD>F</TD>
+<TD>G</TD>
+<TD>H</TD>
+<TD>I</TD>
+<TD>J</TD>
+<TD>K</TD>
+<TD>L</TD>
+<TD>M</TD>
+<TD>N</TD>
+<TD>O</TD>
+<TD>P</TD>
+<TD>Q</TD>
+</TR>
+</TABLE>
+</P>
+<P>この方式で先ほどと同じBOSTONを暗号化してみると，最初のBは上段を使って27と暗号化され，次のOは下段を使って25と暗号化され，次はまた上段を使って17……となり，結局，BOSTONは27 25 17 3 13 24となる．同じOでも最初に出てくるときは25，次に出てくるときは13と暗号化されていることがわかる．このように同じ文字が場合によって異なる暗号に変わることで，敵の手に落ちても解読されにくくなるのが多表式換字の長所である．もちろん，正当な受信者は上の暗号表を持っているので，（手間は増えるが）ちゃんと解読できる……はずであった．</P>
+<P>この暗号はアメリカ最初の暗号家の一人と言われるジェームズ・ラヴェル（マサチューセッツからの大陸会議代表の一人で，大陸会議の外務委員会の一員でもあった）が考案したものだが，実はラヴェルのこの多表式暗号にはフランクリン，ジョン・ジェイといった他の政治家たちも悩まされていた．</P>
+<P>換字表を切り換えながら解読していくのはわずらわしく，途中でどの換字表を使っていたかがわからなくなったら前に戻って確認しなければならない．さらに発信側が暗号化の際に換字表の切り換えを間違うこともあるので，そうなると受け取った側がどんなに頑張っても解読文は意味不明の文字列になってしまう．この暗号に取り組んだ筆者の経験からすると，まずは換字表の切り換えは考えずに，すべての換字表に対応する平文文字を暗号文の下に書いておき，その後，意味が通るように文字を拾っていくというのが実用的な解読法ではないかと思う．上のBOSTONの例でいうと，次のような具合である．
+<TABLE border=0>
+<TR>
+<TD>鍵字（換字表）</TD>
+<TD>27</TD>
+<TD>25</TD>
+<TD>17</TD>
+<TD>3</TD>
+<TD>13</TD>
+<TD>24</TD>
+</TR>
+<TR>
+<TD><b>C</b></TD>
+<TD bgcolor="#ff0000">B</TD>
+<TD>&</TD>
+<TD bgcolor="#ff0000">S</TD>
+<TD>E</TD>
+<TD bgcolor="#ff0000">O</TD>
+<TD>Z</TD>
+</TR>
+<TR>
+<TD><b>R</b></TD>
+<TD>Q</TD>
+<TD bgcolor="#ff0000">O</TD>
+<TD>G</TD>
+<TD bgcolor="#ff0000">T</TD>
+<TD>C</TD>
+<TD bgcolor="#ff0000">N</TD>
+</TR>
+</TABLE>
+これなら換字表の切り換えが間違っていても，解読側が適宜勘をはたらかせて読み進めていくことができる（後述のTRUCEの例を参照）．アダムズの妻アビゲイルがアダムズに宛ててこれと同じとおぼしき方法を伝授する手紙が残っているが，なんとそれは1782年6月17日付である．
+</P>
+<P>当時，ヨーロッパの外交用暗号の主流はコード暗号だった．コード暗号は文字だけでなく多数の単語に数字を割り当た暗号表を使う．3桁なら1000近い数字が出てくるので，暗号表を持たない敵が奪取しても，おいそれと解読できるものではない（ただし，この時代すでにヨーロッパではコード暗号に対する組織的な暗号解読も行なわれていたが）．味方にとっては暗号表さえあれば解読が単純作業になるという利点がある．それに何といっても，表の切り換えにわずらわされることもなく，途中に間違いがあってもその後の部分の解読には影響がないのはありがたい．</P>
+<P>ラヴェルの多表式換字暗号の強みは，長い暗号表を持ち歩いたり輸送したりする必要がないことである．上では説明のため暗号表を掲げたが，アルファベットがABC順に並んでいるので，左端のC, Rという2文字だけ覚えれておけばいつでもこの換字表を復元できる．この「CR」というのが上の多表式換字暗号の「キーワード」である．</P>
+<P>キーワードがFORだったとすると，換字表は次のようになる（この場合，3行あるので，3通りの換字表を順に使うことになる）．
+
+<TABLE border=0>
+<TR>
+<TD>1</TD>
+<TD>2</TD>
+<TD>3</TD>
+<TD>4</TD>
+<TD>5</TD>
+<TD>6</TD>
+<TD>7</TD>
+<TD>8</TD>
+<TD>9</TD>
+<TD>10</TD>
+<TD>11</TD>
+<TD>12</TD>
+<TD>13</TD>
+<TD>14</TD>
+<TD>15</TD>
+<TD>16</TD>
+<TD>17</TD>
+<TD>18</TD>
+<TD>19</TD>
+<TD>20</TD>
+<TD>21</TD>
+<TD>22</TD>
+<TD>23</TD>
+<TD>24</TD>
+<TD>25</TD>
+<TD>26</TD>
+<TD>27</TD>
+</TR>
+<TR>
+<TD><b>F</b></TD>
+<TD>G</TD>
+<TD>H</TD>
+<TD>I</TD>
+<TD>J</TD>
+<TD>K</TD>
+<TD>L</TD>
+<TD>M</TD>
+<TD>N</TD>
+<TD>O</TD>
+<TD>P</TD>
+<TD>Q</TD>
+<TD>R</TD>
+<TD>S</TD>
+<TD>T</TD>
+<TD>U</TD>
+<TD>V</TD>
+<TD>W</TD>
+<TD>X</TD>
+<TD>Y</TD>
+<TD>Z</TD>
+<TD>&</TD>
+<TD>A</TD>
+<TD>B</TD>
+<TD>C</TD>
+<TD>D</TD>
+<TD>E</TD>
+</TR>
+<TR>
+<TD><b>O</b></TD>
+<TD>P</TD>
+<TD>Q</TD>
+<TD>R</TD>
+<TD>S</TD>
+<TD>T</TD>
+<TD>U</TD>
+<TD>V</TD>
+<TD>W</TD>
+<TD>X</TD>
+<TD>Y</TD>
+<TD>Z</TD>
+<TD>&</TD>
+<TD>A</TD>
+<TD>B</TD>
+<TD>C</TD>
+<TD>D</TD>
+<TD>E</TD>
+<TD>F</TD>
+<TD>G</TD>
+<TD>H</TD>
+<TD>I</TD>
+<TD>J</TD>
+<TD>K</TD>
+<TD>L</TD>
+<TD>M</TD>
+<TD>N</TD>
+</TR>
+<TR>
+<TD><b>R</b></TD>
+<TD>S</TD>
+<TD>T</TD>
+<TD>U</TD>
+<TD>V</TD>
+<TD>W</TD>
+<TD>X</TD>
+<TD>Y</TD>
+<TD>Z</TD>
+<TD>&</TD>
+<TD>A</TD>
+<TD>B</TD>
+<TD>C</TD>
+<TD>D</TD>
+<TD>E</TD>
+<TD>F</TD>
+<TD>G</TD>
+<TD>H</TD>
+<TD>I</TD>
+<TD>J</TD>
+<TD>K</TD>
+<TD>L</TD>
+<TD>M</TD>
+<TD>N</TD>
+<TD>O</TD>
+<TD>P</TD>
+<TD>Q</TD>
+</TR>
+</TABLE>
+</P>
+<P>このように，キーワードを換えれば簡単に暗号の変更ができるのであるが，アダムズのCRに対して，ヘンリー・ローレンスにはYO，ジョン・ジェイにはBY，フランクリンにはCORといったキーワードが割り当てられていた．</P>
+
+<h2>ジョン・アダムズとラヴェルの「CR暗号」</h2>
+<P>アダムズはラヴェルの「CR暗号」にはずいぶん悩まされた．</P>
+<P>和平使節に任命されたアダムズは1779年11月に船出し，12月にスペインに上陸してからは陸路を行き，2月にパリ入りした．アダムズが無事パリに着いたと知ると<!--Jones p.460-->，ラヴェルは1780年5月4日付<!--Weber p.28,29; Helen Jones p.463の注33とp.461 注30-->の手紙でアダムズにこの暗号方式とともにキーワード「CR」を伝えようとしている．</P>
+<P>「もし私から何か暗号で書かれたものが届いたとしたら，それはフランクリン博士にお伝えしたものと同じ方式に基づいたものです．それは多数の人に同じ安全性を与えてくれるものです．それは裏面のような表にしたアルファベットで，鍵字（key letters）は我々がお宅からボルティモアに出発する前に一緒に晩を過ごした家族の苗字の最初の二文字です．」<!--この手紙の追伸で暗号方式がもう少し具体的に説明されている．「自分の鍵字に従った縦の列を使うのです．私への返信は適当な新しい鍵字を使って構いません．たとえば，私が受け取ったことが確かな何月何日付のお手紙のある段落の一番目，二番目，三番目，四番目などの語の二文字，三文字，四文字などと言ってくださればいいです．」--></P>
+<P>（この手紙でラヴェルが触れているボルティモアへの出発とは，1776年末に共に大陸会議のあるボルティモアに向かってボストンを発ったことを指している．ジョージ・ワシントンの大陸軍がニューヨークでイギリス軍に敗北して後退を続けていたため，フィラデルフィアにも危険が迫り，大陸会議はボルティモアに移ったところだった．）</P>
+<P>キーワードの伝達は古典暗号の永遠の課題であるが，万一のことを考えるとキーワード「CR」をそのまま手紙に書くのは危険がある．そこでラヴェルはアダムズに共通の知人の苗字（Cranch）の最初の２文字という回りくどい説明をしているのだ．</P>
+<P>ラヴェルは同時にマサチューセッツにいるアダムズの妻アビゲイルにも同じ暗号を完全な換字表を添えて送った<!--Jones p.460;5月14日付でいう写しのことか-->が，アビゲイルからの6月11日付の返事は「どんな種類であれ暗号はきらい」で，夫も「暗号に取り組むのがうまくなく，意味がわからなくて困惑するのをいやがります」との返事が返ってきた．ラヴェルは7月，9月にそれぞれアダムズに手紙を書いたが，そのときは暗号は使わなかった<!--Jones p.461も-->．</P>
+<P>1780年12月14日付のラヴェルからアダムズへの手紙では暗号が使われたが，アダムズはこれにも苦労したらしい．</P><!--ある箇所にnothingという解読を書き入れ，ngの部分に丸を付けて「これは確か」と書き込んでいる．ngはたしかにそのとおりではあったが，正解はnothingではなくno beingだった．<!Jones p.463-464にあるが，手紙の原文で確認できない-->
+<P>翌1781年6月15日に問題の訓令が大陸会議によって最終的に決定されたのだが，議長ハンティントンは6月19日付でフランクリンに，6月20日付でアダムズに発送した．アダムズ宛ての訓令を暗号化したのがラヴェルだが，この段階ですでにラヴェルはアダムズがCR暗号に難儀していることは感じ取っていた．だが，ラヴェルはアダムズがキーワード「CR」がわからなかったと思ったようだ．ラヴェルは6月21日付でアダムズに宛ててこう書いている．</P>
+<P>「……いくつかの文書を公式にお伝えしなければなりません．この〔手紙の一部に使われているのと〕同じ暗号を使います．前回は私がブレインツリー〔マサチューセッツ州〕で夕食をとったと言わなかったために理解できなかったのではないかと思います．たしかニューイングランドと言ったと思います．<br>
+前述の文書を議長が送りました．私が訓令を暗号にしました．もし何らかの事情で内容をつかめない場合には，フランクリン博士は確実にご自分のを解読できるはずです．」</P>
+<P>ラヴェルは11月30日の手紙でもまだキーワードが問題だと思って改めて説明しようとしている<!--Weber p.29, Cryptologia p.77;→Weber p.43のn.24参照-->．ずいぶんと間遠なやり取りだが，当時，大西洋を渡るには１～３か月かかるのが普通だったことを考えるとやむを得ない．たとえば1781年11月中旬にラヴェルはアダムズからの荷物を受け取ったが，それには1780年11月から1781年8月までの手紙の原本や写しがはいっていたという<!--Jones p.447-->．</P>
+<P>さて，件の11月30日の手紙の補足説明は次のようなものである<!--Cryptologia-->．</P>
+<P>「この地への旅路につく前の晩に，貴兄と私とで奥さまと過ごした家族の名前はきっと思い出せることと思います．その苗字の最初の六分の一と等しい数の普通のアルファベット表を作るのです．」（苗字はCranchでキーワードはCRだから，「六分の一」は「三分の一」の誤りだが，幸いこれがアダムズの困惑を増すことはなかったようだ．）</P>
+<P>アダムズはどうしてもラヴェルの暗号になじめなかったようだ．1781年12月26日には危惧を覚えた外務長官ロバート・R・リヴィングストンはアダムズにこう申し出ている<!--Diplomatic Correspondence vol. III, p. 522[224?]-->（この年，外務省が新設され，外務委員会のラヴェルの仕事の多くは10月に着任した新任の外務長官リヴィングストンが引き継いだ）．</P>
+<P>「……私の最後の数通の手紙に使われている暗号を完全に理解なされないのではないかと非常に恐れています．私はその暗号を旧<!--late-->外務委員会から得たのですが，貴兄からその暗号で書かれた手紙を受け取ったことは一度もないと言っています．〔外務委員会の〕ラヴェル氏は，氏が説明になると考えるものを同封しました．私としては，何らかの暗号を安全な手段でお送りできるまで，あるいは貴兄のほうから私に送ってくださるまで，私への手紙はデュマ氏の暗号でお書きになることをお勧めします．……」（「デュマ氏の暗号」については<A HREF="franklin.htm">別項（英文）</A>を参照．）</P>
+<P>リヴィングストンが言っている，ラヴェルによる説明というのは上記の11月30日付の手紙とほぼ同文とのことである<!--http://memory.loc.gov/cgi-bin/query/r?ammem/hlaw:@field(DOCID+@lit(dg018231))-->．だがこれもアダムズには役に立たなかった．アダムズは1782年2月21日付でリヴィングストンに宛ててこう書いている<!--ibid. p.544-->．</P>
+<P>「我々が出発する前に私の有為な友人　　　氏と晩を過ごした家族の名前はよくわかっています．アルファベット表もしかるべく作ってみました．ですが今回もこれまでのあらゆる機会と同様，暗号で書かれた文章の意味を理解することが全くできませんでした．暗号はその名前の最初の二文字のもとで規則的に使われているのでないことは確かです．ところどころ単語が解読できるのでその二文字が正しいことはわかります．ですが全体としてはさっぱり要領を得ません．これはこのたびは，暗号文が手紙の非常に重要な部分と思われますので，きわめて遺憾なことです．」</P>
+<P>上記のように1782年6月17日付の手紙で妻アビゲイルがアダムズに解読法を指南していることからすると，アダムズは最後までラヴェルの暗号をものにできなかったようだ．1782年10月の時点で，結局，アダムズが使う気になったのは，アダムズを18，ジョン・ジェイを19とするように一部の語句を数字で置き換える原始的なコード暗号だった．<!--Weber p.32--></P>
+
+<h2>アダムズが解読できなかった訓令</h2>
+<P>ここで問題の訓令を見てみることにする．これは大陸会議が1781年6月15日に決議した，アメリカ独立戦争の和平交渉に向けた五名の全権使節への訓令で，次はそのアダムズ宛ての暗号文の一部である．</P>
+<IMG src="adamscipher.jpg" style="margin: 1em 3em 1em"><br>
+<P>そのテキスト全文は次のとおり．</P>
+<DIV class="kakomi">
+Instructions to Mr Hon John Adams, Benjamin Franklin, John Jay, Henry Laurens, and Thomas Jefferson, ministers plenipotentiary in behalf of the United States to negotiate a treaty of peace<br>
+<br>
+You are hereby athorized and instructed to concur in behalf of these United States with his most Christian Majesty in accepting the mediation of the Empress of Russia and the Emperor of Germany.<br>
+<br>
+You are to accede to no treaty of peace which shall not be such as may 1. effectually secure the independence and sovereignty of the thirteen United States according to the <span class="deciphered">form and effect of the treaties subsisting between</span> the united states <span class="deciphered">& his most Christian Majesty,</span> and [2.] in which the <span class="deciphered">said treaties shall not be</span> [le]<span class="undeciphered">ft in their</span> full force and validity.<br>
+As to <span class="deciphered">disputed boundaries and </span>other particulars, we refer you to the instructions given to Mr. John Adams dated August 14 1779 and 18 of October 1780 from which you will easily [perceive] the desires & expectations of congress. <span class="undeciphered">But we think it unsafe at this dis distance to tye you up by</span> absolute and prescriptory directions <span class="undeciphered">upon any other subject than the two</span> essential articles <span class="undeciphered">abovementioned</span>. You are therefore <span class="undeciphered">at liberty</span> to secure the interest of the United States <span class="undeciphered">in such manner as circumstances may direct, and as the state of the belligerent and disposition of the mediating powers may require.</span> For this purpose you are to make the most <span class="undeciphered">candid & confidential communications to thc ministers</span> of our generous ally, the king of France <span class="undeciphered">to undertake nothing in</span> the negotiations for peace <span class="undeciphered">or truce without their knowledge & concurrence, & ultimately</span> to govern yourselves by <span class="undeciphered">their advice and opinion</span> endeavouring in your whole conduct to make <span class="undeciphered">them sensible how much we rely upon his Majesty's influence for effectual support in</span> every thing that may be necessary to the <span class="undeciphered">present security or</span> future prosperity of the United States of America.<br>
+If a difficulty should arise in the course of the negotiation for peace from the <span class="deciphered">backwardness of Britain to make a formal acknowledgment of our independence,</span> you are <span class="deciphered">at liberty to agree to a truc</span><span class="undeciphered">c</span> or to make such <span class="deciphered">other concessions as may</span> not affect the <span class="deciphered">substance of what</span> we contend for and provided Great Britain be not left in possession of any part of the thirteen States.<br>
+Sam[uel] Huntington President<br>
+</DIV>
+<P>青字はアダムズの手で解読した文字が書き込まれているもの，赤字は筆者が補った部分，黒字は暗号化されずに平文で書かれていた部分である．</P>
+
+<h2>暗号の問題点</h2>
+<P>アダムズが解読できなかった暗号を調べてみると，いろいろ問題があることがわかる．</P>
+<br>
+<P>(1)まず３段落目末尾のnot beで解読が止まっている．ちょうどこの次にleftとあるべきところでleが抜けており，アダムズがつまづく直接の原因となったようだ．解読していてftin…という文字列が出てきたら，何か正常ではないと思ってしまうのもやむを得ない．</P>
+<br>
+<P>(2)こうした軽微なミスは他にも散見される．第４段落ではdistanceのdisがダブって暗号化されている．また，3 6 15 (the)とすべきところが3 6 13 (thc)となっていたり，3 16 4 1 15 (truce)とすべきところが3 16 4 1 13 (trucc)となっていたりする．この後者はアダムズが解読できた末尾の部分に属するが，アダムズは最後の１文字の箇所のみ空欄にしている．</P>
+<br>
+<P>(3)暗号化とは直接関係ないが，平文で1語perceiveが抜けている部分もある．また，大陸会議で議決されたテキストと照らして合わせると，文意に影響がない軽微な相違が他にも若干ある．</P>
+<br>
+<P>(4)この暗号では，換字表のCの段とRの段を規則的に切り換えることが肝要だが，truceとconcurrenceの部分でその切り換えを忘れている．たとえばtruceの箇所では次のようにRの段が２回連続して使われている．
+<TABLE border=0>
+<TR>
+<TD>鍵字</TD>
+<TD>3</TD>
+<TD>1</TD>
+<TD>19</TD>
+<TD>13</TD>
+<TD>3</TD>
+</TR>
+<TR>
+<TD><b>C</b></TD>
+<TD>E</TD>
+<TD>C</TD>
+<TD bgcolor="#ff0000">U</TD>
+<TD>O</TD>
+<TD bgcolor="#ff0000">E</TD>
+</TR>
+<TR>
+<TD><b>R</b></TD>
+<TD bgcolor="#ff0000">T</TD>
+<TD bgcolor="#ff0000">R</TD>
+<TD>I</TD>
+<TD bgcolor="#ff0000">C</TD>
+<TD>T</TD>
+</TR>
+</TABLE>
+いずれもアダムズが解読できなかった直接の原因ではないが，多表式暗号の解読にとっては致命的な誤りである．
+</P>
+<br>
+<P>(5)途中に暗号化されていない平文の語が介在する場合，たとえばCの段で終わったあとに暗号化されない数語が出てきて，その後再び暗号化を始める場合，この訓令を見ると，前回の続きでRの段から始めている（たとえば第３段落の&の箇所）．だが，平文が出てきたあとでは常にCの段に戻るという規則もあった<!--Weber p.28-->そうで，暗号の運用に混乱があったと言わざるを得ない．</P>
+<br>
+<P>(6)途中に暗号化されていない平文の語が介在する場合に換字表にない28, 29, 30を適宜ダミーとして使っている．これは解読の際には無視し，換字表の切り換えについても考慮しない．これに関する誤りは特に見当たらないが，若干煩雑さを増している．</P>
+<br>
+<P>こうして見てみると，第４段落でアダムズがつまずいたのは，暗号化のミスやアダムズの理解不足のためではなく，純粋にたまたま出だしの単語が見分けにくかったというだけのことかもしれない．その出だしはbutwethinkitu...というものだった．筆者が取り組んだときも，butはわかるものの，その次のwethまたはwethinがwithまたはwethinの誤記だろうかと考えてしまい，なかなか先に進めなかった．そんなとき，もう少し解読を進めていって意味の通る文が出てくるかどうか見てみようという気になるためには暗号に対する信頼が必要である．暗号に問題があって解読できないのだろうと思ってしまうと少し不自然な文字列が出てきただけで投げ出してしまう．そういう意味での暗号に対する信頼感を，ラヴェルの暗号は得ることができなかったのである．</P>
+
+<h2>暗号・通信に悩まされたアメリカ独立戦争講和への道のり</h2>
+<P>いずれにせよ，アダムズは訓令文を受け取っても何か月も解読できずにいたわけだが，その後，いよいよ和平の動きが具体化する段になると，パリのフランクリンに解読文の送付を依頼するはめになる．以下では，アメリカ独立戦争講和までの過程を，アメリカ側の暗号・通信が直面した困難に焦点を当てて概観する．</P>
+<P>前述のようにアダムズは1779年に最初に和平使節に任命されて1780年2月にパリ入りしたが，フランス宮廷の不興を買って8月にはオランダに活動拠点を移した．フランス宮廷とのもろもろのやりとりはフランクリンが当たることになる．</P>
+<P>早期終戦を望むようになっていたフランスの意向もあってロシアとオーストリアが仲介に乗り出し，1781年5月，交戦国がウイーンに集まって講和会議を開くことを提案した<!--Van Doren, Franklin p.666-->．だが交戦国とはイギリスやフランスのことで，アメリカはイギリスの植民地という扱いで招待されず，同盟国フランスによって代表されることになっていた．アメリカ側の唯一の公式な講和使節であるアダムズは，フランス外務大臣ヴェルジェンヌ伯の招きで7月にはパリまで出向いたが，アダムズの立場は，アメリカ代表を講和会議に出席させることでアメリカを独立国として認めることが交渉開始の前提だというものだった．イギリスのほうでは臣下としてのアメリカ人と和解する用意まではあったものの，独立ありきの交渉のテーブルにつくつもりはなく，ウイーン講和会議の構想は不発に終わった．</P>
+<P>この間，フランスの意向もあって，1781年6月には大陸会議はベンジャミン・フランクリンらも加えた５名を和平交渉のための全権代表として任命した．その訓令が，ジョン・アダムズが解読できなかった，問題の暗号である．</P>
+<P>一方，後述する9月13日付書簡に示されるように，フランクリンは訓令を伝える手紙の暗号文を解読できた（前述のように，ラヴェルもフランクリンが解読できることは確実視していた）．ただし，そのことをもって科学者でもあるフランクリンがアダムズより暗号に秀でていたと結論するのは早計である．連絡先によって暗号を使い分けることは一般的に行なわれることで，少なくとも，この訓令がアダムズ宛とは別のキーワードFORを使って暗号化されたものもあるという<!--Weber; cf.PCC Roll 72, Page 111 http://www.footnote.com/image/#172686-->．だが，実はフランクリン自身，ラヴェルの暗号には悩まされていた一人だったので，フランクリンにはもっと単純な暗号を使っていたことも考えられる．たとえばフランクリンはのちに「暗号で書かれた貴兄のお手紙の写しを受け取りました．以後は将来の平和に関する訓令を書くのに使われた暗号を使うことを望みます．私はそれに慣れており，それが非常によく，実際上，より便利だと思います．」（1782年3月4日付，リヴィングストン宛て）と書いているが，フランクリンがラヴェル暗号のことを「それに慣れており，それが非常によく，実際上，より便利」だと言うとは思えないのである（追記：ただし，この分野の権威Ralph E. Weberはフランクリンにも同じCR暗号(WE042)が使われたと考えているようである．<i>United States Diplomatic Codes and Ciphers</i>, p.111, n.25）．<!--（⇒<A HREF="">別項</A>参照）--></P>
+<P>とにかく，自分が新たな全権使節に任命されたと知ったパリのフランクリンは8月16日付でアダムズにこれまでの経緯を問い合わせた．それに対してアダムズはアムステルダムから8月25日付で返事をしている．アダムズは7月にヴェルジェンヌ伯の招きでパリを訪れるまでは何の動きもなかったが，ヴェルジェンヌに求められていくつかの条項について意見を言ったことを報告した．</P>
+<P>「そこで私は以下の日付の手紙を閣下〔ヴェルジェンヌ〕に書きました．7月13日付で16条，18条，19条，21条への答えを同封しました．各条と私の手紙の写しをお送りすることは簡単ですが，長い旅程に託すのが賢明でない事項も含まれています．ことにそんな必要がないとなればなおさらです．各条と私の手紙の写しはヴェルジェンヌ伯がすぐくださることでしょう．そのほうがリスクを避けることができます．</P>
+<P>我々の新たな辞令も前の辞令と同様無用のものとなるのではないかと恐れています．……大陸会議は我々を帰国させて，……少なくとも連合諸邦にいるイギリス兵が一人残らず殺されるか捕らわれるかするまで本国にいさせても大丈夫なのではないかと思います．それまではイギリスは奸計のためでなければ和平のことなど考えないでしょう．……」</P>
+<P>次は，フランクリンがこの間のいきさつを本国に報告する手紙（大陸会議議長宛て）である（1781年9月13日付）．</P>
+<P>「6月19日付のお手紙二通を，〔フランス〕国王および三名の使節に宛てた書簡および和平交渉に関する訓令ともども確かに拝受いたしました．すぐヴェルサイユに赴き，書簡を提出し，受け取っていただきました．閣下の訓令の写しも，<U>解読後に</U>ヴェルジェンヌ伯にも伝えました．伯は私がいる前でお読みになり，大陸会議がフランス宮廷に寄せた全幅の信頼に対して満足感を漏らされ，国王は連合諸邦の名誉をその福利と独立とともに心にかけており，後悔させることは決してないと私に保証してくださりました．……</P>
+<P>閣下の連絡の趣旨をアダムズ氏，ジェイ氏に伝えました．アダムズ氏はすでに同じものを受け取っていました．……」</P>
+<P>1781年10月，ヨークタウンでコーンウォリス将軍率いるイギリス軍が降伏するという，アメリカ独立にとって決定的なできごとが起こった．ちょうどその直後の10月23日，新設の外務長官のポストに就任したロバート・R・リヴィングストンが着任の挨拶などとともに，ヨークタウンでの勝利のまさに第一報をオランダにいるアダムズに伝えている一節があるので紹介したい．</P>
+<P>「……このへんにしておきましょう．ただ，手紙は封をせずにおきます．残りを貴兄がかつてアメリカから受け取ったなかで最も喜ばしい<!--agreeable-->知らせのためにとっておくためです．同封される印刷物が一つの重要な勝利をご報告するでしょう．今にも届くと思われる詳報があれば，この冬，この上ない有利な立場で交渉に着手することがおできになるでしょう．</P>
+<P>10月24日．めでたいことです．私の期待にたがわず，喜ばしい<!--pleasing-->情報をお伝えすることができます．同封したのはワシントン将軍から大陸会議への手紙，コーンウォリス卿，その艦隊，軍に認められた〔降伏〕条件，そして降伏前に交わされた手紙です．私からはこの事件についてコメントせずにおきますが，最大限に活用してくださるようご判断にゆだねます．おそらく最も有利に資金借り入れを設定できる時機ではないでしょうか．……」</P>
+<P>ヨークタウンでのイギリス軍の降伏によりアメリカ独立は避けがたいものとなり，和平に向けた機運が高まっていく．</P>
+<P>アダムズはイギリス政府筋から接触を受け，1782年3月26日付でパリのフランクリンに報告している．この手紙は全権使節の一人でありながらオランダにいるアダムズの立場を示しているとともに，アダムズが解読できなかった暗号の解読文の送付をフランクリンに依頼しているものであり，興味深い．</P>
+<P>それによると，ハーグにいるアダムズのもとにイギリス政府筋の使者からのカードが届けられた．アダムズは，立会人の同席のもとでなら話だけは聞いてフランクリンとヴェルジェンヌに伝えるとは約束したが，パリに行って直接フランクリンに会ったほうがいいと勧めた．それでもアダムズを訪ねてきた使者は，ほかならぬイギリスのノース首相からの使いだった．アダムズがイギリスと休戦を結ぶ権限を与えられているとの情報を確認に来たのだった．アダムズは答えた．</P>
+<P>「私は講和を結ぶ全権を与えられてヨーロッパに来ました．その権限は私の到着とともに公表され，昨夏まで有効でした．ですが昨夏，大陸会議は四名への同じ権限を含む新しい辞令を送りました．……もしイギリス国王が私の父で私が王位継承者だったとしたら，国王に休戦など考えることは勧められません．休戦はうわべの静穏のもと実際には戦争であって，公然たる血なまぐさい戦争に終わるものであり，当事国のいずれにも真にいいことにはならないからです．」</P>
+<P>交渉使節の来訪については，アダムズは繰り返しフランス宮廷近くにいるフランクリンのもとに行くことを勧め，アダムズのところに来ても，必ず同僚と相談の上でなければ意見は言えないとくぎを刺した．</P>
+<P>そしてアダムズはこのフランクリンへの手紙で付け加えている．</P>
+<P>「ヴェルジェンヌ伯のヴォーギヨン公への使者を使って，お手元の講和に向けた訓令の手紙の写しを送っていただけないでしょうか．私の手紙は四分の一ほど解読できなかったのです．何か間違いがあったに違いありません．」</P>
+<P>和平交渉が現実味を帯びるなか，アダムズも訓令を解読できないままにしておくわけにはいかなくなったのである．</P>
+<P>これに対するフランクリンの返事は3月31日付である．別の手紙を書いているところにアダムズの手紙を受け取ったようで，訓令が読めなかったというアダムズの依頼については，次の使者で写しを届けると伝えている．だが，肝心のイギリス政府からの和平の打診については，少し様子を見ると述べている．アメリカ植民地を屈服させると意気込んでいたノース首相が3月20日に突如退陣したところだったのだ．</P>
+<P>イギリスでアメリカとの和解を望んでいた野党が政権の座についたことで，和平交渉はいよいよ動き始めた．交渉は主としてパリのフランクリンがアダムズら他の全権使節とも連絡を取りながら進めていく．10月末にはアダムズもパリ入りして，1782年11月30日，ついに講和予備条約調印の運びとなるのである（本条約の調印は翌年）．</P>
+<br>
+<br>
+<br>
+<br>
+
+<font size="2">
+<A HREF="crypto.htm">Articles on Historical Cryptography</A><BR>
+<IMG SRC="../mailto.bmp"><BR>
+<A HREF="http://webshop.kenkyusha.co.jp/book/978-4-7674-9100-4.html">『暗号事典』（版元のページ）</A>
+</font>
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>

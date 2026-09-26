@@ -1,0 +1,124 @@
+<HTML>
+<HEAD>
+<TITLE>
+Charles I's Cipher Revealed: Sir Charles Wheatstone's Codebreaking
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="code, cipher, Charles I, Sir Charles Wheatstone">
+<link rel=stylesheet type=text/css href=decode2.css>
+</HEAD>
+
+<BODY>
+<H1>Charles I's Cipher Revealed: Sir Charles Wheatstone's Codebreaking</H1>
+
+
+<P>Victorian physicist Sir Charles Wheatstone succeeded in deciphering a fully enciphered document bearing the name of Charles I, the King of England beheaded in the Puritan Revolution in 1649.</P>
+
+<H3>Wheatstone and Cryptography</H3>
+<P>Wheatstone's name would be best known by the term "Wheatstone bridge" that appears in a textbook of electronics. No less important was his contribution to commercial implementation of telegraphy in 1830s. It was for secrecy in telegraphy<!--Kahn p.198--> that he invented a digraphic cipher known as Playfair cipher in 1854.</P>
+<P>Playfair, the promoter of the cipher, was Wheatstone's friend and neighbor in London. They took fun in deciphering personal messages in cipher that appeared in the London Times. (A classified ad in cipher was a popular way of communication for young lovers because it could avoid arousing suspicion at home.) At one time, the deciphered message was a proposal of an elopement from an Oxford student. Wheatstone decided to admonish the girl and put an ad in the same cipher. There appeared an ad from the confounded girl: "Dear Charlie: Write no more. Our cipher is discovered!" Nothing was heard thereafter. <span class="note">(Kahn p.198)</span></P>
+<P>Wheatstone also displayed his Cryptograph at the Paris Exposition of 1867. It was a cipher disk whose outer plaintext alphabet and inner ciphertext alphabet have different number of elements for polyalphabetic substitution. (A weakpoint of this device was discovered only four years thereafter.)</P>
+
+<H3>Babbage Uninterested</H3>
+<P>In 1858, Sir Henry Ellis, ex-chief librarian at the British Museum, talked of the unread cipher document to Charles Babbage. Ellis had tried to have it deciphered but every effort had come to nothing.</P>
+<P>Babbage, a mathematician credited as inventing the concept of general-purpose computers, found deciphering as "one of the most fascinating of arts", though he confessed that he had "wasted upon it more time than it deserves". Just as Wheatstone and Playfair, he took fun in solving cipher messages in newspapers. In July 1858, he solved a cipher of Henrietta Maria (queen of Charles I), which corresponds to the "Third Cipher between Charles I and Henrietta-Maria" described in <A HREF="charlesi.htm">another article</A> <span class="note">(see the examples givein in Franksen (1985), <i>Mr. Babbage's Secret</i>, p.36-37; he corrects the year "1850" of Kahn p.205, quoting "Babbage Papers, opposite f.220"; Franksen says (p.38) Babbage partly cracked the cipher, and supplemented his reconstruction by deciphered letters found later)</span>. More importantly, he discovered a solution to the Vigenere cipher that had been long considered "undecipherable".</P>
+<P>When Ellis talked of his enciphered document, however, Babbage was not interested.</P>
+<P>A few days later, at Earl Stanhope's residence, he accidentally mentioned his talk with Babbage to Lord Wrottesley, who immediately said no likelier person would be found to get at the secrets in the letter than Wheatstone <span class="note">(Ellis' letter to Wheatstone; according to Kahn p.205, quoting "Babbage Papers, f.211", it was Babbage who recommended Wheatstone)</span>.</P>
+
+<H3>Wheatstone's Codebreaking</H3>
+<P>It was in June 1858 that Ellis sent Wheatstone a copy of the cipher document. </P>
+<P>The document consisted of seven pages, with each page signed by King Charles at the top and countersigned by Lord Digby below.</P>
+<P>Wheatstone took to the task and succeeded in deciphering. In February 1862, two or three years afterwards, his achievement was published in "Interpretation of an important Historical Document in Cipher, by Professor Wheatstone" in <i>Miscellanies of the Philobiblon Society</i>, Vol. 7, 1862-1863 (<A HREF="http://books.google.co.jp/books?id=nYQRAAAAIAAJ&pg=PA8-IA1&dq=%22interpretation+of+an+important+historical+document&as_brr=3#v=onepage&q=%22interpretation%20of%20an%20important%20historical%20document&f=false p.8">Google Booksearch</A>).</P>
+<P>Wheatstone does not say much about his codebreaking but, on examination of the letter, it would be apparent that the code numbers are predominantly between 12 and 99. It might then be assumed that these numbers represent substitution for the letters of the alphabet. Occasional higher numbers up to 562 may represent specific words or syllables.</P>
+<P>A simple substitution cipher, in which each letter is represented by a single code number, can be solved fairly easily by an established method called frequency analysis, whereby the letter represented by each code number is inferred on the basis of its frequency of occurrence. For example, if the plaintext is English, the most frequently occurring number would represent the letter "e". (This technique is illustrated in other articles: <A HREF="breaking.htm">Break Cornwallis' Cipher! -- Introductory Codebreaking</A> and <A HREF="church.htm">First Codebreaking in the American Revolution -- Benjamin Church's Cipher</A>. The method is also well known from <A HREF="goldbug.htm">Edgar Allan Poe: The Gold Bug</A>.)</P>
+<P>However, the cipher before Wheatstone was not a simple substitution. Since there are much more code numbers than 26, each letter of the alphabet must be represented by several distinct numbers. Such a cipher is known as homophonic substitution.</P>
+<P>A first step to solve such homophonic substitution is to find partial repetitions. Probably, Wheatstone knew this technique or found his way to arrive at the same method. If a sequence of, say, five code numbers repeatedly appears in the letter, that sequence would represent one and the same word. In homophonic substitution, a sequence may repeat with slight variations. In the present letter, for example, the following partial repetitions are found.</P>
+<P style="text-indent: 0em; margin-left: 2em">
+<TT>
+49 93 27 90 91 28<br>
+49 94 27 90 91 28
+</TT></P>
+<P>Two instances may not be sufficient to draw any definite conclusion but this may suggest a possibility that 93 and 94 both represent the same letter. Upon closer inspection with this working hypothesis in mind, one may notice that these may be part of a longer sequence:</P>
+<P style="text-indent: 0em; margin-left: 2em"><TT>
+89 61 56 15 49 93 27 90 91 28<br>
+90 60 57 14 49 94 27 90 91 28
+</TT></P>
+<P>These seem to suggest that each of pairs 89/90, 61/60, 56/67, 15/14, and 93/94 represents one letter. Five pairs in such a short sequence would hardly be a coincidence. It may thus be conjectured that each letter of the alphabet is assigned several consecutive numbers. If the numbers 12-99 are evenly assigned to the 26 letters of the alphabet, each letter would be assigned three code numbers.</P>
+<P>With this in mind, the following sequences may be found that may all represent the same word.</P>
+<P style="text-indent: 0em; margin-left: 2em"><TT>
+89 61 56 15 49 93 27 90 91 28<br>
+89 63 56 15 49 96 30 90 91 32<br>
+90 60 57 14 49 94 27 90 91 28<br>
+90 61 57 13 49 95 29 90 91 30<br>
+90 61 58 15 51 95 30 89 92 32<br>
+90 61 59 17 50 93 27 89 88 30<br>
+90 62 58 15 50 95 26 90 91 27<br>
+90 63 57 16 50 96 27 88 90 28<br>
+92 61 57 14 49 96 27 89 91 28<br>
+92 61 59 15 48 94 27 90 88 30<br>
+92 62 57 13 48 94 28 90 91 27<br>
+</TT></P>
+<P>Thus, each group of 13-17, 27-32, 48-51, 56-59, 60-63, 93-96, 88-92 may represent one and the same letter. If the groups of code numbers representing the same letter are identified by finding further partial repetitions, homophonic substitution can be reduced to simple substitution, to which the established frequency analysis technique can be applied.</P>
+<P>If each letter is substituted by one representative code number (e.g. the smallest number of the group), the above sequence can be written as follows:</P>
+<P style="text-indent: 0em; margin-left: 2em">88 60 56 13 48 93 27 88 88 27</P>
+<P>The ending pattern ABBA suggests endings such as "-anna", "-enne", "-elle", "-erre", "-esse", "-ette", "-deed", "-sees", etc. Further, the high frequency of 27 and its equivalents would suggest that 27 represents "e".</P>
+<P>However, Wheatstone was faced with another problem. Naturally, he first assumed that the plaintext was English but it did not work. For example, in ordinary English text enciphered with simple substitution, the code sequence for "the" would be fairly easily identified. However, the well established technique of frequency analysis did not work for this particular cipher. Then, it would have been natural to suppose that the plaintext is in some other language. In the end, it turned out to be in French.</P>
+<P>The substitution table determined by Wheatstone was as follows (numbers in brackets have been supplied by the present author). From this, it can be seen that the above repeated sequence reads "son altesse" (his highness).</P>
+<P style="text-indent: 0em; margin-left: 2em">
+A 12 13 14 15 16 17<br>
+B 18 19<br>
+C 20 21 22<br>
+D 23 24 25<br>
+E 26 27 28 29 30 31 32<br>
+F 33 34 35<br>
+G 36 37 38<br>
+H 39 40 41<br>
+IJ 42 43 44 45 46 47<br>
+L 48 49 50 51<br>
+M 52 53 54 55<br>
+N 56 57 58 59<br>
+O 60 61 62 63 64<br>
+P 65 66 67 [68 69]<br>
+Q 80 81 82<br>
+R 83 84 85 86 87<br>
+S 88 89 90 91 92<br>
+T 93 94 95 96 97<br>
+UV 98 99 100 101 102<br>
+X 103 104 105<br>
+Y [107] 108 109 110<br>
+</P>
+<P>No number is assigned to W and this shows that the cipher was prepared for the French language.</P>
+
+<H3>Revealed Message and Historical Background</H3>
+<P>The letter turned out to be instructions given to Stephen Goffe (1605-1681). Goffe was a chaplain of Charles I and was often employed in secret negotiations abroad. The letter provided Goffe with instructions for negotiations with the Prince of Orange, Frederick Henry, for a marriage and an alliance.</P>
+<P>There was already a bond by marriage between the House of Stuart and the House of Orange. In May 1641, marriage between William, the son of Frederick Henry, and Mary, Princess Royal, took place in London. But the rift between the King and the Parliament, which would eventually lead to a climax of decapitating of the King, was irreparably widening. At the beginning of 1642, the King got out of the perilous London. He took with him Queen Henrietta Maria, two sons (future King Charles II and James II), and the Princess Royal, who, yet ten years of age, had been left in London after the marriage. In August, open war broke out between the King and the Parliament.</P>
+<P>In 1641, it had been believed that the marriage with the heir of the House of Orange would ensure the friendship of the Dutch Republic. But when a second marriage was considered, the English court stipulated a formal alliance as a condition. In June 1644, Goffe made a proposal to Frederick Henry<!--Orange and Stuart-->. Probably, the document deciphered by Wheatstone two hundred years later was given at this occasion.</P>
+<P>Goffe's negotiations were not new to the historians. In June 1645, the royalist army was crushed at the Battle of Naseby by the parliamentarian New Model Army. The parliamentarians found the king's cabinet from the battlefield. Many documents concerning the royalists' plans for soliciting foreign forces etc. were published in <i>The King's Cabinet Opened: Or, Certain Packets of Secret Letters and Papers</i> on 14 July 1645.</P>
+<P>In October, Lord Digby, an important but ill-advised counsel of the King, was given the command of an enterprise to join forces with Montrose in Scotland <!--http://www.experiencefestival.com/a/first%20english%20civil%20war%20-%20digby's%20northern%20expedition/id/1393445--> but was defeated on 15 October at Sherburn. His papers captured on this occasion were published in March 1646 in <i>The Lord George Digby's Cabinet and Dr. Goffe's negociations, together with his Majesty's, the Queen's, and the Lord Jermyn's, and other letters, taken at the battle of Sherburn, in Yorkshire, about the 15th of October last</i><!--http://books.google.co.jp/books?id=GtigUDztDqMC&pg=PA116&lpg=PA116&dq=%22george+digby%22+sherburn&source=bl&ots=_vDMAwSchN&sig=RaXmGD-hNKFoo19mePPCcOVqBEg&hl=ja&ei=umwbS-7DNY_s7AOl4sTNDw&sa=X&oi=book_result&ct=result&resnum=4&ved=0CBQQ6AEwAw#v=onepage&q=cipher&f=falseによるとa small quarto pamphlet-->. As the title shows, Goffe's negotiations in Holland were highlighted in this publication.</P>
+<H3>References:</H3>
+<P>"Interpretation of an important Historical Document in Cipher, by Professor Wheatstone" in <i>Miscellanies of the Philobiblon Society</i>, Vol. 7, 1862-1863 (<A HREF="http://books.google.co.jp/books?id=nYQRAAAAIAAJ&pg=PA8-IA1&dq=%22interpretation+of+an+important+historical+document&as_brr=3#v=onepage&q=%22interpretation%20of%20an%20important%20historical%20document&f=false p.8">Google</A>)</P>
+<P><i>Scientific Papers of Sir Charles Wheatstone</i> (1879) (<A HREF="https://www.google.co.jp/books/edition/The_Scientific_Papers_of_Sir_Charles_Whe/rD4GAAAAMAAJ?hl=ja&gbpv=1&dq=%22interpretation+of+an+important+historical+document&pg=PA321&printsec=frontcover">Google</A>) ... This includes "Interpretation of an important historical document in cipher".</P>
+<br>
+<br>
+<font size="2">
+&COPY;2009 S.Tomokiyo<br>
+First posted on 14 December 2009. Last modified on 2 October 2021.<br>
+<A HREF="crypto.htm">Articles on Historical Cryptography</A><BR>
+</font>
+
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>

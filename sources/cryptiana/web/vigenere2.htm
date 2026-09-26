@@ -1,0 +1,231 @@
+<HTML>
+<HEAD>
+<TITLE>Vigenere's Chiffres &agrave; Double Entente
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="Vigenere, chiffre a double entente, chiffre a double sens, code, cipher">
+<link rel=stylesheet type=text/css href=decode2.css>
+<style type="text/css">
+
+<!--
+h2{
+clear: both;
+}
+h3{
+clear: both;
+}
+td{
+text-align:center;
+}
+blockquote{
+width:600px;
+font-style:italic;
+}
+-->
+
+</style>
+</HEAD>
+
+<BODY>
+<H1>Vigenere's Chiffres &agrave; Double Entente</H1>
+<P>Ciphers that can produce two different plaintexts are described as <i>Des chiffres carr&eacute;z &agrave; double entente</i> in Blaise de Vigen&egrave;re, <i>Trait&eacute; des chiffres</i> (<A HREF="https://fr.wikisource.org/wiki/Livre:Blaise_de_Vigen%C3%A8re_%E2%80%93_Trait%C3%A9_des_Chiffres,_1587.pdf">Wikisource</A>) (f.183v ff.).</P>
+
+
+<H3 id="vigenere">Vigenere Cipher</H3>
+<DIV style="float:right; width:600px">
+<img src="vigenere_f96.png" width="450"><br>
+</DIV>
+<P>The description (f.186r) of the table on f.96v appears to be about the common Vigenere cipher (though it should be noted that the arrangement of letters in the table is not regular). The intersection of the row specified by a key letter and the column specified by a plaintext letter gives a ciphertext letter.</P>
+<P>The example given is:</P>
+
+<!--Vigenere says "un chiffre double" and other more important secrets can be derived, his explanation -->
+<blockquote>
+Plaintext: Aimons Dieu qui nous a aimez le premier<br>
+Key:       l'entree du ciel
+</blockquote>
+
+<table border="1">
+<tr>
+<td>Plaintext</td><td>a</td><td>i</td><td>m</td><td>o</td><td>n</td><td>s</td><td>d</td><td>i</td><td>e</td><td>u</td><td>q</td><td>u</td><td>i</td>
+</tr><tr>
+<td>Key</td><td>l</td><td>e</td><td>n</td><td>t</td><td>r</td><td>e</td><td>e</td><td>d</td><td>u</td><td>c</td><td>i</td><td>e</td><td>l</td>
+</tr><tr>
+<td>Ciphertext</td><td>a</td><td>h</td><td>u</td><td>z</td><td style="color:#ff0000">c</td><td>l</td><td style="color:#ff0000">d</td><td>z</td><td>g</td><td>l</td><td>m</td><td>m</td><td>e</td>
+</tr>
+</table>
+<P>It is noted that each cell contains a pair of letters. When the plaintext letter (taken from the top alphabet) is the second one in the pair, the ciphertext letter in red should be used ("la premiere &agrave; la premiere, & la seconde &agrave; la seconde").</P>
+<P>The opposite can also be possible: when the plaintext letter is the first one in the pair (in red), the second letter in a cell (in red) should be used ("la rouge respondant &agrave; la rouge, & la noire &agrave; la noire").</P>
+<P>(Whichever mode is used, it would be straightforward to rearrange the table into an ordinary square format with each cell containing one letter.)</P>
+
+<H3 id="digraphic">Digraphic Cipher &agrave; la Vigenere</H3>
+<DIV style="float:right; width:600px">
+<img src="vigenere_f50.png" width="450"><br>
+</DIV>
+<P>This (f.186v-187r) uses the table on f.50v, which is substantially a common Vigenere table, when used with the alphabets of capitals in red (on top and left). But it also provides alphabets of capitals in black. Vigenere says this provides "chiffre double".</P>
+<P>The example given is:</P>
+<blockquote>
+First text: Les causes premieres meuuent les seconds; les secnodes les tierces<br>
+Second text: Il ne s'effectue rien en la terre, qu'il n'ait premier est&eacute; esbauch&eacute; au ciel
+</blockquote>
+
+<P>The scheme explained is what we call a digraphic cipher today: two letters in the plaintext are translated into two letters in the ciphertext.</P>
+<P>So, one may simply encipher the first text, taking letters two by two: le, sc, au, ....</P>
+<P>Alternatively, one may pick one letter from each of the two plaintexts and encipher the pair (l/i, e/l, s/n, c/e, ...) into two letters in the ciphertext.</P>
+<P>Whichever option is used, the process for enciphering/deciphering is the same. Given two letters of the plaintext(s), a row and a column are identified according to the alphabets in red and a ciphertext letter is found at their intersection. For example, a pair of two letters L/E is translated into f, which is at the intersection of the column headed by L and the row headed by E.</P>
+<P>Of course, deciphering is not possible with f alone, because "f" occurs twenty times in the table. So, the ciphertext letter is associated with another letter from the black capital alphabet (on top or left) to identify which cell with "f" should be taken. If the top alphabet is used, the accompanying letter would be T; if the left alphabet is used, it would be O.</P>
+
+<P>Enciphering two plaintexts works exactly the same way. Given L/I, the ciphertext letter is l. The indication letter would be T <span class="note">("s" given by Vigenere seems to be a typo)</span> if taken from top, or S if taken from the side.</P>
+
+
+<P>(Vigenere seems to say Raymond Lulle employed this when he referred to <i>Angulus contingentiae</i>, but the meaning of this reference is not clear to me.)</P>
+
+<H3 id="double">Vigenere's Cipher &agrave; Double Entente</H3>
+<DIV style="float:right; width:600px">
+<img src="vigenere_f184b.png" width="600"><br>
+(Above) Vigenere's digraphic cipher (Below) Porta's digraphic cipher<br>
+<img src="porta11.jpg" width="379px"><br>
+</DIV>
+<P>The table between f.184 and f.185 works in a similar way (f.185rv, f.187rv) and the same example texts as above are used. Here, two letters representing two plaintext letters are explicitly written in each cell.</P>
+<P>Again, two letters to be enciphered can be from the same text (L/E) or different texts (L/I). Using the black alphabets on top and on the side, L/E is enciphered into sg; L/I is enciphered into ag. If the red alphabets are used, L/E is enciphered into dm.</P>
+<P><span style="font-size:smaller"> In the cell "ag", a small capital letter "A" is placed. Vigenere says this is equivalent to the two letters ("vallent le mesme que les deux lettres accouplees ensemble") and is placed to show that the two letters serve only for one character, but this is not clear to me. Cells with such a small capital are: 
+LI(plaintext letters)	ag(cell)	A(small capital);
+SN	mp	B;
+CD	ix	D;
+AS	xt	E(I?);
+VE	fr	F;
+SF	cp	H;
+EF	ob	L;
+SC	bp	M;
+PT	pm	N;
+RV	so	R; and
+QE	bn	T.
+</span></P>
+<P>When Vigenere says his scheme with ordinary 20 letters of the alphabet is better in avoiding suspicion than using 400 characters, he may be referring to Porta's digraphic cipher with 400 different graphic symbols.</P>
+
+<H4>Presenting a Fake Plaintext</H4>
+<P>This scheme allows disclosing one of the two plaintexts but not the other. Such a scheme may indeed be useful when one is pressed by a tyrannical government to disclose the plaintext.</P>
+<DIV class="kakomi">
+si leurs lettres estoient surprises, &agrave; tout euenement ils
+en estoient quittes d'exhiber leur chiffre, sans lequel
+il eust est&eacute; impossible d'en venir &agrave; bout, comme il severra ; mais &agrave; demy & par l'vn des costez seulement;
+exprimant lequel des deux sens ils vouloient, & reseruant l'autre &agrave; par eux ; assauoir par les colomnes
+perpendiculaires du hault en bas; ou les transuersales
+de gaulche &agrave; droit.
+</DIV>
+<P>In my understanding, this works as follows. When pressed to disclose the key by the authority, one can show the table but without the top (or left) alphabet. Suppose the top alphabet was used for the true message and the left alphabet was used for an ostensible plaintext, one can disclose the table but omit the top alphabet, pretending that the plaintext letter is found by looking horizontally. Then, a ciphertext "ob" can be uniquely deciphered to F from the left alphabet.</P>
+<P>With such a scheme, the number of letters in the ciphertext is double the original, which may seem unnaturally redundant. An experienced cryptographer would readily suspect there has to be another alphabet on top. Once suspected, it may be difficult not to disclose the secret.</P>
+
+<H3 id="figures">Variant with Arabic Figures</H3>
+<DIV style="float:right; width:600px">
+<img src="vigenere_f192b.png" width="600"><br>
+</DIV>
+<P>The table between f.192 and f.193 is a variant digraphic cipher in which 400 two-letter combinations are replaced with permutations of three Arabic figures from 1-8, with 0 and 9 reserved for nulls or delimiters (f.192-193) <span class="note">(The example on f.192 does not seem to fit the table: L/I represented by 517, E/L by 536, S/N by 576, C/E by 388.)</span>.</P>
+
+<H4>Three Ciphers Combined</H4>
+<P>Using alphabetical letters (a-z and &) instead of 1-8 allows an interesting adaptation. By using three sets of eight symbols (a-h, i-q, and r-z&), three ciphers can be combined in a single ciphertext. Instead of 111 representing RR <span class="note">("r q" on f.193v seems to be a typo.)</span>, aaa, iii, or rrr may be used; instead of 728 (representing QQ), gbh, pkq, zs& may be used.</P>
+<P>This can also be used for double (or triple) meaning. By alleging any of the three alphabets to be nulls, the true plaintext may be omitted in disclosure. (The idea of using nulls to convey a secret message may be found elsewhere.)</P>
+
+
+<H3 id="monosyllables">Variant with Monosyllables</H3>
+<DIV style="float:right; width:600px">
+<img src="vigenere_f198b.png" width="600"><br>
+</DIV>
+<P>Vigenere goes on to describe a further variant in which two letters are represented by monosyllables (f.198rv). The two plaintexts are:</P>
+<blockquote>
+Le Pape &agrave; l'appetit d'autruy a entrepris une chose<br>
+dont peult estre il ne mettra guere a se repentir
+</blockquote>
+<P>A letter from the first plaintext is found on the top alphabet (in red) and a letter from the second is found on the side alphabet. For example, the first letters from the two plaintexts L/D are enciphered as poing. The rest proceeds like:</P>
+<table border="1">
+<tr>
+<td>first plaintext</td> <td>l</td> <td>e</td> <td>p</td> <td>a</td> <td>p</td> <td>e</td> <td>a</td> <td>l</td> <td>a</td> <td>p</td> <td>e</td> <td>t</td> <td>i</td> <td>t</td> <td>...</td>
+</tr><tr>
+<td>second plaintext</td> <td>d</td> <td>o</td> <td>n</td> <td>t</td> <td>p</td> <td>e</td> <td>u</td> <td>l</td> <td>t</td> <td>e</td> <td>s</td> <td>t</td> <td>r</td> <td>e</td> <td>...</td>
+</tr><tr>
+<td>ciphertext</td> <td>poing</td> <td>nud</td> <td>vous</td> <td>gect</td> <td>vueil</td> <td>noir</td> <td>gens</td> <td>point<span class="note">[sic]</span></td> <td>gect</td> <td>vingt</td> <td>nect</td> <td>dent</td> <td>pain</td><td>don</td> <td>...</td>
+</tr></table>
+<H4>Superencipherment</H4>
+<P>Moreover, the resulting ciphertext words undergo superencipherment ("surchiff&eacute;" by using "enuelouppe") by using a Porta-like reciprocal substitution table on f.46. It is an autokey cipher with an initial key letter P (whereby the ciphertext letter obtained is used as the key letter to encipher the next plaintext letter). First, the reciprocal table identified with the initial key letter P is consulted, which translates the initial plaintext letter p (in the ciphertext from the first step, "poing") into l. Thus, the reciprocal table for L is used to encipher the next letter  <span class="note">(Vigenere seems to be mistaken in using the P table again on f.198v)</span>.</P>
+<P>(The superencipherment is too tedious to be used in manual encryption, especially given that the simple Vigenere cipher as understood today was already considered undecipherable until the nineteenth century.)</P>
+
+<H3 id="fake">Fake Message to Mock Papal Codebreaker (1551)</H3>
+<P>It is in this context that Vigenere tells an episode about a papal codebreaker tricked into deciphering a fake message (f.197r-199r).</P>
+<P>It was in 1551, when Vigenere was in Rome and Therme <span class="note">(<A HREF="https://fr.wikipedia.org/wiki/Paul_de_La_Barthe_de_Thermes#Les_guerres_d'Italie">Wikipedia</A>)</span> (later marshal of France) was imperial ambassador; the Pope Julius III was allied with the Emperor against France <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Pope_Julius_III#Church_reforms">Wikipedia</A>)</span>.</P>
+<P>Paulo Pancatuccio de Volterre, who served the Pope in cryptanalysis, was talented enough to perform some "petits miracles". One day, certain "bons compagnons" of the French party, seeking to humble his pride, forged a letter in cipher addressed to "Monsieur le Baron de Grissemenisse, grand superintendant, etc." and marked as important. When the courier arrived at Espolette (?Spoleto <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Spoleto">Wikipedia</A>)</span>), pretending to look for something in his suitcase, he deliberately left the despatch and the postmaster delivered it to the Chief Secretary of the Pope.</P>
+<P>Pancatuccio readily deciphered the opening words, which was not surprising because it was only "vne bien simple transposition de lettres". While f.11 referenced here deals with scytale and the Caesar cipher, I believe the latter is meant. The scytale Vigenere describes is not a transposition cipher <span class="note">(see <A HREF="https://cryptiana.blogspot.com/2026/01/vigeneres-description-of-scytale-not-as.html">my blog post</A> and <A HREF="scytale.htm">my article about the scytale</A>)</span>, while the Caesar cipher is described as "transpositions, mettant les lettres l'vne pour l'autre".</P>
+<P>Seeing that the deciphered text suggested the importance of the letter involving "Monseigneur l'Illustrissime DINERO qui commande" (the pseudonym was enciphered in capital), he reported it to the Secretary. </P>
+<P>Upon returning to work on the rest, however, it turned out to be a mocking message to the codebreaker:</P>
+<blockquote>
+0 poor wretched slave that you are to your decipherments, on which you waste all your oil and your pains, what does it profit you to eat out your heart in the quest of these vain curiosities, presuming by your laborious researches to be able to attain to the discovery of the secrets of others, which are reserved to God alone? Come, use your leisure and your work in the future for things more fruitful, and stop uselessly frittering away your time, one lone minute of which cannot be bought back by all the treasures of this world. <span class="note">(translation by Mendelsohn)</span>
+</blockquote>
+<P>This episode is told by Mendelsohn and repeated by Kahn and Pesic, but the relation with the <i>chiffre &agrave; double sens</i> has not been clear.</P>
+
+<H4>Parallel with an Ancient Anecdote</H4>
+<P>As an aside, Vigenere compares this to an episode told by Herodotus. The tomb of the Babylonian queen Nitocris <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Nitocris_of_Babylon">Wikipedia</A>)</span> (one of the two queen regnants in the history of Babylon, with the other being Semiramis) had an inscription:</P>
+<blockquote>
+If one of the rulers of Babylon after me is in need of money, let him open my tomb and take however much he likes. But if he is not in need may he under no circumstances open it: otherwise it will not be well for him. <span class="note">(translation by Dillery)</span>
+</blockquote>
+<P>Darius the Great opened the tomb only to find a mocking inscription inside:</P>
+<blockquote>
+If you had not been greedy for money and shamelessly interested in gain, you would not have opened the graves of the dead. <span class="note">(translation by Dillery)</span>
+</blockquote>
+
+<H4>Challenge</H4>
+<P>Anyway, the text above deciphered by Pancatuccio ends with a challenge:</P>
+<blockquote>
+Put matters to the test now, and see if you can get at the meaning of one little letter of what follows here. <span class="note">(translation by Mendelsohn)</span>,
+</blockquote>
+<P>This is immediately followed by an explanation, "C'estoit vn chiffrement &agrave; double sens, tout form&eacute; de monosyllabes" with superencipherment. I believe this does not mean that the ciphertext that gave the above decipherment could be deciphered in another way. This must refer to the challenge cipher following it.</P>
+<P>Vigenere's explanation of the scheme is what is described in the previous section above.</P>
+<P>Considering that Vigenere clearly says a <i>chiffre &agrave; double sens</i> is involved in this episode, he may have learned this in Rome rather than invented it himself.</P>
+
+<H4>References to this section</H4>
+<DIV style="font-size: smaller">
+<P>Charles J. Mendelsohn, "Blaise de Vigen&egrave;re and the "Chiffre Carr&eacute;"" (1940) (<A HREF="https://www.jstor.org/stable/985011">JSTOR</A>, <A HREF="https://archive.org/details/bub_gb_wTgLAAAAIAAJ/page/103/mode/2up">Internet Archive</A>) p.104-105</P>
+<P>David Kahn (1967), <i>The Codebreakers</i>, p.146-147</P>
+<P>Peter Pesic (1997), "Secrets, Symbols, and Systems - Parallels between Cryptanalysis and Algebra, 1580-1700", <i>Isis</i> (<A HREF="https://mathsciencehistory.com/wp-content/uploads/2024/11/Secrets-Symbols-and-Systems-Peter-Pesic.pdf">pdfHistory of Science Society</A>), p.679</P>
+<P>John Dillery (1992), "Darius and the Tomb of Nitocris (Hdt. 1.187)", Classical Philosophy, vol.87, no.1 (<A HREF="https://www.jstor.org/stable/269686">JSTOR</A>)</P>
+</DIV>
+
+<H3 id="assessment">Assessment</H3>
+<P>In my understanding, Vigenere's <i>chiffre &agrave; double entente</i> or <i>double sens</i> works in a manner similar to a running key cipher, in which a first plaintext is combined with a second plaintext instead of a key text. Since the key text is not given for deciphering, each cell of the square table provides two letters instead of one. (Instead of two-letter combinations, figures, monosyllables, or graphic symbols may also be used as long as necessary patterns are covered.) So, seen end-to-end, it is effectively a digraphic cipher.</P>
+<P>Originally, I was looking for a scheme that allows disclosing an ostensible plaintext while keeping another plaintext secret. Suppose one is caught with a ciphertext for "Down with Putin". Pressured to reveal its decipherment, one may want to show it is deciphered as "Long Live Putin" <span class="note">(an example used in <A HREF="https://cryptiana.blogspot.com/2022/10/deriving-fake-message-from-ciphertext.html">a blog post</A>)</span>.</P>
+<P>With Vigenere's scheme, however, once the deciphering table is disclosed, the omission of the horizontal (or vertical) alphabet is likely to be noticed by a codebreaker.</P>
+<P>It may not provide effective protection against pressure from the authority. Still, I find this interesting enough to be used in a detective story or film.</P>
+
+
+
+
+
+<H3 id="related">My Related Blog Posts</H3>
+<P><A HREF="https://cryptiana.blogspot.com/2022/10/deriving-fake-message-from-ciphertext.html">"Deriving a Fake Message from Ciphertext: 16th-century Venetian Example"</A></P>
+<P><A HREF="https://cryptiana.blogspot.com/2021/07/a-cipher-disk-and-treatise-in-cipher.html">"A Cipher Disk and Treatise on Cipher from ca.1590-1650 "</A></P>
+<P><A HREF="https://cryptiana.blogspot.com/2024/01/double-reading-caused-by-omission-of.html">"Double Reading Caused by Omission of Breaks"</A></P>
+<P><A HREF="https://cryptiana.blogspot.com/2025/02/yardleys-device-to-convey-secret.html">"Yardley's "Device" to Convey a Secret Message under an Ostensible Plaintext?"</A>
+</P>
+<P><A HREF="https://cryptiana.blogspot.com/2024/03/jfw-herschels-cipher-puzzle.html">"J.F.W. Herschel's Cipher Puzzle "</A></P>
+<br>
+<br>
+<font size="2">
+&COPY;2026 S.Tomokiyo<br>
+First posted on 19 February 2026. Last modified on 15 March 2026.<br>
+<A HREF="crypto.htm">Cryptiana: Articles on Historical Cryptography</A><BR>
+</font>
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>
+
+

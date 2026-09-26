@@ -1,0 +1,298 @@
+<HTML>
+<HEAD>
+<TITLE>
+Variable-Length Symbols in Italian Numerical Ciphers
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="Cipher, Code, Italian cipher">
+<link rel=stylesheet type=text/css href=decode2.css>
+</HEAD>
+<BODY>
+<H1>Variable-Length Symbols in Italian Numerical Ciphers</H1>
+
+
+<P>Italian numerical ciphers often include symbols (code numbers) consisting of one to four figures. As long as they are written separately, there is no problem. However, figures were commonly written continuously without a break, as seen in the image of a letter (1654 NS) in a Venetian cipher below <span class="note">(Calendar of State Papers, Venice, vol.2,  (<A HREF="https://archive.org/stream/calendarofstatep2118brow#page/n147/mode/2up">Internet Archive</A>, "specimen of Venetian Cypher in the latter half of the 17th century"</A>)</span>.</P>
+<img src="italian1654.jpg" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+
+<P>Such a practice is in accordance with the teaching of <i>Libro Nuovo d'imparare a scrivere</i> (Rome, 1547) <span class="note">(<A HREF="http://onlinebooks.library.upenn.edu/webbin/book/lookupname?key=Palatino%2C%20Giovanni%20Battista%2C%2016th%20cent.%20Libro%20nuovo%20d%27imparare%20a%20scrivere">Online Books</A>)</span> of Giovanni Battista Palatino <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Giovanni_Battista_Palatino">Wikipedia</A>)</span> <span class="note">(Bertomeu Masi&aacute; p.161)</span> and was actually dictated in many ciphers including one dated between 1539 and 1542 <span class="note">(Meister p.176)</span>.<!--Meister p.193によれば1556の暗号にも明記;p.200も;等--> Matteo Argenti, who was cipher secretary in the curia from 1591 to 1605<!--Meister p.59-->, considered obscuring borders between one-figure and two-figure symbols enhances security <span class="note">(Meister p.63, p.61, p.64<!--解読者の立場から-->)</span>. (He even suggested inserting a null <i>within</i> a two-figure symbol (e.g., writing "374" or "3784" instead of "34", with "7" and "8" being nulls) <span class="note">(Meister p.62)</span>.)</P>
+<P>For example, if it is not known whether "7333" should be parsed as "73 33" or "7 33 3", not only an eavesdropping third party but also the intended recipient would have trouble in deciphering. This example is part of the following ciphertext:</P>
+<DIV class="kakomi2">
+353433837716919585191487369189739574901371911623017515504
+25043793755751713425741975571513910832762139348608346597719107
+12985276567435529837642173703536790858737711404631183097901457
+55085873425067795913679085551145773331854777859100406701714534
+93753555317175477025138506
+</DIV>
+<P>The reader may try to read this using the following key. (The plaintext will be presented below.)</P>
+<img src="meister300.jpg" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+
+<P>The present article considers provisions to avoid confusion when figures are written continuously in such Italian ciphers having variable-length symbols.</P>
+
+<H2>Digits Reserved for Single-Figure Symbols</H2>
+<P>A simple solution to avoid confusion in continuously writing code numbers of variable length would be to reserve some digits for single-figure symbols.</P>
+<P>Some ciphers used by Matteo Argenti under Pope Clement VIII (1592-1605) <!--and Paul V (1605-1621)--> employ such a scheme <span class="note">(Meister p.71)</span>.</P>
+<TABLE border="1">
+<COL width="30" align="center" span="22">
+<TR><TD colspan="22">null: 5</TD><TR>
+<TR><TD>a</TD><TD>b</TD><TD>c</TD><TD>d</TD><TD>e</TD><TD>f</TD><TD>g</TD><TD>h</TD><TD>i</TD><TD>l</TD><TD>m</TD><TD>n</TD><TD>o</TD><TD>p</TD><TD>q</TD><TD>r</TD><TD>s</TD><TD>t</TD><TD>u</TD><TD>z</TD><TD>et</TD><TD>con</TD></TR>
+<TR><TD>6</TD><TD>84</TD><TD>34</TD><TD>80</TD><TD>2</TD><TD>43</TD><TD>83</TD><TD>33</TD><TD>7</TD><TD>03</TD><TD>40</TD><TD>00</TD><TD>9</TD><TD>48</TD><TD>44</TD><TD>30</TD><TD>04</TD><TD>08</TD><TD>1</TD><TD>88</TD><TD>38</TD><TD>48</TD></TR>
+</TABLE>
+<P>In this cipher, single-figure symbols are 1, 2, 5, 6, 7, and 9 and these digits are never used in two-figure symbols.</P>
+
+<DIV class="kakomi2">
+5503651783703600886580748648655340324020008243158330<br>
+60080257009830075583200230258020028390875<br>
+<br>
+PLAINTEXT<br>
+La vigilanza di papa Clemente fu grande in ogni genere de negotii.<br>
+<br>
+DUMP<br>
+55(-) 03(l) 6(a) 5(-) 1(u) 7(i) 83(g) 7(i) 03(l) 6(a) 00(n) 88(z) 6(a) 5(-) 80(d) 7(i) 48(p) 6(a) 48(p) 6(a) 55(-) 34(c) 03(l) 2(e) 40(m) 2(e) 00(n) 08(t) 2(e) 43(f) 1(u) 5(-) 83(g) 30(r)<br>
+6(a) 00(n) 80(d) 2(e) 5(-) 7(i) 00(n) 9(o) 83(g) 00(n) 7(i) 55(-) 83(g) 2(e) 00(n) 2(e) 30(r) 2(e) 5(-) 80(d) 2(e) 00(n) 2(e) 83(g) 9(o) 08(t) 7(i) 5(-)<br>
+</DIV>
+
+<H2>Three-Figure Symbols with Fixed-Value Digits</H2>
+<P>Another simple solution to avoid confusion in continuously writing code numbers of variable length would be to use a distinguishable pattern for three-figure symbols.</P>
+
+<H3>Anonymous</H3>
+<P>One anonymous cipher <span class="note">(Meister p.315)</span> uses two-figure symbols for single letters and three-figure symbols for syllables and names. Confusion is avoided because all the three-figure symbols begin with "0" (e.g., 071 for "Duca di Ferrara"), which is not used in two-figure symbols.</P>
+
+<H3>Bishop of Savona (1585)</H3>
+<P>On the other hand, a cipher <span class="note">(Meister p.343)</span> with Joh. Bapt. Centurione, Bishop of Savona around 1585 has "0" at the beginning of all three-figure symbols as well as some of two-figure symbols, leaving ambiguity between "031" (Che) and "03" (Grisoni)+"1" ("e" or "Re di Francia, S. M<sup>ta</sup> Christ<sup>ma</sup>"). <!--(A polyphonic cipher with symbols having more than one meaning will be discussed in another article.)--></P>
+<P>Null "7" may be used as a delimiter. However, "7" is also used to represent "Papa, N. S<sup>re</sup>, S.S<sup>t&agrave;</sup>" (this is the sole instance that uses "7" other than the null).</P>
+
+<H3>Rodolfo Pio, Cardinal of Carpi and Antoine Perrenot de Granvelle (1548-1549)</H3>
+<P>Letters in cipher from Rodolfo Pio, cardinal of Carpi, to Antoine Perrenot de Granvelle, bishop of Arras and a trusted adviser for Emperor Charles V, written in 1548-1549 are reproduced in Bertomeu Masi&aacute; (2009) together with the reconstructed cipher and transcribed plaintext <span class="note">(p.70-72, p.163-164, p.162, p.295-296, p.312-313)</span>. By re-examining the letters in cipher, the present author considers that the cipher has no single figure symbol for null and instead has three-figure symbols with "0" in the middle: 102 (c); 205 (r); 306 (a); 308 (m); 506 (g); 603 (t); 704 (qu); 901 (g). For example, it would be more natural to parse the frequent sequence "60326" as "603(t)26(i)" than as "60(t)32(i)6(null)", since there are instances of "60" representing a null and "32" representing "z". It would not be practical to use "any single number" as a null.</P>
+<P>The following shows one passage as an example, in which three-figure symbols are highlighted.</P>
+<DIV class="kakomi2">
+....1392502515658750902646306515924712813113122619152890269012815654726<br>
+924590876526907620811915128169653016984792301312269717812854509087154592872619<br>
+15705228161598905287373085087603152837231570426819225506545509215304652658726<br>
+87152317123045162530288737463065174615769026161513125014262837904650653065501323<br>
+9252928765154652655028121592814547365065478192466547252646816032615908752282015<br>
+238745651430872690811926132312816550269245506537905265301926653025159237904725<br>
+1528462650283090309298603501630452669306552281570450768715193065479050283230....<br>
+<br>
+PLAINTEXT<br>
+.... Et le cortesi parole di Sua Mta et di Monsignor Illmo di Granvela et di V.S., che in questo ultimo hanno usato, mettono pero qui il cervello a partito perche, da un canto par[e] che possino et debbino sperare et, per l'altro, parendoli vedere il precipitio, stanno perturbatissimi, et, per dire il vero, sara miracolo se con piena salute navigaranno questo mare senza ....<br>
+<br>
+DUMP<br>
+.... 13(et) 92(l) 50(e) 25(c) 15(o) 65(r) 87(t) 50(e) 90(s) 26(i) 46(p) 30(a) 65(r) 15(o) 92(l) 47(e) 12(d) 81(i) 31(Sua Maesta) 13(et) 12(d) 26(i) 19(m) 15(o) 28(n) 90(s) 26(i) <b>901(g)</b> 28(n) 15(o) 65(r) 47(e) 26(i) <br>
+92(l) 45(u/v) 90(s) 87(t) 65(r) 26(i) 90(s) 76(s) 20(-) 81(i) 19(m) 15(o) 12(d) 81(i) 69(g) 65(r) 30(a) 16(n) 98(u/v) 47(e) 92(l) 30(a) 13(et) 12(d) 26(i) 97(V.S.) 17(che) 81(i) 28(n) 54(q/qu) 50(e) 90(s) 87(t) 15(o) 45(u/v) 92(l) 87(t) 26(i) 19(m) <br>
+15(o) 70(h) 52(a) 28(n) 16(n) 15(o) 98(u/v) 90(s) 52(a) 87(t) 37(o) <b>308(m)</b> 50(e) 87(t) <b>603(t)</b> 15(o) 28(n) 37(o) 23(per) 15(o) <b>704(qu)</b> 26(i) 81(i) 92(l) 25(c) 50(e) 65(r) 45(u/v) 50(e) 92(l) 15(o) 30(a) 46(p) 52(a) 65(r) 87(t) 26(i) <br>
+87(t) 15(o) 23(per) 17(che) 12(d) 30(a) 45(u/v) 16(n) 25(c) 30(a) 28(n) 87(t) 37(o) 46(p) 30(a) 65(r) 17(che) 46(p) 15(o) 76(s) 90(s) 26(i) 16(n) 15(o) 13(et) 12(d) 50(e) 14(b) 26(i) 28(n) 37(o) 90(s) 46(p) 50(e) 65(r) 30(a) 65(r) 50(e) 13(et) 23(per) <br>
+92(l) 52(a) 92(l) 87(t) 65(r) 15(o) 46(p) 52(a) 65(r) 50(e) 28(n) 12(d) 15(o) 92(l) 81(i) 45(u/v) 47(e) 36(d) 50(e) 65(r) 47(e) 81(i) 92(l) 46(p) 65(r) 47(e) 25(c) 26(i) 46(p) 81(i) <b>603(t)</b> 26(i) 15(o) 90(s) 87(t) 52(a) 28(n) 20(-) 15(o) <br>
+23(per) 87(t) 45(u/v) 65(r) 14(b) 30(a) 87(t) 26(i) 90(s) 81(i) 19(m) 26(i) 13(et) 23(per) 12(d) 81(i) 65(r) 50(e) 26(i) 92(l) 45(u/v) 50(e) 65(r) 37(o) 90(s) 52(a) 65(r) 30(a) 19(m) 26(i) 65(r) 30(a) 25(c) 15(o) 92(l) 37(o) 90(s) 47(e) 25(c) <br>
+15(o) 28(n) 46(p) 26(i) 50(e) 28(n) 30(a) 90(s) 30(a) 92(l) 98(u/v) <b>603(t)</b> 50(e) 16(n) 30(a) 45(u/v) 26(i) 69(g) 30(a) 65(r) 52(a) 28(n) 15(o) <b>704(qu)</b> 50(e) 76(s) 87(t) 15(o) 19(m) 30(a) 65(r) 47(e) 90(s) 50(e) 28(n) 32(i/z) 30(a) ....<br>
+</DIV>
+<P>Let us see what happens when one encounters three-figure symbols in this letter. For the first instance, one might first parse "901 28 15 65" (written continuously in the original) as "90(s) 12(d) 81(i) 56" and notice that 56 is not used in the cipher. An experienced clerk might be always alert for a possibility of three-figure symbols when "x0" occurs and first apply 901(g) and see it nicely follows the preceding letters "monsi-." Similarly for the other instances.</P>
+<P>Thus, while technically there occur ambiguities, an experienced decipherer would have enough clue by checking first to see if parsing as a three-figure symbol fits the context. When this does not work because, for example, the plaintext is an uncommon word, continuing with two figures will eventually result in a garbled sequence or a combination not used in the cipher, which urges reverting to the possibility of a three-figure symbol (or another possibility of an error in enciphering).</P>
+
+<H3>Nuncio Prospero Santacroce (1561-1565)</H3>
+<P>In a cipher <span class="note">(Meister p.238)</span> for Prospero Santacroce, nuncio in France, around 1561-1565, three-figure symbols had "0" in the middle. Since "0" used for a single letter "z" or "et" <!--(this is polyphonic, which will be discussed in another article) -->is dotted over it, ambiguity can be avoided.</P>
+
+<H3>Nuncios San Sisto, etc.</H3>
+<P>In a cipher <span class="note">(Meister p.270)</span> with San Sisto, three-figure symbols end in either "33" or "55", which give some clue for identifying these symbols. Still, 43 ("Re christianissimo") followed by 34 ("g"), for example, might be confused with 433 ("Risolution").</P>
+<P>Similarly, a cipher <span class="note">(Meister p.265)</span> between the nuncio of Spain and the nuncio of Flanders had three-figure symbols ending in "44", "22", "66", "88", "00", though still leaving room for ambiguity.</P>
+
+<H3>Bishop of Pola, Carlo Carafa (1556, 1557)</H3>
+<P>In a cipher <span class="note">(Meister p.194)</span> of Bishop of Pola with Cardinal Carlo Carafa (1556, 1557), the few three-figure symbols all end in "33". </P>
+<H3>Silvio Gozzi, Secretary of Giovanni Carafa</H3>
+<P>Similarly, in a cipher <span class="note">(Meister p.202)</span> of Silvio Gozzi, secretary of Giovanni Carafa, Duke of Paliano, three- or four-character symbols (including 122, ..., a22, ..., 2122, ..., 1a22, ...) all end in "22".</P>
+<P>A short example is given: 44(ci) 15(f) 16(r) 12(a) 24(de) 14(l) g22(cardinal) 42(ca) 53(ra) 89(fa).<br>
+
+<H3>Cardinal of Pisa (1555-1558)</H3><!--Cardinalになったのが１５５５でカール五世の退位前-->
+<P>In a cipher <span class="note">(Meister p.189)</span> with cardinal of Pisa, who was sent to the Emperor Charles V, the three-figure symbols end in "5" and four-figure symbols end in "55". But these endings must have been of little avail because some two-figure symbols also end in "5" (65 non, 85 si, 95 ar). The figure "5" also stands for null on its own.</P>
+
+<H2>Marking Three-Figure Symbols</H2>
+<P>A three-figure symbol may also be made distinguishable by some marks.</P>
+
+<H3>Hippolito Capilupo, Hercules Gonzaga</H3>
+<P>In a cipher <span class="note">(Meister p.206)</span> of Hippolito Capilupo (an agent of the Gonzagas <span class="note">(Bertomeu Masi&aacute; p.398)</span>) with cardinal Hercole di Mantova (Hercules Gonzaga), the first figure of three-figure symbols is marked with three dots.</P>
+
+<H2>Nulls as Delimiters</H2>
+<P>Many ciphers explicitly recommend use of nulls to mark figures representing proper names rather than single letters <span class="note">(Meister p.234, 239, 242, 259, 265)</span> or to delimit words <span class="note">(Meister p.279)</span>. Some others have specific figures reserved for null, making them unambiguous delimiters.</P>
+
+<H3>Alessandro Vitelli (1546)</H3>
+<P>One early cipher <span class="note">(Meister p.179)</span> from 1546 with Alessandro Vitelli <span class="note">(<A HREF="https://it.wikipedia.org/wiki/Alessandro_Vitelli">Wikipedia in Italian</A>)</span> reserves "6" for nulls.</P>
+<img src="meister179.jpg" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+<P>Fragmentary examples given suggest delimiting words with a null was already in practice: 07(l) 1(i) 08(m) 97(p) 6(-) (i.e., "l'Imperatore").</P>
+
+<H3>Cardinal Savello (1585)</H3>
+<P>A cipher <span class="note">(Meister p.300)</span> given to Cardinal Savello around 1585 is as follows.</P>
+<img src="meister300.jpg" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+
+<P>The following recapitulates the ciphertext given at the beginning of the present article together with its plaintext. (Corrections in brackets [ ] are based on the plaintext printed in Meister.)</P>
+<DIV class="kakomi2">
+353433837716919585191487369189739574901371911623017515504
+25043793755751713425741975571513910832762139348608346597719107
+12985276567435529837642173703536790858737711404631183097901457
+55085873425067795913679085551145773331854777859100406701714534
+93753555317175477025138506<br>
+<br>
+PLAINTEXT<br>
+Il Gran Turco si t[r]ova tanto debile de huomini da combatere, ch[e] [p]er mantenere [l]a guera con il persiano e for[z]ato valersi de puti per la magior parte, e non vi vogliono andare,<br>
+<br>
+DUMP<br>
+3(i) 53(l) 4(-) 33(g) 83(r) 7(a) 71(n) 6(-) 91(t) 95(u) 85(r) 19(c) 1(o) 4(-) 87(s) 3(i) 6(-) 91(t) 89(s) 73(o) 95(u) 7(a) 4(-) 90(t) 13(a) 71(n) 91(t) 1(o) 6(-) 23(d) 0(e) 17(b) 51(i) 55(l) 0(e) 4(-) <br>
+25(d) 0(e) 4(-) 37(h) 93(u) 75(o) 57(m) 51(i) 71(n) 3(i) 4(-) 25(d) 7(a) 4(-) 19(c) 75(o) 57(m) 15(b) 13(a) 91(t) 0(e) 83(r) 27(e) 6(-) 21(c) 39(h) 3(i) 4(-) 86() 0(e) 83(r) 4(-) 6(-) 59(m) 7(a) 71(n) 91(t) 0(e) 71(n)<br>
+29(e) 85(r) 27(e) 6(-) 56() 7(a) 4(-) 35(g) 5(u) 29(e) 83(r) 7(a) 6(-) 4(-) 21(c) 73(o) 70(n) 3(i) 53(l) 6(-) 79(p) 0(e) 85(r) 87(s) 3(i) 7(a) 71(n) 1(o) 4(-) 0(e) 4(-) 6(-) 31(f) 1(o) 83(r) 09(x) 7(a) 90(t) 1(o) 4(-) 5(u) 7(a) <br>
+55(l) 0(e) 85(r) 87(s) 3(i) 4(-) 25(d) 0(e) 6(-) 77(p) 95(u) 91(t) 3(i) 6(-) 79(p) 0(e) 85(r) 55(l) 11(a) 4(-) 57(m) 7(a) 33(g) 3(i) 1(o) 85(r) 4(-) 77(p) 7(a) 85(r) 91(t) 0(e) 0(e) 4(-) 0(e) 6(-) 70(n) 1(o) 71(n) 4(-) 53(l) 4(-) <br>
+93(u) 75(o) 35(g) 55(l) 3(i) 1(o) 71(n) 75(o) 4(-) 7(a) 70(n) 25(d) 13(a) 85(r) 0(e) 6(-) <br>
+</DIV>
+<P>Symbols of this cipher consists of one or two figures. Assuming a two-figure symbol at the beginning leads to a garble: 35(g) 3(i) 4(-). But use of nulls ("4" or "6", which are not used to represent letters) between words or word groups provides fresh starting points regularly, thus minimizing the confusion.</P>
+
+<H3>Duke of Gallese, Altemps (1585)</H3>
+<P>A cipher <span class="note">(Meister p.353)</span> of Duke of Gallese, Altemps <span class="note">(<A HREF="https://it.wikipedia.org/wiki/Altemps">Wikipedia</A>)</span>, a general in Avignon, (1585) has numbers up to 492 and might have caused trouble if the figures were written continuously.</P>
+<P>Although no ciphertext is given, as with the cases above, proper use of nulls ("1", "7", "17", "71") may minimize the confusion because "1" and "7" are not used in symbols other than nulls.</P>
+
+<H3>Marsilio Landriano (1591)</H3>
+<P>One cipher <span class="note">(Meister p.440)</span> for Marsilio Landriano, nuncio in France, (1591) has two- and three-figure symbols but figures "8", "9", "0" are reserved for nulls. Thus, frequent use of nulls is encouraged.</P>
+<!--Usare le nulle spesso quando una e quando l'altra in fine delle parole.≪Use the void often when one and when the other end of the words.≫
+-->
+<P>An example is: 045481391431254137179, which is parsed as 0(-) 454([il] Duca di Parma) 8(-) 13(e) 9(-) 14(u) 31(e) 25(n) 41(u) 37(t) 17(o) 9(-) ("Il duca di Parma &egrave; venuto").</P>
+
+<H3>Philippo [Filippo] Sega, Cardinal of Piacenza and others (1593)</H3>
+<P>My <A HREF="https://www.tandfonline.com/doi/abs/10.1080/01611194.2018.1503207?journalCode=ucry20">Cryptologia article</A> presents three variants of this system.</P>
+<P>The cipher used in a letter to Filippo Sega, Cardinal of Piacenza, dated 14 May 1593 (called "Ciphertext 1") employs the same system as above and reserves "3" and "8" as nulls. Three-digit symbols can be recognized by use of these nulls as delimiters.</P>
+<P>The cipher of Ciphertext 2 is easier because single-digit nulls are all marked ("dotted 0", "barred 2", and "barred 6").</P>
+<P>The cipher of Ciphertext 3 reserves "3", "5", and "7" as single-digit symbols except when "7" is used in "17" as a null. To add complications, "3", "5", and "7" are not nulls but vowel symbols.</P>
+
+<H2>Dot above the Preceding Figure</H2>
+<P>Some ciphers having many three-figure symbols require putting a dot over the figure preceding a three-figure symbol.</P>
+
+<H3>Bishop of Nazareth (1585)</H3>
+<P>The cipher <span class="note">(Meister p.345)</span> of Fabio Mirto Frangipani, Bishop of Nazareth and nuncio in France, defines code numbers up to 489. Although the cipher table simply lists bare numbers, the accompanying instruction dictates that when writing a proper name (or a syllable), a dot should be put above the preceding figure. Moreover, use of a null ("3"), which is not used otherwise, can be used to indicate the end of a two-figure symbol (see the example below). Such use of nulls at the end of words appears to be recommended in Rule 3 attached to this cipher.</P>
+
+<img src="meister345.jpg" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+<P>(It will be seen that single figures represents more than one letter. Such a polyphonic cipher is discussed in <A HREF="polyphonic.htm">another article</A>. It may be noteworthy that the instruction of this cipher recommends that when an "extravagant" proper name is enciphered letter by letter, a dot should be put under the second letter. Familiarity with the plaintext words was counted upon in deciphering such a polyphonic substitution cipher.)</P><P>Incidentally, there is "11&pound;" (con) apart from "114" (che, chi) in this cipher. (Here, &pound; is a not-very-close approximate symbol <span class="note">(Meister p.66-p.67 lists variants for figures.)</span>.)</P>
+<P>(In the following, the apostrophe (') indicates a dot over the preceding letter.)</P>
+
+<DIV class="kakomi2">
+198373486556378'213'1143'58'1813'271376973'2963'4143716397346823<br>
+75210262734877658576453'11４358'2993064239710767326713149266305'1<br>
+75'3280345376567'140<br>
+<br>
+PLAINTEXT<br>
+L'Imperatore a scritto al Papa che il Turco non arma per quest[o] ano, ma uole atendere a scapricciarsi con il Persiano dove mandara gran numero di gente. Onde si potra delibera[re] ....<br>
+<br>
+DUMP<br>
+<b>198(Imperat<sup>re</sup>)</b> 3(-) 7(a) 3(-) 4(s) 8(c) 6(r) 5(i) 5(t) 6(o) 3(-) 7(a) 8'(l) <b>21(Papa)</b> 3'(-) <b>114(che)</b> 3'(-) 5(i) 8'(l) <b>181(Gran Turco)</b> 3'(-) <b>271(non)</b> 3(-) 7(a) 6(r) 9(m) 7(a) 3'(-) <b>296(per)</b> 3'(-) <b>414(questi)</b> 3(-) 7(a) 1(n) 6(o) 3(-) 9(m) 7(a) 3(-) 4(u) 6(o) 8(l) 2(e) 3(-)<br>
+7(a) 5(t) 2(e) 1(n) 0(d) 2(e) 6(r) 2(e) 7(a) 3(-) 4(s) 8(c) 7(a) 7(p) 6(r) 5(i) 8(c) 5(i) 7(a) 6(r) 4(s) 5(i) 3'(-) <b>11&pound;(con)</b> 3(-) 5(i) 8'(l) <b>299(Persiano)</b> 3(-) 0(d) 6(o) 4(u) 2(e) 3(-) 9(m) 7(a) 1(n) 0(d) 7(a) 6(r) 7(a) 3(-) 2(g) 6(r) 7(a) 1(n) 3(-) 1(n) 4(u) 9(m) 2(e) 6(r) 6(o) 3(-) 0(d) 5'(i) <b>1-<br>
+75'(gente)</b> 3(-) <b>280(Onde)</b> 3(-) 4(s) 5(i) 3(-) 7(p) 6(o) 5(r) 6(t) 7'(a) <b>140(Deliberato)</b><br>
+</DIV>
+<!--
+<TABLE border="1">
+<TR><TD>ap</TD><TD>eg</TD><TD>it</TD><TD>or</TD><TD>us</TD><TD>bm</TD><TD>lc</TD><TD>nf</TD><TD>dxz</TD><TD>Nulla</TD></TR>
+<TR><TD>7</TD><TD>2</TD><TD>5</TD><TD>6</TD><TD>4</TD><TD>9</TD><TD>8</TD><TD>1</TD><TD>0</TD><TD>3</TD></TR>
+</TABLE>
+-->
+
+<H3>Nuncios (1585-1586)</H3>
+<P>As with the cipher of the Bishop of Nazareth above, this cipher for nuncios in varous countries also provides for putting a dot over the preceding figure when writing a proper name, though the three-figure symbols in this cipher <span class="note">(Meister p.341, p.282)</span> are limited to 101-122. </P>
+<!--Meister p.282 Cifra commune fra li nuntii di nostro signore in Spagna, Francia, Germania all'imperatore, Polonia, Venetia, Savoya et Avignone con mons. Grimaldi vicelagato-->
+
+<H3>Caesar Spaciani, Bishop of Novara (1585)</H3>
+<P>A cipher <span class="note">(Meister p.355)</span> with Caesar Spaciani, Bishop of Novara, (1585) includes three-figure code numbers up to 607. Some of the code numbers are given two meanings.</P>
+<P>Figures "2" and "8" are reserved for use in nulls "2", "8", "28", "82". Use of nulls at the end of a word is explicitly recommended.</P>
+<P>Again, when three-figure code numbers are used, a dot should be put on the preceding figure.</P>
+<DIV class="kakomi2">
+374513411961459433962336304551746846946536741495540255463
+93866156347444061684376961475146556772657819455332174639786634
+361724566047'10621547381141664933534952963744654866674745149376
+73664957634581741666<br>
+<br>
+PLAINTEXT<br>
+La cifra vole grande atentione ne
+lo scrivere altrimenti si fano de
+li erori asai percio bisogna che chi l'usa stia molto
+sopra di se.<br>
+<br>
+DUMP<br>
+37(l) 45(a) 13(c) 41(i) 19(f) 61(r) 45(a) 9(u) 43(o) 39(l) 6(e) 2(-) 33(g) 63(r) 04(a) 55(n) 17(d) 46(e) 8(-) 4(a) 69(t) 46(e) 53(n) 67(t) 41(i) 49(o) 55(n) 40(e) 2(-) 55(n) 46(e) 39(l) 3(o) 8(-) 66(s) 15(c) 63(r) 47(i) 44(u) 40(e) 61(r) 6(e) 8(-) 4(a) 37(l) 69(t) 61(r) 47(i) 51(m) 46(e) 55(n) 67(t) 7(i) 2(-) 65(s) 7(i) 8(-) 19(f) 4(a) 55(n) 3(o) 3(o) 2(-) 17(d) 46(e) 39(l) 7(i) 8(-) 6(e) 63(r) 43(o) 61(r) 7(i) 2(-) 45(a) 66(s) 04(a) 7'(i) <b>106(per)</b> 2(-) 15(c) 47(i) 3(o) 8(-) 11(b) 41(i) 66(s) 49(o) 33(g) 53(n) 4(a) 95(che) 2(-) 96(chi) 37(l) 44(u) 65(s) 4(a) 8(-) 66(s) 67(t) 47(i) 45(a) [5]1 49(o) 37(l) 67(t) 3(o) 66(s) 49(o) 57(p) 63(r) 45(a) 8(-) 17(d) 41(i) 66(s) 6(e)
+</DIV>
+<P>Use of nulls somewhat limits the confusion. Moreover, unused number combinations would alert a decipherer of wrong framing of figures. For example, "9(u) 43(o)" cannot be parsed as "94(?) 3(o)" because "94" is undefined in this cipher.</P>
+
+<H3>Cardinal Azzolino</H3>
+<P>A cipher <span class="note">(Meister p.276)</span> for Cardinal Azzolino, secretary of state under Sixtus V (1585-1590), has numbers up to 499 (and 600 and 601). The attached rule dictates putting a dot over the preceding figure when using a code number representing proper names. Moreover, figures "5" and "7" are reserved for nulls and can be used as delimiters.</P>
+<P>Single letters are generally assigned two two-figure symbols but vowels are assigned an additional single-figure symbol. (Confusingly, those single-figure symbols are also used to represent proper names. For example, "3" stands for "i" as well as "Sede apostolica".) The attached rules dictate using single-figure symbols only at the beginning or end of a word.</P>
+
+<H3>Philippo Sega (1577-1587)</H3>
+<P>A cipher <span class="note">(Meister p.279, p.358)</span> for Philippo Sega, nuncio to the Emperor (1586-1587), appears to be identical with that of Cardinal Azzolino above. (A note says rules for use were given to the nuncio, which must have been the same as above.)</P>
+<P>In an earlier cipher <span class="note">(Meister p.339)</span> (1577-1580 or 1583) for Philip Sega, except for two instances (822, 722), three-figure symbols are not used. Instead, two-figure symbols with a dot or other mark is used to expand the vocabulary beyond 100, avoiding the issue of variable length code numbers.</P>
+<!--
+p.361
+Io Filippo vescovo di Piacenza nuncio destinato alla Mta Cesea da N. Sre confesso havere ricevuta la retroscritta zifra dal sigr Giovan Battista Argenti secretario. In fede di che questo di 13. Gennuaro 1586. scrissi et sottoscrissi di mio pugno.
+-->
+
+<H2>Escape Symbols</H2>
+<H3>Nuncio Albani (1675)</H3>
+<P>The cipher used in a letter dated Rome, Jan. 12, 1675 of Albani, a papal nuncio in Brussels, consist of two-figure symbols for single letters and some three-figure symbols for words and names. This cipher appears to reserve two-figure numbers including 8 (81, 80, 08) to indicate the next symbol consists of three figures. (See <A HREF="coleman.htm">another article</A>.)</P>
+
+<H2>Miscellaneous</H2>
+
+<P>A cipher used between Louis Gonzaga，Duke of Nevers，<span class="note">(<A HREF="https://fr.wikipedia.org/wiki/Louis_IV_de_Gonzague-Nevers">Wikipedia</A>)</span> and Marquis of Vieuville <span class="note">(<A HREF="https://fr.wikipedia.org/wiki/Robert_de_La_Vieuville">Wikipedia</A>)</span> in August 1589 (See <A HREF="phelippes.htm">another article</A>) basically consists of two-digit figures but also uses a single digit "1" for "r" and "5" for "a". It appears no particular precaution against confusion is employed.</P>
+<img src="phelippes8.png" width="500" style="margin:1em 1em 1em; border-color: #ffa3b1; border-width: 5px; border-style: solid none solid;"><br>
+<DIV class="kakomi2">
+(An apostrophe (') indicates a dot over the following digit. Some characters substituting for non-alphabetic symbols may not be viewed properly on non-Shift-JIS systems. Some readings, esp. those marked "*" may not be accurate.)<br>
+'22(je) '35(ne) 70(p) 94(u) 63(i) 84(s) 24(e) 83(s) 70(p) 23(e) 1(r) 24(e) 1(r) '46(que) '25(la) '34(mort) 64(i) 73(n) 85(o) 70(p) 63(i) 74(n) 23(e) 24(e) 75(d) 94(u) 米(roy) 74(n) 25(a) 70(p) 70(p) 85(o) 1(r) 95(t) 24(e) 93(u) 73(n) 1(r) 24(e) 74(n) 30(g) 1(r) 24(e) 30(g) 24(e) 60(m) 23(e) 74(n) 95(t)<br>
+'16(de) 10(b) 1(r) 85(o) 94(u) 63(i) 50(l) 50(l) 24(e) 1(r) 63(i) 24(e) 84(s) '18(en) 65(c) 24(e) 84(s) 95(t) 23(e) 20(f) 1(r) 25(a) 74(n) 65(c) 24(e) '19(et)(et) 25(a) '99(nous) 33 62 10(b) 23(e) 25(a) 94(u) 65(c) 85(o) 94(u) 70(p) 75(d) 63(i) 74(n) 65(c) 24(e) 1(r) 95(t) 63(i) 95(t) 94(u) 75(d) 2[3](e)<br>
+'18(en) 50(l) 24(e) 83(s) 95(t) 25(a) 10(b) 50(l) 63(i) 83(s) 84(s) 24(e) 60(m) 24(e) 73(n) 95(t) '16(de) 94(u) 85(o) ♀(s) 25(a) '75(faire) 84(s) '19(et) '65(comme) '22(je) '31(me) '98(suis) 1(r) 24(e) 83(s) 85(o) 50(l) 93(u) 75(d) 24(e) 60(m) 24(e) 93(u) 1(r) 24(e) 1(r) 25(a) 95(t) 25(a) 65(c) 40(h) 23(e)<br> 
+25(a) 20(f) 85(o) 1(r) 95(t) 94(u) 73(n) 24(e) '12(bon) 74(n) 23(e) '40(ou) 60(m) 25(a) 93(u) 94(u) 25(a) 63(i) ♀(s) 24(e) '48 70(p) 50(l) 25(a) 63(i) 1(r) 25(a) 25(a) 75(d) 63(i) 24(e) 93(u) '99(nous) 24(e) 73(n) 93(u) 85(o) 90(y) 24(e) 1(r) '22(je) '74 ♀(s) 75(d) '24 84(s) 75(d) 63(i) <br>
+65(c) 85(o) 94(u) 1(r) 84(s) '42(pour) '99(nous) '46(que) '22(je) '35(ne) 70(p) 94(u) 63(i) 84(s) 60(m) 24(e) 73(n) 30(g) 25(a) 1(r) 75(d) 24(e) 1(r) '16(de) '99(nous) 23(e) 84(s) 65(c) 1(r) 24(e) 24(e) 74(n) 65(c) 85(o) 1(r) '46(que) 65(c) 94(u) 85(o) 84(s) 95(t) 1(r) 23(e) 83(s) 24(e) 1(r) 93(u) 64(i) 95(t) 24(e) 94(u) 1(r) '2 <br>
+75(d) 85(o) 64(i) 10(b) 94(u) 23(e) 25(a) 95(t) 24(e) 74(n) 75(d) 1(r) 24(e) 70(p) 25(a) 65(c) 63(i) 24(e) 60(m) 60(m) 23(e) 74(n) 95(t) '14(ce) '46(que) '99(nous) '31(me) '65(comme) 73(n) 75(d) 24(e) 1(r) 24(e) 84(s) '19(et) '35(ne) '99(nous) 75(d) 85(o) 73(n) 74(n) 24(e) 1(r) 25(a) 75(d) 94(u) 63(i) 84(s) '16(de) '14(ce) 46* <br>
+'99(nous) 20(f) 24(e) 1(r) 24(e) ♀(s) 60(m) 25(a) 63(i) 84(s) '22(je) '98(suis) '65(comme) 93(u) 74(n) '47(qui) 94(u) 23(e) 85(o) 63(i) 95(t) 64(i) 85(o) 94(u) 23(e) 1(r) 83(s) 85(o) 74(n) 25(a) 60(m) 90(y) '47(qui) '35(ne) '50(se) 70(p) 24(e) 93(u) 50(l) 95(t) 24(e) 60(m) 70(p) 24(e) 84(s) 65(c) 40(h) 24(e) 1(r) <br>
+70(p) 85(o) 94(u) 83(s) 84(s) 24(e) 1(r) '16(de) 50(l) 24(e) 83(s) 70(p) 25(a) 94(u) 50(l) 50(l) 24(e) '40(ou) '75(faire) 80(qu*) 24(e) 50(l) '46(que) 83(s) 64(i) 30(g) 74(n) 24(e) '42(pour) 1(r) 24(e) 75(d) 1(r) 23(e) 83(s) 84(s) 24(e) 1(r) '25(la) 10(b) 85(o) 94(u) 50(l) 50(l) 24(e) '52(si) '71(elle) 93(u) 2* <br>
+95(t) 1(r) 85(o) 70(p) 25(a) 30(g) 25(a) 94(u) 65(c) 40(h) 24(e) '40(ou) 25(a) 75(d) 1(r) 85(o) 63(i) 65(c) 95(t) '10(et) 70(p) 94(u) 63(i) 83(s) '31(me) 20(f) 25(a) 63(i) 84(s) 25(a) 73(n) 95(t) 65(c) 24(e) 84(s) 95(t) 40(h) 85(o) 73(n) 74(n) 24(e) 93(u) 1(r) '46(que) '16(de) 60(m) 25(a) 94(u) 85(o) 63* <br>
+60(m) 63(i) 84(s) '16(de) 94(u) 85(o) 84(s) 95(t) 1(r) 24(e) 70(ma)(p) 25(a) 1(r) 95(t) 63(i) 24(e) '22(je) '98(suis) 24(e) △(x) 65(c) 93(u) ♀(s) 25(a) 10(b) 50(l) 24(e) '52(si) '22(je) '99(nous) 64(i) 60(m) 70(p) 85(o) 1(r) 95(t) 94(u) 73(n) 24(e) '16(de) 60(m) 24(e) 84(s) 1(r) 24(e) 94(u) 23(e) 1(r) 63(i) 24(e) 84(s) <br>
+'42 '26(le) 75(d) 24(e) 83(s) 64(i) 1(r) '46(que) '23 '46(que) '99(nous) 63(i) 85(o) 94(u) 64(i) 24(e) ♀(s) '63 94(u) 85(o) 84(s) 95(t) 1(r) 24(e) 70(p) 24(e) 1(r) 83(s) 85(o) 73(n) 74(n) 25(a) 30(g) 24(e) '18(en) 93(u) 74(n) 24(e) '52(si) 83(s) 25(a) 73(n) 30(g) 50(l) 25(a) 73(n) 95(t) 24(e) <br>
+95(t) 1(r) 25(a) 30(g) 24(e) 75(d) 63(i) 24(e) '57(avec) 70(p) 19(r) 59(o) 52(t) 48(e) 49(s) 52(t) 5(a) 95(t) 63(i) 85(o) 74(n) '46(que) '14(ce) 73(n) 24(e) 83(s) 95(t) 74(n) 90(y) 25(a) 75(d) 93(u) 63(i) 84(s) 74(n) 90(y) 65(c) 85(o) 74(n) 84(s) 23(e) 64(i) 50(l) 60(m) 85(o) 64(i) 73(n) 30(g) d* <br>
+24(e) 73(n) 65(c) 85(o) 1(r) 25(a) 20(f) 20(f) 24(e) 65(c) 95(t) 63(i) 85(o) 74(n) 70(p) 25(a) 1(r) 95(t) 63(i) 65(c) 94(u) 50(l) 63(i) 24(e) 1(r) 24(e) '46(que) '23 24(e) 25(a) 50(l) 93(u) 74(n) '40(ou) 25(a) 50(l) 25(a) 94(u) 50(l) 95(t) 1(r) 24(e) 70(p) 25(a) 1(r) 95(t) 90(y) '99(nous) 23(e) 84(s) <br>
+25(a) 74(n) 95(t) 94(u) 73(n) 64(i) 65(c) '46(que) 70(p) 85(o) 83(s) 84(s) 24(e) 83(s) 84(s) 24(e) 94(u) 1(r) '16(de) '30(ma) 93(u) 85(o) 50(l) 85(o) 74(n) 95(t) 24(e) '23 1(r) 25(a) 94(u) 25(a) 83(s) 84(s) 24(e) 75(d) 85(o) 74(n) 65(c) '46(que) 75(d) 94(u) 73(n) 23(e) 60(m) 24(e) 83(s) '31(me) <br>
+60(m) 25(a) 63(i) ♀(s) 85(o) 74(n) '22(je) 65(c) 1(r) 85(o) 90(y) '46(que) '39(nous) 94(u) 23(e) 11(r) 85(o) 74(n) 84(s) 75(d) 24(e) 94(u) △(x) 18(f*) 59(o) 63(i) 84(s) 24(e) 84(s) 50(l) 24(e) 93(u) ♀(s) '18(en) '14(ce) 1(r) 85(o) 90(y) 25(a) 94(u) 60(m) 24(e) 50(l) 85(o) 74(n) 65(c) 50(l) 24(e) '19(et) <br>
+'26(le) 73(n) 24(e) 70(p) 93(u) 24(e) 94(u) 50(l) 94(u) 73(n) '64(catholique) '19(et) 50(l) 25(a) 94(u) 50(l) 95(t) 1(r) 24(e) '82 '26(le) '64(catholique) 70(p) 1(r) 63(i) 84(s) 85(o) 73(n) 74(n) 63(i) 24(e) 1(r) '19(et) '26(le) 82 '18(en) 70(p) 85(o) 83(s) 84(s) 24(e) 83(s) 84(s) 63(i) 85(o) 74(n) <br>
+75(d) 93(u) 73(n) 24(e) 95(t) 1(r) 24(e) 83(s) 30(g) 1(r) 25(a) 73(n) 75(d) 24(e) 59(o) '19(et) 75(d) 24(e) 84(s) 63(i) 25(a) '52(si) 25(a) 75(d) 94(u) 25(a) 74(n) 65(c) 24(e) '46(que) 83(s) 25(a) 63(i) 74(n) 65(c) 95(t) 75(d) 24(e) 74(n) 63(i) 84(s) '28(luy) '20(est) '25(la) 1(r) 85(o) 65(c) <br>
+40(h) 24(e) 50(l) 50(l) 24(e) 50(l) 93(u) 74(n) 95(t) 1(r) 24(e) 84(s) '12(bon) '69 24(e) △(x) 70(p) 24(e) 1(r) 63(i) 60(m) 24(e) 73(n) 95(t) 24(e) 25(a) 94(u) △(x) 60(m) 25(a) 94(u) △(x) '19(et) 24(e) 73(n) 75(d) 94(u) 16(r) 5(a) 90(y) '1'1(ville?) △(x) 95(t) 1(r) 25(a) 93(u) 24(e) 1(r) 84(s) 24(e) 84(s) <br>
+'19(et) 50(l) 25(a) 94(u) 50(l) 95(t) 1(r) 24(e) 94(u) 63(i) 24(e) 50(l) 65(c) 25(a) 75(d) 94(u) 65(c) '19(et) 50(l) 24(e) '46(que) 50(l) '35(ne) 93(u) 24(e) 11(r) 25(a) '18(en) 83(s) 85(o) 74(n) 1(r) 24(e) 30(g) 74(n) 23(e) '46(que) '41(par) '27(les) 50(l) 93(u) 74(n) 23(e) 95(t) 24(e) 84(s) '16(de) <br>
+60(m) 24(e) 83(s) 84(s) 63(i) 24(e) 94(u) 1(r) 84(s) '16(de) 30(g) 94(u) 63(i) ♀(s) 24(e) 50(l) 24(e) 84(s) 80(qu*) 24(e) 50(l) ♀(s) '50(se) 94(u) 85(o) 93(u) 50(l) 75(d) 1(r) 85(o) 73(n) 95(t) 25(a) 95(t) 1(r) 63(i) 10(b) 93(u) 24(e) 1(r) '25(la) 30(g) 50(l) 95[→ 85(o) ] 63(i) 1(r) 23(e) '16(de) '28(luy) <br>
+25(a) 94(u) 85(o) 63(i) 1(r) 60(m) 63(i) 84(s) '25(la) 65(c) 85(o) 93(u) 1(r) 85(o) 73(n) 74(n) 24(e) 84(s) 93(u) 1(r) '25(la) 95(t) 24(e) 84(s) 95(t) 24(e) '19(et) '41(par) 65(c) 24(e) 83(s) 95(t) 24(e) 25(a) 95(t) 1(r) 63(i) 10(b) 94(u) 95(t) 64(i) 85(o) 74(n) 50(l) 25(a) 94(u) 65(c) 95(t) 85(o) <br>
+1(r) 63(i) 95(t) 24(e) 95(t) 85(o) 94(u) 83(s) 75(d) 24(e) 94(u) △(x) 25(a) 1(r) 60(m) 24(e) 84(s) '16(de) 70(p) 1(r) 24(e) 95(t) 24(e) △(x) 95(t) 24(e) 84(s) 83(s) 70(p) 24(e) 65(c) 63(i) 24(e) 94(u) △(x) 50(l) 94(u) 73(n) 24(e) 60(m) 10(b) 1(r) 25(a) 83(s) 84(s) 25(a) 73(n) 95(t) <br>
+'42(pour) 84(s) 85(o) 74(n) 10(b) 85(o) 93(u) 65(c) 50(l) 63(i) 24(e) 1(r) 93(u) 73(n) 24(e) 75(d) 24(e) 20(f) 24(e) 74(n) 65(c) 24(e) '19(et) 20(f) 64(i) 73(n) 95(t) 24(e) '16(de) '25(la) 1(r) 24(e) 50(l) 63(i) 30(g) 64(i) 85(o) 74(n) '64(catholique) 50(l) 25(a) 94(u) 50(l) 95(t) 1(r) 24(e) '25(la) <br>
+1(r) 24(e) 65(c) 40(h) 24(e) 1(r) 65(c) 40(h) 24(e) '16(de) '25(la) 63(i) 94(u) 83(s) 95(t) 63(i) 65(c) 24(e) 75(d) 93(u) 83(s) 25(a) 74(n) 30(g) '16(de) 84(s) 85(o) 74(n) 米(roy) 64(i) 73(n) 63(i) 94(u) 83(s) 95(t) 23(e) 60(m) 24(e) 73(n) 95(t) 24(e) 84(s) 70(p) 24(e) 73(n) 75(d) <br>
+94(u) '19(et) '25(la) 60(m) 25(a) 73(n) 94(u) 95(t) 24(e) 74(n) 95(t) 63(i) 85(o) 74(n) '16(de) '25(la) 74(n) 85(o) 10(b) 50(l) 24(e) 83(s) 84(s) 24(e) '18(en) 83(s) 85(o) 74(n) 24(e) 73(n) 95(t) 63(i) 24(e) 1(r) '46(que) '27(les) '11(au) 93(u) 24(e) 94(u) 50(l) 50(l) 25(a) 73(n) 95(t) <br>
+95(t) 1(r) 25(a) 63(i) 65(c) 95(t) 24(e) 1(r) 25(a) '25(la) 20(f) 25(a) 83(s) 84(s) 85(o) 74(n) '16(de) 83(s) 94(u) 63(i) 83(s) 84(s) 24(e) 84(s) '19(et) 24(e) 73(n) 65(c) 85(o) 1(r) '57(avec) 70(p) 1(r) 85(o) 95(t) 24(e) 84(s) 95(t) 25(a) 95(t) 63(i) 85(o) 74(n) '16(de) 60(m) 25(a) 63(i) <br>
+74(n) 95(t) 24(e) 74(n) 64(i) 1(r) '25(la) 1(r) 24(e) 50(l) 63(i) 30(g) 64(i) 85(o) 74(n) '64(catholique) '16(de) 83(s) 85(o) 1(r) 95(t) 24(e) '46(que) '26(le) 70(p) 25(a) 1(r) 95(t) 90(y) 75(d) 94(u) 74(n) 24(e) 70(p) 93(u) 24(e) 94(u) 83(s) 24(e) 60(m) 10(b) 50(l) 24(e) '43 <br>
+65(c) 85(o) 74(n) 84(s) 63(i) 75(d) 23(e) 1(r) 25(a) 10(b) 50(l) 24(e) 60(m) 25(a) 63(i) 84(s) '25(la) 40(h) 93(u) 30(g) 94(u) 23(e) 74(n) 85(o) 95(t) 24(e) 1(r) 63(i) 24(e) '19(et) '26(le) 70(p) 24(e) 93(u) 75(d) 25(a) 60(m) 63(i) 95(t) 64(i) 24(e) '47(qui) '20(est) 
+23(e) 74(n) 95(t) 1(r) 24(e) '99(nous) '31(me) '26(le) '74 80(qu*) 25(a) ♀(s) 90(y) 1(r) 23(e) 63(i) 24(e) 65(c) 95(t) 24(e) 1(r) 75(d) 25(a) 94(u) 50(l) 95(t) 1(r) 24(e) '41(par) 95(t) '52(si) '99(nous) '99(nous) 75(d) 24(e) 65(c) 50(l) 25(a) 63(i) 1(r) 24(e) ♀(s) '16(de) 50(l) 25(a) 94(u) 50(l) 95(t) 1(r) 2[4](e) <br>
+70(p) 25(a) 1(r) 95(t) 90(y) '46(que) 83(s) 24(e) 1(r) 25(a) '14(ce) 25(a) 93(u) 50(l) 95(t) 1(r) 24(e) 65(c) 40(h) 85(o) 83(s) 24(e) '52(si) '58* '99(nous) 1(r) 24(e) 73(n) 75(d) 1(r) 24(e) 50(l) 24(e) △(x) 65(c) 50(l) 25(a) 94(u) 23(e) 75(d) 93(u) 73(n) 24(e) 60(m) 25(a) 63(i) ♀(s) 85(o) 74(n) <br>
+....
+</DIV>
+
+<H2>References</H2>
+<P>Mar&iacute;a Jos&eacute; Bertomeu Masi&aacute; (2009). <i>La guerra secreta de Carlos V contra el Papa: La cuestion de Parma y Piacenza en la correspondencia del cardenal Granvela</i></P>
+<P>Aloys Meister (1906), <i>Die Geheimschrift im Dienste der Papstlichen Kurie von ihren Anfangen bis zum Ende des XVI. Jahrhunderts</i> (<A HREF="https://archive.org/stream/diegeheimschrift00meis/diegeheimschrift00meis_djvu.txt">full text</A>)</P>
+<P>Further examples are given in <A HREF="polyphonic.htm">another article</A>.</P>
+
+<br>
+<br>
+<font size="2">
+&COPY;2017 S.Tomokiyo<br>
+First posted on 10 March 2017. Last modified on 3 January 2019.<br>
+<A HREF="crypto.htm">Articles on Historical Cryptography</A><BR>
+</font>
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>
