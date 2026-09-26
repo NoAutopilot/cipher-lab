@@ -6878,3 +6878,127 @@ Full per-row rationale, P(moves)/value/cost/pool fields and drop citations: `QUE
 
 Kind: scout (this section scores and ranks only; it does not promote to the board, run any test, or classify
 novelty, per rule 10 and this worker's brief).
+
+## RAH Salazar y Castro index, cipher mentions (LANE NX2, 26 Sept 2026)
+
+**Method.** Fetched once (`curl -A "cipher-lab research script (contact via repository)"`,
+30,940,299 bytes, matches the size SCOUT-OWN-4 recorded), then parsed and grepped entirely by
+script (CLAUDE.md Usage item 2), no subagents. Split the OCR into its own 77,750 catalogue entries
+on each `N2 <n> del inventario` boundary; every entry mentioning `cifra`/`cifr`/`desci` (the OCR
+never produces `cyfra`/`zifra`, 0 hits for both) was classified: **U** marked undeciphered by the
+RAH's own cataloguers ("sin descifrar", "no se hallan/encuentran/están descifrados", "cuyo texto
+descifrado no existe", decipherment leaves torn out); **D** a decipherment, translation, or period
+marginal/interlinear reading is on file for this entry (own text, or the immediately following
+catalogue entry opens "Texto descifrado..."/"Traducción del documento anterior..." — the Índice
+systematically files a period decipherment as its own following entry); **P** everything else
+(bare "en cifra" mention with no on-file status either way, or `cifra`/`descifrar` used
+non-cryptographically, e.g. an illegible signature or water-damaged leaf). Counts: **U 17, U+D 8**
+(25 read by hand, below — a few `U+D` rows are one U-marked entry whose text also happens to
+contain a same-sentence decipherment-shaped phrase; each was resolved by hand, see the sender/
+class columns), **D 1,425, P 846** (2 rows have a parsing artifact from an embedded OCR newline in
+one shelfmark field, harmless, noted in the working TSV's README).
+
+**Spot-check of 20 P entries (this session's regex before the final fix, to report the rate
+honestly): 12 of 20 were reclassified** — 11 P→D (a "Traducción del documento anterior" or "Texto
+descifrado" entry immediately follows, e.g. inv. 2403, 2826, 3356, 3970, 4645, 5334, 5900, 6095,
+6359, 16378) and 1 P→U (inv. 3090, decipherment leaves torn out of the volume — see below). One P
+(inv. 13423, "1609.08.29. (No se puede descifrar)") looked U on a naive grep but reads on the page
+as an illegible *signature*, not a cipher — a genuine non-cryptographic false positive, kept P.
+Six of the 20 stayed P for lack of any decipherment note in the read window (inv. 180, 3659, 4293,
+5114, 5693, 6550, 14207) — informational, not claimed as confirmed-undeciphered without a fuller
+read. This rate (>50%) says the Índice's cataloguers filed a period decipherment far more often
+than SCOUT-OWN-4's narrower four-phrase grep suggested; the 25 rows below are the entries that
+survive after that correction, not the 7-8 SCOUT-OWN-4 first found.
+
+**Known parsing artifact, worth a future worker's care**: a few entries carry a trailing
+"Observaciones:" note *after* their own `N2 ... del inventario` line and *before* the next dated
+entry — this script's boundary-splitting misattributes that note to the following entry. Two cases
+hand-corrected below (inv. 3090, 4249/5503's own torn-leaf notes). **"Apéndice B" is not a hidden
+decipherment appendix** — checked directly (`grep -n "^Apéndice B" `): its own header reads
+"Documentos sustraídos a la Colección, y que no han sido reseñados en el cuerpo del [catálogo]"
+(documents *stolen* from the collection) — a cross-reference to Apéndice B means the decipherment
+leaf was stolen, not that it is recoverable elsewhere in print.
+
+**S3 triage (Marino Caracciolo, Milan, 16 Jun 1526) resolved, not a U entry.** Its own catalogue
+entry (inv. 5541, A-37 ff.430-434) reads "Original en italiano, con algunos párrafos en cifra, que
+están descifrados entre líneas" (deciphered *between the lines*, in the period hand) — **D**, with
+its own companion transcription immediately following (inv. 5542, "Texto descifrado de los
+párrafos en cifra de la carta anterior"). SCOUT-OWN-4's own hedge ("this letter's own cipher status
+was not confirmed") is resolved: S3 is already deciphered in the original document, not a
+cryptanalysis candidate. It does, however, prove Ko.8 (Caracciolo's cipher) already has a period
+key on file in this same collection — relevant to row 14 below, a *different*, genuinely
+undeciphered Caracciolo letter found this session.
+
+**S5 triage (Gayangos crib) confirmed and dated exactly as SCOUT-OWN-4 had it**: inv. 15670 (A-103
+ff.22-23, 1648.04.20 Nápoles, Carlos Doria y Doria Carreto → Juan José de Austria) reads "en su
+mayor parte en cifra, descifrada al margen, en letra de la época y entre renglones, por Pascual de
+Gayangos, seguramente para sacar la cifra y descifrar otras cartas de estos volúmenes que no están
+descifradas" — **D**, a 19th-c. marginal/interlinear decipherment by Gayangos, explicit about its
+own crib intent for *other* letters in these same volumes. Rows 23-26 below (all A-97/A-101/A-107,
+Haro's incoming correspondence, 1655-1661) are exactly that wider pool Gayangos meant — none of
+them physically beside inv. 15670, so this is a same-office/same-decade crib, not a page-adjacent
+one, per S5's own framing.
+
+**Cross-reference**: `ciphers/rah-salazar-soria-sanchez-1524-28/` (opened this session by
+LANE NX2, `blocked` per its own NOTES.md — CSP Spain vol.3 is confirmed reachable for both
+correspondents but not yet checked page-by-page; **not** Bourdeau's or Aymeloglu's lane, confirmed
+by a fresh clone-grep) already holds rows 5, 6, 9, 20 below (its five original items plus the S2
+crib). Its own NOTES.md flags that Lope de Soria used **two** ciphers with the Emperor (Ko.6 "the
+main one" and a second, Ko.16, undescribed in `spanish2C.htm`) — "the on-file key still applies" is
+not guaranteed for any Lope de Soria row below without checking which cipher a given letter uses
+once an image exists.
+
+### Every U/U+D entry (25, read by hand)
+
+| # | Inv. | Date | Place | Shelfmark | Sender → Recipient | Index wording (quoted) | Key route | Note |
+|---|---|---|---|---|---|---|---|---|
+| 1 | 682 | 1478.12.03 | Nápoles | A-7, f.236 | Luis Despuig (Maestre de Montesa) → Reyes Católicos | "No existe el texto descifrado de esta carta." | none known — pre-dates Kolosova's 1521-27 corpus | different era, low priority |
+| 2 | 890 | Julio 24 (Reyes Católicos era) | Nápoles | A-9, f.126-127 | Galcerán de Requesens, conde de Palamós → Fernando e Isabel | "Original, cuyo texto descifrado no existe a continuación." | none known — same pre-1521 era | different era, low priority |
+| 3 | 3090 | 1522.05.14 | Venecia | A-24, f.65-67 | Alonso Sánchez → Charles V | own entry bare "en cifra"; trailing note (misfiled by OCR boundary onto inv. 3091) says decipherment leaves torn out, and two Fernando Marín/Nájera letters (Apéndice B nos. 124-125) also lost | **Ko.9** (Kolosova p.350-380; Tomokiyo `AlonsoSanchez.htm` on file) | held pool — see rah-salazar-soria-sanchez-1524-28 |
+| 4 | 4249 | 1524.04.14 | Roma | A-31, f.88-96 | Duke of Sessa (Luis Fernández) → Charles V (duplicate of 4248) | "...se nota arrancado el texto descifrado de estas cartas. Véase el Apéndice B, n2 16." | Ko.1 (Kolosova) | **check overlap with Bourdeau's `sessa1524`** (Signatura 9/28-9/34) before opening |
+| 5 | 4670 | 1524.12.17 | Venecia | A-33, f.72-74 | Alonso Sánchez → Charles V | "...no están descifrados a continuación." | **Ko.9** | **held** — rah-salazar-soria-sanchez-1524-28 item 4 |
+| 6 | 5180 | 1525.09.21 | Génova | A-35, f.310-312 (+1 dup.) | Lope de Soria → Charles V | "...que no están descifradas a continuación." | **Ko.6** (p.284/307) or Ko.16 — unresolved which | **held** — rah-salazar-soria-sanchez-1524-28 item 1 |
+| 7 | 5503 | 1526.05.29 | Roma | A-37, f.324-327 | Duke of Sessa → Charles V (duplicate of 5502) | "...arrancadas algunas hojas que debieron contener el texto descifrado..."; also cross-refs Apéndice B n.107 (= stolen, not recoverable) | Ko.1 | **check overlap with `sessa1524`** |
+| 8 | 5520+5521 | 1526.06.05 | Venecia | A-37, f.363-371 (orig+dup) | Alonso Sánchez → Charles V | "...por estar en cifra y no hallarse a continuación el texto descifrado, no se puede precisar cuáles serían [los asuntos]" — cataloguer could not even summarize the letter | **Ko.9** | new, not in ciphers/ or held pool |
+| 9 | 5538 | 1526.06.13 | Venecia | A-37, f.419-422 | Alonso Sánchez → Charles V | "...no se hallan descifrados." | **Ko.9** | new; adjacent D crib (inv. 5537) is for Lope de Soria, not this correspondent |
+| 10 | 5540 | 1526.06.16 | Génova | A-37, f.428-429 | Lope de Soria → Charles V | "...sin descifrar." | **Ko.6**/Ko.16 | **held** — item 2; adjacent Caracciolo D pair (5541/5542) resolves S3, see above |
+| 11 | 5543 | 1526.06.18 | Venecia | A-37, f.438-440 | Alonso Sánchez → Charles V | "...cuyo texto descifrado no existe a continuación." | **Ko.9** | new; "Publicada en parte por Rodríguez Villa, ob. cit. pp.133-134" — worth checking that print edition |
+| 12 | 5545 | 1526.06.19 | Venecia | A-37, f.444-447 | Alonso Sánchez → Charles V | "...cuyo texto descifrado no existe a continuación. Es traslado de otra embiada..." | **Ko.9** | new |
+| 13 | 6120 | 1527.07.20 | Venecia | A-41, f.27-28 | Alonso Sánchez → Charles V | "...que no se encuentran descifrados a continuación." | **Ko.9** | new |
+| 14 | **6122** | 1527.07.24 | Milán | A-41, f.33-37 | Marino Caracciolo → Charles V | "...con algunos párrafos en cifra que no se hallan descifrados a continuación." | **Ko.8** (p.338/348, Italian) | **new, strongest fresh candidate**: genuinely undeciphered (unlike S3/inv.5541, same correspondent, interlinear-deciphered elsewhere in this collection — direct proof the key family is provable) |
+| 15 | 6124 | 1527.07.27 | Venecia | A-41, f.41-43 | Alonso Sánchez → Charles V | "...cuyo texto descifrado no existe a continuación." | **Ko.9** | new; same-tomo D crib exists (inv. 6191, "Texto descifrado de las cartas 6188 y 6189", Alonso Sánchez, A-41) — not page-adjacent but same correspondent/legajo |
+| 16 | 6192 | Sin data (1527) | — | A-41, f.193-195 | Alonso Sánchez → **Martín de Ugarte** (not Charles V) | "Original, cuyo texto no se halla descifrado a continuación." | Ko.9, **unconfirmed for this addressee** — ciphers were often per correspondent-pair, not per-sender | new; flag uncertainty before assuming Ko.9 applies |
+| 17 | 6331 | 1528.01.19 | Venecia | A-42, f.70-71 | Alonso Sánchez → Charles V | "...que no se encuentran descifrados a continuación." | **Ko.9** | new; "Publicada, en parte, por Rodríguez Villa... página 362" |
+| 18 | 6364 | 1528.02.12 | Nápoles | A-42, f.143-148 | Hugo de Moncada → Charles V | "...con muchos párrafos en cifra que no se hallan descifrados." | **none confirmed** — Tomokiyo (`spanish2C.htm`, 8 June 2026 note) records a *different*, undeciphered Moncada cipher (BNE, 6 Oct 1524) that matches none of Ko.1-17; check whether this RAH item is the same key before assuming it is untestable | new; low priority without a key |
+| 19 | 6417 | 1528.04.14 | Mirandola | A-42, f.243-244 | Lope de Soria → Charles V | "...que están sin descifrar." | **Ko.6**/Ko.16 | **held** — item 3 |
+| 20 | 6502 | 1528.06.17 | Venecia | A-42, f.443 | Alonso Sánchez → **Mercurino de Gattinara** (chancellor, not the Emperor) | "...que no están descifradas a continuación." | Ko.9, **unconfirmed for this addressee** | **held** — item 5; direct D crib immediately adjacent (inv. 6501, "Texto descifrado de los párrafos en cifra de los tres documentos anteriores", same correspondent — this is S2, held) |
+| 21 | 13760 | 1618.08.07 | Nápoles | A-84, f.114 | Juan de Dávila → Diego Sarmiento de Acuña (Gondomar) | "...con frases en cifra que no están descifradas." | none known — Gondomar-era, different key family | = SCOUT-OWN-4's S4, single letter, low priority |
+| 22 | 15232 | 1656.07.02 | San Sebastián | A-97, f.143-144 | Baron de Vatteville → Luis Méndez de Haro | "...un párrafo en cifra que está sin descifrar." | none known directly; same office/decade as the Gayangos crib (row above, S5) | = S5a; small (1 paragraph) |
+| 23 | 15570 | 1655.10.23 | Roma | A-101, f.70-71 | Cardinal Giovanni Carlo de' Medici → Luis Méndez de Haro | "...con un párrafo en cifra que no se halla descifrado a continuación." | none known; entry itself notes Haro had just *sent* this cardinal a fresh cipher ("le agradece el envío de la cifra para su correspondencia") — likely a distinct, newly-issued key, not shared with Vatteville's | new; small (1 paragraph); same Haro network |
+| 24 | 15670 | 1648.04.20 | Nápoles | A-103, f.22-23 | Carlos Doria y Doria Carreto → Juan José de Austria | Gayangos's own marginal/interlinear decipherment (D, not U) — see S5 above | period, Gayangos (this same item) | = S5b, the crib itself, held |
+| 25 | 16231 | 1661.09.11 | Badajoz | A-107, f.193 | Juan José de Austria → Luis Méndez de Haro | "Original, en cifra. No se halla el texto descifrado a continuación." | none known — same addressee (Haro) as S5's crib but a different decade/front (Badajoz/Portugal war, 1661, vs Naples 1648); same-key assumption unconfirmed | new |
+
+### Ranking (published key exists > period decipherment beside it > pool size > single letter)
+
+1. **Row 14 (Caracciolo, inv. 6122)** — published key (Ko.8), and the *same correspondent's* cipher
+   is independently proven period-decipherable in this very collection (row 10's neighbour, inv.
+   5541/5542). Strongest single new candidate this session; not yet in any `ciphers/` folder.
+2. **Rows 5, 6, 19, 20 + the row-20 crib (inv. 6501/S2)** — the existing `held`,
+   `rah-salazar-soria-sanchez-1524-28` pool (`blocked` pending the CSP Spain page-by-page read
+   named in its own NOTES.md); rows 8, 9, 11, 12, 13, 15, 17 (all new Alonso Sánchez items, same
+   pool, same tomo run A-37/A-41/A-42) should be folded into that folder once it unblocks — six
+   more Ko.9 letters than SCOUT-OWN-4 first found, one (row 15) with its own same-legajo D crib.
+3. **Rows 3–4, 7** — Ko.9/Ko.1 pool items whose own period decipherment is on record as physically
+   lost (torn leaves, cross-referenced to the "stolen documents" Apéndice B) — a published key
+   could still recover them fresh from an image, but no crib survives; rows 4 and 7 need the
+   Sessa/`sessa1524` overlap check before opening.
+4. **Rows 22, 23, 25 (Haro incoming correspondence, 1655-1661)** — small (1 paragraph each), no
+   published key, but same office/decade as S5's own Gayangos crib (row 24) — worth a pool folder
+   if a period key for Haro's Naples-Madrid network turns up.
+5. **Rows 16, 18, 21** — single letters, unconfirmed or absent key routes; logged, not proposed.
+6. **Rows 1, 2** — different era (Catholic Monarchs, 1478), outside Kolosova's corpus; logged only.
+
+Kind: scout (this section indexes and classifies only; it does not promote to the board, run any
+test, apply any key, or classify novelty, per rule 10 and this worker's brief). Working TSV:
+`sources/salazar-castro-index/cipher_mentions.tsv` (2,297 classified rows, all cifra/desci
+mentions in the Índice, not only the 25 above); manifest and method: `sources/salazar-castro-index/README.md`.
