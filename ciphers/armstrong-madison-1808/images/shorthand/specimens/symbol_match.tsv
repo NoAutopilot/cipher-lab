@@ -59,3 +59,15 @@ Mavor1792	R9	yes	p	consistent	hook with descender matches Mavor's p (loop+tail);
 Mavor1792	R10	partial	ch (angle-bracket digraph)	inconsistent	no true zigzag exists in the plate (Mavor's z is a plain dash); closest angular shape is the ch chevron, whose true rate (<1%) is lower than observed 2.3%
 Mavor1792	R11	yes	n	inconsistent	shallow concave-up cup is exact shape match to Mavor's n, but n should read ~6-7% in English, not 1.8%
 Mavor1792	R12	partial	gj	consistent	large loop+descender resembles Mavor's combined gj glyph; 0.9% plausible for a rare/combined letter
+Macaulay1747	R1	partial	h	inconsistent	baseline dash is closest Macaulay shape, but 33.9% is impossible for any single letter
+Macaulay1747	R2	partial	p/u	inconsistent	loop+tail matches p("put")/u("upon") shape but observed 13.1% is ~5-7x their real freq
+Macaulay1747	R3	partial	b/r	inconsistent	open hook matches both b and r in Macaulay's own ambiguous table; 10.8% too high for either
+Macaulay1747	R4	partial	c/g	inconsistent	small left-opening hook resembles c/g shape but observed 5.4% is ~2x their real freq
+Macaulay1747	R5	yes	h/i,j	consistent	short baseline dash matches h/i,j closely; 5.0% plausible for either
+Macaulay1747	R6	partial	e	inconsistent	isolated dot matches e's glyph exactly, but 4.5% far below e's real ~12.7%
+Macaulay1747	R7	partial	n/w	consistent	diagonal slash matches n or w (Macaulay's own n/w pair is ambiguous); 3.6% closest to w's ~2.4%
+Macaulay1747	R8	no	-	n-a	no compound (two-loop+slash) glyph exists anywhere in this plate
+Macaulay1747	R9	partial	z	inconsistent	descender-tail hook loosely resembles z's glyph; 2.3% is ~30x z's real ~0.07%
+Macaulay1747	R10	partial	x	inconsistent	angular zigzag resembles x's glyph; 2.3% is ~15x x's real ~0.15%
+Macaulay1747	R11	yes	y	consistent	concave-up cup matches y's glyph; 1.8% close to y's real ~2.0%
+Macaulay1747	R12	partial	p	consistent	large loop+tail resembles p's glyph; 0.9% same low order of magnitude as p's real ~1.9%
