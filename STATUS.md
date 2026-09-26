@@ -137,7 +137,13 @@ Brief .claude/briefs/runs/2026-09-26-lane-ax-orchestrator.md; COMMON 2026-09-26-
   4614/5801/7205 companion decipherments via interlinear_align.py; AX-4612TR (Sonnet, session_01WQbFqLnWqcUDcty8kWX4Uy, box 75);
   AX-HMC2 (Sonnet, session_01SQos7GnZJKugHxc9kqdDme, box 45). After AX-MERGE: fresh-instance re-derivation of the 5797 spot
   reading, AUDIT.md/SO propagation of the 4610/4611/4616 revisions, then 'for LANE V7: reading ready'.
-- **Ledger:** 10 workers, 60.71 dollars (round 1 21.29, round 2 9.93, round 3 29.49).
+- **Round 4 so far (03:10 UTC).** AX-MERGE: key_full v2, 0 regressions, 5797 gaps with a value 2/6 (161 Landgraf, 153 Pfaltzgraf,
+  both H from the 5550 gloss); 192 is in 5549's body, not its postscript (orchestrator premise corrected). AX-HMC2: pro3055 parked at
+  5/12 text known -- the Haldimand-circle items' decipherments are cited in TNA PRO 30/55/11 (old numbering, not mappable) and BL Add
+  MS 21807; both need images a person orders. AX-REDERIV (Sonnet, session_01Xxh6zMHd5SLBu7kPk2ZGAU, box 50, from 03:10): fresh
+  rule-7 re-derivation, the 5550 gloss read over 153/161 from the leaf, AUDIT.md revision log + SO-LODEWIJK note. Still running:
+  AX-COMP (43 min, 4614 unit 1) and AX-4612TR (43 min). jan-van-nassau-1572-75 got an intake citation line (gate exits 0).
+- **Ledger:** 12 workers, 67.99 dollars (running workers not yet counted).
 - **For the parent:** nothing on the board yet from this lane.
 
 ## LANE ZX handoff (session_01MxueEQJUGF9PWJiYcVyvBM), 25 September 2026, 15:42-22:20 UTC (closed)
