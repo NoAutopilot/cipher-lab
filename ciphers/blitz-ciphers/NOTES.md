@@ -222,6 +222,27 @@ scienceblogs.de (the host named in the brief; URLs already on file in the alread
 images/manifest.json` (URL, size, sha1 per file); folder 1.5 MB, well under the 30 MB cap. Requests: 7 to
 scienceblogs.de (1 reachability probe + 6 fetches), >=2 s apart, descriptive UA, no 429/403/challenge.
 
+## Test 3a-de20 (26 Sept 2026, bBLZ6, LANE B6): homophonic case-as-information re-scored against German (de20)
+
+Intake gate re-run per brief: `python3 tools/intake_gate_check.py blitz-ciphers` -> `blitz-ciphers: open (line 3) --
+edition/page or full-text-search citation found within 6 lines`, exit 0.
+
+Re-ran bBLZ3's test3a (homophonic substitution, full 48-sign case-sensitive alphabet, N=581) against
+`specs/blitz-ciphers-de20.json` (German judge era-matched to de20, 1880-1940 prose) instead of test3a's English
+judge, using the identical cipher stream/tokenisation/`--param profile=target` bBLZ3 used, only the spec swapped:
+`python3 tools/family_run.py specs/blitz-ciphers-de20.json --family homophonic --cipher
+specs/cheap-tests/blitz-ciphers/ciphertext_letters_cs_spaced.txt --tokens space --seeds 3 --restarts 8 --param
+profile=target --corpus tools/data/de20 --label "LANE B6 bBLZ6 homophonic de K=48"`. `--dry-run` first confirmed
+N=581 K=48; the full seeded run took 32s (well under the 25-minute unit-loop estimate), so all 3 seeds ran.
+CONTROL (German de20, N=581, target's own K=48 profile), 3 seeds: mean recovery 0.925 (0.862-0.962), gate 0.6 met.
+TARGET best-restart decode judge: FAIL language: score=-1.404, null_p99=-2.048, real_p05=-0.82, real_median=-0.782,
+mode=both, N=581 -- clears the shuffled-null bar but fails the real-German bar, the same FAIL shape as test3a's
+English run and bBLZ4's de20-judge masc rerun (3b-corrected), not test3b's stronger below-null-p99 de16-mismatched
+rejection. Control-backed negative for homophonic case-as-information under German too, now register-matched.
+Per rule 5 as amended, `partial`/flagged for the orchestrator's NEAR.md, never closed-negative. Row in
+HYPOTHESES.md (26 Sept 2026 03:39 UTC); decode `families/homophonic-1-profile=target-de20.txt`; spec
+`specs/blitz-ciphers-de20.json` cheap_test_done entry "3a-de20". Requests: 0 (disk/CPU only). No subagents.
+
 **Rule 2 stop before transcribing per the brief's literal instructions.** The brief asked for "one blind pass per
 page ... same case and punctuation conventions as the two pages on file" (mixed-case Latin letters plus ASCII
 punctuation `. ~ * & % @ ; : -`, per Pelling's own transcription quoted in the spec). Viewing all six images shows
