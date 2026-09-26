@@ -487,7 +487,8 @@ Every brief states a cap in dollars of usage (the session metadata's cost figure
    `near` target must never read `closed-negative`, the two registers must agree, and a row stale past 48 hours is flagged),
    `tools/desk_check.py` (26 Sept 2026, the bodleian-rawl-a24-p4.md incident: an outreach/*.md draft at `ready`/`drafted`
    left telling the owner to do something a runner already did -- run at every parent check-in, `.claude/briefs/parent.md`
-   duty 6, and after landing any runner row).
+   duty 6, and after landing any runner row), `tools/system_map_check.py` (26 Sept 2026, SYSTEM-MAP: every tool, runner
+   prompt, root queue, register and 8a gate must be named in SYSTEM.md, the current-state map, in the same commit that adds it).
 8. **Shared scripts before new ones (24 Sept 2026).** Each has `--help` and an offline test in `tools/tests/`; a
    target that needs something they lack gets an option added to the tool, not a private copy.
    `tools/gallica_folio.py ARK --folio 35` reads the manifest's canvas labels once, gives the canvas and native image
