@@ -769,3 +769,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T07:27Z	session_011LGV2dxSLTnpHb7CwrzoqB	ARM-REC2 (Sonnet, cap 5)	Founders via Wayback step 1	brief 2026-09-26-lane-arm-rec2.md; LANE ARM
 2026-09-26T07:31Z	session_01XPmVzcgLWv8ShuEU1vM7Nm	LANE B8 bMALDUP (Sonnet, cap 6)	malsburg-hessen-1636 507/508 duplicate test, first 10 cipher lines of ff.28/30	brief 2026-09-26-lane-b8-maldup.md
 2026-09-26T07:31Z	session_01Q4gkNUdbG5zwr1wBUeowh2	LANE B8 bMAT1G (Opus, cap 6)	matignon-mayenne-1586 NEAR 1g pass B + fresh-seed control	brief 2026-09-26-lane-b8-mat1g.md
+2026-09-26T07:32Z	session_01YRuw3TCf7d1w85DLmYNnw4	LANE V8 orchestrator	done 7.70 (get_session; ledger row edited from 6.91), retitled ARCHIVED, archived by 7f	handoff STATUS.md LANE V8 handoff; V9 opens 07:33
