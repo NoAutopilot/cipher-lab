@@ -30,8 +30,23 @@ params: codes (marked), vocab (1000), err (0.064), iters (40000), order (3), uni
 names (8), namepen (-6.0), codeletters (0: a code-capable type decodes only to a word or <NAME>; 1 lets it be a letter).
 Calibration on the 0%-error control, seed 1, one restart, 20k iters (bSALW, 26 Sept 2026): the KL letter term taken
 over code-word letters as well read 0.00-0.20; over letter types only at uni_weight 0.5 it read 0.72, at 1.0 0.20;
-codeletters=1 read 0.00-0.44 (letter/word swaps stall the anneal). The defaults are those settings. Test: python3 tools/tests/test_wordcode.py"""
-import math, random, re
+codeletters=1 read 0.00-0.44 (letter/word swaps stall the anneal). The defaults are those settings. Test: python3 tools/tests/test_wordcode.py
+
+Context option (SALV-CTX, LANE SALV, 26 Sept 2026): --param context=<path> gives, per spec ciphertext run (same order as
+the spec's lines), the plain word immediately before and after it -- a TSV `run_index<TAB>prev_word<TAB>next_word`, blank
+where the run touches a line edge or the leaf is untranscribed ('#' lines and a non-numeric header ignored). With it:
+(a) each run's scored stream is padded with the last order-1 letters of the folded prev word on the left and the first
+order-1 of the next word on the right, around the run's own boundary letters, so the spaced trigram model scores the word
+edge across the run boundary; the padding is fixed text and its own internal trigrams are not scored; (b) a code word at
+a run edge adds ctxw * log P(word | prev) or ctxw * log P(next | word) from an add-k (ctxk, default 0.1) word-bigram
+model built from the solver's training corpora (for the control: the corpus with the control window removed); a <NAME>
+at the edge scores as an unseen bigram. params ctxw (1.0), ctxk (0.1). In a control, context=<anything> (e.g.
+context=control) makes make_control emit the control's own context -- it knows the whole words it withheld between runs
+-- blanked on the LAST (1 - ctxshare) share of runs (param ctxshare, default 1.0; contiguous, as a target transcribed
+leaf by leaf lacks it); the solver uses that context for the control messages and the file for the target. Without
+`context` every default and every bSALW row is unchanged. score_recovery also splits the code class into hapax
+(the truth word occurs once as a code token in the control) and repeated types."""
+import math, os, random, re
 from collections import Counter
 import homophonic_anneal as ha
 from families import draw_window
@@ -60,6 +75,20 @@ def code_capable(types_freq, spec_str):
     if s.startswith("topk:"):
         return {t for t, _ in types_freq[:int(s[5:])]}
     return {t for t, _ in types_freq if split_tok(t)[1]}
+
+
+def read_context(path):
+    """{run_index: (prev, next)} from a context TSV; words folded like the corpus (empty string when blank)."""
+    out = {}
+    for line in open(path, encoding="utf-8"):
+        if not line.strip() or line.startswith("#"):
+            continue
+        f = line.rstrip("\n").split("\t")
+        if not f[0].strip().isdigit():
+            continue
+        w = lambda k: (words_of(f[k]) or [""])[-1 if k == 1 else 0] if len(f) > k else ""
+        out[int(f[0])] = (w(1), w(2))
+    return out
 
 
 def _gaps(spec):
@@ -101,9 +130,11 @@ def make_control(spec, seed, corpora, params):
         wrng.shuffle(pool)
         for _ in range(3):
             toks, runs, i, gi, n, li = [], [], 0, 0, 0, 0
+            edges = []
             while n < N:
                 L = lengths[li % len(lengths)]; li += 1
                 cur = []
+                i0 = i
                 while i < len(ww):
                     w = ww[i]
                     tw = [w] if w in vocab else list(w)
@@ -113,6 +144,7 @@ def make_control(spec, seed, corpora, params):
                     if len(cur) >= L:
                         break
                 toks += cur; runs.append(len(cur)); n += len(cur)
+                edges.append((i0 - 1, i))  # the withheld plain word just before the run, and just after it
                 i += gaps[gi % len(gaps)]; gi += 1
                 if i >= len(ww):
                     raise SystemExit("wordcode: control word window too short for the target's runs")
@@ -123,6 +155,7 @@ def make_control(spec, seed, corpora, params):
             used = set(ww[:i])
             add = [w for w in pool if w in used and w not in vocab][:short]
             vocab |= set(add)
+        lay.edges = edges
         return toks[:N], runs, vocab
 
     lo, hi = 0, min(len(freq_rank), n_codes)
@@ -174,7 +207,35 @@ def make_control(spec, seed, corpora, params):
         cur.append(s_)
     if cur:
         msgs.append(cur)
+    ctx = None
+    if params.get("context"):
+        # the control's own context: per message, the withheld word before its first run and after its last one
+        # (blank when the message's first/last surviving token is not at a run edge, or the run is at a window edge)
+        share = float(params.get("ctxshare", 1.0))
+        ends, acc = {}, 0
+        for q, L in enumerate(runs):
+            ends[acc + L - 1] = q; acc += L
+        rstart = {v: q for q, v in enumerate(sorted(starts))}
+        edges = lay.edges
+        wordat = lambda k: ww[k] if 0 <= k < len(ww) else ""
+        ctx, pos = {}, 0
+        keep_n = int(round(share * len(msgs)))
+        for m_i, m in enumerate(msgs):
+            js = [j for j in tix[pos:pos + len(m)] if j is not None]
+            pos += len(m)
+            if m_i >= keep_n or not js:
+                ctx[m_i] = ("", ""); continue
+            q0, q1 = rstart.get(js[0]), ends.get(js[-1])
+            prev = wordat(edges[q0][0]) if q0 is not None and q0 < len(edges) and q0 > 0 else ""
+            nxt = wordat(edges[q1][1]) if q1 is not None and q1 < len(edges) else ""
+            ctx[m_i] = (prev, nxt)
     _STASH.clear()
+    if ctx is not None:
+        _STASH["control_context"] = ctx
+        _STASH["control_msgs_id"] = id(msgs)
+        _STASH["ctx_share_on"] = round(sum(1 for v in ctx.values() if v[0] or v[1]) / max(1, len(ctx)), 3)
+    cwf = Counter(t for t, c in zip(toks, is_code) if c)
+    _STASH["truth_hapax"] = [c and cwf[t] == 1 for t, c in zip(toks, is_code)]
     _STASH.update({"truth_tokens": toks, "truth_code": is_code, "truth_index": tix, "err": err, "vocab_k": len(vocab), "common_a": a,
                    "code_share": round(sum(is_code) / len(toks), 3), "target_code_share": round(code_share, 3),
                    "code_types": len(cw), "extra_code_names": extra, "control_types": len(set(seq)), **counts})
@@ -192,10 +253,23 @@ class Scorer:
         self.words = [w for w, _ in wc.most_common(vocab_n)]
         self.wlog = {w: math.log(wc[w] / tot * vocab_n) for w in self.words}
         self.wweights = [wc[w] for w in self.words]
+        self.uc, self.V, self.bg = wc, len(wc), None
 
-    def ngrams(self, s):
+    def bigrams(self, corpora, k):
+        """add-k word-bigram log P(b | a) from the same training corpora (built only when context is on)."""
+        self.bg, self.k = Counter(), k
+        for t in corpora:
+            ws = words_of(t)
+            self.bg.update(zip(ws, ws[1:]))
+
+    def lbg(self, a, b):
+        return math.log((self.bg.get((a, b), 0) + self.k) / (self.uc.get(a, 0) + self.k * self.V))
+
+    def ngrams(self, s, lo=0, hi=None):
+        """Sum over the trigrams of s that overlap s[lo:hi] (the run itself; lo/hi exclude fixed context padding)."""
         o, lu, ls = self.o, self.mu.logp, self.ms.logp
-        return sum((ls if "w" in s[i:i + o] else lu)(s[i:i + o]) for i in range(len(s) - o + 1))
+        hi = len(s) if hi is None else hi
+        return sum((ls if "w" in s[i:i + o] else lu)(s[i:i + o]) for i in range(max(0, lo - o + 1), min(len(s), hi + o - 1) - o + 1))
 
 
 def _run_string(run, key):
@@ -221,6 +295,20 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
     codeletters = str(params.get("codeletters", "0")) not in ("0", "no", "false")
     sc = Scorer(corpora, order, _p(params, "vocab", 1000))
     runs = [list(m) for m in cipher_msgs]
+    ctxw = _p(params, "ctxw", 1.0)
+    ctx = {}
+    if params.get("context"):
+        if _STASH.get("control_msgs_id") == id(cipher_msgs):
+            ctx = _STASH.get("control_context") or {}
+        elif os.path.exists(str(params["context"])):
+            ctx = read_context(params["context"])
+        else:
+            raise SystemExit(f"wordcode: context file {params['context']!r} not found (a control makes its own)")
+        sc.bigrams(corpora, _p(params, "ctxk", 0.1))
+    pads = []
+    for i in range(len(runs)):
+        pv, nx = ctx.get(i, ("", ""))
+        pads.append((pv[-(order - 1):] if pv else "", nx[:order - 1] if nx else "", pv, nx))
     tf = Counter(t for r in runs for t in r)
     types = sorted(tf)
     ttoks = [t for m in params.get("target_msgs") or [] for t in m]
@@ -236,13 +324,23 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
 
     def run_score(i, key):
         s = _run_string(runs[i], key)
-        v = sc.ngrams(s)
+        lp, rp, pv, nx = pads[i]
+        if lp or rp:
+            v = sc.ngrams(lp + s + rp, len(lp), len(lp) + len(s))
+        else:
+            v = sc.ngrams(s)
         for t in runs[i]:
             x = key[t]
             if x == NAME:
                 v += namepen
             elif len(x) > 1:
                 v += wprior * sc.wlog[x]
+        if pv or nx:
+            x0, x1 = key[runs[i][0]], key[runs[i][-1]]
+            if pv and len(x0) > 1:
+                v += ctxw * sc.lbg(pv, x0)
+            if nx and len(x1) > 1:
+                v += ctxw * sc.lbg(x1, nx)
         return v
 
     def letter_counts(key):
@@ -340,9 +438,11 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
     nsym = sum(len(r) for r in runs)
     ncode = sum(1 for x in dec_tokens if len(x) > 1)
     info = {"restart_scores": [round(x[0], 1) for x in results], "score_per_token": round(best / max(1, nsym), 4),
+            "context_runs": sum(1 for p in pads if p[2] or p[3]),
             "code_tokens_decoded": ncode, "name_types": sum(1 for v in key.values() if v == NAME),
             "code_words": Counter(x for x in dec_tokens if len(x) > 1 and x != NAME).most_common(25),
-            **{k: v for k, v in _STASH.items() if k not in ("truth_tokens", "truth_index", "truth_code", "dec_tokens", "dec_lines", "solver_vocab")}}
+            **{k: v for k, v in _STASH.items() if k not in ("truth_tokens", "truth_index", "truth_code", "dec_tokens", "dec_lines", "solver_vocab",
+                                                 "truth_hapax", "control_context", "control_msgs_id")}}
     dec = "".join(x for x in dec_tokens if x != NAME)
     return dec, best, info
 
@@ -360,11 +460,17 @@ def score_recovery(plain, truth):
     nl = sum(1 for c in tc if not c); nc = sum(tc)
     al = sum(1 for o, c in zip(ok, tc) if o and not c) / max(1, nl)
     ac = sum(1 for o, c in zip(ok, tc) if o and c) / max(1, nc)
+    th = _STASH.get("truth_hapax") or [False] * len(tt)
+    nh = sum(th); nr = nc - nh
+    ah = sum(1 for o, h in zip(ok, th) if o and h) / max(1, nh)
+    ar = sum(1 for o, c, h in zip(ok, tc, th) if o and c and not h) / max(1, nr)
     voc = _STASH.get("solver_vocab") or {}
     reach = sum(1 for t, c in zip(tt, tc) if c and t in voc) / max(1, nc)  # code tokens the word list can read at all
     _STASH["per_class"] = {"letters": round(al, 3), "codes": round(ac, 3), "n_letters": nl, "n_codes": nc,
-                           "codes_in_wordlist": round(reach, 3)}
-    print(f"  per class: letters {al:.3f} (n={nl}) codes {ac:.3f} (n={nc}, {reach:.3f} in the word list); vocab k={_STASH.get('vocab_k')} "
+                           "codes_in_wordlist": round(reach, 3), "codes_hapax": round(ah, 3), "n_hapax": nh,
+                           "codes_repeated": round(ar, 3), "n_repeated": nr}
+    print(f"  per class: letters {al:.3f} (n={nl}) codes {ac:.3f} (n={nc}, {reach:.3f} in the word list; hapax {ah:.3f} n={nh}, "
+          f"repeated {ar:.3f} n={nr}); context share {_STASH.get('ctx_share_on', '-')}; vocab k={_STASH.get('vocab_k')} "
           f"code share {_STASH.get('code_share')} (target {_STASH.get('target_code_share')}), code types "
           f"{_STASH.get('code_types')}, control K {_STASH.get('control_types')}")
     return sum(ok) / len(tt)

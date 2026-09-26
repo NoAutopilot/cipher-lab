@@ -6,7 +6,11 @@
 (2) err=0.064 gives a truth_index aligning surviving tokens with their clean origin (None only for insertions);
 (3) at err=0 the solver reads the clean N~800 control above 0.35 token accuracy (chance about 0.05) (2 restarts x 30k iters), per-class numbers
     land in the stash, and split_decode gives one line per run;
-(4) the family is registered in family_run.py (dry run on a temp spec).
+(4) the family is registered in family_run.py (dry run on a temp spec);
+(5) context option (SALV-CTX, 26 Sept 2026): read_context parses a TSV (header, blanks, '#' lines), the padded trigram
+    sum scores exactly the run's own trigrams plus the 2*(order-1) that cross into the padding, a control with
+    context=control carries context on its runs (ctxshare=0.5 blanks the last half), and on the zero-error toy control
+    the true key's recovery with context (2 x 30k, same seed) is at least the no-context recovery.
 Run: python3 tools/tests/test_wordcode.py   (under two minutes)"""
 import json, os, random, subprocess, sys, tempfile, time
 
@@ -71,6 +75,36 @@ def main():
                             "--dry-run", "--tokens", "space"], capture_output=True, text=True)
         assert r.returncode == 0 and "wordcode" in r.stdout, r.stdout + r.stderr
     print("(4) registered in family_run.py: ok")
+    with tempfile.TemporaryDirectory() as d:
+        cp = os.path.join(d, "ctx.tsv")
+        open(cp, "w").write("run_index\tprev_word\tnext_word\n# note\n0\tSignoria\tche\n1\t\tVostra\n2\t\t\n")
+        cx = wc.read_context(cp)
+        assert cx == {0: ("signoria", "che"), 1: ("", "uostra"), 2: ("", "")}, cx
+    scr = wc.Scorer(corpora, 3, 200)
+    core = "wdelwpapaw"
+    base = scr.ngrams(core)
+    assert abs(scr.ngrams(core, 0, len(core)) - base) < 1e-9
+    padded = scr.ngrams("ra" + core + "ch", 2, 2 + len(core))
+    extra = sum((scr.ms.logp if "w" in g else scr.mu.logp)(g) for g in ("raw", "awd", "awc", "wch"))
+    assert abs(padded - base - extra) < 1e-6, (padded, base, extra)
+    pc = dict(params, context="control")
+    cm, plain, train = wc.make_control(spec, 1, corpora, dict(pc))
+    cc = wc._STASH["control_context"]
+    on = sum(1 for v in cc.values() if v[0] or v[1])
+    assert len(cc) == len(cm) and on >= 0.8 * len(cm), (on, len(cm))
+    dec, _, info = wc.solve(cm, spec, 1, 2, train, dict(pc))
+    rec_c = wc.score_recovery(dec, plain)
+    assert info["context_runs"] == on
+    cm0, plain0, train0 = wc.make_control(spec, 1, corpora, dict(params))
+    dec0, _, _ = wc.solve(cm0, spec, 1, 2, train0, dict(params))
+    rec_0 = wc.score_recovery(dec0, plain0)
+    assert rec_c >= rec_0 - 1e-9, (rec_c, rec_0)
+    wc.make_control(spec, 1, corpora, dict(pc, ctxshare=0.5))
+    cc5 = wc._STASH["control_context"]
+    half = [k for k, v in cc5.items() if v[0] or v[1]]
+    assert half and max(half) < round(0.5 * len(cc5)), (max(half), len(cc5))
+    print(f"(5) context: parse, padding, control context {on}/{len(cm)} runs, ctxshare 0.5 -> {len(half)}; "
+          f"toy recovery with context {rec_c:.3f} >= without {rec_0:.3f}: ok")
     print(f"all ok in {time.time() - t0:.0f}s")
 
 

@@ -55,6 +55,14 @@ LANG_CORPORA = {
     "it": [DATA / "it16" / "alcuneletteredip00ferr.txt", DATA / "it16" / "delleletterefam02seghgoog.txt",
            DATA / "it16" / "lettereinedited00tassgoog.txt", DATA / "it16" / "lettereinedited01cibrgoog.txt",
            DATA / "it16" / "lettereineditedi01carouoft.txt", DATA / "it16" / "letterescrittea01vanzgoog.txt"],
+    # it16dip (26 Sept 2026, LANE SALV SALV-CTX): 16th-c. Italian DIPLOMATIC letters nearer Toledo 1525 than "it"'s
+    # later familiar letters -- Castiglione's Lettere (Serassi 1769-71, incl. the Negozi of his 1525-29 nunciature at
+    # Charles V's court), Desjardins/Canestrini tome II's Italian despatches (1510s-1530s), Lettere di principi I-III
+    # (1564); long-s OCR repaired, letter paragraphs only. Leave-one-file-out false-negative spread at N=2500 beside
+    # "it"'s in tools/data/it16dip/README.md -- read it before trusting a FAIL/PASS. "it" stays the default.
+    "it16dip": [DATA / "it16dip" / f for f in ("bub_gb_laRnTtJmsDAC.txt.gz", "bub_gb_ZJMxff7r4LUC.txt.gz",
+                "gri_33125010469852.txt.gz", "letterediprincip01char.txt.gz", "letterediprincip02char.txt.gz",
+                "letterediprincip03char.txt.gz")],
     "pt": [DATA / "pt17" / "vieira_cartas_tomoIV_1855.txt.gz", DATA / "pt17" / "vieira_cartas_1912.txt.gz"],
     "pt18": [DATA / "pt18" / "correiobrazilie00unkngoog.txt.gz", DATA / "pt18" / "correiobrazilie02unkngoog.txt.gz",
              DATA / "pt18" / "oinvestigadorpo03unkngoog.txt.gz", DATA / "pt18" / "oinvestigadorpo05unkngoog.txt.gz"],
