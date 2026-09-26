@@ -1,0 +1,21 @@
+label	value	confidence	segments	note
+X01	i	M	f79.4	"n X10 X01 l e r" = en liberte
+X02	a	H	f78.6	"X09 X10 X02 c U14" = places
+X03	g	M	f79.5;f78.7	rouergue; assiege
+X04	s	L	f78.2	"...e X04 X19 l" = places quils (single occurrence)
+X05	p	H	f79.1;f78.6;f79.6	plus; proches; pour
+X06	o	H	f78.3;f78.5;f78.6;f78.4	caumont; lon; dont; consumera
+X07	d	H	f78.1;f78.2;f78.4	de sorte; de quatre; deux mois
+X08	b	M	f78.5;f79.6	ou bien (f78.5); alt v in "que X08 c u s" = que vous (f79.6)
+X09	p	H	f78.6;f78.11	places; que puis
+X10	l	H	f78.3;f78.4;f78.5	castel(jaloux); cela; lon
+X11	a	H	f79.2;f79.4	auant; lautomne; pourai
+X12	b	M	f78.3	bazeille (single)
+X13	a	H	f79.4;f79.7;f78.2	rafraischir; annee
+X14	n	L	f78.5	reprendra (r e p r X14 e s); other occurrences unaligned
+X15	t	L	f79.4	mettre
+X16	u	L	f78.8	fleuues? (single, weak)
+X17	d	M	f78.2;f79.4;f78.8	de de(scharger); fin de; leur di(fficulte); conflicts caumont/presupose
+X18	f	H	f79.5;f79.4;f78.7	fruict; rafraischir; monflanquin
+X19	qui	H	f78.3;f78.7	tiennent qui sont; monflanquin quiuet
+X20	t	L	f79.4;f79.6	"m X20" in mettre/attendre

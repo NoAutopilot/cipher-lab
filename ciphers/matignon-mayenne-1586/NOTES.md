@@ -690,3 +690,47 @@ calls' worth is too many: one call, crops only), settle 4/4+ on f79r from disagr
 transcribe it, then build corrected f78/f79 streams and run make_masked.py control with a fresh seed (scripts copied
 in align1f/, unchanged gate 16/20). Hosts: gallica.bnf.fr 5 answered + 2 reset (7 of 12); github.com 1 shallow clone
 (dbourdeau/cyphersolver, read matignon1586/NOTES.md folio table, deleted).
+
+## NEAR step (1g) (bMAT1G), 26 Sept 2026
+
+Job: `.claude/briefs/runs/2026-09-26-lane-b8-mat1g.md`. Intake gate 07:32 UTC: `matignon-mayenne-1586: partial (line 1) --
+edition/page or full-text-search citation found within 6 lines`, exit 0. No host touched (crops on disk from bMAT1F).
+**Key, reading and grade counts unchanged (H 10,074 / M 1,648 / U 1,272); no U meaning committed.**
+
+**U1, second blind pass.** One Sonnet subagent over f78v_{D,E,F}_s{1,2}.jpg + G_tail with reference lines 1-3
+(align1g/passB_f78v.tsv, per-segment rows kept). Pass B wrote the F segments in swapped order (its F1 is the right crop);
+the crop f78v_F_s1.jpg was checked by eye and pass A's order is right (line starts `9 14 c p o BOX2`).
+
+**Correction to bMAT1F's slip description (two passes now agree on the structure).** Bourdeau's l.9 = page l.9 up to
+`.v. d` + page l.10 from `Ze oo t ff h` to its end (page l.10's right half is not missing: it is in his l.9); his l.10 =
+page l.10 up to `o s e` + page l.11 from `Ze d ff` to its end. What his transcription skips is **page l.9 after `.v. d`
+(27 signs) and page l.11 before `Ze d ff` (17 signs) = 44 signs**, not ~55 in three half-lines.
+
+**U2, reconciliation.** `tools/reconcile_passes.py passA_ins.tsv passB_ins.tsv` over the two skipped segments + the tail:
+36/53 columns agree (67.9%), 17 disagreement columns (align1g/disagreements.tsv). Settled on f78v_D_s2.jpg / F_s1.jpg: 9R
+`w` not `w-` (no bar), one sign `d` where the passes wrote `d o`/`o d`, `d` not `ff` before `7 3`, `54` not `4`; 11L `oo`
+single sign (pass A's extra `o` dropped). Kept at M (one pass or single-reader settlement): 9R `2`, `w`, `d` x3, `54`,
+final `7 6`; 11L initial `9` (pass B `q`), `d`. The tail (G) disagrees in every column (A `1 he ?triple-bar ?hook-x`,
+B `?frac-1te ?triple-bar U L oo`) and is left out of the stream. `align1g/build_corrected.py` (--check exits 0) writes
+`f78_corrected.txt` (11 lines; all 408 Bourdeau tokens kept, 44 inserted, grade C-transcription 34, M 10, marked `/C+`
+`/M+`) and `f78_corrected_stream.txt`.
+
+**U3, known-answer control on the corrected passage: 11/20 against the 16/20 gate -- FAIL.** Fresh seed **7806**
+(`align1g/make_masked.py control 7806`, same density-matched rule: 20 of the H codes with <= 11 occurrences; 98 of 495 H
+tokens hidden; bMAT1E's seed 1586 hid 103 of 470). One blinded Opus subagent saw only masked_control.txt and the two
+cribs (copied to a scratch folder, no repo access), told that the last four f78 crib lines are two margin columns of
+uncertain order. Scored by `align1g/score_control.py` (control_score.txt): correct X05 p, X06 o, X07 d, X09 p, X10 l,
+X11 a, X12 b, X13 a, X17 d, X18 f, X19 qui; wrong X01 e->i, X02 e->a, X03 u->g, X04 a->s, X08 uous->b, X14 e->n,
+X15 nostre->t, X16 l->u, X20 g->t. **H-confidence answers alone: 9/10** (the miss: X02 e read as a, H); M 2/5, L 0/5.
+The aligner still could not tie f78.9-11 to the crib, i.e. the restored lines did not make the tail of f.78v alignable,
+most likely because the f.78v margin crib (two columns, not fetched: Gallica stopped in bMAT1F) is not in cipher order.
+
+**Consequence.** Gate not met (11 < 16; bMAT1E 9/20 on Bourdeau's text), so the 17-U-sign target was not run and no U
+meaning is committed; judge not re-run (nothing changed; last -1.371 vs shuffled -1.78). The 9/10 H-confidence figure is
+the second seed in which the aligner's H answers were nearly all right (bMAT1E 7/7); pooled 16/17. That is now two seeds,
+but the rule "commit only H-confidence answers" was still chosen after seeing bMAT1E; pre-registered here, it would need
+a third seed before use on the target. Status stays `partial`.
+
+**Next step (one line, not done).** Pre-register "H-confidence answers only, gate >= 90% correct with >= 8 H answers" and
+run one more fresh seed; if it holds, run the U target and commit only its H-confidence answers at C; separately fetch
+and transcribe the f.78v margin (two columns) to fix the crib order for f78.6-11.
