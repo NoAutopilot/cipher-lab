@@ -179,14 +179,16 @@ orchestrator USD 10.21. No live workers, no pending check-in. Rate limit `allowe
 
 ## LANE V8 handoff (session_01YRuw3TCf7d1w85DLmYNnw4), 26 September 2026, live
 
-Brief `.claude/briefs/runs/2026-09-26-lane-v8-orchestrator.md`. Opened 03:05 UTC 26 Sept by parent 7e. Live body; heading fixed.
+**Closed 26 Sept 2026 06:59 UTC at ~380k context (brief's 400k handoff).** Brief `.claude/briefs/runs/2026-09-26-lane-v8-orchestrator.md`. Opened 03:05 by parent 7e. Orchestrator usage 6.91 (get_session). Workers 8, USD 24.83 by get_session, all ledgered D and archived. Rate allowed throughout. **No live workers, no pending check-in.**
 
-| job | state |
+| job | outcome |
 |---|---|
-| 1 rolling QA | V8-QA6 (Sonnet 3.49, D, QA/2026-09-26-0308.md, 3 flags). V8-QA7 (Sonnet 3.72, D, QA/2026-09-26-0544.md, 4 flags: lodewijk 5797 status.json fix list -- applied by the owner-account parent 06:13; riksarkivet counts disagree across 3 files, unowned -> B8; szembek NOTES "solved" without a verifier -> B7; intake_gate_check regex false positive). QA8 brief ready: .claude/briefs/runs/2026-09-26-lane-v8-qa8.md, window from 05:44, due ~07:45 |
-| 2 verifiers | lodewijk WVO 5797: V8-NA5797 (Opus 4.61, D) p7 [153] and p5 [161] N4, key period+ours, letter N0; 4610/4611/4616 N4 kept. V8-NA5797-2 (Opus 3.86, D) A2 held both, gate 2 done. V8-NA172 (Opus 2.56, D) p6_spot4 [172 le Conte Jean] N4 -> V8-NA172-2 (Opus 2.04, D) A3 lowered it to **N2** (Lossen, Der Koelnische Krieg I 1882 p.212 prints Count Johann leaving for Arnsberg on 22 Oct 1573); AX2-172: 172 list A (brothers->Willem) = le Conte Jean stands, 7206 is list B. szembek-bk1560: V8-SZEM session_01NciDZ7i35bSmKN7PPujmwW (Opus, cap 8, 40 min) started 06:17 after bSZR re-derivation and bLAJ la18 judge |
-| 3 SO PRs | PR 16 SO-MERCY-F22: V8-SO16 (Sonnet 1.87, D) merge, 9 confirmed / 4 not, Mercy N3 unmoved; PRs 16-20 landed and closed by the parent worker PR-LAND-2 (05:17) |
-| 4 Mercy gate-2 closer | JSTOR rows 80-83 answered (PR-LAND-2: no print of the letter); still waits on the Lonchay-Cuvelier IV page read (owner machine) |
+| 1 rolling QA | V8-QA6 (Sonnet 3.49, QA/2026-09-26-0308.md, 3 flags routed); V8-QA7 (Sonnet 3.72, QA/2026-09-26-0544.md, 4 flags: lodewijk 5797 status.json fix list, applied by the owner-account parent 06:13; riksarkivet counts disagree across 3 files -> B8 bRIKFIX; szembek NOTES "solved" before a verifier; intake_gate_check REUSED_SEARCH_RE false positive on lope-hurtado). **QA8 brief ready: `.claude/briefs/runs/2026-09-26-lane-v8-qa8.md`, window from 05:44, due ~07:45.** |
+| 2 verifiers | lodewijk WVO 5797: V8-NA5797 (Opus 4.61) p7 [153 Pfaltzgraf] and p5 [161 Landgraf] **N4**, key period (5550 gloss) + ours (table), letter text N0 (Groen IV CDXLIV); 4610/4611/4616 N4 confirmed after key_full. V8-NA5797-2 (Opus 3.86) A2 held both, **gate 2 done** (JSTOR 88-91 answered, no relevant hit). V8-NA172 (Opus 2.56) p6_spot4 [172 le Conte Jean] N4, then V8-NA172-2 (Opus 2.04) A3 lowered it to **N2** (Lossen, Der Koelnische Krieg I 1882 p.212 prints Count Johann leaving for Arnsberg 22 Oct 1573; no decipherment); AX2-172: 172 list A stands. szembek-bk1560: V8-SZEM (Opus 2.68) **N0, key period** (the leaf's own interlinear gloss; 381 tokens under the gloss, 53 word halves from the gloss-built key; C 384 / M 50), text not located in print, letter unidentified (grade I); NOTES line 1 kept `solved` by the costa-cabral/clair1067 precedent -- the verifier flagged solved vs found-solved for the parent (parent 7f added the status.json row 06:51). |
+| 3 SO PRs | PR 16 SO-MERCY-F22: V8-SO16 (Sonnet 1.87) merge, 9 confirmed / 4 not, Mercy N3 unmoved; PRs 16-20 landed and closed by the parent worker PR-LAND-2. No PR open above 20 at 06:57. |
+| 4 Mercy gate-2 closer | JSTOR rows 80-83 answered (no print of the letter); **still waits on the Lonchay-Cuvelier IV page read** (owner machine). |
+
+For the successor (V9 or the parent): (1) spawn QA8 from its brief; (2) verifiers for any "reading ready" to V8/V9 -- none open at 06:57 (AX2 may post 4612/5801; B8 may post szembek 65/67 letter gloss bSZG2); (3) lodewijk p6_spot4 stays out of the board row or goes in as N2 text known (Lossen); (4) Mercy closer when the page read lands. Lessons: asking a verifier to argue its own gate-2 gap (V8C.5) pointed the second audit at the one shelf that held the print (Lossen), in 4 minutes; single-item verifiers ran 4-18 min and 2.0-4.6 USD.
 
 ## LANE V7 handoff (session_018VkFfDWY4drC9a9aozmop9), 25 September 2026, live (updated 26 Sept 00:59 UTC)
 
