@@ -693,3 +693,36 @@ Requests: web.archive.org ~13 (1 reachability + CDX/fetches for 11 document ids,
 retries per successful fetch). loc.gov ~21 (2 collection searches, 14 item-metadata fetches, 4 name-pair
 queries, 1 spot fetch). tile.loc.gov: 14 thumbnail fetches. All >=1.5s apart, descriptive User-Agent. No logins,
 no credentials touched. 1 Sonnet subagent (thumbnail classification only, per this brief's cap).
+
+## ARM-S2 pass, 26 Sept 2026 (LANE ARM worker ARM-S2) -- shorthand symbol-by-symbol match, exclusion not identification
+
+Ran the finer, symbol-by-symbol method (the way Tomokiyo actually compared Taylor) against all five untested
+period systems (Byrom, Gurney, Mavor, Weston, Macaulay), with Taylor as the known negative and Pitman as the
+control. Full numbers in `HYPOTHESES.md`'s "ARM-S2 symbol match" section. Reconciled the two cycle-1 passes'
+inventories into 12 shapes (visually verified by subagent crop checks, not just numeric coincidence -- some of
+ARM-S1's own qualitative C1-C10 merges turned out to be only "partial" on inspection), covering 189 of ~221.5
+total marks (85.3%). The dominant shape (33.9% of all marks) is too frequent to be any single English letter or
+common word in every system tested including the control -- a script-based profile check
+(`images/shorthand/profile_check.py`) confirms this fits neither a letter-alphabet nor a Zipf word/syllable-sign
+hypothesis, and is more consistent with a structural/connector stroke. None of the five candidates clears both
+of rule 3's bars (beat Taylor by a real margin AND give a frequency-consistent profile): Mavor and Byrom beat
+Taylor on raw shape-match score but assign the two dominant shapes to letters whose real frequency is nowhere
+near that high (Tomokiyo's own failure mode against Taylor); Macaulay ties Taylor (no resolving power);
+Weston scores below even the Pitman control (a method failure, not evidence against Weston); Gurney's apparent
+top score is an artifact of its specimen being running prose, not an alphabet chart -- most of its matches turned
+out to be ordinary page furniture (scribal tittles, an ampersand, i-dots, a closing flourish), not real
+shorthand signs. Result: **exclusion of all six systems checked (Taylor + the five candidates)**, with the
+control on file, per rule 5/CLAUDE.md's near-solve conventions this stays `partial`/marks-as-shorthand-family
+open, not `closed-negative` (no full family ladder has been run). The marks most plausibly remain a private
+shorthand or the code's own device. Superscript tick above a numeral confirmed the same physical stroke as the
+ordinary baseline dash, just repositioned, not a separate character; both Mavor's and Weston's subagents
+independently (and without seeing each other's or ARM-S1's finding) suggested this stroke resembles those two
+systems' own vowel-position marking convention -- an M-grade lead for a successor, not a claim. Attempted the
+optional NARA superscript-tick check on Armstrong's ordinary office-code letter (frame M34-014-0025, the known
+15 Feb 1808 letter); both allowed requests via the already-documented keyless IIIF route returned the site's
+HTML app shell instead of the image (same failure signature as an invalid object path); not retried further
+(request cap and the good-citizen one-retry rule both spent); flagged for a successor to re-derive the working
+route before trying again. No numerals or ciphertext read or decoded this pass; rule 10 wording throughout.
+Requests: catalog.archives.gov 2 (both unsuccessful, no image bytes received), >=1.5s apart, descriptive
+User-Agent. No other hosts, no network for the reconciliation/comparison work itself (all against images
+already on disk plus 9 Sonnet subagent calls: 2 reconciliation + 7 per-system symbol match).

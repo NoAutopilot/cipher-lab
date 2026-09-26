@@ -650,3 +650,104 @@ No network this job (all work against images already on disk). 2 Sonnet subagent
 2 concurrent blind passes) + 2 Sonnet subagent calls (page-1 L6-13, 2 concurrent blind passes) = 4
 subagent calls total; all further settlement (page 4 edge digits, the L06-L11 crop-top fix, the page2
 shorthand-crop diagnosis) done directly by this worker against the images, not delegated.
+
+## ARM-S2 symbol match (26 Sept 2026, LANE ARM worker ARM-S2): per-system symbol-by-symbol comparison, not a decode
+
+Full detail: `images/shorthand/INVENTORY_reconciled.tsv`, `images/shorthand/profile_check.py`,
+`images/shorthand/specimens/symbol_match.tsv`, `images/shorthand/specimens/score_summary.py`. Runs the finer,
+symbol-by-symbol method (the way Tomokiyo actually ran it against Taylor) that ARM-S1's own coarse shape-category
+comparison could not.
+
+**Reconciliation (2 subagent calls, visual crop verification, not just numeric coincidence).** ARM-S1's own
+qualitative C1-C10 categories turned out to sum exactly against the raw pass-A/pass-B counts, but a visual
+crop-by-crop check (two Sonnet subagents, given both passes' rows, crops, and position indices) found the
+numeric coincidence overstated some merges: pass-A S16/S18 are only "partial" matches to pass-B Sh.1's dominant
+wave (a compound double-hump and a stretched-flat variant, not pixel-identical to a single Sh.1 unit), and
+pass-A S6 vs pass-B Sh.3 (both "back-curving hook") "may represent two different size classes rather than one
+shape." Confirmed exact merges: S4==Sh.2 (3-loop-tail), S3==Sh.16 (slash), S9==Sh.11 (percent-compound), and
+S28==Sh.6==Sh.5's stroke-shape (the superscript tick above a numeral is the SAME physical dash stroke as the
+baseline dash/bar, just repositioned -- not a distinct character). Confirmed distinct (not mergeable): pass-A S2
+(open cup, opposite curvature from the wave family) and pass-B Sh.9 (a large closed loop, confirmed NOT the same
+as pass-A S12's small open hook) -- both get their own category, neither in ARM-S1's original C1-C10. Result:
+**12 reconciled shapes covering 189 of ~221.5 total catalogued marks (85.3%)**, `INVENTORY_reconciled.tsv`.
+Several page-2 exemplar crops used the corrected `images/crops_0032L/f0032L_L0N.jpg` files per ARM-TR2's flag
+(content-line N = that file directly, verified by md5sum match against the already-fixed L02/L06 pair), not the
+still-buggy `images/shorthand/page2_L0N_*.jpg` files for L01/L03/L04/L07/L10/L11/L13.
+
+**Profile check (script, `profile_check.py`).** Top shape (R1, the wave/filler stroke) = 33.9% of all marks
+(27.5% if only the visually-confirmed core is counted, excluding the two "partial" variants) -- 2.2-2.7x the
+single most frequent English letter ("e" 12.7%) and 3.9-4.8x the single most frequent English word ("the" 7.0%).
+**Fits neither the letter-alphabet hypothesis nor the Zipf word/syllable-sign hypothesis**; consistent with a
+structural/connector stroke (a vowel mark, syllable joiner, or line-filler) rather than a phonetic letter or
+lexical sign. Ranks 2-3 (13.1%, 10.8%) sit in the range of mid/high-frequency English letters but on the high
+side; the low-tail shapes (0.9-2.3%) are individually untestable at these counts (rule 3).
+
+**Seven-system symbol match, all numbers reported (rule 3's own instruction, "whatever they say"):**
+
+| system | shape_score | freq_score | yes/partial/no |
+|---|---|---|---|
+| Taylor1786 (known negative) | 0.532 | 0.289 | 2/8/2 |
+| Pitman_CONTROL | 0.429 | 0.295 | 3/4/5 |
+| Byrom1796 | 0.585 | 0.218 | 4/6/2 |
+| Gurney1752 | 0.659 | 0.506 | 6/6/0 |
+| Mavor1792 | 0.653 | 0.389 | 6/5/1 |
+| Weston1727 | 0.421 | 0.875 | 6/5/1 |
+| Macaulay1747 | 0.529 | 0.135 | 2/9/1 |
+
+(shape_score = mark-count-weighted fraction of yes/partial shape counterparts over the 12 shapes' 189 marks;
+freq_score = mark-count-weighted fraction "consistent" among shapes that got any letter assignment at all,
+excluding shapes graded "n-a" -- a punctuation/diacritic/ligature/page-furniture reading, not a letter claim.)
+
+**Two of rule 3's own sanity checks come back honestly messy, not clean:**
+1. Pitman (control) does **not** score lowest of all seven on shape_score -- Weston (0.421) scores below it
+   (0.429). Weston's own subagent independently called R1 a flat "no" (not even "partial") and found no
+   single-letter counterpart for the dominant filler stroke at all, which is the single largest driver of its
+   low score; Pitman's control got partial credit on R1 (an arc) that Weston's own alphabet, checked more
+   carefully, did not. This means shape_score has **no resolving power for Weston specifically** -- a real
+   18th-c. cursive-loop system scoring below a Victorian geometric-line control is itself a finding (the method,
+   not Weston, is what fails this comparison), not evidence against Weston.
+2. Two of the five candidates' specimens are not clean alphabet plates, which inflates their letter-assignment
+   counts without a real basis: **Gurney's specimen is running italic prose, not a stroke table** -- its own
+   subagent found most of its "yes"/"partial" verdicts are matches to ordinary page furniture (scribal
+   abbreviation tittles, an "&c." ampersand twice, i-dots/periods, a closing ornamental paraph), not to Gurney's
+   actual shorthand alphabet; Gurney's high shape_score (0.659, the top of the table) is an artifact of this and
+   is not a real symbol-by-symbol result. **Taylor's own specimen (the already-known negative) has the same
+   problem** -- it is Tomokiyo's crop of a specimen of connected running shorthand, not a labelled alphabet
+   chart either, so Taylor's letter assignments are equally best-effort guesses, not verified labels. Only
+   Byrom, Mavor, Weston and Macaulay have genuine labelled alphabet/consonant plates; Taylor and Gurney's
+   apparent scores are not on the same footing as those four and as Pitman's control.
+
+**Verdict: exclusion of all five candidate systems, not an identification, on both scores together.**
+Restricting to the four systems with genuine labelled plates (the only fair comparison against Taylor and
+Pitman): Mavor (0.653) and Byrom (0.585) beat Taylor (0.532) on shape_score by a real margin; Macaulay (0.529)
+ties Taylor almost exactly (no resolving power); Weston (0.421) scores below both Taylor AND the control (no
+resolving power, method failure as above). But rule 3's second bar -- "a frequency-consistent profile" -- rules
+out even Mavor and Byrom: both assign the two dominant shapes (R1 33.9%, R2 13.1%, 47% of all marks together) to
+letters (m and f/j respectively) whose real English frequency is nowhere near that high, exactly the failure
+mode Tomokiyo's own symbol-by-symbol check found against Taylor. No candidate clears both bars. This is
+consistent with ARM-S1's own coarser conclusion (right family, wrong resolving power) but now earned by the
+actual finer method the brief asked for, with the added, more useful findings of *why* it doesn't resolve:
+R1's share rules out a letter-alphabet reading in every one of the seven systems tested including the control,
+and two of the five candidate specimens (Gurney, and Taylor's own reused specimen) are not clean alphabet
+charts, so their scores are not comparable to Byrom/Mavor/Weston/Macaulay's. The marks remain most plausibly a
+private/idiosyncratic shorthand or the code's own device, not a match to any of the six systems checked
+(Taylor + the five candidates).
+
+**Superscript-tick finding, corroborated cross-system.** The tick above a numeral (pass-B Sh.5, positions
+page2 L10/L13) is confirmed the same physical stroke-shape as the ordinary baseline dash (pass-A S28, pass-B
+Sh.6), just repositioned -- not a separate character. Independently, both the Mavor and Weston subagents
+(without being told about each other's finding or about ARM-S1's tick discovery) flagged that this baseline
+dash matches those two systems' own vowel-position marking convention (a short stroke placed near a consonant
+sign to indicate a vowel), which is one plausible functional reading of why the same stroke appears both on the
+baseline and floating above a numeral in this manuscript -- offered as a lead, not a claim (M-grade, no H/C).
+
+**NARA superscript-tick check (step 4, optional): attempted, inconclusive, request budget spent.** Frame
+M34-014-0025 (continuing the already-known 15 Feb 1808 Armstrong-to-Madison THE=972 office-code letter, per
+ARM-POOL's own roll-14 survey) was targeted via the same keyless `catalog.archives.gov` IIIF v3 route ARM-IMG
+documented (confirmed working for frames 0029-0033 in `images/manifest.json`). Both allowed requests (info.json,
+then a direct `full/full/0/default.jpg` fetch) returned the site's HTML app shell at HTTP 200, not the image --
+the same "wrong/inaccessible object path" signature ARM-IMG and ARM-POOL both documented for invalid frames,
+though ARM-POOL's own prior pass reported reading this same frame's native image directly (uncommitted scratch,
+route not recorded). Did not retry a third time (this job's 2-request cap for this host, and the good-citizen
+rule's one-retry limit, both already spent). The tick-as-office-convention question is untested, flagged for a
+successor with the exact working fetch route recorded first.
