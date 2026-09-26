@@ -2,7 +2,7 @@ status: draft (26 Sept 2026 13:44 UTC, LANE ARM2 orchestrator; not sendable unti
 subject: [left for the person] -- suggestion: "Armstrong to Madison, 20 February 1808: is any other letter in this cipher known?"
 to: Papers of James Madison, University of Virginia -- jmadison@virginia.edu (public contact address, read from https://pjm.as.virginia.edu/contact on 26 Sept 2026 13:43 UTC)
 targets: ciphers/armstrong-madison-1808
-links: folder=https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/armstrong-madison-1808; hypotheses=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/armstrong-madison-1808/HYPOTHESES.md; manuscript=NARA RG 59, M34 roll 14, frames 0030-0033 (NAID 188671566, https://catalog.archives.gov/id/188671566); edition=Founders Online 99-01-02-2728 (https://founders.archives.gov/documents/Madison/02-02-02-2728 -- check the exact URL form from the Founders page before sending); transcription=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/armstrong-madison-1808/ciphertext_ms.txt
+links: folder=https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/armstrong-madison-1808; hypotheses=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/armstrong-madison-1808/HYPOTHESES.md; manuscript=NARA RG 59, M34 roll 14, frames 0030-0033 (NAID 188671566, https://catalog.archives.gov/id/188671566); edition=Founders Online 99-01-02-2728 (https://founders.archives.gov/documents/Madison/99-01-02-2728, the Early Access form NOTES.md cites); transcription=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/armstrong-madison-1808/ciphertext_ms.txt
 audit: none yet (gate 1). Rule 10: this note claims no reading, no novelty; it asks a question and reports controlled negatives.
 
 ---
