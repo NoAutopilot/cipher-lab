@@ -1,5 +1,5 @@
 status: mailbox-draft (26 Sept 2026 16:59 UTC; awaiting the owner's send)
-voice: rewritten 26 Sept 2026 17:46 UTC by parent 7i in first-person plain voice (owner's ask, 17:45 UTC); facts as checked 17:37; the body of record is outreach/mailbox/nara-koehler-rg65.json; OUT-CHECK-2 re-check pending, not sendable until its checked: line lands
+voice: rewritten 26 Sept 2026 17:46 UTC by parent 7i in first-person plain voice (owner's ask, 17:45 UTC); facts as checked 17:37; the body of record is outreach/mailbox/nara-koehler-rg65.json; OUT-CHECK-V re-check pending, not sendable until its checked: line lands
 subject: Research request: FBI file 105-9673 ("Kohler, Walter"), RG 65, Box 156
 to: NARA Textual Records reference, College Park -- archives2reference@nara.gov (verified 26 Sept 2026 on https://www.archives.gov/dc-metro/college-park, "Textual Consultation" / advance-consultation address)
 targets: ciphers/koehler-1944

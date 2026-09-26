@@ -1,5 +1,5 @@
 status: mailbox-draft (26 Sept 2026 16:59 UTC; awaiting the owner's send)
-voice: rewritten 26 Sept 2026 17:46 UTC by parent 7i in first-person plain voice (owner's ask, 17:45 UTC); facts as checked 17:37; the body of record is outreach/mailbox/marburg-wvo5551-copy.json; OUT-CHECK-2 re-check pending, not sendable until its checked: line lands
+voice: rewritten 26 Sept 2026 17:46 UTC by parent 7i in first-person plain voice (owner's ask, 17:45 UTC); facts as checked 17:37; the body of record is outreach/mailbox/marburg-wvo5551-copy.json; OUT-CHECK-V re-check pending, not sendable until its checked: line lands
 subject: Resolving an old fonds citation ("4f Nld. 165") to its current Arcinsys signature
 to: Hessisches Staatsarchiv Marburg -- marburg@hla.hessen.de (reconfirmed 26 Sept 2026 on https://landesarchiv.hessen.de/ueber-uns/hessisches-staatsarchiv-marburg; unchanged since 25 Sept 2026)
 targets: ciphers/jan-van-nassau-1572-75
