@@ -358,3 +358,127 @@ Requests this session: discovery.nationalarchives.gov.uk 26 (1.5-1.6s apart thro
 | 6012 (PRO 30/55/53/10) | 26 Oct 1782 | Mackenzie to Patterson | HMC Report calendar paraphrase only, page not opened; describes transmitting a letter in cypher, may not itself be cipher text | partly known / may not be a cipher-text item at all | outside Saberton's scope — open the HMC Report |
 
 **Status.** Line 1 stays `partial`: **5 of 12** named items are now text known (C) — all five Cornwallis-Clinton items inside Saberton's CP pt.11 window (3689, 3753, 3784, 3803, 3813) are fully resolved via Stevens 1888, independent of Saberton's own edition (still unreadable from the cloud, LOCAL-QUEUE row L16 unchanged). The remaining 7 items (2380, 2894, 3868, 3853, 4833, 6009, 6012 — Haldimand/Carleton/general-staff correspondence) stay at the HMC-paraphrase-only footing; no deep work (transcription, key application, cryptanalysis) on any of the 12 items — the 5 resolved ones are found-solved (no key application needed, the plaintext is already in a printed edition), and the other 7 need their own printed source read first, not a cryptanalytic attempt. The Discovery item-level sweep of all six named pieces is complete (above); no new cipher-flagged item was found.
+
+## AX-HMC: HMC Report read directly for the remaining 7 items (26 Sept 2026, LANE AX)
+
+Per this job's brief: located each of the 7 still-unresolved items (2380, 2894, 3868, 3853, 4833, 6009, 6012) in the
+HMC Report's own printed calendar text and read the page image directly (not the djvu OCR alone, per this file's
+own standing caveat).
+
+**Method.** `archive.org/advancedsearch.php` (1 request) for "Report on American manuscripts... royal institution"
+confirmed one archive.org scan per printed volume, distinct from the digest of 14+ duplicate/alternate scans already
+on file: **vol.1** `reportonamerica03dorcgoog`, **vol.2** `reportonamerican02grea`, **vol.3**
+`reportonamerica02dorcgoog`, **vol.4** `reportonamerican04grea`. Fetched all four `_djvu.txt` files (4 requests,
+disk-only, not committed) and grepped for each item's date/correspondent pair rather than for the TNA Discovery
+"2380."/"2894." style numbers, which **do not appear verbatim in the print** — those running numbers are TNA's own
+Discovery item identifiers, not an HMC in-text numbering scheme (checked: `grep` for every one of the 7 numbers
+across all four volumes' djvu text returns zero hits). All 7 items and 4833's cross-reference entry are in **vol.2**
+(`reportonamerican02grea`) or **vol.3** (`reportonamerica02dorcgoog`) despite vol.2's IA metadata calling itself
+"v.2" — the Haldimand/Carleton correspondence in this Report runs chronologically across the whole set and is not
+neatly bounded by item-number range. Page->leaf mapping: vol.2's archive.org `metadata` response embeds a
+`page_numbers` field directly (no separate fetch needed, 1 request used for it); vol.3's metadata has none, so its
+two items' leaves were found via archive.org's search-inside API (`<server>/fulltext/inside.php?item_id=...&doc=...
+&path=...&q="<exact phrase>"`, which returns a leaf number directly; 2 successful calls, 1 mistaken call to a wrong
+per-item server hostname that reset the connection, not retried past the one accidental attempt) and cross-checked
+against the nearest OCR'd page-number markers in the djvu text. Page images fetched via the `_jp2.zip` zip-member
+route (`archive.org/download/<id>/<id>_jp2.zip/<id>_jp2%2F<id>_<4-digit-leaf>.jp2`, no login), 6 leaves, converted
+locally to JPEG (Pillow, installed this session). Images and manifest at `images/hmc/` (6 files, 2.6 MB, well under
+the 30 MB cap). Total archive.org requests this session: 24 (1.5-1.6s apart, browser User-Agent, no login) —
+at the brief's 25-request ceiling; no further archive.org calls made after the 6th image.
+
+**Per-item finding, exactly as printed (rule 4: no H or C grade below is a cryptanalytic result — these are
+calendar entries, not decipherments):**
+
+- **2380 (PRO 30/55/19/98), Gen. Sir Henry Clinton to Gen. Haldimand, [1779, October 22]** — vol.2 p.53 (leaf 65).
+  Full entry: *"Copy and duplicate. Vol. 11, Nos. 14 & 11. 4 pages & 3 pages. Both in cipher. Copy in the British
+  Museum, Addtl. MSS. 21807, fo. 105."* No content paraphrase at all, no decipherment noted anywhere in this entry.
+  Text status: **unknown** — the BM copy is only "a copy," not stated to be a decipherment or a plain-text version.
+- **2894 (PRO 30/55/24/76), [Gen. Sir Henry Clinton] to Gen. Haldimand, undated (comparison-dated 6 July 1780)** —
+  vol.2 p.153 (leaf 165). Full entry: *"Cipher of a letter, no date nor names, but found by comparison to be the
+  same as one in the British Museum, Additl. MSS. 21807, fos. 159 and 161, dated 6 July, 1780. Vol. 11, No. 12.
+  1 page; decipher 11, No. 117; copy 18, No. 21."* This settles the brief's step (3): the BM/BL comparison copy is
+  **British Library (British Museum) Additional MS 21807, folios 159 and 161** (the letter itself, dated 6 July
+  1780) — not merely "the same content," a specific dated exemplar. New in this entry, not previously on file here:
+  HMC's own note that **a decipherment of this cipher already exists as a manuscript in the same PRO 30/55
+  collection, at "Vol. 11, No. 117"** (i.e., what is now catalogued as a piece within PRO 30/55/11), plus a further
+  copy at "Vol. 18, No. 21." None of this — cipher, decipher, or copy — is itself printed in HMC; only the
+  cross-reference is. Text status: **known elsewhere via the BM exemplar** (unchanged classification from the 23/25
+  Sept sweeps), now with the exact shelfmark, and a live archival lead (PRO 30/55/11/117, if that old-numbering
+  survives into TNA's modern piece numbering) for the decipherment manuscript itself, not yet located in Discovery
+  under a modern reference. Whether BL Add MS 21807 is printed anywhere: WebSearch this session found it is part of
+  the "Haldimand Papers" (BL Add MS 21661-21892), of which the "B series" transcripts were calendared by Douglas
+  Brymner in the Canadian Report on Public Archives (1884-89) — a real printed calendar of this manuscript group,
+  not yet opened or checked against fos. 105/159/161/162/306/308/310/325 (this job's brief did not extend to
+  fetching it; named as next step, no copy order placed).
+- **3868 (PRO 30/55/33/65), [Gen. Sir Henry Clinton] to Gen. Haldimand, 1781, November 12** — vol.2 p.348 (leaf
+  360). Full entry: *"In cipher. Vol. 11, No. 194; decipher, No. 190. 3 pages each. Original in the Brit. Mus.,
+  Addtl. MSS. 21807, fo. 308; copies 21807, fo. 310; Public Record Office, Am. & W. I. 142, fo. 150."* Same pattern
+  as 2894: no content printed, but **a decipherment manuscript is again noted to exist in the same collection**
+  ("Vol. 11, No. 190"). BM shelfmark for the original: Addtl. MSS. 21807, fo. 308 (copy at fo. 310). Text status:
+  **unknown** (no plaintext content anywhere in this entry; the archival decipher, if its modern PRO 30/55/11 piece
+  number can be found, is the live lead, not a cryptanalytic attempt).
+- **3853 (PRO 30/55/33/47), Maj. Gen. James Robertson to Gen. Haldimand, 1781, October 31** — vol.2 p.345 (leaf
+  357). Full entry: *"Writes in Sir Henry's absence. Auto draft. Vol. 11, No. 183; in cipher, 182. 1 page. Original
+  in Brit. Mus., Addtl. MSS. 21807, fo. 325; decipher 21807, fo. 306."* A one-line paraphrase ("Writes in Sir
+  Henry's absence") is printed — more than 2380/3868 get, but far short of the content TNA's Discovery description
+  implies for other items in this run. Here the decipherment is explicitly located **in the British Museum
+  manuscript itself** (fo. 306), not in the PRO 30/55/11 series. Text status: **paraphrase only**.
+- **4833 (PRO 30/55/42/120), Gen. Haldimand to Sir Guy Carleton, 1782, June 23** — vol.2 p.532 (leaf 544). Full
+  entry: *"Quebec.—No. 2. Duplicate signed letter. Vol. 11, No. 215. 1 page. Enclosed by Gen. Haldimand to Sir G.
+  Carleton, 28 July, 1782. Copies in the Public Record Office, Am. & W. I. 145, fo. 87; State Papers, Foreign,
+  Various, 321; British Museum, Addtl. MSS. 21808, fo. 36; 21806, fo. 3."* **No "in cipher" tag and no content
+  paraphrase at this citation** — a bare bibliographic cross-reference. This does not match TNA Discovery's own,
+  much fuller description for this same item (`C16349906`, re-fetched fresh this session: *"Enclosed is a duplicate
+  letter in cypher which he dispatched yesterday, overland. With regard to the exchange of prisoners... engagements
+  at the Cedars... exchanged many of the people of Vermont... wish for arrivals from England... Postscript, arrival
+  of convoy, and still has not received letter of 5 April."*). Searched for this content directly: exact phrases
+  ("engagements at the Cedars", "duplicate letter in cypher", "despatched yesterday" in British spelling) return
+  **zero hits** in both vol.2's and vol.3's full djvu text and via archive.org's search-inside index on both
+  volumes. **This is a real discrepancy, not resolved this session**: either TNA's cataloguers wrote an independent,
+  fuller modern description from the original manuscript (not copied from this HMC calendar entry at all, unlike
+  the pattern seen for the other 6 items in this run, where TNA's text visibly matches or condenses the print), or
+  the fuller content is printed somewhere else in the Report under a heading this search missed (e.g. under
+  Haldimand's own outgoing-letterbook section rather than under "received by Carleton," not checked this session).
+  Text status: **paraphrase only in print** (no cipher tag here), but a materially fuller, cipher-tagged description
+  exists in TNA's own catalogue from a source not identified in the print.
+- **6009 (PRO 30/55/53/7), George Beckwith to Major Fred. Mackenzie, 1782, October 26** — vol.3 p.187 (leaf 203).
+  Full entry printed in clear, in full (quoted in the "6009 (PRO 30/55/53/7)" row of the item table already on file,
+  confirmed against the image this session, no change). This item is itself a plain-English covering note *about*
+  forwarding a ciphered note; it is not itself a cipher document. Text status: **known** (it always was; confirmed
+  against the page image rather than the API description alone). Immediately below it on the same page, *"[Sir Guy
+  Carleton] to [Gen. Haldimand]. 1782, October 26. Draft. Vol. 47, No. 15. 1 page. Originals in the British Museum,
+  Addtl. MSS. 21705 fos. 71 & 78; 21806 fo. 20..."* — no "in cipher" tag on this entry either, so this is **not**
+  confirmed to be the ciphered note 6009/6012 describe forwarding; noted as a candidate, not claimed.
+- **6012 (PRO 30/55/53/10), [Major] F[red] M[ackenzie] to Major Gen. James Patterson, 1782, October 26** — same
+  page, vol.3 p.187 (leaf 203). Full entry printed in clear (confirmed against the image, no change from the
+  existing table). Also a covering note about forwarding a letter in cipher, not itself the cipher text. Text
+  status: **known** (confirmed against the image).
+
+**What this changes.** The item table's "text known / partly known" column stays as before for all 7 (none of them
+newly resolved to a plaintext this session — 6009/6012 were already counted as their own plain covering text, not
+as the underlying cipher). What is new: (a) 2894 and 3868 each have a **named, specific archival decipherment**
+already on file somewhere in the same collection (PRO 30/55/11, old numbering "No. 117" and "No. 190"), not
+findable under that old numbering in a modern Discovery search this session did not attempt; (b) 2894's BM
+comparison-copy shelfmark is now exact (Add MS 21807, fos. 159/161) and a plausible printed calendar of that
+manuscript group (Brymner, Canadian Report on Public Archives 1884-89) is identified, not yet opened; (c) 4833's
+TNA Discovery description contains substantial cipher-tagged content not found anywhere in this session's search of
+the HMC print, an open discrepancy worth flagging rather than resolving by assumption.
+
+**Next step per item:** 2380 — no further HMC-print lead, only the BM copy fo.105 (unconfirmed plain/cipher);
+2894 — locate PRO 30/55/11 (old numbering) item "117" in modern Discovery, and separately open Brymner's Canadian
+calendar for Add MS 21807; 3868 — same PRO 30/55/11 "No. 190" search; 3853 — the decipher is in BL Add MS 21807
+fo.306 itself, no PRO-side lead; 4833 — resolve the print/Discovery discrepancy (check Haldimand's own
+outgoing-letterbook section of the Report, not attempted this session) before treating either description as
+complete; 6009/6012 — found-solved as covering notes; the underlying ciphered note they describe is not identified
+with certainty (the "[Sir Guy Carleton] to Gen. Haldimand]" entry on the same page is a candidate, unconfirmed).
+
+**Status.** Line 1 stays `partial`. Item-count unchanged at 5 of 12 text known (C); the other 7 stay at their
+existing footing (2 known-elsewhere-via-comparison-copy [2894], 1 paraphrase [3853], 2 no-content-in-print [2380,
+3868], 1 paraphrase/discrepant-with-Discovery [4833], 2 known-as-covering-notes-only [6009, 6012]). No decoding
+attempted; no novelty classification made (rule 10, left to a verifier).
+
+**Requests this session.** archive.org 24 (1.5-1.6s apart, browser User-Agent, no login: 1 advancedsearch, 4
+djvu.txt, 2 metadata, 6 jp2 leaf fetches, 4 search-inside fulltext queries [1 failed on a wrong hostname, not
+retried past that], plus the earlier IIIF-endpoint route tried and abandoned when it timed out); TNA Discovery 2
+(1 failed with HTTP 500 on an item-level query, 1 succeeded on a piece-level query, `discovery.nationalarchives
+.gov.uk`); WebSearch 1 (Haldimand Papers / Add MS 21807 printed-calendar lead).

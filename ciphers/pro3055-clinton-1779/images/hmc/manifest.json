@@ -1,0 +1,61 @@
+{
+  "source": "Historical Manuscripts Commission, Report on American Manuscripts in the Royal Institution of Great Britain (4 vols, 1904-09), archive.org scans",
+  "fetched": "2026-09-26",
+  "worker": "LANE AX AX-HMC",
+  "images": [
+    {
+      "file": "v2_p53.jpg",
+      "identifier": "reportonamerican02grea",
+      "printed_page": "53",
+      "leaf": 65,
+      "url": "https://archive.org/download/reportonamerican02grea/reportonamerican02grea_jp2.zip/reportonamerican02grea_jp2%2Freportonamerican02grea_0065.jp2",
+      "covers_item": "2380 (PRO 30/55/19/98)"
+    },
+    {
+      "file": "v2_p153.jpg",
+      "identifier": "reportonamerican02grea",
+      "printed_page": "153",
+      "leaf": 165,
+      "url": "https://archive.org/download/reportonamerican02grea/reportonamerican02grea_jp2.zip/reportonamerican02grea_jp2%2Freportonamerican02grea_0165.jp2",
+      "covers_item": "2894 (PRO 30/55/24/76)"
+    },
+    {
+      "file": "v2_p345.jpg",
+      "identifier": "reportonamerican02grea",
+      "printed_page": "345",
+      "leaf": 357,
+      "url": "https://archive.org/download/reportonamerican02grea/reportonamerican02grea_jp2.zip/reportonamerican02grea_jp2%2Freportonamerican02grea_0357.jp2",
+      "covers_item": "3853 (PRO 30/55/33/47)"
+    },
+    {
+      "file": "v2_p348.jpg",
+      "identifier": "reportonamerican02grea",
+      "printed_page": "348",
+      "leaf": 360,
+      "url": "https://archive.org/download/reportonamerican02grea/reportonamerican02grea_jp2.zip/reportonamerican02grea_jp2%2Freportonamerican02grea_0360.jp2",
+      "covers_item": "3868 (PRO 30/55/33/65)"
+    },
+    {
+      "file": "v2_p532.jpg",
+      "identifier": "reportonamerican02grea",
+      "printed_page": "532",
+      "leaf": 544,
+      "url": "https://archive.org/download/reportonamerican02grea/reportonamerican02grea_jp2.zip/reportonamerican02grea_jp2%2Freportonamerican02grea_0544.jp2",
+      "covers_item": "4833 (PRO 30/55/42/120) -- cross-reference entry only, no cipher tag, no content in print at this citation"
+    },
+    {
+      "file": "v3_p187.jpg",
+      "identifier": "reportonamerica02dorcgoog",
+      "printed_page": "187",
+      "leaf": 203,
+      "url": "https://archive.org/download/reportonamerica02dorcgoog/reportonamerica02dorcgoog_jp2.zip/reportonamerica02dorcgoog_jp2%2Freportonamerica02dorcgoog_0203.jp2",
+      "covers_item": "6009 (PRO 30/55/53/7) and 6012 (PRO 30/55/53/10)"
+    }
+  ],
+  "volumes_identified": {
+    "vol1": "reportonamerica03dorcgoog (also reportonamerica00britgoog)",
+    "vol2": "reportonamerican02grea",
+    "vol3": "reportonamerica02dorcgoog (also reportonamerica01dorcgoog)",
+    "vol4": "reportonamerican04grea"
+  }
+}
