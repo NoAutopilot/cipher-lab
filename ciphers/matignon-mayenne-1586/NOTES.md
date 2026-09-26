@@ -529,3 +529,84 @@ new reading's own control, and it does hold).
 Grade counts (rule 4), final: H 10,074 / S 1,648 / M 0 / U 1,272 (C 0, I 0). Status stays `partial` (rule 5:
 a control-backed reproducible margin, not closed-negative; a control-backed gap, since the judge gate is
 still not met).
+
+## NEAR steps (1c') and (1d) (bMAT1D), 26 Sept 2026
+
+Job: `.claude/briefs/runs/2026-09-26-lane-b7-mat1d.md`.
+
+**(1c') Revert bMAT1C.** `exceptions.tsv` did not exist before bMAT1C's commit (`48f340d`; confirmed with
+`git show 48f340d^:.../exceptions.tsv` -> "exists on disk, but not in 48f340d^"), so the revert deletes it
+and restores `decode.json`, `reading.txt`, `reading_tokens.tsv` to their `48f340d^` content (`git checkout
+48f340d^ -- <paths>`; `reading_letters.txt` was untouched by bMAT1C, confirmed identical to its `48f340d^`
+version, so left as is). `python3 tools/decode_key.py ciphers/matignon-mayenne-1586`: **H 10,074 / M 1,648 /
+U 1,272**, matching the pre-bMAT1C counts exactly. `--check`: exit 0, "reading up to date". Re-judge
+(`tools/judge_plaintext.py specs/matignon-mayenne-1586.json --file reading_letters.txt`): **FAIL
+language: score=-1.371, null_p99=-1.942, real_p05=-0.837, N=12485; words: cover=0.814** -- matches the
+pre-bMAT1C numbers exactly (the brief's "about -1.371 / cover 0.814"). M back to M throughout (no S).
+
+**(1d) U signs as nomenclator code words -- which U signs sit inside a period-deciphered passage.**
+Source of meanings, per the brief: Bourdeau's transcriptions of the three period decipherments, shallow
+clone `dbourdeau/cyphersolver` (credit: Daniel Bourdeau, `matignon1586/`, HEAD at clone time, CC BY 4.0
+text / MIT code; clone deleted after this job). Of the three named crib locations only two have a
+transcribed cipher stream AND its full period plaintext both on file in his repository: `f78_cipher.txt`
++ `crib_f78.txt` (Mayenne to the King, camp, March 1586, margin-deciphered) and `f79_cipher.txt` +
+`crib_f79.txt` (the same letter's continuation). The third, f.14v/f.15r, has only the cipher
+(`l1415.txt`, 27 tokens) -- the repository holds just the opening phrase of f.15r's clear text as a
+quotation inside `NOTES.md`, not a full transcription -- so it cannot be tested; f.18-21/f.19 likewise has
+only 3 lines of cipher (`cipher_f18.txt`) against 2 lines of plaintext (`f19_plain.txt`), far short of the
+"22 lines cipher / 32 lines clear" his own `NOTES.md` describes for that leaf, so this pair is too short
+and its correspondence to the rest of the leaf is unverified; excluded from the test as unverified rather
+than assumed. **This narrows the passage actually tested to f.78v/f.79r.**
+
+Of the target's 48 distinct U signs, **19 occur at all inside these four crib cipher files; 17 occur
+inside the one verified pair (f.78v/f.79r)**: `U`(f78:17,f79:10), `T`(f78:10,f79:1), `D2`(f78:8,f79:4),
+`5`(f79:8), `4`(f78:5,f79:2), `z`(f78:3,f79:2), `BOX2`(f78:4,f79:1), `w`(f79:5), `y`(f78:4), `u`(f78:3),
+`1`(f78:1,f79:1), `p`(f78:1), `2`(f78:1), `9`(f78:1), `fe`(f79:1), `me`(f78:1), `de`(f78:1) -- 96 token
+occurrences in total. Two more (`BOX`, `hash`) occur only in the unverified f.18 fragment and are not
+tested. The other 29 U signs do not occur in any crib file at all. Script: `align_crib.py` (this folder).
+
+**Method.** A global monotonic DP (Needleman-Wunsch style, `align_crib.py:align_leaf`) aligns each leaf's
+cipher token stream to its despaced period-plaintext letter stream: each token consumes 1 letter (scored
++2 match / -3 mismatch against its key.tsv value, only for tokens already graded H) or 0 letters (a null
+code, -1), except a token whose H value is itself a known multi-letter word (e.g. `14`=que), which must
+consume that word's exact letters in one step. M/U/hidden tokens score 0 either way, so the winning path
+is driven entirely by the already-established H key, never by the sign under test -- this is what would
+license reading a value off the path for an untested sign. Verified correct on synthetic cases (perfect
+substitution, and with interspersed null codes): both recovered 100%.
+
+**KNOWN-ANSWER CONTROL, run first, before any U value was read.** Two draws, both on codes actually
+occurring in f.78v/f.79r (same design as the real test, not a different leaf or a different token count):
+
+1. The 20 *most frequent* H codes hidden (h,d,t,o,q,e,7,m,.v.,Ze,L,4+,s,A,w-,oo,n,a,c,R -- 470 of the
+   leaves' 470 H tokens are of these 35 types; these 20 account for the bulk of them). This turned out to
+   strip nearly all anchoring at once (a design flaw caught before trusting the number: the real U-sign
+   test never removes more than 15% of a leaf's H tokens, since all *other* H codes stay keyed). Recovered
+   value (majority vote across occurrences) matched the true key.tsv value on **6 of 20**.
+2. Re-drawn to match the real test's design: 20 H codes whose *combined token count* (93) is close to the
+   96 tokens the real U signs occupy, leaving the other 15 H types (377 of 470 H tokens, 80%) as intact
+   anchors -- the same anchor density the real U-sign test would have. Codes: 13,M,b,X,x,8,26,g,24,D,lam,
+   he,3,R,c,n,a,oo,w-,H. Recovered **4 of 20** (`D`,`H`,`R`,`a` correct; `13,24,26,3,8,M,X,b,c,g,he,lam,n,
+   oo,w-,x` wrong). DP alignment score strongly negative in both draws (f78 -12 and -52, f79 +1 and -27) --
+   and even with **nothing hidden** (all 35 H types scored), the DP's own best-scoring path agrees with the
+   already-established key.tsv value on only 88/309 (f78, 28%) and 76/161 (f79, 47%) of H-token positions,
+   confirming this is not an artefact of which 20 codes were hidden.
+
+**Both draws fail the >=16/20 gate by a wide margin (6/20, 4/20).** Per the brief, no U value is committed:
+**key.tsv and exceptions.tsv are unchanged, no C grade written.** This is a control-backed negative for
+*this alignment technique on this crib pair* (rule 3): whatever the reason -- the crib's own transcription
+order not matching `f78_cipher.txt`/`f79_cipher.txt`'s line order 1:1 (Bourdeau's own repository carries
+separate `cribfit.py`/`cribem.py`/`forcealign.py`/`segalign.py` scripts, suggesting he needed more than
+straight concatenation to use this crib himself), a different transcription convention between the two
+files, or simply that the "marginal decipherment" does not run continuously beside the full two pages of
+cipher -- a naive whole-leaf concatenation is not a working alignment here, so no U sign's meaning is read
+off it. **1d does not close as "no meaning source" (17 signs did occur in a covered passage) -- it closes
+as a negative for the alignment procedure, tested and rejected by its own control before any value was
+trusted.** Next step for whoever continues: a smarter alignment (per-line correspondence checked by eye
+against the image first, or reusing Bourdeau's own `cribfit.py`/`forcealign.py` rather than re-deriving the
+DP) would need to pass this same known-answer gate before any U value from it is trusted.
+
+Grade counts unchanged from (1c'): H 10,074 / M 1,648 / U 1,272 (C 0, S 0, I 0). Status stays `partial`
+(rule 5). Files: `align_crib.py` (script, rule 7 -- reruns `python3 ciphers/matignon-mayenne-1586/
+align_crib.py --hide CODES --targets CODES` from the repository root, no ciphertext or key files depend on
+its output since nothing was committed). Hosts: github.com 1 shallow clone (dbourdeau/cyphersolver,
+deleted after reading `matignon1586/`), no other host.

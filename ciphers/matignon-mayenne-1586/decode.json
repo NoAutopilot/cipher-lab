@@ -1,6 +1,5 @@
 {
   "format": "rows",
-  "exceptions": "exceptions.tsv",
   "unknown_values": ["+", "", "?"],
   "unkeyed_value": "?",
   "unkeyed_grade": "U",
@@ -8,6 +7,6 @@
   "word_values": ["il", "qui", "que", "tous", "car", "nous", "uous", "ainsi", "parceque", "lui", "point",
                   "aussi", "pas", "plustost", "nostre"],
   "style": "spaced",
-  "header": ["# Mayenne-Forget Cipher-1, Bourdeau's key + bMATBEAM's per-occurrence M choices (exceptions.tsv, grade S) applied by tools/decode_key.py",
+  "header": ["# Mayenne-Forget Cipher-1, Bourdeau's key applied by straight substitution (no beam search)",
              "# {total} tokens, grades {grades_sorted}"]
 }
