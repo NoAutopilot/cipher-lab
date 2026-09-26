@@ -1,5 +1,7 @@
 # Standing prompt for an outside model's scheduled task (ChatGPT with the GitHub plugin)
 
+> **Fetched live (owner, 26 Sept 2026 16:35 UTC):** the owner's ChatGPT scheduled task reads this file from `main` on every run and follows its "Paste this" section; edits here take effect on the next run without repasting. Keep that section self-contained and never put a credential or a private address in it.
+
 Set up once by the owner as a scheduled task in ChatGPT (every 6 hours is enough). The task reads the queue below,
 answers one prompt per run, and posts the answer back as a pull request. Nobody pastes anything by hand.
 Our side: lane orchestrators append a row to `SECOND-OPINIONS-QUEUE.tsv` (label, folder, prompt path, date,

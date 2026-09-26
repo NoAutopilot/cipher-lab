@@ -1,5 +1,7 @@
 # Standing prompt for the owner's ChatGPT runner: LOCAL-QUEUE.tsv rows (added 25 Sept 2026, 22:50 UTC)
 
+> **Fetched live (owner, 26 Sept 2026 16:35 UTC):** the owner's ChatGPT scheduled task reads this file from `main` on every run and follows its "Paste this" section; edits here take effect on the next run without repasting. Keep that section self-contained and never put a credential or a private address in it.
+
 Same loop as tools/second_opinion_runner_prompt.md: the ChatGPT instance (browser + GitHub tools) reads a queue on
 main, does one row per run, and posts the answer as a pull request. It never edits shared files; the parent check-in
 matches `[LQ-<id>]` pull requests to LOCAL-QUEUE.tsv rows, a cloud worker copies the answer into the file the row names,

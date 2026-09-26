@@ -1,5 +1,7 @@
 # Standing prompt for the owner's ChatGPT runner: JSTOR-QUEUE.tsv rows (added 26 Sept 2026, 04:25 UTC)
 
+> **Fetched live (owner, 26 Sept 2026 16:35 UTC):** the owner's ChatGPT scheduled task reads this file from `main` on every run and follows its "Paste this" section; edits here take effect on the next run without repasting. Keep that section self-contained and never put a credential or a private address in it.
+
 Same pull-request loop as tools/local_queue_runner_prompt.md and tools/second_opinion_runner_prompt.md: the ChatGPT
 instance (browser logged into JSTOR + GitHub tools) answers queued rows and posts them as one file in a pull request. It
 never edits JSTOR-QUEUE.tsv or any shared file; the parent check-in matches `[JSTOR-<stamp>]` pull requests, a Sonnet
