@@ -1,0 +1,37 @@
+line	pos	code	marks	conf	note
+1	1	bh		H	tall straight stem, small hooked loop upper right, lead-in stroke from left; matches bh atlas
+1	8	_		H	plain cursive "ouo", no cipher sign
+1	10	dl		H	small loop bottom-left, tail curls up and right to a dot; matches dl atlas
+1	10.5	+		H	single cross standing on the line, beside the dl sign
+1	24	S		H	elongated S-curve above plain cursive "af"; matches S atlas
+2	2	y		M	looped tail curling back left below a lead-in stroke, matches y atlas; slight confusion with plain letter y
+3	1	g		H	9/g-shaped loop with tail, matches g atlas
+3	11	_		H	plain cursive "rto", no cipher sign
+3	13	Lx		H	Λ shape with a bar crossing the right leg, looks like "Λ+"; matches Lx atlas
+3	14	+		H	single cross with small hook at foot, standing on the line
+3	17	e		M	one closed bowl at top with stroke rising into it and tail curling right; no marks visible above, some resemblance to dl
+3	23	f	dot	H	long f/ſ with crossbar, dot above to the upper right
+3	27	sq		L	heavy ink blot/smudge over centre; a square outline is visible at the right edge, best guess sq but badly obscured
+3	28	_		H	plain cursive "a", no cipher sign
+3	29	w	5	M	cursive w/ω shape below a curling hook ending in a dot above; hook closest to mark 5
+3	32	H		H	H shape with small "10"-like superscript inherent to the glyph, matches H atlas
+4	16	g		H	9/g-shaped sign with tail, matches g atlas
+4	19	Z		H	Z-shaped sign; cursive "n" above is context from neighbouring text, not part of this sign
+5	6	_		H	plain cursive "a", no cipher sign
+5	7	y		M	left of two adjacent y-shapes, looped tail, matches y atlas
+5	7.5	y		H	right of two adjacent y-shapes, clear looped tail, matches y atlas
+5	24	Lx	1	M	Λ with crossbar (Lx) below; short stroke with a small loop/dot above read as mark 1
+6	18	S		H	elongated S-curve, upper of two stacked signs, matches S atlas
+6	18.5	eps		H	two open bowls stacked, open to the right, lower of two stacked signs, matches eps atlas
+7	7	]		H	square box open to the left, upper of two stacked signs, matches ] atlas
+7	7.5	S7		H	7-shaped sign, lower of two stacked signs, matches S7 atlas
+7	10	S7		M	7-shape with a looped foot; could be confused with g
+7	28	+	dot	H	single cross standing on the line, dot above to the upper right
+8	8	phi		H	small slashed loop on a long stem, matches phi atlas; flanking crosses are neighbouring signs
+8	13	_		H	plain cursive "a", no cipher sign
+8	16	phi	1|~	M	small slashed loop on a stem, numeral-like "12" above read as marks 1 and ~ (tilde drawn like a 2)
+8	21	eps		M	two-bowl shape at bottom matches eps; "3"-like shape above is likely context from the line above, not a mark
+9	7	_		L	single short diagonal stroke, insufficient shape visible to identify a sign; likely cut by crop edge
+9	8	+		H	single cross standing on the line; curved shape below-left is a neighbouring sign
+9	10	sq		H	closed square box, matches sq atlas
+9	29	+		H	single cross standing on the line, flanked by neighbouring letters
