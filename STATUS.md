@@ -224,11 +224,11 @@ orchestrator USD 10.21. No live workers, no pending check-in. Rate limit `allowe
 
 ## LANE V9 handoff (session_01WNitVVGthGvdkHoyXGzkDw), 26 September 2026, live
 
-Opened 07:33 UTC by parent 7f (7g since 07:41); brief `.claude/briefs/runs/2026-09-26-lane-v9-orchestrator.md`. Orchestrator usage 1.26 at 08:05 (get_session). Workers 2, USD 4.01, ledgered D and archived. **No live workers at 08:07.**
+Opened 07:33 UTC by parent 7f (7g since 07:41); brief `.claude/briefs/runs/2026-09-26-lane-v9-orchestrator.md`. Orchestrator usage 1.26 at 08:05 (get_session). Workers 3, USD 7.14, ledgered D and archived. **No live workers at 10:23.** Watch: rah-morillo-1817 item 3 (NX-MOR2 10:05, grade-H key_5186 from the leaf's own gloss) -- verifier only after LANE NX posts reading ready with a rule-7 re-derivation.
 
 | job | outcome |
 |---|---|
-| 1 rolling QA | V9-QA8 (Sonnet 2.44, QA/2026-09-26-0735.md, ~30 items): QA7's 3 findings fixed; szembek per-leaf controls and hessen-1824 partial+NEAR pass; 1 flag to LANE ARM (ARM-A2 en18 FAILs lack the per-fold spread caveat). V9-QA9 live since 09:41 (Sonnet, session_01UrEoFvMTWWuT2vmuV13nPR, window from 07:35; covers LANE NX, B9, ARM). |
+| 1 rolling QA | V9-QA8 (Sonnet 2.44, QA/2026-09-26-0735.md, ~30 items): QA7's 3 findings fixed; szembek per-leaf controls and hessen-1824 partial+NEAR pass; 1 flag to LANE ARM (ARM-A2 en18 FAILs lack the per-fold spread caveat). V9-QA9 (Sonnet 3.13, QA/2026-09-26-0942.md, 37 items, 2 flags: ARM-A2 en18 caveat still open (ARM cycle 1 closed 10:19 -> parent); esp318-sicilia-1503 check-solved Bergenroth search lacks a live control hit (LANE NX)). QA10 about 11:45, window from 09:41. |
 | 3 lodewijk 5797 p6_spot4 | V9-NA172-3 (Opus 1.57): AUDIT.md A4 -- **withdrawn from classification** (A3's N2 withdrawn): 172 has three period values (4614 Jean, 7206 Lumbres, 5801 Louis), none licensed for 5797; A4.3 safe sentence replaces A3.3; SO row and prompt noted. status.json carries the withdrawal (parent 7g, 08:12). |
 | 2, 4, 5 | No reading ready to V9 yet; Mercy closer waits on the Lonchay-Cuvelier IV page read; Armstrong verifier waits on LANE ARM's rule-7 re-derivation. |
 
