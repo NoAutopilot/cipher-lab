@@ -157,3 +157,23 @@ retry after a connection reset on the first manifest fetch, both with a browser-
 403/429/challenge otherwise. Web search: 2 queries (Claude's built-in search tool, not a direct host fetch).
 github.com: 3 shallow clones (dbourdeau/cyphersolver, aaymeloglu/unsolved-ciphers, arya1515/cyphersolver), not
 rate-limited hosts under the good-citizen rule (git protocol, not HTTP scraping).
+
+## Positive control on the Bergenroth search (LANE NX orchestrator, 26 Sept 2026, 10:20 UTC; answers V9-QA9 finding 1)
+
+Re-fetched both `_djvu.txt` files from archive.org (4 requests, 2 s apart). Gotcha: the files' own names contain a
+literal `%20`/`%28`, so the download URL must encode the `%` itself (`938.111%2520C%252016%2528 23%2529_djvu.txt`
+without the space); a naive URL returns a 146-byte nginx 404 page that greps as "zero hits" for every term -- check
+the file size before trusting a zero. Counts in the real files (case-insensitive `grep -c`, lines):
+
+| Term | vol. I (`dli.ministry.01111`, 1,642,046 bytes) | Supplement (`dli.ministry.03718`, 1,550,697 bytes) |
+|---|---|---|
+| Ferdinand (positive control) | 846 | 194 |
+| Sicily | 19 | 2 |
+| Viceroy | 2 | 6 |
+| 1503 | 60 | 1 |
+| Messina / Mesina | 0 / 0 | 0 / 0 |
+
+Every Sicily and Viceroy hit was read in context: none is a letter from the viceroy of Sicily or from Messina (the
+viceroy hits are Columbus and the Castilian governors/viceroys of 1506-1520); the April 1503 hits are Isabella's and
+Ferdinand's despatches to the Duke de Estrada (England). The search surfaces text when present, and the verdict
+`open` stands on a controlled search. Rule 10: search result only.
