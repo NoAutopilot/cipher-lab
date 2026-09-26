@@ -116,7 +116,17 @@ Brief .claude/briefs/runs/2026-09-26-lane-ax-orchestrator.md; COMMON 2026-09-26-
   1888 (text known); 3753, 3784 newly named and 3803 re-categorised, items 12 not 8, text-known 2/12; L16 done -> AX-STEV2.
 - **Round 2 (dispatched 01:00 UTC):** AX-NAMES (Opus, session_01FUKBtJ4gn3r3mb6E1B7SLY, box 120): name codes >120 from 5810/5811/4503/5549 PS/5550-5557 glosses
   against Groen, held-out control on 5811, then 5797 spots and 4610/4611/4616 U tokens. AX-STEV2 (Sonnet, session_0134PRrczWWoivtkjqpMm6FL, box 50). Round 1 sessions archived.
-- **Ledger:** AX-5797 10.09 D, AX-5799 4.14 D-, AX-BRO3 3.85 D, AX-STEV 3.21 D (21.29 dollars).
+- **Round 2 results (01:14-01:16 UTC).** AX-NAMES: codes 121-149 are nulls; 153 Pfalzgraf, 161 Landgraf, 171 Prinz zu Oranien,
+  202 Franckreich (5550/5557 period glosses), 154 Herzog von Sachsen, 200 Herzog von Alba (Groen at the 5797 cluster); its held-out
+  gate sat at ceiling and did not pass, so no merge. By lookup two of Groen's 5797 gaps take a gloss-attested value (p5 "und
+  [161 Landgraf] ist willens", p7 "[153 Pfalzgraf] helt sich wol"); 156, 172, 182 unread. AX-STEV2: 3753, 3784, 3803 printed in
+  clear in Stevens (text known); pro3055 5/12 text known, the rest are Haldimand-circle items with HMC paraphrases.
+- **Round 3 (dispatched 01:43 UTC):** AX-NAMES2 (Opus, session_01W4KMKWTRuNmpCUv451zkYg, box 90): key_full under the
+  orchestrator's per-class re-gate (brief, 01:42 decision) and re-decodes of 5797/4610/4611/4616; AX-GLOSS (Sonnet,
+  session_01Cx3EnnY1E8isoTx5MaoCDk, box 80): glosses over codes >120 in 4496/4614/7205/7206/7208/5801/5552/5557; AX-4612 (Opus,
+  session_01UTwKsUHBs6T3cMnHypSBRh, box 120): new tools/families/block_homophonic.py, control first; AX-HMC (Sonnet,
+  session_017XPFZSTXYEe8EbS1fpLgWf, box 45): pro3055's seven HMC items.
+- **Ledger:** AX-5797 10.09 D, AX-5799 4.14 D-, AX-BRO3 3.85 D, AX-STEV 3.21 D, AX-NAMES 6.22 D, AX-STEV2 3.71 D (31.22 dollars).
 - **For the parent:** nothing on the board yet from this lane.
 
 ## LANE ZX handoff (session_01MxueEQJUGF9PWJiYcVyvBM), 25 September 2026, 15:42-22:20 UTC (closed)
