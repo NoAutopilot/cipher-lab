@@ -1,0 +1,24 @@
+X01	code=n	count=8	true=l	got=l	conf=H	OK
+X02	code=13	count=6	true=qui	got=qui	conf=H	OK
+X03	code=8	count=3	true=g	got=r	conf=L	x
+X04	code=D	count=1	true=a	got=s	conf=L	x
+X05	code=oo	count=9	true=d	got=m	conf=L	x
+X06	code=g	count=2	true=u	got=g	conf=L	x
+X07	code=H	count=11	true=o	got=o	conf=H	OK
+X08	code=a	count=8	true=a	got=a	conf=H	OK
+X09	code=b	count=5	true=e	got=n	conf=L	x
+X10	code=c	count=8	true=p	got=p	conf=L	OK
+X11	code=x	count=4	true=e	got=a	conf=H	x
+X12	code=24	count=2	true=nostre	got=t	conf=L	x
+X13	code=w-	count=10	true=d	got=d	conf=H	OK
+X14	code=M	count=5	true=f	got=f	conf=H	OK
+X15	code=R	count=6	true=p	got=p	conf=H	OK
+X16	code=X	count=4	true=a	got=la	conf=L	x
+X17	code=26	count=2	true=uous	got=b	conf=L	x
+X18	code=lam	count=1	true=b	got=b	conf=L	OK
+X19	code=3	count=2	true=e	got=i	conf=L	x
+X20	code=he	count=1	true=l	got=e	conf=L	x
+overall k=9/20 (record only)
+H answers n_high=8, right=7, need >=8 and >=8 -> FAIL
+NOTE: every H answer is a code occurring 3+ times in the passage
+H answers by passage count: X01(8,ok), X02(6,ok), X07(11,ok), X08(8,ok), X11(4,x), X13(10,ok), X14(5,ok), X15(6,ok)

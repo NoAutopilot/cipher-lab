@@ -734,3 +734,34 @@ a third seed before use on the target. Status stays `partial`.
 **Next step (one line, not done).** Pre-register "H-confidence answers only, gate >= 90% correct with >= 8 H answers" and
 run one more fresh seed; if it holds, run the U target and commit only its H-confidence answers at C; separately fetch
 and transcribe the f.78v margin (two columns) to fix the crib order for f78.6-11.
+
+## NEAR step (1h) (bMAT1H), 26 Sept 2026
+
+Job: `.claude/briefs/runs/2026-09-26-lane-b9-mat1h.md`. Intake gate 08:18 UTC: `matignon-mayenne-1586: partial (line 1) --
+edition/page or full-text-search citation found within 6 lines`, exit 0. No host touched. **Key, reading and grade counts
+unchanged (H 10,074 / M 1,648 / U 1,272); no U meaning committed; judge not re-run (last -1.371 vs shuffled -1.78).**
+
+**Pre-registered gate** (orchestrator, 08:17 UTC, commit fa0b429, before any run; setup committed c198a15 before answers):
+on `align1h/f78_corrected_stream.txt` + Bourdeau's f79, same density-matched draw (20 of the H codes with <= 11 occurrences),
+fresh seed **8620**; PASS iff n_high >= 8 and right_high >= ceil(0.9 x n_high). One blinded Opus subagent (scratch folder,
+masked_control.txt + two cribs only) marked each answer H or L before scoring. Scorer `align1h/score_gate.py`, output
+`align1h/control_score.txt`.
+
+**Result: FAIL.** n_high = 8, right among high = 7 (need 8/8). The miss: X11 = code `x` (true e, 4 occurrences), answered
+`a` at H from "places" (X10 X01 X11 c = p l a c: the aligner read the vowel as a where the cipher spells `plec`/`place`
+with e). Overall k = 9/20 (record only; bMAT1E 9/20, bMAT1G 11/20). Drawn codes and passage counts: n 8, 13 6, 8 3, D 1, oo 9,
+g 2, H 11, a 8, b 5, c 8, x 4, 24 2, w- 10, M 5, R 6, X 4, 26 2, lam 1, 3 2, he 1 (98 of 495 H tokens hidden). **Every H answer
+was a code occurring 4+ times in the passage** (8, 6, 11, 8, 4, 10, 5, 6): the high-confidence answers are the frequent,
+easy codes, while the 17 U target signs are mostly rare, so even a pass would have overstated what the rule can do on the
+target. Pooled over three seeds, H answers are 23/25 right (7/7, 9/10, 7/8). That falls short of the pre-registered 90% on
+this seed, and the aligner could still not anchor f78.8-10 and most of f79.1-3/6-7.
+
+**What would settle the target now (next step, not done).** Hand alignment against the margin crib has now failed three
+known-answer controls. Its high-confidence subset also missed the pre-registered gate on a fresh seed. The limit is not
+the aligner: the crib order for f.78v lines 6-11 is unknown, because the last four lines of Bourdeau's `crib_f78.txt` are
+two narrow margin columns and their reading order was never checked on the leaf. The f.79r lines 1-3 and 6-7 also do not
+anchor. The step that can move this is image work: fetch the f.78v and f.79r margin decipherment as native Gallica crops
+(ark btv1b9061879d, canvas 85; bMAT1F's margin fetch at 600,2150,800,2500 was reset twice). Then transcribe it line by
+line with its position against the cipher lines, fix the crib order, and only then rerun a fresh-seed control against a
+new pre-registered gate. Failing that, a period key for this Matignon/Mayenne 1586 correspondence not yet located (sibling
+letters in fr.15571 or the Matignon papers) would give H meanings for the 17 U signs directly. Status stays `partial`.

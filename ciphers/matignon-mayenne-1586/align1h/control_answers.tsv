@@ -1,0 +1,21 @@
+label	value	confidence	segments	note
+X01	l	H	f78.4 cela; f78.6 places; f78.2 sur la; f78.6 clerac; f79.4 liberte	c e X01 i=cela, X10 X01 X11 c=places
+X02	qui	H	f78.3 qui sont; f78.7 quiuet; f79.5 qui est	X02 s o n=qui son(t); X02 n U14 t=quiuet
+X03	r	L	f79.4 mettre en; f79.5; f79.6	m e X12 m X03 U14 n=mettre en; r or tre, unclear
+X04	s	L	f78.2 places quils	single occ before X02 l U22 e=quils y; could be NULL
+X05	m	L	f78.3 caumont; f78.1 presupose	caumont gives m, presupose gives s; conflict
+X06	g	L	f79.5 rouergue; f78.7 assiege	both weak
+X07	o	H	f78.3 caumont; f78.1 sions; f78.6 sont; f78.5 lon	X05 X07 n t=(m)ont
+X08	a	H	f79.2 auant; f79.4 lautomne, pouray	X08 U05 U10 n t=auant; c o U05 U17 X08 i=pouray
+X09	n	L	f78.5 reprendra; f78.10 doubled	guess; doubled X09 X09
+X10	p	L	f78.6 places; f78.11 paroistra; f78.4 cela	places gives p; cela gives l; conflict
+X11	a	H	f78.6 places; f79.3 larmee	X10 X01 X11 c U14 U10=places
+X12	t	L	f79.4 mettre; f78.11 end	single anchored occ
+X13	d	H	f78.1 de sorte; f78.4 deux; f78.2 riuiere de, descharger	X13 e u=deu(x)
+X14	f	H	f78.5 faict; f79.5 fruict; f79.4 fin	X14 i U23 c t=faict; X14 r U05 i s t=fruict
+X15	p	H	f78.6 proches; f79.1 plus; f78.5 reprendra	X15 U13 o c U11 e s=proches
+X16	la	L	f79.4 sur la fin	r X16 X14 i n=(su)r la fin; other occs unanchored
+X17	b	L	f78.5 ou bien; f79.6 vous?	ou bien gives b; f79.6 que X17 c u u s may be v(ous)
+X18	b	L	f78.3 bazeille	single occ, X18 U10 s i e e=baz(eille)
+X19	i	L	f79.4 liberte; f78.9	X01 X19 l e r=li(b)er; weak
+X20	e	L	f78.8 only	uncovered segment; pure guess
