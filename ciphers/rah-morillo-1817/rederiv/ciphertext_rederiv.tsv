@@ -1,0 +1,34 @@
+# NX-MOR3 fresh-instance re-derivation, 26 Sept 2026. Independent re-transcription of
+# ciphers/rah-morillo-1817/images/crop_5186_p1_cipher.jpg (RAH 9/7666, record 5186, f.420r),
+# read without consulting NX-MOR2's ciphertext_5186.tsv, gloss_5186.tsv or reading_5186.txt
+# (per job brief step "do NOT read ... until step 4"). One blind Sonnet subagent pass (agent
+# a374e93d81f51e10d, working from the full image with no crop tool) plus this session's own
+# direct, cropped/zoomed image reads; reconciled below where the two disagreed, always by a
+# fresh zoom of the disputed numeral in the source image (not by choosing a preference).
+# codes are period-separated exactly as written; gloss is this worker's own read of the
+# interlinear plaintext directly beneath each code, one letter per code where legible. Group 17
+# ("Bolivar") is written as two period-terminated numeral runs split by a manuscript line-wrap
+# (6.18. at the end of one line, 8.56.26.+.51. starting the next) but decodes as one 7-letter
+# word, so it is counted here as one of the 21 groups, matching the spec's own group count.
+group	codes	gloss_own_read	note
+1	51.18.50.7.51.56.33.18	Romerito	clean, matches "Romerito" (the courier/agent named in the covering catalogue entry)
+2	24.+.27.18	Paso	clean, "Paso" (passed)
+3	7.8	el	clean, "el"
+4	5.28	??	stacked/fraction-like sign at right margin (a "5" over a second sign, read as "28" on close zoom); gloss illegible cursive squiggle; code 28 not in key_5186.tsv (unread) -- subagent independently flagged this same glyph as unread
+5	24.18.51	por	clean, "por"
+6	6.+.51.56.16.51.33.+.27	barinas?	re-checked the disputed 6th numeral twice against confirmed 51/56 shapes elsewhere in this same group: it is "51" (r), not "56" (i) -- subagent's alternate reading ("...56.33..." giving a clean "barinitas") does not survive a zoomed recheck. All 9 codes ARE in key_5186.tsv (no unread sign), but the letter-for-letter decode b-a-r-i-n-r-t-a-s does not parse as a clean word; likely place name "Barinas" (the theatre of operations named in the covering catalogue entry) with a scribal or transcription irregularity around the repeated r/t; flagged, not settled
+7	3.18.16	con	clean, "con"
+8	27.18.22.18	solo?	re-checked against subagent's alternate ("3.18.50.18" / "como"): zoomed image confirms "27.18.22.18" unambiguously (clear printed "22", not "50"). Code 22 not in key_5186.tsv (unread); gloss read as s-o-?-o, plausibly "solo"
+9	33.51.7.27	tres	clean, "tres"
+10	18.5.56.3.56.+.8.7.27	oficiales	clean, "oficiales" -- exact letter-for-letter match to key values, 9/9
+11	4.56.30.18	dijo	clean, "dijo"; code 30 reads unambiguously as printed "30" here (compared directly against group 14's "30", see note there)
+12	6.7.16.56.+	benia	clean, "benia" (venia)
+13	4.7	de	clean, "de"
+14	30.BOX.+.22.+.16.+	guayana?	code 22 unread (as in group 8). The first code is written more cursively here than group 11's "30" (compared directly, side by side) but this worker still reads it as the same numeral "30"; however the gloss letter under it here looks like "g", not the "j" that 30 carries in key_5186.tsv from group 11's "dijo" -- flagged key/gloss disagreement, not settled. Candidate reading "Guayana" (a real place/province named in the period Bolivarian theatre, plausible next word after "de"), unconfirmed
+15	6.BOX.27.3.+.16.4.18	buscando	clean, "buscando" -- exact letter-for-letter match to key values, 8/8
+16	+	a	clean, single-code word "a"
+17	6.18.8.56.26.+.51	Bolivar	subagent flagged this as one continuous 7-letter run ("Bolivar"); confirmed by re-zooming the manuscript line break: "...4.18.+.6.18." ends one physical line (buscando / a / bo-) and "8.56.26.+.51." begins the next (-l,i,v,a,r), i.e. one word split across the line-wrap, not two groups. b-o-l-i-v-a-r = "Bolivar" (the figure the courier was reporting on, contextually very plausible for this 1820 item). This resolves code 26 as 'v' -- NOT in key_5186.tsv (one of its "still-unread signs"); this re-derivation proposes 26=v on the strength of this one word, flagged as a new candidate value, not adopted into key_5186.tsv by this worker (that is a key-file change, out of this job's scope)
+18	27.51.10.BOX.51.18	s?guro?	code 10 not in key_5186.tsv (unread); gloss s-r-?-u-r-o, word not settled by this worker (candidate "seguro", unconfirmed -- letter 2 gloss reads as r not e, flagged)
+19	24.+.51.+	para	clean, "para"
+20	33.51.BOX	tru	all codes keyed (t-r-u) but gloss reads as an incomplete 3-letter fragment; word not settled, possibly continues beyond the crop or is an abbreviation
+21	28.56.22.18	??io?	codes 28 and 22 both not in key_5186.tsv (unread x2); this group is written larger/bolder than the rest on the leaf (both this worker and the subagent noted this independently); gloss illegible past first letter

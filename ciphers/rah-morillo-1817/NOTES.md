@@ -410,3 +410,81 @@ key-mechanical decode and the eye-read gloss disagree outright rather than merel
 whoever does this should not start from this session's own zoom crops (a fresh eye, not a repeat of the same
 misreading, is the point). Status stays **partial** (rule 5): a working, control-backed grade-H key exists
 for part of one leaf, not a finished reading of the whole cipher block.
+
+## NX-MOR3 re-derivation (26 September 2026, LANE NX worker, fresh-instance rule-7 check)
+
+Fresh instance, per job brief: read only `specs/rah-morillo-1817.json`, `key_5186.tsv` and `decode.json`,
+then transcribed `images/crop_5186_p1_cipher.jpg` independently (one blind Sonnet subagent pass, agent
+`a374e93d81f51e10d`, working from the full 2400x1219 image with no crop tool, plus this session's own
+direct Python/Pillow crop-and-zoom reads at 3-8x) before reading any of NX-MOR2's own ciphertext, gloss or
+reading files. Files: `rederiv/ciphertext_rederiv.tsv` (own transcription, 21 groups, own gloss reads),
+`rederiv/apply.py` (mechanical key application), `rederiv/reading_rederiv.txt` (output).
+
+`python3 tools/decode_key.py ciphers/rah-morillo-1817 --check`:
+```
+ciphertext_5186.tsv: tokens 97: H 91, U 6
+reading up to date
+```
+Exits 0 -- the committed reading is not stale.
+
+### Verdict
+
+**Re-derivation agrees except 0 tokens, all (vacuously) within the M-graded set** -- there is no M grade in
+this target (grades are H/U only per NOTES.md's own NX-MOR2 table), and this worker's independent
+transcription reproduces all 97 tokens of `ciphertext_5186.tsv` exactly, including the same 6 unread signs
+at the same positions (codes 10, 22 x3, 26, 28), for all 21 committed groups. `rederiv/reading_rederiv.txt`
+and `reading_5186.txt` are letter-for-letter identical once compared group by group (diff table below). Rule
+7's re-derivation gate is met: nothing sends this reading back.
+
+### Diff table (this worker's independent transcription vs. the committed `ciphertext_5186.tsv`/`reading_5186.txt`)
+
+| group | codes (both agree) | committed decode | this worker's decode | diff |
+|---|---|---|---|---|
+| r1g1 | 51.18.50.7.51.56.33.18 | romerito | romerito | none |
+| r1g2 | 24.+.27.18 | paso | paso | none |
+| r1g3 | 7.8 | el | el | none |
+| r2g1 | 24.18.51 | por | por | none |
+| r2g2 | 6.+.51.56.16.51.33.+.27 | barinrtas | barinrtas | none (re-checked the disputed 6th numeral twice against confirmed 51/56 shapes elsewhere in the same group before matching committed; it is 51, not 56) |
+| r2g3 | 3.18.16 | con | con | none |
+| r2g4 | 27.18.22.18 | so[22]o | so[22]o | none (re-checked against the subagent's alternate "3.18.50.18"/"como" reading; zoom confirms committed's numerals) |
+| r3g1 | 33.51.7.27 | tres | tres | none |
+| r3g2 | 18.5.56.3.56.+.8.7.27 | oficiales | oficiales | none |
+| r3g3 | 4.56.30.18 | dijo | dijo | none |
+| r3g4 | 6.7.16.56.+ | benia | benia | none |
+| r4g1 | 4.7 | de | de | none |
+| r4g2 | 30.BOX.+.22.+.16.+ | jua[22]ana | jua[22]ana | none |
+| r4g3 | 6.BOX.27.3.+.16.4.18 | buscando | buscando | none |
+| r4g4 | + | a | a | none |
+| r4g5 | 6.18 | bo | bo | none |
+| r5g1 | 8.56.26.+.51 | li[26]ar | li[26]ar | none |
+| r5g2 | 27.51.10.BOX.51.18 | sr[10]uro | sr[10]uro | none |
+| r5g3 | 24.+.51.+ | para | para | none |
+| r5g4 | 33.51.BOX | tru | tru | none |
+| r6g1 | 28.56.22.18 | [28]i[22]o | [28]i[22]o | none |
+
+The isolated stacked "5" over a second sign at the row-1 right margin (this worker read the second sign as
+"28" on zoom) is the same mark NX-MOR2 already found and deliberately excluded ("one likely-marginal
+isolated mark ... no interlinear word under it at all"), not a group this worker found that NX-MOR2 missed --
+confirmed by re-reading NX-MOR2's own transcription section above after finishing this worker's own blind
+pass. Not one of the 21 counted groups, on both readings.
+
+### One finding for a successor: "bo" + "li[26]ar" read together as "Bolivar"
+
+NX-MOR2's own `gloss_5186.tsv` already reads r4g5/r5g1 as "bo" / "levar (tentative; 26 unresolved)" -- two
+separate groups. This worker independently arrived at the same numerals, but the subagent's blind pass read
+them as one continuous run and proposed **"Bolivar"** (b-o-l-i-v-a-r), i.e. the same word split across the
+manuscript's own line wrap ("...buscando a bo-" ends one line; "-livar..." starts the next), not two short
+words. That resolves previously-unread code 26 as **v**. This is corroborated by print already cited on
+NOTES.md line 3 and in NX-MOR2's own intake section: Contreras 1988's catalogue entry for this exact item
+reads "Herrera a Morillo en carta cifrada dándole noticias de Romerito, **que iba en busca de Bolívar**" --
+"who was going in search of Bolívar" lines up with this decode's own "...buscando a bo-li[26]ar" ("...looking
+for Bo-livar") almost word for word. Per rule 4, this is not asserted above grade M for code 26 on this
+worker's own say-so (one word, one worker's key/gloss reading), but the printed catalogue description is an
+independent corroborating source already in the file, not new digging -- a strong candidate for a successor
+to fold into `key_5186.tsv` as code 26 = v (grade M or S pending a second eye), rather than leaving it
+unread. Not adopted into `key_5186.tsv` by this worker (a key-file change is outside this job's brief); flagged
+here only. Rule 10: this is a reading of an already-published catalogue description matching an already-keyed
+decode, not a claim of new plaintext or new discovery.
+
+Status stays **partial** (rule 5); no change to the key, ciphertext, gloss or reading files (this job's brief
+was a re-derivation check, not a key revision).
