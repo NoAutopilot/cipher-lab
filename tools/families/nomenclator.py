@@ -34,6 +34,14 @@ training content forms. The LM vocabulary is every training word with count >= `
 
 --param keys: holdout=5 phase1=20 sweeps=30 restarts (CLI) book_forms=1800 decades=180 tie_w=0.5 slot_w=0.3 dup_w=2.0
 oov_pen=3.0 fw=120 top_content=2500 vocab_min=3 T0=1.5 T1=0.25 max_cands=700 greedy=3
+
+Cribs (ARM3-LOOP, 26 Sept 2026, family D model-in-the-loop): `params["cribs"]` = {value: word} (keys int or
+str) are held fixed through phase 1, every annealed sweep and the greedy sweeps of every restart -- a cribbed
+value is never resampled and is set in the initial key of each restart, so its neighbours are scored against
+the crib from the first sweep. Words are folded to the LM's vocabulary (an unseen word scores as <unk>). The
+driver is `tools/crib_rounds.py --family nomenclator` (make / round / score / view); `info["restart_keys"]`
+carries every restart's final key so the driver can report a per-value confidence (share of restarts agreeing
+with the best one), and `info["cribs"]` the cribs actually applied.
 Test: python3 tools/tests/test_nomenclator.py (offline, about a minute)."""
 import math, os, random, re, sys
 from collections import Counter, defaultdict
@@ -325,6 +333,13 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
         if k != "W":
             occ[v].append(i)
     kind = {v: ("P" if v < 100 else "B") for v in values}
+    # cribs: value -> word, held fixed in every restart and sweep (family D hook; values not in the cipher are
+    # reported in info and ignored, never an error, so a round can carry cribs from an earlier control)
+    fixed = {}
+    for k_, w_ in (params.get("cribs") or {}).items():
+        v_ = int(k_)
+        if v_ in kind:
+            fixed[v_] = words_of(str(w_))[0] if words_of(str(w_)) else UNK
     decade_of = {v: v // 10 for v in values if v >= 100}
     same_dec = defaultdict(list)
     for v, d in decade_of.items():
@@ -445,10 +460,12 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
         pool = blist[:1500] or ranked_content
         for v in bv:
             assign[v] = rng.choice(pool)
+        assign.update(fixed)
         return assign
 
     singles = [v for v in values if len(occ[v]) == 1]
     repeated = [v for v in values if len(occ[v]) > 1]
+    free = lambda vs: [v for v in vs if v not in fixed]  # anchors path: a cribbed value is never resampled
     phase1 = _p(params, "phase1", 20)
 
     def gibbs_sweep(order, assign, ws, wcount, T, rng):
@@ -476,26 +493,28 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
             lm.cache.clear()
 
     best, best_score, best_info = None, -float("inf"), {}
+    restart_keys, restart_scores = [], []
     for r in range(max(1, restarts)):
         rng = random.Random(seed * 7919 + r)
         assign = dict(params["_init"]) if params.get("_init") else init(rng)  # _init: test hook (start from a given key)
+        assign.update(fixed)
         # phase 1: repeated values only; every singleton reads as an unknown content word, so the anchors
         # (particles, repeated book values) are not scored against 100-odd wrong neighbours (ARM-C1 debug: from a
         # blind start the one-phase sampler stalled 600 nats below the true key on the memorised-letter test)
         if not params.get("_init") and phase1 > 0 and repeated:
-            for v in singles:
+            for v in free(singles):
                 assign[v] = UNK
             ws = seq_words(assign)
             wcount = Counter(assign.values())
             for sw in range(phase1):
                 T = T0 * (T1 / T0) ** (sw / max(1, phase1 - 1))
-                gibbs_sweep(repeated[:], assign, ws, wcount, T, rng)
-            for v in singles:  # greedy fill of the singletons given the anchors
+                gibbs_sweep(free(repeated), assign, ws, wcount, T, rng)
+            for v in free(singles):  # greedy fill of the singletons given the anchors
                 assign[v] = blist[0] if blist else ranked_content[0]
             ws = seq_words(assign)
             wcount = Counter(assign.values())
-            gibbs_sweep(singles[:], assign, ws, wcount, 0.0, rng)
-        order = values[:]
+            gibbs_sweep(free(singles), assign, ws, wcount, 0.0, rng)
+        order = free(values)
         total = sweeps + greedy
         for sw in range(total):
             T = T0 * (T1 / T0) ** (sw / max(1, sweeps - 1)) if sw < sweeps else 0.0
@@ -504,6 +523,8 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
             gibbs_sweep(order, assign, ws, wcount, T, rng)
         sc = total_score(assign)
         print(f"    restart {r}: score {sc:.1f}")
+        restart_keys.append({str(v): w for v, w in assign.items()})
+        restart_scores.append(round(sc, 2))
         if sc > best_score:
             best, best_score = dict(assign), sc
             best_info = {"restart": r}
@@ -512,7 +533,9 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
             "T0": T0, "T1": T1, "tie_w": tie_w, "slot_w": slot_w, "dup_w": dup_w, "oov_pen": oov_pen,
             "vocab": lm.V, "particle_prior": len(plist), "book_prior": len(blist), "values": len(values),
             "singletons": len(singles), "phase1": phase1,
-            "slot_order": slot_order, "best_restart": best_info.get("restart"), "score_per_token": best_score / n}
+            "slot_order": slot_order, "best_restart": best_info.get("restart"), "score_per_token": best_score / n,
+            "cribs": {str(v): w for v, w in fixed.items()}, "restart_keys": restart_keys,
+            "restart_scores": restart_scores}
     return dec, best_score, info
 
 

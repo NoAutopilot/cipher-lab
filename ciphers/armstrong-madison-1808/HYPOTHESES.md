@@ -1078,3 +1078,38 @@ finding). www.loc.gov ~28 (12 name-only collection searches with dates filter + 
 `?fo=json` fetches). tile.loc.gov 15 (7 master-resolution page fetches + 8 service-derivative thumbnail fetches).
 All >=1.5s apart, descriptive User-Agent, no 429/403/challenge seen on any host. No logins, no credentials touched.
 No subagent calls (all image reads done directly by this worker).
+
+## Family D, ARM3-LOOP crib rounds on the nomenclator design (26 Sept 2026, LANE ARM3 worker ARM3-LOOP, Fable, session_01HxYpi65CvbqzdSS53XhW4N)
+
+Job: `.claude/briefs/runs/2026-09-26-lane-arm3-j3-crib-loop.md` PART 3b. Model-in-the-loop crib rounds (the solvEX /
+solvEX2 pattern, `tools/crib_rounds.py`) on family C's design (`tools/families/nomenclator.py`), CONTROL FIRST, the
+target only if the gain gate below passes. Ciphertext witness: `ciphertext_ms.txt` (353 coded tokens, 210 distinct, 136
+singletons = 21 particle + 115 book, 126 particle / 227 book tokens; the Founders witness `ciphertext.txt` reads 369 /
+216 / 139). Started 19:32 UTC.
+
+**U0 (built 19:36 UTC).** `tools/families/nomenclator.py` takes `params["cribs"]` = {value: word}, held fixed through
+phase 1, every annealed sweep and the greedy sweeps of every restart (the anchors path: a cribbed value is never
+resampled and is set in every restart's initial key); `info["restart_keys"]` carries every restart's final key.
+`tools/crib_rounds.py --family nomenclator` adds make / round / score / view for this family: the control is
+`nomenclator.make_control` built exactly as ARM-C1's control 1 (holdout 5 = Jefferson Vol IX removed from the LM,
+the target's own coded-token count and wildcard runs, cold particle block, 180-decade book from the held-out volume's
+own register), its truth in `hidden.json` (the reader never opens it), a score verb that prints numbers only
+(blended / particle / book accuracy, cribs new / right / wrong, and the floor check: how many of the 30 most frequent
+repeated values read right), and a view verb (decode by line with value ids and a confidence digit = share of restarts
+agreeing with the best; values by frequency with three decoded contexts). Solver settings as ARM-C1: sweeps=30,
+phase1=20, 3 restarts. Working dirs `loop/seedN/`. Seeds 2, 3, 4 (seed 1's window was touched by the build's own
+smoke test in the scratchpad, so it is not used as a blind control).
+
+**PRE-REGISTERED EXPECTATION (written 19:38 UTC, before U1 ran).** solvEX2 (LEDGER.md, 24 Sept 2026) found the loop
+needs a blind decode of about 45% before the reader can find cribs; ARM-C1's matched control reads 0.135 blended blind
+(book class 0.005-0.011), and ARM-CONS1's paper ceiling for any context-only objective is about 0.62-0.67 even with every
+repeated value right (139 singletons). The likely outcome is therefore NO GAIN: the blind decode gives the reader
+function-word salad with a book class near zero, and cribs proposed from English context will be mostly wrong or will
+lift the particle class only. This job measures that; it does not assume it.
+
+**GATE (fixed before U2).** Mean gain over blind of at least 10 points blended across the 3 seeds AND above the blind
+seed-to-seed spread (max minus min of U1), with the particle and book classes reported separately; a gain only in the
+particle class is reported as such and does not pass. HEADROOM CHECK: the blind baseline is well under ceiling (rule 3).
+FLOOR CHECK: if fewer than 10 of the top-30 repeated values read right on the blind round (score command's count), the
+reader has nothing to work from; record that and still run U2 once to measure it. At most 12 value=word cribs per round,
+proposed from the view output alone; three crib rounds at most (U2-U4). U5 (target) only if the gate passes.
