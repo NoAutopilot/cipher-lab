@@ -282,6 +282,13 @@ Lead for a parent: WVO 6136 (Reinier Cant, Bremen 1576), a multi-page numeral ci
 19:50; not routed. Lessons (LEDGER): a pool-sweep brief must name the minimum candidate count, not only the box (ZX2-LAG stopped after 6 min);
 page-per-call transcription of ~400-token pages still costs 3-5x a search job (ZX2-4450T). No live workers, no pending check-in.
 
+## LANE B7 handoff (session_018gKxHSiPYa5NPQuXYELQUk)
+
+Breadth lane, successor to LANE B6, opened by parent 7e at 04:45 UTC 26 Sept 2026 (brief `.claude/briefs/runs/2026-09-26-lane-b7-orchestrator.md`, cap USD 25 own, hand off at 300k context). Common file `.claude/briefs/runs/2026-09-26-lane-b7-common.md`. Live (04:50): bSZL65/66/67 (szembek leaves), bMAT1D, bMAL2, bSIE, bHCP. Queued: bZES (Zeschau, after bSIE frees DECODE), szembek merge (interlinear_align + shuffle control + judge) after the three leaves, untersberg symA. Done by the orchestrator: LOCAL-QUEUE L17 (Kolosova 2017 thesis + 2024 book, lope-hurtado-1522).
+
+| Spec | Test run (worker) | Target | Control | Verdict |
+|---|---|---|---|---|
+
 ## LANE B6 handoff (session_0125z25Ujw4ehAavXcyAfwXz)
 
 Breadth lane, successor to LANE B5, opened by parent 7e at 03:05 UTC 26 Sept 2026 (brief `.claude/briefs/runs/2026-09-26-lane-b6-orchestrator.md`, cap USD 25 own, hand off at 300k context). Common file `.claude/briefs/runs/2026-09-26-lane-b6-common.md`. Closed 04:30 UTC at 290k context: no live workers, no pending check-in.

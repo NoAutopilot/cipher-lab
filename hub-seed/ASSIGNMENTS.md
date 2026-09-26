@@ -708,3 +708,10 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T04:47Z	session_018gKxHSiPYa5NPQuXYELQUk	LANE B7 orchestrator (Opus, cap 25)	B6 handoff items: szembek gloss recovery first, matignon revert + 1d, malsburg pass B, backlog rows 2/4/6/7	brief 2026-09-26-lane-b7-orchestrator.md; parent 7e
 2026-09-26T04:47Z	session_01SvjMDFfJZJ3uK47RYxAQrM	parent 7e done about $28, handed over to 7f	00:49 to 04:45 UTC 26 Sept; 522k context
 2026-09-26T04:47Z	session_01J57XZYekjroNoFt7SoSS3W	parent 7f (Fable, Orchestrator 7, live)	took over from 7e; hub-seed/SUCCESSOR-PROMPT.md; arms its own first check-in
+2026-09-26T04:50Z	session_01WrTy917Gybz6aEngRAu6Lf	LANE B7 bSZL65 (Sonnet, cap 5)	szembek-bk1560 leaf 65 gloss pairs	brief 2026-09-26-lane-b7-szleaf.md
+2026-09-26T04:50Z	session_01VaHHtyWeA9PfuPqcWnaaKf	LANE B7 bSZL66 (Sonnet, cap 5)	szembek-bk1560 leaf 66 gloss pairs	brief 2026-09-26-lane-b7-szleaf.md
+2026-09-26T04:50Z	session_01PxmrvKDCq6j6Ww2qWVdNn2	LANE B7 bSZL67 (Sonnet, cap 5)	szembek-bk1560 leaf 67 gloss pairs	brief 2026-09-26-lane-b7-szleaf.md
+2026-09-26T04:50Z	session_01Fhv6ycUPyGir8cwVxJz43p	LANE B7 bMAT1D (Sonnet, cap 3)	matignon revert 1c' + U code words 1d	brief 2026-09-26-lane-b7-mat1d.md
+2026-09-26T04:50Z	session_01QwosgLEw77SFNVVnbPKr3v	LANE B7 bMAL2 (Sonnet, cap 6)	malsburg pass B ff.3/12 + IC/family_run	brief 2026-09-26-lane-b7-mal2.md
+2026-09-26T04:50Z	session_01DueU8wgZEcDhHmhW5G646N	LANE B7 bSIE (Sonnet, cap 3)	siena-concistoro-2308 intake + key transfer	brief 2026-09-26-lane-b7-sie.md
+2026-09-26T04:50Z	session_01AMPr9AZeSQKoLqLLTY6jBv	LANE B7 bHCP (Sonnet, cap 5)	hessen-daenemark-1672 + hessen-1824 intake + first tests	brief 2026-09-26-lane-b7-hcp.md
