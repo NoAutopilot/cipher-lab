@@ -63,7 +63,7 @@ d'entendre que les forces que vous menez soient telles que vous mandez ... la pr
 n'estant encores retourné ledict Livio que j'ay envoyé vers luy pour adviser et résouldre ensemble des moiens que
 faudroit tenir pour l'exécuter ... J'ay envoyé gens en Allemagne, lesquelz ne m'ont encores rien faict entendre, qui
 me faict penser que les choses n'y sont si eschauffées comme les ennemys vouldroient faire acroire ..." and it
-continues in clear (Rome, the duc d'Albe, Gaeta) to "De Ferrare, ce 3e jour de janvier 1556."
+continues in clair (Rome, the duc d'Albe, Gaeta) to "De Ferrare, ce 3e jour de janvier 1556."
 
 Match against `reading.txt`: lines 01-33 of the decode follow this text in order, phrase by phrase ("iay receu les
 lettre[s] [que vous] a ple u mescrire du uingt un iesme du passe [pour] respon[dre] de ce [que] scipion ... les forces
@@ -93,7 +93,7 @@ reader and a useful check on the M-graded word codes (section 5).
 | (d) holding archive | BnF catalogue notice for Clair 349 as recorded in NOTES.md and sources/solver-diffs (Lettres orig. ... avec chiffres) | no decipherment mentioned in the notice |
 | (e) full text | tools/print_check.py, 10 phrases (phrases.txt), IA ia-global, Google Books (keyed, country=US), OpenAlex, CrossRef, listed sources | 5 of 104 rows with hits, none relevant (section 6) |
 | (f) cipher projects | Tomokiyo guise.htm (sources/cryptiana/web/guise.htm): identifies key no.15 and this letter, shows the key sheet, gives no reading; Bourdeau cyphersolver and Aymeloglu unsolved-ciphers fresh `--depth 1` clones grepped for the ark `btv1b9000668z`, "Clairambault 349", "Clair 349": 0 hits (Bourdeau's "cardinal de Ferrare" hits are a Gallica sweep listing of another volume); DECODE catalogue diff: no record for Clair 349 | no reading anywhere |
-| (g) scholarship indexes | OpenAlex (Bearer key) and CrossRef via print_check source rows; JSTOR: three rows appended to JSTOR-QUEUE.tsv (25 Sept 2026) | general Este scholarship only (section 6); Semantic Scholar 429 once; JSTOR queued, not blocking (N0 rests on the leaf and the print) |
+| (g) scholarship indexes | OpenAlex (Bearer key) and CrossRef via print_check source rows; JSTOR: three rows appended to JSTOR-QUEUE.tsv (25 Sept 2026), all done 26 Sept 2026 | general Este scholarship only (section 6); Semantic Scholar 429 once; JSTOR: two candidates read in the online viewer both concern other Este/Guise letters (Solente 1962 on a 30 Aug 1557 letter to Fourquevaux; Sénié 2021 note 61 on a 16 Aug 1556 letter, both distinct from this 3/4 Jan 1557 letter to Guise), third query no relevant hit; none prints or discusses this letter, N0 rests on the leaf and the print as before |
 
 Unreachable / not done: page image of Michaud t.6 p.239 not viewed (djvu text only; the running heads place it);
 Occhipinti and Pastor not searched (a class of N0 cannot move up on them); Calendar of State Papers Venetian/Foreign
