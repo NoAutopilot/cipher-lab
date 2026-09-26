@@ -235,20 +235,24 @@ def load_contrib_pending():
 
 
 def load_contrib_dialogue():
-    """CONTRIBUTIONS.md rows where an outside editor or archive has replied by private channel: a dialogue,
-    not yet a public citation (CITATIONS.md rule: a private reply stays here until a public page carries it).
-    The board names the institution from the Recipient column, never a person."""
-    out = []
+    """CONTRIBUTIONS.md rows an outside editor or archive has ACKNOWLEDGED: the status cell carries the marker
+    "acknowledged:" followed by what they said in their own words about the work being useful (a private
+    thank-you, a correction adopted with credit, a request to continue). A plain reply ("reply received") is
+    not an acknowledgement and stays off the board (owner's rule, 26 Sept 2026): the Hall of fame lists notes
+    that confirm the work helps, not mail sent or answered. The board names the institution from the Recipient
+    column, never a person. Returns (acknowledged rows, count of open replies not yet acknowledged)."""
+    out, open_replies = [], 0
     for cells in load_table("CONTRIBUTIONS.md", 8):
         date, item, cls, grade, recipient, channel, what, status = cells[:8]
-        st = status.lower()
-        if "reply received" not in st:
+        m = re.search(r"acknowledged:\s*(.*?)(?:;|$)", status, re.I | re.S)
+        if not m:
+            if "reply received" in status.lower():
+                open_replies += 1
             continue
-        m = re.search(r"reply received\s+(\d{1,2}\s+Sep\w*\s+\d{4})", status, re.I)
-        # the summary after the parenthesised sender, up to the first ';' or ' -- '
-        summ = re.sub(r"^.*?reply received[^:]*:\s*", "", status, flags=re.I | re.S)
-        out.append({"recipient": recipient, "when": m.group(1) if m else date, "item": item, "summary": summ})
-    return out
+        w = re.search(r"acknowledged[^:]*?(\d{1,2}\s+\w+\s+\d{4})", status, re.I)
+        out.append({"recipient": recipient, "when": w.group(1) if w else date, "item": item,
+                    "summary": m.group(1).strip()})
+    return out, open_replies
 
 
 asks = load_asks()
@@ -258,7 +262,7 @@ second_opinions = load_second_opinions()
 memo = load_memo()
 citations = load_citations()
 contrib_pending = load_contrib_pending()
-contrib_dialogue = load_contrib_dialogue()
+contrib_dialogue, contrib_open_replies = load_contrib_dialogue()
 
 # ---------------------------------------------------------------- helpers
 
@@ -878,7 +882,8 @@ page = f'''<title>Cipher Lab Board</title>
   <p class="muted small" style="max-width:70ch">Public citations of this project's work by someone outside the repository: a credit, a link, a correction adopted, co-authorship or a reply that became public. CITATIONS.md is the record; the owner is never named (rule 9), the repository is.</p>
   <p class="strip"><b>{len(citations)}</b> public citations since 23 Sept 2026</p>
   <ul class="fcards">{fame_cards}</ul>
-  {('<h3>In dialogue</h3><p class="muted small">An editor or archive has replied in private and the exchange is open: corrections adopted, questions answered, next step named. Institution only; it moves up when a public page carries it.</p><ul class="fcards">' + dialogue_cards + '</ul>') if dialogue_cards else ''}
+  <h3>Acknowledged</h3><p class="muted small">Notes from outside the repository saying the work helped: a private thank-you, a correction adopted with credit, a request to continue. Institution only; a note moves up when a public page carries it.</p>
+  {('<ul class="fcards">' + dialogue_cards + '</ul>') if dialogue_cards else ('<p class="muted small">None yet. ' + (f'{contrib_open_replies} repl' + ('y' if contrib_open_replies == 1 else 'ies') + ' in progress (CONTRIBUTIONS.md).' if contrib_open_replies else '') + '</p>')}
   {('<h3>Pending</h3><p class="muted small">Sent, awaiting a reply that has not gone public.</p><ul class="pending">' + pending_rows + '</ul>') if pending_rows else ''}
 </section>
 
