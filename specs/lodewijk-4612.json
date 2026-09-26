@@ -41,7 +41,18 @@
   "H2: block_homophonic width=4 and width=6 (only if H1's control passes and its target fails)",
   "H3: homophonic --param profile=target (free homophonic at K=100), control first"
  ],
- "cheap_test_done": [],
+ "cheap_test_done": [
+  {
+   "date": "26 Sept 2026 (AX-4612)",
+   "worker": "AX-4612 (LANE AX, Opus)",
+   "method": "tools/family_run.py --family block_homophonic (H1 width 5 offsets 0-4; H2 widths 4, 6 all offsets) and --family homophonic --param profile=target (H3); gate 0.6, 3 seeds, 8 restarts, fr16 three files; extensions: shuffle floors, real-letter positive controls (5811, 4610 cut to N=775), digit-permutation and affine/digit-reversal maps onto key.tsv with scrambled-5811 controls",
+   "control_result": "H1 0.722 (0.210-0.982) at every offset; H2 0.717-0.977; H3 0.660 (0.443-0.959); real 5811 blind 0.871 and 4610 0.948 of key.tsv's letters (solver -1901/-1824); digit map 3/3 and affine 4/4 controls recover the scramble exactly",
+   "target_result": "every H1/H2 target FAIL -1.24 to -1.37, solver -2105 to -2239 (shuffle floor -2224); H3 FAIL -1.213, solver -1865 (its shuffle floor -1921, judge -1.217); digit map best -2695.7 salad; affine: identity best of 3,960",
+   "judge_calibration": "fr16 FAILs key.tsv's own readings of 5811 (-1.233) and 4610 (-1.100) at N=775: judge cannot decide on these drafts; per-fold FN 7.5/67.5/2.0 pct (blended 25.7, 3 folds)",
+   "verdict": "no reading; H1, H2, digit-permutation and affine readings of key.tsv are control-backed negatives on this transcription (47.8 pct pass agreement, rule 2); H3 untested-not-excluded (weak control)",
+   "next_test_not_run": "image check of 4612's numeral hand against 4610 and re-transcription; then an 18x5 consonant-vowel syllable-grid family over 1-90 if the image supports it"
+  }
+ ],
  "judge": {
   "language": "fr",
   "corpora": [

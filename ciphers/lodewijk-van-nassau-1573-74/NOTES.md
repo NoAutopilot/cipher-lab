@@ -1079,3 +1079,110 @@ Requests: none (disk only). No subagents. Files: `key_full.tsv`, `decode_{5797,4
 `reading_{5797,4610,4611,4616}_full{.txt,_tokens.tsv}`, `revisions_for_audit.tsv`, `axnames/{build_key_full.py,
 compare_full.py,revisions.py,null_raw.py,null_raw.tsv,still_unread.py,still_unread.tsv,regress_sib.out,
 sanity_5810.out,sanity_5811.out,sanity_4503.out}`. Novelty not classified.
+
+## AX-4612: block-constrained cryptanalysis (26 Sept 2026, LANE AX)
+
+Worker AX-4612 (Opus), brief `.claude/briefs/runs/2026-09-26-lane-ax-4612.md`, 01:43-02:12 UTC. Cryptanalytic
+attempt only: no reading is claimed, no token graded, novelty not classified (4612 stays N3, no reading).
+
+**Intake gate** (`python3 tools/intake_gate_check.py lodewijk-van-nassau-1573-74`, exit 0):
+`lodewijk-van-nassau-1573-74: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+AUDIT.md (A1, kept in D1): "4612 | 6 Mar 1574 | N3 (kept) | coverage is the same as the others, but there is no reading
+to qualify: most keyed runs do not read as French, so 'no prior decipherment located' would describe a decipherment
+this repo does not have. Re-class when a reading exists"; D1: "4612 stays N3, as A1 set it." The principal editions
+(Groen, Blok 1887 and 1889, Gachard, Kervyn, La Huguerye) were covered by A1.
+
+**Spec.** `specs/lodewijk-4612.json` (`ax4612/make_spec.py`): numerals 1-120 of `ciphertext_4612.tsv` as transcribed,
+split into 20 runs at clear words; N=775, K=100; dropped 19 codes 121-149 (nulls, AX-NAMES) and 18 codes >=150 (names or
+words); the 1574 of the date line is clear text. p1_L18/p1_L19 repeat an 8-numeral stretch with the same clear words
+(possibly one line read twice); kept, not repaired. **This is a transcription (rule 2):** 4612's two blind passes agreed
+on 559/1170 = 47.8% of aligned columns (4610 78.6%, 4616 83.8%), 678 of 1170 rows are M. Every negative below is
+conditional on it.
+
+**Judge corpus.** fr16, all three files (Catherine de Medicis t.1-2, Marguerite de Valois), 16th-century court
+letters, era-matched. Per-fold spread at N=775 (`ax4612/fr16_folds.py`, output `ax4612/fr16_folds.txt`): held-out
+Catherine t.1 7.5%, t.2 67.5%, Marguerite 2.0%; blended 25.7% over 3 folds. Three files with a 34x spread: under rule 3
+this is a judge of unknown reliability. **Calibration on real letters:** key.tsv's own reading of 5811 cut to 775
+numerals FAILs this judge at -1.233, and of 4610 at -1.100 (real_p05 -0.944), because the drafts' transcription errors
+and missing word breaks at this length pull real Nassau French below the gate. On this material the judge cannot
+decide. The comparisons below therefore use the solver's own objective (same N, same model) against a shuffle floor and
+against real letters, as well as the judge.
+
+**New tool.** `tools/families/block_homophonic.py` (+ `tools/tests/test_block_homophonic.py`, offline, about 3 s: geometry,
+key.tsv round trip, control shape, known answer 1.000 at width 5 offset 0 vs 0.256 at the wrong offset). It rewrites the
+ciphertext as block labels (width, offset, lo..hi) and anneals only the block -> letter map through
+`homophonic_anneal.solve`. Control: same width/offset, random block order, homophone choice weighted by the target's
+own value counts, `gap` letters cut at each run boundary (gap=80, about 351 clear-word tokens over 19 interruptions).
+
+**Pre-registered** in HYPOTHESES.md at 01:48 UTC before any target run: gate 0.6, 3 seeds, 8 restarts. Every row, control
+beside target (solver score: higher is better; judge fr16, null_p99 -1.718, real_p05 -0.944):
+
+| run | control mean (range) | target solver score | target judge |
+|---|---|---|---|
+| H1 w5 o0 | 0.722 (0.210-0.982) | -2175.3 | FAIL -1.302 |
+| H1 w5 o1 | 0.722 (0.210-0.982) | -2142.2 | FAIL -1.312 |
+| H1 w5 o2 | 0.722 (0.210-0.982) | -2161.7 | FAIL -1.324 |
+| H1 w5 o3 | 0.722 (0.210-0.982) | -2141.2 | FAIL -1.280 |
+| H1 w5 o4 | 0.722 (0.210-0.982) | -2133.3 | FAIL -1.300 |
+| H2 w4 o0 | 0.852 (0.599-0.982) | -2121.8 | FAIL -1.241 |
+| H2 w4 o1 | 0.977 (0.974-0.982) | -2115.7 | FAIL -1.277 |
+| H2 w4 o2 | 0.966 (0.947-0.982) | -2105.3 | FAIL -1.299 |
+| H2 w4 o3 | 0.966 (0.943-0.982) | -2108.9 | FAIL -1.330 |
+| H2 w6 o0 | 0.717 (0.225-0.966) | -2187.0 | FAIL -1.302 |
+| H2 w6 o1 | 0.873 (0.676-0.982) | -2184.9 | FAIL -1.286 |
+| H2 w6 o2 | 0.972 (0.961-0.982) | -2205.6 | FAIL -1.366 |
+| H2 w6 o3 | 0.972 (0.961-0.982) | -2239.3 | FAIL -1.347 |
+| H2 w6 o4 | 0.977 (0.974-0.982) | -2197.7 | FAIL -1.313 |
+| H2 w6 o5 | 0.813 (0.489-0.977) | -2167.6 | FAIL -1.283 |
+| H3 homophonic profile=target | 0.660 (0.443-0.959) | -1865.0 | FAIL -1.213 |
+| *extension* H1 w5 o0, 4612 shuffled (floor) | 0.722 (0.210-0.982) | -2224.3 | FAIL -1.387 |
+| *extension* H3, 4612 shuffled (floor) | 0.660 (0.443-0.959) | -1921.2 | FAIL -1.217 |
+| *extension* real 5811 cut to N=775, w5 o0 | 0.989 (0.978-0.997) | -1901.1; **0.871 of key.tsv's letters recovered blind** | FAIL -1.128 |
+| *extension* real 4610 cut to N=775, w5 o0 | 0.739 (0.462-0.965) | -1823.7; **0.948 of key.tsv's letters recovered blind** | FAIL -1.048 |
+| *extension* H3 on real 5811 N=775 | 0.562 (0.317-0.915), CONTROL BELOW GATE | not run | - |
+
+The H1 control's seed 1 is a search failure (0.210; its plaintext window, printed and checked by eye, is ordinary French), which is
+why the H1 mean is 0.722 and not about 0.98. Recoveries for the real letters come from `ax4612/score_realctl.py`.
+
+**What this shows.** The block family reads real Nassau letters in their actual noisy drafts blind (5811 0.871, 4610
+0.948 of key.tsv's letters, solver scores -1824 to -1901). On 4612 it scores -2105 to -2239 at every width 4/5/6 and
+offset, next to its own shuffle floor (-2224) and far from the real letters, and the decodes are letter salad
+(`families/block_homophonic-*.txt`). H3's decode (-1865) is level with H3's shuffle floor (-1921; judge -1.213 against
+-1.217): no signal. **H1 and H2 are control-backed negatives on this transcription**. H3 is a negative with a weak
+control (0.660 on synthetic, below gate on real 5811): not excluded.
+
+**Diagnostics (extension, `ax4612/`).**
+- `ic_scan.py`: block IC at w=5 for 4612 is 0.0617 at best, flat across offsets (null p95 0.0567). The same statistic is
+  0.078-0.081 at o0 for sib, 5811 and 4610, with a clear peak there. Residue classes (v mod m, m=10-48) show nothing.
+- `ic_by_conf.py`: 4612's **pass-agreed (H) numerals alone** (N=429) give w5 IC 0.0629, flat, against 0.0804 (4610 H,
+  N=1115) and 0.0805 (4611 H, N=852) at o0. Random transcription noise alone therefore does not explain 4612's lack of
+  block structure, unless both passes misread the same digits the same way.
+- `digit_map.py` (E3): key.tsv read through a consistent digit misreading (a permutation of the ten digits,
+  hill-climbed, 20 restarts). Control: real 5811 at N=812 through a random digit permutation, 3 seeds; each recovered
+  10/10 digits and key.tsv's reading at 1.000. Target: the best map scores -2695.7 (identity -2954.7; the real 5811
+  reading scores -2140.1 at the same N) and decodes to salad. Negative.
+- `affine_map.py` (E4): key.tsv read through v' = a(v-1)+b mod 120 +1 (all 3,840 maps, including every cyclic shift and
+  the reversal) and through digit reversal plus shift (120). Control: 5811 through a random affine map, 4 seeds, one of
+  them a fixed non-involution (a=7, b=5); the inverse was found 4/4. Target: identity is the best of 3,960 (-2954.7;
+  median -3417.0; the real 5811 reading scores -2137.9). Negative.
+- Value profile (`ax4612` scan, not a test): 4612 uses values 1-90 densely (718 of 775 numerals) and 91-120 hardly at
+  all (57). Inside blocks of five over 1-90 the second position carries 229 of 718 and the fifth 68 (mod-5 class IC
+  0.2259, about the null's p97). 18 blocks of five over 1-90 would fit an 18-consonant x 5-vowel syllable grid
+  (b c d f g h k l m n p q r s t v x z x a e i o u), and La Huguerye (AUDIT A1) says this cipher had syllables. The
+  evidence is weak and the design is untested.
+
+**Result.** No reading. 4612 is not in key.tsv's design with another letter order (H1). It is not in blocks of 4 or 6
+(H2). It is not key.tsv through a digit permutation, an affine map, a shift, a reversal or a digit reversal. Each of
+these was tested against a matched control that passed, and H1/H2 also against real-letter positive controls. The free
+homophonic (H3) is untested-not-excluded (weak control). Status of the folder unchanged (`partial`).
+
+**Next steps (suggestions, not done):** (1) look at the 4612 page images against 4610's for the numeral hand. Is it a
+different secretary, and are there marks on the numerals, such as a dot or a stroke that a syllable table would use?
+Then re-transcribe 4612 from the images (47.8% pass agreement is the weakest of the six letters). (2) If the image
+supports it, a syllable-grid family (18 consonant blocks x 5 vowel positions over 1-90), control first. (3) H3 at more
+iterations or with the table's contiguity as a prior, once a control at N=775 reaches the gate.
+
+Files: `specs/lodewijk-4612.json`, `tools/families/block_homophonic.py`, `tools/families/__init__.py` (registry),
+`tools/tests/test_block_homophonic.py`, `HYPOTHESES.md` (pre-registration + 21 rows), `families/block_homophonic-*`,
+`families/homophonic-1-profile=target-ax4612h3freehomo.txt`, `ax4612/` (scripts, run logs, fr16_folds.txt,
+digit_map.txt, affine_map.txt, realctl_*). No network requests.

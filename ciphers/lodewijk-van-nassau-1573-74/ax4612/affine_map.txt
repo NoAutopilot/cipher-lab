@@ -1,0 +1,6 @@
+CONTROL seed 1: 5811 N=812 scrambled by a=19 b=72; top affine a=19 b=72 score -2137.9 (unscrambled -2137.9; recovered=True); 2nd -2336.2
+CONTROL seed 2: 5811 N=812 scrambled by a=119 b=110; top affine a=119 b=110 score -2137.9 (unscrambled -2137.9; recovered=True); 2nd -2336.2
+CONTROL seed 3: 5811 N=812 scrambled by a=31 b=75; top affine a=31 b=75 score -2137.9 (unscrambled -2137.9; recovered=True); 2nd -2336.2
+CONTROL seed 4: 5811 N=812 scrambled by a=7 b=5; top affine a=103 b=85 score -2137.9 (unscrambled -2137.9; recovered=True); 2nd -2336.2
+TARGET 4612: identity -2954.7; top 5: -2954.7 affine a=1 b=0; -2981.3 affine a=1 b=1; -2991.6 digit-reverse then shift b=99; -2998.0 digit-reverse then shift b=80; -3015.3 digit-reverse then shift b=100
+TARGET 4612: median over all 3960 maps -3417.0
