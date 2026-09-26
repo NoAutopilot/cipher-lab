@@ -2147,3 +2147,85 @@ $ python3 crop_plain_leaf.py f55v
 f55v: 19 line crops -> plain_crops/f55v/, manifest plain_crops/f55v/manifest.tsv, 165 plain boxes marked
 ```
 629 plain boxes total across the four leaves (of 1,233 for the whole letter -- this job's first half).
+
+## SALV-KP: known-plaintext and word-list scan (26 Sept 2026, LANE SALV)
+
+Worker SALV-KP (Sonnet, cap USD 4, box 45 min), 20:49-21:0x UTC. Job 3 of LANE SALV: scan contemporary sources for
+what someone at Charles V's court wrote about the week of 14-18 Oct 1525, to give the code runs cribs and give
+job 2's context-word scoring a vocabulary. Disk fetches only (archive.org advancedsearch/metadata/_djvu.txt and
+be-api fts); no images, no key trials, no solving. Full output in `kp/hits.tsv`, `kp/wordlist.txt`, `kp/manifest.tsv`.
+
+**U1, Sanudo's *I Diarii*.** Found and read in full: vol.40 (`idiariidimarinos40sanu`, printed range "I OTTOBRE
+MDXXV -- XXVIII FEBBRAIO MDXXVI", confirmed by its own title-page heading and content). **Identifier trap**: the
+"...sanugoog" identifier family (`idiariidimarino40sanugoog`, etc.) numbers Google's scan sequence, not the
+printed Tomo -- `idiariidimarino40sanugoog` is actually Tomo XXXIV; five further probes (id 42/43/44/45/47) came
+back Tomo XLVII/LIII/XIX/XV/VIII respectively, no offset pattern. The real vol.40/41 sit under a *different*
+identifier family with no "goog" suffix (`idiariidimarinosNNsanu`), found only via a be-api fts field-filtered
+query (`q=creator:(sanudo) AND Salviati AND Toledo`) that ranked them top of 52 hits -- worth recording as a
+tools/ note for any future Sanudo fetch: check the title page's own "MDXXV...MDXXVI" heading before trusting the
+identifier's embedded number, on this and any other Google-Books-scanned multi-volume series.
+
+Six real hits in vol.40 (verbatim excerpts, dates, columns in `kp/hits.tsv`): (1) a 1 Oct entry (Rome, via Marco
+Foscari) noting Cardinal Salviati had **not yet arrived** at Charles V's court as of a Spain letter of the 3rd,
+bracketing his arrival to early October; (2) an 18 Oct Rome entry (relayed via a Lyon letter) describing "bollori"
+(a stir/friction) over the Emperor's reception of "il Cardinal Salviati legato", an audience that turned out
+peaceable, with the Emperor "desideroso di paxe" and willing to discuss a crusade against the infidels; (3) a
+direct dispatch from **sier Andrea Navaier (Navagero)**, the Venetian orator resident at Toledo, dated **17
+Ottobre 1525**, opening "heri scrisse per via dii Legato, qual spazoe a Roma per mar" -- Navagero's own 17 Oct
+letter names the Legate's courier to Rome sent the day before, i.e. **16 October**, the target letter's own
+date; (4) a full dispatch from the same Navagero dated **10 Ottobre 1525** (arrived late, entered in the diary's
+December section) reporting the Legate had "do mandati dii Papa, uno streto e l'altro (ampio)" (two papal
+mandates, one narrow and one broad), that the imperial Gran Canzellier (Gattinara) asked to see one and was shown
+the broad one, and that "hanno comenza a praticar acordo con Cesare" with the Chancellor visiting the Legate's
+house; (5) the same Navagero's continuation dated **16 Ottobre 1525** (the target letter's exact date), on the
+Duke of Sessa's brother and the Milan succession, plus "Antonio Bagaroto" and "Nicolo Trapolin" named as men at
+court with the Legate working on the restitution of exiles' property; (6) the volume's own printed index entry
+for "Salviati... Giovanni, cardinale diacono del titolo dei ss. Cosma e Damiano, Legato in Ispagna" with about 65
+page references across the volume (not individually walked, out of time budget).
+
+Vol.41 (`idiariidimarinos41sanu`) checked and found **out of range**: its own heading reads "MARZO MDXXVI -- XXX
+GIUGNO MDXXVI" (March-June 1526), after the 14-18 Oct 1525 window and after that window's own mail-arrival lag
+(confirmed inside vol.40 already, where 10/16 Oct despatches arrive by early December); 46 raw Toledo/Salviati
+string hits exist in vol.41 but were not read, per the brief's own conditional ("if its range starts in late
+1525", which it does not).
+
+**U2, *Lettere di principi* (Ruscelli).** Vols 1 (`letterediprincip01char`) and 3 (`letterediprincip03char`) read
+in full, matching the R6 S0 pass's method on vol.2. **0 "Salviati" hits in either volume.** Vol.1's only Toledo
+dateline is a 26 Sept **1519** letter (six years too early); vol.3's only 1525 dateline is a 6 Dec 1525 letter
+from Milan (Hieronimo Negro, on a Duke-of-Milan death rumour), no Toledo or Salviati connection. Consistent with
+the check-solved pass's earlier vol.2 negative: this anthology carries nothing for Salviati's Spain legation.
+
+**U3, Guicciardini.** *Carteggi* (ed. Ricci, *Fonti per la storia d'Italia*, 1938-72): **not on archive.org at
+all** -- a modern critical edition, no identifier found by any query tried. *Opere inedite* (Canestrini,
+1857-67): the only two "Lettere e istruzioni scritte durante la luogotenenza generale" volumes on archive.org
+(`opereineditedif12guicgoog` "Parte prima" vol.4, `opereineditedif14guicgoog` "Parte seconda" vol.5) both open
+with the subtitle "Dal trattato di Cognac alla morte di Giovanni de' Medici" and their first dated letter is April
+1526 -- **entirely after** the 22 May 1526 Treaty of Cognac, so after the target's Oct 1525 window; 0 "Toledo"
+hits and no "1525" year-string appears in either file (the 17 and 9 "Salviati" hits are all Iacopo/Jacopo
+Salviati, the cardinal's father, in unrelated domestic Florentine correspondence). A be-api fts search
+(`creator:(guicciardini) AND Salviati AND Toledo`) surfaced two further candidates
+(`opereineditedif11guicgoog`, `opereineditedif19guicgoog`, duplicate scans of the same book) that turned out to
+be Guicciardini's own much earlier embassy, *La Legazione di Spagna... 1512-1513* -- wrong period, wrong mission
+entirely. A direct advancedsearch for `title:(luogotenenza)` confirms only these two (post-Cognac) parts exist
+on archive.org under this title; the Nov 1524-March 1526 portion of Guicciardini's own lieutenancy correspondence
+(which would include Oct-Nov 1525 and might mention the Salviati legation from the Romagna side) **is not
+reachable in full text from this host** -- a route result, not a negative, per the brief's own allowance.
+
+**Where not found:** Lettere di principi vols 1 and 3 (0 Salviati hits, checked in full); Guicciardini's Carteggi
+(ed. Ricci) and the pre-Cognac portion of his Opere inedite (not on archive.org); Sanudo vol.41 (out of the
+relevant date range, not read in full).
+
+**Word list:** `kp/wordlist.txt`, 41 entries -- names, offices and recurring vocabulary from the Toledo court that
+week (Navagero, Gran Canzellier, Gattinara's role implied, Cardinal Colonna, Madama di Lanson, Duca di Sessa,
+Antonio Bagaroto, Nicolo Trapolin, mandati/streto/ampio, acordo, capitoli, impresa contra infedeli, Borgogna,
+place names Toledo/Madril/Sibilia/Guadalupo/Barzelona, and the diary's own Venetian-dialect month names). No word
+is attached to any code sign; this is context vocabulary for job 2's scoring pass, not a crib assignment.
+
+Requests: 28 to archive.org total (13 advancedsearch/metadata/be-api-fts JSON calls, 15 `_djvu.txt` downloads),
+each >=1.5s apart, well under the 60-request cap; one download needed a retry for a missing `-L` redirect flag
+(not a host error). No Gallica, no other host, no credentials, no subagents.
+
+```
+$ python3 tools/file_shrink_guard.py ciphers/fr2933-salviati-1525/NOTES.md ciphers/fr2933-salviati-1525/kp/hits.tsv ciphers/fr2933-salviati-1525/kp/wordlist.txt ciphers/fr2933-salviati-1525/kp/manifest.tsv
+```
+(output pasted in the done line)

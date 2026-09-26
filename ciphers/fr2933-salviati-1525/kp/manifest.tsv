@@ -1,0 +1,30 @@
+url	bytes	date_utc	purpose
+https://archive.org/advancedsearch.php?q=title:(Diarii)+AND+creator:(Sanuto)	~3 KB (JSON)	2026-09-26	find Sanudo Diarii identifiers by title/creator
+https://archive.org/metadata/idiariidimarino40sanugoog	~1 KB (JSON, x3 calls)	2026-09-26	check volume/date fields for candidate identifier (turned out to be Tomo XXXIV, a false lead)
+https://archive.org/download/idiariidimarino40sanugoog/idiariidimarino40sanugoog_djvu.txt	0 (failed, no -L) then 1,376,163	2026-09-26	fetch candidate vol text (identified as Tomo XXXIV, wrong volume -- see hits.tsv identifier-trap row)
+https://archive.org/advancedsearch.php?q=creator:(Sanuto)+AND+identifier:idiariidimarino*	~4 KB (JSON)	2026-09-26	list all "...sanugoog" identifiers (43 of an assumed 58 volumes present; no simple id-to-tomo mapping)
+https://archive.org/download/idiariidimarino42sanugoog/..._djvu.txt	1,518,313	2026-09-26	probe for Tomo XL/XLI by content (found Tomo XLVII -- wrong)
+https://archive.org/download/idiariidimarino43sanugoog/..._djvu.txt	1,522,100	2026-09-26	probe (found Tomo LIII -- wrong)
+https://archive.org/download/idiariidimarino44sanugoog/..._djvu.txt	1,381,233	2026-09-26	probe (found Tomo XIX -- wrong)
+https://archive.org/download/idiariidimarino45sanugoog/..._djvu.txt	1,587,694	2026-09-26	probe (found Tomo XV -- wrong)
+https://archive.org/download/idiariidimarino47sanugoog/..._djvu.txt	1,594,058	2026-09-26	probe (found Tomo VIII -- wrong)
+https://be-api.us.archive.org/fts/v1/search?q=Salviati+Toledo&identifier=idiariidimarino40sanugoog	~1 KB (JSON)	2026-09-26	confirm 0 hits on the wrong (Tomo XXXIV) identifier
+https://be-api.us.archive.org/fts/v1/search?q=%22Cardinal+Salviati%22+Toledo	~5 KB (JSON)	2026-09-26	global full-text search test (Pastor's History of the Popes dominates; no Sanudo identifier in top 20)
+https://be-api.us.archive.org/fts/v1/search?q=Sanuto+Toledo+Salviati+ottobre	~2 KB (JSON)	2026-09-26	narrow search attempt (still too broad, no Sanudo hit in top 15)
+https://be-api.us.archive.org/fts/v1/search?q=Navagero+Toledo+ottobre+1525	~2 KB (JSON)	2026-09-26	narrow search attempt (same, loose OR ranking, no Sanudo hit)
+https://be-api.us.archive.org/fts/v1/search?q=creator:(sanudo)+AND+Salviati+AND+Toledo	~2 KB (JSON)	2026-09-26	field-filtered search -- SUCCESS: surfaced "idiariidimarinos40sanu"/"idiariidimarinos41sanu" (the real vol.40/41, a different identifier family with no "goog" suffix)
+https://archive.org/metadata/idiariidimarinos40sanu	~1 KB (JSON)	2026-09-26	confirm volume field = "v.40"
+https://archive.org/metadata/idiariidimarinos41sanu	~1 KB (JSON)	2026-09-26	confirm volume field = "v.41"
+https://archive.org/download/idiariidimarinos40sanu/idiariidimarinos40sanu_djvu.txt	2,906,188	2026-09-26	full text of Sanudo Diarii v.40 (1 Ottobre 1525 -- 28 Febbraio 1526) -- the main U1 source
+https://archive.org/download/idiariidimarinos41sanu/idiariidimarinos41sanu_djvu.txt	2,483,099	2026-09-26	full text of Sanudo Diarii v.41 (confirmed out of range: Marzo-Giugno 1526)
+https://archive.org/advancedsearch.php?q=title:(Lettere+di+principi)	~5 KB (JSON)	2026-09-26	find Lettere di principi vol.1/vol.3 identifiers
+https://archive.org/download/letterediprincip01char/letterediprincip01char_djvu.txt	1,495,868	2026-09-26	U2: Lettere di principi vol.1 full text
+https://archive.org/download/letterediprincip03char/letterediprincip03char_djvu.txt	1,526,684	2026-09-26	U2: Lettere di principi vol.3 full text
+https://archive.org/advancedsearch.php?q=creator:(Guicciardini)+AND+title:(Opere+inedite)	~5 KB (JSON)	2026-09-26	list Guicciardini Opere inedite identifiers
+https://archive.org/download/opereineditedif12guicgoog/..._djvu.txt	1,151,691	2026-09-26	U3 candidate (turned out to be "Luogotenenza generale, Parte prima", vol.4, but covers April-Nov 1526, post-Cognac)
+https://archive.org/download/opereineditedif14guicgoog/..._djvu.txt	722,323	2026-09-26	U3 candidate ("Parte seconda", vol.5, same post-Cognac period)
+https://archive.org/download/opereineditedif07guicgoog/..._djvu.txt	798,476	2026-09-26	U3 candidate labelled "vol.3" (turned out to be Storia Fiorentina, unrelated content)
+https://be-api.us.archive.org/fts/v1/search?q=creator:(guicciardini)+AND+Salviati+AND+Toledo	~2 KB (JSON)	2026-09-26	field-filtered search for the right Guicciardini volume
+https://archive.org/download/opereineditedif11guicgoog/..._djvu.txt	531,297	2026-09-26	top fts hit (turned out to be "La Legazione di Spagna", 1512-1513 -- Guicciardini's own earlier embassy, wrong period)
+https://archive.org/download/opereineditedif19guicgoog/..._djvu.txt	530,384	2026-09-26	second fts hit (same "La Legazione di Spagna" 1512-1513, a duplicate Google scan)
+https://archive.org/advancedsearch.php?q=creator:(Guicciardini)+AND+title:(luogotenenza)	~1 KB (JSON)	2026-09-26	confirm only 2 Lieutenancy-correspondence identifiers exist on archive.org (both post-Cognac; the Nov 1524-Mar 1526 portion is not present)
