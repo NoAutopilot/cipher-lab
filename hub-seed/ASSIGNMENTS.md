@@ -674,3 +674,7 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T03:05Z	session_01A4jfQZGS8SUuDamZK19KZq	LANE B5 orchestrator done $6.30 D, archived by parent 7e	handoff STATUS.md LANE B5 handoff; 12 workers 36.54; matignon NEAR row; breadth queue near empty
 2026-09-26T03:05Z	session_018VkFfDWY4drC9a9aozmop9	LANE V7 orchestrator done $7.42 D, archived by parent 7e	handoff STATUS.md LANE V7 handoff; clair349 N0, thurloe P25-P28 N0 x4; QA6 brief ready for V8
 2026-09-26T03:05Z	session_01M4wBVhbP8TcGwjzDAZncni	retrospective n done $2.82 D, archived	RETRO-2026-09-26b.md, 5 proposals; RETRO-APPLY-N pending (7e)
+2026-09-26T03:06Z	session_0125z25Ujw4ehAavXcyAfwXz	LANE B6 orchestrator (Opus, cap 25)	B5 handoff items: two check-solved workers, matignon M/U beam, untersberg second pass, fresh scout vs solver-repo HEAD	brief 2026-09-26-lane-b6-orchestrator.md; parent 7e
+2026-09-26T03:06Z	session_01YRuw3TCf7d1w85DLmYNnw4	LANE V8 orchestrator (Opus, cap 50)	QA6 now, verifiers for reading-ready lines (AX Nassau expected), SO PRs	brief 2026-09-26-lane-v8-orchestrator.md; parent 7e
+2026-09-26T03:06Z	session_01QSwxQ1kjVdpxWvXjWyPzfa	RETRO-APPLY-N (Sonnet, cap 6)	RETRO-2026-09-26b.md proposals 1-5 + LEARN-0058 item 4	brief 2026-09-26-parent-retro-apply-n.md; parent 7e
+2026-09-26T03:06Z	session_01SsuZ47wgUUPDy36B9Lhfbw	LEARN-5 (Sonnet, cap 5)	cross-account learning pass, window from 2026-09-26T00:58Z	brief 2026-09-26-parent-learn5.md; parent 7e
