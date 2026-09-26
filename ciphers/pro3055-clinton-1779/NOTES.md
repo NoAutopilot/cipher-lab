@@ -350,10 +350,10 @@ Requests this session: discovery.nationalarchives.gov.uk 26 (1.5-1.6s apart thro
 | 3784 (PRO 30/55/32/97) | 16-17 Sept 1781 | Cornwallis to Clinton | **Stevens 1888 vol.2 pp.156-157, item 156, page image checked this session** | **text known (C)** — full letter in clear; endorsed "Cypher Duplicate" (whole letter enciphered in manuscript) | none; this item is found-solved |
 | 3803 (PRO 30/55/32/116) | 30 Sept 1781 | Clinton to Cornwallis | **Stevens 1888 vol.2 pp.172-173, item 162, page image checked this session** | **text known (C)** — full letter in clear; tagged "[Duplicate, in Cypher.]" | none; this item is found-solved |
 | 2380 (PRO 30/55/19/98) | 22 Oct 1779 | Clinton to Haldimand | HMC Report calendar paraphrase only (1904-09), page not opened | partly known (paraphrase, not a verified decipherment) | outside Saberton's Common cipher scope (Haldimand, not Cornwallis/Clinton; also 2 years before the CP pt.11 window) — open the HMC Report's own printed volume/page |
-| 2894 (PRO 30/55/24/76) | 1780 (year only) | Clinton to Haldimand | content matched to a British Museum/Library comparison copy per HMC's own 1904-09 note | known elsewhere (via the BM/BL copy, not by breaking the cipher) | outside Saberton's scope; locate the BM/BL comparison copy directly (specific enough crib: French fleet, 3 May, seven ships of the line) |
-| 3868 (PRO 30/55/33/65) | 12 Nov 1781 | Clinton to Haldimand | HMC Report calendar paraphrase only, page not opened | partly known | outside Saberton's scope (Haldimand correspondent; also after CP pt.11's 19 Oct 1781 end) — open the HMC Report |
-| 3853 (PRO 30/55/33/47) | 31 Oct 1781 | Robertson to Haldimand | HMC Report calendar paraphrase only, page not opened | partly known | outside Saberton's scope (Robertson/Haldimand, not Cornwallis/Clinton) — open the HMC Report |
-| 4833 (PRO 30/55/42/120) | 23 June 1782 | Haldimand to Carleton | HMC Report calendar paraphrase only, page not opened | partly known | outside Saberton's scope entirely (different correspondents, different year, different theatre) — open the HMC Report |
+| 2894 (PRO 30/55/24/76) | 1780 (year only) | Clinton to Haldimand | content matched to a British Museum/Library comparison copy per HMC's own 1904-09 note (BL Add MS 21807, fos.159/161); **Brymner's Canadian calendar (B.147 = Add MS 21807, AX-HMC2 26 Sept) independently calendars a "Clinton to [Haldimand]. Letter in cypher" dated 6 July 1780, matching HMC's cited date exactly, but gives no content** | known elsewhere (via the BM/BL copy, not by breaking the cipher) | old-numbering decipher citation ("Vol.11 No.117") not found in modern Discovery (AX-HMC2, negative search logged); locate the BM/BL comparison copy directly (specific enough crib: French fleet, 3 May, seven ships of the line) |
+| 3868 (PRO 30/55/33/65) | 12 Nov 1781 | Clinton to Haldimand | HMC Report calendar paraphrase only, page not opened | partly known | old-numbering decipher citation ("Vol.11 No.190") not found in modern Discovery (AX-HMC2, negative search logged); outside Saberton's scope (Haldimand correspondent; also after CP pt.11's 19 Oct 1781 end) — open the HMC Report |
+| 3853 (PRO 30/55/33/47) | 31 Oct 1781 | Robertson to Haldimand | HMC Report calendar paraphrase only, page not opened; **Brymner's Canadian calendar (B.147 = Add MS 21807, AX-HMC2 26 Sept) independently calendars a matching pair of entries dated 31 Oct ("Robertson to Haldimand... Clinton went on board a fleet... to relieve Cornwallis" / "Same to the same. Letter in cypher"), content-consistent with HMC's "Writes in Sir Henry's absence", but gives no cypher content** | partly known | outside Saberton's scope (Robertson/Haldimand, not Cornwallis/Clinton) — open the HMC Report; the decipher itself (fo.306 per HMC) still unread |
+| 4833 (PRO 30/55/42/120) | 23 June 1782 | Haldimand to Carleton | HMC Report calendar paraphrase only, page not opened; TNA Discovery's own description is materially fuller and cipher-tagged, source not identified (AX-HMC 26 Sept); **searched Brymner 1884-89 for the fuller content (AX-HMC2, distinctive phrases "Cedars"/"overland"/"despatched yesterday"), not found; discrepancy still open** | partly known | outside Saberton's scope entirely (different correspondents, different year, different theatre) — open the HMC Report; Haldimand's own outgoing-letterbook, if catalogued, may postdate the 1884-89 window checked |
 | 6009 (PRO 30/55/53/7) | 26 Oct 1782 | Beckwith to Mackenzie | HMC Report calendar paraphrase only, page not opened; describes forwarding a ciphered note, may not itself be cipher text | partly known / may not be a cipher-text item at all | outside Saberton's scope — open the HMC Report |
 | 6012 (PRO 30/55/53/10) | 26 Oct 1782 | Mackenzie to Patterson | HMC Report calendar paraphrase only, page not opened; describes transmitting a letter in cypher, may not itself be cipher text | partly known / may not be a cipher-text item at all | outside Saberton's scope — open the HMC Report |
 
@@ -482,3 +482,108 @@ djvu.txt, 2 metadata, 6 jp2 leaf fetches, 4 search-inside fulltext queries [1 fa
 retried past that], plus the earlier IIIF-endpoint route tried and abandoned when it timed out); TNA Discovery 2
 (1 failed with HTTP 500 on an item-level query, 1 succeeded on a piece-level query, `discovery.nationalarchives
 .gov.uk`); WebSearch 1 (Haldimand Papers / Add MS 21807 printed-calendar lead).
+
+## AX-HMC2: old-numbering concordance, Brymner's Canadian calendar, 4833 discrepancy (26 Sept 2026, LANE AX)
+
+Per this job's brief: (1) map the "Vol. 11, No. 117" / "No. 190" old-numbering decipher citations (AX-HMC, above)
+to a modern TNA Discovery reference; (2) open Brymner's *Report on Canadian Archives* (1884-89) for BL Add MS
+21807 fos. 159/161 (2894) and fo. 306 (3853); (3) try to resolve 4833's HMC-print-vs-Discovery-description gap.
+
+**(1) Old "Vol. 11" concordance -- negative, with the false lead ruled out explicitly.** Fetched TNA Discovery's
+full item list for piece PRO 30/55/11 (`sps.searchQuery="PRO 30/55/11"`, 121 records) and tested the obvious
+hypothesis that the modern sub-reference number (the trailing `/NNN`) preserves the old volume-internal item
+number cited by HMC ("Vol. 11, No. 117"): **false**. PRO 30/55/11/117 (id C16174572) is a 29 Aug 1778 Treasury
+coal-supply contract letter ("Robinson to Samuel Martin... accepting tender for supplying coal to North America"),
+nothing to do with a decipherment, and its own `note` field reads `"Note (old vol 2) enclosed by Robinson to
+Clinton, 31 Oct (see item no 1503)"` -- i.e. this item's *own* old-volume tag is **"old vol 2"**, not 11; modern
+piece 11's sub-reference numbering (checked exhaustively: contiguous 1-120, no gaps) is TNA's own re-numbering
+within the piece, unrelated to the old volume-and-item citation scheme HMC quotes. Searched Discovery instead for
+the literal note text `"old vol 11"` (case/punctuation-insensitive on this API: `"old vol.+11"` returns the
+identical set) -- 30 records across 14 different modern pieces (8, 11, 16, 19, 29, 31, 32, 39, 42, 46, 49, 51, 52,
+62), confirming old volume 11's contents were dispersed across many modern pieces when enclosures were re-filed
+with their covering letters (exactly the mechanism already inferred for 4833, see below -- one of the 30 hits
+**is** PRO 30/55/42/120 = 4833 itself, tagged "old vol 11"). None of the 30 carries "117" or "190" as its own old
+item number in the note text (`"old vol 11" 117` and `"old vol 11" 190` both returned 0 records), and a
+site-wide check confirms "decipher" is a real, indexed term at this host (650 hits, mostly the unrelated SP 106
+Decyphering Branch series) that simply never occurs in any PRO 30/55 description or note. **Conclusion: items
+"Vol. 11, No. 117" and "No. 190" (the decipherments) cannot be located in modern Discovery by text search this
+session** -- either they were never given their own catalogue-level item entry (folded into whatever item they
+were re-filed with, without a distinguishing note), or their old item number isn't preserved in searchable text
+at all. Not chased further (would need the physical box list or a piece-by-piece read of note fields with no
+search shortcut). 9 discovery.nationalarchives.gov.uk requests this step (1 reachability probe, 1 HTTP 500 not
+retried past the single allowed retry, 7 succeeded), 1.5-1.6s apart, descriptive User-Agent.
+
+**(2) Brymner, *Report on Canadian Archives*, 1884-89 -- found, with an important numbering caveat.** Fetched
+`archive.org/advancedsearch.php` (already covered by request budget above) then the full `_djvu.txt` for the six
+annual volumes covering 1884-89 (`reportoncanadian1884publ`, `1885publ`, `1886publuoft`, `1887publuoft`,
+`1888publ`, `1889publuoft`; 6 archive.org requests, browser User-Agent, 1.5-1.6s apart, disk-only, not committed).
+Brymner cites the Haldimand Collection's "B series" (BL Add MS 21661-21892) by his own running volume label
+`B.NNN`; grepping for the pattern `B.M., 21,80N` (the printed BL shelfmark, comma-separated) in
+`reportoncanadian1887publuoft.txt` pins **BL Add MS 21807 = Brymner's B.147** exactly (B.146 ends at Add MS
+21,806, the B.147 section runs from Add MS 21,807 to just before B.148/Add MS 21,808 -- confirmed by the printed
+running heads "B.147 / HALDIMAND COLLECTION" bracketing the whole section, lines ~101883-103856 of that file).
+
+- **2894 (Clinton to Haldimand, comparison-dated 6 July 1780, fos. 159/161).** Two candidate cypher entries found
+  in B.147's 1780 section, and they are **not the same entry** -- this matters, see caveat below.
+  - Dated **"July 6, New York"** in Brymner's own date column (exactly HMC's cited date): *"Clinton to the same
+    [Haldimand]. Letter in cypher. 184"* -- no content given, immediately following an Admiral Arbuthnot entry
+    about a 6-ship, 4,000-troop Brest force ("Page 182") and immediately followed by more July 1780 Quebec
+    entries. This is the better match **by date**, independent of any page-number coincidence.
+  - Dated **"May 15, Jamaica, Long Island"** (per the date-column sequence; two-column OCR reflow makes this
+    pairing less certain than the July 6 one): *"Clinton to the same. Letter in cypher, also one from Knyphausen
+    of same date. 158 to 161"* -- the page range 158-161 numerically brackets HMC's cited folios 159 and 161
+    almost exactly, but the date (mid-May, not 6 July) does not match HMC's citation.
+  **Caveat, not resolved this session: Brymner's "Page NNN" is very likely the pagination of his own transcript
+  copy held at the Canadian Archives (Brymner's collection is copies made from the London originals for Canada,
+  per this file's own "Add MS 21807... calendared by Douglas Brymner" note), not the British Library's own
+  foliation of Add MS 21807 -- the two 1780 entries above use "Page" numbers that go 154, 155, 158-161, 162, 164,
+  165, 171, 175, 179, 180, 181, 182, 184... i.e. climbing through the 150s-180s across entries from March through
+  July 1780, which cannot all be BL folio numbers for a five-month span of a ~380-page-a-year volume unless
+  Brymner's "Page" and the BL's "folio" happen to track closely by coincidence.** So the 158-161 folio-range
+  match to HMC's fos. 159/161 may be exactly that -- a coincidence of two independent numbering schemes -- while
+  the July 6 date match to Clinton-to-Haldimand-cypher is a stronger, numbering-independent match. Either way,
+  **no plaintext or decipherment content is given for this item in Brymner** -- consistent with HMC's own
+  admission that 2894's content is known only via comparison to the BM copy, not from a printed decipherment.
+  This does not change 2894's status (still known-elsewhere-via-comparison-copy, not text known).
+- **3853 (Robertson to Haldimand, 31 Oct 1781, decipher at fo. 306).** Found and a strong content+structure match:
+  dated **"October 31, New York"**, two consecutive entries from Robertson to Haldimand --
+  first the plain letter (*"Clinton went on board a fleet with 6,000 men, to relieve Cornwallis, who surrendered
+  on the 19th, the day the fleet sailed. Sir Henry and Digby will consider the Vermont business on their return...
+  381"*) -- matching HMC's own terse paraphrase for 3853, "Writes in Sir Henry's absence" (Robertson writing
+  because Clinton has sailed with the relief fleet, exactly as this entry describes) -- immediately followed by
+  *"October 31, Same to the same. Letter in cypher. 406"*. **"406" is very plausibly an OCR misread of "306"**
+  (matching HMC's cited decipher folio, fo. 306, almost exactly) but this is not confirmed against a page image
+  this session -- flagged for a future worker to check the actual leaf rather than trust the djvu OCR digit.
+  As with 2894, **no content is given for the cypher portion** -- Brymner, like HMC, marks it "in cypher" and
+  stops; this does not change 3853's status (still paraphrase-only, decipher location known but content
+  unread/unprinted).
+
+**(3) 4833 discrepancy -- not resolved, negative search logged.** AX-HMC's flag: TNA Discovery's own description
+for PRO 30/55/42/120 (4833) carries substantial cipher-tagged content ("Enclosed is a duplicate letter in cypher
+which he dispatched yesterday, overland... engagements at the Cedars... exchanged many of the people of
+Vermont...") not found anywhere in the HMC print. This job's step (1) search (above) independently re-confirmed
+4833 is itself tagged `"Note (old vol 11) enclosed by Haldimand to Carlton, 28 July 1782."` in Discovery -- i.e.
+it is *also* an old-vol-11 enclosure, re-filed with its covering letter, same mechanism as the rest of that
+volume's dispersed contents. Searched for the Discovery description's distinctive phrases ("Cedars", "overland",
+"despatched/dispatched yesterday") across all six 1884-89 Brymner volumes: "Cedars" hits exist but all are
+unrelated 1770s Lachine-canal/Cedars-garrison logistics entries (a common place name in this correspondence, nothing
+to do with 1782 Haldimand-Carleton letters); no hit for "overland"+"yesterday" together, and no "Letter Book" /
+"out-letters" / "outgoing" heading found in the 1888 or 1889 volumes to suggest a distinct Haldimand
+outgoing-letterbook section exists in this window. **The discrepancy is not settled**: neither Brymner
+(1884-89) nor a further HMC-print search (not re-attempted this session, out of scope for this job) has been
+found to carry the fuller Discovery-only content. Two explanations remain open, as before: a modern TNA
+cataloguer wrote 4833's Discovery description from the original manuscript directly (bypassing the HMC calendar
+entirely), or the richer content sits in a Brymner volume/section not fetched this session (a Haldimand
+outgoing-letterbook series may postdate 1889, i.e. outside this job's named window, or use different indexing
+terms than tried here). No archive.org requests spent on this step beyond the six volumes already fetched for
+(2) -- all searches were local greps of the on-disk text.
+
+**Requests this session (AX-HMC2).** discovery.nationalarchives.gov.uk 9 (1.5-1.6s apart, descriptive
+User-Agent; 1 of these got HTTP 500 on first try, retried once per the good-citizen rule, succeeded); archive.org
+6 (djvu.txt fetches, browser User-Agent, 1.5-1.6s apart, disk-only, not committed to the repo -- large full-book
+OCR dumps, re-fetchable from the identifiers above). No other hosts.
+
+**Status.** Line 1 stays `partial`. Item count and text-known count unchanged at **5/12** -- nothing in this
+session promotes 2894 or 3853 to text known; both gain an independent second printed source (Brymner) confirming
+the cipher tag, date and correspondents, but neither source prints the deciphered content. 4833's discrepancy is
+still open. No decoding attempted; no novelty classification made (rule 10, left to a verifier).
