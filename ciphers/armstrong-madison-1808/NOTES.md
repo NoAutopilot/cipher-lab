@@ -279,6 +279,10 @@ HYPOTHESES.md's ARM-A2 section, which also has the per-table table and the salad
 reading (rule 10); the ladder's family B (vocabulary prior, not direct value transfer) and family E (recovery)
 remain open. `specs/armstrong-madison-1808.json`'s `cheap_test_done.A2` records the same summary. No network
 access this pass (offline job per brief); 0 requests to any host.
+Orchestrator caveat (LANE ARM, 26 Sept 2026 10:17, answering V9-QA8 and V9-QA9): the en18 judge FAILs above carry ARM-EN18's
+reliability limits -- leave-one-file-out false-negative 14-15 percent, per-fold spread 0.26-0.27, above the 0.05 gate -- and
+ARM-C1 later found the same judge PASSes a shuffled-target salad at this length, so a judge line here is not decisive either
+way; the A2 negative rests on the permuted-table and shuffled-order percentiles, not on the judge.
 
 ## ARM-REC2 pass, 26 Sept 2026 -- retried ARM-REC's step 1; web.archive.org still down
 
