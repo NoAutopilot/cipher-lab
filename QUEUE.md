@@ -6726,3 +6726,51 @@ on file before this pass) are documented in the method notes below for reuse.
 
 Kind: scout (this subsection files leads only; it does not promote to the board or classify novelty, per rule 10
 and the lane brief).
+
+## Scored backlog for LANE B6, 26 Sept 2026, 01:40 UTC
+
+Worker bSCORE (Sonnet), LANE B5 reserve job (`.claude/briefs/runs/2026-09-26-lane-b5-score.md`, RETRO-2026-09-26a
+proposal 2). Disk-only pass, no hosts touched. Scored every VX-\*/KX-\*/KT-\*/PX-\* row above with no
+`QUEUE-scores.json` entry yet (17 rows: KT-01/02, KX-01/02/03, PX-01/02/03/04, VX-E01/02/03, VX-N01/02/03,
+VX-S01/02), following the SCOUT-RERANK "Excluded" paragraph's own method: check each item's shelfmark against
+`ciphers/*/NOTES.md` and `specs/*.json` for a folder or spec that shows a lane already ran or attempted the
+row's own named test.
+
+**16 of 17 dropped, one word (plus the citation) each** — full detail and rationale in `QUEUE-scores.json`
+`lane_b5_score.dropped`:
+
+| Row | Target | Reason |
+|---|---|---|
+| KT-01 | fr7129-villeroy-bongars-1604 | blocked |
+| KT-02 | baluze103-letellier-marca-1644 | blocked |
+| KX-01 | Brienne outgoing despatches, Colbert 26 part III, 1661 | closed-negative |
+| KX-03 | colbert26-lathuillerie-1644 | owned-KX (active same-day work, KX-LATHKEY2) |
+| PX-01 | antt-msliv0638-brochado-1712 | owned-AX |
+| PX-02 | ANTT MNE-ASC/R/4 | undigitized |
+| PX-03 | ANTT MRM/M027.001 | undigitized |
+| PX-04 | ANTT ASG/C/010/000013 | undigitized |
+| VX-E01 | na-schonenberg-1678-1716 | partial (VX-RD01 reading already on file) |
+| VX-E02 | NA 1.02.20 invnr 164 (key for roell-vandedem-1809) | owned (adds to an active target) |
+| VX-E03 | na-oldenbarnevelt-2442-1605 | active-folder |
+| VX-N01 | na-suriname-map-1781 | partial |
+| VX-N02 | na-janssens-java-1811 | partial |
+| VX-N03 | na-raad-azie-1800 | active-folder |
+| VX-S01 | Rigsarkivet "Chiffer" key vs Lagau intercepts | undigitized (ciphertext order-only, key alone not testable) |
+| VX-S02 | alvin-gustav3-chiffre | closed-negative |
+
+**Re-rank rows 4 and 5-9 not re-scored here.** ROOM.md shows this lane's own reserve workers `bRIK`
+(riksarkivet-r4282-1628, row 4) and `bPOOL0` (RAH/BAV/ARA/ASV pool census, rows 5-9) claimed exactly those rows at
+01:33 UTC, minutes before this job started — they are in progress this session, not an unclaimed LANE B6 item.
+LANE B6 should read their outcomes in STATUS.md/NEAR.md before touching riksarkivet-r4282-1628 or the four pool
+targets again.
+
+**One new candidate survived the drop-check.** Top (and only) row by expected value:
+
+| Rank | Target | Source row | Kind | Signs/N | Lang. + corpus | Named first cheap test + matched control | Est. cost | Pool? | Why it ranks here |
+|---|---|---|---|---|---|---|---|---|---|
+| 1 | Three further Thurloe State Papers letters (Gen. Lockhart from Chauny, 19 June 1656, vol.5 p.101; Nutley, Attorney General Prideaux, Sir Benjamin Wright, vol.3) | QUEUE.md KX-02 (Key reuse candidates, LANE KX) | contribution | 4 letters, coded numerals with short printed glosses; exact size not yet extracted | en; plaintext supplied directly by the printed gloss, no language judge needed | Extract each letter's cipher-group + gloss span from the cached djvu text already on disk (`sources/ia-fulltext/collectionofstat0{3,5}thur_djvu.txt`), align with `tools/interlinear_align.py` (the shared DP/hard-EM tool, CLAUDE.md Usage item 8), add to `ciphers/thurloe-printed/index.tsv` in the existing P-row format; no control needed — a known-plaintext alignment from a printed gloss, not a blind cryptanalytic test | $1.5, Sonnet, disk only | **yes** — same office (Thurloe's Secretary-of-State network) and print run (Birch 1742) as every P-row already in `ciphers/thurloe-printed/` | Near-certain P(moves): the letters are already located (djvu line ranges named in `ciphers/thurloe-printed/NOTES.md`), the pattern is proven on 24 rows (P1-P24), and the shared alignment tool removes the need for a private script. Value is modest — probably N0 (already in Birch 1742), housekeeping on an existing target rather than a new one — but at an est. $1.5 disk-only cost the job was simply never done: `thurloe-printed/NOTES.md` names it explicitly as "outside this lane, not started". |
+
+Full per-row rationale, P(moves)/value/cost/pool fields and drop citations: `QUEUE-scores.json` `lane_b5_score`.
+
+Kind: scout (this section scores and ranks only; it does not promote to the board, run any test, or classify
+novelty, per rule 10 and this worker's brief).

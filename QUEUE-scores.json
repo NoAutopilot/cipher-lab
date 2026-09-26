@@ -8932,5 +8932,112 @@
         "rationale": "language_fit3(Latin) material3(full native IIIF, no login, tested 200 OK, CC0/PDM) key_lead3(multiple key rows visually confirmed on the address-side leaf) size1(single leaf, key material only, no enciphered running text yet spotted) competition3(no tracker/repo/community-list hit) weight1(physicians' private correspondence, not diplomatic/political) unread2(recovery, key present but unread/untested)"
       }
     ]
+  },
+  "lane_b5_score": {
+    "_about": "LANE B5 worker bSCORE, 26 Sept 2026 (job bSCORE, .claude/briefs/runs/2026-09-26-lane-b5-score.md). Scored every VX-*/KX-*/KT-*/PX-* row in QUEUE.md that had no QUEUE-scores.json entry yet (17 rows: KT-01/02, KX-01/02/03, PX-01/02/03/04, VX-E01/02/03, VX-N01/02/03, VX-S01/02). Disk-only pass, no hosts touched: checked each row's item/shelfmark against ciphers/*/NOTES.md and specs/*.json for an existing folder or spec (the SCOUT-RERANK 'Excluded' paragraph's own method). 16 of 17 turned out to already be worked (an active folder with a search or an informal key test on file), closed-negative, undigitized (no image route, copy-order only) or owned by another active lane (LANE AX, or LANE KX's own colbert26-lathuillerie-1644); see 'dropped' below, one-word-plus-citation reason each. Only KX-02 (four Thurloe letters named in ciphers/thurloe-printed/NOTES.md as 'outside this lane, not started') survived as a genuinely new, testable candidate -- see 'scored'. Re-rank rows 4 (riksarkivet-r4282) and 5-9 (RAH/BAV/ARA/ASV pool sampling) were NOT re-scored here: ROOM.md shows LANE B5's own reserve workers bRIK and bPOOL0 claimed them at 01:33 UTC, minutes before this job started, so they are in progress this session rather than an unclaimed LANE B6 backlog item.",
+    "date": "26 Sept 2026",
+    "dropped": [
+      {
+        "id": "KT-01",
+        "target": "fr7129-villeroy-bongars-1604",
+        "reason": "blocked (ciphers/fr7129-villeroy-bongars-1604/NOTES.md, csBONG pass 24 Sept 2026 -- Tomokiyo article read, still blocked)"
+      },
+      {
+        "id": "KT-02",
+        "target": "baluze103-letellier-marca-1644",
+        "reason": "blocked (ciphers/baluze103-letellier-marca-1644/NOTES.md -- DECODE 'Decrypted' tag contradicts Tomokiyo 'undeciphered', unresolved)"
+      },
+      {
+        "id": "KX-01",
+        "target": "Brienne outgoing despatches, Colbert 26 part III, juillet-decembre 1661",
+        "reason": "closed-negative (KX-COLB26, 25 Sept 2026: 104/375 canvases sampled, no cipher found)"
+      },
+      {
+        "id": "KX-03",
+        "target": "colbert26-lathuillerie-1644 (La Thuillerie/Servien, 1644-48)",
+        "reason": "owned-KX (ciphers/colbert26-lathuillerie-1644/, open, active same-day work KX-LATHKEY2 25 Sept 2026 -- candidate keys already tried informally, no matched control yet, not a fresh unrun test)"
+      },
+      {
+        "id": "PX-01",
+        "target": "antt-msliv0638-brochado-1712 (Jose da Cunha Brochado, London 1712-13)",
+        "reason": "owned-AX (LANE AX's own target per ROOM.md and CLAUDE.md common rules; folder status partial)"
+      },
+      {
+        "id": "PX-02",
+        "target": "ANTT PT/TT/MNE-ASC/R/4 ('Cifra', cifrante-decifrante table)",
+        "reason": "undigitized (filesCount:0, no image route, copy-order only)"
+      },
+      {
+        "id": "PX-03",
+        "target": "ANTT PT/TT/MRM/M027.001 (Marqueses de Rio Maior, cryptographic tables)",
+        "reason": "undigitized (filesCount:0, no image route, copy-order only)"
+      },
+      {
+        "id": "PX-04",
+        "target": "ANTT PT/TT/ASG/C/010/000013 (Palmela to Saldanha da Gama, Jul 1824)",
+        "reason": "undigitized (filesCount:0, no image route, copy-order only)"
+      },
+      {
+        "id": "VX-E01",
+        "target": "na-schonenberg-1678-1716 (Van Schonenberg outgoing letters, NA 1.02.04 invnr 63)",
+        "reason": "partial (ciphers/na-schonenberg-1678-1716/NOTES.md -- VX-RD01 already produced a reading off the leaf's own gloss)"
+      },
+      {
+        "id": "VX-E02",
+        "target": "NA 1.02.20 invnr 164 'Sleutels cijferschrift' (flagged key for roell-vandedem-1809)",
+        "reason": "owned (adds a key candidate to the already-active ciphers/roell-vandedem-1809/, open, own extensive NOTES.md)"
+      },
+      {
+        "id": "VX-E03",
+        "target": "na-oldenbarnevelt-2442-1605 (Senisteros to Pena, 23 Dec 1605 copy)",
+        "reason": "active-folder (ciphers/na-oldenbarnevelt-2442-1605/, open, print-check already run this week)"
+      },
+      {
+        "id": "VX-N01",
+        "target": "na-suriname-map-1781 (NA 4.VEL invnr 2007A/2007B)",
+        "reason": "partial (ciphers/na-suriname-map-1781/NOTES.md -- sign-coverage counting under way, successor step already named)"
+      },
+      {
+        "id": "VX-N02",
+        "target": "na-janssens-java-1811 (NA 2.01.27.05 invnr 12)",
+        "reason": "partial (ciphers/na-janssens-java-1811/NOTES.md -- 233-leaf bundle work under way, VX-RD02 reading already produced)"
+      },
+      {
+        "id": "VX-N03",
+        "target": "na-raad-azie-1800 (NA 2.01.27.02 invnr 209, Smissaert to Prediger)",
+        "reason": "active-folder (ciphers/na-raad-azie-1800/, open, spec already filed, next step already named)"
+      },
+      {
+        "id": "VX-S01",
+        "target": "Rigsarkivet Tyske Kancelli 'Chiffer' key vs Lagau intercepts (1712)",
+        "reason": "undigitized (the flagged ciphertext, 'Opsnappede chifferbreve fra chevalier Lagau', is order-only via Daisy, no image route; only the key volume itself is digitised)"
+      },
+      {
+        "id": "VX-S02",
+        "target": "alvin-gustav3-chiffre (Alvin F 415 item 171, 'Chiffre fran Konungens ungdom')",
+        "reason": "closed-negative (ciphers/alvin-gustav3-chiffre/NOTES.md -- rendered and read: a name/nickname list, not enciphered running text)"
+      }
+    ],
+    "scored": [
+      {
+        "row_id": "KX-02",
+        "target": "Three further Thurloe State Papers letters named in ciphers/thurloe-printed/NOTES.md's own handoff as 'outside this lane, not started': Gen. Lockhart from Chauny, 19 June 1656 (vol.5 p.101, coded numerals with short printed glosses, directly above the already-read P14); Nutley, Attorney General Prideaux and Sir Benjamin Wright (vol.3, three further glossed large-number letters found by LANE T's s.12.6 pass)",
+        "kind": "contribution",
+        "year": "1654-1656",
+        "language": "en",
+        "folder": "thurloe-printed",
+        "unread": 1,
+        "P_moves": 0.85,
+        "value": "modest -- extends an already-largely-worked target (ciphers/thurloe-printed/, P1-P24) with 4 more entries of the same already-glossed-in-print pattern, not a fresh target; probably N0 once extracted per KX-02's own QUEUE.md note",
+        "cost_usd": 1.5,
+        "pool": true,
+        "pool_note": "same office (Thurloe's Secretary-of-State intelligence network) and print run (Birch 1742) as every P-row already tracked -- a sibling extraction, not a new office",
+        "first_cheap_test": "extract each letter's cipher-group + printed-gloss span from the cached djvu text already on disk (sources/ia-fulltext/collectionofstat0{3,5}thur_djvu.txt), align with tools/interlinear_align.py (the shared DP/hard-EM tool, CLAUDE.md Usage item 8), add to ciphers/thurloe-printed/index.tsv in the same P-row format",
+        "matched_control": "none needed -- this is a print-alignment/extraction job (grade C from the printed gloss), not a blind cryptanalytic test; rule 3's control requirement does not apply to a known-plaintext alignment",
+        "corpus_note": "n/a -- English, printed gloss supplies the plaintext directly",
+        "cost_est_note": "$1.5, Sonnet, disk only -- djvu text and interlinear_align.py both already on disk, no host fetch needed",
+        "rationale": "Near-certain P(moves): the four letters are already located (djvu line ranges named in NOTES.md), the extraction pattern is proven on 24 rows already (P1-P24), and the shared alignment tool (Usage item 8) removes the need for a private script. Value is modest -- likely N0 (already in Birch 1742) and this is housekeeping on an existing target, not a new one -- but at an est. $1.5 disk-only cost the EV is still positive and the job was never actually done (thurloe-printed/NOTES.md names it explicitly as 'outside this lane, not started'). The only genuinely new, testable candidate to survive this pass's 16-row drop-check."
+      }
+    ]
   }
 }
