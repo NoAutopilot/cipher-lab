@@ -19,6 +19,14 @@ import re
 from collections import Counter
 
 E = html.escape
+# Small standalone date-in-status-text pattern, kept in step with tools/desk_check.py's own parse_date
+# (not imported: build_dashboard.py's own offline tests run it as a single copied file, DESK-CHECK 26 Sept 2026).
+_STATUS_DATE_RE = re.compile(r'(\d{4}-\d{2}-\d{2})|(\d{1,2}\s+[A-Za-z]+\.?\s+\d{4})')
+
+
+def status_date(text):
+    m = _STATUS_DATE_RE.search(text or "")
+    return (m.group(1) or m.group(2)) if m else ""
 REPO = "https://github.com/NoAutopilot/cipher-lab/tree/main/"
 d = json.load(open("status.json", encoding="utf-8"))
 results = d.get("results", [])
@@ -86,8 +94,20 @@ def load_drafts():
                 links[k.strip()] = v.strip()
         targets = [t.strip().strip("`") for t in re.split(r"[,;]\s*", head.get("targets", "")) if t.strip()]
         out.append({"slug": fn[:-3], "status": st, "kind": kind, "subject": head.get("subject", ""), "to": head.get("to", ""),
-                    "text": body, "targets": targets, "links": links, "checked": head.get("checked", "")})
+                    "text": body, "targets": targets, "links": links, "checked": head.get("checked", ""),
+                    "status_date": status_date(st)})
     return out
+
+
+def load_desk_check_flags():
+    """Slugs tools/desk_check.py's last --json run flagged, or empty if it hasn't been run -- the board
+    must still build without desk-check.json (DESK-CHECK, 26 Sept 2026, CLAUDE.md Usage 8a)."""
+    if not os.path.exists("desk-check.json"):
+        return set()
+    try:
+        return set(json.load(open("desk-check.json", encoding="utf-8")).get("flagged", []))
+    except (json.JSONDecodeError, OSError):
+        return set()
 
 
 def load_jstor():
@@ -442,13 +462,19 @@ sent = [x for x in drafts if x["kind"] == "sent"]
 you_targets = [t for t in targets_all if t.get("state") == "you"]
 
 
+desk_flagged = load_desk_check_flags()
+
+
 def desk_item(x):
     uid = f"desk-{slug(x['slug'])}"
     waiting = x["kind"] != "ready"
+    date_note = f' <span class="muted small">({E(x["status_date"])})</span>' if x.get("status_date") else ""
+    check_chip = (f' <span class="chip qa-flag" title="tools/desk_check.py flagged this draft as stale, '
+                  f'mismatched or undated -- run it for the reason">check</span>') if x["slug"] in desk_flagged else ""
     return (f'<li class="task{" waiting" if waiting else ""}" data-row="{E(x["slug"])}" id="ask-{E(x["slug"])}">'
             f'<input type="checkbox" id="tick-{E(x["slug"])}" aria-label="done"{" disabled" if waiting else ""}>'
-            f'<div><div class="tsubj">{E(x["subject"])}</div><div class="tto">To: {E(x["to"])}</div>'
-            + (f'<div class="tmeta warn">{E(x["status"])}</div>' if waiting else (f'<div class="tmeta ask-meta">{E(x["status"])}</div>'))
+            f'<div><div class="tsubj">{E(x["subject"])}{check_chip}</div><div class="tto">To: {E(x["to"])}</div>'
+            + (f'<div class="tmeta warn">{E(x["status"])}</div>' if waiting else (f'<div class="tmeta ask-meta">{E(x["status"])}{date_note}</div>'))
             + copy_block(uid, x["to"], x["subject"], x["text"]) + '</div></li>')
 
 
