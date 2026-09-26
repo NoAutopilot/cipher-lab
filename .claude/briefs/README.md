@@ -66,3 +66,4 @@ applied unchanged, and three named cycle-3 briefs written from it.
 - A credential you need and the container lacks: `python3 tools/key_request.py NAME --purpose "..." --tool tools/x.py --by "<you>"`
   files it (KEYS.md, ASKS.md, ROOM.md); the owner adds it on both accounts; a later fresh session announces it in ROOM.md. Do the
   part of the job that does not need it and stop; never ask for a value in chat, never print one.
+- Session titles (owner, 26 Sept 2026): a session you create is titled `LIVE <name>`; before you `archive_session` it, rename it `ARCHIVED <name> (done <clock time>, $<cost> <code>)`. A finished session left without the ARCHIVED prefix, or a live one without LIVE, is an orphan-check flag. Both accounts follow this; see `.claude/briefs/parent.md`, Handing over.

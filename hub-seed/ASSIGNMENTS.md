@@ -720,3 +720,7 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T05:09Z	session_01DbfCCQsUM1WwCELrgVMz3b	V8-NA172 (Opus, cap 6)	verifier lodewijk 5797 p6_spot4 (172 le Conte Jean)	brief 2026-09-26-lane-v8-nassau172.md; LANE V8
 2026-09-26T05:09Z	session_011VT63hJtoLER8ZHuMKvK6X	V8-SO16 (Sonnet, cap 4)	citation check PR 16 SO-MERCY-F22	brief 2026-09-26-lane-v8-so16.md; LANE V8
 2026-09-26T05:12Z	session_01FS7JkXfECRNTU6KGZEdLqK	PR-LAND-2 (Sonnet, cap 4)	land PRs 16-20 (SO-MERCY-F22, JSTOR run 27 rows, LQ-L4/L14/L5), mark rows done, close without merge	brief 2026-09-26-parent-pr-land-2.md; spawned by 7e, 7f ledgers
+2026-09-26T05:17Z	session_01AQwk5zWLCGvxyuPFhwaHDD	DECODE-ACCESS	done 2.43, ledgered D, archived by 7f	account-wide role block; addressee fixed in outreach/decode-image-access.md
+2026-09-26T05:17Z	session_01SvjMDFfJZJ3uK47RYxAQrM	parent 7e	done 34.38 (final, get_session), ledgered D, retitled ARCHIVED and archived by 7f	owner typed into it after hand-over; it spawned ORPHAN-TOOL and PR-LAND-2, both adopted by 7f
+2026-09-26T05:17Z	session_01LV9zxH7aPvDF6oEzJuKNDe	ORPHAN-TOOL (Sonnet, cap 6)	adopted by 7f from 7e; retitled LIVE	brief 2026-09-26-parent-orphan-tool.md
+2026-09-26T05:17Z	session_01FS7JkXfECRNTU6KGZEdLqK	PR-LAND-2 (Sonnet, cap 4)	adopted by 7f from 7e; retitled LIVE	brief 2026-09-26-parent-pr-land-2.md

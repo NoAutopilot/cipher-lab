@@ -113,5 +113,7 @@ brief that names this file inherits the instruction; it does not need restating 
 
 Naming and model (owner, 25 Sept 2026): every parent session is created on `claude-fable-5-1` and titled "Orchestrator N", N one more than the current parent's number (7c is Orchestrator 4, 7d is Orchestrator 5); the internal 7a/7b/7c labels stay in the files for lineage, the session title is the number. Lane orchestrators keep their lane names.
 
+**Session titles say LIVE or ARCHIVED (owner, 26 Sept 2026, 05:1x UTC, after replying into the retired parent 7e by mistake; both accounts).** Every session a parent or lane creates carries the prefix `LIVE ` in its title from `create_session`. The session that archives it renames it first: `ARCHIVED <old title> (done <clock time>, $<cost> <code>)`, then `archive_session`. A parent taking over titles itself `LIVE parent <x> · Orchestrator <N> (talk to this one)`, and as its first act after its ROOM take-over line renames its predecessor `ARCHIVED parent <w> · Orchestrator <N-1> (handed over <clock time>; do not message)` and archives it -- an archived session is read-only, so a message typed into it by mistake cannot start a second parent. A non-archived session whose title lacks `LIVE ` is a flag for the orphan check (`tools/orphan_check.py`). Lane orchestrators do the same for their workers.
+
 Keep a "Parent handoff (<account>)" section in STATUS.md current: session id, check-in trigger id, live lanes, the
 owner's standing decisions. A successor reads it, takes over the trigger with update_trigger, and continues.
