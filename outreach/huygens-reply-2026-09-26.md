@@ -1,4 +1,4 @@
-status: drafted 26 Sept 2026 by the parent (owner account); revised 14:5x after the person's answers (private project, no public goal beyond the readings being useful, wants to support the edition); the person fills in [your name] and sends
+status: sent by the person 26 Sept 2026 (about 15:00 UTC); reply pending
 to: ineke.huysman@huygens.knaw.nl
 subject: Re: Cipher passages in six WVO letters (4610, 4611, 4616; 53, 57, 126)
 
