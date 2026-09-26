@@ -36,3 +36,10 @@ Questions:
    Wiesbaden (HHStA Abt. 170/171), Marburg or Dresden?
 3. Has any study of the Orange-Nassau cipher of 1573-1574 (a letter table of five numbers per letter) been
    published? Please give author, title and year.
+
+---
+Note (verifier V8-NA5797, 26 Sept 2026): this prompt was answered (ChatGPT, 24 Sept 2026) against the key.tsv-only
+readings of 4610/4611/4612/4616. The readings were revised on 26 Sept 2026 (key_full: silent nulls and some names --
+roi d'Espagne, Hollande, Pfaltzgraf, duc d'Albe, France, Harlem -- valued from contemporary glosses or Groen's print; see
+AUDIT.md "Revision log" and "V8 audit"). Classes unchanged (N4, N4, N3, N4). WVO 5797 (22 Oct 1573, Groen IV CDXLIV) is
+not covered by this prompt; if re-queued, quote AUDIT.md V8.6's safe sentence for it, not an earlier wording.

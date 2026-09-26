@@ -1,0 +1,13 @@
+# lodewijk-van-nassau-1573-74: distinctive phrases (V8-NA5797 verifier, 26 Sept 2026)
+# 5797 spots as read under key_full (German, decoded + Groen's clear frame)
+Pfaltzgraf helt sich wol und thut in warheit viel
+Pfalzgraf helt sich wol
+Herzog von Sachsen und Landgraf ist willens
+Sachsen und Landgraf ist willens
+# control: Groen's own clear print at the same spots (a hit in Groen IV 1e serie is expected)
+helt sich wol und thut in warheit viel
+Bey dem Herzog von Sachsen und ist willens
+# 4610/4611 phrases around key_full name revisions (French, reading spelling normalised)
+bruit que le duc d'Albe seme icy
+forces du duc d'Albe le capitaine
+frere du roy d'Espagne

@@ -1,0 +1,7 @@
+host	requests	status
+api.crossref.org	3	ok
+api.openalex.org	11	ok
+api.semanticscholar.org	1	blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22Pfaltzgraf%20helt%20sich%20wol%20und%20thut%20in%20warheit%20viel%22
+archive.org	41	ok
+be-api.us.archive.org	27	ok
+www.googleapis.com	9	ok

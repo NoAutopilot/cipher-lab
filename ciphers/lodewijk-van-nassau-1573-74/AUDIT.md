@@ -601,3 +601,123 @@ scope; this is a log, not an audit pass.
 
 SO-LODEWIJK-1573-74 (`SECOND-OPINIONS-QUEUE.tsv`): a note was appended to that row's last column pointing back
 here, since the second opinion answered was against the pre-`key_full` reading.
+
+## V8 audit: WVO 5797 and key_full revision (26 Sept 2026)
+
+Verifier V8-NA5797 for LANE V8 (session_01YRuw3TCf7d1w85DLmYNnw4), 26 Sept 2026, 03:52-04:09 UTC (`date -u` read). This
+session did not solve, align or decode anything and does not defend LANE AX's conclusions (AX-5797, AX-NAMES, AX-NAMES2,
+AX-MERGE, AX-REDERIV). No key, ciphertext, decode or reading file was changed.
+
+Claim under audit (LANE AX, ROOM 03:37 UTC 26 Sept 2026): in WVO 5797 (Jan and Lodewijk van Nassau to Orange, Dillenburg,
+22 Oct 1573; KHA A 3, 895/I, a *minuut* per its WVO record; printed Groen, Archives 1re serie IV, Lettre CDXLIV,
+pp.217-226), two of the passages Groen prints as blanks read under key_full: p5 "Bey dem Herzog von Sachsen und
+[161 Landgraf] ist willens", p7 "[153 Pfaltzgraf] helt sich wol und thut in warheit viel", grade H each; plus the
+key_full revision of 4610/4611/4616 (revision log above).
+
+### V8.1 Verdict
+
+| item | what is read | prior plaintext | prior decipherment | class | key |
+|---|---|---|---|---|---|
+| 5797, the letter | Groen's printed text; our six control words (secours, entrepr-, zeuget, abso-, mit, election) re-read words Groen already prints | **yes**: Groen IV CDXLIV pp.217-226 (1837), whole letter bar the blanks | yes for everything Groen prints | **N0** (text known) | -- |
+| 5797 p7 spot, code 153 | "[Pfaltzgraf] helt sich wol und thut in warheit viel" (Groen's blank before "helt") | no: Groen IV p.225 prints the blank; not found in any source below | none located | **N4** (no prior decipherment located) | `period` (153 from the 5550 interlinear gloss); the surrounding table `ours` |
+| 5797 p5 spot, code 161 | "Bey dem Herzog von Sachsen und [Landgraf] ..." -- **gap partly read**: the same blank also holds 126 (NULL, C), 136 (key_full value 'vingt', M, which cannot be right here) and 146 (U) before "ist willens" | no: Groen IV pp.223-224 prints the blank | none located | **N4** for the one word; the blank is not read in full | `period` (161 from the 5550 gloss); table `ours` |
+| 5797, the other four blanks (p5_spot5, p6_spot4, p7_spot6, p8_spot7) and the p.222 garbled paragraph | not read (codes 172, 173, 182, 156 have no key_full row; spot 1's interior never located) | -- | -- | not classed (nothing to class) | -- |
+| 4610 | revised by key_full (122 NULL placements, 11 names) | as before | as before | **N4 confirmed** | `ours` (table) + `period` (192, 221, 153, 202 glosses) |
+| 4611 | revised (88 NULL, 8 names) | as before | as before | **N4 confirmed** | `ours` + `period`/print-at-cluster C (200, 223) |
+| 4616 | revised (1 NULL, no names) | as before | as before | **N4 confirmed** | `ours` |
+
+`text: known` for 5797 (Groen prints the letter); the two single-word readings are the only part not in print.
+
+### V8.2 Grade check (rule 4): 153 and 161
+
+I read the 5550 gloss myself: AX-REDERIV's two crops (`images_wv2/crops_rederiv/05550_p2_153-161_gloss.png`,
+`05550_p2_153-130-run_gloss.png`) and a fresh 500 dpi render of 05550.pdf p.2 (one fetch, scratchpad only, not committed).
+
+- **Run p2-11, "153.161. und andere so bu[ndnus]"**: the gloss is two words, one over each code, and reads
+  **"Palsgraue Lantgraue"** (the key_full note's 'Palsgrave'/'Lantgrave' is right; AX-REDERIV's NOTES transcribe it
+  "Pfaltzgraue ... Lanttgraue", same meaning, different spelling). A clean per-code key-source reading: **H stands for
+  161, and H stands for 153 on this occurrence alone** (one clean period gloss is a key source under rule 4; it does not
+  need a second).
+- **Run p2-5, "153.130.90.1.79.173"**: the gloss spans the run and ends "... vnd graf". Its first word is partly
+  overwritten by a descender of the main hand. Its opening letters match the "Pals-" of the p2-11 gloss letterform for
+  letterform (same capital, a, l, long s); what follows is unclear (possibly "-duc" or a contraction). I read neither
+  AX-REDERIV's "Ertzhertzoge" nor a clean "Palsgrave" there. **Correction to key_full's source note (recorded here, not
+  in key_full.tsv, per brief)**: for 153 read "5550 p.2 gloss 'Palsgraue' over 153 at run p2-11 (clean, one word per
+  code); the p2-5 gloss over the run 153.130.90.1.79.173 is partly obscured, opening 'Pals-' ... 'vnd graf', not an
+  independent confirmation". Consequence: the three rows tagged "[S-153], see flag below" in the revision log
+  (4610 p3_L03, 4610 p3_L09, 5797 p7_spot2) keep **H**, from one attestation, not two. None needs M.
+- Context, not evidence of value: Glawischnig 1973 (IA fts, below) records that Pfalzgraf Johann Casimir went to Kassel
+  (the Landgrave's court) for his father the Elector Palatine soon after 16 Oct 1573, which fits a 22 Oct 1573 letter
+  speaking of the Palatine and the Landgrave. It is not a source for the code values and is not used as one.
+
+### V8.3 Did the revision change what the 4610/4611/4616 N4 rested on?
+
+D1's N4 rested on: no prior plaintext or decipherment of these letters located across the principal families (Groen,
+Blok 1887/1889, Gachard, Kervyn, La Huguerye, KHA inventory, WVO). key_full adds silent nulls (no letter changes) and
+eight names/titles (roi d'Espagne, Hollande, Pfaltzgraf, duc d'Albe, France, Harlem) into still-gappy French. A name
+filled in cannot create a prior print; what it can do is give a phrase search a handle it lacked. I built the three
+French phrases the revised lines support ("bruit que le duc d'Albe seme icy" 4611 p1_L14; "forces du duc d'Albe le
+capitaine" 4611 p2_L02; "frere du roy d'Espagne" 4610 p3_L22) and ran them with the 5797 phrases (V8.4): no hit in any
+listed edition; ia-global and Google Books hits for the generic "frere du roy d'Espagne" are other correspondences
+(Henri IV, d'Ossat, Jeannin), none a Nassau letter. **4610, 4611, 4616: N4 confirmed**, key `ours` for the table with
+the name rows `period` (glosses) or C print-at-cluster, as the revision log tags them. 4612 stays N3 (untouched).
+
+### V8.4 Search log (5797)
+
+| family | status | method | result |
+|---|---|---|---|
+| Groen, Archives, **both series, every IA copy** (35 identifiers: 1re serie I-VIII + I2 + Supplement, 2e serie I-V) | searched | `tools/print_check.py` (downloads each djvu once, exact + proximity) and my own grep of the cached text | Groen IV located as `archivesoucorre03housgoog` (and `bub_gb_zBQish8rkmAC`), Lettre CDXLIV at text line 12742; both copies print the blanks exactly as dbnl ("Bey dem Herzog von Sachsen und ist", a blank line before "helt sich wol"). No other volume cites CDXLIV or 22 Oct 1573; no later correction or supplement fills a blank |
+| Positive control, Groen's own clear words at the spots | searched | same run, ia-global | "helt sich wol und thut in warheit viel": 2 IA items, both Groen copies (`archivesoucorre03pringoog`, `archivesoucorre11pringoog`) -- the method finds this letter's print when it exists |
+| 5797 phrases with the names ("Pfaltzgraf/Pfalzgraf helt sich wol ...", "Herzog von Sachsen und Landgraf ist willens", "Sachsen und Landgraf ist willens") | searched | 35 Groen + 6 Gachard + Glawischnig + ia-global + Google Books (keyed, country=US) + OpenAlex + CrossRef | **0 hits anywhere** (print-check.tsv) |
+| Gachard, Correspondance de Guillaume le Taciturne I-VI | searched | print_check, IA djvu | 0 hits |
+| Blok 1887, Correspondentie van en betreffende Lodewijk van Nassau (HathiTrust nnc1.0036704156) | searched (co-occurrence) | HTRC Extracted Features, all 238 pages: pages carrying Groen's distinctive clear words at the spots (helt+warheit, urbietig, schaumhedt) | none; "Oct" + "1573" only on the table of contents (seq 15, 17). 5797 is not printed there |
+| Glawischnig 1973, Niederlande, Kalvinismus und Reichsgrafenstand (IA `niederlandekalvi0000glaw`, lending-only) | searched (full-text search, no pages) | be-api fts inside the item; positive control "Dillenburg" hits | the 5797 phrases 0; "Oktober 1573" hits (Johann Casimir to Kassel; Jan's talks with Salentin of Cologne), no quotation of 5797; "Chiffre" 0 -- the book does not discuss the cipher |
+| Rachfahl, Wilhelm von Oranien (IA cache, 2 vols) | searched | local grep | no 22 Oct 1573, CDXLIV or phrase |
+| WVO catalogue | searched | brief?nr=5797: Opmerkingen "Met enige passages in cijferschrift. Antwoord op nr. 5804.", Brongegevens GPA IV 217-226 only (KHA A 3, 895/I, minuut); brief?nr=5550: "Gedeelten in opgelost cijferschrift" | no other edition, no solution recorded |
+| Tomokiyo, Cryptiana | searched (snapshot of 19 Sept 2026, `sources/cryptiana/web/`) | grep Nassau/Orange/Lodewijk/Ludwig/1573/Dillenburg | Nassau appears only for 1519-1520s letters (Henry of Nassau) and Maurice 1585; nothing on the 1573 Nassau cipher |
+| Solver repositories | searched | fresh clones dbourdeau/cyphersolver fc0c9e8, aaymeloglu/unsolved-ciphers 2495c45, grep Nassau/Lodewijk/Dillenburg/5797/Pfaltzgraf/Landgraf and Nassau+1573/1574; deleted after | only 1795-1803 Orange-Nassau items and unrelated hits; nothing on the 1573-74 letters |
+| Kervyn de Lettenhove | not searched again | IA advancedsearch for Kervyn "Documents inedits" returned 0; Kervyn's two works were covered for 4610-4616 by A1/D1 and are French/English-state papers, not the Dillenburg-Orange German correspondence | not principal for 5797 |
+| Google Books | searched | print_check gbooks (keyed, country=US), 9 calls | 0 for all 5797 name phrases |
+| OpenAlex | searched | keyed, 11 calls, 2 keyword sets | one irrelevant work (Mediating War in Early Modern German Prose, 2012) |
+| CrossRef | searched | 3 keyword sets | irrelevant (Nassau constitutional texts) |
+| Semantic Scholar | **unreachable** | S2_KEY sent; 1 call answered (0 results for "Ludwig von Nassau 1573 Chiffre"), then HTTP 429 twice by hand and once inside print_check; stopped per the good-citizen rule | -- |
+| CORE | not searched | CORE_API_KEY unset in this container (key probe) | -- |
+| JSTOR | queued | 2 rows appended to `JSTOR-QUEUE.tsv` (Nassau 1573 Chiffre + Pfalzgraf/Landgraf; Graveneinigung/Wetterauer Grafenverein 1573) | never blocks a class on its own |
+
+Rule 7: AX-REDERIV's re-derivation (03:22, byte-identical) is on file; not repeated. Judge: FAIL on reading_5797_full.txt
+(spots file below the judge's length; reported as FAIL by AX-NAMES2/AX-MERGE, stands).
+
+### V8.5 Did we first-decipher?
+
+For the two words only, and only in the rule-10 sense: no prior decipherment of the p5 and p7 blanks located after the
+search above; the letter itself is in print since 1837. The words were read by putting two name-code values taken from
+a *period* gloss on a sibling letter (5550) into blanks located with *our* table. Confidence: moderate for print (Groen
+all volumes full text, Gachard, Blok 1887 by co-occurrence, Glawischnig by fts); lower for scholarship (Semantic
+Scholar 429, CORE absent, JSTOR queued, Wetterauer Grafenverein literature, e.g. G. Schmidt 1989, not reached).
+
+### V8.6 Safe and unsafe sentences
+
+- **5797, safe:** "In WVO 5797 (Jan and Lodewijk van Nassau to Orange, 22 Oct 1573), printed by Groen van Prinsterer in
+  1837 with several passages left undeciphered, two of the blanks read in part, 'the Palsgrave (Pfaltzgraf) holds
+  well' and '... and the Landgrave ...', by locating them with a letter table recovered by our own cryptanalysis and
+  valuing the two name codes from a contemporary interlinear gloss on the sibling letter WVO 5550; no prior decipherment
+  of these blanks located (N4); the letter's other text is Groen's."
+- **5797, unsafe:** "We deciphered Lodewijk's 22 Oct 1573 letter", "the missing passages of Groen's CDXLIV are now
+  read", "first decipherment", "newly recovered names", or any sentence that calls the p5 blank fully read (136 and
+  146 sit unread in it) or calls the name values ours (they are the 5550 gloss's).
+- **4610, 4611, 4616:** A1.5's safe sentences stand, with "read in part with a letter table aligned from contemporary
+  decipherments of sibling letters, some names valued from contemporary glosses" where a name is quoted.
+
+### V8.7 Postmortem and corrections
+
+Failure found: the key_full source note for 153 claims two gloss attestations; one is clean, the other partly
+obscured (V8.2). AX-REDERIV caught it and then over-corrected in the other direction ("Ertzhertzoge"); neither read is
+established on the p2-5 run. The grade does not move. Second: AX-NAMES2's table marks the p5 spot "gap filled? yes";
+it is filled by one word out of four codes (NOTES.md annotated). No sentence in the folder calls 5797 new, first or
+unpublished; nothing else corrected. SO-LODEWIJK-1573-74: the answered prompt predates key_full and does not cover
+5797; a dated note was added to the prompt file and the queue row.
+
+Requests (this session): resources.huygens.knaw.nl 3 (05550.pdf, brief 5797, brief 5550); archive.org 46
+(advancedsearch 5, print_check 41); be-api.us.archive.org 34 (print_check 27, by hand 7); www.googleapis.com 9;
+api.openalex.org 11; api.crossref.org 3; api.semanticscholar.org 4 (1 answered, 3 x 429, stopped);
+data.htrc.illinois.edu 1; github.com 4 (two shallow clones, twice). No subagents.

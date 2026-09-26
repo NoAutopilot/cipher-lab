@@ -85,3 +85,5 @@ ciphers/clair349-este-guise-1556	("cardinal de Ferrare" OR "Ippolito d'Este" OR 
 ciphers/clair349-este-guise-1556	("Clairambault 349" OR "Clair. 349") AND (Guise OR Ferrare)	2026-09-25	queued	
 ciphers/clair349-este-guise-1556	("capitaine Livio" OR "capitano Livio") AND (Guise OR Ferrare OR Ferrara) AND 1557	2026-09-25	queued	
 ciphers/thurloe-printed	"Henry Manning" AND (Cologne OR Thurloe) AND (1655 OR spy OR intelligence)	2026-09-26	queued	
+ciphers/lodewijk-van-nassau-1573-74	("Ludwig von Nassau" OR "Louis of Nassau" OR "Johann von Nassau") AND 1573 AND (Chiffre OR cipher OR entziffert) AND (Pfalzgraf OR Landgraf)	2026-09-26	queued	
+ciphers/lodewijk-van-nassau-1573-74	(Graveneinigung OR "Wetterauer Grafenverein") AND 1573 AND Dillenburg AND (Pfalz OR Hessen)	2026-09-26	queued	

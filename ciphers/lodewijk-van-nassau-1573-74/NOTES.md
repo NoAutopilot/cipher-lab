@@ -1040,6 +1040,7 @@ Revisions for the orchestrator: `revisions_for_audit.tsv` (`python3 axnames/revi
 (letter, line, pos, code, old, new, grade, class, source, context): 4610 136, 4611 99, 4616 2, 5797 21; word/name
 rows 14 (the table above), the rest NULL placements that remove a '?' placeholder and change no letter. I did not edit
 AUDIT.md or SECOND-OPINIONS-QUEUE.tsv.
+[Verifier V8-NA5797, 26 Sept 2026: "gap filled? yes" for p5_spot3 means one word of four codes -- 126 NULL, 136 key_full 'vingt' (M, cannot fit) and 146 (U) still sit in Groen's blank before "ist willens"; and 153's H rests on one clean 5550 gloss (run p2-11, 'Palsgraue'), not two (AUDIT.md V8.2). Class: AUDIT.md V8.1.]
 
 **(5) Judge**, `python3 tools/judge_plaintext.py specs/lodewijk-5797.json --file ciphers/lodewijk-van-nassau-1573-74/reading_5797_full.txt`:
 ```

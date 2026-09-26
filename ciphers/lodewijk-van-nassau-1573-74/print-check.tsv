@@ -1,0 +1,423 @@
+# tools/print_check.py, 26 Sep 2026. A search result, not a novelty verdict (CLAUDE.md rule 10).
+phrase	source	result	detail	url
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:archivesoucorres04unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres04unse
+Pfalzgraf helt sich wol	ia:archivesoucorres04unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres04unse
+Herzog von Sachsen und Landgraf ist willens	ia:archivesoucorres04unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres04unse
+Sachsen und Landgraf ist willens	ia:archivesoucorres04unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres04unse
+helt sich wol und thut in warheit viel	ia:archivesoucorres04unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres04unse
+Bey dem Herzog von Sachsen und ist willens	ia:archivesoucorres04unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres04unse
+bruit que le duc d'Albe seme icy	ia:archivesoucorres04unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres04unse
+forces du duc d'Albe le capitaine	ia:archivesoucorres04unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres04unse
+frere du roy d'Espagne	ia:archivesoucorres04unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres04unse
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:bub_gb_0bOisP671wwC	no hits	djvu text not available (HTTP 404); be-api page_num is not a page locator; 	https://be-api.us.archive.org/fts/v1/search?q=%22Pfaltzgraf%20helt%20sich%20wol%20und%20thut%20in%20warheit%20viel%22&identifier=bub_gb_0bOisP671wwC
+Pfalzgraf helt sich wol	ia:bub_gb_0bOisP671wwC	no hits	djvu text not available (HTTP 404); be-api page_num is not a page locator; 	https://be-api.us.archive.org/fts/v1/search?q=%22Pfalzgraf%20helt%20sich%20wol%22&identifier=bub_gb_0bOisP671wwC
+Herzog von Sachsen und Landgraf ist willens	ia:bub_gb_0bOisP671wwC	no hits	djvu text not available (HTTP 404); be-api page_num is not a page locator; 	https://be-api.us.archive.org/fts/v1/search?q=%22Herzog%20von%20Sachsen%20und%20Landgraf%20ist%20willens%22&identifier=bub_gb_0bOisP671wwC
+Sachsen und Landgraf ist willens	ia:bub_gb_0bOisP671wwC	no hits	djvu text not available (HTTP 404); be-api page_num is not a page locator; 	https://be-api.us.archive.org/fts/v1/search?q=%22Sachsen%20und%20Landgraf%20ist%20willens%22&identifier=bub_gb_0bOisP671wwC
+helt sich wol und thut in warheit viel	ia:bub_gb_0bOisP671wwC	no hits	djvu text not available (HTTP 404); be-api page_num is not a page locator; 	https://be-api.us.archive.org/fts/v1/search?q=%22helt%20sich%20wol%20und%20thut%20in%20warheit%20viel%22&identifier=bub_gb_0bOisP671wwC
+Bey dem Herzog von Sachsen und ist willens	ia:bub_gb_0bOisP671wwC	no hits	djvu text not available (HTTP 404); be-api page_num is not a page locator; 	https://be-api.us.archive.org/fts/v1/search?q=%22Bey%20dem%20Herzog%20von%20Sachsen%20und%20ist%20willens%22&identifier=bub_gb_0bOisP671wwC
+bruit que le duc d'Albe seme icy	ia:bub_gb_0bOisP671wwC	no hits	djvu text not available (HTTP 404); be-api page_num is not a page locator; 	https://be-api.us.archive.org/fts/v1/search?q=%22bruit%20que%20le%20duc%20d%27Albe%20seme%20icy%22&identifier=bub_gb_0bOisP671wwC
+forces du duc d'Albe le capitaine	ia:bub_gb_0bOisP671wwC	no hits	djvu text not available (HTTP 404); be-api page_num is not a page locator; 	https://be-api.us.archive.org/fts/v1/search?q=%22forces%20du%20duc%20d%27Albe%20le%20capitaine%22&identifier=bub_gb_0bOisP671wwC
+frere du roy d'Espagne	ia:bub_gb_0bOisP671wwC	no hits	djvu text not available (HTTP 404); be-api page_num is not a page locator; 	https://be-api.us.archive.org/fts/v1/search?q=%22frere%20du%20roy%20d%27Espagne%22&identifier=bub_gb_0bOisP671wwC
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:bub_gb_D8ZW1o6MNMMC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_D8ZW1o6MNMMC
+Pfalzgraf helt sich wol	ia:bub_gb_D8ZW1o6MNMMC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_D8ZW1o6MNMMC
+Herzog von Sachsen und Landgraf ist willens	ia:bub_gb_D8ZW1o6MNMMC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_D8ZW1o6MNMMC
+Sachsen und Landgraf ist willens	ia:bub_gb_D8ZW1o6MNMMC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_D8ZW1o6MNMMC
+helt sich wol und thut in warheit viel	ia:bub_gb_D8ZW1o6MNMMC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_D8ZW1o6MNMMC
+Bey dem Herzog von Sachsen und ist willens	ia:bub_gb_D8ZW1o6MNMMC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_D8ZW1o6MNMMC
+bruit que le duc d'Albe seme icy	ia:bub_gb_D8ZW1o6MNMMC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_D8ZW1o6MNMMC
+forces du duc d'Albe le capitaine	ia:bub_gb_D8ZW1o6MNMMC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_D8ZW1o6MNMMC
+frere du roy d'Espagne	ia:bub_gb_D8ZW1o6MNMMC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_D8ZW1o6MNMMC
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:archivesoucorre06housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre06housgoog
+Pfalzgraf helt sich wol	ia:archivesoucorre06housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre06housgoog
+Herzog von Sachsen und Landgraf ist willens	ia:archivesoucorre06housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre06housgoog
+Sachsen und Landgraf ist willens	ia:archivesoucorre06housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre06housgoog
+helt sich wol und thut in warheit viel	ia:archivesoucorre06housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre06housgoog
+Bey dem Herzog von Sachsen und ist willens	ia:archivesoucorre06housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre06housgoog
+bruit que le duc d'Albe seme icy	ia:archivesoucorre06housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre06housgoog
+forces du duc d'Albe le capitaine	ia:archivesoucorre06housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre06housgoog
+frere du roy d'Espagne	ia:archivesoucorre06housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre06housgoog
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:archivesoucorre03housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre03housgoog
+Pfalzgraf helt sich wol	ia:archivesoucorre03housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre03housgoog
+Herzog von Sachsen und Landgraf ist willens	ia:archivesoucorre03housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre03housgoog
+Sachsen und Landgraf ist willens	ia:archivesoucorre03housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre03housgoog
+helt sich wol und thut in warheit viel	ia:archivesoucorre03housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre03housgoog
+Bey dem Herzog von Sachsen und ist willens	ia:archivesoucorre03housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre03housgoog
+bruit que le duc d'Albe seme icy	ia:archivesoucorre03housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre03housgoog
+forces du duc d'Albe le capitaine	ia:archivesoucorre03housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre03housgoog
+frere du roy d'Espagne	ia:archivesoucorre03housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre03housgoog
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:archivesoucorres03unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres03unse
+Pfalzgraf helt sich wol	ia:archivesoucorres03unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres03unse
+Herzog von Sachsen und Landgraf ist willens	ia:archivesoucorres03unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres03unse
+Sachsen und Landgraf ist willens	ia:archivesoucorres03unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres03unse
+helt sich wol und thut in warheit viel	ia:archivesoucorres03unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres03unse
+Bey dem Herzog von Sachsen und ist willens	ia:archivesoucorres03unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres03unse
+bruit que le duc d'Albe seme icy	ia:archivesoucorres03unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres03unse
+forces du duc d'Albe le capitaine	ia:archivesoucorres03unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres03unse
+frere du roy d'Espagne	ia:archivesoucorres03unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres03unse
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:archivesoucorres02unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres02unse
+Pfalzgraf helt sich wol	ia:archivesoucorres02unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres02unse
+Herzog von Sachsen und Landgraf ist willens	ia:archivesoucorres02unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres02unse
+Sachsen und Landgraf ist willens	ia:archivesoucorres02unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres02unse
+helt sich wol und thut in warheit viel	ia:archivesoucorres02unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres02unse
+Bey dem Herzog von Sachsen und ist willens	ia:archivesoucorres02unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres02unse
+bruit que le duc d'Albe seme icy	ia:archivesoucorres02unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres02unse
+forces du duc d'Albe le capitaine	ia:archivesoucorres02unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres02unse
+frere du roy d'Espagne	ia:archivesoucorres02unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres02unse
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:bub_gb_n0O44Q7X8RMC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_n0O44Q7X8RMC
+Pfalzgraf helt sich wol	ia:bub_gb_n0O44Q7X8RMC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_n0O44Q7X8RMC
+Herzog von Sachsen und Landgraf ist willens	ia:bub_gb_n0O44Q7X8RMC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_n0O44Q7X8RMC
+Sachsen und Landgraf ist willens	ia:bub_gb_n0O44Q7X8RMC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_n0O44Q7X8RMC
+helt sich wol und thut in warheit viel	ia:bub_gb_n0O44Q7X8RMC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_n0O44Q7X8RMC
+Bey dem Herzog von Sachsen und ist willens	ia:bub_gb_n0O44Q7X8RMC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_n0O44Q7X8RMC
+bruit que le duc d'Albe seme icy	ia:bub_gb_n0O44Q7X8RMC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_n0O44Q7X8RMC
+forces du duc d'Albe le capitaine	ia:bub_gb_n0O44Q7X8RMC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_n0O44Q7X8RMC
+frere du roy d'Espagne	ia:bub_gb_n0O44Q7X8RMC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_n0O44Q7X8RMC
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:archivesoucorre02housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre02housgoog
+Pfalzgraf helt sich wol	ia:archivesoucorre02housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre02housgoog
+Herzog von Sachsen und Landgraf ist willens	ia:archivesoucorre02housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre02housgoog
+Sachsen und Landgraf ist willens	ia:archivesoucorre02housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre02housgoog
+helt sich wol und thut in warheit viel	ia:archivesoucorre02housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre02housgoog
+Bey dem Herzog von Sachsen und ist willens	ia:archivesoucorre02housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre02housgoog
+bruit que le duc d'Albe seme icy	ia:archivesoucorre02housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre02housgoog
+forces du duc d'Albe le capitaine	ia:archivesoucorre02housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre02housgoog
+frere du roy d'Espagne	ia:archivesoucorre02housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre02housgoog
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:bub_gb_5GumwYtaHX8C	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_5GumwYtaHX8C
+Pfalzgraf helt sich wol	ia:bub_gb_5GumwYtaHX8C	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_5GumwYtaHX8C
+Herzog von Sachsen und Landgraf ist willens	ia:bub_gb_5GumwYtaHX8C	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_5GumwYtaHX8C
+Sachsen und Landgraf ist willens	ia:bub_gb_5GumwYtaHX8C	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_5GumwYtaHX8C
+helt sich wol und thut in warheit viel	ia:bub_gb_5GumwYtaHX8C	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_5GumwYtaHX8C
+Bey dem Herzog von Sachsen und ist willens	ia:bub_gb_5GumwYtaHX8C	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_5GumwYtaHX8C
+bruit que le duc d'Albe seme icy	ia:bub_gb_5GumwYtaHX8C	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_5GumwYtaHX8C
+forces du duc d'Albe le capitaine	ia:bub_gb_5GumwYtaHX8C	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_5GumwYtaHX8C
+frere du roy d'Espagne	ia:bub_gb_5GumwYtaHX8C	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_5GumwYtaHX8C
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:archivesoucorre00housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre00housgoog
+Pfalzgraf helt sich wol	ia:archivesoucorre00housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre00housgoog
+Herzog von Sachsen und Landgraf ist willens	ia:archivesoucorre00housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre00housgoog
+Sachsen und Landgraf ist willens	ia:archivesoucorre00housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre00housgoog
+helt sich wol und thut in warheit viel	ia:archivesoucorre00housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre00housgoog
+Bey dem Herzog von Sachsen und ist willens	ia:archivesoucorre00housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre00housgoog
+bruit que le duc d'Albe seme icy	ia:archivesoucorre00housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre00housgoog
+forces du duc d'Albe le capitaine	ia:archivesoucorre00housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre00housgoog
+frere du roy d'Espagne	ia:archivesoucorre00housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre00housgoog
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:archivesoucorre04unkngoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre04unkngoog
+Pfalzgraf helt sich wol	ia:archivesoucorre04unkngoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre04unkngoog
+Herzog von Sachsen und Landgraf ist willens	ia:archivesoucorre04unkngoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre04unkngoog
+Sachsen und Landgraf ist willens	ia:archivesoucorre04unkngoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre04unkngoog
+helt sich wol und thut in warheit viel	ia:archivesoucorre04unkngoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre04unkngoog
+Bey dem Herzog von Sachsen und ist willens	ia:archivesoucorre04unkngoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre04unkngoog
+bruit que le duc d'Albe seme icy	ia:archivesoucorre04unkngoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre04unkngoog
+forces du duc d'Albe le capitaine	ia:archivesoucorre04unkngoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre04unkngoog
+frere du roy d'Espagne	ia:archivesoucorre04unkngoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre04unkngoog
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:archivesoucorre01housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre01housgoog
+Pfalzgraf helt sich wol	ia:archivesoucorre01housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre01housgoog
+Herzog von Sachsen und Landgraf ist willens	ia:archivesoucorre01housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre01housgoog
+Sachsen und Landgraf ist willens	ia:archivesoucorre01housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre01housgoog
+helt sich wol und thut in warheit viel	ia:archivesoucorre01housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre01housgoog
+Bey dem Herzog von Sachsen und ist willens	ia:archivesoucorre01housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre01housgoog
+bruit que le duc d'Albe seme icy	ia:archivesoucorre01housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre01housgoog
+forces du duc d'Albe le capitaine	ia:archivesoucorre01housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre01housgoog
+frere du roy d'Espagne	ia:archivesoucorre01housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre01housgoog
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:archivesoucorre03groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre03groe
+Pfalzgraf helt sich wol	ia:archivesoucorre03groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre03groe
+Herzog von Sachsen und Landgraf ist willens	ia:archivesoucorre03groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre03groe
+Sachsen und Landgraf ist willens	ia:archivesoucorre03groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre03groe
+helt sich wol und thut in warheit viel	ia:archivesoucorre03groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre03groe
+Bey dem Herzog von Sachsen und ist willens	ia:archivesoucorre03groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre03groe
+bruit que le duc d'Albe seme icy	ia:archivesoucorre03groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre03groe
+forces du duc d'Albe le capitaine	ia:archivesoucorre03groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre03groe
+frere du roy d'Espagne	ia:archivesoucorre03groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre03groe
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:archivesoucorre04housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre04housgoog
+Pfalzgraf helt sich wol	ia:archivesoucorre04housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre04housgoog
+Herzog von Sachsen und Landgraf ist willens	ia:archivesoucorre04housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre04housgoog
+Sachsen und Landgraf ist willens	ia:archivesoucorre04housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre04housgoog
+helt sich wol und thut in warheit viel	ia:archivesoucorre04housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre04housgoog
+Bey dem Herzog von Sachsen und ist willens	ia:archivesoucorre04housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre04housgoog
+bruit que le duc d'Albe seme icy	ia:archivesoucorre04housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre04housgoog
+forces du duc d'Albe le capitaine	ia:archivesoucorre04housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre04housgoog
+frere du roy d'Espagne	ia:archivesoucorre04housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre04housgoog
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:archivesoucorres04groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres04groe
+Pfalzgraf helt sich wol	ia:archivesoucorres04groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres04groe
+Herzog von Sachsen und Landgraf ist willens	ia:archivesoucorres04groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres04groe
+Sachsen und Landgraf ist willens	ia:archivesoucorres04groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres04groe
+helt sich wol und thut in warheit viel	ia:archivesoucorres04groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres04groe
+Bey dem Herzog von Sachsen und ist willens	ia:archivesoucorres04groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres04groe
+bruit que le duc d'Albe seme icy	ia:archivesoucorres04groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres04groe
+forces du duc d'Albe le capitaine	ia:archivesoucorres04groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres04groe
+frere du roy d'Espagne	ia:archivesoucorres04groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres04groe
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:archivesoucorres01unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres01unse
+Pfalzgraf helt sich wol	ia:archivesoucorres01unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres01unse
+Herzog von Sachsen und Landgraf ist willens	ia:archivesoucorres01unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres01unse
+Sachsen und Landgraf ist willens	ia:archivesoucorres01unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres01unse
+helt sich wol und thut in warheit viel	ia:archivesoucorres01unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres01unse
+Bey dem Herzog von Sachsen und ist willens	ia:archivesoucorres01unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres01unse
+bruit que le duc d'Albe seme icy	ia:archivesoucorres01unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres01unse
+forces du duc d'Albe le capitaine	ia:archivesoucorres01unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres01unse
+frere du roy d'Espagne	ia:archivesoucorres01unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres01unse
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:archivesoucorre07housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre07housgoog
+Pfalzgraf helt sich wol	ia:archivesoucorre07housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre07housgoog
+Herzog von Sachsen und Landgraf ist willens	ia:archivesoucorre07housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre07housgoog
+Sachsen und Landgraf ist willens	ia:archivesoucorre07housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre07housgoog
+helt sich wol und thut in warheit viel	ia:archivesoucorre07housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre07housgoog
+Bey dem Herzog von Sachsen und ist willens	ia:archivesoucorre07housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre07housgoog
+bruit que le duc d'Albe seme icy	ia:archivesoucorre07housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre07housgoog
+forces du duc d'Albe le capitaine	ia:archivesoucorre07housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre07housgoog
+frere du roy d'Espagne	ia:archivesoucorre07housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre07housgoog
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:archivesoucorre08housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre08housgoog
+Pfalzgraf helt sich wol	ia:archivesoucorre08housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre08housgoog
+Herzog von Sachsen und Landgraf ist willens	ia:archivesoucorre08housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre08housgoog
+Sachsen und Landgraf ist willens	ia:archivesoucorre08housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre08housgoog
+helt sich wol und thut in warheit viel	ia:archivesoucorre08housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre08housgoog
+Bey dem Herzog von Sachsen und ist willens	ia:archivesoucorre08housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre08housgoog
+bruit que le duc d'Albe seme icy	ia:archivesoucorre08housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre08housgoog
+forces du duc d'Albe le capitaine	ia:archivesoucorre08housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre08housgoog
+frere du roy d'Espagne	ia:archivesoucorre08housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre08housgoog
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:archivesoucorre09housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre09housgoog
+Pfalzgraf helt sich wol	ia:archivesoucorre09housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre09housgoog
+Herzog von Sachsen und Landgraf ist willens	ia:archivesoucorre09housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre09housgoog
+Sachsen und Landgraf ist willens	ia:archivesoucorre09housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre09housgoog
+helt sich wol und thut in warheit viel	ia:archivesoucorre09housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre09housgoog
+Bey dem Herzog von Sachsen und ist willens	ia:archivesoucorre09housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre09housgoog
+bruit que le duc d'Albe seme icy	ia:archivesoucorre09housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre09housgoog
+forces du duc d'Albe le capitaine	ia:archivesoucorre09housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre09housgoog
+frere du roy d'Espagne	ia:archivesoucorre09housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre09housgoog
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:bub_gb_lGF3eVwI5y4C	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_lGF3eVwI5y4C
+Pfalzgraf helt sich wol	ia:bub_gb_lGF3eVwI5y4C	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_lGF3eVwI5y4C
+Herzog von Sachsen und Landgraf ist willens	ia:bub_gb_lGF3eVwI5y4C	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_lGF3eVwI5y4C
+Sachsen und Landgraf ist willens	ia:bub_gb_lGF3eVwI5y4C	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_lGF3eVwI5y4C
+helt sich wol und thut in warheit viel	ia:bub_gb_lGF3eVwI5y4C	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_lGF3eVwI5y4C
+Bey dem Herzog von Sachsen und ist willens	ia:bub_gb_lGF3eVwI5y4C	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_lGF3eVwI5y4C
+bruit que le duc d'Albe seme icy	ia:bub_gb_lGF3eVwI5y4C	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_lGF3eVwI5y4C
+forces du duc d'Albe le capitaine	ia:bub_gb_lGF3eVwI5y4C	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_lGF3eVwI5y4C
+frere du roy d'Espagne	ia:bub_gb_lGF3eVwI5y4C	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_lGF3eVwI5y4C
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:bub_gb_BI4WXMI4g1wC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_BI4WXMI4g1wC
+Pfalzgraf helt sich wol	ia:bub_gb_BI4WXMI4g1wC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_BI4WXMI4g1wC
+Herzog von Sachsen und Landgraf ist willens	ia:bub_gb_BI4WXMI4g1wC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_BI4WXMI4g1wC
+Sachsen und Landgraf ist willens	ia:bub_gb_BI4WXMI4g1wC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_BI4WXMI4g1wC
+helt sich wol und thut in warheit viel	ia:bub_gb_BI4WXMI4g1wC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_BI4WXMI4g1wC
+Bey dem Herzog von Sachsen und ist willens	ia:bub_gb_BI4WXMI4g1wC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_BI4WXMI4g1wC
+bruit que le duc d'Albe seme icy	ia:bub_gb_BI4WXMI4g1wC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_BI4WXMI4g1wC
+forces du duc d'Albe le capitaine	ia:bub_gb_BI4WXMI4g1wC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_BI4WXMI4g1wC
+frere du roy d'Espagne	ia:bub_gb_BI4WXMI4g1wC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_BI4WXMI4g1wC
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:bub_gb_KMrMHt2MUgUC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_KMrMHt2MUgUC
+Pfalzgraf helt sich wol	ia:bub_gb_KMrMHt2MUgUC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_KMrMHt2MUgUC
+Herzog von Sachsen und Landgraf ist willens	ia:bub_gb_KMrMHt2MUgUC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_KMrMHt2MUgUC
+Sachsen und Landgraf ist willens	ia:bub_gb_KMrMHt2MUgUC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_KMrMHt2MUgUC
+helt sich wol und thut in warheit viel	ia:bub_gb_KMrMHt2MUgUC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_KMrMHt2MUgUC
+Bey dem Herzog von Sachsen und ist willens	ia:bub_gb_KMrMHt2MUgUC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_KMrMHt2MUgUC
+bruit que le duc d'Albe seme icy	ia:bub_gb_KMrMHt2MUgUC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_KMrMHt2MUgUC
+forces du duc d'Albe le capitaine	ia:bub_gb_KMrMHt2MUgUC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_KMrMHt2MUgUC
+frere du roy d'Espagne	ia:bub_gb_KMrMHt2MUgUC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_KMrMHt2MUgUC
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:bub_gb_AH4nk3oEuIsC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_AH4nk3oEuIsC
+Pfalzgraf helt sich wol	ia:bub_gb_AH4nk3oEuIsC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_AH4nk3oEuIsC
+Herzog von Sachsen und Landgraf ist willens	ia:bub_gb_AH4nk3oEuIsC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_AH4nk3oEuIsC
+Sachsen und Landgraf ist willens	ia:bub_gb_AH4nk3oEuIsC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_AH4nk3oEuIsC
+helt sich wol und thut in warheit viel	ia:bub_gb_AH4nk3oEuIsC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_AH4nk3oEuIsC
+Bey dem Herzog von Sachsen und ist willens	ia:bub_gb_AH4nk3oEuIsC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_AH4nk3oEuIsC
+bruit que le duc d'Albe seme icy	ia:bub_gb_AH4nk3oEuIsC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_AH4nk3oEuIsC
+forces du duc d'Albe le capitaine	ia:bub_gb_AH4nk3oEuIsC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_AH4nk3oEuIsC
+frere du roy d'Espagne	ia:bub_gb_AH4nk3oEuIsC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_AH4nk3oEuIsC
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:bub_gb_BojohG8zXkQC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_BojohG8zXkQC
+Pfalzgraf helt sich wol	ia:bub_gb_BojohG8zXkQC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_BojohG8zXkQC
+Herzog von Sachsen und Landgraf ist willens	ia:bub_gb_BojohG8zXkQC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_BojohG8zXkQC
+Sachsen und Landgraf ist willens	ia:bub_gb_BojohG8zXkQC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_BojohG8zXkQC
+helt sich wol und thut in warheit viel	ia:bub_gb_BojohG8zXkQC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_BojohG8zXkQC
+Bey dem Herzog von Sachsen und ist willens	ia:bub_gb_BojohG8zXkQC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_BojohG8zXkQC
+bruit que le duc d'Albe seme icy	ia:bub_gb_BojohG8zXkQC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_BojohG8zXkQC
+forces du duc d'Albe le capitaine	ia:bub_gb_BojohG8zXkQC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_BojohG8zXkQC
+frere du roy d'Espagne	ia:bub_gb_BojohG8zXkQC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_BojohG8zXkQC
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:bub_gb_NhOJqSX9GgIC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_NhOJqSX9GgIC
+Pfalzgraf helt sich wol	ia:bub_gb_NhOJqSX9GgIC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_NhOJqSX9GgIC
+Herzog von Sachsen und Landgraf ist willens	ia:bub_gb_NhOJqSX9GgIC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_NhOJqSX9GgIC
+Sachsen und Landgraf ist willens	ia:bub_gb_NhOJqSX9GgIC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_NhOJqSX9GgIC
+helt sich wol und thut in warheit viel	ia:bub_gb_NhOJqSX9GgIC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_NhOJqSX9GgIC
+Bey dem Herzog von Sachsen und ist willens	ia:bub_gb_NhOJqSX9GgIC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_NhOJqSX9GgIC
+bruit que le duc d'Albe seme icy	ia:bub_gb_NhOJqSX9GgIC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_NhOJqSX9GgIC
+forces du duc d'Albe le capitaine	ia:bub_gb_NhOJqSX9GgIC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_NhOJqSX9GgIC
+frere du roy d'Espagne	ia:bub_gb_NhOJqSX9GgIC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_NhOJqSX9GgIC
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:bub_gb_rM--6yqWqc4C	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_rM--6yqWqc4C
+Pfalzgraf helt sich wol	ia:bub_gb_rM--6yqWqc4C	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_rM--6yqWqc4C
+Herzog von Sachsen und Landgraf ist willens	ia:bub_gb_rM--6yqWqc4C	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_rM--6yqWqc4C
+Sachsen und Landgraf ist willens	ia:bub_gb_rM--6yqWqc4C	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_rM--6yqWqc4C
+helt sich wol und thut in warheit viel	ia:bub_gb_rM--6yqWqc4C	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_rM--6yqWqc4C
+Bey dem Herzog von Sachsen und ist willens	ia:bub_gb_rM--6yqWqc4C	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_rM--6yqWqc4C
+bruit que le duc d'Albe seme icy	ia:bub_gb_rM--6yqWqc4C	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_rM--6yqWqc4C
+forces du duc d'Albe le capitaine	ia:bub_gb_rM--6yqWqc4C	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_rM--6yqWqc4C
+frere du roy d'Espagne	ia:bub_gb_rM--6yqWqc4C	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_rM--6yqWqc4C
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:bub_gb_zBQish8rkmAC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_zBQish8rkmAC
+Pfalzgraf helt sich wol	ia:bub_gb_zBQish8rkmAC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_zBQish8rkmAC
+Herzog von Sachsen und Landgraf ist willens	ia:bub_gb_zBQish8rkmAC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_zBQish8rkmAC
+Sachsen und Landgraf ist willens	ia:bub_gb_zBQish8rkmAC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_zBQish8rkmAC
+helt sich wol und thut in warheit viel	ia:bub_gb_zBQish8rkmAC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_zBQish8rkmAC
+Bey dem Herzog von Sachsen und ist willens	ia:bub_gb_zBQish8rkmAC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_zBQish8rkmAC
+bruit que le duc d'Albe seme icy	ia:bub_gb_zBQish8rkmAC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_zBQish8rkmAC
+forces du duc d'Albe le capitaine	ia:bub_gb_zBQish8rkmAC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_zBQish8rkmAC
+frere du roy d'Espagne	ia:bub_gb_zBQish8rkmAC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_zBQish8rkmAC
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:bub_gb_1qtcMB3cKasC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_1qtcMB3cKasC
+Pfalzgraf helt sich wol	ia:bub_gb_1qtcMB3cKasC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_1qtcMB3cKasC
+Herzog von Sachsen und Landgraf ist willens	ia:bub_gb_1qtcMB3cKasC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_1qtcMB3cKasC
+Sachsen und Landgraf ist willens	ia:bub_gb_1qtcMB3cKasC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_1qtcMB3cKasC
+helt sich wol und thut in warheit viel	ia:bub_gb_1qtcMB3cKasC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_1qtcMB3cKasC
+Bey dem Herzog von Sachsen und ist willens	ia:bub_gb_1qtcMB3cKasC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_1qtcMB3cKasC
+bruit que le duc d'Albe seme icy	ia:bub_gb_1qtcMB3cKasC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_1qtcMB3cKasC
+forces du duc d'Albe le capitaine	ia:bub_gb_1qtcMB3cKasC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_1qtcMB3cKasC
+frere du roy d'Espagne	ia:bub_gb_1qtcMB3cKasC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_1qtcMB3cKasC
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:bub_gb_IP8DUd8XLsEC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_IP8DUd8XLsEC
+Pfalzgraf helt sich wol	ia:bub_gb_IP8DUd8XLsEC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_IP8DUd8XLsEC
+Herzog von Sachsen und Landgraf ist willens	ia:bub_gb_IP8DUd8XLsEC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_IP8DUd8XLsEC
+Sachsen und Landgraf ist willens	ia:bub_gb_IP8DUd8XLsEC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_IP8DUd8XLsEC
+helt sich wol und thut in warheit viel	ia:bub_gb_IP8DUd8XLsEC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_IP8DUd8XLsEC
+Bey dem Herzog von Sachsen und ist willens	ia:bub_gb_IP8DUd8XLsEC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_IP8DUd8XLsEC
+bruit que le duc d'Albe seme icy	ia:bub_gb_IP8DUd8XLsEC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_IP8DUd8XLsEC
+forces du duc d'Albe le capitaine	ia:bub_gb_IP8DUd8XLsEC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_IP8DUd8XLsEC
+frere du roy d'Espagne	ia:bub_gb_IP8DUd8XLsEC	no hits	downloaded djvu text; 	https://archive.org/details/bub_gb_IP8DUd8XLsEC
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:archivesoucorre05housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre05housgoog
+Pfalzgraf helt sich wol	ia:archivesoucorre05housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre05housgoog
+Herzog von Sachsen und Landgraf ist willens	ia:archivesoucorre05housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre05housgoog
+Sachsen und Landgraf ist willens	ia:archivesoucorre05housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre05housgoog
+helt sich wol und thut in warheit viel	ia:archivesoucorre05housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre05housgoog
+Bey dem Herzog von Sachsen und ist willens	ia:archivesoucorre05housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre05housgoog
+bruit que le duc d'Albe seme icy	ia:archivesoucorre05housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre05housgoog
+forces du duc d'Albe le capitaine	ia:archivesoucorre05housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre05housgoog
+frere du roy d'Espagne	ia:archivesoucorre05housgoog	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorre05housgoog
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:archivesoucorres02groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres02groe
+Pfalzgraf helt sich wol	ia:archivesoucorres02groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres02groe
+Herzog von Sachsen und Landgraf ist willens	ia:archivesoucorres02groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres02groe
+Sachsen und Landgraf ist willens	ia:archivesoucorres02groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres02groe
+helt sich wol und thut in warheit viel	ia:archivesoucorres02groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres02groe
+Bey dem Herzog von Sachsen und ist willens	ia:archivesoucorres02groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres02groe
+bruit que le duc d'Albe seme icy	ia:archivesoucorres02groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres02groe
+forces du duc d'Albe le capitaine	ia:archivesoucorres02groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres02groe
+frere du roy d'Espagne	ia:archivesoucorres02groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres02groe
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:archivesoucorres01groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres01groe
+Pfalzgraf helt sich wol	ia:archivesoucorres01groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres01groe
+Herzog von Sachsen und Landgraf ist willens	ia:archivesoucorres01groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres01groe
+Sachsen und Landgraf ist willens	ia:archivesoucorres01groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres01groe
+helt sich wol und thut in warheit viel	ia:archivesoucorres01groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres01groe
+Bey dem Herzog von Sachsen und ist willens	ia:archivesoucorres01groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres01groe
+bruit que le duc d'Albe seme icy	ia:archivesoucorres01groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres01groe
+forces du duc d'Albe le capitaine	ia:archivesoucorres01groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres01groe
+frere du roy d'Espagne	ia:archivesoucorres01groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres01groe
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:archivesoucorres05groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres05groe
+Pfalzgraf helt sich wol	ia:archivesoucorres05groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres05groe
+Herzog von Sachsen und Landgraf ist willens	ia:archivesoucorres05groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres05groe
+Sachsen und Landgraf ist willens	ia:archivesoucorres05groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres05groe
+helt sich wol und thut in warheit viel	ia:archivesoucorres05groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres05groe
+Bey dem Herzog von Sachsen und ist willens	ia:archivesoucorres05groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres05groe
+bruit que le duc d'Albe seme icy	ia:archivesoucorres05groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres05groe
+forces du duc d'Albe le capitaine	ia:archivesoucorres05groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres05groe
+frere du roy d'Espagne	ia:archivesoucorres05groe	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres05groe
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:archivesoucorres05unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres05unse
+Pfalzgraf helt sich wol	ia:archivesoucorres05unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres05unse
+Herzog von Sachsen und Landgraf ist willens	ia:archivesoucorres05unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres05unse
+Sachsen und Landgraf ist willens	ia:archivesoucorres05unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres05unse
+helt sich wol und thut in warheit viel	ia:archivesoucorres05unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres05unse
+Bey dem Herzog von Sachsen und ist willens	ia:archivesoucorres05unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres05unse
+bruit que le duc d'Albe seme icy	ia:archivesoucorres05unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres05unse
+forces du duc d'Albe le capitaine	ia:archivesoucorres05unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres05unse
+frere du roy d'Espagne	ia:archivesoucorres05unse	no hits	downloaded djvu text; 	https://archive.org/details/archivesoucorres05unse
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:correspondancede01will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede01will
+Pfalzgraf helt sich wol	ia:correspondancede01will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede01will
+Herzog von Sachsen und Landgraf ist willens	ia:correspondancede01will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede01will
+Sachsen und Landgraf ist willens	ia:correspondancede01will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede01will
+helt sich wol und thut in warheit viel	ia:correspondancede01will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede01will
+Bey dem Herzog von Sachsen und ist willens	ia:correspondancede01will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede01will
+bruit que le duc d'Albe seme icy	ia:correspondancede01will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede01will
+forces du duc d'Albe le capitaine	ia:correspondancede01will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede01will
+frere du roy d'Espagne	ia:correspondancede01will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede01will
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:correspondancede02will	no hits	cached sources/ia-fulltext/print-check/correspondancede02will_djvu.txt.gz; 	https://archive.org/details/correspondancede02will
+Pfalzgraf helt sich wol	ia:correspondancede02will	no hits	cached sources/ia-fulltext/print-check/correspondancede02will_djvu.txt.gz; 	https://archive.org/details/correspondancede02will
+Herzog von Sachsen und Landgraf ist willens	ia:correspondancede02will	no hits	cached sources/ia-fulltext/print-check/correspondancede02will_djvu.txt.gz; 	https://archive.org/details/correspondancede02will
+Sachsen und Landgraf ist willens	ia:correspondancede02will	no hits	cached sources/ia-fulltext/print-check/correspondancede02will_djvu.txt.gz; 	https://archive.org/details/correspondancede02will
+helt sich wol und thut in warheit viel	ia:correspondancede02will	no hits	cached sources/ia-fulltext/print-check/correspondancede02will_djvu.txt.gz; 	https://archive.org/details/correspondancede02will
+Bey dem Herzog von Sachsen und ist willens	ia:correspondancede02will	no hits	cached sources/ia-fulltext/print-check/correspondancede02will_djvu.txt.gz; 	https://archive.org/details/correspondancede02will
+bruit que le duc d'Albe seme icy	ia:correspondancede02will	no hits	cached sources/ia-fulltext/print-check/correspondancede02will_djvu.txt.gz; 	https://archive.org/details/correspondancede02will
+forces du duc d'Albe le capitaine	ia:correspondancede02will	no hits	cached sources/ia-fulltext/print-check/correspondancede02will_djvu.txt.gz; 	https://archive.org/details/correspondancede02will
+frere du roy d'Espagne	ia:correspondancede02will	no hits	cached sources/ia-fulltext/print-check/correspondancede02will_djvu.txt.gz; 	https://archive.org/details/correspondancede02will
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:correspondancede03will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede03will
+Pfalzgraf helt sich wol	ia:correspondancede03will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede03will
+Herzog von Sachsen und Landgraf ist willens	ia:correspondancede03will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede03will
+Sachsen und Landgraf ist willens	ia:correspondancede03will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede03will
+helt sich wol und thut in warheit viel	ia:correspondancede03will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede03will
+Bey dem Herzog von Sachsen und ist willens	ia:correspondancede03will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede03will
+bruit que le duc d'Albe seme icy	ia:correspondancede03will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede03will
+forces du duc d'Albe le capitaine	ia:correspondancede03will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede03will
+frere du roy d'Espagne	ia:correspondancede03will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede03will
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:correspondancede04will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede04will
+Pfalzgraf helt sich wol	ia:correspondancede04will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede04will
+Herzog von Sachsen und Landgraf ist willens	ia:correspondancede04will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede04will
+Sachsen und Landgraf ist willens	ia:correspondancede04will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede04will
+helt sich wol und thut in warheit viel	ia:correspondancede04will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede04will
+Bey dem Herzog von Sachsen und ist willens	ia:correspondancede04will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede04will
+bruit que le duc d'Albe seme icy	ia:correspondancede04will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede04will
+forces du duc d'Albe le capitaine	ia:correspondancede04will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede04will
+frere du roy d'Espagne	ia:correspondancede04will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede04will
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:correspondancede05will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede05will
+Pfalzgraf helt sich wol	ia:correspondancede05will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede05will
+Herzog von Sachsen und Landgraf ist willens	ia:correspondancede05will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede05will
+Sachsen und Landgraf ist willens	ia:correspondancede05will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede05will
+helt sich wol und thut in warheit viel	ia:correspondancede05will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede05will
+Bey dem Herzog von Sachsen und ist willens	ia:correspondancede05will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede05will
+bruit que le duc d'Albe seme icy	ia:correspondancede05will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede05will
+forces du duc d'Albe le capitaine	ia:correspondancede05will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede05will
+frere du roy d'Espagne	ia:correspondancede05will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede05will
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:correspondancede06will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede06will
+Pfalzgraf helt sich wol	ia:correspondancede06will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede06will
+Herzog von Sachsen und Landgraf ist willens	ia:correspondancede06will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede06will
+Sachsen und Landgraf ist willens	ia:correspondancede06will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede06will
+helt sich wol und thut in warheit viel	ia:correspondancede06will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede06will
+Bey dem Herzog von Sachsen und ist willens	ia:correspondancede06will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede06will
+bruit que le duc d'Albe seme icy	ia:correspondancede06will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede06will
+forces du duc d'Albe le capitaine	ia:correspondancede06will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede06will
+frere du roy d'Espagne	ia:correspondancede06will	no hits	downloaded djvu text; 	https://archive.org/details/correspondancede06will
+Pfaltzgraf helt sich wol und thut in warheit viel	ia:niederlandekalvi0000glaw	no hits	djvu text not available (HTTP 500); be-api page_num is not a page locator; 	https://be-api.us.archive.org/fts/v1/search?q=%22Pfaltzgraf%20helt%20sich%20wol%20und%20thut%20in%20warheit%20viel%22&identifier=niederlandekalvi0000glaw
+Pfalzgraf helt sich wol	ia:niederlandekalvi0000glaw	no hits	djvu text not available (HTTP 500); be-api page_num is not a page locator; 	https://be-api.us.archive.org/fts/v1/search?q=%22Pfalzgraf%20helt%20sich%20wol%22&identifier=niederlandekalvi0000glaw
+Herzog von Sachsen und Landgraf ist willens	ia:niederlandekalvi0000glaw	no hits	djvu text not available (HTTP 500); be-api page_num is not a page locator; 	https://be-api.us.archive.org/fts/v1/search?q=%22Herzog%20von%20Sachsen%20und%20Landgraf%20ist%20willens%22&identifier=niederlandekalvi0000glaw
+Sachsen und Landgraf ist willens	ia:niederlandekalvi0000glaw	no hits	djvu text not available (HTTP 500); be-api page_num is not a page locator; 	https://be-api.us.archive.org/fts/v1/search?q=%22Sachsen%20und%20Landgraf%20ist%20willens%22&identifier=niederlandekalvi0000glaw
+helt sich wol und thut in warheit viel	ia:niederlandekalvi0000glaw	no hits	djvu text not available (HTTP 500); be-api page_num is not a page locator; 	https://be-api.us.archive.org/fts/v1/search?q=%22helt%20sich%20wol%20und%20thut%20in%20warheit%20viel%22&identifier=niederlandekalvi0000glaw
+Bey dem Herzog von Sachsen und ist willens	ia:niederlandekalvi0000glaw	no hits	djvu text not available (HTTP 500); be-api page_num is not a page locator; 	https://be-api.us.archive.org/fts/v1/search?q=%22Bey%20dem%20Herzog%20von%20Sachsen%20und%20ist%20willens%22&identifier=niederlandekalvi0000glaw
+bruit que le duc d'Albe seme icy	ia:niederlandekalvi0000glaw	no hits	djvu text not available (HTTP 500); be-api page_num is not a page locator; 	https://be-api.us.archive.org/fts/v1/search?q=%22bruit%20que%20le%20duc%20d%27Albe%20seme%20icy%22&identifier=niederlandekalvi0000glaw
+forces du duc d'Albe le capitaine	ia:niederlandekalvi0000glaw	no hits	djvu text not available (HTTP 500); be-api page_num is not a page locator; 	https://be-api.us.archive.org/fts/v1/search?q=%22forces%20du%20duc%20d%27Albe%20le%20capitaine%22&identifier=niederlandekalvi0000glaw
+frere du roy d'Espagne	ia:niederlandekalvi0000glaw	no hits	djvu text not available (HTTP 500); be-api page_num is not a page locator; 	https://be-api.us.archive.org/fts/v1/search?q=%22frere%20du%20roy%20d%27Espagne%22&identifier=niederlandekalvi0000glaw
+Pfaltzgraf helt sich wol und thut in warheit viel	ia-global	no hits		https://be-api.us.archive.org/fts/v1/search?q=%22Pfaltzgraf%20helt%20sich%20wol%20und%20thut%20in%20warheit%20viel%22
+Pfalzgraf helt sich wol	ia-global	no hits		https://be-api.us.archive.org/fts/v1/search?q=%22Pfalzgraf%20helt%20sich%20wol%22
+Herzog von Sachsen und Landgraf ist willens	ia-global	no hits		https://be-api.us.archive.org/fts/v1/search?q=%22Herzog%20von%20Sachsen%20und%20Landgraf%20ist%20willens%22
+Sachsen und Landgraf ist willens	ia-global	no hits		https://be-api.us.archive.org/fts/v1/search?q=%22Sachsen%20und%20Landgraf%20ist%20willens%22
+helt sich wol und thut in warheit viel	ia-global	2 item(s)	archivesoucorre03pringoog (Archives ou correspondance inédite de la maison d); archivesoucorre11pringoog (Archives ou correspondance inédite de la maison d)	https://be-api.us.archive.org/fts/v1/search?q=%22helt%20sich%20wol%20und%20thut%20in%20warheit%20viel%22
+Bey dem Herzog von Sachsen und ist willens	ia-global	no hits		https://be-api.us.archive.org/fts/v1/search?q=%22Bey%20dem%20Herzog%20von%20Sachsen%20und%20ist%20willens%22
+bruit que le duc d'Albe seme icy	ia-global	no hits		https://be-api.us.archive.org/fts/v1/search?q=%22bruit%20que%20le%20duc%20d%27Albe%20seme%20icy%22
+forces du duc d'Albe le capitaine	ia-global	no hits		https://be-api.us.archive.org/fts/v1/search?q=%22forces%20du%20duc%20d%27Albe%20le%20capitaine%22
+frere du roy d'Espagne	ia-global	9 item(s)	lettresindites00henruoft (Lettres inédites du roi Henri IV à Monsieur de Sil); lettresinditesd01henrgoog (Lettres inédites du roi Henri IV à Monsieur de S); tudehistorique00guil (Étude historique et biographique sur Guillaume de ); bub_gb_kyifZ_9ijH4C (Oeuvres de Ph. De Marnix de Sainte Aldegonde Table); tableaudesdiffr00quingoog (Tableau des différents de la religion, Volume 1)	https://be-api.us.archive.org/fts/v1/search?q=%22frere%20du%20roy%20d%27Espagne%22
+Pfaltzgraf helt sich wol und thut in warheit viel	gbooks	no hits		https://www.googleapis.com/books/v1/volumes?q=%22Pfaltzgraf%20helt%20sich%20wol%20und%20thut%20in%20warheit%20viel%22&country=US&maxResults=10
+Pfalzgraf helt sich wol	gbooks	no hits		https://www.googleapis.com/books/v1/volumes?q=%22Pfalzgraf%20helt%20sich%20wol%22&country=US&maxResults=10
+Herzog von Sachsen und Landgraf ist willens	gbooks	no hits		https://www.googleapis.com/books/v1/volumes?q=%22Herzog%20von%20Sachsen%20und%20Landgraf%20ist%20willens%22&country=US&maxResults=10
+Sachsen und Landgraf ist willens	gbooks	no hits		https://www.googleapis.com/books/v1/volumes?q=%22Sachsen%20und%20Landgraf%20ist%20willens%22&country=US&maxResults=10
+helt sich wol und thut in warheit viel	gbooks	no hits		https://www.googleapis.com/books/v1/volumes?q=%22helt%20sich%20wol%20und%20thut%20in%20warheit%20viel%22&country=US&maxResults=10
+Bey dem Herzog von Sachsen und ist willens	gbooks	no hits		https://www.googleapis.com/books/v1/volumes?q=%22Bey%20dem%20Herzog%20von%20Sachsen%20und%20ist%20willens%22&country=US&maxResults=10
+bruit que le duc d'Albe seme icy	gbooks	no hits		https://www.googleapis.com/books/v1/volumes?q=%22bruit%20que%20le%20duc%20d%27Albe%20seme%20icy%22&country=US&maxResults=10
+forces du duc d'Albe le capitaine	gbooks	no hits		https://www.googleapis.com/books/v1/volumes?q=%22forces%20du%20duc%20d%27Albe%20le%20capitaine%22&country=US&maxResults=10
+frere du roy d'Espagne	gbooks	300 volume(s)	oe2bYy40JvkC Appendices B,C,D 1869; xOJEDk2w10kC Appendices [A - E] to a Report on Rymer' 1835; KMI-AAAAcAAJ Lettres du Cardinal d'Ossat au roy Henry 1627; fQ5lAAAAcAAJ Les négotiations de Monsieur le Presiden 1656; 6s5TAAAAcAAJ Les negotiations 1656	https://www.googleapis.com/books/v1/volumes?q=%22frere%20du%20roy%20d%27Espagne%22&country=US&maxResults=10
+Pfaltzgraf helt sich wol und thut in warheit viel	openalex	no hits		https://api.openalex.org/works?per-page=5&search=%22Pfaltzgraf%20helt%20sich%20wol%20und%20thut%20in%20warheit%20viel%22
+Pfalzgraf helt sich wol	openalex	no hits		https://api.openalex.org/works?per-page=5&search=%22Pfalzgraf%20helt%20sich%20wol%22
+Herzog von Sachsen und Landgraf ist willens	openalex	no hits		https://api.openalex.org/works?per-page=5&search=%22Herzog%20von%20Sachsen%20und%20Landgraf%20ist%20willens%22
+Sachsen und Landgraf ist willens	openalex	no hits		https://api.openalex.org/works?per-page=5&search=%22Sachsen%20und%20Landgraf%20ist%20willens%22
+helt sich wol und thut in warheit viel	openalex	no hits		https://api.openalex.org/works?per-page=5&search=%22helt%20sich%20wol%20und%20thut%20in%20warheit%20viel%22
+Bey dem Herzog von Sachsen und ist willens	openalex	no hits		https://api.openalex.org/works?per-page=5&search=%22Bey%20dem%20Herzog%20von%20Sachsen%20und%20ist%20willens%22
+bruit que le duc d'Albe seme icy	openalex	no hits		https://api.openalex.org/works?per-page=5&search=%22bruit%20que%20le%20duc%20d%27Albe%20seme%20icy%22
+forces du duc d'Albe le capitaine	openalex	no hits		https://api.openalex.org/works?per-page=5&search=%22forces%20du%20duc%20d%27Albe%20le%20capitaine%22
+frere du roy d'Espagne	openalex	no hits		https://api.openalex.org/works?per-page=5&search=%22frere%20du%20roy%20d%27Espagne%22
+(keywords) Ludwig von Nassau 1573 Chiffre Graveneinigung	openalex	no hits		https://api.openalex.org/works?per-page=5&search=Ludwig%20von%20Nassau%201573%20Chiffre%20Graveneinigung
+(keywords) Louis of Nassau cipher letters Orange 1573 deciphered	openalex	1 work(s)	Mediating War in Early Modern German Prose (2012) https://doi.org/10.7936/k7w37td9	https://api.openalex.org/works?per-page=5&search=Louis%20of%20Nassau%20cipher%20letters%20Orange%201573%20deciphered
+Pfaltzgraf helt sich wol und thut in warheit viel	s2	not searched (blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22Pfaltzgraf%20helt%20sich%20wol%20und%20thut%20in%20warheit%20viel%22)		https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22Pfaltzgraf%20helt%20sich%20wol%20und%20thut%20in%20warheit%20viel%22
+Pfalzgraf helt sich wol	s2	not searched (blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22Pfaltzgraf%20helt%20sich%20wol%20und%20thut%20in%20warheit%20viel%22)		https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22Pfalzgraf%20helt%20sich%20wol%22
+Herzog von Sachsen und Landgraf ist willens	s2	not searched (blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22Pfaltzgraf%20helt%20sich%20wol%20und%20thut%20in%20warheit%20viel%22)		https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22Herzog%20von%20Sachsen%20und%20Landgraf%20ist%20willens%22
+Sachsen und Landgraf ist willens	s2	not searched (blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22Pfaltzgraf%20helt%20sich%20wol%20und%20thut%20in%20warheit%20viel%22)		https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22Sachsen%20und%20Landgraf%20ist%20willens%22
+helt sich wol und thut in warheit viel	s2	not searched (blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22Pfaltzgraf%20helt%20sich%20wol%20und%20thut%20in%20warheit%20viel%22)		https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22helt%20sich%20wol%20und%20thut%20in%20warheit%20viel%22
+Bey dem Herzog von Sachsen und ist willens	s2	not searched (blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22Pfaltzgraf%20helt%20sich%20wol%20und%20thut%20in%20warheit%20viel%22)		https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22Bey%20dem%20Herzog%20von%20Sachsen%20und%20ist%20willens%22
+bruit que le duc d'Albe seme icy	s2	not searched (blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22Pfaltzgraf%20helt%20sich%20wol%20und%20thut%20in%20warheit%20viel%22)		https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22bruit%20que%20le%20duc%20d%27Albe%20seme%20icy%22
+forces du duc d'Albe le capitaine	s2	not searched (blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22Pfaltzgraf%20helt%20sich%20wol%20und%20thut%20in%20warheit%20viel%22)		https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22forces%20du%20duc%20d%27Albe%20le%20capitaine%22
+frere du roy d'Espagne	s2	not searched (blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22Pfaltzgraf%20helt%20sich%20wol%20und%20thut%20in%20warheit%20viel%22)		https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22frere%20du%20roy%20d%27Espagne%22
+(keywords) Ludwig von Nassau 1573 Chiffre Graveneinigung	s2	not searched (blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22Pfaltzgraf%20helt%20sich%20wol%20und%20thut%20in%20warheit%20viel%22)		https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=Ludwig%20von%20Nassau%201573%20Chiffre%20Graveneinigung
+(keywords) Louis of Nassau cipher letters Orange 1573 deciphered	s2	not searched (blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22Pfaltzgraf%20helt%20sich%20wol%20und%20thut%20in%20warheit%20viel%22)		https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=Louis%20of%20Nassau%20cipher%20letters%20Orange%201573%20deciphered
+(keywords) Ludwig von Nassau 1573 Chiffre Graveneinigung	crossref	3601873 record(s), top 5 by relevance	Verfassung von Nassau (1849) 10.1515/9783598440755.31; Verfassungsedikt von Nassau (1814) 10.1515/9783598440755.7; Flora von Kurhessen und Nassau : diagnostischer Theil / von  10.5962/bhl.title.12126; Wilhelm von Nassau 10.1515/9783112528662-002; NassauSaarbrücken, Elisabeth von 10.1163/9789004337862_lgbo_com_140088	https://api.crossref.org/works?rows=5&query.bibliographic=Ludwig%20von%20Nassau%201573%20Chiffre%20Graveneinigung
+(keywords) Louis of Nassau cipher letters Orange 1573 deciphered	crossref	4194632 record(s), top 5 by relevance	Couperus, Louis, (10 June 1863–16 July 1923), Officer of the 10.1093/ww/9780199540884.013.u195064; House of Orange Nassau 10.1093/gao/9781884446054.article.t063671; Orange Nassau, Anna (Princess Of) 10.1093/benz/9780199773787.article.b00133312; Orange Nassau, William V (Prince Of) 10.1093/benz/9780199773787.article.b00133316; Orange Nassau, Frederique Louise Wilhelmine (Princess Of) 10.1093/benz/9780199773787.article.b00133314	https://api.crossref.org/works?rows=5&query.bibliographic=Louis%20of%20Nassau%20cipher%20letters%20Orange%201573%20deciphered
+(keywords) Ludwig von Nassau Chiffre 1573	crossref	3601873 record(s), top 5 by relevance	Verfassung von Nassau (1849) 10.1515/9783598440755.31; Verfassungsedikt von Nassau (1814) 10.1515/9783598440755.7; Flora von Kurhessen und Nassau : diagnostischer Theil / von  10.5962/bhl.title.12126; Wilhelm von Nassau 10.1515/9783112528662-002; NassauSaarbrücken, Elisabeth von 10.1163/9789004337862_lgbo_com_140088	https://api.crossref.org/works?rows=5&query.bibliographic=Ludwig%20von%20Nassau%20Chiffre%201573
