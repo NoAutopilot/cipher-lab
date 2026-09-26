@@ -93,3 +93,7 @@ ciphers/lodewijk-van-nassau-1573-74	Salentin AND 1573 AND ("Johann von Nassau" O
 ciphers/lodewijk-van-nassau-1573-74	(Salentin OR "Salentin von Isenburg") AND (Graff OR Arnsberg) AND ("Johann von Nassau" OR "Graf Johann") AND ("Oktober 1573" OR "October 1573" OR 1573)	2026-09-26	queued	
 ciphers/szembek-bk1560	"Szembek" AND (cipher OR szyfr OR cyfra OR "list zaszyfrowany") AND (Kórnik OR Kórnicka OR "BK 1560")	2026-09-26	queued	
 ciphers/szembek-bk1560	(Brâncoveanu OR Brancovanus OR Brancovan) AND (Serban OR Cantacuzino) AND (impostor OR detractor) AND (Burgundus OR Burgundian) AND (Poland OR Szembek OR "Augustus II")	2026-09-26	queued	
+ciphers/rah-morillo-1817	"Morillo" AND "Herrera" AND 1820 AND (cifra OR cifrada OR "carta cifrada" OR cipher)	2026-09-26	queued	
+ciphers/rah-morillo-1817	"Romerito" AND (Bolívar OR Bolivar) AND (Guanare OR Barinas) AND 1820	2026-09-26	queued	
+ciphers/rah-morillo-1817	"enemigos de Apure no se mueven"	2026-09-26	queued	
+ciphers/rah-morillo-1817	"Romerito" AND "tres oficiales"	2026-09-26	queued	

@@ -1,6 +1,6 @@
 partial
 
-Per item (moved off line 1 by the LANE NX orchestrator, 26 Sept 2026, rule 5): found-solved (item 1); item 2 partial (key described, not found); item 3 partial. Item 3 citation (26 Sept 2026, NX-MOR2): Rodríguez Villa's t.4 (Google Books v3kzAQAAIAAJ, *Documentos justificativos ... contiene los últimos años*, 1908, publicDomain ALL_PAGES) read by full-text search for "Herrera" + "7 de noviembre de 1820" and for "Romerito" -- no hit for this exact letter (only a different, later Herrera-to-Morillo letter "de 20 del actual" re: Romerito/Ferrus/Pedraza is quoted there, p. cited in the volume's own text, a different date); Contreras, *Catálogo de la Colección Pablo Morillo* (Madrid 1988, Google Books ohJPjaGKOk8C), full-text search for "Romerito" "Guanare" confirms this item's own catalogue entry (Sig. 9/7666, ff.420-420v, 7 de noviembre de 1820) exists in print as a description only, no plaintext or cipher table given. t.2 (1815 docs) still not located digitised anywhere.
+Per item (moved off line 1 by the LANE NX orchestrator, 26 Sept 2026, rule 5): found-solved (item 1); item 2 partial (key described, not found); item 3 partial. Item 3 citation (26 Sept 2026, NX-MOR2): Rodríguez Villa's t.4 (Google Books v3kzAQAAIAAJ, *Documentos justificativos ... contiene los últimos años*, 1908, publicDomain ALL_PAGES) read by full-text search for "Herrera" + "7 de noviembre de 1820" and for "Romerito" -- no hit for this exact letter (only a different, later Herrera-to-Morillo letter "de 20 del actual" re: Romerito/Ferrus/Pedraza is quoted there, p. cited in the volume's own text, a different date); Contreras, *Catálogo de la Colección Pablo Morillo* (Madrid 1988, Google Books ohJPjaGKOk8C), full-text search for "Romerito" "Guanare" confirms this item's own catalogue entry (Sig. 9/7666, ff.420-420v, 7 de noviembre de 1820) exists in print as a description only, no plaintext or cipher table given. t.2 (1815 docs) still not located digitised anywhere. **V9-MOR audit, 26 Sept 2026 (AUDIT.md): item 3 is N0, key `period`, text known** -- its plaintext is printed in Bolívar, González Segovia and Anzola, *Portuguesa en Carabobo* (2021), p.37 n.100 (IA `portuguesa-en-carabobo`), citing this shelfmark; t.2 is Google Books `pirVAAAAMAAJ` (searched, no hit). The H grades below should read C 86 / M 5 / U 6 (AUDIT.md section 3).
 
 # Royalist ciphered letters to/from General Pablo Morillo — RAH cluster (1817, 1817, 1820)
 
@@ -597,3 +597,17 @@ a time, >=3-4s apart; `www.googleapis.com/books` 2 (keyed, `country=US`, never p
 (under the 30 MB cap). No subagents used. Status stays **partial** (rule 5) -- no key/reading file changed.
 Per this job's brief: stopping here; the orchestrator decides whether a follow-up job pursues records 1306/1487
 as their own key-recovery target.
+
+## V9-MOR verifier (26 September 2026) -- pointer
+
+Full audit in `AUDIT.md`. Item 3: **N0, key `period`, `text: known`.** The plaintext (clear closing sentence and the whole
+cipher block, modernised) is printed in Wilfredo Bolívar, Armando González Segovia and Aleyda Anzola, *Portuguesa en
+Carabobo. Diario llanero de una contienda en armas* (Aythaima, 2021, ISBN 978-980-18-2090-1), p.37 and n.100, citing
+"Sig. 9/7666, leg. 23, f), ff. 420-420v" -- found by `tools/print_check.py`'s global IA pass (`phrases.txt`,
+`print-check.tsv`). Corrections to sections above, by pointer rather than edit: (1) rule 4: the key comes from a
+period *decipherment*, not a key sheet, so the tokens are **C**, not H, and the five key-vs-gloss disagreements are
+**M**: C 86 / M 5 / U 6 of 97 (the key/decode files are unchanged; a later solver job applies this); (2) NX-MOR2's key
+counts are 14 words / 59 letter-token pairs, not 13 / 89; (3) the 24 Sept "Verdict" ("open for item 3", "t.4 not
+located") is superseded. The print reads r2g2 as "Caimital" (our gloss read "barinituS", key "barinrtas") and the
+clear text as "no se reciben" (NX-MOR: "no se mueven"), and supplies the words over the six unread signs ("sólo",
+"Guayana", "Bolívar", "seguro", "Trujillo"): an image question for the solver lane, not settled by the verifier.

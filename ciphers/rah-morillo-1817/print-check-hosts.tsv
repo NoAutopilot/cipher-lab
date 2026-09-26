@@ -1,0 +1,7 @@
+host	requests	status
+api.crossref.org	7	ok
+api.openalex.org	7	ok
+api.semanticscholar.org	6	blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22venia%20de%20Guayana%20buscando%20a%20Bolivar%22
+archive.org	3	ok
+be-api.us.archive.org	14	ok
+www.googleapis.com	7	ok

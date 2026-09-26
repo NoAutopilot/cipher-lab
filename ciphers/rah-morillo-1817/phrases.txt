@@ -1,0 +1,11 @@
+# V9-MOR (26 Sept 2026): distinctive phrases from item 3 (RAH 9/7666 f.420r, Herrera to Morillo, Guanare 7 Nov 1820).
+# First two: the leaf's own clear-text opening (modernised spelling; the leaf has "Nada ay por aqui").
+# The rest: the interlinear period gloss / key_5186 decode, spelling modernised (benia -> venia), only
+# stretches with no unread sign; "guayana" is the gloss as read (key disagrees at one sign, NOTES.md NX-MOR2).
+los enemigos de Apure no se mueven
+nada hay por aqui de particular
+Romerito paso el
+con tres oficiales dijo que venia
+tres oficiales dijo venia de
+venia de Guayana buscando a Bolivar
+buscando a Bolivar
