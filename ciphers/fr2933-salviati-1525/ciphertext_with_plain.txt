@@ -74,44 +74,44 @@ f55v L16: [a^5 tee^ lam^ g^5 a^ g^5 phi^1 e^ psi^ g^ H^o|1 ]^ dl^ g^ S^ rz^ g^5 
 f55v L17: [S^] M~tv|E [S^] restato +|satisfatta satisfatto +|p [f^] p|et quello [ch^ bh^dot] et|li si|ho ho|fatto fatto|intendere intendere
 f55v L18: p|parte parte +|d f.s.s.|s +|s [S^ nt^ S^~] La +|M.tr M~tr|Ces Ces +|vtsiuorn vederann molto [S4^ dl^ H^1|o ]^o]
 f55v L19: [eps^7 Z^ psi^ eps^5 Z^ot e^dot|+ lam^ wd^ rz^ e^# g^dot y^ L^ bh^ eps^1 w^ e^dot S7^+ ]^ nt^ S4^] [eps^ +^] ment
-f56r L1: <untranscribed> [ch^ S4^ Lx^ S7^ #^ Z^ nt^ S7^ #^ e^dot wd^ S^] <untranscribed>
+f56r L1: ha Parlato molto Caldam~te m|uuolt̃ uuolti [ch^ S4^ Lx^ S7^ #^ Z^ nt^ S7^ #^ e^dot wd^ S^] 56
 f56r L2: [o.^ g^ y^ ]^ot g^ S^ S^ o.^ phi^ m^1 w^ S^ ]^o H^1|o e^+ m^~ g^ S7^ e^# eps^5|dot S7^ ]^dot|o y^ tee^ f^ w^ o.^ g^ e^# nt^ y^]
-f56r L3: <untranscribed> [e^dot psi^ lam^1 m^~ g^ g^~ H^ a^ sq^ psi^] <untranscribed> [phi^ H^# v^1|5 rz^ nt^ rz^ S7^ e^#] <untranscribed> [psi^ f^ w^ bh^ eps^1 w^ e^dot|dot]
-f56r L4: [S7^+ S7^ ]^] <untranscribed> [psi^ m^1 w^ S7^ o.^ nt^ bh^ ]^ot v^] <untranscribed> [e^# nt^ rz^ eps^5 ]^ S7^ m^ eps^ g^~|~ e^dot|+ sq^ot psi^ lam^5 ]^o S7^+]
-f56r L5: [lam^ bh^ S7^ #^ psi^ eps^ w^ o.^ Z^dot S7^# e^# g^dot y^ a^1 S7^ y^# dl^ phi^ S4^ dl^] <untranscribed>
-f56r L6: <untranscribed> [a^] <untranscribed> [#^# y^ v^ S^] <untranscribed> [N^] <untranscribed> [eps^ tee^] <untranscribed> [S^]
-f56r L7: <untranscribed> [S^# S4^ y^ tee^ L^ w^ w^ tee^ o.^ U^1 rz^ o.^ g^ w^ Z^dot|ot lam^ bh^ e^dot|# v^# y^ y^ Z^ S7^ e^# f^dot U^]
-f56r L8: <untranscribed> [w^ bh^ a^~ nt^ bh^ phi^ o.^ tee^ U^ g^5 ]^o S7^ #^o w^ ]^dot|o rz^ a^5 tee^ lam^5 a^1 ]^ot y^dot U^ w^ bh^ m^ g^ lam^ S^]
+f56r L3: [C] [e^dot psi^ lam^1 m^~ g^ g^~ H^ a^ sq^ psi^] [C] [phi^ H^# v^1|5 rz^ nt^ rz^ S7^ e^#] [C] [psi^ f^ w^ bh^ eps^1 w^ e^dot|dot]
+f56r L4: [S7^+ S7^ ]^] [C] [psi^ m^1 w^ S7^ o.^ nt^ bh^ ]^ot v^] [C] [e^# nt^ rz^ eps^5 ]^ S7^ m^ eps^ g^~|~ e^dot|+ sq^ot psi^ lam^5 ]^o S7^+]
+f56r L5: [lam^ bh^ S7^ #^ psi^ eps^ w^ o.^ Z^dot S7^# e^# g^dot y^ a^1 S7^ y^# dl^ phi^ S4^ dl^] Amsn|Amn m|nn hn~ stritto|stretto
+f56r L6: mirabilm~te [a^] p̃o v· s· +|facci [#^# y^ v^ S^] facci lopa [N^] Caldam~te [eps^ tee^] solleciti [S^]
+f56r L7: [S^# S4^ y^ tee^ L^ w^ w^ tee^ o.^ U^1 rz^ o.^ g^ w^ Z^dot|ot lam^ bh^ e^dot|# v^# y^ y^ Z^ S7^ e^# f^dot U^]
+f56r L8: [w^ bh^ a^~ nt^ bh^ phi^ o.^ tee^ U^ g^5 ]^o S7^ #^o w^ ]^dot|o rz^ a^5 tee^ lam^5 a^1 ]^ot y^dot U^ w^ bh^ m^ g^ lam^ S^]
 f56r L9: [y^ bh^ g^7 eps^5 w^ e^+ lam^ S^ H^1|o a^1 S7^ e^dot S7^# nt^ S7^# o.^ bh^ psi^ e^ g^dot|~ eps^5 S7^ L^ S7^ g^ #^ S7^ lam^ o.^~ S7^]
-f56r L10: [g^ a^1 phi^ S4^ tee^ Lx^] <untranscribed> [nt^] <untranscribed> [e^] <untranscribed> [ch^ g^] <untranscribed> [tee^] <untranscribed> [N^]
-f56r L11: <untranscribed> [m^~] <untranscribed> [bh^ y^ tee^ e^dot eps^1|dot e^# S4^] <untranscribed>
-f56r L12: [g^ nt^ y^ S4^1 dl^ Lx^ dl^ S4^] <untranscribed> []^o Z^ S7^ lam^ sq^ y^# eps^1 w^ e^dot|+ S7^+ ]^ot eps^5 Z^ot Z^]
-f56r L13: <untranscribed>
-f56r L14: [m^1 f^ w^ bh^ S7^ #^ e^+ S^ g^ phi^ rz^ Z^ S7^ #^dot lam^dot y^5 e^dot|# ]^ot w^ bh^ S7^ #^ dl^ eps^5] <untranscribed>
-f56r L15: <untranscribed>
-f56r L16: <untranscribed> [eps^1 w^ e^dot S7^+ ]^ot y^ y^ g^1 o.^ S7^ lam^ g^~ bh^] <untranscribed> [S7^ o.^ eps^5 g^ phi^ g^ S7^ #^]
-f56r L17: [e^ Lx^dot y^] <untranscribed> [S7^ tee^ g^ Lx^ S4^] <untranscribed>
-f56r L18: <untranscribed> [dl^ +^ w^ tee^ w^ w^ y^ S7^ eps^1 S7^ eps^~ wd^] <untranscribed> [rz^ g^5 phi^ y^] <untranscribed> [w^ a^1 lam^ a^7 H^1 g^]
-f56r L19: <untranscribed> [S7^] <untranscribed> [o.^ g^~ H^1|o] <untranscribed> [y^ y^ y^ S7^ #^ ]^o y^ y^ psi^ eps^ w^] <untranscribed> [U^ lam^ phi^ Lx^] <untranscribed>
-f56v L1: [bh^ ch^] <untranscribed> [dl^ +^ psi^ nt^ bh^ a^5 a^5 tee^ lam^ S^ Z^dot|ot g^ lam^7 rz^~ g^ a^5 tee^ lam^ S^] <untranscribed> [bh^dot Z^# phi^dot w^]
-f56v L2: [v^dot y^ S7^ y^5 w^ Z^ot lam^ g^~ e^# tee^ K^1 phi^5 U^ w^ bh^ lam^~] <untranscribed> [bh^ g^ Z^ Z^ g^ S^ e^# p^1 eps^o tee^ p^] <untranscribed>
-f56v L3: [g^dot] <untranscribed> [lam^ nt^ +^ y^ e^+ e^ rz^ g^7 g^ Z^ S7^ +^ rz^dot S7^ lam^] <untranscribed> [a^ wd^ p^] <untranscribed> [H^]
-f56v L4: [w^ tee^ rz^ y^ lam^ lam^1 S7^ U^ w^ bh^ a^~ nt^ bh^ dl^ Lx^ g^ w^ tee^ Z^dot eps^~ g^ Z^ phi^ w^ w^ psi^ S7^] <untranscribed> [S7^]
-f56v L5: [eps^~ wd^ o.^ w^ g^5 a^ y^ y^] <untranscribed> [e^+] <untranscribed> [psi^] <untranscribed> [w^ g^ m^~ w^ m^1 w^ lam^~ e^ wd^ bh^7 K^1 nt^]
-f56v L6: <untranscribed> [Lx^ lam^ S7^~ lam^ g^1|~ nt^ S7^ +^ dl^5 S^ eps^ S7^ S^~ H^1|o m^ w^ tee^ o.^]
-f56v L7: <untranscribed> [y^ nt^ o.^ S7^ #^ ]^ S7^] <untranscribed> [L^~ S7^ g^ bh^ S7^# e^ wd^ y^ y^ o.^ rz^ g^ e^# tee^ K^ g^ e^# Z^# S7^dot +^dot lam^dot y^1 S7^# phi^dot]
-f56v L8: <untranscribed> [L^ bh^ g^ S7^~ lam^ S7^ phi^+ e^# tee^ g^ y^~] <untranscribed> [e^dot p^1 phi^~ H^o|1 eps^7 y^ psi^ eps^ S7^ #^dot eps^5] <untranscribed> [f^ w^ o.^] <untranscribed> [o.^dot nt^]
-f56v L9: <untranscribed> [o.^ m^~ w^] <untranscribed> [+^] <untranscribed> [sq^ wd^ bh^ g^ e^# nt^ o.^ ]^ot g^ Lx^5 p^ p^] <untranscribed>
-f56v L10: <untranscribed> [Lx^ phi^ ]^# wd^ o.^ S^7 H^1 g^o g^ lam^1 nt^ o.^ S7^ #^ Z^dot]
-f56v L11: [nt^dot|1 o.^ rz^] <untranscribed> [tee^ S7^# o.^dot y^ w^ a^1 lam^1 dl^ +^ y^] <untranscribed>
-f56v L12: <untranscribed> [tee^] <untranscribed> [+^dot Lx^ bh^ o.^ S7^ y^] <untranscribed> [w^ o.^ eps^1 bh^ tee^ f^ w^ bh^]
-f56v L13: <untranscribed> [phi^ H^1|o g^7 m^~ S7^ g^ S^ nt^ o.^ e^dot|# sq^? tee^ H^1 a^o S^ e^dot e^ S7^dot f^ w^ y^ y^~ o.^~ S7^ #^ w^]
-f56v L14: []^o|o Lx^ p^dot] <untranscribed> [eps^] <untranscribed>
-f56v L15: <untranscribed> [Lx^ +^ S7^ wd^# bh^ y^ nt^ bh^ w^ e^dot Lx^ dl^ rz^] <untranscribed> [S^] <untranscribed>
-f56v L16: <untranscribed>
-f56v L17: <untranscribed>
-f56v L18: <untranscribed> [S4^ sq^ Lx^] <untranscribed>
-f56v L19: <untranscribed>
+f56r L10: [g^ a^1 phi^ S4^ tee^ Lx^] M.ta [nt^] mj [e^] hn letto|questn [ch^ g^] ?|cto [tee^] ct̃ penſra [N^]
+f56r L11: ma ch̃ gli besognn [C] [C] [C] [C] [C] [m^~] yt [bh^ y^ tee^ e^dot eps^1|dot e^# S4^] [C]
+f56r L12: [g^ nt^ y^ S4^1 dl^ Lx^ dl^ S4^] [C] []^o Z^ S7^ lam^ sq^ y^# eps^1 w^ e^dot|+ S7^+ ]^ot eps^5 Z^ot Z^]
+f56r L13: y [C] [C] ha inteso quello che qua le è +|ſtato stato scripto a|<none> M|ϵt [C] [C]
+f56r L14: [m^1 f^ w^ bh^ S7^ #^ e^+ S^ g^ phi^ rz^ Z^ S7^ #^dot lam^dot y^5 e^dot|# ]^ot w^ bh^ S7^ #^ dl^ eps^5] ha Aduij,
+f56r L15: sonn v. s. Sappia el tutto et Pensi quello ha aduiso|auer p.ch
+f56r L16: sono certo [C] [C] [C] [eps^1 w^ e^dot S7^+ ]^ot y^ y^ g^1 o.^ S7^ lam^ g^~ bh^] [C] [S7^ o.^ eps^5 g^ phi^ g^ S7^ #^]
+f56r L17: [e^ Lx^dot y^] [C] [S7^ tee^ g^ Lx^ S4^] Sopra la medesima materia mj ha par~
+f56r L18: lato [dl^ +^ w^ tee^ w^ w^ y^ S7^ eps^1 S7^ eps^~ wd^] [C] [rz^ g^5 phi^ y^] ala|[C] +|[C] [w^ a^1 lam^ a^7 H^1 g^]
+f56r L19: [C] [S7^] ag~|a +|[C] [o.^ g^~ H^1|o] [C] [y^ y^ y^ S7^ #^ ]^o y^ y^ psi^ eps^ w^] [C] [U^ lam^ phi^ Lx^] Jo lo Credo
+f56v L1: [bh^ ch^] lo Truono g Truono g [dl^ +^ psi^ nt^ bh^ a^5 a^5 tee^ lam^ S^ Z^dot|ot g^ lam^7 rz^~ g^ a^5 tee^ lam^ S^] li|? [bh^dot Z^# phi^dot w^]
+f56v L2: [v^dot y^ S7^ y^5 w^ Z^ot lam^ g^~ e^# tee^ K^1 phi^5 U^ w^ bh^ lam^~] [C] [bh^ g^ Z^ Z^ g^ S^ e^# p^1 eps^o tee^ p^] parmj|parmi
+f56v L3: [g^dot] q~|che si sia fatto gra~ gra Torto Torto|+ [lam^ nt^ +^ y^ e^+ e^ rz^ g^7 g^ Z^ S7^ +^ rz^dot S7^ lam^] [a^ wd^ p^] <none>|? [H^]
+f56v L4: [w^ tee^ rz^ y^ lam^ lam^1 S7^ U^ w^ bh^ a^~ nt^ bh^ dl^ Lx^ g^ w^ tee^ Z^dot eps^~ g^ Z^ phi^ w^ w^ psi^ S7^] Et [S7^]
+f56v L5: [eps^~ wd^ o.^ w^ g^5 a^ y^ y^] [C] [e^+] [C] [psi^] [C] [w^ g^ m^~ w^ m^1 w^ lam^~ e^ wd^ bh^7 K^1 nt^]
+f56v L6: Ch faria benn forst da [Lx^ lam^ S7^~ lam^ g^1|~ nt^ S7^ +^ dl^5 S^ eps^ S7^ S^~ H^1|o m^ w^ tee^ o.^]
+f56v L7: [y^ nt^ o.^ S7^ #^ ]^ S7^] ? [L^~ S7^ g^ bh^ S7^# e^ wd^ y^ y^ o.^ rz^ g^ e^# tee^ K^ g^ e^# Z^# S7^dot +^dot lam^dot y^1 S7^# phi^dot]
+f56v L8: [L^ bh^ g^ S7^~ lam^ S7^ phi^+ e^# tee^ g^ y^~] a [e^dot p^1 phi^~ H^o|1 eps^7 y^ psi^ eps^ S7^ #^dot eps^5] [C] [f^ w^ o.^] b|? [o.^dot nt^]
+f56v L9: [o.^ m^~ w^] e|? ? [+^] <none>|? [sq^ wd^ bh^ g^ e^# nt^ o.^ ]^ot g^ Lx^5 p^ p^] Potem luarn|lenar leter loro|+
+f56v L10: cito tutto|+ ?|d tutto [C] [Lx^ phi^ ]^# wd^ o.^ S^7 H^1 g^o g^ lam^1 nt^ o.^ S7^ #^ Z^dot]
+f56v L11: [nt^dot|1 o.^ rz^] [tee^ S7^# o.^dot y^ w^ a^1 lam^1 dl^ +^ y^] fare|P fare quali|qualche
+f56v L12: impresa con e|? n|? fev|+ [tee^] h|? [+^dot Lx^ bh^ o.^ S7^ y^] ? [w^ o.^ eps^1 bh^ tee^ f^ w^ bh^]
+f56v L13: ? [phi^ H^1|o g^7 m^~ S7^ g^ S^ nt^ o.^ e^dot|# sq^? tee^ H^1 a^o S^ e^dot e^ S7^dot f^ w^ y^ y^~ o.^~ S7^ #^ w^]
+f56v L14: []^o|o Lx^ p^dot] Pure questo hanno detto poi|p ricordo [eps^] et no poi|<none> pot sono uo
+f56v L15: glino metterlo [Lx^ +^ S7^ wd^# bh^ y^ nt^ bh^ w^ e^dot Lx^ dl^ rz^] re|S [S^] m|ny
+f56v L16: risponde|risponda la la opinioni li|f s s fu|tu La prima parte mi piace
+f56v L17: a questa ad secondo seconda bisognerà Altrunti pensiamo|? pensare il modo come Cons p|?
+f56v L18: habbi ad a|accociarm co|+ ian|+ ?|+ Altrimenti Alcuno|+ [S4^ sq^ Lx^] questa mattina questo|+ mattina|+
+f56v L19: E|ξ stato Come molto ad lungo E|el gra Cancellhiero et habbiamo habbiamo|+
 f57r L1: <untranscribed> [S4^ dl^ tee^ a^5 tee^ g^dot #^# lam^dot|~ eps^7 w^ eps^1 ]^o g^7 L^ w^ a^1 lam^7 bh^ S7^ #^# H^1|o Z^dot|ot] <untranscribed> [+^ bh^dot] <untranscribed>
 f57r L2: [#^ S7^# L^dot g^ y^~ wd^ g^ ]^ot] <untranscribed> [y^ Z^ot eps^ y^ [^ y^ phi^ v^1|5 f^ w^ bh^ Z^ S7^ y^ tee^ f^ w^ y^ eps^5 g^7]
 f57r L3: <untranscribed> [a^5 tee^ lam^ o.^1] <untranscribed> [m^ S7^ w^ lam^1 S7^ y^ g^ v^] <untranscribed> []^o e^#|dot eps^ y^ o.^ g^1 lam^ bh^ S7^# e^ot wd^ y^ eps^5 S7^]

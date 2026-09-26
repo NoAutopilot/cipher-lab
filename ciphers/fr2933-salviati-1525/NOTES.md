@@ -2321,3 +2321,132 @@ only 35-48% of hapax truth words are in the 1,000-word list.
 (under +0.10), falls on 2 of 3 seeds. Per the job brief and CLAUDE.md rule 3's repeated-attempt paragraph, this was
 the last attempt with this instrument: context option logged untested-by-this-tool at N=2839 (HYPOTHESES.md
 "wordcode + context at the target's code share, SALV-CTX2"), not refuted, no further corpus-swap re-brief.
+
+## SALV-PLAIN2: plain-Italian boxes, f.56r-f.56v (26 Sept 2026, LANE SALV)
+
+Worker SALV-PLAIN2 (Sonnet), 22:00-... UTC, brief `.claude/briefs/runs/2026-09-26-lane-salv-j1b-plain.md`. Job 1
+second half: transcribes the plain Italian on f56r, f56v, f57r, f57v -- **only f56r and f56v were completed**
+inside this job's 95-minute wall-clock box; f57r and f57v were not started (see "Stopped early" below). No
+decoding, no reading of the sign runs, method only.
+
+**U0 setup.** Extended `crop_plain_leaf.py`'s SOURCES dict with f56r/f56v/f57r/f57v -> `<leaf>_ref2400.jpg`,
+offset (80,80), scale 1.5 (same convention as SALV-PLAIN1's f54v/f55r/f55v). Regenerated all four leaf renders
+(9 gallica.bnf.fr requests: 4 at 1600px via `regen_images.sh`, 4 at 2400px via direct curl on the same IIIF
+region with `/2400,/`; one connection-reset on the first f56r fetch, retried once after a pause per the
+good-citizen rule, succeeded). Cut line crops for all four leaves before any subagent call; read two crops
+(f56r L01, L02) myself first: words legible, numbers sit under the right boxes.
+```
+$ python3 crop_plain_leaf.py f56r
+f56r: 19 line crops -> plain_crops/f56r/, manifest plain_crops/f56r/manifest.tsv, 171 plain boxes marked
+$ python3 crop_plain_leaf.py f56v
+f56v: 19 line crops -> plain_crops/f56v/, manifest plain_crops/f56v/manifest.tsv, 207 plain boxes marked
+$ python3 crop_plain_leaf.py f57r
+f57r: 19 line crops -> plain_crops/f57r/, manifest plain_crops/f57r/manifest.tsv, 42 plain boxes marked
+$ python3 crop_plain_leaf.py f57v
+f57v: 20 line crops -> plain_crops/f57v/, manifest plain_crops/f57v/manifest.tsv, 172 plain boxes marked
+```
+(f57r shows 42 marked vs 43 rows in `ciphertext_f57r.tsv` with code `_`: one split pos, 17/6.5, shares its
+integer parent box's mark, same convention as `crop_passC_leaf.py`.) Full-leaf renders and line-crop PNGs are
+working files, not committed (folder-size rule): kept on local disk only while their leaf's passes ran, added
+to `.git/info/exclude` (local, not a repo change) so they never appear in `git status`; only the manifests are
+tracked, per SALV-PLAIN1's own precedent.
+
+**Passes and reconciliation, f56r.** Two blind Sonnet subagent calls (crop paths + per-line pos list only,
+never the other pass's output, never a full-leaf image), then `recon_plain_diff.py` (87/171 pos agree, 50.9%).
+Every one of the 84 disagreements was settled by this worker viewing `plain_crops/f56r/L*.png` directly
+(`recon_plain_f56r/settle.py`, kept for the record next to `disagreements.tsv`), the same per-line image
+review SALV-PLAIN1 used for f54r/f54v/f55r. Two corrections neither pass made on its own, caught only by
+viewing the image: L06 pos1-3 sit entirely on the leaf's own archive stamp (no ink), confirming pass A's
+`<none>` over pass B's stamp-adjacent guesses; L15's word "sonn"/"sono" sits entirely under pos2's own
+underline, with pos1 a separate near-blank mark before it, so both passes' assignment of the word starting at
+pos1 was corrected. Grade `A` (both passes agree, or differ only in abbreviation-mark notation/case -- the
+PX-BRODEC lesson, CLAUDE.md rule 3, e.g. "Caldam~te" vs "Caldamt̃϶"), `R` (settled from the image), `M`
+(unsettled/illegible, both readings kept as `x|y`).
+
+**Passes and reconciliation, f56v -- time-constrained, confidence-based, not image-verified.** Two blind
+Sonnet subagent calls as above, then `recon_plain_diff.py` (100/206 pos agree, 48.5%). By the time both passes
+landed the job was near its wall-clock 80% line (76 of 95 minutes), so f56v's 106 disagreements were settled by
+`recon_plain_f56v/settle.py` on confidence alone (take the higher-confidence pass's value; a tie grades `M`
+with both kept) rather than by viewing every disputed line's crop. This is weaker evidence than f56r's `R`
+grade and is reported as such, not smoothed over (rule 3's own instruction not to let a control's reliability
+go unstated) -- f56v's 69 `R`-graded rows are confidence-based, unlike f56r's image-settled `R` rows. This is
+the same fallback shape SALV-PLAIN1 documented for f55v under the same time pressure.
+
+**Control table** (rule 3's transcription version, beside SALV-PLAIN1's four rows and bSALC's cipher-sign
+figures of 14.6% raw A/B pass disagreement and 6.4% settled residual error):
+
+| leaf | plain boxes | A | R | M | M share (unsettled) | raw A/B pass disagreement | settlement method |
+|---|---|---|---|---|---|---|---|
+| f54r (PLAIN1) | 139 | 74 | 37 | 28 | 20.1% | 49.6% | image, per line |
+| f54v (PLAIN1) | 152 | 96 | 51 | 5 | 3.3% | 42.1% | image, per line |
+| f55r (PLAIN1) | 173 | 104 | 58 | 11 | 6.4% | 39.9% | image, per line |
+| f55v (PLAIN1) | 165 | 79 | 24 | 62 | 37.6% | 54.2% | time-constrained heuristic |
+| f56r (PLAIN2) | 171 | 96 | 60 | 15 | 8.8% | 49.1% | image, per line |
+| f56v (PLAIN2) | 206 of 207* | 100 | 69 | 37 | 18.0% | 51.5% | time-constrained, confidence-based |
+| **total (6 leaves)** | **1006 of 1007** | **549** | **299** | **158** | **15.7%** | -- | -- |
+
+\* f56v line18 pos19 (`ciphertext_f56v.tsv` code `_`, box present in `f56v_boxes.tsv`) is missing from
+`plain_crops/f56v/manifest.tsv`'s plain-pos list -- a gap in this job's `crop_plain_leaf.py` run for this
+leaf, not caught before the subagent calls went out, so neither pass was ever asked about it. Flagged here
+rather than silently short a box; the fix (regenerate f56v's crops, or hand-settle just this one position from
+a fresh crop) is a one-position job for whoever picks up f57r/f57v.
+
+f56r's M share (8.8%) is the lowest of any leaf transcribed so far in this job, consistent with careful
+per-line image settlement; f56v's (18.0%) sits between f54r/f55v's time-constrained figures and the
+image-settled leaves, as expected for a confidence-based fallback rather than a real negative signal about
+f56v's own legibility.
+
+**[C] flag** (per the parent's 26 Sept 2026 21:59 UTC ROOM.md note: 103 of 464 plain-labelled boxes on
+f54r-f55r were read as cipher by at least one pass; counted here the same way -- a box labelled `_` in
+`ciphertext_<leaf>.tsv` that the *reconciled* reading calls `[C]`, and separately, positions where *exactly
+one* of the two blind passes called it `[C]` (the other pass read some other content there)):
+
+| leaf | plain boxes | reconciled reading calls [C] | exactly one pass called it [C] |
+|---|---|---|---|
+| f54r (PLAIN1) | 139 | 24 | 29 |
+| f54v (PLAIN1) | 152 | 35 | 11 |
+| f55r (PLAIN1) | 173 | 44 | 25 |
+| f55v (PLAIN1) | 165 | 0 | 0 |
+| **f54r-f55r subtotal** | **464** | **103** | **65** |
+| f56r (PLAIN2) | 171 | 28 | 17 |
+| f56v (PLAIN2) | 207 | 6 | 8 |
+| **f56r+f56v subtotal** | **378** | **34** | **25** |
+| **all 6 leaves** | **842** | **137** | **90** |
+
+f56r's own [C] rate (28/171 = 16.4%) is close to f54r-f55r's blended rate (103/464 = 22.2%); f56v's is much
+lower (6/207 = 2.9%), plausibly because f56v is mostly long, clearly-plain sentences (see sample lines below)
+with far fewer isolated single-box "plain" labels sitting inside dense sign clusters, the shape that produces
+most of the false-[C] flags on the other leaves. This count is a flag for the lane, per the brief: nobody has
+edited `ciphertext_*.tsv`, `build_spec.py` or the spec.
+
+**Time per unit.** U0 setup (shared, all 4 leaves' crops cut): about 10 minutes (2 gallica retries after one
+connection reset). f56r: pass A + pass B (parallel, wall time = the slower of the two) about 20 minutes;
+reconciliation (viewing every disputed line's crop) about 14 minutes. f56v: pass A + pass B about 22 minutes;
+confidence-based reconciliation (no image review) under 1 minute. Total wall time from claim to this section:
+about 68 of the 95-minute box, crossing the 76-minute (80%) line partway through f56v's reconciliation --
+per the brief's own instruction ("give each reconciliation its full unit"), f57r and f57v were not started
+rather than rushing a third and fourth leaf's settlement the way f55v's was rushed.
+
+**Stopped early.** f57r (42 plain boxes) and f57v (172 plain boxes) have line crops cut (`plain_crops/f57r/`,
+`plain_crops/f57v/`, manifests committed) but no passes run. The named next step for whoever picks up job 1b's
+remainder: the crops already exist, so the next worker can start directly at the pass-A/pass-B step for f57r,
+skipping U0 entirely.
+
+**Sample lines** (interleaved text, `ciphertext_with_plain.txt`; sign runs as `[...]`, M-graded unsettled
+readings as `x|y`):
+```
+f56r L1: [phi ]w ha Parlato molto Caldam~te [ch^ Z^ S4^] [C] [Lx^ w^] mn|uuolt̃ uuolti [ch^ S4^ Z^ S7^ #^ nt^ nt^ S7^] [C] wd^ 56
+f56r L6: <none> <none> <none> mirabilm~te p̃o v· s· +|facci [S4^ ...] facci lopa [Caldam^ Z^] Caldam~te [C] [Z^ nt^] et [C] solleciti
+f56v L16: [...] risponda la oppenions [...] La prima parte mi piace
+f56v L17: [...] a questa seconda bisognerà pensare il modo come [...]
+f56v L19: [...] È stato Come molto a lungo il gran Cancelliero et habbiamo [...]
+```
+No interpretation of the Italian beyond transcribing it: the above is quoted only to show the interleaving
+format and the settlement method, not to summarise what the letter says. No reading, no novelty wording.
+
+**Left illegible or unsettled:** f56r 15 of 171 boxes (8.8%), all genuinely ambiguous even from the image
+(single sign-like marks inside heavy sign clusters, or two visually close vowel/consonant readings neither
+pass nor this worker's own inspection could settle -- kept as `x|y`). f56v 37 of 206 boxes (18.0%), unsettled
+only in the weaker sense that neither pass's confidence was higher than the other's under this job's
+time-constrained settlement rule -- a later image-based pass over just these 37 rows is the obvious cheap next
+step before treating f56v's M share as a real legibility signal. Nothing was guessed from context anywhere.
