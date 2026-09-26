@@ -35,3 +35,15 @@ Byrom1796	R9	partial	g or j (hook with tail)	consistent	loose match; 2.3% plausi
 Byrom1796	R10	no	-	n-a	no zigzag/angular stroke in the plate; z shares s's flat-dash sign, not a distinct zigzag
 Byrom1796	R11	yes	n	inconsistent	exact curvature match (concave cup, opposite of m) but 1.8% share is well below real n frequency (~6.7%)
 Byrom1796	R12	partial	g or w (loop with descender)	consistent	loose match; 0.9% (2 marks) plausible for a low-frequency letter like g
+Gurney1752	R1	partial	minim hump (m/n/u-like generic cursive stroke, not one specific letter)	inconsistent	33.9% share impossible for any single English letter no matter the shape match
+Gurney1752	R2	partial	loop-tail flourish after abbreviated words; guess g/y	consistent	13.1% falls in plausible range but ID is a low-confidence guess, may be a non-letter connector mark
+Gurney1752	R3	yes	generic hook-stroke resembling h/b/l ascenders, abundant in the italic script	consistent	10.8% plausible for a common letter such as h; shape is generic, not a verified single sign
+Gurney1752	R4	partial	small left-opening hook resembling an italic e or minim opening	consistent	5.4% mid-range plausible; too generic a shape in cursive italic to pin to one letter
+Gurney1752	R5	yes	scribal suspension/tittle mark over abbreviations (e.g. "wch","yr"), NOT a letter	n-a	matches this page's own abbreviation tittles; a punctuation/suspension convention, not a shorthand letter
+Gurney1752	R6	yes	isolated dot, i-tittle or full-stop punctuation	n-a	dots are ubiquitous on the page as i-dots and periods; a punctuation role, not a shorthand letter
+Gurney1752	R7	yes	Gurney's own explicit stroke-letters "a" (up) / "s" (down) -- the page's clearest, most literal match	consistent	3.6% somewhat low vs real a(8.2%)/s(6.3%) but same order of magnitude
+Gurney1752	R8	partial	compound ligature, most likely "&" ampersand (appears as "&c" on this page) rather than a plain letter	n-a	matches print ligature/ampersand loops, not a single letter
+Gurney1752	R9	yes	descender resembling italic y/p/g	consistent	2.3% fits low-frequency letters like y/p/g reasonably well
+Gurney1752	R10	partial	most likely "&" ampersand (appears twice as "&c."); alternative guess z far less plausible	inconsistent	as letter z, 2.3% is far above real z (~0.07%); as "&" this isn't a single-letter comparison at all
+Gurney1752	R11	partial	shallow bowl resembling italic v/r	consistent	1.8% roughly fits a rarer letter such as v; shape too generic in italic cursive to be confident
+Gurney1752	R12	yes	large closing paraph/ornamental flourish ending the page's final sentence, NOT a letter	n-a	matches this page's own large loop-tailed closing flourish; a special-use printer's mark, not a common letter
