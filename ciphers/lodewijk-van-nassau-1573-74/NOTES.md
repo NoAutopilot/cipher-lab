@@ -109,8 +109,8 @@ summarising fetch tool) or pin down the correct Internet Archive OCR identifiers
 febvrier..."; 4616: "Nous sommes cest soer icy arivé aupres de Goch et sommes...").
 
 **Copy status: copy-free.** Free PDF scans confirmed reachable (HTTP 200) and viewed by eye (this pass):
-cipher present on 4610 (`images/04610_p1.png`); the sibling 4613's contemporary decipherment confirmed
-present and imaged (`images/04613_p2.png`). No REQUEST.md needed.
+cipher present on 4610 (`images/04610_p1.jpg`); the sibling 4613's contemporary decipherment confirmed
+present and imaged (`images/04613_p2.jpg`). No REQUEST.md needed.
 
 **Kind: recovery** (via the sibling's imaged decipherment, an alignment problem per LESSONS.md §2 -- key
 recovery from 4613/4615, applied to 4610/4611/4612/4616 -- not cryptanalysis from scratch).
@@ -229,8 +229,8 @@ Transcription only, per brief (`.claude/briefs/runs/2026-09-24-lane-r-nb1-passes
 sibling cipher pages (4613 p1, 4615 p1), a careful transcription of each contemporary decipherment sheet (4613
 p2, 4615 p3), and exact-as-measured cipher token counts. No alignment, no key, per brief.
 
-**Line crops.** `tools/iiif_lines.py --image images/04613_p1.png --out images --prefix 4613_p1 --debug --distance
-30 --prominence 60` and the same for `04615_p1.png` (the script's existing `--image` option already reads a
+**Line crops.** `tools/iiif_lines.py --image images/04613_p1.jpg --out images --prefix 4613_p1 --debug --distance
+30 --prominence 60` and the same for `04615_p1.jpg` (the script's existing `--image` option already reads a
 local file with no network fetch, so no addition was needed). Default `--distance`/`--prominence` under-detected
 (13 lines on 4613 p1 against ~26 real manuscript lines); `--distance 30 --prominence 60` gave 32 bands on 4613
 p1 and 29 on 4615 p1, checked against `images/4613_p1_lines_debug.jpg` / `4615_p1_lines_debug.jpg` (per LESSONS.md
@@ -263,7 +263,7 @@ flagged for whoever reconciles next as the worst two lines on either page, worth
 them.
 
 **Decipherment sheets.** `plaintext_4613.txt` and `plaintext_4615.txt`: line-by-line transcription from
-`images/04613_p2.png` and `images/04615_p3.png` (cropped/upscaled regions read directly, not a blind pass -- one
+`images/04613_p2.jpg` and `images/04615_p3.jpg` (cropped/upscaled regions read directly, not a blind pass -- one
 careful read each, per brief), abbreviations kept as written (nre, voz, l're), doubtful words and one illegible
 struck-through correction marked `[?]` / `[struck: ...]`. Both close with the same place ("Camp de Cartel[z?]")
 and date as their cipher letter's own closing line, consistent with R9's capture-stage finding that these are
@@ -1983,3 +1983,52 @@ Files: `ciphertext_7205.tsv`, `key_7205.tsv`, `axcomp/{passes/passA_7205_p*.tsv,
 recon_7205_p1..p6/**,anchors_7205.tsv,pairs_7205.tsv,align_7205.tsv,rawkey_7205.tsv,compare_7205.tsv}`,
 `axcomp2/compare_7205.tsv`, this section. `key_full.tsv` and `key.tsv` untouched (AX-MERGE3 owns key_full.tsv).
 Novelty not classified (rule 10); no N-class changed.
+
+## AX2-SHRINK: images relocated (26 Sept 2026, LANE AX2)
+
+Folder hygiene against CLAUDE.md's 30 MB-per-folder rule (Access playbook). Before: 81360 KB (79.5 MB) total,
+of which 34544 KB (33.7 MB) is `images_wv2/crops_4612/**` and `images_wv2/crops_comp/05801_*` -- out of bounds
+this pass, live workers AX2-4612/AX2-5801 -- leaving 46816 KB (45.7 MB) in scope. After: 58784 KB (57.4 MB)
+total; excluding the same out-of-bounds files, 24240 KB (23.7 MB), under the 30 MB rule with margin.
+
+**What moved.** `images/` held 19 full-page PNG renders (150dpi, pdftoppm), 25 MB of the 31 MB folder, all
+regenerable byte-for-bitwise-identical from the WVO PDF (confirmed below). Removed 11 that neither NOTES.md nor
+any tsv/json/py cites as a specific evidence page: `images/{04610,04611}_p{2,3,4}.png`, `04612_p{2,3}.png`,
+`04613_p3.png`, `04615_p2.png`, `04616_p2.png` (`git rm`; still readable from git history, e.g. `git show
+<pre-shrink-sha>:ciphers/lodewijk-van-nassau-1573-74/images/04610_p2.png`, sha listed per-file in
+`images_manifest_full.tsv`). Kept one full page per letter as a sample (4611_p1, 4612_p1, 4616_p1, none
+individually cited) plus every page NOTES.md cites by filename as visual evidence (4610_p1: cipher present;
+4613_p1/p2 and 4615_p1/p3: sibling decipherment sheets, R12's line-crop source pages) -- 8 pages total,
+converted PNG -> JPEG quality 80 (same 1241x1754 pixel dimensions, already under the 1600px rule) since PNG
+gave no useful compression on these photographic scans (tested: PIL `optimize=True` saved 0 bytes). Citations
+in NOTES.md updated to the new `.jpg` filenames (lines that named `04610_p1.png`, `04613_p1.png`,
+`04613_p2.png`, `04615_p1.png`, `04615_p3.png`). `images_wv2/`'s own full-page JPEGs (27 pages, 7.1 MB, already
+JPEG q80 150dpi) and all 347 L-crop JPEGs (5 MB, already 8-70 KB each) were left untouched -- 5797 in
+particular is under active read by LANE V8 this window and its 8 pages were not touched.
+
+**Regen test (2 requests to resources.huygens.knaw.nl, 2s apart, well under the good-citizen cap).**
+`./regen_images.sh page 4610 1` re-fetched `04610.pdf` and re-rendered `images/04610_p1.png` with `pdftoppm -png
+-r 150`: sha1 `4490197beb9bb8482d994fb6e59247fc6750c0ca`, identical to the pre-removal file (byte-for-byte).
+`./regen_images.sh crop images_manifest_full.tsv images/04610_p1_L01.jpg` then re-cut the line crop from the
+regenerated page using the box recorded in `images_manifest_full.tsv` (`[0, 71, 1241, 114]`, from
+`images/manifest.json`'s `iiif_lines` records): sha1 `3798f6e78dd56afd1c917a132301b26f6f9db50a`, identical to the
+committed crop. Both regenerated files matched the originals exactly (same sha1, no pixel diff needed).
+
+**Inventory.** `images_manifest_full.tsv` (folder root): path, bytes, sha1, kind (fullpage/crop-lines/crop-manual/
+debug), source (WVO PDF URL + brief + render command for full pages; parent image + pixel box + tool for line
+crops, from `images/manifest.json`'s `iiif_lines` records), and cited_by (files naming that path), for all 395
+non-out-of-bounds image files. `regen_images.sh` (folder root) regenerates any full page (`page BRIEFNR PAGE`,
+one PDF fetch) or any recorded line crop (`crop images_manifest_full.tsv PATH`, no fetch, cuts from the parent
+page already on disk) or the whole set (`all`); reads `images/manifest.json` and `images_wv2/manifest.json` for
+pdf_url/render settings, so it stays correct if those manifests are extended.
+
+`images_wv2/crops_gloss/*.png` and `images_wv2/crops_rederiv/*.png` (11 files, 3 MB, briefs 04496/05550/05557 --
+not in either full-page manifest, hand-cropped by earlier gloss-reading workers) are each the only copy of
+their specific evidence (cited in NOTES.md/AUDIT.md by filename for named readings, e.g. code 192=espagne,
+221=hollande, 153); not touched, and not currently regenerable by this script since no full-page source or box
+is on file for them -- a future worker adding those would extend `images_manifest_full.tsv`'s coverage, not
+required by this pass's brief.
+
+Files: `ciphers/lodewijk-van-nassau-1573-74/{images_manifest_full.tsv,regen_images.sh,images/**,NOTES.md}` (this
+section). Hosts: resources.huygens.knaw.nl, 2 requests (page test only; crop test read the just-fetched page
+from disk).

@@ -1,0 +1,120 @@
+#!/usr/bin/env bash
+# Regenerate full-page renders and line crops for ciphers/lodewijk-van-nassau-1573-74
+# that were removed from the working tree on 26 Sept 2026 (AX2-SHRINK, LANE AX2) to
+# stay under CLAUDE.md's 30 MB-per-folder rule. The originals are still readable from
+# git history (see NOTES.md's "AX2-SHRINK" section for the commit sha).
+#
+# Usage:
+#   ./regen_images.sh page BRIEFNR PAGE      # re-fetch PDF + render one full page
+#   ./regen_images.sh crop  images_manifest_full.tsv PATH   # re-cut one crop from its recorded box
+#   ./regen_images.sh all                    # do the whole folder (all briefs in both manifests)
+#
+# Sources: images/manifest.json (briefs 4610-4616, pdftoppm -png -r 150) and
+# images_wv2/manifest.json (briefs 4503/5194/5797/5799/5810/5811, pymupdf render, JPEG q80, 150dpi).
+# Good-citizen rule: one resources.huygens.knaw.nl request at a time, >=2s apart.
+set -euo pipefail
+cd "$(dirname "$0")"
+UA="cipher-lab research script (contact via repository)"
+
+fetch_pdf() {
+  local briefnr="$1" out="$2"
+  local url
+  url=$(python3 -c "
+import json
+for m in ('images/manifest.json','images_wv2/manifest.json'):
+    d = json.load(open(m))
+    for e in d['files']:
+        if str(e['briefnr']) == '$briefnr':
+            print(e['pdf_url']); raise SystemExit
+")
+  [ -n "$url" ] || { echo "briefnr $briefnr not found in either manifest" >&2; exit 1; }
+  curl -sS -A "$UA" -o "$out" "$url"
+  sleep 2
+}
+
+render_pdftoppm() {
+  # images/ convention: pdftoppm -png -r 150, one file per page, 1-indexed
+  local pdf="$1" outprefix="$2"
+  pdftoppm -png -r 150 "$pdf" "$outprefix"
+}
+
+render_pymupdf() {
+  # images_wv2/ convention: pymupdf, 150dpi, JPEG q80
+  local pdf="$1" outdir="$2" briefnr="$3"
+  python3 - "$pdf" "$outdir" "$briefnr" <<'PYEOF'
+import sys, fitz
+pdf, outdir, briefnr = sys.argv[1], sys.argv[2], sys.argv[3]
+doc = fitz.open(pdf)
+zoom = 150 / 72
+mat = fitz.Matrix(zoom, zoom)
+for i, page in enumerate(doc, start=1):
+    pix = page.get_pixmap(matrix=mat)
+    pix.save(f"{outdir}/{int(briefnr):05d}_p{i}.jpg", jpg_quality=80)
+PYEOF
+}
+
+do_page() {
+  local briefnr="$1" page="$2" tmp
+  tmp=$(mktemp -d)
+  fetch_pdf "$briefnr" "$tmp/$briefnr.pdf"
+  if python3 -c "
+import json
+d = json.load(open('images/manifest.json'))
+import sys
+sys.exit(0 if any(str(e['briefnr'])=='$briefnr' for e in d['files']) else 1)
+" 2>/dev/null; then
+    render_pdftoppm "$tmp/$briefnr.pdf" "$tmp/$(printf '%05d' "$briefnr")"
+    cp "$tmp"/*"-$(printf '%02d' "$page")"*.png "images/$(printf '%05d' "$briefnr")_p${page}.png" 2>/dev/null || \
+      cp "$tmp"/*"-${page}"*.png "images/$(printf '%05d' "$briefnr")_p${page}.png"
+  else
+    render_pymupdf "$tmp/$briefnr.pdf" "$tmp" "$briefnr"
+    cp "$tmp/$(printf '%05d' "$briefnr")_p${page}.jpg" "images_wv2/$(printf '%05d' "$briefnr")_p${page}.jpg"
+  fi
+  rm -rf "$tmp"
+  echo "rendered briefnr=$briefnr page=$page"
+}
+
+do_crop() {
+  local manifest="$1" path="$2"
+  python3 - "$manifest" "$path" <<'PYEOF'
+import sys, csv, ast, os
+manifest, path = sys.argv[1], sys.argv[2]
+with open(manifest) as f:
+    r = csv.DictReader(f, delimiter="\t")
+    row = next((x for x in r if x["path"] == path), None)
+if row is None:
+    sys.exit(f"{path} not found in {manifest}")
+src = row["source"]
+if "box=" not in src:
+    sys.exit(f"{path} has no recorded box (source: {src}); not a line crop")
+parent = src.split("crop of ")[1].split(" box=")[0]
+box = ast.literal_eval(src.split("box=")[1].split(" via")[0])
+if not os.path.exists(parent):
+    sys.exit(f"parent {parent} not on disk -- run: ./regen_images.sh page <briefnr> <page> first")
+from PIL import Image
+im = Image.open(parent)
+im.crop(tuple(box)).save(path, quality=85)
+print(f"cut {path} from {parent} box={box}")
+PYEOF
+}
+
+case "${1:-}" in
+  page) do_page "$2" "$3" ;;
+  crop) do_crop "$2" "$3" ;;
+  all)
+    python3 -c "
+import json
+for m in ('images/manifest.json','images_wv2/manifest.json'):
+    d = json.load(open(m))
+    for e in d['files']:
+        for i in range(1, e.get('pages', e.get('pages_in_pdf', 0)) + 1):
+            print(e['briefnr'], i)
+" | while read -r briefnr page; do
+      do_page "$briefnr" "$page"
+    done
+    ;;
+  *)
+    echo "usage: $0 {page BRIEFNR PAGE | crop images_manifest_full.tsv PATH | all}" >&2
+    exit 1
+    ;;
+esac
