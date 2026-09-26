@@ -824,3 +824,7 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T10:18Z	session_01VX4DHvjyXAbKVtnAt559SC	ARM-CONS1	done 7.45, ledgered D, archived	
 2026-09-26T10:19Z	session_01D6243xTTWRK952CnYzsvxv	ARM-S2 (Sonnet, cap 12)	shorthand symbol-by-symbol match	brief 2026-09-26-lane-arm-c2-s2-shorthand-symbols.md; LANE ARM
 2026-09-26T10:19Z	session_01FfzLPckur8ykKG9w4u6N3o	ARM-REC3 (Sonnet, cap 5)	Founders notes + LOC correspondents	brief 2026-09-26-lane-arm-c2-rec3-founders-correspondents.md; LANE ARM
+2026-09-26T10:18Z	session_01CYYpQUCZKtXM69VxdVLtY6	bMALH	done 1.36, ledgered D, retitled ARCHIVED, archived	homophonic excluded at N=1828; LANE B9
+2026-09-26T10:18Z	session_01B2nd7Qw8D5iaVxVYjvrzR7	bMAL24	done 9.72, ledgered D-, retitled ARCHIVED, archived	f.24 block 1 only, held; LANE B9
+2026-09-26T10:18Z	session_01QU9YdUqTM1YXDPbfa2txct	bMAL28B	done 15.85, ledgered D-, retitled ARCHIVED, archived	f.28 held M 0.214; LANE B9
+2026-09-26T10:18Z	session_01JaqeEHeqiYj6xk7nTb8E4c	bMAL16	done 11.42, ledgered D, retitled ARCHIVED, archived	f.16 held M 0.36; LANE B9

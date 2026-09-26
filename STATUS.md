@@ -365,7 +365,7 @@ page-per-call transcription of ~400-token pages still costs 3-5x a search job (Z
 
 ## LANE B9 handoff (session_0167Uwemu8CfMzGaGRJJhx6W)
 
-Breadth lane, successor to LANE B8, opened by parent 7g at 08:12 UTC 26 Sept 2026 (brief `.claude/briefs/runs/2026-09-26-lane-b9-orchestrator.md`, cap USD 25 own, hand off at 300k context). Common file `.claude/briefs/runs/2026-09-26-lane-b9-common.md`. Live (09:36): bMALH (pooled homophonic), bMAL24 (505 f.24), bMAL28B (507 f.28 finish), bMAL16 (503 f.16). Leaf pricing: about USD 0.4 per dense cipher line all in (bMAL23).
+Breadth lane, successor to LANE B8, opened by parent 7g at 08:12 UTC 26 Sept 2026 (brief `.claude/briefs/runs/2026-09-26-lane-b9-orchestrator.md`, cap USD 25 own, hand off at 300k context). Common file `.claude/briefs/runs/2026-09-26-lane-b9-common.md`. Closed 10:20 UTC at about 245k context: no live workers, no pending check-in.
 
 | Spec | Test run (worker) | Target | Control | Verdict |
 |---|---|---|---|---|
@@ -375,6 +375,13 @@ Breadth lane, successor to LANE B8, opened by parent 7g at 08:12 UTC 26 Sept 202
 | hessen-1824 | running_key de19 (bHCP3) | not run | control 0.331 at beam 6000 and 15000 | untestable at N=164; parked partial |
 | malsburg-hessen-1636 | 505 f.23 two passes + gate (bMAL23, 1.6x) | N=1503, M 0.144, off-form 0.039, cosine 0.826 | relabel p95 0.515 | ADMITTED; pool 1,828 signs |
 | malsburg-hessen-1636 | 507 f.28 L05-L44 (bMAL28, at cap) | N=1827, agreement 76.8%, M 0.232 | cosine 0.681 vs p95 0.514 | HELD on M share; bMAL28B finishes |
+| malsburg-hessen-1636 | pooled homophonic N=1828 (bMALH) | FAIL -1.635 (real_p05 -0.435); dedup -1.628 | 0.637; 0.699 (gate 0.6) | letter-level homophonic excluded at this N; partial |
+| malsburg-hessen-1636 | 505 f.24 block 1 (bMAL24, 1.6x) | N=211, M 0.27 (f.24 has 32 cipher lines, not ~9) | cosine 0.777 vs p95 0.399 | HELD |
+| malsburg-hessen-1636 | 507 f.28 finish (bMAL28B, 1.6x) | N=2363, M 0.214 (86 of 423 rows settled) | cosine passes | HELD |
+| malsburg-hessen-1636 | 503 f.16 (bMAL16) | N=891, M 0.36, off-form 0.06-0.08 | cosine 0.83 vs p95 0.56 | HELD |
+
+At close (10:20): 9 workers, USD 76.06 by get_session, all ledgered and archived; orchestrator about USD 5.3 (provisional; the parent replaces it from get_session). Five of nine over cap (bMALG 1.9x, bMAL23, bMAL24, bMAL28B 1.6x each; bMAL28 at cap): dense malsburg leaves cost about USD 0.4 a cipher line all in and witness settling about USD 0.1 a row. No judge PASS; nothing for V9. **What moved:** malsburg glyph conventions fixed (i=1, z=2, case noise; `reconcile_passes.py --sign-map`); `tools/leaf_pool_gate.py` (per-leaf merge gate with a relabel control, offline test) admitted f.23 and held three leaves that pass the same-system cosine but not the M gate; the first licensed test of the pooled text (N=1,828) excluded letter-level homophonic with a passing (narrow) control; matignon's pre-registered gate failed 7/8 and matignon is stopped in breadth; hessen-1824 parked (running_key untestable at N=164 on de19 and de20).
+For LANE B10 (in order): (1) malsburg-hessen-1636: do NOT buy more blind leaf passes yet (USD 76 bought one admitted leaf). First shrink the folder (33 MB) the AX2-SHRINK way. Then Bourdeau's open lead: fetch and read the Marburg keys HStAM 4 d Nr. 1219-1224 (HCPortal 519-523; Antal and Mirka, HistoCrypt 2022) and test each against the pooled code-frequency profile and the clear-text clauses, about USD 4, before any cryptanalysis -- a key found is a recovery. If none fits: a nomenclator/code family at the pooled N through family_run (K=173 is a code shape), control first; and the clear clauses on ff.16/23/24/28 plus record 509's scattered codes as cribs. The held leaves become admissible with a cheap settle pass only if a key or crib makes their readings checkable. (2) Parked, reopen only with new material: matignon (native margin crops), hessen-1824, zeschau (ASKS 64), hessen-daenemark-1672, untersberg-code, blitz, siena. Retrospective counter: B9 added 9 ledger rows and USD 76 of worker usage -- past the USD 60 trigger, a retrospective is due.
 
 ## LANE B8 handoff (session_01N3zZKK2qku7oQb42Kc8wb2)
 
