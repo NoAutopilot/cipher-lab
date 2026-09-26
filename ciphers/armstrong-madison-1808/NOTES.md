@@ -319,3 +319,25 @@ Requests this pass: web.archive.org 3 failed (stopped, host outage persists). fo
 JSON, empty 202, not retried). archive.org 2. www.archives.gov 1 (confirmed the Founders metadata dataset is
 titles/ids only, would not have answered this brief even if fetchable). WebSearch 7 queries. No DECODE, no
 logins, no credentials touched.
+
+## ARM-DESIGN (26 Sept 2026, LANE ARM worker ARM-DESIGN, Fable): family B design verdict
+
+Plaintext-free statistics computed on the sibling tables' known layout, the four real THE=972 letters and 60
+simulated 369-token en18 letters per design (contiguous one-part / two-part / WE028 blockwise / THE972 partial /
+sequential-with-particle-block; decade designs H-DEC, H-HOM lazy and flat, gapped-insertion numbering), then on the
+target; all numbers side by side in HYPOTHESES.md "ARM-DESIGN", scripts and tables in `design/`. Verdict: the letter
+is a two-level numeric code -- a ~99-entry particle list at 1-99 (K~100 by a Zipf fit, top five values carry 14%
+of tokens, flat digits) and above 100 a family book whose units digit is a fixed-meaning member slot (0 >> 1 >
+4,6,7 >> 2,3,5,9, the same digits in every hundred-block): the digit concentration puts the target at percentile
+100 against every contiguously numbered design and every real THE=972 letter, the digit order refutes lazy
+homophone choice and fill-in-order insertions, and the decade/units dependence (z=2.76 against its own permutation
+null) refutes homophones chosen independently of the word. One-part vs two-part vs blockwise is not decidable from
+the ciphertext at this length (the statistics overlap by more than their shift), and the siblings are block-local
+at best, so family C gets no alphabetical constraint. Above 100 the block reads as content words with near-full
+coverage (168 distinct in 237 tokens; en18 content streams give 196, p05 170), so the book holds ~900-1800 forms,
+not 180 roots with inflections (which would leave ~300 words per letter for the 37 shorthand passages). Family C's
+unknown, score and matched control are written in `design/family_C_spec.md`. The single most valuable next access
+step is the NARA M34 roll 14 image check of the units digits (open item 4 above): the whole verdict rests on
+Bourdeau's transcription of the Founders group list, and a systematic misreading of 2/3/5/9 would collapse it to a
+contiguous code. Requests this session: none (offline). Not done, per the brief: no decode to words, no family C
+tool.

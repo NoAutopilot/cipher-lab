@@ -123,3 +123,86 @@ Salad (first 30 decoded tokens per table, NOT a reading, rule 10):
 - THE972_bourdeau: `{453} roc de ion * {35} {681} {1752} {1841} {1314} {1840} roc ** ward {18} {681} native {1628} {1267} pos {76} native {98} ** {388} like ct Monarch {1780} temp`
 - THE972_tomokiyo_clean: `{453} {240} {760} {1480} * {35} {681} {1752} {1841} {1314} {1840} {240} ** {384} {18} {681} {1340} {1628} {1267} {1180} {76} {1340} {98} ** {388} {1320} {1254} {64} {1780} {341}`
 - THE972_tomokiyo_partial: `{453} {240} {760} ion * {35} {681} {1752} {1841} {1314} {1840} {240} ** w...? {18} {681} {1340} {1628} {1267} pos {76} {1340} {98} ** {388} l...?? ct {64} {1780} temp`
+
+## ARM-DESIGN (26 Sept 2026, LANE ARM worker ARM-DESIGN, Fable) -- family B: what kind of code is the letter in?
+
+Scripts, tables and simulations: `design/` (`design_stats.py`, offline, stdlib; `stats_real.tsv` target and the four
+real THE=972 letters; `stats_sim.tsv` 60 simulated 369-token letters per design with the target's percentile;
+`table_layout.txt` the two sibling tables' alphabetical layout; `run_log.txt`). Simulated letters are en18 text
+encoded under: `blockwise_WE028` (WE028 as published), `onepart` (WE028's 1596-entry vocabulary in one alphabetical
+run), `twopart` (same vocabulary, values permuted), `the972_partial` (Bourdeau's 580 entries, syllable spelling),
+`seq_pblock` (99-word particle block at 1-99 + 1800 content forms numbered 100-1899 at random, OOV dropped), `hdec`
+(180 root lemmas at 100,110..1890, units digit = a fixed inflection slot, en18 inflection rates, OOV dropped as if
+written in the shorthand), `hhom_lazy`/`hhom_flat` (same decades, units digit = a homophone chosen with weight
+1/(d+1) / uniformly), `hinsert` (gapped numbering: roots at decades, 450 later additions filling units 1,2,3.. in
+order). CONTROL = the sibling tables' known layout, the four real THE=972 letters (N=28-243, pooled 474) and the
+simulations; TARGET = the 369 groups. Every statistic below can differ between the designs it is used to compare
+(rule 3); where it cannot, that is said.
+
+**Sibling layout (control side, needs plaintext).** WE028: 1596 entries, 94 maximal alphabetical runs, 27 runs of
+20-100 entries covering 1392 entries -- one letter-block per run (B at 1301-1360, T at 1361-1400, I/J at 1401-1446,
+R 1461-1500, A 1501-1550, O 1551-1600 ...), block order scrambled, alphabetical inside: a two-part-by-letter-block
+code, not one-part. THE972 (580 of ~1600 published): 99 runs, median 3, only 4 runs >=20 (101 entries) -- more
+fragmented than WE028 even allowing for the 36% density (ga..how at 901-932 interrupted by particular 910, o 934,
+sue 939). The office convention is therefore block-local alphabetical order at best; no sibling is one-part.
+
+**Q1 one-part vs two-part vs blockwise, plaintext-free: NOT DECIDABLE at N=369.** Three statistics tried.
+`onepart_dist` (mean distance between the k-th most frequent token's position in the value range and the
+alphabetical position of the k-th most frequent en18 word, k<=8): onepart sims 0.31+-0.07, twopart 0.37+-0.09,
+blockwise 0.38+-0.06 -- a 0.06 shift against a 0.07-0.09 spread, so the designs overlap at this N; target 0.417 (p93
+under onepart, p70 under twopart, p73 under blockwise), leaning away from one-part but weakly, and the target's top-8
+tokens all lie in the 1-99 block, which behaves as a separate list (below), so the test barely applies to it.
+`freqpos_jsd` (token-weighted vs distinct-weighted 19-bin value histogram): 0.019-0.022 for all three designs, no
+separation; target 0.020. Successive-gap statistics: identical under all designs and equal to their own
+shuffled-order value (0.02-0.03), order carries nothing. Verdict: the alphabetical-order question cannot be settled
+from the ciphertext alone at this length -- a negative for the statistics, not for a design -- and the siblings say
+the convention is block-local anyway. Family C gets NO alphabetical constraint.
+
+**Q2 units-digit skew (values >= 100, 237 tokens): NOT a contiguously numbered code; slots with fixed meanings.**
+Concentration: target `units_top1` 0.388 (digit 0), `units_top2` 0.586, entropy 2.57 bits. Every contiguous design
+(blockwise/onepart/twopart/the972/seq_pblock, 60 sims each) sits at top1 0.14-0.17 +-0.02, entropy 3.23-3.27 +-0.03
+(target percentile 100 / 0 on all five); the four real THE=972 letters: top1 0.16-0.20, entropy 3.11-3.26; pooled
+0.151 / 3.27. `hdec` with en18 inflection rates over-concentrates (top1 0.76+-0.05, entropy 1.17, target p0);
+`hhom_lazy` 0.34+-0.06 / 2.73+-0.17 (target p78 / p18) and `hinsert` 0.40+-0.05 / 2.35+-0.14 (p43 / p90) both match
+the concentration -- but the lazy weight and the insertion model are chosen parameters, so this is consistency, not
+support. Digit ORDER separates them: the target uses digits 1,4,6,7 (47,26,22,22 tokens) far more than 2,3,5,9
+(9,3,2,2), the same digits in every hundred-block (`digits23_share` 0.083); `hinsert` (fill 1,2,3.. in order) gives
+`digit_order_rho` 0.95+-0.04 and digits23 0.40+-0.07 (target p0 on both), `hhom_lazy` 0.75+-0.16 / 0.29+-0.07 (p2 /
+p0): both refuted -- the units digit is a slot with a fixed meaning across the whole book and arbitrary popularity,
+not a preference order or an insertion order (hdec's own rho is an artefact of my slot assignment and is not
+evidence either way). Decade/units dependence (`decade_units_z`: modal-digit share in decades with >=3 tokens vs its
+own digit-permutation null; target 0.570 vs null 0.501, z=2.76): `hhom_lazy` 0.02+-0.92 and `hhom_flat` -0.10+-0.93
+(target p98 / p100) -- a homophone chosen independently of the word cannot produce the target's dependence, so pure
+lazy homophony is out; the fair contiguous control `seq_pblock` (particles separate) 5.9+-2.6 (p13), `hinsert`
+3.2+-1.7 (p45), `hdec` 1.3+-1.1 (p92); the function-word-carrying word codes give 14-20 because 'the' repeats inside
+one decade, a mismatch of design, not evidence. Verdict: H-DEC-like -- decade = a family of related entries, units
+digit = which member (0 the commonest, 1 the next, 4/6/7 middling, 2/3/5/9 rarely filled) -- but the members of a
+decade are used more evenly than one root plus en18 inflections would give (170: 0x5 6x4; 1260: 7x4 4x1; 380 holds
+five distinct digits), so each slot is best modelled as its own entry with a book-wide slot prior, not a
+deterministic inflection. The 900-1099 trough (4 tokens; `block_pair_min` 18-25 under contiguous designs, p0-1;
+6-8 under the sparse designs, p2-14) is what a sparsely occupied numbering produces, not an extra anomaly.
+CAVEAT that outranks all of this: every digit here is Bourdeau's transcription of the Founders group list, never
+checked against NARA M34 roll 14 images 29-32 (NOTES.md open item 4); a systematic misreading of Armstrong's
+2/3/5/9 would turn this whole section back into a contiguous code. That image check is now the single most
+valuable access step on this target.
+
+**Q3 codebook size and the 1-99 block.** 1-99: 132 tokens, 48 distinct, 20 singletons; a Zipf(s=1) fit gives
+K~100 (E[D]=48.4 at K=100) -- a ~99-entry list; its top five values (17, 18, 38, 1, 14: 13, 12, 10, 9, 8 tokens)
+carry 14% of the whole letter, the rate of the/of/to/and/in in en18 despatches, and its digits are flat (7 and 8
+commonest) -- a particle block, distinct in kind from the block above 100. Above 100: 237 tokens, 168 distinct, 119
+singletons; en18 content-word streams of 237 tokens give 196 distinct (p05 170, p95 214), so the block reads as
+content words with near-complete coverage of the letter's vocabulary, not syllable spelling (a Zipf fit over a
+whole-language vocabulary cannot even reach D=168 at K=5000). Coverage of en18 content tokens by the top-K
+entries: K=180 lemmas 0.29, 500 0.52, 1000 0.68, 1800 0.80 (forms 0.25/0.44/0.59/0.71). With 237 coded content
+tokens and 35 short + 2 full-line shorthand passages as the only visible out-of-vocabulary route, coverage is
+about 80-87%: a general 180-root x few-slot book (about 470 forms, coverage ~0.45, ~300 OOV words per letter) is
+excluded; the book above 100 holds on the order of 900-1800 forms in <=180 decades x <=10 slots (99 decades, 168
+forms seen in this one letter), which is either a purpose-built topical vocabulary or a full-size book whose slots
+2/3/5/9 are mostly empty. Sibling low blocks for comparison: WE028's 1-99 is a proper-name/long-word block
+(Maryland, West Indies, Parliament ...) and THE972's 1-99 holds 14 known entries (circumstance, commerce,
+communica ...) -- neither is a particle block, so this too is target-specific.
+
+**Verdict for family C.** Two-level numeric code: a ~99-entry particle list at 1-99 and, above 100, a family
+book of up to 180 decades whose units digits are fixed-meaning member slots (0 >> 1 > 4,6,7 >> 2,3,5,9), about
+900-1800 forms, English content words, no usable alphabetical order, OOV words probably in the shorthand.
+Spec: `design/family_C_spec.md`. K: low ~100; high 900-1800 forms (168 seen). Not decoded to words here.

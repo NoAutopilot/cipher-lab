@@ -1,0 +1,39 @@
+design/dataset                         D/N   low_share low_distinc hi_distinct  units_top1  units_top2     units_H units_digit decades_occ decade_mult variants_pe decade_unit decade_unit decade_unit block_troug block_pair_ freqpos_jsd onepart_dis digit_order digits23_sh top10_share top10_pos_s  gap_median gap_median_ gap_small_f gap_small_f
+TARGET armstrong-madison-1808        0.585       0.358          48         168       0.388       0.586       2.572       0.388          99       0.455       1.697       0.570       0.501       2.759       0.071           4       0.020       0.417       0.400       0.083       0.203       0.283         544         536       0.024       0.038
+REAL THE972 usage 1808-08-30_p       0.857       0.000           0          42       0.204       0.408       3.113       0.204          38       0.079       1.105       0.857       0.383       5.175       0.000           1       0.019       0.503       0.483       0.333       0.347       0.225         380         360       0.021       0.062
+REAL THE972 usage 1808-02-22         0.675       0.026           3         101       0.167       0.287       3.259       0.100          68       0.397       1.485       0.703       0.399      10.172       0.000           4       0.011       0.411       0.233       0.237       0.286       0.139         377         387       0.020       0.007
+REAL THE972 usage 1808-02-15         0.556       0.021           3         132       0.160       0.311       3.223       0.067          90       0.344       1.467       0.731       0.386      15.184       0.000           5       0.014       0.280       0.333       0.230       0.272       0.145         358         340       0.021       0.012
+REAL THE972 usage 1808-09-07_f       0.929       0.071           2          24       0.192       0.346       3.119       0.115          22       0.091       1.091       0.667       0.428       1.479       0.000           1       0.003       0.326       0.400       0.261       0.429       0.271         658         554       0.000       0.037
+REAL THE972 usage pooled             0.492       0.023           8         225       0.151       0.296       3.270       0.095         123       0.553       1.829       0.674       0.363      19.300       0.000          16       0.016       0.360       0.333       0.243       0.232       0.135         379         395       0.019       0.008
+SIM blockwise_WE028                  0.533       0.016       4.867     191.750       0.143       0.273       3.273       0.116     109.617       0.499       1.749       0.662       0.372      15.114       0.001      24.667       0.021       0.378      -0.115       0.174       0.266       0.242     448.900     438.900       0.021       0.025
+SIM onepart                          0.533       0.081      13.983     182.633       0.159       0.298       3.244       0.138     106.583       0.482       1.714       0.665       0.376      14.263       0.000      21.350       0.019       0.311      -0.331       0.166       0.266       0.290     497.650     496.417       0.021       0.028
+SIM twopart                          0.514       0.055      11.183     178.300       0.165       0.302       3.238       0.096     107.383       0.471       1.660       0.693       0.377      16.349       0.008      18.533       0.022       0.368       0.114       0.236       0.274       0.256     460.050     458.767       0.014       0.023
+SIM the972_partial                   0.457       0.004       1.250     167.267       0.174       0.317       3.229       0.103     100.683       0.456       1.662       0.719       0.367      19.624       0.052      10.767       0.023       0.358       0.581       0.233       0.256       0.145     356.017     353.550       0.026       0.027
+SIM hdec                             0.316       0.809      64.433      52.300       0.762       0.902       1.168       0.762      49.667       0.053       1.054       0.898       0.780       1.280       0.000       1.617       0.060       0.425       0.861       0.244       0.448       0.012      44.283      40.633       0.265       0.263
+SIM hhom_lazy                        0.319       0.847      65.450      52.167       0.344       0.529       2.733       0.342      40.283       0.228       1.299       0.492       0.483       0.018       0.000       0.983       0.076       0.426       0.753       0.291       0.467       0.005      33.533      32.950       0.292       0.283
+SIM hhom_flat                        0.324       0.847      65.450      53.983       0.169       0.314       3.193       0.103      40.283       0.244       1.345       0.399       0.407      -0.097       0.000       0.983       0.079       0.426       0.163       0.225       0.467       0.005      33.550      32.967       0.292       0.283
+SIM hinsert                          0.409       0.686      59.667      91.200       0.403       0.627       2.351       0.403      73.667       0.211       1.240       0.723       0.537       3.236       0.284       6.067       0.071       0.424       0.952       0.395       0.385       0.031     189.233     127.450       0.173       0.190
+SIM seq_pblock                       0.457       0.629      57.517     111.067       0.152       0.284       3.254       0.097      85.550       0.254       1.297       0.666       0.408       5.882       0.343       7.850       0.068       0.426       0.020       0.220       0.353       0.036     408.400     315.917       0.142       0.161
+OOV drops per 369-token letter under hdec: mean 231.8 (target: 35 short + 2 line passages)
+OOV drops per 369-token letter under hhom_lazy: mean 254.6 (target: 35 short + 2 line passages)
+OOV drops per 369-token letter under hhom_flat: mean 254.6 (target: 35 short + 2 line passages)
+OOV drops per 369-token letter under hinsert: mean 141.1 (target: 35 short + 2 line passages)
+OOV drops per 369-token letter under seq_pblock: mean 94.5 (target: 35 short + 2 line passages)
+Zipf K estimate all: N=369 D=216 s=1.0: K~4995 (E[D]=212.2)
+Zipf K estimate all: N=369 D=216 s=1.2: K~4995 (E[D]=139.7)
+Zipf K estimate hi>=100: N=237 D=168 s=1.0: K~4995 (E[D]=147.6)
+Zipf K estimate hi>=100: N=237 D=168 s=1.2: K~4995 (E[D]=100.0)
+Zipf K estimate low<100: N=132 D=48 s=1.0: K~100 (E[D]=48.4)
+Zipf K estimate low<100: N=132 D=48 s=1.2: K~245 (E[D]=48.0)
+content-token coverage of en18 by top-K entries (lemmas | inflected forms):
+  K=  180: lemmas 0.291  forms 0.251
+  K=  300: lemmas 0.395  forms 0.338
+  K=  500: lemmas 0.515  forms 0.438
+  K=  800: lemmas 0.629  forms 0.537
+  K= 1000: lemmas 0.681  forms 0.585
+  K= 1200: lemmas 0.722  forms 0.624
+  K= 1500: lemmas 0.767  forms 0.670
+  K= 1800: lemmas 0.799  forms 0.706
+  K= 2500: lemmas 0.849  forms 0.768
+en18: distinct content words in 237 content tokens: mean 195.9, p05 170, p95 214 (target hi: 168 distinct in 237)
+vocab sizes: WE028 1596 THE972 580 roots 180 particles 99 en18 words 844698

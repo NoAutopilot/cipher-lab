@@ -1,0 +1,36 @@
+WE028: 1596 entries, 94 maximal ascending runs, longest [100, 100, 100, 96, 85, 83, 80, 78], median 2, runs>=20: 27 covering 1392 entries
+      0: mawhlsnpcvarotoepetsmsasdflocmswsdshtnsocmhnpcmaunjmpgpnpcmwsyqkacmfdncmbqnfapnomowbrstismvatsdrlp
+    100: cbcccccoccccccccccccccccccccgmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmehhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+    200: hppppppppppppppppppppppppppppppppsssssssssssssasssssssssssssssssseeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+    300: effffffffffffffffffffffffffffffffffffffffffffffffffnnnnnnnn.nnnnnnnnnnnnnnnnnnssssssssssssssssssssss
+    400: wnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnuvvvvvuvvvvvvvvuuvvvvvvvvvuuuuuuuvvvuuuuuuuuuwwww
+    500: weeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeetttttttttttttttttttttttttttttthhhhllllllllllllll
+    600: lmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmxxyyyyyyyyyyyyzzaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    700: aqqqqqqqqqqqqrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrtttttttttttttttttttttttttbbbbbbbbbbbbbbbbddddddd
+    800: dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddwwaaaaaaaaaffffffflllllllllllllllllll--
+    900: -oooooooooooooooooooooooooooooooooooooooooooorrrrr&0123456789fffffffffffffffffffffffffffffffffffffff
+   1000: fccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccsssssssssssssssssssssssssssssssss
+   1100: sppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
+   1200: wgggggggggggggggggggggggggggggggggggggggghhhhhhhhhhhhhhhhhhh，；：．！？‐("zdddddddddddddddddddeeeeeeeeee
+   1300: ebbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbttttttttttttttttttttttttttttttttttttttt
+   1400: tiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiijijiiiiiiiiijjjkkkkklllllllllrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+   1500: raaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaooooooooooooooooooooooooooooooooooooooooooooooooo
+   1600: o
+THE972_bourdeau: 580 entries, 99 maximal ascending runs, longest [35, 24, 22, 20, 18, 18, 16, 16], median 3, runs>=20: 4 covering 101 entries
+      0: cccccccddegmmp
+    100: ttttvuuwwyabbccccdddeeeeffggh
+    200: tmmnnnoroooopppppppppptppqrrrrtrr
+    300: trssssssssstttttttttttttvvvuuuwwwwwwwww
+    400: wwyzyyokaaaatbbcccccccccd
+    500: dmmmmmmmmmmmmmmvmooorrrrrretttttttttttt
+    600: ttttvvvvuuawwwvwwwtmpppppppppppppplllaaaa
+    700: aaabbbbbcccccccdddddddddeeecnerpeere
+    800: aaaaaaaaannnnnnnnssssspsssslpqrrrrrrruxyyu
+    900: gggpghhhhhhhhosuvooooottttttttttssssssssssssaqq
+   1000: ddddddddddddidfffffffffffffffriifriimiiijkl
+   1100: sssssssssssssssssvvvvvttpttpppstppppd
+   1200: aaaaaaaacaaaactcccccccccccddeeeeeeeepeeee
+   1300: ijjklllllpllmonnnnnboooopppprrrrpri
+   1400: bbbbbbbbrbbggggghhhhhhhhhhhiiiiiiiiklllllll
+   1500: leeefffffffffmmmmmmmmmmmmmmmnnnnti
+   1600: ln
