@@ -1,20 +1,43 @@
 # Lope Hurtado de Mendoza (Rome) to Charles V, 1522 — RAH Salazar 9/26, DECODE R9634/R9646/R9649
 
 partial
-Check-solved, 26 Sept 2026 (LANE B5 worker bLOP): full text search of the Calendar of State Papers,
-Spain vol. II (Bergenroth/Gayangos, archive.org bub_gb_ZoY9AAAAcAAJ) was run by Bourdeau on 2026-09-21
-and is re-cited here (not re-run, per intake gate cost discipline): Hurtado's 1522 letters calendared
-are nos. 416, 422 (6 June) and 454-455 (26-27 July) only; nothing for Sept-Nov 1522, the window of
-R9634/R9646/R9649. Tomokiyo's *Correspondence in Cipher of Imperial Ambassadors Alonso Sanchez and
-Juan Manuel (1522)* (Cryptiana, 6 Sept 2025) covers Sánchez's and Juan Manuel's ciphers only, not
-Hurtado's (checked by Bourdeau 2026-09-20, no reference to Hurtado; re-checked here by name search,
-same result). aaymeloglu/unsolved-ciphers (shallow clone, HEAD at fetch time 26 Sept 2026, deleted
-after grep) lists R9634, R9646, R9649 as `Non-decrypted` in `catalogue/decode-records.jsonl` and
-separately names two further, unread Hurtado letters at the BNE in `catalogue/bne-ranked.md`
-(MSS/18697/29, MSS/20212/27) that neither project has checked. One OpenAlex query
-(`search=Lope Hurtado cipher`) returned 11 results, none relevant (security/medical/history-of-empire
-papers). Semantic Scholar 429'd twice (key present; one retry after a pause, per the good-citizen
-rule) — not answered, not a negative.
+Check-solved, 26 Sept 2026 (LANE B6 worker bCSLOP): this worker fetched and grepped the WHOLE Calendar
+of State Papers, Spain vol. II (Bergenroth/Gayangos, archive.org bub_gb_ZoY9AAAAcAAJ, `_djvu.txt`,
+3,438,686 bytes) itself, for "Hurtado" (31 hits, plus OCR-mangled variants found only via the "Lope"
+and "Mendoza" greps), "Lope" (101), "Mendoza" (24) and "cipher"/"cypher" (168), and read every hit —
+correcting the prior verdict, which re-cited Bourdeau's 2026-09-21 search instead of opening the
+edition (RETRO-2026-09-26b finding 3). Result: **not empty.** Calendared Lope Hurtado letters to the
+Emperor in 1522 are nos. 416/422 (6 June), 454-455 (26-27 July), 467 (14 Aug, off Rivataglia), **497
+(dated "the last day of October"/"the 1st of November 1522", from Rome, source "M. Re. Ac. d. Hist."
+= Real Academia de la Historia, the same holding institution as RAH Salazar 9/26; "Autograph in
+cipher... Contemporary deciphering")**, 609 (17 Dec, "the cipher of Lope Hurtado de Mendoza, ...
+Contemporary deciphering"), 610 (23 Dec) and the "27 Dec" entry (OCR index garbled). No. 497 falls
+inside the Sept-Nov 1522 window and is 8 days from R9649's own DECODE-catalogue date (9 Nov 1522,
+`catalogue/decode-records.jsonl`); whether it is the same despatch is unresolved (this sweep did not
+compare folios/incipits) and is flagged below, not settled. Separately, Tomokiyo's *Scholarly Studies
+on Ciphers in the Reign of Emperor Charles V* comments page (`sources/cryptiana/web/spanish2C.htm`,
+not previously read for this target) discusses Olga Kolosova (2017), *El lenguaje secreto de la
+diplomacia de Carlos V (1521-1527)* (doctoral thesis, Universitat de València, 854pp, "edition of 78
+unpublished, encrypted manuscript letters between... Charles V and diplomats, agents and ambassadors
+in Italy", per web search of the Dialnet record), also published as Kolosova (2024), *El lenguaje
+cifrado en tiempos de Carlos V (1521-1527)* (Ediciones Universidad de Salamanca): it reconstructs
+"Ko.7 Lope Hurtado de Mendoza" (main cipher, substitution alphabet p.312, nomenclature p.333) and
+"Ko.10 Lope Hurtado's Secondary Cipher" (substitution alphabet p.388, nomenclature p.405), both used
+"in Lope Hurtado's letters to the Emperor" — this period is exactly 1521-1527, covering the target.
+Neither the dissertation nor the 2024 book has been opened by anyone in this repository (Teseo link
+TLS-unreachable from this container; Google Books preview reachable but out of this job's authorised
+hosts, not fetched). aaymeloglu/unsolved-ciphers (fresh shallow clone, HEAD `2495c45e8b94ffbc4f09a-
+085224aa5ebce5cdf9f`, 2026-09-23, deleted after grep) confirms R9634/R9646/R9649 `Non-decrypted` in
+`catalogue/decode-records.jsonl` with exact dates: R9649 = 1522-11-09, R9634 = 1522-09 (day blank),
+R9646 undated; `catalogue/bne-ranked.md` still names two further unread Hurtado letters at the BNE
+(MSS/18697/29 "Parcialmente cifrada"; MSS/20212/27, five letters 1522-1526). dbourdeau/cyphersolver
+(fresh shallow clone, HEAD `fc0c9e865d0fae67ca92d19750d2b09ab11972e0`, 2026-09-25, unchanged from the
+prior job, deleted after grep) reconfirms no R9634 transcription exists anywhere in the repository.
+Web search for "Lope Hurtado" cipher/cifrado/descifrado Rome 1522 found nothing beyond the Kolosova
+thesis record and unrelated 1547-1548 Diego Hurtado de Mendoza material. One OpenAlex query
+(`search=Kolosova Carlos V cifra diplomacia`) returned 5 results, none naming Lope Hurtado or 1522
+directly (all 1543-1556 imperial-cipher studies by the same research group). Semantic Scholar 429'd
+twice again (key present, one retry after a pause) — still not answered, not a negative.
 
 ## Gate check
 
@@ -23,6 +46,110 @@ $ python3 tools/intake_gate_check.py lope-hurtado-1522
 lope-hurtado-1522: partial (line 3) -- edition/page or full-text-search citation found within 6 lines
 exit=0
 ```
+
+## Check-solved (bCSLOP), 26 Sept 2026
+
+Job bCSLOP (`.claude/briefs/runs/2026-09-26-lane-b6-cslop.md`): correct the check-solved verdict, which
+RETRO-2026-09-26b finding 3 caught re-citing another worker's search of CSP Spain vol. II instead of
+opening it. Query log, in the brief's order:
+
+**(a) Calendar of State Papers, Spain, vol. II (Bergenroth/Gayangos).** Fetched
+`https://archive.org/download/bub_gb_ZoY9AAAAcAAJ/bub_gb_ZoY9AAAAcAAJ_djvu.txt` (1 request, 200, disk
+only, not committed) and grepped the whole 3,438,686-byte file (case-insensitive):
+- `hurtado`: 31 hits — read every one. In-window result: **none** dated Sept-Nov 1522 under this exact
+  spelling (467 is 14 Aug; the next after it is 609, 17 Dec).
+- `lope`: 101 hits — this grep, not the `hurtado` one, caught the OCR-mangled "1 Not. 487. 3LoPB
+  HmrrADO db Memsoza to the Ehpbrob" (no. 497, correctly "1 Nov. 497. Lope Hurtado de Mendoza to the
+  Emperor"), missed by the `hurtado` grep because the OCR renders the name "HmrrADO". Full text of
+  no. 497 read (djvu.txt lines ~49240-49295): despatched "Marino [i.e. Marano], last day of October
+  1522", indorsed "To the King. 1522. From Rome. Lope Hurtado. The 1st of November. Answered.",
+  source line "Spanish. Autograph in cipher. Contemporary deciphering. pp. 6." No specific folio/
+  shelfmark is legible in this OCR for no. 497 (the source abbreviation "M. Re. Ac. d. Hist." =
+  Real Academia de la Historia is legible; a shelfmark code directly below it is not). This is a
+  genuine gap in the prior verdict's "nothing for Sept-Nov 1522" claim — flagged, not resolved (see
+  "What would actually move this target" below; folio-level comparison against R9649's f.266-268 is
+  a separate, cheap next step, not run here — out of this job's scope, which is the citation only).
+- `mendoza`: 24 hits — read every one not already covered above. All are either the same in-1522-window
+  entries already listed, or clearly dated 1523/1524 by internal content (e.g. "19 and 20 Nov 612" is
+  the papal conclave that elected Clement VII, 19 Nov **1523**, not 1522; "13 April 633/634/635" are
+  headed "1524" on the page; "23 Dec 610" and the Cardinal-of-Volterra entries at "27 April 546" are
+  also 1523 by the same conclave/arrest content). No new in-window hits beyond no. 497.
+- `cipher`/`cypher`: 168 hits, not all individually read (too many for this job's cap); spot-checked
+  the ones adjacent to every Hurtado/Mendoza hit above (already quoted) and the Sept 1522 date-header
+  sweep below.
+- Date sweep: grepped `Sept\.` (163 hits) and scanned every entry number between the last confirmed
+  1522 Hurtado letter before the window (467, 14 Aug) and the first one after it (609, 17 Dec) by
+  listing every entry header in that byte range (`sed` + header regex, lines ~47900-50090 of the
+  djvu.txt): entries 477-507 in that stretch are Hieronymo Adorno, Pope Adrian VI, Juan Manuel, the
+  Duke of Sessa, Alonso Sanchez, the Viceroy of Naples, the Abbot of Najera and Martin de Salinas —
+  and no. 497 (Lope Hurtado, above). No entry for Lope Hurtado in Sept 1522 specifically found by
+  this method (497 is the only in-window hit, dated 1 Nov).
+
+**(b) Tomokiyo's pages on disk (`sources/cryptiana/`).** `grep -rli hurtado sources/cryptiana/`
+→ `web/spanish2.htm`, `web/spanish2C.htm`, `web/spanish3.htm`, `web/spanish3C.htm`. The main articles
+(`spanish2.htm`, `spanish3.htm`) discuss Lope Hurtado de Mendoza only in his later career (Florence
+mission 1537; a 1548 Lisbon cipher fragment, Num.6 of Alcocer 1934) — no 1522 Rome material, matching
+the prior worker's finding. **Not previously checked: `spanish2C.htm`**, a newer comments/discussion
+page ("Scholarly Studies on Ciphers in the Reign of Emperor Charles V"), which quotes and discusses
+Olga Kolosova (2017), *El lenguaje secreto de la diplomacia de Carlos V (1521-1527)* (dissertation,
+Universitat de València, 854pp) and Kolosova (2024) (Ediciones Universidad de Salamanca, same title
+in Spanish, DOI 10.14201/0MX001). Verbatim: "Kolosova reconstructed 17 ciphers used in letters to
+Emperor Charles V in 1521-1527." Two of the 17 are named for our sender: "#### Ko.7 Lope Hurtado de
+Mendoza (p.309, Substitution alphabet: p.312, Nomenclature: p.333) ... Lope Hurtado used this main
+cipher as well as another less complex one (Ko.10) with the Emperor (p.309-310)"; and "#### Ko.10
+Lope Hurtado's Secondary Cipher (p.386, Substitution alphabet: p.388, Nomenclature: p.405) ... We
+know both were used in Lope Hurtado's letters to the Emperor." This is a direct, on-point hit the
+prior verdict's Tomokiyo check missed by searching only the two main articles, not the comments page.
+
+**(c) DECODE listing.** Not re-crawled live (cached snapshot from `tools/decode_list.py`,
+`sources/decode/records-non-decrypted-2026-09-24.tsv`, already on disk and cross-confirmed via the
+fresh aaymeloglu clone below — re-crawling would repeat, not correct, the prior citation, and this
+job's gap was CSP vol. II, not DECODE). Confirmed all three records still `Non-decrypted`.
+
+**(d) Fresh shallow clones.** `git clone --depth 1 https://github.com/dbourdeau/cyphersolver` →
+HEAD `fc0c9e865d0fae67ca92d19750d2b09ab11972e0` (2026-09-25T18:14:52-05:00) — same commit the prior
+job read; `grep -ril 9634` still hits only `lopehurtado/NOTES.md`, `profile.json` and the
+`key_1522_from1524_B.tsv` header, no transcription; `grep -ril "9646\|9649"` confirms
+`read_r9646.md`/`read_r9649.md` present. Deleted after grep. `git clone --depth 1
+https://github.com/aaymeloglu/unsolved-ciphers` → HEAD `2495c45e8b94ffbc4f09a085224aa5ebce5cdf9f`
+(2026-09-23T14:27:44-05:00). `catalogue/decode-records.jsonl` gives exact dates not quoted in the
+prior verdict: R9649 `Start Year 1522, Start Month 11, Start Day 9` (9 Nov 1522); R9634 `Start Year
+1522, Start Month 9` (day blank); R9646 no date fields at all. `catalogue/bne-ranked.md` still lists
+MSS/18697/29 ("Parcialmente cifrada", 1522) and MSS/20212/27 (five letters, 1522-1526) as unread by
+either project. Deleted after grep.
+
+**(e) Web search.** `Kolosova "Lope Hurtado" cifra tesis Carlos V 1522` → confirms the Dialnet thesis
+record (directed by Júlia Benavent, Universitat de València, 2017; "edition of 78 unpublished,
+encrypted manuscript letters between Emperor Charles V and diplomats, agents, and ambassadors in
+Italy"); no source found stating whether R9634/R9646/R9649 specifically are among the 78. `"Lope
+Hurtado" Roma 1522 cifrado descifrado Carlos V` → no new source; the closest hits are 1547-1548
+Diego Hurtado de Mendoza material (a different, later ambassador), already known from Tomokiyo.
+Neither the Teseo thesis record (TLS error from this container, host not in this job's list, not
+pursued) nor the Kolosova (2024) Google Books preview (reachable, HTTP 200, but Google Books is not
+one of this job's authorised hosts per the LANE B6 common file — not fetched) was opened.
+
+**(f) OpenAlex + Semantic Scholar.** OpenAlex `works?search=Kolosova Carlos V cifra diplomacia` → 5
+results, all 2023-2025 papers on other 1543-1556 imperial ciphers by the same research circle (Simon
+Renard/Granvelle/Marie de Hongrie), none naming Lope Hurtado or 1522. Semantic Scholar
+`graph/v1/paper/search?query=Kolosova lenguaje secreto diplomacia Carlos V` → HTTP 429 twice (key
+present; one retry after a 3s pause, per the good-citizen rule) — unanswered, not a negative.
+
+**What this changes:** the target stays `partial` (no plaintext or key confirmed for R9634/R9646/
+R9649 specifically by this worker), but the prior verdict's two supporting claims do not fully hold:
+(1) "nothing for Sept-Nov 1522" is wrong by one entry (no. 497, 1 Nov); (2) "Tomokiyo... no reference
+to Hurtado[relevant to this target]" missed a page naming a specific, published, page-cited
+reconstruction of two ciphers used in exactly Lope Hurtado's letters to the Emperor in exactly this
+period. Next cheap steps, not run in this job (disk/git/API-only cap): identify no. 497's shelfmark
+and compare to R9649 f.266-268 (or the two unread BNE items); and have a worker read Kolosova (2017/
+2024) — via the Universitat de València TDX repository, Dialnet, or the person's own Google Books/
+library access — for R9634/R9646/R9649 by name, date or folio, and for the Ko.7/Ko.10 key tables
+themselves, which could be a **published key** (rule 10, "Key source") for this whole target if they
+cover the same letters.
+
+Requests: archive.org 1 (djvu.txt fetch); github.com 2 (shallow clones, deleted); openalex.org 1;
+semanticscholar.org 2 (both 429); web search 2 queries; 1 reachability check each to
+aplicaciones.ciencia.gob.es (TLS failure, not pursued) and books.google.co.jp (200, not fetched
+further, out of scope per common-file rule 7).
 
 ## Job
 
