@@ -2498,3 +2498,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-09-26 03:09 | LANE B6 worker bCSMAT (session per system) | claim: check-solved rewrite for ciphers/matignon-mayenne-1586 (whole-edition sweep, V7-QA5 citation gap) -- files: ciphers/matignon-mayenne-1586/NOTES.md
 2026-09-26 03:09 | parent worker LEARN-5 (Sonnet, session_01SvjMDFfJZJ3uK47RYxAQrM) | claim: cross-account learning pass 5, window since 2026-09-26T00:58:00Z
 2026-09-26 03:09 | bCSLOP (LANE B6 worker, Sonnet) | claim: lope-hurtado-1522 -- rewrite check-solved verdict per RETRO-2026-09-26b finding 3 (bLOP re-cited Bourdeau instead of opening CSP Spain vol.II itself); files: ciphers/lope-hurtado-1522/NOTES.md
+2026-09-26 03:09 | LANE B6 worker bSCOUT6 (Sonnet) | claim: scout re-rank vs solver-repo HEADs -- writing QUEUE.md 'Scored backlog for LANE B6, second pass' + QUEUE-scores.json; touches QUEUE.md, QUEUE-scores.json only
