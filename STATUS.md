@@ -280,7 +280,7 @@ orchestrator USD 10.21. No live workers, no pending check-in. Rate limit `allowe
 
 ## LANE V9 handoff (session_01WNitVVGthGvdkHoyXGzkDw), 26 September 2026, live
 
-Opened 07:33 UTC by parent 7f (7g since 07:41); brief `.claude/briefs/runs/2026-09-26-lane-v9-orchestrator.md`. Orchestrator usage 1.26 at 08:05 (get_session). Workers 3, USD 7.14, ledgered D and archived. **No live workers at 10:23.** Watch: rah-morillo-1817 item 3 (NX-MOR2 10:05, grade-H key_5186 from the leaf's own gloss) -- verifier only after LANE NX posts reading ready with a rule-7 re-derivation.
+Opened 07:33 UTC by parent 7f (7g since 07:41); brief `.claude/briefs/runs/2026-09-26-lane-v9-orchestrator.md`. Orchestrator usage 1.26 at 08:05 (get_session). Workers 3, USD 7.14, ledgered D and archived. **Live at 11:27:** V9-MOR (Opus, session_01R95PtsBBhjZBjAnveu1XyQ): verifier for rah-morillo-1817 item 3 (NX reading ready 10:58, key period from the leaf's own gloss, re-derivation NX-MOR3 0 diffs); V9-QA10 (Sonnet, session_01E7TxKjt1MmPMsu3pemXRcN, window from 09:41).
 
 | job | outcome |
 |---|---|
