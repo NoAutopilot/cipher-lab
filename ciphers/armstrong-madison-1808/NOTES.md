@@ -218,3 +218,40 @@ See `tools/data/uscodes-1800/README.md`'s own "Requests this session" section fo
 cryptiana.web.fc2.com 41, github.com 1 shallow clone (deleted after copying), archive.org 2, openlibrary.org 1,
 catalog.hathitrust.org 2 (one 403 with a descriptive UA, one 200 with a Chrome UA per the Access playbook's own
 note for that host). No logins, no credentials touched, all >=1.5s apart.
+
+## ARM-REC pass, 26 Sept 2026 (LANE ARM worker ARM-REC) -- is a key/decode/summary of the letter extant?
+
+Full detail in `crib_sources.md`. Short version: **no decode and no later summary of the 20 Feb letter's
+content found anywhere reached this pass.** The strongest evidence on file is still Kreider's own statement
+(already quoted above, re-read this pass from `madison_armstrong.htm`): "we've found no evidence that it ever
+was decoded, nor that Madison acknowledged receiving it." New this pass, consistent with that: the Library of
+Congress's own hand-written finding-aid abstract of Armstrong's letters to Madison, 1804-1814
+(`loc.gov/item/mss31021a016/`, 2 of 17 images read directly) jumps straight from 4 May 1805 to 30 Aug 1808 --
+no Feb 1808 entry of any kind, suggesting nobody who compiled that finding aid had a readable text of it
+either. web.archive.org was unreachable this pass (repeated connection resets, confirmed via the agent
+proxy's own relay-failure log as a genuine host outage, not a proxy fault) -- Founders Online's own editorial
+notes and its 21 Feb-31 Aug 1808 Armstrong letter index (this brief's step 1) could not be checked and are
+still open for a successor. DECODE's cached listing (re-read, not re-fetched) and NARA's catalog API (blocked
+without the missing key, matching the existing playbook note) add nothing new.
+
+**Correction filed against this file's own "What is still open" wording above:** a genuine "John Armstrong to
+Thomas Jefferson, 15 February 1808" letter *does* exist (Thomas Jefferson Papers, Library of Congress,
+`loc.gov/item/mtjbib018243/`, not in the Madison Papers collection this file's earlier search covered) --
+contra this file's own "There is no 'Armstrong to Jefferson, 15 Feb 1808' letter found anywhere in this
+sweep." It is, however, entirely in clear (a short personal letter of recommendation for a messenger, plus a
+note on Lafayette's Louisiana land grant and an enclosure on M. Skipwith), addressed to a different recipient
+in a different register from the diplomatic 20 Feb letter to Madison, so it still does not supply "Krajcovic's
+crib" (that name remains unconnected to anything found) or a usable key transplant -- at most one more
+period/idiolect data point alongside the already-known 15 Feb and 22 Feb 1808 letters to Madison.
+
+Kreider's four named candidate "other correspondents" (Pinkney, Monroe, Erving, Livingston): the James Monroe
+Papers collection at LOC returned 0 hits for "Armstrong"; no direct Armstrong-Erving item found by name-pair
+search; Livingston search timed out twice (loc.gov intermittently unresponsive this pass) and was not
+completed; Pinkney not searched by name-pair (only the already-known wrong-direction Pinkney-to-Madison
+letters are on file). None of the four produced a coded sibling letter to test as a pool.
+
+Requests this pass: web.archive.org 1 success (CDX reachability ping) + 3 failed (connection reset, host
+outage, stopped per good-citizen rule) -- Founders-dependent steps of this brief's job not completed. loc.gov
+about 14 (2 timed out on complex queries after one retry each, per the good-citizen rule; rest succeeded).
+catalog.archives.gov 2 (confirms existing "needs x-api-key" finding). DECODE 0 new fetches (cache re-read).
+No logins, no credentials touched.
