@@ -66,3 +66,15 @@ of `control_curve.tsv`. Earlier code+mark and vowel-indicator runs (LANE R4 P, L
 | 26 Sept 2026 17:58 | wordcode | N=2839 K=236 restarts=8 corpus=alcuneletteredip00ferr.txt+delleletterefam02seghgoog.txt+lettereinedited00tassgoog.txt+lettereinedited01cibrgoog.txt+lettereineditedi01carouoft.txt+letterescrittea01vanzgoog.txt err=0.064,iters=80000 | 1 | 0.633 (0.391-0.759) | -7254.226 | FAIL language: score=-1.061, null_p99=-1.858, real_p05=-0.875, real_median=-0.821, mode=both, N=4164 | yes (gate 0.6) | bSALW LANE B12: 6.4pct measured error, 8x80k |
 | 26 Sept 2026 18:00 | wordcode | N=2839 K=236 restarts=8 corpus=alcuneletteredip00ferr.txt+delleletterefam02seghgoog.txt+lettereinedited00tassgoog.txt+lettereinedited01cibrgoog.txt+lettereineditedi01carouoft.txt+letterescrittea01vanzgoog.txt err=0.064,iters=80000,shuffle_target=1 | 1 | 0.757 (0.757-0.757) | -7586.972 | FAIL language: score=-1.098, null_p99=-1.869, real_p05=-0.916, real_median=-0.833, mode=both, N=4045 | yes (gate 0.6) | bSALW LANE B12: shuffle floor |
 | 26 Sept 2026 18:02 | wordcode | N=2839 K=236 restarts=8 corpus=alcuneletteredip00ferr.txt+delleletterefam02seghgoog.txt+lettereinedited00tassgoog.txt+lettereinedited01cibrgoog.txt+lettereineditedi01carouoft.txt+letterescrittea01vanzgoog.txt err=0.064,iters=80000 | 3 | 0.759 (0.759-0.759) | -7334.167 | FAIL language: score=-1.108, null_p99=-1.863, real_p05=-0.903, real_median=-0.824, mode=both, N=4042 | yes (gate 0.6) | bSALW LANE B12: target seed 3 |
+
+## wordcode + context, SALV-CTX control (26 Sept 2026, LANE SALV)
+
+Pre-registered gate (written 26 Sept 2026 before any context run, from the job brief
+.claude/briefs/runs/2026-09-26-lane-salv-j2a-context.md): context "adds a reproducible margin" if the code-class token
+accuracy rises by at least 0.10 on the 3-seed mean AND is higher on each of the 3 seeds, with blended accuracy not lower
+on the mean; the blind code-class mean must be under 0.70 (headroom check, rule 3 Salviati paragraph; if not, stop). A
+gate met at ctxshare=0.5 licenses job 2b on the four transcribed leaves; met only at 1.0, job 2b waits for all eight.
+Settings for all three runs: `tools/family_run.py specs/fr2933-salviati-1525.json --family wordcode --control-only
+--seeds 3 --restarts 8 --corpus tools/data/it16dip --param err=0.064 --param iters=80000` (bSALW's 6.4% row; codes=marked,
+codeletters=0 are the defaults), control seeds 1-3 in every run; (ii)/(iii) add `--param context=control --param
+ctxshare=1.0|0.5`. Control only; the target is not run.
