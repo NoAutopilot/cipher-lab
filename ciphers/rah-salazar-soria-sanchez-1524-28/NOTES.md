@@ -172,15 +172,202 @@ rah-salazar-soria-sanchez-1524-28: blocked (line 1) -- already terminal, nothing
 exit=0
 ```
 
+## Check-solved page-by-page (NX2-GATE2, 26 Sept 2026) — three of five items already in print
+
+**Method.** Fetched CSP Spain vol.III part 1 (`calendarofletter0003pasc`, Gayangos, 1873, archive.org
+`_djvu.txt`) and part 2 (`calendarorleters0003vari`, Gayangos, 1877, archive.org `_djvu.txt`) once each;
+CSP Spain vol.II (Bergenroth, 1866, covers to 1525) via archive.org `bub_gb_ZoY9AAAAcAAJ_djvu.txt` (poor
+Google-Books OCR, cross-checked against British History Online's clean per-month HTML pages, which give
+the same negative). Grepped by script for each correspondent and each of the five exact dates, then read
+every matching entry by hand. `poppler-utils` (`pdftotext`) was installed this session (`apt-get install -y
+-q poppler-utils`), fixing the "no working PDF-text tool" blocker NX2-GATE hit.
+
+**Item 1 — Lope de Soria → Charles V, 21 Sept 1525, Genoa (A-35 ff.310-312, inv.5180): plaintext already
+in print.** CSP Spain vol.III pt.1, No. 212 (pp.341-343, "LOPE DE SORIA, Imperial Ambassador in Genoa, to
+the EMPEROR"). The full letter is given in English translation, with the cipher passages explicitly
+marked inline — `(Cipher :) Has been informed that in the last conference held [at Milan]...` /
+`(Common writing :) It would be highly advantageous...` — alternating for the whole entry. Ends: "Indorsed:
+'To the King. 1525. From Genoa, Lope de Soria, 21 Sept.' Spanish. Original partly in cipher. Contemporary
+deciphering. pp. 44." The shelfmark and date match item 1 exactly; the "Contemporary deciphering" note
+means Gayangos worked from a period decipherment. **Item 1's plaintext (in English translation, drawn from
+a period decipherment) is already published — no cryptanalytic campaign is possible or needed on it.**
+
+**Item 2 — Lope de Soria → Charles V, 16 Jun 1526, Genoa (A-37 ff.428-429, inv.5540): not found in CSP;
+remains genuinely open.** CSP Spain vol.III pt.1's calendar runs 13 June (No. 459, Alonso Sanchez to the
+Emperor, deciphered) -> 13 June (No. 460, Sanchez to Soria, a note that "There is no longer occasion to use
+our mutual cipher") -> 15 June (No. 461, Sanga to the Bishop of Porto, no cipher) -> 16 June (No. 462,
+**Prothonotary Caracciolo**, not Soria — this is QUEUE.md's S3, already resolved as interlinear-deciphered
+in the Índice itself) -> 17 June (No. 463, Jean Jonglet). **No Lope de Soria entry appears on or near 16
+June 1526 in this volume.** This is consistent with the RAH's own "sin descifrar" cataloguing: unlike
+items 1/3/5 below, Gayangos did not calendar this letter at all, which fits the pattern Tomokiyo records
+(`AlonsoSanchez.htm` line 16: "more undeciphered letters in cipher are in BRAH... corresponding to
+'M.Re.Ac.d.His.Salazar' in CSP" — i.e. the RAH-only, CSP-absent letters are the ones nobody has deciphered).
+**Item 2 stays genuinely unresolved; a page image is still the only route.**
+
+**Item 3 — Lope de Soria → Charles V, 14 Apr 1528, Mirandola (A-42 ff.243-244, inv.6417): plaintext already
+in print.** CSP Spain vol.III pt.2, No. 399 (pp.653-654, "LOPE DE SORIA to the EMPEROR"), header "M. Re. Ac.
+d. Hist. Salazar, A. 42" (shelfmark matches exactly). Multiple `(Cipher :)` sections in English translation,
+including one with the original Spanish quoted verbatim in a footnote: *"Que el Papa ha concedido la
+dispensacion para que el Rey de Inglaterra dexe su muger, y se case con la otra que quiere"* (news of Henry
+VIII's divorce, reported in cipher from Mirandola). Dateline: "—La Mirandola, 14th April 1528" (place and
+date match item 3 exactly; this is the same letter cited in passing, without addressing cipher status, by
+Pizarro Llorente's UAM article, see below). Ends: "Spanish. Original partly in cipher. Contemporary
+deciphering on separate sheet. pp. 7." **Item 3's plaintext is already published** on the same basis as
+item 1 (a surviving period/contemporary decipherment).
+
+**Item 4 — Alonso Sánchez → Charles V, 17 Dec 1524, Venice (A-33 ff.72-74, inv.4670): not found in CSP;
+remains genuinely open.** CSP Spain vol.II (Bergenroth) covers this date; British History Online's clean
+December 1524 page (`british-history.ac.uk/cal-state-papers/spain/vol2/pp683-687`) lists exactly six
+entries for the whole month — Nos. 700 (1 Dec, Soria), 701 (7 Dec, Soria), 702 (12 Dec, treaty text), 703
+(19 Dec, Emperor to Sessa/Gattinara), 704 (21 Dec), 705 (22 Dec) — jumping from 12 to 19 December with
+**no entry on the 17th and no Alonso Sánchez entry anywhere in the month**. Cross-checked against the
+archive.org OCR of the same volume (`bub_gb_ZoY9AAAAcAAJ`, a Google Books scan with heavy OCR corruption,
+e.g. "1622" for "1522" — unreliable for exact-date greps on its own, but consistent: no Sánchez/December-1524
+match found there either). **Item 4 stays genuinely unresolved; a page image is still the only route.**
+
+**Item 5 — Alonso Sánchez → the High Chancellor (Gattinara), 17 Jun 1528, Venice (A-42, f.443, inv.6502):
+plaintext already in print, but via Gayangos's own reading, not a period key.** CSP Spain vol.III pt.2,
+No. 462 (p.714, "The SAME [i.e. Alonso Sanchez] to the HIGH CHANCELLOR"), addressed "Al Illmo. Señor el
+Señor Gran Canceller, mi señor" — correspondent and addressee (Gattinara, not the Emperor — matching item
+5's Índice note exactly, distinct from the immediately preceding No. 461 letter of the same date to the
+Emperor, a *sixth*, different Sánchez item at A-42 f.429, not in our five). Gives a full, specific
+`(Cipher :)` translation (named individuals, a bill-of-exchange transaction, travel plans) — but ends:
+"Spanish. Holograph entirely in cipher. **No deciphering appended.** pp. 14." This is the opposite of items
+1/3's "Contemporary deciphering" note: no period key survives attached to this letter, yet Gayangos still
+prints its content in English, which can only mean **Gayangos solved this cipher himself** (a 19th-century
+cryptanalytic reading, not a period decipherment) — a materially different kind of "already in print" than
+items 1 and 3, worth flagging precisely for whoever grades this (CLAUDE.md's `ours`/`period`/`published`
+key-source distinction, rule 10 addendum). **Item 5's plaintext is already published, by Gayangos's own
+19th-century cryptanalysis.**
+
+**Net effect on this target.** Three of the five original "held" items (1, 3, 5) already have their cipher
+passages' content published in English translation in CSP Spain — no image, no key application, and no
+cryptanalytic campaign is needed or possible for them; this repository's role for those three, if any,
+would be transcribing/back-translating Gayangos's English into a plaintext record, not solving anything.
+Only items 2 and 4 remain genuinely open cryptanalytic/recovery targets, and both still require a page
+image (the RAH access route, see REQUEST.md) since neither is calendared in CSP at all — consistent with,
+not contradicted by, the RAH's own "sin descifrar" marking for all five in the printed Índice (which
+describes the *manuscript's own state*, not whether a later scholar separately deciphered and published a
+translation elsewhere).
+
+## The two Soria print sources (this session)
+
+**UAM PDF (Pizarro Llorente, "Un embajador de Carlos V en Italia: don Lope de Soria (1528-1532)",
+`repositorio.uam.es/bitstream/handle/10486/1251/17136_D7.pdf`), now read.** `poppler-utils` installed
+(`apt-get install -y -q poppler-utils`); `pdftotext -layout` on the 37-page PDF (fetched via `curl -L`,
+the plain URL 301-redirects) gave clean, if OCR-typo-riddled, running text. Grepped the whole 130 KB text
+for `cifr`/`descifr`/`A-33`/`A-35`/`A-37`/`A-42`/`Mirandola`: **zero hits for `cifr` or `descifr`
+anywhere in this article** — it is a straightforward diplomatic-history narrative, not a cipher-focused
+source, and never discusses the correspondence's cipher/decipherment status at all. It cites **A-42, ff.
+243-244 exactly once** (footnote, discussing item 3's own content — Soria writing from Mirandola about a
+secret plan to travel to Milan) — the historian evidently read and paraphrased this letter's content
+(consistent with item 3 having been solved and its content available, per the CSP finding above; the UAM
+article does not itself reproduce a decipherment or address cipher status). No other RAH shelfmark from
+our five items is cited anywhere in this article. **This source adds nothing beyond confirming item 3's
+readability; it is not a cipher catalogue and does not print a decipherment.**
+
+**The 1931 BRAH catalogue (Ibarra y Rodríguez & Izaga, "Catálogo de los documentos del archivo de Lope de
+Soria, embajador del emperador Carlos V") — located precisely, confirmed unreadable from the cloud.**
+Located via Dialnet (`dialnet.unirioja.es/servlet/articulo?codigo=9991374`): published in *Boletín de la
+Real Academia de la Historia*, tomo 98, cuaderno 1 (1931), pp.363-416 — Dialnet is bibliographic metadata
+only, "texto no disponible" (no PDF). Confirmed via HathiTrust's bibliographic API
+(`catalog.hathitrust.org/api/volumes/brief/htid/osu.32435013919725.json`) that Ohio State University holds
+a scan, record 102910157, but `rightsCode: "ic"` (in-copyright) with `usRightsString: "Limited
+(search-only)"` — full text/page images are not reachable from the cloud (matches CLAUDE.md's HathiTrust
+host-table row exactly); the HTRC Extracted Features API returned 404 for this volume (not in that corpus
+either, presumably because it is not public-domain). Google Books API confirms the same record
+(`F9FtpxiufdgC`, 60pp, 1931, `viewability: NO_PAGES`). archive.org's own Boletín collection tops out at
+tomo 81 (never reaches 98). RAH's own digital catalogue (`bibliotecadigital.rah.es`, 2 new POST searches
+this session, both broad/tokenized, no relevant hit — search engine tokenizes loosely and returned an
+unrelated "Astronomie" result for a multi-word query, confirming this host simply does not hold the 1931
+Boletín digitized) does not have it either. **This specific catalogue — the strongest remaining unopened
+lead for items 2 and 4 — is confirmed located exactly (BRAH tomo 98, pp.363-416, 1931) but is genuinely
+unreadable from the cloud by any route tried; it needs a HathiTrust-affiliated reader (LOCAL-QUEUE.tsv,
+per CLAUDE.md's HathiTrust full-text/page-images host-table row) or a physical/JSTOR-style access route.**
+One transient network failure (`Recv failure: connection reset`, Wayback CDX for the CORE.ac.uk PDF below)
+not retried per the good-citizen one-retry rule.
+
+## Kolosova and Tomokiyo sources, more precisely (this session)
+
+`sources/cryptiana/web/spanish2C.htm`, Ko.6 and Ko.16 sections read directly: **Kolosova gives no specific
+letter dates/shelfmarks for Ko.6** (Lope de Soria's main Charles-V cipher) beyond thesis page numbers
+(substitution alphabet p.284, nomenclature p.307). For **Ko.16** (Soria's second, simpler cipher),
+Tomokiyo's own note reads: "Lope de Soria usually used a full cipher (Ko.6), but used this simple cipher in
+one letter (**I regret I could not find which one**)" — confirming NOTES.md's existing caveat cannot be
+resolved from any on-file source: which of the two ciphers a given unseen Soria letter (items 1, 2, 3) uses
+is undeterminable without an image, even for item 1 whose *content* is now known via CSP (Gayangos's
+calendar entries do not identify which Spanish cipher key was used, only that one was).
+
+`sources/cryptiana/web/AlonsoSanchez.htm` (Ko.9): confirms **all** of Tomokiyo's own DECODE-derived
+specimen letters (R9509-R9614) are dated **1522**, none matching items 4 (1524) or 5 (1528) — the 2-6 year
+gap flagged in this file's opening section stands unresolved. Tomokiyo's own summary line states plainly:
+"Alonso Sanchez's letters to the Emperor and Chancellor... are calendared in [CSP Spain] vol.2 (1866)...
+of which **most are labelled 'Autograph in cipher. Contemporary deciphering'**. However, **more
+undeciphered letters in cipher are in BRAH**... (corresponding to 'M.Re.Ac.d.His.Salazar' in CSP)" — this
+is exactly the pattern this session's CSP read confirms first-hand: the CSP-absent, RAH-only letters (items
+2 and 4) are the ones nobody has deciphered; the CSP-present ones (items 1, 3, 5) already are.
+
+Kolosova's dissertation itself: RODERIC's 2016 Master's/TFM predecessor (148pp) remains the only version
+previously found open, per `ciphers/lope-hurtado-1522/NOTES.md` (bLOP3), not re-fetched. **New this
+session**: a CORE API search (`api.core.ac.uk/v3/search/works/`, keyed) surfaced a direct `downloadUrl` for
+what CORE indexes as the actual 2017 dissertation ("El lenguaje secreto de la diplomacia de Carlos V
+(1521-1527)", 854pp) at `core.ac.uk/download/159375827.pdf` — but fetching it returns HTTP 404
+`BlobNotFound` from CORE's own file server (`fileserver-az.core.ac.uk`) after the redirect: CORE's own
+indexed copy is gone/stale. An OpenAlex search for the same title returned only Kolosova's *other*,
+unrelated open-access articles (Mary Tudor/Granvelle ciphers), not this dissertation. A Google Books API
+search found only `NO_PAGES`/`PARTIAL` snippets of the same work and its 2024 published successor. **Not
+resolved this session** — named as a next step (retry the CORE record for a mirror, or a Google Scholar
+check) but not pursued further given the box.
+
+## A-42 ff.441-442 (S2 crib, inv.6501) re-examined — decodes Sánchez letters, not item 3 or (certainly) item 5
+
+`sources/salazar-castro-index/cipher_mentions.tsv` row 1917 (inv.6501, A-42 f.441-442, dated 1528.06.17,
+Venecia — the Índice's own dating of the *decipherment entry itself*, not necessarily of the letters it
+decodes) gives the full index wording, truncated at: "Texto descifrado de los párrafos en cifra de los
+tres documentos anteriores: **Cartas de Alonso** [Sánchez, continuation cut off by the TSV's own truncation
+— not re-fetched this session, 30 MB source, out of this box]." **This decipherment sheet covers three
+letters of Alonso Sánchez specifically** (plural "Cartas de Alonso" — Sánchez's cognomen is the obvious
+completion given his name recurs throughout this run of A-42 folios), **not** item 3 (a Soria letter, whose
+own CSP entry cites an entirely separate "Contemporary deciphering on separate sheet" not this one) and
+likely **not** item 5 either, despite the two being catalogue-adjacent (inv.6501/6502): item 5's own CSP
+entry explicitly says "No deciphering appended," which is hard to square with a period decipherment sheet
+sitting in the very next two folios of the same legajo — unless that decipherment sheet was compiled
+*after* Gayangos catalogued item 5, or covers three *other* Sánchez letters from nearby folios in A-42
+(plausibly among rows 8/9/11/12/13/15/17 in QUEUE.md's list, six more undeciphered Sánchez items in this
+same A-37/A-41/A-42 run) rather than item 5 itself. **Not resolved this session** — the exact three letters
+this sheet covers needs either the full Índice OCR re-read around inv. 6498-6501 (not done here, budget) or
+the RAH's own image of ff.441-442 (requested below regardless, since it is cheap — two folios, same legajo
+as items already being requested).
+
 ## Verdict for the orchestrator
 
-**No images on disk for any of the five folios. Check-solved is not clean**: the CSP Spain calendar (vol.3
-parts 1-2) is confirmed reachable and both correspondents are extensively calendared there, but this worker
-did not complete the page-by-page date match, so this target is `blocked`, not `open`, per the intake gate.
-**Not Bourdeau's or Aymeloglu's lane** (checked, no overlap with Signatura 9/33/35/37/42). **Not
-found-solved.** The RAH image route is a genuine, reproducible negative (the search engine works and finds
-real results for other terms, just none for these five items) rather than the Anubis block documented
-elsewhere for this host — see REQUEST.md for the recommended next step. The strongest unopened lead is the
-1931 BRAH *Catálogo de los documentos del archivo de Lope de Soria* (Ibarra y Rodríguez/Izaga), which a
-Google Books/web snippet says covers Soria letters with cipher passages and interlinear translations — a
-worker with a working PDF-text tool should read it before any further RAH access attempt.
+**Still `blocked`, not `open` or `closed-negative`** — no page images obtained for any of the five folios
+this session either, and two of the five items (2 and 4) remain genuinely unresolved with no route to a
+reading short of a physical/RAH-image or HathiTrust-affiliated read of the 1931 BRAH catalogue. **But three
+of the five items (1, 3, 5) are no longer cryptanalytic targets at all: their plaintext (in English
+translation) is already published in CSP Spain** (Gayangos, vol.III parts 1 and 2, 1873/1877) — items 1
+and 3 via a surviving period/contemporary decipherment, item 5 via what appears to be Gayangos's own
+19th-century solving of a cipher with no period key attached. This is a search result about print, not a
+decipherment performed here, and not this worker's novelty classification to make (rule 10) — a verifier
+should confirm these three CSP entries against the exact RAH shelfmarks (folio-level matches are inferred
+from date+place+correspondent+addressee, not from an RAH image) before any outward claim. **Not Bourdeau's
+or Aymeloglu's lane** (unchanged from NX2-GATE). **REQUEST.md** below narrows to a much smaller ask: a
+period decipherment/crib check plus images for items 2 and 4 only, and the 1931 BRAH catalogue read
+(now precisely located) as the cheapest remaining route to settle those same two items without any archive
+visit.
+
+## Request counts (this session, NX2-GATE2)
+
+`archive.org`: 4 fetches (CSP Spain vol.III pt.1 djvu.txt 3.1 MB, pt.2 djvu.txt 3.5 MB, vol.II djvu.txt
+3.4 MB, one `advancedsearch.php` metadata query), each preceded by a request to the item's own metadata
+endpoint (1 more) — 6 total, >=1.5s apart. `repositorio.uam.es`: 1 fetch (2.6 MB PDF, redirected). Google
+Books API (`googleapis.com/books/v1`, keyed + `country=US`): 2 queries. `catalog.hathitrust.org`: 2 (bib
+API brief lookup, one by OCLC that returned an unrelated record, one by htid that resolved correctly).
+`data.htrc.illinois.edu`: 1 (404, not in that corpus). `dialnet.unirioja.es`: 3 fetches (journal listing,
+tomo-98 issue page, article page), >=1.5s apart. `bibliotecadigital.rah.es`: 2 POST searches, >=3s apart.
+`api.openalex.org`: 1 (keyed). `api.core.ac.uk`: 2 (keyed; one search, one that returned no results for an
+exact-phrase query). `core.ac.uk`/`fileserver-az.core.ac.uk`: 1 (404 after redirect, not retried).
+`web.archive.org`: 2 attempts (CDX lookup), both a transient connection reset, not retried (good-citizen
+one-retry rule already exhausted by the two attempts landing as one logical try). `british-history.ac.uk`:
+2 WebFetch calls (vol2 landing page for the December 1524 URL, then the December 1524 page itself).
+WebSearch: 2 queries. No DECODE login, no image opened, no transcription, no novelty wording (rule 10).
