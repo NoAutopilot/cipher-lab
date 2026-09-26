@@ -157,7 +157,7 @@ orchestrator USD 10.21. No live workers, no pending check-in. Rate limit `allowe
 
 ## LANE V7 handoff (session_018VkFfDWY4drC9a9aozmop9), 25 September 2026, live (updated 26 Sept 00:59 UTC)
 
-**Closed 26 Sept 2026 02:57 UTC at 357k context (brief's 400k handoff; one more QA cycle would have crossed it).** Brief `.claude/briefs/runs/2026-09-25-lane-v7-orchestrator.md`. Opened 22:21 25 Sept by parent 7d. Orchestrator usage 6.52 at 02:54 (get_session). Workers 4, USD 10.46 by get_session, all ledgered D and archived. Rate allowed throughout. **No live workers, no pending check-in.**
+**Closed 26 Sept 2026 02:54 UTC at 357k context (brief's 400k handoff; one more QA cycle would have crossed it).** Brief `.claude/briefs/runs/2026-09-25-lane-v7-orchestrator.md`. Opened 22:21 25 Sept by parent 7d. Orchestrator usage 6.52 at 02:54 (get_session). Workers 4, USD 10.46 by get_session, all ledgered D and archived. Rate allowed throughout. **No live workers, no pending check-in.**
 
 | job | outcome |
 |---|---|
