@@ -1,21 +1,95 @@
-# armstrong-madison-1808 -- hypothesis families (append-only below the ladder)
+# armstrong-madison-1808 -- hypothesis families (append-only below the summary)
 
 LANE ARM, opened 26 Sept 2026 06:49 UTC (owner's decision 06:40). One section per family; CONTROL and TARGET
-numbers side by side (CLAUDE.md rule 3). The top block is rewritten only by a cycle consolidator.
+numbers side by side (CLAUDE.md rule 3). The top block is rewritten only by a cycle consolidator; everything
+below "## ARM-CODES corpus" is append-only and is the record the summary is drawn from.
 
-## Ladder (LANE ARM orchestrator, 26 Sept 2026)
+## Summary, cycle 1 (consolidator ARM-CONS1, Fable, 26 Sept 2026 09:44 UTC; replaces the orchestrator's "Ladder" block of 06:49)
 
-- A. Crib placement -- AS BRIEFED, NO CRIB EXISTS: QUEUE row 27's "Krajcovic's crib from the 15 Feb letter to
-  Jefferson" is a scout mix-up (TOMO-REPLY, NOTES.md). Replaced by A1 (ARM-REC: crib hunt in the later
-  correspondence) and A2 (direct-transfer sweep of every published sibling table against a structure-preserving
-  shuffled table, after ARM-CODES).
-- B. Sibling-code vocabulary: corpus ARM-CODES (tools/data/uscodes-1800/), design ARM-DESIGN (Fable; one-part vs
-  two-part, tested on two siblings as control).
-- C. Nomenclator solver with the vocabulary prior (family_run.py `nomenclator`), after B.
-- D. Model-in-the-loop, only if C's control clears and the target reads partially.
-- E. Recovery (ARM-REC).
-- S. Shorthand passages (35 short + 2 lines) against period systems -- not in the brief's ladder; queued after B.
-- Judge: en18 corpus (ARM-EN18) before any en verdict on this target is trusted.
+**Status: open.** Cycle 1 ran 13 jobs (TOMO-REPLY intake, ARM-CODES, ARM-EN18, ARM-REC, ARM-A2, ARM-REC2, ARM-DESIGN,
+ARM-IMG, ARM-TR, ARM-C1, ARM-POOL, ARM-S1; ARM-TR2 still running at 09:44). **No family beat its matched control by
+any margin, so no NEAR.md row (rule 5);** two families were negatives with both controls on file (A2) or non-tests
+whose control fell below its gate (C); nothing read the target. Every number below is copied from the sections
+beneath this block; nothing here is new.
+
+| Family | Jobs | CONTROL | TARGET | Status | Reason |
+|---|---|---|---|---|---|
+| A1 crib hunt (the ladder's A, re-scoped after QUEUE row 27's "Krajcovic crib from the 15 Feb letter to Jefferson" proved a scout mix-up: no Krajcovic connects to Armstrong; the 15 Feb 1808 Armstrong-to-Jefferson letter exists at loc.gov `mtjbib018243` = Founders 99-01-02-7420 but is wholly in clear, a personal recommendation, not a crib) | ARM-REC, ARM-REC2 | n/a (a search, not a test) | no crib, no decode, no later summary of the letter's content found (Kreider: "no evidence that it ever was decoded"; the LC abstract volume `mss31021a016` skips from 4 May 1805 to 30 Aug 1808) | **park** (as a crib source) | Nothing left to place; the Founders fetch list it left (13 document ids) belongs to E below. |
+| A2 direct table transfer | ARM-A2 | A: 200 within-block plaintext permutations per table, target percentile 23.5-70.0; B: 200 shuffled orders of the target under the real table, 40.0-96.0; positive control THE972 round-trip on the 15 Feb letter 241/276 (87.3%) | WE028 covers 328/369 tokens but judge FAIL (-1.082 vs real_p05 -0.800); THE972 tables cover 14-108/369, all FAIL; WE028's 96th percentile is coverage-driven, not language-driven | **park** (negative with both controls) | Every published sibling table is exhausted; only an unpublished one (WE027, Weber 1979 p.154/188) could reopen it, and no copy is reachable (IA print-disabled, no HathiTrust volume). |
+| B code design (one-part vs two-part; what the units digits are) | ARM-CODES, ARM-DESIGN, ARM-TR | four sibling tables and four real THE=972 letters (N=28-243, pooled 474) plus 60 simulated 369-token letters per design; ms check ARM-TR: two blind passes, 89.8/87.8/89.0% agreement, first 332 of 369 groups | units top1 0.388 / entropy 2.57 bits (contiguous designs 0.14-0.17 / 3.23-3.27, target p100); decade/units dependence z=2.76 (independent homophones p98-100); digit-order rho refutes insertion and lazy-homophone models (p0-2); Q1 one-/two-part undecidable (0.06 shift vs 0.07-0.09 spread) | **continue as the premise** (verdict stands; precondition 90% checked) | Two-level code: ~99-entry particle list at 1-99, family book above 100 with fixed-meaning unit slots (0 >> 1 > 4,6,7 >> 2,3,5,9). ARM-TR confirmed the digit shape on the manuscript (ms 76/56/14/12/33/10/27/39/39/6 vs Founders 81/63/16/10/35/11/30/41/39/6 over the same 332 groups) with ONE H-grade units disagreement (1843 vs Bourdeau's 1841); the last 37 groups (frame 0033) and the page-1 L6-13 span (54 Founders groups with no clean ms counterpart) are ARM-TR2's, running now. |
+| C nomenclator solver (`tools/families/nomenclator.py`) | ARM-C1 | 1 (matched design, held-out Jefferson IX, cold particle block, 3 seeds): blended 0.201 / 0.176 / 0.027, mean **0.135** vs gate 0.6, book class 0.006 / 0.011 / 0.005; 2 (design-mismatched, 15 Feb THE=972 blind): 12/173 = 0.069; 3 (shuffled target, floor): -1467.8, -3.633/token | **not run** (control below gate; the tool refused it) | **park at N=369; pivot to more ciphertext** | Diagnostics: from the TRUE key the objective drifts to 0.856 particles / 0.274 book; with every anchor true the singletons come back at 0.113; the blind sampler's best (-1345) beats the truth-anchored state (-1454). The information is not in 369 tokens with 119 singleton book values (see "C2 rejected" below); more restarts or a stronger annealer cannot supply it. |
+| D model-in-the-loop | none | none | none | **not licensed** | Rule 3's gain gate: D runs only after C's control clears and the target reads partially; neither happened. |
+| E recovery (key, decode, sibling letter) | ARM-REC, ARM-REC2, ARM-IMG, ARM-POOL | n/a (searches; ARM-POOL's signature screen is a screen at 12-14 groups, not a control) | no key or decode anywhere reached; manuscript found and fetched (NARA M34 roll 14 frames 0030-0033, keyless IIIF v3); roll 14 sampled 1-in-6 (111/664 frames): 2 other coded letters, both THE=972 by signature (coverage 58%/64%, digit-2/3/5/9 share 50%/43% vs the target's ~13%), no pool candidate; Founders editors' notes and 13 located document ids still unread (web.archive.org reset for both workers, founders.archives.gov answers scripts with an empty 202) | **continue** (cheap, and the only route that lowers C's singleton share) | Madison to Jefferson, 15 May 1808: "No such Cypher is in the office, and must be one concerted with another correspondent" -- so a sibling letter, if one exists, is filed with that correspondent (Kreider's candidates: Pinkney, Monroe, Erving, Livingston, the New York circle), not necessarily on roll 14. Roll 14's 1-in-6 stride misses a 3-4-frame letter about a third of the time. ARM-POOL also saw a docket at frame 0645 listing several 1807-1808 dates for a batch of "confidentially sent" Armstrong letters, not followed up. |
+| S shorthand passages | ARM-TR (crops), ARM-S1 | Pitman 1837/1890 (different period and script family) as the control system: shape-category score 2.5; Taylor 1786 (Tomokiyo's symbol-by-symbol negative) as a known answer: 7.5 | ten-category shape scores Taylor 7.5, Weston 7.0, Gurney 6.0, Mavor 6.0, Macaulay 5.0, Byrom 4.0 vs control 2.5 | **continue, one step** (family-level result only) | The control can and does score lower (rule 3 met), so the marks belong to the looped-cursive 18th-century family, not a geometric or flat-substitution one. But the known negative tops the table, so shape categories cannot pick a system; the next step is the symbol-by-symbol frequency/positional match Tomokiyo ran on Taylor, run on the other five with Taylor as the known-answer check. |
+| Judge (en18) | ARM-EN18, ARM-C1 | leave-one-file-out false-negative 14.2%/15.1% at N=1000/1500, per-fold spread 0.270/0.260 (en: 58.6%/64.8%, spread 0.68-0.71); shuffled-target salad from family C PASSes | (no target decode exists) | **not a gate for family C at this N; a FAIL is of limited reliability** | The spread is above the 0.05 fold gate (Gallatin I and Jefferson IX are outlier folds), and the floor PASS means a PASS on any family-C decode licenses nothing; a judge line is reported beside a shuffled-null floor or not at all. |
+
+**What the lane knows about the code (evidence in the sections named).** (1) It is not THE=972, Armstrong's office code with
+Madison, nor any published sibling: Bourdeau's paired check (72% on 15 Feb vs 25%/noise on 20 Feb), Madison's own letter of
+15 May 1808, and ARM-A2's four-table sweep with both controls. (2) Its digits are Bourdeau's transcription of Founders, now
+90% checked against the manuscript (ARM-TR): one confirmed units-digit difference (1843 for 1841), the same 0/1-heavy,
+2/3/5/9-poor shape on both sides. (3) On those digits the design is two-level (ARM-DESIGN): a ~99-entry particle list at
+1-99 (132 tokens, 48 distinct, the top five values 17/18/38/1/14 carrying 14% of the letter, the rate of the/of/to/and/in)
+and, above 100, a family book of up to 180 decades whose units digits are fixed-meaning member slots, about 900-1800
+forms, 168 seen, with a 900-1099 trough that sparse occupancy explains; no usable alphabetical order; the siblings are
+block-local alphabetical at best. (4) The graphic marks are not "a symbol here and there": ARM-S1 counted about 105 marks
+(pass A, 15 crops) and 116-211 (pass B, 14 crops; its count column sums to 116, its prose says about 211 -- a discrepancy
+for the reconciliation to settle) on the 29 cropped lines of pages 1-3, against 312 numeric groups on the same pages; they
+sit in unbroken runs of several to 19 glued to line starts and ends, five lines are pure shorthand, and superscript ticks
+sit above numerals on two lines. Their shapes number 35-47 (unreconciled across the two passes) with a sharply Zipfian
+profile; both passes independently called the population syllable- or word-shorthand-like, and the shape family is
+looped cursive (Weston/Gurney/Byrom/Mavor/Macaulay class), not geometric. (5) The AFIO reading is refuted by Bourdeau's
+shuffled-ciphertext control (500 random keys fit better) and is not re-run here.
+
+**What it does not know.** Whether the marks are Armstrong's own shorthand for out-of-vocabulary words (ARM-DESIGN's
+premise), a published system, or part of the code's own spelling device; which correspondent the cipher was "concerted
+with", and whether any second letter in it survives (none on roll 14's sampled frames; the other correspondents' papers
+unsearched beyond loc.gov's Monroe collection, 0 hits for Armstrong); whether Founders' own editorial note on 99-01-02-2728
+says anything a sweep has not (unread twice for host outage); the last 37 groups and the page-1 L6-13 span of the
+manuscript (ARM-TR2); whether one-part or two-part (undecidable at this N, and irrelevant since the siblings are
+block-local anyway); and what WE027 looks like.
+
+**Cycle 2 (this consolidator's decision; briefs in `.claude/briefs/runs/2026-09-26-lane-arm-c2-*.md`), ranked by
+P(first step moves it) x value / cost (CLAUDE.md Pipeline 3), all Sonnet, all with a control that can differ:**
+1. **ARM-S2** (`-c2-s2-shorthand-symbols.md`, cap USD 12, 75 min): reconcile ARM-S1's two shape inventories into one
+   list with exemplar crops and a mark-frequency profile, then a symbol-by-symbol match of the top shapes (by mark
+   count) against each of Byrom, Gurney, Mavor, Weston and Macaulay, with Taylor as the known-answer negative (the method
+   must reproduce Tomokiyo's rejection or it has no resolving power) and Pitman as the control system. P about 0.25 that
+   it identifies a system or firmly excludes all six; value high either way (a readable system would give plaintext for
+   a fifth or more of the letter plus cribs at every run boundary; an exclusion answers Tomokiyo's open question and
+   settles that the marks are private).
+2. **ARM-REC3** (`-c2-rec3-founders-correspondents.md`, cap USD 5, 50 min): the 13 located Founders ids and the editors'
+   note on 2728 via Wayback if it answers, else one `tools/browser_fetch.js` attempt on founders.archives.gov (stop at
+   any challenge); then, independent of either host, the loc.gov route that worked for ARM-REC: every Armstrong item
+   1807-1809 in the Jefferson and Madison Papers collections at LOC looked at for numeral code, and the Livingston pair
+   search that timed out. P about 0.15 (Kreider's team has read this correspondence for the edition and reports no
+   decode; a note naming the correspondent or a coded letter outside RG 59 is the win); value high (a second letter in
+   the code is the one thing that unlocks family C).
+3. **ARM-POOL2** (`-c2-pool2-docket.md`, cap USD 5, 45 min): the frame-0645 docket's "confidentially sent" 1807-1808
+   dates read at native size, each date located on roll 14 (Jan 1808-Sept 1810, chronological) or roll 13 (1807, NAID
+   via ARM-IMG's browser step), and each located letter screened with `pool/signature_test.py` on one native line --
+   a docket-led targeted fetch (about 40 requests), not the exhaustive pass. P about 0.1, value high, cost low.
+
+**Rejected candidates, with reasons.** (a) exhaustive roll 14 (553 more frames, about 30 Sonnet classification calls on
+top of fetching, about USD 20 on ARM-POOL's rate): the editors have read every Armstrong letter in M34 for the Papers of
+James Madison and report none in this code, and Madison's own letter puts the sibling with another correspondent, so
+P is low for the lane's most expensive job -- the docket-led POOL2 above takes the one concrete lead the survey left;
+rolls 13/15 likewise only for a date the docket or REC3 names. (b) **C2, a stronger objective for family C: rejected
+on paper.** The binding constraint is the singleton share, not the objective: the target has 20 singleton particle
+values and 119 singleton book values (139 of 369 tokens). An oracle that reads every repeated value correctly scores
+(132-20)+(237-119) = 230/369 = 0.62, and adding singletons at ARM-C1's all-anchors-true rate (0.113) gives 0.67 -- so
+the 0.6 gate sits at the ceiling of any objective that has to infer singletons from context, and the matched control
+(135-168 singleton book values, 0.135 blind, about 0.5 with perfect anchoring) cannot clear it by construction. A
+word 4-gram term does not change this: en18 is 4.8M letters (under a million words), so 4-grams of a fresh despatch are
+overwhelmingly unseen and the term is backoff noise; a larger era corpus does not make the truth a fixed point either
+(ARM-C1 needed the control letter itself in training 300x to do that, and the blind sampler still stalled 600 nats
+below). A model-in-the-loop proposal step is family D and stays not licensed. What lifts the control is fewer
+singletons, i.e. more ciphertext in the same code (E's route). (c) more restarts or seeds on C1: the diagnostics show
+the sampler's blind optimum already beats the truth under the objective; restarts converge to salad faster, not to the
+key. (d) any judge-gated family-C run: the floor PASSes.
+
+**Untouched by this cycle, deliberately:** `ciphertext.txt` (never edited; ARM-TR2's `ciphertext_ms.txt` is the
+manuscript witness beside it), NEAR.md (no row), status (open), QUEUE row 27's broken cheap-test sentence (the parent's,
+flagged by TOMO-REPLY).
 
 ## ARM-CODES corpus (26 Sept 2026, worker ARM-CODES)
 
