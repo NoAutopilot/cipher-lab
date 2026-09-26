@@ -1,0 +1,14 @@
+line	A	B	settled	crop_checked	note
+65:1	P. S. In ? 203 is	S. Cp 400 203 is	A (no 2-digit code in dispute; blob before 203 is a non-digit mark, matches neither reading well, immaterial to key)	f65_line01_s1.jpg	no code affected
+65:2	plain "Princeps"	plain "Principi"	A	f65_line02_s1/s2.jpg	word-level only, first-letter 'P' agrees either way
+65:3	42 14 25 21, / 24 uij Rissimam Dnaonem	42 14 25 21, 24 tam Draconem	A (codes agree; clear-text wording low-confidence both passes)	f65_line03_s1/s2.jpg	no code value in dispute
+65:4	14 41 13,	24 4 113,	A	f65_line04_s2.jpg	image reads "14 41 13," unambiguously; B misread leading 1 as 2 and mis-grouped
+65:5	13 51 12 e 51 46 20,	13 5 11 2 e 51 46 20,	A	f65_line05_s2.jpg	image reads "13 51 12 e 51 46 20," digit-for-digit; B mis-grouped
+65:6	17 m 25 49 e 19 46	17 25 49 10 46	A	f65_line06_s1.jpg	image shows all 7 tokens incl. clear m/e and code 19 (not 10); B dropped 2 clear tokens and misread 19->10
+65:7	21 y 51 42 e 23 e	21 9 51 42 23	A	f65_line07_s1.jpg	image confirms A token-for-token; B dropped clear y/e/e and merged 21+y into a misread digit
+65:9	42 44 23 46	42 4 4 23 46	A	f65_line09_s1.jpg	image shows one joined code "44" (matches established key value h, bSZR spot-check); B split it into two single digits, desyncing the rest of the run
+65:10	...17 50, 25 23 13 42	...17 30, 25 23 13 42	A	f65_line10_s1/s2.jpg	digit at the crop seam reads as a circle+comma ("50,"), consistent with code 50 used elsewhere on this leaf; "30" does not occur anywhere else in the leaf's code inventory
+65:14	42 14 43 ant,	42 14 4 43 ant,	A	f65_line14_s2.jpg	image reads "43 ant," with no extra digit; B inserted a spurious "4"
+65:13	plain "gerent et nobiscum"	plain "gerent"	A	(not re-crop-checked; B is a subset, no new code info)	word-level only
+65:16	plain "Nos sollicitaverant"	plain "Nos toleraverant"	A	(not re-crop-checked)	word-level only, first-letter 's' vs 't' -- code 13's mode letter is already 'o' from elsewhere (per bSZL66), this word's first code is 51 not 13 so unaffected
+65:17-20	line17 "...ad divinam Justi-", line18 "tiam, ... quae omnia scit et", line19 gloss "Ch.t audiret" over "13 44: ... si 17 12 43 46:", line20 no gloss, "[20 et, struck] quanta..."	B shifted line17/18/19/20 boundaries (dropped "divinam Justi-" from 17, merged it into 18, moved "audiret" gloss and its codes to a fabricated "line20")	A	f65_line17_s1/s2.jpg, f65_line18_s1/s2.jpg, f65_line19_s1/s2.jpg, f65_line20_s1.jpg	A's line boundaries and gloss placement (esp. "audiret" over 17 12 43 46 on line 19) confirmed directly against the crops; B's shift was a transcription error, not a real ambiguity. One word on line18 read "fuit" (B) not "scit" (A) per the image -- adopted into pairs_r.tsv, no code involved.

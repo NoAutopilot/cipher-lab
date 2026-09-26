@@ -441,3 +441,65 @@ Files: `tools/data/la18/{README.md,MANIFEST.tsv,holdout_check.py,zaluski_epistol
 `tools/judge_plaintext.py` (LANG_CORPORA "la"/"la18"), `tools/tests/test_judge_plaintext_lang_la18.py`,
 `ciphers/szembek-bk1560/{codes_only.py,codes_only.txt}`. Hosts: archive.org (advancedsearch 2, metadata 5,
 `_djvu.txt` download 5), all >=1.6s apart, one at a time.
+
+## Second gloss pass, leaves 65/67 (bSZG2, 26 Sept 2026)
+
+Why (LANE B8 brief 2026-09-26-lane-b8-szg2.md): leaves 65 and 67 were first glossed per-group (word runs left
+blank past the first code), so their own shuffle-consistency self-checks (bSZL65, bSZL67 sections above) used an
+exact-string-match statistic on too few glossed occurrences and tied their shuffled controls (0/18 = 0.0 vs 0.0;
+0.429 vs 0.429) -- non-tests, per CLAUDE.md rule 3's control-must-be-able-to-differ paragraph, not negatives.
+
+**Pass B (blind, per leaf).** Two Sonnet subagents, one per leaf, each given only that leaf's crop file paths
+(`leaf65/crops/*`, `leaf67/crops/*`), blind to `pairs.tsv`/`groups.tsv`/NOTES.md, transcribed the full cipher
+line and interlinear gloss phrase per physical line into `leaf65/pairs_b.tsv` (20 rows) and `leaf67/pairs_b.tsv`
+(21 rows), same 4-column schema as `pairs.tsv`.
+
+**Reconciliation against the crops.** `leaf65/disagreements_b.tsv` and `leaf67/disagreements_b.tsv` log every
+line where pass A (`pairs.tsv`, the original bSZL65/67 transcription) and pass B disagreed, and the crop image
+checked to settle it. Outcome: pass A was correct at essentially every disputed 2-digit code on both leaves
+(pass B itself flagged the numeral strings as its weakest reading); pass B's readings were adopted nowhere for
+codes. One clear-text (non-code) correction survived: 65:18 "scit" -> "fuit" (confirmed against
+`f65_line18_s2.jpg`), which does not touch any coded position. Pass B also surfaced one line-boundary error of
+its own on each leaf (65:17-20's tail, 67:13/14's "Pergenbeio" placement), both resolved to pass A's existing
+placement by checking the crop directly and by internal Latin grammar ("De Pergenbeio fiat, quo per..." is a
+coherent clause only if the name sits on line 67:14, matching AUDIT.md's cited reading). `leaf65/pairs_r.tsv`
+and `leaf67/pairs_r.tsv` are therefore identical to the leaves' own `pairs.tsv` except the one word fix.
+
+**Per-leaf control (the point of this job), letter-level via the aligner -- not the leaf's own earlier
+exact-string statistic:** `tools/interlinear_align.py align <leaf>/pairs_r.tsv <leaf>/align.tsv
+<leaf>/key_aligned.tsv --floor 100` run separately per leaf (not pooled), then the same same-code -> same-
+letter mode-agreement statistic as `build_key.py`'s pooled control, cross-referencing `<leaf>/groups.tsv` by
+(line, pos), 1000 shuffles, seed 20260926:
+
+| Leaf | codes glossed | recurring (>=2) | real agreement | shuffle mean | shuffle p95 | verdict |
+|---|---|---|---|---|---|---|
+| 65 | 19 | 16 | 119/135 = 0.881 | 0.253 | 0.281 | clears (>3x margin) |
+| 67 | 19 | 18 | 79/98 = 0.806 | 0.298 | 0.337 | clears (>2.3x margin) |
+
+Both leaves now individually clear their own shuffle-consistency control, replacing the earlier non-tests. Per
+leaf class breakdown: leaf 65 -- 2 occ: 2/2=1.000 (1 code); 3-5 occ: 13/16=0.812 (4 codes); 6+ occ: 104/117=0.889
+(11 codes). Leaf 67 -- 2 occ: 5/6=0.833 (3 codes); 3-5 occ: 17/23=0.739 (6 codes); 6+ occ: 57/69=0.826 (9 codes).
+No class is dominated by a single outlier code.
+
+**Merge.** Rebuilt the pooled `pairs.tsv` (`leaf65/pairs_r.tsv` + `leaf66/pairs.tsv` unchanged +
+`leaf67/pairs_r.tsv`), reran `interlinear_align.py align` and `build_key.py`: pooled consistency unchanged,
+332/378 = 0.878 vs shuffle mean 0.189 / p95 0.204 (identical to the previous run, since pass A's digits were
+confirmed correct everywhere they were disputed). Per this job's own per-leaf-control gate (CLAUDE.md rule 3's
+Szembek paragraph): since BOTH leaves now clear their own control, no code needs to be held back on that
+ground. The pre-existing B7 downgrade of codes 19 (mode of 1/2), 24 (1/1) and 48 (1/1) to grade M stands
+unchanged -- a separate, independent concern (thin single-occurrence attestation), not the leaf-tie issue this
+job targeted, and the occurrence counts for those three codes did not change.
+
+**Result: reading and grades are unchanged.** `python3 tools/decode_key.py ciphers/szembek-bk1560 --check`:
+`ciphertext.tsv: tokens 434: C 384, M 50`, "reading up to date", exit 0 -- byte-identical to the counts already
+in AUDIT.md and the file header. No token's value or grade changed. AUDIT.md and SECOND-OPINIONS-QUEUE.tsv (no
+szembek row queued yet) need no update under CLAUDE.md rule 10's last paragraph, since nothing about the
+reading changed -- only its evidentiary support for leaves 65/67 improved. NOTES.md line 1 (status) is left
+unchanged, per the brief.
+
+Files: `leaf65/{pairs_b.tsv,pairs_r.tsv,disagreements_b.tsv,align.tsv,key_aligned.tsv}`,
+`leaf67/{pairs_b.tsv,pairs_r.tsv,disagreements_b.tsv,align.tsv,key_aligned.tsv}`, `pairs.tsv`, `align.tsv`,
+`key_aligned.tsv`, `key.tsv` (note field only, for codes 19/24/48), `ciphertext.tsv`, `exceptions.tsv`,
+`consistency_by_code.tsv` (all three byte-identical to before). No hosts (all crops already on disk from
+bSZL65/67's own fetch). 2 Sonnet subagents (one per leaf, blind pass B only); reconciliation and the per-leaf
+control done by this worker directly from the crops, no subagent.

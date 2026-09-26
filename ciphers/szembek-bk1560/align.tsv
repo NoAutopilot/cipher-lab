@@ -213,7 +213,7 @@ cipher_line	idx	raw	kind	value	repair	plain_chunk	status
 65:18	2	providentiam,	clear				clear
 65:18	3	quae	clear				clear
 65:18	4	omnia	clear				clear
-65:18	5	scit	clear				clear
+65:18	5	fuit	clear				clear
 65:18	6	et	clear				clear
 65:19	0	videt.	clear				clear
 65:19	1	13	num	13		c	conflict:o
