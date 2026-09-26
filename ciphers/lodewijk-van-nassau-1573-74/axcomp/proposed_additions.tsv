@@ -1,0 +1,12 @@
+kind	code	value	source_letter	count	note
+addition	172	le Conte Jean	4614	1	"mon frere [172] lequel" over "mon frere le Conte Jean lequel"; one of the brief's unread codes
+addition	217	Sr Geertruydenbergh	4614	3	all 3 occurrences consistent
+addition	241	Zeelande	4614	1	"estatz de hollande et [241]"; AX-GLOSS read 241 Zellando over 4496 (names.tsv C)
+addition	289	Francfort	4614	1	"est party pour [289]"
+addition	177	m	4614	1	"jesty[177]e" (jestyme); a letter value above 120, see the 127/129 conflicts
+conflict	127	m (key_full NULL)	4614	2 of 3	longue[127]ent, un [127]ois; third occurrence in a span the cipher omits
+conflict	129	m (key_full NULL)	4614	1	quinze [129]ille
+conflict	123	NULL (key_full l)	4614	3 of 4	the period decipherment passes over 123 at 3 of its 4 places; AX-NAMES2's class (c) caveat
+conflict	107	i/j (key_full k)	4614	3 of 4	k block read as i/j by the period decipherer at 3 places; spelling or key, unsettled
+conflict	95	h (key_full g)	4614	3 of 4	unsettled: spelling difference or key
+conflict	57	x (key_full z)	4614	2	eulx/deulx spelled x in the decipherment where the cipher has z: spelling, not key

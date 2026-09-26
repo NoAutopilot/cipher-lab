@@ -1544,3 +1544,90 @@ Files: `images_wv2/crops_4612/**` (source pages, line crops, debug overlays, man
 passA_p2.tsv,passB_p1.tsv,passB_p2.tsv,agreement.py}`, this section. Hosts: `resources.huygens.knaw.nl` 1 request
 (04612.pdf), >=1.5s n/a (single request). No credentials used. 2 subagents at a time (pass A pair, then pass B
 pair), general-purpose, Sonnet, given only the rendered images (no prior reading). cost: see the lane ledger.
+
+## AX-COMP: companion decipherments 4614, 5801, 7205 (26 Sept 2026, LANE AX)
+
+Worker AX-COMP (Opus), brief `.claude/briefs/runs/2026-09-26-lane-ax-comp.md`, box 120 min from 02:27 UTC, stopped at
+80% (03:54). The text of all three letters is on the leaf as a period decipherment (4614 WVO pp.5-6, 7205 pp.8-10,
+5801 pp.1-5 interlinear and pp.7-9 clear copy), and 5801's may also be in Groen; nothing here is a novelty claim
+(rule 10; the verifier classifies).
+
+**Done: 4614** (Lodewijk to Willem, camp at Cartils, 4 April 1574). The decipherment on pp.5-6 was transcribed by
+eye (`decipherment_4614.txt`). Cipher pp.1-3 went through two blind Sonnet passes per page, one page per call,
+on crops made by `tools/iiif_lines.py` (`images_wv2/crops_comp/04614_p*`). `tools/reconcile_passes.py` agreement:
+p1 81.5%, p2 92.5%, p3 79.8% (gate 60%). Codes above 120 where the passes disagreed were settled on the image:
+p1 L01_d 102, p2 L03_a 221 and 241 (pass A had split them as 22 1 and 24 1), p2 L04_b 114. For p3 crop L01, pass A
+was taken whole because pass B's line numbering was offset (217 and 270 checked on the image). Other disagreements
+stay at grade M in `ciphertext_4614.tsv` (2620 signs). Both passes skipped a few lines cut at crop seams, and
+pass A skipped p3's first prose line.
+- Alignment: `axcomp/build_pairs.py` cuts the letter at clear-word runs of 9 or more letters found in the
+  decipherment (15 anchors, `axcomp/anchors_4614.tsv`). Then `tools/interlinear_align.py align ... --floor 121
+  --clear-consumes --prior key_full.tsv` runs; this job added all three options to the tool, with an offline test
+  in `tools/tests/test_interlinear_align.py`, and the default output is unchanged (checked on Thurloe P25).
+  **Caveat:** `--prior` seeds letters 1-120 from key_full, because the unseeded run drifted over spans this long
+  (1260 conflicts against 384 agreements). So the counts for codes 1-120 are not independent evidence for
+  key_full's table. The codes above 120 are never seeded, and their meanings come from the decipherment alone.
+  Their chunk boundaries are fuzzy, so each one was read by eye from its aligned contexts
+  (`axcomp/contexts_4614.txt`, `axcomp/adjudicate_4614.tsv`).
+- `sh axcomp/run.sh 4614` regenerates everything; `python3 axcomp/keys.py 4614 --check` exits 0.
+- **Table: key_full's 1574 table.** `axcomp/table_check.py` compares the two keys on independent evidence (no seeding).
+  The three longest runs of 1-120 codes (198, 178 and 161 codes) read as French under key_full ("...estecontreint
+  dftraictersnrbesstalllun...", "quantanousreuthersauonstraiteauecqueseux...", "cequeluiauonsadffacorde
+  toutefois..."), and as noise under key_5799. Coverage of all 2400 tokens: key_full 1.000, key_5799 0.448
+  (`axcomp/table_check_4614.txt`).
+- **key_4614.tsv**: 126 codes, 105 of them 1-120 (96 agree with key_full, 9 conflict) and 21 above 120.
+  Name codes read from the period decipherment, grade H, with counts:
+  - 172 = le Conte Jean (1; one of the brief's unread codes)
+  - 217 = Sr Geertruydenbergh (3)
+  - 221 = Hollande (2)
+  - 241 = Zeelande (1)
+  - 270 = Bommel (2)
+  - 272 = Nyeumeghen (1)
+  - 289 = Francfort (1)
+  - 337 = Reystres (1)
+
+  Nulls agreeing with key_full: 121 (9 of 10), 122 (5 of 7), 131, 142.
+- **Conflicts with key_full**, for the orchestrator (`axcomp/proposed_additions.tsv`); key.tsv and key_full.tsv
+  are untouched:
+  - 127, 129 and 177 each stand for "m": longue[127]ent, un [127]ois, quinze [129]ille, jesty[177]e. key_full has
+    127 and 129 as NULL.
+  - 123 is passed over as a null at 3 of 4 places, where key_full has l (AX-NAMES2's class (c) caveat).
+  - 107 (k block) is read as i/j at 3 of 4 places.
+  - 95 (g block) is read as h at 3 of 4 places.
+  - 57 (z) is spelled x in eulx/deulx; that is a spelling difference, not a key difference.
+- Unsettled at M: 126 f, 132 "aires", 138 "vantaige de voz a" (all in the one run "a lavantaige de voz affaires"),
+  150 NULL (1), and 815 (probably a misread 81.5).
+
+**Brief's unread codes.** Only 172 gains a value (le Conte Jean, 1 occurrence in 4614). 146, 150 (NULL once in 4614,
+M), 156, 157, 182 and 187 gain none.
+
+**5797 spots, read-only:**
+
+| spot | what it would read |
+|---|---|
+| p6_spot4 | 172 = le Conte Jean, so "[Graf Johann] zeuget diesen morgen Kölln der hofnung". It fits the German, but the value comes from a French letter of a different correspondent, so read it as a candidate, not a reading. |
+| p5_spot5 | 131.123.173: 131 and 123 read as nulls in 4614 (consistent with key_full for 131; for 123 against key_full's l); 173 still has no value. |
+| p7_spot6 | 182: no value. |
+| p8_spot7 | 156: no value. |
+
+Spots filled: 1 (p6_spot4).
+
+**Not done:**
+- **7205:** decipherment transcribed (`decipherment_7205.txt`); its cipher crops are cut (`images_wv2/crops_comp/07205_p1..p6`).
+  The p1 blind passes are pass A (733 signs, 729 flagged L by the pass itself; the hand is faint with heavy
+  bleed-through) and a partial pass B stopped at crop L08 at the box limit (`axcomp/passes/`). There is no
+  reconciliation and no key_7205. The decipherment glosses two name codes the decipherer left as numbers:
+  261 = Leyde and 269 = La Haye (p.8, grade H from the period decipherment, not yet aligned). My own look at
+  cipher p1 shows 172 and 182 in the run.
+- **5801:** not started beyond crops (`images_wv2/crops_comp/05801_p1..p5`). Its clear copy (pp.7-9) is in a hand
+  I could not transcribe reliably by eye inside a unit, and the interlinear gloss letters on pp.1-5 are too small
+  for the crop scale used. Groen's print would need dbnl, a host this brief did not name. So the 5799/4612 step
+  under 5801's key did not run.
+
+**Order change, logged per COMMON:** 7205 was taken second instead of 5801 because of the reasons above.
+
+Next (one line): reconcile 7205 p1 (finish pass B from L08) and run p2-p6 at the same per-page rate (about 10-15
+min per pass); `sh axcomp/run.sh 7205` then aligns it against `decipherment_7205.txt`. For 5801, fetch Groen IV's
+28 May 1573 letter (dbnl, 1 request) as the clear text, or brief a zoomed transcription of pp.7-9.
+Hosts: resources.huygens.knaw.nl 3 (the three PDFs, 2 s apart, all 200). Subagents: 8 blind passes, Sonnet,
+at most 2 at once; two B passes were lost to a container restart and re-run.
