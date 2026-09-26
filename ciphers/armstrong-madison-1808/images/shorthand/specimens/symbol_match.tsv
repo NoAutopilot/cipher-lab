@@ -23,3 +23,15 @@ Taylor1786	R9	partial	p/j (hook with descender)	consistent	2.3% close to real p 
 Taylor1786	R10	no	-	n-a	sharp multi-vertex zigzag not seen in the specimen's stroke set
 Taylor1786	R11	partial	w/u (shallow open upward curve)	consistent	1.8% close to real w/u
 Taylor1786	R12	partial	rare blend or v-type stroke	consistent	0.9% close to real v (~1.0%)
+Byrom1796	R1	partial	m or n (hump/arc)	inconsistent	33.9% share exceeds any single English letter's real frequency (max ~12.7% for e); shape plausible but frequency rules out a 1:1 letter match
+Byrom1796	R2	partial	j or x (loop+tail)	inconsistent	shape loosely resembles small loop-hook letters, but j/x are both <0.2% in English vs. 13.1% observed
+Byrom1796	R3	yes	l (Byrom shows 3 size-graded l-forms)	inconsistent	small/tall-hook split matches Byrom's own multiple l sizes, but even combined real l frequency (~4.0%) is well under 10.8% observed
+Byrom1796	R4	partial	k/q or d/l (hook family)	consistent	generic hook overlaps several letters; 5.4% plausible for d (~4.3%) or l (~4.0%)
+Byrom1796	R5	yes	s or c-soft (shares sign with z)	consistent	exact match to flat horizontal-dash sign for s/soft-c/z; 5.0% plausible for s (~6.3%)
+Byrom1796	R6	no	-	n-a	no plain isolated dot among consonant signs; Byrom's dots are vowel-marks, not a consonant
+Byrom1796	R7	yes	r	consistent	exact match to short diagonal slash sign for r; 3.6% plausible for r (~6.0%)
+Byrom1796	R8	partial	x (two-part hook+loop sign)	inconsistent	x shown as hook+small loop, echoing the "%"-compound shape, but x is rare (~0.15%) vs 1.8% observed
+Byrom1796	R9	partial	g or j (hook with tail)	consistent	loose match; 2.3% plausible for g (~2.0%)
+Byrom1796	R10	no	-	n-a	no zigzag/angular stroke in the plate; z shares s's flat-dash sign, not a distinct zigzag
+Byrom1796	R11	yes	n	inconsistent	exact curvature match (concave cup, opposite of m) but 1.8% share is well below real n frequency (~6.7%)
+Byrom1796	R12	partial	g or w (loop with descender)	consistent	loose match; 0.9% (2 marks) plausible for a low-frequency letter like g
