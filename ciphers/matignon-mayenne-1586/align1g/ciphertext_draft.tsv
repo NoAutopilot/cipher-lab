@@ -1,0 +1,54 @@
+line	position	sign	confidence	alt	why
+9R	1	w-	H		agree
+9R	2	h	H		agree
+9R	3	m	H		agree
+9R	4	2	M	A:-	gap
+9R	5	7	H		agree
+9R	6	B	H		agree
+9R	7	p	H		agree
+9R	8	ff	H		agree
+9R	9	s	H		agree
+9R	10	w-	M	B:w	differ
+9R	11	q	H		agree
+9R	12	o	M	A:-	gap
+9R	13	d	H		agree
+9R	14	o	M	B:-	gap
+9R	15	m	H		agree
+9R	16	T	H		agree
+9R	17	B	H		agree
+9R	18	d	M	B:ff	differ
+9R	19	7	H		agree
+9R	20	3	H		agree
+9R	21	d	H		agree
+9R	22	f	H		agree
+9R	23	54	M	B:4	differ
+9R	24	d	M	B:o	differ
+9R	25	U	H		agree
+9R	26	q	H		agree
+9R	27	1	H		agree
+9R	28	7	M	B:-	gap
+9R	29	6	M	B:b	differ
+11L	1	9	M	B:q	differ
+11L	2	14	H		agree
+11L	3	c	H		agree
+11L	4	p	H		agree
+11L	5	o	H		agree
+11L	6	d	M	A:-	gap
+11L	7	BOX2	H		agree
+11L	8	t	H		agree
+11L	9	f	H		agree
+11L	10	E	H		agree
+11L	11	h	H		agree
+11L	12	c	H		agree
+11L	13	p	H		agree
+11L	14	U	H		agree
+11L	15	oo	H		agree
+11L	16	o	M	B:-	gap
+11L	17	t	H		agree
+11L	18	d	H		agree
+G	1	1	M	B:-	gap
+G	2	he	M	B:?frac-1te	differ
+G	3	?triple-bar	H		agree
+G	4	U	M	A:-	gap
+G	5	L	M	A:-	gap
+G	6	?hook-x	M	B:oo	differ
