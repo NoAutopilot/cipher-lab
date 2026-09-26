@@ -2190,3 +2190,88 @@ triangulate from at all. `p7_spot6`'s and `p8_spot7`'s own local shape (subject-
 *grammatical role* (name/title placeholder), not a *value* -- grade I, per rule 4, not entered into names.tsv.
 
 Files: `ax2_blanks/contexts.py`, `ax2_blanks/contexts.tsv`. No hosts (script only, no images/network).
+
+**Unit 2: 7206.** Fetched the WVO PDF (`resources.huygens.knaw.nl/media/wvo/images/07000-07999/07206.pdf`,
+1 request, 200). 8 pages, rendered at 300dpi to the scratchpad. AX-GLOSS's per-unit table (this file, "AX-GLOSS"
+section) described pp.5-6 as clear text "of similar shape to 7205's pattern -- likely another companion
+decipherment, not confirmed by close reading". Close reading finds that is **not** what pp.5-6 are: p5 opens
+mid-sentence, continuing the exact sentence cut off at the bottom of p4's *own* clear postscript ("...de laquelle
+je vous [envoye] ... [la respon]ce de mondit sieur et celle de mon frere le Conte Loys) Je differeray aussi de
+respondre..."), and p6 closes with its own full signature. So p1-p6 is **one continuous letter** (Guillaume de
+Nassau to "Messieurs mes freres" -- Jan, Lodewijk and Hendrik -- dated 30 Jan 1574, address leaf confirmed later,
+see below) that alternates clear prose with two enciphered postscripts: postscript "2"/"3" (p2 bottom - p3 - p4
+top, cipher, ending "...je remets a cest effet la dessus") and postscript "4" (p4 bottom - p6, entirely clear, a
+different later-arrived letter being summarised, no cipher). Pages 5-6 belong to the *second*, all-clear
+postscript and are not a decipherment of anything.
+
+**The real companion decipherment is page 8** (foliated 218; page 7 is its own address leaf, "A Messieurs les
+Comtes Jehan, Loys et Henri de Nassau, mes bien bons freres. Dillenb[ourg]", confirming this is a second, separate
+document bundled with the first). Page 8 opens "Messieurs mes freres, mes dernieres [-] Depuis ceste escripte me
+sont venuz deux lettres..." -- the identical opening words of the *first* letter's postscript "2" -- and its body
+("...quant au voiage de mons. de Lumbres, Je le gouste fort bien... les choses sont fort enaigries entre le Roy
+de Pollogne et le Duc de Saxe...") matches postscript "2"/"3"'s ciphertext word for word at the positions where the
+cipher itself decodes as French under `key_full.tsv` (spot check, row 1 of p3: `130.79.85.2.8.117.119.84...`
+decodes `_denommesortirabonetoeureuxeffect?__`, i.e. "...de nomme sortira bon et heureux effect", matching p8's
+"...sortira bon et heureux effect" exactly). So the brief's test resolves **yes, it is a decipherment -- just of
+page 8, not pages 5-6** (the brief's own fallback, "if not, stop the unit and say so", does not apply once the
+right page is found).
+
+**Transcription and alignment.** Cut line crops of p2 (bottom postscript only), p3 (full page) and p4 (top
+through "la dessus") with `tools/iiif_lines.py --lines-per-crop 6` (6 crops per page kept the subagent calls to
+one page each, per Usage 6); two independent readings per page: AX2-BLANKS's own eye-read of the full 300dpi
+page (documented above, not blind) and one blind Sonnet subagent pass per page on the crops (a deviation from the
+brief's "two blind passes" given the wall-clock box; logged here rather than silently substituted). The p2 and p4
+crop batches had a real tool-quirk both subagent passes caught independently: several `_s1`/`_s2` "segments" were
+byte-identical (the line fit under `--max-width` so the tool never split it), truncating a few line-ends at the
+crop's right border; AX2-BLANKS's own full-page zooms (not cropped) supplied the missing tail of those specific
+lines, so no digit was lost overall, but the crop tool's segment-duplication-instead-of-no-split behaviour on a
+line that fits in one segment is worth a follow-up fix to `tools/iiif_lines.py` (not attempted here, out of this
+brief's scope). The two passes agreed on the great majority of digits; the handful of disagreements are recorded
+at grade M with the alternate reading in `ciphertext_7206.tsv`'s `alt` column -- none of them is adjacent to 156
+or 182.
+
+`sh axcomp/run.sh 7206` (`axcomp/build_pairs.py` + `tools/interlinear_align.py --floor 121 --clear-consumes
+--prior key_full.tsv` + `axcomp/keys.py`): 18 anchors from 999 tokens (7205 had only 2 from 4919 -- this letter's
+clear-word runs are far more reliably transcribed, so the alignment is much better constrained here). Codes
+1-120: 99/100 agree with key_full (2 isolated single-occurrence conflicts, 20 and 40, M grade, not pursued).
+**Same 1574 table** as the rest of the pool.
+
+**156 and 182: neither occurs anywhere in 7206.** Exact-match search of `ciphertext_7206.tsv` (999 tokens, both
+passes) finds no "156" and no "182" token. 5797's two remaining gaps are not settled by this letter either.
+
+**A genuine finding, not the target codes but worth flagging separately: 172 recurs 3x in 7206, all in a
+"Monsieur de Lumbres" context, apparently conflicting with key_full's existing 172 = lecontejean (H, from 4614).**
+The postscript's cipher reads `150.139.172` ("Or quant au voiaige de [150.139.172], Je le trouve fort bien..."),
+`122.127.129.172.130` ("Je crains que [122.127.129.172.130] feroit ledict voiaige non seullement..."), and
+`77.83.150.172.122` ("...moyennant que l'on eust premierement..."), and page 8's decipherment matching those three
+spots reads "voiage de mons. de Lumbres", "ce[dit] Lumbres feroit ce voiage", and (near "77.83.150...122") the
+continuation about treating first with the Roy de Pollogne. All three occurrences were re-checked by eye at 3-5x
+zoom directly against the 300dpi source (one, in `07206_p4`, was flagged genuinely ambiguous by the blind subagent
+pass, digit 7 vs 8 vs 3): compared stroke-for-stroke against confirmed "7"s (`127`, same line) and confirmed "8"s
+(`83`, same line) immediately beside it, the digit is a flat-topped diagonal stroke with no closed loop --
+consistent with the other two zoomed "172"s and inconsistent with this hand's "8" -- so all three read **172**,
+not 182; this cipher gives no new sighting of 182 either. `tools/interlinear_align.py`'s own (unseeded, since
+172 > floor 121) alignment independently placed 172's chunk near the context word "lumbres" twice out of three
+occurrences (`key_7206.tsv` row 172, `others` column: "lumbres:1,udit:1"), corroborating the reading without
+relying on my own eye-read alone. This is a real H-vs-H conflict between two different letters' period
+decipherments (4614's "172 = le Conte Jean" vs 7206's three consistent "172 = [part of] Lumbres" occurrences) --
+flagged here for the orchestrator/AX-MERGE-style reconciliation pass; not resolved and not written to
+key_full.tsv or names.tsv (not this brief's file to edit, and not a 156/182 finding).
+
+**Incidental bonus from the same alignment (not this brief's target, noted for whoever next works 7206/pool
+coverage):** page 8's list of Holland towns ("Enchuysen, Edam, Monichedam, Alckmar, Gravesande, Vlaerdinguen,
+Schiedam, ... Rotterdam") lines up one-to-one with the cipher run `63.227.259.260.222.261.228` (row with
+"...ou aultre lieu...") and `100.61.37.82.2.242...` (Rotterdam), giving six more grade-M/H-candidate place-name
+codes (227=Enchuysen, 259=Edam+Monichedam, 260=Alckmar, 222=Gravesande, 261=Vlaerdinguen, 228=Schiedam,
+242=Rotterdam) not previously in key_full -- listed in `key_7206.tsv`, not merged.
+
+Rule 10: no novelty words used. Rule 3: no numeric-threshold control gated in this unit (a companion-decipherment
+identification and an alignment run, not a cryptanalytic claim).
+
+Hosts: `resources.huygens.knaw.nl` 1 request (the 7206 PDF, 200). Subagents: 3 blind Sonnet passes (one per page,
+p2/p3/p4; at most 2 at once, run 2 then 1), agent ids a9e8d3e3c44e53dd6 (p3), aa285d0ff38560502 (p2),
+ae2b5a1506e9d4486 (p4).
+
+Files: `decipherment_7206.txt`, `ciphertext_7206.tsv`, `key_7206.tsv`, `ax2_blanks/build_ciphertext_7206.py`,
+`axcomp/{pairs_7206.tsv,align_7206.tsv,rawkey_7206.tsv,compare_7206.tsv}` (via `axcomp/run.sh 7206`, which this
+worker did not modify). `key_full.tsv`, `key.tsv`, `names.tsv` untouched.

@@ -1,0 +1,148 @@
+code	value	grade	occurrences	agree	empty	others
+1	n	H	13	12	1	
+2	n	H	23	18	2	e:1,r:1,y:1
+3	n	H	12	12	0	
+4	n	H	10	9	1	
+5	n	H	8	5	1	y:2
+6	o	H	15	15	0	
+7	o	H	15	15	0	
+8	o	H	15	13	0	t:1,u:1
+9	o	H	15	14	0	h:1
+10	o	H	11	10	1	
+11	p	H	6	4	1	y:1
+12	p	H	8	7	0	b:1
+13	p	H	6	6	0	
+14	p	H	3	3	0	
+15	p	H	2	2	0	
+16	q	M	1	1	0	
+17	q	H	4	4	0	
+18	q	H	3	3	0	
+19	q	M	1	1	0	
+20	e	M	2	1	0	q:1
+21	r	H	12	12	0	
+22	r	H	15	15	0	
+23	r	H	17	17	0	
+24	r	H	14	14	0	
+25	r	H	5	5	0	
+26	s	H	6	6	0	
+27	s	H	28	27	1	
+28	s	H	19	18	0	t:1
+29	s	H	13	13	0	
+30	s	H	7	5	0	i:1,z:1
+31	t	H	6	6	0	
+32	t	H	15	14	0	y:1
+33	t	H	14	13	1	
+34	t	H	14	14	0	
+35	t	H	6	6	0	
+36	u	H	16	15	0	n:1
+37	u	H	19	18	0	n:1
+38	u	H	23	23	0	
+39	u	H	11	11	0	
+40	v	H	5	5	0	
+46	x	M	1	1	0	
+47	x	M	1	1	0	
+49	x	M	1	1	0	
+51	y	M	2	1	1	
+52	y	H	3	2	0	s:1
+53	y	M	1	1	0	
+54	y	H	7	6	1	
+55	y	H	2	2	0	
+56	z	M	1	1	0	
+57	z	M	1	1	0	
+60	z	M	1	1	0	
+61	a	H	6	6	0	
+62	a	H	17	15	0	e:1,y:1
+63	a	H	13	13	0	
+64	a	H	16	16	0	
+65	a	H	5	5	0	
+66	b	H	2	2	0	
+68	b	M	1	1	0	
+69	b	M	1	1	0	
+70	b	M	1	1	0	
+71	c	H	3	3	0	
+72	c	H	6	6	0	
+73	c	H	5	4	0	d:1
+74	c	H	2	2	0	
+75	c	H	6	4	0	r:1,t:1
+76	d	H	6	6	0	
+77	d	H	11	9	0	g:2
+78	d	H	7	6	0	e:1
+79	d	H	7	6	0	b:1
+80	d	H	7	7	0	
+81	e	H	42	41	0	c:1
+82	e	H	38	37	0	a:1
+83	e	H	33	33	0	
+84	e	H	25	24	1	
+85	e	H	18	18	0	
+86	f	M	1	1	0	
+88	f	M	1	1	0	
+89	f	M	1	1	0	
+90	f	M	1	1	0	
+91	g	H	2	2	0	
+92	g	H	3	3	0	
+93	g	H	3	3	0	
+94	g	H	5	5	0	
+98	h	M	1	1	0	
+100	h	H	4	4	0	
+101	i	H	7	6	1	
+102	i	H	5	3	1	j:1
+103	i	H	12	9	2	y:1
+104	i	H	11	9	1	j:1
+105	i	H	7	7	0	
+111	l	H	6	5	0	t:1
+112	l	H	14	14	0	
+113	l	H	10	10	0	
+114	l	H	5	5	0	
+115	l	H	5	4	0	c:1
+116	m	H	3	3	0	
+117	m	H	6	5	1	
+118	m	H	2	2	0	
+119	m	H	5	5	0	
+120	m	H	5	3	1	n:1
+121	NULL	H	4	3	3	i:1
+122	c	M	3	1	0	lumbres:1,n:1
+123	ne	M	2	1	1	
+125	m	M	1	1	0	
+126	NULL	H	3	2	2	ducdesaxe:1
+127	e	M	10	2	5	i:1,mesontvenuz:1,namarcque:1
+128	NULL	H	5	3	3	enamarcque:2
+129	NULL	H	4	3	3	d:1
+130	NULL	H	6	4	4	deuxlettres:2
+131	NULL	H	8	5	5	leterr:3
+132	a	M	1	1	0	
+133	s	M	1	1	0	
+136	e	M	4	1	1	saxe:1,strich:1
+137	NULL	H	5	4	4	b:1
+138	cesteescripte	M	2	1	0	d:1
+139	anterie	M	4	1	1	de:1,vousdepuis:1
+140	franoy	M	1	1	0	
+141	andsknechtz	M	2	1	0	uc:1
+142	NULL	H	3	2	2	mesdernieres:1
+143	le	M	2	1	1	
+146	d	M	1	1	0	
+147	f	M	3	1	1	y:1
+148	m	M	1	1	0	
+149	landsknechtz	M	2	1	1	
+150	d	M	4	1	1	monsieur:1,franois:1
+172	it	M	3	1	0	lumbres:1,udit:1
+196	de	M	3	1	0	ducdesaxe:1,le:1
+202	g	M	1	1	0	
+208	d	M	2	1	0	e:1
+217	oomel	M	1	1	0	
+222	gravesande	M	1	1	0	
+227	enchuysen	M	1	1	0	
+228	schiedam	M	1	1	0	
+242	rotterdam	M	1	1	0	
+254	NULL	M	1	1	1	
+259	edammonichedam	M	1	1	0	
+260	alckmar	M	1	1	0	
+261	vlaerdinguen	M	1	1	0	
+276	a	M	1	1	0	
+294	NULL	M	1	1	1	
+311	papes	M	1	1	0	
+312	ville	M	1	1	0	
+335	avallerie	M	1	1	0	
+336	f	M	1	1	0	
+339	l	M	2	1	0	lle:1
+340	le	H	2	2	0	
+348	roments	M	1	1	0	
