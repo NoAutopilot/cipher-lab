@@ -2328,6 +2328,123 @@ test_homophonic_anneal_init.py`, this section. `key_full.tsv`, `key.tsv` and `ke
 no key change to report) untouched. No network requests (all images and corpora already on disk). No
 subagents (all crop-reading and anneal work done directly by this worker). cost: see the lane ledger.
 
+## AX2-5801: 5801 key from its period decipherment (26 Sept 2026, LANE AX2)
+
+Worker AX2-5801 (Sonnet), per `.claude/briefs/runs/2026-09-26-lane-ax2-5801.md`. Box 100 min from
+05:20:28 UTC.
+
+**Clear text.** dbnl full-text search located Groen IV Lettre CDXXIII (pp.129-133, `groe009arch04_01_0041.php`),
+Willem to his brothers Jean and Louis, "Escrit à Delff, ce 28 mai 1573" -- date and place match WVO 5801's
+own catalogue metadata (Delft, 28 May 1573) exactly. Confirmed independently three ways: (1) 5801 p1's
+opening clear line reads "Messieurs mes freres. Jay receu vos trois datees, l'une de Dillenberg le xvi, e
+l'autre de [Bedbur] le xx du present..." -- word for word the same as CDXXIII's incipit "Messieurs mes
+frères. J'ay receu vos lettres datées, l'une de Dillenberg le 16, et l'autre de Bedbur le 20 du présent";
+(2) the letter's subject matter (relief of Harlem, the Cologne negotiations, Louis's proposed crossing near
+Tiel, the Duc de Medina-Celi at Spa) matches CDXXIII's body throughout; (3) crop `05801_p1_L09.jpg` carries
+a later archival pencil annotation "1573. May 28" in a different, non-secretary hand -- independent of both
+Groen and the WVO catalogue metadata. `decipherment_5801.txt` (cleaned) and `groen/groen_IV_CDXXIII.txt`
+(raw fetch) both written. Not yet AUDIT.md-classified (rule 10; a verifier's job). Two of 5801's own p5
+transcription passes independently read the closing date as "ce viij mars 1573" / "ce xxviij mars 1573"
+rather than "28 mai 1573" -- given three independent sources agree on 28 May and both p5 passes flagged
+that whole region as low-confidence guesswork at a cursive month name, "mars" is most likely a blind-pass
+misread of "may" in an unfamiliar secretary hand, not evidence of a different letter; flagged, not resolved,
+for whoever next reads p5 off the image directly.
+Hosts: dbnl.org 5 requests (TOC + 4 candidate-letter pages), >=2s apart, descriptive UA.
+
+**Cipher transcription pp.1-5.** `images_wv2/crops_comp/05801_p{1..5}_L*.jpg` (47 crops, already on disk,
+AX-COMP's own fetch) were denser than AX-COMP anticipated: most crops are composite blocks of 2-6 stacked
+physical script lines with a tiny interlinear decipherment gloss squeezed between them, not one line each
+-- both blind passes on every page said so unprompted. Two blind Sonnet subagent passes per page (crop
+paths only, never a page image), reconciled with `tools/reconcile_passes.py`:
+
+| page | agreement | gate (60%) |
+|---|---|---|
+| p1 | 53.8% (376/699) | below |
+| p2 | 86.2% (558/647) | above |
+| p3 | 76.2% (523/686) | above |
+| p4 | 76.7% (447/583) | above |
+| p5 | 53.8% (387/719) | below |
+
+p1 and p5 fall below gate because of real segmentation disagreement between the two blind passes on the
+most composite crops (both passes independently said so), not a coin-flip on individual digits -- on the
+numeral *sequences* the two passes mostly agree (see p1's near-identical digit strings in both passes'
+reports); the token-count mismatch is where a pass merged or split a stacked sub-line differently. No
+manual per-token settling from the image was done in this box (time); the reconciled draft (majority sign
+where the passes agree, A's sign at grade M elsewhere) went into `ciphertext_5801.tsv` unmodified, so every
+code from this page is at best M, never H. This is a materially less reliable transcription than AX-COMP's
+4614 pass (79.8-92.5% agreement on cleaner single-line crops) and should be treated as a rough first draft,
+not a committed reading, until a second pass on finer-grained crops (or from the image directly) is run.
+`ciphertext_5801.tsv`: 3332 tokens.
+
+**Key** (`axcomp/build_pairs.py 5801` -> 14 anchors, 15 pairs; `tools/interlinear_align.py align ... --floor
+121 --clear-consumes`, **no --prior**, per the brief -- seeding from key_full would beg the question the
+brief exists to answer). `axcomp/keys.py 5801` -> `key_5801.tsv`: 179 codes (117 <=120, 62 >120), all grade M
+(no code reached 2 agreeing occurrences at 60% -- unlike AX-COMP's --prior-seeded runs, this alignment
+had nothing to anchor codes 1-120 over spans this long, so it drifted the same way AX-COMP's own unseeded
+4614 attempt did: "1260 conflicts against 384 agreements"; here 111 conflict / 6 agree against key_full and
+58 conflict / 5 agree / 54 new against key_5799, for codes 1-120). Grade C, not H: 5801's own leaf carries
+the decipherment (period, but not proven to be contemporary with the cipher hand without image inspection
+this box did not have time for); treat as C pending that check.
+
+**Table (which table does 5801 use) -- `axcomp/table_check.py 5801`, the same test AX-COMP ran for 4614 and
+7205:** coverage of 5801's own three longest 1-120 runs (49+42+39=130 codes) and of all 2345 in-table
+tokens: **key_full 1.000, key_5799 0.488**. Every code 5801 uses in the 1-120 range is a code key_full's
+24-block design has a row for; key_5799's 78-code table only covers about half of them. This matches
+AX-COMP2's finding for 7205 (1.000 vs 0.400) exactly: **5801 uses key_full's 1574-circle table, not
+5799's**, on structure alone -- independent of whether this box's own noisy per-code values (above) are
+individually right. The decoded runs themselves are not clean French ("acssepuzeinepcseuxpnnereutantommes
+ilxexoyentleurc") but do contain recognisable fragments ("sil", "leur", "tant"); not claimed as a reading.
+
+**Codes >120 (names/nulls), read-only, not adjudicated this box:** four codes 5801 uses already have H/C
+grade values from *other* letters in key_full -- 172=le Conte Jean (9 occ. in 5801), 192=Roi d'Espagne (5
+occ.), 223=Harlem (4 occ.), 312=de la ville de (3 occ.) -- all plausible in a letter about the relief of
+Harlem addressed partly to "le Conte Louys". `ax2_5801/compare.tsv` marks all four "conflict" because this
+box's automatic, unadjudicated alignment assigned them noisy single-letter or wrong-multi-word chunks
+instead (172->"a", 192->"aulcunspoint", 223->"a", 312->"a") -- the same class of artifact AX-COMP fixed by
+hand for 4614 (`axcomp/adjudicate_N.tsv`, reading the aligned context by eye) but this box did not have time
+to redo. These four are a lead for a follow-up pass with `axcomp/adjudicate_5801.tsv`, not a settled
+conflict. `key_5801.tsv` full comparison: `ax2_5801/compare.tsv` (180 rows).
+
+**Apply to 5799 and 4612** (`decode_4612_k5801.json` against `ciphertext_4612_v3.tsv` -- AX2-4612 pushed v3
+mid-box, used in preference to v2 per the brief; `decode_5799_k5801.json` against `ciphertext_5799.tsv`;
+both `tools/decode_key.py ... --check` exit clean). Gate, pre-registered in the brief before running: target's
+French-word share (fr16 word list, `ax2_5801/word_share_check.py`, the `ax4612tr/word_share_check.py`
+method) must exceed the max of 20 value-shuffles of key_5801 AND reach 0.85 of 5801's own share under
+key_5801 at the same N.
+
+| | 5801 (own, control) | 5799 target | 4612 target (v3) |
+|---|---|---|---|
+| French-word share | 72.6% (1702/2345) | 71.7% (104/145) | 79.2% (660/833) |
+| 20-shuffle mean / max | -- | 71.8% / **86.9%** | 82.9% / **88.4%** |
+| gate (target > shuffle max) | -- | **FAIL** | **FAIL** |
+
+Both targets fail the shuffle-control side of the gate -- but so does the *5801-own control itself* (72.6%,
+below 5799's own shuffle mean of 71.8% and well below both shuffle maxima). A control that a key's own
+source text cannot beat is not a working control (rule 3): key_5801's heavy concentration of very frequent
+near-NULL codes (121, 124-126, 129, 132, 140 etc., each seen dozens of times, per `key_5801.tsv`'s
+occurrence counts) means almost any value assignment -- real or shuffled -- lands enough short common French
+words (de, le, et, la...) by chance to score 70-90% on this statistic at this N; the word-share test does
+not discriminate for this particular key and this result licenses no conclusion either way on its own.
+`tools/judge_plaintext.py` (fr16, per-fold caveat per CLAUDE.md's V6-PTCORP/es17c lessons) agrees with the
+FAIL reading directly: 5799 FAIL (score -1.462 vs real_p05 -0.982, `ax2_5801/judge-fr16.json`), 4612 FAIL
+(score -1.318 vs real_p05 -0.909, `specs/lodewijk-4612.json`) -- both readings are visibly non-language
+("...areeeseeecs...", "...eeutereeeerntee...", dominated by the same handful of high-frequency near-NULL
+codes all mapping to a vowel). **Verdict: 5799 and 4612 do not read under key_5801, on both the pre-
+registered gate and the judge** -- but this box's key_5801 is itself unreliable (all M grade, no code
+adjudicated), so this is a negative about *this pass's* key, not a clean negative about 5801's table; the
+structural finding above (5801 uses key_full's table) stands on its own regardless.
+Rule 3: real number and control/shuffle number given side by side throughout, including the one case where
+the control itself failed to discriminate.
+No H or C reading claimed this box (rule 4): key_5801 is C-sourced (period leaf, unconfirmed contemporary)
+but every individual code value in it is M.
+
+Files: `ciphertext_5801.tsv`, `decipherment_5801.txt`, `groen/groen_IV_CDXXIII.txt`, `key_5801.tsv`,
+`decode_5799_k5801.json`, `decode_4612_k5801.json`, `reading_5799_k5801*.txt/.tsv`,
+`reading_4612_k5801*.txt/.tsv`, `ax2_5801/{passA,passB}_5801_p{1..5}.tsv`, `ax2_5801/recon_p{1..5}/**`,
+`ax2_5801/compare.tsv`, `ax2_5801/table_check_5801.txt`, `ax2_5801/word_share_check.py`,
+`ax2_5801/judge-fr16.json`, `axcomp/{pairs,align,rawkey,anchors,compare}_5801.tsv`.
+No subagents beyond the 10 blind transcription passes (2 per page x 5 pages), at most 2 at once.
+
 ## AX2-172: code 172, 4614 vs 7206 (26 Sept 2026, LANE AX2)
 
 Worker AX2-172 (Opus), brief `.claude/briefs/runs/2026-09-26-lane-ax2-172.md`, started 05:59:54 UTC (clock read).
