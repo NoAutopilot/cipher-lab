@@ -213,3 +213,99 @@ spread of 0.26-0.27, above the 0.05 gate, so a judge FAIL on this target is of l
 A2 negative rests on the permuted-table and shuffled-order percentiles (WE028 70.0 / 96.0, THE972_bourdeau 23.5 /
 40.0), not on the judge line alone; WE028's 96th percentile against shuffled order is the one number to re-check if
 family C ever proposes WE028-like vocabulary.
+
+## ARM-TR manuscript check (26 Sept 2026, LANE ARM worker ARM-TR): independent transcription vs Bourdeau, PARTIAL
+
+Two blind passes per manuscript page (never seeing `ciphertext.txt` or each other), read from
+`tools/iiif_lines.py` line crops of NARA M34 roll 14 frames fetched by ARM-IMG, reconciled with
+`tools/reconcile_passes.py`, disagreements settled by this worker looking at the crop directly.
+Full detail, layout correction and per-page numbers in `images/layout.md` and `NOTES.md`'s "ARM-TR"
+section. Script and raw diff: `tr/diff_ms_vs_ciphertext.py`, `tr/diff_output.txt`.
+
+**Coverage is partial, and this is the headline finding.** Frame 0030 = manuscript page 1; frames
+0031 and 0032 are two independent photographic scans of the SAME two-page spread (pages 2-3),
+verified by direct content/ink-stroke comparison -- corrects the job brief's assumption that 0030
+and 0031 were the duplicate pair. 0029 is a different, unrelated document. This worker's own
+`ciphertext_ms.txt` (numeric groups only, marks excluded) covers 312 tokens that align against only
+the **first 332 of ciphertext.txt's 369 numeric groups** -- the remaining 37 groups (the letter's own
+final ~10%) have no counterpart in the fetched frames at all (the alignment simply runs out, it does
+not degrade first). Frames 29-32 do not contain the whole letter; frame 0033 (already flagged
+"not_fetched" in ARM-IMG's own `images/manifest.json`) or a further frame is needed to check the
+letter's last ~37 groups against the manuscript. **Nothing below is a claim about that uncovered
+tail.**
+
+**Pass agreement per page** (17/16/15 manuscript lines; page counts differ from ciphertext.txt's own
+33 printed/wrapped lines because the manuscript's physical lines are narrower):
+- Page 1 (frame 0030, both blind passes reading the SAME crops -- a transcription-reliability check,
+  not a two-scan check, since this page has no second scan on file): 89.8% (17 lines, `tr/page1_reconcile/`).
+- Page 2 (frames 0031L vs 0032L, genuine two-scan witnesses): 87.8% after correcting a one-line
+  index offset this worker's own crop parameters introduced (`tr/page2_passA_shift.tsv`; page2's
+  region for pass A's source crop included one extra faint top line pass B's crop did not).
+- Page 3 (frames 0031R vs 0032R): 89.0%, no offset needed.
+
+**Genuine settled digit disagreements (both blind passes independently transcribed the SAME position
+differently, or one pass missed content the crop plainly shows), resolved by this worker looking at
+the crop directly, all confirmed at the pixel level, not by consulting `ciphertext.txt`:**
+- Page 1, manuscript line 2: **"Sir"** (the salutation, plain cursive word) -- pass B misread it as a
+  shorthand mark. Bourdeau's `ciphertext.txt` does not carry a salutation line at all (it starts
+  straight into the numeric groups after "The"), so this token has no counterpart to diff against;
+  noted for completeness of the manuscript's own structure.
+- Page 1, manuscript line 6: **"98" + 8 shorthand marks** -- pass B dropped "98" entirely and
+  undercounted the marks at 6; a zoomed re-crop confirms 8 distinct strokes and the leading "98".
+- Page 2, line (shifted) 13: **"1640"**, not "1620" as pass A read (a 4 misread as a 2).
+- Page 2, line (shifted) 11: **"19"**, confirming pass B over pass A's uncertain leading digit.
+- Page 3, line 1: **"760"** -- pass A read the opening group as an illegible blob; both scans show it
+  plainly.
+- Page 3, line 11: **"1461 740 ..."**, not pass A's "1461 74?" nor pass B's bare "740 ..." -- pass B's
+  crop for this line was cropped with a slightly lower top margin than pass A's and clipped off the
+  genuine leading "1461" (not bleed-through); the following group reads "740", not "74".
+- Page 3, line 15 (the letter's last transcribed line before the coverage gap): **"...310 1900"** --
+  pass A's crop cut off the final group; confirmed by this worker's own earlier full-page look too.
+
+**The one clean units-digit finding, matching this brief's stated priority:** page 1, manuscript line
+4, 10th group -- **both blind passes independently read "1843"**, H-graded, no disagreement between
+them at all -- against Bourdeau's `ciphertext.txt` value **"1841"** at the same sequence position
+(ciphertext.txt token #10). This is the ONLY substitution in the whole diff where both this worker's
+passes agree with each other AND the corresponding ciphertext.txt token is unambiguous prose-numeral
+(not inside the heavily-disputed shorthand region below). Grade: H (both passes agree, this worker's
+own direct crop look at 08:38 UTC also read "1843" before either subagent ran -- see NOTES.md). This
+does not by itself resolve ARM-DESIGN's Q2 caveat (a systematic 2/3/5/9 misreading would need to
+recur across many tokens, not one), but it is one concrete, confirmed case of Bourdeau's transcription
+differing from the manuscript on a units digit, in the direction ARM-DESIGN's own caveat worried about
+(1 read where Bourdeau has a rarer digit; here 3<->1, not the 2/3/5/9 axis ARM-DESIGN singled out).
+
+**A second, larger-scale finding that undercuts confidence in the whole covered comparison, not just
+one digit:** a large block of ciphertext.txt tokens in the range corresponding to page 1's
+manuscript lines 6-13 (the same lines both blind passes independently flagged as dense, hard-to-
+segment shorthand-and-digit mixtures, `tr/page1_passA.tsv`/`page1_passB.tsv`'s own low-confidence
+notes) does not align cleanly against this worker's ms reading at all -- roughly 40 of the 54
+"in ciphertext.txt, not in ms" tokens and most of the 14 substitutions fall in this one span
+(`tr/diff_output.txt`). This reads as EITHER this worker's passes under-transcribing real numeric
+content as shorthand marks in a visually ambiguous run, OR Bourdeau's own transcription resolving
+marks the manuscript itself does not clearly support as digits, OR (most likely, given both blind
+passes independently flagged the SAME lines as their hardest) this whole span being genuinely
+difficult to transcribe from the image at normal resolution and needing a dedicated higher-resolution
+look before any per-token claim is made about it. **Not resolved here** -- flagged as the single most
+valuable next step on this target's manuscript-verification thread, ahead of chasing frame 0033.
+
+**Units-digit distribution, ms (H+M) vs ciphertext.txt, over the SAME covered range (ciphertext.txt's
+first 332 of 369 groups), all values:**
+
+| digit | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| ms (312 tokens) | 76 | 56 | 14 | 12 | 33 | 10 | 27 | 39 | 39 | 6 |
+| ciphertext.txt (same 332-token span) | 81 | 63 | 16 | 10 | 35 | 11 | 30 | 41 | 39 | 6 |
+
+Both distributions agree closely in rank order and shape (0 and 1 dominant, 2/3/5/9 rare, matching
+ARM-DESIGN's Q2 finding) -- the alignment gap above thins both counts roughly proportionally rather
+than concentrating on any one digit, so this comparison does **not** show a systematic 2/3/5/9
+misreading of the kind that would collapse ARM-DESIGN's contiguous-code verdict; the caveat there is
+not resolved, only not actively contradicted by what was checked here, and the still-uncovered final
+37 groups and the unresolved shorthand-heavy span above are both real gaps in that reassurance.
+
+**Shorthand passages**: 29 shorthand-bearing manuscript lines cropped to `images/shorthand/` (not
+read, per this brief), indexed by page/line and this worker's own running sequence position in
+`images/shorthand/index.tsv`, for a later family S job. This worker's finer per-mark counting
+convention is NOT directly comparable to Bourdeau's passage-level `*`/`**` marking in
+`ciphertext.txt` (see `ciphertext_ms.txt`'s own header) -- a family S job should re-derive mark
+counts from these crops rather than trusting either transcription's count.

@@ -383,3 +383,48 @@ Access playbook table (not added to CLAUDE.md by this worker, which may not edit
 the lane orchestrator/parent): `catalog.archives.gov` serves plain, unauthenticated IIIF Image API v3 image
 downloads for digitized items, discoverable by rendering the item page with `tools/browser_fetch.js` even though
 its own JSON search/records API needs the (absent) `x-api-key`.
+
+## ARM-TR pass, 26 Sept 2026 (LANE ARM worker ARM-TR) -- independent manuscript transcription, PARTIAL
+
+Full detail in `HYPOTHESES.md`'s "ARM-TR manuscript check" section and `images/layout.md`. Two blind
+transcription passes per manuscript page (crops from `tools/iiif_lines.py`, reconciled with
+`tools/reconcile_passes.py`), settling disagreements by this worker looking at the crop directly, per
+this job's brief.
+
+**Correction to the job brief's own framing**: frames 0030 and 0031 are NOT the "same page in two
+copies" as the brief assumed -- 0031's opening line continues directly from 0030's last line
+(verified against `ciphertext.txt`'s own group sequence at that point). Frames **0031 and 0032** are
+the genuine duplicate pair: two independent photographic scans of the same two-page spread (pages
+2-3), confirmed by matching content down to identical ink-stroke shapes. Frame 0029 is a different,
+unrelated 1808 document (a later cover memo referencing a *17 Feb* letter) and was not transcribed.
+
+**Coverage gap, the most actionable finding of this pass**: this worker's manuscript reading (312
+numeric tokens, marks excluded) aligns cleanly against only the first 332 of `ciphertext.txt`'s 369
+numeric groups, then simply runs out -- the alignment does not degrade, it ends. Frames 29-32 do not
+contain the whole 20 Feb 1808 letter; ARM-IMG's own `images/manifest.json` already flagged frame 0033
+as "not fetched". **A successor should fetch frame 0033 (and check whether the letter needs even
+more) before this manuscript-verification thread can cover the last ~10% of the letter.**
+
+**Digit-level result**: one clean, doubly-confirmed units-digit disagreement -- manuscript page 1,
+line 4, group 10 reads **1843** (both blind passes agree, H-graded), against Bourdeau's
+`ciphertext.txt` value **1841** at the same position. Six further disagreements were settled from the
+crop in Bourdeau's favor or corrected pass-B's favor (98+8 marks on page 1 line 6; 1640, 19, 760,
+1461+740, and a final 1900 pass A had cut off -- see HYPOTHESES.md for the full list); none of these
+touches the units digit specifically. A separate, larger block of disagreement in the page-1 lines
+this worker's own passes independently flagged as their hardest (dense shorthand-and-digit mixtures,
+manuscript lines 6-13) does not resolve cleanly at all and is flagged, not adjudicated, as the next
+most valuable look on this thread.
+
+Units-digit distribution over the shared covered range (ciphertext.txt's first 332 groups) matches
+closely in shape between this worker's reading and Bourdeau's transcription (0/1 dominant, 2/3/5/9
+rare in both) -- this does not show the systematic 2/3/5/9 misreading ARM-DESIGN's own caveat worried
+about, but the still-uncovered final 37 groups and the unresolved shorthand-heavy span mean that
+caveat is not closed, only not actively contradicted by what this pass could check.
+
+Shorthand: 29 shorthand-bearing manuscript lines (of ~34 marked passages Bourdeau records across the
+whole letter; this pass only covers pages 1-3) cropped to `images/shorthand/` with an index
+(`images/shorthand/index.tsv`), not read, for a later family S job per the brief.
+
+Requests this pass: none (all work offline against already-fetched images and 6 Sonnet subagents,
+each transcribing one page's line crops from a single set of images already on disk; 2 concurrent at
+a time as required).

@@ -1,0 +1,65 @@
+# John Armstrong to James Madison, Paris, 20 Feb 1808 -- independent manuscript re-transcription
+# NARA M34 roll 14, frames 0030 (page 1), 0031/0032 (pages 2-3, two independent scans of the
+# same leaf-spread, used as the two blind-pass witnesses -- see images/layout.md). Two blind
+# passes per page, reconciled with tools/reconcile_passes.py, disagreements settled by this
+# worker (ARM-TR, 26 Sept 2026) looking at the crop directly. H = both passes agree or settled
+# by direct crop check; M = passes disagree, uncertain (mostly shorthand mark counts in dense
+# cursive runs -- see CLAUDE.md rule 4 grading). '*' = one shorthand/graphic mark (this worker's
+# passes counted INDIVIDUAL marks, finer-grained than Bourdeau's own passage-level '*'/'**'
+# convention in ciphertext.txt -- the two are not directly comparable mark-for-mark).
+#
+# COVERAGE: this reading covers only pages 1-3 (frames 0030-0032) = the first 332 of ciphertext.txt's
+# 369 numeric groups. Frame 0033 (and beyond) was not fetched by ARM-IMG and appears to hold the
+# letter's final ~37 groups -- see NOTES.md 'ARM-TR' section. This file is NOT a complete reading.
+#
+# Never overwrite ciphertext.txt (Layout rule: as transcribed, never silently repaired).
+#
+# --- page 1 ---
+Sir
+The 453 240 760 1480 * 35 681 1752 1843 1314
+* * * * * 384 18 681 1340 1628 1267 1180
+98 * * * * * * * * 388 1320 1254 64 1780
+38 48 56 * 200 38 * 1141 1848 1541 1638
+27 121 356 454 17 1640 1276 14 1760 1267
+43 * * * * * * * * * * * * * * * * * 31
+* * * * * * * * * * 48 1360 18 1141
+436 489 17 946 496 18 36 1900 17 1 28 14
+* * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * * 
+176 564 387 840 671 41 431 18 640 1780
+73 65 381 246 384 14 1 38 1120 1350 14
+48 370 751 18 1540 1320 12 1 1170 1842
+* * * * * * * * 41 1250 17 * * * 1210
+# --- page 2 ---
+54 1631 12 78 350 1470 764 18 1801 *
+* * * * * * * * * * * * * * *
+* * * * 78 1364 1751 101 421 * * * * *
+17 86 316 582 1017 18 * * * * * * 1248 
+1176 1164 1801 1747 672 564 481 1267 
+* 45 147 1158 * * * * * * * * * * *
+* * 48 1240 547 864 1762 11 1264 156 
+45 38 18 1741 180 150 1161 1240 143 
+1776 1830 3 1451 28 1540 1537 17 18 
+* * * * * * * * 13 230 481 * * * * *
+1110 1267 84 19 41 364 17 * 1480 1762 
+1 1471 1480 22 561 17 1708 11 380 460 
+17 1640 19 47 76 230 1540 * * * * *
+1161 14 74 1461 1870 12 57 1899 3 47 
+2 471 29 390 1164 87 576 176 18 1480
+
+# --- page 3 ---
+760 * * * * * 47 570 230 1254 1 * * *
+58 620 1307 451 576 17 680 38 36 1658
+460 365 * * * * * * 17 561 470 1360
+170 83 570 74 85 14 740 * 3 * * * *
+* * * * * * * 67 780 1364
+* * 1170 1841 1 1161 674 701 3 61 1580 18
+170 1767 1870 5 * * * * * * * * *
+160 240 876 1351 1107 1764 * * * * * * *
+* * 1472 21 76 11 180 38 1641 15 1354 17
+170 658 49 967 1861 16 576 1564 12 1310
+1461 740 11 187 641 176 437 83 1451 1170 1807
+110 416 38 16 1208 141 * * * * * * *
+* * * * * * * * * * * * * * * * * *
+130 164 180 1767 162 38 161 15 580 1716 10
+27 614 641 110 1345 170 687 860 310 1900
