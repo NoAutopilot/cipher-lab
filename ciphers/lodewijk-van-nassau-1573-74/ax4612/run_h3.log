@@ -1,0 +1,7 @@
+family homophonic: homophonic substitution (homophonic_anneal.py, control = make_control at the target's N and K; --param profile=target matches the target's own sign-count profile; --param noise=p redraws a share p of control tokens at the target's own type frequencies)
+spec specs/lodewijk-4612.json slug lodewijk-van-nassau-1573-74
+ciphertext: 20 message(s), N=775 signs, K=100 distinct, tokens=space
+corpora: tools/data/fr16/lettresdecatheri01cathuoft_djvu.txt.gz, tools/data/fr16/lettresdecatheri02cathuoft_djvu.txt.gz, tools/data/fr16/lettresindites00marg_djvu.txt.gz
+control seeds [1, 2, 3], restarts 8, gate 0.6, params profile=target
+row -> ciphers/lodewijk-van-nassau-1573-74/HYPOTHESES.md; decode -> ciphers/lodewijk-van-nassau-1573-74/families/homophonic-1-profile=target-ax4612h3freehomo.txt
+CONTROL seed 1: N=775 K=91 recovery 0.959 score -1593.03

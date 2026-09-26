@@ -1,0 +1,55 @@
+{
+ "slug": "lodewijk-van-nassau-1573-74",
+ "name": "WVO 4612, Lodewijk van Nassau to Willem van Oranje, Meer, 6 March 1574 (KHA A 11/XIV d/13a; cipher numerals with clear words)",
+ "language_candidates": [
+  "fr"
+ ],
+ "ciphertext_source": "ciphers/lodewijk-van-nassau-1573-74/ciphertext_4612.tsv (R13 two-pass draft of the WVO page images, settled in part by settle.py; 678 of 1170 rows confidence M) -- a transcription, not the image; a negative is conditional on it (rule 2)",
+ "ciphertext_written": "26 Sept 2026, AX-4612 (ax4612/make_spec.py)",
+ "ciphertext_note": "one line per numeral run between clear words; numerals 1-120 kept as signs (N=775); dropped as nulls/names: {'>=150': 18, '121-149': 19}; the 1574 of the date line is clear text; 351 clear-word tokens form the frame and are not in the cipher stream. p1_L18/p1_L19 repeat an 8-numeral stretch with the same clear words, kept as transcribed (possible double reading of one line; not repaired)",
+ "ciphertext": [
+  "54 98 26 68 22 68 81 27 48 29 65 6 25 9 88 111 42 30 12 61 26 12 88 77 116 81 31 33 69 26 81 27 41 28 42 2 31 61 14 68 4 72 12",
+  "81 32 48 71 2 26 14 38 66 71 42 10 27 23 9 4 21 83 117 59 25 77 81 73 42 77 118 12 28 63 79 39 34 61 9 40 4 12 83 3 83 26 71 27 30 45 53 47 46 37 81 101 29 64 6 38 72 12 26 82 102 22 28 33 75 51 12 48 29 62 42 27 19 25 7 28 62 54 10 29 62 83 9 2 28 16 33 46 28 73 27 25 56 24 43 82 23 27 81 2 77 69 104 74 31 26 72 60 59 87 25 13 2 84 82 22 28 9 4 12 41 13 77 84 4 34 67 13 68 72 83 31 26 72 4 34 81 88 4 13 2 68 82 85 61 39 67 4 12 60 84 39 26 46 52 28 84 112 42 27 54 46 27 9",
+  "83 16 101 114 43 12 79 40 29 9 28 77 59 11 12 12 33 62 42 88",
+  "59 37 25 76 2 31 51 52 61 2 33 42 88 62 13 82 40 62 7 41 54 40 27 67 39 29 62 38 26 73 27 31 33 7 62 54 4 27 48 26 57 101 81 12 54 40 27 67 2 78 61 4 6 105 27 31 67 29 12 7 30 102 29 12 12 6 41 47 39 72 81 31 54 39 29 74 116 47 26 81 120 56 61",
+  "12 26",
+  "26 27",
+  "62 37 46",
+  "16 111 37 49 4 33",
+  "101 81 2 12 26 105 67",
+  "51 62",
+  "37 49 2 91 4 4 49 101 82 2 12 26 105 67",
+  "9",
+  "61 36 47",
+  "77 26 12 59 37 25 12 45 27 61 84 4 81 2 9 118 47 3 12 25",
+  "9 39 54 40 27 61 34 81 2 72 117 66 42 8 4 16 48 112 81 33 12 38 25 81 2 46 43",
+  "82 26 76 2 33 35 69 12 57 36 59 38 25 81 2 83 67 29 3 81 2 61 81 2 33 11 5 28 42 56 102 29 12 32 78 104 26 62 12 67 31 4 22 71 100 14 4 34 9 5 47 14 4 52 40 19 22 33 4 4 52 81 26 57 66 4 7 6 25 62 13 67 28 32 59 38 22 66 52 26 105 67 48 7 5 29 48 115 86 44 68 5 26",
+  "9 39 59 40 25 55 53 23 12 45 26 92 66 4 77 54 119 66 67 9 112 47 6 41 52 68 77 77 51 5 26 7 12 12 6 41 47 36 72 104 114 81 26 33 79 40 32 76 101 2 63 115 54 40 27 83 81 2 77 60 12 29 74 112 11 93 60",
+  "12 104 114 51 81 4 83 82 2 32 12 26 71 70 88 26 42 26 34 88 22 29 81 31 54 72 69 2 33 56 65 6 40 72 12 54 27 27 61 61 84 101 73 51 22 85 116 57 28 71 27 22 42 27 24 115 11 31 59 86 66 4 9 101 30 12 56 26 72 22 56 22 42 13 33",
+  "4 39 101 11 44 4 93 12 54 84 4 61 22 68 82 69 4 84 76 2 32 62 54 40 26 81 2 84 39 77 69 5 26",
+  "54 40 26 62 84 4 28 7 29 34 40 22 26 101 8 33 66 102 72 77 61 82 75 42 82 26 62 12 15 62 111 61 84 4 26 15 69 47 26 72 12 79 40 77 61 48 78 81 64 40 111 33 67 47 4 34 81 36 26 73 9 4 30 73 101 83 84 26 33 67 9 4 72 105 115 12 30 33 9 37 5 46 101 30 54 40 20 54 38 27 59 88 22 84 102 69 2 30 15 4 65 37 112 33 67 30 28 71 22 51"
+ ],
+ "alphabet": "numerals 1-120 (tokens separated by spaces), the table range of key.tsv; 125 distinct values in the letter overall, 100 in 1-120",
+ "constraints": [
+  "sibling letters 4613/4615, 4610/4611/4616 and 1574's 5810/5811/4503 read under key.tsv: 24 contiguous blocks of five values, one letter per block, order n..m (the 24-letter alphabet rotated to start at n)",
+  "4612 does not read under key.tsv (4.3 pct French share, no cyclic shift; NOTES.md W1) nor under key_5799 (AX-5799)",
+  "block IC (ax4612/ic_scan.py): 4612 w=5 best 0.0617 (o0; null p95 0.0567) against 0.078-0.081 for sib/5811/4610 at w=5 o0; 4612 w=6 o0 0.0737 (null p95 0.0659); values 86-100 and 106-110 nearly unused in 4612",
+  "AX-NAMES (26 Sept 2026): codes 121-149 are nulls in the 1574 table"
+ ],
+ "cheap_tests_in_order": [
+  "H1: block_homophonic width=5 offsets 0-4 (a 24-block substitution in another letter order), matched control first, gate 0.6",
+  "H2: block_homophonic width=4 and width=6 (only if H1's control passes and its target fails)",
+  "H3: homophonic --param profile=target (free homophonic at K=100), control first"
+ ],
+ "cheap_test_done": [],
+ "judge": {
+  "language": "fr",
+  "corpora": [
+   "tools/data/fr16/lettresdecatheri01cathuoft_djvu.txt.gz",
+   "tools/data/fr16/lettresdecatheri02cathuoft_djvu.txt.gz",
+   "tools/data/fr16/lettresindites00marg_djvu.txt.gz"
+  ],
+  "corpora_note": "fr16: Catherine de Medicis' letters t.1-2 and Marguerite de Valois' letters -- 16th-century French court correspondence, era- and register-matched to a 1574 letter; per-fold false-negative spread in ciphers/lodewijk-van-nassau-1573-74/ax4612/fr16_folds.txt (3 source files: under rule 3's ~5-file threshold, so a FAIL/PASS is of limited reliability)"
+ },
+ "written": "26 Sept 2026, AX-4612 (LANE AX), for .claude/briefs/runs/2026-09-26-lane-ax-4612.md"
+}

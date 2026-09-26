@@ -1,0 +1,120 @@
+family block_homophonic: contiguous-block homophonic table (--param width=5 offset=0 lo=1 hi=120): the solver anneals the block -> letter map only; control = same width/offset, random block order, target's value profile
+spec specs/lodewijk-4612.json slug lodewijk-van-nassau-1573-74
+ciphertext: 20 message(s), N=775 signs, K=100 distinct, tokens=space
+corpora: tools/data/fr16/lettresdecatheri01cathuoft_djvu.txt.gz, tools/data/fr16/lettresdecatheri02cathuoft_djvu.txt.gz, tools/data/fr16/lettresindites00marg_djvu.txt.gz
+control seeds [1, 2, 3], restarts 8, gate 0.6, params width=4,offset=0,gap=80
+row -> ciphers/lodewijk-van-nassau-1573-74/HYPOTHESES.md; decode -> ciphers/lodewijk-van-nassau-1573-74/families/block_homophonic-1-width=4,offset=0,gap=80-ax4612h2w4o0.txt
+CONTROL seed 1: N=775 K=95 recovery 0.599 score -1979.09
+CONTROL seed 2: N=775 K=96 recovery 0.982 score -1697.52
+CONTROL seed 3: N=775 K=94 recovery 0.974 score -1848.73
+TARGET best score -2121.755; decode -> ciphers/lodewijk-van-nassau-1573-74/families/block_homophonic-1-width=4,offset=0,gap=80-ax4612h2w4o0.txt; judge: FAIL language: score=-1.241, null_p99=-1.718, real_p05=-0.944, real_median=-0.818, mode=both, N=775
+row appended to ciphers/lodewijk-van-nassau-1573-74/HYPOTHESES.md
+exit 0
+family block_homophonic: contiguous-block homophonic table (--param width=5 offset=0 lo=1 hi=120): the solver anneals the block -> letter map only; control = same width/offset, random block order, target's value profile
+spec specs/lodewijk-4612.json slug lodewijk-van-nassau-1573-74
+ciphertext: 20 message(s), N=775 signs, K=100 distinct, tokens=space
+corpora: tools/data/fr16/lettresdecatheri01cathuoft_djvu.txt.gz, tools/data/fr16/lettresdecatheri02cathuoft_djvu.txt.gz, tools/data/fr16/lettresindites00marg_djvu.txt.gz
+control seeds [1, 2, 3], restarts 8, gate 0.6, params width=4,offset=1,gap=80
+row -> ciphers/lodewijk-van-nassau-1573-74/HYPOTHESES.md; decode -> ciphers/lodewijk-van-nassau-1573-74/families/block_homophonic-1-width=4,offset=1,gap=80-ax4612h2w4o1.txt
+CONTROL seed 1: N=775 K=93 recovery 0.975 score -1736.64
+CONTROL seed 2: N=775 K=95 recovery 0.982 score -1697.52
+CONTROL seed 3: N=775 K=93 recovery 0.974 score -1848.73
+TARGET best score -2115.745; decode -> ciphers/lodewijk-van-nassau-1573-74/families/block_homophonic-1-width=4,offset=1,gap=80-ax4612h2w4o1.txt; judge: FAIL language: score=-1.277, null_p99=-1.718, real_p05=-0.944, real_median=-0.818, mode=both, N=775
+row appended to ciphers/lodewijk-van-nassau-1573-74/HYPOTHESES.md
+exit 0
+family block_homophonic: contiguous-block homophonic table (--param width=5 offset=0 lo=1 hi=120): the solver anneals the block -> letter map only; control = same width/offset, random block order, target's value profile
+spec specs/lodewijk-4612.json slug lodewijk-van-nassau-1573-74
+ciphertext: 20 message(s), N=775 signs, K=100 distinct, tokens=space
+corpora: tools/data/fr16/lettresdecatheri01cathuoft_djvu.txt.gz, tools/data/fr16/lettresdecatheri02cathuoft_djvu.txt.gz, tools/data/fr16/lettresindites00marg_djvu.txt.gz
+control seeds [1, 2, 3], restarts 8, gate 0.6, params width=4,offset=2,gap=80
+row -> ciphers/lodewijk-van-nassau-1573-74/HYPOTHESES.md; decode -> ciphers/lodewijk-van-nassau-1573-74/families/block_homophonic-1-width=4,offset=2,gap=80-ax4612h2w4o2.txt
+CONTROL seed 1: N=775 K=90 recovery 0.947 score -1732.72
+CONTROL seed 2: N=775 K=94 recovery 0.982 score -1697.52
+CONTROL seed 3: N=775 K=92 recovery 0.969 score -1846.87
+TARGET best score -2105.265; decode -> ciphers/lodewijk-van-nassau-1573-74/families/block_homophonic-1-width=4,offset=2,gap=80-ax4612h2w4o2.txt; judge: FAIL language: score=-1.299, null_p99=-1.718, real_p05=-0.944, real_median=-0.818, mode=both, N=775
+row appended to ciphers/lodewijk-van-nassau-1573-74/HYPOTHESES.md
+exit 0
+family block_homophonic: contiguous-block homophonic table (--param width=5 offset=0 lo=1 hi=120): the solver anneals the block -> letter map only; control = same width/offset, random block order, target's value profile
+spec specs/lodewijk-4612.json slug lodewijk-van-nassau-1573-74
+ciphertext: 20 message(s), N=775 signs, K=100 distinct, tokens=space
+corpora: tools/data/fr16/lettresdecatheri01cathuoft_djvu.txt.gz, tools/data/fr16/lettresdecatheri02cathuoft_djvu.txt.gz, tools/data/fr16/lettresindites00marg_djvu.txt.gz
+control seeds [1, 2, 3], restarts 8, gate 0.6, params width=4,offset=3,gap=80
+row -> ciphers/lodewijk-van-nassau-1573-74/HYPOTHESES.md; decode -> ciphers/lodewijk-van-nassau-1573-74/families/block_homophonic-1-width=4,offset=3,gap=80-ax4612h2w4o3.txt
+CONTROL seed 1: N=775 K=89 recovery 0.943 score -1729.07
+CONTROL seed 2: N=775 K=100 recovery 0.982 score -1697.52
+CONTROL seed 3: N=775 K=91 recovery 0.974 score -1848.73
+TARGET best score -2108.927; decode -> ciphers/lodewijk-van-nassau-1573-74/families/block_homophonic-1-width=4,offset=3,gap=80-ax4612h2w4o3.txt; judge: FAIL language: score=-1.33, null_p99=-1.718, real_p05=-0.944, real_median=-0.818, mode=both, N=775
+row appended to ciphers/lodewijk-van-nassau-1573-74/HYPOTHESES.md
+exit 0
+family block_homophonic: contiguous-block homophonic table (--param width=5 offset=0 lo=1 hi=120): the solver anneals the block -> letter map only; control = same width/offset, random block order, target's value profile
+spec specs/lodewijk-4612.json slug lodewijk-van-nassau-1573-74
+ciphertext: 20 message(s), N=775 signs, K=100 distinct, tokens=space
+corpora: tools/data/fr16/lettresdecatheri01cathuoft_djvu.txt.gz, tools/data/fr16/lettresdecatheri02cathuoft_djvu.txt.gz, tools/data/fr16/lettresindites00marg_djvu.txt.gz
+control seeds [1, 2, 3], restarts 8, gate 0.6, params width=6,offset=0,gap=80
+row -> ciphers/lodewijk-van-nassau-1573-74/HYPOTHESES.md; decode -> ciphers/lodewijk-van-nassau-1573-74/families/block_homophonic-1-width=6,offset=0,gap=80-ax4612h2w6o0.txt
+CONTROL seed 1: N=775 K=100 recovery 0.961 score -1744.75
+CONTROL seed 2: N=775 K=99 recovery 0.225 score -2059.11
+CONTROL seed 3: N=775 K=99 recovery 0.966 score -1872.93
+TARGET best score -2186.973; decode -> ciphers/lodewijk-van-nassau-1573-74/families/block_homophonic-1-width=6,offset=0,gap=80-ax4612h2w6o0.txt; judge: FAIL language: score=-1.302, null_p99=-1.718, real_p05=-0.944, real_median=-0.818, mode=both, N=775
+row appended to ciphers/lodewijk-van-nassau-1573-74/HYPOTHESES.md
+exit 0
+family block_homophonic: contiguous-block homophonic table (--param width=5 offset=0 lo=1 hi=120): the solver anneals the block -> letter map only; control = same width/offset, random block order, target's value profile
+spec specs/lodewijk-4612.json slug lodewijk-van-nassau-1573-74
+ciphertext: 20 message(s), N=775 signs, K=100 distinct, tokens=space
+corpora: tools/data/fr16/lettresdecatheri01cathuoft_djvu.txt.gz, tools/data/fr16/lettresdecatheri02cathuoft_djvu.txt.gz, tools/data/fr16/lettresindites00marg_djvu.txt.gz
+control seeds [1, 2, 3], restarts 8, gate 0.6, params width=6,offset=1,gap=80
+row -> ciphers/lodewijk-van-nassau-1573-74/HYPOTHESES.md; decode -> ciphers/lodewijk-van-nassau-1573-74/families/block_homophonic-1-width=6,offset=1,gap=80-ax4612h2w6o1.txt
+CONTROL seed 1: N=775 K=103 recovery 0.961 score -1744.75
+CONTROL seed 2: N=775 K=98 recovery 0.982 score -1731.83
+CONTROL seed 3: N=775 K=96 recovery 0.676 score -2019.76
+TARGET best score -2184.899; decode -> ciphers/lodewijk-van-nassau-1573-74/families/block_homophonic-1-width=6,offset=1,gap=80-ax4612h2w6o1.txt; judge: FAIL language: score=-1.286, null_p99=-1.718, real_p05=-0.944, real_median=-0.818, mode=both, N=775
+row appended to ciphers/lodewijk-van-nassau-1573-74/HYPOTHESES.md
+exit 0
+family block_homophonic: contiguous-block homophonic table (--param width=5 offset=0 lo=1 hi=120): the solver anneals the block -> letter map only; control = same width/offset, random block order, target's value profile
+spec specs/lodewijk-4612.json slug lodewijk-van-nassau-1573-74
+ciphertext: 20 message(s), N=775 signs, K=100 distinct, tokens=space
+corpora: tools/data/fr16/lettresdecatheri01cathuoft_djvu.txt.gz, tools/data/fr16/lettresdecatheri02cathuoft_djvu.txt.gz, tools/data/fr16/lettresindites00marg_djvu.txt.gz
+control seeds [1, 2, 3], restarts 8, gate 0.6, params width=6,offset=2,gap=80
+row -> ciphers/lodewijk-van-nassau-1573-74/HYPOTHESES.md; decode -> ciphers/lodewijk-van-nassau-1573-74/families/block_homophonic-1-width=6,offset=2,gap=80-ax4612h2w6o2.txt
+CONTROL seed 1: N=775 K=103 recovery 0.961 score -1745.38
+CONTROL seed 2: N=775 K=102 recovery 0.982 score -1732.19
+CONTROL seed 3: N=775 K=99 recovery 0.974 score -1873.64
+TARGET best score -2205.635; decode -> ciphers/lodewijk-van-nassau-1573-74/families/block_homophonic-1-width=6,offset=2,gap=80-ax4612h2w6o2.txt; judge: FAIL language: score=-1.366, null_p99=-1.718, real_p05=-0.944, real_median=-0.818, mode=both, N=775
+row appended to ciphers/lodewijk-van-nassau-1573-74/HYPOTHESES.md
+exit 0
+family block_homophonic: contiguous-block homophonic table (--param width=5 offset=0 lo=1 hi=120): the solver anneals the block -> letter map only; control = same width/offset, random block order, target's value profile
+spec specs/lodewijk-4612.json slug lodewijk-van-nassau-1573-74
+ciphertext: 20 message(s), N=775 signs, K=100 distinct, tokens=space
+corpora: tools/data/fr16/lettresdecatheri01cathuoft_djvu.txt.gz, tools/data/fr16/lettresdecatheri02cathuoft_djvu.txt.gz, tools/data/fr16/lettresindites00marg_djvu.txt.gz
+control seeds [1, 2, 3], restarts 8, gate 0.6, params width=6,offset=3,gap=80
+row -> ciphers/lodewijk-van-nassau-1573-74/HYPOTHESES.md; decode -> ciphers/lodewijk-van-nassau-1573-74/families/block_homophonic-1-width=6,offset=3,gap=80-ax4612h2w6o3.txt
+CONTROL seed 1: N=775 K=103 recovery 0.961 score -1748.77
+CONTROL seed 2: N=775 K=104 recovery 0.982 score -1732.72
+CONTROL seed 3: N=775 K=97 recovery 0.974 score -1875.26
+TARGET best score -2239.331; decode -> ciphers/lodewijk-van-nassau-1573-74/families/block_homophonic-1-width=6,offset=3,gap=80-ax4612h2w6o3.txt; judge: FAIL language: score=-1.347, null_p99=-1.718, real_p05=-0.944, real_median=-0.818, mode=both, N=775
+row appended to ciphers/lodewijk-van-nassau-1573-74/HYPOTHESES.md
+exit 0
+family block_homophonic: contiguous-block homophonic table (--param width=5 offset=0 lo=1 hi=120): the solver anneals the block -> letter map only; control = same width/offset, random block order, target's value profile
+spec specs/lodewijk-4612.json slug lodewijk-van-nassau-1573-74
+ciphertext: 20 message(s), N=775 signs, K=100 distinct, tokens=space
+corpora: tools/data/fr16/lettresdecatheri01cathuoft_djvu.txt.gz, tools/data/fr16/lettresdecatheri02cathuoft_djvu.txt.gz, tools/data/fr16/lettresindites00marg_djvu.txt.gz
+control seeds [1, 2, 3], restarts 8, gate 0.6, params width=6,offset=4,gap=80
+row -> ciphers/lodewijk-van-nassau-1573-74/HYPOTHESES.md; decode -> ciphers/lodewijk-van-nassau-1573-74/families/block_homophonic-1-width=6,offset=4,gap=80-ax4612h2w6o4.txt
+CONTROL seed 1: N=775 K=108 recovery 0.975 score -1748.13
+CONTROL seed 2: N=775 K=100 recovery 0.982 score -1732.72
+CONTROL seed 3: N=775 K=95 recovery 0.974 score -1875.26
+TARGET best score -2197.671; decode -> ciphers/lodewijk-van-nassau-1573-74/families/block_homophonic-1-width=6,offset=4,gap=80-ax4612h2w6o4.txt; judge: FAIL language: score=-1.313, null_p99=-1.718, real_p05=-0.944, real_median=-0.818, mode=both, N=775
+row appended to ciphers/lodewijk-van-nassau-1573-74/HYPOTHESES.md
+exit 0
+family block_homophonic: contiguous-block homophonic table (--param width=5 offset=0 lo=1 hi=120): the solver anneals the block -> letter map only; control = same width/offset, random block order, target's value profile
+spec specs/lodewijk-4612.json slug lodewijk-van-nassau-1573-74
+ciphertext: 20 message(s), N=775 signs, K=100 distinct, tokens=space
+corpora: tools/data/fr16/lettresdecatheri01cathuoft_djvu.txt.gz, tools/data/fr16/lettresdecatheri02cathuoft_djvu.txt.gz, tools/data/fr16/lettresindites00marg_djvu.txt.gz
+control seeds [1, 2, 3], restarts 8, gate 0.6, params width=6,offset=5,gap=80
+row -> ciphers/lodewijk-van-nassau-1573-74/HYPOTHESES.md; decode -> ciphers/lodewijk-van-nassau-1573-74/families/block_homophonic-1-width=6,offset=5,gap=80-ax4612h2w6o5.txt
+CONTROL seed 1: N=775 K=105 recovery 0.489 score -1998.63
+CONTROL seed 2: N=775 K=100 recovery 0.977 score -1734.80
+CONTROL seed 3: N=775 K=99 recovery 0.974 score -1875.70
+TARGET best score -2167.638; decode -> ciphers/lodewijk-van-nassau-1573-74/families/block_homophonic-1-width=6,offset=5,gap=80-ax4612h2w6o5.txt; judge: FAIL language: score=-1.283, null_p99=-1.718, real_p05=-0.944, real_median=-0.818, mode=both, N=775
+row appended to ciphers/lodewijk-van-nassau-1573-74/HYPOTHESES.md
+exit 0

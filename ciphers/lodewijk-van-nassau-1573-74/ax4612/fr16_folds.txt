@@ -1,0 +1,4 @@
+held out lettresdecatheri01cathuoft_djvu.txt.gz: real_p05 -0.948, FN 15/200 = 7.5%
+held out lettresdecatheri02cathuoft_djvu.txt.gz: real_p05 -0.891, FN 135/200 = 67.5%
+held out lettresindites00marg_djvu.txt.gz: real_p05 -0.943, FN 4/200 = 2.0%
+blended FN 154/600 = 25.7% (N=775, 3 folds)
