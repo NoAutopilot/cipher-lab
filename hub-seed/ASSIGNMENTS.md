@@ -632,3 +632,6 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-25T23:59Z	session_01V2WMavWGMeAUYELUpmyEcX	LANE B4 orchestrator done $8.05 D, archived by parent 7d	handoff STATUS.md LANE B4 handoff; 14 workers 25.06; ranks 1-30 all first-tested
 2026-09-25T23:59Z	session_013JXDgLDkW2y5Ldi2gWzTkY	LANE GOLD2 orchestrator done $13.96 D, archived by parent 7d	handoff STATUS.md LANE GOLD2 handoff; GOLD3 adopts KAL1 (done) and K4
 2026-09-25T23:59Z	session_01Ejqu6thJi7yhQfwsvet3ms	PR-LAND done $1.37 D, archived	PRs 13-15 landed and closed; run via ChatGPT browser not home IP
+2026-09-26T00:00Z	session_01P8v53BYGZvFiriPpxEZy3h	LANE GOLD3 orchestrator (Fable, cap 120)	adopts GOLD-KAL1 (done) and GOLD-K4; from STATUS.md LANE GOLD2 handoff + brief 2026-09-25-lane-gold-orchestrator.md
+2026-09-26T00:00Z	session_01LyZokc7XR1SYPKgWTCFMUX	retrospective m (Sonnet, cap 10)	24 rows since retro l; lane lifetimes, breadth source, key loop overlap, STATUS guard
+2026-09-26T00:00Z	session_01JU8giKGTHWz4Zm1HyWK1VW	SCOUT-RERANK (Sonnet, cap 6)	QUEUE.md re-rank for a LANE B5
