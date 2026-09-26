@@ -62,3 +62,9 @@ works but 528 itself is absent; 24 Sept 2026). Fetched the archivesetmanuscrits 
 substitute. Wrote `REQUEST.md`. Status set to blocked.
 
 Requests this section: archivesetmanuscrits.bnf.fr 1, gallica.bnf.fr 1 SRU query (200 first try).
+
+## NX-UNBLOCK (26 Sept 2026)
+
+Re-checked Gallica SRU for Clairambault 528 by shelfmark: still `numberOfRecords=0`, consistent with the
+24 Sept finding. No new free route found this pass. REQUEST.md (BnF reading-room visit or reproduction
+enquiry) stands unchanged; still blocked, waiting on the owner.

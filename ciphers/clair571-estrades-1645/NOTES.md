@@ -278,3 +278,10 @@ existing key for Clair 574 (1645-1649, Brasset) may already open this letter onc
 PRIORITY -- see NOTES 'duplicate-risk') | exact volume among 571-582 unresolved; DECODE Key records
 9430/9431/9432 and Lasry/Biermann's 577/579 (1647-53) reconstructions sit right next to this item's date --
 check those and read Clair 574 before any fresh solving"`
+
+## NX-UNBLOCK (26 Sept 2026)
+
+Re-checked Gallica SRU for Clairambault 574, 575 and 579 by shelfmark (`dc.source all "Clairambault NNN"`):
+all three still return `numberOfRecords=0`, consistent with LANE YX's 25 Sept finding. No new free route found
+this pass. REQUEST.md (BnF reproduction request, three leaves) stands unchanged; still blocked, waiting on the
+owner.

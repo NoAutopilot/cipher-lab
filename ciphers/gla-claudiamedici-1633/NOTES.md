@@ -101,3 +101,14 @@ library/ILL access) or is dropped as out of reach and the nomination is re-score
 Host requests this pass (shared across all five csDA2 targets, see individual NOTES.md sections for per-target
 detail): archive.org 6 (>=3s apart, IA slot), WebFetch 3 (2x HathiTrust, 1x this target's related landesarchiv
 page — logged under nla-heinrich/hza-hohenlohe below), WebSearch ~10.
+
+## NX-UNBLOCK (26 Sept 2026)
+
+Tried one more free route for the BAGK Neue Folge, Teil 2, Band 8 (Bierther 1982) edition beyond csDA2's
+archive.org/HathiTrust attempts: Google Books API (`&country=US&key=$GOOGLE_BOOKS_KEY`), query "Briefe und
+Akten zur Geschichte des dreissigjährigen Krieges" + Bierther. The 1982 and 1997 printings both come back
+`accessInfo.viewability: NO_PAGES` (no snippet, no preview) -- confirms this modern De Gruyter edition has no
+free-text route from Google Books either, matching the archive.org/HathiTrust negatives already logged under
+csDA2. No new free route found. Next step unchanged: library/ILL access to BAGK NF2 Bd.8, or the person reads
+it directly; REQUEST.md's GLA copy-order route (for the two shelfmarks themselves, independent of the edition
+question) stands unchanged and blocked, waiting on the owner.
