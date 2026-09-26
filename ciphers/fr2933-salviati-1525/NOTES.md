@@ -2003,3 +2003,57 @@ python3 tools/family_run.py specs/fr2933-salviati-1525.json --family syllabary -
         --param marks=mixed --param boundary=1 --restarts 24 --seeds 3 --seed 1 --gate 0.6 \
         --label "LANE B11 bSALR2: DSN2 V2 marks=mixed boundary=1, measured err"
 ```
+
+## bSALI: DSN irregular, the last R8 syllabary variant (26 Sept 2026)
+
+Worker bSALI (Sonnet, cap $3, box 30 min), run directly by parent 7h (session_01NKnuGZhQg4tAKTFs4UE1Wj; the brief's
+own header names parent 7h's session_01GT3Yv4kUZrBR8pc2s5EToH, which is parent 7h itself, not this worker -- ROOM.md
+claim line corrected in place, see the two claim lines at 16:14 UTC), because a lane opened by parent 7h sits at the
+create_session lineage-depth limit (8) and could not spawn a LANE B11 successor (see ROOM.md 16:13 UTC). Authorised by
+CLAUDE.md Pipeline 3a and the LANE B11 handoff (STATUS.md, next step (1)). Brief
+`.claude/briefs/runs/2026-09-26-parent-bSALI.md`. Disk only, no hosts, no subagents, no images. Intake gate re-run:
+`fr2933-salviati-1525: open (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0.
+
+Same spec as bSALR/bSALR2 (pass-C, N=2839, K=236), same `tools/family_run.py --family syllabary --measured-error
+0.064`, gate 0.6, it16 judge corpus, `--param assign=irregular` for this variant (marks are homophones per marked
+code+mark type rather than per mark string, R8's own definition, `tools/families/syllabary.py`).
+
+```
+python3 tools/family_run.py specs/fr2933-salviati-1525.json --family syllabary --measured-error 0.064 --param err=0.064 \
+        --param assign=irregular --restarts 24 --seeds 3 --seed 1 --gate 0.6 \
+        --label "LANE B11 bSALI: DSN irregular 24 restarts, target seed 1, measured err"
+```
+
+Result (16:17 UTC, about 4 minutes CPU): control seed 1 N=2816 K=298 recovery **0.125**, seed 2 N=2825 K=312 recovery
+**0.553**, seed 3 N=2807 K=300 recovery **0.722** -- mean **0.467 < gate 0.6**. `family_run.py` printed `CONTROL BELOW
+GATE`, exited 3, and never ran the target. Per rule 3 and the brief, that is where this unit stops: no target run, no
+`--shuffle-target` run (there is no target decode to score against a shuffle floor when the target itself never ran).
+
+**Reading of the numbers.** This is the same instability R8 logged for this variant at 5% error (18-85% recovery
+across seeds at 24 restarts, HYPOTHESES.md) carrying through unchanged to 6.4%: one seed in three reads barely above
+chance (12.5%) while another reads 72.2%, a 60-point spread on the identical control construction. The measured-error
+sweep that turned DSN regular and DSN2 V1-V3 into control-backed negatives (bSALR/bSALR2) does not rescue irregular
+assignment, because the problem here is not the error level but the solver's own convergence reliability on this
+design at K~300: a family whose control cannot clear its own gate says nothing about the target regardless of what
+the target would have scored (CLAUDE.md rule 3's control-first order, made mechanical by `family_run.py`). Per rule 3
+wording: this is a **non-test**, not a control-backed negative and not a design exclusion -- the same status R8 and
+bSALR/bSALR2 already logged for this variant, now confirmed at the measured 6.4% error rather than left untried.
+
+**This closes the R8 syllabary-family ladder on the pass-C spec at the measured error:** DSN2 V1 (marks=mixed), DSN2
+V3 (bases=8+boundary) and DSN2 V2 (marks=mixed+boundary) are control-backed negatives at 6.4%; DSN regular is a
+weaker control-backed negative (seed-1 instability noted by bSALR2, not fully resolved); DSN irregular is a non-test
+at every error level tried, because its control never reliably clears the gate. No further syllabary variant is
+queued. Status stays `partial` (rule 5). No solved, new, first or unpublished wording used. NEAR.md row's Evidence and
+Last touched cells updated in place; named next step is now the word-level nomenclator scorer (DSN sec. 5 b, about
+USD 10).
+
+Files: `HYPOTHESES.md` (1 new row, label "LANE B11 bSALI"), `NOTES.md` (this section), `NEAR.md` (Evidence + Last
+touched cells for this target). No new `families/` file: the control-only run rewrote the existing
+`families/syllabary-irregular-{1,3}.txt` control decodes byte-for-byte (git shows no diff; `family_run.py` seeds its
+RNGs deterministically), and no target decode exists since the target never ran. Requests: none (disk only, 0 hosts).
+Regenerate (reproduces the row and the unchanged control files byte-for-byte):
+```
+python3 tools/family_run.py specs/fr2933-salviati-1525.json --family syllabary --measured-error 0.064 --param err=0.064 \
+        --param assign=irregular --restarts 24 --seeds 3 --seed 1 --gate 0.6 \
+        --label "LANE B11 bSALI: DSN irregular 24 restarts, target seed 1, measured err"
+```
