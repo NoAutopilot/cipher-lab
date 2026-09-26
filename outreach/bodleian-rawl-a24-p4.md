@@ -7,29 +7,17 @@ links: folder=https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/thurlo
 audit: ciphers/thurloe-printed/AUDIT.md, "N4 set, P4" (no prior decipherment located after a logged search). Rule 10: this note claims no reading beyond what AUDIT.md already states, and asks only for an image.
 
 checked: 26 Sept 2026 17:37 UTC by OUT-CHECK (Opus, session_01Vhu8sRCdAUKSRF3GAdTfF7) -- 7 sentences verified, 4 corrected: Birch 'vol. iv' -> vol. iii pp.187-189 (AUDIT.md P4 extract); Birch's margin is 'Vol. xxiv. p.76' with p.73 for the covering letter; the ark given for 'Thurloe Papers, vol. xxiv' was the Rawlinson Manuscripts collection record (x08k71nh14zj) -- the volume record is x0x920fw11hz, 'Thurloe Papers, vol. xxiv, part 1', MS. Rawl. A. 24/1, Mar 1655 (fetched today via browser); L24 (landed d32a582) result added that no item record names Stamford or Calais; salutation 'Imaging Services' -> 'Special Collections', since the address is the one the Imaging Services page lists for 'all other enquiries' (special collections), fetched today, 200. 'Not available online' rests on L19/L24 (owner's browser), not re-seen today.
+checked: 26 Sept 2026 17:50 UTC by OUT-CHECK-V (Opus, session_01MHgzCNjxMhTNQYiECVCTNn) -- voice rewrite re-checked against the 17:37 text: 12 facts compared, 3 corrected: project restored to 'unsolved historical ciphers' (the rewrite described the whole project as Thurloe letters); 'I could see'/'I have not been able' back to 'we' (the agents' catalogue search); 'from those records' restored (the folio was not resolved from the item records, not unresolvable). Disclosure (person directs and sends, agents read/search/check) in paragraph 1; rule 10 sweep clean; [SIGN-OFF] last; repository URL exact.
 ---
 
-Dear Bodleian Special Collections,
+Dear Special Collections team,
 
-One person directs this project and sends this message; the reading, the searches of the editions and the audits
-are done by AI agents (Claude models) working in an open repository, every step logged. We work on printed cipher
-letters from Thurloe's State Papers, checking each reading against a search for any prior decipherment.
+I run a small open project on unsolved historical ciphers; part of it is the printed cipher letters in Thurloe's State Papers. I direct it and send its letters myself; AI agents (Claude models) do the reading, the edition searches and the checking, every step logged in the repository linked below. For each letter we check whether anyone has deciphered it before.
 
-We would like a reproduction of one leaf, or a low-resolution reference copy if that is easier: the letter of
-William Stamford from Calais of 13 March 1655, printed in cipher in Birch's edition of Thurloe's State Papers (vol.
-iii, pp.187-189), whose margin cites the manuscript as "Vol. xxiv. p.76" (and p.73 for the covering letter printed
-with it). That volume is now MSS. Rawl. A. 24/1-2 ("Thurloe Papers, vol. xxiv, part 1", MS. Rawl. A. 24/1, is
-ark:/29072/x0x920fw11hz), marked "Not available online" in your catalogue and described in item-level records for
-individual folios; none of the item records we could see names Stamford or Calais, and we have not been able to
-work out from those records which modern folio carries Birch's old pp.73 and 76, so we would be grateful if your
-staff could resolve that from the item list, or let us know if it is easier for us to submit a plain reproduction
-request naming the old pagination.
+I would like to order a reproduction of one leaf, or a low-resolution reference copy if that is simpler: William Stamford's letter from Calais of 13 March 1655, which Birch printed in cipher in Thurloe's State Papers, vol. iii, pp.187-189, with the margin reference "Vol. xxiv. p.76" (and p.73 for the covering letter printed with it). That volume is now MSS. Rawl. A. 24/1-2; part 1 ("Thurloe Papers, vol. xxiv, part 1", MS. Rawl. A. 24/1) is ark:/29072/x0x920fw11hz, marked "Not available online" in your catalogue and described folio by folio in item-level records. None of the item records we could see names Stamford or Calais, and we have not been able to work out from those records which modern folio carries Birch's old pp.73 and 76. Could your staff resolve that from the item list, or should I simply submit a reproduction request quoting the old pagination?
 
-The question a leaf image would answer: did Thurloe's office write or file a decipherment beside the cipher on
-those pages? We have found no prior decipherment of this letter after a logged search (search log and safe sentence
-at the link below); the answer either confirms that or turns up an office decipherment we have missed.
+What I hope to learn from the leaf is whether Thurloe's office wrote or filed a decipherment beside the cipher. We have found no earlier decipherment of this letter after a logged search; an image would either confirm that or show us an office decipherment we have missed.
 
-Everything we have on this letter, including the search log, is open at
-https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/thurloe-printed .
+Everything we have on the letter, including the search log, is at https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/thurloe-printed
 
 [SIGN-OFF]

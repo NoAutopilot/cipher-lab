@@ -3,6 +3,7 @@ voice: rewritten 26 Sept 2026 17:46 UTC by parent 7i in first-person plain voice
 subject: Henry Debosnys papers -- a question about a possible cipher key
 checked: 25 Sept 2026, GOLD-0D (check-solved verdict: open, no published solution or key found; ciphers/debosnys-1883/NOTES.md). No personal data of any living person in this draft (rule 9); Debosnys died in 1883.
 checked: 26 Sept 2026 17:37 UTC by OUT-CHECK (Opus, session_01Vhu8sRCdAUKSRF3GAdTfF7) -- 6 sentences verified, 3 corrected: ADDRESS CHANGED -- adkhistorycenter.org does not resolve today, and the museum's own live site (https://www.adkhistorymuseum.org/research, fetched 26 Sept 2026, 200; same street address and 518-873-6466 phone as the corroborated listing) says 'Please email research@adkhistorymuseum.org ... for research inquiries' (general: echs@adkhistorymuseum.org); salutation to the site's own name 'Adirondack History Museum'; the 'as far as I have been able to establish ... none has been decrypted' sentence rescoped to what was searched (Farnsworth and Bauer only by text search, NOTES.md check-solved item 1).
+checked: 26 Sept 2026 17:50 UTC by OUT-CHECK-V (Opus, session_01MHgzCNjxMhTNQYiECVCTNn) -- voice rewrite re-checked against the 17:37 text: 8 facts compared, 0 corrected: none (salutation drops 'Essex County Historical Society', matching the museum site's own name per OUT-CHECK; no fact). Disclosure (person directs and sends, agents read/search/check) in paragraph 1; rule 10 sweep clean; [SIGN-OFF] last; repository URL exact.
 status: mailbox-draft (26 Sept 2026 16:59 UTC; awaiting the owner's send)
 
 # Draft email: Adirondack History Center Museum, step 1 (a free question, no order)
@@ -11,25 +12,16 @@ Not sent. The owner sends it and records the date and reply here.
 
 ## Text
 
-Dear Adirondack History Museum / Essex County Historical Society,
+Dear Adirondack History Museum,
 
-One person directs this project and sends this message; the reading, the searches of the literature and the audits
-are done by AI agents (Claude models) working in an open repository, every step logged. I'm researching the four
-cryptograms Henry Debosnys left behind during his 1882-83 imprisonment in Essex County, alongside his clear-text
-poems and drawings, which I understand are held in your collection. In Schmeh's Cipherbrain blog, Cipher Mysteries,
-and searches of the text of Farnsworth's The Adirondack Enigma and Bauer's Unsolved! (not a page-by-page read), we
-found no decryption of any of the four cryptograms and no published key.
+I run a small open project on unsolved historical ciphers. I direct it and send its letters myself; AI agents (Claude models) do the reading, the literature searches and the checking, every step logged in the repository linked below. I'm researching the four cryptograms Henry Debosnys left behind during his 1882-83 imprisonment in Essex County, along with his clear-text poems and drawings, which I understand are in your collection. In Schmeh's Cipherbrain blog, Cipher Mysteries, and searches of the text of Farnsworth's The Adirondack Enigma and Bauer's Unsolved! (not a page-by-page read) we found no decryption of any of the four and no published key.
 
 Two questions, and I'd be grateful for an answer even if it's no to both:
 
-1. Among Debosnys's papers, is there anything that looks like a key, a symbol-to-letter table, or a cipher
-   alphabet, separate from the four encrypted pages? Even one sheet like this could open the cryptograms.
+1. Is there anything among Debosnys's papers that looks like a key, a symbol-to-letter table or a cipher alphabet, separate from the four encrypted pages? A single sheet like that could open the cryptograms.
 
-2. Could we get scans of his clear-text poems and other papers, not just the four cryptograms (already reproduced
-   in Farnsworth and on Cipherbrain)? Comparing his known clear-text writing against the cryptograms is one of the
-   more promising routes to reading them.
+2. Could we get scans of his clear-text poems and other papers, beyond the four cryptograms already reproduced in Farnsworth and on Cipherbrain? Comparing his known clear-text writing against the cryptograms is one of the more promising routes to reading them.
 
-I'd be happy to share back anything useful. Thank you for your time, and for preserving this piece of Adirondack
-history. What we have so far is open at https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/debosnys-1883 .
+I'd be happy to share back anything useful. Thank you for your time, and for looking after this piece of Adirondack history. What we have so far is at https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/debosnys-1883
 
 [SIGN-OFF]
