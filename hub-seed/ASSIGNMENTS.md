@@ -663,3 +663,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T01:41Z	session_015aTDvg65RN4QfJMyHPY14c	V7-QA5 (Sonnet, cap 5)	rolling QA window 23:41-01:41	LANE V7 brief job 3
 2026-09-26T01:55Z	session_017haw3oAm387c9YR2u8fxTE	GOLD-KAL2 done $3.44 D, archived by LANE GOLD3	Russian convention-B s3p/s1: controls 0.999/0.997 vs judge FAIL -1.706/-1.729 (control-backed negatives); s1s-A and s3-B CONTROL BELOW GATE (0.733, 0.677), untested; periodic IC flat
 2026-09-26T01:54Z	session_01V5JZNnbrmrj7P6TamyuvXT	GOLD-KAL3 kaliningrad-2015 Polish substitution from Gutenberg, control first (Sonnet, cap 5, 55 min)	brief 2026-09-26-lane-gold-c5-kaliningrad-polish.md; spawned by LANE GOLD3 after KAL2 (serialised on the spec judge)
+2026-09-26T02:10Z	session_01WVRnosEkzo5M3sBrkcXuKp	bMAT3 (Sonnet, cap 6)	matignon-mayenne-1586 Cipher-3 f.179/f.276 Gallica, label key	brief 2026-09-26-lane-b5-matignon-c3.md; LANE B5
+2026-09-26T02:10Z	session_01Ci9jBEVQz2RMT1tJAc3872	bTHU (Sonnet, cap 2)	thurloe-printed KX-02 four letters, interlinear_align	brief 2026-09-26-lane-b5-thurloe-kx02.md; LANE B5
