@@ -2248,16 +2248,16 @@
     {
       "target": "matignon-mayenne-1586",
       "title": "Mayenne-Forget Cipher-1, 13 partly-read leaves: Bourdeau's period-verified key beats a scrambled-order control (fr16 -1.371 vs -1.786, cover 0.814 vs 0.678), judge FAIL both; U 9.8 pct, M 12.7 pct",
-      "next": "(1g) second blind pass of the f.78v slip lines (Bourdeau's f78 merges page l.10/l.11, ~55 signs missing: bMAT1F), then fresh-seed 20-H known-answer control, gate 16/20",
+      "next": "(1h) pre-registered high-confidence-only gate on a third fresh seed (H-confidence answers 16/17 over two seeds; blended controls 9/20, 11/20 FAIL); then 17-U target, H-confidence meanings only",
       "lane": "B8",
-      "touched": "26 Sept 2026 07:30"
+      "touched": "26 Sept 2026 08:03"
     },
     {
       "target": "malsburg-hessen-1636",
       "title": "Malsburg 1636-37: N=352 K=95; homophonic profile=target control reads 0.928/0.844/0.976 at projected N=1000/2000/3000 (bMALC) -- pooling licenses a real test; ~6,680 more signs on 11 leaves",
-      "next": "transcribe the pool: 507/508 near-duplicate openings first (copy vs homophone equivalences), then ff.28, 30, 23, 16; then homophonic at pooled N, control first",
+      "next": "507/508 are one text (identity 0.470 vs 0.115): transcribe 507 with 508 as settling witness, then ff.23-24,16,14,18,25; homophonic at pooled N, control first",
       "lane": "B8",
-      "touched": "26 Sept 2026 07:30"
+      "touched": "26 Sept 2026 08:03"
     },
     {
       "target": "hessen-1824",

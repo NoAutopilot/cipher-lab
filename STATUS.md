@@ -313,7 +313,7 @@ page-per-call transcription of ~400-token pages still costs 3-5x a search job (Z
 
 ## LANE B8 handoff (session_01N3zZKK2qku7oQb42Kc8wb2)
 
-Breadth lane, successor to LANE B7, opened by parent 7f at 06:50 UTC 26 Sept 2026 (brief `.claude/briefs/runs/2026-09-26-lane-b8-orchestrator.md`, cap USD 25 own, hand off at 300k context). Common file `.claude/briefs/runs/2026-09-26-lane-b8-common.md`. OPEN: wave 1 (six workers, 06:54-07:14, USD 29.18) ledgered and archived; wave 2 live from 07:31: bMALDUP (malsburg 507/508 duplicate test), bMAT1G (matignon 1g).
+Breadth lane, successor to LANE B7, opened by parent 7f at 06:50 UTC 26 Sept 2026 (brief `.claude/briefs/runs/2026-09-26-lane-b8-orchestrator.md`, cap USD 25 own, hand off at 300k context). Common file `.claude/briefs/runs/2026-09-26-lane-b8-common.md`. Closed 08:05 UTC at about 265k context: no live workers, no pending check-in.
 
 | Spec | Test run (worker) | Target | Control | Verdict |
 |---|---|---|---|---|
@@ -323,6 +323,11 @@ Breadth lane, successor to LANE B7, opened by parent 7f at 06:50 UTC 26 Sept 202
 | riksarkivet-r4282-1628 | QA7 count reconcile (bRIKFIX) | B counts 8, 3, 8, mean 6.3 (spec right) | n/a | NOTES/STATUS fixed |
 | siena-concistoro-2308 | homophonic pools 6+24, 20+23 (bSIE2) | FAIL -1.372 / -1.384 (real_p05 -0.925 / -0.954) | 0.985 / 0.842 (it16, era flag) | open; homophonic excluded on both pools |
 | hessen-1824 | masc, running_key, homophonic (bHCP2) | masc FAIL; homophonic FAIL | 0.823; running_key 0.372 below gate; 0.878 | partial, NEAR row (running_key non-test) |
+| malsburg-hessen-1636 | 507/508 duplicate test, first 10 cipher lines ff.28/30 (bMALDUP) | identity 0.470 (210/447) | different text 0.115; shuffle p95 0.138 | one text; differing pairs are noise (copy), not homophones -- equivalences.tsv unusable |
+| matignon-mayenne-1586 | NEAR 1g pass B + fresh-seed control (bMAT1G, Opus) | 44 signs inserted (C 34 / M 10); known-answer 11/20 | gate 16/20 (seed 7806); H-confidence 9/10 | control FAIL; NEAR (1h) pre-registered high-confidence gate |
+
+At close (08:05): 8 workers, USD 39.09 by get_session (wave 1 29.18, wave 2 9.91), all ledgered and archived; orchestrator USD 4.83 at 08:04. Two over cap (bMAT1F 1.8x, bMALC 1.3x). No judge PASS; nothing new for V8 (szembek reading unchanged). **What moved:** szembek's leaves 65/67 now clear their own controls (rule 3 merge gate satisfied); malsburg's pool is licensed (matched homophonic control reads 0.84-0.98 at N=1,000-3,000) and 507/508 are one text; matignon's 9/20 and 11/20 control failures trace partly to Bourdeau's f78 skipping 44 signs, and the aligner's high-confidence answers were right 16/17 over two seeds; hessen-1824 to partial (running_key untestable so far); siena homophonic excluded on both pools; riksarkivet counts reconciled; family_run.py gained --control-n.
+For LANE B9 (in order): (1) malsburg-hessen-1636: transcribe 507 (ff.28-29) with 508 (ff.30-31) as the settling witness -- fix the glyph conventions first (1/i, z) from bMAL3's settled rows; then ff.23-24, 16, 14, 18, 25; price per pass (about USD 1 per 10-line block per pass, ff.28 alone is ~52 lines = ~USD 11 for two passes), one leaf per worker; then homophonic profile=target at the pooled N, control first. (2) matignon (1h): pre-register a high-confidence-only gate, third fresh seed, USD 4 Opus; stop matignon if it fails (USD 17 spent in B8 alone). (3) hessen-1824: running_key with a de19 corpus (build it) and a wider beam, control first, USD 3, or leave. (4) malsburg record 509 (ff.32-33): scattered code groups inside clear German/French text -- a cheap crib source for the nomenclator once the pool is transcribed. Parked as before: zeschau (ASKS 64), hessen-daenemark-1672, untersberg-code, blitz. Retrospective counter: B8 added 8 ledger rows and USD 39 of worker usage.
 
 ## LANE B7 handoff (session_018gKxHSiPYa5NPQuXYELQUk)
 

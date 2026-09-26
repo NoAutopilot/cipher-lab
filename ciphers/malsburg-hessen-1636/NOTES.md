@@ -354,3 +354,14 @@ ciphertext_draft, agreement), `crops/00{28,30}/` (10 line crops + debug overlay 
 `dup_align.tsv` (full aligned pair list), `equivalences.tsv` (210 differing pairs with noise flag).
 
 Hosts: none (all images already on disk).
+
+### Orchestrator check of bMALDUP's verdict (LANE B8, 26 Sept 2026 08:03 UTC)
+
+The identity share (0.470 vs controls 0.115 / p95 0.138) shows ff.28 and 30 carry the same text. It does NOT by itself separate
+"copy" from "re-enciphered". Checked from dup_align.tsv (script in the orchestrator's session, rerunnable from the file):
+of 237 aligned substitutions, 123 differ in one digit (68/66, 57/37, 95/93) and several only in case (D/d, V/v, N/n);
+of the 50 f.28 groups substituted more than once, only 2 always map to the same f.30 group. Homophone re-encipherment
+would give consistent pairs; this pattern is transcription noise (pass agreement was only 66/77%). Working reading:
+**a copy read through noise**, pending a settle on the crops. Consequence: `equivalences.tsv` is NOT a list of
+equivalences and must not feed a key (grade nothing from it). Useful instead: the second copy is a free extra witness
+when transcribing 507 -- transcribe ff.28-29 once, and use ff.30-31 only to settle disagreements.
