@@ -735,3 +735,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T05:44Z	session_011VT63hJtoLER8ZHuMKvK6X	V8-SO16	done 1.87, ledgered D, archived (PR 16 merge; landed by PR-LAND-2)	
 2026-09-26T05:50Z	session_01TerH2ckD73nkTbHkesndEc	LANE B7 bSZR (Sonnet, cap 1.5)	szembek-bk1560 rule-7 re-derivation	brief 2026-09-26-lane-b7-szrederiv.md
 2026-09-26T05:50Z	session_019etyY8UiWzYrFWkyZ2euM5	LANE B7 bLAJ (Sonnet, cap 4)	la18 Latin judge corpus + wiring + szembek judge	brief 2026-09-26-lane-b7-lajudge.md
+2026-09-26T05:50Z	session_01URHyu7b62toNojwiW1CaH4	LANE B7 bMAT1E (Opus, cap 4)	matignon NEAR 1e hand alignment f.78v/79r	brief 2026-09-26-lane-b7-mat1e.md
