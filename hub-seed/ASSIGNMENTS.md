@@ -679,3 +679,7 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T03:06Z	session_01QSwxQ1kjVdpxWvXjWyPzfa	RETRO-APPLY-N (Sonnet, cap 6)	RETRO-2026-09-26b.md proposals 1-5 + LEARN-0058 item 4	brief 2026-09-26-parent-retro-apply-n.md; parent 7e
 2026-09-26T03:06Z	session_01SsuZ47wgUUPDy36B9Lhfbw	LEARN-5 (Sonnet, cap 5)	cross-account learning pass, window from 2026-09-26T00:58Z	brief 2026-09-26-parent-learn5.md; parent 7e
 2026-09-26T03:07Z	session_01PEiTtarakzahhzg8y2yKWg	V8-QA6 (Sonnet, cap 5)	rolling QA, window 01:42 to start	brief 2026-09-26-lane-v8-qa6.md; LANE V8
+2026-09-26T03:08Z	session_01XixYrgYg1ZDGegng7nyCeJ	LANE B6 bCSMAT (Sonnet, cap 3)	check-solved matignon-mayenne-1586, whole editions	brief 2026-09-26-lane-b6-csmat.md; LANE B6
+2026-09-26T03:08Z	session_01E7JfnUzhrrxmR8My73cXLP	LANE B6 bCSLOP (Sonnet, cap 3)	check-solved lope-hurtado-1522, CSP Spain II opened	brief 2026-09-26-lane-b6-cslop.md; LANE B6
+2026-09-26T03:08Z	session_016STrt7P3HYZGNEnMKC9aqX	LANE B6 bUNT7 (Sonnet, cap 3)	untersberg-code second blind pass opening 11	brief 2026-09-26-lane-b6-unt7.md; LANE B6
+2026-09-26T03:08Z	session_01CRyJUfAtBNpa7SmWFbxxG7	LANE B6 bSCOUT6 (Sonnet, cap 6)	scout vs solver-repo HEAD, QUEUE.md second pass	brief 2026-09-26-lane-b6-scout.md; LANE B6

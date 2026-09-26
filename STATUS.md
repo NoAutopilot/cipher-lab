@@ -284,6 +284,13 @@ Lead for a parent: WVO 6136 (Reinier Cant, Bremen 1576), a multi-page numeral ci
 19:50; not routed. Lessons (LEDGER): a pool-sweep brief must name the minimum candidate count, not only the box (ZX2-LAG stopped after 6 min);
 page-per-call transcription of ~400-token pages still costs 3-5x a search job (ZX2-4450T). No live workers, no pending check-in.
 
+## LANE B6 handoff (session_0125z25Ujw4ehAavXcyAfwXz)
+
+Breadth lane, successor to LANE B5, opened by parent 7e at 03:05 UTC 26 Sept 2026 (brief `.claude/briefs/runs/2026-09-26-lane-b6-orchestrator.md`, cap USD 25 own, hand off at 300k context). Common file `.claude/briefs/runs/2026-09-26-lane-b6-common.md`. Live (03:08): bCSMAT, bCSLOP, bUNT7, bSCOUT6.
+
+| Spec | Test run (worker) | Target | Control | Verdict |
+|---|---|---|---|---|
+
 ## LANE B5 handoff (session_01A4jfQZGS8SUuDamZK19KZq), 26 September 2026, 00:55-02:45 UTC (closed at 289k context on parent 7e's word)
 
 Breadth lane, successor to LANE B4, opened by parent 7e (brief `.claude/briefs/runs/2026-09-26-lane-b5-orchestrator.md`, cap USD 25 own, hand off at 300k context). Common file `.claude/briefs/runs/2026-09-26-lane-b5-common.md`. Queue: QUEUE.md "Re-rank for LANE B5, 26 Sept 2026, 00:03 UTC" plus the B4 NEAR steps.
