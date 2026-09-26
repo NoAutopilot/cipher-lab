@@ -1,4 +1,4 @@
-# Access request — RAH Colección Salazar y Castro, batched, 26 Sept 2026 (NX2-GATE2)
+# Access request — RAH Colección Salazar y Castro, batched, 26 Sept 2026 (NX2-GATE2, updated by NX2-CSP)
 
 Target: `ciphers/rah-salazar-soria-sanchez-1524-28/`. See NOTES.md for the full search log, including the
 26 Sept 2026 finding that narrows this request considerably: **three of the five originally-held items
@@ -8,6 +8,12 @@ need a page image to be read — only to be confirmed, at low priority. **Only i
 open cryptanalytic/recovery targets with no route to a reading short of an image or the 1931 BRAH catalogue
 below.** This supersedes the earlier (25/26 Sept) version of this file, which requested all five as equal
 priority before that finding.
+
+**Updated 26 Sept 2026 (NX2-CSP):** the same CSP page-by-page check, run against every other undeciphered row
+in QUEUE.md's "RAH Salazar y Castro index, cipher mentions" section, found two more of this folder's own
+section-(iv) candidates (inv. 6122 Caracciolo, inv. 6124 Sánchez) already calendared — moved to the
+confirmation-only group below. Full search log and table: QUEUE.md, "CSP check-solved sweep (NX2-CSP, 26 Sept
+2026)".
 
 ## Why this can't be done without a person
 
@@ -46,17 +52,26 @@ not perform any cryptanalysis.
 | A-35, ff.310-312 (+1 dup.) | 5180 | Lope de Soria → Charles V | 21 Sept 1525 | Genoa | CSP Spain vol.III pt.1, No. 212, pp.341-343 |
 | A-42, ff.243-244 | 6417 | Lope de Soria → Charles V | 14 Apr 1528 | Mirandola | CSP Spain vol.III pt.2, No. 399, pp.653-654 |
 | A-42, f.443 | 6502 | Alonso Sánchez → Mercurino de Gattinara | 17 Jun 1528 | Venice | CSP Spain vol.III pt.2, No. 462, p.714 |
+| A-41, ff.33-37 | 6122 | Marino Caracciolo → Charles V | 24 Jul 1527 | Milan | CSP Spain vol.III pt.2, No. 122, p.294-95 (moved here 26 Sept 2026, NX2-CSP — see below) |
+| A-41, ff.41-43 | 6124 | Alonso Sánchez → Charles V | 27 Jul 1527 | Venice | CSP Spain vol.III pt.2, "Alonso Sanchez ... to the Emperor," Venice 27 Jul 1527 (moved here 26 Sept 2026, NX2-CSP, flagged — see below) |
 
 **(iv) Caracciolo/Sánchez crib pairs — new candidates from the same Índice pass (QUEUE.md "RAH Salazar y
-Castro index, cipher mentions", NX2-INDEX, 26 Sept 2026), not previously in this folder, added here since
-they are the same collection and a single combined order is more efficient than two separate ones.**
+Castro index, cipher mentions", NX2-INDEX, 26 Sept 2026), not previously in this folder. Updated 26 Sept 2026
+(NX2-CSP): both former "Target" rows below are now found already in print (see QUEUE.md's "CSP check-solved
+sweep" section for the full search log); demoted to the confirmation-only group (iii) above. Kept here as a
+group since the crib rows remain useful independent of the target rows' status.**
 
 | Shelfmark | Inv. no. | Correspondent | Date | Place | Role |
 |---|---|---|---|---|---|
-| A-41, ff.33-37 | 6122 | Marino Caracciolo → Charles V | 24 Jul 1527 | Milan | **Target** — genuinely undeciphered per the Índice; Caracciolo's cipher (Ko.8) is independently proven period-decipherable in this same collection (next row) |
-| A-37, ff.430-434 | 5541/5542 | Marino Caracciolo → Charles V | 16 Jun 1526 | Milan | **Crib** — interlinear period decipherment already in the Índice ("descifrados entre líneas"), same correspondent/cipher as the row above |
-| A-41, ff.41-43 | 6124 | Alonso Sánchez → Charles V | 27 Jul 1527 | Venice | **Target** — undeciphered per the Índice |
-| (same legajo, inv. 6191) | 6191 | Alonso Sánchez → Charles V | — | — | **Crib** — "Texto descifrado de las cartas 6188 y 6189" (same correspondent/legajo, not page-adjacent to 6124 but same run) |
+| A-37, ff.430-434 | 5541/5542 | Marino Caracciolo → Charles V | 16 Jun 1526 | Milan | **Crib** — interlinear period decipherment already in the Índice ("descifrados entre líneas"). No longer needed to solve inv. 6122 (now in print, see above), but still useful to attest Ko.8 as a period key on an image, independent of any target. |
+| (same legajo, inv. 6191) | 6191 | Alonso Sánchez → Charles V | — | — | **Crib** — "Texto descifrado de las cartas 6188 y 6189" (same correspondent/legajo). No longer needed for inv. 6124 (now in print, flagged — see above), but still useful to attest Ko.9 on an image for the rows in this pool that remain genuinely open (QUEUE.md rows 8, 11, 12). |
+
+Genuinely open Alonso Sánchez rows still in this same A-37/A-41 run, not yet added to this folder's own
+table, per QUEUE.md's "CSP check-solved sweep": inv. 5520/5521 (5 Jun 1526), inv. 5543 (18 Jun 1526), inv.
+5545 (19 Jun 1526) — none calendared in CSP. Not added to a formal request row here since this folder's own
+image route is already blocked identically for all of them (no `bibliotecadigital.rah.es` record for any
+item in this collection); a future worker folding them in should reuse the same batched request, not open a
+new one.
 
 ## Suggested action
 
