@@ -17,19 +17,35 @@ AX2-4612S's own null control found the first version's objective (--objective to
 not averaged, log-probability of the decoded stream) unconditionally rewarded deleting a code to
 NULL, since every character's own log-probability is negative and removing one can only raise a
 sum. 100 of 110 codes in a known-correct key changed, almost all toward NULL. Fixed 26 Sept 2026
-(AX2-4612S2) with --objective excess (now the default): score = sum over decoded characters of
+(AX2-4612S2) with --objective excess: score = sum over decoded characters of
 (log2 p(c | context) - mu), mu the fr16 order-5 model's own mean log2-probability per character on
 its held-out text (computed once per run, printed). A candidate value now gains only when its
 characters are better-predicted than average French in context, so deleting or lengthening a value
 is no longer rewarded by construction -- it is rewarded only when the character(s) removed or added
-are themselves below/above that average. --objective total is kept for reference (reproduces the
-AX2-4612S bug). --no-null-below N (default 121, the 1574 table's letter range; AX-NAMES found the
-null codes at 121-149) additionally forbids NULL as a candidate for any code whose value parses as
-an integer below N, whatever the objective.
+are themselves below/above that average. But excess is length-neutral only in aggregate, not per
+candidate: AX2-4612S2's own null control found 53 of 110 codes still changed, because the
+top-60/20 bigram/trigram candidates are drawn by corpus-wide frequency and are therefore reliably
+above mu -- summing more above-average characters still beats a correct single letter that scores
+above mu by less in total but by more per character. Fixed 26 Sept 2026 (AX2-4612S3) with
+--objective paired (now the default): a candidate replaces the current value only if BOTH (a) its
+summed excess gain over all of the code's occurrences exceeds --margin (the excess criterion above,
+unchanged) AND (b) its mean excess per emitted character across those occurrences is higher than
+the current value's own mean excess per character -- a longer candidate must be a better fit per
+character, not merely accumulate more total credit by being longer. A candidate (or the current
+value) that emits zero characters (NULL) has its per-character mean defined as exactly 0.0 (the
+"no information" baseline that an empty stream also scores under excess), so NULL can only replace
+a real letter whose own mean excess is below zero, and a real letter can only replace NULL when its
+own mean excess is above zero. --objective excess and --objective total are both kept for
+reference (excess reproduces AX2-4612S2's bug; total reproduces AX2-4612S's). --no-null-below N
+(default 121, the 1574 table's letter range; AX-NAMES found the null codes at 121-149) additionally
+forbids NULL as a candidate for any code whose value parses as an integer below N, whatever the
+objective. --min-occ N (default 3) additionally skips any code occurring fewer than N times in this
+ciphertext entirely (never tried, never changed) -- a code seen once or twice gives the search too
+little context to judge a per-character mean from.
 
   python3 tools/key_repair.py CIPHERTEXT.tsv --key KEY.tsv --out-key REPAIRED.tsv
       [--out-reading reading.txt] [--out-changes changes.tsv] [--margin 3.0] [--rounds 4]
-      [--objective excess|total] [--no-null-below 121]
+      [--objective paired|excess|total] [--no-null-below 121] [--min-occ 3]
       [--clear-prefix =] [--nonsign '[blank],[blot],[spot]'] [--bigrams 60] [--trigrams 20]
       [--letters abcdefghijklmnopqrstuvwxyz]
 
@@ -55,6 +71,7 @@ reading.txt/tokens.tsv, which tools/decode_key.py generates separately from the 
 import argparse
 import csv
 import functools
+import math
 import os
 import sys
 import unicodedata
@@ -120,17 +137,28 @@ def build_template(recs):
     return template
 
 
-def build_stream(template, values):
-    parts = []
+def build_stream_with_sources(template, values):
+    """Same concatenation as build_stream, plus a parallel list, one entry per emitted character:
+    the code that emitted it, or None for a fixed (clear-text) character. Used by the 'paired'
+    objective to isolate exactly the characters a given code's candidate value contributes, across
+    all of that code's occurrences, wherever they fall in the whole decoded stream."""
+    parts, sources = [], []
     for kind, data in template:
         if kind == "fixed":
             parts.append(data)
+            sources.extend([None] * len(data))
         else:
             val = values.get(data)
             if is_absent(val):
                 continue
-            parts.append(fold(val))
-    return "".join(parts)
+            folded = fold(val)
+            parts.append(folded)
+            sources.extend([data] * len(folded))
+    return "".join(parts), sources
+
+
+def build_stream(template, values):
+    return build_stream_with_sources(template, values)[0]
 
 
 def candidate_values(letters, bigrams, trigrams):
@@ -169,6 +197,22 @@ def make_scorer(model, objective, mu=None):
     raise ValueError(f"unknown objective {objective!r}")
 
 
+def mean_excess_per_char(model, mu, order, stream, sources, code):
+    """Mean of (log2 p(c | context) - mu) over exactly the characters `sources` attributes to
+    `code`, in the given built `stream`. Context is the same left window build_stream's own model
+    scoring uses (up to `order` - 1 preceding characters of the whole stream, matching model.logp's
+    convention exactly). An empty set of characters (the value is NULL) has no characters to
+    average, so its mean is defined as exactly 0.0 -- the same 'no information' baseline an empty
+    string scores under the excess objective (make_scorer's own excess_scorer("") == 0.0)."""
+    total, n = 0.0, 0
+    for i, src in enumerate(sources):
+        if src == code:
+            ctx = stream[max(0, i - order + 1):i]
+            total += math.log2(model.p(ctx, stream[i])) - mu
+            n += 1
+    return total / n if n else 0.0
+
+
 def candidates_for_code(code, cand_values, cand_values_no_null, no_null_below):
     """cand_values already contains NULL (candidate_values() puts it right after the letters); a
     code whose value parses as an integer below --no-null-below may not take it. A code whose value
@@ -183,15 +227,26 @@ def candidates_for_code(code, cand_values, cand_values_no_null, no_null_below):
     return cand_values_no_null if n < no_null_below else cand_values
 
 
-def repair(template, key, scorer, margin, rounds, cand_values, no_null_below=None):
+def repair(template, key, scorer, margin, rounds, cand_values, no_null_below=None, min_occ=1,
+           pair_model=None, pair_mu=None):
     """Greedy per-code local search. scorer(decoded_stream) -> float is the objective to maximise
     (see make_scorer); pass a plain model.logp for the 'total' objective, exactly as before.
+    min_occ: a code occurring fewer than this many times in the template is skipped entirely (never
+    tried, never in `changes`). pair_model/pair_mu (both required together, both None by default):
+    when set, a candidate must ALSO have a higher mean_excess_per_char (see that function) than the
+    current value across all of the code's occurrences before it can beat best_score -- the
+    'paired' objective's second criterion, on top of whatever `scorer` already requires. This makes
+    a longer candidate's *per-character* fit the deciding factor once its *summed* gain has already
+    cleared --margin, rather than letting a longer candidate win purely by accumulating more total
+    credit (AX2-4612S2's own diagnosed bias).
     Returns (final values dict, changes list of (code, count, old, new, gain), rounds actually
     run)."""
     counts = Counter(data for kind, data in template if kind == "sign")
-    codes_by_freq = sorted((c for c in counts if c in key), key=lambda c: (-counts[c], c))
+    codes_by_freq = sorted((c for c in counts if c in key and counts[c] >= min_occ),
+                            key=lambda c: (-counts[c], c))
     cand_values_no_null = [v for v in cand_values if v != "NULL"]
     values = {c: key[c]["value"] for c in key}
+    order = getattr(pair_model, "order", 5) if pair_model is not None else None
     changes = []
     rounds_run = 0
     for _ in range(rounds):
@@ -201,14 +256,25 @@ def repair(template, key, scorer, margin, rounds, cand_values, no_null_below=Non
             cur = values[code]
             cands = candidates_for_code(code, cand_values, cand_values_no_null, no_null_below)
             base_score = scorer(build_stream(template, values))
+            cur_mean = None
+            if pair_model is not None:
+                base_stream, base_sources = build_stream_with_sources(template, values)
+                cur_mean = mean_excess_per_char(pair_model, pair_mu, order, base_stream,
+                                                 base_sources, code)
             best_val, best_score = cur, base_score
             for cand in cands:
                 if cand == cur:
                     continue
                 values[code] = cand
                 s = scorer(build_stream(template, values))
+                paired_ok = True
+                if pair_model is not None and s > best_score:
+                    cand_stream, cand_sources = build_stream_with_sources(template, values)
+                    cand_mean = mean_excess_per_char(pair_model, pair_mu, order, cand_stream,
+                                                      cand_sources, code)
+                    paired_ok = cand_mean > cur_mean
                 values[code] = cur
-                if s > best_score:
+                if s > best_score and paired_ok:
                     best_score, best_val = s, cand
             gain = best_score - base_score
             if best_val != cur and gain > margin:
@@ -248,14 +314,22 @@ def main(argv=None):
     ap.add_argument("--out-changes")
     ap.add_argument("--margin", type=float, default=3.0, help="minimum score gain to accept a change (default 3.0)")
     ap.add_argument("--rounds", type=int, default=4)
-    ap.add_argument("--objective", choices=["total", "excess"], default="excess",
-                     help="excess (default): sum of (log2 p(c|context) - mu), mu the model's own "
-                          "held-out mean; total: raw summed log2 p (AX2-4612S's bug, kept for "
-                          "reference -- unconditionally rewards deleting a code to NULL)")
+    ap.add_argument("--objective", choices=["total", "excess", "paired"], default="paired",
+                     help="paired (default): excess's own margin gate (below) PLUS a candidate's "
+                          "mean excess per character across the code's occurrences must exceed the "
+                          "current value's -- fixes AX2-4612S2's bug (a longer candidate wins by "
+                          "summing more above-average characters, not by fitting better per "
+                          "character); excess: sum of (log2 p(c|context) - mu), mu the model's own "
+                          "held-out mean (AX2-4612S2's bug, kept for reference); total: raw summed "
+                          "log2 p (AX2-4612S's bug, kept for reference -- unconditionally rewards "
+                          "deleting a code to NULL)")
     ap.add_argument("--no-null-below", type=int, default=121,
                      help="a code whose value parses as an integer below this may not take NULL "
                           "(default 121: the 1574 table's letter range is 1-120, AX-NAMES found the "
                           "null codes at 121-149); a non-numeric code is never restricted")
+    ap.add_argument("--min-occ", type=int, default=3,
+                     help="a code occurring fewer than this many times in this ciphertext is never "
+                          "tried or changed (default 3)")
     ap.add_argument("--clear-prefix", default="=")
     ap.add_argument("--nonsign", default="[blank],[blot],[spot]")
     ap.add_argument("--letters", default=ALPHA26)
@@ -277,17 +351,22 @@ def main(argv=None):
     cand_values = candidate_values(a.letters, bigrams, trigrams)
 
     mu = None
-    if a.objective == "excess":
+    if a.objective in ("excess", "paired"):
         mu = compute_mu(model)
         print(f"mu (fr16 order-5 model's mean log2 p/char on its own held-out text): {mu:.4f}")
-    scorer = make_scorer(model, a.objective, mu)
+    scorer_objective = "excess" if a.objective == "paired" else a.objective
+    scorer = make_scorer(model, scorer_objective, mu)
+    pair_model = model if a.objective == "paired" else None
+    pair_mu = mu if a.objective == "paired" else None
 
     values, changes, rounds_run = repair(template, key, scorer, a.margin, a.rounds, cand_values,
-                                          a.no_null_below)
+                                          a.no_null_below, min_occ=a.min_occ,
+                                          pair_model=pair_model, pair_mu=pair_mu)
 
-    print(f"objective={a.objective} no_null_below={a.no_null_below}: {len(changes)} change(s) over "
-          f"{rounds_run} round(s) (margin {a.margin}, {len(cand_values)} candidate values: "
-          f"{len(a.letters)} letters + NULL + {len(bigrams)} bigrams + {len(trigrams)} trigrams)")
+    print(f"objective={a.objective} no_null_below={a.no_null_below} min_occ={a.min_occ}: "
+          f"{len(changes)} change(s) over {rounds_run} round(s) (margin {a.margin}, "
+          f"{len(cand_values)} candidate values: {len(a.letters)} letters + NULL + "
+          f"{len(bigrams)} bigrams + {len(trigrams)} trigrams)")
     print("code\tcount\told\tnew\tgain")
     for code, count, old, new, gain in changes:
         print(f"{code}\t{count}\t{old}\t{new}\t{gain:.3f}")

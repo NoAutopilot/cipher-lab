@@ -190,6 +190,79 @@ v_blocked, c_blocked, _ = kr.repair(flat_template, flat_key, flat_model.logp, ma
 assert v_blocked["9"] == "x" and c_blocked == [], (v_blocked, c_blocked)
 print("ok repair() honours --no-null-below end to end even under the buggy 'total' objective")
 
+# ------------------------------------------------------------------------------- --min-occ
+# A code occurring fewer times than --min-occ is never tried, even with an overwhelmingly rewarding
+# candidate sitting right there (FakeModel above: any stream containing 'ENVOYEE' scores +10).
+low_occ_template = make_template([("fixed", "ENVOY"), ("sign", "9"), ("fixed", "E")])  # code '9' seen once
+v_lowocc, c_lowocc, _ = kr.repair(low_occ_template, key, model.logp, margin=3.0, rounds=4,
+                                   cand_values=cand, min_occ=3)
+assert v_lowocc["9"] == "x" and c_lowocc == [], (v_lowocc, c_lowocc)  # count 1 < min_occ 3: untouched
+v_default, c_default, _ = kr.repair(low_occ_template, key, model.logp, margin=3.0, rounds=4,
+                                     cand_values=cand)  # min_occ defaults to 1: same code IS tried
+assert v_default["9"] == "e" and len(c_default) == 1
+print("ok repair() --min-occ skips a code seen fewer times than the threshold entirely")
+
+# ---------------------------------------------------------- --objective paired (AX2-4612S3's fix)
+# AX2-4612S2's own diagnosed bug, reproduced directly: a two-character candidate whose SUMMED excess
+# gain beats the correct single letter's, even though its MEAN excess per character is lower --
+# 'excess' (summed) accepts it, 'paired' (summed AND mean-per-char) rejects it.
+
+
+class OrderedFakeModel:
+    """order-0 character table (context ignored) exposing the .p(context, ch)/.order interface the
+    'paired' objective's per-character mean check needs, alongside .logp/.bits_per_char for the
+    ordinary excess-scorer machinery."""
+
+    def __init__(self, table, bits_per_char, order=5):
+        self.table = table  # ch -> log2 p(ch), a plain probability table (no context dependence)
+        self.bits_per_char = bits_per_char
+        self.order = order
+
+    def p(self, h, ch):
+        return 2 ** self.table[ch]
+
+    def logp(self, s):
+        return sum(self.table[ch] for ch in s)
+
+
+# mu = -2.0. 'E' (current value): log2 p -1.0 -> excess +1.0 (mean +1.0, one character).
+# 'A','N' (bigram candidate 'an', folds to 'AN'): log2 p -1.4 each -> excess +0.6 each; SUMMED
+# 1.2 > single-E's 1.0 (the bug -- excess alone would swap 'e' for the bigram), but the bigram's
+# MEAN +0.6 is below 'e's mean +1.0 (paired's second criterion correctly rejects it).
+pair_table = {"E": -1.0, "A": -1.4, "N": -1.4, "X": -6.0}
+pair_model = OrderedFakeModel(pair_table, bits_per_char=2.0)
+pair_mu = kr.compute_mu(pair_model)
+assert pair_mu == -2.0, pair_mu
+pair_scorer = kr.make_scorer(pair_model, "excess", pair_mu)
+pair_template = make_template([("sign", "9")])
+pair_key = {"9": {"value": "e", "grade": "M", "source": "test", "note": ""}}
+pair_cand = kr.candidate_values(["e", "x"], ["an"], [])
+
+# Plain excess: the bigram's higher SUMMED excess wins -- the bug, reproduced on purpose.
+v_excess_bug, c_excess_bug, _ = kr.repair(pair_template, pair_key, pair_scorer, margin=0.1, rounds=1,
+                                           cand_values=pair_cand)
+assert v_excess_bug["9"] == "an", v_excess_bug
+assert len(c_excess_bug) == 1 and c_excess_bug[0][3] == "an"
+print("ok --objective excess alone reproduces AX2-4612S2's bug (longer-but-worse-per-char wins)")
+
+# paired: same margin, same candidates, but now the mean-per-char check blocks the swap.
+v_paired_fix, c_paired_fix, _ = kr.repair(pair_template, pair_key, pair_scorer, margin=0.1, rounds=1,
+                                           cand_values=pair_cand, pair_model=pair_model,
+                                           pair_mu=pair_mu)
+assert v_paired_fix["9"] == "e" and c_paired_fix == [], (v_paired_fix, c_paired_fix)
+print("ok --objective paired rejects it (mean excess per char must also improve, not just the sum)")
+
+# The reverse direction also holds: a single letter that IS better per character AND in total than
+# the current (badly-scoring) value wins under both excess and paired (paired is strictly more
+# restrictive than excess, never less -- it never accepts something excess alone would reject). No
+# bigram candidate here, so there is nothing for a length-based bias to prefer over the single letter.
+pair_key_rev = {"9": {"value": "xx", "grade": "M", "source": "test", "note": ""}}  # 'X' excess -4.0 each
+pair_cand_rev = kr.candidate_values(["e", "x"], [], [])
+v_rev, c_rev, _ = kr.repair(pair_template, pair_key_rev, pair_scorer, margin=0.1, rounds=1,
+                             cand_values=pair_cand_rev, pair_model=pair_model, pair_mu=pair_mu)
+assert v_rev["9"] == "e" and len(c_rev) == 1
+print("ok --objective paired still accepts a candidate that wins on both the sum and the mean")
+
 # ------------------------------------------------------------------- make_scorer / compute_mu
 
 
@@ -258,6 +331,16 @@ clean_values, clean_changes, _ = kr.repair(clean_template, clean_key, fr16_score
 assert clean_changes == [], clean_changes
 print(f"ok null control on clean synthetic French text ({len(letters_used)} codes) proposes 0 "
       f"changes under --objective excess (mu={fr16_mu:.4f})")
+
+# Same null control, under --objective paired (AX2-4612S3's own required regression test): paired
+# is strictly more restrictive than excess (both criteria must hold, not just the summed one), so a
+# null control clean under excess must also be clean under paired.
+clean_values_p, clean_changes_p, _ = kr.repair(clean_template, clean_key, fr16_scorer, margin=3.0,
+                                                rounds=4, cand_values=fr16_cand, no_null_below=121,
+                                                pair_model=fr16_model, pair_mu=fr16_mu)
+assert clean_changes_p == [], clean_changes_p
+print("ok null control on the same clean synthetic French text proposes 0 changes under "
+      "--objective paired too")
 
 # ---------------------------------------------------------------- write_key
 

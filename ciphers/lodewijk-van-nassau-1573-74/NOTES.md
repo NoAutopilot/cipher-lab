@@ -3004,3 +3004,123 @@ Files: `tools/key_repair.py`, `tools/tests/test_key_repair.py`, `ax2_4612s/{null
 known_answer_control_s2.py,known_answer_control_s2.log}`, this section. `key_full.tsv`, `key.tsv`,
 `key_5799.tsv` untouched (rule 3: a control below gate means the target is not run; no
 `key_4612_repair.tsv`/`key_5799_repair.tsv` produced this box). No network. No images.
+
+## AX2-4612S3: key repair, paired objective (26 Sept 2026, LANE AX2)
+
+Worker AX2-4612S3 (Sonnet, session_012U5wYXUNFUghFcotwZw9wX), per
+`.claude/briefs/runs/2026-09-26-lane-ax2-4612s3.md`, box 45 min from 08:05:52 UTC. Third and last
+key_repair iteration per the brief; fixes AX2-4612S2's own diagnosed bug (its NOTES.md section
+above): `--objective excess` is length-neutral only in aggregate, not per candidate -- the top-60/20
+bigram/trigram candidates are drawn by corpus-wide frequency and are therefore reliably above mu, so
+summing more above-average characters still beats a correct single letter that scores above mu by
+less in total but by more per character (53/110 false positives, 0.625 known-answer recovery,
+CONTROL BELOW GATE both halves).
+
+**Unit 1: tool fix.** `tools/key_repair.py` gets `--objective paired` (now the default, `excess` and
+`total` both kept for reference): a candidate replaces the current value only if BOTH (a) its
+summed excess gain over all of the code's occurrences exceeds `--margin` (unchanged from `excess`)
+AND (b) its mean excess per emitted character across those occurrences is higher than the current
+value's own mean excess per character -- a longer candidate must fit better per character, not merely
+accumulate more total credit by being longer. Implementation: `build_stream_with_sources()` (a
+`build_stream()` refactor, byte-identical output, plus a parallel list naming which code emitted each
+character) and `mean_excess_per_char()` (mean of `log2 p(c|context) - mu` over exactly one code's
+emitted characters, defined as 0.0 when a candidate or the current value emits zero characters --
+the same "no information" baseline an empty stream already scores under `excess`). Also
+`--min-occ N` (default 3): a code occurring fewer than N times in this ciphertext is never tried or
+changed at all (too little context to judge a per-character mean from). `tools/tests/test_key_repair.py`
+extended: `--min-occ` skips a low-occurrence code end to end; a direct reproduction of AX2-4612S2's
+bug shape (an `OrderedFakeModel` where a two-character candidate's summed excess beats a correct
+single letter's but its mean excess per character is lower) shows `excess` accepts the swap and
+`paired` rejects it; the reverse case (a single letter that wins on both the sum and the mean) shows
+`paired` still accepts a genuinely better candidate; the brief's own required regression test (a null
+control on clean synthetic French text proposes 0 changes) is re-run under `--objective paired`
+alongside the existing `excess` check (paired is a strict superset of excess's requirements, so this
+is expected to pass, and does). All 22 checks pass, `python3 tools/tests/test_key_repair.py` (about
+13s, dominated by the one-time fr16 model load/build).
+
+**Gates, written here at 08:14 UTC before any control number below was computed (verbatim from the
+brief, "Controls FIRST, exactly AX2-4612S2's two controls and gates"):** "null control <= 2 false;
+known-answer >= 6/8 recovered, bigram codes reported separately, <= 2 false). Below gate = CONTROL
+BELOW GATE: stop, report the null control's changed codes, and write one line in NOTES.md naming the
+H-S hypothesis as untested by this tool family (so it is not re-briefed a fourth time without a new
+idea)." Both controls run on `ax4612tr/ciphertext_5811_cut833.tsv` (5811's own ciphertext, cut to
+4612 v3's N=833, key_full's own known-correct reading) against `key_full.tsv`, exactly as AX2-4612S
+and AX2-4612S2, now under `--objective paired --no-null-below 121 --min-occ 3` (all now default).
+
+**(a) Null control.** `python3 tools/key_repair.py ax4612tr/ciphertext_5811_cut833.tsv --key
+key_full.tsv --out-key /tmp/null_control_key_s3.tsv --out-changes ax2_4612s/null_control_changes_s3.tsv
+--margin 3.0 --rounds 4` (objective `paired`, `--no-null-below 121`, `--min-occ 3`, all now default):
+```
+29 of 110 codes present (26%) changed across 34 change-events over 3 rounds -- down from AX2-4612S2's
+53/110 (48%) under --objective excess, but still 29 false positives against a gate of <=2. Codes
+changed: 3, 5, 7, 11, 13, 16, 18, 20, 30, 36, 51, 53, 58, 59, 66, 70, 77, 87, 91, 94, 100, 109, 112,
+117, 119, 120, 123, 127, 130. Most single changes still go to a common French bigram/trigram (11
+'p'(x9)->'des' gain 53.9, then 'des'->'les' gain 12.6; 16 'q'(x9)->'ere' gain 12.0; 3 'n'(x8)->'les'
+gain 20.0; 109 'k'(x3)->'ent' gain 72.8); only one goes to NULL (123 'l'(x7)->NULL gain 59.5, then
+chases NULL->'ovs'); a few chase across rounds (7: o->on->qve; 117: m->u->est; 119: m->il->tre) the
+same way AX2-4612S/S2 described.
+```
+Gate: 29 <= 2? False. **CONTROL BELOW GATE**, again -- but a real, substantial reduction from
+AX2-4612S2's 53 (45% fewer false positives).
+
+**(b) Known-answer control, 3 seeds, k=8 (6 swapped in 3 pairs + 2 given a bigram value).**
+`ax2_4612s/known_answer_control_s3.py` (`ax2_4612s/known_answer_control_s3.log`):
+```
+seed 0: recovered 3/8 (0/2 bigram-hidden); false changes on 160 untouched codes: 33
+seed 1: recovered 4/8 (0/2 bigram-hidden); false changes: 32
+seed 2: recovered 4/8 (0/2 bigram-hidden); false changes: 43
+
+GATE: mean recovery 0.458 (>= 0.75 needed)? False. bigram-only mean recovery 0.000 (>= not gated
+separately, reported)? False changes max 43 (<= 2 needed)? False.
+```
+
+**Gate verdict: CONTROL BELOW GATE on both halves** ((a) 29 false positives vs a gate of <=2; (b)
+mean recovery 0.458 vs a gate of >=0.75, max false changes 43 vs <=2). Per the brief and CLAUDE.md
+rule 3: stop here. Unit 3 (targets 4612 v3 and 5799) **not run** -- no
+`key_4612_repair.tsv`/`key_5799_repair.tsv`/`decode_*_repair.json`/`reading_*_repair*` produced this
+box; `key_full.tsv`, `key.tsv`, `key_5799.tsv` untouched.
+
+**Diagnosis: the paired objective is a real improvement (false positives 53->29, a 45% cut) but
+introduces no new bias to fix -- it has hit the ceiling of what per-character averaging alone can
+do, because the underlying assumption ("a correct rare letter should score higher per character
+than an incorrect common bigram") is often false for an order-5 character model.** A frequent short
+French bigram like "les", "de", "en", "est" is grammatically and lexically probable in a very wide
+range of contexts -- that is exactly why it is frequent -- so its own per-character log-probability
+is often genuinely *higher* than a real but locally rare letter's (q, z, x, h, k, b -- H-S's own
+list, and not coincidentally the letters a homophonic table is most likely to assign spare codes
+to). Paired correctly rejects a candidate that wins only by being longer (the unit test's own
+`OrderedFakeModel` case), but it cannot reject a candidate that is genuinely better-fitted per
+character *and* happens to be wrong -- and real French text supplies exactly that shape of
+candidate constantly. This is visible in the known-answer control's own numbers: recovery *fell*
+(0.625 -> 0.458) and bigram-hidden recovery *collapsed* (3/6 -> 0/6) even as false positives fell,
+because paired is stricter in general (rejects more candidates of every kind, correct and incorrect
+alike) rather than being selective for the *right* kind of correctness. Unlike AX2-4612S's NULL bug
+(a construction artifact: every candidate of length 0 always wins) and AX2-4612S2's length bug (a
+construction artifact: the candidate pool's own frequency selection biases mean excess upward for
+longer candidates), this is not a bug in the scoring rule -- it is what an order-5 character model
+of ordinary French *actually predicts* at codes that, by H-S's own premise, hold letters chosen
+precisely because they are locally surprising. A local-context language model cannot be the
+instrument that finds a code deliberately assigned to defeat local-context prediction.
+
+**Verdict for AX2-4612S3, and for the key_repair.py tool family as a whole.** Three iterations
+(total -> excess -> paired) each fixed the specific construction artifact the previous iteration's
+control diagnosed (unconditional NULL-seeking; unconditional length-seeking), and each fix produced
+a real, measurable improvement in the null control (100 -> 53 -> 29 false positives) -- confirming
+every prior diagnosis was correct. But the known-answer control's recovery number never once cleared
+even half of its own gate (0.000 -> 0.625 -> 0.458, gate 0.75) and the bigram-hidden recovery this
+tool exists to test regressed to zero this iteration. **H-S (a few of key_full.tsv's rare-letter
+codes might stand for a two-letter French syllable rather than the letter key_full.tsv currently
+gives them) is untested by this tool family, not refuted, after three iterations -- and should not be
+re-briefed against key_repair.py a fourth time without a materially different instrument** (e.g. a
+candidate pool restricted to bigrams that are locally, not corpus-wide, well-predicted at that
+specific position; or a model that scores a candidate against its neighbouring *codes'* own
+plaintext-word structure rather than a bare character n-gram; or abandoning local per-code search in
+favour of a global reassignment search that can trade one code's per-character loss for a net gain
+elsewhere). This line is written here precisely so a fourth iteration is not briefed on the same
+premise (per the brief's own instruction).
+
+Files: `tools/key_repair.py`, `tools/tests/test_key_repair.py`,
+`ax2_4612s/{null_control_changes_s3.tsv,known_answer_control_s3.py,known_answer_control_s3.log}`,
+this section, `HYPOTHESES.md` (two rows appended). `key_full.tsv`, `key.tsv`, `key_5799.tsv`
+untouched (rule 3: a control below gate means the target is not run; no
+`key_4612_repair.tsv`/`key_5799_repair.tsv` produced this box). No network. No images.
