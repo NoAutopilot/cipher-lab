@@ -897,3 +897,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T16:21Z	session_012ap8d5PTJGhZqiuwTQTBtq	PR-LAND-3 (Sonnet, cap 3)	land PRs 21 and 22 ([JSTOR-]/[LQ-L19]) into the queue rows, close without merge	brief 2026-09-26-parent-pr-land-3.md; parent 7h
 2026-09-26T16:27Z	session_01UEoxKgoMeHsdYhavC2kPvH	LADDER-TOOL (Sonnet, cap 6)	catalogue ladder per institution + tools/lq_answer_check.py landing gate + wiring (owner ask 16:30)	brief 2026-09-26-parent-ladder-tool.md; parent 7h
 2026-09-26T16:33Z	session_01VX8vKhBxLCySyatJz4bXBk	DESK-CHECK (Sonnet, cap 5)	tools/desk_check.py: stale outreach drafts vs landed runner answers, desk mismatches; wired into parent.md duty 6, PR-LAND, board (owner ask 16:32)	brief 2026-09-26-parent-desk-check.md; parent 7h
+2026-09-26T16:36Z	session_01NKnuGZhQg4tAKTFs4UE1Wj	bSALI	done 2.05 D (get_session), ledgered, retitled ARCHIVED, archived by 7h	Salviati irregular non-test; syllabary ladder closed
+2026-09-26T16:36Z	session_014Xv2JvWBK3fDvJSHjuBjfM	bMALS	done 7.86 D- (2.6x cap, get_session), ledgered, retitled ARCHIVED, archived by 7h	malsburg spans reconciled, 0 consistent-word codes
