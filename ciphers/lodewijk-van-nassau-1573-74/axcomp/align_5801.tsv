@@ -1,0 +1,3276 @@
+cipher_line	idx	raw	kind	value	repair	plain_chunk	status
+05801_p1_L02	0	Messieurs	clear			messieurs	clear
+05801_p1_L02	1	mes	clear			me	clear
+05801_p1_L02	2	freres	clear			sfrres	clear
+05801_p1_L02	3	Jay	clear			jay	clear
+05801_p1_L02	4	recue	clear			receu	clear
+05801_p1_L02	5	vos	clear			vos	clear
+05801_p1_L02	6	trois	clear			lett	clear
+05801_p1_L02	7	derniers	clear			resdates	clear
+05801_p1_L02	8	l'une	clear			lune	clear
+05801_p1_L02	9	de	clear			de	clear
+05801_p1_L02	10	Dillenberg	clear			dillenberg	clear
+05801_p1_L02	11	le	clear			le	clear
+05801_p1_L02	12	xvi	clear				clear
+05801_p1_L02	13	e	clear			et	clear
+05801_p1_L02	14	l'autre	clear			lautre	clear
+05801_p1_L02	15	de	clear			de	clear
+05801_p1_L02	16	le	clear			bed	clear
+05801_p1_L02	17	xx	clear			bur	clear
+05801_p1_L02	18	du	clear			led	clear
+05801_p1_L02	19	present	clear			uprsent	clear
+05801_p1_L02	20	Pour	clear			pour	clear
+05801_p1_L02	21	vous	clear			vous	clear
+05801_p1_L02	22	respondre	clear			respondre	clear
+05801_p1_L02	23	sur	clear			surl	clear
+05801_p1_L02	24	ycelles	clear			squells	clear
+05801_p1_L02	25	par	clear			par	clear
+05801_p1_L02	26	ensemble	clear			ensemble	clear
+05801_p1_L02	27	126	num	126		n	conflict:e
+05801_p1_L02	28	132	num	132		e	agrees
+05801_p1_L02	29	140	num	140		s	agrees
+05801_p1_L02	30	52	num	52		a	conflict:d
+05801_p1_L02	31	71	num	71		u	conflict:a
+05801_p1_L02	32	37	num	37		r	conflict:s
+05801_p1_L02	33	49	num	49		o	conflict:e
+05801_p1_L02	34	56	num	56		y	conflict:u
+05801_p1_L02	35	82	num	82		e	agrees
+05801_p1_L02	36	139	num	139		a	conflict:t
+05801_p1_L02	37	125	num	125		s	conflict:e
+05801_p1_L02	38	62	num	62		s	conflict:e
+05801_p1_L02	39	26	num	26		e	conflict:t
+05801_p1_L02	40	28	num	28		z	conflict:e
+05801_p1_L02	41	82	num	82		v	conflict:e
+05801_p1_L02	42	59	num	59		o	conflict:e
+05801_p1_L02	43	84	num	84		u	conflict:o
+05801_p1_L02	44	37	num	37		s	agrees
+05801_p1_L02	45	28	num	28		r	conflict:e
+05801_p1_L02	46	67	num	67		e	agrees
+05801_p1_L02	47	97	num	97		m	conflict:e
+05801_p1_L02	48	29	num	29		e	conflict:r
+05801_p1_L02	49	8	num	8		r	conflict:s
+05801_p1_L02	50	82	num	82		c	conflict:e
+05801_p1_L02	51	26	num	26		i	conflict:t
+05801_p1_L02	52	15	num	15		e	agrees
+05801_p1_L02	53	9	num	9		r	conflict:e
+05801_p1_L02	54	2	num	2		d	conflict:a
+05801_p1_L02	55	140	num	140		u	conflict:s
+05801_p1_L02	56	126	num	126		b	conflict:e
+05801_p1_L02	57	126	num	126		o	conflict:e
+05801_p1_L02	58	142	num	142		n	conflict:e
+05801_p1_L02	59	62	num	62		d	conflict:e
+05801_p1_L02	60	16	num	16		e	conflict:n
+05801_p1_L02	61	103	num	103		b	conflict:e
+05801_p1_L02	62	77	num	77		v	conflict:e
+05801_p1_L02	63	27	num	27		o	conflict:e
+05801_p1_L02	64	132	num	132		i	conflict:e
+05801_p1_L02	65	195	num	195		r	conflict:a
+05801_p1_L02	66	59	num	59		q	conflict:e
+05801_p1_L02	67	39	num	39		u	agrees
+05801_p1_L02	68	25	num	25		e	agrees
+05801_p1_L02	69	139	num	139		f	conflict:t
+05801_p1_L02	70	190	num	190		a	conflict:e
+05801_p1_L02	71	126	num	126		i	conflict:e
+05801_p1_L02	72	1	num	1		t	conflict:r
+05801_p1_L02	73	6	num	6		e	agrees
+05801_p1_L02	74	76	num	76		s	conflict:e
+05801_p1_L02	75	27	num	27		p	conflict:e
+05801_p1_L02	76	125	num	125		o	conflict:e
+05801_p1_L02	77	132	num	132		u	conflict:e
+05801_p1_L02	78	140	num	140		r	conflict:s
+05801_p1_L02	79	61	num	61		n	conflict:e
+05801_p1_L02	80	27	num	27		o	conflict:e
+05801_p1_L02	81	30	num	30		u	conflict:e
+05801_p1_L02	82	102	num	102		s	conflict:t
+05801_p1_L02	83	28	num	28		a	conflict:e
+05801_p1_L02	84	31	num	31		s	conflict:i
+05801_p1_L02	85	21	num	21		s	agrees
+05801_p1_L02	86	121	num	121		i	conflict:l
+05801_p1_L02	87	140	num	140		s	agrees
+05801_p1_L02	88	82	num	82		t	conflict:e
+05801_p1_L02	89	32	num	32		e	agrees
+05801_p1_L02	90	126	num	126		r	conflict:e
+05801_p1_L02	91	132	num	132		e	agrees
+05801_p1_L02	92	72	num	72		t	conflict:e
+05801_p1_L02	93	71	num	71		s	conflict:a
+05801_p1_L02	94	7	num	7		e	conflict:u
+05801_p1_L02	95	901	num	901		c	single
+05801_p1_L02	96	68	num	68		o	conflict:e
+05801_p1_L02	97	22	num	22		u	conflict:r
+05801_p1_L02	98	145	num	145		r	conflict:a
+05801_p1_L02	99	126	num	126		i	conflict:e
+05801_p1_L02	100	131	num	131		r	conflict:e
+05801_p1_L02	101	133	num	133		la	conflict:l
+05801_p1_L02	102	126	num	126		p	conflict:e
+05801_p1_L02	103	59	num	59		o	conflict:e
+05801_p1_L02	104	39	num	39		v	agrees
+05801_p1_L02	105	22	num	22		r	agrees
+05801_p1_L02	106	89	num	89		e	agrees
+05801_p1_L06	0	84	num	84		c	conflict:o
+05801_p1_L06	1	312	num	312		a	single
+05801_p1_L06	2	12	num	12		r	conflict:e
+05801_p1_L06	3	223	num	223		o	conflict:a
+05801_p1_L06	4	129	num	129		n	conflict:e
+05801_p1_L06	5	132	num	132		c	conflict:e
+05801_p1_L06	6	150	num	150		q	conflict:best
+05801_p1_L06	7	121	num	121		u	conflict:l
+05801_p1_L06	8	6	num	6		e	agrees
+05801_p1_L06	9	21	num	21		s	agrees
+05801_p1_L06	10	77	num	77		j	conflict:e
+05801_p1_L06	11	27	num	27		e	agrees
+05801_p1_L06	12	129	num	129		n	conflict:e
+05801_p1_L06	13	7	num	7		a	conflict:u
+05801_p1_L06	14	2	num	2		t	conflict:a
+05801_p1_L06	15	72	num	72		e	agrees
+05801_p1_L06	16	82	num	82		n	conflict:e
+05801_p1_L06	17	26	num	26		d	conflict:t
+05801_p1_L06	18	126	num	126		u	conflict:e
+05801_p1_L06	19	125	num	125		les	conflict:e
+05801_p1_L06	20	132	num	132		plus	conflict:e
+05801_p1_L06	21	145	num	145		vos	conflict:a
+05801_p1_L06	22	32	num	32		t	conflict:e
+05801_p1_L06	23	52	num	52		r	conflict:d
+05801_p1_L06	24	27	num	27		e	agrees
+05801_p1_L06	25	Bonne	clear			bonn	clear
+05801_p1_L06	26	3	num	3		e	agrees
+05801_p1_L06	27	14	num	14		a	agrees
+05801_p1_L06	28	37	num	37		f	agrees
+05801_p1_L06	29	78	num	78		f	conflict:e
+05801_p1_L06	30	125	num	125		e	agrees
+05801_p1_L06	31	134	num	134		c	conflict:t
+05801_p1_L06	32	122	num	122		t	conflict:r
+05801_p1_L06	33	14	num	14		i	conflict:a
+05801_p1_L06	34	9	num	9		o	conflict:e
+05801_p1_L06	35	132	num	132		n	conflict:e
+05801_p1_L06	36	12	num	12		e	agrees
+05801_p1_L06	37	112	num	112		n	conflict:s
+05801_p1_L06	38	78	num	78		v	conflict:e
+05801_p1_L06	39	28	num	28		e	agrees
+05801_p1_L06	40	89	num	89		r	conflict:e
+05801_p1_L06	41	28	num	28		s	conflict:e
+05801_p1_L06	42	34	num	34		m	conflict:i
+05801_p1_L06	43	57	num	57		o	conflict:i
+05801_p1_L06	44	9	num	9		y	conflict:e
+05801_p1_L06	45	2	num	2		q	conflict:a
+05801_p1_L06	46	9	num	9		u	conflict:e
+05801_p1_L06	47	82	num	82		e	agrees
+05801_p1_L06	48	125	num	125		v	conflict:e
+05801_p1_L06	49	22	num	22		o	conflict:r
+05801_p1_L06	50	30	num	30		s	conflict:e
+05801_p1_L06	51	132	num	132		t	conflict:e
+05801_p1_L06	52	126	num	126		r	conflict:e
+05801_p1_L06	53	49	num	49		e	agrees
+05801_p1_L06	54	60	num	60		e	agrees
+05801_p1_L06	55	82	num	82		n	conflict:e
+05801_p1_L06	56	139	num	139		t	agrees
+05801_p1_L06	57	126	num	126		i	conflict:e
+05801_p1_L06	58	90	num	90		e	conflict:n
+05801_p1_L06	59	10	num	10		r	agrees
+05801_p1_L06	60	26	num	26		z	conflict:t
+05801_p1_L06	61	52	num	52		l	conflict:d
+05801_p1_L06	62	81	num	81		e	agrees
+05801_p1_L06	63	195	num	195		q	conflict:a
+05801_p1_L06	64	126	num	126		u	conflict:e
+05801_p1_L06	65	83	num	83		a	conflict:r
+05801_p1_L06	66	3	num	3		v	conflict:e
+05801_p1_L06	67	78	num	78		e	agrees
+05801_p1_L06	68	89	num	89		z	conflict:e
+05801_p1_L06	69	172	num	172		c	conflict:a
+05801_p1_L06	70	97	num	97		e	agrees
+05801_p1_L06	71	115	num	115		s	conflict:u
+05801_p1_L06	72	81	num	81		t	conflict:e
+05801_p1_L06	73	61	num	61		e	agrees
+05801_p1_L06	74	20	num	20		c	single
+05801_p1_L06	75	82	num	82		a	conflict:e
+05801_p1_L06	76	59	num	59		u	conflict:e
+05801_p1_L06	77	126	num	126		s	conflict:e
+05801_p1_L06	78	50	num	50		e	conflict:s
+05801_p1_L06	79	71	num	71		c	conflict:a
+05801_p1_L06	80	28	num	28		o	conflict:e
+05801_p1_L06	81	77	num	77		m	conflict:e
+05801_p1_L06	82	6	num	6		m	conflict:e
+05801_p1_L06	83	38	num	38		u	agrees
+05801_p1_L06	84	29	num	29		n	conflict:r
+05801_p1_L06	85	89	num	89		e	agrees
+05801_p1_L06	86	126	num	126		q	conflict:e
+05801_p1_L06	87	132	num	132		u	conflict:e
+05801_p1_L06	88	142	num	142		i	conflict:e
+05801_p1_L06	89	125	num	125		t	conflict:e
+05801_p1_L06	90	85	num	85		o	conflict:u
+05801_p1_L06	91	1250	doubtful				doubtful
+05801_p1_L06	92	32	num	32		u	conflict:e
+05801_p1_L06	93	8	num	8		c	conflict:s
+05801_p1_L06	94	38	num	38		h	conflict:u
+05801_p1_L06	95	77	num	77		e	agrees
+05801_p1_L06	96	125	num	125		l	conflict:e
+05801_p1_L06	97	132	num	132		a	conflict:e
+05801_p1_L06	98	91	num	91		c	conflict:a
+05801_p1_L06	99	126	num	126		h	conflict:e
+05801_p1_L06	100	75	num	75		r	conflict:e
+05801_p1_L06	101	100	num	100		e	single
+05801_p1_L06	102	82	num	82		s	conflict:e
+05801_p1_L06	103	28	num	28		t	conflict:e
+05801_p1_L06	104	78	num	78		i	conflict:e
+05801_p1_L06	105	15	num	15		e	agrees
+05801_p1_L06	106	2	num	2		n	conflict:a
+05801_p1_L06	107	77	num	77		n	conflict:e
+05801_p1_L06	108	125	num	125		e	agrees
+05801_p1_L06	109	132	num	132		t	conflict:e
+05801_p1_L06	110	Vous	clear			vous	clear
+05801_p1_L06	111	aurez	clear			avez	clear
+05801_p1_L06	112	sans	clear			sans	clear
+05801_p1_L06	113	doubte	clear			doubte	clear
+05801_p1_L06	114	par	clear			part	clear
+05801_p1_L06	115	[illeg.	clear				clear
+05801_p1_L06	116	cursive	clear			iculire	clear
+05801_p1_L06	117	word]	clear			ment	clear
+05801_p1_L06	118	entendu	clear			entendu	clear
+05801_p1_L06	119	et	clear			par	clear
+05801_p1_L06	120	l'autre	clear			mestr	clear
+05801_p1_L06	121	du	clear				clear
+05801_p1_L06	122	17	num	17		o	conflict:r
+05801_p1_L06	123	[illeg]	clear			ispr	clear
+05801_p1_L06	124	avant	clear			cdent	clear
+05801_p1_L06	125	la	clear			e	clear
+05801_p1_L06	126	copye	clear			slune	clear
+05801_p1_L06	127	qui	clear			dul	clear
+05801_p1_L06	128	4	num	4		a	conflict:d
+05801_p1_L06	129	117	num	117		u	conflict:e
+05801_p1_L06	130	102	num	102		t	agrees
+05801_p1_L06	131	8	num	8		r	conflict:s
+05801_p1_L06	132	31	num	31		e	conflict:i
+05801_p1_L06	133	82	num	82		d	conflict:e
+05801_p1_L06	134	22	num	22		u	conflict:r
+05801_p1_L06	135	73	num	73		e	conflict:n
+05801_p1_L06	136	103	num	103		t	conflict:e
+05801_p1_L06	137	2	num	2		l	conflict:a
+05801_p1_L06	138	27	num	27		a	conflict:e
+05801_p1_L06	139	33	num	33		u	conflict:e
+05801_p1_L06	140	65	num	65		t	agrees
+05801_p1_L06	141	120	num	120		r	conflict:e
+05801_p1_L06	142	47	num	47		e	agrees
+05801_p1_L06	143	3	num	3		d	conflict:e
+05801_p1_L06	144	32	num	32		u	conflict:e
+05801_p1_L06	145	132	num	132		du	conflict:e
+05801_p1_L06	146	190	num	190		courran	conflict:e
+05801_p1_L06	147	85	num	85		t	conflict:u
+05801_p1_L06	148	84	num	84		l	conflict:o
+05801_p1_L06	149	103	num	103		a	conflict:e
+05801_p1_L06	150	4	num	4		c	conflict:d
+05801_p1_L06	151	5	num	5		a	conflict:e
+05801_p1_L06	152	102	num	102		u	conflict:t
+05801_p1_L06	153	79	num	79		s	conflict:e
+05801_p1_L06	154	85	num	85		s	conflict:u
+05801_p1_L06	155	83	num	83		e	conflict:r
+05801_p1_L06	156	22	num	22		q	conflict:r
+05801_p1_L06	157	85	num	85		u	agrees
+05801_p1_L06	158	35	num	35		i	conflict:s
+05801_p1_L06	159	82	num	82		m	conflict:e
+05801_p1_L06	160	119	num	119		e	agrees
+05801_p1_L06	161	12	num	12		m	conflict:e
+05801_p1_L06	162	111	num	111		e	agrees
+05801_p1_L06	163	9	num	9		u	conflict:e
+05801_p1_L06	164	103	num	103		t	conflict:e
+05801_p1_L06	165	82	num	82		e	agrees
+05801_p1_L06	166	29	num	29		t	conflict:r
+05801_p1_L06	167	124	num	124		contrain	conflict:e
+05801_p1_L06	168	79	num	79		t	conflict:e
+05801_p1_L06	169	37	num	37		d	conflict:s
+05801_p1_L06	170	27	num	27		e	agrees
+05801_p1_L06	171	172	num	172		vous	conflict:a
+05801_p1_L06	172	190	num	190		s	conflict:e
+05801_p1_L06	173	109	num	109		o	conflict:n
+05801_p1_L06	174	82	num	82		h	conflict:e
+05801_p1_L06	175	27	num	27		c	conflict:e
+05801_p1_L06	176	30	num	30		i	conflict:e
+05801_p1_L06	177	73	num	73		t	conflict:n
+05801_p1_L06	178	67	num	67		e	agrees
+05801_p1_L06	179	113	num	113		r	conflict:l
+05801_p1_L06	180	82	num	82		s	conflict:e
+05801_p1_L06	181	27	num	27		i	conflict:e
+05801_p1_L06	182	pour	clear			ins	clear
+05801_p1_L06	183	la	clear			ta	clear
+05801_p1_L06	184	125	num	125		mment	conflict:e
+05801_p1_L06	185	132	num	132		que	conflict:e
+05801_p1_L06	186	126	num	126		veuil	conflict:e
+05801_p1_L06	187	asseurance	clear			lsadvisere	clear
+05801_p1_L06	188	12	num	12		t	conflict:e
+05801_p1_L06	189	43	num	43		e	single
+05801_p1_L06	190	36	num	36		m	conflict:e
+05801_p1_L06	191	21	num	21		p	conflict:s
+05801_p1_L06	192	82	num	82		l	conflict:e
+05801_p1_L06	193	3	num	3		o	conflict:e
+05801_p1_L06	194	7	num	7		y	conflict:u
+05801_p1_L06	195	129	num	129		er	conflict:e
+05801_p1_L06	196	132	num	132		tousmoyen	conflict:e
+05801_p1_L06	197	12	num	12		s	conflict:e
+05801_p1_L06	198	223	num	223		possiblespour	conflict:a
+05801_p1_L06	199	145	num	145		ladelivrancede	conflict:a
+05801_p1_L06	200	Harlem	clear			harlem	clear
+05801_p1_L06	201	71	num	71		a	agrees
+05801_p1_L06	202	37	num	37		s	agrees
+05801_p1_L06	203	8	num	8		s	agrees
+05801_p1_L06	204	105	num	105		a	conflict:o
+05801_p1_L06	205	25	num	25		v	conflict:e
+05801_p1_L06	206	82	num	82		o	conflict:e
+05801_p1_L06	207	113	num	113		i	conflict:l
+05801_p1_L06	208	113	num	113		r	conflict:l
+05801_p1_L06	209	82	num	82		q	conflict:e
+05801_p1_L06	210	125	num	125		uelleesttelle	conflict:e
+05801_p1_L06	211	12	num	12		m	conflict:e
+05801_p1_L06	212	77	num	77		e	agrees
+05801_p1_L06	213	13	num	13		n	conflict:a
+05801_p1_L06	214	25	num	25		t	conflict:e
+05801_p1_L06	215	82	num	82		e	agrees
+05801_p1_L06	216	26	num	26		t	agrees
+05801_p1_L06	217	72	num	72		d	conflict:e
+05801_p1_L06	218	22	num	22		e	conflict:r
+05801_p1_L06	219	67	num	67		s	conflict:e
+05801_p1_L06	220	84	num	84		i	conflict:o
+05801_p1_L06	221	125	num	125		prez	conflict:e
+05801_p1_L06	222	132	num	132		serr	conflict:e
+05801_p1_L06	223	85	num	85		e	conflict:u
+05801_p1_L06	224	28	num	28		d	conflict:e
+05801_p1_L06	225	32	num	32		e	agrees
+05801_p1_L06	226	132	num	132		lennemi	conflict:e
+05801_p1_L06	227	126	num	126		quil	conflict:e
+05801_p1_L06	228	19	num	19		e	agrees
+05801_p1_L06	229	21	num	21		s	agrees
+05801_p1_L06	230	39	num	39		t	conflict:u
+05801_p1_L06	231	132	num	132		fort	conflict:e
+05801_p1_L06	232	126	num	126		craind	conflict:e
+05801_p1_L06	233	62	num	62		r	conflict:e
+05801_p1_L06	234	72	num	72		e	agrees
+05801_p1_L06	235	21	num	21		q	conflict:s
+05801_p1_L06	236	82	num	82		u	conflict:e
+05801_p1_L06	237	102	num	102		e	conflict:t
+05801_p1_L06	238	3	num	3		s	conflict:e
+05801_p1_L06	239	80	num	80		i	conflict:e
+05801_p1_L06	240	21	num	21		n	conflict:s
+05801_p1_L06	241	81	num	81		e	agrees
+05801_p1_L06	242	129	num	129		la	conflict:e
+05801_p1_L06	243	132	num	132		secourrons	conflict:e
+05801_p1_L06	244	145	num	145		d	conflict:a
+05801_p1_L06	245	52	num	52		e	conflict:d
+05801_p1_L06	246	125	num	125		bre	conflict:e
+05801_p1_L06	247	91	num	91		f	conflict:a
+05801_p1_L06	248	132	num	132		nous	conflict:e
+05801_p1_L06	249	145	num	145		tomb	conflict:a
+05801_p1_L06	250	72	num	72		e	agrees
+05801_p1_L06	251	72	num	72		r	conflict:e
+05801_p1_L06	252	7	num	7		o	conflict:u
+05801_p1_L06	253	37	num	37		n	conflict:s
+05801_p1_L06	254	69	num	69		s	conflict:e
+05801_p1_L06	255	3	num	3		e	agrees
+05801_p1_L06	256	29	num	29		n	conflict:r
+05801_p1_L06	257	54	num	54		t	conflict:e
+05801_p1_L06	258	37	num	37		r	conflict:s
+05801_p1_L06	259	28	num	28		e	agrees
+05801_p1_L06	260	132	num	132		grans	conflict:e
+05801_p1_L06	261	145	num	145		incouvniens	conflict:a
+05801_p1_L06	262	126	num	126		lequel	conflict:e
+05801_p1_L06	263	79	num	79		p	conflict:e
+05801_p1_L06	264	120	num	120		o	conflict:e
+05801_p1_L06	265	68	num	68		l	conflict:e
+05801_p1_L06	266	81	num	81		r	conflict:e
+05801_p1_L06	267	84	num	84		o	agrees
+05801_p1_L06	268	3	num	3		y	conflict:e
+05801_p1_L06	269	26	num	26		t	agrees
+05801_p1_L06	270	125	num	125		a	conflict:e
+05801_p1_L06	271	5	num	5		t	conflict:e
+05801_p1_L06	272	29	num	29		t	conflict:r
+05801_p1_L06	273	101	num	101		i	conflict:s
+05801_p1_L06	274	2	num	2		r	conflict:a
+05801_p1_L06	275	75	num	75		e	agrees
+05801_p1_L06	276	8	num	8		r	conflict:s
+05801_p1_L06	277	3	num	3		n	conflict:e
+05801_p1_L06	278	61	num	61		o	conflict:e
+05801_p1_L06	279	31	num	31		s	conflict:i
+05801_p1_L06	280	78	num	78		t	conflict:e
+05801_p1_L06	281	22	num	22		r	agrees
+05801_p1_L06	282	81	num	81		e	agrees
+05801_p1_L06	283	24	num	24		t	agrees
+05801_p1_L06	284	59	num	59		o	conflict:e
+05801_p1_L06	285	26	num	26		t	agrees
+05801_p1_L06	286	31	num	31		a	conflict:i
+05801_p1_L06	287	22	num	22		l	conflict:r
+05801_p1_L06	288	83	num	83		e	conflict:r
+05801_p1_L06	289	125	num	125		ruyne	conflict:e
+05801_p1_L06	290	192	num	192		non	conflict:aulcunspoint
+05801_p1_L06	291	32	num	32		p	conflict:e
+05801_p1_L06	292	78	num	78		a	conflict:e
+05801_p1_L06	293	111	num	111		s	conflict:e
+05801_p1_L06	294	119	num	119		t	conflict:e
+05801_p1_L06	295	89	num	89		a	conflict:e
+05801_p1_L06	296	70	num	70		n	conflict:e
+05801_p1_L06	297	102	num	102		t	agrees
+05801_p1_L06	298	pour	clear			pour	clear
+05801_p1_L06	299	132	num	132		limportance	conflict:e
+05801_p1_L06	300	125	num	125		de	conflict:e
+05801_p1_L06	301	141	num	141		la	conflict:e
+05801_p1_L06	302	121	num	121		vil	conflict:l
+05801_p1_L06	303	43	num	43		l	conflict:e
+05801_p1_L06	304	116	num	116		e	agrees
+05801_p1_L06	305	50	num	50		e	conflict:s
+05801_p1_L06	306	22	num	22		n	conflict:r
+05801_p1_L06	307	150	num	150		soymesme	conflict:best
+05801_p1_L06	308	124	num	124		com	conflict:e
+05801_p1_L06	309	78	num	78		m	conflict:e
+05801_p1_L06	310	71	num	71		e	conflict:a
+05801_p1_L06	311	82	num	82		e	agrees
+05801_p1_L06	312	76	num	76		n	conflict:e
+05801_p1_L06	313	91	num	91		p	conflict:a
+05801_p1_L06	314	Ville	clear			artie	clear
+05801_p1_L06	315	81	num	81		p	conflict:e
+05801_p1_L06	316	2	num	2		o	conflict:a
+05801_p1_L06	317	74	num	74		u	agrees
+05801_p1_L06	318	59	num	59		r	conflict:e
+05801_p1_L06	319	116	num	116		l	conflict:e
+05801_p1_L06	320	82	num	82		a	conflict:e
+05801_p1_L06	321	22	num	22		p	conflict:r
+05801_p1_L06	322	120	num	120		e	agrees
+05801_p1_L06	323	83	num	83		r	agrees
+05801_p1_L06	324	9	num	9		t	conflict:e
+05801_p1_L06	325	117	num	117		e	agrees
+05801_p1_L06	326	118	num	118		d	agrees
+05801_p1_L06	327	81	num	81		e	agrees
+05801_p1_L06	328	152	num	152		t	conflict:e
+05801_p1_L06	329	145	num	145		a	agrees
+05801_p1_L06	330	126	num	126		n	conflict:e
+05801_p1_L06	331	117	num	117		t	conflict:e
+05801_p1_L06	332	62	num	62		d	conflict:e
+05801_p1_L06	333	57	num	57		e	conflict:i
+05801_p1_L06	334	21	num	21		g	conflict:s
+05801_p1_L06	335	32	num	32		e	agrees
+05801_p1_L06	336	83	num	83		n	conflict:r
+05801_p1_L06	337	76	num	76		s	conflict:e
+05801_p1_L06	338	81	num	81		d	conflict:e
+05801_p1_L06	339	76	num	76		e	agrees
+05801_p1_L06	340	3	num	3		b	conflict:e
+05801_p1_L06	341	76	num	76		i	conflict:e
+05801_p1_L06	342	77	num	77		e	agrees
+05801_p1_L06	343	81	num	81		n	conflict:e
+05801_p1_L06	344	132	num	132		qu	conflict:e
+05801_p1_L06	345	22	num	22		e	conflict:r
+05801_p1_L06	346	2	num	2		s	conflict:a
+05801_p1_L06	347	30	num	30		o	conflict:e
+05801_p1_L06	348	62	num	62		l	conflict:e
+05801_p1_L06	349	4	num	4		d	agrees
+05801_p1_L06	350	37	num	37		a	conflict:s
+05801_p1_L06	351	21	num	21		t	conflict:s
+05801_p1_L06	352	22	num	22		s	conflict:r
+05801_p1_L06	353	6	num	6		q	conflict:e
+05801_p1_L06	354	102	num	102		u	conflict:t
+05801_p1_L06	355	80	num	80		e	agrees
+05801_p1_L06	356	125	num	125		bourgeois	conflict:e
+05801_p1_L06	357	132	num	132		et	conflict:e
+05801_p1_L08	0	11	num	11		p	conflict:c
+05801_p1_L08	1	7	num	7		o	conflict:u
+05801_p1_L08	2	37	num	37		u	conflict:s
+05801_p1_L08	3	22	num	22		r	agrees
+05801_p1_L08	4	112	num	112		l	conflict:s
+05801_p1_L08	5	62	num	62		a	conflict:e
+05801_p1_L08	6	132	num	132		d	conflict:e
+05801_p1_L08	7	30	num	30		e	agrees
+05801_p1_L08	8	81	num	81		f	conflict:e
+05801_p1_L08	9	85	num	85		f	conflict:u
+05801_p1_L08	10	87	num	87		i	conflict:e
+05801_p1_L08	11	102	num	102		a	conflict:t
+05801_p1_L08	12	62	num	62		n	conflict:e
+05801_p1_L08	13	4	num	4		c	conflict:d
+05801_p1_L08	14	7	num	7		e	conflict:u
+05801_p1_L08	15	76	num	76		d	conflict:e
+05801_p1_L08	16	81	num	81		e	agrees
+05801_p1_L08	17	27	num	27		s	conflict:e
+05801_p1_L08	18	82	num	82		e	agrees
+05801_p1_L08	19	30	num	30		r	conflict:e
+05801_p1_L08	20	5	num	5		v	conflict:e
+05801_p1_L08	21	102	num	102		i	conflict:t
+05801_p1_L08	22	29	num	29		c	conflict:r
+05801_p1_L08	23	62	num	62		e	agrees
+05801_p1_L08	24	173	num	173		q	single
+05801_p1_L08	25	145	num	145		u	conflict:a
+05801_p1_L08	26	7	num	7		e	conflict:u
+05801_p1_L08	27	112	num	112		c	conflict:s
+05801_p1_L08	28	61	num	61		e	agrees
+05801_p1_L08	29	116	num	116		l	conflict:e
+05801_p1_L08	30	82	num	82		a	conflict:e
+05801_p1_L08	31	2	num	2		a	agrees
+05801_p1_L08	32	82	num	82		m	conflict:e
+05801_p1_L08	33	66	num	66		n	agrees
+05801_p1_L08	34	52	num	52		e	conflict:d
+05801_p1_L08	35	36	num	36		r	conflict:e
+05801_p1_L08	36	91	num	91		a	agrees
+05801_p1_L08	37	132	num	132		a	conflict:e
+05801_p1_L08	38	145	num	145		u	conflict:a
+05801_p1_L08	39	62	num	62		x	conflict:e
+05801_p1_L08	40	90	num	90		a	conflict:n
+05801_p1_L08	41	62	num	62		u	conflict:e
+05801_p1_L08	42	24	num	24		t	agrees
+05801_p1_L08	43	82	num	82		r	conflict:e
+05801_p1_L08	44	28	num	28		e	agrees
+05801_p1_L08	45	195	num	195		s	conflict:a
+05801_p1_L08	46	131	num	131		ville	conflict:e
+05801_p1_L08	47	Daultant	clear			sdautant	clear
+05801_p1_L08	48	que	clear			que	clear
+05801_p1_L08	49	affermes	clear			asseurm	clear
+05801_p1_L08	50	jugerent	clear				clear
+05801_p1_L08	51	ainsi	clear				clear
+05801_p1_L08	52	126	num	126		e	agrees
+05801_p1_L08	53	60	num	60		n	conflict:e
+05801_p1_L08	54	102	num	102		t	agrees
+05801_p1_L08	55	27	num	27		i	conflict:e
+05801_p1_L08	56	82	num	82		l	conflict:e
+05801_p1_L08	57	81	num	81		z	conflict:e
+05801_p1_L08	58	55	num	55		e	agrees
+05801_p1_L08	59	55	num	55		n	conflict:e
+05801_p1_L08	60	2	num	2		j	conflict:a
+05801_p1_L08	61	32	num	32		u	conflict:e
+05801_p1_L08	62	30	num	30		g	conflict:e
+05801_p1_L08	63	190	num	190		e	agrees
+05801_p1_L08	64	190	num	190		r	conflict:e
+05801_p1_L08	65	81	num	81		o	conflict:e
+05801_p1_L08	66	39	num	39		n	conflict:u
+05801_p1_L08	67	124	num	124		t	conflict:e
+05801_p1_L08	68	7	num	7		a	conflict:u
+05801_p1_L08	69	29	num	29		i	conflict:r
+05801_p1_L08	70	132	num	132		n	conflict:e
+05801_p1_L08	71	190	num	190		s	conflict:e
+05801_p1_L08	72	99	num	99		y	conflict:e
+05801_p1_L08	73	103	num	103		p	conflict:e
+05801_p1_L08	74	73	num	73		u	conflict:n
+05801_p1_L08	75	25	num	25		i	conflict:e
+05801_p1_L08	76	132	num	132		s	conflict:e
+05801_p1_L08	77	141	num	141		q	conflict:e
+05801_p1_L08	78	129	num	129		u	conflict:e
+05801_p1_L08	79	63	num	63		e	agrees
+05801_p1_L08	80	79	num	79		a	conflict:e
+05801_p1_L08	81	57	num	57		y	conflict:i
+05801_p1_L08	82	97	num	97		a	conflict:e
+05801_p1_L08	83	91	num	91		n	conflict:a
+05801_p1_L08	84	103	num	103		t	conflict:e
+05801_p1_L08	85	37	num	37		e	conflict:s
+05801_p1_L08	86	133	num	133		u	conflict:l
+05801_p1_L08	87	126	num	126		t	conflict:e
+05801_p1_L08	88	63	num	63		a	conflict:e
+05801_p1_L08	89	84	num	84		n	conflict:o
+05801_p1_L08	90	2	num	2		s	conflict:a
+05801_p1_L08	91	28	num	28		e	agrees
+05801_p1_L08	92	12	num	12		t	conflict:e
+05801_p1_L08	93	82	num	82		l	conflict:e
+05801_p1_L08	94	36	num	36		o	conflict:e
+05801_p1_L08	95	139	num	139		y	conflict:t
+05801_p1_L08	96	125	num	125		s	conflict:e
+05801_p1_L08	97	29	num	29		i	conflict:r
+05801_p1_L08	98	89	num	89		r	conflict:e
+05801_p1_L08	99	132	num	132		s	conflict:e
+05801_p1_L08	100	140	num	140		o	conflict:s
+05801_p1_L08	101	124	num	124		u	conflict:e
+05801_p1_L08	102	79	num	79		h	conflict:e
+05801_p1_L08	103	35	num	35		a	conflict:s
+05801_p1_L08	104	33	num	33		i	conflict:e
+05801_p1_L08	105	51	num	51		t	agrees
+05801_p1_L08	106	41	num	41		n	conflict:a
+05801_p1_L08	107	331	num	331		a	single
+05801_p1_L08	108	82	num	82		v	conflict:e
+05801_p1_L08	109	30	num	30		o	conflict:e
+05801_p1_L08	110	112	num	112		n	conflict:s
+05801_p1_L08	111	53	num	53		s	conflict:e
+05801_p1_L08	112	92	num	92		p	conflict:s
+05801_p1_L08	113	82	num	82		e	agrees
+05801_p1_L08	114	117	num	117		u	conflict:e
+05801_p1_L08	115	82	num	82		s	conflict:e
+05801_p1_L08	116	4	num	4		e	conflict:d
+05801_p1_L08	117	9	num	9		c	conflict:e
+05801_p1_L08	118	38	num	38		o	conflict:u
+05801_p1_L08	119	132	num	132		ur	conflict:e
+05801_p1_L08	120	78	num	78		i	conflict:e
+05801_p1_L08	121	25	num	25		r	conflict:e
+05801_p1_L08	122	Harlem	clear			harlem	clear
+05801_p1_L08	123	63	num	63		q	conflict:e
+05801_p1_L08	124	72	num	72		u	conflict:e
+05801_p1_L08	125	19	num	19		i	conflict:e
+05801_p1_L08	126	9	num	9		s	conflict:e
+05801_p1_L08	127	29	num	29		e	conflict:r
+05801_p1_L08	128	82	num	82		p	conflict:e
+05801_p1_L08	129	82	num	82		o	conflict:e
+05801_p1_L08	130	27	num	27		r	conflict:e
+05801_p1_L08	131	101	num	101		t	conflict:s
+05801_p1_L08	132	81	num	81		e	agrees
+05801_p1_L08	133	101	num	101		s	agrees
+05801_p1_L08	134	119	num	119		i	conflict:e
+05801_p1_L08	135	112	num	112		v	conflict:s
+05801_p1_L08	136	30	num	30		a	conflict:e
+05801_p1_L08	137	101	num	101		i	conflict:s
+05801_p1_L08	138	69	num	69		l	conflict:e
+05801_p1_L08	139	118	num	118		l	conflict:d
+05801_p1_L08	140	120	num	120		a	conflict:e
+05801_p1_L08	141	61	num	61		m	conflict:e
+05801_p1_L08	142	3	num	3		m	conflict:e
+05801_p1_L08	143	77	num	77		e	agrees
+05801_p1_L08	144	152	num	152		nt	conflict:e
+05801_p1_L08	145	190	num	190		et	conflict:e
+05801_p1_L08	146	129	num	129		asi	conflict:e
+05801_p2_L02	0	30	num	30		s	conflict:e
+05801_p2_L02	1	101	num	101		o	conflict:s
+05801_p2_L02	2	124	num	124		u	conflict:e
+05801_p2_L02	3	132	num	132		t	conflict:e
+05801_p2_L02	4	74	num	74		e	conflict:u
+05801_p2_L02	5	38	num	38		n	conflict:u
+05801_p2_L02	6	112	num	112		u	conflict:s
+05801_p2_L02	7	63	num	63		l	conflict:e
+05801_p2_L02	8	92	num	92		a	conflict:s
+05801_p2_L02	9	82	num	82		g	conflict:e
+05801_p2_L02	10	87	num	87		u	conflict:e
+05801_p2_L02	11	28	num	28		e	agrees
+05801_p2_L02	12	32	num	32		r	conflict:e
+05801_p2_L02	13	81	num	81		r	conflict:e
+05801_p2_L02	14	15	num	15		e	agrees
+05801_p2_L02	15	311	num	311		a	single
+05801_p2_L02	16	81	num	81		u	conflict:e
+05801_p2_L02	17	101	num	101		g	conflict:s
+05801_p2_L02	18	119	num	119		r	conflict:e
+05801_p2_L02	19	112	num	112		a	conflict:s
+05801_p2_L02	20	64	num	64		n	conflict:e
+05801_p2_L02	21	118	num	118		d	agrees
+05801_p2_L02	22	120	num	120		s	conflict:e
+05801_p2_L02	23	7	num	7		o	conflict:u
+05801_p2_L02	24	3	num	3		u	conflict:e
+05801_p2_L02	25	37	num	37		l	conflict:s
+05801_p2_L02	26	152	num	152		a	conflict:e
+05801_p2_L02	27	190	num	190		g	conflict:e
+05801_p2_L02	28	124	num	124		e	agrees
+05801_p2_L02	29	92	num	92		m	conflict:s
+05801_p2_L02	30	34	num	34		e	conflict:i
+05801_p2_L02	31	63	num	63		n	conflict:e
+05801_p2_L02	32	3	num	3		t	conflict:e
+05801_p2_L02	33	29	num	29		d	conflict:r
+05801_p2_L02	34	129	num	129		e	agrees
+05801_p2_L02	35	79	num	79		t	conflict:e
+05801_p2_L02	36	35	num	35		o	conflict:s
+05801_p2_L02	37	33	num	33		u	conflict:e
+05801_p2_L02	38	82	num	82		t	conflict:e
+05801_p2_L02	39	55	num	55		l	conflict:e
+05801_p2_L02	40	41	num	41		e	conflict:a
+05801_p2_L02	41	231	num	231		r	conflict:c
+05801_p2_L02	42	62	num	62		e	agrees
+05801_p2_L02	43	92	num	92		s	agrees
+05801_p2_L02	44	76	num	76		t	conflict:e
+05801_p2_L02	45	4	num	4		d	agrees
+05801_p2_L02	46	76	num	76		u	conflict:e
+05801_p2_L02	47	132	num	132		p	conflict:e
+05801_p2_L02	48	74	num	74		a	conflict:u
+05801_p2_L02	49	38	num	38		i	conflict:u
+05801_p2_L02	50	112	num	112		s	agrees
+05801_p2_L02	51	63	num	63		c	conflict:e
+05801_p2_L02	52	92	num	92		e	conflict:s
+05801_p2_L02	53	82	num	82		r	conflict:e
+05801_p2_L02	54	117	num	117		t	conflict:e
+05801_p2_L02	55	82	num	82		e	agrees
+05801_p2_L02	56	4	num	4		s	conflict:d
+05801_p2_L02	57	33	num	33		c	conflict:e
+05801_p2_L02	58	77	num	77		e	agrees
+05801_p2_L02	59	81	num	81		s	conflict:e
+05801_p2_L02	60	79	num	79		e	agrees
+05801_p2_L02	61	38	num	38		r	conflict:u
+05801_p2_L02	62	34	num	34		a	conflict:i
+05801_p2_L02	63	112	num	112		d	conflict:s
+05801_p2_L02	64	87	num	87		o	conflict:e
+05801_p2_L02	65	28	num	28		n	conflict:e
+05801_p2_L02	66	32	num	32		c	conflict:e
+05801_p2_L02	67	81	num	81		q	conflict:e
+05801_p2_L02	68	15	num	15		u	conflict:e
+05801_p2_L02	69	311	num	311		es	conflict:a
+05801_p2_L02	70	vous	clear				clear
+05801_p2_L02	71	en	clear			en	clear
+05801_p2_L02	72	pourdez	clear				clear
+05801_p2_L02	73	vous	clear			vai	clear
+05801_p2_L02	74	que	clear				clear
+05801_p2_L02	75	132	num	132		n	conflict:e
+05801_p2_L02	76	195	num	195		q	conflict:a
+05801_p2_L02	77	129	num	129		u	conflict:e
+05801_p2_L02	78	1573	doubtful				doubtful
+05801_p2_L02	79	May	clear				clear
+05801_p2_L02	80	28	num	28		e	agrees
+05801_p2_L02	81	72	num	72		l	conflict:e
+05801_p2_L02	82	26	num	26		e	conflict:t
+05801_p2_L02	83	132	num	132		s	conflict:e
+05801_p2_L02	84	61	num	61		a	conflict:e
+05801_p2_L02	85	37	num	37		u	conflict:s
+05801_p2_L02	86	32	num	32		t	conflict:e
+05801_p2_L02	87	27	num	27		r	conflict:e
+05801_p2_L02	88	81	num	81		e	agrees
+05801_p2_L02	89	90	num	90		s	conflict:n
+05801_p2_L02	90	Ville	clear			vill	clear
+05801_p2_L02	91	312	num	312			null-or-unaligned
+05801_p2_L02	92	27	num	27		e	agrees
+05801_p2_L02	93	132	num	132		s	conflict:e
+05801_p2_L02	94	195	num	195		a	agrees
+05801_p2_L02	95	121	num	121		t	conflict:l
+05801_p2_L02	96	62	num	62		t	conflict:e
+05801_p2_L02	97	32	num	32		e	agrees
+05801_p2_L02	98	35	num	35		n	conflict:s
+05801_p2_L02	99	82	num	82		d	conflict:e
+05801_p2_L02	100	3	num	3		r	conflict:e
+05801_p2_L02	101	76	num	76		o	conflict:e
+05801_p2_L02	102	79	num	79		n	conflict:e
+05801_p2_L02	103	4	num	4		t	conflict:d
+05801_p2_L02	104	35	num	35		n	conflict:s
+05801_p2_L02	105	54	num	54		o	conflict:e
+05801_p2_L02	106	28	num	28		s	conflict:e
+05801_p2_L02	107	33	num	33		t	conflict:e
+05801_p2_L02	108	22	num	22		r	agrees
+05801_p2_L02	109	81	num	81		e	agrees
+05801_p2_L02	110	29	num	29		s	conflict:r
+05801_p2_L02	111	82	num	82		e	agrees
+05801_p2_L02	112	71	num	71		c	conflict:a
+05801_p2_L02	113	8	num	8		o	conflict:s
+05801_p2_L02	114	38	num	38		u	agrees
+05801_p2_L02	115	4	num	4		r	conflict:d
+05801_p2_L02	116	30	num	30		s	conflict:e
+05801_p2_L02	117	apres	clear			aprs	clear
+05801_p2_L02	118	que	clear			qu	clear
+05801_p2_L02	119	132	num	132			null-or-unaligned
+05801_p2_L02	120	129	num	129		e	agrees
+05801_p2_L02	121	126	num	126		a	conflict:e
+05801_p2_L02	122	81	num	81		u	conflict:e
+05801_p2_L02	123	37	num	37		r	conflict:s
+05801_p2_L02	124	24	num	24		o	conflict:t
+05801_p2_L02	125	7	num	7		n	conflict:u
+05801_p2_L02	126	3	num	3		s	conflict:e
+05801_p2_L02	127	27	num	27		r	conflict:e
+05801_p2_L02	128	152	num	152		e	agrees
+05801_p2_L02	129	22	num	22		c	conflict:r
+05801_p2_L02	130	82	num	82		e	agrees
+05801_p2_L02	131	7	num	7		u	agrees
+05801_p2_L02	132	77	num	77		s	conflict:e
+05801_p2_L02	133	132	num	132		i	conflict:e
+05801_p2_L02	134	126	num	126		g	conflict:e
+05801_p2_L02	135	28	num	28		r	conflict:e
+05801_p2_L02	136	102	num	102		a	conflict:t
+05801_p2_L02	137	132	num	132		n	conflict:e
+05801_p2_L02	138	92	num	92		d	conflict:s
+05801_p2_L02	139	68	num	68		e	single
+05801_p2_L02	140	3	num	3		p	conflict:e
+05801_p2_L02	141	77	num	77		e	agrees
+05801_p2_L02	142	82	num	82		r	conflict:e
+05801_p2_L02	143	139	num	139		t	agrees
+05801_p2_L02	144	37	num	37		e	conflict:s
+05801_p2_L02	145	22	num	22		e	conflict:r
+05801_p2_L02	146	33	num	33		t	conflict:e
+05801_p2_L02	147	83	num	83		q	conflict:r
+05801_p2_L02	148	85	num	85		u	agrees
+05801_p2_L02	149	79	num	79		e	agrees
+05801_p2_L02	150	82	num	82		l	conflict:e
+05801_p2_L02	151	138	num	138		e	single
+05801_p2_L02	152	125	num	125		n	conflict:e
+05801_p2_L02	153	72	num	72		n	conflict:e
+05801_p2_L02	154	2	num	2		e	conflict:a
+05801_p2_L02	155	9	num	9		m	conflict:e
+05801_p2_L02	156	85	num	85		y	conflict:u
+05801_p2_L02	157	98	num	98		s	conflict:e
+05801_p2_L02	158	27	num	27		e	agrees
+05801_p2_L02	159	84	num	84		r	conflict:o
+05801_p2_L02	160	88	num	88		a	conflict:r
+05801_p2_L02	161	ainsi	clear			ains	clear
+05801_p2_L02	162	132	num	132			null-or-unaligned
+05801_p2_L02	163	87	num	87		y	conflict:e
+05801_p2_L02	164	9	num	9		r	conflict:e
+05801_p2_L02	165	179	num	179		e	single
+05801_p2_L02	166	16	num	16		n	agrees
+05801_p2_L02	167	24	num	24		f	conflict:t
+05801_p2_L02	168	71	num	71		o	conflict:a
+05801_p2_L02	169	82	num	82		r	conflict:e
+05801_p2_L02	170	231	num	231		c	single
+05801_p2_L02	171	131	num	131		e	agrees
+05801_p2_L02	172	149	num	149		n	single
+05801_p2_L04	0	139	num	139			null-or-unaligned
+05801_p2_L04	1	126	num	126			null-or-unaligned
+05801_p2_L04	2	132	num	132			null-or-unaligned
+05801_p2_L04	3	62	num	62		e	agrees
+05801_p2_L04	4	135	num	135		l	conflict:d
+05801_p2_L04	5	65	num	65		a	conflict:t
+05801_p2_L04	6	85	num	85		f	conflict:u
+05801_p2_L04	7	39	num	39		a	conflict:u
+05801_p2_L04	8	32	num	32		u	conflict:e
+05801_p2_L04	9	83	num	83		l	conflict:r
+05801_p2_L04	10	132	num	132		t	conflict:e
+05801_p2_L04	11	128	num	128		e	conflict:de
+05801_p2_L04	12	135	num	135		d	single
+05801_p2_L04	13	argent	clear			argent	clear
+05801_p2_L04	14	330	num	330		e	single
+05801_p2_L04	15	82	num	82		t	conflict:e
+05801_p2_L04	16	34	num	34		d	conflict:i
+05801_p2_L04	17	78	num	78		e	agrees
+05801_p2_L04	18	84	num	84		c	conflict:o
+05801_p2_L04	19	79	num	79		r	conflict:e
+05801_p2_L04	20	23	num	23		d	agrees
+05801_p2_L04	21	84	num	84		i	conflict:o
+05801_p2_L04	22	83	num	83		t	conflict:r
+05801_p2_L04	23	53	num	53		e	agrees
+05801_p2_L04	24	132	num	132		n	conflict:e
+05801_p2_L04	25	192	num	192		t	conflict:aulcunspoint
+05801_p2_L04	26	82	num	82		r	conflict:e
+05801_p2_L04	27	9	num	9		e	agrees
+05801_p2_L04	28	32	num	32		g	conflict:e
+05801_p2_L04	29	23	num	23		e	conflict:d
+05801_p2_L04	30	82	num	82		n	conflict:e
+05801_p2_L04	31	22	num	22		s	conflict:r
+05801_p2_L04	32	3	num	3		d	conflict:e
+05801_p2_L04	33	27	num	27		e	agrees
+05801_p2_L04	34	42	num	42		g	conflict:e
+05801_p2_L04	35	331	num	331		ue	conflict:a
+05801_p2_L04	36	que	clear			rre	clear
+05801_p2_L04	37	80	num	80		p	conflict:e
+05801_p2_L04	38	102	num	102		u	conflict:t
+05801_p2_L04	39	30	num	30		i	conflict:e
+05801_p2_L04	40	82	num	82		s	conflict:e
+05801_p2_L04	41	guere	clear			quene	clear
+05801_p2_L04	42	82	num	82		l	conflict:e
+05801_p2_L04	43	72	num	72		e	agrees
+05801_p2_L04	44	40	num	40		u	conflict:s
+05801_p2_L04	45	22	num	22		r	agrees
+05801_p2_L04	46	132	num	132		a	conflict:e
+05801_p2_L04	47	85	num	85		v	agrees
+05801_p2_L04	48	84	num	84		o	agrees
+05801_p2_L04	49	2	num	2		n	conflict:a
+05801_p2_L04	50	28	num	28		s	conflict:e
+05801_p2_L04	51	32	num	32		t	conflict:e
+05801_p2_L04	52	82	num	82		e	agrees
+05801_p2_L04	53	2	num	2		n	conflict:a
+05801_p2_L04	54	39	num	39		u	agrees
+05801_p2_L04	55	113	num	113		l	agrees
+05801_p2_L04	56	81	num	81		e	agrees
+05801_p2_L04	57	42	num	42		p	conflict:e
+05801_p2_L04	58	87	num	87		r	conflict:e
+05801_p2_L04	59	78	num	78		e	agrees
+05801_p2_L04	60	82	num	82		m	conflict:e
+05801_p2_L04	61	25	num	25		i	conflict:e
+05801_p2_L04	62	107	num	107		e	single
+05801_p2_L04	63	83	num	83		r	agrees
+05801_p2_L04	64	47	num	47		p	conflict:e
+05801_p2_L04	65	3	num	3		a	conflict:e
+05801_p2_L04	66	39	num	39		i	conflict:u
+05801_p2_L04	67	59	num	59		e	agrees
+05801_p2_L04	68	90	num	90		m	conflict:n
+05801_p2_L04	69	27	num	27		e	agrees
+05801_p2_L04	70	7	num	7		n	conflict:u
+05801_p2_L04	71	30	num	30		t	conflict:e
+05801_p2_L04	72	31	num	31		n	conflict:i
+05801_p2_L04	73	84	num	84		o	agrees
+05801_p2_L04	74	92	num	92		u	conflict:s
+05801_p2_L04	75	27	num	27		s	conflict:e
+05801_p2_L04	76	132	num	132		o	conflict:e
+05801_p2_L04	77	140	num	140		s	agrees
+05801_p2_L04	78	40	num	40		t	conflict:s
+05801_p2_L04	79	55	num	55		e	agrees
+05801_p2_L04	80	81	num	81		l	conflict:e
+05801_p2_L04	81	2	num	2		e	conflict:a
+05801_p2_L04	82	26	num	26		s	conflict:t
+05801_p2_L04	83	12	num	12		m	conflict:e
+05801_p2_L04	84	92	num	92		o	conflict:s
+05801_p2_L04	85	86	num	86		y	conflict:n
+05801_p2_L04	86	61	num	61		e	agrees
+05801_p2_L04	87	101	num	101		n	conflict:s
+05801_p2_L04	88	22	num	22		s	conflict:r
+05801_p2_L04	89	82	num	82		d	conflict:e
+05801_p2_L04	90	132	num	132		e	agrees
+05801_p2_L04	91	195	num	195		l	conflict:a
+05801_p2_L04	92	7	num	7		e	conflict:u
+05801_p2_L04	93	132	num	132		f	conflict:e
+05801_p2_L04	94	195	num	195		a	agrees
+05801_p2_L04	95	57	num	57		i	agrees
+05801_p2_L04	96	2	num	2		r	conflict:a
+05801_p2_L04	97	132	num	132		e	agrees
+05801_p2_L04	98	11	num	11		c	single
+05801_p2_L04	99	3	num	3		e	agrees
+05801_p2_L04	100	32	num	32		p	conflict:e
+05801_p2_L04	101	125	num	125		e	agrees
+05801_p2_L04	102	126	num	126		n	conflict:e
+05801_p2_L04	103	54	num	54		d	conflict:e
+05801_p2_L04	104	70	num	70		a	conflict:e
+05801_p2_L04	105	30	num	30		n	conflict:e
+05801_p2_L04	106	132	num	132		t	conflict:e
+05801_p2_L04	107	190	num	190		n	conflict:e
+05801_p2_L04	108	92	num	92		o	conflict:s
+05801_p2_L04	109	24	num	24		u	conflict:t
+05801_p2_L04	110	7	num	7		s	conflict:u
+05801_p2_L04	111	37	num	37		t	conflict:s
+05801_p2_L04	112	39	num	39		r	conflict:u
+05801_p2_L04	113	6	num	6		o	conflict:e
+05801_p2_L04	114	9	num	9		u	conflict:e
+05801_p2_L04	115	27	num	27		v	conflict:e
+05801_p2_L04	116	105	num	105		o	agrees
+05801_p2_L04	117	72	num	72		n	conflict:e
+05801_p2_L04	118	52	num	52		s	conflict:d
+05801_p2_L04	119	132	num	132		i	conflict:e
+05801_p2_L04	120	126	num	126		cy	conflict:e
+05801_p2_L04	121	131	num	131		p	conflict:e
+05801_p2_L04	122	54	num	54		a	conflict:e
+05801_p2_L04	123	24	num	24		r	conflict:t
+05801_p2_L04	124	132	num	132		conse	conflict:e
+05801_p2_L04	125	9	num	9		i	conflict:e
+05801_p2_L04	126	5	num	5		l	conflict:e
+05801_p2_L04	127	27	num	27		q	conflict:e
+05801_p2_L04	128	81	num	81		u	conflict:e
+05801_p2_L04	129	102	num	102		i	conflict:t
+05801_p2_L04	130	113	num	113		l	agrees
+05801_p2_L04	131	129	num	129		le	conflict:e
+05801_p2_L04	132	63	num	63		s	conflict:e
+05801_p2_L04	133	111	num	111		f	conflict:e
+05801_p2_L04	134	112	num	112		a	conflict:s
+05801_p2_L04	135	83	num	83		u	conflict:r
+05801_p2_L04	136	26	num	26		t	agrees
+05801_p2_L04	137	132	num	132		entrete	conflict:e
+05801_p2_L04	138	87	num	87		n	conflict:e
+05801_p2_L04	139	62	num	62		i	conflict:e
+05801_p2_L04	140	38	num	38		r	conflict:u
+05801_p2_L04	141	34	num	34		e	conflict:i
+05801_p2_L04	142	82	num	82		n	conflict:e
+05801_p2_L04	143	9	num	9		e	agrees
+05801_p2_L04	144	32	num	32		s	conflict:e
+05801_p2_L04	145	29	num	29		p	conflict:r
+05801_p2_L04	146	81	num	81		r	conflict:e
+05801_p2_L04	147	82	num	82		a	conflict:e
+05801_p2_L04	148	85	num	85		n	conflict:u
+05801_p2_L04	149	53	num	53		c	conflict:e
+05801_p2_L04	150	24	num	24		e	conflict:t
+05801_p2_L04	151	132	num	132		d	conflict:e
+05801_p2_L04	152	88	num	88		e	conflict:r
+05801_p2_L04	153	22	num	22		b	conflict:r
+05801_p2_L04	154	81	num	81		r	conflict:e
+05801_p2_L04	155	87	num	87		e	agrees
+05801_p2_L04	156	72	num	72		f	conflict:e
+05801_p2_L04	157	132	num	132		secours	conflict:e
+05801_p2_L04	158	125	num	125		qu	conflict:e
+05801_p2_L04	159	9	num	9		i	conflict:e
+05801_p2_L04	160	39	num	39		d	conflict:u
+05801_p2_L04	161	23	num	23		o	conflict:d
+05801_p2_L04	162	26	num	26		i	conflict:t
+05801_p2_L04	163	83	num	83		b	conflict:r
+05801_p2_L04	164	19	num	19		t	conflict:e
+05801_p2_L04	165	105	num	105		v	conflict:o
+05801_p2_L04	166	32	num	32		e	agrees
+05801_p2_L04	167	82	num	82		n	conflict:e
+05801_p2_L04	168	2	num	2		i	conflict:a
+05801_p2_L04	169	103	num	103		r	conflict:e
+05801_p2_L04	170	22	num	22		d	conflict:r
+05801_p2_L04	171	76	num	76		e	agrees
+05801_p2_L04	172	81	num	81		a	conflict:e
+05801_p2_L05	0	201	num	201			null-or-unaligned
+05801_p2_L05	1	139	num	139			null-or-unaligned
+05801_p2_L05	2	126	num	126		n	conflict:e
+05801_p2_L05	3	131	num	131		e	agrees
+05801_p2_L05	4	Ne	clear				clear
+05801_p2_L05	5	faisant	clear			faisant	clear
+05801_p2_L05	6	mal	clear			nul	clear
+05801_p2_L05	7	double	clear			doubt	clear
+05801_p2_L05	8	pour	clear			eque	clear
+05801_p2_L05	9	si	clear			si	clear
+05801_p2_L05	10	droit	clear			dieu	clear
+05801_p2_L05	11	avoir	clear			nous	clear
+05801_p2_L05	12	fait	clear			fai	clear
+05801_p2_L05	13	la	clear			ct	clear
+05801_p2_L05	14	guerre	clear			lagrce	clear
+05801_p2_L05	15	du	clear				clear
+05801_p2_L05	16	129	num	129		d	conflict:e
+05801_p2_L05	17	131	num	131		e	agrees
+05801_p2_L05	18	121	num	121		d	conflict:l
+05801_p2_L05	19	80	num	80		l	conflict:e
+05801_p2_L05	20	84	num	84		i	conflict:o
+05801_p2_L05	21	112	num	112		v	conflict:s
+05801_p2_L05	22	101	num	101		r	conflict:s
+05801_p2_L05	23	38	num	38		e	conflict:u
+05801_p2_L05	24	87	num	87		r	conflict:e
+05801_p2_L05	25	23	num	23		c	conflict:d
+05801_p2_L05	26	71	num	71		e	conflict:a
+05801_p2_L05	27	81	num	81		s	conflict:e
+05801_p2_L05	28	26	num	26		t	agrees
+05801_p2_L05	29	33	num	33		e	agrees
+05801_p2_L05	30	Ville	clear			ville	clear
+05801_p2_L05	31	82	num	82		n	conflict:e
+05801_p2_L05	32	312	num	312		o	conflict:a
+05801_p2_L05	33	54	num	54		u	conflict:e
+05801_p2_L05	34	40	num	40		s	agrees
+05801_p2_L05	35	30	num	30		t	conflict:e
+05801_p2_L05	36	35	num	35		r	conflict:s
+05801_p2_L05	37	69	num	69		o	conflict:e
+05801_p2_L05	38	37	num	37		u	conflict:s
+05801_p2_L05	39	82	num	82		v	conflict:e
+05801_p2_L05	40	22	num	22		e	conflict:r
+05801_p2_L05	41	7	num	7		r	conflict:u
+05801_p2_L05	42	2	num	2		o	conflict:a
+05801_p2_L05	43	9	num	9		n	conflict:e
+05801_p2_L05	44	49	num	49		s	conflict:e
+05801_p2_L05	45	59	num	59		m	conflict:e
+05801_p2_L05	46	83	num	83		o	conflict:r
+05801_p2_L05	47	5	num	5		y	conflict:e
+05801_p2_L05	48	19	num	19		e	agrees
+05801_p2_L05	49	87	num	87		n	conflict:e
+05801_p2_L05	50	71	num	71		d	conflict:a
+05801_p2_L05	51	7	num	7		e	conflict:u
+05801_p2_L05	52	37	num	37		r	conflict:s
+05801_p2_L05	53	39	num	39		e	conflict:u
+05801_p2_L05	54	23	num	23		c	conflict:d
+05801_p2_L05	55	82	num	82		o	conflict:e
+05801_p2_L05	56	25	num	25		u	conflict:e
+05801_p2_L05	57	56	num	56		v	agrees
+05801_p2_L05	58	29	num	29		r	agrees
+05801_p2_L05	59	62	num	62		e	agrees
+05801_p2_L05	60	2	num	2		r	conflict:a
+05801_p2_L05	61	132	num	132		p	conflict:e
+05801_p2_L05	62	71	num	71		a	agrees
+05801_p2_L05	63	132	num	132		r	conflict:e
+05801_p2_L05	64	195	num	195		a	agrees
+05801_p2_L05	65	74	num	74		n	conflict:u
+05801_p2_L05	66	120	num	120		l	conflict:e
+05801_p2_L05	67	116	num	116		a	conflict:e
+05801_p2_L05	68	82	num	82		s	conflict:e
+05801_p2_L05	69	78	num	78		o	conflict:e
+05801_p2_L05	70	85	num	85		m	conflict:u
+05801_p2_L05	71	52	num	52		m	conflict:d
+05801_p2_L05	72	37	num	37		e	conflict:s
+05801_p2_L05	73	88	num	88		d	conflict:r
+05801_p2_L05	74	7	num	7		e	conflict:u
+05801_p2_L05	75	4	num	4		n	conflict:d
+05801_p2_L05	76	34	num	34		e	conflict:i
+05801_p2_L05	77	117	num	117		u	conflict:e
+05801_p2_L05	78	120	num	120		f	conflict:e
+05801_p2_L05	79	146	num	146		c	single
+05801_p2_L05	80	82	num	82		e	agrees
+05801_p2_L05	81	88	num	88		n	conflict:r
+05801_p2_L05	82	44	num	44		t	single
+05801_p2_L05	83	58	num	58		m	agrees
+05801_p2_L05	84	9	num	9		i	conflict:e
+05801_p2_L05	85	28	num	28		l	conflict:e
+05801_p2_L05	86	132	num	132		le	conflict:e
+05801_p2_L05	87	145	num	145		florins	conflict:a
+05801_p2_L06	0	132	num	132		s	conflict:e
+05801_p2_L06	1	145	num	145		a	agrees
+05801_p2_L06	2	127	num	127		t	conflict:d
+05801_p2_L06	3	182	num	182		i	single
+05801_p2_L06	4	71	num	71		s	conflict:a
+05801_p2_L06	5	132	num	132		f	conflict:e
+05801_p2_L06	6	195	num	195		a	agrees
+05801_p2_L06	7	78	num	78		i	conflict:e
+05801_p2_L06	8	29	num	29		r	agrees
+05801_p2_L06	9	132	num	132		e	agrees
+05801_p2_L06	10	16	num	16		c	conflict:n
+05801_p2_L06	11	101	num	101		e	conflict:s
+05801_p2_L06	12	23	num	23		u	conflict:d
+05801_p2_L06	13	83	num	83		x	conflict:r
+05801_p2_L06	14	132	num	132		q	conflict:e
+05801_p2_L06	15	195	num	195		u	conflict:a
+05801_p2_L06	16	62	num	62		i	conflict:e
+05801_p2_L06	17	72	num	72		n	conflict:e
+05801_p2_L06	18	83	num	83		o	conflict:r
+05801_p2_L06	19	39	num	39		u	agrees
+05801_p2_L06	20	50	num	50		s	agrees
+05801_p2_L06	21	53	num	53		s	conflict:e
+05801_p2_L06	22	132	num	132		e	agrees
+05801_p2_L06	23	144	num	144		c	conflict:b
+05801_p2_L06	24	54	num	54		o	conflict:e
+05801_p2_L06	25	70	num	70		u	conflict:e
+05801_p2_L06	26	50	num	50		r	conflict:s
+05801_p2_L06	27	28	num	28		r	conflict:e
+05801_p2_L06	28	81	num	81		e	agrees
+05801_p2_L06	29	9	num	9		r	conflict:e
+05801_p2_L06	30	39	num	39		o	conflict:u
+05801_p2_L06	31	29	num	29		n	conflict:r
+05801_p2_L06	32	82	num	82		t	conflict:e
+05801_p2_L06	33	69	num	69		e	agrees
+05801_p2_L06	34	3	num	3		t	conflict:e
+05801_p2_L06	35	34	num	34		o	conflict:i
+05801_p2_L06	36	9	num	9		n	conflict:e
+05801_p2_L06	37	9	num	9		t	conflict:e
+05801_p2_L06	38	35	num	35		s	agrees
+05801_p2_L06	39	29	num	29		e	conflict:r
+05801_p2_L06	40	83	num	83		c	conflict:r
+05801_p2_L06	41	9	num	9		o	conflict:e
+05801_p2_L06	42	39	num	39		u	agrees
+05801_p2_L06	43	24	num	24		r	conflict:t
+05801_p2_L06	44	70	num	70		r	conflict:e
+05801_p2_L06	45	124	num	124		u	conflict:e
+05801_p2_L06	46	41	num	41		l	conflict:a
+05801_p2_L06	47	7	num	7		o	conflict:u
+05801_p2_L06	48	37	num	37		u	conflict:s
+05801_p2_L06	49	73	num	73		s	conflict:n
+05801_p2_L06	50	63	num	63		i	conflict:e
+05801_p2_L06	51	40	num	40		a	conflict:s
+05801_p2_L06	52	9	num	9		u	conflict:e
+05801_p2_L06	53	2	num	2		c	conflict:a
+05801_p2_L06	54	32	num	32		o	conflict:e
+05801_p2_L06	55	88	num	88		n	conflict:r
+05801_p2_L06	56	103	num	103		t	conflict:e
+05801_p2_L06	57	23	num	23		r	conflict:d
+05801_p2_L06	58	84	num	84		a	conflict:o
+05801_p2_L06	59	59	num	59		i	conflict:e
+05801_p2_L06	60	39	num	39		r	conflict:u
+05801_p2_L06	61	29	num	29		e	conflict:r
+05801_p2_L06	62	134	num	134		s	conflict:t
+05801_p2_L06	63	126	num	126		i	conflict:e
+05801_p2_L06	64	121	num	121		nou	conflict:l
+05801_p2_L06	65	40	num	40		s	agrees
+05801_p2_L06	66	134	num	134		la	conflict:t
+05801_p2_L06	67	127	num	127		perdons	conflict:d
+05801_p2_L06	68	132	num	132		n	conflict:e
+05801_p2_L06	69	55	num	55		y	conflict:e
+05801_p2_L06	70	29	num	29		a	conflict:r
+05801_p2_L06	71	74	num	74		u	agrees
+05801_p2_L06	72	4	num	4		r	conflict:d
+05801_p2_L06	73	27	num	27		a	conflict:e
+05801_p2_L06	74	53	num	53		c	conflict:e
+05801_p2_L06	75	69	num	69		e	agrees
+05801_p2_L06	76	39	num	39		r	conflict:u
+05801_p2_L06	77	23	num	23		t	conflict:d
+05801_p2_L06	78	69	num	69		e	agrees
+05801_p2_L06	79	64	num	64		s	conflict:e
+05801_p2_L06	80	142	num	142		p	conflict:e
+05801_p2_L06	81	12	num	12		l	conflict:e
+05801_p2_L06	82	95	num	95		u	conflict:n
+05801_p2_L06	83	20	num	20		s	conflict:c
+05801_p2_L06	84	195	num	195		despo	conflict:a
+05801_p2_L06	85	12	num	12		i	conflict:e
+05801_p2_L06	86	26	num	26		r	conflict:t
+05801_p2_L06	87	11	num	11		d	conflict:c
+05801_p2_L06	88	8	num	8		e	conflict:s
+05801_p2_L06	89	102	num	102		f	conflict:t
+05801_p2_L06	90	29	num	29		u	conflict:r
+05801_p2_L06	91	12	num	12		r	conflict:e
+05801_p2_L06	92	86	num	86		n	agrees
+05801_p2_L06	93	38	num	38		i	conflict:u
+05801_p2_L06	94	23	num	23		r	conflict:d
+05801_p2_L06	95	53	num	53		g	conflict:e
+05801_p2_L06	96	29	num	29		r	agrees
+05801_p2_L06	97	93	num	93		a	single
+05801_p2_L06	98	66	num	66		n	agrees
+05801_p2_L06	99	4	num	4		d	agrees
+05801_p2_L06	100	77	num	77		a	conflict:e
+05801_p2_L06	101	65	num	65		r	conflict:t
+05801_p2_L06	102	29	num	29		g	conflict:r
+05801_p2_L06	103	22	num	22		e	conflict:r
+05801_p2_L06	104	3	num	3		n	conflict:e
+05801_p2_L06	105	34	num	34		t	conflict:i
+05801_p2_L06	106	Et	clear			et	clear
+05801_p2_L06	107	si	clear			si	clear
+05801_p2_L06	108	nous	clear			nous	clear
+05801_p2_L06	109	pouons	clear				clear
+05801_p2_L06	110	191	num	191		s	conflict:ne
+05801_p2_L06	111	126	num	126		e	agrees
+05801_p2_L06	112	129	num	129		r	conflict:e
+05801_p2_L06	113	76	num	76		v	conflict:e
+05801_p2_L06	114	81	num	81		i	conflict:e
+05801_p2_L06	115	67	num	67		r	conflict:e
+05801_p2_L06	116	102	num	102		a	conflict:t
+05801_p2_L06	117	84	num	84		d	conflict:o
+05801_p2_L06	118	3	num	3		e	agrees
+05801_p2_L06	119	131	num	131		b	conflict:e
+05801_p2_L06	120	190	num	190		ien	conflict:e
+05801_p2_L06	121	13	num	13		p	conflict:a
+05801_p2_L06	122	8	num	8		e	conflict:s
+05801_p2_L06	123	40	num	40		u	conflict:s
+05801_p2_L06	124	190	num	190		si	conflict:e
+05801_p3_L02	0	41	num	41		a	single
+05801_p3_L02	1	335	num	335		p	conflict:e
+05801_p3_L02	2	83	num	83		r	agrees
+05801_p3_L02	3	50	num	50		s	agrees
+05801_p3_L02	4	22	num	22		n	conflict:r
+05801_p3_L02	5	132	num	132		o	conflict:e
+05801_p3_L02	6	195	num	195		u	conflict:a
+05801_p3_L02	7	61	num	61		s	conflict:e
+05801_p3_L02	8	113	num	113		p	conflict:l
+05801_p3_L02	9	23	num	23		o	conflict:d
+05801_p3_L02	10	81	num	81		u	conflict:e
+05801_p3_L02	11	27	num	27		l	conflict:e
+05801_p3_L02	12	54	num	54		r	conflict:e
+05801_p3_L02	13	90	num	90		o	conflict:n
+05801_p3_L02	14	26	num	26		i	conflict:t
+05801_p3_L02	15	59	num	59		t	conflict:e
+05801_p3_L02	16	112	num	112		v	conflict:s
+05801_p3_L02	17	89	num	89		e	agrees
+05801_p3_L02	18	101	num	101		n	conflict:s
+05801_p3_L02	19	32	num	32		i	conflict:e
+05801_p3_L02	20	37	num	37		r	conflict:s
+05801_p3_L02	21	81	num	81		o	conflict:e
+05801_p3_L02	22	53	num	53		r	conflict:e
+05801_p3_L02	23	25	num	25		q	conflict:e
+05801_p3_L02	24	125	num	125		u	conflict:e
+05801_p3_L02	25	132	num	132		a	conflict:e
+05801_p3_L02	26	199	num	199		n	conflict:av
+05801_p3_L02	27	Ou	clear			t	clear
+05801_p3_L02	28	quant	clear				clear
+05801_p3_L02	29	aine	clear			aux	clear
+05801_p3_L02	30	condition	clear			conditions	clear
+05801_p3_L02	31	pourres	clear			soubsl	clear
+05801_p3_L02	32	fournir	clear			equell	clear
+05801_p3_L02	33	129	num	129		e	agrees
+05801_p3_L02	34	82	num	82		s	conflict:e
+05801_p3_L02	35	132	num	132		onpolroit	conflict:e
+05801_p3_L02	36	82	num	82		t	conflict:e
+05801_p3_L02	37	73	num	73		r	conflict:n
+05801_p3_L02	38	82	num	82		a	conflict:e
+05801_p3_L02	39	112	num	112		i	conflict:s
+05801_p3_L02	40	82	num	82		t	conflict:e
+05801_p3_L02	41	27	num	27		e	agrees
+05801_p3_L02	42	22	num	22		r	agrees
+05801_p3_L02	43	3	num	3		a	conflict:e
+05801_p3_L02	44	27	num	27		v	conflict:e
+05801_p3_L02	45	12	num	12		e	agrees
+05801_p3_L02	46	81	num	81		c	conflict:e
+05801_p3_L02	47	331	num	331		les	conflict:a
+05801_p3_L02	48	124	num	124		gens	conflict:e
+05801_p3_L02	49	140	num	140		de	conflict:s
+05801_p3_L02	50	126	num	126		guerre	conflict:e
+05801_p3_L02	51	La	clear			je	clear
+05801_p3_L02	52	prosper	clear			seroye	clear
+05801_p3_L02	53	d'aduis	clear			dadvis	clear
+05801_p3_L02	54	de	clear			de	clear
+05801_p3_L02	55	130	num	130		n	conflict:c
+05801_p3_L02	56	121	num	121		sui	conflict:l
+05801_p3_L02	57	82	num	82		v	conflict:e
+05801_p3_L02	58	2	num	2		r	conflict:a
+05801_p3_L02	59	75	num	75		e	agrees
+05801_p3_L02	60	55	num	55		l	conflict:e
+05801_p3_L02	61	53	num	53		e	agrees
+05801_p3_L02	62	39	num	39		m	conflict:u
+05801_p3_L02	63	87	num	87		e	agrees
+05801_p3_L02	64	112	num	112		s	agrees
+05801_p3_L02	65	82	num	82		m	conflict:e
+05801_p3_L02	66	118	num	118		e	conflict:d
+05801_p3_L02	67	83	num	83		p	conflict:r
+05801_p3_L02	68	29	num	29		i	conflict:r
+05801_p3_L02	69	72	num	72		e	agrees
+05801_p3_L02	70	58	num	58		d	conflict:m
+05801_p3_L02	71	81	num	81		e	agrees
+05801_p3_L02	72	80	num	80		t	conflict:e
+05801_p3_L02	73	132	num	132		co	conflict:e
+05801_p3_L02	74	81	num	81		n	conflict:e
+05801_p3_L02	75	32	num	32		d	conflict:e
+05801_p3_L02	76	9	num	9		i	conflict:e
+05801_p3_L02	77	4	num	4		t	conflict:d
+05801_p3_L02	78	78	num	78		i	conflict:e
+05801_p3_L02	79	102	num	102		o	conflict:t
+05801_p3_L02	80	78	num	78		n	conflict:e
+05801_p3_L02	81	8	num	8		s	agrees
+05801_p3_L02	82	5	num	5		q	conflict:e
+05801_p3_L02	83	27	num	27		u	conflict:e
+05801_p3_L02	84	82	num	82		e	agrees
+05801_p3_L02	85	82	num	82		a	conflict:e
+05801_p3_L02	86	40	num	40		v	conflict:s
+05801_p3_L02	87	7	num	7		o	conflict:u
+05801_p3_L02	88	9	num	9		n	conflict:e
+05801_p3_L02	89	28	num	28		s	conflict:e
+05801_p3_L02	90	130	num	130		suiv	conflict:c
+05801_p3_L02	91	75	num	75		i	conflict:e
+05801_p3_L02	92	55	num	55		e	agrees
+05801_p3_L02	93	37	num	37		e	conflict:s
+05801_p3_L02	94	54	num	54		n	conflict:e
+05801_p3_L02	95	85	num	85		l	conflict:u
+05801_p3_L02	96	5	num	5		a	conflict:e
+05801_p3_L02	97	139	num	139		b	conflict:t
+05801_p3_L02	98	91	num	91		e	conflict:a
+05801_p3_L02	99	2	num	2		s	conflict:a
+05801_p3_L02	100	27	num	27		t	conflict:e
+05801_p3_L02	101	31	num	31		a	conflict:i
+05801_p3_L02	102	82	num	82		l	conflict:e
+05801_p3_L02	103	112	num	112		l	conflict:s
+05801_p3_L02	104	115	num	115		u	agrees
+05801_p3_L02	105	90	num	90		n	agrees
+05801_p3_L02	106	3	num	3		g	conflict:e
+05801_p3_L02	107	92	num	92		d	conflict:s
+05801_p3_L02	108	77	num	77		e	agrees
+05801_p3_L02	109	81	num	81		l	conflict:e
+05801_p3_L02	110	91	num	91		a	agrees
+05801_p3_L02	111	14	num	14		p	conflict:a
+05801_p3_L02	112	27	num	27		r	conflict:e
+05801_p3_L02	113	81	num	81		e	agrees
+05801_p3_L02	114	48	num	48		m	single
+05801_p3_L02	115	82	num	82		i	conflict:e
+05801_p3_L02	116	29	num	29		r	agrees
+05801_p3_L02	117	85	num	85		e	conflict:u
+05801_p3_L02	118	331	num	331		guerre	conflict:a
+05801_p3_L02	119	Ou	clear			sur	clear
+05801_p3_L02	120	quoy	clear			quoi	clear
+05801_p3_L02	121	129	num	129		les	conflict:e
+05801_p3_L02	122	132	num	132		etat	conflict:e
+05801_p3_L02	123	119	num	119		s	conflict:e
+05801_p3_L02	124	82	num	82		d	conflict:e
+05801_p3_L02	125	29	num	29		u	conflict:r
+05801_p3_L02	126	134	num	134		pays	conflict:t
+05801_p3_L02	127	125	num	125		de	conflict:e
+05801_p3_L02	128	83	num	83		h	conflict:r
+05801_p3_L02	129	30	num	30		o	conflict:e
+05801_p3_L02	130	31	num	31		l	conflict:i
+05801_p3_L02	131	69	num	69		l	conflict:e
+05801_p3_L02	132	34	num	34		a	conflict:i
+05801_p3_L02	133	29	num	29		n	conflict:r
+05801_p3_L02	134	15	num	15		d	conflict:e
+05801_p3_L02	135	311	num	311		prometteron	conflict:a
+05801_p3_L02	136	12	num	12		t	conflict:e
+05801_p3_L02	137	221	num	221		et	single-segment
+05801_p3_L02	138	13	num	13		s	conflict:a
+05801_p3_L02	139	25	num	25		o	conflict:e
+05801_p3_L02	140	9	num	9		b	conflict:e
+05801_p3_L02	141	17	num	17		l	conflict:r
+05801_p3_L02	142	31	num	31		i	agrees
+05801_p3_L02	143	35	num	35		g	conflict:s
+05801_p3_L02	144	25	num	25		e	agrees
+05801_p3_L02	145	7	num	7		r	conflict:u
+05801_p3_L02	146	9	num	9		o	conflict:e
+05801_p3_L02	147	32	num	32		n	conflict:e
+05801_p3_L02	148	82	num	82		t	conflict:e
+05801_p3_L02	149	36	num	36		q	conflict:e
+05801_p3_L02	150	vu	clear			u	clear
+05801_p3_L02	151	70	num	70		e	agrees
+05801_p3_L02	152	67	num	67		l	conflict:e
+05801_p3_L02	153	113	num	113		e	conflict:l
+05801_p3_L02	154	103	num	103		s	conflict:e
+05801_p3_L02	155	22	num	22		d	conflict:r
+05801_p3_L02	156	22	num	22		i	conflict:r
+05801_p3_L02	157	10	num	10		c	conflict:r
+05801_p3_L02	158	5	num	5		t	conflict:e
+05801_p3_L02	159	32	num	32		e	agrees
+05801_p3_L02	160	92	num	92		s	agrees
+05801_p3_L02	161	28	num	28		g	conflict:e
+05801_p3_L02	162	13	num	13		e	conflict:a
+05801_p3_L02	163	32	num	32		n	conflict:e
+05801_p3_L02	164	82	num	82		s	conflict:e
+05801_p3_L02	165	24	num	24		d	conflict:t
+05801_p3_L02	166	22	num	22		e	conflict:r
+05801_p3_L02	167	2	num	2		g	conflict:a
+05801_p3_L02	168	30	num	30		u	conflict:e
+05801_p3_L02	169	120	num	120		e	agrees
+05801_p3_L02	170	331	num	331		r	conflict:a
+05801_p3_L02	171	1	num	1		r	agrees
+05801_p3_L02	172	82	num	82		e	agrees
+05801_p3_L02	173	74	num	74		n	conflict:u
+05801_p3_L02	174	22	num	22		e	conflict:r
+05801_p3_L02	175	32	num	32		s	conflict:e
+05801_p3_L02	176	102	num	102		o	conflict:t
+05801_p3_L02	177	79	num	79		r	conflict:e
+05801_p3_L02	178	2	num	2		t	conflict:a
+05801_p3_L02	179	34	num	34		i	agrees
+05801_p3_L02	180	13	num	13		r	conflict:a
+05801_p3_L02	181	311	num	311		o	conflict:a
+05801_p3_L02	182	26	num	26		n	conflict:t
+05801_p3_L02	183	62	num	62		t	conflict:e
+05801_p3_L02	184	3	num	3		d	conflict:e
+05801_p3_L02	185	28	num	28		u	conflict:e
+05801_p3_L02	186	82	num	82		p	conflict:e
+05801_p3_L02	187	27	num	27		a	conflict:e
+05801_p3_L02	188	34	num	34		y	conflict:i
+05801_p3_L02	189	87	num	87		s	conflict:e
+05801_p3_L02	190	9	num	9		s	conflict:e
+05801_p3_L02	191	140	num	140		an	conflict:s
+05801_p3_L02	192	56	num	56		s	conflict:u
+05801_p3_L02	193	53	num	53		e	agrees
+05801_p3_L02	194	82	num	82		s	conflict:e
+05801_p3_L02	195	60	num	60		t	conflict:e
+05801_p3_L02	196	7	num	7		r	conflict:u
+05801_p3_L02	197	39	num	39		e	conflict:u
+05801_p3_L02	198	19	num	19		o	conflict:e
+05801_p3_L02	199	26	num	26		u	conflict:t
+05801_p3_L02	200	72	num	72		p	conflict:e
+05801_p3_L02	201	38	num	38		a	conflict:u
+05801_p3_L02	202	23	num	23		y	conflict:d
+05801_p3_L02	203	82	num	82		e	agrees
+05801_p3_L02	204	51	num	51		z	conflict:t
+05801_p3_L02	205	132	num	132		ou	conflict:e
+05801_p3_L02	206	190	num	190		assure	conflict:e
+05801_p3_L02	207	82	num	82		z	conflict:e
+05801_p3_L02	208	132	num	132		l	conflict:e
+05801_p3_L02	209	42	num	42		e	agrees
+05801_p3_L02	210	39	num	39		u	agrees
+05801_p3_L02	211	27	num	27		r	conflict:e
+05801_p3_L02	212	132	num	132		con	conflict:e
+05801_p3_L02	213	7	num	7		t	conflict:u
+05801_p3_L02	214	32	num	32		e	agrees
+05801_p3_L02	215	84	num	84		n	conflict:o
+05801_p3_L02	216	87	num	87		t	conflict:e
+05801_p3_L02	217	103	num	103		e	agrees
+05801_p3_L02	218	117	num	117		m	conflict:e
+05801_p3_L02	219	47	num	47		e	agrees
+05801_p3_L02	220	2	num	2		n	conflict:a
+05801_p3_L02	221	54	num	54		t	conflict:e
+05801_p3_L02	222	que	clear			que	clear
+05801_p3_L02	223	59	num	59		s	conflict:e
+05801_p3_L02	224	132	num	132		il	conflict:e
+05801_p3_L02	225	191	num	191		ne	single-segment
+05801_p3_L02	226	126	num	126		vueillent	conflict:e
+05801_p3_L02	227	129	num	129		se	conflict:e
+05801_p3_L02	228	172	num	172		content	conflict:a
+05801_p3_L02	229	60	num	60		e	agrees
+05801_p3_L02	230	83	num	83		r	agrees
+05801_p3_L02	231	61	num	61		d	conflict:e
+05801_p3_L02	232	102	num	102		e	conflict:t
+05801_p3_L02	233	112	num	112		s	agrees
+05801_p3_L02	234	92	num	92		c	conflict:s
+05801_p3_L02	235	9	num	9		o	conflict:e
+05801_p3_L02	236	34	num	34		n	conflict:i
+05801_p3_L02	237	72	num	72		d	conflict:e
+05801_p3_L02	238	9	num	9		i	conflict:e
+05801_p3_L02	239	2	num	2		t	conflict:a
+05801_p3_L02	240	32	num	32		i	conflict:e
+05801_p3_L02	241	82	num	82		o	conflict:e
+05801_p3_L02	242	5	num	5		n	conflict:e
+05801_p3_L02	243	39	num	39		s	conflict:u
+05801_p3_L02	244	85	num	85		d	conflict:u
+05801_p3_L02	245	24	num	24		e	conflict:t
+05801_p3_L02	246	126	num	126		la	conflict:e
+05801_p3_L02	247	129	num	129		premire	conflict:e
+05801_p3_L02	248	150	num	150		best	single
+05801_p3_L02	249	58	num	58		a	conflict:m
+05801_p3_L02	250	9	num	9		l	conflict:e
+05801_p3_L02	251	5	num	5		l	conflict:e
+05801_p3_L02	252	77	num	77		u	conflict:e
+05801_p3_L02	253	105	num	105		n	conflict:o
+05801_p3_L02	254	78	num	78		g	conflict:e
+05801_p3_L02	255	8	num	8		f	agrees
+05801_p3_L02	256	3	num	3		a	conflict:e
+05801_p3_L02	257	30	num	30		u	conflict:e
+05801_p3_L02	258	de	clear			d	clear
+05801_p3_L02	259	la	clear			ra	clear
+05801_p3_L02	260	142	num	142		e	agrees
+05801_p3_L02	261	129	num	129		n	conflict:e
+05801_p3_L02	262	127	num	127		s	conflict:d
+05801_p3_L02	263	3	num	3		u	conflict:e
+05801_p3_L02	264	67	num	67		y	conflict:e
+05801_p3_L02	265	78	num	78		v	conflict:e
+05801_p3_L02	266	82	num	82		r	conflict:e
+05801_p3_L02	267	84	num	84		e	conflict:o
+05801_p3_L02	268	1	num	1		l	conflict:r
+05801_p3_L02	269	132	num	132		e	agrees
+05801_p3_L02	270	67	num	67		p	conflict:e
+05801_p3_L02	271	82	num	82		i	conflict:e
+05801_p3_L02	272	20	num	20		e	conflict:c
+05801_p3_L02	273	32	num	32		d	conflict:e
+05801_p3_L02	274	82	num	82		d	conflict:e
+05801_p3_L02	275	112	num	112		e	conflict:s
+05801_p3_L02	276	115	num	115		c	conflict:u
+05801_p3_L02	277	30	num	30		e	agrees
+05801_p3_L02	278	7	num	7		l	conflict:u
+05801_p3_L02	279	79	num	79		l	conflict:e
+05801_p3_L02	280	15	num	15		e	agrees
+05801_p3_L02	281	87	num	87		d	conflict:e
+05801_p3_L02	282	78	num	78		e	agrees
+05801_p3_L02	283	82	num	82		l	conflict:e
+05801_p3_L02	284	2	num	2		a	agrees
+05801_p3_L02	285	75	num	75		d	conflict:e
+05801_p3_L02	286	53	num	53		e	agrees
+05801_p3_L02	287	38	num	38		r	conflict:u
+05801_p3_L02	288	87	num	87		n	conflict:e
+05801_p3_L02	289	113	num	113		i	conflict:l
+05801_p3_L02	290	82	num	82		r	conflict:e
+05801_p3_L02	291	30	num	30		e	agrees
+05801_p3_L02	292	83	num	83		g	conflict:r
+05801_p3_L02	293	79	num	79		u	conflict:e
+05801_p3_L02	294	77	num	77		e	agrees
+05801_p3_L02	295	85	num	85		r	conflict:u
+05801_p3_L02	296	7	num	7		r	conflict:u
+05801_p3_L02	297	113	num	113		e	conflict:l
+05801_p3_L02	298	111	num	111		e	agrees
+05801_p3_L02	299	82	num	82		t	conflict:e
+05801_p3_L02	300	12	num	12		p	conflict:e
+05801_p3_L02	301	91	num	91		o	conflict:a
+05801_p3_L02	302	12	num	12		u	conflict:e
+05801_p3_L02	303	22	num	22		r	agrees
+05801_p3_L02	304	9	num	9		t	conflict:e
+05801_p3_L02	305	105	num	105		o	agrees
+05801_p3_L02	306	81	num	81		u	conflict:e
+05801_p3_L02	307	24	num	24		t	agrees
+05801_p3_L02	308	82	num	82		f	conflict:e
+05801_p3_L02	309	331	num	331		aut	conflict:a
+05801_p3_L07	0	72	num	72			null-or-unaligned
+05801_p3_L07	1	7	num	7			null-or-unaligned
+05801_p3_L07	2	2	num	2		a	agrees
+05801_p3_L07	3	32	num	32		v	conflict:e
+05801_p3_L07	4	22	num	22		e	conflict:r
+05801_p3_L07	5	91	num	91		c	conflict:a
+05801_p3_L07	6	73	num	73		q	conflict:n
+05801_p3_L07	7	34	num	34			null-or-unaligned
+05801_p3_L07	8	81	num	81		u	conflict:e
+05801_p3_L07	9	25	num	25		e	agrees
+05801_p3_L07	10	125	num	125		s	conflict:e
+05801_p3_L07	11	132	num	132		e	agrees
+05801_p3_L07	12	61	num	61		u	conflict:e
+05801_p3_L07	13	35	num	35		s	agrees
+05801_p3_L07	14	81	num	81		q	conflict:e
+05801_p3_L07	15	74	num	74		u	agrees
+05801_p3_L07	16	20	num	20		i	conflict:c
+05801_p3_L07	17	40	num	40		l	conflict:s
+05801_p3_L07	18	81	num	81		z	conflict:e
+05801_p3_L07	19	50	num	50		n	conflict:s
+05801_p3_L07	20	82	num	82		a	conflict:e
+05801_p3_L07	21	31	num	31		m	conflict:i
+05801_p3_L07	22	50	num	50		n	conflict:s
+05801_p3_L07	23	18	num	18		e	single
+05801_p3_L07	24	30	num	30		n	conflict:e
+05801_p3_L07	25	102	num	102		t	agrees
+05801_p3_L07	26	112	num	112		n	conflict:s
+05801_p3_L07	27	20	num	20		u	conflict:c
+05801_p3_L07	28	31	num	31		l	conflict:i
+05801_p3_L07	29	120	num	120		x	conflict:e
+05801_p3_L07	30	82	num	82		c	conflict:e
+05801_p3_L07	31	12	num	12		h	conflict:e
+05801_p3_L07	32	2	num	2		a	agrees
+05801_p3_L07	33	34	num	34		r	conflict:i
+05801_p3_L07	34	55	num	55		i	conflict:e
+05801_p3_L07	35	115	num	115		o	conflict:u
+05801_p3_L07	36	20	num	20		t	conflict:c
+05801_p3_L07	37	72	num	72		s	conflict:e
+05801_p3_L07	38	97	num	97		p	conflict:e
+05801_p3_L07	39	64	num	64		o	conflict:e
+05801_p3_L07	40	22	num	22		u	conflict:r
+05801_p3_L07	41	102	num	102		r	conflict:t
+05801_p3_L07	42	82	num	82		e	agrees
+05801_p3_L07	43	34	num	34		s	conflict:i
+05801_p3_L07	44	54	num	54		t	conflict:e
+05801_p3_L07	45	132	num	132		r	conflict:e
+05801_p3_L07	46	197	num	197		e	single
+05801_p3_L07	47	que	clear				clear
+05801_p3_L07	48	leur	clear				clear
+05801_p3_L07	49	impossible	clear			impossible	clear
+05801_p3_L07	50	du	clear			d	clear
+05801_p3_L07	51	fils	clear				clear
+05801_p3_L07	52	87	num	87		e	agrees
+05801_p3_L07	53	62	num	62		l	conflict:e
+05801_p3_L07	54	101	num	101		e	conflict:s
+05801_p3_L07	55	22	num	22		s	conflict:r
+05801_p3_L07	56	82	num	82		f	conflict:e
+05801_p3_L07	57	56	num	56		a	conflict:u
+05801_p3_L07	58	27	num	27		i	conflict:e
+05801_p3_L07	59	26	num	26		r	conflict:t
+05801_p3_L07	60	81	num	81		e	agrees
+05801_p3_L07	61	29	num	29		p	conflict:r
+05801_p3_L07	62	55	num	55		a	conflict:e
+05801_p3_L07	63	24	num	24		s	conflict:t
+05801_p3_L07	64	112	num	112		s	agrees
+05801_p3_L07	65	82	num	82		e	agrees
+05801_p3_L07	66	29	num	29		r	agrees
+05801_p3_L07	67	25	num	25		p	conflict:e
+05801_p3_L07	68	101	num	101		a	conflict:s
+05801_p3_L07	69	83	num	83		r	agrees
+05801_p3_L07	70	81	num	81		l	conflict:e
+05801_p3_L07	71	25	num	25		e	agrees
+05801_p3_L07	72	81	num	81		s	conflict:e
+05801_p3_L07	73	29	num	29		r	agrees
+05801_p3_L07	74	83	num	83		i	conflict:r
+05801_p3_L07	75	74	num	74		v	agrees
+05801_p3_L07	76	62	num	62		i	conflict:e
+05801_p3_L07	77	51	num	51		r	conflict:t
+05801_p3_L07	78	33	num	33		e	agrees
+05801_p3_L07	79	37	num	37		s	agrees
+05801_p3_L07	80	28	num	28		e	agrees
+05801_p3_L07	81	59	num	59		t	conflict:e
+05801_p3_L07	82	26	num	26		a	conflict:t
+05801_p3_L07	83	30	num	30		u	conflict:e
+05801_p3_L07	84	65	num	65		t	agrees
+05801_p3_L07	85	85	num	85		r	conflict:u
+05801_p3_L07	86	85	num	85		e	conflict:u
+05801_p3_L07	87	27	num	27		s	conflict:e
+05801_p3_L07	88	127	num	127		passages	conflict:d
+05801_p3_L07	89	132	num	132		nantmoins	conflict:e
+05801_p3_L07	90	140	num	140		serontlesetats	conflict:s
+05801_p3_L07	91	Continuant	clear			contensch	clear
+05801_p3_L07	92	132	num	132		a	conflict:e
+05801_p3_L07	93	72	num	72		s	conflict:e
+05801_p3_L07	94	22	num	22		q	conflict:r
+05801_p3_L07	95	1	num	1		u	conflict:r
+05801_p3_L07	96	55	num	55		e	agrees
+05801_p3_L07	97	42	num	42		d	conflict:e
+05801_p3_L07	98	28	num	28		o	conflict:e
+05801_p3_L07	99	83	num	83		u	conflict:r
+05801_p3_L07	100	28	num	28		z	conflict:e
+05801_p3_L07	101	32	num	32		a	conflict:e
+05801_p3_L07	102	63	num	63		i	conflict:e
+05801_p3_L07	103	34	num	34		n	conflict:i
+05801_p3_L07	104	30	num	30		e	agrees
+05801_p3_L07	105	72	num	72		d	conflict:e
+05801_p3_L07	106	3	num	3		e	agrees
+05801_p3_L07	107	77	num	77		c	conflict:e
+05801_p3_L07	108	3	num	3		h	conflict:e
+05801_p3_L07	109	28	num	28		e	agrees
+05801_p3_L07	110	140	num	140		vaux	conflict:s
+05801_p3_L07	111	126	num	126		donner	conflict:e
+05801_p3_L07	112	137	num	137		autan	single
+05801_p3_L07	113	61	num	61		t	conflict:e
+05801_p3_L07	114	71	num	71		c	conflict:a
+05801_p3_L07	115	26	num	26		o	conflict:t
+05801_p3_L07	116	27	num	27		m	conflict:e
+05801_p3_L07	117	82	num	82		m	conflict:e
+05801_p3_L07	118	14	num	14		e	conflict:a
+05801_p3_L07	119	37	num	37		s	agrees
+05801_p3_L07	120	57	num	57		i	agrees
+05801_p3_L07	121	83	num	83		l	conflict:r
+05801_p3_L07	122	102	num	102		x	conflict:t
+05801_p3_L07	123	3	num	3		a	conflict:e
+05801_p3_L07	124	83	num	83		v	conflict:r
+05801_p3_L07	125	12	num	12		o	conflict:e
+05801_p3_L07	126	72	num	72		y	conflict:e
+05801_p3_L07	127	27	num	27		e	agrees
+05801_p3_L07	128	81	num	81		n	conflict:e
+05801_p3_L07	129	37	num	37		t	conflict:s
+05801_p3_L07	130	50	num	50		l	conflict:s
+05801_p3_L07	131	14	num	14		e	conflict:a
+05801_p3_L07	132	2	num	2		u	conflict:a
+05801_p3_L07	133	5	num	5		r	conflict:e
+05801_p3_L07	134	81	num	81		c	conflict:e
+05801_p3_L07	135	22	num	22		h	conflict:r
+05801_p3_L07	136	82	num	82		a	conflict:e
+05801_p3_L07	137	39	num	39		r	conflict:u
+05801_p3_L07	138	34	num	34		i	agrees
+05801_p3_L07	139	62	num	62		o	conflict:e
+05801_p3_L07	140	2	num	2		t	conflict:a
+05801_p3_L07	141	32	num	32		s	conflict:e
+05801_p3_L07	142	9	num	9		e	agrees
+05801_p3_L07	143	116	num	116		t	conflict:e
+05801_p3_L07	144	117	num	117		c	conflict:e
+05801_p3_L07	145	81	num	81		h	conflict:e
+05801_p3_L07	146	26	num	26		a	conflict:t
+05801_p3_L07	147	102	num	102		s	conflict:t
+05801_p3_L07	148	111	num	111		q	conflict:e
+05801_p3_L07	149	50	num	50		u	conflict:s
+05801_p3_L07	150	81	num	81		e	agrees
+05801_p3_L07	151	50	num	50		s	agrees
+05801_p3_L07	152	7	num	7		i	conflict:u
+05801_p3_L07	153	55	num	55		x	conflict:e
+05801_p3_L07	154	84	num	84		a	conflict:o
+05801_p3_L07	155	2	num	2		i	conflict:a
+05801_p3_L07	156	33	num	33		n	conflict:e
+05801_p3_L07	157	113	num	113		e	conflict:l
+05801_p3_L07	158	83	num	83		c	conflict:r
+05801_p3_L07	159	38	num	38		o	conflict:u
+05801_p3_L07	160	23	num	23		m	conflict:d
+05801_p3_L07	161	72	num	72		e	agrees
+05801_p3_L07	162	126	num	126		s	conflict:e
+05801_p3_L07	163	58	num	58		i	conflict:m
+05801_p3_L07	164	8	num	8		l	conflict:s
+05801_p3_L07	165	55	num	55		s	conflict:e
+05801_p3_L07	166	140	num	140		avoyent	conflict:s
+05801_p3_L07	167	121	num	121		l	agrees
+05801_p3_L07	168	75	num	75		e	agrees
+05801_p3_L07	169	26	num	26		u	conflict:t
+05801_p3_L07	170	30	num	30		r	conflict:e
+05801_p3_L07	171	172	num	172		chare	conflict:a
+05801_p3_L07	172	82	num	82		t	conflict:e
+05801_p3_L07	173	27	num	27		t	conflict:e
+05801_p3_L07	174	103	num	103		e	agrees
+05801_p3_L07	175	50	num	50		s	agrees
+05801_p3_L07	176	63	num	63		e	agrees
+05801_p3_L07	177	102	num	102		t	agrees
+05801_p3_L07	178	3	num	3		l	conflict:e
+05801_p3_L07	179	84	num	84		e	conflict:o
+05801_p3_L07	180	9	num	9		r	conflict:e
+05801_p3_L07	181	120	num	120		e	agrees
+05801_p3_L07	182	82	num	82		s	conflict:e
+05801_p3_L07	183	30	num	30		t	conflict:e
+05801_p3_L07	184	102	num	102		e	conflict:t
+05801_p3_L07	185	112	num	112		e	conflict:s
+05801_p3_L07	186	95	num	95		n	single
+05801_p3_L07	187	54	num	54		s	conflict:e
+05801_p3_L07	188	38	num	38		u	agrees
+05801_p3_L07	189	7	num	7		i	conflict:u
+05801_p3_L07	190	52	num	52		v	conflict:d
+05801_p3_L07	191	83	num	83		a	conflict:r
+05801_p3_L07	192	9	num	9		n	conflict:e
+05801_p3_L07	193	72	num	72		t	conflict:e
+05801_p3_L07	194	132	num	132		la	conflict:e
+05801_p3_L07	195	140	num	140		d	conflict:s
+05801_p3_L07	196	112	num	112		i	conflict:s
+05801_p3_L07	197	82	num	82		t	conflict:e
+05801_p3_L07	198	38	num	38		e	conflict:u
+05801_p3_L07	199	25	num	25		d	conflict:e
+05801_p3_L07	200	80	num	80		e	agrees
+05801_p3_L07	201	26	num	26		r	conflict:t
+05801_p3_L07	202	87	num	87		n	conflict:e
+05801_p3_L07	203	33	num	33		i	conflict:e
+05801_p3_L07	204	35	num	35		r	conflict:s
+05801_p3_L07	205	81	num	81		e	agrees
+05801_p3_L07	206	190	num	190		bestallung	conflict:e
+05801_p3_L07	207	132	num	132		quant	conflict:e
+05801_p3_L07	208	121	num	121		au	conflict:l
+05801_p3_L07	209	124	num	124		pa	conflict:e
+05801_p3_L07	210	12	num	12		s	conflict:e
+05801_p3_L07	211	22	num	22		s	conflict:r
+05801_p3_L07	212	2	num	2		a	agrees
+05801_p3_L07	213	105	num	105		g	conflict:o
+05801_p3_L07	214	81	num	81		e	agrees
+05801_p3_L07	215	25	num	25		j	conflict:e
+05801_p3_L07	216	81	num	81		e	agrees
+05801_p3_L07	217	132	num	132		ne	conflict:e
+05801_p3_L07	218	140	num	140		v	conflict:s
+05801_p3_L07	219	86	num	86		o	conflict:n
+05801_p3_L07	220	82	num	82		y	conflict:e
+05801_p3_L07	221	28	num	28		n	conflict:e
+05801_p3_L07	222	32	num	32		u	conflict:e
+05801_p3_L07	223	73	num	73		l	conflict:n
+05801_p3_L07	224	112	num	112		a	conflict:s
+05801_p3_L07	225	115	num	115		u	agrees
+05801_p3_L07	226	37	num	37		t	conflict:s
+05801_p3_L07	227	3	num	3		r	conflict:e
+05801_p3_L07	228	84	num	84		e	conflict:o
+05801_p3_L07	229	132	num	132		plus	conflict:e
+05801_p3_L07	230	140	num	140		commode	conflict:s
+05801_p3_L07	231	121	num	121		que	conflict:l
+05801_p3_L07	232	137	num	137		celuy	conflict:autan
+05801_p3_L07	233	148	num	148		que	single-segment
+05801_p3_L07	234	150	num	150		vous	conflict:best
+05801_p3_L07	235	121	num	121		monsieu	conflict:l
+05801_p3_L07	236	81	num	81		r	conflict:e
+05801_p3_L07	237	3	num	3		l	conflict:e
+05801_p3_L07	238	32	num	32		e	agrees
+05801_p3_L07	239	61	num	61		c	conflict:e
+05801_p3_L07	240	30	num	30		o	conflict:e
+05801_p3_L07	241	12	num	12		n	conflict:e
+05801_p3_L07	242	83	num	83		t	conflict:r
+05801_p3_L07	243	27	num	27		e	agrees
+05801_p3_L07	244	30	num	30		l	conflict:e
+05801_p3_L07	245	85	num	85		o	conflict:u
+05801_p3_L07	246	72	num	72		u	conflict:e
+05801_p3_L07	247	83	num	83		i	conflict:r
+05801_p3_L07	248	102	num	102		s	conflict:t
+05801_p3_L07	249	82	num	82		d	conflict:e
+05801_p3_L07	250	2	num	2		e	conflict:a
+05801_p3_L07	251	82	num	82		n	conflict:e
+05801_p3_L07	252	5	num	5		a	conflict:e
+05801_p3_L07	253	89	num	89		s	conflict:e
+05801_p3_L07	254	54	num	54		s	conflict:e
+05801_p3_L07	255	2	num	2		a	agrees
+05801_p3_L07	256	39	num	39		u	agrees
+05801_p3_L07	257	112	num	112		d	conflict:s
+05801_p3_L07	258	62	num	62		s	conflict:e
+05801_p3_L07	259	34	num	34		i	agrees
+05801_p3_L07	260	52	num	52		g	conflict:d
+05801_p3_L07	261	23	num	23		n	conflict:d
+05801_p3_L07	262	82	num	82		e	agrees
+05801_p3_L07	263	113	num	113		z	conflict:l
+05801_p3_L07	264	49	num	49		e	agrees
+05801_p3_L07	265	37	num	37		n	conflict:s
+05801_p3_L07	266	28	num	28		v	conflict:e
+05801_p3_L07	267	72	num	72		o	conflict:e
+05801_p3_L07	268	8	num	8		s	agrees
+05801_p3_L07	269	118	num	118		t	conflict:d
+05801_p3_L07	270	120	num	120		r	conflict:e
+05801_p3_L07	271	8	num	8		e	conflict:s
+05801_p3_L07	272	12	num	12		l	conflict:e
+05801_p3_L07	273	62	num	62		e	agrees
+05801_p3_L07	274	7	num	7		t	conflict:u
+05801_p3_L07	275	112	num	112		t	conflict:s
+05801_p3_L07	276	40	num	40		r	conflict:s
+05801_p3_L07	277	53	num	53		e	agrees
+05801_p3_L07	278	132	num	132		savoir	conflict:e
+05801_p3_L07	279	140	num	140		a	conflict:s
+05801_p3_L07	280	82	num	82		u	conflict:e
+05801_p3_L07	281	84	num	84		p	conflict:o
+05801_p3_L07	282	37	num	37		r	conflict:s
+05801_p3_L07	283	30	num	30		s	conflict:e
+05801_p3_L07	284	173	num	173		t	conflict:q
+05801_p3_L07	285	96	num	96		i	agrees
+05801_p3_L07	286	82	num	82		e	agrees
+05801_p3_L07	287	28	num	28		l	conflict:e
+05801_p3_L07	288	102	num	102		e	conflict:t
+05801_p3_L07	289	83	num	83		t	conflict:r
+05801_p3_L07	290	2	num	2		j	conflict:a
+05801_p3_L07	291	83	num	83		a	conflict:r
+05801_p3_L07	292	58	num	58		y	conflict:m
+05801_p3_L07	293	132	num	132		de	conflict:e
+05801_p3_L07	294	81	num	81		s	conflict:e
+05801_p3_L07	295	2	num	2		j	conflict:a
+05801_p3_L07	296	141	num	141		p	conflict:e
+05801_p3_L07	297	84	num	84		o	agrees
+05801_p3_L07	298	27	num	27		u	conflict:e
+05801_p3_L07	299	32	num	32		r	conflict:e
+05801_p3_L07	300	21	num	21		c	conflict:s
+05801_p3_L07	301	82	num	82		e	agrees
+05801_p3_L07	302	112	num	112		s	agrees
+05801_p3_L07	303	83	num	83		t	conflict:r
+05801_p3_L07	304	32	num	32		e	agrees
+05801_p3_L07	305	35	num	35		f	agrees
+05801_p3_L07	306	29	num	29		f	conflict:r
+05801_p3_L07	307	82	num	82		e	agrees
+05801_p3_L07	308	61	num	61		t	conflict:e
+05801_p3_L07	309	26	num	26		d	conflict:t
+05801_p3_L07	310	30	num	30		p	conflict:e
+05801_p3_L07	311	82	num	82		e	agrees
+05801_p3_L07	312	37	num	37		s	agrees
+05801_p3_L07	313	7	num	7		c	conflict:u
+05801_p3_L07	314	102	num	102		h	conflict:t
+05801_p3_L07	315	22	num	22		s	conflict:r
+05801_p3_L07	316	84	num	84		t	conflict:o
+05801_p3_L07	317	70	num	70		e	agrees
+05801_p3_L07	318	12	num	12		i	conflict:e
+05801_p3_L07	319	85	num	85		n	conflict:u
+05801_p3_L07	320	26	num	26		t	agrees
+05801_p3_L07	321	76	num	76		z	conflict:e
+05801_p3_L07	322	83	num	83		e	conflict:r
+05801_p3_L07	323	113	num	113		l	agrees
+05801_p3_L07	324	140	num	140		vers	conflict:s
+05801_p3_L07	325	131	num	131		l	conflict:e
+05801_p3_L07	326	124	num	124		af	conflict:e
+05801_p3_L07	327	29	num	29		f	conflict:r
+05801_p3_L07	328	34	num	34		i	agrees
+05801_p3_L07	329	83	num	83		n	conflict:r
+05801_p3_L07	330	102	num	102		q	conflict:t
+05801_p3_L07	331	3	num	3		u	conflict:e
+05801_p3_L07	332	28	num	28		e	agrees
+05801_p3_L07	333	82	num	82		l	conflict:e
+05801_p3_L07	334	115	num	115		e	conflict:u
+05801_p3_L07	335	132	num	132		plu	conflict:e
+05801_p3_L07	336	38	num	38		s	conflict:u
+05801_p3_L07	337	83	num	83		s	conflict:r
+05801_p3_L07	338	23	num	23		e	conflict:d
+05801_p3_L07	339	29	num	29		c	conflict:r
+05801_p3_L07	340	113	num	113		r	conflict:l
+05801_p3_L07	341	de	clear			te	clear
+05801_p3_L07	342	62	num	62		m	conflict:e
+05801_p3_L07	343	50	num	50		e	conflict:s
+05801_p3_L07	344	3	num	3		n	conflict:e
+05801_p3_L07	345	82	num	82		t	conflict:e
+05801_p3_L07	346	140	num	140		q	conflict:s
+05801_p3_L07	347	124	num	124		u	conflict:e
+05801_p3_L07	348	42	num	42		e	agrees
+05801_p3_L07	349	132	num	132		f	conflict:e
+05801_p3_L07	350	13	num	13		a	agrees
+05801_p3_L07	351	45	num	45		i	single
+05801_p3_L07	352	30	num	30		r	conflict:e
+05801_p3_L07	353	27	num	27		e	agrees
+05801_p3_L07	354	84	num	84		s	conflict:o
+05801_p3_L07	355	78	num	78		e	agrees
+05801_p3_L07	356	22	num	22		p	conflict:r
+05801_p3_L07	357	85	num	85		o	conflict:u
+05801_p3_L07	358	77	num	77		u	conflict:e
+05801_p3_L07	359	47	num	47		l	conflict:e
+05801_p3_L07	360	5	num	5		r	conflict:e
+05801_p3_L07	361	31	num	31		a	conflict:i
+05801_p3_L07	362	72	num	72		i	conflict:e
+05801_p3_L07	363	88	num	88		l	conflict:r
+05801_p3_L07	364	63	num	63		r	conflict:e
+05801_p3_L07	365	103	num	103		e	agrees
+05801_p3_L07	366	21	num	21		c	conflict:s
+05801_p3_L07	367	81	num	81		o	conflict:e
+05801_p3_L07	368	24	num	24		g	conflict:t
+05801_p3_L07	369	83	num	83		n	conflict:r
+05801_p3_L07	370	7	num	7		o	conflict:u
+05801_p3_L07	371	117	num	117		i	conflict:e
+05801_p3_L07	372	21	num	21		s	agrees
+05801_p3_L07	373	83	num	83		t	conflict:r
+05801_p3_L07	374	102	num	102		r	conflict:t
+05801_p3_L07	375	119	num	119		e	agrees
+05801_p3_L07	376	87	num	87		l	conflict:e
+05801_p3_L07	377	132	num	132		a	conflict:e
+05801_p3_L07	378	172	num	172		p	conflict:a
+05801_p3_L07	379	9	num	9		l	conflict:e
+05801_p3_L07	380	91	num	91		a	agrees
+05801_p3_L07	381	2	num	2		c	conflict:a
+05801_p3_L07	382	6	num	6		e	agrees
+05801_p3_L07	383	103	num	103		e	agrees
+05801_p3_L07	384	29	num	29		t	conflict:r
+05801_p3_L07	385	72	num	72		f	conflict:e
+05801_p3_L07	386	113	num	113		a	conflict:l
+05801_p3_L07	387	64	num	64		c	conflict:e
+05801_p3_L07	388	132	num	132		e	agrees
+05801_p3_L07	389	15	num	15		a	conflict:e
+05801_p3_L07	390	91	num	91		p	conflict:a
+05801_p3_L07	391	7	num	7		p	conflict:u
+05801_p3_L07	392	16	num	16		r	conflict:n
+05801_p3_L07	393	72	num	72		e	agrees
+05801_p3_L07	394	87	num	87		s	conflict:e
+05801_p3_L07	395	64	num	64		t	conflict:e
+05801_p3_L07	396	59	num	59		e	agrees
+05801_p3_L07	397	11	num	11		r	conflict:c
+05801_p3_L07	398	22	num	22		l	conflict:r
+05801_p3_L07	399	82	num	82		e	agrees
+05801_p3_L07	400	28	num	28		s	conflict:e
+05801_p3_L07	401	33	num	33		p	conflict:e
+05801_p3_L07	402	84	num	84		o	agrees
+05801_p3_L07	403	25	num	25		n	conflict:e
+05801_p3_L07	404	72	num	72		t	conflict:e
+05801_p3_L07	405	30	num	30		o	conflict:e
+05801_p3_L07	406	150	num	150		n	conflict:best
+05801_p3_L07	407	141	num	141		s	conflict:e
+05801_p3_L07	408	59	num	59		a	conflict:e
+05801_p3_L07	409	3	num	3		u	conflict:e
+05801_p3_L07	410	132	num	132		r	conflict:e
+05801_p3_L07	411	129	num	129		e	agrees
+05801_p3_L07	412	77	num	77		s	conflict:e
+05801_p3_L07	413	4	num	4		t	conflict:d
+05801_p3_L07	414	28	num	28		e	agrees
+05801_p3_L07	415	140	num	140		il	conflict:s
+05801_p3_L07	416	124	num	124		sera	conflict:e
+05801_p3_L07	417	131	num	131		d	conflict:e
+05801_p3_L07	418	si	clear			u	clear
+05801_p3_L07	419	vostre	clear			toutnc	clear
+05801_p3_L07	420	il	num	11		e	conflict:c
+05801_p3_L07	421	plaira	clear			ssaire	clear
+05801_p3_L07	422	de	clear			de	clear
+05801_p3_L07	423	trouver	clear				clear
+05801_p3_L07	424	moyen	clear			mene	clear
+05801_p3_L07	425	de	clear				clear
+05801_p3_L07	426	122	num	122		r	agrees
+05801_p3_L07	427	132	num	132		l	conflict:e
+05801_p3_L07	428	140	num	140		i	conflict:s
+05801_p3_L07	429	129	num	129		nfanterie	conflict:e
+05801_p3_L07	430	121	num	121		ave	conflict:l
+05801_p3_L07	431	47	num	47		c	conflict:e
+05801_p3_L07	432	132	num	132		la	conflict:e
+05801_p4_L06	0	24	num	24		a	conflict:t
+05801_p4_L06	1	112	num	112		f	agrees
+05801_p4_L06	2	132	num	132		f	conflict:e
+05801_p4_L06	3	296	num	296		i	single
+05801_p4_L06	4	140	num	140		n	conflict:s
+05801_p4_L06	5	82	num	82		q	conflict:e
+05801_p4_L06	6	38	num	38		u	agrees
+05801_p4_L06	7	83	num	83		e	conflict:r
+05801_p4_L06	8	79	num	79		l	conflict:e
+05801_p4_L06	9	113	num	113		u	conflict:l
+05801_p4_L06	10	69	num	69		n	conflict:e
+05801_p4_L06	11	335	num	335		e	single
+05801_p4_L06	12	82	num	82		s	conflict:e
+05801_p4_L06	13	87	num	87		o	conflict:e
+05801_p4_L06	14	103	num	103		u	conflict:e
+05801_p4_L06	15	3	num	3		s	conflict:e
+05801_p4_L06	16	82	num	82		t	conflict:e
+05801_p4_L06	17	91	num	91		i	conflict:a
+05801_p4_L06	18	2	num	2		e	conflict:a
+05801_p4_L06	19	81	num	81		n	conflict:e
+05801_p4_L06	20	172	num	172		n	conflict:a
+05801_p4_L06	21	27	num	27		e	agrees
+05801_p4_L06	22	7	num	7		l	conflict:u
+05801_p4_L06	23	37	num	37		a	conflict:s
+05801_p4_L06	24	78	num	78		u	conflict:e
+05801_p4_L06	25	82	num	82		l	conflict:e
+05801_p4_L06	26	52	num	52		t	conflict:d
+05801_p4_L06	27	91	num	91		r	conflict:a
+05801_p4_L06	28	37	num	37		e	conflict:s
+05801_p4_L06	29	33	num	33		e	agrees
+05801_p4_L06	30	29	num	29		t	conflict:r
+05801_p4_L06	31	83	num	83		p	conflict:r
+05801_p4_L06	32	190	num	190		o	conflict:e
+05801_p4_L06	33	126	num	126		u	conflict:e
+05801_p4_L06	34	132	num	132		r	conflict:e
+05801_p4_L06	35	130	num	130		c	agrees
+05801_p4_L06	36	141	num	141		e	agrees
+05801_p4_L06	37	16	num	16		s	conflict:n
+05801_p4_L06	38	32	num	32		t	conflict:e
+05801_p4_L06	39	76	num	76		e	agrees
+05801_p4_L06	40	66	num	66		f	conflict:n
+05801_p4_L06	41	130	num	130		f	conflict:c
+05801_p4_L06	42	141	num	141		e	agrees
+05801_p4_L06	43	126	num	126		c	conflict:e
+05801_p4_L06	44	117	num	117		t	conflict:e
+05801_p4_L06	45	81	num	81		f	conflict:e
+05801_p4_L06	46	2	num	2		a	agrees
+05801_p4_L06	47	85	num	85		u	agrees
+05801_p4_L06	48	23	num	23		d	agrees
+05801_p4_L06	49	119	num	119		r	conflict:e
+05801_p4_L06	50	336	num	336		a	single
+05801_p4_L06	51	115	num	115		m	conflict:u
+05801_p4_L06	52	89	num	89		e	agrees
+05801_p4_L06	53	14	num	14		n	conflict:a
+05801_p4_L06	54	5	num	5		e	agrees
+05801_p4_L06	55	93	num	93		r	conflict:a
+05801_p4_L06	56	133	num	133		l	single
+05801_p4_L06	57	129	num	129		i	conflict:e
+05801_p4_L06	58	15	num	15		n	conflict:e
+05801_p4_L06	59	130	num	130		f	conflict:c
+05801_p4_L06	60	126	num	126		a	conflict:e
+05801_p4_L06	61	68	num	68		n	conflict:e
+05801_p4_L06	62	3	num	3		t	conflict:e
+05801_p4_L06	63	59	num	59		e	agrees
+05801_p4_L06	64	39	num	39		r	conflict:u
+05801_p4_L06	65	25	num	25		i	conflict:e
+05801_p4_L06	66	124	num	124		e	agrees
+05801_p4_L06	67	126	num	126		l	conflict:e
+05801_p4_L06	68	12	num	12		e	agrees
+05801_p4_L06	69	64	num	64		l	conflict:e
+05801_p4_L06	70	27	num	27		o	conflict:e
+05801_p4_L06	71	72	num	72		n	conflict:e
+05801_p4_L06	72	23	num	23		g	conflict:d
+05801_p4_L06	73	111	num	111		d	conflict:e
+05801_p4_L06	74	85	num	85		u	agrees
+05801_p4_L06	75	132	num	132		r	conflict:e
+05801_p4_L06	76	140	num	140		in	conflict:s
+05801_p4_L06	77	124	num	124		p	conflict:e
+05801_p4_L06	78	2	num	2		o	conflict:a
+05801_p4_L06	79	30	num	30		u	conflict:e
+05801_p4_L06	80	103	num	103		r	conflict:e
+05801_p4_L06	81	85	num	85		p	conflict:u
+05801_p4_L06	82	77	num	77		a	conflict:e
+05801_p4_L06	83	81	num	81		s	conflict:e
+05801_p4_L06	84	81	num	81		s	conflict:e
+05801_p4_L06	85	3	num	3		e	agrees
+05801_p4_L06	86	32	num	32		r	conflict:e
+05801_p4_L06	87	272	num	272		la	single-segment
+05801_p4_L06	88	124	num	124		nuict	conflict:e
+05801_p4_L06	89	132	num	132		d	conflict:e
+05801_p4_L06	90	et	clear			e	clear
+05801_p4_L06	91	140	num	140		v	conflict:s
+05801_p4_L06	92	124	num	124		a	conflict:e
+05801_p4_L06	93	30	num	30		n	conflict:e
+05801_p4_L06	94	102	num	102		t	agrees
+05801_p4_L06	95	27	num	27		n	conflict:e
+05801_p4_L06	96	132	num	132		i	conflict:e
+05801_p4_L06	97	140	num	140		m	conflict:s
+05801_p4_L06	98	29	num	29		g	conflict:r
+05801_p4_L06	99	82	num	82		e	agrees
+05801_p4_L06	100	125	num	125		n	conflict:e
+05801_p4_L06	101	40	num	40		e	conflict:s
+05801_p4_L06	102	84	num	84		t	conflict:o
+05801_p4_L06	103	3	num	3		p	conflict:e
+05801_p4_L06	104	183	num	183		u	single
+05801_p4_L06	105	23	num	23		i	conflict:d
+05801_p4_L06	106	125	num	125		s	conflict:e
+05801_p4_L06	107	22	num	22		s	conflict:r
+05801_p4_L06	108	81	num	81		e	agrees
+05801_p4_L06	109	7	num	7		v	agrees
+05801_p4_L06	110	9	num	9		e	agrees
+05801_p4_L06	111	4	num	4		n	conflict:d
+05801_p4_L06	112	34	num	34		i	agrees
+05801_p4_L06	113	24	num	24		r	conflict:t
+05801_p4_L06	114	140	num	140		r	conflict:s
+05801_p4_L06	115	124	num	124		e	agrees
+05801_p4_L06	116	62	num	62		n	conflict:e
+05801_p4_L06	117	37	num	37		c	conflict:s
+05801_p4_L06	118	82	num	82		o	conflict:e
+05801_p4_L06	119	84	num	84		n	conflict:o
+05801_p4_L06	120	3	num	3		t	conflict:e
+05801_p4_L06	121	10	num	10		r	agrees
+05801_p4_L06	122	82	num	82		e	agrees
+05801_p4_L06	123	34	num	34		r	conflict:i
+05801_p4_L06	124	19	num	19		a	conflict:e
+05801_p4_L06	125	41	num	41		u	conflict:a
+05801_p4_L06	126	7	num	7		t	conflict:u
+05801_p4_L06	127	78	num	78		a	conflict:e
+05801_p4_L06	128	84	num	84		n	conflict:o
+05801_p4_L06	129	75	num	75		s	conflict:e
+05801_p4_L06	130	82	num	82		e	agrees
+05801_p4_L06	131	3	num	3		t	conflict:e
+05801_p4_L06	132	83	num	83		p	conflict:r
+05801_p4_L06	133	85	num	85		l	conflict:u
+05801_p4_L06	134	117	num	117		a	conflict:e
+05801_p4_L06	135	132	num	132		c	conflict:e
+05801_p4_L06	136	3	num	3		e	agrees
+05801_p4_L06	137	81	num	81		d	conflict:e
+05801_p4_L06	138	2	num	2		s	conflict:a
+05801_p4_L06	139	132	num	132		i	conflict:e
+05801_p4_L06	140	190	num	190		g	conflict:e
+05801_p4_L06	141	3	num	3		n	conflict:e
+05801_p4_L06	142	112	num	112		e	conflict:s
+05801_p4_L06	143	36	num	36		c	conflict:e
+05801_p4_L06	144	62	num	62		o	conflict:e
+05801_p4_L06	145	58	num	58		m	agrees
+05801_p4_L06	146	77	num	77		b	conflict:e
+05801_p4_L06	147	88	num	88		i	conflict:r
+05801_p4_L06	148	79	num	79		e	agrees
+05801_p4_L06	149	90	num	90		n	agrees
+05801_p4_L06	150	30	num	30		q	conflict:e
+05801_p4_L06	151	103	num	103		u	conflict:e
+05801_p4_L06	152	8	num	8		e	conflict:s
+05801_p4_L06	153	39	num	39		v	agrees
+05801_p4_L06	154	27	num	27		a	conflict:e
+05801_p4_L06	155	137	num	137		u	conflict:autan
+05801_p4_L06	156	134	num	134		d	conflict:t
+05801_p4_L06	157	117	num	117		r	conflict:e
+05801_p4_L06	158	102	num	102		a	conflict:t
+05801_p4_L06	159	82	num	82		t	conflict:e
+05801_p4_L06	160	37	num	37		o	conflict:s
+05801_p4_L06	161	90	num	90		u	conflict:n
+05801_p4_L06	162	82	num	82		j	conflict:e
+05801_p4_L06	163	113	num	113		o	conflict:l
+05801_p4_L06	164	356	num	356		u	single
+05801_p4_L06	165	83	num	83		r	agrees
+05801_p4_L06	166	82	num	82		s	conflict:e
+05801_p4_L06	167	85	num	85		m	conflict:u
+05801_p4_L06	168	132	num	132		i	conflict:e
+05801_p4_L06	169	140	num	140		e	conflict:s
+05801_p4_L06	170	79	num	79		u	conflict:e
+05801_p4_L06	171	3	num	3		x	conflict:e
+05801_p4_L06	172	32	num	32		q	conflict:e
+05801_p4_L06	173	132	num	132		u	conflict:e
+05801_p4_L06	174	140	num	140		e	conflict:s
+05801_p4_L06	175	82	num	82		l	conflict:e
+05801_p4_L06	176	132	num	132		i	conflict:e
+05801_p4_L06	177	124	num	124		n	conflict:e
+05801_p4_L06	178	121	num	121		f	conflict:l
+05801_p4_L06	179	141	num	141		anter	conflict:e
+05801_p4_L06	180	59	num	59		i	conflict:e
+05801_p4_L06	181	5	num	5		e	agrees
+05801_p4_L06	182	130	num	130		vien	conflict:c
+05801_p4_L06	183	86	num	86		n	agrees
+05801_p4_L06	184	28	num	28		e	agrees
+05801_p4_L06	185	128	num	128		de	single
+05801_p4_L06	186	77	num	77		v	conflict:e
+05801_p4_L06	187	81	num	81		a	conflict:e
+05801_p4_L06	188	29	num	29		n	conflict:r
+05801_p4_L06	189	88	num	88		t	conflict:r
+05801_p4_L06	190	83	num	83		q	conflict:r
+05801_p4_L06	191	23	num	23		u	conflict:d
+05801_p4_L06	192	85	num	85		e	conflict:u
+05801_p4_L06	193	139	num	139		non	conflict:t
+05801_p4_L06	194	150	num	150		pas	conflict:best
+05801_p4_L06	195	121	num	121		derrire	conflict:l
+05801_p4_L06	196	125	num	125		e	agrees
+05801_p4_L06	197	scavoir	clear			tcause	clear
+05801_p4_L06	198	que	clear			que	clear
+05801_p4_L06	199	fut	clear			su	clear
+05801_p4_L06	200	trouve	clear			rtoute	clear
+05801_p4_L06	201	121	num	121		s	conflict:l
+05801_p4_L06	202	140	num	140		c	conflict:s
+05801_p4_L06	203	115	num	115		h	conflict:u
+05801_p4_L06	204	65	num	65		o	conflict:t
+05801_p4_L06	205	81	num	81		s	conflict:e
+05801_p4_L06	206	30	num	30		e	agrees
+05801_p4_L06	207	84	num	84		s	conflict:o
+05801_p4_L06	208	115	num	115		l	conflict:u
+05801_p4_L06	209	21	num	21		a	conflict:s
+05801_p4_L06	210	83	num	83		f	conflict:r
+05801_p4_L06	211	81	num	81		f	conflict:e
+05801_p4_L06	212	28	num	28		a	conflict:e
+05801_p4_L06	213	34	num	34		i	agrees
+05801_p4_L06	214	132	num	132		r	conflict:e
+05801_p4_L06	215	125	num	125		e	agrees
+05801_p4_L06	216	98	num	98		e	single
+05801_p4_L06	217	64	num	64		s	conflict:e
+05801_p4_L06	218	29	num	29		t	conflict:r
+05801_p4_L06	219	33	num	33		h	conflict:e
+05801_p4_L06	220	81	num	81		a	conflict:e
+05801_p4_L06	221	85	num	85		s	conflict:u
+05801_p4_L06	222	82	num	82		t	conflict:e
+05801_p4_L06	223	132	num	132		e	agrees
+05801_p4_L06	224	140	num	140		n	conflict:s
+05801_p4_L06	225	30	num	30		e	agrees
+05801_p4_L06	226	89	num	89		t	conflict:e
+05801_p4_L06	227	37	num	37		r	conflict:s
+05801_p4_L06	228	132	num	132		o	conflict:e
+05801_p4_L06	229	85	num	85		u	agrees
+05801_p4_L06	230	132	num	132		v	conflict:e
+05801_p4_L06	231	140	num	140		e	conflict:s
+05801_p4_L06	232	88	num	88		r	agrees
+05801_p4_L06	233	54	num	54		o	conflict:e
+05801_p4_L06	234	132	num	132		y	conflict:e
+05801_p4_L06	235	117	num	117		e	agrees
+05801_p4_L06	236	89	num	89		m	conflict:e
+05801_p4_L06	237	34	num	34		a	conflict:i
+05801_p4_L06	238	31	num	31		i	agrees
+05801_p4_L06	239	85	num	85		n	conflict:u
+05801_p4_L06	240	105	num	105		t	conflict:o
+05801_p4_L06	241	108	num	108		e	single
+05801_p4_L06	242	30	num	30		n	conflict:e
+05801_p4_L06	243	51	num	51		a	conflict:t
+05801_p4_L06	244	28	num	28		n	conflict:e
+05801_p4_L06	245	82	num	82		t	conflict:e
+05801_p4_L06	246	177	num	177		q	single
+05801_p4_L06	247	29	num	29		u	conflict:r
+05801_p4_L06	248	84	num	84		e	conflict:o
+05801_p4_L06	249	31	num	31		b	conflict:i
+05801_p4_L06	250	23	num	23		i	conflict:d
+05801_p4_L06	251	82	num	82		e	agrees
+05801_p4_L06	252	102	num	102		n	conflict:t
+05801_p4_L06	253	3	num	3		e	agrees
+05801_p4_L06	254	132	num	132		n	conflict:e
+05801_p4_L06	255	15	num	15		c	conflict:e
+05801_p4_L06	256	28	num	28		a	conflict:e
+05801_p4_L06	257	59	num	59		s	conflict:e
+05801_p4_L06	258	28	num	28		l	conflict:e
+05801_p4_L06	259	81	num	81		e	agrees
+05801_p4_L06	260	132	num	132		c	conflict:e
+05801_p4_L06	261	191	num	191		o	conflict:ne
+05801_p4_L06	262	46	num	46		n	single
+05801_p4_L06	263	102	num	102		t	agrees
+05801_p4_L06	264	30	num	30		e	agrees
+05801_p4_L06	265	103	num	103		l	conflict:e
+05801_p4_L06	266	111	num	111		o	conflict:e
+05801_p4_L06	267	139	num	139		u	conflict:t
+05801_p4_L06	268	16	num	16		i	conflict:n
+05801_p4_L06	269	36	num	36		s	conflict:e
+05801_p4_L06	270	82	num	82		d	conflict:e
+05801_p4_L06	271	88	num	88		e	conflict:r
+05801_p4_L06	272	16	num	16		n	agrees
+05801_p4_L06	273	36	num	36		a	conflict:e
+05801_p4_L06	274	101	num	101		s	agrees
+05801_p4_L06	275	112	num	112		s	agrees
+05801_p4_L06	276	132	num	132		a	conflict:e
+05801_p4_L06	277	79	num	79		u	conflict:e
+05801_p4_L06	278	101	num	101		s	agrees
+05801_p4_L06	279	39	num	39		e	conflict:u
+05801_p4_L06	280	132	num	132		t	conflict:e
+05801_p4_L06	281	84	num	84		r	conflict:o
+05801_p4_L06	282	72	num	72		o	conflict:e
+05801_p4_L06	283	75	num	75		u	conflict:e
+05801_p4_L06	284	7	num	7		v	agrees
+05801_p4_L06	285	116	num	116		e	agrees
+05801_p4_L06	286	86	num	86		d	conflict:n
+05801_p4_L06	287	92	num	92		i	conflict:s
+05801_p4_L06	288	2	num	2		s	conflict:a
+05801_p4_L06	289	82	num	82		p	conflict:e
+05801_p4_L06	290	132	num	132		o	conflict:e
+05801_p4_L06	291	140	num	140		s	agrees
+05801_p4_L06	292	129	num	129		m	conflict:e
+05801_p4_L06	293	7	num	7		a	conflict:u
+05801_p4_L06	294	3	num	3		i	conflict:e
+05801_p4_L06	295	27	num	27		s	conflict:e
+05801_p4_L06	296	132	num	132		s	conflict:e
+05801_p4_L06	297	81	num	81		i	conflict:e
+05801_p4_L06	298	32	num	32		l	conflict:e
+05801_p4_L06	299	73	num	73		q	conflict:n
+05801_p4_L06	300	53	num	53		u	conflict:e
+05801_p4_L06	301	12	num	12		e	agrees
+05801_p4_L06	302	105	num	105		s	conflict:o
+05801_p4_L06	303	33	num	33		e	agrees
+05801_p4_L06	304	82	num	82		r	conflict:e
+05801_p4_L06	305	105	num	105		a	conflict:o
+05801_p4_L06	306	52	num	52		q	conflict:d
+05801_p4_L06	307	27	num	27		u	conflict:e
+05801_p4_L06	308	132	num	132		i	conflict:e
+05801_p4_L06	309	129	num	129		l	conflict:e
+05801_p4_L06	310	140	num	140		s	agrees
+05801_p4_L06	311	81	num	81		o	conflict:e
+05801_p4_L06	312	96	num	96		i	agrees
+05801_p4_L06	313	57	num	57		t	conflict:i
+05801_p4_L06	314	132	num	132		a	conflict:e
+05801_p4_L06	315	88	num	88		c	conflict:r
+05801_p4_L06	316	140	num	140		c	conflict:s
+05801_p4_L06	317	128	num	128		o	conflict:de
+05801_p4_L06	318	129	num	129		m	conflict:e
+05801_p4_L06	319	47	num	47		p	conflict:e
+05801_p4_L06	320	2	num	2		a	agrees
+05801_p4_L06	321	132	num	132		g	conflict:e
+05801_p4_L06	322	77	num	77		n	conflict:e
+05801_p4_L06	323	60	num	60		i	conflict:e
+05801_p4_L06	324	75	num	75		d	conflict:e
+05801_p4_L06	325	83	num	83		e	conflict:r
+05801_p4_L06	326	29	num	29		b	conflict:r
+05801_p4_L06	327	72	num	72		o	conflict:e
+05801_p4_L06	328	102	num	102		n	conflict:t
+05801_p4_L06	329	92	num	92		s	agrees
+05801_p4_L06	330	152	num	152		h	conflict:e
+05801_p4_L06	331	141	num	141		o	conflict:e
+05801_p4_L06	332	52	num	52		m	conflict:d
+05801_p4_L06	333	36	num	36		e	agrees
+05801_p4_L06	334	21	num	21		s	agrees
+05801_p4_L06	335	26	num	26		e	conflict:t
+05801_p4_L06	336	134	num	134		t	agrees
+05801_p4_L06	337	126	num	126		c	conflict:e
+05801_p4_L06	338	14	num	14		a	agrees
+05801_p4_L06	339	4	num	4		p	conflict:d
+05801_p4_L06	340	75	num	75		i	conflict:e
+05801_p4_L06	341	140	num	140		t	conflict:s
+05801_p4_L06	342	16	num	16		a	conflict:n
+05801_p4_L06	343	102	num	102		i	conflict:t
+05801_p4_L06	344	132	num	132		n	conflict:e
+05801_p4_L06	345	126	num	126		e	agrees
+05801_p4_L06	346	77	num	77		s	conflict:e
+05801_p4_L06	347	30	num	30		e	agrees
+05801_p4_L06	348	132	num	132		x	conflict:e
+05801_p4_L06	349	152	num	152		p	conflict:e
+05801_p4_L06	350	141	num	141		r	conflict:e
+05801_p4_L06	351	61	num	61		i	conflict:e
+05801_p4_L06	352	129	num	129		m	conflict:e
+05801_p4_L06	353	47	num	47		e	agrees
+05801_p4_L06	354	3	num	3		n	conflict:e
+05801_p4_L06	355	134	num	134		t	agrees
+05801_p4_L06	356	126	num	126		e	agrees
+05801_p4_L06	357	78	num	78		t	conflict:e
+05801_p4_L06	358	7	num	7		j	conflict:u
+05801_p4_L06	359	5	num	5		e	agrees
+05801_p4_L06	360	132	num	132		s	conflict:e
+05801_p4_L06	361	126	num	126		e	agrees
+05801_p4_L06	362	81	num	81		r	conflict:e
+05801_p4_L06	363	2	num	2		a	agrees
+05801_p4_L06	364	87	num	87		y	conflict:e
+05801_p4_L06	365	30	num	30		b	conflict:e
+05801_p4_L06	366	31	num	31		i	agrees
+05801_p4_L06	367	21	num	21		e	conflict:s
+05801_p4_L06	368	82	num	82		n	conflict:e
+05801_p4_L06	369	132	num	132		j	conflict:e
+05801_p4_L06	370	141	num	141		o	conflict:e
+05801_p4_L06	371	129	num	129		y	conflict:e
+05801_p4_L06	372	47	num	47		e	agrees
+05801_p4_L06	373	3	num	3		u	conflict:e
+05801_p4_L06	374	134	num	134		x	conflict:t
+05801_p4_L06	375	126	num	126		q	conflict:e
+05801_p4_L06	376	27	num	27		u	conflict:e
+05801_p4_L06	377	52	num	52		e	conflict:d
+05801_p4_L06	378	130	num	130		c	agrees
+05801_p4_L06	379	36	num	36		e	agrees
+05801_p4_L06	380	37	num	37		s	agrees
+05801_p4_L06	381	82	num	82		s	conflict:e
+05801_p4_L06	382	103	num	103		e	agrees
+05801_p4_L06	383	112	num	112		i	conflict:s
+05801_p4_L06	384	115	num	115		g	conflict:u
+05801_p4_L06	385	83	num	83		n	conflict:r
+05801_p4_L06	386	3	num	3		e	agrees
+05801_p4_L06	387	34	num	34		u	conflict:i
+05801_p4_L06	388	111	num	111		r	conflict:e
+05801_p4_L06	389	81	num	81		s	conflict:e
+05801_p4_L06	390	32	num	32		d	conflict:e
+05801_p4_L06	391	34	num	34		o	conflict:i
+05801_p4_L06	392	24	num	24		n	conflict:t
+05801_p4_L06	393	82	num	82		t	conflict:e
+05801_p4_L06	394	29	num	29		f	conflict:r
+05801_p4_L06	395	124	num	124		a	conflict:e
+05801_p4_L06	396	82	num	82		i	conflict:e
+05801_p4_L06	397	31	num	31		t	conflict:i
+05801_p4_L06	398	117	num	117		e	agrees
+05801_p4_L06	399	83	num	83		s	conflict:r
+05801_p4_L06	400	3	num	3		m	conflict:e
+05801_p4_L06	401	132	num	132		e	agrees
+05801_p4_L06	402	124	num	124		n	conflict:e
+05801_p4_L06	403	26	num	26		t	agrees
+05801_p4_L06	404	81	num	81		y	conflict:e
+05801_p4_L06	405	3	num	3		o	conflict:e
+05801_p4_L06	406	32	num	32		n	conflict:e
+05801_p4_L06	407	102	num	102		e	conflict:t
+05801_p4_L06	408	32	num	32		n	conflict:e
+05801_p4_L06	409	69	num	69		v	conflict:e
+05801_p4_L06	410	37	num	37		o	conflict:s
+05801_p4_L06	411	70	num	70		s	conflict:e
+05801_p4_L06	412	82	num	82		t	conflict:e
+05801_p4_L06	413	24	num	24		r	conflict:t
+05801_p4_L06	414	124	num	124		e	agrees
+05801_p4_L06	415	7	num	7		l	conflict:u
+05801_p4_L06	416	67	num	67		e	agrees
+05801_p4_L06	417	73	num	73		t	conflict:n
+05801_p4_L06	418	132	num	132		t	conflict:e
+05801_p4_L06	419	22	num	22		r	agrees
+05801_p4_L06	420	124	num	124		e	agrees
+05801_p4_L06	421	125	num	125		s	conflict:e
+05801_p4_L06	422	130	num	130		y	conflict:c
+05801_p4_L06	423	147	num	147		v	conflict:a
+05801_p4_L06	424	88	num	88		u	conflict:r
+05801_p4_L06	425	101	num	101		e	conflict:s
+05801_p4_L06	426	152	num	152		i	conflict:e
+05801_p4_L06	427	72	num	72		l	conflict:e
+05801_p4_L06	428	57	num	57		l	conflict:i
+05801_p4_L06	429	72	num	72		e	agrees
+05801_p4_L06	430	124	num	124		n	conflict:e
+05801_p4_L06	431	7	num	7		t	conflict:u
+05801_p4_L06	432	87	num	87		t	conflict:e
+05801_p4_L06	433	73	num	73		r	conflict:n
+05801_p4_L06	434	132	num	132		o	conflict:e
+05801_p4_L06	435	62	num	62		u	conflict:e
+05801_p4_L06	436	37	num	37		v	conflict:s
+05801_p4_L06	437	27	num	27		e	agrees
+05801_p4_L06	438	3	num	3		r	conflict:e
+05801_p4_L06	439	30	num	30		e	agrees
+05801_p4_L06	440	55	num	55		t	conflict:e
+05801_p4_L06	441	14	num	14		m	conflict:a
+05801_p4_L06	442	3	num	3		e	agrees
+05801_p4_L06	443	132	num	132		n	conflict:e
+05801_p4_L06	444	140	num	140		s	agrees
+05801_p4_L06	445	59	num	59		e	agrees
+05801_p4_L06	446	36	num	36		n	conflict:e
+05801_p4_L06	447	90	num	90		t	conflict:n
+05801_p4_L06	448	7	num	7		i	conflict:u
+05801_p4_L06	449	32	num	32		r	conflict:e
+05801_p4_L06	450	29	num	29		a	conflict:r
+05801_p4_L06	451	134	num	134		y	conflict:t
+05801_p4_L06	452	125	num	125		l	conflict:e
+05801_p4_L06	453	82	num	82		e	agrees
+05801_p4_L06	454	112	num	112		u	conflict:s
+05801_p4_L06	455	132	num	132		r	conflict:e
+05801_p4_L06	456	82	num	82		o	conflict:e
+05801_p4_L06	457	75	num	75		b	conflict:e
+05801_p4_L06	458	69	num	69		l	conflict:e
+05801_p4_L06	459	40	num	40		i	conflict:s
+05801_p4_L06	460	26	num	26		g	conflict:t
+05801_p4_L06	461	29	num	29		s	conflict:r
+05801_p4_L06	462	81	num	81		i	conflict:e
+05801_p4_L06	463	132	num	132		l	conflict:e
+05801_p4_L06	464	124	num	124		o	conflict:e
+05801_p4_L06	465	141	num	141		n	conflict:e
+05801_p4_L06	466	82	num	82		p	conflict:e
+05801_p4_L06	467	121	num	121		o	conflict:l
+05801_p4_L06	468	72	num	72		u	conflict:e
+05801_p4_L06	469	82	num	82		l	conflict:e
+05801_p4_L06	470	28	num	28		r	conflict:e
+05801_p4_L06	471	101	num	101		o	conflict:s
+05801_p4_L06	472	32	num	32		i	conflict:e
+05801_p4_L06	473	62	num	62		t	conflict:e
+05801_p4_L06	474	111	num	111		a	conflict:e
+05801_p4_L06	475	102	num	102		u	conflict:t
+05801_p4_L06	476	83	num	83		s	conflict:r
+05801_p4_L06	477	3	num	3		s	conflict:e
+05801_p4_L06	478	27	num	27		y	conflict:e
+05801_p4_L06	479	140	num	140		donner	conflict:s
+05801_p4_L06	480	121	num	121		que	conflict:l
+05801_p4_L06	481	85	num	85		l	conflict:u
+05801_p4_L06	482	27	num	27		q	conflict:e
+05801_p4_L06	483	86	num	86		u	conflict:n
+05801_p4_L06	484	72	num	72		e	agrees
+05801_p4_L06	485	132	num	132		trou	conflict:e
+05801_p4_L06	486	54	num	54		s	conflict:e
+05801_p4_L06	487	114	num	114		s	conflict:r
+05801_p4_L06	488	28	num	28		e	agrees
+05801_p4_L06	489	130	num	130		ces	conflict:c
+05801_p4_L06	490	124	num	124		italien	conflict:e
+05801_p4_L06	491	83	num	83		s	conflict:r
+05801_p4_L06	492	140	num	140		et	conflict:s
+05801_p4_L06	493	121	num	121		espaign	conflict:l
+05801_p4_L06	494	96	num	96		o	conflict:i
+05801_p4_L06	495	23	num	23		l	conflict:d
+05801_p4_L06	496	72	num	72		z	conflict:e
+05801_p4_L06	497	27	num	27		q	conflict:e
+05801_p4_L06	498	5	num	5		u	conflict:e
+05801_p4_L06	499	33	num	33		i	conflict:e
+05801_p4_L06	500	133	num	133		marschent	conflict:l
+05801_p4_L09	0	122	num	122		q	conflict:r
+05801_p4_L09	1	135	num	135		u	conflict:d
+05801_p4_L09	2	87	num	87		e	agrees
+05801_p4_L09	3	34	num	34		j	conflict:i
+05801_p4_L09	4	87	num	87		e	agrees
+05801_p4_L09	5	139	num	139		c	conflict:t
+05801_p4_L09	6	113	num	113		r	conflict:l
+05801_p4_L09	7	82	num	82		a	conflict:e
+05801_p4_L09	8	175	num	175		i	conflict:avec
+05801_p4_L09	9	87	num	87		n	conflict:e
+05801_p4_L09	10	5	num	5		s	conflict:e
+05801_p4_L09	11	87	num	87		o	conflict:e
+05801_p4_L09	12	7	num	7		u	agrees
+05801_p4_L09	13	23	num	23		s	conflict:d
+05801_p4_L09	14	7	num	7		t	conflict:u
+05801_p4_L09	15	17	num	17		r	agrees
+05801_p4_L09	16	9	num	9		e	agrees
+05801_p4_L09	17	31	num	31		l	conflict:i
+05801_p4_L09	18	85	num	85		e	conflict:u
+05801_p4_L09	19	114	num	114		r	agrees
+05801_p4_L09	20	117	num	117		e	agrees
+05801_p4_L09	21	80	num	80		n	conflict:e
+05801_p4_L09	22	78	num	78		f	conflict:e
+05801_p4_L09	23	7	num	7		o	conflict:u
+05801_p4_L09	24	2	num	2		r	conflict:a
+05801_p4_L09	25	91	num	91		c	conflict:a
+05801_p4_L09	26	81	num	81		e	agrees
+05801_p4_L09	27	69	num	69		m	conflict:e
+05801_p4_L09	28	3	num	3		e	agrees
+05801_p4_L09	29	32	num	32		n	conflict:e
+05801_p4_L09	30	82	num	82		t	conflict:e
+05801_p4_L09	31	132	num	132		q	conflict:e
+05801_p4_L09	32	129	num	129		u	conflict:e
+05801_p4_L09	33	115	num	115		i	conflict:u
+05801_p4_L09	34	81	num	81		l	conflict:e
+05801_p4_L09	35	2	num	2		z	conflict:a
+05801_p4_L09	36	52	num	52		d	agrees
+05801_p4_L09	37	140	num	140		o	conflict:s
+05801_p4_L09	38	124	num	124		n	conflict:e
+05801_p4_L09	39	78	num	78		n	conflict:e
+05801_p4_L09	40	62	num	62		e	agrees
+05801_p4_L09	41	87	num	87		r	conflict:e
+05801_p4_L09	42	132	num	132		o	conflict:e
+05801_p4_L09	43	90	num	90		n	agrees
+05801_p4_L09	44	6	num	6		t	conflict:e
+05801_p4_L09	45	102	num	102		l	conflict:t
+05801_p4_L09	46	87	num	87		e	agrees
+05801_p4_L09	47	73	num	73		n	agrees
+05801_p4_L09	48	27	num	27		n	conflict:e
+05801_p4_L09	49	30	num	30		e	agrees
+05801_p4_L09	50	83	num	83		m	conflict:r
+05801_p4_L09	51	47	num	47		y	conflict:e
+05801_p4_L09	52	9	num	9		e	agrees
+05801_p4_L09	53	52	num	52		t	conflict:d
+05801_p4_L09	54	62	num	62		a	conflict:e
+05801_p4_L09	55	59	num	59		f	conflict:e
+05801_p4_L09	56	60	num	60		f	conflict:e
+05801_p4_L09	57	87	num	87		o	conflict:e
+05801_p4_L09	58	8	num	8		i	conflict:s
+05801_p4_L09	59	22	num	22		b	conflict:r
+05801_p4_L09	60	83	num	83		l	conflict:r
+05801_p4_L09	61	82	num	82		i	conflict:e
+05801_p4_L09	62	28	num	28		s	conflict:e
+05801_p4_L09	63	132	num	132		s	conflict:e
+05801_p4_L09	64	129	num	129		e	agrees
+05801_p4_L09	65	85	num	85		m	conflict:u
+05801_p4_L09	66	2	num	2		e	conflict:a
+05801_p4_L09	67	9	num	9		n	conflict:e
+05801_p4_L09	68	24	num	24		t	agrees
+05801_p4_L09	69	124	num	124		n	conflict:e
+05801_p4_L09	70	72	num	72		o	conflict:e
+05801_p4_L09	71	23	num	23		s	conflict:d
+05801_p4_L09	72	37	num	37		f	agrees
+05801_p4_L09	73	103	num	103		o	conflict:e
+05801_p4_L09	74	22	num	22		r	agrees
+05801_p4_L09	75	63	num	63		c	conflict:e
+05801_p4_L09	76	72	num	72		e	agrees
+05801_p4_L09	77	40	num	40		s	agrees
+05801_p4_L09	78	25	num	25		e	agrees
+05801_p4_L09	79	132	num	132		n	conflict:e
+05801_p4_L09	80	125	num	125		c	conflict:e
+05801_p4_L09	81	37	num	37		o	conflict:s
+05801_p4_L09	82	81	num	81		r	conflict:e
+05801_p4_L09	83	2	num	2		s	conflict:a
+05801_p4_L09	84	40	num	40		e	conflict:s
+05801_p4_L09	85	85	num	85		r	conflict:u
+05801_p4_L09	86	12	num	12		v	conflict:e
+05801_p4_L09	87	72	num	72		i	conflict:e
+05801_p4_L09	88	88	num	88		r	agrees
+05801_p4_L09	89	3	num	3		a	conflict:e
+05801_p4_L09	90	77	num	77		l	conflict:e
+05801_p4_L09	91	152	num	152		e	agrees
+05801_p4_L09	92	124	num	124		u	conflict:e
+05801_p4_L09	93	82	num	82		r	conflict:e
+05801_p4_L09	94	30	num	30		v	conflict:e
+05801_p4_L09	95	78	num	78		e	agrees
+05801_p4_L09	96	4	num	4		n	conflict:d
+05801_p4_L09	97	132	num	132		u	conflict:e
+05801_p4_L09	98	124	num	124		e	agrees
+05801_p4_L09	99	52	num	52		d	agrees
+05801_p4_L09	100	97	num	97		e	agrees
+05801_p4_L09	101	9	num	9		g	conflict:e
+05801_p4_L09	102	81	num	81		r	conflict:e
+05801_p4_L09	103	130	num	130		a	conflict:c
+05801_p4_L09	104	121	num	121		n	conflict:l
+05801_p4_L09	105	127	num	127		d	single
+05801_p4_L09	106	62	num	62		e	agrees
+05801_p4_L09	107	132	num	132		s	conflict:e
+05801_p4_L09	108	7	num	7		t	conflict:u
+05801_p4_L09	109	70	num	70		o	conflict:e
+05801_p4_L09	110	11	num	11		n	conflict:c
+05801_p4_L09	111	113	num	113		n	conflict:l
+05801_p4_L09	112	82	num	82		e	agrees
+05801_p4_L09	113	73	num	73		m	conflict:n
+05801_p4_L09	114	90	num	90		e	conflict:n
+05801_p4_L09	115	71	num	71		n	conflict:a
+05801_p4_L09	116	51	num	51		t	agrees
+05801_p4_L09	117	132	num	132		c	conflict:e
+05801_p4_L09	118	124	num	124		e	agrees
+05801_p4_L09	119	130	num	130		p	conflict:c
+05801_p4_L09	120	39	num	39		a	conflict:u
+05801_p4_L09	121	36	num	36		y	conflict:e
+05801_p4_L09	122	23	num	23		s	conflict:d
+05801_p4_L09	123	84	num	84		q	conflict:o
+05801_p4_L09	124	85	num	85		u	agrees
+05801_p4_L09	125	28	num	28		i	conflict:e
+05801_p4_L09	126	31	num	31		d	conflict:i
+05801_p4_L09	127	121	num	121		e	conflict:l
+05801_p4_L09	128	105	num	105		s	conflict:o
+05801_p4_L09	129	2	num	2		a	agrees
+05801_p4_L09	130	71	num	71		n	conflict:a
+05801_p4_L09	131	7	num	7		a	conflict:u
+05801_p4_L09	132	3	num	3		t	conflict:e
+05801_p4_L09	133	26	num	26		u	conflict:t
+05801_p4_L09	134	32	num	32		r	conflict:e
+05801_p4_L09	135	64	num	64		e	agrees
+05801_p4_L09	136	7	num	7		e	conflict:u
+05801_p4_L09	137	35	num	35		s	agrees
+05801_p4_L09	138	125	num	125		t	conflict:e
+05801_p4_L09	139	132	num	132		i	conflict:e
+05801_p4_L09	140	84	num	84		n	conflict:o
+05801_p4_L09	141	35	num	35		c	conflict:s
+05801_p4_L09	142	112	num	112		o	conflict:s
+05801_p4_L09	143	81	num	81		n	conflict:e
+05801_p4_L09	144	72	num	72		s	conflict:e
+05801_p4_L09	145	67	num	67		t	conflict:e
+05801_p4_L09	146	116	num	116		a	conflict:e
+05801_p4_L09	147	81	num	81		n	conflict:e
+05801_p4_L09	148	7	num	7		t	conflict:u
+05801_p4_L09	149	34	num	34		e	conflict:i
+05801_p4_L09	150	141	num	141		t	conflict:e
+05801_p4_L09	151	126	num	126		l	conflict:e
+05801_p4_L09	152	83	num	83		g	conflict:r
+05801_p4_L09	153	28	num	28		r	conflict:e
+05801_p4_L09	154	117	num	117		e	agrees
+05801_p4_L09	155	83	num	83		m	conflict:r
+05801_p4_L09	156	59	num	59		e	agrees
+05801_p4_L09	157	139	num	139		n	conflict:t
+05801_p4_L09	158	140	num	140		t	conflict:s
+05801_p4_L09	159	129	num	129		esmeu	conflict:e
+05801_p5_L02	0	72	num	72		s	conflict:e
+05801_p5_L02	1	132	num	132		e	agrees
+05801_p5_L02	2	140	num	140		v	conflict:s
+05801_p5_L02	3	84	num	84		o	agrees
+05801_p5_L02	4	55	num	55		y	conflict:e
+05801_p5_L02	5	62	num	62		a	conflict:e
+05801_p5_L02	6	3	num	3		n	conflict:e
+05801_p5_L02	7	32	num	32		t	conflict:e
+05801_p5_L02	8	102	num	102		a	conflict:t
+05801_p5_L02	9	69	num	69		b	conflict:e
+05801_p5_L02	10	4	num	4		a	conflict:d
+05801_p5_L02	11	14	num	14		n	conflict:a
+05801_p5_L02	12	5	num	5		d	conflict:e
+05801_p5_L02	13	7	num	7		o	conflict:u
+05801_p5_L02	14	83	num	83		n	conflict:r
+05801_p5_L02	15	132	num	132		n	conflict:e
+05801_p5_L02	16	129	num	129		d	conflict:e
+05801_p5_L02	17	72	num	72		e	agrees
+05801_p5_L02	18	60	num	60		t	conflict:e
+05801_p5_L02	19	79	num	79		o	conflict:e
+05801_p5_L02	20	36	num	36		u	conflict:e
+05801_p5_L02	21	27	num	27		s	conflict:e
+05801_p5_L02	22	47	num	47		e	agrees
+05801_p5_L02	23	27	num	27		t	conflict:e
+05801_p5_L02	24	132	num	132		mesme	conflict:e
+05801_p5_L02	25	47	num	47		d	conflict:e
+05801_p5_L02	26	12	num	12		e	agrees
+05801_p5_L02	27	199	num	199		la	conflict:av
+05801_p5_L02	28	125	num	125		royne	conflict:e
+05801_p5_L02	29	132	num	132		dangleterre	conflict:e
+05801_p5_L02	30	Toutefois	clear			pourtant	clear
+05801_p5_L02	31	ne	clear			jev	clear
+05801_p5_L02	32	avons	clear			oussup	clear
+05801_p5_L02	33	point	clear			plie	clear
+05801_p5_L02	34	aupres	clear			aviser	clear
+05801_p5_L02	35	sil	clear			sil	clear
+05801_p5_L02	36	y	clear			ya	clear
+05801_p5_L02	37	a	clear			a	clear
+05801_p5_L02	38	quelque	clear			quelque	clear
+05801_p5_L02	39	moyen	clear			moyen	clear
+05801_p5_L02	40	de	clear			de	clear
+05801_p5_L02	41	la	clear			la	clear
+05801_p5_L02	42	mettre	clear			mestre	clear
+05801_p5_L02	43	en	clear			en	clear
+05801_p5_L02	44	escripvre	clear			excution	clear
+05801_p5_L02	45	le	clear			t	clear
+05801_p5_L02	46	conte	clear				clear
+05801_p5_L02	47	mettre	clear			ousch	clear
+05801_p5_L02	48	a	clear			a	clear
+05801_p5_L02	49	escripre	clear			ntceque	clear
+05801_p5_L02	50	a	clear			v	clear
+05801_p5_L02	51	al	clear			ou	clear
+05801_p5_L02	52	Glogmie	clear			smonsie	clear
+05801_p5_L02	53	172	num	172		u	conflict:a
+05801_p5_L02	54	132	num	132		r	conflict:e
+05801_p5_L02	55	129	num	129		l	conflict:e
+05801_p5_L02	56	62	num	62		e	agrees
+05801_p5_L02	57	37	num	37		c	conflict:s
+05801_p5_L02	58	82	num	82		o	conflict:e
+05801_p5_L02	59	80	num	80		n	conflict:e
+05801_p5_L02	60	32	num	32		t	conflict:e
+05801_p5_L02	61	65	num	65		e	conflict:t
+05801_p5_L02	62	102	num	102		l	conflict:t
+05801_p5_L02	63	74	num	74		o	conflict:u
+05801_p5_L02	64	35	num	35		u	conflict:s
+05801_p5_L02	65	87	num	87		y	conflict:e
+05801_p5_L02	66	83	num	83		s	conflict:r
+05801_p5_L02	67	38	num	38		d	conflict:u
+05801_p5_L02	68	83	num	83		e	conflict:r
+05801_p5_L02	69	73	num	73		n	agrees
+05801_p5_L02	70	157	num	157		assau	single
+05801_p5_L02	71	132	num	132		avs	conflict:e
+05801_p5_L02	72	129	num	129		trait	conflict:e
+05801_p5_L02	73	175	num	175		avec	single-segment
+05801_p5_L02	74	150	num	150		colognie	conflict:best
+05801_p5_L03	0	132	num	132		d	conflict:e
+05801_p5_L03	1	129	num	129		s	conflict:e
+05801_p5_L03	2	190	num	190		i	conflict:e
+05801_p5_L03	3	73	num	73		r	conflict:n
+05801_p5_L03	4	71	num	71		a	agrees
+05801_p5_L03	5	86	num	86		n	agrees
+05801_p5_L03	6	87	num	87		t	conflict:e
+05801_p5_L03	7	82	num	82		e	agrees
+05801_p5_L03	8	102	num	102		x	conflict:t
+05801_p5_L03	9	24	num	24		t	agrees
+05801_p5_L03	10	83	num	83		r	agrees
+05801_p5_L03	11	52	num	52		m	conflict:d
+05801_p5_L03	12	59	num	59		e	agrees
+05801_p5_L03	13	79	num	79		m	conflict:e
+05801_p5_L03	14	7	num	7		e	conflict:u
+05801_p5_L03	15	109	num	109		n	single
+05801_p5_L03	16	39	num	39		t	conflict:u
+05801_p5_L03	17	Du	clear			qu	clear
+05801_p5_L03	18	bout	clear				clear
+05801_p5_L03	19	170	num	170		e	single
+05801_p5_L03	20	126	num	126		s	conflict:e
+05801_p5_L03	21	132	num	132		i	conflict:e
+05801_p5_L03	22	22	num	22		l	conflict:r
+05801_p5_L03	23	82	num	82		a	conflict:e
+05801_p5_L03	24	37	num	37		f	agrees
+05801_p5_L03	25	26	num	26		f	conflict:t
+05801_p5_L03	26	30	num	30		a	conflict:e
+05801_p5_L03	27	105	num	105		i	conflict:o
+05801_p5_L03	28	25	num	25		r	conflict:e
+05801_p5_L03	29	132	num	132		e	agrees
+05801_p5_L03	30	62	num	62		n	conflict:e
+05801_p5_L03	31	190	num	190		e	agrees
+05801_p5_L03	32	71	num	71		p	conflict:a
+05801_p5_L03	33	132	num	132		o	conflict:e
+05801_p5_L03	34	126	num	126		u	conflict:e
+05801_p5_L03	35	122	num	122		r	agrees
+05801_p5_L03	36	18	num	18		o	conflict:e
+05801_p5_L03	37	5	num	5		i	conflict:e
+05801_p5_L03	38	190	num	190		t	conflict:e
+05801_p5_L03	39	126	num	126		d	conflict:e
+05801_p5_L03	40	190	num	190		u	conflict:e
+05801_p5_L03	41	129	num	129		t	conflict:e
+05801_p5_L03	42	73	num	73		o	conflict:n
+05801_p5_L03	43	87	num	87		u	conflict:e
+05801_p5_L03	44	82	num	82		t	conflict:e
+05801_p5_L03	45	126	num	126		r	conflict:e
+05801_p5_L03	46	140	num	140		even	conflict:s
+05801_p5_L03	47	61	num	61		i	conflict:e
+05801_p5_L03	48	36	num	36		r	conflict:e
+05801_p5_L03	49	132	num	132		l	conflict:e
+05801_p5_L03	50	49	num	49		a	conflict:e
+05801_p5_L03	51	101	num	101		f	agrees
+05801_p5_L03	52	2	num	2		i	conflict:a
+05801_p5_L03	53	7	num	7		n	conflict:u
+05801_p5_L03	54	132	num	132		d	conflict:e
+05801_p5_L03	55	83	num	83		s	conflict:r
+05801_p5_L03	56	112	num	112		i	conflict:s
+05801_p5_L03	57	114	num	114		r	agrees
+05801_p5_L03	58	83	num	83		e	conflict:r
+05801_p5_L03	59	125	num	125		au	conflict:e
+05801_p5_L03	60	129	num	129		moi	conflict:e
+05801_p5_L03	61	72	num	72		n	conflict:e
+05801_p5_L03	62	22	num	22		s	conflict:r
+05801_p5_L03	63	132	num	132		elle	conflict:e
+05801_p5_L03	64	129	num	129		ser	conflict:e
+05801_p5_L03	65	83	num	83		t	conflict:r
+05801_p5_L03	66	31	num	31		p	conflict:i
+05801_p5_L03	67	59	num	59		o	conflict:e
+05801_p5_L03	68	37	num	37		u	conflict:s
+05801_p5_L03	69	22	num	22		r	agrees
+05801_p5_L03	70	faicte	clear			faire	clear
+05801_p5_L03	71	192	num	192			null-or-unaligned
+05801_p5_L03	72	121	num	121		l	agrees
+05801_p5_L03	73	116	num	116		e	agrees
+05801_p5_L03	74	81	num	81		v	conflict:e
+05801_p5_L03	75	132	num	132		e	agrees
+05801_p5_L03	76	190	num	190		r	conflict:e
+05801_p5_L03	77	82	num	82		l	conflict:e
+05801_p5_L03	78	25	num	25		e	agrees
+05801_p5_L03	79	92	num	92		s	agrees
+05801_p5_L03	80	73	num	73		i	conflict:n
+05801_p5_L03	81	81	num	81		g	conflict:e
+05801_p5_L03	82	2	num	2		e	conflict:a
+05801_p5_L03	83	73	num	73		d	conflict:n
+05801_p5_L03	84	81	num	81		e	agrees
+05801_p5_L03	85	132	num	132		h	conflict:e
+05801_p5_L03	86	129	num	129		a	conflict:e
+05801_p5_L03	87	140	num	140		r	conflict:s
+05801_p5_L03	88	22	num	22		l	conflict:r
+05801_p5_L03	89	12	num	12		e	agrees
+05801_p5_L03	90	223	num	223		m	conflict:a
+05801_p5_L03	91	pour	clear			pour	clear
+05801_p5_L03	92	Sr	clear			q	clear
+05801_p5_L03	93	Fgm	clear			ue	clear
+05801_p5_L03	94	Idyo	clear			lqu	clear
+05801_p5_L03	95	124	num	124		e	agrees
+05801_p5_L03	96	132	num	132		t	conflict:e
+05801_p5_L03	97	190	num	190		e	agrees
+05801_p5_L03	98	129	num	129		m	conflict:e
+05801_p5_L03	99	121	num	121		ps	conflict:l
+05801_p5_L03	100	150	num	150		jay	conflict:best
+05801_p5_L03	101	Pour	clear			env	clear
+05801_p5_L03	102	Cuoyr	clear				clear
+05801_p5_L03	103	116	num	116		o	conflict:e
+05801_p5_L03	104	7	num	7		y	conflict:u
+05801_p5_L03	105	2	num	2		m	conflict:a
+05801_p5_L03	106	27	num	27		o	conflict:e
+05801_p5_L03	107	102	num	102		n	conflict:t
+05801_p5_L03	108	83	num	83		s	conflict:r
+05801_p5_L03	109	40	num	40		r	conflict:s
+05801_p5_L03	110	23	num	23		d	agrees
+05801_p5_L03	111	132	num	132		e	agrees
+05801_p5_L03	112	12	num	12		l	conflict:e
+05801_p5_L03	113	113	num	113		u	conflict:l
+05801_p5_L03	114	38	num	38		m	conflict:u
+05801_p5_L03	115	118	num	118		b	conflict:d
+05801_p5_L03	116	88	num	88		r	agrees
+05801_p5_L03	117	67	num	67		e	agrees
+05801_p5_L03	118	78	num	78		s	conflict:e
+05801_p5_L03	119	81	num	81		e	agrees
+05801_p5_L03	120	7	num	7		n	conflict:u
+05801_p5_L03	121	France	clear			france	clear
+05801_p5_L03	122	202	num	202		p	single
+05801_p5_L03	123	13	num	13		o	conflict:a
+05801_p5_L03	124	7	num	7		u	agrees
+05801_p5_L03	125	59	num	59		r	conflict:e
+05801_p5_L03	126	25	num	25		t	conflict:e
+05801_p5_L03	127	132	num	132		r	conflict:e
+05801_p5_L03	128	125	num	125		aicter	conflict:e
+05801_p5_L03	129	199	num	199		av	single
+05801_p5_L03	130	59	num	59		e	agrees
+05801_p5_L03	131	40	num	40		c	conflict:s
+05801_p5_L03	132	24	num	24		l	conflict:t
+05801_p5_L03	133	32	num	32		e	agrees
+05801_p5_L03	134	66	num	66		r	conflict:n
+05801_p5_L03	135	105	num	105		o	agrees
+05801_p5_L03	136	32	num	32		y	conflict:e
+05801_p5_L03	137	77	num	77		d	conflict:e
+05801_p5_L03	138	25	num	25		e	agrees
+05801_p5_L03	139	129	num	129		franc	conflict:e
+05801_p5_L03	140	63	num	63		e	agrees
+05801_p5_L03	141	32	num	32		s	conflict:e
+05801_p5_L03	142	83	num	83		u	conflict:r
+05801_p5_L03	143	72	num	72		r	conflict:e
+05801_p5_L03	144	192	num	192		aulcunspoint	single
+05801_p5_L03	145	37	num	37		s	agrees
+05801_p5_L04	0	132	num	132		a	conflict:e
+05801_p5_L04	1	152	num	152		v	conflict:e
+05801_p5_L04	2	7	num	7		e	conflict:u
+05801_p5_L04	3	38	num	38		c	conflict:u
+05801_p5_L04	4	21	num	21		s	agrees
+05801_p5_L04	5	24	num	24		e	conflict:t
+05801_p5_L04	6	34	num	34		s	conflict:i
+05801_p5_L04	7	30	num	30		s	conflict:e
+05801_p5_L04	8	71	num	71		o	conflict:a
+05801_p5_L04	9	56	num	56		u	agrees
+05801_p5_L04	10	102	num	102		b	conflict:t
+05801_p5_L04	11	71	num	71		j	conflict:a
+05801_p5_L04	12	139	num	139		e	conflict:t
+05801_p5_L04	13	la	clear				clear
+05801_p5_L04	14	paix	clear				clear
+05801_p5_L04	15	63	num	63		t	conflict:e
+05801_p5_L04	16	37	num	37		s	agrees
+05801_p5_L04	17	83	num	83		e	conflict:r
+05801_p5_L04	18	Isce	clear				clear
+05801_p5_L04	19	138	num	138		t	conflict:e
+05801_p5_L04	20	Riez	clear				clear
+05801_p5_L04	21	72	num	72		d	conflict:e
+05801_p5_L04	22	27	num	27		e	agrees
+05801_p5_L04	23	75	num	75		y	conflict:e
+05801_p5_L04	24	67	num	67		v	conflict:e
+05801_p5_L04	25	32	num	32		i	conflict:e
+05801_p5_L04	26	32	num	32		e	agrees
+05801_p5_L04	27	30	num	30		n	conflict:e
+05801_p5_L04	28	de	clear			d	clear
+05801_p5_L04	29	57	num	57			null-or-unaligned
+05801_p5_L04	30	31	num	31		r	conflict:i
+05801_p5_L04	31	28	num	28		a	conflict:e
+05801_p5_L04	32	63	num	63		a	conflict:e
+05801_p5_L04	33	26	num	26		s	conflict:t
+05801_p5_L04	34	28	num	28		s	conflict:e
+05801_p5_L04	35	102	num	102		i	conflict:t
+05801_p5_L04	36	33	num	33		s	conflict:e
+05801_p5_L04	37	22	num	22		t	conflict:r
+05801_p5_L04	38	en	clear			e	clear
+05801_p5_L04	39	81	num	81		r	conflict:e
+05801_p5_L04	40	3	num	3		e	agrees
+05801_p5_L04	41	42	num	42		n	conflict:e
+05801_p5_L04	42	72	num	72		c	conflict:e
+05801_p5_L04	43	82	num	82		e	agrees
+05801_p5_L04	44	29	num	29		s	conflict:r
+05801_p5_L04	45	32	num	32		t	conflict:e
+05801_p5_L04	46	de	clear			e	clear
+05801_p5_L04	47	guerre	clear			guerr	clear
+05801_p5_L04	48	331	num	331		e	conflict:a
+05801_p5_L09	0	91	num	91			null-or-unaligned
+05801_p5_L09	1	42	num	42			null-or-unaligned
+05801_p5_L09	2	31	num	31		l	conflict:i
+05801_p5_L09	3	32	num	32			null-or-unaligned
+05801_p5_L09	4	22	num	22			null-or-unaligned
+05801_p5_L09	5	82	num	82			null-or-unaligned
+05801_p5_L09	6	12	num	12			null-or-unaligned
+05801_p5_L09	7	27	num	27			null-or-unaligned
+05801_p5_L09	8	34	num	34			null-or-unaligned
+05801_p5_L09	9	73	num	73			null-or-unaligned
+05801_p5_L09	10	38	num	38			null-or-unaligned
+05801_p5_L09	11	27	num	27			null-or-unaligned
+05801_p5_L09	12	28	num	28			null-or-unaligned
+05801_p5_L09	13	28	num	28			null-or-unaligned
+05801_p5_L09	14	81	num	81			null-or-unaligned
+05801_p5_L09	15	85	num	85			null-or-unaligned
+05801_p5_L09	16	62	num	62			null-or-unaligned
+05801_p5_L09	17	91	num	91		a	agrees
+05801_p5_L09	18	117	num	117			null-or-unaligned
+05801_p5_L09	19	142	num	142			null-or-unaligned
+05801_p5_L09	20	129	num	129		l	conflict:e
+05801_p5_L09	21	117	num	117		e	agrees
+05801_p5_L09	22	132	num	132			null-or-unaligned
+05801_p5_L09	23	86	num	86			null-or-unaligned
+05801_p5_L09	24	83	num	83			null-or-unaligned
+05801_p5_L09	25	26	num	26		t	agrees
+05801_p5_L09	26	27	num	27			null-or-unaligned
+05801_p5_L09	27	42	num	42			null-or-unaligned
+05801_p5_L09	28	76	num	76			null-or-unaligned
+05801_p5_L09	29	102	num	102		t	agrees
+05801_p5_L09	30	37	num	37			null-or-unaligned
+05801_p5_L09	31	22	num	22		r	agrees
+05801_p5_L09	32	203	num	203			null-or-unaligned
+05801_p5_L09	33	132	num	132			null-or-unaligned
+05801_p5_L09	34	190	num	190			null-or-unaligned
+05801_p5_L09	35	67	num	67		e	agrees
+05801_p5_L09	36	73	num	73			null-or-unaligned
+05801_p5_L09	37	2	num	2			null-or-unaligned
+05801_p5_L09	38	34	num	34			null-or-unaligned
+05801_p5_L09	39	82	num	82			null-or-unaligned
+05801_p5_L09	40	3	num	3		d	conflict:e
+05801_p5_L09	41	France	clear				clear
+05801_p5_L09	42	et	clear				clear
+05801_p5_L09	43	Durdella	clear				clear
+05801_p5_L09	44	102	num	102		t	agrees
+05801_p5_L09	45	82	num	82			null-or-unaligned
+05801_p5_L09	46	27	num	27			null-or-unaligned
+05801_p5_L09	47	72	num	72			null-or-unaligned
+05801_p5_L09	48	68	num	68			null-or-unaligned
+05801_p5_L09	49	32	num	32			null-or-unaligned
+05801_p5_L09	50	83	num	83			null-or-unaligned
+05801_p5_L09	51	63	num	63			null-or-unaligned
+05801_p5_L09	52	83	num	83			null-or-unaligned
+05801_p5_L09	53	63	num	63			null-or-unaligned
+05801_p5_L09	54	36	num	36			null-or-unaligned
+05801_p5_L09	55	200	num	200		r	single
+05801_p5_L09	56	142	num	142		o	conflict:e
+05801_p5_L09	57	150	num	150			null-or-unaligned
+05801_p5_L09	58	Dont	clear				clear
+05801_p5_L09	59	le	clear				clear
+05801_p5_L09	60	Roy	clear				clear
+05801_p5_L09	61	ayt	clear				clear
+05801_p5_L09	62	les	clear				clear
+05801_p5_L09	63	advancer	clear				clear
+05801_p5_L09	64	quoyque	clear				clear
+05801_p5_L09	65	la	clear				clear
+05801_p5_L09	66	ligne	clear				clear
+05801_p5_L09	67	coyne	clear				clear
+05801_p5_L09	68	le	clear				clear
+05801_p5_L09	69	Sr	clear				clear
+05801_p5_L09	70	d'Ellemont	clear				clear
+05801_p5_L09	71	dallemont	clear				clear
+05801_p5_L09	72	et	clear				clear
+05801_p5_L09	73	vous	clear				clear
+05801_p5_L09	74	voye	clear				clear
+05801_p5_L09	75	la	clear				clear
+05801_p5_L09	76	venue	clear				clear
+05801_p5_L09	77	opportune	clear				clear
+05801_p5_L09	78	quoyque	clear				clear
+05801_p5_L09	79	les	clear				clear
+05801_p5_L09	80	advis	clear				clear
+05801_p5_L09	81	mesmes	clear				clear
+05801_p5_L09	82	affinsit	clear				clear
+05801_p5_L09	83	puisqu	clear				clear
+05801_p5_L09	84	on	clear				clear
+05801_p5_L09	85	ne	clear				clear
+05801_p5_L09	86	se	clear				clear
+05801_p5_L09	87	peult	clear				clear
+05801_p5_L09	88	fournir	clear				clear
+05801_p5_L09	89	voire	clear				clear
+05801_p5_L09	90	quand	clear				clear
+05801_p5_L09	91	il	num	11			null-or-unaligned
+05801_p5_L09	92	ne	clear				clear
+05801_p5_L09	93	feroit	clear				clear
+05801_p5_L09	94	autre	clear				clear
+05801_p5_L09	95	effect	clear				clear
+05801_p5_L09	96	neantmoins	clear				clear
+05801_p5_L09	97	je	clear				clear
+05801_p5_L09	98	voulu	clear				clear
+05801_p5_L09	99	vous	clear				clear
+05801_p5_L09	100	en	clear				clear
+05801_p5_L09	101	62	num	62			null-or-unaligned
+05801_p5_L09	102	77	num	77			null-or-unaligned
+05801_p5_L09	103	7	num	7		u	agrees
+05801_p5_L09	104	77	num	77			null-or-unaligned
+05801_p5_L09	105	8	num	8		s	agrees
+05801_p5_L09	106	22	num	22		s	conflict:r
+05801_p5_L09	107	132	num	132		e	agrees
+05801_p5_L09	108	140	num	140		d	conflict:s
+05801_p5_L09	109	42	num	42		e	agrees
+05801_p5_L09	110	9	num	9		l	conflict:e
+05801_p5_L09	111	82	num	82		a	conflict:e
+05801_p5_L09	112	38	num	38		m	conflict:u
+05801_p5_L09	113	29	num	29		b	conflict:r
+05801_p5_L09	114	77	num	77		a	conflict:e
+05801_p5_L09	115	37	num	37		s	agrees
+05801_p5_L09	116	192	num	192		s	conflict:aulcunspoint
+05801_p5_L09	117	13	num	13		a	agrees
+05801_p5_L09	118	83	num	83		d	conflict:r
+05801_p5_L09	119	54	num	54		e	agrees
+05801_p5_L09	120	113	num	113		u	conflict:l
+05801_p5_L09	121	83	num	83		r	agrees
+05801_p5_L09	122	71	num	71		d	conflict:a
+05801_p5_L09	123	73	num	73		e	conflict:n
+05801_p5_L09	124	5	num	5		s	conflict:e
+05801_p5_L09	125	83	num	83		p	conflict:r
+05801_p5_L09	126	22	num	22		a	conflict:r
+05801_p5_L09	127	123	num	123		g	conflict:e
+05801_p5_L09	128	83	num	83		n	conflict:r
+05801_p5_L09	129	112	num	112			null-or-unaligned
+05801_p5_L09	130	54	num	54		e	agrees
+05801_p5_L09	131	1	num	1		r	agrees
+05801_p5_L09	132	9	num	9			null-or-unaligned
+05801_p5_L09	133	102	num	102			null-or-unaligned
+05801_p5_L09	134	50	num	50		s	agrees
+05801_p5_L09	135	83	num	83			null-or-unaligned
+05801_p5_L09	136	31	num	31		i	agrees
+05801_p5_L09	137	84	num	84			null-or-unaligned
+05801_p5_L09	138	52	num	52		d	agrees
+05801_p5_L09	139	132	num	132			null-or-unaligned
+05801_p5_L09	140	77	num	77		a	conflict:e
+05801_p5_L09	141	84	num	84		n	conflict:o
+05801_p5_L09	142	27	num	27			null-or-unaligned
+05801_p5_L09	143	72	num	72		t	conflict:e
+05801_p5_L09	144	30	num	30		e	agrees
+05801_p5_L09	145	73	num	73		n	agrees
+05801_p5_L09	146	85	num	85			null-or-unaligned
+05801_p5_L09	147	132	num	132			null-or-unaligned
+05801_p5_L09	148	22	num	22		f	conflict:r
+05801_p5_L09	149	120	num	120		r	conflict:e
+05801_p5_L09	150	84	num	84			null-or-unaligned
+05801_p5_L09	151	3	num	3			null-or-unaligned
+05801_p5_L09	152	32	num	32			null-or-unaligned
+05801_p5_L09	153	12	num	12			null-or-unaligned
+05801_p5_L09	154	[illegible	clear				clear
+05801_p5_L09	155	name]	clear				clear
+05801_p5_L09	156	129	num	129			null-or-unaligned
+05801_p5_L09	157	134	num	134			null-or-unaligned
+05801_p5_L09	158	125	num	125			null-or-unaligned
+05801_p5_L09	159	136	num	136		a	single
+05801_p5_L09	160	Le	clear				clear
+05801_p5_L09	161	fault	clear				clear
+05801_p5_L09	162	aviser	clear				clear
+05801_p5_L09	163	quoy	clear				clear
+05801_p5_L09	164	141	num	141		n	conflict:e
+05801_p5_L09	165	122	num	122			null-or-unaligned
+05801_p5_L09	166	132	num	132			null-or-unaligned
+05801_p5_L09	167	132	num	132		c	conflict:e
+05801_p5_L09	168	42	num	42		e	agrees
+05801_p5_L09	169	132	num	132			null-or-unaligned
+05801_p5_L09	170	129	num	129			null-or-unaligned
+05801_p5_L09	171	15	num	15		e	agrees
+05801_p5_L09	172	72	num	72		s	conflict:e
+05801_p5_L09	173	132	num	132		c	conflict:e
+05801_p5_L09	174	129	num	129			null-or-unaligned
+05801_p5_L09	175	148	num	148			null-or-unaligned
+05801_p5_L09	176	12	num	12			null-or-unaligned
+05801_p5_L09	177	17	num	17		r	agrees
+05801_p5_L09	178	13	num	13			null-or-unaligned
+05801_p5_L09	179	129	num	129		i	conflict:e
+05801_p5_L09	180	133	num	133			null-or-unaligned
+05801_p5_L09	181	51	num	51		t	agrees
+05801_p5_L09	182	127	num	127			null-or-unaligned
+05801_p5_L09	183	191	num	191			null-or-unaligned
+05801_p5_L09	184	7	num	7		a	conflict:u
+05801_p5_L09	185	131	num	131			null-or-unaligned
+05801_p5_L09	186	73	num	73		u	conflict:n
+05801_p5_L09	187	81	num	81		d	conflict:e
+05801_p5_L09	188	28	num	28		u	conflict:e
+05801_p5_L09	189	32	num	32		c	conflict:e
+05801_p5_L09	190	62	num	62		d	conflict:e
+05801_p5_L09	191	132	num	132			null-or-unaligned
+05801_p5_L09	192	190	num	190			null-or-unaligned
+05801_p5_L09	193	27	num	27		a	conflict:e
+05801_p5_L09	194	12	num	12		l	conflict:e
+05801_p5_L09	195	64	num	64			null-or-unaligned
+05801_p5_L09	196	144	num	144		b	single
+05801_p5_L09	197	125	num	125		a	conflict:e
+05801_p5_L09	198	83	num	83		d	conflict:r
+05801_p5_L09	199	36	num	36		o	conflict:e
+05801_p5_L09	200	50	num	50		n	conflict:s
+05801_p5_L09	201	132	num	132		t	conflict:e
+05801_p5_L09	202	67	num	67		j	conflict:e
+05801_p5_L09	203	64	num	64		e	agrees
+05801_p5_L09	204	102	num	102		v	conflict:t
+05801_p5_L09	205	83	num	83		o	conflict:r
+05801_p5_L09	206	82	num	82		u	conflict:e
+05801_p5_L09	207	28	num	28		s	conflict:e
+05801_p5_L09	208	147	num	147		a	single
+05801_p5_L09	209	Je	clear				clear
+05801_p5_L09	210	vous	clear				clear
+05801_p5_L09	211	pouvez	clear				clear
+05801_p5_L09	212	donner	clear				clear
+05801_p5_L09	213	nous	clear				clear
+05801_p5_L09	214	autres	clear				clear
+05801_p5_L09	215	140	num	140		y	conflict:s
+05801_p5_L09	216	54	num	54		e	agrees
+05801_p5_L09	217	22	num	22		n	conflict:r
+05801_p5_L09	218	7	num	7		v	agrees
+05801_p5_L09	219	34	num	34		o	conflict:i
+05801_p5_L09	220	28	num	28		y	conflict:e
+05801_p5_L09	221	30	num	30		d	conflict:e
+05801_p5_L09	222	84	num	84		e	conflict:o
+05801_p5_L09	223	124	num	124		r	conflict:e
+05801_p5_L09	224	13	num	13		n	conflict:a
+05801_p5_L09	225	62	num	62		i	conflict:e
+05801_p5_L09	226	102	num	102		r	conflict:t
+05801_p5_L09	227	35	num	35		e	conflict:s
+05801_p5_L09	228	132	num	132		m	conflict:e
+05801_p5_L09	229	59	num	59		e	agrees
+05801_p5_L09	230	104	num	104		n	single
+05801_p5_L09	231	2	num	2		t	conflict:a
+05801_p5_L09	232	35	num	35		l	conflict:s
+05801_p5_L09	233	12	num	12		a	conflict:e
+05801_p5_L09	234	72	num	72		c	conflict:e
+05801_p5_L09	235	84	num	84		o	agrees
+05801_p5_L09	236	140	num	140		p	conflict:s
+05801_p5_L09	237	72	num	72		i	conflict:e
+05801_p5_L09	238	125	num	125		e	agrees
+05801_p5_L09	239	132	num	132		p	conflict:e
+05801_p5_L09	240	84	num	84		a	conflict:o
+05801_p5_L09	241	105	num	105		r	conflict:o
+05801_p5_L09	242	72	num	72		l	conflict:e
+05801_p5_L09	243	64	num	64		e	agrees
+05801_p5_L09	244	31	num	31		s	conflict:i
+05801_p5_L09	245	84	num	84		r	conflict:o
+05801_p5_L09	246	3	num	3		d	conflict:e
+05801_p5_L09	247	140	num	140		a	conflict:s
+05801_p5_L09	248	bon	clear				clear
+05801_p5_L09	249	ordre	clear				clear
+05801_p5_L09	250	140	num	140		l	conflict:s
+05801_p5_L09	251	124	num	124		g	conflict:e
+05801_p5_L09	252	132	num	132		o	conflict:e
+05801_p5_L09	253	83	num	83		n	conflict:r
+05801_p5_L09	254	115	num	115		d	conflict:u
+05801_p5_L09	255	142	num	142		e	agrees
+05801_p5_L09	256	9	num	9		e	agrees
+05801_p5_L09	257	102	num	102		t	agrees
+05801_p5_L09	258	34	num	34		v	conflict:i
+05801_p5_L09	259	139	num	139		o	conflict:t
+05801_p5_L09	260	84	num	84		u	conflict:o
+05801_p5_L09	261	22	num	22		s	conflict:r
+05801_p5_L09	262	7	num	7		v	agrees
+05801_p5_L09	263	34	num	34		e	conflict:i
+05801_p5_L09	264	28	num	28		u	conflict:e
+05801_p5_L09	265	30	num	30		x	conflict:e
+05801_p5_L09	266	84	num	84		p	conflict:o
+05801_p5_L09	267	124	num	124		a	conflict:e
+05801_p5_L09	268	132	num	132		r	conflict:e
+05801_p5_L09	269	83	num	83		l	conflict:r
+05801_p5_L09	270	115	num	115		a	conflict:u
+05801_p5_L09	271	132	num	132		p	conflict:e
+05801_p5_L09	272	53	num	53		r	conflict:e
+05801_p5_L09	273	145	num	145		e	conflict:a
+05801_p5_L09	274	150	num	150		m	conflict:best
+05801_p5_L09	275	124	num	124		i	conflict:e
+05801_p5_L09	276	83	num	83		r	agrees
+05801_p5_L09	277	102	num	102		e	conflict:t
+05801_p5_L09	278	35	num	35		o	conflict:s
+05801_p5_L09	279	132	num	132		p	conflict:e
+05801_p5_L09	280	59	num	59		o	conflict:e
+05801_p5_L09	281	109	num	109		r	conflict:n
+05801_p5_L09	282	2	num	2		t	conflict:a
+05801_p5_L09	283	35	num	35		u	conflict:s
+05801_p5_L09	284	124	num	124		n	conflict:e
+05801_p5_L09	285	12	num	12		i	conflict:e
+05801_p5_L09	286	140	num	140		t	conflict:s
+05801_p5_L09	287	150	num	150		e	conflict:best
+05801_p5_L09	288	76	num	76		n	conflict:e
+05801_p5_L09	289	39	num	39		v	agrees
+05801_p5_L09	290	34	num	34		o	conflict:i
+05801_p5_L09	291	83	num	83		y	conflict:r
+05801_p5_L09	292	125	num	125		e	agrees
+05801_p5_L09	293	132	num	132		r	conflict:e
+05801_p5_L09	294	72	num	72		l	conflict:e
+05801_p5_L09	295	84	num	84		e	conflict:o
+05801_p5_L09	296	140	num	140		s	agrees
+05801_p5_L09	297	72	num	72		a	conflict:e
+05801_p5_L09	298	125	num	125		r	conflict:e
+05801_p5_L09	299	132	num	132		t	conflict:e
+05801_p5_L09	300	84	num	84		i	conflict:o
+05801_p5_L09	301	105	num	105		c	conflict:o
+05801_p5_L09	302	39	num	39		l	conflict:u
+05801_p5_L09	303	39	num	39		e	conflict:u
+05801_p5_L09	304	9	num	9		s	conflict:e
+05801_p5_L09	305	125	num	125		m	conflict:e
+05801_p5_L09	306	132	num	132		e	agrees
+05801_p5_L09	307	9	num	9		s	conflict:e
+05801_p5_L09	308	4	num	4		m	conflict:d
+05801_p5_L09	309	132	num	132		e	agrees
+05801_p5_L09	310	72	num	72		s	conflict:e
+05801_p5_L09	311	64	num	64		e	agrees
+05801_p5_L09	312	39	num	39		s	conflict:u
+05801_p5_L09	313	84	num	84		p	conflict:o
+05801_p5_L09	314	3	num	3		r	conflict:e
+05801_p5_L09	315	140	num	140		a	conflict:s
+05801_p5_L09	316	147	num	147		n	conflict:a
+05801_p5_L09	317	125	num	125		t	conflict:e
+05801_p5_L09	318	6	num	6		q	conflict:e
+05801_p5_L09	319	132	num	132		u	conflict:e
+05801_p5_L09	320	125	num	125		e	agrees
+05801_p5_L09	321	190	num	190		c	conflict:e
+05801_p5_L09	322	99	num	99		e	single
+05801_p5_L09	323	83	num	83		n	conflict:r
+05801_p5_L09	324	123	num	123		e	single
+05801_p5_L09	325	190	num	190		s	conflict:e
+05801_p5_L09	326	28	num	28		e	agrees
+05801_p5_L09	327	61	num	61		r	conflict:e
+05801_p5_L09	328	3	num	3		a	conflict:e
+05801_p5_L09	329	27	num	27		s	conflict:e
+05801_p5_L09	330	132	num	132		a	conflict:e
+05801_p5_L09	331	124	num	124		n	conflict:e
+05801_p5_L09	332	32	num	32		s	conflict:e
+05801_p5_L09	333	8	num	8		f	agrees
+05801_p5_L09	334	39	num	39		r	conflict:u
+05801_p5_L09	335	35	num	35		u	conflict:s
+05801_p5_L09	336	82	num	82		i	conflict:e
+05801_p5_L09	337	30	num	30		c	conflict:e
+05801_p5_L09	338	87	num	87		t	conflict:e
+05801_p5_L09	339	7	num	7		v	agrees
+05801_p5_L09	340	102	num	102		o	conflict:t
+05801_p5_L09	341	25	num	25		i	conflict:e
+05801_p5_L09	342	72	num	72		r	conflict:e
+05801_p5_L09	343	5	num	5		e	agrees
+05801_p5_L09	344	113	num	113		q	conflict:l
+05801_p5_L09	345	62	num	62		u	conflict:e
+05801_p5_L09	346	172	num	172		a	agrees
+05801_p5_L09	347	140	num	140		n	conflict:s
+05801_p5_L09	348	27	num	27		t	conflict:e
+05801_p5_L09	349	62	num	62		i	conflict:e
+05801_p5_L09	350	34	num	34		l	conflict:i
+05801_p5_L09	351	64	num	64		n	conflict:e
+05801_p5_L09	352	25	num	25		e	agrees
+05801_p5_L09	353	12	num	12		f	conflict:e
+05801_p5_L09	354	134	num	134		e	conflict:t
+05801_p5_L09	355	125	num	125		r	conflict:e
+05801_p5_L09	356	112	num	112		o	conflict:s
+05801_p5_L09	357	83	num	83		i	conflict:r
+05801_p5_L09	358	140	num	140		t	conflict:s
+05801_p5_L09	359	145	num	145		a	agrees
+05801_p5_L09	360	27	num	27		u	conflict:e
+05801_p5_L09	361	85	num	85		l	conflict:u
+05801_p5_L09	362	72	num	72		t	conflict:e
+05801_p5_L09	363	6	num	6		r	conflict:e
+05801_p5_L09	364	38	num	38		e	conflict:u
+05801_p5_L09	365	24	num	24		e	conflict:t
+05801_p5_L09	366	25	num	25		f	conflict:e
+05801_p5_L09	367	132	num	132		f	conflict:e
+05801_p5_L09	368	et	clear			e	clear
+05801_p5_L09	369	Harlem	clear				clear
+05801_p5_L09	370	80	num	80		c	conflict:e
+05801_p5_L09	371	81	num	81		t	conflict:e
+05801_p5_L09	372	223	num	223		a	single
+05801_p5_L09	373	A	clear				clear
+05801_p5_L09	374	tant	clear				clear
+05801_p5_L09	375	pour	clear				clear
+05801_p5_L09	376	Normandie	clear				clear
+05801_p5_L09	377	luy	clear				clear
+05801_p5_L09	378	asseurer	clear				clear
+05801_p5_L09	379	quil	clear				clear
+05801_p5_L09	380	a	clear				clear
+05801_p5_L09	381	vos	clear				clear
+05801_p5_L09	382	choses	clear				clear
+05801_p5_L09	383	Dieu	clear				clear
+05801_p5_L09	384	quil	clear				clear
+05801_p5_L09	385	ait	clear				clear
+05801_p5_L09	386	maintien	clear				clear
+05801_p5_L09	387	vostre	clear				clear
+05801_p5_L09	388	xxviij	clear				clear
+05801_p5_L09	389	mars	clear				clear
+05801_p5_L09	390	1573	doubtful				doubtful
+05801_p5_L09	391	8	num	8		u	conflict:s
+05801_p5_L09	392	39	num	39		m	conflict:u
+05801_p5_L09	393	35	num	35		o	conflict:s
+05801_p5_L09	394	82	num	82		i	conflict:e
+05801_p5_L09	395	30	num	30		n	conflict:e
+05801_p5_L09	396	87	num	87		s	conflict:e
+05801_p5_L09	397	7	num	7		i	conflict:u
+05801_p5_L09	398	102	num	102		l	conflict:t
+05801_p5_L09	399	29	num	29		p	conflict:r
+05801_p5_L09	400	42	num	42		o	conflict:e
+05801_p5_L09	401	7	num	7		u	agrees
+05801_p5_L09	402	113	num	113		l	agrees
+05801_p5_L09	403	62	num	62		r	conflict:e
+05801_p5_L09	404	172	num	172		a	agrees
+05801_p5_L09	405	bons	clear				clear
+05801_p5_L09	406	amis	clear				clear
+05801_p5_L09	407	pourra	clear				clear
+05801_p5_L09	408	dire	clear				clear
+05801_p5_L09	409	quil	clear				clear
+05801_p5_L09	410	ny	clear				clear
+05801_p5_L09	411	maistulx	clear				clear
+05801_p5_L09	412	nauffres	clear				clear
+05801_p5_L09	413	vous	clear				clear
+05801_p5_L09	414	faires	clear				clear
+05801_p5_L09	415	en	clear				clear
+05801_p5_L09	416	la	clear				clear
+05801_p5_L09	417	plus	clear				clear
+05801_p5_L09	418	prompte	clear				clear
+05801_p5_L09	419	diligence	clear				clear
+05801_p5_L09	420	faicte	clear				clear
+05801_p5_L09	421	a	clear				clear
+05801_p5_L09	422	Delft	clear				clear
+05801_p5_L09	423	ce	clear				clear
+05801_p5_L09	424	viij	clear				clear
+05801_p5_L09	425	mars	clear				clear
+05801_p5_L09	426	1573	doubtful				doubtful
+05801_p5_L09	427	Guill[aum]e	clear				clear
+05801_p5_L09	428	de	clear				clear
+05801_p5_L09	429	Nassau	clear				clear

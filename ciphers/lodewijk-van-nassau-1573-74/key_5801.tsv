@@ -1,0 +1,180 @@
+code	value	grade	occurrences	agree	empty	others
+1	r	M	5	2	0	l:1,t:1,u:1
+2	a	M	56	10	1	e:6,s:6,t:6,r:5,n:4,i:3,j:3,o:3,c:2,d:1,g:1,l:1,m:1,q:1,u:1,z:1
+3	e	M	64	12	1	a:6,n:6,t:6,u:6,d:5,r:4,s:4,l:2,m:2,o:2,p:2,b:1,g:1,h:1,i:1,x:1,y:1
+4	d	M	19	3	0	n:3,t:3,a:2,c:2,r:2,e:1,m:1,p:1,s:1
+5	e	M	22	4	0	a:3,l:2,r:2,s:2,t:2,u:2,d:1,i:1,n:1,q:1,y:1
+6	e	M	9	3	0	q:2,m:1,o:1,r:1,t:1
+7	u	M	61	10	1	e:9,o:8,t:7,a:5,i:4,n:4,r:4,l:3,y:2,c:1,j:1,p:1,s:1
+8	s	M	18	6	0	e:4,r:3,c:1,i:1,l:1,o:1,u:1
+9	e	M	45	7	1	i:5,n:5,o:4,r:4,s:4,u:4,l:3,t:3,b:1,c:1,g:1,m:1,y:1
+10	r	H	3	2	0	c:1
+11	c	M	7	1	1	d:1,e:1,n:1,p:1,r:1
+12	e	M	34	6	3	l:4,i:3,m:3,s:3,t:3,r:2,u:2,a:1,h:1,n:1,o:1,p:1
+13	a	M	10	2	1	n:2,e:1,o:1,p:1,r:1,s:1
+14	a	M	9	2	0	e:2,n:2,i:1,m:1,p:1
+15	e	M	10	5	0	a:1,c:1,d:1,n:1,u:1
+16	n	M	8	2	0	a:1,c:1,e:1,i:1,r:1,s:1
+17	r	M	4	2	0	l:1,o:1
+18	e	M	2	1	0	o:1
+19	e	M	6	2	0	a:1,i:1,o:1,t:1
+20	c	M	6	1	0	e:1,i:1,s:1,t:1,u:1
+21	s	M	15	6	0	c:2,a:1,e:1,g:1,n:1,p:1,q:1,t:1
+22	r	M	55	11	1	s:11,e:8,l:4,n:3,u:3,b:2,d:2,p:2,q:2,a:1,c:1,h:1,i:1,o:1,t:1
+23	d	M	24	3	0	s:3,c:2,e:2,i:2,o:2,r:2,u:2,g:1,l:1,m:1,n:1,t:1,y:1
+24	t	M	22	5	0	e:4,r:4,f:2,a:1,d:1,g:1,l:1,n:1,o:1,u:1
+25	e	M	25	8	0	i:4,r:2,t:2,u:2,d:1,j:1,n:1,o:1,p:1,q:1,f:1
+26	t	M	31	8	0	e:3,i:3,r:3,s:3,u:3,a:2,d:2,g:1,n:1,o:1,z:1
+27	e	M	63	14	5	u:7,s:6,a:5,r:5,o:4,t:4,i:3,q:3,n:2,c:1,l:1,m:1,p:1,y:1
+28	e	M	51	13	2	s:8,r:5,a:4,u:4,l:3,n:3,o:2,z:2,d:1,g:1,i:1,t:1,y:1
+29	r	M	44	6	0	f:6,n:5,t:5,e:4,i:3,p:3,u:3,a:2,b:2,c:2,g:2,d:1
+30	e	M	51	11	0	n:6,u:6,o:5,s:5,r:3,t:3,a:2,i:2,b:1,c:1,d:1,g:1,l:1,p:1,q:1,x:1
+31	i	M	22	4	0	l:4,a:3,s:3,b:1,d:1,e:1,m:1,n:1,p:1,r:1,t:1
+32	e	M	59	11	3	t:7,u:6,n:5,r:5,s:5,i:4,d:3,c:2,p:2,a:1,g:1,l:1,o:1,q:1,y:1
+33	e	M	16	4	0	i:3,t:2,u:2,c:1,h:1,n:1,p:1,s:1
+34	i	M	35	6	3	e:5,o:4,a:3,n:2,r:2,s:2,u:2,d:1,j:1,l:1,m:1,t:1,y:1
+35	s	M	20	4	0	o:3,u:3,n:2,r:2,a:1,c:1,e:1,g:1,i:1,l:1
+36	e	M	15	2	1	o:2,r:2,a:1,c:1,m:1,n:1,q:1,s:1,u:1,y:1
+37	s	M	45	12	1	r:7,u:6,e:5,o:3,t:3,a:2,c:2,n:2,d:1,l:1
+38	u	M	23	4	1	e:3,r:3,i:2,m:2,o:2,a:1,c:1,d:1,h:1,n:1,s:1
+39	u	M	32	9	0	r:6,e:4,a:2,m:2,s:2,t:2,d:1,i:1,l:1,n:1,o:1
+40	s	M	15	3	0	u:3,e:2,r:2,a:1,c:1,i:1,l:1,t:1
+41	a	M	5	1	0	e:1,l:1,n:1,u:1
+42	e	M	11	4	2	d:1,g:1,n:1,o:1,p:1
+43	e	M	2	1	0	l:1
+44	t	M	1	1	0	
+45	i	M	1	1	0	
+46	n	M	1	1	0	
+47	e	M	11	5	0	p:2,c:1,d:1,l:1,y:1
+48	m	M	1	1	0	
+49	e	M	5	2	0	a:1,o:1,s:1
+50	s	M	14	5	0	e:3,n:3,l:1,r:1,u:1
+51	t	M	6	3	0	a:1,r:1,z:1
+52	d	M	18	3	0	e:3,m:3,t:2,a:1,g:1,l:1,q:1,r:1,s:1,v:1
+53	e	M	13	5	0	c:2,r:2,s:2,g:1,u:1
+54	e	M	17	3	0	o:3,s:3,t:3,a:1,d:1,n:1,r:1,u:1
+55	e	M	14	4	0	l:2,y:2,a:1,i:1,n:1,s:1,t:1,x:1
+56	u	M	5	2	0	a:1,s:1,y:1
+57	i	M	8	2	1	e:1,l:1,o:1,t:1,y:1
+58	m	M	6	2	0	a:1,d:1,i:1,y:1
+59	e	M	26	8	0	o:5,s:3,i:2,r:2,t:2,a:1,m:1,q:1,u:1
+60	e	M	7	2	0	t:2,i:1,n:1,f:1
+61	e	M	16	3	0	i:2,t:2,a:1,c:1,d:1,m:1,n:1,o:1,r:1,s:1,u:1
+62	e	M	40	8	2	i:5,a:3,d:3,n:3,t:3,u:3,l:2,o:2,r:2,s:2,m:1,x:1
+63	e	M	17	3	2	a:2,c:2,i:2,l:1,n:1,q:1,r:1,s:1,t:1
+64	e	M	13	4	1	n:2,s:2,c:1,l:1,o:1,t:1
+65	t	M	6	2	0	a:1,e:1,o:1,r:1
+66	n	M	4	2	0	r:1,f:1
+67	e	M	13	5	0	j:1,l:1,p:1,r:1,s:1,t:1,v:1,y:1
+68	e	M	5	1	1	l:1,n:1,o:1
+69	e	M	12	3	0	l:3,b:1,m:1,n:1,o:1,s:1,v:1
+70	e	M	8	2	0	a:1,n:1,o:1,r:1,s:1,u:1
+71	a	M	19	3	0	c:3,d:2,e:2,n:2,o:2,s:2,j:1,p:1,u:1
+72	e	M	58	11	2	s:8,n:5,t:5,d:4,l:4,o:4,i:3,r:3,u:3,c:2,a:1,p:1,y:1,z:1
+73	n	M	22	3	2	r:3,e:2,q:2,t:2,u:2,d:1,i:1,l:1,m:1,o:1,s:1
+74	u	M	9	4	0	n:2,a:1,e:1,o:1
+75	e	M	12	3	0	d:2,i:2,b:1,r:1,s:1,u:1,y:1
+76	e	M	15	3	1	n:2,s:2,u:2,d:1,i:1,o:1,t:1,z:1
+77	e	M	29	8	2	a:4,u:4,s:3,n:2,b:1,c:1,d:1,j:1,l:1,m:1
+78	e	M	25	6	0	i:4,f:3,v:3,a:2,n:2,t:2,g:1,m:1,o:1
+79	e	M	19	3	0	u:3,l:2,r:2,t:2,a:1,h:1,m:1,n:1,o:1,p:1,s:1
+80	e	M	9	2	0	n:2,c:1,i:1,l:1,p:1,t:1
+81	e	M	85	22	1	s:11,r:9,u:7,n:6,l:4,o:4,a:3,d:3,i:3,c:2,q:2,t:2,z:2,g:1,h:1,p:1,y:1
+82	e	M	152	31	3	t:19,s:14,l:12,a:11,r:9,n:8,d:7,o:7,v:7,i:6,m:5,p:4,c:2,q:2,g:1,h:1,j:1,y:1,z:1
+83	r	M	78	9	4	e:8,n:8,s:8,t:6,l:4,p:4,u:4,a:3,i:3,o:3,c:2,d:2,g:2,m:2,q:2,b:1,h:1,x:1,y:1
+84	o	M	45	7	2	e:6,n:6,i:4,a:3,p:3,r:3,c:2,s:2,t:2,u:2,d:1,l:1,q:1
+85	u	M	38	7	2	e:5,l:4,f:4,m:3,n:3,o:3,r:3,d:1,p:1,t:1,y:1
+86	n	M	8	3	1	d:1,o:1,u:1,y:1
+87	e	M	33	6	0	n:5,o:4,t:4,r:3,s:3,y:3,u:2,d:1,i:1,l:1
+88	r	M	14	3	0	e:2,n:2,a:1,c:1,d:1,i:1,l:1,t:1,u:1
+89	e	M	11	4	0	r:2,a:1,m:1,s:1,t:1,z:1
+90	n	M	11	3	0	e:2,a:1,m:1,o:1,s:1,t:1,u:1
+91	a	M	16	4	1	c:3,p:2,e:1,i:1,n:1,o:1,r:1,f:1
+92	s	M	15	4	0	d:2,o:2,a:1,c:1,e:1,i:1,m:1,p:1,u:1
+93	a	M	2	1	0	r:1
+95	n	M	2	1	0	u:1
+96	i	H	3	2	0	o:1
+97	e	M	5	2	0	a:1,m:1,p:1
+98	e	M	2	1	0	s:1
+99	e	M	2	1	0	y:1
+100	e	M	1	1	0	
+101	s	M	17	4	0	e:3,i:2,n:2,o:2,a:1,g:1,r:1,t:1
+102	t	M	52	10	1	e:6,a:5,u:5,i:4,s:4,l:3,n:3,o:3,r:3,x:2,b:1,h:1,q:1
+103	e	M	19	5	0	t:4,r:2,u:2,a:1,b:1,l:1,o:1,p:1,s:1
+104	n	M	1	1	0	
+105	o	M	14	3	0	a:2,s:2,c:1,g:1,i:1,n:1,r:1,t:1,v:1
+107	e	M	1	1	0	
+108	e	M	1	1	0	
+109	n	M	3	1	0	o:1,r:1
+111	e	M	9	2	0	f:2,a:1,d:1,o:1,q:1,r:1
+112	s	M	34	7	1	v:5,i:4,a:3,e:3,n:3,d:2,l:2,o:2,c:1,t:1
+113	l	M	22	4	0	r:4,e:3,u:3,i:2,a:1,n:1,o:1,p:1,q:1,z:1
+114	r	H	3	2	0	s:1
+115	u	M	13	2	0	a:1,c:1,d:1,e:1,g:1,h:1,i:1,l:1,m:1,o:1,s:1
+116	e	M	9	3	0	a:2,l:2,o:1,t:1
+117	e	M	18	6	1	t:3,u:3,a:1,c:1,i:1,m:1,r:1
+118	d	M	6	2	0	b:1,e:1,l:1,t:1
+119	e	M	7	2	0	r:2,i:1,s:1,t:1
+120	e	M	12	3	0	r:3,f:2,a:1,l:1,o:1,x:1
+121	l	M	22	2	0	que:2,f:2,au:1,ave:1,d:1,derrire:1,e:1,espaign:1,i:1,monsieu:1,n:1,nou:1,o:1,ps:1,sui:1,t:1,u:1,vil:1
+122	r	M	5	2	1	q:1,t:1
+123	e	M	2	1	0	g:1
+124	e	M	37	8	0	n:7,u:5,a:3,af:1,com:1,contrain:1,g:1,gens:1,i:1,italien:1,nuict:1,o:1,p:1,pa:1,r:1,sera:1,t:1
+125	e	M	43	8	1	s:5,t:3,a:2,de:2,l:2,n:2,r:2,u:2,aicter:1,au:1,bourgeois:1,bre:1,c:1,les:1,m:1,mment:1,o:1,prez:1,qu:1,royne:1,ruyne:1,uelleesttelle:1
+126	e	M	48	5	1	i:4,n:4,u:4,r:3,s:3,a:2,c:2,l:2,q:2,b:1,craind:1,cy:1,d:1,donner:1,g:1,guerre:1,h:1,la:1,lequel:1,o:1,p:1,quil:1,t:1,veuil:1,vueillent:1
+127	d	M	6	1	1	passages:1,perdons:1,s:1,t:1
+128	de	M	3	1	0	e:1,o:1
+129	e	M	43	5	3	m:4,l:3,n:3,u:3,d:2,i:2,a:1,asi:1,er:1,esmeu:1,la:1,le:1,les:1,moi:1,nfanterie:1,premire:1,r:1,s:1,se:1,ser:1,franc:1,t:1,trait:1,y:1
+130	c	M	11	2	0	f:2,a:1,ces:1,n:1,p:1,suiv:1,vien:1,y:1
+131	e	M	10	3	1	b:1,d:1,l:1,p:1,r:1,ville:1
+132	e	M	174	18	10	s:14,n:11,r:11,a:10,i:10,t:10,o:8,c:6,u:6,d:5,p:5,l:4,la:2,plus:2,q:2,avs:1,co:1,con:1,conse:1,dangleterre:1,de:1,du:1,elle:1,entrete:1,et:1,etat:1,g:1,grans:1,h:1,il:1,j:1,le:1,lennemi:1,limportance:1,m:1,mesme:1,nantmoins:1,ne:1,nous:1,onpolroit:1,ou:1,plu:1,qu:1,quant:1,que:1,savoir:1,secourrons:1,secours:1,serr:1,fort:1,tousmoyen:1,trou:1,ur:1,x:1,y:1
+133	l	M	5	1	1	la:1,marschent:1,u:1
+134	t	M	11	2	1	c:1,d:1,e:1,la:1,pays:1,s:1,x:1,y:1
+135	d	M	3	1	0	l:1,u:1
+136	a	M	1	1	0	
+137	autan	M	3	1	0	celuy:1,u:1
+138	e	M	2	1	0	t:1
+139	t	M	14	2	2	a:1,b:1,c:1,e:1,n:1,non:1,o:1,f:1,u:1,y:1
+140	s	M	51	7	0	t:4,v:4,a:3,e:3,n:3,r:3,c:2,d:2,o:2,an:1,avoyent:1,commode:1,de:1,donner:1,et:1,even:1,i:1,il:1,in:1,l:1,m:1,p:1,q:1,serontlesetats:1,vaux:1,vers:1,y:1
+141	e	M	13	2	0	n:2,o:2,anter:1,la:1,p:1,q:1,r:1,s:1,t:1
+142	e	M	7	2	1	i:1,n:1,o:1,p:1
+144	b	M	2	1	0	c:1
+145	a	M	13	3	0	u:2,d:1,e:1,incouvniens:1,ladelivrancede:1,r:1,florins:1,tomb:1,vos:1
+146	c	M	1	1	0	
+147	a	M	3	1	0	n:1,v:1
+148	que	M	2	1	1	
+149	n	M	1	1	0	
+150	best	M	11	1	1	colognie:1,e:1,jay:1,m:1,n:1,pas:1,q:1,soymesme:1,vous:1
+152	e	M	9	2	0	a:1,h:1,i:1,nt:1,p:1,t:1,v:1
+157	assau	M	1	1	0	
+170	e	M	1	1	0	
+172	a	M	9	2	0	c:1,chare:1,content:1,n:1,p:1,u:1,vous:1
+173	q	M	2	1	0	t:1
+175	avec	M	2	1	0	i:1
+177	q	M	1	1	0	
+179	e	M	1	1	0	
+182	i	M	1	1	0	
+183	u	M	1	1	0	
+190	e	M	25	3	2	s:3,g:2,r:2,a:1,assure:1,bestallung:1,c:1,courran:1,et:1,i:1,ien:1,n:1,o:1,si:1,t:1,u:1
+191	ne	M	4	1	1	o:1,s:1
+192	aulcunspoint	M	5	1	1	non:1,s:1,t:1
+195	a	M	12	4	0	q:2,u:2,despo:1,l:1,r:1,s:1
+197	e	M	1	1	0	
+199	av	M	3	1	0	la:1,n:1
+200	r	M	1	1	0	
+201	NULL	M	1	1	1	
+202	p	M	1	1	0	
+203	NULL	M	1	1	1	
+221	et	M	1	1	0	
+223	a	M	4	1	0	m:1,o:1,possiblespour:1
+231	c	M	2	1	0	r:1
+272	la	M	1	1	0	
+296	i	M	1	1	0	
+311	a	M	4	1	0	es:1,o:1,prometteron:1
+312	a	M	3	1	1	o:1
+330	e	M	1	1	0	
+331	a	M	7	1	0	aut:1,e:1,guerre:1,les:1,r:1,ue:1
+335	e	M	2	1	0	p:1
+336	a	M	1	1	0	
+356	u	M	1	1	0	
+901	c	M	1	1	0	
