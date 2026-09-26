@@ -1,0 +1,12 @@
+{
+  "format": "rows",
+  "key": "../../key.tsv",
+  "unknown_values": ["+", "", "?"],
+  "unkeyed_value": "?",
+  "unkeyed_grade": "U",
+  "default_grade": "H",
+  "word_values": ["il", "qui", "que", "tous", "car", "nous", "uous", "ainsi", "parceque", "lui", "point",
+                  "aussi", "pas", "plustost", "nostre"],
+  "style": "spaced",
+  "header": ["# scrambled-cipher-order control, seed 2", "# {total} tokens, grades {grades_sorted}"]
+}

@@ -1,0 +1,42 @@
+{
+ "slug": "matignon-mayenne-1586",
+ "name": "Forget/Mayenne/Matignon despatches, Ligue civil war, BnF fr.15572 + fr.15571 ff.177/179, 1585-86",
+ "date": "1585-1586",
+ "language_candidates": ["fr"],
+ "ciphertext": "ciphers/matignon-mayenne-1586/ciphertext.txt (12,994 tokens over 379 lines, 13 leaves partly transcribed by Bourdeau -- f.110, f.123r, f.123v, f.124r, f.124v, f.143r, f.143v, f.150, f.154, f.173, f.196, f.201, fr.15571 f.177 -- copied unmodified from dbourdeau/cyphersolver matignon1586/, commit fc0c9e8, 25 Sept 2026, CC BY 4.0/MIT)",
+ "ciphertext_source": "BnF fr.15572 = ark btv1b9061879d; fr.15571 = ark btv1b90618802 (per Bourdeau's NOTES.md folio-to-canvas table); transcriptions are Bourdeau's own, not re-fetched or re-transcribed this job",
+ "alphabet": {
+  "note": "87 codes in Bourdeau's key.json (Mayenne-Forget's Cipher-1): single-letter substitutes, a handful of ambiguous 2-3 candidate glyphs (i/n/s, i/y, etc), 15 numeric word/phrase codes (il, qui, que, tous, car, nous, uous, ainsi, parceque, lui, point, aussi, pas, plustost, nostre), and ~23 codes still unresolved (value '+' in his key.json)."
+ },
+ "design": {
+  "class": "homophonic/polyphonic substitution with word-code group (nomenclator-lite): several glyphs stand for more than one letter (measured by Bourdeau at 0.91-0.93 shape correlation, i.e. not separable by shape at all, only by a language model) -- NOT a simple 1-glyph-1-letter substitution",
+  "note": "tools/decode_key.py applies the key as a straight per-token substitution with no beam search or language-model disambiguation; Bourdeau's own 'read' numbers (measure.json, 22 Sept 2026) use a beam-search decoder and are NOT reproduced by this spec's cheap test -- the two are different, non-comparable tests, both on file (see NOTES.md)"
+ },
+ "constraints": [
+  "the key was verified by Bourdeau against three period-contemporary decipherments in the same volume: f.14v (cipher) / f.15r (its clear decipherment), f.18-21 (cipher) / f.19 (its clear decipherment), and the f.78v/79r margin decipherment -- a period gloss in the sense of CLAUDE.md rule 4, so single-valued key codes are graded H",
+  "ambiguous key codes (two or three candidate letters) are graded M automatically by tools/decode_key.py's '|' rule; codes with no resolved value at all (23 of 87) are graded U",
+  "a straight substitution cannot resolve the ambiguous codes the way Bourdeau's beam-search decoder does, so this cheap test's judge score is expected to be far weaker than his own measured per-leaf 'read' fractions -- it tests whether the key structure survives naive application at all, against a scrambled-order control, not whether the leaves are readable prose"
+ ],
+ "cheap_tests_in_order": [
+  "1. Apply Bourdeau's verified Cipher-1 key to the leaves he has transcribed only in part, by straight substitution (tools/decode_key.py); control: the same key applied to a scrambled-cipher-order copy of the same leaves (token order shuffled, 3 seeds, same per-line token counts); score both with tools/judge_plaintext.py (fr16, era-matched)."
+ ],
+ "matched_control": "scrambled-cipher-order copy of the identical 12,994 tokens (3 seeds: 1, 2, 3), same key, same decoder -- matches N, K (87 codes) and design (same ambiguous/unkeyed code shares) exactly, since it is the identical token multiset reordered",
+ "judge": {"language": "fr", "corpora": ["tools/data/fr16/lettresdecatheri01cathuoft_djvu.txt.gz"], "min_word_cover": 0.3, "control_samples": 200, "note": "16th-century French (u/v, i/j folded), era-matched to 1585-86 -- LESSONS.md; min_word_cover set low (0.3) because the ambiguous-code substitution and 23 unkeyed '+' codes (rendered as [code], not letters) suppress word recognition even in the real-order reading"},
+ "cheap_test_done": {
+  "test": "1. Cipher-1 key by straight substitution vs scrambled-cipher-order control (3 seeds)",
+  "date": "26 Sept 2026",
+  "worker": "LANE B5 bMAT",
+  "script": "tools/decode_key.py on ciphers/matignon-mayenne-1586/ (target) and ciphers/matignon-mayenne-1586/control/seed{1,2,3}/ (control)",
+  "target_grades": {"H": 10074, "M": 1648, "U": 1272, "total": 12994, "fraction_resolved_H_plus_M": 0.9021},
+  "control_grades": {"H": 10074, "M": 1648, "U": 1272, "total": 12994, "fraction_resolved_H_plus_M": 0.9021,
+                     "note": "identical to target by construction: tools/decode_key.py grades a token by its own key row alone, independent of position, so a per-token 'fraction resolved' cannot distinguish real order from scrambled order for this decoder -- only the judge's language-model score can, since it scores 4-gram structure across token boundaries"},
+  "judge_results": [
+   {"which": "target (real cipher order)", "language_score": -1.371, "null_p99": -1.942, "real_p05": -0.837, "real_median": -0.779, "words_cover": 0.814, "real_text_median_cover": 0.947, "pass": false},
+   {"which": "control seed 1 (scrambled order)", "language_score": -1.782, "null_p99": -1.942, "real_p05": -0.837, "words_cover": 0.681, "pass": false},
+   {"which": "control seed 2 (scrambled order)", "language_score": -1.793, "null_p99": -1.942, "real_p05": -0.837, "words_cover": 0.677, "pass": false},
+   {"which": "control seed 3 (scrambled order)", "language_score": -1.784, "null_p99": -1.942, "real_p05": -0.837, "words_cover": 0.676, "pass": false}
+  ],
+  "net_answer": "judge FAIL for target and all 3 controls (none clears real_p05 -0.837, expected: a straight substitution with 1,272 unkeyed and 1,648 ambiguous-M tokens of 12,994 cannot read as clean prose) -- but the target beats every control seed by a large, seed-consistent margin: language score -1.371 vs -1.78/-1.79/-1.78 (control mean -1.786, target 0.41-0.42 nats above all three, control range only 0.011 wide) and word-cover 0.814 vs 0.681/0.677/0.676 (control mean 0.678, target +0.136). Fraction of tokens resolved (H+M, i.e. not unkeyed) is 0.9021 for target AND every control identically (11,722/12,994) -- tools/decode_key.py grades a token from its own key row alone, independent of neighbours, so this statistic cannot and does not distinguish real from scrambled order; only the judge's cross-token language score and word-cover statistic can, and both do, consistently, across all 3 seeds. Per-token grades: H 10,074 (77.5%, single-valued key codes, graded H because Bourdeau's key was verified against the period-contemporary f.14v/15r, f.18-21/19 and f.78v/79r decipherments -- a period gloss per rule 4), M 1,648 (12.7%, ambiguous 2-3 candidate codes, auto-downgraded), U 1,272 (9.8%, Bourdeau's own key.json leaves these unresolved). Read as: the key is real and the leaves are genuinely in this cipher (a reproducible margin over a matched control, CLAUDE.md rule 5), but a straight substitution cannot turn ambiguous/unkeyed tokens into readable French -- getting a PASS needs either Bourdeau's own beam-search decoder (already run by him, see NOTES.md 'Coverage, measured', not reproduced here) or narrowing the 1,272 unkeyed and 1,648 ambiguous tokens by further transcription/context work, which is out of this job's scope. Status: partial (rule 5), not closed-negative -- a NEAR.md row is owed (orchestrator's to write)."
+ },
+ "written": "26 Sept 2026, LANE B5 worker bMAT, for job .claude/briefs/runs/2026-09-26-lane-b5-matignon.md"
+}

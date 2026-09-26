@@ -1,0 +1,12 @@
+{
+  "format": "rows",
+  "unknown_values": ["+", "", "?"],
+  "unkeyed_value": "?",
+  "unkeyed_grade": "U",
+  "default_grade": "H",
+  "word_values": ["il", "qui", "que", "tous", "car", "nous", "uous", "ainsi", "parceque", "lui", "point",
+                  "aussi", "pas", "plustost", "nostre"],
+  "style": "spaced",
+  "header": ["# Mayenne-Forget Cipher-1, Bourdeau's key applied by straight substitution (no beam search)",
+             "# {total} tokens, grades {grades_sorted}"]
+}
