@@ -280,7 +280,11 @@ def warnings_for(role, signal):
     - a done line that reports a test, negative or FAIL without the word control: CLAUDE.md rule 3 (a negative
       means nothing without a matched control number beside it; nine done lines broke this on 25 Sept 2026)
     - a dollar figure anywhere in the line: cost figures come from the orchestrator's get_session, not the
-      worker's own sense of it (README common tail item 1), and `$8` inside double quotes vanishes anyway."""
+      worker's own sense of it (README common tail item 1), and `$8` inside double quotes vanishes anyway.
+    - a done line over 1,200 characters: CLAUDE.md Usage rule 5 ("a short markdown table with a five-line
+      report") -- 17 of 23 done/flag lines this window (26 Sept 2026, retro n) exceeded 800 characters and one
+      (GOLD-CONS4) reached 4,021, and a lane orchestrator now reads every one of these before its own context
+      handoff line, so a verbose line has a direct, measurable cost in lane-handoff overhead, not just legibility."""
     w = []
     sig = signal.strip()
     if sig.lower().startswith("done:") and re.search(r"\btests?\b|\btested\b|\bnegatives?\b|\bfail(s|ed|ing)?\b|closed-negative",
@@ -289,6 +293,9 @@ def warnings_for(role, signal):
     text = f"{role} | {signal}"
     if re.search(r"\$\s?\d|\bdollars\b|\bUSD\b", text, re.I):
         w.append("WARNING: cost figures in ROOM lines are the orchestrator's to read (COMMON item 1)")
+    if len(text) > 1200:
+        w.append(f"WARNING: done line is {len(text)} chars, over Usage rule 5's five-line report -- move detail "
+                  f"to NOTES.md/HYPOTHESES.md and leave a short summary + pointer here")
     return w
 
 

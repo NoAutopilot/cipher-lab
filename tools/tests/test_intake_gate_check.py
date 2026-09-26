@@ -223,6 +223,39 @@ ok = code == 1
 fails += not ok
 print(("PASS" if ok else "FAIL"), "synthetic verdict-word-in-prose-only", f"-> code={code} message={message!r}")
 
+# synthetic (26 Sept 2026, RETRO-2026-09-26b): a reused/re-cited search must still exit 0 (a
+# citation is present) but print a soft WARNING, never change the exit code -- check-solved.md's
+# own nuance is that a reused search that blocked nothing is a QA finding, not a gate failure.
+SYNTH_OPEN_REUSED_SEARCH = (
+    "open\nBourdeau's own 2026-09-21 search covers this edition; not re-run, per intake gate cost "
+    "discipline. pp.10-12 named there.\n"
+)
+code, message = gate.check(SYNTH_OPEN_REUSED_SEARCH)
+ok = code == 0 and "WARNING" in message and "reused/re-cited" in message
+fails += not ok
+print(("PASS" if ok else "FAIL"), "synthetic open-reused-search-soft-warning", f"-> code={code} message={message!r}")
+
+# synthetic: a full-text-search citation naming only one quoted term must still exit 0 but print
+# a soft WARNING naming check-solved.md's whole-volume rule (matignon-mayenne-1586's shape).
+SYNTH_OPEN_SINGLE_TERM_FTS = (
+    'open\nfull-text search for "Bellebourg" returns 0 hits in the volume.\n'
+)
+code, message = gate.check(SYNTH_OPEN_SINGLE_TERM_FTS)
+ok = code == 0 and "WARNING" in message and "one quoted term" in message
+fails += not ok
+print(("PASS" if ok else "FAIL"), "synthetic open-single-term-fts-soft-warning", f"-> code={code} message={message!r}")
+
+# synthetic: a full-text-search citation with the date, both names and the place (several quoted
+# terms) must exit 0 with no soft warning at all -- the compliant shape check-solved.md now asks for.
+SYNTH_OPEN_WHOLE_VOLUME_FTS = (
+    'open\nfull-text search for "Bellebourg" returns 0 hits; also searched "1586" and "Mayenne" '
+    'and "Matignon", each logged separately, all read in full.\n'
+)
+code, message = gate.check(SYNTH_OPEN_WHOLE_VOLUME_FTS)
+ok = code == 0 and "WARNING" not in message
+fails += not ok
+print(("PASS" if ok else "FAIL"), "synthetic open-whole-volume-fts-no-warning", f"-> code={code} message={message!r}")
+
 if fails:
     print(f"{fails} failure(s)")
     sys.exit(1)

@@ -22,6 +22,17 @@ beside the ciphertext, which Pipeline 3's selection rule ranks above a fresh cry
 novelty. A B5 brief opens from that combined ranking, not from a bare re-run of the scout pass that produced
 ranks 1-41.
 
+**Diff the ranking against the solver repos before writing it, not after a worker discovers staleness
+(26 Sept 2026, RETRO-2026-09-26b).** SCOUT-RERANK ranked Lope Hurtado #2 as "3 untested sibling records"; 2 of
+the 3 were already read in Bourdeau's own repo at a commit (fc0c9e8, 25 Sept 18:14 CDT) that predated the ranking
+by hours (bLOP, USD 2.00 spent finding this live). Rows 5-9 (an older scPOOL table) were all already keyed or read
+by Bourdeau too (bPOOL0, USD 2.45): the scPOOL table was built from DECODE's non-decrypted flag, which does not
+track Bourdeau's repository at all. Run `tools/solver_repo_diff.py BOURDEAU_CLONE AYMELOGLU_CLONE` (fresh shallow
+clones, deleted after -- scout.md already names this for a full scout pass) against every candidate row before it
+is written into any ranked QUEUE.md section, whether that section comes from `scout.js`, a re-rank job, or a
+backlog-scoring job (bSCORE-style): drop or downgrade any row the diff shows already substantially read, and cite
+the diff's fraction_read figure for any row it keeps.
+
 Intake step (added 25 Sept 2026 18:14 UTC by LANE B2 after QA/2026-09-25-1740.md failure 3: bMOU, bKAL, bDEB and bPOL ran transcription/IC work with no check-solved verdict on file). Before the cheap test: if `ciphers/<slug>/NOTES.md` exists, run `python3 tools/intake_gate_check.py <slug>` and paste its output into your NOTES.md; exit 0 lets you proceed. Otherwise (no folder, or a nonzero exit) do a minimal check-solved first and write its verdict as NOTES.md lines 1-2 in the gate's format (status word on line 1; line 2 names what was read, with dates): the Cipherbrain post and its comment thread already on disk under sources/schmeh/, a grep of both solver repositories for the item (clone shallow, grep, delete), and one OpenAlex plus one Semantic Scholar query for the item's name with 'solved' or 'decrypted'. Re-run the gate; proceed only on exit 0, else stop with a `blocked` line and the reason. This step counts inside the cap.
 
 Common tail (paste into every brief):

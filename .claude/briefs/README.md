@@ -49,6 +49,11 @@ back, in six files (cx, cx2, yx, zx, zx2, ax) before anyone caught it by eye. Ru
 `python3 tools/tests/test_common_briefs.py` after copying a COMMON file forward and before committing it; it
 exits non-zero and names the file if any paragraph appears twice.
 
+**Carving out a partial scope on a gate failure (26 Sept 2026, LEARN-2026-09-26-0058 item 4).** A job brief may
+carve out a partial scope (known-plaintext alignment only, grade C, no decode of unprinted text) when
+`tools/intake_gate_check.py` blocks a target, with the gate failure flagged in ROOM.md, rather than stopping the
+whole worker (the AX-5799 pattern).
+
 ## The consolidator pattern, for standing campaigns
 
 A target that has run more than two `tools/family_run.py` families is a standing campaign, not a one-shot job, and

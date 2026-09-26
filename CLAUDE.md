@@ -76,6 +76,29 @@ session and every subagent, cloud or local.
    this document's length and register, not necessarily the key -- "judge cannot decide," not a negative. This is
    conditional (few documents carry their own period gloss) and distinct from the pt18/es17c lessons above, which
    calibrate the corpus in general; this calibrates against a real text from the same leaf.
+   A held-out classification gate dominated by one class inflates its own shuffle floor toward the same class,
+   the same way a blended fold rate can hide what a per-fold breakdown would show (the es17c/pt18 paragraphs
+   above, extended from a corpus fold to a held-out map gate). Lesson of 26 Sept 2026 (AX-NAMES, lodewijk-van-
+   nassau-1573-74): a 51-code name map, 24 of 36 codes NULL, read 83.3% on a held-out letter against a 40.4%
+   shuffle floor -- a 43-point margin that looks like a clear pass -- but the shuffle floor itself sits near
+   ceiling on the NULL class alone (73.0%, since most shuffled guesses land on the majority class by chance);
+   the worker's own per-class breakdown (NULL 81.8 vs shuffle 73.0, word class N=1 untestable) shows the real
+   margin is far thinner than the blended number, and the map was correctly re-gated on known-answer codes
+   (AX-NAMES2) before further use. A held-out gate whose classes are unbalanced needs a per-class breakdown or a
+   known-answer control, not the single blended accuracy figure, before it licenses anything.
+   A control that cannot vary on the same axis as the manipulation a test is measuring passes (or fails)
+   identically to the target by construction, and licenses nothing either way -- distinct from a control that
+   legitimately has no discriminating power (bMAT2's two-context M/U rule, 26 Sept 2026, which genuinely could
+   have differed and did not). Two instances the same window (26 Sept 2026): `bCAS` (castelcicala-1816) ran a
+   per-token substitution coverage figure against a shuffled-*order* control -- coverage from a per-token key
+   cannot depend on token order, so the control was identical by construction, "the brief's error, not the
+   worker's" per its own NOTES.md; `AX-5799` (lodewijk-van-nassau-1573-74) ran a run-length-on-keyed-positions
+   gate against a shuffled-*value* control -- the control cannot change which positions carry a long run, only
+   the values at those positions, so a 0%-vs-0% "match" tested nothing ("a key-reuse control must be able to
+   fail differently from the target; a coverage-only gate is not one," AX-5799's own lesson). Before running a
+   family or a gate, check that the named control's number *can* differ from the target's for the specific
+   statistic being computed -- if the manipulation the control applies (order, value, key) is orthogonal to the
+   statistic (coverage, position, count), the control cannot fail and the test is a non-test, not a negative.
 4. **Grade every claimed reading per token:** H read from a key source, C from known plaintext, S cryptanalytic
    with a control, M uncertain, I inferred or repaired. Give the counts. No H or C means "cryptanalytic result".
 5. **Status vocabulary** in the first lines of every NOTES.md: `open`, `partial`, `solved`, `closed-negative`,

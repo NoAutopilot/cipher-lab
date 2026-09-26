@@ -71,3 +71,10 @@ years, and the day +-1), the sender's and recipient's names and the place, and r
 *Mémoires-journaux* (Michaud-Poujoulat t.6) at pp.316-320 and wrote "not printed"; the letter is in clear at pp.238-239
 of the same volume, dated one day earlier. `tools/print_check.py`'s phrase search also missed it on OCR noise; a
 single-word grep found it.
+
+**Second occurrence, one day later (matignon-mayenne-1586, 26 Sept 2026, V7-QA5).** An IA full-text search that
+queries only one term (a place name) and stops at zero hits is not the whole-volume sweep this rule already asks
+for: search the date (o.s./n.s., day +-1), both correspondents' names and the place, as separate queries, and log
+each one's hit count. `tools/intake_gate_check.py` now prints a non-blocking WARNING (not a `blocked` verdict) when
+a citation's full-text-search phrase carries only one quoted term -- treat that warning as a to-do before the
+citation is trusted for an AUDIT.md/N-class step, not as license to leave it.

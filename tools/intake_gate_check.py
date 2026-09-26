@@ -106,6 +106,35 @@ NEGATIVE_RE = re.compile(
     re.IGNORECASE,
 )
 
+# Soft warnings (26 Sept 2026, RETRO-2026-09-26b): these do not change the exit code (check-solved.md's own
+# nuance -- a reused search or a narrow one that blocked nothing is a QA finding, not always a gate failure --
+# stays a human/verifier call), but both shapes have now been flagged once each by V7-QA5 in the same sweep, one
+# of them (a single-quoted-term full-text search) a second occurrence of the V7-CL349 failure the whole-volume
+# rule already exists for (matignon-mayenne-1586, 26 Sept 2026: searched only "Bellebourg", not the date or
+# either correspondent's name).
+REUSED_SEARCH_RE = re.compile(
+    r'\bnot re-?run\b|\bre-?cited\b|\bcost discipline\b|\breusing\b.{0,20}\bsearch\b',
+    re.IGNORECASE,
+)
+SINGLE_TERM_FTS_RE = re.compile(
+    r'\b(?:full-text search|fts|searched)\b[^.]{0,80}\bfor\b\s+"[^"]+"\s+(?:returns?|found|gave)',
+    re.IGNORECASE,
+)
+
+
+def soft_warnings(context):
+    """Non-blocking flags for check-solved.md corner-cuts V7-QA5 found 26 Sept 2026 -- printed alongside the
+    exit-code message, never changing it."""
+    out = []
+    if REUSED_SEARCH_RE.search(context):
+        out.append("WARNING: citation reads as a reused/re-cited search, not one this worker independently "
+                    "opened (check-solved.md: quoting another party's summary does not satisfy the citation)")
+    if SINGLE_TERM_FTS_RE.search(context) and context.count('"') <= 2:
+        out.append("WARNING: full-text-search citation names only one quoted term -- check-solved.md's "
+                    "'Whole volume, not one page range' rule (V7-CL349) asks for the date and both "
+                    "correspondents' names alongside any place name")
+    return out
+
 
 def find_verdict(lines):
     """Return (word, line_index) for the effective verdict line, or (None, None).
@@ -183,7 +212,10 @@ def check(notes_text):
                 f"CLAUDE.md's Pipeline intake gate says this must read `blocked` instead"
             )
     if has_citation_evidence(context):
-        return 0, f"{word} (line {idx + 1}) -- edition/page or full-text-search citation found within {CONTEXT_LINES} lines"
+        msg = f"{word} (line {idx + 1}) -- edition/page or full-text-search citation found within {CONTEXT_LINES} lines"
+        for w in soft_warnings(context):
+            msg += f"\n{w}"
+        return 0, msg
     return 1, (
         f"{word} (line {idx + 1}) with no standard-edition citation (page number or full-text-search phrase) "
         f"within {CONTEXT_LINES} lines -- CLAUDE.md's Pipeline intake gate says this must read `blocked` instead"
