@@ -22,3 +22,14 @@ items is otherwise invisible until a breadth worker is briefed to run the test a
 what the row claims. QUEUE.md row 27 (armstrong-madison-1808) named "Krajcovic's crib" against "the 15 Feb letter
 to Jefferson"; TOMO-REPLY (26 Sept 2026) found this broken on both halves when it went to use the citation, after
 it had already reached a breadth brief.
+
+**Score a solver repository's own stated next step as a duplicate-effort penalty (26 Sept 2026, RETRO-2026-09-26f;
+LEARN-2026-09-26-0906 item 3).** Where `tools/solver_repo_diff.py` or check-solved.md's own check finds that a
+candidate is a solver repository's own explicitly stated next step (not just a target it has already substantially
+read), score it down against the queue's other candidates rather than scoring it in on schedule -- name the
+overlap in the row (NX-E318, esp318-sicilia-1503: Bourdeau's own README named this exact letter as his Next step 1).
+
+**Re-read the candidate's own current NOTES.md before ranking (26 Sept 2026, LEARN-2026-09-26-0906 item 2).**
+Also re-read each surviving candidate's own current NOTES.md (not just POOLS.tsv's summary column or the scout
+table that nominated it) before ranking -- POOLS.tsv `read_by`/`copy_free_share` columns go stale as fast as the
+solver repos do (SCOUT-OWN-2026-09-26.md, two rows caught this way in one pass).

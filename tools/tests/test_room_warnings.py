@@ -38,6 +38,31 @@ def test_warnings():
     assert W("w", "done: for LANE V6: reading ready, grade H 120/130") == []
     assert W("w", "done: shell variable $HOME not expanded") == []
 
+    # "please change"/"still says" with no commit id -> WARNING
+    CITE = ("WARNING: 'please change'/'still says' with no commit id -- name the commit you read the file "
+            "at (`git log -1 --format=%h -- <path>`) or grep the exact old text, so a reader can tell a "
+            "live ask from a stale one (RETRO-2026-09-26f, parent.md 'Cite what you read')")
+    assert W("w", "for LANE B: please change status.json's lodewijk grade text") == [CITE]
+    assert W("w", "flag: status.json still says N2 for lodewijk") == [CITE]
+    # same, but with a 7-hex commit id present -> no warning
+    assert W("w", "for LANE B: please change status.json (read at a1b2c3d)") == []
+    assert W("w", "flag: status.json still says N2 (as of 9f8e7d6c)") == []
+    # no "please change"/"still says" at all -> no warning from this check
+    assert W("w", "flag: status.json needs a look") == []
+
+    # typed clock time far from the line's own stamp -> WARNING; near or absent -> none
+    import time as _time
+    frozen = _time.struct_time((2026, 9, 26, 7, 37, 0, 5, 269, 0))
+    old_gmtime = room.time.gmtime
+    room.time.gmtime = lambda *a: frozen
+    try:
+        w = W("parent 7g", "handoff: took over from 7f at 07:41 UTC 26 Sept 2026 (clock read)")
+        assert any(s.startswith("WARNING: signal text says 'at 07:41 UTC'") for s in w), w
+        assert W("parent 7g", "handoff: took over at 07:38 UTC (clock read)") == []
+        assert W("parent 7g", "handoff: took over (clock read)") == []
+    finally:
+        room.time.gmtime = old_gmtime
+
     # main() prints the warning and still appends, with push mocked so nothing is committed
     calls = []
     with tempfile.TemporaryDirectory() as d:
@@ -57,7 +82,7 @@ def test_warnings():
         lines = open(tmp).read().splitlines()
         assert len(lines) == 2 and lines[1].endswith("| LANE T worker | done: test 1 negative on target-a"), lines
         assert calls == [("ROOM: done: test 1 negative on target-a", ["ROOM.md"])], calls
-    print("ok room warnings: 17 cases, append still happens, push mocked")
+    print("ok room warnings: 24 cases, append still happens, push mocked")
 
 
 if __name__ == "__main__":

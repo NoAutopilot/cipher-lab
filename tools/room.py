@@ -276,6 +276,8 @@ def digest(a):
 
 _UNSET = object()
 ROLE_SESSION_RE = re.compile(r"\bsession_[0-9A-Za-z]+\b")
+COMMIT_ID_RE = re.compile(r"\b[0-9a-f]{7,40}\b")
+TYPED_TIME_RE = re.compile(r"\bat (\d{1,2}):(\d{2})\s*UTC\b")
 
 
 def _own_session_id():
@@ -302,7 +304,17 @@ def warnings_for(role, signal, own_id=_UNSET):
       set): the role field is self-referential by convention, so any session id it names should be this
       session's; DECODE-ACCESS's done line named 7e's id instead of its own (26 Sept 2026, LEDGER.md), which this
       would have caught at append time. `own_id` is for the offline test only; real callers get it from the
-      environment."""
+      environment.
+    - a "please change" or "still says" ask with no 7-hex-or-longer commit id in the signal text (26 Sept 2026,
+      RETRO-2026-09-26f): a shared-file change request should name the commit it read the file at (`git log -1
+      --format=%h -- <path>`), or grep the exact old text, so a reader can tell a live ask from a stale one
+      without re-deriving it by hand. LANE V9's 08:53 "please change" line asked the parent for a status.json edit
+      already made and pushed at 08:12; the parent spent a correction line at 09:03 finding this out for itself.
+    - a typed clock time ('at HH:MM UTC') in the signal text that disagrees with the line's own auto-generated
+      stamp by more than a couple of minutes: the stamp is machine-generated from time.gmtime() at append time,
+      so a typed time is either redundant (matches) or wrong (an estimate written from memory) -- 26 Sept 2026,
+      parent 7g's own take-over line wrote 'at 07:41 UTC' against its own 07:37 stamp and needed a second line to
+      correct it."""
     if own_id is _UNSET:
         own_id = _own_session_id()
     w = []
@@ -321,6 +333,18 @@ def warnings_for(role, signal, own_id=_UNSET):
         if named and own_id not in named:
             w.append(f"WARNING: role names {named[0]}, not this session's own id ({own_id}) -- a role field is "
                       f"self-referential; check before appending (DECODE-ACCESS, 26 Sept 2026)")
+    if re.search(r"please change|still says", sig, re.I) and not COMMIT_ID_RE.search(sig):
+        w.append("WARNING: 'please change'/'still says' with no commit id -- name the commit you read the file "
+                  "at (`git log -1 --format=%h -- <path>`) or grep the exact old text, so a reader can tell a "
+                  "live ask from a stale one (RETRO-2026-09-26f, parent.md 'Cite what you read')")
+    m = TYPED_TIME_RE.search(sig)
+    if m:
+        typed_minutes = int(m.group(1)) * 60 + int(m.group(2))
+        stamp_minutes = int(time.strftime("%H", time.gmtime())) * 60 + int(time.strftime("%M", time.gmtime()))
+        if abs(typed_minutes - stamp_minutes) > 2:
+            w.append(f"WARNING: signal text says 'at {m.group(1)}:{m.group(2)} UTC' but this line's own stamp is "
+                      f"{time.strftime('%H:%M', time.gmtime())} UTC -- the stamp is authoritative, drop the typed "
+                      f"time or use '(clock read)' with no digits (26 Sept 2026, parent 7g takeover line)")
     return w
 
 

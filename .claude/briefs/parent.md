@@ -126,6 +126,14 @@ it in place from its own `get_session` read on that lane orchestrator's session 
 row for the lane records both figures (the self-ledger and the parent's `get_session` reading) rather than
 overwriting one with the other.
 
+**Cite what you read, not just what to change (26 Sept 2026, RETRO-2026-09-26f).** A ROOM.md line asking another
+lane or the parent to change a shared file (status.json, STATUS.md, a target's key.tsv) names the exact text or
+line it read and, where practical, the commit it was reading at (`git log -1 --format=%h -- <path>`) --
+`grep <the old text>` is enough when a commit hash is not to hand. A reader can then tell in one command whether
+the ask is still live or already stale, instead of re-deriving that by hand. LANE V9's 08:53 line asked the parent
+to change status.json's lodewijk grade text to match AUDIT.md A4's withdrawal; the parent had already made that
+exact change and pushed it at 08:12, and had to spend a correction line at 09:03 finding this out for itself.
+
 ## Handing over
 
 Naming and model (owner, 25 Sept 2026): every parent session is created on `claude-fable-5-1` and titled "Orchestrator N", N one more than the current parent's number (7c is Orchestrator 4, 7d is Orchestrator 5); the internal 7a/7b/7c labels stay in the files for lineage, the session title is the number. Lane orchestrators keep their lane names.
@@ -148,3 +156,8 @@ Before writing the handoff, the outgoing parent runs `python3 tools/orphan_check
 (duty 3a) and pastes a clean result into the hand-over line; a non-clean result is acted on first, not handed
 off unresolved. The successor runs the same command as its first duty after the reading list, before taking
 over the trigger.
+
+**A lane cannot archive itself (26 Sept 2026, RETRO-2026-09-26f).** A lane orchestrator that closes retitles its
+own session ARCHIVED and self-ledgers (per "Self-ledger cost" above), but does not call `archive_session` on its
+own session id; the parent runs `archive_session` on it at the parent's next check-in, per duty 3a's orphan check
+(owner-account parent's ROOM line 09:42, AX2's close).

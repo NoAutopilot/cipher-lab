@@ -64,7 +64,10 @@ overrides with a long-format TSV (header with a `sign` column, DOT/COL rows drop
 (Random(SEED).shuffle, redistributed back into the original message lengths, so N/K/design are unchanged) before
 the target solve; the control is unaffected (still the ordinary matched-corpus control). This is the false-positive
 floor for a gate-plus-judge PASS on garbage of the same shape (CLAUDE.md rule 3); the decode file and row are
-marked shuffle=SEED so they never collide with the real target's own row.
+marked shuffle=SEED so they never collide with the real target's own row. A judge PASS on this shuffled decode
+voids the judge as a gate for this family at this N (CLAUDE.md rule 3; ARM-C1, 26 Sept 2026: the en18 judge
+PASSed a nomenclator decode of shuffled armstrong-madison-1808) -- run --shuffle-target before trusting a PASS
+on the real target as a gate.
 Exit codes: 0 run complete (gate met, or --control-only); 3 CONTROL BELOW GATE (control row written, no target);
 2 bad arguments (a --label carrying a rule 10 word: solved, new, first, unpublished).
 The row never carries a decode; the decode is in the families/ file. The tool never writes the words solved,

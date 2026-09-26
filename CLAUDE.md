@@ -76,6 +76,9 @@ session and every subagent, cloud or local.
    this document's length and register, not necessarily the key -- "judge cannot decide," not a negative. This is
    conditional (few documents carry their own period gloss) and distinct from the pt18/es17c lessons above, which
    calibrate the corpus in general; this calibrates against a real text from the same leaf.
+   Before a judge PASS is used as the gate for a solver family, score that family's own decode of the *shuffled*
+   target through the same judge; a PASS on that shuffled decode voids the judge as a gate for that family at
+   that N (ARM-C1, 26 Sept 2026: the en18 judge PASSed a nomenclator decode of shuffled armstrong-madison-1808).
    A held-out classification gate dominated by one class inflates its own shuffle floor toward the same class,
    the same way a blended fold rate can hide what a per-fold breakdown would show (the es17c/pt18 paragraphs
    above, extended from a corpus fold to a held-out map gate). Lesson of 26 Sept 2026 (AX-NAMES, lodewijk-van-
@@ -112,6 +115,25 @@ session and every subagent, cloud or local.
    control before running the target (Usage item 8) -- a code attested only on a unit whose own control tied or
    failed is held pending more occurrences or corroboration from a unit that cleared, not merged as equally
    supported.
+   A second (or third) attempt at an unchanged approach -- the same family, the same alignment method, the same
+   scoring tool -- that changes only the one knob the re-brief bet on and still fails its own gate, without every
+   number moving together toward it, is evidence the approach is the limit, not the setting; it is logged
+   "untestable [by this method/tool] at this N/length" (or "untested-by-this-tool", not refuted) and the next
+   attempt needs a genuinely different instrument or new material, not a further tuning of the same knob. Three
+   shapes this applies to, all from the same 26 Sept 2026 window (RETRO-2026-09-26f, LEARN-2026-09-26-0906 item 1):
+   (a) a family control that moves the *wrong* way after the re-brief's own bet (hessen-1824's running_key: 0.372
+   on an era-mismatched corpus, then 0.331 -- lower -- on a purpose-built era-matched corpus at 2.5x the beam;
+   bHCP2/bHCP3); (b) a NEAR row's named next step, re-run three times at increasing sophistication (a
+   transcription fix, then a pre-registered gate) with every fix genuinely correcting something real, yet the
+   gate fails all three times (matignon-mayenne-1586's f.78v/f.79r alignment: 1f/1g/1h, 23/25 high-confidence
+   answers right pooled but the registered gate FAILs every seed) -- the row's "what would settle it" cell then
+   names new material (more ciphertext, a different leaf) or an owner-side step, not a fourth pass at the same two
+   leaves, without weakening rule 5 (the target stays `partial`, never `closed-negative`, either way); (c) a tool
+   whose own known-answer control fails three times on the same hypothesis, even after a real fix between
+   attempts (AX2-4612S/S2/S3's `key_repair.py`: null-false 100->53->29, but known-answer recovery 0.000->0.625-
+   >0.458 and bigram 3/6->0/2, never all three numbers above gate together) -- retired for that hypothesis, logged
+   in HYPOTHESES.md as "untested-by-this-tool" (not refuted), and not re-briefed against the same hypothesis
+   without a different instrument.
 4. **Grade every claimed reading per token:** H read from a key source, C from known plaintext, S cryptanalytic
    with a control, M uncertain, I inferred or repaired. Give the counts. No H or C means "cryptanalytic result".
    Two H-grade period decipherments that disagree on one code are a data conflict, not a transcription error to

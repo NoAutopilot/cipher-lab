@@ -58,6 +58,16 @@ quote its sentence about that letter verbatim in the verdict before writing "ope
 (M9, fr.2996 Morvillier): the worker had Tomokiyo's page open and still wrote "open", though the page says
 Lasry broke that very letter in 2023 (RETRO-2026-09-24 proposal 3).
 
+**Stated next step, not just fraction read (26 Sept 2026, RETRO-2026-09-26f; LEARN-2026-09-26-0906 item 3).**
+Beyond checking whether a solver repository has already substantially read the target
+(`tools/solver_repo_diff.py`'s `fraction_read`), grep that repository's own planning text for this target -- a
+README, a profile note, or a "next"/"todo"/"planned" line naming the same sender, date or shelfmark -- before the
+target is scored or promoted. A target that is a solver repository's own explicitly stated next step, with source
+material already in that repository's hands, is a duplicate-effort risk: name it as such in the verdict sentence
+and weigh it against the queue's other candidates (Pipeline 3's expected-value selection rule) rather than
+promoting it on schedule. NX-E318 (esp318-sicilia-1503) found this only after check-solved and the intake gate had
+both already passed the target through, by reading Bourdeau's own repository text, not a tool.
+
 For a letter from the Willem van Oranje database (WVO, resources.huygens.knaw.nl/wvo), read the record's
 Brongegevens line before writing a verdict: code GPA means printed in Groen van Prinsterer's Archives (GPAS its
 Supplément), JC means Japikse's Correspondentie. Open the cited page and check whether the cipher passage is printed

@@ -89,3 +89,15 @@ applied unchanged, and three named cycle-3 briefs written from it.
   11-17% against the same-window `get_session` figure this way (LANE B7 5.55 vs 6.67; LANE V8 6.91 vs 7.70). The
   parent's own ASSIGNMENTS done row for the lane records both the lane's self-ledgered figure and the parent's own
   `get_session` reading, replacing the self-ledgered figure in place rather than duplicating the row.
+- **A second attempt at an unchanged approach is a non-test (26 Sept 2026, RETRO-2026-09-26f; LEARN-2026-09-26-0906
+  item 1).** A re-brief that changes only the one knob it bet on, after a family, alignment method or tool already
+  failed its matched control, and the numbers do not all move together toward the gate on the second try, means the
+  approach is the limit, not the setting: log it "untestable [by this method/tool]" or "untested-by-this-tool" (not
+  refuted) and require a genuinely different instrument or new material before re-briefing the same one a third
+  time. See CLAUDE.md rule 3 (hessen-1824 bHCP2/bHCP3, matignon-mayenne-1586 1e-1h, AX2-4612S/S2/S3).
+- **Cite what you read.** Any "please change X" line to another session names the exact old text (or a commit
+  hash) it read, so a reader can tell a live ask from one the target already overtook without re-deriving it by
+  hand (parent.md's own "Cite what you read" paragraph, 26 Sept 2026).
+- **A lane cannot archive itself (26 Sept 2026, RETRO-2026-09-26f).** A lane orchestrator that closes retitles its
+  own session ARCHIVED and self-ledgers, but does not call `archive_session` on itself; the parent runs
+  `archive_session` on it at the parent's next check-in (owner-account parent's ROOM line 09:42, AX2's close).
