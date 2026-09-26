@@ -114,6 +114,13 @@ session and every subagent, cloud or local.
    supported.
 4. **Grade every claimed reading per token:** H read from a key source, C from known plaintext, S cryptanalytic
    with a control, M uncertain, I inferred or repaired. Give the counts. No H or C means "cryptanalytic result".
+   Two H-grade period decipherments that disagree on one code are a data conflict, not a transcription error to
+   settle by majority: record which letters (sender, recipient, direction, date) support each value before merging.
+   Lesson of 26 Sept 2026 (AX2-172, lodewijk-van-nassau-1573-74): code 172 read 'le Conte Jean' in the 4614
+   decipherment and 'Lumbres' three times in 7206's; the name codes above 145 split into two lists by direction of
+   correspondence (brothers to Willem vs Willem to brothers), then 5801's own gloss cut across even that. A code with
+   conflicting H support is graded M in any letter whose direction or date does not match the supporting witness, and
+   the conflict is logged in HYPOTHESES.md with the witnesses, never resolved by the more frequent value alone.
 5. **Status vocabulary** in the first lines of every NOTES.md: `open`, `partial`, `solved`, `closed-negative`,
    `found-solved`, `blocked`, `offline-only`. Nothing else.
    Near solves (25 Sept 2026, UPDATES.md): a target where a solver beat its matched control by a reproducible margin, or
@@ -681,7 +688,7 @@ policy blocks it, in which case say so and stop, since no route above will help.
 
 Once a series is identified as useful (a ledger, a volume, a cipher book), fetch all of it once and record the
 manifest (URLs, ids, sizes) in the target folder, so later workers do not refetch. Keep committed images under
-30 MB per folder; for more, keep the manifest and a sample and note where the rest can be re-fetched.
+30 MB per folder; for more, keep the manifest and a sample and note where the rest can be re-fetched. A folder already over the line is shrunk the way AX2-SHRINK did it on 26 Sept 2026 (lodewijk-van-nassau-1573-74, 80 to 24 MB): an `images_manifest_full.tsv` with a `cited_by` column (which NOTES/AUDIT line uses each file), a `regen_images.sh` that re-derives every full page and every recorded crop from the source, a byte-identical regen test on a sample before any deletion, uncited full pages deleted, cited pages converted to JPEG at the same dimensions.
 
 ### Image and catalogue hosts (table, 25 Sept 2026)
 

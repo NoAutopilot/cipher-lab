@@ -748,3 +748,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T06:50Z	session_01A7MeWWoh7yhAJxtApKaDvD	LEARN-6	done 1.63, ledgered Q, retitled ARCHIVED, archived by 7f	LEARN-2026-09-26-0616.md
 2026-09-26T06:50Z	session_01VPSASn5w5VX93GbHgLkGke	RETRO-APPLY-P	done 4.54, ledgered D, retitled ARCHIVED, archived by 7f	7 of 7 applied
 2026-09-26T06:50Z	session_011gEKqukZAxE6FjtQCzsUQ8	LANE ARM orchestrator (Opus, cap 100)	Armstrong to Madison 1808 standing campaign; adopts TOMO-REPLY	brief 2026-09-26-lane-arm-orchestrator.md; parent 7f; owner decision 06:40
+2026-09-26T06:51Z	session_01N3zZKK2qku7oQb42Kc8wb2	LANE B8 orchestrator (Opus, cap 25)	B7 handoff items 1-6 (szembek follow-up, malsburg pool, matignon 1f, riksarkivet counts, siena, hessen-1824)	brief 2026-09-26-lane-b8-orchestrator.md; parent 7f
