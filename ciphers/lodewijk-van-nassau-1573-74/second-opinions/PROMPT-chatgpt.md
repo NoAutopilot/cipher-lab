@@ -43,3 +43,10 @@ readings of 4610/4611/4612/4616. The readings were revised on 26 Sept 2026 (key_
 roi d'Espagne, Hollande, Pfaltzgraf, duc d'Albe, France, Harlem -- valued from contemporary glosses or Groen's print; see
 AUDIT.md "Revision log" and "V8 audit"). Classes unchanged (N4, N4, N3, N4). WVO 5797 (22 Oct 1573, Groen IV CDXLIV) is
 not covered by this prompt; if re-queued, quote AUDIT.md V8.6's safe sentence for it, not an earlier wording.
+
+Note (verifier V8-NA172, 26 Sept 2026): a third 5797 blank is now classed. If re-queued, add AUDIT.md V8C.4's safe
+sentence: "In the same letter, the one-code blank Groen leaves before 'zeuget diesen morgen Kölln' ('... goes this
+morning to Cologne') is valued as a name code, 'le Conte Jean' (Count Johann of Nassau), from the contemporary
+decipherment of the sibling letter WVO 4614, the blank located with our own letter table; the sign in 5797 is read at a
+single pass (grade M); no prior decipherment of this blank located (N4). That Count Johann negotiated with the Elector
+of Cologne in October 1573 is already known (Bezold 1882; Glawischnig 1973)."

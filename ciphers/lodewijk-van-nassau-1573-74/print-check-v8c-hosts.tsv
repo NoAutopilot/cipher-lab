@@ -1,0 +1,6 @@
+host	requests	status
+api.crossref.org	8	ok
+api.openalex.org	8	ok
+archive.org	2	ok (some errors)
+be-api.us.archive.org	16	ok
+www.googleapis.com	8	ok

@@ -1808,7 +1808,7 @@ the M being decode_key's single-pass transcription grade on that sign), **28 in 
 |---|---|---|---|---|
 | p5_spot5 | 131.123.173 | NULL/C, l/M (dual reading), ?/U | "ist gestern zue ghen gezogen" | no (173 no row) |
 | p5_spot3 | 154.124.144.134 und 161.126.136.146 | herzogvonsachsen/C, NULL/C x3, landgraf/H, NULL/C, uingt/M, ?/U | "Bey dem Herzog von Sachsen und ist [w]illens" | yes, 161 Landgraf H (unchanged) |
-| p6_spot4 | 172 zeuget ... 100.155 | **lecontejean/M** (value H, sign single-pass M), ... h/I, ?/U | "zeuget diesen morgen Kölln der hofnung" | **yes, new in v3: [le Conte Jean] zeuget** -- value from 4614, a French letter of Lodewijk's; in 5797 (Jan and Lodewijk jointly) it would name Count Jan himself; candidate for the verifier |
+| p6_spot4 | 172 zeuget ... 100.155 | **lecontejean/M** (value H, sign single-pass M), ... h/I, ?/U | "zeuget diesen morgen Kölln der hofnung" | **yes, new in v3: [le Conte Jean] zeuget** -- value from 4614, a French letter of Lodewijk's; in 5797 (Jan and Lodewijk jointly) it would name Count Jan himself; candidate for the verifier (V8-NA172, 26 Sept 2026: "new" here means new relative to key_full v2, not a novelty claim; classed N4, token grade M, AUDIT.md "V8 audit: 5797 p6_spot4 (172)") |
 | p7_spot2 | 153.146.137 | pfaltzgraf/H, ?/U, NULL/C | "helt sich wol und thut in warheit viel" | yes, 153 Pfaltzgraf H (unchanged) |
 | p7_spot6 | 182.128.133.142 | ?/U, NULL/M, NULL/C, ?/U | "ist willig und urbietig" | no (182 no row) |
 | p8_spot7 | 156.127.135.144.129 | ?/U, NULL/C, NULL/C, NULL/C, NULL/**M** (129 dual) | "begert meiner" | no (156 no row) |

@@ -21,3 +21,13 @@ Sachsen und Landtgraue ist willens
 Sachsen und Landgraue ist willens
 Sachsen und Landgrave ist willens
 Herzog von Sachsen und Landgraf
+# V8C (V8-NA172, 26 Sept 2026): p6_spot4, 172 = le Conte Jean rendered in period German; run into print-check-v8c.tsv
+# control: Groen's clear print at p6
+zeuget diesen morgen Kölln der hofnung
+Graf Johann zeuget diesen morgen
+Graff Johan zeuget diesen morgen
+Graue Johan zeuget diesen morgen
+Grave Johann zeucht diesen morgen
+Conte Jean zeuget diesen morgen
+mein bruder zeuget diesen morgen Kölln
+Graf Johann zeucht gen Köln

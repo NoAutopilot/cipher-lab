@@ -944,3 +944,114 @@ Requests (this session): archive.org 31 (advancedsearch 15, metadata 8, djvu 8; 
 >= 1.6 s apart); be-api.us.archive.org 10; www.googleapis.com 16 (+10 inside print_check); api.openalex.org 12;
 api.crossref.org 2 (1 x 429, 1 answered); api.semanticscholar.org 4 (2 x 429, 2 answered); api.archives-ouvertes.fr 1;
 www.persee.fr 1. No subagents.
+
+## V8 audit: 5797 p6_spot4 (172) (26 Sept 2026)
+
+Verifier V8-NA172 for LANE V8 (session_01YRuw3TCf7d1w85DLmYNnw4), 26 Sept 2026, 05:10-05:25 UTC (`date -u` read). Separate
+session from the solver lane (AX-COMP, AX-MERGE3, AX-REDERIV2) and from both earlier verifiers of this letter (V8-NA5797,
+V8-NA5797-2). Nothing decoded, aligned or changed in any key, ciphertext, decode or reading file.
+
+Claim under audit: key_full v3 (AX-MERGE3, 04:07 UTC) gives 172 = le Conte Jean from the contemporary decipherment of the
+sibling letter WVO 4614; with it 5797 p6_spot4 reads "[le Conte Jean] zeuget diesen morgen ... der hofnung".
+
+### V8C.1 Verdict
+
+| item | what is read | prior plaintext | prior decipherment | class | key |
+|---|---|---|---|---|---|
+| 5797 p6_spot4, code 172 | "[172 = le Conte Jean, i.e. Count Johann (Jan) of Nassau] zeuget diesen morgen Kölln der hofnung die sachen ... dahien zu handlen das er [the Elector of Cologne] sich ... vom Herzog von Alba absondern ..." | **no** for the name: Groen IV CDXLIV p.225 (dbnl text `groen/groen_IV_CDXLIV.txt` line 252) prints "soll. zeuget diesen morgen Kölln der hofnung", the subject left blank; not found in any source below | none located | **N4** (no prior decipherment located) | `period` (172 from the 4614 companion decipherment leaf); the table that locates the spot `ours` |
+
+Confidence: **moderate**, the same as A2 for the other two spots (Schmidt 1989 inside the book, Lossen, Der Kölnische
+Krieg I (1882) inside the book, CORE, and the Wiesbaden file STAW 171 C 368 not reached). `text: known` for the letter
+(N0), as before.
+
+Scope of the spot, stated exactly: Groen's blank at p6 is **one code wide**. The cipher at the spot is
+`172 | 58.85.38.95.82.35 (zeuget) | diesen morgen | 100.155 | der hofnung`; Groen prints every word of it except 172,
+including "Kölln" over 100.155 (our table reads 100 = h, I, and 155 unread, so our table does not reproduce Groen's
+"Kölln"; the word is Groen's, not ours). So 172 fills Groen's p6 blank in full -- unlike p5 and p7, where the blank is
+read in part -- but the *spot* in our reading is still read in part (155 unread, 95 dual-M). Safe wording: "the blank's
+one code valued", not "the passage deciphered".
+
+### V8C.2 Rule 4: is H right for 172?
+
+- **Value.** I read the 4614 companion decipherment crop myself (`images_wv2/crops_rederiv/04614_decipherment_p5_L06_zoom.jpg`):
+  "est party pour francfort. ou il trouvera mon frere. le Conte Jean lequel est allé pour entendre la charge du sieur
+  ...". And the cipher line (`images_wv2/crops_comp/04614_p1_L02.jpg`, third row): "... 84.24.82 **172** .111.81.16 ..."
+  -- the sign reads 172 cleanly to my eye; the transcription's M/"agree-flagged" on that sign is conservative, not a
+  doubt I can see. One clean period decipherment over a legible sign is a key source; V8.2 set the same precedent
+  for 153 (one clean gloss suffices). **H for 172 in key_full stands.**
+- **The token in 5797 is M, not H.** The 5797 sign at p6_spot4 pos 1 is single-pass (decode_key.py's downgrade), so
+  the reading carries **M** (as `reading_5797_full_tokens.tsv` already records). Any quotation says "[le Conte Jean]"
+  with that grade, not "read at H".
+- **Cross-correspondent transfer.** 4614 is Lodewijk's French letter; 5797 is a German letter of Jan and Lodewijk
+  jointly (a *minuut*). The p5/p7 values also come from a sibling (5550), so this is the lane's standing method, and the
+  nomenclator family is the same table. Consistency, not proof: (a) grammar -- "zeuget" (= zeucht, zieht) is third
+  person singular, so the blank's subject is one person, which a name fits; (b) sense -- the rest of the sentence
+  (Groen's clear text) is about winning the Elector of Cologne (Salentin von Isenburg) to leave Alba, marry, keep the
+  electorate and change religion (Groen's own n.(1): "L'Electeur de Cologne ... n'accomplit pas les autres parties de ce
+  triple projet"); (c) history -- Glawischnig 1973 (IA fts inside `niederlandekalvi0000glaw`, 2 queries) records "das
+  Gespräch JvN mit Salentin im Oktober 1573" and a letter "JvN an LvN über das Gespräch JvN mit Salentin im Oktober
+  1573" (STAW 171 C 368), and Bezold 1882 (IA `briefedespfalzgr01joha`, p.130, djvu text read) says "Die Verhandlungen
+  mit dem sehr ungeistlichen Kölner, Salentin von Isenburg, führten im Winter 1573 Johann von Nassau und Ehem". So
+  Count Johann setting out for Cologne on or about 22 Oct 1573 is what the independent literature leads one to expect.
+  One oddity, not a contradiction: a letter signed by Jan and Lodewijk naming Jan in the third person. A *minuut*
+  drafted by Lodewijk's side on the morning of Jan's departure fits it; Glawischnig's "JvN an LvN" letter about the
+  talk shows the two were apart soon after.
+- **"le Conte Jean" is French in a German letter.** The table value is a person code, not a phrase: the 4614
+  decipherer wrote it in his letter's language. A German reader of 5797 would render it "Graf Johann" (period
+  spellings Graff Johan, Graue Johan), possibly "mein bruder Graf Johann". That does change the phrase search: a
+  print of the passage would carry the German form, so V8C.3 searched the German renderings as well as the French.
+
+### V8C.3 Search log (new for this spot only)
+
+The families V8.4 and A2.3 logged (Groen both series and later fills, Gachard, Blok 1887/1889, Glawischnig, Kluckhohn,
+Bezold, Janssen, Heppe, Rommel, Rachfahl, WVO, Tomokiyo, solver repositories, Google Books, IA, OpenAlex, CrossRef,
+Semantic Scholar, HAL, Persée) are not repeated wholesale. JSTOR rows 88-91 were answered in the local runner's
+`jstor-runs/2026-09-26-0455.tsv` (branch `jstor-run/2026-09-26-0455`, PR 17), read here: rows 88 and 91 "no relevant hit",
+rows 89 and 90 context only (Schindling 1994, Rohls 2007), none about the letter.
+
+| family | status | method | result |
+|---|---|---|---|
+| Positive control, Groen's clear words at p6 ("zeuget diesen morgen Kölln der hofnung") | searched | `tools/print_check.py`, `print-check-v8c.tsv` | **found**: exact in Groen IV `archivesoucorre11pringoog` (djvu text) and ia-global 1 item (`dutch_nederlandse_boeken_archive`); not in `archivesoucorre03pringoog` (OCR) nor via Google Books -- the method finds this letter's print when it exists |
+| p6 with the name, 7 phrases: "Graf Johann / Graff Johan / Graue Johan zeuget diesen morgen", "Grave Johann zeucht diesen morgen", "Conte Jean zeuget diesen morgen", "mein bruder zeuget diesen morgen Kölln", "Graf Johann zeucht gen Köln" | searched | same run: 2 Groen IV copies, ia-global, Google Books (keyed, country=US), OpenAlex (keyed), CrossRef | **0 hits** in IA, Google Books and OpenAlex; CrossRef returns only relevance noise (dictionary entries "Graf, Johann", unrelated titles) |
+| Groen IV CDXLIV's own note at p6 | read | dbnl text, n.(1) [#499] | the note glosses the Cologne plan only; it does not name who went to Cologne and does not fill the blank |
+| What Count Johann did "this morning" about 22 Oct 1573 | searched | Glawischnig (IA fts, 2 queries); Bezold I (djvu text, 1 fetch, scratchpad); Google Books 2 queries (Lossen; Salentin + "Johann von Nassau" 1573 Köln) | Jan's talks with Salentin in Oct/winter 1573 are recorded (V8C.2); **no source quotes 5797 at p6 or names the subject of "zeuget"**; Bezold cites Prinsterer I.4, 339 and 342-4 (later letters), not 224-5 |
+| Lossen, Der Kölnische Krieg I (1882) | **snippet only** | Google Books `iRNlEQAAQBAJ` (2025 reprint, PARTIAL): Salentin "erbot, durch Johann von Nassau zu erkunden ..." | not on IA by creator search; the book's account of Oct 1573 not read inside. The one principal Salentin study this pass could not open; a person with the volume can check whether Lossen quotes CDXLIV p.225 and supplies the subject |
+| Kramer, Der Kölner Kurfürst Salentin von Isenburg (1937), Google Books `e24-AAAAMAAJ` | not reached | NO_PAGES | -- |
+| JSTOR | queued | 1 row appended (Salentin + Johann von Nassau + 1573 + Köln) | never blocks a class on its own |
+| CORE | not searched | CORE_API_KEY unset (key probe at session start) | -- |
+
+### V8C.4 Safe and unsafe sentences
+
+- **Safe (p6, add to V8.6):** "In the same letter, the one-code blank Groen leaves before 'zeuget diesen morgen Kölln'
+  ('... goes this morning to Cologne') is valued as a name code, 'le Conte Jean' (Count Johann of Nassau), from the
+  contemporary decipherment of the sibling letter WVO 4614, the blank located with our own letter table; the sign in
+  5797 is read at a single pass (grade M); no prior decipherment of this blank located (N4). That Count Johann
+  negotiated with the Elector of Cologne in October 1573 is already known (Bezold 1882; Glawischnig 1973)."
+- **Unsafe:** "first decipherment", "newly revealed that Count Johann went to Cologne" (the fact is in print), "the p6
+  passage is deciphered" (155 unread, "Kölln" is Groen's word), "read at grade H" for the 5797 token (it is M), or
+  any sentence that presents 172 as our value (it is the 4614 decipherer's).
+
+### V8C.5 Gate 2 for this spot
+
+The orchestrator decides; my argument is that **A2 does not cover this spot and a separate second audit is still
+needed, but a short one**. For: every family the p6 phrase touches through the letter itself (Groen all series and later
+fills, Gachard, Blok, Kluckhohn, Bezold, Janssen, IA, Google Books, open indexes, JSTOR rows 88-91) was searched by V8
+and A2 for the same letter, and a print of the p6 blank would sit in the same editions as the p5/p7 blanks, which they
+found blank. Against: the name opens a family neither audit targeted -- the Cologne literature (Lossen 1882-97, Kramer
+1937, the Salentin/Kurköln studies, the Wiesbaden file STAW 171 C 368 on Jan's talks) -- where a historian following
+Jan's October 1573 journey could quote CDXLIV p.225 and supply the subject by conjecture (an N1/N2 risk), and this pass
+reached Lossen and Kramer only by snippet. A second audit scoped to that family (Lossen I inside the book, Kramer, the
+Kurköln literature, one JSTOR row) would close it.
+
+### V8C.6 Postmortem and corrections
+
+No sentence in the folder calls p6 new, first or unpublished. Corrections: A2.5's unsafe item "'le Conte Jean' in 5797 as
+a reading (p6_spot4 is not classed)" is superseded by V8C.1 (classed N4, token M). NOTES.md's AX-MERGE3 table row ("yes,
+new in v3") is annotated: "new" there means new relative to key_full v2, not a novelty claim. The safe sentence
+changes (a third spot), so a dated note with V8C.4's sentence was added to `second-opinions/PROMPT-chatgpt.md` and the
+SO-LODEWIJK-1573-74 row.
+
+Requests (this session): archive.org 4 (print_check 2, advancedsearch 1, Bezold djvu 1); be-api.us.archive.org 20
+(print_check 16, Glawischnig fts 4); www.googleapis.com 10 (print_check 8, by hand 2); api.openalex.org 8;
+api.crossref.org 8. No subagents. Files: `phrases.txt` (V8C block), `print-check-v8c.tsv`, `print-check-v8c-hosts.tsv`;
+IA caches in the scratchpad, not committed.
