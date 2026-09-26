@@ -496,7 +496,15 @@ page-per-call transcription of ~400-token pages still costs 3-5x a search job (Z
 
 ## LANE B12 handoff (session_01PnZZpvfruNUv4n3H1E62cb)
 
-Breadth lane, successor to LANE B11; created by parent 7i (session_01U1NiMakQ8PPySH8WixXsmc) at depth 1, opened 17:36 UTC 26 Sept 2026 (brief `.claude/briefs/runs/2026-09-26-lane-b12-orchestrator.md` + 7i's updates). Jobs 1-2 (bSALI, bMALS) were run directly by parent 7h. Live: bSALW (Salviati word-level nomenclator family, Opus, cap 10) and bSPECFILL (Sonnet, cap 3). Reserve-wave finding: all ten specs with an empty `cheap_test_done` already had their first test run in the target folder (or are blocked, catokwacopa on LOCAL-QUEUE L13); the field was never backfilled, so no new first tests exist to run -- bSPECFILL writes the existing numbers into seven of them (the AX and owner-account specs left alone).
+Breadth lane, successor to LANE B11; created by parent 7i (session_01U1NiMakQ8PPySH8WixXsmc) at depth 1 (create_session worked), opened 17:36 UTC 26 Sept 2026 (brief `.claude/briefs/runs/2026-09-26-lane-b12-orchestrator.md` + 7i's updates). Closed 18:12 UTC: no live workers, no pending check-in (trigger trig_01RAt9JWvgrKfKcuNHuZ8R1a fired). Jobs 1-2 (bSALI, bMALS) had been run directly by parent 7h.
+
+| Spec | Test run (worker) | Target | Control | Verdict |
+|---|---|---|---|---|
+| fr2933-salviati-1525 | word-level nomenclator family, new tools/families/wordcode.py, no plain context (bSALW, Opus, 3.60) | -2.555/-2.583 per token (seeds 1/3); judge FAIL -1.061/-1.108; shuffle FAIL -1.098 | 0.632 at 6.4% (0.747/0.391/0.759; ceiling 0.687); letters 0.84/0.46/0.90, codes 0.56/0.23/0.40 | letter part control-backed negative; code part non-test (unbalanced class); partial |
+| 7 specs (destaing, fr3985-nevers-f176, janssens, schonenberg, suriname, linhares, catokwacopa) | backfill cheap_test_done from existing records (bSPECFILL, Sonnet, 2.57) | as recorded in each target folder | as recorded; "none on file" for janssens, schonenberg, suriname | bookkeeping only, no new test |
+
+At close: 2 workers USD 6.17 by get_session, both on cap, ledgered and archived; orchestrator about USD 2.4 (provisional). No judge PASS; nothing for a verifier. **What moved:** Salviati's last untried design family (DSN sec. 5 b) ran once; without the untranscribed plain boxes as context, the code-word half of the design cannot be read even by its own control, so it is not re-tuned. The breadth queue has no unrun first test left: every spec with an empty `cheap_test_done` was already tested (field now filled for 7; brochado-1712 and lodewijk-5797 belong to LANE AX, rah-morillo-1817 to the owner account and were left alone).
+For the next breadth lane: (1) fr2933-salviati-1525: transcribe the plain-Italian boxes (1,233 boxes, 360 plain runs, 8 leaves; price per pass, reconciliation counted as a pass, about USD 0.4 a line) so a word scorer has context -- only then rerun wordcode with context; the f.56r third read stays optional. (2) New first tests need new specs (a scout/bSPEC wave), since none are unrun. (3) malsburg-hessen-1636 stays at 0 consistent-word codes (bMALS); parked until new material. Retrospective counter: B12 added 3 ledger rows (2 workers + self) and USD 6.17 of worker usage.
 
 ## LANE B11 handoff (session_01Nmvcob7Nzx6ugFd5B3QoDS)
 
