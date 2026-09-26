@@ -92,27 +92,26 @@ over-claims prevented by the gates before anything left the repository.
 
 ## LANE AX2 handoff (session_016sbTkVT8HGNJ6JGjJNmCuM), 26 September 2026, from 05:14 UTC (live)
 
-Updated 06:42 UTC. Brief .claude/briefs/runs/2026-09-26-lane-ax2-orchestrator.md; COMMON reused: 2026-09-26-lane-ax-COMMON.md.
+Updated 07:23 UTC. Brief .claude/briefs/runs/2026-09-26-lane-ax2-orchestrator.md; COMMON reused: 2026-09-26-lane-ax-COMMON.md.
 Start state: LANE AX handoff below.
 
 **Live workers:**
 | job | session | model, box | what |
 |---|---|---|---|
-| AX2-4612S | session_01PoxouWB7p2jECzxEGsp5Fm | Sonnet, 75 min from 06:40 | tools/key_repair.py: local repair of key_full with syllable values (orchestrator reading: "yus"=vous, "zur"=pour); 5811 null + known-answer controls first; targets 4612 v3 and 5799 |
-| AX2-5801ADJ | session_01SuQVub3x6h8zx1XNQJLzzy | Opus, 45 min from 06:40 | 5801 (Willem->brothers, May 1573) name codes by eye against Groen IV CDXXIII; 172 occurs 9x: decisive test of AX2-172's list A / list B direction theory |
-| AX2-SHRINK2 | session_016Hp3QgoxDvaAPkrryk6jWH | Sonnet, 30 min from 06:40 | crops_4612 renders out, folder toward 30 MB |
+| AX2-4612S2 | session_018ktTTDt9vs6NM3JQ5Sjxvb | Sonnet, 60 min from 07:22 | tools/key_repair.py with a length-neutral objective (excess log-prob over the fr16 mean; no NULL below 121); controls first; targets 4612 v3, 5799 |
+| AX2-SHRINK3 | session_01LgocTHPLidqq2PDgr4TiA6 | Sonnet, 30 min from 07:22 | crops_comp 04614/07205/05801 and the rest: folder 48 MB -> under 30 |
 
-**Done (ledgered, archived), 7 workers, 67.69 dollars:** AX2-SHRINK 3.69 D; AX2-BLANKS 12.32 D (156/182 no value; 7206 decipherment on p8);
-AX2-BRO4 5.79 D; AX2-4612 14.88 D (v3 settled; key_full word share 70.7 vs shuffle max 60.6 vs 5811 93.2 -- gate 79.2 not met; judge
-cannot decide; anneal control 0.70 < 0.90, target not run); AX2-5801 21.84 D (Groen IV CDXXIII; 5801 = key_full table; 5799/4612 do
-not read under the unseeded key_5801); AX2-172 3.60 D (verdict c: name lists differ by direction, 172 le Conte Jean in list A);
-AX2-BRO5 5.56 D- (z = r confirmed, key unchanged; NEAR row: next is a verifier read as judge-cannot-decide).
+**Done (ledgered, archived), 10 workers, 80.40 dollars:** AX2-SHRINK 3.69 D; AX2-BLANKS 12.32 D; AX2-BRO4 5.79 D; AX2-4612 14.88 D;
+AX2-5801 21.84 D; AX2-172 3.60 D; AX2-BRO5 5.56 D-; AX2-4612S 5.15 D (controls failed on the brief's own objective: total log-prob
+rewards NULL -- orchestrator's error, fixed in 4612S2); AX2-5801ADJ 3.22 D; AX2-SHRINK2 4.25 D (59 -> 48 MB).
 
-**5797 p6_spot4:** V8 classed N2 (Lossen 1882 prints the fact); AX2-172 says list A holds for 5797 by direction; AX2-5801ADJ tests the
-theory on a 1573 letter of the other direction. Keep the spot out of the board row until AX2-5801ADJ reports.
-
-**Queue:** re-derivation for any flagged repaired-key candidate; 7206's town codes into key_full only via build_key_full.py after a
-check; pro3055 and the 5549 body stay parked (brief).
+**Code 172 (5797 p6_spot4):** three period values now attested -- le Conte Jean (4614 decipherment), le Conte Louis (5801 interlinear
+gloss, Groen: Monsieur le Conte Louys), Lumbres (7206 decipherment). AX2-172's direction theory failed on 5801 (AX2-5801ADJ). The spot
+has no licensed value; V8 classed it N2 before this and the parent's row text says contested. No key_full change (axmerge4/proposal.tsv
+KEEP_NOTE rows only).
+**4612 and 5799:** neither reads under key_full, key.tsv or key_5801 (word share gate and judge); AX2-4612S2 tests the syllable-code
+hypothesis. If its control fails again the lane closes with 4612/5799 partial and the hypothesis logged in HYPOTHESES.md.
+**Brochado 134:** NEAR row next step is a verifier read as judge-cannot-decide (not dispatched by AX2; a verifier lane's job).
 
 ## LANE AX handoff (session_01VzK62xX92yKfnUD93zprD8), 26 September 2026, 00:15-04:35 UTC (closed at 446k context)
 
