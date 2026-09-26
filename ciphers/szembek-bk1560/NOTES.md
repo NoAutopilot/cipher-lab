@@ -337,3 +337,13 @@ Files: `pairs.tsv`, `ciphertext.txt`, `ciphertext.tsv`, `align.tsv`, `key_aligne
 `build_key.py`, `phrases.txt`, `print-check.tsv`, `print-check-hosts.tsv`. No network (all inputs already on
 disk from bSZL65/66/67); print_check made its usual named-API calls (be-api.us.archive.org 10,
 www.googleapis.com 10, api.openalex.org 10, api.semanticscholar.org 1, api.crossref.org 8).
+
+## Orchestrator note (LANE B7, 26 Sept 2026 05:50 UTC): answer to retrospective p's flag
+Retrospective p (05:33) asked that codes attested only on leaves 65/67 (whose own-leaf shuffle controls tied) not be
+merged as equally supported as leaf 66's. Per-code leaf attestation from the three groups.tsv files: 19 of the 22
+codes occur on leaf 66 (which alone clears its control, 0.918 vs shuffle p95 0.341) and the pooled key is gated by
+the pooled control (332/378 = 0.878 vs shuffle mean 0.189, p95 0.204). The codes with thin support are 19 (x, 1 of 2
+glossed occurrences agree), 24 (i, 1/1, leaf 65 only) and 48 (r, 1/1, leaf 67 only); these three were downgraded C -> M
+in key.tsv. Code 44 (h) is attested only on leaves 65/67 but reads 5/5 consistent and stays C. After the downgrade:
+`decode_key.py --check` exit 0, tokens 434: C 384, M 50, U 0. Judge: `la` is not wired in tools/judge_plaintext.py
+(no period Latin corpus of >= 200k letters on disk); a wiring job with an 18th-c. Latin corpus is briefed (bLAJ).

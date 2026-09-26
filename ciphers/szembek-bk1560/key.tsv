@@ -4,11 +4,11 @@ code	value	grade	source	note
 14	e	C	gloss(pooled 3-leaf interlinear_align --floor 100)	mode of 24/29 glossed occurrences
 15	a	C	gloss(pooled 3-leaf interlinear_align --floor 100)	mode of 3/3 glossed occurrences
 17	a	C	gloss(pooled 3-leaf interlinear_align --floor 100)	mode of 28/33 glossed occurrences
-19	x	C	gloss(pooled 3-leaf interlinear_align --floor 100)	mode of 1/2 glossed occurrences
+19	x	M	gloss(pooled 3-leaf interlinear_align --floor 100)	mode of 1/2 glossed occurrences; downgraded C->M by LANE B7 05:50 (fewer than 2 agreeing glossed occurrences; retrospective p flag, codes not independently attested)
 20	t	C	gloss(pooled 3-leaf interlinear_align --floor 100)	mode of 24/30 glossed occurrences
 21	s	C	gloss(pooled 3-leaf interlinear_align --floor 100)	mode of 29/32 glossed occurrences
 23	r	C	gloss(pooled 3-leaf interlinear_align --floor 100)	mode of 30/31 glossed occurrences
-24	i	C	gloss(pooled 3-leaf interlinear_align --floor 100)	mode of 1/1 glossed occurrences
+24	i	M	gloss(pooled 3-leaf interlinear_align --floor 100)	mode of 1/1 glossed occurrences; downgraded C->M by LANE B7 05:50 (fewer than 2 agreeing glossed occurrences; retrospective p flag, codes not independently attested)
 25	p	C	gloss(pooled 3-leaf interlinear_align --floor 100)	mode of 20/22 glossed occurrences
 29	b	C	gloss(pooled 3-leaf interlinear_align --floor 100)	mode of 8/8 glossed occurrences
 40	f	C	gloss(pooled 3-leaf interlinear_align --floor 100)	mode of 5/5 glossed occurrences
@@ -17,7 +17,7 @@ code	value	grade	source	note
 43	d	C	gloss(pooled 3-leaf interlinear_align --floor 100)	mode of 14/16 glossed occurrences
 44	h	C	gloss(pooled 3-leaf interlinear_align --floor 100)	mode of 5/5 glossed occurrences
 46	i	C	gloss(pooled 3-leaf interlinear_align --floor 100)	mode of 52/63 glossed occurrences
-48	r	C	gloss(pooled 3-leaf interlinear_align --floor 100)	mode of 1/1 glossed occurrences
+48	r	M	gloss(pooled 3-leaf interlinear_align --floor 100)	mode of 1/1 glossed occurrences; downgraded C->M by LANE B7 05:50 (fewer than 2 agreeing glossed occurrences; retrospective p flag, codes not independently attested)
 49	l	C	gloss(pooled 3-leaf interlinear_align --floor 100)	mode of 10/12 glossed occurrences
 50	m	C	gloss(pooled 3-leaf interlinear_align --floor 100)	mode of 12/16 glossed occurrences
 51	n	C	gloss(pooled 3-leaf interlinear_align --floor 100)	mode of 26/27 glossed occurrences

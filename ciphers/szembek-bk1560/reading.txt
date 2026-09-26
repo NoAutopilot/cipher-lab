@@ -1,6 +1,6 @@
 # szembek-bk1560, merged 3-leaf reading (bSZM, 26 Sept 2026), letter-per-code key from the manuscript's own
 # interlinear gloss (tools/interlinear_align.py, --floor 100), grade C throughout except per-occurrence
-# conflicts (grade M, exceptions.tsv). tokens 434: H 0, C 388, S 0, M 46, I 0, U 0. Clear Latin words as transcribed; codes
+# conflicts (grade M, exceptions.tsv). tokens 434: H 0, C 384, S 0, M 50, I 0, U 0. Clear Latin words as transcribed; codes
 # rendered as their key letter; <?> = code with no key entry (none this pass).
 65 1	P. S. IN ? 203 IS SCRIPTA GRATO ANIMO TAM
 65 2	c e l s i s s i m u s p r i n =
