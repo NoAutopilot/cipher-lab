@@ -252,3 +252,39 @@ back a **control-backed negative** on the target (judge FAIL, score -1.971 again
 directory scan); fixed in the spec and the convention-B unit re-run cleanly for a correct row. No judge PASS;
 no reading described. Full tables, IC numbers and commands are in HYPOTHESES.md's "GOLD-KAL3, Polish and
 Lithuanian" section. Status stays `open`.
+
+## GOLD-KAL4, restarts and sweep, 26 Sept 2026
+
+Reserve cycle-6 job (brief `.claude/briefs/runs/2026-09-26-lane-gold-c6-kaliningrad-restarts-and-sweep.md`).
+No subagents, disk and CPU only, no hosts touched. Part (a) re-ran GOLD-KAL2/KAL3's four CONTROL BELOW GATE
+pairings at restarts 20 (up from 8), seeds 5 (then 6 where the brief's single-collapsed-seed pattern applied),
+to tell a restarts problem from a real limit: three of the four now clear gate and come back **control-backed
+negatives** (2-ru-s1s-A convention A K=36, judge FAIL -1.652; 2-ru-s3-B convention B K=28, judge FAIL -1.934;
+2-pl-A convention A K=36, judge FAIL -1.827) -- more restarts alone fixed the anneal's convergence in each
+case, the target did not become more readable. The fourth, 2-lt-A (convention A K=36, Lithuanian Bible), moved
+from mean 0.633 to 0.827 but still did not clear gate (two seeds under 0.9, not the single-collapsed-seed
+pattern, so no 6th-seed re-run per the brief), and is recorded as a residual anneal limit at this N/K with this
+corpus, untested not excluded. Part (b) swept the convention-B (K=28) Latin alphabet across seven more
+languages at restarts 8/seeds 3 (nl, da, en, fr, it, es, pt): six cleared their control gate and came back
+control-backed negatives (nl, da, fr, es, it clean; en's judge corpus itself carries a documented 0.44-0.64
+per-fold false-negative spread, so its FAIL is directionally consistent but of unknown reliability, per
+CLAUDE.md's EN-FOLDS lesson); pt did not clear gate (mean 0.555, two seeds collapsed), CONTROL BELOW GATE,
+untested not excluded. No judge PASS this job; no reading described. Full tables, per-seed numbers and the
+per-unit sentences (restarts problem / real limit / control-backed negative) are in HYPOTHESES.md's
+"GOLD-KAL4, restarts and sweep" section; both numbers for every unit are also in specs/kaliningrad-2015.json's
+`cheap_test_done`. `judge.corpora` restored to `tools/data/de20` (the GOLD-KAL1 state) as this job's last spec
+edit. Status stays `open`.
+
+**Next steps.** Every convention-B Latin-alphabet language tried so far (German not tried at B; Russian S1/S3'
+already negative; nl/da/en/fr/it/es/pl/ru-s3 all now control-backed negatives) leaves Portuguese (2-pt-B,
+CONTROL BELOW GATE at restarts 8) as the one convention-B pairing still open in this sweep -- a restarts-20
+rerun of that single unit, matching this job's own part (a) method, is the cheapest next step and was not
+attempted here (out of this job's ordered task list). Convention A's Lithuanian pairing (2-lt-A) is the one
+part-(a) unit that restarts 20 did not resolve; a seeds-6-8 battery at the same restarts, or a fixed/annealed
+restart schedule, is the natural next test before concluding anything about Lithuanian at K=36. Convention B
+Lithuanian (2-lt-B) was never run at all, per the brief. Beyond the homophonic family, the lane's own
+cycle-4/5/6 record has now spent light-homophonic substitution across German, Russian (all four transliteration
+schemes), Polish and seven further Latin-alphabet languages at both conventions with only two untested residual
+gaps (pt-B, lt-A/lt-B) -- the next dollars on this target are better spent on a different family (periodic key,
+running key, or the wide-alphabet/Cyrillic-native anneal named as out-of-scope in GOLD-KAL2) than on further
+homophonic reruns, unless a worker wants to close the two remaining gaps first for completeness.

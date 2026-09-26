@@ -31,12 +31,15 @@
   "control_samples": 100,
   "note": "Russian/Polish corpora are not on disk; add them as 'corpora' when fetched",
   "corpora": [
-   "tools/data/pt18/correiobrazilie00unkngoog.txt.gz",
-   "tools/data/pt18/correiobrazilie02unkngoog.txt.gz",
-   "tools/data/pt18/oinvestigadorpo03unkngoog.txt.gz",
-   "tools/data/pt18/oinvestigadorpo05unkngoog.txt.gz"
+   "tools/data/de20/pg15736_Der_Mann_von_vierzig_Jahren.txt.gz",
+   "tools/data/de20/pg36905_Schach_von_Wuthenow.txt.gz",
+   "tools/data/de20/pg41051_Peter_Camenzind.txt.gz",
+   "tools/data/de20/pg41907_Demian.txt.gz",
+   "tools/data/de20/pg43987_Die_drei_Spruenge_des_Wang_lun.txt.gz",
+   "tools/data/de20/pg46184_Frau_Jenny_Treibel.txt.gz",
+   "tools/data/de20/pg5323_Effi_Briest.txt.gz"
   ],
-  "corpora_note": "GOLD-KAL4, 26 Sept 2026: judge.corpora set to the 4 tools/data/pt18 files for the convention-B Latin-alphabet sweep, unit pt (last of the sweep)."
+  "corpora_note": "GOLD-KAL4, 26 Sept 2026: restored to tools/data/de20 (the GOLD-KAL1 state) as this job's last spec edit, per the brief. This job ran ru19_lat/s1s, ru19_lat/s3, pl19, tools/data/lt, then the convention-B sweep (nl20, da19, en, fr19, it16, es17c, pt18) in turn; see cheap_test_done for which corpus served which unit and both numbers for each."
  },
  "value": "moderate; 58 reader comments without a solution, but no machine run across the candidate languages is on record",
  "model": "Sonnet",
@@ -123,6 +126,102 @@
    "target": "not run (CONTROL BELOW GATE)",
    "control": "profile=target, 3 seeds: recovery 0.467/0.444/0.987, mean 0.633 (0.444-0.987). Gate 0.9 NOT MET.",
    "verdict": "CONTROL BELOW GATE -- gate not lowered per brief; target not run; this corpus/convention pairing is untested, not excluded."
+  },
+  {
+   "test": "2-ru-s1s-A-r20",
+   "date": "26 Sept 2026",
+   "method": "GOLD-KAL4: tools/family_run.py --family homophonic --param profile=target, restarts 20 (up from 8), judge.corpora tools/data/ru19_lat/s1s.txt.gz. Cipher: ciphers/kaliningrad-2015/ciphertext_signs.tsv (convention A, N=978 K=36). Re-run of GOLD-KAL2's CONTROL BELOW GATE unit to test restarts vs a real limit.",
+   "target": "judge FAIL: score=-1.652, null_p99=-2.078, real_p05=-0.892, real_median=-0.812, N=978 (6-seed control run)",
+   "control": "profile=target, 5 seeds: recovery 0.998/0.990/0.997/0.987/0.478, mean 0.890 (NOT met). Per the brief's single-collapsed-seed rule (four seeds 0.9+, one under 0.5), re-ran at 6 seeds: + seed 6 recovery 0.997, mean 0.908 (met).",
+   "verdict": "Restarts problem, not a real limit: restarts 20 (plus one extra seed) clears the gate the restarts-8 run could not. Target now a control-backed negative for Russian S1-stripped homophonic substitution at convention A (K=36), profile=target."
+  },
+  {
+   "test": "2-ru-s3-B-r20",
+   "date": "26 Sept 2026",
+   "method": "GOLD-KAL4: tools/family_run.py --family homophonic --param profile=target, restarts 20 (up from 8), judge.corpora tools/data/ru19_lat/s3.txt.gz. Cipher: ciphers/kaliningrad-2015/ciphertext_signs_B.tsv (convention B, N=1066 K=28). Re-run of GOLD-KAL2's CONTROL BELOW GATE unit.",
+   "target": "judge FAIL: score=-1.934, null_p99=-2.125, real_p05=-0.847, real_median=-0.77, N=1066",
+   "control": "profile=target, 5 seeds: recovery 0.999/0.997/0.780/0.998/0.998, mean 0.955 (met on the first battery, no 6th seed needed).",
+   "verdict": "Restarts problem, resolved without a 6th seed: restarts 20 clears the gate the restarts-8 run (mean 0.677, uniformly weak, no single collapsed seed) could not. Target now a control-backed negative for Russian S3-full homophonic substitution at convention B (K=28), profile=target."
+  },
+  {
+   "test": "2-pl-A-r20",
+   "date": "26 Sept 2026",
+   "method": "GOLD-KAL4: tools/family_run.py --family homophonic --param profile=target, restarts 20 (up from 8), judge.corpora the 4 tools/data/pl19 files. Cipher: ciphers/kaliningrad-2015/ciphertext_signs.tsv (convention A, N=978 K=36). Re-run of GOLD-KAL3's CONTROL BELOW GATE unit.",
+   "target": "judge FAIL: score=-1.827, null_p99=-2.095, real_p05=-0.911, real_median=-0.859, N=978",
+   "control": "profile=target, 5 seeds: recovery 0.988/0.973/0.981/0.950/0.995, mean 0.977 (met on the first battery; the restarts-8 seed-3 collapse to 0.003 did not recur).",
+   "verdict": "Restarts problem: restarts 20 clears the gate the restarts-8 run (mean 0.655, one seed collapsed to 0.003) could not. Target now a control-backed negative for Polish light-homophonic substitution at convention A (K=36), profile=target, pl19 register."
+  },
+  {
+   "test": "2-lt-A-r20",
+   "date": "26 Sept 2026",
+   "method": "GOLD-KAL4: tools/family_run.py --family homophonic --param profile=target, restarts 20 (up from 8), judge.corpora the 66 tools/data/lt files. Cipher: ciphers/kaliningrad-2015/ciphertext_signs.tsv (convention A, N=978 K=36). Re-run of GOLD-KAL3's CONTROL BELOW GATE unit.",
+   "target": "not run (CONTROL BELOW GATE)",
+   "control": "profile=target, 5 seeds: recovery 0.985/0.524/0.987/0.662/0.981, mean 0.827 (NOT met). Two seeds under 0.9 (0.524, 0.662), not the brief's single-collapsed-seed pattern (four at 0.9+, one under 0.5), so no 6th-seed re-run per the brief's own rule; gate not lowered per rule 3.",
+   "verdict": "Residual limit of the anneal at this N=978/K=36 with the Lithuanian-Bible corpus's letter-frequency profile, not resolved by restarts 20 the way the other three units were. Untested, not excluded; a further seeds 6-8 battery at restarts 20 is the natural next cheap step, not attempted this job."
+  },
+  {
+   "test": "2-lt-B",
+   "date": "26 Sept 2026",
+   "method": "Named in the brief as item 5, 'never run': convention B (K=28) for Lithuanian was not attempted this job.",
+   "target": "not run",
+   "control": "not run",
+   "verdict": "Not run per the brief; untested, not excluded."
+  },
+  {
+   "test": "2-nl-B",
+   "date": "26 Sept 2026",
+   "method": "GOLD-KAL4 sweep: tools/family_run.py --family homophonic --param profile=target, restarts 8 seeds 3, judge.corpora the 7 tools/data/nl20 files. Cipher: ciphers/kaliningrad-2015/ciphertext_signs_B.tsv (convention B, N=1066 K=28).",
+   "target": "judge FAIL: score=-1.407, null_p99=-2.064, real_p05=-0.845, real_median=-0.782, N=1066",
+   "control": "profile=target, 3 seeds: recovery 0.999/0.992/0.998, mean 0.996 (met).",
+   "verdict": "Control-backed negative for Dutch light-homophonic substitution at convention B (K=28), profile=target, nl20 register."
+  },
+  {
+   "test": "2-da-B",
+   "date": "26 Sept 2026",
+   "method": "GOLD-KAL4 sweep: tools/family_run.py --family homophonic --param profile=target, restarts 8 seeds 3, judge.corpora tools/data/da19/historisktidsskriftdk1s6.txt (1 file). Cipher: ciphers/kaliningrad-2015/ciphertext_signs_B.tsv (convention B, N=1066 K=28).",
+   "target": "judge FAIL: score=-1.593, null_p99=-1.925, real_p05=-0.918, real_median=-0.786, N=1066",
+   "control": "profile=target, 3 seeds: recovery 0.993/0.767/0.998, mean 0.919 (met).",
+   "verdict": "Control-backed negative for Danish light-homophonic substitution at convention B (K=28), profile=target -- register caveat: da19's one source file is a historical journal, not fiction."
+  },
+  {
+   "test": "2-en-B",
+   "date": "26 Sept 2026",
+   "method": "GOLD-KAL4 sweep: tools/family_run.py --family homophonic --param profile=target, restarts 8 seeds 3, judge.corpora the 3 tools/data/en files (pride/gatsby/huckfinn). Cipher: ciphers/kaliningrad-2015/ciphertext_signs_B.tsv (convention B, N=1066 K=28).",
+   "target": "judge FAIL: score=-1.867, null_p99=-2.089, real_p05=-0.83, real_median=-0.765, N=1066",
+   "control": "profile=target, 3 seeds: recovery 1.000/0.997/0.996, mean 0.998 (met).",
+   "verdict": "Control-backed negative for English light-homophonic substitution at convention B (K=28), profile=target -- but LANG_CORPORA['en']'s own per-fold false-negative spread is 0.44-0.64 (tools/data/en/README.md, EN-FOLDS), so this FAIL is of unknown reliability, directionally consistent with the other sweep negatives but not to be cited with the same confidence."
+  },
+  {
+   "test": "2-fr-B",
+   "date": "26 Sept 2026",
+   "method": "GOLD-KAL4 sweep: tools/family_run.py --family homophonic --param profile=target, restarts 8 seeds 3, judge.corpora the 5 tools/data/fr19 files. Cipher: ciphers/kaliningrad-2015/ciphertext_signs_B.tsv (convention B, N=1066 K=28).",
+   "target": "judge FAIL: score=-1.749, null_p99=-2.0, real_p05=-0.828, real_median=-0.787, N=1066",
+   "control": "profile=target, 3 seeds: recovery 0.993/0.994/0.996, mean 0.995 (met).",
+   "verdict": "Control-backed negative for French light-homophonic substitution at convention B (K=28), profile=target, fr19 register."
+  },
+  {
+   "test": "2-it-B",
+   "date": "26 Sept 2026",
+   "method": "GOLD-KAL4 sweep: tools/family_run.py --family homophonic --param profile=target, restarts 8 seeds 3, judge.corpora the 6 tools/data/it16 files. Cipher: ciphers/kaliningrad-2015/ciphertext_signs_B.tsv (convention B, N=1066 K=28).",
+   "target": "judge FAIL: score=-1.447, null_p99=-1.801, real_p05=-0.962, real_median=-0.82, N=1066",
+   "control": "profile=target, 3 seeds: recovery 0.998/0.969/0.757, mean 0.908 (met, narrowly).",
+   "verdict": "Control-backed negative for Italian light-homophonic substitution at convention B (K=28), profile=target, it16 (16th-c. letters) register."
+  },
+  {
+   "test": "2-es-B",
+   "date": "26 Sept 2026",
+   "method": "GOLD-KAL4 sweep: tools/family_run.py --family homophonic --param profile=target, restarts 8 seeds 3, judge.corpora the 3 tools/data/es17c files. Cipher: ciphers/kaliningrad-2015/ciphertext_signs_B.tsv (convention B, N=1066 K=28).",
+   "target": "judge FAIL: score=-1.646, null_p99=-1.966, real_p05=-0.886, real_median=-0.789, N=1066",
+   "control": "profile=target, 3 seeds: recovery 0.989/0.990/0.992, mean 0.990 (met).",
+   "verdict": "Control-backed negative for Spanish light-homophonic substitution at convention B (K=28), profile=target, es17c (17th-c. court-newsletter) register -- caveat: this corpus's own per-fold false-negative spread is 10.0-39.5 pct from only 3 source files (CLAUDE.md's MJ lesson), so reliable in direction but not to the same confidence as a corpus with more folds."
+  },
+  {
+   "test": "2-pt-B",
+   "date": "26 Sept 2026",
+   "method": "GOLD-KAL4 sweep: tools/family_run.py --family homophonic --param profile=target, restarts 8 seeds 3, judge.corpora the 4 tools/data/pt18 files. Cipher: ciphers/kaliningrad-2015/ciphertext_signs_B.tsv (convention B, N=1066 K=28).",
+   "target": "not run (CONTROL BELOW GATE)",
+   "control": "profile=target, 3 seeds: recovery 0.205/0.462/0.998, mean 0.555 (NOT met). Per the brief the sweep runs at restarts 8/seeds 3 without the units-1-4 retry rule, so no 6th-seed or restarts-20 re-run this job.",
+   "verdict": "CONTROL BELOW GATE at restarts 8; untested, not excluded. A restarts-20 rerun (matching part (a)'s method) is the natural next cheap step, not attempted this job."
   }
  ]
 }

@@ -372,6 +372,92 @@ python3 tools/family_run.py specs/kaliningrad-2015.json --family homophonic \
 
 Rule 10: nothing in this section is a reading; status stays `open`; never solved, new, first or unpublished.
 
+## GOLD-KAL4, restarts and sweep (26 Sept 2026)
+
+Reserve brief `.claude/briefs/runs/2026-09-26-lane-gold-c6-kaliningrad-restarts-and-sweep.md`. Cycle 6: (a)
+re-ran the four scheme/convention pairings that read CONTROL BELOW GATE in GOLD-KAL2/KAL3 at restarts 8, this
+time at restarts 20 (2.5x the anneal work), to tell a restarts problem from a real limit of the anneal at this
+N/K; (b) a convention-B (K=28) Latin-alphabet sweep, one language per unit, restarts 8 seeds 3 (unchanged --
+convention-B controls have not needed more). No subagents, disk and CPU only.
+
+**Part (a): restarts 20, seeds 5 (then 6 where named).**
+
+| unit | corpus | convention | K | per-seed control (restarts 20) | mean | gate | target judge |
+|---|---|---|---|---|---|---|---|
+| 2-ru-s1s-A | ru19_lat/s1s | A | 36 | 0.998 / 0.990 / 0.997 / 0.987 / 0.478 (5 seeds) | 0.890 | NOT met at 5 | not run |
+| 2-ru-s1s-A (6 seeds) | ru19_lat/s1s | A | 36 | as above + 0.997 (seed 6) | 0.908 | met | FAIL: -1.652 (real_p05 -0.892, null_p99 -2.078) |
+| 2-ru-s3-B | ru19_lat/s3 | B | 28 | 0.999 / 0.997 / 0.780 / 0.998 / 0.998 | 0.955 | met at 5 | FAIL: -1.934 (real_p05 -0.847, null_p99 -2.125) |
+| 2-pl-A | pl19 (4 files) | A | 36 | 0.988 / 0.973 / 0.981 / 0.950 / 0.995 | 0.977 | met at 5 | FAIL: -1.827 (real_p05 -0.911, null_p99 -2.095) |
+| 2-lt-A | lt (66 files) | A | 36 | 0.985 / 0.524 / 0.987 / 0.662 / 0.981 | 0.827 | NOT met at 5 | not run |
+
+One sentence per unit:
+- **2-ru-s1s-A: restarts problem.** At restarts 8 (KAL2) the control read 0.998/0.206/0.997 (mean 0.733, one
+  seed collapsed near-total). At restarts 20 the same collapse pattern recurs on a different seed (seed 5,
+  0.478) while the other four sit at 0.987-0.998; per the brief's own rule for this exact pattern (four seeds
+  0.9+, one under 0.5), a 6th seed was run and brought the mean to 0.908, over gate. Target then ran: judge
+  FAIL. Reading: this is the anneal's own local-optimum failure mode at K=36, not a limit tied to the Russian
+  S1-stripped scheme -- with enough seeds the control clears gate, and the target is now a genuine
+  control-backed negative, where at restarts 8 it was untested.
+- **2-ru-s3-B: restarts problem, resolved without a 6th seed.** At restarts 8 the control read
+  0.498/0.751/0.780 (mean 0.677, no seed near either 0.9 or 0.5 -- a uniformly weak anneal, not one collapsed
+  seed). At restarts 20 all five seeds read 0.780-0.999 (mean 0.955), gate met on the first battery. The extra
+  restarts fixed the anneal's convergence at K=28 with this scheme's 11.7 pct q-marker share; target judge
+  FAIL, now a control-backed negative.
+- **2-pl-A: restarts problem.** At restarts 8 the control read 0.988/0.973/0.003 (mean 0.655, seed 3 collapsed
+  near-total). At restarts 20 the same five seeds read 0.950-0.995 (mean 0.977) -- no collapse recurred, gate
+  met on the first battery. Target judge FAIL, now a control-backed negative for Polish at convention A/K36
+  (Polish at convention B/K28 was already a control-backed negative from GOLD-KAL3).
+- **2-lt-A: still CONTROL BELOW GATE at restarts 20 -- not the single-collapsed-seed pattern, so no 6th seed
+  run.** At restarts 8 the control read 0.467/0.444/0.987 (mean 0.633, no seed near either bound). At restarts
+  20 it reads 0.985/0.524/0.987/0.662/0.981 (mean 0.827): two seeds now clear 0.98, but two others sit at
+  0.524 and 0.662 -- not "four seeds 0.9+ and one under 0.5", so the brief's specific 6th-seed rule does not
+  apply, and the gate was not lowered to force a run per rule 3. More restarts moved this control from 0.633
+  to 0.827 (real progress, unlike a flat repeat) but did not clear gate; this pairing is recorded as a residual
+  limit of the anneal at this N=978/K=36 with the Lithuanian-Bible corpus's own letter-frequency profile,
+  untested rather than excluded. A future worker could try seeds 6-8 at the same restarts, or a fixed/annealed
+  restart schedule, before concluding more.
+
+**Part (b): convention-B (K=28) Latin-alphabet sweep, restarts 8 seeds 3, CONS4's identity-profile L1 order.**
+
+| unit | corpus | control mean (range) | gate | target judge |
+|---|---|---|---|---|
+| nl | nl20 (7 files) | 0.996 (0.992-0.999) | met | FAIL: -1.407 (real_p05 -0.845, null_p99 -2.064) |
+| da | da19 (1 file) | 0.919 (0.767-0.998) | met | FAIL: -1.593 (real_p05 -0.918, null_p99 -1.925) |
+| en | en (3 files) | 0.998 (0.996-1.000) | met | FAIL: -1.867 (real_p05 -0.83, null_p99 -2.089) |
+| fr | fr19 (5 files) | 0.995 (0.993-0.996) | met | FAIL: -1.749 (real_p05 -0.828, null_p99 -2.0) |
+| it | it16 (6 files) | 0.908 (0.757-0.998) | met (narrowly) | FAIL: -1.447 (real_p05 -0.962, null_p99 -1.801) |
+| es | es17c (3 files) | 0.990 (0.989-0.992) | met | FAIL: -1.646 (real_p05 -0.886, null_p99 -1.966) |
+| pt | pt18 (4 files) | 0.555 (0.205-0.998) | NOT met | not run -- CONTROL BELOW GATE |
+
+All seven sweep units ran; none was skipped for the box (the job stayed well under 80 pct of the $6/80-minute
+cap throughout, each unit taking a few minutes).
+
+One sentence per unit:
+- **nl, fr, es: control-backed negatives**, clean gates (0.99+), no caveat beyond the ordinary one.
+- **da: control-backed negative**, gate met but on a single non-fiction (historical-journal) source file, not
+  the fiction register the other sweep corpora use -- register caveat, not a gate problem.
+- **en: control-backed negative, but of unknown reliability.** CLAUDE.md's own EN-FOLDS lesson (and
+  `tools/data/en/README.md`) records `LANG_CORPORA["en"]`'s per-fold false-negative spread as 0.44-0.64 at
+  N=200/500 (Moby-Dick specifically, held out, false-negatives 80-84 pct against the other four); a FAIL
+  against this judge is directionally consistent with the other clean negatives but should not be cited with
+  the same confidence as nl/fr/es/da.
+- **it: control-backed negative**, gate met narrowly (mean 0.908, one seed at 0.757) -- a weaker anneal fit at
+  K=28 for this register (16th-c. letters) than most, but still over gate at restarts 8, so no restarts rerun
+  needed.
+- **pt: CONTROL BELOW GATE, untested not excluded.** Mean 0.555 (0.205/0.462/0.998), two seeds collapsed. The
+  sweep runs at restarts 8/seeds 3 per the brief (convention-B controls "have not needed more"); this is the
+  one exception this job found. A restarts-20 rerun of this single unit, matching part (a)'s method, is the
+  natural next cheap step and was not attempted here (out of this job's ordered task list).
+
+**Decision for the next dollars.** Every convention-B (K=28) Latin-alphabet language this lane has tried is
+now a control-backed negative except Portuguese (CONTROL BELOW GATE, untested) and Lithuanian (not run at
+convention B at all per the brief, "2-lt-B: never run"). At convention A (K=36), German, Russian (S1-stripped),
+and Polish are now control-backed negatives; Russian S3-full is a control-backed negative at convention B;
+Lithuanian at convention A remains a residual CONTROL BELOW GATE limit even at restarts 20. No judge PASS this
+job; no re-derivation owed. Status stays `open`.
+
+Rule 10: nothing in this section is a reading; status stays `open`; never solved, new, first or unpublished.
+
 <!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
 
 | date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
