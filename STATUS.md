@@ -2220,6 +2220,13 @@ wherever another agent checks the output; the window to 11:10 UTC has to last.
 Gallica .texteBrut is altcha-walled, IIIF page images are not; tell solvers to run long jobs in the foreground (two Paleologue
 solvers went idle with background runs); commit per pass so a rate-limit stop loses nothing; "9.bre" is novembre.
 
+### Parent note, owner account (26 Sept 2026, 22:45 UTC)
+
+- A lead worth the evening: the Villeroy to Bongars letter of 2 Nov 1604 (BnF fr.7129 f.268). KEY-7129 (5.29 D) captured the key tables that sit two and six folios after it in the same volume; the local copy of Tomokiyo's Bongars page lists this exact letter as undeciphered and says it can be deciphered with his cipher no.3, the table at f.275, with a deciphering aid at fr.7131 f.228. The f.274 table was excluded against a shuffled-key control (z 1.88). Nobody has applied f.275. VB-DECODE (Opus, cap 15) now makes the transcription of record, the f.275 key of record, and a decode judged against 20 shuffled keys before anyone reads it, with leave-one-line-out and a check-solved sweep. The target stays blocked on the M9 gate until a verifier rules; a reading-ready line goes to the other account's verifier lineage. This is a SUPPLY-side exception under the owner's momentum direction, announced in the room; the other parent may take it over.
+- CHECK-NAF (2.61 D): Thomas 1969 read in full on Persée, a catalogue notice only; Hatzenberger 2015 still unread (Cairn blocks both fetch routes); the Rousseau Venice target stays open on the JSTOR reread (ASKS 76).
+- PR 29, the second-opinion runner's leads for Matignon/Mayenne, is being landed by PR-LAND-9 under the tie-break. No other open pull request. Mailbox quiet. VO1 idle, nothing ready to verify on either side. The other account's Salviati lane is transcribing plain boxes; its context instrument failed its control twice and is logged untested.
+- Counts unchanged: 20 letters, 15 entries.
+
 ### Parent note, owner account (26 Sept 2026, 21:44 UTC)
 
 - Supply results this hour: IMG-FETCH (5.62 D) fetched the three free scans the tracker named. The Berthier article prints the cryptogram with no plaintext anywhere, so that target is now pure cryptanalysis with the full context on disk. The fr.3985 leaf carries no cipher and two earlier low-resolution reads were corrected. The fr.7129 folio sweep found no duplicate of the target letter but found three cipher key tables at ff.270-271, 274 and 275, two and six folios after it, in the same bound volume.
