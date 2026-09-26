@@ -2019,3 +2019,111 @@ No network access; no hosts contacted (all work from `_anchors.json`, `ciphertex
 scipy` (local package install, not a network host in the good-citizen sense) to make `tools/iiif_lines.py`
 importable for a possible image pass; not used this job (Step 5's "not done" note). No subagents. Cost:
 see the lane ledger.
+
+## AX2-BRO5: z tie and 4 occurrences by image (26 Sept 2026, LANE AX2)
+
+Worker AX2-BRO5 (Sonnet), job `.claude/briefs/runs/2026-09-26-lane-ax2-bro5.md`, following AX2-BRO4's
+named next step. Parent: LANE AX2 orchestrator (session_016sbTkVT8HGNJ6JGjJNmCuM). Read `align/key_mask_z.tsv`,
+`align/align_mask_*.tsv`, `thin_codes_attest.tsv`, `key.tsv`, `scripts/_anchors.json`, `align/pairs.tsv`,
+`ciphertext_appendix.tsv` before cropping. `pip install numpy pillow scipy` (local, not a network host)
+to run `tools/iiif_lines.py`.
+
+### Crop step (mandatory, pasted before reading)
+
+```
+python3 tools/iiif_lines.py --image images/full_PT-TT-MSLIV-0638_m0281.jpg.jpg --out <scratchpad>/m0281 --debug
+python3 tools/iiif_lines.py --image images/full_PT-TT-MSLIV-0638_m0289.jpg.jpg --out <scratchpad>/m0289 --debug
+python3 tools/iiif_lines.py --image images/full_PT-TT-MSLIV-0638_m0280.jpg.jpg --out <scratchpad>/m0280 --debug
+```
+Each leaf is a single scanned page (~1280x1920), containing 2 numbered Cartas each with a cipher block
+and its "Deciffrada" plaintext paragraph directly below -- there is no per-code interlinear gloss on
+this document, only the whole-sentence plaintext under each cipher block (confirmed by eye on all three
+leaves' debug overlays). "iiif_lines" cut each leaf into 5-6 bands of several lines each, not one line
+per crop (the page's line pitch groups several text lines per detected ink band); read the bands directly
+and re-cropped with PIL where finer zoom was needed. Crops kept: `align/crops/bro5_m0281_idx10_gvs7.jpg`,
+`bro5_m0281_idx56_z.jpg`, `bro5_m0289_carta92_z.jpg`, `bro5_m0280_carta13_zregion_L02.jpg` (all under 2 MB).
+
+### z tie: both "e-favoring" occurrences checked by eye, neither supports changing the key to e
+
+**m0281/Carta 15 has TWO z-coded positions in `align_mask_z.tsv`, not one** (appendix idx10 `z±` and
+idx56 `z`), but `thin_codes_attest.tsv` only tracked idx56 (context `8.18.[z].m.a`) -- idx10 (context
+`13.c.[z].y.g`) was outside AX-BRO3's original "cannot tell" population and was never attested. Checking
+idx10 by eye first, since it is part of the full-corpus tally in `key_mask_z.tsv` (n=9) even though it
+isn't a `thin_codes_attest.tsv` row:
+
+- **idx10** (`bro5_m0281_idx10_gvs7.jpg`): the glyph the appendix transcribed as `z±` is, at native
+  resolution, visually identical to the plain numeral "7" three tokens earlier on the same line
+  (`13.c.7.y.` -- both have the same horizontal top stroke and diagonal descender, no loop, no cross-bar).
+  Decoding the entry with key.tsv and treating this position and its neighbour (idx3/12, `g±`) as unknown
+  gives a **zero-gap, one-to-one match** to the plaintext "que a Rainha": idx8`q`,idx9`u`,idx10`?`,
+  idx11`y=a`,idx12`?`,idx13`y=a`,idx14`8=i`,idx15`m=n`,idx16`10=h`,idx17`y=a` against `q,u,e,a,r,a,i,n,h,a`
+  -- exact letter count, no insertions or deletions needed, if idx10=`e` and idx12(`g±`)=`r`. That is
+  strong local support for "e" at this spot, **but the glyph itself reads as plain code "7" (grade C,
+  n=27, value e already), not as a distinct "z"** -- the DP aligner's "e" answer for this occurrence is
+  fully explained by it actually being code 7 (whose value already is e), not by any new information about
+  code z. This is a transcription conflation (7 vs z in this hand), not a z observation, and it should not
+  count toward z's tally at all. Removing it from `key_mask_z.tsv`'s n=9 corpus (e:3/r:3/g:1/k:1/o:1) drops
+  it to n=8, e:2/r:3/g:1/k:1/o:1 -- **the tie breaks toward r**, the current key value, once this
+  occurrence is excluded as a mistranscription rather than counted as a z=e vote.
+- **idx56** (`bro5_m0281_idx56_z.jpg`, the one row `thin_codes_attest.tsv` actually tracks for this leaf):
+  a distinct closed-loop glyph, clearly not the plain-7 shape seen at idx10 -- this one does look like a
+  separate symbol. But the local context is unreliable: `align/pairs.tsv`'s cipher_raw treats "e que" as a
+  literal (unencoded) plain-word chunk immediately after this position, and **"que" does not occur a
+  second time anywhere in this entry's `plain_raw`** (checked the full 146-character plaintext string
+  directly) -- the anchor-building step (`_anchors.json`/`17_build_pairs.py`, from AX-BRO3, "never
+  re-touched") mis-identified something as literal "e que" that isn't in the deciphered text at all, which
+  means the DP alignment's chunk boundary right after idx56 is built on a false anchor. **Verdict:
+  unreadable/inconclusive from context this pass, not "e"** -- the glyph is real and distinct, but I could
+  not independently derive its value before the box ran out, and the tool's own "e" answer here rests on
+  the same broken anchor. Flagged as a data-quality issue for the next align pass, not resolved.
+- **m0280/Carta 13, the three r-favoring occurrences** (idx79, 99, 102; `bro5_m0280_carta13_zregion_L02.jpg`):
+  visually, this line's "z"-marked glyphs are themselves indistinguishable from the plain numeral 7 used
+  throughout the same line (same horizontal-top-plus-diagonal shape, no loop, no cross-bar) -- consistent
+  with all 8 raw `z`/`z±` rows in `ciphertext_appendix.tsv` being flagged transcription-confidence "M"
+  (none "H"), i.e. the glyph reading itself has never been certain here. The value "r" for these three
+  rests entirely on the decoded context (`Thesoureiro`/`declarou`, already grade C from AX-BRO2/3), not on
+  a distinguishable glyph shape.
+- **m0289/Carta 92** (`bro5_m0289_carta92_z.jpg`, context `25.x.[z].c.g`): this glyph is a genuinely
+  distinct shape -- a barred/crossed form clearly different from the plain-7 shape seen at m0281/idx10 and
+  m0280. But checking `ciphertext_appendix.tsv` directly (`grep` for leaf m0289, entry "Carta 92", code
+  stripped of `±` equal to `z`) found **zero rows** -- this occurrence exists only in `scripts/_anchors.json`
+  (and hence in `align/pairs.tsv` and `thin_codes_attest.tsv`), not in the master ciphertext file
+  `tools/decode_key.py` actually reads. That is a real inconsistency between the two on-disk transcriptions
+  of this entry, not something I can resolve from the image alone in the time left -- flagged here rather
+  than guessed at. Verdict: unreadable/inconclusive this pass; value not established.
+
+**Net effect on the rule-3 bar:** neither "e-favoring" occurrence survives as a clean vote for changing
+z's value. idx10 is not a z-occurrence at all (it is code 7, already valued e). idx56 and the m0289
+occurrence are both real, distinct-looking glyphs but their contexts are unreliable (a false anchor in
+one case, a missing master-transcription row in the other) and neither could be read to a letter this
+pass. **key.tsv unchanged** (`z	r	2	C	m0280/Carta 13`, byte-identical, `git status` confirms).
+`python3 tools/decode_key.py . --check` -> `reading up to date`. No key change, so per the brief,
+`scripts/15_judge_bucket.py` was not re-run (AX2-BRO4 already confirmed letter 134's bucket percentile at
+pt17 5.0, pt18 5.0 with this same key; nothing here changes it): **letter 134 percentile pt17 5.0 -> 5.0,
+pt18 5.0 -> 5.0, unchanged.**
+
+### The 4 undecidable occurrences (x, d, f) -- not reached this pass
+
+Ran out of box time after the z tie (which turned out to need three separate leaf crops and a
+transcription-pipeline discrepancy to chase down, not a quick lookup). `x` (m0289/Carta 92, m0291/Passage
+3a) and `d`/`f` (both m0290/Passage 2a) were not image-checked. Leaf images are on disk
+(`images/full_PT-TT-MSLIV-0638_m0289/90/91.jpg.jpg`); named here as the concrete next step, same as
+AX2-BRO4 left it, now with the added caveat that `x` and `f` may have the same 7-vs-code-glyph confusion
+found here for `z` and should be checked against a clear same-line "7" before trusting any DP-derived
+letter.
+
+### Status
+
+Stays **`partial`**. No key change, no new reading. This pass's main finding is that the "z" tie AX2-BRO4
+found is not safely resolved by re-running the aligner or by raw vote-counting: one of its three
+"e"-favoring data points was a mistranscribed code 7 (removing it breaks the tie toward the current r),
+one rests on a false literal-word anchor in the alignment pipeline, and one (m0289) is not even in the
+master ciphertext file the decode script reads. All three are documented in
+`thin_codes_attest.tsv`'s new `image_hand_check_bro5` column with crop paths, for whoever picks up the
+4 remaining undecidable occurrences or reconciles the `_anchors.json`/`ciphertext_appendix.tsv` gap.
+
+### Host report
+
+No network access; no hosts contacted (leaf images already on disk from AX-BRO2/3/4). `pip install numpy
+pillow scipy` (local package install) to run `tools/iiif_lines.py`. No subagents. Cost: see the lane
+ledger.
