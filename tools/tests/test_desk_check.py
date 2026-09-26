@@ -188,6 +188,61 @@ try:
     under_cap = dc.load_asks_md(asks_path)
     check("(e) DESK CAP does not fire at 1 desk row", dc.check_desk_cap(under_cap, 5) == [])
 
+    # --- (f) SENT MISMATCH (26 Sept 2026, RETRO-2026-09-26j.md item 4) -----------------------------
+    write(os.path.join(outreach_dir, "already-sent.md"),
+          "status: mailbox-draft (26 Sept 2026 17:00 UTC; awaiting the owner's send)\nsubject: x\nto: y\n\nBody.\n")
+    d_sent = [x for x in dc.load_drafts(outreach_dir) if x["slug"] == "already-sent"][0]
+    contributions_sent = (
+        "# Contributions\n\n"
+        "| 26 Sept 2026 | thing (outreach/already-sent.md) | N2 | F1 | someone | email | offer | "
+        "sent by the person 26 Sept 2026 18:00 UTC from the project mailbox (gate 7 checked 17:50); "
+        "reply pending |\n"
+    )
+    problems_f1 = dc.check_sent_mismatch(d_sent, contributions_sent)
+    check("(f) SENT MISMATCH fires: status mailbox-draft vs CONTRIBUTIONS.md already sent",
+          len(problems_f1) == 1, problems_f1)
+
+    # the reverse: status reads sent, but no CONTRIBUTIONS.md row confirms it
+    write(os.path.join(outreach_dir, "claims-sent.md"),
+          "status: sent 26 Sept 2026 18:00 UTC by the person\nsubject: x\nto: y\n\nBody.\n")
+    d_claims = [x for x in dc.load_drafts(outreach_dir) if x["slug"] == "claims-sent"][0]
+    problems_f2 = dc.check_sent_mismatch(d_claims, "# Contributions\n\nnothing relevant here\n")
+    check("(f) SENT MISMATCH fires: status sent but no matching CONTRIBUTIONS.md row",
+          len(problems_f2) == 1, problems_f2)
+
+    # a genuinely matched sent draft (both sides agree) does not fire
+    contributions_agree = (
+        "# Contributions\n\n"
+        "| 26 Sept 2026 | thing (outreach/claims-sent.md) | N2 | F1 | someone | email | offer | "
+        "sent by the person 26 Sept 2026 18:00 UTC from the project mailbox (gate 7 checked 17:50); "
+        "reply pending |\n"
+    )
+    problems_f2_clean = dc.check_sent_mismatch(d_claims, contributions_agree)
+    check("(f) SENT MISMATCH does not fire when CONTRIBUTIONS.md agrees", len(problems_f2_clean) == 0,
+          problems_f2_clean)
+
+    # stale conditional: the phrase survives alongside a checked: line that already landed -- must flag
+    write(os.path.join(outreach_dir, "stale-conditional.md"),
+          "status: mailbox-draft (26 Sept 2026)\n"
+          "voice: rewritten by parent; re-check pending, not sendable until its checked: line lands\n"
+          "subject: x\nto: y\n\n"
+          "checked: 26 Sept 2026 17:50 UTC by OUT-CHECK-V\n"
+          "Body.\n")
+    d_stale = [x for x in dc.load_drafts(outreach_dir) if x["slug"] == "stale-conditional"][0]
+    problems_f3 = dc.check_sent_mismatch(d_stale, "")
+    check("(f) SENT MISMATCH fires: stale conditional survives its own checked: line landing",
+          any("not sendable" in m for m, _ in problems_f3), problems_f3)
+
+    # the conditional with NO checked: line at all yet (genuinely still pending) -- must not flag
+    write(os.path.join(outreach_dir, "still-pending.md"),
+          "status: mailbox-draft (26 Sept 2026)\n"
+          "voice: rewritten by parent; re-check pending, not sendable until its checked: line lands\n"
+          "subject: x\nto: y\n\nBody.\n")
+    d_pending = [x for x in dc.load_drafts(outreach_dir) if x["slug"] == "still-pending"][0]
+    problems_f4 = dc.check_sent_mismatch(d_pending, "")
+    check("(f) SENT MISMATCH does not fire while genuinely still pending (no checked: line yet)",
+          not any("not sendable" in m for m, _ in problems_f4), problems_f4)
+
 finally:
     shutil.rmtree(tmp, ignore_errors=True)
 

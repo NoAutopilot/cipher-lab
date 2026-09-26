@@ -44,6 +44,13 @@ The owner created cipherlab.research@gmail.com and connected it to the parent th
 
 Gate 7 (26 Sept 2026): no mailbox draft is sent until a separate checking session has written a `checked:` line in the draft's header (CLAUDE.md Outreach gate 7); the parent replaces the Gmail draft with the checked text before telling the owner it is ready.
 
+**Send log (26 Sept 2026, RETRO-2026-09-26j.md item 4).** The moment a send is confirmed -- whichever way it happened -- it is recorded in this exact shape, so a target is never recorded as sent twice in two different phrasings, and `tools/desk_check.py`'s (f) SENT MISMATCH check can tell a real send from a stale draft:
+- the draft's `status:` line becomes `sent <UTC timestamp> by the person from the project mailbox (<how the send was confirmed>); reply pending`, keeping the prior value after a `Was:`. `<how the send was confirmed>` is either "Gmail Sent, read by parent `<session>` `<UTC timestamp>`" (a parent noticed the message in the mailbox's Sent folder -- armstrong-madison-editors.md is the worked example) or "SEND-QUEUE row `<id>`, receipt `<target>/outreach-receipts/<id>-<UTC date>.md`" (the owner's send-queue runner, `tools/send_queue_runner_prompt.md`);
+- CONTRIBUTIONS.md's row for the same slug gets `sent by the person <UTC timestamp> from the project mailbox (gate 7 checked <the checked: line's timestamp(s)>; <same parenthetical as above>); reply pending` in its status cell;
+- the ASKS.md row it answers is marked `sent, awaiting reply`.
+
+Either parent may see the confirmation first (both accounts share the one Gmail connector, and either may land a `[SENT-<id>]` PR); whichever one does writes all three in this shape rather than guessing at the other's wording. A `sent` status with no matching CONTRIBUTIONS.md row, or a `mailbox-draft`/stale-conditional header after the send already landed, is what `desk_check.py` (f) flags at every check-in.
+
 ## Owner-side rule (owner's directive, 26 Sept 2026, OPTIMIZATION-2026-09-26.md (a))
 
 The owner does nothing that requires reading this repository. A draft is not `ready` until it is self-contained:

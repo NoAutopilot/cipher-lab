@@ -284,6 +284,11 @@ Loops that run outside this repository and write back into it:
   gives N3 or better; the parent marks it posted; a verifier checks every citation.
 - **Local runners** on the owner's computer answer `JSTOR-QUEUE.tsv` and `LOCAL-QUEUE.tsv` through his logged-in
   browser (`tools/jstor_runner_brief.md`, `tools/local_runner_brief.md`).
+- **Send runner** (26 Sept 2026, owner's decision): the owner's own ChatGPT runner sends checked outreach drafts
+  and reproduction-quote requests from his browser, reading `SEND-QUEUE.tsv` and answering as a `[SENT-<id>]`
+  pull request (`tools/send_queue_runner_prompt.md`). A row is queued only after its draft's gate-7 `checked:`
+  line exists (`tools/send_queue_check.py` is the gate, run before queueing and again before landing); the
+  owner's identity lives in the runner's own task instruction, never in this repository.
 - **Routines**: the weekly retrospective, and "Cipher Lab: breakthrough alert (email)", which the parent fires for a
   real result.
 
@@ -529,7 +534,11 @@ Every brief states a cap in dollars of usage (the session metadata's cost figure
    `.claude/briefs/parent.md` duty 3a), `tools/lq_answer_check.py` (26 Sept 2026, the L19 incident: a
    LOCAL-QUEUE.tsv runner negative -- "no items", "not found" -- is gated on carrying a holding-catalogue record
    and its quoted availability flag from `tools/data/catalogue_ladders.tsv` before it lands, since an image
-   portal's "no items" is a search result, not a digitisation verdict), `tools/family_run.py`
+   portal's "no items" is a search result, not a digitisation verdict), `tools/send_queue_check.py`
+   (26 Sept 2026, SEND-QUEUE-TOOL: a `SEND-QUEUE.tsv` row does not stay `queued` -- and a `[SENT-<id>]` PR is
+   not landed -- unless its draft exists, its gate-7 `checked:` line is at or after the row's own `checked`
+   cell, the `[SIGN-OFF]` placeholder and the disclosure sentence's substance are in the body, a CONTRIBUTIONS.md
+   row names the draft's slug, and a `form` row carries `form_fields`), `tools/family_run.py`
    (rule 3: a hypothesis family runs on a target only after its matched control has run and read; both numbers are written
    side by side to `ciphers/<t>/HYPOTHESES.md`), `tools/near_check.py` (rule 5's near-solve amendment: a NEAR.md/status.json
    `near` target must never read `closed-negative`, the two registers must agree, and a row stale past 48 hours is flagged),

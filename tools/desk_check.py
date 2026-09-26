@@ -28,6 +28,16 @@ Checks (each prints one line per problem; --fix-suggest adds the one-line fix):
       (`.claude/briefs/parent.md` duty 6 "Desk") exists so the owner never faces more than a handful of
       paste-ready actions at once; everything else is `backlog` with a one-line expected value. This
       check does not decide which rows to demote -- it only says the cap is exceeded.
+  (f) SENT MISMATCH (26 Sept 2026, RETRO-2026-09-26j.md item 4): a draft whose `status:` line reads
+      `mailbox-draft` while CONTRIBUTIONS.md already carries a "sent by the person" row for the same
+      slug (the send happened but the draft's own header was never updated -- outreach/README.md's
+      "Send log" shape), or the reverse (`status: sent` with no matching CONTRIBUTIONS.md row at all);
+      and a header carrying the stale conditional phrase "not sendable until its checked: line lands"
+      when a `checked:` line already exists in the same file -- a conditional the file never revisits
+      once the condition clears. Lesson of 26 Sept 2026: all six mailbox drafts' `voice:` header line
+      read "OUT-CHECK-V ... not sendable" for about 15 minutes after OUT-CHECK-V's own `checked:` line
+      had already landed below it, because nothing cross-checked the conditional line against the
+      unconditional ones.
 
 Exit 0 if no problems, 1 if any. `--json PATH` writes a small {"flagged": [...], "problems": N,
 "generated": "..."} file for tools/build_dashboard.py's "check" chip; the board must still build with
@@ -36,6 +46,7 @@ that file absent.
 Usage:
   tools/desk_check.py [--outreach-dir outreach] [--asks ASKS.md] [--local-queue LOCAL-QUEUE.tsv]
                        [--jstor-queue JSTOR-QUEUE.tsv] [--so-queue SECOND-OPINIONS-QUEUE.tsv]
+                       [--contributions CONTRIBUTIONS.md]
                        [--ciphers-dir ciphers] [--repo-root .] [--now "26 Sept 2026 17:00"]
                        [--cap 5] [--fix-suggest] [--json desk-check.json]
 
@@ -343,6 +354,56 @@ def check_no_date(draft):
     return []
 
 
+STALE_CONDITIONAL_RE = re.compile(r'not\s+sendable\s+until\s+its\s+checked:\s+line\s+lands', re.IGNORECASE)
+SENT_ROW_RE = re.compile(r'sent\s+by\s+the\s+person', re.IGNORECASE)
+CHECKED_LINE_RE = re.compile(r'^checked:\s*(.+)$', re.IGNORECASE | re.MULTILINE)
+
+
+def contributions_rows_for_slug(slug, contributions_text):
+    """Table-row lines (one row per physical line, this repo's own convention) naming this draft's
+    slug, by its outreach path or the bare slug word."""
+    rows = []
+    for line in (contributions_text or "").splitlines():
+        if not line.startswith("| "):
+            continue
+        if (f"outreach/{slug}.md" in line or f"outreach/mailbox/{slug}.json" in line
+                or re.search(rf'\b{re.escape(slug)}\b', line)):
+            rows.append(line)
+    return rows
+
+
+def check_sent_mismatch(draft, contributions_text):
+    """(f) SENT MISMATCH -- see the module docstring."""
+    problems = []
+    slug = draft["slug"]
+    rows = contributions_rows_for_slug(slug, contributions_text)
+    sent_row = any(SENT_ROW_RE.search(r) for r in rows)
+
+    if draft["status_word"] == "mailbox-draft" and sent_row:
+        problems.append((
+            f"(f) SENT MISMATCH {slug}: status reads mailbox-draft, but CONTRIBUTIONS.md already carries "
+            f"a 'sent by the person' row for this slug",
+            f"update {slug}.md's status line to the Send log shape (outreach/README.md)"))
+    elif draft["status_word"] == "sent" and not sent_row:
+        problems.append((
+            f"(f) SENT MISMATCH {slug}: status reads sent, but CONTRIBUTIONS.md carries no matching "
+            f"'sent by the person' row for this slug",
+            f"add or correct the CONTRIBUTIONS.md row for {slug} (Send log shape, outreach/README.md)"))
+
+    # `checked:` lines usually sit after a blank line below the key:value header block (this
+    # repo's own convention, see outreach/*.md), so parse_headers() puts them in the body, not
+    # head -- search both, plus every parsed header value, so a duplicate `checked:` line (a
+    # second gate-7 pass) is not lost to dict collapsing on repeated keys.
+    full_text = (draft["status_raw"] + "\n" + "\n".join(f"{k}: {v}" for k, v in draft["head"].items())
+                 + "\n" + draft["body"])
+    if STALE_CONDITIONAL_RE.search(full_text) and CHECKED_LINE_RE.search(full_text):
+        problems.append((
+            f"(f) SENT MISMATCH {slug}: header still reads 'not sendable until its checked: line lands', "
+            f"but a checked: line already exists in the same file",
+            f"remove the stale conditional sentence from {slug}.md's header now that the checked: line has landed"))
+    return problems
+
+
 def check_desk_cap(asks_rows, cap):
     """(e) DESK CAP -- see the module docstring."""
     desk_nums = sorted(n for n, row in asks_rows.items() if leading_word(row["status"]) == "desk")
@@ -354,13 +415,15 @@ def check_desk_cap(asks_rows, cap):
         f"demote {len(desk_nums) - cap} of these rows to `backlog: <one-line value>`")]
 
 
-def run_checks(drafts, asks_rows, local_rows, jstor_rows, so_rows, ciphers_dir, repo_root, git_log_fn):
+def run_checks(drafts, asks_rows, local_rows, jstor_rows, so_rows, ciphers_dir, repo_root, git_log_fn,
+               contributions_text=""):
     problems = []
     for draft in drafts:
         problems += check_stale_draft(draft, local_rows, jstor_rows, so_rows, ciphers_dir, repo_root, git_log_fn)
         problems += check_desk_mismatch(draft, asks_rows)
         problems += check_body_contradiction(draft, asks_rows, local_rows)
         problems += check_no_date(draft)
+        problems += check_sent_mismatch(draft, contributions_text)
     return problems
 
 
@@ -371,6 +434,7 @@ def main():
     ap.add_argument("--local-queue", default=os.path.join(ROOT, "LOCAL-QUEUE.tsv"))
     ap.add_argument("--jstor-queue", default=os.path.join(ROOT, "JSTOR-QUEUE.tsv"))
     ap.add_argument("--so-queue", default=os.path.join(ROOT, "SECOND-OPINIONS-QUEUE.tsv"))
+    ap.add_argument("--contributions", default=os.path.join(ROOT, "CONTRIBUTIONS.md"))
     ap.add_argument("--ciphers-dir", default=os.path.join(ROOT, "ciphers"))
     ap.add_argument("--repo-root", default=ROOT)
     ap.add_argument("--now", default=None, help="unused by the checks themselves; accepted for parity with the other tools' offline-test hook")
@@ -384,8 +448,13 @@ def main():
     local_rows = load_tsv(args.local_queue)
     jstor_rows = load_tsv(args.jstor_queue)
     so_rows = load_tsv(args.so_queue)
+    contributions_text = ""
+    if os.path.exists(args.contributions):
+        with open(args.contributions, encoding="utf-8") as f:
+            contributions_text = f.read()
 
-    problems = run_checks(drafts, asks_rows, local_rows, jstor_rows, so_rows, args.ciphers_dir, args.repo_root, git_commits_since)
+    problems = run_checks(drafts, asks_rows, local_rows, jstor_rows, so_rows, args.ciphers_dir, args.repo_root,
+                           git_commits_since, contributions_text)
     problems += check_desk_cap(asks_rows, args.cap)
 
     flagged_slugs = set()
@@ -394,7 +463,7 @@ def main():
         if args.fix_suggest:
             print(f"  fix: {fix}")
         # every message names the slug right after its letter code, e.g. "(a) STALE DRAFT bodleian-rawl-a24-p4:"
-        m = re.match(r'\([a-e]\) [A-Z ]+ ([a-z0-9][a-z0-9\-]*):', msg)
+        m = re.match(r'\([a-f]\) [A-Z ]+ ([a-z0-9][a-z0-9\-]*):', msg)
         if m:
             flagged_slugs.add(m.group(1))
 
