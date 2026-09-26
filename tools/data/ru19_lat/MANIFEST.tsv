@@ -1,0 +1,5 @@
+scheme	file	letters	q_pct
+s1	tools/data/ru19_lat/s1.txt.gz	3468213	1.44
+s1s	tools/data/ru19_lat/s1s.txt.gz	3418231	0.00
+s3p	tools/data/ru19_lat/s3p.txt.gz	3468300	2.89
+s3	tools/data/ru19_lat/s3.txt.gz	3813869	11.69
