@@ -2104,3 +2104,16 @@ That record (marco.ox.ac.uk, ark:/29072/x08k71nh14zj, "Rawlinson Manuscripts") l
 decipherment beside the cipher on those leaves remains unknown. The reproduction request
 (outreach/bodleian-rawl-a24-p4.md) stays with the owner. Full runner transcript: PR 22 (closed without merge,
 `jstor-runs`/local-queue landing convention), commit history of LOCAL-QUEUE.tsv row L19.
+
+### L24 follow-up (ASKS row 30), 26 Sept 2026
+
+LOCAL-QUEUE.tsv row L24 asked MARCO's item-level Connections list under both A. 24/1 and A. 24/2 (34 records
+total) for a William Stamford / Calais item and for the modern folio matching Birch's "vol. xxiv p.73, 76". No
+item description in either list names Stamford or Calais, or explicitly identifies a cipher, decipherment or
+enclosure; site searches on `Stamford AND "Rawl. A. 24"` and `Calais AND "Rawl. A. 24"` return only records
+outside A. 24. The modern folio for pp.73/76 is not established: A. 24/1's own catalogue "Separated Materials"
+note lists folios moved out to A. 24* (71-72, 87-91a-b, 95-96, 98a-b, 103, 106, 112, 145, 180, 182a-b, 192,
+213-214a-b, 229-231a-b), none of them 73 or 76, so the pagination gap is not explained by that move. Both
+volume records repeat L19's "NOT AVAILABLE ONLINE" flag. No reproduction order or message was sent; this stays
+with the owner alongside L19 (outreach/bodleian-rawl-a24-p4.md). Full runner transcript: PR 23 (closed without
+merge), commit history of LOCAL-QUEUE.tsv row L24.
