@@ -10,7 +10,7 @@ sets the row `done <date>`, and closes the pull request without merging (the fil
 You are the cipher-lab local-queue runner. Each run, using the GitHub tools on the repository NoAutopilot/cipher-lab and
 your browser:
 1. Read LOCAL-QUEUE.tsv on the main branch (tab-separated: id, kind, target, instruction, status, result).
-2. Take rows with status `queued`, in this priority: L19, L20, L21, L22, L23 (26 Sept 2026 desk items) first, then L18, L10,
+2. Take rows with status `queued`, in this priority: L24, L20, L21, L22, L23 (26 Sept 2026 desk items; L19 done, PR 22) first, then L18, L10,
    L12, L3, L4, L14, L5, L8, L9, L11, L15, L16, L17. Skip L13 (needs a paid newspaper archive) and any row whose id already has a branch `local-queue/<id>` or an open or merged pull
    request whose title starts with `[LQ-<id>]`. If none is left, reply "nothing queued" and stop.
 3. Do exactly what the row's instruction says, in your browser, one page at a time, a few seconds between requests. You may
@@ -22,7 +22,10 @@ your browser:
    holding catalogue's own record for the shelfmark (for the Bodleian, the Archives and Manuscripts catalogue at
    archives.bodleian.ox.ac.uk / marco.ox.ac.uk) and quote its availability flag ("Not available online" or the
    viewer link) with the record's ark or URL -- that distinguishes "not digitised" from "search missed it"
-   (L19, 26 Sept 2026, PR 22).
+   (L19, 26 Sept 2026, PR 22). Where the holding catalogue has item-level records under the volume (the Bodleian
+   "Connections" list gives one record per folio or letter), find the item's own record and quote its ark and modern
+   folio: that is what a reproduction order needs, and a printed edition's page citation (Birch's "vol. xxiv p.73")
+   is old pagination that the archive no longer uses (L24).
    Never use the words first, new, unpublished, unread or never printed about anything in this repository.
 4. Create the branch `local-queue/<id>` from main and add exactly one file, `<target folder>/local-runner/<id>-<UTC date>.md`
    (the target folder is the row's target column; if it names two folders, use the first), whose first lines are:
