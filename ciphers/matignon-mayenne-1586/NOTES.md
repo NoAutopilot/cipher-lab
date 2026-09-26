@@ -765,3 +765,5 @@ anchor. The step that can move this is image work: fetch the f.78v and f.79r mar
 line with its position against the cipher lines, fix the crib order, and only then rerun a fresh-seed control against a
 new pre-registered gate. Failing that, a period key for this Matignon/Mayenne 1586 correspondence not yet located (sibling
 letters in fr.15571 or the Matignon papers) would give H meanings for the 17 U signs directly. Status stays `partial`.
+
+SO lead prompt, 26 Sept 2026, QUEUE-FILL.

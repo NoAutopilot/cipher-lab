@@ -90,3 +90,5 @@ This job ran the same control at N=164 on de19 with beam widened first to **beam
 **Degenerate-optimum check (brief item 5):** moot here -- the target was never decoded (control-only throughout), so there is no target key offset or decoded span to check against a de19 source file. Recorded for whoever runs the target if a beam/design change ever clears the gate: check the best key text span against `tools/data/de19/*.txt.gz` word-for-word before trusting a "German" reading, since the corpus and the judge share the same source pool.
 
 **Status:** `hessen-1824` stays `partial` (rule 5's near-solve amendment; not `closed-negative`). Every family in the spec's ladder (periodic_vigenere, masc, running_key, homophonic) now has a logged control-first run; running_key's is a non-test at two independent beams and two independent era-matched-vs-mismatched corpora, not a negative. Whether the ladder is exhausted, and any NEAR.md update, is the orchestrator's call.
+
+SO lead prompt, 26 Sept 2026, QUEUE-FILL.

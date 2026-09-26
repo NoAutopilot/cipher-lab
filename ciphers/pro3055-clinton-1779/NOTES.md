@@ -587,3 +587,5 @@ OCR dumps, re-fetchable from the identifiers above). No other hosts.
 session promotes 2894 or 3853 to text known; both gain an independent second printed source (Brymner) confirming
 the cipher tag, date and correspondents, but neither source prints the deciphered content. 4833's discrepancy is
 still open. No decoding attempted; no novelty classification made (rule 10, left to a verifier).
+
+queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.

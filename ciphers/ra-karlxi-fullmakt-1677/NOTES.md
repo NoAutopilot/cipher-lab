@@ -196,3 +196,5 @@ Riksregistraturet, or a Danish/Dutch-side edition of the same 1677 negotiation -
 search), but it closes the one loose end this row's own verdict said must be resolved "before it is scored
 further." Recommend: re-run the standard check-solved sweep's edition-search step with this finding recorded,
 rather than treating the edition question as still fully open.
+
+queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.

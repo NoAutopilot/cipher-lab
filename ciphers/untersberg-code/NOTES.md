@@ -250,3 +250,5 @@ Counts (rule 4, unchanged from bUNT8): C: 0, M: 4, H: 0, I: 1 (bUNT5's line-leve
 ### Files this pass (bUNT9)
 
 `specs/cheap-tests/untersberg-code/align_symA_witnesses.py`, `specs/cheap-tests/untersberg-code/align_symA_witnesses_output.txt`. No new host requests (disk-only, all witness data already in `witnesses.tsv`). No subagents.
+
+SO lead prompt, 26 Sept 2026, QUEUE-FILL.

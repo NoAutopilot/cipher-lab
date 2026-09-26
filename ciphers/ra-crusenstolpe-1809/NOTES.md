@@ -78,3 +78,5 @@ belysande det inre af tidernas historia," 1840/1845). Free routes tried:
 No free full text of Portefeuille found this pass. The "standard 1809 historiography" half of the named next
 step (a named search of general coup historiography) was not attempted either, for the same reason. This edition
 risk stays open, unclosed. REQUEST.md (Riksarkivet reading-room copy order) stands unchanged.
+
+queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.

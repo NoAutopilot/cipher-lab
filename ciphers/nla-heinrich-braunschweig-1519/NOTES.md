@@ -101,3 +101,5 @@ edition). Posting `confirm` to ROOM.
 Host requests this section: archive.org 4 (advancedsearch + 2x metadata + 1x djvu.txt fetch for `10019400bsb`;
 plus 1 earlier metadata/djvu.txt pair for `11094270bsb` before finding the right volume — 6 total, >=3s apart,
 IA slot).
+
+queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.

@@ -68,3 +68,5 @@ vol. 1 (rather than a name-string grep alone) to rule out an OCR-garbled entry; 
 per LESSONS.md precedent) before any solve attempt, since a firm identification would open a proper printed-
 correspondence search for any of the three; (3) check whether SP 8's neighbouring volumes/pieces (SP 8/1-5,
 8/7+) hold a general cipher key for William III's continental correspondents — not searched this pass.
+
+queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.

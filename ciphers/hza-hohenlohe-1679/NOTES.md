@@ -80,3 +80,5 @@ routes. The nomination stays HELD until either the Anubis gate is cleared (a bro
 in scope) or the article is read by another route (ILL, a library proxy, or a direct request to the journal).
 
 Host requests this section: WebFetch 1 (Anubis-blocked), WebSearch 2, archive.org 1 (advancedsearch, 0 hits).
+
+queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.

@@ -456,3 +456,5 @@ exact-phrase query). `core.ac.uk`/`fileserver-az.core.ac.uk`: 1 (404 after redir
 one-retry rule already exhausted by the two attempts landing as one logical try). `british-history.ac.uk`:
 2 WebFetch calls (vol2 landing page for the December 1524 URL, then the December 1524 page itself).
 WebSearch: 2 queries. No DECODE login, no image opened, no transcription, no novelty wording (rule 10).
+
+queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.

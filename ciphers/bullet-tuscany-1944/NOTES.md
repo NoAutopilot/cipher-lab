@@ -93,3 +93,5 @@ no 429/403 seen. Google Books (www.googleapis.com/books/v1, with GOOGLE_BOOKS_KE
 requests, one 429 seen on an earlier unkeyed reachability probe (not counted here, no retry needed once
 keyed). OpenAlex and Semantic Scholar: 1 request each (reported above, under Search record). No
 gallica.bnf.fr, dbnl.org or de-crypt.org use. Well under the 60-request cap named in the brief.
+
+SO lead prompt, 26 Sept 2026, QUEUE-FILL.

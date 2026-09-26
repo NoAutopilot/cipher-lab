@@ -159,3 +159,5 @@ leave-one-file-out false-negative spread 0.44 (N=200)/0.11 (N=500) on those 2 fi
 adding 3 more sources, per `tools/data/en/README.md`. This does not change the verdict above (test 4's own
 result turns on the control's near-zero recovery, not on the language-check PASS, which the note above
 already calls not meaningful) -- the verdict stands as written, with that caveat on record.
+
+SO lead prompt, 26 Sept 2026, QUEUE-FILL.

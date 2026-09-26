@@ -765,3 +765,5 @@ Requests this session: gallica.bnf.fr ~11 (1 manifest fetch via `tools/gallica_f
 at 1200-2400px across f203, f209, f166, f216, f235, f217, all HTTP 200, no 429/403, no retries needed, spaced
 1.5s+ apart). 1 Sonnet subagent (the second-reader cross-check on five crops, one call). cost: see the lane
 ledger.
+
+SO lead prompt, 26 Sept 2026, QUEUE-FILL.

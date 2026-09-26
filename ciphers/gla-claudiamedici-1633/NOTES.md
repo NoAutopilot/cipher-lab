@@ -112,3 +112,5 @@ free-text route from Google Books either, matching the archive.org/HathiTrust ne
 csDA2. No new free route found. Next step unchanged: library/ILL access to BAGK NF2 Bd.8, or the person reads
 it directly; REQUEST.md's GLA copy-order route (for the two shelfmarks themselves, independent of the edition
 question) stands unchanged and blocked, waiting on the owner.
+
+queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.

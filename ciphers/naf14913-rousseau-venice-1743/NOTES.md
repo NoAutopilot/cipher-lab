@@ -118,3 +118,5 @@ sender/recipient/place + cipher keyword; family (ii), the 2015 article's own tit
 JSTOR independently indexes it or citing scholarship), and LOCAL-QUEUE.tsv row L25 (`edition-read`, the
 owner's own Cairn access for the article itself, plus a WorldCat check for Labro 2012). No change to the
 target's `open` status or its "do not promote" recommendation pending those reads.
+
+queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.

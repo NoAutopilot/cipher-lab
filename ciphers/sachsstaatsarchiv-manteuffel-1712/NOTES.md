@@ -70,3 +70,5 @@ biography; (3) read the Wackerbarth/Société-des-antisobres ResearchGate paper 
 around "Chiffren de S. Exc. Mgr. le C. de Flemming, Loc." and check whether it resolves to Loc. 694 specifically;
 (4) resolve the Sächsisches Staatsarchiv `#digitalisat` anchor on Loc. 694/10 to a working image URL or confirm
 it does not serve one.
+
+queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.

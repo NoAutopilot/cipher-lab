@@ -78,3 +78,5 @@ would close this properly.
 
 Host requests this section: archive.org 1 (advancedsearch, 121 hits, no further fetches), WebFetch 1 (LABW
 Pregizer Vorwort), WebSearch 3.
+
+queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.

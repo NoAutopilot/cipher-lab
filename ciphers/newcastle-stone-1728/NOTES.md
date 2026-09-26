@@ -85,3 +85,5 @@ the Coxe full-text check above turning up nothing.
 WebSearch: 4. `archive.org`: 0 (identifiers located by WebSearch only this pass; no full-text fetch made —
 left as the next worker's first move). `github.com`: shared shallow clone with the rest of this batch. No TNA
 Discovery calls (out of this brief's hosts). No Google Books calls (queries logged above as pending).
+
+queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.

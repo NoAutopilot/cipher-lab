@@ -68,3 +68,5 @@ straightforward key application.
 ## Request log
 
 24 Sept 2026: no personal data logged here.
+
+queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.

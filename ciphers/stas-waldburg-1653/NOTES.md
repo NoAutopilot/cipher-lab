@@ -80,3 +80,5 @@ stronger. Posting `confirm` to ROOM.
 Host requests this section: archive.org 3 (advancedsearch + metadata + djvu.txt fetch for
 `GeschichteDesFuerstlichenHausesWaldburgInSchwaben3`, >=3s apart, IA slot); WebSearch 1 (to confirm which
 archive.org identifier is volume 3 and its year range).
+
+queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.
