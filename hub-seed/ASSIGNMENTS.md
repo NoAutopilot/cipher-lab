@@ -964,3 +964,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T21:22Z	session_01YRqRBPLyFtgMnkBdNcfrkQ	PR-LAND-8	done 3.81 D (get_session), ledger row cost filled in, retitled ARCHIVED, archived by parent 7j	PR 28 closed unmerged; 27 rows done, 5 requeued (ASKS 76)
 2026-09-26T21:22Z	session_011LAPngFAkNyCrLozWbQ3cP	ARM-BRANT	done 3.75 D- (get_session, 1.25x cap), ledgered, retitled ARCHIVED, archived by parent 7j	Brant Papers Box 37 located, not digitised; ASKS 77
 2026-09-26T21:23Z	session_01UGBiAFTKw3PpiWaav9kcV6	MAL-MONO (Sonnet, cap 2.5)	malsburg-hessen-1636: G.G./A.A./K.K. monogram search with doubled-pair control, consistent-word count	brief 2026-09-26-parent-ytbiz-mal-mono.md; parent 7j
+2026-09-26T21:26Z	session_01CMhMJAKvrwD28vNJcsDbar	SALV-KP	done 5.36 D- (get_session), ledgered, retitled ARCHIVED, archived by LANE SALV	Sanudo 40: Navagero Toledo 10/16/17 Oct 1525 hits; wordlist for job 2
+2026-09-26T21:25Z	session_01J4RvnF3CQD9Le96VTaQUWK	SALV-CTX (Opus, cap 12)	it16dip corpus + wordcode context option + matched control, pre-registered gate; no target run	brief 2026-09-26-lane-salv-j2a-context.md; LANE SALV
