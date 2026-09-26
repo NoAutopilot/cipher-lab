@@ -480,3 +480,52 @@ letters of this alphabet. They may be nomenclator codes, nulls, word dividers or
 key may be wrong on part of the leaves. Suggested next step, not run: rerun the same search only on the 127 'read'
 spans of spans.tsv plus their neighbours, where the context does read, and/or add a per-leaf split (some leaves may
 use a different table). Status stays `partial` (rule 5).
+
+**NEAR step (1c) (bMAT1C), 26 Sept 2026.** Committed bMATBEAM's per-occurrence M choices as grade S. Steps:
+`exceptions.tsv` written (1,648 rows, one per M occurrence, `line`/`position`/`value`/`grade S`/reason
+"bMATBEAM fr16 6-gram beam, known-answer control 0.83"), value taken from the target's chosen restart
+(seed 8 of {7,8,9}, obj -52937.459, the same argmax rule `main()` uses to pick `res['target']`), reproduced
+by rerunning `mu_beam.py`'s exact deterministic search (`search()`, same seeds) rather than trusting an
+aggregate: per-sign per-value tallies from the reproduction matched `mu_beam_results.json`'s `m_choices`
+exactly (0 mismatches across all 14 M signs, 1,648 occurrences) before any row was written, so this is the
+same beam already control-backed in bMATBEAM, not a re-decision. No U value touched (bMATBEAM's finding
+stands: the U solution reads as the shuffled-text null, not the known-answer pattern). `decode.json` now
+points at `exceptions.tsv`. `tools/decode_key.py ciphers/matignon-mayenne-1586` then `--check`: exit 0,
+"reading up to date".
+
+Grade counts: before H 10,074 / S 0 / M 1,648 / U 1,272 (C 0, I 0) -> after H 10,074 / **S 1,648** / M 0 /
+U 1,272 (C 0, I 0).
+
+Judge (fr16, `lettresdecatheri01`, same spec as the earlier steps), new `reading.txt` vs a freshly-built
+shuffled-line-order control (token order shuffled within each line of the same rendered reading, 3 seeds,
+same letters -- not a re-decode from ciphertext, so `exceptions.tsv`'s position-keyed rows cannot be
+misapplied to the wrong sign under shuffling):
+
+```
+target (S-committed reading):        FAIL language: score=-1.545, null_p99=-1.942, real_p05=-0.838, real_median=-0.781, N=14459
+                                      ok   words: cover=0.714, min=0.3, real_text_median_cover=0.946
+control seed 1 (shuffled-in-line):    FAIL language: score=-1.898 | words cover=0.601
+control seed 2 (shuffled-in-line):    FAIL language: score=-1.896 | words cover=0.605
+control seed 3 (shuffled-in-line):    FAIL language: score=-1.888 | words cover=0.604
+```
+Control mean -1.894 (range 0.010 wide); target beats every seed by +0.34 to +0.35 (a margin of the same
+order as the +0.41/+0.136-cover margin already on file for the pre-beam straight-substitution reading), and
+cover +0.11-0.11 over the control mean. Still FAIL against `real_p05` (-0.838): control-backed margin holds,
+gate does not.
+
+Note against over-reading this as progress: the target's own score got **worse**, not better, than the
+pre-beam straight-substitution reading on the identical judge and rendering (-1.371 before this step vs
+-1.545 now; cover 0.814 -> 0.714). Likely reason (inference, not tested): bMATBEAM's per-occurrence M
+choices were optimised *jointly* with the U coordinate-ascent step (each M Viterbi pass in `mu_beam.py`'s
+`search()` ran against whatever U values the alternating loop held at that point, mostly `TOK`/wrong per
+bMATBEAM's own finding), not against the naive bracket-placeholder rendering `decode_key.py` uses for
+unkeyed signs here; committing the M half of a jointly-fit pair while discarding the U half changes the
+context each M choice was fit to. The straight-substitution reading's old M values (`v.split('|')[0]`, an
+arbitrary first-candidate pick) were not "wrong" here so much as this new reading and the old one are
+different heuristics neither licensed by a matched control at the *reading* level (only bMATBEAM's own
+M-occurrence accuracy on control (A) is control-backed, per rule 3; the judge margin above is the
+new reading's own control, and it does hold).
+
+Grade counts (rule 4), final: H 10,074 / S 1,648 / M 0 / U 1,272 (C 0, I 0). Status stays `partial` (rule 5:
+a control-backed reproducible margin, not closed-negative; a control-backed gap, since the judge gate is
+still not met).
