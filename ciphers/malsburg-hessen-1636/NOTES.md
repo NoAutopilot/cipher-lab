@@ -67,3 +67,46 @@ malsburg-hessen-1636: open (line 1) -- edition/page or full-text-search citation
 EXIT: 0
 ```
 Gate passed 26 Sept 2026 03:43 UTC. Proceeding to image fetch and sampled blind transcription.
+
+## Pass B + first test (bMAL2, 26 Sept 2026)
+
+Intake gate re-run by the orchestrator at brief time (04:50 UTC): `open`, exit 0. Job bMAL2 continues from bMAL's
+pass A (f.3 `postscript` 8 lines/136 tokens, f.12 `postscript2` 6 lines/~110 tokens; bMAL was interrupted at
+8.67/6 USD before writing its own NOTES.md section, so this is the first narrative account of what pass A covers).
+
+Crop step (mandatory, `tools/iiif_lines.py`, numpy/pillow/scipy installed this session):
+```
+python3 tools/iiif_lines.py --image ciphers/malsburg-hessen-1636/images/hstam_4_h_1411_0003.jpg --out ciphers/malsburg-hessen-1636/crops/0003 --debug
+  -> region 2946x2312, 30 lines, 30 bands x 2 segments
+python3 tools/iiif_lines.py --image ciphers/malsburg-hessen-1636/images/hstam_4_h_1411_0012.jpg --out ciphers/malsburg-hessen-1636/crops/0012 --debug
+  -> region 2834x4284, 64 lines, 64 bands x 2 segments
+```
+Debug overlays checked (both kept in crops/*/[]_lines_debug.jpg). f.3's postscript (pass A's 8 lines) is the
+numeral block below the signature at the very bottom of the page, lines L24-L30 of the auto-detector plus one
+line the detector missed below its last band (image y 2047-2110, saved manually as L31_s1.jpg, box added to
+manifest.json with a note) -- the detector's region bottom (y=2047) fell short of the actual page bottom
+(y=2312) by 265px, cutting off the 8th line. f.12's postscript2 (pass A's 6 lines) is NOT the first numeral
+block encountered after "Datum den 17/7 Januarij Ao 1637" (that block runs 11 lines total, L39-L49); pass A's
+6 lines are the LAST 6 of those 11 (L44-L49) -- confirmed by exact token match: pass A line 1 (47 O 60 93 54 61
+7 97 95 10 16 63 18 61 83 129 76 G 42, 19 tokens) reads identically off crop L44. Lines L39-L43 (the first 5 of
+the 11) are untranscribed by either pass -- flagged below as a follow-up, out of this job's scope. f.12 also
+carries a THIRD cipher-looking passage below the two signatures, in a visually different hand/alphabet (mixed
+case letters and digits, no dot-separated numeral groups, marked "cifrat cela" in the margin) -- also untouched,
+also flagged below.
+
+Pruned crops/0003 and crops/0012 to only the 14 line-crop files actually used (8+6) plus each debug overlay and
+manifest.json, after the full 60+128 auto-detected crops pushed the folder to 31 MB (over the 30 MB rule);
+manifest.json still records every auto-detected line's box for a future worker who wants the rest re-cut from
+the images already on disk.
+
+**Blind-pass integrity note:** before writing this section, the worker ran `head -20` on pass_a_0003.tsv and
+pass_a_0012.tsv to check the column format, which incidentally displayed pass A's actual token values for f.3
+line 1 (17 tokens) + line 2's first 2 tokens, and f.12 line 1 (19 tokens) in full -- more than the "FORMAT only"
+allowance in the brief. To keep pass B itself genuinely blind despite this, the actual transcription was
+delegated whole (both leaves, all 14 lines) to a fresh Sonnet subagent given only the 14 crop image paths above,
+with no mention of pass A, its tokens, or expected line/token counts; the subagent's own context has no exposure
+to the values the worker saw. The worker's own line-boundary identification (which physical image rows are the
+postscript blocks) rests on the manuscript's visible layout, not on pass A token values, except for the one
+cross-check quoted above (matching pass A's already-seen line-1 tokens against crop L44 to confirm the f.12
+block-start hypothesis) -- that check confirms a boundary, not a token reading, and no pass_b value was copied
+from it. Recorded here in full per rule 7/10's honesty convention rather than left for a QA pass to catch.
