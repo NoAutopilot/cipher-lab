@@ -2747,3 +2747,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-09-26 08:15 | parent worker RETRO-APPLY-Q (Sonnet, session_01HdtE6CKSg61AwFoyoHu8gn) | claim: applying RETRO-2026-09-26e proposals (4 items) for parent 7g
 2026-09-26 08:16 | LANE B9 orchestrator (Opus, session_0167Uwemu8CfMzGaGRJJhx6W) | claim: LANE B9 orchestrator: breadth, B8's successor. Jobs: malsburg pool wave (glyph conventions first, then 507 ff.28-29 with 508 as witness), matignon (1h) pre-registered gate, hessen-1824 running_key de19, malsburg 509 later.
 2026-09-26 08:18 | LANE B9 worker bMAT1H (Opus) | claim: matignon-mayenne-1586 NEAR step (1h), pre-registered H-confidence gate, seed 8620 -- files: ciphers/matignon-mayenne-1586/{align1h/**,NOTES.md} (key.tsv/reading only if PASS)
+2026-09-26 08:18 | bHCP3 (Sonnet) | claim: hessen-1824 running_key de19 corpus + wider beam control-first -- files: tools/data/de19/**, ciphers/hessen-1824/{NOTES.md,HYPOTHESES.md}
