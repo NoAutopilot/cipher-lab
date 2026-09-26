@@ -127,6 +127,47 @@ def test_slug_of_strips_trailing_parenthetical():
     assert nc.slug_of("targ-a") == "targ-a"
 
 
+def test_closed_row_with_active_shape_is_a_shape_problem(tmp_path):
+    """A row under '## Closed rows' that accidentally has the active table's 6-column shape (26
+    Sept 2026, hessen-1824, LANE B8 commit 36c0715) is not counted as a live near-solve row, and is
+    flagged as its own shape problem naming the row."""
+    near_path = tmp_path / "NEAR.md"
+    lines = ["# NEAR.md test fixture\n\n", "| Target | Evidence | Next | Lane | Blocker | Last touched (UTC) |\n",
+             "|---|---|---|---|---|---|\n",
+             "| alpha (a test row) | some evidence | some next step | LANE X | none | 25 Sept 2026 20:00 |\n",
+             "\n", "## Closed rows (the named step ran; numbers in the row)\n\n",
+             "| Target | Why it left | Date |\n", "|---|---|---|\n",
+             "| beta | closed for real | 25 Sept 2026 19:00 |\n",
+             "| gamma (misfiled, 6 cells) | evidence text | next step text | LANE X | none | 25 Sept 2026 21:00 |\n"]
+    near_path.write_text("".join(lines), encoding="utf-8")
+
+    rows = nc.parse_near_md(str(near_path), 2026)
+    targets = {r["target"] for r in rows}
+    assert targets == {"alpha"}, targets
+
+    shape_problems = nc.find_shape_problems(str(near_path))
+    assert len(shape_problems) == 1
+    assert "gamma" in shape_problems[0]
+    assert "Closed rows" in shape_problems[0]
+
+
+def test_active_row_with_closed_shape_is_a_shape_problem(tmp_path):
+    """A 3-column row above '## Closed rows' (that table's own shape) is flagged too."""
+    near_path = tmp_path / "NEAR.md"
+    lines = ["# NEAR.md test fixture\n\n", "| Target | Evidence | Next | Lane | Blocker | Last touched (UTC) |\n",
+             "|---|---|---|---|---|---|\n",
+             "| alpha (a test row) | some evidence | some next step | LANE X | none | 25 Sept 2026 20:00 |\n",
+             "| delta (misfiled, 3 cells) | closed for real | 25 Sept 2026 19:00 |\n",
+             "\n", "## Closed rows (the named step ran; numbers in the row)\n\n",
+             "| Target | Why it left | Date |\n", "|---|---|---|\n",
+             "| beta | closed for real | 25 Sept 2026 19:00 |\n"]
+    near_path.write_text("".join(lines), encoding="utf-8")
+
+    shape_problems = nc.find_shape_problems(str(near_path))
+    assert len(shape_problems) == 1
+    assert "delta" in shape_problems[0]
+
+
 if __name__ == "__main__":
     import subprocess
     sys.exit(subprocess.call([sys.executable, "-m", "pytest", __file__, "-q"]))

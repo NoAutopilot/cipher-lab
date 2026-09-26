@@ -45,6 +45,8 @@ import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+CLOSED_HEADING_RE = re.compile(r'^##\s*Closed rows', re.IGNORECASE)
+
 STATUS_WORDS = ("open", "partial", "solved", "closed-negative", "found-solved", "blocked", "offline-only")
 # Longest-first so `closed-negative` doesn't get cut short by a bare `closed` (not in the
 # vocabulary, but defensive) and so word-boundary matching behaves the same regardless of order.
@@ -82,11 +84,18 @@ def slug_of(cell):
 
 
 def parse_near_md(path, default_year):
-    """Return one dict per NEAR.md table row: {target, touched, touched_dt}."""
+    """Return one dict per active-table NEAR.md row: {target, touched, touched_dt}. Rows under the
+    '## Closed rows' heading are a different, three-column table (Target | Why it left | Date) and
+    are never counted here, even if one accidentally carries the active table's six-column shape
+    (26 Sept 2026, hessen-1824, LANE B8 commit 36c0715 -- the row's own text argued the target was
+    still open, "the family is untestable... the target stays open, not closed", but the row was
+    pasted under the Closed heading anyway). See find_shape_problems for catching that misfile."""
     rows = []
     if not os.path.exists(path):
         return rows
     for line in open(path, encoding="utf-8"):
+        if CLOSED_HEADING_RE.match(line):
+            break
         if not line.startswith("| ") or line.startswith("|---"):
             continue
         cells = [c.strip() for c in line.strip().strip("|").split(" | ")]
@@ -95,6 +104,35 @@ def parse_near_md(path, default_year):
         touched = cells[-1]
         rows.append({"target": slug_of(cells[0]), "touched": touched, "touched_dt": parse_dt(touched, default_year)})
     return rows
+
+
+def find_shape_problems(path):
+    """Scan every table row in NEAR.md for one whose column count belongs to the other table: a
+    6+-column row under '## Closed rows' (the active table's shape, misfiled there -- 26 Sept 2026,
+    hessen-1824), or a 3-column row above that heading (the closed table's shape, appearing where
+    an active row is expected). Returns a list of problem strings naming the row, empty if none."""
+    problems = []
+    if not os.path.exists(path):
+        return problems
+    in_closed = False
+    for line in open(path, encoding="utf-8"):
+        if CLOSED_HEADING_RE.match(line):
+            in_closed = True
+            continue
+        if not line.startswith("| ") or line.startswith("|---"):
+            continue
+        cells = [c.strip() for c in line.strip().strip("|").split(" | ")]
+        if cells[0] in ("Target",):
+            continue
+        target = slug_of(cells[0])
+        if in_closed and len(cells) >= 6:
+            problems.append(f"(d) {target} is a {len(cells)}-column row under '## Closed rows' "
+                             f"(that table's rows should be 3 columns: Target | Why it left | Date) "
+                             f"-- looks like a misfiled active row")
+        elif not in_closed and len(cells) == 3:
+            problems.append(f"(d) {target} is a 3-column row above '## Closed rows' "
+                             f"(that shape belongs to the closed table) -- looks like a misfiled closed row")
+    return problems
 
 
 def load_status_near(path):
@@ -176,6 +214,13 @@ def main():
     near_rows = parse_near_md(args.near, now.year)
     status_near = load_status_near(args.status)
     code, problems, warnings = run_checks(near_rows, status_near, args.ciphers_dir, now)
+    problems = find_shape_problems(args.near) + problems
+    if problems:
+        code = 1
+    elif warnings:
+        code = 2
+    else:
+        code = 0
 
     for p in problems:
         print("PROBLEM:", p)

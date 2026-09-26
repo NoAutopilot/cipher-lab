@@ -35,6 +35,8 @@ the diff's fraction_read figure for any row it keeps.
 
 Intake step (added 25 Sept 2026 18:14 UTC by LANE B2 after QA/2026-09-25-1740.md failure 3: bMOU, bKAL, bDEB and bPOL ran transcription/IC work with no check-solved verdict on file). Before the cheap test: if `ciphers/<slug>/NOTES.md` exists, run `python3 tools/intake_gate_check.py <slug>` and paste its output into your NOTES.md; exit 0 lets you proceed. Otherwise (no folder, or a nonzero exit) do a minimal check-solved first and write its verdict as NOTES.md lines 1-2 in the gate's format (status word on line 1; line 2 names what was read, with dates): the Cipherbrain post and its comment thread already on disk under sources/schmeh/, a grep of both solver repositories for the item (clone shallow, grep, delete), and one OpenAlex plus one Semantic Scholar query for the item's name with 'solved' or 'decrypted'. Re-run the gate; proceed only on exit 0, else stop with a `blocked` line and the reason. This step counts inside the cap.
 
+Before pricing a QUEUE.md row's named cheap test into a job brief (26 Sept 2026, RETRO-2026-09-26e, scout.md's "Quote the source" fix): the orchestrator opens the row's own cited source line and checks it says what the row claims before the brief goes out, not after a worker is briefed to run it (QUEUE.md row 27, armstrong-madison-1808, TOMO-REPLY).
+
 Common tail (paste into every brief):
 
 > First action: `tools/room.py --start` (fetches, force-checks-out `main` onto `origin/main`, and refuses a

@@ -72,3 +72,20 @@ applied unchanged, and three named cycle-3 briefs written from it.
   handoff, acting on every line it prints (adopt, ledger+archive, delete the trigger, or backfill an ASSIGNMENTS
   row) so a handoff never hands off an orphan it could have caught itself; the parent's own check-in duty 3a runs
   the same tool across the whole account.
+- **Name the objective's degenerate optimum (26 Sept 2026, AX2-4612S).** A brief that specifies a scoring function
+  for a worker to optimize (log-probability, coverage, edit distance, any score summed or maximized over a
+  variable-length or variable-count output) names, in the same sentence, what trivial or degenerate output would
+  score best under it -- an empty string, every code deleted, every slot set to the same value -- so the worker
+  either rules it out explicitly (a length-neutral score, a floor per unit) or the brief author catches it before
+  the worker builds around it. AX2-4612S's brief scored "the fr16 order-5 model's total log-probability of the
+  whole decoded stream": a sum over a variable-length stream that rewards deleting any code to NULL, since every
+  character's own log-probability is negative. The worker's own control caught it (100/110 false deletions on a
+  null test) before any target ran, but only after the tool was already built -- a brief-time check is one
+  sentence and finds the same flaw before a $5 tool-and-control cycle has to find it instead.
+- **Self-ledger cost: read `get_session` on yourself last (26 Sept 2026, RETRO-2026-09-26e).** A lane orchestrator's
+  close-row cost comes from a fresh `get_session` call on its own session id, taken after every worker's cost is
+  already ledgered, not from a running total kept in your head; run `python3 tools/ledger_check.py` before writing
+  the row either way (parent.md, "Opening a lane" and "Self-ledger cost"). Two self-ledger rows understated cost
+  11-17% against the same-window `get_session` figure this way (LANE B7 5.55 vs 6.67; LANE V8 6.91 vs 7.70). The
+  parent's own ASSIGNMENTS done row for the lane records both the lane's self-ledgered figure and the parent's own
+  `get_session` reading, replacing the self-ledgered figure in place rather than duplicating the row.

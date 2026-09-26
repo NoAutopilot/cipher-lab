@@ -15,3 +15,10 @@ nominations in its first hour, all copy-order, while LANE R sat idle for copy-fr
 (PROCESS-2026-09-24 proposal 4) A Top-50 item enters the queue only with its survey rank and the named cheap
 test: `UNSOLVED-SURVEY.md` already gives the ranking with the reason per row, and QUEUE.md's dropped table
 already says so for most famous items -- do not score one in by fame alone.
+**Quote the source for a named cheap test (26 Sept 2026, RETRO-2026-09-26e).** When a row names a specific cheap
+test from an external source (a crib, a sibling table, a solver-repo lead), paste the exact sentence or line from
+that source into the row alongside the citation, not just the source's name -- a scout mix-up between two similar
+items is otherwise invisible until a breadth worker is briefed to run the test and finds the source does not say
+what the row claims. QUEUE.md row 27 (armstrong-madison-1808) named "Krajcovic's crib" against "the 15 Feb letter
+to Jefferson"; TOMO-REPLY (26 Sept 2026) found this broken on both halves when it went to use the citation, after
+it had already reached a breadth brief.

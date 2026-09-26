@@ -115,6 +115,17 @@ arrives (24 Sept 2026: three lane orchestrators and five workers died 22:11-23:1
 reconstructing all three from disk -- LEDGER.md rows for R5, N4, B and the closer; RETRO-2026-09-25i proposal 1). A
 brief that names this file inherits the instruction; it does not need restating per lane.
 
+**Self-ledger cost: read `get_session` on yourself last (26 Sept 2026, RETRO-2026-09-26e).** When a lane
+orchestrator closes (or a parent archives itself), write the self-ledger row's own cost from a fresh `get_session`
+call on your own session id, taken *after* every worker's cost is already ledgered -- not from a running total kept
+in your head across the lane's lifetime. Two self-ledger rows this window (LANE B7 5.55 vs `get_session` 6.67; LANE
+V8 6.91 vs 7.70) understated cost by 11-17% against the same-window `get_session` figure cited in the row's own
+check-in line -- both errors in the same direction, consistent with summing remembered worker costs rather than
+reading the number fresh at close time. A lane's self-ledgered close cost is provisional until the parent replaces
+it in place from its own `get_session` read on that lane orchestrator's session id; the parent's ASSIGNMENTS done
+row for the lane records both figures (the self-ledger and the parent's `get_session` reading) rather than
+overwriting one with the other.
+
 ## Handing over
 
 Naming and model (owner, 25 Sept 2026): every parent session is created on `claude-fable-5-1` and titled "Orchestrator N", N one more than the current parent's number (7c is Orchestrator 4, 7d is Orchestrator 5); the internal 7a/7b/7c labels stay in the files for lineage, the session title is the number. Lane orchestrators keep their lane names.
