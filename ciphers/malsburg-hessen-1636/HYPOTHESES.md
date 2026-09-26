@@ -35,6 +35,26 @@ evidence of what any individual code or code-pair (G.G./K.K. or G.G./A.A. -- the
 disagree on the second mark) means. Files: `cribs.tsv`, `cribs_build2.py`, `cribs_control.py`,
 `pool_match.py`, `transcription/{0032,0033}_passA.tsv` (subagent), `transcription/{0032,0033}_passB_lines.txt` (this worker).
 
+## MAL-MONO monogram/sigil grep (26 Sept 2026, `mono_search.py`/`mono_control.py`, disk-only, no family_run.py involved)
+
+Statistic: raw occurrence count of the doubled-letter monogram labels G.G./A.A./K.K. across
+`pool/pooled.tsv`, `cribs.tsv`, `manual_witness_settled*.tsv`, `dup_align.tsv`, every `recon_*/` TSV and
+`clear_00*.txt`, against a doubled-letter-pair control (every `L.L.`/`LL` for all 26 letters, same files).
+Full detail and named next step: NOTES.md "MAL-MONO (26 Sept 2026)".
+
+TARGET (on-disk raw count): G.G.=3 (f.32 M, f.33 M, **f.23 L46 pos.21 H -- new, a bare `GG` sign inside the
+running cipher, not a naming clause**), A.A.=1 (f.33 M only), K.K.=0 on disk (bMALS's one sighting is a
+direct image read not captured by any file this job scanned). CONTROL, other 23 letters: raw median 0, raw
+p95 30 (inflated by bMALG's own documented `i`->1/`z`->2 digit-sign confusions plus one unreconciled `tt`
+pass-A artifact, letters I/T/Z); excluding those three known-artefactual letters, other 20 letters median
+0, **p95 1**. Against the clean p95: **G.G. (3) is above p95 (1); A.A. (1) ties p95; K.K. (0) is below.**
+
+Gate: bMALS's own "3+ independent occurrences" phrasing is met for G.G. (raw sighting count, two records).
+bMALX's stricter "consistent candidate WORD" gate (used above for the 509-only crib-consistency check) is
+NOT met for any label -- this job assigned no class/gloss to the new f.23 occurrence (a context read, not
+done here, would be needed; out of this job's no-cryptanalysis scope). Nomenclator family (job 4, per
+`family_run.py --family nomenclator`) is therefore not opened by this job; named next step in NOTES.md.
+
 <!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
 
 | date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |

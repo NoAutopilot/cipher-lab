@@ -1431,3 +1431,103 @@ job's ~1 MB of new crops) -- a one-line flag, not fixed here (out of scope; the 
 bMALS's own folder-shrink job earlier the same day).
 
 Hosts: none (disk only, per the brief).
+
+## MAL-MONO (26 Sept 2026, parent worker MAL-MONO, disk-only)
+
+Intake gate re-run: `python3 tools/intake_gate_check.py ciphers/malsburg-hessen-1636` -> `partial (line 1)
+-- edition/page or full-text-search citation found within 6 lines`, exit 0.
+
+Job: bMALS's own "One-line follow-up suggestion" (this file, line ~1419-1423) -- a targeted grep of
+`pool/pooled.tsv`, `cribs.tsv`, `manual_witness_settled*.tsv`, `dup_align.tsv`, every `recon_*/` TSV and
+`clear_00*.txt` for the "G.G./A.A./K.K." monogram labels and the f.32 diamond sigil, before any further
+blind leaf work. Scripts read, models judge (Usage 2): `mono_search.py` (search + `mono_hits.tsv`),
+`mono_control.py` (doubled-letter-pair baseline, rule 3). No cryptanalysis, no leaf pass, no gloss assigned
+to any occurrence.
+
+**U1 search (`mono_search.py`, output `mono_hits.tsv`).** 5 rows (4 distinct hits; pooled.tsv and
+recon_0023/ciphertext_draft.tsv report the same underlying occurrence):
+
+| leaf | line | position | token | label | context | grade | file |
+|---|---|---|---|---|---|---|---|
+| 0023 (record 505) | hstam_4_h_1411_0023_L46 | 21 | `GG` | G.G. | ...15 13 37 70 84 **GG** Y 22 48 83 F... (bare sign inside the dense cipher block, L14-L52 per bMAL23 -- not a clear-prose line) | H (both blind passes agree, `recon_0023/ciphertext_draft.tsv`) | pool/pooled.tsv, recon_0023/ciphertext_draft.tsv |
+| 0033 (record 509) | 0033_L2 | 18 | `GG.` / `A.A.` | G.G. / A.A. | crib row 11.N's own right_context: "mit GG. A.A." | M (cribs.tsv, unreconciled crib context string) | cribs.tsv |
+
+No `K.K.`/`KK` token anywhere in these files: bMALS's own image read of f.33 ("...N. mit G.G. [?] oder
+K.K.") is a direct-image reading, but `cribs.tsv`'s crib row for that line (11.N, position 18) stops at
+"mit GG. A.A." -- the crib-building pass never captured a row whose context reaches "oder K.K.", so the
+one K.K. sighting bMALS reports is not itself present in any already-transcribed file this search covers.
+No sign in `glyph_map.tsv` or `equivalences.tsv` is labelled diamond/lozenge/sigil (0 hits) -- the f.32
+mark has never been assigned a canonical sign value in either file.
+
+The f.32 naming-span occurrence of G.G. (bMALS: "...oder [diamond] nach G.G. genannt") is not itself a hit
+in this search either -- like the f.33 K.K., it sits in prose between crib rows that `cribs.tsv` never
+captured (crib code 155 at 0032_L7 stops at "mit fließt X.X. oder"; the next crib row is a fresh line,
+0032_L8). It is not double-counted or missed by `mono_hits.tsv`; it is simply not on disk in a form this
+grep reaches, and is carried forward from bMALS's own NOTES.md paragraph by hand below.
+
+**Consistent-word count (occurrences per label, independent occurrences only, leaf ids):**
+- **G.G.: 3** -- f.32 naming span (bMALS, direct image read, M), f.33 naming list (bMALS + this job's
+  `cribs.tsv` hit, M), **f.23 bare cipher-stream sign, L46 pos.21 (this job, H grade, new)**. The third
+  occurrence is in a different record (505, not 509) and a different context (inside the running cipher,
+  not a naming clause) from the first two.
+- **A.A.: 1** -- f.33 naming list only (bMALS + this job's `cribs.tsv` hit).
+- **K.K.: 1** -- f.33 naming list only, by bMALS's direct image read; **0 on disk** in the files this job
+  searched (see above).
+- Diamond/lozenge/sigil: **0** occurrences of a mapped sign anywhere in `glyph_map.tsv`/`equivalences.tsv`.
+
+**Whether the 3+ gate is met.** Ambiguous between two readings already in this file, and this job does not
+resolve the ambiguity itself (that is a judgement call for the orchestrator, not a grep): bMALS's own
+"3+ independent occurrences" phrasing is now met for G.G. on a raw-sighting count (3, across two different
+records). But `bMALX`'s crib-consistency gate (HYPOTHESES.md "bMALX crib consistency") -- the one every
+other family-opening decision on this target has used -- requires "a consistent candidate WORD", i.e. a
+class/gloss attached to each occurrence, not just a sighting of the sign; this job assigned no gloss to
+the new f.23 occurrence (reading a context/class for it, the way bMALX did for `cribs.tsv`'s rows, is a
+paleographic step this job did not do, not itself cryptanalysis, but out of this job's scope regardless).
+**So: 3+ raw sightings, yes, for G.G. only; 3+ *glossed* occurrences, no, for any label.**
+
+**U2 control (`mono_control.py`, rule 3 -- a count without a baseline is not a test).** Doubled-letter-pair
+counts (`L.L.`/`LL`, case-insensitive, with or without stops) for all 26 letters across the same files:
+target letters G=3, A=1, K=0 (on-disk count, differs from the K=1 image-only count above). The other 23
+letters: raw median 0, raw p95 30 (driven entirely by `I` 30, `T` 28, `Z` 32 -- all three are bMALG's own
+documented digit-sign confusions or unreconciled raw pass artifacts, not letter marks: `i`->digit `1`,
+`z`->digit `2` per the "Glyph conventions (bMALG)" section above, and `tt` is pass A's raw, unreconciled
+reading in `recon_0028/ciphertext_draft.tsv` rows flagged `differ`/`gap` against pass B's `44`/`T`/`-`, not
+a settled sign). Excluding those three digit-confusion letters (a cleaner control, since the target letters
+G/A/K are not among the confused digit letters and this exclusion only removes known-artefactual letters,
+not cherry-picked ones): **other 20 letters median 0, p95 1** (full sorted counts: eighteen 0s, then 1, 2).
+Against that cleaner p95: **G.G. (3) sits above p95 (1) -- the only target letter that does; A.A. (1) ties
+p95; K.K. (0) is below.** Against the unfiltered raw p95 (30, artefact-inflated), none of the three target
+letters clears it. Both numbers reported per rule 3; HYPOTHESES.md carries the same pair on one line below.
+
+No doubled sign in the pooled/recon position-streams (same sign at two consecutive positions in one line)
+maps to G, A or K specifically -- the doubled-sign list (`mono_control.py` output) is dominated by digit
+signs (`2` x52, `16` x9, `1` x4, etc.) and `X` x6, `#` x2; no doubled `G`/`A`/`K` as a *separate two-position*
+run (as opposed to the single fused `GG` token already counted above).
+
+**Verdict.** Status stays `partial` (rule 5); no key claim, no gloss, no H/C grade assigned to any new
+occurrence. G.G.'s raw sighting count crosses 3 and clears the cleaner doubled-pair control's p95, which is
+new evidence since bMALS (a third, independently-graded H occurrence in a different record) -- but it is
+not yet "a consistent candidate word" by the stricter gate `bMALX` used, so this job does not itself open a
+nomenclator family; it reports the count and control for the orchestrator to weigh.
+
+**Named next step.** Two candidates, in order of cost:
+1. **Cheapest, and settles the ambiguity above either way:** read the immediate context around
+   `hstam_4_h_1411_0023_L46` position 21 (crop already on disk, `crops/0023/`) for a candidate
+   person/place/title class the way `bMALX` did for `cribs.tsv`'s rows -- a context/paleography read, not
+   codebreaking. If a class or gloss can be read there, the "3 glossed occurrences" gate is met and
+   `family_run.py --family nomenclator` (control first, per rule 3) opens on G.G.; if not, the count stays
+   a 3-sighting/0-gloss split. Estimated well under USD 1 (a single-line context read, not a subagent pass).
+2. **If that is inconclusive or a genuine fourth sighting is wanted before opening a family:** the
+   likeliest unread leaf for a fourth occurrence is **f.15 (`hstam_4_h_1411_0015`, record 503 1/3)** per
+   `extent.tsv` -- "one cipher passage (4 full lines) embedded mid-letter; rest of the ~45 detected lines
+   is clear German prose" -- the highest ratio of untranscribed clear German prose to cipher of any leaf
+   not yet read at all (ff.15/18/25/29/31 have no `recon_*`/`clear_*` files; f.15's prose share is the
+   largest of the five). A clear-prose-dominated leaf is exactly where a third naming clause (if one
+   exists) would sit, on bMALS's and bMAL23's own precedent (both known naming/monogram mentions are in
+   clear or interspersed-clear text, not solid cipher). Per-leaf cost: about USD 4-5 for a single non-blind
+   read of the clear portion only (`clear_00xx.txt` convention, ~40 clear lines; CLAUDE.md Usage 6's ~USD
+   1/page floor USD 4, or LANE B7's ~USD 5/leaf image-work convention) -- cheaper than a full two-blind-pass
+   leaf reconciliation (~USD 8-16 per Usage 6's AX-COMP2/bMALS precedents) since only the clear prose, not
+   the cipher block, needs reading for this specific question.
+
+Files: `mono_search.py`, `mono_control.py`, `mono_hits.tsv`. No hosts (disk only).
