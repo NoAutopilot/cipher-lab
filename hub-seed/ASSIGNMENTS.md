@@ -661,3 +661,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T01:35Z	session_01DT6RBTD79xaeQ7VDd4wkkP	bBLZ5 (Sonnet, cap 6)	blitz-ciphers pages 1-6 fetch + blind pass + consistency control	brief 2026-09-26-lane-b5-blitz-pages.md; LANE B5
 2026-09-26T01:35Z	session_018rGmoW7iWQMi5zDpzGtAwW	bMAT2 (Sonnet, cap 4)	matignon-mayenne-1586 read/unread split, M/U two-context with control	brief 2026-09-26-lane-b5-matignon-mu.md; LANE B5
 2026-09-26T01:41Z	session_015aTDvg65RN4QfJMyHPY14c	V7-QA5 (Sonnet, cap 5)	rolling QA window 23:41-01:41	LANE V7 brief job 3
+2026-09-26T01:55Z	session_017haw3oAm387c9YR2u8fxTE	GOLD-KAL2 done $3.44 D, archived by LANE GOLD3	Russian convention-B s3p/s1: controls 0.999/0.997 vs judge FAIL -1.706/-1.729 (control-backed negatives); s1s-A and s3-B CONTROL BELOW GATE (0.733, 0.677), untested; periodic IC flat
