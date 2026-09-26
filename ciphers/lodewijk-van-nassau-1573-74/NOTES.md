@@ -1755,3 +1755,80 @@ rise only if the emitted 'm' lands on a printed m, so the test can fail; for 123
 letter cannot add a match except through a path shift, so the gate is close to unpassable for the NULL direction by
 construction -- a per-occurrence diagnostic (does the emitted 'l' land on a printed l?) is reported beside it, and it
 cannot license a change on its own.
+
+**(1) Conflict tests** (`python3 axmerge3/conflict_test.py [--check]` -> `axmerge3/conflict_test.tsv`, per-occurrence
+`axmerge3/conflict_occ.tsv`; numpy installed this session for the aligner). "matches" = aligner exact matches summed
+over pages; "own hits" = occurrences where the tested code's emitted letter lands on the same printed letter.
+
+| code | occ. 5810/5811/4503 | matches key_full value (5810/5811/4503) | matches 4614 value | own hits kf / 4614 | literal gate | verdict in v3 |
+|---|---|---|---|---|---|---|
+| 127 (kf NULL, 4614 m) | 34/5/3 = 42 | 4436/1318/330 | 4436/1318/330 | - / 2 | fails (delta 0/0/0) | NULL kept (grade C); both m "hits" are artefacts: 5810's two copies of "ville de Harle[m]", where 223 Harlem is the neighbour |
+| 129 (kf NULL, 4614 m) | 25/4/1 = 30 | 4427/1306/330 | 4431/1317/330 | - / 3 | passes (+4/+11/0) | **dual reading, M**, NULL kept -- see below |
+| 123 (kf l, 4614 NULL) | 2/12/0 = 14 | 4436/1315/330 | 4436/1316/330 | 0 / - | passes (0/+1/0) | **dual reading, M**, l kept -- see below |
+| 107 (kf k, 4614 i) | 1/0/0 = 1 | 4436/1316/330 | 4437/1316/330 | 0 / 1 | < 3 occurrences | **dual reading, M**, k kept (i matches the print at 1/1 here and 2/2 on 4613/4615, information only) |
+| 95 (kf g, 4614 h) | 2/0/0 = 2 | 4436/1316/330 | 4434/1316/330 | 2 / 0 | < 3 occurrences | **dual reading, M**, g kept (g matches the print at 2/2) |
+| 57 (kf z, 4614 x) | 1/2/0 = 3 | 4436/1316/330 | 4435/1315/330 | 2 / 0 | fails (-1/-1/0) | z kept (spelling, not key) |
+
+**The two literal passes are path shifts, not hits, so neither changes a value (conservative choice, logged per
+COMMON; flag for the orchestrator).** My implementation note above assumed the match count could rise for 129 only
+where the emitted m lands on a printed m; it did not hold. 129 = m gains +4 in 5810 with 2 own hits and +11 in 5811
+with 1 own hit: 10 of the 5811 points come from the DP re-routing around two transcription gaps (5811 p1_L09 and its
+copy p5_L08, where free 129 absorbed "smesontesteplusquebien"), not from m. Likewise 123's +1 in 5811 comes with 0 own
+hits (the l never lands on a printed l in 14 Groen occurrences). Taking 4614's value on these literal passes would
+put m at 27 between-word positions in 5810/5811/4503, and delete the l that 4613/4615's printed decipherment shows
+at 1 of 3 (sib row: 1473 -> 1472). What the evidence does show: **129 is mostly a null but stands for m in a
+minority of places** -- 3 of 30 Groen occurrences land on a real printed m (5810 "plusieurs [m]oyens", "qu'elle
+[m]'a", 5811 "che[m]yn"), plus 4614's "quinze [129]ille"; **123 is a null in the Groen letters (0/14 l hits) and in
+4614 (3 of 4) but l in 4613/4615** (qu'ilz, Cartil). Both are recorded as dual readings at M with the numbers in
+key_full's note; a context rule (123/129 read as letter only when the surrounding word needs it) is the orchestrator's
+call, not made here.
+
+**(2) Additions, grade H, from 4614's period decipherment** (licence re-checked against `key_4614.tsv`: grade H, every
+occurrence agreeing): 172 lecontejean (1), 177 m (1), 217 srgeertruydenbergh (3), 241 zeelande (1; also 4496 gloss
+"Zellando" and names.tsv C), 289 francfort (1). **5 additions.** Values are senses, as in the rest of key_full.
+
+**(3) key_full v3** (`python3 axnames/build_key_full.py --check` -> "key_full.tsv up to date"; build line `... v3_H 5
+(172,177,217,241,289) v3_dual_M 4 (129,123,107,95)`); 169 rows (v2 164 incl. header, +5). v2 snapshot kept at
+`axmerge3/key_full_v2.tsv`. Known-answer regression on 4613/4615 (`axnames/compare_full.py decode.json
+ciphertext_sib.tsv --list` -> `axmerge3/regress_sib_v3.out`): **tokens 1107, C under key.tsv 1086, regressions 0**;
+changed 3 (128 ? U -> NULL M as in v2; 107 k I -> k M x2, grade only).
+
+**(4) Re-decodes** (`tools/decode_key.py . --config decode_<n>_full.json --check`: "reading up to date" x4) and the
+v2 -> v3 diff (`python3 axmerge3/diff_v2_v3.py [--check]` -> `axmerge3/diff_v2_v3.tsv`, v2 readings kept in
+`axmerge3/v2/`): **30 tokens changed, 2 in value** (172 ? U -> lecontejean: 4611 p1_L03 at H, 5797 p6_spot4 at M,
+the M being decode_key's single-pass transcription grade on that sign), **28 in grade only** (129 NULL C -> M x20,
+95 g I -> M x8). No letter value changed anywhere; 127/57/123/107 values unchanged.
+
+5797 spots under v3 (Groen IV pp.223-225 frame as in AX-NAMES2):
+
+| spot | codes | decode v3 (value/grade) | Groen's frame | value in the gap? |
+|---|---|---|---|---|
+| p5_spot5 | 131.123.173 | NULL/C, l/M (dual reading), ?/U | "ist gestern zue ghen gezogen" | no (173 no row) |
+| p5_spot3 | 154.124.144.134 und 161.126.136.146 | herzogvonsachsen/C, NULL/C x3, landgraf/H, NULL/C, uingt/M, ?/U | "Bey dem Herzog von Sachsen und ist [w]illens" | yes, 161 Landgraf H (unchanged) |
+| p6_spot4 | 172 zeuget ... 100.155 | **lecontejean/M** (value H, sign single-pass M), ... h/I, ?/U | "zeuget diesen morgen Kölln der hofnung" | **yes, new in v3: [le Conte Jean] zeuget** -- value from 4614, a French letter of Lodewijk's; in 5797 (Jan and Lodewijk jointly) it would name Count Jan himself; candidate for the verifier |
+| p7_spot2 | 153.146.137 | pfaltzgraf/H, ?/U, NULL/C | "helt sich wol und thut in warheit viel" | yes, 153 Pfaltzgraf H (unchanged) |
+| p7_spot6 | 182.128.133.142 | ?/U, NULL/M, NULL/C, ?/U | "ist willig und urbietig" | no (182 no row) |
+| p8_spot7 | 156.127.135.144.129 | ?/U, NULL/C, NULL/C, NULL/C, NULL/**M** (129 dual) | "begert meiner" | no (156 no row) |
+
+**Spots with a value: 3 of 6** (p5_spot3, p6_spot4, p7_spot2). The neighbouring nulls at p5_spot3 (124, 144, 134,
+126) and p7_spot2 (137) do not change: none of them is a 4614 conflict code, all stay NULL C; the only neighbour
+change is 129 at p8_spot7 (NULL C -> NULL M, value unchanged).
+
+**(5) revisions_for_audit.tsv** regenerated (`python3 axnames/revisions.py [--check]`, up to date): 4610 changed 136
+(word/name 14, NULL 122), U 288 -> 155; 4611 101 (13, 88), U 227 -> 130; 4616 1, U 26 -> 25; 5797 21 (6, 15), U 31
+-> 11. v2 copy at `axmerge3/v2/revisions_for_audit.tsv`. AUDIT.md untouched (V8-NA5797 holds it).
+
+**Judge**, `python3 tools/judge_plaintext.py specs/lodewijk-5797.json --file ciphers/lodewijk-van-nassau-1573-74/reading_5797_full.txt`:
+```
+FAIL language: score=-1.467, null_p99=-1.613, real_p05=-0.455, real_median=-0.43, mode=both, N=325
+FAIL words: cover=0.338, min=0.5, real_text_median_cover=0.763
+FAIL - lodewijk-5797 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+Same caveat as AX-NAMES2/AX-MERGE (spots file is disconnected clusters far below judge length; one-file de16 corpus,
+no fold spread). The p6_spot4 fill rests on the period decipherment (H value), not on the judge.
+
+**Next (one line):** orchestrator to decide whether 123/129 become context rules (letter inside a word, null between
+words) and to re-run the fresh-instance re-derivation (rule 7) on the v3 readings before V8 cites p6_spot4.
+Requests: none (disk only). No subagents. Files: `axnames/build_key_full.py`, `key_full.tsv`,
+`reading_{5797,4610,4611,4616}_full{.txt,_tokens.tsv}`, `revisions_for_audit.tsv`, `axmerge3/**`, this section.
+Novelty not classified (rule 10).

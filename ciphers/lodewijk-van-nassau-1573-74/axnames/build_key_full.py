@@ -19,6 +19,13 @@ keep 123/136 at key.tsv's own value (128 unchanged from AX-NAMES2) and adds the 
 outside names.tsv's aligner pipeline (192 is names.tsv grade U -- Groen leaves the subject blank at 5549 PS1 --
 and 221 has no names.tsv row at all), so their licence is checked against axgloss/gloss_attest.tsv instead.
 
+AX-MERGE3 v3 (26 Sept 2026, LANE AX brief 2026-09-26-lane-ax-merge3): (i) additions from 4614's contemporary
+decipherment on the leaf (WVO 4614 pp.5-6, aligned by AX-COMP, key_4614.tsv), grade H: 172, 177, 217, 241, 289;
+licence checked against key_4614.tsv (grade H, every occurrence agreeing). (ii) the six 4614-vs-key_full conflicts
+(127, 129, 123, 107, 95, 57) settled by the known-answer gate in NOTES.md AX-MERGE3 (axmerge3/conflict_test.tsv):
+no code changes value; 129, 123, 107, 95 are marked 'dual reading, M' (key_full value kept); 127 and 57 keep their
+value and grade with the test recorded in the note.
+
 Each licence is re-checked against names.tsv / gloss_attest.tsv here, so a changed source file that no longer
 supports a row fails loudly.
 
@@ -65,6 +72,46 @@ CONFLICT_NULL = ['128']
 CONFLICT_KEEP_M = ['123', '136']
 CONFLICT_KEEP_NOTE = ("NULL in 13/13 (123) and 8/8 (136) aligned observations in 5810/5811 -- dual use or aligner "
                       "bias, unresolved")
+
+
+# AX-MERGE3 v3 (26 Sept 2026)
+PERIOD_4614_H = {  # code: (value, source)
+    '172': ('lecontejean', "4614 (WVO pp.5-6) contemporary decipherment on the leaf: 'mon frere le Conte Jean lequel' "
+            "over 'mon frere [172] lequel' (1 of 1, AX-COMP key_4614.tsv)"),
+    '177': ('m', "4614 (WVO pp.5-6) contemporary decipherment: 'jestyme' over 'jesty[177]e' (1 of 1, AX-COMP key_4614.tsv)"),
+    '217': ('srgeertruydenbergh', "4614 (WVO pp.5-6) contemporary decipherment: 'Sr Geertruydenbergh' at all 3 "
+            "occurrences (AX-COMP key_4614.tsv)"),
+    '241': ('zeelande', "4614 (WVO pp.5-6) contemporary decipherment: 'estatz de hollande et Zeelande' over "
+            "'... et [241]' (1 of 1, AX-COMP key_4614.tsv); also 4496 p4 contemporary gloss 'Zellando' over 241 "
+            "(AX-GLOSS gloss_attest.tsv) and names.tsv C (5810 aligned to Groen)"),
+    '289': ('francfort', "4614 (WVO pp.5-6) contemporary decipherment: 'est party pour Francfort' over "
+            "'est party pour [289]' (1 of 1, AX-COMP key_4614.tsv)"),
+}
+DUAL_M = {  # code: note (key_full value kept, grade set to M) -- AX-MERGE3 gate, axmerge3/conflict_test.tsv
+    '129': ("AX-MERGE3: dual reading, M. 4614's period decipherment reads m once ('quinze [129]ille'); on 5810/5811/4503 "
+            "(30 occurrences) the emitted m lands on a printed m at 3 (5810 'plusieurs [m]oyens', 'qu'elle [m]'a', 5811 "
+            "'che[m]yn'), the rest between words. Literal gate passed (+4, +11, 0) but the 5811 gain is path shift at "
+            "transcription gaps, not m hits; value kept NULL, flagged to the orchestrator"),
+    '123': ("AX-MERGE3: dual reading, M. 4614's period decipherment passes over 123 at 3 of 4; on 5810/5811 (14 "
+            "occurrences) the emitted l lands on a printed l at 0, on 4613/4615 at 1 of 3. Literal gate passed (0, "
+            "+1, 0 occurrences in 4503) through a path shift, not an l miss removed; value kept l per AX-MERGE v2"),
+    '107': ("AX-MERGE3: dual reading, M. 4614's period decipherment reads i/j at 3 of 4; only 1 occurrence in "
+            "5810/5811/4503 (< 3, gate rule); there, and at both 4613/4615 occurrences, i matches the print"),
+    '95': ("AX-MERGE3: dual reading, M. 4614's period decipherment reads h at 3 of 4; only 2 occurrences in "
+           "5810/5811/4503 (< 3, gate rule), both of which match the print under g"),
+}
+KEEP_NOTE = {
+    '127': ("AX-MERGE3: 4614's period decipherment reads m at 2 of 3 ('longue[127]ent', 'un [127]ois'); gate failed on "
+            "5810/5811/4503 (42 occurrences, match delta 0/0/0; the one m hit is 5810's 'Harle[m]', the neighbouring "
+            "223's letter), NULL kept"),
+    '57': ("AX-MERGE3: 4614's period decipherment spells x (eulx/deulx); gate failed (delta -1/-1/0, z matches the print "
+           "at 2 of 3), z kept -- spelling, not key"),
+}
+
+
+def read_key4614():
+    with open(os.path.join(TGT, 'key_4614.tsv'), newline='') as f:
+        return {r['code']: r for r in csv.DictReader(f, delimiter='\t')}
 
 
 def read_tsv(p):
@@ -150,6 +197,23 @@ def build():
     need('conflicts', sorted(added['conflict']) == CONFLICT_NULL, f"expected conflicts {CONFLICT_NULL}, got {added['conflict']}")
     need('conflicts_kept', sorted(added['conflict_kept_M']) == CONFLICT_KEEP_M,
          f"expected conflict_kept_M {CONFLICT_KEEP_M}, got {added['conflict_kept_M']}")
+    k4614 = read_key4614()
+    added['v3_H'] = []
+    for code, (val, src) in PERIOD_4614_H.items():
+        r = k4614.get(code)
+        need(code, r and r['grade'] == 'H' and int(r['agree']) >= 1 and r['agree'] == r['occurrences'],
+             'key_4614.tsv row missing, not H, or not all occurrences agreeing')
+        need(code, code not in key and code not in out, 'already in key.tsv / key_full')
+        out[code] = [code, val, 'H', src, "AX-MERGE3 (26 Sept 2026): period decipherment on the leaf, key-source reading (rule 4 H)"]
+        added['v3_H'].append(code)
+    added['v3_dual_M'] = []
+    for code, note in DUAL_M.items():
+        need(code, code in out, 'dual-reading code missing from key_full')
+        out[code][2] = 'M'
+        out[code][4] = (out[code][4] + '; ' if out[code][4] else '') + note
+        added['v3_dual_M'].append(code)
+    for code, note in KEEP_NOTE.items():
+        out[code][4] = (out[code][4] + '; ' if out[code][4] else '') + note
     out['339'][4] = (out['339'][4] + '; 5557 leaf 1 contemporary gloss reads "Schutzen" over 339 (same troop word, German) -- '
                      'AX-NAMES2: key.tsv row kept')
     num = sorted([c for c in out if c.isdigit()], key=int)

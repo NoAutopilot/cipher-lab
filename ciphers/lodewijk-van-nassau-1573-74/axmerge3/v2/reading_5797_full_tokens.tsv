@@ -10,11 +10,11 @@ p5_spot3	7	161	landgraf	H
 p5_spot3	8	126	NULL	C
 p5_spot3	9	136	uingt	M
 p5_spot3	10	146	?	U
-p6_spot4	1	172	lecontejean	M
+p6_spot4	1	172	?	U
 p6_spot4	2	58	z	I
 p6_spot4	3	85	e	M
 p6_spot4	4	38	u	M
-p6_spot4	5	95	g	M
+p6_spot4	5	95	g	I
 p6_spot4	6	82	e	M
 p6_spot4	7	35	t	M
 p6_spot4	10	100	h	I
@@ -51,7 +51,7 @@ p8_spot7	1	156	?	U
 p8_spot7	2	127	NULL	C
 p8_spot7	3	135	NULL	C
 p8_spot7	4	144	NULL	C
-p8_spot7	5	129	NULL	M
+p8_spot7	5	129	NULL	C
 p3_spot1_open	4	121	NULL	M
 p3_spot1_open	5	130	NULL	M
 p3_spot1_open	6	145	?	U

@@ -55,7 +55,7 @@ code	value	grade	source	note
 54	y	I	table rule	not observed in 4613/4615
 55	y	I	table rule	observed only off-block: {'a': 1}
 56	z	C	aligned 4613/4615	matches plaintext 1x of 3
-57	z	C	aligned 4613/4615	matches plaintext 1x of 1; AX-MERGE3: 4614's period decipherment spells x (eulx/deulx); gate failed (delta -1/-1/0, z matches the print at 2 of 3), z kept -- spelling, not key
+57	z	C	aligned 4613/4615	matches plaintext 1x of 1
 58	z	I	table rule	not observed in 4613/4615
 59	z	I	table rule	not observed in 4613/4615
 60	z	I	table rule	not observed in 4613/4615
@@ -93,7 +93,7 @@ code	value	grade	source	note
 92	g	C	aligned 4613/4615	matches plaintext 4x of 6
 93	g	C	aligned 4613/4615	matches plaintext 1x of 2
 94	g	C	aligned 4613/4615	matches plaintext 2x of 4
-95	g	M	table rule	not observed in 4613/4615; AX-MERGE3: dual reading, M. 4614's period decipherment reads h at 3 of 4; only 2 occurrences in 5810/5811/4503 (< 3, gate rule), both of which match the print under g
+95	g	I	table rule	not observed in 4613/4615
 96	h	C	aligned 4613/4615	matches plaintext 4x of 6
 97	h	I	table rule	not observed in 4613/4615
 98	h	I	table rule	not observed in 4613/4615
@@ -105,7 +105,7 @@ code	value	grade	source	note
 104	i	C	aligned 4613/4615	matches plaintext 4x of 4
 105	i	C	aligned 4613/4615	matches plaintext 3x of 4
 106	k	I	table rule	not observed in 4613/4615
-107	k	M	table rule	observed only off-block: {'y': 1, 'NULL': 1}; AX-MERGE3: dual reading, M. 4614's period decipherment reads i/j at 3 of 4; only 1 occurrence in 5810/5811/4503 (< 3, gate rule); there, and at both 4613/4615 occurrences, i matches the print
+107	k	I	table rule	observed only off-block: {'y': 1, 'NULL': 1}
 108	k	I	table rule	not observed in 4613/4615
 109	k	I	table rule	not observed in 4613/4615
 110	k	I	table rule	not observed in 4613/4615
@@ -121,12 +121,12 @@ code	value	grade	source	note
 120	m	C	aligned 4613/4615	matches plaintext 2x of 2
 121	NULL	C	aligned 4613/4615 (r18/words.tsv)	4615 between words, 8x, no plaintext letters (traicte 121 avecq; chemin 121 entre; grande 121 esperance)
 122	NULL	C	aligned 4613/4615 (r18/words.tsv)	4615 L12 droict 122 vers; L22 faisable 122
-123	l	M	aligned 4613/4615 (r18/words.tsv)	AX-MERGE orchestrator decision (02:26 UTC 26 Sept 2026): class-(c) flag upheld, key.tsv value kept (4613 L18 qui-123-z = qu'ilz, L29 cart-i-123-z = Cartil(la); but 4615 L13 after clear 'adviser' 123 132 reads as null); NULL in 13/13 (123) and 8/8 (136) aligned observations in 5810/5811 -- dual use or aligner bias, unresolved; AX-MERGE3: dual reading, M. 4614's period decipherment passes over 123 at 3 of 4; on 5810/5811 (14 occurrences) the emitted l lands on a printed l at 0, on 4613/4615 at 1 of 3. Literal gate passed (0, +1, 0 occurrences in 4503) through a path shift, not an l miss removed; value kept l per AX-MERGE v2
+123	l	M	aligned 4613/4615 (r18/words.tsv)	AX-MERGE orchestrator decision (02:26 UTC 26 Sept 2026): class-(c) flag upheld, key.tsv value kept (4613 L18 qui-123-z = qu'ilz, L29 cart-i-123-z = Cartil(la); but 4615 L13 after clear 'adviser' 123 132 reads as null); NULL in 13/13 (123) and 8/8 (136) aligned observations in 5810/5811 -- dual use or aligner bias, unresolved
 124	NULL	C	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	AX-NAMES2 re-gate class (b): >= 4 empty observations, false-null rate about 0.18^k (axnames/falsenull_diag.out)
 126	NULL	C	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	AX-NAMES2 re-gate class (b): >= 4 empty observations, false-null rate about 0.18^k (axnames/falsenull_diag.out)
-127	NULL	C	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	AX-NAMES2 re-gate class (b): >= 4 empty observations, false-null rate about 0.18^k (axnames/falsenull_diag.out); AX-MERGE3: 4614's period decipherment reads m at 2 of 3 ('longue[127]ent', 'un [127]ois'); gate failed on 5810/5811/4503 (42 occurrences, match delta 0/0/0; the one m hit is 5810's 'Harle[m]', the neighbouring 223's letter), NULL kept
+127	NULL	C	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	AX-NAMES2 re-gate class (b): >= 4 empty observations, false-null rate about 0.18^k (axnames/falsenull_diag.out)
 128	NULL	M	names.tsv: NULL in 15 of 15 aligned observations (5810/5811/4503 vs Groen)	AX-NAMES2 re-gate class (c): overrides key.tsv '?' (M) -- 4613 L28 d-e-v-e-t-h-e-128 against 'de Trittheim': last part of the place name, unit not settled; key.tsv unchanged
-129	NULL	M	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	AX-NAMES2 re-gate class (b): >= 4 empty observations, false-null rate about 0.18^k (axnames/falsenull_diag.out); AX-MERGE3: dual reading, M. 4614's period decipherment reads m once ('quinze [129]ille'); on 5810/5811/4503 (30 occurrences) the emitted m lands on a printed m at 3 (5810 'plusieurs [m]oyens', 'qu'elle [m]'a', 5811 'che[m]yn'), the rest between words. Literal gate passed (+4, +11, 0) but the 5811 gain is path shift at transcription gaps, not m hits; value kept NULL, flagged to the orchestrator
+129	NULL	C	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	AX-NAMES2 re-gate class (b): >= 4 empty observations, false-null rate about 0.18^k (axnames/falsenull_diag.out)
 130	NULL	C	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	AX-NAMES2 re-gate class (b): >= 4 empty observations, false-null rate about 0.18^k (axnames/falsenull_diag.out)
 131	NULL	C	names.tsv: empty in 22 of 22 aligned observations, 0 contradicting	AX-NAMES2 re-gate class (b): >= 4 empty observations, false-null rate about 0.18^k (axnames/falsenull_diag.out)
 132	NULL	C	aligned 4613/4615 (r18/words.tsv)	4615 with 121 as a pair (121 132) after avons, demourer, Bommel; alone after main
@@ -143,20 +143,15 @@ code	value	grade	source	note
 154	herzogvonsachsen	C	Groen IV pp.223-224 prints 'Bey dem Herzog von Sachsen und' at 5797 p5 'Bey 154.124.144.134 und'	AX-NAMES2 re-gate class (a): printed by Groen at this very cluster (rule 4 C)
 161	landgraf	H	5550 leaf 2 contemporary interlinear gloss 'Lantgrave' over 161 (run p2-11, bey 153.161 und)	AX-NAMES2 re-gate class (a): contemporary gloss, key-source reading (rule 4 H)
 171	prinzzuoranien	H	5550 leaf 2 contemporary interlinear gloss 'der Prince zu Oranien helfe' over 171.141 h-e-l-f-e	AX-NAMES2 re-gate class (a): contemporary gloss, key-source reading (rule 4 H)
-172	lecontejean	H	4614 (WVO pp.5-6) contemporary decipherment on the leaf: 'mon frere le Conte Jean lequel' over 'mon frere [172] lequel' (1 of 1, AX-COMP key_4614.tsv)	AX-MERGE3 (26 Sept 2026): period decipherment on the leaf, key-source reading (rule 4 H)
-177	m	H	4614 (WVO pp.5-6) contemporary decipherment: 'jestyme' over 'jesty[177]e' (1 of 1, AX-COMP key_4614.tsv)	AX-MERGE3 (26 Sept 2026): period decipherment on the leaf, key-source reading (rule 4 H)
 192	roidespagne	H	4496 (WVO PDF p4) contemporary interlinear gloss "R. d'Espagne" over 192 (row1, '...124.192. pour...'), confirmed by two independent blind Sonnet passes (AX-GLOSS, axgloss/gloss_attest.tsv); names.tsv previously graded this code U (0 observations -- Groen's print leaves the subject out at 5549 PS1)	AX-MERGE orchestrator decision (02:26 UTC 26 Sept 2026): AX-GLOSS grade H, 4496's contemporary interlinear gloss (rule 4 H)
 200	herzogvonalba	C	Groen IV p.224 prints 'vom Herzog von Alba absondern' at 5797 p6 'von 200.122.132.142 abso-'	AX-NAMES2 re-gate class (a): printed by Groen at this very cluster (rule 4 C)
 202	franckreich	H	5550 contemporary interlinear gloss over 202 (x4, runs p1-1, p2-3, p2-9, p2-15)	AX-NAMES2 re-gate class (a): contemporary gloss, key-source reading (rule 4 H)
-217	srgeertruydenbergh	H	4614 (WVO pp.5-6) contemporary decipherment: 'Sr Geertruydenbergh' at all 3 occurrences (AX-COMP key_4614.tsv)	AX-MERGE3 (26 Sept 2026): period decipherment on the leaf, key-source reading (rule 4 H)
 218	tillemont	M	aligned 4613/4615 (r18/words.tsv)	4613 L11 de la 312 218 pour: decipherment 'Tillemont, l'aultre de Middelbuerch'; the cipher has one sign
 221	hollande	H	4496 (WVO PDF p4) contemporary interlinear gloss 'Hollando' over 221, repeated 3x on the same page always over 221, confirmed by two independent blind Sonnet passes (AX-GLOSS, axgloss/gloss_attest.tsv); corroborated unglossed in 4614 p1 'tiré de la Haye en 221' (context: withdrew from The Hague to Holland)	AX-MERGE orchestrator decision (02:26 UTC 26 Sept 2026): AX-GLOSS grade H, 4496's contemporary interlinear gloss (rule 4 H)
 223	harlem	C	aligned to Groen IV CDLXVIII (5810) print, 3 of 3 observations agree	AX-NAMES2 re-gate class (a): aligner-only word code, >= 2 agreeing observations
-241	zeelande	H	4614 (WVO pp.5-6) contemporary decipherment: 'estatz de hollande et Zeelande' over '... et [241]' (1 of 1, AX-COMP key_4614.tsv); also 4496 p4 contemporary gloss 'Zellando' over 241 (AX-GLOSS gloss_attest.tsv) and names.tsv C (5810 aligned to Groen)	AX-MERGE3 (26 Sept 2026): period decipherment on the leaf, key-source reading (rule 4 H)
 270	bommel	C	aligned 4613/4615 (r18/words.tsv)	4615 L13 uers 270 = vers Bommel
 272	nyeumegen	C	aligned 4613/4615 (r18/words.tsv)	4615 L12 entre Graue et 272; L21 emporter 272
 273	maestricht	C	aligned 4613/4615 (r18/words.tsv)	4613 L24 de la 312 273 = de la ville de Maestricht
-289	francfort	H	4614 (WVO pp.5-6) contemporary decipherment: 'est party pour Francfort' over 'est party pour [289]' (1 of 1, AX-COMP key_4614.tsv)	AX-MERGE3 (26 Sept 2026): period decipherment on the leaf, key-source reading (rule 4 H)
 312	uillede	C	aligned 4613/4615 (r18/words.tsv)	4613 L11 and L24 de la 312 = de la ville de
 326	artillerie	C	aligned 4613/4615 (r18/words.tsv)	4615 L19 pieces de 326 = pieces d'artillerie
 336	fussvolck	H	5557 leaf 1 contemporary interlinear gloss 'Voetvolck' over 336 (line 21)	AX-NAMES2 re-gate class (a): contemporary gloss, key-source reading (rule 4 H)
