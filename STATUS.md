@@ -178,7 +178,7 @@ Brief `.claude/briefs/runs/2026-09-26-lane-v8-orchestrator.md`. Opened 03:05 UTC
 | job | state |
 |---|---|
 | 1 rolling QA | V8-QA6 (Sonnet 3.49, QA/2026-09-26-0308.md, ~30 items, 3 flags: riksarkivet control mean and "partial" label for B6; thurloe-printed no rule-5 status word, intake gate matched a subheading, for the parent) ledgered D, archived; QA7 ~05:40, window from 03:08 |
-| 2 verifiers | V8-NA5797 session_01VcUH8oeEMrrMHxssn2Yhxw (Opus, cap 10, 45 min) started 03:51: lodewijk 5797 spots (AX reading ready 03:37) + 4610/4611/4616 class re-check after key_full; B6 matignon not posted |
+| 2 verifiers | V8-NA5797 (Opus 4.61, ledgered D, archived): 5797 p7 [153 Pfaltzgraf] and p5 [161 Landgraf] N4, key period (5550 gloss) + ours (table), letter N0 Groen IV CDXLIV; 4610/4611/4616 N4 confirmed after key_full; AUDIT.md "V8 audit". V8-NA5797-2 session_01LojfFrWYJp3xMaRbwmKWtC (Opus, cap 10, 45 min) started 04:29: second adversarial audit (gate 2); 172 le Conte Jean classed only if a v3 re-derivation is on file. B6 matignon: no reading ready (B6 closed 04:30) |
 | 3 SO PRs | none above 15 at 03:07 |
 | 4 Mercy gate-2 closer | waits on the owner (JSTOR rows 80-83, Lonchay-Cuvelier IV) |
 

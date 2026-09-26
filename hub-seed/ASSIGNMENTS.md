@@ -700,3 +700,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T04:10Z	session_01117DWgZzGeZwpbZGg7dyR6	LANE B6 bMAT1C (Sonnet, cap 2)	matignon commit M as S, re-judge	brief 2026-09-26-lane-b6-mat1c.md; LANE B6
 2026-09-26T04:10Z	session_018bw3WLi7gdtzBPEDMQrgqU	LANE B6 bSZEM (Sonnet, cap 2)	Szembek BK 1560 sampling + spec	brief 2026-09-26-lane-b6-szem.md; LANE B6
 2026-09-26T04:20Z	session_011ouUumGuE7kf1jQyeRoPpr	retrospective o done $3.35 D, archived	RETRO-2026-09-26c.md, 5 proposals; RETRO-APPLY-O pending (7e)
+2026-09-26T04:29Z	session_01VcUH8oeEMrrMHxssn2Yhxw	V8-NA5797	done 4.61, ledgered D, archived (5797 blanks N4)	
+2026-09-26T04:29Z	session_01LojfFrWYJp3xMaRbwmKWtC	V8-NA5797-2 (Opus, cap 10)	second adversarial audit, lodewijk 5797 (gate 2)	brief 2026-09-26-lane-v8-nassau5797-2.md; LANE V8
