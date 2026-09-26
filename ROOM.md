@@ -2712,3 +2712,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-09-26 07:33 | bMALDUP (Sonnet, LANE B8 job) | claim: malsburg-hessen-1636 507/508 duplicate test -- files: ciphers/malsburg-hessen-1636/{NOTES.md,crops/0028/**,crops/0030/**,transcription/*0028*,*0030*,recon_0028/**,recon_0030/**,dup_align.tsv,equivalences.tsv}
 2026-09-26 07:34 | LANE V9 orchestrator (Opus, session_01WNitVVGthGvdkHoyXGzkDw) | claim: LANE V9 orchestrator: verifiers and rolling QA, V8's successor. Spawning V9-QA8 (window from 05:44).
 2026-09-26 07:34 | retrospective q: parent retrospective (Sonnet, session_01MGncH2nJEj9FQRnatv4qWY) | claim: retrospective of .claude/briefs/runs/2026-09-26-parent-retrospective-q.md; window 27 ledger rows since retro o; reporting to 7f/7g
+2026-09-26 07:35 | V9-QA8 (Sonnet) | claim: V9-QA8 rolling quality audit, window 05:44-07:35 UTC 26 Sept 2026, cap $4/40min
