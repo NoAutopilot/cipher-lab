@@ -42,6 +42,10 @@ Families (tools/families/<name>.py, each wraps an existing tool, see the package
                      block 1-99 + family book >= 100 (decade = family, units digit = member slot), word-trigram Gibbs
                      anneal with the sibling-vocabulary prior; `*`/`**`/`<..>` tokens are OOV wildcards; the control
                      is a letter from a HELD-OUT corpus file (--param holdout=5 sweeps=30), run with --tokens space
+  wordcode           letter-or-word nomenclator inside sign runs (bSALW 26 Sept 2026, fr2933-salviati-1525): each sign type
+                     = one letter or one whole word / <NAME> code (--param codes=marked|topk:N|all vocab=1000 err=0.064);
+                     runs bounded by words, mixed spaced/unspaced trigram score; control on the target's run lengths with
+                     the target's code token share and code-type count; token accuracy, per class printed (letters/codes)
 
 Modes: --target-only-if-gated (default) runs the control, then the target only if the gate is met;
 --control-only runs the control alone (calibration) and logs it. --seeds N runs the control on seeds
