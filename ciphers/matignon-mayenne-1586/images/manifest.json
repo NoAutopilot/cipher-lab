@@ -1,0 +1,21 @@
+{
+  "fetched": "2026-09-26T02:11:00Z to 2026-09-26T02:29:30Z",
+  "worker": "LANE B5 bMAT3",
+  "host": "gallica.bnf.fr",
+  "request_count": 15,
+  "items": [
+    {
+      "file": "f179_gallica_native.jpg",
+      "source": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90618802/f187/0,0,4300,5968/1600,/180/native.jpg",
+      "ark": "ark:/12148/btv1b90618802",
+      "shelfmark": "BnF fr.15571",
+      "canvas": "f187 (IIIF resource id; the manifest's own canvas index, 0-indexed 186)",
+      "physical_folio": "179 (confirmed: pencil foliation arithmetic -- old-numbering offset canvas-8 cross-validated at two independent points, f179->old171/f184->old176 -- plus direct content match against the pre-existing Tomokiyo composite BnFfr15571f179.jpg, plus the manuscript's own ink '179'/'191' numerals visible top-right/bottom-right of this very crop after rotation)",
+      "region": "0,0,4300,5968 of the native canvas (7839x5968), rotation=180 applied server-side (the canvas's native orientation reads upside down per Tomokiyo's own note on henryiii.htm; rotation=180 is the correct reading orientation, confirmed by the '179'/'191' numerals reading upright)",
+      "note": "No magenta ink anywhere on this image -- only black cipher ink, the manuscript's own ink foliation numerals, a 'BIBLIOTHEQUE NATIONALE MSS' oval stamp, and a wax-seal remnant of the facing/adjacent letter. This is the primary-source basis for the provenance finding in NOTES.md: the magenta per-sign letter labels on Tomokiyo's cryptiana.web.fc2.com composite are NOT on the manuscript."
+    }
+  ],
+  "arks_identified_not_yet_fetched": {
+    "fr.15572": "ark:/12148/btv1b9061879d (Gallica SRU query 'gallica all \"français 15572\"', matched by dc:title 'XXXIII Règne de HENRI III (1586, janvier-juillet)'; f.276 not fetched this job -- the 15-request/session cap was reached locating and confirming f.179 in fr.15571, see NOTES.md)"
+  }
+}

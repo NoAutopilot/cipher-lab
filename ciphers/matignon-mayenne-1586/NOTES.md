@@ -186,3 +186,74 @@ margin as the original bMAT job, so `partial` stands. The real path to a PASS re
 job named: Bourdeau's own beam-search decoder (already run, not reproduced here) or narrowing the
 1,272 unkeyed / 1,648 ambiguous tokens by further transcription/context work -- not by this cheap
 context-splicing rule at this corpus density.
+
+## Cipher-3 f.179: Gallica fetch, provenance settled, structural refinement (26 Sept 2026, LANE B5 worker bMAT3)
+
+Job: `.claude/briefs/runs/2026-09-26-lane-b5-matignon-c3.md`. Intake gate re-run before this job:
+`python3 tools/intake_gate_check.py matignon-mayenne-1586` -> exit 0, "partial -- edition/page or
+full-text-search citation found within 6 lines" (unchanged from bMAT's check-solved above).
+
+**Gallica location found.** BnF fr.15571 = `ark:/12148/btv1b90618802` (Gallica SRU query `gallica all
+"français 15571"`, matched by `dc:title` "XXXII Règne de HENRI III (1585, octobre-décembre)" -- the manifest
+itself carries no folio labels, every canvas is "NP"). BnF fr.15572 = `ark:/12148/btv1b9061879d` (same
+method, "XXXIII Règne de HENRI III (1586, janvier-juillet)"). Physical folio 179 is IIIF canvas/resource
+`f187` in the fr.15571 manifest (0-indexed sequence position 186), NOT canvas 179 -- the manuscript carries
+two independent numbering layers on each leaf (an older ink number and a later correction), confirmed by
+reading both numerals at native resolution at two calibration points: canvas 179 shows old-ink "171" under a
+corrected "18[2-3]" (illegible last digit), canvas 184 shows old-ink "176" under corrected "185"; both fit
+**old = canvas - 8** exactly (179-8=171, 184-8=176). Solving old=179 gives canvas 187, confirmed correct by
+direct content match (identical dense cipher-sign grid layout, identical black inkblot, identical archive
+oval stamp position to the pre-existing `BnFfr15571f179.jpg`) and by the leaf's own ink numerals reading
+"179" (top right) and "191" (bottom right, a second/different number, uninterpreted) once the canvas is
+rotated 180 degrees -- confirming Tomokiyo's own note on `henryiii.htm` ("The digital image of BnF for this
+page is upside down") refers to the raw canvas's native scan orientation, not a defect in his own posted
+image. Saved: `images/f179_gallica_native.jpg` (native-resolution IIIF fetch, region cropped to the left/
+cipher leaf only, rotation=180 applied server-side; see `images/manifest.json`). fr.15572 f.276 was **not**
+fetched this job -- locating and triple-confirming f.179's true canvas (three wrong guesses: 179, 180/184
+region, before landing on 187) used the job's entire 15-request Gallica allowance; the ark is on file above
+so the next worker can go straight to it without repeating the SRU lookup.
+
+**Provenance of the magenta annotation: settled, modern overlay, not period.** Direct comparison of the new
+native Gallica image (`images/f179_gallica_native.jpg`, no overlay of any kind) against the pre-existing
+Tomokiyo composite (`images/BnFfr15571f179.jpg`) shows the raw manuscript leaf carries **only black cipher
+ink**, the leaf's own ink foliation numerals ("179"/"191"), a "BIBLIOTHEQUE NATIONALE MSS" oval accession
+stamp, and a wax-seal remnant from the facing/adjacent letter -- **no magenta ink of any kind is present on
+the physical leaf**. Every magenta mark on Tomokiyo's composite (the per-glyph letter labels, the clustered
+words "front"/"pour"/"que"/"entre", and the margin legend "χ→o", "ξ→e n→e t→r X→j", "∠→p", "ω→t") is
+therefore a digital annotation he added when preparing the figure for his webpage, not a period-contemporary
+gloss. Independent corroborating evidence (not needed to reach the verdict, but consistent with it): the
+margin legend's "→" arrow notation for "sign maps to letter" is a modern mathematical/typographical
+convention with no 16th-century precedent, and `henryiii.htm`'s own running text places this image in a
+paragraph about *reconstructing* the Cipher-3 table ("Also used in f.179 ... which includes some additional
+(variants of) symbols"), consistent with a working annotation built while deriving the alphabet rather than
+a period clerk's marginal decipherment. This resolves the open question bMAT flagged and changes the grading
+basis for any value read from these labels: **grade M throughout (a modern researcher's proposed reading,
+credited to Tomokiyo, not H)** -- per the brief's own instruction and CLAUDE.md rule 4, since H requires a
+period key source.
+
+**Structural refinement of the annotation layer (partial, not fully resolved).** Re-examining the composite
+at higher zoom than bMAT's original band-level pass surfaces a real ambiguity bMAT's note already gestured at
+("only 'pour' and 'que' read as clustered words") that this job could not settle either way: the magenta
+layer visibly contains two different kinds of marks -- (a) a handful of connected-cursive whole words
+("front", "pour", "que", "entre", "gue") written in a flowing hand, and (b) isolated, individually-formed
+single letters positioned above or below specific black signs elsewhere in each line. The natural reading is
+that (a) are Tomokiyo's confident whole-word guesses at the plaintext (placed near, but not necessarily
+spelling out sign-by-sign, the cipher group they gloss) and (b) are his actual per-sign value labels -- but
+this job could not confirm which category "front" belongs to: it could be a 5-letter spelling running
+exactly over the first 5 black signs of line 1 (a candidate mapping was cropped to `images/signs/` while
+testing this, sign1_hook/sign2_two/sign3_six/sign4_m/sign5_w for f/r/o/n/t respectively) or an unaligned
+word-level note like "pour"/"que"/"entre" clearly are. **No sign->letter value is committed to key.tsv or
+any other reading file from this pass** -- both the per-sign alignment (which black sign a given isolated
+magenta letter labels, above or below it, when lines run close together) and this front/word-vs-spelling
+question turned out to be genuinely ambiguous at the composite's native 680x737px resolution, even against
+the new higher-resolution primary-source crop, and forcing a guess would produce an unreliable key rather
+than a real one (rule 3/4: no fabricated precision). `images/signs/README.md` documents this explicitly so
+the crops aren't mistaken for a committed mapping.
+
+**Net for whoever continues:** the Gallica ark and exact canvas (fr.15571 `btv1b90618802` canvas `f187`) are
+now on file, saving the lookup; a native-resolution, overlay-free source image is committed
+(`images/f179_gallica_native.jpg`); the provenance question is closed (modern overlay, not period -- any
+future value from these labels grades M, credited to Tomokiyo); the open task is a genuine sign-by-sign
+transcription pass (ideally two independent passes per the usual reconciliation rule, given how easily the
+hook/loop shapes here are confused) using this image, followed by fetching fr.15572 f.276 (ark on file
+above) with a fresh Gallica request budget to test any resulting partial key.
