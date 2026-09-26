@@ -1,0 +1,3 @@
+# ARM3-LOOP round 3, seed 4 (cumulative): round 2's four changes all scored wrong, so back to the round-1 set, plus two particles
+56=the, 28=of, 96=to, 260=be, 62=and, 7=in, 23=a, 27=by, 45=that
+93=it, 16=which

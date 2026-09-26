@@ -1,0 +1,3 @@
+# ARM3-LOOP round 3, seed 3 (cumulative): round-2 set plus three book words from the round-2 view (values >= 100 cannot be top-30 words)
+69=the, 45=of, 21=and, 3=that, 93=in, 82=to, 41=a, 91=is
+750=them, 560=other, 1750=have
