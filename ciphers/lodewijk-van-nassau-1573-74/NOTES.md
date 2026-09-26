@@ -1895,3 +1895,91 @@ No other hosts. No subagents.
 Files: this section; `images_wv2/crops_rederiv/{04614_decipherment_p5_full.jpg,04614_decipherment_p5_L06_zoom.jpg}`;
 `AUDIT.md` (append only); `SECOND-OPINIONS-QUEUE.tsv` (one cell). Novelty not classified (rule 10); no N-class
 changed (out of scope, per the brief).
+
+## AX-COMP2: 7205 against its period decipherment (26 Sept 2026, LANE AX)
+
+Worker AX-COMP2 (Sonnet), brief `.claude/briefs/runs/2026-09-26-lane-ax-comp2.md`, box 90 min from 04:01:55 UTC,
+finished at 53 min. Continues AX-COMP's unfinished 7205 (page 1 pass B was partial at L08; p2-p6 untouched).
+
+**Transcription.** p1 pass B redone from L08 through L12 (blind Sonnet subagent) and merged with the existing
+L05-L07 partial (pass B does not cover L01-L04, an AX-COMP scoping decision inherited as-is; those tokens are
+single-pass M grade). Pages p2-p6: two fresh blind Sonnet subagent passes each, one page per call pair, on the
+existing `images_wv2/crops_comp/07205_p*` line crops. Every subagent independently flagged that these crop files
+each pack several physical manuscript rows (not one line per file) -- confirmed by eye (07205_p1_L08.jpg alone
+shows 4 dense numeral rows). `tools/reconcile_passes.py` needs `--line-sub '_[a-z]$' ''` to collapse each pass's
+own a/b/c/... sub-clusters back to one sequence per crop file before aligning (without it, agreement was 22.7% on
+p1 purely from sub-cluster key mismatches between two independently-chunked passes), and `--keep-plain` to retain
+clear-word runs (p1's L01-L04 are pure clear preamble and vanish from the aligner entirely without it).
+
+Per-page raw sign agreement (gate 60%, per the brief):
+
+| page | lines | agree/cols | share | vs gate |
+|---|---|---|---|---|
+| p1 | 12 | 300/815 | 36.8% | below |
+| p2 | 9 | 630/873 | 72.2% | above |
+| p3 | 10 | 366/803 | 45.6% | below |
+| p4 | 8 | 631/826 | 76.4% | above |
+| p5 | 8 | 509/815 | 62.5% | above |
+| p6 | 10 | 553/788 | 70.2% | above |
+
+p1 and p3 read below gate. This is a genuine property of this letter's hand on these two pages (both subagent
+pairs independently called the ink faint with heavy bleed-through and gave mostly M/L confidence), not a script
+bug: p2/p4/p5/p6 use the identical pipeline and clear the gate. Rather than hand-settle all 437+515 disagreement
+columns pixel-by-pixel (not a responsible use of the box), settling effort went to the six named codes and to
+codes >120 generally, per the brief.
+
+**Codes >120 settled from the image (grade H, this worker's own eye-check against the crop):**
+- **182** (p4, `07205_p4_L01` pos 83): pass A read 182, pass B read 112 (differ); the crop shows the run
+  "82.182.02.139" -- 182 clearly legible. Settled H, overriding the M/differ.
+- **150** (p5, `07205_p5_L04` pos 10): pass A read 150, pass B had a gap; the crop shows "134.83.90.114.84.150.120"
+  -- 150 clearly legible. Settled H. (A second candidate 150 in the same crop, pos 95, stays M: the image there
+  reads closer to 130, not confidently either pass's guess of 150/190 -- not settled either way.)
+
+**Brief's named codes (146, 150, 156, 157, 182, 187; 5797's remaining gaps are 156 and 182):** counted directly
+in the assembled `ciphertext_7205.tsv` (4920 signs):
+
+| code | occurrences in 7205 | status |
+|---|---|---|
+| 146 | 0 | not present anywhere on this letter |
+| 150 | 4 | present; 2 of 4 settled H from the image (both read digits "150"); alignment (see caveat below) reads it NULL |
+| 156 | 0 | not present -- 5797's gap stays open |
+| 157 | 0 | not present |
+| 182 | 1 | present; settled H from the image; alignment (see caveat below) reads it "y" at M, n=1 -- **not** a confirmed value for 5797's other gap |
+| 187 | 0 | not present |
+
+So 7205 does not settle either of 5797's remaining gaps (156, 182): 156 never occurs in 7205 at all, and while 182
+does occur once, its aligned "meaning" is unreliable for the reason below -- a single occurrence at M grade is not
+enough to read into 5797 regardless.
+
+**Anchor-sparsity caveat, important for every code >120 below.** `axcomp/build_pairs.py` found only **2** anchors
+for 7205's whole 4919 non-clear-adjusted token run (`quepouons`/`quepou` dist 3, `detrouuer`/`setroue` dist 3 --
+both near the 0.35 edit-distance cutoff), versus 15 anchors for 4614's 2620 tokens. 81 individual clear words of
+length >=9 exist in the transcription, but almost none of them matched the decipherment closely enough to anchor,
+because the transcription itself is noisy (every subagent pass flagged mostly M/L confidence on clear words).
+With effectively 2 weak anchors across the whole letter, `tools/interlinear_align.py`'s hard-EM has almost no
+local constraint over most of the span, so most >120 codes' aligned "value" (and several 1-120 conflicts against
+key_full, 39 of 112) reflect the aligner's unconstrained guess, not a period-decipherment reading. `key_7205.tsv`
+and `axcomp2/compare_7205.tsv` are still written and committed (the brief asks for them), but every row should be
+read as a candidate, not a reading, except the two independently cross-checked below.
+
+**Full codes >120 list** (81 codes; `axcomp2/compare_7205.tsv`, same table as `axcomp/compare_7205.tsv`): 2 agree
+with key_full, 28 conflict, 51 new code. The two agreements are the only >120 rows with any independent support:
+- **137 = NULL** (5 occurrences, all NULL, agrees with key_full's NULL) -- consistent, not from a single guess.
+- **221 = Hollande** (2 occurrences, agrees with key_full and with 4614's independent reading of the same code).
+Everything else >120, including 182's "y" and 150's "NULL", is a single- or few-occurrence guess under the
+anchor-sparsity caveat above and is not offered as a reading (rule 4: 0 H/C beyond the two image-settled digit
+occurrences of 150/182 themselves, which are readings of the *ciphertext*, not of their *meaning*).
+
+**Table.** `axcomp/table_check.py 7205`: coverage of all 1-120 tokens under key_full 1.000 vs key_5799 0.400 (three
+longest runs read as French under key_full, garbled under key_5799) -- same 1574 table as 4614/5797/5810/5811.
+
+`sh axcomp/run.sh 7205` regenerates `key_7205.tsv`/`axcomp/compare_7205.tsv` from `ciphertext_7205.tsv` and
+`decipherment_7205.txt`; `python3 axcomp/keys.py 7205 --check` exits 0 against the committed files.
+
+Hosts: none (crops already on disk from AX-COMP's fetch). Subagents: 11 blind-transcription passes (Sonnet, at
+most 2 at once): p1 pass-B continuation (1) + p2-p6 (2 each). No AskUserQuestion.
+
+Files: `ciphertext_7205.tsv`, `key_7205.tsv`, `axcomp/{passes/passA_7205_p*.tsv,passes/passB_7205_p*.tsv,
+recon_7205_p1..p6/**,anchors_7205.tsv,pairs_7205.tsv,align_7205.tsv,rawkey_7205.tsv,compare_7205.tsv}`,
+`axcomp2/compare_7205.tsv`, this section. `key_full.tsv` and `key.tsv` untouched (AX-MERGE3 owns key_full.tsv).
+Novelty not classified (rule 10); no N-class changed.

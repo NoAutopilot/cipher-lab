@@ -1,0 +1,180 @@
+value	meaning	n	agree	others
+0	m	2	1	o:1
+1	n	48	38	l:3,a:1,m:1,p:1,r:1,s:1,t:1,y:1
+2	n	52	34	e:4,o:4,y:3,b:1,i:1,l:1,r:1,s:1,t:1,u:1
+3	n	36	19	o:4,s:3,y:2,c:1,d:1,h:1,i:1,l:1,m:1,r:1,t:1
+4	n	27	16	c:3,d:2,a:1,e:1,g:1,r:1,s:1,x:1
+5	n	14	9	u:2,d:1,r:1,s:1
+6	o	17	8	a:5,e:1,n:1,r:1,t:1
+7	o	17	8	a:4,r:2,c:1,m:1,s:1
+8	o	40	20	a:6,e:6,u:2,d:1,g:1,l:1,r:1,s:1,t:1
+9	o	35	19	n:5,a:4,d:3,b:1,i:1,p:1,q:1
+10	o	25	20	a:2,e:1,n:1,t:1
+11	l	14	4	c:2,p:2,r:2,d:1,g:1,n:1,o:1
+12	p	20	10	s:3,e:2,d:1,m:1,o:1,v:1,y:1
+13	p	20	7	n:5,c:3,d:2,e:1,j:1,l:1
+14	m	11	4	p:4,f:2,l:1
+15	d	9	3	p:3,a:1,i:1,t:1
+16	q	1	1	
+17	q	13	4	m:2,o:2,f:2,d:1,i:1,y:1
+18	q	13	8	m:2,s:2,t:1
+19	q	9	6	n:2,c:1
+20	s	26	15	q:4,b:2,r:2,d:1,t:1,z:1
+21	r	37	24	v:3,c:2,e:2,i:2,a:1,d:1,h:1,x:1
+22	r	39	25	t:4,i:2,u:2,a:1,l:1,o:1,p:1,s:1,y:1
+23	r	27	16	n:3,e:2,s:2,c:1,m:1,t:1,u:1
+24	r	21	18	i:1,q:1,v:1
+25	r	10	7	s:3
+26	s	12	8	d:1,l:1,n:1,p:1
+27	s	65	48	d:5,n:3,i:2,r:2,b:1,c:1,p:1,t:1,v:1
+28	s	49	35	t:4,a:3,n:2,c:1,i:1,m:1,q:1,u:1
+29	s	38	24	u:4,n:3,r:2,d:1,e:1,i:1,j:1,z:1
+30	s	42	18	u:13,t:6,n:2,b:1,e:1,r:1
+31	t	44	30	u:4,r:3,s:3,c:1,d:1,n:1,q:1
+32	t	32	24	d:3,n:2,o:2,l:1
+33	t	46	26	c:3,r:3,u:3,e:2,n:2,p:2,s:2,j:1,m:1,y:1
+34	t	23	19	a:1,n:1,q:1,s:1
+35	t	16	9	u:4,m:2,i:1
+36	u	12	8	b:1,o:1,t:1,y:1
+37	u	57	42	t:4,c:2,m:2,n:2,b:1,d:1,e:1,r:1,y:1
+38	u	50	27	s:6,t:5,r:4,i:3,a:2,d:1,o:1,y:1
+39	u	34	24	j:2,p:2,a:1,d:1,e:1,m:1,q:1,y:1
+40	u	18	14	i:2,d:1,t:1
+41	u	1	1	
+47	r	1	1	
+48	a	5	5	
+49	n	1	1	
+50	p	1	1	
+51	l	6	2	m:2,i:1,r:1
+53	c	1	1	
+54	d	1	1	
+55	d	3	1	o:1,q:1
+57	u	1	1	
+58	a	2	1	z:1
+59	z	2	2	
+60	n	3	2	a:1
+61	a	12	11	h:1
+62	a	7	6	y:1
+63	a	6	3	d:1,q:1,x:1
+64	a	5	4	t:1
+65	a	26	18	u:3,q:2,o:1,r:1,z:1
+68	b	1	1	
+70	u	6	3	b:1,l:1,p:1
+71	c	11	10	i:1
+72	a	12	4	s:3,t:3,c:1,d:1
+73	c	10	6	t:3,e:1
+74	c	7	6	o:1
+75	c	14	6	r:3,s:2,b:1,q:1,u:1
+77	d	12	7	i:1,l:1,m:1,n:1,r:1
+78	d	15	9	e:1,g:1,i:1,u:1,y:1,z:1
+79	l	12	5	d:2,a:1,c:1,n:1,o:1,s:1
+80	d	16	3	l:3,s:3,c:2,e:2,i:1,t:1,u:1
+81	e	154	137	a:4,i:3,q:2,t:2,b:1,m:1,n:1,o:1,r:1,s:1
+82	e	125	90	a:9,n:5,r:4,d:3,y:3,i:2,o:2,u:2,c:1,g:1,l:1,m:1,t:1
+83	e	80	54	a:8,n:3,u:3,g:2,i:2,o:2,r:2,y:2,s:1,t:1
+84	e	101	78	a:9,b:3,i:3,m:2,t:2,d:1,n:1,o:1,u:1
+85	e	52	36	a:12,i:1,n:1,o:1,s:1
+86	s	6	4	e:2
+87	s	3	3	
+88	s	7	5	n:1,t:1
+89	a	18	7	s:4,b:2,e:2,c:1,g:1,z:1
+90	s	11	9	d:1,e:1
+91	d	4	2	g:1,t:1
+92	r	10	4	g:3,h:1,u:1,z:1
+93	g	8	3	i:2,c:1,n:1,r:1
+94	g	11	2	i:2,o:2,v:2,c:1,p:1,t:1
+95	s	4	2	g:1,l:1
+96	r	1	1	
+97	h	1	1	
+98	h	5	2	u:2,z:1
+99	h	6	2	o:2,a:1,m:1
+100	p	10	3	h:2,i:1,o:1,r:1,w:1,z:1
+101	i	26	20	y:3,c:1,p:1,q:1
+102	i	22	14	o:3,c:1,j:1,n:1,t:1,u:1
+103	i	18	10	e:3,l:3,n:1,q:1
+104	i	41	24	u:3,a:2,j:2,o:2,b:1,d:1,e:1,g:1,m:1,p:1,t:1,y:1
+105	i	12	11	e:1
+108	u	7	3	o:2,k:1,p:1
+109	f	8	4	a:2,l:2
+110	i	1	1	
+111	l	9	5	r:2,m:1,s:1
+112	l	24	19	o:2,c:1,t:1,z:1
+113	l	37	20	s:5,c:2,d:2,o:2,u:2,a:1,h:1,j:1,p:1
+114	l	27	18	c:2,b:1,d:1,e:1,n:1,p:1,t:1,z:1
+115	l	3	2	y:1
+116	m	1	1	
+117	m	8	5	a:1,e:1,l:1
+118	m	17	10	n:2,y:2,g:1,l:1,s:1
+119	m	10	5	a:1,b:1,d:1,r:1,t:1
+120	n	10	3	b:2,a:1,e:1,j:1,m:1,s:1
+121	c	12	2	p:2,u:2,a:1,accompaig:1,harlem:1,l:1,n:1,z:1
+122	s	3	2	e:1
+123	r	7	2	mercieray:1,n:1,o:1,t:1,vantaigeainssi:1
+124	dungcomunaccor	5	1	j:1,l:1,o:1,regard:1
+125	p	1	1	
+126	y	1	1	
+127	s	14	6	experience:1,l:1,lamaigr:1,m:1,ne:1,o:1,rrionsfacillem:1,z:1
+128	d	11	2	u:2,e:1,l:1,lavillededelf:1,pourrezprendre:1,finde:1,t:1,vaulx:1
+129	a	17	3	c:2,e:2,afairemesmede:1,aujeuprem:1,ctz:1,eniensetattend:1,lleoudeux:1,o:1,rboomeljevoisp:1,s:1,trercelame:1,unemienneprece:1
+130	u	12	3	l:2,s:2,a:1,i:1,q:1,r:1,renforcez:1
+131	t	22	5	p:2,b:1,d:1,de:1,demastric:1,e:1,g:1,guerre:1,ieuetmoyennant:1,jou:1,lquecho:1,m:1,nouspourrions:1,nousretournon:1,o:1,pardecainco:1
+132	i	11	2	p:2,arderontsilong:1,compaignon:1,lacam:1,n:1,q:1,quilyaencorese:1,s:1
+133	u	5	2	d:1,m:1,mi:1
+134	alesdict	4	1	jusquesatant:1,nnemis:1,r:1
+135	l	1	1	
+137	enbrief	2	1	rancechosequi:1
+138	depuisb	1	1	
+139	a	10	3	t:2,d:1,eeulxjoinct:1,g:1,ic:1,mesmessilzvoul:1
+140	b	3	1	h:1,r:1
+141	protestanss	1	1	
+142	l	3	1	luy:1,y:1
+143	u	5	2	d:1,s:1,x:1
+144	l	2	1	usseveoyrmaisc:1
+147	i	3	2	j:1
+148	emp	1	1	
+149	i	4	2	b:1,comedes:1
+150	l	1	1	
+154	do	1	1	
+170	d	1	1	
+172	c	1	1	
+181	l	1	1	
+182	y	1	1	
+183	faictpenserqu	1	1	
+184	q	2	1	y:1
+188	t	1	1	
+191	m	2	1	p:1
+192	a	3	1	l:1,u:1
+195	t	1	1	
+199	y	1	1	
+202	nt	1	1	
+203	da	1	1	
+209	ay	1	1	
+210	m	2	1	r:1
+211	c	2	1	u:1
+215	s	2	1	uillez:1
+217	t	1	1	
+219	iberezdembras	1	1	
+220	o	2	1	strebientost:1
+221	hollande	2	1	i:1
+223	faictesdevenir	1	1	
+227	r	1	1	
+228	avezentendupar	2	1	etpouravoirnoz:1
+232	t	1	1	
+234	r	1	1	
+241	m	1	1	
+283	r	3	3	
+312	deloffreque	3	1	oingquelleaura:1,s:1
+331	h	1	1	
+332	u	1	1	
+341	celanecessaire	2	1	trentasse:1
+342	delacampaigne	1	1	
+347	dupassenousdem	1	1	
+599	a	1	1	
+808	a	1	1	
+811	n	1	1	
+823	stoitavecbonn	1	1	
+827	a	1	1	
+838	teparlaquellej	1	1	
+843	omelesprinces	1	1	
+920	p	1	1	
+929	re	1	1	
