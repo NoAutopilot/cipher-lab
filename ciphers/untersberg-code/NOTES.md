@@ -222,3 +222,31 @@ Counts (rule 4, unchanged): C: 0, M: 4 (line2 tok5 d/h, line6 tok1 n/u-initial, 
 ### Files this pass (4b)
 
 `reconciled.tsv`, `disagreements.tsv` (reconcile_passes.py output plus a `settled`/`grade`/`basis` column this worker added), `ciphertext_draft.tsv`, `agreement.tsv` (reconcile_passes.py outputs); `specs/cheap-tests/untersberg-code/{blind_pass_reformat.tsv,pass_b7_reformat.tsv,diff_reconciled_vs_herzog.py,diff_reconciled_vs_herzog_output.txt}`. Crops used to settle disagreements were written to this session's scratchpad, not committed (not named in the brief's output list; the basis column in `disagreements.tsv` records what each crop showed). Hosts: archive.org be-api 6 requests (Cappelli check only). No subagents.
+
+## symA against the witnesses (26 Sept 2026, LANE B7 worker bUNT9)
+
+Per job brief `.claude/briefs/runs/2026-09-26-lane-b7-unt9.md`. Intake gate re-run: `python3 tools/intake_gate_check.py untersberg-code` exit 0 (`open`). This aligns the 5 confirmed symA positions (bUNT8's list: line2 tok1's final glyph, line4 tok5, line4 tok7, line6 tok2's first glyph, line6 tok3) against every witness in `witnesses.tsv`, reusing bUNT5/bUNT6's own token-initial / best-offset alignment machinery (`align_witnesses.py`'s Hs12 line mapping, `align_joint.py`'s Hs13/Hs3/Hs3a/Hs11 best offsets, recomputed identically here) rather than inventing a new method. Hs7 (Herzog's other long abbreviation witness, never tested against Hs1 before this job) gets the same best-offset treatment for the first time: best offset=4, 6/53 initial-letter matches, no better than the joint line's chance-level results. Hs2 ("N. N." only) and Hs4 (blank, "in 4 ist etwas Raum freigelassen") have no text reaching any of the 6 lines.
+
+**Locating the flat index.** Line4's two symA tokens are themselves whole, standalone Hs1 tokens in Herzog's own print (index 25 = his "v", index 27 = his "p" -- i.e. Herzog silently normalized both symA occurrences to ordinary letters), so alignment there is genuine token-for-token. Line2 and line6 are messier: reconciled.tsv fuses several of Herzog's period-delimited tokens into one word, so symA sits at a sub-token offset (the *final* letter of Herzog's fused "Satrnrop" in line2; inside/at "pymi" and the standalone "p" in line6) -- found by running `diff_reconciled_vs_herzog.py`'s own character-level `SequenceMatcher` on lines 2/4/6 and reading which Herzog raw token each symA placeholder character's aligned block falls into (confirmed line4's two positions land exactly on symA's own opcode boundaries, cross-checking the by-hand derivation).
+
+**Table (witness -> reading at the symA flat index; `None` = position falls outside that witness's aligned window, i.e. no anchor):**
+
+| position | Herzog's own print | Hs13 | Hs3 | Hs3a | Hs11 | Hs7 | Hs12 (line, uncontrolled) |
+|---|---|---|---|---|---|---|---|
+| line2 tok1 final glyph | "Satrnrop" (symA read as final "p") | no anchor (window starts at idx7) | "S" | "S" | "S" | "et" | "Famus" |
+| line4 tok5 | "v" | "h" | no anchor | no anchor | no anchor | "s" | "Res" |
+| line4 tok7 | "p" | no anchor (window ends at idx25) | no anchor | no anchor | no anchor | "vuls" | "Res" |
+| line6 tok2 glyph1 | "pymi" (leading p) | no anchor | no anchor | no anchor | no anchor | "K" | "Amicus" |
+| line6 tok3 | "p" (standalone) | no anchor | no anchor | no anchor | no anchor | "excm" | "Amicus" |
+
+Hs3/Hs3a/Hs11's "S" at line2 is a granularity artefact, flagged rather than counted at face value: their aligned token there is the single letter "S", which only reaches Herzog's fused token's *first* letter (matching the already-known "Sal..." opening), not its *last* letter where symA actually sits -- a control that cannot vary on the axis being measured licenses nothing (rule 3's bCAS/AX-5799 lesson, same shape here: the witness word is too short to say anything about the position asked). Every other cell is a single witness or no witness at all -- never two witnesses independently agreeing on the same value at the same symA position.
+
+**Control, per rule 3 and the brief's step 3:** 200 draws of 5 random positions (seed 20260926) from the 54 Hs1 flat positions that are read and are not one of the 5 symA slots (61 total - 2 ETH suspension-glyph slots - 5 symA), same witness-lookup and >=2-witness-initial-letter-agreement procedure. Control: mean 1.070/5, 95th pct 3/5, range [0,5]. symA's own count under the identical (uncaveated) method: **1/5** (only the granularity-artefact line2 "S" match) -- at/below the control mean, 144/200 draws (72.0%) tie or beat it, nowhere near the 95th-pct gate. With the granularity caveat applied (excluding the artefact), symA's real count is **0/5**.
+
+**Verdict (brief step 4):** no value stands at even 1 of 5 symA positions across >=2 witnesses on a fair reading, let alone >=4/5, and the naive count does not beat the control's 95th pct either way -- **symA stays grade I** (inferred, unidentified), not S. No update to the line 6 Herzog-agreement figure (nothing here licenses one). This closes the "align symA against the witnesses" step of NEAR.md's named next step for this target with a control-backed negative, consistent with bUNT5/bUNT7's prior finding that no Herzog witness (singly or jointly) aligns with Hs1 above chance -- now confirmed at the specific symA positions too, including Hs7 which had not been tested before.
+
+Counts (rule 4, unchanged from bUNT8): C: 0, M: 4, H: 0, I: 1 (bUNT5's line-level hypothesis; symA remains ungraded, not I -- corrected: symA is reported here as "no signal", not assigned a grade, since rule 4's I still implies some inference and none is licensed). Status stays `open`/`partial` (rule 5's near-solve amendment; NEAR.md is the orchestrator's file, not edited here).
+
+### Files this pass (bUNT9)
+
+`specs/cheap-tests/untersberg-code/align_symA_witnesses.py`, `specs/cheap-tests/untersberg-code/align_symA_witnesses_output.txt`. No new host requests (disk-only, all witness data already in `witnesses.tsv`). No subagents.

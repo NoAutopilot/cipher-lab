@@ -1,0 +1,18 @@
+Hs7 best offset=4, initial-letter matches=6/53 (new this job; Hs13/Hs3/Hs3a/Hs11 offsets reproduce align_joint_output.txt)
+
+=== witness readings at the 5 symA positions (flat idx, Herzog-print token) ===
+line2_tok1_end(symA): flat_idx=5 herzog_print='Satrnrop' witnesses={'Hs13': None, 'Hs3': 'S', 'Hs3a': 'S', 'Hs11': 'S', 'Hs7': 'et'} Hs12(line, uncontrolled)='Famus' agree(>=2, initial-letter)=True ('s' x3)
+line4_tok5(symA): flat_idx=25 herzog_print='v' witnesses={'Hs13': 'h', 'Hs3': None, 'Hs3a': None, 'Hs11': None, 'Hs7': 's'} Hs12(line, uncontrolled)='Res' agree(>=2, initial-letter)=False ('h' x1)
+line4_tok7(symA): flat_idx=27 herzog_print='p' witnesses={'Hs13': None, 'Hs3': None, 'Hs3a': None, 'Hs11': None, 'Hs7': 'vuls'} Hs12(line, uncontrolled)='Res' agree(>=2, initial-letter)=False (None x0)
+line6_tok2_glyph1(symA): flat_idx=49 herzog_print='pymi' witnesses={'Hs13': None, 'Hs3': None, 'Hs3a': None, 'Hs11': None, 'Hs7': 'K'} Hs12(line, uncontrolled)='Amicus' agree(>=2, initial-letter)=False (None x0)
+line6_tok3(symA): flat_idx=52 herzog_print='p' witnesses={'Hs13': None, 'Hs3': None, 'Hs3a': None, 'Hs11': None, 'Hs7': 'excm'} Hs12(line, uncontrolled)='Amicus' agree(>=2, initial-letter)=False (None x0)
+
+symA real agreement count (naive token-initial method): 1/5
+CAVEAT: the line2/line6 'agreement' (if any) is at Hs1's fused token's INITIAL letter, not at the symA glyph itself (symA sits at the token's final letter in line2, and inside/at a sub-token position in line6) -- Hs3/Hs3a/Hs11's aligned tokens there are single letters too short to reach that offset. Only line4's two positions are genuine token-for-token (symA is itself a whole Hs1 token there).
+
+control pool: 54 positions (61 - 2 ETH - 5 symA)
+control, 200 draws of 5 (seed 20260926): mean=1.070/5, 95th pct=3/5, range=[0,5]
+symA real (1/5) vs control mean (1.070/5) and p95 (3/5): AT/BELOW p95 -- does not clear the control
+144/200 draws (72.0%) tie or beat symA's 1/5
+
+Verdict (step 4): no single value stands at >=4/5 symA positions across >=2 witnesses, let alone beats the control's 95th pct -- symA stays grade I, not S. Line 6 'Herzog agreement' update: not licensed (no S-graded value to update it with).
