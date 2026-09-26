@@ -1,0 +1,137 @@
+code	meaning	class	crop	pass_agreement
+1	Ba	syllable	crop_syllables_zoom.jpg	agree
+15	Be	syllable	crop_syllables_zoom.jpg	agree
+29	Bi	syllable	crop_syllables_zoom.jpg	agree
+43	Bo	syllable	crop_syllables_zoom.jpg	agree
+2	Ca	syllable	crop_syllables_zoom.jpg	agree (pass B not asked)
+16	Ce	syllable	crop_syllables_zoom.jpg	agree (pass B not asked)
+30	Ci	syllable	crop_syllables_zoom.jpg	agree (pass B not asked)
+44	Co	syllable	crop_syllables_zoom.jpg	agree (pass B not asked)
+3	Da	syllable	crop_syllables_zoom.jpg	agree
+17	De	syllable	crop_syllables_zoom.jpg	agree
+31	Di	syllable	crop_syllables_zoom.jpg	agree
+45	Do	syllable	crop_syllables_zoom.jpg	agree
+59	Du	syllable	f200_hi.jpg (row Da/De/Di/Do/Du, full row visible only in the unsplit image; pass B crop did not include col 5)	pass A only (see note in NOTES.md)
+4	Fa	syllable	crop_syllables_zoom.jpg	agree (pass B not asked)
+18	Fe	syllable	crop_syllables_zoom.jpg	agree (pass B not asked)
+32	Fi	syllable	crop_syllables_zoom.jpg	agree (pass B not asked)
+46	Fo	syllable	crop_syllables_zoom.jpg	agree (pass B not asked)
+5	Ga	syllable	crop_syllables_zoom.jpg	agree (pass B not asked)
+19	Ge	syllable	crop_syllables_zoom.jpg	agree (pass B not asked)
+33	Gi	syllable	crop_syllables_zoom.jpg	agree (pass B not asked)
+47	Go	syllable	crop_syllables_zoom.jpg	agree (pass B not asked)
+6	La	syllable	crop_syllables_zoom.jpg	agree (pass B not asked)
+20	Le	syllable	crop_syllables_zoom.jpg	agree (pass B not asked)
+34	Li	syllable	crop_syllables_zoom.jpg	agree (pass B not asked)
+48	Lo	syllable	crop_syllables_zoom.jpg	agree (pass B not asked)
+7	Ja	syllable	crop_syllables_zoom.jpg	agree (pass B not asked)
+21	Je	syllable	crop_syllables_zoom.jpg	agree (pass B not asked)
+35	Ji	syllable	crop_syllables_zoom.jpg	agree (pass B not asked)
+49	Jo	syllable	crop_syllables_zoom.jpg	agree (pass B not asked)
+8	Ma	syllable	crop_syllables_zoom.jpg	agree (pass B not asked)
+22	Me	syllable	crop_syllables_zoom.jpg	agree (pass B not asked)
+36	Mi	syllable	crop_syllables_zoom.jpg	agree (pass B not asked)
+50	Mo	syllable	crop_syllables_zoom.jpg	agree (pass B not asked)
+9	Na	syllable	f200_hi.jpg	pass A only
+23	Ne	syllable	f200_hi.jpg	pass A only
+37	Ni	syllable	f200_hi.jpg	pass A only
+51	No	syllable	f200_hi.jpg	pass A only
+10	Pa	syllable	f200_hi.jpg	pass A only
+24	Pe	syllable	f200_hi.jpg	pass A only
+38	Pi	syllable	f200_hi.jpg	pass A only
+52	Po	syllable	f200_hi.jpg	pass A only
+11	Qua	syllable	crop_syllables_zoom2.jpg	agree
+25	Que	syllable	crop_syllables_zoom2.jpg	agree -- ANCHOR (fr3625 25 = le/la/que, M)
+39	Qui	syllable	crop_syllables_zoom2.jpg	agree (pass B not asked)
+53	Quo	syllable	crop_syllables_zoom2.jpg	agree (pass B not asked)
+12	Ra	syllable	crop_syllables_zoom2.jpg	agree (pass B not asked)
+26	Re	syllable	crop_syllables_zoom2.jpg	agree -- ANCHOR (fr3625 26 = a/de, M)
+40	Ri	syllable	crop_syllables_zoom2.jpg	agree (pass B not asked)
+54	Ro	syllable	crop_syllables_zoom2.jpg	agree -- ANCHOR (fr3625 54, part of compound 101 54y+ = Sa Majeste, M)
+13	Sa	syllable	f200_hi.jpg	pass A only
+27	Se	syllable	f200_hi.jpg	pass A only
+41	Si	syllable	f200_hi.jpg	pass A only
+55	So	syllable	f200_hi.jpg	pass A only
+14	Ta	syllable	crop_syllables_zoom2.jpg	agree (pass B not asked)
+28	Te	syllable	crop_syllables_zoom2.jpg	agree (pass B not asked)
+42	Ti	syllable	crop_syllables_zoom2.jpg	agree (pass B not asked)
+56	To	syllable	crop_syllables_zoom2.jpg	agree -- ANCHOR (fr3625 56, part of compound 103 56nD = aussitost, M)
+73	cc	double	crop_doubles.jpg	pass A only
+74	dd	double	crop_doubles.jpg	pass A only
+75	ff	double	crop_doubles.jpg	pass A only
+78	pp	double	crop_doubles.jpg	pass A only
+79	ll	double	crop_doubles.jpg	pass A only
+80	rr	double	crop_doubles.jpg	pass A only
+81	ss	double	crop_doubles.jpg	pass A only
+83	bl	double	crop_doubles.jpg	pass A only
+84	mn	double	crop_doubles.jpg	pass A only
+85	nf	double	crop_doubles.jpg	pass A only
+88	ns	double	crop_doubles.jpg	pass A only
+89	ng	double	crop_doubles.jpg	pass A only
+90	gl	double	crop_doubles.jpg	pass A only
+93	pl	double	crop_doubles.jpg	pass A only
+94	by	double	crop_doubles.jpg	pass A only
+95	cr	double	crop_doubles.jpg	pass A only
+99	a	word	crop_101_103.jpg	agree
+100	aux	word	crop_101_103.jpg	agree (transliteration "ausc"/"aux")
+101	au	word	crop_101_103.jpg	agree -- ANCHOR (fr3625 101, part of compound 101 54y+ = Sa Majeste, M)
+102	au	word	crop_101_103.jpg	agree
+103	aussy	word	crop_101_103.jpg	agree (transliteration "auffz"; long-s ligature read as "aussy/aussi") -- ANCHOR (fr3625 103, part of compound 103 56nD = aussitost, M)
+104	art	word	crop_101_103.jpg	agree
+135	bienfait	word	f200_hi.jpg	pass A only
+136	bout	word	f200_hi.jpg	pass A only
+137	bouclee	word	f200_hi.jpg	pass A only
+138	commandement ou commande	word	crop_141_zoom2.jpg	pass A only
+139	capitule ou capitulation	word	crop_141_zoom2.jpg	pass A only
+140	contente ou contentement	word	crop_141_zoom2.jpg	agree
+141	catholique	word	crop_141_zoom2.jpg	agree -- ANCHOR (fr3625 141 = soit, M) MISMATCH
+183	estre	word	crop_184_zoom4.jpg	agree
+184	est	word	crop_184_zoom4.jpg	agree -- ANCHOR (fr3625 184y = auroit, M) MISMATCH
+199	favorise	word	crop_199_232_top.jpg	pass A only
+200	fruit	word	crop_199_232_top.jpg	pass A only
+201	fondz	word	crop_199_232_top.jpg	pass A only
+202	font	word	crop_199_232_top.jpg	pass A only
+203	fault ou fait	word	crop_199_232_top.jpg	pass A only
+204	faulte	word	crop_199_232_top.jpg	pass A only
+205	fortifie	word	crop_199_232_top.jpg	pass A only
+206	facilite	word	crop_199_232_top.jpg	pass A only
+207	formee	word	crop_199_232_top.jpg	pass A only
+208	fascher	word	crop_199_232_top.jpg	pass A only
+209	foulle	word	crop_199_232_bot.jpg	pass A only
+210	fantaisie	word	crop_199_232_bot.jpg	pass A only
+211	fort	word	crop_199_232_bot.jpg	pass A only
+212	fentre ou fenestre	word	crop_199_232_bot.jpg	pass A only
+265	mont	word	f198_hi.jpg / f199_hi.jpg	pass A only
+274	mont	word	f198_hi.jpg	pass A only
+275	moy	word	f198_hi.jpg	pass A only
+276	moua	word	f198_hi.jpg	pass A only
+277	monde ou mesne	word	f198_hi.jpg	pass A only
+278	monde	word	f198_hi.jpg	pass A only
+279	morgue ou morgueur	word	f198_hi.jpg	pass A only
+280	mal	word	f198_hi.jpg	pass A only
+281	malveuillance	word	f198_hi.jpg	pass A only
+282	mesdire ou mesdisant	word	f198_hi.jpg	pass A only
+283	negligence	word	f198_hi.jpg	pass A only
+284	nouvelle	word	crop_288_wide3.jpg	agree
+285	necessaire ou necessite	word	crop_288_wide3.jpg	agree
+286	noy	word	crop_288_wide3.jpg	pass A "Non", pass B "Non" -- reconciled Non/Noy, uncertain, not an anchor
+287	nont	word	crop_288_wide3.jpg	agree
+288	noua	word	crop_288_wide3.jpg	pass A "Noua", pass B "Nous" -- DISAGREE, neither reads "Catholique" -- ANCHOR (fr3625 288 = Catholique, M) MISMATCH either way
+289	nul	word	crop_288_wide3.jpg	pass A only (pass B: illegible in its crop)
+290	neant	word	f198_hi.jpg	pass A only
+297	prisonnier	word	f198_hi.jpg	pass A only
+298	peyne	word	f198_hi.jpg / f199_hi.jpg	pass A only
+307	quant	word	f198_hi.jpg	pass A only
+308	qualite	word	f198_hi.jpg	pass A only
+327	france	word	f198_hi.jpg	pass A only
+330	sanct	word	f198_hi.jpg	pass A only
+335	soit	word	crop_335_346_v2.jpg	agree -- ANCHOR (fr3625 335 = le Roy, C) MISMATCH
+336	suffisant ou suffisance	word	crop_335_346_v2.jpg	agree
+337	scavoir	word	crop_335_346_v2.jpg	pass A "sinuir/sivuir" (uncertain), pass B "scavoir" -- reconciled to pass B, not an anchor
+338	trouble	word	f198_hi.jpg	pass A only
+339	frouver/trouver	word	f198_hi.jpg	pass A only
+345	escrit	word	crop_346_v2.jpg	agree
+346	volonte ou vouloir	word	crop_346_v2.jpg	agree -- ANCHOR (fr3625 346 = volonte, C) MATCH
+347	vous	word	crop_346_v2.jpg	pass A "vour" (uncertain), pass B "vous" -- reconciled to pass B, not an anchor
+348	soir	word	f198_hi.jpg	pass A only (pass B: illegible in its crop)
+353	espagne ou espagnol	word	f198_hi.jpg	pass A only

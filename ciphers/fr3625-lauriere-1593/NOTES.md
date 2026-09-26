@@ -453,6 +453,158 @@ letter to fold into NX-LAU's leave-one-out alignment (would raise N from today's
 not digitized -- write a REQUEST.md/ASKS.md row for a BnF copy order or reading-room visit before it can be used.
 Status unchanged: `open`.
 
+## NX-LAU3, 26 September 2026 (LANE NX worker, key57 known-answer gate against fr.3625's 12 anchors)
+
+Brief `.claude/briefs/runs/2026-09-26-lane-nx-lau3.md`. Intake gate already exit 0 (08:45 UTC, per ROOM.md). This
+session tests NX-LAU2's candidate period key (BnF fr.3995 no.57, fol.102-103) against fr.3625's own established
+code meanings, per rule 3's known-answer gate, and reports a **negative on the transfer test with both numbers**.
+No.55 is not decoded further and no novelty claim is made (rule 10).
+
+### 0. Correction to NX-LAU2's folio pointer
+
+**Fol.102 is not the key table.** Placed with `python3 tools/gallica_folio.py btv1b525085665 --folio 102`:
+canvas f196 = 102r, f197 = 102v. Eye-check against both canvases (fetched at 800px for a first look, then full
+native res) shows fol.102r carries only an endorsement date ("fevrier 1593") and fol.102v only the address/docket
+("A Mons... de la Verriere / chiffre des affaires de..."), both otherwise blank -- this is the *outside* of the
+folded key sheet (the address written on the back, as letters of the period were folded and addressed on the
+verso), not the table itself. The actual key table -- the same one mosaicked into
+`sources/cryptiana/web/nevers_no57.png` -- is the *unfolded interior* of that same physical sheet, digitized by
+Gallica as an oversized fold-out across four canvases that all carry the manifest's own duplicate label "103r"
+(the offset table's own "DUPLICATE label '103r' on f198 and f199" / "on f198 and f200" already flagged this,
+per CLAUDE.md's `tools/gallica_folio.py` precedent for fr.16092-style eccentric foliation): **f198, f199, f200 =
+recto "103" in three overlapping horizontal strips (syllables/double-letters/word-bank columns, left to right);
+f201 = a further sheet, also labelled "103", carrying the special-symbol table for names and titles (Le pape,
+Le Roy, the dukes and cardinals -- "special symbols represent names" per Tomokiyo); f202 = blank/bleed-through,
+not part of no.57's own key at all (a different, later document bound nearby, dated 1592, "Suisse").** This is a
+deviation from the brief's "the key leaf (fol.102, perhaps fol.102v too)" instruction, made necessary by what the
+images actually show; the brief's assumption (inherited from NX-LAU2's fol.102 citation, itself following
+Tomokiyo's own "fol.102" shorthand for the whole sheet) undercounted the leaf by one full folio. Recorded here so
+a successor does not re-fetch fol.102 expecting a table.
+
+Gallica requests this session: 2 IIIF region fetches at 800px (f196, f197, 1 connection reset + 1 retry, good-
+citizen rule), 5 more at 800px (f198-f202, 1 reset + 1 retry), 4 at 2000px native (f199, f200, f198, f201, 1 reset
++ 1 retry) -- 11 total, all 1.5s+ apart, all eventually HTTP 200.
+
+### 1. Images and crops
+
+Given the leaf is an oversized 4-canvas fold-out (not a leaf of ordinary running prose), `tools/iiif_lines.py`'s
+row-ink-profile line detector is built for lines of text, not a multi-column numbered table, and running it
+unmodified across four ~2000x3000px canvases risked exactly the unit-mispricing this repo's Usage section 6
+warns against (a call sized to outlive its box). Given the box (120 min) and the call budget (~12 calls at ~USD
+1.5), this session instead cut the crops needed for the 12 anchors directly with PIL from the cached 2000px-wide
+canvas images (no extra network calls), reconciled per-cell against the systematic row/column structure visible
+in the full-canvas images, and gave a blind subagent the same crop paths for a second read -- the same
+"reconcile from crops yourself, subagents get crop paths only" method NX-LAU used on f.10r when the tool's line
+detector did not fit the material. Crops: `crop_syllables_zoom.jpg`, `crop_syllables_zoom2.jpg`,
+`crop_101_103.jpg`, `crop_141_zoom2.jpg`, `crop_288_wide3.jpg`, `crop_184_zoom4.jpg`, `crop_335_346_v2.jpg`,
+`crop_346_v2.jpg`, `crop_doubles.jpg`, `crop_199_232_{top,bot}.jpg`, plus the full canvases `f198_hi.jpg`,
+`f199_hi.jpg`, `f200_hi.jpg`, `f201_hi.jpg` for the special-symbol table and as context for the tighter crops.
+
+### 2. Transcription (`key57/key57.tsv`)
+
+**Pass A** (this session, direct read from the crops above, cross-checked against the systematic 14-consonant x
+5-vowel structure of the syllable table, which is internally self-consistent and lets a misread cell be caught
+immediately). **Pass B**: one blind Sonnet subagent, given only the same crop paths and a list of code numbers to
+read (never told pass A's answers), asked to report the word next to each number with no interpretation. ~104
+numeral-table entries transcribed (syllables 1-72 partial, double letters partial, word bank 99-353 sampled
+across ~190 codes including all 12 anchor codes) -- not the full ~353+72+26-entry table (out of scope once the
+gate result was clear; every anchor code itself is covered). `key57.tsv`: code, meaning, class, crop, per-cell
+pass agreement.
+
+**Agreement on every anchor-bearing cell**: passes A and B agree exactly on 25=que, 26=re, 54=ro, 56=to, 99-104
+(a/aux/au/au/aussy(auffz)/art), 141=catholique, 183-184=estre/est, 335=soit, 346=volonté ou vouloir. Two cells
+disagree in wording but agree on the verdict that matters (neither reads the fr.3625 target word): 288 (pass A
+"Noua", pass B "Nous" -- neither is "Catholique"); 337 and 347 (spelling variants, not anchor codes). XX = "le
+pape ou sa saincteté" confirmed by both the initial full-canvas read and the blind pass, on `f201_hi.jpg`'s own
+name/title symbol list. The blind pass also independently confirms **the "✗" (que) symbol used in fr.3625 and in
+Bourdeau's own key_lauriere.txt has no counterpart anywhere in no.57's special-symbol table** -- that table pairs
+symbols only with proper names and titles (popes, kings, dukes, cardinals), never with a common word, and a full
+page read (both columns) found no plain-X-for-"que" entry.
+
+### 3. Known-answer gate (rule 3), written before comparing
+
+**Anchors** (12, per key_lauriere.txt's Table, `bourdeau_ref/key_lauriere.txt`): ✗=que (C), 335=le Roy (C),
+141=soit (M), 288=Catholique (M), 346=volonté (C), 59=du (C), 25=le/la/que (M), 26=a/de (M), "103 56nΔ"=aussitost
+(M), "101 54y+"=Sa Majesté (M), 184y=auroit (M) -- 12 entries total (5 grade C, 7 grade M), matching NX-LAU's own
+count and use of this same table as ground truth. Normalisation: lower-cased, accents stripped, "x ou y" cells
+split into alternatives, a match counted if key57's meaning equals fr.3625's word or one of its listed
+alternatives (rule 3, PX-BRODEC normalisation lesson). Compound two-code anchors (Sa Majesté, aussitost) require
+both component codes to match their component word for that anchor to count (a conservative rule; loosening it
+to "either code matches" would not change today's result -- neither component matches for either compound).
+
+**Statistic: number of anchors whose key57 meaning matches fr.3625's established meaning.**
+
+| anchor | fr.3625 meaning (grade) | key57 meaning | match? |
+|---|---|---|---|
+| XX | pape (C) | "le pape ou sa saincteté" | **MATCH** |
+| 59 | du (C) | "Du" (syllable) | **MATCH** |
+| 346 | volonté (C) | "volonté ou vouloir" | **MATCH** |
+| 25 | le/la/que (M) | "Que" (syllable) | **MATCH** |
+| 335 | le Roy (C) | "soit" | mismatch |
+| 141 | soit (M) | "catholique" | mismatch |
+| 288 | Catholique (M) | "Noua"/"Nous" (passes disagree, neither is Catholique) | mismatch |
+| 26 | a/de (M) | "Re" (syllable) | mismatch |
+| 184y | auroit (M) | "Est" | mismatch |
+| 101+54y+ | Sa Majesté (M) | "Au" + "Ro" | mismatch |
+| 103+56nΔ | aussitost (M) | "Aussy" + "To" | mismatch |
+| ✗ | que (C) | not present in key57 (no plain-X "que" symbol anywhere on the sheet) | mismatch |
+
+**Real statistic: 4 of 12.**
+
+**Control**: 1000 shuffles of key57's own transcribed meanings over its own codes (`key57/control_key57.py`,
+`python3 control_key57.py` reproduces it, seed 20260926) -- the 104-entry numeral pool shuffled for the 10
+numeral-table anchors, a separate Bernoulli(1/73) draw per shuffle for the XX anchor (73 = the counted number of
+distinct title-to-symbol rows on `f201_hi.jpg`'s own two columns, the population XX would have to beat by chance),
+the que-mark anchor fixed at 0 (it cannot match under any permutation, since no cell for it exists in either
+table). **Shuffle mean 0.072, p99 1, max 2** (out of 1000 shuffles).
+
+**Gate: target at or above 6 of the anchors AND above the shuffle max.** 4 is above the shuffle max (2) --
+the match is not pure noise -- but 4 < 6. **GATE NOT MET.**
+
+Per class: syllable band (25, 26, 54, 56, 59) 2/5 match; word band (101, 103, 141, 184, 288, 335, 346) 1/7 match;
+special-symbol band (XX, ✗) 1/2 match. The word band is the discriminating one (rule 3, AX-NAMES) and it is the
+weakest: 1/7, on the two most solidly attested C-grade word-band anchors (335=le Roy, 346=volonté) split one
+match and one clean mismatch.
+
+### 4. Apply -- skipped (gate not met)
+
+Per this brief's step 5: key57 is not this letter's key. No key.tsv/decode.json/ciphertext for no.55, no
+`specs/fr3625-lauriere-1593.json`, no judge run -- there is no reading to apply or score. Bourdeau's 19/86 (grade
+C) stands unchanged as the reading on file. Status unchanged: `open`.
+
+### 5. Reading the result
+
+This is a real, above-chance partial overlap (4 beats a shuffle max of 2), not zero -- most plausibly because
+this cipher office's key sheets for different Nevers correspondents in 1593 shared the same syllable-table
+*template* (the same 14-consonant x 5-vowel numbering convention, which is why 25=que and 59=du land in the same
+place in both fr.3625's and no.57's systems) while assigning the *word bank* independently per correspondent
+(which is why le Roy/soit/Catholique/aussitost/Sa Majesté/auroit/a-de all disagree). That is a plausible and
+interesting structural observation about the office's key-issuing practice, worth naming for a successor, but it
+is not evidence that no.57 is fr.3625's own key, and the brief's gate (>=6 of 12, word-band anchors doing the real
+discriminating) correctly says so. Not a NEAR.md candidate (rule 5): this is a negative on the key-identity
+question with a passed, informative control, not a solver beating a control on an actual decode.
+
+### Next step
+
+fr.3625 no.55 remains unread beyond Bourdeau's 19/86. NX-LAU's own next step stands: fr.3632 no.8 (a second
+glossed Laurière letter, not digitized, needs a REQUEST.md/copy-order row) would raise the leave-one-out alignment
+N past today's 15 qualifying tokens; a lexicon-constrained beam search over the code's likely word-bank entries
+(per Forster 1644's precedent, LESSONS.md section 2) is untried. Testing further Tomokiyo-catalogued Nevers keys
+against fr.3625 (no.57 was the only untested one on Bourdeau's own list; his own next candidate would need a fresh
+desk search of `nevers.htm` for still-untested entries) is a third option, cheap since the syllable-table
+convention this session found shared across at least two correspondents suggests more of these keys share it,
+even where the word bank differs. Status unchanged: `open`.
+
+Credit: S. Tomokiyo, "Catalogue of Ciphers (Mainly Related to Duke of Nevers) in BnF fr.3995"
+(cryptiana.web.fc2.com/code/nevers.htm) for the no.57 catalogue entry and the correspondent identification; D.
+Bourdeau, cyphersolver (`champagne1590/key_lauriere.txt`), CC BY 4.0, for the 12-entry anchor table this session
+tested against. Rule 10: no novelty claim made; this is a controlled negative on a key-identity test, not a
+reading of no.55.
+
+Files: `ciphers/fr3625-lauriere-1593/key57/{f198_hi.jpg,f199_hi.jpg,f200_hi.jpg,f201_hi.jpg,f10*_eyecheck.jpg,
+f19*_eyecheck.jpg,f20*_eyecheck.jpg,crop_*.jpg,key57.tsv,control_key57.py}`. No `specs/fr3625-lauriere-1593.json`
+written (gate not met, no reading to spec). Stopping per brief -- the orchestrator sends a fresh re-derivation.
+
 Requests this session: cryptiana.web.fc2.com 2 (1 reachability check, 1 image fetch, both HTTP 200, 1.5s+ apart);
 archivesetmanuscrits.bnf.fr 6 (1 reachability re-check of the fr.3625 record, HTTP 200; 2 failed attempts at the
 bare site root, `ws_closed_mid_exchange` tunnel resets per `/__agentproxy/status`, one retry per the good-citizen
