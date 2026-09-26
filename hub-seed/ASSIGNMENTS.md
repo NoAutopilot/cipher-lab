@@ -927,3 +927,6 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T18:04Z	session_01Pd7VDFHfeiUfPdJ2TQP7j1	RETRO-APPLY-U	done 5.85 D (get_session), ledgered, retitled ARCHIVED, archived by 7i	634eb7f, 4 of 4
 2026-09-26T18:01Z	session_01EYznd2r84bEjkjv3wAYKK4	OUT-CHECK-D (Opus, cap 3)	gate 7 check of the DECODE image-access draft (ASKS 42)	parent 7i
 2026-09-26T18:06Z	session_013ynvrTFtonQsvhEdaY6bie	retrospective v (Sonnet, cap 10)	17 rows and about USD 164 since retro u; file RETRO-2026-09-26j.md	brief 2026-09-26-parent-retrospective-v.md; parent 7i
+2026-09-26T18:15Z	session_01EYznd2r84bEjkjv3wAYKK4	OUT-CHECK-D	done 1.51 D (get_session), ledgered, retitled ARCHIVED, archived by 7i	DECODE draft checked 18:03; sent by the owner 18:04 pre-mirror
+2026-09-26T18:15Z	session_01DfYRf9UUmHn1yoNHVw6HeE	V-GATE2	done 5.07 D (get_session), ledgered, retitled ARCHIVED, archived by 7i	gate 2 closed x11, NOTIFY.md 13 rows, no class moved
+2026-09-26T18:15Z	session_01PnZZpvfruNUv4n3H1E62cb	LANE B12 orchestrator	closed 18:12, 3.14 by get_session (ledger row edited from 2.40), archived by 7i	handoff STATUS.md LANE B12 handoff; workers bSALW 3.60 D, bSPECFILL 2.57 D
