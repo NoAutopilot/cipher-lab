@@ -245,3 +245,142 @@ Bourdeau, dbourdeau/cyphersolver, `lopehurtado/` folder, commit `fc0c9e865d0fae6
 (2026-09-25), CC BY 4.0 text / MIT code, read 26 Sept 2026. Aymeloglu, aaymeloglu/unsolved-ciphers
 (no licence — cited, not copied), `catalogue/decode-records.jsonl` and `catalogue/bne-ranked.md`, read
 26 Sept 2026.
+
+## Job bLOP2, 26 Sept 2026 (LANE B6 worker bLOP2)
+
+Job `.claude/briefs/runs/2026-09-26-lane-b6-lop2.md`, follow-up to bCSLOP's two leads: is CSP Spain II
+no. 497 the same letter as any of R9634/R9646/R9649, and can Kolosova's reconstruction be opened.
+Status stays **partial** — nothing found here is a plaintext or key "shown in print" in the sense
+check-solved.md means (F0/F1/F2): every printed source below is a one- or two-sentence archival
+*regesta* (a catalogue description), not a transcription or decipherment of the cipher text itself.
+Reported for the record and for whoever classifies novelty next (rule 10; not done here).
+
+### (1) CSP no. 497 is not R9634/R9646/R9649 — it is R9644 (already `Decrypted` on DECODE)
+
+Re-fetched the same CSP Spain II `_djvu.txt` (archive.org `bub_gb_ZoY9AAAAcAAJ`, 3,438,686 bytes,
+1 request, disk only) and re-read entry 497 in full (djvu.txt ~line 49262-49290): despatched "Rome,
+the 1st of November 1522"; content per the abstract — Peter the *camarero*/valet de chambre is "the
+principal man in Rome... a very sharp Burgundian... we must buy him"; the Pope consults the Archbishop
+of Piacenza; "Cisterer" reports the King of France asked the Pope for a safe-conduct; "Prince Henry
+(of Navarre). Flanders. Castile."; "pp. 6."
+
+Cloned `dbourdeau/cyphersolver` (`git clone --depth 1`, same HEAD `fc0c9e865d0fae67ca92d19750d2b09ab11972e0`,
+2026-09-25, as the prior job; read `lopehurtado/read_r9644.md` and `read_r9646.md`/`read_r9649.md`;
+deleted after reading; MIT code/CC BY 4.0 text, credited). **R9644** (RAH Salazar 9/26, ff. 237-243,
+DECODE status `Decrypted`, its own contemporary clear copy on ff. 241-242 headed "Al Rey — De Lope
+Hurtado, de Roma, del primero de noviembre") contains, verbatim: "El camarero Pedro es el principal"
+(= "Peter, the valet de chambre, is the principal man in Rome"), "Entendido he... de Cisterer" (=
+"Cisterer"), "el principe don Enrique" (= "Prince Henry"), and "Flandes"/"Castilla" in the same
+paragraph — four distinctive, co-occurring matches to no. 497's abstract, on the same date (1 Nov
+1522). Bourdeau's own note: "R9648 (ff. 260-265, 9 Nov, DECODE Non-decrypted) is the duplicate of
+this despatch" — so **R9644/R9648, not any of our three targets, is CSP no. 497** (grade for this
+identification: content match S, from the printed abstract vs. the already-decrypted clear copy; not
+a token-by-token grade since no. 497 itself is an English abstract, not the Spanish text).
+
+Per record, vs. no. 497:
+- **R9634** (f. 14-16): **unrelated**. Different date entirely (14 Sept 1522, established below, vs.
+  1 Nov) and no content overlap in what Bourdeau's notes give (no transcription exists at all yet —
+  see the bLOP job section above).
+- **R9646** (f. 252): **sibling**, not the same letter. Same correspondence (Lope Hurtado to Charles
+  V, RAH Salazar 9/26) but a different despatch — dated 7 Nov 1522 (below), content the duke of
+  Ferrara's capitulation and the *décima*, no overlap with no. 497's Peter/Cisterer/Piacenza/Navarre
+  content.
+- **R9649** (f. 266-268): **sibling**, not the same letter. Dated 9 Nov 1522 (own text: "De Roma .ix.
+  de noviembre"), content Cardinal Santa Cruz pressing for the Ostia fortress and the *licenciado*
+  Bernardino — again no overlap with no. 497.
+
+### (2) All three targets independently dated and content-matched in two printed 19th/20th-c. catalogues
+
+Google Books (key + `country=US`) turned up two printed indexes of the *same* RAH collection under
+its **old shelfmark "A-26"** (confirmed identical to the modern "Signatura 9/26" DECODE uses — a third
+Google Books hit prints both side by side: "9/26. 3.263..." opens the Índice's own A-26 section, and
+*El Obispo Diego Ramírez de Villaescusa...* cites "Salazar y Castro, 9-26 (A-26), fols. 133-138v"):
+
+- *Índice de la colección de don Luis de Salazar y Castro*, Tomo II (Real Academia de la Historia;
+  Google Books id `29EJv0xvKcoC`) and Francisco de Laiglesia y Auset, *Estudios históricos (1515-1555)*
+  (Imprenta clásica española, 1919; id `8qNCAAAAYAAJ`).
+
+Per record (snippet-quoted, page numbers not visible in the snippet view):
+- **R9634** — Índice, entry "3.269. 7.- Otra de Lope Hurtado de Mendoza a Carlos V, en cifra. Génova,
+  1522. Septiembre, 14. Original. A-26, fos 14 a 16." Exact shelfmark match (f.14-16) and an exact
+  date: **Genoa, 14 September 1522**. Independently re-confirmed by a modern secondary source, Álex
+  Claramunt et al., *Pavía 1525* (Desperta Ferro Ediciones, 2025; id `E0c_EQAAQBAJ`): "Lope Hurtado de
+  Mendoza a Carlos V, Génova, 14 de septiembre de 1522, RAH, Colección Salazar, A 26, f.os 14-16" —
+  same date, same shelfmark, cited independently of DECODE. This resolves the open question in the
+  bLOP job section above (R9634's date was previously unknown beyond "1522 -, day blank").
+- **R9646** — Índice, entry "3.362. 100. Carta de Lope Hurtado de Mendoza a Carlos V, en cifra. Roma,
+  1522. Noviembre, 7. Original. A-26, fo 252. El fo 253 es el sobrescrito de esta carta. El fo 254 es
+  una postdata de esta carta..." Exact shelfmark match (f.252) and an exact date, **Rome, 7 November
+  1522** (read_r9646.md had inferred only "filed between R9644 [1 Nov] and R9649 [9 Nov]" from
+  internal content — this confirms and narrows it). Laiglesia's *Estudios históricos* independently
+  describes what reads as the same letter: "Carta de Lope Hurtado a Carlos V sobre la capitulación
+  del duque de Fe[rrara]... en cifra..." — matching R9646's own decoded content (*"como el papa era
+  concertado con el duque de Ferrara"*) almost exactly.
+- **R9649** — Laiglesia's *Estudios históricos*: "Lope Hurtado al rey Carlos [V] de cómo S.S. le manda
+  escribir a S.M. que el cardenal de Santa Cruz solicita a Ostia, y que convendría escribiese a S.S.
+  ponga a buen recaudo aquella fortaleza y no la de a nadie, y de la llegada del [licenciado
+  Bernardino?]" — this is a near word-for-word regesta of R9649's own decoded content (*"el Cardenal
+  de Santa Cruz le mata por Ostia"*, *"poner gran recabdo en la fortaleza de Ostia... no la de a
+  nadie"*, *"el licenciado Bernardino es venido"*). The Índice's own entry for the same subject gives
+  "A-26, fos 269 y..." ("Sin lugar ni data (Roma, 1522)") — three folios off DECODE's f.266-268, in
+  the same direction and size as the f.252/253/254 letter+cover+postscript pattern seen for R9646, so
+  plausibly the same item under the index's own foliation, not verified folio-by-folio.
+
+**What this changes:** none of R9634/R9646/R9649 is CSP no. 497 (that is R9644/R9648, already
+`Decrypted`); all three are dated and content-matched, independently of DECODE and of each other's
+Cardenal/Ferrara transcriptions, in two printed archival catalogues from 1919 and the Real Academia de
+la Historia's own Índice — sources neither this repository nor, apparently, Bourdeau's notes had
+cited before. This is a regesta match, not a plaintext or key in print (status stays `partial`), but
+it is a substantial addition to the search log a verifier should see before any N-class is assigned:
+these three letters' existence, dates, senders/recipients and (for R9646/R9649) approximate subject
+were already in print for over a century before DECODE catalogued the cipher.
+
+### (3) Kolosova — an open PDF exists but is dead-linked; a live Google Books preview independently corroborates a 49-value cipher
+
+CORE (`api.core.ac.uk/v3/search/works/`, keyless, 1 request, 200 — no `CORE_API_KEY` needed for
+`search`) found the 2017 dissertation directly: id `159375827`, "El lenguaje secreto de la diplomacia
+de Carlos V (1521-1527)", Kolosova, Olga; directed by Júlia Benavent Benavent; held by "Repositori
+d'Objectes Digitals per a l'Ensenyament la Recerca i la Cultura" (RODERIC, Universitat de València) —
+matches the web-search-found `https://roderic.uv.es/handle/10550/66216` (not fetched: `roderic.uv.es`
+is not a host this job's brief names). CORE's own cached PDF mirror is dead: `downloadUrl`
+`https://core.ac.uk/download/159375827.pdf` 301s to `fileserver-az.core.ac.uk`, which 404s
+(`BlobNotFound`) on both HEAD and GET. A follow-up `api.core.ac.uk/v3/outputs/159375827` call (for
+the record's other identifiers/links) 429'd twice (`CORE_API_KEY` unset this session per
+`tools/room.py --start`'s probe — the good-citizen one-retry limit was then hit, not pursued further).
+Dialnet's own page (`dialnet.unirioja.es/servlet/tesis?codigo=177430`, 1 request) links "Tesis en
+acceso abierto en: TESEO"; following that (1 more request) 302s to
+`aplicaciones.ciencia.gob.es/teseo-rest/api/documento/download/public/34168`, which reconfirms the
+23 Sept 2026 finding elsewhere in this repo: TLS-unreachable from this container (`SSL certificate
+problem: unable to get local issuer certificate`, 1 reachability check). `docta.ucm.es` (1 request,
+404/no-results) and `eprints.ucm.es` (2 requests, connection reset both times, one retry per the
+good-citizen rule, not pursued further) — both the wrong institution for this thesis (Universitat de
+València, not Complutense) and negative as expected.
+
+Not blocked, however: Google Books (key + `country=US`) serves a live PARTIAL-view preview of the
+**2024 book** (*El lenguaje cifrado en tiempos de Carlos V (1521-1527)*, Ediciones Universidad de
+Salamanca, Google Books id `fpTHEQAAQBAJ`) with several on-point snippets (5 requests total for this
+sub-search): "Lope Hurtado presenta menos variación y cuenta con 49 variantes, correspondientes a las
+23 letras o grupos de..." — **49 variants**, matching `key_codes.tsv`'s 49 `confirmed` code values
+exactly, independently derived by Kolosova from (per her own thesis abstract) "78 unpublished,
+encrypted manuscript letters" rather than from Bourdeau's crib. Also: "...Lope Hurtado (cifra 7 de
+nuestro listado) evidencia que el origen de las cartas confluye con las misiones llevadas a..."
+(confirms Tomokiyo's "Ko.7" numbering is Kolosova's own "cifra 7"). No snippet found yet naming R9634/
+R9646/R9649 specifically, or quoting a full key table (Google Books' snippet view only surfaces short
+matched fragments, not full pages) — **this does not confirm Kolosova's book prints the *same* 49
+values as `key_codes.tsv`, only that the same count is independently reported**; comparing the actual
+value tables (thesis p.312/333 or book's equivalent) needs the full text, which is not open from this
+job's hosts.
+
+**Next step, not run here:** a job whose brief names `roderic.uv.es` (the RODERIC repository directly)
+or that carries `CORE_API_KEY` could very likely retrieve the full 2017 dissertation PDF outright —
+this is a live, findable, apparently-open academic repository copy, not a paywall; it was not fetched
+here solely because this job's host list did not name it. If retrieved, grep it for "9634", "9646",
+"9649", "252", "266", "268", "14-16", "Ostia", "Ferrara" and the Ko.7/Ko.10 alphabet tables (p.312/333,
+p.388/405 per Tomokiyo's citation) to check whether Kolosova's own 49-value table matches
+`key_codes.tsv` value-for-value (a possible **published** key per rule 10's "Key source" field) and
+whether she edits R9634/R9646/R9649 specifically among her 78 letters.
+
+Requests: archive.org 1; github.com 1 clone (deleted); dialnet.unirioja.es 2; aplicaciones.ciencia.gob.es
+1 (reachability only, TLS failure); docta.ucm.es 1; eprints.ucm.es 2 (both failed, not pursued further);
+googleapis.com (Books) 11; openalex.org 1; core.ac.uk (api + fileserver) 5 (1 search 200, 2 outputs 429,
+2 download attempts 404).
