@@ -1,7 +1,7 @@
 folder	status	blocker	cost_band	near_row	last_touched	next_step
 antt-linhares-chave	partial	runnable	S	n	25 Sep	This group was already M, not H, so the brief's downgrade rule does not apply to it; recorded here for the record, not resolved further -- a third count of this specific column, independent of both L…
 antt-msliv0638-brochado-1712	partial	runnable	M	n	26 Sep	Leaf images are on disk (`images/full_PT-TT-MSLIV-0638_m0289/90/91.jpg.jpg`); named here as the concrete next step, same as AX2-BRO4 left it, now with the added caveat that `x` and `f` may have the s…
-armstrong-madison-1808	open	runnable	S	n	26 Sep	Item (d) of this brief (remaining pages of the still-page-1-only 2-/3-page items) was not attempted -- not in the priced-per-unit budget, left for a successor if the lane wants it.
+armstrong-madison-1808	open	runnable	S	n	26 Sep	Next step unchanged from family C: more ciphertext in the same code, or a crib source outside the ciphertext.
 arsenal-dallion-lanmary-1744	blocked	runnable	S	n		a Recueil des instructions volume for Sweden, was not run -- budget-limited, flagged as the next step for whoever returns to this row).
 arsenal-ms6829-1708	blocked	runnable	S	n		
 arsenal6314-hanau-1635	blocked	runnable	S	n		
