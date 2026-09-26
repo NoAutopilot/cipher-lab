@@ -716,3 +716,6 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T04:50Z	session_01DueU8wgZEcDhHmhW5G646N	LANE B7 bSIE (Sonnet, cap 3)	siena-concistoro-2308 intake + key transfer	brief 2026-09-26-lane-b7-sie.md
 2026-09-26T04:50Z	session_01AMPr9AZeSQKoLqLLTY6jBv	LANE B7 bHCP (Sonnet, cap 5)	hessen-daenemark-1672 + hessen-1824 intake + first tests	brief 2026-09-26-lane-b7-hcp.md
 2026-09-26T05:09Z	session_01LV9zxH7aPvDF6oEzJuKNDe	ORPHAN-TOOL (Sonnet, cap 6)	tools/orphan_check.py + test; wired into parent.md, SUCCESSOR-PROMPT.md, README tail (owner ask 05:00)	brief 2026-09-26-parent-orphan-tool.md; spawned by 7e after hand-over, 7f ledgers it
+2026-09-26T05:10Z	session_01LojfFrWYJp3xMaRbwmKWtC	V8-NA5797-2	done 3.86, ledgered D, archived (A2 held N4 x2; gate 2 done, JSTOR 88-91 answered in PR 17)	
+2026-09-26T05:09Z	session_01DbfCCQsUM1WwCELrgVMz3b	V8-NA172 (Opus, cap 6)	verifier lodewijk 5797 p6_spot4 (172 le Conte Jean)	brief 2026-09-26-lane-v8-nassau172.md; LANE V8
+2026-09-26T05:09Z	session_011VT63hJtoLER8ZHuMKvK6X	V8-SO16 (Sonnet, cap 4)	citation check PR 16 SO-MERCY-F22	brief 2026-09-26-lane-v8-so16.md; LANE V8
