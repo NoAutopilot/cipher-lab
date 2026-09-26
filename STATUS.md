@@ -2217,6 +2217,14 @@ wherever another agent checks the output; the window to 11:10 UTC has to last.
 Gallica .texteBrut is altcha-walled, IIIF page images are not; tell solvers to run long jobs in the foreground (two Paleologue
 solvers went idle with background runs); commit per pass so a rate-limit stop loses nothing; "9.bre" is novembre.
 
+### Parent note, owner account (26 Sept 2026, 20:45 UTC)
+
+- LANE WC closed idle-standing at 20:02 (orchestrator 6.73, five workers 40.08): no sibling key fits the unread Nassau 5549 body on a real cosine test (seven candidates, 0.36 to 0.54 against a known positive of 0.836); la-garde-1577's syllabary and word-code families are untestable at 239 tokens (controls below gate). The stuck-rule tries were run before idling. Blocked on ASKS 31, 46 and 75 (the three deciphered siblings' cipher originals).
+- SUPPLY: NX-FIX (2.87 D) made the next-step tracker prefer the newest dated section. PR 28, the JSTOR runner's 32-row answer to tonight's refill, is being landed (PR-LAND-8); any hit that could change a class goes to a verifier, never landed as a verdict. IMG-FETCH is fetching the three free scans the tracker names so those rows become solver-ready.
+- Desk runner rerun: the other account landed its ten-row recheck (PR 27): one row answered, five still blocked on the same hosts.
+- The board shows Pacific time with a UTC toggle, at the owner's direction.
+- Counts unchanged: 20 letters, 15 entries. Mailbox quiet; the BnF quote batch stays held for the owner (prior-contact rule).
+
 ### Parent note, owner account (26 Sept 2026, 19:44 UTC)
 
 - Direction from the owner this evening: momentum without hour-by-hour management; a stuck target gets one materially different try before it idles (README common tail, "stuck rule"); the owner's decisions are recorded in plain form, never as quotations (parent.md).
