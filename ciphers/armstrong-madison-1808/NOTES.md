@@ -956,3 +956,15 @@ Requests: be-api.us.archive.org 13, archive.org advancedsearch.php/metadata 4 (M
 403/302 access-restricted, consistent with the documented print-disabled finding), www.loc.gov ~28 (2 with a
 transient HTTP/2 stream error, retried once each per the good-citizen rule), tile.loc.gov 15. All >=1.5s apart,
 descriptive User-Agent, no 429/403/challenge on any host. No logins, no credentials touched, no subagent calls.
+
+26 Sept 2026 (ARM3-ADJ, LANE ARM3 job 3 PART 3a): family S2 run-adjacency structural test, script only, no
+network. Tested whether numeric groups adjacent to a shorthand run (ciphertext_ms.txt) behave like a closed
+set (particle-block-heavy, low distinct-value ratio). Only 1 of 6 statistics (share of 1-99 values at
+position +1) clears its shuffled-position null's p95 (pct 99); the other 5, including both distinct-value-
+ratio cells, sit inside the null band, one even in the wrong direction. A positive control (en18 prose,
+seq_pblock design, proper nouns turned into pseudo-runs) separates cleanly on all 6 cells, so the method has
+resolving power, but at N=22,886 adjacency events vs the target's 28 -- the null bands are correspondingly
+far wider at the target's own scale, so this is a non-result (no signal detected), not an exclusion. No
+closed-set adjacency positions are licensed as crib candidates for 3b's U5. Full numbers, both controls and
+the top adjacent values (listed for the record, not as cribs) in HYPOTHESES.md "Family S2, ARM3-ADJ
+run-adjacency structure". Script: `adj/adj_test.py`; raw output `adj/run_log.json`.

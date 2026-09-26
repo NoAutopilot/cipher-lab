@@ -1113,3 +1113,97 @@ particle class is reported as such and does not pass. HEADROOM CHECK: the blind 
 FLOOR CHECK: if fewer than 10 of the top-30 repeated values read right on the blind round (score command's count), the
 reader has nothing to work from; record that and still run U2 once to measure it. At most 12 value=word cribs per round,
 proposed from the view output alone; three crib rounds at most (U2-U4). U5 (target) only if the gate passes.
+
+## Family S2, ARM3-ADJ run-adjacency structure (26 Sept 2026, LANE ARM3 worker ARM3-ADJ, Sonnet)
+
+Hypothesis under test: the shorthand runs ('*' marks) spell proper names/OOV words; if so the numeric
+groups immediately adjacent to a run (-1 = last group before it, +1 = first group after it) should behave
+like a closed set (titles, prepositions, articles) -- fewer distinct values, more mass in the 1-99 particle
+block, more mass on the letter's own top-10 particle values, than groups elsewhere. Script:
+`adj/adj_test.py` (offline, stdlib, `python3 adj/adj_test.py`; raw numbers in `adj/run_log.json`).
+
+**Source note:** used `ciphertext_ms.txt` per this job's brief. Parsed 358 numeric groups and 28 runs
+(lengths 1-35 marks) -- not ciphertext.txt's 369, because `ciphertext_ms.txt`'s own header already flags
+that its per-worker mark counts in dense cursive runs are M-graded and "not directly comparable mark-for-
+mark" with Bourdeau's passage-level `*`/`**` convention; the run *count* and *boundary positions* (what
+this test reads) are this file's own, independently re-transcribed structure, not ciphertext.txt's. Every
+one of the 28 runs has a numeric group on both sides (no run sits at the absolute start or end of the
+letter), so all 28 contribute to both the -1 and +1 samples; no edge cases dropped.
+
+Target's own top-10 particle (1-99) values by count: 18, 17, 38, 14, 1, 47, 48, 12, 11, 3 (consistent with
+ARM-DESIGN's top-5: 17, 18, 38, 1, 14).
+
+**CONTROL 1 -- shuffled-position null** (rule 3, the orthogonal-manipulation test: this control moves WHICH
+groups are adjacent to a run, which is exactly what the statistic reads, unlike a shuffled-*value* or
+shuffled-*order* control that would leave adjacency membership untouched -- CLAUDE.md's bCAS/AX-5799
+lesson). 1,000 draws: same run count (28) and length list, placed at random distinct gap positions among
+the same 358-token numeric sequence (gap = between two adjacent numeric groups in reading order across the
+whole letter, page breaks included -- "along the same lines" is read as "within this one letter's own
+token stream", since the manuscript's line breaks are a transcription-layout artifact, not a codebook
+boundary the statistic has reason to respect).
+
+share_1_99 and top10_share read HIGH (p95) for a closed set; distinct_ratio reads LOW (p05) for a closed
+set (fewer distinct values). Both tails are given; `pct` = the real value's percentile inside the null (so
+a closed-set finding needs pct>=95 for the first two stats and pct<=5 for distinct_ratio.
+
+| position | statistic | target | null mean | null p05 | null p95 | target's percentile |
+|---|---|---|---|---|---|---|
+| -1 | share_1_99 | 0.429 | 0.355 | 0.214 | 0.500 | 79 |
+| -1 | distinct_ratio | 0.929 | 0.931 | 0.857 | 1.000 | 45 |
+| -1 | top10_share | 0.250 | 0.195 | 0.071 | 0.321 | 78 |
+| +1 | share_1_99 | 0.571 | 0.362 | 0.214 | 0.500 | **99** |
+| +1 | distinct_ratio | 0.893 | 0.932 | 0.857 | 1.000 | 21 |
+| +1 | top10_share | 0.214 | 0.195 | 0.071 | 0.321 | 62 |
+
+Only one of the six cells clears its own tail (+1 share_1_99, pct 99, target 0.571 vs p95 0.500). The
+other five sit inside the null's 5-95 band, including both distinct_ratio cells, which move in the
+*opposite* direction from the closed-set prediction (very slightly above the null mean, i.e. adjacency
+positions are marginally MORE distinct than elsewhere, not less) though not significantly so. With six
+statistics tested at a nominal 5% tail each, one crossing is what a false-positive rate of about 30% over
+six independent draws would produce by chance alone; it is not corroborated by any of the other five.
+
+**CONTROL 2 -- positive control** (en18 prose, ARM-DESIGN's `seq_pblock` design: a 99-word particle block
+1-99 by frequency rank + 1800 content words randomly numbered 100-1899, OOV dropped; every capitalised,
+non-sentence-initial word treated as a proper noun and turned into a pseudo-run instead of encoded, run
+length sampled from the target's own real length list). Built from the same six en18 volumes ARM-DESIGN
+and the judge use. Yield: 714,097 numeric tokens, 22,886 proper-noun runs -- vastly more adjacency events
+than the target's 28, because the pseudo-run rate here (proper nouns are a few percent of English running
+text) applied to the whole corpus, not a single 358-token letter.
+
+| position | statistic | real | null mean | null p05 | null p95 | real's percentile |
+|---|---|---|---|---|---|---|
+| -1 | share_1_99 | 0.809 | 0.648 | 0.643 | 0.653 | 100 |
+| -1 | distinct_ratio | 0.040 | 0.075 | 0.074 | 0.076 | 0 |
+| -1 | top10_share | 0.582 | 0.329 | 0.324 | 0.334 | 100 |
+| +1 | share_1_99 | 0.686 | 0.648 | 0.643 | 0.654 | 100 |
+| +1 | distinct_ratio | 0.050 | 0.075 | 0.074 | 0.076 | 0 |
+| +1 | top10_share | 0.343 | 0.329 | 0.324 | 0.335 | 100 |
+
+The positive control separates cleanly on all six cells, in the predicted direction each time (high for
+share_1_99/top10_share, low for distinct_ratio) -- the method is not a non-test; when the same design
+carries a true closed-set-adjacency signal, this statistic finds it.
+
+**Verdict: NOT a corroborated closed-set signal at the target's own sample size.** The gate as read literally
+("the target sits above the null's p95 and the positive control separates") is not met: the positive
+control separates, but the target clears only one of six cells, the other five (including both
+distinct_ratio cells, in the wrong direction) sit inside the null band, and one crossing out of six at a
+nominal 5% tail is within chance. This is a genuine difference in statistical power, not necessarily a
+genuine absence of effect: the positive control ran on 22,886 adjacency events (proper nouns are common in
+running English prose), the target has only 28 (one 358-token letter), so the null bands above are visibly
+much wider at N=28 (e.g. +1 share_1_99 p05-p95 spans 0.214-0.500) than at N=22,886 (0.643-0.654) -- a real
+but modest particle-adjacency effect at the target's own scale would very plausibly not clear a 95th-
+percentile bar with only 28 draws. So this is reported as a non-result (no candidate closed set found), not
+as an exclusion of the hypothesis; the one weak crossing (+1 share_1_99) and the top adjacent values below
+are logged for the record only, NOT as readings or crib positions, since they are not licensed by this
+job's own gate:
+
+Top -1-adjacent values (count>=2): 17 (x2), 18 (x2); 24 further singletons (1480, 1314, 98, 45, 31, 13, 14,
+1842, 1801, 421, 1267, 1158, 481, 1540, 760, 1, 365, 740, 3, 1364, 5, 1764, 141, 981).
+Top +1-adjacent values (count>=2): 13 (x2), 48 (x2), 17 (x2); 22 further singletons (35, 384, 388, 31, 176,
+41, 1210, 78, 1248, 45, 1110, 1480, 1161, 47, 58, 3, 67, 1170, 160, 1472, 130, 5).
+
+3b's brief (PART 3b, ARM3-LOOP) names 3a's closed-set positions as a possible crib source for its U5 target
+round "if 3a found any" -- this job found none that clear its own gate, so 3b's U5 (if it runs at all) has
+no crib positions from this family to seed with; 17/18/38/1/14/47/48 (ARM-DESIGN's known particle-block
+top values) recur among the adjacent values above only because they are the letter's commonest values
+overall, not because adjacency singles them out.
