@@ -1,0 +1,20 @@
+== f78
+f78.1  <U18> <X13> <U14> s o r t e que i|y e c|u <U13> e s u c|u u <X05> e que <U03> o <X10> r <U14> s i|y e r <U14> o <U13> u <X15> s i|y i <X07> n u
+f78.2  e r <U10> <X05> e <X13> e <U22> <X16> <U23> s <U14> <U13> <X01> i <X13> u r s i r u i|y e <X13> e <U20> <U09> i i|y r e <X10> r <X16> <X07> e <X04> <X02> l <U22> e
+f78.3  t i e i|y e n t <X02> s o n i|y i <U10> s t <U14> <X01> i u i i|y i|n|s t <X18> <U10> s i e e c|u u u <X05> <X07> n t <U14> i|y
+f78.4  l e s i s e t <U14> n s e que c|u o u r c|u e <X01> i i|y l u e <X07> s n s o <U20> e <U13> <U10> <X13> e u i s o i|y s
+f78.5  <U02> <U14> t e <U04> c|u s c|u <U14> <X10> i <X14> i <U23> c|u t o <U09> <X17> i|y <U13> <X07> s <U14> r e r <U19> o n que <X01> <X07> e <U13> e <X15> r <X09> e s
+f78.6  <U23> <X07> e <U04> s l e <U10> t r u e i i u t <U13> e s <X10> <X01> <X11> c|u <U14> <U10> <X02> n e n u <X07> n|o t <X15> <U13> o c|u <U11> e s c|u <X01> e
+f78.7  <U20> r s e s o u <X14> r u n <X02> n|o <U14> t <U04> o n u e <U22> u r o <U09> que l o n|o u s i|y <U14> u e <X06> n e <X05> e s <X13>
+f78.8  i|y u r u <X09> <X20> e s <X13> e <U07> u u <U09> <X13> e <U08> e t l u n <X05> <U14> <X07> e r <X13> e u r <X05> i|y <U22> <U14> <X09> <X07> s n|o e
+f78.9  <X15> e c|u t e s t <U13> s <U04> u s n s <X13> e t <U03> o i|y <U19> n|o u <U21> u s t <U13> i|y s o <X19> s c|u <U06> s <U14> u <U01> o i|n|s
+f78.10  u r t r i s <U04> o i s <X02> l <X14> i u r t <X05> e n|o e l e <U10> i|y t e <X07> o <X11> e <U13> <X09> <X09> s o <U14> u e u <X10> e
+f78.11  <U07> que <X10> <U19> i s <U09> e c|u i|y e <X10> <U19> <U14> <X05> e s t s n|o e <U10> e r o i <U14> n <U16> u <U01> i|y n u t i e e r <X12>
+== f79
+f79.1  <U15> <U21> <U12> i|y e s c|u e r i|y que r <U14> i|y e m i|y n <U14> <X15> l <U13> u s m t r <U10> m <U23> e n|o
+f79.2  l m r <U10> e m n e c|u e t que <X08> <U05> <U10> n|o t que l e s t e <U05> <U01> u e c|u i|y <X08> u r u i c|u r e s o e e m|mm t
+f79.3  <X01> e u <X10> l <X08> n|o <U14> m c|u s <U09> <U21> <U21> i t e s <U14> t c|u e n r <X11> i i r <X08> i|y e n|o <U04> i s <U10> i|n|s t l <X11> m|mm m ss|s s
+f79.4  <U05> m|mm r <X16> <X14> i|y n <X05> e r <X08> <U05> t u m i|n|s e c|u m i|y e c|u o <U05> <U17> <X08> i m e <X12> m|mm <X03> <U14> n|o <X01> <X19> l e r
+f79.5  i|y e <U04> o r e r o <X06> e m|mm <X03> <U05> e <U14> t r e que m|mm s i|y c|u <X02> e s t r e <X14> r <U05> i s t que i|y <U14>
+f79.6  t i m e que <X17> c|u u s <U14> <U23> <X08> m n|o e n <U21> m|mm <X03> <U21> e n|o <U14> s i|y e <X08> m|mm m i|y c|u <X15> o <U05> r c|u <U14> m t
+f79.7  e <X16> i|y e <U12> m m|mm t t
