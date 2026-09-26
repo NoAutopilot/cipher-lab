@@ -668,3 +668,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T02:18Z	session_01M4wBVhbP8TcGwjzDAZncni	retrospective n (Sonnet, cap 10)	23 ledger rows since retro m; file RETRO-2026-09-26b.md	brief 2026-09-26-parent-retrospective-n.md; parent 7e
 2026-09-26T02:22Z	session_015aTDvg65RN4QfJMyHPY14c	V7-QA5 done $3.43 D, archived	QA/2026-09-26-0142.md, 2 findings
 2026-09-26T02:22Z	session_016S49jqtiPUHN5DUmLxaHJ3	V7-TH25 (Opus, cap 6)	thurloe-printed P25-P28 verifier	LANE V7 brief job 4
+2026-09-26T02:36Z	session_01V5JZNnbrmrj7P6TamyuvXT	GOLD-KAL3 done $4.43 D-, archived by LANE GOLD3	Polish conv B control 0.996 vs judge FAIL -1.971 (control-backed negative); pl-A and lt-A CONTROL BELOW GATE on one collapsed seed each; 2-3 requests over the gutendex budget, self-flagged
