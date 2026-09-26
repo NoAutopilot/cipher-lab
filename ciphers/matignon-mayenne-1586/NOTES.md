@@ -375,3 +375,40 @@ Intake gate, re-run after this rewrite:
 ```
 matignon-mayenne-1586: partial (line 1) -- edition/page or full-text-search citation found within 6 lines
 ```
+
+## NEAR step (1b), M/U beam (bMATBEAM), 26 Sept 2026
+
+Job: `.claude/briefs/runs/2026-09-26-lane-b6-matbeam.md` (LANE B6, Opus). Intake gate at 03:36 UTC (lane
+orchestrator) and again by this worker at 03:38 UTC: `matignon-mayenne-1586: partial (line 1) --
+edition/page or full-text-search citation found within 6 lines`, exit 0. Script `mu_beam.py` (run from the
+repository root; docstring gives the design). No hosts, disk and CPU only.
+
+**Design.** Character 6-gram, interpolated Witten-Bell, trained on fr16 `lettresdecatheri01` + `lettresindites00marg`
+(Lettres de Catherine de Médicis t.1 and Marguerite de Valois, same decade and register as the target; spaces
+removed, j->i, v->u, w->uu, accents stripped); `lettresdecatheri02` held out entirely (held-out 2.93 bits/char).
+M codes chosen per occurrence among their own key.tsv candidates by exact Viterbi per line (states recombined
+on the last 5 letters, exact for this LM); U signs one global value each from 22 letters + `null` + `TOK`
+(nomenclator word: resets the context), by coordinate ascent with the M choices held, alternating with the M
+Viterbi until no U value changes. `null` and `TOK` each cost one average character (2.93 bits) so neither is free.
+Change from the orchestrator's sketch: alternating M-Viterbi / U-ascent instead of the M beam inside every U
+trial (same fixed point, a fraction of the cost); control (A) licenses it or not either way.
+
+**Gate, stated before the first run:** control (A) mean of 3 seeds: U-sign accuracy (distinct signs,
+unweighted) >= 0.60 AND M-occurrence accuracy >= frequency baseline (the candidate whose letter is commonest in
+French) + 10 points.
+
+**Round 1 (6 iterations cap, 5 restarts; `mu_beam_results_round1.json`):**
+
+| control (A) seed | U-sign acc (signs) | U token-weighted | M acc | M freq baseline | M oracle-majority | bits/char before -> after |
+|---|---|---|---|---|---|---|
+| 1 | 0.619 (42) | 0.627 | 0.838 | 0.468 | 0.668 | -3.830 -> -3.111 |
+| 2 | 0.568 (44) | 0.635 | 0.797 | 0.489 | 0.646 | -4.017 -> -3.230 |
+| 3 | 0.605 (43) | 0.811 | 0.853 | 0.463 | 0.642 | -3.961 -> -2.957 |
+| mean | **0.597** | 0.691 | 0.829 | 0.473 | 0.652 | |
+
+Control (B), shuffled within lines: bits/char -5.914 -> -5.737, -6.078 -> -5.700, -6.003 -> -5.715.
+Round 1: U gate NOT MET (0.597 < 0.60), M gate met (+35.6 points over frequency baseline, +17.7 over the
+oracle per-code majority). Every restart stopped at the 6-iteration cap, unconverged, and frequent signs were
+among the wrong ones (control seed 3: sign `4`, 106 tokens, wrong at a 161-bit margin) -- a search-depth fault,
+so one change was declared before re-running: iterate to convergence (cap 30), 10 control restarts, and the
+gate must also hold on three fresh seeds (4-6) as a replication, so the retry cannot be a seed-shop.
