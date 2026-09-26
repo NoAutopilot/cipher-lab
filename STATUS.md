@@ -92,28 +92,26 @@ over-claims prevented by the gates before anything left the repository.
 
 ## LANE AX2 handoff (session_016sbTkVT8HGNJ6JGjJNmCuM), 26 September 2026, from 05:14 UTC (live)
 
-Updated 06:00 UTC.
-Brief .claude/briefs/runs/2026-09-26-lane-ax2-orchestrator.md; COMMON reused: 2026-09-26-lane-ax-COMMON.md. Start state: LANE AX
-handoff below (AX-REDERIV2 and AX-COMP2 finished before AX2 opened and were ledgered by the parent).
+Updated 06:42 UTC. Brief .claude/briefs/runs/2026-09-26-lane-ax2-orchestrator.md; COMMON reused: 2026-09-26-lane-ax-COMMON.md.
+Start state: LANE AX handoff below.
 
 **Live workers:**
 | job | session | model, box | what |
 |---|---|---|---|
-| AX2-4612 | session_013pxiX67byNnSMtekgKxU88 | Sonnet, 90 min from 05:21 | settle 16 numerals, v3, key_full decode with shuffle + 5811 controls, key-seeded anneal (--init) with a perturbed-key control |
-| AX2-5801 | session_01Dcu6wTK8pqut6dpvrr6Hjo | Sonnet, 100 min from 05:20 | clear text found: Groen IV Lettre CDXXIII pp.129-133 (dbnl); pp.1-5 transcription in progress; key_5801, apply to 5799/4612 |
-| AX2-172 | session_01MHHYmkxUyNxwmdANiFujga | Opus, 50 min from 05:59 | reconcile 172: 4614 le Conte Jean (1x) vs 7206 Lumbres (3x); verdict for LANE V8 on 5797 p6_spot4 |
-| AX2-BRO5 | session_016je7CQQok2wjf4NCKYR7Rb | Sonnet, 35 min from 06:00 | Brochado: z e/r tie and 4 undecidable occurrences by image; re-score 134 only if key changes |
+| AX2-4612S | session_01PoxouWB7p2jECzxEGsp5Fm | Sonnet, 75 min from 06:40 | tools/key_repair.py: local repair of key_full with syllable values (orchestrator reading: "yus"=vous, "zur"=pour); 5811 null + known-answer controls first; targets 4612 v3 and 5799 |
+| AX2-5801ADJ | session_01SuQVub3x6h8zx1XNQJLzzy | Opus, 45 min from 06:40 | 5801 (Willem->brothers, May 1573) name codes by eye against Groen IV CDXXIII; 172 occurs 9x: decisive test of AX2-172's list A / list B direction theory |
+| AX2-SHRINK2 | session_016Hp3QgoxDvaAPkrryk6jWH | Sonnet, 30 min from 06:40 | crops_4612 renders out, folder toward 30 MB |
 
-**Done (ledgered, archived):** AX2-SHRINK 3.69 D (80 -> 57 MB; 24 MB without the two live crop sets; manifest + regen_images.sh,
-sha1-identical regen test); AX2-BLANKS 12.32 D (156 once, 182 three times, no value for either; 7206's period decipherment is p8,
-key_7206 147 codes, 99/100 agree with key_full on <=120; 172 conflict found); AX2-BRO4 5.79 D (known-answer control 1.000 vs 0.350;
-69 undecidable -> 46 agree / 19 differ / 4 undecidable; key unchanged; 134 percentile 5.0 -> 5.0; NEAR row updated 06:02).
+**Done (ledgered, archived), 7 workers, 67.69 dollars:** AX2-SHRINK 3.69 D; AX2-BLANKS 12.32 D (156/182 no value; 7206 decipherment on p8);
+AX2-BRO4 5.79 D; AX2-4612 14.88 D (v3 settled; key_full word share 70.7 vs shuffle max 60.6 vs 5811 93.2 -- gate 79.2 not met; judge
+cannot decide; anneal control 0.70 < 0.90, target not run); AX2-5801 21.84 D (Groen IV CDXXIII; 5801 = key_full table; 5799/4612 do
+not read under the unseeded key_5801); AX2-172 3.60 D (verdict c: name lists differ by direction, 172 le Conte Jean in list A);
+AX2-BRO5 5.56 D- (z = r confirmed, key unchanged; NEAR row: next is a verifier read as judge-cannot-decide).
 
-**Hold:** 5797 p6_spot4 (172 = le Conte Jean) -- LANE V8 asked at 05:58 to hold the row until AX2-172 reports.
-**Orchestrator reading of 4612 (05:16):** v2 under key.tsv shows recurring clusters "yus" (where "vous" would sit) and "zur" ("pour").
+**5797 p6_spot4:** V8 classed N2 (Lossen 1882 prints the fact); AX2-172 says list A holds for 5797 by direction; AX2-5801ADJ tests the
+theory on a 1573 letter of the other direction. Keep the spot out of the board row until AX2-5801ADJ reports.
 
-**Queue:** second shrink pass on crops_4612 and 05801 crops once AX2-4612/AX2-5801 finish; fresh-instance re-derivation for any
-candidate flagged; 7206's town codes (227, 259, 260, 222, 261, 228, 242) into key_full only through build_key_full.py after a
+**Queue:** re-derivation for any flagged repaired-key candidate; 7206's town codes into key_full only via build_key_full.py after a
 check; pro3055 and the 5549 body stay parked (brief).
 
 ## LANE AX handoff (session_01VzK62xX92yKfnUD93zprD8), 26 September 2026, 00:15-04:35 UTC (closed at 446k context)
