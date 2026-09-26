@@ -1,0 +1,187 @@
+# round 2: N=180 values, cribs=8, best score -1365.9 (-3.389/token); restarts [-1370.7, -1365.92, -1377.19]
+# decode by line: word / value / confidence digit (9 = all restarts agree, * = crib, - = wildcard)
+L01 communicate it  to no   * tion and pay them the best calculated to * in his  own and almost entirely beyond a  to and from some of them to in form and division a  as conveyed that the * but  i  do not know what steps however should have con  gress will adopt them in the state tax  the people and who is now  is the * the * given to the just claims of * until after the ex  * the propriety of making power is * with my  con  * of the war of and the same terms as well * is appointed com  * with a  to of the navy department of state to * august dear sir and made during a  period when their neutral rights the present time nor * of a  public * tion and * that the power to treat with and * are  * and in the same * a  to be   ac  * has in * i  * the views of the office of consul here and it   is a  fit person who * law of nations * the * of that these considerations shew that both countries thank you to do so   by   the * of the other side of the ex  * of other states for  spoliations and * a  of * they should to promote that of an   * that the president * of a  decided * nance and en  * of a  i   think that it  is in the view which you have seen in the first * of * a  * i   have * ours again to * not be   found in the committee of p   the * of that * of * i   am  * is that it  is i   believe that the subject if   any in europe or   to any such colony and as * between the two  * of the treasury and that too long considering the * or   of any of this department the other * en  me   mr * and also because i   take for  granted that a  to * and to him that without a  and * our side of the subject of impressment and of course of the members of the union a  general repeal of that the american y    e    * claim on   the subject to me   to make the application of i  any and as * with mr madison s   
+    1879        250 82 1440 * 420  21  917 750  38  427  118        82 * 93 1798 272 21  380    1671     117    41 10 21  680  846  45 750  82 93 360  21  711      41 96 542      3    38  * 1520 90 56 67  1380 35   390   1514    630    1750 1460 281   251  730   58   33 38  1730  1698 22  660    21  651 91 1840 91 38  * 69  * 252   82 69  143  1132   45 * 600   869   38  260 * 69  851       45 1584   120   91 * 17   950 1460 * 45 69  160 88 48  38  190  1267  96 27   * 91 1080      1524 * 17   41 82 45 69  1770 1530       88 1730  89 * 1870   1274 941 21  1751 1081   31 1560   400  827   1010    970    22  1130    20   672 * 45 72 60     * 420  21  * 3    69  120   10 880   17   21  * 1881 * 21  33 38  190  * 41 10 1880 693 * 211 93 * 90 * 38  1409  88 22  164    45 350    70   21  1680 91 41 32  1429   651 * 487 45 536     * 69  * 45 3    49    1620           620  670  540  696       1600  860 89 56 1140 1391 69  * 45 69  560   678  19 69  260 * 45 560   1544   1410 1513        21  * 41 85 * 786  630    10 1060    1360 45 1820 * 3    69  100       * 45 41 689     * 965   21  604 * 45 41 430 1223  3    250 91 93 69  468  810   860 1750 1656 93 69  1211  * 45 * 72 * 430 1750 * 1190 1212  82 * 67  1880 507   93 69  1827      45 586 69  * 45 3    * 45 * 430 937 * 91 1360 250 91 430 980     670  22  86      1587 830 93 213    1394 82 830 150  1088   21  96 * 23      69  1489 * 45 71  908      48  670  770 571  1351        69  * 1394 85 830 45 55   1530       69  560   * 604 1040 47 * 48  1550 878     430 1167 1410 300     3    41 10 * 21  89 78  1360 1021    41 48  * 940 678  85 71  86      19 110         48  88 1830   85 69  914     85 38  960   41 812     11     19 3    69  550      1384 1310 * 1670  1100 69  86      10 1040 82 1521 22  456         45 90 830 48  96 * 17   47 26      1210
+    3           9   *  6    - 6    *   3   6    9   6    3          *  - *  3    3   *   3      3        3      *  9  *   3    3    *  6    *  *  6    *   6        *  3  3        *    9   - 3    3  3  3   3    3    3     3       3      6    3    3     3    3     3    3  9   3     3    6   3      *   3   *  6    *  9   - *   - 9     *  *   3    3      *  - 3     3     9   3   - *   3         *  3      6     *  - 3    3   3    - *  *   6   6  6   9   6    3     3  3    - *  3         3    - 3    *  *  *  *   3    3          6  3     3  - 3      3    3   *   3    3      3  3      3    3     3       3      6   3       3    3   - *  6  6      - 6    *   - *    *   6     9  3     3    *   - 6    - *   3  9   6    - *  9  9    3   - 3   *  - 3  - 9   6     6  6   3      *  3      3    *   3    *  *  3   3      3   - 3   *  3       - *   - *  *    3     3              3    3    3    3         3     6   3  3  3    3    *   - *  *   6     6    3  *   3   - *  6     3      3    3           *   - *  9  - 3    3      9  6       9    *  3    - *    *   3         - *  *  3       - 3     *   3   - *  *  6   6     *    9   *  *  *   3    3     6   6    6    *  *   9     - *  - 6  - 6   6    - 3    3     *  - 3   9    9     *  *   3         *  3   *   - *  *    - *  - 6   6   - *  9    9   *  6   3       3    6   3       3    3   *  3      3    *  3   3    3      *   3  - 3       *   3    - *  6   3        6   3    3   3    3           *   - 3    9  3   *  3    3          *   6     - 3   3    9  - 6   3    3       6   3    3    3       *    *  9  - *   3  3   9    3       *  6   - 3   6    9  6   3       3  3           6   6  6      9  *   6       9  9   6     *  3       3      3  *    *   3        3    3    - 3     3    *   3       9  3    *  3    6   3           *  3  3   6   3  - 3    9  9       9   
+
+# values by frequency: value count word conf | up to 3 decoded contexts (2 words either side)
+   45  21 of             * | from some [of] them to ; just claims [of] * until ; the propriety [of] making power
+   69  21 the            * | the * [the] * given ; given to [the] just claims ; ex * [the] propriety of
+   21  14 and            * | * tion [and] pay them ; his own [and] almost entirely ; a to [and] from some
+   41  11 a              * | entirely beyond [a] to and ; and division [a] as conveyed ; * with [a] to of
+   38   9 the            9 | pay them [the] best calculated ; conveyed that [the] * but ; them in [the] state tax
+   82   8 to             * | communicate it [to] no * ; best calculated [to] * in ; of them [to] in form
+    3   8 that           * | as conveyed [that] the * ; and * [that] the power ; * of [that] these considerations
+   91   8 is             * | and who [is] now is ; is now [is] the * ; making power [is] * with
+   93   7 in             * | to * [in] his own ; them to [in] form and ; * has [in] * i
+   10   6 to             9 | beyond a [to] and from ; the power [to] treat with ; * a [to] be ac
+   48   6 and            6 | war of [and] the same ; the treasury [and] that too ; mr * [and] also because
+   22   5 the            6 | state tax [the] people and ; neutral rights [the] present time ; views of [the] office of
+   85   5 of             9 | * a [of] * they ; * or [of] any of ; our side [of] the subject
+  430   5 i              6 | of a [i] think that ; a * [i] have * ; of * [i] am *
+   96   4 as             3 | division a [as] conveyed that ; same terms [as] well * ; colony and [as] * between
+   17   4 with           3 | is * [with] my con ; com * [with] a to ; to treat [with] and *
+   88   4 of             6 | the war [of] and the ; navy department [of] state to ; the views [of] the office
+  830   4 any            3 | subject if [any] in europe ; or to [any] such colony ; or of [any] of this
+  250   3 it             9 | communicate [it] to no ; think that [it] is in ; is that [it] is i
+   90   3 i              3 | * but [i] do not ; in * [i] * the ; application of [i] any and
+ 1750   3 have           6 | however should [have] con gress ; which you [have] seen in ; * i [have] * ours
+   89   3 to             3 | of state [to] * august ; thank you [to] do so ; * and [to] him that
+  670   3 that           3 | considerations shew [that] both countries ; i believe [that] the subject ; treasury and [that] too long
+  560   3 other          6 | of the [other] side of ; * of [other] states for ; department the [other] * en
+   19   3 of             3 | other side [of] the ex ; the subject [of] impressment and ; general repeal [of] that the
+ 1360   3 that           9 | to promote [that] of an ; * is [that] it is ; to him [that] without a
+   86   3 subject        3 | that the [subject] if any ; of the [subject] of impressment ; on the [subject] to me
+  420   2 tion           6 | no * [tion] and pay ; public * [tion] and *
+  750   2 them           6 | and pay [them] the best ; some of [them] to in
+   56   2 do             3 | but i [do] not know ; you to [do] so by
+   67   2 not            3 | i do [not] know what ; to * [not] be found
+  630   2 should         3 | steps however [should] have con ; * they [should] to promote
+ 1460   2 con            3 | should have [con] gress will ; with my [con] * of
+   33   2 in             3 | adopt them [in] the state ; * and [in] the same
+ 1730   2 state          3 | in the [state] tax the ; department of [state] to *
+  651   2 who            3 | people and [who] is now ; fit person [who] * law
+  260   2 ex             3 | after the [ex] * the ; of the [ex] * of
+  120   2 power          6 | of making [power] is * ; that the [power] to treat
+  190   2 same           6 | and the [same] terms as ; in the [same] * a
+ 1530   2 department     3 | the navy [department] of state ; of this [department] the other
+   72   2 a              6 | * of [a] public * ; of * [a] * i
+ 1880   2 be             9 | a to [be] ac * ; * not [be] found in
+  860   2 you            6 | countries thank [you] to do ; view which [you] have seen
+  678   2 side           6 | the other [side] of the ; * our [side] of the
+ 1410   2 for            3 | other states [for] spoliations and ; i take [for] granted that
+  604   2 en             3 | nance and [en] * of ; other * [en] me mr
+ 1394   2 or             3 | in europe [or] to any ; the * [or] of any
+   71   2 the            6 | * of [the] treasury and ; side of [the] subject of
+ 1040   2 me             3 | * en [me] mr * ; subject to [me] to make
+   47   2 mr             9 | en me [mr] * and ; * with [mr] madison s
+ 1879   1 communicate    3 | [communicate] it to
+ 1440   1 no             6 | it to [no] * tion
+  917   1 pay            3 | tion and [pay] them the
+  427   1 best           6 | them the [best] calculated to
+  118   1 calculated     3 | the best [calculated] to *
+ 1798   1 his            3 | * in [his] own and
+  272   1 own            3 | in his [own] and almost
+  380   1 almost         3 | own and [almost] entirely beyond
+ 1671   1 entirely       3 | and almost [entirely] beyond a
+  117   1 beyond         3 | almost entirely [beyond] a to
+  680   1 from           3 | to and [from] some of
+  846   1 some           3 | and from [some] of them
+  360   1 form           6 | to in [form] and division
+  711   1 division       6 | form and [division] a as
+  542   1 conveyed       3 | a as [conveyed] that the
+ 1520   1 but            3 | the * [but] i do
+ 1380   1 know           3 | do not [know] what steps
+   35   1 what           3 | not know [what] steps however
+  390   1 steps          3 | know what [steps] however should
+ 1514   1 however        3 | what steps [however] should have
+  281   1 gress          3 | have con [gress] will adopt
+  251   1 will           3 | con gress [will] adopt them
+  730   1 adopt          3 | gress will [adopt] them in
+   58   1 them           3 | will adopt [them] in the
+ 1698   1 tax            3 | the state [tax] the people
+  660   1 people         3 | tax the [people] and who
+ 1840   1 now            6 | who is [now] is the
+  252   1 given          9 | the * [given] to the
+  143   1 just           3 | to the [just] claims of
+ 1132   1 claims         3 | the just [claims] of *
+  600   1 until          3 | of * [until] after the
+  869   1 after          3 | * until [after] the ex
+  851   1 propriety      3 | * the [propriety] of making
+ 1584   1 making         3 | propriety of [making] power is
+  950   1 my             3 | * with [my] con *
+  160   1 war            6 | of the [war] of and
+ 1267   1 terms          3 | the same [terms] as well
+   27   1 well           3 | terms as [well] * is
+ 1080   1 appointed      3 | * is [appointed] com *
+ 1524   1 com            3 | is appointed [com] * with
+ 1770   1 navy           3 | of the [navy] department of
+ 1870   1 august         3 | to * [august] dear sir
+ 1274   1 dear           3 | * august [dear] sir and
+  941   1 sir            3 | august dear [sir] and made
+ 1751   1 made           3 | sir and [made] during a
+ 1081   1 during         3 | and made [during] a period
+   31   1 a              3 | made during [a] period when
+ 1560   1 period         3 | during a [period] when their
+  400   1 when           3 | a period [when] their neutral
+  827   1 their          3 | period when [their] neutral rights
+ 1010   1 neutral        3 | when their [neutral] rights the
+  970   1 rights         3 | their neutral [rights] the present
+ 1130   1 present        3 | rights the [present] time nor
+   20   1 time           3 | the present [time] nor *
+  672   1 nor            3 | present time [nor] * of
+   60   1 public         6 | of a [public] * tion
+  880   1 treat          3 | power to [treat] with and
+ 1881   1 are            6 | and * [are] * and
+  693   1 ac             3 | to be [ac] * has
+  211   1 has            3 | ac * [has] in *
+ 1409   1 views          6 | * the [views] of the
+  164   1 office         3 | of the [office] of consul
+  350   1 consul         3 | office of [consul] here and
+   70   1 here           3 | of consul [here] and it
+ 1680   1 it             3 | here and [it] is a
+   32   1 fit            3 | is a [fit] person who
+ 1429   1 person         3 | a fit [person] who *
+  487   1 law            3 | who * [law] of nations
+  536   1 nations        3 | law of [nations] * the
+   49   1 these          3 | of that [these] considerations shew
+ 1620   1 considerations 3 | that these [considerations] shew that
+  620   1 shew           3 | these considerations [shew] that both
+  540   1 both           3 | shew that [both] countries thank
+  696   1 countries      3 | that both [countries] thank you
+ 1600   1 thank          3 | both countries [thank] you to
+ 1140   1 so             3 | to do [so] by the
+ 1391   1 by             3 | do so [by] the *
+ 1544   1 states         3 | of other [states] for spoliations
+ 1513   1 spoliations    3 | states for [spoliations] and *
+  786   1 they           3 | of * [they] should to
+ 1060   1 promote        6 | should to [promote] that of
+ 1820   1 an             3 | that of [an] * that
+  100   1 president      3 | that the [president] * of
+  689   1 decided        3 | of a [decided] * nance
+  965   1 nance          3 | decided * [nance] and en
+ 1223   1 think          6 | a i [think] that it
+  468   1 view           3 | in the [view] which you
+  810   1 which          3 | the view [which] you have
+ 1656   1 seen           6 | you have [seen] in the
+ 1211   1 first          9 | in the [first] * of
+ 1190   1 ours           3 | have * [ours] again to
+ 1212   1 again          3 | * ours [again] to *
+  507   1 found          9 | not be [found] in the
+ 1827   1 committee      3 | in the [committee] of p
+  586   1 p              3 | committee of [p] the *
+  937   1 am             6 | * i [am] * is
+  980   1 believe        3 | is i [believe] that the
+ 1587   1 if             3 | the subject [if] any in
+  213   1 europe         3 | any in [europe] or to
+  150   1 such           3 | to any [such] colony and
+ 1088   1 colony         3 | any such [colony] and as
+   23   1 between        3 | as * [between] the two
+ 1489   1 two            3 | between the [two] * of
+  908   1 treasury       3 | of the [treasury] and that
+  770   1 too            3 | and that [too] long considering
+  571   1 long           3 | that too [long] considering the
+ 1351   1 considering    3 | too long [considering] the *
+   55   1 this           3 | any of [this] department the
+ 1550   1 also           3 | * and [also] because i
+  878   1 because        3 | and also [because] i take
+ 1167   1 take           3 | because i [take] for granted
+  300   1 granted        3 | take for [granted] that a
+   78   1 him            3 | and to [him] that without
+ 1021   1 without        3 | him that [without] a and
+  940   1 our            3 | and * [our] side of
+  110   1 impressment    3 | subject of [impressment] and of
+ 1830   1 course         6 | and of [course] of the
+  914   1 members        6 | of the [members] of the
+  960   1 union          6 | of the [union] a general
+  812   1 general        3 | union a [general] repeal of
+   11   1 repeal         3 | a general [repeal] of that
+  550   1 american       3 | that the [american] y e
+ 1384   1 y              3 | the american [y] e *
+ 1310   1 e              3 | american y [e] * claim
+ 1670   1 claim          3 | e * [claim] on the
+ 1100   1 on             3 | * claim [on] the subject
+ 1521   1 make           3 | me to [make] the application
+  456   1 application    3 | make the [application] of i
+   26   1 madison        9 | with mr [madison] s
+ 1210   1 s              9 | mr madison [s]

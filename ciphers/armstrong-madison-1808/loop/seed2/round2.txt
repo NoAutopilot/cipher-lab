@@ -1,0 +1,188 @@
+# round 2: N=181 values, cribs=15, best score -1319.3 (-3.290/token); restarts [-1319.35, -1356.04, -1343.47]
+# decode by line: word / value / confidence digit (9 = all restarts agree, * = crib, - = wildcard)
+L01 m   t    which both parties at   the  time of peace and a  doubtful or  double use * d * of  your letter of * de  * in the  * to become a  part of this will * made and are to be an  * to in the * formed by * is   here and indeed by him  this service of their * are therefore be introduced d and th  articles are to you and of the orders of and in that quarter with the other party with england in case of the people of the country but  her views respecting the * of * to which they were aware of it  a  point of * gallatin to clay and russell and may  be deemed it  * the navy department * th november gallatin to the british commander on   that subject to that mode of * them into effect if   necessary to keep in * by the law  and adopted by the president will the * was given on   that * in * as that he  * to do   so  as to you will have to which they are paid by the parties are to * those of the two  countries respectively of whom the matter now  * s    instructions relating to the united states are under the most likely to jefferson august th * that character and dis  * r  * could not in my  * tation of  a  general * of one  of the  * in any event of  a  large commercial policy which led me  to which of course a  * for his  * with * nation but should such an  one  of the large * of great importance that i    rec your return to   london * the war  of * the new  york d november of ten  years to me  and of * ing to that object was to   it  my  duty to make it  war  with the circumstances of each state upon which she * by * have already stated will be a  source of the treaty but it  will be taken of the * of liberty * it  is   the * tion of the necessity of some of the * from the * and which ought not to   hesitate which * act of * it  is   to which * to   such a  disposition to * the it  is   to * yesterday and not only one  of
+    750 1780 58    1630 120     1428 1440 1670 30 38    29  93 1811     310 511    350 * 5 * 620 90   1048   30 * 183 * 76 1440 * 51 1720   93 1772 30 783  34   * 163  29  680 83 62 160 * 51 76 71  * 102    74 * 1490 610  29  1840   74 1666 783  906     1  1796  * 680 1340      62 829        5 56  984 290      680 83 380 29  30 36  619    30 56  52 17   1031    33   36  1016  477   33   1390    52 7    30 36  381    30 36  1264    1544 3   1280  284        36  * 30 * 83 58    1501 77   920   1  450 93 820   30 * 95       96 1730 29  880     56  1210 62 1850   450 * 36  576  1470       * 35 1130     95       51 36  1680    123       1330 17   25      51 1270 957  30 * 320  50   1190   1651 270       51 1397 76 * 74 36  1157 29  307     74 36  704       34   71  * 31  1020  1330 17   * 76 * 48 17   156 * 51 1896 274 48 51 380 34   140  51 66    1501 680 1593 74 36  120     680 83 * 1030  1  36  1667 1277      357          1  1199 36  1399   1472 * 1781 1410         912      51 36  1820   1810   680 110   71  1826 1244   96 700       144    35 * 17   1241      56  1198 * 23 * 84    150 52 550 * 1790   620 93 41      * 30 1420 30 1440 * 52 790 1710  620 93 1140  989        384    58    874 770 51 66    1  960    93 * 917 1500 * 33   * 490    28  672    100  160 1420 30 36  1140  * 30 60    1341       17   1100 958 90   1556   1520 590    * 36  1681 30 * 36  1336 1090 5 1130     30 1009 549   51 770 29  30 * 191 96 1270 1846   31  1520 930 550 1801 51 1320 450 1681 33   36  764           30 1394 88    530  66    452 * 74 * 140  1106    520    34   62 93 1350   1  36  19     28  930 34   62 788   30 36  * 30 1750    * 450 1490 36  * 1847 30 71  261       1  10   30 36  * 1200 36  * 56  58    800   150 1520 640      66    * 730 30 * 930 1490 51 66    * 1520 100  93 1250        51 * 36  930 1490 51 * 720       29  150 260  1420 30
+    3   3    9     3    3       3    9    3    *  3     *   *  3        3   3      3   - 6 - 3   3    3      *  - 6   - 6  9    - *  6      *  6    *  3    *    - 3    *   *   9  *  6   - *  6  9   - 3      *  - 3    3    *   3      *  3    3    3       6  6     - *   3         *  3          6 9   6   6        *   9  *   *   *  *   9      *  9   6  *    6       *    *   3     3     *    3       6  3    *  *   3      *  *   3       3    3   3     3          *   - *  - 9  9     6    3    3     6  6   *  6     *  - 6        9  3    *   3       9   3    *  3      6   - *   3    3          - 6  3        6        *  *   3       3         9    *    9       *  3    3    *  - 3    3    3      3    3         *  3    6  - *  *   9    *   9       *  *   6         *    9   - 3   3     9    *    - 6  - 3  *    9   - *  3    3   3  *  *   *    9    *  *     6    *   6    *  *   3       *   9  - 6     6  *   6    3         3            6  3    *   3      3    - 3    3            3        *  *   3      3      *   3     9   3    3      9  3         3      6  - *    3         9   3    - 3  - 6     *   6  3   - 3      3   *  9       - *  *    *  9    - 6  3   3     3   *  3     3          3      9     3   6   *  *     6  6      *  - 3   3    - *    - 3      3   3      6    6   *    *  *   3     - *  3     3          *    3    3   3    3      3    3      - *   3    *  - *   3    3    6 3        *  3    3     *  6   *   *  - 3   9  3    3      3   3    3   3   3    *  3    6   3    *    *   3             *  3    3     3    *     3   - *  - 9    3       3      *    *  *  6      6  *   3      3   3   *    *  6     *  *   - *  3       - 6   3    *   - 9    *  9   3         6  3    *  *   - 6    *   - 9   9     3     *   3    3        *     - 9   *  - 3   3    *  *     - 3    6    *  9           *  - *   3   3    *  - 9         *   *   6    *    * 
+
+# values by frequency: value count word conf | up to 3 decoded contexts (2 words either side)
+   30  24 of             * | the time [of] peace and ; your letter [of] * de ; a part [of] this will
+   36  23 the            * | and of [the] orders of ; quarter with [the] other party ; case of [the] people of
+   51  15 to             * | the * [to] become a ; an * [to] in the ; november gallatin [to] the british
+   29   8 and            * | of peace [and] a doubtful ; * made [and] are to ; is here [and] indeed by
+   93   8 a              * | peace and [a] doubtful or ; to become [a] part of ; of it [a] point of
+    1   7 of             6 | this service [of] their * ; were aware [of] it a ; * those [of] the two
+  680   6 are            * | made and [are] to be ; their * [are] therefore be ; th articles [are] to you
+   74   6 by             * | * formed [by] * is ; and indeed [by] him this ; in * [by] the law
+   17   6 that           * | and in [that] quarter with ; commander on [that] subject to ; given on [that] * in
+   34   5 will           * | of this [will] * made ; the president [will] the * ; to you [will] have to
+   62   5 be             * | are to [be] an * ; are therefore [be] introduced d ; and may [be] deemed it
+   56   5 and            9 | introduced d [and] th articles ; orders of [and] in that ; and russell [and] may be
+   66   5 which          * | have to [which] they are ; me to [which] of course ; state upon [which] she *
+   58   4 which          9 | m t [which] both parties ; * to [which] they were ; commercial policy [which] led me
+   76   4 in             6 | de * [in] the * ; * to [in] the * ; to keep [in] * by
+   83   4 to             9 | and are [to] be an ; articles are [to] you and ; of * [to] which they
+   71   4 the            9 | to in [the] * formed ; president will [the] * was ; are under [the] most likely
+ 1490   4 is             3 | by * [is] here and ; * it [is] the * ; * it [is] to which
+   52   4 in             6 | of and [in] that quarter ; with england [in] case of ; could not [in] my *
+   33   4 with           * | that quarter [with] the other ; other party [with] england in ; his * [with] * nation
+  450   4 it             6 | aware of [it] a point ; be deemed [it] * the ; to make [it] war with
+ 1520   4 to             3 | your return [to] london * ; object was [to] it my ; ought not [to] hesitate which
+  930   4 it             3 | was to [it] my duty ; treaty but [it] will be ; of * [it] is to
+ 1440   3 the            9 | parties at [the] time of ; * in [the] * to ; one of [the] * in
+    5   3 d              6 | use * [d] * of ; be introduced [d] and th ; new york [d] november of
+  620   3 of             3 | d * [of] your letter ; * tation [of] a general ; any event [of] a large
+   96   3 to             9 | * gallatin [to] clay and ; most likely [to] jefferson august ; * ing [to] that object
+  150   3 not            * | * could [not] in my ; which ought [not] to hesitate ; yesterday and [not] only one
+ 1420   3 one            * | * of [one] of the ; such an [one] of the ; not only [one] of
+  120   2 parties        3 | which both [parties] at the ; by the [parties] are to
+   90   2 your           3 | * of [your] letter of ; i rec [your] return to
+  783   2 this           3 | part of [this] will * ; by him [this] service of
+  160   2 an             6 | to be [an] * to ; should such [an] one of
+  380   2 you            * | are to [you] and of ; as to [you] will have
+ 1501   2 they           6 | to which [they] were aware ; to which [they] are paid
+   95   2 gallatin       6 | of * [gallatin] to clay ; th november [gallatin] to the
+   35   2 th             6 | department * [th] november gallatin ; jefferson august [th] * that
+ 1130   2 november       3 | * th [november] gallatin to ; york d [november] of ten
+ 1330   2 on             9 | british commander [on] that subject ; was given [on] that *
+ 1270   2 that           3 | subject to [that] mode of ; ing to [that] object was
+   31   2 was            3 | the * [was] given on ; that object [was] to it
+   48   2 as             3 | in * [as] that he ; do so [as] to you
+  140   2 have           9 | you will [have] to which ; by * [have] already stated
+  550   2 my             3 | not in [my] * tation ; to it [my] duty to
+ 1140   2 large          3 | of a [large] commercial policy ; of the [large] * of
+  770   2 me             6 | which led [me] to which ; years to [me] and of
+   28   2 but            3 | * nation [but] should such ; the treaty [but] it will
+  100   2 such           6 | but should [such] an one ; * to [such] a disposition
+ 1681   2 war            3 | * the [war] of * ; make it [war] with the
+  750   1 m              3 | [m] t which
+ 1780   1 t              3 | m [t] which both
+ 1630   1 both           3 | t which [both] parties at
+ 1428   1 at             3 | both parties [at] the time
+ 1670   1 time           3 | at the [time] of peace
+   38   1 peace          3 | time of [peace] and a
+ 1811   1 doubtful       3 | and a [doubtful] or double
+  310   1 or             3 | a doubtful [or] double use
+  511   1 double         3 | doubtful or [double] use *
+  350   1 use            3 | or double [use] * d
+ 1048   1 letter         3 | of your [letter] of *
+  183   1 de             6 | of * [de] * in
+ 1720   1 become         6 | * to [become] a part
+ 1772   1 part           6 | become a [part] of this
+  163   1 made           3 | will * [made] and are
+  102   1 formed         3 | the * [formed] by *
+  610   1 here           3 | * is [here] and indeed
+ 1840   1 indeed         3 | here and [indeed] by him
+ 1666   1 him            3 | indeed by [him] this service
+  906   1 service        3 | him this [service] of their
+ 1796   1 their          6 | service of [their] * are
+ 1340   1 therefore      3 | * are [therefore] be introduced
+  829   1 introduced     3 | therefore be [introduced] d and
+  984   1 th             6 | d and [th] articles are
+  290   1 articles       6 | and th [articles] are to
+  619   1 orders         9 | of the [orders] of and
+ 1031   1 quarter        6 | in that [quarter] with the
+ 1016   1 other          3 | with the [other] party with
+  477   1 party          3 | the other [party] with england
+ 1390   1 england        3 | party with [england] in case
+    7   1 case           3 | england in [case] of the
+  381   1 people         3 | of the [people] of the
+ 1264   1 country        3 | of the [country] but her
+ 1544   1 but            3 | the country [but] her views
+    3   1 her            3 | country but [her] views respecting
+ 1280   1 views          3 | but her [views] respecting the
+  284   1 respecting     3 | her views [respecting] the *
+   77   1 were           3 | which they [were] aware of
+  920   1 aware          3 | they were [aware] of it
+  820   1 point          6 | it a [point] of *
+ 1730   1 clay           3 | gallatin to [clay] and russell
+  880   1 russell        3 | clay and [russell] and may
+ 1210   1 may            3 | russell and [may] be deemed
+ 1850   1 deemed         3 | may be [deemed] it *
+  576   1 navy           3 | * the [navy] department *
+ 1470   1 department     3 | the navy [department] * th
+ 1680   1 british        3 | to the [british] commander on
+  123   1 commander      3 | the british [commander] on that
+   25   1 subject        9 | on that [subject] to that
+  957   1 mode           3 | to that [mode] of *
+  320   1 them           3 | of * [them] into effect
+   50   1 into           3 | * them [into] effect if
+ 1190   1 effect         3 | them into [effect] if necessary
+ 1651   1 if             3 | into effect [if] necessary to
+  270   1 necessary      3 | effect if [necessary] to keep
+ 1397   1 keep           3 | necessary to [keep] in *
+ 1157   1 law            9 | by the [law] and adopted
+  307   1 adopted        9 | law and [adopted] by the
+  704   1 president      6 | by the [president] will the
+ 1020   1 given          3 | * was [given] on that
+  156   1 he             9 | as that [he] * to
+ 1896   1 do             3 | * to [do] so as
+  274   1 so             3 | to do [so] as to
+ 1593   1 paid           6 | they are [paid] by the
+ 1030   1 those          6 | to * [those] of the
+ 1667   1 two            6 | of the [two] countries respectively
+ 1277   1 countries      3 | the two [countries] respectively of
+  357   1 respectively   3 | two countries [respectively] of whom
+ 1199   1 whom           3 | respectively of [whom] the matter
+ 1399   1 matter         3 | whom the [matter] now *
+ 1472   1 now            3 | the matter [now] * s
+ 1781   1 s              3 | now * [s] instructions relating
+ 1410   1 instructions   3 | * s [instructions] relating to
+  912   1 relating       3 | s instructions [relating] to the
+ 1820   1 united         3 | to the [united] states are
+ 1810   1 states         3 | the united [states] are under
+  110   1 under          3 | states are [under] the most
+ 1826   1 most           3 | under the [most] likely to
+ 1244   1 likely         3 | the most [likely] to jefferson
+  700   1 jefferson      3 | likely to [jefferson] august th
+  144   1 august         3 | to jefferson [august] th *
+ 1241   1 character      3 | * that [character] and dis
+ 1198   1 dis            3 | character and [dis] * r
+   23   1 r              3 | dis * [r] * could
+   84   1 could          6 | r * [could] not in
+ 1790   1 tation         3 | my * [tation] of a
+   41   1 general        9 | of a [general] * of
+  790   1 any            3 | * in [any] event of
+ 1710   1 event          3 | in any [event] of a
+  989   1 commercial     3 | a large [commercial] policy which
+  384   1 policy         3 | large commercial [policy] which led
+  874   1 led            3 | policy which [led] me to
+  960   1 course         6 | which of [course] a *
+  917   1 for            3 | a * [for] his *
+ 1500   1 his            3 | * for [his] * with
+  490   1 nation         3 | with * [nation] but should
+  672   1 should         3 | nation but [should] such an
+   60   1 great          3 | * of [great] importance that
+ 1341   1 importance     3 | of great [importance] that i
+ 1100   1 i              3 | importance that [i] rec your
+  958   1 rec            3 | that i [rec] your return
+ 1556   1 return         3 | rec your [return] to london
+  590   1 london         3 | return to [london] * the
+ 1336   1 new            3 | * the [new] york d
+ 1090   1 york           3 | the new [york] d november
+ 1009   1 ten            3 | november of [ten] years to
+  549   1 years          3 | of ten [years] to me
+  191   1 ing            3 | of * [ing] to that
+ 1846   1 object         3 | to that [object] was to
+ 1801   1 duty           3 | it my [duty] to make
+ 1320   1 make           3 | duty to [make] it war
+  764   1 circumstances  3 | with the [circumstances] of each
+ 1394   1 each           3 | circumstances of [each] state upon
+   88   1 state          3 | of each [state] upon which
+  530   1 upon           3 | each state [upon] which she
+  452   1 she            3 | upon which [she] * by
+ 1106   1 already        3 | * have [already] stated will
+  520   1 stated         3 | have already [stated] will be
+ 1350   1 source         6 | be a [source] of the
+   19   1 treaty         3 | of the [treaty] but it
+  788   1 taken          6 | will be [taken] of the
+ 1750   1 liberty        3 | * of [liberty] * it
+ 1847   1 tion           9 | the * [tion] of the
+  261   1 necessity      3 | of the [necessity] of some
+   10   1 some           3 | necessity of [some] of the
+ 1200   1 from           6 | the * [from] the *
+  800   1 ought          3 | and which [ought] not to
+  640   1 hesitate       3 | not to [hesitate] which *
+  730   1 act            9 | which * [act] of *
+ 1250   1 disposition    9 | such a [disposition] to *
+  720   1 yesterday      9 | to * [yesterday] and not
+  260   1 only           6 | and not [only] one of
