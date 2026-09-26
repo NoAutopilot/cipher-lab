@@ -812,3 +812,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T09:33Z	session_01QU9YdUqTM1YXDPbfa2txct	bMAL28B (Sonnet, cap 10)	malsburg 507 f.28 finish	brief 2026-09-26-lane-b9-mal28b.md; LANE B9
 2026-09-26T09:33Z	session_01JaqeEHeqiYj6xk7nTb8E4c	bMAL16 (Sonnet, cap 15)	malsburg 503 f.16	brief 2026-09-26-lane-b9-mal16.md; LANE B9
 2026-09-26T09:41Z	session_01UrEoFvMTWWuT2vmuV13nPR	V9-QA9 (Sonnet, cap 4)	rolling QA, window 07:35 to start	brief 2026-09-26-lane-v9-qa9.md; LANE V9
+2026-09-26T09:45Z	session_01UFGyb1jUwyn2ppJx1nDodA	ARM-POOL	done 6.43, ledgered D, archived	
+2026-09-26T09:45Z	session_01Q3t8YFL4NMLyvok91qRPyC	ARM-S1	done 10.51, ledgered D-, archived	
