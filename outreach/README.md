@@ -12,3 +12,6 @@
 4. Dates and sequences quoted from an edition are checked against the edition's own item, not paraphrased from the
    audit (item 3: "within days" for Kluckhohn nr. 148 was wrong by six weeks).
 5. The person sends; the draft's status line records sent and reply dates; CONTRIBUTIONS.md carries the row.
+6. Email drafts are written unwrapped: one paragraph per line, blank line between paragraphs, no hard line breaks
+   inside a paragraph, and the metadata header (status/to/subject) above a blank line. Hard-wrapped Markdown pastes
+   into a mail client as broken lines (26 Sept 2026).
