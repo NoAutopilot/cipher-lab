@@ -115,3 +115,74 @@ scope but not needed since f.179 alone met the job's "one pass" bound).
 Next step for whoever continues: a higher-resolution IIIF fetch of this leaf (if it is on Gallica) or of
 Tomokiyo's original page, and a second independent pass, before trusting any word beyond "front", "pour",
 "que", "entre" individually, and before assuming the magenta ink is period rather than modern.
+
+## NEAR step (1), 26 Sept 2026 (LANE B5 worker bMAT2): read/unread split, two-context M/U rule, re-judge
+
+Job: `.claude/briefs/runs/2026-09-26-lane-b5-matignon-mu.md`. Script (reproducible, rule 7):
+`resolve_mu.py`, run from the repository root.
+
+**Split (spans.tsv).** Bourdeau's own measure.py rule (a keyed token is READ only if it lies inside a
+sense run of >= 3 lexical words / >= 10 letters, measured against his lm.pkl + corpus_words.txt and
+cached in measure_cache/) cannot be reproduced here: all three are `.gitignored` in his repository and
+none are present in the shallow clone at commit fc0c9e8 (confirmed absent by listing). `resolve_mu.py`
+therefore reimplements the SAME MINWORDS=3/MINLETTERS=10 rule on our own straight-substitution decode,
+scored against this target's own fr16 corpus (`tools/data/fr16/lettresdecatheri01cathuoft_djvu.txt.gz`,
+the corpus already wired in `specs/matignon-mayenne-1586.json`'s judge block) via
+`tools/judge_plaintext.py`'s `NgramModel` -- a materially different word list from his, and a stricter
+decoder (we have no beam-search LM to fill an M candidate or a U gap, so every M and every U token breaks
+a run, the way only his fully-unresolved `+` codes do). Reported as **a proxy split, not a reproduction**
+of his measure.json numbers: this rule marks only **1,406 of 12,994 tokens (10.8%) 'read'**, well below
+his 26-33% (read_of_transcribed / read_of_leaf, see "Coverage, measured" above) -- consistent with being
+strictly stricter, not a contradiction of his figures. `spans.tsv`: 605 line-spans, 127 read / 478 unread.
+On the unread spans: **H 8,668, M 1,648, U 1,272** (no M/U token is ever inside a 'read' span, by
+construction -- both always break a run).
+
+**Two-context M/U resolution + shuffled-context control.** For each of the 13 M codes (tested only
+against their own 2-3 key.tsv candidates) and each of the 49 distinct U signs with >= 2 occurrences
+(open a-z search; 14 singleton U signs cannot pass a 2-context rule and were skipped), every occurrence's
+immediately adjacent H-chunks (up to the next M/U token or line end) were spliced with a candidate letter
+and re-segmented with the same NgramModel; a candidate is 'confirmed' when the splice lands inside a
+recognised word. A code reaches grade S at >= 2 confirmed occurrences of the SAME candidate, M at exactly
+1. **Real order: 62 codes tested, S 41, M 19. Shuffled-line-order control (3 seeds, tokens shuffled within
+each line): S 41 / 45 / 40, M 21 / 16 / 19.** The real count sits inside the control range on both S and M
+-- **the two-context rule, as implemented, adds nothing over chance** (a control-backed negative for the
+*technique itself*, CLAUDE.md rule 3): the fr16 corpus word list is dense enough (any 3+-letter run of
+common French syllables/short words, count >= 2 in a single large 19th-century-edited 16th-century-letters
+volume) that splicing almost any letter between two real French chunks produces *some* recognised word by
+chance, so 'confirmed by >= 2 contexts' is close to a base rate here, not a chance-beating signal. **No
+value is committed**: no exceptions.tsv row is written, key.tsv is untouched, and the per-code
+support/candidate detail for both the real run and all 3 control seeds is in `mu_resolve_results.json`
+for whoever wants to see which specific codes hit S (the numbers above are the ones that matter --
+individual code results are not more trustworthy than the aggregate that failed its own control).
+
+**Re-judge, unread spans alone.** `unread_only_reading.txt` (H-token letters only, unread spans, 9,181
+letters) vs a shuffled-line-order control on the identical letter set (3 seeds) -- since no M/U value was
+committed, this is necessarily the same "before" and "after" (the technique changed nothing to re-judge):
+
+| | language score | vs null_p99 (-1.944) | vs real_p05 (-0.832) | word cover | judge |
+|---|---|---|---|---|---|
+| unread spans, real order | **-1.483** | above | below | **0.771** | FAIL |
+| shuffled seed 1 | -1.829 | above | below | 0.656 | FAIL |
+| shuffled seed 2 | -1.814 | above | below | 0.666 | FAIL |
+| shuffled seed 3 | -1.812 | above | below | 0.656 | FAIL |
+
+Same pattern as the whole-target test (previous section): judge FAIL for the unread-only text and every
+control (as expected -- these spans are exactly the parts a straight substitution with no LM cannot turn
+into clean prose), but the real order beats every shuffled seed by a reproducible margin (score 0.33-0.35
+nats above, control range 0.017 wide; cover +0.10-0.12) -- the same "key is real, straight substitution
+cannot finish the job" finding as before, now confirmed to hold on the unread-only subset specifically,
+not just averaged in with the parts already inside a sense run.
+
+**Grade counts on the unread spans (rule 4):** H 8,668 (period-verified single-valued codes, source
+Bourdeau `key.json` fc0c9e8, verified by him against the period decipherments f.14v/15r, f.18-21/19,
+f.78v/79r), M 1,648 (ambiguous 2-3-candidate codes, unresolved -- the two-context rule found no candidate
+that beat its own shuffled-context control), U 1,272 (unkeyed, same result), S 0, C 0, I 0.
+
+**Net for NEAR.md (orchestrator's to write, not this worker's):** step (1) of the NEAR row's next-step
+list is done, negative -- the two-context rule with a shuffled-context control does not resolve any M/U
+code beyond chance on this target's transcription and corpus. It does not close the target (rule 5): the
+whole-target and unread-only judge tests both still show the same reproducible real-vs-scrambled-order
+margin as the original bMAT job, so `partial` stands. The real path to a PASS remains what the original
+job named: Bourdeau's own beam-search decoder (already run, not reproduced here) or narrowing the
+1,272 unkeyed / 1,648 ambiguous tokens by further transcription/context work -- not by this cheap
+context-splicing rule at this corpus density.

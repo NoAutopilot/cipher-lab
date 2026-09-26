@@ -38,5 +38,22 @@
   ],
   "net_answer": "judge FAIL for target and all 3 controls (none clears real_p05 -0.837, expected: a straight substitution with 1,272 unkeyed and 1,648 ambiguous-M tokens of 12,994 cannot read as clean prose) -- but the target beats every control seed by a large, seed-consistent margin: language score -1.371 vs -1.78/-1.79/-1.78 (control mean -1.786, target 0.41-0.42 nats above all three, control range only 0.011 wide) and word-cover 0.814 vs 0.681/0.677/0.676 (control mean 0.678, target +0.136). Fraction of tokens resolved (H+M, i.e. not unkeyed) is 0.9021 for target AND every control identically (11,722/12,994) -- tools/decode_key.py grades a token from its own key row alone, independent of neighbours, so this statistic cannot and does not distinguish real from scrambled order; only the judge's cross-token language score and word-cover statistic can, and both do, consistently, across all 3 seeds. Per-token grades: H 10,074 (77.5%, single-valued key codes, graded H because Bourdeau's key was verified against the period-contemporary f.14v/15r, f.18-21/19 and f.78v/79r decipherments -- a period gloss per rule 4), M 1,648 (12.7%, ambiguous 2-3 candidate codes, auto-downgraded), U 1,272 (9.8%, Bourdeau's own key.json leaves these unresolved). Read as: the key is real and the leaves are genuinely in this cipher (a reproducible margin over a matched control, CLAUDE.md rule 5), but a straight substitution cannot turn ambiguous/unkeyed tokens into readable French -- getting a PASS needs either Bourdeau's own beam-search decoder (already run by him, see NOTES.md 'Coverage, measured', not reproduced here) or narrowing the 1,272 unkeyed and 1,648 ambiguous tokens by further transcription/context work, which is out of this job's scope. Status: partial (rule 5), not closed-negative -- a NEAR.md row is owed (orchestrator's to write)."
  },
- "written": "26 Sept 2026, LANE B5 worker bMAT, for job .claude/briefs/runs/2026-09-26-lane-b5-matignon.md"
+ "near_step1_done": {
+  "test": "NEAR step (1): read/unread span split (proxy for Bourdeau's measure.py, his lm.pkl/corpus_words.txt gitignored and absent from the shallow clone) + two-context M/U resolution vs shuffled-line-order control + re-judge fr16 on unread spans alone",
+  "date": "26 Sept 2026",
+  "worker": "LANE B5 bMAT2",
+  "script": "ciphers/matignon-mayenne-1586/resolve_mu.py",
+  "split": {"spans_rows": 605, "tokens_read": 1406, "tokens_unread": 11588, "unread_grades": {"H": 8668, "M": 1648, "U": 1272}},
+  "mu_rule_result": {"real": {"codes_tested": 62, "S_ge2_contexts": 41, "M_1_context": 19},
+                      "control_seed1": {"S": 41, "M": 21}, "control_seed2": {"S": 45, "M": 16}, "control_seed3": {"S": 40, "M": 19},
+                      "verdict": "control-backed negative for the two-context rule itself: real S/M sits inside the shuffled-line-order control range on both counts, so no code value is committed (no exceptions.tsv row written, key.tsv untouched)"},
+  "unread_only_judge": [
+   {"which": "unread spans, real order", "language_score": -1.483, "null_p99": -1.944, "real_p05": -0.832, "words_cover": 0.771, "pass": false},
+   {"which": "unread spans, shuffled seed 1", "language_score": -1.829, "null_p99": -1.944, "real_p05": -0.832, "words_cover": 0.656, "pass": false},
+   {"which": "unread spans, shuffled seed 2", "language_score": -1.814, "null_p99": -1.944, "real_p05": -0.832, "words_cover": 0.666, "pass": false},
+   {"which": "unread spans, shuffled seed 3", "language_score": -1.812, "null_p99": -1.944, "real_p05": -0.832, "words_cover": 0.656, "pass": false}
+  ],
+  "net_answer": "judge FAIL for the unread-only text and all 3 controls (expected, no LM to complete ambiguous/unkeyed tokens), but the real order still beats every shuffled seed by a reproducible margin (score 0.33-0.35 nats above, control range 0.017 wide; cover +0.10-0.12) -- same finding as the whole-target test, confirmed on the unread-only subset. Grade counts on the unread spans (rule 4): H 8668, M 1648, U 1272, S 0, C 0, I 0. Status stays partial (rule 5); the two-context rule adds nothing over its own control at this corpus's word density, so the path to a PASS remains Bourdeau's own beam-search decoder or further transcription/context work, not this cheap context-splicing rule."
+ },
+ "written": "26 Sept 2026, LANE B5 worker bMAT, for job .claude/briefs/runs/2026-09-26-lane-b5-matignon.md; near_step1_done added 26 Sept 2026, LANE B5 worker bMAT2, for job .claude/briefs/runs/2026-09-26-lane-b5-matignon-mu.md"
 }
