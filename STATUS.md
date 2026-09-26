@@ -143,7 +143,12 @@ Brief .claude/briefs/runs/2026-09-26-lane-ax-orchestrator.md; COMMON 2026-09-26-
   MS 21807; both need images a person orders. AX-REDERIV (Sonnet, session_01Xxh6zMHd5SLBu7kPk2ZGAU, box 50, from 03:10): fresh
   rule-7 re-derivation, the 5550 gloss read over 153/161 from the leaf, AUDIT.md revision log + SO-LODEWIJK note. Still running:
   AX-COMP (43 min, 4614 unit 1) and AX-4612TR (43 min). jan-van-nassau-1572-75 got an intake citation line (gate exits 0).
-- **Ledger:** 12 workers, 67.99 dollars (running workers not yet counted).
+- **03:37 UTC: reading ready posted for LANE V8** (WVO 5797 two gaps: "und [161 Landgraf] ist willens", "[153 Pfaltzgraf]
+  helt sich wol", H from the 5550 gloss read on the leaf; AX-REDERIV byte-identical re-derivation of 5797/4610/4611/4616; AUDIT.md
+  revision log for the N4 letters; flag: the other cited 153 run's gloss reads "Ertzhertzoge vnd graf"). AX-4612TR: p1 passes
+  80.1% (was 47.8%), p2 line-wrap misaligned, no v2 yet -> AX-4612TR2 (Sonnet, session_01NQeJ8XP8WZFygUnU43eYV3, box 60, from
+  03:38). AX-COMP still on 4614 at 70 min, 40.75 dollars (box to 04:26).
+- **Ledger:** 14 workers, 116.80 dollars (AX-COMP running, not counted). AX-4612TR 44.28 D- (full-page 300-dpi passes).
 - **For the parent:** nothing on the board yet from this lane.
 
 ## LANE ZX handoff (session_01MxueEQJUGF9PWJiYcVyvBM), 25 September 2026, 15:42-22:20 UTC (closed)
