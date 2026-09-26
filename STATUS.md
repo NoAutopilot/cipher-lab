@@ -170,36 +170,30 @@ What ARM2 runs first, ranked:
    other letter in this code or with these marks is known -- that is outreach, so AUDIT.md-gated; draft only.
 Open flags: none unanswered (V9-QA8/QA9 en18 caveat answered in HYPOTHESES.md and NOTES.md, 10:17).
 
-## LANE WC handoff (session_01PgyvWdtkFieEXUYD1Whbyx), 26 September 2026, from 17:52 UTC (live)
+## LANE WC handoff (session_01PgyvWdtkFieEXUYD1Whbyx), 26 September 2026, 17:52-20:02 UTC (idle-standing)
 
-Brief .claude/briefs/runs/2026-09-26-lane-wc-orchestrator.md; COMMON 2026-09-26-lane-ax-COMMON.md (reused, lane goal "WVO
-circles: one control-backed recovery test per circle, close or promote"). Parent: owner-account parent
-session_01FXDfYR3CvGk7tcid1Aav1n. Work list: QUEUE.md "WVO circles work list (LANE WC, 26 Sept 2026)" (WC-MAP).
-Excluded: wvo-hessen-1564 (below unicity), Nassau pool 4612/5799 and the rest of lodewijk-van-nassau-1573-74, august-van-saksen
-53/126 (LANE VO1), orange-nassau-1572 and gunther-van-schwarzburg-1561 (found-solved).
+**Idle-standing 20:02 UTC, blocked on ASKS 31, 46 and 75.** No live workers, no check-in armed. Brief
+.claude/briefs/runs/2026-09-26-lane-wc-orchestrator.md; COMMON 2026-09-26-lane-ax-COMMON.md (reused). Parent: owner-account parent
+session_01FXDfYR3CvGk7tcid1Aav1n. Work list: QUEUE.md "WVO circles work list (LANE WC, 26 Sept 2026)". 5 Sonnet workers 40.08 USD,
+all ledgered, retitled ARCHIVED and archived; orchestrator 5.52 by get_session (self-ledgered). No reading, nothing for a verifier.
+Excluded by brief: wvo-hessen-1564, the Nassau 4612/5799 pool (lodewijk-van-nassau-1573-74), august-van-saksen 53/126 (LANE VO1),
+orange-nassau-1572 and gunther-van-schwarzburg-1561 (found-solved).
 
-Done (ledgered, archived): WC-MAP 2.83 D (work list; corrected the brief: no key exists for Hessen 1127, its original is
-unimaged at KHA). WC-LAGARDE 9.64 D- (1.6x cap, inside box): la-garde-1577's 9 cells settled (H 187, unresolved 0), measured
-pass disagreement 20.1-25.5%, solve_l2.py --noise-rate added; both design negatives hold with controls bracketing the
-measured error (control beats target to 26-28% injected), so the earlier negatives were real tests; status open (masc and
-running_key via family_run.py untried).
-
-WC-NASSAU-FIT 11.50 N (1.4x cap, inside box): 17 candidates listed (j6/candidates_wc.tsv), 3 fitted (5803/5804/5805 cosine
-0.42-0.54 vs known positive 0.836, known negative 0.21): clean negative on cosine; the brief's top10_shared sub-condition failed the
-known positive and was dropped (orchestrator's gate error, caught by the worker). 4502/5808/7205 PDFs hold the oplossing only.
-
-Stuck-rule tries (owner's rule 18:53), live 19:17: WC-NASSAU-FIT2 (Sonnet, session_01S7NNWviFV2r8HTNRMhA6pm, cap 10, box 60):
-fit 5214, 5210, 5812, 5810 (post-switch letters with a separate oplossing; gate cosine >= 0.70) and REQUEST.md + one ASKS row
-for the 4502/5808/7205 cipher originals. Chosen over the parent's option (a), the 1842 print of 5198/5199: those are key_1572
-letters of Sept 1572, a key already printed, graded H and already failing on the 5549 body, so they cannot witness its key.
-WC-LAGARDE2 (Sonnet, session_01TSLU3Sdq1ET1X2UqLwXzHr, cap 5, box 45): spec + family_run.py syllabary then wordcode at
-measured error 0.23 on la-garde-1577's 239 pooled tokens, control first.
-
-Held on the owner: willem-van-hessen-1567 on ASKS 31 (KHA original of 1127); the 1069 atlas (USD 20-40) is not dispatched
-because it opens no unread ciphertext (1109's signs are by eye a different family, wvo-hessen-1564 NOTES). borssele-heinsius-1714
-on ASKS 46 (leaf H.A. 1836). oldenbarnevelt-brederode-1605: no sibling and no lead (cryptanalysis only, 121 tokens). Hessen and Borssele have had no cheap test run by this lane (their only step is the owner-side ask), so the stuck rule does not
-trigger for them; Brederode has nothing different left to try (no sibling, archival lead dead). After the two tries the lane goes
-idle-standing on ASKS 31, 46 and the new 5549-originals row.
+Per target (all stay open, rule 5):
+- la-garde-1577 (WVO 6179/6467, 239 pooled tokens): WC-LAGARDE 9.64 D- settled the 9 open cells (unresolved 0); measured pass
+  disagreement 20.1-25.5%; homophonic/monoalphabetic and periodic negatives hold with controls bracketing that error (real tests).
+  Stuck-rule try WC-LAGARDE2 3.07 D: specs/la-garde-1577.json; syllabary and wordcode CONTROL BELOW GATE at err 0.23 (0.385,
+  0.321 vs 0.6), untestable at this length and error. Nothing different left to try without more ciphertext in the system (the WVO
+  sibling pool is exhausted per ZX2-LAG2); not ASKS-gated, so it waits on new material only.
+- jan-van-nassau-1572-75, WVO 5549 body (539 numerals, the "verendertte" key): WC-NASSAU-FIT 11.50 N and, as the stuck-rule try,
+  WC-NASSAU-FIT2 13.03 N fitted 7 more letters (5803/5804/5805, 5214/5210/5812/5810: cosine 0.36-0.54 vs known positive 0.836,
+  known negative 0.21, gate 0.70): no sibling in the WVO PDFs. Waits on ASKS 75 (cipher originals of 4502, 23 Nov 1573, 5808 and
+  7205, whose decipherments are online and ciphertext is not). Parent's option (a), 5198/5199's 1842 print, not run: key_1572, already
+  printed H and already failing on the body.
+- willem-van-hessen-1567: waits on ASKS 31 (KHA original of 1127). 1069 atlas (USD 20-40) not dispatched: it opens no unread letter.
+- borssele-heinsius-1714: waits on ASKS 46 (leaf H.A. 1836).
+- oldenbarnevelt-brederode-1605: no sibling, archival lead dead; nothing different left to try.
+Exit: the parent reopens the lane when ASKS 31, 46 or 75 is answered or new material arrives.
 
 ## LANE NX2 handoff (session_01Ms6A5gPqrVmyK3Liyfgo9z), 26 September 2026, from 14:45 UTC (live)
 
