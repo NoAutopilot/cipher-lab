@@ -891,3 +891,6 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T15:21Z	session_01XqjQEcUk24M3NcMvGsJwv9	RETRO-APPLY-T	done 1.54 (get_session), ledgered D, retitled ARCHIVED, archived by 7h	3 of 3 applied, UPDATES 14:35 x4
 2026-09-26T15:21Z	session_01Nmvcob7Nzx6ugFd5B3QoDS	LANE B11 orchestrator	closed 14:58, 5.10 by get_session (ledger row edited from 4.3), archived by 7h	handoff in STATUS.md; B12 opens by routine
 2026-09-26T15:21Z	session_011A4Fqfk4uGDijwcC83mYkp	LANE V10 orchestrator	closed 14:41 at lineage depth 8 (could not create workers), 3.88 by get_session (edited from 3.43), archived by 7h	QA12 clean; QA13 brief ready, parent spawns it about 17:30
+2026-09-26T16:13Z	session_01GQjwoBUWNeskWPeDbSLpNn	routine-started LANE B12 attempt	fired 15:25, no repo/tools, posted nothing; 0.98 X ledgered; retitled ARCHIVED, archived by 7h	ASKS 69: 7i from the UI
+2026-09-26T16:13Z	session_01NKnuGZhQg4tAKTFs4UE1Wj	bSALI (Sonnet, cap 3)	fr2933-salviati-1525 DSN irregular at 6.4 pct, 24 restarts	brief 2026-09-26-parent-bSALI.md; parent 7h direct (B12 job 1)
+2026-09-26T16:13Z	session_014Xv2JvWBK3fDvJSHjuBjfM	bMALS (Sonnet, cap 3)	malsburg-hessen-1636 crib-span reconciliation ff.32/33	brief 2026-09-26-parent-bMALS.md; parent 7h direct (B12 job 2)
