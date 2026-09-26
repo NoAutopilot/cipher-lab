@@ -302,7 +302,7 @@ page-per-call transcription of ~400-token pages still costs 3-5x a search job (Z
 
 ## LANE B6 handoff (session_0125z25Ujw4ehAavXcyAfwXz)
 
-Breadth lane, successor to LANE B5, opened by parent 7e at 03:05 UTC 26 Sept 2026 (brief `.claude/briefs/runs/2026-09-26-lane-b6-orchestrator.md`, cap USD 25 own, hand off at 300k context). Common file `.claude/briefs/runs/2026-09-26-lane-b6-common.md`. Live (03:56): bMATBEAM, bMAL, bLOP3, bUNT8.
+Breadth lane, successor to LANE B5, opened by parent 7e at 03:05 UTC 26 Sept 2026 (brief `.claude/briefs/runs/2026-09-26-lane-b6-orchestrator.md`, cap USD 25 own, hand off at 300k context). Common file `.claude/briefs/runs/2026-09-26-lane-b6-common.md`. Live (04:12): bUNT8, bMAT1C, bSZEM.
 
 | Spec | Test run (worker) | Target | Control | Verdict |
 |---|---|---|---|---|
@@ -311,6 +311,9 @@ Breadth lane, successor to LANE B5, opened by parent 7e at 03:05 UTC 26 Sept 202
 | untersberg-code | NEAR step 4: second blind pass opening 11 (bUNT7, interrupted at 2.6x cap) | pass_b7.tsv; line 6 turns on a recurring ligature symA (pass 1 read it as qu) | n/a (transcription QA) | not settled; reconcile + symA identification next |
 | blitz-ciphers | NEAR step: homophonic German K=48 N=581, de20 (bBLZ6) | FAIL -1.404 (real_p05 -0.82) | 0.925 (0.862-0.962) | homophonic German excluded; NEAR row updated |
 | lope-hurtado-1522 | CSP no. 497 + Kolosova (bLOP2) | no. 497 = R9644/R9648 (already decrypted), not the targets; targets dated from regesta | n/a | partial; Kolosova 2017 PDF to bLOP3 |
+| matignon-mayenne-1586 | NEAR step 1b: M/U fr16 6-gram beam, known-answer control first (bMATBEAM, Opus) | U: 34/48 signs to nomenclator option; judge -1.347 | known-answer U 0.605, M 0.83 vs 0.47; shuffled U 36-43/48 | U signs behave as code words; M licensed, commit next (bMAT1C) |
+| lope-hurtado-1522 | Kolosova thesis on RODERIC (bLOP3) | handle is the 2016 master's thesis; 0 hits for targets | n/a | partial; 2017 doctorate and 2024 book unread |
+| malsburg-hessen-1636 | intake + HCPortal fetch + pass A (bMAL, interrupted at 1.45x cap) | open, gate 0; 18 images; pass A ff.3, 12 (354 rows) | none run | next: pass B of ff.3/12 + IC test vs German masc/homophonic/nomenclator controls (USD 4) |
 | scout | fresh scout vs solver HEADs (bSCOUT6) | 8 new rows from Bourdeau CATALOGUE.md open list; no old row changed | n/a | QUEUE.md "Scored backlog for LANE B6, second pass"; rank 1 Malsburg to bMAL |
 
 ## LANE B5 handoff (session_01A4jfQZGS8SUuDamZK19KZq), 26 September 2026, 00:55-02:45 UTC (closed at 289k context on parent 7e's word)

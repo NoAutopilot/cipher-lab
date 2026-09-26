@@ -697,3 +697,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T03:57Z	session_011ouUumGuE7kf1jQyeRoPpr	retrospective o (Sonnet, cap 10)	14 ledger rows since retro n; file RETRO-2026-09-26c.md	brief 2026-09-26-parent-retrospective-o.md; parent 7e
 2026-09-26T03:55Z	session_016GvLWdEoevwtq6FJcd25fC	LANE B6 bLOP3 (Sonnet, cap 2)	lope-hurtado Kolosova 2017 diss on RODERIC	brief 2026-09-26-lane-b6-lop3.md; LANE B6
 2026-09-26T03:55Z	session_01HaPn1TchY1gEzkSiKSN5ps	LANE B6 bUNT8 (Sonnet, cap 2)	untersberg reconcile passes + symA	brief 2026-09-26-lane-b6-unt8.md; LANE B6
+2026-09-26T04:10Z	session_01117DWgZzGeZwpbZGg7dyR6	LANE B6 bMAT1C (Sonnet, cap 2)	matignon commit M as S, re-judge	brief 2026-09-26-lane-b6-mat1c.md; LANE B6
+2026-09-26T04:10Z	session_018bw3WLi7gdtzBPEDMQrgqU	LANE B6 bSZEM (Sonnet, cap 2)	Szembek BK 1560 sampling + spec	brief 2026-09-26-lane-b6-szem.md; LANE B6
