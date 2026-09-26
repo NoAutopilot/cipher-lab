@@ -851,3 +851,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T11:31Z	session_01MM2JB5csfXb1Km3Y3Aeye9	ARM-POOL2	done 7.49 (get_session), ledgered D-, retitled ARCHIVED, archived by 7g (ARM had closed)	finding adopted by ARM2
 2026-09-26T11:33Z	session_01CbcHcbkYKV5HRKwBW4w7aq	LANE ARM2 orchestrator (Opus, cap 60)	Armstrong 1808 cycle 2: Livingston 5 Feb 1808, Jefferson channel screen, extra shorthand systems, then idle-standing on an ASKS row	brief 2026-09-26-lane-arm2-orchestrator.md; parent 7g
 2026-09-26T11:33Z	session_01QBtJHPRuxoWmXKzLmYvmAd	RETRO-APPLY-S (Sonnet, cap 6)	apply RETRO-2026-09-26g.md proposals 1-4	brief 2026-09-26-parent-retro-apply-s.md; parent 7g
+2026-09-26T11:34Z	session_01L5aKfjboKCFPb2GkeoExiu	ARM-LIV (Sonnet, cap 5)	Livingston-to-Madison letters 1807-09, 5 Feb 1808 first	brief 2026-09-26-lane-arm2-liv.md; LANE ARM2

@@ -751,3 +751,22 @@ though ARM-POOL's own prior pass reported reading this same frame's native image
 route not recorded). Did not retry a third time (this job's 2-request cap for this host, and the good-citizen
 rule's one-retry limit, both already spent). The tick-as-office-convention question is untested, flagged for a
 successor with the exact working fetch route recorded first.
+
+## Family E, ARM-POOL2 recorded by LANE ARM2 (orchestrator, 26 Sept 2026 11:34 UTC; worker session_01MM2JB5csfXb1Km3Y3Aeye9, done 11:11)
+
+Screen, not a result (one line of 14-27 groups per letter, rule 3). The frame M34-014-0645 docket ("List of Genl
+Armstrong's letters. Extracts from which were confidentially sent...") names six items; four were located and
+screened with `pool/signature_test.py`, all THE=972 office code, none with the target's signature:
+
+| Item | Date | Located | THE972 coverage | digit 0/1 share | digit 2/3/5/9 share | top digit |
+|---|---|---|---|---|---|---|
+| 1 | 27 Dec 1807 | roll 13 f.0390 (Duplicate, interlinear period glosses) | 19/27 (70%) | 22% | 37% | 0 |
+| 2 | 22 Feb 1808 | roll 14 f.0033r-0034 | 24/26 (92%); 10/14 (71%) | 23%; 14% | 31%; 21% | 0; 3 |
+| 3 | 9 Mar 1808 | roll 14 f.0039-0040 (f.0643-0644 is a duplicate filing) | 18/21 (86%) | 34% | 30% | 1 |
+| 4 | 15 Mar 1808 | roll 14 f.0045 (Duplicate) | 19/23 (83%) | 34% | 35% | 1 |
+| target | 20 Feb 1808 | roll 14 f.0030-0033 | low (ARM-A2: 14-108/369) | about 43% | about 13% | 0 |
+
+Items 5 (an undated note enclosed in item 4) and 6 ("Private to Mr M: 30th august", no year) were not screened;
+item 6 is most plausibly the 30 Aug 1808 letter whose cipher postscript Bourdeau decoded in THE=972
+(crib_sources.md; inferred from the date, not checked on the frame). Net: the docket batch is THE=972 office
+correspondence; no pool candidate. Family E stays **continue** for the correspondents' papers (ARM-LIV, ARM-JEF).
