@@ -223,8 +223,100 @@ K=36, profile=target, de20 register.** No decoded text described (judge did not 
 - Only prefix windows (from each chapter's start) were used for the crib control; a mid-chapter window was
   not tried and could plausibly read differently for a name-dense opening verse range.
 
+## GOLD-KAL2, Russian transliteration schemes (26 Sept 2026)
+
+Per the reserve brief (`.claude/briefs/runs/2026-09-26-lane-gold-c5-kaliningrad-russian.md`), cycle-4
+decision ranks 1-3 (the reserve's best P(moves) per dollar in the lane). No subagents, disk and CPU only.
+
+**Tokenisation.** `ic_analysis.tokenize_signs` (the function `make_signs_tsv.py` uses to build the committed
+`ciphertext_signs.tsv`) drops any apostrophe it cannot attach to an immediately preceding consonant within
+the same token: a true double apostrophe (a second `'` right after one already consumed) is silently
+discarded, and so is an apostrophe that STARTS a dot-separated part of a dotted group (e.g. `f.t.'f.` splits
+to parts `f`, `t`, `'f`, and the leading apostrophe of `'f` is dropped rather than credited to the preceding
+`t`) or that leads a word after `.strip("'\"-,")` (e.g. `-'fef` loses its leading apostrophe before the loop
+even starts). Two consonants each followed by their own apostrophe written back to back (`t't'`, `n'n'`) are
+NOT a double-apostrophe case at all -- each consonant correctly consumes exactly one trailing apostrophe, so
+`n'n'` reads as two separate `n'` signs, not one dropped mark. Regenerating `ciphertext_signs.tsv` with
+`make_signs_tsv.py` reproduces the committed file byte for byte (N=978, K=36, with `n` 105 / `n'` 29 / `x` 65
+/ `s` 62, matching the consolidator's table, not LANE B2's NOTES.md counts) -- the TSV is correct by the
+script's own rule as it stands; no regeneration or repair was needed. `scripts/periodic_ic.py` (new, 15
+lines) computes mean coset IC for periods 2-30 on the convention-A sign sequence against 3 shuffle-seed
+controls: flat, best period 17 at 0.0666 vs shuffle max 0.0658 (margin 0.0008, under the 0.01 flag bar) --
+no periodic-key signal, no ROOM flag.
+
+**Convention B TSV.** `scripts/make_signs_tsv_b.py` (new) derives `ciphertext_signs_B.tsv` from the same
+`tokenize_signs` output by splitting every compound sign `X'` into two rows, `X` then `'`, on the same line:
+N=1066, K=28, matching the consolidator's table exactly.
+
+**Corpus.** `tools/translit_ru.py` (new, offline test `tools/tests/test_translit_ru.py`, 11 checks under 2 s)
+implements the four schemes letter-for-letter from the brief's table, built from `tools/data/ru19` (no
+network). Measured soft-sign-marker (`q`) share: s1 1.44 pct, s1s 0.00 pct, s3p 2.89 pct, s3 11.69 pct --
+matching the brief's estimates (1.5 / -- / 2.9 / 12.6 pct) in order and magnitude. Output committed to
+`tools/data/ru19_lat/` with its own README and MANIFEST.
+
+**Family runs, control first (`tools/family_run.py --family homophonic --param profile=target`, gate 0.9,
+3 seeds, 8 restarts each; full command lines and rows are in the table below).**
+
+| unit | scheme | convention | K | control mean (range) | gate | target judge |
+|---|---|---|---|---|---|---|
+| 2-ru-s3p-B | S3' phonemic partial | B | 28 | 0.999 (0.997-1.000) | met | FAIL: -1.706 (real_p05 -0.889, null_p99 -2.106) |
+| 2-ru-s1-B | S1 scientific digraphs | B | 28 | 0.997 (0.995-1.000) | met | FAIL: -1.729 (real_p05 -0.886, null_p99 -2.103) |
+| 2-ru-s1s-A | S1 stripped (no soft sign) | A | 36 | 0.733 (0.206-0.998) | NOT met | not run -- CONTROL BELOW GATE |
+| 2-ru-s3-B | S3 phonemic full | B | 28 | 0.677 (0.498-0.780) | NOT met | not run -- CONTROL BELOW GATE |
+
+First 40 letters of the two gated target decodes (word salad, never a reading, rule 7/10): S3'-B
+`ieniwoeynontsenwyiiesaidiamrieioiyielkat`; S1-B `isatyzskanarisayklimiotetoeeiminlkimeeow`.
+
+**Reading this.** Ranks 1 and 2 (S3'-B, S1-B) are now **control-backed negatives** for Russian homophonic
+substitution at convention B (K=28), profile=target, on the Synodal Bible register: the control anneal reads
+its own design at 0.997-0.999 while the target scores well below the real-prose floor on both schemes. Rank 3
+(S1-stripped, convention A K=36) and the S3-full unit did not clear their own control gate (mean 0.733 and
+0.677 against 0.9) -- the anneal itself struggles at K=36/28 with these particular letter-frequency profiles
+(seed 2 of the S1-stripped control collapsed to 0.206 recovery, a solver failure mode, not evidence about the
+target), so **these two pairings are untested, not excluded**; per the brief, the gate was not lowered to
+force a run. Per CLAUDE.md rule 3, a negative only holds where the control met its gate: ranks 1-2 are
+matched-control negatives, ranks 3-4 are inconclusive (owed a fixed or higher-restart anneal before they can
+be called anything).
+
+**Dead ends / not run this job.** Unit D (S3 full, convention B) was attempted in-budget (the 80 pct box rule
+allowed it, job ran well under $5/60 min throughout) but the control did not clear gate, so no target run.
+The wide-alphabet tool change (cycle-4 rank 6, a Cyrillic-native or 33-37-letter plaintext alphabet in
+`homophonic_anneal.py`) was not attempted -- out of this job's scope, named in the brief as a cycle-6 item.
+
+**Decision for the next dollars.** Ranks 1-2 of the cycle-4 table are now spent as control-backed negatives.
+Rank 3 and the S3-full unit remain open (control-side, not target-side, failures) -- a next worker could
+retry either with more restarts or a fixed/lower-noise control before concluding anything about them. No
+judge PASS this job; no re-derivation owed. Status stays `open` (Russian substitution is narrowed, not
+excluded, at convention A/K36 and at the S3-full scheme).
+
+Exact commands (spec `judge.corpora` set to the named scheme before each run):
+```
+python3 tools/family_run.py specs/kaliningrad-2015.json --family homophonic \
+  --cipher ciphers/kaliningrad-2015/ciphertext_signs_B.tsv --corpus tools/data/ru19_lat/s3p.txt.gz \
+  --param profile=target --seeds 3 --restarts 8 --gate 0.9 \
+  --label "GOLD-KAL2 homophonic ru S3-partial, convention B K28, control before target"
+python3 tools/family_run.py specs/kaliningrad-2015.json --family homophonic \
+  --cipher ciphers/kaliningrad-2015/ciphertext_signs_B.tsv --corpus tools/data/ru19_lat/s1.txt.gz \
+  --param profile=target --seeds 3 --restarts 8 --gate 0.9 \
+  --label "GOLD-KAL2 homophonic ru S1, convention B K28, control before target"
+python3 tools/family_run.py specs/kaliningrad-2015.json --family homophonic \
+  --cipher ciphers/kaliningrad-2015/ciphertext_signs.tsv --corpus tools/data/ru19_lat/s1s.txt.gz \
+  --param profile=target --seeds 3 --restarts 8 --gate 0.9 \
+  --label "GOLD-KAL2 homophonic ru S1-stripped, convention A K36, control before target"
+python3 tools/family_run.py specs/kaliningrad-2015.json --family homophonic \
+  --cipher ciphers/kaliningrad-2015/ciphertext_signs_B.tsv --corpus tools/data/ru19_lat/s3.txt.gz \
+  --param profile=target --seeds 3 --restarts 8 --gate 0.9 \
+  --label "GOLD-KAL2 homophonic ru S3 full, convention B K28, control before target"
+```
+
+Rule 10: nothing in this section is a reading; status stays `open`; never solved, new, first or unpublished.
+
 <!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
 
 | date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
 |---|---|---|---|---|---|---|---|---|
 | 25 Sept 2026 23:48 | homophonic | N=978 K=36 restarts=8 corpus=pg15736_Der_Mann_von_vierzig_Jahren.txt.gz+pg36905_Schach_von_Wuthenow.txt.gz+pg41051_Peter_Camenzind.txt.gz+pg41907_Demian.txt.gz+pg43987_Die_drei_Spruenge_des_Wang_lun.txt.gz+pg46184_Frau_Jenny_Treibel.txt.gz+pg5323_Effi_Briest.txt.gz profile=target | 1 | 0.982 (0.960-0.994) | -3111.669 | FAIL language: score=-1.605, null_p99=-2.083, real_p05=-0.817, real_median=-0.782, mode=both, N=978 | yes (gate 0.9) | GOLD-KAL1 homophonic de20 K36 profile=target, control before target |
+| 26 Sept 2026 01:24 | homophonic | N=1066 K=28 restarts=8 corpus=s3p.txt.gz profile=target | 1 | 0.999 (0.997-1.000) | -3712.911 | FAIL language: score=-1.706, null_p99=-2.106, real_p05=-0.889, real_median=-0.812, mode=both, N=1066 | yes (gate 0.9) | GOLD-KAL2 homophonic ru S3-partial, convention B K28, control before target |
+| 26 Sept 2026 01:25 | homophonic | N=1066 K=28 restarts=8 corpus=s1.txt.gz profile=target | 1 | 0.997 (0.995-1.000) | -3682.729 | FAIL language: score=-1.729, null_p99=-2.103, real_p05=-0.886, real_median=-0.815, mode=both, N=1066 | yes (gate 0.9) | GOLD-KAL2 homophonic ru S1, convention B K28, control before target |
+| 26 Sept 2026 01:27 | homophonic | N=978 K=36 restarts=8 corpus=s1s.txt.gz profile=target | 1-3 | 0.733 (0.206-0.998) | not run (CONTROL BELOW GATE) | - | no (gate 0.9) | GOLD-KAL2 homophonic ru S1-stripped, convention A K36, control before target |
+| 26 Sept 2026 01:28 | homophonic | N=1066 K=28 restarts=8 corpus=s3.txt.gz profile=target | 1-3 | 0.677 (0.498-0.780) | not run (CONTROL BELOW GATE) | - | no (gate 0.9) | GOLD-KAL2 homophonic ru S3 full, convention B K28, control before target |

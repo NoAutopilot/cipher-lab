@@ -31,15 +31,9 @@
   "control_samples": 100,
   "note": "Russian/Polish corpora are not on disk; add them as 'corpora' when fetched",
   "corpora": [
-   "tools/data/de20/pg5323_Effi_Briest.txt.gz",
-   "tools/data/de20/pg46184_Frau_Jenny_Treibel.txt.gz",
-   "tools/data/de20/pg36905_Schach_von_Wuthenow.txt.gz",
-   "tools/data/de20/pg41051_Peter_Camenzind.txt.gz",
-   "tools/data/de20/pg41907_Demian.txt.gz",
-   "tools/data/de20/pg43987_Die_drei_Spruenge_des_Wang_lun.txt.gz",
-   "tools/data/de20/pg15736_Der_Mann_von_vierzig_Jahren.txt.gz"
+   "tools/data/ru19_lat/s3.txt.gz"
   ],
-  "corpora_note": "de16/composed_enhg.txt (LANG_CORPORA default for de) is Early New High German, wrong period for a target found 2015, Soviet era (post-1945, pre-1991 by provenance); de20 (25 Sept 2026, GOLD-C) is 1880-1940 German prose, 2.49M letters folded -- still not a perfect period match for a Soviet-era text, but the closest register on disk, set here per GOLD-KAL1's brief rather than left on the ENHG default"
+  "corpora_note": "GOLD-KAL2, 26 Sept 2026: judge.corpora repointed unit by unit across the Russian transliteration schemes (tools/data/ru19_lat/, built this job from tools/data/ru19) -- the pairing of corpus and judge is the test (family_run.py reads judge.corpora, not --corpus). This replaces the earlier de20 (German, 1880-1940) pointer used for the 2-homophonic-de unit in cheap_test_done below, which is a historical record of what that unit actually ran, unaffected by this field's current value. Left here on the last scheme this job ran; see cheap_test_done for which scheme served which unit."
  },
  "value": "moderate; 58 reader comments without a solution, but no machine run across the candidate languages is on record",
  "model": "Sonnet",
@@ -70,6 +64,38 @@
    "target": "judge FAIL: score=-1.605, null_p99=-2.083, real_p05=-0.817, real_median=-0.782, N=978",
    "control": "profile=target, 3 seeds: recovery 0.992/0.960/0.994, mean 0.982 (0.960-0.994). Gate 0.9 MET.",
    "verdict": "control-backed negative for German light-homophonic substitution at K=36, profile=target, de20 (1880-1940) register. No decoded text described (judge did not pass)."
+  },
+  {
+   "test": "2-ru-s3p-B",
+   "date": "26 Sept 2026",
+   "method": "GOLD-KAL2: tools/family_run.py --family homophonic --param profile=target, judge.corpora tools/data/ru19_lat/s3p.txt.gz (Russian S3', phonemic partial, this job's own tools/translit_ru.py). Cipher: ciphers/kaliningrad-2015/ciphertext_signs_B.tsv (convention B, N=1066 K=28, made this job by scripts/make_signs_tsv_b.py).",
+   "target": "judge FAIL: score=-1.706, null_p99=-2.106, real_p05=-0.889, real_median=-0.812, N=1066",
+   "control": "profile=target, 3 seeds: recovery 1.000/0.997/0.999, mean 0.999 (0.997-1.000). Gate 0.9 MET.",
+   "verdict": "control-backed negative for Russian S3'-scheme homophonic substitution at convention B (K=28), profile=target. No decoded text described (judge did not pass)."
+  },
+  {
+   "test": "2-ru-s1-B",
+   "date": "26 Sept 2026",
+   "method": "GOLD-KAL2: tools/family_run.py --family homophonic --param profile=target, judge.corpora tools/data/ru19_lat/s1.txt.gz (Russian S1, scientific digraphs). Cipher: ciphers/kaliningrad-2015/ciphertext_signs_B.tsv (convention B, N=1066 K=28).",
+   "target": "judge FAIL: score=-1.729, null_p99=-2.103, real_p05=-0.886, real_median=-0.815, N=1066",
+   "control": "profile=target, 3 seeds: recovery 0.995/0.996/1.000, mean 0.997 (0.995-1.000). Gate 0.9 MET.",
+   "verdict": "control-backed negative for Russian S1-scheme homophonic substitution at convention B (K=28), profile=target. No decoded text described (judge did not pass)."
+  },
+  {
+   "test": "2-ru-s1s-A",
+   "date": "26 Sept 2026",
+   "method": "GOLD-KAL2: tools/family_run.py --family homophonic --param profile=target, judge.corpora tools/data/ru19_lat/s1s.txt.gz (Russian S1 with the soft-sign letter q stripped). Cipher: ciphers/kaliningrad-2015/ciphertext_signs.tsv (convention A, N=978 K=36).",
+   "target": "not run (CONTROL BELOW GATE)",
+   "control": "profile=target, 3 seeds: recovery 0.998/0.206/0.997, mean 0.733 (0.206-0.998). Gate 0.9 NOT MET (seed 2 collapsed to 0.206, a solver-anneal failure mode at this corpus/K, not a target-side finding).",
+   "verdict": "CONTROL BELOW GATE -- gate not lowered per brief; target not run; this scheme/convention pairing is untested, not excluded."
+  },
+  {
+   "test": "2-ru-s3-B",
+   "date": "26 Sept 2026",
+   "method": "GOLD-KAL2: tools/family_run.py --family homophonic --param profile=target, judge.corpora tools/data/ru19_lat/s3.txt.gz (Russian S3, phonemic full, q at 11.7 pct of letters). Cipher: ciphers/kaliningrad-2015/ciphertext_signs_B.tsv (convention B, N=1066 K=28).",
+   "target": "not run (CONTROL BELOW GATE)",
+   "control": "profile=target, 3 seeds: recovery 0.498/0.751/0.780, mean 0.677 (0.498-0.780). Gate 0.9 NOT MET.",
+   "verdict": "CONTROL BELOW GATE -- gate not lowered per brief; target not run; this scheme/convention pairing is untested, not excluded (a K=28 alphabet with 11.7 pct of tokens on one softness-marker letter q is a harder anneal target, consistent with the control itself struggling, not with the target being ruled out)."
   }
  ]
 }

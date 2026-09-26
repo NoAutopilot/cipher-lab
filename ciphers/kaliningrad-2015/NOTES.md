@@ -208,3 +208,23 @@ Status stays `open` (rule 10: nothing here is a reading -- no H/C/S/M/I tokens c
 only two of the languages in `language_candidates` (ru via the crib test, de via homophonic) have been tested
 with a control, and Polish, Lithuanian and a Russian simple substitution remain untried (no Cyrillic-alphabet
 mode in `homophonic_anneal.py`, out of this job's scope). See HYPOTHESES.md for full numbers and commands.
+
+## GOLD-KAL2, Russian transliteration schemes, 26 Sept 2026
+
+Reserve cycle-5 job (brief `.claude/briefs/runs/2026-09-26-lane-gold-c5-kaliningrad-russian.md`), disk/CPU
+only, no subagents. Settled the 13-apostrophe tokenisation discrepancy between LANE B2's NOTES.md counts and
+the committed `ciphertext_signs.tsv`: `ic_analysis.tokenize_signs` silently drops an apostrophe it cannot
+attach to an immediately preceding consonant within the same token (a genuine leading/orphaned apostrophe,
+including one starting a dot-separated part of a dotted group) -- regenerating the TSV with `make_signs_tsv.py`
+reproduces the committed file byte for byte, so no repair was needed; a true back-to-back pair like `n'n'` is
+two ordinary compound signs, not a dropped double apostrophe. Built `ciphertext_signs_B.tsv` (convention B,
+N=1066 K=28) and a periodic-IC control (flat, best period 17 margin 0.0008, no flag). Built
+`tools/translit_ru.py` (four Russian-to-Latin schemes, offline test, corpus committed to
+`tools/data/ru19_lat/`) and ran `tools/family_run.py --family homophonic --param profile=target` control
+first on all four: S3'-partial and S1 (convention B, K=28) both cleared their control gate (mean 0.999 and
+0.997) and both came back **control-backed negatives** on the target (judge FAIL, -1.706 and -1.729 against
+real_p05 around -0.89); S1-stripped (convention A, K=36) and S3-full (convention B, K=28) did NOT clear their
+own control gate (mean 0.733 and 0.677 -- an anneal-side difficulty at these K/profile combinations, one
+control seed collapsing to 0.206 recovery), so those two remain untested rather than excluded, gate not
+lowered per the brief. No judge PASS; no reading described. Full tables, commands and the exact tokenisation
+rule are in HYPOTHESES.md's "GOLD-KAL2, Russian transliteration schemes" section. Status stays `open`.
