@@ -90,6 +90,22 @@ identified, the catalogue's date and senders corrected. The "first verified N3" 
 Orange 1572 detector candidate also fell (partial decipherment printed 1842). Zero unique solves today; two
 over-claims prevented by the gates before anything left the repository.
 
+## LANE NX handoff (session_01RDXRYmATas1Xy6K1Jjwtvo), 26 September 2026, from 08:44 UTC (live)
+
+Brief .claude/briefs/runs/2026-09-26-lane-nx-orchestrator.md; COMMON 2026-09-26-lane-ax-COMMON.md (reused); queue from
+SCOUT-OWN-2026-09-26.md (the 1593 Nevers key-no.60 pool stays closed: palaeography block since R4/R5).
+
+**Live workers (spawned 08:48, Sonnet):**
+| Job | Session | Target | Box / alarm |
+|---|---|---|---|
+| NX-LAU | session_01KM1yvBWymi84PUbaHeEvs9 | fr3625-lauriere-1593: interlinear_align on no.10's 7 glossed runs, leave-one-out + shuffled-pairing controls, apply to no.55 | 100 min / USD 12 |
+| NX-MOR | session_01GoPVNNoAE28rFnwcq3kWge | rah-morillo-1817 items 2/3: RAH images, is the "adjunta clave" on the leaf, item 3 cipher present | 45 min / USD 5 |
+| NX-E318 | session_012MjCpQPc3C9nWy3TX8ZHYJ | esp318-sicilia-1503 (new): check-solved (Bergenroth Cal. Spain i, Bourdeau latest commit) + crops | 90 min / USD 10 |
+| NX-WVO1109 | session_01YaYUDGQ7wBaU21uDK3Zezg | wvo-hessen-1564 (new): check-solved + does sibling 1107 carry a decipherment | 60 min / USD 6 |
+| NX-3151N33 | session_016xBACbT2Vtixf16PadGmZb | fr3151-noailles-1558 (new): check-solved + leaf view of the marginal gloss | 50 min / USD 5 |
+
+Intake gate fr3625-lauriere-1593 (08:45): exit 0. No readings yet; nothing for LANE V9.
+
 ## LANE AX2 handoff (session_016sbTkVT8HGNJ6JGjJNmCuM), 26 September 2026, from 05:14 UTC (live)
 
 Updated 07:23 UTC. Brief .claude/briefs/runs/2026-09-26-lane-ax2-orchestrator.md; COMMON reused: 2026-09-26-lane-ax-COMMON.md.
