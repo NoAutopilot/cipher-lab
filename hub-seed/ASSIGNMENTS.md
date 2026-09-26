@@ -818,3 +818,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T09:46Z	session_01VX4DHvjyXAbKVtnAt559SC	ARM-CONS1 (Fable, cap 15)	cycle-1 consolidator	brief 2026-09-26-lane-arm-consolidator-c1.md; LANE ARM
 2026-09-26T09:52Z	session_01KqZJfQMU9vwZPTbjHRzp7d	retrospective r	done 1.80, ledgered D, retitled ARCHIVED, archived by 7g	RETRO-2026-09-26f.md; RETRO-APPLY-R follows
 2026-09-26T09:52Z	session_01WgHYzK9A84hSmjnr9G7qen	LEARN-7	done 1.27, ledgered D, retitled ARCHIVED, archived by 7g	LEARN-2026-09-26-0906.md; items 1-3 handed to RETRO-APPLY-R
+2026-09-26T09:53Z	session_01Tv8XirXkLKVzniSG9rA9ro	RETRO-APPLY-R (Sonnet, cap 6)	apply RETRO-2026-09-26f.md proposals 1-4, LEARN-7 items 1-3, parent.md archive line, ARM-C1 judge-floor rule	brief 2026-09-26-parent-retro-apply-r.md; parent 7g
+2026-09-26T09:53Z	session_014xGZtQBV7cnyuXamAw4nX3	SALV-DIAG (Sonnet, cap 3)	fr2933-salviati-1525 NEAR diagnostic: syllabary control error sweep 10-14 pct	brief 2026-09-26-parent-salv-diag.md; parent 7g
