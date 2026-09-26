@@ -1,0 +1,85 @@
+line	position	sign	confidence	alt	why
+p5_spot5	1	=ist	H		clear, Groen p.223 "ist gestern zue ghen gezogen"
+p5_spot5	2	131	H		AX-5797 passA; subject code immediately before Groen's clear "ist gestern"; two-pass agree (passB blind)
+p5_spot5	3	123	H		AX-5797 passA; key.tsv code 123 = l (grade M); two-pass agree (passB blind)
+p5_spot5	4	173	H		AX-5797 passA; two-pass agree (passB blind)
+p5_spot5	5	=gestern	H
+p5_spot3	1	=Bey	H		clear, Groen pp.223-224 "Bey dem Herzog von Sachsen und ist [w]illens"
+p5_spot3	2	154	M		AX-5797 passA; subject code cluster after "Bey"
+p5_spot3	3	124	M
+p5_spot3	4	144	M
+p5_spot3	5	134	M
+p5_spot3	6	=und	H
+p5_spot3	7	161	M		AX-5797 passA; second cluster before "ist"
+p5_spot3	8	126	M
+p5_spot3	9	136	M
+p5_spot3	10	146	M
+p5_spot3	11	=ist	H
+p6_spot4	1	172	M		AX-5797 passA; subject code before Groen's clear "zeuget", p.224
+p6_spot4	2	58	M		key.tsv 58=z (I)
+p6_spot4	3	85	M		key.tsv 85=e (C)
+p6_spot4	4	38	M		key.tsv 38=u (C)
+p6_spot4	5	95	M		key.tsv 95=g (I)
+p6_spot4	6	82	M		key.tsv 82=e (C)
+p6_spot4	7	35	M		key.tsv 35=t (C)
+p6_spot4	8	=diesen	H
+p6_spot4	9	=morgen	H
+p6_spot4	10	100	M		AX-5797 passA; place-name candidate (Koln), key.tsv 100=h (I) only
+p6_spot4	11	185	M
+p6_spot4	12	=der	H
+p6_spot4	13	=hofnung	H
+p6_control_abso	1	=nicht	H		positive control: same paragraph as spot4, already-clear per Groen ("nicht allein vom Herzog von Alba absondern")
+p6_control_abso	2	=allein	H
+p6_control_abso	3	=von	H
+p6_control_abso	4	200	M		AX-5797 passA
+p6_control_abso	5	122	M		key.tsv 122=NULL (C)
+p6_control_abso	6	132	M		key.tsv 132=NULL (C)
+p6_control_abso	7	142	M
+p6_control_abso	8	62	M		key.tsv 62=a (C)
+p6_control_abso	9	66	M		key.tsv 66=b (C)
+p6_control_abso	10	26	M		key.tsv 26=s (C)
+p6_control_abso	11	6	M		key.tsv 6=o (C)
+p7_spot2	1	153	H		AX-5797 passA; subject code before Groen's clear "helt sich wol", p.225; two-pass agree (passB blind)
+p7_spot2	2	146	H		two-pass agree (passB blind, session ae0eeb53985ad1a66)
+p7_spot2	3	137	H		two-pass agree (passB blind, session ae0eeb53985ad1a66)
+p7_spot2	4	=helt	H
+p7_spot2	5	=sich	H
+p7_spot2	6	=wol	H
+p7_spot6	1	182	H		AX-5797 passA; subject code before Groen's clear "ist willig und urbietig", p.225; two-pass agree (passB blind)
+p7_spot6	2	128	H		key.tsv 128=? (M) "de Trittheim" fragment, unit not settled; two-pass agree (passB blind)
+p7_spot6	3	133	H		two-pass agree (passB blind, session ae0eeb53985ad1a66)
+p7_spot6	4	142	H		two-pass agree (passB blind, session ae0eeb53985ad1a66)
+p7_spot6	5	=ist	H
+p7_spot6	6	=willig	H
+p7_spot6	7	=und	H
+p7_spot6	8	=urbietig	H
+p7_spot6	9	=Ja	H
+p7_spot6	10	=hat	H
+p7_spot6	11	=ein	H
+p7_spot6	12	=verlangens	H
+p7_spot6	13	=und	H
+p7_spot6	14	=lusten	H
+p7_spot6	15	=dazu	H
+p7_spot6	16	=Dass	H
+p7_spot6	17	=er	H
+p7_spot6	18	117	H	passA:115	two-pass reconciled (passB blind, session ae0eeb53985ad1a66, confident 117 not 115: digit shape matches "170"'s 7, not "285"'s 5); key.tsv 117=m (C) -- with 103/33 spells "mit", matching Groen's own continuation "dasz er mit bruder moge mit vortziehen"
+p7_spot6	19	103	H		two-pass agree; key.tsv 103=i (C)
+p7_spot6	20	33	H		two-pass agree; key.tsv 33=t (C)
+p7_spot6	21	132	M		passB not asked past this point; key.tsv 132=NULL (C)
+p7_spot6	22	170	M		passB not asked past this point
+p5_control_election	1	=das	H		positive control, same p5_spot3 paragraph, already-clear per Groen ("nicht allein E.G. und sachen zu sollicitiren")
+p5_control_election	2	82	M		AX-5797 passA
+p5_control_election	3	112	M		key.tsv 112=l (C)
+p5_control_election	4	83	M		key.tsv 83=e (C)
+p5_control_election	5	72	M		key.tsv 72=c (C)
+p5_control_election	6	32	M		key.tsv 32=t (C)
+p5_control_election	7	102	M		key.tsv 102=i (C)
+p5_control_election	8	10	M		key.tsv 10=o (C)
+p5_control_election	9	2	M		key.tsv 2=n (C)
+p8_spot7	1	156	M		AX-5797 passA; subject code before Groen's clear "begert meiner", p.225
+p8_spot7	2	127	M
+p8_spot7	3	135	M
+p8_spot7	4	144	M
+p8_spot7	5	129	M
+p8_spot7	6	=begert	H
+p8_spot7	7	=meiner	H

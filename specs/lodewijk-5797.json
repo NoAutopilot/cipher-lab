@@ -1,0 +1,24 @@
+{
+    "slug": "lodewijk-5797",
+    "name": "WVO 5797, Jan and Lodewijk van Nassau to Willem van Oranje, Dillenburg, 22 Oct 1573 (Koninklijk Huisarchief Den Haag A 3, 895/I) -- the ~7 spots Groen IV Lettre CDXLIV (pp.217-226) prints as undeciphered",
+    "language_candidates": [
+        "de"
+    ],
+    "ciphertext": "ciphers/lodewijk-van-nassau-1573-74/ciphertext_5797.tsv (AX-5797, 26 Sept 2026, one Sonnet visual pass against images_wv2/05797_p5,p6,p7,p8.jpg)",
+    "ciphertext_source": "images_wv2/05797_p4..p8.jpg (150dpi, on disk since 24 Sept 2026)",
+    "alphabet": "numeral codes against ciphers/lodewijk-van-nassau-1573-74/key.tsv (the 4613/4615-derived five-per-letter table): codes 1-120 a homophonic single-letter alphabet, 121+ irregular nomenclature/null codes with large gaps not attested in the French letters",
+    "constraints": [
+        "each 'spot' here is the missing-subject code cluster immediately before a clause Groen's own edition prints in clear German, per ciphers/lodewijk-van-nassau-1573-74/NOTES.md's csWV2 section quotes",
+        "not a book-length candidate: each spot is 1-2 words at most (a personal name or code-name); judge_plaintext.py's length/word-cover checks are expected to fail purely on length, reported as 'below judge length', not as a negative on the key"
+    ],
+    "cheap_tests_in_order": [
+        "apply key.tsv to the 6 located missing-subject code clusters plus one Groen-clear positive-control run on the same page (AX-5797, 26 Sept 2026) -- expected result: the positive control decodes correctly (validates the key on this German letter, previously only validated on the French siblings 4613/4615), the missing-subject clusters mostly fall on codes absent from key.tsv altogether (a coverage gap, not a negative test of the key)"
+    ],
+    "judge": {
+        "language": "de",
+        "corpora": ["tools/data/de16/composed_enhg.txt"],
+        "corpora_note": "de16 (Early New High German) is the era-matched corpus for this 1573 letter, unlike koehler-1944's use of the same default (wrong era there; right era here)",
+        "min_word_cover": 0.5
+    },
+    "written": "26 Sept 2026, AX-5797 (LANE AX), for .claude/briefs/runs/2026-09-26-lane-ax-5797.md step 4"
+}
