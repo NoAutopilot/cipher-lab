@@ -1,0 +1,59 @@
+{
+ "slug": "zeschau-seebach-1841",
+ "name": "Heinrich Anton von Zeschau (Dresden) to Albin Leo von Seebach (St Petersburg), 4 ciphertexts, 1841-1843",
+ "date": "18 Jan 1841 - 26 Oct 1843",
+ "language_candidates": [
+  "fr (R5005, R5006)",
+  "de (R5007, R5008)"
+ ],
+ "ciphertext": "ciphertext_pending: only R5005 is transcribed anywhere (Bourdeau, dbourdeau/cyphersolver zeschau1841/ct_R5005.txt, 3,969 digits) and it is not this spec's target -- R5006/R5007/R5008 have no transcription on any disk this account can read (see ciphers/zeschau-seebach-1841/NOTES.md, 26 Sept 2026)",
+ "ciphertext_source": "DECODE R5005-R5008 (de-crypt.org/decrypt-web/RecordsView/500{5,6,7,8}); Saxon Main State Archive Dresden, HStAD 10731 Sächsische Gesandtschaft in Russland, Nr. 12; Bourdeau CATALOGUE.md #53",
+ "alphabet": "unseparated two-digit decimal groups (syllabary, not letter substitution -- Bourdeau's diagnosis from R5005's own rubbed pencil gloss)",
+ "constraints": {
+  "cipher_type": "syllabary (numerical, simple/homophonic substitution per DECODE's own field, but Bourdeau's own analysis of the visible pencil trace says syllabary)",
+  "known_partial_key": {
+   "11": "la",
+   "70": "pre",
+   "82": "m",
+   "34": "i",
+   "29": "er",
+   "40": "e",
+   "46": "que",
+   "source": "Bourdeau, dbourdeau/cyphersolver zeschau1841/NOTES.md, read from R5005 p.5 right line a5_03's rubbed pencil decipherment 'la pre m i er e' (=\"la première\"); grade I (inferred from a partially-legible trace), not a clean key source"
+  },
+  "pages": {"R5005": 9, "R5006": 2, "R5007": 3, "R5008": 3},
+  "access": "DECODE full-size images are account-wide blocked (Authentication required, confirmed even when logged in per CLAUDE.md's Access playbook and ASKS.md row 42); the Dresden Nr. 12 file itself is confirmed not digitised at the archive (QUEUE.md CS2-09, archiv.sachsen.de guid fb8ee3d8-3829-4665-8b8f-45c2574196d7, digitalisatExists: false)"
+ },
+ "cheap_tests_in_order": [
+  "1. Apply Bourdeau's 7 recovered syllabary values (la, pre, m, i, er, e, que) as a crib to R5006, R5007 and R5008 wherever their ciphertext is on disk; report token coverage. Control A (coverage, order-insensitive): the same 7-value substitution against a random-digit string with each record's own digit frequencies and length. Control B (order-sensitive, CLAUDE.md rule 3's 'a control must be able to fail differently from the target' lesson -- coverage alone cannot discriminate a real crib from noise the way an order-scrambled decode's German/French bigram score can): the same substitution against a token-order-scrambled copy of each record's own ciphertext, scored for bigram plausibility of the decoded fragments. Cost $3, Sonnet, disk-only if the ciphertext is already transcribed."
+ ],
+ "matched_control": "not run -- test 1 is blocked before any control could be computed (no ciphertext for R5006/R5007/R5008 on disk to build a matched control from)",
+ "cheap_test_done": [
+  {
+   "test": 1,
+   "date": "26 Sept 2026",
+   "worker": "bZES",
+   "method": "attempted per spec: crib Bourdeau's 7 R5005 syllabary values onto R5006-R5008 wherever their ciphertext is on disk",
+   "target": "blocked -- no ciphertext for R5006, R5007 or R5008 exists on any disk this account can read: absent from Bourdeau's zeschau1841/ folder (only ct_R5005.* present, his own NOTES.md states R5006-R5008 'are not transcribed yet'), absent from Aymeloglu's catalogue mirror (metadata only, Available Documents empty for all four ids), and unreachable from DECODE without login -- one live RecordsView/5006 GET (26 Sept 2026, 200 OK) shows 'Access mode: Authentication required' and an unfilled {{>thumbnailUrl}} template (no image URL exposed unauthenticated). The Dresden holding is independently confirmed not digitised at all (QUEUE.md CS2-09, 24 Sept 2026, archiv.sachsen.de digitalisatExists: false), so even a working DECODE login would not itself supply an image -- only a physical archive copy order would.",
+   "control": "not computed -- no target data to build a matched random-digit or order-scrambled control from",
+   "verdict": "BLOCKED, not a negative. The crib test cannot be attempted until R5006/R5007/R5008 are transcribed from an image, which needs an HStAD Dresden copy order (10731 ... Nr. 12, a mixed ministerial-dispatch file; the exact leaves for these three letters are unknown from any metadata read this pass) -- a person's action, logged generally at ASKS.md row 42 (DECODE account-wide image block) rather than a fresh per-target row this job. R5005 itself remains open/unread as plaintext regardless of this test."
+  }
+ ],
+ "judge": {
+  "language": "de20",
+  "letters_min": 100,
+  "letters_max": 2000,
+  "min_word_cover": 0.5,
+  "control_samples": 200,
+  "corpora": [
+   "tools/data/de20/pg5323_Effi_Briest.txt.gz",
+   "tools/data/de20/pg46184_Frau_Jenny_Treibel.txt.gz",
+   "tools/data/de20/pg36905_Schach_von_Wuthenow.txt.gz",
+   "tools/data/de20/pg41051_Peter_Camenzind.txt.gz",
+   "tools/data/de20/pg41907_Demian.txt.gz",
+   "tools/data/de20/pg43987_Die_drei_Spruenge_des_Wang_lun.txt.gz",
+   "tools/data/de20/pg15736_Der_Mann_von_vierzig_Jahren.txt.gz"
+  ],
+  "corpora_note": "Era note (per this brief): R5007/R5008 are German, dated 1842-1843. Neither wired German corpus fits well -- de16 (LANG_CORPORA's default, composed_enhg.txt) is Early New High German, 15th-16th c., about 300 years too early; de20 is 1880-1940 Gutenberg prose (GOLD-C, 25 Sept 2026), 40-100 years too late. de20 is named here as the nearer of the two (a 19th-century official/diplomatic register sits closer to 1880-1940 literary German than to 1500s German), not as a genuine match; treat any FAIL or PASS against this judge as evidence of unknown reliability on era grounds alone (CLAUDE.md's pt17/pt18 lesson), and downgrade further if a 19th-century German corpus becomes available. R5005/R5006 are French (1841-1842); no French judge run is proposed here since French plaintext was never reached in this job."
+ }
+}
