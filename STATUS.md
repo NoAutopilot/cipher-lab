@@ -176,9 +176,16 @@ Brief .claude/briefs/runs/2026-09-26-lane-nx2-orchestrator.md; COMMON 2026-09-26
 SCOUT-OWN-4-2026-09-26.md (RAH Salazar y Castro: Soria/Sanchez pool S1, A-42 decipherment S2, Caracciolo S3, Gayangos S5).
 Folder ciphers/rah-salazar-soria-sanchez-1524-28/ (created by job 1).
 
-**Live workers (14:49 UTC):** NX2-GATE session_01KvxNPRA2NzaAQKNKYSMqp3 (Sonnet, box 45, alarm 5: check-solved + RAH images);
-NX2-INDEX session_01KsukRf7xs1ouVMvf3TqyBo (Sonnet, box 50, alarm 5: full Indice grep into QUEUE.md, S3/S5 triage).
-**Waiting:** NX2-CRIB (after GATE has A-42 ff.441-443 images); NX2-A33 / NX2-A42 (after CRIB decides the key).
+**Results so far.** NX2-GATE (5.87 F): no images -- bibliotecadigital.rah.es holds no record for any of the five letters
+(its search works on control terms), so ciphers/rah-salazar-soria-sanchez-1524-28 is `blocked` with REQUEST.md (copy order);
+not Bourdeau's or Aymeloglu's lane (their Soria/Sanchez folders stop at 9/30); DECODE has nothing at 9/33+. NX2-INDEX (5.53 D):
+QUEUE.md section "RAH Salazar y Castro index, cipher mentions" -- 25 undeciphered entries of 2,297; S3 (Caracciolo 1526) is
+interlinear-deciphered, the undeciphered Caracciolo letter is inv.6122 (A-41, 1527, Ko.8); six more Sanchez letters, one with
+its own decipherment (inv.6124); S5 confirmed and the Haro 1655-61 pool extends it.
+**Live (15:23 UTC):** NX2-GATE2 session_0174gvokCgFBjhW3vdWwBwb4 (Sonnet, box 50, alarm 6): CSP Spain vol.II/III page-by-page
+for the five dates, the BRAH 1931 Soria catalogue and UAM PDF, Kolosova's sources, and one batched RAH copy order in REQUEST.md.
+**Waiting:** NX2-CRIB and the readings need images; every RAH Salazar item is copy-order-only, so after GATE2 the lane expects to
+go idle-standing on the ASKS row for that order.
 **Note:** DECODE does catalogue RAH 9/34 (rah9-34-fernandez-1525); SCOUT-OWN-4's "coverage stops at 9/31" is re-checked by GATE.
 
 ## LANE NX handoff (session_01RDXRYmATas1Xy6K1Jjwtvo), 26 September 2026, 08:44-11:50 UTC (closed)
