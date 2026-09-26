@@ -129,9 +129,12 @@ def score(model, plain, uni_w):
     return s + uni_w * u
 
 
-def anneal(seq, model, iters, rng, uni_w, t0=4.0, fixed=None, allowed=None):
+def anneal(seq, model, iters, rng, uni_w, t0=4.0, fixed=None, allowed=None, init=None):
     """Incremental annealing: a move re-scores only the n-grams touching the changed sign's positions.
-    allowed: optional {sign: "letters"} restricting what a sign may decode to (e.g. vowel-indicator marks to "aeiou")."""
+    allowed: optional {sign: "letters"} restricting what a sign may decode to (e.g. vowel-indicator marks to "aeiou").
+    init: optional {sign: letter} starting map (e.g. a known key for a different letter, LANE AX2 26 Sept 2026) --
+    a non-fixed, non-allowed-restricted sign starts here instead of a corpus-frequency-weighted random letter; the
+    anneal is free to move away from it exactly as from any other starting point (this only seeds, never fixes)."""
     o = model.order
     signs = sorted(set(seq))
     letters = list(ALPHA)
@@ -142,7 +145,9 @@ def anneal(seq, model, iters, rng, uni_w, t0=4.0, fixed=None, allowed=None):
     starts = {s: sorted({j for i in pos[s] for j in range(max(0, i - o + 1), min(i, n - o) + 1)}) for s in signs}
     fixed = fixed or {}
     allowed = {s: list(v) for s, v in (allowed or {}).items()}
-    key = {s: fixed.get(s) or (rng.choice(allowed[s]) if s in allowed else rng.choices(letters, weights)[0])
+    init = init or {}
+    key = {s: fixed.get(s) or (rng.choice(allowed[s]) if s in allowed else
+           (init[s] if s in init and init[s] in letters else rng.choices(letters, weights)[0]))
            for s in signs}
     signs = [s for s in signs if s not in fixed]  # crib-fixed signs never move
     pl = [key[x] for x in seq]
@@ -182,7 +187,7 @@ def anneal(seq, model, iters, rng, uni_w, t0=4.0, fixed=None, allowed=None):
     return score(model, "".join(bestkey[x] for x in seq), uni_w), bestkey
 
 
-def anneal_noisy(seq, model, iters, rng, uni_w, noise, t0=4.0, fixed=None, allowed=None, cap_mult=1.5, pos_prob=0.3,
+def anneal_noisy(seq, model, iters, rng, uni_w, noise, t0=4.0, fixed=None, allowed=None, init=None, cap_mult=1.5, pos_prob=0.3,
                  pos_start=0.5):
     """Error-tolerant anneal (LANE R6 CM2, 25 Sept 2026): the same homophonic key as anneal(), plus a per-position
     erasure variable. Generative model: at each position the plaintext letter is key[sign] with probability 1-noise,
@@ -204,7 +209,9 @@ def anneal_noisy(seq, model, iters, rng, uni_w, noise, t0=4.0, fixed=None, allow
     starts = {s: sorted({j for i in pos[s] for j in range(max(0, i - o + 1), min(i, n - o) + 1)}) for s in signs}
     fixed = fixed or {}
     allowed = {s: list(v) for s, v in (allowed or {}).items()}
-    key = {s: fixed.get(s) or (rng.choice(allowed[s]) if s in allowed else rng.choices(letters, weights)[0])
+    init = init or {}
+    key = {s: fixed.get(s) or (rng.choice(allowed[s]) if s in allowed else
+           (init[s] if s in init and init[s] in letters else rng.choices(letters, weights)[0]))
            for s in signs}
     signs = [s for s in signs if s not in fixed]
     pl = [key[x] for x in seq]
@@ -285,17 +292,37 @@ def anneal_noisy(seq, model, iters, rng, uni_w, noise, t0=4.0, fixed=None, allow
     return total, bestkey, bestfree
 
 
-def solve(seq, model, restarts, iters, seed, uni_w, fixed=None, allowed=None, noise=0.0):
-    """noise > 0 (error-tolerant, anneal_noisy): results are (score, key, free) triples instead of (score, key)."""
+def solve(seq, model, restarts, iters, seed, uni_w, fixed=None, allowed=None, noise=0.0, init=None):
+    """noise > 0 (error-tolerant, anneal_noisy): results are (score, key, free) triples instead of (score, key).
+    init: optional {sign: letter} starting map, same on every restart (each restart still explores independently
+    via its own random moves; only the starting point is shared, not the search)."""
     rng = random.Random(seed)
     results = []
     for r in range(restarts):
         if noise:
-            results.append(anneal_noisy(seq, model, iters, rng, uni_w, noise, fixed=fixed, allowed=allowed))
+            results.append(anneal_noisy(seq, model, iters, rng, uni_w, noise, fixed=fixed, allowed=allowed, init=init))
         else:
-            results.append(anneal(seq, model, iters, rng, uni_w, fixed=fixed, allowed=allowed))
+            results.append(anneal(seq, model, iters, rng, uni_w, fixed=fixed, allowed=allowed, init=init))
     results.sort(key=lambda x: -x[0])
     return results
+
+
+def load_init_key(path):
+    """--init: a key.tsv/key_full.tsv-style TSV (code, value, ...) -> {sign_str: letter}, folded and restricted
+    to single a-z letters (NULL rows, name/word values and multi-letter values are skipped -- those signs start
+    random, same as with no --init at all)."""
+    rows = [l.rstrip("\n").split("\t") for l in open(path, encoding="utf-8") if l.strip() and not l.startswith("#")]
+    h = rows[0]
+    ci = h.index("code") if "code" in h else h.index("sign")
+    vi = h.index("value")
+    out = {}
+    for r in rows[1:]:
+        if len(r) <= max(ci, vi):
+            continue
+        v = fold(r[vi])
+        if len(v) == 1 and v in ALPHA:
+            out[r[ci]] = v
+    return out
 
 
 def make_control(plain_text, K, N, model, seed):
@@ -343,6 +370,12 @@ def main():
                     help="BackoffModel: interpolated absolute-discount n-gram of --order with recursive backoff "
                          "(use with --order 4 or 5); default stays the add-k Model")
     ap.add_argument("--fix", help="crib: sign=letter pairs held fixed, e.g. 70=q,33=u,67=e (target mode)")
+    ap.add_argument("--init", help="target mode: start the anneal from this key file's sign->letter map instead of "
+                    "a corpus-frequency-weighted random letter (LANE AX2 26 Sept 2026, a key-seeded anneal). A "
+                    "TSV with 'code'/'sign' and 'value' columns (key.tsv/key_full.tsv's own format); rows whose "
+                    "value is not a single a-z letter (NULL, a name, multi-letter) are skipped, that sign starts "
+                    "random as usual. A sign named in --fix still overrides --init for that sign. "
+                    "Default behaviour (no --init) is unchanged: every sign starts at a random letter.")
     ap.add_argument("--fix-first", type=int, default=0,
                     help="control mode: hold the signs of the first N positions at their true letters (the matched "
                          "control for a target crib of N letters)")
@@ -373,7 +406,8 @@ def main():
         skip = set(a.skip.split(","))
         seq = [r[si].rstrip("?") for r in rows[1:] if r[si].rstrip("?") not in skip]
         fixed = dict(kv.split("=") for kv in a.fix.split(",")) if a.fix else {}
-        res = solve(seq, model, a.restarts, a.iters, a.seed, a.uni_weight, fixed, noise=a.noise)
+        init = load_init_key(a.init) if a.init else None
+        res = solve(seq, model, a.restarts, a.iters, a.seed, a.uni_weight, fixed, noise=a.noise, init=init)
         sc, key = res[0][:2]
         free = res[0][2] if a.noise else {}
         dec = "".join(free.get(i, key[x]) for i, x in enumerate(seq))
