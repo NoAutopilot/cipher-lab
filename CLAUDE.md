@@ -519,7 +519,10 @@ Every brief states a cap in dollars of usage (the session metadata's cost figure
    PR-LAND job, a RETRO-APPLY job, a verifier correcting an over-claim) runs `tools/file_shrink_guard.py` against every
    file it touched, immediately before its final push, and pastes the output in its done line; `tools/room.py --push`
    also runs the same check on every path it is asked to push, refusing the push the same way its own STATUS.md/
-   QUEUE.md heading guard does).
+   QUEUE.md heading guard does), `tools/next_steps.py` (26 Sept 2026, OPTIMIZATION-2026-09-26.md section (c): 63
+   of 111 open/partial folders ended with a written next step nobody ran, invisible because lanes opened from
+   scout picks; NEXT-STEPS.tsv now names the top runnable row for every lane's job 1, `.claude/briefs/parent.md`
+   "Opening a lane").
 8. **Shared scripts before new ones (24 Sept 2026).** Each has `--help` and an offline test in `tools/tests/`; a
    target that needs something they lack gets an option added to the tool, not a private copy.
    `tools/gallica_folio.py ARK --folio 35` reads the manifest's canvas labels once, gives the canvas and native image

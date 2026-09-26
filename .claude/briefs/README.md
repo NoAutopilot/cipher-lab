@@ -128,3 +128,10 @@ applied unchanged, and three named cycle-3 briefs written from it.
 - **Guard against silently corrupting a shared file (26 Sept 2026, RETRO-2026-09-26i, PR-LAND-3).** Before your
   final push, any worker that lands or applies content into an existing tracked file runs
   `tools/file_shrink_guard.py` on every file it touched and pastes the output in its done line.
+- **Job 1 from the backlog, not a fresh scout (26 Sept 2026, OPTIMIZATION-2026-09-26.md section (c),
+  NEXT-STEPS-TOOL).** Before opening a lane, run `python3 tools/next_steps.py --check` (regenerate first if it
+  reports stale) and read NEXT-STEPS.tsv: a lane's job 1 is the top `runnable` row for the account's own targets,
+  not a fresh scout pick. A scout is spawned only once every runnable row is exhausted or each remaining row is
+  gated on a named ASKS.md row. A folder is not left `open`/`partial`/`blocked` with a runnable next step sitting
+  more than a day without a LEDGER.md row saying why it was skipped. See `.claude/briefs/parent.md`, "Opening a
+  lane."

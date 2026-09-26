@@ -62,6 +62,26 @@ def load_asks():
     return rows
 
 
+def load_next_steps():
+    """NEXT-STEPS.tsv (tools/next_steps.py, 26 Sept 2026): one row per open/partial/blocked target
+    with a written next step nobody has run yet. Missing file (a repo checkout before this tool
+    landed, or a stale run) means an empty strip, not an error."""
+    path = "NEXT-STEPS.tsv"
+    if not os.path.exists(path):
+        return []
+    lines = [l.rstrip("\n") for l in open(path, encoding="utf-8") if l.strip() and not l.startswith("#")]
+    if not lines:
+        return []
+    cols = lines[0].split("\t")
+    rows = []
+    for line in lines[1:]:
+        cells = line.split("\t")
+        if len(cells) != len(cols):
+            continue
+        rows.append(dict(zip(cols, cells)))
+    return rows
+
+
 def parse_headers(txt):
     head, lines, k = {}, txt.split("\n"), 0
     while k < len(lines) and re.match(r"^[a-z]+:\s", lines[k]):
@@ -589,6 +609,22 @@ def near_card(n):
 
 near_cards = "".join(near_card(n) for n in near) or '<li class="muted">no near solves open</li>'
 
+next_steps_rows = load_next_steps()
+next_steps_counts = Counter(r.get("blocker", "") for r in next_steps_rows)
+next_steps_runnable = [r for r in next_steps_rows if r.get("blocker") == "runnable"][:15]
+
+
+def next_step_row(r):
+    folder = r.get("folder", "")
+    return (f'<li class="nextstep"><a href="{E(REPO + "ciphers/" + folder)}">{E(folder)}</a>'
+            f' <span class="chip">{E(r.get("status", ""))}</span>'
+            f' <span class="chip">{E(r.get("cost_band", ""))}</span>'
+            f'<p class="muted small">{E(r.get("next_step", ""))}</p></li>')
+
+
+next_steps_list = "".join(next_step_row(r) for r in next_steps_runnable) or '<li class="muted">no runnable rows -- NEXT-STEPS.tsv is empty or stale</li>'
+next_steps_strip = "".join(f'<span><b>{v}</b> {E(k)}</span>' for k, v in sorted(next_steps_counts.items())) or "<span>NEXT-STEPS.tsv not built yet</span>"
+
 # ---------------------------------------------------------------- page
 
 CSS = """
@@ -691,6 +727,8 @@ th,td{text-align:left;vertical-align:top;padding:8px 8px;border-bottom:1px solid
 .nearhead{display:flex;flex-wrap:wrap;gap:8px;align-items:baseline;justify-content:space-between}
 .neartitle{font-weight:600;margin-top:6px}
 .chip.near-stale{background:var(--warn-soft);color:var(--warn)}
+.nextsteps{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:8px}
+.nextsteps .nextstep{border:1px solid var(--line);border-radius:6px;padding:8px 10px}
 @media (prefers-reduced-motion:no-preference){.ffill{transition:width .3s}}
 """
 
@@ -780,6 +818,13 @@ page = f'''<title>Cipher Lab Board</title>
   <h2><a href="{E(REPO + "NEAR.md")}">Near solves</a></h2>
   <p class="muted small" style="max-width:70ch">A target where a solver beat its matched control by a reproducible margin, or a control showed a negative was not a real test, stays here until its named next step has run or a verifier has classed it in AUDIT.md (CLAUDE.md rule 5). A row untouched for 48 hours is marked stale, a flag for the parent, not a reason to drop it.</p>
   <ul class="nearcards">{near_cards}</ul>
+</section>
+
+<section class="near" id="next-steps">
+  <h2><a href="{E(REPO + "NEXT-STEPS.tsv")}">Next steps</a></h2>
+  <p class="muted small" style="max-width:70ch">Every open, partial or blocked target's own written next step (tools/next_steps.py, CLAUDE.md Usage 8a). A lane's job 1 is the top runnable row here, before a scout is spawned (.claude/briefs/parent.md).</p>
+  <div class="strip">{next_steps_strip}</div>
+  <ol class="nextsteps">{next_steps_list}</ol>
 </section>
 
 <nav class="tabs" aria-label="Views">
