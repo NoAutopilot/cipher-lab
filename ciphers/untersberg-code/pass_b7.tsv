@@ -1,0 +1,49 @@
+line_number	token_index	token_text	confidence	note
+1	1	S	high	Capital S with a decorative flourish/loop at top touching the frame's arch border; may just be an inkflourish rather than a separate mark.
+1	2	9	high	Numeral 9, loop with descender and small curling tail at bottom.
+1	3	9	high	Identical numeral-9 shape to previous token.
+1	4	occo	high	Four letters o-c-c-o run together with no internal periods or gaps larger than normal letter-spacing.
+1	5	X	high	Capital X with a curling flourish at the top-right terminal.
+2	1	Salr°nro[symA]	medium	Reads S-a-l-r-n-r-o then a complex ligature glyph (labeled symA): a small top-left hook, a vertical stroke with serif, and a bottom hook/loop, joined by a diagonal stroke. The "r" carries a small raised loop like a superscript "o" (r°), resembling an abbreviation mark. symA recurs identically in line 4 (twice) and line 6 (twice, second mirrored).
+2	2	5	high	Numeral 5 with small curl at top.
+2	3	a[symB]5	medium	"a" then an ambiguous glyph (symB): a thin, tall diagonal ascender stroke joined to a much thicker curved foot/hook - could be a stylized k, R, or a decorative flourish, not clearly a standard letter - then "5".
+2	4	l	medium	Open loop at top with a curling tail at the bottom; could alternatively be "e".
+2	5	h	low	Loop with a small hook/curl above the baseline closing into a rounded body; resembles delta/eth/6/h. Possibly the same glyph family as the second half of line 5's "ih" token, though drawn slightly differently.
+3	1	P	medium	Capital letter with a looped bowl and a curling tail at bottom right; resembles P or B.
+3	2	G	medium	Round letter with an ascending curled tail; resembles G, or could be read as numeral 9.
+3	3	m	high	Plain three-stroke lowercase m.
+3	4	G	medium	Same shape as token 2 of this line.
+3	5	a	high
+3	6	l	high	Simple vertical stroke with a small foot curl - a different, plainer style than the looped "l" seen in line 2.
+3	7	5	medium	Numeral 5 with a small curl on top; could be read as S.
+3	8	o	high
+3	9	l	high	Same plain vertical-stroke style as token 6.
+3	10	m5	high	m directly followed by 5 with a visible gap but no period between them.
+3	11	r	high
+3	12	u	high	Two joined vertical strokes (u-shape).
+3	13	al	high	"a" directly followed by "l" with no period between them; last token of the line, followed by a period then the frame border.
+4	1	m	high
+4	2	5ig	medium	Reads 5 then a tall stroke (ambiguous between "l" and "i" - a small floating accent/dot mark sits above it, suggesting it may be "i" with its dot drawn separately) then "g" (clear loop+descender); no periods within.
+4	3	r	high
+4	4	l	high	Open-loop style, matching line 2/line 5's "l".
+4	5	[symA]	medium	Same recurring ligature glyph as line 2 token 1's final glyph and line 6 (see line 2 note).
+4	6	e	medium	Round letter with a small tail; could alternatively be "c".
+4	7	[symA]	medium	Same recurring ligature glyph, appears a second time in this line.
+4	8	55	high	Two numeral-5s adjacent with a gap but no period between them.
+4	9	a	high
+4	10	u	high
+4	11	H	low	Two tall parallel strokes joined by a horizontal crossbar with small ticks at the top of each stroke; resembles a capital H, or could be read as a doubled "tt".
+4	12	l	high
+4	13	Xmissu	high	Capital X directly joined (no period) to "missu"; this word is cut off by the frame's arch curve and continues as "ariu" at the start of line 5.
+5	1	ariu	high	Continuation of "Xmissu" from the end of line 4 (word wraps across the line break due to the arch narrowing).
+5	2	a	high
+5	3	o	high
+5	4	uftgcxs	medium	Reads u, then an ascender resembling a long-s/f merging into what may be a small "t" hook (an "ft"/"ft-ligature"-type ligature), then g, c, x, s - all run together with no periods or unusual gaps.
+5	5	l	high	Open-loop style "l".
+5	6	ih	low	"i" with a small accent/tick mark above, directly followed by a loop-and-tail glyph resembling h, b, or 6.
+5	7	allomvraco	high	Ten letters run together with no internal periods; this is the last token of the line, reaching the frame's inner edge with no trailing period (unlike other line-ends).
+6	1	nicrlr	medium	Reads n, i (dot visible above - could alternatively be "e"), c (open curve), r (carries a small raised loop, similar to the r-loop seen in line 2), l, r - all run together, no periods within.
+6	2	[symA][symA-rev]mi	medium	Two instances of the recurring ligature glyph (symA) placed back-to-back, the second appearing mirrored/reversed left-right relative to the first, directly followed by m and i with no periods.
+6	3	lo[symA]mi	medium	l, o, the ligature glyph (symA) again, then a letter that appears to be "m" (three strokes) carrying a macron/overline mark, then i.
+6	4	vmult	medium	v, then a macron-marked letter that looks like "m" (three strokes) though could possibly be "u" with the macron instead, then u, l, t.
+6	5	lg	high	Final token of the inscription: l then g, running directly into the frame's inner border with no trailing period.
