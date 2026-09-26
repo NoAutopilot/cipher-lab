@@ -90,25 +90,30 @@ identified, the catalogue's date and senders corrected. The "first verified N3" 
 Orange 1572 detector candidate also fell (partial decipherment printed 1842). Zero unique solves today; two
 over-claims prevented by the gates before anything left the repository.
 
-## LANE AX2 handoff (session_016sbTkVT8HGNJ6JGjJNmCuM), 26 September 2026, from 05:14 UTC (live)
+## LANE AX2 handoff (session_016sbTkVT8HGNJ6JGjJNmCuM), 26 September 2026, from 05:14 UTC (live; updated 06:00)
 
 Brief .claude/briefs/runs/2026-09-26-lane-ax2-orchestrator.md; COMMON reused: 2026-09-26-lane-ax-COMMON.md. Start state: LANE AX
 handoff below (AX-REDERIV2 and AX-COMP2 finished before AX2 opened and were ledgered by the parent).
 
-**Live workers (Sonnet, dispatched 05:18-05:20):**
-| job | session | box | what |
+**Live workers:**
+| job | session | model, box | what |
 |---|---|---|---|
-| AX2-4612 | session_013pxiX67byNnSMtekgKxU88 | 90 min | settle the 16 open numerals, v3, decode under key_full v3 with a 20-shuffle and 5811 positive control, then a key-seeded anneal (adds --init to homophonic_anneal.py) with a perturbed-key 5811 control |
-| AX2-5801 | session_01Dcu6wTK8pqut6dpvrr6Hjo | 100 min | Groen IV clear text (dbnl) or the leaf's clear copy; pp.1-5 by line crops; key_5801 by interlinear_align without --prior; apply to 5799 and 4612 with controls |
-| AX2-SHRINK | session_01AgF4xTn64SNCpCBwRTcvA8 | 40 min | lodewijk folder 80 MB toward 30: manifest, regen_images.sh, remove regenerable renders (crops_4612 and 05801 crops out of bounds) |
-| AX2-BLANKS | session_011UTYTsJEGx3ahJ5GfJHJEW | 90 min | codes 156/182 in context across every transcribed letter; 7206 companion decipherment (pp.5-6 vs pp.3-4) |
-| AX2-BRO4 | session_011VKpjD9ciagJtzUkVjZEJP | 75 min | Brochado 134 NEAR step: 69 undecidable thin-code occurrences by interlinear_align chunk alignment with a per-class known-answer control, then images, re-score |
+| AX2-4612 | session_013pxiX67byNnSMtekgKxU88 | Sonnet, 90 min from 05:21 | settle 16 numerals, v3, key_full decode with shuffle + 5811 controls, key-seeded anneal (--init) with a perturbed-key control |
+| AX2-5801 | session_01Dcu6wTK8pqut6dpvrr6Hjo | Sonnet, 100 min from 05:20 | clear text found: Groen IV Lettre CDXXIII pp.129-133 (dbnl); pp.1-5 transcription in progress; key_5801, apply to 5799/4612 |
+| AX2-172 | session_01MHHYmkxUyNxwmdANiFujga | Opus, 50 min from 05:59 | reconcile 172: 4614 le Conte Jean (1x) vs 7206 Lumbres (3x); verdict for LANE V8 on 5797 p6_spot4 |
+| AX2-BRO5 | session_016je7CQQok2wjf4NCKYR7Rb | Sonnet, 35 min from 06:00 | Brochado: z e/r tie and 4 undecidable occurrences by image; re-score 134 only if key changes |
 
-**Orchestrator reading of 4612 (05:16):** v2 under key.tsv shows recurring clusters "yus" (where "vous" would sit) and "zur" ("pour")
--- a small consistent set of codes differing from the 1574 table, or a consistent digit misreading, not noise. AX2-4612 unit 3 tests which.
+**Done (ledgered, archived):** AX2-SHRINK 3.69 D (80 -> 57 MB; 24 MB without the two live crop sets; manifest + regen_images.sh,
+sha1-identical regen test); AX2-BLANKS 12.32 D (156 once, 182 three times, no value for either; 7206's period decipherment is p8,
+key_7206 147 codes, 99/100 agree with key_full on <=120; 172 conflict found); AX2-BRO4 5.79 D (known-answer control 1.000 vs 0.350;
+69 undecidable -> 46 agree / 19 differ / 4 undecidable; key unchanged; 134 percentile 5.0 -> 5.0; NEAR row updated 06:02).
 
-**Queue after these:** second shrink pass on crops_4612 and 05801 crops once AX2-4612/AX2-5801 finish; fresh-instance re-derivation for any
-candidate flagged; pro3055 and the 5549 body stay parked (brief).
+**Hold:** 5797 p6_spot4 (172 = le Conte Jean) -- LANE V8 asked at 05:58 to hold the row until AX2-172 reports.
+**Orchestrator reading of 4612 (05:16):** v2 under key.tsv shows recurring clusters "yus" (where "vous" would sit) and "zur" ("pour").
+
+**Queue:** second shrink pass on crops_4612 and 05801 crops once AX2-4612/AX2-5801 finish; fresh-instance re-derivation for any
+candidate flagged; 7206's town codes (227, 259, 260, 222, 261, 228, 242) into key_full only through build_key_full.py after a
+check; pro3055 and the 5549 body stay parked (brief).
 
 ## LANE AX handoff (session_01VzK62xX92yKfnUD93zprD8), 26 September 2026, 00:15-04:35 UTC (closed at 446k context)
 
