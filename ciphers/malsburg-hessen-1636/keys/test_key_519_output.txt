@@ -1,0 +1,29 @@
+=== (a) coverage, TARGET ===
+distinct pool values: 173
+distinct covered by key519: 77 / 173 = 0.4451
+token coverage: 1432 / 1828 = 0.7834
+=== (a) coverage, CONTROL (1000 random 80-code sets drawn from the key's own 81-value range) ===
+CONTROL distinct coverage: mean 0.4454  p95 0.4451
+CONTROL token coverage:    mean 0.7757  p95 0.7850
+NOTE: key519 is EXHAUSTIVE over its 81-value numeric range (27 letters x 3 homophones
+= 81 = all non-multiple-of-10 2-digit values). A control drawn from that same range is
+therefore near-identical to the target by construction (both ~cover the same fraction
+of any pool restricted to that range) -- this coverage statistic cannot discriminate
+this key from a random one of the same size/range (CLAUDE.md rule 3, bCAS/AX-5799 lesson).
+
+=== (b) actual decode of ciphertext.txt (ff.3/12, N=352, H-grade) through key519 ===
+hstam_4_h_1411_0003_L24_s1 : phlp[7]di[N]e[Y]lszgtniu
+hstam_4_h_1411_0003_L25_s1 : o[D][10][Y]efmkahxihyhhphnh
+hstam_4_h_1411_0003_L26_s1 : nizlcbvxspdslu[50]uosphkx[41][30][70]z[60]ulpa
+hstam_4_h_1411_0003_L27_s1 : [Und]uzphxbe[80]mkdbzlxqjmn[#]zplzipphk
+hstam_4_h_1411_0003_L28_s1 : i[70][X][128]li[H]qvpla[30]l[176]squlidph[140]aap
+hstam_4_h_1411_0003_L29_s1 : za[50][70]dkpd[90]b[930]nzpappha[S]gdplphqpp
+hstam_4_h_1411_0003_L30_s1 : [40]akltebk[O]x[7]bpzn[30]cppmdph[30]ivchhbh
+hstam_4_h_1411_0003_L31_s1 : [20]l[L][70]z[20]ai[N]i[4]pphu[Y]i
+hstam_4_h_1411_0012_L44_s1 : t[O][60]ikb[7]uo[20]phvbi[129]r[G]ebmdazxphacmechh
+hstam_4_h_1411_0012_L45_s1 : hxdqlon[10]xuqbeumech[7]bhfniqzch[Y]hfche
+hstam_4_h_1411_0012_L46_s1 : baspgphcbdkph[N]yn[H][G]dlkhj[60]chiruosbhb[30]
+hstam_4_h_1411_0012_L47_s1 : avph[41]bhgmph[60]lieq[H]qchu[140]yxntchezhsbu
+hstam_4_h_1411_0012_L48_s1 : [D][137]zc[70][30]pex[130]nqxnphyrchzf[60][30][70][80][60]bhchi
+hstam_4_h_1411_0012_L49_s1 : phn[W]phh
+VERDICT: gibberish, no recognizable German words or syllable patterns -- key519 does not fit.

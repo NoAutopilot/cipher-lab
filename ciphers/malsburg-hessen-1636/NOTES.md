@@ -1042,3 +1042,82 @@ dup_witness_settled.tsv), `settle_dup_witness.py`, `apply_manual_witness.py`,
 Hosts: none (all work from images and pass TSVs already on disk).
 
 Hosts: none (image already on disk from bMALC's fetch).
+
+## Marburg keys 4 d Nr. 1219-1224 vs pool (bMALK, 26 Sept 2026)
+
+Intake gate re-run: `python3 tools/intake_gate_check.py malsburg-hessen-1636` -> `partial` (line 1), exit 0.
+
+**Question (LANE B9 handoff, Bourdeau CATALOGUE.md #338 / `oldest/scan_2026-09-23/hard_targets.md` #4,
+Antal & Mírka, HistoCrypt 2022, "Wrong Design of Cipher Keys...Marburg"):** does any Marburg key in the same
+archive's fond 13 ("4 d Kanzlei- und Geheimeratskorrespondenz"), HCPortal ids 519-523, fit before a blind attack
+on the pool?
+
+**Fetch.** `api.hcportal.eu/api/cryptograms/<519..523>` (browser UA, `Origin: https://crypto.hcportal.eu`), one
+request at a time, 1.5s apart: 5 metadata JSONs + 5 key images (`keys/hcportal_<id>.json`, resized to <=2400px
+longest side, `keys/hcportal_<id>.jpg`; originals discarded after resize), `keys/manifest.json` (URL, sha1,
+size, orig/saved dimensions). 10 requests to `api.hcportal.eu`, all HTTP 200, none retried. `keys/` folder 4.6 MB.
+
+**What the five records actually are** (read directly off each key image, no crop step needed -- each is a
+single page/leaf, not a multi-line manuscript needing row-strip cuts; `tools/iiif_lines.py` was run on 519/520
+for row detection but the debug overlay showed a tabular layout, not prose lines, so the key content itself was
+read from the full resized image and targeted zoom crops, not the auto-detected line bands):
+
+| id | folder | date_around | language | HCPortal category/solution | what it is |
+|---|---|---|---|---|---|
+| 519 | Nr.1219 | 1607 (Landgrave Moritz) | German | Nomenclator / Not solved | a clean worked-example specimen: full letter-homophone table (27 letters incl. ch/ph, each 3 two-digit codes, 11-99 excluding multiples of 10 = 81 codes total, exhaustive over that range) + a symbolic nomenclator column (astrological/geometric marks for Kaiser, the Kurfürsten of Sachsen/Pfalz/Brandenburg/Bayern, etc.) + a worked encoding of the name "Daniel Brier, jubilirer zu Franckfort" |
+| 520 | Nr.1220 f.15 | 1715 (Landgrave Karl) | German (with Latin headings) | category Unknown / Not solved | a PRINTED letterpress New Year's broadside ("DEO ET PATRONIS... AS... AD..."), an alphabetic anagram/acrostic literary puzzle -- all-letter pseudowords (`Kisri, asdlf, qsid...`), no digit code table at all |
+| 521 | Nr.1220 f.23 | 1715 (Landgrave Karl) | German | Nomenclator / Solved | a "Formel" (worked decryption demonstration) explicitly illustrating faulty/corrected ciphers ("Die erste Colonne zeiget mit untergeschriebenen falschen Chiffern" / "Die folgte Chiffern werden getilgt") for the sentence "Das Casselische Ministerium vermuthet baldige Ankunft von dem Grafen von Dyhnhofen aus dem Haag" -- not a clean bijective key table, itself a case study of a KEY ERROR, consistent with this being one of the specimens behind Antal & Mírka's paper title |
+| 522 | Nr.1234 | 1660 | French | Nomenclator / Solved | a proposal letter extending an existing (unseen) French nomenclator that already runs to code 712 with four new codes 713-716 for syllable groups -- not the codebook itself, no table to compare |
+| 523 | Nr.1224 | 1720 | unclear | Unknown / Not solved | a sparse fragment: single digits 1-10 plus five codes in the 4000-4007 range and two words ("Grammat[ik?]", "flüßen") -- no usable table |
+
+**Test run: 519 only (the one clean key table).** `keys/key_519.tsv` (91 rows, grade H -- read directly from the
+archival key image, per rule 4) transcribes the full 27-letter/81-code homophone table plus the reserved
+"Zahlen" (numerals) row (10,20,...,90). `keys/test_key_519.py` (offline, exit 0, output in
+`keys/test_key_519_output.txt`):
+
+(a) **Coverage vs a matched control -- DEGENERATE, not a test.** Key 519's 80 letter-codes cover 77/173 = 0.445
+of the pool's distinct values and 1432/1828 = 0.783 of its tokens. The brief's own control (1000 random 80-code
+samples drawn from the key's own numeric range) gives mean 0.445 distinct / 0.776 tokens, p95 0.445 / 0.785 --
+statistically identical to the target. Reason: key 519 is EXHAUSTIVE over its declared range (27 letters x 3
+homophones = 81 = every non-multiple-of-10 two-digit value 11-99); any other key of the same size drawn from
+the same range covers the same fraction of a pool whose 2-digit codes already sit in 11-99, by construction.
+This is the same shape CLAUDE.md rule 3 already names (bCAS/AX-5799): the control cannot fail differently from
+the target because the axis being manipulated (which 80 of the 81 values are chosen) is orthogonal to the
+statistic (how many of them appear anywhere in the pool). Reported per the brief, not used as evidence either
+way.
+
+(b) **Actual decode -- clean negative.** Applying key 519's letter mapping to `ciphertext.txt` (ff.3/12,
+N=352, the only H-grade leaf) token-by-token produces gibberish with no recognizable German words or plausible
+syllable structure in any of the 14 lines (full output in `keys/test_key_519_output.txt`), e.g. line
+`hstam_4_h_1411_0003_L24_s1` -> `phlp[7]di[N]e[Y]lszgtniu`. This is the real test given (a)'s degeneracy, and it
+is decisive: **519 is not the malsburg-hessen-1636 key.**
+
+**520/521/522/523 -- not run as a mechanical test, reasons logged instead of a coverage number.** 520 has no
+digit code table to compare (a different genre entirely, a printed literary puzzle). 522 and 523 have no
+complete codebook in the fetched record (522 is an extension proposal for codes the base table doesn't show;
+523 is a five-code fragment in the 4000s, a numeric range the pool never uses at all -- its max value is 930).
+521's numbers could in principle be extracted from its corrected worked example, but the alignment is
+genuinely ambiguous at the zoom level read here (superscript corrections over a mix of what look like 2-digit
+and multi-digit groups) and reconstructing a clean table from it was judged not worth this job's remaining
+budget against three independent strikes already against it: it is explicitly a *faulty*-cipher case study, not
+a working key; its date (1715, Landgrave Karl) is 108 years after Landgrave Moritz's 519 and 78 years after the
+1637 target, the largest era gap of any record tested; and 522 (1660, French) and 523 (1720) are likewise
+decades off on the German-target side or wrong-language entirely. None of the four is a plausible period match
+for a 1637 letter the way 519 (Moritz era, ~30 years before the target, same language) at least nominally was
+before its own decode failed.
+
+**Verdict: negative for all five HCPortal records (519-523) tested against the pool.** Only 519 had a complete,
+clean key table; its coverage statistic is degenerate (flagged, not relied on) but its direct decode is
+unambiguous gibberish. 520/522/523 are not comparable key tables at all (wrong genre, incomplete, or wrong
+numeric range). 521 is a faulty-cipher case study, not a working key, and the worst era match of the five.
+Target stays `partial` (rule 5) -- no new leaf-pass work this job, per the brief's "no blind leaf passes"
+instruction; this is a logged negative for the Bourdeau lead, not a new blocker.
+
+Files: `keys/hcportal_{519,520,521,522,523}.json` (metadata), `keys/hcportal_{519,520,521,522,523}.jpg` (key
+images, resized), `keys/manifest.json`, `keys/key_519.tsv`, `keys/test_key_519.py`,
+`keys/test_key_519_output.txt`, `keys/zoom_519_*.jpg`, `keys/zoom_521_formel_{a,b}.jpg` (reading-aid crops kept
+small; `tools/iiif_lines.py`'s row-strip auto-detection was tried on 519/520 but not used -- these keys are
+tabular, not prose, so the full resized image plus targeted zooms read better than auto-detected line bands;
+those unused crop directories were deleted rather than committed). HYPOTHESES.md row added. `keys/` folder 6.6 MB.
+
+Hosts: `api.hcportal.eu` 10 requests (5 metadata + 5 images), all HTTP 200, none retried, 1.5s apart.
