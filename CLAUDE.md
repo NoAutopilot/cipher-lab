@@ -280,6 +280,19 @@ Loops that run outside this repository and write back into it:
   browser (`tools/jstor_runner_brief.md`, `tools/local_runner_brief.md`).
 - **Routines**: the weekly retrospective, and "Cipher Lab: breakthrough alert (email)", which the parent fires for a
   real result.
+
+Any session may propose an edit to a `tools/*_runner_prompt.md` file, but only a parent orchestrator commits one
+(a lane or worker names the change in ROOM.md and hands it up), since a bad edit reaches three unattended,
+externally-run loops before anyone reviews it. Before committing, grep the file's own "Paste this" section for a
+relative path (`ciphers/...`, `tools/...` with no `https://github.com/...` prefix) or a credential-shaped token
+(`_USER`, `_PASS`, `_KEY` outside a comment explaining not to use one) -- either fails the self-containment test
+the runner's own operator (the owner, pasting by hand) needs.
+
+A verifier that assigns N3 or better to a reading appends the `SECOND-OPINIONS-QUEUE.tsv` row for it in the same
+session, as part of writing AUDIT.md (rule 10), rather than leaving it for a later session to notice is missing
+-- the same "write it where the fact is established, not where it is next needed" shape as rule 10's AUDIT.md
+propagation requirement.
+
 Accounts: no account sees another's sessions or triggers; each parent reads the other's handoff and ROOM lines, and
 takes none of its targets.
 
@@ -472,6 +485,15 @@ Every brief states a cap in dollars of usage (the session metadata's cost figure
    full-page or full-leaf image argument to a transcription subagent call as the brief's own error, not the
    worker's -- a wall-clock box cannot catch this shape of overspend (Usage 6's own GOLD-4D/AT55V/MEYE/GOLD-K2
    paragraphs), so the crop step has to be mandatory and pasted, not advisory.
+   A worker's own reconciliation of several subagent reads against the source crops -- settling disagreements,
+   comparing digit shapes, arbitrating a three-way split -- is a distinct priced step, not overhead absorbed into
+   the calls that produced the reads. Lesson of 26 Sept 2026 (bMALS, malsburg-hessen-1636): four subagent blind
+   reads of two spans were priced at the README per-pass rate (this section's own AX-COMP2 fix), but the worker's
+   own comparison pass over the same crops, needed to settle three-way digit and monogram disagreements, cost as
+   much again and was priced nowhere, landing the job at 2.6x its $3 cap although each subagent call individually
+   matched the estimate. A brief for a reconciliation job states the reconciliation step as one more unit at the
+   same per-pass rate as the reads it reconciles (N reads + 1 reconciliation, not N reads), and prices the cap
+   accordingly before the worker starts.
 7. **Stop when the brief is met.** A worker does not continue into follow-ups (a sweep of sister copies, an
    audit of its own) that its brief did not name; it writes the follow-up as a one-line suggestion in NOTES.md.
 8a. **Rules become tools (25 Sept 2026, UPDATES.md).** A rule that the ledger shows broken twice gets a mechanical check in
@@ -489,7 +511,15 @@ Every brief states a cap in dollars of usage (the session metadata's cost figure
    `tools/desk_check.py` (26 Sept 2026, the bodleian-rawl-a24-p4.md incident: an outreach/*.md draft at `ready`/`drafted`
    left telling the owner to do something a runner already did -- run at every parent check-in, `.claude/briefs/parent.md`
    duty 6, and after landing any runner row), `tools/system_map_check.py` (26 Sept 2026, SYSTEM-MAP: every tool, runner
-   prompt, root queue, register and 8a gate must be named in SYSTEM.md, the current-state map, in the same commit that adds it).
+   prompt, root queue, register and 8a gate must be named in SYSTEM.md, the current-state map, in the same commit that adds it),
+   `tools/file_shrink_guard.py` (26 Sept 2026, PR-LAND-3: a landing/PR worker's plain `git commit` replaced two shared
+   files -- LOCAL-QUEUE.tsv and a completed verifier AUDIT.md -- with the single word "PLACEHOLDER" each, one fixed by
+   the worker's own next commit, the other left corrupted on main for over 6 hours with zero ROOM.md trace of the
+   worker having run at all. Any worker whose job is to land, merge or apply content into an existing tracked file (a
+   PR-LAND job, a RETRO-APPLY job, a verifier correcting an over-claim) runs `tools/file_shrink_guard.py` against every
+   file it touched, immediately before its final push, and pastes the output in its done line; `tools/room.py --push`
+   also runs the same check on every path it is asked to push, refusing the push the same way its own STATUS.md/
+   QUEUE.md heading guard does).
 8. **Shared scripts before new ones (24 Sept 2026).** Each has `--help` and an offline test in `tools/tests/`; a
    target that needs something they lack gets an option added to the tool, not a private copy.
    `tools/gallica_folio.py ARK --folio 35` reads the manifest's canvas labels once, gives the canvas and native image

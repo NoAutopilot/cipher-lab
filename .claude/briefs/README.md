@@ -125,3 +125,6 @@ applied unchanged, and three named cycle-3 briefs written from it.
   A RETRO-APPLY, LEARN apply or tool-building worker that adds one adds its row to `SYSTEM.md` and runs
   `python3 tools/system_map_check.py` (exit 0) before pushing, so the other account sees it on the map, not only in
   UPDATES.md.
+- **Guard against silently corrupting a shared file (26 Sept 2026, RETRO-2026-09-26i, PR-LAND-3).** Before your
+  final push, any worker that lands or applies content into an existing tracked file runs
+  `tools/file_shrink_guard.py` on every file it touched and pastes the output in its done line.

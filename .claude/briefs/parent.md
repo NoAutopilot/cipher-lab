@@ -87,6 +87,20 @@ Intake gate (25 Sept 2026): before any deep work (transcription, key application
 
 **Lineage depth (26 Sept 2026, parent 7h, LANE V10).** Every hand-over creates the successor parent as a child of the outgoing one, so the parent chain deepens by one each time; at parent 7h (7a to 7h, depth 7) a lane it created (LANE V10) sat at depth 8, the platform limit, and could neither `create_session` nor `send_later`, and closed itself within ten minutes. A parent at depth 7 can still run workers directly (a worker uses in-process subagents, never sessions). Lanes and the successor parent must then start from a shallower session: the owner creating the session from the claude.ai UI (ASKS 69). A one-shot `create_trigger` with `create_new_session_on_fire` does NOT work (tested on LANE B12, 15:25 UTC 26 Sept 2026: the routine-started session had no repository source, no session tools, no git credentials and no settable model; it ran 7 minutes on Sonnet, posted nothing, cost 0.98, ledgered X). Until the owner creates a depth-0 session, the parent runs breadth workers and QA passes directly and spawns verifiers itself. Record the parent's depth in every hand-over line.
 
+**Standing rule (26 Sept 2026, RETRO-2026-09-26i item 2, applied by RETRO-APPLY-U with the seven-hand-over
+amendment in force -- this supersedes any "every parent from the UI" wording elsewhere).** A UI-created parent
+sits at depth 0, and its line may hand over by `create_session` up to six more times before the chain needs
+another UI reset: every hand-over line records the successor's depth and how it was created ("successor
+created via UI" or "via `create_session`, depth N"), so depth is legible from ROOM.md and STATUS.md alone,
+without querying the platform. The parent at depth 6 files the ASKS.md row asking the owner to create the
+next parent from the UI *before* it hands over, so the owner-created reset recurs once every seven hand-overs,
+planned in advance rather than discovered at a lane's failure. A hand-over that had to use `create_session` at
+depth 6 anyway, because the owner was unavailable to create the UI session in time, names that in ASKS.md at
+once (not at the next failure), so the debt is visible immediately rather than compounding silently.
+`tools/orphan_check.py`'s (g) LINEAGE DEPTH WARNING (a proxy counted from STATUS.md's own hand-over prose, not
+an exact platform count) fires at 5 or more hand-overs since the last UI reset, printed at every run this tool
+is part of (parent duty 3a) -- read it before it reaches 6.
+
 Spawning (25 Sept 2026, UPDATES.md): every `create_session` passes `source_url` https://github.com/NoAutopilot/cipher-lab and
 `source_revision` main explicitly (inheritance from the parent's environment is not reliable: three workers on 25 Sept got no
 repository and stopped at their first turn on an injection suspicion), and its prompt leads with the brief file path and a

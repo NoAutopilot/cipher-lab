@@ -215,6 +215,76 @@ def test_main_exit_codes_via_cli(tmp_path, capsys):
     assert "orphans: 0 sessions, 0 triggers, 0 claims, 0 unledgered" in r3.stdout
 
 
+def _handoff_section(entries):
+    """Build a synthetic '## Parent handoff (...)' text from entries newest-first (STATUS.md's own
+    order: a new dated entry is prepended right after the heading, older entries pushed down)."""
+    body = "\n\n".join(entries)
+    return f"## Parent handoff (test account), kept current\n\n{body}\n\n## Lane structure\n\nsome table\n"
+
+
+def test_parent_handoff_sections_finds_each_account_and_stops_at_next_heading():
+    text = (
+        "## Parent handoff (account A), kept current\n\n**entry A1.**\n\n"
+        "## Parent handoff (account B), kept current\n\n**entry B1.**\n\n"
+        "## Lane structure\n\nsome table\n"
+    )
+    secs = oc.parent_handoff_sections(text)
+    assert len(secs) == 2
+    assert all("Lane structure" not in body and "Parent handoff" not in body for body in secs.values())
+
+
+def test_lineage_depth_fresh_ui_reset_warns_zero():
+    # 26 Sept 2026, RETRO-2026-09-26i item 2: a UI-created parent with nothing since its own reset.
+    fresh = _handoff_section([
+        "**26 Sept 2026, 17:28 UTC (7i, took over).** Parent 7i is session_X, created by the owner from "
+        "the claude.ai UI (ASKS 69), lineage depth 0.",
+        "**26 Sept 2026, 17:05 UTC (7h, check-in 5 and hand-over to 7i).** 7i is created by the owner "
+        "from the claude.ai UI (ASKS 69) because a child of 7h cannot spawn.",
+        "**26 Sept 2026, 16:13 UTC (7h, check-in 4).** No lane is live.",
+    ])
+    assert oc.check_lineage_depth(fresh, warn_at=5) == []
+
+
+def test_lineage_depth_warns_at_threshold_reading_newest_first():
+    # Six hand-overs since the reset (the reset entry is oldest/last in the newest-first text).
+    deep = _handoff_section([
+        "**entry 7g (newest, no reset here).** hand-over to 7h.",
+        "**entry 7f.** hand-over to 7g.",
+        "**entry 7e.** hand-over to 7f.",
+        "**entry 7d.** hand-over to 7e.",
+        "**entry 7c.** hand-over to 7d.",
+        "**entry 7b.** hand-over to 7c.",
+        "**entry 7a (oldest, the reset).** created by the owner from the claude.ai UI (ASKS 1), depth 0.",
+    ])
+    warnings = oc.check_lineage_depth(deep, warn_at=5)
+    assert len(warnings) == 1
+    assert "6 hand-over" in warnings[0]
+
+    # Below the threshold: no warning.
+    shallow = _handoff_section([
+        "**entry 7c (newest).** hand-over to 7d.",
+        "**entry 7b.** hand-over to 7c.",
+        "**entry 7a (the reset).** created by the owner from the claude.ai UI (ASKS 1), depth 0.",
+    ])
+    assert oc.check_lineage_depth(shallow, warn_at=5) == []
+
+
+def test_lineage_depth_with_no_reset_found_still_counts_and_never_crashes():
+    no_reset = _handoff_section([
+        "**entry 7f (newest).** hand-over to 7g.",
+        "**entry 7e.** hand-over to 7f.",
+        "**entry 7d.** hand-over to 7e.",
+        "**entry 7c.** hand-over to 7d.",
+        "**entry 7b.** hand-over to 7c.",
+    ])
+    assert len(oc.check_lineage_depth(no_reset, warn_at=5)) == 1
+
+
+def test_lineage_depth_is_informational_only_run_all_still_returns_six_groups():
+    a, b, c, d, e, f = oc.run_all([], [], [], "", [], NOW)
+    assert (a, b, c, d, e, f) == ([], [], [], [], [], [])
+
+
 if __name__ == "__main__":
     import subprocess
     sys.exit(subprocess.call([sys.executable, "-m", "pytest", __file__, "-q"]))

@@ -129,6 +129,9 @@ def room_ok():
         return f"ROOM.md would shrink ({len(cur.splitlines())} < {len(o.splitlines())} lines on origin)"
     return None
 
+_UNSET = object()
+
+
 def headings(path):
     """'## ' section headings of path, or None if the file does not exist."""
     if not os.path.exists(path):
@@ -166,6 +169,39 @@ def headings_ok(before):
         if lost:
             return f"{os.path.basename(path)} lost section(s): " + "; ".join(sorted(lost))
     return None
+
+
+def line_count_from_ref(ref, relpath):
+    """tools/file_shrink_guard.py's line_count() of relpath as committed at ref, or None if absent there
+    (a brand-new path -- never a shrink). Mirrors headings_from_ref()'s contract."""
+    import file_shrink_guard as fsg
+    text = fsg.git_show(ROOT, ref, relpath)
+    return fsg.line_count(text) if text is not None else None
+
+
+def shrink_ok(before_sizes, message=_UNSET):
+    """Refuse to push if any named path collapsed to a stub (26 Sept 2026, RETRO-2026-09-26i item 1,
+    PR-LAND-3: LOCAL-QUEUE.tsv and a completed verifier AUDIT.md replaced with the single word
+    "PLACEHOLDER" each, on a plain `git commit` that never called room.py at all). `before_sizes` maps
+    absolute path -> its line count from line_count_from_ref(), snapshotted before this commit was
+    created, the same way headings_ok()'s `before` is snapshotted. A shrink is exempt when the commit
+    just created (HEAD, post-rebase) names one in its own message (shrink/regen/restore/AX2-SHRINK).
+    `message` is for the offline test only; real callers get HEAD's own message."""
+    import file_shrink_guard as fsg
+    bad = []
+    for path, before_n in before_sizes.items():
+        if before_n is None or not os.path.exists(path):
+            continue
+        after_n = fsg.line_count(open(path, encoding="utf-8").read())
+        if fsg.is_shrink(before_n, after_n):
+            bad.append((os.path.relpath(path, ROOT), before_n, after_n))
+    if not bad:
+        return None
+    if message is _UNSET:
+        message = sh("git", "log", "-1", "--format=%B", "HEAD").stdout
+    if fsg.exempt(message):
+        return None
+    return "; ".join(f"{p} shrank {b} -> {a} lines" for p, b, a in bad)
 
 def bad_paths(paths):
     """Return the entries in paths that are not safe to pass to `git add --` (LEARN-2026-09-26-0022 item 2 =
@@ -206,6 +242,12 @@ def push(message, paths):
     sh("git", "fetch", "-q", "origin", "main")
     watched = {p: headings_from_ref("origin/main", os.path.relpath(p, ROOT))
                for p in (os.path.join(ROOT, "STATUS.md"), os.path.join(ROOT, "QUEUE.md"))}
+    # Shrink guard (26 Sept 2026, RETRO-2026-09-26i item 1): snapshot every named path's line count from
+    # origin/main before this commit exists, same timing as the headings snapshot above, so a path that
+    # collapses to a stub in this commit (or a rebase merge) is caught before the push, on every path,
+    # not only STATUS.md/QUEUE.md's headings.
+    shrink_paths = [p if os.path.isabs(p) else os.path.join(ROOT, p) for p in (paths or []) if not p.startswith("-")]
+    shrink_watched = {p: line_count_from_ref("origin/main", os.path.relpath(p, ROOT)) for p in shrink_paths}
     c = sh("git", "commit", "-q", "-m", message)
     if c.returncode: sys.stderr.write(c.stderr); return 1
     for i in range(5):
@@ -227,6 +269,9 @@ def push(message, paths):
         bad = headings_ok(watched)
         if bad:
             print("refusing to push: " + bad); return 7
+        bad = shrink_ok(shrink_watched)
+        if bad:
+            print("refusing to push: " + bad); return 8
         p = sh("git", "push", "-q", "-u", "origin", "main")
         if p.returncode == 0:
             print("pushed " + sh("git", "rev-parse", "--short", "HEAD").stdout.strip()); return 0
@@ -274,7 +319,6 @@ def digest(a):
     print(f"{len(kept)} of {len(all_lines)} lines matched")
     return 0
 
-_UNSET = object()
 ROLE_SESSION_RE = re.compile(r"\bsession_[0-9A-Za-z]+\b")
 COMMIT_ID_RE = re.compile(r"\b[0-9a-f]{7,40}\b")
 TYPED_TIME_RE = re.compile(r"\bat (\d{1,2}):(\d{2})\s*UTC\b")

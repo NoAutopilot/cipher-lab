@@ -31,6 +31,16 @@ Five checks, each printed one line per problem found:
       .claude/briefs/parent.md "Handing over", 26 Sept 2026; added per RETRO-2026-09-26d item 1's ROOM.md
       ask of 05:17 UTC, so the check survives past the one worker instance that heard it verbally).
 
+Depth early-warning (26 Sept 2026, RETRO-2026-09-26i item 2, LANE V10/B12 failure at depth 8): counts
+  (g) LINEAGE DEPTH WARNING -- "hand-over to <X>" mentions in each account's STATUS.md "## Parent handoff"
+      section, back to the most recent one saying the successor was "created ... the UI" (a depth-0
+      reset); a count of 5 or more is printed as a warning naming the account and the count, at every run,
+      not only after a lane already fails at the platform's depth-8 limit. This cannot query the
+      platform's own depth number directly (no API for it), so it infers depth from the hand-over chain
+      the parent already records in STATUS.md's prose -- a proxy, not an exact count, and it undercounts
+      if a parent hands over without updating STATUS.md. (g) is informational: it never affects this
+      script's exit code, only (a)-(f) do.
+
 Exit codes: 0 clean, 1 if any of (a)-(f) is non-empty.
 
 Usage:
@@ -325,6 +335,45 @@ def check_title_mismatch(sessions):
     return problems
 
 
+HANDOVER_TO_RE = re.compile(r'hands?-?over(?:s)?\s+to\s+(\S+)', re.I)
+UI_CREATED_RE = re.compile(r'created\s+(?:by the owner\s+)?(?:from|via)\s+the\s+(?:claude\.ai\s+)?ui', re.I)
+
+
+def parent_handoff_sections(status_text):
+    """{heading text: section body} for every '## Parent handoff...' heading in STATUS.md (one per
+    account); a section runs to the next top-level '## ' heading or end of file."""
+    sections = {}
+    headings_iter = list(re.finditer(r'^## (Parent handoff.*)$', status_text, re.M))
+    for i, m in enumerate(headings_iter):
+        body_start = m.end()
+        next_top = re.search(r'^## ', status_text[body_start:], re.M)
+        body_end = body_start + next_top.start() if next_top else len(status_text)
+        sections[m.group(1)] = status_text[body_start:body_end]
+    return sections
+
+
+def check_lineage_depth(status_text, warn_at=5):
+    """(g) LINEAGE DEPTH WARNING per account section -- see the module docstring. Informational only;
+    never included in the (a)-(f) tuple run_all() returns, so it never changes main()'s exit code.
+
+    Each account's "## Parent handoff" section is newest-first (a new dated entry is prepended right
+    after the heading, older entries pushed down -- confirmed against the live file, both accounts'
+    sections read newest-to-oldest top to bottom), so the most recent "created ... the UI" reset is the
+    *earliest*-positioned match in the section text, and hand-overs that happened since that reset are
+    the "hand-over to <X>" mentions positioned *before* it (textually earlier, chronologically later)."""
+    warnings = []
+    for heading, section in parent_handoff_sections(status_text).items():
+        resets = [mm.start() for mm in UI_CREATED_RE.finditer(section)]
+        since = min(resets) if resets else len(section)
+        count = len(HANDOVER_TO_RE.findall(section[:since]))
+        if count >= warn_at:
+            warnings.append(
+                f"(g) LINEAGE DEPTH WARNING: {count} hand-over(s) since the last UI-created parent in "
+                f"{heading!r} -- the next lane this parent opens may hit the platform's depth-8 limit"
+            )
+    return warnings
+
+
 def run_all(sessions, triggers, room_lines, assignments_text, assignment_rows, now):
     a = check_orphan_sessions(sessions, room_lines, assignments_text, now)
     b = check_stale_sessions(sessions, room_lines, now)
@@ -344,6 +393,8 @@ def main():
     ap.add_argument("--now", help="override 'now', e.g. '2026-09-26 05:00' (default: current UTC time)")
     ap.add_argument("--no-sessions", action="store_true", help="run only the ROOM.md-based check (d); skip (a),(b),(c),(e)")
     ap.add_argument("--room", action="store_true", help="append the summary line to ROOM.md via tools/room.py")
+    ap.add_argument("--status-file", default=os.path.join(ROOT, "STATUS.md"),
+                     help="STATUS.md path for the (g) lineage-depth early-warning (default: repo STATUS.md)")
     args = ap.parse_args()
 
     if not args.no_sessions and not (args.sessions and args.triggers):
@@ -363,8 +414,15 @@ def main():
         for p in group:
             print(p)
 
+    g = []
+    if os.path.exists(args.status_file):
+        with open(args.status_file, encoding="utf-8") as sf:
+            g = check_lineage_depth(sf.read())
+        for p in g:
+            print(p)
+
     summary = (f"orphans: {len(a) + len(b)} sessions, {len(c)} triggers, {len(d)} claims, "
-               f"{len(e)} unledgered, {len(f)} title-mismatches")
+               f"{len(e)} unledgered, {len(f)} title-mismatches, {len(g)} lineage-depth warnings")
     print(summary)
 
     if args.room:

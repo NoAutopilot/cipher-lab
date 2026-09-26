@@ -8,7 +8,9 @@ indexes (OpenAlex, Semantic Scholar, Persée, HAL, CrossRef); JSTOR queries go a
 block a class on their own. Log every
 family searched and every one unreachable. Write AUDIT.md: verdict table with N-class per item, per-item
 sections, evidence table, "did we first-decipher?", confidence, postmortem, and correct every over-claiming
-sentence in the folder. + common tail.
+sentence in the folder. If you assign N3 or better, append the `SECOND-OPINIONS-QUEUE.tsv` row for it in this
+same session, as part of writing AUDIT.md, rather than leaving it for a later session to notice is missing
+(CLAUDE.md Operating model, rule 10). + common tail.
 If you re-date or re-attribute the item from the plaintext, the edition search widens to every volume of the series
 within two years of every plausible date and under every candidate sender; it never narrows. Read the volume's
 Regesten by date and source note, not by phrase. Lesson of Dupuy 468, 23 Sept 2026.
