@@ -1,0 +1,259 @@
+letter	line	pos	code	old	new	grade	class	source	context_new
+4610	p1_L03	14	123	l M	NULL	M	NULL	names.tsv: NULL in 13 of 13 aligned observations (5810/5811/4503 vs Groen)	r e s ? <NULL> e t m o
+4610	p1_L04	14	138	? U	NULL	C	NULL	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	p c z ? <NULL> NULL q u i
+4610	p1_L04	15	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	c z ? NULL <NULL> q u i l
+4610	p1_L05	16	129	? U	NULL	C	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	b l e NULL <NULL> NULL d f
+4610	p1_L07	14	134	? U	NULL	C	NULL	names.tsv: empty in 12 of 12 aligned observations, 0 contradicting	r i p t <NULL> ? q r i
+4610	p1_L08	5	130	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	n c e s <NULL> NULL ? ? s
+4610	p1_L08	6	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	c e s NULL <NULL> ? ? s o
+4610	p1_L09	2	128	? U	NULL	M	NULL	names.tsv: NULL in 15 of 15 aligned observations (5810/5811/4503 vs Groen)	NULL <NULL> s e m p
+4610	p1_L10	1	131	? U	NULL	C	NULL	names.tsv: empty in 22 of 22 aligned observations, 0 contradicting	<NULL> d u p e
+4610	p1_L12	15	126	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	e u r s <NULL> ?
+4610	p1_L13	12	144	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	c u n e <NULL> ? s c d
+4610	p1_L14	3	135	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	s ? <NULL> NULL c o n
+4610	p1_L14	4	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	s ? NULL <NULL> c o n d
+4610	p1_L16	19	134	? U	NULL	C	NULL	names.tsv: empty in 12 of 12 aligned observations, 0 contradicting	t i o n <NULL> NULL
+4610	p1_L19	1	135	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	<NULL> ? s a n
+4610	p1_L20	17	138	? U	NULL	C	NULL	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	o s e ? <NULL> u n e
+4610	p1_L21	13	129	? U	NULL	C	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	i o n ? <NULL> ? c o n
+4610	p1_L22	18	128	? U	NULL	M	NULL	names.tsv: NULL in 15 of 15 aligned observations (5810/5811/4503 vs Groen)	u r s ? <NULL>
+4610	p1_L23	10	137	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	c e r ? <NULL> q u e
+4610	p1_L24	17	128	? U	NULL	M	NULL	names.tsv: NULL in 15 of 15 aligned observations (5810/5811/4503 vs Groen)	o n s ? <NULL>
+4610	p1_L26	5	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	m e s ? <NULL> f r e r
+4610	p1_L27	2	130	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	? <NULL> n e c e
+4610	p1_L27	14	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	i t e ? <NULL> p e u
+4610	p1_L28	2	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	r <NULL> NULL ? d o
+4610	p1_L28	14	131	? U	NULL	C	NULL	names.tsv: empty in 22 of 22 aligned observations, 0 contradicting	a i n t <NULL> NULL i p r
+4610	p1_L28	15	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	i n t NULL <NULL> i p r i
+4610	p1_L30	4	134	? U	NULL	C	NULL	names.tsv: empty in 12 of 12 aligned observations, 0 contradicting	e z ? <NULL> NULL d a e
+4610	p1_L30	16	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	c t i o <NULL> NULL NULL
+4610	p1_L30	17	128	? U	NULL	M	NULL	names.tsv: NULL in 15 of 15 aligned observations (5810/5811/4503 vs Groen)	t i o NULL <NULL> NULL
+4610	p1_L30	18	130	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	i o NULL NULL <NULL>
+4610	p1_L31	11	123	l M	NULL	M	NULL	names.tsv: NULL in 13 of 13 aligned observations (5810/5811/4503 vs Groen)	e n t ? <NULL> f r e g
+4610	p1_L32	2	128	? U	NULL	M	NULL	names.tsv: NULL in 15 of 15 aligned observations (5810/5811/4503 vs Groen)	NULL <NULL> r e t o
+4610	p1_L32	11	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	t o u r <NULL>
+4610	p1_L33	10	144	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	o r t e <NULL> g r a n
+4610	p1_L33	17	134	? U	NULL	C	NULL	names.tsv: empty in 12 of 12 aligned observations, 0 contradicting	a n d e <NULL> a
+4610	p1_L34	13	123	l M	NULL	M	NULL	names.tsv: NULL in 13 of 13 aligned observations (5810/5811/4503 vs Groen)	i o n ? <NULL> n a m o
+4610	p1_L35	13	131	? U	NULL	M	NULL	names.tsv: empty in 22 of 22 aligned observations, 0 contradicting	t r r f <NULL> NULL o u u
+4610	p1_L35	14	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	r r f NULL <NULL> o u u e
+4610	p1_L36	2	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	e <NULL> NULL ? a u
+4610	p1_L36	3	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	e NULL <NULL> ? a u ?
+4610	p2_L01	18	135	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	n e u e <NULL> NULL
+4610	p2_L01	19	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	e u e NULL <NULL>
+4610	p2_L02	8	129	? U	NULL	C	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	e n s ? <NULL> e t e s
+4610	p2_L03	1	130	? U	NULL	M	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	<NULL> ? u e n
+4610	p2_L04	8	136	uingt M	NULL	M	NULL	names.tsv: NULL in 8 of 8 aligned observations (5810/5811/4503 vs Groen)	d e y ? <NULL> n e ? m
+4610	p2_L05	13	128	? U	NULL	M	NULL	names.tsv: NULL in 15 of 15 aligned observations (5810/5811/4503 vs Groen)	o r e s <NULL> NULL m u r
+4610	p2_L05	14	135	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	r e s NULL <NULL> m u r m
+4610	p2_L07	4	129	? U	NULL	C	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	r e s <NULL> ? e n ?
+4610	p2_L07	18	134	? U	NULL	C	NULL	names.tsv: empty in 12 of 12 aligned observations, 0 contradicting	c h e r <NULL> NULL m
+4610	p2_L09	4	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	o n ? <NULL> t r o i
+4610	p2_L09	10	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	r o i s <NULL> ? c e n
+4610	p2_L09	16	138	? U	NULL	C	NULL	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	c e n s <NULL> ? c h e
+4610	p2_L10	6	137	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	u x ? NULL <NULL> NULL h a z
+4610	p2_L10	11	130	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	x ? NULL NULL <NULL> h a z a
+4610	p2_L10	20	128	? U	NULL	M	NULL	names.tsv: NULL in 15 of 15 aligned observations (5810/5811/4503 vs Groen)	r d e r <NULL>
+4610	p2_L11	1	135	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	<NULL> l e NULL u
+4610	p2_L11	4	138	? U	NULL	M	NULL	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	NULL l e <NULL> u o i a
+4610	p2_L11	11	143	? U	NULL	C	NULL	names.tsv: empty in 7 of 7 aligned observations, 0 contradicting	i a g e <NULL> u e r s
+4610	p2_L11	16	130	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	u e r s <NULL> NULL ? ?
+4610	p2_L12	13	134	? U	NULL	C	NULL	names.tsv: empty in 12 of 12 aligned observations, 0 contradicting	u o i r <NULL> r e e e
+4610	p2_L13	2	135	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	e <NULL> ? c e s
+4610	p2_L13	13	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	a l i n <NULL> NULL
+4610	p2_L13	14	143	? U	NULL	M	NULL	names.tsv: empty in 7 of 7 aligned observations, 0 contradicting	l i n NULL <NULL>
+4610	p2_L14	7	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	a t z ? <NULL> d o u z
+4610	p2_L16	3	135	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	n t <NULL> f o u r
+4610	p2_L16	11	136	uingt M	NULL	M	NULL	names.tsv: NULL in 8 of 8 aligned observations (5810/5811/4503 vs Groen)	r n i r <NULL> NULL NULL o c
+4610	p2_L16	13	127	? U	NULL	M	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	i r NULL NULL <NULL> o c e n
+4610	p2_L17	15	135	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	n e r NULL <NULL> NULL u n
+4610	p2_L17	17	138	? U	NULL	C	NULL	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	e r NULL NULL <NULL> u n
+4610	p2_L18	6	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	a l e r <NULL> NULL ? t e
+4610	p2_L18	7	135	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	l e r NULL <NULL> ? t e s
+4610	p2_L19	13	129	? U	NULL	C	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	z o u s <NULL> NULL p e u
+4610	p2_L19	14	137	? U	NULL	M	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	o u s NULL <NULL> p e u
+4610	p2_L20	18	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	m p s ? <NULL>
+4610	p2_L21	20	130	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	c o i s <NULL>
+4610	p2_L23	7	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	i e u ? <NULL> n e s u
+4610	p2_L24	4	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	i n e <NULL> ? l i e
+4610	p2_L24	13	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	i e u ? <NULL> NULL
+4610	p2_L24	14	136	uingt M	NULL	M	NULL	names.tsv: NULL in 8 of 8 aligned observations (5810/5811/4503 vs Groen)	e u ? NULL <NULL>
+4610	p2_L25	19	136	uingt M	NULL	M	NULL	names.tsv: NULL in 8 of 8 aligned observations (5810/5811/4503 vs Groen)	o u s ? <NULL> l
+4610	p2_L27	7	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	r d e r <NULL> l e s p
+4610	p2_L28	6	137	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	g e s ? <NULL> NULL p e u
+4610	p2_L29	5	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	g e n s <NULL> ? ? r e
+4610	p2_L30	15	126	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	o u r g <NULL> ?
+4610	p2_L34	1	123	l M	NULL	M	NULL	names.tsv: NULL in 13 of 13 aligned observations (5810/5811/4503 vs Groen)	<NULL> NULL ? NULL NULL
+4610	p2_L34	2	128	? U	NULL	M	NULL	names.tsv: NULL in 15 of 15 aligned observations (5810/5811/4503 vs Groen)	NULL <NULL> ? NULL NULL
+4610	p2_L34	5	137	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	NULL NULL ? NULL <NULL>
+4610	p3_L01	1	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	<NULL> f o u r
+4610	p3_L01	17	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	o m m e <NULL> NULL ?
+4610	p3_L01	18	130	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	m m e NULL <NULL> ?
+4610	p3_L03	20	153	? U	pfaltzgraf	H	word	5550 leaf 2 contemporary interlinear gloss 'Palsgrave' over 153 (x2, runs p2-5, p2-11)	? ? ? ? <pfaltzgraf> ?
+4610	p3_L04	3	131	? U	NULL	C	NULL	names.tsv: empty in 22 of 22 aligned observations, 0 contradicting	? <NULL> s o l l
+4610	p3_L04	15	133	? U	NULL	C	NULL	names.tsv: empty in 9 of 9 aligned observations, 0 contradicting	i t e r <NULL> NULL l a r
+4610	p3_L04	16	143	? U	NULL	C	NULL	names.tsv: empty in 7 of 7 aligned observations, 0 contradicting	t e r NULL <NULL> l a r i
+4610	p3_L05	14	138	? U	NULL	C	NULL	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	e d u c <NULL> NULL d a l
+4610	p3_L05	15	144	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	d u c NULL <NULL> d a l e
+4610	p3_L06	1	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	<NULL> NULL NULL ? e
+4610	p3_L06	2	129	? U	NULL	C	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	NULL <NULL> NULL ? e l
+4610	p3_L06	3	138	? U	NULL	C	NULL	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	NULL NULL <NULL> ? e l l
+4610	p3_L06	11	123	l M	NULL	M	NULL	names.tsv: NULL in 13 of 13 aligned observations (5810/5811/4503 vs Groen)	e l l e <NULL> o bommel s e
+4610	p3_L07	4	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	i s t <NULL> ? e n s
+4610	p3_L07	18	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	u i c e <NULL> ?
+4610	p3_L08	3	143	? U	NULL	C	NULL	names.tsv: empty in 7 of 7 aligned observations, 0 contradicting	? <NULL> NULL s o b
+4610	p3_L08	4	134	? U	NULL	C	NULL	names.tsv: empty in 12 of 12 aligned observations, 0 contradicting	? NULL <NULL> s o b l
+4610	p3_L09	11	153	? U	pfaltzgraf	H	word	5550 leaf 2 contemporary interlinear gloss 'Palsgrave' over 153 (x2, runs p2-5, p2-11)	r s ? ? <pfaltzgraf> ? c o n
+4610	p3_L10	4	129	? U	NULL	C	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	u x ? <NULL> a s s a
+4610	p3_L10	11	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	a s s a <NULL> l l i r
+4610	p3_L10	16	131	? U	NULL	C	NULL	names.tsv: empty in 22 of 22 aligned observations, 0 contradicting	l l i r <NULL> ?
+4610	p3_L11	10	124	? U	NULL	M	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	? l a g <NULL> e l i g
+4610	p3_L12	1	137	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	<NULL> f r e g
+4610	p3_L12	11	135	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	o u s e <NULL> m ? q u
+4610	p3_L13	2	135	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	? <NULL> ? d e s
+4610	p3_L13	16	123	l M	NULL	M	NULL	names.tsv: NULL in 13 of 13 aligned observations (5810/5811/4503 vs Groen)	i e r ? <NULL> NULL NULL d
+4610	p3_L13	17	134	? U	NULL	C	NULL	names.tsv: empty in 12 of 12 aligned observations, 0 contradicting	e r ? NULL <NULL> NULL d
+4610	p3_L13	18	138	? U	NULL	C	NULL	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	r ? NULL NULL <NULL> d
+4610	p3_L14	10	131	? U	NULL	M	NULL	names.tsv: empty in 22 of 22 aligned observations, 0 contradicting	e t r e <NULL> NULL e s c
+4610	p3_L14	11	128	? U	NULL	M	NULL	names.tsv: NULL in 15 of 15 aligned observations (5810/5811/4503 vs Groen)	t r e NULL <NULL> e s c r
+4610	p3_L15	6	200	? U	herzogvonalba	C	word	Groen IV p.224 prints 'vom Herzog von Alba absondern' at 5797 p6 'von 200.122.132.142 abso-'	e e ? ? <herzogvonalba> ? NULL franckreich ?
+4610	p3_L15	8	129	? U	NULL	C	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	? ? herzogvonalba ? <NULL> franckreich ?
+4610	p3_L15	10	202	? U	franckreich	H	word	5550 contemporary interlinear gloss over 202 (x4, runs p1-1, p2-3, p2-9, p2-15)	? herzogvonalba ? NULL <franckreich> ?
+4610	p3_L17	1	134	? U	NULL	C	NULL	names.tsv: empty in 12 of 12 aligned observations, 0 contradicting	<NULL> n e g o
+4610	p3_L17	13	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	u i o o <NULL> NULL NULL y ?
+4610	p3_L17	15	133	? U	NULL	C	NULL	names.tsv: empty in 9 of 9 aligned observations, 0 contradicting	o o NULL NULL <NULL> y ? a s
+4610	p3_L18	5	126	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	o i r NULL <NULL> NULL e o n
+4610	p3_L18	6	137	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	i r NULL NULL <NULL> e o n d
+4610	p3_L18	17	135	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	m e n t <NULL> y e
+4610	p3_L20	5	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	h i e z <NULL> ? ? ? i
+4610	p3_L21	8	133	? U	NULL	C	NULL	names.tsv: empty in 9 of 9 aligned observations, 0 contradicting	o u r e <NULL> NULL d e ?
+4610	p3_L21	9	144	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	u r e NULL <NULL> d e ? ?
+4610	p3_L22	6	135	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	i t u r <NULL> f r e r
+4610	p3_L24	15	130	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	m a y ? <NULL> ?
+4610	p3_L26	4	144	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	b o n <NULL> ?
+4610	p3_L29	3	144	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	e r <NULL> ? z s e
+4610	p3_L29	11	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	? z s e <NULL> r e t i
+4610	p3_L30	7	133	? U	NULL	M	NULL	names.tsv: empty in 9 of 9 aligned observations, 0 contradicting	c o u s <NULL> e r e l
+4610	p3_L31	23	126	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	r c e r <NULL>
+4611	p1_L01	13	130	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	a d i e <NULL> NULL b s c
+4611	p1_L01	14	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	d i e NULL <NULL> b s c n
+4611	p1_L01	24	126	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	n d e ? <NULL>
+4611	p1_L02	7	123	l M	NULL	M	NULL	names.tsv: NULL in 13 of 13 aligned observations (5810/5811/4503 vs Groen)	e r e s <NULL> ? NULL ? l
+4611	p1_L02	9	134	? U	NULL	C	NULL	names.tsv: empty in 12 of 12 aligned observations, 0 contradicting	e s NULL ? <NULL> ? l u n
+4611	p1_L03	8	129	? U	NULL	C	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	l l e ? <NULL> u e r s
+4611	p1_L03	25	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	u r g NULL <NULL>
+4611	p1_L04	21	130	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	? ? z a <NULL>
+4611	p1_L05	6	131	? U	NULL	C	NULL	names.tsv: empty in 22 of 22 aligned observations, 0 contradicting	l e u r <NULL> r e t o
+4611	p1_L05	13	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	t o u r <NULL> NULL q u i
+4611	p1_L05	14	135	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	o u r NULL <NULL> q u i l
+4611	p1_L06	7	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	i c t ? <NULL> d e m e
+4611	p1_L07	1	133	? U	NULL	C	NULL	names.tsv: empty in 9 of 9 aligned observations, 0 contradicting	<NULL> NULL r i e
+4611	p1_L07	2	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	NULL <NULL> r i e o
+4611	p1_L08	10	144	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	r e s ? <NULL> e s t r
+4611	p1_L08	18	134	? U	NULL	C	NULL	names.tsv: empty in 12 of 12 aligned observations, 0 contradicting	s t r e <NULL> s u r r
+4611	p1_L09	7	137	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	s e s ? <NULL> h e l i
+4611	p1_L10	8	129	? U	NULL	C	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	t o u s <NULL> NULL a d u
+4611	p1_L10	9	137	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	o u s NULL <NULL> a d u e
+4611	p1_L11	20	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	p l u s <NULL> s
+4611	p1_L12	9	144	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	m y n t <NULL> n o u s
+4611	p1_L12	23	135	? U	NULL	M	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	o i r ? <NULL> NULL
+4611	p1_L12	24	144	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	i r ? NULL <NULL>
+4611	p1_L13	8	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	t e s ? <NULL> c h o s
+4611	p1_L13	16	138	? U	NULL	C	NULL	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	s e s ? <NULL> z
+4611	p1_L14	7	129	? U	NULL	C	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	u i t ? <NULL> q u e NULL
+4611	p1_L14	11	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	NULL q u e <NULL> herzogvonalba s e m
+4611	p1_L14	12	200	? U	herzogvonalba	C	word	Groen IV p.224 prints 'vom Herzog von Alba absondern' at 5797 p6 'von 200.122.132.142 abso-'	q u e NULL <herzogvonalba> s e m e
+4611	p1_L15	8	130	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	r c e s <NULL> q u i l
+4611	p1_L15	23	137	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	u s ? NULL <NULL>
+4611	p1_L16	9	143	? U	NULL	C	NULL	names.tsv: empty in 7 of 7 aligned observations, 0 contradicting	n d r e <NULL> c e l l
+4611	p1_L16	17	129	? U	NULL	C	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	l l e s <NULL> q u i NULL
+4611	p1_L16	21	130	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	NULL q u i <NULL> ? l u
+4611	p1_L17	2	136	uingt M	NULL	M	NULL	names.tsv: NULL in 8 of 8 aligned observations (5810/5811/4503 vs Groen)	y <NULL> s o n t
+4611	p1_L17	14	126	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	u e s ? <NULL> ? ? c r
+4611	p1_L18	5	144	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	d r e ? <NULL> c e u x
+4611	p1_L18	11	129	? U	NULL	C	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	e u x ? <NULL> n o u s
+4611	p1_L19	19	135	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	g e r ? <NULL> f a i r
+4611	p1_L21	16	128	? U	NULL	M	NULL	names.tsv: NULL in 15 of 15 aligned observations (5810/5811/4503 vs Groen)	r c e s <NULL> s o n t
+4611	p1_L21	22	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	o n t ? <NULL> t
+4611	p1_L22	12	144	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	r o p t <NULL> ? NULL f o
+4611	p1_L22	14	138	? U	NULL	C	NULL	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	p t NULL ? <NULL> f o i b
+4611	p1_L22	23	129	? U	NULL	C	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	l e s ? <NULL>
+4611	p1_L23	20	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	s i u e <NULL> ?
+4611	p1_L24	7	223	? U	harlem	C	word	aligned to Groen IV CDLXVIII (5810) print, 3 of 3 observations agree	? t s t <harlem> i ? ? c
+4611	p1_L25	8	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	u e r s <NULL> a r u i
+4611	p1_L26	11	133	? U	NULL	C	NULL	names.tsv: empty in 9 of 9 aligned observations, 0 contradicting	e s t NULL <NULL> g e n s
+4611	p1_L27	16	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	t e n t <NULL> NULL
+4611	p1_L27	17	135	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	e n t NULL <NULL>
+4611	p1_L28	7	133	? U	NULL	C	NULL	names.tsv: empty in 9 of 9 aligned observations, 0 contradicting	t r e s <NULL> NULL f s e
+4611	p1_L29	11	135	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	m e n t <NULL> ? NULL p y
+4611	p1_L29	13	129	? U	NULL	C	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	n t NULL ? <NULL> p y r c
+4611	p1_L30	7	127	? U	NULL	M	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	e u r NULL <NULL> p y r ?
+4611	p1_L30	20	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	s t r e <NULL> i n
+4611	p1_L31	9	129	? U	NULL	C	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	r i e ? <NULL> ? d i l
+4611	p1_L32	15	134	? U	NULL	C	NULL	names.tsv: empty in 12 of 12 aligned observations, 0 contradicting	o n s ? <NULL> p e u a
+4611	p1_L33	6	128	? U	NULL	M	NULL	names.tsv: NULL in 15 of 15 aligned observations (5810/5811/4503 vs Groen)	c e u ? <NULL> r e m e
+4611	p1_L33	17	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	i e r ? <NULL> c o s t
+4611	p1_L34	5	135	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	e i c y <NULL> NULL o n n
+4611	p1_L34	6	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	i c y NULL <NULL> o n n o
+4611	p1_L35	1	133	? U	NULL	C	NULL	names.tsv: empty in 9 of 9 aligned observations, 0 contradicting	<NULL> u a i c
+4611	p1_L35	20	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	r e s ? <NULL> ?
+4611	p1_L38	8	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	a n d e <NULL> NULL ? q u
+4611	p1_L38	9	135	? U	NULL	M	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	n d e NULL <NULL> ? q u i
+4611	p1_L38	19	134	? U	NULL	C	NULL	names.tsv: empty in 12 of 12 aligned observations, 0 contradicting	q u i l <NULL> t
+4611	p1_L39	18	123	l M	NULL	M	NULL	names.tsv: NULL in 13 of 13 aligned observations (5810/5811/4503 vs Groen)	n s e ? <NULL> ?
+4611	p2_L01	12	129	? U	NULL	C	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	o i t ? <NULL> ? b e a
+4611	p2_L01	24	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	o u p x <NULL>
+4611	p2_L02	10	200	? U	herzogvonalba	C	word	Groen IV p.224 prints 'vom Herzog von Alba absondern' at 5797 p6 'von 200.122.132.142 abso-'	r c e s <herzogvonalba> l e c a
+4611	p2_L02	24	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	i n e ? <NULL>
+4611	p2_L03	9	135	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	l f f ? <NULL> u e n m
+4611	p2_L03	20	138	? U	NULL	C	NULL	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	n e n ? <NULL> u n a
+4611	p2_L04	6	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	l t r e <NULL> ? NULL r o
+4611	p2_L04	8	138	? U	NULL	C	NULL	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	r e NULL ? <NULL> r o o c
+4611	p2_L05	3	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	e ? <NULL> d e m e
+4611	p2_L05	11	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	e n e s <NULL> u i n g
+4611	p2_L06	6	129	? U	NULL	C	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	n i e s <NULL> ? ? a ?
+4611	p2_L06	16	138	? U	NULL	C	NULL	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	e u r s <NULL> d e s p
+4611	p2_L07	3	130	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	n s <NULL> u e r s
+4611	p2_L08	18	129	? U	NULL	C	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	o n t ? <NULL> ? g u
+4611	p2_L13	12	127	? U	NULL	M	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	n c e ? <NULL> ? q u c
+4611	p2_L14	8	127	? U	NULL	M	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	l q u e <NULL> f o n d
+4611	p2_L17	14	135	? U	NULL	M	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	a i n ? <NULL> a u ? herzogvonalba
+4611	p2_L17	18	200	? U	herzogvonalba	C	word	Groen IV p.224 prints 'vom Herzog von Alba absondern' at 5797 p6 'von 200.122.132.142 abso-'	NULL a u ? <herzogvonalba>
+4611	p2_L18	18	143	? U	NULL	C	NULL	names.tsv: empty in 7 of 7 aligned observations, 0 contradicting	n d e NULL <NULL>
+4611	p2_L20	4	200	? U	herzogvonalba	M	word	Groen IV p.224 prints 'vom Herzog von Alba absondern' at 5797 p6 'von 200.122.132.142 abso-'	i n ? <herzogvonalba> a ? ? NULL
+4611	p2_L20	8	137	? U	NULL	M	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	herzogvonalba a ? ? <NULL> z ? herzogvonalba e
+4611	p2_L20	14	200	? U	herzogvonalba	C	word	Groen IV p.224 prints 'vom Herzog von Alba absondern' at 5797 p6 'von 200.122.132.142 abso-'	? NULL z ? <herzogvonalba> e l
+4611	p2_L21	15	128	? U	NULL	M	NULL	names.tsv: NULL in 15 of 15 aligned observations (5810/5811/4503 vs Groen)	m e s ? <NULL> c h o i
+4611	p2_L25	11	124	? U	NULL	M	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	s c h e <NULL> a i l l
+4611	p2_L26	13	124	? U	NULL	M	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	y u e r <NULL> ? z p i
+4611	p2_L30	3	130	? U	NULL	M	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	a u <NULL> f a i c
+4611	p2_L30	24	134	? U	NULL	M	NULL	names.tsv: empty in 12 of 12 aligned observations, 0 contradicting	m e n t <NULL>
+4611	p2_L31	2	123	l M	NULL	M	NULL	names.tsv: NULL in 13 of 13 aligned observations (5810/5811/4503 vs Groen)	? <NULL> a t d f
+4611	p2_L31	11	129	? U	NULL	M	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	i o n s <NULL> NULL
+4611	p2_L31	12	137	? U	NULL	M	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	o n s NULL <NULL>
+4611	p2_L32	2	123	l M	NULL	M	NULL	names.tsv: NULL in 13 of 13 aligned observations (5810/5811/4503 vs Groen)	? <NULL> e t d f
+4611	p3_L01	11	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	u i r e <NULL> NULL l e s
+4611	p3_L01	12	138	? U	NULL	C	NULL	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	i r e NULL <NULL> l e s o
+4616	p1_L06	20	131	? U	NULL	C	NULL	names.tsv: empty in 22 of 22 aligned observations, 0 contradicting	o o u u <NULL> ?
+4616	p1_L12	7	123	l M	NULL	M	NULL	names.tsv: NULL in 13 of 13 aligned observations (5810/5811/4503 vs Groen)	o m m e <NULL> u c a n
+5797	p5_spot5	2	131	? U	NULL	C	NULL	names.tsv: empty in 22 of 22 aligned observations, 0 contradicting	<NULL> NULL ?
+5797	p5_spot5	3	123	l M	NULL	M	NULL	names.tsv: NULL in 13 of 13 aligned observations (5810/5811/4503 vs Groen)	NULL <NULL> ?
+5797	p5_spot3	2	154	? U	herzogvonsachsen	C	word	Groen IV pp.223-224 prints 'Bey dem Herzog von Sachsen und' at 5797 p5 'Bey 154.124.144.134 und'	<herzogvonsachsen> NULL NULL NULL landgraf
+5797	p5_spot3	3	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	herzogvonsachsen <NULL> NULL NULL landgraf NULL
+5797	p5_spot3	4	144	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	herzogvonsachsen NULL <NULL> NULL landgraf NULL NULL
+5797	p5_spot3	5	134	? U	NULL	C	NULL	names.tsv: empty in 12 of 12 aligned observations, 0 contradicting	herzogvonsachsen NULL NULL <NULL> landgraf NULL NULL ?
+5797	p5_spot3	7	161	? U	landgraf	H	word	5550 leaf 2 contemporary interlinear gloss 'Lantgrave' over 161 (run p2-11, bey 153.161 und)	herzogvonsachsen NULL NULL NULL <landgraf> NULL NULL ?
+5797	p5_spot3	8	126	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	NULL NULL NULL landgraf <NULL> NULL ?
+5797	p5_spot3	9	136	uingt M	NULL	M	NULL	names.tsv: NULL in 8 of 8 aligned observations (5810/5811/4503 vs Groen)	NULL NULL landgraf NULL <NULL> ?
+5797	p6_control_abso	4	200	? U	herzogvonalba	M	word	Groen IV p.224 prints 'vom Herzog von Alba absondern' at 5797 p6 'von 200.122.132.142 abso-'	<herzogvonalba> NULL NULL ? a
+5797	p7_spot2	1	153	? U	pfaltzgraf	H	word	5550 leaf 2 contemporary interlinear gloss 'Palsgrave' over 153 (x2, runs p2-5, p2-11)	<pfaltzgraf> ? NULL
+5797	p7_spot2	3	137	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	pfaltzgraf ? <NULL>
+5797	p7_spot6	2	128	? U	NULL	M	NULL	names.tsv: NULL in 15 of 15 aligned observations (5810/5811/4503 vs Groen)	? <NULL> NULL ? m i
+5797	p7_spot6	3	133	? U	NULL	C	NULL	names.tsv: empty in 9 of 9 aligned observations, 0 contradicting	? NULL <NULL> ? m i t
+5797	p8_spot7	2	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	? <NULL> NULL NULL NULL
+5797	p8_spot7	3	135	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	? NULL <NULL> NULL NULL
+5797	p8_spot7	4	144	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	? NULL NULL <NULL> NULL
+5797	p8_spot7	5	129	? U	NULL	C	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	? NULL NULL NULL <NULL>
+5797	p3_spot1_open	5	130	? U	NULL	M	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	NULL <NULL> ? s e c
+5797	p3_spot1_open	14	124	? U	NULL	M	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	o u r s <NULL> ? NULL e n
+5797	p3_spot1_open	17	138	? U	NULL	M	NULL	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	r s NULL ? <NULL> e n t r

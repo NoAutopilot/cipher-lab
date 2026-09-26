@@ -1,0 +1,10 @@
+ciphertext_4503.tsv: tokens 237, C under key.tsv 0, regressions 0, changed 9, U 11 -> 2
+04503_p1_L05	4	127	? U -> NULL M
+04503_p1_L07	16	124	? U -> NULL M
+04503_p1_L08	11	128	? U -> NULL M
+04503_p1_L10	8	143	? U -> NULL M
+04503_p1_L11	1	128	? U -> NULL M
+04503_p1_L14	16	129	? U -> NULL M
+04503_p1_L15	16	127	? U -> NULL M
+04503_p1_L19	2	127	? U -> NULL M
+04503_p1_L21	8	131	? U -> NULL M

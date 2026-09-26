@@ -980,3 +980,102 @@ Requests: dbnl.org 5, resources.huygens.knaw.nl 2 (WVO PDFs 5550, 5557). No suba
 `axnames/{align_names.py,build_names.py,attest_manual.tsv,control_5811.py,control_5811.tsv,control_5811.out,
 falsenull_diag.py,falsenull_diag.out,coverage.py,coverage.tsv,occ_*.tsv,summ.py,win.py}`,
 `groen/{groen_IV_CDLXVIII,groen_IV_CDLXXXIII,groen_IV_CDLXXXIV}.txt` and their HTML. Novelty not classified.
+
+## AX-NAMES2: key_full and the 5797 spots (26 Sept 2026, LANE AX)
+
+Worker AX-NAMES2 (Opus), brief `.claude/briefs/runs/2026-09-26-lane-ax-names2.md`, started 01:43 UTC (clock read).
+**(0) Intake gate:** `python3 tools/intake_gate_check.py lodewijk-van-nassau-1573-74` -> `lodewijk-van-nassau-1573-74:
+partial (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0.
+
+**Orchestrator's decision (01:42 UTC 26 Sept 2026, written before any step-4 run), verbatim:**
+"AX-NAMES' held-out gate could not fail for a null-heavy map (rule 3 ceiling warning), so it is replaced, not relaxed, by three gates set per class. (a) Word/name codes whose value is read from a contemporary interlinear gloss (5550, 5557) or printed by Groen at that very cluster are key-source readings (rule 4: H for gloss, C for print-at-cluster), not aligner output; they merge without an aligner control: 153, 161, 171, 202, 336, 339, 350 (gloss), 154, 200 (print at the 5797 cluster). Aligner-only word codes merge only at C with >=2 agreeing observations (223 Harlem); every single-observation word code stays M and out of key_full. (b) NULL codes merge if they have >=4 empty observations and 0 contradicting (false-null rate 0.18^4 = 0.1%, AX-NAMES' diagnostic); 139, 140, 142 (2 obs) stay out. (c) key.tsv conflicts 123, 128, 136 (key.tsv M values vs 13/15/8 NULL observations): key_full takes NULL with a note; key.tsv itself stays unchanged. Before merging, re-run the known-answer check on 4613/4615 (occ_sib) with key_full: every key.tsv C letter there must still decode as before (0 regressions) -- if any regresses, stop and flag."
+
+**(1) key_full.tsv** (`python3 axnames/build_key_full.py [--check]`; it re-checks every licence against names.tsv and
+fails if one no longer holds). key.tsv's 139 rows + 22 new + 3 overridden = 161 rows:
+- H 6 (contemporary gloss): 153 pfaltzgraf, 161 landgraf, 171 prinzzuoranien, 202 franckreich, 336 fussvolck, 350 gelt.
+  339 is gloss-attested too ('Schutzen', 5557) but key.tsv already has it (harquebouziers, C, the same troop word): the
+  key.tsv row is kept, gloss recorded in its note, not counted as new.
+- C 3: 154 herzogvonsachsen, 200 herzogvonalba (Groen prints the name at that 5797 cluster); 223 harlem (aligner, 3 of
+  3 agree). Values are senses: in the French letters 200 is "le duc d'Albe", not a German spelling.
+- NULL 13 (class b, >= 4 empty, 0 contradicting in names.tsv): 124, 126, 127, 129, 130, 131, 133, 134, 135, 137, 138,
+  143, 144. 149 (3 observations) also stays out, as do 139/140/142.
+- Class (c) 123, 128, 136 -> NULL, **graded M, not C** (my choice, conservative, logged here): step 2 shows that on
+  the known-answer pair itself 123 stands where the printed decipherment has 'l' (4613 L18 qu'ilz; L29), 136 where it has
+  'vingt' (4613 L04) and 128 at the unsettled tail of 'Trittheim' (4613 L28); the sibling aligner (occ_sib) absorbs
+  'l', 'uing', 'im' there. NULL is right for 5810/5811/4503 (13/15/8 observations) and drops plaintext letters in
+  4613/4615, so these three codes are either context-dependent or double-duty, and M says so.
+
+**(2) Known-answer regression check** (`python3 axnames/compare_full.py decode.json ciphertext_sib.tsv --list`,
+`axnames/regress_sib.out`): 1107 tokens, 1086 C under key.tsv, **regressions 0**, 5 tokens changed (the three
+class-(c) codes above: 136 uingt M -> NULL M, 123 l M -> NULL M x3, 128 ? U -> NULL M). The gate as written passes;
+the class-(c) caveat above is what it surfaced.
+
+**(3) Decodes**: `decode_{5797,4610,4611,4616}_full.json` -> `reading_<n>_full.txt` / `_full_tokens.tsv`, each
+`tools/decode_key.py --check` "reading up to date". Existing readings untouched.
+
+| letter | U key.tsv -> key_full | changed tokens | of which word/name | grades under key_full |
+|---|---|---|---|---|
+| 4610 | 288 -> 162 | 136 | 4 (153 x2 H, 200 C, 202 H) | C 1203, H 3, I 58, M 119, U 162 |
+| 4611 | 227 -> 133 | 99 | 6 (200 x5, 223) | C 913, I 71, M 276, U 133 |
+| 4616 | 26 -> 25 | 2 | 0 | C 208, I 1, M 27, U 25 |
+| 5797 (spots file) | 31 -> 12 | 21 | 4 | H 2, C 15, M 41, I 3, U 12 |
+
+**(4) 5797 spots against Groen's frame** (Groen IV pp.223-225; token grades from reading_5797_full_tokens.tsv, the M on
+cipher letters is decode_key's downgrade for sign confidence; nulls shown as "."):
+
+| spot | decoded under key_full | Groen's printed frame | gap filled? |
+|---|---|---|---|
+| p5_spot5 | ist [131 . C][123 . M][173 U] gestern | "ist gestern zue ghen gezogen" | no (173 'graf' M stays out) |
+| p5_spot3 | Bey [154 Herzog von Sachsen, C] [124 . 144 . 134 .] und [161 Landgraf, H] [126 . C][136 . M][146 U] ist | "Bey dem Herzog von Sachsen und ist [w]illens" | **yes: 161 Landgraf, H** (154 is Groen's own word, a control) |
+| p6_spot4 | [172 U] zeuget diesen morgen [100 h, I][155 U] der hofnung | "zeuget diesen morgen Kölln der hofnung" | no (172 no row; 155 'Kölln' M stays out) |
+| p7_spot2 | [153 Pfaltzgraf, H][146 U][137 . C] helt sich wol | "helt sich wol und thut in warheit viel" | **yes: 153 Pfaltzgraf, H** |
+| p7_spot6 | [182 U][128 . M][133 . C][142 U] ist willig und urbietig ... Dass er mit | "ist willig und urbietig ... dasz er mit bruder möge" | no (182 no row) |
+| p8_spot7 | [156 U][127 . 135 . 144 . 129 . C] begert meiner | "begert meiner, kan aber nicht wiszen warumb" | no (156 no row) |
+| p6_control_abso | nicht allein von [200 Herzog von Alba, M][122 . 132 .][142 U] abso- | "vom Herzog von Alba absondern" | Groen's own word (control) |
+
+**Spots with a value: 2 of 6** (p5_spot3 "und [161 Landgraf, H] ist willens"; p7_spot2 "[153 Pfaltzgraf, H] helt sich
+wol"), both from the 5550 period gloss, neither from our aligner. One pattern for AX-GLOSS: 146 follows both 161 and
+153 here (and 'secours' on p3), so it may be a title/suffix or a null that the 2-observation rule kept out.
+Revisions for the orchestrator: `revisions_for_audit.tsv` (`python3 axnames/revisions.py [--check]`), 258 rows
+(letter, line, pos, code, old, new, grade, class, source, context): 4610 136, 4611 99, 4616 2, 5797 21; word/name
+rows 14 (the table above), the rest NULL placements that remove a '?' placeholder and change no letter. I did not edit
+AUDIT.md or SECOND-OPINIONS-QUEUE.tsv.
+
+**(5) Judge**, `python3 tools/judge_plaintext.py specs/lodewijk-5797.json --file ciphers/lodewijk-van-nassau-1573-74/reading_5797_full.txt`:
+```
+FAIL language: score=-1.435, null_p99=-1.617, real_p05=-0.456, real_median=-0.428, mode=both, N=308
+FAIL words: cover=0.344, min=0.5, real_text_median_cover=0.756
+FAIL - lodewijk-5797 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+(key.tsv reading: -1.504, N=197.) Not a test of the spots: each spot's own decoded content is 0-16 letters, far
+below judge length, and the file is disconnected clusters with Groen's clear words stitched in and name values
+concatenated (`herzogvonsachsen`), which the word-cover test cannot parse. Per-fold caveat: the de16 corpus is one
+composed file (`tools/data/de16/composed_enhg.txt`), so no leave-one-file-out spread exists; its FAIL/PASS is of unknown
+reliability in the sense of rule 3 (EN-FOLDS/es17c lessons). The spots rest on the gloss (H), not on the judge.
+
+**(6) Extension: 5810/5811/4503 under key_full** (`axnames/sanity_{5810,5811,4503}.out`; in-sample for most rows,
+since names.tsv was built on these letters): U 222 -> 30 (5810), 53 -> 23 (5811), 11 -> 2 (4503); regressions 0.
+Word changes: 223 harlem x4 in 5810, all four at Groen's "Harlem" (two copies each of "ville de Harlem" and "dudict
+Harlem"); at the two "ville de Harlem" places the aligner had put 'harlem' on the neighbouring null 127 and nothing on
+223, so names.tsv's 3 of 3 undercounts it: 4 of 4 agree. **Words disagreeing with Groen: 0.** Caveat on class (b):
+names.tsv's "0 contradicting" was counted after build_names.py's cluster filter; before the filter, the 20 NULL codes'
+raw aligner occurrences are empty 319, absorb 1-5 letters 21, 6+ letters 20 (`axnames/null_raw.py` ->
+`axnames/null_raw.tsv`; 6+ is typically a transcription gap swallowed by a free code, e.g. 5811 136/130 absorbing
+'cauallerie' at the two copies of one sentence). The 1-5-letter cases (e.g. 124 'a' and 133 'f' at both copies of one
+5810 sentence) are 5.8% of occurrences, below the 18% hidden-letter false-null rate, so consistent with nulls plus
+alignment slack, but they are contradictions the gate text did not count.
+
+**(7) Extension: still unread**, `axnames/still_unread.py` -> `axnames/still_unread.tsv` (78 distinct U signs, 387 U
+tokens across sib/4610/4611/4616/4503/5810/5811/5797 under key_full). Top: 150 x75, 125 x34, 140 x26, 142 x25, 149
+x25, 145 x24, 148 x24, 139 x19, 147 x16, 146 x11 -- all in 139-150, mostly between words in 4610/4611, which looks like
+the same null band extending to 150 (not tested: 4610/4611 have no print to align). Then 192 x6, 151 x5, 221/225/311/
+351 x3, and the 5797 spot codes 172, 173, 182 (x2 each) and 156 (x1).
+
+**Next step (one line):** fresh-instance re-derivation of reading_5797_full / 4610 / 4611 / 4616 from key_full.tsv
+(rule 7), then V7 on the two H spot fills; AX-GLOSS on 146, 156, 172, 182 and the 139-150 band (5552, 5557 leaves 2-4,
+the csWV3 "solved on leaf" items); orchestrator to decide whether 123/128/136 stay NULL-M or become context rules.
+
+Requests: none (disk only). No subagents. Files: `key_full.tsv`, `decode_{5797,4610,4611,4616}_full.json`,
+`reading_{5797,4610,4611,4616}_full{.txt,_tokens.tsv}`, `revisions_for_audit.tsv`, `axnames/{build_key_full.py,
+compare_full.py,revisions.py,null_raw.py,null_raw.tsv,still_unread.py,still_unread.tsv,regress_sib.out,
+sanity_5810.out,sanity_5811.out,sanity_4503.out}`. Novelty not classified.
