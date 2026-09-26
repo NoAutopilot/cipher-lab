@@ -771,6 +771,7 @@ page = f'''<title>Cipher Lab Board</title>
 <div class="wrap">
 <header>
   <h1>Cipher Lab Board</h1>
+  <p class="small"><a href="https://github.com/NoAutopilot/cipher-lab/blob/main/SYSTEM.md">System</a>: how the work is done, roles, gates and levers</p>
   <p class="headline">{E(headline)}</p>
   <div class="strip"><span>Updated <b>{E(d["updated"])}</b></span><span><b>{n_unique}</b> readings at N3 or better after two audits</span><span><b>{n_first}</b> with our own key and no earlier decipherment found</span><span><b>{len(lanes)}</b> lanes, <b>{live_workers}</b> workers live</span><span><b>{len(ready)}</b> to send</span><span><b>{jq}</b> JSTOR rows queued</span></div>
 </header>
