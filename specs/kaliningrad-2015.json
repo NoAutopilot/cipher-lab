@@ -31,9 +31,11 @@
   "control_samples": 100,
   "note": "Russian/Polish corpora are not on disk; add them as 'corpora' when fetched",
   "corpora": [
-   "tools/data/da19/historisktidsskriftdk1s6.txt"
+   "tools/data/en/pg1342_pride.txt",
+   "tools/data/en/pg64317_gatsby.txt",
+   "tools/data/en/pg76_huckfinn.txt"
   ],
-  "corpora_note": "GOLD-KAL4, 26 Sept 2026: judge.corpora set to the tools/data/da19 file for the convention-B Latin-alphabet sweep, unit da."
+  "corpora_note": "GOLD-KAL4, 26 Sept 2026: judge.corpora set to the 3 tools/data/en files for the convention-B Latin-alphabet sweep, unit en (caveat: en's own false-negative spread is 0.44-0.64, unknown reliability, per CLAUDE.md's EN-FOLDS lesson)."
  },
  "value": "moderate; 58 reader comments without a solution, but no machine run across the candidate languages is on record",
  "model": "Sonnet",
