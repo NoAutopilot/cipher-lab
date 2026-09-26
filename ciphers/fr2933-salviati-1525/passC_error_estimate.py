@@ -46,3 +46,19 @@ wrong = q * maj + 0.5 * tot["split"] + (1 / 3) * tot["split-M"] + BOTH_WRONG * (
 # disputed boxes still without pass C keep CM3's single-reader settle error (27%)
 wrong += 0.27 * tot["no_passC"]
 print(f"(c) expected wrong boxes {wrong:.0f}: {100*wrong/N:.2f}% per box, {100*wrong/tot['signs']:.2f}% per sign token")
+
+# Sign/plain layer: at a three-way split, do two of the three readers at least agree the box is a sign (or plain)?
+# That decides whether the residual error is a substitution in the sign stream or an insertion/deletion.
+import re
+sp = Counter()
+for lf in LEAVES:
+    p = f"recon_box_{lf}/settled_passC.tsv"
+    if not os.path.exists(p):
+        continue
+    for r in csv.DictReader(open(p), delimiter="\t"):
+        if not r["source"].startswith("split"):
+            continue
+        m = re.match(r"A=(\S+) B=(\S+) C=(\S+?);?(\s|$)", r["reason"])
+        calls = [c not in ("_", "MISSING") for c in m.group(1, 2, 3)]
+        sp["sign-majority" if sum(calls) >= 2 else "plain-majority"] += 1
+print(f"three-way splits by sign/plain majority: {dict(sp)} (a sign-majority split is a code substitution risk, not an indel)")
