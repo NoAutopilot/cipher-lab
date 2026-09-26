@@ -761,3 +761,6 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T06:54Z	session_013TcdPte4hjabjtENUiBraJ	LANE B8 bHCP2 (Sonnet, cap 3)	hessen-1824 masc + running_key (+ homophonic) at N=164	brief 2026-09-26-lane-b8-hcp2.md
 2026-09-26T06:59Z	session_01NciDZ7i35bSmKN7PPujmwW	V8-SZEM	done 2.68, ledgered D, archived (szembek N0 period)	
 2026-09-26T06:59Z	session_01YRuw3TCf7d1w85DLmYNnw4	LANE V8 orchestrator	closed 06:59, 6.91 own + 24.83 workers, ledgered D; handoff STATUS.md LANE V8 handoff	
+2026-09-26T07:27Z	session_0138oYmPbpfc6zJGKx8XqFPt	ARM-CODES	done 4.27, ledgered D, archived	
+2026-09-26T07:27Z	session_016MomssrUDeP4gHsHB8zhDa	ARM-EN18	done 3.68, ledgered D, archived	
+2026-09-26T07:27Z	session_013XRpMfe3J9dhb6oiNbEExJ	ARM-REC	done 4.09, ledgered D-, archived	
