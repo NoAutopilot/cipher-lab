@@ -8,6 +8,15 @@ Two accounts work in this repository and neither sees the other's sessions; the 
 reads that record for the window the parent names and turns it into at most five concrete, transferable practices.
 
 1. `date -u`; `python3 tools/room.py --start`; ROOM claim "LEARN <window>: cross-account read".
+   Before any git-history diagnosis (a squash, a lost commit trail, `--max-parents=0`, or `--since` returning
+   nothing): `git rev-parse --is-shallow-repository`. If true, `git fetch --deepen=400 origin main` first. A
+   shallow clone's own boundary commit looks exactly like a squashed history root -- a real hash, a large diff,
+   no parent -- because `git rev-list --max-parents=0` cannot tell "the true first commit" from "the oldest commit
+   this clone happens to carry" (LEARN-2026-09-26-0313, 26 Sept 2026: reported a 65-commit root at `f2955595`
+   with a 9,460-line diff as a full-repository squash; deepening the same check to 400 commits showed 470 commits
+   and a real parent behind it, `67e6d5188e...` -- RETRO-2026-09-26c confirmed this by reproducing the deepen in
+   its own container). Report a suspected squash only after confirming the clone is not shallow, or after
+   deepening past the point where the "root" commit gains a parent.
 2. `git log origin/main --since="<window start>" --format='%h %cI %s' --stat` and, for every commit whose subject or
    ROOM line names a lane this parent does not run (on 25 Sept: ZX, CX2, the owner-account parent
    session_01FXDfYR3CvGk7tcid1Aav1n, QA runs, any lane letter not in the parent's ASSIGNMENTS), read the diff of its

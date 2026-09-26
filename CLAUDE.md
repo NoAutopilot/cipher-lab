@@ -193,6 +193,18 @@ check-ins with send_later; nothing polls. State lives in git: `STATUS.md` holds 
 not the first screen. The rate-limit rule is BUDGETS.md's scaling rule (`allowed_warning` anywhere: no new workers
 anywhere). Nothing is billed on the owner's Max plan; dollar figures measure the rate-limit window.
 
+**Lane state: idle-standing (26 Sept 2026, RETRO-2026-09-26c, after GOLD reached this state twice with the same
+prose from scratch).** A standing lane is idle-standing when every one of its targets is individually
+`open`/`partial` (never `closed-negative` -- rule 5) with no live worker and no untried cheap step that is not
+itself gated on a named ASKS.md row. Entry: the lane orchestrator writes exactly one ROOM.md line, "LANE <X>:
+idle-standing, blocked on ASKS <rows>", names the rows in the lane's STATUS.md handoff, and arms no check-in --
+the state does not need re-confirming at a Fable check-in's cost. Exit: only when one of the named ASKS rows is
+answered (the parent's own regular ASKS.md read is the trigger, not a standing lane polling itself) or a target
+gets new material from outside the lane (more ciphertext, a museum reply, a fresh solver-repo hit) that opens an
+untried cheap step; either way the parent starts the next lane incarnation naming what changed. A lane that
+re-derives "idle-standing" a second time for the same unanswered rows, rather than reading the prior incarnation's
+entry line, is repeating work the state already recorded.
+
 Loops that run outside this repository and write back into it:
 - **Second opinions**: a scheduled ChatGPT task reads `SECOND-OPINIONS-QUEUE.tsv` and answers each queued prompt as an
   `[SO-<label>]` pull request (`tools/second_opinion_runner_prompt.md`). Lanes queue a reading after the verifier
@@ -359,6 +371,20 @@ Every brief states a cap in dollars of usage (the session metadata's cost figure
    foreground per-unit work as its own separate box, or serialize it before or after the foreground units --
    never assume concurrent CPU-bound work is free just because it does not add a unit to the count the per-unit
    rate was built from.
+   Naming the crop tool as a "convention" a worker should already know to apply is not the same as requiring the
+   command. Lesson of 26 Sept 2026 (AX-4612TR, bUNT7): AX-4612TR's brief said "line crops under 2500 px
+   (tools/iiif_lines.py conventions)" and the worker correctly scoped one page per subagent call (Usage 6's own
+   GOLD-4D fix) but still sent the full 300 dpi page image to each call, at about $11/pass (44.28 total, D-, for
+   two pages) -- `tools/iiif_lines.py` already reads a local file directly (`--image FILE`), so the tool was
+   available and unused. bUNT7's brief said "cut line crops if useful (local PIL crop ... no network)" -- optional,
+   and a private script rather than the same shared tool -- and the worker read one 4884x3052 leaf glyph-by-glyph,
+   reaching 2.6x its $3 cap by 67.5% of its box (under the 80% self-stop line), stopped only by the orchestrator's
+   interrupt. A brief for any per-page or per-leaf transcription pass states the crop step as a command to run and
+   paste before the first subagent call (`tools/iiif_lines.py --image <page/leaf file> --out <dir>`, or the
+   `--ark`/`--canvas` form for a Gallica source), gives the subagent only the resulting crop paths, and treats a
+   full-page or full-leaf image argument to a transcription subagent call as the brief's own error, not the
+   worker's -- a wall-clock box cannot catch this shape of overspend (Usage 6's own GOLD-4D/AT55V/MEYE/GOLD-K2
+   paragraphs), so the crop step has to be mandatory and pasted, not advisory.
 7. **Stop when the brief is met.** A worker does not continue into follow-ups (a sweep of sister copies, an
    audit of its own) that its brief did not name; it writes the follow-up as a one-line suggestion in NOTES.md.
 8a. **Rules become tools (25 Sept 2026, UPDATES.md).** A rule that the ledger shows broken twice gets a mechanical check in
@@ -727,6 +753,11 @@ search is reachable but functionally unusable, drowned in unfiltered noise).
 ## Improvement loop
 
 The orchestrator writes a LEDGER.md row when it archives a worker (role, model, cost, outcome code, lesson).
+Before appending its own self-ledger row at a lane's close (26 Sept 2026, RETRO-2026-09-26c), the orchestrator
+runs `tools/ledger_check.py`: if it flags a duplicate session id for the orchestrator's own session, the close was
+already ledgered once (LANE B5, V7 and GOLD3 all did this in one window, 26 Sept 2026, about USD 17 of orchestrator
+overhead counted twice across the three pairs) -- edit the existing row in place rather than appending a second one, unless the new row
+demonstrably describes different workers or a different total spend from the first.
 Briefs are copies of the templates in `.claude/briefs/`; a lesson becomes a template edit, not a note. A
 retrospective session (`.claude/briefs/retrospective.md`) runs after every 12 ledger rows or $60 of worker
 usage, whichever comes first (the orchestrator checks after every worker report), and after any worker scored X

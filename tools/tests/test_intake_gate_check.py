@@ -223,6 +223,19 @@ ok = code == 1
 fails += not ok
 print(("PASS" if ok else "FAIL"), "synthetic verdict-word-in-prose-only", f"-> code={code} message={message!r}")
 
+# synthetic (26 Sept 2026, RETRO-2026-09-26c): a markdown-bold subheading whose leading word is a
+# recognised verdict word, followed immediately by a comma, must NOT be mistaken for a rule-5
+# status line -- thurloe-printed's pre-26-Sept-2026 shape (no bare status word anywhere, only
+# "**Open, for the next owner (LANE W...**" as a subheading). Must fall through to "no verdict
+# word found", exit 1, not read `open`.
+SYNTH_HEADING_NOT_VERDICT = (
+    "# Thurloe printed cipher letters\n\nsome prose\n\n**Open, for the next owner (LANE W...**\n"
+)
+code, message = gate.check(SYNTH_HEADING_NOT_VERDICT)
+ok = code == 1 and "no" in message and "verdict word found" in message
+fails += not ok
+print(("PASS" if ok else "FAIL"), "synthetic heading-not-verdict-thurloe-printed", f"-> code={code} message={message!r}")
+
 # synthetic (26 Sept 2026, RETRO-2026-09-26b): a reused/re-cited search must still exit 0 (a
 # citation is present) but print a soft WARNING, never change the exit code -- check-solved.md's
 # own nuance is that a reused search that blocked nothing is a QA finding, not a gate failure.

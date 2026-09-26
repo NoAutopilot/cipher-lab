@@ -80,6 +80,17 @@ VERDICT_RE = re.compile(
     re.IGNORECASE,
 )
 
+def _is_heading_not_verdict(line, match_end):
+    """True when the verdict word is followed immediately (after any closing markdown emphasis
+    and whitespace) by a comma -- the shape of a descriptive subheading ('**Open, for the next
+    owner (LANE W...**', thurloe-printed's pre-26-Sept-2026 line 15) rather than a rule-5 status
+    declaration. Checked against every NOTES.md in the repo (26 Sept 2026, RETRO-2026-09-26c): no
+    real verdict line, first-line or a nearby `blocked` correction alike, puts a comma directly
+    after the word; only a subheading does."""
+    rest = line[match_end:].lstrip(" *_")
+    return rest.startswith(",")
+
+
 # Verdicts that need no citation evidence: already compliant/terminal, nothing to gate.
 TERMINAL_WORDS = ("blocked", "solved", "closed-negative", "offline-only")
 
@@ -150,12 +161,12 @@ def find_verdict(lines):
     """
     for i, line in enumerate(lines):
         m = VERDICT_RE.match(line)
-        if m:
+        if m and not _is_heading_not_verdict(line, m.end()):
             word = m.group(1).lower()
             if word != "blocked":
                 for j in range(i + 1, min(i + 1 + CONTEXT_LINES, len(lines))):
                     m2 = VERDICT_RE.match(lines[j])
-                    if m2 and m2.group(1).lower() == "blocked":
+                    if m2 and not _is_heading_not_verdict(lines[j], m2.end()) and m2.group(1).lower() == "blocked":
                         return "blocked", j
             return word, i
     return None, None
