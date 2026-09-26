@@ -968,3 +968,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T21:25Z	session_01J4RvnF3CQD9Le96VTaQUWK	SALV-CTX (Opus, cap 12)	it16dip corpus + wordcode context option + matched control, pre-registered gate; no target run	brief 2026-09-26-lane-salv-j2a-context.md; LANE SALV
 2026-09-26T21:59Z	session_01Tjy7FHX2uFMhzfTNowWa57	SALV-PLAIN1	done 21.22 D- (get_session), ledgered, retitled ARCHIVED, archived by LANE SALV	629 plain boxes f54r-f55v; raw A/B 40-54 pct
 2026-09-26T21:59Z	session_01J4RvnF3CQD9Le96VTaQUWK	SALV-CTX	done 3.46 D (get_session), ledgered, retitled ARCHIVED, archived by LANE SALV	context gate not met (+0.07 < +0.10); share-matched rerun named
+2026-09-26T21:59Z	session_01Ce9bMS77iRL3NQTSPWdbwS	SALV-PLAIN2 (Sonnet, cap 24)	fr2933 plain-Italian boxes f56r-f57v, SALV-PLAIN1 protocol + [C]-box count	brief 2026-09-26-lane-salv-j1b-plain.md; LANE SALV
+2026-09-26T21:59Z	session_01DZTHcDXCHaFRuoTKcQg9Kw	SALV-CTX2 (Sonnet, cap 4)	context-option control at the target code share on it corpus; last attempt with this instrument	brief 2026-09-26-lane-salv-j2c-share.md; LANE SALV
