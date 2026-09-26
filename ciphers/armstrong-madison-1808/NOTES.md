@@ -726,3 +726,79 @@ route before trying again. No numerals or ciphertext read or decoded this pass; 
 Requests: catalog.archives.gov 2 (both unsuccessful, no image bytes received), >=1.5s apart, descriptive
 User-Agent. No other hosts, no network for the reconciliation/comparison work itself (all against images
 already on disk plus 9 Sonnet subagent calls: 2 reconciliation + 7 per-system symbol match).
+
+## ARM-POOL2 (26 Sept 2026, LANE ARM worker ARM-POOL2) -- docket frame 0645 read; 4 of 6 items located, all THE=972, none a pool candidate
+
+Full detail in `pool/DOCKET-0645.tsv` and `pool/SURVEY.tsv` (frames appended this pass). Fetched frame
+M34-014-0645 at native resolution (committed, `images/M34-014-0645.jpg` -- the docket of record for this
+pass's finds) and read it directly: its left page is headed "List of Genl Armstrong's letters. Extracts from
+which were confidentially sent to [word illegible]", listing six items (1st-6th) by date; its right page is
+an unrelated bound-in French printed document ("Douanes Imperiales... 1er Aout 1810"), not part of the list.
+
+**Four of six docket items located and signature-screened, all THE=972 office code, none matching the
+target's signature:**
+1. **27 Dec 1807** -- NOT on roll 14 (which starts 22 Jan 1808). Found roll 13 instead (NAID 188671172,
+   "Nov. 12, 1804-Dec. 27, 1807", 392 images, discovered via a `catalog.archives.gov` search restricted to
+   `"Despatches from United States Ministers to France" "Reel 13"`; same IIIF container id, `603720`, as
+   roll 14). Frame 0390, right at the end of the roll (0393 is the roll's own "END OF VOLUME" card): a
+   "Duplicate" letter dated "Paris December 27 1807", signed John Armstrong, dense THE=972 numerals --
+   screen 70% THE=972 coverage. Notably carries period interlinear pencil/ink plaintext glosses written
+   directly above several numeral runs, consistent with this being one of the roll-13 marginal-annotation
+   letters Bourdeau's own `THE972_bourdeau.tsv` was already built from (this file's own "What the cipher is"
+   section), not a new key source.
+2. **22 Feb 1808** -- roll 14, frames 0033 (right page)-0034. **Correction to ARM-TR2**: that pass read this
+   frame's right-page letter as dated "Paris 27 february 1808"; a direct native-crop re-read this pass shows
+   the date is **22**, not 27 (the hand's "2" and "7" are both loopy and easy to conflate) -- this is
+   Armstrong-to-Madison, 22 Feb 1808, docket item 2, not a separate unidentified letter. Clear prose (signed
+   John Armstrong, addressed "M. Madison") carrying two embedded THE=972 numeral passages -- screens 92% and
+   71% THE=972 coverage. One passage is followed, in the same hand, by its own plain-English paraphrase
+   ("972.1394.1090.1354.914.985.608.899.1482.1228.1492.297.1001. Prussia is to seize Finland, while France &
+   Denmark take possession of Sweden. 76.736.1587.910.369.630.1478.860.1090.758.1282.1284.823. And it is
+   certainly amongst the most cruel circumstances of the British attack on her capital") -- most plausibly
+   Armstrong quoting an intercepted or reported foreign-cipher specimen together with its own decode as
+   intelligence content, not this letter's own device. Not chased further (out of this job's scope; flagged
+   for a successor interested in THE=972 provenance or period cipher specimens generally, not the target).
+3. **9 March 1808** -- roll 14, frames 0039-0040 (heading "9 March 1808" on 0040; journal-style entries for
+   "Friday" and "6 March" on 0039). Screen (frame 0040, 21 groups): 86% THE=972 coverage. **Resolves
+   ARM-POOL's own open question about frames 0643-0644** ("date not legible... candidate sibling to the 20
+   Feb 1808 target code"): a direct native read of 0643 this pass is a word-for-word, number-for-number match
+   to frame 0039 (identical "Friday" heading, identical opening 16 groups
+   `276.962.972.676.1354.395.1701.1248.1482.988.1092.1268.1090.1013.734.967`, identical opening sentence "I
+   called yesterday & this morning to tell you what I could gather respecting our affairs. What has been
+   transmitted to..."). Frames 0643-0644 are a duplicate filing of this 9 March 1808 despatch (period
+   practice: despatches were often sent in duplicate via different routes, per the 27 Dec 1807 letter's own
+   postscript about sending copies "via England" and another route) -- THE=972, not an unidentified letter,
+   confirming ARM-POOL's own signature screen of that frame was correctly negative.
+4. **15 March 1808** -- roll 14, frame 0045 alone: "Duplicate" header, "15 March 1808, Paris", signed John
+   Armstrong, addressed "Mr Madison, Washington". Screen (23 groups): 83% THE=972 coverage.
+
+**Item 5** ("Note referred in the above from Genl Armstrong", undated) is not a separately dated item: the 15
+March letter's own text names it ("I accordingly wrote the note, a copy of which is subjoined to this
+letter, pointing out in a few words the property to which that rule would apply"), immediately followed by
+one more THE=972 numeral block within frame 0045 itself. The adjacent frame 0046 carries a French-language
+clear-text item headed "Note." on a related neutral-property/sequestration subject -- plausibly this
+enclosure, not confirmed, not screened further (clear text, not a numeral-code candidate).
+
+**Item 6** ("Private to Mr M[adison]: 30th august", no year given) **not located within this job's budget.**
+Searched roll 14 frames 0115-0134 (dated Armstrong-to-Madison letters found: 7 Aug 1808 f.0115, 23 Aug 1808
+f.0121 already in `pool/SURVEY.tsv`, 26 Aug 1808 f.0125-0127 plain text with no numerals, 4 Oct 1808 f.0131);
+no frame in that span carries a "30 August" header or an explicit "Private" designation. The docket gives no
+year for this item (items 1-4 span Dec 1807-March 1808, so "30th August" could be 1808, 1809 or 1810) -- not
+chased further past this job's per-date thumbnail budget.
+
+**Verdict: no pool candidate found.** All four located docket items, plus the now-identified 0643-0644
+duplicate, are THE=972 office-code usage (58-92% THE=972_bourdeau.tsv coverage on one-line screens, digit
+shapes not matching the target's 0/1-dominant signature) -- consistent with ARM-A2's and ARM-C1's own
+findings that THE=972 is not the target's code, and with ARM-POOL's own roll-14 stride survey finding no
+sibling. This is a screen at N=14-27 groups per item, not a control-backed result (rule 3). The docket's own
+significance is now explained (it lists a confidentially-forwarded batch of Armstrong's ordinary,
+THE=972-coded despatches, not a private-code correspondence), which is itself useful: it removes one more
+avenue (the frame-0645 batch) from the family-E sibling hunt without finding the target's own code.
+
+Requests: catalog.archives.gov -- 1 info.json + 1 native (frame 0645) + 3 thumbnails (0034-0036) + 1 native
+(0034) + 5 thumbnails (0038-0042) + 2 native (0039, 0040) + 5 thumbnails (0044-0048) + 1 native (0045) + 5
+thumbnails (0122-0126) + 4 thumbnails (0127-0130) + 4 thumbnails (0131-0134) + 1 native (0643, to confirm the
+0039/0643 match) + roll 13: 4 thumbnails (0388, 0390, 0392, 0393) + 1 native (0390) = 39 total, all >=1.5s
+apart, descriptive User-Agent, no 429/403/challenge seen. `tools/browser_fetch.js` used 3 times (a roll-13
+search query, a narrower "Reel 13" query, and the roll-13 item page) to find roll 13's NAID and its own IIIF
+object-path prefix, per ARM-IMG's own documented route. No other hosts, no logins, no credentials touched.

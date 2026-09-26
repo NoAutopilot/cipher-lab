@@ -44,8 +44,17 @@
       "height": 3264,
       "bytes": 1238722,
       "sha1": "004e77471a50d24284ae05ac1561b2cee8e4a769",
-      "note": "ARM-POOL, 26 Sept 2026: fetched to cover the last ~37 numeral groups of the target letter that ARM-TR found missing from frames 29-32; not yet transcribed or diffed against ciphertext.txt (a successor job, not this one)"
+      "note": "ARM-POOL, 26 Sept 2026: fetched to cover the last ~37 numeral groups of the target letter that ARM-TR found missing from frames 29-32; not yet transcribed or diffed against ciphertext.txt (a successor job, not this one). Correction (ARM-POOL2, 26 Sept 2026): ARM-TR2 read this frame's right-page letter as dated 'Paris 27 february 1808'; direct native-crop reading this pass reads the date as '22' (matching docket-frame 0645's own item 2, 'same to same 22d Febry 1808' -- two loopy digits in this hand, easy to conflate). The right page is this letter (Armstrong to Madison, THE=972 office code embedded in clear prose, continues onto frame 0034), not a separate 'later letter' as ARM-TR2's wording implied."
+    },
+    {
+      "file": "M34-014-0645.jpg",
+      "iiif_id": "lz/dc-metro/rg-059/603720/M34/M34-014/M34-014-0645.jpg",
+      "width": 3856,
+      "height": 3392,
+      "bytes": 2874458,
+      "sha1": "4b21943e97d58ffd9f28086d44b5effa9c2fbdde",
+      "note": "ARM-POOL2, 26 Sept 2026: the docket frame ARM-POOL flagged at frame 0645 (near frames 0641-0648, the 'confidentially sent' batch). Left page: 'List of Genl Armstrong's letters, extracts from which were confidentially sent to [the President?]' -- six items, dated 27 Dec 1807, 22 Feb 1808, 9 March 1808, 15 March 1808, an undated 'note referred in the above', and a 'Private to Mr M[adison]: 30th August' (year not given). Right page: an unrelated bound-in French customs document ('Douanes Imperiales, 1er Dispositif de la vente du 1er Aout 1810'), not part of the list. Committed as the docket of record: this pass located and screened four of the six items (pool/DOCKET-0645.tsv)."
     }
   ],
-  "not_fetched": "other roll-14 frames outside the 29-33 range this brief names; the item has 664 images/1 file total; see pool/manifest.json (ARM-POOL, 26 Sept 2026) for the roll-14 survey's own low-res thumbnails and pool-candidate native fetches"
+  "not_fetched": "other roll-14 frames outside the 29-33 and 0645 ranges this brief and its predecessors name; the item has 664 images/1 file total; see pool/manifest.json (ARM-POOL, 26 Sept 2026) for the roll-14 survey's own low-res thumbnails and pool-candidate native fetches. Roll 13 (NAID 188671172, 'Nov. 12, 1804-Dec. 27, 1807', 392 images) frame 0390 (the 27 Dec 1807 letter, docket item 1) was read this pass (ARM-POOL2) but not committed -- scratch only, screened not transcribed, per this job's brief."
 }

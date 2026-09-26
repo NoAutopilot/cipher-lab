@@ -109,3 +109,32 @@ frame	class	date	note	signature_screen
 0655	other	"partial ""27 August"" visible top right, otherwise none legible"	printed customs/manifest table, same format as 0649, handwritten quantities in columns	
 0661	other	none legible	"printed customs/manifest table, same format as 0649/0655, marginal notes ""Place d'Arcens No 7/No 9"""	
 frame	class	date	note	
+0033	code_with_shorthand	Paris 22 february 1808 (right page; left page is the target's own last leaf)	ARM-POOL2: right page is Armstrong-to-Madison, 22 Feb 1808 (docket item 2, frame M34-014-0645), clear prose with two embedded THE=972 numeral passages, one carrying its own inline plain-English paraphrase ("Prussia is to seize Finland..."); continues onto frame 0034. Correction to ARM-TR2: date is 22 not 27 Feb.	screened (frame 0033, 26 groups): THE=972_bourdeau.tsv coverage 24/26 (92%), digit-0/1 share 23%, digit-2/3/5/9 share 31%, top digit 0 -- THE=972 usage, NOT target signature
+0034	numeral_code	22 february 1808 (continuation of 0033)	ARM-POOL2: continuation of the 22 Feb 1808 letter (docket item 2), ends with "John Armstrong" signature and "M. Madison" address at foot of right page; dense THE=972 numerals embedded in clear political-intelligence prose (Rome, Portugal, Spain, Prussia, Finland)	screened (14 groups): coverage 10/14 (71%), digit-0/1 share 14%, digit-2/3/5/9 share 21%, top digit 3 -- THE=972 usage, NOT target signature
+0039	numeral_code	none legible on this frame (dated by content: "Friday"/"6 March" entries of the 9 March 1808 despatch, docket item 3)	ARM-POOL2: dense THE=972 journal-letter; word-for-word and number-for-number match to frame 0643 (ARM-POOL's own unidentified batch letter) -- resolves that open question: 0643-0644 = a duplicate of this despatch	not separately re-screened here (see frame 0040)
+0040	numeral_code	9 March 1808	ARM-POOL2: docket item 3, heading "9 March 1808", continues from 0039; right page blank	screened (21 groups): coverage 18/21 (86%), digit-0/1 share 34%, digit-2/3/5/9 share 30%, top digit 1 -- THE=972 usage, NOT target signature
+0045	numeral_code	15 March 1808	ARM-POOL2: docket item 4, "Duplicate" header, single-frame letter, signed John Armstrong, addressed Mr Madison Washington	screened (23 groups): coverage 19/23 (83%), digit-0/1 share 34%, digit-2/3/5/9 share 35%, top digit 1 -- THE=972 usage, NOT target signature
+0038	clear_text	Paris 29 feb. 1808	ARM-POOL2: Armstrong to Israel Thorndike Collins & Co. (ship owners), ordinary prose, not Madison, no numerals	
+0041	clear_text	Paris 5 March 1808	ARM-POOL2: short note on foreign officers/servants, not part of the docket list	
+0042	clear_text	Paris 2 March 1808	ARM-POOL2: legal/prize-law memo re French decrees, "Copies" annotation, not part of the docket list	
+0044	clear_text	8 March 1808 / Paris 29 feb 1808	ARM-POOL2: correspondence with Le Ministre de la Marine et des Colonies re a prisoner-exchange case (John Smith), French, not Madison	
+0046	other	19 March 1808 / 13 March 1806 (reference)	ARM-POOL2: "Note." heading, French clear text on neutral-property/sequestration rules -- plausibly docket item 5's own enclosure (not confirmed)	
+0047	clear_text	Paris 16 March 1808 / Paris ce 16 Mars 1808	ARM-POOL2: French official correspondence (Marine et Colonies), enclosure cluster around the 15 March despatch	
+0048	clear_text	18th March 1808 / Paris 19 mars 1808	ARM-POOL2: French official correspondence, same enclosure cluster	
+0122	other	none legible	ARM-POOL2: transcript-style dialogue (French/English mixed, "M. dit / E. dit" format) of an oral exchange with French officials, undated on this frame	
+0123	other	none legible	ARM-POOL2: continuation of the same dialogue transcript	
+0124	clear_text	none legible ("M. Madison" penciled in margin)	ARM-POOL2: continuation, English narrative, margin note names Madison	
+0125	clear_text	26 August 1808	ARM-POOL2: Armstrong despatch re England/France relations, plain text, no numerals seen; continues to 0126-0127	
+0126	clear_text	(continuation of 0125)	ARM-POOL2: continuation, plain text	
+0127	clear_text	(closing of 0125's letter, left page) / no date, right page "No. 8" London despatch	ARM-POOL2: left page closes the 26 Aug letter, addressed Mr Madison; right page is an unrelated Pinkney despatch from London	
+0128	clear_text	none legible	ARM-POOL2: continuation of the Pinkney London despatch	
+0129	clear_text	none legible	ARM-POOL2: continuation, signed J.B. -- (Bassett?), re a Mr Rouyer/consular matter	
+0130	clear_text	none legible	ARM-POOL2: closing of a Warden (US consul, Paris) letter to "The Hon. James Madison, Secretary of State"	
+0131	clear_text	4th October 1808	ARM-POOL2: Armstrong despatch, addressed Hon. James Madison, Washington	
+0132	clear_text	Paris 23 October 1808	ARM-POOL2: Armstrong despatch, European affairs	
+0133	clear_text	none legible	ARM-POOL2: continuation, diplomatic narrative	
+0134	clear_text	Paris 16 Nov 1808	ARM-POOL2: Armstrong despatch, signed	
+r13-0388	clear_text	24-25 Nov 1807	ARM-POOL2 (roll 13, NAID 188671172): Armstrong correspondence re a claim/duty matter, signed John Armstrong, not screened (clear text)
+r13-0390	numeral_code	27 December 1807	ARM-POOL2 (roll 13): docket item 1, "Duplicate", signed John Armstrong, dense THE=972 numerals with period interlinear pencil/ink plaintext glosses over several runs (consistent with Bourdeau's own roll-13 marginal-annotation source for THE972_bourdeau.tsv)	screened (27 groups): coverage 19/27 (70%), digit-0/1 share 22%, digit-2/3/5/9 share 37%, top digit 0 -- THE=972 usage, NOT target signature
+r13-0392	other	none legible	ARM-POOL2 (roll 13): French clear text, end-of-volume administrative matter	
+r13-0393	other	n/a	ARM-POOL2 (roll 13): "END OF VOLUME" card	
