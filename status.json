@@ -2223,10 +2223,10 @@
     },
     {
       "target": "untersberg-code",
-      "title": "Untersberg code: Herzog 1929 prints Hs 2398 with eleven witnesses; Hs 12 initial-letter alignment at chance (3/6 vs shuffle 2.1)",
+      "title": "Untersberg code: Herzog 1929 prints Hs 2398 with eleven witnesses; Hs 12 initial-letter alignment at chance (3/6 vs shuffle 2.1); symA not identified by the witnesses (1/5 vs random-position p95 3/5, B7 bUNT9)",
       "next": "joint alignment against Hs 13/3/3a/11 with token length; blind transcription of the confirmed leaf",
       "lane": "B4",
-      "touched": "25 Sept 2026 23:56"
+      "touched": "26 Sept 2026 05:55"
     },
     {
       "target": "blitz-ciphers",
@@ -2241,6 +2241,13 @@
       "next": "split read/unread spans, resolve M/U codes by two-context rule with control, re-judge fr16 (USD 4); f.179 labels as key to f.276 (USD 3)",
       "lane": "B5",
       "touched": "26 Sept 2026 01:40"
+    },
+    {
+      "target": "malsburg-hessen-1636",
+      "title": "Malsburg 1636-37: ff.3/12 reconciled N=352 K=95 (nomenclator shape); homophonic control below gate at this N (0.392 vs 0.6), a non-test",
+      "next": "fetch + transcribe the other 8 HCPortal records (pool, 2,000+ groups), then homophonic profile=target at pooled N, control first",
+      "lane": "B7",
+      "touched": "26 Sept 2026 05:55"
     }
   ]
 }

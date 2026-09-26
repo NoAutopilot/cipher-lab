@@ -304,10 +304,14 @@ page-per-call transcription of ~400-token pages still costs 3-5x a search job (Z
 
 ## LANE B7 handoff (session_018gKxHSiPYa5NPQuXYELQUk)
 
-Breadth lane, successor to LANE B6, opened by parent 7e at 04:45 UTC 26 Sept 2026 (brief `.claude/briefs/runs/2026-09-26-lane-b7-orchestrator.md`, cap USD 25 own, hand off at 300k context). Common file `.claude/briefs/runs/2026-09-26-lane-b7-common.md`. Live (05:20): bSZM (szembek merge), bZES (Zeschau), bMAL3 (Malsburg reconcile + test; bMAL2 interrupted at 1.75x after pass B). Queued: untersberg symA; matignon (1e) hand alignment (NEAR). Done by the orchestrator: LOCAL-QUEUE L17 (Kolosova 2017 thesis + 2024 book, lope-hurtado-1522).
+Breadth lane, successor to LANE B6, opened by parent 7e at 04:45 UTC 26 Sept 2026 (brief `.claude/briefs/runs/2026-09-26-lane-b7-orchestrator.md`, cap USD 25 own, hand off at 300k context). Common file `.claude/briefs/runs/2026-09-26-lane-b7-common.md`. Live (05:55): bSZR (szembek rule-7 re-derivation), bLAJ (la18 Latin judge). Queued: matignon (1e) hand alignment (NEAR). Done by the orchestrator: LOCAL-QUEUE L17 (Kolosova 2017 thesis + 2024 book, lope-hurtado-1522).
 
 | Spec | Test run (worker) | Target | Control | Verdict |
 |---|---|---|---|---|
+| szembek-bk1560 | merge: pooled letter key via interlinear_align (bSZM) | consistency 0.878 (332/378); C 384 / M 50 / U 0 after 3 thin codes to M | shuffle 0.189 (p95 0.204) | reading ready; rule-7 re-derivation bSZR and la18 judge bLAJ live; then V8 |
+| malsburg-hessen-1636 | reconcile + IC + family_run (bMAL2, bMAL3) | N=352 K=95, IC 0.0143; masc FAIL | masc control 0.987 (K=22, unmatched); homophonic control 0.392 below gate | partial, NEAR row: pool the fond first |
+| untersberg-code | symA vs 8 witnesses (bUNT9) | 1/5 positions | random-position mean 1.07, p95 3/5 | symA not identified; NEAR updated |
+| zeschau-seebach-1841 | intake + crib (bZES) | blocked: R5006-8 ciphertext unreachable | n/a | open; ASKS 64 |
 | szembek-bk1560 | leaf 66 gloss pairs (bSZL66) | 168 codes, 21 distinct, 87 glossed; recurring-code consistency 0.918 | shuffle 0.306 (p95 0.341) | gloss is a working letter key (m clear, a/e homophonic); merge next |
 | szembek-bk1560 | leaves 65, 67 (bSZL65, bSZL67) | 150 + 120 codes, 19 distinct each; per-group glosses 21 / 18 | shuffle equal (non-test at N) | pairs.tsv on disk for the aligner |
 | matignon-mayenne-1586 | 1c' revert + 1d U code words (bMAT1D) | judge back to -1.371, cover 0.814; 17/48 U in crib f.78v/79r | known-answer 6/20, 4/20 vs gate 16/20 | 1d non-test; NEAR next (1e) hand alignment |
