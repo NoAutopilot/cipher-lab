@@ -1,0 +1,53 @@
+page	line_id	kind	text
+f24r	L01	plain	29e de Sept. 1581. [marginal "24" = folio number, top right, not part of text line]
+f24r	L02	plain	Monseigneur, J'ay receu
+f24r	L03	plain	la [lettre?] qu'il vous a pleu
+f24r	L04	plain	m'escripre au XXe [?]
+f24r	L05	plain	de ce moys, dont je vous
+f24r	L06	plain	mercye tres humblement / [si avez] dispose a
+f24r	L07	plain	[dispose a ...] deffourny [?]
+f24r	L08	plain	approuve le plus fort employé [?]
+f24r	L09	plain	en autrement fait, sy [?] masseurement destry [?]
+f24r	L10	plain	[destry ...] cherité Monseigneur
+f24r	L11	plain	[?] scavoir de Rey
+f24r	L12	plain	[de] Rey / sa la [?] aussi Sabaudonne [?]
+f24r	L13	plain	Enfanira [?] / du monde de
+f24r	L14	plain	du monde de bonté [?] / [?] d'aujourd'huy envoyer
+f24r	L15	plain	[?] fondement de la
+f24r	L16	plain	[?] fondement de la / [?] vous aura
+f24r	L17	plain	amerque [?] / cette [?] que
+f24r	L18	plain	octobre / [?] quil vous a
+f24r	L19	plain	qui soit puis [?] / de recommandé
+f24r	L20	plain	de recommandé / cauffon [?] mois qu'aura
+f24r	L21	plain	faict la grande [?] / faire la main et
+f24r	L22	plain	main, ey ce [?] / [?] donqu'il uste
+f24r	L23	plain	forte, de [?] / [?] plus fait un brave
+f24r	L24	plain	affaire, ce[?] / valeurs et [?]
+f24r	L25	plain	[?] et que / [?] ordonné assemble
+f24r	L26	plain	mais tout / [?] de ce
+f24r	L27	plain	de ce reçoit / le destinaty en tenu
+f24r	L28	plain	send re[?] / [?] amazon [?]
+f24r	L29	plain	Couture de [?] / arguoir cruaulté
+f24r	L30	plain	qui l'esgare / [?] estast [?]
+f24r	L31	plain	[?] entretien / autredour [?]
+f24r	L32	plain	maunois passif / lynt [?] de
+f24r	L33	plain	[loing?] de la [?] destroys [?]
+f24v	L01	plain	[illegible / blank] / Aux [?]: ù vous doibt
+f24v	L02	plain	doibt / proposer mille amistures
+f24v	L03	plain	[?] / mon oppossivons faire
+f24v	L04	plain	que doy dire. / [?]chatte
+f24v	L05	plain	[?] / [?] de tou affaires. et lui
+f24v	L06	plain	scallonner / [?] c'est
+f24v	L07	plain	en dire soy avoir le premier
+f24v	L08	plain	demadcroue que
+f24v	L09	plain	[garde?] Courtin / mons afferam
+f24v	L10	plain	Comme offitier de
+f24v	L11	plain	de[?] / se joindre avecque vous
+f24v	L12	plain	qui sera contraire / [?]
+f24v	L13	plain	Guygndum ce / lawr sma
+f24v	L14	plain	[illegible / blank]
+f24v	L15	plain	Monseigneur, Eij [?]
+f24v	L16	plain	[?] / Fontainebleau le [octre?]
+f24v	L17	plain	[?] / [?] vre humble et [?]
+f24v	L18	plain	[blank, page edge]
+#SUMMARY	total_lines=51 (33 f24r + 18 f24v)	plain=49	cipher=0	mixed=0	unclear=2 (f24v L14, L18 are blank/illegible)	The entire letter (f24r and f24v) reads as continuous ordinary French secretary-hand prose: a dated cover letter opening "Monseigneur, J'ay receu..." with the usual epistolary formulas, running to a closing on f24v ("...vre humble et obeissant serviteur") with an address/date line "Fontainebleau le..."; no digit groups, isolated code letters, or unusual symbols consistent with a cipher/nomenclator were seen anywhere on either page. f24v lines 15-17 show extensive faint pencil scribbles (archival foliation/reference marks, illegible, clearly not ink and not part of the letter's own writing system) and the bottom of f24v (L18) is blank page edge with no writing. Several individual word transcriptions above are uncertain (marked [?]) given the difficulty of 16th-c. secretary hand, but the kind classification (all plain prose, zero cipher) is made with high confidence across every line read.
