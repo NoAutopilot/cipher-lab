@@ -753,3 +753,9 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T06:53Z	session_0138oYmPbpfc6zJGKx8XqFPt	ARM-CODES (Sonnet, cap 6)	us codes value tables tools/data/uscodes-1800	brief 2026-09-26-lane-arm-codes.md; LANE ARM
 2026-09-26T06:53Z	session_016MomssrUDeP4gHsHB8zhDa	ARM-EN18 (Sonnet, cap 5)	en18 corpus + fold check	brief 2026-09-26-lane-arm-en18.md; LANE ARM
 2026-09-26T06:53Z	session_013XRpMfe3J9dhb6oiNbEExJ	ARM-REC (Sonnet, cap 6)	recovery + crib hunt armstrong-madison-1808	brief 2026-09-26-lane-arm-rec.md; LANE ARM
+2026-09-26T06:54Z	session_017hyD1Xp4ajh1cr8tKq67dX	LANE B8 bSZG2 (Sonnet, cap 8)	szembek-bk1560 leaves 65/67 letter-level gloss pass + per-leaf control + re-merge	brief 2026-09-26-lane-b8-szg2.md
+2026-09-26T06:54Z	session_01MVTQn9JRTRHTTv2ChRBqJp	LANE B8 bMALC (Sonnet, cap 4)	malsburg-hessen-1636 family_run --control-n + homophonic control at N 1000-3000 + leaf extent	brief 2026-09-26-lane-b8-malc.md
+2026-09-26T06:54Z	session_01SLyWV1bLKJUQezfqovbSZp	LANE B8 bMAT1F (Opus, cap 7)	matignon-mayenne-1586 NEAR 1f native-crop re-transcription + known-answer control	brief 2026-09-26-lane-b8-mat1f.md
+2026-09-26T06:54Z	session_01U8RmGfkd79W8AiKNybrxQa	LANE B8 bRIKFIX (Sonnet, cap 2)	riksarkivet-r4282-1628 control-count reconcile (QA7 flag 2)	brief 2026-09-26-lane-b8-rik.md
+2026-09-26T06:54Z	session_015dtbnZvxXUQDCrbyA6oMpY	LANE B8 bSIE2 (Sonnet, cap 3)	siena-concistoro-2308 homophonic nos. 6/24, 20/23 vs it16 control	brief 2026-09-26-lane-b8-sie2.md
+2026-09-26T06:54Z	session_013TcdPte4hjabjtENUiBraJ	LANE B8 bHCP2 (Sonnet, cap 3)	hessen-1824 masc + running_key (+ homophonic) at N=164	brief 2026-09-26-lane-b8-hcp2.md
