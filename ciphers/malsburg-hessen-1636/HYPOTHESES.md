@@ -2,6 +2,39 @@
 
 Append-only. Rows below are written by `tools/family_run.py` (CLAUDE.md rule 3: the matched CONTROL number sits beside the TARGET number in every row; a row with gate met = no reports a control that could not read its own design, and the target was not run). Prose sections may be added above this table by workers.
 
+## bMALX crib consistency (26 Sept 2026, not a family_run.py row -- no language judge involved)
+
+Statistic: among codes seen 2+ times in `cribs.tsv` (record 509 ff.32/33, two independent blind
+passes -- pass A a Sonnet subagent, pass B this worker -- plus 4 rows sourced from bMAL28B's f.28
+clear-clause crib), the share of PAIRS of occurrences of the same code whose candidate class
+(person/place/title/number-date/function word/noun/verb/unclear, assigned by a mechanical
+nearest-bounding-word rule, applied in leaf/line reading order so it cannot drift toward making a
+code's own repeats agree) agree. Control: permute the class labels across all 222 code-occurrence
+positions 1,000 times (keeps the multiset of classes and of codes, breaks the code<->class link).
+
+N=222 crib rows, 87 distinct codes, 36 repeated (2+) codes, 469 pairs compared.
+
+**REAL overall class-agreement share: 0.812. SHUFFLE (N=1000) mean 0.780, p95 0.836. Real sits
+*inside* the shuffle p95 -- TIE, non-discriminating (CLAUDE.md rule 3), not a pass.** The blended
+figure is inflated toward the majority class exactly the way CLAUDE.md's AX-NAMES paragraph warns
+(195/222 = 88% of rows graded "unclear" because most codes sit mid-run with another code on both
+immediate sides, not a clear word): per-class breakdown --
+`function word` real=0.062 (pairs=65) vs shuffle_p95=0.081 (real below shuffle p95);
+`noun` real=0.000 (pairs=31) vs shuffle_mean=0.017 (real below shuffle mean);
+`unclear` real=0.818 vs shuffle_p95=0.837 (the class doing almost all of the blended weight).
+No class shows a real margin above its own shuffle p95. **No candidate WORD (only class) was
+assigned anywhere in cribs.tsv** (this hand's legibility does not support forcing a specific word
+per rule 2/the clear_00xx.txt precedent) -- 0 codes have a consistent candidate word across 2+
+occurrences, well under the orchestrator's 3+ threshold for opening a nomenclator family on this
+evidence. System-match: 54/61 (88.5%) of 509's distinct numeric codes (this crib pass) occur in
+`pool/pooled.tsv`'s 173-value sign set, skewed toward the pool's own high-frequency ranks (median
+rank ~30 of 173); the 7 unshared codes (115,118,123,126,133,155,248) are all >=100, outside the
+pool's established 2-digit-dominant range -- 509 draws from the same code inventory as the rest of
+the pool (same numeric range and forms), not a separate system, but this run finds no crib-level
+evidence of what any individual code or code-pair (G.G./K.K. or G.G./A.A. -- the two blind passes
+disagree on the second mark) means. Files: `cribs.tsv`, `cribs_build2.py`, `cribs_control.py`,
+`pool_match.py`, `transcription/{0032,0033}_passA.tsv` (subagent), `transcription/{0032,0033}_passB_lines.txt` (this worker).
+
 <!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
 
 | date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |

@@ -1,0 +1,223 @@
+code	leaf	line	position	left_context	right_context	class	word	confidence
+70	0032	0032_L1	2	Extraict,	56.	unclear		H
+56	0032	0032_L1	3	Extraict, 70.	10.	unclear		H
+10	0032	0032_L1	4	70. 56.	28.	unclear		H
+28	0032	0032_L1	5	56. 10.	D.39.	unclear		H
+D.39	0032	0032_L1	6	10. 28.	27:	unclear		M
+27	0032	0032_L1	7	28. D.39.	91.	unclear		H
+91	0032	0032_L1	8	D.39. 27:	79.	unclear		M
+79	0032	0032_L1	9	27: 91.	24.	unclear		H
+24	0032	0032_L1	10	91. 79.	16.	unclear		H
+16	0032	0032_L1	11	79. 24.	30.	unclear		L
+30	0032	0032_L1	12	24. 16.		unclear		H
+115	0032	0032_L2	2	af	S.13.	noun		H
+S.13	0032	0032_L2	3	af 115.	15.	noun		M
+15	0032	0032_L2	4	115. S.13.	35.	unclear		H
+35	0032	0032_L2	5	S.13. 15.	22.	unclear		H
+22	0032	0032_L2	6	15. 35.	78.	unclear		M
+78	0032	0032_L2	7	35. 22.	63.	unclear		H
+63	0032	0032_L2	8	22. 78.	Vom	noun		H
+248	0032	0032_L3	1		solte	function word		H
+56.G	0032	0032_L3	5	solte billig das	22.	noun		M
+22	0032	0032_L3	6	das 56.G.	O.16.	noun		M
+O.16	0032	0032_L3	7	56.G. 22.	26.	unclear		L
+26	0032	0032_L3	8	22. O.16.	21.	unclear		H
+21	0032	0032_L3	9	O.16. 26.	29.	unclear		M
+29	0032	0032_L3	10	26. 21.	22.	unclear		H
+22	0032	0032_L3	11	21. 29.	Weil	function word		M
+129	0032	0032_L3	13	29. 22. Weil	27.	function word		M
+27	0032	0032_L3	14	22. Weil 129.	79.	function word		H
+79	0032	0032_L3	15	Weil 129. 27.	30.	unclear		H
+30	0032	0032_L3	16	129. 27. 79.	12.	unclear		H
+12	0032	0032_L3	17	27. 79. 30.	56.	unclear		M
+56	0032	0032_L3	18	79. 30. 12.	70.	unclear		H
+70	0032	0032_L3	19	30. 12. 56.	15.	unclear		H
+15	0032	0032_L3	20	12. 56. 70.	90.	unclear		H
+90	0032	0032_L3	21	56. 70. 15.	32.	unclear		M
+32	0032	0032_L3	22	70. 15. 90.	16.	unclear		H
+16	0032	0032_L3	23	15. 90. 32.	65.	unclear		L
+65	0032	0032_L3	24	90. 32. 16.	22.	unclear		H
+22	0032	0032_L3	25	32. 16. 65.	48.W	unclear		M
+48.W	0032	0032_L3	26	16. 65. 22.	Und also	function word		M
+22	0032	0032_L4	7	ist aber doch nicht das sein	11.	function word		M
+11	0032	0032_L4	8	...sein 22.	D.26.	function word		H
+D.26	0032	0032_L4	9	22. 11.	29.	unclear		M
+29	0032	0032_L4	10	11. D.26.	69.	unclear		H
+69	0032	0032_L4	11	D.26. 29.	16.	unclear		H
+16	0032	0032_L4	12	29. 69.	15.	unclear		L
+15	0032	0032_L4	13	69. 16.	13.	unclear		H
+13	0032	0032_L4	14	16. 15.	48.	unclear		H
+48	0032	0032_L4	15	15. 13.	19.	unclear		H
+19	0032	0032_L4	16	13. 48.	K.97.	unclear		H
+K.97	0032	0032_L4	17	48. 19.	77.	unclear		M
+77	0032	0032_L4	18	19. K.97.	90.	unclear		H
+90	0032	0032_L4	19	K.97. 77.	58.	unclear		M
+58	0032	0032_L4	20	77. 90.	21.	unclear		H
+21	0032	0032_L4	21	90. 58.	35.	unclear		M
+35	0032	0032_L4	22	58. 21.	B.63.	unclear		H
+B.63	0032	0032_L4	23	21. 35.	also	unclear		M
+70	0032	0032_L4	25	35. B.63. also	V.G.44.	unclear		H
+V.G.44	0032	0032_L4	26	B.63. also 70.	52.	unclear		L
+52	0032	0032_L4	27	also 70. V.G.44.	64.	unclear		H
+64	0032	0032_L4	28	70. V.G.44. 52.	37.	unclear		H
+37	0032	0032_L4	29	V.G.44. 52. 64.	70.	unclear		H
+70	0032	0032_L4	30	52. 64. 37.	W.16.	unclear		H
+W.16	0032	0032_L4	31	64. 37. 70.		unclear		L
+65	0032	0032_L5	1		47.	unclear		H
+47	0032	0032_L5	2	65.	22.	unclear		H
+22	0032	0032_L5	3	65. 47.	26.	unclear		M
+26	0032	0032_L5	4	47. 22.	79.	unclear		H
+79	0032	0032_L5	5	22. 26.	30.	unclear		H
+30	0032	0032_L5	6	26. 79.	57.	unclear		H
+57	0032	0032_L5	7	79. 30.	10.	unclear		H
+10	0032	0032_L5	8	30. 57.	16.	unclear		H
+16	0032	0032_L5	9	57. 10.	15.	unclear		L
+15	0032	0032_L5	10	10. 16.	y[?]	unclear		H
+y[?]	0032	0032_L5	11	16. 15.	94.	unclear		L
+94	0032	0032_L5	12	15. y[?].	24.	unclear		H
+24	0032	0032_L5	13	y[?]. 94.	35.	unclear		H
+35	0032	0032_L5	14	94. 24.	42.	unclear		H
+42	0032	0032_L5	15	24. 35.	155.	unclear		M
+155	0032	0032_L5	16	35. 42.	13.	unclear		M
+13	0032	0032_L5	17	42. 155.	48.	unclear		H
+48	0032	0032_L5	18	155. 13.	15.	unclear		H
+15	0032	0032_L5	19	13. 48.	70.	unclear		H
+70	0032	0032_L5	20	48. 15.	F.[?]	unclear		H
+118	0032	0032_L5	25	daß fällt	13.	function word		M
+13	0032	0032_L5	26	fällt 118.	16.	function word		H
+16	0032	0032_L5	27	118. 13.	22.	unclear		L
+22	0032	0032_L5	28	13. 16.	54.	unclear		M
+54	0032	0032_L5	29	16. 22.	48.	unclear		H
+48	0032	0032_L5	30	22. 54.	78.	unclear		H
+78	0032	0032_L5	31	54. 48.	63.	unclear		H
+63	0032	0032_L5	32	48. 78.	24.	unclear		H
+24	0032	0032_L5	33	78. 63.	B.[?]	unclear		H
+12	0032	0032_L6	3	Und nehmen	30.	unclear		M
+30	0032	0032_L6	4	Und nehmen 12.	Nr:	unclear		H
+22	0032	0032_L6	6	12. 30. Nr:	26.	unclear		M
+26	0032	0032_L6	7	30. Nr: 22.	90.	unclear		H
+90	0032	0032_L6	8	Nr: 22. 26.	30.	unclear		M
+30	0032	0032_L6	9	22. 26. 90.	73.	unclear		H
+73	0032	0032_L6	10	26. 90. 30.	91.	unclear		H
+91	0032	0032_L6	11	90. 30. 73.	48.	unclear		M
+48	0032	0032_L6	12	30. 73. 91.	25.	unclear		H
+25	0032	0032_L6	13	73. 91. 48.	60.	unclear		H
+60	0032	0032_L6	14	91. 48. 25.	sein sonders,	function word		H
+155	0032	0032_L7	8	dass ist gut der apparent daß	mit fließt X.X. oder	unclear		M
+64	0032	0032_L8	1		22.	unclear		H
+22	0032	0032_L8	2	64.	26.	unclear		M
+26	0032	0032_L8	3	64. 22.	16.	unclear		H
+16	0032	0032_L8	4	22. 26.	30.	unclear		L
+30	0032	0032_L8	5	26. 16.	21.	unclear		H
+21	0032	0032_L8	6	16. 30.	70.	unclear		M
+70	0032	0032_L8	7	30. 21.	15.	unclear		H
+15	0032	0032_L8	8	21. 70.	26.	unclear		H
+26	0032	0032_L8	9	70. 15.	16.	unclear		H
+16	0032	0032_L8	10	15. 26.	44.	unclear		L
+44	0032	0032_L8	11	26. 16.	Und damit	function word		H
+12	0032	0032_L8	17	exfahret nach	70.	noun		M
+70	0032	0032_L8	18	nach 12.	15.	noun		H
+15	0032	0032_L8	19	12. 70.	90.	unclear		H
+90	0032	0032_L8	20	70. 15.	zusehen; das	unclear		M
+133	0032	0032_L9	4	liance gefloßen, wirdt	16.	function word		M
+16	0032	0032_L9	5	wirdt 133.	22.	function word		L
+22	0032	0032_L9	6	133. 16.	26.	unclear		M
+26	0032	0032_L9	7	16. 22.	15.	unclear		H
+15	0032	0032_L9	8	22. 26.	11.	unclear		H
+11	0032	0032_L9	9	26. 15.	D.10.	unclear		H
+D.10	0032	0032_L9	10	15. 11.	30.	unclear		M
+30	0032	0032_L9	11	11. D.10.	48.	unclear		H
+48	0032	0032_L9	12	D.10. 30.	D.79.	unclear		H
+D.79	0032	0032_L9	13	30. 48.	63.	unclear		M
+63	0032	0032_L9	14	48. D.79.	müßen; das	function word		H
+69	0032	0032_L10	1		42.	unclear		H
+42	0032	0032_L10	2	69.	28.	unclear		H
+28	0032	0032_L10	3	69. 42.	12.	unclear		H
+12	0032	0032_L10	4	42. 28.	30.	unclear		M
+30	0032	0032_L10	5	28. 12.	57.	unclear		H
+57	0032	0032_L10	6	12. 30.	66.	unclear		H
+66	0032	0032_L10	7	30. 57.	26.	unclear		H
+26	0032	0032_L10	8	57. 66.	dii:[?]	unclear		H
+X.69	0032	0032_L10	10	66. 26. dii:[?]	B.90.	unclear		H
+B.90	0032	0032_L10	11	dii:[?] X.69.	126.	unclear		H
+126	0032	0032_L10	12	X.69. B.90.	O.93.	unclear		M
+O.93	0032	0032_L10	13	B.90. 126.	P.[?]	unclear		H
+P.[?]	0032	0032_L10	14	126. O.93.	Und das	function word		L
+27	0033	0033_L1	11	sollt gleichwohl	48.	unclear		H
+48	0033	0033_L1	12	gleichwohl 27.	30.	unclear		H
+30	0033	0033_L1	13	27. 48.	19.	unclear		H
+19	0033	0033_L1	14	48. 30.	21.	unclear		H
+21	0033	0033_L1	15	30. 19.	29.	unclear		M
+29	0033	0033_L1	16	19. 21.	30.	unclear		H
+30	0033	0033_L1	17	21. 29.	85.	unclear		H
+85	0033	0033_L1	18	29. 30.	56.	unclear		H
+56	0033	0033_L1	19	30. 85.	11.	unclear		H
+11	0033	0033_L1	20	85. 56.	26.	unclear		H
+26	0033	0033_L1	21	56. 11.	27.	unclear		H
+27	0033	0033_L1	22	11. 26.		unclear		H
+16	0033	0033_L2	1		63.	unclear		H
+63	0033	0033_L2	2	16.	j[?]	unclear		H
+j[?]	0033	0033_L2	3	16. 63.	T.48.	unclear		L
+T.48	0033	0033_L2	4	63. j[?].	63.	unclear		M
+63	0033	0033_L2	5	j[?]. T.48.	70.	unclear		H
+70	0033	0033_L2	6	T.48. 63.	64.	unclear		H
+64	0033	0033_L2	7	63. 70.	32.	unclear		H
+32	0033	0033_L2	8	70. 64.	69.	unclear		H
+69	0033	0033_L2	9	64. 32.	13.	unclear		H
+13	0033	0033_L2	10	32. 69.	12.	unclear		H
+12	0033	0033_L2	11	69. 13.	93.	unclear		H
+93	0033	0033_L2	12	13. 12.	22.	unclear		H
+22	0033	0033_L2	13	12. 93.	11.	unclear		M
+11	0033	0033_L2	14	93. 22.	30.	unclear		H
+30	0033	0033_L2	15	22. 11.	83.	unclear		H
+83	0033	0033_L2	16	11. 30.	13.	unclear		H
+13	0033	0033_L2	17	30. 83.	11.N	unclear		H
+11.N	0033	0033_L2	18	83. 13.	mit GG. A.A.	noun		M
+F.13	0033	0033_L8	2	[triangle mark]	123.	unclear		M
+123	0033	0033_L8	3	[triangle mark] F.13.	5. April. 1637 [date, excluded]	unclear		M
+Y.22	0033	0033_L9	12	...und Engelland	73.	unclear		M
+73	0033	0033_L9	13	Engelland Y.22.	D.13.	unclear		H
+D.13	0033	0033_L9	14	Y.22. 73.	48.	unclear		M
+48	0033	0033_L9	15	73. D.13.	21.	unclear		H
+21	0033	0033_L9	16	D.13. 48.	30.	unclear		M
+30	0033	0033_L9	17	48. 21.	27.	unclear		H
+27	0033	0033_L9	18	21. 30.		unclear		H
+24	0033	0033_L10	1		63.	unclear		H
+63	0033	0033_L10	2	24.	51.	unclear		H
+51	0033	0033_L10	3	24. 63.	79.	unclear		M
+79	0033	0033_L10	4	63. 51.	25.	unclear		H
+25	0033	0033_L10	5	51. 79.	gefahr	unclear		H
+77	0033	0033_L10	7	25. gefahr	61.	unclear		H
+61	0033	0033_L10	8	gefahr 77.	75.	unclear		M
+75	0033	0033_L10	9	77. 61.	90.	unclear		H
+90	0033	0033_L10	10	61. 75.	70.	unclear		H
+70	0033	0033_L10	11	75. 90.	57.	unclear		H
+57	0033	0033_L10	12	90. 70.	48.	unclear		H
+48	0033	0033_L10	13	70. 57.	46.	unclear		H
+46	0033	0033_L10	14	57. 48.	11.	unclear		M
+11	0033	0033_L10	15	48. 46.	83.	unclear		H
+83	0033	0033_L10	16	46. 11.	29.	unclear		H
+29	0033	0033_L10	17	11. 83.	16.	unclear		H
+16	0033	0033_L10	18	83. 29.	24.	unclear		H
+24	0033	0033_L10	19	29. 16.	42.	unclear		H
+42	0033	0033_L10	20	16. 24.	10.	unclear		H
+10	0033	0033_L10	21	24. 42.	mit	noun		H
+11	0033	0033_L10	23	10. mit	haben sie in Land	unclear		H
+11	0033	0033_L11	3	hab gemacht	O.28.	function word		H
+O.28	0033	0033_L11	4	hab gemacht 11.	H.16.	function word		H
+H.16	0033	0033_L11	5	11. O.28.	13.	unclear		H
+13	0033	0033_L11	6	O.28. H.16.	24.	unclear		H
+24	0033	0033_L11	7	H.16. 13.	57.	unclear		H
+57	0033	0033_L11	8	13. 24.	77.	unclear		H
+77	0033	0033_L11	9	24. 57.	89.	unclear		H
+89	0033	0033_L11	10	57. 77.	31.Z	unclear		H
+31.Z	0033	0033_L11	11	77. 89.		unclear		M
+21	0033	0033_L15	1		73.	unclear		H
+73	0033	0033_L15	2	21.	D.24.	unclear		H
+D.24	0033	0033_L15	3	21. 73.	35.	unclear		M
+35	0033	0033_L15	4	73. D.24.	156.	unclear		H
+156	0033	0033_L15	5	D.24. 35.	17./27. Mart. 1637 [date, excluded]	unclear		M
+63	0028	L36		79.	hiet daß alles so muß zu fordern	unclear		M-src-bMAL28B
+54	0028	L36		...handtlich (clause end, uncertain)	61. zz(22). S. W.	unclear		M-src-bMAL28B
+22	0028	L39		16.	wollest das fromm gutschreiben nach massgab	function word		M-src-bMAL28B
+71	0028	L39		...alßfort seyn (clause end)	83. zz6(226).	unclear		M-src-bMAL28B
