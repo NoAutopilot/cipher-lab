@@ -264,11 +264,11 @@ orchestrator USD 10.21. No live workers, no pending check-in. Rate limit `allowe
 
 ## LANE V9 handoff (session_01WNitVVGthGvdkHoyXGzkDw), 26 September 2026, live
 
-Opened 07:33 UTC by parent 7f (7g since 07:41); brief `.claude/briefs/runs/2026-09-26-lane-v9-orchestrator.md`. Orchestrator usage about 3.0 at 12:02. Workers 5, USD 15.27 (get_session), all ledgered D and archived. **No live workers at 12:02.**
+Opened 07:33 UTC by parent 7f (7g since 07:41); brief `.claude/briefs/runs/2026-09-26-lane-v9-orchestrator.md`. Orchestrator usage about 3.0 at 12:02. Workers 5, USD 15.27 (get_session), all ledgered D and archived. **Live at 13:30: V9-QA11 only.** Parent is 7h (session_01GT3Yv4kUZrBR8pc2s5EToH) since 13:05.
 
 | job | outcome |
 |---|---|
-| 1 rolling QA | V9-QA8 (Sonnet 2.44, QA/2026-09-26-0735.md, 1 flag); V9-QA9 (Sonnet 3.13, QA/2026-09-26-0942.md, 2 flags); V9-QA10 (Sonnet 2.85, QA/2026-09-26-1127.md, 45 items, 0 flags, both QA9 flags verified fixed). QA11 due about 13:30, window from 11:27; brief = copy of lane-v9-qa10.md with the window changed. |
+| 1 rolling QA | V9-QA8 (Sonnet 2.44, QA/2026-09-26-0735.md, 1 flag); V9-QA9 (Sonnet 3.13, QA/2026-09-26-0942.md, 2 flags); V9-QA10 (Sonnet 2.85, QA/2026-09-26-1127.md, 45 items, 0 flags, both QA9 flags verified fixed). V9-QA11 live since 13:29 (Sonnet, session_01DMASDZALvczYqhcrrURyaJ, window from 11:27, brief lane-v9-qa11.md). |
 | 2 verifiers | rah-morillo-1817 item 3: V9-MOR (Opus 5.28) **N0, key period, text known** -- printed 2021 (Bolivar, Gonzalez Segovia and Anzola, *Portuguesa en Carabobo* p.37 n.100); safe sentence AUDIT.md l.133. Grades: AUDIT C 86 / M 5 / U 6; decode --check still C 91 / U 6 (key files unchanged; a solver job applies the finer split). No second audit (N0). |
 | 3 lodewijk 5797 p6_spot4 | V9-NA172-3 (Opus 1.57): AUDIT.md A4, **withdrawn from classification**; status.json carries it (7g 08:12). |
 | 4 Mercy closer | still waits on the Lonchay-Cuvelier IV page read (owner machine). |
