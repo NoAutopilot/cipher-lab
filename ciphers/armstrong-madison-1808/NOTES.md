@@ -516,3 +516,37 @@ frame-0033 fetch + 111 survey thumbnails (every 6th frame, 600px) + 21 neighbour
 0638-0648, 600px, to find extent around the two numeral hits) + 4 native-resolution fetches (0024, 0643, 0644, plus
 one IIIF-region crop of 0643) = 141 total, all >=1.5s apart, descriptive User-Agent, no 429/403/challenge seen. No
 other hosts. No logins, no credentials touched.
+
+## ARM-S1 (26 Sept 2026, LANE ARM worker ARM-S1) -- shorthand mark inventory + period-system comparison, not a decode
+
+Full detail in `HYPOTHESES.md`'s "ARM-S1 marks" section; data in `images/shorthand/INVENTORY.tsv` and
+`images/shorthand/specimens/{manifest.tsv,comparison.tsv}`. Two independent Sonnet passes over ARM-TR's 29 line
+crops found roughly 35-47 distinct graphic-mark shapes (merging is approximate, not pixel-reconciled) in a sharply
+Zipfian frequency profile -- both passes independently described it as looking more like a syllable/word shorthand
+than a flat symbol-for-letter substitution, without being shown each other's conclusion. Marks sit overwhelmingly
+in unbroken runs of several to ~19 glued together at a line's start or end (not as single marks flanked by
+numerals, which the bare `*`/`**` notation in `ciphertext.txt` would suggest), with a few pure-shorthand lines and,
+newly found, superscript ticks sitting directly above (not beside) a numeral on two lines. Flag: two of ARM-TR's
+crops (`page2_L02`, `page2_L06`) show almost none of the marks their own filenames claim -- a likely crop-region or
+bookkeeping issue in that earlier pass, not fixed here.
+
+Fetched an alphabet/consonant specimen plate for all 6 period systems Tomokiyo names (Taylor 1786 -- his own
+already-known-negative crop, reused; Byrom 1796; Gurney 1752 -- a running specimen, not a clean plate, since the
+book's 11 plates are all unpaginated front matter that a keyword search cannot isolate; Mavor 1792; Weston 1727;
+Macaulay 1747) plus Pitman's 1837/1890 Phonography as a matched control (Victorian, geometric-line family, not
+18th-c. cursive-loop). A ten-category qualitative shape comparison (`comparison.tsv`) scores the four richest,
+loopiest 18th-c. systems (Taylor 7.5, Weston 7.0, Gurney 6.0, Mavor 6.0) above the two more minimal ones (Macaulay
+5.0, Byrom 4.0), and all six above the geometric Pitman control (2.5) -- a real gradient, since the control
+genuinely can and does score lower (rule 3). But Taylor, the already-published negative, scores at the TOP of this
+table, not below the four untested candidates: a coarse "does a similar stroke-shape appear in this alphabet"
+check cannot reproduce Tomokiyo's actual symbol-by-symbol negative, because generic loops/hooks/waves recur across
+nearly every longhand-derived 18th-c. shorthand almost by construction. Conclusion carried to HYPOTHESES.md: this
+comparison places the target's marks in the right general family (loopy cursive personal shorthand, not a
+geometric or flat-substitution system) but is too coarse to pick out which of Byrom/Gurney/Mavor/Weston/Macaulay
+(if any) is the actual source -- that needs a symbol-by-symbol frequency/positional match against each, the way
+Tomokiyo ran it against Taylor, which is the next step for a successor and was not this job's brief.
+
+Requests: archive.org ~35 (advancedsearch, metadata, `fulltext/inside.php` search-inside -- a route not previously
+documented in CLAUDE.md's Access playbook table, used to jump straight to each book's alphabet-plate leaf by
+keyword rather than paging through by trial and error -- and page-image fetches), cryptiana.web.fc2.com 1. All
+>=1.5s apart, descriptive User-Agent, no logins.

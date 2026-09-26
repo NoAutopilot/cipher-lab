@@ -1,0 +1,48 @@
+pass	shape_id	description	count	positions (file:index)	example_crop
+A	S1	small pennant/flag shape on a short vertical stem	1	p1L03:1	page1_L03_seq2-2_1marks.jpg
+A	S2	shallow open loop like a cup/smile, open at top	4	p1L04:1; p1L05:1; p1L17:1; p2L03:4	page1_L04_seq3-13_1marks.jpg
+A	S3	short diagonal slash stroke, like "/"	7	p1L05:2; p1L10:5; p1L12:4,12; p1L13:19; p1L17:2; p2L03:6	page1_L05_seq14-25_5marks.jpg
+A	S4	small loop with a short tail, like cursive numeral "3"	12	p1L05:3; p1L06:2,5; p1L09:3,4; p1L10:3,6; p1L12:7,14; p1L13:3,9; p1L17:10	page1_L06_seq26-39_8marks.jpg
+A	S5	short horizontal squiggle with a single hump (tilde-like wave)	9	p1L05:4; p1L06:1; p1L09:1,5; p1L10:4,9; p1L13:5; p2L02:cut; p2L04:4	page1_L06_seq26-39_8marks.jpg
+A	S6	small curled hook resembling a backward cursive "s" or "5"	12	p1L05:5; p1L06:7,8; p1L09:12,14; p1L10:8; p1L13:2,7,8; p1L17:5,7,8	page1_L06_seq26-39_8marks.jpg
+A	S7	small curve like lowercase "c", open to the right	2	p1L06:3; p1L13:10	page1_L06_seq26-39_8marks.jpg
+A	S8	short upright stroke with a small hook at the top, like cursive "r"	2	p1L06:4; p1L09:10	page1_L06_seq26-39_8marks.jpg
+A	S9	percent-sign-like mark: two small loops joined by a short diagonal	2	p1L06:6; p2L03:9	page1_L06_seq26-39_8marks.jpg
+A	S10	large tight spiral/coil loop, like a treble-clef curl	1	p1L07:1	page1_L07_seq40-50_2marks.jpg
+A	S11	small checkmark/tick, short upward diagonal flick	1-2 (uncertain)	p1L07:2	page1_L07_seq40-50_2marks.jpg
+A	S12	small hook opening left, like a backward comma / cursive "2"	12	p1L09:2,11,15; p1L10:2; p1L12:1,3,10,15; p1L13:4; p1L17:4,6,11	page1_L09_seq61-79_17marks.jpg
+A	S13	curved stroke like a right parenthesis ")"	2	p1L09:6,17	page1_L09_seq61-79_17marks.jpg
+A	S14	a single dot	10	p1L09:7,9; p1L10:1; p1L12:5,8,9,13; p1L13:13,14; p1L17:3	page1_L09_seq61-79_17marks.jpg
+A	S16	elongated horizontal squiggle with two humps, like a flattened "m"/"w"	8	p1L09:11,13,16; p1L12:6,16; p1L13:12; p2L03:5,8	page1_L09_seq61-79_17marks.jpg
+A	S18	long, flatter horizontal dash/extended wave (mostly straight, slight undulation)	6	p1L10:7; p1L12:2,11; p1L13:6; p1L17:9; p2L03:1	page1_L10_seq80-93_10marks.jpg
+A	S19	hook with a descender tail below baseline, like cursive "y"/"j"	2	p1L10:9; p2L03:2	page1_L10_seq80-93_10marks.jpg
+A	S20	hook resembling cursive numeral "7" (diagonal stroke to short vertical)	2	p1L13:1; p2L03:7	page1_L13_seq122-141_19marks.jpg
+A	S21	small "c"-curve with a dot above it (accented)	1	p1L13:11	page1_L13_seq122-141_19marks.jpg
+A	S22	small mark topped with a caret/circumflex accent	2	p1L13:15,16	page1_L13_seq122-141_19marks.jpg
+A	S23	cursive loop with a horizontal bar/hat above it	1	p1L13:17	page1_L13_seq122-141_19marks.jpg
+A	S24	small loop with a short horizontal bar underneath (underscored loop)	1	p1L13:18	page1_L13_seq122-141_19marks.jpg
+A	S27	compound mark: small loop with two dots above, joined to a curling tail below	1	p2L01:1	page2_L01_seq188-197_1marks.jpg
+A	S28	short double-stroke mark like an equals sign "="	1	p2L03:3	page2_L03_seq213-226_9marks.jpg
+A	S29	double parallel diagonal slashes, "//"	1	p2L04:1	page2_L04_seq227-240_6marks.jpg
+A	S30	small angular chevron/"greater-than"-like mark	1	p2L04:5	page2_L04_seq227-240_6marks.jpg
+A	S31	small hook with an attached wave tail (inverted "r" joined to a loop)	1	p2L04:6	page2_L04_seq227-240_6marks.jpg
+B	Sh.1	low horizontal wave, 1-2 shallow humps, like a small cursive "m"/"w", no loop, sits on baseline (dominant filler stroke)	52	L07:3,5,8; L11:1,3,5,6,10,12,13; p3L01:1,5,6,8; p3L03:4,5; p3L04:2,4,5,7,9; p3L05:5,9,10,12; p3L07:1,3,4,6; p3L08:1,3,5,7,8,10; p3L09:2; p3L12:1,3,5,8; p3L13:3,4,8,10,11,13,14,15,17,18,20,21	page3_L13_seq511-528_18marks.jpg
+B	Sh.2	small closed loop with a short trailing tail, like a cursive numeral "3"	17	L07:4; L11:2,11,14; p3L01:2,7; p3L04:1,3; p3L05:1,11; p3L07:2; p3L08:6,9; p3L12:2; p3L13:9,16,19	page3_L13_seq511-528_18marks.jpg
+B	Sh.3	tall hook curving back at the top, like a cursive numeral "5" or letter "b"	12	L07:2,9; p3L01:3,4; p3L03:6; p3L04:6; p3L05:3; p3L07:7; p3L08:4; p3L12:6; p3L13:1,12	page3_L13_seq511-528_18marks.jpg
+B	Sh.4	sharp angular zigzag stroke, like a cursive "z"	5	p3L04:8; p3L05:8; p3L06:2; p3L07:5,8	page3_L06_seq427-438_2marks.jpg
+B	Sh.5	tiny short horizontal dash/macron sitting directly above a numeral (superscript, not on baseline)	5	L10:1,2,3; L13:1,2	page2_L10_seq296-311_13marks.jpg
+B	Sh.6	short horizontal bar or single dash, like "=" or "-"	5	L07:6; L11:4; p3L05:7; p3L07:9; p3L13:7	page3_L13_seq511-528_18marks.jpg
+B	Sh.7	vertical stroke with a small hook/curl at the bottom, like a cursive "p"/"j"/"y" descender	3	L11:7; p3L05:6; p3L13:2	page3_L13_seq511-528_18marks.jpg
+B	Sh.8	tall diagonal flourish/flag stroke, like a check-mark or ascender flag (often line-initial)	2	L07:1; L11:9	page2_L07_seq265-275_2marks.jpg
+B	Sh.9	large loop with a descending tail, like a cursive numeral "2"	2	p3L05:2; p3L12:4	page3_L05_seq417-426_7marks.jpg
+B	Sh.10	small comma-like flick, a short curved downward stroke	2	L13:3; p3L09:1	page2_L13_seq334-345_5marks.jpg
+B	Sh.11	"%"-like symbol: one or two small circles with a diagonal/horizontal slash through them	2	L07:7; p3L13:5	page2_L07_seq265-275_2marks.jpg
+B	Sh.12	tall narrow open hook curving left at its base, taller/more open than Sh.1's wave	1	L11:8	page2_L11_seq312-322_1marks.jpg
+B	Sh.13	short arrow-like stroke, a straight line with a small hook/head at one end	1	p3L03:1	page3_L03_seq392-403_6marks.jpg
+B	Sh.14	looped ampersand-like double-loop shape	1	p3L03:2	page3_L03_seq392-403_6marks.jpg
+B	Sh.15	two short parallel vertical bars, like "II"	1	p3L03:3	page3_L03_seq392-403_6marks.jpg
+B	Sh.16	straight diagonal slash stroke, like "/"	1	p3L05:4	page3_L05_seq417-426_7marks.jpg
+B	Sh.17	small caret/peak shape, like an inverted V, "^"	1	p3L06:1	page3_L06_seq427-438_2marks.jpg
+B	Sh.18	closed loop with a hook tail curving right, like a cursive "G" or "6"	1	p3L08:2	page3_L08_seq452-464_7marks.jpg
+B	Sh.19	small open C-shaped curve, like a backward comma or open circle	1	p3L12:7	page3_L12_seq498-510_7marks.jpg
+B	Sh.20	open square-bracket/box-like shape	1	p3L13:6	page3_L13_seq511-528_18marks.jpg

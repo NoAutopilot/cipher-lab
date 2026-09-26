@@ -1,0 +1,12 @@
+category	description	target_count	Taylor1786	Byrom1796	Gurney1752	Mavor1792	Weston1727	Macaulay1747	Pitman_CONTROL
+C1	low horizontal wave/hump, no loop (baseline "filler" stroke)	~75	yes	partial (one letter, n)	yes	partial	yes (m = tilde)	no	no
+C2	small loop with short trailing tail ("3"-shape)	~29	yes	no	yes	no	yes (in double/triple-consonant column)	no	no
+C3	tall hook curving back at top (like "5" or "b")	~24	yes	yes	yes	yes	yes	yes	partial (some fricative arcs)
+C4	small hook opening left (like a backward "2")	~12	yes	partial	yes	yes	yes	yes	partial (some fricative arcs)
+C5	isolated dot	~10-15	yes (book text: dot = vowel)	no	partial (hard to isolate in running cursive)	yes (vowel dots)	partial	yes (e = dot)	no (not in this consonant-only table)
+C6	diagonal slash stroke ("/")	~8	partial	yes	partial	partial	yes (t = /)	yes (several)	yes (P/B, CH/J)
+C7	sharp zigzag stroke (like "z")	5	no	no	no	no	no	no	no
+C8	short horizontal bar/dash	~11	partial	yes	partial	yes	yes	yes	yes (K/G, T/D)
+C9	"%"-like compound (two loops + slash)	4	no	no	no	no	no	no	no
+C10	descender hook (tail below baseline)	5	yes	partial	partial	yes	partial	no	no
+	SCORE (yes=1, partial=0.5, no=0)		7.5	4.0	6.0	6.0	7.0	5.0	2.5

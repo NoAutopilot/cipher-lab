@@ -411,3 +411,92 @@ line was produced here because no target decode exists.
 | 26 Sept 2026 08:41 | nomenclator | N=404 K=219 restarts=3 corpus=writingsjamesmo02unkngoog.txt.gz+writingsjamesmo11monrgoog.txt.gz+writingsalbertg01gallgoog.txt.gz+writingsofjamesm0007unse_s2a1.txt.gz+writingsofjamesm0008unse.txt.gz+writingsofthomas09jeffiala.txt.gz sweeps=30,phase1=20 | 1-3 | 0.141 (0.046-0.198) | not run (control-only) | - | no | ARM-C1 control 1 (held-out Jefferson IX, cold particle block) |
 | 26 Sept 2026 08:48 | nomenclator | N=404 K=219 restarts=3 corpus=writingsjamesmo02unkngoog.txt.gz+writingsjamesmo11monrgoog.txt.gz+writingsalbertg01gallgoog.txt.gz+writingsofjamesm0007unse_s2a1.txt.gz+writingsofjamesm0008unse.txt.gz+writingsofthomas09jeffiala.txt.gz sweeps=30,phase1=20,shuffle_target=1 | 1 | 0.198 (0.198-0.198) | -1467.777 | PASS - armstrong-madison-1808 (a PASS is a gate for a verifier, not a reading; rule 10) | yes (gate 0.0) | ARM-C1 control 3 shuffled-target floor; gate disabled for this floor run only, NOT a target run |
 | 26 Sept 2026 09:02 | nomenclator | N=404 K=219 restarts=3 corpus=writingsjamesmo02unkngoog.txt.gz+writingsjamesmo11monrgoog.txt.gz+writingsalbertg01gallgoog.txt.gz+writingsofjamesm0007unse_s2a1.txt.gz+writingsofjamesm0008unse.txt.gz+writingsofthomas09jeffiala.txt.gz sweeps=30,phase1=20 | 1-3 | 0.135 (0.027-0.201) | not run (control-only) | - | no | ARM-C1 control 1 rerun after determinism fix (held-out Jefferson IX, cold particle block) |
+
+## ARM-S1 marks (26 Sept 2026, LANE ARM worker ARM-S1): shorthand mark inventory + period-system shape comparison
+
+**Not a decode; shapes only, per the brief.** Two Sonnet subagents each read one batch of ARM-TR's line crops
+(`images/shorthand/*.jpg`, 15 + 14 crops, split by file-sequence order rather than exactly by page since a per-page
+split would have put 19 crops in one call against the brief's 15-crop cap) and independently catalogued every
+distinct graphic-mark shape they saw, its count, and its position. Merged, unreconciled (each subagent's own
+shape IDs kept, prefixed `A`/`B` for the two passes) into `images/shorthand/INVENTORY.tsv`, 27 + 20 = 47 raw shape
+rows. The two passes were not shown each other's catalog, so the same real shape sometimes got two different
+descriptions/IDs in the two batches (e.g. pass A's S5/S16/S18 "short/elongated/long wave" and pass B's Sh.1 "low
+horizontal wave" are almost certainly the same underlying stroke) -- true pixel-level reconciliation was out of
+this job's time box; the numbers below are reported per-pass and then combined into ten hand-merged descriptive
+categories (C1-C10, covering the shapes that recur >=2 times in either pass; one-off "hapax" shapes, mostly
+compound flourishes seen exactly once such as an ampersand-loop or a double vertical bar "II", are listed in
+INVENTORY.tsv but excluded from the comparison since a single occurrence cannot be judged as a recurring
+character).
+
+**Inventory size and profile.** Combining both passes: roughly 35-47 distinct shapes depending on how generously
+near-duplicate wave/hook variants are merged, but the *frequency* distribution is sharply Zipfian in both passes
+independently -- pass A: three shapes (S4 "3-loop", S6 "backward-5/s hook", S12 "left-hook/2-shape") at 12 each,
+plus S14 "dot" at 10, dominate; pass B: one shape (Sh.1 "low wave") alone accounts for 52 of ~211 marks in that
+batch (roughly 45%), with Sh.2 "3-loop" (17) and Sh.3 "tall back-hook" (12) next, then a long tail of 15 shapes
+seen 1-5 times each. Both subagents, independently and unprompted to agree, characterised this as "much more like
+a syllable/word shorthand system than an arbitrary flat symbol-substitution alphabet" (pass A) and "looks more
+like a syllable- or word-based shorthand system than an arbitrary flat letter/digit substitution" (pass B) --
+convergent, not cross-checked.
+
+**Placement.** Both passes agree, independently: marks overwhelmingly occur in unbroken RUNS of several to ~19
+marks glued together (no periods or gaps inside a run), anchored at the start or end of a numeral-bearing line;
+true single marks flanked by numerals on both sides (the shape the Founders `**` notation implies) were seen only
+once or twice per batch, contra the general impression a bare `*`/`**` count gives. Several lines are pure
+shorthand with no numerals at all (page1 L12/L13, page2 L03/L11 in part, page3 L13), matching ARM-TR's finding of
+"two full lines" of pure shorthand. Pass B additionally found tiny superscript ticks sitting directly ABOVE a
+numeral (not beside it) on two numeral-heavy lines (page2 L10, L13) -- a third placement mode neither the brief
+nor pass A anticipated.
+
+**Data-quality flag (pass A, not corrected here, out of this job's scope):** two crops, `page2_L02_seq198-212_15marks.jpg`
+and `page2_L06_seq250-264_12marks.jpg`, show almost none of the marks their filenames' `_Nmarks` count claims (pass
+A counted ~1 visible mark in each against 15 and 12 claimed). This is either a crop-region misalignment from
+ARM-TR's line-detection pass or a filename/count bookkeeping slip in that pass's `index.tsv` -- flagged for a
+successor, not fixed here (would need re-cropping from the source frame, outside this job's file list).
+
+**Specimens fetched.** `images/shorthand/specimens/` + `manifest.tsv`: all 6 systems Tomokiyo names (Taylor 1786,
+Byrom 1796 abridgement, Gurney 1752, Mavor 1792, Weston 1727, Macaulay 1747) plus Pitman 1837/1890 Phonography as
+the control (a different period -- Victorian, not 18th c. -- and a different script family -- geometric
+straight-line/simple-arc, not cursive loop-and-hook). Taylor's specimen is Tomokiyo's own crop (already the
+known-negative comparison); the other four period systems and the control are full alphabet/consonant plates
+fetched directly from Internet Archive full-view scans (archive.org's `fulltext/inside.php` search-inside endpoint,
+not previously documented in this repo's Access playbook table, was used to jump straight to each book's alphabet
+plate by searching for "alphabet"/"consonants" and reading the returned leaf number, rather than paging through
+each book by trial and error -- worth adding to CLAUDE.md's IA routes if a future worker needs this again).
+Gurney's own alphabet plate was not isolated in time (per the book's preface, all 11 plates are bound before the
+title page as a set of un-paginated engravings; the fulltext search only locates *discussion* of a plate, not the
+plate leaf itself, when the plate carries no OCR-able caption) -- a specimen page showing shorthand word-forms
+embedded in running cursive text (page 6) was used instead, which is visually representative of the system's mark
+shapes even though it is not a clean per-letter chart.
+
+**Comparison, with a control that can differ (rule 3).** `images/shorthand/specimens/comparison.tsv`: ten
+hand-merged shape categories (C1 wave/hump, C2 3-loop-with-tail, C3 back-curving hook, C4 left-opening hook, C5
+isolated dot, C6 diagonal slash, C7 zigzag, C8 short bar/dash, C9 percent-like compound, C10 descender hook),
+scored by eye against each system's fetched plate/specimen as yes(1)/partial(0.5)/no(0) -- this is a qualitative
+"does a plausibly similar stroke-shape appear in this system's character set" judgment, not a symbol-by-symbol or
+pixel match, and is graded accordingly (a cryptanalytic S/M-grade impression, not H/C). Scores: **Taylor 7.5,
+Gurney 6.0, Weston 7.0, Mavor 6.0** (the four 18th-c. systems with the richest, loopiest character sets) >
+**Byrom 4.0, Macaulay 5.0** (the two systems built mostly from single straight/simple strokes rather than
+tailed loops) > **Pitman CONTROL 2.5** (geometric family: only the slash and short-bar categories, plus a
+generous partial credit on two categories, find any counterpart at all; no wave, no tailed loop, no dot in this
+specific consonant-only plate, no percent-compound). The control genuinely can and does score lower here (rule 3's
+"a control must be able to fail differently" bar is met), so the gradient is a real, if soft, signal that the
+target's marks as a population belong to the broad looped-cursive-shorthand family rather than to a
+geometric/linear one.
+
+**But this does not license picking a system.** The known negative, Taylor, scores at the TOP of the table (7.5,
+tied for highest with Gurney/Weston close behind), not distinguishably below the four untested candidates --
+Tomokiyo already ruled Taylor out by an actual symbol-by-symbol comparison (his article: "the symbols seem to be
+different from those used by Armstrong"), yet a coarse shape-category check like this one cannot reproduce that
+negative, because generic loops/hooks/waves recur across nearly every 18th-century longhand-derived shorthand
+alphabet almost by construction (they are all built from the same small vocabulary of pen-strokes a period writer
+already knew). The honest reading: this comparison shows the target's marks are the right STYLE of thing (a loopy
+cursive personal shorthand, not a geometric one, not a flat arbitrary substitution code) but is too coarse an
+instrument to identify WHICH of Byrom/Gurney/Mavor/Weston/Macaulay (if any) it is -- that would need the kind of
+symbol-by-symbol frequency/positional match Tomokiyo ran against Taylor, run against each of the other five in
+turn, which this job's brief did not ask for and this job's time box did not allow. Named as the next step in
+NOTES.md.
+
+Requests this pass: archive.org about 35 (advancedsearch x5, metadata x6, fulltext/inside.php search-inside x5,
+page-image fetches ~19 across the trial-and-error Taylor search and the four other systems' plates, well under the
+40-request cap); cryptiana.web.fc2.com 1 (Taylor specimen, already an established route). All >=1.5s apart,
+descriptive User-Agent. No logins, no credentials touched.
