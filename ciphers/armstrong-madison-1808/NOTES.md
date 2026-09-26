@@ -1,0 +1,170 @@
+open
+
+Founders Online, Papers of James Madison, Secretary of State Series, documents 99-01-02-2728 (20 Feb 1808,
+via its Wayback Machine copy, since founders.archives.gov itself answers scripted fetches with an empty
+HTTP 202 CloudFront challenge) and 99-01-02-2703 (15 Feb 1808, same route) read directly by this worker;
+Bourdeau's `cyphersolver/armstrong/` folder (fresh clone, commit 763a3b98ab1c) and Tomokiyo's
+`madison_armstrong.htm` (already on disk, re-read) grepped/read in full; AFIO's contest announcement page
+fetched directly; DECODE's cached records (`sources/decode/*.tsv`) grepped for "armstrong"/"madison", no
+hit; fresh shallow clones of both solver repositories grepped, no hit in aymeloglu/unsolved-ciphers; two
+WebSearch queries for a prior or model-assisted solve, none found beyond the AFIO claim already on file.
+
+# John Armstrong to James Madison, Paris, 20 February 1808 -- unique/private code + shorthand
+
+QUEUE row: 27 (rank 30). CATALOG.md line 160 ("Open (a claimed solution is disputed)"). LANDSCAPE.md line 53
+("The AFIO claimed solution adjudicated and rejected. Still unsolved."). POOLS.tsv line 599 (pool of 1).
+Assigned by the parent 26 Sept 2026 (ROOM.md 06:34) after S. Tomokiyo (Cryptiana) named this his preferred
+target for us, in reply to the owner's 24 Sept email (`outreach/tomokiyo-gramont-danzay.md`), recommending it
+"via sibling-code vocabulary".
+
+## Sources fetched this pass (26 Sept 2026)
+
+Saved unmodified in `sources/cryptiana/blog/`:
+- `2026-06-undecoded-armstrongs-letter-1808-sent.html` -- Tomokiyo's blog post of 4 June 2026 pointing at his
+  updated article (below).
+- `dbourdeau-cyphersolver-armstrong.html` -- Bourdeau's write-up page (a *different* letter, see below).
+- `2026-09-a-cipher-between-louise-of-savoy-and.html` -- the Raince/Carpi post (digest in
+  `ciphers/dupuy452-carpi-1520/NOTES.md`, not this target).
+
+Already on disk from an earlier sweep, re-read in full: `sources/cryptiana/web/madison_armstrong.htm`
+("An Outlier Code in Armstrong-Madison Correspondence (1808)", first posted 22 Oct 2025, last modified
+9 June 2026) -- this is Tomokiyo's own article about *this* letter, linked from the June blog post.
+
+Fetched and read, not saved to the repo (small reference files, not this project's own working data):
+`WE028.txt` (Tomokiyo's transcription of Monroe's code, see "Sibling codes" below), the AFIO contest page,
+and Founders Online documents 99-01-02-2728/99-01-02-2703 via Wayback.
+
+## What the cipher is
+
+**Not the Armstrong-Madison office code.** Armstrong's routine correspondence with Madison (1804-1810) used
+a single ~1600-element word/syllable code conventionally labelled by its group for "the", **THE=972**
+(Weber, *United States Diplomatic Codes and Ciphers, 1775-1938*, pp.154, 188, cites ~40 letters in it among
+DUSMF, NARA RG 59 microcopy M34 rolls 13-14). The 20 Feb 1808 letter is not in that code: Madison himself
+wrote to Jefferson on 15 May 1808 (Founders 99-01-02-3082) that "The undecyphered letter from A. was
+probably misaddressed to the Secretary of State. No such Cypher is in the office, and must be one concerted
+with another correspondent" -- Angela Kreider (editor, Papers of James Madison, U.Va.) reads this as
+referring to the 20 Feb letter, and her team confirms no other State Department code (Weber's own printed
+codes included) matches it either. Bourdeau's `armstrong/NOTES.md` gives the quantitative version: his
+merged THE=972 table (see below) decodes the *15 Feb 1808* Armstrong-to-Madison letter (Founders
+99-01-02-2703, five days earlier, same code) at 72% (176 of 243 groups H/C-known, producing continuous
+sense), but the *20 Feb* letter at only 25% (92 of 369 groups), and those hits render as noise, not sense --
+"the 20 Feb code is a different code". It also carries "graphical symbols" resembling a shorthand mixed
+with the numeral groups (35 short passages plus two full lines, `*`/`**`/`***` in `ciphertext.txt`); Tomokiyo
+compared them to Taylor's 1786 shorthand (no match) and, per Norbert Biermann's bibliography lead (a German
+1895 book with an 18th-century English-shorthand bibliography, pp.38-40), lists Weston, Mitchell, Gurney,
+Byrom, Mavor and Macaulay as further candidates, none checked against the symbols as of the June 2026
+update.
+
+**Correction to QUEUE row 27's own cheap-test description.** The row reads "Place Krajcovic's crib from
+Armstrong's 15 Feb 1808 letter to Jefferson against the opening groups in ... feb20_ciphertext.txt". Two
+things in that sentence do not check out:
+1. **"to Jefferson" is wrong.** Founders Online 99-01-02-2703 is headed "**To James Madison** from John
+   Armstrong, Jr., 15 February 1808" (confirmed by direct fetch this pass, via Wayback). Every source this
+   sweep read (Tomokiyo, Bourdeau, Founders itself) treats the 15 Feb letter as Armstrong-to-Madison, in the
+   ordinary THE=972 code -- the same letter Bourdeau's own paired check (above) uses as the positive half of
+   his negative result on the 20 Feb letter. There is no "Armstrong to Jefferson, 15 Feb 1808" letter found
+   anywhere in this sweep.
+2. **No "Krajcovic" connects to Armstrong anywhere reached.** Grepped fresh clones of both solver
+   repositories, `sources/cryptiana/`, this repository's own QUEUE.md/STATUS.md/LANDSCAPE.md/CATALOG.md, and
+   two WebSearch queries: the only "Krajcovic" this repository has on file is a solver credited on a wholly
+   unrelated target, `UNSOLVED-SURVEY.md` line 113 ("Catokwacopa ads, Evening Standard", 1875, "Bosbach,
+   Estes, Ernst, Krajcovic readings since 2018"). This reads as a scout-row mixup (a name from a different
+   target's cheap-test note attached to this one), not a real, findable crib -- flagged, not corrected in
+   QUEUE.md by this worker (out of this brief's file list; the parent should decide whether to fix the row).
+
+Given both problems, the spec below (`specs/armstrong-madison-1808.json`) does not name "Krajcovic's crib"
+as test 1; it describes what a crib-placement test against the 15 Feb 1808 letter can actually mean here
+(the two letters share no code, so a crib test is about shared vocabulary/structure across Armstrong's own
+letters generally, not a key transplant) and marks the named source unverifiable.
+
+## Ciphertext (Bourdeau's transcription, CLAUDE.md rule 8)
+
+Copied unmodified into `ciphertext.txt` from `cyphersolver/armstrong/feb20_ciphertext.txt` (commit
+763a3b98ab1c, MIT code / CC BY 4.0 text), itself transcribed from the Founders Online Wayback copy of
+99-01-02-2728 (Founders' own site is now CloudFront-challenged for scripts, confirmed this pass: a direct
+curl fetch returns HTTP 202 with 0 bytes). **369 groups, 216 distinct, values 1 to 1900.** 35 short passages
+plus 2 full lines are graphic symbols, not numeral groups (marked `*`/`**`/`***`); one group is illegible
+(`<..>`). The opening word "The" is in clear. No independent second transcription against the NARA M34
+roll 14 images (29-32) has been made by anyone found this sweep -- Bourdeau's own notes flag this as
+unverified against the manuscript.
+
+## Sibling codes named by Bourdeau or Tomokiyo
+
+| Code | Correspondents | Size | Published how, by whom | Fits the 20 Feb letter? |
+|---|---|---|---|---|
+| **THE=972** (unlabelled WE number) | Armstrong <-> Madison, 1804-1810, all *other* known letters | ~1600 elements, blockwise alphabetical (many short A-Z runs, syllables restart the alphabet every few dozen groups) | **In part.** Tomokiyo's own partial table (227 entries, from the one known-plaintext letter of 4 May 1806, `code972_partial.json`) merged by Bourdeau with ~580 pencil decodes harvested from NARA M34 roll 13's marginal annotations (`pairs.txt`, `armstrong/NOTES.md`) into a 580-of-~1600-group table (H/C/M/I graded), published as `key972.js` in the repo (MIT) and rendered on `docs/armstrong.html` (CC BY 4.0 text) | **No** (Bourdeau's own paired-check negative, above: 72% on 15 Feb, 25%/noise on 20 Feb) |
+| **WE027** | Robert R. Livingston (Armstrong's predecessor) <-> Madison | ~1700 elements, blockwise alphabetical | **Not published anywhere found.** Named only descriptively by Tomokiyo, cited to Weber 1979 pp.154, 188 (a print survey, not a transcription); no `.txt`/`.json` table for WE027 exists in Bourdeau's repo or Tomokiyo's site | Not tested (no table exists to test with) |
+| **WE028 (THE=1385)** | James Monroe (sent to Paris to assist Livingston) <-> Madison | 1600 elements, blockwise alphabetical | **Published in full by Tomokiyo himself.** Fetched `WE028.txt` this pass (cryptiana.web.fc2.com/code/WE028.txt, one request): 1600 semicolon-separated `code;word` lines, 1 to 1600, no gaps found on a line-count check. Same office, same period, same code-construction convention (word/syllable groups, blockwise-alphabetical runs) as THE=972, but a different correspondent's own table -- not applied here | Not tested this pass |
+
+No sibling code's own vocabulary has been checked, digit-for-digit, against the 20 Feb letter's 216 distinct
+groups by this worker (per the brief: intake only, no cryptanalysis). Tomokiyo's suggestion ("a model might
+read it if it learns the vocabulary of a sibling code") reads, after this sweep, as more plausibly about the
+*construction convention* the three codes share (word-and-syllable groups, blockwise-alphabetical runs,
+common-word homophones) than about any single sibling's *values* transferring directly -- THE=972's own
+values are already shown not to fit.
+
+## The AFIO claimed solution and its adjudication
+
+**Claim.** The Association of Former Intelligence Officers announced, 27 May 2025 ("We Have a Winner in the
+Armstrong-Madison Encrypted Letter Contest!", afio.com/member-news, fetched directly this pass), that
+member Yaacov Apelbaum had decrypted the letter: a 56-entry code-to-word table and a 60-word "Decrypted
+Text" ("The petitions of your seamen concerning their treatment have been examined ... we shall receive
+satisfaction."), with a stated four-part "verification methodology" (internal consistency, cross-reference
+with Armstrong's 1804/1806 letters, frequency analysis, stylistic reconstruction).
+
+**Rejected, independently, twice:**
+- Tomokiyo's article judged it unconvincing on inspection (Oct 2025, restated June 2026): partial coverage,
+  forced fit.
+- Bourdeau's adjudication (`armstrong/NOTES.md`, 16 Sept 2026, `adjudicate_feb20.py`) is the quantitative
+  version: the key covers 133 of 369 groups (36%; 51 of 216 distinct), 5 of its 56 numbers never occur in the
+  letter, 6 of the 60 published plaintext words have no code group backing them at all, and -- the decisive
+  test -- **a key built by the same procedure (walk the plaintext, assign each word the next free group) on
+  a *shuffled* copy of the ciphertext fits the claimed sentence and the letter as a whole *better* than the
+  AFIO key does**: 500 such random keys average 70% in-span occurrence-consistency and 41% over the whole
+  letter, against the AFIO key's own 59% and 30%. A key that fits random noise better than it fits the real
+  text carries no information about the code. This is a matched-control negative already run and on file,
+  not something this intake worker re-ran.
+
+## The "prestigious publication project"
+
+The June 2026 blog post's own wording: "the editorial team is still very interested in the content of the
+letter. If it can be solved in the next year or two, they could probably include it in their next volume of
+Madison Papers." This is the **Papers of James Madison** (University of Virginia, Founders Online's own
+publisher; editor Angela Kreider, per `madison_armstrong.htm`'s "Historical Context" section) -- not named
+more specifically than that in either Cryptiana post read this pass.
+
+## What is still open, for a future solver (not run here, per this brief)
+
+1. A crib/vocabulary test using Armstrong's *other* letters (15 Feb, 22 Feb, 4 May 1806, all in THE=972 and
+   already transcribed by Bourdeau) for period/register/idiolect match against the 20 Feb letter's word
+   lengths and repeats -- not a key transplant (THE=972 does not fit), a language-model-style vocabulary
+   prior, matched against a shuffled control per CLAUDE.md rule 3.
+2. WE028's full 1600-entry table, and a from-scratch structural comparison of its blockwise-alphabetical
+   layout against the 20 Feb letter's own group-value distribution (whether the same block boundaries
+   recur, even if the values differ) -- untested.
+3. The shorthand passages (35 short + 2 full lines): Tomokiyo's shorthand-bibliography lead (Weston,
+   Mitchell, Gurney, Byrom, Mavor, Macaulay, Taylor) is unchecked against the actual symbols.
+4. A second, independent transcription against the NARA M34 roll 14 manuscript images (29-32) -- the
+   Founders Online group list has never been checked against the original by anyone found this sweep.
+5. Kreider's own list of candidate "other correspondents" for a private cipher: William Pinkney (Britain),
+   James Monroe (Pinkney's predecessor), George W. Erving (Spain), Robert R. Livingston (Armstrong's
+   brother-in-law and predecessor in Paris), or Armstrong's New York political circle -- none of their
+   1808 correspondence has been located or checked against this code by anyone found this sweep.
+
+## Intake gate
+
+`python3 tools/intake_gate_check.py ciphers/armstrong-madison-1808` output:
+
+    ciphers/armstrong-madison-1808: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+    EXIT:0
+
+## Requests this session
+
+gallica.bnf.fr: 0. github.com: 2 shallow clones (`dbourdeau/cyphersolver`, `aaymeloglu/unsolved-ciphers`, both
+deleted after grepping). cryptiana.blogspot.com: 2 (the Raince/Carpi post, the June Armstrong post).
+dbourdeau.github.io: 1 (his armstrong.html page). cryptiana.web.fc2.com: 1 (`WE028.txt`; `madison_armstrong.htm`
+was already on disk from an earlier sweep, not re-fetched). web.archive.org: 2 (Founders 99-01-02-2728 and
+99-01-02-2703 via Wayback, after a direct founders.archives.gov fetch returned an empty HTTP 202). afio.com: 1.
+founders.archives.gov: 1 (the empty-202 attempt, not retried, per the good-citizen rule -- Wayback used
+instead). WebSearch: 3 queries (a prior/model-solve check, a Krajcovic check). No DECODE login, no logins of
+any kind, no credentials touched. All fetches one at a time, >=1.5s apart, descriptive User-Agent.

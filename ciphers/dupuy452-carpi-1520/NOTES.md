@@ -528,3 +528,35 @@ stale), reading.txt, reading_tokens.tsv, compare_print.py, print/jacqueton1892_P
 
 **Requests:** archive.org 3 (Champollion djvu, advancedsearch, Jacqueton djvu), googleapis.com 6 (keyed,
 country=US), github.com 1 (shallow clone). No Gallica.
+
+## Cryptiana post, 26 Sept 2026
+
+S. Tomokiyo replied to the owner's 24 Sept email (`outreach/tomokiyo-gramont-danzay.md`) with a new blog post,
+"A Cipher between Louise of Savoy and Nicolas Raince (1525)" (cryptiana.blogspot.com, 26 Sept 2026, saved
+unmodified `sources/cryptiana/blog/2026-09-a-cipher-between-louise-of-savoy-and.html`, fetched by this worker
+this pass).
+
+**What it says.** He confirms Louise of Savoy was regent 1525-26 during the king's Italian war and Spanish
+captivity, and writes: "I learned from Ryan Turner that a letter to her (25 October 1525) from Nicolas Raince,
+secretary of the French ambassador to Rome, in Dupuy 452 used Nicolas Raince's cipher (1526) I reconstructed in
+'French Ciphers during the Reign of Francis I' and that the letter is printed in Jacqueton (1892), *La politique
+extérieure de Louise de Savoie*, XXXIII, pp.366-370." He also lists all three Oct 1525 Dupuy 452 letters (f.20
+Carpi, f.24 Raince-to-Robertet, f.28 Raince-to-Louise) with their decipherment folios, matching this file's own
+findings exactly. He notes the significance is chronological: it shows the 1526 cipher was already in use in
+1525 (though he separately notes, citing his own July 2026 post, that the type of cipher is now known to be
+older still, from 1507-1521).
+
+**Cites this repository:** yes -- links our AUDIT.md directly
+(`github.com/NoAutopilot/cipher-lab/blob/main/ciphers/dupuy452-carpi-1520/AUDIT.md`), attributing the finding to
+"Ryan Turner" (the pseudonym CITATIONS.md and `web/unsolved-2026-09-24.htm` already record Tomokiyo using for
+this project, per rule 9 -- not the owner's own name). He does not cite the owner directly and does not use any
+of rule 10's reserved novelty wording ("first", "new", "unpublished") about our contribution; his own framing is
+that the plaintext was already in Jacqueton (1892) and our contribution is the identification linking Dupuy
+452's ciphertext to that print via the reconstructed 1526 key.
+
+**Does this change AUDIT.md?** No. The post does not print any decipherment that did not already exist in
+print before our note -- it points to the same Jacqueton (1892) edition AUDIT.md already cites as the N0-class
+prior plaintext-and-decipherment source, and adds no new textual content of its own beyond restating the
+finding aid's own item list (which this file's own "Correction to the QUEUE description" section already
+worked through). Per this brief's instruction, no class change is proposed; not flagging "for LANE V8" since
+the brief's trigger condition (a decipherment newly in print because of this post) does not hold.

@@ -60,3 +60,16 @@ in the "Ciphers related to Sir Francis Walsingham" section -- it names "Ryan Tur
 consistent with rule 9) and links `https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/bowes-walsingham-1583`.
 The undated `web/unsolved.htm` is left as is (a distinct earlier snapshot); CITATIONS.md cites the dated file as
 evidence.
+
+## Added 26 September 2026 (Tomokiyo's reply to the owner's 24 Sept email, parent worker TOMO-REPLY)
+
+Tomokiyo replied on 26 Sept 2026 to `outreach/tomokiyo-gramont-danzay.md`: he wrote up the Raince/Carpi letter
+(ciphers/dupuy452-carpi-1520, digest in that target's own NOTES.md) and named Armstrong-Madison 1808 as his
+preferred next target for us (ciphers/armstrong-madison-1808). All three fetches one at a time, 2s apart,
+descriptive User-Agent, all HTTP 200.
+
+| File | URL | Fetched | Bytes | sha1 | For |
+|---|---|---|---|---|---|
+| `blog/2026-09-a-cipher-between-louise-of-savoy-and.html` | https://cryptiana.blogspot.com/2026/09/a-cipher-between-louise-of-savoy-and.html | 26 Sep 2026, ~06:36 UTC | 89594 | 82ba3461600e937c4eefd85f0c2700f2ae28e5aa | Tomokiyo's post on the Raince/Carpi letter, citing our AUDIT.md (via "Ryan Turner", the pseudonym already in use per rule 9) |
+| `blog/2026-06-undecoded-armstrongs-letter-1808-sent.html` | https://cryptiana.blogspot.com/2026/06/undecoded-armstrongs-letter-1808-sent.html | 26 Sep 2026, ~06:36 UTC | 85731 | 1e3c9b03b05ac7b1e80caa351a4dd731eb9cc6b6 | Tomokiyo's 4 June 2026 post pointing at his updated `web/madison_armstrong.htm` article (already on disk from an earlier sweep) |
+| `blog/dbourdeau-cyphersolver-armstrong.html` | https://dbourdeau.github.io/cyphersolver/armstrong.html | 26 Sep 2026, ~06:36 UTC | 36000 | fde7d4c764f53a2e05a97a976f038333550d80dc | Bourdeau's write-up of a *different* Armstrong-Madison letter (the 30 Aug 1808 postscript, code THE=972) -- named in ciphers/armstrong-madison-1808/NOTES.md as the source of the THE=972 sibling-code table |
