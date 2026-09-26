@@ -1,0 +1,17 @@
+leaf	record	date	cipher_lines_est	est_signs	notes
+hstam_4_h_1411_0004	496	15 Jan 1637	0	0	outer address/cover panel, 2 wax seals, address text in clear only, rest is bleed-through from f.3; no cipher
+hstam_4_h_1411_0013	497	17 Jan 1637	0	0	outer address/cover panel, 2 wax seals, "...Cassel" address in clear only, rest bleed-through from f.12; no cipher
+hstam_4_h_1411__14	502	16 Jan 1637 (metadata)/26 Januarij (text)	~30	~600	salutation+~8 lines clear, then continuous dense digit cipher for ~30 of ~50 detected lines, closes in clear, signed Otto von der Malsburg; a further short passage in a second, looser hand at the very bottom is unclassified, not counted
+hstam_4_h_1411_0015	503 (1/3)	30 Jan 1637	~5	~120	one cipher passage (4 full lines + a partial 5th) embedded mid-letter; rest of the ~45 detected lines is clear German prose; marginal note "monatlich mit 20 Rebellen..." keys to the passage
+hstam_4_h_1411_0016	503 (2/3)	30 Jan 1637	~38	~760	first ~6 of 44 detected lines clear German, remainder dense digit cipher continuing to end of leaf; image is a two-page opening -- the right-hand panel (a name/docket list in clear) is a separate item, not counted
+hstam_4_h_1411_0017	503 (3/3)	30 Jan 1637	0	0	outer address/cover panel, wax seal, "Ihre Furstliche...Cassel" address in clear only; no cipher
+hstam_4_h_1411_0018	504	14 Feb 1637	~24	~480	salutation+~2 lines clear, then continuous dense cipher for ~24 of ~42 detected lines, closes in clear, signed and dated 14 February 1637
+hstam_4_h_1411_0023	505 (1/2)	7 Feb 1637	~44	~880	first ~8 of 52 detected lines clear intro, remainder (continuing onto 0024) dense cipher, no closing on this leaf
+hstam_4_h_1411_0024	505 (2/2)	7 Feb 1637	~9	~180	top ~9 lines cipher continuation from 0023; remainder (~30 lines) clear closing, signature, and a clear postscript in a second hand
+hstam_4_h_1411__0025	506	1637 (HCPortal date field 1636 unreliable, per NOTES)	~26	~520	header+~12 lines clear, then continuous cipher to signature (dated 25 February)
+hstam_4_h_1411_0028	507 (1/2)	28 Mar 1637	~52	~1040	header+~3 lines clear, then the entire rest of the page (continuing onto 0029) dense cipher, no closing on this leaf
+hstam_4_h_1411_0029	507 (2/2)	28 Mar 1637	~26	~520	top ~26 lines cipher continuation from 0028; remainder clear closing, signature, and a clear postscript (Bremen/ducats matter) in a second hand
+hstam_4_h_1411_0030	508 (1/2)	28 Mar 1637	~55	~1100	header+~2 lines clear, then the entire rest of the page (continuing onto 0031) dense cipher, no closing on this leaf; near-duplicate of 507 (same date, matching postscript wording -- possibly a second copy/route of the same dispatch)
+hstam_4_h_1411_0031	508 (2/2)	28 Mar 1637	~19	~380	top ~19 lines cipher continuation from 0030; remainder clear closing, signature, and the same Bremen/ducats postscript as 0029
+hstam_4_h_1411_0032	509 (1/2)	around 1637	scattered	~60	first message (French, "Haut et Puissant Seigneur...", dated "3e [mois illegible] 1637") entirely clear, no cipher; second message (German, headed "Extrait", dated 26 Mart[ii] 1637) has cipher codes interspersed among clear words, not solid lines -- counted by token, not by line
+hstam_4_h_1411_0033	509 (2/2)	around 1637	scattered	~40	continuation of the interspersed-code items (dispatches dated 5 April, 26 Mart[ii], 27 Marti 1637); scattered digit codes among mostly-clear German/French text

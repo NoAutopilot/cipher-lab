@@ -177,3 +177,89 @@ HCPortal records on HStAM 4 h Nr. 1411 (502-509) to get above the sign-pool thre
 attack, per CLAUDE.md's pools-first selection rule; a single ~350-sign postscript is short for K=95.
 
 Hosts: none (crops on disk, no fetch this job).
+
+## Pooled-N control and leaf extent (bMALC, 26 Sept 2026)
+
+Intake gate re-run: `python3 tools/intake_gate_check.py malsburg-hessen-1636` -> `malsburg-hessen-1636: partial
+(line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0.
+
+**A. Projected-N control.** `tools/family_run.py` always overwrote `params["N"]` with the target's own
+ciphertext length, so a control at a pool size larger than what's on disk could never be run -- added
+`--control-n N` (valid only with `--control-only`; keeps the target's own K, scales any `profile=target`
+sign-count profile proportionally to N; offline test in `tools/tests/test_family_run.py`). Ran the homophonic
+family (the matched design for this K=95 nomenclator) control-only at N=1000, 2000, 3000, 3 seeds each,
+serialized (no concurrent CPU work in this box, each battery took well under a minute):
+
+```
+python3 tools/family_run.py specs/malsburg-hessen-1636.json --family homophonic \
+  --cipher ciphers/malsburg-hessen-1636/ciphertext.txt --param profile=target \
+  --control-only --control-n N --seeds 3 --gate 0.6 --label "bMALC pooled-N control"
+```
+
+| N (projected) | K | control mean (range) | gate 0.6 |
+|---|---|---|---|
+| 352 (actual, bMAL3) | 95 | 0.392 (0.318-0.511) | NOT met |
+| 1000 | 95 | 0.928 (0.867-0.964) | met |
+| 2000 | 95 | 0.844 (0.710-0.957) | met |
+| 3000 | 95 | 0.976 (0.970-0.984) | met |
+
+Rows in HYPOTHESES.md. The gate the actual N=352 control could not meet is comfortably met by N=1000 and
+stays met (with some seed-to-seed noise at 2000, which is not monotonic but every seed at every N clears
+0.6) up to 3000 -- pooling the fond is worth paying for, on this test alone.
+
+**B. Per-leaf cipher extent, before paying for 14 leaves.** `tools/iiif_lines.py --image <leaf> --out
+crops/<leaf> --debug` run on all 16 remaining images (records 502-509's 14 leaves, plus ff.4 and 13, the
+address-panel leaves of records 496/497 that pass A/B/bMAL3 did not need); one low-resolution look at each
+leaf's debug overlay (no transcription) to count cipher lines vs clear lines and estimate signs at roughly
+the density already measured on f.3/f.12 (~17-27 signs/line). Full table in `extent.tsv`. Findings, by
+record:
+
+- 496 (f.3 done, f.4 remaining): f.4 is the outer address/cover panel (2 wax seals, address in clear,
+  everything else is ink bleed-through from f.3) -- 0 cipher.
+- 497 (f.12 partly done, f.13 remaining): f.13 is likewise the outer address/cover panel -- 0 cipher. (Note:
+  f.12 itself still has 5 untranscribed cipher lines, L39-43, and a third "cifrat cela" passage in a
+  different hand/alphabet, per bMAL2 -- neither is on this job's leaf list and neither is counted below; a
+  gap for the next transcription job to close.)
+- 502 (f.14, one leaf): ~30 lines dense cipher (~600 signs est.) framed by clear salutation/close; a further
+  passage in a second, looser hand at the very bottom is unclassified.
+- 503 (f.15-17, three leaves): f.15 has one short cipher passage embedded mid-letter (~5 lines, ~120 signs)
+  in an otherwise clear letter; f.16 opens with ~6 clear lines then is dense cipher for the rest (~38 lines,
+  ~760 signs) -- the image is a two-page opening and its right-hand panel (a clear-text name/docket list) is
+  a separate item, not counted; f.17 is the address/cover panel, 0 cipher.
+- 504 (f.18, one leaf): a short self-contained letter, ~24 lines dense cipher (~480 signs) between a clear
+  salutation and a clear, dated, signed close.
+- 505 (f.23-24, two leaves): f.23 opens with ~8 clear lines then is dense cipher to the end of the leaf
+  (~44 lines, ~880 signs); f.24 continues the cipher for ~9 more lines (~180 signs) then closes in clear
+  with signature and a clear postscript in a second hand.
+- 506 (f.25, one leaf): ~12 clear lines then continuous cipher to the signature (~26 lines, ~520 signs).
+- 507 (f.28-29, two leaves, 28 Mar 1637): f.28 opens with ~3 clear lines then is dense cipher for the rest of
+  the leaf (~52 lines, ~1040 signs); f.29 continues cipher for ~26 more lines (~520 signs) then closes in
+  clear with a postscript about a 12,000-Reichsthaler Bremen matter.
+- 508 (f.30-31, two leaves, also 28 Mar 1637): same shape as 507 -- f.30 ~55 cipher lines (~1100 signs), f.31
+  ~19 more (~380 signs) then the same Bremen/ducats postscript almost verbatim. Same date and matching
+  postscript wording as 507; read as a second copy or route of the same dispatch, not independent plaintext
+  -- flagged for whoever pools these two records, since pooling near-duplicate plaintext under one K=95 key
+  is still a valid signal source (it is real ciphertext of the same design) but is not two letters' worth of
+  independent content.
+- 509 (f.32-33, "around 1637", three items per the archive description): f.32's first item (French, "Haut et
+  Puissant Seigneur...") is entirely clear, no cipher; its second item (German, headed "Extrait", dated
+  26 Mart[ii] 1637) and the dispatch items continuing onto f.33 (5 April, 26 Mart[ii], 27 Marti 1637) carry
+  cipher codes interspersed among mostly-clear prose, not solid cipher lines -- counted by token (~60 on
+  f.32, ~40 on f.33), not by line, and much less certain than the solid-block estimates above.
+
+**Sum of estimated additional signs (extent.tsv, rough, unconfirmed): ~6680**, against the already-committed
+N=352. Even discounting the two least-certain leaves (509's ~100 interspersed-code signs) and the near-
+duplicate risk on 507/508, the fond comfortably clears every N tested in part A (1000/2000/3000) many times
+over -- this is not a marginal pooling case.
+
+**Which leaves to transcribe first:** the four fullest, cleanest, single-hand cipher pages -- f.28 (507,
+~1040 signs), f.30 (508, ~1100 signs), f.23 (505, ~880 signs), f.16 (503, ~760 signs) -- would alone put the
+pool over 3000 signs (plus the existing 352) with their completing leaves (f.29, f.31, f.24) needed to close
+each letter. f.14 (502, ~600) and f.25 (506, ~520) are good next adds. Leave f.4/f.13/f.17 (address panels,
+0 signs) and f.32/f.33 (mostly clear, interspersed codes only, hardest to transcribe blind) for last, and
+note the 507/508 near-duplicate when weighing whether both are worth the double transcription cost.
+
+Hosts: none (all 16 images already on disk). Tool changes: `tools/family_run.py` (`--control-n`),
+`tools/tests/test_family_run.py` (offline test for it). Folder shrunk back under 30 MB by deleting the 16
+new debug-overlay directories after reading them (regenerable in one command each, same as recorded above
+and in extent.tsv); `crops/0003` and `crops/0012` (pass A/B's own committed crops) untouched.
