@@ -684,3 +684,70 @@ same edition citation as the confirmed-in-clear 4503/5194/5799/5810/5811), not o
 allow it (dbnl cap 20 requests this session, spent on the G3-reused pages above; huygens.knaw.nl spent on
 edition-unresolved letters elsewhere in the 73-row set). Listed as the unfinished briefnrs in
 `sources/wvo/NOTES.md`. No nomination changes to WV1/WV2 beyond the 5801/11250 flag above.
+
+## AX-5799: 5799's table from Groen, and 4612 under it (26 Sept 2026, LANE AX)
+
+Per `.claude/briefs/runs/2026-09-26-lane-ax-5799.md`. Intake gate: `tools/intake_gate_check.py lodewijk-van-nassau-1573-74`
+exits 1 on a header-format point owned by parallel worker AX-5797 (flagged in ROOM.md, not fixed here); per the
+brief's own carve-out, this section is limited to steps 1-2 (alignment of text already in print, no decode of
+unprinted text) plus the pre-registered key-reuse test in step 3.
+
+**Source.** Groen IV, Lettre CDIX (p.79, DBNL `groe009arch04_01_0025.php`, 1 fetch, saved to
+`groen/groen_IV_CDIX.txt`): Willem van Oranje to his brothers Jean, Louis (Lodewijk) and Henri, Delft, 3 April
+1573 -- prints 5799 whole in clear French (5799 itself is N1, already in print; nothing here changes that).
+
+**Method.** `align/em_align_5799.py`, the same hard-EM algorithm as `jan-van-nassau-1572-75/align/em_align.py`
+(each cipher code emits 0-3 letters of a printed span, counts iterated to convergence), applied to 5799's own
+`ciphertext_5799.tsv`. The page mixes clear (`=`) words with bare numeral codes; splitting on the clear anchors
+already on the page gives 4 numeral runs (47, 79, 27, 26 codes = 179 total) each bounded by clear words that
+already match Groen's print at that point (checked by eye), which is what licenses grade C/M rather than a
+cryptanalytic grade. Added one thing beyond the jan-van-nassau version: an anti-null-clustering DP state,
+because the plain algorithm burst the run's forced code-surplus into 9-11 consecutive nulls in one spot per run
+(implausible for a real table's null design) instead of spreading it -- fixed by tracking whether the previous
+emission was null and penalising two in a row (`NULL_STREAK_PENALTY`); confirmed by inspection this scatters the
+nulls singly instead. `em_align_5799.py --check` regenerates `key_5799.tsv` byte-identical (rule 7).
+
+**Key recovered.** `key_5799.tsv`: 78 distinct codes, 5 grade C (>=2 occurrences agreeing on a majority letter),
+73 grade M (most codes in this small sample were seen once -- rule 4, a single occurrence in this alignment is
+not treated as a confirmed match). 179 codes for 148 Groen-print letters (about 1.21x): a surplus consistent with
+the manuscript's own period spelling ("D'aultant" transcribed on the page vs Groen's modernised "d'autant",
+"appoinctement"-type doubling) carrying more letters than Groen's normalised print, per CLAUDE.md's PX-BRODEC
+notation lesson -- not necessarily a sign the design itself is wrong.
+
+**Block-structure question (the brief's fit-check hypothesis: 5- or 6-consecutive-value blocks per letter, as
+in R18's own `key.tsv` for the 1574 circle).** Not confirmed. Codes 21-30 recover as l, u, NULL, e, c, i, r,
+NULL, t, i -- no run of a repeated letter. This is inconclusive, not a rejection: 35 of the 78 codes were seen
+exactly once, far too sparse to detect a block pattern with any power even if one is really there. A larger
+known-plaintext sample would be needed before treating this as evidence against the block hypothesis.
+
+**4612 key-reuse gate**, pre-registered in the job brief before running: "4612 reads under key_5799 if >=50% of
+table-covered tokens form French words in >=3 runs of 10+ tokens, and 20 shuffled copies of key_5799 stay below
+15%." `decode_4612_k5799.json` / `reading_4612_k5799.txt` (`tools/decode_key.py ... --check` exits 0): of 4612's
+813 cipher-table positions, 408 are keyed by key_5799 (C 8, M 400), 405 unkeyed. **FAIL, on structure alone,
+before any word check is needed**: the longest run of consecutive keyed tokens is 12 (one occurrence in the
+whole letter, containing a literal NULL twice and no recognisable French word), and exactly 1 run anywhere
+reaches length >=10 -- the gate needs >=3. Shuffling key_5799's *values* cannot change *which* of 4612's
+positions are keyed, so this run-count is invariant under the value assignment; confirmed empirically over 20
+seeded shuffles (identical every time: max run 12, exactly 1 run >=10 tokens). Target 0% qualifying tokens vs
+20/20 shuffled-control seeds also at 0% -- both at floor. **4612 does not read under 5799's table** (control
+numbers alongside the target per rule 3).
+
+**5549 body** (`jan-van-nassau-1572-75/ciphertext_5549.tsv`, runs 1-61, German; read-only, nothing written to
+that folder). Same control: 765 numeral tokens, 327 keyed non-null by key_5799, longest run 6, zero runs >=10.
+Also fails -- expected, given the language mismatch and NOTES.md's own earlier finding (line ~500) that the
+1574 letters already use a different table from 5799's.
+
+**Step 4 (write, don't run, a block-constrained cryptanalysis design)**: brief's condition for writing this was
+"4612 does not read AND 5799's key shows a clean block structure." The first half holds; the second does not --
+this pass recovered an *inconclusive* block picture, not a clean one, so a design search over block widths and
+letter orders right now would be searching for a structure this pass could not confirm exists. Suggested next
+step instead, for whoever picks this up: recover more of 5799's own known plaintext before running that
+cryptanalysis -- the untranscribed L12/L13 gap on this same page (skipped between `p1_L11` and `p1_L14` in the
+current transcription), or check whether Groen prints a companion letter from the same days sharing 5799's
+design -- to push the known-plaintext sample past the point where 35 of 78 codes are singletons.
+
+Rule 10: no novelty words; 5799 is N1 already (Groen print), nothing else classified here.
+Hosts: dbnl.org 1 request (descriptive UA, single fetch).
+Files: `groen/groen_IV_CDIX.txt`, `align/em_align_5799.py`, `align/pairs_5799.tsv`, `key_5799.tsv`,
+`decode_5799.json`, `reading_5799.txt`, `reading_5799_tokens.tsv`, `decode_4612_k5799.json`,
+`reading_4612_k5799.txt`, `reading_4612_k5799_tokens.tsv`.
