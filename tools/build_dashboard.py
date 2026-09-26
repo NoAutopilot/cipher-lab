@@ -176,15 +176,32 @@ def load_citations():
 
 
 def load_contrib_pending():
-    """CONTRIBUTIONS.md rows sent and still awaiting a public reply."""
+    """CONTRIBUTIONS.md rows sent and still awaiting a reply (nothing received yet)."""
     out = []
     for cells in load_table("CONTRIBUTIONS.md", 8):
         date, item, cls, grade, recipient, channel, what, status = cells[:8]
         st = status.lower()
-        if "sent" not in st or "reply pending" not in st:
+        if "sent" not in st or "reply pending" not in st or "reply received" in st:
             continue
         m = re.search(r"\b\d{1,2}\s+Sep\w*\s+\d{4}\b", status)
         out.append({"recipient": recipient, "sent": m.group(0) if m else date, "what": what})
+    return out
+
+
+def load_contrib_dialogue():
+    """CONTRIBUTIONS.md rows where an outside editor or archive has replied by private channel: a dialogue,
+    not yet a public citation (CITATIONS.md rule: a private reply stays here until a public page carries it).
+    The board names the institution from the Recipient column, never a person."""
+    out = []
+    for cells in load_table("CONTRIBUTIONS.md", 8):
+        date, item, cls, grade, recipient, channel, what, status = cells[:8]
+        st = status.lower()
+        if "reply received" not in st:
+            continue
+        m = re.search(r"reply received\s+(\d{1,2}\s+Sep\w*\s+\d{4})", status, re.I)
+        # the summary after the parenthesised sender, up to the first ';' or ' -- '
+        summ = re.sub(r"^.*?reply received[^:]*:\s*", "", status, flags=re.I | re.S)
+        out.append({"recipient": recipient, "when": m.group(1) if m else date, "item": item, "summary": summ})
     return out
 
 
@@ -195,6 +212,7 @@ second_opinions = load_second_opinions()
 memo = load_memo()
 citations = load_citations()
 contrib_pending = load_contrib_pending()
+contrib_dialogue = load_contrib_dialogue()
 
 # ---------------------------------------------------------------- helpers
 
@@ -458,6 +476,16 @@ def citation_card(c):
 
 
 fame_cards = "".join(citation_card(c) for c in citations) or '<li class="muted">nothing public yet</li>'
+
+
+def dialogue_card(d):
+    return (f'<li class="fcard dialogue"><div class="fmeta"><span class="fdate mono muted">{E(d["when"])}</span>'
+            f'<span class="fwho">{E(d["recipient"])}</span></div>'
+            f'<p class="fwhere">{md_linkify(short(d["item"], 160))}</p>'
+            f'<p class="fhow muted small">{E(short(d["summary"], 420))}</p></li>')
+
+
+dialogue_cards = "".join(dialogue_card(d) for d in contrib_dialogue)
 pending_rows = "".join(f'<li><span class="mono muted">{E(p["sent"])}</span> <b>{E(p["recipient"])}</b> &mdash; {E(short(p["what"], 100))}</li>' for p in contrib_pending)
 
 # ---------------------------------------------------------------- side quests
@@ -772,6 +800,7 @@ page = f'''<title>Cipher Lab Board</title>
   <p class="muted small" style="max-width:70ch">Public citations of this project's work by someone outside the repository: a credit, a link, a correction adopted, co-authorship or a reply that became public. CITATIONS.md is the record; the owner is never named (rule 9), the repository is.</p>
   <p class="strip"><b>{len(citations)}</b> public citations since 23 Sept 2026</p>
   <ul class="fcards">{fame_cards}</ul>
+  {('<h3>In dialogue</h3><p class="muted small">An editor or archive has replied in private and the exchange is open: corrections adopted, questions answered, next step named. Institution only; it moves up when a public page carries it.</p><ul class="fcards">' + dialogue_cards + '</ul>') if dialogue_cards else ''}
   {('<h3>Pending</h3><p class="muted small">Sent, awaiting a reply that has not gone public.</p><ul class="pending">' + pending_rows + '</ul>') if pending_rows else ''}
 </section>
 
