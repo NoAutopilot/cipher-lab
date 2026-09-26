@@ -1,0 +1,3 @@
+# hessen-1824 periodic_vigenere seed 1 restarts 8 26 Sept 2026 05:04 UTC; control mean 1.000 (1.000-1.000); score -4.022
+# {"period": 7, "tabula": "vig", "continuous_key": true, "key": "rhzybwv", "score_per_letter": -4.022}
+dynqpqwxgykopvumloslzbeveplpgnlohatvmauropfylitzebpaoiqngeovkhpcvwoedblqqntwsqkannkenkzneindpiwmodefithplfqlplowerpjuanrinkwoqyngzqqpzjskwzxljvqskuoquitsvydljjxwxzh

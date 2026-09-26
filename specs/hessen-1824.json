@@ -1,0 +1,36 @@
+{
+  "slug": "hessen-1824",
+  "name": "Hessian polyalphabetic message, 20 Feb 1824",
+  "date": "1824-02-20",
+  "language_candidates": ["de"],
+  "ciphertext": "u f moqmr onxiplql tkmt huslu cqh kxu kmiwomt zsskkw fkguvzswzm Jmixl ntldkt 4cv mfz wcxp lusnhr zlogz erylfe iuw hunky vmhr il4 gwxk nm krvy ohvwi ipm ixkl pufxrm kqqrix vscqu ot 4g3 pfx tguoqpkkh ktrogg",
+  "ciphertext_source": "HCPortal record 513 (api.hcportal.eu/api/cryptograms/513), image hstam_9_a_nr_259__0249.jpg, HStAM 9 a Nr. 259 f.249; own blind transcription from the image 26 Sept 2026 (ciphers/hessen-1824/images/, crops in NOTES.md), grade M throughout -- one page, Latin-letter cursive (not German Kurrent), word/group boundaries (space vs '.') uncertain, transcribed here as a continuous letter stream (dots and spaces both dropped by family_run.py's tokens=letters mode) for the periodic-IC test; a few glyphs (three occurrences of a digit-like '4' embedded in or beside words) are anomalous and excluded from the letter count below.",
+  "alphabet": "a-z Latin cursive, 26-letter alphabet expected under HCPortal's own 'Polyalphabetic / Substitution' category tag",
+  "constraints": {
+    "total_letters": 164,
+    "sender": "Unknown (HCPortal structured field); Bourdeau CATALOGUE.md #340: 'Electorate of Hesse' chancery, unknown -> unknown",
+    "era_note": "Target is dated 20 Feb 1824. tools/data/de20 (LANG_CORPORA default judge corpus used here) is 1880-1940 German prose, 56-116 years later than the target; tools/data/de16 (composed_enhg.txt) is Early New High German, further off in the other direction. No 1820s-matched German corpus is on disk (CLAUDE.md's pt18/es17c precedent for era-matching a judge corpus has not been done for this decade of German). Any PASS/FAIL from this spec's judge block should be read with that gap flagged, per the de16/de20 mismatch already logged for berthier-napoleon-1812 and other early-19th-century German targets in this project.",
+    "anmerkung_note": "The same manuscript page (below the 6-line ciphertext, same image) carries a period or 19th-century archival note headed 'Anmerkung' describing a related item ('No. 1', invisible/sympathetic ink between lines) and a substitution table the annotator worked out: bcdefg(h) in the top row of a key/tableau are said to be 'Auflösungsbuchstaben' (resolution letters) placed continuously over the cipher, giving column positions of a periodic key; the worked example maps pairs of cipher letters to plaintext letters per column (approximate, uncertain reading of German Kurrent: u/c->s, f/o->c, m/e->h, o/f->i, g/g->k, ?/b->n, v->t). This was NOT applied to the ciphertext this pass (paleographic risk of misreading Kurrent under a $2 cap outweighs the value of a guessed key -- see NOTES.md); it is a strong lead for a follow-up transcription pass and is consistent with HCPortal's own 'Polyalphabetic/Substitution' category tag and with a period around 6-7."
+  },
+  "cheap_tests_in_order": [
+    "IC and periodic IC (Friedman/Kasiski, period 2-20) vs a de20 control of the same N under family_run.py's periodic_vigenere family, control-first (this spec)"
+  ],
+  "judge": {
+    "language": "de",
+    "letters_min": 100,
+    "letters_max": 1000,
+    "min_word_cover": 0.5,
+    "control_samples": 200,
+    "corpora": [
+      "tools/data/de20/pg5323_Effi_Briest.txt.gz",
+      "tools/data/de20/pg46184_Frau_Jenny_Treibel.txt.gz",
+      "tools/data/de20/pg36905_Schach_von_Wuthenow.txt.gz",
+      "tools/data/de20/pg41051_Peter_Camenzind.txt.gz",
+      "tools/data/de20/pg41907_Demian.txt.gz",
+      "tools/data/de20/pg43987_Die_drei_Spruenge_des_Wang_lun.txt.gz",
+      "tools/data/de20/pg15736_Der_Mann_von_vierzig_Jahren.txt.gz"
+    ],
+    "corpora_note": "de20 is 1880-1940 German prose; target is 1824 -- era gap logged in constraints.era_note above, not resolved this pass."
+  },
+  "schema_note": "Written 26 Sept 2026 by LANE B7 worker bHCP (job bHCP), first cheap test only (breadth.md cap); no target run yet pending the control gate."
+}
