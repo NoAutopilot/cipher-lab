@@ -88,3 +88,14 @@ LOCAL-QUEUE.tsv entry for:
 thefreelibrary.com: 1 (403, not retried). api.openalex.org: 4 (3 search + 1 record fetch, key header, >=1.5s
 apart). api.semanticscholar.org: 2 (key header, >=1.5s apart). api.crossref.org: 1. No Gallica, no Google
 Books, no de-crypt.org. No subagents.
+
+## Owner-machine queue row, resolved 26 Sept 2026 (JSTOR runner, run 2026-09-26-1612, PR-LAND-3)
+
+JSTOR-QUEUE.tsv row 78 (`Herman AND Lernout AND "Gold Bug Variations" AND (Mosaic OR "Genetic Randomness")`) run
+by the owner's ChatGPT JSTOR runner and read in JSTOR's online viewer: Luc Herman and Geert Lernout, "Genetic
+Coding and Aesthetic Clues: Richard Powers's 'Gold Bug Variations'," *Mosaic: An Interdisciplinary Critical
+Journal* 31(4) (1998): 151-164, https://www.jstor.org/stable/44029740. p.162 prints the 32-triplet dedication
+and discusses it as initials, identifying JSB with Johann Sebastian Bach and SDG with his motto -- confirming
+this test's own OpenAlex-abstract finding above directly from the article's text, not just its indexed
+abstract. Item 1 (thefreelibrary.com Thomas 2006) is not a JSTOR item and remains unread. Not found-solved: this
+confirms the print source for the initials hypothesis, not a full 32-triplet decipherment.
