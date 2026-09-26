@@ -651,7 +651,7 @@ broke. Hosts: github.com 1 shallow clone (deleted); no other host.
 ## NEAR step (1f) (bMAT1F), 26 Sept 2026 -- stopped at cap, partial
 
 Job: `.claude/briefs/runs/2026-09-26-lane-b8-mat1f.md`. Intake gate re-run 06:55 UTC: `matignon-mayenne-1586: partial
-(line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0. **Stopped at 07:16 UTC, over the
+(line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0. **Stopped at 07:15 UTC, over the
 USD 7 cap; steps 3 (settling) and 4 (fresh-seed control) not run. Key, reading and grade counts unchanged (H 10,074 / M 1,648 / U 1,272).**
 
 **Location.** `gallica_folio.py btv1b9061879d --folio 78/79`: the manifest has no folio labels (385 canvases, all
