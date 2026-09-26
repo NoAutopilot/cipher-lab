@@ -274,6 +274,18 @@
     "05812_p3.jpg"
    ],
    "note": "WC-NASSAU-FIT2, 26 Sept 2026: p1-p2(top) are the main letter, a nomenclator mixing numerals with letter/symbol homophones (a different visual design from the pure-numeral 5549 body, not fit-tested); p2(bottom)-p4 are a duplicate letter ('Duplicata'), pure numerals, dated 6 Jan [sic, exact date uncertain]/ 21 April 1574; p4 top-left margin carries an unrelated troop-count note (900/1500/9000); p5-p6 are this duplicate's own contemporary oplossing in clear French ('Messieurs mes freres...'), confirming WVO 5812 carries a period decipherment on file. Densest pure-numeral page fitted is p3 (fol.10, ~400 groups, transcribed j6/fit_5812.tsv; automated line-cutting on this page was imperfect and the crops overlap, so many tokens are duplicated across adjacent line files per the transcriber's own note); cosine 0.40 vs the 5549 body -- FAILS the gate. Only p3 committed; other pages not imaged here (re-fetchable from pdf_url)."
+  },
+  {
+   "briefnr": 5810,
+   "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5810",
+   "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05810.pdf",
+   "date": "6 January 1574",
+   "correspondent": "Willem to Jan, Lodewijk and Hendrik van Nassau jointly",
+   "pages_in_pdf": 8,
+   "images": [
+    "05810_p1.jpg"
+   ],
+   "note": "WC-NASSAU-FIT2, 26 Sept 2026: p1-p3 (fol.17-18) are the letter body, dense pure-numeral cipher with an eight-line clear-French preamble, values up to 312 (p3); p4 is the address leaf ('Messieurs les Comtes Johan, Loys et Henry de Nassau, mes bons freres', Dillenburch); p5-p8 are a 'Duplicata' of the same letter (same cipher, same content), no oplossing found across any of the 8 pages. Densest page fitted is p1 (auto line-detection failed on this scan's low ink contrast -- manually cropped into 5 ~7-line bands, j6/fit_5810.tsv); cosine 0.36 vs the 5549 body -- FAILS the gate, despite share_gt99 (0.22) and max value (312) both closer to the body's own (0.24, 345) than any other candidate tried this pass -- the top-10 value sets share nothing (0/10). Only p1 committed; other pages not imaged here (re-fetchable from pdf_url)."
   }
  ]
 }
