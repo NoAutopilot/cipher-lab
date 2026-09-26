@@ -861,3 +861,122 @@ natural next test, not a fresh cryptanalytic attempt on 5797 alone.
 Requests this pass: `resources.huygens.knaw.nl` 1 (WVO 5797 detail page), `www.googleapis.com/books/v1` 3
 (keyed, `&country=US`, >=1.5s apart). No other hosts. 2 Sonnet subagents (both completed; both blind
 transcription passes, no plaintext interpretation asked of either).
+
+## AX-NAMES: the 1574 table's name codes from Groen's print (26 Sept 2026, LANE AX)
+
+Worker AX-NAMES (Opus), brief `.claude/briefs/runs/2026-09-26-lane-ax-names.md`, started 01:02 UTC, box 120 min.
+Intake gate: `python3 tools/intake_gate_check.py lodewijk-van-nassau-1573-74` -> `lodewijk-van-nassau-1573-74: partial
+(line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0.
+
+**Gate for step 3, written 01:10 UTC before the control was run.** Hold out 5811 (Groen IV CDLXXXIII): build the
+code->value map from every other pair, predict each code >120 that occurs in 5811 and has a value in that map, and
+score a prediction a hit when 5811's own alignment to its Groen text gives the same value at that code's occurrences
+(majority). Briefed gate: held-out hit rate >= 60% of predicted codes, and 20 shuffles of the map's code->value
+assignment (seeds 1-20) <= 10%. Known design issue, stated before running: the alignments so far show most codes
+121-150 absorb nothing (nulls), so a map that is mostly NULL keeps most of its hits under any shuffle of values among
+codes -- the <=10% shuffle bound cannot be met by a correct null-heavy map. So the briefed gate is applied, unchanged,
+to the word/name codes (value not NULL), which is the question the brief asks (do name codes transfer); the null class
+is reported separately with its own shuffle numbers and gated at held-out >= 60% with shuffle mean below the
+held-out rate by >= 20 points. If fewer than 3 word/name codes are predictable in 5811, the word-class gate is
+reported as "not testable at this N" and no word/name value is merged on the strength of the control alone.
+
+**Sources fetched (step 1).** dbnl.org, descriptive UA, 2 s apart: Groen IV CDLXVIII (5810, pp.320-324,
+`groen_IV_CDLXVIII.txt`), CDLXXXIII (5811, pp.363-366, `groen_IV_CDLXXXIII.txt`), CDLXXXIV (4503, pp.368-369,
+`groen_IV_CDLXXXIV.txt`); two further requests landed on CDLXXX/CDLXXXI (page-number offset, discarded). 5 requests.
+The WVO PDFs of 5550 and 5557 (resources.huygens.knaw.nl, 2 requests) were fetched to the scratchpad only, to read
+their contemporary interlinear glosses over codes > 120 by eye (crops of leaf 2 of 5550 and leaf 1 of 5557); not
+committed. Groen prints 4503 abridged ("....") and signs 5811 for Brunynck; both still align.
+
+**Method (step 2).** `axnames/align_names.py`: per manuscript page, a semi-global DP of the cipher token stream
+against Groen's whole printed letter (numerals 1-120 emit their key.tsv letter; clear words their letters; every code
+> 120 is free to absorb 0-22 printed letters at a small per-letter cost; skips cost 1). Exact letter matches per
+page: 5810 81-93%, 5811 64-84%, 4503 88% (the passes are single-pass M for 5810/4503). `axnames/build_names.py`
+turns the per-occurrence output (`axnames/occ_*.tsv`) into `names.tsv` by fixed rules (clusters of adjacent codes
+> 120 with >= 3 exact anchors each side and <= 16 absorbed letters; NULL if >= 2 empty observations and >= 75%
+of them; a word observation only where one non-null code is left in the cluster) and merges the hand-read
+attestations in `axnames/attest_manual.tsv` (period glosses on 5550/5557, Groen-printed names at 5797's own
+clusters, and four UNPRINTED rows where Groen's print leaves the name out). `python3 axnames/build_names.py
+--check` exits non-zero if names.tsv is stale.
+
+**Finding 1: codes 121-149 are nulls in this table, not names.** 24 codes read NULL at grade C (2-31 empty
+observations each, none contradicting): 121-124, 126-144, 149. Method-bias diagnostic
+(`axnames/falsenull_diag.py`, 5 seeds, a random 10% of known letter codes 1-120 hidden as free codes): a hidden
+letter code comes out absorbing nothing in 18.0% of single occurrences (414 of 2296; own letter 60.7%, other 21.3%),
+so a real letter code yields k empty observations in a row with p about 0.18^k: 3% at k = 2, 0.1% at k = 4. Weakest
+NULL rows: 139, 140, 142 (2 observations each). Known-answer check of the same aligner on key.tsv's own source pair
+(4613/4615, `occ_sib.tsv`, never used to build names.tsv): 121/122/132 NULL (as key.tsv); 270 bommel, 347 vivres,
+338 chevaulx legiers exact; 272, 326, 337 recovered with a one-letter boundary slip. **Conflicts with key.tsv**:
+123 (key.tsv 'l', M) reads NULL in 13 of 13 observations; 136 (key.tsv 'vingt', M) NULL in 8 of 8; 128 (key.tsv
+'?', M) NULL in 15 of 15; 147 is 'w' twice (5810's two copies, before 'vaterlandt' for Groen's "Waterlandt") and
+NULL once (5557) -- listed M with both values.
+
+**Finding 2: name and word codes attested** (value, grade, evidence): 153 Pfalzgraf C (5550 gloss "Palsgrave" twice,
+5549 PS "bey dem Churfürst Palsgrave" in Groen Suppl. p.147*); 161 Landgraf C (5550 gloss "Lantgrave" over 153.161);
+171 der Prinz zu Oranien C (5550 gloss "der Prince zu Oranien helfe" over 171.141 h-e-l-f-e); 173 "...graf" M (5550
+gloss "Palsgrave vnd graf" over 153.130.90.1.79.173, prefix of the last word not legible); 200 Herzog von Alba C
+(5797 p6, Groen p.224 "vom Herzog von Alba absondern" against `von 200.122.132.142 abso-`); 154 Herzog von Sachsen C
+(5797 p5, Groen pp.223-224 "Bey dem Herzog von Sachsen und" against `Bey 154.124.144.134 und`); 155 Kölln M (5797
+p6, `morgen 100.155 der hofnung`, 100 unexplained); 202 Franckreich C (5550 x4); 223 Harlem C (5810 x3); 241
+Zeelande C (5810); 336 Fussvolck C (5557 gloss "Voetvolck", 5549 PS); 339 Schützen C (5557 gloss; same sense as
+key.tsv's harquebouziers); 346 "Dubbel" M (5557 gloss, read uncertainly); 350 gelt C (5550 x2); 338 cavallerie C
+(5811; key.tsv 'chevaulx legiers', same sense); 311 pays M; 351 bateaux M (2 of 3); 125 'l', 180 'de', 242 NULL,
+310, 312, 359: single noisy observations, M. Unread in print (grade U, no value): 157 (5810 "et que [157] semble
+procéder", Groen's footnote "Apparemment le Roi de France, ou l'Electeur de Cologne"; the other copy has 187; and
+5549 PS "des [157] abgedanckt", Groen's footnote "Nom propre sous-entendu") and 192 (Groen Suppl. p.146* prints the
+numerals "121. 133. 192."; 5557 "von 192 gute vertröstung", no gloss). **names.tsv: 51 codes, C 36 (24 of them
+NULL), M 12, U 3.**
+
+**Step 3 control (gate as written above at 01:10 UTC), `python3 axnames/control_5811.py`:**
+```
+NULL: held-out 9/11 = 81.8%; shuffles mean 73.0% (min 50.0, max 100.0, n=20)
+word: held-out 1/1 = 100.0%; shuffles mean 0.0% (min 0.0, max 0.0, n=20)
+all: held-out 10/12 = 83.3%; shuffles mean 40.4% (min 16.7, max 58.3)
+5811 codes with no prediction: ['311']
+```
+**Gate result: NOT PASSED.** As briefed (all predicted codes): held-out 83.3% (>= 60%, met) but shuffles 40.4%
+(> 10%, not met). Pre-registered split: word/name class not testable at this N (1 predictable code, 351 bateaux, a
+hit); NULL class 81.8% against a shuffle mean of 73.0% (gap 8.8 points, gate 20: not met). The two NULL misses (137,
+141 in 5811) are single 5811 occurrences where the cluster absorbed a transcription gap ('et', 'streduuiiepar').
+Why the gate cannot pass as designed: the map is 24 NULL of 36 C rows, so a shuffle still predicts NULL for most
+5811 codes (rule 3's near-ceiling warning); 5811's own word codes (311, 338, 351) mostly occur only in 5811. The
+diagnostic and known-answer numbers above are a better test of the NULL finding, but they were not the pre-written
+gate, so they do not license step 4 here.
+
+**Step 4 not run** (conservative reading of the brief: "If the gate passes"). No key_full.tsv, no decode_*_full.json,
+no reading_*_full*; key.tsv and every N4 reading untouched. What a merge would touch, counted only
+(`axnames/coverage.py` -> `axnames/coverage.tsv`, no decode):
+
+| letter | U now | U on a NULL-C code | U on a word-C code | U on a word-M code | U left |
+|---|---|---|---|---|---|
+| 4610 | 288 | 161 | 4 (153 x2, 200, 202) | 20 (125 x19, 180) | 103 |
+| 4611 | 227 | 121 | 6 (200 x5, 223) | 16 (125 x14, 311 x2) | 84 |
+| 4616 | 26 | 4 | 0 | 0 | 22 (mostly unsettled split tokens like 22/112) |
+| 5797 spots | 31 | 17 | 4 | 2 | 8 |
+
+**5797 spots against names.tsv (lookup only; no reading made, gate not passed; Groen's printed frame from
+Groen IV pp.223-225):**
+
+| spot | code run | names.tsv at those codes | Groen's frame |
+|---|---|---|---|
+| p5_spot5 | (ist) 131.123.173 (gestern) | 131 NULL C, 123 NULL C (key.tsv 'l' M), 173 "...graf" M | "ist gestern zue ghen gezogen" |
+| p5_spot3 | Bey 154.124.144.134 und 161.126.136.146 ist | 154 Herzog von Sachsen C (Groen prints it here), nulls C, 161 Landgraf C, 136 NULL C (key.tsv 'vingt' M), 146 no row | "Bey dem Herzog von Sachsen und ist [w]illens" |
+| p6_spot4 | 172 zeuget ... morgen 100.155 der | 172 no row; 155 Kölln M | "zeuget diesen morgen Kölln der hofnung" |
+| p7_spot2 | 153.146.137 helt sich wol | 153 Pfalzgraf C, 146 no row, 137 NULL C | "helt sich wol und thut in warheit viel" |
+| p7_spot6 | 182.128.133.142 ist willig | 182 no row, 128/133/142 NULL C | "ist willig und urbietig ... dasz er mit bruder möge mit vortziehen" |
+| p8_spot7 | 156.127.135.144.129 begert meiner | 156 no row, the other four NULL C | "begert meiner, kan aber nicht wiszen warumb" |
+
+So each spot carries one (p5_spot3: two) non-null code; names.tsv has a C row for two of them (161 at p5_spot3,
+153 at p7_spot2), an M row for one (173 at p5_spot5) and none for 156, 172, 182 (nor 146). Not located in Groen IV
+pp.217-226 as printed words at these spots; this is a table lookup, not a reading, until a gate that can pass (or
+the orchestrator's decision) licenses step 4 and a fresh instance re-derives it.
+
+**Next step (one line, for the orchestrator):** re-gate on a control that is not at ceiling -- e.g. the
+known-answer run on 4613/4615 plus the hidden-letter false-null rate above, pre-registered -- then run step 4 as
+briefed (key_full.tsv = key.tsv + names.tsv C rows, the three key.tsv conflicts 123/128/136 decided by the
+orchestrator since key.tsv rows stay unchanged); 146, 156, 172, 182 and 157/187/192 need further glossed siblings
+(the "solved on leaf" items 4496/4614/7205/7206/7208 in csWV3, 5552's glosses, 5557 leaves 2-4 not read this pass).
+
+Requests: dbnl.org 5, resources.huygens.knaw.nl 2 (WVO PDFs 5550, 5557). No subagents. Files: `names.tsv`,
+`axnames/{align_names.py,build_names.py,attest_manual.tsv,control_5811.py,control_5811.tsv,control_5811.out,
+falsenull_diag.py,falsenull_diag.out,coverage.py,coverage.tsv,occ_*.tsv,summ.py,win.py}`,
+`groen/{groen_IV_CDLXVIII,groen_IV_CDLXXXIII,groen_IV_CDLXXXIV}.txt` and their HTML. Novelty not classified.

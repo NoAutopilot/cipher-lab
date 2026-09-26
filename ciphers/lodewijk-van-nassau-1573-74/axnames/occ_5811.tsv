@@ -1,0 +1,68 @@
+letter	page	unit	line	pos	code	absorbed	left_anchor	right_anchor	ctx_left	ctx_right
+5811	p1	56	05811_p1_L04	2	141		2	4	uostreduuiie	parlaquellei
+5811	p1	57	05811_p1_L04	3	127		2	4	uostreduuiie	parlaquellei
+5811	p1	58	05811_p1_L04	4	130		2	5	uostreduuiie	parlaquellei
+5811	p1	96	05811_p1_L05	21	123		6	4	liberationde	uenirauecuoz
+5811	p1	117	05811_p1_L06	21	132		5	6	cuoztrouppes	pardecaetace
+5811	p1	125	05811_p1_L07	8	121		6	6	uppespardeca	etacesteffec
+5811	p1	158	05811_p1_L08	20	126	entregraueetthielieuou	6	3	uostrechemyn	spuisasseure
+5811	p1	159	05811_p1_L08	21	139	spuisasseurerqueuozl	5	3	etthielieuou	ettresmesont
+5811	p1	165	05811_p1_L09	6	129	smesontesteplusquebien	3	2	queuozlettre	uenuespourla
+5811	p1	171	05811_p1_L09	12	130	spourlapeineoui	2	2	quebienuenue	etoisdescauo
+5811	p1	176	05811_p1_L09	17	150	sdescauoirlestattant	3	4	peineouietoi	deuostresant
+5811	p1	191	05811_p1_L12	2	135	antequedeuozaffaires	3	5	antdeuostres	etayantreceu
+5811	p1	192	05811_p1_L12	3	137		3	6	euozaffaires	etayantreceu
+5811	p1	205	05811_p1_L12	16	123		6	5	etayantreceu	uostrelettre
+5811	p1	288	05811_p1_L16	19	127		6	6	quilzayentau	plustostaset
+5811	p1	324	05811_p1_L18	16	127	poure	5	3	uironsdetiel	streencesqua
+5811	p1	367	05811_p1_L20	20	132		6	5	iroiresqueie	crainsquelep
+5811	p1	380	05811_p1_L21	13	131	ays	5	4	crainsquelep	yestassezest
+5811	p1	384	05811_p1_L21	17	310	t	4	5	quelepaysyes	assezestroic
+5811	p1	385	05811_p1_L21	18	140		3	6	uelepaysyest	assezestroic
+5811	p1	405	05811_p1_L22	20	136	cauallerie	6	5	troictpourla	ettoutesfois
+5811	p1	406	05811_p1_L23	1	338		5	6	lacauallerie	ettoutesfois
+5811	p1	422	05811_p1_L23	17	135		5	6	utesfoisnous	donneronsord
+5811	p1	455	05811_p1_L25	13	351	bateaux	6	5	accommoderde	etautresnece
+5811	p1	474	05811_p1_L26	14	123		6	6	esnecessites	leplusqueser
+5811	p1	496	05811_p1_L27	3	131		6	6	serapossible	esperantauss
+5811	p2	0	05811_p2_L01	1	121		0	5	ncoiresuenuz	iusquesauous
+5811	p2	15	05811_p2_L01	16	122		5	5	squesauousme	doubtantqued
+5811	p2	57	05811_p2_L04	1	123		6	4	usestesparty	quilzsoyentd
+5811	p2	110	05811_p2_L06	19	124		5	6	urrontpasser	sanscourrirq
+5811	p2	182	05811_p2_L10	18	123		4	5	iendroitmala	proposorille
+5811	p2	243	05811_p2_L14	6	123		6	5	ulxquonpeult	quantaurittm
+5811	p2	244	05811_p2_L14	7	130		5	6	ulxquonpeult	quantaurittm
+5811	p2	293	05811_p2_L24	7	1574		3	1	chenkilapard	iuersesfoise
+5811	p5	37	05811_p5_L03	11	141	streduuiiepar	4	3	euneaultreuo	laquelleiayu
+5811	p5	38	05811_p5_L03	12	127		3	4	treduuiiepar	laquelleiayu
+5811	p5	39	05811_p5_L03	13	130		2	4	treduuiiepar	laquelleiayu
+5811	p5	71	05811_p5_L05	11	123		4	6	liberationde	uenirauecuoz
+5811	p5	89	05811_p5_L06	8	132	par	6	2	cuoztrouppes	decaetaceste
+5811	p5	97	05811_p5_L06	16	121	c	3	4	espardecaeta	esteffectpre
+5811	p5	126	05811_p5_L08	1	129	ynentregraueetthielieu	4	4	reuostrechem	ouspuisasseu
+5811	p5	127	05811_p5_L08	2	139	ouspuisasseurerqueuozl	3	4	ueetthielieu	ettresmesont
+5811	p5	133	05811_p5_L08	8	129	smeso	4	3	queuozlettre	ntesteplusqu
+5811	p5	139	05811_p5_L08	14	130	plusquebienuenu	3	2	esmesonteste	espourlapein
+5811	p5	144	05811_p5_L08	19	150	urlapeineou	3	1	bienuenuespo	ietoisdescau
+5811	p5	195	05811_p5_L09	12	135	et	6	2	euozaffaires	ayantreceuuo
+5811	p5	196	05811_p5_L09	13	137		5	3	ozaffaireset	ayantreceuuo
+5811	p5	207	05811_p5_L10	10	123		5	6	etayantreceu	uostrelettre
+5811	p5	286	05811_p5_L13	19	127		4	6	quilzayentau	plustostaset
+5811	p5	315	05811_p5_L15	3	123		5	3	esenuironsde	tielpourestr
+5811	p5	320	05811_p5_L15	8	129	pour	4	3	uironsdetiel	estreencesqu
+5811	p5	362	05811_p5_L17	6	122		4	5	iroiresqueie	crainsquelep
+5811	p5	374	05811_p5_L17	18	311	pays	6	2	ecrainsquele	yestassezest
+5811	p5	375	05811_p5_L17	19	131		5	2	insquelepays	yestassezest
+5811	p5	380	05811_p5_L18	2	140		2	2	uelepaysyest	assezestroic
+5811	p5	401	05811_p5_L18	23	130	cauallerie	4	4	troictpourla	ettoutesfois
+5811	p5	418	05811_p5_L19	17	135		5	3	utesfoisnous	donneronsord
+5811	p5	450	05811_p5_L21	1	351	bateaux	3	5	accommoderde	etautresnece
+5811	p5	469	05811_p5_L21	20	123		5	4	esnecessites	leplusqueser
+5811	p5	493	05811_p5_L22	6	131		6	4	serapossible	esperantauss
+5811	p5	563	05811_p5_L25	15	121		5	5	ncoiresuenuz	iusquesauous
+5811	p5	578	05811_p5_L26	8	122		6	3	squesauousme	doubtantqued
+5811	p5	618	05811_p5_L28	5	123		4	3	ousestespart	yquilzsoyent
+5811	p5	676	05811_p5_L30	21	124		5	4	urrontpasser	sanscourrirq
+5811	p5	755	05811_p5_L34	6	124		6	5	itmalapropos	orillefaultr
+5811	p5	805	05811_p5_L36	15	123		6	5	ulxquonpeult	quantaurittm
+5811	p5	806	05811_p5_L36	16	130		5	6	ulxquonpeult	quantaurittm

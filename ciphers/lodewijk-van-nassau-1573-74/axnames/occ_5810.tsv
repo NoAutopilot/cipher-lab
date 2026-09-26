@@ -1,0 +1,310 @@
+letter	page	unit	line	pos	code	absorbed	left_anchor	right_anchor	ctx_left	ctx_right
+5810	p1	14	05810_p1_L09	4	140		6	2	trepartcomme	letempsetlas
+5810	p1	15	05810_p1_L09	5	141		5	3	trepartcomme	letempsetlas
+5810	p1	16	05810_p1_L09	6	126		4	4	trepartcomme	letempsetlas
+5810	p1	17	05810_p1_L09	7	122		3	5	trepartcomme	letempsetlas
+5810	p1	20	05810_p1_L09	10	121		2	6	epartcommele	tempsetlasai
+5810	p1	44	05810_p1_L10	19	132		4	5	aisondeliuer	saduancebien
+5810	p1	63	05810_p1_L11	14	124		6	5	cebienfortet	petitapetits
+5810	p1	64	05810_p1_L11	15	130		5	6	cebienfortet	petitapetits
+5810	p1	87	05810_p1_L11	20	130		6	2	tsapprochera	laprimeueree
+5810	p1	88	05810_p1_L12	1	127		5	3	tsapprochera	laprimeueree
+5810	p1	100	05810_p1_L12	13	129		6	5	alaprimeuere	etquedesprac
+5810	p1	101	05810_p1_L12	14	149		5	6	alaprimeuere	etquedesprac
+5810	p1	110	05810_p1_L13	1	124		6	3	uereetquedes	practiqueset
+5810	p1	122	05810_p1_L13	13	130		4	5	espractiques	etsecretesme
+5810	p1	148	05810_p1_L14	15	134		5	4	eesdelennemi	nedebuonsaul
+5810	p1	176	05810_p1_L15	2	129		6	5	ementdoubter	ainsnousasse
+5810	p1	197	05810_p1_L16	2	132		6	3	asseurerquil	nobmectrarie
+5810	p1	215	05810_p1_L16	6	127		4	4	ctrarienpour	ayantleloysi
+5810	p1	229	05810_p1_L17	1	132		6	6	yantleloysir	semectreenno
+5810	p1	238	05810_p1_L17	10	142		5	6	ysirsemectre	ennouuelequi
+5810	p1	257	05810_p1_L18	7	131		5	5	elequippaige	pournousdonn
+5810	p1	271	05810_p1_L18	11	134		6	4	urnousdonner	plusdaffaire
+5810	p1	296	05810_p1_L19	16	136		4	6	quauparauant	mesmessilnou
+5810	p1	323	05810_p1_L20	10	127		2	2	uoytencoires	destituezdet
+5810	p1	324	05810_p1_L20	11	124		2	3	uoytencoires	destituezdet
+5810	p1	325	05810_p1_L20	12	133		1	4	uoytencoires	destituezdet
+5810	p1	343	05810_p1_L21	8	0	o	6	5	uezdetoutsec	ursetnozuill
+5810	p1	347	05810_p1_L21	12	137		5	5	etoutsecours	etnozuillesp
+5810	p1	398	05810_p1_L22	20	127		4	5	fortchargees	queselonappa
+5810	p1	423	05810_p1_L24	1	141		4	4	rencehumaine	ellesnepourr
+5810	p1	451	05810_p1_L25	6	121		6	5	ntlonguement	subsistersan
+5810	p1	461	05810_p1_L25	16	133		5	3	entsubsister	sansquelqueb
+5810	p1	462	05810_p1_L25	17	126		4	4	entsubsister	sansquelqueb
+5810	p1	467	05810_p1_L25	22	144		3	5	ubsistersans	quelquebonse
+5810	p1	574	05810_p1_L27	10	131		6	3	cemeueuillez	auurayettout
+5810	p1	636	05810_p1_L30	8	124	a	4	3	fairespardel	etsienbrieff
+5810	p1	649	05810_p1_L30	13	133	f	5	6	aetsienbrief	uousferezque
+5810	p1	687	05810_p1_L31	17	128		6	5	eioinctement	quelsecoursn
+5810	p1	691	05810_p1_L32	1	128	l	5	6	inctementque	secoursnousa
+5810	p1	717	05810_p1_L33	3	133		5	3	onsseurement	aattendredeu
+5810	p1	719	05810_p1_L33	5	122		4	4	nsseurementa	attendredeuo
+5810	p1	735	05810_p1_L33	21	141		5	6	tendredeuous	etlarrestqui
+5810	p1	759	05810_p1_L34	5	132		3	3	uienestprins	sansdissimul
+5810	p1	788	05810_p1_L35	14	133		4	5	aucunechosea	ffinquenousp
+5810	p1	796	05810_p1_L35	22	129		6	4	hoseaffinque	nouspuission
+5810	p1	797	05810_p1_L35	23	131		5	5	hoseaffinque	nouspuission
+5810	p1	814	05810_p1_L36	17	137		5	3	puissionsicy	regleretfair
+5810	p1	851	05810_p1_L37	5	121		6	6	elapourapres	unelongueetu
+5810	p1	863	05810_p1_L37	17	138		6	3	sunelongueet	uaineattente
+5810	p1	864	05810_p1_L37	18	127		5	3	sunelongueet	uaineattente
+5810	p1	886	05810_p1_L38	19	138		6	5	ntedesecours	netomberaume
+5810	p1	897	05810_p1_L39	5	139		4	6	rsnetomberau	mesmeinconue
+5810	p1	930	05810_p1_L39	11	133		5	3	uinousaduint	alendroictde
+5810	p1	931	05810_p1_L39	12	121		4	4	uinousaduint	alendroictde
+5810	p1	949	05810_p1_L40	15	312	uille	4	2	ictdelabonne	deharlemlaqu
+5810	p1	952	05810_p1_L40	18	127	harleml	5	3	bonneuillede	aquelleapres
+5810	p1	953	05810_p1_L40	19	223		4	3	lledeharleml	aquelleapres
+5810	p1	954	05810_p1_L40	20	132		3	4	lledeharleml	aquelleapres
+5810	p1	955	05810_p1_L40	21	173		2	5	lledeharleml	aquelleapres
+5810	p1	968	05810_p1_L41	11	127		5	6	aquelleapres	sestresiuail
+5810	p1	975	05810_p1_L41	18	127		6	4	eapressestre	siuaillammen
+5810	p1	976	05810_p1_L41	19	242		5	5	eapressestre	siuaillammen
+5810	p1	979	05810_p1_L42	1	121		4	6	pressestresi	uaillammentm
+5810	p1	1019	05810_p1_L42	8	143		6	6	tantsouffert	surlespoirqu
+5810	p2	28	05810_p2_L02	5	0	o	4	5	ourieluydonn	isdusecoursq
+5810	p2	36	05810_p2_L02	13	0	o	6	5	donnoisdusec	ursquenousre
+5810	p2	58	05810_p2_L03	8	124		6	6	srecepurions	fustalafinco
+5810	p2	80	05810_p2_L03	14	134		3	5	nconstrainte	serendrealam
+5810	p2	89	05810_p2_L04	2	127		6	3	inteserendre	alamercydese
+5810	p2	93	05810_p2_L04	6	129		4	4	eserendreala	mercydesenne
+5810	p2	94	05810_p2_L04	7	141		3	5	eserendreala	mercydesenne
+5810	p2	110	05810_p2_L04	23	140		6	3	cydesennemys	quilonttraic
+5810	p2	111	05810_p2_L05	1	129		5	4	cydesennemys	quilonttraic
+5810	p2	142	05810_p2_L06	9	132		6	5	nhumainement	quelasouuena
+5810	p2	143	05810_p2_L06	10	127		5	6	nhumainement	quelasouuena
+5810	p2	235	05810_p2_L07	13	121		6	3	nsbienpenser	queltraictem
+5810	p2	236	05810_p2_L08	1	130		5	4	nsbienpenser	queltraictem
+5810	p2	237	05810_p2_L08	2	124		4	5	nsbienpenser	queltraictem
+5810	p2	238	05810_p2_L08	3	122		3	6	nsbienpenser	queltraictem
+5810	p2	254	05810_p2_L08	19	136		5	3	ltraictement	lennemyferoi
+5810	p2	255	05810_p2_L08	20	129		4	4	ltraictement	lennemyferoi
+5810	p2	256	05810_p2_L08	21	134		3	5	ltraictement	lennemyferoi
+5810	p2	311	05810_p2_L11	7	127		5	5	rspourroyent	tomberentres
+5810	p2	312	05810_p2_L11	8	131		5	6	rspourroyent	tomberentres
+5810	p2	342	05810_p2_L11	16	137		6	4	nspuisqueluy	depuislarend
+5810	p2	343	05810_p2_L11	17	122		5	5	nspuisqueluy	depuislarend
+5810	p2	361	05810_p2_L12	16	124		4	5	slarendition	dudictharlem
+5810	p2	368	05810_p2_L12	23	223	harlem	5	3	ditiondudict	areceutanten
+5810	p2	369	05810_p2_L13	1	128		4	4	dudictharlem	areceutanten
+5810	p2	382	05810_p2_L13	14	147	u	5	5	areceutanten	uaterlandtqu
+5810	p2	393	05810_p2_L14	1	121		5	5	nuuaterlandt	queicyenzeel
+5810	p2	403	05810_p2_L14	11	141	eelande	4	6	ndtqueicyenz	sigrandescor
+5810	p2	454	05810_p2_L15	4	128		5	4	scongnoissez	sonnaturelno
+5810	p2	455	05810_p2_L15	5	143		5	5	scongnoissez	sonnaturelno
+5810	p2	509	05810_p2_L17	19	128		4	5	tyfmaisquasi	despouillede
+5810	p2	510	05810_p2_L17	20	141		3	6	tyfmaisquasi	despouillede
+5810	p2	577	05810_p2_L19	2	127		5	5	raulcunement	medeffierdeu
+5810	p2	578	05810_p2_L19	3	121		5	6	raulcunement	medeffierdeu
+5810	p2	593	05810_p2_L19	18	707	bo	5	6	deffierdeuoz	nnesdiligenc
+5810	p2	608	05810_p2_L20	12	127		6	4	esdiligences	ayantcydeuan
+5810	p2	609	05810_p2_L20	13	144		5	4	esdiligences	ayantcydeuan
+5810	p2	636	05810_p2_L21	1	131		6	6	parplusieurs	lettrestresa
+5810	p2	674	05810_p2_L22	15	121		3	5	bonsdebuoirs	queuousfaict
+5810	p2	675	05810_p2_L22	16	132		3	6	bonsdebuoirs	queuousfaict
+5810	p2	723	05810_p2_L23	5	129		6	5	queplusieurs	moyensdesque
+5810	p2	737	05810_p2_L24	3	121		5	3	yensdesquelz	mauezfaictou
+5810	p2	743	05810_p2_L24	9	134		3	4	esquelzmauez	faictouuertu
+5810	p2	758	05810_p2_L25	2	128		4	6	ictouuerture	etlesquelzia
+5810	p2	801	05810_p2_L25	11	131		6	5	nttoutesfois	tirezengrand
+5810	p2	815	05810_p2_L26	9	136		4	6	irezengrande	longueuretqu
+5810	p2	824	05810_p2_L26	18	121		6	6	andelongueur	etquelatardi
+5810	p2	853	05810_p2_L27	23	131		6	4	tedexecution	nousapported
+5810	p2	865	05810_p2_L28	12	127		6	6	nnousapporte	desdommaiges
+5810	p2	944	05810_p2_L29	7	138		6	3	derercombien	ladiligencee
+5810	p2	945	05810_p2_L29	8	141		5	3	derercombien	ladiligencee
+5810	p2	979	05810_p2_L31	7	131		6	5	nsestrequise	etqueungbons
+5810	p2	1002	05810_p2_L32	6	128		6	5	nsecoursnous	tirreroitmai
+5810	p2	1003	05810_p2_L32	7	134		5	6	nsecoursnous	tirreroitmai
+5810	p2	1038	05810_p2_L33	2	142	e	3	5	ecqpeudepain	horsdetousma
+5810	p2	1039	05810_p2_L33	3	121		3	6	cqpeudepaine	horsdetousma
+5810	p2	1055	05810_p2_L33	19	121		4	6	sdetousmaulx	estanslesfor
+5810	p2	1063	05810_p2_L34	2	142	es	5	6	maulxestansl	forcesennemi
+5810	p2	1070	05810_p2_L34	9	124		6	5	anslesforces	ennemiestant
+5810	p2	1115	05810_p2_L36	8	128		6	3	etesparsesde	touscostezqu
+5810	p2	1116	05810_p2_L36	9	129		5	4	etesparsesde	touscostezqu
+5810	p2	1126	05810_p2_L36	19	124	z	5	2	sdetouscoste	quemefaictau
+5810	p2	1161	05810_p2_L37	6	138		6	5	uousprierque	incontinentc
+5810	p2	1162	05810_p2_L37	7	149		5	6	uousprierque	incontinentc
+5810	p2	1196	05810_p2_L38	11	129		6	3	epuisseauoir	absoluteresp
+5810	p2	1197	05810_p2_L38	12	134		5	4	epuisseauoir	absoluteresp
+5810	p2	1206	05810_p2_L38	21	141		6	5	uoirabsolute	responsedeuo
+5810	p2	1207	05810_p2_L38	22	128		5	6	uoirabsolute	responsedeuo
+5810	p2	1222	05810_p2_L39	15	132		4	6	sponsedeuous	etplustostpa
+5810	p2	1240	05810_p2_L40	9	0	o	4	6	stostpardeux	utroisdiuers
+5810	p2	1247	05810_p2_L40	16	143		6	4	rdeuxoutrois	diuersesuoie
+5810	p2	1262	05810_p2_L41	8	180	de	6	1	iuersesuoies	puiscequedes
+5810	p2	1263	05810_p2_L41	9	129		5	2	ersesuoiesde	puiscequedes
+5810	p2	1264	05810_p2_L41	10	121		4	3	ersesuoiesde	puiscequedes
+5810	p3	0	05810_p3_L06	1	126		0	4	uostrelettre	puisqueienya
+5810	p3	1	05810_p3_L06	2	127		0	4	uostrelettre	puisqueienya
+5810	p3	2	05810_p3_L06	3	134		0	5	uostrelettre	puisqueienya
+5810	p3	22	05810_p3_L07	2	128		5	5	ienyaytrouue	aucuneresolu
+5810	p3	42	05810_p3_L08	1	127		3	4	olutiondeuoz	affairesbien
+5810	p3	51	05810_p3_L08	10	129		5	5	euozaffaires	bienquesuise
+5810	p3	78	05810_p3_L09	16	121		4	4	eaisedeueoir	quelaconfede
+5810	p3	84	05810_p3_L10	1	131		4	6	deueoirquela	confederatio
+5810	p3	105	05810_p3_L10	22	129		4	5	ationpardela	quescauezest
+5810	p3	115	05810_p3_L11	10	123		4	2	elaquescauez	estenbonster
+5810	p3	135	05810_p3_L11	16	131		6	4	stermesetque	sembleproced
+5810	p3	136	05810_p3_L11	17	187		5	5	stermesetque	sembleproced
+5810	p3	137	05810_p3_L12	1	124		4	6	stermesetque	sembleproced
+5810	p3	229	05810_p3_L13	8	128		6	5	dasesactions	etquebientos
+5810	p3	260	05810_p3_L14	23	126		5	6	eapparoistre	quelquebonef
+5810	p3	280	05810_p3_L15	20	127		2	3	eboneffectet	telquilnouss
+5810	p3	341	05810_p3_L17	1	141		4	4	tendreauuray	lepassaigedu
+5810	p3	369	05810_p3_L18	7	133		6	4	ydepoloingne	etiusquesaou
+5810	p3	402	05810_p3_L18	18	138		6	4	lecontelouys	lauraconduic
+5810	p3	416	05810_p3_L19	14	141		5	5	auraconduict	dontilyagran
+5810	p3	417	05810_p3_L19	15	121		4	6	auraconduict	dontilyagran
+5810	p5	0	05810_p5_L08	1	140		0	2	trepartcomme	letempsetlas
+5810	p5	1	05810_p5_L08	2	138		0	2	trepartcomme	letempsetlas
+5810	p5	2	05810_p5_L08	3	141		0	3	trepartcomme	letempsetlas
+5810	p5	3	05810_p5_L08	4	126		0	4	trepartcomme	letempsetlas
+5810	p5	4	05810_p5_L08	5	122		0	5	trepartcomme	letempsetlas
+5810	p5	7	05810_p5_L08	8	121		2	6	epartcommele	tempsetlasai
+5810	p5	31	05810_p5_L09	24	132		4	4	aisondeliuer	saduancebien
+5810	p5	50	05810_p5_L10	19	124		6	5	cebienfortet	petitapetits
+5810	p5	51	05810_p5_L10	20	130		5	6	cebienfortet	petitapetits
+5810	p5	74	05810_p5_L11	2	136		6	4	tsapprochera	laprimeueree
+5810	p5	75	05810_p5_L11	3	127		5	5	tsapprochera	laprimeueree
+5810	p5	87	05810_p5_L11	15	129		6	5	alaprimeuere	etquedesprac
+5810	p5	88	05810_p5_L11	16	149		5	6	alaprimeuere	etquedesprac
+5810	p5	97	05810_p5_L12	4	124		6	4	uereetquedes	practiqueset
+5810	p5	109	05810_p5_L12	16	130		4	6	espractiques	etsecretesme
+5810	p5	135	05810_p5_L13	16	134		5	6	eesdelennemi	nedebuonsaul
+5810	p5	163	05810_p5_L14	1	129		6	6	ementdoubter	ainsnousasse
+5810	p5	184	05810_p5_L14	22	132		6	2	asseurerquil	nobmectrarie
+5810	p5	198	05810_p5_L15	2	127		6	5	ctrarienpour	ayantleloysi
+5810	p5	212	05810_p5_L15	16	132		5	5	yantleloysir	semectreenno
+5810	p5	221	05810_p5_L16	1	142		4	6	ysirsemectre	ennouuelequi
+5810	p5	240	05810_p5_L16	20	131		6	5	elequippaige	pournousdonn
+5810	p5	255	05810_p5_L17	2	134		6	6	urnousdonner	plusdaffaire
+5810	p5	280	05810_p5_L18	3	136		5	6	quauparauant	mesmessilnou
+5810	p5	308	05810_p5_L18	19	127		6	3	uoytencoires	destituezdet
+5810	p5	309	05810_p5_L18	20	124		5	4	uoytencoires	destituezdet
+5810	p5	310	05810_p5_L18	21	133		4	5	uoytencoires	destituezdet
+5810	p5	332	05810_p5_L19	22	137		6	6	etoutsecours	etnozuillesp
+5810	p5	383	05810_p5_L21	9	127		6	6	fortchargees	queselonappa
+5810	p5	407	05810_p5_L22	8	141		6	6	rencehumaine	ellesnepourr
+5810	p5	435	05810_p5_L23	11	121		6	6	ntlonguement	subsistersan
+5810	p5	445	05810_p5_L23	21	133		6	3	entsubsister	sansquelqueb
+5810	p5	446	05810_p5_L23	22	126		5	4	entsubsister	sansquelqueb
+5810	p5	451	05810_p5_L24	5	144		3	6	ubsistersans	quelquebonse
+5810	p5	555	05810_p5_L25	9	131		3	6	cemeueuillez	auurayettout
+5810	p5	617	05810_p5_L28	7	124	a	6	3	fairespardel	etsienbrieff
+5810	p5	630	05810_p5_L28	12	133	f	5	6	aetsienbrief	uousferezque
+5810	p5	667	05810_p5_L29	18	128		6	6	eioinctement	quelsecoursn
+5810	p5	697	05810_p5_L31	1	137		6	4	onsseurement	aattendredeu
+5810	p5	699	05810_p5_L31	3	122		5	5	nsseurementa	attendredeuo
+5810	p5	714	05810_p5_L31	18	141		5	6	tendredeuous	etlarrestqui
+5810	p5	738	05810_p5_L32	6	132		3	4	uienestprins	sansdissimul
+5810	p5	766	05810_p5_L33	12	129		4	5	raucunechose	affinquenous
+5810	p5	767	05810_p5_L33	13	133		3	6	raucunechose	affinquenous
+5810	p5	775	05810_p5_L33	21	129		6	5	hoseaffinque	nouspuission
+5810	p5	776	05810_p5_L33	22	131		5	6	hoseaffinque	nouspuission
+5810	p5	793	05810_p5_L34	17	137		5	3	puissionsicy	regleretfair
+5810	p5	830	05810_p5_L35	6	121		6	6	elapourapres	unelongueetu
+5810	p5	842	05810_p5_L35	18	136		6	5	sunelongueet	uaineattente
+5810	p5	843	05810_p5_L35	19	127		5	6	sunelongueet	uaineattente
+5810	p5	865	05810_p5_L36	22	135		6	6	ntedesecours	netomberaume
+5810	p5	876	05810_p5_L37	11	139		6	6	rsnetomberau	mesmeinconue
+5810	p5	907	05810_p5_L38	1	137		6	4	uinousaduint	alendroictde
+5810	p5	908	05810_p5_L38	2	121		5	5	uinousaduint	alendroictde
+5810	p5	926	05810_p5_L38	20	312	uille	6	3	ictdelabonne	deharlemlaqu
+5810	p5	929	05810_p5_L38	23	127	harlem	5	4	bonneuillede	laquelleapre
+5810	p5	930	05810_p5_L39	1	223		4	5	illedeharlem	laquelleapre
+5810	p5	931	05810_p5_L39	2	132		3	6	illedeharlem	laquelleapre
+5810	p5	945	05810_p5_L39	16	127		6	6	aquelleapres	sestresiuail
+5810	p6	0	05810_p6_L01	1	127		0	4	eapressestre	siuaillammen
+5810	p6	1	05810_p6_L01	2	242		0	5	eapressestre	siuaillammen
+5810	p6	4	05810_p6_L01	5	121		2	6	pressestresi	uaillammentm
+5810	p6	44	05810_p6_L01	12	143		6	6	tantsouffert	surlespoirqu
+5810	p6	108	05810_p6_L04	19	124		6	6	srecepurions	fustalafinco
+5810	p6	130	05810_p6_L05	3	134		3	6	nconstrainte	serendrealam
+5810	p6	139	05810_p6_L05	12	127		6	4	inteserendre	alamercydese
+5810	p6	143	05810_p6_L05	16	129		5	4	eserendreala	mercydesenne
+5810	p6	144	05810_p6_L05	17	141		4	5	eserendreala	mercydesenne
+5810	p6	160	05810_p6_L06	16	143		6	4	cydesennemys	quilonttraic
+5810	p6	161	05810_p6_L06	17	129		5	5	cydesennemys	quilonttraic
+5810	p6	192	05810_p6_L08	5	132		6	5	nhumainement	quelasouuena
+5810	p6	193	05810_p6_L08	6	127		5	6	nhumainement	quelasouuena
+5810	p6	287	05810_p6_L09	10	121		6	3	nsbienpenser	queltraictem
+5810	p6	288	05810_p6_L09	11	136		5	4	nsbienpenser	queltraictem
+5810	p6	289	05810_p6_L09	12	124		4	5	nsbienpenser	queltraictem
+5810	p6	290	05810_p6_L10	1	122		3	6	nsbienpenser	queltraictem
+5810	p6	306	05810_p6_L10	17	136		5	4	ltraictement	lennemyferoi
+5810	p6	307	05810_p6_L10	18	129		4	5	ltraictement	lennemyferoi
+5810	p6	308	05810_p6_L10	19	134		3	6	ltraictement	lennemyferoi
+5810	p6	362	05810_p6_L13	11	127		6	5	rspourroyent	tomberentres
+5810	p6	363	05810_p6_L13	12	131		5	6	rspourroyent	tomberentres
+5810	p6	393	05810_p6_L14	2	137		6	5	nspuisqueluy	depuislarend
+5810	p6	394	05810_p6_L14	3	122		5	6	nspuisqueluy	depuislarend
+5810	p6	412	05810_p6_L15	1	124		5	6	slarendition	dudictharlem
+5810	p6	419	05810_p6_L15	8	223	harlem	6	5	ditiondudict	areceutanten
+5810	p6	420	05810_p6_L15	9	126		5	6	dudictharlem	areceutanten
+5810	p6	433	05810_p6_L16	3	147	u	6	6	areceutanten	uaterlandtqu
+5810	p6	444	05810_p6_L16	14	121		6	6	nuuaterlandt	queicyenzeel
+5810	p6	453	05810_p6_L17	1	241	zeelande	6	5	andtqueicyen	sigrandescor
+5810	p6	454	05810_p6_L17	2	141		5	6	cyenzeelande	sigrandescor
+5810	p6	507	05810_p6_L18	1	126		4	5	scongnoissez	sonnaturelno
+5810	p6	508	05810_p6_L18	2	143		3	6	scongnoissez	sonnaturelno
+5810	p6	562	05810_p6_L20	10	128		5	5	tyfmaisquasi	despouillede
+5810	p6	563	05810_p6_L20	11	141		4	6	tyfmaisquasi	despouillede
+5810	p6	628	05810_p6_L21	9	127		6	5	raulcunement	medeffierdeu
+5810	p6	629	05810_p6_L21	10	121		5	6	raulcunement	medeffierdeu
+5810	p6	660	05810_p6_L22	22	127		6	4	esdiligences	ayantcydeuan
+5810	p6	661	05810_p6_L22	23	144		5	4	esdiligences	ayantcydeuan
+5810	p6	686	05810_p6_L23	5	131		6	6	parplusieurs	lettrestresa
+5810	p6	724	05810_p6_L25	1	121		5	5	bonsdebuoirs	queuousfaict
+5810	p6	725	05810_p6_L25	2	132		4	6	bonsdebuoirs	queuousfaict
+5810	p6	773	05810_p6_L25	12	129	moyensdesquelzmauez	6	5	queplusieurs	faictouuertu
+5810	p6	788	05810_p6_L26	15	126		6	6	ictouuerture	etlesquelzia
+5810	p6	816	05810_p6_L27	9	121	stirezengrandelongueur	3	6	onttoutesfoi	etquelatardi
+5810	p6	845	05810_p6_L28	13	131		6	5	tedexecution	nousapported
+5810	p6	857	05810_p6_L29	1	127		6	6	nnousapporte	desdommaiges
+5810	p6	934	05810_p6_L30	3	138	ladiligenceennozaction	6	0	derercombien	sestrequisee
+5810	p6	935	05810_p6_L30	4	141	ses	5	1	eennozaction	trequiseetqu
+5810	p6	969	05810_p6_L31	21	126		6	5	nsecoursnous	tirreroitmai
+5810	p6	970	05810_p6_L31	22	134		5	6	nsecoursnous	tirreroitmai
+5810	p6	1004	05810_p6_L32	14	142	horsdetousmaulxestansl	5	2	cqpeudepaine	esforcesenne
+5810	p6	1005	05810_p6_L32	15	121	es	4	3	maulxestansl	forcesennemi
+5810	p6	1010	05810_p6_L33	1	124	es	2	6	stanslesforc	ennemiestant
+5810	p6	1055	05810_p6_L34	21	126		6	0	etesparsesde	touscostezqu
+5810	p7	0	05810_p7_L01	1	129		0	2	rueuparicell	euostrebonne
+5810	p7	2	05810_p7_L01	3	0		0	4	ueuparicelle	uostrebonned
+5810	p7	11	05810_p7_L01	12	124		3	1	aricelleuost	rebonnedispo
+5810	p7	44	05810_p7_L02	4	136		1	3	ispositionio	inctementles
+5810	p7	45	05810_p7_L02	5	149		0	4	ispositionio	inctementles
+5810	p7	79	05810_p7_L03	8	129	setdilligences	5	2	sbonsdebuoir	ausquellesuo
+5810	p7	80	05810_p7_L03	9	134		4	3	tdilligences	ausquellesuo
+5810	p7	89	05810_p7_L03	18	141	l	3	3	gencesausque	lesuousconti
+5810	p7	90	05810_p7_L03	19	125		2	3	encesausquel	lesuousconti
+5810	p7	105	05810_p7_L04	15	132		1	2	uellesuousco	ntinuezparde
+5810	p7	130	05810_p7_L05	19	143	ferayicylongdis	2	2	delaieneuous	coursenrespo
+5810	p7	145	05810_p7_L06	15	130	poncedeuostre	2	2	iscoursenres	lettrepuisqu
+5810	p7	146	05810_p7_L06	16	129		2	2	oncedeuostre	lettrepuisqu
+5810	p7	147	05810_p7_L06	17	121		2	2	oncedeuostre	lettrepuisqu
+5810	p7	151	05810_p7_L12	2	126	tre	2	4	edeuostrelet	puisqueienya
+5810	p7	152	05810_p7_L12	3	127		2	5	uostrelettre	puisqueienya
+5810	p7	153	05810_p7_L12	4	134		2	6	uostrelettre	puisqueienya
+5810	p7	173	05810_p7_L13	20	128		6	6	ienyaytrouue	aucuneresolu
+5810	p7	195	05810_p7_L14	22	127		5	6	olutiondeuoz	affairesbien
+5810	p7	204	05810_p7_L15	9	129		6	6	euozaffaires	bienquesuise
+5810	p7	231	05810_p7_L16	16	121		6	5	eaisedeueoir	quelaconfede
+5810	p7	237	05810_p7_L17	1	131		5	6	deueoirquela	confederatio
+5810	p7	258	05810_p7_L17	22	129		6	6	ationpardela	quescauezest
+5810	p7	268	05810_p7_L18	10	123		6	6	elaquescauez	estenbonster
+5810	p7	289	05810_p7_L18	17	131		6	4	stermesetque	sembleproced
+5810	p7	290	05810_p7_L18	18	157		5	5	stermesetque	sembleproced
+5810	p7	291	05810_p7_L18	19	124		4	6	stermesetque	sembleproced
+5810	p7	381	05810_p7_L20	5	128		6	6	dasesactions	etquebientos
+5810	p7	412	05810_p7_L21	16	126		6	6	eapparoistre	quelquebonef
+5810	p7	429	05810_p7_L22	10	131		6	5	queboneffect	ettelquilnou
+5810	p7	432	05810_p7_L22	13	127		5	6	eboneffectet	telquilnouss
+5810	p7	488	05810_p7_L23	8	141		4	5	tendreauuray	lepassaigedu
+5810	p7	515	05810_p7_L24	17	133		6	6	ydepoloingne	etiusquesaou
+5810	p7	548	05810_p7_L25	5	135		6	6	lecontelouys	lauraconduic
+5810	p7	562	05810_p7_L26	1	141		6	5	auraconduict	dontilyagran
+5810	p7	563	05810_p7_L26	2	121		5	6	auraconduict	dontilyagran

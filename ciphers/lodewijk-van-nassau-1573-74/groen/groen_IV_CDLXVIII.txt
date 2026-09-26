@@ -1,0 +1,394 @@
+## Skiplinks
+ 
+ 
+Tekst [#content]
+ 
+Verantwoording en downloads [#subnav]
+ 
+Doorverwijzing en noten [#tekst_en_noten]
+ 
+  
+  
+ 
+   Ga naar de homepage  [/] 
+ 
+ 
+ 
+    [/] 
+ 
+ 
+
+## Hoofdmenu
+Menu 
+
+ 
+Literatuur & taal [#Literatuur_&_taal]
+ 
+Auteurs [/auteurs/index.php]
+ 
+Beschikbare titels [/titels/index.php]
+ 
+Literatuur [/letterkunde/index.php]
+ 
+Taalkunde [/taalkunde/index.php]
+ 
+Collectie Limburg [/letterkunde/limburg/index.php]
+ 
+Collectie Friesland [/letterkunde/fries/index.php]
+ 
+Collectie Suriname [/letterkunde/suriname/index.php]
+ 
+Collectie Zuid-Afrika [/letterkunde/zuidafrika/index.php]
+ 
+
+ 
+Selecties [#Selecties]
+ 
+Collectie jeugdliteratuur [/onzekinderboeken/index.php]
+ 
+Basisbibliotheek [/basisbibliotheek/index.php]
+ 
+Tijdschriften/jaarboeken [/titels/tijdschriften/titels_tijdschriften.php]
+ 
+Naslagwerken [/titels/titels_naslagwerken.php]
+ 
+Collectie e-books [/letterkunde/ebooks/index.php]
+ 
+Collectie publiek domein [/letterkunde/pd/index.php]
+ 
+Calendarium [/calendarium/index.php]
+ 
+Atlas [/atlas/index.php]
+ 
+
+ 
+Periode [#Periode]
+ 
+Middeleeuwen [/titels/index.php?c=15]
+ 
+Periode 1550-1700 [/titels/index.php?c=17]
+ 
+Achttiende eeuw [/titels/index.php?c=18]
+ 
+Negentiende eeuw [/titels/index.php?c=19]
+ 
+Twintigste eeuw [/titels/index.php?c=20]
+ 
+Eenentwintigste eeuw [/titels/index.php?c=21]
+ 
+
+ 
+ 
+    
+Archives ou correspondance inédite de la maison d'Orange-Nassau (première série). Tome IV 1572-1574 (1837)
+sluit verantwoording en downloads
+
+    
+
+## Informatie terzijde
+  
+ 
+  [index.php] 
+ Toon afbeelding van titelpagina van Archives ou correspondance inédite de la maison d'Orange-Nassau (première série). Tome IV 1572-1574 [groe009arch04_01_tpg.gif] 
+ 
+
+Verantwoording [colofon.php]
+
+Inhoudsopgave [index.php] 
+
+### Downloads
+
+ PDF van tekst (2.65 MB) [/tekst/groe009arch04_01/groe009arch04_01.pdf] 
+ 
+ XML (1.14 MB) [/nieuws/xml.php?id=groe009arch04] 
+
+ tekstbestand [/nieuws/text.php?id=groe009arch04] 
+
+Vul zoekterm(en) inDoorzoek de hele tekst
+
+### Genre
+non-fictie
+
+### Subgenre
+non-fictie/brieven
+
+non-fictie/geschiedenis/Opstand
+
+© zie Auteursrecht en gebruiksvoorwaarden [/titels/gebruiksvoorwaarden.php?id=groe009arch04].
+ 
+   
+ 
+ 
+ 
+ Selecteer waarin je wilt zoeken  Zoek alles Zoeken naar auteurs Zoeken naar titels Zoeken in teksten   
+ Zoek naar auteurs, titels en in teksten Zoeken 
+   
+ 
+   
+  
+  
+
+# Archives ou correspondance inédite de la maison d'Orange-Nassau (première série). Tome IV 1572-1574 [index.php]
+(1837)–G. Groen van Prinsterer [/auteurs/auteur.php?id=groe009]– Auteursrechtvrij [/titels/gebruiksvoorwaarden.php?id=groe009arch04]
+
+  
+Vorige [groe009arch04_01_0087.php] Volgende [groe009arch04_01_0089.php]
+ 
+ 
+ 	 
+	
+
+	
+   
+
+### * Lettre CDLXVIII. 
+ Le Prince d'Orange aux Comtes Jean, Louis, et Henri de Nassau: Il insiste sur un prompt secours.
+ 
+Messieurs mes frères, par la lettre que je vous ay escript de Zierixzée le xxiije jour de mois passé, dont le double vat icy joinct, vous aurez amplement peu veoir en quelle peine je suis pour n'avoir depuis vos dernières du vje jour de novembre eu aulcuns aultres lettres ou nouvelles de vous. Et comme je demeure encoires en la mesme peine et que cependant ces longeurs n'apportent guerres d'avanchement à nostre cause, j'ay du tout trouvé convenir de faire suivre ceste à ma ditte précédente, pour 
+
+	
+
+	
+ [pagina 321]  
+[p. 321]
+
+	
+
+	
+
+ Ga naar margenoot+ [#675]vous prier que, me relevant de telle paine, vous me faictes au plustost entendre l'estat et disposition tant de vostre bonne santé et disposition que de noz affaires de par delà: d'aultre part, comme le temps et la saison de l'iver s'advance bien fort et petit à petit s'approchera la primevére, et que des practiques et secrètes menées de l'ennemi ne debvons aulcunement doubter, ains nous asseurer qu'il n'obmectra rien pour, ayant le loysir, se mectre en nouvel équippaige pour nous donner plus d'affaires qu'auparavant, mesmes s'il nous voyt encoires destituez de tout secours et noz villes par tant de frais et despences si fort chargées que, selon apparence humaine, elles ne pourroyent longuement subsister sans quelque bon secours et soulaigement; je vous prie, le plus affectueusement qu'il m'est possible, qu'en toute diligence me veuillez au vray et tout ouvertement mander en quelle estat sont voz affaires par delà, et si en brieff vous ferez quelque assamblée, joinctement quel secours nous avons seurement à attendre de vous et l'arrest qui en est prins, sans dissimuler aucune chose, affin que nous puissions icy régler et faire estat selon cela, pour, après une longue et vaine attente de secours, ne tomber au mesme inconvénient qui nous advint à l'endroict de la bonne ville de Harlem, laquelle, après s'estre si vaillamment maintenue et avoir tant souffert sur l'espoir que de jour en jour je luy donnois du secours que nous recepvrions, fust à la fin constrainte se rendre à la mercy des ennemys, qui l'ont traictée si inhumainement que la souvenance des cruaultez y exercées ne se polra jamais estaindre. Qu'à ce regard debvons bien penser quel traictement l'ennemy feroit aux aultres qui, par faulte de secours, pourroyent tomber entre ses mains; 
+
+	
+
+	
+ [pagina 322]  
+[p. 322]
+
+	
+
+	
+
+ Ga naar margenoot+ [#676]puisque luy, depuis la rendition dudict Harlem, a receu, tant en Waterlandt que icy en Zeelande, si grand escorneGa naar voetnoot1 [#677], perte, honte, et vergoigneGa naar voetnoot2 [#678]: vous congnoissez son naturel, non seulement ambitieux et vindicatyf, mais quasi despouillé de toute humanité. Je ne vous diz poinct tout cecy pour aulcunement me deffier de voz bonnes diligences, ayant cy-devant par plusieurs lettres très assez veu les bons debvoirs que vous faictes sans cesse, mais pour aultant que plusieurs moyens desquelz m'avez faict ouverture et lesquelz j'ay trouvé bien bon, sont toutesfois tirez en grande longueur, et que la tardivité d'exécution nous apporte des dommaiges et inconvéniens irréparables, dont pouvez facillement considérer combien la diligence en noz actions est requise et que ung bon secours nous tirreroit maintenant avecq peu de paine hors de tous maulx, estans les forces ennemies tant descouragées, désunies et esparses de tous costez; que me faict aultre fois vous prier que incontinent ceste veue je puisse avoir absolute response de vous, et plustost par deux ou trois diverses voies.
+ 
+Depuis ce que dessus, est icy arrivé le présent porteur avec une lettre de mon frère le Conte Jéhan, escript à Dillenbourch le 21 jour du mois de novembre dernier. Et oires qu'elle a faict si long séjour, si est-ce toutesfois qu'elle m'a esté très agréable, pour avoir veu par icelle vostre bonne disposition, joinctement les bons debvoirs et dilligences ausquelles vous continuez par delà. Je ne vous feray icy long discours en responce de vostre lettre, puisque je n'y ay trouvé aucune résolution de voz affaires, bien que suis esté aise de veoir que la confédération 
+
+	
+
+	
+ [pagina 323]  
+[p. 323]
+
+	
+
+	
+
+ Ga naar margenoot+ [#679]par delà que sçavez est en bons termes et que sembleGa naar voetnoot(1) [#680] procéder avecque toute sincérité. Et toutesfois il sera bon de prendre toujours regard à ses actions, et que bientost il face apparoistre quelque bon effect, et tel qu'il nous serve d'asseurance. J'ay aussy bon désir d'entendre au vray le passaige du Roy de Poloingne et jusques à où mon frère le Conte Louys l'aura conduict, dont il y a grand bruyct par deçà. Quant à la difficulté que vous avez trouvé en la lecture de mes lettres, je veulx espérer que celles qu'aurez receu depuis avecq les doubles, pour estre assez de mesme substance, vous auront mieulx esclarcy mon intention. Des nouvelles de par deçà, je ne vous sçauroys icy mander aultres que mes susdittes précédentes contiennent. Les affaires de la ville de Middelbourg sont réduictes en telle extrémité, que nous espérons la ville ne pourra longuement se maintenir sans tomber entre noz mains, bien que l'ennemy, tant par force que par practicques et subtilitez, tasche, par diverses voyes et de tous costelz, de secourrir et ravictuailler la ditte ville; mais aussi les nostres ne font moindre debvoir pour, par bonne garde tant par terre que par eaue, l'empescher. La famine et disette de toutes choses y croist d'heure en heure, et tellement que grande partie, tant hommes, femmes, que enffans, y meurent de faim. Et comme il semble que les ennemis sont résoluz de tenter encoires une foys la voye de force pour ravictuailler la ditte ville de Middelburch, je vous prie de faire faire partout des prières à Dieu, afin qu'il Luy plaise nous regarder en miséricorde, sans nous laisser tomber en telle extré-
+
+	
+
+	
+ [pagina 324]  
+[p. 324]
+
+	
+
+	
+
+ Ga naar margenoot+ [#681]mité, qui causeroit indubitablement par trop grande effusion de sang.... Vlessingue, ce 6e janvier.
+ 
+VostreGa naar voetnoot1 [#682] bien bon frère à vous faire service,
+ 
+ Guillaume de Nassau.
+ 
+A Messieurs, 
+Messieurs les Contes Jéhan, Louys et Henry de Nassau, mes bien bon frères.
+ 
+Dillenbourch.
+ 
+Effectivement l'ennemi tenta peu après de ravitailler Middelbourg. Deux flottes sortirent d'Anvers, sous d'Avila et J. de Romero. Un terrible combat naval eut lieu le 29 janvier près de Roemerswale contre ce dernier; les Zélandois, sons L. de Boysot, remportèrent une victoire complète La flotte de d'Avila, qui auroit rencontré peu de résistance, avoit laissé passer le moment opportun. ‘Als de vlote van Davila af quam, was de Prince seer becommert ende beangst dat sy mochten doorvaren; want syn oorloghschepen daer teghen gheordonneert en waren van goet volck niet wel versien, meest al op de vlote na Berghe zynde, waeromme, na alle moghelycke ordre daerop gestelt, soo hadde hy hem alieen in syn kamer seer bekommert tot gebeden begeven, maer als hem korts daerna tydinghe ghebrocht was dat men Davilas vlote hadde gesien ten ancker komen, so was hy seer verblydt, want den vloet des waters haer teghen wert, dies hy Godt danckte, ende stondt op, ende gingh na het hooft van Vlissingen, ende sagh se daer selve liggen omtrent Breskens, bykans niet eens twyfelende van de Victorie syns volcks voor Bergen’ V. Meteren, 89a. 
+La reddition suivit de près. Mondragon, après une défense opiniàtre, accepta des conditions bonorables, le 19 février. ‘Ende alsoo is de Prince meester geworden van 't geheele Eylandt van Walcheren ende van der Zee.... Het onderstandt ofte ontset heeft binnen twee jaren den Koning aen gelde gekost seven milioenen guldens.’ l.l. p. 89c.
+
+	 
+ 
+ 
+
+### 
+
+ 
+  
+ margenoot+ [#675T] 
+ 
+1574. Janvier.
+  
+ 
+
+ 
+  
+ margenoot+ [#676T] 
+ 
+1574. Janvier.
+  
+ 
+ 
+ 
+  
+ voetnoot1 [#677T] 
+ 
+honte.
+  
+ 
+ 
+ 
+  
+ voetnoot2 [#678T] 
+ 
+déshonneur, humiliation.
+  
+ 
+
+ 
+  
+ margenoot+ [#679T] 
+ 
+1574. Janvier.
+  
+ 
+ 
+ 
+  
+ voetnoot(1) [#680T] 
+ 
+ semble. Apparemment le Roide France, ou l'Eleetteur de Cologne.
+  
+ 
+
+ 
+  
+ margenoot+ [#681T] 
+ 
+1574. Janvier.
+  
+ 
+ 
+ 
+  
+ voetnoot1 [#682T] 
+ 
+Vostre - service. Autographe.
+  
+ 
+ 
+ 
+ 
+
+  
+ 
+ 
+
+ 
+Vorige [groe009arch04_01_0087.php] Volgende [groe009arch04_01_0089.php]
+
+  
+    
+
+## Footer navigatie
+ 
+ 
+     
+  
+ 
+
+### Over DBNL
+ 
+ 
+ Wat is DBNL? [/overdbnl/index.php] 
+ 
+ Over ons [/overdbnl/organisatie.php] 
+ 
+ Selectie- en editieverantwoording [/overdbnl/selectie.php] 
+ 
+ 
+ 
+ 
+
+### Voor gebruikers
+ 
+ 
+ Gebruiksvoorwaarden/Terms of Use [/overdbnl/copyright.php] 
+ 
+ Informatie voor rechthebbenden [/overdbnl/rechthebbenden.php] 
+ 
+ Disclaimer [/overdbnl/disclaimer.php] 
+ 
+ Privacy [/overdbnl/privacyverklaring.php] 
+ 
+ Toegankelijkheid [/toegankelijkheid/index.php] 
+ 
+ Responsible disclosure [/overdbnl/responsible-disclosure.php] 
+ 
+ 
+ 
+ 
+
+### Contact
+ 
+ 
+ Contactformulier [/overdbnl/vragen.php] 
+ 
+ Veelgestelde vragen [/overdbnl/faq.php] 
+ 
+ Vacatures [/overdbnl/stages.php] 
+ 
+  
+  
+ 
+ 
+ 
+
+### Partners
+ 
+ 
+   Ga naar kb.nl   [https://www.kb.nl]  
+ 
+   Ga naar taalunie.org   [https://www.taalunie.org]  
+ 
+   Ga naar Bibliothecair Erfgoed.be   [https://bibliothecairerfgoed.be]  
+ 
+  
+
+ 
+ 
+
+### Over het gehele werk
+
+#### titels
+
+ Archives ou correspondance inédite de la maison d'Orange-Nassau (première série) [/titels/titel.php?id=groe009arch00]
+
+#### auteurs
+
+over  Willem van Oranje [/auteurs/auteur.php?id=will019]
+
+over Philips van Marnix van Sint Aldegonde [/auteurs/auteur.php?id=marn001]
+
+#### plaatsen
+
+over Haarlem [/atlas/plaats.php?id=haarl001]
+
+over Alkmaar [/atlas/plaats.php?id=alkma001]
+
+#### landen
+
+over Frankrijk [/buitengaats/land.php?id=frank01]
+
+over Duitsland [/buitengaats/land.php?id=duits01]
+
+over Groot-Brittannië (en Noord-Ierland) [/buitengaats/land.php?id=groot01]
+
+over Spanje [/buitengaats/land.php?id=spanj01]
+
+### Over dit hoofdstuk/artikel
+
+#### datums
+
+6 januari 1574 [/calendarium/?d=15740106]

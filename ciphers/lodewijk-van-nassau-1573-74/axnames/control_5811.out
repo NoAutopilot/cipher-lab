@@ -1,0 +1,4 @@
+NULL: held-out 9/11 = 81.8%; shuffles mean 73.0% (min 50.0, max 100.0, n=20)
+word: held-out 1/1 = 100.0%; shuffles mean 0.0% (min 0.0, max 0.0, n=20)
+all: held-out 10/12 = 83.3%; shuffles mean 40.4% (min 16.7, max 58.3)
+5811 codes with no prediction: ['311']

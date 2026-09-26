@@ -1,0 +1,26 @@
+code	value	letter	where	evidence	bounded	note
+153	pfaltzgraf	5550	p2 run p2-5 (153.130.90.1.79.173)	contemporary interlinear gloss read by eye this pass from the WVO PDF (05550.pdf leaf 2, crop): "Palsgrave" over 153	yes	gloss over the code itself; 130 null
+153	pfaltzgraf	5550	p2 run p2-11 (bey 153.161. und)	contemporary interlinear gloss read by eye: "Palsgrave Lantgrave" over 153.161	yes	second gloss attestation on the same leaf
+153	pfaltzgraf	5549	PS24 (bey 142 153 143 | zuleger)	Groen Suppl. p.147*: "bey dem Churfürst Palsgrave fur E.G. Zuleger"	no	slack: "dem" and "fur E.G." have no cipher counterpart in the J5I pass; 142/143 nulls elsewhere
+161	landgraf	5550	p2 run p2-11 (bey 153.161. und)	contemporary interlinear gloss read by eye: "Lantgrave" over 161	yes	one attestation; left 153 (C), right clear "und"
+173	graf (gloss prefix illegible)	5550	p2 run p2-5 (153.130.90.1.79.173)	contemporary gloss read by eye: "Palsgrave vnd graf"; the word over 173 reads "graf" with no legible prefix	no	the gloss may abbreviate a longer title; value uncertain; graded M: the gloss word itself is read uncertainly
+171	prinz zu oranien	5550	p2 run p2-19 (dass man 171.141.99.81.114.90.82)	contemporary gloss read by eye: "der Prince zu Oranien helfe" over 171.141 h-e-l-f-e	yes	141 null
+202	franckreich	5550	run p1-1	contemporary interlinear gloss over 202 (J5S Sonnet pass; the p2 glosses also seen by eye this pass)	yes	
+202	franckreich	5550	run p2-3	contemporary interlinear gloss over 202 (J5S Sonnet pass; the p2 glosses also seen by eye this pass)	yes	
+202	franckreich	5550	run p2-9	contemporary interlinear gloss over 202 (J5S Sonnet pass; the p2 glosses also seen by eye this pass)	yes	
+202	franckreich	5550	run p2-15	contemporary interlinear gloss over 202 (J5S Sonnet pass; the p2 glosses also seen by eye this pass)	yes	
+350	gelt	5550	run p2-2 (144.132.350)	contemporary gloss "gelde" over 144.132.350 (read by eye this pass)	yes	144/132 nulls
+350	gelt	5550	run p2-4 (... des 129 350)	contemporary gloss "des gelts" over 128.78.81.29.129.350 (read by eye this pass)	yes	129 null
+200	herzog von alba	5797	p6 (nicht allein von 200.122.132.142 abso...)	Groen IV p.224 prints "nicht allein vom Herzog von Alba absondern"	yes	122/132/142 nulls; abso- spelled by the table
+154	herzog von sachsen	5797	p5 (Bey 154.124.144.134 und)	Groen IV pp.223-224 prints "Bey dem Herzog von Sachsen und ist [w]illens"	yes	124/144/134 nulls
+155	kolln (koln)	5797	p6 (morgen 100.155 der hofnung)	Groen IV p.224 prints "zeuget diesen morgen Kölln der hofnung"	no	100 (h in the table) unexplained; 155 read by pass B at zoom (pass A 185)
+311	pays	5811	05811_p5_L17:18 (que le 311 131 | y est assez)	Groen IV p.365: "je crains que le pays y est assez estroict"; the p1 copy of the same sentence has 't ... 310' where p5 has 311 (a split misreading of the same group, not counted)	no	right anchor weak in the p5 transcription
+147	NULL	5557	run 12 (krigsuolcks 127 137 147)	J5S Sonnet gloss pass: gloss "Kriegßvolck" covers the spelled word only; 147 among nulls	no	conflicts with 5810's two copies, where 147 stands before 'vaterlandt' for Groen's 'Waterlandt' (w)
+157	UNPRINTED	5810	05810_p7_L18:18	Groen IV p.323 prints "et que semble procéder avecque toute sincérité" with no subject; footnote: "Apparemment le Roi de France, ou l'Electeur de Cologne"	yes	the p3 copy of the same sentence has 187 (5/8 misreading of one group)
+187	UNPRINTED	5810	05810_p3_L11:17	same spot as 157 in the other copy of 5810	yes	
+157	UNPRINTED	5549	PS16 (fussvolck 136 des 128 157 | 137 gedanckt)	Groen Suppl. p.147*: "von der [fussvolck] des abgedanckt", footnote at "des": "Nom propre sous-entendu"	yes	Groen prints no name here either
+192	UNPRINTED	5549	PS1 (J5I pass: 127 133)	Groen Suppl. p.146* prints the numerals "121. 133. 192." as the subject of "begert hefftig von E.G. allezeit zeittung zu haben"	yes	Groen could not read 192
+336	fussvolck	5557	p1 line 21 (... ahn 336 als 346 und 339 ...)	contemporary interlinear gloss read by eye this pass (05557.pdf leaf 1): "Voetvolck" over 336 (J5S's Sonnet pass read "Boetbock")	yes	
+336	fussvolck	5549	PS15 (336, line alone after PS14 "... grentzen 197 uoo 134 271")	Groen Suppl. p.147*: "uff den grentzen und sonsten daherumb ahn fussvolck"	no	one image line holding only 336; left context garbled in the J5I pass
+346	dubbel (doppelsoldner?)	5557	p1 line 21 (336 als 346 und 339)	contemporary gloss read by eye: "Dubbel" over 346	no	reading of the gloss uncertain; meaning (Doppelsöldner) inferred, not read; graded M: the gloss word itself is read uncertainly
+339	schutzen	5557	p1 line 21 (336 als 346 und 339)	contemporary gloss read by eye: "Schutzen" over 339 (an earlier crossed-out gloss under it)	yes	agrees in sense with key.tsv 339 = harquebouziers (4613 '1500 harquebouziers'); German gloss for the same troop word
