@@ -1,0 +1,90 @@
+code	leaf	entry_label	new_occurrence	context_codes	decoded_context	verdict	implied_letter	key_current_value
+z	m0280	Carta 13	no (already in key.tsv build)	c.8.[z].15.5	 	cannot tell		r
+z	m0280	Carta 13	no (already in key.tsv build)	15.e.[z].7.8	 o Thesoureiro 	fits	r	r
+z	m0280	Carta 13	yes	7.8.[z].15	 o Thesoureiro 	fits	r	r
+z	m0281	Carta 15	yes	8.18.[z].m.a	 cumprimentos por expresso pelo qual eu podia 	cannot tell		r
+x	m0282	Carta 30	yes	26.19.[x].19.21	A Sogra do Duque de Buzquingoan±	cannot tell		d
+16	m0282	Carta 58	yes	17.15.[16].15.8	E isto não foi sem diligencia, e soborno das pessoas 	cannot tell		f
+16	m0284	Carta 71	yes	26.18.[16].8.14	Esta Negociata hé huma grde patranha± de hum fim± o velhaco.	cannot tell		f
+x	m0285	Carta 72	yes	2.8.[x].y.4	 às escondidas, e 	fits	d	d
+f	m0286	Carta 74	yes	7.[f].6.24	Espero que parta Monteleão por tirar as ccarias± destes velhacos de co	fits	s	s
+d	m0286	Carta 74	yes	24.12.[d].4±.26	Espero que parta Monteleão por tirar as ccarias± destes velhacos de co	cannot tell		o
+d	m0286	Carta 74	yes	23.h.[d].m.a	Espero que parta Monteleão por tirar as ccarias± destes velhacos de co	cannot tell		o
+f	m0286	Carta 74	yes	5.17.[f].8.g	Espero que parta Monteleão por tirar as ccarias± destes velhacos de co	cannot tell		s
+f	m0286	Carta 74	yes	a.7.[f].a.y	Espero que parta Monteleão por tirar as ccarias± destes velhacos de co	cannot tell		s
+f	m0286	Carta 74	yes	12.24.[f].15.15	Espero que parta Monteleão por tirar as ccarias± destes velhacos de co	cannot tell		s
+d	m0286	Carta 74	yes	y.5.[d].a.y	Espero que parta Monteleão por tirar as ccarias± destes velhacos de co	cannot tell		o
+f	m0286	Carta 74	yes	12.24.[f].15.15	Espero que parta Monteleão por tirar as ccarias± destes velhacos de co	cannot tell		s
+d	m0286	Carta 74	yes	y.5.[d].h.25	Espero que parta Monteleão por tirar as ccarias± destes velhacos de co	cannot tell		o
+f	m0286	Carta 74	yes	5.23.[f].a.7	Espero que parta Monteleão por tirar as ccarias± destes velhacos de co	cannot tell		s
+f	m0287	Carta 78	yes	18.28.[f].7.52	Em dizer destes velhacos	cannot tell		s
+x	m0287	Carta 78	yes	7.52.[x].7.4	Em dizer destes velhacos	cannot tell		d
+f	m0287	Carta 79	yes	12.23.[f].17.18	Aqui não se atende a Razão algum, este Velhaco do Thesoureiro 	cannot tell		s
+f	m0287	Carta 79	yes	3.19.[f].15.26	Aqui não se atende a Razão algum, este Velhaco do Thesoureiro 	fits	s	s
+16	m0287	Carta 80	no (already in key.tsv build)	26.18.[16].8.14	Hum fim do proposito	fits	f	f
+f	m0287	Carta 80	no (already in key.tsv build)	12.15.[f].8.3	Hum fim do proposito	fits	s	s
+16	m0288	Carta 81	yes	15.25.[16].8.5	O S.d± Luis the Communica±	cannot tell		f
+16	m0288	Passage 2a	yes	[16].7.5	 fechado a porta abta a 	fits	f	f
+16	m0288	Passage 2a	yes	g.17.[16].15.12	 no papel de aforo 	fits	f	f
+x	m0289	Carta 91	no (already in key.tsv build)	26.14.[x].15.55	Segundo promete a pouca vida do R.	fits	d	d
+d	m0289	Carta 91	no (already in key.tsv build)	y.55.[d].c.5	Segundo promete a pouca vida do R.	fits	o	o
+x	m0289	Carta 91	no (already in key.tsv build)	26.22.[x].23.2	Segundo promete a pouca vida do R.	cannot tell		d
+f	m0289	Carta 92	yes	15.24.[f].3.17	Este Velhaco está declarado Frances, e hum tres dias jantando em Casa 	cannot tell		s
+x	m0289	Carta 92	yes	3.17.[x].7.5	Este Velhaco está declarado Frances, e hum tres dias jantando em Casa 	cannot tell		d
+x	m0289	Carta 92	yes	12.y.[x].25.16	Este Velhaco está declarado Frances, e hum tres dias jantando em Casa 	cannot tell		d
+16	m0289	Carta 92	yes	x.25.[16].12.17	Este Velhaco está declarado Frances, e hum tres dias jantando em Casa 	cannot tell		f
+x	m0289	Carta 92	yes	26.18.[x].24.f	Este Velhaco está declarado Frances, e hum tres dias jantando em Casa 	cannot tell		d
+f	m0289	Carta 92	yes	x.24.[f].a.19	Este Velhaco está declarado Frances, e hum tres dias jantando em Casa 	cannot tell		s
+x	m0289	Carta 92	yes	19.4.[x].22.y	Este Velhaco está declarado Frances, e hum tres dias jantando em Casa 	cannot tell		d
+f	m0289	Carta 92	yes	22.y.[f].g.17	Este Velhaco está declarado Frances, e hum tres dias jantando em Casa 	cannot tell		s
+x	m0289	Carta 92	yes	23.m.[x].d.7	Este Velhaco está declarado Frances, e hum tres dias jantando em Casa 	cannot tell		d
+d	m0289	Carta 92	yes	m.x.[d].7.h	Este Velhaco está declarado Frances, e hum tres dias jantando em Casa 	cannot tell		o
+x	m0289	Carta 92	yes	y±.17.[x].15.56±	Este Velhaco está declarado Frances, e hum tres dias jantando em Casa 	cannot tell		d
+x	m0289	Carta 92	yes	15.56±.[x].25.5	Este Velhaco está declarado Frances, e hum tres dias jantando em Casa 	cannot tell		d
+f	m0289	Carta 92	yes	g.4.[f].7.10	Este Velhaco está declarado Frances, e hum tres dias jantando em Casa 	cannot tell		s
+f	m0289	Carta 92	yes	15.8.[f].4.19	Este Velhaco está declarado Frances, e hum tres dias jantando em Casa 	cannot tell		s
+f	m0289	Carta 92	yes	4.19.[f].5.15	Este Velhaco está declarado Frances, e hum tres dias jantando em Casa 	cannot tell		s
+16	m0289	Carta 92	yes	15.18.[16].c.h	Este Velhaco está declarado Frances, e hum tres dias jantando em Casa 	cannot tell		f
+x	m0289	Carta 92	yes	5.25.[x].z.c	Este Velhaco está declarado Frances, e hum tres dias jantando em Casa 	cannot tell		d
+z	m0289	Carta 92	yes	25.x.[z].c.g	Este Velhaco está declarado Frances, e hum tres dias jantando em Casa 	cannot tell		r
+d	m0289	Carta 92	yes	m.p±.[d].14.y	Este Velhaco está declarado Frances, e hum tres dias jantando em Casa 	fits	o	o
+f	m0290	Carta 93	yes	18.24.[f].3.y	E não está huma boa intelligencia hum exSort.± e Bullingbrook	cannot tell		s
+16	m0290	Carta 93	yes	15.y.[16].d.12	E não está huma boa intelligencia hum exSort.± e Bullingbrook	cannot tell		f
+d	m0290	Carta 93	yes	y.16.[d].12.a	E não está huma boa intelligencia hum exSort.± e Bullingbrook	cannot tell		o
+z	m0290	Carta 93	yes	8.m.[z].21.12	E não está huma boa intelligencia hum exSort.± e Bullingbrook	cannot tell		r
+z	m0290	Carta 93	yes	15.5.[z].z	E não está huma boa intelligencia hum exSort.± e Bullingbrook	cannot tell		r
+z	m0290	Carta 93	yes	5.z.[z]	E não está huma boa intelligencia hum exSort.± e Bullingbrook	cannot tell		r
+d	m0290	Passage 2a	yes	25.c.[d].f.24	Elle ou Ella ou o seu Thesoureiro poderão estar nesse tempo fora do Mu	cannot tell		o
+f	m0290	Passage 2a	yes	c.d.[f].24.26	Elle ou Ella ou o seu Thesoureiro poderão estar nesse tempo fora do Mu	cannot tell		s
+x	m0290	Passage 2a	yes	55.15.[x].7.12	Elle ou Ella ou o seu Thesoureiro poderão estar nesse tempo fora do Mu	cannot tell		d
+f	m0290	Passage 2a	yes	14.24.[f].7.a	Elle ou Ella ou o seu Thesoureiro poderão estar nesse tempo fora do Mu	cannot tell		s
+d	m0290	Passage 2a	yes	h.11.[d].16.15	Elle ou Ella ou o seu Thesoureiro poderão estar nesse tempo fora do Mu	cannot tell		o
+16	m0290	Passage 2a	yes	11.d.[16].15.12	Elle ou Ella ou o seu Thesoureiro poderão estar nesse tempo fora do Mu	cannot tell		f
+x	m0290	Passage 2a	yes	26.m.[x].2.15	Elle ou Ella ou o seu Thesoureiro poderão estar nesse tempo fora do Mu	cannot tell		d
+f	m0290	Passage 2a	yes	14.g.[f].a.7	Elle ou Ella ou o seu Thesoureiro poderão estar nesse tempo fora do Mu	cannot tell		s
+x	m0290	Passage 2a	yes	26.m.[x].d.y	Elle ou Ella ou o seu Thesoureiro poderão estar nesse tempo fora do Mu	cannot tell		d
+d	m0290	Passage 2a	yes	m.x.[d].y.f	Elle ou Ella ou o seu Thesoureiro poderão estar nesse tempo fora do Mu	cannot tell		o
+f	m0290	Passage 2a	yes	d.y.[f].8.14	Elle ou Ella ou o seu Thesoureiro poderão estar nesse tempo fora do Mu	cannot tell		s
+9	m0290	Passage 2a	yes	15.g.[9].5.d	Elle ou Ella ou o seu Thesoureiro poderão estar nesse tempo fora do Mu	cannot tell		r
+d	m0290	Passage 2a	yes	9.5.[d].7.f	Elle ou Ella ou o seu Thesoureiro poderão estar nesse tempo fora do Mu	cannot tell		o
+f	m0290	Passage 2a	yes	d.7.[f].x.17	Elle ou Ella ou o seu Thesoureiro poderão estar nesse tempo fora do Mu	cannot tell		s
+x	m0290	Passage 2a	yes	7.f.[x].17.10	Elle ou Ella ou o seu Thesoureiro poderão estar nesse tempo fora do Mu	cannot tell		d
+f	m0290	Passage 2a	yes	8.y.[f].x.d	Elle ou Ella ou o seu Thesoureiro poderão estar nesse tempo fora do Mu	cannot tell		s
+x	m0290	Passage 2a	yes	y.f.[x].d.4	Elle ou Ella ou o seu Thesoureiro poderão estar nesse tempo fora do Mu	fits	d	d
+d	m0290	Passage 2a	yes	f.x.[d].4.h	Elle ou Ella ou o seu Thesoureiro poderão estar nesse tempo fora do Mu	fits	o	o
+f	m0291	Passage 3a	yes	h.15.[f].m.10	Pelos Wighs a entrada do Principe de Hanover, por Escocia pa. previnir	cannot tell		s
+x	m0291	Passage 3a	yes	18.17.[x].23.2	Pelos Wighs a entrada do Principe de Hanover, por Escocia pa. previnir	cannot tell		d
+x	m0291	Passage 3a	yes	55.24.[x].7.10	Pelos Wighs a entrada do Principe de Hanover, por Escocia pa. previnir	cannot tell		d
+d	m0291	Passage 3a	yes	12.55.[d].12.7	Pelos Wighs a entrada do Principe de Hanover, por Escocia pa. previnir	cannot tell		o
+f	m0291	Passage 3a	yes	12.7.[f].5.15	Pelos Wighs a entrada do Principe de Hanover, por Escocia pa. previnir	cannot tell		s
+x	m0291	Passage 3a	yes	12.y.[x].d.11	Pelos Wighs a entrada do Principe de Hanover, por Escocia pa. previnir	cannot tell		d
+d	m0291	Passage 3a	yes	y.x.[d].11.5	Pelos Wighs a entrada do Principe de Hanover, por Escocia pa. previnir	cannot tell		o
+f	m0291	Carta 94	yes	7.4.[f].19.7	Podem envergonhar esta Rainha	cannot tell		s
+16	m0291	Carta 96	yes	26.2.[16].8.5	Crer e gosto com q. fico. 	fits	f	f
+f	m0291	Carta 96	no (already in key.tsv build)	3.2.[f].f.15	 o diabo leva o Thesoureiro	cannot tell		s
+f	m0291	Carta 96	no (already in key.tsv build)	2.f.[f].15.c	 o diabo leva o Thesoureiro	fits	s	s
+9	m0292	Carta 101	yes	23.10.[9]	 porta de Londres.	cannot tell		r
+d	m0293	Carta 106	yes	8.14.[d].21.12	 do Thesoureiro, e de Bullingbrook seremos vendidos	cannot tell		o
+f	m0293	Passage 2a	yes	15.4.[f].25.8	Este velhaco de Bullingbrook hé nosso inimigo	fits	s	s
+x	m0294	Carta 110	yes	15.55.[x].7.12	Este Velhaco não responder-me foge de mim devo esta vergonha à sua men	cannot tell		d
+16	m0294	Carta 110	yes	18.7.[16].15.e	Este Velhaco não responder-me foge de mim devo esta vergonha à sua men	cannot tell		f

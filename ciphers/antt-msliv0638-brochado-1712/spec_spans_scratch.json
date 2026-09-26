@@ -1,0 +1,7 @@
+{
+ "slug": "antt-msliv0638-brochado-1712-spans-scratch",
+ "name": "scratch spec, letters_min lowered, for scoring letter 134's Span A and Span B SEPARATELY (AX-BRO3, 26 Sept 2026) -- explicitly outside specs/antt-msliv0638-brochado-1712.json's stated 40-70 letter range; a diagnostic for the artificial cross-span join effect ZX-BRO2 flagged, not a claim this is a valid spec range",
+ "language_candidates": ["pt", "pt18"],
+ "ciphertext": "see specs/antt-msliv0638-brochado-1712.json",
+ "judge": {"language": "pt", "letters_min": 15, "letters_max": 50}
+}

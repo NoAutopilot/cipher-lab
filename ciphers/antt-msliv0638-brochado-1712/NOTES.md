@@ -1708,3 +1708,134 @@ byte-identical to before this job.
 
 No network access; no hosts contacted (all work from `_pairs.json`, `ciphertext_appendix.tsv` and
 `tools/data/pt17`+`pt18` already on disk). No subagents. Cost: see the lane ledger.
+
+## AX-BRO3: thin-code attestation (26 Sept 2026, LANE AX)
+
+Worker AX-BRO3 (Sonnet), job `.claude/briefs/runs/2026-09-26-lane-ax-bro3.md`: the NEAR.md-named next step
+for letter 134 -- more observations of its six thin codes (`x` n=2, `z` n=2, `d` n=1, `f` n=3, `16` n=1, `9`
+n=2, confirmed against YX-BRO79 Step 4 / ZX-BRO2 Step 3 before starting) from the rest of the letterbook, then
+re-score. Parent: LANE AX orchestrator (session_01VzK62xX92yKfnUD93zprD8). Intake gate: `tools/intake_gate_check.py
+antt-msliv0638-brochado-1712` -> `partial (line 1) -- edition/page or full-text-search citation found within 6
+lines`, exit 0, 00:22 UTC.
+
+### Step 1: census -- the "rest of the letterbook" already swept; the real new-observation population is inside the appendix itself
+
+`body_leaves.tsv` already records a stride-8 (roughly 1-in-8 leaf) thumbnail sweep plus ~20 full-resolution
+checks across the whole 306-image letterbook (PX-BROBODY/PX-BROBODY2, 25 Sept 2026). It found cipher runs on
+exactly four leaves: m0177 (Carta 79), m0179 (Carta 80), m0180 (Carta 81) -- all three already appendix entries,
+already in `key.tsv` -- and m0275-m0276 (letter 134 itself, the target). No other body leaf in that sweep carries
+a coded run. This worker did not re-fetch or re-view leaf images this pass (see "conservative option" note
+below): re-deriving this census from files already on disk, not a fresh image pass.
+
+Given that, "every letter in the letterbook that carries coded runs in the same dictionary code" resolves to a
+set already known and already exhausted by the stride-8 sweep, **except** for one thing the sweep could not
+see: the appendix's own 38 Carta/Passage entries (m0279-m0296) are themselves 38 more "letters" in this same
+letterbook, holding the actual dictionary-code runs the sweep has no reason to re-visit (they are not body
+leaves) -- and `scripts/03_align_pairs.py`'s own `_pairs.json` output already shows that only 379 of the
+appendix's total code-token occurrences were confidently anchored to build `key.tsv`; the rest of each entry's
+own coded tokens (`conflicts.tsv`: 34 of 38 entries show a length mismatch or zero anchors) were never used.
+**This is where the unused observations of the six thin codes actually are**, not on unswept body leaves.
+Conservative option taken here (no human watching this session, per the common brief): mine the
+already-reconciled, already-image-checked appendix transcription (`ciphertext_appendix.tsv` +
+`plaintext_appendix.tsv`, both built and reconciled from real crops in PX-BROKEY/PX-BROPASSB, not re-touched
+this pass) for every remaining occurrence of the six codes, rather than spend the box re-viewing 306 leaf
+images on a sweep already run. Flagged as a scope adaptation, logged here, not asked about.
+
+### Step 2: no new transcription needed
+
+Since the target population (above) sits inside an already-reconciled transcription, not on an unseen leaf,
+no crops were fetched and no blind Sonnet subagent passes were run this job (the brief's step 2 transcription
+route does not apply once step 1 relocated the population). `scripts/16_thin_attest.py` (new) re-runs
+`02_anchor.py`'s exact anchor-finding and `03_align_pairs.py`'s exact nearest-anchor span-bounding logic
+per CODE run (never a flat whole-entry diff), then adds one relaxation `03_align_pairs.py` does not have: where
+a bounded span's letter-count does not exactly equal its token-count (the common case -- 34 of 38 entries),
+it still checks whether a PREFIX (scanned forward from the span's start) or a SUFFIX (scanned backward from the
+span's end) of the codes with an already-known `key.tsv` value matches the corresponding gloss letters
+one-for-one; a target code sitting inside that clean prefix/suffix gets a context-implied letter this way, one
+sitting in the drifted middle of a mismatched span is honestly reported `cannot tell` (never guessed).
+
+### Step 3: verdict per occurrence (`thin_codes_attest.tsv`)
+
+89 total occurrences of the six codes across `_anchors.json`'s segment-level token lists (a few more than a
+flat `ciphertext_appendix.tsv` grep gives, 84 -- `01_segment.py`'s own docstring already flags that at least
+two entries, Carta 74 and Carta 92, had their stored token row drift out of sync with `cipher_line`; not
+chased further here, a pre-existing note, not a new problem). Of the 89, **9 were already counted toward
+`key.tsv`'s existing n=2/n=1/n=3 tallies** (matched by walking each code+entry in file order and comparing
+against how many pairs `_pairs.json` already holds for that code+entry); the remaining **80 are new**
+observations never used to build the key. Of the 80 new:
+
+- **11 resolve from context, and every one of them agrees with `key.tsv`'s current value** (0 disagree):
+  `z`->r (Carta 13, "...o Thesoureiro..."), `x`->d (Carta 72 "às escondidas"; Passage 2a/m0290 "...Thesoureiro
+  poderão..."), `d`->o (Carta 92 "...jantando..."; Passage 2a/m0290, same sentence), `f`->s (Carta 74
+  "...tirar..."; Carta 79 "...Thesoureiro..."; Passage 2a/m0293 "...nosso inimigo"), `16`->f (Passage 2a/m0288
+  x2 "...fechado a porta..."/"...papel de aforo..."; Carta 96 "...fico...").
+- **69 remain `cannot tell`**: their bounding span (between the nearest resolved plain-word anchor on each
+  side, or the whole entry where none exists) does not letter-count-match its token-count and the code's own
+  position falls outside any clean matched prefix/suffix -- reported as unresolved, not guessed.
+- **0 disagree** with the key's current value. Per this job's brief step 3 rule, a key change needs >=2
+  independent new occurrences agreeing on a *different* value; with zero disagreements, **`key.tsv` is
+  unchanged** (byte-identical to before this job).
+
+Full per-occurrence table (code, leaf, entry, new/already-counted, +/-2 context codes, decoded context
+string, verdict, implied letter, key's current value): `thin_codes_attest.tsv`.
+
+### Step 4: re-score letter 134
+
+`key.tsv` did not change, so there is no before/after key difference to score -- reproducing ZX-BRO2's own
+whole-bucket run (`scripts/15_judge_bucket.py`, unmodified) gives the same numbers, confirmed rather than
+assumed:
+
+```
+letter 134: score_pt17=-1.443 (bucket pt17 percentile: 5.0)
+letter 134: score_pt18=-1.422 (bucket pt18 percentile: 5.0)
+```
+
+Before AX-BRO3: pt17 5.0th pct, pt18 5.0th pct. After AX-BRO3 (same key): pt17 5.0th pct, pt18 5.0th pct.
+**No change** -- the 11 new context-confirmed observations raise confidence that the six thin codes are
+correctly keyed (0/11 contradicted) but do not, on their own, move letter 134's bucket standing, since they
+confirm values already in use rather than replace them.
+
+The two spans scored SEPARATELY (ZX-BRO2's own untested next step), scratch spec with `letters_min` lowered
+to 15 (stated outside `specs/antt-msliv0638-brochado-1712.json`'s stated 40-70 range, kept in this folder,
+`specs/` untouched):
+
+```
+Span A (46 letters, folded): pt17 score=-1.336 (null_p99=-1.365, real_p05=-1.037) -- above null, below real: FAIL
+Span A (46 letters, folded): pt18 score=-1.337 (null_p99=-1.426, real_p05=-1.109) -- above null, below real: FAIL
+Span B (19 letters, folded): pt17 score=-1.579 (null_p99=-1.175, real_p05=-1.146) -- BELOW null: FAIL
+Span B (19 letters, folded): pt18 score=-1.487 (null_p99=-1.234, real_p05=-1.192) -- BELOW null: FAIL
+```
+
+Removing the artificial cross-span join (ZX-BRO2 Step 3's "3 of 62 four-gram windows" effect) does not rescue
+either span: Span A alone is weak-but-above-noise (same regime as the joined reading), Span B alone reads
+*below* its own shuffled-null 99th percentile under both corpora -- worse than most gibberish of the same
+length, a stronger negative signal for Span B specifically than the joined 65-letter reading showed on its
+own. This is consistent with (not proof of) Span B carrying more of the thin-code error than Span A, though at
+20 tokens/19 letters this is a very short, noisy sample (rule 3) and 5 of Span B's 20 tokens ride on codes `x`,
+`z`, `d`, `f` at thin observation counts (YX-BRO79 Step 4 grades pos1/2/10/20 as U/M/M/M already).
+
+### Status
+
+Stays **`partial`**. No key change, no new reading, no novelty words. The six thin codes now have converging
+(never contradicting) context evidence at low-to-moderate coverage (11/80 new occurrences resolved); letter
+134's own bucket standing is unchanged (5th percentile both corpora) and its Span B half reads worse than
+shuffled noise on its own -- if anything this narrows where the letter's residual error most likely sits
+(Span B) rather than closing the gap.
+
+### Not done this pass, next steps
+
+- The 69 `cannot tell` rows are exactly where a real image hand-check (this job's brief's original step 2
+  intent) would add value -- crops of the specific appendix leaves (m0286 Carta 74, m0289 Carta 92, m0290
+  Carta 93/Passage 2a, m0291 Passage 3a/Carta 96, m0294 Carta 110, m0293 Carta 106/Passage 2a, m0282 Carta
+  30/58, m0284 Carta 71, m0285 Carta 72, m0287 Carta 78) against a real Portuguese reader's word-guess, not
+  just this job's mechanical prefix/suffix salvage -- named as the concrete next test.
+- The `01_segment.py`-flagged `cipher_line`/`ciphertext_appendix.tsv` token-count drift (84 vs 89 raw thin-code
+  hits, Step 3 above) is not chased down; likely affects other codes' tallies too, not just the six here.
+- Span B's below-null score (above) is new information worth a look on its own, separate from letter 134 as a
+  whole -- is m0276-r2 specifically more likely to carry a transcription or key error than m0275-r1+m0276-r1.
+
+### Host report
+
+No network access; no hosts contacted (all work from `_anchors.json`, `_pairs.json`,
+`ciphertext_appendix.tsv`, `plaintext_appendix.tsv`, `key.tsv`, `tools/data/pt17`+`pt18` already on disk). No
+subagents. Cost: see the lane ledger.
