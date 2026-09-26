@@ -170,8 +170,9 @@ What ARM2 runs first, ranked:
    other letter in this code or with these marks is known -- that is outreach, so AUDIT.md-gated; draft only.
 Open flags: none unanswered (V9-QA8/QA9 en18 caveat answered in HYPOTHESES.md and NOTES.md, 10:17).
 
-## LANE NX2 handoff (session_01Ms6A5gPqrVmyK3Liyfgo9z), 26 September 2026, 14:45-17:25 UTC (closed, idle-standing on ASKS 68)
+## LANE NX2 handoff (session_01Ms6A5gPqrVmyK3Liyfgo9z), 26 September 2026, from 14:45 UTC (live)
 
+**Closed 17:25 UTC 26 Sept 2026, idle-standing on ASKS 68.**
 Brief .claude/briefs/runs/2026-09-26-lane-nx2-orchestrator.md; COMMON 2026-09-26-lane-ax-COMMON.md (reused); queue from
 SCOUT-OWN-4-2026-09-26.md. 5 Sonnet workers 26.75 USD (GATE 5.87 F, INDEX 5.53 D, GATE2 7.09 D, CSP 3.73 D, RV 4.53 N), all
 ledgered, retitled ARCHIVED and archived; orchestrator about 4.3 by get_session (self-ledgered). No live workers, no check-in armed.
