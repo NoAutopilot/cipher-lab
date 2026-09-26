@@ -1,4 +1,4 @@
-status: sent 24 Sept 2026 to decode@stp.lingfil.uu.se; bounced (owner report, 26 Sept 2026 ~04:30 UTC).
+status: mailbox-draft (26 Sept 2026 18:00 UTC; plain-voice rewrite by parent 7i at the owner's go; OUT-CHECK-D pending, not sendable until its checked: line lands). Earlier: sent 24 Sept 2026 to decode@stp.lingfil.uu.se; bounced (owner report, 26 Sept 2026 ~04:30 UTC).
   Addressee corrected 26 Sept 2026 (DECODE-ACCESS): de-crypt.org's own footer has that Uppsala address
   commented out of its live HTML as of 26 Sept 2026 (termsofuse.php, a separate/stale page, still shows it) --
   the PI moved to Stockholm University, which is almost certainly why the old mailbox is dead. Re-send to the
@@ -22,16 +22,19 @@ If this is a role or tier our account can be granted (a "researcher" role, an up
 similar), we would like to request it, and are glad to say more about our project (an open cipher-solving
 research repository) if that helps.
 
-Subject: Full-size image access for a DECODE account
 
-Hello,
+Subject: DECODE: full-size image access for a research account, and what we can give back
 
-I use DECODE under the user name [your user name]. My account can view record pages and 200px thumbnails,
-but requesting the underlying full-size file for a page image returns a fixed "forbidden.png" placeholder
-instead of the image -- even for a record another user's account can read the full image from. The record's
-Image Manager (ImagesList) page also redirects my already-logged-in session back to the login page. Is
-full-size image access a separate permission from an ordinary account? If so, could my account be upgraded,
-or could you point me to how to request that?
+Dear Professor Megyesi,
 
-Thank you,
-[sign-off]
+I run a small open project on unsolved historical ciphers. I direct it and send its letters myself; AI agents (Claude models) do the reading, the archive searches and the checking, every step logged in the repository linked below. DECODE has been one of our main sources for finding which cipher letters are still unread, and I am writing about the account we use there, [your DECODE user name].
+
+The account can log in, browse records and see the 200px thumbnails, but every full-size page scan it asks for comes back as the site's fixed "forbidden.png" placeholder, and a record's Image Manager page sends the logged-in session back to the login page. We checked this on 24 September on record 3754, whose full image another DECODE user's account can read (their notes cite a 5512 x 3674 image); ours receives the placeholder for the same file. The details are at https://github.com/NoAutopilot/cipher-lab/blob/main/sources/decode/NOTES.md (section "Full-size images: account permission test"). I first wrote to the project's Uppsala address on 24 September; that message bounced, which is why I am writing to you directly.
+
+Is full-size image access a separate role or tier? If it is one a research account can be granted, I would like to ask for it. Two cases show what we would do with it: record R2077 holds the photographed key (BnF fr. 3642) that would read two ciphered passages of Marie de Medicis to Savary de Breves of 1610, which we have transcribed; and record 8725 (BL Add MS 72438 f. 104) is marked Decrypted with two documents and two images we cannot open.
+
+In return, everything we produce is open under an MIT licence: keys rebuilt from period decipherments, readings with every sign graded, and a search log for each showing where we looked for earlier decipherments. We would be glad to deposit keys and transcriptions back into DECODE in whatever form is useful to you, and to flag records whose "unsolved" status we find is out of date. The repository is https://github.com/NoAutopilot/cipher-lab
+
+Thank you for DECODE, and for considering this.
+
+[SIGN-OFF]
