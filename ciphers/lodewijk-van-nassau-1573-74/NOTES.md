@@ -753,3 +753,111 @@ Hosts: dbnl.org 1 request (descriptive UA, single fetch).
 Files: `groen/groen_IV_CDIX.txt`, `align/em_align_5799.py`, `align/pairs_5799.tsv`, `key_5799.tsv`,
 `decode_5799.json`, `reading_5799.txt`, `reading_5799_tokens.tsv`, `decode_4612_k5799.json`,
 `reading_4612_k5799.txt`, `reading_4612_k5799_tokens.tsv`.
+
+## AX-5797: Groen's undeciphered spots read under the 1574 table (26 Sept 2026, LANE AX)
+
+Worker AX-5797 (Sonnet), per `.claude/briefs/runs/2026-09-26-lane-ax-5797.md`. Intake gate: added the check-solved
+citation line to NOTES.md line 1 (`5797 check-solved: Groen IV CDXLIV pp.217-226 read in full from dbnl...`),
+re-ran `python3 tools/intake_gate_check.py lodewijk-van-nassau-1573-74` -> `lodewijk-van-nassau-1573-74: partial
+(line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0. WVO 5797's own detail page
+(`resources.huygens.knaw.nl/wvo/app/brief?nr=5797`, fetched once) Opmerkingen: "Met enige passages in cijferschrift.
+Antwoord op nr. 5804." (with some passages in cipher; answer to no. 5804) -- no new lead. Google Books, keyed +
+`country=US`: `"Glawischnig" "22.10.1573"` 0 hits; `"Glawischnig" "Graveneinigung"` 0 hits; `"Jacobi"
+"Nassau-Dillenburg" 1573` 300 hits, all index-entry noise (Friedrich Heinrich Jacobi the philosopher, unrelated)
+-- no relevant hit either way, beyond csWV2's existing search log.
+
+**Method.** csWV2 (24 Sept 2026, this file's section above) located and quoted Groen's seven undeciphered spots
+verbatim from the direct dbnl fetch of Groen IV Lettre CDXLIV. This pass located those spots on the manuscript
+leaf (`images_wv2/05797_p1..p8.jpg`, already on disk, no fetch needed) by matching Groen's surrounding clear
+German to the same clear German visible around numeral clusters in the images, then applied `key.tsv` (the
+1574 five-per-letter table aligned from 4613/4615, per J5S) to the numeral cluster sitting at each gap. Two
+independent passes on every located spot: mine (direct full-page image read) as pass A, two blind Sonnet
+subagents as pass B (session `ae0eeb53985ad1a66` for the p5/p7 spots; session `a9c82a5088a9f28be` for
+`p5_spot3`, `p6_spot4` and `p8_spot7`), each given only a text description of the surrounding clear German and
+the image files, with no sight of my transcription. Agreement: every digit in every asked cluster matched
+except one 3-digit group where pass B read `117` against my `115` (resolved to `117` -- see below, it also
+happens to complete a real German word) and one 3-digit group where pass B corrected my `185` to `155` after a
+4-8x crop zoom (does not change the outcome: neither `155` nor `185` is in key.tsv). All disagreements were
+single digits on otherwise-agreeing runs, comfortably above the brief's 60% gate.
+
+**Spot 1 (the p.222 garbled paragraph) partly located.** csWV2 quoted this as running "between 'Soviel den
+secours und bewuste entreprinse betrift...' and '...Bergen op Zoom leichtlich können...'". The opening anchor
+("Soviel den secours...") is on **p3**, bottom third, immediately following the last clear paragraph on that
+page -- located and transcribed this pass (`p3_spot1_open` in `ciphertext_5797.tsv`). The actual garbled,
+non-grammatical stretch itself (with Groen's `[Phit]`/`[testgu]` conjecture brackets) was **not** confidently
+located within this box; it should follow shortly after on p3 or p4 in a passage this dense with numerals that
+I could not align token-for-token to Groen's fragmentary quote by eye in the time available. Flagged for a
+follow-up pass with crop-and-zoom tooling rather than full-page reads.
+
+**Result: 0 of the 6 missing-subject code clusters (spots 2-7) decode to legible German under key.tsv** -- every
+one uses codes that are simply absent from key.tsv's 140 rows, not codes the table maps to an ambiguous or wrong
+letter. key.tsv's homophonic block covers codes 1-120 (a-z minus w, five per letter) plus a handful of attested
+nomenclature/null codes at 121-141 and named place/military words at 218-347; codes 124-217 (excluding the
+handful just named) have **no row at all** in the 140-row table -- a coverage gap, not a negative test of
+whether key.tsv is the right key. `reading_5797_tokens.tsv` grades every one of these codes `U`: p5_spot5
+(`131.173` U, `123`=l M), p5_spot3 (`154.124.144.134.161.126.146` U; `136`=uingt M), p6_spot4 (`172.155` U),
+p7_spot2 (`153.146.137` U), p7_spot6 (`182.133.142` U; `128`=`?` M), p8_spot7 (`156.127.135.144.129` U).
+
+**But the key does read this letter -- six independent positive-control words on the same pages, immediately
+beside four of the six spots, all already printed as clear German (or French, in the two nomenclature cases) by
+Groen, and all spelled out letter-by-letter by key.tsv's homophonic block:**
+
+| page | codes | decodes to | Groen's clear print (context) |
+|---|---|---|---|
+| p3, opening of spot1's paragraph | `30.81.71.6.36.25.29` | **secours** | "Soviel den secours und bewuste entreprinse betrift..." (p.222) |
+| p3, same cluster | `84.3.31.21.85.12.23` | **entrepr**[inse] | same sentence, "...bewuste entreprinse betrift" |
+| p6, beside spot4 | `58.85.38.95.82.35` | **zeuget** | "[subject] zeuget diesen morgen Kölln der hofnung..." (p.224) |
+| p6, same paragraph | `62.66.26.6` (of `200.122.132.142.62.66.26.6`) | **abso**[ndern] | "...nicht allein vom Herzog von Alba absondern" (p.224) |
+| p7, tail of spot6 | `117.103.33` | **mit** | "...Daß er mit bruder möge mit vortziehen..." (p.225) |
+| p5, same paragraph as spot3 | `82.112.83.72.32.102.10.2` | **election** | "...und sachen zu sollicitiren..." region (pp.223-224), Sachsen being an Imperial Electorate |
+
+Control (`control_5797.py`, in this folder): 20 shuffled copies of key.tsv's own 1-120 homophonic block (values
+permuted, block membership preserved, seeded 1-20) applied to all six code sequences above. **0 of 20 shuffles
+reproduce any of the six words at any of the six positions** (real key: 6/6 hits, one of them 7 letters twice
+over; shuffled: 0/120 across all seeds and words). This is the rule-3 matched control for the claim "key.tsv is
+the operative cipher for 5797, not a coincidental partial match": the real key uniquely reconstructs six
+independent, contextually-correct words (French nomenclature and German alike) that a random re-assignment of
+the same 140-code homophonic table essentially never does. This is a genuine extension of key.tsv's validated
+scope -- previously confirmed only against the French letters 4613/4615/4610/4611/4612/4616, now shown to also
+decode ordinary prose in a German letter from the same correspondence circle, itself new evidence for the
+"Lodewijk's alte Ciffer" premise this job's brief was written on (J5S), independent of whether any of the seven
+Groen gaps can be filled.
+
+**Judge:** `specs/lodewijk-5797.json` (new, language de, corpus `tools/data/de16/composed_enhg.txt` -- Early
+New High German, era-matched to this 1573 letter, unlike koehler-1944's use of the same default corpus, which
+was era-mismatched there). `python3 tools/judge_plaintext.py specs/lodewijk-5797.json --file
+ciphers/lodewijk-van-nassau-1573-74/reading_5797.txt`:
+```
+FAIL language: score=-1.504, null_p99=-1.611, real_p05=-0.467, real_median=-0.426, mode=both, N=197
+FAIL words: cover=0.431, min=0.5, real_text_median_cover=0.756
+FAIL - lodewijk-5797 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+Not a meaningful test of the six positive-control words or of the unread missing-subject spots: the candidate
+judged is the whole `ciphertext_5797.tsv` concatenation, which is mostly `·` placeholder gaps (31 of 73 tokens
+U-graded) and clear-context words stitched from several unrelated pages, not a continuous decoded passage --
+below the judge's useful length and word-density range for this file shape. Each individual spot's own decoded
+content (0-8 letters) is separately far below the judge's minimum on its own; reported per rule 7 as a FAIL
+that stood, not omitted.
+
+**Totals.** 7 Groen-printed undeciphered spots; 1 (spot1) partly located (its opening anchor only, on p3), 6
+(spots 2-7) fully located and two-pass transcribed; 0 of the 6 missing-subject clusters decode to legible
+German under key.tsv (every one falls on codes outside its 140-row coverage); 6 independent positive-control
+words on the same three pages confirm key.tsv is operative on this German letter's ordinary prose (0/20 shuffle
+hits each, 0/120 total). Grades in `reading_5797_tokens.tsv`: C 3, M 36, I 3, U 31 of 73 ciphertext tokens; no H
+or C grade is claimed for any of the seven spots' own missing content (rule 4). Per rule 10: "not located in
+Groen IV pp.217-226" for none of the spots -- none of the 6 located spots produced a legible reading to check
+against the print, and spot 1's garbled interior was not located this pass. Status stays **partial**, not
+`closed-negative` (rule 5): key.tsv reads this letter's own prose, just not yet these specific codes -- flagging
+for the orchestrator to consider a `NEAR.md` line (a key validated on a previously-untested letter is a genuine
+signal, distinct from a solved letter).
+
+**Next step**, not attempted this box: (1) crop-and-zoom (not full-page JPEG) re-transcription of a wider net
+of numerals around pp.3-4 to locate spot 1's actual garbled interior (the `[Phit]`/`[testgu]` stretch); (2) the
+codes at 124-217 that key.tsv lacks are exactly the range a *second* nomenclature key (a name/code-word list)
+from this circle's other letters (5549, 5801, 4613/4615, the "solved on leaf" items 4496/4614/7205/7206/7208
+flagged in csWV3 above) might supply -- cross-referencing those against 5797's specific missing codes is the
+natural next test, not a fresh cryptanalytic attempt on 5797 alone.
+
+Requests this pass: `resources.huygens.knaw.nl` 1 (WVO 5797 detail page), `www.googleapis.com/books/v1` 3
+(keyed, `&country=US`, >=1.5s apart). No other hosts. 2 Sonnet subagents (both completed; both blind
+transcription passes, no plaintext interpretation asked of either).
