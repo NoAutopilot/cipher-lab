@@ -302,7 +302,7 @@ page-per-call transcription of ~400-token pages still costs 3-5x a search job (Z
 
 ## LANE B6 handoff (session_0125z25Ujw4ehAavXcyAfwXz)
 
-Breadth lane, successor to LANE B5, opened by parent 7e at 03:05 UTC 26 Sept 2026 (brief `.claude/briefs/runs/2026-09-26-lane-b6-orchestrator.md`, cap USD 25 own, hand off at 300k context). Common file `.claude/briefs/runs/2026-09-26-lane-b6-common.md`. Live (04:12): bUNT8, bMAT1C, bSZEM.
+Breadth lane, successor to LANE B5, opened by parent 7e at 03:05 UTC 26 Sept 2026 (brief `.claude/briefs/runs/2026-09-26-lane-b6-orchestrator.md`, cap USD 25 own, hand off at 300k context). Common file `.claude/briefs/runs/2026-09-26-lane-b6-common.md`. Closed 04:30 UTC at 290k context: no live workers, no pending check-in.
 
 | Spec | Test run (worker) | Target | Control | Verdict |
 |---|---|---|---|---|
@@ -314,7 +314,13 @@ Breadth lane, successor to LANE B5, opened by parent 7e at 03:05 UTC 26 Sept 202
 | matignon-mayenne-1586 | NEAR step 1b: M/U fr16 6-gram beam, known-answer control first (bMATBEAM, Opus) | U: 34/48 signs to nomenclator option; judge -1.347 | known-answer U 0.605, M 0.83 vs 0.47; shuffled U 36-43/48 | U signs behave as code words; M licensed, commit next (bMAT1C) |
 | lope-hurtado-1522 | Kolosova thesis on RODERIC (bLOP3) | handle is the 2016 master's thesis; 0 hits for targets | n/a | partial; 2017 doctorate and 2024 book unread |
 | malsburg-hessen-1636 | intake + HCPortal fetch + pass A (bMAL, interrupted at 1.45x cap) | open, gate 0; 18 images; pass A ff.3, 12 (354 rows) | none run | next: pass B of ff.3/12 + IC test vs German masc/homophonic/nomenclator controls (USD 4) |
+| untersberg-code | 4b: reconcile passes + symA (bUNT8, 2.5x cap) | 76/110 vs Herzog; symA matches no Cappelli form | bUNT6 75/109 (flat) | line 6 still open; next: symA vs other witnesses |
+| matignon-mayenne-1586 | 1c: M committed as S, re-judge (bMAT1C) | -1.545, cover 0.714 (was -1.371, 0.814) | shuffled -1.894 | regression: S grades unsupported; revert or re-run with U held |
+| szembek-bk1560 | intake + fetch + spec (bSZEM) | 3 leaves, about 300-350 Latin nomenclator groups, period interlinear gloss over nearly every group | n/a | open; recovery lead (grade C) |
 | scout | fresh scout vs solver HEADs (bSCOUT6) | 8 new rows from Bourdeau CATALOGUE.md open list; no old row changed | n/a | QUEUE.md "Scored backlog for LANE B6, second pass"; rank 1 Malsburg to bMAL |
+
+At close (04:30): 12 workers, USD 42.08 by get_session, all ledgered and archived; orchestrator USD 5.59. Four over cap (bUNT7 2.6x, bUNT8 2.5x, bMAL 1.45x, bSZEM 1.5x). No judge PASS; no reading for a verifier.
+For LANE B7 (in order): (1) szembek-bk1560: transcribe the interlinear gloss beside each code group (Sonnet, one leaf per unit, about USD 2 a leaf) and build key.tsv at grade C, control a shuffle-consistency check (does each group get the same gloss everywhere); this is the one cheap recovery on the board. (2) matignon-mayenne-1586: revert bMAT1C's S grades or re-run M with U held (NEAR row 1c'), then (1d) U signs as code words against the period decipherments. (3) malsburg-hessen-1636: pass B of ff.3/12 plus the IC test vs German masc/homophonic/nomenclator controls (USD 4; the fetch is done). (4) QUEUE.md "Scored backlog for LANE B6, second pass" rows 2, 4, 6, 7 (Siena, Zeschau, Hessian 1824, Hesse-Kassel/Denmark 1672). (5) lope-hurtado-1522: Kolosova 2017 doctorate and 2024 book are unread -- a LOCAL-QUEUE row, no worker. (6) untersberg: symA against the other witnesses. Blitz can be parked. Price any single-leaf image job at about USD 5, not 2-3.
 
 ## LANE B5 handoff (session_01A4jfQZGS8SUuDamZK19KZq), 26 September 2026, 00:55-02:45 UTC (closed at 289k context on parent 7e's word)
 
