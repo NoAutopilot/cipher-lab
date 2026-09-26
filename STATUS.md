@@ -185,9 +185,12 @@ its own decipherment (inv.6124); S5 confirmed and the Haro 1655-61 pool extends 
 NX2-GATE2 (7.09 D): items 1, 3, 5 of the pool are calendared in CSP Spain III (nos.212, 399, 462) with their cipher passages
 in English ("Contemporary deciphering") -- text known, confirmation only; items 2 (Soria, Genoa 16 Jun 1526, A-37 ff.428-429)
 and 4 (Sanchez, Venice 17 Dec 1524, A-33 ff.72-74) are not calendared. REQUEST.md is one batched, ranked RAH copy order; ASKS row 68.
-**Live (16:01 UTC):** NX2-CSP session_01QPVLYR8X7H1vYZzGA7hQMY (Sonnet, box 45, alarm 5): every other 1485-1558 undeciphered Indice
-row checked against CSP Spain page by page, so the order asks only for letters whose text is not in print.
-**Next:** after NX2-CSP the lane is idle-standing on ASKS 68 (every RAH Salazar item is copy-order-only; no cheap step left that
+NX2-CSP (3.73 D): of the Indice's 25 undeciphered rows, 10 are in CSP Spain II-III with cipher sense in English (incl.
+Caracciolo inv.6122, the sweep's former top pick), 2 probable, 8 not calendared, 7 outside CSP's 1485-1558 range.
+**Live (16:42 UTC):** NX2-RV session_01LHKjvzWVwH6DxPjPUT1qDJ (Sonnet, box 40, alarm 5): the six uncalendared rows (inv.4670,
+5520/5521, 5540, 5543, 5545, 6192) and the two probable against Rodriguez Villa's printed editions (the Indice cites him for 5543
+and 6331), then folds the survivors into REQUEST.md as the one final copy order.
+**Next:** after NX2-RV the lane is idle-standing on ASKS 68 (every RAH Salazar item is copy-order-only; no cheap step left that
 needs no image). On images: NX2-CRIB (A-42 ff.441-442 against the Sanchez key, interlinear_align with a leave-one-out control),
 then items 2 and 4 with --check, shuffled-key control, es16 judge with per-fold spread, fresh re-derivation.
 **Note:** DECODE does catalogue RAH 9/34 (rah9-34-fernandez-1525); SCOUT-OWN-4's "coverage stops at 9/31" is re-checked by GATE.
