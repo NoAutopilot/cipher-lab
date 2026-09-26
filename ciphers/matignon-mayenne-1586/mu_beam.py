@@ -190,6 +190,8 @@ def search(lm, lines, seed, cost, values):
                 sc = sum(score_line(lm, lines[i], uval, mch[i], cost) for i in idx)
                 if best is None or sc > best + 1e-9:
                     best, bestv = sc, v
+            # NB (found after the run, left as is so the committed JSON reproduces): uval[s] holds the LAST value
+            # tried here, not the old one, so this test almost never reads 0 and every run goes the full ITERS.
             if bestv != uval.get(s):
                 changed += 1
             uval[s] = bestv
@@ -316,7 +318,9 @@ def eval_control(lines, tl, utrue, res, uni):
     return dict(m_acc=mok / mn, m_base=base / mn, m_oracle_majority=oracle / mn, m_n=mn,
                 u_acc=len(ok) / len(present), u_n=len(present),
                 u_tok_acc=sum(cnt[s] for s in ok) / sum(cnt.values()),
-                wrong=[s for s in present if s not in ok])
+                wrong=sorted(s for s in present if s not in ok),
+                wrong_tok_signs=sum(1 for s in present if res['uval'][s] == TOK and utrue[s] != TOK),
+                wrong_tok_token_share=sum(cnt[s] for s in present if res['uval'][s] == TOK and utrue[s] != TOK) / sum(cnt.values()))
 
 
 # ---------------- driver ----------------
@@ -355,6 +359,10 @@ def job(args):
     out = dict(kind=kind, seed=seed, bpc_model=lm.bpc,
                restarts=[dict(obj=r['obj'], before=r['before'], after=r['after'], iters=r['iters']) for r in runs],
                before=best['before'], after=best['after'])
+    ucnt = collections.Counter(t[1] for L in lines for t in L if t[0] == 'U')
+    out['tok_signs'] = sum(1 for x in ucnt if best['uval'][x] == TOK)
+    out['u_signs'] = len(ucnt)
+    out['tok_token_share'] = sum(n for x, n in ucnt.items() if best['uval'][x] == TOK) / sum(ucnt.values())
     if kind == 'A':
         uni = collections.Counter(''.join(held))
         ev = eval_control(lines, tl, utrue, best, uni)
@@ -409,7 +417,7 @@ def main():
         print(f"A seed {r['seed']}: iters {[x['iters'] for x in r['restarts']]} U {r['u_acc']:.3f} ({r['u_n']} signs, token-wtd {r['u_tok_acc']:.3f})  "
               f"M {r['m_acc']:.3f} vs base {r['m_base']:.3f} / oracle-majority {r['m_oracle_majority']:.3f} (n={r['m_n']})  bpc {r['before']:.3f}->{r['after']:.3f}", flush=True)
     for r in B:
-        print(f"B seed {r['seed']}: iters {[x['iters'] for x in r['restarts']]} bpc {r['before']:.3f}->{r['after']:.3f}", flush=True)
+        print(f"B seed {r['seed']}: TOK {r['tok_signs']}/{r['u_signs']} signs ({r['tok_token_share']:.3f} of U tokens) iters {[x['iters'] for x in r['restarts']]} bpc {r['before']:.3f}->{r['after']:.3f}", flush=True)
     print(f"gate {'MET' if gate else 'NOT MET'}: U mean {u:.3f}, M gain mean {mgain:+.3f}; replication U {u6:.3f}, M gain {mgain6:+.3f}  ({time.time()-t0:.0f}s)", flush=True)
     if gate:
         with Pool(3) as p:
@@ -422,7 +430,8 @@ def main():
             d['stable'] = len(set(allv[s])) == 1
         maxwrong = max((m for r in A for m in r['wrong_margins'].values()), default=0.0)
         for s, d in best['signs'].items():
-            d['licensed'] = d['stable'] and d['margin_bits'] > maxwrong
+            # a TOK/null value is not licensable: control (B) sends ~99% of shuffled U tokens to TOK (NOTES.md)
+            d['licensed'] = d['stable'] and d['margin_bits'] > maxwrong and d['value'] not in ('TOK', 'null')
         best['max_wrong_margin_control'] = maxwrong
         best['restarts'] = sum((r['restarts'] for r in tr), [])
         res['target'] = best
@@ -433,8 +442,10 @@ def main():
     reading = '\n'.join(res['target']['reading']) + '\n' if gate else ''
     js = json.dumps(res, indent=1, sort_keys=True, default=str)
     if check:
-        old = open(f'{T}/mu_beam_results.json').read()
-        stale = json.loads(old).get('gate_met') != gate
+        stale = open(f'{T}/mu_beam_results.json').read() != js
+        if reading:
+            stale = stale or open(f'{T}/mu_beam_reading.txt').read() != reading
+        print('STALE' if stale else 'ok: committed results reproduce')
         sys.exit(1 if stale else 0)
     open(f'{T}/mu_beam_results.json', 'w').write(js)
     if reading:

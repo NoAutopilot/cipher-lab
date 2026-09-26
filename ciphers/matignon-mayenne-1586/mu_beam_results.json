@@ -1,0 +1,2358 @@
+{
+ "control_A": [
+  {
+   "after": -3.109944687732,
+   "before": -3.692887290506541,
+   "bpc_model": 2.9290940379861343,
+   "kind": "A",
+   "m_acc": 0.8381468110709988,
+   "m_base": 0.4681107099879663,
+   "m_n": 1662,
+   "m_oracle_majority": 0.6678700361010831,
+   "restarts": [
+    {
+     "after": -3.1106239752922553,
+     "before": -3.8301812308868937,
+     "iters": 30,
+     "obj": -39632.46006919863
+    },
+    {
+     "after": -3.1106239752922553,
+     "before": -3.9295796119690602,
+     "iters": 30,
+     "obj": -39632.46006919863
+    },
+    {
+     "after": -3.1106239752922553,
+     "before": -3.6232283904638596,
+     "iters": 30,
+     "obj": -39632.46006919863
+    },
+    {
+     "after": -3.1106239752922553,
+     "before": -3.7201020583023405,
+     "iters": 30,
+     "obj": -39632.46006919863
+    },
+    {
+     "after": -3.1106239752922553,
+     "before": -3.7879684738358135,
+     "iters": 30,
+     "obj": -39632.46006919863
+    },
+    {
+     "after": -3.109944687732,
+     "before": -3.692887290506541,
+     "iters": 30,
+     "obj": -39626.91521108114
+    },
+    {
+     "after": -3.1104080486675265,
+     "before": -3.8039887929659346,
+     "iters": 30,
+     "obj": -39632.819356121625
+    },
+    {
+     "after": -3.1106239752922553,
+     "before": -3.8841243022631384,
+     "iters": 30,
+     "obj": -39632.46006919863
+    },
+    {
+     "after": -3.1106239752922553,
+     "before": -3.8794211306497,
+     "iters": 30,
+     "obj": -39632.46006919863
+    },
+    {
+     "after": -3.1106239752922553,
+     "before": -3.852550417071273,
+     "iters": 30,
+     "obj": -39632.46006919863
+    }
+   ],
+   "right_margins": {
+    "1": 6.210007405873057,
+    "101": 10.460359408063624,
+    "102": 2.619757893315864,
+    "16": 44.871594823264445,
+    "18": 7.750028438972549,
+    "2": 50.857058086894085,
+    "27": 9.52509229252604,
+    "33": 11.000646597223977,
+    "49": 41.90810408392235,
+    "5": 28.482919350585917,
+    "54": 8.165010474507909,
+    "62": 15.613724402807748,
+    "73": 12.794141245451385,
+    "88": 10.348565897451522,
+    "9": 0.22451899870563352,
+    "BOX": 227.71077558878824,
+    "BOX2": 3.2921337659718404,
+    "Bi": 1.9774965759848584,
+    "D2": 38.89320483549682,
+    "U": 476.0264996892038,
+    "hash": 9.036549117881236,
+    "me": 2.5843662817729296,
+    "s1": 29.677727301498578,
+    "u": 3.1838784573059655,
+    "v": 74.92053328364909,
+    "w": 165.3878681045835,
+    "y": 72.3901673461587
+   },
+   "seed": 1,
+   "tok_signs": 17,
+   "tok_token_share": 0.47337278106508873,
+   "u_acc": 0.6428571428571429,
+   "u_n": 42,
+   "u_signs": 42,
+   "u_tok_acc": 0.6282051282051282,
+   "wrong": [
+    "15",
+    "36",
+    "37",
+    "4",
+    "44",
+    "46",
+    "53",
+    "T",
+    "W",
+    "de",
+    "fe",
+    "p",
+    "p9",
+    "star",
+    "z"
+   ],
+   "wrong_margins": {
+    "15": 23.49000906268475,
+    "36": 16.59065010477184,
+    "37": 3.9633277285677764,
+    "4": 12.417493416622165,
+    "44": 13.681010422401812,
+    "46": 0.5636358726245874,
+    "53": 24.56165918302247,
+    "T": 46.05913476458136,
+    "W": 5.167463258965995,
+    "de": 8.025483206246975,
+    "fe": 23.1801719569155,
+    "p": 48.756767613652755,
+    "p9": 3.7024299981601985,
+    "star": 1.625214062674786,
+    "z": 47.93675461396924
+   },
+   "wrong_tok_signs": 15,
+   "wrong_tok_token_share": 0.3717948717948718
+  },
+  {
+   "after": -3.2300788010129122,
+   "before": -4.01682334897163,
+   "bpc_model": 2.9290940379861343,
+   "kind": "A",
+   "m_acc": 0.7973462002412546,
+   "m_base": 0.48914354644149577,
+   "m_n": 1658,
+   "m_oracle_majority": 0.6459589867310012,
+   "restarts": [
+    {
+     "after": -3.2385322459782944,
+     "before": -3.974450279487664,
+     "iters": 30,
+     "obj": -41190.891636597924
+    },
+    {
+     "after": -3.2300788010129122,
+     "before": -4.01682334897163,
+     "iters": 30,
+     "obj": -41167.354318909565
+    },
+    {
+     "after": -3.238039953371404,
+     "before": -4.135641188499098,
+     "iters": 30,
+     "obj": -41184.63016693089
+    },
+    {
+     "after": -3.238039953371404,
+     "before": -3.8464981622887406,
+     "iters": 30,
+     "obj": -41184.63016693089
+    },
+    {
+     "after": -3.230570089335159,
+     "before": -3.9402608668214962,
+     "iters": 30,
+     "obj": -41173.6157885766
+    },
+    {
+     "after": -3.238039953371404,
+     "before": -3.994059285381464,
+     "iters": 30,
+     "obj": -41184.63016693089
+    },
+    {
+     "after": -3.2385322459782944,
+     "before": -3.7009758992417585,
+     "iters": 30,
+     "obj": -41190.891636597924
+    },
+    {
+     "after": -3.238039953371404,
+     "before": -3.727811699686969,
+     "iters": 30,
+     "obj": -41184.63016693089
+    },
+    {
+     "after": -3.2300788010129122,
+     "before": -4.124825563404186,
+     "iters": 30,
+     "obj": -41167.354318909565
+    },
+    {
+     "after": -3.238039953371404,
+     "before": -4.184707043203551,
+     "iters": 30,
+     "obj": -41184.63016693089
+    }
+   ],
+   "right_margins": {
+    "101": 12.396711758666925,
+    "102": 1.9089900003058489,
+    "104": 7.131233247142646,
+    "121": 0.4586051236173603,
+    "15": 14.619133376654304,
+    "16": 1.0436375565438993,
+    "2": 49.04948587324543,
+    "33": 15.858017087739995,
+    "37": 1.2300457022141131,
+    "4": 96.31376458240356,
+    "53": 6.6098535042359,
+    "54": 8.713345917731317,
+    "62": 24.5376434418489,
+    "68": 4.7285075221223,
+    "73": 11.644571098943118,
+    "BOX": 259.30786412551606,
+    "O": 2.806272888893645,
+    "U": 651.1820168820959,
+    "W": 18.505066704208616,
+    "f3": 8.916919761019557,
+    "p": 24.658829154405794,
+    "s1": 7.587011387889902,
+    "v": 18.460439508523905,
+    "w": 119.554358494177,
+    "y": 157.2084169880327
+   },
+   "seed": 2,
+   "tok_signs": 18,
+   "tok_token_share": 0.4479465138490926,
+   "u_acc": 0.5681818181818182,
+   "u_n": 44,
+   "u_signs": 44,
+   "u_tok_acc": 0.6351480420248329,
+   "wrong": [
+    "1",
+    "27",
+    "36",
+    "44",
+    "46",
+    "49",
+    "5",
+    "88",
+    "9",
+    "BOX2",
+    "Bi",
+    "D2",
+    "T",
+    "de",
+    "fe",
+    "me",
+    "p9",
+    "star",
+    "z"
+   ],
+   "wrong_margins": {
+    "1": 7.074463893584607,
+    "27": 14.902565988949902,
+    "36": 4.417721007140699,
+    "44": 0.5276501979702175,
+    "46": 14.637221708003892,
+    "49": 8.224640164604693,
+    "5": 11.556306529547328,
+    "88": 1.9814739761051214,
+    "9": 16.083204233854758,
+    "BOX2": 0.7948759061130204,
+    "Bi": 6.990586198860797,
+    "D2": 92.42391567463073,
+    "T": 137.53453078883285,
+    "de": 16.96260245054566,
+    "fe": 10.065858758752029,
+    "me": 14.690431871035457,
+    "p9": 3.672830983265783,
+    "star": 5.588828086812612,
+    "z": 29.827421867237717
+   },
+   "wrong_tok_signs": 17,
+   "wrong_tok_token_share": 0.3629417382999045
+  },
+  {
+   "after": -2.956566780228041,
+   "before": -3.960770177792936,
+   "bpc_model": 2.9290940379861343,
+   "kind": "A",
+   "m_acc": 0.8527459263729632,
+   "m_base": 0.46288473144236575,
+   "m_n": 1657,
+   "m_oracle_majority": 0.6421243210621606,
+   "restarts": [
+    {
+     "after": -2.9634494325828595,
+     "before": -3.9552063924484115,
+     "iters": 30,
+     "obj": -38195.899736560474
+    },
+    {
+     "after": -2.956566780228041,
+     "before": -3.960770177792936,
+     "iters": 30,
+     "obj": -38166.32056596378
+    },
+    {
+     "after": -2.9608387841544928,
+     "before": -3.957577169831582,
+     "iters": 30,
+     "obj": -38185.93779924049
+    },
+    {
+     "after": -2.956148432169762,
+     "before": -3.9624610872404173,
+     "iters": 30,
+     "obj": -38169.78855617597
+    },
+    {
+     "after": -2.961117585461697,
+     "before": -4.046917079057827,
+     "iters": 30,
+     "obj": -38189.53349969951
+    },
+    {
+     "after": -2.9618164425272484,
+     "before": -3.998703967716804,
+     "iters": 30,
+     "obj": -38189.66120994634
+    },
+    {
+     "after": -2.96317045822806,
+     "before": -3.683075722126444,
+     "iters": 30,
+     "obj": -38192.304036101465
+    },
+    {
+     "after": -2.9615375763523595,
+     "before": -4.133774544153502,
+     "iters": 30,
+     "obj": -38186.06550948732
+    },
+    {
+     "after": -2.958474487991083,
+     "before": -3.710537503140496,
+     "iters": 30,
+     "obj": -38176.154793036934
+    },
+    {
+     "after": -2.9615375763523595,
+     "before": -3.909137691498876,
+     "iters": 30,
+     "obj": -38186.06550948732
+    }
+   ],
+   "right_margins": {
+    "101": 4.464441611453523,
+    "102": 2.645901343574735,
+    "16": 8.810112239662601,
+    "18": 0.9898032680637385,
+    "2": 9.221628852916638,
+    "36": 12.949729408206537,
+    "46": 13.355091607425038,
+    "5": 70.67590396928517,
+    "53": 17.54140119789463,
+    "62": 16.6363219344953,
+    "9": 20.933663857452757,
+    "BOX": 288.3244001956009,
+    "BOX2": 16.274697819756398,
+    "Bi": 9.904753524074351,
+    "D2": 25.66368169699399,
+    "O": 16.788264430762013,
+    "U": 942.0218763676276,
+    "de": 17.891223716638592,
+    "me": 10.982129820133991,
+    "p": 14.926399114390506,
+    "p9": 8.22039228251083,
+    "u": 12.450278453314525,
+    "v": 45.84709855004894,
+    "w": 96.87572824094059,
+    "y": 130.66535080422955,
+    "z": 501.09530034033014
+   },
+   "seed": 3,
+   "tok_signs": 16,
+   "tok_token_share": 0.26993355481727577,
+   "u_acc": 0.6046511627906976,
+   "u_n": 43,
+   "u_signs": 43,
+   "u_tok_acc": 0.8114617940199336,
+   "wrong": [
+    "1",
+    "104",
+    "15",
+    "27",
+    "33",
+    "37",
+    "4",
+    "44",
+    "49",
+    "68",
+    "79",
+    "T",
+    "W",
+    "f3",
+    "fe",
+    "s1",
+    "star"
+   ],
+   "wrong_margins": {
+    "1": 8.900800229738934,
+    "104": 0.6323376319550107,
+    "15": 14.029276326021233,
+    "27": 0.7842656537871449,
+    "33": 26.30332341911094,
+    "37": 2.4568511032898925,
+    "4": 161.1652996570774,
+    "44": 16.318655332120215,
+    "49": 1.1294125058324198,
+    "68": 8.835238023294835,
+    "79": 3.1238561285123154,
+    "T": 62.21711746224901,
+    "W": 11.62216050758667,
+    "f3": 2.6219858085477625,
+    "fe": 7.25287415285959,
+    "s1": 4.69801357083179,
+    "star": 16.908049882629143
+   },
+   "wrong_tok_signs": 14,
+   "wrong_tok_token_share": 0.1852159468438538
+  },
+  {
+   "after": -2.9293552558263856,
+   "before": -3.6630727972962376,
+   "bpc_model": 2.9290940379861343,
+   "kind": "A",
+   "m_acc": 0.8551587301587301,
+   "m_base": 0.4722222222222222,
+   "m_n": 1512,
+   "m_oracle_majority": 0.6527777777777778,
+   "restarts": [
+    {
+     "after": -2.9293552558263856,
+     "before": -3.6630727972962376,
+     "iters": 30,
+     "obj": -37633.42697160158
+    },
+    {
+     "after": -2.928449699024333,
+     "before": -4.108811351740493,
+     "iters": 30,
+     "obj": -37648.14933065683
+    },
+    {
+     "after": -2.9280622189348517,
+     "before": -3.9412971455887416,
+     "iters": 30,
+     "obj": -37637.31176218858
+    },
+    {
+     "after": -2.9326575394046515,
+     "before": -3.6791227852378547,
+     "iters": 30,
+     "obj": -37652.39014841632
+    },
+    {
+     "after": -2.932270201756491,
+     "before": -3.527398992468422,
+     "iters": 30,
+     "obj": -37641.552579948075
+    },
+    {
+     "after": -2.931546410599829,
+     "before": -4.106472327098309,
+     "iters": 30,
+     "obj": -37646.919004923
+    },
+    {
+     "after": -2.932270201756491,
+     "before": -4.361551592785695,
+     "iters": 30,
+     "obj": -37641.552579948075
+    },
+    {
+     "after": -2.9311589903780955,
+     "before": -4.037817044650333,
+     "iters": 30,
+     "obj": -37636.08143645475
+    },
+    {
+     "after": -2.9311589903780955,
+     "before": -3.9381324638339734,
+     "iters": 30,
+     "obj": -37636.08143645475
+    },
+    {
+     "after": -2.932270201756491,
+     "before": -4.078389907236312,
+     "iters": 30,
+     "obj": -37641.552579948075
+    }
+   ],
+   "right_margins": {
+    "1": 59.65600445961991,
+    "101": 2.7005470048340356,
+    "104": 8.938485634365748,
+    "121": 13.39969057713121,
+    "15": 22.872814848859832,
+    "16": 1.7469651189769024,
+    "2": 46.12330582357299,
+    "27": 0.4699177123066107,
+    "33": 19.542951475243967,
+    "4": 303.4478641976966,
+    "44": 0.04982202513920697,
+    "46": 6.781167404439373,
+    "5": 40.36474013583711,
+    "53": 9.802531452735593,
+    "62": 20.090739459774113,
+    "68": 14.942110413278783,
+    "BOX": 209.20198781486306,
+    "BOX2": 34.69868205405078,
+    "Bi": 0.2926993247296821,
+    "T": 56.00627635748788,
+    "U": 681.1915178014096,
+    "de": 22.244654794001292,
+    "me": 7.590391123651671,
+    "p": 55.130583879386904,
+    "s1": 12.245758305307504,
+    "v": 143.2823451749009,
+    "y": 163.3130316025763,
+    "z": 895.0147315273898
+   },
+   "seed": 4,
+   "tok_signs": 13,
+   "tok_token_share": 0.2857142857142857,
+   "u_acc": 0.6666666666666666,
+   "u_n": 42,
+   "u_signs": 42,
+   "u_tok_acc": 0.7799671592775042,
+   "wrong": [
+    "36",
+    "37",
+    "49",
+    "54",
+    "73",
+    "9",
+    "D2",
+    "W",
+    "f3",
+    "fe",
+    "p9",
+    "star",
+    "u",
+    "w"
+   ],
+   "wrong_margins": {
+    "36": 0.024969823796709534,
+    "37": 6.062790100448183,
+    "49": 35.56894238095447,
+    "54": 0.48831016643865155,
+    "73": 1.2183662314149615,
+    "9": 264.8739392237767,
+    "D2": 6.635068476901324,
+    "W": 23.2425774429729,
+    "f3": 0.3257780614850816,
+    "fe": 2.9534165452365073,
+    "p9": 4.500486967163027,
+    "star": 33.16622859188283,
+    "u": 0.5521644866547035,
+    "w": 64.90479272048105
+   },
+   "wrong_tok_signs": 11,
+   "wrong_tok_token_share": 0.2175697865353038
+  },
+  {
+   "after": -3.122550137227103,
+   "before": -3.76541316727374,
+   "bpc_model": 2.9290940379861343,
+   "kind": "A",
+   "m_acc": 0.8071469086783891,
+   "m_base": 0.4690867838910947,
+   "m_n": 1763,
+   "m_oracle_majority": 0.6738513896766875,
+   "restarts": [
+    {
+     "after": -3.125607288298554,
+     "before": -3.8264484568187536,
+     "iters": 30,
+     "obj": -40135.92318904173
+    },
+    {
+     "after": -3.1231866121089484,
+     "before": -4.033824482944896,
+     "iters": 30,
+     "obj": -40111.08565931523
+    },
+    {
+     "after": -3.1316755261003646,
+     "before": -3.6837919758355646,
+     "iters": 30,
+     "obj": -40138.685218028375
+    },
+    {
+     "after": -3.122550137227103,
+     "before": -3.76541316727374,
+     "iters": 30,
+     "obj": -40106.03396254491
+    },
+    {
+     "after": -3.125130544874552,
+     "before": -3.722641560325441,
+     "iters": 30,
+     "obj": -40126.67619618925
+    },
+    {
+     "after": -3.1255166089739026,
+     "before": -3.907733694835165,
+     "iters": 30,
+     "obj": -40131.63325922491
+    },
+    {
+     "after": -3.1228988420081008,
+     "before": -4.03011038263862,
+     "iters": 30,
+     "obj": -40110.512726752044
+    },
+    {
+     "after": -3.12258148249981,
+     "before": -4.162076093416928,
+     "iters": 30,
+     "obj": -40112.68172419256
+    },
+    {
+     "after": -3.1261338233873746,
+     "before": -4.121196284312749,
+     "iters": 30,
+     "obj": -40136.4321584705
+    },
+    {
+     "after": -3.1222426715512843,
+     "before": -3.638716104432826,
+     "iters": 30,
+     "obj": -40108.3293587478
+    }
+   ],
+   "right_margins": {
+    "33": 19.86359538472982,
+    "44": 2.1825312281787035,
+    "49": 18.33994006168075,
+    "53": 0.8631598180020603,
+    "9": 42.48895638846534,
+    "BOX": 285.8214673407383,
+    "BOX2": 7.522591730948534,
+    "D2": 29.0420140853837,
+    "T": 145.99373078240296,
+    "U": 581.4531432048898,
+    "me": 21.988368870263457,
+    "p9": 6.004256239402935,
+    "s1": 1.273742901114872,
+    "star": 18.439114115682884,
+    "v": 39.495044690878785,
+    "y": 127.08931642744847,
+    "z": 672.1164583258033
+   },
+   "seed": 5,
+   "tok_signs": 17,
+   "tok_token_share": 0.3232600732600733,
+   "u_acc": 0.4473684210526316,
+   "u_n": 38,
+   "u_signs": 38,
+   "u_tok_acc": 0.7619047619047619,
+   "wrong": [
+    "1",
+    "101",
+    "102",
+    "121",
+    "15",
+    "16",
+    "18",
+    "2",
+    "36",
+    "4",
+    "46",
+    "5",
+    "62",
+    "68",
+    "W",
+    "de",
+    "f3",
+    "fe",
+    "hash",
+    "p",
+    "w"
+   ],
+   "wrong_margins": {
+    "1": 72.09674269553238,
+    "101": 1.2723605623811522,
+    "102": 0.7600286618551877,
+    "121": 7.065459727334428,
+    "15": 6.510625021061458,
+    "16": 8.955027421633304,
+    "18": 7.69854646436994,
+    "2": 39.15250626140801,
+    "36": 7.263794304135786,
+    "4": 77.6834742682513,
+    "46": 0.10620020537206187,
+    "5": 18.708876943702762,
+    "62": 15.912642662846338,
+    "68": 0.3628481925915139,
+    "W": 0.3041678684361102,
+    "de": 26.89270824620445,
+    "f3": 0.5705638567941875,
+    "fe": 1.785393800400385,
+    "hash": 7.242163100294391,
+    "p": 6.632749972618967,
+    "w": 159.35882000282072
+   },
+   "wrong_tok_signs": 15,
+   "wrong_tok_token_share": 0.2316849816849817
+  },
+  {
+   "after": -2.926026836478641,
+   "before": -3.6069018964067974,
+   "bpc_model": 2.9290940379861343,
+   "kind": "A",
+   "m_acc": 0.8364336112892881,
+   "m_base": 0.431686978832585,
+   "m_n": 1559,
+   "m_oracle_majority": 0.6889031430404106,
+   "restarts": [
+    {
+     "after": -2.926026836478641,
+     "before": -3.6069018964067974,
+     "iters": 30,
+     "obj": -37854.00918352418
+    },
+    {
+     "after": -2.926026836478641,
+     "before": -3.707985496172723,
+     "iters": 30,
+     "obj": -37854.00918352418
+    },
+    {
+     "after": -2.926026836478641,
+     "before": -3.6212848756447844,
+     "iters": 30,
+     "obj": -37854.00918352418
+    },
+    {
+     "after": -2.926026836478641,
+     "before": -3.663308290280097,
+     "iters": 30,
+     "obj": -37854.00918352418
+    },
+    {
+     "after": -2.926026836478641,
+     "before": -3.731362769921152,
+     "iters": 30,
+     "obj": -37854.00918352418
+    },
+    {
+     "after": -2.926026836478641,
+     "before": -3.590045946268154,
+     "iters": 30,
+     "obj": -37854.00918352418
+    },
+    {
+     "after": -2.926026836478641,
+     "before": -3.6716174671047788,
+     "iters": 30,
+     "obj": -37854.00918352418
+    },
+    {
+     "after": -2.926026836478641,
+     "before": -3.6737189719831793,
+     "iters": 30,
+     "obj": -37854.00918352418
+    },
+    {
+     "after": -2.926026836478641,
+     "before": -4.017170934330245,
+     "iters": 30,
+     "obj": -37854.00918352418
+    },
+    {
+     "after": -2.926026836478641,
+     "before": -3.725653393617008,
+     "iters": 30,
+     "obj": -37854.00918352418
+    }
+   ],
+   "right_margins": {
+    "102": 2.445552415913454,
+    "121": 9.150033384487614,
+    "15": 3.512396761483018,
+    "18": 7.726566933438903,
+    "27": 24.75989481425279,
+    "33": 6.015606617088565,
+    "4": 303.1122740427727,
+    "44": 6.018657176998815,
+    "46": 8.338763153184004,
+    "49": 26.656936889190888,
+    "5": 92.50761978403625,
+    "62": 28.444734246670805,
+    "73": 3.8821916638400182,
+    "79": 13.151337925976037,
+    "88": 6.086733312529603,
+    "BOX": 244.1716926294539,
+    "BOX2": 4.012554936647433,
+    "O": 14.43247064208731,
+    "U": 265.86863761519817,
+    "W": 7.0332353516399735,
+    "fe": 29.03386799127759,
+    "hash": 4.710241863478487,
+    "me": 9.576796695973542,
+    "s1": 23.807799697892847,
+    "star": 2.4787937124862367,
+    "u": 1.5342926749977295,
+    "v": 143.50937619880142,
+    "y": 193.31224608844695,
+    "z": 261.65211283481585
+   },
+   "seed": 6,
+   "tok_signs": 14,
+   "tok_token_share": 0.3040089086859688,
+   "u_acc": 0.7073170731707317,
+   "u_n": 41,
+   "u_signs": 41,
+   "u_tok_acc": 0.8162583518930958,
+   "wrong": [
+    "1",
+    "2",
+    "36",
+    "37",
+    "68",
+    "9",
+    "D2",
+    "T",
+    "de",
+    "f3",
+    "p",
+    "w"
+   ],
+   "wrong_margins": {
+    "1": 12.32181887039917,
+    "2": 15.96154742312359,
+    "36": 1.041285829331997,
+    "37": 2.7846046348751656,
+    "68": 4.225585969160306,
+    "9": 10.800175346776598,
+    "D2": 8.173138511385332,
+    "T": 39.493457001591196,
+    "de": 9.270515792794413,
+    "f3": 8.19896337163739,
+    "p": 0.5945732067389145,
+    "w": 23.655314034180265
+   },
+   "wrong_tok_signs": 12,
+   "wrong_tok_token_share": 0.18374164810690424
+  }
+ ],
+ "control_B": [
+  {
+   "after": -5.736747478558178,
+   "before": -5.91380257963977,
+   "bpc_model": 2.9290940379861343,
+   "kind": "B",
+   "restarts": [
+    {
+     "after": -5.736747478558178,
+     "before": -5.91380257963977,
+     "iters": 30,
+     "obj": -71479.8735828349
+    },
+    {
+     "after": -5.737047026787707,
+     "before": -5.9097392279379735,
+     "iters": 30,
+     "obj": -71483.60595377482
+    },
+    {
+     "after": -5.736747478558178,
+     "before": -6.1121140569933745,
+     "iters": 30,
+     "obj": -71479.8735828349
+    },
+    {
+     "after": -5.737047026787707,
+     "before": -6.001838719158029,
+     "iters": 30,
+     "obj": -71483.60595377482
+    },
+    {
+     "after": -5.736747478558178,
+     "before": -5.931374830092385,
+     "iters": 30,
+     "obj": -71479.8735828349
+    },
+    {
+     "after": -5.736747478558178,
+     "before": -5.9531847096989585,
+     "iters": 30,
+     "obj": -71479.8735828349
+    },
+    {
+     "after": -5.736747478558178,
+     "before": -6.073476631298194,
+     "iters": 30,
+     "obj": -71479.8735828349
+    },
+    {
+     "after": -5.736747478558178,
+     "before": -5.985358911604939,
+     "iters": 30,
+     "obj": -71479.8735828349
+    },
+    {
+     "after": -5.736522163299324,
+     "before": -5.988520930065052,
+     "iters": 30,
+     "obj": -71482.80267687287
+    },
+    {
+     "after": -5.736522163299324,
+     "before": -5.834857464901013,
+     "iters": 30,
+     "obj": -71482.80267687287
+    }
+   ],
+   "seed": 1,
+   "tok_signs": 43,
+   "tok_token_share": 0.9952830188679245,
+   "u_signs": 48
+  },
+  {
+   "after": -5.699959274980605,
+   "before": -6.078045158371674,
+   "bpc_model": 2.9290940379861343,
+   "kind": "B",
+   "restarts": [
+    {
+     "after": -5.699959274980605,
+     "before": -6.078045158371674,
+     "iters": 30,
+     "obj": -71055.69232190822
+    },
+    {
+     "after": -5.7011700174304645,
+     "before": -5.97053261788093,
+     "iters": 30,
+     "obj": -71065.08426727074
+    },
+    {
+     "after": -5.700787966086879,
+     "before": -5.8218452944344445,
+     "iters": 30,
+     "obj": -71060.32199727294
+    },
+    {
+     "after": -5.699999241070632,
+     "before": -5.904694372017268,
+     "iters": 30,
+     "obj": -71056.1905391865
+    },
+    {
+     "after": -5.700787966086879,
+     "before": -5.855988238014326,
+     "iters": 30,
+     "obj": -71060.32199727294
+    },
+    {
+     "after": -5.700787966086879,
+     "before": -5.989049635744992,
+     "iters": 30,
+     "obj": -71060.32199727294
+    },
+    {
+     "after": -5.700747996790587,
+     "before": -5.964064564811838,
+     "iters": 30,
+     "obj": -71059.82377999467
+    },
+    {
+     "after": -5.700787966086879,
+     "before": -5.907511353838794,
+     "iters": 30,
+     "obj": -71060.32199727294
+    },
+    {
+     "after": -5.699999241070632,
+     "before": -6.178251998499918,
+     "iters": 30,
+     "obj": -71056.1905391865
+    },
+    {
+     "after": -5.699959274980605,
+     "before": -6.304077715760833,
+     "iters": 30,
+     "obj": -71055.69232190822
+    }
+   ],
+   "seed": 2,
+   "tok_signs": 36,
+   "tok_token_share": 0.9897798742138365,
+   "u_signs": 48
+  },
+  {
+   "after": -5.714703669667208,
+   "before": -6.003366359008892,
+   "bpc_model": 2.9290940379861343,
+   "kind": "B",
+   "restarts": [
+    {
+     "after": -5.714837930579249,
+     "before": -5.876739960572194,
+     "iters": 30,
+     "obj": -71229.73996673977
+    },
+    {
+     "after": -5.714837930579249,
+     "before": -5.8930310401441455,
+     "iters": 30,
+     "obj": -71229.73996673977
+    },
+    {
+     "after": -5.714837930579249,
+     "before": -5.972690249860566,
+     "iters": 30,
+     "obj": -71229.73996673977
+    },
+    {
+     "after": -5.715322755195295,
+     "before": -6.115516484253948,
+     "iters": 30,
+     "obj": -71235.78282075416
+    },
+    {
+     "after": -5.714703669667208,
+     "before": -6.003366359008892,
+     "iters": 30,
+     "obj": -71228.06653873208
+    },
+    {
+     "after": -5.715361105177558,
+     "before": -6.0082634245017665,
+     "iters": 30,
+     "obj": -71230.5454538279
+    },
+    {
+     "after": -5.714134965606739,
+     "before": -5.852501730839127,
+     "iters": 30,
+     "obj": -71232.40648125361
+    },
+    {
+     "after": -5.714703669667208,
+     "before": -5.897180399916226,
+     "iters": 30,
+     "obj": -71228.06653873208
+    },
+    {
+     "after": -5.715361105177558,
+     "before": -5.955197148382544,
+     "iters": 30,
+     "obj": -71230.5454538279
+    },
+    {
+     "after": -5.714837930579249,
+     "before": -5.937648304098455,
+     "iters": 30,
+     "obj": -71229.73996673977
+    }
+   ],
+   "seed": 3,
+   "tok_signs": 40,
+   "tok_token_share": 0.9929245283018868,
+   "u_signs": 48
+  }
+ ],
+ "gate": "U-sign acc >= 0.60 and M acc >= freq baseline + 0.10, mean of 3 seeds",
+ "gate_met": true,
+ "job": "bMATBEAM",
+ "m_gain_mean": 0.3560333166044629,
+ "m_gain_mean_repl": 0.3752477550601685,
+ "order": 6,
+ "target": {
+  "after": -4.2390661965042575,
+  "before": -4.721287360159651,
+  "bpc_model": 2.9290940379861343,
+  "kind": "T",
+  "m_choices": {
+   "6": {
+    "i": 52,
+    "n": 110,
+    "s": 45
+   },
+   "B": {
+    "i": 267,
+    "y": 39
+   },
+   "E": {
+    "i": 294,
+    "y": 59
+   },
+   "S": {
+    "c": 8,
+    "u": 38
+   },
+   "S6": {
+    "e": 1,
+    "u": 1
+   },
+   "T=": {
+    "m": 74,
+    "mm": 8
+   },
+   "b-": {
+    "e": 1,
+    "u": 2
+   },
+   "dd": {
+    "e": 4,
+    "g": 2
+   },
+   "f": {
+    "c": 277,
+    "u": 225
+   },
+   "ff": {
+    "n": 58,
+    "o": 31
+   },
+   "fh": {
+    "u": 1
+   },
+   "i": {
+    "e": 4,
+    "i": 4
+   },
+   "th": {
+    "a": 4,
+    "m": 2
+   },
+   "yy": {
+    "s": 27,
+    "ss": 10
+   }
+  },
+  "max_wrong_margin_control": 264.8739392237767,
+  "reading": [
+   "mosiigdr egyleeroiuo su r er gescirlilettrudergtetier  u oul r",
+   " rritenudel  propiceeleppuurrisule  nintd e eclo uin fi n",
+   "m e  eudecirll pr sli reieenti eu  ourp ene  i iitre isr non n",
+   "len ltde  iidenos  deouei  recl tro limreilit",
+   "u drilenm sinne entco rlepe deso n  ieri  m l o ttendo tui",
+   " ei oouu e onurfreotsieliiul rui t o  lrre entre irre ece orr  ele o iurrs",
+   "ot  rrut isr outre r i ere eueuour  ele o iurri",
+   " r in re u   ir r estieor r   entreu eirntli  e",
+   "loo erlir  otueut or i  re ent  euou  oeuuiroere",
+   "pl r eu   tisoereten i uu lienuiro utilri lturr",
+   "r li ore tei  e eli  er ert   li  eurler sir",
+   " recl r oieute ent  ecirlli   ie e irrsu titronet",
+   "uo  urese  eli  er erutli rr cleit  elesroeue ",
+   "rict ont eusine   r  rl   eulrritueru i ",
+   "  r  rl   eulrritueultui l ri reutr nc r   re   r",
+   "ri   e   lsenueuo nuo t  e  ui re  e eliooiuer ee ooir irri ",
+   " lie eslr   rillui roietii roouiu ons  ",
+   "oti eo u ue  r erceioecoourru siruu  r rrit   l eeint",
+   " uoiirit i stenint  in  ill  e reel eueue ltrirr",
+   "rui  o lr ueuo e int eoee    oerressuutuu t rrl il  u  rl",
+   "ui   i ter  e e lie r eieleri reco notet i o rlic i u r",
+   " reooiuoo utru  elon  oi tui e t   lu  o tin  o ui ro o",
+   "ueitutru     ui uc leot   reoo rui ou oo  ui oncl tuo",
+   " l cri uco r u onne uioeli outrui    i  u",
+   "e o uel usi  ucu e eotislt u  eui   tru  uo ut",
+   "i o ri  o lic u es  oonou uou   oiru lon uu",
+   "rluitei oue t eulie    u  euin ucoo r  luut",
+   "ro utui   u t   l   ri u to rc ",
+   "ulieu r  ito tcest err i lit   luo t ru uc ",
+   "  o eitiet  ul u eri nt ",
+   " o l ro u   t ruc ole uc iutiit    ",
+   "i e  uuer  icl    u  o  ucto t uro uee  r t",
+   "uue ltii uure u   liuuer",
+   "   rttit rut r luiuer t",
+   "u  ul e istier   euer onne  eoe o   u  u  oti",
+   "e tureiol t on  ureur  ui  u  ul er   cul ut",
+   "in   i  u t t lro u",
+   "mlanuo sit queiepruuoynem  g gr",
+   "etro  lilnmo surmoemsur ion",
+   "dmoeitla uel iiiromemeentenan",
+   "inclus rundequei milaumimeure ni",
+   "uodunsait sortyrlcmoiadeuogrta",
+   "unde ind emu lismiensde u lsqueionu ",
+   "outtm iourym misu aiiair esu",
+   "tiimia  umeruongarequeduclusdio n",
+   "miie uisuimuiur padroictso utanin",
+   "tmilee ucsquiiruuamnaui nostrecumroutn",
+   "uo pu rl scurroasieoei imreetpmut",
+   "imde smn p  dicas semrl souse ma ",
+   "esuequiiniionu du steuimcitsismn i",
+   "nud tr sur  rdsieti nuos mandequilu",
+   "  mlimursa demutr ntemplm d min",
+   "emticun uinsdemurtriteneminidesf",
+   " tmi essms uuilridimu rss   dul",
+   "urssquiiui  tui nyfuser mmu oimusun",
+   "i fuio estaiqueimfteeaeiuinequei oisui",
+   "ali oi me oi nrt mtomt liyuiste",
+   "a omnmui ndenmuresetd saludye it",
+   "samurasnd fati  estr sdesa usu",
+   "st i elmest uqueyyes sinpum",
+   "itusdio quiyestissuo iml d m smon",
+   "niuumr imsilunneii  rfuistd m smi",
+   " tms tumut tenoiiquiiniorsdum",
+   "ntuu rmnes  lelissomuui nie degend",
+   "rsuquismntioini   leniplmsdefmuu",
+   "rimsun fair sonstrileslet smt",
+   " nooremul simpu tmsqueieru tr s i ",
+   "miuud duieta siuauuiriestuy seu",
+   "itid  m e  iistr",
+   "e tdirelaneoesilumoirquea uusumui",
+   "emequelunnynce ltniqueiuniuu mon p",
+   "unt tsiu er s t sliminsududiue",
+   "  sfournirtumtm m tumssuiinsmid",
+   "urmod  uistesirmu   yau u n i",
+   " tilepu r siruio iesuyquemi ",
+   "ursde sunsei suntomupe endu ",
+   "reuuransetimuuriunsaiiuirisquei",
+   "s mcygqueoet isryquinesdecusdismun",
+   "anemer tmis rui umi",
+   "tr seis rionstom b msm  mpr umuoirfai",
+   "tantded spenbedebonseruerb stemrmsi",
+   "mu   s rtesmisondela mis rminsidep ",
+   "ielaultedentreti inemints t streontd",
+   "prouus maciqueg puisstir mquelqueaons bo r",
+   "delpprouinbeou esusuis eaifaibta tref",
+   "nde i stoiu tquefont",
+   "ncoresquelquemautresaro",
+   "esnesep mentmainte",
+   "aitrmtorlerpouru  stecyoul s iemimu",
+   "tsim sl  amrmycequiuousr stedmbonssub  ",
+   "tuquep rsoyencabitelacampei ie t ouequi",
+   "ontillusonysontra",
+   "icl  epoursecons",
+   "oiillusenap rsoiuen",
+   "tiilesdontilletrumserontle ecosreme",
+   "ttr sdiiiic ldepen erquelonpuiueume",
+   "dilaformedecontribution  fontl s ",
+   "emii emaseurequetelesuiulaiueuies ro",
+   " nt amaisarromssmdeignostre uand leuf",
+   " itpromis u leunesep m nti ecuterque",
+   "rl agarnisonu testmal iuequelesarmsu",
+   "npuiuents ruir uandau  olunteudeu u",
+   " paisieconcesseque  el saitromssaeauc",
+   "pcluuuroideuqueientpensoiunostreilfiult",
+   "repo r u illaont gspluspmtiquel sau",
+   " eunyayantuilenimo r adequinaitl ie",
+   "iauneli uepr  deleouillsuont nc sa",
+   " ntali ui e  l smoi isque am ndoiud",
+   "  costemedeiiaielentnepomantiirerd",
+   "uiaucuns uo ruiesuiucontraintde",
+   "recouri aaii tuousdepescoerceporteur ",
+   "preupouruoussurli rtr sr male int eca",
+   "reparluy ntendre   snde ent t nte",
+   "tion tsiidesireue eruirdeueutear s",
+   "s requelqueboie esolutiondelssecourirdorer",
+   "uniu itplu soseitqueleni stecarlitenii",
+   "t il  ercioenousillafiriultsesrelonye",
+   "siuroitiiiiis itliretlinirque isoiiud",
+   " oiu lenesidedaue oe ntieriousiigco",
+   "ioists usoi nsi posoioirportersestede",
+   "speioesusoinsuiprospte entqueleo",
+   "drre nioendiitquelesditssoriensuepu ",
+   "esentprecire s illuiplii squelidictes",
+   "ressoit iue n iri son  uileid i",
+   "eprouince  sinquelur iuisintduniuir",
+   "tiiielus ineen  uer u ou  ioiouil",
+   "suiirentdelud iira r r uuneiutrefuis",
+   "riloedecest riuieriu escr rcu uunde",
+   "ueiinesuisu nuqueuuiui  dict",
+   "s ntipliduisques nti nuoquesuniuilu",
+   "s  uriursouaidesitsd i iestuiuttu",
+   "lirdoqui u uistpr suupusiuyun",
+   "ut rsinui fiispireoegtruuecep",
+   "tr siupuulonti rscurc queiesiidu l",
+   "ps untir sceiudiciupesu piruiceceque",
+   "ieuuscr nsp uptiitruurpueidepppslun",
+   "pusl eupsqueoeulsilinpeniir runtung",
+   " ctqueiesupqueuus i s pp uruiruiuud ",
+   " rsntudusntup  pususpartdec u dec",
+   "i uouspsisd requei puclsecouruqueloinoussd",
+   " utesrsepr ndrele doi isriurindedeiisueur",
+   "rd senueducourii eillsiuoi ntdi iseruir",
+   "desapirt eiediucontinuueriipointdifiireson",
+   "deuo r t ol iirtill es riposiblecour  uoi",
+   "re soi ndel itretenirso ndantdeuosnost",
+   " lesii it  poseiu nreet n ii  r ol  iqueei",
+   "iiuipourfiireu poury scl i rretfiictueni t",
+   "iiisons  urdegour u lpournousiidirdeson",
+   "credictu desprunteriainterest ticcsn",
+   "seuuurscisduiuduiu ntreceuoirp spr",
+   "esilf sictsdeoept urdiiiuusuien",
+   "queduns eurfor   tsesoioticifurtne",
+   "s  re ioiniiuntpoint decluspru r ourtr",
+   "isterd oi su useulsies se psont",
+   "ru nsdepui nuiertintpoursefiictquep",
+   "ouriu ul diotui  urde ouu i runte",
+   "r tuu tdripsl plusillpou ontcareeueo",
+   "i lniiurdreiifiiiresonstreiu   nsdepi d",
+   "del sposoirfiireuisc r  ilfiultillfi",
+   "u ntiupre i rsi   esirei uous scriuiud ",
+   "uninut n ni s epiri ntdeu lneufued",
+   "i  noisdepuusiesuiuu nuitconiisquel u",
+   "ii  iuontuibandoi ueii liisegirni",
+   "sonpour irderueu sii e tsuiuu nu n",
+   "u uteuile tii ant uiduiudesondict",
+   "u  urlesir suuililli tiu uoeilli ",
+   "sporteruist l  tsuplustirdifi r",
+   "episqueuiis suiiupirsonaduiur uuludi",
+   "l rioacquersiinutebisilesitoutills",
+   "auri nuoieoindoinuiu ilipouldre ",
+   "tl sbileuilseuontnesysiire   il",
+   "m msestantlaisseentendre ilseuoul",
+   "ontdepartirduduqueliescaiquilesttres",
+   "malcontantetayantconsiderequeielaytousio",
+   "ursouitenirpourlemeileurcommede ande",
+   "mentquilaitetqueseneseroituipmtitedesfa",
+   "ueurpoursesanairesquedelerreteniriait",
+   "raicteauecluyetenconsiderationdune",
+   "arome ecarlmalaistedeneporterledarmeu",
+   "poursepaetidesiemo sedesquemluquepartesu",
+   "lierseruiceislmapromeudeuousifairependa",
+   "ntcetempsetmeoualaueriteilseutedsolu",
+   "duasiatousceque uauonsuoul pouslacompo",
+   "uitiondesaplacelaqueleestoitencoreu",
+   "auemsboyepournousreteneraceuiegesilulee",
+   "uentuouluopineautueencoreuqueldqueteapu",
+   "leustimpoutesrdedescmnueemencoreupl",
+   "usdeseiourquinousesmtresucerparcequeilmeuutf",
+   "alupasemliriugemepoueualemmempeouna",
+   "mepasempourcenemouepourtousesueduoneid",
+   "eramiunsemuouenedpremierreuulcequebou",
+   "mleuautreuienuiayuerbalemenepromeude",
+   "luifaimepayerdanstroiuaniulasommededou",
+   "eeeelescuudeluyfaireobtenimpemeinionde",
+   "aideposoiriouimdesonluituauoymcemeision",
+   "deleuendreetoultredintemuederenuerug",
+   "pourluyfaireaeordemunpardondetousesuepfa",
+   "uleupayssuequeiesuclietrescuabpeaentlui",
+   "deuouloymconfirmeretcroimgainsiqueienaye",
+   "msdeselamesoluquesou e bonclaiuirequeiene",
+   "msfussepastantaduancedenttraicterunie",
+   "desidefruatetueri d deuertecarlasonueoyo",
+   "ndelaleraissiondeuendresonluinest tparcequeilne",
+   "sen tayderestantduauitoussonditluieesmecl",
+   "edistlieudeuauteluduuoutedesafemmeetsub",
+   "utitueaseuenfan et uanda pardonilne",
+   " testreualablequilnaitpasseauparleaent",
+   "ouilestluicertainquilsneleueridserontpasquead",
+   "ectantdeuuargeuetdesubainiunsquilnese",
+   "ncouutaaiderquilnaitobeiauuaeedicteetd",
+   "utousrenuouealaultrepartietsquilniauuitp",
+   "luudecauardqueuourlasommedontilenadisia",
+   "luigbiuneunepartiecourleteapuquilnousuaespargn",
+   "edueie edecasteleetdelautreelenestpas",
+   "aussidutousinutileaiantdeluycesteublieati",
+   "ondeneporterleuaraesdesieaoiepouruon",
+   "parteouileust nuirspoursidauantai o",
+   "eetuiiai randeesperancedelenreteremdu",
+   "tousetcefaisantdeposuprtireedeaoneuerui",
+   "uesetparsonauiensteeepleretimerdault",
+   "reucommesetplaceudeconsequencecestsequim",
+   "aaeudentrempluuuoluntiersencetraicte",
+   "surquiigaeferasilluiulaistentendresoni",
+   "ntentionayentletouseeceptelauommedont",
+   "eeaesuiueneaigedeaaparolereaiusoubul",
+   "lnpour quileleuuisentfairesicen utquelun",
+   "etlauptreescoutenttruuuolontyeruleuma",
+   "uensquineuouldroientlea neupointdecompai",
+   "gn etlemautreupointdesuper eumm myeuousen",
+   "ayuoul escrireluimtoireauurayequesiluen",
+   "carlecardela  ilsepou afayryuoussoieumii",
+   "nformedela eretedefaictquiestdieumercy",
+   "caseaseedoucementescomeuquilyeust rande",
+   "areranceducontreimeienauoiupointuuesedau",
+   "oirencoreudemiseruinescesteamminostreencemi",
+   "eestimeauoiraucunemgit aignemeu aig",
+   "eu   tesireilluleuousconfeserontune",
+   "ouretluietlaultre m",
+   "muuenqueleueinenousestionulorspourlepayeaentdeedep",
+   "aonstreequiauoientestefaicteeanoegensde ue",
+   "telaqueleestdeuenuyencoreudepuiu plusgran",
+   "denousledictcaieaentnayant uui relesdautee",
+   "aonutreesitoutquedg oustuaeetaucunsdeusa",
+   "ritainesaianuyacrymeeueuoldatequelonleur",
+   "uouloitfaireaanquerounertestuaydeaduenir",
+   "uneueditionalespeignoleparaieueauecdesla",
+   "igaieeuetdesiceuere nueusieutraneesquilnest",
+   "uossibledepluarsrusquesauouloircabandoyerleuga",
+   "rdesetaenasserdeplierlesenseieneudontie",
+   "stenneteleueingqueieuousaneurequilenestpit",
+   "iableeutantenpercetueleatrecensiondeueoir",
+   "atiuerquelquegrandscandaleencestearm etn",
+   "eiantaucunaoyendenosteruiproapte entloma",
+   "sioneiparcequeceuequinousauoieitproaisdenouspresterig",
+   "dluuarendreapariuloruquenousyauonuenuoyele",
+   "soaiudutresorierauecoosobligationuetp",
+   "saesseuillsontfaictdeneoseleudissiculte",
+   "etprotestequilsneureuteroientpasunesuu",
+   "queieneayubligeaneseulenaonpriuenoaetque",
+   "ienguinseleurproaenredibouicequeleum ",
+   "leurseroitrenduapariualenreueuedesorl",
+   "equilestforcequeiesoiuiuyretgnupourceste",
+   "omauiondontieuenimiqueienesortirayqueieni",
+   "soiuobligeeourulusde uarantelescusen",
+   "aonpriuenoaquiserareaarquepourunesignale",
+   "folyequiconsiderereletempsounousaoaerqui ",
+   "me deleetreainecessitegnla",
+   "leilseriteuseseuoiantfrustredelauenui",
+   "ditroisieumemoiuquilyaplusdisiesepaaine",
+   "quileutiaoiteutreparlesuceainsetnayant",
+   "euuunaoyendefaerecaierleseenode uet",
+   "diudeueaonstreuquilaestecontraentdel",
+   "urfairefeimedontilesestyaportuneaue",
+   "urieueursetiteuiresuuesinamoustuaparcequesa",
+   " ilnatroseautremmeagdequedgaerenuoieri",
+   "ypourlasecondefoiutantuourcriemaeue",
+   "dusorpsdecesteuiledyreumuloirsemo",
+   "rimencesta eirequeuourenayerdymecosr",
+   "emdeluusuubsuesoblirieationsaquelqueinter",
+   "stquesepeuutestre mceudeueaoiensont",
+   "mg seruimumedelunquemautrecardeueued",
+   "elauilequisnontfaictqueo mserleurnuui",
+   "eeiteala etsefortrdierenleureecu",
+   "edysletreuquilsdientauoirdeparle",
+   "squeleseleleurcromebtillsneserontt",
+   "enuuaeucenecontributionpouruemte",
+   "aramparcequeseutanteseuresurlesdicteule",
+   "treuquesgiaentierementpouruiudili",
+   "rseleimpledu engiralleuurticuli",
+   "rsnesesontpastroaeumuinsrelmoidircar",
+   "ilneseutpeutroaerunseuleuuusoubsl",
+   "sobli atiunsdeggnyaucundesesueruit",
+   "eursetamiuquilapardecaquingsesontuog",
+   "luaucunemgntobli ernyreupondre r",
+   "luietsalnusefut rogequelquesmaruca",
+   "udebiriuetdedecorsquiauoientdeluu",
+   "arecomreeaudictpariuquiontuoulupre",
+   "drecesteconfiincemurmafoyquedese",
+   "contieterdelemgbaileruurmasimile",
+   "duuilesgcondrmeequinadieumaruae",
+   "ecuneuiolmncesimameisemidentetes",
+   "ueurequemitoutilensera umrinaiente",
+   "uecendantuuul failirdemuraaurr",
+   "ngdiaeurquecestaduuouspuiuuenantdequelqueau",
+   "trepartlemelieuousfumstrepiteulus ra",
+   "ndquedieumercyilnyrescualdimetiun",
+   "uerti onsieurlemnertementcourlesurlie",
+   "m iefaisencoreupntleureillnefauldra",
+   "rdeuenir simtinantnousmianteucri",
+   "u deserendmeynconltueutenomelequiluar",
+   "pteupareuuntquileullrulmsquelleiesuiuse",
+   "urquiladuanceraencoreu uandilauramece",
+   "umacremierelroreiestint onourusapi",
+   "uenousmaintenantplusqueiameiutresme",
+   "quisenousauonu g onsieurdesainctmcame",
+   "randmaladedisorteque uase olefaiud",
+   "uuesie eeutdemoureamesieursdelabar",
+   " eetmontberiultquiitriuailestmgee",
+   "treme entnousauosuperdudemaladielasi",
+   "edrndelaaineultquiauoitseruedemeres",
+   "ccaldicampeslarmequiestoitpreudem",
+   "dictsieurlemeresruualquilesieurtmi",
+   "ldlaiee pourlereusddictuieueilsa",
+   "duanceforteparcequelaeauileeut rendeut",
+   "malaisimtassieueerilafalufairedes",
+   "m n unreumequiluiaueuuelafie",
+   " relaquele  iecroysurei leraentierueee",
+   "ayanteuruioumduuieuliuecondameequinad",
+   "ieumercieuuumeaiolrauousiuenimaiaiuamident",
+   "etesperequeluitotilensera uarinaiante",
+   "cependantuuulufailirdgnaduetim",
+   "dspeurqueceutaduiuuousuenaitdequelqueautre",
+   "partlemalneuousfustrepoteulusurandque",
+   "dieumerciilnestienaydeeuieraduetie",
+   "lrlemaresumaldemati nonm sefaisencor",
+   "espitementpourlesurlierdeuenir smure",
+   "maueurequilnefauldrapasdemerendreinc",
+   "ontinentnousayes eucriptauparauantquil",
+   "euutcestenomelequi lpartir itdrsudeu",
+   "i urulesqueluyesuiucertainquiladuancera",
+   "inc reu uandilauraereseumapremiemele",
+   "oreyestanttr usi urusapimgnostremaint",
+   "iantplusqueiamaiutresrequiuenousau iule",
+   "aredrdesaenutumamaresdmaladendes r",
+   "teque uasi olefaieadecesie eestdemour",
+   "amesieursdela ar eetde ontaeraultqui",
+   "utrpdarlent geetremementnousauonuper",
+   "dudemaledielesrdelabinaultquiauoitse",
+   "ruidemarescualdicampeslarmucquiestoit",
+   "dreedemondictsnlemareuuualquileuieust",
+   "luisoulae eem mule",
+   "parcequelauileeut randeetmalaisuuaassieger",
+   "quimceldfayedeutranccsuenplusieur",
+   "rendroicteetestanimal arnoiedepioyier",
+   "labeson neenaeuteupusi n ue",
+   "ie iquein ubita l mentlonie edpo",
+   "mi rueteiqueo iustiu  iu eiimas",
+   "mamiel dentpu rt il bour ost e",
+   " n randreuinuquirs emmeitducas i e",
+   "s dileouuraiteo uirsle iitde ra",
+   "snd uiepomition itr denostrere eile",
+   "im isansedymteiliuadeio tcelaemque",
+   "londistmoyt riqueo rtreo lalica",
+   "isnousmiiroittrayi im su poumuid",
+   "er rmdesc nced ui  i teemtans",
+   "de i m desco  u mnousoonm iteuisqueu",
+   "eluiooituduiudeymr mtedintei ui ",
+   "iequemoysi  mrememiusmardemati io",
+   "nsi simoitauecimi defmrsiusyor",
+   "esir ic epareem ussysiquiseroit",
+   "neoisierecouririse ui u ut ures",
+   "aracredi  meuepinditquenousoostii",
+   " rioisoesie i m  nous utioy cours",
+   "uiou eu pismuitledistsi urdem t",
+   "i nmi    ud iudeaou diau queg m",
+   " stoi u r ensimuie iea  sfo uer",
+   "ntounmisoeranous mo",
+   "omas ir cremi   a",
+   "m rirtiequily miyeuerler  itied  "
+  ],
+  "restarts": [
+   {
+    "after": -4.238921609525392,
+    "before": -4.526425985734071,
+    "iters": 30,
+    "obj": -52939.89198136262
+   },
+   {
+    "after": -4.239648365147846,
+    "before": -4.828104017556121,
+    "iters": 30,
+    "obj": -52940.48913560116
+   },
+   {
+    "after": -4.2390661965042575,
+    "before": -4.721287360159651,
+    "iters": 30,
+    "obj": -52937.458661945166
+   },
+   {
+    "after": -4.239787900504158,
+    "before": -4.515938001413039,
+    "iters": 30,
+    "obj": -52942.23151359542
+   },
+   {
+    "after": -4.2390661965042575,
+    "before": -4.589215867246534,
+    "iters": 30,
+    "obj": -52937.458661945166
+   },
+   {
+    "after": -4.239787900504158,
+    "before": -4.414697694395811,
+    "iters": 30,
+    "obj": -52942.23151359542
+   }
+  ],
+  "seed": 8,
+  "signs": {
+   "1": {
+    "licensed": false,
+    "margin_bits": 33.03,
+    "restart_values": [
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK"
+    ],
+    "second": "",
+    "stable": true,
+    "support": 10,
+    "value": "TOK"
+   },
+   "101": {
+    "licensed": false,
+    "margin_bits": 0.88,
+    "restart_values": [
+     "l",
+     "l",
+     "l",
+     "l",
+     "l",
+     "l"
+    ],
+    "second": "t",
+    "stable": true,
+    "support": 1,
+    "value": "l"
+   },
+   "102": {
+    "licensed": false,
+    "margin_bits": 5.23,
+    "restart_values": [
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK"
+    ],
+    "second": "e",
+    "stable": true,
+    "support": 1,
+    "value": "TOK"
+   },
+   "104": {
+    "licensed": false,
+    "margin_bits": 1.3,
+    "restart_values": [
+     "l",
+     "l",
+     "l",
+     "l",
+     "l",
+     "l"
+    ],
+    "second": "s",
+    "stable": true,
+    "support": 1,
+    "value": "l"
+   },
+   "121": {
+    "licensed": false,
+    "margin_bits": 2.0,
+    "restart_values": [
+     "d",
+     "d",
+     "d",
+     "d",
+     "d",
+     "d"
+    ],
+    "second": "",
+    "stable": true,
+    "support": 1,
+    "value": "d"
+   },
+   "15": {
+    "licensed": false,
+    "margin_bits": 2.96,
+    "restart_values": [
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK"
+    ],
+    "second": "",
+    "stable": true,
+    "support": 3,
+    "value": "TOK"
+   },
+   "16": {
+    "licensed": false,
+    "margin_bits": 2.41,
+    "restart_values": [
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK"
+    ],
+    "second": "u",
+    "stable": true,
+    "support": 2,
+    "value": "TOK"
+   },
+   "18": {
+    "licensed": false,
+    "margin_bits": 1.83,
+    "restart_values": [
+     "o",
+     "o",
+     "o",
+     "o",
+     "o",
+     "o"
+    ],
+    "second": "t",
+    "stable": true,
+    "support": 1,
+    "value": "o"
+   },
+   "2": {
+    "licensed": false,
+    "margin_bits": 25.47,
+    "restart_values": [
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK"
+    ],
+    "second": "e",
+    "stable": true,
+    "support": 12,
+    "value": "TOK"
+   },
+   "27": {
+    "licensed": false,
+    "margin_bits": 11.5,
+    "restart_values": [
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK"
+    ],
+    "second": "d",
+    "stable": true,
+    "support": 2,
+    "value": "TOK"
+   },
+   "33": {
+    "licensed": false,
+    "margin_bits": 16.56,
+    "restart_values": [
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK"
+    ],
+    "second": "e",
+    "stable": true,
+    "support": 8,
+    "value": "TOK"
+   },
+   "36": {
+    "licensed": false,
+    "margin_bits": 4.43,
+    "restart_values": [
+     "e",
+     "e",
+     "e",
+     "e",
+     "e",
+     "e"
+    ],
+    "second": "#",
+    "stable": true,
+    "support": 3,
+    "value": "e"
+   },
+   "37": {
+    "licensed": false,
+    "margin_bits": 0.93,
+    "restart_values": [
+     "e",
+     "e",
+     "e",
+     "e",
+     "e",
+     "e"
+    ],
+    "second": "p",
+    "stable": true,
+    "support": 2,
+    "value": "e"
+   },
+   "4": {
+    "licensed": false,
+    "margin_bits": 370.53,
+    "restart_values": [
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK"
+    ],
+    "second": "",
+    "stable": true,
+    "support": 106,
+    "value": "TOK"
+   },
+   "44": {
+    "licensed": false,
+    "margin_bits": 20.84,
+    "restart_values": [
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK"
+    ],
+    "second": "i",
+    "stable": true,
+    "support": 4,
+    "value": "TOK"
+   },
+   "46": {
+    "licensed": false,
+    "margin_bits": 0.49,
+    "restart_values": [
+     "t",
+     "t",
+     "t",
+     "t",
+     "t",
+     "t"
+    ],
+    "second": "",
+    "stable": true,
+    "support": 2,
+    "value": "t"
+   },
+   "49": {
+    "licensed": false,
+    "margin_bits": 31.22,
+    "restart_values": [
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK"
+    ],
+    "second": "s",
+    "stable": true,
+    "support": 5,
+    "value": "TOK"
+   },
+   "5": {
+    "licensed": false,
+    "margin_bits": 31.49,
+    "restart_values": [
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK"
+    ],
+    "second": "",
+    "stable": true,
+    "support": 16,
+    "value": "TOK"
+   },
+   "53": {
+    "licensed": false,
+    "margin_bits": 4.13,
+    "restart_values": [
+     "e",
+     "e",
+     "e",
+     "e",
+     "e",
+     "e"
+    ],
+    "second": "#",
+    "stable": true,
+    "support": 2,
+    "value": "e"
+   },
+   "54": {
+    "licensed": false,
+    "margin_bits": 0.93,
+    "restart_values": [
+     "s",
+     "s",
+     "s",
+     "s",
+     "s",
+     "s"
+    ],
+    "second": "#",
+    "stable": true,
+    "support": 1,
+    "value": "s"
+   },
+   "62": {
+    "licensed": false,
+    "margin_bits": 14.95,
+    "restart_values": [
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK"
+    ],
+    "second": "e",
+    "stable": true,
+    "support": 10,
+    "value": "TOK"
+   },
+   "68": {
+    "licensed": false,
+    "margin_bits": 1.45,
+    "restart_values": [
+     "null",
+     "null",
+     "null",
+     "null",
+     "null",
+     "null"
+    ],
+    "second": "#",
+    "stable": true,
+    "support": 2,
+    "value": "null"
+   },
+   "73": {
+    "licensed": false,
+    "margin_bits": 1.14,
+    "restart_values": [
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK"
+    ],
+    "second": "t",
+    "stable": true,
+    "support": 1,
+    "value": "TOK"
+   },
+   "79": {
+    "licensed": false,
+    "margin_bits": 1.19,
+    "restart_values": [
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK"
+    ],
+    "second": "a",
+    "stable": true,
+    "support": 1,
+    "value": "TOK"
+   },
+   "88": {
+    "licensed": false,
+    "margin_bits": 2.49,
+    "restart_values": [
+     "i",
+     "i",
+     "i",
+     "i",
+     "i",
+     "i"
+    ],
+    "second": "l",
+    "stable": true,
+    "support": 1,
+    "value": "i"
+   },
+   "9": {
+    "licensed": false,
+    "margin_bits": 5.95,
+    "restart_values": [
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK"
+    ],
+    "second": "e",
+    "stable": true,
+    "support": 11,
+    "value": "TOK"
+   },
+   "BOX": {
+    "licensed": false,
+    "margin_bits": 316.25,
+    "restart_values": [
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK"
+    ],
+    "second": "",
+    "stable": true,
+    "support": 137,
+    "value": "TOK"
+   },
+   "BOX2": {
+    "licensed": false,
+    "margin_bits": 1.4,
+    "restart_values": [
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK"
+    ],
+    "second": "e",
+    "stable": true,
+    "support": 6,
+    "value": "TOK"
+   },
+   "Bi": {
+    "licensed": false,
+    "margin_bits": 2.43,
+    "restart_values": [
+     "n",
+     "n",
+     "n",
+     "e",
+     "n",
+     "e"
+    ],
+    "second": "#",
+    "stable": false,
+    "support": 1,
+    "value": "n"
+   },
+   "D2": {
+    "licensed": false,
+    "margin_bits": 53.61,
+    "restart_values": [
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK"
+    ],
+    "second": "a",
+    "stable": true,
+    "support": 16,
+    "value": "TOK"
+   },
+   "O": {
+    "licensed": false,
+    "margin_bits": 8.08,
+    "restart_values": [
+     "TOK",
+     "TOK",
+     "i",
+     "TOK",
+     "i",
+     "TOK"
+    ],
+    "second": "#",
+    "stable": false,
+    "support": 1,
+    "value": "i"
+   },
+   "T": {
+    "licensed": false,
+    "margin_bits": 148.87,
+    "restart_values": [
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK"
+    ],
+    "second": "",
+    "stable": true,
+    "support": 53,
+    "value": "TOK"
+   },
+   "U": {
+    "licensed": false,
+    "margin_bits": 1141.02,
+    "restart_values": [
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK"
+    ],
+    "second": "e",
+    "stable": true,
+    "support": 343,
+    "value": "TOK"
+   },
+   "W": {
+    "licensed": false,
+    "margin_bits": 20.05,
+    "restart_values": [
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK"
+    ],
+    "second": "i",
+    "stable": true,
+    "support": 5,
+    "value": "TOK"
+   },
+   "de": {
+    "licensed": false,
+    "margin_bits": 21.85,
+    "restart_values": [
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK"
+    ],
+    "second": "l",
+    "stable": true,
+    "support": 5,
+    "value": "TOK"
+   },
+   "f3": {
+    "licensed": false,
+    "margin_bits": 5.12,
+    "restart_values": [
+     "a",
+     "a",
+     "a",
+     "a",
+     "a",
+     "a"
+    ],
+    "second": "#",
+    "stable": true,
+    "support": 1,
+    "value": "a"
+   },
+   "fe": {
+    "licensed": false,
+    "margin_bits": 6.88,
+    "restart_values": [
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK"
+    ],
+    "second": "r",
+    "stable": true,
+    "support": 6,
+    "value": "TOK"
+   },
+   "hash": {
+    "licensed": false,
+    "margin_bits": 1.65,
+    "restart_values": [
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK"
+    ],
+    "second": "c",
+    "stable": true,
+    "support": 1,
+    "value": "TOK"
+   },
+   "me": {
+    "licensed": false,
+    "margin_bits": 4.38,
+    "restart_values": [
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK"
+    ],
+    "second": "e",
+    "stable": true,
+    "support": 5,
+    "value": "TOK"
+   },
+   "p": {
+    "licensed": false,
+    "margin_bits": 51.92,
+    "restart_values": [
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK"
+    ],
+    "second": "",
+    "stable": true,
+    "support": 18,
+    "value": "TOK"
+   },
+   "p9": {
+    "licensed": false,
+    "margin_bits": 9.01,
+    "restart_values": [
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK"
+    ],
+    "second": "u",
+    "stable": true,
+    "support": 2,
+    "value": "TOK"
+   },
+   "s1": {
+    "licensed": false,
+    "margin_bits": 6.86,
+    "restart_values": [
+     "e",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK"
+    ],
+    "second": "n",
+    "stable": false,
+    "support": 2,
+    "value": "TOK"
+   },
+   "star": {
+    "licensed": false,
+    "margin_bits": 3.74,
+    "restart_values": [
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK"
+    ],
+    "second": "",
+    "stable": true,
+    "support": 3,
+    "value": "TOK"
+   },
+   "u": {
+    "licensed": false,
+    "margin_bits": 5.6,
+    "restart_values": [
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK"
+    ],
+    "second": "e",
+    "stable": true,
+    "support": 1,
+    "value": "TOK"
+   },
+   "v": {
+    "licensed": false,
+    "margin_bits": 66.66,
+    "restart_values": [
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK"
+    ],
+    "second": "e",
+    "stable": true,
+    "support": 37,
+    "value": "TOK"
+   },
+   "w": {
+    "licensed": false,
+    "margin_bits": 116.38,
+    "restart_values": [
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK"
+    ],
+    "second": "",
+    "stable": true,
+    "support": 83,
+    "value": "TOK"
+   },
+   "y": {
+    "licensed": false,
+    "margin_bits": 145.27,
+    "restart_values": [
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK"
+    ],
+    "second": "",
+    "stable": true,
+    "support": 41,
+    "value": "TOK"
+   },
+   "z": {
+    "licensed": false,
+    "margin_bits": 792.74,
+    "restart_values": [
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK",
+     "TOK"
+    ],
+    "second": "",
+    "stable": true,
+    "support": 296,
+    "value": "TOK"
+   }
+  },
+  "tok_signs": 34,
+  "tok_token_share": 0.9842767295597484,
+  "u_signs": 48
+ },
+ "u_acc_mean": 0.6052300412765529,
+ "u_acc_mean_repl": 0.6071173869633433
+}

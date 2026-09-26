@@ -412,3 +412,71 @@ oracle per-code majority). Every restart stopped at the 6-iteration cap, unconve
 among the wrong ones (control seed 3: sign `4`, 106 tokens, wrong at a 161-bit margin) -- a search-depth fault,
 so one change was declared before re-running: iterate to convergence (cap 30), 10 control restarts, and the
 gate must also hold on three fresh seeds (4-6) as a replication, so the retry cannot be a seed-shop.
+
+Correction to the round-1 diagnosis above (found after round 2): the "6 of 6 iterations, unconverged" reading was
+a bug in the stopping test, not evidence about the search. `search()` compares the best value with `uval[s]`
+after the trial loop has left it on the last value tried, so the test almost never reads zero and every run goes
+the full ITERS (commented in the script, behaviour left as is so the JSON reproduces). Round 2 changed only
+seed 1 (U 0.619 -> 0.643); seeds 2 and 3 are identical to round 1.
+
+**Round 2 (30 iterations, 10 restarts; `mu_beam_results.json`), control (A):**
+
+| seed | U-sign acc (signs) | U token-wtd | M acc | M freq baseline | M oracle-majority | bits/char before -> after |
+|---|---|---|---|---|---|---|
+| 1 | 0.643 (42) | 0.628 | 0.838 | 0.468 | 0.668 | -3.693 -> -3.110 |
+| 2 | 0.568 (44) | 0.635 | 0.797 | 0.489 | 0.646 | -4.017 -> -3.230 |
+| 3 | 0.605 (43) | 0.811 | 0.853 | 0.463 | 0.642 | -3.961 -> -2.957 |
+| 4 (repl.) | 0.667 (42) | 0.780 | 0.855 | 0.472 | 0.653 | -3.663 -> -2.929 |
+| 5 (repl.) | 0.447 (38) | 0.762 | 0.807 | 0.469 | 0.674 | -3.765 -> -3.123 |
+| 6 (repl.) | 0.707 (41) | 0.816 | 0.836 | 0.432 | 0.689 | -3.607 -> -2.926 |
+
+Gate: **met, only just** on U (0.605 on seeds 1-3, 0.607 on 4-6, one seed at 0.447). Met clearly on M
+(+35.6 / +37.5 points over the frequency baseline, and +17 to +19 over the oracle per-code majority, which is
+the stronger baseline). Largest margin of any WRONG U sign in control (A): 264.9 bits (seed 4).
+Control (A) also shows how `TOK` behaves on clean text with a known answer: the search wrongly sends
+true-letter signs to `TOK` (18-37% of U tokens across the 6 seeds; recorded per seed in the JSON as
+`wrong_tok_signs`, `wrong_tok_token_share`): 11-17 signs.
+
+**Control (B), shuffled within lines (3 seeds):** bits/char -5.914 -> -5.737, -6.078 -> -5.700, -6.003 -> -5.715
+(gain +0.18 to +0.38). On shuffled text the optimiser sends **36-43 of 48 U signs to `TOK`, 99.0-99.5% of U
+tokens** (`tok_signs`, `tok_token_share` in the JSON).
+
+**Target (6 restarts):** bits/char -4.721 -> -4.239 (gain +0.48, between control (B)'s +0.18-0.38 and control
+(A)'s +0.58-0.81, and the end point sits far outside control (A)'s -2.93 to -3.23). **34 of 48 U signs, 98.4% of U tokens, go to
+`TOK`**, including all the frequent ones (`U` 343, `z` 296, `BOX` 137, `4` 106, `w` 83, `T` 53, `y` 41, `v` 37),
+stable across all 6 restarts. That is the shuffled-text pattern of control (B), not the known-answer pattern of
+control (A). Four signs (`U`, `z`, `BOX`, `4`) pass the brief's letter-of-the-rule licence (stable, margin over
+264.9 bits), but their value is `TOK`, the value the optimiser picks on any text whose context does not read. So
+**no U value is licensed and key.tsv / exceptions.tsv are unchanged** (the script's `licensed` flag now excludes
+`TOK`/`null` for this reason). The 14 non-`TOK` U signs (13 letters and `68`->null: `36`->e, `53`->e, `37`->e, `46`->t, `101`/`104`->l,
+`f3`->a, `O`->i, ...) have 1-3 occurrences each and margins of 0.5-8.1 bits (two unstable across restarts), far
+below 264.9.
+
+M per-occurrence choices on the target (S candidates only, in `m_choices` of the JSON, not committed): f c 277 / u
+225; E i 294 / y 59; B i 267 / y 39; 6 n 110 / i 52 / s 45; ff n 58 / o 31; T= m 74 / mm 8; S u 38 / c 8; yy s 27
+/ ss 10. The technique is control-backed on M (control (A) above), but the target's context fits the LM much worse
+than any control (A) text did (-4.24 vs -2.93 to -3.23 bits/char), so the control's 0.80-0.86 accuracy cannot be
+assumed to carry over; these stay candidates, not grades.
+
+**Judge** (fr16, `lettresdecatheri01`, Lettres de Catherine de Médicis t.1, same decade; `mu_beam_reading.txt`, TOK
+rendered as a space, null dropped):
+```
+FAIL language: score=-1.347, null_p99=-1.947, real_p05=-0.839, real_median=-0.779, mode=both, N=12484
+ok   words: cover=0.812, min=0.3, real_text_median_cover=0.946
+FAIL - matignon-mayenne-1586 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+Straight-substitution reading before this step, same judge: -1.371, cover 0.814 (FAIL). Shuffled-order controls
+of the earlier cheap test, same judge: -1.782 / -1.793 / -1.784. The beam moves the score by +0.024, a small
+fraction of the 0.41 target-vs-shuffle margin already on file, and stays FAIL.
+
+**Grade counts after this step (rule 4), unchanged:** H 10,074 / S 0 / M 1,648 / U 1,272 (C 0, I 0).
+
+**Net.** Control-backed technique: the M part works on known-answer text (+17 over oracle majority), the U part
+only just meets its gate. On the target it does not help: the U solution looks like the shuffled-text null, not
+the known-answer control, and the judge moves +0.024. Reading of the result (inference, not tested): most of the
+target's lines do not read as French context even with H fixed (end fit -4.24 bits/char against about -3.0 for
+enciphered held-out prose), so the frequent unkeyed signs (`U`, `z`, `4`, `w`, `T`, `y`) most likely are not single
+letters of this alphabet. They may be nomenclator codes, nulls, word dividers or transcription artefacts, or the H
+key may be wrong on part of the leaves. Suggested next step, not run: rerun the same search only on the 127 'read'
+spans of spans.tsv plus their neighbours, where the context does read, and/or add a per-leaf split (some leaves may
+use a different table). Status stays `partial` (rule 5).
