@@ -23,7 +23,13 @@ whose meaning (from the rest of the letter) matches the chunk aligned to it; the
 alignment TSV records that as a repair.
 
     python3 tools/interlinear_align.py pairs DJVU FIRST LAST OUT_PAIRS.tsv
-    python3 tools/interlinear_align.py align PAIRS.tsv OUT_ALIGN.tsv OUT_KEY.tsv
+    python3 tools/interlinear_align.py align PAIRS.tsv OUT_ALIGN.tsv OUT_KEY.tsv [--floor N] [--clear-consumes]
+
+--floor N: groups below N take at most one letter (default 100, Thurloe; 121 for the
+Nassau 1573-74 tables, where 1-120 are letters). --clear-consumes (26 Sept 2026, AX-COMP):
+a clear word written among the cipher groups takes its own span of the plain text, for a
+separate clear decipherment of a letter that mixes clear words with cipher (the Nassau
+letters), rather than Thurloe's interlinear lines, where the clear word is not repeated above.
 """
 import csv
 import itertools
@@ -130,8 +136,10 @@ def plain_letters(raw):
     return ''.join(letters), starts, ends
 
 
-def align_pair(toks, letters, starts, ends, floor, prior):
-    """DP; returns list of chunks (one per token) or None for tokens left unaligned."""
+def align_pair(toks, letters, starts, ends, floor, prior, clear_words=None):
+    """DP; returns list of chunks (one per token) or None for tokens left unaligned.
+    clear_words (--clear-consumes): per token, the letters of a clear word written in the
+    cipher line, which then takes its own span of the plain line instead of none."""
     N, L = len(toks), len(letters)
     NEG = -1e9
     best = [[NEG] * (L + 1) for _ in range(N + 1)]
@@ -153,7 +161,10 @@ def align_pair(toks, letters, starts, ends, floor, prior):
             if i == N:
                 continue
             kind, val = toks[i]
-            if kind == 'clear':
+            cw = clear_words[i] if clear_words else ''
+            if kind == 'clear' and cw:
+                lens = sorted({0, max(1, len(cw) - 1), len(cw), len(cw) + 1})
+            elif kind == 'clear':
                 lens = [0]
             elif kind == 'num' and val < floor:
                 lens = [0, 1]
@@ -164,7 +175,11 @@ def align_pair(toks, letters, starts, ends, floor, prior):
                     break
                 sc = -0.5
                 if ln == 0:
-                    sc = 0.0 if kind == 'clear' else -3.0
+                    sc = (-1.0 - len(cw) if cw else 0.0) if kind == 'clear' else -3.0
+                elif kind == 'clear':
+                    ch = fold(letters[j:j + ln])
+                    same = sum(a == b for a, b in zip(ch, fold(cw)))
+                    sc = 1.0 * same - 1.0 * (max(ln, len(cw)) - same)
                 else:
                     ch = letters[j:j + ln]
                     sc += 1.0 if starts[j] else 0.0
@@ -199,20 +214,23 @@ def load_pairs(path):
         return list(csv.DictReader(f, delimiter='\t'))
 
 
-def run_align(pairs, floor=100, iters=6):
+def run_align(pairs, floor=100, iters=6, clear_consumes=False):
     prepared = []
     for p in pairs:
         raw = p['cipher_raw'].split()
         toks = [classify_token(t) for t in raw]
         letters, starts, ends = plain_letters(p['plain_raw'])
-        prepared.append((p, raw, toks, letters, starts, ends))
+        cws = None
+        if clear_consumes:
+            cws = [plain_letters(t)[0] if k == 'clear' else '' for t, (k, _) in zip(raw, toks)]
+        prepared.append((p, raw, toks, letters, starts, ends, cws))
     prior = {}
     for _ in range(iters):
         counts = defaultdict(Counter)
         shown = defaultdict(Counter)
         results = []
-        for p, raw, toks, letters, starts, ends in prepared:
-            chunks = align_pair(toks, letters, starts, ends, floor, prior)
+        for p, raw, toks, letters, starts, ends, cws in prepared:
+            chunks = align_pair(toks, letters, starts, ends, floor, prior, cws)
             results.append(chunks)
             for (kind, val), c in zip(toks, chunks):
                 if kind == 'num' and c and c[1] > c[0]:
@@ -236,7 +254,7 @@ def top_of(cnt):
 
 def token_rows(prepared, results, counts, shown):
     rows = []
-    for (p, raw, toks, letters, starts, ends), chunks in zip(prepared, results):
+    for (p, raw, toks, letters, starts, ends, _cws), chunks in zip(prepared, results):
         for k, ((kind, val), c) in enumerate(zip(toks, chunks)):
             chunk = letters[c[0]:c[1]] if c else ''
             fchunk = fold(chunk)
@@ -271,8 +289,8 @@ def token_rows(prepared, results, counts, shown):
     return rows
 
 
-def cmd_align(pairs_path, out_align, out_key, floor=100):
-    prepared, results, counts, shown = run_align(load_pairs(pairs_path), floor)
+def cmd_align(pairs_path, out_align, out_key, floor=100, clear_consumes=False):
+    prepared, results, counts, shown = run_align(load_pairs(pairs_path), floor, clear_consumes=clear_consumes)
     rows = token_rows(prepared, results, counts, shown)
     with open(out_align, 'w', encoding='utf-8', newline='') as f:
         w = csv.writer(f, delimiter='\t', lineterminator='\n')
@@ -296,6 +314,13 @@ if __name__ == '__main__':
     if a and a[0] == 'pairs':
         cmd_pairs(a[1], int(a[2]), int(a[3]), a[4])
     elif a and a[0] == 'align':
-        cmd_align(a[1], a[2], a[3])
+        floor = 100
+        if '--floor' in a:
+            k = a.index('--floor')
+            floor = int(a[k + 1])
+            del a[k:k + 2]
+        cc = '--clear-consumes' in a
+        a = [x for x in a if x != '--clear-consumes']
+        cmd_align(a[1], a[2], a[3], floor, cc)
     else:
         sys.exit(__doc__)
