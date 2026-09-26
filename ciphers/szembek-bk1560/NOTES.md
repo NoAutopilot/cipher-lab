@@ -219,3 +219,50 @@ Two 20-minute zoom checks (line 6 and line 8, native-pixel crops) confirmed digi
 cases; both are noted inline above. Self-check numbers above are reproducible from `leaf66/groups.tsv` with the
 scratchpad script `consistency_check.py` (not committed, scratchpad-only per the brief; re-derivable from the
 groups.tsv logic described here: recurring-code same-gloss rate vs. 1000-shuffle control).
+
+## Leaf 67 transcription (bSZL67, 26 Sept 2026)
+
+Native image: `067_0001.djvu` -> `ddjvu -format=tiff` -> PIL PNG, 3314x4571 px (kept in scratchpad only, not
+committed). Crop step: row ink-density profile (numpy, threshold <180, smoothed, scipy.signal.find_peaks
+distance=100 prominence=200) found 21 line centres (tools/iiif_lines.py's own default distance/prominence
+under-merged two lines, e.g. it read only 19 bands and split "50 17 20. Pergenbeio" from "De 41 14..." at the
+wrong point -- widened by hand per Usage note: fixed top margin 135px / bottom margin 55px per centre, PIL crop,
+not the tool's adaptive band split, because two adjacent line gaps on this leaf (109px, 116px) are much smaller
+than the modal 190px pitch and the tool's midpoint-band scheme cut through gloss text at those two spots).
+21 lines, 45 image files (21 lines x up to 2 width-segments + 1 debug + manifest) in `leaf67/crops/`
+(`f67_L01..L21_s1/s2.jpg`), folder well under 30 MB. Debug overlay `f67_lines_debug.jpg` (red = centre, blue =
+crop top/bottom). Transcribed by this worker directly from the crops (no subagent).
+
+`pairs.tsv` (21 rows) and `groups.tsv` (195 token rows, one row per cipher_raw token) written per the brief's
+columns. Grade C throughout (gloss read from the manuscript's own period annotation, not cryptanalysis); a
+handful of individual clear-text words are low-confidence (cursive ambiguity: "ereti" L1, "instissimus" L10,
+"n?"/"e?"/"a?" single-glyph marks L19/L21 that may be ink artifacts rather than letters) -- flagged
+`confidence=low` in groups.tsv, not resolved by guessing further.
+
+Counts: 120 code tokens, 19 distinct code values (12-51, no 3-digit cross-reference numbers on this leaf), 75
+clear-text tokens. 18 of 120 code tokens (15.0%) carry a `gloss_above` value under this worker's convention of
+attaching the full gloss word/phrase to the FIRST code token of the run it visually sits above (a gloss word
+routinely spans several codes at once -- e.g. "Principi" over an 8-code run, "delationes" over a 7-code run --
+so most non-initial tokens in a run are left blank rather than guessing a per-token split).
+
+Self-check (step 4, both numbers): of the 19 distinct code values, 6 recur with >=2 glossed occurrences within
+this leaf (41, 20, 13, 42 among them). Real same-code -> same-gloss-word match rate (occurrences matching that
+code's most common gloss) = **0.429**; 1000-seed-42 shuffle control (gloss_above values permuted across all 18
+glossed occurrences, same statistic) = **0.429 mean, 0.429 95th pct** -- real and shuffled are identical. This is
+not a working control: nearly every glossed value is a distinct running-prose word used once (code 41 alone
+carries three different glosses across its three glossed occurrences here -- "Pergenbeio", "Pergenbeii", "Sityk"),
+so there are almost no cases where the SAME gloss word recurs on the SAME code for the shuffle to disrupt; per
+CLAUDE.md rule 3's control-must-be-able-to-differ paragraph, a same-code/same-gloss statistic on a leaf this
+short, under a first-token-of-run convention, is a non-test here, not a negative -- N is too small (18 glossed
+occurrences, 6 recurring codes) and the labels are mostly unique. A leaf- or letter-pooled check (all three
+leaves' gloss vocabulary together) would have far more repeated words (Pergenbeio/Pergenbeii already recur
+across this leaf alone) and is the right place to run this control, not this one leaf.
+
+Word-length vs. code-count is mixed, not one clean pattern (3 examples asked for, 5 given): aula (4 letters) <- 2
+codes; defuncto (8) <- 4; falsa (5) <- 5; comperta (8) <- 4; Principi (8) <- 8. Some runs match letter-count
+1:1 (falsa, Principi), others look closer to 2 letters/code (aula, defuncto, comperta) -- not a single consistent
+per-letter or per-syllable rule on this leaf's evidence alone; leave the system question to a merge pass across
+all three leaves, per the spec's own fallback note.
+
+Files: `leaf67/pairs.tsv`, `leaf67/groups.tsv`, `leaf67/crops/*` (45 files incl. debug + manifest). No network
+(image already on disk from bSZEM's fetch); 0 requests to any host this job.
