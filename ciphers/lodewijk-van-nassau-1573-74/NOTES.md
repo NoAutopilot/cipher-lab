@@ -1,5 +1,7 @@
 partial
 
+5797 check-solved: Groen IV CDXLIV pp.217-226 read in full from dbnl (csWV2, 24 Sept 2026, groen/groen_IV_CDXLIV.txt); Groen's note says several passages could not be deciphered; no later print located (csWV2 search log).
+
 # Lodewijk (Louis) van Nassau to Willem van Oranje, four cipher letters, 1573-1574
 
 QUEUE row: NB1 (`QUEUE.md`, "Dutch and Belgian archives (LANE N scout of 24 September 2026)").
