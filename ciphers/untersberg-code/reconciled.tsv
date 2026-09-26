@@ -1,0 +1,50 @@
+line_number	token_index	token_text	confidence	settled_from	note
+1	1	S	high	agree	Capital S with decorative flourish/loop at top.
+1	2	9	high	image	Both passes flagged low/medium; direct zoom (line1.jpg) shows a closed loop with a curling hook tail, matching the numeral-9 shape used elsewhere in the leaf (pass_b7's reading), not a plain cursive g.
+1	3	9	high	image	Identical glyph to token 2, same settlement.
+1	4	occo	high	agree
+1	5	X	high	agree
+2	1	Salr°nro[symA]	medium	image	Zoom (line2_word1.jpg) confirms a small raised loop over the first "r" (r°), matching pass_b7's segmentation, not blind_pass's flat "Salrnrop". Final glyph confirmed as symA (see line2_symA.jpg) -- same recurring ligature as line4/line6, not a literal "p".
+2	2	5	high	image	Numeral 5, hook-plus-curl shape matching other 5s on the leaf, not letter "s".
+2	3	a[symB]5	medium	image	Both passes independently flag this middle glyph as anomalous (blind_pass "k", pass_b7 "symB": thin ascender joined to a thick curved foot). Keeping it as a second, distinct flagged glyph (symB) rather than guessing a letter; out of this job's scope (brief names only symA).
+2	4	l	medium	agree
+2	5	h	low	uncertain	Not resolved from the image at the available resolution: candidates d (blind_pass) and h (pass_b7) both remain plausible; recorded as pass_b7's "h" with the alternative "d" noted, M grade only.
+3	1	P	medium	image	Zoom (line3_cap.jpg) shows a single bowl at top with one long curling descender tail -- matches capital P (pass_b7), not the two-bump B blind_pass read.
+3	2	G	medium	agree
+3	3	m	high	agree
+3	4	G	medium	agree
+3	5	a	high	agree
+3	6	l	high	agree
+3	7	5	medium	agree
+3	8	g	high	image	Zoom (line3_5g.jpg) shows a clear extra loop-with-descender "g" between the "5" and "o" that pass_b7's tokenization dropped; blind_pass's token restored.
+3	9	o	high	agree
+3	10	l	high	agree
+3	11	m5	high	agree
+3	12	r	high	agree
+3	13	u	high	agree
+3	14	al	high	agree
+4	1	m	high	agree
+4	2	5ig	medium	image	Zoom (line4a.jpg) shows a numeral-5 hook shape (not letter s) run into i-g with no internal periods; pass_b7's reading.
+4	3	r	high	agree
+4	4	l	high	agree
+4	5	[symA]	medium	image	Direct three-way crop comparison (compare_glyphs2.jpg) of this glyph against line4 token7's confirmed symA and line4 token11's confirmed plain H: this glyph shares symA's hook-top-left + serif vertical + bottom loop construction (not H's crossed double-stroke), differing from token7 only in a shorter descender tail (stroke variation). Corrects blind_pass's "H".
+4	6	e	medium	agree
+4	7	[symA]	medium	image	Confirmed symA: hook top-left, vertical stroke with top serif, small loop at the join, long descender below baseline (line4_glyph7.jpg) -- same shape as line2 token1's final glyph.
+4	8	55	high	agree
+4	9	a	high	agree
+4	10	ll	high	image	Zoom (line4b.jpg) shows two separate ascender strokes each with a small top hook/serif -- matches blind_pass's "ll", not pass_b7's rounded double-hump "u".
+4	11	H	low	agree	Plain two-stroke capital H with a crossbar near the top (line4_mid.jpg) -- visually distinct from symA (no hook, no loop, no descender); both passes agree here.
+4	12	l	high	agree
+4	13	Xmissu	high	agree
+5	1	ariu	high	agree
+5	2	a	high	agree
+5	3	o	high	agree
+5	4	uftgcxs	medium	agree
+5	5	l	high	agree
+5	6	ih	low	agree
+5	7	allomVraco	high	image	Zoom (line5.jpg) shows a larger, looped capital V stroke, matching blind_pass's capitalization.
+6	1	nicrlr	medium	uncertain	Zoom (line6_w1.jpg) shows an n/u-like double-hump glyph carrying a raised loop, then two r-with-superscript-loop (r°) shapes around l -- consistent with pass_b7's general shape count but the first letter (n vs u) and internal segmentation are not fully resolved at this resolution; blind_pass's "ueicrlr" alternative noted, M grade only.
+6	2	[symA][symA-rev]mi	medium	image	Close zoom (line6_w2.jpg) shows two ligatures of the same general construction placed back to back, the second mirrored, directly followed by m and i -- not "prmi" (blind_pass); confirms pass_b7's reading and the symA-rev variant.
+6	3	lo[symA]mi	medium	image	Close zoom (line6_w3.jpg) shows l, o, then the same symA ligature (with its characteristic long descender loop) in the position blind_pass read as "q", then a letter carrying an overline resembling m, then i. blind_pass's "loqui" (plausible Latin "wants to speak") is very likely a content-biased misreading of this ligature as q; not adopted.
+6	4	vmult	medium	uncertain	Close zoom (line6_vult.jpg) shows v followed by a run of minims before l-t; the exact minim count (m+u vs u alone) is not fully resolved at this resolution -- pass_b7's "vmult" kept with blind_pass's "vult" noted as the alternative, M grade only.
+6	5	lg	high	agree

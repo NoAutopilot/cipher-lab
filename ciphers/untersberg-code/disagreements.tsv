@@ -1,0 +1,18 @@
+line	col	A	B	flagged	crop	settled	grade	basis
+1	2	g	9			9	H	image (line1.jpg): closed loop + curling hook tail, matches numeral 9 elsewhere on leaf
+1	3	g	9			9	H	same as col2
+2	1	Salrnrop	Salr°nro[symA]			Salr°nro[symA]	H	image (line2_word1.jpg, line2_symA.jpg): superscript loop on first r confirmed; final glyph is symA, not literal p
+2	2	s	5			5	H	image (line2.jpg): numeral-5 hook shape
+2	3	ak5	a[symB]5	A		a[symB]5	M	both passes flag the middle glyph as anomalous; kept as distinct symB, not resolved to a letter (out of this job's scope)
+2	5	d	h	AB		h (alt: d)	M	not resolved at available resolution; both passes independently low-confidence
+3	1	B	P			P	H	image (line3_cap.jpg): single bowl + one long descender tail, not a two-bump B
+3	8	g	-			g	H	image (line3_5g.jpg): loop-with-descender g clearly present between 5 and o; pass_b7 dropped this token
+4	2	sig	5ig			5ig	H	image (line4a.jpg): numeral-5 hook, not letter s
+4	5	H	[symA]	A		[symA]	H	three-way comparison (compare_glyphs2.jpg) against this line's confirmed symA (tok7) and confirmed plain H (tok11): matches symA's hook+serif+loop construction, not H's crossed double-stroke
+4	7	p	[symA]			[symA]	H	image (line4_glyph7.jpg): hook top-left, vertical stroke with serif, bottom loop, long descender -- same as line2 tok1's final glyph
+4	10	ll	u			ll	H	image (line4b.jpg): two separate ascenders each with a top hook, not a rounded double-hump u
+5	7	allomVraco	allomvraco			allomVraco	H	image (line5.jpg): larger looped capital V stroke
+6	1	ueicrlr	nicrlr	A		nicrlr (alt: ueicrlr)	M	image (line6_w1.jpg) shows the general shape but first-letter (n/u) and internal segmentation not fully resolved
+6	2	prmi	[symA][symA-rev]mi	A		[symA][symA-rev]mi	H	image (line6_w2.jpg): two ligatures of the same construction back to back, second mirrored, then m,i -- not p,r
+6	3	loqui	lo[symA]mi			lo[symA]mi	H	image (line6_w3.jpg): l,o, then the same symA ligature (with its long descender loop) where blind_pass read q, then a macron-marked letter, then i -- "loqui" is a content-biased misreading
+6	4	vult	vmult			vmult (alt: vult)	M	image (line6_vult.jpg) shows v + a run of minims before l,t; exact minim count not fully resolved		

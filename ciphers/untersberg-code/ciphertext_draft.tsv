@@ -1,0 +1,50 @@
+line	position	sign	confidence	alt	why
+1	1	S	H		agree
+1	2	g	M	B:9	differ
+1	3	g	M	B:9	differ
+1	4	occo	H		agree
+1	5	X	H		agree
+2	1	Salrnrop	M	B:Salr°nro[symA]	differ
+2	2	s	M	B:5	differ
+2	3	ak5	M	B:a[symB]5	differ
+2	4	l	H		agree
+2	5	d	M	B:h	differ
+3	1	B	M	B:P	differ
+3	2	G	H		agree
+3	3	m	H		agree
+3	4	G	H		agree
+3	5	a	H		agree
+3	6	l	H		agree
+3	7	5	H		agree
+3	8	g	M	B:-	gap
+3	9	o	H		agree
+3	10	l	H		agree
+3	11	m5	H		agree
+3	12	r	H		agree
+3	13	u	H		agree
+3	14	al	H		agree
+4	1	m	H		agree
+4	2	sig	M	B:5ig	differ
+4	3	r	H		agree
+4	4	l	H		agree
+4	5	H	M	B:[symA]	differ
+4	6	e	H		agree
+4	7	p	M	B:[symA]	differ
+4	8	55	H		agree
+4	9	a	H		agree
+4	10	ll	M	B:u	differ
+4	11	H	M		agree-flagged
+4	12	l	H		agree
+4	13	Xmissu	H		agree
+5	1	ariu	H		agree
+5	2	a	H		agree
+5	3	o	H		agree
+5	4	uftgcxs	M		agree-flagged
+5	5	l	H		agree
+5	6	ih	M		agree-flagged
+5	7	allomVraco	M	B:allomvraco	differ
+6	1	ueicrlr	M	B:nicrlr	differ
+6	2	prmi	M	B:[symA][symA-rev]mi	differ
+6	3	loqui	M	B:lo[symA]mi	differ
+6	4	vult	M	B:vmult	differ
+6	5	lg	H		agree
