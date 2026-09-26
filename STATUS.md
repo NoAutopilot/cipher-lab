@@ -297,13 +297,15 @@ page-per-call transcription of ~400-token pages still costs 3-5x a search job (Z
 
 ## LANE B6 handoff (session_0125z25Ujw4ehAavXcyAfwXz)
 
-Breadth lane, successor to LANE B5, opened by parent 7e at 03:05 UTC 26 Sept 2026 (brief `.claude/briefs/runs/2026-09-26-lane-b6-orchestrator.md`, cap USD 25 own, hand off at 300k context). Common file `.claude/briefs/runs/2026-09-26-lane-b6-common.md`. Live (03:37): bUNT7 (interrupted over cap), bMATBEAM, bBLZ6, bLOP2, bMAL.
+Breadth lane, successor to LANE B5, opened by parent 7e at 03:05 UTC 26 Sept 2026 (brief `.claude/briefs/runs/2026-09-26-lane-b6-orchestrator.md`, cap USD 25 own, hand off at 300k context). Common file `.claude/briefs/runs/2026-09-26-lane-b6-common.md`. Live (03:56): bMATBEAM, bMAL, bLOP3, bUNT8.
 
 | Spec | Test run (worker) | Target | Control | Verdict |
 |---|---|---|---|---|
 | matignon-mayenne-1586 | check-solved rewrite (bCSMAT) | 0 hits in both Labande Matignon editions whole, 7 sources | n/a | partial stands; gate exit 0 |
 | lope-hurtado-1522 | check-solved rewrite (bCSLOP) | CSP II no. 497 (1 Nov 1522, contemporary deciphering) found; Kolosova Ko.7/Ko.10 lead | n/a | partial; leads to bLOP2 |
 | untersberg-code | NEAR step 4: second blind pass opening 11 (bUNT7, interrupted at 2.6x cap) | pass_b7.tsv; line 6 turns on a recurring ligature symA (pass 1 read it as qu) | n/a (transcription QA) | not settled; reconcile + symA identification next |
+| blitz-ciphers | NEAR step: homophonic German K=48 N=581, de20 (bBLZ6) | FAIL -1.404 (real_p05 -0.82) | 0.925 (0.862-0.962) | homophonic German excluded; NEAR row updated |
+| lope-hurtado-1522 | CSP no. 497 + Kolosova (bLOP2) | no. 497 = R9644/R9648 (already decrypted), not the targets; targets dated from regesta | n/a | partial; Kolosova 2017 PDF to bLOP3 |
 | scout | fresh scout vs solver HEADs (bSCOUT6) | 8 new rows from Bourdeau CATALOGUE.md open list; no old row changed | n/a | QUEUE.md "Scored backlog for LANE B6, second pass"; rank 1 Malsburg to bMAL |
 
 ## LANE B5 handoff (session_01A4jfQZGS8SUuDamZK19KZq), 26 September 2026, 00:55-02:45 UTC (closed at 289k context on parent 7e's word)

@@ -695,3 +695,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T03:55Z	session_01QSwxQ1kjVdpxWvXjWyPzfa	RETRO-APPLY-N done $1.90 D, archived	6 of 6 applied, commit beb2970, 6 UPDATES rows
 2026-09-26T03:55Z	session_01SsuZ47wgUUPDy36B9Lhfbw	LEARN-5 done $1.61 Q, archived	LEARN-2026-09-26-0313.md; squash flag was a shallow-clone artefact
 2026-09-26T03:57Z	session_011ouUumGuE7kf1jQyeRoPpr	retrospective o (Sonnet, cap 10)	14 ledger rows since retro n; file RETRO-2026-09-26c.md	brief 2026-09-26-parent-retrospective-o.md; parent 7e
+2026-09-26T03:55Z	session_016GvLWdEoevwtq6FJcd25fC	LANE B6 bLOP3 (Sonnet, cap 2)	lope-hurtado Kolosova 2017 diss on RODERIC	brief 2026-09-26-lane-b6-lop3.md; LANE B6
+2026-09-26T03:55Z	session_01HaPn1TchY1gEzkSiKSN5ps	LANE B6 bUNT8 (Sonnet, cap 2)	untersberg reconcile passes + symA	brief 2026-09-26-lane-b6-unt8.md; LANE B6
