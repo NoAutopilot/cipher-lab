@@ -110,3 +110,70 @@ postscript blocks) rests on the manuscript's visible layout, not on pass A token
 cross-check quoted above (matching pass A's already-seen line-1 tokens against crop L44 to confirm the f.12
 block-start hypothesis) -- that check confirms a boundary, not a token reading, and no pass_b value was copied
 from it. Recorded here in full per rule 7/10's honesty convention rather than left for a QA pass to catch.
+
+## Reconcile + first test (bMAL3, 26 Sept 2026)
+
+Continues bMAL2 (interrupted at 2.2x cap before reconciling; pass A/B of f.3 and f.12 postscripts were
+already committed). Intake gate re-run: `python3 tools/intake_gate_check.py malsburg-hessen-1636` -> `open`
+(line 1), exit 0.
+
+Reformatted pass_a/pass_b TSVs so each line id matches its crop file stem (`hstam_4_h_1411_0003_L24_s1` etc.,
+`transcription/*_r.tsv`, not committed as core artifacts -- regenerable from the pass files and the crop
+manifest), then:
+```
+python3 tools/reconcile_passes.py transcription/pass_a_0003_r.tsv transcription/pass_b_0003_r.tsv --crops crops/0003 --out-dir recon_0003
+  -> lines 8  signs A 193  B 192  agree 174/194 = 89.7%
+python3 tools/reconcile_passes.py transcription/pass_a_0012_r.tsv transcription/pass_b_0012_r.tsv --crops crops/0012 --out-dir recon_0012
+  -> lines 6  signs A 159  B 159  agree 153/159 = 96.2%
+```
+Matches bMAL2's own reported figures exactly.
+
+**Disagreements settled from the image, not guessed.** 26 rows in disagreements.tsv (20 f.3, 6 f.12), all 26
+opened at the named crop (well under the 40-row cap), most re-zoomed 5-14x with PIL crops of the specific
+column to compare digit shapes against unambiguous agreed tokens elsewhere in the same line (the local "4"
+always has a closed triangular top + crossbar, the local "7" an open diagonal, "2" a curl-top, "9" a full
+loop, "6" a hook-tailed loop, "0" a plain circle -- distinguishable once compared side by side at high zoom).
+23 of 26 settled to H by this method (12 to pass A's reading, 11 to pass B's -- neither pass is
+systematically better). One row (f.3 line 6, cols 11-12, `9`/`38` in pass A vs one token `930` in pass B):
+the image shows no dot separating the digits (they are one connected stroke run under an ink blot on the
+middle digit) -- reconciled as a SINGLE 3-digit token `930`, kept at grade M because the blot leaves the
+exact digits uncertain even though the token count is now settled. Two rows (f.3 line 7 `hstam_4_h_1411_0003_L30_s1.jpg`,
+cols 12-13) sit under a genuine water/ink stain; re-examined at 10x, neither pass's reading nor a third one
+could be read with confidence -- left at grade M, marked UNSETTLED in ciphertext.txt's `why` column, per
+CLAUDE.md item 2 (image over transcription; a negative/uncertain reading is conditional on what the image
+actually shows, not filled in to make agreement look better).
+
+`ciphertext.txt` written (line/position/sign/confidence/alt/why, one row per sign, both leaves): N=352 sign
+tokens (351 numeral/mark signs + the one clear word "Und"), K=95 distinct sign values, 27 singletons, 3 rows
+at M (the blotted 930 and the two stained-illegible tokens), the rest H.
+
+**Nomenclator flag.** K=95 at N=352 (K/N=0.27, 27 singletons) is well above the brief's ">~60 distinct with
+many singletons" heuristic -- treated as a nomenclator/code+mark design, not a plain substitution alphabet.
+
+**Spec written**: `specs/malsburg-hessen-1636.json`, judge `language: "de"` (resolves to the de16 Early New
+High German corpus, `tools/judge_plaintext.py`'s only German default) with an explicit era-flag: this is a
+1637 letter, roughly a century later than de16's register and much earlier than the only alternative on file
+(de20, 1880-1940 prose) -- neither corpus is era-matched; de16 used as the closer available option, any
+FAIL/PASS below is a de16-register verdict, not a verdict on 1637 chancery German specifically (CLAUDE.md
+rule 3's pt17/pt18/es17c corpus-era lesson).
+
+**First cheap test.** `tools/freq.py` on the reconciled numeral stream: IC 0.0143 vs flat-over-94-symbols
+0.0106 (about 35% above flat -- a mild, not strong, skew consistent with a real nomenclator's uneven code
+reuse; not comparable to German letter-level prose IC ~0.076, which is computed over a ~26-symbol alphabet,
+not 94). `tools/family_run.py --family masc --seeds 3` (control first, per rule 3): CONTROL mean 0.987
+(0.980-1.000, gate 0.6 met) but masc's control is built over K=22 letters, not the target's real K=95 --
+**not a matched design** for a 95-code nomenclator (this is exactly the brief's own ">~60-K" carve-out; run
+anyway for the record since the brief listed it first). TARGET best score -780.425, judge FAIL: score
+-1.472, below even the shuffled-null bar (null_p99 -1.618) against de16. `--family homophonic --param
+profile=target --seeds 3` (the actually-matched design at K=95): CONTROL mean 0.392 (0.318-0.511) is BELOW
+the 0.6 gate -- **CONTROL BELOW GATE, non-test**, target not run. Both rows in HYPOTHESES.md. The homophonic
+control's own failure to read a synthetic 95-code nomenclator at N=352 says the anneal doesn't have enough
+signal at this length/K to be a fair test either way, matched or not -- not a negative on the target, a
+statement about what N=352 signs can support for this design (rule 3's own headline: a control below its
+own gate licenses nothing).
+
+**Next step (not this job):** pool the fond. Test 2 in the spec -- fetch and reconcile the other eight
+HCPortal records on HStAM 4 h Nr. 1411 (502-509) to get above the sign-pool threshold before a from-scratch
+attack, per CLAUDE.md's pools-first selection rule; a single ~350-sign postscript is short for K=95.
+
+Hosts: none (crops on disk, no fetch this job).

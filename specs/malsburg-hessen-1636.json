@@ -1,0 +1,34 @@
+{
+ "slug": "malsburg-hessen-1636",
+ "name": "Otto von der Malsburg to the Hesse-Kassel government, postscripts of f.3 and f.12",
+ "date": "1637 (f.3 dated 15 Jan 1637, HCPortal 496; f.12 dated 17 Jan 1637, HCPortal 497)",
+ "kind": "cryptanalysis",
+ "language": "de",
+ "source": "Hessisches Staatsarchiv Marburg, HStAM 4 h Nr. 1411 (\"Korrespondenz in Chiffren mit dem Generalkommissar Otto v.d. Malsburg betr. Kriegfuehrung in Muenster und Westfalen\"), ff. 3-33. HCPortal records 496-509 (all \"Not solved\"). See ciphers/malsburg-hessen-1636/NOTES.md for the full intake search log (26 Sept 2026, exit 0).",
+ "alphabet": "two- and three-digit decimal code groups, dot/space separated as transcribed, plus a handful of plaintext German connective words (e.g. 'Und') and non-numeral marks ('#', a cursive letter 'H') left en clair inside the numeral stream",
+ "constraints": {
+  "leaves_transcribed": 2,
+  "leaf_ids": [
+   "hstam_4_h_1411_0003 (f.3, postscript below the signature, HCPortal 496)",
+   "hstam_4_h_1411_0012 (f.12, second postscript block, HCPortal 497)"
+  ],
+  "N_signs": 352,
+  "K_distinct": 95,
+  "singletons": 27,
+  "nomenclator_flag": "K=95 with 27/95 singletons at N=352 (K/N=0.27) is above the ~60-distinct-with-many-singletons heuristic in the brief: treat as a nomenclator/code+mark design, not a plain substitution cipher, until shown otherwise",
+  "reconciliation": "pass A/B blind Sonnet transcriptions of both leaves (bMAL2), reconciled against the crops (bMAL3, 26 Sept 2026): f.3 raw agreement 174/194=89.7%, f.12 153/159=96.2%; disagreements.tsv settled from the image (26/26 rows opened, 23 settled H, 1 merged two-token misread into a single blotted 3-digit token at M, 2 left M/unsettled under a water/ink stain on f.3 line 7 (crop hstam_4_h_1411_0003_L30_s1.jpg, cols 12-13) -- genuinely illegible at 12x zoom, not guessed. f.12 lines L39-L43 (5 of an 11-line block) and a third cipher passage in a different hand/alphabet marked 'cifrat cela' are untranscribed, out of this job's scope (bMAL2 NOTES.md)."
+ },
+ "cheap_tests_in_order": [
+  "1. IC and sign-frequency profile of the reconciled numeral stream vs German plain (de16 corpus) and vs matched masc/homophonic controls at N=352, K=95 -- this job (bMAL3).",
+  "2. If test 1 does not resolve it: fetch and reconcile the remaining eight HCPortal records (502-509) on this fond to pool the corpus above the 2,000-sign sign-pool threshold (CLAUDE.md's pools-first selection rule) before a from-scratch cryptanalytic attack, since a single ~350-sign postscript is short for a nomenclator with this many distinct codes."
+ ],
+ "judge": {
+  "language": "de",
+  "min_word_cover": 0.5,
+  "era_note": "judge.language='de' resolves through tools/judge_plaintext.py's LANG_CORPORA to tools/data/de16/composed_enhg.txt, i.e. de16 = Early New High German (15th-16th c.). This target is a 1637 chancery/military letter, roughly a century later than de16's register and 250+ years earlier than the only other German corpus on file (de20 = 1880-1940 prose, tools/data/de20). Neither corpus is era-matched; de16 is used as the closer of the two available (CLAUDE.md rule 3's pt17/pt18/es17c corpus-era lesson) and any FAIL/PASS here should be treated as a de16-register verdict, not a verdict on 1637 chancery German specifically, until a 17th-century German corpus is built."
+ },
+ "cheap_test_done": [
+  "1. bMAL3 (26 Sept 2026): tools/freq.py on the reconciled stream (N=351 numeric+letter tokens, 94 distinct after the 930-merge, one 'Und' word excluded from the numeral count) -- IC 0.0143 vs flat-over-94 0.0106 (35% above flat; German letter-level prose IC ~0.076 is not comparable, different alphabet size). tools/family_run.py --family masc --seeds 3: CONTROL mean 0.987 (0.980-1.000, gate met) but masc's control uses K=22 letters, not the target's real K=95 -- not a matched design for a 95-code stream (brief's own >~60-K heuristic), reported for completeness only; TARGET best score -780.425, judge FAIL (score -1.472 < null_p99 -1.618, i.e. below even the shuffled-null bar) against de16. tools/family_run.py --family homophonic --param profile=target --seeds 3 (the matched design for K=95): CONTROL mean 0.392 (0.318-0.511) < 0.6 gate -- CONTROL BELOW GATE, non-test, target not run. Rows in HYPOTHESES.md. Neither run resolves the target; the homophonic control's own inability to read a synthetic nomenclator of this N/K is itself informative (a from-scratch attack needs more signs, see test 2)."
+ ],
+ "ciphertext_file": "ciphers/malsburg-hessen-1636/ciphertext.txt"
+}

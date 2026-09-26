@@ -1,0 +1,195 @@
+line	position	sign	confidence	alt	why
+hstam_4_h_1411_0003_L24_s1	1	79	H		agree
+hstam_4_h_1411_0003_L24_s1	2	74	H		agree
+hstam_4_h_1411_0003_L24_s1	3	36	H		agree
+hstam_4_h_1411_0003_L24_s1	4	7	H		agree
+hstam_4_h_1411_0003_L24_s1	5	22	H		agree
+hstam_4_h_1411_0003_L24_s1	6	73	H		agree
+hstam_4_h_1411_0003_L24_s1	7	N	H		agree
+hstam_4_h_1411_0003_L24_s1	8	52	H		agree
+hstam_4_h_1411_0003_L24_s1	9	Y	H		agree
+hstam_4_h_1411_0003_L24_s1	10	94	H		agree
+hstam_4_h_1411_0003_L24_s1	11	27	H		agree
+hstam_4_h_1411_0003_L24_s1	12	39	H		agree
+hstam_4_h_1411_0003_L24_s1	13	13	H		agree
+hstam_4_h_1411_0003_L24_s1	14	57	H		agree
+hstam_4_h_1411_0003_L24_s1	15	55	H		agree
+hstam_4_h_1411_0003_L24_s1	16	83	H		agree
+hstam_4_h_1411_0003_L24_s1	17	77	H		agree
+hstam_4_h_1411_0003_L25_s1	1	95	H		agree
+hstam_4_h_1411_0003_L25_s1	2	D	H		agree
+hstam_4_h_1411_0003_L25_s1	3	10	H		agree
+hstam_4_h_1411_0003_L25_s1	4	G	M	B:Y	differ
+hstam_4_h_1411_0003_L25_s1	5	42	H		agree
+hstam_4_h_1411_0003_L25_s1	6	92	H		agree
+hstam_4_h_1411_0003_L25_s1	7	35	H		agree
+hstam_4_h_1411_0003_L25_s1	8	44	H		agree
+hstam_4_h_1411_0003_L25_s1	9	11	H		agree
+hstam_4_h_1411_0003_L25_s1	10	43	H		agree
+hstam_4_h_1411_0003_L25_s1	11	58	H		agree
+hstam_4_h_1411_0003_L25_s1	12	93	H		agree
+hstam_4_h_1411_0003_L25_s1	13	63	H		agree
+hstam_4_h_1411_0003_L25_s1	14	88	H		agree
+hstam_4_h_1411_0003_L25_s1	15	63	H		agree
+hstam_4_h_1411_0003_L25_s1	16	43	H		agree
+hstam_4_h_1411_0003_L25_s1	17	79	M	B:49	differ
+hstam_4_h_1411_0003_L25_s1	18	65	H		agree
+hstam_4_h_1411_0003_L25_s1	19	63	H		agree
+hstam_4_h_1411_0003_L26_s1	1	55	H		agree
+hstam_4_h_1411_0003_L26_s1	2	83	H		agree
+hstam_4_h_1411_0003_L26_s1	3	29	H		agree
+hstam_4_h_1411_0003_L26_s1	4	84	H		agree
+hstam_4_h_1411_0003_L26_s1	5	91	H		agree
+hstam_4_h_1411_0003_L26_s1	6	61	H		agree
+hstam_4_h_1411_0003_L26_s1	7	18	H		agree
+hstam_4_h_1411_0003_L26_s1	8	48	H		agree
+hstam_4_h_1411_0003_L26_s1	9	29	M	B:27	differ
+hstam_4_h_1411_0003_L26_s1	10	16	H		agree
+hstam_4_h_1411_0003_L26_s1	11	22	H		agree
+hstam_4_h_1411_0003_L26_s1	12	27	H		agree
+hstam_4_h_1411_0003_L26_s1	13	84	H		agree
+hstam_4_h_1411_0003_L26_s1	14	97	H		agree
+hstam_4_h_1411_0003_L26_s1	15	50	H		agree
+hstam_4_h_1411_0003_L26_s1	16	97	H		agree
+hstam_4_h_1411_0003_L26_s1	17	95	H		agree
+hstam_4_h_1411_0003_L26_s1	18	27	H		agree
+hstam_4_h_1411_0003_L26_s1	19	79	H		agree
+hstam_4_h_1411_0003_L26_s1	20	44	M	B:11	differ
+hstam_4_h_1411_0003_L26_s1	21	38	M	B:58	differ
+hstam_4_h_1411_0003_L26_s1	22	41	M	B:21	differ
+hstam_4_h_1411_0003_L26_s1	23	30	H		agree
+hstam_4_h_1411_0003_L26_s1	24	70	H		agree
+hstam_4_h_1411_0003_L26_s1	25	19	H		agree
+hstam_4_h_1411_0003_L26_s1	26	60	H		agree
+hstam_4_h_1411_0003_L26_s1	27	87	H		agree
+hstam_4_h_1411_0003_L26_s1	28	94	H		agree
+hstam_4_h_1411_0003_L26_s1	29	16	H		agree
+hstam_4_h_1411_0003_L26_s1	30	31	H		agree
+hstam_4_h_1411_0003_L27_s1	1	Und	M	B:-	gap
+hstam_4_h_1411_0003_L27_s1	2	77	H		agree
+hstam_4_h_1411_0003_L27_s1	3	39	H		agree
+hstam_4_h_1411_0003_L27_s1	4	99	H		agree
+hstam_4_h_1411_0003_L27_s1	5	58	H		agree
+hstam_4_h_1411_0003_L27_s1	6	71	H		agree
+hstam_4_h_1411_0003_L27_s1	7	42	H		agree
+hstam_4_h_1411_0003_L27_s1	8	80	H		agree
+hstam_4_h_1411_0003_L27_s1	9	35	H		agree
+hstam_4_h_1411_0003_L27_s1	10	44	H		agree
+hstam_4_h_1411_0003_L27_s1	11	32	H		agree
+hstam_4_h_1411_0003_L27_s1	12	71	H		agree
+hstam_4_h_1411_0003_L27_s1	13	19	H		agree
+hstam_4_h_1411_0003_L27_s1	14	94	H		agree
+hstam_4_h_1411_0003_L27_s1	15	58	H		agree
+hstam_4_h_1411_0003_L27_s1	16	56	H		agree
+hstam_4_h_1411_0003_L27_s1	17	24	H		agree
+hstam_4_h_1411_0003_L27_s1	18	35	H		agree
+hstam_4_h_1411_0003_L27_s1	19	65	H		agree
+hstam_4_h_1411_0003_L27_s1	20	#	M	B:H	differ
+hstam_4_h_1411_0003_L27_s1	21	29	H		agree
+hstam_4_h_1411_0003_L27_s1	22	16	H		agree
+hstam_4_h_1411_0003_L27_s1	23	74	H		agree
+hstam_4_h_1411_0003_L27_s1	24	39	H		agree
+hstam_4_h_1411_0003_L27_s1	25	83	H		agree
+hstam_4_h_1411_0003_L27_s1	26	26	H		agree
+hstam_4_h_1411_0003_L27_s1	27	79	H		agree
+hstam_4_h_1411_0003_L27_s1	28	44	H		agree
+hstam_4_h_1411_0003_L28_s1	1	83	H		agree
+hstam_4_h_1411_0003_L28_s1	2	70	M	B:90	differ
+hstam_4_h_1411_0003_L28_s1	3	X	H		agree
+hstam_4_h_1411_0003_L28_s1	4	128	H		agree
+hstam_4_h_1411_0003_L28_s1	5	74	H		agree
+hstam_4_h_1411_0003_L28_s1	6	73	H		agree
+hstam_4_h_1411_0003_L28_s1	7	H	H		agree
+hstam_4_h_1411_0003_L28_s1	8	66	H		agree
+hstam_4_h_1411_0003_L28_s1	9	38	H		agree
+hstam_4_h_1411_0003_L28_s1	10	36	H		agree
+hstam_4_h_1411_0003_L28_s1	11	94	H		agree
+hstam_4_h_1411_0003_L28_s1	12	11	H		agree
+hstam_4_h_1411_0003_L28_s1	13	30	H		agree
+hstam_4_h_1411_0003_L28_s1	14	84	H		agree
+hstam_4_h_1411_0003_L28_s1	15	176	H		agree
+hstam_4_h_1411_0003_L28_s1	16	37	H		agree
+hstam_4_h_1411_0003_L28_s1	17	66	H		agree
+hstam_4_h_1411_0003_L28_s1	18	97	H		agree
+hstam_4_h_1411_0003_L28_s1	19	94	H		agree
+hstam_4_h_1411_0003_L28_s1	20	73	H		agree
+hstam_4_h_1411_0003_L28_s1	21	22	H		agree
+hstam_4_h_1411_0003_L28_s1	22	79	H		agree
+hstam_4_h_1411_0003_L28_s1	23	140	H		agree
+hstam_4_h_1411_0003_L28_s1	24	31	H		agree
+hstam_4_h_1411_0003_L28_s1	25	11	H		agree
+hstam_4_h_1411_0003_L28_s1	26	26	H		agree
+hstam_4_h_1411_0003_L29_s1	1	39	H		agree
+hstam_4_h_1411_0003_L29_s1	2	31	H		agree
+hstam_4_h_1411_0003_L29_s1	3	50	H		agree
+hstam_4_h_1411_0003_L29_s1	4	70	H		agree
+hstam_4_h_1411_0003_L29_s1	5	22	H		agree
+hstam_4_h_1411_0003_L29_s1	6	54	H		agree
+hstam_4_h_1411_0003_L29_s1	7	16	H		agree
+hstam_4_h_1411_0003_L29_s1	8	22	H		agree
+hstam_4_h_1411_0003_L29_s1	9	90	H		agree
+hstam_4_h_1411_0003_L29_s1	10	71	H		agree
+hstam_4_h_1411_0003_L29_s1	11	9	M	B:-	gap
+hstam_4_h_1411_0003_L29_s1	12	38	M	B:930	differ
+hstam_4_h_1411_0003_L29_s1	13	55	H		agree
+hstam_4_h_1411_0003_L29_s1	14	19	H		agree
+hstam_4_h_1411_0003_L29_s1	15	26	H		agree
+hstam_4_h_1411_0003_L29_s1	16	11	H		agree
+hstam_4_h_1411_0003_L29_s1	17	30	M	B:36	differ
+hstam_4_h_1411_0003_L29_s1	18	79	H		agree
+hstam_4_h_1411_0003_L29_s1	19	31	H		agree
+hstam_4_h_1411_0003_L29_s1	20	S	H		agree
+hstam_4_h_1411_0003_L29_s1	21	23	H		agree
+hstam_4_h_1411_0003_L29_s1	22	32	H		agree
+hstam_4_h_1411_0003_L29_s1	23	36	H		agree
+hstam_4_h_1411_0003_L29_s1	24	74	H		agree
+hstam_4_h_1411_0003_L29_s1	25	79	H		agree
+hstam_4_h_1411_0003_L29_s1	26	56	H		agree
+hstam_4_h_1411_0003_L29_s1	27	36	H		agree
+hstam_4_h_1411_0003_L29_s1	28	26	H		agree
+hstam_4_h_1411_0003_L30_s1	1	40	H		agree
+hstam_4_h_1411_0003_L30_s1	2	11	H		agree
+hstam_4_h_1411_0003_L30_s1	3	54	H		agree
+hstam_4_h_1411_0003_L30_s1	4	84	H		agree
+hstam_4_h_1411_0003_L30_s1	5	57	H		agree
+hstam_4_h_1411_0003_L30_s1	6	52	H		agree
+hstam_4_h_1411_0003_L30_s1	7	71	H		agree
+hstam_4_h_1411_0003_L30_s1	8	54	H		agree
+hstam_4_h_1411_0003_L30_s1	9	O	H		agree
+hstam_4_h_1411_0003_L30_s1	10	48	H		agree
+hstam_4_h_1411_0003_L30_s1	11	7	H		agree
+hstam_4_h_1411_0003_L30_s1	12	61	M	A:-	gap
+hstam_4_h_1411_0003_L30_s1	13	16	M	B:26	differ
+hstam_4_h_1411_0003_L30_s1	14	29	H		agree
+hstam_4_h_1411_0003_L30_s1	15	55	H		agree
+hstam_4_h_1411_0003_L30_s1	16	30	H		agree
+hstam_4_h_1411_0003_L30_s1	17	71	M	B:91	differ
+hstam_4_h_1411_0003_L30_s1	18	36	H		agree
+hstam_4_h_1411_0003_L30_s1	19	16	H		agree
+hstam_4_h_1411_0003_L30_s1	20	15	H		agree
+hstam_4_h_1411_0003_L30_s1	21	32	H		agree
+hstam_4_h_1411_0003_L30_s1	22	79	H		agree
+hstam_4_h_1411_0003_L30_s1	23	30	H		agree
+hstam_4_h_1411_0003_L30_s1	24	73	H		agree
+hstam_4_h_1411_0003_L30_s1	25	18	H		agree
+hstam_4_h_1411_0003_L30_s1	26	49	H		agree
+hstam_4_h_1411_0003_L30_s1	27	43	H		agree
+hstam_4_h_1411_0003_L30_s1	28	61	H		agree
+hstam_4_h_1411_0003_L30_s1	29	63	H		agree
+hstam_4_h_1411_0003_L31_s1	1	10	M	B:20	differ
+hstam_4_h_1411_0003_L31_s1	2	84	H		agree
+hstam_4_h_1411_0003_L31_s1	3	L	H		agree
+hstam_4_h_1411_0003_L31_s1	4	70	M	B:90	differ
+hstam_4_h_1411_0003_L31_s1	5	29	H		agree
+hstam_4_h_1411_0003_L31_s1	6	16	M	B:20	differ
+hstam_4_h_1411_0003_L31_s1	7	21	H		agree
+hstam_4_h_1411_0003_L31_s1	8	73	H		agree
+hstam_4_h_1411_0003_L31_s1	9	N	H		agree
+hstam_4_h_1411_0003_L31_s1	10	83	H		agree
+hstam_4_h_1411_0003_L31_s1	11	7	M	B:4	differ
+hstam_4_h_1411_0003_L31_s1	12	26	H		agree
+hstam_4_h_1411_0003_L31_s1	13	30	M	B:36	differ
+hstam_4_h_1411_0003_L31_s1	14	43	H		agree
+hstam_4_h_1411_0003_L31_s1	15	77	H		agree
+hstam_4_h_1411_0003_L31_s1	16	Y	H		agree
+hstam_4_h_1411_0003_L31_s1	17	83	H		agree
