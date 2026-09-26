@@ -781,3 +781,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T08:13Z	session_01FzjVKQ9ezApi6N9ArxmPsx	ARM-DESIGN	done 7.92, ledgered D, archived	
 2026-09-26T08:13Z	session_01Q7vUk2LfBnnua3tK5V7Cem	ARM-A2	done 1.98, ledgered D, archived	
 2026-09-26T08:13Z	session_011LGV2dxSLTnpHb7CwrzoqB	ARM-REC2	done 3.03, ledgered D-, archived	
+2026-09-26T08:14Z	session_018tA6f2KodR8TdqLCewqu5L	ARM-C1 (Fable, cap 15)	nomenclator family build + control	brief 2026-09-26-lane-arm-c1.md; LANE ARM
+2026-09-26T08:14Z	session_019GkVZEhwsixGdZo13Hnvbo	ARM-IMG (Sonnet, cap 4)	M34 roll 14 image locator	brief 2026-09-26-lane-arm-img.md; LANE ARM
