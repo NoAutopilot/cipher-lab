@@ -1,0 +1,9 @@
+{
+  "slug": "tomokiyo-unsolved-list",
+  "asks_row": null,
+  "to": "[the person replies in the existing thread; private address not stored]",
+  "subject": "Re: Raince 1525 and the Cryptiana unsolved list: which items have images online?",
+  "body": "Dear Mr Tomokiyo,\n\nThank you for the Raince 1525 write-up on the Cryptiana blog and for the credit on the Walsingham page; both are recorded in our citations file. One thing I should have said plainly before: one person directs this project and sends every message, and the reading of the images, the searches of the editions and the audits are done by AI agents (Claude models) working in the open repository, every step logged. I say it now so you know how the work is done.\n\nA request, if it is not too much. Your unsolved list is the best curated queue in this field, and our method works only where a letter's images are online and a key route exists (a published or period key, or a deciphered sibling in the same run). Could you tell us which items on the list you know to have images online, and which of those you would most like a second pair of eyes on? We would put those first, run each through our usual controls, and send you the result, positive or negative, before it goes anywhere else. Everything in the repository is now under the MIT licence, so anything useful is yours to reuse.\n\nWith thanks and best regards,\n\n[SIGN-OFF]\nhttps://github.com/NoAutopilot/cipher-lab",
+  "contributions_row_written": true,
+  "notes": "Drafted by the owner-account parent 26 Sept 2026; a question, no reading claimed; awaiting OUT-CHECK-3; the person sends from his own account in the thread."
+}
