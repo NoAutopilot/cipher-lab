@@ -70,3 +70,56 @@ Values >= 100 (237 tokens, 169 distinct): last digit 0 on 92 tokens, 1 on 47, 4 
 worker: a "decade" code -- root words at multiples of ten, units digit an inflection or derived form (0 root,
 1 plural or -ed, ...), with a separate block 1-99 for particles; alternative H-HOM: units digit a homophone
 choice with a writer's preference. Needs a sibling of either design as the control before it licenses anything.
+
+## ARM-A2 transfer sweep (26 Sept 2026, worker ARM-A2)
+
+Family A2 (ladder above): direct transfer of every published sibling table in `tools/data/uscodes-1800/*.tsv`
+to the target, per-table. Script: `ciphers/armstrong-madison-1808/a2/transfer.py` (offline, seeded, reproduces
+these numbers with `python3 ciphers/armstrong-madison-1808/a2/transfer.py`, ~40s). Word-bigram model built
+directly from the en18 corpus (judge spec's own `language: en18`; en18 present, not en). CONTROL A: 200 tables
+per T made by permuting T's own plaintext column within alphabetical (value-sorted) blocks of 20 -- keeps the
+value range and blockwise-alphabetical structure, destroys the value->word pairing, so it CAN score differently
+from the real table (rule 3). CONTROL B (reverse): 200 shuffles of the target's own 404-token order, decoded
+with the real, unpermuted T -- bigram score depends on order, so this control can differ too.
+
+**Positive control caveat (read before the target numbers): a faithful round-trip can still FAIL the judge's
+character-4-gram language check on this code family, so the target FAILs below are not automatically weakened
+by this.** THE=972 is a word-AND-SYLLABLE code (NOTES.md); several of its published entries are bare syllable
+fragments ("ac", "ce", "mp", "t", "g", "s" ...). Re-encoding Bourdeau's own known-plaintext decode
+(`decodes/armstrong_1808-02-15.txt`, the 72%-coherent 15 Feb letter) word-for-word under `THE972_bourdeau.tsv`
+and decoding it straight back through the *same* table recovers 241/276 (87.3%) of its extractable word/
+syllable tokens exactly (the mechanical proof the encode/decode pipeline is correct) -- but concatenating
+syllable fragments without their original within-word joins ("ac ce mp t" for "accompt") reads as salad at the
+letter level, so the judge's language check still FAILs (687 letters, length ok, language score below real_p05).
+This is an artifact of testing a syllable code's *coverage* against a *letter*-level judge on a token stream
+that drops uncovered in-between words, not evidence the transfer pipeline is broken.
+
+| Table (entries loaded) | Positive control: known words covered / round-trip judge | Target coverage: tokens / distinct values | Word-bigram score (pairs) | Percentile vs 200 permuted-table controls | Percentile vs 200 shuffled-order controls | Judge verdict (length, language) |
+|---|---|---|---|---|---|---|
+| WE028.tsv (1600) | no Monroe-side decode file on disk -- skipped (README.md: none published) | 328/369 tokens (88.9%), 183/216 distinct (84.7%) | -4.433 (266 pairs) | 70.0 | 96.0 | FAIL -- length ok (1873 letters), language FAIL (score -1.082, null_p99 -2.199, real_p05 -0.800) |
+| THE972_bourdeau.tsv (580) | 241/276 (87.3%) covered; round-trip judge FAIL (687 letters, length ok, language FAIL) | 108/369 (29.3%), 61/216 (28.2%) | -4.440 (33 pairs) | 23.5 | 40.0 | FAIL -- length FAIL (559<600), language FAIL (score -0.939) |
+| THE972_tomokiyo_clean.tsv (94, README says 95 -- one value collision on load, not chased) | 97/276 (35.1%) covered; round-trip judge FAIL (230 letters, length FAIL) | 14/369 (3.8%), 10/216 (4.6%) | n/a -- no two adjacent covered tokens | n/a | n/a | FAIL -- length FAIL (64 letters); language sub-check itself PASSes (score -0.883 > real_p05 -0.899) but is meaningless at N=64 |
+| THE972_tomokiyo_partial.tsv (227) | 159/276 (57.6%) covered; round-trip judge FAIL (381 letters, length FAIL) | 50/369 (13.6%), 29/216 (13.4%) | -4.442 (7 pairs) | 58.5 | 65.8 | FAIL -- length FAIL (204<600), language FAIL (score -1.108) |
+
+**Reading the percentiles.** WE028's target decode scores at the 96th percentile against 200 shuffled-orders of
+the target's own token stream under WE028 (only 4% of random re-orderings of the same 369 tokens score higher)
+and the 70th against 200 within-block-permuted copies of WE028 itself -- the least flat of the four, but neither
+is an extreme tail value, both n=200 distributions are well-populated (266 real bigram pairs), and the target
+still FAILs the language judge outright (-1.082, below real_p05 -0.800, only above the shuffled-letters floor).
+The other three tables' percentiles cluster near the middle of their control distributions (23.5-65.8) and are
+built from far fewer adjacent-covered-pair bigrams (7-33) -- at that N a percentile is noisy (rule 3's
+few-fold-spread lesson, extended here from fold counts to control-pair counts) and should not be read as a
+result either way.
+
+**Verdict: no table transfers.** None of the four published sibling tables reads the 20 Feb 1808 target above
+its own judge gate, whether alone (all four FAIL) or relative to either control (no percentile is an extreme
+tail value once WE028's own coverage-driven-not-language-driven 96th is set against its still-FAILing absolute
+score). This is a negative with both controls on file (rule 3), not a closed target (rule 5): family B
+(sibling-code *vocabulary*, ARM-DESIGN/family C) and family E (recovery) remain open in the ladder above.
+`cheap_test_done.A2` in `specs/armstrong-madison-1808.json` carries this row's summary numbers.
+
+Salad (first 30 decoded tokens per table, NOT a reading, rule 10):
+- WE028: `vail six trust rive * Sunday arc {1752} {1841} bec {1840} six ** sub eligible arc ble {1628} ‐ whole fabruary ble lution ** suf bel has know {1780} fin`
+- THE972_bourdeau: `{453} roc de ion * {35} {681} {1752} {1841} {1314} {1840} roc ** ward {18} {681} native {1628} {1267} pos {76} native {98} ** {388} like ct Monarch {1780} temp`
+- THE972_tomokiyo_clean: `{453} {240} {760} {1480} * {35} {681} {1752} {1841} {1314} {1840} {240} ** {384} {18} {681} {1340} {1628} {1267} {1180} {76} {1340} {98} ** {388} {1320} {1254} {64} {1780} {341}`
+- THE972_tomokiyo_partial: `{453} {240} {760} ion * {35} {681} {1752} {1841} {1314} {1840} {240} ** w...? {18} {681} {1340} {1628} {1267} pos {76} {1340} {98} ** {388} l...?? ct {64} {1780} temp`

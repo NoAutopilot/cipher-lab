@@ -255,3 +255,27 @@ outage, stopped per good-citizen rule) -- Founders-dependent steps of this brief
 about 14 (2 timed out on complex queries after one retry each, per the good-citizen rule; rest succeeded).
 catalog.archives.gov 2 (confirms existing "needs x-api-key" finding). DECODE 0 new fetches (cache re-read).
 No logins, no credentials touched.
+
+## ARM-A2 (26 Sept 2026): sibling-table direct-transfer sweep -- negative, both controls on file
+
+`ciphers/armstrong-madison-1808/a2/transfer.py` (offline, seeded, no network) decoded the target's 369 numeral
+groups under each of the four tables in `tools/data/uscodes-1800/` and scored the result with a word-bigram
+model built from the en18 corpus, against two matched controls per CLAUDE.md rule 3: 200 tables made by
+permuting each table's own plaintext column within alphabetical blocks of 20 consecutive values (destroys the
+value->word pairing, keeps the value range and blockwise-alphabetical structure), and 200 shuffles of the
+target's own token order decoded with the real table. No table transfers: all four FAIL
+`tools/judge_plaintext.py`'s language check outright (WE028 -1.082, THE972_bourdeau -0.939,
+THE972_tomokiyo_clean -0.883, THE972_tomokiyo_partial -1.108, all against real_p05 thresholds of roughly -0.80
+to -0.90), and no table's percentile against either control is an extreme tail value once read alongside its
+own coverage (WE028 highest coverage, 328/369 tokens, sits at the 70th/96th percentile of its two controls but
+still FAILs the absolute language gate; the three THE=972 tables cover only 14-108 of 369 tokens, too few
+adjacent-covered-pair bigrams (7-33) for a percentile to mean much). A round-trip positive control (re-encoding
+Bourdeau's own known-plaintext decode of the 15 Feb 1808 letter under `THE972_bourdeau.tsv` and decoding it
+back) recovers 87.3% of its words/syllable-fragments exactly, proving the pipeline is mechanically correct, but
+still FAILs the same language judge at that length -- THE=972 publishes bare syllable fragments as entries
+("ac", "ce", "mp", "t"), and dropping uncovered in-between words breaks the character-level 4-gram fluency the
+judge scores, an artifact of the code family and the judge, not a pipeline defect (full explanation in
+HYPOTHESES.md's ARM-A2 section, which also has the per-table table and the salad). No transfer is reported as a
+reading (rule 10); the ladder's family B (vocabulary prior, not direct value transfer) and family E (recovery)
+remain open. `specs/armstrong-madison-1808.json`'s `cheap_test_done.A2` records the same summary. No network
+access this pass (offline job per brief); 0 requests to any host.
