@@ -742,3 +742,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T06:13Z	session_01A7MeWWoh7yhAJxtApKaDvD	LEARN-6 (Sonnet, cap 5)	cross-account pass, window from 03:13Z	brief 2026-09-26-parent-learn6.md; parent 7f
 2026-09-26T06:17Z	session_01KatL6TE3Ai7gE9upvmxGVd	V8-QA7	done 3.72, ledgered D, archived (QA/2026-09-26-0544.md, 4 flags)	
 2026-09-26T06:17Z	session_01SeghT8AxMsh2pewSefqMdo	V8-NA172-2	done 2.04, ledgered D, archived (p6_spot4 N4->N2, Lossen 1882)	
+2026-09-26T06:17Z	session_01NciDZ7i35bSmKN7PPujmwW	V8-SZEM (Opus, cap 8)	verifier szembek-bk1560	brief 2026-09-26-lane-v8-szembek.md; LANE V8
