@@ -951,3 +951,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T20:06Z	session_013CUb7MLM9fsBYw3YmYv5ZQ	ARM3-LIVCODE	done 7.25 D (get_session), ledgered, retitled ARCHIVED, archived by LANE ARM3	Livingston 1803-04 cipher items screened, no match; Brant Papers named
 2026-09-26T20:06Z	session_01MMCuqEpombZkK7dk5Qaqyt	ARM3-ADJ	done 2.78 D (get_session), ledgered, retitled ARCHIVED, archived by LANE ARM3	non-result at N=28
 2026-09-26T20:06Z	session_01HxYpi65CvbqzdSS53XhW4N	ARM3-LOOP	done 9.25 D (get_session), ledgered, retitled ARCHIVED, archived by LANE ARM3	gain gate not met (9.2 < 10), target not run
+2026-09-26T20:06Z	session_01ExYcKQqjKFbTmFmvKgTxVF	PR-LAND-7 (Sonnet, cap 4)	land the desk runner recheck PR 27 (multi-row) through lq_answer_check; either-parent rule	brief 2026-09-26-parent-ytbiz-pr-land-7.md; parent 7i
