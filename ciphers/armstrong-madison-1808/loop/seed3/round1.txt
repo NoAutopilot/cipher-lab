@@ -1,0 +1,187 @@
+# round 1: N=180 values, cribs=9, best score -1364.4 (-3.386/token); restarts [-1420.43, -1364.41, -1372.43]
+# decode by line: word / value / confidence digit (9 = all restarts agree, * = crib, - = wildcard)
+L01 m    to  which no   * tion of providing for a  general principle which * to it   is  of primary importance than that of of letters etc and for which to ask of you that a  provision in a  * only in war on us   an answer from him i    had  anticipated by  your government such a  force on   the th  of may be easily be a  * the * spirit which the most active and * will furnish a  more * the negotiations and satisfactory course be * and who had  * and the president to the a  mere project a  mr * be de   la   * and that which and the laws and  to force the * were true interests of both countries between two  classes those cases where the u    s  sen * and for its * tion of * in the course of events and of * con  * of such a  mere * that of my   own * ought to * in * a  view to the consideration and respect writings of should be that as she  may * address and not * the * and in their maritime nations of  europe very moment when the war but  also the * and the french colonies and the more * and french colony or   province of * that of * ing him of this time and have * in the original * and that he  * seizure of our * and that the king in to  be to the same as  when i    made to the british * and * for * the i    * perfectly proper which * on my   return to the ports and hence the * and in * and * the first * be time to  be the case of  the treaty with france to great interest which france has occurred of a  * into the old  * and his majesty the of  april dear sir  the * interest of france and spain and  the french * our commerce at * the citizens throughout the union or   even in that of * of the same time stating that the * her colonies of his treaty and if  the to day  of the appointment of a  stipulation that each other and in the com munication was  * or   blockaded the treaty of commerce which england the article and in france the a  * and at all times
+    1879 250 82    1440 * 420  21 917       750 38 427     118       82    * 93 1798 272 21 380     1671       117  41   10 21 680     846 45  750 82    93 360 21 711 41   96 542       3  38 * 1520 90 56  67 1380 35 390    1514 630 1750 1460 281         251 730  58         33   38 1730  1698 22  660 21 651 91 1840   91 38 * 69  * 252    82    69  143  1132   45  * 600  869     38 260  * 69  851          45  1584         120    91 * 17  950 1460 * 45  69  160       88 48  38 190  1267    96 27 * 91 1080 1524 * 17  41   82    45  69  1770 1530 88 1730  89  * 1870 1274 941       21 1751 1081      31      1560 400     827   1010  970   22  1130 20 672 * 45  72  60  * 420  21 * 3  69  120    10 880    17  21 * 1881 * 21 33   38 190  * 41   10 1880 693 * 211   93 * 90 * 38 1409 88 22  164           45  350     70       21 1680   91 41   32 1429 651 * 487     45  536 * 69  * 45  3  49    1620     620     670 540    696  1600   860  89  56  1140 1391 69  * 45  69  560    678      19  69  260  * 45  560    1544   1410 1513     21 * 41   85 * 786 630 10 1060 1360 45  1820 * 3  69  100      * 45  41   689 * 965     21 604 * 45  41   430 1223 3  250 91 93 69  468  810 860  1750 1656 93 69  1211    * 45  * 72  * 430 1750 * 1190      1212   82    * 67 1880 507    93 69  1827  45  586   69  * 45  3  * 45  * 430 937   * 91 1360 250 91 430 980  670 22  86     1587 830    93 213   1394     82    830    150 1088     21 96 * 23   69  1489 * 45  71  908     48  670 770   571  1351 69  * 1394     85 830    45  55    1530 69  560    * 604 1040     47 * 48  1550     878        430 1167  1410 300  3  41   10 * 21 89  78   1360 1021    41   48  * 940 678      85 71  86     19  110 48  88 1830 85 69  914         85 38 960         41   812  11    19  3  69  550 1384       1310 * 1670 1100      69  86     10 1040     82    1521    22  456     45  90 830    48  96 * 17  47 26  1210 
+    6    6   *     3    - 6    *  6         6   *  6       3         *     - *  3    3   *  3       3          3    *    3  *  3       3   *   6   *     *  9   *  6   *    6  6         *  *  - 3    6  3   3  3    3  3      3    3   3    3    3           3   3    3          6    *  3     3    6   3   *  3   *  3      *  *  - *   - 3      *     *   3    3      *   - 3    3       *  3    - *   3            *   3            3      *  - 9   3   3    - *   *   3         3  3   *  3    3       6  3  - *  3    3    - 9   *    *     *   *   3    3    3  3     3   - 3    3    3         *  3    3         3       3    3       3     3     3     6   3    3  3   - *   3   3   - 6    *  - *  *   3      3  3      9   *  - 3    - *  6    *  3    - *    3  3    3   - 3     *  - 6  - *  3    3  6   3             *   6       6        *  6      *  *    3  3    3   - 3       *   3   - *   - *   *  3     3        3       3   3      3    3      3    3   3   3    3    *   - *   *   3      3        6   *   3    - *   3      3      3    3        *  - *    9  - 3   3   3  3    3    *   3    - *  *   6        - *   *    3   - 3       *  3   - *   *    3   3    *  6   *  *  *   6    3   3    3    3    *  *   6       - *   - 3   - 3   3    - 3         3      *     - 3  3    3      *  *   6     *   6     *   - *   *  - *   - 3   3     - *  3    6   *  3   3    3   6   3      3    3      *  3     3        *     3      3   3        *  6  - 3    *   3    - *   3   3       3   3   3     6    6    *   - 3        9  3      *   3     3    *   3      - 3   3        3  - 3   3        3          3   3     3    3    *  *    3  - *  3   3    3    3       *    3   - 3   3        9  3   3      6   3   3   3  3    9  *   9           9  *  3           *    3    3     6   *  *   3   3          3    - 3    3         *   3      3  3        *     3       6   3       *   6  3      3   6  - 9   3  3   3    
+
+# values by frequency: value count word conf | up to 3 decoded contexts (2 words either side)
+   45  21 and            * | letters etc [and] for which ; most active [and] * will ; the negotiations [and] satisfactory course
+   69  21 the            * | a * [the] * spirit ; spirit which [the] most active ; more * [the] negotiations and
+   21  14 of             * | * tion [of] providing for ; it is [of] primary importance ; that of [of] letters etc
+   41  11 that           * | importance than [that] of of ; of you [that] a provision ; * and [that] which and
+   38   9 a              * | providing for [a] general principle ; provision in [a] * only ; government such [a] force on
+   82   8 which          * | m to [which] no * ; general principle [which] * to ; and for [which] to ask
+    3   8 in             * | a provision [in] a * ; of * [in] the course ; * and [in] their maritime
+   91   8 be             * | of may [be] easily be ; be easily [be] a * ; satisfactory course [be] * and
+   93   7 to             * | which * [to] it is ; for which [to] ask of ; * ought [to] * in
+   10   6 of             3 | than that [of] of letters ; the course [of] events and ; * that [of] my own
+   48   6 the            3 | president to [the] a mere ; his majesty [the] of april ; at * [the] citizens throughout
+   22   5 the            6 | force on [the] th of ; cases where [the] u s ; view to [the] consideration and
+   85   5 of             9 | * that [of] * ing ; * interest [of] france and ; her colonies [of] his treaty
+  430   5 the            3 | and that [the] king in ; for * [the] i * ; and * [the] first *
+   96   4 a              6 | you that [a] provision in ; mere project [a] mr * ; occurred of [a] * into
+   17   4 and            9 | be * [and] who had ; la * [and] that which ; of events [and] of *
+   88   4 to             3 | the president [to] the a ; laws and [to] force the ; a view [to] the consideration
+  830   4 france         3 | treaty with [france] to great ; interest which [france] has occurred ; interest of [france] and spain
+  250   3 to             6 | m [to] which no ; king in [to] be to ; be time [to] be the
+   90   3 in             6 | * only [in] war on ; to * [in] * a ; article and [in] france the
+ 1750   3 i              3 | from him [i] had anticipated ; as when [i] made to ; * the [i] * perfectly
+   89   3 the            3 | to force [the] * were ; moment when [the] war but ; * of [the] same time
+  670   3 of             3 | maritime nations [of] europe very ; the case [of] the treaty ; majesty the [of] april dear
+  560   3 french         3 | and the [french] colonies and ; * and [french] colony or ; and the [french] * our
+   19   3 and            6 | french colonies [and] the more ; his treaty [and] if the ; each other [and] in the
+ 1360   3 time           3 | of this [time] and have ; * be [time] to be ; the same [time] stating that
+   86   3 treaty         3 | of the [treaty] with france ; of his [treaty] and if ; blockaded the [treaty] of commerce
+  420   2 tion           6 | no * [tion] of providing ; its * [tion] of *
+  750   2 for            6 | of providing [for] a general ; etc and [for] which to
+   56   2 war            3 | only in [war] on us ; when the [war] but also
+   67   2 on             3 | in war [on] us an ; which * [on] my return
+  630   2 him            3 | answer from [him] i had ; * ing [him] of this
+ 1460   2 had            3 | him i [had] anticipated by ; and who [had] * and
+   33   2 such           6 | your government [such] a force ; * of [such] a mere
+ 1730   2 force          3 | such a [force] on the ; and to [force] the *
+  651   2 may            3 | th of [may] be easily ; as she [may] * address
+  260   2 more           3 | furnish a [more] * the ; and the [more] * and
+  120   2 course         3 | and satisfactory [course] be * ; in the [course] of events
+  190   2 mere           3 | the a [mere] project a ; such a [mere] * that
+ 1530   2 and            3 | the laws [and] to force ; and spain [and] the french
+   72   2 for            3 | * and [for] its * ; and * [for] * the
+ 1880   2 my             3 | that of [my] own * ; * on [my] return to
+  860   2 when           3 | very moment [when] the war ; same as [when] i made
+  678   2 colonies       3 | the french [colonies] and the ; * her [colonies] of his
+ 1410   2 or             3 | french colony [or] province of ; the union [or] even in
+  604   2 our            3 | seizure of [our] * and ; french * [our] commerce at
+ 1394   2 interest       3 | to great [interest] which france ; the * [interest] of france
+   71   2 his            3 | * and [his] majesty the ; colonies of [his] treaty and
+ 1040   2 commerce       3 | * our [commerce] at * ; treaty of [commerce] which england
+   47   2 at             3 | our commerce [at] * the ; * and [at] all times
+ 1879   1 m              6 | [m] to which
+ 1440   1 no             3 | to which [no] * tion
+  917   1 providing      6 | tion of [providing] for a
+  427   1 general        6 | for a [general] principle which
+  118   1 principle      3 | a general [principle] which *
+ 1798   1 it             3 | * to [it] is of
+  272   1 is             3 | to it [is] of primary
+  380   1 primary        3 | is of [primary] importance than
+ 1671   1 importance     3 | of primary [importance] than that
+  117   1 than           3 | primary importance [than] that of
+  680   1 letters        3 | of of [letters] etc and
+  846   1 etc            3 | of letters [etc] and for
+  360   1 ask            9 | which to [ask] of you
+  711   1 you            6 | ask of [you] that a
+  542   1 provision      6 | that a [provision] in a
+ 1520   1 only           3 | a * [only] in war
+ 1380   1 us             3 | war on [us] an answer
+   35   1 an             3 | on us [an] answer from
+  390   1 answer         3 | us an [answer] from him
+ 1514   1 from           3 | an answer [from] him i
+  281   1 anticipated    3 | i had [anticipated] by your
+  251   1 by             3 | had anticipated [by] your government
+  730   1 your           3 | anticipated by [your] government such
+   58   1 government     3 | by your [government] such a
+ 1698   1 on             3 | a force [on] the th
+  660   1 th             3 | on the [th] of may
+ 1840   1 easily         3 | may be [easily] be a
+  252   1 spirit         3 | the * [spirit] which the
+  143   1 most           3 | which the [most] active and
+ 1132   1 active         3 | the most [active] and *
+  600   1 will           3 | and * [will] furnish a
+  869   1 furnish        3 | * will [furnish] a more
+  851   1 negotiations   3 | * the [negotiations] and satisfactory
+ 1584   1 satisfactory   3 | negotiations and [satisfactory] course be
+  950   1 who            3 | * and [who] had *
+  160   1 president      3 | and the [president] to the
+ 1267   1 project        3 | a mere [project] a mr
+   27   1 mr             3 | project a [mr] * be
+ 1080   1 de             3 | * be [de] la *
+ 1524   1 la             3 | be de [la] * and
+ 1770   1 laws           3 | and the [laws] and to
+ 1870   1 were           3 | the * [were] true interests
+ 1274   1 true           3 | * were [true] interests of
+  941   1 interests      3 | were true [interests] of both
+ 1751   1 both           3 | interests of [both] countries between
+ 1081   1 countries      3 | of both [countries] between two
+   31   1 between        3 | both countries [between] two classes
+ 1560   1 two            3 | countries between [two] classes those
+  400   1 classes        3 | between two [classes] those cases
+  827   1 those          3 | two classes [those] cases where
+ 1010   1 cases          3 | classes those [cases] where the
+  970   1 where          3 | those cases [where] the u
+ 1130   1 u              3 | where the [u] s sen
+   20   1 s              3 | the u [s] sen *
+  672   1 sen            3 | u s [sen] * and
+   60   1 its            3 | and for [its] * tion
+  880   1 events         3 | course of [events] and of
+ 1881   1 con            3 | of * [con] * of
+  693   1 own            3 | of my [own] * ought
+  211   1 ought          3 | own * [ought] to *
+ 1409   1 view           3 | * a [view] to the
+  164   1 consideration  3 | to the [consideration] and respect
+  350   1 respect        6 | consideration and [respect] writings of
+   70   1 writings       6 | and respect [writings] of should
+ 1680   1 should         6 | writings of [should] be that
+   32   1 as             3 | be that [as] she may
+ 1429   1 she            3 | that as [she] may *
+  487   1 address        3 | may * [address] and not
+  536   1 not            3 | address and [not] * the
+   49   1 their          3 | and in [their] maritime nations
+ 1620   1 maritime       3 | in their [maritime] nations of
+  620   1 nations        3 | their maritime [nations] of europe
+  540   1 europe         3 | nations of [europe] very moment
+  696   1 very           3 | of europe [very] moment when
+ 1600   1 moment         3 | europe very [moment] when the
+ 1140   1 but            3 | the war [but] also the
+ 1391   1 also           3 | war but [also] the *
+ 1544   1 colony         3 | and french [colony] or province
+ 1513   1 province       3 | colony or [province] of *
+  786   1 ing            3 | of * [ing] him of
+ 1060   1 this           3 | him of [this] time and
+ 1820   1 have           3 | time and [have] * in
+  100   1 original       6 | in the [original] * and
+  689   1 he             3 | and that [he] * seizure
+  965   1 seizure        3 | he * [seizure] of our
+ 1223   1 king           3 | that the [king] in to
+  468   1 same           6 | to the [same] as when
+  810   1 as             3 | the same [as] when i
+ 1656   1 made           3 | when i [made] to the
+ 1211   1 british        6 | to the [british] * and
+ 1190   1 perfectly      3 | i * [perfectly] proper which
+ 1212   1 proper         3 | * perfectly [proper] which *
+  507   1 return         3 | on my [return] to the
+ 1827   1 ports          6 | to the [ports] and hence
+  586   1 hence          6 | ports and [hence] the *
+  937   1 first          3 | * the [first] * be
+  980   1 case           3 | be the [case] of the
+ 1587   1 with           3 | the treaty [with] france to
+  213   1 great          3 | france to [great] interest which
+  150   1 has            3 | which france [has] occurred of
+ 1088   1 occurred       3 | france has [occurred] of a
+   23   1 into           3 | a * [into] the old
+ 1489   1 old            3 | into the [old] * and
+  908   1 majesty        3 | and his [majesty] the of
+  770   1 april          3 | the of [april] dear sir
+  571   1 dear           6 | of april [dear] sir the
+ 1351   1 sir            6 | april dear [sir] the *
+   55   1 spain          3 | france and [spain] and the
+ 1550   1 citizens       3 | * the [citizens] throughout the
+  878   1 throughout     3 | the citizens [throughout] the union
+ 1167   1 union          3 | throughout the [union] or even
+  300   1 even           3 | union or [even] in that
+   78   1 same           3 | of the [same] time stating
+ 1021   1 stating        3 | same time [stating] that the
+  940   1 her            3 | the * [her] colonies of
+  110   1 if             3 | treaty and [if] the to
+ 1830   1 day            3 | the to [day] of the
+  914   1 appointment    9 | of the [appointment] of a
+  960   1 stipulation    3 | of a [stipulation] that each
+  812   1 each           3 | stipulation that [each] other and
+   11   1 other          3 | that each [other] and in
+  550   1 com            3 | in the [com] munication was
+ 1384   1 munication     3 | the com [munication] was *
+ 1310   1 was            3 | com munication [was] * or
+ 1670   1 or             3 | was * [or] blockaded the
+ 1100   1 blockaded      3 | * or [blockaded] the treaty
+ 1521   1 england        3 | commerce which [england] the article
+  456   1 article        3 | england the [article] and in
+   26   1 all            3 | and at [all] times
+ 1210   1 times          3 | at all [times]

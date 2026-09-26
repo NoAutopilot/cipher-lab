@@ -1,0 +1,188 @@
+# round 1: N=181 values, cribs=12, best score -1332.5 (-3.323/token); restarts [-1332.48, -1343.12, -1354.23]
+# decode by line: word / value / confidence digit (9 = all restarts agree, * = crib, - = wildcard)
+L01 m   t    which any  other nation the  secretary of state and a  short period thence a   * at * as  an evidence of * or  * and the  * to become a  rule of prudence will * writing and are to be an  * to and the * made by * and  england and holland by her  prudence may in their * are not  be estimated at and yet we  are to you and of the orders of and in that quarter with the west indies with me   in favor of the members of the men  taken from home when the * of * to which they were prepared in in  a  mode of * time of peace and friendship and shall be found in  * the person who  * for some time to the same effect on   that subject to this point of * sir i  had  no   right to trade and * by the constitution and required by the president will the * of information on   that * and * is that he  * to whom it  is to you will have to which they are paid by the other are to * them in the late war  formed in making the river after * jay  s    mission to the french troops are over the gov  ernment of new york for * that body and whose * n  * if not in my  * considered as  a  general * of one  of the  * in old spain as  a  very awkward circumstance which gives us  to which in themselves a  * would be   * with * confidence but should such an  one  of the very * of public safety that there was an effort to   re  * the question of * the light house at some of great importance to us  and of * tion of this month of to   it  my  duty to adopt in  question with the colonies of france these considerations which led * by * have already stated will be a  party in the case but it  will be sensible of the * of his  * in  and  the * fication of the convention in two of the * ity  the * and which ought not to   hesitate which * act of * it  and  to which * to   such a  disposition to * the it  and  to * yesterday and not only one  of
+    750 1780 58    1630 120   1428   1440 1670      30 38    29  93 1811  310    511    350 * 5  * 620 90 1048     30 * 183 * 76  1440 * 51 1720   93 1772 30 783      34   * 163     29  680 83 62 160 * 51 76  71  * 102  74 * 1490 610     29  1840    74 1666 783      906 1  1796  * 680 1340 62 829       5  56  984 290 680 83 380 29  30 36  619    30 56  52 17   1031    33   36  1016 477    33   1390 52 7     30 36  381     30 36  1264 1544  3    1280 284  36  * 30 * 83 58    1501 77   920      1  450 93 820  30 * 95   96 1730  29  880        56  1210  62 1850  450 * 36  576    1470 * 35  1130 95   51 36  1680 123    1330 17   25      51 1270 957   30 * 320 50 1190 1651 270   51 1397  76  * 74 36  1157         29  307      74 36  704       34   71  * 31 1020        1330 17   * 76  * 48 17   156 * 51 1896 274 48 51 380 34   140  51 66    1501 680 1593 74 36  120   680 83 * 1030 1  36  1667 1277 357    1  1199   36  1399  1472  * 1781 1410 912     51 36  1820   1810   680 110  71  1826 1244    96 700 144  35  * 17   1241 56  1198  * 23 * 84 150 52 550 * 1790       620 93 41      * 30 1420 30 1440 * 52 790 1710  620 93 1140 989     384          58    874   770 51 66    1  960        93 * 917   1500 * 33   * 490        28  672    100  160 1420 30 36  1140 * 30 60     1341   17   1100  958 90 1556   1520 590 * 36  1681     30 * 36  1336  1090  5  1130 30 1009  549        51 770 29  30 * 191  96 1270 1846  31 1520 930 550 1801 51 1320  450 1681     33   36  764      30 1394   88    530            66    452 * 74 * 140  1106    520    34   62 93 1350  1  36  19   28  930 34   62 788      30 36  * 30 1750 * 450 1490 36  * 1847     30 71  261        1  10  30 36  * 1200 36  * 56  58    800   150 1520 640      66    * 730 30 * 930 1490 51 66    * 1520 100  93 1250        51 * 36  930 1490 51 * 720       29  150 260  1420 30
+    6   6    9     3    3     3      9    3         *  3     *   *  3     3      3      3   - 3  - 3   3  3        *  - 3   - 3   9    - *  6      *  3    *  3        *    - 6       *   3   9  *  6   - *  3   9   - 9    *  - 9    3       *   3       *  3    3        3   *  3     - 3   3    *  3         3  9   3   3   3   9  6   *   *  *   9      *  9   3  *    3       *    *   3    3      *    3    3  3     *  *   6       *  *   3    3     3    3    3    *   - *  - 9  9     3    3    3        *  6   *  3    *  - 3    3  3     *   3          9   3     *  6     6   - *   3      3    - 3   3    3    *  *   3    3      9    *    9       *  3    3     *  - 3   3  3    3    6     *  3     3   - *  *   9            *   9        *  *   6         *    9   - 3  3           9    *    - 3   - 3  *    6   - *  3    3   3  *  6   *    6    *  *     3    3   3    *  *   3     3   9  - 3    *  *   3    3    3      *  6      *   6     3     - 3    3    3       *  *   3      3      3   3    9   3    3       3  3   3    3   - *    6    9   6     - 3  - 6  6   3  3   - 3          3   *  6       - *  6    *  9    - 3  3   3     3   *  3    3       3            9     3     3   *  *     *  6          *  - 3     3    - *    - 3          3   3      6    6   6    *  *   3    - *  3      3      *    3     3   3  3      3    3   - *   3        *  - *   3     3     3  3    *  6     3          *  3   *   *  - 3    3  3    3     3  3    3   3   3    *  3     6   3        *    *   3        *  3      3     3              *     3   - *  - 6    3       3      *    *  *  9     *  *   6    3   3   *    *  3        *  *   - *  3    - 6   9    *   - 6        *  9   3          *  3   *  *   - 6    *   - 9   9     3     6   3    3        *     - 9   *  - 3   9    *  *     - 3    6    *  6           *  - *   3   9    *  - 6         *   6   3    6    * 
+
+# values by frequency: value count word conf | up to 3 decoded contexts (2 words either side)
+   30  24 of             * | the secretary [of] state and ; an evidence [of] * or ; a rule [of] prudence will
+   36  23 the            * | and of [the] orders of ; quarter with [the] west indies ; favor of [the] members of
+   51  15 to             * | the * [to] become a ; an * [to] and the ; some time [to] the same
+   29   8 and            * | of state [and] a short ; * writing [and] are to ; and england [and] holland by
+   93   8 a              * | state and [a] short period ; to become [a] rule of ; in in [a] mode of
+    1   7 in             * | prudence may [in] their * ; were prepared [in] in a ; * them [in] the late
+  680   6 are            3 | writing and [are] to be ; their * [are] not be ; yet we [are] to you
+   74   6 by             * | * made [by] * and ; and holland [by] her prudence ; and * [by] the constitution
+   17   6 that           * | and in [that] quarter with ; effect on [that] subject to ; information on [that] * and
+   34   5 will           * | of prudence [will] * writing ; the president [will] the * ; to you [will] have to
+   62   5 be             * | are to [be] an * ; are not [be] estimated at ; and shall [be] found in
+   56   5 and            9 | estimated at [and] yet we ; orders of [and] in that ; and friendship [and] shall be
+   66   5 which          * | have to [which] they are ; us to [which] in themselves ; these considerations [which] led *
+   58   4 which          9 | m t [which] any other ; * to [which] they were ; awkward circumstance [which] gives us
+   76   4 and            3 | or * [and] the * ; * to [and] the * ; to trade [and] * by
+   83   4 to             9 | and are [to] be an ; we are [to] you and ; of * [to] which they
+   71   4 the            9 | to and [the] * made ; president will [the] * of ; are over [the] gov ernment
+ 1490   4 and            9 | by * [and] england and ; * in [and] the * ; * it [and] to which
+   52   4 in             3 | of and [in] that quarter ; with me [in] favor of ; if not [in] my *
+   33   4 with           * | that quarter [with] the west ; west indies [with] me in ; be * [with] * confidence
+  450   4 in             6 | prepared in [in] a mode ; be found [in] * the ; to adopt [in] question with
+ 1520   4 to             3 | an effort [to] re * ; month of [to] it my ; ought not [to] hesitate which
+  930   4 it             3 | of to [it] my duty ; case but [it] will be ; of * [it] and to
+ 1440   3 the            9 | other nation [the] secretary of ; * and [the] * to ; one of [the] * in
+    5   3 at             3 | a * [at] * as ; be estimated [at] and yet ; light house [at] some of
+  620   3 as             3 | at * [as] an evidence ; * considered [as] a general ; old spain [as] a very
+   96   3 of             3 | * time [of] peace and ; gov ernment [of] new york ; * tion [of] this month
+  150   3 not            6 | * if [not] in my ; which ought [not] to hesitate ; yesterday and [not] only one
+ 1420   3 one            6 | * of [one] of the ; such an [one] of the ; not only [one] of
+  120   2 other          3 | which any [other] nation the ; by the [other] are to
+   90   2 an             3 | * as [an] evidence of ; there was [an] effort to
+  783   2 prudence       3 | rule of [prudence] will * ; by her [prudence] may in
+  160   2 an             6 | to be [an] * to ; should such [an] one of
+  380   2 you            6 | are to [you] and of ; is to [you] will have
+ 1501   2 they           3 | to which [they] were prepared ; to which [they] are paid
+   95   2 time           3 | of * [time] of peace ; for some [time] to the
+   35   2 for            3 | who * [for] some time ; new york [for] * that
+ 1130   2 some           3 | * for [some] time to ; house at [some] of great
+ 1330   2 on             9 | same effect [on] that subject ; of information [on] that *
+ 1270   2 this           3 | subject to [this] point of ; tion of [this] month of
+   31   2 of             3 | the * [of] information on ; this month [of] to it
+   48   2 is             3 | and * [is] that he ; whom it [is] to you
+  140   2 have           6 | you will [have] to which ; by * [have] already stated
+  550   2 my             3 | not in [my] * considered ; to it [my] duty to
+ 1140   2 very           3 | as a [very] awkward circumstance ; of the [very] * of
+  770   2 us             3 | which gives [us] to which ; importance to [us] and of
+   28   2 but            3 | * confidence [but] should such ; the case [but] it will
+  100   2 such           6 | but should [such] an one ; * to [such] a disposition
+ 1681   2 question       3 | * the [question] of * ; adopt in [question] with the
+  750   1 m              6 | [m] t which
+ 1780   1 t              6 | m [t] which any
+ 1630   1 any            3 | t which [any] other nation
+ 1428   1 nation         3 | any other [nation] the secretary
+ 1670   1 secretary      3 | nation the [secretary] of state
+   38   1 state          3 | secretary of [state] and a
+ 1811   1 short          3 | and a [short] period thence
+  310   1 period         3 | a short [period] thence a
+  511   1 thence         3 | short period [thence] a *
+  350   1 a              3 | period thence [a] * at
+ 1048   1 evidence       3 | as an [evidence] of *
+  183   1 or             3 | of * [or] * and
+ 1720   1 become         6 | * to [become] a rule
+ 1772   1 rule           3 | become a [rule] of prudence
+  163   1 writing        6 | will * [writing] and are
+  102   1 made           9 | the * [made] by *
+  610   1 england        3 | * and [england] and holland
+ 1840   1 holland        3 | england and [holland] by her
+ 1666   1 her            3 | holland by [her] prudence may
+  906   1 may            3 | her prudence [may] in their
+ 1796   1 their          3 | may in [their] * are
+ 1340   1 not            3 | * are [not] be estimated
+  829   1 estimated      3 | not be [estimated] at and
+  984   1 yet            3 | at and [yet] we are
+  290   1 we             3 | and yet [we] are to
+  619   1 orders         9 | of the [orders] of and
+ 1031   1 quarter        3 | in that [quarter] with the
+ 1016   1 west           3 | with the [west] indies with
+  477   1 indies         3 | the west [indies] with me
+ 1390   1 me             3 | indies with [me] in favor
+    7   1 favor          3 | me in [favor] of the
+  381   1 members        6 | of the [members] of the
+ 1264   1 men            3 | of the [men] taken from
+ 1544   1 taken          3 | the men [taken] from home
+    3   1 from           3 | men taken [from] home when
+ 1280   1 home           3 | taken from [home] when the
+  284   1 when           3 | from home [when] the *
+   77   1 were           3 | which they [were] prepared in
+  920   1 prepared       3 | they were [prepared] in in
+  820   1 mode           3 | in a [mode] of *
+ 1730   1 peace          3 | time of [peace] and friendship
+  880   1 friendship     3 | peace and [friendship] and shall
+ 1210   1 shall          3 | friendship and [shall] be found
+ 1850   1 found          6 | shall be [found] in *
+  576   1 person         3 | * the [person] who *
+ 1470   1 who            3 | the person [who] * for
+ 1680   1 same           3 | to the [same] effect on
+  123   1 effect         3 | the same [effect] on that
+   25   1 subject        9 | on that [subject] to this
+  957   1 point          3 | to this [point] of *
+  320   1 sir            3 | of * [sir] i had
+   50   1 i              3 | * sir [i] had no
+ 1190   1 had            3 | sir i [had] no right
+ 1651   1 no             3 | i had [no] right to
+  270   1 right          6 | had no [right] to trade
+ 1397   1 trade          3 | right to [trade] and *
+ 1157   1 constitution   9 | by the [constitution] and required
+  307   1 required       9 | constitution and [required] by the
+  704   1 president      6 | by the [president] will the
+ 1020   1 information    3 | * of [information] on that
+  156   1 he             6 | is that [he] * to
+ 1896   1 whom           3 | * to [whom] it is
+  274   1 it             3 | to whom [it] is to
+ 1593   1 paid           3 | they are [paid] by the
+ 1030   1 them           3 | to * [them] in the
+ 1667   1 late           3 | in the [late] war formed
+ 1277   1 war            3 | the late [war] formed in
+  357   1 formed         3 | late war [formed] in making
+ 1199   1 making         6 | formed in [making] the river
+ 1399   1 river          6 | making the [river] after *
+ 1472   1 after          3 | the river [after] * jay
+ 1781   1 jay            3 | after * [jay] s mission
+ 1410   1 s              3 | * jay [s] mission to
+  912   1 mission        3 | jay s [mission] to the
+ 1820   1 french         3 | to the [french] troops are
+ 1810   1 troops         3 | the french [troops] are over
+  110   1 over           3 | troops are [over] the gov
+ 1826   1 gov            3 | over the [gov] ernment of
+ 1244   1 ernment        3 | the gov [ernment] of new
+  700   1 new            3 | ernment of [new] york for
+  144   1 york           3 | of new [york] for *
+ 1241   1 body           6 | * that [body] and whose
+ 1198   1 whose          6 | body and [whose] * n
+   23   1 n              3 | whose * [n] * if
+   84   1 if             6 | n * [if] not in
+ 1790   1 considered     3 | my * [considered] as a
+   41   1 general        6 | as a [general] * of
+  790   1 old            3 | * in [old] spain as
+ 1710   1 spain          3 | in old [spain] as a
+  989   1 awkward        3 | a very [awkward] circumstance which
+  384   1 circumstance   3 | very awkward [circumstance] which gives
+  874   1 gives          3 | circumstance which [gives] us to
+  960   1 themselves     6 | which in [themselves] a *
+  917   1 would          3 | a * [would] be *
+ 1500   1 be             3 | * would [be] * with
+  490   1 confidence     3 | with * [confidence] but should
+  672   1 should         3 | confidence but [should] such an
+   60   1 public         3 | * of [public] safety that
+ 1341   1 safety         3 | of public [safety] that there
+ 1100   1 there          3 | safety that [there] was an
+  958   1 was            3 | that there [was] an effort
+ 1556   1 effort         3 | was an [effort] to re
+  590   1 re             3 | effort to [re] * the
+ 1336   1 light          3 | * the [light] house at
+ 1090   1 house          3 | the light [house] at some
+ 1009   1 great          6 | some of [great] importance to
+  549   1 importance     3 | of great [importance] to us
+  191   1 tion           3 | of * [tion] of this
+ 1846   1 month          3 | of this [month] of to
+ 1801   1 duty           3 | it my [duty] to adopt
+ 1320   1 adopt          3 | duty to [adopt] in question
+  764   1 colonies       3 | with the [colonies] of france
+ 1394   1 france         3 | colonies of [france] these considerations
+   88   1 these          3 | of france [these] considerations which
+  530   1 considerations 3 | france these [considerations] which led
+  452   1 led            3 | considerations which [led] * by
+ 1106   1 already        3 | * have [already] stated will
+  520   1 stated         3 | have already [stated] will be
+ 1350   1 party          9 | be a [party] in the
+   19   1 case           6 | in the [case] but it
+  788   1 sensible       3 | will be [sensible] of the
+ 1750   1 his            3 | * of [his] * in
+ 1847   1 fication       6 | the * [fication] of the
+  261   1 convention     3 | of the [convention] in two
+   10   1 two            3 | convention in [two] of the
+ 1200   1 ity            6 | the * [ity] the *
+  800   1 ought          3 | and which [ought] not to
+  640   1 hesitate       3 | not to [hesitate] which *
+  730   1 act            9 | which * [act] of *
+ 1250   1 disposition    6 | such a [disposition] to *
+  720   1 yesterday      6 | to * [yesterday] and not
+  260   1 only           3 | and not [only] one of
