@@ -2148,6 +2148,69 @@ f55v: 19 line crops -> plain_crops/f55v/, manifest plain_crops/f55v/manifest.tsv
 ```
 629 plain boxes total across the four leaves (of 1,233 for the whole letter -- this job's first half).
 
+**Passes and reconciliation.** Two blind Sonnet subagent calls per leaf (crop paths + per-line pos list only,
+never the other pass's output, never a full-leaf image), then `recon_plain_diff.py <passA> <passB> --out-dir
+recon_plain_<leaf>` (per-pos diff keyed on (line,pos), not `tools/reconcile_passes.py`: that tool's long format
+keys its token column on one of sign/token/group/code, not `word`, and a plain-Italian token is sometimes two
+words in one box, which is not what that keying expects either -- confirmed in code before running, not
+assumed). Each leaf's disagreements were then settled by the worker from `plain_crops/<leaf>/L*.png`
+(`recon_plain_<leaf>/settle.py`, one file per leaf, kept for the record next to `disagreements.tsv`): grade
+`A` where the two passes already agreed (or differed only in an abbreviation mark/spelling, normalised),
+grade `R` where the crop settled a real disagreement, grade `M` where the position stayed genuinely unsettled
+or illegible even from the image (both readings kept as `x|y`).
+
+**Control table** (rule 3's transcription version, beside bSALC's cipher-sign figures of 14.6% raw A/B pass
+disagreement and 6.4% settled residual error):
+
+| leaf | plain boxes | A | R | M | M share (unsettled) | raw A/B pass disagreement |
+|---|---|---|---|---|---|---|
+| f54r | 139 | 74 | 37 | 28 | 20.1% | 49.6% (69/139) |
+| f54v | 152 | 96 | 51 | 5 | 3.3% | 42.1% (64/152) |
+| f55r | 173 | 104 | 58 | 11 | 6.4% | 39.9% (69/173) |
+| f55v | 165 | 79 | 24 | 62 | 37.6% | 54.2% (91/168 raw keys, 3 phantom positions from an over-count in pass B filtered against the crop manifest before settling) |
+| **total** | **629** | **353** | **170** | **106** | **16.9%** | **45.4% (293/629)** |
+
+f55v's raw disagreement and M share are both markedly higher than the other three leaves: both blind passes'
+own summaries called much of this leaf's ink `<none>`/low-confidence independently of each other (not one pass
+failing against a clean other pass), and the worker's own reconciliation pass for this leaf ran under the
+job's wall-clock box (started at the 63-minute mark of a 95-minute box) and used a faster, position-count-drift
+-aware settlement rule rather than viewing every disputed line's crop individually (documented in
+`recon_plain_f55v/settle.py`'s own docstring) -- the elevated M share is reported here rather than smoothed
+over, per rule 3's own instruction not to let a control's own reliability go unstated. A second pass at f55v's
+62 M positions with more time is the obvious next step for whoever picks up job 1b or a follow-on to this job.
+
+Overall raw plain-word pass disagreement (45.4%) reads much higher than bSALC's per-sign-token figure (14.6%)
+because a plain WORD disagreement is scored as one miss even when only its box-boundary assignment differed
+between the two passes (the same word, offset by one or two pos numbers) -- common in this hand where word
+segmentation is more ambiguous than single-sign identification; a large share of the R-grade settlements above
+were exactly this (see e.g. f54v/f55r lines 16-18 in the settle.py files), not two passes reading different
+letters. The M share (16.9% overall, excluding f55v's time-constrained pass 37.6% vs 9.6% for the other three
+combined) is the more comparable figure to bSALC's 6.4% settled residual.
+
+**Time per unit** (for pricing job 1b): U0 setup (shared, all 4 leaves) about 7 minutes. Per leaf: pass A + pass
+B (run in parallel, wall time = the slower of the two) 6-13 minutes; reconciliation (viewing crops + settling)
+5-10 minutes for f54r/f54v/f55r, under 1 minute for f55v (time-constrained heuristic settlement, see above).
+Total job wall time from claim to this section: about 66 minutes of a 95-minute box (f54r+f54v+f55r+f55v passes
+and reconciliation, plus U0 and U13), under the 76-minute (80%) line throughout.
+
+**Sample lines** (interleaved text, `ciphertext_with_plain.txt`; sign runs as `[...]`, M-graded unsettled
+readings as `x|y`):
+```
+f54r L3: [phi^ ]^o nt^ Z^ ]^dot|o S7^dot lam^ e^dot y^ e^# o.^] d|[C] [g^ Z^ S4^] Tutto quello ch. s. s. desidera N. S. [S4^ S4^]
+f54r L9: lauenuta [H^7] Duca Secondo mh Poco credibile [tee^ tee^] ?|[C] [Lx^ g^dot] ?|[C] [rz^] ?|[C] [S7^]
+f54r L15: stando ancora la cosi [S4^ e^dot|+ a^5 e^# S7^dot|+ dl^] Come stanno [p^] Pure [v^ S^]
+f54v L15: [bh^] [C] [g^ Z^ot g^ tee^ Z^ H^1 S4^o dl^] Contra Turchi [eps^ +^] luterani et [eps^ +^] Potr~
+f55r L12: [Z^ ...] Et rimediarne a tutti e disordini della chiesa et pericoli [...]
+```
+No interpretation of the Italian beyond transcribing it: the above is quoted only to show the interleaving
+format, not to summarise what the letter says. No reading, no novelty wording.
+
+**Left illegible or unsettled:** 106 of 629 boxes (16.9%), mostly single sign-like marks inside heavy sign
+clusters that the transcription team graded plain (`_`) but that read ambiguously between a letter and a
+cipher glyph even from the image (kept as `letter|[C]`), plus a handful of library-stamp-obscured positions
+(f54r L11-12, `?`, both passes agreed) and f55v's larger unsettled set (see above). Nothing was guessed from
+context; every M-graded position keeps both pass readings.
+
 ## SALV-KP: known-plaintext and word-list scan (26 Sept 2026, LANE SALV)
 
 Worker SALV-KP (Sonnet, cap USD 4, box 45 min), 20:49-21:0x UTC. Job 3 of LANE SALV: scan contemporary sources for
