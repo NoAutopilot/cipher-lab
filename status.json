@@ -2250,21 +2250,21 @@
       "title": "Mayenne-Forget Cipher-1, 13 partly-read leaves: Bourdeau's period-verified key beats a scrambled-order control (fr16 -1.371 vs -1.786, cover 0.814 vs 0.678), judge FAIL both; U 9.8 pct, M 12.7 pct",
       "next": "(1g) second blind pass of the f.78v slip lines (Bourdeau's f78 merges page l.10/l.11, ~55 signs missing: bMAT1F), then fresh-seed 20-H known-answer control, gate 16/20",
       "lane": "B8",
-      "touched": "26 Sept 2026 07:35"
+      "touched": "26 Sept 2026 07:30"
     },
     {
       "target": "malsburg-hessen-1636",
       "title": "Malsburg 1636-37: N=352 K=95; homophonic profile=target control reads 0.928/0.844/0.976 at projected N=1000/2000/3000 (bMALC) -- pooling licenses a real test; ~6,680 more signs on 11 leaves",
       "next": "transcribe the pool: 507/508 near-duplicate openings first (copy vs homophone equivalences), then ff.28, 30, 23, 16; then homophonic at pooled N, control first",
       "lane": "B8",
-      "touched": "26 Sept 2026 07:35"
+      "touched": "26 Sept 2026 07:30"
     },
     {
       "target": "hessen-1824",
       "title": "Hessian 1824 polyalphabetic, N=164: periodic_vigenere (control 1.000), masc (0.823), homophonic profile=target (0.878) all control-passed target FAILs; running_key control 0.372 below gate -- a non-test",
       "next": "running_key with an era-matched German corpus (de19, to build) and a wider beam, control first at N=164; if the control cannot reach 0.6 at this N, record the family as untestable at this length",
       "lane": "B8",
-      "touched": "26 Sept 2026 07:35"
+      "touched": "26 Sept 2026 07:30"
     }
   ]
 }
