@@ -2838,3 +2838,41 @@ Files: `tools/key_repair.py`, `tools/tests/test_key_repair.py`, `ax2_4612s/{null
 known_answer_control.py,known_answer_control.log}`, this section. `key_full.tsv`, `key.tsv`,
 `key_5799.tsv` untouched (rule 3: a control below gate means the target is not run; no
 `key_4612_repair.tsv`/`key_5799_repair.tsv` produced this box). No network. No images.
+
+## AX2-4612S2: key repair, length-neutral objective (26 Sept 2026, LANE AX2)
+
+Worker AX2-4612S2 (Sonnet, session_018ktTTDt9vs6NM3JQ5Sjxvb), per
+`.claude/briefs/runs/2026-09-26-lane-ax2-4612s2.md`, box 60 min from 07:22:41 UTC. Fixes AX2-4612S's
+own diagnosed bug (its NOTES.md section above): the objective was the *total* (summed) log-probability
+of the decoded stream, which unconditionally rewards mapping any code to NULL since every character's
+own log-probability is negative and deleting one can only raise a sum -- confirmed there by a null
+control that changed 100 of 110 codes in a known-correct key.
+
+**Unit 1: tool fix.** `tools/key_repair.py` gets `--objective {total,excess}` (default `excess`) and
+`--no-null-below N` (default 121, the 1574 table's letter range; AX-NAMES found the null codes at
+121-149). `excess`: score = sum over decoded characters of (log2 p(c | context) - mu), mu the fr16
+order-5 model's own mean log2-probability per character on its held-out text (`compute_mu()`,
+`-model.bits_per_char`, computed once per run and printed). A candidate value now gains only when its
+characters are better-predicted than average French in context, so deleting or lengthening a value is
+no longer rewarded by construction. `--objective total` reproduces AX2-4612S's original (buggy)
+behaviour, kept for reference. `tools/tests/test_key_repair.py` updated (existing `repair()` calls now
+pass `model.logp` as the scorer, matching the new signature) and extended: `candidates_for_code`'s
+threshold logic; an end-to-end `FlatCostModel` (uniform per-character cost, no context) reproducing the
+AX2-4612S bug exactly under `total` and showing it gone under `excess`; `make_scorer`/`compute_mu`
+semantics against a small hand-built per-character table; and the brief's own required regression
+check -- a null control on a clean synthetic French sentence built from common words proposes 0
+changes under `excess` (mu printed in the test's own output). All 17 checks pass,
+`python3 tools/tests/test_key_repair.py` (about 4s, dominated by the one-time fr16 model load/build).
+
+**Gates, written here at 07:32 UTC before any control number below was computed (verbatim from the
+brief, "the known-answer SWAP control, 3 seeds, k=8" design continuing AX2-4612S's own):** "(a) Null
+control: run key_repair from key_full unchanged; count proposed changes (false positives). (b)
+Known-answer control, 3 seeds: swap the letter values of k=8 codes total, arranged so 2 of the 8 are
+instead given a French bigram value (the H-S shape) rather than a swapped letter, reported separately
+from the other 6. Gate: >= 6 of 8 altered codes recovered on average AND <= 2 false changes in the null
+control and on untouched codes [in the known-answer control]. A control below gate = CONTROL BELOW
+GATE; stop and say so (not a negative); if it fails, report which codes the null control changes and to
+what (so the orchestrator can see the next bias)." Both controls run on
+`ax4612tr/ciphertext_5811_cut833.tsv` (5811's own ciphertext, cut to 4612 v3's N=833, key_full's own
+known-correct reading) against `key_full.tsv`, exactly as AX2-4612S, but now under `--objective excess
+--no-null-below 121` (the new defaults).
