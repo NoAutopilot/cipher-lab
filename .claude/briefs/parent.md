@@ -223,3 +223,7 @@ over the trigger.
 own session ARCHIVED and self-ledgers (per "Self-ledger cost" above), but does not call `archive_session` on its
 own session id; the parent runs `archive_session` on it at the parent's next check-in, per duty 3a's orphan check
 (owner-account parent's ROOM line 09:42, AX2's close).
+
+## Recording the owner (26 Sept 2026)
+
+The owner's decisions go into STATUS.md, ROOM.md and the briefs as decisions in plain form ("the owner approved the RAH copy order"; "the owner holds the Tomokiyo question until a solve"), never as quotations of his messages. His words stay in the chat. Rule 9 (never his name) stands.

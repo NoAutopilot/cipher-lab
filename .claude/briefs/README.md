@@ -135,3 +135,4 @@ applied unchanged, and three named cycle-3 briefs written from it.
   gated on a named ASKS.md row. A folder is not left `open`/`partial`/`blocked` with a runnable next step sitting
   more than a day without a LEDGER.md row saying why it was skipped. See `.claude/briefs/parent.md`, "Opening a
   lane."
+- **Stuck rule (owner's direction, 26 Sept 2026).** A negative or a "not a test" on a target's cheap test is not a stopping point. Before the lane idles on that target it names one materially different approach (another key family, another sibling or crib, another image source, another control, a different transcription route) with its own control and gate, runs it, and records the result in NOTES.md and the ledger. One such try per target, then idle-standing or close. Momentum is the goal; a lane that has nothing different left to try says so in its handoff in one sentence.
