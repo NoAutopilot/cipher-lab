@@ -1,0 +1,937 @@
+{
+  "496": {
+    "id": 496,
+    "cipher_key_id": null,
+    "name": "hstam_4_h_1411_0003-0004",
+    "description": "<p>Message from the year 1637. Description form the archive: \"Korrespondenz in Chiffren mit dem Generalkommissar Otto v.d. Malsburg betr. Kriegf\u00fchrung in M\u00fcnster und Westfalen\" </p><p>(translated: Encrypted correspondence with the General Commissioner Otto v.d. Malsburg concerning warfare in M\u00fcnster and Westphalia)</p>",
+    "availability_type": "archive",
+    "availability": null,
+    "category": {
+      "id": 1,
+      "name": "Unknown",
+      "children": []
+    },
+    "sub_category": null,
+    "date": "1637-01-15T00:00:00.000000Z",
+    "date_around": null,
+    "thumb": "https://api.hcportal.eu/media/1391/conversions/42141677515128-large.jpg",
+    "used_chars": null,
+    "language": {
+      "id": 8,
+      "name": "German"
+    },
+    "location": {
+      "id": 3,
+      "continent": "Europe",
+      "name": null
+    },
+    "recipient": {
+      "id": 2,
+      "name": "Unknown"
+    },
+    "sender": {
+      "id": 2,
+      "name": "Unknown"
+    },
+    "solution": {
+      "id": 1,
+      "name": "Not solved"
+    },
+    "folder": {
+      "id": 10,
+      "name": "Folder 1411",
+      "fond_id": 7,
+      "fond": {
+        "id": 7,
+        "name": "4 h - Kriegssachen",
+        "archive_id": 4,
+        "archive": {
+          "id": 4,
+          "name": "Hessisches Staatsarchiv Marburg"
+        }
+      }
+    },
+    "state": {
+      "id": "approved",
+      "title": "Approved",
+      "show": true
+    },
+    "created_by": {
+      "id": 2,
+      "first_name": "Eugen",
+      "last_name": "Antal"
+    },
+    "note": null,
+    "tags": [],
+    "datagroups": [
+      {
+        "id": 944,
+        "description": "Cryptogram",
+        "data": [
+          {
+            "id": 1134,
+            "title": "hstam_4_h_1411_0003",
+            "type": "image",
+            "image": {
+              "thumb": "https://api.hcportal.eu/media/1392/conversions/35901677515129-thumb.jpg",
+              "big": "https://api.hcportal.eu/media/1392/conversions/35901677515129-big.jpg",
+              "large": "https://api.hcportal.eu/media/1392/conversions/35901677515129-large.jpg",
+              "original": "https://api.hcportal.eu/media/1392/35901677515129.jpg"
+            }
+          },
+          {
+            "id": 1135,
+            "title": "hstam_4_h_1411_0004",
+            "type": "image",
+            "image": {
+              "thumb": "https://api.hcportal.eu/media/1393/conversions/53211677515130-thumb.jpg",
+              "big": "https://api.hcportal.eu/media/1393/conversions/53211677515130-big.jpg",
+              "large": "https://api.hcportal.eu/media/1393/conversions/53211677515130-large.jpg",
+              "original": "https://api.hcportal.eu/media/1393/53211677515130.jpg"
+            }
+          }
+        ]
+      }
+    ],
+    "created_at": "2025-11-20 09:29:06",
+    "updated_at": "2025-11-20 09:29:12"
+  },
+  "497": {
+    "id": 497,
+    "cipher_key_id": null,
+    "name": "hstam_4_h_1411_0012-0013",
+    "description": "<p>Message from the year 1637.  Description form the archive: \"Korrespondenz in Chiffren mit dem Generalkommissar Otto v.d. Malsburg betr. Kriegf\u00fchrung in M\u00fcnster und Westfalen\" </p><p>(translated: Encrypted correspondence with the General Commissioner Otto v.d. Malsburg concerning warfare in M\u00fcnster and Westphalia)</p>",
+    "availability_type": "other",
+    "availability": "Unknown",
+    "category": {
+      "id": 1,
+      "name": "Unknown",
+      "children": []
+    },
+    "sub_category": null,
+    "date": "1637-01-17T00:00:00.000000Z",
+    "date_around": null,
+    "thumb": "https://api.hcportal.eu/media/1394/conversions/64211677516419-large.jpg",
+    "used_chars": null,
+    "language": {
+      "id": 8,
+      "name": "German"
+    },
+    "location": {
+      "id": 3,
+      "continent": "Europe",
+      "name": null
+    },
+    "recipient": {
+      "id": 2,
+      "name": "Unknown"
+    },
+    "sender": {
+      "id": 2,
+      "name": "Unknown"
+    },
+    "solution": {
+      "id": 1,
+      "name": "Not solved"
+    },
+    "folder": null,
+    "state": {
+      "id": "approved",
+      "title": "Approved",
+      "show": true
+    },
+    "created_by": {
+      "id": 2,
+      "first_name": "Eugen",
+      "last_name": "Antal"
+    },
+    "note": null,
+    "tags": [],
+    "datagroups": [
+      {
+        "id": 945,
+        "description": "Cryptogram",
+        "data": [
+          {
+            "id": 1136,
+            "title": "hstam_4_h_1411_0012",
+            "type": "image",
+            "image": {
+              "thumb": "https://api.hcportal.eu/media/1395/conversions/79511677516420-thumb.jpg",
+              "big": "https://api.hcportal.eu/media/1395/conversions/79511677516420-big.jpg",
+              "large": "https://api.hcportal.eu/media/1395/conversions/79511677516420-large.jpg",
+              "original": "https://api.hcportal.eu/media/1395/79511677516420.jpg"
+            }
+          },
+          {
+            "id": 1137,
+            "title": "hstam_4_h_1411_0013",
+            "type": "image",
+            "image": {
+              "thumb": "https://api.hcportal.eu/media/1396/conversions/23861677516420-thumb.jpg",
+              "big": "https://api.hcportal.eu/media/1396/conversions/23861677516420-big.jpg",
+              "large": "https://api.hcportal.eu/media/1396/conversions/23861677516420-large.jpg",
+              "original": "https://api.hcportal.eu/media/1396/23861677516420.jpg"
+            }
+          }
+        ]
+      }
+    ],
+    "created_at": "2025-11-20 09:29:12",
+    "updated_at": "2025-11-20 09:29:21"
+  },
+  "502": {
+    "id": 502,
+    "cipher_key_id": null,
+    "name": "hstam_4_h_1411_0014",
+    "description": "<p>Message from the year 1637.  Description form the archive: \"Korrespondenz in Chiffren mit dem Generalkommissar Otto v.d. Malsburg betr. Kriegf\u00fchrung in M\u00fcnster und Westfalen\" </p><p>(translated: Encrypted correspondence with the General Commissioner Otto v.d. Malsburg concerning warfare in M\u00fcnster and Westphalia)</p>",
+    "availability_type": "archive",
+    "availability": null,
+    "category": {
+      "id": 1,
+      "name": "Unknown",
+      "children": []
+    },
+    "sub_category": null,
+    "date": "1637-01-16T00:00:00.000000Z",
+    "date_around": null,
+    "thumb": "https://api.hcportal.eu/media/1409/conversions/55961677516561-large.jpg",
+    "used_chars": null,
+    "language": {
+      "id": 8,
+      "name": "German"
+    },
+    "location": {
+      "id": 3,
+      "continent": "Europe",
+      "name": null
+    },
+    "recipient": {
+      "id": 2,
+      "name": "Unknown"
+    },
+    "sender": {
+      "id": 2,
+      "name": "Unknown"
+    },
+    "solution": {
+      "id": 1,
+      "name": "Not solved"
+    },
+    "folder": {
+      "id": 10,
+      "name": "Folder 1411",
+      "fond_id": 7,
+      "fond": {
+        "id": 7,
+        "name": "4 h - Kriegssachen",
+        "archive_id": 4,
+        "archive": {
+          "id": 4,
+          "name": "Hessisches Staatsarchiv Marburg"
+        }
+      }
+    },
+    "state": {
+      "id": "approved",
+      "title": "Approved",
+      "show": true
+    },
+    "created_by": {
+      "id": 2,
+      "first_name": "Eugen",
+      "last_name": "Antal"
+    },
+    "note": null,
+    "tags": [],
+    "datagroups": [
+      {
+        "id": 952,
+        "description": "Cryptogram",
+        "data": [
+          {
+            "id": 1146,
+            "title": "hstam_4_h_1411__14",
+            "type": "image",
+            "image": {
+              "thumb": "https://api.hcportal.eu/media/1410/conversions/44031677516562-thumb.jpg",
+              "big": "https://api.hcportal.eu/media/1410/conversions/44031677516562-big.jpg",
+              "large": "https://api.hcportal.eu/media/1410/conversions/44031677516562-large.jpg",
+              "original": "https://api.hcportal.eu/media/1410/44031677516562.jpg"
+            }
+          }
+        ]
+      }
+    ],
+    "created_at": "2025-11-20 09:34:50",
+    "updated_at": "2025-11-20 09:34:55"
+  },
+  "503": {
+    "id": 503,
+    "cipher_key_id": null,
+    "name": "hstam_4_h_1411_0015-0017",
+    "description": "<p>Message from the year 1637. Description form the archive: \"Korrespondenz in Chiffren mit dem Generalkommissar Otto v.d. Malsburg betr. Kriegf\u00fchrung in M\u00fcnster und Westfalen\" </p><p>(translated: Encrypted correspondence with the General Commissioner Otto v.d. Malsburg concerning warfare in M\u00fcnster and Westphalia)</p>",
+    "availability_type": "archive",
+    "availability": null,
+    "category": {
+      "id": 1,
+      "name": "Unknown",
+      "children": []
+    },
+    "sub_category": null,
+    "date": "1637-01-30T00:00:00.000000Z",
+    "date_around": null,
+    "thumb": "https://api.hcportal.eu/media/1411/conversions/41991677516785-large.jpg",
+    "used_chars": null,
+    "language": {
+      "id": 8,
+      "name": "German"
+    },
+    "location": {
+      "id": 3,
+      "continent": "Europe",
+      "name": null
+    },
+    "recipient": {
+      "id": 2,
+      "name": "Unknown"
+    },
+    "sender": {
+      "id": 2,
+      "name": "Unknown"
+    },
+    "solution": {
+      "id": 1,
+      "name": "Not solved"
+    },
+    "folder": {
+      "id": 10,
+      "name": "Folder 1411",
+      "fond_id": 7,
+      "fond": {
+        "id": 7,
+        "name": "4 h - Kriegssachen",
+        "archive_id": 4,
+        "archive": {
+          "id": 4,
+          "name": "Hessisches Staatsarchiv Marburg"
+        }
+      }
+    },
+    "state": {
+      "id": "approved",
+      "title": "Approved",
+      "show": true
+    },
+    "created_by": {
+      "id": 2,
+      "first_name": "Eugen",
+      "last_name": "Antal"
+    },
+    "note": null,
+    "tags": [],
+    "datagroups": [
+      {
+        "id": 953,
+        "description": "Cryptogram",
+        "data": [
+          {
+            "id": 1147,
+            "title": "hstam_4_h_1411_0015",
+            "type": "image",
+            "image": {
+              "thumb": "https://api.hcportal.eu/media/1412/conversions/99161677516786-thumb.jpg",
+              "big": "https://api.hcportal.eu/media/1412/conversions/99161677516786-big.jpg",
+              "large": "https://api.hcportal.eu/media/1412/conversions/99161677516786-large.jpg",
+              "original": "https://api.hcportal.eu/media/1412/99161677516786.jpg"
+            }
+          },
+          {
+            "id": 1148,
+            "title": "hstam_4_h_1411_0016",
+            "type": "image",
+            "image": {
+              "thumb": "https://api.hcportal.eu/media/1413/conversions/47171677516786-thumb.jpg",
+              "big": "https://api.hcportal.eu/media/1413/conversions/47171677516786-big.jpg",
+              "large": "https://api.hcportal.eu/media/1413/conversions/47171677516786-large.jpg",
+              "original": "https://api.hcportal.eu/media/1413/47171677516786.jpg"
+            }
+          },
+          {
+            "id": 1149,
+            "title": "hstam_4_h_1411_0017",
+            "type": "image",
+            "image": {
+              "thumb": "https://api.hcportal.eu/media/1414/conversions/46611677516786-thumb.jpg",
+              "big": "https://api.hcportal.eu/media/1414/conversions/46611677516786-big.jpg",
+              "large": "https://api.hcportal.eu/media/1414/conversions/46611677516786-large.jpg",
+              "original": "https://api.hcportal.eu/media/1414/46611677516786.jpg"
+            }
+          }
+        ]
+      }
+    ],
+    "created_at": "2025-11-20 09:34:55",
+    "updated_at": "2025-11-20 09:35:06"
+  },
+  "504": {
+    "id": 504,
+    "cipher_key_id": null,
+    "name": "hstam_4_h_1411_0018",
+    "description": "<p>Message from the year 1637. Description form the archive: \"Korrespondenz in Chiffren mit dem Generalkommissar Otto v.d. Malsburg betr. Kriegf\u00fchrung in M\u00fcnster und Westfalen\" </p><p>(translated: Encrypted correspondence with the General Commissioner Otto v.d. Malsburg concerning warfare in M\u00fcnster and Westphalia)</p>",
+    "availability_type": "archive",
+    "availability": null,
+    "category": {
+      "id": 1,
+      "name": "Unknown",
+      "children": []
+    },
+    "sub_category": null,
+    "date": "1637-02-14T00:00:00.000000Z",
+    "date_around": null,
+    "thumb": "https://api.hcportal.eu/media/1415/conversions/21561677516953-large.jpg",
+    "used_chars": null,
+    "language": {
+      "id": 8,
+      "name": "German"
+    },
+    "location": {
+      "id": 3,
+      "continent": "Europe",
+      "name": null
+    },
+    "recipient": {
+      "id": 2,
+      "name": "Unknown"
+    },
+    "sender": {
+      "id": 2,
+      "name": "Unknown"
+    },
+    "solution": {
+      "id": 1,
+      "name": "Not solved"
+    },
+    "folder": {
+      "id": 10,
+      "name": "Folder 1411",
+      "fond_id": 7,
+      "fond": {
+        "id": 7,
+        "name": "4 h - Kriegssachen",
+        "archive_id": 4,
+        "archive": {
+          "id": 4,
+          "name": "Hessisches Staatsarchiv Marburg"
+        }
+      }
+    },
+    "state": {
+      "id": "approved",
+      "title": "Approved",
+      "show": true
+    },
+    "created_by": {
+      "id": 2,
+      "first_name": "Eugen",
+      "last_name": "Antal"
+    },
+    "note": null,
+    "tags": [],
+    "datagroups": [
+      {
+        "id": 954,
+        "description": "Cryptogram",
+        "data": [
+          {
+            "id": 1150,
+            "title": "hstam_4_h_1411_0018",
+            "type": "image",
+            "image": {
+              "thumb": "https://api.hcportal.eu/media/1416/conversions/49641677516954-thumb.jpg",
+              "big": "https://api.hcportal.eu/media/1416/conversions/49641677516954-big.jpg",
+              "large": "https://api.hcportal.eu/media/1416/conversions/49641677516954-large.jpg",
+              "original": "https://api.hcportal.eu/media/1416/49641677516954.jpg"
+            }
+          }
+        ]
+      }
+    ],
+    "created_at": "2025-11-20 09:35:06",
+    "updated_at": "2025-11-20 09:35:11"
+  },
+  "505": {
+    "id": 505,
+    "cipher_key_id": null,
+    "name": "hstam_4_h_1411_0023-0024",
+    "description": "<p>Message from the year 1637. Description form the archive: \"Korrespondenz in Chiffren mit dem Generalkommissar Otto v.d. Malsburg betr. Kriegf\u00fchrung in M\u00fcnster und Westfalen\" </p><p>(translated: Encrypted correspondence with the General Commissioner Otto v.d. Malsburg concerning warfare in M\u00fcnster and Westphalia)</p>",
+    "availability_type": "archive",
+    "availability": null,
+    "category": {
+      "id": 1,
+      "name": "Unknown",
+      "children": []
+    },
+    "sub_category": null,
+    "date": "1637-02-07T00:00:00.000000Z",
+    "date_around": null,
+    "thumb": "https://api.hcportal.eu/media/1417/conversions/36031677517141-large.jpg",
+    "used_chars": null,
+    "language": {
+      "id": 8,
+      "name": "German"
+    },
+    "location": {
+      "id": 3,
+      "continent": "Europe",
+      "name": null
+    },
+    "recipient": {
+      "id": 2,
+      "name": "Unknown"
+    },
+    "sender": {
+      "id": 2,
+      "name": "Unknown"
+    },
+    "solution": {
+      "id": 1,
+      "name": "Not solved"
+    },
+    "folder": {
+      "id": 10,
+      "name": "Folder 1411",
+      "fond_id": 7,
+      "fond": {
+        "id": 7,
+        "name": "4 h - Kriegssachen",
+        "archive_id": 4,
+        "archive": {
+          "id": 4,
+          "name": "Hessisches Staatsarchiv Marburg"
+        }
+      }
+    },
+    "state": {
+      "id": "approved",
+      "title": "Approved",
+      "show": true
+    },
+    "created_by": {
+      "id": 2,
+      "first_name": "Eugen",
+      "last_name": "Antal"
+    },
+    "note": null,
+    "tags": [],
+    "datagroups": [
+      {
+        "id": 955,
+        "description": "Cryptogram",
+        "data": [
+          {
+            "id": 1151,
+            "title": "hstam_4_h_1411_0023",
+            "type": "image",
+            "image": {
+              "thumb": "https://api.hcportal.eu/media/1418/conversions/48081677517143-thumb.jpg",
+              "big": "https://api.hcportal.eu/media/1418/conversions/48081677517143-big.jpg",
+              "large": "https://api.hcportal.eu/media/1418/conversions/48081677517143-large.jpg",
+              "original": "https://api.hcportal.eu/media/1418/48081677517143.jpg"
+            }
+          },
+          {
+            "id": 1152,
+            "title": "hstam_4_h_1411_0024",
+            "type": "image",
+            "image": {
+              "thumb": "https://api.hcportal.eu/media/1419/conversions/75551677517143-thumb.jpg",
+              "big": "https://api.hcportal.eu/media/1419/conversions/75551677517143-big.jpg",
+              "large": "https://api.hcportal.eu/media/1419/conversions/75551677517143-large.jpg",
+              "original": "https://api.hcportal.eu/media/1419/75551677517143.jpg"
+            }
+          }
+        ]
+      }
+    ],
+    "created_at": "2025-11-20 09:35:11",
+    "updated_at": "2025-11-20 09:35:17"
+  },
+  "506": {
+    "id": 506,
+    "cipher_key_id": null,
+    "name": "hstam_4_h_1411_0025",
+    "description": "<p>Message from the year 1637. Description form the archive: \"Korrespondenz in Chiffren mit dem Generalkommissar Otto v.d. Malsburg betr. Kriegf\u00fchrung in M\u00fcnster und Westfalen\" </p><p>(translated: Encrypted correspondence with the General Commissioner Otto v.d. Malsburg concerning warfare in M\u00fcnster and Westphalia)</p>",
+    "availability_type": "archive",
+    "availability": null,
+    "category": {
+      "id": 1,
+      "name": "Unknown",
+      "children": []
+    },
+    "sub_category": null,
+    "date": "1636-02-23T00:00:00.000000Z",
+    "date_around": null,
+    "thumb": "https://api.hcportal.eu/media/1420/conversions/72751677517265-large.jpg",
+    "used_chars": null,
+    "language": {
+      "id": 8,
+      "name": "German"
+    },
+    "location": {
+      "id": 3,
+      "continent": "Europe",
+      "name": null
+    },
+    "recipient": {
+      "id": 2,
+      "name": "Unknown"
+    },
+    "sender": {
+      "id": 2,
+      "name": "Unknown"
+    },
+    "solution": {
+      "id": 1,
+      "name": "Not solved"
+    },
+    "folder": {
+      "id": 10,
+      "name": "Folder 1411",
+      "fond_id": 7,
+      "fond": {
+        "id": 7,
+        "name": "4 h - Kriegssachen",
+        "archive_id": 4,
+        "archive": {
+          "id": 4,
+          "name": "Hessisches Staatsarchiv Marburg"
+        }
+      }
+    },
+    "state": {
+      "id": "approved",
+      "title": "Approved",
+      "show": true
+    },
+    "created_by": {
+      "id": 2,
+      "first_name": "Eugen",
+      "last_name": "Antal"
+    },
+    "note": null,
+    "tags": [],
+    "datagroups": [
+      {
+        "id": 956,
+        "description": "Cryptogram",
+        "data": [
+          {
+            "id": 1153,
+            "title": "hstam_4_h_1411__0025",
+            "type": "image",
+            "image": {
+              "thumb": "https://api.hcportal.eu/media/1421/conversions/26761677517266-thumb.jpg",
+              "big": "https://api.hcportal.eu/media/1421/conversions/26761677517266-big.jpg",
+              "large": "https://api.hcportal.eu/media/1421/conversions/26761677517266-large.jpg",
+              "original": "https://api.hcportal.eu/media/1421/26761677517266.jpg"
+            }
+          }
+        ]
+      }
+    ],
+    "created_at": "2025-11-20 09:35:17",
+    "updated_at": "2025-11-20 09:35:21"
+  },
+  "507": {
+    "id": 507,
+    "cipher_key_id": null,
+    "name": "hstam_4_h_1411_0028-0029",
+    "description": "<p>Message from the year 1637.  Description form the archive: \"Korrespondenz in Chiffren mit dem Generalkommissar Otto v.d. Malsburg betr. Kriegf\u00fchrung in M\u00fcnster und Westfalen\" </p><p>(translated: Encrypted correspondence with the General Commissioner Otto v.d. Malsburg concerning warfare in M\u00fcnster and Westphalia)</p>",
+    "availability_type": "archive",
+    "availability": null,
+    "category": {
+      "id": 1,
+      "name": "Unknown",
+      "children": []
+    },
+    "sub_category": null,
+    "date": "1637-03-28T00:00:00.000000Z",
+    "date_around": null,
+    "thumb": "https://api.hcportal.eu/media/1422/conversions/15801677519685-large.jpg",
+    "used_chars": null,
+    "language": {
+      "id": 8,
+      "name": "German"
+    },
+    "location": {
+      "id": 3,
+      "continent": "Europe",
+      "name": null
+    },
+    "recipient": {
+      "id": 2,
+      "name": "Unknown"
+    },
+    "sender": {
+      "id": 2,
+      "name": "Unknown"
+    },
+    "solution": {
+      "id": 1,
+      "name": "Not solved"
+    },
+    "folder": {
+      "id": 10,
+      "name": "Folder 1411",
+      "fond_id": 7,
+      "fond": {
+        "id": 7,
+        "name": "4 h - Kriegssachen",
+        "archive_id": 4,
+        "archive": {
+          "id": 4,
+          "name": "Hessisches Staatsarchiv Marburg"
+        }
+      }
+    },
+    "state": {
+      "id": "approved",
+      "title": "Approved",
+      "show": true
+    },
+    "created_by": {
+      "id": 2,
+      "first_name": "Eugen",
+      "last_name": "Antal"
+    },
+    "note": null,
+    "tags": [],
+    "datagroups": [
+      {
+        "id": 957,
+        "description": "Cryptogram",
+        "data": [
+          {
+            "id": 1154,
+            "title": "hstam_4_h_1411_0028",
+            "type": "image",
+            "image": {
+              "thumb": "https://api.hcportal.eu/media/1423/conversions/41881677519687-thumb.jpg",
+              "big": "https://api.hcportal.eu/media/1423/conversions/41881677519687-big.jpg",
+              "large": "https://api.hcportal.eu/media/1423/conversions/41881677519687-large.jpg",
+              "original": "https://api.hcportal.eu/media/1423/41881677519687.jpg"
+            }
+          },
+          {
+            "id": 1155,
+            "title": "hstam_4_h_1411_0029",
+            "type": "image",
+            "image": {
+              "thumb": "https://api.hcportal.eu/media/1424/conversions/16721677519687-thumb.jpg",
+              "big": "https://api.hcportal.eu/media/1424/conversions/16721677519687-big.jpg",
+              "large": "https://api.hcportal.eu/media/1424/conversions/16721677519687-large.jpg",
+              "original": "https://api.hcportal.eu/media/1424/16721677519687.jpg"
+            }
+          }
+        ]
+      }
+    ],
+    "created_at": "2025-11-20 09:35:21",
+    "updated_at": "2025-11-20 09:35:27"
+  },
+  "508": {
+    "id": 508,
+    "cipher_key_id": null,
+    "name": "hstam_4_h_1411_0030-0031",
+    "description": "<p>Message from the year 1637.  Description form the archive: \"Korrespondenz in Chiffren mit dem Generalkommissar Otto v.d. Malsburg betr. Kriegf\u00fchrung in M\u00fcnster und Westfalen\" </p><p>(translated: Encrypted correspondence with the General Commissioner Otto v.d. Malsburg concerning warfare in M\u00fcnster and Westphalia)</p>",
+    "availability_type": "archive",
+    "availability": null,
+    "category": {
+      "id": 1,
+      "name": "Unknown",
+      "children": []
+    },
+    "sub_category": null,
+    "date": "1637-03-28T00:00:00.000000Z",
+    "date_around": null,
+    "thumb": "https://api.hcportal.eu/media/1425/conversions/78841677519839-large.jpg",
+    "used_chars": null,
+    "language": {
+      "id": 8,
+      "name": "German"
+    },
+    "location": {
+      "id": 3,
+      "continent": "Europe",
+      "name": null
+    },
+    "recipient": {
+      "id": 2,
+      "name": "Unknown"
+    },
+    "sender": {
+      "id": 2,
+      "name": "Unknown"
+    },
+    "solution": {
+      "id": 1,
+      "name": "Not solved"
+    },
+    "folder": {
+      "id": 10,
+      "name": "Folder 1411",
+      "fond_id": 7,
+      "fond": {
+        "id": 7,
+        "name": "4 h - Kriegssachen",
+        "archive_id": 4,
+        "archive": {
+          "id": 4,
+          "name": "Hessisches Staatsarchiv Marburg"
+        }
+      }
+    },
+    "state": {
+      "id": "approved",
+      "title": "Approved",
+      "show": true
+    },
+    "created_by": {
+      "id": 2,
+      "first_name": "Eugen",
+      "last_name": "Antal"
+    },
+    "note": null,
+    "tags": [],
+    "datagroups": [
+      {
+        "id": 958,
+        "description": "Cryptogram",
+        "data": [
+          {
+            "id": 1156,
+            "title": "hstam_4_h_1411_0030",
+            "type": "image",
+            "image": {
+              "thumb": "https://api.hcportal.eu/media/1426/conversions/23311677519840-thumb.jpg",
+              "big": "https://api.hcportal.eu/media/1426/conversions/23311677519840-big.jpg",
+              "large": "https://api.hcportal.eu/media/1426/conversions/23311677519840-large.jpg",
+              "original": "https://api.hcportal.eu/media/1426/23311677519840.jpg"
+            }
+          },
+          {
+            "id": 1157,
+            "title": "hstam_4_h_1411_0031",
+            "type": "image",
+            "image": {
+              "thumb": "https://api.hcportal.eu/media/1427/conversions/99171677519840-thumb.jpg",
+              "big": "https://api.hcportal.eu/media/1427/conversions/99171677519840-big.jpg",
+              "large": "https://api.hcportal.eu/media/1427/conversions/99171677519840-large.jpg",
+              "original": "https://api.hcportal.eu/media/1427/99171677519840.jpg"
+            }
+          }
+        ]
+      }
+    ],
+    "created_at": "2025-11-20 09:35:27",
+    "updated_at": "2025-11-20 09:35:32"
+  },
+  "509": {
+    "id": 509,
+    "cipher_key_id": null,
+    "name": "hstam_4_h_1411_0032-0033",
+    "description": "<p>Three messages from the year 1637. Description form the archive: \"Korrespondenz in Chiffren mit dem Generalkommissar Otto v.d. Malsburg betr. Kriegf\u00fchrung in M\u00fcnster und Westfalen\" </p><p>(translated: Encrypted correspondence with the General Commissioner Otto v.d. Malsburg concerning warfare in M\u00fcnster and Westphalia)</p>",
+    "availability_type": "archive",
+    "availability": null,
+    "category": {
+      "id": 1,
+      "name": "Unknown",
+      "children": []
+    },
+    "sub_category": null,
+    "date": null,
+    "date_around": "1637",
+    "thumb": "https://api.hcportal.eu/media/1428/conversions/68601677519991-large.jpg",
+    "used_chars": null,
+    "language": {
+      "id": 8,
+      "name": "German"
+    },
+    "location": {
+      "id": 3,
+      "continent": "Europe",
+      "name": null
+    },
+    "recipient": {
+      "id": 2,
+      "name": "Unknown"
+    },
+    "sender": {
+      "id": 2,
+      "name": "Unknown"
+    },
+    "solution": {
+      "id": 1,
+      "name": "Not solved"
+    },
+    "folder": {
+      "id": 10,
+      "name": "Folder 1411",
+      "fond_id": 7,
+      "fond": {
+        "id": 7,
+        "name": "4 h - Kriegssachen",
+        "archive_id": 4,
+        "archive": {
+          "id": 4,
+          "name": "Hessisches Staatsarchiv Marburg"
+        }
+      }
+    },
+    "state": {
+      "id": "approved",
+      "title": "Approved",
+      "show": true
+    },
+    "created_by": {
+      "id": 2,
+      "first_name": "Eugen",
+      "last_name": "Antal"
+    },
+    "note": null,
+    "tags": [],
+    "datagroups": [
+      {
+        "id": 959,
+        "description": "Cryptogram",
+        "data": [
+          {
+            "id": 1158,
+            "title": "hstam_4_h_1411_0032",
+            "type": "image",
+            "image": {
+              "thumb": "https://api.hcportal.eu/media/1429/conversions/37921677519992-thumb.jpg",
+              "big": "https://api.hcportal.eu/media/1429/conversions/37921677519992-big.jpg",
+              "large": "https://api.hcportal.eu/media/1429/conversions/37921677519992-large.jpg",
+              "original": "https://api.hcportal.eu/media/1429/37921677519992.jpg"
+            }
+          },
+          {
+            "id": 1159,
+            "title": "hstam_4_h_1411_0033",
+            "type": "image",
+            "image": {
+              "thumb": "https://api.hcportal.eu/media/1430/conversions/97331677519992-thumb.jpg",
+              "big": "https://api.hcportal.eu/media/1430/conversions/97331677519992-big.jpg",
+              "large": "https://api.hcportal.eu/media/1430/conversions/97331677519992-large.jpg",
+              "original": "https://api.hcportal.eu/media/1430/97331677519992.jpg"
+            }
+          }
+        ]
+      }
+    ],
+    "created_at": "2025-11-20 09:35:32",
+    "updated_at": "2025-11-20 09:35:38"
+  }
+}
