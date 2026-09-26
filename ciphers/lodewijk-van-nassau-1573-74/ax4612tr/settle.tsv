@@ -1,31 +1,31 @@
 page	line	pos	A	B	settled	why
-p1	p1_r04	27	(none)	9	?	unsettled -- ambiguous or not checked against image within the box
-p1	p1_r04	12	51	81	?	unsettled -- ambiguous or not checked against image within the box
+p1	p1_r04	27	(none)	9	9	"settled-image(AX2-4612): own zoom confirms a small ""9"" at the right margin after ""25,"", present in the manuscript but missed by passA (not on a page-edge fold visible in the image; passA's own read simply stops one token short)"
+p1	p1_r04	12	51	81	81	"settled-image(AX2-4612): own zoom confirms passB 81 (loop-8 shape matches the ""81"" at r04 pos17, distinct from the ""31"" shapes beside it); passA misread the digit-shape (8/5-like confusion)"
 p1	p1_r04	26	67	68	68	settled-image(AX-4612TR2): passB 68 confirmed, passA misread 67
-p1	p1_r05	21	73	13	?	unsettled -- ambiguous or not checked against image within the box
+p1	p1_r05	21	73	13	13	settled-image(AX2-4612): own zoom confirms passB 13; passA misread
 p1	p1_r06	6	8A	84	84	"settled-image(AX-4612TR2): passB 84 confirmed, passA garbled ""8A"""
 p1	p1_r06	12	113	118	118	settled-image(AX-4612TR2): passB 118 confirmed, passA misread 113
-p1	p1_r06	18	74	34	?	unsettled -- ambiguous or not checked against image within the box
+p1	p1_r06	18	74	34	34	settled-image(AX2-4612): own zoom confirms passB 34; passA misread 74
 p1	p1_r07	7	53	83	83	settled-image(AX-4612TR2): passB 83 confirmed, passA misread 53
 p1	p1_r07	8	74	97	97	settled-image(AX-4612TR2): passB 97 confirmed, passA misread 74
-p1	p1_r09	5	28	22	?	unsettled -- ambiguous or not checked against image within the box
+p1	p1_r09	5	28	22	22	settled-image(AX2-4612): own zoom confirms passB 22; passA misread 28
 p1	p1_r09	11	113	13	13	settled-image(AX-4612TR2): passB 13 confirmed (compact glyph), passA misread 113
-p1	p1_r10	3	10	20	?	unsettled -- ambiguous or not checked against image within the box
-p1	p1_r10	4	38	78	?	unsettled -- ambiguous or not checked against image within the box
-p1	p1_r10	25	38	88	?	unsettled -- ambiguous or not checked against image within the box
+p1	p1_r10	3	10	20	10	"settled-image(AX2-4612): own zoom confirms passA 10 (straight ""1"" stroke, not the curved ""2""); passB misread 20"
+p1	p1_r10	4	38	78	38	"settled-image(AX2-4612): own zoom confirms passA 38 (looped ""3"", not the straight-diagonal ""7""); passB misread 78"
+p1	p1_r10	25	38	88	38	settled-image(AX2-4612): own zoom confirms passA 38 (last token of the line, before the paragraph-end dash); passB misread 88
 p1	p1_r11	15	130	150	150	settled-image(AX-4612TR2): passB 150 confirmed, passA misread 130
 p1	p1_r14	23	133	135	135	settled-image(AX-4612TR2): passB 135 confirmed, passA misread 133
 p1	p1_r15	2	74	34	34	settled-image(AX-4612TR2): passB 34 confirmed, passA misread 74
 p1	p1_r15	16	77	73	73	settled-image(AX-4612TR2): passB 73, moderate confidence, passA misread 77
 p1	p1_r17	9	87	37	87	settled-image(AX-4612TR2): passA 87 confirmed, passB misread 37
-p1	p1_r22	20	34	84	?	unsettled -- ambiguous or not checked against image within the box
-p1	p1_r22	22	23	28	?	unsettled -- ambiguous or not checked against image within the box
-p1	p1_r23	7	130	150	?	unsettled -- ambiguous or not checked against image within the box
-p1	p1_r26	7	51	81	?	unsettled -- ambiguous or not checked against image within the box
-p1	p1_r26	8	34	84	?	unsettled -- ambiguous or not checked against image within the box
-p1	p1_r33	22	109	=Wesel	?	unsettled -- ambiguous or not checked against image within the box
-p1	p1_r35	22	33	37	?	unsettled -- ambiguous or not checked against image within the box
-p1	p1_r36	4	51	81	?	unsettled -- ambiguous or not checked against image within the box
+p1	p1_r22	20	34	84	34	settled-image(AX2-4612): own zoom confirms passA 34; passB misread 84
+p1	p1_r22	22	23	28	23	settled-image(AX2-4612): own zoom confirms passA 23; passB misread 28
+p1	p1_r23	7	130	150	150	"settled-image(AX2-4612): own zoom confirms passB 150 (rounded ""5"" loop, matches ""150"" elsewhere on the page, distinct from the ""3"" in the neighbouring ""138""); passA misread 130"
+p1	p1_r26	7	51	81	51	"settled-image(AX2-4612): own zoom confirms passA 51 (open ""5"" hook, distinct from the ""8"" double-loop at the next position); passB misread 81"
+p1	p1_r26	8	34	84	84	settled-image(AX2-4612): own zoom confirms passB 84; passA misread 34
+p1	p1_r33	22	109	=Wesel	=Wesel	"settled-image(AX2-4612): own zoom shows a genuine cursive word here (a tall looping ascender, not a numeral shape), consistent with passB's clear-word reading ""Wesel"" (a Rhine town, plausible in this military context); passA misread the word as the numeral 109"
+p1	p1_r35	22	33	37	33	"settled-image(AX2-4612): own zoom confirms passA 33 (two looped ""3""s, both matching the ""33"" shape elsewhere on the page); passB misread 37"
+p1	p1_r36	4	51	81	51	"settled-image(AX2-4612): own zoom confirms passA 51 (open ""5"" hook, distinct from ""8""); passB misread 81"
 p2	p2_r07	12	33	83	83	settled-image(AX-4612TR2): passB 83 confirmed, passA misread 33
 p2	p2_r08	3	33	83	83	settled-image(AX-4612TR2): passB 83 confirmed, passA misread 33
 p2	p2_r08	13	12	120	120	settled-image(AX-4612TR2): passB 120 confirmed, passA misread 12

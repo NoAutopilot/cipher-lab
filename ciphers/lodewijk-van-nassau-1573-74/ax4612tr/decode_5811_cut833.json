@@ -1,0 +1,54 @@
+{
+ "target": "ciphers/lodewijk-van-nassau-1573-74",
+ "jobs": [
+  {
+   "ciphertext": "ax4612tr/ciphertext_5811_cut833.tsv",
+   "key": "key_full.tsv",
+   "format": "tsv",
+   "style": "concat",
+   "clear_prefix": "=",
+   "nonsign": [
+    "[blank]",
+    "[blot]",
+    "[spot]"
+   ],
+   "null_values": [
+    "NULL"
+   ],
+   "unknown_values": [
+    "",
+    "?"
+   ],
+   "default_grade": "S",
+   "reading": "ax4612tr/reading_5811_cut833.txt",
+   "tokens": "ax4612tr/reading_5811_cut833_tokens.tsv",
+   "header": [
+    "# AX2-4612 (26 Sept 2026): 5811 (known reading), first 833 value-1-120 numerals -- matches 4612 v3's N",
+    "# for the word-share and judge positive control (NOTES.md AX2-4612). Not a target reading.",
+    "# tokens {total}: {HCSMIU}"
+   ],
+   "token_columns": [
+    [
+     "line",
+     "line"
+    ],
+    [
+     "idx",
+     "pos"
+    ],
+    [
+     "sign",
+     "raw"
+    ],
+    [
+     "value",
+     "value"
+    ],
+    [
+     "grade",
+     "grade"
+    ]
+   ]
+  }
+ ]
+}

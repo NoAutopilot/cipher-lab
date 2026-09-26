@@ -2032,3 +2032,110 @@ required by this pass's brief.
 Files: `ciphers/lodewijk-van-nassau-1573-74/{images_manifest_full.tsv,regen_images.sh,images/**,NOTES.md}` (this
 section). Hosts: resources.huygens.knaw.nl, 2 requests (page test only; crop test read the just-fetched page
 from disk).
+
+## AX2-4612: 4612 v3, key_full decode and key-seeded anneal (26 Sept 2026, LANE AX2)
+
+Worker AX2-4612 (Sonnet), brief `.claude/briefs/runs/2026-09-26-lane-ax2-4612.md`, started 05:22 UTC (clock
+read), box 90 min. Intake gate as in AX-MERGE/AX-MERGE3 (target `partial`, edition/page citation found within
+6 lines). Why this job (from the brief): under key.tsv, v2 decodes to recurring non-French clusters ("yus"
+where "vous" would sit, "zur" where "pour" would sit) that look like a small consistent code substitution
+rather than noise; v2's French-word share was 68.6% against a 20-shuffle mean of 41.5%/max 61.3%. AX-4612's
+own block/homophonic negatives ran on the 47.8%-agreement transcription (superseded by AX-4612TR2's v2, 88.3%/
+74.3%) and are not tests of the settled letter.
+
+**Unit 1: settling the 16 open numerals (`ax4612tr/settle.tsv`).** Crop step run first, per COMMON's mandatory
+convention (though most positions needed a second, tighter re-crop of the exact token once the first pass
+located the right physical line -- see the individual commands below, all against the same already-fetched
+source page, no re-fetch):
+```
+python3 tools/iiif_lines.py --image ciphers/lodewijk-van-nassau-1573-74/images_wv2/crops_4612/src_04612_p1.png --region 0,150,2481,900 --out <scratchpad> --prefix p1seg1 --distance 60 --prominence 40 --lines-per-crop 1 --debug
+python3 tools/iiif_lines.py --image ciphers/lodewijk-van-nassau-1573-74/images_wv2/crops_4612/src_04612_p1.png --region 0,1850,2481,650 --out <scratchpad> --prefix p1seg2 --distance 60 --prominence 40 --lines-per-crop 1 --debug --dry-run
+```
+The existing `p1_L*.jpg` crops from AX-4612TR do not correspond 1:1 to the passes' own r-lines (confirmed
+again this session, same finding as AX-4612TR2's own note) -- each of the 16 positions was located by matching
+its line's numeral/word content against passA/passB's own tokenised rows (`ax4612tr/passA_p1.tsv`,
+`passB_p1.tsv`), then a tight PIL crop (3-6x zoom) of the exact token region cut directly from
+`src_04612_p1.png` (already on disk, no network) to read the disputed digit myself. Every one of the 16 rows
+in `settle.tsv` was checked this way; none needed `alt` (all resolved with reasonable confidence from the
+glyph shapes, cross-checked against unambiguous instances of the same digit elsewhere on the same page --
+e.g. 5 vs 8 by hook-vs-double-loop, 1 vs 2 by straight-vs-curved stroke, 3 vs 7 by loop-vs-diagonal). Result,
+`ax4612tr/settle.tsv` all 16 rows now `S`-graded (was AX-4612TR2's `p1_r04`/`p1_r33` etc. `?` rows):
+
+| page/line/pos | A | B | settled | note |
+|---|---|---|---|---|
+| p1_r04 pos27 | (none) | 9 | **9** | passB confirmed: a small "9" really is written after "25," at the extreme right margin (`row3_rightedge2.png`); passA's crop simply stopped one token short, nothing on a page fold |
+| p1_r04 pos12 | 51 | 81 | **81** | passB confirmed; glyph matches the unambiguous "81" three tokens later on the same line |
+| p1_r05 pos21 | 73 | 13 | **13** | passB confirmed |
+| p1_r06 pos18 | 74 | 34 | **34** | passB confirmed |
+| p1_r09 pos5 | 28 | 22 | **22** | passB confirmed |
+| p1_r10 pos3 | 10 | 20 | **10** | passA confirmed (straight "1" stroke, not curved "2") |
+| p1_r10 pos4 | 38 | 78 | **38** | passA confirmed (looped "3", not diagonal "7") |
+| p1_r10 pos25 | 38 | 88 | **38** | passA confirmed (last token before the paragraph-end dash) |
+| p1_r22 pos20 | 34 | 84 | **34** | passA confirmed |
+| p1_r22 pos22 | 23 | 28 | **23** | passA confirmed |
+| p1_r23 pos7 | 130 | 150 | **150** | passB confirmed (rounded "5" loop, distinct from the "3" in the neighbouring "138") |
+| p1_r26 pos7 | 51 | 81 | **51** | passA confirmed (open "5" hook, distinct from the "8" double-loop next to it) |
+| p1_r26 pos8 | 34 | 84 | **84** | passB confirmed |
+| p1_r33 pos22 | 109 | =Wesel | **=Wesel** | passB confirmed: this is a genuine cursive **word**, not a numeral -- a tall looping ascender, no digit shapes; consistent with Wesel, a Rhine town, a plausible place-name in this military correspondence. passA misread a word as a number. |
+| p1_r35 pos22 | 33 | 37 | **33** | passA confirmed (two matching "3" loops) |
+| p1_r36 pos4 | 51 | 81 | **51** | passA confirmed |
+
+Split 8 passA / 7 passB / 1 word-not-number, close to even -- neither pass is systematically more reliable at
+this length. `ciphertext_4612_v3.tsv` (1237 rows, same convention as v2; 833 value-1-120 numerals, up from
+v2's 819 -- p1_r33's settlement moved one token from the numeral count to a clear word, and the r04/pos27
+insertion added one) built by `ax4612tr/build_v3.py` (extends AX-4612TR2's `build_v2.py`, adds this session's
+16 settlements plus one insert-only-token settlement the v2 script's `insert` branch never checked against
+`SETTLEMENTS` at all -- fixed here as `INSERT_SETTLEMENTS`, keyed by passB's own line/position since an
+insert-only token has no passA line/position to key on). 154 `?` remain (all clear-word wording disagreements,
+out of this brief's numeral-only scope, e.g. "xxij.me" vs "xxvij", "scay depuis" vs nothing -- a real content
+difference between the two blind readings of the salutation, not investigated here).
+
+**Unit 2: decode v3 under key_full.tsv v3, gate, judge.** `decode_4612_v3.json` (new; key `key_full.tsv`, not
+`key.tsv`, per the brief). `python3 tools/decode_key.py ciphers/lodewijk-van-nassau-1573-74 --config
+decode_4612_v3.json --check` -> `ciphertext_4612_v3.tsv: tokens 1029: C 698, H 1, I 141, M 9, U 180` then
+"reading up to date" after generation.
+
+**Gate, written here at 05:39 UTC before any number below was computed (verbatim from the brief):** "4612 v3
+reads under key_full if its French-word share (word_share_check.py method, fr16) is above the max of 20
+value-shuffles of key_full AND at least 0.85 of the share the same statistic gives 5811's own ciphertext
+(known reading) cut to 4612's N."
+
+`ax4612tr/word_share_check_v3.py` (extends AX-4612TR2's `word_share_check.py` to key_full and adds the 5811
+positive control cut to 4612 v3's N):
+```
+v3 ciphertext_4612_v3.tsv under key_full: 589/833 = 70.7% inside a French word (>=3 letters); N=833 value-1-120 numerals
+v3 through 20 value-shuffled copies of key_full: mean 44.7%, range 33.3-60.6%, max 60.6%
+5811 (known reading) cut to N=833 under key_full: 776/833 = 93.2% inside a French word (>=3 letters)
+
+GATE: v3 70.7% > shuffle max 60.6%? True. v3 70.7% >= 0.85 * 5811-control 93.2% = 79.2%? False.
+GATE VERDICT: does not read under key_full (gate not met)
+```
+v3 clears the shuffle-floor half of the gate comfortably (70.7% vs a 60.6% max of 20 draws -- consistent
+with v2's own 68.6% vs 61.3%, AX-4612TR2, so settling the 16 numerals barely moved this number) but falls
+well short of the 5811-control half: 70.7% is only 0.76 of 5811's 93.2% at the same N, not the required 0.85.
+**Gate not met: 4612 v3 does not read under key_full** by this statistic, though it is well above chance.
+
+**Judge**, both numbers side by side, target then the 5811-cut positive control (same N, same key,
+same corpus):
+```
+python3 tools/judge_plaintext.py specs/lodewijk-4612.json --file ciphers/lodewijk-van-nassau-1573-74/reading_4612_v3.txt
+FAIL language: score=-1.479, null_p99=-1.718, real_p05=-0.929, real_median=-0.815, mode=both, N=1824
+FAIL - lodewijk-van-nassau-1573-74 (a PASS is a gate for a verifier, not a reading; rule 10)
+
+python3 tools/judge_plaintext.py specs/lodewijk-4612.json --file ciphers/lodewijk-van-nassau-1573-74/ax4612tr/reading_5811_cut833.txt
+FAIL language: score=-1.296, null_p99=-1.721, real_p05=-0.931, real_median=-0.82, mode=both, N=1134
+FAIL - lodewijk-van-nassau-1573-74 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+**Per-fold caveat (AX-4612's own finding, unchanged):** fr16 FAILed key.tsv's true 5811/4610 readings at
+N=775 (blended FN 25.7%, folds 7.5/67.5/2.0) -- and it does so again here: the known-real 5811 control
+itself FAILs this judge (-1.296 vs real_p05 -0.931), so the judge cannot decide at this length/register
+regardless of the target. v3's own FAIL (-1.479) is further below the null than the control's FAIL (-1.296
+vs null_p99 -1.718/-1.721), consistent with the word-share gate's own verdict that v3 sits above chance but
+below what real 5811-quality French gives at this N -- both statistics point the same way without either one
+being a clean pass/fail on its own.
+
+**Verdict for unit 2: gate not met.** Per the brief, unit 3 (key-seeded anneal) runs next.
+
+**Unit 3: key-seeded anneal.** `tools/homophonic_anneal.py --init KEY.tsv` added (start the anneal from a
+given sign->letter map instead of a random one; default behaviour unchanged when `--init` is omitted),
+offline test `tools/tests/test_homophonic_anneal_init.py`.
