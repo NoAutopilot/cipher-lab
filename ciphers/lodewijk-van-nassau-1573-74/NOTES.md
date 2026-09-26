@@ -1484,3 +1484,63 @@ Hosts: `resources.huygens.knaw.nl` 2 requests (05550.pdf, 04496.pdf), >=2s apart
 Files: this section; `images_wv2/crops_rederiv/{05550_p2_153-161_gloss.png,05550_p2_153-130-run_gloss.png,
 04496_p4_221_hollando_gloss.png,04496_p4_192_espagne_gloss.png}`; `AUDIT.md` (append only); `SECOND-OPINIONS-QUEUE.tsv`
 (one cell). Novelty not classified (rule 10); no N-class changed (out of scope, per the brief).
+
+## AX-4612TR: 4612 re-transcribed, in progress -- stopped at the wall-clock box (26 Sept 2026, LANE AX)
+
+Worker AX-4612TR (Sonnet), brief `.claude/briefs/runs/2026-09-26-lane-ax-4612tr.md`, 02:27-03:34 UTC (box 75 min).
+Why: AX-4612 (Opus, 02:12) found the committed `ciphertext_4612.tsv` rests on two blind passes that agreed only
+47.8% of aligned columns, and that pass-agreed numerals alone lack the 5-block IC structure the sibling letters
+show (0.063 vs 0.080) -- the transcription, not the key, may be why every cryptanalytic family read as salad.
+
+**Images.** WVO 4612's PDF fetched once (`resources.huygens.knaw.nl/media/wvo/images/04000-04999/04612.pdf`,
+1 request, HTTP 200) -- 3 pages, matching the folder's existing page count. Rendered with `pymupdf` at 300 dpi
+(zoom 300/72) to `images_wv2/crops_4612/src_04612_p{1,2}.png`, 2481x3508 px -- **exactly double the linear
+resolution** of the existing `images/04612_p*.png` (1241x1754, actually ~150 dpi despite AX-GLOSS's "200dpi"
+note), capped under the 2500 px reading limit (2481 px). p3 checked by eye: address/docket leaf only ("Monsieur
+le Prince d'Aurenge", wax seal), no cipher content, consistent with the old file's 0 p3 rows -- not
+transcribed. Line crops cut with `tools/iiif_lines.py --image ... --smooth 3 --distance 60 --prominence 40`
+(default params under-detected, 7-26 lines; tuned params found 39/26 candidate centres, close to the true
+36/23 physical lines including some header/signature over-detection); debug overlays confirm good line
+coverage for both pages. Committed: `images_wv2/crops_4612/{src_04612_p1.png,src_04612_p2.png,manifest.json,
+p{1,2}_L*.jpg,p{1,2}_lines_debug.jpg}` (15 MB).
+
+**Two blind Sonnet subagent passes per page** (one page per call, per brief; general-purpose agent, no prior
+reading shown, instructed on the 1/7, 4/9, 2/3, 5/6, 8/0 confusion pairs named in AX-4612's diagnosis), each
+given the full 2481x3508 page image and asked to number physical lines itself (not told the old line count):
+`ax4612tr/{passA_p1,passA_p2,passB_p1,passB_p2}.tsv`. passA_p1: 37 lines/875 tokens, 12 alt-flagged. passA_p2:
+21 lines/331 tokens, 2 alt-flagged. passB_p1: 38 lines/869 tokens (line 1 is the "6 Mars 74" date header, which
+passA skipped as a header rather than numbering -- a one-line offset between the two p1 passes, corrected before
+comparing). passB_p2: 21 lines/339 tokens, 12 alt-flagged.
+
+**Raw positional agreement** (`ax4612tr/agreement.py`, passB p1 shifted -1 line to align with passA's header
+skip): **p1 702/876 = 80.1%**, a large improvement on AX-4612's 47.8% baseline and a like-for-like comparison
+since p1's numeral runs are comma-delimited and segment the same way in both passes. **p2 180/362 = 49.7%
+positional agreement, but this number is not trustworthy as a disagreement rate**: from p2_r10 onward the two
+passes wrap the same prose into a different number of physical lines each (e.g. p2_r10: passA 12 tokens on the
+line, passB 17 -- passB folds material from what passA calls r11 into r10), so position-in-line stops being the
+same token in both passes from that point on. This is the rule-3 "two renderings under different conventions"
+trap (PX-BRODEC lesson): a bare positional diff here would measure line-wrapping choice, not reading accuracy.
+Not fixed within the box -- needs a content-level (sequence-alignment) reconciliation, not position-in-line, for
+the prose portion of p2. p1's cipher-numeral run is not affected the same way (numerals don't reflow across a
+comma the way cursive prose reflows across a margin), so 80.1% stands as the honest figure for p1.
+
+**Not done -- stopped at 80%+ of the wall-clock box, per COMMON:** `tools/reconcile_passes.py`-style settling of
+each disagreement against the image (only the mechanical positional diff above was run, not a per-token
+settle); `ciphertext_4612_v2.tsv` (not written -- writing one now from the un-settled, mis-aligned p2 data would
+overstate what has actually been checked against the image, contrary to rule 7); the two comparison checks
+named in the brief (key.tsv-through-decode_4612_v2.json French-word share, old vs v2; block-of-5 IC of v2 vs
+4610/4611's 0.080 and a random-block null). **Concrete next step for a successor**: (1) re-align p2 by content
+(word/numeral sequence, not line-position) rather than by line label; (2) settle every disagreement on both
+pages against `images_wv2/crops_4612/src_04612_p{1,2}.png` (already fetched, no re-fetch needed); (3) write
+`ciphertext_4612_v2.tsv` in the existing column convention (line, position, sign, confidence, alt, why); (4) run
+the two checks and paste both numbers here. p1's 80.1% raw figure already clears the brief's 60% gate and is
+worth carrying forward as-is once settled; p2 needs the realignment fix first.
+
+Grades: no reading is claimed here, so no H/C/S/M/I token count applies to this section; this is a
+transcription-fidelity report, not a plaintext reading (rule 4 does not apply to a raw transcription pass).
+Novelty not classified (rule 10, out of scope). Status of the folder unchanged (`partial`).
+
+Files: `images_wv2/crops_4612/**` (source pages, line crops, debug overlays, manifest), `ax4612tr/{passA_p1.tsv,
+passA_p2.tsv,passB_p1.tsv,passB_p2.tsv,agreement.py}`, this section. Hosts: `resources.huygens.knaw.nl` 1 request
+(04612.pdf), >=1.5s n/a (single request). No credentials used. 2 subagents at a time (pass A pair, then pass B
+pair), general-purpose, Sonnet, given only the rendered images (no prior reading). cost: see the lane ledger.
