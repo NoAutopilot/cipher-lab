@@ -173,5 +173,18 @@ if os.path.isfile(real_queue):
 else:
     report("real SEND-QUEUE.tsv exists", False, "not found -- run this test from a checkout that has it")
 
+# --- 11. bilingual draft: disclosure only in the English version under the separator (OUT-CHECK-Q) ----
+DE_BODY = ("Sehr geehrte Damen und Herren,\n\nEine Person leitet das Projekt; KI-Agenten lesen.\n\n[SIGN-OFF]\n\n---\n"
+           "English version (for the person's review):\n\nDear Sir or Madam,\n\n"
+           "One person directs the project and sends every message; AI agents (Claude models) do the reading.\n")
+report("11a German body with English-version disclosure passes the disclosure rung",
+       sq.has_disclosure_substance(DE_BODY))
+report("11b German body whose English version lacks the disclosure still fails",
+       not sq.has_disclosure_substance(DE_BODY.replace("One person directs the project and sends every message; AI agents (Claude models) do the reading.", "We read letters.")))
+# --- 12. form draft with the letter only in form_fields (no top-level body) --------------------------
+report("12a form_message picks the longest form field",
+       sq.form_message({"form_fields": [{"label": "Name", "value": "[OWNER NAME]"}, {"label": "Message", "value": GOOD_BODY}]}) == GOOD_BODY)
+report("12b form_message with no form_fields is empty", sq.form_message({}) == "")
+
 print(f"\n{fails} failure(s)" if fails else "\nall tests passed")
 sys.exit(1 if fails else 0)

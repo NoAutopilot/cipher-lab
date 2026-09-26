@@ -132,14 +132,37 @@ def has_sign_off_placeholder(*texts):
     return any("[SIGN-OFF]" in t for t in texts if t)
 
 
+ENGLISH_VERSION_RE = re.compile(r'^\s*English version\b[^\n]*$', re.IGNORECASE | re.MULTILINE)
+
+
+def disclosure_candidates(text):
+    """The letter's opening, plus -- for a non-English draft (outreach/README.md rule 7) -- the
+    opening of the English version under its "English version ..." separator line, since the
+    disclosure match is English-only. Scope (OUT-CHECK-Q, 26 Sept 2026): catches a German or Dutch
+    draft whose English version carries the disclosure; must NOT pass a draft whose English
+    version lacks it (the English opening is still matched against the same pattern)."""
+    out = [text]
+    for m in ENGLISH_VERSION_RE.finditer(text):
+        out.append(text[m.end():])
+    return out
+
+
 def has_disclosure_substance(*texts):
     for t in texts:
         if not t:
             continue
-        para = first_paragraph(t)
-        if DISCLOSURE_RE.search(para):
-            return True
+        for cand in disclosure_candidates(t):
+            if DISCLOSURE_RE.search(first_paragraph(cand)):
+                return True
     return False
+
+
+def form_message(draft_json):
+    """A form draft may keep its letter only inside form_fields (no top-level `body`): the longest
+    field value is the message (OUT-CHECK-Q, 26 Sept 2026: agr-mercy-quote-form,
+    na-heinsius-quote-form)."""
+    vals = [f.get("value", "") for f in draft_json.get("form_fields") or [] if isinstance(f, dict)]
+    return max(vals, key=len) if vals else ""
 
 
 def checked_lines(md_text):
@@ -183,7 +206,7 @@ def check_row(row, root=ROOT, outreach_dir=None, contributions_path=None):
         import json
         try:
             draft_json = json.loads(draft_text)
-            draft_body = draft_json.get("body", "")
+            draft_body = draft_json.get("body", "") or form_message(draft_json)
         except (ValueError, TypeError):
             missing.append("draft json does not parse")
         kind = row.get("kind", "").strip().lower()
