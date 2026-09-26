@@ -2315,3 +2315,9 @@ Regenerate: `python3 tools/data/it16dip/build.py --raw DIR` (after fetching the 
 Suggestion (not run): job 2b as briefed is not licensed; a cheaper next check is the same control at the target's
 code share, and a vocabulary that can hold the hapax words (SALV-KP's `kp/wordlist.txt` added via a vocab option) --
 only 35-48% of hapax truth words are in the 1,000-word list.
+
+**SALV-CTX2, 26 Sept 2026 (LANE SALV, Sonnet), the named share-matched rerun on `it` (bSALW's corpus): code share now
+0.28-0.33 (matches the target, clears the design mismatch above), gate still not met -- code-class mean +0.037
+(under +0.10), falls on 2 of 3 seeds. Per the job brief and CLAUDE.md rule 3's repeated-attempt paragraph, this was
+the last attempt with this instrument: context option logged untested-by-this-tool at N=2839 (HYPOTHESES.md
+"wordcode + context at the target's code share, SALV-CTX2"), not refuted, no further corpus-swap re-brief.

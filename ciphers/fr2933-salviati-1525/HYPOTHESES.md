@@ -125,3 +125,59 @@ Diagnostics (same controls rebuilt at err=0, no solve, 26 Sept 2026 21:39 UTC):
   not reach the share with this noisier vocabulary. Both arms share the mismatch, so the blind-vs-context comparison
   stands, but a control at the target's code share is not yet run; a rerun there (or on `it`) is the named check
   before this negative is read as a design statement about context scoring.
+
+## wordcode + context at the target's code share, SALV-CTX2 (26 Sept 2026, LANE SALV)
+
+Worker SALV-CTX2 (Sonnet), the share-matched rerun named above, on the default `it` corpus (bSALW's own six
+tools/data/it16 files, spec judge.language "it"), not it16dip. Same command and gate as SALV-CTX, `--corpus`
+dropped so family_run.py resolves the spec's own judge corpus. **This is the last attempt with this instrument
+(CLAUDE.md rule 3, repeated-attempt paragraph): the context option is retired for this target after this run,
+whatever the outcome, not re-briefed for a further knob change.**
+
+Pre-registered gate (unchanged, copied from the SALV-CTX section above before this section's runs): context "adds
+a reproducible margin" if the code-class token accuracy rises by at least 0.10 on the 3-seed mean AND is higher on
+each of the 3 seeds, with blended accuracy not lower on the mean; the blind code-class mean must be under 0.70
+(headroom check, rule 3 Salviati paragraph; if not, stop). Control only; the target is not run.
+
+Command: `python3 tools/family_run.py specs/fr2933-salviati-1525.json --family wordcode --control-only --seeds 3
+--restarts 8 --corpus tools/data/it16 --param err=0.064 --param iters=80000` for (i), plus `--param
+context=control --param ctxshare=1.0` for (ii). Run serially (not in parallel, to avoid the GOLD-K3 CPU-sharing
+lesson); rows written to a scratch --out per run, copied here verbatim.
+
+| date (UTC) | family | parameters | seed(s) | control recovery | target | judge | gated | label |
+|---|---|---|---|---|---|---|---|---|
+| 26 Sept 2026 22:04 | wordcode | N=2839 K=236 restarts=8 corpus=alcuneletteredip00ferr.txt+delleletterefam02seghgoog.txt+lettereinedited00tassgoog.txt+lettereinedited01cibrgoog.txt+lettereineditedi01carouoft.txt+letterescrittea01vanzgoog.txt err=0.064,iters=80000 | 1-3 | 0.633 (0.391-0.759) | not run (control-only) | - | yes | SALV-CTX2 (i) blind, it corpus |
+| 26 Sept 2026 22:08 | wordcode | N=2839 K=236 restarts=8 corpus=alcuneletteredip00ferr.txt+delleletterefam02seghgoog.txt+lettereinedited00tassgoog.txt+lettereinedited01cibrgoog.txt+lettereineditedi01carouoft.txt+letterescrittea01vanzgoog.txt err=0.064,iters=80000,context=control,ctxshare=1.0 | 1-3 | 0.721 (0.666-0.777) | not run (control-only) | - | yes | SALV-CTX2 (ii) context ctxshare=1.0, it corpus |
+
+Code token share per seed, confirmed from stdout before either run counted (target 0.323; brief's 0.28-0.36
+bracket): seed 1 0.326, seed 2 0.309, seed 3 0.28 -- all within bracket (both arms use the same control layout per
+seed, so the shares are identical across (i)/(ii)). This clears the SALV-CTX design mismatch (it16dip read
+0.18-0.30); no bisection tuning was done to force it.
+
+Per seed (token accuracy; codes split hapax/repeated as in the SALV-CTX table; stdout "per class" lines, logs of
+26 Sept 2026 22:02-22:08 UTC):
+
+| run | seed | blended | letters | codes | codes-hapax | codes-repeated |
+|---|---|---|---|---|---|---|
+| (i) blind | 1 | 0.747 | 0.838 | 0.560 | 0.000 (n=123) | 0.646 (n=802) |
+| (i) blind | 2 | 0.391 | 0.462 | 0.233 | 0.000 (n=132) | 0.274 (n=745) |
+| (i) blind | 3 | 0.759 | 0.900 | 0.399 | 0.000 (n=136) | 0.481 (n=659) |
+| (i) blind | mean | 0.633 | 0.733 | **0.397** | 0.000 | 0.467 |
+| (ii) context, ctxshare=1.0 | 1 | 0.777 | 0.898 | 0.526 | 0.000 (n=123) | 0.607 (n=802) |
+| (ii) context, ctxshare=1.0 | 2 | 0.666 | 0.767 | 0.440 | 0.000 (n=132) | 0.518 (n=745) |
+| (ii) context, ctxshare=1.0 | 3 | 0.721 | 0.870 | 0.337 | 0.000 (n=136) | 0.407 (n=659) |
+| (ii) context, ctxshare=1.0 | mean | 0.721 | 0.845 | **0.434** | 0.000 | 0.511 |
+
+Headroom check: blind code-class mean 0.397 < 0.70, so the gate could be tested.
+Gate: code-class mean rises +0.037 (0.397 -> 0.434), under the +0.10 required -- smaller than SALV-CTX's own
++0.072/+0.073 on the design-mismatched it16dip control, i.e. matching the target's code share did not move the
+number toward the gate. Per seed it FALLS on seeds 1 and 3 (0.560 -> 0.526, 0.399 -> 0.337) and rises only on
+seed 2 (0.233 -> 0.440), the blind run's weakest seed -- the same one-seed-only-rises shape as SALV-CTX (there it
+was the blind run's search-failure seed 3; here it is blind's weakest seed 2), not every number moving together
+toward the bet. Blended mean not lower (0.633 -> 0.721).
+
+**Verdict: gate not met.** Per CLAUDE.md rule 3's repeated-attempt paragraph (the design-share knob was the bet
+this re-brief made, and the gate still fails, in the same shape as before, on a control that no longer carries
+the design mismatch): **context option untested-by-this-tool at N=2839 for this target (two controls, it16dip
+and it, both below gate); not refuted.** No further context re-brief on this target without a different
+instrument or new material (a decode script or a differently-scored context term, not another corpus swap).
