@@ -805,6 +805,74 @@ JS = """
     }, function () { if (status) status.textContent = 'Ticks are saved on this device only.'; });
   });
 })();
+
+// Times in Pacific (owner's request, 26 Sept 2026). The repository writes UTC; this page rewrites every
+// "<d> Sept 2026 HH:MM UTC" and bare "HH:MM UTC" text node into America/Los_Angeles (DST-aware via Intl),
+// bare times taking the page's "Updated" date, and offers a UTC toggle. Hover shows nothing extra; the
+// repository files stay the record.
+(function () {
+  var TZ = 'America/Los_Angeles';
+  var MON = {Jan:0,Feb:1,Mar:2,Apr:3,May:4,Jun:5,Jul:6,Aug:7,Sep:8,Sept:8,Oct:9,Nov:10,Dec:11};
+  var MONN = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sept','Oct','Nov','Dec'];
+  var fmt;
+  try { fmt = new Intl.DateTimeFormat('en-US', {timeZone: TZ, hourCycle: 'h23', hour: '2-digit', minute: '2-digit', day: 'numeric', month: 'numeric', year: 'numeric'}); } catch (e) { return; }
+  function parts(dt) {
+    var o = {};
+    fmt.formatToParts(dt).forEach(function (p) { o[p.type] = p.value; });
+    return o;
+  }
+  function conv(d, mo, y, h, mi) {
+    var o = parts(new Date(Date.UTC(y, mo, d, h, mi)));
+    var hh = o.hour === '24' ? '00' : o.hour;
+    return {time: hh + ':' + o.minute, date: (+o.day) + ' ' + MONN[+o.month - 1] + ' ' + o.year,
+            dayShift: (+o.day) !== d};
+  }
+  var strip = document.querySelector('.strip');
+  var updText = strip ? strip.textContent : '';
+  var defm = /(\d{1,2}) (Sept?|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Oct|Nov|Dec)\w* (\d{4})/.exec(updText);
+  var full = /(\d{1,2}) (Sept?|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Oct|Nov|Dec)\w* (\d{4}),? (\d{1,2}):(\d{2}) UTC/g;
+  var bare = /\b(\d{1,2}):(\d{2}) UTC\b/g;
+  var swaps = [];
+  function walk(node) {
+    if (node.nodeType === 3) {
+      var s = node.nodeValue;
+      if (s.indexOf('UTC') < 0) return;
+      var out = s.replace(full, function (m, d, mo, y, h, mi) {
+        var c = conv(+d, MON[mo], +y, +h, +mi); return c.date + ' ' + c.time + ' PT';
+      });
+      out = out.replace(bare, function (m, h, mi) {
+        if (!defm) return m;
+        var c = conv(+defm[1], MON[defm[2]], +defm[3], +h, +mi);
+        return c.time + ' PT' + (c.dayShift ? ' (prev. day)' : '');
+      });
+      if (out !== s) swaps.push([node, s, out]);
+    } else if (node.nodeType === 1 && node.tagName !== 'SCRIPT' && node.tagName !== 'STYLE') {
+      for (var i = 0; i < node.childNodes.length; i++) walk(node.childNodes[i]);
+    }
+  }
+  walk(document.body);
+  if (!swaps.length) return;
+  var mode = 'PT';
+  try { mode = localStorage.getItem('cipherlab-tz') || 'PT'; } catch (e) {}
+  function apply() {
+    swaps.forEach(function (sw) { sw[0].nodeValue = mode === 'PT' ? sw[2] : sw[1]; });
+    if (btn) btn.textContent = mode === 'PT' ? 'Times: Pacific (click for UTC)' : 'Times: UTC (click for Pacific)';
+  }
+  var btn = null;
+  if (strip) {
+    btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'tzbtn';
+    btn.style.cssText = 'margin-left:auto;font:inherit;font-size:.85em;padding:2px 8px;border:1px solid currentColor;border-radius:6px;background:transparent;color:inherit;cursor:pointer;opacity:.8';
+    btn.addEventListener('click', function () {
+      mode = mode === 'PT' ? 'UTC' : 'PT';
+      try { localStorage.setItem('cipherlab-tz', mode); } catch (e) {}
+      apply();
+    });
+    strip.appendChild(btn);
+  }
+  apply();
+})();
 """
 
 page = f'''<title>Cipher Lab Board</title>

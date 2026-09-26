@@ -95,3 +95,7 @@ if fails:
     print(f"{fails} failure(s)")
     sys.exit(1)
 print("ok: Hall of fame view renders two citation cards, the count, and the pending row")
+
+# Pacific-time converter present (owner, 26 Sept 2026): the page rewrites UTC times client-side.
+_page = open(os.path.join(ROOT, "dashboard.html"), encoding="utf-8").read() if os.path.exists(os.path.join(ROOT, "dashboard.html")) else ""
+assert "America/Los_Angeles" in _page or not _page, "dashboard.html lacks the Pacific-time converter"

@@ -227,3 +227,7 @@ own session id; the parent runs `archive_session` on it at the parent's next che
 ## Recording the owner (26 Sept 2026)
 
 The owner's decisions go into STATUS.md, ROOM.md and the briefs as decisions in plain form ("the owner approved the RAH copy order"; "the owner holds the Tomokiyo question until a solve"), never as quotations of his messages. His words stay in the chat. Rule 9 (never his name) stands.
+
+## Times for the owner (26 Sept 2026)
+
+The owner reads Pacific time (America/Los_Angeles). Every time in a reply to him is given Pacific first with UTC in brackets, e.g. 12:40 PT (19:40 UTC). The board converts client-side (tools/build_dashboard.py, UTC toggle). ROOM.md, STATUS.md, LEDGER.md and every other file stay UTC, clock-read.
