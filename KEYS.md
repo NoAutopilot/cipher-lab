@@ -31,8 +31,8 @@ column names one account only is a key the other account still lacks. No worker 
 | CLOUDSDK_AUTH_ACCESS_TOKEN | undocumented (document before use): Google Cloud SDK access token, ASKS 62 | none yet | found by probe, 25 Sept 2026 | set | ytbiz@2026-09-25T22:44, owner@2026-09-26T16:47 |
 | DDB_API_KEY | Deutsche Digitale Bibliothek API | scouts | CLAUDE.md optional keys, 25 Sept 2026 | requested | |
 | APE_API_KEY | Archives Portal Europe API | scouts | CLAUDE.md optional keys, 25 Sept 2026 | requested | |
-| CORE_API_KEY | CORE open-access full text (Bearer) | verifiers | CLAUDE.md optional keys, 25 Sept 2026 | set | owner@2026-09-26T16:47 |
+| CORE_API_KEY | CORE open-access full text (Bearer) | verifiers | CLAUDE.md optional keys, 25 Sept 2026 | set | owner@2026-09-26T16:47, ytbiz@2026-09-26T16:53 |
 | NARA_API_KEY | NARA catalog API (x-api-key; by email per NARA's README) | scouts (koehler-1944 RG 65 file) | QUEUE.md free-key gap, 24 Sept 2026 | requested | |
-| CIPHERLAB_ACCOUNT | account label for this register (`ytbiz` or `owner`), not a secret | tools/key_probe.py | parent 7d, 25 Sept 2026, ASKS 63 | set | owner@2026-09-26T16:47 |
+| CIPHERLAB_ACCOUNT | account label for this register (`ytbiz` or `owner`), not a secret | tools/key_probe.py | parent 7d, 25 Sept 2026, ASKS 63 | set | owner@2026-09-26T16:47, ytbiz@2026-09-26T16:53 |
 | CIPHERLAB_MAIL_USER | project mailbox address (cipherlab.research@gmail.com) for sending outreach drafts at status ready and reading replies, owner's decision 26 Sept 2026; IMAP/SMTP via a tools/mail.py to be written | tools/mail.py | parent 7h, 26 Sept 2026, ASKS 70 | declined (superseded 26 Sept 2026 16:50 UTC: the owner connected the mailbox to the parent through the Gmail connector instead; env-var route not needed) | |
 | CIPHERLAB_MAIL_PASS | Google App Password for the project mailbox (2-step verification on the Google account, then Security > App passwords); never printed, never committed | tools/mail.py | parent 7h, 26 Sept 2026, ASKS 71 | declined (superseded 26 Sept 2026 16:50 UTC: the owner connected the mailbox to the parent through the Gmail connector instead; env-var route not needed) | |
