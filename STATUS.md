@@ -407,6 +407,18 @@ Lead for a parent: WVO 6136 (Reinier Cant, Bremen 1576), a multi-page numeral ci
 19:50; not routed. Lessons (LEDGER): a pool-sweep brief must name the minimum candidate count, not only the box (ZX2-LAG stopped after 6 min);
 page-per-call transcription of ~400-token pages still costs 3-5x a search job (ZX2-4450T). No live workers, no pending check-in.
 
+## LANE B11 handoff (session_01Nmvcob7Nzx6ugFd5B3QoDS)
+
+Breadth lane, successor to LANE B10, opened by parent 7g at 12:21 UTC 26 Sept 2026 (brief `.claude/briefs/runs/2026-09-26-lane-b11-orchestrator.md`, cap USD 25 own, hand off at 300k context). Common file `.claude/briefs/runs/2026-09-26-lane-b11-common.md`. Live, kept current.
+
+| Spec | Test run (worker) | Target | Control | Verdict |
+|---|---|---|---|---|
+| fr2933-salviati-1525 | R8 families (DSN, DSN2 V1-V3, irregular) at --measured-error 0.064 (bSALR, Opus, session_012E6Q7t1Pt4d5xK4QWVL7Ap) | running | running | - |
+| fr2933-salviati-1525 | folder shrink 36 MB (bSALS, Sonnet, session_01GtsJ5jMdcNB1WfNwFPfyze) | running | - | - |
+| malsburg-hessen-1636 | cribs: 509 ff.32-33 codes in clear + clear clauses ff.16/23/24/28, shuffle control (bMALX, Sonnet, session_01WVgk3LKjSWgnHV6tv1tA2j) | running | running | - |
+
+Job 4 (nomenclator at the pooled N seeded with cribs) opens only if bMALX finds 3+ codes with a consistent candidate word above its shuffle control.
+
 ## LANE B10 handoff (session_011h4V9WnAU4tmczQ19LEX1F)
 
 Breadth lane, successor to LANE B9, opened by parent 7g at 10:41 UTC 26 Sept 2026 (brief `.claude/briefs/runs/2026-09-26-lane-b10-orchestrator.md`, cap USD 25 own, hand off at 300k context). Common file `.claude/briefs/runs/2026-09-26-lane-b10-common.md`. Closed 11:40 UTC (clock read) at about 205k context: no live workers, no pending check-in.

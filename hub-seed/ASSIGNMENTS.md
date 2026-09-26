@@ -861,3 +861,7 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T12:21Z	session_011h4V9WnAU4tmczQ19LEX1F	LANE B10 orchestrator	done 3.89 (get_session; ledger row edited from 3.60), 4 workers 19.35, retitled ARCHIVED, archived by 7g	handoff STATUS.md LANE B10 handoff; B11 opens from it
 2026-09-26T12:21Z	session_01QBtJHPRuxoWmXKzLmYvmAd	RETRO-APPLY-S	done 3.43, ledgered D, retitled ARCHIVED, archived by 7g	UPDATES rows 11:39 x4
 2026-09-26T12:23Z	session_01Nmvcob7Nzx6ugFd5B3QoDS	LANE B11 orchestrator (Opus, cap 25)	breadth: Salviati R8 families re-run with --measured-error 6.4, Salviati folder shrink, malsburg cribs from 509 and the clear clauses	brief 2026-09-26-lane-b11-orchestrator.md; parent 7g
+2026-09-26T12:25Z	session_01Nmvcob7Nzx6ugFd5B3QoDS	LANE B11 orchestrator (Opus, cap 25)	breadth, B10 successor: salviati R8 families at measured error, salviati shrink, malsburg cribs	brief 2026-09-26-lane-b11-orchestrator.md; parent 7g
+2026-09-26T12:25Z	session_012E6Q7t1Pt4d5xK4QWVL7Ap	bSALR (Opus, cap 10)	fr2933-salviati-1525 R8 design families at --measured-error 0.064	brief 2026-09-26-lane-b11-bSALR.md; LANE B11
+2026-09-26T12:25Z	session_01GtsJ5jMdcNB1WfNwFPfyze	bSALS (Sonnet, cap 4)	fr2933-salviati-1525 folder shrink (36 MB)	brief 2026-09-26-lane-b11-bSALS.md; LANE B11
+2026-09-26T12:25Z	session_01WVgk3LKjSWgnHV6tv1tA2j	bMALX (Sonnet, cap 5)	malsburg-hessen-1636 cribs: 509 ff.32-33 codes in clear + clear clauses, shuffle control	brief 2026-09-26-lane-b11-bMALX.md; LANE B11
