@@ -384,3 +384,54 @@ Requests: archive.org 1; github.com 1 clone (deleted); dialnet.unirioja.es 2; ap
 1 (reachability only, TLS failure); docta.ucm.es 1; eprints.ucm.es 2 (both failed, not pursued further);
 googleapis.com (Books) 11; openalex.org 1; core.ac.uk (api + fileserver) 5 (1 search 200, 2 outputs 429,
 2 download attempts 404).
+
+### (4) RODERIC PDF opened (bLOP3, 26 Sept 2026) — it is not the 2017 doctoral dissertation, and it does not print a key or decipherment for R9634/R9646/R9649
+
+Job bLOP3, brief naming `roderic.uv.es`: fetched `https://roderic.uv.es/handle/10550/66216` (301 →
+`https://roderic.uv.es/items/b8f30f7a-39c3-4a9a-b256-65829a6c801d`, 1 request), then the item's one
+bitstream, `tesis olga roderic.pdf` (`.../bitstreams/5c972ac1-1d26-4e47-8f51-4b95f66fa6bc/download`,
+1 request, 22,188,005 bytes, confirmed by md5 against the item's own metadata), then the item's full
+metadata page (1 request) for the deposit provenance. `pdftotext -layout` (poppler-utils installed
+this job) and grep, no models used to read it.
+
+**The file is not the full 854pp doctoral dissertation.** `pdfinfo` and the record's own
+`dc.format.extent` agree: 148 pages. Its own title page reads "Tesis presentada per: Olga Kolosova ...
+**Máster en Investigación en Lenguas y Literaturas** ... Valencia, mayo de 2016" — the earlier Master's
+thesis (TFM), not the 2017 doctoral thesis the catalogue record (`dc.date` 2017, "Tesis doctoral",
+dir. Benavent) describes. The item's own provenance log explains why the page count is short: a first
+deposit (2,700,606 bytes) was **rejected** by the repository curator on 2018-05-07 with the reason
+"Debe depositar el texto completo de la tesis, no solamente un extracto de la misma" (must deposit
+the complete text, not just an extract); the resubmission 8 days later (22,188,005 bytes, the file
+fetched here) was then approved — but it is still, by its own title page, the 2016 Master's version,
+not a text that grew to 854 pages with a 78-letter annex.
+
+The table of contents (índice, p.1 of the PDF) lists chapters on the ciphers of **Carlos de Lannoy**
+(p.63), **Marino Caracciolo** (p.89), the **Adorno brothers** Jerónimo and Antoniotto (p.103), and
+**Ludovico de Montalto** (p.122) — no chapter for Lope Hurtado de Mendoza's cipher(s), no "Ko.7"/"Ko.10"
+labels anywhere, and no letter-edition annex (its own "ANEXO" is two lines: "Siglas y abreviaturas"
+p.140, "Literatura crítica" p.141 — an abbreviations list and bibliography, not edited letters).
+
+Full-text grep confirms: `hurtado` — 6 hits total, all passing mentions, none a chapter or key table:
+p.62 shows one fragment of a general code-assignment table used as a worked *illustration* ("Para
+ilustrar el fenómeno de asignación de códigos... presentamos la primera parte de la tabla de
+asignación de códigos en el cifrado [e]ncontrado en las cartas de Lope Hurtado") — a partial a–g
+column table, badly mangled by `-layout` extraction (it is a graphic/table object, not extractable
+text; would need the page image to read cleanly), not a full alphabet/nomenclator table and not
+attributed to "Ko.7"/"Ko.10"; p.111 compares "las cifras de Alonso Sánchez y Lope Hurtado - cifra 2"
+in passing while discussing the Adorno cipher's similarity to Sánchez's; p.146 is an unrelated
+bibliography entry (Martínez Montero on Lope Hurtado's house in Burgos). `9634`, `9646`, `9649`,
+`Ko.7`, `Ko.10` — **0 hits each**. `1522` — 17 hits, every one dated to letters of the **Abad de
+Nájera** (a different sender), none to Lope Hurtado.
+
+**Conclusion: this document does not confirm or print a key or decipherment for R9634/R9646/R9649,
+and is not the source Tomokiyo's `spanish2C.htm` cites for Ko.7 (p.309/312/333) or Ko.10 (p.386/388/
+405) — those page numbers do not exist in this 148-page file.** Status stays `partial`. What Tomokiyo
+cites (the full doctoral dissertation or the 2024 Salamanca book, both apparently longer works than
+this deposit) remains unopened; this is a gap in what RODERIC itself serves, not a host this job
+failed to reach — the PDF fetched fine, it is simply the wrong/earlier document. Not a LOCAL-QUEUE row
+(no paywall or login was hit); a next step, not run here, is checking whether Universitat de València
+holds a separate, longer 2017 doctoral deposit (a second Teseo/RODERIC record, or the 2024 book itself)
+under a different handle, since this one is confirmed to be the 2016 master's-thesis text.
+
+Requests this job: roderic.uv.es 3 (handle page, bitstream download, full-item metadata page), each
+paced by processing time, no more than one request in flight at a time, descriptive UA.
