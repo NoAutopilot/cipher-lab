@@ -926,3 +926,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T18:04Z	session_01MDf1zFTkxAsyd6zLUgYTdK	QA13	done 3.82 D (get_session), ledgered, retitled ARCHIVED, archived by 7i	QA/2026-09-26-1732.md, 0 failures
 2026-09-26T18:04Z	session_01Pd7VDFHfeiUfPdJ2TQP7j1	RETRO-APPLY-U	done 5.85 D (get_session), ledgered, retitled ARCHIVED, archived by 7i	634eb7f, 4 of 4
 2026-09-26T18:01Z	session_01EYznd2r84bEjkjv3wAYKK4	OUT-CHECK-D (Opus, cap 3)	gate 7 check of the DECODE image-access draft (ASKS 42)	parent 7i
+2026-09-26T18:06Z	session_013ynvrTFtonQsvhEdaY6bie	retrospective v (Sonnet, cap 10)	17 rows and about USD 164 since retro u; file RETRO-2026-09-26j.md	brief 2026-09-26-parent-retrospective-v.md; parent 7i
