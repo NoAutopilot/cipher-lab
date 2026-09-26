@@ -832,3 +832,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T10:41Z	session_0167Uwemu8CfMzGaGRJJhx6W	LANE B9 orchestrator	done 6.73 (get_session; ledger row edited from 5.3), 9 workers 76.06, retitled ARCHIVED, archived by 7g	handoff STATUS.md LANE B9 handoff; B10 opens from it
 2026-09-26T10:41Z	session_01Tv8XirXkLKVzniSG9rA9ro	RETRO-APPLY-R	done 2.34, ledgered D, retitled ARCHIVED, archived by 7g	UPDATES rows 09:58 x6
 2026-09-26T10:41Z	session_014xGZtQBV7cnyuXamAw4nX3	SALV-DIAG	done 2.99, ledgered D, retitled ARCHIVED, archived by 7g	NEAR fr2933 row: crossover 8-9 pct, next step pass C (LANE B10 job 3)
+2026-09-26T10:43Z	session_011h4V9WnAU4tmczQ19LEX1F	LANE B10 orchestrator (Opus, cap 25)	breadth: malsburg folder shrink, Marburg keys 4 d 1219-1224, Salviati pass C, nomenclator family at pooled N	brief 2026-09-26-lane-b10-orchestrator.md; parent 7g
+2026-09-26T10:43Z	session_01FqD8cBjv5jAGzDjSo8ezUu	retrospective s (Sonnet, cap 10)	about 25 ledger rows since RETRO-APPLY-Q; file RETRO-2026-09-26g.md	brief 2026-09-26-parent-retrospective-s.md; parent 7g
