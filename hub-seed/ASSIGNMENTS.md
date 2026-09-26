@@ -738,3 +738,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T05:50Z	session_01URHyu7b62toNojwiW1CaH4	LANE B7 bMAT1E (Opus, cap 4)	matignon NEAR 1e hand alignment f.78v/79r	brief 2026-09-26-lane-b7-mat1e.md
 2026-09-26T06:09Z	session_01LV9zxH7aPvDF6oEzJuKNDe	ORPHAN-TOOL	done 3.84, ledgered D, retitled ARCHIVED, archived by 7f	tools/orphan_check.py landed 05:23
 2026-09-26T06:09Z	session_01Gny4j6pxVrzWP5F9wXjDdE	retrospective p	done 3.50, ledgered D, retitled ARCHIVED, archived by 7f	RETRO-2026-09-26d.md, 5 proposals
+2026-09-26T06:13Z	session_01VPSASn5w5VX93GbHgLkGke	RETRO-APPLY-P (Sonnet, cap 6)	RETRO-2026-09-26d.md 5 proposals + intake_gate_check re-cited fix + NEAR.md columns	brief 2026-09-26-parent-retro-apply-p.md; parent 7f
+2026-09-26T06:13Z	session_01A7MeWWoh7yhAJxtApKaDvD	LEARN-6 (Sonnet, cap 5)	cross-account pass, window from 03:13Z	brief 2026-09-26-parent-learn6.md; parent 7f
