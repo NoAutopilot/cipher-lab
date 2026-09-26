@@ -148,3 +148,69 @@ this session) for the owner to re-log the runner in and re-fire, or read the fou
 For the parent/verifier: this target has two unread candidate prior-print articles (Hatzenberger 2015, Thomas
 1969) -- route a check-solved/verifier read once the reread (logged-in) pass confirms what they say about the
 NAF 14913 decipherments.
+
+## CHECK-NAF (26 Sept 2026)
+
+Free-route read of the two PR-LAND-8 candidates (ASKS 76 free-routes-first job), `date -u` read at claim,
+21:45 UTC.
+
+**Thomas 1969 -- READ, full text, free (Persée, no login).** M. Thomas, "Nouvelles acquisitions latines et
+françaises du Département des manuscrits de la Bibliothèque nationale pendant les années 1965-1968",
+*Bibliothèque de l'École des chartes* 127-1 (1969), pp. 87-212, https://www.persee.fr/doc/bec_0373-6237_1969_num_127_1_449826
+(confirmed same DOI/pagination as the JSTOR-QUEUE row 88-91 candidate, stable/42957196). Persée serves this
+article's full OCR text per page (`?pageId=T1_<n>`), no login, no paywall; fetched every page 89-212 (124
+requests, 1.5s apart, one host at a time, no challenge) and grepped for "Montaigu", "Rousseau", "14913",
+"déchiffr", "Venise".
+
+The NAF 14913 entry is on p. 149, inside the full inventory of "14904-14937. Papiers Montaigu. I. --
+Correspondance diplomatique du comte Pierre-François de Montaigu (14904-14931)":
+
+> "IX-XIV (14912-14917). Lettres adressées au comte de Montaigu par les ambassadeurs et ministres du roi
+> auprès des cours de : [...] X (14913). Constantinople et Florence (n°s 1972-2128). Aux ff. 206, 214, 217,
+> 250 et 274, déchiffrement de dépêches diplomatiques de la main de Jean-Jacques Rousseau. -- 392 ff."
+
+This is word-for-word the origin of the BnF finding-aid sentence already quoted in this file's 24 Sept
+entry ("Aux f. 206, 214, 217, 250 et 274, déchiffrement de dépêches diplomatiques de la main de Jean-Jacques
+Rousseau"): Thomas 1969 is a cataloguing/acquisition notice describing what physically survives at those
+five folios (a decipherment in Rousseau's hand, folio count, format), not a transcription or quotation of
+the deciphered text itself. No plaintext, extract or quoted passage from f.206/214/217/250/274 appears
+anywhere in the 126-page article. The only other NAF-14913 mentions found: p. 89-90 (a one-sentence mention
+of "les archives diplomatiques du comte de Montaigu ... dont Jean-Jacques Rousseau fut un temps le
+secrétaire" in the article's general introduction, no folio detail); pp. 103-104 (the article's own
+alphabetical name/place index: "Rousseau (Jean-Jacques). [...] Documents de sa main, n. a. fr. 14904-14905,
+14913, 14917-14918, 14922, 14926-14927" and "Venise. [...] n. a. fr. 14904-14937" -- index entries, not
+text); p. 148/150-151 (the rest of the same Montaigu inventory, other cotes, no further 14913 detail); p.
+119, 157, 160 (unrelated items -- a different Rousseau letter of 1751 in an autograph album, Jean-Baptiste
+Rousseau's own papers at n.a.fr. 15008, and an unrelated "Séjours ... à Venise" travel diary).
+
+**Verdict: Thomas 1969 does not print, or cite anyone else's print of, the deciphered text of any of the
+five folios.** It confirms the acquisition and the finding-aid wording, nothing more. This candidate is
+resolved: read in full, negative for found-solved.
+
+**Hatzenberger 2015 -- still UNREAD.** Cairn (shs.cairn.info) is DataDome-challenged from this container:
+both a plain curl (403, JS-challenge page) and one `browser_fetch.js` pass (3 internal retries, all 403,
+`Please enable JS and disable any ad blocker` / captcha-delivery interstitial) failed on the article page
+(`shs.cairn.info/revue-archives-de-philosophie-2015-2-page-323`) and on the OpenAlex-listed green-OA PDF
+(`shs.cairn.info/article/APHI_782_0323/pdf?lang=fr`, from `https://api.openalex.org/works/W1893805836`,
+`open_access.oa_status: "green"`) -- one attempt each, not retried further per the good-citizen rule. No
+other free host mirrors this article (OpenAlex, Semantic Scholar and Google Books searched; only the Cairn
+copy is indexed as available). OpenAlex's own abstract (free, no login) reads: "En 1743-1744, Jean-Jacques
+Rousseau servit comme secrétaire de l'ambassadeur de France à Venise. Le récit qu'il donne de ce séjour dans
+les Confessions mentionne les 'célèbres amusements de cette ville' [...] Touchant aux questions des formes
+de gouvernement et des relations internationales, les Dépêches de Venise peuvent se lire comme une
+initiation à l'art politique" -- consistent with a discursive/interpretive study of the published despatches
+(Pléiade/Leigh), giving no indication it transcribes the unpublished NAF 14913 decipherment folios
+specifically, but this is an abstract, not the article, so the candidate stays formally unread. Remaining
+route: JSTOR (stable/24719303), gated on ASKS 76 (JPASS login for the runner).
+
+**Net effect on this target: no change to `open` status.** One of the two candidate prior prints
+(Thomas 1969) is now read and closed out negative; the other (Hatzenberger 2015) is still blocked on the
+JSTOR reread named in ASKS 76. Requests this pass: persee.fr ~127 (1 search, 2 doc/page loads, 124 page
+fetches, 1.5s apart), api.openalex.org 2, googleapis.com/books 1, cairn.info/shs.cairn.info 3 (1 curl + 1
+browser_fetch page fetch + 1 browser_fetch PDF fetch, all 403, no retry loop). No logins attempted.
+
+Brief note (.claude/briefs/runs/2026-09-26-parent-check-naf.md) asked for "one AUDIT.md line in the
+check-solved shape the file already uses" -- this target has no AUDIT.md (no verifier has run on it yet;
+CLAUDE.md rule 10 reserves N-class assignment to a separate verifier session after a logged search, not to
+this check-solved supply job). Per CLAUDE.md over the brief: not creating one here. A verifier taking this
+up next has both candidates' status (one read negative, one still blocked) ready to cite.
