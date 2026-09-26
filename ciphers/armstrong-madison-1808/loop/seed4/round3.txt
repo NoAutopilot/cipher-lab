@@ -1,0 +1,169 @@
+# round 3: N=162 values, cribs=11, best score -1340.5 (-3.360/token); restarts [-1340.47, -1372.0, -1378.76]
+# decode by line: word / value / confidence digit (9 = all restarts agree, * = crib, - = wildcard)
+L01 * the whole extent of * s   recommendation of him which he   * to be  * between france russia and the * of such a  * the most * a  spirit of  * to whom it was  a  party who by the law or   rather * his own  hands of spain to  the revolution the example baltimore in any other party and in other respects the neutral trade with it in the cause of complaint him to do it the republican party to be  employed in it  the president and de  la   other * of public affairs not * of the two  in time at   sea  or  elsewhere and were that the * and which by * from those which are to  be  * the in * and * of the mississippi and the goodness to  * the in your letter of july written a  * by general and settled on   the * in france for an  embargo law is at   * of war the and the writings of have * d   * of * of the * or  by the general * the union and * by * and of our  country of which are to receive it in my   favor had i   have no   doubt that the more i  think that a  party and even a  temporary any of them from the executive in consequence of the * and * which * in the present law two  * in the year and i  the writings of gallatin of the * and who were not * de  * in favor of the * be  brought into view all and claims above stated to be  a  con * is the more than a  fair and * as  that to this subject is that it  would produce of this to gallatin * that the * ment in common with other party and even more than two  millions for the same time my   opinion that a  state of  our  vessels in the * of its * too much credit of your it of  her  enemies privateers and other nations that their * in less than in a  private letter to morris is to be  made * their favor by it and they are to have it a  character and the * if   mr * the ocean and the more especially in the * of the party of the parties by the
+    * 56  400   1210   28 * 276 1715           77 920 16    1671 * 96 260 * 57      960    647    62  56  * 28 1704 23 * 46  1470 * 23 892    750 * 96 317  93 1730 23 640   730 27 56  426 1089 1372   * 510 1260 1851  28 1554  280 56  761        46  1770    1776      7  956 17    640   3   7  830   1266     31  1191    250   403  93 64 31  1549  28 1196      920 96 50 93 56  1117       640   96 260 177      7  370 56  967       62  320 1121 17    * 77 30     1051    150 * 28 31  1870 78 1720 1120 1620 160 599       62  570  45   56  * 790 930   27 * 1530 1857  16    516 280 151 * 18  64 * 62  * 77 56  1816        62  56  1631     280 * 18  64 1780 1830   28 720  480     23 * 27 1899    790 200     1630 31  * 7  960    49  890 1240    426 90 1120 * 28 180 18  3   31  74       28 1160 * 926 * 28 * 28 31  * 160 27 56  1899    * 56  1544  62  * 27 * 3   29 1090 311     77 16    516 96 971     93 78 1400 251   700 710 816  1140 1227  45   18  42   21 1374  45   23 640   62  318  65 670       956 28 1390 1530 31  1231      7  696         77 56  * 790 * 930   * 7  56  1552    426 1870 * 7  56  1790 62  21 18  74       28 1501     28 56  * 62  730 570  150 * 320 * 78 251   28 56  * 151 1195    80   1640 54  3   1670   120   1441   96 260 23 899 * 90 18  42   47   65 1034 62  * 420 45   96 1380 60      90 45   370 86    1050    28 1380 96 1501     * 45   46  * 1746 78 24     403  830   640   62  318  42   711  1870 220      49  18  1781 1720 1400 1524    45   23 981   750 1090 799     78 56  * 29 2   * 530 820  351    28 1780 93 750 1687 63      836        62  830   1083    45   290   * 64 931  711  78 23 1580    1830   96 1680   90 96 260 1760 * 290   251   27 93 3   85   516 96 1160 93 23 384       62  18  * 1040 40 * 56  486   62  46  42   212        7  56  * 28 56  640   29 56  928     27 56 
+    - *   3     3      *  - 6   3              9  3   *     6    - *  *   - 3       3      3      *   *   - *  9    *  - 6   6    - *  3      3   - *  6    *  6    *  3     3   *  *   3   3    3      - 6   3    3     *  3     3   *   3          6   3       3         *  3   3     3     9   *  3     3        9   3       3     3    *  3  9   3     *  3         3   *  9  *  *   3          3     *  *   3        *  3   *   3         *   3   3    3     - 9  3      3       3   - *  9   3    3  3    3    3    6   3         *   3    *    *   - 6   3     *  - 6    6     *     6   3   3   - 6   3  - *   - 9  *   9           *   *   3        3   - 6   3  3    3      *  3    3       *  - *  3       6   3       6    9   - *  3      3   3   3       3   3  3    - *  3   6   9   9   9        *  6    - 6   - *  - *  9   - 6   *  *   3       - *   9     *   - *  - 9   6  3    3       9  *     6   *  3       *  3  3    3     3   3   3    3    3     *    6   3    3  3     *    *  3     *   3    3  3         3   *  3    6    9   6         *  6           9  *   - 6   - 3     - *  *   3       3   3    - *  *   3    *   3  6   9        *  9        *  *   - *   3   3    3   - 3   - 3  3     *  *   - 3   3       3    3    3   9   3      3     3      *  *   *  3   - 3  6   3    3    3  3    *   - 3   *    *  3    3       3  *    3   3     3       *  3    *  9        - *    6   - 3    3  3      3    3     3     *   3    3    3    3    3        3   6   3    3    3    3       *    *  3     3   3    3       3  *   - 6  3   - 3   3    3      *  3    *  3   3    3       3          *   3     3       *    3     - 3  3    3    3  *  3       3      *  3      3  *  *   3    - 3     3     *  *  9   6    6   *  6    *  *  6         *   6   - 3    3  - *   9     *   6   3    3          *  *   - *  *   3     6  *   3       *  *  
+
+# values by frequency: value count word conf | up to 3 decoded contexts (2 words either side)
+   56  22 the            * | * [the] whole extent ; russia and [the] * of ; who by [the] law or
+   28  17 of             * | whole extent [of] * s ; the * [of] such a ; own hands [of] spain to
+   62  14 and            * | france russia [and] the * ; the president [and] de la ; or elsewhere [and] were that
+   96  11 to             * | he * [to] be * ; of * [to] whom it ; complaint him [to] do it
+   23   9 a              * | of such [a] * the ; most * [a] spirit of ; it was [a] party who
+    7   8 in             * | example baltimore [in] any other ; party and [in] other respects ; be employed [in] it the
+   45   8 that           * | and were [that] the * ; no doubt [that] the more ; i think [that] a party
+   18   8 the            6 | be * [the] in * ; to * [the] in your ; of war [the] and the
+   93   7 it             * | to whom [it] was a ; trade with [it] in the ; to do [it] the republican
+   27   7 by             * | party who [by] the law ; and which [by] * from ; a * [by] general and
+   31   7 the            9 | other respects [the] neutral trade ; it in [the] cause of ; * of [the] two in
+  640   6 party          3 | was a [party] who by ; any other [party] and in ; the republican [party] to be
+   78   6 in             3 | the two [in] time at ; receive it [in] my favor ; de * [in] favor of
+   77   5 of             9 | s recommendation [of] him which ; other * [of] public affairs ; and * [of] the mississippi
+    3   5 and            9 | other party [and] in other ; war the [and] the writings ; by * [and] of our
+  260   4 be             * | * to [be] * between ; party to [be] employed in ; stated to [be] a con
+   46   4 the            6 | a * [the] most * ; the revolution [the] example baltimore ; * that [the] * ment
+   64   4 in             3 | with it [in] the cause ; * the [in] * and ; * the [in] your letter
+   90   4 is             3 | embargo law [is] at * ; con * [is] the more ; this subject [is] that it
+   42   4 more           3 | that the [more] i think ; is the [more] than a ; and even [more] than two
+   16   3 which          * | of him [which] he * ; from those [which] are to ; country of [which] are to
+  750   3 of             3 | a spirit [of] * to ; a state [of] our vessels ; your it [of] her enemies
+  426   3 law            3 | by the [law] or rather ; an embargo [law] is at ; the present [law] two *
+  280   3 to             3 | of spain [to] the revolution ; which are [to] be * ; the goodness [to] * the
+  830   3 other          3 | and in [other] respects the ; common with [other] party and ; privateers and [other] nations that
+ 1870   3 two            3 | of the [two] in time ; present law [two] * in ; more than [two] millions for
+  790   3 and            6 | the * [and] which by ; by general [and] settled on ; the * [and] * which
+  516   3 are            6 | those which [are] to be ; of which [are] to receive ; and they [are] to have
+   29   3 of             6 | * and [of] our country ; the * [of] its * ; the party [of] the parties
+  251   3 favor          3 | in my [favor] had i ; * in [favor] of the ; * their [favor] by it
+  920   2 him            3 | recommendation of [him] which he ; of complaint [him] to do
+  960   2 france         3 | * between [france] russia and ; * in [france] for an
+  730   2 who            3 | a party [who] by the ; * and [who] were not
+  956   2 any            3 | baltimore in [any] other party ; a temporary [any] of them
+   17   2 other          3 | in any [other] party and ; de la [other] * of
+  403   2 with           3 | neutral trade [with] it in ; in common [with] other party
+  370   2 it             3 | employed in [it] the president ; is that [it] would produce
+  320   2 de             3 | president and [de] la other ; not * [de] * in
+  150   2 not            3 | public affairs [not] * of ; who were [not] * de
+ 1720   2 time           3 | two in [time] at sea ; the same [time] my opinion
+ 1120   2 at             3 | in time [at] sea or ; law is [at] * of
+  160   2 or             6 | at sea [or] elsewhere and ; the * [or] by the
+  570   2 were           3 | elsewhere and [were] that the ; and who [were] not *
+  930   2 which          3 | * and [which] by * ; and * [which] * in
+ 1530   2 from           6 | by * [from] those which ; of them [from] the executive
+  151   2 be             3 | are to [be] * the ; the * [be] brought into
+ 1780   2 your           3 | the in [your] letter of ; credit of [your] it of
+ 1830   2 letter         3 | in your [letter] of july ; a private [letter] to morris
+ 1899   2 general        3 | * by [general] and settled ; by the [general] * the
+   49   2 for            3 | in france [for] an embargo ; two millions [for] the same
+   74   2 writings       9 | and the [writings] of have ; i the [writings] of gallatin
+ 1160   2 have           6 | writings of [have] * d ; are to [have] it a
+ 1090   2 our            3 | and of [our] country of ; state of [our] vessels in
+ 1400   2 my             3 | it in [my] favor had ; same time [my] opinion that
+   21   2 i              3 | the more [i] think that ; year and [i] the writings
+  318   2 even           3 | party and [even] a temporary ; party and [even] more than
+   65   2 a              3 | and even [a] temporary any ; more than [a] fair and
+ 1501   2 gallatin       9 | writings of [gallatin] of the ; this to [gallatin] * that
+ 1380   2 this           3 | that to [this] subject is ; produce of [this] to gallatin
+  711   2 than           3 | even more [than] two millions ; in less [than] in a
+  290   2 their          3 | nations that [their] * in ; made * [their] favor by
+  400   1 whole          3 | * the [whole] extent of
+ 1210   1 extent         3 | the whole [extent] of *
+  276   1 s              6 | of * [s] recommendation of
+ 1715   1 recommendation 3 | * s [recommendation] of him
+ 1671   1 he             6 | him which [he] * to
+   57   1 between        3 | be * [between] france russia
+  647   1 russia         3 | between france [russia] and the
+ 1704   1 such           9 | * of [such] a *
+ 1470   1 most           6 | * the [most] * a
+  892   1 spirit         3 | * a [spirit] of *
+  317   1 whom           6 | * to [whom] it was
+ 1730   1 was            6 | whom it [was] a party
+ 1089   1 or             3 | the law [or] rather *
+ 1372   1 rather         3 | law or [rather] * his
+  510   1 his            6 | rather * [his] own hands
+ 1260   1 own            3 | * his [own] hands of
+ 1851   1 hands          3 | his own [hands] of spain
+ 1554   1 spain          3 | hands of [spain] to the
+  761   1 revolution     3 | to the [revolution] the example
+ 1770   1 example        3 | revolution the [example] baltimore in
+ 1776   1 baltimore      3 | the example [baltimore] in any
+ 1266   1 respects       3 | in other [respects] the neutral
+ 1191   1 neutral        3 | respects the [neutral] trade with
+  250   1 trade          3 | the neutral [trade] with it
+ 1549   1 cause          3 | in the [cause] of complaint
+ 1196   1 complaint      3 | cause of [complaint] him to
+   50   1 do             9 | him to [do] it the
+ 1117   1 republican     3 | it the [republican] party to
+  177   1 employed       3 | to be [employed] in it
+  967   1 president      3 | it the [president] and de
+ 1121   1 la             3 | and de [la] other *
+   30   1 public         3 | * of [public] affairs not
+ 1051   1 affairs        3 | of public [affairs] not *
+ 1620   1 sea            3 | time at [sea] or elsewhere
+  599   1 elsewhere      3 | sea or [elsewhere] and were
+ 1857   1 those          6 | * from [those] which are
+ 1816   1 mississippi    9 | of the [mississippi] and the
+ 1631   1 goodness       3 | and the [goodness] to *
+  720   1 july           3 | letter of [july] written a
+  480   1 written        3 | of july [written] a *
+  200   1 settled        3 | general and [settled] on the
+ 1630   1 on             6 | and settled [on] the *
+  890   1 an             3 | france for [an] embargo law
+ 1240   1 embargo        3 | for an [embargo] law is
+  180   1 war            3 | * of [war] the and
+  926   1 d              6 | have * [d] * of
+ 1544   1 union          9 | * the [union] and *
+  311   1 country        3 | of our [country] of which
+  971   1 receive        3 | are to [receive] it in
+  700   1 had            3 | my favor [had] i have
+  710   1 i              3 | favor had [i] have no
+  816   1 have           3 | had i [have] no doubt
+ 1140   1 no             3 | i have [no] doubt that
+ 1227   1 doubt          3 | have no [doubt] that the
+ 1374   1 think          3 | more i [think] that a
+  670   1 temporary      3 | even a [temporary] any of
+ 1390   1 them           3 | any of [them] from the
+ 1231   1 executive      6 | from the [executive] in consequence
+  696   1 consequence    6 | executive in [consequence] of the
+ 1552   1 present        3 | in the [present] law two
+ 1790   1 year           3 | in the [year] and i
+ 1195   1 brought        3 | * be [brought] into view
+   80   1 into           3 | be brought [into] view all
+ 1640   1 view           3 | brought into [view] all and
+   54   1 all            3 | into view [all] and claims
+ 1670   1 claims         3 | all and [claims] above stated
+  120   1 above          3 | and claims [above] stated to
+ 1441   1 stated         3 | claims above [stated] to be
+  899   1 con            3 | be a [con] * is
+   47   1 than           3 | the more [than] a fair
+ 1034   1 fair           3 | than a [fair] and *
+  420   1 as             3 | and * [as] that to
+   60   1 subject        3 | to this [subject] is that
+   86   1 would          3 | that it [would] produce of
+ 1050   1 produce        3 | it would [produce] of this
+ 1746   1 ment           3 | the * [ment] in common
+   24   1 common         3 | ment in [common] with other
+  220   1 millions       3 | than two [millions] for the
+ 1781   1 same           3 | for the [same] time my
+ 1524   1 opinion        3 | time my [opinion] that a
+  981   1 state          3 | that a [state] of our
+  799   1 vessels        3 | of our [vessels] in the
+    2   1 its            3 | * of [its] * too
+  530   1 too            3 | its * [too] much credit
+  820   1 much           3 | * too [much] credit of
+  351   1 credit         3 | too much [credit] of your
+ 1687   1 her            3 | it of [her] enemies privateers
+   63   1 enemies        3 | of her [enemies] privateers and
+  836   1 privateers     3 | her enemies [privateers] and other
+ 1083   1 nations        3 | and other [nations] that their
+  931   1 less           3 | * in [less] than in
+ 1580   1 private        3 | in a [private] letter to
+ 1680   1 morris         3 | letter to [morris] is to
+ 1760   1 made           3 | to be [made] * their
+   85   1 they           6 | it and [they] are to
+  384   1 character      6 | it a [character] and the
+ 1040   1 if             3 | the * [if] mr *
+   40   1 mr             3 | * if [mr] * the
+  486   1 ocean          9 | * the [ocean] and the
+  212   1 especially     3 | the more [especially] in the
+  928   1 parties        3 | of the [parties] by the

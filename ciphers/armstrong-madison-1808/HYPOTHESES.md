@@ -1274,3 +1274,59 @@ native-resolution page fetches. archive.org: 2 advancedsearch.php + 2 `_djvu.txt
 All >=1.5s apart, descriptive User-Agent, no 429/403/challenge seen on any host. No logins, no credentials
 touched. No subagent calls (all image reads and transcription done directly by this worker, per the brief's
 own "SCRIPT FIRST" convention -- signature_test.py/overlap_test.py run before any judgement was made).
+
+**U1 blind round (19:37-19:41 UTC), three matched controls.** Control singleton share beside the target's: seed 2
+132/353 (13 particle + 119 book; 172 particle / 181 book tokens; 48 wildcard runs), seed 3 130/353 (14 + 116; 179 / 174;
+50), seed 4 101/353 (13 + 88; 179 / 174; 46); target 136/353 on `ciphertext_ms.txt` (139/369 on `ciphertext.txt`). As in
+ARM-C1, the controls are anchor-richer than the target (172-179 particle tokens against 126) and still read under a
+quarter blind. HEADROOM CHECK: passed (blind 2-16%, ceiling about 62-67%). FLOOR CHECK: FAILED on every seed -- of the 30
+most frequent repeated values, 3 / 1 / 2 read right blind (gate 10): the reader had function-word salad to work from,
+so U2 ran once as the brief requires, and U3-U4 followed because the wall-clock box allowed them (about 4 minutes a
+round, the three seeds in parallel).
+
+**Reader's method (U2-U4, the session itself, `loop/seedN/cribsR.txt`, cumulative).** Seeing only the view (decoded
+words, value ids, confidence digit, three contexts per value): (a) one-value-per-word in a code of this design, so a
+value duplicating another's word is wrong for all but one; (b) values 1-99 hold the block's function words, so a value
+>= 100 cannot read as a top-30 function word, and a particle value cannot read as a content word; (c) ciphertext-only
+adjacency -- the value most often followed by book values reads "the", the value that precedes it most reads "of", a
+value-pair repeated four times before book values reads "to be"; (d) English frequency order for the rest. At most 12
+cribs a round; wrong cribs were not identified to the reader (the score verb prints counts only), so a round revised
+by re-permuting or reverting to the best earlier set.
+
+| seed | blind (P / B) | round 1 (P / B) | round 2 (P / B) | round 3 (P / B) | best gain | top-30 right (blind -> best) | cribs new right/wrong per round |
+|---|---|---|---|---|---|---|---|
+| 2 | 15.6 (32.0 / 0.0) | 26.3 (50.6 / 3.3) | 22.9 (45.3 / 1.7) | 24.9 (51.2 / 0.0) | +10.7 | 3 -> 7 | 6/6, 1/3, 1/2 |
+| 3 | 2.3 (4.5 / 0.0) | 5.9 (11.7 / 0.0) | 16.7 (31.8 / 1.1) | 16.7 (31.8 / 1.1) | +14.4 | 1 -> 5 | 1/8, 3/4, 1/2 |
+| 4 | 11.3 (20.1 / 2.3) | 13.9 (26.3 / 1.1) | 11.0 (21.8 / 0.0) | 13.3 (26.3 / 0.0) | +2.6 | 2 -> 4 | 4/5, 0/4, 1/3 |
+| mean | 9.7 (spread 13.3) | 15.4 (gain +5.6) | 16.9 (gain +7.1) | 18.3 (gain +8.6) | +9.2 | | 18 right / 37 wrong of 55 |
+
+Blended = share of coded tokens read right; P = particle class (values 1-99), B = book class (>= 100), in percent.
+Cribs "new" = pairs changed from the previous round's set (a dropped crib is not counted).
+
+**GATE VERDICT: NOT MET.** Mean gain over blind is 5.6 / 7.1 / 8.6 points after rounds 1 / 2 / 3 and 9.2 on the most
+favourable count (each seed's best round), all under the pre-registered 10 points AND all under the blind seed-to-seed
+spread of 13.3. The gain sits entirely in the particle class (32 -> 51, 4.5 -> 32, 20 -> 26 percent); the book class,
+which carries the letter's content, never rises above 3.3 percent and ends at 0.0 / 1.1 / 0.0 -- reported as a
+particle-only gain, which the gate says does not pass. The reader's cribs were right 18 times in 55 (33 percent), and
+the information behind the right ones came from the ciphertext's own adjacency statistics and the design's block
+structure (method (a)-(c) above), not from reading English in the decode: the decode never offered a content phrase
+the reader could extend, which is what solvEX2's 45-percent threshold predicted. The second and third rounds moved
+two seeds down and then part-way back, the repeated-attempt shape of CLAUDE.md rule 3 (an unchanged approach with a
+changed knob), so a fourth round was not run.
+
+**TARGET (U5): not run (gate).** No target decode, no judge line, no candidate. Family D on this design at N=353-369
+is a control-backed non-test: the loop cannot supply what 115-119 singleton book values withhold, the same conclusion
+as ARM-CONS1's paper ceiling and ARM-C1's diagnostics, now measured with a reader in the loop (three seeds, three
+rounds). What would change it is the same as family C's named next step -- more ciphertext in the same code, which
+lowers the singleton share -- or a crib source outside the ciphertext (a sibling letter, an editor's note, a key), not
+a better reader or more rounds. 3a's closed-set positions (ARM3-ADJ), if any, are a crib source for a future U5 only
+after that next step, since the gate is on the control, not on where cribs come from.
+
+Files: `tools/families/nomenclator.py` (cribs option, restart_keys), `tools/crib_rounds.py` (`--family nomenclator`),
+`tools/tests/test_nomenclator.py` (5), `tools/tests/test_crib_rounds.py` (nomenclator mode); both tests pass offline
+(43 s and about 2 min). `loop/seed{2,3,4}/`: cipher.tsv, hidden.json (truth, unopened by the reader; the build's own
+stats line omits the window position), state.json, round0-3.{json,txt}, cribs1-3.txt, scores.tsv; `loop/seedN.roundR.log`.
+Reproduce: `python3 tools/crib_rounds.py --family nomenclator --spec specs/armstrong-madison-1808.json --target-cipher
+ciphers/armstrong-madison-1808/ciphertext_ms.txt --dir loop/seed2 --seed 2 --restarts 3 --param sweeps=30 --param
+phase1=20`, then `--round R --cribs loop/seed2/cribsR.txt`, then `--score`. No network; request count per host: 0.
+Rule 10: nothing here is a reading; no novelty claim. Finished 19:56 UTC.

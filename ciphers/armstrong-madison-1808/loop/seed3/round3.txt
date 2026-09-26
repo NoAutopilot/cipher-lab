@@ -1,0 +1,187 @@
+# round 3: N=180 values, cribs=11, best score -1356.0 (-3.365/token); restarts [-1374.51, -1372.63, -1356.01]
+# decode by line: word / value / confidence digit (9 = all restarts agree, * = crib, - = wildcard)
+L01 m    it  to gen  * s   and among them the best disposition to * in doing justice and good order propose a  to and between both of them to in form and division a  mr merry that the * powers and he will transmit it was understood you have no   doubt could do  so by the department from the committee and which is enclosed is the * the * given to the annual report of * de  son the most * the price of our  neutral is * in consequence no   * of the present state of the president requested mr monroe * is not  less * in a  to of the prince or   state department had * addressed an   answer and after your government might send him immediately with the former if anything * of g  b  * s   and * that the neutral to step in and * are  * and by the president * a  to be   more * than in * and * the new  state the law of nations were and still is a  subject on   which * act of re  * the * of that government at   least in  any respect what i   had he has  been the * of the other side as the most * of other may  be   seized and * a  of * for you to france and  of course * that the ex  * of a  few * pursued and en  * of a  i   think that it  is in the united states i   have seen in the first * of * g  * i   have * ever bound to * will be   found in the hands of spain the * of that * of * i   am  * is and  it  is i   believe in  the same time that in ques tion to that effect beginning and mr * for the pur  * of the convention of in  another island called the * tion of that of one or   the other * en  me   a  * of foreign affairs i   cannot be   pretended that a  to * and had made and  under a  of * this side of the same as secretary of state date of the people of the whole a  very well as that the british dominions long * when holding the same to me   to take the orders of and that of mr * in a  great britain
+    1879 250 82 1440 * 420 21  917   750  38  427  118         82 * 93 1798  272     21  380  1671  117     41 10 21  680     846  45 750  82 93 360  21  711      41 96 542   3    38  * 1520   90  56 67   1380     35 390 1514       630 1750 1460 281   251   730 58 33 38  1730       1698 22  660       21  651   91 1840     91 38  * 69  * 252   82 69  143    1132   45 * 600 869 38  260  * 69  851   45 1584 120     91 * 17 950         1460 * 45 69  160     88    48 38  190       1267      96 27     * 91 1080 1524 * 17 41 82 45 69  1770   1530 88    1730       89  * 1870      1274 941    21  1751  1081 31         1560  400  827 1010        970  22  1130   20 672      * 45 72 60 * 420 21  * 3    69  120     10 880  17 21  * 1881 * 21  33 38  190       * 41 10 1880 693  * 211  93 * 90  * 38  1409 88    22  164 45 350     70   21  1680  91 41 32      1429 651   * 487 45 536 * 69  * 45 3    49         1620 620   670 540 696     1600 860 89  56 1140 1391 69  * 45 69  560   678  19 69  260  * 45 560   1544 1410 1513   21  * 41 85 * 786 630 10 1060   1360 45 1820   * 3    69  100 * 45 41 689 * 965     21  604 * 45 41 430 1223  3    250 91 93 69  468    810    860 1750 1656 93 69  1211  * 45 * 72 * 430 1750 * 1190 1212  82 * 67   1880 507   93 69  1827  45 586   69  * 45 3    * 45 * 430 937 * 91 1360 250 91 430 980     670 22  86   1587 830  93 213  1394 82 830  150    1088      21  96 * 23  69  1489 * 45 71  908        48 670 770     571    1351   69  * 1394 85 830  45 55  1530 69  560   * 604 1040 47 * 48 1550    878     430 1167   1410 300       3    41 10 * 21  89  78   1360 1021  41 48 * 940  678  85 71  86   19 110       48 88    1830 85 69  914    85 38  960   41 812  11   19 3    69  550     1384      1310 * 1670 1100    69  86   10 1040 82 1521 22  456    45 90  830  48 96 * 17 47 26    1210   
+    9    9   *  3    - 3   *   3     *    9   6    6           *  - *  3     3       *   3    3     3       *  6  *   3       3    *  *    *  *  9    *   9        *  9  9     *    9   - 3      3   3  3    3        3  3   3          6   *    6    3     3     3   3  6  9   3          3    9   3         *   6     *  6        *  9   - *   - 9     *  *   3      3      *  - 3   3   9   3    - *   3     *  3    3       *  - 3  3           6    - *  *   3       3     6  9   6         6         9  9      - *  3    3    - 3  *  *  *  *   3      3    3     3          3   - 3         3    3      *   3     3    3          3     3    3   3           3    9   3      3  3        - *  3  3  - 3   *   - *    *   3       6  3    3  *   - 6    - *   6  9   6         - *  6  6    3    - 3    *  - 3   - 9   3    3     9   3   *  3       3    *   3     *  *  3       3    6     - 6   *  3   - *   - *  *    3          3    3     6   3   3       3    3   3   3  3    3    *   - *  *   *     6    3  *   3    - *  *     3    3    3      *   - *  9  - 3   6   6  3      6    *  6      - *    *   6   - *  *  3   - 3       *   3   - *  *  9   9     *    9   *  *  *   3      3      3   *    6    *  *   3     - *  - 3  - 9   *    - 3    3     *  - 3    6    6     *  *   3     *  3     *   - *  *    - *  - 9   9   - *  6    9   *  9   9       6   9   3    3    6    *  9    9    *  6    3      3         *   9  - 3   *   3    - *  6   3          6  6   3       3      3      *   - 9    9  6    *  3   3    *   *     - 3   3    6  - 6  3       3       9   6      3    3         *    *  6  - *   3   3    6    3     *  6  - 3    6    9  6   3    3  3         6  3     3    9  *   6      9  9   3     *  3    3    3  *    *   3       3         3    - 3    3       *   3    6  3    *  3    9   3      *  3   6    6  9  - 3  6  3     3      
+
+# values by frequency: value count word conf | up to 3 decoded contexts (2 words either side)
+   45  21 of             * | between both [of] them to ; annual report [of] * de ; the price [of] our neutral
+   69  21 the            * | the * [the] * given ; given to [the] annual report ; most * [the] price of
+   21  14 and            * | * s [and] among them ; doing justice [and] good order ; a to [and] between both
+   41  11 a              * | order propose [a] to and ; and division [a] mr merry ; * in [a] to of
+   38   9 the            9 | among them [the] best disposition ; merry that [the] * powers ; so by [the] department from
+   82   8 to             * | m it [to] gen * ; best disposition [to] * in ; of them [to] in form
+    3   8 that           * | mr merry [that] the * ; and * [that] the neutral ; * of [that] government at
+   91   8 is             * | and which [is] enclosed is ; is enclosed [is] the * ; our neutral [is] * in
+   93   7 in             * | to * [in] doing justice ; them to [in] form and ; * than [in] * and
+   10   6 to             6 | propose a [to] and between ; the neutral [to] step in ; * a [to] be more
+   48   6 of             6 | present state [of] the president ; the convention [of] in another ; a * [of] foreign affairs
+   22   5 the            9 | department from [the] committee and ; immediately with [the] former if ; new state [the] law of
+   85   5 of             9 | * a [of] * for ; * tion [of] that of ; this side [of] the same
+  430   5 i              9 | of a [i] think that ; g * [i] have * ; of * [i] am *
+   96   4 mr             9 | division a [mr] merry that ; president requested [mr] monroe * ; beginning and [mr] * for
+   17   4 in             3 | is * [in] consequence no ; less * [in] a to ; to step [in] and *
+   88   4 state          3 | the present [state] of the ; prince or [state] department had ; the new [state] the law
+  830   4 that           6 | same time [that] in ques ; tion to [that] effect beginning ; tion of [that] of one
+  250   3 it             9 | m [it] to gen ; think that [it] is in ; is and [it] is i
+   90   3 and            3 | * powers [and] he will ; in * [and] * the ; orders of [and] that of
+ 1750   3 have           * | understood you [have] no doubt ; states i [have] seen in ; * i [have] * ever
+   89   3 had            3 | state department [had] * addressed ; what i [had] he has ; * and [had] made and
+  670   3 in             6 | at least [in] any respect ; i believe [in] the same ; convention of [in] another island
+  560   3 other          * | of the [other] side as ; * of [other] may be ; or the [other] * en
+   19   3 as             3 | other side [as] the most ; the same [as] secretary of ; very well [as] that the
+ 1360   3 and            6 | to france [and] of course ; * is [and] it is ; had made [and] under a
+   86   3 same           3 | in the [same] time that ; of the [same] as secretary ; holding the [same] to me
+  420   2 s              3 | gen * [s] and among ; b * [s] and *
+  750   2 them           * | and among [them] the best ; both of [them] to in
+   56   2 he             3 | powers and [he] will transmit ; i had [he] has been
+   67   2 will           3 | and he [will] transmit it ; to * [will] be found
+  630   2 you            6 | was understood [you] have no ; * for [you] to france
+ 1460   2 no             6 | you have [no] doubt could ; in consequence [no] * of
+   33   2 by             6 | do so [by] the department ; * and [by] the president
+ 1730   2 department     3 | by the [department] from the ; or state [department] had *
+  651   2 which          6 | committee and [which] is enclosed ; subject on [which] * act
+  260   2 most           3 | son the [most] * the ; as the [most] * of
+  120   2 neutral        3 | of our [neutral] is * ; that the [neutral] to step
+  190   2 president      6 | of the [president] requested mr ; by the [president] * a
+ 1530   2 or             3 | the prince [or] state department ; of one [or] the other
+   72   2 g              3 | * of [g] b * ; of * [g] * i
+ 1880   2 be             6 | a to [be] more * ; * will [be] found in
+  860   2 i              3 | respect what [i] had he ; united states [i] have seen
+  678   2 side           6 | the other [side] as the ; * this [side] of the
+ 1410   2 be             3 | other may [be] seized and ; i cannot [be] pretended that
+  604   2 en             3 | pursued and [en] * of ; other * [en] me a
+ 1394   2 tion           9 | in ques [tion] to that ; the * [tion] of that
+   71   2 the            6 | * of [the] convention of ; side of [the] same as
+ 1040   2 me             3 | * en [me] a * ; same to [me] to take
+   47   2 a              6 | en me [a] * of ; * in [a] great britain
+ 1879   1 m              9 | [m] it to
+ 1440   1 gen            3 | it to [gen] * s
+  917   1 among          3 | s and [among] them the
+  427   1 best           6 | them the [best] disposition to
+  118   1 disposition    6 | the best [disposition] to *
+ 1798   1 doing          3 | * in [doing] justice and
+  272   1 justice        3 | in doing [justice] and good
+  380   1 good           3 | justice and [good] order propose
+ 1671   1 order          3 | and good [order] propose a
+  117   1 propose        3 | good order [propose] a to
+  680   1 between        3 | to and [between] both of
+  846   1 both           3 | and between [both] of them
+  360   1 form           9 | to in [form] and division
+  711   1 division       9 | form and [division] a mr
+  542   1 merry          9 | a mr [merry] that the
+ 1520   1 powers         3 | the * [powers] and he
+ 1380   1 transmit       3 | he will [transmit] it was
+   35   1 it             3 | will transmit [it] was understood
+  390   1 was            3 | transmit it [was] understood you
+ 1514   1 understood     3 | it was [understood] you have
+  281   1 doubt          3 | have no [doubt] could do
+  251   1 could          3 | no doubt [could] do so
+  730   1 do             3 | doubt could [do] so by
+   58   1 so             3 | could do [so] by the
+ 1698   1 from           3 | the department [from] the committee
+  660   1 committee      3 | from the [committee] and which
+ 1840   1 enclosed       6 | which is [enclosed] is the
+  252   1 given          9 | the * [given] to the
+  143   1 annual         3 | to the [annual] report of
+ 1132   1 report         3 | the annual [report] of *
+  600   1 de             3 | of * [de] son the
+  869   1 son            3 | * de [son] the most
+  851   1 price          3 | * the [price] of our
+ 1584   1 our            3 | price of [our] neutral is
+  950   1 consequence    3 | * in [consequence] no *
+  160   1 present        3 | of the [present] state of
+ 1267   1 requested      6 | the president [requested] mr monroe
+   27   1 monroe         9 | requested mr [monroe] * is
+ 1080   1 not            3 | * is [not] less *
+ 1524   1 less           3 | is not [less] * in
+ 1770   1 prince         3 | of the [prince] or state
+ 1870   1 addressed      3 | had * [addressed] an answer
+ 1274   1 an             3 | * addressed [an] answer and
+  941   1 answer         3 | addressed an [answer] and after
+ 1751   1 after          3 | answer and [after] your government
+ 1081   1 your           3 | and after [your] government might
+   31   1 government     3 | after your [government] might send
+ 1560   1 might          3 | your government [might] send him
+  400   1 send           3 | government might [send] him immediately
+  827   1 him            3 | might send [him] immediately with
+ 1010   1 immediately    3 | send him [immediately] with the
+  970   1 with           3 | him immediately [with] the former
+ 1130   1 former         3 | with the [former] if anything
+   20   1 if             3 | the former [if] anything *
+  672   1 anything       3 | former if [anything] * of
+   60   1 b              3 | of g [b] * s
+  880   1 step           3 | neutral to [step] in and
+ 1881   1 are            6 | and * [are] * and
+  693   1 more           3 | to be [more] * than
+  211   1 than           3 | more * [than] in *
+ 1409   1 new            3 | * the [new] state the
+  164   1 law            3 | state the [law] of nations
+  350   1 nations        3 | law of [nations] were and
+   70   1 were           3 | of nations [were] and still
+ 1680   1 still          3 | were and [still] is a
+   32   1 subject        3 | is a [subject] on which
+ 1429   1 on             3 | a subject [on] which *
+  487   1 act            6 | which * [act] of re
+  536   1 re             3 | act of [re] * the
+   49   1 government     3 | of that [government] at least
+ 1620   1 at             3 | that government [at] least in
+  620   1 least          3 | government at [least] in any
+  540   1 any            3 | least in [any] respect what
+  696   1 respect        3 | in any [respect] what i
+ 1600   1 what           3 | any respect [what] i had
+ 1140   1 has            3 | had he [has] been the
+ 1391   1 been           3 | he has [been] the *
+ 1544   1 may            3 | of other [may] be seized
+ 1513   1 seized         3 | may be [seized] and *
+  786   1 for            3 | of * [for] you to
+ 1060   1 france         3 | you to [france] and of
+ 1820   1 course         6 | and of [course] * that
+  100   1 ex             6 | that the [ex] * of
+  689   1 few            3 | of a [few] * pursued
+  965   1 pursued        3 | few * [pursued] and en
+ 1223   1 think          9 | a i [think] that it
+  468   1 united         3 | in the [united] states i
+  810   1 states         3 | the united [states] i have
+ 1656   1 seen           6 | i have [seen] in the
+ 1211   1 first          3 | in the [first] * of
+ 1190   1 ever           3 | have * [ever] bound to
+ 1212   1 bound          3 | * ever [bound] to *
+  507   1 found          6 | will be [found] in the
+ 1827   1 hands          3 | in the [hands] of spain
+  586   1 spain          3 | hands of [spain] the *
+  937   1 am             9 | * i [am] * is
+  980   1 believe        9 | is i [believe] in the
+ 1587   1 time           3 | the same [time] that in
+  213   1 ques           9 | that in [ques] tion to
+  150   1 effect         3 | to that [effect] beginning and
+ 1088   1 beginning      3 | that effect [beginning] and mr
+   23   1 for            3 | mr * [for] the pur
+ 1489   1 pur            3 | for the [pur] * of
+  908   1 convention     3 | of the [convention] of in
+  770   1 another        3 | of in [another] island called
+  571   1 island         3 | in another [island] called the
+ 1351   1 called         3 | another island [called] the *
+   55   1 one            3 | that of [one] or the
+ 1550   1 foreign        3 | * of [foreign] affairs i
+  878   1 affairs        3 | of foreign [affairs] i cannot
+ 1167   1 cannot         6 | affairs i [cannot] be pretended
+  300   1 pretended      3 | cannot be [pretended] that a
+   78   1 made           3 | and had [made] and under
+ 1021   1 under          3 | made and [under] a of
+  940   1 this           3 | of * [this] side of
+  110   1 secretary      3 | same as [secretary] of state
+ 1830   1 date           3 | of state [date] of the
+  914   1 people         6 | of the [people] of the
+  960   1 whole          3 | of the [whole] a very
+  812   1 very           3 | whole a [very] well as
+   11   1 well           3 | a very [well] as that
+  550   1 british        3 | that the [british] dominions long
+ 1384   1 dominions      3 | the british [dominions] long *
+ 1310   1 long           3 | british dominions [long] * when
+ 1670   1 when           3 | long * [when] holding the
+ 1100   1 holding        3 | * when [holding] the same
+ 1521   1 take           3 | me to [take] the orders
+  456   1 orders         3 | take the [orders] of and
+   26   1 great          3 | in a [great] britain
+ 1210   1 britain        3 | a great [britain]

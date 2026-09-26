@@ -1,0 +1,188 @@
+# round 3: N=181 values, cribs=14, best score -1330.8 (-3.319/token); restarts [-1340.93, -1330.78, -1344.15]
+# decode by line: word / value / confidence digit (9 = all restarts agree, * = crib, - = wildcard)
+L01 below them which not  only against the  commerce of france and a  few  days past or  * a * of  mr jay  of * s   * and the  * to become a  rule of prudence will * made and are to be in  * to and the * formed by * and  spain and britain by her  prudence delicacy in their * are not  be deemed a it is  said are to you and of the whole of it in that quarter with the present war with us   in case of the members of the french decrees so far  as  the * of * to which they are placed in that a  man of * as to deserters and finding it may  be observed that * the way for  * of state as to the people themselves on   that subject to your favor of * ber we had  better known to me   and * by the committee and myself by the president will the * of information on   that * and * him that he  * to either see him to you will have to which they are paid by the only are to * morris in the course pursued has in fact the obvious preliminary * still more difficult to the united states are under the most likely to take advantage of * that if   it were * d  * i  was in a   * copy of  a  general * of some of the  * in any event of  a  direct tax reasons which induce england to which in such a  * those who  * with * respecting the colonial trade in  some of the direct * of great importance that nothing from mr erskine the  inclosed * the object of * the latter taking a state of his  mission to england and of * itself to your letter of the  war a   tendency to promote that object with the force of about two thousand which yet * by * have already stated will be a  party in the same the war will be taken of the * of foreign * that and  the * tion of the nation in time of the * at   the * it which it  was the  policy which * act of * war and  to which * the  trade a  condition to * the war and  to * roads and was making some of
+    750   1780 58    1630 120  1428    1440 1670     30 38     29  93 1811 310  511  350 * 5 * 620 90 1048 30 * 183 * 76  1440 * 51 1720   93 1772 30 783      34   * 163  29  680 83 62 160 * 51 76  71  * 102    74 * 1490 610   29  1840    74 1666 783      906      1  1796  * 680 1340 62 829    5 56 984 290  680 83 380 29  30 36  619   30 56 52 17   1031    33   36  1016    477 33   1390 52 7    30 36  381     30 36  1264   1544    3  1280 284 36  * 30 * 83 58    1501 77  920    1  450  93 820 30 * 95 96 1730      29  880     56 1210 62 1850     450  * 36  576 1470 * 35 1130  95 51 36  1680   123        1330 17   25      51 1270 957   30 * 320 50 1190 1651   270   51 1397 76  * 74 36  1157      29  307    74 36  704       34   71  * 31 1020        1330 17   * 76  * 48  17   156 * 51 1896   274 48  51 380 34   140  51 66    1501 680 1593 74 36  120  680 83 * 1030   1  36  1667   1277    357 1  1199 36  1399    1472        * 1781  1410 912       51 36  1820   1810   680 110   71  1826 1244   96 700  144       35 * 17   1241 56 1198 * 23 * 84 150 52 550 * 1790 620 93 41      * 30 1420 30 1440 * 52 790 1710  620 93 1140   989 384     58    874    770     51 66    1  960  93 * 917   1500 * 33   * 490        28  672      100   160 1420 30 36  1140   * 30 60    1341       17   1100    958  90 1556    1520 590      * 36  1681   30 * 36  1336   1090   5 1130  30 1009 549     51 770     29  30 * 191    96 1270 1846   31 1520 930 550 1801     51 1320    450  1681   33   36  764   30 1394  88  530      66    452 * 74 * 140  1106    520    34   62 93 1350  1  36  19   28  930 34   62 788   30 36  * 30 1750    * 450  1490 36  * 1847 30 71  261    1  10   30 36  * 1200 36  * 56 58    800 150 1520 640    66    * 730 30 * 930 1490 51 66    * 1520 100   93 1250      51 * 36  930 1490 51 * 720   29  150 260    1420 30
+    3     3    9     3    3    3       9    3        *  9      *   *  3    3    3    3   - 3 - 6   3  3    *  - 3   - 9   9    - *  9      *  9    *  *        *    - 3    *   9   9  *  3   - *  9   6   - 6      *  - 3    3     *   3       *  9    *        3        *  9     - 9   6    *  3      3 3  3   3    9   9  6   *   *  *   3     *  3  6  *    9       *    *   3       3   *    3    6  6    *  *   6       *  *   3      3       3  3    3   *   - *  - 9  9     *    3   3      *  6    *  3   *  - 3  3  3         *   3       3  3    *  6        6    - *   3   3    - 3  3     3  *  *   3      3          6    *    6       *  3    3     *  - 3   3  3    3      3     *  3    9   - *  *   3         *   3      *  *   6         *    6   - 3  3           6    *    - 9   - 3   *    6   - *  6      3   3   *  6   *    9    *  *     *    9   9    *  *   3    9   9  - 3      *  *   3      3       3   *  3    *   3       3           - 3     3    3         *  *   3      3      9   3     6   3    3      3  3    3         3  - *    3    3  3    - 6  - 3  3   6  3   - 3    6   *  9       - *  6    *  9    - 6  6   6     6   *  3      3   3       9     3      3       *  *     *  3    *  - 3     3    - *    - 3          3   3        3     3   6    *  *   3      - *  3     3          *    3       3    3  3       3    3        - *   6      *  - *   3      3      3 3     *  3    3       *  3       *   *  - 3      3  3    3      3  3    3   3   3        *  6       6    6      *    *   3     *  3     3   3        *     3   - *  - 9    3       3      *    *  *  6     *  *   3    3   3   *    *  9     *  *   - *  6       - 6    3    *   - 3    *  6   6      *  6    *  *   - 6    *   - 3  9     3   3   3    3      *     - 9   *  - 3   3    *  *     - 3    3     *  3         *  - *   3   3    *  - 3     *   3   3      6    * 
+
+# values by frequency: value count word conf | up to 3 decoded contexts (2 words either side)
+   30  24 of             * | the commerce [of] france and ; mr jay [of] * s ; a rule [of] prudence will
+   36  23 the            * | and of [the] whole of ; quarter with [the] present war ; case of [the] members of
+   51  15 to             * | the * [to] become a ; in * [to] and the ; state as [to] the people
+   29   8 and            * | of france [and] a few ; * made [and] are to ; and spain [and] britain by
+   93   8 a              * | france and [a] few days ; to become [a] rule of ; in that [a] man of
+    1   7 in             * | prudence delicacy [in] their * ; are placed [in] that a ; * morris [in] the course
+  680   6 are            9 | made and [are] to be ; their * [are] not be ; is said [are] to you
+   74   6 by             * | * formed [by] * and ; and britain [by] her prudence ; and * [by] the committee
+   17   6 that           * | it in [that] quarter with ; themselves on [that] subject to ; information on [that] * and
+   34   5 will           * | of prudence [will] * made ; the president [will] the * ; to you [will] have to
+   62   5 be             * | are to [be] in * ; are not [be] deemed a ; it may [be] observed that
+   56   5 it             3 | deemed a [it] is said ; whole of [it] in that ; and finding [it] may be
+   66   5 which          * | have to [which] they are ; england to [which] in such ; two thousand [which] yet *
+   58   4 which          9 | below them [which] not only ; * to [which] they are ; tax reasons [which] induce england
+   76   4 and            9 | s * [and] the * ; * to [and] the * ; to me [and] * by
+   83   4 to             9 | and are [to] be in ; said are [to] you and ; of * [to] which they
+   71   4 the            6 | to and [the] * formed ; president will [the] * of ; are under [the] most likely
+ 1490   4 and            3 | by * [and] spain and ; * that [and] the * ; * war [and] to which
+   52   4 in             6 | of it [in] that quarter ; with us [in] case of ; i was [in] a *
+   33   4 with           * | that quarter [with] the present ; present war [with] us in ; who * [with] * respecting
+  450   4 that           6 | placed in [that] a man ; be observed [that] * the ; to promote [that] object with
+ 1520   4 the            3 | mr erskine [the] inclosed * ; letter of [the] war a ; it was [the] policy which
+  930   4 war            3 | of the [war] a tendency ; same the [war] will be ; of * [war] and to
+ 1440   3 the            9 | only against [the] commerce of ; * and [the] * to ; some of [the] * in
+    5   3 a              3 | or * [a] * of ; be deemed [a] it is ; latter taking [a] state of
+  620   3 of             6 | a * [of] mr jay ; * copy [of] a general ; any event [of] a direct
+   96   3 to             3 | * as [to] deserters and ; most likely [to] take advantage ; * itself [to] your letter
+  150   3 was            3 | * i [was] in a ; which it [was] the policy ; roads and [was] making some
+ 1420   3 some           6 | * of [some] of the ; trade in [some] of the ; was making [some] of
+  120   2 only           3 | which not [only] against the ; by the [only] are to
+   90   2 mr             3 | * of [mr] jay of ; nothing from [mr] erskine the
+  783   2 prudence       * | rule of [prudence] will * ; by her [prudence] delicacy in
+  160   2 in             3 | to be [in] * to ; colonial trade [in] some of
+  380   2 you            6 | are to [you] and of ; him to [you] will have
+ 1501   2 they           * | to which [they] are placed ; to which [they] are paid
+   95   2 as             3 | of * [as] to deserters ; of state [as] to the
+   35   2 of             3 | for * [of] state as ; take advantage [of] * that
+ 1130   2 state          3 | * of [state] as to ; taking a [state] of his
+ 1330   2 on             6 | people themselves [on] that subject ; of information [on] that *
+ 1270   2 your           3 | subject to [your] favor of ; itself to [your] letter of
+   31   2 of             3 | the * [of] information on ; your letter [of] the war
+   48   2 him            3 | and * [him] that he ; either see [him] to you
+  140   2 have           9 | you will [have] to which ; by * [have] already stated
+  550   2 a              3 | was in [a] * copy ; the war [a] tendency to
+ 1140   2 direct         3 | of a [direct] tax reasons ; of the [direct] * of
+  770   2 england        3 | which induce [england] to which ; mission to [england] and of
+   28   2 the            3 | * respecting [the] colonial trade ; the same [the] war will
+  100   2 trade          3 | the colonial [trade] in some ; * the [trade] a condition
+ 1681   2 object         6 | * the [object] of * ; promote that [object] with the
+  750   1 below          3 | [below] them which
+ 1780   1 them           3 | below [them] which not
+ 1630   1 not            3 | them which [not] only against
+ 1428   1 against        3 | not only [against] the commerce
+ 1670   1 commerce       3 | against the [commerce] of france
+   38   1 france         9 | commerce of [france] and a
+ 1811   1 few            3 | and a [few] days past
+  310   1 days           3 | a few [days] past or
+  511   1 past           3 | few days [past] or *
+  350   1 or             3 | days past [or] * a
+ 1048   1 jay            3 | of mr [jay] of *
+  183   1 s              3 | of * [s] * and
+ 1720   1 become         9 | * to [become] a rule
+ 1772   1 rule           9 | become a [rule] of prudence
+  163   1 made           3 | will * [made] and are
+  102   1 formed         6 | the * [formed] by *
+  610   1 spain          3 | * and [spain] and britain
+ 1840   1 britain        3 | spain and [britain] by her
+ 1666   1 her            9 | britain by [her] prudence delicacy
+  906   1 delicacy       3 | her prudence [delicacy] in their
+ 1796   1 their          9 | delicacy in [their] * are
+ 1340   1 not            6 | * are [not] be deemed
+  829   1 deemed         3 | not be [deemed] a it
+  984   1 is             3 | a it [is] said are
+  290   1 said           3 | it is [said] are to
+  619   1 whole          3 | of the [whole] of it
+ 1031   1 quarter        9 | in that [quarter] with the
+ 1016   1 present        3 | with the [present] war with
+  477   1 war            3 | the present [war] with us
+ 1390   1 us             3 | war with [us] in case
+    7   1 case           6 | us in [case] of the
+  381   1 members        6 | of the [members] of the
+ 1264   1 french         3 | of the [french] decrees so
+ 1544   1 decrees        3 | the french [decrees] so far
+    3   1 so             3 | french decrees [so] far as
+ 1280   1 far            3 | decrees so [far] as the
+  284   1 as             3 | so far [as] the *
+   77   1 are            3 | which they [are] placed in
+  920   1 placed         3 | they are [placed] in that
+  820   1 man            3 | that a [man] of *
+ 1730   1 deserters      3 | as to [deserters] and finding
+  880   1 finding        3 | deserters and [finding] it may
+ 1210   1 may            3 | finding it [may] be observed
+ 1850   1 observed       6 | may be [observed] that *
+  576   1 way            3 | * the [way] for *
+ 1470   1 for            3 | the way [for] * of
+ 1680   1 people         3 | to the [people] themselves on
+  123   1 themselves     3 | the people [themselves] on that
+   25   1 subject        6 | on that [subject] to your
+  957   1 favor          3 | to your [favor] of *
+  320   1 ber            3 | of * [ber] we had
+   50   1 we             3 | * ber [we] had better
+ 1190   1 had            3 | ber we [had] better known
+ 1651   1 better         3 | we had [better] known to
+  270   1 known          3 | had better [known] to me
+ 1397   1 me             3 | known to [me] and *
+ 1157   1 committee      3 | by the [committee] and myself
+  307   1 myself         3 | committee and [myself] by the
+  704   1 president      6 | by the [president] will the
+ 1020   1 information    3 | * of [information] on that
+  156   1 he             6 | him that [he] * to
+ 1896   1 either         6 | * to [either] see him
+  274   1 see            3 | to either [see] him to
+ 1593   1 paid           9 | they are [paid] by the
+ 1030   1 morris         3 | to * [morris] in the
+ 1667   1 course         3 | in the [course] pursued has
+ 1277   1 pursued        3 | the course [pursued] has in
+  357   1 has            3 | course pursued [has] in fact
+ 1199   1 fact           3 | has in [fact] the obvious
+ 1399   1 obvious        3 | fact the [obvious] preliminary *
+ 1472   1 preliminary    3 | the obvious [preliminary] * still
+ 1781   1 still          3 | preliminary * [still] more difficult
+ 1410   1 more           3 | * still [more] difficult to
+  912   1 difficult      3 | still more [difficult] to the
+ 1820   1 united         3 | to the [united] states are
+ 1810   1 states         3 | the united [states] are under
+  110   1 under          3 | states are [under] the most
+ 1826   1 most           3 | under the [most] likely to
+ 1244   1 likely         3 | the most [likely] to take
+  700   1 take           3 | likely to [take] advantage of
+  144   1 advantage      3 | to take [advantage] of *
+ 1241   1 if             3 | * that [if] it were
+ 1198   1 were           3 | if it [were] * d
+   23   1 d              6 | were * [d] * i
+   84   1 i              3 | d * [i] was in
+ 1790   1 copy           3 | a * [copy] of a
+   41   1 general        9 | of a [general] * of
+  790   1 any            6 | * in [any] event of
+ 1710   1 event          6 | in any [event] of a
+  989   1 tax            3 | a direct [tax] reasons which
+  384   1 reasons        3 | direct tax [reasons] which induce
+  874   1 induce         3 | reasons which [induce] england to
+  960   1 such           3 | which in [such] a *
+  917   1 those          3 | a * [those] who *
+ 1500   1 who            3 | * those [who] * with
+  490   1 respecting     3 | with * [respecting] the colonial
+  672   1 colonial       3 | respecting the [colonial] trade in
+   60   1 great          3 | * of [great] importance that
+ 1341   1 importance     3 | of great [importance] that nothing
+ 1100   1 nothing        3 | importance that [nothing] from mr
+  958   1 from           3 | that nothing [from] mr erskine
+ 1556   1 erskine        3 | from mr [erskine] the inclosed
+  590   1 inclosed       3 | erskine the [inclosed] * the
+ 1336   1 latter         3 | * the [latter] taking a
+ 1090   1 taking         3 | the latter [taking] a state
+ 1009   1 his            3 | state of [his] mission to
+  549   1 mission        3 | of his [mission] to england
+  191   1 itself         3 | of * [itself] to your
+ 1846   1 letter         3 | to your [letter] of the
+ 1801   1 tendency       3 | war a [tendency] to promote
+ 1320   1 promote        6 | tendency to [promote] that object
+  764   1 force          3 | with the [force] of about
+ 1394   1 about          3 | force of [about] two thousand
+   88   1 two            3 | of about [two] thousand which
+  530   1 thousand       3 | about two [thousand] which yet
+  452   1 yet            3 | thousand which [yet] * by
+ 1106   1 already        3 | * have [already] stated will
+  520   1 stated         3 | have already [stated] will be
+ 1350   1 party          6 | be a [party] in the
+   19   1 same           3 | in the [same] the war
+  788   1 taken          9 | will be [taken] of the
+ 1750   1 foreign        6 | * of [foreign] * that
+ 1847   1 tion           3 | the * [tion] of the
+  261   1 nation         6 | of the [nation] in time
+   10   1 time           6 | nation in [time] of the
+ 1200   1 at             6 | the * [at] the *
+  800   1 it             3 | it which [it] was the
+  640   1 policy         3 | was the [policy] which *
+  730   1 act            9 | which * [act] of *
+ 1250   1 condition      3 | trade a [condition] to *
+  720   1 roads          3 | to * [roads] and was
+  260   1 making         3 | and was [making] some of

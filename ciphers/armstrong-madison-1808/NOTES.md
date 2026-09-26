@@ -997,3 +997,11 @@ bare `curl -sS` silently swallowed as 0 bytes -- worth a playbook note, not adde
 descriptive User-Agent, no 429/403/challenge on any host. No logins, no credentials touched, no subagent
 calls (numpy/Pillow installed via pip this session to run `tools/iiif_lines.py` locally; not present at
 session start).
+
+26 Sept 2026 19:56 UTC (LANE ARM3 worker ARM3-LOOP, Fable): family D, model-in-the-loop crib rounds on the nomenclator
+design, control first (HYPOTHESES.md "Family D, ARM3-LOOP"). Three matched controls (seeds 2-4, `loop/`), blind 15.6 /
+2.3 / 11.3 percent blended, three reader rounds each: best gains +10.7 / +14.4 / +2.6, mean 9.2 at the most favourable
+count, under the 10-point gate and under the 13.3-point blind spread; the gain is particle-only (book class never above
+3.3 percent); 18 of 55 cribs right. Gate not met, target not run; family D is a control-backed non-test at this N. Tools:
+`tools/families/nomenclator.py` cribs option, `tools/crib_rounds.py --family nomenclator`, tests pass. Next step
+unchanged from family C: more ciphertext in the same code, or a crib source outside the ciphertext.
