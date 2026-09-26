@@ -1,6 +1,6 @@
 # Thurloe printed cipher letters (23 items, Birch 1742, vols 2/3/5/7)
 partial
-(Folder-level rule-5 status, set 26 Sept 2026 03:55 UTC by parent 7e after V8-QA6: the pool is a dataset of printed decipherments aligned to their cipher groups, P2-P28 each classed N0 in AUDIT.md; the recovered pool keys have not yet read any letter that is not in print. Per-item classes are in AUDIT.md.)
+(Folder-level rule-5 status, set 26 Sept 2026 03:55 UTC by parent 7e after V8-QA6. Check-solved basis: Birch 1742, A Collection of the State Papers of John Thurloe, vols 2, 3, 5 and 7, read whole-volume through the Internet Archive full text (identifiers and pages per item in AUDIT.md; e.g. vol.3 pp.382-383, 383, 409 and vol.5 pp.100-101 for P25-P28): the pool is a dataset of printed decipherments aligned to their cipher groups, P2-P28 each classed N0 in AUDIT.md; the recovered pool keys have not yet read any letter that is not in print. Per-item classes are in AUDIT.md.)
 
 ## Handoff (LANE T orchestrator, closed 24 Sept 2026 05:20 UTC)
 
