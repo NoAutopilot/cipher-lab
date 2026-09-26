@@ -884,3 +884,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T14:33Z	session_019AKvmQkHxZjvUQQvHnrmJL	retrospective t	done 3.34 (get_session), ledgered D, retitled ARCHIVED, archived by 7h	RETRO-2026-09-26h.md, 5 proposals
 2026-09-26T14:33Z	session_01WNitVVGthGvdkHoyXGzkDw	LANE V9 orchestrator	closed 14:14, 11.18 by get_session (ledger row edited from 10.30), archived by 7h	V10 opens adopting QA12
 2026-09-26T14:33Z	session_01CbcHcbkYKV5HRKwBW4w7aq	LANE ARM2 orchestrator	idle-standing on ASKS 66 at 13:45, 5.05 by get_session (ledger row edited from 3.67), archived by 7h	outreach/armstrong-madison-editors.md draft AUDIT-gated
+2026-09-26T14:32Z	session_01XqjQEcUk24M3NcMvGsJwv9	RETRO-APPLY-T (Sonnet, cap 6)	apply RETRO-2026-09-26h.md proposals 3-5; verify 1-2 landed via RETRO-APPLY-LEARN4	brief 2026-09-26-parent-retro-apply-t.md; parent 7h
+2026-09-26T14:32Z	session_011A4Fqfk4uGDijwcC83mYkp	LANE V10 orchestrator (Opus, cap 50)	verifiers and rolling QA, V9 successor; QA12 first, three-hour cadence while breadth-only	brief 2026-09-26-lane-v10-orchestrator.md; parent 7h
