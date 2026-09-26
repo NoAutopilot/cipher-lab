@@ -5,7 +5,7 @@ dup_align.tsv (bMALDUP, whole-leaf NW alignment of f.28's raw group sequence aga
 raw z/i spellings are normalized by the same rule bMALG's glyph_map.tsv applies (length<=3, digits+i/z only ->
 i='1', z='2'), to reproduce recon_0030/ciphertext_draft.tsv's sign sequence exactly (0 mismatches over 464
 tokens) at the positions where both sides are non-blank. So dup_align.tsv's idx order gives an exact, already-
-graded f.30 reading for f.28's L05-14 tokens (positions confirmed against recon_0028_full/ciphertext_draft.tsv's
+graded f.30 reading for f.28's L05-14 tokens (positions confirmed against recon_0028_all/ciphertext_draft.tsv's
 own L05-14 sequence: 0 mismatches after normalization over 497 tokens). This is a second, independent leaf's
 own already-reconciled (two-blind-pass) reading, not a new observation -- exactly the "both leaves agree" bar
 CLAUDE.md rule 3 and this job's brief set, at zero additional cost.
@@ -33,7 +33,7 @@ def main():
     a = ap.parse_args()
 
     dup = load_tsv('dup_align.tsv')
-    f28rows = [r for r in load_tsv('recon_0028_full/ciphertext_draft.tsv') if int(r['line']) <= 14]
+    f28rows = [r for r in load_tsv('recon_0028_all/ciphertext_draft.tsv') if int(r['line']) <= 14]
     r30 = load_tsv('recon_0030/ciphertext_draft.tsv')
 
     i28 = i30 = 0
@@ -48,7 +48,7 @@ def main():
             pair_map[(f28row['line'], f28row['position'])] = f30row
     assert i28 == len(f28rows) and i30 == len(r30), (i28, len(f28rows), i30, len(r30))
 
-    dis = load_tsv('recon_0028_full/disagreements.tsv')
+    dis = load_tsv('recon_0028_all/disagreements.tsv')
     settled = {}
     for row in dis:
         if int(row['line']) > 14:
@@ -67,7 +67,7 @@ def main():
         print("dry run; pass --apply to write")
         return
 
-    draft_path = 'recon_0028_full/ciphertext_draft.tsv'
+    draft_path = 'recon_0028_all/ciphertext_draft.tsv'
     draft = load_tsv(draft_path)
     fieldnames = list(draft[0].keys())
     n_changed = 0
@@ -84,13 +84,13 @@ def main():
         w.writeheader()
         w.writerows(draft)
 
-    with open('recon_0028_full/dup_witness_settled.tsv', 'w', newline='', encoding='utf-8') as f:
+    with open('recon_0028_all/dup_witness_settled.tsv', 'w', newline='', encoding='utf-8') as f:
         w = csv.writer(f, delimiter='\t')
         w.writerow(['line', 'col', 'value', 'source'])
         for (line, col), val in sorted(settled.items(), key=lambda x: (int(x[0][0]), int(x[0][1]))):
             w.writerow([line, col, val, 'f30_dup_align_H'])
 
-    print(f"wrote {n_changed} updated rows to {draft_path}; log at recon_0028_full/dup_witness_settled.tsv")
+    print(f"wrote {n_changed} updated rows to {draft_path}; log at recon_0028_all/dup_witness_settled.tsv")
 
 if __name__ == '__main__':
     sys.exit(main())

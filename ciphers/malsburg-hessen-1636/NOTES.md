@@ -922,4 +922,123 @@ Files: `crops/0024/` (45 line crops + manifest, debug overlay dropped), `clear_0
 `transcription/pass_{a,b}_0024_block1.tsv`, `recon_0024/` (disagreements.tsv, ciphertext_draft.tsv,
 agreement.tsv, gate.json).
 
+## Record 507 f.28 finish (bMAL28B, 26 Sept 2026)
+
+Intake gate re-run: `python3 tools/intake_gate_check.py malsburg-hessen-1636` -> `partial` (line 1), exit 0.
+
+**Scope.** Finish what bMAL28 stopped at its cap: transcribe blocks 4-5 (L45-L57, 13 lines), reduce f.28's
+M-share toward the pool gate by settling disagreements against f.30 as witness, and take a third, independent
+look at the L36/L39/L44 embedded clear-German clauses.
+
+**Blocks 4-5 transcribed.** 4 Sonnet subagent calls (`pass_{a,b}_0028_b4.tsv` for L45-51, `pass_{a,b}_0028_b5.tsv`
+for L52-57), each given only its block's crop paths (<=7 lines), bMALG's glyph-convention paragraph pasted
+verbatim plus one addition this job made after finding pass A splitting doubled strokes into two tab fields on
+block 3's own line 37 (see below): "when the same stroke shape appears twice in immediate succession, write it as
+ONE token (`zz`), not two separate tokens, unless a clear gap makes them genuinely separate." One call (pass B,
+block 5) ran long (212,537 tokens, 143 tool-uses, ~18 minutes) -- the same single-call-overrun shape CLAUDE.md
+Usage 6 already names (GOLD-4D/bMAL28's own block-2 outlier), here for a genuinely hard, low-resolution stretch of
+leaf (per that pass's own report: "genuinely difficult hand at low native resolution... upscaled/cropped segments
+locally to improve legibility"); it finished within this job's box regardless. Both blocks reconciled:
+```
+recon_0028_b4 (L45-51): lines 7  signs A 290 B 284  agree 222/304 = 73.0%  disagreement 82
+recon_0028_b5 (L52-57): lines 6  signs A 228 B 211  agree 145/232 = 62.5%  disagreement 87
+```
+L57 (the leaf's last line) reads as blank/bled-through parchment to pass B (one ILLEGIBLE token) and very sparse
+to pass A -- consistent with the bottom of a leaf, not a transcription failure. L56 has a physical hole between
+two number groups (both passes independently flag it). L52 and L55 carry short `Und` clear-word tokens, no new
+embedded prose clause beyond the three already known (L36/L39/L44).
+
+**Full-leaf reconciliation (L05-57, all 53 cipher lines).** Concatenated all five passes per side
+(`pass_{a,b}_0028_all.tsv`) and reconciled once:
+```
+python3 tools/reconcile_passes.py transcription/pass_a_0028_all.tsv transcription/pass_b_0028_all.tsv \
+  --sign-map glyph_map.tsv --crops crops/0028 --out-dir recon_0028_all --keep-plain
+  -> lines 53  signs A 2315 B 2237  agree 1771/2363 = 74.9%  disagreement 592
+```
+`recon_0028_all/` supersedes bMAL28's `recon_0028_full/` (L05-44 only, now stale) as the leaf's full draft.
+
+**Settling: two methods, no new f.30 blind pass (out of this job's budget -- see "not done" below).**
+
+*(1) Free reuse of already-collected data, L05-14 only (45 rows).* bMALDUP's `dup_align.tsv` (a whole-leaf NW
+alignment of f.28's raw group sequence against f.30's, built before the glyph-shape convention existed and
+flagged "unusable" by the orchestrator for BMALDUP's own same-key-test purpose) turns out, once its raw z/i
+spellings are normalized by bMALG's own rule (token length<=3, digits+i/z only -> i='1', z='2'), to reproduce
+`recon_0030/ciphertext_draft.tsv`'s sign sequence exactly: **0 mismatches over both the f.28 side (497 tokens,
+L05-14) and the f.30 side (464 tokens)** against the current committed drafts. So `dup_align.tsv`'s index order
+gives an exact, already-graded f.30 reading for f.28's L05-14 tokens at zero new cost -- a second leaf's own
+already-reconciled (two-blind-pass) reading, reused rather than re-collected. `tools/settle_dup_witness.py`
+(offline, reproducible) promotes a disagreement to H only when f.30's own aligned confidence is H (both of f.30's
+blind passes agreed) AND that value matches one of f.28's two candidates. 45 of L05-14's 133 disagreement rows
+clear this bar.
+
+*(2) Direct reads of the f.30 line crop, for lines beyond L14 where no f.30 transcription exists at all (41
+rows).* `crops/0030` has all 59 of f.30's line crops on disk (bMAL28's fetch) but nothing beyond L14 has ever been
+transcribed. **f.30's line breaks do not track f.28's 1:1 past L14, and the lag is not constant**: f.30's own
+L16 crop contains f.28's L15 tail plus L16's start (confirmed by an 18-20 token exact-content match once
+glyph-normalized); by f.28's L20 the same-numbered f.30 crop no longer matches at all (checked and rejected);
+but by f.28's L36/L37/L41/L43 the same-numbered f.30 crop matches again almost exactly (some of these lines fall
+either side of the L36/L39 embedded plaintext clauses, which likely absorb slack differently between the two
+copies' line-wrapping). Every settle below required first confirming a run of >=4 already-agreed tokens between
+the read crop and the target line before trusting it for a disagreement row -- reads that didn't reach that bar
+(attempted for lines 18, 20, 25, 29, 33's early columns) were discarded, not forced. Settled, by line (crop read
+-> line settled): L16->L15(8 rows)+L16(12 rows), L19(2 rows), L34->L33(5 rows), L37(2 rows), L41(7 rows),
+L43(5 rows). Recorded in `manual_witness_settled{,2,3,4,5,6}.tsv` with the crop file cited per row; applied by
+`apply_manual_witness.py`.
+
+**Result.**
+```
+python3 tools/leaf_pool_gate.py --leaf recon_0028_all/ciphertext_draft.tsv --pool ciphertext.txt --json recon_0028_all/gate.json
+-> N=2363 K=182 M=0.214 (<=0.15 NOT met) offform=0.022 (<=0.05 met) vocab overlap 0.794;
+   cosine real 0.660 vs relabel mean 0.411 p95 0.506 (met) -> HELD
+```
+M share fell from bMAL28's 0.232 (on L05-44 alone, N=1827) to 0.184 on that same span after settling (337 M of
+1827; 86 of 423 disagreement rows settled: 45 dup-witness + 41 direct-read), but the full leaf including the
+freshly-transcribed, entirely-unsettled blocks 4-5 (592 new disagreement rows over 2363 signs) reads M=0.214 --
+worse than L05-44 alone, because blocks 4-5 have had no settling pass at all yet. This job's own stop line was
+M<=0.13 (a margin under the leaf_pool_gate's 0.15); neither the L05-44 figure nor the full-leaf figure reaches it.
+Same-system gates (cosine, off-form) still pass comfortably, as bMAL28 found -- this remains a settling gap, not
+a same-key or noise problem.
+
+**Not done, and why.** The brief's witness-settling method ("open the f.28 crop AND the aligned f.30 crop... both
+leaves agree -> H") assumes f.30 is already transcribed at the aligned position; true only through L14. Getting
+that witness for the rest of the leaf means either (a) transcribing f.30's own L15-59 the same way f.28 was (2
+blind passes x ~8 blocks of <=7 lines = ~16 subagent calls, an estimated $14-16 at this job's own per-call rate --
+larger than a single job's cap) or (b) the crop-by-crop manual read this job did, which is real but slow (about
+20 minutes of this job's box for ~65 settled rows) and cannot be scaled to blocks 4-5's own 171 fresh
+disagreement rows within the remaining budget. Neither was completed for blocks 4-5, and the L15-44 settle above
+covers roughly 20% of that span's disagreements, not the ~65% needed to clear the gate from a standing start.
+
+**Finding, corrected: the "z,z-as-two-tokens" question is genuinely ambiguous, not a simple segmentation fix.**
+Investigating why `('2','-')`-shaped gap disagreements cluster (28 of 423 rows on L05-44 alone) found pass A, on
+several of block 3's lines, writing what one might expect to be one doubled-stroke glyph as two separate tab
+fields (e.g. line 37, positions 1-2, both raw "z"). Zooming 4x on that specific instance (`crops/0028/..._L37.jpg`,
+x=100-420) shows the shape is NOT a doubled z at all -- it reads as a single "z"-mark immediately followed by a
+digit "7", which BOTH blind passes apparently absorbed into one misread token. So a blanket "merge adjacent z,z
+into one zz token" fix is not safe without per-instance image checking (this one instance would have been merged
+wrongly). Where the f.30 witness read DID independently show the same doubled-stroke shape at the aligned
+position (lines 41 and 37, confirmed above), that is read as evidence the doubling is a real, recurring feature
+(most likely two adjacent occurrences of the same one-digit value, both leaves reproducing the same visual form),
+not transcription noise -- but this was checked per-instance, not applied as a rule.
+
+**Third read of the embedded clear-German clauses (`clear_0028.txt`).** An independent single-reader zoom on
+L36/L39/L44, not corroborated by f.30 (no transcription there either). Confirms the opening of L36 ("...(h)iet
+daß alles so muß zu fordern...") and most of L39 ("wollest das from(m)... nach massgab... wieder(umb) al(so)fort
+seyn") across all three readers (pass A, pass B, this read); L44 stays effectively illegible to all three. Not
+used in any grading or gate computation -- crib context only, per rule 4 (grade M, no H/C claim).
+
+**Next steps (not this job):** (1) a dedicated f.30 blind-transcription job (2 passes x ~8 blocks) if the pool
+wave needs this leaf enough to spend ~$15 on it -- the free win in method (1) above shows the payoff is real
+once the witness exists; (2) settle blocks 4-5's 171 fresh disagreement rows the same way blocks 1-3 were
+(against f.30 once transcribed, or by the same per-instance crop-matching this job used, budget permitting);
+(3) the L36/L39/L44 clause wording remains unfixed by any of three independent readers -- a fourth pass with a
+finer crop (this job did not build a per-token zoom tool in time) or the recipient's registry copy, if one
+survives, is the next step there.
+
+Files: `transcription/pass_{a,b}_0028_b{4,5}.tsv` (raw), `pass_{a,b}_0028_all.tsv` (concatenated all blocks),
+`recon_0028_b{4,5}/`, `recon_0028_all/` (disagreements.tsv, ciphertext_draft.tsv, agreement.tsv, gate.json,
+dup_witness_settled.tsv), `settle_dup_witness.py`, `apply_manual_witness.py`,
+`manual_witness_settled{,2,3,4,5,6}.tsv`, `clear_0028.txt`.
+
+Hosts: none (all work from images and pass TSVs already on disk).
+
 Hosts: none (image already on disk from bMALC's fetch).

@@ -1,0 +1,233 @@
+line	position	sign	confidence	alt	why
+52	1	[PLAIN:ILLEGIBLE]	M	B:[PLAIN:Camb Hoffschreibers nach, so im Duplo abzuschreiben gewesen worden,]	differ
+52	2	83	H		agree
+52	3	36	H		agree
+52	4	30	H		agree
+52	5	93	M	B:43	differ
+52	6	16	H		agree
+52	7	22	H		agree
+52	8	60	H		agree
+52	9	74	H		agree
+52	10	79	H		agree
+52	11	7	H		agree
+52	12	2	H		agree
+52	13	16	H		agree
+52	14	30	H		agree
+52	15	[PLAIN:ILLEGIBLE]	M	B:Und	differ
+52	16	96	M	B:86	differ
+52	17	2	H		agree
+52	18	1	H		agree
+52	19	54	H		agree
+52	20	78	H		agree
+52	21	1	M	B:-	gap
+52	22	1	M	B:11	differ
+52	23	N	H		agree
+52	24	16	H		agree
+52	25	30	H		agree
+53	1	55	H		agree
+53	2	99	H		agree
+53	3	13	H		agree
+53	4	10	H		agree
+53	5	Y	H		agree
+53	6	2	H		agree
+53	7	25	M	B:-	gap
+53	8	1	M	B:51	differ
+53	9	80	M	B:40	differ
+53	10	78	H		agree
+53	11	73	H		agree
+53	12	8	M	B:-	gap
+53	13	2	M	B:89	differ
+53	14	2	H		agree
+53	15	16	H		agree
+53	16	22	H		agree
+53	17	76	H		agree
+53	18	88	H		agree
+53	19	30	H		agree
+53	20	73	M	B:43	differ
+53	21	93	H		agree
+53	22	2	M	A:-	gap
+53	23	22	M	B:7	differ
+53	24	16	H		agree
+53	25	25	M	B:2	differ
+53	26	7	M	B:5	differ
+53	27	2	M	B:71	differ
+53	28	79	H		agree
+53	29	N	H		agree
+53	30	60	H		agree
+53	31	6	M	B:-	gap
+53	32	2	M	B:61	differ
+53	33	73	M	B:43	differ
+53	34	6	M	B:61	differ
+53	35	2	M	B:7	differ
+53	36	79	H		agree
+53	37	7	H		agree
+53	38	2	H		agree
+53	39	16	H		agree
+53	40	83	H		agree
+53	41	87	M	B:67	differ
+53	42	55	H		agree
+53	43	74	M	B:44	differ
+53	44	77	H		agree
+53	45	1	M	B:-	gap
+53	46	1	M	B:11	differ
+53	47	16	H		agree
+53	48	16	H		agree
+53	49	7	H		agree
+53	50	2	H		agree
+53	51	44	H		agree
+53	52	65	H		agree
+54	1	2	H		agree
+54	2	84	H		agree
+54	3	73	H		agree
+54	4	14	H		agree
+54	5	74	M	B:4	differ
+54	6	2	H		agree
+54	7	11	H		agree
+54	8	22	H		agree
+54	9	3	H		agree
+54	10	2	H		agree
+54	11	16	H		agree
+54	12	84	M	B:-	gap
+54	13	74	M	B:44	differ
+54	14	70	H		agree
+54	15	88	H		agree
+54	16	85	H		agree
+54	17	7	M	B:-	gap
+54	18	1	M	B:71	differ
+54	19	55	H		agree
+54	20	80	H		agree
+54	21	9	H		agree
+54	22	2	H		agree
+54	23	16	H		agree
+54	24	22	H		agree
+54	25	91	H		agree
+54	26	30	H		agree
+54	27	36	H		agree
+54	28	6	M	B:61	differ
+54	29	2	H		agree
+54	30	29	M	B:9	differ
+54	31	16	H		agree
+54	32	44	H		agree
+54	33	87	H		agree
+54	34	99	H		agree
+54	35	77	H		agree
+54	36	7	M	B:-	gap
+54	37	80	M	B:70	differ
+54	38	88	H		agree
+54	39	67	H		agree
+54	40	84	H		agree
+54	41	55	M	B:65	differ
+54	42	67	H		agree
+54	43	16	H		agree
+54	44	22	H		agree
+54	45	2	M	A:-	gap
+54	46	28	M	B:8	differ
+54	47	44	H		agree
+54	48	67	H		agree
+54	49	6	M	B:-	gap
+54	50	2	M	B:61	differ
+55	1	30	H		agree
+55	2	55	H		agree
+55	3	H	M	B:-	gap
+55	4	1	M	B:44	differ
+55	5	6	H		agree
+55	6	30	H		agree
+55	7	13	H		agree
+55	8	Y	H		agree
+55	9	83	H		agree
+55	10	5	M	B:-	gap
+55	11	1	M	B:51	differ
+55	12	73	H		agree
+55	13	22	H		agree
+55	14	16	H		agree
+55	15	44	H		agree
+55	16	Und	M	A:-	gap
+55	17	6	M	B:8	differ
+55	18	82	M	B:2	differ
+55	19	55	H		agree
+55	20	91	H		agree
+55	21	1	M	B:-	gap
+55	22	16	H		agree
+55	23	22	H		agree
+55	24	68	H		agree
+55	25	11	H		agree
+55	26	16	M	B:73	differ
+55	27	75	M	B:S	differ
+55	28	W	H		agree
+55	29	22	H		agree
+55	30	6	M	B:-	gap
+55	31	2	M	B:62	differ
+55	32	76	H		agree
+55	33	25	M	B:-	gap
+55	34	7	M	B:-	gap
+55	35	1	M	B:2	differ
+55	36	80	M	B:5	differ
+55	37	9	M	B:71	differ
+55	38	22	M	B:2	differ
+55	39	28	M	B:8	differ
+55	40	31	H		agree
+55	41	2	M	B:-	gap
+55	42	6	M	B:-	gap
+55	43	1	M	B:46	differ
+55	44	6	M	B:16	differ
+55	45	30	H		agree
+55	46	77	H		agree
+55	47	Y	H		agree
+55	48	60	H		agree
+55	49	6	M	B:-	gap
+55	50	1	M	B:61	differ
+55	51	63	H		agree
+56	1	9	H		agree
+56	2	2	H		agree
+56	3	87	M	B:57	differ
+56	4	83	H		agree
+56	5	S	H		agree
+56	6	N	H		agree
+56	7	7	M	B:-	gap
+56	8	1	M	B:71	differ
+56	9	93	M	B:73	differ
+56	10	4	H		agree
+56	11	2	H		agree
+56	12	22	M	B:2	differ
+56	13	3	H		agree
+56	14	G	M	B:S	differ
+56	15	44	H		agree
+56	16	60	H		agree
+56	17	36	H		agree
+56	18	7	H		agree
+56	19	2	M	A:-	gap
+56	20	22	M	B:2	differ
+56	21	25	M	B:5	differ
+56	22	9	H		agree
+56	23	2	H		agree
+56	24	Y	H		agree
+56	25	22	H		agree
+56	26	X	H		agree
+56	27	55	H		agree
+56	28	67	H		agree
+56	29	16	H		agree
+56	30	44	M	B:-	gap
+56	31	3	M	B:43	differ
+56	32	8	M	B:48	differ
+56	33	1	M	B:L	differ
+56	34	29	M	B:49	differ
+56	35	8	H		agree
+56	36	22	M	B:2	differ
+56	37	79	H		agree
+56	38	83	H		agree
+56	39	6	M	B:67	differ
+56	40	1	M	B:ILLEGIBLE	differ
+56	41	4	M	B:44	differ
+56	42	80	M	B:89	differ
+56	43	99	H		agree
+56	44	73	H		agree
+56	45	8	M	B:-	gap
+56	46	1	M	B:81	differ
+56	47	53	H		agree
+56	48	16	H		agree
+56	49	22	H		agree
+56	50	10	H		agree
+56	51	88	H		agree
+56	52	30	H		agree
+56	53	43	H		agree
+57	1	[PLAIN:ILLEGIBLE]	M	B:ILLEGIBLE	differ
