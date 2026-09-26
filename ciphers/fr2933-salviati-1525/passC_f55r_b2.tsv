@@ -1,0 +1,31 @@
+line	pos	code	marks	conf	note
+10	1	a	7	H	bold cursive a with 7-shaped mark above (matches atlas a+7 exemplar)
+10	16	rz		M	low left-hook-then-wave shape resembling lying-z/rz; S at right edge is neighbour (pos17); fragment at bottom edge uncertain, possibly tail continuation cut by crop
+10	22	#		H	bold vertical stroke with two crossbars standing on the baseline; matches double-barred # not single +; partial neighbour sliver at right edge
+11	3	_		H	plain cursive "ist"
+11	11	m	5	H	cursive m with s/5-like hook mark above; # fragment at left edge is neighbour (pos10)
+12	11	a		H	bold cursive a
+12	13	_		M	plain cursive, reads like "utt"; no clear match to a sign shape
+12	20	y		M	loop at top with long descending curved tail, resembles cursive y with looped tail
+12	24	_		M	two vertical strokes joined by a diagonal, resembles plain cursive "ll"/"lh"
+13	1	o.	dot	H	ring with dot inside (⊙) with two dots above; tee-shaped neighbour and connecting underline stroke at right edge belong to pos2
+13	2	tee		H	vertical stroke with bar to the right (⊢), decorative connecting underline below shared with pos1; dots at top-left edge belong to pos1's marks
+13	12	S		H	S/ʃ-shaped sign
+13	33	m	7	H	bold cursive m with 7-shaped mark above; s-fragment at left edge is neighbour (pos32)
+14	5	sq		H	closed square box (□); partial g at right edge is neighbour
+14	13	_		H	plain cursive word "obra"
+15	4	_		H	plain cursive "al"
+15	7	p		M	p with loop and crossed/curled stem (Pr-like); small 1-like stroke lower right uncertain, not counted as mark (position/shape unclear)
+15	9	_		H	plain cursive "ratio" with abbreviation tilde over the o
+15	26	p		M	loop with descending tail, resembles p (Po-like combination)
+16	1	_		H	plain cursive "ru"
+16	27	+		M	single cross standing on the line; s-fragment at left edge is neighbour; diagonal tail with dot below-right uncertain (possibly flourish, not counted as separate mark)
+16	30	_		M	plain cursive, reads like "nza"/"nzr"
+17	1	_		H	plain cursive "al"
+17	4	p		H	p with loop and curled tail (Po-like)
+17	14	sq	+	M	closed square box (□) with a small hooked/crossed mark above (ambiguous vs listed mark codes); psi/y-shaped neighbour at right edge belongs to pos15
+18	2	_		H	plain cursive "sa"
+18	6	f		H	long f/ſ with crossbar near top, tail curling into an o-loop (matches atlas f+o/p combinations)
+18	11	_		H	plain cursive "al"
+18	24	rz		L	faint low open arc, ambiguous; could be a ligature/connector stroke rather than a coded sign; partial neighbour shape at right edge
+19	10	g	5	M	9/g-shaped sign with a curved numeral-like mark above resembling "3"; no listed mark code matches exactly, closest is 5, low-mid confidence on the mark

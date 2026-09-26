@@ -1,0 +1,62 @@
+line	pos	code	marks	source	reason
+1	7	S7		split	A=_ B=S7 C=+; C note: 
+1	8	w		BC	A=_ B=w C=w; C note: lead-in stroke + w body + tail, matches w atlas
+1	9	y		BC	A=_ B=y C=y; C note: cursive y with looped tail
+1	10	lam		BC	A=_ B=lam C=lam; C note: two strokes meeting at top, lambda-like; adjacent stroke is context
+1	11	wd	~	BC	A=_ B=wd C=wd; C note: w-body with tall right stroke, matches wd; squiggle above likely neighbor context
+1	20	psi		split	A=_ B=psi C=y; C note: cursive y with looped tail
+1	21	e	+	BC	A=_ B=e C=e; C note: looped e bowl with single-cross mark above
+2	11	e	#	BC	A=_ B=e C=e; C note: looped e bowl with double-cross mark above
+2	12	g	7	BC	A=bh B=g C=g; C note: 9/g loop+tail shape; curled stroke above resembles s/5 hook mark
+2	22	w		BC	A=_ B=w C=w; C note: lead-in stroke + w body, tail at right edge
+3	23	o.		BC	A=_ B=o. C=o.; C note: ring with dot inside, unmistakable
+3	24	g	3	split	A=_ B=g C=eps; C note: two stacked open bowls, epsilon-like; curled mark above resembles s/5 hook
+3	27	e		split	A=g B=e C=p; C note: loop at top with crossed stem, matches p; e bowl at left is neighbor context
+4	4	p		BC	A=y B=p C=p; C note: loop top, crossed stem descending; dots to left are context, not marks
+4	5	_		BC	A=w B=_ C=_; C note: plain script "ques", legible Latin letters
+4	11	p		BC	A=y B=p C=p; C note: loop top, crossed stem, matches p closely, same shape as line4 pos4
+4	12	g		BC	A=_ B=g C=g; C note: loop with long looping descender tail, classic g shape
+4	20	N		BC	A=_ B=N C=N; C note: cursive N with fancy loops, matches N atlas
+5	6	_	dot	AC	A=_ B=S C=_; C note: plain script "nsc", legible Latin letters
+5	10	_		BC	A=lam B=_ C=_; C note: isolated short diagonal stroke with dot at top, no clear sign body, ambiguous/blank
+5	12	S	dot	BC	A=_ B=S C=S; C note: S-shaped stroke at bottom of crop; ligature above is context bleed from adjacent line
+5	18	e	dot|+	BC	A=_ B=e C=e; C note: open looped bowl, e-like; dots below are context, not marks
+5	19	L		split	A=_ B=L C=U; C note: square cup open at top, clean U shape
+6	1	sq		BC	A=Z B=sq C=sq; C note: closed square box, clear
+6	28	_		BC	A=y B=_ C=_; C note: plain script capital "Av", legible Latin letters
+7	8	S4		BC	A=_ B=S4 C=S4; C note: diagonal slash crossing a foot/vertical, 4-like shape matches S4
+7	10	_		split	A=L B=_ C=m; C note: single arch/hump sitting on a horizontal stroke, ambiguous, could be partial m or unclear mark
+7	19	#		BC	A=_ B=# C=#; C note: clear double-barred cross
+7	22	y		BC	A=g B=y C=y; C note: cursive y with looped tail
+7	26	sq		BC	A=] B=sq C=sq; C note: slanted closed square/parallelogram shape with dotted baseline
+9	16	U		BC	A=H B=U C=U; C note: clean square cup open at top, matches U
+10	1	a	7	BC	A=y B=a C=a; C note: bold cursive a with 7-shaped mark above (matches atlas a+7 exemplar)
+10	16	S		split	A=lam B=S C=rz; C note: low left-hook-then-wave shape resembling lying-z/rz; S at right edge is neighbour (pos17); fragment at bottom edge uncertain, possibly tail continuation cut by crop
+10	22	tee		split	A=H B=tee C=#; C note: bold vertical stroke with two crossbars standing on the baseline; matches double-barred # not single +; partial neighbour sliver at right edge
+11	3	_		AC	A=_ B=S C=_; C note: plain cursive "ist"
+11	11	m	5	AC	A=m B=_ C=m; C note: cursive m with s/5-like hook mark above; # fragment at left edge is neighbour (pos10)
+12	11	a		BC	A=_ B=a C=a; C note: bold cursive a
+12	13	_		BC	A=# B=_ C=_; C note: plain cursive, reads like "utt"; no clear match to a sign shape
+12	20	_		split	A=g B=_ C=y; C note: loop at top with long descending curved tail, resembles cursive y with looped tail
+12	24	_		BC	A=tee B=_ C=_; C note: two vertical strokes joined by a diagonal, resembles plain cursive "ll"/"lh"
+13	1	_		split	A=e B=_ C=o.; C note: ring with dot inside (⊙) with two dots above; tee-shaped neighbour and connecting underline stroke at right edge belong to pos2
+13	2	_		split	A=eps B=_ C=tee; C note: vertical stroke with bar to the right (⊢), decorative connecting underline below shared with pos1; dots at top-left edge belong to pos1's marks
+13	12	S		BC	A=tee B=S C=S; C note: S/ʃ-shaped sign
+13	33	m	7	BC	A=y B=m C=m; C note: bold cursive m with 7-shaped mark above; s-fragment at left edge is neighbour (pos32)
+14	5	sq		BC	A=U B=sq C=sq; C note: closed square box (□); partial g at right edge is neighbour
+14	13	_		BC	A=y B=_ C=_; C note: plain cursive word "obra"
+15	4	_		AC	A=_ B=a C=_; C note: plain cursive "al"
+15	7	p		BC	A=_ B=p C=p; C note: p with loop and crossed/curled stem (Pr-like); small 1-like stroke lower right uncertain, not counted as mark (position/shape unclear)
+15	9	_		BC	A=Lx B=_ C=_; C note: plain cursive "ratio" with abbreviation tilde over the o
+15	26	p		AC	A=p B=_ C=p; C note: loop with descending tail, resembles p (Po-like combination)
+16	1	_		AC	A=_ B=S7 C=_; C note: plain cursive "ru"
+16	27	+		BC	A=_ B=+ C=+; C note: single cross standing on the line; s-fragment at left edge is neighbour; diagonal tail with dot below-right uncertain (possibly flourish, not counted as separate mark)
+16	30	_		BC	A=S7 B=_ C=_; C note: plain cursive, reads like "nza"/"nzr"
+17	1	_		AC	A=_ B=a C=_; C note: plain cursive "al"
+17	4	p		BC	A=_ B=p C=p; C note: p with loop and curled tail (Po-like)
+17	14	sq	+	BC	A=g B=sq C=sq; C note: closed square box (□) with a small hooked/crossed mark above (ambiguous vs listed mark codes); psi/y-shaped neighbour at right edge belongs to pos15
+18	2	_		AC	A=_ B=N C=_; C note: plain cursive "sa"
+18	6	_		split	A=bh B=_ C=f; C note: long f/ſ with crossbar near top, tail curling into an o-loop (matches atlas f+o/p combinations)
+18	11	_		AC	A=_ B=a C=_; C note: plain cursive "al"
+18	24	_		split	A=S7 B=_ C=rz; C note: faint low open arc, ambiguous; could be a ligature/connector stroke rather than a coded sign; partial neighbour shape at right edge
+19	10	g	5	BC	A=bh B=g C=g; C note: 9/g-shaped sign with a curved numeral-like mark above resembling "3"; no listed mark code matches exactly, closest is 5, low-mid confidence on the mark
