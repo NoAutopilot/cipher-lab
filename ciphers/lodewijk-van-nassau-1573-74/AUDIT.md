@@ -1214,3 +1214,29 @@ sibling letters too.
 - `ciphers/lodewijk-van-nassau-1573-74/second-opinions/PROMPT-chatgpt.md`: it quotes V8C.4 and A3.3; dated note added
   pointing to A4.3.
 Requests: none (no network except git). No subagents.
+
+## Gate 2 (JSTOR rows re-read, 26 Sept 2026, V-GATE2)
+
+Verifier V-GATE2 (Opus, session_01DfYRf9UUmHn1yoNHVw6HeE, for parent 7i), 26 Sept 2026, 17:53-18:10 UTC (`date -u` read). Separate session from every solver and from the earlier auditors of this folder. Re-read every `JSTOR-QUEUE.tsv` row for this target after PR 21 landed the last 15 rows (16:34-17:00 UTC); every row is now `done`. Classification of each hit: (a) about this letter, (b) a prior decipherment or plaintext, (c) unrelated or context only. No decoding; no reading, key or status.json touched.
+
+Rows read: 10 (file lines 52-54, 60 for the target; 87-92 added by V8, A2 and A3 for WVO 5797). Hits classified: all (c): Revue
+Historique periodical lists, Erbe 1977, Zijlstra-Zweens 1995, Fagel's two *Protagonists of War* chapters, the Dauxy article,
+Motley review, reference works (rows 52-54, 60); Schindling 1994 and Rohls 2007 (confessionalisation, rows 88-89); rows 87,
+90, 91, 92 no relevant hit (0-3 results each, none about the letter). No (a), no (b). Open-index pass: present (V8 A2.6:
+OpenAlex, Semantic Scholar, CrossRef, HAL, Persée answered; OPEN-INDEX-RESULTS.tsv). Second adversarial audit: present (A1 for
+4610/4611/4612/4616; V8 A2 and A3 for 5797).
+
+**Verdict: gate 2 closed** for 4610, 4611, 4616 (N4), 4612 (N3) and the 5797 blanks p5 [161] and p7 [153] (N4). p6_spot4 stays
+unclassed (A4.2), so it has no gate to close and no outward sentence. Classes unchanged.
+
+### Reply from dr. Ineke Huysman (Huygens Instituut, WVO, 26 Sept 2026) and the class
+
+Read: outreach/huygens-nassau-saxony.md "Reply" (items 1-5) and the answer sent (outreach/huygens-reply-2026-09-26.md). For
+4610, 4611 and 4616 she **confirmed nothing, denied nothing and named no witness**: her points concern 53, 57 and 126 (items 1-4)
+and the project's responsibility and aims (item 5). It is an editor's engagement with the audits, not a statement that no prior
+decipherment of these three letters exists, so rule 10's N5 is not met. **Class after the reply: 4610, 4611, 4616 N4; 4612 N3;
+5797 p5/p7 N4 -- unchanged.** The answer sent says the owner will hold everything on these letters if she prefers until the
+Japikse copies are seen; her answer to that decides whether anything further goes out on 4610-4616 (NOTIFY.md).
+
+What would let a verifier set N5 for 4610/4611/4616: a sentence from a WVO editor of the shape "the database and the editors
+know of no decipherment of the cipher in WVO 4610, 4611 or 4616". Not asked in the first email; the NOTIFY.md row names it.

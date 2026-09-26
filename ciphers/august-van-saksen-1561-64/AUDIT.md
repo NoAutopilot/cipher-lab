@@ -781,3 +781,43 @@ Recorded by the JSTOR runner on the owner's machine (logged-in JSTOR account, bu
 
 
 JSTOR family closed, 24 Sept 2026 18:03 UTC: the remaining READ row (Philippson 1908 (stable/40941620)) was read on the owner's machine (JSTOR-QUEUE.tsv, hits column) and does not print, calendar or discuss the letter. Open-index pass done the same day with the OpenAlex key (six queries, ASKS row 44). Outreach gate 2 is met; the parent set the outward draft to ready.
+
+## Gate 2 (JSTOR rows re-read, 26 Sept 2026, V-GATE2)
+
+Verifier V-GATE2 (Opus, session_01DfYRf9UUmHn1yoNHVw6HeE, for parent 7i), 26 Sept 2026, 17:53-18:10 UTC (`date -u` read). Separate session from every solver and from the earlier auditors of this folder. Re-read every `JSTOR-QUEUE.tsv` row for this target after PR 21 landed the last 15 rows (16:34-17:00 UTC); every row is now `done`. Classification of each hit: (a) about this letter, (b) a prior decipherment or plaintext, (c) unrelated or context only. No decoding; no reading, key or status.json touched.
+
+Rows read: 7 (file lines 48, 49, 55, 56, 63, 64 and the READ row 69). Hits classified: row 48's eleven hits are (c) name collisions;
+row 49's one hit, Philippson 1908 (stable/40941620), read on the owner's machine (row 69), is (c): a notice of Sturmhövel's
+biography of the Electress Anna, no letters, no cipher; rows 55, 56, 63, 64 no hits. No (a), no (b). Open-index pass: present
+(24 Sept OpenAlex run with the key, ASKS 44). Second adversarial audit: present (A2 for 126, A3 for 53 and 57).
+
+**Verdict: gate 2 closed** for 53, 57 and 126 on the JSTOR and open-index side.
+
+### Reply from dr. Ineke Huysman (Huygens Instituut, WVO, 26 Sept 2026) and the class
+
+Read: outreach/huygens-nassau-saxony.md "Reply" items 1-5; outreach/huygens-reply-2026-09-26.md (sent about 15:00 UTC).
+
+| item | what she confirmed, denied or added | moves the class? | class after |
+|---|---|---|---|
+| 53 (24 Oct 1561) | **added** a witness: the KHA Collectie Japikse holds twentieth-century copies prepared for a continuation of Japikse 1934; she judges them the likeliest place for an earlier decipherment. **Added** that 53 rests on a recovered key with about a third of its signs uncertain and should be presented as a proposal | no upward move. A specialist naming an unseen witness likely to hold a decipherment keeps the class and puts the witness in the safe sentence | **N4, witness named** (see below) |
+| 57 (18 Nov 1561) | **confirmed** the audit's caveat that the Dresden minute (Loc. 9941/3 f.268-269, "Zettel") may carry the text in clear; **corrected** our email (Kluckhohn nr.148 is 30-31 Dec 1561, six weeks later; the audit already had the date) | no: the caveat was already in A2.2/2.3; no decipherment named | **N4** |
+| 126 (16 Sept 1564) | **added** the same Japikse witness; **confirmed** the KHA minute caveat (A11-XIVi-04-26, "Zeitung") | no upward move; witness named | **N4, witness named** |
+
+Safe sentence for 53 and 126 until the Japikse copies are seen: "No prior decipherment located in the principal editions and
+by phrase search; the twentieth-century copies in the Koninklijk Huisarchief's Collectie Japikse, which a WVO editor names as
+the likeliest place for one, have not been seen." For 53 add: "a proposed reading from a recovered key (cryptanalytic result),
+about a third of its signs uncertain". Unsafe: any sentence that drops the Japikse witness, or calls 53 a text rather than a
+proposal.
+
+### Ruling: does the Japikse witness lower 53 or 126? (the ROOM 14:38 question)
+
+Parent 7i assigned this ruling to V-GATE2 (ROOM 17:53; LANE VO1 stood down on it). **Ruling: no. 53 and 126 stay N4.**
+Rule 10 defines N4 as "N3 with the principal editions, catalogues and project pages covered, internal or unpublished work not
+excluded". The Collectie Japikse copies are, on the editor's own description, unpublished preparatory work for a continuation
+of Japikse 1934 that never appeared: exactly the "internal or unpublished work" N4 already leaves open. Her note names where
+such work most likely sits; it does not report that a decipherment is there. Lowering would need evidence of a prior
+decipherment (to N0 or N1 if found and it matches) or a principal family shown uncovered (to N3); neither exists. What the
+reply does change is the wording: the witness now appears by name in every safe sentence for 53 and 126 (above), and N5 is
+out of reach until the copies are seen. If the copies are seen and carry a decipherment, the item drops to N0/N1 and our reading
+becomes an independent re-decipherment; if they carry none, a written statement from the KHA or a WVO editor to that effect
+would support N5.

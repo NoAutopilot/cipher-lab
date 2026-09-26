@@ -944,3 +944,17 @@ headings are correct.
 
 Requests: www.googleapis.com 4, api.openalex.org 2, api.semanticscholar.org 1, github.com 4 (two shallow clones,
 twice, grep only, deleted). No login, no subagent.
+
+## Gate 2 (JSTOR rows re-read, 26 Sept 2026, V-GATE2)
+
+Verifier V-GATE2 (Opus, session_01DfYRf9UUmHn1yoNHVw6HeE, for parent 7i), 26 Sept 2026, 17:53-18:10 UTC (`date -u` read). Separate session from every solver and from the earlier auditors of this folder. Re-read every `JSTOR-QUEUE.tsv` row for this target after PR 21 landed the last 15 rows (16:34-17:00 UTC); every row is now `done`. Classification of each hit: (a) about this letter, (b) a prior decipherment or plaintext, (c) unrelated or context only. No decoding; no reading, key or status.json touched.
+
+Rows read for P4: 5 (file lines 35-37, 39, 40). Hits classified: all (c) (back matter, trade directories, almanacs, Carlyle's
+*Cromwell*, Kelliher 1978, Cook 1977; Peacock 2020 is not on JSTOR). No (a), no (b). Row 86 (Henry Manning, 26 Sept) concerns
+P25-P28, the N0 Manning letters, not P4: its candidate (Marshall 2023, "John Thurloe and the Cromwellian regime", pp.177-224,
+blocked by JSTOR's book wall) and context hits (Lenihan 2015, Larminie 2012, Greenspan 2016) are (c) for P4, and cannot change
+an N0 already in print. Open-index pass: present (owner's 24 Sept run; V5). Second adversarial audit: present ("Second audit
+(adversarial), P4").
+
+**Verdict: gate 2 closed** for P4. Class unchanged: **N4**. No reply bears on P4 (the Bourdeau issue has no answer on file; the
+Bodleian reproduction request is a mailbox draft awaiting the owner).

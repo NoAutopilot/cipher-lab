@@ -1274,3 +1274,26 @@ sections 3(d)/3(e) and NOTES.md already said "different cipher, different volume
 
 
 JSTOR family closed, 24 Sept 2026 18:03 UTC: the remaining READ row (Hauser 1923 (stable/40944190)) was read on the owner's machine (JSTOR-QUEUE.tsv, hits column) and does not print, calendar or discuss the letter. Open-index pass done the same day with the OpenAlex key (six queries, ASKS row 44). Outreach gate 2 is met; the parent set the outward draft to ready.
+
+## Gate 2 (JSTOR rows re-read, 26 Sept 2026, V-GATE2)
+
+Verifier V-GATE2 (Opus, session_01DfYRf9UUmHn1yoNHVw6HeE, for parent 7i), 26 Sept 2026, 17:53-18:10 UTC (`date -u` read). Separate session from every solver and from the earlier auditors of this folder. Re-read every `JSTOR-QUEUE.tsv` row for this target after PR 21 landed the last 15 rows (16:34-17:00 UTC); every row is now `done`. Classification of each hit: (a) about this letter, (b) a prior decipherment or plaintext, (c) unrelated or context only. No decoding; no reading, key or status.json touched.
+
+Rows read: 9 (file lines 16-19, 23-26) plus the READ row (line 68). Hits classified: all (c) (Baudouin-Matuszek 1989 on d'Oisel,
+Jensen 1974, Gaffarel 1879, Jeannin 1956, Zeller 1956, Pelus-Kaplan 2013, geography bibliographies, Hauser 1910); the two READ
+candidates (Hauser 1923 stable/40944190; Godefroy inventory 1865) are (c): Hauser 1923 has one Danzay mention, a citation note on
+Romier 1922, nothing on 1557 or the Cardinal of Lorraine. No (a), no (b). Open-index pass: present (section "Open-index
+scholarship pass (24 Sept 2026)"; OpenAlex with the key surfaced Ryabov 2025, read in full by V6: different letters, different
+table). Second adversarial audit: present ("Second audit (adversarial), 24 Sept 2026").
+
+**Verdict: gate 2 closed** for f.35r-36r. Class unchanged: **N4** (key `published`, Tomokiyo 2026).
+
+### Reply from S. Tomokiyo (26 Sept 2026) and the class
+
+As for Gramont: **the repository holds no words of his about Danzay** (the 26 Sept reply on file is the Raince post and the
+Armstrong recommendation; no email text is committed). It moves nothing: **class after the reply N4**.
+
+What would let a verifier set N5: a sentence from him of the shape "I know of no decipherment of Danzay's letter to the
+Cardinal of Lorraine of 27 Jan 1557 (fr.20140 ff.35-36) before yours; my 2026 reconstruction used ff.16, 24 and 30". He built
+the key and knows the Danzay literature (he already cites Ryabov), so a plain statement from him is the specialist confirmation
+rule 10 means. The owner looks for it in the thread and pastes it here verbatim.

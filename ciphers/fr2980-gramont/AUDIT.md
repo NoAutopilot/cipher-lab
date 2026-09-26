@@ -1745,3 +1745,31 @@ Outward drafts written this session (status drafted, nothing sent): see `outreac
 
 
 JSTOR family closed, 24 Sept 2026 18:03 UTC: the remaining READ row (Mignet 1867 (stable/44728935)) was read on the owner's machine (JSTOR-QUEUE.tsv, hits column) and does not print, calendar or discuss the letter. Open-index pass done the same day with the OpenAlex key (six queries, ASKS row 44). Outreach gate 2 is met; the parent set the outward draft to ready.
+
+## Gate 2 (JSTOR rows re-read, 26 Sept 2026, V-GATE2)
+
+Verifier V-GATE2 (Opus, session_01DfYRf9UUmHn1yoNHVw6HeE, for parent 7i), 26 Sept 2026, 17:53-18:10 UTC (`date -u` read). Separate session from every solver and from the earlier auditors of this folder. Re-read every `JSTOR-QUEUE.tsv` row for this target after PR 21 landed the last 15 rows (16:34-17:00 UTC); every row is now `done`. Classification of each hit: (a) about this letter, (b) a prior decipherment or plaintext, (c) unrelated or context only. No decoding; no reading, key or status.json touched.
+
+Rows read: 12 (file lines 2-7, 27-29, 33-34, 67). Hits classified: every first-page hit is (c) (parlement histories,
+Baudouin-Matuszek 2010, Michon 2003/2005, Bourrilly 1918, Barbiche, Drysdall and Nicolay name collisions, bibliographies,
+Swiss-franc prices for "fr. 2980"); the three candidates the runner opened (Mignet 1867 stable/44726292 and stable/44728935,
+Michon 2005) are (c): none prints, calendars or discusses the 20 May 1530 letters (row 67: Mignet 1er mars 1867 covers 1527-28
+only). No (a), no (b). Open-index pass: present (section "Open-index scholarship pass", 24 Sept, and the 24 Sept OpenAlex run
+with the key, ASKS 44; OPEN-INDEX-RESULTS.tsv 37 rows). Second adversarial audit: present for both items ("Second audit
+(adversarial)" for f.29r, "Second audit (adversarial), f.30").
+
+**Verdict: gate 2 closed** for f.29r (no.21) and f.30r-v (no.22). Classes unchanged: **N4, N4** (key `published`, Tomokiyo and
+Lasry 2023).
+
+### Reply from S. Tomokiyo (26 Sept 2026) and the class
+
+The 24 Sept note (outreach/tomokiyo-gramont-danzay.md) covered f.29r, f.30 and Danzay. His 26 Sept answer, as the repository
+holds it, is the Raince post (ciphers/dupuy452-carpi-1520/NOTES.md "Cryptiana post, 26 Sept 2026") and the Armstrong
+recommendation (CONTRIBUTIONS.md 26 Sep row). **The repository does not hold any words of his about Gramont**: neither the
+digest nor the saved post mentions fr.2980, and no pasted email text exists in the tree. So the reply confirms, denies and adds
+nothing here, and **moves nothing: class after the reply N4 (f.29r), N4 (f.30)**.
+
+What would let a verifier set N5 (rule 10: confirmed by a specialist): a sentence from him, in the owner's thread, of the shape
+"I know of no earlier decipherment of Gramont's letters of 20 May 1530 in fr.2980 (nos. 21-22) [beyond the key Lasry and I
+published]". The owner looks for that sentence (or its denial, e.g. a pointer to a decipherment in print or in a thesis) in the
+24-26 Sept thread and pastes it into this file verbatim; an acknowledgement or thanks alone moves nothing.

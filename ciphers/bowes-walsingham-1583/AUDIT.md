@@ -372,3 +372,15 @@ Recorded by the JSTOR runner on the owner's machine (logged-in JSTOR account, bu
 Rows 8-11 answered (4 queries; rows 9-10 no hits). One hit opened:
 
 - Patricia Basing, "Robert Beale and the Queen of Scots", *British Library Journal* 20/1 (Spring 1994), pp. 65-82, https://www.jstor.org/stable/42554379. In-document search: "Bowes" 1 hit (p. 68), Bowes's report of 29 June 1583 that James had no wish for the Association, cited from the calendar; "cipher" 5 hits, all on Mary's own letters (the 1569-70 letter in cipher read to her at Sheffield in April 1583; her cipher letter to Mauvissière of 21 March 1584). Nothing on Bowes's letters of 7 April or 31 July 1583 or on their cipher.
+
+## Reply and the class (V-GATE2, 26 Sept 2026)
+
+Verifier V-GATE2 (Opus, session_01DfYRf9UUmHn1yoNHVw6HeE, for parent 7i), 26 Sept 2026 about 18:05 UTC. Read:
+outreach/bowes-tomokiyo.md (sent 23 Sept), CONTRIBUTIONS.md 23 Sept row, NOTES.md "Specialist reply, 24 Sept 2026".
+S. Tomokiyo **confirmed** the identification and credited the folder on Cryptiana's unsolved list; **added** three manuscript
+corrections (MAGNYVIL for the print's "Manningvile"; the "and" token is a handwriting abbreviation; "Montrosse" is code 189)
+and **confirmed** that the other numerical codes are unread on his side too. He did not say whether the 1910 calendar prints
+the cipher words as a reading, which is what separates N1 from N0 for item A. A specialist's confirmation cannot raise an
+item whose plaintext has been in print since 1842 (Surtees vol. 14): **class after the reply N1 (items A and B), unchanged;**
+item C (the sign table) stays at its search-level scope. No gate 2 applies to an N1 post. Nothing further is owed to him on
+this item.

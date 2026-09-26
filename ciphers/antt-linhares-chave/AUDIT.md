@@ -439,3 +439,18 @@ Confirmed leads for the search log (context only, no print or decipherment of m0
 pp.23-24 nn.7, 8, 10 (CLNH/0086/02 and /10, Bezerra-Gabriella-Isabel letters; no "cifra"); Carvalho, *Acervo*
 36(3) (2023), p.14 (Bezerra de Seixas in Russia, 6 Sept 1812). The answer also found that the prompt's
 "trim from the end" misstates the key, whose text (NOTES.md line 25) allows the beginning or the end.
+
+## Gate 2 (JSTOR rows re-read, 26 Sept 2026, V-GATE2)
+
+Verifier V-GATE2 (Opus, session_01DfYRf9UUmHn1yoNHVw6HeE, for parent 7i), 26 Sept 2026, 17:53-18:10 UTC (`date -u` read). Separate session from every solver and from the earlier auditors of this folder. Re-read every `JSTOR-QUEUE.tsv` row for this target after PR 21 landed the last 15 rows (16:34-17:00 UTC); every row is now `done`. Classification of each hit: (a) about this letter, (b) a prior decipherment or plaintext, (c) unrelated or context only. No decoding; no reading, key or status.json touched.
+
+Rows read: 3 (file lines 70-72). Hits classified: row 70 Silveira 1987 (public finance 1800-27) and a 1956 bibliography, (c); row
+71 Celestino 2023 (three chapters on Silva Lisboa's journalism), Morton 1978, Subtil 2021, Ramos and Monteiro 2019, all (c);
+row 72 no relevant hit (12 results). No (a), no (b). Open-index pass: present (first audit s.5; AUD2 items 5-8: HAL queried
+directly, OpenAlex full-text filter). This session closed the Semantic Scholar gap the first audit logged (429 on most queries):
+"Linhares Sousa Coutinho cipher dictionary code", 429 then one retry after 6 s, HTTP 200, 0 results. Persée stays
+"inconclusive" per AUD2 (low priority for a Portuguese letter). Second adversarial audit: present (AUD2, section 11).
+
+**Verdict: gate 2 closed** on the JSTOR and open-index side. Class unchanged: **N3** (key `ours`). Outreach is still blocked for
+a different reason: check-solved is `blocked` until the sender-family edition (*Textos Políticos*, 1993; LOCAL-QUEUE L10) is
+read (intake gate), which gate 2 does not cover. No reply bears on this item.

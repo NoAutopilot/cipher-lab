@@ -1058,3 +1058,14 @@ Requests: api.openalex.org 2 (1.5s apart, key as `Authorization: Bearer`), api.s
 `x-api-key`, 1.2s and 5s apart), no credential printed. Three of four queries answered clean with no relevant hit;
 the fourth (S2, Meigs/Butler) is unresolved from the cloud, left for a later session or the owner's machine.
 JSTOR-QUEUE.tsv rows (file lines 20, 21, 22) stay with the ChatGPT/owner runner, per the brief.
+
+## Gate 2 (JSTOR rows re-read, 26 Sept 2026, V-GATE2)
+
+Verifier V-GATE2 (Opus, session_01DfYRf9UUmHn1yoNHVw6HeE, for parent 7i), 26 Sept 2026, 17:53-18:10 UTC (`date -u` read). Separate session from every solver and from the earlier auditors of this folder. Re-read every `JSTOR-QUEUE.tsv` row for this target after PR 21 landed the last 15 rows (16:34-17:00 UTC); every row is now `done`. Classification of each hit: (a) about this letter, (b) a prior decipherment or plaintext, (c) unrelated or context only. No decoding; no reading, key or status.json touched.
+
+Rows read: 3 (file lines 20-22). Hits classified: row 20 no hit; row 21 back matter 1889, (c); row 22 Pound 1941 (read by the
+runner, negative), Wilhelm 1999, Halstead 1944, a subject index, Appletons', an 1867 periodical: all (c). No (a), no (b).
+Open-index pass: present (24 Sept owner's run; 25 Sept cloud re-run, 3 of 4 answered). Second adversarial audit: present.
+
+**Verdict: gate 2 closed** for E4 and E5 (as V5 found; nothing new landed for this target in PR 21). Classes unchanged: **E4 N4,
+E5 N4**. Reply: the Huntington note of 24 Sept 2026 (outreach/huntington-eckert-blathwayt.md) has no reply on file; nothing moves.

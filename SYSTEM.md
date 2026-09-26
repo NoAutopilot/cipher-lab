@@ -110,6 +110,7 @@ Column key for every table: **name**, **what it does**, **defined in**, **enforc
 | `ASKS.md` | Everything blocked on a human, from either account | CLAUDE.md Collaborators | parent's desk; `desk_check.py`; idle-standing exits | anyone appends; the owner answers |
 | `KEYS.md` / `KEYS-STATUS.md` | Credential register (names only, purpose, reader, which account has seen it) / last live probe | CLAUDE.md Access playbook | `key_request.py`, `key_probe.py --sync`, `key_livecheck.py` | tools write; the owner sets keys |
 | `CONTRIBUTIONS.md` | One row per item offered outside, written before it is sent | CLAUDE.md Outreach gate 5 | verification lane; parent | parent / verification lane |
+| `NOTIFY.md` | Routing register: per N3+ board target, its class, gate 2, second audit, who has been told (from CONTRIBUTIONS.md), who has not but should be (holding archive, editors, specialist; public contact page read on the day), the one blocker; ordered by readiness | .claude/briefs/runs/2026-09-26-parent-v-gate2.md (V-GATE2) | parent at check-in, with CONTRIBUTIONS.md and desk_check.py | verification lane; parent |
 | `CITATIONS.md` | Public citations of this work by others | its own header | parent | parent |
 | `LEDGER.md` | One row per archived worker: role, model, cost, outcome code, lesson | CLAUDE.md Improvement loop | orchestrators; `ledger_check.py`; retrospective trigger | orchestrators |
 | `ROOM.md` | Shared channel: claim, flag, done; six-hour stale claim rule | CLAUDE.md Collaborators, Workers | `room.py` | everyone, append only |

@@ -311,3 +311,31 @@ From `second-opinions/chatgpt-2026-09-25.md` (PR 11, SO-VANBEUNINGEN-1657); full
 Confirmed lead for the search log: Stichting De Ruyter, *Rapport inzake de Jaarrekening 2022*, PDF p.25, book
 inventory item 144 lists Postma 2007: a named physical copy of the book that holds item 2 at N3 (access lead, not
 evidence either way). Fruin/Kernkamp 1906 pp.440-441 re-read from the IA OCR: as AUD2 reported.
+
+## Gate 2 (JSTOR rows re-read, 26 Sept 2026, V-GATE2)
+
+Verifier V-GATE2 (Opus, session_01DfYRf9UUmHn1yoNHVw6HeE, for parent 7i), 26 Sept 2026, 17:53-18:10 UTC (`date -u` read). Separate session from every solver and from the earlier auditors of this folder. Re-read every `JSTOR-QUEUE.tsv` row for this target after PR 21 landed the last 15 rows (16:34-17:00 UTC); every row is now `done`. Classification of each hit: (a) about this letter, (b) a prior decipherment or plaintext, (c) unrelated or context only. No decoding; no reading, key or status.json touched.
+
+Rows read: 1 (file line 73). Hit classified: **Rowen, "Diplomacy: craft and art", in *John de Witt, Grand Pensionary of Holland,
+1625-1672* (Princeton 1978), pp.238-256** (stable/j.ctt13x1c5x.18), marked `candidate` by the runner and not opened (JSTOR:
+"Your institution does not have access to this book"). Followed from the cloud: Internet Archive holds the book
+(`johndewittgrandp0000rowe`, lending-only), and its full-text search (be-api fts, no login) was run for cipher, Beuningen,
+"ciphered", code, "unsolved cipher", "Fruin's guess", Veth, Noordse, "Sept. 29, 1657", "Sept. 19, 1657" and "405-6". Result:
+Rowen discusses De Witt's cipher practice in general (a private cipher for Veth; "In Paris Van Beuningen considered the cipher
+he used for dispatches to De Witt ..." -- the 1660s Paris embassy, not Copenhagen 1657; secretaries encoding cipher portions),
+and one note reads "The reference to the Exclusion is uncertain; I follow Fruin's guess as to the unsolved cipher here", citing
+*Brieven aan De Witt* I, p.94 (the 1654 Exclusion), a different letter. No hit for the 19/29 Sept 1657 letter or its edition
+page (BA I, 405-406); "405-6" occurs once, citing a 1666 letter in another volume. **Class (c): context, not about this letter,
+no decipherment or key.** Caveat: an OCR full-text search, not a page read; the date and page-citation probes make a discussion
+of this letter unlikely, not impossible. No new JSTOR row: the one route to the pages (JSTOR) is blocked for this book, and the
+IA text answers the question the row would ask.
+
+Lead, one line, not this target: Rowen's note on BA I p.94 points to a De Witt correspondence passage Fruin's edition left as
+"unsolved cipher" (1654); a scout may check it.
+
+Open-index pass: present (first audit (g) and AUD2; OpenAlex, CrossRef, Semantic Scholar partly). Second adversarial audit:
+present (AUD2). Requests this item: be-api.us.archive.org 14, archive.org 1, www.googleapis.com 1, 1.6 s apart.
+
+**Verdict: gate 2 closed.** Class unchanged: item 1 (the letter's text) **N1**; item 2 (the key and decipherment of the cipher
+copy ff.210-211) **N3** (key `ours`). Postma 2006/2007, unread, remains the named gap toward N4 (a class question, not gate 2).
+No reply bears on this item (no outreach sent).

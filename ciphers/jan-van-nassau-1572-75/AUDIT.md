@@ -554,3 +554,20 @@ the 1574 campaign (the page range to read first); Janssen, *BMGN* 90 (1975), pp.
 BnF Français 3961 items 1-3 (29 Mar, 6 Apr, 18 Jun 1574, catalogue level). Correction for NOTES.md (not applied
 here): the Christoph killed at Mookerheide is Pfalzgraf Christoph, son of Friedrich III (Press p.691), not "Christoph
 of Wurttemberg" (the WVO summary's wording, NOTES.md lines 782-784, 806, 991).
+
+## Gate 2 (JSTOR rows re-read, 26 Sept 2026, V-GATE2)
+
+Verifier V-GATE2 (Opus, session_01DfYRf9UUmHn1yoNHVw6HeE, for parent 7i), 26 Sept 2026, 17:53-18:10 UTC (`date -u` read). Separate session from every solver and from the earlier auditors of this folder. Re-read every `JSTOR-QUEUE.tsv` row for this target after PR 21 landed the last 15 rows (16:34-17:00 UTC); every row is now `done`. Classification of each hit: (a) about this letter, (b) a prior decipherment or plaintext, (c) unrelated or context only. No decoding; no reading, key or status.json touched.
+
+Rows read: 3 (file lines 65, 74, 75). Hits classified: rows 65 and 74 no hit (0 results); row 75's three hits are (c): van der
+Steen 2023 (the Nassaus and state formation, a survey chapter), Troßbach 1996 (image controversy), Sibeth 2003 (Brederode's
+mission 1602-09). No (a), no (b). The row that named Glawischnig returned no JSTOR copy of his 1973 study; that work remains the
+open citation V-TX2 flagged. Open-index pass: present in V-TX2 ("Open-index and Google Books pass": OpenAlex, CrossRef, HAL,
+Persée by site search, Google Books 20 queries); its Semantic Scholar gap (429 twice) is **closed by this session**: one keyed
+query "Johann Nassau Koln April 1574 cipher letter Orange", 429 then one retry after 8 s, HTTP 200, 0 results. Second
+adversarial audit: present (V-TX2).
+
+**Verdict: gate 2 closed** for WVO 5551 on the JSTOR and open-index side. Class unchanged: **N3** (key `ours`). The item is still
+not N4 because of Glawischnig 1973 and the unseen Marburg copy (4f Nld. 165), which is a class question, not a gate 2 one; the
+Marburg lookup is drafted (outreach/marburg-wvo5551-copy.md, mailbox, awaiting the owner). No reply bears on this item: the
+Huygens email and Huysman's answer did not cover 5551.

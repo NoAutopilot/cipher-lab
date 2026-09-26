@@ -598,3 +598,14 @@ ASKS.md row 40's open-index sub-item, re-run from the cloud with OPENALEX_KEY (A
 Requests: api.openalex.org 2, 1.5s apart, key sent as `Authorization: Bearer`, never printed. Semantic Scholar not
 queried for this target (ASKS row 40 names OpenAlex only). JSTOR-QUEUE.tsv rows (file lines 45, 46, 47, 57, 58, 59)
 stay with the ChatGPT/owner runner, per the brief.
+
+## Gate 2 (JSTOR rows re-read, 26 Sept 2026, V-GATE2)
+
+Verifier V-GATE2 (Opus, session_01DfYRf9UUmHn1yoNHVw6HeE, for parent 7i), 26 Sept 2026, 17:53-18:10 UTC (`date -u` read). Separate session from every solver and from the earlier auditors of this folder. Re-read every `JSTOR-QUEUE.tsv` row for this target after PR 21 landed the last 15 rows (16:34-17:00 UTC); every row is now `done`. Classification of each hit: (a) about this letter, (b) a prior decipherment or plaintext, (c) unrelated or context only. No decoding; no reading, key or status.json touched.
+
+Rows read: 6 (file lines 45-47, 57-59). Hits classified: all (c) (directories and chronologies; Webb 1969 on the elder
+Blathwayt to 1717; Goulding and Nelson; McCully 1962; Altbauer 1980; Murray 1974; indexes; rows 57 and 59 no hits). No (a), no
+(b). Open-index pass: present (24 Sept owner's run; 25 Sept cloud re-run). Second adversarial audit: present.
+
+**Verdict: gate 2 closed** for BLA 186 and BLA 191(a) (and 184). Classes unchanged (**N4**; see "N4 set"). Reply: the Huntington
+note of 24 Sept 2026 has no reply on file; nothing moves.

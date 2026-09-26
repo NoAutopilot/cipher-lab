@@ -322,3 +322,21 @@ independently re-tried this session): Acta Pacis Westphalicae full-text search; 
 book" on two records (Cousin's 1886 edition and Cuvelier-Lefèvre VI); the BnF finding aid's own pagination beyond
 page 1. No confirmed lead prints or deciphers the 6 June 1648 instruction, and none supplies a period key with
 matching values -- **the N3 class is unchanged.**
+
+## Gate 2 (JSTOR rows re-read, 26 Sept 2026, V-GATE2)
+
+Verifier V-GATE2 (Opus, session_01DfYRf9UUmHn1yoNHVw6HeE, for parent 7i), 26 Sept 2026, 17:53-18:10 UTC (`date -u` read). Separate session from every solver and from the earlier auditors of this folder. Re-read every `JSTOR-QUEUE.tsv` row for this target after PR 21 landed the last 15 rows (16:34-17:00 UTC); every row is now `done`. Classification of each hit: (a) about this letter, (b) a prior decipherment or plaintext, (c) unrelated or context only. No decoding; no reading, key or status.json touched.
+
+Rows read: 4 (file lines 79-82). Hits classified: rows 79 and 82 no hit (0 results); rows 80 and 81 return Peter H. Wilson, *The
+Thirty Years War* (2009), chapters "War or Peace 1646-8", "Pressure to Negotiate", "In the Balance", "The Westphalian
+Settlement", plus Hengerer 2020, Bérenger 2007 and Clark 2019: all (c), narrative context for 1648 that the runner found does
+not print or discuss the letter. No (a), no (b). Open-index pass: present (first audit s.4(g): OpenAlex 7 queries, HAL,
+CrossRef, Persée; Semantic Scholar 3 of 5 answered). This session ran two further keyed Semantic Scholar queries: "abbe de Mercy
+1648 cipher Leopold Wilhelm" (HTTP 200, 0 results) and "Mercy Cleves Brandenburg 1648 Spanish Netherlands" (HTTP 200, 4 results:
+Wilson 2009, a 2004 survey *The French Challenge*, a 2003 review, an unrelated medical paper; all (c)). Second adversarial audit:
+present (V6-MERCY2).
+
+**Verdict: gate 2 closed.** Class unchanged: **N3** (key `ours`). The post-audit reading change (R7-MREV) is already logged
+above; no outward sentence may quote a word the blind read dropped. No reply bears on this item (no outreach sent). LOCAL-QUEUE L20 (Cuvelier-Lefèvre VI p.647, read on the owner's desk) landed
+negative at commit c789909 (NOTES.md): p.647 is a different letter of 11 June 1648 that mentions Mercy's mission, not the 6 June
+instruction; with rows 79-82 answered, NOTES.md's "still needs the JSTOR-QUEUE rows" condition is now met.
