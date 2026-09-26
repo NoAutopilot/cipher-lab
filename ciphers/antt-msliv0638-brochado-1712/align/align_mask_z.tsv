@@ -1,0 +1,1872 @@
+cipher_line	idx	raw	kind	value	repair	plain_chunk	status
+m0280/Carta 13	0	@7	code	7		e	agrees
+m0280/Carta 13	1	@4	code	4		s	agrees
+m0280/Carta 13	2	@a	code	a		t	agrees
+m0280/Carta 13	3	@7	code	7		e	agrees
+m0280/Carta 13	4	@4	code	4		s	agrees
+m0280/Carta 13	5	@18	code	18		m	agrees
+m0280/Carta 13	6	@m	code	m		n	agrees
+m0280/Carta 13	7	@8	code	8		i	agrees
+m0280/Carta 13	8	@4	code	4		s	agrees
+m0280/Carta 13	9	@a	code	a		t	agrees
+m0280/Carta 13	10	@52	code	52		r	agrees
+m0280/Carta 13	11	@15	code	15		o	agrees
+m0280/Carta 13	12	@4	code	4		s	agrees
+m0280/Carta 13	13	@7	code	7		e	agrees
+m0280/Carta 13	14	@4	code	4		s	agrees
+m0280/Carta 13	15	@a	code	a		t	agrees
+m0280/Carta 13	16	@y	code	y			null-or-unaligned
+m0280/Carta 13	17	@18	code	18		o	conflict:m
+m0280/Carta 13	18	tais	clear			tais	clear
+m0280/Carta 13	19	que	clear				clear
+m0280/Carta 13	20	@13	code	13		q	agrees
+m0280/Carta 13	21	@c	code	c		q	conflict:u
+m0280/Carta 13	22	@7	code	7		m	conflict:e
+m0280/Carta 13	23	@18	code	18		s	conflict:m
+m0280/Carta 13	24	mais	clear			mais	clear
+m0280/Carta 13	25	@15	code	15		o	agrees
+m0280/Carta 13	26	@4	code	4		s	agrees
+m0280/Carta 13	27	@5	code	5		c	agrees
+m0280/Carta 13	28	@15	code	15		o	agrees
+m0280/Carta 13	29	@m	code	m		n	agrees
+m0280/Carta 13	30	@c	code	c		v	agrees
+m0280/Carta 13	31	@7	code	7		e	agrees
+m0280/Carta 13	32	@m	code	m		n	agrees
+m0280/Carta 13	33	@5	code	5		c	agrees
+m0280/Carta 13	34	@7	code	7		e	agrees
+m0280/Carta 13	35	@18	code	18		m	agrees
+m0280/Carta 13	36	@y	code	y		a	agrees
+m0280/Carta 13	37	@8	code	8		i	agrees
+m0280/Carta 13	38	@4	code	4		s	agrees
+m0280/Carta 13	39	@15	code	15		o	agrees
+m0280/Carta 13	40	@4	code	4		s	agrees
+m0280/Carta 13	41	@55	code	55		p	agrees
+m0280/Carta 13	42	@2	code	2		e	conflict:d
+m0280/Carta 13	43	@y	code	y		r	conflict:a
+m0280/Carta 13	44	@2	code	2		d	agrees
+m0280/Carta 13	45	@7	code	7		e	agrees
+m0280/Carta 13	46	Aobitinação	clear			aobstinao	clear
+m0280/Carta 13	47	@10	code	10		h	agrees
+m0280/Carta 13	48	@7	code	7			null-or-unaligned
+m0280/Carta 13	49	@4	code	4		s	agrees
+m0280/Carta 13	50	@7	code	7		e	agrees
+m0280/Carta 13	51	@18	code	18		m	agrees
+m0280/Carta 13	52	@y	code	y		l	conflict:a
+m0280/Carta 13	53	@8	code	8		i	agrees
+m0280/Carta 13	54	@12	code	12		m	conflict:r
+m0280/Carta 13	55	@8	code	8		i	agrees
+m0280/Carta 13	56	@a	code	a		t	agrees
+m0280/Carta 13	57	@7	code	7		e	agrees
+m0280/Carta 13	58	e	clear			e	clear
+m0280/Carta 13	59	respeito	clear			respeito	clear
+m0280/Carta 13	60	segundo	clear			segund	clear
+m0280/Carta 13	61	o	clear			o	clear
+m0280/Carta 13	62	que	clear			oq	clear
+m0280/Carta 13	63	todos	clear			todos	clear
+m0280/Carta 13	64	intendem	clear			intendem	clear
+m0280/Carta 13	65	@7	code	7		e	agrees
+m0280/Carta 13	66	@8	code	8		l	conflict:i
+m0280/Carta 13	67	300	clear				clear
+m0280/Carta 13	68	@a	code	a		l	conflict:t
+m0280/Carta 13	69	@7	code	7		e	agrees
+m0280/Carta 13	70	@4	code	4		s	agrees
+m0280/Carta 13	71	@7	code	7		e	agrees
+m0280/Carta 13	72	@4	code	4		s	agrees
+m0280/Carta 13	73	@a	code	a		t	agrees
+m0280/Carta 13	74	@y	code	y			null-or-unaligned
+m0280/Carta 13	75	@18	code	18		o	conflict:m
+m0280/Carta 13	76	resolutos	clear			resolutos	clear
+m0280/Carta 13	77	@y	code	y		a	agrees
+m0280/Carta 13	78	@11	code	11		p	agrees
+m0280/Carta 13	79	@7	code	7		e	agrees
+m0280/Carta 13	80	@9	code	9		r	agrees
+m0280/Carta 13	81	@2	code	2		d	agrees
+m0280/Carta 13	82	@7	code	7		e	agrees
+m0280/Carta 13	83	@9	code	9		r	agrees
+m0280/Carta 13	84	Inglaterra	clear			inglaterra	clear
+m0280/Carta 13	85	@7	code	7		e	agrees
+m0280/Carta 13	86	@y	code	y		c	conflict:a
+m0280/Carta 13	87	@4	code	4		s	agrees
+m0280/Carta 13	88	@7	code	7		e	agrees
+m0280/Carta 13	89	@e	code	e		g	agrees
+m0280/Carta 13	90	@c	code	c		u	agrees
+m0280/Carta 13	91	@8	code	8		i	agrees
+m0280/Carta 13	92	@z	code	z		r	conflict:e
+m0280/Carta 13	93	@15	code	15		o	agrees
+m0280/Carta 13	94	@5	code	5		s	conflict:c
+m0280/Carta 13	95	@7	code	7		e	agrees
+m0280/Carta 13	96	@c	code	c		u	agrees
+m0280/Carta 13	97	@6	code	6		p	agrees
+m0280/Carta 13	98	@52	code	52		r	agrees
+m0280/Carta 13	99	@15	code	15		o	agrees
+m0280/Carta 13	100	@8	code	8		j	conflict:i
+m0280/Carta 13	101	@7	code	7		e	agrees
+m0280/Carta 13	102	@5	code	5		c	agrees
+m0280/Carta 13	103	@a	code	a		t	agrees
+m0280/Carta 13	104	@15	code	15		o	agrees
+m0280/Carta 13	105	e	clear			e	clear
+m0280/Carta 13	106	não	clear			no	clear
+m0280/Carta 13	107	duvide	clear			duvide	clear
+m0280/Carta 13	108	N.Exª	clear			nex	clear
+m0280/Carta 13	109	desta	clear			desta	clear
+m0280/Carta 13	110	minha	clear			minha	clear
+m0280/Carta 13	111	afirmativa	clear			afirmativa	clear
+m0280/Carta 13	112	porque	clear			porqo	clear
+m0280/Carta 13	113	@15	code	15			null-or-unaligned
+m0280/Carta 13	114	@a	code	a		t	agrees
+m0280/Carta 13	115	@10	code	10		h	agrees
+m0280/Carta 13	116	@7	code	7		e	agrees
+m0280/Carta 13	117	@4	code	4		s	agrees
+m0280/Carta 13	118	@15	code	15		o	agrees
+m0280/Carta 13	119	@e	code	e		u	conflict:g
+m0280/Carta 13	120	@z	code	z		r	conflict:e
+m0280/Carta 13	121	@7	code	7		e	agrees
+m0280/Carta 13	122	@8	code	8		i	agrees
+m0280/Carta 13	123	@z	code	z		r	conflict:e
+m0280/Carta 13	124	@15	code	15		o	agrees
+m0280/Carta 13	125	se	clear			se	clear
+m0280/Carta 13	126	declarou	clear			declarou	clear
+m0280/Carta 13	127	assim	clear			assim	clear
+m0280/Carta 13	128	com	clear			com	clear
+m0280/Carta 13	129	huma	clear			huma	clear
+m0280/Carta 13	130	pesoa,	clear			pessoa	clear
+m0280/Carta 13	131	custe	clear			custe	clear
+m0280/Carta 13	132	o	clear			oq	clear
+m0280/Carta 13	133	que	clear				clear
+m0280/Carta 13	134	custe,	clear			cust	clear
+m0280/Carta 13	135	e	clear			e	clear
+m0280/Carta 13	136	não	clear			no	clear
+m0280/Carta 13	137	far	clear			faz	clear
+m0280/Carta 13	138	nenhum	clear			nenhum	clear
+m0280/Carta 13	139	caso.	clear			caso	clear
+m0280/Carta 13	140	@2	code	2		d	agrees
+m0280/Carta 13	141	@y	code	y		a	agrees
+m0280/Carta 13	142	@c	code	c		v	agrees
+m0280/Carta 13	143	@8	code	8		i	agrees
+m0280/Carta 13	144	@2	code	2		d	agrees
+m0280/Carta 13	145	@y	code	y		a	agrees
+m0280/Carta 13	146	@7	code	7		e	agrees
+m0280/Carta 13	147	@2	code	2		d	agrees
+m0280/Carta 13	148	@y	code	y		a	agrees
+m0280/Carta 13	149	@10	code	10		h	agrees
+m0280/Carta 13	150	@15	code	15		o	agrees
+m0280/Carta 13	151	@m	code	m		n	agrees
+m0280/Carta 13	152	@7	code	7		r	conflict:e
+m0280/Carta 13	153	@y	code	y		a	agrees
+m0280/Carta 13	154	nem	clear			nem	clear
+m0280/Carta 13	155	tem	clear			tem	clear
+m0280/Carta 13	156	mais	clear			mais	clear
+m0280/Carta 13	157	@7	code	7		r	conflict:e
+m0280/Carta 13	158	@7	code	7		e	agrees
+m0280/Carta 13	159	@4	code	4		l	conflict:s
+m0280/Carta 13	160	@8	code	8		i	agrees
+m0280/Carta 13	161	@e	code	e		g	agrees
+m0280/Carta 13	162	@8	code	8		i	agrees
+m0280/Carta 13	163	@y	code	y		o	conflict:a
+m0280/Carta 13	164	@18	code	18		q	conflict:m
+m0280/Carta 13	165	q̃.	clear			ue	clear
+m0280/Carta 13	166	@y	code	y		a	agrees
+m0280/Carta 13	167	@4	code	4		s	agrees
+m0280/Carta 13	168	@c	code	c		u	agrees
+m0280/Carta 13	169	@y	code	y		a	agrees
+m0280/Carta 13	170	@e	code	e		v	conflict:g
+m0280/Carta 13	171	@8	code	8		i	agrees
+m0280/Carta 13	172	@m	code	m		n	agrees
+m0280/Carta 13	173	@e	code	e		g	agrees
+m0280/Carta 13	174	@y	code	y		a	agrees
+m0280/Carta 13	175	@m	code	m		n	agrees
+m0280/Carta 13	176	@5	code	5			null-or-unaligned
+m0280/Carta 13	177	@y	code	y		a	agrees
+m0281/Carta 15	0	@2	code	2		d	agrees
+m0281/Carta 15	1	@y	code	y		a	agrees
+m0281/Carta 15	2	@g	code	g		r	conflict:i
+m0281/Carta 15	3	@18	code	18		m	agrees
+m0281/Carta 15	4	@15	code	15		o	agrees
+m0281/Carta 15	5	@c	code	c		u	agrees
+m0281/Carta 15	6	@a	code	a		t	agrees
+m0281/Carta 15	7	@13	code	13		q	agrees
+m0281/Carta 15	8	@c	code	c		u	agrees
+m0281/Carta 15	9	@z	code	z		e	agrees
+m0281/Carta 15	10	@y	code	y		a	agrees
+m0281/Carta 15	11	@g	code	g		r	conflict:i
+m0281/Carta 15	12	@y	code	y		a	agrees
+m0281/Carta 15	13	@8	code	8		i	agrees
+m0281/Carta 15	14	@m	code	m		n	agrees
+m0281/Carta 15	15	@10	code	10		h	agrees
+m0281/Carta 15	16	@y	code	y		a	agrees
+m0281/Carta 15	17	@18	code	18		m	agrees
+m0281/Carta 15	18	@m	code	m		n	agrees
+m0281/Carta 15	19	@2	code	2		d	agrees
+m0281/Carta 15	20	@15	code	15		o	agrees
+m0281/Carta 15	21	@c	code	c		u	agrees
+m0281/Carta 15	22	@7	code	7			null-or-unaligned
+m0281/Carta 15	23	@y	code	y			null-or-unaligned
+m0281/Carta 15	24	@6	code	6		p	agrees
+m0281/Carta 15	25	@7	code	7		r	conflict:e
+m0281/Carta 15	26	@15	code	15		o	agrees
+m0281/Carta 15	27	@b	code	b		p	conflict:g
+m0281/Carta 15	28	@15	code	15		o	agrees
+m0281/Carta 15	29	@7	code	7		r	conflict:e
+m0281/Carta 15	30	@y	code	y		a	agrees
+m0281/Carta 15	31	@7	code	7		e	agrees
+m0281/Carta 15	32	@4	code	4		l	conflict:s
+m0281/Carta 15	33	@7	code	7		r	conflict:e
+m0281/Carta 15	34	@7	code	7		e	agrees
+m0281/Carta 15	35	@8	code	8		i	agrees
+m0281/Carta 15	36	a	clear			a	clear
+m0281/Carta 15	37	suspensão	clear			suspenso	clear
+m0281/Carta 15	38	de	clear			de	clear
+m0281/Carta 15	39	Armas	clear			armas	clear
+m0281/Carta 15	40	@6	code	6		p	agrees
+m0281/Carta 15	41	@15	code	15		o	agrees
+m0281/Carta 15	42	@7	code	7		r	conflict:e
+m0281/Carta 15	43	@10	code	10		h	agrees
+m0281/Carta 15	44	@e	code	e		u	conflict:g
+m0281/Carta 15	45	@18	code	18		m	agrees
+m0281/Carta 15	46	@y	code	y		a	agrees
+m0281/Carta 15	47	@5	code	5		c	agrees
+m0281/Carta 15	48	@y	code	y		a	agrees
+m0281/Carta 15	49	@7	code	7		r	conflict:e
+m0281/Carta 15	50	@a	code	a		t	agrees
+m0281/Carta 15	51	@y	code	y		a	agrees
+m0281/Carta 15	52	de	clear			de	clear
+m0281/Carta 15	53	grandes	clear			grandes	clear
+m0281/Carta 15	54	@5	code	5		c	agrees
+m0281/Carta 15	55	@15	code	15		u	conflict:o
+m0281/Carta 15	56	@18	code	18		m	agrees
+m0281/Carta 15	57	@b	code	b		p	conflict:g
+m0281/Carta 15	58	@7	code	7		r	conflict:e
+m0281/Carta 15	59	@8	code	8		i	agrees
+m0281/Carta 15	60	@18	code	18		m	agrees
+m0281/Carta 15	61	@z	code	z		e	agrees
+m0281/Carta 15	62	@m	code	m		n	agrees
+m0281/Carta 15	63	@a	code	a		t	agrees
+m0281/Carta 15	64	@15	code	15		o	agrees
+m0281/Carta 15	65	@4	code	4		s	agrees
+m0281/Carta 15	66	e	clear				clear
+m0281/Carta 15	67	que	clear				clear
+m0281/Carta 15	68	@y	code	y			null-or-unaligned
+m0281/Carta 15	69	@18	code	18		p	conflict:m
+m0281/Carta 15	70	@y	code	y		o	conflict:a
+m0281/Carta 15	71	@m	code	m		r	conflict:n
+m0281/Carta 15	72	@2	code	2		e	conflict:d
+m0281/Carta 15	73	@y	code	y		x	conflict:a
+m0281/Carta 15	74	@c	code	c		p	conflict:u
+m0281/Carta 15	75	@y	code	y		r	conflict:a
+m0281/Carta 15	76	por.z.19.b.	clear				clear
+m0281/Carta 15	77	@7	code	7		e	agrees
+m0281/Carta 15	78	@7	code	7		s	conflict:e
+m0281/Carta 15	79	@4	code	4		s	agrees
+m0281/Carta 15	80	@15	code	15		o	agrees
+m0281/Carta 15	81	@6	code	6		p	agrees
+m0281/Carta 15	82	@7	code	7		e	agrees
+m0281/Carta 15	83	@4	code	4		l	conflict:s
+m0281/Carta 15	84	@15	code	15		o	agrees
+m0281/Carta 15	85	@13	code	13		q	agrees
+m0281/Carta 15	86	@c	code	c		u	agrees
+m0281/Carta 15	87	@y	code	y		a	agrees
+m0281/Carta 15	88	@4	code	4		l	conflict:s
+m0281/Carta 15	89	@7	code	7		e	agrees
+m0281/Carta 15	90	@c	code	c		u	agrees
+m0281/Carta 15	91	@6	code	6		p	agrees
+m0281/Carta 15	92	@15	code	15		o	agrees
+m0281/Carta 15	93	@28	code	28		i	conflict:d
+m0281/Carta 15	94	@y	code	y		a	agrees
+m0281/Carta 15	95	escrever	clear			escrever	clear
+m0281/Carta 23	0	@4	code	4		s	agrees
+m0281/Carta 23	1	@17	code	17		a	agrees
+m0281/Carta 23	2	@8	code	8		i	agrees
+m0281/Carta 23	3	@52	code	52		r	agrees
+m0281/Carta 23	4	@2	code	2		d	agrees
+m0281/Carta 23	5	@7	code	7		e	agrees
+m0281/Carta 23	6	@21	code	21		b	agrees
+m0281/Carta 23	7	@26	code	26		u	agrees
+m0281/Carta 23	8	@20	code	20		l	agrees
+m0281/Carta 23	9	@8	code	8		i	agrees
+m0281/Carta 23	10	@m	code	m		n	agrees
+m0281/Carta 23	11	@e	code	e		g	agrees
+m0281/Carta 23	12	@21	code	21		b	agrees
+m0281/Carta 23	13	@12	code	12		r	agrees
+m0281/Carta 23	14	@25	code	25		o	agrees
+m0281/Carta 23	15	@6	code	6		k	conflict:p
+m0281/Carta 23	16	que	clear			que	clear
+m0281/Carta 23	17	hé	clear			h	clear
+m0281/Carta 23	18	@14	code	14		n	agrees
+m0281/Carta 23	19	@15	code	15		o	agrees
+m0281/Carta 23	20	@4	code	4		s	agrees
+m0281/Carta 23	21	@4	code	4		s	agrees
+m0281/Carta 23	22	@25	code	25		o	agrees
+m0281/Carta 23	23	@8	code	8		i	agrees
+m0281/Carta 23	24	@m	code	m		n	agrees
+m0281/Carta 23	25	@8	code	8		i	agrees
+m0281/Carta 23	26	@18	code	18		m	agrees
+m0281/Carta 23	27	@22	code	22		i	agrees
+m0281/Carta 23	28	@e	code	e		g	agrees
+m0281/Carta 23	29	@15	code	15		o	agrees
+m0282/Carta 30	0	@17	code	17		a	agrees
+m0282/Carta 30	1	@4	code	4		s	agrees
+m0282/Carta 30	2	@15	code	15		o	agrees
+m0282/Carta 30	3	@6	code	6		g	conflict:p
+m0282/Carta 30	4	@12	code	12		r	agrees
+m0282/Carta 30	5	@y	code	y		a	agrees
+m0282/Carta 30	6	@2	code	2		d	agrees
+m0282/Carta 30	7	@15	code	15		o	agrees
+m0282/Carta 30	8	@2	code	2		d	agrees
+m0282/Carta 30	9	@26	code	26		u	agrees
+m0282/Carta 30	10	@13	code	13		q	agrees
+m0282/Carta 30	11	@26	code	26		u	agrees
+m0282/Carta 30	12	@19	code	19		e	agrees
+m0282/Carta 30	13	@x	code	x		d	agrees
+m0282/Carta 30	14	@19	code	19		e	agrees
+m0282/Carta 30	15	@21	code	21		b	agrees
+m0282/Carta 30	16	@26	code	26		u	agrees
+m0282/Carta 30	17	@13	code	13		q	agrees
+m0282/Carta 30	18	@c	code	c		u	agrees
+m0282/Carta 30	19	@8	code	8		i	agrees
+m0282/Carta 30	20	@14	code	14		n	agrees
+m0282/Carta 30	21	@6	code	6		o	conflict:p
+m0282/Carta 30	22	@17	code	17		a	agrees
+m0282/Carta 30	23	@14	code	14		n	agrees
+m0282/Carta 58	0	@15	code	15		o	agrees
+m0282/Carta 58	1	@m	code	m		n	agrees
+m0282/Carta 58	2	@17	code	17			null-or-unaligned
+m0282/Carta 58	3	@15	code	15		o	agrees
+m0282/Carta 58	4	@16	code	16		f	agrees
+m0282/Carta 58	5	@15	code	15		o	agrees
+m0282/Carta 58	6	@8	code	8		i	agrees
+m0282/Carta 58	7	@4	code	4		s	agrees
+m0282/Carta 58	8	@19	code	19		e	agrees
+m0282/Carta 58	9	@18	code	18		m	agrees
+m0282/Carta 58	10	@2	code	2		d	agrees
+m0282/Carta 58	11	@19	code	19		i	conflict:e
+m0282/Carta 58	12	@a	code	a		l	conflict:t
+m0282/Carta 58	13	@8	code	8		i	agrees
+m0282/Carta 58	14	@c	code	c		g	conflict:u
+m0282/Carta 58	15	@19	code	19		e	agrees
+m0282/Carta 58	16	@m	code	m		n	agrees
+m0282/Carta 58	17	@5	code	5		c	agrees
+m0282/Carta 58	18	@8	code	8		i	agrees
+m0282/Carta 58	19	@17	code	17		a	agrees
+m0282/Carta 58	20	@14	code	14		e	conflict:n
+m0282/Carta 58	21	@4	code	4		s	agrees
+m0282/Carta 58	22	@15	code	15		o	agrees
+m0282/Carta 58	23	@21	code	21		b	agrees
+m0282/Carta 58	24	@15	code	15		o	agrees
+m0282/Carta 58	25	@12	code	12		r	agrees
+m0282/Carta 58	26	@m	code	m		n	agrees
+m0282/Carta 58	27	@15	code	15		o	agrees
+m0282/Carta 58	28	@2	code	2		d	agrees
+m0282/Carta 58	29	@17	code	17		a	agrees
+m0282/Carta 58	30	@4	code	4		s	agrees
+m0282/Carta 58	31	@55	code	55		p	agrees
+m0282/Carta 58	32	@19	code	19		e	agrees
+m0282/Carta 58	33	@4	code	4		s	agrees
+m0282/Carta 58	34	@15	code	15		o	agrees
+m0282/Carta 58	35	@17	code	17		a	agrees
+m0282/Carta 58	36	@4	code	4		s	agrees
+m0282/Carta 58	37	que	clear			que	clear
+m0282/Carta 58	38	N.Exª	clear			vex	clear
+m0282/Carta 58	39	@4	code	4		s	agrees
+m0282/Carta 58	40	@17	code	17		a	agrees
+m0282/Carta 58	41	@21	code	21		b	agrees
+m0282/Carta 58	42	@19	code	19		e	agrees
+m0282/Carta 58	43	@22	code	22		e	conflict:i
+m0282/Carta 58	44	@5	code	5		c	agrees
+m0282/Carta 58	45	@15	code	15		o	agrees
+m0282/Carta 58	46	@13	code	13		m	conflict:q
+m0282/Carta 58	47	@17	code	17		a	agrees
+m0282/Carta 58	48	@13	code	13		d	conflict:q
+m0282/Carta 58	49	@2	code	2		d	agrees
+m0282/Carta 58	50	@26	code	26		u	agrees
+m0282/Carta 58	51	@5	code	5			null-or-unaligned
+m0282/Carta 58	52	@17	code	17			null-or-unaligned
+m0282/Carta 58	53	@18	code	18		o	conflict:m
+m0282/Carta 58	54	@2	code	2		d	agrees
+m0282/Carta 58	55	@15	code	15		o	agrees
+m0282/Carta 58	56	@4	code	4		s	agrees
+m0282/Carta 58	57	últimos	clear			ltimos	clear
+m0282/Carta 58	58	@17	code	17		a	agrees
+m0282/Carta 58	59	@8	code	8		j	conflict:i
+m0282/Carta 58	60	@26	code	26		u	agrees
+m0282/Carta 58	61	@4	code	4		s	agrees
+m0282/Carta 58	62	@3	code	3		t	agrees
+m0282/Carta 58	63	@19	code	19		e	agrees
+m0282/Carta 58	64	@4	code	4		s	agrees
+m0282/Carta 61	0	@4	code	4		s	agrees
+m0282/Carta 61	1	@7	code	7		e	agrees
+m0282/Carta 61	2	@15	code	15		o	agrees
+m0282/Carta 61	3	@2	code	2		d	agrees
+m0282/Carta 61	4	@8	code	8		i	agrees
+m0282/Carta 61	5	@17	code	17		a	agrees
+m0282/Carta 61	6	@21	code	21		b	agrees
+m0282/Carta 61	7	@15	code	15		o	agrees
+m0282/Carta 61	8	@4	code	4			null-or-unaligned
+m0282/Carta 61	9	@7	code	7		h	conflict:e
+m0282/Carta 61	10	@26	code	26		v	agrees
+m0282/Carta 61	11	@19	code	19		e	agrees
+m0282/Carta 61	12	@12	code	12		r	agrees
+m0282/Carta 61	13	@23	code	23		o	conflict:a
+m0282/Carta 61	14	@15	code	15		o	agrees
+m0282/Carta 61	15	@3	code	3		t	agrees
+m0282/Carta 61	16	@7	code	7		e	agrees
+m0282/Carta 61	17	@4	code	4		s	agrees
+m0282/Carta 61	18	@15	code	15		o	agrees
+m0282/Carta 61	19	@26	code	26		u	agrees
+m0282/Carta 61	20	@12	code	12		r	agrees
+m0282/Carta 61	21	@7	code	7		e	agrees
+m0282/Carta 61	22	@8	code	8		i	agrees
+m0282/Carta 61	23	@12	code	12		r	agrees
+m0282/Carta 61	24	@15	code	15		o	agrees
+m0282/Carta 61	25	teríamos	clear			teramos	clear
+m0282/Carta 61	26	alguma	clear			alguma	clear
+m0282/Carta 61	27	Barrulha	clear			barrulha	clear
+m0282/Carta 61	28	ouço	clear			ouo	clear
+m0282/Carta 61	29	que	clear			que	clear
+m0282/Carta 61	30	este	clear			este	clear
+m0282/Carta 61	31	@26	code	26		v	agrees
+m0282/Carta 61	32	@7	code	7		e	agrees
+m0282/Carta 61	33	@20	code	20		l	agrees
+m0282/Carta 61	34	@10	code	10		h	agrees
+m0282/Carta 61	35	@17	code	17		a	agrees
+m0282/Carta 61	36	@5	code	5		c	agrees
+m0282/Carta 61	37	@15	code	15		o	agrees
+m0282/Carta 61	38	será	clear			ser	clear
+m0282/Carta 61	39	@17	code	17		a	agrees
+m0282/Carta 61	40	@3	code	3		t	agrees
+m0282/Carta 61	41	@17	code	17		a	agrees
+m0282/Carta 61	42	@5	code	5		c	agrees
+m0282/Carta 61	43	@23	code	23		a	agrees
+m0282/Carta 61	44	@2	code	2		d	agrees
+m0282/Carta 61	45	@25	code	25		o	agrees
+m0282/Carta 61	46	aprº	clear			apr	clear
+m0282/Carta 61	47	ver	clear			ver	clear
+m0282/Carta 61	48	que	clear			que	clear
+m0282/Carta 61	49	@4	code	4		s	agrees
+m0282/Carta 61	50	@2	code	2		e	conflict:d
+m0282/Carta 61	51	@8	code	8		j	conflict:i
+m0282/Carta 61	52	@26	code	26		u	agrees
+m0282/Carta 61	53	@14	code	14		n	agrees
+m0282/Carta 61	54	@3	code	3		t	agrees
+m0282/Carta 61	55	@17	code	17		a	agrees
+m0282/Carta 61	56	@12	code	12		r	agrees
+m0282/Carta 61	57	@15	code	15		o	agrees
+m0282/Carta 61	58	@55	code	55		p	agrees
+m0282/Carta 61	59	@17	code	17		a	agrees
+m0282/Carta 61	60	@52	code	52		r	agrees
+m0282/Carta 61	61	@20	code	20		l	agrees
+m0282/Carta 61	62	@17	code	17		a	agrees
+m0282/Carta 61	63	@18	code	18		m	agrees
+m0282/Carta 61	64	@2	code	2		e	conflict:d
+m0282/Carta 61	65	@14	code	14		n	agrees
+m0282/Carta 61	66	@3	code	3		t	agrees
+m0282/Carta 61	67	@15	code	15		o	agrees
+m0283/Carta 70	0	@11	code	11		p	agrees
+m0283/Carta 70	1	@17	code	17		a	agrees
+m0283/Carta 70	2	@12	code	12		r	agrees
+m0283/Carta 70	3	@17	code	17		a	agrees
+m0283/Carta 70	4	@14	code	14		n	agrees
+m0283/Carta 70	5	@15	code	15		o	agrees
+m0283/Carta 70	6	@4	code	4		s	agrees
+m0283/Carta 70	7	@55	code	55		p	agrees
+m0283/Carta 70	8	@12	code	12		r	agrees
+m0283/Carta 70	9	@7	code	7		e	agrees
+m0283/Carta 70	10	@8	code	8		j	conflict:i
+m0283/Carta 70	11	@26	code	26		u	agrees
+m0283/Carta 70	12	@2	code	2		d	agrees
+m0283/Carta 70	13	@8	code	8		i	agrees
+m0283/Carta 70	14	@5	code	5		c	agrees
+m0283/Carta 70	15	@17	code	17		a	agrees
+m0283/Carta 70	16	@12	code	12		r	agrees
+m0283/Carta 70	17	como	clear			como	clear
+m0283/Carta 70	18	N.Exª	clear			nex	clear
+m0283/Carta 70	19	virá	clear			vir	clear
+m0283/Carta 70	20	da	clear			da	clear
+m0283/Carta 70	21	copia	clear			copia	clear
+m0283/Carta 70	22	della	clear			della	clear
+m0283/Carta 70	23	que	clear			que	clear
+m0283/Carta 70	24	me	clear			me	clear
+m0283/Carta 70	25	fará	clear			far	clear
+m0283/Carta 70	26	mercê	clear			merc	clear
+m0283/Carta 70	27	tornar	clear			tornar	clear
+m0283/Carta 70	28	a	clear			a	clear
+m0283/Carta 70	29	mandar	clear			mandar	clear
+m0283/Carta 70	30	N.Exª	clear			nex	clear
+m0283/Carta 70	31	deve	clear			deve	clear
+m0283/Carta 70	32	saber	clear			saber	clear
+m0283/Carta 70	33	que	clear			que	clear
+m0283/Carta 70	34	no	clear			no	clear
+m0283/Carta 70	35	Diccionario	clear			diccionario	clear
+m0283/Carta 70	36	@7	code	7		d	conflict:e
+m0283/Carta 70	37	@19	code	19		e	agrees
+m0283/Carta 70	38	@4	code	4		s	agrees
+m0283/Carta 70	39	@3	code	3		t	agrees
+m0283/Carta 70	40	@19	code	19		e	agrees
+m0283/Carta 70	41	@4	code	4			null-or-unaligned
+m0283/Carta 70	42	@18	code	18		m	agrees
+m0283/Carta 70	43	@8	code	8		i	agrees
+m0283/Carta 70	44	@14	code	14		n	agrees
+m0283/Carta 70	45	@8	code	8		i	agrees
+m0283/Carta 70	46	@4	code	4		s	agrees
+m0283/Carta 70	47	@3	code	3		t	agrees
+m0283/Carta 70	48	@12	code	12		r	agrees
+m0283/Carta 70	49	@15	code	15		o	agrees
+m0283/Carta 70	50	@4	code	4			null-or-unaligned
+m0283/Carta 70	51	@26	code	26		v	agrees
+m0283/Carta 70	52	@17	code	17		a	agrees
+m0283/Carta 70	53	@20	code	20		l	agrees
+m0283/Carta 70	54	@15	code	15		o	agrees
+m0283/Carta 70	55	@18	code	18		m	agrees
+m0283/Carta 70	56	@19	code	19		e	agrees
+m0283/Carta 70	57	@4	code	4		s	agrees
+m0283/Carta 70	58	@18	code	18		m	agrees
+m0283/Carta 70	59	@15	code	15		o	agrees
+m0283/Carta 70	60	@55	code	55		p	agrees
+m0283/Carta 70	61	@19	code	19			null-or-unaligned
+m0283/Carta 70	62	@12	code	12			null-or-unaligned
+m0283/Carta 70	63	@19	code	19			null-or-unaligned
+m0283/Carta 70	64	@2	code	2			null-or-unaligned
+m0283/Carta 70	65	@19	code	19		e	agrees
+m0283/Carta 70	66	@12	code	12		r	agrees
+m0283/Carta 70	67	tudo	clear			tudo	clear
+m0283/Carta 70	68	que	clear			que	clear
+m0283/Carta 70	69	@12	code	12		r	agrees
+m0283/Carta 70	70	@19	code	19		e	agrees
+m0283/Carta 70	71	@4	code	4		s	agrees
+m0283/Carta 70	72	@8	code	8		i	agrees
+m0283/Carta 70	73	@b	code	b		g	agrees
+m0283/Carta 70	74	@14	code	14		n	agrees
+m0283/Carta 70	75	@17	code	17		a	agrees
+m0283/Carta 70	76	@12	code	12		r	agrees
+m0283/Carta 70	77	@4	code	4		s	agrees
+m0283/Carta 70	78	@19	code	19		e	agrees
+m0283/Carta 70	79	nas	clear			nas	clear
+m0283/Carta 70	80	mãos	clear			mos	clear
+m0283/Carta 70	81	@2	code	2		d	agrees
+m0283/Carta 70	82	@17	code	17		a	agrees
+m0283/Carta 70	83	@12	code	12		r	agrees
+m0283/Carta 70	84	@17	code	17		a	agrees
+m0283/Carta 70	85	@310	code	310		i	single
+m0283/Carta 70	86	@400	code	400		n	single
+m0283/Carta 70	87	@5	code	5		h	conflict:c
+m0283/Carta 70	88	@14	code	14		a	conflict:n
+m0284/Carta 71	0	@19	code	19		e	agrees
+m0284/Carta 71	1	@4	code	4		s	agrees
+m0284/Carta 71	2	@3	code	3		t	agrees
+m0284/Carta 71	3	@17	code	17		a	agrees
+m0284/Carta 71	4	@12	code	12		n	conflict:r
+m0284/Carta 71	5	@19	code	19		e	agrees
+m0284/Carta 71	6	@4	code	4		g	conflict:s
+m0284/Carta 71	7	@55	code	55		o	conflict:p
+m0284/Carta 71	8	@15	code	15		c	conflict:o
+m0284/Carta 71	9	@4	code	4		a	conflict:s
+m0284/Carta 71	10	@3	code	3		t	agrees
+m0284/Carta 71	11	@17	code	17		a	agrees
+m0284/Carta 71	12	@10	code	10		h	agrees
+m0284/Carta 71	13	@19	code	19			null-or-unaligned
+m0284/Carta 71	14	@10	code	10		h	agrees
+m0284/Carta 71	15	@c	code	c		u	agrees
+m0284/Carta 71	16	@18	code	18		m	agrees
+m0284/Carta 71	17	@y	code	y		a	agrees
+m0284/Carta 71	18	@2	code	2		g	conflict:d
+m0284/Carta 71	19	@12	code	12		r	agrees
+m0284/Carta 71	20	@23	code	23			null-or-unaligned
+m0284/Carta 71	21	@14	code	14			null-or-unaligned
+m0284/Carta 71	22	@2	code	2		d	agrees
+m0284/Carta 71	23	@24	code	24		e	agrees
+m0284/Carta 71	24	@55	code	55		p	agrees
+m0284/Carta 71	25	@17	code	17		a	agrees
+m0284/Carta 71	26	@12	code	12		r	agrees
+m0284/Carta 71	27	@26	code	26			null-or-unaligned
+m0284/Carta 71	28	@15	code	15		a	conflict:o
+m0284/Carta 71	29	@8	code	8		n	conflict:i
+m0284/Carta 71	30	@4	code	4		h	conflict:s
+m0284/Carta 71	31	@19	code	19		a	conflict:e
+m0284/Carta 71	32	@2	code	2		d	agrees
+m0284/Carta 71	33	@19	code	19		e	agrees
+m0284/Carta 71	34	@10	code	10		h	agrees
+m0284/Carta 71	35	@26	code	26		u	agrees
+m0284/Carta 71	36	@18	code	18		m	agrees
+m0284/Carta 71	37	@16	code	16		f	agrees
+m0284/Carta 71	38	@8	code	8		i	agrees
+m0284/Carta 71	39	@14	code	14		m	conflict:n
+m0284/Carta 71	40	@15	code	15		o	agrees
+m0284/Carta 71	41	@26	code	26		v	agrees
+m0284/Carta 71	42	@19	code	19		e	agrees
+m0284/Carta 71	43	@20	code	20		l	agrees
+m0284/Carta 71	44	@10	code	10		h	agrees
+m0284/Carta 71	45	@y	code	y		a	agrees
+m0284/Carta 71	46	@5	code	5		c	agrees
+m0284/Carta 71	47	@15	code	15		o	agrees
+m0284/Passage 2a	0	@4	code	4		s	agrees
+m0284/Passage 2a	1	@19	code	19		e	agrees
+m0284/Passage 2a	2	@2	code	2		l	conflict:d
+m0284/Passage 2a	3	@24	code	24		h	conflict:e
+m0284/Passage 2a	4	@4	code	4			null-or-unaligned
+m0284/Passage 2a	5	@15	code	15			null-or-unaligned
+m0284/Passage 2a	6	@19	code	19		e	agrees
+m0284/Passage 2a	7	@4	code	4		f	agrees
+m0284/Passage 2a	8	@2	code	2		d	agrees
+m0284/Passage 2a	9	@19	code	19		e	agrees
+m0284/Passage 2a	10	@18	code	18		m	agrees
+m0284/Passage 2a	11	@8	code	8		i	agrees
+m0284/Passage 2a	12	@18	code	18		m	agrees
+m0284/Passage 3a	0	@14	code	14		n	agrees
+m0284/Passage 3a	1	@17	code	17			null-or-unaligned
+m0284/Passage 3a	2	@18	code	18		o	conflict:m
+m0284/Passage 3a	3	@21	code	21		b	agrees
+m0284/Passage 3a	4	@17	code	17		a	agrees
+m0284/Passage 3a	5	@4	code	4		s	agrees
+m0284/Passage 3a	6	@3	code	3		t	agrees
+m0284/Passage 3a	7	@23	code	23		a	agrees
+m0284/Passage 3a	8	com	clear			com	clear
+m0284/Passage 3a	9	@19	code	19		e	agrees
+m0284/Passage 3a	10	@4	code	4		s	agrees
+m0284/Passage 3a	11	@3	code	3		t	agrees
+m0284/Passage 3a	12	@24	code	24		e	agrees
+m0284/Passage 3a	13	@26	code	26		v	agrees
+m0284/Passage 3a	14	@19	code	19		e	agrees
+m0284/Passage 3a	15	@20	code	20		l	agrees
+m0284/Passage 3a	16	@10	code	10		h	agrees
+m0284/Passage 3a	17	@y	code	y		a	agrees
+m0284/Passage 3a	18	@5	code	5		c	agrees
+m0284/Passage 3a	19	@15	code	15		o	agrees
+m0285/Passage 4a	0	@8	code	8		i	agrees
+m0285/Passage 4a	1	@14	code	14		n	agrees
+m0285/Passage 4a	2	@c	code	c		g	conflict:u
+m0285/Passage 4a	3	@20	code	20		l	agrees
+m0285/Passage 4a	4	@19	code	19		e	agrees
+m0285/Passage 4a	5	@24	code	24		e	agrees
+m0285/Passage 4a	6	@4	code	4		s	agrees
+m0285/Passage 4a	7	que	clear			que	clear
+m0285/Passage 4a	8	@4	code	4		s	agrees
+m0285/Passage 4a	9	@15	code	15		o	agrees
+m0285/Passage 4a	10	@20	code	20		l	agrees
+m0285/Passage 4a	11	@8	code	8		i	agrees
+m0285/Passage 4a	12	@18	code	18		a	conflict:m
+m0285/Passage 4a	13	@19	code	19		e	agrees
+m0285/Passage 4a	14	@4	code	4		s	agrees
+m0285/Passage 4a	15	@3	code	3		t	agrees
+m0285/Passage 4a	16	@17	code	17		a	agrees
+m0285/Passage 4a	17	@12	code	12		r	agrees
+m0285/Passage 4a	18	@19	code	19		e	agrees
+m0285/Passage 4a	19	@4	code	4		s	agrees
+m0285/Passage 4a	20	@3	code	3		t	agrees
+m0285/Passage 4a	21	@8	code	8		i	agrees
+m0285/Passage 4a	22	@3	code	3		t	agrees
+m0285/Passage 4a	23	@26	code	26		u	agrees
+m0285/Passage 4a	24	@8	code	8		i	agrees
+m0285/Passage 4a	25	@5	code	5			null-or-unaligned
+m0285/Passage 4a	26	@y	code	y			null-or-unaligned
+m0285/Passage 4a	27	@18	code	18		o	conflict:m
+m0285/Carta 72	0	@19	code	19		e	agrees
+m0285/Carta 72	1	@26	code	26		v	agrees
+m0285/Carta 72	2	@8	code	8		i	agrees
+m0285/Carta 72	3	@3	code	3		t	agrees
+m0285/Carta 72	4	@17	code	17		a	agrees
+m0285/Carta 72	5	@12	code	12		r	agrees
+m0285/Carta 72	6	@y	code	y			null-or-unaligned
+m0285/Carta 72	7	@18	code	18		o	conflict:m
+m0285/Carta 72	8	@7	code	7		e	agrees
+m0285/Carta 72	9	@14	code	14		n	agrees
+m0285/Carta 72	10	@3	code	3		t	agrees
+m0285/Carta 72	11	@12	code	12		r	agrees
+m0285/Carta 72	12	@17	code	17		a	agrees
+m0285/Carta 72	13	@12	code	12		r	agrees
+m0285/Carta 72	14	@5	code	5		c	agrees
+m0285/Carta 72	15	@15	code	15		o	agrees
+m0285/Carta 72	16	@18	code	18		m	agrees
+m0285/Carta 72	17	@8	code	8		i	agrees
+m0285/Carta 72	18	@c	code	c		g	conflict:u
+m0285/Carta 72	19	@15	code	15		o	agrees
+m0285/Carta 72	20	@7	code	7		e	agrees
+m0285/Carta 72	21	@18	code	18		m	agrees
+m0285/Carta 72	22	materia	clear			materia	clear
+m0285/Carta 72	23	@8	code	8		j	conflict:i
+m0285/Carta 72	24	@26	code	26		o	conflict:u
+m0285/Carta 72	25	@c	code	c		g	conflict:u
+m0285/Carta 72	26	@y	code	y		a	agrees
+m0285/Carta 72	27	@14	code	14		n	agrees
+m0285/Carta 72	28	@2	code	2		d	agrees
+m0285/Carta 72	29	@15	code	15		o	agrees
+m0285/Carta 72	30	sempre	clear			sempr	clear
+m0285/Carta 72	31	@17	code	17		e	conflict:a
+m0285/Carta 72	32	@4	code	4		s	agrees
+m0285/Carta 72	33	@19	code	19		e	agrees
+m0285/Carta 72	34	@4	code	4		s	agrees
+m0285/Carta 72	35	@5	code	5		c	agrees
+m0285/Carta 72	36	@15	code	15		o	agrees
+m0285/Carta 72	37	@14	code	14		n	agrees
+m0285/Carta 72	38	@2	code	2		d	agrees
+m0285/Carta 72	39	@8	code	8		i	agrees
+m0285/Carta 72	40	@x	code	x		d	agrees
+m0285/Carta 72	41	@y	code	y		a	agrees
+m0285/Carta 72	42	@4	code	4		s	agrees
+m0285/Carta 72	43	esta	clear			esta	clear
+m0285/Carta 72	44	hé	clear			h	clear
+m0285/Carta 72	45	a	clear			a	clear
+m0285/Carta 72	46	causa	clear			causa	clear
+m0285/Carta 72	47	de	clear			de	clear
+m0285/Carta 72	48	@3	code	3		s	conflict:t
+m0285/Carta 72	49	@19	code	19		e	agrees
+m0285/Carta 72	50	@12	code	12		r	agrees
+m0285/Carta 72	51	@c	code	c		g	conflict:u
+m0285/Carta 72	52	@8	code	8			null-or-unaligned
+m0285/Carta 72	53	@26	code	26			null-or-unaligned
+m0285/Carta 72	54	@19	code	19			null-or-unaligned
+m0285/Carta 72	55	@12	code	12		r	agrees
+m0285/Carta 72	56	@4	code	4		d	conflict:s
+m0285/Carta 72	57	@y	code	y		e	conflict:a
+m0285/Carta 72	58	@5	code	5		n	conflict:c
+m0285/Carta 72	59	@17	code	17		a	agrees
+m0285/Carta 72	60	@12	code	12		o	conflict:r
+m0285/Passage 5a	0	@17	code	17		n	conflict:a
+m0285/Passage 5a	1	@18	code	18		o	conflict:m
+m0285/Passage 5a	2	@10	code	10		h	agrees
+m0285/Passage 5a	3	@7	code	7			null-or-unaligned
+m0285/Passage 5a	4	@12	code	12		r	agrees
+m0285/Passage 5a	5	@19	code	19		e	agrees
+m0285/Passage 5a	6	@4	code	4		s	agrees
+m0285/Passage 5a	7	@55	code	55		p	agrees
+m0285/Passage 5a	8	@15	code	15		o	agrees
+m0285/Passage 5a	9	@4	code	4		s	agrees
+m0285/Passage 5a	10	@3	code	3		t	agrees
+m0285/Passage 5a	11	@17	code	17		a	agrees
+m0286/Passage 3a	0	@17	code	17		a	agrees
+m0286/Passage 3a	1	@14	code	14		n	agrees
+m0286/Passage 3a	2	@8	code	8		i	agrees
+m0286/Passage 3a	3	@18	code	18		n	conflict:m
+m0286/Passage 3a	4	@c	code	c		g	conflict:u
+m0286/Passage 3a	5	@26	code	26		u	agrees
+m0286/Passage 3a	6	@7	code	7			null-or-unaligned
+m0286/Passage 3a	7	@18	code	18		m	agrees
+m0286/Passage 3a	8	adirão	clear			adir	clear
+m0286/Passage 3a	9	@5	code	5			null-or-unaligned
+m0286/Passage 3a	10	@20	code	20		o	conflict:l
+m0286/Passage 3a	11	@17	code	17		f	conflict:a
+m0286/Passage 3a	12	@12	code	12		r	agrees
+m0286/Passage 3a	13	@23	code	23		a	agrees
+m0286/Passage 3a	14	@14	code	14		n	agrees
+m0286/Passage 3a	15	@15	code	15		o	agrees
+m0286/Passage 3a	16	@5	code	5		c	agrees
+m0286/Passage 3a	17	@26	code	26		u	agrees
+m0286/Passage 3a	18	@12	code	12		r	agrees
+m0286/Passage 3a	19	@4	code	4		s	agrees
+m0286/Passage 3a	20	@15	code	15		o	agrees
+m0286/Passage 3a	21	@2	code	2		d	agrees
+m0286/Passage 3a	22	@7	code	7		e	agrees
+m0286/Passage 3a	23	@4	code	4		s	agrees
+m0286/Passage 3a	24	@3	code	3		t	agrees
+m0286/Passage 3a	25	@y	code	y		e	conflict:a
+m0286/Carta 73	0	@4	code	4		s	agrees
+m0286/Carta 73	1	@19	code	19		e	agrees
+m0286/Carta 73	2	@18	code	18		m	agrees
+m0286/Carta 73	3	@15	code	15		p	conflict:o
+m0286/Carta 73	4	@12	code	12		r	agrees
+m0286/Carta 73	5	@2	code	2		e	conflict:d
+m0286/Carta 73	6	@12	code	12		r	agrees
+m0286/Carta 73	7	@7	code	7		u	conflict:e
+m0286/Carta 73	8	@8	code	8		i	agrees
+m0286/Carta 73	9	@14	code	14		n	agrees
+m0286/Carta 73	10	@17	code	17		a	agrees
+m0286/Carta 73	11	@12	code	12		r	agrees
+m0286/Carta 73	12	@y	code	y		s	conflict:a
+m0286/Carta 73	13	@15	code	15			null-or-unaligned
+m0286/Carta 73	14	@23	code	23		a	agrees
+m0286/Carta 73	15	@13	code	13		q	agrees
+m0286/Carta 73	16	@26	code	26		u	agrees
+m0286/Carta 73	17	@8	code	8		i	agrees
+m0286/Carta 73	18	@19	code	19		e	agrees
+m0286/Carta 73	19	@4	code	4		s	agrees
+m0286/Carta 73	20	@3	code	3		t	agrees
+m0286/Carta 73	21	@19	code	19		e	agrees
+m0286/Carta 73	22	@4	code	4		s	agrees
+m0286/Carta 73	23	dous	clear			dois	clear
+m0286/Carta 73	24	@26	code	26		v	agrees
+m0286/Carta 73	25	@19	code	19		e	agrees
+m0286/Carta 73	26	@20	code	20		l	agrees
+m0286/Carta 73	27	@10	code	10		h	agrees
+m0286/Carta 73	28	@17	code	17		a	agrees
+m0286/Carta 73	29	@5	code	5		c	agrees
+m0286/Carta 73	30	@15	code	15		o	agrees
+m0286/Carta 73	31	@4	code	4		s	agrees
+m0286/Carta 74	0	@7	code	7		e	agrees
+m0286/Carta 74	1	@f	code	f		s	agrees
+m0286/Carta 74	2	@6	code	6		p	agrees
+m0286/Carta 74	3	@24	code	24		e	agrees
+m0286/Carta 74	4	@12	code	12		r	agrees
+m0286/Carta 74	5	@d	code	d		o	agrees
+m0286/Carta 74	6	@4	code	4		q	conflict:s
+m0286/Carta 74	7	@26	code	26		u	agrees
+m0286/Carta 74	8	@19	code	19		e	agrees
+m0286/Carta 74	9	@15	code	15		p	conflict:o
+m0286/Carta 74	10	@y	code	y		a	agrees
+m0286/Carta 74	11	@12	code	12		r	agrees
+m0286/Carta 74	12	@a	code	a		t	agrees
+m0286/Carta 74	13	@23	code	23		a	agrees
+m0286/Carta 74	14	@h	code	h		m	agrees
+m0286/Carta 74	15	@d	code	d		o	agrees
+m0286/Carta 74	16	@m	code	m		n	agrees
+m0286/Carta 74	17	@a	code	a		t	agrees
+m0286/Carta 74	18	@20	code	20		l	agrees
+m0286/Carta 74	19	@19	code	19		e	agrees
+m0286/Carta 74	20	@17	code	17			null-or-unaligned
+m0286/Carta 74	21	@18	code	18		o	conflict:m
+m0286/Carta 74	22	@55	code	55		p	agrees
+m0286/Carta 74	23	@15	code	15		o	agrees
+m0286/Carta 74	24	@12	code	12		r	agrees
+m0286/Carta 74	25	@3	code	3		t	agrees
+m0286/Carta 74	26	@g	code	g		i	agrees
+m0286/Carta 74	27	@12	code	12		r	agrees
+m0286/Carta 74	28	@y	code	y		a	agrees
+m0286/Carta 74	29	@22	code	22		s	conflict:i
+m0286/Carta 74	30	@15	code	15		c	conflict:o
+m0286/Carta 74	31	@5	code	5		c	agrees
+m0286/Carta 74	32	@17	code	17		a	agrees
+m0286/Carta 74	33	@f	code	f		r	conflict:s
+m0286/Carta 74	34	@8	code	8		i	agrees
+m0286/Carta 74	35	@g	code	g		a	conflict:i
+m0286/Carta 74	36	@18	code	18			null-or-unaligned
+m0286/Carta 74	37	@18	code	18		s	conflict:m
+m0286/Carta 74	38	@23	code	23		d	conflict:a
+m0286/Carta 74	39	@24	code	24		e	agrees
+m0286/Carta 74	40	@4	code	4		s	agrees
+m0286/Carta 74	41	@a	code	a		t	agrees
+m0286/Carta 74	42	@7	code	7		e	agrees
+m0286/Carta 74	43	@f	code	f		s	agrees
+m0286/Carta 74	44	@a	code	a			null-or-unaligned
+m0286/Carta 74	45	@y	code	y			null-or-unaligned
+m0286/Carta 74	46	@12	code	12		v	conflict:r
+m0286/Carta 74	47	@7	code	7		e	agrees
+m0286/Carta 74	48	@18	code	18			null-or-unaligned
+m0286/Carta 74	49	@17	code	17			null-or-unaligned
+m0286/Carta 74	50	@12	code	12		l	conflict:r
+m0286/Carta 74	51	@24	code	24		h	conflict:e
+m0286/Carta 74	52	@f	code	f		a	conflict:s
+m0286/Carta 74	53	@15	code	15		c	conflict:o
+m0286/Carta 74	54	@15	code	15		o	agrees
+m0286/Carta 74	55	@4	code	4		s	agrees
+m0286/Carta 74	56	@3	code	3		d	conflict:t
+m0286/Carta 74	57	@y	code	y		e	conflict:a
+m0286/Carta 74	58	@5	code	5		c	agrees
+m0286/Carta 74	59	@d	code	d		o	agrees
+m0286/Carta 74	60	@a	code	a		t	agrees
+m0286/Carta 74	61	@y	code	y		a	agrees
+m0286/Carta 74	62	@12	code	12		r	agrees
+m0286/Carta 74	63	@7	code	7		u	conflict:e
+m0286/Carta 74	64	@18	code	18		m	agrees
+m0286/Carta 74	65	@17	code	17		a	agrees
+m0286/Carta 74	66	@12	code	12		r	agrees
+m0286/Carta 74	67	@24	code	24			null-or-unaligned
+m0286/Carta 74	68	@f	code	f			null-or-unaligned
+m0286/Carta 74	69	@15	code	15		p	conflict:o
+m0286/Carta 74	70	@15	code	15		o	agrees
+m0286/Carta 74	71	@4	code	4			null-or-unaligned
+m0286/Carta 74	72	@3	code	3		t	agrees
+m0286/Carta 74	73	@y	code	y			null-or-unaligned
+m0286/Carta 74	74	@5	code	5		c	agrees
+m0286/Carta 74	75	@d	code	d		o	agrees
+m0286/Carta 74	76	@h	code	h		m	agrees
+m0286/Carta 74	77	@25	code	25		o	agrees
+m0286/Carta 74	78	@5	code	5		c	agrees
+m0286/Carta 74	79	@23	code	23		a	agrees
+m0286/Carta 74	80	@f	code	f		s	agrees
+m0286/Carta 74	81	@a	code	a		t	agrees
+m0286/Carta 74	82	@7	code	7		e	agrees
+m0286/Carta 74	83	@20	code	20		l	agrees
+m0286/Carta 74	84	@10	code	10		h	agrees
+m0286/Carta 74	85	@17	code	17		a	agrees
+m0286/Carta 74	86	@m	code	m		n	agrees
+m0286/Carta 74	87	@15	code	15		o	agrees
+m0287/Carta 78	0	@19	code	19		e	agrees
+m0287/Carta 78	1	@18	code	18		m	agrees
+m0287/Carta 78	2	@28	code	28		d	single
+m0287/Carta 78	3	@f	code	f		z	conflict:s
+m0287/Carta 78	4	@7	code	7		e	agrees
+m0287/Carta 78	5	@52	code	52		r	agrees
+m0287/Carta 78	6	@x	code	x		d	agrees
+m0287/Carta 78	7	@7	code	7		e	agrees
+m0287/Carta 78	8	@4	code	4		s	agrees
+m0287/Carta 78	9	@3	code	3		t	agrees
+m0287/Carta 78	10	@19	code	19		e	agrees
+m0287/Carta 78	11	@4	code	4		s	agrees
+m0287/Carta 78	12	@26	code	26		v	agrees
+m0287/Carta 78	13	@19	code	19		e	agrees
+m0287/Carta 78	14	@20	code	20		l	agrees
+m0287/Carta 78	15	@10	code	10		h	agrees
+m0287/Carta 78	16	@17	code	17		a	agrees
+m0287/Carta 78	17	@5	code	5		c	agrees
+m0287/Carta 78	18	@15	code	15		o	agrees
+m0287/Carta 78	19	@4	code	4		s	agrees
+m0287/Carta 79	0	@17	code	17		a	agrees
+m0287/Carta 79	1	@13	code	13		q	agrees
+m0287/Carta 79	2	@26	code	26		u	agrees
+m0287/Carta 79	3	@8	code	8		i	agrees
+m0287/Carta 79	4	@14	code	14		n	agrees
+m0287/Carta 79	5	@17	code	17			null-or-unaligned
+m0287/Carta 79	6	@18	code	18		o	conflict:m
+m0287/Carta 79	7	@4	code	4		s	agrees
+m0287/Carta 79	8	@19	code	19		e	agrees
+m0287/Carta 79	9	@17	code	17		a	agrees
+m0287/Carta 79	10	@3	code	3		t	agrees
+m0287/Carta 79	11	@19	code	19		e	agrees
+m0287/Carta 79	12	@14	code	14		n	agrees
+m0287/Carta 79	13	@2	code	2		d	agrees
+m0287/Carta 79	14	@19	code	19		e	agrees
+m0287/Carta 79	15	@17	code	17		a	agrees
+m0287/Carta 79	16	@12	code	12		r	agrees
+m0287/Carta 79	17	@23	code	23		a	agrees
+m0287/Carta 79	18	@f	code	f		z	conflict:s
+m0287/Carta 79	19	@17	code	17			null-or-unaligned
+m0287/Carta 79	20	@18	code	18		o	conflict:m
+m0287/Carta 79	21	@y	code	y		a	agrees
+m0287/Carta 79	22	@10	code	10		l	conflict:h
+m0287/Carta 79	23	@e	code	e		g	agrees
+m0287/Carta 79	24	@26	code	26		u	agrees
+m0287/Carta 79	25	@18	code	18		m	agrees
+m0287/Carta 79	26	@17	code	17			null-or-unaligned
+m0287/Carta 79	27	@2	code	2			null-or-unaligned
+m0287/Carta 79	28	@19	code	19		e	agrees
+m0287/Carta 79	29	@4	code	4		s	agrees
+m0287/Carta 79	30	@3	code	3		t	agrees
+m0287/Carta 79	31	@24	code	24		e	agrees
+m0287/Carta 79	32	@26	code	26		v	agrees
+m0287/Carta 79	33	@24	code	24		e	agrees
+m0287/Carta 79	34	@20	code	20		l	agrees
+m0287/Carta 79	35	@10	code	10		h	agrees
+m0287/Carta 79	36	@17	code	17		a	agrees
+m0287/Carta 79	37	@5	code	5		c	agrees
+m0287/Carta 79	38	@15	code	15		o	agrees
+m0287/Carta 79	39	@20	code	20		d	conflict:l
+m0287/Carta 79	40	@15	code	15		o	agrees
+m0287/Carta 79	41	@3	code	3		t	agrees
+m0287/Carta 79	42	@19	code	19		e	agrees
+m0287/Carta 79	43	@f	code	f		s	agrees
+m0287/Carta 79	44	@15	code	15		o	agrees
+m0287/Carta 79	45	@26	code	26		u	agrees
+m0287/Carta 79	46	@52	code	52		r	agrees
+m0287/Carta 79	47	@19	code	19		e	agrees
+m0287/Carta 79	48	@8	code	8		i	agrees
+m0287/Carta 79	49	@12	code	12		r	agrees
+m0287/Carta 79	50	@15	code	15		o	agrees
+m0287/Carta 79	51	vai	clear			vai	clear
+m0287/Carta 79	52	@4	code	4		s	agrees
+m0287/Carta 79	53	@19	code	19		e	agrees
+m0287/Carta 79	54	@26	code	26		u	agrees
+m0287/Carta 79	55	Caminho	clear			caminho	clear
+m0287/Carta 79	56	@55	code	55		p	agrees
+m0287/Carta 79	57	@24	code	24		a	conflict:e
+m0287/Carta 79	58	@12	code	12		r	agrees
+m0287/Carta 79	59	@17	code	17		a	agrees
+m0287/Carta 79	60	@3	code	3		s	conflict:t
+m0287/Carta 79	61	@y	code	y		a	agrees
+m0287/Carta 79	62	@8	code	8		i	agrees
+m0287/Carta 79	63	@21	code	21		b	agrees
+m0287/Carta 79	64	@15	code	15		o	agrees
+m0287/Carta 79	65	@12	code	12		r	agrees
+m0287/Carta 79	66	@14	code	14		n	agrees
+m0287/Carta 79	67	@19	code	19		e	agrees
+m0287/Carta 80	0	@10	code	10		h	agrees
+m0287/Carta 80	1	@26	code	26		u	agrees
+m0287/Carta 80	2	@18	code	18		m	agrees
+m0287/Carta 80	3	@16	code	16		f	agrees
+m0287/Carta 80	4	@8	code	8		i	agrees
+m0287/Carta 80	5	@14	code	14		m	conflict:n
+m0287/Carta 80	6	@15	code	15			null-or-unaligned
+m0287/Carta 80	7	@2	code	2		d	agrees
+m0287/Carta 80	8	@7	code	7			null-or-unaligned
+m0287/Carta 80	9	@4	code	4		o	conflict:s
+m0287/Carta 80	10	@55	code	55		p	agrees
+m0287/Carta 80	11	@12	code	12		r	agrees
+m0287/Carta 80	12	@15	code	15		o	agrees
+m0287/Carta 80	13	@f	code	f		s	agrees
+m0287/Carta 80	14	@8	code	8		i	agrees
+m0287/Carta 80	15	@3	code	3		t	agrees
+m0287/Carta 80	16	@15	code	15		o	agrees
+m0288/Carta 81	0	@15	code	15			null-or-unaligned
+m0288/Carta 81	1	@25	code	25		o	agrees
+m0288/Carta 81	2	@16	code	16		s	agrees
+m0288/Carta 81	3	@8	code	8			null-or-unaligned
+m0288/Carta 81	4	@5	code	5			null-or-unaligned
+m0288/Carta 81	5	@8	code	8			null-or-unaligned
+m0288/Carta 81	6	@17	code	17		d	conflict:a
+m0288/Carta 81	7	@20	code	20		l	agrees
+m0288/Carta 81	8	@4	code	4			null-or-unaligned
+m0288/Carta 81	9	@26	code	26		u	agrees
+m0288/Carta 81	10	@8	code	8		i	agrees
+m0288/Carta 81	11	@4	code	4		s	agrees
+m0288/Carta 81	12	@20	code	20		t	conflict:l
+m0288/Carta 81	13	@10	code	10		h	agrees
+m0288/Carta 81	14	@7	code	7		e	agrees
+m0288/Carta 81	15	@5	code	5		c	agrees
+m0288/Carta 81	16	@15	code	15		o	agrees
+m0288/Carta 81	17	@18	code	18		m	agrees
+m0288/Carta 81	18	@26	code	26		u	agrees
+m0288/Carta 81	19	@14	code	14		n	agrees
+m0288/Carta 81	20	@8	code	8		i	agrees
+m0288/Carta 81	21	@5	code	5		c	agrees
+m0288/Carta 81	22	@17	code	17		a	agrees
+m0288/Carta 85	0	@17	code	17		a	agrees
+m0288/Carta 85	1	@3	code	3		t	agrees
+m0288/Carta 85	2	@12	code	12		r	agrees
+m0288/Carta 85	3	@15	code	15		o	agrees
+m0288/Carta 85	4	@5	code	5		c	agrees
+m0288/Carta 85	5	@2	code	2		d	agrees
+m0288/Carta 85	6	@7	code	7		e	agrees
+m0288/Carta 85	7	@17	code	17		a	agrees
+m0288/Carta 85	8	@20	code	20		l	agrees
+m0288/Carta 85	9	@5	code	5		c	agrees
+m0288/Carta 85	10	@17	code	17		a	agrees
+m0288/Carta 85	11	@14	code	14		n	agrees
+m0288/Carta 85	12	@4	code	4			null-or-unaligned
+m0288/Carta 85	13	@23	code	23		a	agrees
+m0288/Carta 85	14	@12	code	12		r	agrees
+m0288/Carta 85	15	@19	code	19		e	agrees
+m0288/Carta 85	16	@18	code	18		m	agrees
+m0288/Carta 85	17	qual	clear			qualq	clear
+m0288/Carta 85	18	@q	code	q		r	single
+m0288/Carta 85	19	bagatella	clear			bagatella	clear
+m0288/Carta 85	20	avantajoza	clear			avantajoza	clear
+m0288/Carta 85	21	@14	code	14		n	agrees
+m0288/Carta 85	22	@15	code	15		o	agrees
+m0288/Carta 85	23	@3	code	3		t	agrees
+m0288/Carta 85	24	@12	code	12		r	agrees
+m0288/Carta 85	25	@17	code	17		a	agrees
+m0288/Carta 85	26	@3	code	3		t	agrees
+m0288/Carta 85	27	@23	code	23		a	agrees
+m0288/Carta 85	28	@2	code	2		d	agrees
+m0288/Carta 85	29	@15	code	15		o	agrees
+m0288/Carta 85	30	@2	code	2		d	agrees
+m0288/Carta 85	31	@19	code	19		a	conflict:e
+m0288/Carta 85	32	@8	code	8		i	agrees
+m0288/Carta 85	33	@4	code	4		a	conflict:s
+m0288/Carta 85	34	@26	code	26		v	agrees
+m0288/Carta 85	35	@19	code	19		e	agrees
+m0288/Carta 85	36	@14	code	14		n	agrees
+m0288/Carta 85	37	@2	code	2		d	agrees
+m0288/Carta 85	38	@7	code	7		e	agrees
+m0288/Carta 85	39	@12	code	12		r	agrees
+m0288/Carta 85	40	@17	code	17		a	agrees
+m0288/Carta 85	41	@18	code	18			null-or-unaligned
+m0288/Carta 85	42	@3	code	3		t	agrees
+m0288/Carta 85	43	@15	code	15		o	agrees
+m0288/Carta 85	44	@2	code	2		d	agrees
+m0288/Carta 85	45	@15	code	15		o	agrees
+m0288/Carta 85	46	@18	code	18		m	agrees
+m0288/Carta 85	47	@26	code	26		u	agrees
+m0288/Carta 85	48	@14	code	14		n	agrees
+m0288/Carta 85	49	@2	code	2		d	agrees
+m0288/Carta 85	50	@25	code	25		o	agrees
+m0288/Passage 2a	0	@19	code	19		e	agrees
+m0288/Passage 2a	1	@4	code	4		s	agrees
+m0288/Passage 2a	2	@3	code	3		t	agrees
+m0288/Passage 2a	3	@19	code	19		e	agrees
+m0288/Passage 2a	4	@4	code	4		s	agrees
+m0288/Passage 2a	5	@10	code	10		h	agrees
+m0288/Passage 2a	6	@15	code	15		o	agrees
+m0288/Passage 2a	7	@18	code	18		m	agrees
+m0288/Passage 2a	8	@17	code	17		n	conflict:a
+m0288/Passage 2a	9	@4	code	4		s	agrees
+m0288/Passage 2a	10	tem	clear			tem	clear
+m0288/Passage 2a	11	@16	code	16		f	agrees
+m0288/Passage 2a	12	@7	code	7		e	agrees
+m0288/Passage 2a	13	@5	code	5		c	agrees
+m0288/Passage 2a	14	@10	code	10		h	agrees
+m0288/Passage 2a	15	@17	code	17		a	agrees
+m0288/Passage 2a	16	@2	code	2		d	agrees
+m0288/Passage 2a	17	@15	code	15		o	agrees
+m0288/Passage 2a	18	aporta	clear			aporta	clear
+m0288/Passage 2a	19	@17	code	17		a	agrees
+m0288/Passage 2a	20	@3	code	3		t	agrees
+m0288/Passage 2a	21	@15	code	15			null-or-unaligned
+m0288/Passage 2a	22	@2	code	2		a	conflict:d
+m0288/Passage 2a	23	@17	code	17		a	agrees
+m0288/Passage 2a	24	audiencia,	clear			audiencia	clear
+m0288/Passage 2a	25	e	clear			e	clear
+m0288/Passage 2a	26	não	clear			no	clear
+m0288/Passage 2a	27	cabe	clear			cabe	clear
+m0288/Passage 2a	28	@14	code	14		n	agrees
+m0288/Passage 2a	29	@15	code	15		o	agrees
+m0288/Passage 2a	30	@55	code	55		p	agrees
+m0288/Passage 2a	31	@17	code	17		a	agrees
+m0288/Passage 2a	32	@55	code	55		p	agrees
+m0288/Passage 2a	33	@19	code	19		e	agrees
+m0288/Passage 2a	34	@20	code	20		l	agrees
+m0288/Passage 2a	35	@15	code	15			null-or-unaligned
+m0288/Passage 2a	36	@2	code	2		d	agrees
+m0288/Passage 2a	37	@7	code	7		e	agrees
+m0288/Passage 2a	38	@g	code	g			null-or-unaligned
+m0288/Passage 2a	39	@17	code	17		a	agrees
+m0288/Passage 2a	40	@16	code	16		f	agrees
+m0288/Passage 2a	41	@15	code	15		o	agrees
+m0288/Passage 2a	42	@12	code	12		r	agrees
+m0288/Passage 2a	43	@15	code	15		o	agrees
+m0288/Passage 2a	44	com	clear			com	clear
+m0288/Passage 2a	45	que	clear			que	clear
+m0288/Passage 2a	46	@3	code	3		t	agrees
+m0288/Passage 2a	47	@12	code	12		r	agrees
+m0288/Passage 2a	48	@17	code	17		a	agrees
+m0288/Passage 2a	49	@3	code	3		t	agrees
+m0288/Passage 2a	50	@23	code	23		o	conflict:a
+m0288/Passage 2a	51	@18	code	18		a	conflict:m
+m0288/Passage 2a	52	@4	code	4		f	agrees
+m0288/Passage 2a	53	@3	code	3			null-or-unaligned
+m0288/Passage 2a	54	@15	code	15		o	agrees
+m0288/Passage 2a	55	@2	code	2		r	conflict:d
+m0288/Passage 2a	56	@25	code	25		o	agrees
+m0288/Passage 2a	57	@4	code	4			null-or-unaligned
+m0289/Carta 89	0	@17	code	17		a	agrees
+m0289/Carta 89	1	@3	code	3		i	conflict:t
+m0289/Carta 89	2	@14	code	14		n	agrees
+m0289/Carta 89	3	@2	code	2		d	agrees
+m0289/Carta 89	4	@17	code	17		a	agrees
+m0289/Carta 89	5	@13	code	13		q	agrees
+m0289/Carta 89	6	@26	code	26		u	agrees
+m0289/Carta 89	7	@7	code	7		e	agrees
+m0289/Carta 89	8	@3	code	3		i	conflict:t
+m0289/Carta 89	9	@4	code	4		s	agrees
+m0289/Carta 89	10	@3	code	3		t	agrees
+m0289/Carta 89	11	@15	code	15		o	agrees
+m0289/Carta 89	12	@10	code	10		h	agrees
+m0289/Carta 89	13	@7	code	7			null-or-unaligned
+m0289/Carta 89	14	@18	code	18		m	agrees
+m0289/Carta 89	15	@19	code	19		e	agrees
+m0289/Carta 89	16	@14	code	14		n	agrees
+m0289/Carta 89	17	@38	code	38		i	single
+m0289/Carta 89	18	@12	code	12		r	agrees
+m0289/Carta 89	19	@17	code	17		a	agrees
+m0289/Carta 89	20	@21	code	21		b	agrees
+m0289/Carta 89	21	@15	code	15		o	agrees
+m0289/Carta 89	22	@18	code	18		m	agrees
+m0289/Carta 89	23	@4	code	4		s	agrees
+m0289/Carta 89	24	@7	code	7		e	agrees
+m0289/Carta 89	25	@12	code	12		r	agrees
+m0289/Carta 89	26	@17	code	17			null-or-unaligned
+m0289/Carta 89	27	que	clear			que	clear
+m0289/Carta 89	28	@20	code	20		l	agrees
+m0289/Carta 89	29	@10	code	10		h	agrees
+m0289/Carta 89	30	@2	code	2		e	conflict:d
+m0289/Carta 89	31	@18	code	18		m	agrees
+m0289/Carta 89	32	@7	code	7		e	agrees
+m0289/Carta 89	33	@3	code	3		t	agrees
+m0289/Carta 89	34	@17	code	17			null-or-unaligned
+m0289/Carta 89	35	@18	code	18		o	conflict:m
+m0289/Carta 89	36	@58	code	58		m	agrees
+m0289/Carta 89	37	@19	code	19		e	agrees
+m0289/Carta 89	38	@2	code	2		d	agrees
+m0289/Carta 89	39	@15	code	15		o	agrees
+m0289/Carta 91	0	@4	code	4		s	agrees
+m0289/Carta 91	1	@19	code	19		e	agrees
+m0289/Carta 91	2	@e	code	e		g	agrees
+m0289/Carta 91	3	@26	code	26		u	agrees
+m0289/Carta 91	4	@14	code	14		n	agrees
+m0289/Carta 91	5	@x	code	x		d	agrees
+m0289/Carta 91	6	@15	code	15		o	agrees
+m0289/Carta 91	7	@55	code	55		p	agrees
+m0289/Carta 91	8	@12	code	12		r	agrees
+m0289/Carta 91	9	@15	code	15		o	agrees
+m0289/Carta 91	10	@18	code	18		m	agrees
+m0289/Carta 91	11	@19	code	19		e	agrees
+m0289/Carta 91	12	@3	code	3		t	agrees
+m0289/Carta 91	13	@7	code	7		e	agrees
+m0289/Carta 91	14	@y	code	y		a	agrees
+m0289/Carta 91	15	@55	code	55		p	agrees
+m0289/Carta 91	16	@d	code	d		o	agrees
+m0289/Carta 91	17	@c	code	c		u	agrees
+m0289/Carta 91	18	@5	code	5		c	agrees
+m0289/Carta 91	19	@17	code	17		a	agrees
+m0289/Carta 91	20	@26	code	26		v	agrees
+m0289/Carta 91	21	@22	code	22		i	agrees
+m0289/Carta 91	22	@x	code	x		d	agrees
+m0289/Carta 91	23	@23	code	23		a	agrees
+m0289/Carta 91	24	@2	code	2		d	agrees
+m0289/Carta 91	25	@17	code	17		o	conflict:a
+m0289/Carta 91	26	@18	code	18		r	conflict:m
+m0289/Carta 92	0	@19	code	19		e	agrees
+m0289/Carta 92	1	@4	code	4		s	agrees
+m0289/Carta 92	2	@3	code	3		t	agrees
+m0289/Carta 92	3	@7	code	7		e	agrees
+m0289/Carta 92	4	@26	code	26		v	agrees
+m0289/Carta 92	5	@3	code	3		e	conflict:t
+m0289/Carta 92	6	@20	code	20		l	agrees
+m0289/Carta 92	7	@10	code	10		h	agrees
+m0289/Carta 92	8	@y	code	y		a	agrees
+m0289/Carta 92	9	@5	code	5		c	agrees
+m0289/Carta 92	10	@15	code	15		o	agrees
+m0289/Carta 92	11	@24	code	24		e	agrees
+m0289/Carta 92	12	@f	code	f		s	agrees
+m0289/Carta 92	13	@3	code	3		t	agrees
+m0289/Carta 92	14	@17	code	17			null-or-unaligned
+m0289/Carta 92	15	@x	code	x		d	agrees
+m0289/Carta 92	16	@7	code	7		e	agrees
+m0289/Carta 92	17	@5	code	5		c	agrees
+m0289/Carta 92	18	@20	code	20		l	agrees
+m0289/Carta 92	19	@23	code	23		a	agrees
+m0289/Carta 92	20	@12	code	12		r	agrees
+m0289/Carta 92	21	@y	code	y		a	agrees
+m0289/Carta 92	22	@x	code	x		d	agrees
+m0289/Carta 92	23	@25	code	25		o	agrees
+m0289/Carta 92	24	@16	code	16		f	agrees
+m0289/Carta 92	25	@12	code	12		r	agrees
+m0289/Carta 92	26	@17	code	17		a	agrees
+m0289/Carta 92	27	@m	code	m		n	agrees
+m0289/Carta 92	28	@5	code	5		c	agrees
+m0289/Carta 92	29	@7	code	7		e	agrees
+m0289/Carta 92	30	@4	code	4		s	agrees
+m0289/Carta 92	31	@19	code	19		e	agrees
+m0289/Carta 92	32	@y	code	y		h	conflict:a
+m0289/Carta 92	33	@26	code	26		u	agrees
+m0289/Carta 92	34	@18	code	18		m	agrees
+m0289/Carta 92	35	@x	code	x			null-or-unaligned
+m0289/Carta 92	36	@24	code	24		t	conflict:e
+m0289/Carta 92	37	@f	code	f		r	conflict:s
+m0289/Carta 92	38	@a	code	a			null-or-unaligned
+m0289/Carta 92	39	@19	code	19		e	agrees
+m0289/Carta 92	40	@4	code	4		s	agrees
+m0289/Carta 92	41	@x	code	x		d	agrees
+m0289/Carta 92	42	@22	code	22		i	agrees
+m0289/Carta 92	43	@y	code	y		a	agrees
+m0289/Carta 92	44	@f	code	f		s	agrees
+m0289/Carta 92	45	@g	code	g		j	conflict:i
+m0289/Carta 92	46	@17	code	17		a	agrees
+m0289/Carta 92	47	@14	code	14		n	agrees
+m0289/Carta 92	48	@3	code	3		t	agrees
+m0289/Carta 92	49	@23	code	23		a	agrees
+m0289/Carta 92	50	@m	code	m		n	agrees
+m0289/Carta 92	51	@x	code	x		d	agrees
+m0289/Carta 92	52	@d	code	d		o	agrees
+m0289/Carta 92	53	@7	code	7		e	agrees
+m0289/Carta 92	54	@h	code	h		m	agrees
+m0289/Carta 92	55	@5	code	5		c	agrees
+m0289/Carta 92	56	@y	code	y		a	agrees
+m0289/Carta 92	57	@y	code	y		s	conflict:a
+m0289/Carta 92	58	@17	code	17		a	agrees
+m0289/Carta 92	59	@x	code	x		d	agrees
+m0289/Carta 92	60	@15	code	15		o	agrees
+m0289/Carta 92	61	@56	code	56		e	single
+m0289/Carta 92	62	@x	code	x		d	agrees
+m0289/Carta 92	63	@25	code	25		o	agrees
+m0289/Carta 92	64	@5	code	5		e	conflict:c
+m0289/Carta 92	65	@21	code	21		h	conflict:b
+m0289/Carta 92	66	@a	code	a		d	conflict:t
+m0289/Carta 92	67	@g	code	g		i	agrees
+m0289/Carta 92	68	@4	code	4		s	agrees
+m0289/Carta 92	69	@f	code	f		s	agrees
+m0289/Carta 92	70	@7	code	7		e	agrees
+m0289/Carta 92	71	@10	code	10		h	agrees
+m0289/Carta 92	72	@c	code	c		u	agrees
+m0289/Carta 92	73	@18	code	18		m	agrees
+m0289/Carta 92	74	@h	code	h		m	agrees
+m0289/Carta 92	75	@22	code	22		i	agrees
+m0289/Carta 92	76	@20	code	20			null-or-unaligned
+m0289/Carta 92	77	@11	code	11		s	conflict:p
+m0289/Carta 92	78	@y	code	y		t	conflict:a
+m0289/Carta 92	79	@18	code	18		o	conflict:m
+m0289/Carta 92	80	@2	code	2		d	agrees
+m0289/Carta 92	81	@7	code	7		e	agrees
+m0289/Carta 92	82	@55	code	55		p	agrees
+m0289/Carta 92	83	@12	code	12		r	agrees
+m0289/Carta 92	84	@17	code	17			null-or-unaligned
+m0289/Carta 92	85	@26	code	26		v	agrees
+m0289/Carta 92	86	@15	code	15		o	agrees
+m0289/Carta 92	87	@8	code	8		i	agrees
+m0289/Carta 92	88	@f	code	f			null-or-unaligned
+m0289/Carta 92	89	@4	code	4		c	conflict:s
+m0289/Carta 92	90	@19	code	19		e	agrees
+m0289/Carta 92	91	@f	code	f		s	agrees
+m0289/Carta 92	92	@5	code	5		c	agrees
+m0289/Carta 92	93	@15	code	15		o	agrees
+m0289/Carta 92	94	@18	code	18		m	agrees
+m0289/Carta 92	95	@16	code	16		h	conflict:f
+m0289/Carta 92	96	@c	code	c		u	agrees
+m0289/Carta 92	97	@h	code	h		m	agrees
+m0289/Carta 92	98	@11	code	11		p	agrees
+m0289/Carta 92	99	@15	code	15		o	agrees
+m0289/Carta 92	100	@26	code	26		u	agrees
+m0289/Carta 92	101	@5	code	5		c	agrees
+m0289/Carta 92	102	@25	code	25		o	agrees
+m0289/Carta 92	103	@x	code	x		d	agrees
+m0289/Carta 92	104	@z	code	z		e	agrees
+m0289/Carta 92	105	@c	code	c		v	agrees
+m0289/Carta 92	106	@g	code	g		i	agrees
+m0289/Carta 92	107	@m	code	m		n	agrees
+m0289/Carta 92	108	@p	code	p		h	single
+m0289/Carta 92	109	@d	code	d		o	agrees
+m0289/Carta 92	110	@14	code	14		n	agrees
+m0289/Carta 92	111	@y	code	y		a	agrees
+m0289/Carta 92	112	@5	code	5		c	agrees
+m0289/Carta 92	113	@17	code	17		a	agrees
+m0289/Carta 92	114	@21	code	21		b	agrees
+m0289/Carta 92	115	@19	code	19		e	agrees
+m0289/Carta 92	116	@5	code	5			null-or-unaligned
+m0289/Carta 92	117	@23	code	23		a	agrees
+m0290/Carta 93	0	@19	code	19		e	agrees
+m0290/Carta 93	1	@14	code	14		n	agrees
+m0290/Carta 93	2	@17	code	17			null-or-unaligned
+m0290/Carta 93	3	@18	code	18		o	conflict:m
+m0290/Carta 93	4	@24	code	24		e	agrees
+m0290/Carta 93	5	@f	code	f		s	agrees
+m0290/Carta 93	6	@3	code	3		t	agrees
+m0290/Carta 93	7	@y	code	y		h	conflict:a
+m0290/Carta 93	8	@7	code	7		u	conflict:e
+m0290/Carta 93	9	@h	code	h		m	agrees
+m0290/Carta 93	10	@21	code	21		b	agrees
+m0290/Carta 93	11	@15	code	15		o	agrees
+m0290/Carta 93	12	@23	code	23		a	agrees
+m0290/Carta 93	13	@8	code	8		i	agrees
+m0290/Carta 93	14	@m	code	m		n	agrees
+m0290/Carta 93	15	@a	code	a		t	agrees
+m0290/Carta 93	16	@7	code	7		e	agrees
+m0290/Carta 93	17	@h	code	h		l	conflict:m
+m0290/Carta 93	18	@g	code	g		i	agrees
+m0290/Carta 93	19	@e	code	e		g	agrees
+m0290/Carta 93	20	@19	code	19		e	agrees
+m0290/Carta 93	21	@14	code	14		n	agrees
+m0290/Carta 93	22	@5	code	5		c	agrees
+m0290/Carta 93	23	@22	code	22		i	agrees
+m0290/Carta 93	24	@y	code	y		a	agrees
+m0290/Carta 93	25	@5	code	5		h	conflict:c
+m0290/Carta 93	26	@25	code	25		u	conflict:o
+m0290/Carta 93	27	@18	code	18		m	agrees
+m0290/Carta 93	28	@15	code	15		e	conflict:o
+m0290/Carta 93	29	@y	code	y		x	conflict:a
+m0290/Carta 93	30	@16	code	16		s	agrees
+m0290/Carta 93	31	@d	code	d		o	agrees
+m0290/Carta 93	32	@12	code	12		r	agrees
+m0290/Carta 93	33	@a	code	a		t	agrees
+m0290/Carta 93	34	@7	code	7		e	agrees
+m0290/Carta 93	35	@11	code	11		b	conflict:p
+m0290/Carta 93	36	@26	code	26		u	agrees
+m0290/Carta 93	37	@20	code	20		l	agrees
+m0290/Carta 93	38	@8	code	8		i	agrees
+m0290/Carta 93	39	@m	code	m		n	agrees
+m0290/Carta 93	40	@z	code	z		g	conflict:e
+m0290/Carta 93	41	@21	code	21		b	agrees
+m0290/Carta 93	42	@12	code	12		r	agrees
+m0290/Carta 93	43	@15	code	15		o	agrees
+m0290/Carta 93	44	@5	code	5			null-or-unaligned
+m0290/Carta 93	45	@z	code	z		o	conflict:e
+m0290/Carta 93	46	@z	code	z		k	conflict:e
+m0290/Passage 2a	0	@13	code	13		l	conflict:q
+m0290/Passage 2a	1	@26	code	26		l	conflict:u
+m0290/Passage 2a	2	@19	code	19		e	agrees
+m0290/Passage 2a	3	@5	code	5		o	conflict:c
+m0290/Passage 2a	4	@c	code	c		u	agrees
+m0290/Passage 2a	5	@7	code	7		e	agrees
+m0290/Passage 2a	6	@20	code	20		l	agrees
+m0290/Passage 2a	7	@h	code	h		l	conflict:m
+m0290/Passage 2a	8	@y	code	y		a	agrees
+m0290/Passage 2a	9	@25	code	25		o	agrees
+m0290/Passage 2a	10	@c	code	c		u	agrees
+m0290/Passage 2a	11	@d	code	d		o	agrees
+m0290/Passage 2a	12	@f	code	f		s	agrees
+m0290/Passage 2a	13	@24	code	24		e	agrees
+m0290/Passage 2a	14	@26	code	26		u	agrees
+m0290/Passage 2a	15	@11	code	11		r	conflict:p
+m0290/Passage 2a	16	@2	code	2		o	conflict:d
+m0290/Passage 2a	17	@55	code	55		p	agrees
+m0290/Passage 2a	18	@15	code	15		o	agrees
+m0290/Passage 2a	19	@x	code	x		d	agrees
+m0290/Passage 2a	20	@7	code	7		e	agrees
+m0290/Passage 2a	21	@12	code	12		r	agrees
+m0290/Passage 2a	22	@8	code	8			null-or-unaligned
+m0290/Passage 2a	23	@y	code	y			null-or-unaligned
+m0290/Passage 2a	24	@18	code	18		o	conflict:m
+m0290/Passage 2a	25	@19	code	19		e	agrees
+m0290/Passage 2a	26	@4	code	4		s	agrees
+m0290/Passage 2a	27	@3	code	3		t	agrees
+m0290/Passage 2a	28	@17	code	17		a	agrees
+m0290/Passage 2a	29	@12	code	12		r	agrees
+m0290/Passage 2a	30	@14	code	14		n	agrees
+m0290/Passage 2a	31	@24	code	24		e	agrees
+m0290/Passage 2a	32	@f	code	f		s	agrees
+m0290/Passage 2a	33	@7	code	7		e	agrees
+m0290/Passage 2a	34	@a	code	a		t	agrees
+m0290/Passage 2a	35	@19	code	19		e	agrees
+m0290/Passage 2a	36	@h	code	h		m	agrees
+m0290/Passage 2a	37	@11	code	11		p	agrees
+m0290/Passage 2a	38	@d	code	d		o	agrees
+m0290/Passage 2a	39	@16	code	16		f	agrees
+m0290/Passage 2a	40	@15	code	15		o	agrees
+m0290/Passage 2a	41	@12	code	12		r	agrees
+m0290/Passage 2a	42	@y	code	y		a	agrees
+m0290/Passage 2a	43	@2	code	2		d	agrees
+m0290/Passage 2a	44	@25	code	25		o	agrees
+m0290/Passage 2a	45	@4	code	4		m	conflict:s
+m0290/Passage 2a	46	@26	code	26		u	agrees
+m0290/Passage 2a	47	@m	code	m		n	agrees
+m0290/Passage 2a	48	@x	code	x		d	agrees
+m0290/Passage 2a	49	@2	code	2		o	conflict:d
+m0290/Passage 2a	50	@15	code	15		o	agrees
+m0290/Passage 2a	51	@c	code	c		u	agrees
+m0290/Passage 2a	52	@2	code	2		d	agrees
+m0290/Passage 2a	53	@25	code	25		o	agrees
+m0290/Passage 2a	54	@19	code	19		m	conflict:e
+m0290/Passage 2a	55	@8	code	8		i	agrees
+m0290/Passage 2a	56	@14	code	14		n	agrees
+m0290/Passage 2a	57	@g	code	g		i	agrees
+m0290/Passage 2a	58	@f	code	f		s	agrees
+m0290/Passage 2a	59	@a	code	a		t	agrees
+m0290/Passage 2a	60	@7	code	7		e	agrees
+m0290/Passage 2a	61	@12	code	12		r	agrees
+m0290/Passage 2a	62	@22	code	22		i	agrees
+m0290/Passage 2a	63	@25	code	25		o	agrees
+m0290/Passage 2a	64	@14	code	14		s	conflict:n
+m0290/Passage 2a	65	@19	code	19		e	agrees
+m0290/Passage 2a	66	@c	code	c		g	conflict:u
+m0290/Passage 2a	67	@26	code	26			null-or-unaligned
+m0290/Passage 2a	68	@m	code	m			null-or-unaligned
+m0290/Passage 2a	69	@x	code	x		d	agrees
+m0290/Passage 2a	70	@d	code	d		o	agrees
+m0290/Passage 2a	71	@y	code	y		a	agrees
+m0290/Passage 2a	72	@f	code	f		s	agrees
+m0290/Passage 2a	73	@8	code	8		i	agrees
+m0290/Passage 2a	74	@14	code	14		n	agrees
+m0290/Passage 2a	75	@2	code	2		d	agrees
+m0290/Passage 2a	76	@22	code	22		i	agrees
+m0290/Passage 2a	77	@4	code	4		s	agrees
+m0290/Passage 2a	78	@55	code	55		p	agrees
+m0290/Passage 2a	79	@15	code	15		o	agrees
+m0290/Passage 2a	80	@g	code	g		s	conflict:i
+m0290/Passage 2a	81	@9	code	9		i	conflict:r
+m0290/Passage 2a	82	@5	code	5		c	agrees
+m0290/Passage 2a	83	@d	code	d			null-or-unaligned
+m0290/Passage 2a	84	@7	code	7		e	agrees
+m0290/Passage 2a	85	@f	code	f		s	agrees
+m0290/Passage 2a	86	@x	code	x		d	agrees
+m0290/Passage 2a	87	@17	code	17		a	agrees
+m0290/Passage 2a	88	@10	code	10		r	conflict:h
+m0290/Passage 2a	89	@8	code	8		i	agrees
+m0290/Passage 2a	90	@24	code	24		h	conflict:e
+m0290/Passage 2a	91	@23	code	23		a	agrees
+m0290/Passage 2a	92	@4	code	4		e	conflict:s
+m0290/Passage 2a	93	@26	code	26		d	conflict:u
+m0290/Passage 2a	94	@22	code	22		a	conflict:i
+m0290/Passage 2a	95	@15	code	15		e	conflict:o
+m0290/Passage 2a	96	@20	code	20		l	agrees
+m0290/Passage 2a	97	@2	code	2		e	conflict:d
+m0290/Passage 2a	98	@m	code	m		n	agrees
+m0290/Passage 2a	99	@5	code	5		c	agrees
+m0290/Passage 2a	100	@8	code	8		i	agrees
+m0290/Passage 2a	101	@y	code	y		a	agrees
+m0290/Passage 2a	102	@f	code	f			null-or-unaligned
+m0290/Passage 2a	103	@x	code	x		d	agrees
+m0290/Passage 2a	104	@d	code	d		o	agrees
+m0290/Passage 2a	105	@4	code	4		s	agrees
+m0290/Passage 2a	106	@h	code	h		m	agrees
+m0290/Passage 2a	107	@g	code	g		i	agrees
+m0290/Passage 2a	108	@m	code	m		n	agrees
+m0290/Passage 2a	109	@22	code	22		i	agrees
+m0290/Passage 2a	110	@4	code	4		s	agrees
+m0290/Passage 2a	111	@a	code	a		t	agrees
+m0290/Passage 2a	112	@12	code	12		r	agrees
+m0290/Passage 2a	113	@25	code	25		o	agrees
+m0290/Passage 2a	114	@4	code	4		s	agrees
+m0291/Passage 3a	0	@55	code	55		p	agrees
+m0291/Passage 3a	1	@19	code	19		e	agrees
+m0291/Passage 3a	2	@20	code	20		l	agrees
+m0291/Passage 3a	3	@h	code	h			null-or-unaligned
+m0291/Passage 3a	4	@15	code	15		o	agrees
+m0291/Passage 3a	5	@f	code	f		s	agrees
+m0291/Passage 3a	6	@m	code	m		w	conflict:n
+m0291/Passage 3a	7	@10	code	10		i	conflict:h
+m0291/Passage 3a	8	@b	code	b		g	agrees
+m0291/Passage 3a	9	@c	code	c			null-or-unaligned
+m0291/Passage 3a	10	@6	code	6		h	conflict:p
+m0291/Passage 3a	11	@4	code	4		s	agrees
+m0291/Passage 3a	12	@g	code	g		a	conflict:i
+m0291/Passage 3a	13	@7	code	7		e	agrees
+m0291/Passage 3a	14	@m	code	m		n	agrees
+m0291/Passage 3a	15	@a	code	a		t	agrees
+m0291/Passage 3a	16	@18	code	18		r	conflict:m
+m0291/Passage 3a	17	@17	code	17		a	agrees
+m0291/Passage 3a	18	@x	code	x		d	agrees
+m0291/Passage 3a	19	@23	code	23		a	agrees
+m0291/Passage 3a	20	@2	code	2		d	agrees
+m0291/Passage 3a	21	@15	code	15		o	agrees
+m0291/Passage 3a	22	@55	code	55		p	agrees
+m0291/Passage 3a	23	@12	code	12		r	agrees
+m0291/Passage 3a	24	@22	code	22		i	agrees
+m0291/Passage 3a	25	@14	code	14		n	agrees
+m0291/Passage 3a	26	@5	code	5		c	agrees
+m0291/Passage 3a	27	@8	code	8		i	agrees
+m0291/Passage 3a	28	@55	code	55		p	agrees
+m0291/Passage 3a	29	@24	code	24		e	agrees
+m0291/Passage 3a	30	@x	code	x		d	agrees
+m0291/Passage 3a	31	@7	code	7		e	agrees
+m0291/Passage 3a	32	@10	code	10		h	agrees
+m0291/Passage 3a	33	@y	code	y		a	agrees
+m0291/Passage 3a	34	@14	code	14		n	agrees
+m0291/Passage 3a	35	@25	code	25		o	agrees
+m0291/Passage 3a	36	@26	code	26		v	agrees
+m0291/Passage 3a	37	@19	code	19		e	agrees
+m0291/Passage 3a	38	@12	code	12		r	agrees
+m0291/Passage 3a	39	@55	code	55		p	agrees
+m0291/Passage 3a	40	@d	code	d		o	agrees
+m0291/Passage 3a	41	@12	code	12		r	agrees
+m0291/Passage 3a	42	@7	code	7		e	agrees
+m0291/Passage 3a	43	@f	code	f		s	agrees
+m0291/Passage 3a	44	@5	code	5		c	agrees
+m0291/Passage 3a	45	@15	code	15		o	agrees
+m0291/Passage 3a	46	@5	code	5		c	agrees
+m0291/Passage 3a	47	@8	code	8		i	agrees
+m0291/Passage 3a	48	@y	code	y		a	agrees
+m0291/Passage 3a	49	@11	code	11		p	agrees
+m0291/Passage 3a	50	@17	code	17		a	agrees
+m0291/Passage 3a	51	@12	code	12			null-or-unaligned
+m0291/Passage 3a	52	@23	code	23			null-or-unaligned
+m0291/Passage 3a	53	@55	code	55		p	agrees
+m0291/Passage 3a	54	@12	code	12		r	agrees
+m0291/Passage 3a	55	@19	code	19		e	agrees
+m0291/Passage 3a	56	@26	code	26		v	agrees
+m0291/Passage 3a	57	@22	code	22		i	agrees
+m0291/Passage 3a	58	@m	code	m		n	agrees
+m0291/Passage 3a	59	@8	code	8		i	agrees
+m0291/Passage 3a	60	@12	code	12		r	agrees
+m0291/Passage 3a	61	@y	code	y		a	agrees
+m0291/Passage 3a	62	@x	code	x			null-or-unaligned
+m0291/Passage 3a	63	@d	code	d		o	agrees
+m0291/Passage 3a	64	@11	code	11		p	agrees
+m0291/Passage 3a	65	@5	code	5		r	conflict:c
+m0291/Carta 94	0	@55	code	55		p	agrees
+m0291/Carta 94	1	@26	code	26		o	conflict:u
+m0291/Carta 94	2	@2	code	2		d	agrees
+m0291/Carta 94	3	@7	code	7		e	agrees
+m0291/Carta 94	4	@4	code	4		m	conflict:s
+m0291/Carta 94	5	@f	code	f			null-or-unaligned
+m0291/Carta 94	6	@19	code	19		e	agrees
+m0291/Carta 94	7	@7	code	7			null-or-unaligned
+m0291/Carta 94	8	@14	code	14		n	agrees
+m0291/Carta 94	9	@26	code	26		v	agrees
+m0291/Carta 94	10	@7	code	7		e	agrees
+m0291/Carta 94	11	@12	code	12		r	agrees
+m0291/Carta 94	12	@c	code	c		g	conflict:u
+m0291/Carta 94	13	@15	code	15		o	agrees
+m0291/Carta 94	14	@14	code	14		n	agrees
+m0291/Carta 94	15	@10	code	10		h	agrees
+m0291/Carta 94	16	@17	code	17		a	agrees
+m0291/Carta 94	17	@12	code	12		r	agrees
+m0291/Carta 94	18	@7	code	7		e	agrees
+m0291/Carta 94	19	@4	code	4		s	agrees
+m0291/Carta 94	20	@3	code	3		t	agrees
+m0291/Carta 94	21	@17	code	17		a	agrees
+m0291/Carta 94	22	@12	code	12		r	agrees
+m0291/Carta 94	23	@y	code	y		a	agrees
+m0291/Carta 94	24	@8	code	8		i	agrees
+m0291/Carta 94	25	@14	code	14		n	agrees
+m0291/Carta 94	26	@10	code	10		h	agrees
+m0291/Carta 94	27	@17	code	17		a	agrees
+m0291/Carta 96	0	@5	code	5		c	agrees
+m0291/Carta 96	1	@12	code	12		r	agrees
+m0291/Carta 96	2	@2	code	2		e	conflict:d
+m0291/Carta 96	3	@12	code	12		r	agrees
+m0291/Carta 96	4	@15	code	15		e	conflict:o
+m0291/Carta 96	5	@e	code	e		g	agrees
+m0291/Carta 96	6	@15	code	15		o	agrees
+m0291/Carta 96	7	@4	code	4		s	agrees
+m0291/Carta 96	8	@3	code	3		t	agrees
+m0291/Carta 96	9	@25	code	25		o	agrees
+m0291/Carta 96	10	@5	code	5		c	agrees
+m0291/Carta 96	11	@15	code	15		o	agrees
+m0291/Carta 96	12	@18	code	18		m	agrees
+m0291/Carta 96	13	@13	code	13		q	agrees
+m0291/Carta 96	14	@26	code	26			null-or-unaligned
+m0291/Carta 96	15	@2	code	2			null-or-unaligned
+m0291/Carta 96	16	@16	code	16		f	agrees
+m0291/Carta 96	17	@8	code	8		i	agrees
+m0291/Carta 96	18	@5	code	5		c	agrees
+m0291/Carta 96	19	@15	code	15		o	agrees
+m0291/Carta 96	20	hé	clear			h	clear
+m0291/Carta 96	21	certo	clear			certo	clear
+m0291/Carta 96	22	que	clear			que	clear
+m0291/Carta 96	23	@15	code	15		o	agrees
+m0291/Carta 96	24	@2	code	2		d	agrees
+m0291/Carta 96	25	@8	code	8		i	agrees
+m0291/Carta 96	26	@y	code	y		a	agrees
+m0291/Carta 96	27	@21	code	21		b	agrees
+m0291/Carta 96	28	@25	code	25		o	agrees
+m0291/Carta 96	29	@20	code	20		l	agrees
+m0291/Carta 96	30	@2	code	2		e	conflict:d
+m0291/Carta 96	31	@c	code	c		v	agrees
+m0291/Carta 96	32	@y	code	y		a	agrees
+m0291/Carta 96	33	@15	code	15		o	agrees
+m0291/Carta 96	34	@3	code	3		t	agrees
+m0291/Carta 96	35	@2	code	2		h	conflict:d
+m0291/Carta 96	36	@f	code	f		e	conflict:s
+m0291/Carta 96	37	@f	code	f		s	agrees
+m0291/Carta 96	38	@15	code	15		o	agrees
+m0291/Carta 96	39	@c	code	c		u	agrees
+m0291/Carta 96	40	@12	code	12		r	agrees
+m0291/Carta 96	41	@7	code	7		e	agrees
+m0291/Carta 96	42	@8	code	8		i	agrees
+m0291/Carta 96	43	@12	code	12		r	agrees
+m0291/Carta 96	44	@25	code	25		o	agrees
+m0292/Carta 101	0	@18	code	18		m	agrees
+m0292/Carta 101	1	@17	code	17		a	agrees
+m0292/Carta 101	2	@4	code	4		s	agrees
+m0292/Carta 101	3	@15	code	15		o	agrees
+m0292/Carta 101	4	@55	code	55		p	agrees
+m0292/Carta 101	5	hé	clear			h	clear
+m0292/Carta 101	6	verdade	clear			verdade	clear
+m0292/Carta 101	7	que	clear			que	clear
+m0292/Carta 101	8	@26	code	26		v	agrees
+m0292/Carta 101	9	@2	code	2		i	conflict:d
+m0292/Carta 101	10	@14	code	14		n	agrees
+m0292/Carta 101	11	@10	code	10		h	agrees
+m0292/Carta 101	12	@17	code	17		a	agrees
+m0292/Carta 101	13	@55	code	55		p	agrees
+m0292/Carta 101	14	@55	code	55		o	conflict:p
+m0292/Carta 101	15	@52	code	52		r	agrees
+m0292/Carta 101	16	@14	code	14		n	agrees
+m0292/Carta 101	17	@2	code	2		a	conflict:d
+m0292/Carta 101	18	por	clear			por	clear
+m0292/Carta 101	19	que	clear			que	clear
+m0292/Carta 101	20	não	clear			no	clear
+m0292/Carta 101	21	há	clear			h	clear
+m0292/Carta 101	22	aparencia	clear			aparencia	clear
+m0292/Carta 101	23	que	clear			que	clear
+m0292/Carta 101	24	@2	code	2		e	conflict:d
+m0292/Carta 101	25	@14	code	14		n	agrees
+m0292/Carta 101	26	@3	code	3		t	agrees
+m0292/Carta 101	27	@52	code	52		r	agrees
+m0292/Carta 101	28	@19	code	19		e	agrees
+m0292/Carta 101	29	pela	clear			pela	clear
+m0292/Carta 101	30	@55	code	55		p	agrees
+m0292/Carta 101	31	@15	code	15		o	agrees
+m0292/Carta 101	32	@12	code	12		r	agrees
+m0292/Carta 101	33	@3	code	3		t	agrees
+m0292/Carta 101	34	@17	code	17		a	agrees
+m0292/Carta 101	35	@2	code	2		d	agrees
+m0292/Carta 101	36	@23	code	23		e	conflict:a
+m0292/Carta 101	37	@10	code	10		l	conflict:h
+m0292/Carta 101	38	@9	code	9		o	conflict:r
+m0292/Carta 105	0	@4	code	4		s	agrees
+m0292/Carta 105	1	@7	code	7		e	agrees
+m0292/Carta 105	2	@55	code	55		p	agrees
+m0292/Carta 105	3	@15	code	15		o	agrees
+m0292/Carta 105	4	@12	code	12		r	agrees
+m0292/Carta 105	5	@2	code	2		d	agrees
+m0292/Carta 105	6	@7	code	7		e	agrees
+m0292/Carta 105	7	@21	code	21		b	agrees
+m0292/Carta 105	8	@15	code	15		o	agrees
+m0292/Carta 105	9	@6	code	6		c	conflict:p
+m0292/Carta 105	10	@10	code	10		h	agrees
+m0292/Carta 105	11	@7	code	7		e	agrees
+m0292/Carta 105	12	Elle	clear			elle	clear
+m0292/Carta 105	13	está	clear			est	clear
+m0292/Carta 105	14	@5	code	5		c	agrees
+m0292/Carta 105	15	@15	code	15		o	agrees
+m0292/Carta 105	16	@14	code	14		n	agrees
+m0292/Carta 105	17	@10	code	10		h	agrees
+m0292/Carta 105	18	@7	code	7		e	agrees
+m0292/Carta 105	19	@6	code	6		c	conflict:p
+m0292/Carta 105	20	@8	code	8		i	agrees
+m0292/Carta 105	21	@2	code	2		d	agrees
+m0292/Carta 105	22	@15	code	15		o	agrees
+m0292/Carta 105	23	@55	code	55		p	agrees
+m0292/Carta 105	24	@15	code	15		o	agrees
+m0292/Carta 105	25	@12	code	12		r	agrees
+m0292/Carta 105	26	@10	code	10		h	agrees
+m0292/Carta 105	27	@26	code	26		u	agrees
+m0292/Carta 105	28	@58	code	58		m	agrees
+m0292/Carta 105	29	@55	code	55		p	agrees
+m0292/Carta 105	30	@15	code	15		o	agrees
+m0292/Carta 105	31	@21	code	21		b	agrees
+m0292/Carta 105	32	@12	code	12		r	agrees
+m0292/Carta 105	33	@7	code	7		e	agrees
+m0292/Carta 105	34	@3	code	3		t	agrees
+m0292/Carta 105	35	@y	code	y		a	agrees
+m0292/Carta 105	36	@20	code	20		l	agrees
+m0292/Carta 105	37	@7	code	7		e	agrees
+m0292/Carta 105	38	@m	code	m		n	agrees
+m0292/Carta 105	39	@3	code	3		t	agrees
+m0292/Carta 105	40	@15	code	15		o	agrees
+m0292/Passage 2a	0	@19	code	19		e	agrees
+m0292/Passage 2a	1	@18	code	18		m	agrees
+m0292/Passage 2a	2	@13	code	13		q	agrees
+m0292/Passage 2a	3	@26	code	26		u	agrees
+m0292/Passage 2a	4	@7	code	7		e	agrees
+m0292/Passage 2a	5	@4	code	4		s	agrees
+m0292/Passage 2a	6	@15	code	15			null-or-unaligned
+m0292/Passage 2a	7	@7	code	7		e	agrees
+m0292/Passage 2a	8	@m	code	m		n	agrees
+m0292/Passage 2a	9	@3	code	3		t	agrees
+m0292/Passage 2a	10	@12	code	12		r	agrees
+m0292/Passage 2a	11	@15	code	15		o	agrees
+m0292/Passage 2a	12	@26	code	26		u	agrees
+m0292/Passage 2a	13	@15	code	15		o	agrees
+m0292/Passage 2a	14	@55	code	55		p	agrees
+m0292/Passage 2a	15	@12	code	12		r	agrees
+m0292/Passage 2a	16	@8	code	8		i	agrees
+m0292/Passage 2a	17	@14	code	14		n	agrees
+m0292/Passage 2a	18	@6	code	6		c	conflict:p
+m0292/Passage 2a	19	@8	code	8		i	agrees
+m0292/Passage 2a	20	@55	code	55		p	agrees
+m0292/Passage 2a	21	@7	code	7		e	agrees
+m0293/Carta 106	0	@19	code	19		e	agrees
+m0293/Carta 106	1	@4	code	4		s	agrees
+m0293/Carta 106	2	@3	code	3		t	agrees
+m0293/Carta 106	3	@y	code	y		a	agrees
+m0293/Carta 106	4	@10	code	10		r	conflict:h
+m0293/Carta 106	5	@8	code	8		i	agrees
+m0293/Carta 106	6	@26	code	26		v	agrees
+m0293/Carta 106	7	@22	code	22		i	agrees
+m0293/Carta 106	8	@26	code	26		v	agrees
+m0293/Carta 106	9	@7	code	7		e	agrees
+m0293/Carta 106	10	@12	code	12		r	agrees
+m0293/Carta 106	11	em	clear			em	clear
+m0293/Carta 106	12	companhia	clear			companhia	clear
+m0293/Carta 106	13	@2	code	2		d	agrees
+m0293/Carta 106	14	@15	code	15		o	agrees
+m0293/Carta 106	15	@55	code	55		o	conflict:p
+m0293/Carta 106	16	@2	code	2		e	conflict:d
+m0293/Carta 106	17	@2	code	2		d	agrees
+m0293/Carta 106	18	@19	code	19		e	agrees
+m0293/Carta 106	19	@21	code	21		b	agrees
+m0293/Carta 106	20	@15	code	15		u	conflict:o
+m0293/Carta 106	21	@20	code	20		l	agrees
+m0293/Carta 106	22	@8	code	8		i	agrees
+m0293/Carta 106	23	@14	code	14		n	agrees
+m0293/Carta 106	24	@d	code	d		g	conflict:o
+m0293/Carta 106	25	@21	code	21		b	agrees
+m0293/Carta 106	26	@12	code	12		r	agrees
+m0293/Carta 106	27	@15	code	15		o	agrees
+m0293/Carta 106	28	@26	code	26		o	conflict:u
+m0293/Carta 106	29	@55	code	55		k	conflict:p
+m0293/Carta 106	30	@4	code	4		s	agrees
+m0293/Carta 106	31	@7	code	7		e	agrees
+m0293/Carta 106	32	@52	code	52		r	agrees
+m0293/Carta 106	33	@18	code	18		m	agrees
+m0293/Carta 106	34	@15	code	15		o	agrees
+m0293/Carta 106	35	@4	code	4		s	agrees
+m0293/Carta 106	36	@26	code	26		v	agrees
+m0293/Carta 106	37	@2	code	2		e	conflict:d
+m0293/Carta 106	38	@14	code	14		n	agrees
+m0293/Carta 106	39	@2	code	2		d	agrees
+m0293/Carta 106	40	@8	code	8		i	agrees
+m0293/Carta 106	41	@2	code	2		d	agrees
+m0293/Carta 106	42	@15	code	15		o	agrees
+m0293/Carta 106	43	@4	code	4		s	agrees
+m0293/Carta 107	0	@21	code	21		b	agrees
+m0293/Carta 107	1	@19	code	19		e	agrees
+m0293/Carta 107	2	@18	code	18		m	agrees
+m0293/Carta 107	3	@20	code	20		l	agrees
+m0293/Carta 107	4	@8	code	8		i	agrees
+m0293/Carta 107	5	@26	code	26		v	agrees
+m0293/Carta 107	6	@12	code	12		r	agrees
+m0293/Carta 107	7	@17	code	17		a	agrees
+m0293/Carta 107	8	@2	code	2		d	agrees
+m0293/Carta 107	9	@15	code	15		o	agrees
+m0293/Carta 107	10	@4	code	4		s	agrees
+m0293/Carta 107	11	@13	code	13		q	agrees
+m0293/Carta 107	12	@26	code	26		u	agrees
+m0293/Carta 107	13	@19	code	19		e	agrees
+m0293/Carta 107	14	@2	code	2		f	conflict:d
+m0293/Carta 107	15	@26	code	26		i	conflict:u
+m0293/Passage 2a	0	@19	code	19		e	agrees
+m0293/Passage 2a	1	@4	code	4		s	agrees
+m0293/Passage 2a	2	@3	code	3		t	agrees
+m0293/Passage 2a	3	@19	code	19		e	agrees
+m0293/Passage 2a	4	@26	code	26		v	agrees
+m0293/Passage 2a	5	@7	code	7		e	agrees
+m0293/Passage 2a	6	@20	code	20		l	agrees
+m0293/Passage 2a	7	@10	code	10		h	agrees
+m0293/Passage 2a	8	@17	code	17		a	agrees
+m0293/Passage 2a	9	@5	code	5		c	agrees
+m0293/Passage 2a	10	@15	code	15		o	agrees
+m0293/Passage 2a	11	@21	code	21		b	agrees
+m0293/Passage 2a	12	@c	code	c		u	agrees
+m0293/Passage 2a	13	@20	code	20		l	agrees
+m0293/Passage 2a	14	@8	code	8		i	agrees
+m0293/Passage 2a	15	@14	code	14		n	agrees
+m0293/Passage 2a	16	@21	code	21		b	agrees
+m0293/Passage 2a	17	@12	code	12		r	agrees
+m0293/Passage 2a	18	@c	code	c		o	conflict:u
+m0293/Passage 2a	19	@17	code	17		o	conflict:a
+m0293/Passage 2a	20	@10	code	10		k	conflict:h
+m0293/Passage 2a	21	@7	code	7		h	conflict:e
+m0293/Passage 2a	22	@m	code	m		n	agrees
+m0293/Passage 2a	23	@15	code	15		o	agrees
+m0293/Passage 2a	24	@4	code	4		s	agrees
+m0293/Passage 2a	25	@f	code	f		s	agrees
+m0293/Passage 2a	26	@25	code	25		o	agrees
+m0293/Passage 2a	27	@8	code	8		i	agrees
+m0293/Passage 2a	28	@14	code	14		n	agrees
+m0293/Passage 2a	29	@8	code	8		i	agrees
+m0293/Passage 2a	30	@18	code	18		m	agrees
+m0293/Passage 2a	31	@22	code	22		i	agrees
+m0293/Passage 2a	32	@e	code	e		g	agrees
+m0293/Passage 2a	33	@25	code	25		o	agrees
+m0294/Carta 110	0	@19	code	19		e	agrees
+m0294/Carta 110	1	@4	code	4		s	agrees
+m0294/Carta 110	2	@3	code	3		t	agrees
+m0294/Carta 110	3	@19	code	19		e	agrees
+m0294/Carta 110	4	@26	code	26		v	agrees
+m0294/Carta 110	5	@24	code	24		e	agrees
+m0294/Carta 110	6	@20	code	20		l	agrees
+m0294/Carta 110	7	@10	code	10		h	agrees
+m0294/Carta 110	8	@17	code	17		a	agrees
+m0294/Carta 110	9	@5	code	5		c	agrees
+m0294/Carta 110	10	@15	code	15		o	agrees
+m0294/Carta 110	11	@55	code	55		n	conflict:p
+m0294/Carta 110	12	@17	code	17			null-or-unaligned
+m0294/Carta 110	13	@18	code	18		o	conflict:m
+m0294/Carta 110	14	@12	code	12		r	agrees
+m0294/Carta 110	15	@19	code	19		e	agrees
+m0294/Carta 110	16	@4	code	4		s	agrees
+m0294/Carta 110	17	@55	code	55		p	agrees
+m0294/Carta 110	18	@15	code	15		o	agrees
+m0294/Carta 110	19	@55	code	55		n	conflict:p
+m0294/Carta 110	20	@x	code	x		d	agrees
+m0294/Carta 110	21	@7	code	7		e	agrees
+m0294/Carta 110	22	@12	code	12		r	agrees
+m0294/Carta 110	23	@18	code	18		m	agrees
+m0294/Carta 110	24	@7	code	7		e	agrees
+m0294/Carta 110	25	@16	code	16		f	agrees
+m0294/Carta 110	26	@15	code	15		o	agrees
+m0294/Carta 110	27	@e	code	e		g	agrees
+m0294/Carta 110	28	@7	code	7		e	agrees
+m0294/Carta 110	29	@2	code	2		d	agrees
+m0294/Carta 110	30	@7	code	7		e	agrees
+m0294/Carta 110	31	@18	code	18		m	agrees
+m0294/Carta 110	32	@8	code	8		i	agrees
+m0294/Carta 110	33	@18	code	18		m	agrees
+m0294/Carta 110	34	duvida	clear			devoest	clear
+m0294/Carta 110	35	vergonhar	clear			vergonha	clear
+m0294/Carta 110	36	@17	code	17			null-or-unaligned
+m0294/Carta 110	37	@4	code	4		s	agrees
+m0294/Carta 110	38	@26	code	26		u	agrees
+m0294/Carta 110	39	@y	code	y		a	agrees
+m0294/Carta 110	40	@18	code	18		m	agrees
+m0294/Carta 110	41	@7	code	7		e	agrees
+m0294/Carta 110	42	@14	code	14		n	agrees
+m0294/Carta 110	43	@3	code	3		t	agrees
+m0294/Carta 110	44	@8	code	8		i	agrees
+m0294/Carta 110	45	@12	code	12		r	agrees
+m0294/Carta 110	46	@y	code	y		a	agrees
+m0294/Passage 2a	0	@7	code	7		d	conflict:e
+m0294/Passage 2a	1	@19	code	19		e	agrees
+m0294/Passage 2a	2	@14	code	14		n	agrees
+m0294/Passage 2a	3	@15	code	15		o	agrees
+m0294/Passage 2a	4	@4	code	4		s	agrees
+m0294/Passage 2a	5	@18	code	18		m	agrees
+m0294/Passage 2a	6	@7	code	7		e	agrees
+m0294/Passage 2a	7	@3	code	3		t	agrees
+m0294/Passage 2a	8	@4	code	4		e	conflict:s
+m0294/Passage 2a	9	@12	code	12		r	agrees
+m0294/Passage 2a	10	tanto	clear			tanto	clear
+m0294/Passage 2a	11	adiante	clear			adiante	clear
+m0294/Passage 2a	12	@55	code	55		n	conflict:p
+m0294/Passage 2a	13	@y	code	y		a	agrees
+m0294/Passage 2a	14	@2	code	2		s	conflict:d
+m0294/Passage 2a	15	@2	code	2		d	agrees
+m0294/Passage 2a	16	@55	code	55		p	agrees
+m0294/Passage 2a	17	@14	code	14		n	agrees
+m0294/Passage 2a	18	@2	code	2		d	agrees
+m0294/Passage 2a	19	@19	code	19		e	agrees
+m0294/Passage 2a	20	@14	code	14		n	agrees
+m0294/Passage 2a	21	@5	code	5		c	agrees
+m0294/Passage 2a	22	@8	code	8		i	agrees
+m0294/Passage 2a	23	@17	code	17		a	agrees
+m0294/Passage 2a	24	@2	code	2		d	agrees
+m0294/Passage 2a	25	@19	code	19		a	conflict:e
+m0294/Passage 2a	26	@107	code	107		r	single

@@ -1839,3 +1839,183 @@ shuffled noise on its own -- if anything this narrows where the letter's residua
 No network access; no hosts contacted (all work from `_anchors.json`, `_pairs.json`,
 `ciphertext_appendix.tsv`, `plaintext_appendix.tsv`, `key.tsv`, `tools/data/pt17`+`pt18` already on disk). No
 subagents. Cost: see the lane ledger.
+
+## AX2-BRO4: thin codes by chunk alignment (26 Sept 2026, LANE AX2)
+
+Worker AX2-BRO4 (Sonnet), job `.claude/briefs/runs/2026-09-26-lane-ax2-bro4.md`: the NEAR.md-named next
+step for letter 134's 69 `cannot tell` occurrences of the six thin codes -- AX-BRO3's span check needed a
+code span's letter-count to exactly equal its token-count, and 34 of 38 appendix entries drift (the
+appendix editor's own abbreviation habit, not a transcription error). `tools/interlinear_align.py`
+(built for Thurloe's printed interlinear pairs, LEARN-2026-09-26-0058) does dynamic-programming hard-EM
+that lets a cipher group take a flexible chunk of the plain text, iterating to convergence -- exactly the
+tool this drift calls for. Parent: LANE AX2 orchestrator (session_016sbTkVT8HGNJ6JGjJNmCuM). Intake
+gate: `python3 tools/intake_gate_check.py antt-msliv0638-brochado-1712` -> `partial (line 1) --
+edition/page or full-text-search citation found within 6 lines`, exit 0.
+
+### Step 0: this cipher is a single-letter homophonic substitution, not a syllable/word dictionary code
+
+Before extending the tool, checked whether Brochado's codebook actually needs the "code can stand for a
+syllable or a word" flexibility the brief's own framing assumes: every one of key.tsv's 41 rows has a
+one-character `value` (verified directly, `scripts/18_thin_align_gate.py`'s own check: "codes with a
+non-single-letter value: 0"). So there is only one class here (single-letter codes); "per class (single
+letter / syllable / word codes)" collapses to that one class for this target, reported as such rather
+than inventing subclasses that don't exist in the data. The drift AX-BRO3 hit is caused by the appendix's
+own abbreviation habit shortening the deciffrada gloss relative to the coded letters, not by any code
+standing for more than one letter.
+
+### Step 1: tool option -- `--code-prefix` (26 Sept 2026)
+
+`tools/interlinear_align.py` assumed a Thurloe-style codebook: numeral groups with a floor threshold
+(below-floor = one letter, at/above = a name/word), OCR digit-confusion repair, clear words interspersed
+via `--clear-consumes`. Brochado's codebook mixes digit codes (2, 3, ... 55, 310, 400) with single-letter
+alpha codes (a, b, c, ..., z) that are NOT ordered by a numeric floor, and has no word/name-code class at
+all (Step 0). Added `--code-prefix PFX`: a token in `cipher_raw` starting with the prefix is a codebook
+symbol (kind `code`, value = the string after the prefix, always floor -- 0 or 1 plain letters, since
+there is no word-code class in this mode); anything else is `clear`, unchanged from before. Threaded
+through `classify_token`, `align_pair` (generalised the `kind == 'num'` prior-lookup and counting to
+`kind in ('num', 'code')`), `run_align`, `token_rows`, `cmd_align`, and the CLI parser; `load_prior`
+gained a `code_mode` flag so `--prior` can seed non-digit codes too (ignoring the floor comparison, since
+every code is floor in this mode) -- both **only take effect when `--code-prefix` is passed**; the
+existing test (`tools/tests/test_interlinear_align.py`, Thurloe-shaped pairs, `--floor`/`--clear-consumes`/
+`--prior`) still passes unmodified, confirming default output is unchanged. Added a fourth test case
+(mixed digit/alpha homophonic codebook, one clear word, a masked code recovered from its two contexts) --
+`python3 tools/tests/test_interlinear_align.py` -> `ok`.
+
+### Step 2: PAIRS.tsv from the appendix's own anchors (`scripts/17_build_pairs.py`, new)
+
+One row per appendix entry, built from `_anchors.json` (AX-BRO3's own anchor-finding, never re-touched):
+`plain_raw` is the WHOLE deciffrada gloss for the entry, not a per-run truncated span -- letting the DP
+see the full sentence is exactly what absorbs the abbreviation-driven length drift a flat per-span count
+cannot. `cipher_raw` flattens each entry's merged (PLAIN word / CODE run) segments into whitespace tokens,
+each CODE token prefixed `@`, its own uncertain-glyph marker (`9±` vs `9`) stripped to the base code
+identity first (matching `16_thin_attest.py`'s own `code_val()` convention -- otherwise the aligner would
+treat `9` and `9±` as two different codes). 38 entries -> `align/pairs.tsv`: 1736 code tokens, 135
+literal plain-word tokens.
+
+### Step 3: known-answer control FIRST (`scripts/18_thin_align_gate.py`, new) -- gate written here before reading any of the 69
+
+Per this job's brief and CLAUDE.md rule 3: mask each key.tsv code with >=5 observations (20 of the 41
+codes qualify, all single-letter -- Step 0), one at a time, its value hidden from `--prior` entirely;
+align the real `align/pairs.tsv` with every OTHER code (including the six thin codes' own current
+values) seeded; check whether the converged value for the masked code equals key.tsv's. Control: the same
+procedure on a shuffled-gloss version of `align/pairs.tsv` (`plain_raw` permuted across entries, 3 seeds,
+verified no entry keeps its own gloss) -- this control can genuinely fail differently from the real run
+(the manipulation, wrong plain text, is not orthogonal to what the statistic measures, unlike the two
+CLAUDE.md rule-3 non-tests from 26 Sept), and it does:
+
+```
+real gloss: 20/20 = 1.000 (every one of the 20 known codes recovered exactly, from context alone)
+shuffled gloss (3 seeds): 6/20, 8/20, 7/20 -> mean 0.350 (range 0.300-0.400)
+GATE: real 1.000 vs shuffled mean 0.350, margin 0.650 (need >=0.80 real AND >=0.30 margin) -> MET
+```
+
+Full per-code table: `align/gate_result.tsv`. Gate MET by a wide margin -- the alignment is reading the
+real correspondence between cipher and gloss, not producing agreement by construction.
+
+### Step 4: reading the 69 (`scripts/18_thin_align_resolve.py`, new)
+
+First attempt masked all six thin codes simultaneously (hiding x, z, d, f, 16, 9 together) -- rejected
+after checking its own aggregate key: entry m0290/Passage 2a alone carries several masked codes close
+together, and the combined run's own aggregate for `z` lost its two solid pre-existing C-grade
+observations (m0280/Carta 13, exact anchor matches) out of its counts entirely, a failure mode the
+one-at-a-time gate run never produced for any of the 20 known codes. **Redone one code at a time**,
+exactly matching the validated gate protocol: for each of the six thin codes, mask only that code (every
+other thin code keeps its own key.tsv value seeded), align, read the per-occurrence chunk for each of
+that code's 69 (72 counting 3 already-key-built ones re-examined for free) `cannot tell` rows from
+`thin_codes_attest.tsv`. Occurrence matching (which `out_align.tsv` row is the Nth `cannot tell` row for
+a given code+entry) is derived from `_anchors.json` directly, not assumed, because a code's `±`-marked
+occurrences count toward the aligner's identity but were excluded from `16_thin_attest.py`'s own bare-
+string `TARGET` match -- checked this explicitly (`m0281/Carta 15`'s `z`/`z±` pair) before trusting the
+positional correspondence.
+
+**Result, the 69-population only (new_occurrence=yes, cannot tell):**
+
+```
+agree with key.tsv:        46 / 69  (67%)
+differ from key.tsv:       19 / 69  (28%)
+still undecidable:          4 / 69  (6%)  -- x (m0289/Carta 92, m0291/Passage 3a), d and f (both m0290/Passage 2a)
+```
+
+(3 more already-in-key.tsv-build `cannot tell` rows outside the 69 population: 2 agree, 1 differ.)
+
+**Rule-3 key-change bar (>=2 independent new occurrences agreeing on a different value) -- met by the
+raw count for three codes, but not acted on:**
+
+```
+z  -> e: 2 occurrences (m0281/Carta 15, m0289/Carta 92)   [current: r, grade C]
+f  -> z: 2 occurrences (m0287/Carta 78, m0287/Carta 79)   [current: s, grade C]
+16 -> s: 2 occurrences (m0288/Carta 81, m0289/Carta 92)    [current: f, grade M]
+```
+
+None of these are acted on as a key change, for reasons checked against each code's own full
+one-code-masked run (`align/key_mask_*.tsv`), not just the raw >=2 count:
+
+- **z**: the full run (all 9 occurrences, including the two original m0280/Carta 13 exact-anchor
+  observations) is a genuine **tie**, `e:3` vs `r:3` (`top_of()`'s alphabetical tie-break displays `e` as
+  the nominal top, but `r` has the identical count -- `align/key_mask_z.tsv`). A tied S-grade alignment
+  signal does not outweigh a C-grade (known-plaintext) observation; this is the one candidate worth a
+  real image hand-check (named as the next step, not resolved here).
+- **f**: `s` remains overwhelmingly dominant in the full masked run (19/28 agree); the two `z` occurrences
+  are two out of seven *different* singleton-or-pair alternates (a, c, m, p, r, t, z) -- scattered noise
+  around an already-thin code (n=3, split 2/1 in key.tsv), not a competing signal.
+- **16**: `f` remains dominant (11/12 agree); the two `s` occurrences are the only alternate at all, but
+  against 11 agreeing occurrences this is not close.
+
+`key.tsv` is **byte-identical to before this job** (`git status` confirms). Per rule 7,
+`python3 tools/decode_key.py ciphers/antt-msliv0638-brochado-1712 --check` -> `reading up to date`.
+
+### Step 5: re-score letter 134
+
+Key unchanged, so re-running `scripts/15_judge_bucket.py` (unmodified) reproduces AX-BRO3's own numbers
+exactly, confirmed rather than assumed:
+
+```
+letter 134: score_pt17=-1.443 (bucket pt17 percentile: 5.0 -> 5.0, unchanged)
+letter 134: score_pt18=-1.422 (bucket pt18 percentile: 5.0 -> 5.0, unchanged)
+```
+
+`judge_bucket.tsv` regenerated byte-identical (`git diff` empty).
+
+### Status
+
+Stays **`partial`**. No key change, no new reading, no novelty words. This pass adds a validated,
+much-more-granular per-occurrence check of the 69 (46 agree / 19 differ / 4 undecidable) in place of
+AX-BRO3's binary "resolved from context or not" split, and rules out three superficially-qualifying key
+changes by checking each against its own full-corpus evidence rather than the raw >=2 count alone. Letter
+134's own bucket standing (5th percentile, both corpora) is unchanged; nothing here moves it, but nothing
+here strengthens the case that its thin-code tokens are mis-keyed either -- two-thirds of the previously
+`cannot tell` occurrences now agree with the existing key.
+
+### Not done this pass, next steps
+
+- **z is the one live candidate for a key change**, but only an image hand-check can break its tied `e`
+  vs `r` alignment signal -- crop `images/full_PT-TT-MSLIV-0638_m0281.jpg.jpg` (Carta 15) and `_m0289.jpg`
+  (Carta 92) around the two new `e`-favoring occurrences with `tools/iiif_lines.py --image <leaf> --out
+  <dir> --debug` and read them against a Portuguese reader's word-guess.
+- The 4 still-undecidable occurrences (x: m0289/Carta 92, m0291/Passage 3a; d and f: both m0290/Passage
+  2a) did not get an image pass this job: leaf images are on disk
+  (`images/full_PT-TT-MSLIV-0638_m0289/90/91.jpg.jpg`) but locating each occurrence's specific line within
+  the leaf (no per-entry region manifest exists) was judged not worth the box's remaining time against a
+  population of 4 -- named here as the concrete next step rather than rushed.
+- `align/align_mask_*.tsv` / `key_mask_*.tsv` (6 pairs, one per thin code) are the full per-occurrence
+  record of this pass's alignment, kept for any future audit of the z tie or the f/16 noise.
+- Proposed NEAR.md row text (not written to NEAR.md by this worker, per brief -- the parent/orchestrator
+  does):
+
+  | antt-msliv0638-brochado-1712 letter 134 (dictionary code, 70 letters) | ... AX2-BRO4 (26 Sept, chunk
+  alignment, `tools/interlinear_align.py --code-prefix`): known-answer control on 20 codes with >=5 obs,
+  real 1.000 vs shuffled-gloss mean 0.350 (3 seeds), gate MET; resolved 46/69 agree, 19/69 differ, 4/69
+  still undecidable of the previously cannot-tell thin-code occurrences; three codes (z, f, 16) show >=2
+  new occurrences on an alternate value but none is acted on -- z's own full-corpus signal is a tied e/r
+  (3/3), f and 16's current values remain dominant against scattered noise; key.tsv unchanged, letter 134
+  bucket percentile unchanged (pt17 5.0, pt18 5.0). | Image hand-check of the z tie (Carta 15/Carta 92)
+  and the 4 still-undecidable occurrences (x x2, d, f, all on m0289-91) is the concrete next step. |
+  LANE AX2 | none | 26 Sept 2026 |
+
+### Host report
+
+No network access; no hosts contacted (all work from `_anchors.json`, `ciphertext_appendix.tsv`,
+`plaintext_appendix.tsv`, `key.tsv`, `thin_codes_attest.tsv` already on disk). `pip install numpy pillow
+scipy` (local package install, not a network host in the good-citizen sense) to make `tools/iiif_lines.py`
+importable for a possible image pass; not used this job (Step 5's "not done" note). No subagents. Cost:
+see the lane ledger.

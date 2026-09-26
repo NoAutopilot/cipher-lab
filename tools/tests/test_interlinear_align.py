@@ -39,6 +39,21 @@ def main():
     open(kp, 'w').write('code\tvalue\n16\tq\n36\tu\n81\te\n150\tzzz\n')
     key2 = run(pairs, '--floor', '121', '--clear-consumes', '--prior', kp)
     assert key2['150']['meaning'] == 'contejean', key2['150']
+
+    # --code-prefix (26 Sept 2026, AX2-BRO4): a homophonic single-letter codebook mixing digit and
+    # alpha codes, one clear word thrown in. Code 'x' (masked out of --prior) recovers 'c' from the
+    # two sentences that both start with 'c', via the digit codes seeded around it.
+    cp_pairs = [
+        ['1', 'certo el', '1', '@x @2 @3 @1 @4 el'],
+        ['2', 'corte', '2', '@x @4 @3 @1 @2'],
+        ['3', 'trote', '3', '@1 @3 @4 @1 @2'],
+    ]
+    kp2 = os.path.join(tempfile.mkdtemp(), 'k.tsv')
+    open(kp2, 'w').write('code\tvalue\n1\tt\n2\te\n3\tr\n4\to\n')
+    key3 = run(cp_pairs, '--code-prefix', '@', '--clear-consumes', '--prior', kp2)
+    assert key3['x']['meaning'] == 'c', key3['x']
+    assert key3['1']['meaning'] == 't', key3['1']
+    assert key3['4']['meaning'] == 'o', key3['4']
     print('ok')
 
 

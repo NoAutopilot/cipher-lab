@@ -1,0 +1,23 @@
+code	truth	recovered	match	n	agree
+2	d	d	True	79	54
+3	t	t	True	61	54
+4	s	s	True	117	100
+5	c	c	True	58	47
+7	e	e	True	106	87
+8	i	i	True	83	73
+10	h	h	True	39	33
+12	r	r	True	89	82
+14	n	n	True	58	53
+15	o	o	True	141	128
+17	a	a	True	85	77
+18	m	m	True	75	49
+19	e	e	True	89	84
+20	l	l	True	34	30
+26	u	u	True	65	57
+55	p	p	True	40	33
+c	u	u	True	34	22
+e	g	g	True	14	11
+m	n	n	True	31	29
+y	a	a	True	70	53
+
+summary	real_rate	1.0	shuffled_mean	0.3499999999999999	margin	0.6500000000000001	gate	True

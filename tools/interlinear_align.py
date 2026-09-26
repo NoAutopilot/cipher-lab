@@ -24,7 +24,7 @@ alignment TSV records that as a repair.
 
     python3 tools/interlinear_align.py pairs DJVU FIRST LAST OUT_PAIRS.tsv
     python3 tools/interlinear_align.py align PAIRS.tsv OUT_ALIGN.tsv OUT_KEY.tsv [--floor N] [--clear-consumes]
-            [--prior KEY.tsv]
+            [--prior KEY.tsv] [--code-prefix PFX]
 
 --floor N: groups below N take at most one letter (default 100, Thurloe; 121 for the
 Nassau 1573-74 tables, where 1-120 are letters). --clear-consumes (26 Sept 2026, AX-COMP):
@@ -35,6 +35,16 @@ letters), rather than Thurloe's interlinear lines, where the clear word is not r
 known table (2 counts each), so long spans between clear anchors do not drift; the codes at or
 above --floor (names, words, nulls) are never seeded and take their meaning from the plain text
 alone. Counts for the seeded codes are then not independent evidence for that table.
+
+--code-prefix PFX (26 Sept 2026, AX2-BRO4): a codebook whose codes are not numerals-with-a-floor
+but an arbitrary symbol set (digits and single letters mixed, e.g. Brochado's homophonic cipher,
+one code = one plaintext letter always, no word/name codes at all). Mark every CODE token in
+cipher_raw with the prefix (e.g. "@2", "@x", "@16") when building PAIRS.tsv; a token without the
+prefix is a literal clear word already printed in the cipher line (Portuguese abbreviations,
+--clear-consumes applies to these same as Thurloe's). Every prefixed code is always floor (0 or 1
+plain letters, like a below-floor Thurloe numeral) regardless of its value -- there is no
+above-floor word-code class in this mode. --prior with --code-prefix seeds every code (not only
+digit-named ones) whose meaning is a single letter, ignoring --floor entirely (moot in this mode).
 """
 import csv
 import itertools
@@ -93,9 +103,15 @@ def cmd_pairs(djvu, first, last, out):
     print('%d pairs' % len(rows))
 
 
-def classify_token(tok):
-    """-> (kind, value): kind num (value int), clear (parenthesised numeral or a
-    word in clear), doubtful (value None)."""
+def classify_token(tok, code_prefix=None):
+    """-> (kind, value): kind num (value int), code (value str, --code-prefix mode: a
+    non-numeral codebook symbol, always floor -- see run_align), clear (parenthesised
+    numeral, a word in clear, or any token not marked as a code in --code-prefix mode),
+    doubtful (value None)."""
+    if code_prefix is not None:
+        if tok.startswith(code_prefix):
+            return 'code', tok[len(code_prefix):]
+        return 'clear', None
     core = tok.strip('.,;:\'"')
     if core.startswith('(') or core.endswith(')'):
         inner = core.strip('()').strip('.,;:')
@@ -171,6 +187,8 @@ def align_pair(toks, letters, starts, ends, floor, prior, clear_words=None):
                 lens = sorted({0, max(1, len(cw) - 1), len(cw), len(cw) + 1})
             elif kind == 'clear':
                 lens = [0]
+            elif kind == 'code':
+                lens = [0, 1]  # always floor: --code-prefix mode has no word/name codes
             elif kind == 'num' and val < floor:
                 lens = [0, 1]
             else:
@@ -189,7 +207,7 @@ def align_pair(toks, letters, starts, ends, floor, prior, clear_words=None):
                     ch = letters[j:j + ln]
                     sc += 1.0 if starts[j] else 0.0
                     sc += 1.0 if ends[j + ln - 1] else 0.0
-                    if kind == 'num' and prior.get(val):
+                    if kind in ('num', 'code') and prior.get(val):
                         cnt = prior[val]
                         tot = sum(cnt.values())
                         hit = cnt.get(fold(ch), 0)
@@ -219,24 +237,30 @@ def load_pairs(path):
         return list(csv.DictReader(f, delimiter='\t'))
 
 
-def load_prior(path, floor):
+def load_prior(path, floor, code_mode=False):
     """--prior KEY.tsv: seed counts (2 each) from a value->meaning key (columns code|value, value|meaning),
-    for codes below floor only; letter values only, so a name code is never seeded."""
+    for codes below floor only; letter values only, so a name code is never seeded.
+    code_mode (--code-prefix): every code is floor by construction (align_pair's kind=='code' branch),
+    so seed any code (digit or not) with a single-letter meaning, ignoring the floor comparison."""
     prior = defaultdict(Counter)
     with open(path, encoding='utf-8') as f:
         for r in csv.DictReader(f, delimiter='\t'):
             code = r.get('code') or r.get('value')
             mean = r.get('meaning') if 'meaning' in r else r.get('value')
-            if code and code.isdigit() and int(code) < floor and mean and mean.isalpha() and len(mean) == 1:
+            if not (code and mean and mean.isalpha() and len(mean) == 1):
+                continue
+            if code_mode:
+                prior[code.rstrip('±')][fold(mean.lower())] += 2
+            elif code.isdigit() and int(code) < floor:
                 prior[int(code)][fold(mean.lower())] += 2
     return prior
 
 
-def run_align(pairs, floor=100, iters=6, clear_consumes=False, prior=None):
+def run_align(pairs, floor=100, iters=6, clear_consumes=False, prior=None, code_prefix=None):
     prepared = []
     for p in pairs:
         raw = p['cipher_raw'].split()
-        toks = [classify_token(t) for t in raw]
+        toks = [classify_token(t, code_prefix) for t in raw]
         letters, starts, ends = plain_letters(p['plain_raw'])
         cws = None
         if clear_consumes:
@@ -251,7 +275,7 @@ def run_align(pairs, floor=100, iters=6, clear_consumes=False, prior=None):
             chunks = align_pair(toks, letters, starts, ends, floor, prior, cws)
             results.append(chunks)
             for (kind, val), c in zip(toks, chunks):
-                if kind == 'num' and c and c[1] > c[0]:
+                if kind in ('num', 'code') and c and c[1] > c[0]:
                     counts[val][fold(letters[c[0]:c[1]])] += 1
                     shown[(val, fold(letters[c[0]:c[1]]))][letters[c[0]:c[1]]] += 1
         prior = counts
@@ -279,7 +303,7 @@ def token_rows(prepared, results, counts, shown):
             bstart = bool(c and c[1] > c[0] and starts[c[0]])
             bend = bool(c and c[1] > c[0] and ends[c[1] - 1])
             value, repair, status = '', '', ''
-            if kind == 'num':
+            if kind in ('num', 'code'):
                 value = str(val)
                 cnt = counts.get(val, Counter())
                 top, topn = top_of(cnt)
@@ -307,10 +331,10 @@ def token_rows(prepared, results, counts, shown):
     return rows
 
 
-def cmd_align(pairs_path, out_align, out_key, floor=100, clear_consumes=False, prior_path=None):
-    prior = load_prior(prior_path, floor) if prior_path else None
+def cmd_align(pairs_path, out_align, out_key, floor=100, clear_consumes=False, prior_path=None, code_prefix=None):
+    prior = load_prior(prior_path, floor, code_mode=code_prefix is not None) if prior_path else None
     prepared, results, counts, shown = run_align(load_pairs(pairs_path), floor, clear_consumes=clear_consumes,
-                                                 prior=prior)
+                                                 prior=prior, code_prefix=code_prefix)
     rows = token_rows(prepared, results, counts, shown)
     with open(out_align, 'w', encoding='utf-8', newline='') as f:
         w = csv.writer(f, delimiter='\t', lineterminator='\n')
@@ -346,6 +370,11 @@ if __name__ == '__main__':
             del a[k:k + 2]
         cc = '--clear-consumes' in a
         a = [x for x in a if x != '--clear-consumes']
-        cmd_align(a[1], a[2], a[3], floor, cc, prior_path)
+        code_prefix = None
+        if '--code-prefix' in a:
+            k = a.index('--code-prefix')
+            code_prefix = a[k + 1]
+            del a[k:k + 2]
+        cmd_align(a[1], a[2], a[3], floor, cc, prior_path, code_prefix)
     else:
         sys.exit(__doc__)
