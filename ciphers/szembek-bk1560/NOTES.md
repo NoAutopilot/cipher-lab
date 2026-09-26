@@ -80,3 +80,28 @@ code-value -> Latin-word key table, grade C (from the manuscript's own apparent 
 cryptanalysis), then check internal consistency (does the same code always get the same glossed word wherever it
 recurs across the three leaves? a real key must; log the rate). This is "the same letter['s own] gloss" per
 CLAUDE.md's lead-classes-beat-queue-rank ordering (an interlinear gloss ranks above cryptanalysis) -- see spec.
+
+## Leaf 66 crop step (bSZL66, 26 Sept 2026)
+Native leaf: `343124_List_zaszyfrowany.zip` (source zip, kept on disk) -> `066_0001.djvu` decoded once with
+`ddjvu -format=tiff` then PIL to PNG at native 3354x4185 (scratchpad only, not committed; too big for the 30 MB
+folder budget and not needed after crops are cut).
+Crop command run (mandatory step, pasted before transcription):
+```
+python3 tools/iiif_lines.py --image <native 066_0001 PNG> --out ciphers/szembek-bk1560/leaf66/crops \
+  --prefix f66 --distance 140 --top-margin 150 --debug
+```
+Default `--distance` (63, 0.7x the autocorrelation pitch 91) over-segmented into 24 bands: the interlinear gloss
+words are sparse enough that the row ink-profile often finds a second local maximum in the gap above a cipher
+line (a lone gloss word) as its own "line", roughly 70-90 px from the cipher line's own peak, alternating with
+true baseline-to-baseline gaps of 160-220 px -- checked against the debug overlay, where several blue centre
+lines fell in pairs 70-90 px apart. `--distance 140` (about the true line pitch) merges each such pair back into
+one band per physical cipher line: 20 bands, matching an eye count of the leaf's ~19-20 written lines. The
+first band still clipped the very first gloss word ("Detractor", sitting in the top margin above line 1's
+cipher, with no line above it to donate band height) even after that -- native-pixel check on a 0-500 crop
+placed "Detractor" at y~190-300, past the plain band-1 top edge of 309. `--top-margin 150` (documented in the
+tool's own docstring for exactly this) shifts every band's top edge up by 150px; band 1 then starts at 160,
+comfortably including "Detractor" with margin, and the extra 150px at the top of every other band is just
+harmless repeated context from the line above (checked on f66_L02/L03: the tail of the previous line's cipher
+group appears at the very top of the next crop, not confused with the current line's own gloss). Verified against
+the debug overlay (`f66_lines_debug.jpg`) and three crops (L01, L02, L03) by eye before transcribing further.
+20 bands x 2 width-segments (line width 3354 > the 2400px max) = 40 crop files, `f66_L<NN>_s{1,2}.jpg`.
