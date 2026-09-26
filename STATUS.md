@@ -90,21 +90,34 @@ identified, the catalogue's date and senders corrected. The "first verified N3" 
 Orange 1572 detector candidate also fell (partial decipherment printed 1842). Zero unique solves today; two
 over-claims prevented by the gates before anything left the repository.
 
-## LANE NX handoff (session_01RDXRYmATas1Xy6K1Jjwtvo), 26 September 2026, from 08:44 UTC (live)
+## LANE NX handoff (session_01RDXRYmATas1Xy6K1Jjwtvo), 26 September 2026, from 08:44 UTC (live; updated 09:33)
 
 Brief .claude/briefs/runs/2026-09-26-lane-nx-orchestrator.md; COMMON 2026-09-26-lane-ax-COMMON.md (reused); queue from
 SCOUT-OWN-2026-09-26.md (the 1593 Nevers key-no.60 pool stays closed: palaeography block since R4/R5).
 
-**Live workers (spawned 08:48, Sonnet):**
-| Job | Session | Target | Box / alarm |
-|---|---|---|---|
-| NX-LAU | session_01KM1yvBWymi84PUbaHeEvs9 | fr3625-lauriere-1593: interlinear_align on no.10's 7 glossed runs, leave-one-out + shuffled-pairing controls, apply to no.55 | 100 min / USD 12 |
-| NX-MOR | session_01GoPVNNoAE28rFnwcq3kWge | rah-morillo-1817 items 2/3: RAH images, is the "adjunta clave" on the leaf, item 3 cipher present | 45 min / USD 5 |
-| NX-E318 | session_012MjCpQPc3C9nWy3TX8ZHYJ | esp318-sicilia-1503 (new): check-solved (Bergenroth Cal. Spain i, Bourdeau latest commit) + crops | 90 min / USD 10 |
-| NX-WVO1109 | session_01YaYUDGQ7wBaU21uDK3Zezg | wvo-hessen-1564 (new): check-solved + does sibling 1107 carry a decipherment | 60 min / USD 6 |
-| NX-3151N33 | session_016xBACbT2Vtixf16PadGmZb | fr3151-noailles-1558 (new): check-solved + leaf view of the marginal gloss | 50 min / USD 5 |
+**Round 1 (08:48-09:14, 5 workers, 25.66 USD, all ledgered and archived):**
+- fr3625-lauriere-1593 (NX-LAU): sibling no.10's seven glossed runs too few to train the alignment -- known-answer 0.200 vs
+  gate 0.60 on 15 tokens, CONTROL BELOW GATE; key not applied; stays open (Bourdeau's 19/86 stands).
+- rah-morillo-1817 (NX-MOR): item 2's key table is not on the copybook leaf (described only: numeric letter values).
+  Item 3 (Herrera to Morillo, 7 Nov 1820) carries about 21 numeral groups WITH an interlinear period decipherment on the leaf.
+  NOTES.md line 1 set to the single word `partial` (rule 5); per-item statuses on line 3.
+- esp318-sicilia-1503 (NX-E318, new folder): open; Bergenroth Cal. Spain i + Supplement grepped, no entry. HELD: Bourdeau's
+  own Next step 1 is this very letter with the same Gran-cifra hypothesis and he holds the images; not transcribing here
+  while his folder is live. Revisit only if his repo goes quiet or he reads it (then compare).
+- wvo-hessen-1564 (NX-WVO1109, new folder): open; 1109 is Orange to Hessen with a cipher enclosure (about 16 lines), 1107 is
+  clear (Groen t.I XCI). Sign repertoire resembles willem-van-hessen-1567 no.174's.
+- fr3151-noailles-1558 (NX-3151N33, new folder): open; addressee Cardinal de Lorraine; three cipher blocks (about 200-230
+  signs), each with a period marginal gloss (crib). QUEUE G10 updated.
 
-Intake gate fr3625-lauriere-1593 (08:45): exit 0. No readings yet; nothing for LANE V9.
+**Round 2 live (spawned 09:31, Sonnet):**
+| Job | Session | Task | Box / alarm |
+|---|---|---|---|
+| NX-MOR2 | session_01DExKxBsogHJXg2WZujdoyP | Morillo item 3: t.4 edition check, transcribe block + gloss, key_5186 (H), consistency + shuffle control, decode --check | 60 min / USD 6 |
+| NX-3151G | session_01CEwuUx2ebznjFucmfWmQVS | Noailles: crops, 2 passes x 3 blocks, gloss alignment, leave-one-block-out control, decode if gate met | 100 min / USD 12 |
+| NX-WVO174 | session_012H1Qv3x7FgVgU4LUuv2SwN | 1109 transcribed in 174's sign names; coverage gate + 20 value-shuffle control under key_174 | 75 min / USD 8 |
+| NX-LAU2 | session_014HFYpG9945vWaTyqe3996e | desk search for more glossed Lauriere letters / a Nevers key-list entry | 45 min / USD 5 |
+
+No reading ready for LANE V9 yet.
 
 ## LANE AX2 handoff (session_016sbTkVT8HGNJ6JGjJNmCuM), 26 September 2026, from 05:14 UTC (live)
 
