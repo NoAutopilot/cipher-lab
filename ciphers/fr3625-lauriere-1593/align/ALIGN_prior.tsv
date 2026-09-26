@@ -1,0 +1,110 @@
+cipher_line	idx	raw	kind	value	repair	plain_chunk	status
+R1	0	100	num	100		l	single
+R1	1	101	num	101		e	single
+R1	2	102	num	102		p	single
+R1	3	103	num	103		ape	single
+R1	4	104	num	104		traitera	single-segment
+R1	5	105	num	105		avant	single-segment
+R1	6	106	num	106		que	conflict:n
+R1	7	107	num	107		le	single-segment
+R1	8	108	num	108		roy	single-segment
+R1	9	109	num	109		soit	conflict:c
+R1	10	110	num	110		catholique	single-segment
+R2	0	111	num	111		n	single
+R2	1	112	num	112		o	single
+R2	2	113	num	113		u	single
+R2	3	100	num	100		s	conflict:l
+R2	4	114	num	114		a	single
+R2	5	115	num	115		v	single
+R2	6	116	num	116		i	single
+R2	7	117	num	117		o	single
+R2	8	106	num	106		n	single
+R2	9	118	num	118		s	single
+R2	10	119	num	119		pris	single-segment
+R2	11	106	num	106		parole	conflict:n
+R2	12	120	num	120		de	single-segment
+R2	13	107	num	107		luy	conflict:le
+R2	14	121	num	121		quaussitost	single-segment
+R2	15	122	num	122		que	single-segment
+R2	16	123	num	123		sa	single-segment
+R2	17	124	num	124		majest	single-segment
+R2	18	125	num	125		auroit	single-segment
+R2	19	126	num	126		est	single-segment
+R2	20	127	num	127		a	single-segment
+R2	21	128	num	128		la	single-segment
+R2	22	129	num	129		messe	single-segment
+R2	23	122	num	122		quil	conflict:que
+R2	24	130	num	130		traicteroit	single-segment
+R2	25	131	num	131		sans	single-segment
+R3	0	132	num	132		attendre	agrees
+R3	1	133	num	133		la	single-segment
+R3	2	134	num	134		volont	agrees
+R3	3	135	num	135		du	agrees
+R3	4	136	num	136		pape	agrees
+R4	0	137	num	137		sur	single-segment
+R4	1	138	num	138		la	single-segment
+R4	2	106	num	106		response	conflict:n
+R4	3	139	num	139		qua	single-segment
+R4	4	140	num	140		eue	single-segment
+R4	5	141	num	141		de	single-segment
+R4	6	142	num	142		laliguea	single-segment
+R5	0	143	num	143		aucun	single-segment
+R5	1	144	num	144		faut	single-segment
+R5	2	145	num	145		avec	single-segment
+R5	3	146	num	146		nostre	single-segment
+R5	4	147	num	147		confiance	single-segment
+R5	5	148	num	148		de	single-segment
+R5	6	149	num	149		ne	conflict:autre
+R5	7	150	num	150		pouvoir	single-segment
+R5	8	151	num	151		recognoistre	single-segment
+R5	9	116	num	116		le	conflict:i
+R5	10	152	num	152		roy	single-segment
+R5	11	132	num	132		catholique	conflict:attendre
+R5	12	153	num	153		qui	single-segment
+R5	13	107	num	107		ne	conflict:le
+R5	14	106	num	106		viendroient	conflict:n
+R5	15	154	num	154		jamais	single-segment
+R5	16	155	num	155		a	single-segment
+R5	17	156	num	156		cest	single-segment
+R5	18	157	num	157		terme	single-segment
+R5	19	158	num	158		que	single-segment
+R5	20	159	num	159		neussions	conflict:e
+R5	21	160	num	160		la	single-segment
+R5	22	134	num	134		volont	agrees
+R5	23	135	num	135		du	agrees
+R5	24	136	num	136		pape	agrees
+R6	0	161	num	161			null-or-unaligned
+R6	1	106	num	106			null-or-unaligned
+R6	2	162	num	162			null-or-unaligned
+R6	3	163	num	163			null-or-unaligned
+R6	4	164	num	164			null-or-unaligned
+R6	5	165	num	165			null-or-unaligned
+R6	6	166	num	166			null-or-unaligned
+R6	7	167	num	167			null-or-unaligned
+R6	8	168	num	168			null-or-unaligned
+R6	9	169	num	169			null-or-unaligned
+R6	10	170	num	170			null-or-unaligned
+R6	11	171	num	171			null-or-unaligned
+R6	12	172	num	172			null-or-unaligned
+R6	13	173	num	173			null-or-unaligned
+R6	14	106	num	106			null-or-unaligned
+R6	15	136	num	136			null-or-unaligned
+R6	16	174	num	174			null-or-unaligned
+R6	17	175	num	175		l	single
+R6	18	132	num	132		e	conflict:attendre
+R6	19	176	num	176		p	single
+R6	20	162	num	162		a	single
+R6	21	177	num	177		p	single
+R6	22	159	num	159		e	single
+R6	23	178	num	178		n	single
+R6	24	179	num	179		e	single
+R7	0	109	num	109		c	single
+R7	1	180	num	180		a	single
+R7	2	181	num	181		t	single
+R7	3	182	num	182		h	single
+R7	4	183	num	183		olique	single
+R7	5	184	num	184		sans	single-segment
+R7	6	132	num	132		attendre	agrees
+R7	7	149	num	149		autre	single-segment
+R7	8	185	num	185		chose	single-segment
+R7	9	186	num	186		de	single-segment
