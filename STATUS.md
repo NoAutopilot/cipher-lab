@@ -184,15 +184,22 @@ pass disagreement 20.1-25.5%, solve_l2.py --noise-rate added; both design negati
 measured error (control beats target to 26-28% injected), so the earlier negatives were real tests; status open (masc and
 running_key via family_run.py untried).
 
-Live 18:34: WC-NASSAU-FIT (Sonnet, session_01THEQfeJaCDszJjBGxmuLDq, cap 8, box 60): the 5549 body's "verendertte" key (539
-numerals, unread; J7's matched control reads 10.9%, so only a sibling opens it) -- WVO candidates Sept 1573-Dec 1574 not yet
-fitted, one-page fit against the body with a known-positive (body half vs half) and a known-negative (5204) control. WC-MAP's
-rank-1 step (transcribe 5198/5199's 1842 decipherment) not taken: key_1572 is already printed and graded H and 5198 is found-solved.
+WC-NASSAU-FIT 11.50 N (1.4x cap, inside box): 17 candidates listed (j6/candidates_wc.tsv), 3 fitted (5803/5804/5805 cosine
+0.42-0.54 vs known positive 0.836, known negative 0.21): clean negative on cosine; the brief's top10_shared sub-condition failed the
+known positive and was dropped (orchestrator's gate error, caught by the worker). 4502/5808/7205 PDFs hold the oplossing only.
+
+Stuck-rule tries (owner's rule 18:53), live 19:17: WC-NASSAU-FIT2 (Sonnet, session_01S7NNWviFV2r8HTNRMhA6pm, cap 10, box 60):
+fit 5214, 5210, 5812, 5810 (post-switch letters with a separate oplossing; gate cosine >= 0.70) and REQUEST.md + one ASKS row
+for the 4502/5808/7205 cipher originals. Chosen over the parent's option (a), the 1842 print of 5198/5199: those are key_1572
+letters of Sept 1572, a key already printed, graded H and already failing on the 5549 body, so they cannot witness its key.
+WC-LAGARDE2 (Sonnet, session_01TSLU3Sdq1ET1X2UqLwXzHr, cap 5, box 45): spec + family_run.py syllabary then wordcode at
+measured error 0.23 on la-garde-1577's 239 pooled tokens, control first.
 
 Held on the owner: willem-van-hessen-1567 on ASKS 31 (KHA original of 1127); the 1069 atlas (USD 20-40) is not dispatched
 because it opens no unread ciphertext (1109's signs are by eye a different family, wvo-hessen-1564 NOTES). borssele-heinsius-1714
-on ASKS 46 (leaf H.A. 1836). oldenbarnevelt-brederode-1605: no sibling and no lead (cryptanalysis only, 121 tokens). If
-WC-NASSAU-FIT is negative the lane goes idle-standing on ASKS 31 and 46.
+on ASKS 46 (leaf H.A. 1836). oldenbarnevelt-brederode-1605: no sibling and no lead (cryptanalysis only, 121 tokens). Hessen and Borssele have had no cheap test run by this lane (their only step is the owner-side ask), so the stuck rule does not
+trigger for them; Brederode has nothing different left to try (no sibling, archival lead dead). After the two tries the lane goes
+idle-standing on ASKS 31, 46 and the new 5549-originals row.
 
 ## LANE NX2 handoff (session_01Ms6A5gPqrVmyK3Liyfgo9z), 26 September 2026, from 14:45 UTC (live)
 
