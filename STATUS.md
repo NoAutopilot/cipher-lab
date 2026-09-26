@@ -148,7 +148,12 @@ Brief .claude/briefs/runs/2026-09-26-lane-ax-orchestrator.md; COMMON 2026-09-26-
   revision log for the N4 letters; flag: the other cited 153 run's gloss reads "Ertzhertzoge vnd graf"). AX-4612TR: p1 passes
   80.1% (was 47.8%), p2 line-wrap misaligned, no v2 yet -> AX-4612TR2 (Sonnet, session_01NQeJ8XP8WZFygUnU43eYV3, box 60, from
   03:38). AX-COMP still on 4614 at 70 min, 40.75 dollars (box to 04:26).
-- **Ledger:** 14 workers, 116.80 dollars (AX-COMP running, not counted). AX-4612TR 44.28 D- (full-page 300-dpi passes).
+- **04:01 UTC.** V8 started verifier V8-NA5797 (03:51) on the 5797 claim + the N4 class re-check. AX-COMP: 4614's period
+  decipherment gives 172 = le Conte Jean (a third 5797 gap, "[Graf Johann] zeuget diesen morgen Kölln") but conflicts with key_full
+  on 127/129/123/107/95/57 -- V8 told at 03:59 before its verdict. AX-MERGE3 (Opus, session_01Xi8ifejhB3BQmnYiA9tVoV, box 60): known-
+  answer test of each conflict on Groen-printed 5810/5811/4503, key_full v3. AX-COMP2 (Sonnet, session_01N7aHJSdzPiprYZF5GpiD8a,
+  box 90): 7205 by line crops. AX-4612TR2 running (box to 04:38). 5801 (maybe 5799's table) not yet started.
+- **Ledger:** 15 workers, 174.11 dollars. The two costliest (AX-4612TR 44.28, AX-COMP 57.31) both fed full pages to pass calls.
 - **For the parent:** nothing on the board yet from this lane.
 
 ## LANE ZX handoff (session_01MxueEQJUGF9PWJiYcVyvBM), 25 September 2026, 15:42-22:20 UTC (closed)
