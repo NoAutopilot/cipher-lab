@@ -141,52 +141,36 @@ What ARM2 runs first, ranked:
    other letter in this code or with these marks is known -- that is outreach, so AUDIT.md-gated; draft only.
 Open flags: none unanswered (V9-QA8/QA9 en18 caveat answered in HYPOTHESES.md and NOTES.md, 10:17).
 
-## LANE NX handoff (session_01RDXRYmATas1Xy6K1Jjwtvo), 26 September 2026, from 08:44 UTC (live; updated 09:33)
+## LANE NX handoff (session_01RDXRYmATas1Xy6K1Jjwtvo), 26 September 2026, 08:44-11:50 UTC (closed)
 
 Brief .claude/briefs/runs/2026-09-26-lane-nx-orchestrator.md; COMMON 2026-09-26-lane-ax-COMMON.md (reused); queue from
-SCOUT-OWN-2026-09-26.md (the 1593 Nevers key-no.60 pool stays closed: palaeography block since R4/R5).
+SCOUT-OWN-2026-09-26.md. 15 workers in 4 rounds, 97.48 USD, all ledgered, retitled ARCHIVED and archived; orchestrator
+8.54 USD. No live workers, no pending check-in.
 
-**Round 1 (08:48-09:14, 5 workers, 25.66 USD, all ledgered and archived):**
-- fr3625-lauriere-1593 (NX-LAU): sibling no.10's seven glossed runs too few to train the alignment -- known-answer 0.200 vs
-  gate 0.60 on 15 tokens, CONTROL BELOW GATE; key not applied; stays open (Bourdeau's 19/86 stands).
-- rah-morillo-1817 (NX-MOR): item 2's key table is not on the copybook leaf (described only: numeric letter values).
-  Item 3 (Herrera to Morillo, 7 Nov 1820) carries about 21 numeral groups WITH an interlinear period decipherment on the leaf.
-  NOTES.md line 1 set to the single word `partial` (rule 5); per-item statuses on line 3.
-- esp318-sicilia-1503 (NX-E318, new folder): open; Bergenroth Cal. Spain i + Supplement grepped, no entry. HELD: Bourdeau's
-  own Next step 1 is this very letter with the same Gran-cifra hypothesis and he holds the images; not transcribing here
-  while his folder is live. Revisit only if his repo goes quiet or he reads it (then compare).
-- wvo-hessen-1564 (NX-WVO1109, new folder): open; 1109 is Orange to Hessen with a cipher enclosure (about 16 lines), 1107 is
-  clear (Groen t.I XCI). Sign repertoire resembles willem-van-hessen-1567 no.174's.
-- fr3151-noailles-1558 (NX-3151N33, new folder): open; addressee Cardinal de Lorraine; three cipher blocks (about 200-230
-  signs), each with a period marginal gloss (crib). QUEUE G10 updated.
+**Results.**
+- **rah-morillo-1817 item 3** (Herrera to Morillo, Guanare 7 Nov 1820, RAH 9/7666 f.420r): the leaf carries its own
+  interlinear decipherment; key_5186.tsv (17 signs, 0 conflicts, consistency 1.000 vs shuffle p95 0.800), decode --check
+  C 91 / U 6 of 97, fresh re-derivation 0 differences. V9-MOR: **N0**, plaintext in print (Portuguesa en Carabobo, 2021,
+  p.37 n.100), key period -> item 3 found-solved (a dataset, not a reading). Grade corrected H -> C per V9. Item 2's key
+  table is not on the copybook leaf. No other Morillo cipher letter at the RAH shares key_5186's design (NX-MOR4).
+- **fr3625-lauriere-1593**: the one glossed sibling gives too few anchors (control 0.200 vs 0.60, not a test); the period
+  key sheet fr.3995 no.57 (fol.103) matches 4/12 anchors vs shuffle max 2 but misses the 6/12 gate; four other 1592-94
+  sheets cannot host the anchors. NEAR.md row; ASKS row 65 (copy order for fr.3632 no.8, a second glossed letter).
+- **esp318-sicilia-1503**: open (Bergenroth vol. I + Supplement, now with a positive control). Held: Bourdeau's own next
+  step is this letter with the same Gran-cifra hypothesis.
+- **wvo-hessen-1564**: open; the 1567 no.174 key does not transfer (coverage 62.7/67.3 vs 70; decode in the shuffle band).
+- **fr3151-noailles-1558**: open; three glossed blocks but pass agreement 31-51 pct and a control tied at its floor.
 
-**Round 2 (09:31-10:05, 4 workers, 51.25 USD, ledgered and archived):**
-- rah-morillo-1817 item 3 (NX-MOR2): key_5186.tsv grade H from the leaf's own interlinear decipherment (17 signs, 0
-  conflicts; consistency 1.000 vs shuffle p95 0.800); decode --check clean (91 H / 6 U of 97). es17 judge FAIL on a
-  non-era-matched corpus at 91 letters (uninformative). Rodriguez Villa t.4 searched on Google Books: no hit.
-- fr3151-noailles-1558 (NX-3151G): pass agreement 31-51 pct, only gloss 1 legible; control tied with its shuffle floor
-  (0.000/0.000) -- not a test. Parked open: palaeography first (a glyph atlas), not another alignment.
-- wvo-hessen-1564 (NX-WVO174): 174 key does not transfer (coverage 62.7/67.3 vs 70; decode in the shuffle band; de16
-  FAIL). Parked open (next: per-glyph atlas).
-- fr3625-lauriere-1593 (NX-LAU2): candidate PERIOD KEY fr.3995 no.57 (Tomokiyo: Laveriere to Nevers, Feb-Aug 1593),
-  never tested; name identity with Lauriere not established.
-- esp318-sicilia-1503: orchestrator re-ran the Bergenroth search with a positive control (Ferdinand 846 / 194 hits;
-  Sicily 19 / 2, none the viceroy's letter; Messina 0) -- the earlier "zero hits" risk was the archive.org
-  encoded-filename 404 trap; verdict open stands (V9-QA9 finding 1 answered in NOTES.md). Still held for Bourdeau.
+**Open leads, in order.** (1) fr3625: ASKS 65 copy order, then interlinear_align on two glossed letters. (2) Morillo item 3
+housekeeping: V9's C 86 / M 5 split (exceptions file) and the print's words over the 6 unread signs (26 = v at C from the
+print); RAH record 1306 carries a fourth cipher system with its own period decipherment (printed) -- a dataset lead only.
+(3) wvo-hessen-1564 and fr3151-noailles-1558: a per-glyph atlas for each hand before any second key/alignment attempt.
+(4) esp318 item 94: revisit only if Bourdeau's repository goes quiet on it or reads it.
 
-**Round 3 (10:15-10:39, 2 workers, 10.78 USD, ledgered and archived):**
-- rah-morillo-1817 item 3 (NX-MOR3): fresh re-derivation reproduces all 97 tokens, 0 differences. Sent to LANE V9 at 11:00
-  (key source: period -- the leaf's own interlinear decipherment; likely a dataset row, N-class is V9's).
-- fr3625-lauriere-1593 (NX-LAU3): fr.3995 no.57 (fol.103, not 102) reads 4/12 anchors vs shuffle max 2 -- beats control,
-  misses the 6/12 gate; looks like a sibling sheet of one office with a renumbered word bank. NEAR.md row added.
-
-**Round 4 live (spawned 11:00, Sonnet) -- the lane closes after these two (parent 10:43):**
-| Job | Session | Task | Box / alarm |
-|---|---|---|---|
-| NX-MOR4 | session_01C4s2bLDXohdU1rc96dCmks | other RAH Morillo cipher letters key_5186 can read; coverage + value-shuffle gates; Bolivar 26=v as a hypothesis | 90 min / USD 12 |
-| NX-LAU4 | session_01RZvQTdc9g8PhcnKRDqe9hH | anchor cells on up to 4 sibling 1592-94 fr.3995 key sheets, same 6/12 + shuffle gate | 75 min / USD 10 |
-
-Lane workers so far: 13 rows ledgered, 87.69 USD. Retro: parent 10:43 says retrospective r already covers the window.
+**Lessons (ledgered).** A one-crop brief that also asks for an edition search needs the search priced in (MOR2 2.3x). For a
+hard hand, gate pass B on pass-A agreement per block (3151G 2.0x, 49 tool calls for no gain). archive.org file names with a
+literal %20 need %25 in the URL; the naive URL returns a 146-byte 404 that greps as zero hits -- check the file size before
+trusting a zero (the esp318 search). A key read off a leaf's own decipherment is grade C, not H (V9-MOR).
 
 ## LANE AX2 handoff (session_016sbTkVT8HGNJ6JGjJNmCuM), 26 September 2026, from 05:14 UTC (live)
 

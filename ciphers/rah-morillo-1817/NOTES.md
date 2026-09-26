@@ -1,6 +1,6 @@
 partial
 
-Per item (moved off line 1 by the LANE NX orchestrator, 26 Sept 2026, rule 5): found-solved (item 1); item 2 partial (key described, not found); item 3 partial. Item 3 citation (26 Sept 2026, NX-MOR2): Rodríguez Villa's t.4 (Google Books v3kzAQAAIAAJ, *Documentos justificativos ... contiene los últimos años*, 1908, publicDomain ALL_PAGES) read by full-text search for "Herrera" + "7 de noviembre de 1820" and for "Romerito" -- no hit for this exact letter (only a different, later Herrera-to-Morillo letter "de 20 del actual" re: Romerito/Ferrus/Pedraza is quoted there, p. cited in the volume's own text, a different date); Contreras, *Catálogo de la Colección Pablo Morillo* (Madrid 1988, Google Books ohJPjaGKOk8C), full-text search for "Romerito" "Guanare" confirms this item's own catalogue entry (Sig. 9/7666, ff.420-420v, 7 de noviembre de 1820) exists in print as a description only, no plaintext or cipher table given. t.2 (1815 docs) still not located digitised anywhere. **V9-MOR audit, 26 Sept 2026 (AUDIT.md): item 3 is N0, key `period`, text known** -- its plaintext is printed in Bolívar, González Segovia and Anzola, *Portuguesa en Carabobo* (2021), p.37 n.100 (IA `portuguesa-en-carabobo`), citing this shelfmark; t.2 is Google Books `pirVAAAAMAAJ` (searched, no hit). The H grades below should read C 86 / M 5 / U 6 (AUDIT.md section 3).
+Per item (moved off line 1 by the LANE NX orchestrator, 26 Sept 2026, rule 5): found-solved (item 1); item 2 partial (key described, not found); item 3 found-solved (V9-MOR, AUDIT.md, 26 Sept 2026: N0, plaintext in print in Portuguesa en Carabobo, 2021, p.37 n.100; key period). Item 3 citation (26 Sept 2026, NX-MOR2): Rodríguez Villa's t.4 (Google Books v3kzAQAAIAAJ, *Documentos justificativos ... contiene los últimos años*, 1908, publicDomain ALL_PAGES) read by full-text search for "Herrera" + "7 de noviembre de 1820" and for "Romerito" -- no hit for this exact letter (only a different, later Herrera-to-Morillo letter "de 20 del actual" re: Romerito/Ferrus/Pedraza is quoted there, p. cited in the volume's own text, a different date); Contreras, *Catálogo de la Colección Pablo Morillo* (Madrid 1988, Google Books ohJPjaGKOk8C), full-text search for "Romerito" "Guanare" confirms this item's own catalogue entry (Sig. 9/7666, ff.420-420v, 7 de noviembre de 1820) exists in print as a description only, no plaintext or cipher table given. t.2 (1815 docs) still not located digitised anywhere. **V9-MOR audit, 26 Sept 2026 (AUDIT.md): item 3 is N0, key `period`, text known** -- its plaintext is printed in Bolívar, González Segovia and Anzola, *Portuguesa en Carabobo* (2021), p.37 n.100 (IA `portuguesa-en-carabobo`), citing this shelfmark; t.2 is Google Books `pirVAAAAMAAJ` (searched, no hit). The H grades below should read C 86 / M 5 / U 6 (AUDIT.md section 3).
 
 # Royalist ciphered letters to/from General Pablo Morillo — RAH cluster (1817, 1817, 1820)
 
@@ -611,3 +611,14 @@ counts are 14 words / 59 letter-token pairs, not 13 / 89; (3) the 24 Sept "Verdi
 located") is superseded. The print reads r2g2 as "Caimital" (our gloss read "barinituS", key "barinrtas") and the
 clear text as "no se reciben" (NX-MOR: "no se mueven"), and supplies the words over the six unread signs ("sólo",
 "Guayana", "Bolívar", "seguro", "Trujillo"): an image question for the solver lane, not settled by the verifier.
+
+## Grade correction applied (LANE NX orchestrator, 26 Sept 2026, 11:45 UTC)
+
+V9-MOR (AUDIT.md) corrected rule 4: a key built from the leaf's own interlinear decipherment is known plaintext,
+grade C, not H. `build_key_5186.py` now writes grade C; `key_5186.tsv`, `reading_5186*.txt/tsv` regenerated;
+`decode_key.py --check`: tokens 97, C 91 / U 6, reading up to date. V9's finer split (C 86 / M 5 / U 6: 5 tokens in
+the six tentatively glossed groups at M) is not yet applied -- it needs a per-group exceptions file, left as a
+one-line next step. The printed text (Portuguesa en Carabobo p.37 n.100) reads r2g2 "Caimital" and "no se
+reciben" where ours differ, and supplies the words over the 6 unread signs (solo, Guayana, Bolivar, seguro,
+Trujillo): an image re-check of those groups against the print, then the 26 = v value at grade C from the print,
+is the remaining housekeeping. Item 3 is found-solved; no further campaign.
