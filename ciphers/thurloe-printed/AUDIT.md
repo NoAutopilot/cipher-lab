@@ -851,3 +851,92 @@ further: before treating any remaining Birch gap as an opening for this project'
 sender's or recipient's own printed letters for a modern edition that may already have closed it, the same way
 P9/P10/P14/P15's "later print" column was checked for the already-glossed parts of these same four letters but
 was not, until now, checked for this one still-open gap.
+
+## P25, P26, P27, P28 -- Lockhart (1656) and three Manning letters (1655) (verifier V7-TH25, 26 Sept 2026)
+
+Verifier: LANE V7 worker V7-TH25 (Opus), 26 Sept 2026, clock read 02:22-02:40 UTC. Separate session from the
+solver (LANE B5 worker bTHU, ROOM 02:18) and from the finder (LANE TX, NOTES s.22 job 1). No decoding, no
+alignment, no change to any P*/, pairs, align or key file.
+
+**Claim under audit** (ROOM 26 Sept 02:18, NOTES s.23): four cipher letters in Birch 1742 found by LANE TX under
+misattributed headings, aligned with `tools/interlinear_align.py` against Birch's printed interlinear gloss,
+240 tokens C 177 M 63, a correspondence separate from the folder's five pool keys; "contribution, no novelty
+class assigned".
+
+### Verdict
+
+| Item | Class | Printed decipherment (Birch 1742) | Covers the cipher? | Key | Confidence |
+|---|---|---|---|---|---|
+| P25 Will. Lockhart, ambassador in France, to secretary Thurloe, Chauny, 19 June 1656 N.S. | **N0** | vol. 5 **pp.100-101** (djvu 8752-8862; the page head "JOHN THURLOE ESQ. &c. 101" falls mid-letter, so it starts on p.100, not p.101 as index.tsv says). MS margin "Vol. xxxix p.198". Interlinear gloss over every numeral run, e.g. "the St. Gen. had their war with prot. the pe a ce" over "68 441 397 44 105 297 435 ... 403 293 10 179" | Yes, every numeral run in the djvu window has a gloss line above it | `period` (Birch's printed interlinear decipherment, taken from the office's copy in the Thurloe MSS, used as the gloss) | high |
+| P26 "A letter of intelligence from mr. Manning", Antwerp, 26 Apr 1655 N.S., signed "Andrew Burton", superscribed to "mr. Jeremiah Joselin" | **N0** | vol. 3 pp.382-383 (djvu 31977-32064), interlinear ("C. S. came to Collen sonday last. Hide is at Breda yet many are there" over "1005. 293. 172. ...") | Yes | `period` (same) | high |
+| P27 "A letter of intelligence from mr. Manning", undated in print, signed "Zachary Johnson", superscribed to "mr. John Browne" | **N0** | vol. 3 **p.383** (djvu 32065-32137; heading and whole letter fall between the p.383 head and the p.384 head, so index.tsv's "not read" is now p.383). MS margin "Vol. xxvi p.377". Interlinear ("I am now for Collen. Lord Gerard and Massi went this sailing ...") | Yes | `period` (same) | high |
+| P28 "A letter of intelligence from mr. Manning", "From the Buss, May 6, 1655 [N.S.]", signed "Zachary Johnson", superscribed to "mr. Jeremiah Joslin" | **N0** | vol. 3 **p.409** only (djvu 34172-34232; the p.409 head precedes the heading and the p.410 head follows the superscription, so not pp.408-409). MS margin "Vol. xxv p.593". Interlinear ("I had newes that O'Neil was escaped and att the Hage ...") | Yes | `period` (same) | high |
+
+N0 = plaintext and decipherment of this very item already known. `text: known` for all four (the plaintext is
+Birch's print). What bTHU made is a group-level key for each letter from that printed gloss -- a derived
+dataset, not a reading, the same as P2-P24 and P9/P10/P14/P15 above.
+
+**Safe sentence.** "Birch printed these four letters (Lockhart to Thurloe, 19 June 1656, vol. 5 pp.100-101, and
+three intelligence letters of Henry Manning signed 'Andrew Burton' and 'Zachary Johnson', April-May 1655, vol. 3
+pp.382-383, 383 and 409) with the decipherment set above the cipher; we aligned that printed decipherment to the
+numeral groups on the lines the tool could pair, giving group-value keys for four correspondences not covered by
+the folder's other keys (C 177, M 63 of 240 aligned tokens)."
+
+**Unsafe sentence.** "We read / deciphered / recovered four Thurloe cipher letters", "newly found cipher
+letters", or anything implying the plaintext was recovered by us or was not in print since 1742. "Found under
+misattributed headings" is also unsafe without the qualifier below: the misattribution was this repository's own
+automated heading scan, not Birch's.
+
+### Checks
+
+1. **Print location (task 1).** Read directly from `sources/ia-fulltext/thurloe-gz/collectionofstat05thur` and
+   `collectionofstat03thur` `_djvu.txt.gz` (disk only). Page corrections: P25 pp.100-101 (not p.101), P27 p.383
+   (was "not read"), P28 p.409 (not pp.408-409). P26 pp.382-383 stands.
+2. **Attribution and dates (task 2).** Birch himself heads P26, P27 and P28 "A letter of intelligence from mr.
+   Manning"; the cover names are in the letters' own signatures, and the letters list three addresses ("mr.
+   Andrew Burton, att Antwerpen; mr. Zachary Johnson, att Mecklin; mr. Humfrey Gregson, att Berghen op Zoom").
+   Independent print: Macray, *Calendar of the Clarendon State Papers* vol. 3 (1876) enters a Manning letter
+   "under the name of Andrew Burton, to Mr. John Browne [Thurloe]" (Google Books snippet, 26 Sept 2026), and the
+   secondary literature identifies Manning as Thurloe's informer at Cologne in 1655 (Google Books snippets; the 2005
+   article "News, Intelligence, and Espionage at the Exiled Court at Cologne: the case of Henry Manning", found
+   via Semantic Scholar, not read). Attribution stands on Birch's headings plus the Clarendon calendar.
+   **Correction:** `index.tsv` rows P26-P28 give sender "cover name" and recipient "mr. Manning, forwarded to
+   secretary Thurloe". Manning is the *sender* (Henry Manning, Thurloe's informer at the exiled court, writing as
+   Burton/Johnson); the recipient is Thurloe under the cover names "Jeremiah Joselin"/"John Browne" printed in the
+   superscriptions. Not edited here (index.tsv is outside this brief's files); flagged for the lane. Dates: P25
+   "Chauni, June 19th 1656 [N.S.]" and P26 "Antwerp, April 26, 1655 [N.S.]" and P28 "May 6, 1655 [N.S.]" match
+   the print; P27 carries no date in print (it answers a letter "of the 13 old stile" and is placed by Birch
+   between 26 April and early May 1655).
+3. **Later print or decipherment (task 3), one pass of families a-g.** (a) Birch 1742 itself, read; CSP Domestic
+   does not calendar the Thurloe MSS (Rawlinson A), not searched further. (b) Manning: Clarendon calendar vol. 3
+   (Google Books snippet, above); Lockhart: no sender-specific edition of his letters located. (c) documentary
+   editions: none beyond (b). (d) Bodleian catalogue: Google Books returned *Catalogi codicum manuscriptorum
+   Bibliothecae Bodleianae* (1878) for the "Zachary Johnson" query, snippet empty; not opened. (e) Google Books,
+   4 queries ("Zachary Johnson" Manning 1655: 5 hits, all Birch or the Bodleian catalogue; "Andrew Burton" Manning
+   Thurloe: Birch and the Clarendon calendar; "Henry Manning" spy Cologne cipher: 8 hits, secondary histories, no
+   cipher reading; Lockhart Chauny 1656 Mazarin cipher: 0). (f) `dbourdeau/cyphersolver` and
+   `aaymeloglu/unsolved-ciphers`, shallow clones grepped for "Henry Manning", "Zachary Johnson", "Andrew
+   Burton", "Lockhart", "Chauny/Chauni": no hit on these letters (Lockhart only as a name in Bourdeau's Hyde/
+   Barwick key and Charles II notes). (g) OpenAlex 2 searches (Manning/Thurloe spy: 62, none on these letters;
+   Lockhart Mazarin 1656 cipher: 1, unrelated), Semantic Scholar 1 (the 2005 Manning article), JSTOR one row
+   queued. No later decipherment was needed or sought: an N0 item's plaintext is already in the 1742 print.
+4. **Counts (task 5).** Reproduced from `align_P25.tsv`..`align_P28.tsv` `status` column: C = `agrees` +
+   `single` + `single-segment`, M = `conflict:*` + `doubtful`, `clear` excluded. P25 22/4, P26 10/4, P27 79/44,
+   P28 66/11; total **C 177, M 63** of 240 -- exact. `tools/interlinear_align.py` itself has no grade mapping
+   (it emits statuses only); the C/M mapping is bTHU's, and C is the right grade by rule 4 for a meaning read off
+   a printed decipherment (known plaintext). **Caveat, not a correction:** 31 of the 177 C tokens are status
+   `single` (one occurrence, only one boundary anchored), where the meaning is printed but the DP's split of the
+   gloss between neighbouring groups is not cross-checked; a stricter reading would grade those M (C 146, M 94).
+   Also, 240 is the tokens on the lines `pairs` could split, not the letters' full cipher (NOTES s.23 already
+   says so; P25 alone has roughly 100 numeral groups in print against 38 paired).
+
+### Postmortem
+
+No rule-10 over-claim: s.23 says "contribution, no novelty class assigned" and uses no forbidden word. Three
+small errors corrected here and in NOTES s.23: page numbers for P25/P27/P28, and the sender/recipient roles for
+P26-P28 (Manning writes to Thurloe, not the reverse). The phrase "misattributed headings" (ROOM, brief, s.23)
+means the repository's `scan_headings.py` nearest-heading trap (s.22 job 1), not an error in Birch, whose own
+headings are correct.
+
+Requests: www.googleapis.com 4, api.openalex.org 2, api.semanticscholar.org 1, github.com 4 (two shallow clones,
+twice, grep only, deleted). No login, no subagent.

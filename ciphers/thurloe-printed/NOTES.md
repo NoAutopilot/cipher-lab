@@ -2064,6 +2064,17 @@ OCR-line-based `pairs` step and likely raise the 74% C rate, the same fix sectio
 the Barriere-Conde cluster it left unglossed. Neither P26 nor P27's own printed page number was
 found in this OCR window (both note "not read"); a page-image check would also settle that.
 
+### Verifier corrections to this section (V7-TH25, 26 Sept 2026)
+
+See AUDIT.md "P25, P26, P27, P28". All four are N0 (Birch 1742 prints the decipherment interlinear), key
+`period`, text known. Corrections to the wording above: P25 is printed on vol. 5 **pp.100-101** (not p.101 alone);
+P27 is on vol. 3 **p.383**; P28 is on vol. 3 **p.409** only (not pp.408-409). In P26-P28 **Manning is the sender**
+(Thurloe's informer, writing as "Andrew Burton"/"Zachary Johnson"), and the recipient is Thurloe under the cover
+names in the superscriptions ("Jeremiah Joselin"/"John Browne"); index.tsv's recipient column ("mr. Manning,
+forwarded to secretary Thurloe") has it reversed and is left for the lane to fix. The "misattributed headings" are
+this repository's scan_headings.py trap (s.22 job 1); Birch's own headings read "A letter of intelligence from mr.
+Manning". C 177 / M 63 reproduces exactly; 31 of the C tokens are status `single` (see AUDIT.md caveat).
+
 ### Verifier correction (TX-VERP10, 25 Sept 2026)
 
 Job 2's mechanical check reproduces exactly (`tx/decode_p10_line10.py --check` exits 0, same
