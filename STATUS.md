@@ -90,6 +90,57 @@ identified, the catalogue's date and senders corrected. The "first verified N3" 
 Orange 1572 detector candidate also fell (partial decipherment printed 1842). Zero unique solves today; two
 over-claims prevented by the gates before anything left the repository.
 
+## LANE ARM handoff (session_011gEKqukZAxE6FjtQCzsUQ8), 26 September 2026, 06:49-10:52 UTC (closed at ~440k context)
+
+Target: armstrong-madison-1808 (John Armstrong to James Madison, Paris, 20 Feb 1808), status **open**, no NEAR row (no
+family beat its matched control). Brief: `.claude/briefs/runs/2026-09-26-lane-arm-orchestrator.md`; COMMON:
+`.claude/briefs/runs/2026-09-26-lane-arm-COMMON.md`. The authoritative family table is the top block "Summary, cycle 1"
+of `ciphers/armstrong-madison-1808/HYPOTHESES.md` (ARM-CONS1); below it the append-only sections with every number.
+Spend: 18 workers ledgered, 102.75 USD (incl. adopted TOMO-REPLY 4.22); orchestrator 8.81 at close.
+
+What the lane established (control vs target, side by side):
+- Transcription: manuscript images found (NARA M34 roll 14 frames 0030-0033, NAID 188671566, public IIIF, no key) and a
+  full two-pass manuscript transcription written, `ciphertext_ms.txt` (ARM-TR, ARM-TR2): 0.957 agreement with the
+  Founders/Bourdeau `ciphertext.txt`, 9 substitutions (e.g. 1843 for 1841, 200 for 203), page-1 L12/L13 dense shorthand
+  still M. Use ciphertext_ms.txt for future work; ciphertext.txt stays as transcribed.
+- A (crib): QUEUE row 27's "Krajcovic crib / 15 Feb to Jefferson" does not exist (TOMO-REPLY); the real 15 Feb
+  Armstrong-to-Jefferson letter is in clear, no crib. A1 PARK.
+- A2 (direct transfer of WE028 / THE=972 tables): target percentile vs structure-preserving permuted tables 23.5-70,
+  vs shuffled order 40-96; positive control (15 Feb under THE=972) 87.3 pct exact; judge FAIL throughout. PARK.
+- B (design, ARM-DESIGN): units-digit concentration p100 against 5 simulated designs x 60 and 4 real THE=972 letters;
+  verdict a two-level code (particle block 1-99, ~100 entries; decade -> word family, units digit -> member slot). Held
+  on the manuscript. Continue as premise.
+- C (nomenclator family, tools/families/nomenclator.py, ARM-C1): matched control 0.201/0.176/0.027 blended (book class
+  0.005-0.011) vs gate 0.6 -> target NOT run. ARM-CONS1 showed on paper that 139/369 singleton tokens cap any context-only
+  objective near the gate. PARK at N=369; only more same-code ciphertext changes this.
+- D: NOT LICENSED (gain gate; no control cleared).
+- Judge: tools/data/en18 built (LOFO FN 14-15 pct, fold spread 0.27 vs en 59-65 pct); but the en18 judge PASSes the
+  family-C decode of the shuffled target, so it is not a gate for family C at this N (now CLAUDE.md rule 3).
+- E (recovery): no key, decode or duplicate found (ARM-REC/REC2/REC3); the Founders page for 99-01-02-2728 has no
+  editorial note at all; roll 14 sampled 1-in-6, 2 other coded letters both THE=972 (ARM-POOL); LOC pool of 20
+  Armstrong items 1807-09 all clear text; a standing Armstrong<->Jefferson private channel exists (not on Kreider's list).
+- S (shorthand marks, ARM-S1/S2): 12 reconciled shapes cover 85 pct of ~221 marks, one stroke ~34 pct; runs glued to line
+  ends; symbol-by-symbol against Taylor (known negative), Byrom, Gurney, Mavor, Weston, Macaulay with Pitman control:
+  all six EXCLUDED (dominant shapes forced onto letters far above English frequency). Lead (M): superscript tick = the
+  baseline dash repositioned, like Mavor/Weston vowel-position conventions.
+
+Live worker to adopt: **ARM-POOL2** (session_01MM2JB5csfXb1Km3Y3Aeye9, Sonnet, cap 5, spawned 10:49): the frame-0645
+docket of "confidentially sent" 1807-1808 Armstrong letters, brief `2026-09-26-lane-arm-c2-pool2-docket.md`. Ledger it,
+ASSIGNMENTS done row, retitle ARCHIVED, archive.
+
+What ARM2 runs first, ranked:
+1. The Livingston lead (ARM-REC3): five Livingston-to-Madison letters in the window, one of 5 Feb 1808, unread -- Robert
+   R. Livingston is Armstrong's brother-in-law and predecessor; a same-code letter would be the pool that unlocks family C.
+   loc.gov / Founders via Wayback (it answers again, with retries).
+2. The Armstrong<->Jefferson channel: any coded item in the Jefferson Papers 1807-1809 (loc.gov) with the target's
+   signature (units 0/1 heavy, 2/3/5/9 rare, shorthand runs); pool/signature_test.py is the screen.
+3. ARM-POOL2's result (docket letters).
+4. Shorthand: systems not yet tried beyond Tomokiyo's list (Blanchard, Annet, Holdsworth & Aldridge, Lewis 1812), or a
+   private symbol set -- the Zipf profile says word/syllable signs; a mark-level solve needs more marks than one letter.
+5. If no pool appears: idle-standing on an ASKS row asking the Papers of James Madison editors (via the owner) whether any
+   other letter in this code or with these marks is known -- that is outreach, so AUDIT.md-gated; draft only.
+Open flags: none unanswered (V9-QA8/QA9 en18 caveat answered in HYPOTHESES.md and NOTES.md, 10:17).
+
 ## LANE NX handoff (session_01RDXRYmATas1Xy6K1Jjwtvo), 26 September 2026, from 08:44 UTC (live; updated 09:33)
 
 Brief .claude/briefs/runs/2026-09-26-lane-nx-orchestrator.md; COMMON 2026-09-26-lane-ax-COMMON.md (reused); queue from
