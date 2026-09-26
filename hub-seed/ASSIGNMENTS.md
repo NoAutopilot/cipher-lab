@@ -643,3 +643,6 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T00:48Z	session_01JU8giKGTHWz4Zm1HyWK1VW	SCOUT-RERANK done $1.64 D, archived	QUEUE.md section 'Re-rank for LANE B5'; B5 pending (7e)
 2026-09-26T00:48Z	session_01744aLgcLnadR1XQckyHwcu	parent 7d done $41.40, handed over to 7e	20:01 UTC 25 Sept to 00:48 UTC 26 Sept; 609k context
 2026-09-26T00:49Z	session_01SvjMDFfJZJ3uK47RYxAQrM	parent 7e (Fable, live)	took over from 7d at 00:49; hub-seed/SUCCESSOR-PROMPT.md; arms its own first check-in
+2026-09-26T00:55Z	session_01EXi6Dd2StWbYSHXxRYXEEh	RETRO-APPLY-M (Sonnet, cap 6)	apply RETRO-2026-09-26a.md proposals 1-5 + NEAR Salviati note	brief 2026-09-26-parent-retro-apply-m.md; parent 7e
+2026-09-26T00:55Z	session_01A4jfQZGS8SUuDamZK19KZq	LANE B5 orchestrator (Opus, cap 25)	breadth from QUEUE.md "Re-rank for LANE B5" + B4 handoff NEAR steps; reserve wave rows 4-9 and the VX/KX/KT/PX scoring pass	brief 2026-09-26-lane-b5-orchestrator.md; parent 7e
+2026-09-26T00:55Z	session_01JeTZc8L2dYkP6yGK1pkHwv	LEARN-4 (Sonnet, cap 5)	cross-account learning pass, window from 2026-09-25T21:34Z	brief 2026-09-26-parent-learn4.md; parent 7e
