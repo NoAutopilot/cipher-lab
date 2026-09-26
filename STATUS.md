@@ -310,10 +310,13 @@ page-per-call transcription of ~400-token pages still costs 3-5x a search job (Z
 
 ## LANE B7 handoff (session_018gKxHSiPYa5NPQuXYELQUk)
 
-Breadth lane, successor to LANE B6, opened by parent 7e at 04:45 UTC 26 Sept 2026 (brief `.claude/briefs/runs/2026-09-26-lane-b7-orchestrator.md`, cap USD 25 own, hand off at 300k context). Common file `.claude/briefs/runs/2026-09-26-lane-b7-common.md`. Live (05:55): bSZR (szembek rule-7 re-derivation), bLAJ (la18 Latin judge). Queued: matignon (1e) hand alignment (NEAR). Done by the orchestrator: LOCAL-QUEUE L17 (Kolosova 2017 thesis + 2024 book, lope-hurtado-1522).
+Breadth lane, successor to LANE B6, opened by parent 7e at 04:45 UTC 26 Sept 2026 (brief `.claude/briefs/runs/2026-09-26-lane-b7-orchestrator.md`, cap USD 25 own, hand off at 300k context). Common file `.claude/briefs/runs/2026-09-26-lane-b7-common.md`. Closed 06:20 at about 275k context: no live workers, no pending check-in. Done by the orchestrator: LOCAL-QUEUE L17 (Kolosova 2017 thesis + 2024 book, lope-hurtado-1522).
 
 | Spec | Test run (worker) | Target | Control | Verdict |
 |---|---|---|---|---|
+| szembek-bk1560 | rule-7 re-derivation (bSZR) | --check 0; independent decoder 0 diffs; 10/10 gloss spot-checks | n/a | passed; V8-SZEM verifier started 06:15 |
+| szembek-bk1560 | la18 judge corpus + judge (bLAJ) | language FAIL narrow -0.986 (real_p05 -0.960); word cover 0.958 PASS | la18 LOFO FN 33.0/22.5/4.0 pct (3 files, unknown reliability) | judge cannot decide, not a negative |
+| matignon-mayenne-1586 | NEAR 1e hand alignment f.78v/79r (bMAT1E, Opus) | not run | known-answer 9/20 vs gate 16 | non-test; NEAR (1f) re-transcribe the misaligned segments |
 | szembek-bk1560 | merge: pooled letter key via interlinear_align (bSZM) | consistency 0.878 (332/378); C 384 / M 50 / U 0 after 3 thin codes to M | shuffle 0.189 (p95 0.204) | reading ready; rule-7 re-derivation bSZR and la18 judge bLAJ live; then V8 |
 | malsburg-hessen-1636 | reconcile + IC + family_run (bMAL2, bMAL3) | N=352 K=95, IC 0.0143; masc FAIL | masc control 0.987 (K=22, unmatched); homophonic control 0.392 below gate | partial, NEAR row: pool the fond first |
 | untersberg-code | symA vs 8 witnesses (bUNT9) | 1/5 positions | random-position mean 1.07, p95 3/5 | symA not identified; NEAR updated |
@@ -324,6 +327,9 @@ Breadth lane, successor to LANE B6, opened by parent 7e at 04:45 UTC 26 Sept 202
 | siena-concistoro-2308 | intake + nos. 25/14/4 keys on pieces 7-21 (bSIE) | real beats scrambled 11/21 cells | scrambled 3 seeds, within noise | open; keys do not transfer; next ciphertext-only 6/24, 20/23 |
 | hessen-1824 | intake + periodic_vigenere (bHCP) | FAIL at periods 16, 6, 7 | control 1.000 (de20) | open; that family excluded |
 | hessen-daenemark-1672 | intake + HCPortal partial (bHCP) | only 601=Dennemarck glossed | n/a | open; no key |
+
+At close (06:20): 17 workers, USD 59.09 by get_session, all ledgered and archived; orchestrator USD 5.55 at 06:18. Three over cap: bMAL2 2.2x (the orchestrator's cap error: two leaves are two jobs), bMAL3 2.3x (crop reading to settle disagreements), bSZL66 1.05x. **What moved: szembek-bk1560** -- the manuscript's own interlinear gloss gives a working letter key (pooled consistency 0.878 vs shuffle p95 0.204), the reading re-derives with 0 differences, la18 judge narrow FAIL / word cover PASS, and LANE V8 took it for the verifier (V8-SZEM, 06:15). Also: tools/data/la18 (first wired Latin judge corpus); malsburg to `partial` with a NEAR row; four intake checks (siena, zeschau, hessen-1824, hessen-daenemark-1672) all open; LOCAL-QUEUE L17 (Kolosova).
+For LANE B8 (in order): (1) szembek-bk1560: answer anything V8-SZEM raises; the reading's M 50 tokens could drop with a second gloss pass on leaves 65/67 using the aligner's input format (per-group placement is not the unit). (2) malsburg-hessen-1636: fetch and transcribe the other 8 HCPortal records (USD 5 a leaf, one leaf per worker, crop step mandatory), then homophonic profile=target at the pooled N, control first. (3) matignon-mayenne-1586 (1f): re-transcribe f.78v l.6-10 and f.79r l.1-2 from native crops, then re-run bMAT1E's hand alignment. (4) siena-concistoro-2308: ciphertext-only homophonic on nos. 6/24 and 20/23 with an it16 control (era flag). (5) hessen-1824: the remaining families (masc, running_key) through family_run at N=164, control first. Parked: zeschau (ASKS 64), hessen-daenemark-1672 (only 601 glossed), untersberg (symA unidentified; next only with a new witness or a period abbreviation list), blitz. Pricing lesson: price a job by leaves x USD 5 and by disagreements to settle x one crop each, before the box.
 
 ## LANE B6 handoff (session_0125z25Ujw4ehAavXcyAfwXz)
 
