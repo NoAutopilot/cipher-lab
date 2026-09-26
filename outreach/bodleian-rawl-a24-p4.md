@@ -1,4 +1,4 @@
-status: ready
+status: ready (updated 26 Sept 2026 16:27 UTC: the Bodleian A&M record, ark:/29072/x08k71nh14zj, lists the volume as MSS. Rawl. A. 24/1-2, "Not available online" -- cite both parts and ask which holds Birch's pp.73 and 76; found by the desk runner, LOCAL-QUEUE L19, PR 22)
 subject: Thurloe P4 (Stamford, Calais, 13 March 1655): one leaf image from Bodleian MS Rawl. A. 24 would settle whether Thurloe's office deciphered it
 to: you (Bodleian Library reproductions, or a look at Digital Bodleian if the volume is imaged)
 

@@ -528,7 +528,7 @@ worked from 23 Sept with no borrow attempted until 25 Sept, and CORE_API_KEY was
 work sat in ASKS.md all day waiting on access already in hand. `tools/room.py --start` prints the last probe's
 summary line; a stale or missing KEYS-STATUS.md means the probe has not been run recently, re-run it.
 
-Getting the material is most of the work. Try routes in this order and record which one worked in NOTES.md:
+Getting the material is most of the work. Before any route, read the holding institution's own catalogue record for the shelfmark and quote its availability flag (a viewer link, or "Not available online") with the record's URL or ark: an image portal's "no items" (Digital Bodleian, Gallica search, a library viewer) says only that the search found no images, never that the item is undigitised or absent, and the catalogue record often adds the physical parts a citation hides (Bodleian MS. Rawl. A. 24 is A. 24/1-2, ASKS 30 / LOCAL-QUEUE L19, 26 Sept 2026). Then try routes in this order and record which one worked in NOTES.md:
 
 1. **A JSON API or plain URL with curl**, with a browser User-Agent (`-A "Mozilla/5.0"`). Gallica IIIF, TNA
    Discovery's API, the Huntington's CONTENTdm API and the Internet Archive all serve this way.
