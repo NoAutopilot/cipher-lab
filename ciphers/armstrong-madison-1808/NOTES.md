@@ -644,3 +644,52 @@ No network this job (all four subagent calls and all direct crop work against im
 subagent calls total (2 concurrent x 2 rounds): frame 0033's 2 blind passes, page-1 L6-13's 2 blind
 passes. All further settlement (frame-0033 edge digits, the L06-L11 crop-top-margin fix and re-read,
 the page2 shorthand-crop diagnosis and fix) done directly by this worker against the source images.
+
+## ARM-REC3 pass, 26 Sept 2026 (LANE ARM worker ARM-REC3) -- Founders apparatus recovered, loc.gov Armstrong pool screened, Livingston/Pinkney resolved
+
+Full detail in `crib_sources.md`'s "ARM-REC3 pass" section; `pool/LOC-ARMSTRONG.tsv` has the 20-item pool table.
+Short version: **web.archive.org is reachable again this pass** (unlike the two consecutive outages ARM-REC/
+ARM-REC2 found), though individual document fetches still need 1-3 retries about half the time (host-side
+instability, not a proxy fault). Fetched the target letter (99-01-02-2728) via Wayback: **its own Early Access
+page carries no editorial note or footnote at all, only the bare source citation** ("DNA: RG 59—DD—Diplomatic
+Despatches, France.") -- there is no apparatus to have missed. Fetched and read 9 of the 13 previously-titled-only
+document ids (99-01-02-2907 could not be reached, CDX timeout x2): none references the 20 Feb letter, a
+duplicate, a changed cipher, or names a specific private-code correspondent. **Resolved the 7484-vs-7514
+question**: 7484 is the same letter as 2745 (25 Feb, Madison to Jefferson, cross-listed between collections, not
+a distinct letter); 7514 is a genuinely different letter (29 Feb, a Senate report on impressed seamen). New
+context, not decisive: 8003/3082's own letter also says "I send letters from Armstrong, Pinkney & Harris"
+together (routine mail-forwarding, not evidence of a shared cipher); 8006 and 8708 both show Erving being
+forwarded alongside Armstrong at exactly this period, corroborating Erving as a live correspondent (one of
+Kreider's own named candidates) without confirming a cipher link.
+
+**loc.gov independent search**: built a 20-item pool (`pool/LOC-ARMSTRONG.tsv`) of Armstrong-Madison and
+Armstrong-Jefferson correspondence, 1807-1809, from the James Madison Papers and Thomas Jefferson Papers
+collections. **New finding: a standing, multi-year direct Armstrong<->Jefferson private correspondence channel
+exists (13 items, March 1807 to September 1809), separate from the official Armstrong-Madison State Department
+channel and not named in Kreider's own candidate list** (Pinkney, Monroe, Erving, Livingston, the New York
+circle). Fetched page-1 thumbnails for 14 pool items and had one Sonnet subagent classify each: **all 14 read
+clear_text, no numeral groups visible** -- a real negative at the page-1 granularity checked (2 of the 14 items
+are 10-12 pages long; only page 1 of each was sampled, so a later coded passage is not ruled out). Two same-date
+items (Armstrong to Madison and Armstrong to Jefferson, both 20 Oct 1808) are flagged, not resolved, as possibly
+the same letter cross-filed.
+
+**Livingston**: broad site-wide name-pair search returned 605 hits of pure noise; narrowed to the Madison Papers
+collection, `dates=1807/1809`, dropping the "Armstrong" term (the combined query returned 0): found 5 genuine
+Livingston-to-Madison letters in the window, including one dated **5 Feb 1808, fifteen days before the target
+letter** -- confirms Livingston was an active State Department correspondent at exactly this time, though none of
+these letters is Livingston<->Armstrong directly and none was read for content this pass (out of step 2's scope).
+Flagged as the most promising unread lead for a successor.
+
+**Pinkney**: name-pair query (`"William Pinkney" Armstrong`, Madison Papers, 1807-1809) returned **0 hits**;
+broadened to Pinkney alone, 43 hits, all Pinkney<->Madison or Pinkney<->third-party, no direct Pinkney<->Armstrong
+item found -- a genuine negative, extending ARM-REC's earlier "wrong direction" finding.
+
+**Net effect on family E**: no key, decode, or coded sibling letter found in either the Founders apparatus or the
+loc.gov Armstrong/Jefferson pool. The direct Armstrong-Jefferson channel is new information (not previously on
+file, not in Kreider's list) but shows no cipher on the pages sampled; Livingston's 5 Feb 1808 letter is an
+unread, plausible lead. Status stays open (rule 5); no NEAR.md row.
+
+Requests: web.archive.org ~13 (1 reachability + CDX/fetches for 11 document ids, 2 CDX timeouts on one id, ~1-3
+retries per successful fetch). loc.gov ~21 (2 collection searches, 14 item-metadata fetches, 4 name-pair
+queries, 1 spot fetch). tile.loc.gov: 14 thumbnail fetches. All >=1.5s apart, descriptive User-Agent. No logins,
+no credentials touched. 1 Sonnet subagent (thumbnail classification only, per this brief's cap).

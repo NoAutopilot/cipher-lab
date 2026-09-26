@@ -1,0 +1,22 @@
+item_id	date	collection	correspondents	direction	pages	page1_class	note
+mjm014421	1807-05-22	James Madison Papers	Madison<->Armstrong	Madison to Armstrong	?	not checked	"Conclusion of letter to General Armstrong" -- outbound, not fetched
+mjm015002	1808-08-30	James Madison Papers	Armstrong->Madison	Armstrong to Madison	?	known (not re-fetched)	"Postscript in Cipher" -- THE=972, already decoded by Bourdeau (see NOTES.md ARM-REC2), not the target's code
+mjm015148	1808-10-20	James Madison Papers	Armstrong->Madison	Armstrong to Madison	3	clear_text	page 1 (2nd file-group, likely first content page) fully ordinary handwriting, no numerals visible; SAME DATE as mtjbib019197 below -- possible duplicate/enclosure, not resolved this pass
+mjm015338	1809-06-05	James Madison Papers	Armstrong->Madison	Armstrong to Madison	3	clear_text	no numerals visible
+mjm015339	1809-06-06	James Madison Papers	Armstrong->Madison	Armstrong to Madison	?	not checked	day after 015338, not fetched
+mjm015415	1809-03-30	James Madison Papers	Armstrong->Madison	Armstrong to Madison	2	clear_text	no numerals visible
+mjm015527	1809-08-20	James Madison Papers	Armstrong->Madison	Armstrong to Madison	3	clear_text	no numerals visible
+mjm015558	1809-09-18	James Madison Papers	Armstrong->Madison	Armstrong to Madison	?	not checked	"Includes postscript of Sept ..." (title truncated in search results) -- possible second cipher postscript, not fetched this pass, flagged for a successor
+mtjbib017087	1807-03-29	Thomas Jefferson Papers	Jefferson<->Armstrong	Jefferson to Armstrong	2	clear_text	no numerals visible; earliest item in this direct channel found this pass
+mtjbib017827	1807-10-28	Thomas Jefferson Papers	Jefferson<->Armstrong	Armstrong to Jefferson	12	clear_text	page 1 of 12 (long letter) no numerals visible; rest of the 12 pages not checked
+mtjbib018243	1808-02-15	Thomas Jefferson Papers	Jefferson<->Armstrong	Armstrong to Jefferson	?	known clear (ARM-REC, direct read)	already fully read by ARM-REC: entirely in clear, personal letter of recommendation, no cipher
+mtjbib018542	1808-05-02	Thomas Jefferson Papers	Jefferson<->Armstrong	Jefferson to Armstrong	2	clear_text	no numerals visible; 10 weeks after the target letter
+mtjbib018672	1808-06-15	Thomas Jefferson Papers	Jefferson<->Armstrong	Armstrong to Jefferson	?	known clear (Founders 99-01-02-8145, fetched this pass)	fully in clear, personal/political content re Floridas, no cipher (see crib_sources.md ARM-REC3)
+mtjbib018840	1808-07-28	Thomas Jefferson Papers	Jefferson<->Armstrong	Armstrong to Jefferson	10	clear_text	page 1 of 10 no numerals visible; rest not checked
+mtjbib018885	1808-08-09	Thomas Jefferson Papers	Jefferson<->Armstrong	Armstrong to Jefferson	2	clear_text	no numerals visible
+mtjbib019197	1808-10-20	Thomas Jefferson Papers	Jefferson<->Armstrong	Armstrong to Jefferson	2	clear_text	no numerals visible; SAME DATE as mjm015148 above -- possible duplicate/enclosure, not resolved this pass
+mtjbib019374	1808-12-02	Thomas Jefferson Papers	Jefferson<->Armstrong	Jefferson to Armstrong	1	clear_text	no numerals visible
+mtjbib019849	1809-03-06	Thomas Jefferson Papers	Jefferson<->Armstrong	Jefferson to Armstrong	2	clear_text	no numerals visible
+mtjbib019968	1809-06-11	Thomas Jefferson Papers	Jefferson<->Armstrong	Armstrong to Jefferson	2	clear_text	no numerals visible
+mtjbib020030	1809-08-05	Thomas Jefferson Papers	Jefferson<->Armstrong	Jefferson to Armstrong	2	clear_text	no numerals visible
+mtjbib020076	1809-09-19	Thomas Jefferson Papers	Jefferson<->Armstrong	Armstrong to Jefferson	?	not checked	not fetched this pass

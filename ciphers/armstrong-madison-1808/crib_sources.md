@@ -231,3 +231,97 @@ lookups per the table above). No DECODE, no logins, no credentials touched.
    partially covered by the table above (5 of the roughly 15-20 letters in that window that Founders is likely
    to hold); a successor with web.archive.org access should step through Founders' own per-correspondent index
    pages rather than guessing document-ID titles one at a time via WebSearch.
+
+## ARM-REC3 pass, 26 Sept 2026 (LANE ARM worker ARM-REC3) -- Founders apparatus via Wayback (host now up), loc.gov Armstrong pool, Livingston/Pinkney
+
+**Step 0, reachability: web.archive.org is up this pass**, unlike the two consecutive outages ARM-REC/ARM-REC2
+found. `curl` to the bare root returned HTTP 200 and a CDX query returned real snapshot rows immediately. Fetches
+of individual documents remained intermittently unstable (a `Connection reset by peer` / `SSL_ERROR_SYSCALL` on
+roughly half of all first attempts, confirmed host-side via the same signature ARM-REC/REC2 logged, not a proxy
+fault), but every document below succeeded on a retry after a short pause (one retry after a pause is this
+project's own limit; in practice 1-3 retries, several minutes apart in aggregate, were needed across the batch --
+recorded honestly, not glossed as "one clean pass"). **The host has recovered enough to be usable, just not
+reliably enough for a single-attempt policy; a successor should expect to retry roughly half of all fetches.**
+
+**Step 1: Founders' own editorial apparatus for 99-01-02-2728 (the target letter itself) -- there is none beyond
+the source citation.** Fetched via its own latest Wayback snapshot (20260117203945). The Early Access page prints
+the full body (matching `ciphertext.txt` at a glance: same opening groups "453. 240. 760. 1480. symbol / 35. 681.
+1752. 1841. 1314." etc., same closing "5. 760. 47. 38. 580. 170.") and, below it, only the source line: **"DNA: RG
+59—DD—Diplomatic Despatches, France."** No footnote, no editorial note, no cross-reference to any other letter, no
+comment on the cipher at all -- this Early Access page carries no annotation apparatus whatsoever, consistent with
+Kreider's own "we've found no evidence that it ever was decoded" (already on file) and with this being flagged
+Early Access (not the final annotated volume). This directly answers this brief's step 1 first clause: there is no
+"source note and footnotes" to quote beyond the bare archival citation.
+
+**The 13-id table, fetched and read (9 of 13; resolves the 7484-vs-7514 question; nothing found bearing on the
+20 Feb letter):**
+
+| Founders/loc.gov id | Date | Content (read directly) | Bears on the 20 Feb letter / cipher? |
+|---|---|---|---|
+| 99-01-02-2745 = 99-01-02-7484 | 25 Feb 1808, Madison to Jefferson | "the grounds of a message communicating Pinkney's & Armstrong's letters ... Armstrong's letter is in the hands of General Dearborn." | No cipher mention; **confirms 7484 and 2745 are the same letter, cross-listed between the Madison and Jefferson collections, not two distinct letters** -- resolves this brief's named open question |
+| 99-01-02-7514 | 29 Feb 1808, Madison (Sec. of State) to the President, for the Senate | A formal report on impressed-seamen statistics (Nos. 1-13 of returns from Gen. Lyman, London agent) | **A genuinely distinct letter from 7484/2745**, different date, different subject (routine Senate report) -- resolves the "search-snippet conflation" flag: they are not the same letter |
+| 99-01-02-2907 | 5 Apr 1808, Armstrong to Madison | not fetched -- CDX query itself timed out 3 times (host instability, distinct from the fetch-stage resets above), stopped per the good-citizen rule | unknown |
+| 99-01-02-2949 | 15 Apr 1808, Madison (Sec. of State) report to the President | Concerns the source and date of an extract in Armstrong's 22 Jan 1808 letter (unrelated to 20 Feb) | No |
+| 99-01-02-2962 | 18 Apr 1808, Armstrong to Madison | Quotes a forwarded letter from Mr. Lear re Algiers/tribute troubles -- wholly in clear | No |
+| 99-01-02-3082 = 99-01-02-8003 | 15 May 1808, Madison to Jefferson | The already-quoted "undecyphered letter from A." passage, confirmed verbatim; **also**: "I send letters from Armstrong, Pinkney & Harris" in the same letter -- Armstrong's and Pinkney's dispatches were routinely forwarded to Jefferson together | Confirms the already-known quote; the Armstrong+Pinkney pairing is routine mail-handling, not evidence of a cipher between them |
+| 99-01-02-8006 | 16 May 1808, Madison to Jefferson | "There are letters from Erving but old & not worth forwarding" -- Erving named as an active correspondent being forwarded through Madison at exactly this date, one day after the "undecyphered letter" note | No direct link to the 20 Feb letter or a cipher, but corroborates Erving as a live, contemporaneous correspondent (Kreider's own candidate list) |
+| 99-01-02-8145 | 15 June 1808, Armstrong to Jefferson | Long, frank political letter (Floridas, war preparations) -- wholly in clear, no code | No |
+| 99-01-02-8708 | 18 Sept 1808, Madison to Jefferson | "Letters from Armstrong & Ervine recd." forwarded together again; also "Marat's[sic] dispatches to Turreau were in reality put under Irvine's[sic] cover to the Dept of State" (i.e. one correspondent's mail is sometimes physically carried under a different correspondent's cover) | No cipher mention, but a second instance of Armstrong+Erving being handled as a pair, and evidence that dispatches were sometimes routed under a different name's cover -- relevant background for "one concerted with another correspondent" |
+
+Not fetched this pass: 99-01-02-2907 (CDX timeout, see above). No document among the 9 read makes any reference to
+the 20 Feb letter, a duplicate of it, a changed or private cipher, or names a specific correspondent for one --
+consistent with Kreider's "never decoded" and with nothing in this apparatus discussing the letter at all.
+
+**Step 2: loc.gov independent search -- 14-item pool built and screened, all page-1 thumbnails read clear;
+Livingston and Pinkney name-pair searches done.**
+
+Full table in `pool/LOC-ARMSTRONG.tsv`. Searched the James Madison Papers and Thomas Jefferson Papers collections
+separately (`?q=Armstrong&dates=1807/1809&fo=json`) rather than RG 59/M34 (already covered by ARM-POOL): Madison
+Papers returned 28 hits (8 genuine Armstrong-Madison correspondence items in the window, the rest addenda/finding-
+aid volumes); Jefferson Papers returned 32 hits, of which **13 are direct Armstrong<->Jefferson correspondence
+items, 1807-1809** -- a standing, multi-year private correspondence channel between Armstrong and Jefferson
+running parallel to, and independent of, the official Armstrong-Madison State Department channel. This channel is
+**not named in Kreider's own list of candidate "other correspondents"** (Pinkney, Monroe, Erving, Livingston, the
+New York circle) but is real and dated back to March 1807, well before the 20 Feb 1808 letter.
+
+Fetched page-1 (or nearest small-thumbnail page) images for 14 of these items via `tile.loc.gov` (the "q"/service
+thumbnails, ~460-600px wide, well under any per-host size concern) and had one Sonnet subagent classify each
+page's visible content as clear_text / numeral_code / code_with_marks, per this brief's step 2. **Result: all 14
+read clear_text -- no numeral groups visible on any of the 14 pages checked.** This is a page-1-only sample (2
+of the 14 items run to 10-12 manuscript pages; only the first page of each was checked), so it does not rule out
+a coded passage appearing later in a longer letter the way the target's own cipher groups begin only after the
+opening word "The" -- but it is a real negative at the granularity checked: **no candidate sibling coded letter
+found in either collection's Armstrong correspondence, 1807-1809, on the pages sampled.**
+
+Two same-date items (`mjm015148`, Armstrong to Madison, 20 Oct 1808; `mtjbib019197`, Armstrong to Jefferson, 20
+Oct 1808) are flagged but not resolved this pass -- possibly the same letter cross-filed, possibly two genuinely
+distinct letters Armstrong wrote to his two correspondents on the same day; a successor should compare their
+content directly.
+
+**Livingston name-pair**: `"John Armstrong" "Robert R. Livingston"` as a free-text site-wide query returned 605
+hits of pure noise (unrelated Washington/Monroe/Livingston-family material, no date filtering available on the
+site-wide endpoint) -- not usable. Narrowed to the Madison Papers collection with `q="Robert R. Livingston"`,
+`dates=1807/1809` (no "Armstrong" term, since the combined query returned 0): **5 genuine Livingston-to-Madison
+letters in the window** (22 Mar 1807, 17 May 1807, 8 Jan 1808, **5 Feb 1808** -- fifteen days before the target
+letter -- and 24 Jan 1809), confirming Livingston was an active correspondent with the State Department in this
+exact period. None of these is Livingston<->Armstrong directly (they are Livingston<->Madison, the ordinary
+channel), and none was fetched for content this pass (out of this brief's step 2 scope, which asks only for the
+name-pair search, not a content read) -- flagged for a successor as the most promising unread lead: a Livingston
+letter timed 15 days before the target's letter is worth reading for any reference to Armstrong or a private
+cipher.
+
+**Pinkney name-pair**: `"William Pinkney" Armstrong` in the Madison Papers collection, `dates=1807/1809`: **0
+hits.** Broadened to `"William Pinkney"` alone (same collection/dates): 43 hits, all Pinkney<->Madison (the
+ordinary Britain-legation channel) or Pinkney<->third-party (Robert Smith, George Joy) -- no direct
+Pinkney<->Armstrong item found. This matches ARM-REC's own earlier finding (Pinkney-to-Madison items already on
+file, wrong direction) and extends it to a genuine 0-hit direct-pair search: **no Armstrong-Pinkney correspondence
+located in the James Madison Papers.**
+
+## Requests this pass (ARM-REC3)
+
+web.archive.org: 1 root reachability check (200) + CDX queries for 11 document ids (2 timed out after retries:
+99-01-02-2907's CDX itself, twice) + document fetches for 9 ids (each needed 1-3 attempts due to intermittent
+resets, all eventually succeeded). loc.gov: 2 collection searches (Madison Papers Armstrong, Jefferson Papers
+Armstrong) + 14 item-metadata `?fo=json` fetches + 2 Livingston-name-pair queries + 2 Pinkney-name-pair queries +
+1 spot item-metadata fetch (mjm015063, not pursued further) = 21. tile.loc.gov: 14 thumbnail image fetches. All
+>=1.5s apart, descriptive User-Agent, no logins, no credentials touched.
