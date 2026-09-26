@@ -822,3 +822,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T09:53Z	session_014xGZtQBV7cnyuXamAw4nX3	SALV-DIAG (Sonnet, cap 3)	fr2933-salviati-1525 NEAR diagnostic: syllabary control error sweep 10-14 pct	brief 2026-09-26-parent-salv-diag.md; parent 7g
 2026-09-26T10:18Z	session_01NBEtgi4z5WS97fN6B9rUea	ARM-TR2	done 8.17, ledgered D, archived	
 2026-09-26T10:18Z	session_01VX4DHvjyXAbKVtnAt559SC	ARM-CONS1	done 7.45, ledgered D, archived	
+2026-09-26T10:19Z	session_01D6243xTTWRK952CnYzsvxv	ARM-S2 (Sonnet, cap 12)	shorthand symbol-by-symbol match	brief 2026-09-26-lane-arm-c2-s2-shorthand-symbols.md; LANE ARM
+2026-09-26T10:19Z	session_01FfzLPckur8ykKG9w4u6N3o	ARM-REC3 (Sonnet, cap 5)	Founders notes + LOC correspondents	brief 2026-09-26-lane-arm-c2-rec3-founders-correspondents.md; LANE ARM
