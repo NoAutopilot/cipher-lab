@@ -647,3 +647,46 @@ high-confidence answers only -- but that rule was seen after scoring, so it need
 before any use; better first: re-transcribe f.78v 6-10 and f.79r 1-2 from native crops (Gallica ark
 btv1b9061879d canvas 85) with the margin decipherment line-by-line, since those segments are where alignment
 broke. Hosts: github.com 1 shallow clone (deleted); no other host.
+
+## NEAR step (1f) (bMAT1F), 26 Sept 2026 -- stopped at cap, partial
+
+Job: `.claude/briefs/runs/2026-09-26-lane-b8-mat1f.md`. Intake gate re-run 06:55 UTC: `matignon-mayenne-1586: partial
+(line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0. **Stopped at 07:16 UTC, over the
+USD 7 cap; steps 3 (settling) and 4 (fresh-seed control) not run. Key, reading and grade counts unchanged (H 10,074 / M 1,648 / U 1,272).**
+
+**Location.** `gallica_folio.py btv1b9061879d --folio 78/79`: the manifest has no folio labels (385 canvases, all
+unlabelled), so no estimate; taken instead from Bourdeau's own folio table (matignon1586/NOTES.md, fc0c9e8): canvas 85 is
+the opening, **f.78v = left page, f.79r = right page**; confirmed on the overview (images/f78v_79r/overview_1600.jpg).
+
+**Crops.** Native regions of canvas 85 (images/f78v_79r/src_*.jpg, manifest.json). `tools/iiif_lines.py` fetched the
+f.78v block (1250,2400,3070,1060) but its band detection failed on this dense slanted hand (8 of 12 centres, lines missed
+and doubled; debug overlay f78v_lines_debug.jpg), so bands were set by eye from a pixel ruler and cut with PIL
+(f78v_{A..F}_s{1,2}.jpg, f78v_G_tail.jpg; f79r_{A,B}_s{1,2}.jpg; boxes in manifest.json). Reference sign chart for label
+consistency: f.78v lines 1-5 (the lines bMAT1E's aligner could anchor) with Bourdeau's labels
+(align1f/reference_f78v_l1-5.tsv, ref/*.jpg); passes were blind for every target line.
+
+**Transcription finding (image, one pass for f.78v -- grade M until a second pass agrees).** The f.78v cipher block has
+**11 full lines plus 3-4 signs** at the head of the following prose line ("... Les armees des sieges ..."); Bourdeau's
+`f78_cipher.txt` has **10**. Pass A (align1f/passA_f78v.tsv) against Bourdeau line by line, each half-line aligned
+against every Bourdeau line (align1f/diff_vs_bourdeau.py -> diff_f78v.tsv): page lines 6, 7, 8 match his 6, 7, 8 on both
+halves; page line 9's left half = his 9, its right half matches no Bourdeau line; page line 10's left half = his 10's left,
+its right half matches none; **page line 11's right half = his line 10's right half** (16 of 19 tokens shared), its left
+half matches none. So his line 10 is page line 10 (left) joined to page line 11 (right), and about 1.5 page lines (~55
+signs: 9 right, 10 right, 11 left) plus the tail signs are absent from his transcription -- a line-join slip, which
+explains why f78.6-10 would not align to the crib in bMAT1D/bMAT1E. Pass B for f.78v was stopped at the cap before it
+wrote anything.
+
+**f.79r lines 1-2 (two passes).** `reconcile_passes.py` (align1f/agreement.tsv, disagreements.tsv, ciphertext_draft.tsv):
+agreement 44/74 = 59.5% (line 1 52%, line 2 66%), 30 disagreement columns, unsettled. Both passes follow Bourdeau's
+line 1 and 2 in order and length (no missing segment); the recurring difference is **`4` (a U sign) vs `4+` (=m, H)**:
+pass B reads plain `4` where Bourdeau writes `4+` at several positions, pass A mostly `4+`. Not settled on the image.
+
+**Margin decipherment.** Bourdeau's `crib_f78.txt` has 9 lines, the last four apparently two margin columns read across;
+on the overview the f.78v margin runs well below the cipher block. The native margin fetch (600,2150,800,2500) failed
+twice with a connection reset at gallica.bnf.fr (07:03, 07:04 UTC); stopped the host per the good-citizen rule.
+
+**Next step (one line, not done).** Second blind pass over f78v_{D,E,F}_s*.jpg + G only (the slip lines, ~4 subagent-
+calls' worth is too many: one call, crops only), settle 4/4+ on f79r from disagreements.tsv, fetch the f.78v margin and
+transcribe it, then build corrected f78/f79 streams and run make_masked.py control with a fresh seed (scripts copied
+in align1f/, unchanged gate 16/20). Hosts: gallica.bnf.fr 5 answered + 2 reset (7 of 12); github.com 1 shallow clone
+(dbourdeau/cyphersolver, read matignon1586/NOTES.md folio table, deleted).

@@ -1,0 +1,15 @@
+page_line	half	n_tokens	best_bourdeau_line	shared_block_tokens
+A	left	20	6	15
+A	right	20	6	16
+B	left	19	7	14
+B	right	20	7	16
+C	left	18	8	12
+C	right	19	8	14
+D	left	20	9	13
+D	right	20	1	8
+E	left	17	10	12
+E	right	17	6	8
+F	left	18	2	6
+F	right	19	10	16
+G	left	2	8	1
+G	right	2	1	0

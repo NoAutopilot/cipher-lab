@@ -1,0 +1,75 @@
+line	position	sign	confidence	alt	why
+A	1	H	M	B:he	differ
+A	2	e	M	B:E	differ
+A	3	4+	M	B:t	differ
+A	4	d	H		agree
+A	5	f	H		agree
+A	6	Ze	M	B:-	gap
+A	7	L	H		agree
+A	8	y	M	B:B	differ
+A	9	14	H		agree
+A	10	w-	M	B:c	differ
+A	11	U	H		agree
+A	12	B	H		agree
+A	13	t	H		agree
+A	14	?circle-x	M	B:4	differ
+A	15	H	M	B:h	differ
+A	16	.v.	H		agree
+A	17	U	H		agree
+A	18	e	M	B:-	gap
+A	19	R	H		agree
+A	20	a	M	B:A	differ
+A	21	T	H		agree
+A	22	7	M	A:-	gap
+A	23	q	M	B:4	differ
+A	24	h	M	B:d	differ
+A	25	D2	H		agree
+A	26	7	M	B:-	gap
+A	27	Ze	H		agree
+A	28	e	H		agree
+A	29	D2	H		agree
+A	30	4+	M	B:4	differ
+A	31	3	M	B:z	differ
+A	32	t	H		agree
+A	33	ff	H		agree
+B	1	h	H		agree
+B	2	X	M	B:U	differ
+B	3	4	H		agree
+B	4	E	M	B:Ze	differ
+B	5	D2	H		agree
+B	6	h	H		agree
+B	7	t	M	B:T	differ
+B	8	.v.	H		agree
+B	9	h	H		agree
+B	10	h	H		agree
+B	11	m	H		agree
+B	12	14	H		agree
+B	13	w-	M	B:2	differ
+B	14	S	M	B:s	differ
+B	15	D2	H		agree
+B	16	?hash	M	B:H	differ
+B	17	Ze	H		agree
+B	18	14	H		agree
+B	19	A	H		agree
+B	20	h	H		agree
+B	21	d	M	B:A	differ
+B	22	m	H		agree
+B	23	t	H		agree
+B	24	s	H		agree
+B	25	i	M	B:-	gap
+B	26	q	H		agree
+B	27	t	H		agree
+B	28	B	M	B:h	differ
+B	29	o	M	B:4	differ
+B	30	q	H		agree
+B	31	L	H		agree
+B	32	c	M	B:4	differ
+B	33	o	H		agree
+B	34	e	H		agree
+B	35	t	H		agree
+B	36	d	M	B:R	differ
+B	37	7	H		agree
+B	38	d	M	B:t	differ
+B	39	B	M	B:h	differ
+B	40	T	H		agree
+B	41	m	H		agree
