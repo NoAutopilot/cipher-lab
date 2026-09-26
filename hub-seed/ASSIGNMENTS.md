@@ -930,11 +930,8 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T18:15Z	session_01EYznd2r84bEjkjv3wAYKK4	OUT-CHECK-D	done 1.51 D (get_session), ledgered, retitled ARCHIVED, archived by 7i	DECODE draft checked 18:03; sent by the owner 18:04 pre-mirror
 2026-09-26T18:15Z	session_01DfYRf9UUmHn1yoNHVw6HeE	V-GATE2	done 5.07 D (get_session), ledgered, retitled ARCHIVED, archived by 7i	gate 2 closed x11, NOTIFY.md 13 rows, no class moved
 2026-09-26T18:15Z	session_01PnZZpvfruNUv4n3H1E62cb	LANE B12 orchestrator	closed 18:12, 3.14 by get_session (ledger row edited from 2.40), archived by 7i	handoff STATUS.md LANE B12 handoff; workers bSALW 3.60 D, bSPECFILL 2.57 D
-<<<<<<< HEAD
 2026-09-26T18:58Z	session_01QcEVugfMG9dy8YkaHSQBNe	ARM3-COR (Sonnet, cap 6)	other correspondents Bowdoin/Warden/Skipwith/Parker/Barlow/Mason + Weber WE027	brief 2026-09-26-lane-arm3-j1-correspondents.md; LANE ARM3
 2026-09-26T18:58Z	session_01XFDj26h7hTsPgt7Bo6dKb4	ARM3-DICT (Sonnet, cap 6)	family G dictionary-code test, control first	brief 2026-09-26-lane-arm3-j2-dictionary.md; LANE ARM3
-=======
 2026-09-26T18:54Z	session_01PmFYDrdFDjraA2rc932HcQ	LANE ARM3 orchestrator (Opus, cap 40)	armstrong-madison-1808 cycle 3: the other-correspondent sweep (Bowdoin, Warden, Weber code 27), a dictionary-code design test, the model-in-the-loop crib loop, each with a control	brief 2026-09-26-lane-arm3-orchestrator.md; parent 7i (depth 1); owner's ask 18:35
 2026-09-26T18:54Z	session_01PKM7SS1VPWFru2S15sAGSc	QUOTE-DRAFT (Sonnet, cap 8)	reproduction-quote drafts per institution for the owner's runner to send; live BnF route	brief 2026-09-26-parent-quote-draft.md; parent 7i
 2026-09-26T19:00Z	session_013ynvrTFtonQsvhEdaY6bie	retrospective v	done 3.60 D (get_session), ledgered, retitled ARCHIVED, archived by 7i	RETRO-2026-09-26j.md, 5 proposals
->>>>>>> 8fba280 (update)
