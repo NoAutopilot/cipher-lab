@@ -94,7 +94,7 @@ over-claims prevented by the gates before anything left the repository.
 
 Brief .claude/briefs/runs/2026-09-26-lane-ax-orchestrator.md; COMMON 2026-09-26-lane-ax-COMMON.md.
 
-- **Premise correction, job 1 (00:35 UTC).** The harvest's 15 "not stated / not nominated" WVO letters were all triaged on
+- **Premise correction, job 1 (00:19 UTC).** The harvest's 15 "not stated / not nominated" WVO letters were all triaged on
   24 Sept (LANE N/N2/R2/R3/V2): 4503, 5194, 5200, 5207, 5213, 5218, 5221, 5222, 5799, 5810, 5811 and 10260 are printed in clear
   in Groen (text known; 5200, 5549 PS N1; 4503, 5811 N0); 8246 and 10260 are found-solved folders; 5549's body (539 numerals,
   the "verendertte" cipher) has no key after fit tests on 5204-5209, 5213, 5550, 5552, 5557, 5575 and a matched-control crib
@@ -106,7 +106,7 @@ Brief .claude/briefs/runs/2026-09-26-lane-ax-orchestrator.md; COMMON 2026-09-26-
   random-block null median 0.051, p95 0.057 -> probably the same block design with another letter order. AX-5799 aligns 5799
   to Groen (key ours, 5799's text N1) and tries it on 4612 and the 5549 body with shuffled-key controls; a block-constrained
   Opus cryptanalysis of 4612 via family_run.py only if that fails.
-- **Workers:** (filled at dispatch)
+- **Workers (dispatched 00:20 UTC, Sonnet):** AX-5797 session_01RfSNoU45Mqmh5Gk8gQjPGP (box 60); AX-5799 session_01AeQexCRuXtPoVQ3wFxrK6h (box 75); AX-BRO3 session_01UY47E7pTTfCD7tVDcrtYJy (box 75); AX-STEV session_01V91nNBXmbzPKu39Rs3Sojb (box 40).
 - **For the parent:** nothing on the board yet from this lane.
 
 ## LANE ZX handoff (session_01MxueEQJUGF9PWJiYcVyvBM), 25 September 2026, 15:42-22:20 UTC (closed)
