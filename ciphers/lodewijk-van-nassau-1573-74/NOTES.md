@@ -1995,7 +1995,7 @@ total; excluding the same out-of-bounds files, 24240 KB (23.7 MB), under the 30 
 regenerable byte-for-bitwise-identical from the WVO PDF (confirmed below). Removed 11 that neither NOTES.md nor
 any tsv/json/py cites as a specific evidence page: `images/{04610,04611}_p{2,3,4}.png`, `04612_p{2,3}.png`,
 `04613_p3.png`, `04615_p2.png`, `04616_p2.png` (`git rm`; still readable from git history, e.g. `git show
-<pre-shrink-sha>:ciphers/lodewijk-van-nassau-1573-74/images/04610_p2.png`, sha listed per-file in
+6fa733f3215941fb10a0d0e086b06bb654c6663c:ciphers/lodewijk-van-nassau-1573-74/images/04610_p2.png`, sha listed per-file in
 `images_manifest_full.tsv`). Kept one full page per letter as a sample (4611_p1, 4612_p1, 4616_p1, none
 individually cited) plus every page NOTES.md cites by filename as visual evidence (4610_p1: cipher present;
 4613_p1/p2 and 4615_p1/p3: sibling decipherment sheets, R12's line-crop source pages) -- 8 pages total,
