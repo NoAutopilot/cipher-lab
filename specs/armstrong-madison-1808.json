@@ -23,11 +23,11 @@
  ],
  "matched_control": "test 1's and test 2's own controls are named per-test above (rule 3: design-matched, not just length/alphabet-matched, since this letter's own design -- a code Bourdeau's own paired check shows is NOT THE=972 -- has no independently-solved sibling of the same design at this length on file yet)",
  "judge": {
-  "language": "en",
-  "letters_min": 200,
-  "letters_max": 500,
+  "language": "en18",
+  "letters_min": 600,
+  "letters_max": 3000,
   "control_samples": 200,
-  "corpus_caveat": "LANG_CORPORA['en'] (pg1661_holmes.txt + pg2701_mobydick.txt) has an unknown-reliability leave-one-out false-negative spread (0.44-0.64 at N=200-500 even after adding three more Gutenberg sources, per tools/data/en/README.md and CLAUDE.md rule 3's EN-FOLDS lesson) -- treat a judge FAIL or PASS on this target as of unknown reliability, not a settled result, until a period/register-matched corpus (1804-1810 American diplomatic English; Founders Online's own full-text corpus of Armstrong/Madison correspondence is the obvious candidate) is built and fold-checked the way pt18/es17c were."
+  "corpora_note": "Built and fold-checked 26 Sept 2026 (LANE ARM ARM-EN18, tools/data/en18/README.md): 1795-1815 American diplomatic/official English (Monroe Vols II/V, Gallatin Vol I, Madison Vols VII/VIII, Jefferson Vol IX), 4,806,387 letters folded. Leave-one-file-out at N=1000/1500 (about this target's own 369-code decode length): blended false-negative rate 14.2%/15.1%, per-fold spread 0.270/0.260 -- roughly 4x lower blended rate and 2.5x tighter spread than the same check on LANG_CORPORA['en'] at the same N (58.6%/64.8% blended, 0.675/0.710 spread). Still above the EN-FOLDS amendment's 0.05 per-fold-spread gate (driven by Gallatin Vol I and Jefferson Vol IX reading as outliers against the more despatch-heavy Monroe/Madison volumes): treat a judge FAIL or PASS on this target as substantially better-calibrated than under 'en' but still of a known, non-zero residual unreliability, not a settled result."
  },
  "value": "moderate-high: Tomokiyo's own preferred next target, a named editorial project (Papers of James Madison) is waiting on a reading, and the AFIO claim's rejection is already control-backed and on file so a real attempt starts from a clean board -- but no sibling code has been shown to fit, so cost/effort per CLAUDE.md's expected-value rule is not yet knowable; test 1 is the cheap first move that would tell us",
  "model": "Sonnet",

@@ -168,3 +168,29 @@ was already on disk from an earlier sweep, not re-fetched). web.archive.org: 2 (
 founders.archives.gov: 1 (the empty-202 attempt, not retried, per the good-citizen rule -- Wayback used
 instead). WebSearch: 3 queries (a prior/model-solve check, a Krajcovic check). No DECODE login, no logins of
 any kind, no credentials touched. All fetches one at a time, >=1.5s apart, descriptive User-Agent.
+
+## ARM-EN18 (26 Sept 2026): era/register-matched judge corpus built and fold-checked
+
+The spec's `judge` block used `LANG_CORPORA["en"]` (Sherlock Holmes 1892 + Moby-Dick 1851, both 19th-c.
+fiction), already flagged by TOMO-REPLY's `corpus_caveat` as an era/register mismatch for this 1808 Paris
+despatch (CLAUDE.md rule 3's pt18/es17c/EN-FOLDS lessons). Built `tools/data/en18/` -- six Internet Archive
+full-text sources of 1794-1819 American diplomatic/official correspondence (Monroe Vols II/V, Gallatin Vol I,
+Madison Vols VII/VIII, Jefferson Vol IX; two more Monroe volumes 503'd on IA and were dropped after one retry
+each, per the good-citizen rule), 4,806,387 letters after `fold()`. Registered as `LANG_CORPORA["en18"]` in
+`tools/judge_plaintext.py` (a shared-tool option, not a private copy, per Usage item 8), with an offline test
+(`tools/tests/test_judge_plaintext_lang_en18.py`, a held-out Madison passage not in the corpus, passes; shuffled
+and random-letter controls both fail).
+
+Leave-one-file-out fold check at N=1000/1500 (about this target's own 369-code decode length, not the 200/500
+`tools/data/en`'s own check used): blended false-negative rate **14.2%/15.1%**, per-fold spread **0.270/0.260**
+-- roughly 4x lower and 2.5x tighter than the identical check run against `en` at the same N this pass
+(58.6%/64.8% blended, 0.675/0.710 spread). Register-matching helped substantially here, the same direction as
+pt18 vs pt17, but **the spread is still above the EN-FOLDS amendment's 0.05 gate** (Gallatin Vol I and Jefferson
+Vol IX read as outliers against the more despatch-heavy Monroe/Madison volumes when held out) -- a FAIL/PASS
+against `en18` is better-calibrated than against `en` but not a settled result. Full numbers in
+`tools/data/en18/README.md`. `specs/armstrong-madison-1808.json`'s judge block updated: `language` -> `en18`,
+`letters_min`/`letters_max` widened to 600/3000 (the previous 200/500 range cannot fit a 369-group decode),
+`corpora_note` records the numbers above. No long-s OCR misreads found in any of the six sources (checked, not
+corrected -- none needed). Requests: archive.org about 16 (six successful `_djvu.txt` fetches, two
+advancedsearch.php calls, two 503s on `writingsjamesmo0{4,5}unkngoog` retried once each per the good-citizen
+rule then dropped, one held-out test snippet via byte-range on a seventh, uncommitted volume). No other hosts.

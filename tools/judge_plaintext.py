@@ -41,6 +41,15 @@ LANG_CORPORA = {
     # prose" model. Unresolved: a FAIL/PASS against "en" is of unknown reliability by the amendment's own
     # rule. See tools/data/en/README.md before trusting a FAIL/PASS that cites this corpus.
     "en": [DATA / "pg1661_holmes.txt", DATA / "pg2701_mobydick.txt"],
+    # en18 (26 Sept 2026, LANE ARM ARM-EN18): 1795-1815 American diplomatic/official English --
+    # Monroe (Hamilton) vols II/V, Gallatin (Adams) vol I, Madison (Hunt) vols VII/VIII, Jefferson
+    # (Ford) vol IX -- for armstrong-madison-1808 (a 1808 Paris despatch), which "en"'s own two
+    # 19th-c. British/American novels do not register-match. See tools/data/en18/README.md for the
+    # leave-one-file-out false-negative spread at N=1000/1500 (this target's own ~369-code length)
+    # beside the same check for "en" -- record the spread before trusting a FAIL/PASS from either.
+    "en18": [DATA / "en18" / "writingsjamesmo02unkngoog.txt.gz", DATA / "en18" / "writingsjamesmo11monrgoog.txt.gz",
+             DATA / "en18" / "writingsalbertg01gallgoog.txt.gz", DATA / "en18" / "writingsofjamesm0007unse_s2a1.txt.gz",
+             DATA / "en18" / "writingsofjamesm0008unse.txt.gz", DATA / "en18" / "writingsofthomas09jeffiala.txt.gz"],
     "de": [DATA / "de16" / "composed_enhg.txt"],
     "fr": [DATA / "fr16" / "lettresdecatheri01cathuoft_djvu.txt.gz"],
     "it": [DATA / "it16" / "alcuneletteredip00ferr.txt", DATA / "it16" / "delleletterefam02seghgoog.txt",
