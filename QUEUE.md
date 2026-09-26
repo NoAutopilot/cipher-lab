@@ -7072,3 +7072,58 @@ rows 13 and 15 stay flagged probable-but-unconfirmed, unchanged by this pass.
 Hosts: archive.org 8 requests (over this job's own stated cap of 4 — reported honestly, not "well under
 cap"; 2 advancedsearch queries, 3 metadata lookups, 3 full-text fetches, all >=1.5s apart with a browser UA).
 No subagents, no logins, no image opened, no novelty wording.
+
+## WVO circles work list (LANE WC, 26 Sept 2026)
+
+Worker WC-MAP, brief `.claude/briefs/runs/2026-09-26-lane-wc-map.md`. Reads `sources/wvo/NOTES.md`,
+`sources/wvo/cipher-letters-2026-09-24.tsv` (92 rows) and `sources/wvo/print-status-2026-09-24.tsv` (the
+24 Sept csWV3 print-status pass, which already resolved nearly every "not stated" row in the raw harvest to
+Class A/on-leaf/found-solved) together with the WV1-WV4 rows above and every named folder's own NOTES.md.
+Desk work only, no images, no transcription; one `resources.huygens.knaw.nl` request this pass (not needed in
+the end -- every field used was already on disk in a folder's own NOTES.md or the two source TSVs), so 0 of
+the 20-request allowance used.
+
+**Correction to the owner-parent brief's premise:** the brief rated "Hessen 1567 (1127 key on file)" highest.
+No key exists for 1127 (the target itself) at all -- `willem-van-hessen-1567/NOTES.md` (YX-CSHES,
+25 Sept 2026) is explicit that the original manuscript, where the cipher sits, is **not copy-free**
+(Koninklijk Huisarchief Den Haag A 11/XIV B/15-43, no PDF in WVO, REQUEST.md filed and still waiting on the
+person); nothing has been tested against it because it cannot be imaged from the cloud. What is "on file" is a
+partial (14 of an estimated 1000+ signs, mostly grade M) paleography read of a *different*, solved-on-leaf
+sibling letter (1069, same correspondent, opposite direction), still short of a usable key, per its own
+$20-40 successor estimate (OX-WV69/YX-HES69). Ranked below Jan van Nassau accordingly.
+
+| Rank | Circle | Folder | Status / intake gate | Unread-by-us letters (briefnr, date, direction, extent) | Solved sibling(s) and where the solution is | Cheapest control-backed test | Blocker |
+|---|---|---|---|---|---|---|---|
+| 1 | Jan van Nassau (WV1) | `jan-van-nassau-1572-75` | open; `intake_gate_check.py jan-van-nassau-1572-75` -> exit 0 ("edition/page or full-text-search citation found within 6 lines") | 5549 (21-11-1573, from, partly) -- **already claimed and largely worked** (J5S/AX-MERGE: key_full v2 decode stands at C186/H6/I13/M8/U13 of 226 tokens, pending a verifier read, not this brief's to re-run). The genuine untouched task: **5198's own 1842 Nepveu tot Ameyde decipherment and 5199's Groen+Nepveu tot Ameyde decipherment are not yet transcribed anywhere in this repo** (folder's own "Next step", 24 Sept, still standing) -- 5200/5207/5213/5218/5221/5222 are NOT open candidates any more (csWV3, 24 Sept: all six resolved Class A/found-solved, corrected in this folder's own NOTES.md) | 5198, 5199 both "solved on leaf" (afgebeeld, Nepveu tot Ameyde 1842 + Groen); 5033 via Groen van Prinsterer; 5551/5564 already-queued siblings | Locate and transcribe 5198/5199's own printed/on-leaf decipherment (a desk lookup + short transcription, not fresh cryptanalysis -- the decipherment is already published, only not yet in this repo); once transcribed, `tools/interlinear_align.py` against the two letters' own ciphertext, leave-one-line-out control, gate 0.60, gives a real key usable on any future circle letter | None -- copy-free, no live ROOM.md claim on this specific task (5549 itself is claimed, this is not) |
+| 2 | Willem van Hessen | `willem-van-hessen-1567` | open; `intake_gate_check.py willem-van-hessen-1567` -> exit 0 | 1127 (28-1-1567, from, partly) -- the target; WVO's own curators state its cipher is "onopgelost" | 174 (solved on leaf + Groen III Lettre CCLXIX, printed in clear) and 1069 (solved on leaf, contemporary interlinear decipherment, own hand) are siblings of 1127's correspondent, not of each other's key -- sign-by-sign comparison (OX-WV69) found only 2 of 10 confirmed signs shared between 174 and 1069's systems, 1 confirmed contradiction, so 174's key is not licensed for use on 1069 or 1127 | Continue OX-WV69/YX-HES69's tight-crop glyph atlas on 1069 (12 of an estimated 1000+ signs read so far, grade M) -- this is a direct paleography read (grade H/M), not a control-backed cryptanalysis test, and does not by itself unblock 1127 | 1127 itself is **not copy-free** (KHA original A 11/XIV B/15-43 has no PDF; REQUEST.md filed, waiting on the person); the 1069 atlas is copy-free but expensive ($20-40 successor estimate, not a cheap first test) |
+| 3 | Ph.J. van Borssele van der Hooghe / Heinsius | `borssele-heinsius-1714` | open; `intake_gate_check.py borssele-heinsius-1714` -> exit 1 ("no standard-edition citation... within 6 lines" -- cosmetic: the edition citation, *Briefwisseling van Anthonie Heinsius 1702-1720* Deel 15 (GS227) p.531 no.959, is on record, just past the tool's 6-line window under "## Source") | the cipher letter on H.A. 1836 (3-4-1714, unspecified direction/extent beyond "onopgelost") -- possibly (editor's own word "mogelijk", not confirmed) the same leaf as an already-present "oplossing" about the queen's health | Ambiguous: editor Veenendaal's footnote to letter 959 states a solution ("oplossing") of a ciphered letter is physically present in the same dossier and *may* be this one, but does not confirm it | View the actual leaf (H.A. 1836) and compare the "oplossing" text to the cipher letter's own hand/system -- if they match, found-solved; if not, a real sibling-recovery case | **Not copy-free** (NA 3.01.19 invnr 1836 confirmed `"availability":"PHYSICAL"`, no scan; REQUEST.md filed) -- no cheap test possible until an archive visit or copy order |
+| 4 | P. van Brederode (no WVO circle -- a different edition) | `oldenbarnevelt-brederode-1605` | open; `intake_gate_check.py oldenbarnevelt-brederode-1605` -> exit 0 | the one ciphered item in Veenendaal's whole edition (no. 92, 21-2-1605, ~121 numeral-code tokens in otherwise plain Dutch prose) | **None** -- the edition's own editor states outright he could not find the key and had too little comparison material; not a WVO record at all (found via a different Huygens retroboeken edition) | none untried -- every lead already run dead: the archival citation ("Holland 2613"/"2589") does not resolve to either plausible modern toegang by direct EAD lookup, and a full leaf-by-leaf walk of the adjoining 1605-1606 correspondence bundle (91 leaves) found no cipher, key or duplicate anywhere | **No solved sibling anywhere -- not a recovery circle, cryptanalysis only, lowest priority** per this brief's own instruction; the one unread item (Cryptologia 48(2) "Keys with nomenclatures") is a literature lead, not a cheap test |
+
+**Excluded, logged as such (per this brief's item 3):**
+- `wvo-hessen-1564` -- parked below unicity, no key (NX-WVO174, 26 Sept 2026: 174's nomenclator key tested
+  against 1109's cipher, both a coverage gate (62.7/67.3% vs 70% gate) and a shuffle/judge gate failed
+  decisively; excluded by this brief's own scope line).
+- The Nassau 4612/5799 pool (`lodewijk-van-nassau-1573-74`) -- exhausted per the LANE AX/AX2 handoffs in
+  STATUS.md (`key_repair.py`'s excess-objective attempt: known-answer recovery 0.000->0.625, never both
+  controls above gate together, logged untested-by-this-tool in HYPOTHESES.md, CLAUDE.md rule 3's own (c)
+  precedent). The rest of this folder (WV2 circle: 4503, 5194, 5797, 5799, 5810, 5811) is also excluded --
+  csWV3 (24 Sept) already resolved 4503/5811 to N0, 5194/5799/5810 to Class A (printed in clear), and 5797 to
+  a 7-gap philological residue with no cipher-breaking angle; nothing left to test, and the folder carries
+  heavy live concurrent activity (LANE AX2/V8/V9, ROOM.md this window) regardless.
+- `august-van-saksen-1561-64` WVO 53/126 -- claimed-elsewhere: LANE VO1's Japikse ruling is in progress
+  (ROOM.md 17:52/17:55, orig. 14:38); intake gate also currently exits 1 (`partial` with no citation in 6
+  lines), the verifier's business, not touched here.
+- `la-garde-1577` -- claimed-elsewhere: LANE WC worker WC-LAGARDE has a live claim on this exact folder
+  (ROOM.md 17:56, this session), no ROOM.md `done` line yet.
+- `orange-nassau-1572` and `gunther-van-schwarzburg-1561` -- both `found-solved`, not candidates
+  (`intake_gate_check.py` exits 1 on both, "must read `blocked`" -- cosmetic, both already carry an AUDIT.md
+  N-class and are outside the Pipeline's intake gate's own scope for a found-solved target).
+
+**Dispatch order for the lane orchestrator:** (1) Jan van Nassau -- locate and transcribe 5198/5199's own
+1842/Groen decipherment (cheapest, highest value: unlocks a real, already-published crib for the circle,
+copy-free, unclaimed); (2) Willem van Hessen -- continue the 1069 glyph atlas only if a $20-40 cap is
+available, understanding it does not reach the actual target (1127) until REQUEST.md is answered; (3)
+Borssele-Heinsius and (4) Oldenbarnevelt-Brederode both wait on a person (an archive visit/copy order, or a
+literature lead) and are not cheap-test candidates today. Borssele-Heinsius (H.A. 1836) is already ASKS.md
+row 46 ("single most decisive item"); Oldenbarnevelt-Brederode has no ASKS row yet (its blocker is a dead-end
+search, not an owner-actionable request) and does not need one until a new lead surfaces.
