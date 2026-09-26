@@ -1,0 +1,107 @@
+line	pos	word_A	word_B	conf_A	conf_B
+1	7	+	g		l
+1	8	+	Truono		m
+1	9	[C]	g		l
+1	28	li	?	l	l
+2	29	parmj	parmi	h	h
+3	2	q~	che	m	m
+3	3	s'è	si	l	m
+3	4	+	sia		m
+3	7	gra~	?	m	l
+3	8	+	gra		m
+3	9	+	Torto		h
+3	10	Torto	+	h	h
+3	31	<none>	?	l	l
+4	28	[C]	Et		m
+6	2	ariv	faria	l	m
+6	4	onn	benn	l	m
+6	6	for	forst	l	m
+6	8	da	?	m	l
+7	1	<none>	?	h	l
+7	8	[C]	?		l
+8	1	<none>	?	h	l
+8	13	a	?	h	l
+8	29	b	?	l	l
+9	1	<none>	?	h	l
+9	2	<none>	?	h	l
+9	6	e	?	l	l
+9	7	[C]	?		l
+9	9	<none>	?	l	l
+9	24	luarn	lenar	l	l
+9	27	+	leter		l
+9	28	loro	+	l	l
+10	1	e	cito	l	m
+10	2	tutto	+	m	m
+10	3	?	d	l	l
+10	4	<none>	?	m	l
+11	4	<none>	?	h	l
+11	15	fare	P	l	l
+11	16	+	fare		h
+11	18	quali	qualche	l	l
+12	1	morfeu	impresa	l	m
+12	8	e	?	l	l
+12	9	n	?	l	l
+12	10	fev	+	l	l
+12	12	h	?	l	l
+12	19	[C]	?		l
+13	1	[C]	?		l
+14	4	non	Pure	m	h
+14	12	poi	p	l	l
+14	13	ri	ricordo	l	h
+14	15	lo	+	l	h
+14	19	poi	<none>	l	l
+14	20	+	pot		l
+14	21	sono	+	m	l
+14	22	+	uo		m
+15	1	e	glino	l	h
+15	2	?	+	l	h
+15	3	uno	+	m	h
+15	19	re	S	l	l
+15	21	m	ny	l	l
+16	1	risponde	risponda	h	h
+16	6	+	la		h
+16	8	la	oppenions	h	m
+16	9	opinioni	+	h	m
+16	11	li	f	l	l
+16	14	fu	tu	l	l
+16	23	p	piace	l	m
+17	2	questo	questa	m	h
+17	3	+	ad		m
+17	4	secondo	accostarm	h	m
+17	5	+	seconda		h
+17	7	+	Altrunti		m
+17	12	pensiamo	?	l	l
+17	13	+	pensare		h
+17	15	+	il		h
+17	16	+	modo		h
+17	17	Homo	+	m	h
+17	19	o	come	l	m
+17	20	l	+	l	m
+17	21	Cons	+	h	m
+17	22	p	?	l	l
+18	4	no	ad	m	h
+18	5	a	accociarm	l	l
+18	7	co	+	l	l
+18	10	ian	+	l	l
+18	11	?	+	l	l
+18	12	?	Altrimenti	l	m
+18	13	Alcuno	+	m	m
+18	18	+	<none>		l
+18	23	[C]	questa		h
+18	24	[C]	mattina		h
+18	25	questo	+	h	h
+18	27	mattina	+	h	h
+19	1	E	ξ	h	h
+19	8	alcuno	ad	m	h
+19	9	+	lungo		h
+19	12	E	el	h	h
+19	13	gra~	+	m	h
+19	14	+	gra		m
+19	15	co	Cancellhiero	l	h
+19	17	ca	+	l	h
+19	18	lie	+	l	h
+19	19	r	+	l	h
+19	20	o	+	l	h
+19	21	g	et	l	h
+19	22	H	habbiamo	l	h
+19	23	habbiamo	+	h	h
