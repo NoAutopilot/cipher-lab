@@ -1,6 +1,7 @@
 # Onboarding
 
-For a new person joining the project, and for the first session of any agent they run. Read this, then
+For a new person joining the project, and for the first session of any agent they run. Read `SYSTEM.md` first (the
+one-page map of roles, outside loops, gates, registers and levers, with a diagram), then this, then
 `CLAUDE.md`, then the tail of `UPDATES.md`, then `STATUS.md`. Twenty minutes, and you are current.
 
 ## What this project is
