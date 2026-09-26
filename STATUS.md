@@ -174,14 +174,19 @@ SCOUT-OWN-2026-09-26.md (the 1593 Nevers key-no.60 pool stays closed: palaeograp
   Sicily 19 / 2, none the viceroy's letter; Messina 0) -- the earlier "zero hits" risk was the archive.org
   encoded-filename 404 trap; verdict open stands (V9-QA9 finding 1 answered in NOTES.md). Still held for Bourdeau.
 
-**Round 3 live (spawned 10:15, Sonnet):**
+**Round 3 (10:15-10:39, 2 workers, 10.78 USD, ledgered and archived):**
+- rah-morillo-1817 item 3 (NX-MOR3): fresh re-derivation reproduces all 97 tokens, 0 differences. Sent to LANE V9 at 11:00
+  (key source: period -- the leaf's own interlinear decipherment; likely a dataset row, N-class is V9's).
+- fr3625-lauriere-1593 (NX-LAU3): fr.3995 no.57 (fol.103, not 102) reads 4/12 anchors vs shuffle max 2 -- beats control,
+  misses the 6/12 gate; looks like a sibling sheet of one office with a renumbered word bank. NEAR.md row added.
+
+**Round 4 live (spawned 11:00, Sonnet) -- the lane closes after these two (parent 10:43):**
 | Job | Session | Task | Box / alarm |
 |---|---|---|---|
-| NX-LAU3 | session_01JjPCGPpXpCa1BGu5PexrZN | transcribe fr.3995 no.57 key from Gallica crops; known-answer gate on the gloss anchors vs 1000 shuffles; decode no.55 only if it passes | 120 min / USD 22 |
-| NX-MOR3 | session_01UJML5xx7WM9EdZKYa29fjp | fresh-instance rule-7 re-derivation of Morillo item 3 | 40 min / USD 5 |
+| NX-MOR4 | see ROOM | other RAH Morillo cipher letters key_5186 can read; coverage + value-shuffle gates; Bolivar 26=v as a hypothesis | 90 min / USD 12 |
+| NX-LAU4 | see ROOM | anchor cells on up to 4 sibling 1592-94 fr.3995 key sheets, same 6/12 + shuffle gate | 75 min / USD 10 |
 
-Lane workers so far: 9 rows ledgered, 76.91 USD (retrospective threshold of 60 USD crossed -- for the parent).
-No reading sent to LANE V9 yet: Morillo item 3 goes after NX-MOR3 agrees.
+Lane workers so far: 13 rows ledgered, 87.69 USD. Retro: parent 10:43 says retrospective r already covers the window.
 
 ## LANE AX2 handoff (session_016sbTkVT8HGNJ6JGjJNmCuM), 26 September 2026, from 05:14 UTC (live)
 

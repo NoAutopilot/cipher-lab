@@ -2265,6 +2265,13 @@
       "next": "running_key with an era-matched German corpus (de19, to build) and a wider beam, control first at N=164; if the control cannot reach 0.6 at this N, record the family as untestable at this length",
       "lane": "B8",
       "touched": "26 Sept 2026 07:30"
+    },
+    {
+      "target": "fr3625-lauriere-1593",
+      "title": "Lauriere 1593: fr.3995 no.57 key sheet reads 4/12 gloss anchors vs shuffle max 2 (beats control, misses 6/12 gate); likely a sibling sheet of the same office",
+      "next": "NX-LAU4: anchor cells on sibling 1592-94 fr.3995 sheets; then fr.3632 no.8 copy order",
+      "lane": "NX",
+      "touched": "26 Sept 2026 11:00"
     }
   ]
 }
