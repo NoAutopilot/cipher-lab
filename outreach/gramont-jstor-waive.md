@@ -1,4 +1,4 @@
-status: ready
+status: ready (26 Sept 2026 16:48 UTC; date of the commit that set it, added by parent 7i for desk_check rule 6)
 subject: Seven readings are at N4; run or waive their JSTOR rows so the outreach can go out (Gramont x2, Danzay, Thurloe P4, Lodewijk van Nassau x3)
 to: you (no email; JSTOR-QUEUE.tsv or the local JSTOR runner)
 
