@@ -744,3 +744,7 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T06:17Z	session_01SeghT8AxMsh2pewSefqMdo	V8-NA172-2	done 2.04, ledgered D, archived (p6_spot4 N4->N2, Lossen 1882)	
 2026-09-26T06:17Z	session_01NciDZ7i35bSmKN7PPujmwW	V8-SZEM (Opus, cap 8)	verifier szembek-bk1560	brief 2026-09-26-lane-v8-szembek.md; LANE V8
 2026-09-26T06:35Z	session_01EMqeFqnLTHBZwamtfdfGJ8	TOMO-REPLY (Sonnet, cap 6)	Cryptiana Raince post snapshot+digest for V8; armstrong-madison-1808 check-solved intake + spec	brief 2026-09-26-parent-tomokiyo-reply.md; parent 7f
+2026-09-26T06:50Z	session_018gKxHSiPYa5NPQuXYELQUk	LANE B7 orchestrator	done 6.67 (get_session; ledger row edited in place from 5.55), retitled ARCHIVED, archived by 7f	handoff STATUS.md LANE B7 handoff; B8 opens 06:50
+2026-09-26T06:50Z	session_01A7MeWWoh7yhAJxtApKaDvD	LEARN-6	done 1.63, ledgered Q, retitled ARCHIVED, archived by 7f	LEARN-2026-09-26-0616.md
+2026-09-26T06:50Z	session_01VPSASn5w5VX93GbHgLkGke	RETRO-APPLY-P	done 4.54, ledgered D, retitled ARCHIVED, archived by 7f	7 of 7 applied
+2026-09-26T06:50Z	session_011gEKqukZAxE6FjtQCzsUQ8	LANE ARM orchestrator (Opus, cap 100)	Armstrong to Madison 1808 standing campaign; adopts TOMO-REPLY	brief 2026-09-26-lane-arm-orchestrator.md; parent 7f; owner decision 06:40
