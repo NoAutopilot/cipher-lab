@@ -1,4 +1,4 @@
-status: sent 24 Sept 2026 (by the person; reply pending)
+status: sent 24 Sept 2026 (by the person); reply received 26 Sept 2026 from dr. E.C.M. (Ineke) Huysman, senior onderzoeker NL-Lab, Huygens Instituut -- see 'Reply' below; answer drafted in outreach/huygens-reply-2026-09-26.md for the person to send
 subject: Cipher passages in six WVO letters (4610, 4611, 4616; 53, 57, 126) read with contemporary keys
 to: resources@huygens.knaw.nl, cc info@huygens.knaw.nl
 targets: ciphers/lodewijk-van-nassau-1573-74, ciphers/august-van-saksen-1561-64
@@ -39,3 +39,30 @@ there are unread passages you would most like read, name them and we will try th
 
 cipher-lab
 https://github.com/NoAutopilot/cipher-lab
+
+
+---
+
+## Reply (received 26 Sept 2026, dr. Ineke Huysman, Huygens Instituut; pasted by the person; recorded as data)
+
+Observations, each with what it changes here:
+
+1. **WVO 53 and 126: the KHA holds twentieth-century copies in the Collectie Japikse.** Japikse printed cipher passages
+   deciphered in his first volume (1934); these copies were preparation for a continuation that never appeared. She
+   judges them the most likely place for an earlier decipherment, more so than the editions. -> Both audits list the
+   Japikse copy as an unseen witness (AUDIT.md V3 and A2). An editor of the database now names it the first place to
+   look, so the "no prior decipherment located" sentence for 53 and 126 must carry that witness by name until it is
+   seen; the N-class question is referred to the verifier lane (ROOM, 26 Sept). Access needs a person at the KHA:
+   ASKS row 67.
+2. **126 and 57: the minutes (KHA A11-XIVi-04-26 "met een 'Zeitung'"; Dresden Loc. 9941/3 f.268-269 "met een
+   'Zettel'") may simply carry the text in clear.** -> Already in AUDIT.md (2.3, A2.2 item 2); keep the sentence in
+   every summary of the results.
+3. **The Palatine audience in Kluckhohn (nr. 148) dates from 30-31 December 1561, six weeks after August's letter of
+   18 November, not within days.** -> The audit had the date right (AUDIT.md D2.1 row 1, V3c row 9); the sent email
+   and N4-READINGS.md said "within days" -- both corrected 26 Sept 2026.
+4. **53 rests entirely on a recovered key, with a third of the signs uncertain: present it as a proposal, not a
+   text.** -> Adopted: the status.json row, CONTRIBUTIONS.md and every summary say "proposed reading" for 53.
+5. Two questions before she takes it further: (a) who is responsible for the project and how the work is divided
+   between people and AI agents -- "it should be stated plainly in any contact with editors"; (b) what we intend to
+   do with the results (publication, deposit with the holding archives, or only the repository). -> The person
+   answers both; the disclosure sentence is now a standing rule for every outreach draft (outreach/README.md).

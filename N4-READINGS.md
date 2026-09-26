@@ -451,7 +451,7 @@ asked likewise. Your Grace will know to keep this secret.* The reading is cohere
 **Already known.** Ferdinand I's approach to the Electors in autumn 1561 is printed (Goetz 1891; Kluckhohn I
 nr. 148). It led to Maximilian's election at Frankfurt in November 1562.
 
-**What the cipher adds.** That August told Orange, in secret and within days of the imperial embassy, and that he
+**What the cipher adds.** That August told Orange, in secret and on 18 Nov 1561, six weeks before the Palatine audience Kluckhohn prints (I nr. 148, 30-31 Dec 1561; corrected 26 Sept 2026 after the WVO editor's reply), and that he
 expected the other Electors to be approached.
 
 **Moment.** The Saxon-Orange marriage alliance three months old *(context)*. August was the leading Lutheran Elector,
@@ -461,7 +461,7 @@ treated the new in-law.
 **Significance: confirms or adds detail to what the edition gives.** The approach is printed. The cipher adds the
 confidence and its timing. August's Dresden minute, with a 'Zettel', is unseen and may carry the text in clear.
 
-rating: confirms or adds detail -- the Emperor's approach about Maximilian's election is printed (Goetz 1891); the cipher adds that August confided it to Orange, in secret, within days
+rating: confirms or adds detail -- the Emperor's approach about Maximilian's election is printed (Goetz 1891); the cipher adds that August confided it to Orange, in secret, on 18 Nov 1561, six weeks before the Palatine audience Kluckhohn prints (nr. 148, 30-31 Dec 1561)
 links: folder=https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/august-van-saksen-1561-64; audit=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/august-van-saksen-1561-64/AUDIT.md; reading=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/august-van-saksen-1561-64/reading_57.txt; image=https://resources.huygens.knaw.nl/media/wvo/images/00000-00999/00057.pdf; edition=none for this letter; Demandt regest of the clear text, Hessisches Jahrbuch f. Landesgeschichte 38 (1988) nr.113 p.78 (snippet only); the approach: Goetz 1891, https://archive.org/details/WalterDieWahlMaximiliansII
 
 ## ciphers/august-van-saksen-1561-64 WVO 126 -- Orange to Elector August, Brussels, 16 Sept 1564
