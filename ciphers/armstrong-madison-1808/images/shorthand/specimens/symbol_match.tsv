@@ -71,3 +71,15 @@ Macaulay1747	R9	partial	z	inconsistent	descender-tail hook loosely resembles z's
 Macaulay1747	R10	partial	x	inconsistent	angular zigzag resembles x's glyph; 2.3% is ~15x x's real ~0.15%
 Macaulay1747	R11	yes	y	consistent	concave-up cup matches y's glyph; 1.8% close to y's real ~2.0%
 Macaulay1747	R12	partial	p	consistent	large loop+tail resembles p's glyph; 0.9% same low order of magnitude as p's real ~1.9%
+Weston1727	R1	no	-	n-a	33.9% share impossible for any single letter; no clean match among Weston's discrete strokes; likely a non-alphabetic separator/filler mark
+Weston1727	R2	partial	s (2nd allograph, loop+tail "9" glyph)	consistent	closed loop+short tail resembles Weston's alternate s-glyph; s~6.3% same bucket as 13.1%, on the high side
+Weston1727	R3	partial	h (cursive back-curving hook+loop)	consistent	Weston's h broadly matches "5/b" hook; h~6.1% fits 10.8% bucket; unresolved whether the noted 2 size-variants split across h vs a taller hook (r/qu)
+Weston1727	R4	yes	d (backward-c hook opening left)	consistent	clean match; d~4.3% close to 5.4% share
+Weston1727	R5	yes	n (plain horizontal dash)	consistent	exact match; n~6.7% close to 5.0% share
+Weston1727	R6	partial	vowel-place dot (diacritic, not a letter stroke)	n-a	matches Weston's dot-placement vowel convention, not a single letter; not frequency-testable
+Weston1727	R7	yes	t (diagonal slash)	inconsistent	exact shape match but t~9.1% real vs 3.6% share -- too rare for a literal t
+Weston1727	R8	yes	sp/spl-type double-consonant ligature (2nd Lesson col)	consistent	loop+hook compound matches "%"-like description; ~1-2% plausible for a consonant cluster
+Weston1727	R9	yes	y (small hook with descender tail)	consistent	y~2.0% vs 2.3% share, close match
+Weston1727	R10	yes	z (literal zigzag)	inconsistent	exact shape match but z~0.07% real vs 2.3% share, ~30x too frequent
+Weston1727	R11	partial	l (open upward/concave-up loop)	consistent	Weston's l matches "cup/smile"; l~4.0% same under-5% bucket as 1.8% share, a bit low
+Weston1727	R12	partial	p (bulky loop with long descender)	consistent	Weston's p allograph matches "bulkier than R4"; p~1.9% same order of magnitude as 0.9% share
