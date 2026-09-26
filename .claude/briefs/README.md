@@ -121,3 +121,7 @@ applied unchanged, and three named cycle-3 briefs written from it.
   on 2-4 distinctive decoded phrases and cite the `ia-global` (and, where a key is present, `gbooks`/`openalex`)
   result in the done line -- a "no hit" is still worth stating (it is evidence for the verifier's own search
   log, CLAUDE.md rule 10), not just a "found it" worth reporting.
+- **A new tool, gate, loop, register or runner gets its SYSTEM.md row in the same commit (26 Sept 2026, SYSTEM-MAP).**
+  A RETRO-APPLY, LEARN apply or tool-building worker that adds one adds its row to `SYSTEM.md` and runs
+  `python3 tools/system_map_check.py` (exit 0) before pushing, so the other account sees it on the map, not only in
+  UPDATES.md.
