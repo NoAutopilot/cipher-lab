@@ -62,3 +62,13 @@ hessen-1824: open (line 1) -- edition/page or full-text-search citation found wi
 EXIT: 0
 ```
 Gate passed 26 Sept 2026 04:58 UTC. Proceeding to image fetch and the brief's first cheap test.
+
+## Remaining families (bHCP2, 26 Sept 2026)
+
+Job bHCP2 (LANE B8). Intake gate re-run 26 Sept 2026 06:55 UTC: `hessen-1824: open (line 1) -- edition/page or full-text-search citation found within 6 lines`, EXIT 0. IC finding from bHCP (coset IC scan, periods 2-20): best period 16 at 0.0664, next-best 20/17/14/18 at 0.0565/0.0516/0.0504/0.0491 -- no sharp peak, all values well below real German monoalphabetic (~0.07-0.075) and only moderately above random (~0.0385). Read as: the text does not show the clean peaked-coset signature of a genuine short-period polyalphabetic cipher (not flat-polyalphabetic), so the brief's third step (homophonic) was run.
+
+1. **masc** (`--family masc --seeds 3 --tokens letters`): control N=164 K=24, 3 seeds, mean recovery **0.823 (0.634-0.994)** -- gate (0.6) met. Target best score -411.145; judge **FAIL** (score=-1.354, null_p99=-1.935, real_p05=-0.86, real_median=-0.778, N=164).
+2. **running_key** (`--family running_key --corpus tools/data/de20 --seeds 1 --control-only` first, per the brief's overrun check; ran in 64s so the full call would not have overrun the box, but the control itself came in below gate): control N=164 K=26, 1 seed, recovery **0.372** -- **gate (0.6) NOT met**, CONTROL BELOW GATE, target not run (non-test, not a negative, per rule 3 / the brief).
+3. **homophonic** (`--family homophonic --param profile=target --seeds 3 --tokens letters`, run because the IC above is not flat-polyalphabetic): control N=164 K=23-24, 3 seeds, mean recovery **0.878 (0.793-0.933)** -- gate met. Target best score -411.145 (same decode as masc -- the homophonic solver with profile=target and K=24 reduces to the same one-sign-per-letter search here); judge **FAIL** (score=-1.354, null_p99=-1.935, real_p05=-0.86, real_median=-0.778, N=164).
+
+All rows in `ciphers/hessen-1824/HYPOTHESES.md`. Together with bHCP's periodic_vigenere runs (control 1.000, target FAIL at periods 16/7/6), every family in the spec's ladder (periodic_vigenere, masc, homophonic) now has a logged run with a passed control and a target FAIL; running_key's control fell below its own gate at this N (a non-test, not counted as a negative). Whether this closes the ladder is the orchestrator's call, not this worker's (rule 5, brief line 5) -- flagging that the ciphertext transcription itself carries real M-grade uncertainty (NOTES.md's own transcription section) and the de20 judge corpus is era-mismatched (spec `constraints.era_note`), so a FAIL here is conditional on both.

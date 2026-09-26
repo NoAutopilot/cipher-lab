@@ -13,8 +13,10 @@
     "anmerkung_note": "The same manuscript page (below the 6-line ciphertext, same image) carries a period or 19th-century archival note headed 'Anmerkung' describing a related item ('No. 1', invisible/sympathetic ink between lines) and a substitution table the annotator worked out: bcdefg(h) in the top row of a key/tableau are said to be 'Auflösungsbuchstaben' (resolution letters) placed continuously over the cipher, giving column positions of a periodic key; the worked example maps pairs of cipher letters to plaintext letters per column (approximate, uncertain reading of German Kurrent: u/c->s, f/o->c, m/e->h, o/f->i, g/g->k, ?/b->n, v->t). This was NOT applied to the ciphertext this pass (paleographic risk of misreading Kurrent under a $2 cap outweighs the value of a guessed key -- see NOTES.md); it is a strong lead for a follow-up transcription pass and is consistent with HCPortal's own 'Polyalphabetic/Substitution' category tag and with a period around 6-7."
   },
   "cheap_tests_in_order": [
-    "IC and periodic IC (Friedman/Kasiski, period 2-20) vs a de20 control of the same N under family_run.py's periodic_vigenere family, control-first (this spec)"
+    "IC and periodic IC (Friedman/Kasiski, period 2-20) vs a de20 control of the same N under family_run.py's periodic_vigenere family, control-first (this spec)",
+    "masc, running_key, homophonic families under family_run.py, control-first (job bHCP2, 26 Sept 2026): masc control 0.823 gate met / target FAIL; running_key control 0.372 gate NOT met (non-test); homophonic (profile=target) control 0.878 gate met / target FAIL -- see ciphers/hessen-1824/HYPOTHESES.md and NOTES.md 'Remaining families (bHCP2)'"
   ],
+  "cheap_test_done": "bHCP2 26 Sept 2026: periodic_vigenere (bHCP, control 1.000/target FAIL at periods 16,7,6), masc (control 0.823/target FAIL), homophonic profile=target (control 0.878/target FAIL) all ran with a passed control and a target judge FAIL; running_key control fell below its own gate (0.372 < 0.6), target not run -- non-test, not counted as a negative.",
   "judge": {
     "language": "de",
     "letters_min": 100,
@@ -32,5 +34,5 @@
     ],
     "corpora_note": "de20 is 1880-1940 German prose; target is 1824 -- era gap logged in constraints.era_note above, not resolved this pass."
   },
-  "schema_note": "Written 26 Sept 2026 by LANE B7 worker bHCP (job bHCP), first cheap test only (breadth.md cap); no target run yet pending the control gate."
+  "schema_note": "Written 26 Sept 2026 by LANE B7 worker bHCP (job bHCP), first cheap test only (breadth.md cap); no target run yet pending the control gate. Updated 26 Sept 2026 by LANE B8 worker bHCP2 (job bHCP2): remaining families (masc, running_key, homophonic) run, control-first, per cheap_test_done above."
 }
