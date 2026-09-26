@@ -105,3 +105,29 @@ harmless repeated context from the line above (checked on f66_L02/L03: the tail 
 group appears at the very top of the next crop, not confused with the current line's own gloss). Verified against
 the debug overlay (`f66_lines_debug.jpg`) and three crops (L01, L02, L03) by eye before transcribing further.
 20 bands x 2 width-segments (line width 3354 > the 2400px max) = 40 crop files, `f66_L<NN>_s{1,2}.jpg`.
+
+## Leaf 65 crop step (bSZL65, 26 Sept 2026)
+Native leaf: `343124_List_zaszyfrowany.zip` (source zip, already on disk, no fetch) -> `065_0001.djvu` decoded once
+with `ddjvu -format=tiff` then PIL to PNG at native 3552x4632 (scratchpad only, not committed).
+Crop command run (mandatory step, pasted before transcription):
+```
+python3 tools/iiif_lines.py --image <native 065_0001 PNG> --out ciphers/szembek-bk1560/leaf65/crops \
+  --prefix f65 --distance 150 --debug
+```
+Default `--distance` (58, 0.7x the autocorrelation pitch 84) over-segmented into 27 bands for the same reason
+bSZL66 found on leaf 66: the ink-profile peaks on the interlinear gloss word as its own line, 70-120 px from the
+cipher line's own peak, alternating with true line-to-line gaps of 174-329 px. `--distance 150` merged each such
+pair back to 20 bands, matching an eye count of the leaf's 20 written lines (confirmed: no more ink below the
+last band, y 4278-4632 is blank margin).
+This alone was not enough: the debug overlay's blue band edges are midpoints between the 20 merged centres, and
+on this leaf the gloss sits close enough to that midpoint that a plain per-line crop (`f65_L02_s1.jpg`, first
+attempt) cut "Celsissimus Princeps" almost exactly in half between band 1 and band 2 -- confirmed on native-pixel
+test crops (`(0,380,3552,620)` shows the whole gloss+cipher line cleanly; the tool's own per-band split did not).
+Rather than `--top-margin` (a single fixed shift applied to every band, which bSZL66 used), this leaf's bands were
+cut directly from the 20 centres with a manual asymmetric margin (top -160px, bottom +80px around each centre,
+clipped to stay at least 25px clear of the neighbouring centre) so each band favours the space above its own
+cipher line, where the gloss sits. Spot-checked by eye on 5 of 20 bands (lines 1, 5, 9, 13, 17, 19, 20) before
+transcribing the rest: each held its full gloss word(s) and full cipher line, no bleed of the neighbouring line's
+own cipher/gloss text (a little of the previous line's tail ink is harmless overlap, same finding as leaf 66).
+20 bands x 2 width-segments (line width 3552 > the 2400px max, split at 2400 with 150px overlap, same convention
+as the tool) = 40 crop files, `f65_line<NN>_s{1,2}.jpg`, manifest at `leaf65/crops/manifest.json`.

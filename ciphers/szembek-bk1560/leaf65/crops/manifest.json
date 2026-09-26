@@ -1,0 +1,484 @@
+{
+ "iiif_lines_manual": [
+  {
+   "crop": "leaf65/crops/f65_line01_s1.jpg",
+   "line": 1,
+   "box_native": [
+    0,
+    190,
+    2400,
+    430
+   ],
+   "source": "065_0001.djvu",
+   "date": "2026-09-26"
+  },
+  {
+   "crop": "leaf65/crops/f65_line01_s2.jpg",
+   "line": 1,
+   "box_native": [
+    2250,
+    190,
+    3552,
+    430
+   ],
+   "source": "065_0001.djvu",
+   "date": "2026-09-26"
+  },
+  {
+   "crop": "leaf65/crops/f65_line02_s1.jpg",
+   "line": 2,
+   "box_native": [
+    0,
+    382,
+    2400,
+    622
+   ],
+   "source": "065_0001.djvu",
+   "date": "2026-09-26"
+  },
+  {
+   "crop": "leaf65/crops/f65_line02_s2.jpg",
+   "line": 2,
+   "box_native": [
+    2250,
+    382,
+    3552,
+    622
+   ],
+   "source": "065_0001.djvu",
+   "date": "2026-09-26"
+  },
+  {
+   "crop": "leaf65/crops/f65_line03_s1.jpg",
+   "line": 3,
+   "box_native": [
+    0,
+    578,
+    2400,
+    818
+   ],
+   "source": "065_0001.djvu",
+   "date": "2026-09-26"
+  },
+  {
+   "crop": "leaf65/crops/f65_line03_s2.jpg",
+   "line": 3,
+   "box_native": [
+    2250,
+    578,
+    3552,
+    818
+   ],
+   "source": "065_0001.djvu",
+   "date": "2026-09-26"
+  },
+  {
+   "crop": "leaf65/crops/f65_line04_s1.jpg",
+   "line": 4,
+   "box_native": [
+    0,
+    788,
+    2400,
+    1028
+   ],
+   "source": "065_0001.djvu",
+   "date": "2026-09-26"
+  },
+  {
+   "crop": "leaf65/crops/f65_line04_s2.jpg",
+   "line": 4,
+   "box_native": [
+    2250,
+    788,
+    3552,
+    1028
+   ],
+   "source": "065_0001.djvu",
+   "date": "2026-09-26"
+  },
+  {
+   "crop": "leaf65/crops/f65_line05_s1.jpg",
+   "line": 5,
+   "box_native": [
+    0,
+    973,
+    2400,
+    1209
+   ],
+   "source": "065_0001.djvu",
+   "date": "2026-09-26"
+  },
+  {
+   "crop": "leaf65/crops/f65_line05_s2.jpg",
+   "line": 5,
+   "box_native": [
+    2250,
+    973,
+    3552,
+    1209
+   ],
+   "source": "065_0001.djvu",
+   "date": "2026-09-26"
+  },
+  {
+   "crop": "leaf65/crops/f65_line06_s1.jpg",
+   "line": 6,
+   "box_native": [
+    0,
+    1180,
+    2400,
+    1420
+   ],
+   "source": "065_0001.djvu",
+   "date": "2026-09-26"
+  },
+  {
+   "crop": "leaf65/crops/f65_line06_s2.jpg",
+   "line": 6,
+   "box_native": [
+    2250,
+    1180,
+    3552,
+    1420
+   ],
+   "source": "065_0001.djvu",
+   "date": "2026-09-26"
+  },
+  {
+   "crop": "leaf65/crops/f65_line07_s1.jpg",
+   "line": 7,
+   "box_native": [
+    0,
+    1382,
+    2400,
+    1622
+   ],
+   "source": "065_0001.djvu",
+   "date": "2026-09-26"
+  },
+  {
+   "crop": "leaf65/crops/f65_line07_s2.jpg",
+   "line": 7,
+   "box_native": [
+    2250,
+    1382,
+    3552,
+    1622
+   ],
+   "source": "065_0001.djvu",
+   "date": "2026-09-26"
+  },
+  {
+   "crop": "leaf65/crops/f65_line08_s1.jpg",
+   "line": 8,
+   "box_native": [
+    0,
+    1578,
+    2400,
+    1818
+   ],
+   "source": "065_0001.djvu",
+   "date": "2026-09-26"
+  },
+  {
+   "crop": "leaf65/crops/f65_line08_s2.jpg",
+   "line": 8,
+   "box_native": [
+    2250,
+    1578,
+    3552,
+    1818
+   ],
+   "source": "065_0001.djvu",
+   "date": "2026-09-26"
+  },
+  {
+   "crop": "leaf65/crops/f65_line09_s1.jpg",
+   "line": 9,
+   "box_native": [
+    0,
+    1763,
+    2400,
+    1992
+   ],
+   "source": "065_0001.djvu",
+   "date": "2026-09-26"
+  },
+  {
+   "crop": "leaf65/crops/f65_line09_s2.jpg",
+   "line": 9,
+   "box_native": [
+    2250,
+    1763,
+    3552,
+    1992
+   ],
+   "source": "065_0001.djvu",
+   "date": "2026-09-26"
+  },
+  {
+   "crop": "leaf65/crops/f65_line10_s1.jpg",
+   "line": 10,
+   "box_native": [
+    0,
+    1938,
+    2400,
+    2178
+   ],
+   "source": "065_0001.djvu",
+   "date": "2026-09-26"
+  },
+  {
+   "crop": "leaf65/crops/f65_line10_s2.jpg",
+   "line": 10,
+   "box_native": [
+    2250,
+    1938,
+    3552,
+    2178
+   ],
+   "source": "065_0001.djvu",
+   "date": "2026-09-26"
+  },
+  {
+   "crop": "leaf65/crops/f65_line11_s1.jpg",
+   "line": 11,
+   "box_native": [
+    0,
+    2144,
+    2400,
+    2384
+   ],
+   "source": "065_0001.djvu",
+   "date": "2026-09-26"
+  },
+  {
+   "crop": "leaf65/crops/f65_line11_s2.jpg",
+   "line": 11,
+   "box_native": [
+    2250,
+    2144,
+    3552,
+    2384
+   ],
+   "source": "065_0001.djvu",
+   "date": "2026-09-26"
+  },
+  {
+   "crop": "leaf65/crops/f65_line12_s1.jpg",
+   "line": 12,
+   "box_native": [
+    0,
+    2343,
+    2400,
+    2583
+   ],
+   "source": "065_0001.djvu",
+   "date": "2026-09-26"
+  },
+  {
+   "crop": "leaf65/crops/f65_line12_s2.jpg",
+   "line": 12,
+   "box_native": [
+    2250,
+    2343,
+    3552,
+    2583
+   ],
+   "source": "065_0001.djvu",
+   "date": "2026-09-26"
+  },
+  {
+   "crop": "leaf65/crops/f65_line13_s1.jpg",
+   "line": 13,
+   "box_native": [
+    0,
+    2584,
+    2400,
+    2824
+   ],
+   "source": "065_0001.djvu",
+   "date": "2026-09-26"
+  },
+  {
+   "crop": "leaf65/crops/f65_line13_s2.jpg",
+   "line": 13,
+   "box_native": [
+    2250,
+    2584,
+    3552,
+    2824
+   ],
+   "source": "065_0001.djvu",
+   "date": "2026-09-26"
+  },
+  {
+   "crop": "leaf65/crops/f65_line14_s1.jpg",
+   "line": 14,
+   "box_native": [
+    0,
+    2777,
+    2400,
+    3017
+   ],
+   "source": "065_0001.djvu",
+   "date": "2026-09-26"
+  },
+  {
+   "crop": "leaf65/crops/f65_line14_s2.jpg",
+   "line": 14,
+   "box_native": [
+    2250,
+    2777,
+    3552,
+    3017
+   ],
+   "source": "065_0001.djvu",
+   "date": "2026-09-26"
+  },
+  {
+   "crop": "leaf65/crops/f65_line15_s1.jpg",
+   "line": 15,
+   "box_native": [
+    0,
+    3004,
+    2400,
+    3244
+   ],
+   "source": "065_0001.djvu",
+   "date": "2026-09-26"
+  },
+  {
+   "crop": "leaf65/crops/f65_line15_s2.jpg",
+   "line": 15,
+   "box_native": [
+    2250,
+    3004,
+    3552,
+    3244
+   ],
+   "source": "065_0001.djvu",
+   "date": "2026-09-26"
+  },
+  {
+   "crop": "leaf65/crops/f65_line16_s1.jpg",
+   "line": 16,
+   "box_native": [
+    0,
+    3200,
+    2400,
+    3440
+   ],
+   "source": "065_0001.djvu",
+   "date": "2026-09-26"
+  },
+  {
+   "crop": "leaf65/crops/f65_line16_s2.jpg",
+   "line": 16,
+   "box_native": [
+    2250,
+    3200,
+    3552,
+    3440
+   ],
+   "source": "065_0001.djvu",
+   "date": "2026-09-26"
+  },
+  {
+   "crop": "leaf65/crops/f65_line17_s1.jpg",
+   "line": 17,
+   "box_native": [
+    0,
+    3385,
+    2400,
+    3622
+   ],
+   "source": "065_0001.djvu",
+   "date": "2026-09-26"
+  },
+  {
+   "crop": "leaf65/crops/f65_line17_s2.jpg",
+   "line": 17,
+   "box_native": [
+    2250,
+    3385,
+    3552,
+    3622
+   ],
+   "source": "065_0001.djvu",
+   "date": "2026-09-26"
+  },
+  {
+   "crop": "leaf65/crops/f65_line18_s1.jpg",
+   "line": 18,
+   "box_native": [
+    0,
+    3580,
+    2400,
+    3820
+   ],
+   "source": "065_0001.djvu",
+   "date": "2026-09-26"
+  },
+  {
+   "crop": "leaf65/crops/f65_line18_s2.jpg",
+   "line": 18,
+   "box_native": [
+    2250,
+    3580,
+    3552,
+    3820
+   ],
+   "source": "065_0001.djvu",
+   "date": "2026-09-26"
+  },
+  {
+   "crop": "leaf65/crops/f65_line19_s1.jpg",
+   "line": 19,
+   "box_native": [
+    0,
+    3909,
+    2400,
+    4149
+   ],
+   "source": "065_0001.djvu",
+   "date": "2026-09-26"
+  },
+  {
+   "crop": "leaf65/crops/f65_line19_s2.jpg",
+   "line": 19,
+   "box_native": [
+    2250,
+    3909,
+    3552,
+    4149
+   ],
+   "source": "065_0001.djvu",
+   "date": "2026-09-26"
+  },
+  {
+   "crop": "leaf65/crops/f65_line20_s1.jpg",
+   "line": 20,
+   "box_native": [
+    0,
+    4118,
+    2400,
+    4358
+   ],
+   "source": "065_0001.djvu",
+   "date": "2026-09-26"
+  },
+  {
+   "crop": "leaf65/crops/f65_line20_s2.jpg",
+   "line": 20,
+   "box_native": [
+    2250,
+    4118,
+    3552,
+    4358
+   ],
+   "source": "065_0001.djvu",
+   "date": "2026-09-26"
+  }
+ ]
+}
