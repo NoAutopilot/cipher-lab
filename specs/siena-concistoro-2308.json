@@ -1,0 +1,34 @@
+{
+ "slug": "siena-concistoro-2308",
+ "name": "Siena, Archivio di Stato, Concistoro 2308 fasc. 2 \"Lettere in cifra\": open pieces 7, 9, 11, 15, 17, 19, 21",
+ "date": "15th/early-16th c. (busta spans back to 1421; individual pieces range c. 1450s-1540s per Bourdeau's own dating notes)",
+ "kind": "cryptanalysis (key-transfer try, this pass) / recovery (siblings 25, 14, 4 in the same busta already partly keyed by Bourdeau)",
+ "language": "it",
+ "source": "Archivio di Stato di Siena, Concistoro 2308 fasc. 2 \"Lettere in cifra\"; on DECODE (keys R4746-R4789, letters R4790-R4814, all with images -- full-size images account-wide blocked, see CLAUDE.md Access playbook). Bourdeau CATALOGUE.md #336 (dbourdeau/cyphersolver, clone fc0c9e865d0fae67ca92d19750d2b09ab11972e0, read 26 Sept 2026). QUEUE.md \"Scored backlog for LANE B6, second pass\" row 2.",
+ "ciphertext_pending": "not independently transcribed this pass; this spec's first cheap test works entirely from Bourdeau's own already-published transcripts (MIT code / CC BY 4.0 text, credited in NOTES.md), token sequences reproduced in specs/cheap-tests/siena-concistoro-2308/pieces.py",
+ "alphabet": "each piece (7, 9, 11, 15, 17, 19, 21) has its own sign legend, assigned by Bourdeau's transcribers (agent J for 7/9/19/21, agent K for 15, unlisted for 11/17); overlapping short/simple sign names (digits, single Latin letters, a shared descriptive vocabulary for Greek-letter-shaped and geometric signs: LAM, PHI, TRI, DIA, BOX, PLUS...) recur across pieces but are not guaranteed to denote the same underlying cipher sign shape.",
+ "constraints": {
+  "pieces": {"no07": 363, "no09": 46, "no11": 409, "no15": 211, "no17": 281, "no19": 117, "no21": 107},
+  "note": "token counts are cipher-sign tokens only, from Bourdeau's transcripts, close to but not always identical to his own NOTES.md counts (bracket/punctuation stripping differences of 0-18 tokens per piece)."
+ },
+ "cheap_tests_in_order": [
+  "1. Key transfer (this pass, bSIE, 26 Sept 2026): apply Bourdeau's own recovered sign->letter key values for Siena nos. 25, 14 and 4 (his own already-solved siblings in the same busta) against each of the 7 open pieces' own transcripts, literally by sign-name match (case-insensitive fallback). Matched control: the same key applied to the same piece with token order scrambled (3 seeds), which by rule 3/bCAS/AX-5799 must be an ORDER-SENSITIVE statistic since per-token coverage cannot differ under order-scrambling -- used tools/judge_plaintext.py's it-corpus 4-gram score and greedy word-cover on the decoded letters. Cost: this job, $3 cap, Sonnet, no image fetch, no DECODE login. See ciphers/siena-concistoro-2308/NOTES.md for the full 21-cell (7 pieces x 3 keys) table and result.",
+  "2. Fallback (not run this pass, queue row 2's own next step): ciphertext-only ic homophonic anneal on nos. 6/24 and 20/23 (~9,000 tokens across the two systems) with a synthetic-Italian control of matching length/design (tools/family_run.py --family homophonic), gated per rule 3 before any target run; a real image fetch and transcription pass would also be needed for pieces 7/9/11/15/17/19/21 themselves if a from-scratch cryptanalysis of any single one is later attempted (Bourdeau's own transcripts are ciphertext-only-unverified against the DECODE images by us)."
+ ],
+ "judge": {
+  "language": "it",
+  "min_word_cover": 0.6,
+  "note": "era flag (queue row 2): tools/data/it16 (LANG_CORPORA['it']) is 16th-c. Italian letters, mid-late 16th c. register; these pieces are 15th/early-16th c. (busta spans back to 1421) -- a real era gap, wider than the pt17/es17c precedent (CLAUDE.md rule 3). Graded by eye alongside any score; not trusted on the score alone."
+ },
+ "cheap_test_done": [
+  {
+   "test": 1,
+   "date": "26 Sept 2026",
+   "worker": "bSIE (LANE B7)",
+   "method": "Bourdeau nos. 25/14/4 key values applied to open pieces 7/9/11/15/17/19/21 (7x3=21 cells), it-corpus score + word-cover, real order vs. 3-seed scrambled-order control (matched per rule 3)",
+   "result": "negative, matched control: every real-order score (-1.56 to -2.45) is below the it corpus's own null_p99 (-1.63 at N=100) or real_p05 (-1.007) in the great majority of cells; real order beats scrambled order in 11/21 cells and loses in 10/21, no consistent one-directional margin, well inside scrambled-control seed noise. None of the three keys decode any of the seven pieces.",
+   "cost_usd": "reported by orchestrator via get_session, not stated here per CLAUDE.md ROOM.md convention",
+   "table": "ciphers/siena-concistoro-2308/NOTES.md (full 21-row table); raw numbers in specs/cheap-tests/siena-concistoro-2308/results.json"
+  }
+ ]
+}
