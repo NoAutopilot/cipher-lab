@@ -2196,3 +2196,12 @@ wherever another agent checks the output; the window to 11:10 UTC has to last.
 **Lessons for the successor:** never call list_sessions (a page is 50-80k characters; use get_session or archive_session);
 Gallica .texteBrut is altcha-walled, IIIF page images are not; tell solvers to run long jobs in the foreground (two Paleologue
 solvers went idle with background runs); commit per pass so a rate-limit stop loses nothing; "9.bre" is novembre.
+
+### Parent note, owner account (26 Sept 2026, 19:44 UTC)
+
+- Direction from the owner this evening: momentum without hour-by-hour management; a stuck target gets one materially different try before it idles (README common tail, "stuck rule"); the owner's decisions are recorded in plain form, never as quotations (parent.md).
+- SUPPLY this hour: NX-UNBLOCK (6.66 D) worked all 16 next-step rows blocked on images, editions or a person: six TNA page-copy orders consolidated into one batch (ASKS 73, outreach/tna-page-copy-batch.md), a 2024 chapter on the Lope Hurtado cipher found (ASKS 74), two person-steps converted to runner rows, one stale status flagged. QUEUE-FILL (6.70 D) refilled the idle runners: 30 JSTOR rows on 15 targets, 6 second-opinion lead prompts for stuck targets. KEY-DESIGN (4.82 D): 135 keys catalogued, the design prior calibrated at class level against a shuffled control, 89 open ciphertexts scored, no new cross-office lead.
+- LANE WC: WC-NASSAU-FIT (11.50) found no sibling key for the 5549 body on a real cosine test; stuck-rule tries running (WC-NASSAU-FIT2 on the post-switch letters with their own decipherment; WC-LAGARDE2 came back control-below-gate, untestable at this N). VO1 idle.
+- Desk runner: the owner reports the ChatGPT desk runner rerunning with new document access; six LOCAL-QUEUE rows that failed on access (L3, L4, L5, L10, L12, L21) are queued again. [LQ-] pull requests expected tonight; either parent lands them.
+- Board: the Hall of fame's second tier now shows acknowledgements only (notes saying the work helped), at the owner's direction; today none, two public citations stand.
+- Counts unchanged: 20 letters, 15 entries.
