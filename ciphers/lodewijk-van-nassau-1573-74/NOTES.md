@@ -2033,6 +2033,60 @@ Files: `ciphers/lodewijk-van-nassau-1573-74/{images_manifest_full.tsv,regen_imag
 section). Hosts: resources.huygens.knaw.nl, 2 requests (page test only; crop test read the just-fetched page
 from disk).
 
+**Second pass (26 Sept 2026 06:51 UTC, AX2-SHRINK2, LANE AX2), `images_wv2/crops_4612/**`.** AX2-4612TR/AX2-4612
+left this set out of bounds (15 MB: `src_04612_p{1,2}.png`, two 300dpi PNG renders, 9488 KB; 130 `p{1,2}_L*_s*.jpg`
+line crops at 2400px wide, 3960 KB; two `p{1,2}_lines_debug.jpg` overlays, already 1600px wide, 1061 KB). It is
+free now that AX2-4612 (settling the 16 numerals) has reported.
+
+Before: `images_wv2/crops_4612` 14816 KB, folder total 60576 KB (59.2 MB).
+
+**What moved.** The two 300dpi source renders (`src_04612_p1.png`, `src_04612_p2.png`, 4702768 + 5008726 bytes,
+sha1 `00b566005365c7dd63f64a2857b4cdb319e2b2a9` / `1776ba844ff2c7886c2df2ef144326cf80ab1b8c`) `git rm`'d --
+readable from git history at commit `8e8c06718d54011adc637dc6e02ae74d62d1c0f5` and regenerable byte-for-bitwise-
+identical from the WVO PDF (confirmed below), same as AX2-SHRINK's own `images/` pages. The 130 line crops (cut
+at 2400px wide, over the 1600px convention) were downscaled in place to <=1600px wide, JPEG q80 (LANCZOS resize):
+4054103 -> 2047286 bytes, about 50%. The two debug overlays (already 1600px wide) were left untouched.
+
+**Regen test (1 request to resources.huygens.knaw.nl, well under the good-citizen cap -- the render test and
+the crop test both used the single fetched PDF, per COMMON's per-unit-box discipline).** `render_pymupdf300`
+(new function in `regen_images.sh`, exposed as `./regen_images.sh page300 4612 1`) re-rendered both pages from
+the one fetched `04612.pdf` at 300dpi (zoom 300/72): sha1 of both `src_04612_p{1,2}.png` matched the
+pre-removal committed files exactly (byte-for-byte, no pixel diff needed). `./regen_images.sh crop
+images_manifest_full.tsv images_wv2/crops_4612/p2_L10_s1.jpg` (with both regenerated 300dpi pages placed back
+on disk) then re-cut and re-downscaled the crop from its recorded box: sha1 `50c3a327d20a7c7d8792fbcc14c97cdd9a535a1d`,
+15201 bytes, identical to the committed (post-downscale) file. `do_crop` was extended to cap any cut wider than
+1600px at 1600px wide (LANCZOS, JPEG q80), so the existing 04610-4616 crops (already <=1241px) regenerate
+unchanged (q85, no resize) while `crops_4612`'s wider crops now regenerate at their final downscaled size.
+
+**Inventory.** All 134 files under `images_wv2/crops_4612/**` (2 source renders, 130 crops, 2 debug overlays)
+added to `images_manifest_full.tsv`: path, bytes, sha1, kind (fullpage/crop-lines/debug), source (PDF url + brief
++ render recipe for the two renders; parent file + pixel box + tool + downscale note for crops, from
+`images_wv2/crops_4612/manifest.json`'s `iiif_lines` records), cited_by (`./NOTES.md;./ax4612tr/build_v3.py` for
+the two source renders, both of which name `src_04612_p{1,2}.png` directly; blank for the 130 individual line
+crops and the 2 debug overlays, none of which are cited by filename anywhere in the repo -- AX-4612TR2's own
+note that "the existing `p1_L*.jpg` crops... do not correspond 1:1 to the passes' own r-lines" already explains
+why the settling work re-cropped from the source images directly rather than citing these files).
+
+**Checked for >300 KB files, per the brief: `ax2_4612/crops/**` (4 files, largest 48137 bytes), `axmerge4/crops/**`
+(11 files, largest 94549 bytes), `ax2_blanks/` (no `crops/` subfolder -- only `.py`/`.tsv` files, no images) --
+none over 300 KB, nothing to downscale. `ax2_5801/` likewise has no `crops/` subfolder yet (its images live in
+`images_wv2/crops_comp/05801_*`, explicitly out of bounds below).
+
+After: `images_wv2/crops_4612` 3344 KB, folder total 49152 KB (48.0 MB).
+
+**Still over 30 MB, and not only from the named out-of-bounds set.** Excluding `images_wv2/crops_comp/05801_*`
+(7772 KB) and `ax2_5801/crops/*` (0 KB, does not exist) -- the two sets this brief named STILL OUT OF BOUNDS --
+leaves 41380 KB (40.4 MB), still over the 30 MB rule. The remainder is `images_wv2/crops_comp/04614_*` (3764 KB)
+and `07205_*` (8132 KB, one file over the 300 KB check-threshold this brief applied elsewhere: `07205_p4_L04.jpg`
+at 313400 bytes) -- AX-COMP's companion-decipherment crops, cut before AX2-SHRINK's first pass but never named
+as out-of-bounds by either pass's brief, so untouched by both. Excluding those too (11896 KB) gives 29484 KB
+(28.8 MB), under the rule. Flagged in ROOM.md for the lane orchestrator: a third shrink pass on
+`images_wv2/crops_comp/{04614,07205}_*` (not `05801_*`, still live under AX2-5801ADJ) would close the gap.
+
+Files: `ciphers/lodewijk-van-nassau-1573-74/{images_manifest_full.tsv,regen_images.sh,images_wv2/crops_4612/**,
+NOTES.md}` (this paragraph). Hosts: resources.huygens.knaw.nl, 1 request (04612.pdf; both the render test and
+the crop test read from that one fetch).
+
 ## AX2-4612: 4612 v3, key_full decode and key-seeded anneal (26 Sept 2026, LANE AX2)
 
 Worker AX2-4612 (Sonnet), brief `.claude/briefs/runs/2026-09-26-lane-ax2-4612.md`, started 05:22 UTC (clock

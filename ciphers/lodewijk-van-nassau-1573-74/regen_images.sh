@@ -6,11 +6,16 @@
 #
 # Usage:
 #   ./regen_images.sh page BRIEFNR PAGE      # re-fetch PDF + render one full page
+#   ./regen_images.sh page300 BRIEFNR PAGE   # re-fetch PDF + render one 300dpi PNG page (images_wv2/crops_4612/ convention)
 #   ./regen_images.sh crop  images_manifest_full.tsv PATH   # re-cut one crop from its recorded box
 #   ./regen_images.sh all                    # do the whole folder (all briefs in both manifests)
 #
 # Sources: images/manifest.json (briefs 4610-4616, pdftoppm -png -r 150) and
 # images_wv2/manifest.json (briefs 4503/5194/5797/5799/5810/5811, pymupdf render, JPEG q80, 150dpi).
+# images_wv2/crops_4612/src_04612_p{1,2}.png is a third convention (AX-4612TR, 26 Sept 2026): pymupdf,
+# 300dpi (zoom 300/72), PNG, 2481x3508 -- double the linear resolution of images/04612_p*.png, used for
+# settling ambiguous numerals by eye. Its PDF url comes from images/manifest.json's briefnr=4612 entry
+# (fetch_pdf already resolves it); only the render step differs (page300/render_pymupdf300 below).
 # Good-citizen rule: one resources.huygens.knaw.nl request at a time, >=2s apart.
 set -euo pipefail
 cd "$(dirname "$0")"
@@ -53,6 +58,33 @@ for i, page in enumerate(doc, start=1):
 PYEOF
 }
 
+render_pymupdf300() {
+  # images_wv2/crops_4612/ convention: pymupdf, 300dpi (zoom 300/72), PNG (AX-4612TR, 26 Sept 2026)
+  local pdf="$1" outdir="$2" briefnr="$3"
+  python3 - "$pdf" "$outdir" "$briefnr" <<'PYEOF'
+import sys, fitz
+pdf, outdir, briefnr = sys.argv[1], sys.argv[2], sys.argv[3]
+doc = fitz.open(pdf)
+zoom = 300 / 72
+mat = fitz.Matrix(zoom, zoom)
+for i, page in enumerate(doc, start=1):
+    if i > 2:
+        continue
+    pix = page.get_pixmap(matrix=mat)
+    pix.save(f"{outdir}/src_{int(briefnr):05d}_p{i}.png")
+PYEOF
+}
+
+do_page300() {
+  local briefnr="$1" page="$2" tmp
+  tmp=$(mktemp -d)
+  fetch_pdf "$briefnr" "$tmp/$briefnr.pdf"
+  render_pymupdf300 "$tmp/$briefnr.pdf" "$tmp" "$briefnr"
+  cp "$tmp/src_$(printf '%05d' "$briefnr")_p${page}.png" "images_wv2/crops_4612/src_$(printf '%05d' "$briefnr")_p${page}.png"
+  rm -rf "$tmp"
+  echo "rendered 300dpi briefnr=$briefnr page=$page"
+}
+
 do_page() {
   local briefnr="$1" page="$2" tmp
   tmp=$(mktemp -d)
@@ -90,16 +122,25 @@ if "box=" not in src:
 parent = src.split("crop of ")[1].split(" box=")[0]
 box = ast.literal_eval(src.split("box=")[1].split(" via")[0])
 if not os.path.exists(parent):
-    sys.exit(f"parent {parent} not on disk -- run: ./regen_images.sh page <briefnr> <page> first")
+    sys.exit(f"parent {parent} not on disk -- run: ./regen_images.sh page <briefnr> <page> (or page300 for images_wv2/crops_4612/src_*) first")
 from PIL import Image
 im = Image.open(parent)
-im.crop(tuple(box)).save(path, quality=85)
+cropped = im.crop(tuple(box))
+# AX2-SHRINK2 convention (26 Sept 2026): stored crops are capped at 1600px wide, JPEG q80;
+# a crop already under that (the images/ 04610-4616 line crops) keeps the original q85 behaviour.
+if cropped.width > 1600:
+    new_h = round(cropped.height * 1600 / cropped.width)
+    cropped = cropped.resize((1600, new_h), Image.LANCZOS)
+    cropped.save(path, quality=80)
+else:
+    cropped.save(path, quality=85)
 print(f"cut {path} from {parent} box={box}")
 PYEOF
 }
 
 case "${1:-}" in
   page) do_page "$2" "$3" ;;
+  page300) do_page300 "$2" "$3" ;;
   crop) do_crop "$2" "$3" ;;
   all)
     python3 -c "
@@ -114,7 +155,7 @@ for m in ('images/manifest.json','images_wv2/manifest.json'):
     done
     ;;
   *)
-    echo "usage: $0 {page BRIEFNR PAGE | crop images_manifest_full.tsv PATH | all}" >&2
+    echo "usage: $0 {page BRIEFNR PAGE | page300 BRIEFNR PAGE | crop images_manifest_full.tsv PATH | all}" >&2
     exit 1
     ;;
 esac
