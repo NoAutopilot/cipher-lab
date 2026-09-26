@@ -26,6 +26,8 @@ RUNS = {
     "p6_control_abso": {"codes": ["62", "66", "26", "6"], "target": "abso"},
     "p7_spot6_mit": {"codes": ["117", "103", "33"], "target": "mit"},
     "p5_control_election": {"codes": ["82", "112", "83", "72", "32", "102", "10", "2"], "target": "election"},
+    "p3_spot1_secours": {"codes": ["30", "81", "71", "6", "36", "25", "29"], "target": "secours"},
+    "p3_spot1_entrepr": {"codes": ["84", "3", "31", "21", "85", "12", "23"], "target": "entrepr"},
 }
 
 
