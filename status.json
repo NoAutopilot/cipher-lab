@@ -455,7 +455,7 @@
       "ref": "NARA RG 59 M34 roll 14; Founders Online 99-01-02-2728",
       "folder": "ciphers/armstrong-madison-1808",
       "stage": 8,
-      "state": "open",
+      "state": "waiting",
       "holder": "LANE ARM2 (idle-standing on ASKS 66)",
       "next": "The Papers of James Madison editors (U.Va.): any other letter in this code or with these marks, a key, a decode, or the correspondent Madison meant (ASKS row 66).",
       "note": "Transcribed from the NARA microfilm, 0.957 match against the Founders Online text; a crib hunt, sibling-code vocabulary transfer and a nomenclator solver are all parked with their matched controls. Ten period shorthand systems were checked against the marginal marks -- six excluded with a Pitman control, the other four non-test on a calibration drift -- and none identified; the docket letters, five Livingston letters and all 35 pages of the Jefferson channel are clear text, so no second letter in this code was found. 139 of 369 code groups occur once, which caps any context-only solver, so only more ciphertext in this code moves it. S. Tomokiyo (Cryptiana) recommended this target to us, 26 Sept 2026.",
