@@ -233,3 +233,7 @@ The owner's decisions go into STATUS.md, ROOM.md and the briefs as decisions in 
 ## Times for the owner (26 Sept 2026)
 
 The owner reads Pacific time (America/Los_Angeles). Every time in a reply to him is given Pacific first with UTC in brackets, e.g. 12:40 PT (19:40 UTC). The board converts client-side (tools/build_dashboard.py, UTC toggle). ROOM.md, STATUS.md, LEDGER.md and every other file stay UTC, clock-read.
+
+## TLDR for the owner (26 Sept 2026)
+
+Every message to the owner that carries a board update opens with a three-line TLDR before anything else: (1) SOLVES: the unique-solve count and whether it changed ("20 letters / 15 entries, unchanged" or "+1: <target>, N<class> after two audits"); (2) CLOSEST: the one target nearest a class change, with its stage in five words and what it waits on; (3) NEW THIS HOUR: at most two clauses. Then the detail. The owner reads the TLDR to decide whether to read on.
