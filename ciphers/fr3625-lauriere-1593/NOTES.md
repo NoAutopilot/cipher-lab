@@ -619,3 +619,149 @@ Credit: S. Tomokiyo, "Catalogue of Ciphers (Mainly Related to Duke of Nevers) in
 for the no.57 catalogue entry and key-table image; D. Bourdeau, cyphersolver (`champagne1590/`), for the prior
 key-list review this session cross-checked. Rule 10: no novelty claim made; this is a search result, listing
 candidates for a future worker, not a reading.
+
+## NX-LAU4, 26 September 2026 (LANE NX worker, sibling key-sheet search across fr.3995's other 1592-1594 keys)
+
+Brief `.claude/briefs/runs/2026-09-26-lane-nx-lau4.md`. NX-LAU3's own next step: since fr.3995 no.57 (Feb 1593,
+La Verriere) beats its shuffle floor on the 12 gloss anchors (4/12, shuffle max 2) but misses the 6/12 gate, and
+the mismatches look like a *renumbered word bank of the same office* (key57 has 335=soit/141=catholique where
+fr.3625 has 141=soit/288=Catholique), this session tests whether any OTHER 1592-1594 key in Tomokiyo's fr.3995
+catalogue is fr.3625's true sibling key. Intake gate already exit 0 (per LANE NX orchestrator, 08:45 UTC, per
+ROOM.md). Result: **negative on all four sheets tested, and the "shared syllable template" hypothesis itself
+does not survive a wider look at the catalogue** -- see "Reading the result" below.
+
+### 1. Candidate list (`keysib/candidates.tsv`)
+
+`sources/cryptiana/web/nevers.htm` (Tomokiyo's catalogue of fr.3995 nos.1-70) was read in full (`/tmp/nevers.txt`,
+a plain-text extraction, `grep -n "^### no\."` for the index, then every entry dated 1592-1594 read individually).
+**No entry other than no.57 gives the specific "figures 1-72 represent two-letter syllables... 99-353 represent
+words" range breakdown** -- a `grep -i "syllable\|1-72\|73-98\|99-35"` across the whole catalogue file confirms
+no.57's own line (697) is the only hit with that structure. Candidates were therefore ranked by a looser design
+family (a French-language, homophone-plus-nomenclator numeral cipher, not Italian/Spanish, not an intercepted
+third-party letter) and by closeness to Champagne/Chalons and to July 1593, per the brief's step 1: no.58
+(fol.104, Jul 1593, same month as the target letter), no.60 (fol.108, Aug 1593, given to the Duke of Nevers
+himself, used in many fr.3985 letters -- the same volume as no.57's own application letter), no.45 (fol.84, Aug
+1592, Provins -- a historic Champagne fair town), no.61 (fol.112, Oct 1593, Andre Hurault de Maisse to the Duke
+of Nevers), no.66 (fol.122, Mar 1594, conceptually closest to no.57's tiered structure per its own catalogue
+text: "symbols for double letters, nulls, and monosyllables... names by special symbols"). Excluded outright:
+no.46 (Bourdeau already tested, "does not fit," per this job's own brief); no.57 (NX-LAU3, already tested);
+Italian/Spanish-language entries (47,52,53,54,56,59,62,63,64,67); intercepted third-party-letter ciphers
+(48,50,51, issued between enemies of the Nevers office, not by it); no.70 (dated 1595, outside the window).
+
+### 2. Locating each table on the Gallica manifest (`btv1b525085665`, fr.3995)
+
+Per NX-LAU3's own finding for no.57 (docket folio N recto = the address/outside of a folded sheet; the table
+itself is the *interior*, usually the very next canvas), `tools/gallica_folio.py` located each docket folio, then
+the manifest (`sources/gallica-manifests/btv1b525085665.json`, cached after the first `gallica_folio.py` call --
+folios 85, 84, 112, 113, 122, 123 all read from that cache, 0 further manifest fetches) was read directly for the
+canvas immediately after, which turned out to carry a combined label confirming the fold-out interior in every
+case tested: f203 "104v-105r" (no.58), f166 "84v-85r" (no.45), f235 "122v-123r" (no.66). No.61 (fol.112) does
+**not** follow this pattern -- f215/f216/f217 are three separate canvases ("112r"/"112v"/"113r"), no combined
+fold-out label -- its table turned out to be the ordinary recto f217 ("113r"), a single normal-sized page, not an
+oversized sheet like the other three.
+
+### 3. What each table actually is (eye-check first, per rule 2 -- image over transcription)
+
+Each candidate's own table image was read directly (this session) and cross-checked by one blind Sonnet subagent
+given only the crop paths (never told this session's own readings), per the brief's "two readers" instruction.
+Crops: `keysib/imgs/{f203_syllables,f203_wordbank,f166_q4,f217_1400,f235_1400}.jpg` (full-canvas eye-check images
+for f209/f216/f166/f203 at 1200-2400px were fetched, read, and then deleted after their content was established,
+to keep the target folder under the 30 MB line -- CLAUDE.md Access playbook).
+
+**No.58 (fol.104, f203, "104v-105r"):** a genuine numeral table -- a syllable grid across columns A-Z (two rows of
+numbers per column, values running only **0-46**, confirmed by both readers) and a separate word list running
+**99 down to 45/49** ("Pape"=99, both readers agree; "Marquis du Pont"=49 this session's own read, or "Comte de
+grand pre"=45 by the row just below it -- either way the list bottoms out in the mid-to-high 40s). This key's
+entire number space (0-99) is smaller than fr.3625's own code range (which needs at least 346). **Eight of the
+twelve anchors (101, 103, 141, 184, 288, 335, 346, and the que-symbol) fall outside this key's number space by
+construction** -- there is no cell for them to compare against, at any value. Of the remaining four (25, 26, 54,
+56, 59, all inside the 0-46/49-99 space), the word-bank half (49-99) is exclusively noble titles/names (Pape, Roy,
+Duc de Savoye, ...), never a common function word like "du" -- so even 59 cannot be "du" by class, whatever its
+exact cell reads. **Maximum achievable score under this design is well below the 6/12 gate; no shuffle control
+was run, since a control cannot discriminate when 8 of 12 comparisons have no cell to compare (the AX-5799/bCAS
+non-test shape, CLAUDE.md rule 3) -- the disqualification is the range mismatch itself, reported here as the
+concrete evidence rather than forced into a shuffle-gate frame that would test nothing.**
+
+**No.66 (fol.122, f235, "122v-123r"):** a small (~24-entry) table where **every name is coded by a single SYMBOL
+or mark, not a number** -- "le Pape --", "le Roy --", "sa Mte --" are each followed by a distinct glyph (a cross-
+like mark, a circle-like mark, a T-shaped mark), confirmed independently by the second reader ("None of the three
+is a plain multi-digit number -- each is a single symbol or character"). There is no word-bank tier here at all
+for common words (que/du/soit/volonte/aussitost/auroit) -- the design (per Tomokiyo's own catalogue text,
+confirmed by this eye-check) is symbols-for-names plus a separate letter-homophone alphabet and Doubles/Nulles
+lists, structurally incompatible with fr.3625's numeral word-bank. Excluded on design-class grounds, no gate run
+for the same reason as no.58 (nothing to compare numerically).
+
+**No.61 (fol.112, f217, "113r," the "Tour de Chiffre"):** a 1-99 numbered table, but **the great majority of
+codes 12-29 are single-letter homophones** (12=f, 13=s, 16=B [confirmed by both readers, though this session
+initially misread this cell as "s" before the second reader's independent count of letters caught it], 17=x,
+20=t, ...), used to spell arbitrary words letter-by-letter, interleaved with a much smaller set of proper-name
+codes (1=Empereur, 2=Roy d'Espagne, 4=Pape, 16=Roy [name], ...). **There is no single-code tier for whole common
+words at all** -- "que", "du", "soit", "volonte", "aussitost" and "auroit" would each have to be spelled out
+letter by letter in this design, not looked up as one code the way fr.3625 does. Excluded on design-class
+grounds, same reasoning as no.58/no.66.
+
+**No.45 (fol.84, f166, "84v-85r"):** the richest table of the four -- three tiers (a numeral "Villes" list up to
+~199; a "Noms particuliers" tier using mixed letter+roman-numeral-like codes, e.g. "Roy d'Espagne" read as
+something like "I", "Duc de Lorraine" as "fn," not plain integers; and a "Mot comuns" [sic] tier of ordinary
+function words, numbered **alphabetically within each letter block** rather than as scattered independent codes).
+This last tier is the one structurally closest to fr.3625's own "que/du/soit" single-code words, so it is the one
+concrete anchor this session could actually compare: **"Que" in the Q column reads a number in the low-30s to
+low-70s range (this session read ~31; the second, independent reader read ~71, genuinely unable to resolve the
+tens digit at this resolution -- but both readings disagree with fr.3625's own 25 (or the que-symbol) regardless
+of which is correct).** 0 of 1 concrete anchor checked matched; the per-letter-alphabetized construction (Q-words
+numbered together in the 30s-40s, S-words in the 30s-60s, T-words in the 60s-70s, V-words in the high 70s-80s,
+per both readers' partial counts) is also a different construction from fr.3625's/no.57's scattered single-purpose
+codes, independent of the "que" mismatch.
+
+### 4. Reading the result
+
+**None of the four tested sheets is fr.3625's sibling key, and none shares no.57's own specific design either.**
+This is a stronger, more informative negative than a per-sheet shuffle-gate table would have been: the four
+sheets actually surveyed cover three genuinely different code families within the same volume and the same
+1592-1594 window (a small 2-digit name-only table [no.58]; a symbol-for-names table with no word tier [no.66]; a
+homophone-letter table with no word tier [no.61]; a rich multi-tier alphabetized dictionary [no.45]) -- **the
+office did not use one shared template across its 1593 Nevers correspondents.** NX-LAU3's "renumbered word bank
+of the same office" hypothesis (motivated by no.57's own partial, above-chance overlap with fr.3625) is not
+corroborated by this wider search: no other sampled key even shares no.57's *shape* (syllable-grid-plus-word-bank
+running into the 300s), let alone its specific numbering. The most that can be said is that no.57 itself remains
+the single best partial match on file (NX-LAU3's 4/12 against a shuffle max of 2); this session did not find a
+better one, and the pattern it was sent to test for ("shared syllables, renumbered words," holding across
+sheets) **does not hold** across the four sheets actually read.
+
+### 5. Apply -- not run (no candidate reached the point of a decode)
+
+Per this brief's step 3/4: no sheet passed a 6/12 gate (none of the four reached a state where that gate was even
+computable in the normal sense -- see per-sheet notes above), so no key.tsv/decode.json/ciphertext/spec was
+written for no.55, and no.55 is not decoded further. Bourdeau's 19/86 (grade C) stands unchanged as the reading
+on file. Status unchanged: `open`.
+
+### Next step
+
+The office-template hypothesis from NX-LAU3 is now the weaker of the two remaining leads, not the stronger one --
+this session's four-sheet sample argues against a repository-wide shared design, though it cannot rule out that
+no.57 specifically (the one sheet with an above-chance partial overlap) is still worth a closer, non-anchor-only
+read (e.g. checking whether *more* of fr.3625's 19 already-read tokens beyond the 12 table anchors land on
+plausible no.57 cells). Untested from `candidates.tsv`: no.60 (fol.108, eye-checked only via f209 at the earlier
+scoping stage -- visually the same symbol-based family as no.66, not worth a fifth full test) and no.65 (fol.120,
+Mar 1594, Grenoble -- Tomokiyo's "two figures per entry" wording implies the same 2-digit cap problem as no.58,
+and it is geographically and temporally the furthest of the untested candidates). The two options named by
+NX-LAU2/NX-LAU3 remain open: fr.3632 no.8 (a second glossed Laurière letter, not digitized, needs a REQUEST.md/
+copy-order row) and a lexicon-constrained beam search over fr.3625's own code (Forster 1644 precedent, LESSONS.md
+section 2). Status unchanged: `open`.
+
+Credit: S. Tomokiyo, "Catalogue of Ciphers (Mainly Related to Duke of Nevers) in BnF fr.3995"
+(cryptiana.web.fc2.com/code/nevers.htm) for the catalogue entries and key-table images; D. Bourdeau, cyphersolver,
+for the prior key-list review and the 12-entry anchor table this session compared each candidate against. Rule
+10: no novelty claim made; this is a controlled negative on a key-identity search across four candidates, not a
+reading of no.55.
+
+Files: `ciphers/fr3625-lauriere-1593/keysib/{candidates.tsv,imgs/f203_syllables.jpg,imgs/f203_wordbank.jpg,
+imgs/f166_q4.jpg,imgs/f217_1400.jpg,imgs/f235_1400.jpg}`. No `specs/fr3625-lauriere-1593.json` written (no
+candidate reached a scoreable state). Stopping per brief.
+
+Requests this session: gallica.bnf.fr ~11 (1 manifest fetch via `tools/gallica_folio.py`'s first call on this ark
++ 1 redundant direct manifest fetch of the same file for python parsing, both HTTP 200; folio lookups for 85, 84,
+112, 113, 122, 123 all served from the resulting cache, 0 further manifest requests; 9 IIIF image region fetches
+at 1200-2400px across f203, f209, f166, f216, f235, f217, all HTTP 200, no 429/403, no retries needed, spaced
+1.5s+ apart). 1 Sonnet subagent (the second-reader cross-check on five crops, one call). cost: see the lane
+ledger.
