@@ -183,8 +183,8 @@ SCOUT-OWN-2026-09-26.md (the 1593 Nevers key-no.60 pool stays closed: palaeograp
 **Round 4 live (spawned 11:00, Sonnet) -- the lane closes after these two (parent 10:43):**
 | Job | Session | Task | Box / alarm |
 |---|---|---|---|
-| NX-MOR4 | see ROOM | other RAH Morillo cipher letters key_5186 can read; coverage + value-shuffle gates; Bolivar 26=v as a hypothesis | 90 min / USD 12 |
-| NX-LAU4 | see ROOM | anchor cells on up to 4 sibling 1592-94 fr.3995 key sheets, same 6/12 + shuffle gate | 75 min / USD 10 |
+| NX-MOR4 | session_01C4s2bLDXohdU1rc96dCmks | other RAH Morillo cipher letters key_5186 can read; coverage + value-shuffle gates; Bolivar 26=v as a hypothesis | 90 min / USD 12 |
+| NX-LAU4 | session_01RZvQTdc9g8PhcnKRDqe9hH | anchor cells on up to 4 sibling 1592-94 fr.3995 key sheets, same 6/12 + shuffle gate | 75 min / USD 10 |
 
 Lane workers so far: 13 rows ledgered, 87.69 USD. Retro: parent 10:43 says retrospective r already covers the window.
 
