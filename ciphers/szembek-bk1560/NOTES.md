@@ -131,3 +131,43 @@ transcribing the rest: each held its full gloss word(s) and full cipher line, no
 own cipher/gloss text (a little of the previous line's tail ink is harmless overlap, same finding as leaf 66).
 20 bands x 2 width-segments (line width 3552 > the 2400px max, split at 2400 with 150px overlap, same convention
 as the tool) = 40 crop files, `f65_line<NN>_s{1,2}.jpg`, manifest at `leaf65/crops/manifest.json`.
+
+## Leaf 65 transcription (bSZL65, 26 Sept 2026)
+Transcribed crop by crop (worker only, no subagent) into `leaf65/pairs.tsv` (20 rows, one per physical line) and
+`leaf65/groups.tsv` (150 code tokens + connective/clear tokens, one row per token). `?` used for one illegible
+struck-through mark on line 1; a struck `20 et` fragment on line 20 kept as tokens with a note rather than dropped.
+
+Counts: 150 code tokens (kind=code), 19 distinct code values, 21 of the 150 code tokens (14.0%) carry a
+gloss_above (the rest of a multi-code word run were left blank per the brief's rule: gloss goes on the token
+where placement is visually clear, not guessed across the rest of the run -- see caveat below).
+
+**Self-check (rule 3 form, run before transcribing further): consistency of a recurring code's gloss vs a shuffled
+control.** Only 4 of the 19 distinct codes recur with >=2 glossed occurrences (42, 17, 25, 50), giving 18 same-code
+gloss pairs total. Real transcription: 0/18 pairs have the *identical* gloss string (rate 0.0). Shuffled control
+(gloss strings reassigned across code occurrences at random, 1000 shuffles, seed 20260926): mean 0.0, 95th pct 0.0
+-- real and shuffled are identical, 0 both ways. **This control does not discriminate** (CLAUDE.md rule 3's own
+"a control that cannot vary on the same axis it is testing licenses nothing" paragraph applies here too): with 21
+glossed tokens spread over mostly-unique multi-word phrase strings, the exact-string-match test has ~0 probability
+of a same-string pair under ANY assignment, real or shuffled, so a 0.0-vs-0.0 result is a non-test, not a negative.
+The reason is structural, not a transcription failure -- see next paragraph.
+
+**Nomenclator (one word/code) or syllabic (letters per code)?** The leaf's own evidence says syllabic/digraph, not
+nomenclator: "Celsissimus Princeps" (2 words, ~19 letters excl. spaces) spans 11 two-digit codes (42 14 49 21 46 21
+21 46 50 12 21); "conscientiam" (12 letters) spans 6 codes (42 13 51 21 42 46); "Christianam" (10 letters) spans 4
+codes (42 44 23 46) -- roughly 1.7-2 letters per code throughout, not 1 code per word. That means a single code
+value (e.g. 42, 25, 50) recurs as a fragment inside many DIFFERENT glossed words, so its exact-string gloss is
+expected to differ at almost every occurrence even under a correct, consistent key -- this is what made the rule-3
+control above non-discriminating, and it is the reason to read code 25's four occurrences qualitatively instead:
+"procepimus", "procedimus", "et procedemus", "procedant" -- four different inflections of the SAME verb stem
+*procedere*, at four different points on the leaf. That is a real, non-random, code-level consistency signal (a
+shuffled reassignment would not reliably land four occurrences of the same code on forms of one verb), just not
+one an exact-string pairwise test can see. Recommend the merge job (or a follow-up) build a stem/root-match
+consistency check instead of exact-string match before drawing a rule-3 verdict on the pooled 3-leaf key.
+
+Caveat on gloss_above placement: multi-word glosses spanning many codes were attached to the FIRST code of the run
+only (blank for the rest), per the brief's instruction to leave gloss_above blank where per-token placement is not
+visually clear -- true per-glyph horizontal alignment (which of the 4-11 codes in a run sits under which specific
+syllable of the gloss word) was not attempted this pass; it would need pixel-position measurement per glyph, out of
+this job's box.
+
+Files: `leaf65/pairs.tsv`, `leaf65/groups.tsv`, `leaf65/crops/*.jpg` (40 crops + manifest.json), this section.
