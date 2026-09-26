@@ -109,15 +109,28 @@ SCOUT-OWN-2026-09-26.md (the 1593 Nevers key-no.60 pool stays closed: palaeograp
 - fr3151-noailles-1558 (NX-3151N33, new folder): open; addressee Cardinal de Lorraine; three cipher blocks (about 200-230
   signs), each with a period marginal gloss (crib). QUEUE G10 updated.
 
-**Round 2 live (spawned 09:31, Sonnet):**
+**Round 2 (09:31-10:05, 4 workers, 51.25 USD, ledgered and archived):**
+- rah-morillo-1817 item 3 (NX-MOR2): key_5186.tsv grade H from the leaf's own interlinear decipherment (17 signs, 0
+  conflicts; consistency 1.000 vs shuffle p95 0.800); decode --check clean (91 H / 6 U of 97). es17 judge FAIL on a
+  non-era-matched corpus at 91 letters (uninformative). Rodriguez Villa t.4 searched on Google Books: no hit.
+- fr3151-noailles-1558 (NX-3151G): pass agreement 31-51 pct, only gloss 1 legible; control tied with its shuffle floor
+  (0.000/0.000) -- not a test. Parked open: palaeography first (a glyph atlas), not another alignment.
+- wvo-hessen-1564 (NX-WVO174): 174 key does not transfer (coverage 62.7/67.3 vs 70; decode in the shuffle band; de16
+  FAIL). Parked open (next: per-glyph atlas).
+- fr3625-lauriere-1593 (NX-LAU2): candidate PERIOD KEY fr.3995 no.57 (Tomokiyo: Laveriere to Nevers, Feb-Aug 1593),
+  never tested; name identity with Lauriere not established.
+- esp318-sicilia-1503: orchestrator re-ran the Bergenroth search with a positive control (Ferdinand 846 / 194 hits;
+  Sicily 19 / 2, none the viceroy's letter; Messina 0) -- the earlier "zero hits" risk was the archive.org
+  encoded-filename 404 trap; verdict open stands (V9-QA9 finding 1 answered in NOTES.md). Still held for Bourdeau.
+
+**Round 3 live (spawned 10:15, Sonnet):**
 | Job | Session | Task | Box / alarm |
 |---|---|---|---|
-| NX-MOR2 | session_01DExKxBsogHJXg2WZujdoyP | Morillo item 3: t.4 edition check, transcribe block + gloss, key_5186 (H), consistency + shuffle control, decode --check | 60 min / USD 6 |
-| NX-3151G | session_01CEwuUx2ebznjFucmfWmQVS | Noailles: crops, 2 passes x 3 blocks, gloss alignment, leave-one-block-out control, decode if gate met | 100 min / USD 12 |
-| NX-WVO174 | session_012H1Qv3x7FgVgU4LUuv2SwN | 1109 transcribed in 174's sign names; coverage gate + 20 value-shuffle control under key_174 | 75 min / USD 8 |
-| NX-LAU2 | session_014HFYpG9945vWaTyqe3996e | desk search for more glossed Lauriere letters / a Nevers key-list entry | 45 min / USD 5 |
+| NX-LAU3 | session_01JjPCGPpXpCa1BGu5PexrZN | transcribe fr.3995 no.57 key from Gallica crops; known-answer gate on the gloss anchors vs 1000 shuffles; decode no.55 only if it passes | 120 min / USD 22 |
+| NX-MOR3 | session_01UJML5xx7WM9EdZKYa29fjp | fresh-instance rule-7 re-derivation of Morillo item 3 | 40 min / USD 5 |
 
-No reading ready for LANE V9 yet.
+Lane workers so far: 9 rows ledgered, 76.91 USD (retrospective threshold of 60 USD crossed -- for the parent).
+No reading sent to LANE V9 yet: Morillo item 3 goes after NX-MOR3 agrees.
 
 ## LANE AX2 handoff (session_016sbTkVT8HGNJ6JGjJNmCuM), 26 September 2026, from 05:14 UTC (live)
 
