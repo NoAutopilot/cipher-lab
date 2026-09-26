@@ -429,7 +429,7 @@ Breadth lane, successor to LANE B9, opened by parent 7g at 10:41 UTC 26 Sept 202
 | malsburg-hessen-1636 | Marburg keys 4 d 1219-1224 vs pool (bMALK) | 519 covers 1432/1828 tokens, decode not German; 520-523 not usable keys | overlap control degenerate (non-test); decode-and-read is the test | no key; job 4 |
 | fr2933-salviati-1525 | pass C, 4 leaves, 275 boxes (bSALC, Opus, 1.18x) | no-majority 2.6% of 3,554 boxes; est. 6.4%/sign | SALV-DIAG crossover 8-9% | R8 families re-runnable (thin, model-based margin); f56r one-reader |
 
-Live workers: bMALS session_01HBtZHDboTVhkQ6k7qZuCSW, bMALK session_01FcKadiMNE7MT5nsy5mcE75, bSALC session_017DkWmCC7JP5RzZJCTbR2X1. Next: job 4 (nomenclator family at pooled N, control first, judge floor on the shuffled pool) only if bMALK finds no key. Note for the parent: fr2933-salviati-1525 is 36 MB, over the 30 MB line (not in this lane's brief).
+bMALS, bMALK, bSALC done, ledgered and archived 11:12 (USD 17.11). Live: bMALN session_01D9c6E8CHv4h2WXg5t725KG (job 4: block_homophonic, then letter+syllable homophonic, at N=1,828, control first, shuffle judge floor; Opus cap 8). Open for the parent: fr2933-salviati-1525's NEAR step is now the R8 design-family re-run on the rebuilt spec (not in this lane's brief). Note for the parent: fr2933-salviati-1525 is 36 MB, over the 30 MB line (not in this lane's brief).
 
 ## LANE B9 handoff (session_0167Uwemu8CfMzGaGRJJhx6W)
 

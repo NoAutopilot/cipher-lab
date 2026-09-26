@@ -843,3 +843,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T11:12Z	session_01HBtZHDboTVhkQ6k7qZuCSW	bMALS	done 3.57, ledgered D, retitled ARCHIVED, archived by LANE B10	24.1 MB (27 with keys/), regen sample byte-identical
 2026-09-26T11:12Z	session_01FcKadiMNE7MT5nsy5mcE75	bMALK	done 4.12, ledgered D, retitled ARCHIVED, archived by LANE B10	keys 519-523 all negative; job 4 next
 2026-09-26T11:12Z	session_017DkWmCC7JP5RzZJCTbR2X1	bSALC	done 9.42, ledgered D, retitled ARCHIVED, archived by LANE B10	2.6% no-majority, est 6.4%/sign < 8-9% crossover; R8 families re-runnable
+2026-09-26T11:11Z	session_01D9c6E8CHv4h2WXg5t725KG	bMALN (Opus, cap 8)	malsburg-hessen-1636 block_homophonic / letter+syllable homophonic at N=1828, control first, shuffle judge floor	brief 2026-09-26-lane-b10-bMALN.md; LANE B10
