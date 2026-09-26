@@ -1832,3 +1832,58 @@ code. The older per-leaf `build_ciphertext_<leaf>.py` scripts would revert this;
 Suggestions (not done): arbitrate the 76 new three-way splits on the crop (grade M), then run pass C on f.56r
 (crops already cut: `python3 crop_passC_leaf.py f56r && python3 montage_passC_leaf.py f56r`, 2 Sonnet calls); re-run the
 syllabary control at err=0.064 with the substitution-heavy mix before trusting a family verdict at this N.
+
+## bSALS: folder shrink (26 Sept 2026)
+
+Folder hygiene against CLAUDE.md's 30 MB rule (Access playbook), AX2-SHRINK method (see
+`ciphers/lodewijk-van-nassau-1573-74/NOTES.md`). Before: 35,928,559 bytes (35.9 MB): images 11,490,192,
+strips 9,856,559, glyphs 8,905,648, atlas_review 3,794,934, recon_*/ ~360 KB combined.
+
+**Inventory.** `images_manifest_full.tsv` (folder root): one row per file under images/, strips/, glyphs/,
+atlas_review/, recon_*/ (path, bytes, sha1+dims for images, kind, source, cited_by), 467 rows, built with a
+script that reads `images/manifest.json`'s `iiif_lines`/`leaves` records for Gallica provenance and greps
+every NOTES.md/leafnotes/*.md/*.py/*.tsv/*.json/*.sh file for citations.
+
+**What moved.** `images/` held one full-resolution native IIIF crop (`src_ark_..._f55_4085_0_4086_5513.jpg`,
+2,962,765 bytes, the source for the f54r_L*_s* line crops) and seven `f*_ref1600.jpg` per-leaf renders
+(3,412,281 bytes total, f54v-f57v), all plain Gallica IIIF fetches with the URL recorded in
+`images/manifest.json`'s `leaves` entries, and none cited anywhere by filename outside that manifest and
+`glyphs/segment_args.txt` (glyphs/build.sh's own input list, not a citation of evidence). Also removed
+`images/f54r_lines_debug.jpg` (531,301 bytes, a `tools/iiif_lines.py --debug` overlay, uncited anywhere,
+not itself recorded in `iiif_lines`). All nine `git rm`'d; still readable from git history (this commit's
+parent). Everything else — the native `f54r_L*_s*.jpg` line crops, `strips/`, `glyphs/` (atlas, sheet_*,
+clusters.tsv, signs.tsv, bitmaps.npz, etc.), `atlas_review/`, `recon_*/` — was left in place: each is either
+cited by a script/NOTES.md line, or its derivation could not be verified within this pass's budget (see
+below), and CLAUDE.md rule 7/this section's own method require a passing regen test before deletion.
+
+**Regen test (2 requests to gallica.bnf.fr, 2 s apart, browser User-Agent, well under the 6-request cap).**
+Re-fetched the native crop and one ref1600 leaf from their recorded IIIF URLs into a scratch dir: both
+byte-identical to the committed files (sha1 `a1d72d2d387668ff2b1c11fb2910556c9a7f9f9f` for the native crop,
+`c18a89bbfe89c91090d5ccb3a2b0030b5cb59251` for f54v_ref1600.jpg, matching exactly). Then cut 3 locally
+derived line crops (`f54r_L01_s1.jpg`, `f54r_L01_s2.jpg`, `f54r_L02_s1.jpg`) from the re-fetched native crop
+using the box coordinates in `images/manifest.json`'s `iiif_lines` records (subtracting the native crop's own
+IIIF region offset, 4085,0, to get local pixel coordinates): all three same pixel dimensions as the committed
+crops, but not byte-identical (different JPEG re-encode quality/subsampling) -- max per-channel pixel
+difference 10, 18, 16 respectively, i.e. pixel-near-identical, not pixel-identical; recorded here per this
+job's own caveat rather than claimed as an exact match. `regen_images.sh` implements both the `page` fetch
+and the `crop` cut.
+
+**Still over the 26 MB target.** After: 29,192,750 bytes (29.2 MB) -- a 6,735,809-byte (6.7 MB) cut, but
+above the 26 MB line asked for. The remaining large content is `glyphs/` (atlas.png 950,987 B, atlas_part1/2
+424,610+432,836 B, sheet_signs_00-03 351,060+356,254+180,243+... B, sheet_marks_00/01, all cited or produced
+by `glyphs/build.sh` -> `tools/glyph_atlas.py segment/cluster/atlas/classify`, per its own header "no
+fetches") and `strips/` (`classify`'s per-leaf output, cited by `recon_box_*/` reconciliation scripts).
+`glyph_atlas.py --help` fails in this environment (`No module named 'cv2'`; needs opencv-python-headless,
+scikit-image, scikit-learn beyond the numpy/pillow this pass installed) -- installing and exercising those to
+run a byte-identical regen test on `glyphs/build.sh`'s output within this job's $4/30 min cap was judged too
+large a gamble to attempt, so nothing in `glyphs/`/`strips/` was touched. `atlas_review/` (3,794,934 B) has no
+producing script found anywhere in this folder or `tools/` -- derivation not recorded, so per this job's own
+rule it stays untouched regardless of citation. Flagged in ROOM.md for the lane orchestrator: a follow-up
+pass that installs opencv-python-headless/scikit-image/scikit-learn, confirms `glyphs/build.sh` reproduces
+`glyphs/atlas.png`/`sheet_signs_*`/`sheet_marks_*`/`strips/*` byte- or pixel-identically, then deletes the
+uncited outputs (`sheet_signs_00-03.png`, `sheet_marks_00/01.png`, ~1.5 MB) would close most of the remaining
+gap; `atlas_review/`'s 3.8 MB has no recorded regen path at all and would need its origin traced first (ask
+whoever ran the R8 glyph review pass) before any of it could be removed.
+
+Files: `ciphers/fr2933-salviati-1525/{images_manifest_full.tsv,regen_images.sh,images/**,images/manifest.json,NOTES.md}`
+(this section). Hosts: gallica.bnf.fr, 2 requests (both HTTP 200, no retries).
