@@ -1,0 +1,72 @@
+{
+  "519": {
+    "url": "https://api.hcportal.eu/media/1453/22421678547639.jpg",
+    "orig_size": [
+      2722,
+      4130
+    ],
+    "saved_size": [
+      1581,
+      2400
+    ],
+    "sha1": "5d61a4d12bbaa787c4fd00f262a12edb47441cc1",
+    "bytes": 1038830,
+    "file": "keys/hcportal_519.jpg"
+  },
+  "520": {
+    "url": "https://api.hcportal.eu/media/1455/68161678547949.jpg",
+    "orig_size": [
+      4972,
+      4204
+    ],
+    "saved_size": [
+      2400,
+      2029
+    ],
+    "sha1": "d6cdfdc369226b0552d7b3fe78c157e866e5ea00",
+    "bytes": 1215878,
+    "file": "keys/hcportal_520.jpg"
+  },
+  "521": {
+    "url": "https://api.hcportal.eu/media/1457/30541678548155.jpg",
+    "orig_size": [
+      2422,
+      1788
+    ],
+    "saved_size": [
+      2400,
+      1771
+    ],
+    "sha1": "08d2d7caae8d5016b8d3b182278f64fe17e27a42",
+    "bytes": 829432,
+    "file": "keys/hcportal_521.jpg"
+  },
+  "522": {
+    "url": "https://api.hcportal.eu/media/1459/67761678548444.jpg",
+    "orig_size": [
+      2284,
+      2910
+    ],
+    "saved_size": [
+      1883,
+      2400
+    ],
+    "sha1": "976cf4325e01b00b028ce1ebb62ff15fa7c13e46",
+    "bytes": 910012,
+    "file": "keys/hcportal_522.jpg"
+  },
+  "523": {
+    "url": "https://api.hcportal.eu/media/1461/76191679559699.jpg",
+    "orig_size": [
+      4530,
+      2754
+    ],
+    "saved_size": [
+      2400,
+      1459
+    ],
+    "sha1": "3f41f0e46bb13e872773dad6f683770061de3097",
+    "bytes": 782109,
+    "file": "keys/hcportal_523.jpg"
+  }
+}
