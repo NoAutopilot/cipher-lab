@@ -879,3 +879,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T13:41Z	session_01GwwZJN1W4YusAZ4u8cgFSB	LEARN-8	done 1.38 (get_session), ledgered Q, retitled ARCHIVED, archived by 7h	LEARN-2026-09-26-1313.md; items to RETRO-APPLY-T
 2026-09-26T13:42Z	session_019AKvmQkHxZjvUQQvHnrmJL	retrospective t (Sonnet, cap 10)	21+ ledger rows since retro s; file RETRO-2026-09-26h.md	brief 2026-09-26-parent-retrospective-t.md; parent 7h
 2026-09-26T13:44Z	session_01X8nHQxRPvLqC6ZXDW5mP4Z	ARM-S3	done 12.67 (get_session, 2.1x cap), ledgered D-, retitled ARCHIVED, archived	non-test at calibration drift
+2026-09-26T14:13Z	session_01DMASDZALvczYqhcrrURyaJ	V9-QA11	done 2.26, ledgered D, archived (QA/2026-09-26-1335.md, 0 flags)	
+2026-09-26T14:14Z	session_01WNitVVGthGvdkHoyXGzkDw	LANE V9 orchestrator	done 10.30 (get_session), handoff STATUS.md LANE V9 handoff; QA12 brief ready	

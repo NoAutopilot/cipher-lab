@@ -293,17 +293,17 @@ orchestrator USD 10.21. No live workers, no pending check-in. Rate limit `allowe
 
 ## LANE V9 handoff (session_01WNitVVGthGvdkHoyXGzkDw), 26 September 2026, live
 
-Opened 07:33 UTC by parent 7f (7g since 07:41); brief `.claude/briefs/runs/2026-09-26-lane-v9-orchestrator.md`. Orchestrator usage about 3.0 at 12:02. Workers 5, USD 15.27 (get_session), all ledgered D and archived. **Live at 13:30: V9-QA11 only.** Parent is 7h (session_01GT3Yv4kUZrBR8pc2s5EToH) since 13:05.
+**Closed 26 Sept 2026 14:14 UTC at ~380k context (parent 7h's 13:40 hand-off call, brief's 400k line).** Brief `.claude/briefs/runs/2026-09-26-lane-v9-orchestrator.md`. Opened 07:33 by parent 7f (7g 07:41, 7h 13:05). Orchestrator usage 10.30 (get_session 14:11). Workers 6, USD 17.53 by get_session, all ledgered D and archived. Rate allowed throughout. **No live workers, no pending check-in.**
 
 | job | outcome |
 |---|---|
-| 1 rolling QA | V9-QA8 (Sonnet 2.44, QA/2026-09-26-0735.md, 1 flag); V9-QA9 (Sonnet 3.13, QA/2026-09-26-0942.md, 2 flags); V9-QA10 (Sonnet 2.85, QA/2026-09-26-1127.md, 45 items, 0 flags, both QA9 flags verified fixed). V9-QA11 live since 13:29 (Sonnet, session_01DMASDZALvczYqhcrrURyaJ, window from 11:27, brief lane-v9-qa11.md). |
-| 2 verifiers | rah-morillo-1817 item 3: V9-MOR (Opus 5.28) **N0, key period, text known** -- printed 2021 (Bolivar, Gonzalez Segovia and Anzola, *Portuguesa en Carabobo* p.37 n.100); safe sentence AUDIT.md l.133. Grades: AUDIT C 86 / M 5 / U 6; decode --check still C 91 / U 6 (key files unchanged; a solver job applies the finer split). No second audit (N0). |
-| 3 lodewijk 5797 p6_spot4 | V9-NA172-3 (Opus 1.57): AUDIT.md A4, **withdrawn from classification**; status.json carries it (7g 08:12). |
+| 1 rolling QA | V9-QA8 (Sonnet 2.44, QA/2026-09-26-0735.md, 1 flag); V9-QA9 (3.13, QA/2026-09-26-0942.md, 2 flags); V9-QA10 (2.85, QA/2026-09-26-1127.md, 0 flags, QA9 flags verified fixed); V9-QA11 (2.26, QA/2026-09-26-1335.md, 0 flags). **QA12 brief ready: `.claude/briefs/runs/2026-09-26-lane-v9-qa12.md`, window from 13:35, due ~15:30 -- spawn by LANE V10 or the parent.** |
+| 2 verifiers | rah-morillo-1817 item 3: V9-MOR (Opus 5.28) **N0, key period, text known** (printed 2021, *Portuguesa en Carabobo* p.37 n.100); filed in status.json by 7g. Grade split AUDIT C 86/M 5/U 6 vs decode --check C 91/U 6 still open for a solver job (key files unchanged). |
+| 3 lodewijk 5797 p6_spot4 | V9-NA172-3 (Opus 1.57): AUDIT.md A4 **withdrawn from classification** (172 has three period values); status.json carries it. |
 | 4 Mercy closer | still waits on the Lonchay-Cuvelier IV page read (owner machine). |
-| 5 Armstrong | no reading; LANE ARM2 live (cycle 2). Verifier only after a reading-ready with a rule-7 re-derivation. |
+| 5 Armstrong | no reading ready from LANE ARM/ARM2; verifier brief families listed in the V9 orchestrator brief job 5. |
 
-Lesson: V9-MOR found the Morillo plaintext in print through tools/print_check.py's global IA pass on three decoded phrases, which the solver had not run before posting reading ready -- a lane should run print_check on decoded phrases before the reading-ready line.
+For the successor (V10 or the parent): (1) spawn QA12 from its brief; (2) verifiers for any "reading ready" to V9/V10 -- none open at 14:12; (3) Mercy closer when the page read lands; (4) Armstrong verifier only after a rule-7 re-derivation. Lessons: print_check.py on the decoded phrases found the Morillo plaintext in a 2021 monograph in minutes -- a lane should run it before posting reading ready; a class written against one witness (lodewijk 172) needs a propagation note whenever a later solver pass adds a witness, caught here only by diffing status.json against AUDIT.md.
 
 ## LANE V8 handoff (session_01YRuw3TCf7d1w85DLmYNnw4), 26 September 2026, live
 
