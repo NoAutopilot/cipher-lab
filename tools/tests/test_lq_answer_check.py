@@ -12,7 +12,11 @@ at all), which always passes regardless of ladder rungs; (5) the ladder-loading 
 against the real tools/data/catalogue_ladders.tsv on disk, so a change to that file's column
 names would be caught here too; (6) --row institution matching against a synthetic
 LOCAL-QUEUE.tsv-shaped fixture, and that an unmatched row falls back to "any institution's
-holding-catalogue host" rather than refusing to match.
+holding-catalogue host" rather than refusing to match; (7) kind awareness (the L20 incident,
+26 Sept 2026): the real L20 shape (ia-reader, no ladder rungs at all) must PASS, the L19 shape
+must still FAIL under kind=browser-check, a kind outside the page-read set (bare 'hathitrust',
+catalogue-lookup, no kind) still requires both rungs, and --row/--kind plumbing (kind_for_row,
+the CLI's --row-driven lookup, and a --kind override) all resolve correctly.
 
 Run: python3 tools/tests/test_lq_answer_check.py
 """
@@ -136,6 +140,81 @@ try:
     report("CLI main() on L19-good file exits 0", rc == 0)
 finally:
     os.unlink(tf_path)
+
+# --- 7. kind awareness (26 Sept 2026, the L20 incident) ----------------------------------------
+# The L20 shape: an ia-reader row's content-read negative, no catalogue ladder rungs at all --
+# must PASS on kind alone, where the pre-fix rule would have bounced it (as PR 24 actually was).
+L20_SHAPE = (
+    "row: L20\nkind: ia-reader\ndate: 26 Sept 2026\nrunner: browser (owner's archive.org login)\n\n"
+    "Borrowed archive.org/details/correspondancede0006jose and read p.647. The index lists 'Mercy' "
+    "at pp.15, 20 and 647, but p.647 itself does not quote or summarise the 6 June 1648 instruction "
+    "to the abbe de Mercy -- it is a bare listing, not found in the body text there."
+)
+code, msg = lq.check(L20_SHAPE, REAL_LADDER, kind="ia-reader")
+report("L20 shape (ia-reader kind) exits 0 with no ladder rungs", code == 0, msg)
+
+for kind in ("edition-read", "hathitrust-page", "jstor"):
+    code, msg = lq.check("Not found in the volume; no hits for the phrase.", REAL_LADDER, kind=kind)
+    report(f"bare negative with kind={kind} exits 0 (page-read kind)", code == 0, msg)
+
+# The L19 shape must still FAIL as browser-check (kind requires ladder rungs) even though the
+# kind-awareness code path now exists -- the fix must not loosen the rule for the kinds it
+# still governs.
+code, msg = lq.check(L19_BAD, REAL_LADDER, kind="browser-check")
+report("L19 bad shape with kind=browser-check still exits 1", code == 1, msg)
+
+# A kind not in PAGE_READ_KINDS (the bare search-only 'hathitrust' kind, catalogue-lookup, or
+# no kind at all) keeps requiring both rungs.
+code, msg = lq.check(L19_BAD, REAL_LADDER, kind="hathitrust")
+report("bare 'hathitrust' kind (search-only, not a page read) still requires ladder rungs",
+       code == 1, msg)
+code, msg = lq.check(L19_BAD, REAL_LADDER, kind="catalogue-lookup")
+report("catalogue-lookup kind still requires ladder rungs", code == 1, msg)
+code, msg = lq.check(L19_BAD, REAL_LADDER, kind=None)
+report("no kind (institution/--row absent) still requires ladder rungs", code == 1, msg)
+
+# kind_for_row / --row plumbing against a synthetic LOCAL-QUEUE.tsv fixture including the real
+# L20 row shape.
+with tempfile.TemporaryDirectory() as tmp:
+    fixture_queue = os.path.join(tmp, "LOCAL-QUEUE.tsv")
+    with open(fixture_queue, "w", encoding="utf-8") as f:
+        f.write("id\tkind\ttarget\tinstruction\tstatus\tresult\n")
+        f.write("L20\tia-reader\tciphers/espagnol142-mercy-1648\t"
+                "Borrow and read p.647.\tqueued\t\n")
+        f.write("L19\tbrowser-check\tciphers/thurloe-printed\t"
+                "Search Digital Bodleian.\tqueued\t\n")
+
+    real_path = lq.LOCAL_QUEUE_PATH
+    lq.LOCAL_QUEUE_PATH = fixture_queue
+    try:
+        report("kind_for_row resolves L20 to ia-reader",
+               lq.kind_for_row("L20") == "ia-reader", lq.kind_for_row("L20"))
+        report("kind_for_row resolves L19 to browser-check",
+               lq.kind_for_row("L19") == "browser-check", lq.kind_for_row("L19"))
+        report("kind_for_row on an unknown row id returns None",
+               lq.kind_for_row("L999") is None, lq.kind_for_row("L999"))
+
+        with tempfile.NamedTemporaryFile("w", suffix=".md", delete=False) as tf:
+            tf.write(L20_SHAPE)
+            tf_path = tf.name
+        try:
+            rc = lq.main([tf_path, "--row", "L20"])
+            report("CLI main() with --row L20 exits 0 via kind lookup", rc == 0)
+        finally:
+            os.unlink(tf_path)
+
+        with tempfile.NamedTemporaryFile("w", suffix=".md", delete=False) as tf:
+            tf.write(L19_BAD)
+            tf_path = tf.name
+        try:
+            rc = lq.main([tf_path, "--row", "L19"])
+            report("CLI main() with --row L19 still exits 1 via kind lookup", rc == 1)
+            rc = lq.main([tf_path, "--kind", "ia-reader"])
+            report("CLI --kind override passes an L19-shaped negative anyway", rc == 0)
+        finally:
+            os.unlink(tf_path)
+    finally:
+        lq.LOCAL_QUEUE_PATH = real_path
 
 rc = lq.main(["/no/such/file/anywhere.md"])
 report("CLI main() on a missing file exits 2", rc == 2)

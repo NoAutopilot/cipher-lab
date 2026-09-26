@@ -30,18 +30,37 @@ as the answer. A POSITIVE answer (no negative phrase found) always exits 0 -- th
 only gates negatives, since a positive answer already did the work the negative shortcut
 skips.
 
-Usage:
-  tools/lq_answer_check.py FILE [--row ID]
-    FILE is the runner answer file (a `[LQ-<id>]` PR's added file, or a NOTES.md paragraph
-    passed by path). --row ID is the LOCAL-QUEUE.tsv row id (e.g. L19); when given and the
-    row's target folder can be matched to an institution in catalogue_ladders.tsv, rung (a)
-    is checked against that institution's own holding_catalogue host first, falling back to
-    any institution's if that specific host is not found in FILE.
+Kind awareness (26 Sept 2026, the L20 incident): the catalogue-ladder rungs answer "is this
+item digitised", a question that only makes sense for a `browser-check` or `catalogue-lookup`
+row (an image-portal or catalogue search). A row whose `kind` is `ia-reader`, `edition-read`,
+`hathitrust-page` or `jstor` is instead a content read of a page or text the runner already
+had in hand (a held loan, an opened edition, a fetched page) -- its "no" is a reading of what
+that page says, not a claim about whether the item exists online, and the catalogue-ladder
+rungs cannot apply to it (PR 24, LOCAL-QUEUE row L20: archive.org/details/correspondancede0006jose
+was borrowed and read; the answer was "the letter is listed in the index but p.647 does not
+quote, summarise or otherwise discuss the 6 June 1648 instruction," a plain content negative).
+For those four kinds, a negative passes with no ladder rungs required. `browser-check` and
+`catalogue-lookup` (and any kind not in this list, including the bare `hathitrust` search-only
+kind) keep the current rule.
 
-Exit 0: FILE has no negative phrase (a positive answer), or it has one and both ladder rungs
-  (holding-catalogue URL/ark, quoted availability phrase) are present.
-Exit 1: FILE has a negative phrase and is missing one or both ladder rungs -- printed by name
-  ("missing rung: holding-catalogue record", "missing rung: availability phrase", or both).
+Usage:
+  tools/lq_answer_check.py FILE [--row ID] [--kind KIND]
+    FILE is the runner answer file (a `[LQ-<id>]` PR's added file, or a NOTES.md paragraph
+    passed by path). --row ID is the LOCAL-QUEUE.tsv row id (e.g. L19 or L20); when given,
+    its `kind` column selects the rule above, and (for a browser-check/catalogue-lookup kind)
+    its target folder is matched to an institution in catalogue_ladders.tsv so rung (a) is
+    checked against that institution's own holding_catalogue host first, falling back to any
+    institution's if that specific host is not found in FILE. --kind KIND overrides/supplies
+    the kind directly, for a file with no --row (e.g. a NOTES.md paragraph without its own
+    LOCAL-QUEUE.tsv row, or testing a kind other than the row's own).
+
+Exit 0: FILE has no negative phrase (a positive answer); or it has one and both ladder rungs
+  (holding-catalogue URL/ark, quoted availability phrase) are present; or it has one and the
+  row's kind is one of the page/text-read kinds (ia-reader, edition-read, hathitrust-page,
+  jstor), which need no ladder rungs at all.
+Exit 1: FILE has a negative phrase, the kind requires ladder rungs, and one or both are
+  missing -- printed by name ("missing rung: holding-catalogue record", "missing rung:
+  availability phrase", or both).
 Exit 2: FILE or --row could not be read/resolved.
 
 This checks the shape of the citation (a negative claim backed by a catalogue URL and a
@@ -82,6 +101,11 @@ AVAILABILITY_PHRASES = (
     "iiif",
 )
 VIEWER_WORD_RE = re.compile(r'\bviewer\b', re.IGNORECASE)
+
+# Kinds that answer a content read of a page or text already in hand (a held loan, an opened
+# edition, a fetched page), not a digitisation lookup -- the catalogue-ladder rungs cannot
+# apply to these (the L20 incident, 26 Sept 2026: see module docstring "Kind awareness").
+PAGE_READ_KINDS = {"ia-reader", "edition-read", "hathitrust-page", "jstor"}
 
 
 def _host_of(url):
@@ -144,6 +168,23 @@ def institution_for_row(row_id, ladder_rows):
     return None
 
 
+def kind_for_row(row_id, local_queue_path=None):
+    """Return the LOCAL-QUEUE.tsv `kind` column for row_id, or None if the row or file isn't
+    found. Never guesses -- an unmatched row_id returns None, same discipline as
+    institution_for_row."""
+    path = local_queue_path if local_queue_path is not None else LOCAL_QUEUE_PATH
+    if not row_id or not os.path.isfile(path):
+        return None
+    with open(path, encoding="utf-8") as f:
+        reader = csv.DictReader(f, delimiter="\t")
+        for row in reader:
+            rid = row.get("id", "").strip()
+            if rid == row_id or rid.split(":")[-1] == row_id:
+                kind = row.get("kind", "").strip()
+                return kind or None
+    return None
+
+
 def find_negative(text):
     m = NEGATIVE_RE.search(text)
     return m.group(0) if m else None
@@ -170,11 +211,17 @@ def has_availability_rung(text):
     return bool(VIEWER_WORD_RE.search(text))
 
 
-def check(text, ladder_rows, institution=None):
+def check(text, ladder_rows, institution=None, kind=None):
     """Pure check used by the offline test. Returns (exit_code, message)."""
     neg = find_negative(text)
     if neg is None:
         return 0, "positive answer (no negative phrase found) -- nothing to gate"
+    if kind in PAGE_READ_KINDS:
+        return 0, (
+            f"negative answer ({neg!r}) from a '{kind}' row -- a content read of a page/text "
+            f"already in hand, not a digitisation lookup, so no ladder rungs are required "
+            f"(the L20 incident, 26 Sept 2026)"
+        )
     missing = []
     if not has_holding_catalogue_rung(text, ladder_rows, institution):
         missing.append("holding-catalogue record (an ark:/ id, a catalogue URL, or a URL on a "
@@ -194,7 +241,9 @@ def check(text, ladder_rows, institution=None):
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("file", help="the runner answer file to check")
-    ap.add_argument("--row", default=None, help="LOCAL-QUEUE.tsv row id (e.g. L19), for institution matching")
+    ap.add_argument("--row", default=None, help="LOCAL-QUEUE.tsv row id (e.g. L19), for institution/kind matching")
+    ap.add_argument("--kind", default=None,
+                     help="row kind override (e.g. ia-reader), for a file with no --row or to test a kind directly")
     args = ap.parse_args(argv)
 
     if not os.path.isfile(args.file):
@@ -205,8 +254,9 @@ def main(argv=None):
 
     ladder_rows = load_ladder()
     institution = institution_for_row(args.row, ladder_rows) if args.row else None
+    kind = args.kind if args.kind is not None else (kind_for_row(args.row) if args.row else None)
 
-    code, message = check(text, ladder_rows, institution)
+    code, message = check(text, ladder_rows, institution, kind)
     row_label = f" (row {args.row})" if args.row else ""
     print(f"{args.file}{row_label}: {message}")
     return code
