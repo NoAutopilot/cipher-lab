@@ -309,3 +309,105 @@ read, per this brief), indexed by page/line and this worker's own running sequen
 convention is NOT directly comparable to Bourdeau's passage-level `*`/`**` marking in
 `ciphertext.txt` (see `ciphertext_ms.txt`'s own header) -- a family S job should re-derive mark
 counts from these crops rather than trusting either transcription's count.
+
+## ARM-C1 nomenclator (26 Sept 2026, LANE ARM worker ARM-C1, Fable) -- family C: control below gate, target not run
+
+Family C of the ladder, built as `tools/families/nomenclator.py` (registered in `tools/family_run.py`, offline test
+`tools/tests/test_nomenclator.py`) from `design/family_C_spec.md`: particle block 1-99 + family book >= 100 (decade =
+family, units digit = member slot, book-wide slot order read from the ciphertext's own units-digit token counts),
+word-trigram LM (interpolated absolute discounting, D=0.75) over en18 with ONE FILE HELD OUT, sibling-vocabulary
+prior (WE028 + THE972 tables + Bourdeau's THE=972 decodes + top-2500 en18 content forms; a word outside it costs 3
+nats, never a ban), soft same-decade stem tie (0.5) and slot-order term (0.3), duplicate-word penalty (2.0); Gibbs
+anneal T 1.5 -> 0.25, two phases (repeated values alone with singletons held as an unknown word, then all values),
+3 restarts. `*`/`**`/`<..>` tokens are OOV wildcards scored as an unknown word. Runs: `tools/family_run.py
+specs/armstrong-madison-1808.json --family nomenclator --cipher ciphers/armstrong-madison-1808/ciphertext.txt
+--tokens space ... --param sweeps=30 --param phase1=20` (the spec's `ciphertext` field is a path, hence `--cipher`);
+logs in `families/control1_battery.log` (+ `control1_battery_prefix.log`), `families/control2_feb15-1.txt`,
+`families/control3_floor.log`; controls 2 and 3 ran before the determinism fix and are reproducible only up to the
+per-process candidate order they had.
+
+**CONTROL 1 (spec control 1, matched design, rule 3), `--control-only --seeds 3 --restarts 3 --gate 0.6`, 08:53-09:02
+UTC (a rerun after a determinism fix -- candidate lists were iterated in set order, which varies per process; the
+pre-fix run of 08:33-08:41 read 0.198 / 0.179 / 0.046, mean 0.141, `families/control1_battery_prefix.log`, and
+the tool's row for it stands below).** Letter cut from the held-out Jefferson Vol IX (`holdout=5`, removed from the LM's training texts), 369 coded
+tokens, particle block = 30 commonest training words + 26 letters + words from rank 200 at a random permutation of
+1-99 (cold: the solver never sees the key), book = 180 decades x 10 slots = 1800 forms built from the held-out
+volume's own register outside the letter's window (stem families in decades, commonest member at slot 0, then 1,
+4, 6, 7, 8, 2, 3, 5, 9; empty slots filled by the next commonest forms), OOV words kept in place as `*` marks.
+
+| seed | control shape (coded / distinct: particle+book / particle tokens / book tokens / OOV words -> `*` tokens) | particles | book | blended | solver score |
+|---|---|---|---|---|---|
+| target (for comparison) | 369 / 216: 48+168 / 132 / 237 / ? -> 35 marks (24 `**`, 10 `*`, 1 `<..>`) | - | - | - | - |
+| 1 | 369 / 177: 42+135 / 201 / 168 / 63 -> 54 | 73/201 (0.363) | 1/168 (0.006) | 74/369 (0.201) | -1344.9 |
+| 2 | 369 / 184: 39+145 / 180 / 189 / 64 -> 56 | 63/180 (0.350) | 2/189 (0.011) | 65/369 (0.176) | -1391.6 |
+| 3 | 369 / 187: 40+147 / 186 / 183 / 59 -> 51 | 9/186 (0.048) | 1/183 (0.005) | 10/369 (0.027) | -1459.4 |
+| **mean** | | 0.254 | 0.007 | **0.135 (0.027-0.201); gate 0.6 NOT met** | |
+
+The control is anchor-richer than the target (180-201 particle tokens against the target's 132; 135-147 distinct
+book values against 168), so it is the *easier* side of the design, and it still reads under a quarter blended.
+The blended figure is dominated by the particle class (rule 3's unbalanced-class paragraph): the book class, which
+carries the letter's content, reads 0-2 percent on every seed.
+
+**Why (diagnostics on the seed-1 control letter, blind LM, `_init` hook of the solver):** greedy sweeps started
+from the TRUE key drift to particles 172/201 (0.856), book 46/168 (0.274), blended 0.591 -- the truth is not a fixed
+point of the objective at this N. With every anchor given (all particles and all repeated values true, singletons
+randomised) greedy recovers 19/168 book values (0.113); with true particles only, 5/168 (0.030). The sampler's own
+blind best (-1345 to -1350) scores ABOVE the truth-anchored states (-1454 to -1462): the trigram LM prefers function-word
+salad over the true letter at 369 tokens with 135-168 singleton book values, so more restarts cannot close the
+gap. A deliberately non-blind check (the control letter appended 300x to the training text, machinery only) makes
+the truth a fixed point (0.99 / 0.80) yet the blind-start sampler still stalls 600 nats below it (-1483 vs -860):
+search and information are both short at this length. The realistic blind ceiling of this design at N=369 is about
+0.5 blended even with perfect anchoring, under the 0.6 gate by construction -- the spec's own expectation ("well
+under ceiling ... if the control lands under the gate, family C on the target is a non-test").
+
+**CONTROL 2 (spec control 2, design-mismatched, label as such): Armstrong's 15 Feb 1808 letter (Founders
+99-01-02-2703, THE=972), 243 groups, 135 distinct, run blind WITHOUT the THE=972 key by the same solver and
+prior** (`families/control2_feb15.py --sweeps 40 --restarts 3 --seed 1`, group list from
+`tools/data/uscodes-1800/stats.py`, truth = the 173 H/C-graded entries of `THE972_bourdeau.tsv`): recovery 12/173
+(0.069) over all known groups, 12/87 (0.138) over known groups whose entry is a whole word of >= 3 letters in the
+LM vocabulary; score -801.6 (-3.299/token). THE=972 is contiguously numbered, spells with syllables and keeps its
+particles in the main list, so this shows only that the solver does not read Armstrong's idiolect blind at N=243
+either; it licenses nothing about the target.
+
+**CONTROL 3 (spec control 3, false-positive floor): `--shuffle-target 1 --gate 0 --seeds 1`, the target's 404 tokens
+permuted, N/K/line lengths kept, the family's gate disabled for this floor run only (the tool would otherwise never
+reach it once control 1 fails).** Solver score on the shuffled target -1467.8 (-3.633 per token; the control-1 letters scored -3.19 to -3.46 per
+token at N=421-425); decode `families/nomenclator-1-shuffle1-sweeps=30,phase1=20-armc1control3shu.txt`, salad by
+construction. **The en18 judge PASSes this salad** (row below: "PASS ... a PASS is a gate for a verifier, not a
+reading"): the solver emits fluent function-word sequences whatever its input, so a judge PASS on any family-C
+decode of this target is a false positive at the floor and licenses nothing -- the judge is not a gate for this
+family at this N (rule 3, the shuffled-null floor must fail for a PASS to mean anything). This is the number a real
+target run would have to beat; no target run exists to compare it with (below).
+
+**TARGET: not run -- CONTROL BELOW GATE (0.135 < 0.6; 0.141 on the pre-fix run).** No decode, no judge line. Rule 5: a control that cannot read
+its own design is a non-test, not a negative on the target; the target stays `open` and family C stays in the ladder
+with the named next step from the spec: MORE CIPHERTEXT in the same code (a second Armstrong letter in this code,
+ARM-REC's route), not more restarts or a stronger annealer -- the diagnostics above show the information is not in
+369 tokens with 168 singleton values. Secondary: the spec's own precondition, the NARA M34 roll 14 units-digit
+check against Bourdeau's transcription, which decides whether the family book collapses to a contiguous code -- ARM-TR
+(same window, section above, seen by ARM-C1 only at merge time) covers the first 332 groups with one confirmed
+units-digit disagreement (1843 vs 1841) and a matching 0/1-heavy shape, so the design premise stands for now but
+the last 37 groups are unchecked (frame 0033 not fetched).
+
+Deviations from `design/family_C_spec.md`, with reasons: (1) slot prior taken as fixed from the ciphertext's own
+units-digit token counts (a ciphertext observable, same rule on control and target) rather than re-estimated each
+sweep; (2) control OOV words kept in place as `*` wildcard tokens (runs collapsed to one mark) instead of dropped
+silently -- the target shows its marks, and the realized 60-64 OOV words / 52-56 marks against the spec's "about 37"
+and the target's 35 marks reflect that a `**` mark stands for several words, a count the ciphertext does not give;
+(3) the control's particle block is the 30 commonest words + letters + words from rank 200, not the 99 commonest,
+which would cover about 60 percent of tokens against the target block's 36 percent -- the block is still
+anchor-richer than the target's; (4) the book is built from the held-out volume's own register (spec: "the letter's
+own register") with a crude suffix-stripping stem for the families, the same stem function the solver's tie term
+rewards (a mild coupling that favours the control, and it still fails); (5) the lemma-plus-inflections prior is
+approximated by the top-2500 content forms (no lemmatizer offline); (6) interpolated absolute discounting in place
+of Kneser-Ney; (7) control 3 needed `--gate 0` to run at all after control 1 failed. Judge caveat carried from
+ARM-EN18: a judge line on en18 has a 14-15 percent false-negative rate with a 0.26-0.27 per-fold spread; no judge
+line was produced here because no target decode exists.
+
+<!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
+
+| date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
+|---|---|---|---|---|---|---|---|---|
+| 26 Sept 2026 08:41 | nomenclator | N=404 K=219 restarts=3 corpus=writingsjamesmo02unkngoog.txt.gz+writingsjamesmo11monrgoog.txt.gz+writingsalbertg01gallgoog.txt.gz+writingsofjamesm0007unse_s2a1.txt.gz+writingsofjamesm0008unse.txt.gz+writingsofthomas09jeffiala.txt.gz sweeps=30,phase1=20 | 1-3 | 0.141 (0.046-0.198) | not run (control-only) | - | no | ARM-C1 control 1 (held-out Jefferson IX, cold particle block) |
+| 26 Sept 2026 08:48 | nomenclator | N=404 K=219 restarts=3 corpus=writingsjamesmo02unkngoog.txt.gz+writingsjamesmo11monrgoog.txt.gz+writingsalbertg01gallgoog.txt.gz+writingsofjamesm0007unse_s2a1.txt.gz+writingsofjamesm0008unse.txt.gz+writingsofthomas09jeffiala.txt.gz sweeps=30,phase1=20,shuffle_target=1 | 1 | 0.198 (0.198-0.198) | -1467.777 | PASS - armstrong-madison-1808 (a PASS is a gate for a verifier, not a reading; rule 10) | yes (gate 0.0) | ARM-C1 control 3 shuffled-target floor; gate disabled for this floor run only, NOT a target run |
+| 26 Sept 2026 09:02 | nomenclator | N=404 K=219 restarts=3 corpus=writingsjamesmo02unkngoog.txt.gz+writingsjamesmo11monrgoog.txt.gz+writingsalbertg01gallgoog.txt.gz+writingsofjamesm0007unse_s2a1.txt.gz+writingsofjamesm0008unse.txt.gz+writingsofthomas09jeffiala.txt.gz sweeps=30,phase1=20 | 1-3 | 0.135 (0.027-0.201) | not run (control-only) | - | no | ARM-C1 control 1 rerun after determinism fix (held-out Jefferson IX, cold particle block) |

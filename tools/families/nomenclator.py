@@ -199,7 +199,7 @@ def load_prior_words():
 def build_priors(lm, params):
     fw = _p(params, "fw", 120)
     top_content = _p(params, "top_content", 2500)
-    ranked = [w for w, c in lm.freq.most_common() if w in lm.vocab]
+    ranked = [w for w, c in sorted(lm.freq.items(), key=lambda x: (-x[1], x[0])) if w in lm.vocab]
     function_words = ranked[:fw]
     particles = set(function_words) | set("abcdefghijklmnopqrstuvwxyz")
     content = [w for w in ranked[fw:] if len(w) > 1][:top_content]
@@ -219,7 +219,7 @@ def make_control(spec, seed, corpora, params):
     n_coded = sum(1 for k, v in tgt if k != "W") or _p(params, "N", 369)
     slot_order = slot_order_from(tgt) if tgt else SLOT_ORDER_DEFAULT
     lm = get_lm(train, _p(params, "vocab_min", 3))
-    ranked = [w for w, c in lm.freq.most_common() if w in lm.vocab]
+    ranked = [w for w, c in sorted(lm.freq.items(), key=lambda x: (-x[1], x[0])) if w in lm.vocab]
     # the letter's window in the held-out file is chosen first so the book's register counts can exclude it
     hw = words_of(held)
     lo, hi = len(hw) // 20, len(hw) * 19 // 20
@@ -246,19 +246,19 @@ def make_control(spec, seed, corpora, params):
         span = 3000
         reg = Counter(hw[:max(0, start - span)] + hw[start + span:])
         freq = lambda w: (reg[w], lm.freq[w])
-        content = [w for w, c in reg.most_common() if w in lm.vocab and w not in key and len(w) > 1]
+        content = [w for w, c in sorted(reg.items(), key=lambda x: (-x[1], x[0])) if w in lm.vocab and w not in key and len(w) > 1]
     else:
         freq = lambda w: (lm.freq[w],)
         content = [w for w in ranked if w not in key and len(w) > 1]
     fam = defaultdict(list)
     for w in content:
         fam[stem(w)].append(w)
-    fam_rank = sorted(fam, key=lambda s: tuple(-x for x in map(sum, zip(*(freq(w) for w in fam[s])))))
+    fam_rank = sorted(fam, key=lambda s: (tuple(-x for x in map(sum, zip(*(freq(w) for w in fam[s])))), s))
     decades = list(range(100, 100 + 10 * n_dec, 10))
     rng.shuffle(decades)
     assigned, book = set(), {}
     for dec, s in zip(decades, fam_rank[:n_dec]):
-        members = sorted(fam[s], key=lambda w: tuple(-x for x in freq(w)))[:10]
+        members = sorted(fam[s], key=lambda w: (tuple(-x for x in freq(w)), w))[:10]
         for slot, w in zip(slot_order, members):
             book[w] = dec + slot
             assigned.add(w)
@@ -337,8 +337,8 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
             s = stem_of[w] = stem(w)
         return s
 
-    plist = sorted(particles & lm.vocab, key=lambda w: -lm.freq[w])
-    blist = sorted(bookprior & lm.vocab, key=lambda w: -lm.freq[w])
+    plist = sorted(particles & lm.vocab, key=lambda w: (-lm.freq[w], w))
+    blist = sorted(bookprior & lm.vocab, key=lambda w: (-lm.freq[w], w))
     ranked_content = [w for w in ranked[len(plist):] if len(w) > 1][:3000]
 
     def seq_words(assign):
@@ -429,11 +429,11 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
             cands.update(w for w, _ in lm.pred2.get(c, Counter()).most_common(120))
             cands.update(w for w, _ in lm.mid.get((b, c), Counter()).most_common(80))
         cands.discard(UNK); cands.discard("<s>"); cands.discard("</s>")
-        cands = [w for w in cands if w in lm.uni]
+        cands = sorted(w for w in cands if w in lm.uni)  # sorted: set order varies per process (hash seed)
         if len(cands) > max_cands:
             keep = set(rng.sample(cands, max_cands))
             keep.add(assign[v])
-            cands = list(keep)
+            cands = sorted(keep)
         return cands
 
     def init(rng):

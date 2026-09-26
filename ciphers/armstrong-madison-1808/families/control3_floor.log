@@ -1,0 +1,12 @@
+family nomenclator: two-level numeric word code: particle block 1-99 + family book >= 100 (decade = family, units = member slot), word-trigram Gibbs anneal with a sibling-vocabulary prior; wildcards *,**,<..> = OOV (--param holdout=5 sweeps=30 tie_w=0.5 slot_w=0.3 book_forms=1800)
+spec specs/armstrong-madison-1808.json slug armstrong-madison-1808
+ciphertext: 16 message(s), N=404 signs, K=219 distinct, tokens=space (target letters shuffled, seed 1, false-positive floor)
+corpora: tools/data/en18/writingsjamesmo02unkngoog.txt.gz, tools/data/en18/writingsjamesmo11monrgoog.txt.gz, tools/data/en18/writingsalbertg01gallgoog.txt.gz, tools/data/en18/writingsofjamesm0007unse_s2a1.txt.gz, tools/data/en18/writingsofjamesm0008unse.txt.gz, tools/data/en18/writingsofthomas09jeffiala.txt.gz
+control seeds [1], restarts 3, gate 0.0, params sweeps=30,phase1=20,shuffle_target=1
+row -> ciphers/armstrong-madison-1808/HYPOTHESES.md; decode -> ciphers/armstrong-madison-1808/families/nomenclator-1-shuffle1-sweeps=30,phase1=20-armc1control3shu.txt
+  control build: {'coded': 369, 'distinct': 177, 'distinct_book': 135, 'oov_words': 63, 'wild_tokens': 54, 'book_forms': 1800, 'particle_tokens': 201, 'distinct_particle': 42, 'holdout_index': 5, 'letter_start_word': 18025, 'book_source': 'held'}
+  recovery by class: P=73/201 (0.363) B=0/168 (0.000); blended 73/369
+CONTROL seed 1: N=423 K=178 recovery 0.198 score -1349.81
+TARGET best score -1467.777; decode -> ciphers/armstrong-madison-1808/families/nomenclator-1-shuffle1-sweeps=30,phase1=20-armc1control3shu.txt; judge: PASS - armstrong-madison-1808 (a PASS is a gate for a verifier, not a reading; rule 10)
+row appended to ciphers/armstrong-madison-1808/HYPOTHESES.md
+Sat Sep 26 08:51:55 UTC 2026

@@ -1,0 +1,246 @@
+# CONTROL 2 (design-mismatched, 15 Feb 1808 THE=972 blind): N=243 K=135 known(H/C)=173 recovery all-known 12/173 (0.069); whole-word entries 12/87 (0.138); score -801.6 (-3.299/token); sweeps 40 restarts 3 seed 1; 184s
+# {'family': 'nomenclator', 'seed': 1, 'restarts': 3, 'sweeps': 40, 'greedy': 3, 'T0': 1.5, 'T1': 0.25, 'tie_w': 0.5, 'slot_w': 0.3, 'dup_w': 2.0, 'oov_pen': 3.0, 'vocab': 12298, 'particle_prior': 142, 'book_prior': 3116, 'values': 135, 'singletons': 88, 'phase1': 20, 'slot_order': [2, 7, 5, 6, 1, 4, 8, 0, 3, 9], 'best_restart': 0, 'score_per_token': -3.2986841270205125}
+# salad, not a reading (rule 10); truth from THE972_bourdeau.tsv H/C rows
+0	632	to	with
+1	550	what	one
+2	1453	is	
+3	1105	in	
+4	587	a	they
+5	541	day	offer
+6	899	or	us
+7	972	the	the
+8	1415	other	be
+9	1116	and	s
+10	1131	higher	
+11	1431	interests	g
+12	1116	and	s
+13	1354	in	of
+14	1287	general	
+15	427	wished	
+16	426	that	
+17	38	which	
+18	897	relates	
+19	632	to	with
+20	972	the	the
+21	249	latter	other
+22	587	a	they
+23	1561	belief	men
+24	803	existing	ac
+25	772	war	e
+26	899	or	us
+27	632	to	with
+28	621	any	
+29	1086	of	
+30	623	them	
+31	1020	under	do
+32	1587	the	not
+33	803	existing	ac
+34	741	debt	ce
+35	636	but	mp
+36	578	with	t
+37	590	which	this
+38	1097	they	
+39	827	are	
+40	832	placed	ness
+41	1105	in	
+42	1217	that	and
+43	632	to	with
+44	1419	paris	both
+45	1105	in	
+46	587	a	they
+47	649	week	
+48	419	longer	k
+49	1367	be	our
+50	1373	taken	po
+51	747	place	ck
+52	1292	since	
+53	1116	and	s
+54	632	to	with
+55	817	you	al
+56	1089	my	im
+57	801	letter	
+58	1090	of	in
+59	808	mar	able
+60	1016	has	
+61	1087	given	ig
+62	790	me	rence
+63	1105	in	
+64	1005	consequence	de
+65	888	thereof	x
+66	962	and	
+67	1484	the	it
+68	417	opinion	y
+69	1217	that	and
+70	1089	my	im
+71	1177	friendship	purp
+72	1001	for	d
+73	790	me	rence
+74	962	and	
+75	590	which	this
+76	1482	i	is
+77	41	would	
+78	1562	ask	mer
+79	1274	your	
+80	417	opinion	y
+81	1216	either	an
+82	1509	written	expe
+83	795	authorities	
+84	514	and	ment
+85	890	functions	yet
+86	1086	of	
+87	1484	the	it
+88	1146	public	suc
+89	741	debt	ce
+90	1001	for	d
+91	1116	and	s
+92	1105	in	
+93	415	fact	you
+94	630	if	will
+95	1458	true	
+96	1201	it	a
+97	307	appears	second
+98	1217	that	and
+99	587	a	they
+100	1354	in	of
+101	972	the	the
+102	1118	message	same
+103	1097	they	
+104	827	are	
+105	1217	that	and
+106	1228	this	at
+107	1492	last	last
+108	1405	was	be
+109	1078	by	i
+110	368	means	
+111	1165	of	to
+112	1397	his	
+113	1132	own	
+114	702	good	ance
+115	1104	sense	
+116	1086	of	
+117	1484	the	it
+118	765	world	does
+119	1587	the	not
+120	1146	public	suc
+121	741	debt	ce
+122	1001	for	d
+123	1105	in	
+124	972	the	the
+125	1530	mean	first
+126	1172	time	
+127	817	you	al
+128	630	if	will
+129	819	no	also
+130	1415	other	be
+131	972	the	the
+132	1492	last	last
+133	962	and	
+134	1086	of	
+135	38	which	
+136	316	is	should
+137	921	the	have
+138	983	more	so
+139	1517	than	
+140	872	six	rec
+141	1366	weeks	
+142	1268	i	ed
+143	1463	have	her
+144	1124	duly	
+145	1121	received	se
+146	1116	and	s
+147	1225	most	as
+148	1165	of	to
+149	921	the	have
+150	416	republic	
+151	1268	i	ed
+152	1463	have	her
+153	492	heard	
+154	1090	of	in
+155	772	war	e
+156	1354	in	of
+157	1089	my	im
+158	662	judgment	
+159	514	and	ment
+160	1105	in	
+161	1484	the	it
+162	405	convention	would
+163	1405	was	be
+164	624	nearly	
+165	1105	in	
+166	1587	the	not
+167	947	first	only
+168	1165	of	to
+169	561	these	re
+170	1482	i	is
+171	578	with	t
+172	972	the	the
+173	664	directoire	pro
+174	1078	by	i
+175	781	whom	ct
+176	1268	i	ed
+177	427	wished	
+178	632	to	with
+179	590	which	this
+180	193	others	
+181	514	and	ment
+182	1105	in	
+183	1428	some	but
+184	1165	of	to
+185	561	these	re
+186	1284	members	ent
+187	1090	of	in
+188	972	the	the
+189	523	british	most
+190	507	ministry	mark
+191	1268	i	ed
+192	1555	am	man
+193	1596	not	
+194	484	mistaken	
+195	1105	in	
+196	1116	and	s
+197	810	friendly	
+198	1445	spirit	
+199	1165	of	to
+200	1480	amity	ion
+201	1116	and	s
+202	945	commerce	on
+203	1367	be	our
+204	1	positively	circumstance
+205	962	and	
+206	1086	of	
+207	946	course	on
+208	972	the	the
+209	249	latter	other
+210	1453	is	
+211	1105	in	
+212	415	fact	you
+213	316	is	should
+214	921	the	have
+215	473	duty	
+216	1165	of	to
+217	1416	american	
+218	383	vessels	w
+219	1116	and	s
+220	632	to	with
+221	38	which	
+222	1201	it	a
+223	1238	may	ces
+224	849	be	
+225	1354	in	of
+226	972	the	the
+227	287	judiciary	
+228	1116	and	s
+229	312	military	set
+230	1164	stores	
+231	514	and	ment
+232	1354	in	of
+233	1201	it	a
+234	391	seems	
+235	968	so	ter
+236	821	far	n
+237	726	as	
+238	897	relates	
+239	692	to	ary
+240	972	the	the
+241	187	president	florida
+242	1116	and	s

@@ -428,3 +428,31 @@ whole letter; this pass only covers pages 1-3) cropped to `images/shorthand/` wi
 Requests this pass: none (all work offline against already-fetched images and 6 Sonnet subagents,
 each transcribing one page's line crops from a single set of images already on disk; 2 concurrent at
 a time as required).
+
+## ARM-C1 (26 Sept 2026, LANE ARM worker ARM-C1, Fable): family C built and controlled -- control below gate, target not run
+
+Family C (`design/family_C_spec.md`) now exists as `tools/families/nomenclator.py` (registered in
+`tools/family_run.py`, offline test `tools/tests/test_nomenclator.py`, 18 s): a two-level numeric word code solver
+(particle block 1-99, family book >= 100 with decade = family and units digit = member slot) that anneals a
+value -> word key under a word-trigram en18 LM with the sibling-vocabulary prior; `*`/`**`/`<..>` are OOV wildcards.
+Its matched control (rule 3), a 369-coded-token letter cut from the HELD-OUT Jefferson Vol IX with a cold random
+particle block and an 1800-form book built from that volume's register, read 0.135 (0.027-0.201; 0.141 on a pre-fix run) blended over 3 seeds
+against the 0.6 gate -- particles 0.363 / 0.350 / 0.048, book 0.006 / 0.011 / 0.005 -- so `family_run.py` wrote CONTROL BELOW GATE and never
+ran the target; no decode and no judge line exist for the 20 Feb 1808 letter from this family. Diagnostics on the
+control letter show why: even from the true key the objective drifts (particles 0.856, book 0.274 after greedy
+sweeps), with every anchor given the singletons come back at 0.113, and the blind sampler's best state scores
+above the truth-anchored one -- at 369 tokens with 135-168 singleton book values the information is not there, so
+the spec's own conclusion holds: family C is a non-test at this N and the next step is MORE CIPHERTEXT in the same
+code (ARM-REC's route), not more restarts. Control 2 (design-mismatched, Armstrong's 15 Feb 1808 letter in THE=972
+run blind without its key, 243 groups) read 12/173 known groups (0.069; 12/87 whole-word entries). Control 3
+(`--shuffle-target 1`, gate disabled for the floor run only) scored -1467.8 (-3.633/token) and its salad PASSes the
+en18 judge: a judge PASS on any family-C decode of this target is a false positive at the floor, so the judge is
+not a gate for this family here (this is the kind of case rule 3's shuffled-null floor exists to catch). Rule 5:
+the target stays `open`; this is a control-backed non-test, not a negative. Per-seed, per-class and floor numbers,
+the control's shape beside the target's, and the seven logged deviations from the spec are in HYPOTHESES.md "ARM-C1
+nomenclator"; logs in `families/control1_battery.log` (rerun after a determinism fix; the pre-fix run is
+`control1_battery_prefix.log`), `families/control2_feb15-1.txt`, `families/control3_floor.log`. Not done here:
+the spec's precondition, the NARA M34 roll 14 units-digit check against Bourdeau's transcription -- outside this
+brief; ARM-TR (section above, merged in the same window) has since covered the first 332 groups with one confirmed
+units-digit disagreement and a matching digit shape, so the design premise stands with the last 37 groups unchecked. No network
+this job; no host requests.
