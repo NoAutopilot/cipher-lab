@@ -14,7 +14,9 @@ unbacked negative (the L19 shape: an image-portal "no items" with no holding-cat
 availability flag from `tools/data/catalogue_ladders.tsv`) -- the landing worker does NOT copy it in or set the
 row `done`; instead it sets the row's status back to `queued`, writes `result` = `bounced: <the script's reason>`,
 and closes the PR with that reason quoted, never landing it. A zero exit (positive answer, or a negative with
-both ladder rungs) lands as before.
+both ladder rungs) lands as before. After landing a row, the landing worker also runs `python3 tools/desk_check.py`
+and, for any STALE DRAFT it names on that row's target, rewrites the draft's body to the landed finding and resets
+its status date (DESK-CHECK, 26 Sept 2026, CLAUDE.md Usage 8a -- the bodleian-rawl-a24-p4.md shape).
 
 ## Paste this as the scheduled task's instruction (or as a one-off message)
 
