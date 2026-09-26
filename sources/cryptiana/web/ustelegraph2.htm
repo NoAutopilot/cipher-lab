@@ -1,0 +1,168 @@
+<HTML>
+<HEAD>
+<TITLE>
+"Frugal" Code to Cut Cable Cost (1867-1875)
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="code, cipher, telegraph">
+<link rel=stylesheet type=text/css href=decode2.css>
+</HEAD>
+
+<BODY>
+<H1>"Frugal" Code to Cut Cable Cost (1867-1875)</H1>
+<!--
+First US Diplomatic Codes Adapted for Telegraphy (1867-1875)
+Attempts for "Frugal" Code Adapted for Telegraphy (1867-1875)
+"Frugal" Code to Economize on Telegraph (1867-1875)
+
+-->
+<P>The long used US State Department code (Monroe Cipher) was rendered obsolete by the advent of trans-Atlantic cable in 1866. (See <A HREF="ustelegraph1.htm">another article</A>.) Not only did the limited vocabulary of the traditional code often require a single word to be represented by several code numbers, the rule posed by the cable company that all numerals must be written and charged as words led to inflation of cable cost. As soon as the flaw in the old code was recognized, the Department began to construct "a new and frugal cipher code" <span class="note">(Weber1993 p.149)</span>.</P>
+
+<H2>Code of 1867 (WE029)</H2>
+<P>As long as the cable company accepts sending figures only as words, an obvious countermeasure to prevent inflation of cable cost is to use alphabetic letters rather than Arabic figures for code groups. This was exactly the strategy taken by the new code of 1867 (WE029) to replace the Monroe Cipher (WE028). A copy of the new code was sent to ministers overseas on 19 August 1867 <span class="note">(Weber1992 p.107)</span>.</P>
+
+<H3>Structure of Code</H3>
+<P>The new code of 1867 in 148 printed pages <span class="note">(Weber1993 p.149)</span> consisted of one-letter code groups (a, b, ...), two-letter code groups (aa, ab, ...), and three-letter code groups. Predictably, the one-letter code group "a" represents "the". The letter "w" is not used in the code groups because it is not used in French and thus might puzzle telegraph operators in France.</P>
+<P>While the Monroe Cipher required "Mexico" to be transmitted as "six twenty eight six fifty one fourteen hundred four fifteen fifty one", the new code can represent it as a single code group "qvf", which results in a significantly reduced cable cost, even with the double rate imposed on messages in code. (Anyway, the cable company abandoned extra charge for messages in code (as opposed to cipher) in late 1867 <span class="note">(Weber1993 p.137<!--Weber1992 p.108-->)</span>.)</P>
+<P>Unlike the Monroe Cipher, WE029 includes code groups for words and proper names but not those for single letters and syllables. Thus, it provides a simple substitution cipher (covering the 26 letters of the alphabet including "w") for spelling words not in the code. While this means single letters occurring in a coded message may be either a one-letter code group or a cipher letter, one might assume multiple single letters in a ciphertext to be a cipher rather than a sequence of one-letter code groups.</P>
+<P>The new code WE029 was a two-part code (i.e., it had separate encoding and decoding tables, with the first 74 pages devoted to the encoding table<!--Weber1993 p.149-->) with non-alphabetically arranged plaintext words (though there were blocks within which the sequence was alphabetical). The problem is: the code groups in the decoding table were not arranged alphabetically but consisted of three separate series:</P>
+<P>(1) The first series is: aba, abc, abd, ..., aca, acb, acc, ..., azy, azz.</P>
+<P>(2) The second series is:</P>
+<P>(i) baa, bab, bac, ..., baz, </P>
+<P>(ii) caa, cab, cac, ..., caz,</P>
+<P>...</P>
+<P>(iii) zaa, zab, zac, ..., zaz.</P>
+<P>(3)The third series is:</P>
+<P>(I) baa, bba, bca, ..., bza; caa, cba, ..., cza, ..., zza; </P>
+<P>(II) aab, abb, acb, ..., azb; bab, bbb, ..., bzb, ..., xzb; </P>
+<P>(III) aac, abc, acc, ..., azc, bac, bbc, ..., bzc, ..., zzc;</P>
+<P>...</P>
+<P>(IV) aan, abn, acn, ..., azn; ..., knn,</P>
+<P>where (1)(2)..., (i)(ii)..., and (I)(II), ... are merely included here for reference's sake. These series are occasionally broken by interspersed groups such as "ny", "nz", "lc", "ld" "teb" or sequences "rxb vyb vzb xab ..." and "abo aco ado aeo afo" (though it is possible that these are arranged in some contiguous sections on paper, which should be checked with the original).</P>
+
+<H3>Flaws</H3>
+<P>Such complicated arrangement makes it a tedious job to look up a code group in the decoding table.</P>
+<P>Secondly, use of the separate series results in systematically duplicated assignment of code groups. For example, the code group "baa" in (i) ("average") also appears in (I) ("hotly"), "bab" in (i) ("averse") also appears in (II) ("impotently"), "caa" in (i) ("backwardly") also appears in (I) ("hugeness"), "cab" in (i) ("backwardness") also appears in (III) ("deposition").</P>
+
+<P>Moreover, in at least one instance, the encoding and decoding tables are not consistent: the code group "UX" corresponds to "reply" in the encoding table but "represent" in the decoding table <span class="note">(Weber p.224)</span>. (The other instance given by Weber <span class="note">(Weber p.259, n.69)</span>, "AID" being assigned for "forty" in the encoding table but "affable" in the decoding table, is simply due to his overlook of the double assignment of "AID" both in the series (1) ("affable") as well as in the series (3) ("forty"). Even an expert such as Weber could not find it!)</P>
+
+<P>There is a more serious problem in practice. While the artificial three-letter code groups provide more patterns with the fewest number of letters than using ordinary words as code groups, a significant weakness results from its lack of redundancy. An error of a single letter makes a code group signify a completely different word.</P>
+<P>This was exacerbated by telegraph operators' practice of occasionally merging words <span class="note">(Weber1992 p.108)</span>. This means a recipient cannot know whether "omsjmaybi" should be parsed as "om sj ma yb i" or "om s j may bi" or any other groupings.</P>
+
+<H3>Specimens</H3>
+<P>One example of encoding is the following.</P>
+<DIV class="kakomi">
+JCI <span class="deciphered">(Russian)</span> UX <span class="deciphered">(reply)</span> I <span class="deciphered">(is)</span> Z <span class="deciphered">(not)</span> URD <span class="deciphered">(regarded)</span> AI <span class="deciphered">(as)</span> MT <span class="deciphered">(entirely)</span> VJ <span class="deciphered">(satisfactory)</span> but it is VV D <span class="deciphered">(believed)</span> N <span class="deciphered">(that)</span> PHG <span class="deciphered">(peace)</span> will be PZ D <span class="deciphered">(maintained)</span>. Will telegraph more fully in a day or so.<br>
+<span class="note">(Benjamin Moran, Secretary at US Legation in London, to Hamilton Fish, Secretary of State, 27 November 1870, Weber, p.224)</span>
+</DIV>
+<P>Another specimen is given in Weber1993, p.150. It shows one example of wrong division of code letters. HMVIL XIXJ should be actually HMVILX <span class="deciphered">(cipher)</span> IXJ <span class="deciphered">(sufficiently)</span>. The vocabulary which even contained words such as "changeableness", "charming", "chimera" did not include the word "cipher" and it had to be enciphered letter by letter with the substitution table.</P>
+
+
+<H3>Frustration</H3>
+<P>Predictably, the new code caused so much confusion that despatches were frequently unread until copies arrived by mail weeks later <span class="note">(Weber1992 p.108, Weber1993 p.149)</span>.</P>
+<P>The problem started in the very early months of use of the code. As early as January 1868, Secretary of State William Seward complained to the Anglo-American Telegraph Company about frequent errors occurring at the trans-Atlantic line between Newfoundland and Ireland, while he thought there were no problems between Washington, D.C., and Newfoundland <span class="note">(Weber1993 p.150)</span>. However, being largely due to the defect of the code, problems remained after Hamilton Fish succeeded Seward.</P>
+<P>Encoded cables between Andrew G. Curtin, ambassador to Russia, and Secretary Fish were frequently garbled. During a sensitive diplomatic case, Curtin found the code seriously deficient. <span class="note">(Weber p.229)</span></P>
+<P>Elihu Washburne, minister to France, also experienced trouble during the critical months of the Franco-Prussian War in 1870 <span class="note">(Weber p.231-232)</span>. After Sedan fell and Napoleon III was captured but the French showed determination of resistance by declaring a republic on 4 September, the minister cabled "Have recognized republic. Favre [foreign minister of the new republic] expressed gratitude and profound emotion. Requests United States join other powers in inquiry for peace hope personally discretion subsequently is instructed immediately." Here, the phrase "inquiry ..." is the version decoded by Weber. The plaintext preserved in the State Department reads "intervention for peace. Hopes I may be instructed immediately."  <span class="note">(Weber p.232, p.259 n.65)</span></P>
+<P>With reference to the decoding table, the original encoded message must have been something like:</P>
+<DIV class="kakomi">
+one <span class="deciphered">(inquiry)</span> q <span class="deciphered">(for)</span> phg <span class="deciphered">(peace)</span> om <span class="deciphered">(hope)</span> sj <span class="deciphered">(personally)</span> ma <span class="deciphered">(discretion)</span> yb <span class="deciphered">(subsequently)</span> i <span class="deciphered">(is)</span> pm <span class="deciphered">(instruct)</span> d <span class="deciphered">(ed)</span> tyd <span class="deciphered">(immediately)</span>
+</DIV>
+<P>Probably, the State Department clerk considered this garbled and somehow replaced "one" <span class="deciphered">(inquiry)</span> with "une" <span class="deciphered">(intervention)</span> and regrouped the sequence "om <span class="deciphered">(hope)</span> sj <span class="deciphered">(personally)</span> ma <span class="deciphered">(discretion)</span> yb <span class="deciphered">(subsequently)</span> i <span class="deciphered">(is)</span>" into "om <span class="deciphered">(hope)</span> s <span class="deciphered">(-s)</span> j may bi", by assuming "j may bi" stands for plaintext "I may be."</P>
+<P>John Hale, minister to Spain, also complained in the first of several cables he sent in mid-February 1869, that an encoded cable from Washington was unintelligible <span class="note">(Weber p.234)</span>. His successor, Daniel E. Sickles, also had trouble in decoding about the time the United States was to recognize a new republic established in Spain <span class="note">(<A HREF="http://en.wikipedia.org/wiki/First_Spanish_Republic">Wikipedia</A>)</span> in February 1873. He not only had to decode a cable from Washington "based on a tolerable familiarity with the more habitual blunders arising from the transmission of this class of despatches by the morse code of characters" but more than once had to resend the decoded instructions for confirmation<!--cable instructions as to how to decode a recent cable in early October 1870（注だと５月なので見送り）--> <span class="note">(Weber p.235-236)</span>.</P>
+
+<H3>End</H3>
+<P>Despite these problems, the code of 1867 was used until 1875 in more than 1000 despatches sent by cable or mail<!--mailはp.227；p.221の表のうち1866,1875,1876を全部除外しても1000は超える-->. The last use of the code of 1867 by the legations overseas was: November 1873 in London, July 1874 in Russia and Germany, November 1874 in Spain, and April 1875 in Paris. (Ministers in France, Spain, Germany, and Russia switched to a keyword cipher noted below, while no despatches from London were encoded until 1877, possibly because of the eased tension between the United States and Great Britain.) <span class="note">(Weber p.221-237; It should be noted that the table on p.151 of Weber1993, reproduced from Weber p.221, includes despatches encoded with other codes.)</span></P>
+ <!--Weber p.221の表は他の暗号を使ったものも含んでおりWeber p.220の1876は誤りのよう；その後の本文によればロシア（p.230）とドイツ(p.231)では1874.7がラスト，スペインも1874.11がラスト，フランス(p.232)は1875.4がラスト--> 
+
+<H2>Route Transposition Cipher</H2>
+<P>In September 1871, when the code of 1867 was still in use with ministers abroad, Secretary Fish used a route transposition cipher with his assistants J. C. Bancroft Davis and R. S. Chews <span class="note">(Weber1993 p.202, p.209 n.16-18)</span>. It was similar to the system devised by Anson Stager and used by the Union during the Civil War. (By the way, Davis was the person who racked his brain to successfully decode the very first message encrypted in the 1867 code from the American minister in Turkey, which was put together by telegraph operators into one long string of connected letters <span class="note">(Weber1993 p.192)</span>.)</P>
+
+<H3>Bancroft Davis' Mission to Geneva</H3>
+<P>Bancroft Davis used this cipher during his mission to Geneva, where a tribunal for arbitration met in December 1871.</P>
+<P>The tribunal was set up by the Treaty of Washington in 1871 to settle the claims (known as the Alabama Claims) of the United States against Great Britain for the damages due to the British support of the Confederates (such as building the warship <i>Alabama</i>) during the Civil War. (By the way, the treaty is of interest in history of the English language in that during the negotiation the British raised an objection to use of a split infinitive in the body of the treaty! <span class="note">(<A HREF="http://en.wikipedia.org/wiki/Treaty_of_Washington_(1871)#The_Split_Infinitive">Wikipedia</A>)</span>) It was Davis who prepared the document to set forth the case for the United States and he served as an agent to the official US representative <span class="note">(Bancroft Davis (1893), <i>Mr. Fish and the Alabama Claims</i>, p.85, 86, <A HREF="http://archive.org/details/mrfishandalabam00davigoog">Internet Archive</A>)</span>.</P>
+<P>However, the tribunal was almost wrecked by "indirect claims" raised by some, which the British were in no way expected to accept<!--Davis p.112-->. Davis saved the tribunal by working with the British counterpart for an official announcement that the indirect claims were out of the consideration of the tribunal <span class="note">(Davis p.98-103; Haswell p.89; <i>Report of the Agent of the United States before the Tribunal of Arbitration at Geneva</i> (1873) (<A HREF="http://books.google.co.jp/books?id=V2ovAQAAMAAJ">Google</A>))</span>. Bancroft telegraphed everything to Secretary Fish by using the cipher and obtained the President's approval <span class="note">(Davis p.103; Haswell p.89)</span>.</P>
+<P>At least a telegram from Fish to Davis of 14 June 1872 is known to have used this cipher <span class="note">(Weber1993 p.209 n.18)</span>. It was the day before the tribunal was expected to dispose of the indirect claim issue <span class="note">(Davis p.98)</span>.</P>
+<!--
+HaswellがJASMINと混同している可能性アリ
+<P>John H. Haswell had prepared a special cipher for Bancroft Davis <span class="note">(<A HREF="http://en.wikipedia.org/wiki/Bancroft_Davis">Wikipedia</A>)</span> before he set out for Geneva <span class="note">(Haswell p.89)</span></P>
+<P>Haswell boasts that the cipher "could be easily managed and the key of which could be memorized" <span class="note">(Haswell p.89)</span>. It is wondered whether this is the same as the JASMIN cipher below.</P>
+-->
+<P>According to a later recollection of John H. Haswell, the exchange caused frustration on the US minister at London, Schenck, who was himself providing information and his own counsel on the arbitration in Geneva by using the code of 1867 <span class="note">(Weber p.226)</span>. Schenck, having no idea what was being relayed through his office, insisted on having them repeated, because he found them to be only "a jargon of unmeaning words." <span class="note">(Haswell p.89-90)</span></P>
+<P>Fish took up again the cipher in writing to Davis in August 1873 <span class="note">(Weber1993 p.209 n.18)</span>.</P>
+
+<H2>Polyalphabetic Cipher (WE105, WE106, WE107)</H2>
+<H3>JASMIN Cipher</H3>
+<P>In 1874, Bancroft Davis was appointed as minister to Germany. In December 1875, Secretary of State Fish used a polyalphabetic cipher with keyword JASMIN in his instructions to Davis <span class="note">(Weber p.240)</span>.</P>
+<P>It is similar to a Vigenere cipher with a mixed alphabet. A correspondent is given a mixed alphabet and a keyword and reproduces a polyalphabetic substitution table by writing the mixed alphabet on top and its cyclically rotated versions below such that the second (third, etc.) line has the second (third, etc.) letter of the keyword below the first letter of the keyword on the top line.</P>
+
+<DIV class="kakomi" style="letter-spacing: 8px"><TT>
+&nbsp;KWYCQ<b>J</b>ALBXPRSZUTDIVENOGHMF<br>
+     1WYCQJ<b>A</b>LBXPRSZUTDIVENOGHMFK<br>
+     2LBXPR<b>S</b>ZUTDIVENOGHMFKWYCQJA<br>
+     3ENOGH<b>M</b>FKWYCQJALBXPRSZUTDIV<br>
+     4SZUTD<b>I</b>VENOGHMFKWYCQJALBXPR<br>
+     5TDIVE<b>N</b>OGHMFKWYCQJALBXPRSZU<br>
+</TT></DIV>
+<P>To encipher the first (second, third, etc.) letter of a message, the line "1" ("2", "3", etc.) is searched for a letter that corresponds with the plaintext letter on the top line.</P>
+<P>Just for comparison, a substitution table for the Vigenere cipher with a regular alphabet may be reproduced by writing the regular alphabet on top and its cyclically rotated versions below such that the second (third, etc.) line has the first (second, etc.) letter of the keyword below the first letter ("A") of the top line.</P><DIV class="kakomi" style="letter-spacing: 8px"><TT>
+&nbsp;ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+     1<b>J</b>KLMNOPQRSTUVWXYZABCDEFGHI<br>
+     2<b>A</b>BCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+     3<b>S</b>TUVWXYZABCDEFGHIJKLMNOPQR<br>
+     4<b>M</b>NOPQRSTUVWXYZABCDEFGHIJKL<br>
+     5<b>I</b>JKLMNOPQRSTUVWXYZABCDEFGH<br>
+     6<b>N</b>OPQRSTUVWXYZABCDEFGHIJKLM<br>
+</TT></DIV>
+
+
+
+<P>Use of a keyword is supposed to ensure that compromise of the cipher in one channel does not lead to vulnerability of other channels. However, the same keyword JASMIN was used by other ministers.</P>
+<P>Correspondence with Elihu Washburne, minister to France, switched from WE029 to the JASMIN cipher in May 1875 <span class="note">(Weber p.238<!--first JASMIN-->, 232<!--last WE029-->)</span>. The following is a specimen of a message in cipher from a charg&eacute; d'affaires in Paris to Fish in December 1875.</P>
+<DIV class="kakomi" style="letter-spacing: 4px"><TT>
+<span class="deciphered">
+duked &nbsp; ecaze &nbsp; swish &nbsp; estoc &nbsp; onsul ...<br>
+</span>
+IOEJJ &nbsp; NPFFB &nbsp; ZBPMS &nbsp; NEBLV &nbsp; GWJKG ...<br>
+</TT>
+<span class="note" style="letter-spacing: 0px">(Weber p.238)</span>
+</DIV>
+<P>In December 1875, when he used the keyword JASMIN for Davis and Washburne, Fish appears to have inadvertently used it in a cable to George Boker, minister to Russia, rather than the key Boker had sent or the key which Fish had sent earlier. Boker reported he could not read it and asked Fish to send the keyword or use SCYTHE. Boker's secretary somehow thought of using the keyword JASMIN and managed to decipher the cable <span class="note">(Weber p.238)</span>. (This cannot have been a shot in the dark. Possibly, the keyword JASMIN was mentioned in instructions for use of the cipher or the like.) Boker thereafter used the keyword SCYTHE.</P>
+<P>Caleb Cushing, minister to Spain, used the keyword SPHINX <span class="note">(Weber p.237-238)</span>.</P>
+<P>A weakness of a polyalphabetic cipher is that a smallest transmission error tends to corrupt the whole subsequent message (see, e.g., <A HREF="adams3.htm">another article</A>) and such a confusion was seen at least in the Spanish channel <span class="note">(Weber p.238)</span>.</P>
+
+<br>
+<P>In 1876, a completely new codebook (Red Code, to be treated in <A HREF="ustelegraph3.htm">another article</A>) for use by the Department of State was prepared, which formed the basis of several official codebooks prepared between 1876 and 1938. The "Direction" of the new codebook reflects frustrations with the codes and ciphers tried after introduction of cable telegraphy, saying Chinese, French, German, Italian, Japanese, Russian, Spanish, and Turkish telegraph operators, ignorant of English, "constantly commit vexatious and often serious mutilations of original messages", which added reason to adopt codes consisting of numbers, which Haswell believed were intelligible to those people and thus could be transmitted accurately <span class="note">(Weber1993 p.197-198)</span>.</P>
+
+<br>
+<br>
+<H2>References</H2>
+<P>Ralph E. Weber (1979), <i>United States Diplomatic Codes and Ciphers, 1775-1938</i></P>
+<P>Ralph E. Weber (1992<!--他の引用者が書いていた-->), "America's First Encrypted Cable", <i>Studies in Intelligence</i> Vol. 36 No. 5 (<A HREF="https://www.cia.gov/library/center-for-the-study-of-intelligence/kent-csi/vol36no4/pdf/v36i4a10p.pdf">PDF</A>); cited as "Weber1992" here.</P>
+<P>Ralph E. Weber (1993), "Masked Dispatches: Cryptograms and Cryptology in American History, 1775-1900" (<A HREF="http://www.nsa.gov/about/_files/cryptologic_heritage/publications/prewii/masked_dispatches.pdf">PDF</A>); cited as "Weber1993" here.</P>
+
+<P>John H. Haswell (1912), "Secret Writing", <i>The Century Illustrated Monthly Magazine</i>, p.83 (<A HREF="http://archive.org/details/centuryillustra00projgoog">Internet Archive</A>) (The article appeared in the November 1912 issue <span class="note">(Weber1993 p.143, n.36)</span>.)</P>
+
+<br>
+<br>
+<font size="2">
+&COPY;2013 S. Tomokiyo<br>
+First posted on 2 August 2013. Last modified on 2 August 2013.<br>
+<A HREF="crypto.htm">Articles on Historical Cryptography</A><BR>
+</font>
+
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>

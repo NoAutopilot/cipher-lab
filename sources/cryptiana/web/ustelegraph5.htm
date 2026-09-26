@@ -1,0 +1,313 @@
+<HTML>
+<HEAD>
+<TITLE>
+US Navy Secret Code of 1887 Used at the Time of the Spanish-American War (1898)
+</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html;charset=SHIFT_JIS"> 
+<META HTTP-EQUIV="keyword" CONTENT="code, cipher">
+<link rel=stylesheet type=text/css href=decode2.css>
+</HEAD>
+
+<BODY>
+<H1>US Navy Secret Code of 1887 Used at the Time of the Spanish-American War (1898)</H1>
+
+<P>Telegraph codes of the <A HREF="ustelegraph4.htm">US War Department</A> and <A HREF="ustelegraph3.htm">States Department</A> in the late 19th century are described in other articles. The Navy Secret Code of 1887 is discussed by participants at a German cryptology blog (<A HREF="http://scienceblogs.de/klausis-krypto-kolumne/2017/10/22/an-unsolved-ciphertext-from-1898-who-can-break-it/#more-14220">Klausis Krypto Kolumne</A>) and is briefly described below.</P>
+
+<P>It is described by William F. Friedman, who was given permission to consult the actual code books preserved in Navy Security archives (Friedman Lectures on Cryptology (<A HREF="https://archive.org/stream/41785109082412#page/n106/mode/1up">pdf</A>) p.93-94, 101-102).</P>
+
+<H3>The U.S. Navy Secret Code (1887)</H3>
+<P>The code is titled <i>The U.S. Navy Secret Code</i> and was used from December 1887. It was accompanied by <i>The Book of Key Words</i> and <i>General Geographical Tables</i>.</P>
+<P>When encoding a message with this system, the first step is to use the basic code book (<i>The U.S. Navy Secret Code</i>) to encode the message with 6-digit figures. Then, the sequence of 6-digit figures are regrouped into 5-digit groups, which are converted to "outlandish" code words with the cipher book (presumably, <i>The Book of Key Words</i>). Use of such "outlandish" words as code words was a common practice in telegraphy at the time (see <A HREF="telegraph2.htm">another article</A>).</P>
+
+<H3>Theodore Roosevelt to Commodore Dewey, 26 February 1898</H3>
+<P>Friedman demonstrates the decoding process of an actual message.</P>
+<P>On 15 February 1898, US Battleship <i>Maine</i> was blown up in Havana, Cuba <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Spanish%E2%80%93American_War#USS_Maine._Dispatch_to_Havana_and_loss">Wikipedia</A>)</span>. Theodore Roosevelt, Assistant Secretary of the Navy (and future president), acted for preparing the navy during the temporary absence of the Secretary of the Navy and sent the following telegram on 26 February 1898 to Admiral Dewey at Hong Kong. It was two months before the declaration of war that began the Spanish-American War.</P>
+
+<DIV class="kakomi2">
+Theodore Roosevelt to George Dewey, 26 February 1898<br>
+WASSERREIF PAUSATURA BADANADOS CENTENNIAL TITUBANDI LOSCHBANK
+VOVETE OFFENSADO CRAQUIEZ PICARAZADO NUMERATURA SPOILABLE
+APPILANTI DEPUGNERE DEMIDEVIL MONOSILABO ATOCHARON TACHONASEN
+ALIENATOTE CRENCHA SPARRWERKE<br>
+(This reflects two corrections made by Friedman.)</P>
+</DIV>
+<P>To read the telegram, first, the "cipher book" is used to translate these outlandish words into 5-digit figures.</P>
+<DIV class="kakomi2">
+<table border="0" style="margin: 0pt;">
+<tr><td>WASSERREIF</td><td>99055</td><tr>
+<tr><td>PAUSATURA</td><td>62399</td><tr>
+<tr><td>BADANADOS</td><td>11005</td><tr>
+<tr><td>CENTENNIAL</td><td>16820</td><tr>
+<tr><td>TITUBANDI</td><td>90000</td><tr>
+<tr><td>LOSCHBANK</td><td>52390</td><tr>
+<tr><td>VOVETE</td><td>98242</td><tr>
+<tr><td>OFFENSADO</td><td>59841</td><tr>
+<tr><td>CRAQUIEZ</td><td>21992</td><tr>
+<tr><td>PICARAZADO</td><td>64004</td><tr>
+<tr><td>NUMERATURA</td><td>58639</td><tr>
+<tr><td>SPOILABLE</td><td>83607</td><tr>
+<tr><td>APPILANTI</td><td>07319</td><tr>
+<tr><td>DEPUGNERE</td><td>25545</td><tr>
+<tr><td>DEMIDEVIL</td><td>24980</td><tr>
+<tr><td>MONOSILABO</td><td>56346</td><tr>
+<tr><td>ATOCHARON</td><td>09599</td><tr>
+<tr><td>TACHONASEN</td><td>87782</td><tr>
+<tr><td>ALIENATOTE</td><td>04665</td><tr>
+<tr><td>CRENCHA</td><td>22099</td><tr>
+<tr><td>SPARRWERKE</td><td>83000</td><tr>
+</table>
+</DIV>
+<P>Since the basic code book employs a 6-digit system, the sequence of 5-digit figures thus obtained is regrouped into 6-digit figures.</P>
+<DIV class="kakomi2" style="font-family: monospace">
+(sequence of 5-digit figures)<br>
+99055 62399 11005 16820 90000 52390 98242 59841 21992 64004 58639 83607 07319 25545 24980 56346 09599 87782 04665 22099 83000<br>
+(sequence of 6-digit figures)<br>
+990556 239911 005168 209000 052390 &nbsp;982425 984121 992640 045863 983607 &nbsp;073192 554524 980563 460959 987782 046652 209983 000<br>
+</DIV>
+<P>Now, the basic code book can be used to recover the plaintext.</P>
+<DIV class="kakomi2">
+<TABLE border="0" style="margin: 0pt;">
+<tr><td>990556</td><td>SECRET AND CONFIDENTIAL</td><tr>
+<tr><td>239911</td><td>ORDER THE SQUADRON</td><tr>
+<tr><td>005168</td><td>EXCEPT</td><tr>
+<tr><td>209000</td><td>THE MONOCACY</td><tr>
+<tr><td>052390</td><td>TO HONGKONG, CHINA</td><tr>
+<tr><td>982425</td><td>KEEP FULL OF COAL</td><tr>
+<tr><td>984121</td><td>IN THE EVENT OF</td><tr>
+<tr><td>992640</td><td>DECLARATION OF WAR</td><tr>
+<tr><td>045863</td><td>SPAIN</td><tr>
+<tr><td>983607</td><td>IT WILL BE YOUR DUTY TO SEE THAT</td><tr>
+<tr><td>073192</td><td>THE SPANISH SQUADRON</td><tr>
+<tr><td>554524</td><td>DOES NOT LEAVE</td><tr>
+<tr><td>980563</td><td>ASIATIC COAST</td><tr>
+<tr><td>460959</td><td>AND THEN</td><tr>
+<tr><td>987782</td><td>OFFENSIVE OPERATION(S)</td><tr>
+<tr><td>046652</td><td>IN PHILIPPINE ISLANDS</td><tr>
+<tr><td>209983</td><td>KEEP OLYMPIA UNTIL FURTHER ORDERS</td><tr>
+</TABLE>
+</DIV>
+
+<H3>Similar Codebooks: Commercial Code and War Department Code</H3>
+<P>Representing a word into a number and then regrouping the sequence of digits to find a code word for transmission is used in a commercial code book well-known as Slater's Code (see <A HREF="telegraph2.htm#SEC3">another article<A>). In one of its many superencipherment schemes ("Example IV") described in its introduction, words "The Queen ..." are converted to 5-digit figures (22313 18095 ...), which are then regrouped into 4-digit figures (2213 3180 9512 ...), by which code words for transmission (begged bulging freak ...) are found.</P>
+<P>Slater's Code, including the examples in the introduction, was used as a basis for a telegraph code of the War Department in 1885 with only a minor adaptation (see <A HREF="ustelegraph4.htm">another article</A>).</P>
+
+<H3>A First Step to Reconstruct the Code</H3>
+<P>By sorting the lists in the above, we may reconstruct a very small portion of the code.</P>
+<P>The basic code book:</P>
+<DIV class="kakomi">
+<table border="0" style="margin: 0pt;">
+<tr><td>(basic vocabulary)</td><td></td></tr>
+<tr><td>005168</td><td>EXCEPT</td><tr>
+<tr><td>045863</td><td>SPAIN</td><tr>
+<tr><td>(location)</td><td></td></tr>
+<tr><td>046652</td><td>IN PHILIPPINE ISLANDS</td><tr>
+<tr><td>(destination)</td><td></td></tr>
+<tr><td>052390</td><td>TO HONGKONG, CHINA</td><tr>
+<tr><td>(expressions about fleet)</td><td></td></tr>
+<tr><td>073192</td><td>THE SPANISH SQUADRON</td><tr>
+<tr><td>209000</td><td>THE MONOCACY</td><td></td><tr>
+<tr><td>209983</td><td>KEEP OLYMPIA UNTIL FURTHER ORDERS</td><tr>
+<tr><td>239911</td><td>ORDER THE SQUADRON</td><tr>
+<tr><td>(common phrases)</td><td></td></tr>
+<tr><td>460959</td><td>AND THEN</td><tr>
+<tr><td>554524</td><td>DOES NOT LEAVE</td><tr>
+<tr><td>(expressions about military operations)</td><td></td></tr>
+<tr><td>980563</td><td>ASIATIC COAST</td><tr>
+<tr><td>982425</td><td>KEEP FULL OF COAL</td><tr>
+<tr><td>983607</td><td>IT WILL BE YOUR DUTY TO SEE THAT</td><tr>
+<tr><td>984121</td><td>IN THE EVENT OF</td><tr>
+<tr><td>987782</td><td>OFFENSIVE OPERATION(S)</td><tr>
+<tr><td>990556</td><td>SECRET AND CONFIDENTIAL</td><tr>
+<tr><td>992640</td><td>DECLARATION OF WAR</td><tr>
+</table>
+</DIV>
+<P>Considering that Slater's Code had 25000 entries, the size typical at the time, a million entries seems too large. There may have been many blanks.</P>
+<P>The cipher book:</P>
+<DIV class="kakomi">
+<table border="0" style="margin: 0pt;">
+<tr><td>ALIENATOTE</td><td>04665</td><tr>
+<tr><td>APPILANTI</td><td>07319</td><tr>
+<tr><td>ATOCHARON</td><td>09599</td><tr>
+<tr><td>BADANADOS</td><td>11005</td><tr>
+<tr><td>CENTENNIAL</td><td>16820</td><tr>
+<tr><td>CRAQUIEZ</td><td>21992</td><tr>
+<tr><td>CRENCHA</td><td>22099</td><tr>
+<tr><td>DEMIDEVIL</td><td>24980</td><tr>
+<tr><td>DEPUGNERE</td><td>25545</td><tr>
+<tr><td>LOSCHBANK</td><td>52390</td><tr>
+<tr><td>MONOSILABO</td><td>56346</td><tr>
+<tr><td>NUMERATURA</td><td>58639</td><tr>
+<tr><td>OFFENSADO</td><td>59841</td><tr>
+<tr><td>PAUSATURA</td><td>62399</td><tr>
+<tr><td>PICARAZADO</td><td>64004</td><tr>
+<tr><td>SPARRWERKE</td><td>83000</td><tr>
+<tr><td>SPOILABLE</td><td>83607</td><tr>
+<tr><td>TACHONASEN</td><td>87782</td><tr>
+<tr><td>TITUBANDI</td><td>90000</td><tr>
+<tr><td>VOVETE</td><td>98242</td><tr>
+<tr><td>WASSERREIF</td><td>99055</td><tr>
+</table>
+</DIV>
+
+<H3>Commodore Dewey to Secretary Long, 1 May 1898</H3>
+<P>The telegram presented at <A HREF="http://scienceblogs.de/klausis-krypto-kolumne/2017/10/22/an-unsolved-ciphertext-from-1898-who-can-break-it/#more-14220">Klausis Krypto Kolumne</A> is the one sent from Commodore Dewey to Secretary Long.</P>
+<P>(There was no trans-pacific submarine cable until the next century <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Submarine_communications_cable#Submarine_cables_across_the_Pacific">Wikipedia</A>)</span>. Dewey's report was delivered by revenue cutter <i>McCulloch</i> <span class="note">(<A HREF="https://en.wikipedia.org/wiki/USS_McCulloch_(1897)">Wikipedia</A>)</span> on 7 May to the US consul at Hong Kong <span class="note">(Kahn p.254)</span>, who forwarded it by cable via Europe.)</P>
+<DIV class="kakomi2">
+(<font color="ff0000">Red color</font> indicates repetition. Considering the regrouping, the repetition of "INCLEMENTE" may be a mere coincidence. Slash (/) is to mark groups of six code words, which correspond to five 6-digit groups in the basic code book.)<br>
+CRAQUEREZ REFRENANS VIJFVOETIG IMPAZZAVA
+PRENSABERE INTRUSIVE / REGENBUI EDIFIERS
+RETAPIEZ DECRUSAMES IMPAVIDEZ RIBOTIEZ /
+GOLDKRAUT RIONORAI SANSCRITO FLEMINGS
+BROMIDO SUPERFICIE / GALEFFAVA BOWLINE
+ALDERMEN ENTOILERAI WATERTHIEF DEFENSABIS /
+GIFTMORD AGOURADA HONEYGUIDE EXCALDABOR
+VORHASCHEN CONLUCETUR / <font color="ff0000">GAMETRIA PEZADA
+BRAND</font>AL SAUKNOTEN DEARTUAREM SILBATO /
+ALEXICACIO EDITASEN SUSPIRARAS ECLUSIEZ
+UNTERHEFE APPACIO / GROWLS HEXAPLA
+<font color="ff0000">INCLEMENTE</font> TURLERIN UNTERHEBEN ULTIMAMUS /
+GLADIATOR SQUILLANDO <U>ABHORREBAM</U> <U>GENIAZO</U>
+<U>SUMPTER</U> GEFLOGEN / <font color="ff0000">GAMETRIA PEZADA
+BRAND</font>BLASE CRISUELA ASEMEJAR ABRIPIEBAR /
+ADHIBEBIT STIRRING FORTNIGHT SIGNIFICAR
+APICULATED BRICOLAMES / CRASENZA OMBRAGE
+SCHRATTEL ASOMBRAR SCHULPROBE MUGIOLINO /
+<BR>
+ARGEMONE WEIBERRATH HAMAXANDOS SETULOSE
+MENGSPATH BLUTNUSS / ASCHUCHARON ECUMENICAL
+<S>KNELBRUSH</S> LAVATORIO ROSOBODA
+ACCULATO <font color="ff0000">INCLEMENTE</font> / MORINGA TODESBILD
+TRUNCARDES
+</DIV>
+<P>The following lists the code groups sorted in alphabetical order.</P>
+<table>
+<tr>
+<td>
+ABHORREBAM<br>
+ABRIPIEBAR<br>
+ACCULATO<br>
+ADHIBEBIT<br>
+AGOURADA<br>
+ALDERMEN<br>
+ALEXICACIO<br>
+APICULATED<br>
+APPACIO<br>
+ARGEMONE<br>
+ASCHUCHARON<br>
+ASEMEJAR<br>
+ASOMBRAR<br>
+</td><td>
+BLUTNUSS<br>
+BOWLINE<br>
+BRANDAL<br>
+BRANDBLASE<br>
+BRICOLAMES<br>
+BROMIDO<br>
+CONLUCETUR<br>
+CRAQUEREZ<br>
+CRASENZA<br>
+CRISUELA<br>
+DEARTUAREM<br>
+DECRUSAMES<br>
+DEFENSABIS<br>
+</td><td>
+ECLUSIEZ<br>
+ECUMENICAL<br>
+EDIFIERS<br>
+EDITASEN<br>
+ENTOILERAI<br>
+EXCALDABOR<br>
+FLEMINGS<br>
+FORTNIGHT<br>
+GALEFFAVA<br>
+GAMETRIA<br>
+GAMETRIA<br>
+GEFLOGEN<br>
+GENIAZO<br>
+</td><td>
+GIFTMORD<br>
+GLADIATOR<br>
+GOLDKRAUT<br>
+GROWLS<br>
+HAMAXANDOS<br>
+HEXAPLA<br>
+HONEYGUIDE<br>
+IMPAVIDEZ<br>
+IMPAZZAVA<br>
+INCLEMENTE<br>
+INCLEMENTE<br>
+INTRUSIVE<br>
+</td><td>
+LAVATORIO<br>
+MENGSPATH<br>
+MORINGA<br>
+MUGIOLINO<br>
+OMBRAGE<br>
+PEZADA<br>
+PEZADA<br>
+PRENSABERE<br>
+REFRENANS<br>
+REGENBUI<br>
+RETAPIEZ<br>
+RIBOTIEZ<br>
+RIONORAI<br>
+</td><td>
+ROSOBODA<br>
+SANSCRITO<br>
+SAUKNOTEN<br>
+SCHRATTEL<br>
+SCHULPROBE<br>
+SETULOSE<br>
+SIGNIFICAR<br>
+SILBATO<br>
+SQUILLANDO<br>
+STIRRING<br>
+SUMPTER<br>
+SUPERFICIE<br>
+SUSPIRARAS<br>
+</td><td>
+TODESBILD<br>
+TRUNCARDES<br>
+TURLERIN<br>
+ULTIMAMUS<br>
+UNTERHEBEN<br>
+UNTERHEFE<br>
+VIJFVOETIG<br>
+VORHASCHEN<br>
+WATERTHIEF<br>
+WEIBERRATH<br>
+</td></table>
+
+<P>This message is presented in David Kahn, <i>The Codebreakers</i>, p.254. This is a report of the Battle of Manila Bay on 1 May 1898, in which Commodore Dewey destroyed the Spanish Pacific squadron <span class="note">(<A HREF="https://en.wikipedia.org/wiki/Battle_of_Manila_Bay">Wikipedia</A>)</span>. The plaintext begins as follows.</P>
+<DIV class="kakomi2">
+Squadron arrived at Manila at daybreak this morning. Immediately engaged the enemy and destroyed the following Spanish vessels: Reina Cristina, Castillia, Don Antonio de Biloa, Don Juan de Austria, Isla de Luzon, Isla de Cuba, ....<br>
+</DIV>
+
+
+<H3>Further Potential Sources</H3>
+<P>Richard W. Peuser, "Documenting United States Naval Activities During the Spanish-American War", Prologue, <A HREF="https://www.archives.gov/publications/prologue/1998/spring/naval-activities-in-spanish-american-war.html">National Archives</A>. In particular, "Record Group 45" is the source used by David Kahn, who says there are other code message with their plaintexts and reproduces one <span class="note">(p.1019, 253)</span>.</P>
+<P>According to <i>History of Communications-Electronics in the United States Navy</i> by Captain Linwood S. Howeth, USN (Retired), 1963, pp.289-296 (<A HREF="http://earlyradiohistory.us/1963hw25.htm">online</A>), there was also a 1908 edition. As of World War I, both the 1887 and 1908 editions were considered to have been compromised but the latter was used in a limited way.</P>
+<br>
+<br>
+<font size="2">
+&COPY;2015 S.Tomokiyo<br>
+First posted on 21 November 2017. Last modified on 30 December 2017.<br>
+<A HREF="crypto.htm">Cryptiana: Articles on Historical Cryptography</A><BR>
+</font>
+
+<script><!--
+var fc2footerparam = 'ver=1'
+    + '&url=' + encodeURIComponent(document.location)
+    + '&service=0'
+    + '&r=' + Math.floor(Math.random() * 99999999999);
+var fc2footertag = "//vip.chps-api.fc2.com/apis/footer/?" + fc2footerparam;
+var script = document.createElement('script');
+script.src = fc2footertag;
+script.charset = "UTF-8";
+script.async = true;
+document.getElementsByTagName('head')[0].appendChild(script);
+//--></script>
+<!-- FC2, inc.-->
+<img src="//media.fc2.com/counter_img.php?id=50" style="display:none" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.--></BODY>
+</HTML>
