@@ -77,7 +77,10 @@ def start():
     # carries and which the repo has not documented yet (a key added on one account was missed by the other).
     try:
         out = subprocess.run([sys.executable, os.path.join(ROOT, "tools", "key_probe.py"), "--sync"], capture_output=True, text=True, timeout=20, cwd=ROOT).stdout
-        print(out.strip())
+        # Prefix (25-26 Sept 2026, RETRO-2026-09-26a): key_probe.py's "keys: N credential names set" (name-
+        # presence against the documented list) and key_livecheck.py's "keys: N present, M working" (live test
+        # calls) below it read as two different counts for the same word with no cue why -- name the tool.
+        print("key_probe.py --sync: " + out.strip())
         # Announce (25 Sept 2026, owner's ask): a requested key that has appeared, or an undocumented one, is posted to
         # ROOM.md by the first fresh session that sees it, so both parents learn of it without the owner writing anything.
         acct = os.environ.get("CIPHERLAB_ACCOUNT") or "unlabelled"
@@ -99,7 +102,7 @@ def start():
     # from key_probe.py above (that one is name-presence only, never a network call).
     try:
         line = next(l for l in open("KEYS-STATUS.md", encoding="utf-8") if l.startswith("keys: "))
-        print(line.strip() + " (tools/key_livecheck.py -- run it fresh before filing an ASKS.md/LOCAL-QUEUE.tsv row)")
+        print("key_livecheck.py: " + line.strip() + " -- run it fresh before filing an ASKS.md/LOCAL-QUEUE.tsv row")
     except (FileNotFoundError, StopIteration):
         print("KEYS-STATUS.md missing or has no 'keys: ' line -- run python3 tools/key_livecheck.py")
     return 0
@@ -132,6 +135,20 @@ def headings(path):
         return None
     return set(re.findall(r"^## .*$", open(path, encoding="utf-8").read(), re.M))
 
+def headings_from_ref(ref, relpath):
+    """'## ' section headings of relpath as committed at ref, or None if the path does not exist there.
+
+    Mirrors headings()'s contract but reads a committed ref instead of the local working tree (25-26 Sept
+    2026, RETRO-2026-09-26a): a34cd00 (22:12, LANE ZX2) dropped two STATUS.md sections in the session's own
+    local edit, before any commit or rebase, so a snapshot taken from the working tree after that edit never
+    saw the sections at all -- comparing against origin/main catches a self-inflicted drop the same way it
+    catches a rebase mis-merge.
+    """
+    r = sh("git", "show", f"{ref}:{relpath}")
+    if r.returncode:
+        return None
+    return set(re.findall(r"^## .*$", r.stdout, re.M))
+
 def headings_ok(before):
     """Refuse to push if a rebase silently dropped a '## ' section from STATUS.md or QUEUE.md.
 
@@ -155,9 +172,16 @@ def push(message, paths):
         sh("git", "add", "--", *paths)
     if not sh("git", "diff", "--cached", "--quiet").returncode:
         print("nothing staged"); return 0
+    # Snapshot origin's own headings BEFORE this commit is created (25-26 Sept 2026, RETRO-2026-09-26a):
+    # a34cd00 (22:12, LANE ZX2) dropped two STATUS.md sections in the session's own local edit, before any
+    # commit or rebase -- headings_ok()'s post-commit, pre-rebase snapshot already reflected the drop, so it
+    # could not flag it. Comparing against origin/main directly catches a self-inflicted drop the same way it
+    # catches a rebase mis-merge.
+    sh("git", "fetch", "-q", "origin", "main")
+    watched = {p: headings_from_ref("origin/main", os.path.relpath(p, ROOT))
+               for p in (os.path.join(ROOT, "STATUS.md"), os.path.join(ROOT, "QUEUE.md"))}
     c = sh("git", "commit", "-q", "-m", message)
     if c.returncode: sys.stderr.write(c.stderr); return 1
-    watched = {p: headings(p) for p in (os.path.join(ROOT, "STATUS.md"), os.path.join(ROOT, "QUEUE.md"))}
     for i in range(5):
         sh("git", "fetch", "-q", "origin", "main")
         rb = sh("git", "rebase", "--autostash", "FETCH_HEAD")

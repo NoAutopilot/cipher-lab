@@ -99,6 +99,25 @@ with tempfile.TemporaryDirectory() as d:
         print(f"FAIL: a None before-snapshot must never block a push, got: {bad}")
         fails += 1
 
+    # a34cd00-shaped failure (25-26 Sept 2026, RETRO-2026-09-26a): the session's own local edit drops a
+    # heading before any commit or rebase happens at all, not during one. The "before" snapshot here stands
+    # in for origin/main (a separate pristine copy, not the working file after the drop); the working file is
+    # written straight to AFTER_DROPPED with no intervening AFTER_INTACT/rebase step. push()'s fix reads this
+    # snapshot from origin/main via headings_from_ref() rather than from the local file post-commit; this test
+    # exercises headings_ok() with an origin-shaped "before" to confirm it still flags the drop when a local
+    # edit, not a merge, is what removed the heading.
+    pristine_before_path = os.path.join(d, "origin-STATUS.md")
+    open(pristine_before_path, "w").write(BEFORE)
+    origin_shaped_before = {status: room.headings(pristine_before_path), queue: None}
+    open(status, "w").write(AFTER_DROPPED)
+    bad = room.headings_ok(origin_shaped_before)
+    if bad is None:
+        print("FAIL: expected a refusal when a local pre-commit edit dropped a heading")
+        fails += 1
+    elif "Lane structure" not in bad:
+        print(f"FAIL: refusal did not name the lost section: {bad}")
+        fails += 1
+
 if fails:
     print(f"{fails} failure(s)")
     sys.exit(1)

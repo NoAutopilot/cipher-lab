@@ -328,6 +328,14 @@ Every brief states a cap in dollars of usage (the session metadata's cost figure
    count and the per-unit estimate in the brief itself, and have the worker stop before starting a unit that
    would cross 80% of either figure -- not only after aggregate elapsed time crosses 80%, which one large unit
    can jump past in a single step.
+   A well-sized per-unit box can still run over if a background computation shares the same box's CPU (25-26 Sept
+   2026, GOLD-K3): two family_run.py variants estimated at about 24 minutes each (48 of a 75-minute box) actually
+   took 59 minutes and landed 23 percent over the $6 cap, because a ten-text noise-band computation was run
+   concurrently in the same box to save a second one, and "a background band of ten decoder runs competes for
+   CPU with the family runs" (GOLD-K3's own lesson). Price a background/reference computation that runs alongside
+   foreground per-unit work as its own separate box, or serialize it before or after the foreground units --
+   never assume concurrent CPU-bound work is free just because it does not add a unit to the count the per-unit
+   rate was built from.
 7. **Stop when the brief is met.** A worker does not continue into follow-ups (a sweep of sister copies, an
    audit of its own) that its brief did not name; it writes the follow-up as a one-line suggestion in NOTES.md.
 8a. **Rules become tools (25 Sept 2026, UPDATES.md).** A rule that the ledger shows broken twice gets a mechanical check in

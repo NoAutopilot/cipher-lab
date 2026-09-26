@@ -87,7 +87,19 @@ injected instruction set and trip a fresh session's own safety check before it r
 
 File the lane orchestrator brief and a COMMON for its workers under .claude/briefs/runs/<date>-lane-<x>-*.md (the
 2026-09-25 LX, DX and OX files are the latest pattern), commit, post a ROOM claim line, then spawn the lane
-orchestrator (Opus). The lane orchestrator writes each job brief to a file before spawning its Sonnet workers,
+orchestrator (Opus).
+
+**Size the opening brief for a shift, not a wave (25-26 Sept 2026, RETRO-2026-09-26a).** LANE R7, R8 and B4 each
+closed "brief's queue spent" in 1.5-2.5 hours this window, each paying a $4-7 orchestrator open/close overhead on
+only $25-35 of worker spend (R8: 17% overhead in 93 minutes). Name a reserve batch alongside the first wave --
+at minimum, a second wave of comparable size drawn from QUEUE.md's own unscored-but-scouted rows (the VX-*/KX-*/
+KT-*/PX-* families are the current backlog: several are recovery-kind with a key or sibling decipherment already
+beside them, the highest-EV shape per Pipeline 3's selection rule) or from the target's own hypothesis ladder (a
+design family with more than one untried variant, the way R8-DSN's own NOTES.md sec.5 already lists three next
+steps). An orchestrator that clears both waves closes on a real "no more candidates," not a brief that only ever
+named one.
+
+The lane orchestrator writes each job brief to a file before spawning its Sonnet workers,
 ledgers every report, runs its own check-ins, feeds the second-opinion queue after its verifier reaches N3, and
 keeps a "LANE <X> handoff" section in STATUS.md current from its first worker report onward (results table, open
 items with costs so far), the same way this file's own "Handing over" section asks of the parent -- updated after
