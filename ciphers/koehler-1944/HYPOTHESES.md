@@ -4,26 +4,27 @@ Working file for constraints on the system behind the five February 1944 Köhler
 the target, sources and check-solved verdict). Everything below the first `##` is append-only, dated and signed by
 the job that wrote it. This top block is rewritten once per cycle by the lane's consolidator and by nobody else.
 
-**Summary, cycle 3** (GOLD-CONS3, Fable, session_01UBBcnhMmQEpPpdNQgDfsTE, 25 Sept 2026 23:06 UTC; replaces the
-cycle-2 block of 21:12 UTC, whose target facts and structural argument are unchanged and restated here)
+**Summary, cycle 4** (GOLD-CONS4, Fable, session_01CSQuomCj5Simbsx6r6VVcK, 26 Sept 2026 00:47 UTC; replaces the
+cycle-3 block of 25 Sept 23:06 UTC, whose target facts and the three established points are unchanged and restated here)
 
 **Target facts every family must respect.** 924 letters in five messages of 237 / 178 / 140 / 140 / 229 (Kahn heads
 the third "137"; it prints 140). All 26 letters present; counts run z 55 down to c 14, sorted profile 55 47 47 47 46
 46 44 40 39 37 36 36 35 33 33 32 31 31 31 30 29 28 28 26 23 14. Two message lengths are odd. Transcription: Schmeh
 2021 reproducing Kahn 1981 pp.65-66 (no image); six single-letter differences from Bourdeau's (`ciphertext-variants.tsv`,
 ASKS 53: the Cryptologia scan is print-disabled on the Internet Archive and cannot be borrowed by this account,
-IA-BORROW 22:44 UTC, so the six groups stay with the owner), immaterial to every statistic below, material to any
-decode. No depth between messages (Bourdeau). IC 0.0399.
+IA-BORROW 25 Sept 22:44 UTC, so the six groups stay with the owner), immaterial to every statistic below, material to
+any decode. No depth between messages (Bourdeau). IC 0.0399.
 
-**What the ladder has established (three cycles, every number with its control).**
+**What the ladder has established (four cycles, every number with its control).**
 1. The key stream is non-uniform (GOLD-2C step 1): the letter statistics sit inside the keyed-tableau running-key band
    on 6/6 statistics (percentile 0.41-0.52) and outside the uniform one-time-key 99 pct band on 5/6. Transposition is
    excluded by the flat IC, a 25-letter digraphic square by j and the odd lengths, a fixed period 2-120 by two coset
    scans with controls.
 2. No letter-arithmetic tableau reachable by a keyword or by a cipher-side mixing reads above noise at 924 letters:
-   the standard tableau at two key registers (nl20 novels, nl_dev Bible) and the keyword-mixed tableau in six of its
-   seven placements (plain, key, both, full, cipher at vig and beau; German, Dutch and devotional keys) all have controls
-   at 67-90 pct plaintext letters recovered and targets inside the same pipeline's noise band, judge FAIL every time.
+   the standard tableau at two key registers (nl20 novels, nl_dev Bible) and the keyword-mixed tableau in all seven of
+   its placements at vig (plain, key, both, full, cipher, plaincipher, keycipher) and five of seven at beau, with three
+   keyword lists (de20+nl20, German-only, English), all have controls at 67-90 pct plaintext letters recovered and
+   targets inside the same pipeline's noise band, judge FAIL every time (GOLD-2C, K1, K2, K3, K4).
 3. A free permutation is unidentifiable at this length (GOLD-B2D): with S1 = S2 = identity and S3 free, the best search
    that fits a box (sum-stream n-gram proxy, 30k evaluations x 3 chains, beam rescoring) reads a random S3 at 9.5 pct
    (7.4 / 12.9 / 8.1; chance 3.8) and places 1 / 8 / 3 of 26 letters; the proxy's maximum is the true permutation only
@@ -31,9 +32,9 @@ decode. No depth between messages (Bourdeau). IC 0.0399.
    3 swaps around the truth and is flat beyond 8. The general case (S1, S2, S3 free) has 26!^2/26 more states and two
    symmetries on top; it has no chance with these objectives at 924 letters.
 
-**Final family table, cycle 3.** Controls and targets side by side, same decoder settings per row; "band" is the noise
+**Final family table, cycle 4.** Controls and targets side by side, same decoder settings per row; "band" is the noise
 band of the same pipeline (two-text -3.507 / -3.544 at order 6 beam 300 unless stated; the ten-text beau band of K3 is
-min -3.548, median -3.531, max -3.494).
+min -3.5481, median -3.5305, max -3.4944).
 
 | family, corner | job | CONTROL (pct plaintext letters, seeds 1-3; gate) | TARGET | read |
 |---|---|---|---|---|
@@ -42,68 +43,73 @@ min -3.548, median -3.531, max -3.494).
 | B standard tableau, vig, nl20 key | GOLD-2A | 72.7 / 60.4 / 68.3, mean 67.1 (gate 60 met) | -3.589; -3.57 to -3.62 over 7 configs vs band -3.57 to -3.64 (3 uniform texts, order 8 beam 1000) | inside |
 | B standard tableau, vig and beau, nl_dev Bible key | GOLD-K1 | 83.0 / 89.5 / 80.3, mean 84.3 (gate 60 met) | vig -3.588; beau -3.640 (GOLD-2A's band reused) | inside; beau at the floor |
 | B' keyword-mixed, vig, modes plain/key/both/full, nl20 key | GOLD-2C | 79.1 / 74.0 / 64.7, mean 72.6 (gate 50 met) | -3.534 (`waarvan:plain`) | inside |
-| B' keyword-mixed, beau, four modes, nl20 key | GOLD-K2 v1 | 85.5 / 82.5 / 66.2, mean 78.1 (gate 50 met) | **-3.478** (`aufgabe:plain:beau`); msg-1 best-of-30 -3.443 vs noise -3.477 / -3.492 | 0.029 above the two-text top; **0.016 above the ten-text beau band's max** (-3.494); judge FAIL; under the 0.1-nat flag line |
+| B' keyword-mixed, beau, four modes, nl20 key | GOLD-K2 v1 | 85.5 / 82.5 / 66.2, mean 78.1 (gate 50 met) | **-3.478** (`aufgabe:plain:beau`); msg-1 best-of-30 -3.443 vs noise -3.477 / -3.492 | 0.029 above the two-text top; **0.016 above the ten-text beau band's max** (-3.494); judge FAIL; under the 0.1-nat flag line; still the record's largest excess |
 | B' keyword-mixed, vig, four modes, de20 (German) key | GOLD-K2 v2 | strict 7.7 (streams exchangeable under vig, label ambiguity); either-stream 89.6 / 90.7 / 88.6, mean 89.6 (gate met) | -3.573 | below the floor |
 | B' keyword-mixed, vig, four modes, nl_dev Bible key | GOLD-K1 | 87.8 / 81.0 / 85.6, mean 84.8 (gate 50 met) | -3.583 (`evelyn:plain`) | 0.04-0.08 below the floor |
 | B'-c cipher-side mixing (mode `cipher`), vig, nl20 key | GOLD-K3 a | 81.3 / 78.5 / 70.9, mean 76.9 (gate 50 met) | -3.498 (`zutun:cipher:vig`); msg-1 best-of-30 -3.458 | inside the ten-text band (0.004 below its max, 0.033 above its median); 0.009 above the two-text top; judge FAIL |
 | B'-c cipher-side mixing (mode `cipher`), beau, nl20 key | GOLD-K3 b | 77.1 / 76.4 / 72.2, mean 75.2 (gate 50 met) | -3.518 (`zickzack:cipher:beau`) | inside both bands (0.024 below the ten-text max); judge FAIL |
-| B'-c modes `plaincipher`, `keycipher`, vig | owed (K3 box) | -- | -- | **not run** |
-| B' English keyword list (`wordcorpus=`), four modes | owed (K2 v3) | option built and tested | -- | **not run** |
+| B'-c modes `plaincipher`, `keycipher`, vig, nl20 key | GOLD-K4 unit 1 | 79.1 / 74.0 / 70.5, mean 74.5 (gate 50 met) | **-3.4935** (`ruht:plaincipher:vig`); msg-1 best-of-30 -3.491 | 0.0009 above the ten-text max and 0.0135 above the two-text top: the band's edge, not an excess (the ten-text max is itself one draw); judge FAIL (-0.963 vs real_p05 -0.823) |
+| B' English keyword list (`wordcorpus=tools/data/en`), four modes, vig, nl20 key | GOLD-K4 unit 2 | 81.2 / 79.8 / 68.5, mean 76.5 (gate 50 met) | -3.515 (`opportunity:plain:vig`); msg-1 best-of-30 -3.473 | inside both bands (0.021 below the ten-text max); judge FAIL (-0.94) |
+| B'-c modes `plaincipher`, `keycipher`, beau | owed (K4 box, 80 pct rule) | -- | -- | **not run**; the one empty cell of the `mixed_tabula` grid; command logged in the GOLD-K4 section |
 | B''-c free cipher-side permutation (S3 free, S1 = S2 = id), vig, nl20 key | GOLD-B2D | **7.4 / 12.9 / 8.1, mean 9.5 (gate 50 NOT met)**; S3 letters correct 1 / 8 / 3 of 26 | not run (CONTROL BELOW GATE, exit 3); bands not run | **unidentifiable at 924 letters**; parked |
 | B'' general (S1, S2, S3 free) | GOLD-B2D design paragraph | no chance with these objectives at this N (26!^2/26 more states, two symmetries) | not run | parked, no code |
 | C book / word-sum code | cycle 1 | merged into B'' (its letter-arithmetic form) | -- | parked with B'' |
 | D uniform one-time key | GOLD-2C step 1 | 1000 OTP trials, 99 pct bands | outside on 5/6 (IC pct 1.000, chi2 1.000, entropy 0.000, min count 0.001, L1 0.999) | **excluded** at 99 pct |
 | D' hand-made non-uniform key | -- | -- | inside the keyed band, as any non-uniform key is | **unfalsifiable from the ciphertext**; only family A |
-| E digit system re-lettered | -- | -- | -- | **untestable at this N** (below) |
+| E digit system re-lettered | cycle 3 | -- | -- | **untestable at this N** (B2D's 9.5 pct against a 50 pct gate is the number) |
 | F Abwehr hand systems in print | cycle 1 | -- | -- | mostly excluded by facts 1-3; what survives is B'/B''/E, now all run or unidentifiable |
 
-**Decisions, cycle 3, with P(the first result moves the target) x value / cost.** Value is the same for every Köhler
-job (the item's fixed worth), so the ranking is P(moves) per $10; the bar the brief set is about 0.03 per $10.
+**Is the B' record complete?** At vig arithmetic, yes: seven of seven `mixed_tabula` placements and three keyword
+lists, every one a control-backed negative with controls 72.6-89.6 pct and judge FAIL. At beau arithmetic, five of
+seven placements (plain, key, both, full: K2 v1; cipher: K3 b); `plaincipher`/`keycipher` at beau is the one cell of
+the grid never run. The largest excess over the ten-text band is unchanged: K2's beau -3.478, 0.016 nats above the
+max (-3.4944); K4's -3.4935 sits 0.0009 above the same max, which is the edge of a ten-draw band, not a second excess
+(a band's maximum moves by more than that when an eleventh draw is added). GOLD-K4's done line carried no `flag:`
+and no judge PASS, so no re-derivation is owed and no cycle-5 Koehler brief is written.
 
-(i) **The two owed runs (B'-c `plaincipher`,`keycipher`; B' English keyword list): one Sonnet box, $8, 75 minutes --
-worth it, just.** Reasoning: the seven `mixed_tabula` placements are exclusive alternatives inside one family whose prior
-mass (a keyword-mixed running key with a keyword in a word list and a book key in Dutch or German) was put at about
-0.15 at cycle 1. Six placements are run with controls at 75-90 pct, so about 80 pct of their share is gone; the two
-unrun placements keep their 2/7 share intact: 0.15 x 2/7 ~ 0.04, times control power 0.8 ~ 0.035. The English keyword
-list is a weaker lever (the German-vs-Dutch list change moved nothing, the de20+nl20 list has 11,438 words): about
-0.02. P(moves) about 0.05 for $8, i.e. about 0.06 per $10: above the bar, and it makes the B' record complete (seven of
-seven placements, three keyword lists) so nobody reopens it. Cycle-4 brief `2026-09-25-lane-gold-c4-koehler-bprime-owed.md`.
-Sized per Usage 6 as units: K3 measured about 24 minutes and about $2.50 per control+target unit with contention; two
-units plus one unit of margin.
+**Decision, cycle 4: Köhler PAUSED for lane spend until family A material (ASKS 55: NARA RG 65 105-9673 and Farago
+1971; ASKS 53: Kahn's six groups) or more ciphertext arrives.** Every cheap corner in the ladder is now run with a
+passed control or shown unidentifiable with one; what remains (D' hand key, general B'', E) needs the FBI file, the
+Farago chapter or the printed groups, all on the owner's desk. The one condition that reopens it: a document from
+family A that names the system, the key text or a plaintext (then the re-derivation is a $3 Sonnet job through
+`tools/family_run.py` with the named key), or a sixth message that lifts N past about 5,000 letters (then B''-c becomes
+identifiable, GOLD-B2D's own curve). The pause starts now, not after the last beau unit: that unit's P(moves) is about
+0.015 (the two placements read at noise under vig and the five other placements read at noise under beau; K3's beau
+and vig on the same placement differed by 0.02 nats), which at about $3 for a one-unit box (about 25 minutes) is
+0.05 per $10 -- above the 0.03 bar on cost alone, but a third of the reserve's cheapest Russian unit in absolute terms
+(kaliningrad-2015 HYPOTHESES.md, cycle-4 block). It is not worth a box of its own; if a Sonnet worker is ever on
+Köhler for another reason (family A material arriving), it runs first, from the command logged in the GOLD-K4 section,
+so the grid reads seven of seven at both arithmetics. Rule 5: the target stays **partial** with its NEAR.md row (it beat
+no control, but every negative has a passed control behind it and one number, K2's -3.478, sits 0.016 nats above a
+ten-text band with no tail); never closed-negative.
 
-(ii) **Family E, digit system re-lettered: untestable at this N; recorded, no brief.** E predicts a ciphertext that is a
-re-lettering of digit pairs from an unknown 100-cell table under an unknown digit additive. Its letter profile is the
-keyed band's (GOLD-2C step 1 sits at the band's median, so profiles do not separate hypotheses inside the band), and
-its re-lettering step is at least as free as B''-c's single permutation, which GOLD-B2D showed a search cannot place
-at 924 letters (9.5 pct, needs about 5,000 letters). A cheap test with a control that could move it does not exist
-without the table or more ciphertext; the number that says so is B2D's 9.5 pct against a 50 pct gate.
+**NEAR.md koehler-row numbers for the orchestrator (cycle 4).** GOLD-K4 unit 1 (plaincipher/keycipher, vig, Dutch
+key): control 79.1 / 74.0 / 70.5 pct (mean 74.5, gate 0.5 met) vs target -3.4935 (0.0009 above the ten-text max
+-3.4944, 0.0135 above the two-text top -3.507), judge FAIL; unit 2 (English keyword list, vig, Dutch key): control
+81.2 / 79.8 / 68.5 (mean 76.5, gate met) vs target -3.515 inside both bands, judge FAIL. B' record: seven of seven
+placements and three keyword lists at vig, five of seven at beau, all control-backed negatives; largest excess still
+K2's beau -3.478 (0.016 above the ten-text max, under the 0.1-nat flag line). Next step: paused, owner asks (ASKS 55a
+NARA file, 55b Farago, 53 Kahn's groups); reopened by family A material or more ciphertext; the beau
+plaincipher/keycipher unit is an owed filler (about $3, 25 minutes), not a step.
 
-(iii) **Köhler spend after the owed box: pause until family A material arrives.** Recommendation to the parent (the
-parent decides spend): after (i), every cheap corner in the ladder is run with a passed control or shown unidentifiable
-with one; what remains (D' hand key, general B'', E) needs the FBI file (NARA RG 65 105-9673, ASKS 55a), Farago 1971
-(ASKS 55b) or Kahn's printed groups (ASKS 53), all on the owner's desk. Rule 5: the target stays **partial** with its
-NEAR.md row (it beat no control, but a control showed the negatives are real tests and one number, K2's -3.478, sits
-0.016 nats above a ten-text band with no tail); never closed-negative. NEAR.md koehler-row numbers for the orchestrator:
-B'-c vig control 76.9 pct vs target -3.498 and beau control 75.2 vs -3.518, both inside the ten-text beau band
-(-3.548 / -3.531 / -3.494); K2's -3.478 is 0.016 above that band's max, judge FAIL, under the flag line; B''-c control
-9.5 pct, below gate, unidentifiable at 924 letters (about 5,000 needed); next step: the $8 owed box, then family A.
+**The beau excess, final read (unchanged from cycle 3).** K2's -3.478 is the one number in the record above every
+noise draw seen (two-text top -3.507, ten-text max -3.494). The excess shrank from 0.029 to 0.016 when the band grew
+from two draws to ten, which is what a tail does; a real signal in this pipeline is 0.35-0.5 nats (controls over their
+near-misses and over noise), the msg-1 best-of-30 gap is 0.03, and the judge failed. K4's -3.4935 at the band's edge
+is the same lesson from the other side: a ten-draw band's max is a soft ceiling. Bookkeeping, not a lead; a 30-text
+band would cost about $6 and can only move the sentence, not the verdict. Not briefed.
 
-**The beau excess, final read.** K2's -3.478 is the one number in the record above every noise draw seen (two-text top
--3.507, ten-text max -3.494). The excess shrank from 0.029 to 0.016 when the band grew from two draws to ten, which is
-what a tail does; a real signal in this pipeline is 0.35-0.5 nats (controls over their near-misses and over noise), the
-msg-1 best-of-30 gap is 0.03, and the judge failed. Bookkeeping, not a lead; a 30-text band would cost about $6 and can
-only move the sentence, not the verdict. Not briefed.
-
-**Cycle-4 Köhler job by expected value** (one job; nothing else clears the bar):
+**Cycle-5 Köhler jobs by expected value: none briefed.**
 
 | rank | job | P(moves) | cost | P per $10 | brief |
 |---|---|---|---|---|---|
-| 1 | owed B' runs: `modes=plaincipher,keycipher` (vig), then the English keyword list on the default modes (vig), control first each; beau only if the 80 pct rule allows a third unit | 0.05 | $8 Sonnet, 75 min | 0.06 | `2026-09-25-lane-gold-c4-koehler-bprime-owed.md` |
+| -- | beau `plaincipher`,`keycipher` (the grid's empty cell) | 0.015 | about $3 Sonnet, 25 min | 0.05 | not briefed; owed filler, command in the GOLD-K4 section |
 | -- | 30-text beau band | 0 (bookkeeping) | $6 | 0 | not briefed |
 | -- | B''-c with a decoder-objective anneal (hours per seed) or a Monte Carlo over (p, k, S3) | under 0.02 at this N | $20+ Fable + hours of CPU | under 0.01 | not briefed; reopen only with more ciphertext |
+| -- | family A re-derivation once a document names the system | conditional on ASKS 55 / 53 | $3 Sonnet | n/a | written when the material arrives |
 
-Rule 10: nothing in this file is a reading; status stays `open`; the lane never writes solved, new, first or
-unpublished.
+Rule 10: nothing in this file is a reading; status stays `open` in NOTES.md (`partial` on the board per rule 5's
+near-solve amendment); the lane never writes solved, new, first or unpublished.
 
 ## Prior attempts (Bourdeau 15 Sept 2026)
 

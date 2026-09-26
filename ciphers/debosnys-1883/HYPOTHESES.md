@@ -79,6 +79,8 @@ the settled ceiling above about 97 pct, which the Schmeh copies cannot. No cycle
 Rule 10: nothing in this file is a reading; status stays `open`; the lane never writes solved, new, first or
 unpublished.
 
+*Cycle 4, GOLD-CONS4 (Fable, session_01CSQuomCj5Simbsx6r6VVcK), 26 Sept 2026 00:47 UTC: unchanged, parked on ASKS 52 (Adirondack History Center Museum: key sheet or clear poems). Nothing ran on this target in cycle 4; the cycle-3 block above stands as the numbers of record (base-level control 0.816 at 2.5 pct type noise, 0.385 at 5; no target run, no NEAR.md row); no cycle-5 Debosnys brief.*
+
 ## GOLD-D1, noise-matched controls (25 Sept 2026, session_01Qcv68Pn46JNXkktRXTv6DL, Sonnet)
 
 Brief: `.claude/briefs/runs/2026-09-25-lane-gold-c2-debosnys-noise-control.md`. Cap $5 / 60 min, started 19:57

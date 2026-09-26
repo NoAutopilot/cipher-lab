@@ -2,6 +2,110 @@
 
 Append-only. Rows below are written by `tools/family_run.py` (CLAUDE.md rule 3: the matched CONTROL number sits beside the TARGET number in every row; a row with gate met = no reports a control that could not read its own design, and the target was not run). Prose sections may be added above this table by workers.
 
+**Summary, cycle 4** (GOLD-CONS4, Fable, session_01CSQuomCj5Simbsx6r6VVcK, 26 Sept 2026 00:50 UTC; the first top
+block of this file, written from LANE B2's test 1 and GOLD-KAL1's sections below; rewritten once per cycle by the lane's
+consolidator and by nobody else -- everything below the first `##` stays append-only)
+
+**Target facts every family must respect.** Ernst's transcript (Cipherbrain post 19, comment #32, 22 Oct 2017; row-checked
+against the two images by LANE B2, no disagreement beyond his "x" label for the hard-sign-like glyph). Word divisions
+visible: 206 space-separated tokens, ten of them a trailing-dot filler line, nine dotted abbreviation groups. Two
+tokenisations, both of record (`ciphertext_signs.tsv` is convention A, made by `scripts/make_signs_tsv.py`; the
+consolidator derived convention B from it by splitting the trailing apostrophe off):
+
+| convention | N | K | IC | top signs (count) | apostrophe |
+|---|---|---|---|---|---|
+| A: letter+apostrophe = one sign | 978 | 36 | 0.0657 | e 156, n 105, i 68, x 65, s 62, h 43, d 43, u 43, f 41, a 39, l 38, w 37 | 88 compound signs (9.0 pct): n' 29, t' 16, x' 12, d' 11, l' 5, f' 5, s' 4, m' 3, z' 2, -' 1 |
+| B: apostrophe = its own sign | 1066 | 28 | 0.0718 | e 156, n 134, ' 88, x 77, i 68, s 66, d 54, t 48, f 46, h 43, l 43, u 43 | 88 of 1066 (8.3 pct), always in-word after one of 9 consonant-like signs |
+| B folded to a-z (diacritics folded, apostrophes dropped; the transposition view) | 977 | 21 | 0.0836 | e, n, x, i, s, d, t, f, h, l | -- |
+
+The NOTES.md counts from LANE B2's `ic_analysis.py` run (n 92, n' 42, x 62, s 61) differ from the committed TSV's (n 105,
+n' 29, x 65, s 62) by 13 apostrophes assigned differently at the same N and K; the TSV is what `family_run.py` reads and
+is the number of record for family runs; the next worker reconciles the two in its first five minutes (which rule
+`tokenize_signs` applies at a double apostrophe or a dot) and records which is right, without repairing the transcript.
+Diacritic signs ê 17, ö 7, ü 1 are their own signs under both conventions. The "x" glyph (77 under B, 7.2 pct) sits
+in-word and once doubled (`cfefdxx`), so it is not a clear hard sign of either Russian orthography (pre-1918 word-final
+ъ about 3-4 pct of letters, always word-final; post-1918 ъ 0.01 pct). The two thread claims: Ernst 2017 ("political",
+cross-language polyalphabetic; no text, no method) is untestable as stated; Frank 2021 (a Synodal Bible chapter) was
+tested by GOLD-KAL1 and is a control-backed negative on the host text (below), which excludes that text as host, not
+Russian as the language.
+
+**Profile against the corpora on disk and against transliterated Russian** (this consolidator, `tools/data`, windows of
+the target's N, seed 42; the Russian schemes are built from `tools/data/ru19`, the Synodal Bible, first 600k letters,
+through `homophonic_anneal.fold`, which keeps a-z only and merges j into i and v into u, so a scheme has at most 24
+plaintext letters; ь and softness marks are carried as `q`):
+
+| corpus / scheme | K | IC at N 978 (min-max over 20 windows) | apostrophes per letter in the raw text | identity L1 of the B-folded target vs the corpus (window null p99) |
+|---|---|---|---|---|
+| de20 (1880-1940 German) | 24 | 0.0756 (0.0687-0.0840) | 0.0006 (0.6 expected at N 1066) | 0.375 (p99 0.368); 0.239 if the x glyph is re-read as r |
+| en (Holmes + Moby-Dick) | 24 | 0.0666 (0.0635-0.0693) | 0.0060 (6.4) | 0.553 (0.242) |
+| nl20 | 24 | 0.0817 (0.0764-0.0883) | 0.0029 (3.1) | 0.473 (0.399) |
+| fr19 | 24 | 0.0815 (0.0759-0.0887) | 0.0131 (14.0) | 0.599 (not computed) |
+| da19 | 24 | 0.0766 (0.0698-0.0858) | 0.0002 (0.2) | 0.523 (0.254) |
+| it16 / es17c / pt18 | 24 | 0.0758 / 0.0762 / 0.0774 | 0.0069 / -- / -- | 0.674 / 0.656 / 0.693 |
+| Russian S1, scientific digraphs (zh ch sh shch yu ya yo kh ts; e for е ё э; y for й ы; q for ь; ъ dropped) | 23 (B view) / 34 (A view, consonant+q merged) | B view at N 1066: 0.0608 (0.0580-0.0655); A view: 0.0608 (0.0578-0.0661) | q 0.015 | rank-profile L1, target A vs scheme A: 0.245 (window null median 0.103, max 0.145): outside |
+| Russian S3', phonemic partial (q after a paired consonant before я ю ё and for ь; the vowel then plain) | 23 / 36 | B: 0.0601 (0.0569-0.0640); A: 0.0611 (0.0563-0.0767) | q 0.029 | rank L1 0.214 (null max 0.275): inside |
+| Russian S3, phonemic full (q also before е и) | 23 / 37 | B: 0.0638 (0.0602-0.0691); A: 0.0547 (0.0502-0.0704) | q 0.126 | rank L1 0.263 (null max 0.284): inside |
+| Cyrillic itself (33 letters, for reference) | 33 | 0.0572 whole corpus | ь 0.0156, ъ 0.0001 | -- |
+
+Reading the table. (1) Under convention A the target's IC 0.0657 sits inside every Russian scheme's window range and its
+K 36 equals S3' A-view's K 36 (S3 gives 37, S1 34); the rank profile is inside the window null for the phonemic
+schemes. The IC gap LANE B2 reported (target 0.0657 vs its Russian control 0.0563) came from a scheme that folded the
+soft sign into the apostrophe and dropped it, on a 34k-letter Gutenberg text; with the scheme matched to the tokenisation
+the gap is gone. Under convention B the target's 0.0718 is above every scheme's B-view maximum (0.0640-0.0691), so the
+data prefer the reading in which an apostrophe-bearing sign is one plaintext unit (a soft or softened consonant as its
+own letter) over the reading in which the apostrophe is a separate plaintext letter. (2) A pure transposition of any
+Latin orthography on disk is excluded by the apostrophe count alone: a transposition keeps every character, and 88
+apostrophes at N 1066 against an expectation of 0.2-14 (French the highest) is a chi-square above 390 on that cell for
+French and above 10,000 for German; the identity profile agrees for English, Danish and Dutch (L1 outside the window
+p99) and for German unless the x glyph is read as r (then 0.239, inside p99 0.368 -- so for German the apostrophe count
+is the exclusion, not the profile). A transposition of Cyrillic ("ru-cyrillic-transposed" in the spec) is excluded by the
+sign inventory as transcribed (Latin cursive with apostrophes and three diacritics), conditional on the transcription
+(rule 2). (3) The apostrophe share 8.3 pct is above a clear soft sign (1.5 pct, S1) and below full phonemic softness
+marking (12.6 pct, S3); S3' at 2.9 pct is also short; the writer's own scheme is a free parameter bounded by these three.
+
+**Family table, every control beside its target (numbers of record in the sections below).**
+
+| family | job | CONTROL | TARGET | read |
+|---|---|---|---|---|
+| IC and matched-N language controls | LANE B2 test 1 (25 Sept) | ru transliterated (Gutenberg 30774) IC 0.0563 (0.0543-0.0605); de16 0.0724 (0.0676-0.0765), 20 windows each | 0.0657 (A, K 36) | not conclusive on its own; superseded by the scheme-matched table above |
+| Crib: Synodal Bible chapter as host text (Frank 2021), word-pattern solver, convention A | GOLD-KAL1 | letters recovered, 3 seeds: A full-vocab 1.000/0.998/1.000 (0.999), held-out 1.000/0.991/1.000 (0.997); gate 0.9 met | 22/187 words matched (0.118) vs shuffle-null max 0.096 (seeds 0.096/0.080/0.064); best chapter John 6 covers 14/22 (0.636) vs null 5 of 6 seeds over 0.5 (mean 0.632) | **control-backed negative on the host text**; the chapter-cover criterion fires on noise |
+| Crib, convention B (K 27 as KAL1 cleaned it) | GOLD-KAL1 | B full-vocab 1.000/0.992/1.000 (0.997), held-out 1.000/0.992/1.000 (0.997); gate met | 23/187 (0.123) vs null max 0.080; Ezekiel 39 covers 19/23 (0.826) vs null max 0.750 | **control-backed negative**; +0.043 over the null on words, under the 0.2 bar |
+| German light homophonic, K 36 profile=target, de20 (1880-1940) | GOLD-KAL1 | recovery 0.992/0.960/0.994, mean 0.982; gate 0.9 met | judge FAIL -1.605 (real_p05 -0.817, null_p99 -2.083, N 978) | **control-backed negative** for German substitution at this K and register |
+| Russian substitution, any scheme | never run | -- | -- | **open**: the leading hypothesis on structure (apostrophes after 9 consonant-like signs in-word, K 36 = S3' K 36, IC inside all three scheme ranges under A); cycle-5 briefs below |
+| Polish / Lithuanian substitution | never run; no corpus on disk | -- | -- | open; cycle-5 brief below (Polish marked letters ą ę ó ł ż ś ć ń ź are 6.9 pct of Polish letters against the target's 9.0 pct compound signs, 9 marked types against the target's 9-10) |
+| Transposition, Latin orthographies | this block (profile and apostrophe count) | window nulls above | L1 outside p99 for en, da19, nl20; apostrophe count 88 vs at most 14 expected | **excluded by the apostrophe count**, profile agrees except German-with-x-as-r |
+| Periodic IC (spec test 3) | never run | -- | -- | five-minute step, folded into the cycle-5 Russian brief with its shuffle control |
+
+**Decision, cycle 4, P(the first result moves the target) x value / cost.** Value is the item's fixed worth (Schmeh's
+no. 19, no machine run across languages on record before this lane); ranking by P(moves) per $10 against the 0.03 bar.
+Unit costs from the record: a `family_run.py --family homophonic` control-plus-target unit at N 978 took GOLD-KAL1 about
+10-12 minutes and about $1 at GOLD-K4's rate ($3.16 for 51 minutes of family_run units); a corpus build with a script and
+its offline test about 10 minutes and about $1.50 (KAL1's crib tool was the expensive part of its $4.61).
+
+| rank | family | why this P | P(moves) | cost | P per $10 | box |
+|---|---|---|---|---|---|---|
+| 1 | Russian, convention B (K 28), homophonic profile=target, corpus S3' then S1 (apostrophe = a softness mark or soft sign written in clear; the solver maps ' to q) | the natural reading of the apostrophe structure; against it, the B-view IC 0.0718 sits above both schemes' window maxima (0.0640, 0.0655) and a homophonic split lowers IC further | 0.08 for the pair | 2 units, about $2 | 0.4 | **GOLD-KAL2** (brief `2026-09-26-lane-gold-c5-kaliningrad-russian.md`) |
+| 2 | Russian, convention A (K 36), homophonic profile=target, corpus S1 with softness stripped (n and n' as homophones of one letter) | the reading the IC prefers (0.0657 inside 0.0578-0.0661); loses the softness information, so the judge scores base text | 0.05 | 1 unit, about $1 | 0.5 | GOLD-KAL2 |
+| 3 | Russian S3 full, convention B | q at 12.6 pct against the target's 8.3; a bound, not a favourite | 0.03 | 1 unit, about $1 | 0.3 | GOLD-KAL2 if the box allows, else GOLD-KAL3 |
+| 4 | Polish, conventions A and B, homophonic profile=target, corpus from Gutenberg (at most 6 fetches) | 40 km from the Polish border; marked-letter share 6.9 vs 9.0 pct, 9 marked types vs 9-10; folded Polish IC about 0.063-0.067 (to be measured on the fetched corpus) brackets the target's 0.0657 | 0.06 | corpus + 2 units, about $4 | 0.15 | **GOLD-KAL3** (brief `2026-09-26-lane-gold-c5-kaliningrad-polish.md`) |
+| 5 | Lithuanian, same design, only if api.getbible.net lists a Lithuanian translation (one request to check, one fetch) | marked letters ą ę ė į ų ū č š ž about 7-8 pct of letters; no Gutenberg prose | 0.03 | 1 fetch + 1 unit, about $2 | 0.15 | GOLD-KAL3, conditional |
+| 6 | Russian one-to-one scheme (33 letters) or convention A with each soft consonant its own plaintext letter (K 36-37) | the best structural fit (K and rank profile) but needs a plaintext alphabet wider than `fold()`'s 24 letters: a tool change in `homophonic_anneal.py` (alphabet parameter) and in the judge's fold | 0.06 | Fable tool job about $12 + 2 units | 0.05 | not briefed this cycle; cycle 6 if ranks 1-3 are control-backed negatives and the A-view fit still stands |
+| 7 | Latin sweep: en, fr19, nl20, it16, es17c, pt18, da19, homophonic K 36 profile=target | no provenance link; no Latin orthography puts an apostrophe after 9 consonants in-word at 8 pct; German already negative | 0.03 for all seven | 7 units, about $7 | 0.04 | not briefed; the cycle-6 fallback, at the bar |
+| -- | Transposition, any Latin orthography; Cyrillic transposed | excluded above with numbers | -- | -- | -- | no box |
+| -- | Periodic IC on the sign sequence, periods 2-30, against 3 shuffles | spec test 3, never run; five minutes | folded in | -- | -- | first step of GOLD-KAL2 |
+
+**NEAR.md: no row.** Two control-backed negatives (the Synodal crib, German homophonic) and one language-control
+statistic; no solver beat its control and no control showed a negative was not a real test (rule 5's amendment). The
+register is this block and the spec's `cheap_test_done`; status stays `open` (never closed-negative: the leading
+language has not been run).
+
+**Lane recommendation.** The reserve's Russian units are the lane's best P per dollar anywhere (0.3-0.5 per $10 against
+Köhler's 0.05 for its last beau cell and Debosnys's zero until the museum answers): the next dollars go to GOLD-KAL2, then
+GOLD-KAL3, with Köhler paused and Debosnys parked. A judge PASS on any unit stops the job and owes a re-derivation
+(rule 7); a control-backed negative on ranks 1-3 leaves rank 6 (the wide-alphabet tool) as the last Russian step.
+
+Rule 10: nothing in this file is a reading; status stays `open`; the lane never writes solved, new, first or unpublished.
+
 ## GOLD-KAL1, crib test and German homophonic (25 Sept 2026)
 
 Two families, both control-first (CLAUDE.md rule 3), per the reserve brief
