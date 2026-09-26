@@ -1,0 +1,2 @@
+# ARM3-LOOP round 2, seed 3 (cumulative): round 1 scored 1 right of 9; keep the/and-of swapped, re-permute the rest by adjacency
+69=the, 45=of, 21=and, 3=that, 93=in, 82=to, 41=a, 91=is
