@@ -900,3 +900,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T16:36Z	session_01NKnuGZhQg4tAKTFs4UE1Wj	bSALI	done 2.05 D (get_session), ledgered, retitled ARCHIVED, archived by 7h	Salviati irregular non-test; syllabary ladder closed
 2026-09-26T16:36Z	session_014Xv2JvWBK3fDvJSHjuBjfM	bMALS	done 7.86 D- (2.6x cap, get_session), ledgered, retitled ARCHIVED, archived by 7h	malsburg spans reconciled, 0 consistent-word codes
 2026-09-26T16:35Z	session_01XZHcdzKjw1iCZzqUye54BK	retrospective u (Sonnet, cap 10)	12 rows since retro t; file RETRO-2026-09-26i.md	brief 2026-09-26-parent-retrospective-u.md; parent 7h
+2026-09-26T16:53Z	pending	MAIL-PREP (Sonnet, cap 5)	six mailbox drafts as outreach/mailbox/*.json, addresses verified, CONTRIBUTIONS rows	brief 2026-09-26-parent-mail-prep.md; parent 7h
