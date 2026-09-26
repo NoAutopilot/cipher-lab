@@ -816,3 +816,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T09:45Z	session_01Q3t8YFL4NMLyvok91qRPyC	ARM-S1	done 10.51, ledgered D-, archived	
 2026-09-26T09:46Z	session_01NBEtgi4z5WS97fN6B9rUea	ARM-TR2 (Sonnet, cap 7)	frame 0033 + p1 L6-13 + crop check	brief 2026-09-26-lane-arm-tr2.md; LANE ARM
 2026-09-26T09:46Z	session_01VX4DHvjyXAbKVtnAt559SC	ARM-CONS1 (Fable, cap 15)	cycle-1 consolidator	brief 2026-09-26-lane-arm-consolidator-c1.md; LANE ARM
+2026-09-26T09:52Z	session_01KqZJfQMU9vwZPTbjHRzp7d	retrospective r	done 1.80, ledgered D, retitled ARCHIVED, archived by 7g	RETRO-2026-09-26f.md; RETRO-APPLY-R follows
+2026-09-26T09:52Z	session_01WgHYzK9A84hSmjnr9G7qen	LEARN-7	done 1.27, ledgered D, retitled ARCHIVED, archived by 7g	LEARN-2026-09-26-0906.md; items 1-3 handed to RETRO-APPLY-R
