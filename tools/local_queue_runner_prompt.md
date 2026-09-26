@@ -17,7 +17,12 @@ your browser:
    log in to archive.org, academia.edu, JSTOR or a library site with the owner's own accounts in the browser (owner's
    decision, 26 Sept 2026); never write a credential into any file, pull request or reply; return an archive.org loan
    when done; never bypass a captcha or block page; if a page blocks you, record `blocked: <what you saw>` as the
-   answer and move on. Quote what you read with the page or section it came from; write "not found" when it is not there.
+   answer and move on. Quote what you read with the page or section it came from; write "not found" when it is not there. A "no items"
+   answer from an image portal (Digital Bodleian, Gallica, a library's viewer) is not the answer on its own: open the
+   holding catalogue's own record for the shelfmark (for the Bodleian, the Archives and Manuscripts catalogue at
+   archives.bodleian.ox.ac.uk / marco.ox.ac.uk) and quote its availability flag ("Not available online" or the
+   viewer link) with the record's ark or URL -- that distinguishes "not digitised" from "search missed it"
+   (L19, 26 Sept 2026, PR 22).
    Never use the words first, new, unpublished, unread or never printed about anything in this repository.
 4. Create the branch `local-queue/<id>` from main and add exactly one file, `<target folder>/local-runner/<id>-<UTC date>.md`
    (the target folder is the row's target column; if it names two folders, use the first), whose first lines are:
