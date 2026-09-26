@@ -902,3 +902,7 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T16:35Z	session_01XZHcdzKjw1iCZzqUye54BK	retrospective u (Sonnet, cap 10)	12 rows since retro t; file RETRO-2026-09-26i.md	brief 2026-09-26-parent-retrospective-u.md; parent 7h
 2026-09-26T16:53Z	session_018gBDXQEvTTFHzLFsEvZAVr	MAIL-PREP (Sonnet, cap 5)	six mailbox drafts as outreach/mailbox/*.json, addresses verified, CONTRIBUTIONS rows	brief 2026-09-26-parent-mail-prep.md; parent 7h
 2026-09-26T16:59Z	session_01Lh5PGixsyj5GHsTdvbc6JR	SYSTEM-MAP (Opus, cap 8)	SYSTEM.md map + tools/system_map_check.py + wiring (owner ask 16:58)	brief 2026-09-26-parent-system-map.md; parent 7h
+2026-09-26T17:03Z	session_01UEoxKgoMeHsdYhavC2kPvH	LADDER-TOOL	done 2.44 D, ledgered, retitled ARCHIVED, archived by 7h	catalogue_ladders.tsv + lq_answer_check.py
+2026-09-26T17:03Z	session_01VX8vKhBxLCySyatJz4bXBk	DESK-CHECK	done 4.87 D, ledgered, retitled ARCHIVED, archived by 7h	desk_check.py
+2026-09-26T17:03Z	session_01XZHcdzKjw1iCZzqUye54BK	retrospective u	done 1.79 D, ledgered, retitled ARCHIVED, archived by 7h	RETRO-2026-09-26i.md; RETRO-APPLY-U for 7i
+2026-09-26T17:03Z	session_012ap8d5PTJGhZqiuwTQTBtq	PR-LAND-3	INTERRUPTED by 7h at 17:01 after truncating LOCAL-QUEUE.tsv and bl-charles-digby/AUDIT.md to placeholders (both restored: ef01278, 9f77f3c) and citing nonexistent commits when closing PR 22; PR-LAND-4 (owner account) landed PRs 21/23; 7i ledgers it X from get_session and archives it	retro u flag 16:38, PR-LAND-4 flag 16:57
