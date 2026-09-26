@@ -2063,8 +2063,8 @@ e.g. 5 vs 8 by hook-vs-double-loop, 1 vs 2 by straight-vs-curved stroke, 3 vs 7 
 
 | page/line/pos | A | B | settled | note |
 |---|---|---|---|---|
-| p1_r04 pos27 | (none) | 9 | **9** | passB confirmed: a small "9" really is written after "25," at the extreme right margin (`row3_rightedge2.png`); passA's crop simply stopped one token short, nothing on a page fold |
-| p1_r04 pos12 | 51 | 81 | **81** | passB confirmed; glyph matches the unambiguous "81" three tokens later on the same line |
+| p1_r04 pos27 | (none) | 9 | **9** | passB confirmed: a small "9" really is written after "25," at the extreme right margin (`ax2_4612/crops/p1_r04_pos27_9.jpg`); passA's crop simply stopped one token short, nothing on a page fold |
+| p1_r04 pos12 | 51 | 81 | **81** | passB confirmed; glyph matches the unambiguous "81" three tokens later on the same line (`ax2_4612/crops/p1_r04_pos12_81.jpg`) |
 | p1_r05 pos21 | 73 | 13 | **13** | passB confirmed |
 | p1_r06 pos18 | 74 | 34 | **34** | passB confirmed |
 | p1_r09 pos5 | 28 | 22 | **22** | passB confirmed |
@@ -2073,10 +2073,10 @@ e.g. 5 vs 8 by hook-vs-double-loop, 1 vs 2 by straight-vs-curved stroke, 3 vs 7 
 | p1_r10 pos25 | 38 | 88 | **38** | passA confirmed (last token before the paragraph-end dash) |
 | p1_r22 pos20 | 34 | 84 | **34** | passA confirmed |
 | p1_r22 pos22 | 23 | 28 | **23** | passA confirmed |
-| p1_r23 pos7 | 130 | 150 | **150** | passB confirmed (rounded "5" loop, distinct from the "3" in the neighbouring "138") |
+| p1_r23 pos7 | 130 | 150 | **150** | passB confirmed (rounded "5" loop, distinct from the "3" in the neighbouring "138"; `ax2_4612/crops/p1_r23_pos7_150.jpg`) |
 | p1_r26 pos7 | 51 | 81 | **51** | passA confirmed (open "5" hook, distinct from the "8" double-loop next to it) |
 | p1_r26 pos8 | 34 | 84 | **84** | passB confirmed |
-| p1_r33 pos22 | 109 | =Wesel | **=Wesel** | passB confirmed: this is a genuine cursive **word**, not a numeral -- a tall looping ascender, no digit shapes; consistent with Wesel, a Rhine town, a plausible place-name in this military correspondence. passA misread a word as a number. |
+| p1_r33 pos22 | 109 | =Wesel | **=Wesel** | passB confirmed: this is a genuine cursive **word**, not a numeral -- a tall looping ascender, no digit shapes; consistent with Wesel, a Rhine town, a plausible place-name in this military correspondence. passA misread a word as a number. (`ax2_4612/crops/p1_r33_pos22_wesel.jpg`) |
 | p1_r35 pos22 | 33 | 37 | **33** | passA confirmed (two matching "3" loops) |
 | p1_r36 pos4 | 51 | 81 | **51** | passA confirmed |
 
@@ -2137,8 +2137,13 @@ being a clean pass/fail on its own.
 **Verdict for unit 2: gate not met.** Per the brief, unit 3 (key-seeded anneal) runs next.
 
 **Unit 3: key-seeded anneal.** `tools/homophonic_anneal.py --init KEY.tsv` added (start the anneal from a
-given sign->letter map instead of a random one; default behaviour unchanged when `--init` is omitted),
-offline test `tools/tests/test_homophonic_anneal_init.py`.
+given sign->letter map instead of a random one; default behaviour unchanged when `--init` is omitted, checked
+against the pre-existing `tools/tests/test_homophonic_anneal.py`, which still passes unchanged). Offline test
+`tools/tests/test_homophonic_anneal_init.py` (7 checks: `load_init_key`'s NULL/multi-letter/case folding, an
+`iters=0` sanity check that `--init` actually seeds the returned key rather than being silently ignored, `--fix`
+overriding `--init` on a shared sign, a missing/invalid init value falling back to a valid random letter, `init=
+None` matching `init={}` byte-for-byte, `anneal_noisy` accepting `init` the same way, and one end-to-end CLI
+run). Both tests pass.
 
 ## AX2-BLANKS: codes 156 and 182, contexts and 7206 (26 Sept 2026, LANE AX2)
 
@@ -2275,3 +2280,50 @@ ae2b5a1506e9d4486 (p4).
 Files: `decipherment_7206.txt`, `ciphertext_7206.tsv`, `key_7206.tsv`, `ax2_blanks/build_ciphertext_7206.py`,
 `axcomp/{pairs_7206.tsv,align_7206.tsv,rawkey_7206.tsv,compare_7206.tsv}` (via `axcomp/run.sh 7206`, which this
 worker did not modify). `key_full.tsv`, `key.tsv`, `names.tsv` untouched.
+
+**Matched control first (rule 3), gate written here before the run:** "5811's real ciphertext (a letter
+key_full reads correctly), cut to 4612 v3's N of value-1-120 numerals (833), annealed from key_full with a
+random 20 percent of codes 1-120 reassigned to a different letter, 3 seeds (each perturbs its own fresh 20
+percent); the control recovers >= 0.90 of 5811's key_full token reading in every seed, or the target does not
+run (family_run.py's own CONTROL BELOW GATE convention)." `ax4612tr/anneal_control.py` (order-3 plain `Model`,
+the fr16 judge corpora, restarts=8, iters=40000, matching `tools/families/homophonic.py`'s own defaults):
+
+```
+5811 cut: N=833 signs, K=96 distinct
+seed 1: perturbed 24/120 codes, best score -1887.9, recovers 609/833 = 73.1% of key_full's token reading
+seed 2: perturbed 24/120 codes, best score -1897.4, recovers 536/833 = 64.3% of key_full's token reading
+seed 3: perturbed 24/120 codes, best score -1889.3, recovers 602/833 = 72.3% of key_full's token reading
+
+GATE: all 3 seeds recover >= 0.90? False (shares: [0.731, 0.643, 0.723])
+```
+Checked this was not simply under-converged before accepting the negative: re-ran seed 1 alone at 150000 iters
+(3.75x) -- 655/833 = 78.6%, an improvement over 73.1% but still 11.4 points short of the 90% gate. **CONTROL
+BELOW GATE: the target (4612 v3) was not run.** At N=833/K=96, this order-3 fr16 anneal cannot reliably repair
+a key that starts only 20 percent wrong, so a run on 4612 (where the true key, if any, is completely unknown)
+would not be informative regardless of what it found -- exactly the failure mode rule 3 exists to catch before
+a numeric result gets reported as a negative on the target. `HYPOTHESES.md` row appended by hand (not one of
+`family_run.py`'s registered families) with both the per-seed numbers and the 150000-iter recheck.
+
+**Result for AX2-4612 as a whole.** Unit 1 settled all 16 open numerals in `ax4612tr/settle.tsv` against the
+image directly (`ciphertext_4612_v3.tsv`, 833 value-1-120 numerals, up from v2's 819). Unit 2's word-share/
+judge gate under `key_full.tsv` is **not met** (70.7% vs a required 79.2%, though clearly above the 60.6%
+shuffle-max floor) -- v3 is not a reading under key_full's design as a straight substitution. Unit 3's
+key-seeded anneal could not be run on 4612 at all because its own matched control (a real, correctly-keyed
+letter started 20 percent wrong) could not be repaired back above 64-79% by this search, well short of the
+90% gate -- **not a test of 4612**, not a negative on it either. **Verdict: candidate not reached; 4612 stays
+`partial`**, no reading claimed, no token graded (rule 4 N/A). The settled v3 transcription and the word-share
+gap (70.7% vs 93.2% for a real letter at this N) are themselves worth carrying forward: a successor with more
+anneal search budget, a different (larger-K-tolerant) design, or fresh eyes on the 154 still-unsettled
+clear-word disagreements could make more of this than this box did. Novelty not classified (rule 10, out of
+scope -- no reading exists to classify). No `flag: 4612 candidate ready for re-derivation` line is written,
+per the brief, since no reading was produced.
+
+Files: `ax4612tr/{build_v3.py,word_share_check_v3.py,anneal_control.py,decode_5811_cut833.json,
+ciphertext_5811_cut833.tsv,reading_5811_cut833.txt,reading_5811_cut833_tokens.tsv,settle.tsv}`,
+`ciphertext_4612_v3.tsv`, `decode_4612_v3.json`, `reading_4612_v3.txt`, `reading_4612_v3_tokens.tsv`,
+`ax2_4612/crops/{p1_r04_pos27_9.jpg,p1_r04_pos12_81.jpg,p1_r23_pos7_150.jpg,p1_r33_pos22_wesel.jpg}` (150 KB
+total, the four crops cited above; `images_wv2/crops_4612` itself untouched, per the brief),
+`HYPOTHESES.md` (appended), `tools/homophonic_anneal.py` (`--init` added), `tools/tests/
+test_homophonic_anneal_init.py`, this section. `key_full.tsv`, `key.tsv` and `key_4612.tsv` (not created --
+no key change to report) untouched. No network requests (all images and corpora already on disk). No
+subagents (all crop-reading and anneal work done directly by this worker). cost: see the lane ledger.
