@@ -2,7 +2,7 @@ LANE AX AX-NAMES2 -- lodewijk-van-nassau-1573-74: merge names.tsv into key_full.
 
 Read NOTES.md section "AX-NAMES" (01:16 UTC) in full, names.tsv, axnames/*.
 
-Orchestrator's decision (01:45 UTC 26 Sept 2026, written before any step-4 run; paste it verbatim into your section):
+Orchestrator's decision (01:42 UTC 26 Sept 2026, written before any step-4 run; paste it verbatim into your section):
 "AX-NAMES' held-out gate could not fail for a null-heavy map (rule 3 ceiling warning), so it is replaced, not relaxed, by three gates set per class. (a) Word/name codes whose value is read from a contemporary interlinear gloss (5550, 5557) or printed by Groen at that very cluster are key-source readings (rule 4: H for gloss, C for print-at-cluster), not aligner output; they merge without an aligner control: 153, 161, 171, 202, 336, 339, 350 (gloss), 154, 200 (print at the 5797 cluster). Aligner-only word codes merge only at C with >=2 agreeing observations (223 Harlem); every single-observation word code stays M and out of key_full. (b) NULL codes merge if they have >=4 empty observations and 0 contradicting (false-null rate 0.18^4 = 0.1%, AX-NAMES' diagnostic); 139, 140, 142 (2 obs) stay out. (c) key.tsv conflicts 123, 128, 136 (key.tsv M values vs 13/15/8 NULL observations): key_full takes NULL with a note; key.tsv itself stays unchanged. Before merging, re-run the known-answer check on 4613/4615 (occ_sib) with key_full: every key.tsv C letter there must still decode as before (0 regressions) -- if any regresses, stop and flag."
 
 Steps.
