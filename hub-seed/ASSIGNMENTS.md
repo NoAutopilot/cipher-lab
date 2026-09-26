@@ -886,3 +886,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T14:33Z	session_01CbcHcbkYKV5HRKwBW4w7aq	LANE ARM2 orchestrator	idle-standing on ASKS 66 at 13:45, 5.05 by get_session (ledger row edited from 3.67), archived by 7h	outreach/armstrong-madison-editors.md draft AUDIT-gated
 2026-09-26T14:32Z	session_01XqjQEcUk24M3NcMvGsJwv9	RETRO-APPLY-T (Sonnet, cap 6)	apply RETRO-2026-09-26h.md proposals 3-5; verify 1-2 landed via RETRO-APPLY-LEARN4	brief 2026-09-26-parent-retro-apply-t.md; parent 7h
 2026-09-26T14:32Z	session_011A4Fqfk4uGDijwcC83mYkp	LANE V10 orchestrator (Opus, cap 50)	verifiers and rolling QA, V9 successor; QA12 first, three-hour cadence while breadth-only	brief 2026-09-26-lane-v10-orchestrator.md; parent 7h
+2026-09-26T14:57Z	session_013qtxQWPbwG9xLe5BtdjeyN	bSALR2 (Sonnet, cap 4)	done 2.78 D (get_session), retitled ARCHIVED, archived	DSN r24 + V2 negatives at 6.4%, irregular not run; LANE B11
+2026-09-26T14:57Z	session_01Nmvcob7Nzx6ugFd5B3QoDS	LANE B11 orchestrator	closed, about 4.3 provisional, 4 workers 15.40, retitled ARCHIVED; parent archives	handoff STATUS.md LANE B11 handoff
