@@ -34,3 +34,4 @@ column names one account only is a key the other account still lacks. No worker 
 | CORE_API_KEY | CORE open-access full text (Bearer) | verifiers | CLAUDE.md optional keys, 25 Sept 2026 | set |  |
 | NARA_API_KEY | NARA catalog API (x-api-key; by email per NARA's README) | scouts (koehler-1944 RG 65 file) | QUEUE.md free-key gap, 24 Sept 2026 | requested | |
 | CIPHERLAB_ACCOUNT | account label for this register (`ytbiz` or `owner`), not a secret | tools/key_probe.py | parent 7d, 25 Sept 2026, ASKS 63 | requested | |
+| CIPHERLAB_MAIL_USER | project mailbox address (cipherlab.research@gmail.com) for sending outreach drafts at status ready and reading replies, owner's decision 26 Sept 2026; IMAP/SMTP via a tools/mail.py to be written | tools/mail.py | parent 7h, 26 Sept 2026, ASKS 70 | requested | |
