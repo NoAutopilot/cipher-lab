@@ -854,3 +854,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T11:34Z	session_01L5aKfjboKCFPb2GkeoExiu	ARM-LIV (Sonnet, cap 5)	Livingston-to-Madison letters 1807-09, 5 Feb 1808 first	brief 2026-09-26-lane-arm2-liv.md; LANE ARM2
 2026-09-26T11:40Z	session_01D9c6E8CHv4h2WXg5t725KG	bMALN	done 2.24, ledgered D, retitled ARCHIVED, archived by LANE B10	block_homophonic + units=syl FAIL with passing controls; malsburg stays partial
 2026-09-26T11:40Z	session_011h4V9WnAU4tmczQ19LEX1F	LANE B10 orchestrator	closed 11:40, self-ledgered 3.60 provisional, retitled ARCHIVED; parent archives	all four brief jobs run
+2026-09-26T12:01Z	session_01R95PtsBBhjZBjAnveu1XyQ	V9-MOR	done 5.28, ledgered D, archived (AUDIT.md: N0, key period, text known)	
+2026-09-26T12:01Z	session_01E7TxKjt1MmPMsu3pemXRcN	V9-QA10	done 2.85, ledgered D, archived (QA/2026-09-26-1127.md, 0 flags)	

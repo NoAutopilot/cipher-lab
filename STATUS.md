@@ -264,13 +264,17 @@ orchestrator USD 10.21. No live workers, no pending check-in. Rate limit `allowe
 
 ## LANE V9 handoff (session_01WNitVVGthGvdkHoyXGzkDw), 26 September 2026, live
 
-Opened 07:33 UTC by parent 7f (7g since 07:41); brief `.claude/briefs/runs/2026-09-26-lane-v9-orchestrator.md`. Orchestrator usage 1.26 at 08:05 (get_session). Workers 3, USD 7.14, ledgered D and archived. **Live at 11:27:** V9-MOR (Opus, session_01R95PtsBBhjZBjAnveu1XyQ): verifier for rah-morillo-1817 item 3 (NX reading ready 10:58, key period from the leaf's own gloss, re-derivation NX-MOR3 0 diffs); V9-QA10 (Sonnet, session_01E7TxKjt1MmPMsu3pemXRcN, window from 09:41).
+Opened 07:33 UTC by parent 7f (7g since 07:41); brief `.claude/briefs/runs/2026-09-26-lane-v9-orchestrator.md`. Orchestrator usage about 3.0 at 12:02. Workers 5, USD 15.27 (get_session), all ledgered D and archived. **No live workers at 12:02.**
 
 | job | outcome |
 |---|---|
-| 1 rolling QA | V9-QA8 (Sonnet 2.44, QA/2026-09-26-0735.md, ~30 items): QA7's 3 findings fixed; szembek per-leaf controls and hessen-1824 partial+NEAR pass; 1 flag to LANE ARM (ARM-A2 en18 FAILs lack the per-fold spread caveat). V9-QA9 (Sonnet 3.13, QA/2026-09-26-0942.md, 37 items, 2 flags: ARM-A2 en18 caveat still open (ARM cycle 1 closed 10:19 -> parent); esp318-sicilia-1503 check-solved Bergenroth search lacks a live control hit (LANE NX)). QA10 about 11:45, window from 09:41. |
-| 3 lodewijk 5797 p6_spot4 | V9-NA172-3 (Opus 1.57): AUDIT.md A4 -- **withdrawn from classification** (A3's N2 withdrawn): 172 has three period values (4614 Jean, 7206 Lumbres, 5801 Louis), none licensed for 5797; A4.3 safe sentence replaces A3.3; SO row and prompt noted. status.json carries the withdrawal (parent 7g, 08:12). |
-| 2, 4, 5 | No reading ready to V9 yet; Mercy closer waits on the Lonchay-Cuvelier IV page read; Armstrong verifier waits on LANE ARM's rule-7 re-derivation. |
+| 1 rolling QA | V9-QA8 (Sonnet 2.44, QA/2026-09-26-0735.md, 1 flag); V9-QA9 (Sonnet 3.13, QA/2026-09-26-0942.md, 2 flags); V9-QA10 (Sonnet 2.85, QA/2026-09-26-1127.md, 45 items, 0 flags, both QA9 flags verified fixed). QA11 due about 13:30, window from 11:27; brief = copy of lane-v9-qa10.md with the window changed. |
+| 2 verifiers | rah-morillo-1817 item 3: V9-MOR (Opus 5.28) **N0, key period, text known** -- printed 2021 (Bolivar, Gonzalez Segovia and Anzola, *Portuguesa en Carabobo* p.37 n.100); safe sentence AUDIT.md l.133. Grades: AUDIT C 86 / M 5 / U 6; decode --check still C 91 / U 6 (key files unchanged; a solver job applies the finer split). No second audit (N0). |
+| 3 lodewijk 5797 p6_spot4 | V9-NA172-3 (Opus 1.57): AUDIT.md A4, **withdrawn from classification**; status.json carries it (7g 08:12). |
+| 4 Mercy closer | still waits on the Lonchay-Cuvelier IV page read (owner machine). |
+| 5 Armstrong | no reading; LANE ARM2 live (cycle 2). Verifier only after a reading-ready with a rule-7 re-derivation. |
+
+Lesson: V9-MOR found the Morillo plaintext in print through tools/print_check.py's global IA pass on three decoded phrases, which the solver had not run before posting reading ready -- a lane should run print_check on decoded phrases before the reading-ready line.
 
 ## LANE V8 handoff (session_01YRuw3TCf7d1w85DLmYNnw4), 26 September 2026, live
 
