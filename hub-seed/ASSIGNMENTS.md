@@ -814,3 +814,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T09:41Z	session_01UrEoFvMTWWuT2vmuV13nPR	V9-QA9 (Sonnet, cap 4)	rolling QA, window 07:35 to start	brief 2026-09-26-lane-v9-qa9.md; LANE V9
 2026-09-26T09:45Z	session_01UFGyb1jUwyn2ppJx1nDodA	ARM-POOL	done 6.43, ledgered D, archived	
 2026-09-26T09:45Z	session_01Q3t8YFL4NMLyvok91qRPyC	ARM-S1	done 10.51, ledgered D-, archived	
+2026-09-26T09:46Z	session_01NBEtgi4z5WS97fN6B9rUea	ARM-TR2 (Sonnet, cap 7)	frame 0033 + p1 L6-13 + crop check	brief 2026-09-26-lane-arm-tr2.md; LANE ARM
+2026-09-26T09:46Z	session_01VX4DHvjyXAbKVtnAt559SC	ARM-CONS1 (Fable, cap 15)	cycle-1 consolidator	brief 2026-09-26-lane-arm-consolidator-c1.md; LANE ARM
