@@ -40,11 +40,14 @@ Finding: the mirror costs money and causes collisions. Today: nine LEARN passes 
 retrospectives and applies, two landing workers on the same pull requests, and two verifier arrangements.
 About a quarter of the day's spend was accounts learning from and checking each other.
 
-Change: specialise instead of mirror. One account runs SOLVE (lanes on targets, verifiers for the other
-account's readings); the other runs SUPPLY (scouting capped at one index a day, check-solved filters, runner
-PR landing, QA, retrospectives, tools, outreach fact checks). Shared files stay shared. One LEARN pass a day,
-alternating; one retrospective a day. The parents keep their hourly check-ins with distinct duty lists in
-parent.md. Proposed to parent 7i in ROOM; applied to parent.md when both parents agree.
+Change: specialise instead of mirror, without moving anything in progress (the owner's condition, 26 Sept
+18:1x). Every lane keeps its targets to completion on the account that started it. From now on the other
+account is SOLVE (it holds the deep target work and the verifier lineage) and the owner account is SUPPLY
+(scouting capped at one new index a day, check-solved filters, runner PR landing, QA, retrospectives, tools,
+out-checks, partner outreach); LANE WC and LANE VO1, opened on the owner account tonight, run to completion as
+exceptions. New target lanes from partner lists go to SOLVE by default. One LEARN pass and one retrospective a
+day, both on SUPPLY. Shared files stay shared; the parents keep hourly check-ins with distinct duty lists.
+Proposed to parent 7i in ROOM; applied to parent.md when both parents agree.
 
 ## (c) Quitting too early
 
