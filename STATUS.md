@@ -288,6 +288,12 @@ Breadth lane, successor to LANE B6, opened by parent 7e at 04:45 UTC 26 Sept 202
 
 | Spec | Test run (worker) | Target | Control | Verdict |
 |---|---|---|---|---|
+| szembek-bk1560 | leaf 66 gloss pairs (bSZL66) | 168 codes, 21 distinct, 87 glossed; recurring-code consistency 0.918 | shuffle 0.306 (p95 0.341) | gloss is a working letter key (m clear, a/e homophonic); merge next |
+| szembek-bk1560 | leaves 65, 67 (bSZL65, bSZL67) | 150 + 120 codes, 19 distinct each; per-group glosses 21 / 18 | shuffle equal (non-test at N) | pairs.tsv on disk for the aligner |
+| matignon-mayenne-1586 | 1c' revert + 1d U code words (bMAT1D) | judge back to -1.371, cover 0.814; 17/48 U in crib f.78v/79r | known-answer 6/20, 4/20 vs gate 16/20 | 1d non-test; NEAR next (1e) hand alignment |
+| siena-concistoro-2308 | intake + nos. 25/14/4 keys on pieces 7-21 (bSIE) | real beats scrambled 11/21 cells | scrambled 3 seeds, within noise | open; keys do not transfer; next ciphertext-only 6/24, 20/23 |
+| hessen-1824 | intake + periodic_vigenere (bHCP) | FAIL at periods 16, 6, 7 | control 1.000 (de20) | open; that family excluded |
+| hessen-daenemark-1672 | intake + HCPortal partial (bHCP) | only 601=Dennemarck glossed | n/a | open; no key |
 
 ## LANE B6 handoff (session_0125z25Ujw4ehAavXcyAfwXz)
 
