@@ -1,11 +1,14 @@
 blocked
 
-Check-solved (this worker, NX2-GATE, 26 Sept 2026): CSP Spain vol.3 part 1 (Gayangos, 1525-26) and part 2
-(1527-29) opened at British History Online (index pp.1101-1102 "Soria, Lope de", pp.1095-1096 "Sanchez,
-Alonso") -- both correspondents are extensively calendared there across 1525-1529, but this worker did not
-locate calendar entries matching the five exact dates below or read whether any entry states a contemporary
-decipherment, so the edition is confirmed reachable but not yet checked page-by-page for these items; treated
-as `blocked` per the intake gate rather than `open`, pending that page-by-page read.
+Check-solved verdict (NX2-GATE2, 26 Sept 2026, supersedes NX2-GATE's sentence; edited by the LANE NX2 orchestrator
+16:05 UTC): CSP Spain vol.II (Bergenroth, archive.org bub_gb_ZoY9AAAAcAAJ + British History Online) and vol.III parts 1-2
+(Gayangos, archive.org calendarofletter0003pasc, calendarorleters0003vari), whole volumes grepped for Soria, Sanchez and the
+five dates, every hit read: items 1 (No.212), 3 (No.399) and 5 (No.462 of pt.2) are calendared with their cipher passages
+in English translation ("Contemporary deciphering" for 1 and 3), so their text is known and they are dataset rows at most;
+items 2 (Soria, 16 Jun 1526) and 4 (Sanchez, 17 Dec 1524) are not calendared. Both solver repositories (fresh clones) and
+DECODE's catalogue have none of the five. The 1931 BRAH Soria catalogue (tomo 98 pp.363-416) is HathiTrust search-only and
+unread. Status `blocked`: no page image of any item is online (bibliotecadigital.rah.es has no record), REQUEST.md is the
+only route. Details in the NX2-GATE2 section below.
 
 # Lope de Soria (Genoa/Mirandola) and Alonso Sánchez (Venice) to Charles V, 1524-1528 — RAH Colección Salazar y
 Castro (Madrid)

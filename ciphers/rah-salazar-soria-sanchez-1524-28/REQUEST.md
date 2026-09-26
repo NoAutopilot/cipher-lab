@@ -24,8 +24,8 @@ any of them.
 
 | Shelfmark | Inv. no. | Correspondent | Date | Place | Why |
 |---|---|---|---|---|---|
-| A-33, ff.72-74 | 4670 | Alonso Sánchez → Charles V | 17 Dec 1524 | Venice | Not calendared in CSP Spain vol.II (Bergenroth) — checked page-by-page for December 1524, no entry on this date or for this correspondent all month. Genuinely unread anywhere found. |
-| A-37, ff.428-429 | 5540 | Lope de Soria → Charles V | 16 Jun 1526 | Genoa | Not calendared in CSP Spain vol.III pt.1 — checked page-by-page for 13-17 June 1526, no Soria entry (only Caracciolo's, a different, already-deciphered letter, on the 16th). Genuinely unread anywhere found. |
+| A-33, ff.72-74 | 4670 | Alonso Sánchez → Charles V | 17 Dec 1524 | Venice | Not calendared in CSP Spain vol.II (Bergenroth) — checked page-by-page for December 1524, no entry on this date or for this correspondent all month. No printed decipherment found by the searches logged in NOTES.md. |
+| A-37, ff.428-429 | 5540 | Lope de Soria → Charles V | 16 Jun 1526 | Genoa | Not calendared in CSP Spain vol.III pt.1 — checked page-by-page for 13-17 June 1526, no Soria entry (only Caracciolo's, a different, already-deciphered letter, on the 16th). No printed decipherment found by the searches logged in NOTES.md. |
 
 **(ii) A-42, ff.441-442 — a period decipherment sheet, same legajo, cheap to add.** The Índice's own entry
 (inv. 6501) reads "Texto descifrado de los párrafos en cifra de los tres documentos anteriores: Cartas de
