@@ -107,6 +107,16 @@ Brief .claude/briefs/runs/2026-09-26-lane-ax-orchestrator.md; COMMON 2026-09-26-
   to Groen (key ours, 5799's text N1) and tries it on 4612 and the 5549 body with shuffled-key controls; a block-constrained
   Opus cryptanalysis of 4612 via family_run.py only if that fails.
 - **Workers (dispatched 00:20 UTC, Sonnet):** AX-5797 session_01RfSNoU45Mqmh5Gk8gQjPGP (box 60); AX-5799 session_01AeQexCRuXtPoVQ3wFxrK6h (box 75); AX-BRO3 session_01UY47E7pTTfCD7tVDcrtYJy (box 75); AX-STEV session_01V91nNBXmbzPKu39Rs3Sojb (box 40).
+- **Round 1 results (00:31-00:42 UTC, all four stopped well inside their boxes).** AX-5797: key.tsv reads 5797 (six control
+  words beside the gaps, 0/120 shuffled hits), but all six of Groen's missing-subject spots sit on codes 124-217 the table has no
+  row for -> AX-NAMES. AX-5799: key_5799 78 codes (5 C) from p1 only; 4612 and the 5549 body fail a run-length gate whose control
+  is invariant under shuffling, so this is NOT a negative on 4612 (rule 3); 4612 stays open for a block-constrained Opus run after
+  AX-NAMES. AX-BRO3: 80 more thin-code observations, 11 agree / 0 contradict / 69 undecidable, percentile unchanged 5.0; NEAR row
+  updated (next: re-segment the 34 drifted appendix entries, not dispatched). AX-STEV: 3689 and 3813 printed in clear in Stevens
+  1888 (text known); 3753, 3784 newly named and 3803 re-categorised, items 12 not 8, text-known 2/12; L16 done -> AX-STEV2.
+- **Round 2 (dispatched 01:0x UTC):** AX-NAMES (Opus, box 120): name codes >120 from 5810/5811/4503/5549 PS/5550-5557 glosses
+  against Groen, held-out control on 5811, then 5797 spots and 4610/4611/4616 U tokens. AX-STEV2 (Sonnet, box 50).
+- **Ledger:** AX-5797 10.09 D, AX-5799 4.14 D-, AX-BRO3 3.85 D, AX-STEV 3.21 D (21.29 dollars).
 - **For the parent:** nothing on the board yet from this lane.
 
 ## LANE ZX handoff (session_01MxueEQJUGF9PWJiYcVyvBM), 25 September 2026, 15:42-22:20 UTC (closed)
