@@ -31,9 +31,12 @@
   "control_samples": 100,
   "note": "Russian/Polish corpora are not on disk; add them as 'corpora' when fetched",
   "corpora": [
-   "tools/data/ru19_lat/s3.txt.gz"
+   "tools/data/pl19/pg27178_Na_mier_1863.txt.gz",
+   "tools/data/pl19/pg34635_Menazerya_ludzka.txt.gz",
+   "tools/data/pl19/pg6000_Ironia_Pozor_w.txt.gz",
+   "tools/data/pl19/pg8119_Sklepy_cynamonowe.txt.gz"
   ],
-  "corpora_note": "GOLD-KAL2, 26 Sept 2026: judge.corpora repointed unit by unit across the Russian transliteration schemes (tools/data/ru19_lat/, built this job from tools/data/ru19) -- the pairing of corpus and judge is the test (family_run.py reads judge.corpora, not --corpus). This replaces the earlier de20 (German, 1880-1940) pointer used for the 2-homophonic-de unit in cheap_test_done below, which is a historical record of what that unit actually ran, unaffected by this field's current value. Left here on the last scheme this job ran; see cheap_test_done for which scheme served which unit."
+  "corpora_note": "GOLD-KAL3, 26 Sept 2026: judge.corpora repointed to tools/data/pl19 (Polish prose, built this job) for the Polish homophonic units -- the pairing of corpus and judge is the test (family_run.py reads judge.corpora, not --corpus). This replaces GOLD-KAL2's Russian tools/data/ru19_lat/s3.txt.gz pointer, itself a historical record of what that job's last unit ran, unaffected by this field's current value. Left here on the last corpus this job ran; see cheap_test_done for which corpus served which unit."
  },
  "value": "moderate; 58 reader comments without a solution, but no machine run across the candidate languages is on record",
  "model": "Sonnet",
