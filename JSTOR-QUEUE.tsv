@@ -96,9 +96,9 @@ ciphers/rah-morillo-1817	"Morillo" AND "Herrera" AND 1820 AND (cifra OR cifrada 
 ciphers/rah-morillo-1817	"Romerito" AND (Bolívar OR Bolivar) AND (Guanare OR Barinas) AND 1820	2026-09-26	done 26 Sept 2026	candidate: La conducción de la guerra | Frédéric Spillemaeker | Plebe, caudillismo y cesarismo: Las guerras de Independencia en Nueva Granada y Venezuela (1789-1831) (book chapter) | 2026 | 245-330 | https://www.jstor.org/stable/jj.45369487.11. blocked: Opening the chapter (pp. 245-330) redirected to the book page with "Access through your school, college or institution" and no online page viewer, so whether it prints, calendars or discusses Herrera to Morillo, 7 November 1820, could not be determined.
 ciphers/rah-morillo-1817	"enemigos de Apure no se mueven"	2026-09-26	done 26 Sept 2026	no relevant hit (0 results, none about the letter)
 ciphers/rah-morillo-1817	"Romerito" AND "tres oficiales"	2026-09-26	done 26 Sept 2026	no relevant hit (0 results, none about the letter)
-ciphers/naf14913-rousseau-venice-1743	"Montaigu" AND "Rousseau" AND "Venise" AND (chiffre OR déchiffrement OR "dépêches")	2026-09-26	queued
-ciphers/naf14913-rousseau-venice-1743	"Correspondance diplomatique de Jean-Jacques Rousseau" AND "Dépêches de Venise"	2026-09-26	queued
-ciphers/berthier-napoleon-1812	"Berthier" AND "Neufchâtel" AND 1812 AND chiffre	2026-09-26	queued
+ciphers/naf14913-rousseau-venice-1743	"Montaigu" AND "Rousseau" AND "Venise" AND (chiffre OR déchiffrement OR "dépêches")	2026-09-26	queued	
+ciphers/naf14913-rousseau-venice-1743	"Correspondance diplomatique de Jean-Jacques Rousseau" AND "Dépêches de Venise"	2026-09-26	queued	
+ciphers/berthier-napoleon-1812	"Berthier" AND "Neufchâtel" AND 1812 AND chiffre	2026-09-26	queued	
 ciphers/berthier-napoleon-1812	"maréchal Berthier" AND "22 décembre 1812"	2026-09-26	queued	
 ciphers/hstas-osiander-1627	"Lukas Osiander" AND Diarium AND Württemberg AND Geheimschrift	2026-09-26	queued	
 ciphers/hstas-osiander-1627	"Diarium Rerum Wirtenbergicarum et Variarum"	2026-09-26	queued	
@@ -127,4 +127,4 @@ ciphers/stas-waldburg-1653	"Truchsessin Maria Walburga" AND Essen	2026-09-26	que
 ciphers/naf14913-rousseau-venice-1743	"Rousseau" AND "Montaigu" AND Venise AND déchiffrement	2026-09-26	queued	
 ciphers/naf14913-rousseau-venice-1743	"venitiens en faveur de la Reine de Hongrie"	2026-09-26	queued	
 ciphers/pro3055-clinton-1779	"Cornwallis" AND "Clinton" AND "York Town" AND 1781 AND cipher	2026-09-26	queued	
-ciphers/pro3055-clinton-1779	"Common cipher" AND Cornwallis AND Saberton	2026-09-26	queued
+ciphers/pro3055-clinton-1779	"Common cipher" AND Cornwallis AND Saberton	2026-09-26	queued	
