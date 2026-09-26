@@ -1,0 +1,67 @@
+book_nr	name	slug	chapters	raw_utf8_bytes	sha1	letters_after_fold	file
+1	Pradžia	pradzia	50	170493	6ddba6244936a15d5be8538617c7ccd5c201f1d1	125641	01_pradzia.txt.gz
+2	Išėjimas	isejimas	40	136446	0d0c591c45c087f0d183d08f9d331ed0b705556d	102198	02_isejimas.txt.gz
+3	Levitas	levitas	27	91133	30d31bfd00a5f20599529be125508e5b12d1a6e1	69029	03_levitas.txt.gz
+4	Skaičiai	skaiciai	36	128411	1b0c710e90733fbb7f41400148e3393c16f3800f	96533	04_skaiciai.txt.gz
+5	Pakartotinė Įstatymo	pakartotine_istatymo	34	113395	755fcb2576725cdfe5a0186530e9a3e081fbbda3	84925	05_pakartotine_istatymo.txt.gz
+6	Jozuė	jozue	24	76788	201b5f34857cd974f35a3463649c59570f5c167a	57490	06_jozue.txt.gz
+7	Teisėjai	teisejai	21	80171	2ec85aa74159f76d854fda3d422f22513b376e3a	59768	07_teisejai.txt.gz
+8	Rūta	ruta	4	10813	9ca4b66306a01dd4886f27ae7ac370c437612aa6	7861	08_ruta.txt.gz
+9	1 Samuelis	1_samuelis	31	111016	5c31a2022c1f054668e471c4fd1402affb5ad7c0	82307	09_1_samuelis.txt.gz
+10	2 Samuelis	2_samuelis	24	90720	9d79280a06599b661da3972dfca61d1dd683d9bf	67490	10_2_samuelis.txt.gz
+11	1 Karaliai	1_karaliai	22	107932	5f20fc5b95afb398315671fcf927b3f6e4bb093c	81100	11_1_karaliai.txt.gz
+12	2 Karaliai	2_karaliai	25	103207	71ee321a3e5ba4609e722822436d7e5f528c2979	77418	12_2_karaliai.txt.gz
+13	1 Kronikos	1_kronikos	29	93260	9b259a1bb215527ef35c6e79a4779e770e54a82d	70306	13_1_kronikos.txt.gz
+14	2 Kronikos	2_kronikos	36	117633	c85e29ad8f0f8a9a4dfab69fadd330a04cacfb12	89709	14_2_kronikos.txt.gz
+15	Ezdras	ezdras	10	32970	53809199f866bd7e0bbc982070e86bc2fb369712	25035	15_ezdras.txt.gz
+16	Nehemijas	nehemijas	13	46975	30847be21eb6cce326931fc48bf68b273c0454f7	35577	16_nehemijas.txt.gz
+17	Ester	ester	10	24599	6217dec28310430a4ebcec685047b310fafb98a9	18752	17_ester.txt.gz
+18	Jobas	jobas	42	79566	2544525cc8b9fcfd3a0172f080ca2e5698ea86d0	59663	18_jobas.txt.gz
+19	Psalmynas	psalmynas	150	197625	589e92fe7e51f52dcb8b22d2b7a22840798a9692	149087	19_psalmynas.txt.gz
+20	Patarlės	patarles	31	69457	5df8f2f33574ae21b01ec43344a59ae83b22fe38	53235	20_patarles.txt.gz
+21	Ekleziastas	ekleziastas	12	23379	8e485783dfba89c06f2ccc89ad612365d75f1840	17602	21_ekleziastas.txt.gz
+22	Giesmių giesmė	giesmiu_giesme	8	12397	61ec15dfa2243449afa12a9fc642272448324019	9400	22_giesmiu_giesme.txt.gz
+23	Izaijas	izaijas	66	157964	823f86edcf1c2c2e9ad7c174daf1b1085b6a8023	118544	23_izaijas.txt.gz
+24	Jeremijas	jeremijas	52	177609	40dca46ee40fe7a7ad365c3b5c490f951b34dc8c	132734	24_jeremijas.txt.gz
+25	Raudos	raudos	5	14585	c2472c4f1ef44f4859dc176db97a6ff17ee07be2	11071	25_raudos.txt.gz
+26	Ezechielis	ezechielis	48	155353	5e6b9b1c43f08ca25008ed998b7c75844f8fe09c	116003	26_ezechielis.txt.gz
+27	Danielius	danielius	12	52158	24694b359ea3403b21c2c6456f6c9ba702c961cd	39431	27_danielius.txt.gz
+28	Ozejas	ozejas	14	22820	c6b855ce5563ade42809c043d05d63a7db86de86	17077	28_ozejas.txt.gz
+29	Joelis	joelis	3	8730	644a64a169d6df6bd1c119c1ee1bfd8b6d1b6885	6595	29_joelis.txt.gz
+30	Amosas	amosas	9	18545	92da394d97ec1dfdeb8e3bbb0ed15ab438dfa9b6	13698	30_amosas.txt.gz
+31	Abdijas	abdijas	1	2629	a2854f76e9c2ca65244fc2388b8e18cdc60928d8	1958	31_abdijas.txt.gz
+32	Jonas	jonas	4	5741	51eee46b46de7bc13061ec5a1d36c2be01a2b4c8	4151	32_jonas.txt.gz
+33	Michėjas	michejas	7	13059	2fa096e98cf69fc584a355e3a6efb9312f9bb7bd	9857	33_michejas.txt.gz
+34	Nahumas	nahumas	3	5149	52b946027d3e96f7d0d9efe952c53528504a81d9	3868	34_nahumas.txt.gz
+35	Habakukas	habakukas	3	6302	72c76721eb816891532d2eba0ff9db45635264ef	4769	35_habakukas.txt.gz
+36	Sofonijas	sofonijas	3	6446	fd6f1e3ffa86fe6dceeb5882d2a622cdd2ede286	4878	36_sofonijas.txt.gz
+37	Agėjas	agejas	2	4974	264b13a5abb9d5318a3b71a164d425ec8c32fc89	3670	37_agejas.txt.gz
+38	Zacharijas	zacharijas	14	26017	f6bad355f6654f5de8a2f21161e27b15e9035b06	19163	38_zacharijas.txt.gz
+39	Malachijas	malachijas	4	7906	78d50bea49da853fbfef245980de63c6703686f9	5803	39_malachijas.txt.gz
+40	Matai	matai	28	113330	54846706b797184710f6d9d8fc0a747781225060	82687	40_matai.txt.gz
+41	Markas	markas	16	71235	150ae1124ab23c8d6df1d65ff4ce115e6c7a0cc6	51668	41_markas.txt.gz
+42	Lukas	lukas	24	120377	0789ea2dda5c6df9146d7c70f779fcc49c3b6055	88094	42_lukas.txt.gz
+43	Jonas	jonas	21	92729	dedf83314f6dbe7f0181aecfa49416fe25e3e8fe	66067	43_jonas.txt.gz
+44	Apaštalų darbai	apastalu_darbai	28	118725	7bde0e4c625664ef43647d1116aff6f8f46dd34a	88570	44_apastalu_darbai.txt.gz
+45	Romiečiams	romieciams	16	46543	a04514a01d62353b16773547417df9a1236103e3	35036	45_romieciams.txt.gz
+46	1 Korintiečiams	1_korintieciams	16	45192	1fef830e3f2e19627892c99f3f6202d23243cd90	34105	46_1_korintieciams.txt.gz
+47	2 Korintiečiams	2_korintieciams	13	29492	1623b62c5b00eadc43c41ebb9b8b86020b582ada	22232	47_2_korintieciams.txt.gz
+48	Galatams	galatams	6	15273	9ceaf066df0b57c0da35e11afa3f43859ce54cbd	11613	48_galatams.txt.gz
+49	Efeziečiams	efezieciams	6	14554	a5c630b316097be4ce0a6a90847e8c3ae323ac2a	11090	49_efezieciams.txt.gz
+50	Filipiečiams	filipieciams	4	10714	188526f49fe14d35f506b93406e944cff3595a4c	8163	50_filipieciams.txt.gz
+51	Kolosiečiams	kolosieciams	4	10251	01b7256c67fa5ea69188944894ca3ec68c6e3843	7831	51_kolosieciams.txt.gz
+52	1 Tesalonikiečiams	1_tesalonikieciams	5	9563	ef08b75f2fb8661a75176b99cb0bdba2a2a44cb4	7232	52_1_tesalonikieciams.txt.gz
+53	2 Tesalonikiečiams	2_tesalonikieciams	3	5153	4b2d6827584a7e49ea3413321880399a93dc9e8a	3915	53_2_tesalonikieciams.txt.gz
+54	1 Timotiejui	1_timotiejui	6	12243	52f99bb732dcbf6d3d490070f9eb72e1ebf17e0d	9406	54_1_timotiejui.txt.gz
+55	2 Timotiejui	2_timotiejui	4	8440	282ab62f99d312dcbb9778685be4181d389cba0e	6459	55_2_timotiejui.txt.gz
+56	Titui	titui	3	5030	c0f1fa8750b27e2576e3e58281cecdcf95b0952a	3854	56_titui.txt.gz
+57	Filemonui	filemonui	1	2230	182a502439a31cbafdc7e94fd4f60d4e8de56782	1692	57_filemonui.txt.gz
+58	Žydams	zydams	13	34618	30996c9a1f889492e417e7c3cdbec9791f9dc6ab	26153	58_zydams.txt.gz
+59	Jokūbas	jokubas	5	11741	72d985a6de223ccaba4034f0ffc4fdbf433db46a	8839	59_jokubas.txt.gz
+60	1 Petras	1_petras	5	12189	14baf3a8ce3fff6f8884466b587d0825a3c19ce5	9302	60_1_petras.txt.gz
+61	2 Petras	2_petras	3	7690	588686521397118a5797d9925864335d2b164ac6	5903	61_2_petras.txt.gz
+62	1 Jonas	1_jonas	5	11949	be0d8d94d02b5c6946c23b4da1d840e4e0b4941f	8832	62_1_jonas.txt.gz
+63	2 Jonas	2_jonas	1	1514	7a724d062202cab22a58b82d5538f47771e4cbf7	1129	63_2_jonas.txt.gz
+64	3 Jonas	3_jonas	1	1445	3ead272811b05daaad6ba4c7a3af058b5209684d	1109	64_3_jonas.txt.gz
+65	Judai	judai	1	3385	ff40dc600c138645d756f696993e3506612eec07	2602	65_judai.txt.gz
+66	Apreiškimas	apreiskimas	22	57513	39136c4727fc71005211c8c73b18f7d7633c69d5	42771	66_apreiskimas.txt.gz
