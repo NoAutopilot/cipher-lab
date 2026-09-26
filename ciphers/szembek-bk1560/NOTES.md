@@ -1,4 +1,8 @@
-open
+solved
+Reading ready (bSZM, 26 Sept 2026): all three leaves decoded at grade C from the manuscript's own period
+interlinear gloss (letter-per-code key, pooled 3-leaf consistency 0.878 vs shuffle 95th pct 0.204). See
+"Merge (bSZM, 26 Sept 2026)" below. Novelty not yet classified -- needs a verifier's AUDIT.md (rule 10); this
+job does not classify novelty.
 Checked 26 Sept 2026 by bSZEM: this worker read the item's own three DjVu page images directly, full-page (leaves
 foliated 65-67, publication/430427/edition/343124, fetched from wbc.poznan.pl and read from page images).
 Bourdeau CATALOGUE.md #348 (fresh shallow clone, HEAD at clone time) says "Free
@@ -266,3 +270,70 @@ all three leaves, per the spec's own fallback note.
 
 Files: `leaf67/pairs.tsv`, `leaf67/groups.tsv`, `leaf67/crops/*` (45 files incl. debug + manifest). No network
 (image already on disk from bSZEM's fetch); 0 requests to any host this job.
+
+## Merge (bSZM, 26 Sept 2026)
+
+Concatenated `leaf65/pairs.tsv` + `leaf66/pairs.tsv` + `leaf67/pairs.tsv` into `pairs.tsv` (61 rows) and
+`ciphertext.txt` (cipher_raw lines in leaf order, leaf:line ids, as transcribed).
+
+**Two key routes, compared.** (a) Direct: `key_direct.tsv`, each code's first-of-run `gloss_above` values
+straight from the three `groups.tsv` (word/phrase level, since a gloss word was only attached to the first
+code of the multi-code run it sits above -- per bSZL65/66/67's own convention). (b) Aligned:
+`python3 tools/interlinear_align.py align pairs.tsv align.tsv key_aligned.tsv --floor 100` (every code takes
+one letter, per bSZL66's own finding that this is a code-per-letter cipher, not a nomenclator) ->
+`key_aligned.tsv`, 25 values including the two 3-digit cross-reference numbers (202, 203, not real cipher --
+NOTES' own "What the leaves show" section) and one spurious value "0" (the aligner's OCR digit-confusion
+table maps a literal clear interjection "O" in "O si" at 66:19 to numeral 0 -- a hand-transcription is not
+djvu OCR, so this confusion table misfires once; excluded from key.tsv, N=1, no effect on the result).
+`build_key.py` (committed, reproducible) cross-references `align.tsv` against each leaf's `groups.tsv` by
+(leaf, line, pos) -- leaf66/67 used a combined "leaf:line" line id where leaf65 used a bare line number;
+normalized before matching -- keeping only real two-digit codes with a single-letter alignment, and writes
+`ciphertext.tsv`, `key.tsv`, `exceptions.tsv` and `consistency_by_code.tsv`.
+**Agreement (a) vs (b), checked by eye per code** (an exact-string test is a non-test here, same reason
+bSZL65 found for the single-leaf case: a code's direct gloss is a whole phrase, not one letter): every code's
+first-of-run direct gloss word matches (b)'s letter at that word's initial position, e.g. 42 -> 'c'
+(Celsissimus, convenit, Christianam, conscientiam, Christiani, comperta, caput all begin with c); 41 -> 'g'
+("gerent et nobiscum"); 17 -> 'a' (alii, audiret, aula); 23 -> 'r' (rectam); 25 -> 'p' (procepimus,
+procedimus, et procedemus, procedant, promissiones, Principi). No disagreement found between the two routes
+at the codes checked.
+
+**Consistency control (rule 3), pooled across all 3 leaves, letter-level** (`build_key.py`, reproducible):
+22 distinct real two-digit codes, 434 code tokens total, 378 occurrences across 19 codes recurring >=2 times.
+Real same-code -> same-letter (mode) agreement rate: **332/378 = 0.878**. Shuffle control (1000 shuffles,
+seed 20260926, of the letter labels across the same recurring-code occurrence slots): mean **0.189**, 95th
+pct **0.204**. Real clears the shuffled 95th pct by >4x. Per-class breakdown (CLAUDE.md rule 3's
+unbalanced-class paragraph): codes seen 3-5 times: 3 codes, mean rate 0.822; codes seen 6+ times: 16 codes,
+mean rate 0.871; no class of exactly 2 occurrences. Per-code detail in `consistency_by_code.tsv`.
+
+**Key + reading.** `key.tsv` (22 codes, grade C, value = pooled mode letter), `exceptions.tsv` (46
+per-occurrence overrides, grade M, where that occurrence's own aligned letter disagrees with its code's
+pooled mode -- e.g. code 42's known d/c split from bSZL66 resolves to mode 'c' with the 'd' occurrences kept
+as M exceptions rather than silently overwritten), `decode.json`. `python3 tools/decode_key.py
+ciphers/szembek-bk1560 --check` exits 0. **Grades: C 388, M 46, U 0** of 434 real code tokens (no code is
+unglossed after pooling all three leaves). `reading.txt` reads as legible connected Latin prose across all
+three leaves (e.g. "Celsissimus Princeps qui ... conscientiam procedimus", "afflicta patria", "defunctum
+principem, Serbanum me duxit", "vindictam sumat", "de Pergenbeio fiat").
+
+**Judge**: `python3 tools/judge_plaintext.py specs/szembek-bk1560.json --file ciphers/szembek-bk1560/reading.txt`
+-> `FAIL language: error=language code 'la' has no corpus in LANG_CORPORA; wire it or use 'corpora'` /
+`FAIL content: ... a length-only gate is not a judge` / `FAIL - szembek-bk1560`. Checked first per the brief:
+`tools/data/la_repo` is not a period corpus at all -- it holds only `dupuy468-anhalt`'s own committed reading
+(a different target) plus a manifest, and `la` is explicitly commented in `tools/judge_plaintext.py`
+(`LANG_CORPORA`) as "Not wired" (25 Sept 2026, YX-PTJUDGE note in the source). This is a fail-closed error,
+not a content judgement either way (CLAUDE.md/LANE B3: a judge line counts only when the language is wired).
+
+**Search log (print_check)**: `phrases.txt` (10 rows: 7 Latin phrases + names Pergenbeio, Burgundus, Serbanum,
+Sityka) -> `print-check.tsv`, `print-check-hosts.tsv`. 26/50 rows returned hits, all generic period-Latin
+formulae, unrelated homonyms, or unrelated modern works (Cantemir editions for "Serbanum", entomology papers
+for "Burgundus"); s2 and crossref partly 429-blocked (`api.semanticscholar.org` 1 req then blocked,
+`api.crossref.org` 8 reqs then blocked -- not retried, one attempt per the good-citizen rule). The most
+distinctive token, the name **Pergenbeio, got 0 hits on every source** (ia-global, gbooks, openalex,
+crossref 0 records). A search result, not a novelty verdict (rule 10) -- consistent with bSZEM's own earlier
+finding of no prior decipherment. Report what was found and where it was not found; novelty class is for a
+verifier's AUDIT.md, not this job.
+
+Files: `pairs.tsv`, `ciphertext.txt`, `ciphertext.tsv`, `align.tsv`, `key_aligned.tsv`, `key_direct.tsv`,
+`key.tsv`, `exceptions.tsv`, `consistency_by_code.tsv`, `decode.json`, `reading.txt`, `reading_tokens.tsv`,
+`build_key.py`, `phrases.txt`, `print-check.tsv`, `print-check-hosts.tsv`. No network (all inputs already on
+disk from bSZL65/66/67); print_check made its usual named-API calls (be-api.us.archive.org 10,
+www.googleapis.com 10, api.openalex.org 10, api.semanticscholar.org 1, api.crossref.org 8).

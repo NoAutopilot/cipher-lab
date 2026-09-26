@@ -4,7 +4,7 @@
  "date": "18w. (catalogued as 18th century; volume covers 1698-1731, the reign of Augustus II)",
  "kind": "recovery",
  "language": "la",
- "source": "PAN Biblioteka Kórnicka, sygn. BK1560-1 (Mf6795), within \"Akta do panowania Augusta II. Vol.1\"; digitised by Wielkopolska Digital Library. Catalogue: https://www.wbc.poznan.pl/dlibra/publication/430427/edition/343124?language=en . Public domain, unrestricted access. Bourdeau CATALOGUE.md #348 (read 26 Sept 2026): \"length and system not yet checked. No reading found.\" Not in Aymeloglu's catalogue.",
+ "source": "PAN Biblioteka K\u00f3rnicka, sygn. BK1560-1 (Mf6795), within \"Akta do panowania Augusta II. Vol.1\"; digitised by Wielkopolska Digital Library. Catalogue: https://www.wbc.poznan.pl/dlibra/publication/430427/edition/343124?language=en . Public domain, unrestricted access. Bourdeau CATALOGUE.md #348 (read 26 Sept 2026): \"length and system not yet checked. No reading found.\" Not in Aymeloglu's catalogue.",
  "ciphertext_pending": "not transcribed this pass (sampling job only, bSZEM, 26 Sept 2026); images fetched to ciphers/szembek-bk1560/images/ (3 leaves, manifest.json). See ciphers/szembek-bk1560/NOTES.md for what was read from the images.",
  "alphabet": "two-digit decimal code groups (values observed in the low teens to low fifties, e.g. 12, 14, 17, 20, 21, 23, 25, 42, 43, 46, 49, 50, 51), space-separated, interspersed with plain Latin connective words and a few names left en clair; two 3-digit numbers (202, 203) are cross-reference numbers to other items in the same bound volume, not cipher",
  "constraints": {
@@ -24,5 +24,19 @@
   "min_word_cover": 0.5,
   "note": "la is listed in tools/data per CLAUDE.md but this worker did not check its corpus era/register match for early-18th-c. chancery Latin; verify before trusting a FAIL/PASS (CLAUDE.md rule 3's corpus-era lesson)."
  },
- "cheap_test_done": []
+ "cheap_test_done": [
+  {
+   "test": 1,
+   "date": "26 Sept 2026",
+   "worker": "bSZM (LANE B7 merge job)",
+   "route": "aligned (tools/interlinear_align.py align, --floor 100) over pooled 3-leaf pairs.tsv; also built key_direct.tsv (word-level, from groups.tsv gloss_above) as a qualitative cross-check -- consistent with the aligned key at the codes checked by eye (e.g. 42 -> c: 'Celsissimus/convenit/Christianam/conscientiam/Christiani/comperta/caput' all first-letter c; 41 -> g: 'gerent et nobiscum'; 17 -> a: 'alii/audiret/aula').",
+   "real_consistency": "332/378 = 0.878 (token-weighted mode-agreement, 19 codes recurring >=2x)",
+   "shuffle_control": "mean 0.189, 95th pct 0.204 (1000 shuffles, seed 20260926, of the letter labels across the same recurring-code occurrence slots)",
+   "per_class": "3-5 occurrences: 3 codes, mean 0.822; 6+ occurrences: 16 codes, mean 0.871 (no class of exactly 2)",
+   "grades": "C 388, M 46, U 0 of 434 real two-digit code tokens (22 distinct codes, all glossed at least once via the pooled alignment)",
+   "verdict": "PASS -- real consistency clears the shuffle 95th pct by >4x; the letter-per-code key from the manuscript's own interlinear gloss reads as legible Latin prose across all three leaves (ciphers/szembek-bk1560/reading.txt). Grade C throughout (rule 4: key from a period gloss source, not cryptanalysis).",
+   "judge": "tools/judge_plaintext.py specs/szembek-bk1560.json --file reading.txt: FAIL closed -- language code 'la' has no corpus in LANG_CORPORA (only a circular la_repo placeholder holding a target's own material exists; not wired per CLAUDE.md rule and the LANE B3 judge-must-be-wired amendment). No la corpus era-checked because none exists to check.",
+   "print_check": "ciphers/szembek-bk1560/print-check.tsv (phrases.txt, 10 rows): 26/50 hits, all generic period-Latin formulae or unrelated homonyms (e.g. 'Celsissimus Princeps' as a common address title, 'Burgundus' as a surname/adjective elsewhere, Dimitrie Cantemir texts for 'Serbanum'); the most distinctive token, the name 'Pergenbeio', got 0 hits on every source (ia-global, gbooks, openalex, crossref). A search result, not a novelty verdict (rule 10)."
+  }
+ ]
 }

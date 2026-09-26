@@ -1,0 +1,12 @@
+# szembek-bk1560 (bSZM, 26 Sept 2026): distinctive decoded phrases and names from the merged 3-leaf reading
+# (reading.txt), for print_check.py's search log. A miss is a search result, not a novelty verdict (rule 10).
+Celsissimus Princeps
+conscientiam procedimus
+christianam procedimus
+afflicta patria
+defunctum principem
+vindictam sumat
+Pergenbeio
+Burgundus
+Serbanum
+Sityka

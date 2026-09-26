@@ -1,0 +1,663 @@
+cipher_line	idx	raw	kind	value	repair	plain_chunk	status
+65:1	0	P.	clear				clear
+65:1	1	S.	clear				clear
+65:1	2	In	clear				clear
+65:1	3	?	clear				clear
+65:1	4	203	num	203		literis	single-segment
+65:1	5	is	clear				clear
+65:1	6	Scripta	clear				clear
+65:1	7	grato	clear				clear
+65:1	8	animo	clear				clear
+65:1	9	tam	clear				clear
+65:2	0	42	num	42		c	agrees
+65:2	1	14	num	14		e	agrees
+65:2	2	49	num	49		l	agrees
+65:2	3	21	num	21		s	agrees
+65:2	4	46	num	46		i	agrees
+65:2	5	21	num	21		s	agrees
+65:2	6	21	num	21		s	agrees
+65:2	7	46	num	46		i	agrees
+65:2	8	50	num	50		m	agrees
+65:2	9	12	num	12		u	agrees
+65:2	10	21.	num	21		s	agrees
+65:2	11	25	num	25		p	agrees
+65:2	12	23	num	23		r	agrees
+65:2	13	46	num	46		i	agrees
+65:2	14	51	num	51		n	agrees
+65:2	15	=	clear				clear
+65:3	0	42	num	42			null-or-unaligned
+65:3	1	14	num	14			null-or-unaligned
+65:3	2	25	num	25		q	conflict:p
+65:3	3	21,	num	21		u	conflict:s
+65:3	4	/	clear				clear
+65:3	5	24	num	24		i	single
+65:3	6	uij	clear				clear
+65:3	7	Rissimam	clear				clear
+65:3	8	Dnaonem	clear				clear
+65:4	0	debita	clear				clear
+65:4	1	veneratur	clear				clear
+65:4	2	salutatione	clear				clear
+65:4	3	quam	clear				clear
+65:4	4	14	num	14		e	agrees
+65:4	5	41	num	41		g	agrees
+65:4	6	13,	num	13		o	agrees
+65:5	0	et	clear				clear
+65:5	1	17	num	17		a	agrees
+65:5	2	49	num	49		l	agrees
+65:5	3	46	num	46		i	agrees
+65:5	4	46,	num	46		i	agrees
+65:5	5	quibus	clear				clear
+65:5	6	42	num	42		c	agrees
+65:5	7	13	num	13		o	agrees
+65:5	8	51	num	51		n	agrees
+65:5	9	12	num	12		v	agrees
+65:5	10	e	clear				clear
+65:5	11	51	num	51		n	agrees
+65:5	12	46	num	46		i	agrees
+65:5	13	20,	num	20		t	agrees
+65:6	0	17	num	17		a	agrees
+65:6	1	m	clear				clear
+65:6	2	25	num	25		p	agrees
+65:6	3	49	num	49		l	agrees
+65:6	4	e	clear				clear
+65:6	5	19	num	19		x	single
+65:6	6	46	num	46		i	agrees
+65:6	7	sumus.	clear				clear
+65:6	8	Et	clear				clear
+65:6	9	sicut	clear				clear
+65:6	10	hactenus	clear				clear
+65:7	0	21	num	21		s	agrees
+65:7	1	y	clear				clear
+65:7	2	51	num	51		n	agrees
+65:7	3	42	num	42		c	agrees
+65:7	4	e	clear				clear
+65:7	5	23	num	23		r	agrees
+65:7	6	e	clear				clear
+65:7	7	in	clear				clear
+65:7	8	omnibus	clear				clear
+65:7	9	25	num	25		p	agrees
+65:7	10	23	num	23		r	agrees
+65:7	11	13	num	13		o	agrees
+65:7	12	42	num	42		c	agrees
+65:7	13	e.=	clear				clear
+65:8	0	21	num	21		e	conflict:s
+65:8	1	46	num	46		c	conflict:i
+65:8	2	50	num	50		t	conflict:m
+65:8	3	us;	clear				clear
+65:8	4	ita	clear				clear
+65:8	5	et	clear				clear
+65:8	6	nunc	clear				clear
+65:8	7	secundum	clear				clear
+65:8	8	23	num	23		a	conflict:r
+65:8	9	14	num	14		m	conflict:e
+65:8	10	=	clear				clear
+65:9	0	42	num	42			null-or-unaligned
+65:9	1	20	num	20			null-or-unaligned
+65:9	2	17	num	17			null-or-unaligned
+65:9	3	50	num	50			null-or-unaligned
+65:9	4	42	num	42		c	agrees
+65:9	5	44	num	44		h	agrees
+65:9	6	23	num	23		r	agrees
+65:9	7	46	num	46		i	agrees
+65:9	8	21	num	21		s	agrees
+65:9	9	20	num	20		t	agrees
+65:9	10	46	num	46		i	agrees
+65:9	11	17	num	17		a	agrees
+65:9	12	51	num	51		n	agrees
+65:9	13	17	num	17		a	agrees
+65:9	14	50	num	50		m	agrees
+65:10	0	42	num	42		c	agrees
+65:10	1	13	num	13		o	agrees
+65:10	2	51	num	51		n	agrees
+65:10	3	21	num	21		s	agrees
+65:10	4	42	num	42		c	agrees
+65:10	5	46	num	46		i	agrees
+65:10	6	en	clear				clear
+65:10	7	20	num	20		t	agrees
+65:10	8	46	num	46		i	agrees
+65:10	9	17	num	17		a	agrees
+65:10	10	50,	num	50		m	agrees
+65:10	11	25	num	25		p	agrees
+65:10	12	23	num	23		r	agrees
+65:10	13	13	num	13		o	agrees
+65:10	14	42	num	42		c	agrees
+65:10	15	e:	clear				clear
+65:11	0	43	num	43		e	conflict:d
+65:11	1	46	num	46			null-or-unaligned
+65:11	2	50	num	50		t	conflict:m
+65:11	3	12	num	12			null-or-unaligned
+65:11	4	21	num	21			null-or-unaligned
+65:11	5	et	clear				clear
+65:11	6	25	num	25		p	agrees
+65:11	7	23	num	23		r	agrees
+65:11	8	13	num	13		o	agrees
+65:11	9	42	num	42		c	agrees
+65:11	10	14	num	14		e	agrees
+65:11	11	43	num	43		d	agrees
+65:11	12	14	num	14		e	agrees
+65:11	13	ms.	clear				clear
+65:12	0	quamvis	clear				clear
+65:12	1	aliqui	clear				clear
+65:12	2	42	num	42		c	agrees
+65:12	3	44	num	44		h	agrees
+65:12	4	23	num	23		r	agrees
+65:12	5	46	num	46		i	agrees
+65:12	6	21	num	21		s	agrees
+65:12	7	20	num	20		t	agrees
+65:12	8	46	num	46		i	agrees
+65:12	9	17	num	17		a	agrees
+65:12	10	nj.	clear				clear
+65:13	0	non	clear				clear
+65:13	1	ita	clear				clear
+65:13	2	se	clear				clear
+65:13	3	41	num	41		g	agrees
+65:13	4	14	num	14		e	agrees
+65:13	5	23	num	23		r	agrees
+65:13	6	17	num	17		e	conflict:a
+65:13	7	51	num	51		n	agrees
+65:13	8	20	num	20		t	agrees
+65:13	9	et	clear				clear
+65:13	10	51	num	51		n	agrees
+65:13	11	13	num	13		o	agrees
+65:13	12	29	num	29		b	agrees
+65:13	13	46:	num	46		i	agrees
+65:14	0	21	num	21			null-or-unaligned
+65:14	1	42	num	42			null-or-unaligned
+65:14	2	u	clear				clear
+65:14	3	50	num	50			null-or-unaligned
+65:14	4	25	num	25		p	agrees
+65:14	5	23	num	23		r	agrees
+65:14	6	13	num	13		o	agrees
+65:14	7	42	num	42		c	agrees
+65:14	8	14	num	14		e	agrees
+65:14	9	43	num	43		d	agrees
+65:14	10	ant,	clear				clear
+65:14	11	uti	clear				clear
+65:14	12	appro.	clear				clear
+65:15	0	50	num	50		m	agrees
+65:15	1	46	num	46		i	agrees
+65:15	2	21	num	21		s	agrees
+65:15	3	14	num	14		e	agrees
+65:15	4	23	num	23		r	agrees
+65:15	5	17	num	17		a	agrees
+65:15	6	51	num	51		n	agrees
+65:15	7	20.	num	20		t	agrees
+65:15	8	et	clear				clear
+65:15	9	multis	clear				clear
+65:15	10	modis	clear				clear
+65:16	0	51	num	51		n	agrees
+65:16	1	13	num	13		o	agrees
+65:16	2	21	num	21		s	agrees
+65:16	3	21	num	21		s	agrees
+65:16	4	13	num	13		o	agrees
+65:16	5	49	num	49		l	agrees
+65:16	6	46	num	46		i	agrees
+65:16	7	42	num	42		c	agrees
+65:16	8	46	num	46		i	agrees
+65:16	9	20	num	20		t	agrees
+65:16	10	17	num	17		a	agrees
+65:16	11	12	num	12		v	agrees
+65:16	12	14	num	14		e	agrees
+65:16	13	rant.	clear				clear
+65:17	0	Sed	clear				clear
+65:17	1	hoc	clear				clear
+65:17	2	remitti	clear				clear
+65:17	3	50	num	50		m	agrees
+65:17	4	12	num	12		u	agrees
+65:17	5	21	num	21		s	agrees
+65:17	6	ad	clear				clear
+65:17	7	divinam	clear				clear
+65:17	8	Justi-	clear				clear
+65:18	0	tiam,	clear				clear
+65:18	1	et	clear				clear
+65:18	2	providentiam,	clear				clear
+65:18	3	quae	clear				clear
+65:18	4	omnia	clear				clear
+65:18	5	scit	clear				clear
+65:18	6	et	clear				clear
+65:19	0	videt.	clear				clear
+65:19	1	13	num	13		c	conflict:o
+65:19	2	44:	num	44		h	agrees
+65:19	3	Dne	clear				clear
+65:19	4	mi	clear				clear
+65:19	5	Rissime	clear				clear
+65:19	6	Pater	clear				clear
+65:19	7	si	clear				clear
+65:19	8	17	num	17		a	agrees
+65:19	9	12	num	12		u	agrees
+65:19	10	43	num	43		d	agrees
+65:19	11	46:	num	46		i	agrees
+65:20	0	[20	doubtful				doubtful
+65:20	1	et,	clear				clear
+65:20	2	struck]	clear				clear
+65:20	3	quanta	clear				clear
+65:20	4	et	clear				clear
+65:20	5	qualia,	clear				clear
+65:20	6	ac	clear				clear
+65:20	7	quibus	clear				clear
+65:20	8	modis	clear				clear
+66:1	0	impostor	clear				clear
+66:1	1	et	clear				clear
+66:1	2	43	num	43		d	agrees
+66:1	3	14	num	14		e	agrees
+66:1	4	20	num	20		t	agrees
+66:1	5	23	num	23		r	agrees
+66:1	6	17	num	17		a	agrees
+66:1	7	42	num	42		c	agrees
+66:1	8	20	num	20		t	agrees
+66:1	9	13	num	13		o	agrees
+66:1	10	23	num	23		r	agrees
+66:1	11	ille	clear				clear
+66:2	0	et	clear				clear
+66:2	1	fine	clear				clear
+66:2	2	confcientia	clear				clear
+66:2	3	29	num	29		b	agrees
+66:2	4	12	num	12		u	agrees
+66:2	5	23.	num	23		r	agrees
+66:2	6	41	num	41		g	agrees
+66:2	7	12	num	12		u	agrees
+66:2	8	51	num	51		n	agrees
+66:2	9	43	num	43		d	agrees
+66:2	10	us,	clear				clear
+66:3	0	17	num	17		a	agrees
+66:3	1	51	num	51		n	agrees
+66:3	2	20	num	20		t	agrees
+66:3	3	46	num	46		i	agrees
+66:3	4	42	num	42		d	conflict:c
+66:3	5	46	num	46		i	agrees
+66:3	6	12	num	12		u	agrees
+66:3	7	21	num	21		s	agrees
+66:3	8	43	num	43		d	agrees
+66:3	9	12	num	12		a	conflict:u
+66:3	10	51	num	51		n	agrees
+66:3	11	13	num	13		o	agrees
+66:3	12	43,	num	43		d	agrees
+66:3	13	im-	clear				clear
+66:4	0	importunitate	clear				clear
+66:4	1	et	clear				clear
+66:4	2	garrulitate,	clear				clear
+66:4	3	in	clear				clear
+66:4	4	mundo	clear				clear
+66:4	5	ne=	clear				clear
+66:5	0	mini	clear				clear
+66:5	1	fecundus,	clear				clear
+66:5	2	cum	clear				clear
+66:5	3	addicto	clear				clear
+66:5	4	fuo	clear				clear
+66:5	5	focio,	clear				clear
+66:5	6	25	num	25			null-or-unaligned
+66:5	7	er=	clear				clear
+66:6	0	40	num	40		f	agrees
+66:6	1	46	num	46		i	agrees
+66:6	2	43	num	43		d	agrees
+66:6	3	13	num	13		o	agrees
+66:6	4	ac	clear				clear
+66:6	5	25	num	25		p	agrees
+66:6	6	23	num	23		r	agrees
+66:6	7	13	num	13		o	agrees
+66:6	8	42	num	42		d	conflict:c
+66:6	9	46	num	46		i	agrees
+66:6	10	20	num	20		t	agrees
+66:6	11	13	num	13		o	agrees
+66:6	12	23	num	23		r	agrees
+66:6	13	14.	num	14		e	agrees
+66:7	0	+	clear				clear
+66:7	1	Datis	clear				clear
+66:7	2	fub	clear				clear
+66:7	3	202.	num	202		n	single
+66:7	4	51	num	51			null-or-unaligned
+66:7	5	13	num	13		o	agrees
+66:7	6	29	num	29		b	agrees
+66:7	7	46	num	46		i	agrees
+66:7	8	21	num	21		s	agrees
+66:7	9	et	clear				clear
+66:7	10	46	num	46		e	conflict:i
+66:7	11	21=	doubtful			tisti	doubtful
+66:8	0	,,	clear				clear
+66:8	1	20	num	20			null-or-unaligned
+66:8	2	46	num	46			null-or-unaligned
+66:8	3	afflicta	clear				clear
+66:8	4	25	num	25		p	agrees
+66:8	5	17	num	17		a	agrees
+66:8	6	20	num	20		t	agrees
+66:8	7	23	num	23		r	agrees
+66:8	8	46	num	46		i	agrees
+66:8	9	15	num	15		a	agrees
+66:8	10	caufuit.	clear				clear
+66:9	0	ac	clear				clear
+66:9	1	illum	clear				clear
+66:9	2	25	num	25		p	agrees
+66:9	3	46	num	46		i	agrees
+66:9	4	15,	num	15		a	agrees
+66:9	5	m	clear				clear
+66:9	6	14	num	14		e	agrees
+66:9	7	m	clear				clear
+66:9	8	13	num	13		o	agrees
+66:9	9	23	num	23		r	agrees
+66:9	10	46	num	46		i	agrees
+66:9	11	15	num	15		e	conflict:a
+66:9	12	de=	clear				clear
+66:10	0	40	num	40		f	agrees
+66:10	1	12	num	12		u	agrees
+66:10	2	51	num	51		n	agrees
+66:10	3	42	num	42		c	agrees
+66:10	4	20	num	20		t	agrees
+66:10	5	21	num	21		m	conflict:s
+66:10	6	m,	clear				clear
+66:10	7	25	num	25		p	agrees
+66:10	8	23	num	23		r	agrees
+66:10	9	46	num	46		i	agrees
+66:10	10	42	num	42		c	agrees
+66:10	11	46=	doubtful			ipem	doubtful
+66:11	0	25	num	25			null-or-unaligned
+66:11	1	14	num	14			null-or-unaligned
+66:11	2	m,	clear				clear
+66:11	3	21	num	21		s	agrees
+66:11	4	14	num	14		e	agrees
+66:11	5	23	num	23		r	agrees
+66:11	6	29	num	29		b	agrees
+66:11	7	17	num	17		a	agrees
+66:11	8	51	num	51		n	agrees
+66:11	9	12	num	12		u	agrees
+66:11	10	m	clear				clear
+66:11	11	21	num	21		m	conflict:s
+66:11	12	14=	doubtful			reduxit	doubtful
+66:12	0	43	num	43			null-or-unaligned
+66:12	1	12	num	12			null-or-unaligned
+66:12	2	19	num	19			null-or-unaligned
+66:12	3	46	num	46			null-or-unaligned
+66:12	4	20.	num	20			null-or-unaligned
+66:12	5	quorum	clear				clear
+66:12	6	mendacijs	clear				clear
+66:12	7	et	clear				clear
+66:12	8	43	num	43			null-or-unaligned
+66:12	9	14=	doubtful				doubtful
+66:13	0	42	num	42		c	agrees
+66:13	1	14	num	14		e	agrees
+66:13	2	25	num	25		p	agrees
+66:13	3	20	num	20		t	agrees
+66:13	4	46	num	46		i	agrees
+66:13	5	13	num	13		o	agrees
+66:13	6	51	num	51		n	agrees
+66:13	7	46	num	46		i	agrees
+66:13	8	29	num	29		b	agrees
+66:13	9	us	clear				clear
+66:13	10	pulchris	clear				clear
+66:13	11	ver=	clear				clear
+66:14	0	bis,	clear				clear
+66:14	1	13	num	13		o	agrees
+66:14	2	29	num	29		b	agrees
+66:14	3	12	num	12		u	agrees
+66:14	4	13	num	13		o	agrees
+66:14	5	49	num	49		l	agrees
+66:14	6	12	num	12		u	agrees
+66:14	7	his	clear				clear
+66:14	8	42	num	42		c	agrees
+66:14	9	23	num	23		r	agrees
+66:14	10	14	num	14		e	agrees
+66:14	11	43	num	43		d	agrees
+66:14	12	eas,	clear				clear
+66:15	0	et	clear				clear
+66:15	1	42	num	42		c	agrees
+66:15	2	13	num	13		o	agrees
+66:15	3	51	num	51		n	agrees
+66:15	4	21	num	21		f	agrees
+66:15	5	46	num	46		i	agrees
+66:15	6	49	num	49		l	agrees
+66:15	7	46	num	46		i	agrees
+66:15	8	17	num	17		a	agrees
+66:15	9	omnium	clear				clear
+66:15	10	aliorum.	clear				clear
+66:16	0	23	num	23		r	agrees
+66:16	1	14	num	14		e	agrees
+66:16	2	21	num	21		s	agrees
+66:16	3	25	num	25		p	agrees
+66:16	4	17	num	17		s	conflict:a
+66:16	5	eas,	clear				clear
+66:16	6	in	clear				clear
+66:16	7	grandes	clear				clear
+66:16	8	51	num	51		n	agrees
+66:16	9	13	num	13		o	agrees
+66:16	10	21,	num	21		s	agrees
+66:17	0	et	clear				clear
+66:17	1	istam	clear				clear
+66:17	2	50	num	50		m	agrees
+66:17	3	46	num	46		i	agrees
+66:17	4	21	num	21		f	agrees
+66:17	5	14	num	14		e	agrees
+66:17	6	23	num	23		r	agrees
+66:17	7	17	num	17		a	agrees
+66:17	8	50	num	50		m	agrees
+66:17	9	25	num	25		p	agrees
+66:17	10	17	num	17		a	agrees
+66:17	11	20	num	20		t	agrees
+66:17	12	23	num	23		r	agrees
+66:17	13	46=	doubtful			iam	doubtful
+66:18	0	,,	clear				clear
+66:18	1	17	num	17			null-or-unaligned
+66:18	2	50,	num	50			null-or-unaligned
+66:18	3	46	num	46		i	agrees
+66:18	4	51	num	51		n	agrees
+66:18	5	20	num	20		t	agrees
+66:18	6	23	num	23		r	agrees
+66:18	7	46	num	46		i	agrees
+66:18	8	42	num	42		c	agrees
+66:18	9	17	num	17		a	agrees
+66:18	10	?it	clear				clear
+66:18	11	43	num	43		u	conflict:d
+66:18	12	46	num	46		i	agrees
+66:18	13	4?:	doubtful			tdifficul	doubtful
+66:19	0	40	num	40		t	conflict:f
+66:19	1	46	num	46		a	conflict:i
+66:19	2	42	num	42		t	conflict:c
+66:19	3	12	num	12		e	conflict:u
+66:19	4	49	num	49		s	conflict:l
+66:19	5	20	num	20		i	conflict:t
+66:19	6	17	num	17		n	conflict:a
+66:19	7	tes.	clear				clear
+66:19	8	O	num	0		t	single
+66:19	9	si	clear				clear
+66:19	10	46	num	46		e	conflict:i
+66:19	11	51	num	51		l	conflict:n
+66:19	12	20	num	20		l	conflict:t
+66:19	13	e49.	doubtful			igenchis	doubtful
+66:20	0	,,	clear				clear
+66:20	1	49	num	49			null-or-unaligned
+66:20	2	46	num	46			null-or-unaligned
+66:20	3	41	num	41			null-or-unaligned
+66:20	4	evehs?	clear				clear
+67:1	0	49	num	49			null-or-unaligned
+67:1	1	46	num	46			null-or-unaligned
+67:1	2	41	num	41			null-or-unaligned
+67:1	3	ereti	clear				clear
+67:1	4	25	num	25		p	agrees
+67:1	5	23	num	23		r	agrees
+67:1	6	13	num	13		o	agrees
+67:1	7	50	num	50		m	agrees
+67:1	8	46	num	46		i	agrees
+67:1	9	21	num	21		s	agrees
+67:1	10	21	num	21		s	agrees
+67:1	11	46	num	46		i	agrees
+67:1	12	13	num	13		o	agrees
+67:1	13	nos,	clear				clear
+67:2	0	quas	clear				clear
+67:2	1	ab	clear				clear
+67:2	2	illa	clear				clear
+67:2	3	17	num	17		a	agrees
+67:2	4	12	num	12		u	agrees
+67:2	5	49	num	49		l	agrees
+67:2	6	17	num	17		a	agrees
+67:2	7	43	num	43		d	agrees
+67:2	8	14	num	14		e	agrees
+67:2	9	40	num	40		f	agrees
+67:2	10	12	num	12		u	agrees
+67:2	11	51	num	51		n	agrees
+67:2	12	42	num	42		c	agrees
+67:3	0	25	num	25		p	agrees
+67:3	1	23	num	23		r	agrees
+67:3	2	46	num	46		i	agrees
+67:3	3	51	num	51		n	agrees
+67:3	4	42	num	42		c	agrees
+67:3	5	46	num	46		i	agrees
+67:3	6	25	num	25		p	agrees
+67:3	7	46	num	46		i	agrees
+67:3	8	adducebant,	clear				clear
+67:3	9	et	clear				clear
+67:3	10	—	clear				clear
+67:4	0	44	num	44		h	agrees
+67:4	1	46	num	46		i	agrees
+67:4	2	51	num	51		n	agrees
+67:4	3	42	num	42		c	agrees
+67:4	4	ducebant,	clear				clear
+67:4	5	quod	clear				clear
+67:4	6	nunc	clear				clear
+67:4	7	propter	clear				clear
+67:5	0	illorum	clear				clear
+67:5	1	iniquas	clear				clear
+67:5	2	43	num	43		d	agrees
+67:5	3	14	num	14		e	agrees
+67:5	4	49	num	49		l	agrees
+67:5	5	17	num	17		a	agrees
+67:5	6	20	num	20		t	agrees
+67:5	7	46	num	46		i	agrees
+67:5	8	13	num	13		o	agrees
+67:5	9	nos,	clear				clear
+67:6	0	plura	clear				clear
+67:6	1	40	num	40		f	agrees
+67:6	2	17	num	17		a	agrees
+67:6	3	49	num	49		l	agrees
+67:6	4	21	num	21		s	agrees
+67:6	5	17	num	17		a	agrees
+67:6	6	sunt	clear				clear
+67:6	7	42	num	42		c	agrees
+67:6	8	13	num	13		o	agrees
+67:6	9	50	num	50		m	agrees
+67:6	10	25	num	25		p	agrees
+67:6	11	er:	clear				clear
+67:7	0	20	num	20			null-or-unaligned
+67:7	1	17.	num	17			null-or-unaligned
+67:7	2	profecto	clear				clear
+67:7	3	quddam	clear				clear
+67:7	4	ad	clear				clear
+67:7	5	risum	clear				clear
+67:7	6	move=	clear				clear
+67:8	0	vent,	clear				clear
+67:8	1	quddam	clear				clear
+67:8	2	admirationem	clear				clear
+67:8	3	causarent,	clear				clear
+67:9	0	quddam	clear				clear
+67:9	1	vero,	clear				clear
+67:9	2	pro	clear				clear
+67:9	3	pudore,	clear				clear
+67:9	4	silentio	clear				clear
+67:9	5	obvol=	clear				clear
+67:10	0	vi	clear				clear
+67:10	1	deberent.	clear				clear
+67:10	2	Deus	clear				clear
+67:10	3	instissimus	clear				clear
+67:10	4	secun=	clear				clear
+67:11	0	dum	clear				clear
+67:11	1	opera	clear				clear
+67:11	2	et	clear				clear
+67:11	3	conscientiam	clear				clear
+67:11	4	illorum,	clear				clear
+67:11	5	de	clear				clear
+67:12	0	12	num	12		v	agrees
+67:12	1	46	num	46		i	agrees
+67:12	2	51	num	51		n	agrees
+67:12	3	43	num	43		d	agrees
+67:12	4	46	num	46		i	agrees
+67:12	5	42	num	42		c	agrees
+67:12	6	20	num	20		t	agrees
+67:12	7	17	num	17		a	agrees
+67:12	8	50,	num	50		m	agrees
+67:12	9	21	num	21		s	agrees
+67:12	10	12=	doubtful			umat	doubtful
+67:13	0	50	num	50			null-or-unaligned
+67:13	1	17	num	17			null-or-unaligned
+67:13	2	20.	num	20			null-or-unaligned
+67:14	0	De	clear				clear
+67:14	1	41	num	41		p	conflict:g
+67:14	2	14	num	14		e	agrees
+67:14	3	41	num	41		g	agrees
+67:14	4	14	num	14		e	agrees
+67:14	5	51	num	51		n	agrees
+67:14	6	29	num	29		b	agrees
+67:14	7	46	num	46		i	agrees
+67:14	8	13	num	13		o	agrees
+67:14	9	fiat,	clear				clear
+67:14	10	quo	clear				clear
+67:14	11	per	clear				clear
+67:15	0	fraudes	clear				clear
+67:15	1	unius	clear				clear
+67:15	2	sui	clear				clear
+67:15	3	falsi	clear				clear
+67:15	4	Amici,	clear				clear
+67:15	5	ab	clear				clear
+67:15	6	ali=	clear				clear
+67:16	0	quo	clear				clear
+67:16	1	iam	clear				clear
+67:16	2	tempore	clear				clear
+67:16	3	13	num	13		o	agrees
+67:16	4	42	num	42		c	agrees
+67:16	5	42	num	42		c	agrees
+67:16	6	46	num	46		i	agrees
+67:16	7	21	num	21		s	agrees
+67:16	8	12	num	12		u	agrees
+67:16	9	21.	num	21		s	agrees
+67:17	0	eiusq'	clear				clear
+67:17	1	42	num	42		c	agrees
+67:17	2	17	num	17		a	agrees
+67:17	3	25	num	25		p	agrees
+67:17	4	12	num	12		u	agrees
+67:17	5	20,	num	20		t	agrees
+67:17	6	in	clear				clear
+67:17	7	rem	clear				clear
+67:17	8	44	num	44		h	agrees
+67:17	9	13	num	13		o	agrees
+67:17	10	51	num	51		n	agrees
+67:17	11	13=	doubtful			orarie	doubtful
+67:18	0	20	num	20			null-or-unaligned
+67:18	1	17	num	17			null-or-unaligned
+67:18	2	23	num	23			null-or-unaligned
+67:18	3	46	num	46			null-or-unaligned
+67:18	4	46	num	46			null-or-unaligned
+67:18	5	missum.	clear				clear
+67:18	6	Sed	clear				clear
+67:18	7	istius	clear				clear
+67:18	8	41	num	41			null-or-unaligned
+67:18	9	14=	doubtful				doubtful
+67:19	0	41	num	41		g	agrees
+67:19	1	14	num	14		e	agrees
+67:19	2	n?	clear				clear
+67:19	3	29	num	29		b	agrees
+67:19	4	14	num	14		e	agrees
+67:19	5	46	num	46		i	agrees
+67:19	6	46	num	46		i	agrees
+67:19	7	Socius,	clear				clear
+67:19	8	nomine	clear				clear
+67:19	9	41	num	41		s	conflict:g
+67:19	10	46=	doubtful			ityk	doubtful
+67:20	0	20	num	20		o	conflict:t
+67:20	1	y	clear				clear
+67:20	2	48,	num	48		r	single
+67:20	3	plus	clear				clear
+67:20	4	quam	clear				clear
+67:20	5	ille	clear				clear
+67:20	6	de	clear				clear
+67:20	7	facto,	clear				clear
+67:20	8	in	clear				clear
+67:20	9	13	num	13		i	conflict:o
+67:20	10	23	num	23		e	conflict:r
+67:20	11	46=	doubtful			nte	doubtful
+67:21	0	en	clear				clear
+67:21	1	20	num	20		o	conflict:t
+67:21	2	14,	num	14		p	conflict:e
+67:21	3	13	num	13		e	conflict:o
+67:21	4	25	num	25		r	conflict:p
+67:21	5	e?	clear				clear
+67:21	6	23	num	23		a	conflict:r
+67:21	7	a?	clear				clear
+67:21	8	20	num	20		t	agrees
+67:21	9	17	num	17		u	conflict:a
+67:21	10	23.	num	23		r	agrees

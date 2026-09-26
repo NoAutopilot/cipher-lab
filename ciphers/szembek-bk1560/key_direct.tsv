@@ -1,0 +1,21 @@
+code	n_glossed_runs	gloss_values	leaf_line_examples
+12	6	u(4); a(1); vindictam(1)	66:66:2=u; 66:66:2=u; 66:66:3=u
+13	11	o(7); Ch.t(1); occisus(1); oriente(1); operatur(1)	65:19=Ch.t; 66:66:3=o; 66:66:6=o
+14	5	e(4); ego(1)	65:4=ego; 66:66:6=e; 66:66:9=e
+15	3	a(2); e(1)	66:66:8=a; 66:66:9=a; 66:66:9=e
+17	11	a(8); alii(1); audiret(1); aula(1)	65:5=alii; 65:19=audiret; 66:66:3=a
+20	6	t(5); sumat(1)	66:66:3=t; 66:66:6=t; 66:66:8=t
+21	7	s(5); synce[ra](1); S(1)	65:7=synce[ra]; 66:66:3=s; 66:66:7=s
+23	10	r(9); rectam(1)	65:8=rectam; 66:66:2=r; 66:66:6=r
+24	1	qui(1)	65:3=qui
+25	10	p(4); procepimus(1); procedimus(1); et procedemus(1); procedant(1); promissiones(1); Principi(1)	65:7=procepimus; 65:10=procedimus; 65:11=et procedemus
+29	3	b(2); B(1)	66:66:2=B; 66:66:7=b; 66:66:11=b
+40	1	falsa(1)	67:67:6=falsa
+41	5	gerent et nobiscum(1); g(1); Pergenbeio(1); Pergenbeii(1); Sityk(1)	65:13=gerent et nobiscum; 66:66:2=g; 67:67:14=Pergenbeio
+42	11	d(2); c(2); Celsissimus Princeps(1); convenit(1); Christianam(1); conscientiam(1); Christiani(1); comperta(1); caput(1)	65:2=Celsissimus Princeps; 65:5=convenit; 65:9=Christianam
+43	5	d(2); D(1); defuncto(1); delationes(1)	66:66:2=d; 66:66:3=D; 66:66:3=d
+44	2	hinc(1); Honorarie(1)	67:67:4=hinc; 67:67:17=Honorarie
+46	13	i(13)	66:66:3=i; 66:66:3=i; 66:66:6=i
+49	2	amplexi(1); l(1)	65:6=amplexi; 66:66:15=l
+50	5	m(3); miserant(1); mus(1)	65:15=miserant; 65:17=mus; 66:66:17=m
+51	9	n(8); Nos sollicitaverant(1)	65:16=Nos sollicitaverant; 66:66:2=n; 66:66:3=n

@@ -1,0 +1,65 @@
+# szembek-bk1560, merged 3-leaf reading (bSZM, 26 Sept 2026), letter-per-code key from the manuscript's own
+# interlinear gloss (tools/interlinear_align.py, --floor 100), grade C throughout except per-occurrence
+# conflicts (grade M, exceptions.tsv). tokens 434: H 0, C 388, S 0, M 46, I 0, U 0. Clear Latin words as transcribed; codes
+# rendered as their key letter; <?> = code with no key entry (none this pass).
+65 1	P. S. IN ? 203 IS SCRIPTA GRATO ANIMO TAM
+65 2	c e l s i s s i m u s p r i n =
+65 3	c e q u / i UIJ RISSIMAM DNAONEM
+65 4	DEBITA VENERATUR SALUTATIONE QUAM e g o
+65 5	ET a l i i QUIBUS c o n v E n i t
+65 6	a M p l E x i SUMUS. ET SICUT HACTENUS
+65 7	s Y n c E r E IN OMNIBUS p r o c E. =
+65 8	e c t US; ITA ET NUNC SECUNDUM a m =
+65 9	c t a m c h r i s t i a n a m
+65 10	c o n s c i EN t i a m p r o c E:
+65 11	e i t u s ET p r o c e d e MS.
+65 12	QUAMVIS ALIQUI c h r i s t i a NJ.
+65 13	NON ITA SE g e r e n t ET n o b i
+65 14	s c U m p r o c e d ANT, UTI APPRO.
+65 15	m i s e r a n t ET MULTIS MODIS
+65 16	n o s s o l i c i t a v e RANT.
+65 17	SED HOC REMITTI m u s AD DIVINAM JUSTI-
+65 18	TIAM, ET PROVIDENTIAM, QUAE OMNIA SCIT ET
+65 19	VIDET. c h DNE MI RISSIME PATER SI a u d i
+65 20	20 ET, QUANTA ET QUALIA, AC QUIBUS MODIS
+66 1	IMPOSTOR ET d e t r a c t o r ILLE
+66 2	ET FINE CONFCIENTIA b u r g u n d US,
+66 3	a n t i d i u s d a n o d IM-
+66 4	IMPORTUNITATE ET GARRULITATE, IN MUNDO NE=
+66 5	MINI FECUNDUS, CUM ADDICTO FUO FOCIO, p ER=
+66 6	f i d o AC p r o d i t o r e
+66 7	+ DATIS FUB 202. n o b i s ET e s
+66 8	,, t i AFFLICTA p a t r i a CAUFUIT.
+66 9	AC ILLUM p i a M e M o r i e DE=
+66 10	f u n c t m M, p r i c i
+66 11	p e M, s e r b a n u M m e
+66 12	d u x i t QUORUM MENDACIJS ET d e
+66 13	c e p t i o n i b US PULCHRIS VER=
+66 14	BIS, o b u o l u HIS c r e d EAS,
+66 15	ET c o n f i l i a OMNIUM ALIORUM.
+66 16	r e s p s EAS, IN GRANDES n o s
+66 17	ET ISTAM m i f e r a m p a t r i
+66 18	,, a m i n t r i c a ?IT u i 4?:
+66 19	t a t e s i n TES. O SI e l l E49.
+66 20	,, l i g EVEHS?
+67 1	l i g ERETI p r o m i s s i o NOS,
+67 2	QUAS AB ILLA a u l a d e f u n c
+67 3	p r i n c i p i ADDUCEBANT, ET —
+67 4	h i n c DUCEBANT, QUOD NUNC PROPTER
+67 5	ILLORUM INIQUAS d e l a t i o NOS,
+67 6	PLURA f a l s a SUNT c o m p ER:
+67 7	t a PROFECTO QUDDAM AD RISUM MOVE=
+67 8	VENT, QUDDAM ADMIRATIONEM CAUSARENT,
+67 9	QUDDAM VERO, PRO PUDORE, SILENTIO OBVOL=
+67 10	VI DEBERENT. DEUS INSTISSIMUS SECUN=
+67 11	DUM OPERA ET CONSCIENTIAM ILLORUM, DE
+67 12	v i n d i c t a m s u
+67 13	m a t
+67 14	DE p e g e n b i o FIAT, QUO PER
+67 15	FRAUDES UNIUS SUI FALSI AMICI, AB ALI=
+67 16	QUO IAM TEMPORE o c c i s u s
+67 17	EIUSQ' c a p u t IN REM h o n o
+67 18	t a r i i MISSUM. SED ISTIUS g e
+67 19	g e N? b e i i SOCIUS, NOMINE s i
+67 20	o Y r PLUS QUAM ILLE DE FACTO, IN i e i
+67 21	EN o p e r E? a A? t u r

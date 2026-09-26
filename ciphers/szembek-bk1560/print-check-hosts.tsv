@@ -1,0 +1,6 @@
+host	requests	status
+api.crossref.org	8	blocked: HTTP 429 on https://api.crossref.org/works?rows=5&query.bibliographic=Burgundus
+api.openalex.org	10	ok
+api.semanticscholar.org	1	blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22Celsissimus%20Princeps%22
+be-api.us.archive.org	10	ok
+www.googleapis.com	10	ok
