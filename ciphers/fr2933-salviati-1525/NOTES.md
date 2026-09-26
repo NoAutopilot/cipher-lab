@@ -2450,3 +2450,44 @@ pass nor this worker's own inspection could settle -- kept as `x|y`). f56v 37 of
 only in the weaker sense that neither pass's confidence was higher than the other's under this job's
 time-constrained settlement rule -- a later image-based pass over just these 37 rows is the obvious cheap next
 step before treating f56v's M share as a real legibility signal. Nothing was guessed from context anywhere.
+
+## SALV-PLAIN3: plain-Italian boxes, f.57r-f.57v (26 Sept 2026, LANE SALV)
+
+Worker SALV-PLAIN3 (Sonnet), 23:19-... UTC, brief `.claude/briefs/runs/2026-09-26-lane-salv-j1c-plain.md`. Job 1
+remainder, last two leaves: f57r (43 plain boxes) and f57v (172). No decoding, no reading of the sign runs,
+method only. ONE CHANGE from SALV-PLAIN1/2's method (this job's own brief, for cost): the worker never opens a
+crop image itself -- every image (pass A, pass B, and the reconciliation of disagreeing rows) goes to a Sonnet
+subagent; the worker's own work is scripts, merging and writing.
+
+**f56v line18 pos19 check (this brief's own item).** Not a `crop_plain_leaf.py` bug: `plain_crops/f56v/manifest.tsv`
+line 18 correctly lists pos19 in its plain_pos field (`...,18,19,23,24,...`), so the crop itself was marked and
+sent to both passes. The gap is in `plain_passA_f56v.tsv` and `plain_passB_f56v.tsv` themselves -- both jump
+straight from pos18 to pos23 with no row for pos19 at all (independently, in both blind passes), most likely
+because pos19 is a tiny box (w=20,h=21 in `f56v_boxes.tsv`) sitting immediately before three sign boxes
+(pos20-22, S4/sq/Lx, unmarked) that both passes' own summaries may have read as one contiguous cipher run and
+skipped past. No script fix made (nothing to fix in this script), and per the brief, f56v is not re-run; the
+one-position gap stays flagged for whoever next revisits f56v.
+
+**U0 setup.** `images/f57r_ref2400.jpg` and `images/f57v_ref2400.jpg` did not exist on this container's disk
+(SALV-PLAIN2's own working files, not committed, per the folder-size rule); `plain_crops/f57r/manifest.tsv` and
+`plain_crops/f57v/manifest.tsv` existed (committed) but the PNG crops themselves did not. Regenerated (5
+gallica.bnf.fr requests total, >=2s apart: one connection-reset on the first f57r_ref1600 fetch, retried once
+after a pause per the good-citizen rule, then all four succeeded, plus the two direct 2400px curls):
+```
+$ ./regen_images.sh page f57r_ref1600.jpg
+$ ./regen_images.sh page f57v_ref1600.jpg
+$ curl ... "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90600674/f58/pct:50,0,50,100/2400,/0/default.jpg" -o images/f57r_ref2400.jpg
+$ curl ... "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90600674/f59/pct:0,0,50,100/2400,/0/default.jpg" -o images/f57v_ref2400.jpg
+```
+Then re-ran `crop_plain_leaf.py` (SOURCES already had f57r/f57v entries from SALV-PLAIN2, same offset/scale
+convention as f54v-f56v: `(x+80,y+80)*1.5`):
+```
+$ python3 crop_plain_leaf.py f57r
+f57r: 19 line crops -> plain_crops/f57r/, manifest plain_crops/f57r/manifest.tsv, 42 plain boxes marked
+$ python3 crop_plain_leaf.py f57v
+f57v: 20 line crops -> plain_crops/f57v/, manifest plain_crops/f57v/manifest.tsv, 172 plain boxes marked
+```
+(f57r: 42 marked vs 43 `_`-coded rows in `ciphertext_f57r.tsv` -- one split pos shares its integer parent box's
+mark, same convention as `crop_passC_leaf.py`, matching SALV-PLAIN2's own prior run exactly.) Full-leaf renders
+and line-crop PNGs are working files, not committed (folder-size rule), per SALV-PLAIN1/2's own precedent; only
+the manifests are tracked.
