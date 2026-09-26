@@ -10,6 +10,10 @@ the target's own tokens (N/K unchanged), writes a distinctly-suffixed decode fil
 (8) a --label given adds a corpus/label-derived suffix to the decode filename so two runs of the same family/seed
 on different corpora never collide (bBLZ4, 26 Sept 2026: bBLZ3's German-corpus masc-1 run silently overwrote
 bBLZ2's English masc-1.txt); no --label keeps the exact old bare filename.
+test_control_n (bMALC, 26 Sept 2026): --control-n builds the homophonic control at a projected N above the
+target's own N, keeping the target's own K and scaling a profile=target sign-count profile proportionally;
+checks the control message is actually built at the projected length, "projected N" appears in the plan and the
+HYPOTHESES.md row, and --control-n without --control-only is refused (exit 2).
 Run: python3 tools/tests/test_family_run.py   (about a minute)"""
 import glob, json, os, random, re, subprocess, sys, tempfile, time
 
@@ -160,5 +164,58 @@ def test_family_run():
           f"periodic_vigenere control {vctl}, target accuracy {vacc:.3f}; {time.time() - t0:.0f}s")
 
 
+def test_control_n():
+    """--control-n (bMALC, 26 Sept 2026): a homophonic control built at a projected N, target's own K, profile
+    scaled proportionally; requires --control-only; never runs the target."""
+    t0 = time.time()
+    holmes = jp.read_corpus(os.path.join(ROOT, "tools", "data", "pg1661_holmes.txt"))
+    text = jp.fold(holmes)
+    plain = text[210000:210200]
+    assert len(plain) == 200
+    rng = random.Random(11)
+    K = 40  # a nomenclator-sized alphabet, well above the 26 plain letters
+    letters = list("abcdefghijklmnopqrstuvwxyz")
+    homs = [f"s{i}" for i in range(K)]
+    rng.shuffle(homs)
+    key = {a: homs[i::len(letters)] for i, a in enumerate(letters)}  # each letter gets >=1 homophone, K used up
+    cipher_toks = [rng.choice(key[a]) for a in plain]
+    actual_K = len(set(cipher_toks))  # observed distinct homophones at N=200, not the full K=40 key size
+    with tempfile.TemporaryDirectory() as d:
+        spec = {"slug": "synthetic-controln-test", "alphabet": "a-z",
+                "ciphertext": " ".join(cipher_toks),
+                "matched_control": "English window, N=200, homophonic K=40",
+                "judge": {"language": "en", "letters_min": 150, "letters_max": 250, "control_samples": 40}}
+        sp = os.path.join(d, "synthetic-controln-test.json")
+        json.dump(spec, open(sp, "w"))
+        out = os.path.join(d, "ciphers", "synthetic-controln-test", "HYPOTHESES.md")
+        fdir = os.path.join(ROOT, "ciphers", "synthetic-controln-test")
+        try:
+            # --control-n without --control-only is refused before anything runs
+            rc, log = run(sp, "--family", "homophonic", "--control-n", "1000", "--seeds", "1",
+                          "--restarts", "1", "--out", out, "--tokens", "space")
+            assert rc == 2 and "requires --control-only" in log, (rc, log)
+            assert not os.path.exists(out)
+            # a projected N well above the real N=200: the control message is actually built at that length,
+            # the plan and the row both say "projected N", K stays the real (observed) target K, target never runs
+            rc, log = run(sp, "--family", "homophonic", "--control-only", "--control-n", "1000",
+                          "--param", "profile=target", "--seeds", "2", "--restarts", "2", "--param", "iters=8000",
+                          "--gate", "0.0", "--out", out, "--tokens", "space", "--label", "offline test controln")
+            assert rc == 0, (rc, log)
+            assert f"N=1000 (projected N, actual target N=200) signs, K={actual_K} distinct" in log, log
+            ns = [int(m) for m in re.findall(r"CONTROL seed \d+: N=(\d+)", log)]
+            ks = [int(m) for m in re.findall(r"CONTROL seed \d+: N=\d+ K=(\d+)", log)]
+            assert ns == [1000, 1000], (ns, log)  # control actually built at the projected length
+            assert all(k <= actual_K for k in ks), (ks, log)  # homophone count never exceeds the target's own K
+            assert not os.path.exists(os.path.join(fdir, "families")), "control-only must never run the target"
+            table = open(out, encoding="utf-8").read()
+            assert f"N=1000 (projected N, actual target N=200) K={actual_K}" in table, table
+            assert "not run (control-only)" in table, table
+        finally:
+            import shutil
+            shutil.rmtree(fdir, ignore_errors=True)
+    print(f"ok family_run control-n: projected control built at N={ns}, target K={actual_K}; {time.time() - t0:.0f}s")
+
+
 if __name__ == "__main__":
     test_family_run()
+    test_control_n()

@@ -42,6 +42,13 @@ Families (tools/families/<name>.py, each wraps an existing tool, see the package
 Modes: --target-only-if-gated (default) runs the control, then the target only if the gate is met;
 --control-only runs the control alone (calibration) and logs it. --seeds N runs the control on seeds
 --seed .. --seed+N-1 and reports mean and range; the target runs once on --seed.
+--control-n N (bMALC, 26 Sept 2026; valid only with --control-only, else exit 2): the tool otherwise always
+overwrites params["N"] with the target's own ciphertext length, so a control at a projected pool size (before
+the pooling fetch is paid for) could never be run. --control-n builds the control at N instead, keeping the
+target's own K; any --param profile=target sign-count profile is scaled proportionally from the target's real
+counts to N (each count's occurrences repeated round(count * N/actual_N) times before the family reads it, so
+the bucket-allocation shape is preserved, not just its absolute size). The HYPOTHESES.md row and the printed
+plan both say "projected N" next to the value, and the target is never run (control-only is required).
 Corpora: --corpus files or directories (all .txt / .txt.gz inside); default is the spec's judge.corpora, else
 tools/judge_plaintext.py's LANG_CORPORA for judge.language. The control plaintext window is cut from the corpus
 and removed from what the control's solver trains on.
@@ -76,6 +83,7 @@ only caught after the full seeded control had already run).
 Test: python3 tools/tests/test_family_run.py  (offline, under two minutes)
 """
 import argparse, json, os, re, statistics, subprocess, sys, time
+from collections import Counter
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TOOLS = os.path.join(ROOT, "tools")
@@ -250,11 +258,18 @@ def main(argv=None):
     ap.add_argument("--shuffle-target", type=int, default=None, metavar="SEED",
                     help="replace the target's own tokens with a random permutation of themselves (false-positive "
                          "floor); N/K/message lengths unchanged, control unaffected")
+    ap.add_argument("--control-n", type=int, default=None, metavar="N",
+                    help="build the control at this projected N instead of the target's own N (requires "
+                         "--control-only); K stays the target's own K, any profile=target sign-count profile is "
+                         "scaled proportionally to N")
     ap.add_argument("--dry-run", action="store_true", help="print the plan (N, K, corpora, paths) and run nothing")
     a = ap.parse_args(argv)
 
     if BANNED.search(a.label):
         print("--label carries a rule 10 word (solved/new/first/unpublished); reword it", file=sys.stderr)
+        return 2
+    if a.control_n is not None and not a.control_only:
+        print("--control-n requires --control-only (a projected-N control never runs the target)", file=sys.stderr)
         return 2
     spec = json.load(open(a.spec, encoding="utf-8"))
     slug = spec.get("slug") or os.path.splitext(os.path.basename(a.spec))[0]
@@ -279,6 +294,14 @@ def main(argv=None):
         raise SystemExit("no ciphertext tokens read")
     params.update({"N": N, "K": K, "lengths": [len(m) for m in msgs], "target_msgs": msgs,
                    "messages_independent": "separate" in mode})
+    N_display = N
+    if a.control_n is not None:
+        scale = a.control_n / N
+        counts = Counter(toks)
+        scaled_tokens = [tok for tok, c in counts.items() for _ in range(max(1, round(c * scale)))]
+        params["target_msgs"] = [scaled_tokens]
+        params["N"] = a.control_n
+        N_display = f"{a.control_n} (projected N, actual target N={N})"
     paths = corpus_paths(spec, a.corpus)
     out = a.out or os.path.join(ROOT, "ciphers", slug, "HYPOTHESES.md")
     fam = families.load(a.family)
@@ -300,7 +323,7 @@ def main(argv=None):
         if tag:
             dsuffix += f"-{tag}"
     plan = (f"family {a.family}: {fam.DESCRIPTION}\nspec {a.spec} slug {slug}\nciphertext: {len(msgs)} message(s), "
-            f"N={N} signs, K={K} distinct, tokens={mode}" +
+            f"N={N_display} signs, K={K} distinct, tokens={mode}" +
             (f" (target letters shuffled, seed {a.shuffle_target}, false-positive floor)" if a.shuffle_target is not None else "") +
             f"\ncorpora: {', '.join(rel(p) for p in paths)}\n"
             f"control seeds {seeds}, restarts {a.restarts}, gate {a.gate}, params {pshow or '-'}\n"
@@ -322,7 +345,7 @@ def main(argv=None):
     ctl = f"{fmt(mean)} ({fmt(min(recs))}-{fmt(max(recs))})"
     gated = mean >= a.gate
     date = utc_date()
-    par = f"N={N} K={K} restarts={a.restarts} corpus={'+'.join(os.path.basename(p) for p in paths)}" + (f" {pshow}" if pshow else "")
+    par = f"N={N_display} K={K} restarts={a.restarts} corpus={'+'.join(os.path.basename(p) for p in paths)}" + (f" {pshow}" if pshow else "")
     if a.control_only:
         row = append_row(out, [date, a.family, par, f"{seeds[0]}-{seeds[-1]}" if len(seeds) > 1 else seeds[0], ctl,
                               "not run (control-only)", "-", "yes" if gated else "no", a.label or "-"])
