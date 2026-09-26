@@ -68,7 +68,7 @@ def start():
     except FileNotFoundError:
         pass
     try:
-        near = [l for l in open("NEAR.md", encoding="utf-8") if l.startswith("| ") and not l.startswith("| Target") and not l.startswith("|---")]
+        near = near_rows(open("NEAR.md", encoding="utf-8").read())
         if near:
             print(f"NEAR.md: {len(near)} near-solve rows -- a target there is never closed-negative (rule 5): " + ", ".join(l.split("|")[1].strip().split(" ")[0] for l in near))
     except FileNotFoundError:
@@ -290,6 +290,21 @@ def warnings_for(role, signal):
     if re.search(r"\$\s?\d|\bdollars\b|\bUSD\b", text, re.I):
         w.append("WARNING: cost figures in ROOM lines are the orchestrator's to read (COMMON item 1)")
     return w
+
+
+def near_rows(text):
+    """Active NEAR.md rows only: table rows before the first "## " heading that follows the active table
+    (the "Closed rows" / "left NEAR.md" table is not counted; V7-QA5 flag, 26 Sept 2026)."""
+    rows, seen_table = [], False
+    for l in text.splitlines(keepends=True):
+        if seen_table and l.startswith("## "):
+            break
+        if l.startswith("| ") and not l.startswith("| Target") and not l.startswith("|---"):
+            rows.append(l)
+            seen_table = True
+        elif l.startswith("|---") or l.startswith("| Target"):
+            seen_table = True
+    return rows
 
 
 def main(a):
