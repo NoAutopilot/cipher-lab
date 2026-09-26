@@ -57,7 +57,7 @@ its state is only what it committed, so read its handoff and its lanes' ROOM lin
 7. **Tell the owner** only: a reading that passed its judge and a fresh-instance re-derivation, an AUDIT.md verdict,
    a second opinion that finds prior print, a credential or payment he must supply, or a blocker. For a real
    breakthrough also fire the routine "Cipher Lab: breakthrough alert (email)" with a plain, graded description.
-   Also match open `[LQ-<id>]` pull requests (tools/local_queue_runner_prompt.md, the owner's ChatGPT runner answering LOCAL-QUEUE.tsv rows): a short Sonnet worker copies each answer into the file the row names, sets the row `done <date>`, closes the PR without merging.
+   Also match open `[LQ-<id>]` pull requests (tools/local_queue_runner_prompt.md, the owner's ChatGPT runner answering LOCAL-QUEUE.tsv rows): a short Sonnet worker copies each answer into the file the row names, sets the row `done <date>`, closes the PR without merging. Likewise `[JSTOR-<stamp>]` pull requests (tools/jstor_runner_chatgpt_prompt.md): the worker copies each row's hits into JSTOR-QUEUE.tsv's `hits` column and the target's AUDIT.md "JSTOR" section, sets the row `done <date>`, closes the PR without merging, and posts "for LANE V<n>" when a candidate hit names a target under audit.
 
 8. **Next lane.** When lanes close and the window allows, open the next from open targets no lane holds (ROOM claims
    in the last six hours, and the other account's lanes, excluded).
