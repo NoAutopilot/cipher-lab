@@ -1126,3 +1126,91 @@ superseded by A3.1/A3.3.
 
 Requests (this session): archive.org 5 (advancedsearch 3, djvu 2); api.openalex.org 1; api.crossref.org 1;
 www.googleapis.com 3; arcinsys.hessen.de 1. No subagents. IA caches in the scratchpad, not committed.
+
+## V9 note (A4): 5797 p6_spot4 after AX2-5801ADJ (26 Sept 2026)
+
+Verifier V9-NA172-3 for LANE V9 (session_01WNitVVGthGvdkHoyXGzkDw), 26 Sept 2026, 07:36-07:40 UTC (`date -u` read).
+Separate session from the solver lanes (AX, AX2) and from V8-NA172 and V8-NA172-2. A propagation note under rule 4
+(conflicting H support) and rule 10's last paragraph (a revision after AUDIT.md is carried into AUDIT.md and the SO row).
+Nothing decoded; no key, ciphertext, decode, reading or HYPOTHESES.md file touched; no network except git.
+
+### A4.1 What changed after A3
+
+A3 (05:45-05:55 UTC) valued 172 as "le Conte Jean" from one witness, 4614. Two later LANE AX2 passes (NOTES.md sections
+"AX2-172" and "AX2-5801ADJ") found three period values for 172, each read by eye from a period decipherment over the
+code on its own leaf:
+
+| witness | sender -> recipient | direction | date | 172 reads | grade there | source |
+|---|---|---|---|---|---|---|
+| WVO 4614 | Lodewijk -> Willem | brothers -> Willem ("list A") | Apr 1574 | le Conte Jean | H (1x, companion decipherment leaf) | NOTES.md AX2-172 Q2; V8C.2 |
+| WVO 7206 | Willem -> his brothers | Willem -> brothers ("list B") | 30 Jan 1574 | Lumbres | H 2, M 1 (3x, against the clear copy) | NOTES.md AX2-172 Q1-Q2 |
+| WVO 5801 | Willem -> Jan and Lodewijk | Willem -> brothers | 28 May 1573 | le Conte Louis de Nassau | H (1x glossed, Groen IV CDXXIII agrees) | NOTES.md AX2-5801ADJ |
+
+AX2-172 had let 5797's value stand by direction (5797 is Jan and Lodewijk to Willem, so list A). AX2-5801ADJ shows
+direction does not predict 5801: a Willem -> brothers letter that agrees with list A at 202, with neither list at 172,
+and differs from list A at 192. The name codes above 145 look reassigned between letters or periods, not fixed per
+direction. 5797 (22 Oct 1573) falls between 5801 (May 1573) and 7206/4614 (Jan/Apr 1574) and shares a witness's
+direction with none of the three in a way that has been shown to predict the value. 5797 also writes Cologne as 155
+where 5801 writes 157, a further sign that 5797's name codes cannot be borrowed from 5801 either. By rule 4's 26 Sept
+paragraph the 5797 token is **M, key source contested**, not settled by the more frequent value (Lumbres, 3x) nor by the
+older (Louis) or the nearer-in-direction one (Jean).
+
+### A4.2 Class decision: p6_spot4 is withdrawn from classification
+
+Decision: **no N-class** for 5797 p6_spot4 until a witness licenses a value for 172 in 5797 itself. A3.1's N2 is
+withdrawn, not replaced by another number.
+
+Why not keep N2 "for the fact Lossen prints": rule 10's N2 is "plaintext known elsewhere but no prior mapping of this
+ciphertext to it found" -- it classes *our* mapping of this ciphertext to a plaintext. After AX2-5801ADJ we hold no
+licensed mapping: the key gives three values, none attested in 5797. The one way to pick "le Conte Jean" now is to read
+it off Lossen, *Der Kölnische Krieg* I (1882), p.212 (Graf Johann left on 22 Oct 1573 for the Elector at Arnsberg) --
+that would be grade I (inferred from the print) and circular as a confirmation: the print would both choose the value
+and be cited as what the cipher confirms. A3.1's sentence "the cipher confirms Lossen" no longer holds. What stays true:
+the letter is `text: known` (N0 for the letter, Groen IV CDXLIV); the fact of Count Johann's 22 Oct departure is in
+print (Lossen p.212); Groen's blank before "zeuget" is one code wide and that code is 172.
+
+The other 5797 items are unaffected: p5 [161] and p7 [153] rest on the 5550 gloss (V8.2, A2), not on the name list above
+145 as tested here at 172; 4610/4611/4616 N4 do not use 172. Whether 161 and 153 (both above 145) are exposed to the same
+reassignment is a question for the solver lane, not settled here (A4.5).
+
+Key source (rule 10): **none licensed** for 172 in 5797 (`period` witnesses conflict: 4614, 7206, 5801); the table that
+locates the spot `ours`. status.json's lodewijk row already reads "contested" and needs no change from this note.
+
+### A4.3 Safe and unsafe sentences (replace A3.3 and V8C.4)
+
+- **Safe:** "In the same letter (Dillenburg, 22 Oct 1573), Groen leaves a one-code blank before 'zeuget diesen morgen
+  Kölln' ('... goes this morning to Cologne'). The code there is 172, a name code whose period decipherments disagree
+  between letters: 'le Conte Jean' in WVO 4614 (Apr 1574), 'Lumbres' in WVO 7206 (Jan 1574), 'le Conte Louis de Nassau'
+  in WVO 5801 (May 1573). No value for it in this letter is licensed, and the spot is not classed. That Count Johann
+  left on 22 October 1573 for the Elector of Cologne is already in print (Lossen, Der Kölnische Krieg I, 1882, p.212)."
+- **Unsafe:** everything in V8C.4's and A3.3's unsafe lists, and in addition: "[le Conte Jean] zeuget ..." (or
+  "[le Conte Louis]", "[Lumbres]") quoted as the reading of 5797; "172 = le Conte Jean" as the key value for this
+  letter; "the cipher confirms Lossen"; "N2" or any class for p6_spot4; "read at H" for the token (it is M, contested);
+  choosing the value by Lossen's print, by frequency across letters, or by direction of correspondence.
+
+### A4.4 Superseded sentences
+
+- V8C.1 (N4) and V8C.4's safe sentence: superseded, already by A3; now also by A4.
+- A3.1's class (N2), its key line "`period` (4614 decipherment) ... unchanged", and its paragraph "Not a break of the
+  reading. Lossen corroborates 172 = Count Johann ... the H grade of 172 in key_full ... unaffected": superseded by A4.1-A4.2.
+  Lossen's p.212 citation and the search log (A3.2) stand as search results.
+- A3.3's safe sentence: superseded by A4.3. A3.4's "the post, if any, must use A3.3's sentence": superseded; there is
+  no outward post for p6_spot4 while it is unclassed.
+- Earlier SO-queue and prompt notes that quote V8C.4 or A3.3: dated A4 notes added (A4.6).
+
+### A4.5 HYPOTHESES.md check (rule 4 logging)
+
+HYPOTHESES.md carries **no entry for the 172 conflict** (grep for 172, Lumbres, "Conte Jean", "Conte Louis": 0 lines at
+07:37 UTC). Rule 4's 26 Sept paragraph requires the conflict logged there with the witnesses; the table in A4.1 gives the
+rows. Not written here: HYPOTHESES.md is LANE AX2's file (brief). For AX2 or its successor: log 172 (and 192, 202, 217,
+339, per AX2-172 Q3 and AX2-5801ADJ) with sender, recipient, direction and date per witness; and check whether 5797's
+other name codes above 145 (161, 153, 154, 155) are exposed to the same reassignment, since their values come from
+sibling letters too.
+
+### A4.6 Carried
+
+- `SECOND-OPINIONS-QUEUE.tsv`, row SO-LODEWIJK-1573-74: dated note appended to the outcome field ("if re-queued quote
+  AUDIT.md A4.3, not A3.3"); column count unchanged (7).
+- `ciphers/lodewijk-van-nassau-1573-74/second-opinions/PROMPT-chatgpt.md`: it quotes V8C.4 and A3.3; dated note added
+  pointing to A4.3.
+Requests: none (no network except git). No subagents.

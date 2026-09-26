@@ -58,3 +58,8 @@ contemporary decipherment of the sibling letter WVO 4614, placed with our own le
 single pass (grade M). The fact it supplies is already in print: Lossen, Der Kölnische Krieg I (1882), p.212, has Count
 Johann leave quietly on 22 October 1573 for the Elector of Cologne at Arnsberg. The cipher confirms Lossen; no prior
 decipherment of this blank located (N2)."
+
+Note (verifier V9-NA172-3, A4, 26 Sept 2026): both notes above are superseded for the p6 blank. After AX2-5801ADJ, code
+172 has three period values in three letters (4614 'le Conte Jean', 7206 'Lumbres', 5801 'le Conte Louis de Nassau'), so
+no value for it in 5797 is licensed and the p6 blank is withdrawn from classification (AUDIT.md A4). If re-queued, quote
+AUDIT.md A4.3's safe sentence, not A3.3 or V8C.4, and do not present "le Conte Jean" as the reading of the blank.
