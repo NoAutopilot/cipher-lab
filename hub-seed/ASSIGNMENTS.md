@@ -791,3 +791,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T08:18Z	session_01P664dMt8opanbux4TuHPHn	bMALG (Sonnet, cap 2)	malsburg glyph conventions	brief 2026-09-26-lane-b9-malg.md; LANE B9
 2026-09-26T08:18Z	session_0191zH9xnhLoMU7fxsasv8og	bMAT1H (Opus, cap 4)	matignon NEAR (1h) pre-registered gate	brief 2026-09-26-lane-b9-mat1h.md; LANE B9
 2026-09-26T08:18Z	session_01DjNdmE8PmwSrZpR63a3Ntd	bHCP3 (Sonnet, cap 3)	hessen-1824 running_key de19	brief 2026-09-26-lane-b9-hcp3.md; LANE B9
+2026-09-26T08:34Z	session_019GkVZEhwsixGdZo13Hnvbo	ARM-IMG	done 2.58, ledgered D, archived	
