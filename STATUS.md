@@ -170,30 +170,37 @@ What ARM2 runs first, ranked:
    other letter in this code or with these marks is known -- that is outreach, so AUDIT.md-gated; draft only.
 Open flags: none unanswered (V9-QA8/QA9 en18 caveat answered in HYPOTHESES.md and NOTES.md, 10:17).
 
-## LANE NX2 handoff (session_01Ms6A5gPqrVmyK3Liyfgo9z), 26 September 2026, from 14:45 UTC (live)
+## LANE NX2 handoff (session_01Ms6A5gPqrVmyK3Liyfgo9z), 26 September 2026, 14:45-17:25 UTC (closed, idle-standing on ASKS 68)
 
 Brief .claude/briefs/runs/2026-09-26-lane-nx2-orchestrator.md; COMMON 2026-09-26-lane-ax-COMMON.md (reused); queue from
-SCOUT-OWN-4-2026-09-26.md (RAH Salazar y Castro: Soria/Sanchez pool S1, A-42 decipherment S2, Caracciolo S3, Gayangos S5).
-Folder ciphers/rah-salazar-soria-sanchez-1524-28/ (created by job 1).
+SCOUT-OWN-4-2026-09-26.md. 5 Sonnet workers 26.75 USD (GATE 5.87 F, INDEX 5.53 D, GATE2 7.09 D, CSP 3.73 D, RV 4.53 N), all
+ledgered, retitled ARCHIVED and archived; orchestrator about 4.3 by get_session (self-ledgered). No live workers, no check-in armed.
+Jobs 2-3 of the brief (crib alignment, readings) were never dispatched: no page image of any RAH Salazar y Castro item is online.
 
-**Results so far.** NX2-GATE (5.87 F): no images -- bibliotecadigital.rah.es holds no record for any of the five letters
-(its search works on control terms), so ciphers/rah-salazar-soria-sanchez-1524-28 is `blocked` with REQUEST.md (copy order);
-not Bourdeau's or Aymeloglu's lane (their Soria/Sanchez folders stop at 9/30); DECODE has nothing at 9/33+. NX2-INDEX (5.53 D):
-QUEUE.md section "RAH Salazar y Castro index, cipher mentions" -- 25 undeciphered entries of 2,297; S3 (Caracciolo 1526) is
-interlinear-deciphered, the undeciphered Caracciolo letter is inv.6122 (A-41, 1527, Ko.8); six more Sanchez letters, one with
-its own decipherment (inv.6124); S5 confirmed and the Haro 1655-61 pool extends it.
-NX2-GATE2 (7.09 D): items 1, 3, 5 of the pool are calendared in CSP Spain III (nos.212, 399, 462) with their cipher passages
-in English ("Contemporary deciphering") -- text known, confirmation only; items 2 (Soria, Genoa 16 Jun 1526, A-37 ff.428-429)
-and 4 (Sanchez, Venice 17 Dec 1524, A-33 ff.72-74) are not calendared. REQUEST.md is one batched, ranked RAH copy order; ASKS row 68.
-NX2-CSP (3.73 D): of the Indice's 25 undeciphered rows, 10 are in CSP Spain II-III with cipher sense in English (incl.
-Caracciolo inv.6122, the sweep's former top pick), 2 probable, 8 not calendared, 7 outside CSP's 1485-1558 range.
-**Live (16:42 UTC):** NX2-RV session_01LHKjvzWVwH6DxPjPUT1qDJ (Sonnet, box 40, alarm 5): the six uncalendared rows (inv.4670,
-5520/5521, 5540, 5543, 5545, 6192) and the two probable against Rodriguez Villa's printed editions (the Indice cites him for 5543
-and 6331), then folds the survivors into REQUEST.md as the one final copy order.
-**Next:** after NX2-RV the lane is idle-standing on ASKS 68 (every RAH Salazar item is copy-order-only; no cheap step left that
-needs no image). On images: NX2-CRIB (A-42 ff.441-442 against the Sanchez key, interlinear_align with a leave-one-out control),
-then items 2 and 4 with --check, shuffled-key control, es16 judge with per-fold spread, fresh re-derivation.
-**Note:** DECODE does catalogue RAH 9/34 (rah9-34-fernandez-1525); SCOUT-OWN-4's "coverage stops at 9/31" is re-checked by GATE.
+**Results.**
+- **rah-salazar-soria-sanchez-1524-28** (`blocked`): bibliotecadigital.rah.es holds no record for any pool letter (its search works
+  on control terms, two sessions), so a copy order is the only route. Of the pool's five 'en cifra, sin descifrar' letters, three
+  are calendared in CSP Spain III with their cipher passages in English (nos.212, 399, 462; 'Contemporary deciphering') -- text
+  known, confirmation only. Not Bourdeau's or Aymeloglu's lane (their Soria/Sanchez folders stop at 9/30); DECODE nothing at 9/33+.
+- **Indice sweep** (QUEUE.md "RAH Salazar y Castro index, cipher mentions (LANE NX2, 26 Sept 2026)"; sources/salazar-castro-index/):
+  2,297 cipher-mentioning entries, 25 marked undeciphered; checked page by page against CSP Spain II-III and Rodriguez Villa
+  1875/1885: 10 in print, 2 probable, 6 found in neither (Sanchez 17 Dec 1524, 5/18/19 Jun 1526, Sanchez to Ugarte 1527; Soria
+  16 Jun 1526), 7 outside CSP's range (incl. the Haro 1655-61 pool). S3 Caracciolo 1526 is interlinear-deciphered; Caracciolo
+  1527 (inv.6122) is in CSP III pt.2 no.122. S5 (Gayangos marginal decipherment, A-103) confirmed as a crib for the Haro pool.
+- **ASKS 68**: one ranked RAH copy order (REQUEST.md): the six letters, then A-42 ff.441-442 (a period decipherment of three
+  Sanchez letters, the crib that tests the published Sanchez key), then confirmation items.
+
+**Open leads, in order.** (1) On images from ASKS 68: interlinear_align on A-42 ff.441-442 against Tomokiyo's AlonsoSanchez.htm
+table (letter alphabet + three-letter codes: --code-prefix/--clear-consumes; leave-one-out control, gate 0.60), then the six
+letters with decode_key --check, shuffled-key control, es16 judge with per-fold spread, fresh re-derivation. Soria may use Ko.6 or
+Ko.16 (two ciphers); Bourdeau's soria1523 keyB is the first thing to try on the Soria letter. (2) The Haro 1655-61 pool (7 rows,
+no CSP coverage) needs its own check-solved before it joins any order. (3) The 1931 BRAH Soria catalogue (tomo 98 pp.363-416) is
+HathiTrust search-only: a LOCAL-QUEUE row if the owner wants it read.
+
+**Lessons (ledgered).** An archive catalogue's 'sin descifrar' describes the leaf, not whether the text is known: 10 of 18
+checkable rows were in the printed calendar from a separate decipherment sheet -- run the calendar pass before any copy order. An
+index's 'published in part' pointer can sit on the neighbouring entry (5543 vs 5538). The container has no PDF text tool:
+apt-get install poppler-utils works. Start workers with `git checkout -B main origin/main` (a detached HEAD broke two pushes).
 
 ## LANE NX handoff (session_01RDXRYmATas1Xy6K1Jjwtvo), 26 September 2026, 08:44-11:50 UTC (closed)
 
