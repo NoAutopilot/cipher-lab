@@ -78,7 +78,7 @@ word does not have to say it twice. NOTES.md's first line is changed to `solved`
 | BNP bndigital | not re-queried | the solver logged its `?q=` as non-restricting (51732 results for every query), 25 Sept 2026 | unreachable as a search, per solver's log |
 | (f) solver repos, DECODE, Cryptiana/Cipherbrain | solver's search accepted, not re-run | both repos grepped, DECODE 2897 cipher records, blog search (NOTES.md) | 0 hits |
 | (g) scholarship | searched | OpenAlex (Bearer key) `Costa Cabral Santa Sé 1865`, `Conde de Tomar embaixada Roma`, `padroado 1865 Santa Sé Portugal concordata 1857`, `cifra diplomática portuguesa século XIX`; Semantic Scholar (x-api-key) same four | nothing on this letter, the godfather question or Portuguese 19th-century cipher; S2 returned no data for the first three queries |
-| JSTOR | queued | one row in JSTOR-QUEUE.tsv | does not block the class |
+| JSTOR | done 26 Sept 2026 | one row in JSTOR-QUEUE.tsv: ("Costa Cabral" OR "Conde de Tomar" OR "Conde de Thomar") AND ("Santa Sé" OR "Holy See" OR Padroado) AND 1865 | two context-only hits (Sardica 1997; Chato Gonzalo and Costa 2007, both general Iberian-liberalism political history), neither on this letter or its cipher; does not change the class |
 | web | searched | two WebSearch queries (Afonso's baptism; Costa Cabral Roma 1865 cifra) | Afonso's godparents Napoleon III and Isabel II (Wikipedia); nothing on this letter |
 
 Requests: archive.org 13 (advancedsearch 1, metadata 4, djvu 4, be-api fts 4); googleapis books 17 (>=3 s apart);
