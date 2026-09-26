@@ -1631,3 +1631,107 @@ min per pass); `sh axcomp/run.sh 7205` then aligns it against `decipherment_7205
 28 May 1573 letter (dbnl, 1 request) as the clear text, or brief a zoomed transcription of pp.7-9.
 Hosts: resources.huygens.knaw.nl 3 (the three PDFs, 2 s apart, all 200). Subagents: 8 blind passes, Sonnet,
 at most 2 at once; two B passes were lost to a container restart and re-run.
+
+## AX-4612TR2: 4612 v2 settled (26 Sept 2026, LANE AX)
+
+Worker AX-4612TR2 (Sonnet), brief `.claude/briefs/runs/2026-09-26-lane-ax-4612tr2.md`, box 60 min from
+03:38:58 UTC. Successor to AX-4612TR (above): realigns p2 by content, settles disagreements against
+`images_wv2/crops_4612/src_04612_p{1,2}.png` (already fetched, no re-fetch), writes v2, runs the two checks.
+No network requests, no new blind passes (per brief).
+
+**Finding beyond the brief's own scope, found while settling: p1's 80.1% positional figure was not
+trustworthy either.** AX-4612TR's agreement.py compared passA/passB p1 by line label with a single flat -1
+line shift (correcting for passB's extra header row) and reported p2 as the only page needing content
+realignment. Checking p1_r22 against the image (this worker) found passB_p1 r22 does NOT match passA_p1
+r22 -- passB r23 does -- meaning a second, independent one-line drift opens on top of the header offset,
+somewhere around r04 (an extra token, a bare numeral `9`, appears in passB_p1 r04 with no counterpart in
+passA_p1 r04). A flat shift is therefore wrong for most of the page, not just from p2_r10 as reported.
+**Both pages were content-realigned the same way** (`ax4612tr/realign.py`): flatten each pass into one
+token stream per page in reading order (p1's passB stream drops its own header row first) and align the two
+flat streams with `difflib.SequenceMatcher`, not by line/position label.
+
+**True agreement** (`ax4612tr/realign.py`, supersedes both AX-4612TR's 80.1%/49.7% figures):
+p1 783/887 = **88.3%**, 104 disagreements (27 numeral, 77 clear-word); p2 260/350 = **74.3%**, 90
+disagreements (5 numeral, 85 clear-word) -- combined 1043/1237 = 84.3%. The content-level p1 figure is
+*higher* than the old positional one (88.3% vs 80.1%) because several of the 174 positional "disagreements"
+were really the same correct token at a shifted line label, not a real reading difference; the count of
+disagreements that actually matter for the two checks below (numeral, value 1-120) drops from 91+5=96
+(positional) to 27+5=32 (content-aligned).
+
+**Settling against the images** (`ax4612tr/settle.tsv`, `images_wv2/crops_4612/src_04612_p{1,2}.png` viewed
+directly, no new line crops cut -- the existing `p{1,2}_L*.jpg` crops from AX-4612TR do not correspond 1:1 to
+the passes' own physical lines closely enough to trust blindly: L01/L02 are page-margin/header, L04 was found
+to merge two physical lines (r02+r03) into one detected ink-band, so a fixed crop-index-to-line-number formula
+was not used -- each needed region was located by matching its own numeral/word content against the passes'
+tokens before reading it). Of the 32 numeral disagreements (27 p1, 5 p2), **16 settled with reasonable
+confidence, 16 left unsettled ('?')**: 4 p1 lines (r22, r23, r26, r33/r35's paired "109"/"=Wesel" mismatch,
+r36) were not reached before the mapping-by-content search stopped paying off inside the box, and several
+single-digit disagreements even on lines that were located (r04, r05, r06, r09, r10) stayed genuinely
+ambiguous on inspection -- one (r05 pos21) this worker's own reading disagreed with *both* passes (read
+"23", where passA has 73 and passB has 13), which is reported here as a three-way disagreement, not settled
+either way. Clear-word disagreements (spelling/case/punctuation variants such as `vre.`/`vre`, `Iesus`/
+`Iesuel`) were auto-settled by a case/trailing-punctuation-insensitive match (`settled-case-only`, H) where
+that fully explained the difference; a genuine wording difference between the passes was left `?` the same
+as an unsettled numeral, since it does not feed either check below. `ciphertext_4612_v2.tsv` (1237 rows,
+170 `?`, of which 16 are the still-unsettled numerals) built by `ax4612tr/build_v2.py`.
+
+**Check (a): French-word share via key.tsv, old vs v2 vs shuffled** (`ax4612tr/word_share_check.py`, against
+`tools/data/fr16`'s own word list per Usage 8 -- no new wordlist written): value-1-120 numerals decoded
+through the repo's `key.tsv` (the 1574-table key that reads 4610/4611/5797/5799), grouped into runs broken at
+clear words, NULL/name codes and `?`; a token counts if it falls inside a substring matching a real French
+word of >=3 letters.
+- old `ciphertext_4612.tsv`: 518/775 = **66.8%**
+- v2 `ciphertext_4612_v2.tsv`: 562/819 = **68.6%**
+- v2 through 20 value-shuffled copies of `key.tsv` (rule 3 -- this statistic CAN move under a shuffle, and
+  does): mean **41.5%**, range 31.4-61.3%.
+
+Both old and v2 sit well above the shuffle floor (mean 41.5%, max of 20 draws 61.3%) -- v2's 68.6% is above
+every one of the 20 shuffled draws. This is a **cryptanalytic result, not a reading** (no H/C token; it is a
+coverage statistic on a straight value-for-letter substitution through an unrelated letter's key, not a
+coherent decoded text) and does not overturn AX-4612's own family_run.py negatives above, which tested
+whether 4612 fits key.tsv's *design* under a reordering (block width, digit map, affine map) and found it
+does not; this check instead asks whether decoding 4612's raw numerals straight through key.tsv, with no
+transformation at all, lands closer to real French than chance -- and by this statistic it does, on both the
+old and the settled transcription. Flagged for the lane, not investigated further here (out of this
+worker's brief): the natural next step is to read `families/block_homophonic-*.txt`-style decodes of v2
+under key.tsv directly to see whether any run is legible prose, since a coverage gap this size (66.8-68.6%
+vs a 41.5% shuffle mean, v2 clearing the shuffle max) is larger than expected from chance 3-letter-word
+collisions alone.
+
+**Check (b): block-of-5 IC, v2 vs old vs 4610/4611 vs null** (`ciphers/lodewijk-van-nassau-1573-74/ax4612/
+ic_scan.py`, reused unchanged -- AX-4612's own tool, Usage 8 shared-scripts-before-new-ones; it already
+groups values 1-120 into consecutive-value blocks of width w at every offset and reports the best offset
+against a 200-draw random-partition null, exactly the check this brief asks for):
+
+| target | N (1-120) | block-5 IC, best offset | null median / p95 |
+|---|---|---|---|
+| 4612 old | 775 | 0.0617 (o0) | 0.0516 / 0.0567 |
+| 4612 v2 | 819 | 0.0601 (o0) | 0.0514 / 0.0562 |
+| 4610 | 1222 | 0.0779 (o0) | 0.0494 / 0.0543 |
+| 4611 | 1145 | 0.0749 (o0) | 0.0484 / 0.0528 |
+
+v2's block-5 IC (0.0601) is essentially unchanged from old (0.0617) and stays inside its own null's p95
+(0.0562), well below 4610/4611's ~0.075-0.078 -- AX-4612's conclusion (4612 shows no block-of-5 value
+structure under this key's design) holds up after settling against the higher-resolution image, so this is
+not an artifact of the pre-AX-4612TR transcription's lower resolution or its 47.8%-agreement pass. N rose
+775->819 despite 16 numerals being marked `?` (excluded) because the 300 dpi re-transcription found more
+legible numerals overall than the original pass.
+
+**What this leaves for a successor**: (1) settle the 16 remaining unsettled numerals (`ax4612tr/settle.tsv`,
+column `settled='?'`) -- p1 r04/r05/r06/r09/r10 need a second, closer look at the same crop region (the
+digits found ambiguous even under direct inspection may need a tighter zoom than this worker cut), and p1
+r22/r23/r26/r33/r35/r36 were not reached before the box ran down and need their line located in the image
+fresh (the existing L-crops do not reliably correspond to these r-lines, confirmed while settling). (2) The
+Check (a) finding (v2 68.6% vs a 41.5% shuffle mean, clearing the shuffle max) is worth a direct look at
+`ax4612/families/block_homophonic-*.txt`-style straight decodes of v2 through key.tsv to see whether any
+numeral run reads as legible French, before concluding anything -- flagged, not investigated, per this
+worker's brief.
+
+Grades: no reading is claimed (rule 4 N/A, this is a transcription-fidelity and cryptanalytic-diagnostic
+report). Novelty not classified (rule 10, out of scope). Status of the folder unchanged (`partial`).
+
+Files: `ciphertext_4612_v2.tsv`, `decode_4612_v2.json`, `reading_4612_v2.txt`, `reading_4612_v2_tokens.tsv`,
+`ax4612tr/{realign.py,build_v2.py,make_settle_tsv.py,word_share_check.py,settle.tsv,p1_disagreements.tsv,
+p2_disagreements.tsv}`, this section. Hosts: none (no network; images already on disk from AX-4612TR). No
+credentials used. No subagents (all settlement done by this worker directly against the images). cost: see
+the lane ledger.

@@ -1,0 +1,1238 @@
+line	position	sign	confidence	alt	why
+p1_r01	1	=Monsieur	H		agree
+p1_r01	2	=Je	H		agree
+p1_r01	3	?	M	A:=receu|B:=resceu	unsettled-diff
+p1_r01	4	=vre.	H	A:=vre.|B:=vre	settled-case-only
+p1_r01	5	=lre.	H	A:=lre.|B:=lre	settled-case-only
+p1_r01	6	=du	H		agree
+p1_r01	7	?	M	A:=xxj.me|B:=xxj	unsettled-diff
+p1_r01	8	=de	H		agree
+p1_r01	9	=febvrier	H		agree
+p1_r01	10	=et	H		agree
+p1_r01	11	=bien	H		agree
+p1_r01	12	?	M	A:=ce|B:=entendu	unsettled-diff
+p1_r01	13	?	M	A:=que|B:(none)	unsettled-diff
+p1_r01	14	?	M	A:=vous|B:(none)	unsettled-diff
+p1_r01	15	=mandez	H		agree
+p1_r01	16	=de	H		agree
+p1_r01	17	=la	H		agree
+p1_r01	18	=responce	H		agree
+p1_r01	19	=de	H		agree
+p1_r01	20	?	M	A:=voz|B:=leg	unsettled-diff
+p1_r01	21	?	M	A:=affres.|B:=affre	unsettled-diff
+p1_r01	22	=Roy	H		agree
+p1_r01	1001	?	M	A:(none)|B:=a	unsettled-diff-insert-only-in-B
+p1_r02	1	=Pour	H		agree
+p1_r02	2	=ce	H		agree
+p1_r02	3	=que	H		agree
+p1_r02	4	?	M	A:=voy|B:=doy	unsettled-diff
+p1_r02	5	?	M	A:=dois|B:=se	unsettled-diff
+p1_r02	6	?	M	A:=ce|B:(none)	unsettled-diff
+p1_r02	7	=suppliant	H		agree
+p1_r02	8	?	M	A:=treshumblement|B:=tres	unsettled-diff
+p1_r03	8	?	M	A:(none)|B:=humblement	unsettled-diff
+p1_r02	9	=de	H		agree
+p1_r02	10	=vous	H		agree
+p1_r02	11	=vouloir	H		agree
+p1_r02	12	=continuer	H		agree
+p1_r02	13	=voz	H		agree
+p1_r02	14	?	M	A:=benedictions.|B:=sainctes	unsettled-diff
+p1_r03	15	?	M	A:(none)|B:=benedictions	unsettled-diff
+p1_r02	15	=Et	H		agree
+p1_r02	16	=quant	H		agree
+p1_r02	17	=a	H		agree
+p1_r02	18	=nous	H		agree
+p1_r03	1	=Je	H		agree
+p1_r03	2	=vous	H		agree
+p1_r03	3	=diray	H		agree
+p1_r03	4	?	M	A:=sy|B:=en	unsettled-diff
+p1_r03	5	=bref	H		agree
+p1_r03	6	=que	H		agree
+p1_r03	7	?	M	A:=scay|B:(none)	unsettled-diff
+p1_r03	8	?	M	A:=depuis|B:(none)	unsettled-diff
+p1_r03	9	=le	H		agree
+p1_r03	10	?	M	A:=xxij.me|B:=xxvij	unsettled-diff
+p1_r03	11	=de	H		agree
+p1_r03	12	=febvrier	H		agree
+p1_r03	13	150	H		agree
+p1_r03	14	141	H		agree
+p1_r03	15	54	H		agree
+p1_r03	16	38	H		agree
+p1_r03	17	26	H		agree
+p1_r03	18	62	H		agree
+p1_r03	19	22	H		agree
+p1_r03	20	68	H		agree
+p1_r03	21	81	H		agree
+p1_r03	22	27	H		agree
+p1_r03	23	47	H		agree
+p1_r03	24	29	H		agree
+p1_r03	25	149	H		agree
+p1_r03	26	65	H		agree
+p1_r03	27	6	H		agree
+p1_r03	28	25	H		agree
+p1_r03	1001	?	M	A:(none)|B:9	unsettled-diff-insert-only-in-B
+p1_r04	1	78	H		agree
+p1_r04	2	111	H		agree
+p1_r04	3	42	H		agree
+p1_r04	4	30	H		agree
+p1_r04	5	12	H		agree
+p1_r04	6	67	H		agree
+p1_r04	7	26	H		agree
+p1_r04	8	12	H		agree
+p1_r04	9	88	H		agree
+p1_r04	10	77	H		agree
+p1_r04	11	116	H		agree
+p1_r04	12	?	M	A:51|B:81	unsettled-diff
+p1_r04	13	31	H		agree
+p1_r04	14	33	H		agree
+p1_r04	15	69	H		agree
+p1_r04	16	36	H		agree
+p1_r04	17	81	H		agree
+p1_r04	18	27	H		agree
+p1_r04	19	47	H		agree
+p1_r04	20	28	H		agree
+p1_r04	21	42	H		agree
+p1_r04	22	2	H		agree
+p1_r04	23	31	H		agree
+p1_r04	24	62	H		agree
+p1_r04	25	14	H		agree
+p1_r04	26	68	S	A:67|B:68	settled-image(AX-4612TR2): passB 68 confirmed, passA misread 67
+p1_r04	27	4	H		agree
+p1_r05	1	72	H		agree
+p1_r05	2	12	H		agree
+p1_r05	3	276	H		agree
+p1_r05	4	?	M	A:=y|B:=ilz	unsettled-diff
+p1_r05	5	=sont	H		agree
+p1_r05	6	?	M	A:=bonne|B:=bonnes	unsettled-diff
+p1_r05	7	?	M	A:=disposition,|B:=dispositios	unsettled-diff
+p1_r05	8	81	H		agree
+p1_r05	9	32	H		agree
+p1_r05	10	150	H		agree
+p1_r05	11	71	H		agree
+p1_r05	12	2	H		agree
+p1_r05	13	26	H		agree
+p1_r05	14	14	H		agree
+p1_r05	15	38	H		agree
+p1_r05	16	66	H		agree
+p1_r05	17	77	H		agree
+p1_r05	18	42	H		agree
+p1_r05	19	40	H		agree
+p1_r05	20	27	H		agree
+p1_r05	21	?	M	A:73|B:13	unsettled-diff
+p1_r05	22	9	H		agree
+p1_r05	23	4	H		agree
+p1_r05	24	27	H		agree
+p1_r06	1	85	H		agree
+p1_r06	2	117	H		agree
+p1_r06	3	59	H		agree
+p1_r06	4	25	H		agree
+p1_r06	5	77	H		agree
+p1_r06	6	84	S	A:8A|B:84	"settled-image(AX-4612TR2): passB 84 confirmed, passA garbled ""8A"""
+p1_r06	7	127	H		agree
+p1_r06	8	138	M		agree-flagged
+p1_r06	9	73	H		agree
+p1_r06	10	42	H		agree
+p1_r06	11	77	H		agree
+p1_r06	12	118	S	A:113|B:118	settled-image(AX-4612TR2): passB 118 confirmed, passA misread 113
+p1_r06	13	12	H		agree
+p1_r06	14	28	H		agree
+p1_r06	15	63	H		agree
+p1_r06	16	79	H		agree
+p1_r06	17	39	H		agree
+p1_r06	18	?	M	A:74|B:34	unsettled-diff
+p1_r06	19	61	H		agree
+p1_r06	20	9	H		agree
+p1_r06	21	40	H		agree
+p1_r06	22	4	H		agree
+p1_r06	23	12	H		agree
+p1_r06	24	83	H		agree
+p1_r06	25	3	H		agree
+p1_r06	26	83	H		agree
+p1_r07	1	16	H		agree
+p1_r07	2	26	H		agree
+p1_r07	3	71	H		agree
+p1_r07	4	27	H		agree
+p1_r07	5	36	H		agree
+p1_r07	6	46	H		agree
+p1_r07	7	83	S	A:53|B:83	settled-image(AX-4612TR2): passB 83 confirmed, passA misread 53
+p1_r07	8	97	S	A:74|B:97	settled-image(AX-4612TR2): passB 97 confirmed, passA misread 74
+p1_r07	9	46	H		agree
+p1_r07	10	37	H		agree
+p1_r07	11	81	H		agree
+p1_r07	12	101	H		agree
+p1_r07	13	29	H		agree
+p1_r07	14	64	H		agree
+p1_r07	15	6	H		agree
+p1_r07	16	38	H		agree
+p1_r07	17	72	H		agree
+p1_r07	18	12	H		agree
+p1_r07	19	26	H		agree
+p1_r07	20	82	H		agree
+p1_r07	21	102	H		agree
+p1_r07	22	22	H		agree
+p1_r07	23	28	H		agree
+p1_r07	24	150	H		agree
+p1_r08	1	82	H		agree
+p1_r08	2	37	H		agree
+p1_r08	3	26	H		agree
+p1_r08	4	33	H		agree
+p1_r08	5	57	H		agree
+p1_r08	6	22	H		agree
+p1_r08	7	48	H		agree
+p1_r08	8	29	H		agree
+p1_r08	9	62	H		agree
+p1_r08	10	42	H		agree
+p1_r08	11	27	H		agree
+p1_r08	12	19	H		agree
+p1_r08	13	25	H		agree
+p1_r08	14	7	H		agree
+p1_r08	15	28	H		agree
+p1_r08	16	62	H		agree
+p1_r08	17	54	H		agree
+p1_r08	18	40	H		agree
+p1_r08	19	29	H		agree
+p1_r08	20	62	H		agree
+p1_r08	21	83	H		agree
+p1_r08	22	9	H		agree
+p1_r08	23	2	H		agree
+p1_r08	24	28	H		agree
+p1_r08	25	16	H		agree
+p1_r09	1	103	H		agree
+p1_r09	2	72	H		agree
+p1_r09	3	33	H		agree
+p1_r09	4	46	H		agree
+p1_r09	5	?	M	A:28|B:22	unsettled-diff
+p1_r09	6	73	H		agree
+p1_r09	7	27	H		agree
+p1_r09	8	25	H		agree
+p1_r09	9	56	H		agree
+p1_r09	10	24	H		agree
+p1_r09	11	13	S	A:113|B:13	settled-image(AX-4612TR2): passB 13 confirmed (compact glyph), passA misread 113
+p1_r09	12	82	H		agree
+p1_r09	13	23	H		agree
+p1_r09	14	27	H		agree
+p1_r09	15	81	H		agree
+p1_r09	16	2	H		agree
+p1_r09	17	77	H		agree
+p1_r09	18	69	H		agree
+p1_r09	19	104	H		agree
+p1_r09	20	74	H		agree
+p1_r09	21	31	H		agree
+p1_r09	22	60	H		agree
+p1_r09	23	59	H		agree
+p1_r09	24	40	H		agree
+p1_r09	25	25	H		agree
+p1_r10	1	42	H		agree
+p1_r10	2	92	H		agree
+p1_r10	3	?	M	A:10|B:20	unsettled-diff
+p1_r10	4	?	M	A:38|B:78	unsettled-diff
+p1_r10	5	9	H		agree
+p1_r10	6	4	H		agree
+p1_r10	7	12	H		agree
+p1_r10	8	41	H		agree
+p1_r10	9	13	H		agree
+p1_r10	10	77	H		agree
+p1_r10	11	84	H		agree
+p1_r10	12	4	H		agree
+p1_r10	13	34	H		agree
+p1_r10	14	67	H		agree
+p1_r10	15	13	H		agree
+p1_r10	16	68	H		agree
+p1_r10	17	72	H		agree
+p1_r10	18	83	H		agree
+p1_r10	19	37	H		agree
+p1_r10	20	26	H		agree
+p1_r10	21	72	H		agree
+p1_r10	22	4	H		agree
+p1_r10	23	34	H		agree
+p1_r10	24	87	H		agree
+p1_r10	25	?	M	A:38|B:88	unsettled-diff
+p1_r11	1	65	H		agree
+p1_r11	2	25	H		agree
+p1_r11	3	68	H		agree
+p1_r11	4	82	H		agree
+p1_r11	5	22	H		agree
+p1_r11	6	61	H		agree
+p1_r11	7	39	H		agree
+p1_r11	8	67	H		agree
+p1_r11	9	4	H		agree
+p1_r11	10	12	H		agree
+p1_r11	11	60	H		agree
+p1_r11	12	84	H		agree
+p1_r11	13	39	H		agree
+p1_r11	14	26	H		agree
+p1_r11	15	150	S	A:130|B:150	settled-image(AX-4612TR2): passB 150 confirmed, passA misread 130
+p1_r11	16	128	H		agree
+p1_r11	17	136	H		agree
+p1_r11	18	46	H		agree
+p1_r11	19	52	H		agree
+p1_r11	20	28	H		agree
+p1_r11	21	84	H		agree
+p1_r11	22	112	H		agree
+p1_r11	23	42	H		agree
+p1_r11	24	27	H		agree
+p1_r12	1	54	H		agree
+p1_r12	2	40	H		agree
+p1_r12	3	27	H		agree
+p1_r12	4	9	H		agree
+p1_r12	5	4	H		agree
+p1_r12	6	35	H		agree
+p1_r12	7	16	H		agree
+p1_r12	8	101	H		agree
+p1_r12	9	114	H		agree
+p1_r12	10	43	H		agree
+p1_r12	11	12	H		agree
+p1_r12	12	79	H		agree
+p1_r12	13	40	H		agree
+p1_r12	14	29	H		agree
+p1_r12	15	9	H		agree
+p1_r12	16	28	H		agree
+p1_r12	17	77	H		agree
+p1_r12	18	59	H		agree
+p1_r12	19	12	H		agree
+p1_r12	20	202	H		agree
+p1_r12	21	12	H		agree
+p1_r12	22	201	H		agree
+p1_r12	23	12	H		agree
+p1_r13	1	279	H		agree
+p1_r13	2	=mesmes	H		agree
+p1_r13	3	=chose	H		agree
+p1_r13	4	?	M	A:=que|B:=qu'a	unsettled-diff
+p1_r13	5	?	M	A:=a|B:=ilz	unsettled-diff
+p1_r13	6	?	M	A:=cy|B:=proffit	unsettled-diff
+p1_r13	7	?	M	A:=prins|B:=bourse	unsettled-diff
+p1_r13	8	?	M	A:=buisson|B:(none)	unsettled-diff
+p1_r13	9	=comme	H		agree
+p1_r13	10	?	M	A:=bons|B:=voz	unsettled-diff
+p1_r13	11	=francs.	H	A:=francs.|B:=francs	settled-case-only
+p1_r13	12	59	H		agree
+p1_r13	13	37	H		agree
+p1_r13	14	25	H		agree
+p1_r13	15	76	H		agree
+p1_r13	16	2	H		agree
+p1_r13	17	31	H		agree
+p1_r13	18	142	H		agree
+p1_r13	19	51	H		agree
+p1_r13	20	52	H		agree
+p1_r13	21	61	H		agree
+p1_r13	22	2	H		agree
+p1_r14	1	33	H		agree
+p1_r14	2	12	H		agree
+p1_r14	3	42	H		agree
+p1_r14	4	88	H		agree
+p1_r14	5	62	H		agree
+p1_r14	6	13	H		agree
+p1_r14	7	82	H		agree
+p1_r14	8	40	H		agree
+p1_r14	9	62	H		agree
+p1_r14	10	7	H		agree
+p1_r14	11	41	H		agree
+p1_r14	12	54	H		agree
+p1_r14	13	39	H		agree
+p1_r14	14	29	H		agree
+p1_r14	15	67	H		agree
+p1_r14	16	38	H		agree
+p1_r14	17	26	H		agree
+p1_r14	18	73	H		agree
+p1_r14	19	27	H		agree
+p1_r14	20	33	H		agree
+p1_r14	21	142	H		agree
+p1_r14	22	121	H		agree
+p1_r14	23	135	S	A:133|B:135	settled-image(AX-4612TR2): passB 135 confirmed, passA misread 133
+p1_r15	1	62	H		agree
+p1_r15	2	34	S	A:74|B:34	settled-image(AX-4612TR2): passB 34 confirmed, passA misread 74
+p1_r15	3	4	H		agree
+p1_r15	4	27	H		agree
+p1_r15	5	48	H		agree
+p1_r15	6	26	H		agree
+p1_r15	7	57	H		agree
+p1_r15	8	101	H		agree
+p1_r15	9	52	H		agree
+p1_r15	10	12	H		agree
+p1_r15	11	54	H		agree
+p1_r15	12	40	H		agree
+p1_r15	13	27	H		agree
+p1_r15	14	67	H		agree
+p1_r15	15	2	H		agree
+p1_r15	16	73	S	A:77|B:73	settled-image(AX-4612TR2): passB 73, moderate confidence, passA misread 77
+p1_r15	17	62	H		agree
+p1_r15	18	46	H		agree
+p1_r15	19	105	H		agree
+p1_r15	20	27	H		agree
+p1_r15	21	31	H		agree
+p1_r15	22	67	H		agree
+p1_r15	23	29	H		agree
+p1_r15	24	12	H		agree
+p1_r15	25	7	H		agree
+p1_r16	1	56	H		agree
+p1_r16	2	102	H		agree
+p1_r16	3	29	H		agree
+p1_r16	4	12	H		agree
+p1_r16	5	12	H		agree
+p1_r16	6	6	H		agree
+p1_r16	7	41	H		agree
+p1_r16	8	47	H		agree
+p1_r16	9	39	H		agree
+p1_r16	10	72	H		agree
+p1_r16	11	81	H		agree
+p1_r16	12	31	H		agree
+p1_r16	13	54	H		agree
+p1_r16	14	39	H		agree
+p1_r16	15	29	H		agree
+p1_r16	16	74	H		agree
+p1_r16	17	116	H		agree
+p1_r16	18	47	H		agree
+p1_r16	19	26	H		agree
+p1_r16	20	148	H		agree
+p1_r16	21	81	H		agree
+p1_r16	22	120	H		agree
+p1_r16	23	56	H		agree
+p1_r16	24	61	H		agree
+p1_r17	1	60	H		agree
+p1_r17	2	12	H		agree
+p1_r17	3	26	H		agree
+p1_r17	4	74	H		agree
+p1_r17	5	26	H		agree
+p1_r17	6	27	H		agree
+p1_r17	7	77	H		agree
+p1_r17	8	62	H		agree
+p1_r17	9	87	S	A:87|B:37	settled-image(AX-4612TR2): passA 87 confirmed, passB misread 37
+p1_r17	10	46	H		agree
+p1_r17	11	12	H		agree
+p1_r17	12	88	H		agree
+p1_r17	13	77	H		agree
+p1_r17	14	116	H		agree
+p1_r17	15	68	H		agree
+p1_r17	16	117	H		agree
+p1_r17	17	2	H		agree
+p1_r17	18	22	H		agree
+p1_r17	19	91	H		agree
+p1_r17	20	64	H		agree
+p1_r17	21	119	H		agree
+p1_r17	22	27	H		agree
+p1_r17	23	77	H		agree
+p1_r17	24	69	H		agree
+p1_r17	25	33	H		agree
+p1_r18	1	16	H		agree
+p1_r18	2	111	H		agree
+p1_r18	3	37	H		agree
+p1_r18	4	49	H		agree
+p1_r18	5	4	H		agree
+p1_r18	6	33	H		agree
+p1_r18	7	=Et	H		agree
+p1_r18	8	?	M	A:=daultres|B:=d'aultres	unsettled-diff
+p1_r18	9	=places	H		agree
+p1_r18	10	=ou	H		agree
+p1_r18	11	=nous	H		agree
+p1_r18	12	=faisons	H		agree
+p1_r18	13	=amasser	H		agree
+p1_r18	14	=le	H		agree
+p1_r18	15	=plus	H		agree
+p1_r18	16	=de	H		agree
+p1_r18	17	=deniers	M		agree-flagged
+p1_r18	18	?	M	A:=que|B:=en	unsettled-diff
+p1_r18	19	=nous	H		agree
+p1_r19	1	=pourrons,	H	A:=pourrons,|B:=pourrons	settled-case-only
+p1_r19	2	=et	H		agree
+p1_r19	3	=la	H		agree
+p1_r19	4	=distribuer	H		agree
+p1_r19	5	=aux	H		agree
+p1_r19	6	=gens	H		agree
+p1_r19	7	=de	H		agree
+p1_r19	8	=guerre.	H	A:=guerre.|B:=guerre	settled-case-only
+p1_r19	9	81	H		agree
+p1_r19	10	2	H		agree
+p1_r19	11	56	H		agree
+p1_r19	12	51	H		agree
+p1_r19	13	62	H		agree
+p1_r19	14	3	H		agree
+p1_r19	15	33	H		agree
+p1_r19	16	63	H		agree
+p1_r19	17	54	H		agree
+p1_r19	18	36	H		agree
+p1_r19	19	26	H		agree
+p1_r19	20	81	H		agree
+p1_r19	21	27	H		agree
+p1_r19	22	33	H		agree
+p1_r20	1	49	H		agree
+p1_r20	2	2	H		agree
+p1_r20	3	91	H		agree
+p1_r20	4	4	H		agree
+p1_r20	5	4	H		agree
+p1_r20	6	49	H		agree
+p1_r20	7	101	H		agree
+p1_r20	8	82	H		agree
+p1_r20	9	2	H		agree
+p1_r20	10	12	H		agree
+p1_r20	11	26	H		agree
+p1_r20	12	105	H		agree
+p1_r20	13	67	H		agree
+p1_r20	14	350	M		agree-flagged
+p1_r20	15	=Et	H		agree
+p1_r20	16	=esperons	H		agree
+p1_r20	17	=que	H		agree
+p1_r20	18	=plaisir	H		agree
+p1_r20	19	?	M	A:=nous|B:=vous	unsettled-diff
+p1_r20	20	?	M	A:=soyt|B:=face	unsettled-diff
+p1_r21	1	=demain,	H	A:=demain,|B:=demain	settled-case-only
+p1_r21	2	61	H		agree
+p1_r21	3	36	H		agree
+p1_r21	4	47	H		agree
+p1_r21	5	59	H		agree
+p1_r21	6	22	H		agree
+p1_r21	7	77	H		agree
+p1_r21	8	26	H		agree
+p1_r21	9	12	H		agree
+p1_r21	10	276	H		agree
+p1_r21	11	59	H		agree
+p1_r21	12	37	H		agree
+p1_r21	13	25	H		agree
+p1_r21	14	12	H		agree
+p1_r21	15	45	H		agree
+p1_r21	16	27	H		agree
+p1_r21	17	62	H		agree
+p1_r21	18	101	H		agree
+p1_r21	19	72	H		agree
+p1_r21	20	84	H		agree
+p1_r21	21	47	H		agree
+p1_r21	22	2	H		agree
+p1_r21	23	33	H		agree
+p1_r22	1	9	H		agree
+p1_r22	2	118	H		agree
+p1_r22	3	47	H		agree
+p1_r22	4	3	H		agree
+p1_r22	5	12	H		agree
+p1_r22	6	25	H		agree
+p1_r22	7	=Tout	H		agree
+p1_r22	8	=a	H		agree
+p1_r22	9	?	M	A:=payé|B:=paix	unsettled-diff
+p1_r22	10	=de	H		agree
+p1_r22	11	=deux	H		agree
+p1_r22	12	?	M	A:=la|B:=Iasme	unsettled-diff
+p1_r22	13	?	M	A:=moys,|B:(none)	unsettled-diff
+p1_r22	14	9	H		agree
+p1_r22	15	39	H		agree
+p1_r22	16	54	H		agree
+p1_r22	17	40	H		agree
+p1_r22	18	27	H		agree
+p1_r22	19	61	H		agree
+p1_r22	20	?	M	A:34|B:84	unsettled-diff
+p1_r22	21	4	H		agree
+p1_r22	22	?	M	A:23|B:28	unsettled-diff
+p1_r22	23	48	H		agree
+p1_r22	24	27	H		agree
+p1_r23	1	81	H		agree
+p1_r23	2	2	H		agree
+p1_r23	3	72	H		agree
+p1_r23	4	117	H		agree
+p1_r23	5	66	H		agree
+p1_r23	6	42	H		agree
+p1_r23	7	?	M	A:130|B:150	unsettled-diff
+p1_r23	8	138	H		agree
+p1_r23	9	8	H		agree
+p1_r23	10	4	H		agree
+p1_r23	11	16	H		agree
+p1_r23	12	48	H		agree
+p1_r23	13	112	H		agree
+p1_r23	14	339	H		agree
+p1_r23	15	81	H		agree
+p1_r23	16	33	H		agree
+p1_r23	17	12	H		agree
+p1_r23	18	36	H		agree
+p1_r23	19	46	H		agree
+p1_r23	20	48	H		agree
+p1_r23	21	114	H		agree
+p1_r23	22	337	H		agree
+p1_r24	1	?	M	A:=on|B:=Or	unsettled-diff
+p1_r24	2	?	M	A:=a|B:=ça	unsettled-diff
+p1_r24	3	?	M	A:=mis|B:=mon	unsettled-diff
+p1_r24	4	=aduis	H		agree
+p1_r24	5	82	H		agree
+p1_r24	6	26	H		agree
+p1_r24	7	76	H		agree
+p1_r24	8	2	H		agree
+p1_r24	9	33	H		agree
+p1_r24	10	35	H		agree
+p1_r24	11	69	H		agree
+p1_r24	12	12	H		agree
+p1_r24	13	57	H		agree
+p1_r24	14	36	H		agree
+p1_r24	15	129	H		agree
+p1_r24	16	138	M		agree-flagged
+p1_r24	17	59	H		agree
+p1_r24	18	38	H		agree
+p1_r24	19	25	H		agree
+p1_r24	20	81	H		agree
+p1_r24	21	2	H		agree
+p1_r24	22	83	H		agree
+p1_r24	23	67	H		agree
+p1_r24	24	28	H		agree
+p1_r25	1	3	H		agree
+p1_r25	2	81	H		agree
+p1_r25	3	2	H		agree
+p1_r25	4	61	H		agree
+p1_r25	5	81	H		agree
+p1_r25	6	2	H		agree
+p1_r25	7	33	H		agree
+p1_r25	8	11	H		agree
+p1_r25	9	5	H		agree
+p1_r25	10	28	H		agree
+p1_r25	11	42	H		agree
+p1_r25	12	56	H		agree
+p1_r25	13	102	H		agree
+p1_r25	14	29	H		agree
+p1_r25	15	12	H		agree
+p1_r25	16	211	M		agree-flagged
+p1_r25	17	32	H		agree
+p1_r25	18	75	H		agree
+p1_r25	19	104	H		agree
+p1_r25	20	26	H		agree
+p1_r25	21	62	H		agree
+p1_r25	22	12	H		agree
+p1_r25	23	67	H		agree
+p1_r25	24	30	H		agree
+p1_r26	1	56	H		agree
+p1_r26	2	36	H		agree
+p1_r26	3	25	H		agree
+p1_r26	4	82	H		agree
+p1_r26	5	26	H		agree
+p1_r26	6	71	H		agree
+p1_r26	7	?	M	A:51|B:81	unsettled-diff
+p1_r26	8	?	M	A:34|B:84	unsettled-diff
+p1_r26	9	24	H		agree
+p1_r26	10	12	H		agree
+p1_r26	11	47	H		agree
+p1_r26	12	71	H		agree
+p1_r26	13	101	H		agree
+p1_r26	14	73	H		agree
+p1_r26	15	23	H		agree
+p1_r26	16	41	H		agree
+p1_r26	17	312	M		agree-flagged
+p1_r26	18	81	H		agree
+p1_r26	19	31	H		agree
+p1_r26	20	314	M		agree-flagged
+p1_r26	21	12	H		agree
+p1_r26	22	43	H		agree
+p1_r26	23	116	H		agree
+p1_r27	1	4	H		agree
+p1_r27	2	22	H		agree
+p1_r27	3	71	H		agree
+p1_r27	4	100	H		agree
+p1_r27	5	14	H		agree
+p1_r27	6	4	H		agree
+p1_r27	7	34	H		agree
+p1_r27	8	9	H		agree
+p1_r27	9	5	H		agree
+p1_r27	10	47	H		agree
+p1_r27	11	14	H		agree
+p1_r27	12	4	H		agree
+p1_r27	13	52	H		agree
+p1_r27	14	150	H		agree
+p1_r27	15	19	H		agree
+p1_r27	16	22	H		agree
+p1_r27	17	33	H		agree
+p1_r27	18	4	H		agree
+p1_r27	19	4	H		agree
+p1_r27	20	52	H		agree
+p1_r27	21	81	H		agree
+p1_r27	22	26	H		agree
+p1_r27	23	57	H		agree
+p1_r27	24	66	H		agree
+p1_r27	25	4	H		agree
+p1_r27	26	7	H		agree
+p1_r27	27	149	H		agree
+p1_r28	1	6	H		agree
+p1_r28	2	25	H		agree
+p1_r28	3	62	H		agree
+p1_r28	4	13	H		agree
+p1_r28	5	67	H		agree
+p1_r28	6	28	H		agree
+p1_r28	7	72	H		agree
+p1_r28	8	59	H		agree
+p1_r28	9	38	H		agree
+p1_r28	10	22	H		agree
+p1_r28	11	66	H		agree
+p1_r28	12	52	H		agree
+p1_r28	13	26	H		agree
+p1_r28	14	105	H		agree
+p1_r28	15	67	H		agree
+p1_r28	16	7	H		agree
+p1_r28	17	2	H		agree
+p1_r28	18	33	H		agree
+p1_r28	19	8	H		agree
+p1_r28	20	2	H		agree
+p1_r28	21	61	H		agree
+p1_r28	22	3	M		agree-flagged
+p1_r28	23	77	H		agree
+p1_r28	24	9	H		agree
+p1_r28	25	39	H		agree
+p1_r28	26	12	H		agree
+p1_r28	27	39	H		agree
+p1_r29	1	48	H		agree
+p1_r29	2	7	H		agree
+p1_r29	3	5	H		agree
+p1_r29	4	29	H		agree
+p1_r29	5	48	H		agree
+p1_r29	6	115	H		agree
+p1_r29	7	86	H		agree
+p1_r29	8	44	H		agree
+p1_r29	9	68	H		agree
+p1_r29	10	5	H		agree
+p1_r29	11	26	H		agree
+p1_r29	12	=qui	H		agree
+p1_r29	13	=sera	H		agree
+p1_r29	14	=bon	H		agree
+p1_r29	15	?	M	A:=remboursé|B:=a	unsettled-diff
+p1_r30	16	?	M	A:(none)|B:=rembourser	unsettled-diff
+p1_r29	16	=de	H		agree
+p1_r29	17	?	M	A:=ce|B:=a	unsettled-diff
+p1_r29	18	?	M	A:=que|B:=qu'a	unsettled-diff
+p1_r29	19	=nous	H		agree
+p1_r29	20	?	M	A:=devons|B:=depuis	unsettled-diff
+p1_r31	1	?	M	A:(none)|B:=a	unsettled-diff
+p1_r31	2	?	M	A:(none)|B:=fin	unsettled-diff
+p1_r31	3	?	M	A:(none)|B:=telle	unsettled-diff
+p1_r31	4	?	M	A:(none)|B:=chose	unsettled-diff
+p1_r29	21	=de	H		agree
+p1_r29	22	?	M	A:=frans|B:=au	unsettled-diff
+p1_r30	1	?	M	A:=a|B:(none)	unsettled-diff
+p1_r30	2	?	M	A:=fera|B:(none)	unsettled-diff
+p1_r30	3	?	M	A:=cela|B:(none)	unsettled-diff
+p1_r30	4	?	M	A:=cause|B:(none)	unsettled-diff
+p1_r30	5	?	M	A:=de|B:(none)	unsettled-diff
+p1_r30	6	?	M	A:=nos|B:(none)	unsettled-diff
+p1_r30	7	=gens	H		agree
+p1_r30	8	=de	H		agree
+p1_r30	9	=guerre.	H	A:=guerre.|B:=guerre	settled-case-only
+p1_r30	10	?	M	A:=C'est|B:=Comme	unsettled-diff
+p1_r30	11	?	M	A:=nostre|B:=l'auons	unsettled-diff
+p1_r30	12	?	M	A:=amour|B:=dit	unsettled-diff
+p1_r30	13	?	M	A:=icy,|B:(none)	unsettled-diff
+p1_r30	14	9	H		agree
+p1_r30	15	39	H		agree
+p1_r30	16	59	H		agree
+p1_r30	17	40	H		agree
+p1_r30	18	25	H		agree
+p1_r30	19	55	H		agree
+p1_r30	20	85	H		agree
+p1_r30	21	5	H		agree
+p1_r30	22	16	H		agree
+p1_r30	23	105	H		agree
+p1_r30	24	67	H		agree
+p1_r30	25	82	H		agree
+p1_r31	1	53	H		agree
+p1_r31	2	23	H		agree
+p1_r31	3	12	H		agree
+p1_r31	4	45	H		agree
+p1_r31	5	26	H		agree
+p1_r31	6	92	H		agree
+p1_r31	7	66	H		agree
+p1_r31	8	4	H		agree
+p1_r31	9	77	H		agree
+p1_r31	10	54	H		agree
+p1_r31	11	119	H		agree
+p1_r31	12	66	H		agree
+p1_r31	13	67	H		agree
+p1_r31	14	9	H		agree
+p1_r31	15	112	H		agree
+p1_r31	16	47	H		agree
+p1_r31	17	61	H		agree
+p1_r31	18	41	H		agree
+p1_r31	19	82	H		agree
+p1_r31	20	68	H		agree
+p1_r31	21	77	H		agree
+p1_r31	22	150	H		agree
+p1_r31	23	148	H		agree
+p1_r32	1	77	H		agree
+p1_r32	2	51	H		agree
+p1_r32	3	5	H		agree
+p1_r32	4	26	H		agree
+p1_r32	5	7	H		agree
+p1_r32	6	311	H		agree
+p1_r32	7	12	H		agree
+p1_r32	8	12	H		agree
+p1_r32	9	6	H		agree
+p1_r32	10	41	H		agree
+p1_r32	11	47	H		agree
+p1_r32	12	36	H		agree
+p1_r32	13	72	H		agree
+p1_r32	14	104	H		agree
+p1_r32	15	114	H		agree
+p1_r32	16	81	H		agree
+p1_r32	17	26	H		agree
+p1_r32	18	33	H		agree
+p1_r32	19	79	H		agree
+p1_r32	20	40	H		agree
+p1_r32	21	33	H		agree
+p1_r32	22	7	H		agree
+p1_r32	23	22	H		agree
+p1_r33	1	76	H		agree
+p1_r33	2	101	H		agree
+p1_r33	3	2	H		agree
+p1_r33	4	63	H		agree
+p1_r33	5	115	H		agree
+p1_r33	6	54	H		agree
+p1_r33	7	40	H		agree
+p1_r33	8	27	H		agree
+p1_r33	9	83	H		agree
+p1_r33	10	81	H		agree
+p1_r33	11	2	H		agree
+p1_r33	12	77	H		agree
+p1_r33	13	60	H		agree
+p1_r33	14	12	H		agree
+p1_r33	15	29	H		agree
+p1_r33	16	74	H		agree
+p1_r33	17	112	H		agree
+p1_r33	18	11	H		agree
+p1_r33	19	33	H		agree
+p1_r33	20	60	H		agree
+p1_r33	1001	?	M	A:(none)|B:=d'autour	unsettled-diff-insert-only-in-B
+p1_r33	1002	?	M	A:(none)|B:=nostre	unsettled-diff-insert-only-in-B
+p1_r33	1003	?	M	A:(none)|B:=pais	unsettled-diff-insert-only-in-B
+p1_r33	21	=de	H		agree
+p1_r33	22	?	M	A:109|B:=Wesel	unsettled-diff
+p1_r33	23	?	M	A:=a|B:(none)	unsettled-diff
+p1_r33	24	?	M	A:=fes|B:(none)	unsettled-diff
+p1_r33	25	?	M	A:=cy|B:(none)	unsettled-diff
+p1_r34	1	?	M	A:=par|B:(none)	unsettled-diff
+p1_r34	2	?	M	A:=de|B:(none)	unsettled-diff
+p1_r34	3	?	M	A:=chupa.|B:(none)	unsettled-diff
+p1_r34	4	?	M	A:=Comme|B:(none)	unsettled-diff
+p1_r34	5	12	H		agree
+p1_r34	6	279	H		agree
+p1_r34	7	104	H		agree
+p1_r34	8	114	H		agree
+p1_r34	9	55	H		agree
+p1_r34	10	81	H		agree
+p1_r34	11	4	H		agree
+p1_r34	12	83	H		agree
+p1_r34	13	82	H		agree
+p1_r34	14	2	H		agree
+p1_r34	15	32	H		agree
+p1_r34	16	12	H		agree
+p1_r34	17	26	H		agree
+p1_r34	18	31	H		agree
+p1_r34	19	79	H		agree
+p1_r34	20	38	H		agree
+p1_r34	21	29	H		agree
+p1_r35	1	42	H		agree
+p1_r35	2	26	H		agree
+p1_r35	3	34	H		agree
+p1_r35	4	38	H		agree
+p1_r35	5	22	H		agree
+p1_r35	6	29	H		agree
+p1_r35	7	81	H		agree
+p1_r35	8	31	H		agree
+p1_r35	9	54	H		agree
+p1_r35	10	72	H		agree
+p1_r35	11	69	H		agree
+p1_r35	12	2	H		agree
+p1_r35	13	33	H		agree
+p1_r35	14	56	H		agree
+p1_r35	15	65	H		agree
+p1_r35	16	6	H		agree
+p1_r35	17	40	H		agree
+p1_r35	18	72	H		agree
+p1_r35	19	12	H		agree
+p1_r35	20	54	H		agree
+p1_r35	21	27	H		agree
+p1_r35	22	?	M	A:33|B:37	unsettled-diff
+p1_r35	23	67	H		agree
+p1_r36	1	84	H		agree
+p1_r36	2	101	H		agree
+p1_r36	3	73	H		agree
+p1_r36	4	?	M	A:51|B:81	unsettled-diff
+p1_r36	5	22	H		agree
+p1_r36	6	85	H		agree
+p1_r36	7	116	H		agree
+p1_r36	8	57	H		agree
+p1_r36	9	28	H		agree
+p1_r36	10	71	H		agree
+p1_r36	11	27	H		agree
+p1_r36	12	22	H		agree
+p1_r36	13	42	H		agree
+p1_r36	14	27	H		agree
+p1_r36	15	74	H		agree
+p1_r36	16	115	H		agree
+p1_r36	17	11	H		agree
+p1_r36	18	31	M		agree-flagged
+p1_r36	19	59	H		agree
+p1_r36	20	86	H		agree
+p1_r36	21	66	H		agree
+p1_r36	22	4	H		agree
+p1_r36	23	9	H		agree
+p1_r36	24	101	H		agree
+p1_r37	1	30	H		agree
+p1_r37	2	12	H		agree
+p1_r37	3	56	H		agree
+p1_r37	4	26	H		agree
+p1_r37	5	72	H		agree
+p1_r37	6	22	H		agree
+p1_r37	7	56	H		agree
+p1_r37	8	22	H		agree
+p1_r37	9	42	H		agree
+p1_r37	10	13	H		agree
+p1_r37	11	33	H		agree
+p1_r37	12	311	H		agree
+p1_r37	13	=comme	H		agree
+p1_r37	14	?	M	A:=cy|B:=on	unsettled-diff
+p1_r37	15	=a	H		agree
+p1_r37	16	=fait	H		agree
+p1_r37	17	?	M	A:=naguere|B:=nagueres	unsettled-diff
+p1_r37	18	=pour	H		agree
+p1_r37	19	4	H		agree
+p1_r37	20	39	H		agree
+p1_r37	21	101	H		agree
+p1_r37	22	111	H		agree
+p1_r37	23	44	H		agree
+p1_r37	24	4	H		agree
+p2_r01	1	81	H		agree
+p2_r01	2	33	H		agree
+p2_r01	3	12	H		agree
+p2_r01	4	201	H		agree
+p2_r01	5	54	H		agree
+p2_r01	6	84	H		agree
+p2_r01	7	4	H		agree
+p2_r01	8	61	H		agree
+p2_r01	9	22	H		agree
+p2_r01	10	68	H		agree
+p2_r01	11	82	H		agree
+p2_r01	12	69	H		agree
+p2_r01	13	4	H		agree
+p2_r01	14	84	H		agree
+p2_r01	15	76	H		agree
+p2_r01	16	2	H		agree
+p2_r01	17	32	H		agree
+p2_r01	18	62	H		agree
+p2_r01	19	54	H		agree
+p2_r01	20	40	H		agree
+p2_r01	21	26	H		agree
+p2_r01	22	81	H		agree
+p2_r01	23	2	H		agree
+p2_r02	1	84	H		agree
+p2_r02	2	39	H		agree
+p2_r02	3	77	H		agree
+p2_r02	4	69	H		agree
+p2_r02	5	5	H		agree
+p2_r02	6	26	H		agree
+p2_r02	7	=M.	H	A:=M.|B:=M	settled-case-only
+p2_r02	8	?	M	A:=refaismoy|B:=respondez	unsettled-diff
+p2_r02	9	?	M	A:(none)|B:=moy	unsettled-diff
+p2_r02	9	=quil	H		agree
+p2_r02	10	=vous	H		agree
+p2_r02	11	?	M	A:=plaira|B:=plaise	unsettled-diff
+p2_r02	12	=me	H		agree
+p2_r02	13	=mander	H		agree
+p2_r02	14	?	M	A:=bien|B:=vre	unsettled-diff
+p2_r02	15	=laduis	H		agree
+p2_r02	16	=sur	H		agree
+p2_r02	17	=toutes	H		agree
+p2_r02	18	=choses	M		agree-flagged
+p2_r03	1	=plus	H		agree
+p2_r03	2	=tost	H		agree
+p2_r03	3	=que	H		agree
+p2_r03	4	=vous	H		agree
+p2_r03	5	=pourrez	H		agree
+p2_r03	6	=et	H		agree
+p2_r03	7	=ce	H		agree
+p2_r03	8	=que	H		agree
+p2_r03	9	=vous	H		agree
+p2_r03	10	?	M	A:=semblera|B:=submectra	unsettled-diff
+p2_r03	11	?	M	A:=meilleur|B:=pourueoir	unsettled-diff
+p2_r03	12	?	M	A:(none)|B:=que	unsettled-diff
+p2_r03	13	?	M	A:(none)|B:=Je	unsettled-diff
+p2_r03	14	?	M	A:(none)|B:=fais	unsettled-diff
+p2_r03	12	=comme	H		agree
+p2_r03	13	?	M	A:=a|B:=de	unsettled-diff
+p2_r03	14	=moy	H		agree
+p2_r03	15	?	M	A:=ne|B:=espere	unsettled-diff
+p2_r03	16	?	M	A:=sera|B:=Iesus	unsettled-diff
+p2_r03	17	?	M	A:=point|B:=vray	unsettled-diff
+p2_r03	18	?	M	A:=affaire|B:(none)	unsettled-diff
+p2_r04	1	?	M	A:=suy|B:(none)	unsettled-diff
+p2_r04	2	=delibere	H		agree
+p2_r04	3	=de	H		agree
+p2_r04	4	=ne	H		agree
+p2_r04	5	=passer	H		agree
+p2_r04	6	?	M	A:=aucun|B:=vng	unsettled-diff
+p2_r04	7	=seul	H		agree
+p2_r04	8	=jour	H		agree
+p2_r04	9	=que	H		agree
+p2_r04	10	=je	H		agree
+p2_r04	11	=ne	H		agree
+p2_r04	12	?	M	A:=face|B:=fais	unsettled-diff
+p2_r04	13	?	M	A:=bien|B:=vng	unsettled-diff
+p2_r04	14	=gaigner	H		agree
+p2_r04	15	=au	H		agree
+p2_r04	16	?	M	A:=pedan|B:=pedar	unsettled-diff
+p2_r04	17	=sa	H		agree
+p2_r04	18	?	M	A:=peine|B:=pedre	unsettled-diff
+p2_r04	19	=quil	H		agree
+p2_r05	1	4	H		agree
+p2_r05	2	=goutz	H		agree
+p2_r05	3	145	H		agree
+p2_r05	4	127	H		agree
+p2_r05	5	54	H		agree
+p2_r05	6	40	H		agree
+p2_r05	7	26	H		agree
+p2_r05	8	62	H		agree
+p2_r05	9	84	H		agree
+p2_r05	10	4	H		agree
+p2_r05	11	28	H		agree
+p2_r05	12	7	H		agree
+p2_r05	13	29	H		agree
+p2_r05	14	34	H		agree
+p2_r05	15	40	H		agree
+p2_r05	16	22	H		agree
+p2_r05	17	26	H		agree
+p2_r05	18	101	H		agree
+p2_r05	19	8	H		agree
+p2_r05	20	33	H		agree
+p2_r05	21	66	H		agree
+p2_r05	22	102	H		agree
+p2_r05	23	72	H		agree
+p2_r06	1	77	H		agree
+p2_r06	2	61	H		agree
+p2_r06	3	82	H		agree
+p2_r06	4	75	H		agree
+p2_r06	5	42	H		agree
+p2_r06	6	82	H		agree
+p2_r06	7	26	H		agree
+p2_r06	8	62	H		agree
+p2_r06	9	12	H		agree
+p2_r06	10	279	H		agree
+p2_r06	11	15	H		agree
+p2_r06	12	62	H		agree
+p2_r06	13	111	H		agree
+p2_r06	14	61	H		agree
+p2_r06	15	84	H		agree
+p2_r06	16	4	H		agree
+p2_r06	17	26	H		agree
+p2_r06	18	15	H		agree
+p2_r06	19	69	H		agree
+p2_r06	20	47	H		agree
+p2_r06	21	26	H		agree
+p2_r06	22	72	H		agree
+p2_r07	1	12	H		agree
+p2_r07	2	79	H		agree
+p2_r07	3	40	H		agree
+p2_r07	4	77	H		agree
+p2_r07	5	65	H		agree
+p2_r07	6	48	H		agree
+p2_r07	7	78	H		agree
+p2_r07	8	85	H		agree
+p2_r07	9	64	H		agree
+p2_r07	10	40	H		agree
+p2_r07	11	111	H		agree
+p2_r07	12	83	S	A:33|B:83	settled-image(AX-4612TR2): passB 83 confirmed, passA misread 33
+p2_r07	13	67	H		agree
+p2_r07	14	47	H		agree
+p2_r07	15	4	H		agree
+p2_r07	16	34	H		agree
+p2_r07	17	81	H		agree
+p2_r07	18	36	H		agree
+p2_r07	19	26	H		agree
+p2_r07	20	73	H		agree
+p2_r07	21	9	H		agree
+p2_r07	22	4	H		agree
+p2_r07	23	30	H		agree
+p2_r08	1	75	H		agree
+p2_r08	2	101	H		agree
+p2_r08	3	83	S	A:33|B:83	settled-image(AX-4612TR2): passB 83 confirmed, passA misread 33
+p2_r08	4	84	H		agree
+p2_r08	5	26	H		agree
+p2_r08	6	33	H		agree
+p2_r08	7	67	H		agree
+p2_r08	8	9	H		agree
+p2_r08	9	4	H		agree
+p2_r08	10	72	H		agree
+p2_r08	11	105	H		agree
+p2_r08	12	115	H		agree
+p2_r08	13	120	S	A:12|B:120	settled-image(AX-4612TR2): passB 120 confirmed, passA misread 12
+p2_r08	14	30	H		agree
+p2_r08	15	33	H		agree
+p2_r08	16	9	H		agree
+p2_r08	17	87	H		agree
+p2_r08	18	5	H		agree
+p2_r08	19	150	H		agree
+p2_r08	20	46	H		agree
+p2_r08	21	101	H		agree
+p2_r08	22	30	H		agree
+p2_r09	1	54	M		agree-flagged
+p2_r09	2	40	H		agree
+p2_r09	3	26	H		agree
+p2_r09	4	54	H		agree
+p2_r09	5	36	H		agree
+p2_r09	6	27	H		agree
+p2_r09	7	59	H		agree
+p2_r09	8	38	H		agree
+p2_r09	9	22	H		agree
+p2_r09	10	84	H		agree
+p2_r09	11	102	H		agree
+p2_r09	12	69	H		agree
+p2_r09	13	2	H		agree
+p2_r09	14	30	H		agree
+p2_r09	15	25	S	A:15|B:25	settled-image(AX-4612TR2): passB 25 confirmed, passA misread 15
+p2_r09	16	4	H		agree
+p2_r09	17	65	H		agree
+p2_r09	18	37	H		agree
+p2_r09	19	112	H		agree
+p2_r09	20	33	H		agree
+p2_r09	21	67	H		agree
+p2_r10	1	56	H		agree
+p2_r10	2	27	H		agree
+p2_r10	3	71	H		agree
+p2_r10	4	22	H		agree
+p2_r10	5	=sil	H		agree
+p2_r10	6	=est	H		agree
+p2_r10	7	=possible	H		agree
+p2_r10	8	=Pour	H		agree
+p2_r10	9	=la	H		agree
+p2_r10	10	=fin	H		agree
+p2_r10	11	=de	H		agree
+p2_r10	12	?	M	A:=cestin|B:=ceste	unsettled-diff
+p2_r11	1	=Monsieur	H		agree
+p2_r11	2	=a	H		agree
+p2_r11	3	=la	H		agree
+p2_r11	4	=requeste	H		agree
+p2_r11	5	?	M	A:=daucuns|B:=daurmont	unsettled-diff
+p2_r11	6	=de	H		agree
+p2_r11	7	?	M	A:=mes|B:=mon	unsettled-diff
+p2_r11	8	?	M	A:=bons|B:=bon	unsettled-diff
+p2_r11	9	=amys	H		agree
+p2_r11	10	=je	H		agree
+p2_r11	11	=vous	H		agree
+p2_r11	12	?	M	A:=suppliray|B:=supplieray	unsettled-diff
+p2_r11	13	=affectueusement	H		agree
+p2_r12	1	=de	H		agree
+p2_r12	2	=donner	H		agree
+p2_r12	3	=charge	H		agree
+p2_r12	4	=a	H		agree
+p2_r12	5	?	M	A:=quelcun|B:=quelquun	unsettled-diff
+p2_r12	6	?	M	A:=de|B:=des	unsettled-diff
+p2_r12	7	?	M	A:=mes|B:(none)	unsettled-diff
+p2_r12	8	=amys	H		agree
+p2_r12	9	=de	H		agree
+p2_r12	10	=feu	H		agree
+p2_r12	11	=monsr	H		agree
+p2_r12	12	=de	H		agree
+p2_r12	13	?	M	A:=Maisonneuve|B:=maipustlieu	unsettled-diff
+p2_r12	14	=de	H		agree
+p2_r12	15	=regarder	H		agree
+p2_r13	1	=a	H		agree
+p2_r13	2	?	M	A:=tout|B:=tous	unsettled-diff
+p2_r13	3	=ce	H		agree
+p2_r13	4	=qui	H		agree
+p2_r13	5	?	M	A:=luy|B:=leur	unsettled-diff
+p2_r13	6	?	M	A:=pourra|B:=pouoit	unsettled-diff
+p2_r13	7	=apartenir	H		agree
+p2_r13	8	?	M	A:=hors|B:=bien	unsettled-diff
+p2_r13	9	=de	H		agree
+p2_r13	10	?	M	A:=poydens|B:=poy	unsettled-diff
+p2_r13	3	?	M	A:(none)|B:=dens	unsettled-diff
+p2_r13	11	=et	H		agree
+p2_r13	12	?	M	A:=en|B:=vn	unsettled-diff
+p2_r13	13	=fis	H		agree
+p2_r13	14	?	M	A:=auguerir|B:=auge	unsettled-diff
+p2_r13	15	=pour	H		agree
+p2_r13	16	=lemployer	H		agree
+p2_r14	1	=a	H		agree
+p2_r14	2	=sa	H		agree
+p2_r14	3	?	M	A:=pauvre|B:=pauure	unsettled-diff
+p2_r14	4	?	M	A:=vefve|B:=soeur	unsettled-diff
+p2_r14	5	=chargee	H		agree
+p2_r14	6	=dung	H		agree
+p2_r14	7	=nombre	H		agree
+p2_r14	8	=de	H		agree
+p2_r14	9	?	M	A:=petits|B:=petitz	unsettled-diff
+p2_r14	10	=enfans	H		agree
+p2_r14	11	?	M	A:=quils|B:=quilz	unsettled-diff
+p2_r14	12	=a	H		agree
+p2_r14	13	=laissez	H		agree
+p2_r14	14	=sans	H		agree
+p2_r14	15	=beaucoup	H		agree
+p2_r15	1	=de	H		agree
+p2_r15	2	=moyens	H		agree
+p2_r15	3	=Sil	H		agree
+p2_r15	4	=vous	H		agree
+p2_r15	5	?	M	A:=plaist|B:=plaise	unsettled-diff
+p2_r15	6	?	M	A:=fere|B:=le	unsettled-diff
+p2_r15	7	?	M	A:=une|B:=me	unsettled-diff
+p2_r16	1	?	M	A:=fortune|B:=faire	unsettled-diff
+p2_r15	2	?	M	A:(none)|B:=scauoir	unsettled-diff
+p2_r16	2	=ou	H		agree
+p2_r16	3	=je	H		agree
+p2_r16	4	=scay	H		agree
+p2_r16	5	=Jay	H		agree
+p2_r16	6	?	M	A:=moyen|B:=moyens	unsettled-diff
+p2_r16	7	=de	H		agree
+p2_r16	8	=luy	H		agree
+p2_r16	9	?	M	A:=envoyer|B:=renvoyer	unsettled-diff
+p2_r15	11	?	M	A:(none)|B:=se	unsettled-diff
+p2_r16	10	=a	H		agree
+p2_r16	11	?	M	A:=Sedan|B:=Seday	unsettled-diff
+p2_r16	12	=Ce	H		agree
+p2_r16	13	=sera	H		agree
+p2_r16	14	?	M	A:=doux|B:=doulx	unsettled-diff
+p2_r16	15	?	M	A:=souvenir|B:=hedewict	unsettled-diff
+p2_r17	1	=ou	H		agree
+p2_r17	2	?	M	A:=mon|B:=masseurance	unsettled-diff
+p2_r17	3	?	M	A:=assurance|B:=que	unsettled-diff
+p2_r17	4	?	M	A:=je|B:(none)	unsettled-diff
+p2_r17	5	=vous	H		agree
+p2_r17	6	?	M	A:=en|B:=laurez	unsettled-diff
+p2_r17	7	?	M	A:=ay|B:(none)	unsettled-diff
+p2_r17	8	=assez	H		agree
+p2_r17	9	?	M	A:=recommande|B:=recongneu	unsettled-diff
+p2_r17	10	=avec	H		agree
+p2_r17	11	?	M	A:=tant|B:=tout	unsettled-diff
+p2_r17	12	=ce	H		agree
+p2_r17	13	?	M	A:=qui|B:=quil	unsettled-diff
+p2_r17	14	?	M	A:=me|B:(none)	unsettled-diff
+p2_r17	15	=peult	H		agree
+p2_r17	16	=apartenir	H		agree
+p2_r18	1	=a	H		agree
+p2_r18	2	=ceulx	H		agree
+p2_r18	3	=qui	H		agree
+p2_r18	4	=vous	H		agree
+p2_r18	5	=lont	H		agree
+p2_r18	6	?	M	A:=faict|B:=fait	unsettled-diff
+p2_r18	7	?	M	A:=service|B:=scavoir	unsettled-diff
+p2_r18	8	=Je	H		agree
+p2_r18	9	=me	H		agree
+p2_r18	10	?	M	A:=recommanderay|B:=recommande	unsettled-diff
+p2_r18	11	?	M	A:=tres|B:=vous	unsettled-diff
+p2_r18	12	?	M	A:=humblement|B:=treshumblement	unsettled-diff
+p2_r18	13	=a	H		agree
+p2_r18	14	=vos	H		agree
+p2_r18	15	=bonnes	H		agree
+p2_r19	1	=graces	H		agree
+p2_r19	2	=suppliant	H		agree
+p2_r19	3	=Dieu	H		agree
+p2_r19	4	=quil	H		agree
+p2_r19	5	=vous	H		agree
+p2_r19	6	=doint	H		agree
+p2_r20	1	=Monsieur	H		agree
+p2_r20	2	?	M	A:=bonne|B:=Je	unsettled-diff
+p2_r20	3	?	M	A:=sante|B:=vous	unsettled-diff
+p2_r20	4	?	M	A:(none)|B:=fais	unsettled-diff
+p2_r20	5	?	M	A:(none)|B:=scauoir	unsettled-diff
+p2_r20	4	=tres	H		agree
+p2_r20	5	?	M	A:=longuevie|B:=longuement	unsettled-diff
+p2_r21	1	?	M	A:=Faict|B:=Dieu	unsettled-diff
+p2_r21	2	?	M	A:=ce|B:=Et	unsettled-diff
+p2_r20	10	?	M	A:(none)|B:=vre	unsettled-diff
+p2_r20	11	?	M	A:(none)|B:=Camp	unsettled-diff
+p2_r20	12	?	M	A:(none)|B:=a	unsettled-diff
+p2_r20	13	?	M	A:(none)|B:=Maestricht	unsettled-diff
+p2_r21	1	?	M	A:(none)|B:=au	unsettled-diff
+p2_r21	2	?	M	A:(none)|B:=present	unsettled-diff
+p2_r21	3	=jour	H		agree
+p2_r21	4	=de	H		agree
+p2_r21	5	=mars	H		agree
+p2_r21	6	=1574	S	A:=1574|B:1574	settled-image(AX-4612TR2): clear-text date, both passes read the same value
+p2_r21	7	?	M	A:=En|B:(none)	unsettled-diff
+p2_r21	8	?	M	A:=vre|B:(none)	unsettled-diff
+p2_r21	9	?	M	A:=Camp|B:(none)	unsettled-diff
+p2_r21	10	?	M	A:=a|B:(none)	unsettled-diff
+p2_r21	11	?	M	A:=Marche|B:(none)	unsettled-diff

@@ -1,0 +1,33 @@
+page	line	pos	A	B	settled	why
+p1	p1_r04	27	(none)	9	?	unsettled -- ambiguous or not checked against image within the box
+p1	p1_r04	12	51	81	?	unsettled -- ambiguous or not checked against image within the box
+p1	p1_r04	26	67	68	68	settled-image(AX-4612TR2): passB 68 confirmed, passA misread 67
+p1	p1_r05	21	73	13	?	unsettled -- ambiguous or not checked against image within the box
+p1	p1_r06	6	8A	84	84	"settled-image(AX-4612TR2): passB 84 confirmed, passA garbled ""8A"""
+p1	p1_r06	12	113	118	118	settled-image(AX-4612TR2): passB 118 confirmed, passA misread 113
+p1	p1_r06	18	74	34	?	unsettled -- ambiguous or not checked against image within the box
+p1	p1_r07	7	53	83	83	settled-image(AX-4612TR2): passB 83 confirmed, passA misread 53
+p1	p1_r07	8	74	97	97	settled-image(AX-4612TR2): passB 97 confirmed, passA misread 74
+p1	p1_r09	5	28	22	?	unsettled -- ambiguous or not checked against image within the box
+p1	p1_r09	11	113	13	13	settled-image(AX-4612TR2): passB 13 confirmed (compact glyph), passA misread 113
+p1	p1_r10	3	10	20	?	unsettled -- ambiguous or not checked against image within the box
+p1	p1_r10	4	38	78	?	unsettled -- ambiguous or not checked against image within the box
+p1	p1_r10	25	38	88	?	unsettled -- ambiguous or not checked against image within the box
+p1	p1_r11	15	130	150	150	settled-image(AX-4612TR2): passB 150 confirmed, passA misread 130
+p1	p1_r14	23	133	135	135	settled-image(AX-4612TR2): passB 135 confirmed, passA misread 133
+p1	p1_r15	2	74	34	34	settled-image(AX-4612TR2): passB 34 confirmed, passA misread 74
+p1	p1_r15	16	77	73	73	settled-image(AX-4612TR2): passB 73, moderate confidence, passA misread 77
+p1	p1_r17	9	87	37	87	settled-image(AX-4612TR2): passA 87 confirmed, passB misread 37
+p1	p1_r22	20	34	84	?	unsettled -- ambiguous or not checked against image within the box
+p1	p1_r22	22	23	28	?	unsettled -- ambiguous or not checked against image within the box
+p1	p1_r23	7	130	150	?	unsettled -- ambiguous or not checked against image within the box
+p1	p1_r26	7	51	81	?	unsettled -- ambiguous or not checked against image within the box
+p1	p1_r26	8	34	84	?	unsettled -- ambiguous or not checked against image within the box
+p1	p1_r33	22	109	=Wesel	?	unsettled -- ambiguous or not checked against image within the box
+p1	p1_r35	22	33	37	?	unsettled -- ambiguous or not checked against image within the box
+p1	p1_r36	4	51	81	?	unsettled -- ambiguous or not checked against image within the box
+p2	p2_r07	12	33	83	83	settled-image(AX-4612TR2): passB 83 confirmed, passA misread 33
+p2	p2_r08	3	33	83	83	settled-image(AX-4612TR2): passB 83 confirmed, passA misread 33
+p2	p2_r08	13	12	120	120	settled-image(AX-4612TR2): passB 120 confirmed, passA misread 12
+p2	p2_r09	15	15	25	25	settled-image(AX-4612TR2): passB 25 confirmed, passA misread 15
+p2	p2_r21	6	=1574	1574	=1574	settled-image(AX-4612TR2): clear-text date, both passes read the same value

@@ -1,0 +1,91 @@
+page	a_line	a_pos	b_line	b_pos	a_tok	b_tok	kind
+p2	p2_r02	7	p2_r02	7	=M.	=M	clear
+p2	p2_r02	8	p2_r02	8	=refaismoy	=respondez	clear
+p2			p2_r02	9		=moy	clear
+p2	p2_r02	11	p2_r02	12	=plaira	=plaise	clear
+p2	p2_r02	14	p2_r02	15	=bien	=vre	clear
+p2	p2_r03	10	p2_r03	10	=semblera	=submectra	clear
+p2	p2_r03	11	p2_r03	11	=meilleur	=pourueoir	clear
+p2			p2_r03	12		=que	clear
+p2			p2_r03	13		=Je	clear
+p2			p2_r03	14		=fais	clear
+p2	p2_r03	13	p2_r03	16	=a	=de	clear
+p2	p2_r03	15	p2_r03	18	=ne	=espere	clear
+p2	p2_r03	16	p2_r03	19	=sera	=Iesus	clear
+p2	p2_r03	17	p2_r04	1	=point	=vray	clear
+p2	p2_r03	18			=affaire		clear
+p2	p2_r04	1			=suy		clear
+p2	p2_r04	6	p2_r04	6	=aucun	=vng	clear
+p2	p2_r04	12	p2_r04	12	=face	=fais	clear
+p2	p2_r04	13	p2_r04	13	=bien	=vng	clear
+p2	p2_r04	16	p2_r04	16	=pedan	=pedar	clear
+p2	p2_r04	18	p2_r04	18	=peine	=pedre	clear
+p2	p2_r07	12	p2_r07	12	33	83	numeral
+p2	p2_r08	3	p2_r08	3	33	83	numeral
+p2	p2_r08	13	p2_r08	13	12	120	numeral
+p2	p2_r09	15	p2_r09	15	15	25	numeral
+p2	p2_r10	12	p2_r10	12	=cestin	=ceste	clear
+p2	p2_r11	5	p2_r10	17	=daucuns	=daurmont	clear
+p2	p2_r11	7	p2_r11	2	=mes	=mon	clear
+p2	p2_r11	8	p2_r11	3	=bons	=bon	clear
+p2	p2_r11	12	p2_r11	7	=suppliray	=supplieray	clear
+p2	p2_r12	5	p2_r11	13	=quelcun	=quelquun	clear
+p2	p2_r12	6	p2_r11	14	=de	=des	clear
+p2	p2_r12	7			=mes		clear
+p2	p2_r12	13	p2_r12	6	=Maisonneuve	=maipustlieu	clear
+p2	p2_r13	2	p2_r12	10	=tout	=tous	clear
+p2	p2_r13	5	p2_r12	13	=luy	=leur	clear
+p2	p2_r13	6	p2_r12	14	=pourra	=pouoit	clear
+p2	p2_r13	8	p2_r12	16	=hors	=bien	clear
+p2	p2_r13	10	p2_r13	2	=poydens	=poy	clear
+p2			p2_r13	3		=dens	clear
+p2	p2_r13	12	p2_r13	5	=en	=vn	clear
+p2	p2_r13	14	p2_r13	7	=auguerir	=auge	clear
+p2	p2_r14	3	p2_r13	12	=pauvre	=pauure	clear
+p2	p2_r14	4	p2_r13	13	=vefve	=soeur	clear
+p2	p2_r14	9	p2_r14	2	=petits	=petitz	clear
+p2	p2_r14	11	p2_r14	4	=quils	=quilz	clear
+p2	p2_r15	5	p2_r14	13	=plaist	=plaise	clear
+p2	p2_r15	6	p2_r14	14	=fere	=le	clear
+p2	p2_r15	7	p2_r14	15	=une	=me	clear
+p2	p2_r16	1	p2_r15	1	=fortune	=faire	clear
+p2			p2_r15	2		=scauoir	clear
+p2	p2_r16	6	p2_r15	7	=moyen	=moyens	clear
+p2	p2_r16	9	p2_r15	10	=envoyer	=renvoyer	clear
+p2			p2_r15	11		=se	clear
+p2	p2_r16	11	p2_r15	13	=Sedan	=Seday	clear
+p2	p2_r16	14	p2_r15	16	=doux	=doulx	clear
+p2	p2_r16	15	p2_r15	17	=souvenir	=hedewict	clear
+p2	p2_r17	2	p2_r16	2	=mon	=masseurance	clear
+p2	p2_r17	3	p2_r16	3	=assurance	=que	clear
+p2	p2_r17	4			=je		clear
+p2	p2_r17	6	p2_r16	5	=en	=laurez	clear
+p2	p2_r17	7			=ay		clear
+p2	p2_r17	9	p2_r16	7	=recommande	=recongneu	clear
+p2	p2_r17	11	p2_r17	1	=tant	=tout	clear
+p2	p2_r17	13	p2_r17	3	=qui	=quil	clear
+p2	p2_r17	14			=me		clear
+p2	p2_r18	6	p2_r17	11	=faict	=fait	clear
+p2	p2_r18	7	p2_r17	12	=service	=scavoir	clear
+p2	p2_r18	10	p2_r17	15	=recommanderay	=recommande	clear
+p2	p2_r18	11	p2_r18	1	=tres	=vous	clear
+p2	p2_r18	12	p2_r18	2	=humblement	=treshumblement	clear
+p2	p2_r20	2	p2_r20	2	=bonne	=Je	clear
+p2	p2_r20	3	p2_r20	3	=sante	=vous	clear
+p2			p2_r20	4		=fais	clear
+p2			p2_r20	5		=scauoir	clear
+p2	p2_r20	5	p2_r20	7	=longuevie	=longuement	clear
+p2	p2_r21	1	p2_r20	8	=Faict	=Dieu	clear
+p2	p2_r21	2	p2_r20	9	=ce	=Et	clear
+p2			p2_r20	10		=vre	clear
+p2			p2_r20	11		=Camp	clear
+p2			p2_r20	12		=a	clear
+p2			p2_r20	13		=Maestricht	clear
+p2			p2_r21	1		=au	clear
+p2			p2_r21	2		=present	clear
+p2	p2_r21	6	p2_r21	6	=1574	1574	numeral
+p2	p2_r21	7			=En		clear
+p2	p2_r21	8			=vre		clear
+p2	p2_r21	9			=Camp		clear
+p2	p2_r21	10			=a		clear
+p2	p2_r21	11			=Marche		clear

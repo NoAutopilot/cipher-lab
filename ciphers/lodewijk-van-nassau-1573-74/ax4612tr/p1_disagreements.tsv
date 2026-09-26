@@ -1,0 +1,105 @@
+page	a_line	a_pos	b_line	b_pos	a_tok	b_tok	kind
+p1	p1_r01	3	p1_r02	3	=receu	=resceu	clear
+p1	p1_r01	4	p1_r02	4	=vre.	=vre	clear
+p1	p1_r01	5	p1_r02	5	=lre.	=lre	clear
+p1	p1_r01	7	p1_r02	7	=xxj.me	=xxj	clear
+p1	p1_r01	12	p1_r02	12	=ce	=entendu	clear
+p1	p1_r01	13			=que		clear
+p1	p1_r01	14			=vous		clear
+p1	p1_r01	20	p1_r02	18	=voz	=leg	clear
+p1	p1_r01	21	p1_r02	19	=affres.	=affre	clear
+p1			p1_r02	21		=a	clear
+p1	p1_r02	4	p1_r03	4	=voy	=doy	clear
+p1	p1_r02	5	p1_r03	5	=dois	=se	clear
+p1	p1_r02	6			=ce		clear
+p1	p1_r02	8	p1_r03	7	=treshumblement	=tres	clear
+p1			p1_r03	8		=humblement	clear
+p1	p1_r02	14	p1_r03	14	=benedictions.	=sainctes	clear
+p1			p1_r03	15		=benedictions	clear
+p1	p1_r03	4	p1_r04	4	=sy	=en	clear
+p1	p1_r03	7			=scay		clear
+p1	p1_r03	8			=depuis		clear
+p1	p1_r03	10	p1_r04	8	=xxij.me	=xxvij	clear
+p1			p1_r04	27		9	numeral
+p1	p1_r04	12	p1_r05	12	51	81	numeral
+p1	p1_r04	26	p1_r05	26	67	68	numeral
+p1	p1_r05	4	p1_r06	4	=y	=ilz	clear
+p1	p1_r05	6	p1_r06	6	=bonne	=bonnes	clear
+p1	p1_r05	7	p1_r06	7	=disposition,	=dispositios	clear
+p1	p1_r05	21	p1_r06	21	73	13	numeral
+p1	p1_r06	6	p1_r07	6	8A	84	numeral
+p1	p1_r06	12	p1_r07	12	113	118	numeral
+p1	p1_r06	18	p1_r07	18	74	34	numeral
+p1	p1_r07	7	p1_r08	7	53	83	numeral
+p1	p1_r07	8	p1_r08	8	74	97	numeral
+p1	p1_r09	5	p1_r10	5	28	22	numeral
+p1	p1_r09	11	p1_r10	11	113	13	numeral
+p1	p1_r10	3	p1_r11	3	10	20	numeral
+p1	p1_r10	4	p1_r11	4	38	78	numeral
+p1	p1_r10	25	p1_r11	25	38	88	numeral
+p1	p1_r11	15	p1_r12	15	130	150	numeral
+p1	p1_r13	4	p1_r14	4	=que	=qu'a	clear
+p1	p1_r13	5	p1_r14	5	=a	=ilz	clear
+p1	p1_r13	6	p1_r14	6	=cy	=proffit	clear
+p1	p1_r13	7	p1_r14	7	=prins	=bourse	clear
+p1	p1_r13	8			=buisson		clear
+p1	p1_r13	10	p1_r14	9	=bons	=voz	clear
+p1	p1_r13	11	p1_r14	10	=francs.	=francs	clear
+p1	p1_r14	23	p1_r15	23	133	135	numeral
+p1	p1_r15	2	p1_r16	2	74	34	numeral
+p1	p1_r15	16	p1_r16	16	77	73	numeral
+p1	p1_r17	9	p1_r18	9	87	37	numeral
+p1	p1_r18	8	p1_r19	8	=daultres	=d'aultres	clear
+p1	p1_r18	18	p1_r19	18	=que	=en	clear
+p1	p1_r19	1	p1_r20	1	=pourrons,	=pourrons	clear
+p1	p1_r19	8	p1_r20	8	=guerre.	=guerre	clear
+p1	p1_r20	19	p1_r21	19	=nous	=vous	clear
+p1	p1_r20	20	p1_r21	20	=soyt	=face	clear
+p1	p1_r21	1	p1_r22	1	=demain,	=demain	clear
+p1	p1_r22	9	p1_r23	9	=payé	=paix	clear
+p1	p1_r22	12	p1_r23	12	=la	=Iasme	clear
+p1	p1_r22	13			=moys,		clear
+p1	p1_r22	20	p1_r23	19	34	84	numeral
+p1	p1_r22	22	p1_r23	21	23	28	numeral
+p1	p1_r23	7	p1_r24	7	130	150	numeral
+p1	p1_r24	1	p1_r25	1	=on	=Or	clear
+p1	p1_r24	2	p1_r25	2	=a	=ça	clear
+p1	p1_r24	3	p1_r25	3	=mis	=mon	clear
+p1	p1_r26	7	p1_r27	7	51	81	numeral
+p1	p1_r26	8	p1_r27	8	34	84	numeral
+p1	p1_r29	15	p1_r30	15	=remboursé	=a	clear
+p1			p1_r30	16		=rembourser	clear
+p1	p1_r29	17	p1_r30	18	=ce	=a	clear
+p1	p1_r29	18	p1_r30	19	=que	=qu'a	clear
+p1	p1_r29	20	p1_r30	21	=devons	=depuis	clear
+p1			p1_r31	1		=a	clear
+p1			p1_r31	2		=fin	clear
+p1			p1_r31	3		=telle	clear
+p1			p1_r31	4		=chose	clear
+p1	p1_r29	22	p1_r31	6	=frans	=au	clear
+p1	p1_r30	1			=a		clear
+p1	p1_r30	2			=fera		clear
+p1	p1_r30	3			=cela		clear
+p1	p1_r30	4			=cause		clear
+p1	p1_r30	5			=de		clear
+p1	p1_r30	6			=nos		clear
+p1	p1_r30	9	p1_r31	9	=guerre.	=guerre	clear
+p1	p1_r30	10	p1_r31	10	=C'est	=Comme	clear
+p1	p1_r30	11	p1_r31	11	=nostre	=l'auons	clear
+p1	p1_r30	12	p1_r31	12	=amour	=dit	clear
+p1	p1_r30	13			=icy,		clear
+p1			p1_r34	21		=d'autour	clear
+p1			p1_r34	22		=nostre	clear
+p1			p1_r35	1		=pais	clear
+p1	p1_r33	22	p1_r35	3	109	=Wesel	numeral
+p1	p1_r33	23			=a		clear
+p1	p1_r33	24			=fes		clear
+p1	p1_r33	25			=cy		clear
+p1	p1_r34	1			=par		clear
+p1	p1_r34	2			=de		clear
+p1	p1_r34	3			=chupa.		clear
+p1	p1_r34	4			=Comme		clear
+p1	p1_r35	22	p1_r36	22	33	37	numeral
+p1	p1_r36	4	p1_r37	4	51	81	numeral
+p1	p1_r37	14	p1_r38	14	=cy	=on	clear
+p1	p1_r37	17	p1_r38	17	=naguere	=nagueres	clear
