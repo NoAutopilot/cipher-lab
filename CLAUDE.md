@@ -247,6 +247,7 @@ Gallica or IIIF ark at the leaf), and the printed edition it rests on, at the pa
 (7) Pre-send fact check (owner, 26 Sept 2026): before the person sends any outward note, a separate session (never the drafter) reads the draft against every file and source it cites, tries to falsify each factual sentence (counts, dates, shelfmarks, names, what was and was not checked, the recipient address on the institution's own page) and writes its verdict as a `checked:` line in the draft's header naming what it corrected; a draft without that line is not sent, and the mailbox draft is updated to the checked text. A subject line, a recipient line and a sign-off left blank for the person are part of every draft. The recipient line
 carries the institution's public contact address (read from its own contact page, with the date) so the person can send
 without looking it up; a private individual's address never goes in the file (24 Sept 2026, owner: "I gotta have an email address"). A negative with a matched control is a contribution too.
+(8) Project mailbox (owner, 26 Sept 2026): agents may send from cipherlab.research@gmail.com only a draft whose CONTRIBUTIONS.md row exists, whose pre-send fact check (7) has passed, and whose first paragraph carries the AI-disclosure sentence (outreach/README.md rule 1); one sender per draft, the parent that owns the target; every send logged before it goes.
 
 ## Operating model (read before orchestrating)
 
