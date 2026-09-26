@@ -778,3 +778,6 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T07:36Z	session_01Jb4UHR8so3yBUG1NTMdf6C	parent 7g (Fable, Orchestrator 8, live)	took over from 7f; hub-seed/SUCCESSOR-PROMPT.md; arms its own first check-in
 2026-09-26T08:06Z	session_01FqtHRokzQgvScmsA2afxDi	V9-QA8	done 2.44, ledgered D, archived (QA/2026-09-26-0735.md, 1 flag to ARM)	
 2026-09-26T08:06Z	session_01NhugJDkasdqheBs99gGJ6G	V9-NA172-3	done 1.57, ledgered D, archived (AUDIT.md A4, p6_spot4 withdrawn)	
+2026-09-26T08:13Z	session_01FzjVKQ9ezApi6N9ArxmPsx	ARM-DESIGN	done 7.92, ledgered D, archived	
+2026-09-26T08:13Z	session_01Q7vUk2LfBnnua3tK5V7Cem	ARM-A2	done 1.98, ledgered D, archived	
+2026-09-26T08:13Z	session_011LGV2dxSLTnpHb7CwrzoqB	ARM-REC2	done 3.03, ledgered D-, archived	

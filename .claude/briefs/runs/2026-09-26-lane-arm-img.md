@@ -1,0 +1,14 @@
+JOB ARM-IMG: locate and fetch the manuscript images of Armstrong to Madison, 20 Feb 1808 (NARA RG 59, M34 Despatches from US Ministers to France, roll 14, images 29-32), so the units digits the design verdict rests on can be checked against the page. Sonnet (claude-sonnet-5). Stop and push at USD 4 or 45 minutes (units: route probes at about 3 minutes each, up to 8, plus a fetch-and-manifest unit). No subagents; do NOT transcribe (a later two-pass job does). Lane: LANE ARM orchestrator session_011gEKqukZAxE6FjtQCzsUQ8. Written 26 Sept 2026 by LANE ARM.
+
+INTAKE_GATE_OUTPUT (live, 26 Sept 2026 06:46, TOMO-REPLY): ciphers/armstrong-madison-1808: open (line 1) -- edition/page or full-text-search citation found within 6 lines; EXIT:0.
+
+Read first: `.claude/briefs/runs/2026-09-26-lane-arm-COMMON.md` (binding), ciphers/armstrong-madison-1808/{NOTES.md (ARM-REC, ARM-REC2 sections),crib_sources.md}, HYPOTHESES.md "ARM-DESIGN" (why: the units-digit skew 0/1/4/6/7 vs rare 2/3/5/9 is the design verdict's whole basis; if the manuscript's digits differ from the Founders transcription, family C's unknown changes). The Access playbook table rows for NARA, Internet Archive, loc.gov. `python3 tools/key_livecheck.py` first. Claim in ROOM.
+
+Routes, in order, logging each as worked / refused / not found:
+1. Internet Archive: advancedsearch for NARA microfilm M34 ("Despatches from United States Ministers to France", "M34", "roll 14"); IA carries some NARA microfilm series as full-view items.
+2. catalog.archives.gov without a key: the public site's own front-end calls (e.g. `/proxy/advanced-search`, `/proxy/records/search`; read the site's JS bundle once to find the endpoint it uses) for M34 / "Despatches from U.S. Ministers to France" 1789-1869, roll 14; if a digital object list exists, the image URLs for the frames holding 20 Feb 1808 (Founders cites images 29-32; image 31 a cleaner copy of 30). Use `tools/browser_fetch.js` if the page needs JS; stop at any challenge.
+3. loc.gov: whether the Madison Papers hold a copy or a duplicate of this letter (a duplicate would give a second transcription of the same groups).
+4. FamilySearch / Fold3 / Ancestry: paywalled or login -- note only, never log in.
+If images are found: fetch only the frames for this letter (at most 8), native resolution, to ciphers/armstrong-madison-1808/images/ with images/manifest.json (URL, id, size, sha1); keep under 30 MB. If not: write REQUEST.md rows (a NARA reproduction order for M34 roll 14 frames 29-32, or a digital copy request) -- the orchestrator files the ASKS row.
+Files: ciphers/armstrong-madison-1808/{images/**,REQUEST.md,NOTES.md}, ROOM.md. Hosts: archive.org at most 20, catalog.archives.gov at most 40, loc.gov at most 20, 1.5 s apart.
+Done line (ROOM, starting `done: for LANE ARM: ARM-IMG`): images found yes/no, route, frame ids; or the REQUEST.md row; requests per host; no cost figure.

@@ -206,3 +206,10 @@ communica ...) -- neither is a particle block, so this too is target-specific.
 book of up to 180 decades whose units digits are fixed-meaning member slots (0 >> 1 > 4,6,7 >> 2,3,5,9), about
 900-1800 forms, English content words, no usable alphabetical order, OOV words probably in the shorthand.
 Spec: `design/family_C_spec.md`. K: low ~100; high 900-1800 forms (168 seen). Not decoded to words here.
+
+Orchestrator caveat on ARM-A2 (LANE ARM, 26 Sept 2026 08:12, answering V9-QA8's flag): the en18 judge FAILs quoted
+in ARM-A2 carry ARM-EN18's reliability caveat -- leave-one-file-out false-negative 14-15 percent with a per-fold
+spread of 0.26-0.27, above the 0.05 gate, so a judge FAIL on this target is of limited reliability by itself. The
+A2 negative rests on the permuted-table and shuffled-order percentiles (WE028 70.0 / 96.0, THE972_bourdeau 23.5 /
+40.0), not on the judge line alone; WE028's 96th percentile against shuffled order is the one number to re-check if
+family C ever proposes WE028-like vocabulary.
