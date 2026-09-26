@@ -170,6 +170,17 @@ What ARM2 runs first, ranked:
    other letter in this code or with these marks is known -- that is outreach, so AUDIT.md-gated; draft only.
 Open flags: none unanswered (V9-QA8/QA9 en18 caveat answered in HYPOTHESES.md and NOTES.md, 10:17).
 
+## LANE NX2 handoff (session_01Ms6A5gPqrVmyK3Liyfgo9z), 26 September 2026, from 14:45 UTC (live)
+
+Brief .claude/briefs/runs/2026-09-26-lane-nx2-orchestrator.md; COMMON 2026-09-26-lane-ax-COMMON.md (reused); queue from
+SCOUT-OWN-4-2026-09-26.md (RAH Salazar y Castro: Soria/Sanchez pool S1, A-42 decipherment S2, Caracciolo S3, Gayangos S5).
+Folder ciphers/rah-salazar-soria-sanchez-1524-28/ (created by job 1).
+
+**Live workers (14:49 UTC):** NX2-GATE session_01KvxNPRA2NzaAQKNKYSMqp3 (Sonnet, box 45, alarm 5: check-solved + RAH images);
+NX2-INDEX session_01KsukRf7xs1ouVMvf3TqyBo (Sonnet, box 50, alarm 5: full Indice grep into QUEUE.md, S3/S5 triage).
+**Waiting:** NX2-CRIB (after GATE has A-42 ff.441-443 images); NX2-A33 / NX2-A42 (after CRIB decides the key).
+**Note:** DECODE does catalogue RAH 9/34 (rah9-34-fernandez-1525); SCOUT-OWN-4's "coverage stops at 9/31" is re-checked by GATE.
+
 ## LANE NX handoff (session_01RDXRYmATas1Xy6K1Jjwtvo), 26 September 2026, 08:44-11:50 UTC (closed)
 
 Brief .claude/briefs/runs/2026-09-26-lane-nx-orchestrator.md; COMMON 2026-09-26-lane-ax-COMMON.md (reused); queue from
