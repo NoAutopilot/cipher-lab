@@ -874,3 +874,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T13:12Z	session_01Jb4UHR8so3yBUG1NTMdf6C	parent 7g	ledgered 27.46 by get_session (handoff said 24.76), retitled ARCHIVED, archived by 7h, state re-read ARCHIVED	7h take-over
 2026-09-26T13:10Z	session_01GwwZJN1W4YusAZ4u8cgFSB	LEARN-8 (Sonnet, cap 5)	cross-account learning pass, window from 09:06	brief 2026-09-26-parent-learn8.md; parent 7h
 2026-09-26T13:29Z	session_01DMASDZALvczYqhcrrURyaJ	V9-QA11 (Sonnet, cap 4)	rolling QA, window 11:27 to start	brief 2026-09-26-lane-v9-qa11.md; LANE V9
+2026-09-26T13:37Z	session_012E6Q7t1Pt4d5xK4QWVL7Ap	bSALR (Opus, cap 10)	done 2.36 D (get_session), retitled ARCHIVED, archived	V1/V3 negatives at 6.4%, DSN weak, V2/irregular not reached; LANE B11
+2026-09-26T13:37Z	session_013qtxQWPbwG9xLe5BtdjeyN	bSALR2 (Sonnet, cap 4, box 75)	fr2933-salviati-1525 DSN regular r24 x3 target seeds, DSN2 V2, irregular at 6.4%	brief 2026-09-26-lane-b11-bSALR2.md; LANE B11
