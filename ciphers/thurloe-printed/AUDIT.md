@@ -903,7 +903,7 @@ automated heading scan, not Birch's.
    **Correction:** `index.tsv` rows P26-P28 give sender "cover name" and recipient "mr. Manning, forwarded to
    secretary Thurloe". Manning is the *sender* (Henry Manning, Thurloe's informer at the exiled court, writing as
    Burton/Johnson); the recipient is Thurloe under the cover names "Jeremiah Joselin"/"John Browne" printed in the
-   superscriptions. Not edited here (index.tsv is outside this brief's files); flagged for the lane. Dates: P25
+   superscriptions. Not edited here (index.tsv is outside this brief's files); flagged for the lane. Applied by the LANE V7 orchestrator, 26 Sept 2026 02:55 UTC (index.tsv P25-P28: pages and sender/recipient). Dates: P25
    "Chauni, June 19th 1656 [N.S.]" and P26 "Antwerp, April 26, 1655 [N.S.]" and P28 "May 6, 1655 [N.S.]" match
    the print; P27 carries no date in print (it answers a letter "of the 13 old stile" and is placed by Birch
    between 26 April and early May 1655).
