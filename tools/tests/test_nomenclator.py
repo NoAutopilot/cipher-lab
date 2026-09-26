@@ -68,6 +68,21 @@ def test_nomenclator():
     with contextlib.redirect_stdout(io.StringIO()):
         dec2, sc2, info2 = nm.solve(cm, {}, 2, 1, train, {**params, "sweeps": 2, "greedy": 1, "phase1": 2})
     assert len(dec2.split()) == len(toks) and sc2 < 0 and info2["singletons"] > 0 and sc2 != sc
+    # (5) cribs (ARM3-LOOP): value=word pairs are held through phase 1, the anneal and the greedy sweeps of every
+    # restart, including a singleton and a repeated value and a word the LM has never seen; restart_keys reports
+    # one key per restart; a crib naming a value not in the cipher is ignored, not an error
+    from collections import Counter
+    cnt = Counter(t for t in toks if t.isdigit())
+    rep = next(t for t, c in cnt.most_common() if c > 1 and int(t) >= 100)
+    sing = next(t for t, c in cnt.items() if c == 1 and int(t) >= 100)
+    part = next(t for t, c in cnt.most_common() if int(t) < 100)
+    cribs = {rep: "zzqqx", sing: "treaty", int(part): "of", "99999": "nothing"}
+    with contextlib.redirect_stdout(io.StringIO()):
+        dec3, sc3, info3 = nm.solve(cm, {}, 3, 2, train, {**params, "sweeps": 2, "greedy": 1, "phase1": 2, "cribs": cribs})
+    key3 = {t: w for t, w in zip(toks, dec3.split()) if t != "*"}
+    assert key3[rep] == "zzqqx" and key3[sing] == "treaty" and key3[part] == "of", (key3[rep], key3[sing], key3[part])
+    assert len(info3["restart_keys"]) == 2 and all(k[rep] == "zzqqx" for k in info3["restart_keys"])
+    assert info3["cribs"] == {rep: "zzqqx", sing: "treaty", part: "of"} and "99999" not in info3["cribs"]
     # (4) registered in family_run.py
     r = subprocess.run([sys.executable, os.path.join(ROOT, "tools", "family_run.py"),
                         os.path.join(ROOT, "specs", "armstrong-madison-1808.json"), "--family", "nomenclator",
