@@ -1,28 +1,28 @@
-# kaliningrad-2015 homophonic seed 1 restarts 8 26 Sept 2026 02:12 UTC; control mean 0.996 (0.992-0.998); score -3554.292
-# {"restart_scores": [-3554.3, -3580.4, -3596.9, -3599.9, -3620.9, -3629.4, -3650.4, -3674.1], "key": {"'": "e", "-": "r", "A": "e", "a": "s", "b": "y", "c": "d", "d": "l", "e": "a", "f": "o", "g": "p", "h": "a", "i": "z", "k": "u", "l": "c", "m": "m", "n": "i", "o": "o", "p": "u", "s": "i", "t": "w", "u": "k", "v": "b", "w": "i", "x": "n", "z": "r", "ê": "t", "ö": "g", "ü": "e"}}
-aiezobilewegaieoltacanzuznsdacawtlackini
-knalpsikiwciaitieconiolonkkiwnleasiwo
-kaindoaolnnaacdikilakiiaillsikiaaido
-leaisdieasnsaoinkaidoszimesmemwowoimawewedao
-lcklianoskccaciaiaweiaamiamizaazzazsaceai
-aimlainiwnionkiwannacolncyidzaiiiazieiiawoku
-isiiazpadzimgizlpiciznagnyiieiansietkiaipiaiei
-azitulcoaneieksrieaceaweooiidciaaansliika
-toawezaiieieoinlzairtkininoeksoeiuzanlgleainkinds
-aiaaiialimiaokoaizieozowwuweweiawineiokaalat
-kaanenillaaiaiazsieaneaikiiwmiziaiewmzsylaaidi
-ncioiaarwnsilaaaanweinaaaaoimzleskazicp
-oweasbazliweoszkapiireiipiisawmacacakcnawiea
-lzaiziacdwaiasiacaieinizttazineaaomieo
-pcizowaskinkscaiaaialeznweiecweizoiewiimiscciiilir
-lenaudneceziwinaakzzzkozaazaincieadiiazkaitioz
-iaipiaweiinaptiiiaieazieliscpiasmlamicysiooek
-zmkleineiksawitsiepiiyranaaiioeannlzapwiazi
-anlirezzineiieiieaaantwzgalazaipiwemuiwlmra
-zaznoigneaiaaoioanziaiecdnewanakceiakaiw
-goaikziniaiaiianwiidzlzuanaacniiieaaleaiz
-szilieatszieccowecoecsaolcimeieaabieaaalres
-wauariiizaaaiiemiilaipzkiinonaiizineaazla
-szorlecikmolnoinineaizknaiwiaalmiikaiceai
-oaoileaiietllnaimnlapoienwzitniinznaaak
-azmsw
+# kaliningrad-2015 homophonic seed 1 restarts 20 26 Sept 2026 02:52 UTC; control mean 0.977 (0.950-0.995); score -3168.525
+# {"restart_scores": [-3168.5, -3177.2, -3195.9, -3201.9, -3210.1, -3214.7, -3215.2, -3223.3, -3224.0, -3239.4, -3241.1, -3256.4, -3259.0, -3266.9, -3274.8, -3278.2, -3279.3, -3283.9, -3304.9, -3310.2], "key": {"-'": "b", "A": "g", "a": "e", "b": "r", "c": "i", "d": "z", "d'": "n", "e": "i", "f": "s", "f'": "p", "g": "t", "h": "l", "i": "n", "k": "e", "l": "k", "l'": "m", "m": "d", "m'": "m", "n": "a", "n'": "o", "o": "l", "p": "l", "s": "e", "s'": "p", "t": "z", "t'": "r", "u": "i", "v": "m", "w": "a", "x": "w", "x'": "c", "z": "u", "z'": "i", "ê": "c", "ö": "y", "ü": "c"}}
+ionsmanryloszciklwnenweiikizczikiawe
+iwizteaiazkaiacoksweszswiiezwnieezs
+iiewisiszwwlikiaiaziiaeiezzeaialleis
+niaeipieweisawilaisenamemdzszsadirriis
+zkizalwleikkikaiaireiidaldaniinnineimie
+iedziewazwalwiaziwwikszwkreinleeainoaalzlie
+eeaeintlinadyanztakanwiywrapalweociaietaioa
+inecezklicoieuoimirsseaikaiiiwezaaii
+cslrnieoosawznleuciewewpiepalnlwzyniewiawie
+iailealzadaisilianosnszzerreizacesiiizic
+iiicwazziieleineoiciaiaazdaneiozdnerzllaie
+wkasaiiuzweazililwrawliilsednneiinakt
+srieminzarleniitaaiaataeeizdikiklikwizol
+znianaikiziaieelkioewanccineciildos
+tkanszleiewiekleiiainnwrokransozaedaekkeeazeu
+nwilicmnazewilinnnisniinlawkoiiaalniiacasn
+eiataireawltcaaaloinaczaekteiedzidakrealpi
+ndinacaielzeceptaaruiwiiaapiwwznitzaina
+iwzeinneceoaoliiwcznyizlniatardeazzdui
+ninwsaycieiilasiwneiokiczlwlimaliiaz
+ysiainawaiaiaaiwzeeinzneiwiikwaeoilnian
+enazoicenagkklrkpkeiszkamoiimpiiizbe
+zieiuaaaniiiaodaaziatniaawswieeneciinzi
+ensunkaidszwsawacianiwiazailzdaaiiemie
+sisaniaoczzwiedwzitlowznacwaawnwilii
+indez
