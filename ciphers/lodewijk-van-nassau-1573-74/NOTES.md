@@ -1186,3 +1186,100 @@ Files: `specs/lodewijk-4612.json`, `tools/families/block_homophonic.py`, `tools/
 `tools/tests/test_block_homophonic.py`, `HYPOTHESES.md` (pre-registration + 21 rows), `families/block_homophonic-*`,
 `families/homophonic-1-profile=target-ax4612h3freehomo.txt`, `ax4612/` (scripts, run logs, fr16_folds.txt,
 digit_map.txt, affine_map.txt, realctl_*). No network requests.
+
+## AX-GLOSS: glosses over the name codes (26 Sept 2026, LANE AX)
+
+Worker AX-GLOSS (Sonnet), brief `.claude/briefs/runs/2026-09-26-lane-ax-gloss.md`, started 01:44 UTC, box 80 min.
+Per the brief's 8 units: 4496, 4614, 7205, 7206, 7208 (WVO "solved on leaf"), 5801+11250 (contemporary decipherment
+attached per csWV3), 5552, 5557 leaves 2-4 (leaf 1 already read, in `jan-van-nassau-1572-75/j5s/
+ciphertext_glossed_5557_5552.tsv` -- checked that file first: it holds only 5557 leaf 1, no 5552 rows at all,
+contrary to its own filename).
+
+**Method.** WVO PDF fetched per letter from `pdf_url` in `sources/wvo/cipher-letters-2026-09-24.tsv` (one request
+each, >=2s apart, descriptive UA), rendered to PNG with `pymupdf` (`pip install pymupdf pillow`, no `pdftoppm`
+binary in this container) at 200dpi, read by eye at full-page resolution then cropped/zoomed (PIL, with a pixel
+gridline overlay to check horizontal alignment of a superscript gloss word against the specific number below it)
+wherever a candidate gloss was visible. Step (b) sanity check (decode 3 runs of 1-120 codes under key.tsv): 4496 and
+4614 both decode partial French fragments and known place-code hits (see below) consistent with the same table;
+5552's own cipher runs are too short/interrupted by clear text to give a clean 3-run check but its two visible
+glossed-looking marginal words turned out to be continuing clear prose, not annotations (see below).
+
+**Finding 1 (H): 192 = "R. d'Espagne" (Roy d'Espagne, King of Spain).** 4496 (WVO PDF page 4 of 5), a contemporary
+interlinear gloss reading "R. d'Espagne" sits directly above the code `192` in the run "...113.85.124.**192**. pour
+113.82...", isolated with clear whitespace on both sides (`images_wv2/crops_gloss/04496_p4_respagne_192.png`).
+names.tsv previously had 192 as grade U ("Groen prints no word here", from 5549 PS1 where Groen's own edition left
+the subject out); `axnames/still_unread.tsv` lists 192 with 6 unread occurrences in 4610 alone. This is the first
+value found for this code. Blind Sonnet pass A (independent, crops only, no prior reading shown) confirms: "the
+small cursive phrase '...le R[oy] d'Espaigne...' sits immediately above the '192' group... high [confidence] that
+this gloss word sits over this specific number... medium confidence on the precise reading of the word itself."
+
+**Finding 2 (H): 221 = "Hollande".** Same page (4496 p4), gloss "Hollando" sits directly above code `221`,
+repeated 3x at different points on the same page, always over the same code. Cross-letter corroboration: 4614
+(WVO PDF page 1) has the unglossed run "...tiré de la Haye en **221**..." (French "the enemy had withdrawn from
+The Hague to [Holland]"), consistent in context though unglossed there. 221 had no prior row in names.tsv or
+key.tsv; `axnames/still_unread.tsv` lists it with 3 unread occurrences in 4610/4611. Blind pass A: "'Hollande' --
+sits directly above the very first number, '221' (high confidence, clean vertical alignment)."
+
+**Finding 3 (M, corroborating, not new): 133 confirmed NULL by a second contemporary source.** 5557 leaf 2 (WVO
+PDF page 2 of 4), the gloss "kein" (German "none") sits above code `133` in the run "...107.83.103.3.**133**...".
+names.tsv already has 133 = NULL at grade C (9 observations, aligned against 5810's Groen print); this gloss is an
+independent contemporary confirmation from a different letter, not a new value. Blind pass A could not confidently
+read this specific word ("I cannot confidently read a clean word 'kein' here -- the writing is compressed"), so
+this attestation is graded M, not H, pending the second blind pass.
+
+**221/192 are the two solid new fills this pass got; the brief's named priority codes (146, 156, 157, 172, 182,
+187) were NOT filled.** Specifically checked and came up empty:
+- **146**: found bare (no interlinear gloss) in 5557 leaf 3, in the clear run "...gelieffert Boot, **146**.
+  verkündigen, weiss er gesinnet..." -- 146 sits alone, immediately followed by ordinary clear German prose, no
+  superscript word attached to it in this occurrence.
+- **156, 157, 172, 182, 187**: not located with an attached gloss in any of the 8 units this pass covered. Not
+  exhaustively ruled out -- see the flags below on 5801, 4614 and 7205/7206, whose companion decipherments were
+  not fully mined this pass for lack of time, and which are the most likely place these five still turn up.
+
+**Per-unit findings (the WVO "solved on leaf" designation, checked against what is actually on each leaf):**
+
+| letter | pages (WVO PDF) | what "solved on leaf" turned out to mean | interlinear code>120 word-glosses found |
+|---|---|---|---|
+| 4496 | 5 | dense interlinear grammatical-class marks (single superscript letters: v, n, c, t, p, g, oe...) over most codes throughout (the same convention as 5797's J5S notation, marking word class, not a value), PLUS several clear word-glosses (Hollando/Zellando/R.d'Espagne/P.Dorange) at a few specific spots | 192, 221 (both H, see above); 241 and 171 corroborated (already C in names.tsv) |
+| 4614 | 6 | pp.1-3 dense cipher, no interlinear glosses at all; pp.5-6 are a **full separate contemporary plaintext decipherment on a companion leaf** (opens "Monseigneur vous ne sçauriez croire le grand contentement...", verbatim matching ciphertext p1's opening; dated "le 4 jour d'avril 1574" matching the cipher's own date) | none directly (see flag below) |
+| 7205 | 10 | pp.1-6 dense cipher (a "Duplicata" copy), no interlinear glosses; p7 is a *different*, separate clear letter (signed Guillaume de Nassau, 21 Jan 1574) with its own short unglossed cipher tail; **pp.8-10 are a full separate contemporary plaintext decipherment** of pp.1-6's cipher (opens "Monsieur mon frere, les dernieres...", continues the same content as pp.1-6 in clear French) | none directly (see flag below) |
+| 7206 | 8 | pp.1-2 clear + a short unglossed cipher tail; pp.3-4 dense cipher, no interlinear glosses; pp.5-6 clear text (signed Guillaume de Nassau) of similar shape to 7205's pattern -- likely another companion decipherment, not confirmed by close reading this pass (time) | none directly |
+| 7208 | 5 | pp.1-3 dense cipher ("Duplicata", 21 Feb 1574), no interlinear glosses; p4 is the address leaf; p5 is a **separate, same-date clear letter** (dated 21 Feb 1574) that uses bare numbers (212, 213, 214, 224) as place-name stand-ins directly in its own clear prose -- a different, apparently-topographic nomenclature, not obviously the same system as key.tsv/names.tsv and not paired with any specific code in the pp.1-3 cipher | none |
+| 5801 | 9 (+11250, 2 pages) | **pp.1-5 carry a complete, dense, letter-by-letter contemporary interlinear decipherment written directly above (and below) almost every cipher code** -- not isolated word-glosses but a running decode of the whole letter; pp.7-9 are additionally a full separate clear-text transcription (opens "Messieurs mes freres, j'ai receu vos tres...", dated "1573 Mai 28" matching 5801's own date); 11250 (the small strip) is itself plain French, no cipher, confirming NOTES.md's earlier finding that it is bound to 5801's decipherment, not to a cipher of its own | not mined this pass -- see flag below, this is the single richest resource found |
+| 5552 | 4 | 2 leaves of clear German text with only a few short cipher runs woven in; the two marginal-looking words I initially read as glosses ("auff Colln zu" near one run) turned out on closer zoom to be the start of the *next clear sentence*, not an annotation over the preceding code | none |
+| 5557 leaves 2-3 | 2 (of 4; p4 is the blank/address leaf, so there is no "leaf 4" with content) | leaf 2 and leaf 3 both carry a mix of short German-word marginal annotations (some over codes <=120, out of this brief's scope; "kein" over 133 is the one >120 hit) and codes that are glossed with full titles/place-names (Graf von Holland, Hertzog, Lutzenburg) sitting over codes <=120 that key.tsv already fixes as ordinary letters (82=e, 93=g, 112=l, all C-grade from many 4613/4615 observations) -- see the conflict noted below | 133 (M, corroborating) |
+
+**Flag for the orchestrator/next lane worker -- three companion decipherments not yet mined (4614 pp.5-6, 7205
+pp.8-10, 5801 pp.1-5's own interlinear text and pp.7-9's clear copy):** these are a much bigger resource than a
+"gloss" -- potentially enough to read 4614, 7205 and 5801 in full at grade C, the same way Groen's print did for
+5799/5810/5811/4503/5811. Mapping the clear text (4614, 7205) or the interlinear letters (5801) back to specific
+ciphertext codes needs the same DP/hard-EM alignment already built for this purpose -- `tools/interlinear_align.py`
+(CLAUDE.md Usage item 8) for a printed/typed clear text beside cipher, or a comparable careful crop-and-zoom
+transcription pass for 5801's own interlinear letters, which are written far smaller and denser than anything this
+brief's per-unit budget (about 8 minutes) could responsibly transcribe. This is a full alignment job (or three),
+not a gloss-harvesting one; sizing its cap and box from CLAUDE.md's per-unit-rate rule (Usage item 6) before
+briefing it is recommended given how dense 5801 in particular is.
+
+**Flag: 5557 leaf 3's title/place-name glosses sit over codes key.tsv already fixes as ordinary letters** (82=e,
+93=g, 112=l), not over any of the codes >120 in the same runs (127, 129, 135, 122, 139, 147). Two explanations
+occurred to me and neither was checked further this pass: (a) these are archival/finding-aid topic tags added
+later, summarising a passage's subject rather than decoding a specific code (consistent with 5557 leaf 2's "jar",
+"kein", "Vorrad" also reading like short thematic labels rather than literal per-code values); (b) 5557 uses a
+different table from key.tsv's for these low codes. Not resolved; flagged rather than guessed.
+
+**Two blind Sonnet subagent passes** (crops only, no prior reading shown, one call per leaf's worth of crops):
+pass A transcribed all 5 committed crops independently and agreed with this pass's H-grade reads on 221->Hollande
+and (position, not exact wording) 192->the gloss immediately above it; it could not confidently read "kein" over
+133 (graded that finding M rather than H accordingly). [Pass B result to be added if it lands before this section
+is pushed; if not, note here that only one blind pass completed within the box.]
+
+Rule 10: no novelty words used. Rule 3: no controls run this pass (no numeric threshold gated); the two new
+values (192, 221) are grade H per rule 4 (read from a contemporary key source, i.e. a period gloss), not
+cryptanalytic.
+
+Hosts: `resources.huygens.knaw.nl` 9 requests (04496, 04614, 07205, 07206, 07208, 05801, 11250, 05552, 05557
+PDFs), >=2s apart, descriptive UA, all HTTP 200. No other hosts.
+
+Files: `axgloss/gloss_attest.tsv`, `images_wv2/crops_gloss/{04496_p4_hollande_zeelande.png,
+04496_p4_respagne_192.png,05557_p3_grafvonholland_93.png,05557_p2_jar_94.png,05557_p2_kein_133_vorrad.png}`.
+Not touched: names.tsv, key.tsv, key_full.tsv (AX-NAMES2's, per the brief).
