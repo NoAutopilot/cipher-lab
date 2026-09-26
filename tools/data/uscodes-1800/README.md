@@ -34,7 +34,7 @@ the first place (both already captured above as tables, not as a third decode fi
 
 ## Not reachable / not published as tables
 
-- **WE027** (Robert R. Livingston <-> Madison, ~1700 elements): named descriptively by both Tomokiyo and
+- **WE027** (Robert R. Livingston's Paris legation, ~1700 elements; 26 Sept 2026, ARM3-COR/ARM3-LIVCODE from Weber 1979 full text: reconstructed from "Livingston to King, Paris, January 25, 1802" and used in despatches to Madison as well -- not Livingston-Madison only): named descriptively by both Tomokiyo and
   Bourdeau (cited to Weber 1979 pp.154, 188), but no `.txt`/`.json` transcription exists anywhere found --
   not on cryptiana.web.fc2.com/code/ (checked directly: `WE027.txt` 302-redirects to fc2's generic 404,
   the same signal every other untried `WEnnn.txt` guess gave except `WE028.txt`, which is a genuine `200`)

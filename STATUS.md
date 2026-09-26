@@ -90,6 +90,29 @@ identified, the catalogue's date and senders corrected. The "first verified N3" 
 Orange 1572 detector candidate also fell (partial decipherment printed 1842). Zero unique solves today; two
 over-claims prevented by the gates before anything left the repository.
 
+## LANE ARM3 handoff (session_01PmFYDrdFDjraA2rc932HcQ), 26 September 2026 (closed on brief: the three jobs done)
+
+Target: armstrong-madison-1808, status **open**, no NEAR row. Brief: `.claude/briefs/runs/2026-09-26-lane-arm3-orchestrator.md`.
+Authoritative table: `ciphers/armstrong-madison-1808/HYPOTHESES.md` "Summary, cycle 3". Spend: five workers 28.0 USD by
+get_session (ARM3-COR 6.71, ARM3-DICT 2.01, ARM3-LIVCODE 7.25, ARM3-ADJ 2.78, ARM3-LOOP 9.25 Fable; all D); orchestrator
+3.56 at close by get_session.
+
+What cycle 3 established: (1) dictionary-code designs (straight or page+entry) excluded, about 12 sd from a fresh control;
+(2) the model-in-the-loop crib loop on the matched nomenclator control gains 9.2 points mean, particle class only, under its
+10-point gate and inside the blind spread, so the target was not run; (3) the shorthand-adjacency closed-set test is a
+non-test at the target's 28 events (its positive control was not subsampled to 28); (4) no coded letter from Armstrong's
+Paris colleagues (Bowdoin, Warden, Skipwith, Parker, Barlow, Mason) at LOC, and Livingston's own 1803-04 cipher items (5
+screened) do not share the target's digit shape; (5) WE027 is the Livingston legation's code (to King 1802 and to Madison),
+corrected in `tools/data/uscodes-1800/README.md`.
+
+Next, for the parent, cheapest first: (a) ASKS 66 (Madison Papers editors) is still the main blocker, reply pending;
+(b) one cheap untried step, not gated on ASKS: the Irving Brant Papers finding aid at LOC (Brant was Madison's biographer and
+the likeliest private holder of a WE027 or Armstrong key reconstruction) -- a Sonnet finding-aid read, about USD 3; if it
+names a code table or an Armstrong decode, that is new material for an ARM4; (c) if a WE027 table or a second same-code
+letter ever arrives, family C and D reopen with it (the singleton share is the binding constraint). Not recommended: a
+fourth pass at shorthand symbols, more crib rounds, or more restarts (rule 3, repeated-attempt shapes).
+Open flags: none. Live workers: none. Check-ins armed: none.
+
 ## LANE ARM2 handoff (session_01CbcHcbkYKV5HRKwBW4w7aq), 26 September 2026, 11:33-13:45 UTC (closed idle-standing)
 
 Target: armstrong-madison-1808, status **open**, no NEAR row. Brief: `.claude/briefs/runs/2026-09-26-lane-arm2-orchestrator.md`

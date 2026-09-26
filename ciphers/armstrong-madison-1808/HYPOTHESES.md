@@ -4,6 +4,26 @@ LANE ARM, opened 26 Sept 2026 06:49 UTC (owner's decision 06:40). One section pe
 numbers side by side (CLAUDE.md rule 3). The top block is rewritten only by a cycle consolidator; everything
 below "## ARM-CODES corpus" is append-only and is the record the summary is drawn from.
 
+## Summary, cycle 3 (LANE ARM3 orchestrator, Opus, session_01PmFYDrdFDjraA2rc932HcQ, 26 Sept 2026 20:07 UTC; three genuinely different instruments plus one lead-driven screen; cycles 1-2 below stand unchanged)
+
+**Status: open** (unchanged; no family beat its matched control, so no NEAR.md row, rule 5). Five workers, USD 28.0 by
+get_session; every number is in the sections below.
+
+| Family | Job | CONTROL | TARGET | Status | Reason |
+|---|---|---|---|---|---|
+| E, the "other correspondent" (Paris 1806-08) | ARM3-COR | screen; overlap_test.py baselines built on THE=972 letters and 200 random draws | no coded letter from Bowdoin, Warden, Skipwith, Parker, Barlow or Mason to Madison/Jefferson 1806-10 at LOC (nearest-date letters read, all clear) | **searched, none found** | Search result, not a negative. Weber 1979 names no code for Armstrong-and-a-correspondent; it ties WE027 (about 1,700 elements) to the Livingston legation. |
+| E, Livingston's own code (WE027 lead) | ARM3-LIVCODE | THE=972 and random-draw overlap baselines | 9 "in cipher" Livingston items 1803-04 in the LOC Madison Papers, 5 screened on one native line: digit-0/1 share 9-27% vs the target's 43%, none above baselines | **screened, no match** | WE027 = Livingston to King (1802) and to Madison per Weber; no table reachable. Named next: the Irving Brant Papers (LOC) as a possible home of a WE027 reconstruction. |
+| G dictionary code (new) | ARM3-DICT | fresh en18 pocket-dictionary simulations, K=1600/1800, 60 each: units_top1 0.149-0.155 (sd about 0.02); hdec 0.762 | 0.388 | **excluded** (linear and page+entry schemes) | About 12 sd from the dictionary control, well separated from hdec; the statistic was ARM-DESIGN's (not blind), the control is new. The two-level premise stands. |
+| S2 run adjacency (new) | ARM3-ADJ | shuffled-position null (1,000 sets); positive control separates 6/6 but at N=22,886 events | 1 of 6 cells beyond p95 (+1 share_1_99, 0.571 vs p95 0.500), 5 inside | **non-test at N=28** | The positive control was not subsampled to the target's 28 events, so it shows the statistic works, not that it has power here. |
+| D model-in-the-loop crib rounds (first run on this design) | ARM3-LOOP | 3 matched controls (singletons 101-132 / 353 vs target 136): blind 15.6 / 2.3 / 11.3; best round gains +10.7 / +14.4 / +2.6, mean 9.2; book class never above 3.3; 18 / 55 cribs right | **not run** (gate) | **gate not met** | Pre-registered: under solvEX2's ~45% blind floor the loop has little to work with; measured: the gain is particle-only and inside the 13.3 blind spread. Tools kept: nomenclator.py `cribs`, crib_rounds.py `--family nomenclator`. |
+
+**What cycle 3 adds.** Two more designs out (dictionary codes; model crib help at this N), two more reachable pools
+empty (the Paris colleagues; Livingston 1803-04), and one factual correction (WE027 is the Livingston legation's
+code, used to King and to Madison, not only Livingston-Madison). Every instrument this lane has left needs either more
+ciphertext in the same code or the code itself; both lead to people (the Madison Papers editors, ASKS 66, reply
+pending; a WE027 table, possibly in the Brant Papers). The reserve job (a second shorthand transcription pass) was not
+run: family S's symbol match is retired untested-by-this-tool, so a cleaner mark inventory would not be decisive.
+
 ## Summary, cycle 2 (LANE ARM2 orchestrator, Opus, session_01CbcHcbkYKV5HRKwBW4w7aq, 26 Sept 2026 13:44 UTC; written by the orchestrator per the ARM2 brief item 4, since no candidate pool appeared; cycle 1's block below stands unchanged)
 
 **Status: open** (unchanged; no family beat a matched control, so no NEAR.md row, rule 5). ARM-S3 wrote "partial" in
