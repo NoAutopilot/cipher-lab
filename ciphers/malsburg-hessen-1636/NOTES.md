@@ -1637,3 +1637,93 @@ Status stays `partial` (rule 5). No key claim, no "solved"/"new"/"first"/"unpubl
 Files (scratchpad, not committed): `f32_GG.jpg`, `f33_GG_tight.jpg`, `f23_GG_v3.jpg`, `f23_GG_v4.jpg` --
 all reproducible from the same source crops/boxes already on disk (`crops/{0023,0032,0033}/manifest.json`),
 same convention as bMALS's own uncommitted `digitcompare_*.jpg` files. No hosts (disk only).
+
+## MAL-F15 (26 Sept 2026, parent worker MAL-F15)
+
+Intake gate re-run: `python3 tools/intake_gate_check.py ciphers/malsburg-hessen-1636` -> `partial (line 1)
+-- edition/page or full-text-search citation found within 6 lines`, exit 0.
+
+Job: MAL-MONO/MAL-GG's own named next step -- transcribe f.15 (`hstam_4_h_1411_0015`, record 503 1/3, 30
+Jan 1637), the leaf with the highest untranscribed-clear-prose-to-cipher ratio on this target, in two
+independent blind Sonnet-subagent passes (cipher lines skipped, `[CIPHER]`), reconcile, and check whether
+the marginal note or the sentences around the embedded cipher passage yield a genuine third/fourth
+G.G./A.A./K.K. naming-clause sighting.
+
+**U0 image + crops.** Full page re-fetched from HCPortal (`regen_images.sh page hstam_4_h_1411_0015`),
+byte-identical to the recorded manifest (sha1 `b4dc7f3f6aabd5ac841df569d16d4fe6c494319b`, confirmed).
+`tools/iiif_lines.py --debug` detected 45 lines (matches `extent.tsv`'s own "~45" estimate); debug overlay
+checked by eye, line bands look clean against the page image. The full page and the debug overlay are
+**not** committed (folder-size rule); the full page is byte-identically re-fetchable
+(`./regen_images.sh page hstam_4_h_1411_0015`) and any of the 36 line crops this job did not keep on disk
+is re-cuttable from it via the box coordinates already recorded in `crops/0015/manifest.json`
+(`./regen_images.sh crop 0015 <cropname>`, spot-checked on L01, byte-identical regen confirmed) -- same
+convention as bMALS's AX2-SHRINK-style shrink. Only the 9 crib-critical crops (L26-L34, the marginal-note
+span plus the cipher passage and its immediate context) are kept committed, 312 KB; `images_manifest_full.tsv`
+updated with their rows and the full page's `cited_by`.
+
+**U1/U2 two blind Sonnet-subagent passes**, each given only the 45 crop paths (no sight of the other pass),
+instructed to write `[CIPHER]` for a pure-digit-run line rather than transcribe signs: `plain_passA_0015.tsv`,
+`plain_passB_0015.tsv`, 45 rows each.
+
+**U3 reconciliation -- data-quality finding, not just a disagreement rate.** `tools/reconcile_passes.py`
+does not fit this pass shape (whole-sentence free text, not a wide/long sign-per-row cipher format, the
+same SALV-PLAIN1 finding the brief itself flagged as the likely outcome). A manual per-line_id comparison
+found genuinely very low raw agreement -- **94.9% word-level mismatch (501/528 words), 40/41 non-cipher
+lines with at least one word difference** -- but a large part of this is not itself reading disagreement:
+**direct crop inspection found pass A's own line_id numbering drifts +1 relative to the true crop filenames
+from about L14 onward** (confirmed at two independent anchors: the "23." numeral appears in pass A's L15
+and pass B's L14 for the same crop content; the margin-note/cipher-boundary region, where pass A's row
+labelled L29 matches the true crop L28's content, pass A's L30 matches true L29, etc. -- see the L27/L28
+crop reads below). This is a transcription-pass numbering error (pass A likely merged or skipped a line's
+content silently while still emitting 45 rows), not a second, disagreeing read of the same line, so the
+naive 94.9% figure is inflated by mis-paired comparison for roughly two-thirds of the page on top of the
+genuine difficulty of the hand (both passes independently marked most words `?`/`???`). Pass B's line_id
+was cross-checked against the source crops at several anchors (proper names Wolbram/Thomas/Hermann at
+L12-L13, the margin note at L26, the cipher boundary at L29-L33) and found reliable throughout, so pass B's
+numbering is used as the base in `clear_0015.txt`. This number is not comparable to bMALX's ff.16/23/24/28
+sign-level agreement figures (f.28 66.0%, f.30 76.5%, i.e. 24-34% disagreement) -- those are constrained
+digit-sign matches on a small alphabet; free chancery-prose reading with no vocabulary constraint is a much
+harder, differently-distributed task, and both blind passes here independently rated most of the page
+low-confidence regardless of the numbering issue. `clear_0015.txt` written in `clear_0023.txt`'s shape with
+an added per-line grade (A = the two passes independently share vocabulary despite low per-word confidence,
+L03-L12 mostly; R = this worker's own direct crop read, the 9 crib-critical lines L26-L34; M = pass B's
+single-pass reading only, unresolved, the rest of the page).
+
+**Cipher-passage line range, settled from the crops directly (not from either pass's own line_id alone):**
+**L29-L32 are four full pure-digit lines; L33 is the partial fifth** (leads with a few more digits, `1.
+27.60.84.`, then resumes clear prose) -- this matches `extent.tsv`'s "4 full lines + a partial 5th" exactly.
+L28 is the last clear-prose line, ending with a date and the first digits of the run ("...ich habe das zum
+8. [Septembris?] 76.y.57..."); L34 is the first fully-clear-prose line after the passage.
+
+**Marginal note, read directly from the crops (spans the left margin beside crops L26-L30, six short
+lines):** `monathlich mit 20 Rebellen vnd dem [?] fuß [Volck?] mit eines jungen (den [erst?] beim G.L. auf
+mehr alß [Vor]fall[en])` -- LOW CONFIDENCE, several words uncertain (bracketed). Read as sitting beside,
+and evidently keyed to, the cipher passage the brief named (per `extent.tsv`'s own note). Appended to
+`cribs.tsv` as row `MARG.15`. The sentences immediately before (`CTX.15a`, L27-L28) and after (`CTX.15b`,
+L33-L34) the passage are appended alongside it, all grade M.
+
+**G.G./A.A./K.K. label re-check.** Grepped `clear_0015.txt` and both pass TSVs for the labels, doubled
+letters, and naming clauses: **no G.G., A.A. or K.K. sighting anywhere on f.15.** One false-positive
+candidate found and ruled out: pass A misread the margin-note span at crop L29 ("...beym G.L.") as
+"gg. oo. bb)" -- a direct 4x-zoom re-crop of that exact span (`crops/0015/hstam_4_h_1411_0015_L29.jpg`, left
+400px) shows a single G-loop followed by a distinct L-stroke, period, L, period: **G.L., not G.G.** -- most
+likely an abbreviated rank/title (cf. "Herr Gen: Lieut:" at L06), not the nomenclator monogram. Logged in
+`mono_hits.tsv`. **Label counts unchanged from MAL-GG: G.G. = 2 (f.32, f.33), A.A. = 1 (f.33), K.K. = 1
+(f.33, image-only per bMALS, still not on disk in any transcribed file). The 3+ raw-sighting gate is not
+met by this leaf; no family opens.**
+
+**Named next step.** No untried cheap step remains on this specific line of inquiry (the highest-prose-ratio
+unread leaf has now been read and did not yield a third sighting). Per `extent.tsv`, the next candidates by
+the same "clear prose vs. cipher" ratio logic are the other unread leaves with no `recon_*`/`clear_*` files
+yet (ff.18, 25, 29, 31) -- none flagged in `extent.tsv` as having as favourable a ratio as f.15 did, so the
+marginal expected value of a further blind leaf read for this specific gate is lower than f.15's was. This
+job does not itself recommend spending further budget chasing a 3rd G.G./A.A./K.K. sighting past this
+point; the next cheap step for this target is whatever NEXT-STEPS.tsv ranks after this row is regenerated.
+
+Status stays `partial` (rule 5). No key claim, no "solved"/"new"/"first"/"unpublished" wording.
+
+Hosts: api.hcportal.eu, 1 request (page fetch; byte-identical to the recorded manifest, no retry needed).
+Subagents: 2 (the two blind passes, per the brief's cap).
+
+Files: `plain_passA_0015.tsv`, `plain_passB_0015.tsv`, `clear_0015.txt`, `crops/0015/` (9 crib-critical
+crops + manifest.json), `images_manifest_full.tsv`, `cribs.tsv` (+3 rows), `mono_hits.tsv` (+1 row).

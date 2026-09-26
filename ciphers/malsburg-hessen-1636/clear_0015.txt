@@ -1,0 +1,107 @@
+clear_0015.txt -- record 503 (1/3), leaf f.15 (hstam_4_h_1411_0015.jpg), all 45 detected lines of the
+tools/iiif_lines.py auto-detection (crops/0015/), L01-L45; the embedded cipher passage is L29-L32
+(4 full lines) plus a partial 5th, L33 (see NOTES.md "MAL-F15 (26 Sept 2026)"). Two independent blind
+Sonnet subagent passes (plain_passA_0015.tsv, plain_passB_0015.tsv), reconciled by this job's worker.
+DATA QUALITY NOTE: pass A's own line_id numbering was found, by direct crop inspection, to drift +1
+relative to the true crop filenames from about L14 onward (pass A's row labelled L(n) matches the true
+crop L(n-1)'s content from that point on, confirmed at the L15/23-numeral anchor and the L28-29 margin/
+cipher-boundary anchor) -- a transcription-pass numbering error, not a second reading of the same line.
+Pass B's line_id was verified against the source crops at multiple anchor points (proper names Wolbram/
+Thomas/Hermann at L12-L13, the margin note at L26, the cipher boundary at L29-L33) and found reliable
+throughout; pass B's own line_id numbering is used below. This is dense, faded early-17th-century German
+chancery cursive (Kurrentschrift) at the limit of what a non-specialist pass can read reliably -- flagged
+LOW CONFIDENCE throughout except where noted. [?] marks an uncertain word/reading; ??? an unreadable span.
+Grade column: A = the two blind passes independently landed on overlapping vocabulary for this line
+(weak agreement only -- most words in an "A" line are still individually uncertain); R = this job's
+worker read/settled the line directly from the crop image (crib-critical lines only, L26-L34); M =
+unresolved, single-pass reading only (pass B's, the reliably-numbered pass), not cross-checked.
+Do not cite this file as an H-grade or C-grade reading; provided as crib context only (rule 2).
+
+L01 [M]: ??? genedigen ??? Landgraff
+    (top of page, badly legible dense cursive; small mark in left margin (rubric/paragraph mark?); possible word "Landgraff" at line end, low confidence)
+L02 [M]: ???
+    (very faint line, mostly illegible; a short word with a superscript abbreviation mark near right side, illegible)
+L03 [A]: R: v: gl: genedigen auch ??? Röm: d. 16. ??? Ihre[n] ??? empfangen, danckh ???
+    (partial: "Röm:" and "16." (date) and "empfangen" reasonably legible; rest uncertain)
+L04 [A]: ??? das Röm[isch] ??? in ??? hat ??? deß ??? Röm[isch] ??? auß 300. ??? Roß[?] auf ???
+    (Röm: abbreviation and "300." numeral fairly legible; rest uncertain)
+L05 [A]: ??? weil man ??? be??? gelegen ??? in deß ??? Röm[isch] ??? Compagnie ???
+    (word resembling "Compagnie" near line end, moderate confidence; rest uncertain)
+L06 [A]: ??? Herr Gen[eral]: Lieut[enant]: Regiment[s] ??? ??? Röm[isch] ??? Compagnie mit 300
+    (Gen: Lieut: and "Regiment" and "Compagnie" and "300." fairly legible military terms; rest uncertain)
+L07 [A]: Musqu[etierer] ??? Commando ??? Obrist Lieutenant ??? Jost ??? mit ?. Regiment[s] ???
+    (Commando, "Obrist Lieutenant" and "Regiment" fairly legible; a name resembling "Jost" or similar, low confidence)
+L08 [A]: ??? ??? die Rott[e] ??? ?. Tag[e] deß 21. ??? in ??? ??? von ??? mans ??? durch ???
+    (21. numeral (day of month) fairly legible; rest uncertain)
+L09 [A]: ??? Wehrt ??? Esquadron ??? geschickt ??? auff alß die 900. Mannschafft auß ???
+    (Esquadron and "900." numeral fairly legible; rest uncertain)
+L10 [A]: ??? Danck ??? sein bericht ??? alleine bey ??? gefaßt, geschlagen ??? ??? ??? gezwungen
+L11 [A]: ??? ??? ??? es war nicht gar groß, ??? mag ??? aber ??? deß ??? ???
+L12 [A]: ??? ??? mich ??? gesagt, die bey ??? Abrichte Postmas ??? Wolbram ??? ??? ???
+    (Wolbram (personal name) fairly legible, moderate confidence; rest uncertain)
+L13 [M]: ??? Zainit? die Thomas ??? Herrn Hermann ??? Obrist ??? Ambt ???
+    (names "Thomas" and "Hermann" and rank "Obrist" fairly legible; rest uncertain)
+L14 [M]: ??? ??? ??? soviel als ??? Herr ??? gnedigst geändert ??? ??? den 23. ???
+    (23. numeral fairly legible; rest uncertain)
+L15 [M]: 370. ??? deß ??? ??? ??? 223. ??? Roß[?] ??? Wagen[?] aber ???
+    (numerals "370." and "223." fairly legible; rest uncertain)
+L16 [M]: ??? kommen, das ???
+    (???)
+L17 [M]: 78. in allen ??? ??? Regiment[s] ??? ??? a propos, deß ??? ??? mit ???
+    (78. numeral and "a propos" (French loan phrase) and "Regiment" fairly legible; rest uncertain)
+L18 [M]: ??? R[egiment]: gestellt: Contra Mando ??? ??? Compagnie ??? ??? ???
+    (Contra Mando (countermand) and "Compagnie" fairly legible; rest uncertain)
+L19 [M]: ??? bagage ??? mit ??? ??? ??? ??? in 5. Tag[e]s ???
+    (5. Tags (5 days) fairly legible; rest uncertain)
+L20 [M]: ??? bei ??? Stunden ??? ??? ??? ??? ??? Himmel ??? die ???
+    (mostly uncertain)
+L21 [M]: Römer[isch], R: gl: ??? weniger ??? ??? ??? dieser Zeit[?] ???
+    (Römer and abbreviation "gl:" fairly legible; rest uncertain)
+L22 [M]: ??? ??? Durchgangen, ??? wenig ??? ??? ??? kommt ??? hat ??? Schuldn[er]? ???
+    (uncertain)
+L23 [M]: ??? Römer[isch], ??? ??? ??? ??? das große ??? ??? ??? ???
+    (uncertain)
+L24 [M]: Die ??? ??? ??? ??? ??? ??? ??? nicht aber daß mir ??? ??? über Landt
+    (uncertain)
+L25 [M]: ??? ??? ??? ??? ??? ??? ??? R: gl: nicht ???
+    (uncertain)
+L26 [R]: monathlich mit 20 Rebellen vnd dem [?] fuß [Volck?] mit eines jungen (den [erst?] beim G.L. auf mehr alß [Vor]fall[en])
+    (marginal note (spans crops L26-L30 in the left margin, beside the cipher passage); worker's own direct read, LOW CONFIDENCE, several words uncertain -- see NOTES.md MAL-F15 section)
+L27 [R]: [?] [?] sich [etlichen?] monat zu Verrichten sich außgefallen, würde denselben etwas eüm wieder [?]
+    (worker's own direct read of crop, LOW CONFIDENCE; sentence leading up to the cipher passage)
+L28 [R]: [etwas?] jüngst dies[e] Kammer Rechnung mit einbringen, ich habe das zum 8. [Septembris?] [CIPHER-STARTS]
+    (worker's own direct read of crop, LOW-MODERATE CONFIDENCE on the prose portion, cross-checked against passB L28; the line ends with the start of the cipher run (not transcribed, see cribs.tsv/HYPOTHESES.md) -- last clear-prose line before the passage)
+L29 [R]: [CIPHER]
+    (pure cipher line (1st of 4 full lines), not transcribed as signs -- see ciphertext work if opened)
+L30 [R]: [CIPHER]
+    (pure cipher line (2nd of 4 full lines), not transcribed as signs)
+L31 [R]: [CIPHER]
+    (pure cipher line (3rd of 4 full lines), not transcribed as signs)
+L32 [R]: [CIPHER]
+    (pure cipher line (4th of 4 full lines), not transcribed as signs)
+L33 [R]: [CIPHER-ENDS] will aber das bald nachlaßen, alß meinem fleiß irgend[s] hierin [?] den Fällen nicht mangeln
+    (worker's own direct read of crop, LOW-MODERATE CONFIDENCE on the prose portion; partial 5th line of the cipher passage (leads with a few more numerals, not transcribed, then resumes clear prose) -- first clear-prose line after the passage)
+L34 [R]: Chur[fürstlichen] Gfl. [?] auf [?] Verlangst nach Nothurft [?] jetzo Bericht des Fürstenthumbs Feinds vernehmen [?] Ihr[?] Land groß Volck
+    (worker's own direct read of crop, LOW CONFIDENCE)
+L35 [M]: Deß R: gl: einfach dagen[?] ??? Bericht[?] noch novembris ??? gross ??? ???
+    (novembris (November, Latin form) plausible, low-moderate confidence)
+L36 [M]: ??? ??? alhie[r], ??? Bericht[?] deß ??? Königs[?] ??? von ??? Landt[?] gutes solt[e]
+    (uncertain)
+L37 [M]: ??? Chur ??? Regiment[s] deß ??? Ihr[e] ??? Landgraff ??? gefahr ???
+    (uncertain)
+L38 [M]: Radulph[?] Reudt[?] ??? Städlach abgehen könnte ??? gewiß ???, biß rechten geweren ???
+    (uncertain)
+L39 [M]: auch die Infanterie, außerhalb ??? Esquadron ??? in der ??? deß der ??? Compagnie
+    (Infanterie and "Esquadron" and "Compagnie" fairly legible; rest uncertain)
+L40 [M]: ??? Compagnie[n] mit 200. ??? ??? Kammer[?] ??? Römer abermahl[s] officieren wegen Roll[?] Dienst[?]
+    (numeral "200." and "Compagnie" and "Römer" fairly legible; rest uncertain)
+L41 [M]: ??? ??? Stammen[?], klein[?] fast ??? zwar 50. Zewin[?] 70. ??? gemag[?] 60. maß, mögens noch
+    (numerals "50.", "70.", "60." fairly legible; rest uncertain)
+L42 [M]: ??? Theil[?] in der ??? Verlangen[?] gehören, in der ??? ??? liegen[?] bey[m] ??? 1400.
+    (numeral resembling "1400." at line end, low-moderate confidence; rest uncertain)
+L43 [M]: ??? Lohn[?] Sahin[?] ??? ??? mündlichen nach 1000. mögen ??? auch ??? ??? ???
+    (numeral "1000." fairly legible; rest uncertain)
+L44 [M]: ??? ??? ??? auf die Truppen[?] ??? so in ??? ??? völlig ??? ???
+    (uncertain)
+L45 [M]: ???
+    (???)

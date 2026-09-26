@@ -90,3 +90,10 @@ done here, would be needed; out of this job's no-cryptanalysis scope). Nomenclat
 | 26 Sept 2026 11:20 | block_homophonic | N=1629 K=96 restarts=8 corpus=composed_enhg.txt width=3,offset=0,lo=0,hi=99,shuffle_target=1 | 2 | 0.979 (0.979-0.979) | -5161.769 | FAIL language: score=-1.753, null_p99=-1.654, real_p05=-0.438, real_median=-0.423, mode=both, N=1629 | yes (gate 0.6) | bMALN block_homophonic w3 shuffle floor (control seed 2; seed 1 search-failed) |
 | 26 Sept 2026 11:21 | homophonic | N=1629 K=96 restarts=12 corpus=composed_enhg.txt units=syl,profile=target,iters=150000 | 1 | 0.649 (0.292-0.840) | -5533.399 | FAIL language: score=-1.742, null_p99=-1.659, real_p05=-0.433, real_median=-0.423, mode=both, N=1896 | yes (gate 0.6) | bMALN letter+syllable homophonic units=syl order2 numeric pool 0-99 |
 | 26 Sept 2026 11:23 | homophonic | N=1629 K=96 restarts=12 corpus=composed_enhg.txt units=syl,profile=target,iters=150000,shuffle_target=1 | 1 | 0.840 (0.840-0.840) | -5823.290 | FAIL language: score=-1.733, null_p99=-1.657, real_p05=-0.432, real_median=-0.423, mode=both, N=1961 | yes (gate 0.6) | bMALN units=syl numeric pool shuffle floor |
+
+**MAL-F15 (26 Sept 2026).** f.15 (`hstam_4_h_1411_0015`), the leaf with the highest untranscribed-clear-
+prose-to-cipher ratio, read in two independent blind passes plus reconciliation: no G.G./A.A./K.K. sighting
+found (one false-positive candidate, "G.L." in the marginal note, ruled out by direct crop zoom -- see
+NOTES.md). Label counts unchanged: G.G.=2, A.A.=1, K.K.=1 (image-only). 3+ raw-sighting gate not met by
+this leaf; nomenclator family still not opened. Marginal note + surrounding-sentence crib rows added
+(`cribs.tsv` MARG.15/CTX.15a/CTX.15b, grade M).
