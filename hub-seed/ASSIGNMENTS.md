@@ -872,3 +872,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T13:05Z	session_01Jb4UHR8so3yBUG1NTMdf6C	parent 7g done 24.76 (get_session), handed over to 7h	07:37 to 13:05 UTC 26 Sept; about 565k context; two B11 workers (bMALX, bSALS) found retitled but unarchived at the hand-over orphan check and archived by 7g
 2026-09-26T13:05Z	session_01GT3Yv4kUZrBR8pc2s5EToH	parent 7h (Fable, Orchestrator 9, live)	took over from 7g; hub-seed/SUCCESSOR-PROMPT.md; arms its own first check-in
 2026-09-26T13:12Z	session_01Jb4UHR8so3yBUG1NTMdf6C	parent 7g	ledgered 27.46 by get_session (handoff said 24.76), retitled ARCHIVED, archived by 7h, state re-read ARCHIVED	7h take-over
+2026-09-26T13:10Z	session_01GwwZJN1W4YusAZ4u8cgFSB	LEARN-8 (Sonnet, cap 5)	cross-account learning pass, window from 09:06	brief 2026-09-26-parent-learn8.md; parent 7h
