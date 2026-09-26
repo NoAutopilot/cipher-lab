@@ -1741,7 +1741,7 @@ the lane ledger.
 Worker AX-MERGE3 (Opus), brief `.claude/briefs/runs/2026-09-26-lane-ax-merge3.md`, started 04:02 UTC (clock read),
 box 60 min. Intake gate as in AX-NAMES2/AX-MERGE (target `partial`, line 1).
 
-**Gate, written 04:10 UTC before any test ran (verbatim from the brief):** "A conflict code takes the period
+**Gate, written 04:03 UTC before any test ran (verbatim from the brief):** "A conflict code takes the period
 decipherment's value in key_full v3 only if, decoding 5810, 5811 and 4503 with that value instead of key_full's, the
 number of decoded letters matching Groen's print (aligned by the existing axnames aligner, same settings) rises and no
 letter pair gets worse; if the Groen letters carry the code too rarely (<3 occurrences in total) the key_full value
