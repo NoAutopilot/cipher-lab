@@ -655,3 +655,8 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T01:14Z	session_017haw3oAm387c9YR2u8fxTE	GOLD-KAL2 kaliningrad-2015 Russian substitution under transliteration (Sonnet, cap 5, 60 min)	brief 2026-09-26-lane-gold-c5-kaliningrad-russian.md; KAL3 (Polish) serialised after it (shared spec judge.corpora)
 2026-09-26T01:30Z	session_01EXi6Dd2StWbYSHXxRYXEEh	RETRO-APPLY-M done $2.33 D, archived	5 of 5 proposals applied, 6 UPDATES rows, commit 87b5db3
 2026-09-26T01:30Z	session_01JeTZc8L2dYkP6yGK1pkHwv	LEARN-4 done $1.41 Q, archived	LEARN-2026-09-26-0058.md, 3 items; items 1-3 applied by the owner account's RETRO-APPLY-LEARN3 (01:24)
+2026-09-26T01:32Z	session_01EMn1PKxA5zzdkgaUc7u5S3	bRIK (Sonnet, cap 4)	riksarkivet-r4282-1628: R4284 key-test crib vs R4282 + other-keys control	brief 2026-09-26-lane-b5-riksarkivet.md; LANE B5
+2026-09-26T01:32Z	session_01Ftc3FVWZn8Yu3xv7YxCyWd	bPOOL0 (Sonnet, cap 3)	pool census re-rank rows 5-9 (DECODE listing + solver repos)	brief 2026-09-26-lane-b5-pool-census.md; LANE B5
+2026-09-26T01:32Z	session_01TKAwAdJ81TasQKeoCkXug5	bSCORE (Sonnet, cap 3)	score VX/KX/KT/PX backlog into QUEUE-scores.json	brief 2026-09-26-lane-b5-score.md; LANE B5
+2026-09-26T01:35Z	session_01DT6RBTD79xaeQ7VDd4wkkP	bBLZ5 (Sonnet, cap 6)	blitz-ciphers pages 1-6 fetch + blind pass + consistency control	brief 2026-09-26-lane-b5-blitz-pages.md; LANE B5
+2026-09-26T01:35Z	session_018rGmoW7iWQMi5zDpzGtAwW	bMAT2 (Sonnet, cap 4)	matignon-mayenne-1586 read/unread split, M/U two-context with control	brief 2026-09-26-lane-b5-matignon-mu.md; LANE B5
