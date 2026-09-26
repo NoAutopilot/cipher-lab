@@ -335,13 +335,14 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
             parts.append(buf)
         lines.append(" ".join(parts))
     _STASH["dec_tokens"] = dec_tokens
+    _STASH["solver_vocab"] = sc.wlog
     _STASH["dec_lines"] = lines
     nsym = sum(len(r) for r in runs)
     ncode = sum(1 for x in dec_tokens if len(x) > 1)
     info = {"restart_scores": [round(x[0], 1) for x in results], "score_per_token": round(best / max(1, nsym), 4),
             "code_tokens_decoded": ncode, "name_types": sum(1 for v in key.values() if v == NAME),
             "code_words": Counter(x for x in dec_tokens if len(x) > 1 and x != NAME).most_common(25),
-            **{k: v for k, v in _STASH.items() if k not in ("truth_tokens", "truth_index", "truth_code", "dec_tokens", "dec_lines")}}
+            **{k: v for k, v in _STASH.items() if k not in ("truth_tokens", "truth_index", "truth_code", "dec_tokens", "dec_lines", "solver_vocab")}}
     dec = "".join(x for x in dec_tokens if x != NAME)
     return dec, best, info
 
@@ -359,8 +360,11 @@ def score_recovery(plain, truth):
     nl = sum(1 for c in tc if not c); nc = sum(tc)
     al = sum(1 for o, c in zip(ok, tc) if o and not c) / max(1, nl)
     ac = sum(1 for o, c in zip(ok, tc) if o and c) / max(1, nc)
-    _STASH["per_class"] = {"letters": round(al, 3), "codes": round(ac, 3), "n_letters": nl, "n_codes": nc}
-    print(f"  per class: letters {al:.3f} (n={nl}) codes {ac:.3f} (n={nc}); vocab k={_STASH.get('vocab_k')} "
+    voc = _STASH.get("solver_vocab") or {}
+    reach = sum(1 for t, c in zip(tt, tc) if c and t in voc) / max(1, nc)  # code tokens the word list can read at all
+    _STASH["per_class"] = {"letters": round(al, 3), "codes": round(ac, 3), "n_letters": nl, "n_codes": nc,
+                           "codes_in_wordlist": round(reach, 3)}
+    print(f"  per class: letters {al:.3f} (n={nl}) codes {ac:.3f} (n={nc}, {reach:.3f} in the word list); vocab k={_STASH.get('vocab_k')} "
           f"code share {_STASH.get('code_share')} (target {_STASH.get('target_code_share')}), code types "
           f"{_STASH.get('code_types')}, control K {_STASH.get('control_types')}")
     return sum(ok) / len(tt)
