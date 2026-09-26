@@ -216,6 +216,55 @@ def test_control_n():
     print(f"ok family_run control-n: projected control built at N={ns}, target K={actual_K}; {time.time() - t0:.0f}s")
 
 
+def test_measured_error():
+    """--measured-error (SALV-DIAG, RETRO-2026-09-26g item 3): a control error --param (err= or noise=) below
+    --measured-error prints a stderr WARNING and marks the target row as a non-test, not a design-family negative,
+    rather than refusing the run or silently logging a FAIL as a negative. Uses the masc family (which ignores
+    the err param itself) to test the mechanism in isolation from any one family's own noise support."""
+    t0 = time.time()
+    holmes = jp.read_corpus(os.path.join(ROOT, "tools", "data", "pg1661_holmes.txt"))
+    text = jp.fold(holmes)
+    plain = text[220000:220100]
+    assert len(plain) == 100
+    rng = random.Random(13)
+    letters = list("abcdefghijklmnopqrstuvwxyz")
+    perm = letters[:]
+    rng.shuffle(perm)
+    key = dict(zip(letters, perm))
+    cipher = "".join(key[a] for a in plain)
+    with tempfile.TemporaryDirectory() as d:
+        spec = {"slug": "synthetic-measured-error-test", "alphabet": "a-z",
+                "ciphertext": [cipher],
+                "matched_control": "English window, N=100, simple substitution",
+                "judge": {"language": "en", "letters_min": 50, "letters_max": 150, "control_samples": 20}}
+        sp = os.path.join(d, "synthetic-measured-error-test.json")
+        json.dump(spec, open(sp, "w"))
+        out = os.path.join(d, "ciphers", "synthetic-measured-error-test", "HYPOTHESES.md")
+        fdir = os.path.join(ROOT, "ciphers", "synthetic-measured-error-test")
+        try:
+            # control error param (err=0.05) below --measured-error (0.10): WARNING on stderr, row carries the marker
+            rc, log = run(sp, "--family", "masc", "--seed", "1", "--seeds", "1", "--restarts", "1",
+                          "--param", "iters=3000", "--param", "err=0.05", "--measured-error", "0.10",
+                          "--gate", "0.0", "--out", out, "--label", "offline test measured-error")
+            assert rc == 0, (rc, log)
+            assert "WARNING: control error param (0.05) is below --measured-error (0.1)" in log, log
+            table = open(out, encoding="utf-8").read()
+            assert "non-test, not a negative" in table, table
+            # --measured-error at or below the param: no warning, no marker on the new row
+            rc, log = run(sp, "--family", "masc", "--seed", "2", "--seeds", "1", "--restarts", "1",
+                          "--param", "iters=3000", "--param", "err=0.05", "--measured-error", "0.03",
+                          "--gate", "0.0", "--out", out, "--label", "offline test measured-error ok")
+            assert rc == 0, (rc, log)
+            assert "WARNING: control error param" not in log, log
+            rows = [l for l in open(out, encoding="utf-8").read().splitlines() if l.startswith("|")]
+            assert "non-test, not a negative" not in rows[-1], rows[-1]
+        finally:
+            import shutil
+            shutil.rmtree(fdir, ignore_errors=True)
+    print(f"ok family_run measured-error: warning+marker below threshold, none above; {time.time() - t0:.0f}s")
+
+
 if __name__ == "__main__":
     test_family_run()
     test_control_n()
+    test_measured_error()

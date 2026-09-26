@@ -45,6 +45,14 @@ root (--out to write elsewhere), with a first line `keys: N present, M working, 
 the previous KEYS-STATUS.md, if one exists, so a key going from absent/failing to present/working
 is visible without a diff.
 
+A single-key probe (Google Books, OpenAlex, S2, Europeana, DPLA, CORE) that reads "works: no" when
+the previous KEYS-STATUS.md said "works: yes" retries once after a short pause before trusting the
+flip (26 Sept 2026, RETRO-2026-09-26g item 4: the good-citizen rule's "a single retry after a pause"
+applied to the probe's own flip detection, not only to a live host fetch) -- a transient 429 landing
+inside another caller's burst otherwise reads identically to a genuinely revoked key. The detail
+notes "(retry after transient failure)" when the retry recovers, or "(confirmed on retry after Ns:
+...)" when it does not.
+
 Not the same tool as tools/key_probe.py (parent 7d, 25 Sept 2026 22:44 UTC): that one checks, by
 NAME only, which credential variables this container carries against KEYS.md and keeps the two
 accounts' registers in sync (`--sync`); it never makes a network call. This one is the other half
@@ -273,10 +281,12 @@ def parse_previous_status(path):
     return prev
 
 
-def run_probe(http=default_http, now=None, cache=None, force=False, cooldown=900, do_ia_login=False, sleep=time.sleep):
+def run_probe(http=default_http, now=None, cache=None, force=False, cooldown=900, do_ia_login=False, sleep=time.sleep,
+              prev=None, retry_pause=5):
     """Pure-ish core: returns a list of row dicts. `http` and `sleep` are injectable for the offline test."""
     now = now if now is not None else time.time()
     cache = cache if cache is not None else load_cache()
+    prev = prev or {}
     rows = []
     first_live_call = True
 
@@ -302,6 +312,17 @@ def run_probe(http=default_http, now=None, cache=None, force=False, cooldown=900
             continue
         maybe_sleep()
         ok, detail = spec["test"](value, http)
+        prior = prev.get(spec["label"])
+        if prior is not None and prior[1] == "yes" and ok is False:
+            # a live flip from working to not-working: one retry after a pause before trusting it (good-citizen
+            # rule's own one-retry-after-a-pause discipline, applied to the probe's own flip detection --
+            # 26 Sept 2026, RETRO-2026-09-26g, S2 read yes->no with no retry between two probes 26 min apart)
+            sleep(retry_pause)
+            ok2, detail2 = spec["test"](value, http)
+            if ok2:
+                ok, detail = ok2, detail2 + " (retry after transient failure)"
+            else:
+                detail = detail + f" (confirmed on retry after {retry_pause}s: {detail2})"
         if ok is not None:
             cache[spec["id"]] = {"t": now, "ok": ok, "detail": detail}
         row.update(works=ok, detail=detail, checked_live=True)
@@ -381,7 +402,7 @@ def main(argv=None):
     a = ap.parse_args(argv)
 
     prev = parse_previous_status(a.out)
-    rows = run_probe(force=a.force, cooldown=a.cooldown, do_ia_login=a.ia_login)
+    rows = run_probe(force=a.force, cooldown=a.cooldown, do_ia_login=a.ia_login, prev=prev)
     stamp = time.strftime("%Y-%m-%d %H:%M", time.gmtime())
     md = render_markdown(rows, stamp) + render_changes(rows, prev)
     with open(a.out, "w", encoding="utf-8") as f:

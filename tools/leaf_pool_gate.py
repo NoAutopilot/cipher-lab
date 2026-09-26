@@ -14,7 +14,11 @@ to the pool only if all three hold:
       orthogonal-control paragraph). Plain vocabulary overlap is reported but does not gate: a K=95 nomenclator
       saturates the two-digit space, so any two-digit leaf overlaps it. A leaf in a different key (or read as
       noise) has its frequent values in different places and sits inside the relabel band.
-A leaf failing any gate is held: its signs stay out of the pool (reported, not merged).
+A leaf failing any gate is held: its signs stay out of the pool (reported, not merged) -- except a leaf that
+clears form and system but fails only quality (M-share): its H-graded signs are pooled for frequency/system
+purposes (`pooled_h_only`), and only its M-graded signs stay out of value attestation, the per-token version of
+rule 3's per-unit merge-gate paragraph applied within a single leaf (26 Sept 2026, RETRO-2026-09-26g; malsburg
+f.28/f.24/f.16 all passed cosine decisively and were held whole before this).
 
 Files: TSVs with a header containing 'sign' and optionally 'confidence' (H/M/...). Several --pool files may be
 given (ciphertext.txt plus leaves already admitted).
@@ -80,6 +84,12 @@ def gate(leaf, pool, form=DEFAULT_FORM, max_m=0.15, max_offform=0.05, shuffles=2
         "gate_quality": m_share <= max_m, "gate_form": off_share <= max_offform, "gate_system": real > p95,
     }
     res["admitted"] = res["gate_quality"] and res["gate_form"] and res["gate_system"]
+    # A leaf that clears form + system but fails quality (M-share) is not the same as a leaf that fails
+    # system: the cosine test already established it is the same cipher, so its H-graded signs are safe to
+    # pool for frequency/system purposes. Only its M-graded (uncertain) signs stay excluded from any code-value
+    # attestation, the per-token version of rule 3's per-unit merge-gate paragraph (26 Sept 2026,
+    # RETRO-2026-09-26g; three malsburg leaves f.28/f.24/f.16 all passed cosine decisively and were held whole).
+    res["pooled_h_only"] = res["gate_form"] and res["gate_system"] and not res["gate_quality"]
     return res
 
 
@@ -103,8 +113,12 @@ def main():
     line = (f"leaf {a.leaf}: N={r['n']} K={r['k']} M={r['m_share']:.3f} (<= {a.max_m}) "
             f"offform={r['offform_share']:.3f} (<= {a.max_offform}) vocab overlap {r['vocab_overlap']:.3f}; cosine real "
             f"{r['cosine_real']:.3f} vs relabel mean {r['cosine_relabel_mean']:.3f} p95 {r['cosine_relabel_p95']:.3f} -> "
-            f"{'ADMITTED' if r['admitted'] else 'HELD'}")
+            f"{'ADMITTED' if r['admitted'] else 'POOLED (H-only, M held per-token)' if r['pooled_h_only'] else 'HELD'}")
     print(line)
+    if r["pooled_h_only"]:
+        print("  H-graded signs join the pool for frequency/system stats; M-graded signs stay out of key.tsv "
+              "value attestation until corroborated by an H occurrence or another leaf's admitted reading "
+              "(CLAUDE.md rule 3, per-unit merge-gate paragraph).")
     if r["offform_examples"]:
         print("  offform examples:", " ".join(r["offform_examples"]))
     if a.json:

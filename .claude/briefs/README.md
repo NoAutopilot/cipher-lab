@@ -101,3 +101,14 @@ applied unchanged, and three named cycle-3 briefs written from it.
 - **A lane cannot archive itself (26 Sept 2026, RETRO-2026-09-26f).** A lane orchestrator that closes retitles its
   own session ARCHIVED and self-ledgers, but does not call `archive_session` on itself; the parent runs
   `archive_session` on it at the parent's next check-in (owner-account parent's ROOM line 09:42, AX2's close).
+- **Per-unit pricing precedents (26 Sept 2026, LANE B9).** Before pricing a visual-transcription or
+  witness-settling job (Usage item 6's per-unit box), check whether a comparable unit has a recorded rate here
+  rather than estimating a round number: dense mixed-hand cipher leaf, two blind passes + reconcile + per-leaf
+  gate -- about USD 0.4 a cipher line all in (malsburg-hessen-1636, LANE B9, bMAL23/24/28/28B/16, five of nine
+  workers over cap before this rate was known); settling one hand-flagged disagreement row from a crop or a
+  sibling witness -- about USD 0.1 a row (bMAL28B). A rate recorded here for one target's hand and script style
+  is a starting estimate for a visually similar leaf, not a promise for every hand -- state it in the brief as
+  "priced from <precedent>, confirm on the first unit" (Usage item 6's own 80%-of-cap/box self-stop rule still
+  applies if the first unit runs hotter). A lane orchestrator that recalibrates a rate this way adds the new
+  precedent here in the same close-out pass that writes its STATUS.md handoff, rather than leaving it for a
+  retrospective to notice a second time.

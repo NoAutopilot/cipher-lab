@@ -260,6 +260,11 @@ def main(argv=None):
     ap.add_argument("--out", help="HYPOTHESES.md path (default ciphers/<slug>/HYPOTHESES.md)")
     ap.add_argument("--label", default="", help="who ran it and why; rule 10 words are refused")
     ap.add_argument("--param", action="append", default=[], help="family parameter k=v (iters, order, tabula, period, beam ...)")
+    ap.add_argument("--measured-error", type=float, default=None, metavar="P",
+                     help="the target's own measured transcription disagreement rate (0-1, from reconcile_passes.py "
+                          "or a leaf's two-pass reconciliation); if the family's own noise/err --param is below this, "
+                          "the run is not refused but its HYPOTHESES.md row is marked as a non-test, not a negative "
+                          "(CLAUDE.md rule 3, SALV-DIAG paragraph, 26 Sept 2026)")
     ap.add_argument("--cipher", help="ciphertext file overriding the spec (long-format TSV with a sign column, or text)")
     ap.add_argument("--tokens", default="auto", choices=["auto", "letters", "space"])
     ap.add_argument("--shuffle-target", type=int, default=None, metavar="SEED",
@@ -281,6 +286,14 @@ def main(argv=None):
     spec = json.load(open(a.spec, encoding="utf-8"))
     slug = spec.get("slug") or os.path.splitext(os.path.basename(a.spec))[0]
     params = dict(kv.split("=", 1) for kv in a.param)
+    label_note = ""
+    if a.measured_error is not None:
+        err_param = params.get("err") or params.get("noise")
+        if err_param is not None and float(err_param) < a.measured_error:
+            print(f"WARNING: control error param ({err_param}) is below --measured-error ({a.measured_error}) -- "
+                  f"a FAIL here is not yet a design-family negative (CLAUDE.md rule 3, SALV-DIAG paragraph)",
+                  file=sys.stderr)
+            label_note = f" [control error {err_param} < measured {a.measured_error}: non-test, not a negative]"
     if a.cipher:
         msgs, mode = read_cipher_file(a.cipher, a.tokens)
     else:
@@ -381,7 +394,7 @@ def main(argv=None):
             f.write(line + "\n")
     verdict = run_judge(a.spec, dpath) if spec.get("judge") else "no judge block"
     print(f"TARGET best score {sc:.3f}; decode -> {rel(dpath)}; judge: {verdict}")
-    append_row(out, [date, a.family, par, a.seed, ctl, f"{sc:.3f}", verdict, f"yes (gate {a.gate})", a.label or "-"])
+    append_row(out, [date, a.family, par, a.seed, ctl, f"{sc:.3f}", verdict + label_note, f"yes (gate {a.gate})", a.label or "-"])
     print(f"row appended to {rel(out)}")
     return 0
 

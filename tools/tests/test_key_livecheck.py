@@ -2,7 +2,10 @@
 """Offline test for tools/key_livecheck.py (no network; monkeypatched os.environ and a stubbed HTTP
 layer). Checks: presence detection, live-test dispatch per credential kind, the cache/cooldown,
 --force, IA's login gated behind do_ia_login, DECODE/JSTOR staying presence-only regardless, and
-that no credential value ever appears in a rendered row or the Markdown output.
+that no credential value ever appears in a rendered row or the Markdown output. Also (RETRO-2026-09-26g
+item 4) a working->failing flip against `prev` retries once after a pause before being trusted: recovers
+if the retry succeeds, reports "confirmed on retry" if it fails again, and never retries when there was no
+prior "works: yes" to flip from.
 Run: python3 tools/tests/test_key_livecheck.py"""
 import json
 import os
@@ -149,6 +152,56 @@ try:
     rows7 = kp.run_probe(http=StubHTTP(), cache={}, sleep=lambda s: None)
     ddb = next(r for r in rows7 if r["id"] == "ddb")
     check(ddb["present"] is True and ddb["works"] is None, "DDB: present but no documented test -> works=None, not False")
+
+    # 9b (RETRO-2026-09-26g item 4). a live flip from working to not-working retries once after a pause before
+    # trusting it: a fake http failing once then succeeding recovers when prev shows the key was working; a fake
+    # http failing every time reports works=False with a "confirmed on retry" detail.
+    class FlipOnceHTTP:
+        def __init__(self):
+            self.calls, self.seen = [], set()
+
+        def __call__(self, url, method="GET", headers=None, data=None, timeout=30):
+            self.calls.append((url, method, headers, data))
+            key = "googleapis.com" if "googleapis.com" in url else url
+            if key not in self.seen:
+                self.seen.add(key)
+                return 400, b'{"error": "rate limited"}'
+            return 200, b'{"totalItems": 1}'
+
+    class AlwaysFailHTTP:
+        def __init__(self):
+            self.calls = []
+
+        def __call__(self, url, method="GET", headers=None, data=None, timeout=30):
+            self.calls.append((url, method, headers, data))
+            return 400, b'{"error": "rate limited"}'
+
+    os.environ["GOOGLE_BOOKS_KEY"] = SECRET
+    gb_label = "Google Books (googleapis.com/books/v1)"
+    prev_working = {gb_label: ("yes", "yes")}
+    sleeps = []
+    flip = FlipOnceHTTP()
+    rows8b = kp.run_probe(http=flip, cache={}, sleep=lambda s: sleeps.append(s), prev=prev_working)
+    gb8b = next(r for r in rows8b if r["id"] == "google_books")
+    check(gb8b["works"] is True, "google_books: transient failure recovers on retry when prev was working")
+    check("retry after transient failure" in gb8b["detail"], "google_books: detail notes the retry")
+    gb_calls = [c for c in flip.calls if "googleapis.com" in c[0]]
+    check(len(gb_calls) == 2, "google_books: exactly one retry call made on a working->failing flip")
+
+    always_fail = AlwaysFailHTTP()
+    rows8c = kp.run_probe(http=always_fail, cache={}, sleep=lambda s: None, prev=prev_working)
+    gb8c = next(r for r in rows8c if r["id"] == "google_books")
+    check(gb8c["works"] is False, "google_books: confirmed failure after retry when both calls fail")
+    check("confirmed on retry" in gb8c["detail"], "google_books: detail says confirmed on retry")
+    gb_calls_c = [c for c in always_fail.calls if "googleapis.com" in c[0]]
+    check(len(gb_calls_c) == 2, "google_books: exactly one retry call made, not a loop")
+
+    no_retry = AlwaysFailHTTP()
+    rows8d = kp.run_probe(http=no_retry, cache={}, sleep=lambda s: None, prev={})
+    gb8d = next(r for r in rows8d if r["id"] == "google_books")
+    check(gb8d["works"] is False, "google_books: no prior 'works' -> no retry needed")
+    gb_calls_d = [c for c in no_retry.calls if "googleapis.com" in c[0]]
+    check(len(gb_calls_d) == 1, "google_books: no retry call when there was no working->failing flip to confirm")
 
     # 8. render_changes flags a transition
     prev = {"Google Books (googleapis.com/books/v1)": ("no", "no")}

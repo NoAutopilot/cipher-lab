@@ -134,6 +134,18 @@ session and every subagent, cloud or local.
    >0.458 and bigram 3/6->0/2, never all three numbers above gate together) -- retired for that hypothesis, logged
    in HYPOTHESES.md as "untested-by-this-tool" (not refuted), and not re-briefed against the same hypothesis
    without a different instrument.
+   A family control's injected-error level must bracket the target's own measured transcription error before a
+   FAIL on that control is logged as a design-family negative, the same way a control's N and K must match the
+   target's own (this section's Salviati headline paragraph) -- an error-tolerant family tested only at error
+   levels below where its own control starts to fail is not yet a test of the design at the target's real
+   reliability. Lesson of 26 Sept 2026 (SALV-DIAG, fr2933-salviati-1525): LANE R8's syllabary controls (DSN,
+   DSN2) ran at 0/5/7% injected error and read 83-99% clean, licensing FAILs on the target logged as
+   control-backed negatives -- but a further sweep at 10/12/14% found the control's own recovery collapses
+   between 7% (89% clean) and 10% (already worse than the target's own decode score), a crossover at about 8-9%,
+   which sits inside the atlas transcription's own measured 14.6% pass-to-pass disagreement. Every prior
+   negative on this target was drawn from an error band the transcription cannot back up: not a design
+   exclusion, a non-test, and the row moves to `partial` (rule 5) with the named next step being a transcription
+   pass to lower the measured error, not a further family attempt at the same noise levels.
 4. **Grade every claimed reading per token:** H read from a key source, C from known plaintext, S cryptanalytic
    with a control, M uncertain, I inferred or repaired. Give the counts. No H or C means "cryptanalytic result".
    Two H-grade period decipherments that disagree on one code are a data conflict, not a transcription error to
