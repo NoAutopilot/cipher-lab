@@ -1,4 +1,4 @@
-status: mailbox-draft (26 Sept 2026 16:59 UTC; awaiting the owner's send). Gate 1 waived per ASKS row 66: this is a question, states no reading. Address jmadison@virginia.edu reconfirmed 26 Sept 2026 13:43 UTC on pjm.as.virginia.edu/contact (MAIL-PREP).
+status: sent 26 Sept 2026 18:01 UTC by the person from the project mailbox (Gmail Sent, read by parent 7i 18:03 UTC); reply pending. Was: mailbox-draft (26 Sept 2026 16:59 UTC; awaiting the owner's send). Gate 1 waived per ASKS row 66: this is a question, states no reading. Address jmadison@virginia.edu reconfirmed 26 Sept 2026 13:43 UTC on pjm.as.virginia.edu/contact (MAIL-PREP).
 voice: rewritten 26 Sept 2026 17:46 UTC by parent 7i in first-person plain voice (owner's ask, 17:45 UTC); facts as checked 17:37; the body of record is outreach/mailbox/armstrong-madison-editors.json; OUT-CHECK-V re-check pending, not sendable until its checked: line lands
 subject: Armstrong to Madison, 20 February 1808: is any other letter in this cipher known?
 to: Papers of James Madison, University of Virginia -- jmadison@virginia.edu (public contact address, read from https://pjm.as.virginia.edu/contact on 26 Sept 2026 13:43 UTC)
