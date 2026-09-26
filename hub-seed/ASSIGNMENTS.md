@@ -685,3 +685,7 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T03:08Z	session_01CRyJUfAtBNpa7SmWFbxxG7	LANE B6 bSCOUT6 (Sonnet, cap 6)	scout vs solver-repo HEAD, QUEUE.md second pass	brief 2026-09-26-lane-b6-scout.md; LANE B6
 2026-09-26T03:23Z	session_0115VoZHqAKWYSQUpVibotKo	GOLD-KAL4 done $4.31 D, archived by LANE GOLD3	three of four below-gate controls resolved at restarts 20, all targets judge FAIL; sweep nl/da/en/fr/it/es all FAIL with controls met; lt-A and pt-B CONTROL BELOW GATE; reserve cheap families spent
 2026-09-26T03:23Z	session_01P8v53BYGZvFiriPpxEZy3h	LANE GOLD3 orchestrator handoff at 358k context, own cost $12.43 D	no live workers; STATUS.md 'LANE GOLD3 handoff' complete; lane idle-standing on ASKS 52/53/55
+2026-09-26T03:37Z	session_01QnYdzKCkVgyqhMNe2sRzTU	LANE B6 bMATBEAM (Opus, cap 5)	matignon M/U beam, known-answer control first	brief 2026-09-26-lane-b6-matbeam.md; LANE B6
+2026-09-26T03:37Z	session_014EYkrAKbR2t2FoWCqrnDE7	LANE B6 bBLZ6 (Sonnet, cap 3)	blitz homophonic German K=48 N=581	brief 2026-09-26-lane-b6-blz6.md; LANE B6
+2026-09-26T03:37Z	session_01U8gCyCSFWCSGnidZVWMRP5	LANE B6 bLOP2 (Sonnet, cap 3)	lope-hurtado CSP 497 vs records; Kolosova key	brief 2026-09-26-lane-b6-lop2.md; LANE B6
+2026-09-26T03:37Z	session_01Y7bmrtnRoLBbkgYQc1mZWy	LANE B6 bMAL (Sonnet, cap 6)	Malsburg 1636 intake, HCPortal fetch, first test	brief 2026-09-26-lane-b6-mal.md; LANE B6
