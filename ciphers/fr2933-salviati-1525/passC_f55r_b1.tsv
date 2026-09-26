@@ -1,0 +1,32 @@
+line	pos	code	marks	conf	note
+1	7	+	M	bold crossbar at top of vertical stem, t-like cross sign
+1	8	w		H	lead-in stroke + w body + tail, matches w atlas
+1	9	y		H	cursive y with looped tail
+1	10	lam		M	two strokes meeting at top, lambda-like; adjacent stroke is context
+1	11	wd		M	w-body with tall right stroke, matches wd; squiggle above likely neighbor context
+1	20	y		H	cursive y with looped tail
+1	21	e	+	H	looped e bowl with single-cross mark above
+2	11	e	#	H	looped e bowl with double-cross mark above
+2	12	g	5	M	9/g loop+tail shape; curled stroke above resembles s/5 hook mark
+2	22	w		H	lead-in stroke + w body, tail at right edge
+3	23	o.		H	ring with dot inside, unmistakable
+3	24	eps	5	M	two stacked open bowls, epsilon-like; curled mark above resembles s/5 hook
+3	27	p		M	loop at top with crossed stem, matches p; e bowl at left is neighbor context
+4	4	p		M	loop top, crossed stem descending; dots to left are context, not marks
+4	5	_		H	plain script "ques", legible Latin letters
+4	11	p		H	loop top, crossed stem, matches p closely, same shape as line4 pos4
+4	12	g		H	loop with long looping descender tail, classic g shape
+4	20	N		H	cursive N with fancy loops, matches N atlas
+5	6	_		H	plain script "nsc", legible Latin letters
+5	10	_		L	isolated short diagonal stroke with dot at top, no clear sign body, ambiguous/blank
+5	12	S		M	S-shaped stroke at bottom of crop; ligature above is context bleed from adjacent line
+5	18	e		M	open looped bowl, e-like; dots below are context, not marks
+5	19	U		H	square cup open at top, clean U shape
+6	1	sq		H	closed square box, clear
+6	28	_		H	plain script capital "Av", legible Latin letters
+7	8	S4		M	diagonal slash crossing a foot/vertical, 4-like shape matches S4
+7	10	m		L	single arch/hump sitting on a horizontal stroke, ambiguous, could be partial m or unclear mark
+7	19	#		H	clear double-barred cross
+7	22	y		H	cursive y with looped tail
+7	26	sq		M	slanted closed square/parallelogram shape with dotted baseline
+9	16	U		H	clean square cup open at top, matches U
