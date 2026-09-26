@@ -2525,3 +2525,68 @@ Rule 10: no novelty words. Rule 3: no numeric gate here (a reading of period cle
 not a cryptanalytic claim).
 
 Files: `axmerge4/proposal.tsv`, `axmerge4/crops/*.jpg` (11 crops, 476 KB), this section.
+
+## AX2-5801ADJ: 5801 name codes against Groen IV CDXXIII (26 Sept 2026, LANE AX2)
+
+Worker AX2-5801ADJ (Opus), brief `.claude/briefs/runs/2026-09-26-lane-ax2-5801adj.md`, started 06:40:25 UTC (clock
+read). No network, no subagents; read by eye from `images_wv2/crops_comp/05801_*` and zooms cut from them
+(`ax2_5801/crops/`, 6 JPEGs, 480 KB). key_full.tsv and names.tsv untouched.
+
+**Method.** `axcomp/contexts_5801.py` prints every code >120 that key_full does not mark NULL with 14 tokens either
+side decoded under key_full (`axcomp/contexts_5801.txt`, 261 rows). The draft transcription is M throughout (p1 and
+p5 below the 60% pass gate, AX2-5801), so the decoded neighbours are too noisy to place by themselves. What does place
+them is that **5801 carries its own contemporary interlinear decipherment above the cipher**, and at the places Groen
+prints a name, that gloss sits over a single code. So each code was read on the crop: the gloss above it first, then
+Groen's words at the matching place. Table: `axcomp/adjudicate_5801.tsv`; values: `key_5801_adj.tsv`.
+
+**Findings (grade H = period gloss over the code on 5801's own leaf, with Groen's print agreeing; C = print only).**
+
+| code | 5801 (Willem -> Jan and Lodewijk, 28 May 1573) | list A (brothers -> Willem) | list B (Willem -> brothers, Jan 1574) |
+|---|---|---|---|
+| 172 | **le Conte Louis de Nassau** (H, 1 glossed: p5 "Touschant ce que vous [172] avés traité avec [157]", gloss "le conte Louis de nassau" = Groen "vous, Monsieur le Conte Louys de Nassau") | le Conte Jean | Lumbres |
+| 192 | **le Roy de France** (H, x2: "avec [192] sur aulcuns points", "le coeur du [192]") | roi d'Espagne (4496 gloss) | -- |
+| 202 | France (H, x2: "en [202] pour traicter", "résidant en [202]") | Franckreich | Angleterre |
+| 200 | Duc d'Alba (H) | Herzog von Alba | -- |
+| 223 | Harlem (H, x3) | Harlem | -- |
+| 312 | ville (C; gloss "Ville de Harlem" over 312.12.223, 12 = de) | ville de | ville |
+| 331 | guerre (H, 1 of 7 checked) | -- | -- |
+| 157 | Colognie (H) | -- | -- |
+| 199 | la Royne d'Angleterre (C) | -- | -- |
+| 203 | Espagne (C; gloss cut at crop edge) | -- | -- |
+
+**Lumbres is not a code in 5801.** Groen's "J'ay envoyé Monsr de Lumbres en France" is written on p5_L03 in letter
+codes with the gloss "m o n s ... de l u m b re s en" letter by letter, and then 202 (glossed "France").
+
+**The other 172s.** Of the draft's nine 172s: one is glossed and named (above). Two are 132 on the image (p3_L01 line
+end "129.132."; p3_L07 line-1 end "67.132") -- transcription errors, grade I. One (p5_L08 pos 79) is the same sign
+as pos 21 re-emitted in a duplicated segment of the reconciled draft. Three sit unglossed at places where the print
+names nobody ("c ha s [172] que s i x a i n e" = "chasque sixaine"; "l'un e [172] soustienne"; "toutesfois ... [172]
+retarde"): NULL-like there, M. Two on p1 (p1_L03, p1_L04) were not settled (p1_L03's middle digit could be 5; p1 has
+no name in Groen at either place). 192 likewise sits once unglossed at "faire [192] lever le siège" (NULL-like, M;
+the digit may be 142). So 172 and 192 behave, in this letter, like name codes that also serve as fillers, or the
+filler occurrences are other signs misread; this pass does not decide which.
+
+**Verdict: (c), mixed, and against the direction theory as AX2-172 stated it.** 5801 is a Willem -> brothers letter,
+yet at the one code it shares with 7206 on both lists' terms, 202, it agrees with **list A** (France/Franckreich,
+not list B's Angleterre); at 172 it agrees with **neither** (le Conte Louis, against list A's le Conte Jean and list
+B's Lumbres, while Lumbres is spelled out in letters); at 192 it differs from list A (le Roy de France against
+4496's roi d'Espagne). 217 and 339, the other list-B contrasts, do not occur in 5801. The reading that fits all
+three letters' glosses is that the name codes above 145 were not one list per direction but were reassigned between
+letters or periods (May 1573, Jan 1574, Apr 1574), at least at 172 and 192. "Direction" does not predict 5801.
+
+**Consequence for 5797 p6_spot4** (Jan and Lodewijk to Willem, 22 Oct 1573, "172 zeuget diesen morgen Kölln").
+AX2-172 let 172 = le Conte Jean stand because 5797 is on the brothers' side and so on list A. 5801 shows that five
+months earlier the same code carried **le Conte Louis de Nassau** in the Prince's own cipher, so a value for 172
+cannot be carried from one letter to another by direction alone. p6_spot4's 172 has no value that holds across
+letters. "le Conte Jean" (4614, Apr 1574) and "le Conte Louis" (5801, May 1573) are both attested readings of 172,
+each in one other letter, and "[one of the brothers] leaves for Cologne this morning" fits either. Grade: M,
+key source contested. It is not H. (Aside, not used: 5801's code for Cologne is 157, and 5797 writes Kölln as 155.
+That is another name code that differs between the two letters.)
+
+Proposals (never applied here): `axmerge4/proposal.tsv` gets two new rows, 172 and 192, each a KEEP_NOTE line for
+`axnames/build_key_full.py`. key_full's values are unchanged.
+Rule 4 counts for key_5801_adj.tsv's glossed occurrences: H 11 (172 x1, 192 x2, 202 x2, 200 x1, 223 x3, 331 x1,
+157 x1), C 3 (312, 199, 203), M 6 (unglossed 172 x3, 192 x1, p1 172 x2), I 3 (two 132 misreads, one duplicate).
+No reading of the letter is claimed. Rule 3: no numeric gate; this is a reading of period glosses and a print
+against the cipher, not a cryptanalytic claim. Rule 10: no novelty words.
+Not done in the box: the p1/p2 occurrences of 172/192 and the six unchecked 331s, which need zooms from the crops.

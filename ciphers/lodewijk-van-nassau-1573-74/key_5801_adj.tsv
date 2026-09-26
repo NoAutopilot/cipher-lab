@@ -1,0 +1,11 @@
+code	value	grade	source	note
+157	colognie	H	5801 p5 contemporary gloss 'Colognie' over 157; Groen IV CDXXIII 'avés traité avec Colognie'	1 occurrence
+172	lecontelouisdenassau	H	5801 p5 contemporary gloss 'le conte Louis de nassau' over 172; Groen 'vous, Monsieur le Conte Louys de Nassau'	1 glossed occurrence; 3 unglossed at places with no name in print (NULL-like, M); 2 draft 172s are 132 on the image; 1 duplicate draft segment; 2 unchecked (p1)
+192	leroydefrance	H	5801 p5 contemporary gloss 'le Roi de France' over 192 x2; Groen 'avec le Roy de France', 'le coeur du Roy de France'	1 unglossed at 'faire [192] lever' (NULL-like, M); p1/p2 occurrences unchecked
+199	laroynedangleterre	C	Groen 'mesme de la Royne d'Angleterre' at 5801 p5 '47.12.199'	gloss not zoomed; 1 unglossed occurrence at p5_L03 pos 75 NULL-like
+200	ducdalba	H	5801 p5 contemporary gloss 'Duc d'Alba' over 200; Groen 'escrit au Duc d'Alba'	agrees with key_full herzogvonalba
+202	france	H	5801 p5 contemporary gloss 'France' over 202 x2; Groen 'en France pour', 'résidant en France'	agrees with key_full franckreich (list A); differs from list B Angleterre
+203	espagne	C	Groen 'l'ambassadeur d'Espagne' at 5801 p5 '12.203'	gloss cut off at crop edge
+223	harlem	H	5801 contemporary gloss 'Harlem' over 223 (p1, p5 x2); Groen 'de Harlem'	agrees with key_full
+312	uille	C	5801 p1 gloss 'Ville de Harlem' over 84.312.12.223 (12 = de)	key_full 'uillede' (4613) includes 'de'; here 'de' is 12
+331	guerre	H	5801 p5 contemporary gloss 'guerre' over 331; Groen 'en ceste guerre, prenant foundement'	7 occurrences, others unchecked
