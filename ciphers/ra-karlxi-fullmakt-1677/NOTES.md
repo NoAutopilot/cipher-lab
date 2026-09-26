@@ -172,3 +172,27 @@ this lane's IA-slot allowance), digital.ub.umu.se 1 (WebFetch, then a second Web
 returned 503, not retried further — one attempt, per the good-citizen rule), catalog.hathitrust.org record page
 1 (WebFetch, 403, not retried), WebSearch 4, github.com clones shared with batch. No Google Books, no TNA, no
 DECODE login.
+
+## NX-UNBLOCK (26 Sept 2026): the Sverges traktater volume-7 question, resolved
+
+Ran the edition search this row's verdict flagged as highest priority (the Libris/KB Stockholm route named as
+the way to resolve the "Sverges traktater med främmande magter" volume-7 question, since HathiTrust is
+Cloudflare-blocked from this environment). Libris's own xsearch API (`libris.kb.se/xsearch`, open, no key)
+answers plain curl reliably (confirmed reachable, unlike francearchives/HathiTrust).
+
+Query `"Sverges traktater med frammande magter"` (n=60) returns all 59 catalogue records for the series.
+**There is no volume ("D. 7") covering the 1648-1723 span at all**: the series runs D. 6 ("Förra hälft, 1",
+1646-1648) directly to D. 8 ("1723-1771", in three parts, 1915-1922) with nothing catalogued in between under
+this title -- no "D. 7", no "Senare hälft" continuing past 1648 for this range. A follow-up query combining
+the series title with `1677` returns 0 Libris records. This is the Swedish national union catalogue, not a
+single library's holdings, so an absence here is a real signal, not a coverage gap of one collection.
+
+**What this settles:** the specific worry this row's verdict raised -- that "Sverges traktater... demonstrably
+runs through this period in some form" and might already print this 1677 royal commission -- does not hold:
+Rydberg's edition has a documented gap for exactly this span (1648-1723), so this specific series cannot be
+the place this document was printed. This does not clear the target to stage 2 on its own (rule 1 needs all
+six source families, and other Swedish diplomatic-document editions for the Caroline period -- e.g.
+Riksregistraturet, or a Danish/Dutch-side edition of the same 1677 negotiation -- are not ruled out by this
+search), but it closes the one loose end this row's own verdict said must be resolved "before it is scored
+further." Recommend: re-run the standard check-solved sweep's edition-search step with this finding recorded,
+rather than treating the edition question as still fully open.

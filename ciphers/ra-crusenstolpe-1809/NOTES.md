@@ -61,3 +61,20 @@ Copy-order (not digitised). REQUEST.md below drafts the Riksarkivet reading-room
 
 Requests this pass: data.riksarkivet.se 1, WebSearch 1, github.com clones shared with the batch (grepped only),
 sources/cryptiana and sources/decode local grep only. No Google Books, no TNA, no DECODE login.
+
+## NX-UNBLOCK (26 Sept 2026)
+
+Ran the edition search this row's own verdict named as the open next step (Crusenstolpe's own "Portefeuille,
+belysande det inre af tidernas historia," 1840/1845). Free routes tried:
+- **Google Books API** (`&country=US&key=$GOOGLE_BOOKS_KEY`): confirms the 1845 printing exists as a catalogue
+  entry but `viewability: NO_PAGES` -- no snippet, no full text.
+- **archive.org** `advancedsearch.php`: 0 hits for "Crusenstolpe Portefeuille". Not digitised there.
+- **Project Runeberg** (runeberg.org): has an author-id page reserved for Crusenstolpe (`authors/crusenmj.html`)
+  but no book listed under it, and the site's own full-text search (`search.pl`) redirects to a Google
+  site-restricted search that returns a JS/consent challenge page to curl, not usable from this pass's tools.
+- **Litteraturbanken.se**: author page loads (HTTP 200) but is JS-rendered; no "chiffer"/"1809"/"Portefeuille"
+  text found in the raw HTML this pass -- would need a browser-tool fetch, not tried (time budget).
+
+No free full text of Portefeuille found this pass. The "standard 1809 historiography" half of the named next
+step (a named search of general coup historiography) was not attempted either, for the same reason. This edition
+risk stays open, unclosed. REQUEST.md (Riksarkivet reading-room copy order) stands unchanged.

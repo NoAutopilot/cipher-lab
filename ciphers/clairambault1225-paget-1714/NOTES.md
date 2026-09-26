@@ -573,3 +573,18 @@ query, unhelpful as written -- logged above); `googleapis.com/books` 9 (search +
 `GOOGLE_BOOKS_KEY`+`country=US`, all sequential, well over 1.5s apart); `archivesnationales.culture.gouv.fr`
 1 reachability test (blocked, not retried, logged above). WebSearch: 6 queries (no host/rate rules apply to
 this tool). No Gallica image/IIIF fetches this session (no "Gallica slot" claim needed).
+
+## NX-UNBLOCK (26 Sept 2026)
+
+Tried the one materially different route this row's own text names as blocking ("the AN's own online catalogue
+reached from an unrestricted network"): the AN's Salle de lecture virtuelle (SIV, `siv.archives-nationales.culture.gouv.fr`)
+is now reachable from this environment (HTTP 200 landing page, `www.france-archives.fr` still 502s and plain
+`francearchives.gouv.fr` still returns an empty JS shell -- unchanged from the earlier session's finding, but
+SIV itself is a separate host and answers). Its simple-search action
+(`/siv/rechercheconsultation/recherche/recherchesimple/rechercheSimple.action`) needs session state this pass's
+one attempt did not reproduce (HTTP 500 on a bare `motRecherche=` GET with a fresh cookie jar) -- not retried
+per the good-citizen single-retry rule. This is progress (the host itself is not blocked, unlike francearchives),
+but the article number for AN Marine B7's April/August 1714 Genes/Paget correspondence is still not pinned down.
+Next step for a future worker: reproduce SIV's search form properly (likely needs the landing page's own
+jsessionid carried through, and possibly a POST rather than GET, the CalmView/Lambeth pattern already solved
+for a different host in CLAUDE.md's Access playbook) before this becomes a narrow enough REQUEST.md target.
