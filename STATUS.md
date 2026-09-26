@@ -108,26 +108,30 @@ Intake gate fr3625-lauriere-1593 (08:45): exit 0. No readings yet; nothing for L
 
 ## LANE AX2 handoff (session_016sbTkVT8HGNJ6JGjJNmCuM), 26 September 2026, from 05:14 UTC (live)
 
-Updated 07:23 UTC. Brief .claude/briefs/runs/2026-09-26-lane-ax2-orchestrator.md; COMMON reused: 2026-09-26-lane-ax-COMMON.md.
-Start state: LANE AX handoff below.
+**Closed 08:55 UTC 26 Sept 2026** (queue spent; no live workers, no check-in armed). Brief .claude/briefs/runs/2026-09-26-lane-ax2-orchestrator.md;
+COMMON reused: 2026-09-26-lane-ax-COMMON.md. 14 workers 96.20 dollars, orchestrator 10.29, all ledgered and archived.
 
-**Live workers:**
-| job | session | model, box | what |
-|---|---|---|---|
-| AX2-4612S2 | session_018ktTTDt9vs6NM3JQ5Sjxvb | Sonnet, 60 min from 07:22 | tools/key_repair.py with a length-neutral objective (excess log-prob over the fr16 mean; no NULL below 121); controls first; targets 4612 v3, 5799 |
-| AX2-SHRINK3 | session_01LgocTHPLidqq2PDgr4TiA6 | Sonnet, 30 min from 07:22 | crops_comp 04614/07205/05801 and the rest: folder 48 MB -> under 30 |
+**Results (no reading reached a verifier this lane):**
+- **Code 172 conflict** (HYPOTHESES.md, rule 4): le Conte Jean (4614 decipherment, Apr 1574), Lumbres (7206 decipherment p8, Jan 1574),
+  le conte Louis de nassau (5801 interlinear gloss + Groen IV CDXXIII, May 1573). The direction theory (AX2-172) failed on 5801
+  (AX2-5801ADJ). 5797 p6_spot4 withdrawn from classification (V9-NA172-3, AUDIT.md A4). 153/161 N4 unaffected.
+- **5801** = Groen IV Lettre CDXXIII (Delft, 28 May 1573), key_full's 1574 table; key_5801_adj.tsv (H 11, C 3, M 6, I 3).
+- **7206**'s period decipherment is on p8 (corrects AX-GLOSS); key_7206 147 codes; town codes 227/259/260/222/261/228/242 candidates, not merged.
+- **4612 v3** (16 numerals settled): under key_full French-word share 70.7% vs 20-shuffle max 60.6% vs 5811 at same N 93.2% (0.85x gate
+  not met); judge cannot decide (5811 control FAILs too). Does not read under key.tsv, key_full or key_5801; 5799 likewise.
+  Syllable-code hypothesis H-S: tools/key_repair.py (new, three objectives) never passed its controls (null 100 -> 53 -> 29 false;
+  known-answer 0 -> 5 -> 3.7 of 8): untested, not refuted; do not re-brief without a different instrument.
+- **156/182** (5797 p8/p7 blanks): no value anywhere (156 once, 182 three times, same subject-code slot).
+- **Brochado 134**: AX2-BRO4/BRO5 left key and 5th-percentile unchanged (z = r confirmed); NEAR row next step: verifier read as
+  judge-cannot-decide.
+- **Folder**: 80 -> 29.2 MB (four passes; images_manifest_full.tsv + regen_images.sh; crops_comp recipe not recoverable, flagged).
+- **Tools**: tools/key_repair.py (+test), homophonic_anneal.py --init (+test), interlinear_align.py --code-prefix.
 
-**Done (ledgered, archived), 10 workers, 80.40 dollars:** AX2-SHRINK 3.69 D; AX2-BLANKS 12.32 D; AX2-BRO4 5.79 D; AX2-4612 14.88 D;
-AX2-5801 21.84 D; AX2-172 3.60 D; AX2-BRO5 5.56 D-; AX2-4612S 5.15 D (controls failed on the brief's own objective: total log-prob
-rewards NULL -- orchestrator's error, fixed in 4612S2); AX2-5801ADJ 3.22 D; AX2-SHRINK2 4.25 D (59 -> 48 MB).
-
-**Code 172 (5797 p6_spot4):** three period values now attested -- le Conte Jean (4614 decipherment), le Conte Louis (5801 interlinear
-gloss, Groen: Monsieur le Conte Louys), Lumbres (7206 decipherment). AX2-172's direction theory failed on 5801 (AX2-5801ADJ). The spot
-has no licensed value; V8 classed it N2 before this and the parent's row text says contested. No key_full change (axmerge4/proposal.tsv
-KEEP_NOTE rows only).
-**4612 and 5799:** neither reads under key_full, key.tsv or key_5801 (word share gate and judge); AX2-4612S2 tests the syllable-code
-hypothesis. If its control fails again the lane closes with 4612/5799 partial and the hypothesis logged in HYPOTHESES.md.
-**Brochado 134:** NEAR row next step is a verifier read as judge-cannot-decide (not dispatched by AX2; a verifier lane's job).
+**Open leads for a successor, in order:** (1) a NEAR.md row for 4612 is due by rule 5 (it beat its shuffle control reproducibly, v2 68.6
+and v3 70.7 vs max 61.3/60.6) -- for the parent, with the status.json near entry; (2) H-S needs a different instrument (e.g. a
+constrained nomenclator_anneal.py run with codes 1-120 pinned to key_full except a free set, with the same 5811 controls);
+(3) 7206 town codes into key_full through build_key_full.py after a check; (4) 4 brochado x/d/f occurrences (low); (5) pro3055 and 5549
+body stay parked.
 
 ## LANE AX handoff (session_01VzK62xX92yKfnUD93zprD8), 26 September 2026, 00:15-04:35 UTC (closed at 446k context)
 
