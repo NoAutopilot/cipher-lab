@@ -1,0 +1,26 @@
+[
+  {
+    "record": 494,
+    "folio": "hstam_4_f_daenemark_nr_125_0002",
+    "url": "https://api.hcportal.eu/media/1385/48281677514201.jpg",
+    "file": "hstam_4_f_daenemark_nr_125_0002.jpg",
+    "size": 1671460,
+    "sha1": "5d1855ce23e86468305204e3807c8243dd38b4e2"
+  },
+  {
+    "record": 494,
+    "folio": "hstam_4_f_daenemark_nr_125_0003",
+    "url": "https://api.hcportal.eu/media/1386/97581677514201.jpg",
+    "file": "hstam_4_f_daenemark_nr_125_0003.jpg",
+    "size": 1672527,
+    "sha1": "990fd2455f3644a8d2cca5f2dc7266ce018497ac"
+  },
+  {
+    "record": 494,
+    "folio": "hstam_4_f_daenemark_nr_125_0004",
+    "url": "https://api.hcportal.eu/media/1387/38851677514201.jpg",
+    "file": "hstam_4_f_daenemark_nr_125_0004.jpg",
+    "size": 1686698,
+    "sha1": "b52e5d3946e24a80c81d59703425c73c7649cb02"
+  }
+]
