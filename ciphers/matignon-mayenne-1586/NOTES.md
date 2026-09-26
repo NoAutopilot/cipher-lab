@@ -1,5 +1,7 @@
 partial
-Check-solved (LANE B5 worker bMAT, 26 Sept 2026): Tomokiyo `sources/cryptiana/web/henryiii.htm` (on disk, grepped 26 Sept 2026) still lists every leaf in this target -- Mayenne-Forget's Cipher-1 ff.110, 123-124, 143, 150, 154, 173, 196, 201, and Matignon's Cipher-3 f.276 and fr.15571 f.179 -- as "undeciphered" (f.276 gets a fragmentary paraphrase only: "La Guiolle est en doubte du pu pour les amis de la Roussiere..."). Internet Archive full-text search (be-api fts, 26 Sept 2026) on "Correspondance de Montaigne avec le maréchal de Matignon (1582-1588)" (Labande ed., IA ids `correspondancede00montuoft`/`correspondanc00mont`, the only Matignon correspondence edition on IA whose date range covers 1585-86; the two "Correspondance de Joachim de Matignon" editions on IA are the wrong Matignon, 1516-1548) for "Bellebourg" (the place-name closing f.110's cipher per Bourdeau's transcription) returns 0 hits in either volume. aaymeloglu/unsolved-ciphers (shallow clone, grepped for matignon/mayenne/forget/15571/15572, 26 Sept 2026, then deleted): no hit outside its own tools/decode.py and an unrelated PARES jsonl row. DECODE (de-crypt.org): no fresh crawl run this job (cost); `sources/decode/records-non-decrypted-2026-09-24.tsv` and `records-decrypted-2026-09-24.tsv` (login-free RecordsList cache, 24 Sept 2026) grepped for matignon/mayenne/15571/15572, no hit. OpenAlex (`api.openalex.org/works?search=Matignon Mayenne cipher 1586`, keyed, 26 Sept 2026): 0 results. Semantic Scholar (`x-api-key` header, one query plus the one allowed retry): both 429 (rate-limited even with the key); not answered, logged as unreachable this session, not a negative. Bourdeau's own `matignon1586/NOTES.md` (dbourdeau/cyphersolver, commit fc0c9e8, 25 Sept 2026 18:14 CDT) independently records "no printed decipherment of these despatches was found (searches on the BnF catalogue and on the literature, 17 Sept 2026)". Net: open, no printed or prior decipherment found by any of these six checks; Cipher-3 (f.276, fr.15571 f.179) untouched by any transcription as of this commit.
+Check-solved (bCSMAT, 26 Sept 2026, superseding bMAT's line below): both 1916 Labande editions of "Correspondance de Montaigne avec le maréchal de Matignon (1582-1588)" on Internet Archive (`correspondancede00montuoft`, `correspondanc00mont`, 32 pp. each) read WHOLE (`_djvu.txt` fetched and grepped cover to cover, not one page range), grepped for 1585, 1586, Mayenne, Matignon and Forget -- neither volume contains a single 1585 or 1586 date anywhere, and neither mentions Mayenne or Forget at all (0 hits every term, both files); no printed correspondence edition of Mayenne, and no edition of the Société de l'Histoire de France's "Lettres de Henri III", found on Internet Archive at all (searched, not present, so not citable as read); Tomokiyo's `sources/cryptiana/web/henryiii.htm` read directly this session (quoted verbatim in the dated section below) still lists every leaf as undeciphered. Full query log, solver-repository HEAD commits and gate-check output in "Check-solved (bCSMAT), 26 Sept 2026" below. Net: open (no printed or prior decipherment found by any of the seven checks run this pass); status stays `partial` per rule 5 (the NEAR.md row, cryptanalytic margin over a matched control, not a check-solved finding).
+
+Check-solved (LANE B5 worker bMAT, 26 Sept 2026, kept for record -- V7-QA5 flagged its IA search below as a single-term query on one edition; superseded by the whole-volume sweep above): Tomokiyo `sources/cryptiana/web/henryiii.htm` (on disk, grepped 26 Sept 2026) still lists every leaf in this target -- Mayenne-Forget's Cipher-1 ff.110, 123-124, 143, 150, 154, 173, 196, 201, and Matignon's Cipher-3 f.276 and fr.15571 f.179 -- as "undeciphered" (f.276 gets a fragmentary paraphrase only: "La Guiolle est en doubte du pu pour les amis de la Roussiere..."). Internet Archive full-text search (be-api fts, 26 Sept 2026) on "Correspondance de Montaigne avec le maréchal de Matignon (1582-1588)" (Labande ed., IA ids `correspondancede00montuoft`/`correspondanc00mont`, the only Matignon correspondence edition on IA whose date range covers 1585-86; the two "Correspondance de Joachim de Matignon" editions on IA are the wrong Matignon, 1516-1548) for "Bellebourg" (the place-name closing f.110's cipher per Bourdeau's transcription) returns 0 hits in either volume. aaymeloglu/unsolved-ciphers (shallow clone, grepped for matignon/mayenne/forget/15571/15572, 26 Sept 2026, then deleted): no hit outside its own tools/decode.py and an unrelated PARES jsonl row. DECODE (de-crypt.org): no fresh crawl run this job (cost); `sources/decode/records-non-decrypted-2026-09-24.tsv` and `records-decrypted-2026-09-24.tsv` (login-free RecordsList cache, 24 Sept 2026) grepped for matignon/mayenne/15571/15572, no hit. OpenAlex (`api.openalex.org/works?search=Matignon Mayenne cipher 1586`, keyed, 26 Sept 2026): 0 results. Semantic Scholar (`x-api-key` header, one query plus the one allowed retry): both 429 (rate-limited even with the key); not answered, logged as unreachable this session, not a negative. Bourdeau's own `matignon1586/NOTES.md` (dbourdeau/cyphersolver, commit fc0c9e8, 25 Sept 2026 18:14 CDT) independently records "no printed decipherment of these despatches was found (searches on the BnF catalogue and on the literature, 17 Sept 2026)". Net: open, no printed or prior decipherment found by any of these six checks; Cipher-3 (f.276, fr.15571 f.179) untouched by any transcription as of this commit.
 
 # Forget / Mayenne / Matignon, BnF fr.15572 (+ fr.15571 f.177/f.179), 1585-86
 
@@ -257,3 +259,119 @@ future value from these labels grades M, credited to Tomokiyo); the open task is
 transcription pass (ideally two independent passes per the usual reconciliation rule, given how easily the
 hook/loop shapes here are confused) using this image, followed by fetching fr.15572 f.276 (ark on file
 above) with a fresh Gallica request budget to test any resulting partial key.
+
+## Check-solved (bCSMAT), 26 Sept 2026
+
+Job: `.claude/briefs/runs/2026-09-26-lane-b6-csmat.md`, following `.claude/briefs/check-solved.md`.
+Why: V7-QA5 (26 Sept 01:53) flagged bMAT's IA full-text check above as a single-term query
+("Bellebourg" only) on one edition -- RETRO-2026-09-26b finding 3. Per RETRO-2026-09-26b proposal 3
+("the whole edition, grepped for the date... both correspondents' names and the place, every hit
+read; never a single term"), this job re-runs the check as a whole-volume sweep, done independently
+by this worker (not re-citing bMAT's or Bourdeau's search as its own).
+
+Intake gate before this job (unchanged from bMAT's citation, re-run to confirm before rewriting):
+`partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+
+**(a) Printed correspondence of Matignon and of Mayenne, via IA advancedsearch (catalogue metadata
+only, no Gallica hit this job).**
+
+| query | host | result |
+|---|---|---|
+| `advancedsearch.php?q=title:(Matignon) AND mediatype:texts` | archive.org | 18 hits; only two are a Matignon *correspondence* edition covering 1585-86: `correspondancede00montuoft`/`correspondanc00mont`, Labande's 1916 "Correspondance de Montaigne avec le maréchal de Matignon (1582-1588)" (two IA scans of the same 32-page pamphlet). The two "Correspondance de Joachim de Matignon" items are the wrong Matignon (1516-1548, a different person, the marshal's grandfather). |
+| `advancedsearch.php?q=title:(Mayenne) AND mediatype:texts` | archive.org | 311 hits, all noise (the Mayenne département's modern election ephemera, an unrelated cartulary, League-period pamphlets by other authors) -- no printed correspondence or lettres edition of Charles de Lorraine, duc de Mayenne, anywhere in the results |
+| `advancedsearch.php?q=(title:(Mayenne) AND (title:(correspondance) OR title:(lettres)))` | archive.org | 0 hits -- confirms no dedicated Mayenne correspondence/lettres edition exists on Internet Archive |
+
+Both Matignon-correspondence IA items fetched WHOLE (`_djvu.txt`, not a page range) and grepped
+for every term named in the brief, not just the place-name bMAT used:
+
+| file | pp. | "1585" | "1586" | "mayenne" (any case) | "matignon" | "forget" | "bellebourg" |
+|---|---|---|---|---|---|---|---|
+| `correspondancede00montuoft_djvu.txt` | 32 | 0 | 0 | 0 | many (title/running head) | 0 | 0 (bMAT already checked) |
+| `correspondanc00mont_djvu.txt` | 32 | 0 | 0 | 0 | many (title/running head) | 0 | 0 (bMAT already checked) |
+
+Both editions are the SAME 1916 "nouvelles lettres inédites" pamphlet (two separate IA scans),
+32 pages, and **contain no 1585 or 1586 date anywhere in the OCR text at all**, and never mention
+Mayenne or Forget once -- a stronger and more legible negative than the single "Bellebourg" query
+bMAT ran: this edition's actual letter dates fall outside 1585-86 entirely (its own title range is
+1582-1588, but the surviving letters transcribed in it evidently cluster in other years), so it was
+never going to carry the Mayenne-Forget despatches or Matignon's own 1585-86 dispatches to the king
+regardless of which single word was searched. No edition on Internet Archive of Matignon's own
+official correspondence for 1585-86 (as opposed to his private correspondence with Montaigne) was
+found.
+
+**(b) Lettres de Henri III (Société de l'Histoire de France).**
+
+| query | host | result |
+|---|---|---|
+| `advancedsearch.php?q=title:("Lettres de Henri III")` | archive.org | 0 hits |
+| `advancedsearch.php?q=title:(Henri III) AND title:(lettres)` | archive.org | 6 hits, none the SHF edition (a 1622 "Lettres particulieres envoyez au roy", an 1882 book on Italian comedians at court, an 1895 Montaigne piece, an 1849 Spanish play, a 1583 "Lettres de déclaration") |
+| `advancedsearch.php?q=creator:("Henri III") AND mediatype:texts` | archive.org | 1 hit, unrelated (a 19th-century Spanish play) |
+
+The SHF's modern critical edition of *Lettres de Henri III, roi de France* (Champollion-Figeac/
+Cuttoli/Michel François, 9 vols, 1959-2012) is not on Internet Archive under any of these queries --
+searched, not present, not citable as read. (Per the brief's host list this job did not query
+Gallica or HathiTrust for it; a HathiTrust/JSTOR route, if wanted, is a `LOCAL-QUEUE.tsv` row, not
+this job's to add unasked.)
+
+**(c) Tomokiyo, `sources/cryptiana/web/henryiii.htm`, read directly this session** (converted with
+`tools/html2text.py`, grepped, not re-citing bMAT's earlier read). Verbatim, on Mayenne-Forget's
+Cipher-1 (line 638 of the converted text): "Letters in this cipher are found in f.14 (deciphered in
+f.15), f.18-21 (deciphered in f.19), f.78-79 (deciphered in the margin), f.91-92 (deciphered in the
+margin), f.110 (undeciphered), f.123-124 (undeciphered), f.143 (undeciphered), f.150 (undeciphered),
+f.154 (undeciphered), f.173 (undeciphered), f.196 (undeciphered), f.201 (undeciphered), etc." On
+Matignon's Cipher-3 (line 689): "Used in f.189 (deciphered in f.190), f.276 (undeciphered), f.277-278
+(deciphered in f.279-280), f.282 (deciphered in the margin). Also used in f.179 in BnF fr.15571 (see
+the image above, which includes some additional (variants of) symbols)." And (line 692): "The
+undeciphered text in f.276 can be read as something like 'La Guiolle est en doubte du pu pour les
+amis de la Roussiere sont et grand nombre avec lu....'" All target leaves named in this job's brief
+are covered by these two quotations and every one reads undeciphered as of the live page.
+
+**(d) DECODE (de-crypt.org) listing.** No fresh crawl run this job (the good-citizen rule against
+repeated crawls of the same host, and the existing cache is 2 days old, not stale enough to
+distrust for a manuscript catalogue that does not change daily): `sources/decode/
+records-non-decrypted-2026-09-24.tsv`, `records-non-decrypted-2026-09-24-diff.tsv` and
+`records-decrypted-2026-09-24.tsv` (login-free RecordsList crawl, 24 Sept 2026) grepped
+independently by this worker (not quoting bMAT's sentence) for `matignon|mayenne|15571|15572|forget`,
+case-insensitive: 0 lines matched in any of the three files.
+
+**(e) Solver repositories, fresh shallow clones this job, deleted after.**
+
+| repo | HEAD commit | date | grep result |
+|---|---|---|---|
+| dbourdeau/cyphersolver | `fc0c9e865d0fae67ca92d19750d2b09ab11972e0` | 2026-09-25 18:14:52 -0500 | `matignon1586/NOTES.md` unchanged from the 25 Sept 2026 credit line already in this file: "no printed decipherment of these despatches was found (searches on the BnF catalogue and on the literature, 17 Sept 2026)"; no `matignon1586/` file marks any of the target leaves solved |
+| aaymeloglu/unsolved-ciphers | `2495c45e8b94ffbc4f09a085224aa5ebce5cdf9f` | 2026-09-23 14:27:44 -0500 | only hit is `catalogue/pares-pages.jsonl` id 3625361, a Spanish PARES catalogue entry about the Duke of Mayenne's 1580s arrival in Genoa during a plague outbreak -- unrelated to this cipher (same finding as bMAT, now with the commit hash on file) |
+
+**(f) Web search** ("solved"/"déchiffr\*"/model-solve source family per check-solved.md): "Mayenne
+Forget cipher BnF fr.15572 déchiffré" and "Matignon cipher BnF fr.15571 f.179 solved deciphered
+Claude GPT" return only Bourdeau's own repository/site (dbourdeau.github.io/cyphersolver, the same
+source already credited) and two unrelated GitHub forks of his repository (arya1515, aryasn2026 --
+forks with no new commits on this target found); no third-party claim of a solution. A third query,
+`"Mayenne" cipher 1586 solves Vals AI OR "Claude Fable" OR benchmark historical cipher`, surfaces
+only the unrelated Vals AI "Cyphral Distich" post (Thomas Urquhart's book cipher, a different
+target) -- no model-solve announcement mentions Mayenne, Matignon or Forget.
+
+**(g) OpenAlex and Semantic Scholar, one query each (both keys present and working this session,
+unlike bMAT's 429s).**
+
+| query | host | result |
+|---|---|---|
+| `works?search=Matignon Mayenne chiffre 1586` (`Authorization: Bearer $OPENALEX_KEY`) | api.openalex.org | 7 results, all general League-period historiography (e.g. "Les maréchaux de la Ligue" 2010, "Philippe II et la Ligue parisienne (1588)" 2011) -- none about this cipher or a decipherment |
+| `paper/search?query=Matignon Mayenne cipher 1586 chiffre` (`x-api-key: $S2_KEY`) | api.semanticscholar.org | 0 results |
+
+**Net.** Seven independent checks (a-g), all negative for a prior decipherment or a printed
+plaintext of any of the target leaves (fr.15572 ff.110, 123-124, 143, 150, 154, 173, 196, 201;
+fr.15571 f.179; fr.15572 f.276). The whole-volume IA sweep is a materially stronger negative than
+bMAT's single-term query -- it rules out the entire 32-page candidate edition on every relevant term,
+not just one place-name -- but does not change the verdict: `open` (check-solved sense: no printed
+plaintext or prior decipherment found), status stays `partial` (rule 5: the cryptanalytic
+control-margin finding above, unrelated to this check).
+
+Request counts this job: archive.org ~11 (4 advancedsearch, 2 metadata, 3 `_djvu.txt` fetches
+including one redirect retry, all ≥1.5s apart); github.com 2 (shallow clones, deleted after);
+api.openalex.org 1; api.semanticscholar.org 1; de-crypt.org 0 (cache reused, no live request);
+gallica.bnf.fr 0 (none, per brief).
+
+Intake gate, re-run after this rewrite:
+```
+matignon-mayenne-1586: partial (line 1) -- edition/page or full-text-search citation found within 6 lines
+```
