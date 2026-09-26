@@ -803,3 +803,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T09:04Z	session_01WgHYzK9A84hSmjnr9G7qen	LEARN-7 (Sonnet, cap 5)	cross-account learning pass, window from 06:16Z	brief 2026-09-26-parent-learn7.md; parent 7g
 2026-09-26T09:12Z	session_01ERnaCfJMTCDwX2CiPeL4V5	ARM-TR	done 10.95, ledgered D, archived	
 2026-09-26T09:12Z	session_018tA6f2KodR8TdqLCewqu5L	ARM-C1	done 13.66, ledgered D, archived	
+2026-09-26T09:13Z	session_01UFGyb1jUwyn2ppJx1nDodA	ARM-POOL (Sonnet, cap 6)	roll 14 survey + frame 0033	brief 2026-09-26-lane-arm-pool.md; LANE ARM
+2026-09-26T09:13Z	session_01Q3t8YFL4NMLyvok91qRPyC	ARM-S1 (Sonnet, cap 6)	shorthand mark inventory vs period systems	brief 2026-09-26-lane-arm-s1.md; LANE ARM
