@@ -1,0 +1,13 @@
+system	shape	verdict	letter	freq_consistent	note
+Pitman_CONTROL	R1	partial	M or NG (shallow arc)	inconsistent	Pitman has no true "wave"; closest is a single small arc, but 33.9% share is impossible for any one letter (M~2.4%, NG~2%)
+Pitman_CONTROL	R2	no	-	n-a	no closed-loop-with-tail sign exists on this plate
+Pitman_CONTROL	R3	partial	R or L ("roar"/"lull" hooked arc)	consistent	curved return arc is the closest analog; 10.8% is within common-consonant range (R~6%, L~4%)
+Pitman_CONTROL	R4	partial	S or Z (small curved hook)	inconsistent	plausible small-hook analog; S~6.3%/Z~0.1% don't bracket 5.4% cleanly, Z specifically far too rare
+Pitman_CONTROL	R5	yes	K/G (short horizontal dash) or T/D (short vertical tick)	inconsistent	exact stroke-for-stroke match to the plain dash signs; but K~0.8%/G~2.0% well under observed 5.0%
+Pitman_CONTROL	R6	no	-	n-a	no dot sign on this consonant plate (vowel dots are a separate, unshown table)
+Pitman_CONTROL	R7	yes	P or B (light/heavy diagonal)	consistent	clean match; P+B (~1.9%+1.5%=3.4%) close to observed 3.6%
+Pitman_CONTROL	R8	no	-	n-a	no compound two-loop+slash sign; every Pitman consonant sign is one unbroken stroke
+Pitman_CONTROL	R9	partial	Y ("yet", coalescent arc)	consistent	closest available curved sign; Y~1.9% close to observed 2.3%
+Pitman_CONTROL	R10	no	-	n-a	no angular zigzag/double-bend stroke on this plate
+Pitman_CONTROL	R11	yes	NG ("sing", concave-up "smile" arc)	consistent	good shape match to nasal NG sign; NG phoneme ~2% close to observed 1.8%
+Pitman_CONTROL	R12	no	-	n-a	no closed loop (let alone with descending tail) exists on this plate
