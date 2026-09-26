@@ -369,7 +369,7 @@ Breadth lane, successor to LANE B4, opened by parent 7e (brief `.claude/briefs/r
 | castelcicala-1816 | 1: intake; hand read of un-glossed 1816 letters (bCAS) | +3 S values; coverage 0.436 -> 0.455 | shuffled order identical by construction (brief error) | no letter reads through; partial |
 | blitz-ciphers | NEAR step: German masc, de20 judge (bBLZ4) | FAIL -1.509 | 0.956 (0.869-1.000) | masc of German excluded; family_run.py suffix fix |
 | untersberg-code | NEAR step 3b: joint alignment, blind leaf pass (bUNT6) | 11/52; leaf 75/109 vs Herzog | shuffle mean 10.87 (8-17), 70th pct | collation line closed at chance |
-| riksarkivet-r4282-1628 | 1: intake; R4284 key-test crib vs R4282 (bRIK) | Latin hints 4/155, coverage 0.43 | synthetic keys 3/4/8, shuffled 1/1/2 | crib hypothesis excluded; partial; no NEAR row |
+| riksarkivet-r4282-1628 | 1: intake; R4284 key-test crib vs R4282 (bRIK) | Latin hints 4/155, coverage 0.43 | synthetic keys 8/3/8 (corrected, bRIKFIX, V8-QA7 finding 2; was 3/4/8), shuffled 1/1/2 | crib hypothesis excluded; partial; no NEAR row |
 | pools rows 5-9 | census (bPOOL0) | 328 records; all five pools already keyed or read by Bourdeau | n/a | no samplers; open remainders ASV doss.346 and Barb.lat 6956's 69 unrun records |
 | VX/KX/KT/PX backlog | scoring (bSCORE) | 17 scored, 16 dropped | n/a | KX-02 Thurloe only live row (bTHU) |
 | blitz-ciphers | NEAR step 2: pages 1-6 fetch (bBLZ5) | pages 1-6 are a second sign system | within-document spread does not transfer | book mixes at least two sign systems; N stays 581 |

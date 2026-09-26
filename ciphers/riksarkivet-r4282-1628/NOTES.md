@@ -88,10 +88,17 @@ crib, so `de16`/`de` was not the applicable judge here; H0 count 0, C0, S0, all 
 Coverage (43.05%) is identical across every row by construction (A/B share the same known-sign set;
 C preserves the character multiset) -- reported per rule 3 ("report both numbers"), not because it
 distinguishes anything here. The number that would distinguish a real hit is the Latin-hint count:
-real crib (A=4) sits inside, and below the mean of, the same-shape synthetic-key range (B: 3, 4, 8;
-mean 5.0) and does not exceed the shuffled-R4282 range either (C: 1, 1, 2). By the fixed by-eye metric
+real crib (A=4) sits inside, and below the mean of, the same-shape synthetic-key range (B: 8, 3, 8;
+mean 6.3) and does not exceed the shuffled-R4282 range either (C: 1, 1, 2). By the fixed by-eye metric
 used identically across all seven runs, R4284's key-test leaf, applied as a crib, does not make R4282
 read more like Latin than a same-shape key with the letters reshuffled.
+
+Correction (bRIKFIX, 26 Sept 2026, V8-QA7 finding 2): this paragraph previously misstated B as
+"3, 4, 8; mean 5.0", transposed against its own table two lines above (row values 8, 3, 8) and against
+`report.json`. Re-ran `ciphers/riksarkivet-r4282-1628/scripts/crib_test.py --check`: "OK: report.json
+matches a fresh re-derivation" -- the table and `specs/riksarkivet-r4282-1628.json`'s "8, 3, 8 (mean
+6.3)" were the correct values; this paragraph and STATUS.md's LANE B5 row were the ones wrong. The crib
+verdict (4/155) is unaffected.
 
 ### Reading the decoded sample (grade M, by eye, sighted on `report.json`'s `sample_decoded` for A)
 
