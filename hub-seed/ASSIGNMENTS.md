@@ -867,3 +867,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T12:25Z	session_01WVgk3LKjSWgnHV6tv1tA2j	bMALX (Sonnet, cap 5)	malsburg-hessen-1636 cribs: 509 ff.32-33 codes in clear + clear clauses, shuffle control	brief 2026-09-26-lane-b11-bMALX.md; LANE B11
 2026-09-26T12:56Z	session_01C61yQSynUJWJkkFAETscdw	ARM-JEF	done 4.61 (get_session), ledgered D, retitled ARCHIVED, archived	no pool; mjm014590 THE=972
 2026-09-26T12:56Z	session_01X8nHQxRPvLqC6ZXDW5mP4Z	ARM-S3 (Sonnet, cap 6)	shorthand symbol match: Blanchard, Annet, Holdsworth & Aldridge, Lewis 1812	brief 2026-09-26-lane-arm2-s3.md; LANE ARM2
+2026-09-26T13:04Z	session_01GtsJ5jMdcNB1WfNwFPfyze	bSALS (Sonnet, cap 4)	done 2.84 D (get_session), retitled ARCHIVED, archived	salviati 35.9 -> 29.2 MB; LANE B11
+2026-09-26T13:04Z	session_01WVgk3LKjSWgnHV6tv1tA2j	bMALX (Sonnet, cap 5)	done 7.42 D- (1.48x, get_session), retitled ARCHIVED, archived	malsburg cribs tie shuffle, 0 words; job 4 not opened; LANE B11

@@ -414,8 +414,8 @@ Breadth lane, successor to LANE B10, opened by parent 7g at 12:21 UTC 26 Sept 20
 | Spec | Test run (worker) | Target | Control | Verdict |
 |---|---|---|---|---|
 | fr2933-salviati-1525 | R8 families (DSN, DSN2 V1-V3, irregular) at --measured-error 0.064 (bSALR, Opus, session_012E6Q7t1Pt4d5xK4QWVL7Ap) | running | running | - |
-| fr2933-salviati-1525 | folder shrink 36 MB (bSALS, Sonnet, session_01GtsJ5jMdcNB1WfNwFPfyze) | running | - | - |
-| malsburg-hessen-1636 | cribs: 509 ff.32-33 codes in clear + clear clauses ff.16/23/24/28, shuffle control (bMALX, Sonnet, session_01WVgk3LKjSWgnHV6tv1tA2j) | running | running | - |
+| fr2933-salviati-1525 | folder shrink 36 MB (bSALS, Sonnet, 2.84) | 35.9 -> 29.2 MB | regen 2 Gallica byte-identical, 3 local crops pixel-near | done; glyphs/strips/atlas_review kept (no runnable derivation) |
+| malsburg-hessen-1636 | cribs: 509 ff.32-33 codes in clear + clear clauses, shuffle control (bMALX, Sonnet, 7.42, 1.48x) | 222 occurrences, 36 repeated codes, class consistency 0.812; 0 consistent words | shuffle mean 0.780, p95 0.836 (tie, non-discriminating) | partial; job 4 not opened; lead: G.G. naming span |
 
 Job 4 (nomenclator at the pooled N seeded with cribs) opens only if bMALX finds 3+ codes with a consistent candidate word above its shuffle control.
 
