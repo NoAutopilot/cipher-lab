@@ -1,0 +1,26 @@
+line	pos	code	marks	conf	note
+10	13	S	7	L	mark ambiguous 3/7-shape above S/5-shaped sign, could be eps
+11	8	y		H	cursive y with looped tail, matches atlas closely
+11	14	p		H	p with loop, stem crossed, matches atlas
+12	8	g		M	g/9-shaped loop, fold crease overlapping reduces clarity
+12	9	N		L	mostly obscured by paper fold/crease, faint hooked stroke resembling N
+12	11	tee		M	vertical stroke with bar to the right, second vertical stroke at edge is context
+12	12	bh	dot	M	tall stem with hooked loop upper right, small dot above-right
+12	22	eps	1	H	two open bowls open right (epsilon), short stroke mark above
+13	3	H	1|o	M	H with numeral-like '10' mark above, reads as short-stroke + ring
+13	3.5	g	7	L	g/9-shape with a '3'-like mark above, closest listed mark is 7
+13	5	S7		M	7-shaped sign with lead-in stroke from left (context)
+13	5.5	g		L	g-shape with hooked tail curling left; no clear mark above
+13	21	y		M	cursive y with looped tail; small stroke top-right likely part of glyph not a separate mark
+13	21.5	dl		M	small loop with long wavy tail (delta-tilde) below/right of the y
+14	3	p		H	p with loop and crossed stem, matches atlas; dashes at left are context
+14	16	eps		H	two open bowls open right, clean match to epsilon
+14	17	tee		M	vertical stroke crossed by bar to the right; curl at left is context tail of neighbor
+14	21	phi		M	small loop/circle crossed by long diagonal stem, matches phi shape
+14	22	_		H	plain cursive script, reads like 'uo', not a cipher sign
+15	2	g		H	g/9-shaped loop with descender, clean match
+15	6	Lx		H	lambda with bar crossing right leg, clean match
+15	7	f		H	long f with crossbar, clean match
+18	20	Lx		H	lambda with crossing bar and lead-in stroke from left
+18	21	sq		H	closed square box, clean match
+18	22	Lx		M	lambda-with-bar shape, square corner visible at bottom edge is context from neighbor

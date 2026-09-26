@@ -1,0 +1,62 @@
+line	pos	code	marks	source	reason
+1	1	bh		BC	A=y B=bh C=bh; C note: tall straight stem, small hooked loop upper right, lead-in stroke from left; matches bh atlas
+1	8	_		BC	A=w B=_ C=_; C note: plain cursive "ouo", no cipher sign
+1	10	dl		BC	A=+ B=dl C=dl; C note: small loop bottom-left, tail curls up and right to a dot; matches dl atlas
+1	10.5	+		BC	A=MISSING B=+ C=+; C note: single cross standing on the line, beside the dl sign
+1	24	a	5	split	A=_ B=a C=S; C note: elongated S-curve above plain cursive "af"; matches S atlas
+2	2	y		BC	A=_ B=y C=y; C note: looped tail curling back left below a lead-in stroke, matches y atlas; slight confusion with plain letter y
+3	1	g	dot	BC	A=y B=g C=g; C note: 9/g-shaped loop with tail, matches g atlas
+3	11	_		BC	A=# B=_ C=_; C note: plain cursive "rto", no cipher sign
+3	13	nt		split	A=f B=nt C=Lx; C note: Λ shape with a bar crossing the right leg, looks like "Λ+"; matches Lx atlas
+3	14	+		BC	A=Z B=+ C=+; C note: single cross with small hook at foot, standing on the line
+3	17	e		BC	A=_ B=e C=e; C note: one closed bowl at top with stroke rising into it and tail curling right; no marks visible above, some resemblance to dl
+3	23	+		split	A=# B=+ C=f; C note: long f/ſ with crossbar, dot above to the upper right
+3	27	_		split	A=nt B=_ C=sq; C note: heavy ink blot/smudge over centre; a square outline is visible at the right edge, best guess sq but badly obscured
+3	28	a		split	A=Lx B=a C=_; C note: plain cursive "a", no cipher sign
+3	29	wd		split	A=g B=wd C=w; C note: cursive w/ω shape below a curling hook ending in a dot above; hook closest to mark 5
+3	32	H		BC	A=_ B=H C=H; C note: H shape with small "10"-like superscript inherent to the glyph, matches H atlas
+4	16	g		BC	A=y B=g C=g; C note: 9/g-shaped sign with tail, matches g atlas
+4	19	Z	dot	BC	A=y B=Z C=Z; C note: Z-shaped sign; cursive "n" above is context from neighbouring text, not part of this sign
+5	6	a		split	A=g B=a C=_; C note: plain cursive "a", no cipher sign
+5	7	y		BC	A=_ B=y C=y; C note: left of two adjacent y-shapes, looped tail, matches y atlas
+5	7.5	y		BC	A=MISSING B=y C=y; C note: right of two adjacent y-shapes, clear looped tail, matches y atlas
+5	24	nt		split	A=_ B=nt C=Lx; C note: Λ with crossbar (Lx) below; short stroke with a small loop/dot above read as mark 1
+6	18	S		BC	A=_ B=S C=S; C note: elongated S-curve, upper of two stacked signs, matches S atlas
+6	18.5	eps		BC	A=MISSING B=eps C=eps; C note: two open bowls stacked, open to the right, lower of two stacked signs, matches eps atlas
+7	7	]		BC	A=Z B=] C=]; C note: square box open to the left, upper of two stacked signs, matches ] atlas
+7	7.5	S7		BC	A=MISSING B=S7 C=S7; C note: 7-shaped sign, lower of two stacked signs, matches S7 atlas
+7	10	S7		BC	A=_ B=S7 C=S7; C note: 7-shape with a looped foot; could be confused with g
+7	28	+	dot	BC	A=# B=+ C=+; C note: single cross standing on the line, dot above to the upper right
+8	8	phi	+	BC	A=_ B=phi C=phi; C note: small slashed loop on a long stem, matches phi atlas; flanking crosses are neighbouring signs
+8	13	_	~	AC	A=_ B=a C=_; C note: plain cursive "a", no cipher sign
+8	16	phi	~	BC	A=bh B=phi C=phi; C note: small slashed loop on a stem, numeral-like "12" above read as marks 1 and ~ (tilde drawn like a 2)
+8	21	eps		BC	A=_ B=eps C=eps; C note: two-bowl shape at bottom matches eps; "3"-like shape above is likely context from the line above, not a mark
+9	7	_		AC	A=_ B=lam C=_; C note: single short diagonal stroke, insufficient shape visible to identify a sign; likely cut by crop edge
+9	8	+		BC	A=f B=+ C=+; C note: single cross standing on the line; curved shape below-left is a neighbouring sign
+9	10	sq		BC	A=_ B=sq C=sq; C note: closed square box, matches sq atlas
+9	29	_		split	A=S7 B=_ C=+; C note: single cross standing on the line, flanked by neighbouring letters
+10	13	S	7	BC	A=_ B=S C=S; C note: mark ambiguous 3/7-shape above S/5-shaped sign, could be eps
+11	8	y		BC	A=_ B=y C=y; C note: cursive y with looped tail, matches atlas closely
+11	14	y		split	A=_ B=y C=p; C note: p with loop, stem crossed, matches atlas
+12	8	_		split	A=dl B=_ C=g; C note: g/9-shaped loop, fold crease overlapping reduces clarity
+12	9	_		split	A=lam B=_ C=N; C note: mostly obscured by paper fold/crease, faint hooked stroke resembling N
+12	11	tee		AC	A=tee B=_ C=tee; C note: vertical stroke with bar to the right, second vertical stroke at edge is context
+12	12	_	1	split	A=tee B=_ C=bh; C note: tall stem with hooked loop upper right, small dot above-right
+12	22	eps	1	BC	A=_ B=eps C=eps; C note: two open bowls open right (epsilon), short stroke mark above
+13	3	H	1|o	BC	A=_ B=H C=H; C note: H with numeral-like '10' mark above, reads as short-stroke + ring
+13	3.5	g	7	BC	A=MISSING B=g C=g; C note: g/9-shape with a '3'-like mark above, closest listed mark is 7
+13	5	S7		BC	A=y B=S7 C=S7; C note: 7-shaped sign with lead-in stroke from left (context)
+13	5.5	g		BC	A=MISSING B=g C=g; C note: g-shape with hooked tail curling left; no clear mark above
+13	21	y	~	BC	A=_ B=y C=y; C note: cursive y with looped tail; small stroke top-right likely part of glyph not a separate mark
+13	21.5	o.	~	split	A=MISSING B=o. C=dl; C note: small loop with long wavy tail (delta-tilde) below/right of the y
+14	3	p	dot	AC	A=p B=_ C=p; C note: p with loop and crossed stem, matches atlas; dashes at left are context
+14	16	eps		AC	A=eps B=_ C=eps; C note: two open bowls open right, clean match to epsilon
+14	17	_		split	A=+ B=_ C=tee; C note: vertical stroke crossed by bar to the right; curl at left is context tail of neighbor
+14	21	_		split	A=ch B=_ C=phi; C note: small loop/circle crossed by long diagonal stem, matches phi shape
+14	22	_		BC	A=w B=_ C=_; C note: plain cursive script, reads like 'uo', not a cipher sign
+15	2	_		split	A=psi B=_ C=g; C note: g/9-shaped loop with descender, clean match
+15	6	Lx		BC	A=_ B=Lx C=Lx; C note: lambda with bar crossing right leg, clean match
+15	7	+		split	A=_ B=+ C=f; C note: long f with crossbar, clean match
+18	20	S4		split	A=_ B=S4 C=Lx; C note: lambda with crossing bar and lead-in stroke from left
+18	21	sq		BC	A=_ B=sq C=sq; C note: closed square box, clean match
+18	22	Lx		BC	A=_ B=Lx C=Lx; C note: lambda-with-bar shape, square corner visible at bottom edge is context from neighbor
