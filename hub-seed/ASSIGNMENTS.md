@@ -764,3 +764,6 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T07:27Z	session_0138oYmPbpfc6zJGKx8XqFPt	ARM-CODES	done 4.27, ledgered D, archived	
 2026-09-26T07:27Z	session_016MomssrUDeP4gHsHB8zhDa	ARM-EN18	done 3.68, ledgered D, archived	
 2026-09-26T07:27Z	session_013XRpMfe3J9dhb6oiNbEExJ	ARM-REC	done 4.09, ledgered D-, archived	
+2026-09-26T07:27Z	session_01FzjVKQ9ezApi6N9ArxmPsx	ARM-DESIGN (Fable, cap 12)	code design verdict + family C spec	brief 2026-09-26-lane-arm-design.md; LANE ARM
+2026-09-26T07:27Z	session_01Q7vUk2LfBnnua3tK5V7Cem	ARM-A2 (Sonnet, cap 3)	sibling-table transfer sweep	brief 2026-09-26-lane-arm-a2.md; LANE ARM
+2026-09-26T07:27Z	session_011LGV2dxSLTnpHb7CwrzoqB	ARM-REC2 (Sonnet, cap 5)	Founders via Wayback step 1	brief 2026-09-26-lane-arm-rec2.md; LANE ARM
