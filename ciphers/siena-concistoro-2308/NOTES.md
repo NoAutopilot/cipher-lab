@@ -97,3 +97,96 @@ no hits; one OpenAlex + one Semantic Scholar query, no hits; web search "Siena C
 cifra" and "Siena Concistoro cipher 1421-1530", no solved-status hits found. DECODE record status read from
 Bourdeau's own catalogue note (images present, R4790-R4814); the site's own listing not re-fetched this pass.
 Checked 26 Sept 2026.
+
+## Ciphertext-only homophonic, nos. 6/24, 20/23 (bSIE2, 26 Sept 2026)
+
+Intake gate re-run (06:56 UTC): `siena-concistoro-2308: open (line 1) -- edition/page or full-text-search
+citation found within 6 lines`, exit 0.
+
+Transcripts (Bourdeau, dbourdeau/cyphersolver, `siena1421/transcripts/`, commit
+`fc0c9e865d0fae67ca92d19750d2b09ab11972e0` (same pin as bSIE's test-1 clone), read 26 Sept 2026; MIT code /
+CC BY 4.0 text) copied into `ciphers/siena-concistoro-2308/transcripts/` with a one-line credit/provenance
+header on each file: `no06.tok`, `no24p2.tok` (his P2 only -- his own NOTES.md: "no. 24 P1 = dorse, not
+decipherment", so P1 is excluded), `no06_24all.tok` (his own pooled file), `no20.tok`, `no23.tok`,
+`no20_23all.tok` (his own pooled file).
+
+**Per-piece N/K and pooling check.** Bourdeau's own NOTES.md already pools these two pairs under one system
+each ("No. 24 (R4812): same system as no. 6 (probable)" -- shared opening formula, the 'p p' pair and the W
+sign, "every sign in the no. 6 legend"; Escalation section: "systems pooled (nos. 6+24, 20+23)"). Checked
+independently this pass, since full-multiset sign-overlap is a poor pooling test on its own (rare one-off name
+codes inflate the union): top-20-most-frequent-sign overlap is 17/20 for both pairs, which is the discriminating
+number (full-multiset Jaccard is 0.74 for 6/24 but only 0.36 for 20/23 -- driven by each piece's own long tail
+of once-or-twice signs, not by the core system differing). Both pairs pool on Bourdeau's own note plus this
+check.
+
+| piece | N (tokens) | K (distinct signs) |
+|---|---|---|
+| no06 | 1056 | 65 |
+| no24 (P2 only) | 2638 | 62 |
+| no06+24 pooled | 3689 | 73 |
+| no20 | 1230 | 51 |
+| no23 | 3702 | 67 |
+| no20+23 pooled | 4932 | 86 |
+
+**Test.** `tools/family_run.py specs/siena-concistoro-2308.json --family homophonic --cipher
+ciphers/siena-concistoro-2308/transcripts/<pooled>.tok --tokens space --param profile=target --seeds 3`
+(`--cipher` overrides the spec's own `ciphertext_pending` field with the pooled transcript on disk; N/K/design
+are read from that file, so this satisfies "write the ciphertext where family_run can read it" without
+clobbering the shared spec between the two pooled-pair runs). Control = synthetic it16 homophonic cipher at
+the same N, K, sign-count profile (`profile=target`), 3 seeds, run first; target run only if the control's mean
+recovery met the 0.6 gate.
+
+| pair | CONTROL recovery (3 seeds) | CONTROL mean | gate | TARGET judge |
+|---|---|---|---|---|
+| no06+24 | 0.988, 0.996, 0.992 | 0.985 | met (>=0.6) | FAIL |
+| no20+23 | 0.997, 0.555, 0.975 | 0.842 | met (>=0.6) | FAIL |
+
+Judge lines (rule 7, `tools/judge_plaintext.py specs/siena-concistoro-2308.json --file <decode>`), era flag
+beside each per the spec's judge block (it16 is mid-late-16th-c. register; these pieces are 15th/early-16th c.,
+same era gap already flagged in the test-1 section above -- graded by eye, not trusted on the score alone even
+had it passed):
+
+    no06+24: FAIL language: score=-1.372, null_p99=-1.847, real_p05=-0.925, real_median=-0.822, mode=both, N=3689
+              ok   words: cover=0.841, min=0.6, real_text_median_cover=0.945
+              FAIL - siena-concistoro-2308 (a PASS is a gate for a verifier, not a reading; rule 10)
+
+    no20+23: FAIL language: score=-1.384, null_p99=-1.852, real_p05=-0.954, real_median=-0.814, mode=both, N=4932
+              ok   words: cover=0.851, min=0.6, real_text_median_cover=0.945
+              FAIL - siena-concistoro-2308 (a PASS is a gate for a verifier, not a reading; rule 10)
+
+Both controls solve near ceiling (mean 0.985 and 0.842 recovery -- the design has plenty of headroom at this
+N,K, so a FAIL here is informative, not a control-below-gate non-test per CLAUDE.md rule 3's own headline
+paragraph). Word-cover alone clears the 0.6 bar on both (0.841, 0.851) but the language check does not (both
+below their own null_p99 and real_p05), so the overall verdict is FAIL on both pooled pairs. Rows appended to
+`ciphers/siena-concistoro-2308/HYPOTHESES.md` (control mean+range and target score/judge side by side, per
+rule 3). Decodes: `ciphers/siena-concistoro-2308/families/homophonic-1-profile=target-bsie2nos624poolc.txt`,
+`.../homophonic-1-profile=target-bsie2nos2023pool.txt`.
+
+K is 73 and 86 for the two pools respectively, both above 30, so the brief's masc fallback (K<=30) does not
+apply to either pair.
+
+**Cross-check against Bourdeau's own prior attempt.** His NOTES.md ("Solver calibration") already ran the same
+kind of test with his own tools and reports the identical shape of result: his synthetic Italian homophonic
+control (2,673 tokens, 58 signs, 3% nulls) "breaks ... perfectly (-1.74/token)" while "the real nos. 6/24 and
+20/23 stay at -2.9/token under every variant tried (Italian, Latin, Catalan, Spanish; f-groups merged; 'p p'
+merged or dropped; crossed or superscripted signs as nulls; null-aware homsolve3)". This pass's independent
+run, different tool and corpus (it16 word/4-gram judge rather than his per-token score, our own homophonic
+anneal rather than his homsolve2/3), reaches the same negative on both pooled pairs with a matched control
+that solves near ceiling: **negative, matched control**, consistent with a prior negative already on file, not
+a novel finding.
+
+Result: **negative, matched control**, both pools. Grade S (cryptanalytic negative with a matched control) per
+CLAUDE.md rule 4 -- no H or C token read. Per rule 5's near-solve amendment this is a control-backed negative,
+not a control-below-gate non-test, but nothing here beat its control by a margin either, so it does not qualify
+as a NEAR.md row on its own (the orchestrator's call, not this worker's per LANE B3's rule that workers do not
+edit NEAR.md).
+
+Caveat (rule 2, image over transcription): as with test 1, this used only Bourdeau's own published transcripts,
+not the DECODE page images (account-wide image block, see CLAUDE.md Access playbook) -- a transcription
+convention difference from the physical signs is not excluded.
+
+Next step (not run this pass): Bourdeau's own escalation log names "a single-hand re-transcription with a
+fixed sign inventory" as the way forward for both pools -- that needs the DECODE images, blocked account-wide.
+
+Hosts this pass: github.com 1 shallow clone (dbourdeau/cyphersolver, siena1421 folder only, deleted after
+copying the six transcript files above). No other network calls.

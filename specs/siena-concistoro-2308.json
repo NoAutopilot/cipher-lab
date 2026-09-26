@@ -29,6 +29,15 @@
    "result": "negative, matched control: every real-order score (-1.56 to -2.45) is below the it corpus's own null_p99 (-1.63 at N=100) or real_p05 (-1.007) in the great majority of cells; real order beats scrambled order in 11/21 cells and loses in 10/21, no consistent one-directional margin, well inside scrambled-control seed noise. None of the three keys decode any of the seven pieces.",
    "cost_usd": "reported by orchestrator via get_session, not stated here per CLAUDE.md ROOM.md convention",
    "table": "ciphers/siena-concistoro-2308/NOTES.md (full 21-row table); raw numbers in specs/cheap-tests/siena-concistoro-2308/results.json"
+  },
+  {
+   "test": 2,
+   "date": "26 Sept 2026",
+   "worker": "bSIE2 (LANE B8)",
+   "method": "ciphertext-only tools/family_run.py --family homophonic on Bourdeau's own pooled transcripts for nos. 6+24 (N=3689, K=73) and nos. 20+23 (N=4932, K=86), --param profile=target, it16 control first (3 seeds), gate 0.6",
+   "result": "negative, matched control on both pools: control mean recovery 0.985 (6+24) and 0.842 (20+23), both far above gate and near ceiling (headroom present, rule 3 headline paragraph); judge_plaintext.py FAILs both targets on language (score -1.372/-1.384 below both null_p99 and real_p05) though word-cover alone clears 0.6. Consistent with, not novel over, Bourdeau's own prior ciphertext-only attempt on the same two pools (his NOTES.md: synthetic control -1.74/token vs. real -2.9/token under every variant he tried).",
+   "cost_usd": "reported by orchestrator via get_session, not stated here per CLAUDE.md ROOM.md convention",
+   "table": "ciphers/siena-concistoro-2308/NOTES.md section 'Ciphertext-only homophonic, nos. 6/24, 20/23 (bSIE2, 26 Sept 2026)'; ciphers/siena-concistoro-2308/HYPOTHESES.md rows 26 Sept 2026 07:00/07:02"
   }
  ]
 }
