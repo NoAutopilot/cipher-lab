@@ -785,3 +785,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T08:14Z	session_019GkVZEhwsixGdZo13Hnvbo	ARM-IMG (Sonnet, cap 4)	M34 roll 14 image locator	brief 2026-09-26-lane-arm-img.md; LANE ARM
 2026-09-26T08:14Z	session_01N3zZKK2qku7oQb42Kc8wb2	LANE B8 orchestrator	done 5.98 (get_session; ledger row edited from 4.83), 8 workers 39.09, retitled ARCHIVED, archived by 7g	handoff STATUS.md LANE B8 handoff; B9 opens from it
 2026-09-26T08:14Z	session_01MGncH2nJEj9FQRnatv4qWY	retrospective q	done 2.08, ledgered D, retitled ARCHIVED, archived by 7g	RETRO-2026-09-26e.md; RETRO-APPLY-Q follows
+2026-09-26T08:15Z	session_01HdtE6CKSg61AwFoyoHu8gn	RETRO-APPLY-Q (Sonnet, cap 6)	apply RETRO-2026-09-26e.md proposals 1-4	brief 2026-09-26-parent-retro-apply-q.md; parent 7g
+2026-09-26T08:15Z	session_0167Uwemu8CfMzGaGRJJhx6W	LANE B9 orchestrator (Opus, cap 25)	breadth: malsburg pool wave, matignon 1h, hessen-1824 running_key, malsburg 509	brief 2026-09-26-lane-b9-orchestrator.md; parent 7g
