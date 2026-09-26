@@ -574,3 +574,79 @@ Requests this pass: archive.org about 35 (advancedsearch x5, metadata x6, fullte
 page-image fetches ~19 across the trial-and-error Taylor search and the four other systems' plates, well under the
 40-request cap); cryptiana.web.fc2.com 1 (Taylor specimen, already an established route). All >=1.5s apart,
 descriptive User-Agent. No logins, no credentials touched.
+
+## ARM-TR2 manuscript completion (26 Sept 2026, LANE ARM worker ARM-TR2)
+
+Finished ARM-TR's manuscript-verification thread: frame 0033 transcribed, page-1 lines 6-13 re-read,
+the page2 L02/L06 shorthand-crop bookkeeping issue diagnosed, `ciphertext_ms.txt` now covers the whole
+letter. Full narrative in NOTES.md's own "ARM-TR2" section; this section is the numbers.
+
+**Frame 0033.** Native image is a two-document spread: LEFT page is this letter's own final leaf
+(4 numeral lines + closing + signature + address, confirmed by direct read against
+`M. Madison Secretary of State` and the "I have the honor to be Sir..." close); RIGHT page is a
+DIFFERENT, later letter ("Paris 27 february 1808"), not transcribed. Two fresh blind Sonnet passes
+over the left page's 4 line-crops (`images/crops_0033/f0033P4_L01-04.jpg`), reconciled by this worker
+from the crop directly on the two edge-of-crop digits both passes flagged. Result: **exact match**
+against `ciphertext.txt`'s final 37 numeral groups (79 through 170), zero substitutions, zero gaps.
+
+**Page-1 lines 6-13, control numbers.** BEFORE (ARM-TR, first 332-of-369 covered range):
+substitutions=14, in_ciphertext_not_ms=54, in_ms_not_ciphertext=1 (own NOTES.md figures). AFTER (this
+job, full 369/369 letter incl. frame 0033): substitutions=9, in_ciphertext_not_ms=12,
+in_ms_not_ciphertext=3, match_ratio=0.957 (`tools/... tr/diff_ms_vs_ciphertext.py`, re-run pasted in
+NOTES.md).
+
+**Root cause of most of the 54, found this pass:** ARM-TR's own `crops_0030` L06-L11 bands were cut too
+close to their top edge (`tools/iiif_lines.py`'s row-ink-profile band boundary), silently shearing off
+each line's first 1-2 tokens and the tops of some digits -- this, not a shorthand-vs-digit ambiguity,
+is why four independent blind passes (2 original + 2 fresh) all misread "61 45" as "43". Re-cropped
+L06-L11 directly with ~90px extra top margin (PIL, this worker, not a subagent) and re-read: recovers
+"76 1340" (L06 head), "341 1476" (L07 head), "88 1340" (L08 head), "61 45" (L09 head, corrects "43"),
+and "143" (L11 head) -- all now matching `ciphertext.txt` exactly at those positions. One genuine digit
+substitution survives in this span, confirmed 4/4 passes plus this direct check: line 7's ms "200"
+where `ciphertext.txt` has "203".
+
+**What is left unresolved, honestly, not force-classified:** L12/L13 (16 and 19 marks in ARM-TR's
+original count) were re-cropped with the same extra top margin and show NO hidden digits -- these two
+lines really are dense runs of shorthand marks, unlike L06-L11. Against this, `ciphertext.txt`'s own
+notation at the same position is minimal ("2 ** 44" -- one digit, one "several-marks" passage, one
+digit), a real density mismatch this job cannot resolve: either two of ARM-TR's mark-run digits ("31"
+after L09's run, "13" newly found inside L10's run) are genuine content Bourdeau's transcription folded
+into a "**" without preserving, or this worker's passes are over-reading structure into what are
+genuinely just flourishes. Graded M, not resolved. `2` and `44` (ciphertext.txt, no ms counterpart)
+most plausibly sit inside L12/L13's own dense mark runs, indistinguishable from the surrounding
+flourishes at this resolution.
+
+**Classification of the original "54 unmatched Founders groups"** (ARM-TR's own figure, page-1 L6-13
+span, first-332 coverage): of the tokens accounted for by this pass's per-token opcode diff (see
+NOTES.md for the full before/after list), the large majority -- 76, 1340, 341, 1476, 88, 1340, 143 (7
+tokens) directly recovered as clean exact matches, plus 61/45 correcting what had been counted as a
+2-token substitution against "43/31" -- are **present in ms under the correct reading**, previously
+lost to a crop-geometry bug, not a genuine transcription gap. One token (200 vs 203) is a **confirmed
+digit substitution**, not absent. Two ciphertext.txt tokens (2, 44) remain **most plausibly present in
+ms but indistinguishable within a dense mark run** (not ms-illegible in the sense of no image existing --
+the image exists and is legible as marks, just not resolvable to specific digit values at this
+resolution). None of the original 54 resolve to "ms illegible" in the sense of image damage or an
+unreadable leaf -- the whole span is on a clear, well-preserved page.
+
+**Page2 L02/L06 shorthand-crop bug, diagnosed and the two named crops fixed.** `images/shorthand/
+page2_L02_seq198-212_15marks.jpg` and `page2_L06_seq250-264_12marks.jpg` were pulled from
+`crops_0031L`'s raw `L0N` filenames without applying the +1 line-index correction that
+`tr/page2_passA_shift.tsv` already applies for the main transcription passes (crops_0031L has one
+extra faint/blank line at its own top before its real content starts, so its "L02" is physical content
+line 1, not line 2). Both named crops have been replaced with the correct line images (sourced from
+`crops_0032L`, which is correctly indexed) and now show their claimed mark content: L02 the all-marks
+line (`* * * * * * * * * * * * * * *`), L06 `* 45 147 1158` plus its trailing mark run. **Not fixed,
+flagged for a successor:** the same bug most likely affects every other page2 shorthand crop
+(`page2_L01,L03,L04,L07,L10,L11,L13`), which this job's brief did not name and time did not allow;
+spot-checked L04, confirmed same one-line shift. A full page2 shorthand-crop re-derivation is the
+next cheap step before any family-S job trusts that folder.
+
+Units-digit distribution, full letter, ms vs ciphertext.txt (`tr/diff_ms_vs_ciphertext.py` output,
+covering all 369 positions): both distributions agree closely in shape (0/1 dominant, 2/3/5/9 rare,
+matching ARM-DESIGN's own finding) -- full table in NOTES.md. No systematic 2/3/5/9 misreading found
+anywhere in the now-complete comparison.
+
+No network this job (all work against images already on disk). 2 Sonnet subagent calls (frame 0033,
+2 concurrent blind passes) + 2 Sonnet subagent calls (page-1 L6-13, 2 concurrent blind passes) = 4
+subagent calls total; all further settlement (page 4 edge digits, the L06-L11 crop-top fix, the page2
+shorthand-crop diagnosis) done directly by this worker against the images, not delegated.

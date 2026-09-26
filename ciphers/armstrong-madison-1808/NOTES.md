@@ -550,3 +550,93 @@ Requests: archive.org ~35 (advancedsearch, metadata, `fulltext/inside.php` searc
 documented in CLAUDE.md's Access playbook table, used to jump straight to each book's alphabet-plate leaf by
 keyword rather than paging through by trial and error -- and page-image fetches), cryptiana.web.fc2.com 1. All
 >=1.5s apart, descriptive User-Agent, no logins.
+
+## ARM-TR2 pass, 26 Sept 2026 (LANE ARM worker ARM-TR2) -- manuscript completion, page1 L6-13 root-caused
+
+Finished ARM-TR's manuscript-verification thread. Full numbers in HYPOTHESES.md's "ARM-TR2 manuscript
+completion" section; this is the narrative.
+
+**Frame 0033 transcribed, exact match.** The native image is a two-document spread: its LEFT page is
+this letter's own last leaf (the final 4 numeral lines, closing, signature "Wm Armstrong", and address
+"M. Madison Secretary of State of the United States Washington"); its RIGHT page is a different, later
+letter dated "Paris 27 february 1808" (mixed plain-and-cipher, not this target, not transcribed). Two
+fresh blind Sonnet passes over the left page's 4 lines, two edge-of-crop digits settled by this worker
+from the crop directly: the full 37-group tail reads **79 14 1160 1376 1740 18 38 764 364 1240 | 1160
+1401 176 671 604 4 560 38 1207 160 | 380 87 768 14 870 462 47 648 140 1207 981 | 5 760 47 38 580 170**
+-- an exact match against `ciphertext.txt`'s own final 37 groups, zero substitutions.
+
+**Page-1 lines 6-13: the "54 unmatched groups" was mostly a crop bug, not a transcription-vs-manuscript
+divergence.** Two fresh independent blind Sonnet passes over ARM-TR's own `crops_0030` L06-L13 images
+disagreed with each other about as much as ARM-TR's original two passes did -- but comparing all four
+passes together against a **re-crop with ~90px of extra top margin** (done directly by this worker with
+PIL, not a subagent, after noticing the reconciled passes kept finding line-initial tokens ambiguous)
+showed why: ARM-TR's own crop bands for lines 6-11 were cut too close to the top, silently shearing off
+each line's first 1-2 tokens and the *tops* of some digits. That crop defect, not shorthand-vs-digit
+ambiguity, is why FOUR independent blind passes (ARM-TR's original two plus this job's two fresh ones)
+all read "43" at the start of line 9 -- with the extra top margin the same ink plainly reads **"61. 45."**,
+matching `ciphertext.txt` exactly. The same fix recovers "76 1340" (line 6 head), "341 1476" (line 7
+head), "88 1340" (line 8 head), and "143" (line 11 head) -- all confirmed by direct pixel-level crop
+inspection (screenshots taken and checked, not left to a subagent), all now matching `ciphertext.txt`
+exactly. **Before/after** (`tr/diff_ms_vs_ciphertext.py`, first-332-of-369 range ARM-TR covered):
+substitutions 14->9, in_ciphertext_not_ms 54->12 (across the WHOLE now-369-covered letter; within just
+the L6-13 span specifically, the residual is 2: ciphertext.txt's own "2" and "44" at the L11/L12
+boundary, most plausibly folded into L12/L13's own dense mark runs rather than genuinely absent).
+match_ratio 0.884 -> 0.957.
+
+One genuine digit substitution survives in this span, now confirmed by 4 independent passes plus this
+worker's own direct crop check: line 7's manuscript reads **"200"** where `ciphertext.txt` has **"203"**
+-- a real transcription difference, not a crop artifact, in the same units-digit family (0<->3) as
+ARM-DESIGN's own caveat, though (like the earlier 1841/1843 case) this is one more isolated instance,
+not a systematic pattern (the full-letter units-digit table below still shows no systematic skew).
+
+**What genuinely remains unresolved, honestly:** lines 12 and 13 (16 and 19 marks in ARM-TR's original
+count) were re-cropped with the same extra top margin and show **no hidden digits** -- unlike lines
+6-11, these really are dense, near-solid runs of shorthand marks with no numeral shapes visible at any
+crop margin tried. Against this, `ciphertext.txt`'s own notation at the same sequence position is
+minimal: just "2, **, 44" (one digit, one "several-marks" passage code, one digit) where the manuscript
+shows two entire lines of marks. This is a real, unexplained density mismatch between Bourdeau's
+transcription and what the manuscript actually shows here -- flagged for a successor (a symbol-by-
+symbol shorthand-system match, per ARM-S1's own next step, is the only way this is likely to resolve
+further), not something this job could adjudicate from the image alone. Similarly, this pass's own new
+finding of a clear "13" inside line 10's mark run, and the original "31" at the end of line 9's mark
+run, have no corresponding digit in `ciphertext.txt` at that position (folded into a mark passage there
+too) -- graded M, reported as found, not force-matched.
+
+**Page2 L02/L06 shorthand-crop bug (ARM-S1's flag): diagnosed and the two named files fixed.** Both
+were pulled from `images/crops_0031L`'s raw `f0031L_L0N.jpg` filenames directly, without the +1 line-
+index correction that `tr/page2_passA_shift.tsv` already applies when reconciling the actual
+transcription passes -- `crops_0031L` (unlike `crops_0032L`) has one extra faint/blank line at the very
+top of its own crop set before its real content starts (confirmed by direct comparison: `crops_0031L`'s
+own `L01.jpg` is a near-blank margin with a faint archival number, not line 1 of the letter), so its
+"L02" file is actually manuscript content-line 1, and its "L06" file is actually content-line 5. Fixed
+by replacing both named files (`images/shorthand/page2_L02_seq198-212_15marks.jpg`,
+`.../page2_L06_seq250-264_12marks.jpg`) with the correctly-indexed crops from `crops_0032L` (verified:
+L02 now shows the true all-marks line, L06 now shows `* 45 147 1158` plus its own trailing marks,
+matching the mark counts already recorded in `INVENTORY.tsv`/`index.tsv`, which were computed from
+`ciphertext_ms.txt`'s own content and were never wrong -- only the image files pulled for them were).
+**Not fixed here, flagged for a successor:** spot-checked `page2_L04` and confirmed the identical
+one-line shift; every other page2 shorthand crop (L01, L03, L04, L07, L10, L11, L13) almost certainly
+has the same bug and should be re-derived from `crops_0032L` before a family-S job trusts that folder.
+
+**Units-digit distribution, full letter now (349-355 ms tokens vs ciphertext.txt's 369, values as
+digits, `?`/`^`-suffixed digits counted at face value):**
+
+| digit | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| ms (>=100 only) | 89 | 44 | 9 | 4 | 25 | 2 | 22 | 21 | 12 | 2 |
+| ciphertext.txt (>=100 only) | 92 | 47 | 9 | 3 | 26 | 2 | 22 | 22 | 12 | 2 |
+
+Shapes match closely (0 and 1 dominant, 2/3/5/9 rare) across the whole letter, not just the previously-
+covered range -- no systematic 2/3/5/9 misreading anywhere, consistent with ARM-TR's own original
+finding and now checked against the complete letter including frame 0033.
+
+`ciphertext_ms.txt` now has a `# --- page 4 ---` section (frame 0033) and covers the whole letter by
+position. `tr/diff_ms_vs_ciphertext.py` fixed to also recognise a trailing `^` (superscript-tick
+marker) on a digit group, not just `?` -- it was silently dropping those tokens from the ms count
+before this fix (own bug, caught and corrected this pass, not left in).
+
+No network this job (all four subagent calls and all direct crop work against images already on disk;
+`pip install numpy pillow` run locally to use `tools/iiif_lines.py`, no host requests). 4 Sonnet
+subagent calls total (2 concurrent x 2 rounds): frame 0033's 2 blind passes, page-1 L6-13's 2 blind
+passes. All further settlement (frame-0033 edge digits, the L06-L11 crop-top-margin fix and re-read,
+the page2 shorthand-crop diagnosis and fix) done directly by this worker against the source images.

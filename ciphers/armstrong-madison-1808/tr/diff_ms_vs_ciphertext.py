@@ -25,7 +25,7 @@ def nums_from(path):
                 if re.fullmatch(r'\d+', tok):
                     out.append(tok)
                 else:
-                    m = re.fullmatch(r'(\d+)\?', tok)
+                    m = re.fullmatch(r'(\d+)[?^]+', tok)
                     if m:
                         out.append(m.group(1))
     return out

@@ -1,16 +1,35 @@
 # John Armstrong to James Madison, Paris, 20 Feb 1808 -- independent manuscript re-transcription
 # NARA M34 roll 14, frames 0030 (page 1), 0031/0032 (pages 2-3, two independent scans of the
-# same leaf-spread, used as the two blind-pass witnesses -- see images/layout.md). Two blind
-# passes per page, reconciled with tools/reconcile_passes.py, disagreements settled by this
-# worker (ARM-TR, 26 Sept 2026) looking at the crop directly. H = both passes agree or settled
-# by direct crop check; M = passes disagree, uncertain (mostly shorthand mark counts in dense
-# cursive runs -- see CLAUDE.md rule 4 grading). '*' = one shorthand/graphic mark (this worker's
-# passes counted INDIVIDUAL marks, finer-grained than Bourdeau's own passage-level '*'/'**'
-# convention in ciphertext.txt -- the two are not directly comparable mark-for-mark).
+# same leaf-spread, used as the two blind-pass witnesses -- see images/layout.md), 0033 (page 4,
+# left/loose leaf only -- 0033's right-hand page is a DIFFERENT letter, "Paris 27 february 1808",
+# not part of this target; not transcribed here). Two blind passes per page, reconciled with
+# tools/reconcile_passes.py, disagreements settled by this worker looking at the crop directly.
+# Pages 1-3: ARM-TR, 26 Sept 2026. Page 4 and the page-1 lines 6-13 re-read: ARM-TR2, 26 Sept 2026.
+# ROOT CAUSE FOUND for most of ARM-TR's own "54 unmatched groups" flag on this span: ARM-TR's own
+# crops_0030 L06-L11 bands were cut too close to their top edge (tools/iiif_lines.py's row-ink-profile
+# band boundaries), silently shearing off each line's first 1-2 tokens (and the tops of some digits,
+# which is why several blind passes -- two original, two fresh -- independently misread "61 45" as
+# "43"). Re-cropped L06-L11 with an extra ~90px of top margin (this worker, direct PIL crop, not a
+# subagent) and re-read directly: this recovers "76 1340" (L06 head), "341 1476" (L07 head), "88 1340"
+# (L08 head), "61 45" (L09 head, corrects "43"), and "143" (L11 head) -- all now matching
+# ciphertext.txt exactly at those positions. This is a crop-geometry bug, not a shorthand-vs-digit
+# ambiguity: once the true digit tops are visible the readings agree with Bourdeau's transcription.
+# One genuine, confirmed (now 4/4 passes plus this direct check) digit disagreement survives in this
+# span: line 7's "200" where ciphertext.txt has "203". L12/L13 do NOT show the same effect -- re-cropped
+# with the same extra top margin, they remain genuinely near-solid runs of shorthand marks with no
+# numerals revealed; their mark counts stay unresolved (four independent passes span 15-19, no two
+# agree) and ciphertext.txt's own minimal "2 ** 44" at this position is a real, unexplained mismatch
+# in density against what the manuscript shows here -- flagged, not resolved, for a successor. H =
+# passes agree or settled by direct crop check; M = passes disagree, uncertain (mostly shorthand
+# mark counts in dense cursive runs -- see CLAUDE.md rule 4 grading). '*' = one shorthand/graphic mark (this
+# worker's passes counted INDIVIDUAL marks, finer-grained than Bourdeau's own passage-level
+# '*'/'**' convention in ciphertext.txt -- the two are not directly comparable mark-for-mark).
+# '^' after a group = a superscript tick sits above that numeral (ARM-S1's finding), not a
+# separate mark.
 #
-# COVERAGE: this reading covers only pages 1-3 (frames 0030-0032) = the first 332 of ciphertext.txt's
-# 369 numeric groups. Frame 0033 (and beyond) was not fetched by ARM-IMG and appears to hold the
-# letter's final ~37 groups -- see NOTES.md 'ARM-TR' section. This file is NOT a complete reading.
+# COVERAGE: this reading now covers the whole letter as transcribed from NARA M34 roll 14 frames
+# 0030-0033 (369 of ciphertext.txt's own 369-370 numeric groups, by position -- see NOTES.md
+# 'ARM-TR2' section for the full-letter diff and the page-1 L6-13 / 54-group classification).
 #
 # Never overwrite ciphertext.txt (Layout rule: as transcribed, never silently repaired).
 #
@@ -18,12 +37,12 @@
 Sir
 The 453 240 760 1480 * 35 681 1752 1843 1314
 * * * * * 384 18 681 1340 1628 1267 1180
-98 * * * * * * * * 388 1320 1254 64 1780
-38 48 56 * 200 38 * 1141 1848 1541 1638
-27 121 356 454 17 1640 1276 14 1760 1267
-43 * * * * * * * * * * * * * * * * * 31
-* * * * * * * * * * 48 1360 18 1141
-436 489 17 946 496 18 36 1900 17 1 28 14
+76 1340 98 * * * * * * * * 388 1320 1254 64 1780
+341 1476 56 48 56 200 38^ 1141 1848 1541 1638
+88 1340 27 121 356 454 17 1640^ 1276^ 14 1760 1267
+61 45 * * * * * * * * * * * * * * * 31?
+* * * 13 * * * * 48 1360 18 1141
+143 436 489 17 946 496 18 36 1900 17 1 28 14
 * * * * * * * * * * * * * * * *
 * * * * * * * * * * * * * * * * * * * 
 176 564 387 840 671 41 431 18 640 1780
@@ -63,3 +82,11 @@ The 453 240 760 1480 * 35 681 1752 1843 1314
 * * * * * * * * * * * * * * * * * *
 130 164 180 1767 162 38 161 15 580 1716 10
 27 614 641 110 1345 170 687 860 310 1900
+
+# --- page 4 (frame 0033, left/loose leaf) ---
+# Two fresh blind passes, both agreeing exactly except for two edge-of-crop digits settled by
+# this worker looking at the crop directly (both consistent with ciphertext.txt at this position).
+79 14 1160 1376 1740 18 38 764 364 1240
+1160 1401 176 671 604 4 560 38 1207 160
+380 87 768 14 870 462 47 648 140 1207 981?
+* 5 760 47 38 580 170
