@@ -1,0 +1,16 @@
+line | herzog (normalized)          | blind (normalized)           | char-match ratio
+-----------------------------------------------------------------------------------------------
+   1 | s~~occox                      | sggoccox                      | 0.750 (6 matched chars of max(8,8)=8)
+   2 | satrnrop5af5ld                | salrnropsak5ld                | 0.786 (11 matched chars of max(14,14)=14)
+   3 | p6m6at5qotm5ruat              | bgmgal5golm5rual              | 0.562 (9 matched chars of max(16,16)=16)
+   4 | m519rlvep55attttlxmissm       | msigrlhep55allhlxmissu        | 0.622 (14 matched chars of max(23,22)=23)
+   5 | ariuaoustgcx5l19altomvraco    | ariuaouftgcxslihallomvraco    | 0.808 (21 matched chars of max(26,26)=26)
+   6 | micrlypymilopmivmlttg         | ueicrlrprmiloquivultlg        | 0.651 (14 matched chars of max(21,22)=22)
+-----------------------------------------------------------------------------------------------
+Overall: 75 matched chars / 109 = 0.688
+
+Distinctive-token cross-check (rare strings, both passes independently landed on):
+  line1 'occo': herzog=True, blind=True, AGREE
+  line4/5 'missm'/'missu' boundary word: herzog=True, blind=True, AGREE
+  line5 'mvraco'/'vraco': herzog=True, blind=True, AGREE
+  line6 'pymi'/'prmi': herzog=True, blind=True, AGREE

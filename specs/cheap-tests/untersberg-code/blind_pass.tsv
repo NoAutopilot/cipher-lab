@@ -1,0 +1,50 @@
+line_number	token_index	token_text	confidence	note
+1	1	S	high	capital S with a small decorative loop/flourish above it
+1	2	g	medium	loop-with-descending-tail glyph, could be numeral 9 or letter g
+1	3	g	medium	identical glyph to token 2, same ambiguity
+1	4	occo	high	clear o-c-c-o
+1	5	X	high	capital X
+2	1	Salrnrop	medium	S-a-l-r-n-r-o-p run together, no internal periods
+2	2	s	medium	small curl/loop above, likely decorative
+2	3	ak5	low	tall ascender+diagonal glyph, ambiguous k vs l, joined to 5
+2	4	l	high
+2	5	d	low	figure-8/loop-over-loop shape, could be decorative 8 or delta
+3	1	B	medium	capital letter, two right-side bumps and descender
+3	2	G	medium	open-topped loop, G or possibly 6
+3	3	m	high	clear three-hump cursive m
+3	4	G	medium	same glyph as token 2
+3	5	a	high
+3	6	l	high
+3	7	5	medium	digit 5 with small superscript squiggle
+3	8	g	high
+3	9	o	high
+3	10	l	high
+3	11	m5	high	m and 5 joined, no period
+3	12	r	high
+3	13	u	medium	could be n, ambiguous hook direction
+3	14	al	high
+4	1	m	high
+4	2	sig	high	s-i-g joined, no internal periods
+4	3	r	high
+4	4	l	high
+4	5	H	low	two vertical strokes + crossbar, could be ligature or n-variant
+4	6	e	high
+4	7	p	high	same descender-flourish p as line 2
+4	8	55	high	two joined 5s
+4	9	a	high
+4	10	ll	medium	two joined l-strokes, could misread as u
+4	11	H	low	same ambiguous glyph as token 5 this line
+4	12	l	high
+4	13	Xmissu	high	capital X joined to missu, word continues onto line 5
+5	1	ariu	high	continues word begun at end of line 4
+5	2	a	high
+5	3	o	high
+5	4	uftgcxs	low	long joined run, second glyph ambiguous f/long-s/st-ligature
+5	5	l	high
+5	6	ih	medium	i with dot then loop-tailed glyph read as h, could be 6
+5	7	allomVraco	high	a-l-l-o-m-V-r-a-c-o joined, no internal periods, no trailing period
+6	1	ueicrlr	low	first letter ambiguous u/n, rest clear i-c-r-l-r
+6	2	prmi	low	p with small superscript mark (maybe decorative) then m-i
+6	3	loqui	medium	l-o-q-u-i with macron over u, clearest word in the box
+6	4	vult	medium	v-u-l-t with macron over u
+6	5	lg	medium	l then g, no trailing period
