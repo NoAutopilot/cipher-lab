@@ -90,6 +90,25 @@ identified, the catalogue's date and senders corrected. The "first verified N3" 
 Orange 1572 detector candidate also fell (partial decipherment printed 1842). Zero unique solves today; two
 over-claims prevented by the gates before anything left the repository.
 
+## LANE AX handoff (session_01VzK62xX92yKfnUD93zprD8), 26 September 2026, from 00:15 UTC (live)
+
+Brief .claude/briefs/runs/2026-09-26-lane-ax-orchestrator.md; COMMON 2026-09-26-lane-ax-COMMON.md.
+
+- **Premise correction, job 1 (00:35 UTC).** The harvest's 15 "not stated / not nominated" WVO letters were all triaged on
+  24 Sept (LANE N/N2/R2/R3/V2): 4503, 5194, 5200, 5207, 5213, 5218, 5221, 5222, 5799, 5810, 5811 and 10260 are printed in clear
+  in Groen (text known; 5200, 5549 PS N1; 4503, 5811 N0); 8246 and 10260 are found-solved folders; 5549's body (539 numerals,
+  the "verendertte" cipher) has no key after fit tests on 5204-5209, 5213, 5550, 5552, 5557, 5575 and a matched-control crib
+  run that failed its own control (J7). So key reuse on the pool is spent except two items:
+  (a) **5797** (22 Oct 1573): Groen IV CDXLIV prints it but notes "plusieurs passages n'ont pu etre dechiffres" (about seven
+  spots); the 1574 table (ours) reads the brothers' autumn-1573 "alte Ciffer" (J5S) and has never been applied to 5797 -> AX-5797.
+  (b) **5799** (3 Apr 1573, Groen IV CDIX in clear) and **4612** (6 Mar 1574, N3, no reading) are the two letters the table
+  does not read. Orchestrator fit check: values 1-120 grouped in blocks of five give IC 0.062 (4612) / 0.072 (5799) vs a
+  random-block null median 0.051, p95 0.057 -> probably the same block design with another letter order. AX-5799 aligns 5799
+  to Groen (key ours, 5799's text N1) and tries it on 4612 and the 5549 body with shuffled-key controls; a block-constrained
+  Opus cryptanalysis of 4612 via family_run.py only if that fails.
+- **Workers:** (filled at dispatch)
+- **For the parent:** nothing on the board yet from this lane.
+
 ## LANE ZX handoff (session_01MxueEQJUGF9PWJiYcVyvBM), 25 September 2026, 15:42-22:20 UTC (closed)
 
 The three partial targets LANE YX left. 13 workers (7 Sonnet, 6 Opus), USD 174.19 worker usage, all ledgered and archived;
