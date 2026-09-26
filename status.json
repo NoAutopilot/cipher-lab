@@ -1932,6 +1932,17 @@
       "text": "not located in print (AUDIT.md search log)",
       "line": "The three leaves carry a period interlinear gloss over nearly every code group (bSZEM, B6); pooled letter-per-code key built with tools/interlinear_align.py, consistency 0.878 vs shuffle p95 0.204, C 384 / M 50 of 434 tokens, re-derivation 0 differences (bSZR); V8-SZEM classed both parts N0 under the leaf's own gloss, key period, no printing of the letter located. A dataset for the pool, not a decipherment by us (rule 10).",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/szembek-bk1560"
+    },
+    {
+      "date": "26 Sept 2026",
+      "kind": "contribution",
+      "title": "RAH Morillo fonds, Sig. 9/7666 leg.23 ff.420-420v: Herrera to Morillo, Guanare 7 Nov 1820, 17-sign letter key rebuilt from the leaf's own period interlinear decipherment (dataset)",
+      "grade": "C 86 / M 5 / U 6 of 97 tokens under the period gloss; decode_key.py --check clean; fresh-instance re-derivation 0 differences (NX-MOR3); class N0, key period, text known (V9-MOR, AUDIT.md, 26 Sept 2026 11:37 UTC)",
+      "key": "period",
+      "text": "known",
+      "line": "Item 3 (Herrera to Morillo, Guanare, 7 Nov 1820, RAH 9/7666 ff.420-420v) carries its own period interlinear decipherment, and its plaintext was printed in 2021 (Bolivar, Gonzalez Segovia and Anzola, Portuguesa en Carabobo, p.37 n.100); we rebuilt the 17-sign letter key from that period decipherment and regenerate the reading mechanically. N0, key period, text known. Owner-account LANE NX (NX-MOR2/MOR3), verified by LANE V9.",
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/rah-morillo-1817",
+      "class": "N0"
     }
   ],
   "lanes": [

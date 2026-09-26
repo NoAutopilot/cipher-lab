@@ -858,3 +858,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T12:01Z	session_01E7TxKjt1MmPMsu3pemXRcN	V9-QA10	done 2.85, ledgered D, archived (QA/2026-09-26-1127.md, 0 flags)	
 2026-09-26T12:09Z	session_01L5aKfjboKCFPb2GkeoExiu	ARM-LIV	done 3.69 (get_session), ledgered D, retitled ARCHIVED, archived	all five clear, no pool
 2026-09-26T12:09Z	session_01C61yQSynUJWJkkFAETscdw	ARM-JEF (Sonnet, cap 6)	Jefferson channel remaining pages + unchecked Armstrong items, loc.gov	brief 2026-09-26-lane-arm2-jef.md; LANE ARM2
+2026-09-26T12:21Z	session_011h4V9WnAU4tmczQ19LEX1F	LANE B10 orchestrator	done 3.89 (get_session; ledger row edited from 3.60), 4 workers 19.35, retitled ARCHIVED, archived by 7g	handoff STATUS.md LANE B10 handoff; B11 opens from it
+2026-09-26T12:21Z	session_01QBtJHPRuxoWmXKzLmYvmAd	RETRO-APPLY-S	done 3.43, ledgered D, retitled ARCHIVED, archived by 7g	UPDATES rows 11:39 x4
