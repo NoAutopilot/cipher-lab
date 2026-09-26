@@ -1,0 +1,17 @@
+{
+  "fetched": "26 Sept 2026",
+  "worker": "bBLZ5 (LANE B5)",
+  "source": "Cipherbrain post 41 (Schmeh 2017), image links read from sources/schmeh/posts/41-blitz.txt (already-fetched post text; no re-fetch of the blog page itself this pass)",
+  "host": "scienceblogs.de",
+  "user_agent": "cipher-lab research script (contact via repository)",
+  "note": "pages 07 and 08 are the two already transcribed in specs/blitz-ciphers.json (Pelling's own partial transcription); this manifest covers only the six untranscribed pages 01-06 per this job's brief. Page numbering follows the source filenames (Blitz-Cipher-01..08.jpg), not necessarily physical page order in the original document.",
+  "images": [
+    {"file": "Blitz-Cipher-01.jpg", "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2014/10/Blitz-Cipher-01.jpg", "size": 223035, "sha1": "06d95c33c9ef0fb8ec99a24031124d206be2927a"},
+    {"file": "Blitz-Cipher-02.jpg", "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2014/10/Blitz-Cipher-02.jpg", "size": 267920, "sha1": "7ae6e5cf759755df9f24b4a8426bcba1d9eee71e"},
+    {"file": "Blitz-Cipher-03.jpg", "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2014/10/Blitz-Cipher-03.jpg", "size": 275004, "sha1": "14580bed9baab039b9faaad120df6e155b0046fc"},
+    {"file": "Blitz-Cipher-04.jpg", "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2014/10/Blitz-Cipher-04.jpg", "size": 253920, "sha1": "86b842c2eaee5e2beec0e8f24667d90d35d979e6"},
+    {"file": "Blitz-Cipher-05.jpg", "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2014/10/Blitz-Cipher-05.jpg", "size": 226198, "sha1": "f9c7f850f1a2dbc80b1272360fd938d715487192"},
+    {"file": "Blitz-Cipher-06.jpg", "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2014/10/Blitz-Cipher-06.jpg", "size": 259492, "sha1": "86357d6b94e5fb59662f32c4c476df8d58ab8105"}
+  ],
+  "requests": {"scienceblogs.de": 7, "note": "1 reachability probe (Blitz-Cipher-01.jpg re-fetched) + 6 image fetches, >=1.5s apart with a browser-descriptive UA"}
+}
