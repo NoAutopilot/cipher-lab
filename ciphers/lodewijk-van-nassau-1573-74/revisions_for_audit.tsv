@@ -1,5 +1,4 @@
 letter	line	pos	code	old	new	grade	class	source	context_new
-4610	p1_L03	14	123	l M	NULL	M	NULL	names.tsv: NULL in 13 of 13 aligned observations (5810/5811/4503 vs Groen)	r e s ? <NULL> e t m o
 4610	p1_L04	14	138	? U	NULL	C	NULL	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	p c z ? <NULL> NULL q u i
 4610	p1_L04	15	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	c z ? NULL <NULL> q u i l
 4610	p1_L05	16	129	? U	NULL	C	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	b l e NULL <NULL> NULL d f
@@ -29,21 +28,21 @@ letter	line	pos	code	old	new	grade	class	source	context_new
 4610	p1_L30	16	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	c t i o <NULL> NULL NULL
 4610	p1_L30	17	128	? U	NULL	M	NULL	names.tsv: NULL in 15 of 15 aligned observations (5810/5811/4503 vs Groen)	t i o NULL <NULL> NULL
 4610	p1_L30	18	130	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	i o NULL NULL <NULL>
-4610	p1_L31	11	123	l M	NULL	M	NULL	names.tsv: NULL in 13 of 13 aligned observations (5810/5811/4503 vs Groen)	e n t ? <NULL> f r e g
 4610	p1_L32	2	128	? U	NULL	M	NULL	names.tsv: NULL in 15 of 15 aligned observations (5810/5811/4503 vs Groen)	NULL <NULL> r e t o
 4610	p1_L32	11	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	t o u r <NULL>
+4610	p1_L33	2	192	? U	roidespagne	H	word	4496 (WVO PDF p4) contemporary interlinear gloss "R. d'Espagne" over 192 (row1, '...124.192. pour...'), confirmed by two independent blind Sonnet passes (AX-GLOSS, axgloss/gloss_attest.tsv); names.tsv previously graded this code U (0 observations -- Groen's print leaves the subject out at 5549 PS1)	<roidespagne> ? z p o
 4610	p1_L33	10	144	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	o r t e <NULL> g r a n
 4610	p1_L33	17	134	? U	NULL	C	NULL	names.tsv: empty in 12 of 12 aligned observations, 0 contradicting	a n d e <NULL> a
-4610	p1_L34	13	123	l M	NULL	M	NULL	names.tsv: NULL in 13 of 13 aligned observations (5810/5811/4503 vs Groen)	i o n ? <NULL> n a m o
+4610	p1_L34	12	192	? U	roidespagne	H	word	4496 (WVO PDF p4) contemporary interlinear gloss "R. d'Espagne" over 192 (row1, '...124.192. pour...'), confirmed by two independent blind Sonnet passes (AX-GLOSS, axgloss/gloss_attest.tsv); names.tsv previously graded this code U (0 observations -- Groen's print leaves the subject out at 5549 PS1)	t i o n <roidespagne> l n a m
 4610	p1_L35	13	131	? U	NULL	M	NULL	names.tsv: empty in 22 of 22 aligned observations, 0 contradicting	t r r f <NULL> NULL o u u
 4610	p1_L35	14	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	r r f NULL <NULL> o u u e
 4610	p1_L36	2	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	e <NULL> NULL ? a u
 4610	p1_L36	3	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	e NULL <NULL> ? a u ?
 4610	p2_L01	18	135	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	n e u e <NULL> NULL
 4610	p2_L01	19	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	e u e NULL <NULL>
+4610	p2_L02	1	192	? U	roidespagne	M	word	4496 (WVO PDF p4) contemporary interlinear gloss "R. d'Espagne" over 192 (row1, '...124.192. pour...'), confirmed by two independent blind Sonnet passes (AX-GLOSS, axgloss/gloss_attest.tsv); names.tsv previously graded this code U (0 observations -- Groen's print leaves the subject out at 5549 PS1)	<roidespagne> l ? e n
 4610	p2_L02	8	129	? U	NULL	C	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	e n s ? <NULL> e t e s
 4610	p2_L03	1	130	? U	NULL	M	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	<NULL> ? u e n
-4610	p2_L04	8	136	uingt M	NULL	M	NULL	names.tsv: NULL in 8 of 8 aligned observations (5810/5811/4503 vs Groen)	d e y ? <NULL> n e ? m
 4610	p2_L05	13	128	? U	NULL	M	NULL	names.tsv: NULL in 15 of 15 aligned observations (5810/5811/4503 vs Groen)	o r e s <NULL> NULL m u r
 4610	p2_L05	14	135	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	r e s NULL <NULL> m u r m
 4610	p2_L07	4	129	? U	NULL	C	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	r e s <NULL> ? e n ?
@@ -57,15 +56,15 @@ letter	line	pos	code	old	new	grade	class	source	context_new
 4610	p2_L11	1	135	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	<NULL> l e NULL u
 4610	p2_L11	4	138	? U	NULL	M	NULL	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	NULL l e <NULL> u o i a
 4610	p2_L11	11	143	? U	NULL	C	NULL	names.tsv: empty in 7 of 7 aligned observations, 0 contradicting	i a g e <NULL> u e r s
-4610	p2_L11	16	130	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	u e r s <NULL> NULL ? ?
+4610	p2_L11	16	130	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	u e r s <NULL> NULL hollande ?
+4610	p2_L11	18	221	? U	hollande	H	word	4496 (WVO PDF p4) contemporary interlinear gloss 'Hollando' over 221, repeated 3x on the same page always over 221, confirmed by two independent blind Sonnet passes (AX-GLOSS, axgloss/gloss_attest.tsv); corroborated unglossed in 4614 p1 'tiré de la Haye en 221' (context: withdrew from The Hague to Holland)	r s NULL NULL <hollande> ?
 4610	p2_L12	13	134	? U	NULL	C	NULL	names.tsv: empty in 12 of 12 aligned observations, 0 contradicting	u o i r <NULL> r e e e
 4610	p2_L13	2	135	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	e <NULL> ? c e s
 4610	p2_L13	13	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	a l i n <NULL> NULL
 4610	p2_L13	14	143	? U	NULL	M	NULL	names.tsv: empty in 7 of 7 aligned observations, 0 contradicting	l i n NULL <NULL>
 4610	p2_L14	7	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	a t z ? <NULL> d o u z
 4610	p2_L16	3	135	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	n t <NULL> f o u r
-4610	p2_L16	11	136	uingt M	NULL	M	NULL	names.tsv: NULL in 8 of 8 aligned observations (5810/5811/4503 vs Groen)	r n i r <NULL> NULL NULL o c
-4610	p2_L16	13	127	? U	NULL	M	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	i r NULL NULL <NULL> o c e n
+4610	p2_L16	13	127	? U	NULL	M	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	i r uingt NULL <NULL> o c e n
 4610	p2_L17	15	135	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	n e r NULL <NULL> NULL u n
 4610	p2_L17	17	138	? U	NULL	C	NULL	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	e r NULL NULL <NULL> u n
 4610	p2_L18	6	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	a l e r <NULL> NULL ? t e
@@ -76,16 +75,13 @@ letter	line	pos	code	old	new	grade	class	source	context_new
 4610	p2_L21	20	130	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	c o i s <NULL>
 4610	p2_L23	7	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	i e u ? <NULL> n e s u
 4610	p2_L24	4	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	i n e <NULL> ? l i e
-4610	p2_L24	13	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	i e u ? <NULL> NULL
-4610	p2_L24	14	136	uingt M	NULL	M	NULL	names.tsv: NULL in 8 of 8 aligned observations (5810/5811/4503 vs Groen)	e u ? NULL <NULL>
-4610	p2_L25	19	136	uingt M	NULL	M	NULL	names.tsv: NULL in 8 of 8 aligned observations (5810/5811/4503 vs Groen)	o u s ? <NULL> l
+4610	p2_L24	13	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	i e u ? <NULL> uingt
 4610	p2_L27	7	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	r d e r <NULL> l e s p
 4610	p2_L28	6	137	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	g e s ? <NULL> NULL p e u
 4610	p2_L29	5	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	g e n s <NULL> ? ? r e
 4610	p2_L30	15	126	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	o u r g <NULL> ?
-4610	p2_L34	1	123	l M	NULL	M	NULL	names.tsv: NULL in 13 of 13 aligned observations (5810/5811/4503 vs Groen)	<NULL> NULL ? NULL NULL
-4610	p2_L34	2	128	? U	NULL	M	NULL	names.tsv: NULL in 15 of 15 aligned observations (5810/5811/4503 vs Groen)	NULL <NULL> ? NULL NULL
-4610	p2_L34	5	137	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	NULL NULL ? NULL <NULL>
+4610	p2_L34	2	128	? U	NULL	M	NULL	names.tsv: NULL in 15 of 15 aligned observations (5810/5811/4503 vs Groen)	l <NULL> ? NULL NULL
+4610	p2_L34	5	137	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	l NULL ? NULL <NULL>
 4610	p3_L01	1	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	<NULL> f o u r
 4610	p3_L01	17	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	o m m e <NULL> NULL ?
 4610	p3_L01	18	130	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	m m e NULL <NULL> ?
@@ -98,11 +94,11 @@ letter	line	pos	code	old	new	grade	class	source	context_new
 4610	p3_L06	1	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	<NULL> NULL NULL ? e
 4610	p3_L06	2	129	? U	NULL	C	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	NULL <NULL> NULL ? e l
 4610	p3_L06	3	138	? U	NULL	C	NULL	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	NULL NULL <NULL> ? e l l
-4610	p3_L06	11	123	l M	NULL	M	NULL	names.tsv: NULL in 13 of 13 aligned observations (5810/5811/4503 vs Groen)	e l l e <NULL> o bommel s e
 4610	p3_L07	4	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	i s t <NULL> ? e n s
 4610	p3_L07	18	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	u i c e <NULL> ?
-4610	p3_L08	3	143	? U	NULL	C	NULL	names.tsv: empty in 7 of 7 aligned observations, 0 contradicting	? <NULL> NULL s o b
-4610	p3_L08	4	134	? U	NULL	C	NULL	names.tsv: empty in 12 of 12 aligned observations, 0 contradicting	? NULL <NULL> s o b l
+4610	p3_L08	2	192	? U	roidespagne	H	word	4496 (WVO PDF p4) contemporary interlinear gloss "R. d'Espagne" over 192 (row1, '...124.192. pour...'), confirmed by two independent blind Sonnet passes (AX-GLOSS, axgloss/gloss_attest.tsv); names.tsv previously graded this code U (0 observations -- Groen's print leaves the subject out at 5549 PS1)	<roidespagne> NULL NULL s o
+4610	p3_L08	3	143	? U	NULL	C	NULL	names.tsv: empty in 7 of 7 aligned observations, 0 contradicting	roidespagne <NULL> NULL s o b
+4610	p3_L08	4	134	? U	NULL	C	NULL	names.tsv: empty in 12 of 12 aligned observations, 0 contradicting	roidespagne NULL <NULL> s o b l
 4610	p3_L09	11	153	? U	pfaltzgraf	H	word	5550 leaf 2 contemporary interlinear gloss 'Palsgrave' over 153 (x2, runs p2-5, p2-11)	r s ? ? <pfaltzgraf> ? c o n
 4610	p3_L10	4	129	? U	NULL	C	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	u x ? <NULL> a s s a
 4610	p3_L10	11	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	a s s a <NULL> l l i r
@@ -110,10 +106,10 @@ letter	line	pos	code	old	new	grade	class	source	context_new
 4610	p3_L11	10	124	? U	NULL	M	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	? l a g <NULL> e l i g
 4610	p3_L12	1	137	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	<NULL> f r e g
 4610	p3_L12	11	135	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	o u s e <NULL> m ? q u
-4610	p3_L13	2	135	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	? <NULL> ? d e s
-4610	p3_L13	16	123	l M	NULL	M	NULL	names.tsv: NULL in 13 of 13 aligned observations (5810/5811/4503 vs Groen)	i e r ? <NULL> NULL NULL d
-4610	p3_L13	17	134	? U	NULL	C	NULL	names.tsv: empty in 12 of 12 aligned observations, 0 contradicting	e r ? NULL <NULL> NULL d
-4610	p3_L13	18	138	? U	NULL	C	NULL	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	r ? NULL NULL <NULL> d
+4610	p3_L13	1	192	? U	roidespagne	H	word	4496 (WVO PDF p4) contemporary interlinear gloss "R. d'Espagne" over 192 (row1, '...124.192. pour...'), confirmed by two independent blind Sonnet passes (AX-GLOSS, axgloss/gloss_attest.tsv); names.tsv previously graded this code U (0 observations -- Groen's print leaves the subject out at 5549 PS1)	<roidespagne> NULL ? d e
+4610	p3_L13	2	135	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	roidespagne <NULL> ? d e s
+4610	p3_L13	17	134	? U	NULL	C	NULL	names.tsv: empty in 12 of 12 aligned observations, 0 contradicting	e r ? l <NULL> NULL d
+4610	p3_L13	18	138	? U	NULL	C	NULL	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	r ? l NULL <NULL> d
 4610	p3_L14	10	131	? U	NULL	M	NULL	names.tsv: empty in 22 of 22 aligned observations, 0 contradicting	e t r e <NULL> NULL e s c
 4610	p3_L14	11	128	? U	NULL	M	NULL	names.tsv: NULL in 15 of 15 aligned observations (5810/5811/4503 vs Groen)	t r e NULL <NULL> e s c r
 4610	p3_L15	6	200	? U	herzogvonalba	C	word	Groen IV p.224 prints 'vom Herzog von Alba absondern' at 5797 p6 'von 200.122.132.142 abso-'	e e ? ? <herzogvonalba> ? NULL franckreich ?
@@ -129,6 +125,7 @@ letter	line	pos	code	old	new	grade	class	source	context_new
 4610	p3_L21	8	133	? U	NULL	C	NULL	names.tsv: empty in 9 of 9 aligned observations, 0 contradicting	o u r e <NULL> NULL d e ?
 4610	p3_L21	9	144	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	u r e NULL <NULL> d e ? ?
 4610	p3_L22	6	135	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	i t u r <NULL> f r e r
+4610	p3_L22	14	192	? U	roidespagne	H	word	4496 (WVO PDF p4) contemporary interlinear gloss "R. d'Espagne" over 192 (row1, '...124.192. pour...'), confirmed by two independent blind Sonnet passes (AX-GLOSS, axgloss/gloss_attest.tsv); names.tsv previously graded this code U (0 observations -- Groen's print leaves the subject out at 5549 PS1)	r e d u <roidespagne> ? e ? s
 4610	p3_L24	15	130	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	m a y ? <NULL> ?
 4610	p3_L26	4	144	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	b o n <NULL> ?
 4610	p3_L29	3	144	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	e r <NULL> ? z s e
@@ -138,8 +135,7 @@ letter	line	pos	code	old	new	grade	class	source	context_new
 4611	p1_L01	13	130	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	a d i e <NULL> NULL b s c
 4611	p1_L01	14	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	d i e NULL <NULL> b s c n
 4611	p1_L01	24	126	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	n d e ? <NULL>
-4611	p1_L02	7	123	l M	NULL	M	NULL	names.tsv: NULL in 13 of 13 aligned observations (5810/5811/4503 vs Groen)	e r e s <NULL> ? NULL ? l
-4611	p1_L02	9	134	? U	NULL	C	NULL	names.tsv: empty in 12 of 12 aligned observations, 0 contradicting	e s NULL ? <NULL> ? l u n
+4611	p1_L02	9	134	? U	NULL	C	NULL	names.tsv: empty in 12 of 12 aligned observations, 0 contradicting	e s l ? <NULL> ? l u n
 4611	p1_L03	8	129	? U	NULL	C	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	l l e ? <NULL> u e r s
 4611	p1_L03	25	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	u r g NULL <NULL>
 4611	p1_L04	21	130	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	? ? z a <NULL>
@@ -168,7 +164,6 @@ letter	line	pos	code	old	new	grade	class	source	context_new
 4611	p1_L16	9	143	? U	NULL	C	NULL	names.tsv: empty in 7 of 7 aligned observations, 0 contradicting	n d r e <NULL> c e l l
 4611	p1_L16	17	129	? U	NULL	C	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	l l e s <NULL> q u i NULL
 4611	p1_L16	21	130	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	NULL q u i <NULL> ? l u
-4611	p1_L17	2	136	uingt M	NULL	M	NULL	names.tsv: NULL in 8 of 8 aligned observations (5810/5811/4503 vs Groen)	y <NULL> s o n t
 4611	p1_L17	14	126	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	u e s ? <NULL> ? ? c r
 4611	p1_L18	5	144	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	d r e ? <NULL> c e u x
 4611	p1_L18	11	129	? U	NULL	C	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	e u x ? <NULL> n o u s
@@ -200,8 +195,8 @@ letter	line	pos	code	old	new	grade	class	source	context_new
 4611	p1_L38	8	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	a n d e <NULL> NULL ? q u
 4611	p1_L38	9	135	? U	NULL	M	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	n d e NULL <NULL> ? q u i
 4611	p1_L38	19	134	? U	NULL	C	NULL	names.tsv: empty in 12 of 12 aligned observations, 0 contradicting	q u i l <NULL> t
-4611	p1_L39	18	123	l M	NULL	M	NULL	names.tsv: NULL in 13 of 13 aligned observations (5810/5811/4503 vs Groen)	n s e ? <NULL> ?
-4611	p2_L01	12	129	? U	NULL	C	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	o i t ? <NULL> ? b e a
+4611	p2_L01	12	129	? U	NULL	C	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	o i t ? <NULL> hollande b e a
+4611	p2_L01	14	221	? U	hollande	H	word	4496 (WVO PDF p4) contemporary interlinear gloss 'Hollando' over 221, repeated 3x on the same page always over 221, confirmed by two independent blind Sonnet passes (AX-GLOSS, axgloss/gloss_attest.tsv); corroborated unglossed in 4614 p1 'tiré de la Haye en 221' (context: withdrew from The Hague to Holland)	i t ? NULL <hollande> b e a b
 4611	p2_L01	24	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	o u p x <NULL>
 4611	p2_L02	10	200	? U	herzogvonalba	C	word	Groen IV p.224 prints 'vom Herzog von Alba absondern' at 5797 p6 'von 200.122.132.142 abso-'	r c e s <herzogvonalba> l e c a
 4611	p2_L02	24	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	i n e ? <NULL>
@@ -215,6 +210,7 @@ letter	line	pos	code	old	new	grade	class	source	context_new
 4611	p2_L06	16	138	? U	NULL	C	NULL	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	e u r s <NULL> d e s p
 4611	p2_L07	3	130	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	n s <NULL> u e r s
 4611	p2_L08	18	129	? U	NULL	C	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	o n t ? <NULL> ? g u
+4611	p2_L10	3	221	? U	hollande	H	word	4496 (WVO PDF p4) contemporary interlinear gloss 'Hollando' over 221, repeated 3x on the same page always over 221, confirmed by two independent blind Sonnet passes (AX-GLOSS, axgloss/gloss_attest.tsv); corroborated unglossed in 4614 p1 'tiré de la Haye en 221' (context: withdrew from The Hague to Holland)	y <hollande> u e r s
 4611	p2_L13	12	127	? U	NULL	M	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	n c e ? <NULL> ? q u c
 4611	p2_L14	8	127	? U	NULL	M	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	l q u e <NULL> f o n d
 4611	p2_L17	14	135	? U	NULL	M	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	a i n ? <NULL> a u ? herzogvonalba
@@ -228,23 +224,18 @@ letter	line	pos	code	old	new	grade	class	source	context_new
 4611	p2_L26	13	124	? U	NULL	M	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	y u e r <NULL> ? z p i
 4611	p2_L30	3	130	? U	NULL	M	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	a u <NULL> f a i c
 4611	p2_L30	24	134	? U	NULL	M	NULL	names.tsv: empty in 12 of 12 aligned observations, 0 contradicting	m e n t <NULL>
-4611	p2_L31	2	123	l M	NULL	M	NULL	names.tsv: NULL in 13 of 13 aligned observations (5810/5811/4503 vs Groen)	? <NULL> a t d f
 4611	p2_L31	11	129	? U	NULL	M	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	i o n s <NULL> NULL
 4611	p2_L31	12	137	? U	NULL	M	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	o n s NULL <NULL>
-4611	p2_L32	2	123	l M	NULL	M	NULL	names.tsv: NULL in 13 of 13 aligned observations (5810/5811/4503 vs Groen)	? <NULL> e t d f
 4611	p3_L01	11	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	u i r e <NULL> NULL l e s
 4611	p3_L01	12	138	? U	NULL	C	NULL	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	i r e NULL <NULL> l e s o
 4616	p1_L06	20	131	? U	NULL	C	NULL	names.tsv: empty in 22 of 22 aligned observations, 0 contradicting	o o u u <NULL> ?
-4616	p1_L12	7	123	l M	NULL	M	NULL	names.tsv: NULL in 13 of 13 aligned observations (5810/5811/4503 vs Groen)	o m m e <NULL> u c a n
-5797	p5_spot5	2	131	? U	NULL	C	NULL	names.tsv: empty in 22 of 22 aligned observations, 0 contradicting	<NULL> NULL ?
-5797	p5_spot5	3	123	l M	NULL	M	NULL	names.tsv: NULL in 13 of 13 aligned observations (5810/5811/4503 vs Groen)	NULL <NULL> ?
+5797	p5_spot5	2	131	? U	NULL	C	NULL	names.tsv: empty in 22 of 22 aligned observations, 0 contradicting	<NULL> l ?
 5797	p5_spot3	2	154	? U	herzogvonsachsen	C	word	Groen IV pp.223-224 prints 'Bey dem Herzog von Sachsen und' at 5797 p5 'Bey 154.124.144.134 und'	<herzogvonsachsen> NULL NULL NULL landgraf
 5797	p5_spot3	3	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	herzogvonsachsen <NULL> NULL NULL landgraf NULL
-5797	p5_spot3	4	144	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	herzogvonsachsen NULL <NULL> NULL landgraf NULL NULL
-5797	p5_spot3	5	134	? U	NULL	C	NULL	names.tsv: empty in 12 of 12 aligned observations, 0 contradicting	herzogvonsachsen NULL NULL <NULL> landgraf NULL NULL ?
-5797	p5_spot3	7	161	? U	landgraf	H	word	5550 leaf 2 contemporary interlinear gloss 'Lantgrave' over 161 (run p2-11, bey 153.161 und)	herzogvonsachsen NULL NULL NULL <landgraf> NULL NULL ?
-5797	p5_spot3	8	126	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	NULL NULL NULL landgraf <NULL> NULL ?
-5797	p5_spot3	9	136	uingt M	NULL	M	NULL	names.tsv: NULL in 8 of 8 aligned observations (5810/5811/4503 vs Groen)	NULL NULL landgraf NULL <NULL> ?
+5797	p5_spot3	4	144	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	herzogvonsachsen NULL <NULL> NULL landgraf NULL uingt
+5797	p5_spot3	5	134	? U	NULL	C	NULL	names.tsv: empty in 12 of 12 aligned observations, 0 contradicting	herzogvonsachsen NULL NULL <NULL> landgraf NULL uingt ?
+5797	p5_spot3	7	161	? U	landgraf	H	word	5550 leaf 2 contemporary interlinear gloss 'Lantgrave' over 161 (run p2-11, bey 153.161 und)	herzogvonsachsen NULL NULL NULL <landgraf> NULL uingt ?
+5797	p5_spot3	8	126	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	NULL NULL NULL landgraf <NULL> uingt ?
 5797	p6_control_abso	4	200	? U	herzogvonalba	M	word	Groen IV p.224 prints 'vom Herzog von Alba absondern' at 5797 p6 'von 200.122.132.142 abso-'	<herzogvonalba> NULL NULL ? a
 5797	p7_spot2	1	153	? U	pfaltzgraf	H	word	5550 leaf 2 contemporary interlinear gloss 'Palsgrave' over 153 (x2, runs p2-5, p2-11)	<pfaltzgraf> ? NULL
 5797	p7_spot2	3	137	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	pfaltzgraf ? <NULL>

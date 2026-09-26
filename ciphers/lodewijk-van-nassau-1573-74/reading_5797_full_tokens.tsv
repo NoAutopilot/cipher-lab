@@ -1,6 +1,6 @@
 line	idx	sign	value	grade
 p5_spot5	2	131	NULL	C
-p5_spot5	3	123	NULL	M
+p5_spot5	3	123	l	M
 p5_spot5	4	173	?	U
 p5_spot3	2	154	herzogvonsachsen	C
 p5_spot3	3	124	NULL	C
@@ -8,7 +8,7 @@ p5_spot3	4	144	NULL	C
 p5_spot3	5	134	NULL	C
 p5_spot3	7	161	landgraf	H
 p5_spot3	8	126	NULL	C
-p5_spot3	9	136	NULL	M
+p5_spot3	9	136	uingt	M
 p5_spot3	10	146	?	U
 p6_spot4	1	172	?	U
 p6_spot4	2	58	z	I

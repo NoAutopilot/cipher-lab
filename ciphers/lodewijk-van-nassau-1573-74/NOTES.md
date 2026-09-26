@@ -1296,3 +1296,114 @@ PDFs), >=2s apart, descriptive UA, all HTTP 200. No other hosts.
 Files: `axgloss/gloss_attest.tsv`, `images_wv2/crops_gloss/{04496_p4_hollande_zeelande.png,
 04496_p4_respagne_192.png,05557_p3_grafvonholland_93.png,05557_p2_jar_94.png,05557_p2_kein_133_vorrad.png}`.
 Not touched: names.tsv, key.tsv, key_full.tsv (AX-NAMES2's, per the brief).
+
+## AX-MERGE: key_full v2 (26 Sept 2026, LANE AX)
+
+Worker AX-MERGE (Sonnet), brief `.claude/briefs/runs/2026-09-26-lane-ax-merge.md`, started 02:27 UTC (clock read).
+**(0) Intake gate:** `python3 tools/intake_gate_check.py lodewijk-van-nassau-1573-74` -> `lodewijk-van-nassau-1573-74:
+partial (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0.
+
+**Orchestrator's decision (02:26 UTC 26 Sept 2026), verbatim:** "(1) AX-NAMES2's class-(c) flag is upheld: on the
+known-plaintext pair 4613/4615 code 123 stands for l and 136 for vingt, so key_full does NOT override them to NULL;
+they keep key.tsv's values at grade M with a note 'NULL in 13/13 (123) and 8/8 (136) aligned observations in
+5810/5811 -- dual use or aligner bias, unresolved'. 128 ('?' in key.tsv) goes to NULL at M. (2) Add from AX-GLOSS,
+grade H (4496's contemporary interlinear gloss): 192 = Roi d'Espagne, 221 = Hollande."
+
+**(1) key_full.tsv v2** (`axnames/build_key_full.py [--check]`, edited, key_full.tsv never hand-edited). Net effect
+vs v1: same 161 rows (139 key.tsv + 22 net new), but 123/136 revert to key.tsv's own value at M (with the new note)
+instead of NULL-M, and 192/221 join as new H rows (replacing what would otherwise have been 2 of the 13-row NULL-b
+class -- they were never eligible for that class since 192 is names.tsv grade U and 221 has no names.tsv row at
+all, so both needed a new licence path, `AXGLOSS_H`, checked against `axgloss/gloss_attest.tsv`'s `confidence`
+column instead of names.tsv). Build output: `H 8 (153,161,171,202,336,350,192,221) C 3 (154,200,223) NULL 13
+(124,126,127,129,130,131,133,134,135,137,138,143,144) conflict 1 (128) conflict_kept_M 2 (123,136)`.
+- 123: `l`, M, note "AX-MERGE orchestrator decision (02:26 UTC 26 Sept 2026): class-(c) flag upheld, key.tsv value
+  kept (...); NULL in 13/13 (123) and 8/8 (136) aligned observations in 5810/5811 -- dual use or aligner bias,
+  unresolved".
+- 136: `uingt`, M, same note.
+- 128: unchanged from v1 -- `NULL`, M, AX-NAMES2's class-(c) override stands (key.tsv's `?` was never a settled
+  value; 128 is not part of the orchestrator's upheld pair).
+- 192: `roidespagne`, H, source "4496 (WVO PDF p4) contemporary interlinear gloss \"R. d'Espagne\" over 192 ...;
+  names.tsv previously graded this code U (0 observations -- Groen's print leaves the subject out at 5549 PS1)".
+- 221: `hollande`, H, source "4496 (WVO PDF p4) contemporary interlinear gloss 'Hollando' over 221 (x3) ...;
+  corroborated unglossed in 4614 p1 'tiré de la Haye en 221'".
+`python3 axnames/build_key_full.py --check` -> `key_full.tsv up to date`.
+
+**(2) Known-answer regression check**, re-run: `python3 axnames/compare_full.py decode.json ciphertext_sib.tsv
+--list` -> `axnames/regress_sib.out`:
+```
+ciphertext_sib.tsv: tokens 1107, C under key.tsv 1086, regressions 0, changed 1, U 1 -> 0
+4613_L28	15	128	? U -> NULL M
+```
+**0 regressions, and only 1 token changed (128) instead of v1's 5** -- confirms the orchestrator's decision removed
+exactly the two AX-NAMES2 changes it named (123 l M -> NULL M x3, 136 uingt M -> NULL M) by no longer making them at
+all; 128 is the only remaining override, as directed.
+
+**(3) Decodes**, `tools/decode_key.py --check` "reading up to date" on all four:
+
+| letter | U key.tsv -> key_full v2 | U v1 -> v2 (this pass) | grades under key_full v2 |
+|---|---|---|---|
+| 4610 | 288 -> 155 | 162 -> 155 (-7: 192 x6, 221 x1 now H) | C 1203, H 9, I 58, M 120, U 155 |
+| 4611 | 227 -> 131 | 133 -> 131 (-2: 221 x2 now H) | C 913, H 2, I 71, M 276, U 131 |
+| 4616 | 26 -> 25 | 25 -> 25 (no 192/221 occurrences) | C 208, I 1, M 27, U 25 |
+| 5797 (spots file) | 31 -> 12 | 12 -> 12 (no 192/221 occurrences; only 123/136 string content changed) | H 2, C 15, M 41, I 3, U 12 |
+
+192 and 221 do not co-occur in 5797, so its letter-level grade counts (H/C/M/I/U) are unchanged from v1; only the
+decoded *string* changed at the two spots that use 123/136 (below). 221 appears once in 4610 and twice in 4611;
+192 appears 6 times in 4610 and not at all in 4611/4616/5797 (`grep`-counted directly against the regenerated
+`reading_<n>_full_tokens.tsv` files).
+
+**(4) 5797 spots against Groen's frame, the two rows this pass changed** (full 7-row table in AX-NAMES2 above;
+only these two differ from v1 -- neither 192 nor 221 occurs in 5797, so nothing in this table involves them):
+
+| spot | decoded under key_full v2 | v1 had | Groen's printed frame | gap filled? |
+|---|---|---|---|---|
+| p5_spot5 | ist [131 . C][123 l, M][173 U] gestern | 123 read as null (.) | "ist gestern zue ghen gezogen" | no (173 still has no row; 'l' does not close Groen's gap either) |
+| p5_spot3 | Bey [154 Herzog von Sachsen, C] [124 . 144 . 134 .] und [161 Landgraf, H] [126 . C][136 uingt, M][146 U] ist | 136 read as null (.) | "Bey dem Herzog von Sachsen und ist [w]illens" | yes (unchanged): 161 Landgraf, H; 'uingt' (vingt, twenty) is *extra* cipher content Groen's clear print does not carry at this spot, consistent with the orchestrator's "dual use or aligner bias, unresolved" caveat -- not treated as a second gap fill |
+
+**Spots with a value: still 2 of 6** (unchanged from v1 -- the count is about which of Groen's *unprinted* passages
+now have a word, and 123/136 do not sit in one of those six gaps).
+
+**(5) revisions_for_audit.tsv v2** (`axnames/revisions.py [--check]`), 249 rows (was 258 in v1): `4610: changed 133
+(word/name 11, NULL 122), U 288 -> 155`; `4611: changed 96 (word/name 8, NULL 88), U 227 -> 131`; `4616: changed 1
+(word/name 0, NULL 1), U 26 -> 25`; `5797: changed 19 (word/name 4, NULL 15), U 31 -> 12`. `--check` confirms up to
+date. I did not edit AUDIT.md or SECOND-OPINIONS-QUEUE.tsv (no row filed there yet for this target).
+
+**(6) Judge**, re-run on the regenerated 5797 full reading (2-token string change from v1):
+```
+python3 tools/judge_plaintext.py specs/lodewijk-5797.json --file ciphers/lodewijk-van-nassau-1573-74/reading_5797_full.txt
+FAIL language: score=-1.455, null_p99=-1.627, real_p05=-0.459, real_median=-0.428, mode=both, N=314
+FAIL words: cover=0.344, min=0.5, real_text_median_cover=0.758
+FAIL - lodewijk-5797 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+Essentially unchanged from v1 (-1.435, N=308); still below judge length and still disconnected clusters (AX-NAMES2's
+caveat above applies unchanged). No spec exists for 4610/4611/4616/the jan-van-nassau 5549 postscript (below); not
+run there per rule 7's own conditional ("where a spec exists").
+
+**(7) 5549 postscript (jan-van-nassau-1572-75), read-only use of key_full.tsv.** New
+`ciphers/jan-van-nassau-1572-75/decode_5549ps_full.json` decodes that target's `ciphertext_5549_ps.tsv` (the
+already-established J5S postscript stretch, PS1-PS26) with `../lodewijk-van-nassau-1573-74/key_full.tsv` instead of
+its own `key_5549.tsv` copy of plain key.tsv -- see that target's own NOTES.md section for the result and the
+intake-gate flag. **Where 192 now reads:** the brief's "Groen Suppl. p.146 prints '121. 133. 192.' as bare numerals
+at PS1" conflates two adjacent but distinct numeral groups on the same page. Checked directly against
+`ciphertext_5549.tsv` and `ciphertext_5549_ps.tsv`: Groen's own last-printed bare-numeral group, "121. 133. 192."
+(page 146, right context "begert hefftig von E.G. allezeit zeittung"), is **run 61 of the main body**
+(`ciphertext_5549.tsv` rows 592-594), which J5S (24 Sept 2026, that target's NOTES.md) classes as the
+"verendertte Instruction oder Ciffer" -- a *different, unrecovered* key, explicitly tested and rejected against
+Lodewijk's table ("not Lodewijk's table (no rotation reads)"). **192 therefore cannot be read with key_full here**:
+doing so would apply this circle's WVO 1574 table to a numeral that the repo's own prior work places outside it.
+The actual `PS1` row (the first row of the *separate*, Lodewijk-table postscript stretch that follows run 61) holds
+codes **127, 133** -- not 192 -- both of which resolve to NULL at grade C under key_full v2 (class-b, unchanged
+from what key.tsv/key_5549.tsv already gave them, since 123/128/136/192/221 do not include either code). No 192
+occurrence exists anywhere in `ciphertext_5549_ps.tsv` (checked by direct grep); 221 does occur there once (`PS21`
+pos 4), newly reading `hollande` (H) under key_full v2 -- see the jan-van-nassau NOTES.md section for the full
+before/after. Flag for the orchestrator: the brief's premise about where 192 sits needs correcting to "run 61 of
+the body, not PS1" if this comes up again.
+
+**Requests:** none (disk only). No subagents. Files: `key_full.tsv`, `axnames/build_key_full.py`,
+`axnames/regress_sib.out`, `revisions_for_audit.tsv`, `decode_{5797,4610,4611,4616}_full.json` (config text
+unchanged, only the reading they point at is regenerated), `reading_{5797,4610,4611,4616}_full{.txt,_tokens.tsv}`.
+Not touched: key.tsv, names.tsv, AUDIT.md, SECOND-OPINIONS-QUEUE.tsv. Not regenerated (out of this brief's file
+list, now stale relative to v2, flagged for whoever next touches them): `axnames/{sanity_5810.out,sanity_5811.out,
+sanity_4503.out,still_unread.tsv,null_raw.tsv,falsenull_diag.out}` -- none of their headline numbers depend on
+123/128/136/192/221 (5810/5811/4503 don't contain 192/221 either, per the same occurrence check), but they were
+built against key_full v1 and should be re-run before being cited again. Novelty not classified (rule 10).

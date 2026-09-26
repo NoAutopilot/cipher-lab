@@ -1120,3 +1120,49 @@ Elector Friedrich III of the Palatinate (Volker Press, BMGN 99 (1984) p.691, cit
 pp.105-111; Christoph of Württemberg died in 1568). The WVO quotation at line 782 is left as the catalogue prints it;
 read every paraphrase of it above as "Pfalzgraf Christoph". No reading, grade or class depends on this. See
 second-opinions/CHECK-SO-NASSAU-5551.md row 8.
+
+## AX-MERGE: 5549 postscript under lodewijk-van-nassau's key_full v2 (26 Sept 2026, LANE AX)
+
+Worker AX-MERGE (Sonnet), brief `.claude/briefs/runs/2026-09-26-lane-ax-merge.md` (job named this target only for
+one small addition; the main job is `ciphers/lodewijk-van-nassau-1573-74`'s NOTES.md AX-MERGE section, read that
+first). **Intake gate:** `python3 tools/intake_gate_check.py jan-van-nassau-1572-75` -> `jan-van-nassau-1572-75:
+open (line 1) with no standard-edition citation (page number or full-text-search phrase) within 6 lines -- CLAUDE.md's
+Pipeline intake gate says this must read blocked instead`, **exit 1**. Flagging per COMMON rule 13 rather than
+silently proceeding: this file's own top verdict line does not carry a page-or-full-text citation in the mechanical
+check's 6-line window, even though the 5549 letter this section touches was extensively check-solved with page
+citations further down (line 406, "Fetched Groen, *Archives*, Supplément, Lettre 45, pp.140-148, direct") and its
+postscript stretch (`ciphertext_5549_ps.tsv`, PS1-PS26) already has an established, cited reading (J5S, 24 Sept
+2026, `reading_5549_ps.txt`, agrees with Groen's clear print of pp.146-148 on nine named phrases). What follows is
+not new transcription or cryptanalysis: it re-decodes that same already-licensed stretch with a richer, already-
+gated key table (key_full.tsv, gated by AX-NAMES2/AX-MERGE in the sibling target), the same operation
+`decode_5549.json`/`key_5549.tsv` already performs with the plainer key.tsv. Flag for the orchestrator: either move
+a page citation into NOTES.md's first six lines for this target, or treat 5549 specifically (not the whole folder)
+as already check-solved via the J5S citation on record.
+
+**New `decode_5549ps_full.json`** (target `ciphers/jan-van-nassau-1572-75`): same job as `decode_5549.json` --
+`ciphertext_5549_ps.tsv`, style concat, clear_prefix `=` -- but `"key": "../lodewijk-van-nassau-1573-74/key_full.tsv"`
+(read-only cross-target reference, resolved by `tools/decode_key.py`'s `os.path.join(target, key_path)`; nothing in
+the lodewijk-van-nassau-1573-74 folder is written from here) instead of this folder's own `key_5549.tsv` copy of
+plain key.tsv. Output `reading_5549_ps_full.txt` / `_tokens.tsv`; `--check` -> "reading up to date".
+
+**Result:** `tokens 226: C 186, H 6, I 13, M 8, U 13` (was, under `key_5549.tsv`/plain key.tsv: `C 163, H 0, I 13,
+M 6, U 44`) -- U drops from 44 to 13, C rises from 163 to 186, and 6 tokens now read H (153 pfaltzgraf x1, 202
+franckreich x1, 336 fussvolck x3, **221 hollande x1** at `PS21` pos 4). This is the same key_full v2 the sibling
+target's AX-MERGE section built; nothing here was re-gated independently.
+
+**Where 192 now reads: it does not occur in this file at all.** The brief that set up this step described Groen's
+own last bare-numeral group, "121. 133. 192." (page 146), as sitting "at PS1" -- checked directly against both
+ciphertext files and this is not correct. That numeral group is **run 61 of the main body**
+(`ciphertext_5549.tsv` rows 592-594, `both`-graded against Groen's print, i.e. an agreed transcription), which this
+target's own J5S section (24 Sept 2026) places in the letter's "verendertte Instruction oder Ciffer" -- a
+*different, unrecovered* key that J5S explicitly tested against Lodewijk's table and rejected ("not Lodewijk's
+table (no rotation reads)"). Applying key_full.tsv (Lodewijk's WVO 1574 table) to that run would not be licensed
+by anything on record, so it was not done. The row actually labelled `PS1` in `ciphertext_5549_ps.tsv` (the first
+row of the *separate* postscript stretch, which J5S did place in Lodewijk's table) holds codes **127** and **133**,
+not 192; both were NULL/U under plain key.tsv and are now **NULL at grade C** under key_full v2 (class-b: >=4 empty,
+0 contradicting observations in names.tsv), same conclusion, better-grounded grade.
+
+**Requests:** none (disk only). No subagents. Files: `decode_5549ps_full.json`, `reading_5549_ps_full.txt`,
+`reading_5549_ps_full_tokens.tsv`, this NOTES.md section. Not touched: `ciphertext_5549.tsv`, `ciphertext_5549_ps.tsv`,
+`key_5549.tsv`, `decode_5549.json`, `reading_5549_ps.txt` (the key.tsv-only reading, unchanged), AUDIT.md. Novelty
+not classified (rule 10); status line unchanged (`open`, this folder's per-letter status, per the flag above).

@@ -121,7 +121,7 @@ code	value	grade	source	note
 120	m	C	aligned 4613/4615	matches plaintext 2x of 2
 121	NULL	C	aligned 4613/4615 (r18/words.tsv)	4615 between words, 8x, no plaintext letters (traicte 121 avecq; chemin 121 entre; grande 121 esperance)
 122	NULL	C	aligned 4613/4615 (r18/words.tsv)	4615 L12 droict 122 vers; L22 faisable 122
-123	NULL	M	names.tsv: NULL in 13 of 13 aligned observations (5810/5811/4503 vs Groen)	AX-NAMES2 re-gate class (c): overrides key.tsv 'l' (M) -- 4613 L18 qui-123-z = qu'ilz, L29 cart-i-123-z = Cartil(la); but 4615 L13 after clear 'adviser' 123 132 reads as null; key.tsv unchanged
+123	l	M	aligned 4613/4615 (r18/words.tsv)	AX-MERGE orchestrator decision (02:26 UTC 26 Sept 2026): class-(c) flag upheld, key.tsv value kept (4613 L18 qui-123-z = qu'ilz, L29 cart-i-123-z = Cartil(la); but 4615 L13 after clear 'adviser' 123 132 reads as null); NULL in 13/13 (123) and 8/8 (136) aligned observations in 5810/5811 -- dual use or aligner bias, unresolved
 124	NULL	C	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	AX-NAMES2 re-gate class (b): >= 4 empty observations, false-null rate about 0.18^k (axnames/falsenull_diag.out)
 126	NULL	C	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	AX-NAMES2 re-gate class (b): >= 4 empty observations, false-null rate about 0.18^k (axnames/falsenull_diag.out)
 127	NULL	C	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	AX-NAMES2 re-gate class (b): >= 4 empty observations, false-null rate about 0.18^k (axnames/falsenull_diag.out)
@@ -133,7 +133,7 @@ code	value	grade	source	note
 133	NULL	C	names.tsv: empty in 9 of 9 aligned observations, 0 contradicting	AX-NAMES2 re-gate class (b): >= 4 empty observations, false-null rate about 0.18^k (axnames/falsenull_diag.out)
 134	NULL	C	names.tsv: empty in 12 of 12 aligned observations, 0 contradicting	AX-NAMES2 re-gate class (b): >= 4 empty observations, false-null rate about 0.18^k (axnames/falsenull_diag.out)
 135	NULL	C	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	AX-NAMES2 re-gate class (b): >= 4 empty observations, false-null rate about 0.18^k (axnames/falsenull_diag.out)
-136	NULL	M	names.tsv: NULL in 8 of 8 aligned observations (5810/5811/4503 vs Groen)	AX-NAMES2 re-gate class (c): overrides key.tsv 'uingt' (M) -- 4613 L04 accorde 136 [1] demy: 'vingt' in the decipherment; the following 1 (n) is not accounted for; key.tsv unchanged
+136	uingt	M	aligned 4613/4615 (r18/words.tsv)	AX-MERGE orchestrator decision (02:26 UTC 26 Sept 2026): class-(c) flag upheld, key.tsv value kept (4613 L04 accorde 136 [1] demy: 'vingt' in the decipherment; the following 1 (n) is not accounted for); NULL in 13/13 (123) and 8/8 (136) aligned observations in 5810/5811 -- dual use or aligner bias, unresolved
 137	NULL	C	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	AX-NAMES2 re-gate class (b): >= 4 empty observations, false-null rate about 0.18^k (axnames/falsenull_diag.out)
 138	NULL	C	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	AX-NAMES2 re-gate class (b): >= 4 empty observations, false-null rate about 0.18^k (axnames/falsenull_diag.out)
 141	NULL	C	aligned 4613/4615 (r18/words.tsv)	4615 L02 337 121 141 mais: no plaintext between Reystres and mais
@@ -143,9 +143,11 @@ code	value	grade	source	note
 154	herzogvonsachsen	C	Groen IV pp.223-224 prints 'Bey dem Herzog von Sachsen und' at 5797 p5 'Bey 154.124.144.134 und'	AX-NAMES2 re-gate class (a): printed by Groen at this very cluster (rule 4 C)
 161	landgraf	H	5550 leaf 2 contemporary interlinear gloss 'Lantgrave' over 161 (run p2-11, bey 153.161 und)	AX-NAMES2 re-gate class (a): contemporary gloss, key-source reading (rule 4 H)
 171	prinzzuoranien	H	5550 leaf 2 contemporary interlinear gloss 'der Prince zu Oranien helfe' over 171.141 h-e-l-f-e	AX-NAMES2 re-gate class (a): contemporary gloss, key-source reading (rule 4 H)
+192	roidespagne	H	4496 (WVO PDF p4) contemporary interlinear gloss "R. d'Espagne" over 192 (row1, '...124.192. pour...'), confirmed by two independent blind Sonnet passes (AX-GLOSS, axgloss/gloss_attest.tsv); names.tsv previously graded this code U (0 observations -- Groen's print leaves the subject out at 5549 PS1)	AX-MERGE orchestrator decision (02:26 UTC 26 Sept 2026): AX-GLOSS grade H, 4496's contemporary interlinear gloss (rule 4 H)
 200	herzogvonalba	C	Groen IV p.224 prints 'vom Herzog von Alba absondern' at 5797 p6 'von 200.122.132.142 abso-'	AX-NAMES2 re-gate class (a): printed by Groen at this very cluster (rule 4 C)
 202	franckreich	H	5550 contemporary interlinear gloss over 202 (x4, runs p1-1, p2-3, p2-9, p2-15)	AX-NAMES2 re-gate class (a): contemporary gloss, key-source reading (rule 4 H)
 218	tillemont	M	aligned 4613/4615 (r18/words.tsv)	4613 L11 de la 312 218 pour: decipherment 'Tillemont, l'aultre de Middelbuerch'; the cipher has one sign
+221	hollande	H	4496 (WVO PDF p4) contemporary interlinear gloss 'Hollando' over 221, repeated 3x on the same page always over 221, confirmed by two independent blind Sonnet passes (AX-GLOSS, axgloss/gloss_attest.tsv); corroborated unglossed in 4614 p1 'tiré de la Haye en 221' (context: withdrew from The Hague to Holland)	AX-MERGE orchestrator decision (02:26 UTC 26 Sept 2026): AX-GLOSS grade H, 4496's contemporary interlinear gloss (rule 4 H)
 223	harlem	C	aligned to Groen IV CDLXVIII (5810) print, 3 of 3 observations agree	AX-NAMES2 re-gate class (a): aligner-only word code, >= 2 agreeing observations
 270	bommel	C	aligned 4613/4615 (r18/words.tsv)	4615 L13 uers 270 = vers Bommel
 272	nyeumegen	C	aligned 4613/4615 (r18/words.tsv)	4615 L12 entre Graue et 272; L21 emporter 272

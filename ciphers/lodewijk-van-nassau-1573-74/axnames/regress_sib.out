@@ -1,6 +1,2 @@
-ciphertext_sib.tsv: tokens 1107, C under key.tsv 1086, regressions 0, changed 5, U 1 -> 0
-4613_L04	21	136	uingt M -> NULL M
-4613_L18	14	123	l M -> NULL M
+ciphertext_sib.tsv: tokens 1107, C under key.tsv 1086, regressions 0, changed 1, U 1 -> 0
 4613_L28	15	128	? U -> NULL M
-4613_L29	2	123	l M -> NULL M
-4615_L13	16	123	l M -> NULL M
