@@ -829,3 +829,36 @@ this pass could not move it). Job stopped after this item per its brief: item 2 
 (`sim_cryptologia_1981-04_5_2`) hard-failed the borrow step itself (HTTP 400, print-disabled tier, not this
 target's problem) -- see CLAUDE.md's Internet Archive paragraph, dated 25 Sept 2026, for the full finding.
 Items 3-5 of that job (hamilton-1650, dorabella-1897, koehler-1944/Farago) were not attempted.
+
+## Local runner L20 (26 Sept 2026)
+
+LOCAL-QUEUE.tsv row L20 (ASKS row 59, NEAR.md row step (3)) asked the owner's desk runner to borrow
+`archive.org/details/correspondancede0006jose` for one hour and read p.647 and its index entries: does the
+volume quote, summarise or merely list the 6 June 1648 instruction to the abbé de Mercy?
+
+**Answer: negative -- p.647 does not quote, summarise or discuss the target instruction at all.** The runner's
+full transcript (PR 24, closed without merge; saved as `local-runner/L20-2026-09-26.md`):
+
+Printed p.647 (reader position 662/943) is entry 1499, dated Munster, 11 June 1648, Peñaranda to Philip IV --
+a different letter, five days after the target's 6 June 1648 date, and not by or to Mercy. Its French
+editorial summary reports Brun's correspondence with Schwartzemberg and possession of a cipher, then makes the
+same connection for Mercy: "[Mercy] a été envoyé par Léopold-Guillaume pour traiter avec la duchesse de
+Chevreuse" -- a note about Mercy's own mission (negotiating with the duchesse de Chevreuse on the Archduke's
+behalf), not a quotation, summary or listing of the 6 June instruction. Its own source citation is Documentos
+Ineditos vol. 84, p.258, not this volume.
+
+The index (printed p.901) lists "MERCY (L'abbé de), 647, 15, 20" -- but 15 and 20 there are marginal line
+references *within* p.647's own entry, not separate pages; the runner checked printed pp.15 and 20 directly
+regardless and found they concern 1599, unrelated. So the index's only real hit for Mercy is the same p.647
+entry above, which is not the target instruction.
+
+This settles the question ASKS row 59 raised as cleanly as a negative can: the one edition our search
+identified as citing "Mercy, 647" prints no trace of the 6 June 1648 Barneton instruction at that page, its
+index has no other page for Mercy, and the passage that does mention him is about an unrelated later letter.
+It does not move the V6-MERCY2 N3 classification (this is a "not printed here" result, not a fresh search of
+new sources), and it does not supply a period-key or sender crib. Outreach gate 2 for this target (a second
+adversarial audit plus JSTOR rows) still needs the JSTOR-QUEUE rows 80-83 answer before any outward note.
+
+Gate: `tools/lq_answer_check.py ciphers/espagnol142-mercy-1648/local-runner/L20-2026-09-26.md --row L20` exits
+0 (kind `ia-reader` -- a content read of a page already in hand, no catalogue-ladder rungs required; see
+`tools/lq_answer_check.py`'s kind-awareness fix, 26 Sept 2026, UPDATES.md).
