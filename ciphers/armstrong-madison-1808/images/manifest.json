@@ -1,0 +1,42 @@
+{
+  "source": "NARA RG 59, General Records of the Department of State, Despatches from Diplomatic Officers, Despatches from U.S. Ministers to France, 1789-1906 (microfilm publication M34), roll 14, item NAID 188671566 (\"Jan. 22, 1808-Sept. 14, 1810\")",
+  "route": "catalog.archives.gov public IIIF Image API v3 (no key needed): item page discovered via the site's own React search UI (headless Chromium, tools/browser_fetch.js; plain curl to catalog.archives.gov/search or /proxy/records/search returns only the app shell), image URLs read from the item page's embedded IIIF manifest data. Fetched at each frame's own native resolution via .../full/<w>,<h>/0/default.jpg (info.json gives width/height/maxArea per frame; requesting a size wider than a frame's own native width, e.g. a fixed 3300px for all four, silently returns the site's HTML error shell at HTTP 200 for the frames narrower than that -- fetch each frame at its own info.json dimensions, not a fixed guess).",
+  "fetched": "2026-09-26",
+  "images": [
+    {
+      "file": "M34-014-0029.jpg",
+      "iiif_id": "lz/dc-metro/rg-059/603720/M34/M34-014/M34-014-0029.jpg",
+      "width": 3728,
+      "height": 3280,
+      "bytes": 353939,
+      "sha1": "e9eaf87a2acf8d9029a6ce5ef5e576f5a9522324"
+    },
+    {
+      "file": "M34-014-0030.jpg",
+      "iiif_id": "lz/dc-metro/rg-059/603720/M34/M34-014/M34-014-0030.jpg",
+      "width": 2096,
+      "height": 2624,
+      "bytes": 472546,
+      "sha1": "e6a63adb2eff52edfc5e8834020607ca6deabd6b",
+      "note": "dated 'Paris 20 feby 1808' in the header, matches the target letter"
+    },
+    {
+      "file": "M34-014-0031.jpg",
+      "iiif_id": "lz/dc-metro/rg-059/603720/M34/M34-014/M34-014-0031.jpg",
+      "width": 3968,
+      "height": 2576,
+      "bytes": 2675656,
+      "sha1": "02845fc9b42d3553025bbe8b7ec43848653e2a81",
+      "note": "crib_sources.md/NOTES.md: 'a cleaner copy of 30' per Founders"
+    },
+    {
+      "file": "M34-014-0032.jpg",
+      "iiif_id": "lz/dc-metro/rg-059/603720/M34/M34-014/M34-014-0032.jpg",
+      "width": 3968,
+      "height": 2608,
+      "bytes": 1180973,
+      "sha1": "6787a336f18821853b2514d606d9030195fc9e77"
+    }
+  ],
+  "not_fetched": "image 33 and other roll-14 frames outside the 29-32 range this brief names; the item has 664 images/1 file total"
+}

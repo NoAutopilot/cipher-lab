@@ -341,3 +341,45 @@ step is the NARA M34 roll 14 image check of the units digits (open item 4 above)
 Bourdeau's transcription of the Founders group list, and a systematic misreading of 2/3/5/9 would collapse it to a
 contiguous code. Requests this session: none (offline). Not done, per the brief: no decode to words, no family C
 tool.
+
+## ARM-IMG pass, 26 Sept 2026 (LANE ARM worker ARM-IMG) -- manuscript images of the 20 Feb 1808 letter fetched
+
+**Images found and fetched, `images/` + `images/manifest.json`.** Route 1 (Internet Archive advancedsearch for
+NARA microfilm M34, four query variants: bag-of-words and exact-phrase on "United States Ministers to France",
+"M34 microfilm state department", "Armstrong Madison despatches") returned 0 hits every time -- IA does not carry
+this NARA microfilm series; confirmed negative, not tried further. Route 2 (catalog.archives.gov): plain curl to
+`/search` and to the site's own `/proxy/records/search` and `/proxy/announcements` paths (read from the React
+bundle's `main.*.chunk.js`) returns only the client-rendered app shell at HTTP 200, never JSON -- the real search
+runs client-side against an internal API gateway not exposed as a plain public endpoint (`/api/v2/api-docs/` is
+a stock, unconfigured Swagger-UI install pointing at the petstore demo spec, not this API); this matches the
+Access playbook's existing note that `catalog.archives.gov`'s API v2 needs an `x-api-key` this environment does
+not have. **Route around it, not in the playbook table yet:** the same search works through a real headless
+browser (`tools/browser_fetch.js`), and the item page it renders embeds a genuine public **IIIF Image API v3**
+service with no key at all (`catalog.archives.gov/iiif/3/<url-encoded-object-path>/info.json` and
+`.../full/<w>,<h>/0/default.jpg`, plain curl, HTTP 200). Search `"Despatches from United States Ministers to
+France" 1808` (browser-rendered) surfaced the exact file unit: **NAID 188671566, "Jan. 22, 1808-Sept. 14, 1810",
+Record Group 59, Reel 14** (M34 roll 14), 664 images/1 file, under "File Unit: Despatches from U.S. Ministers to
+France, 1789-1906". Its rendered HTML lists every frame's IIIF object path directly
+(`lz/dc-metro/rg-059/603720/M34/M34-014/M34-014-NNNN.jpg`), confirming frames 0029-0032 exist (and 0033).
+
+Fetched all four frames named in the brief at each frame's own native resolution (read per-frame from its own
+`info.json`, not a fixed guess -- **gotcha found and worked around**: requesting a size wider than a given
+frame's native width does not 4xx, it silently returns the site's own HTML error shell at HTTP 200, same bytes
+as the "requested image could not be found" the item-page viewer itself shows for a bad thumbnail; caught by
+`file`-checking every download, not by the curl exit code or `-w` status alone): 0029 3728x3280 (354 KB), 0030
+2096x2624 (473 KB, header dated "Paris 20 feby 1808", matching the target letter directly), 0031 3968x2576
+(2.68 MB, "a cleaner copy of 30" per Founders/crib_sources.md), 0032 3968x2608 (1.18 MB). Total 4.5 MB, well
+under the 30 MB folder rule. Read 0030 directly (Read tool, not a subagent, per the brief's "do NOT transcribe"):
+digits and shorthand strokes are clearly legible at this resolution -- this is a real, checkable image, not a
+placeholder or a misfiled frame. No transcription or digit comparison against Bourdeau's table performed (out of
+scope for this job; the next job in the lane's queue).
+
+Requests this pass: archive.org 4 (advancedsearch, all negative). catalog.archives.gov: 2 plain-curl probes (app
+shell only) + `tools/browser_fetch.js` used 4 times (home/search x3, item page) + IIIF `info.json`/image fetches
+about 14 (well under the 40-request budget the brief set for this host; under archive.org's 20 and loc.gov's 20
+too -- loc.gov not used this pass, route 1/2 sufficed). No FamilySearch/Fold3/Ancestry attempt (route 4, paywalled
+by the brief's own instruction, not tried). No logins, no credentials touched. New host-route finding for the
+Access playbook table (not added to CLAUDE.md by this worker, which may not edit it -- flagged in ROOM.md for
+the lane orchestrator/parent): `catalog.archives.gov` serves plain, unauthenticated IIIF Image API v3 image
+downloads for digitized items, discoverable by rendering the item page with `tools/browser_fetch.js` even though
+its own JSON search/records API needs the (absent) `x-api-key`.
