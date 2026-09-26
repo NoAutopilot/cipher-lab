@@ -112,6 +112,7 @@ applied unchanged, and three named cycle-3 briefs written from it.
   applies if the first unit runs hotter). A lane orchestrator that recalibrates a rate this way adds the new
   precedent here in the same close-out pass that writes its STATUS.md handoff, rather than leaving it for a
   retrospective to notice a second time.
+  Cribs or context reading against a mostly-clear leaf with scattered code tokens, two blind passes plus reconcile: about USD 3.5 a leaf all in (malsburg-hessen-1636, bMALX, 26 Sept 2026), not the ~1.8/leaf a dense-leaf-shaped estimate gives (RETRO-2026-09-26h.md Q1, applied by the owner-account parent after LEARN5, 26 Sept).
 - **Run `print_check.py` on your own decoded phrases before posting "reading ready" (26 Sept 2026, V9-MOR,
   rah-morillo-1817 item 3).** A verifier finding the plaintext already in print through `tools/print_check.py`'s
   `ia-global` pass on the solver's own decoded phrases, when the solver never ran it, wastes the verifier's full
