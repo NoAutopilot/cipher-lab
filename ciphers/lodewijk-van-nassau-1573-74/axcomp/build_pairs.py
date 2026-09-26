@@ -102,7 +102,7 @@ def main(n):
         lo = ptr + max(0, int(0.5 * nnum) + nclr - 20)
         hi = min(len(L), ptr + int(3.0 * nnum) + nclr + 60 + len(a))
         d, st, en = semiglobal(a, L[lo:hi])
-        if d <= 0.3 * len(a):
+        if d <= 0.35 * len(a):
             cuts.append((s, e, lo + st, lo + en, d, a))
             ptr, last_tok = lo + en, e
     anchors = os.path.join(HERE, 'anchors_%s.tsv' % n)

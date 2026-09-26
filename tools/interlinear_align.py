@@ -24,12 +24,17 @@ alignment TSV records that as a repair.
 
     python3 tools/interlinear_align.py pairs DJVU FIRST LAST OUT_PAIRS.tsv
     python3 tools/interlinear_align.py align PAIRS.tsv OUT_ALIGN.tsv OUT_KEY.tsv [--floor N] [--clear-consumes]
+            [--prior KEY.tsv]
 
 --floor N: groups below N take at most one letter (default 100, Thurloe; 121 for the
 Nassau 1573-74 tables, where 1-120 are letters). --clear-consumes (26 Sept 2026, AX-COMP):
 a clear word written among the cipher groups takes its own span of the plain text, for a
 separate clear decipherment of a letter that mixes clear words with cipher (the Nassau
 letters), rather than Thurloe's interlinear lines, where the clear word is not repeated above.
+--prior KEY.tsv: seed the first iteration with the single-letter values below --floor from a
+known table (2 counts each), so long spans between clear anchors do not drift; the codes at or
+above --floor (names, words, nulls) are never seeded and take their meaning from the plain text
+alone. Counts for the seeded codes are then not independent evidence for that table.
 """
 import csv
 import itertools
@@ -214,7 +219,20 @@ def load_pairs(path):
         return list(csv.DictReader(f, delimiter='\t'))
 
 
-def run_align(pairs, floor=100, iters=6, clear_consumes=False):
+def load_prior(path, floor):
+    """--prior KEY.tsv: seed counts (2 each) from a value->meaning key (columns code|value, value|meaning),
+    for codes below floor only; letter values only, so a name code is never seeded."""
+    prior = defaultdict(Counter)
+    with open(path, encoding='utf-8') as f:
+        for r in csv.DictReader(f, delimiter='\t'):
+            code = r.get('code') or r.get('value')
+            mean = r.get('meaning') if 'meaning' in r else r.get('value')
+            if code and code.isdigit() and int(code) < floor and mean and mean.isalpha() and len(mean) == 1:
+                prior[int(code)][fold(mean.lower())] += 2
+    return prior
+
+
+def run_align(pairs, floor=100, iters=6, clear_consumes=False, prior=None):
     prepared = []
     for p in pairs:
         raw = p['cipher_raw'].split()
@@ -224,7 +242,7 @@ def run_align(pairs, floor=100, iters=6, clear_consumes=False):
         if clear_consumes:
             cws = [plain_letters(t)[0] if k == 'clear' else '' for t, (k, _) in zip(raw, toks)]
         prepared.append((p, raw, toks, letters, starts, ends, cws))
-    prior = {}
+    prior = prior or {}
     for _ in range(iters):
         counts = defaultdict(Counter)
         shown = defaultdict(Counter)
@@ -289,8 +307,10 @@ def token_rows(prepared, results, counts, shown):
     return rows
 
 
-def cmd_align(pairs_path, out_align, out_key, floor=100, clear_consumes=False):
-    prepared, results, counts, shown = run_align(load_pairs(pairs_path), floor, clear_consumes=clear_consumes)
+def cmd_align(pairs_path, out_align, out_key, floor=100, clear_consumes=False, prior_path=None):
+    prior = load_prior(prior_path, floor) if prior_path else None
+    prepared, results, counts, shown = run_align(load_pairs(pairs_path), floor, clear_consumes=clear_consumes,
+                                                 prior=prior)
     rows = token_rows(prepared, results, counts, shown)
     with open(out_align, 'w', encoding='utf-8', newline='') as f:
         w = csv.writer(f, delimiter='\t', lineterminator='\n')
@@ -319,8 +339,13 @@ if __name__ == '__main__':
             k = a.index('--floor')
             floor = int(a[k + 1])
             del a[k:k + 2]
+        prior_path = None
+        if '--prior' in a:
+            k = a.index('--prior')
+            prior_path = a[k + 1]
+            del a[k:k + 2]
         cc = '--clear-consumes' in a
         a = [x for x in a if x != '--clear-consumes']
-        cmd_align(a[1], a[2], a[3], floor, cc)
+        cmd_align(a[1], a[2], a[3], floor, cc, prior_path)
     else:
         sys.exit(__doc__)

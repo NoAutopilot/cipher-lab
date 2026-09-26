@@ -33,6 +33,12 @@ def main():
     # without --clear-consumes the clear 'le' takes nothing, so 150 absorbs it at least once
     key0 = run(pairs, '--floor', '121')
     assert key0['150']['meaning'] != 'contejean' or int(key0['150']['agree']) < 3
+    # --prior seeds letters below the floor only; a seeded name code in the key file is ignored
+    import tempfile as tf
+    kp = os.path.join(tf.mkdtemp(), 'k.tsv')
+    open(kp, 'w').write('code\tvalue\n16\tq\n36\tu\n81\te\n150\tzzz\n')
+    key2 = run(pairs, '--floor', '121', '--clear-consumes', '--prior', kp)
+    assert key2['150']['meaning'] == 'contejean', key2['150']
     print('ok')
 
 
