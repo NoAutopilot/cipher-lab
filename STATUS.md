@@ -215,8 +215,8 @@ Opened 07:33 UTC by parent 7f (7g since 07:41); brief `.claude/briefs/runs/2026-
 
 | job | outcome |
 |---|---|
-| 1 rolling QA | V9-QA8 (Sonnet 2.44, QA/2026-09-26-0735.md, ~30 items): QA7's 3 findings fixed; szembek per-leaf controls and hessen-1824 partial+NEAR pass; 1 flag to LANE ARM (ARM-A2 en18 FAILs lack the per-fold spread caveat). QA9 due about 09:45, window from 07:35. |
-| 3 lodewijk 5797 p6_spot4 | V9-NA172-3 (Opus 1.57): AUDIT.md A4 -- **withdrawn from classification** (A3's N2 withdrawn): 172 has three period values (4614 Jean, 7206 Lumbres, 5801 Louis), none licensed for 5797; A4.3 safe sentence replaces A3.3; SO row and prompt noted. status.json row text still says "lowered it to N2" -- parent to change to "withdrawn (AUDIT.md A4)". |
+| 1 rolling QA | V9-QA8 (Sonnet 2.44, QA/2026-09-26-0735.md, ~30 items): QA7's 3 findings fixed; szembek per-leaf controls and hessen-1824 partial+NEAR pass; 1 flag to LANE ARM (ARM-A2 en18 FAILs lack the per-fold spread caveat). V9-QA9 live since 09:41 (Sonnet, session_01UrEoFvMTWWuT2vmuV13nPR, window from 07:35; covers LANE NX, B9, ARM). |
+| 3 lodewijk 5797 p6_spot4 | V9-NA172-3 (Opus 1.57): AUDIT.md A4 -- **withdrawn from classification** (A3's N2 withdrawn): 172 has three period values (4614 Jean, 7206 Lumbres, 5801 Louis), none licensed for 5797; A4.3 safe sentence replaces A3.3; SO row and prompt noted. status.json carries the withdrawal (parent 7g, 08:12). |
 | 2, 4, 5 | No reading ready to V9 yet; Mercy closer waits on the Lonchay-Cuvelier IV page read; Armstrong verifier waits on LANE ARM's rule-7 re-derivation. |
 
 ## LANE V8 handoff (session_01YRuw3TCf7d1w85DLmYNnw4), 26 September 2026, live

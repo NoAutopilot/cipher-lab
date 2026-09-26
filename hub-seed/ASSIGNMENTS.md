@@ -811,3 +811,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T09:33Z	session_01B2nd7Qw8D5iaVxVYjvrzR7	bMAL24 (Sonnet, cap 6)	malsburg 505 f.24 + folder shrink	brief 2026-09-26-lane-b9-mal24.md; LANE B9
 2026-09-26T09:33Z	session_01QU9YdUqTM1YXDPbfa2txct	bMAL28B (Sonnet, cap 10)	malsburg 507 f.28 finish	brief 2026-09-26-lane-b9-mal28b.md; LANE B9
 2026-09-26T09:33Z	session_01JaqeEHeqiYj6xk7nTb8E4c	bMAL16 (Sonnet, cap 15)	malsburg 503 f.16	brief 2026-09-26-lane-b9-mal16.md; LANE B9
+2026-09-26T09:41Z	session_01UrEoFvMTWWuT2vmuV13nPR	V9-QA9 (Sonnet, cap 4)	rolling QA, window 07:35 to start	brief 2026-09-26-lane-v9-qa9.md; LANE V9
