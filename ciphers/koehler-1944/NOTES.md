@@ -216,3 +216,10 @@ exit code: 0
   (ASKS row 26): this account cannot borrow it at all, not just "readable only by a person" as ASKS row 53 previously said.
   ASKS row 53 updated with the finding, still `open`/the owner. Job stopped here per its brief (first hard borrow failure);
   did not reach the Farago (Game of the Foxes) item planned for this target's ARCHIVE.md (ASKS 55b).
+- GOLD-K4 (26 Sept 2026): closed the vig arithmetic `mixed_tabula` placement record -- plaincipher/keycipher (control
+  74.5 pct, target -3.4935, 0.0009 nats above the ten-text band's max, still judge FAIL) and the owed English keyword
+  list (control 76.5 pct, target -3.515, inside both bands, judge FAIL) both ran, control-backed negatives; all seven
+  placements and three keyword lists are now spent at vig. `--param modes=plaincipher,keycipher --param arith=beau`
+  is the one placement left in the whole grid, not run this box (80 pct rule), command in HYPOTHESES.md "Family B',
+  owed runs (GOLD-K4)". Per GOLD-CONS3's cycle-3 ladder, Koehler spend should pause after this for family A
+  (archive lookup, owner-gated) unless the beau box is judged worth one more small unit.

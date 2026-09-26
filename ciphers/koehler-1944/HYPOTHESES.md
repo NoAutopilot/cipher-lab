@@ -721,6 +721,68 @@ did to run alongside the family runs). Rule 10: nothing here is a reading; NOTES
 
 -- GOLD-K3 (Sonnet, session_01K4n8VHbDXGiaAwDk12dgrP), 25 Sept 2026
 
+## Family B', owed runs (GOLD-K4), 26 Sept 2026, worker GOLD-K4 (Sonnet, session_01PYtPexePhLjYkgc8VsZ7Zn)
+
+The two runs GOLD-K3 left owed (variant c cipher-side placements, plaincipher/keycipher at vig) plus GOLD-K2's
+owed English keyword list. Same method throughout (stage 1 unigram-count ranking over the de20+nl20 candidate
+list unless noted otherwise, stage 2 beam-decodes the top 30, order 6, beam 300, LM_p de20, LM_k nl20). Bands
+compared against: two-text full-pipeline noise -3.507 / -3.544 (GOLD-2C); ten-text beau-pipeline noise band min
+-3.5481, median -3.5305, max -3.4944 (GOLD-K3).
+
+### Unit 1: plaincipher and keycipher modes, vig arithmetic, Dutch key (`--param modes=plaincipher,keycipher --param arith=vig`)
+
+CONTROL (German plaintext, held-out nl20 key, keyword from the de20+nl20 list, mode drawn from plaincipher/keycipher,
+seeds 1-3): 79.1 / 74.0 / 70.5 pct plaintext letters recovered, mean **74.5 pct** -- gate 50 pct met.
+
+TARGET: stage-1 best 11.2 nats over uniform (`furchten:keycipher`); stage-2 winner `ruht:plaincipher:vig` (stage-1
+rank lower, 6.9 nats), msg-1 best-of-30 **-3.491**; pooled joint log-likelihood (all 5 messages) **-3.4935** per
+letter -- 0.0135 nats above the two-text band's top (-3.507) and 0.0009 nats above the ten-text band's max
+(-3.4944), the closest any `mixed_tabula` placement in this family has sat to that ceiling, still well under the
+-3.40 / -3.394 flag line. Judge: **FAIL** (score -0.963 vs real_p05 -0.823, null_p99 -2.071, mode=both, N=924).
+Message 1 decoded streams, first 40 letters (word salad, not a reading): P `kommlichvondienurinihrsetzteeffibeiderku`,
+K `looppenhaarouderaanglimlhoofdeengoestenl`. Control-backed negative for the plaincipher/keycipher corner; this is
+the seventh of seven `mixed_tabula` placements to run at vig arithmetic.
+
+### Unit 2: English keyword list, default modes, vig arithmetic, Dutch key (`--param modes=plain,key,both,full --param wordcorpus=tools/data/en`)
+
+CONTROL (German plaintext, held-out nl20 key, keyword drawn from `tools/data/en` -- three 1880-1925 Gutenberg
+novels -- mode from plain/key/both/full, seeds 1-3): 81.2 / 79.8 / 68.5 pct letters recovered, mean **76.5 pct** --
+gate 50 pct met.
+
+TARGET: stage-1 best 11.3 nats over uniform (`illustration:key`); stage-2 winner `opportunity:plain:vig` (stage-1
+rank near the bottom of the top 30, 5.3 nats), msg-1 best-of-30 **-3.473**; pooled joint log-likelihood **-3.515**
+per letter -- inside both the two-text band (-3.507 to -3.544) and the ten-text band (min -3.5481, median -3.5305,
+max -3.4944; -3.515 sits 0.0155 above the median, 0.021 below the max, not near either edge). Judge: **FAIL**
+(score -0.94 vs real_p05 -0.823, null_p99 -2.071, mode=both, N=924). Message 1 decoded streams, first 40 letters
+(word salad, not a reading): P `tfragenmittagundundsturzsimistinflaggefi`, K `vorsfalmplannenendithaarlevenhetveelgoed`.
+Control-backed negative for an English keyword drawn from outside the de20+nl20 list restriction; this is the third
+keyword list tried for this family (de20+nl20 restricted list, German-only via `kcorpus=de20`, English via
+`wordcorpus=tools/data/en`).
+
+### Unit 3: beau arithmetic, plaincipher/keycipher modes -- not run
+
+Units 1 and 2 (control+target each) took about 22 and 25 minutes respectively; by the time unit 2 finished, this
+job was at 47 of its 75-minute box (63 pct), and a third control-plus-target cycle of the same shape (about
+20-25 minutes on this record) would have crossed the brief's 80 pct rule before finishing. Not started. Owed to
+whoever next spends a Koehler B' box: `python3 tools/family_run.py specs/koehler-1944.json --family
+keyed_running_key --corpus tools/data/de20 --param kcorpus=tools/data/nl20 --param modes=plaincipher,keycipher
+--param arith=beau --param top=30 --param beam=300 --param order=6 --param spaces=1 --seeds 3 --gate 0.5`.
+
+**Record status.** At vig arithmetic, all seven `mixed_tabula` placements (plain, key, both, full -- GOLD-2C/K1/K2;
+cipher -- GOLD-K3; plaincipher, keycipher -- this job) have now run, all control-backed negatives, judge FAIL
+throughout; the vig placement record is complete. At beau arithmetic, five of seven have run (plain/key/both/full
+-- GOLD-K2 variant 1; cipher -- GOLD-K3 variant b); plaincipher/keycipher at beau (unit 3 above) is the one placement
+left in the whole `mixed_tabula` grid. Three keyword lists have now been tried at vig (de20+nl20 restricted,
+German-only, English), all control-backed negatives.
+
+Files: `families/keyed_running_key-1-kcorpus=tools_data_nl20,modes=plaincipher,keycipher,arith=vig,top=30,beam=300,or.txt`,
+`families/keyed_running_key-1-kcorpus=tools_data_nl20,modes=plain,key,both,full,arith=vig,top=30,beam=300,orde.txt`,
+the two family_run.py table rows below (23:52 and 00:16 UTC). Reproduce: the two commands above (unit 1's
+`--param arith=vig` variant already run; unit 3's `--param arith=beau` variant is what remains). Rule 10: nothing
+here is a reading; NOTES.md status stays `open`.
+
+-- GOLD-K4 (Sonnet, session_01PYtPexePhLjYkgc8VsZ7Zn), 26 Sept 2026
+
 <!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
 
 | date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
@@ -731,3 +793,4 @@ did to run alongside the family runs). Rule 10: nothing here is a reading; NOTES
 | 25 Sept 2026 22:04 | keyed_running_key | N=924 K=26 restarts=8 corpus=pg15736_Der_Mann_von_vierzig_Jahren.txt.gz+pg36905_Schach_von_Wuthenow.txt.gz+pg41051_Peter_Camenzind.txt.gz+pg41907_Demian.txt.gz+pg43987_Die_drei_Spruenge_des_Wang_lun.txt.gz+pg46184_Frau_Jenny_Treibel.txt.gz+pg5323_Effi_Briest.txt.gz kcorpus=tools/data/nl20,modes=cipher,arith=vig,top=30,beam=300,order=6,spaces=1 | 1 | 0.769 (0.709-0.813) | -3.498 | FAIL language: score=-0.887, null_p99=-2.071, real_p05=-0.823, real_median=-0.78, mode=both, N=924 | yes (gate 0.5) | GOLD-K3 B'-c cipher-side mixed alphabet, vig, Dutch key, control before target |
 | 25 Sept 2026 22:27 | keyed_running_key | N=924 K=26 restarts=8 corpus=pg15736_Der_Mann_von_vierzig_Jahren.txt.gz+pg36905_Schach_von_Wuthenow.txt.gz+pg41051_Peter_Camenzind.txt.gz+pg41907_Demian.txt.gz+pg43987_Die_drei_Spruenge_des_Wang_lun.txt.gz+pg46184_Frau_Jenny_Treibel.txt.gz+pg5323_Effi_Briest.txt.gz kcorpus=tools/data/nl20,modes=cipher,arith=beau,top=30,beam=300,order=6,spaces=1 | 1 | 0.752 (0.722-0.771) | -3.518 | FAIL language: score=-0.972, null_p99=-2.071, real_p05=-0.823, real_median=-0.78, mode=both, N=924 | yes (gate 0.5) | GOLD-K3 B'-c cipher-side, beau, Dutch key |
 | 25 Sept 2026 23:52 | keyed_running_key | N=924 K=26 restarts=8 corpus=pg15736_Der_Mann_von_vierzig_Jahren.txt.gz+pg36905_Schach_von_Wuthenow.txt.gz+pg41051_Peter_Camenzind.txt.gz+pg41907_Demian.txt.gz+pg43987_Die_drei_Spruenge_des_Wang_lun.txt.gz+pg46184_Frau_Jenny_Treibel.txt.gz+pg5323_Effi_Briest.txt.gz kcorpus=tools/data/nl20,modes=plaincipher,keycipher,arith=vig,top=30,beam=300,order=6,spaces=1 | 1 | 0.745 (0.705-0.791) | -3.494 | FAIL language: score=-0.963, null_p99=-2.071, real_p05=-0.823, real_median=-0.78, mode=both, N=924 | yes (gate 0.5) | GOLD-K4 B'-c plain+cipher and key+cipher, vig, Dutch key, control before target |
+| 26 Sept 2026 00:16 | keyed_running_key | N=924 K=26 restarts=8 corpus=pg15736_Der_Mann_von_vierzig_Jahren.txt.gz+pg36905_Schach_von_Wuthenow.txt.gz+pg41051_Peter_Camenzind.txt.gz+pg41907_Demian.txt.gz+pg43987_Die_drei_Spruenge_des_Wang_lun.txt.gz+pg46184_Frau_Jenny_Treibel.txt.gz+pg5323_Effi_Briest.txt.gz kcorpus=tools/data/nl20,modes=plain,key,both,full,arith=vig,top=30,beam=300,order=6,spaces=1,wordcorpus=tools/data/en | 1 | 0.765 (0.685-0.812) | -3.515 | FAIL language: score=-0.94, null_p99=-2.071, real_p05=-0.823, real_median=-0.78, mode=both, N=924 | yes (gate 0.5) | GOLD-K4 B' English keyword list, vig, Dutch key, control before target |
