@@ -1,0 +1,9 @@
+width 3 seed 1: adjacent cosine 0.5378 vs label-permutation p95 0.2936 -> DETECTED
+width 3 seed 2: adjacent cosine 0.4695 vs label-permutation p95 0.2891 -> DETECTED
+width 3 seed 3: adjacent cosine 0.5733 vs label-permutation p95 0.3826 -> DETECTED
+width 4 seed 1: adjacent cosine 0.4634 vs label-permutation p95 0.2730 -> DETECTED
+width 4 seed 2: adjacent cosine 0.5025 vs label-permutation p95 0.3022 -> DETECTED
+width 4 seed 3: adjacent cosine 0.4662 vs label-permutation p95 0.2960 -> DETECTED
+width 5 seed 1: adjacent cosine 0.4388 vs label-permutation p95 0.2445 -> DETECTED
+width 5 seed 2: adjacent cosine 0.3460 vs label-permutation p95 0.2149 -> DETECTED
+width 5 seed 3: adjacent cosine 0.4225 vs label-permutation p95 0.2334 -> DETECTED

@@ -1,0 +1,7 @@
+kept 1629 tokens in 53 lines, K=96; dropped >=100: 15, non-numeric: 184
+adjacent-pair context cosine (v,v+1, both count>=5): 0.2102 over 49 pairs; all-pair mean 0.2144
+label-permutation control (1000): mean 0.2145, p95 0.2448, p99 0.2579; real rank p = 0.598
+  distance 2: mean 0.2110 over 47
+  distance 3: mean 0.2479 over 48
+  distance 4: mean 0.2166 over 46
+  distance 5: mean 0.2180 over 47
