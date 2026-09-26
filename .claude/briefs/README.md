@@ -23,6 +23,7 @@ Common tail (paste into every brief):
 > Wall-clock box (every worker brief): "stop and push at $<cap> or at <minutes> minutes, whichever first." The box is also a minimum: a worker does not stop early with the job undone while budget and minutes remain; it stops at the cap, at the minutes, or at the brief being met, and says which (LEARN-2026-09-25-1718 item 2, from the R6 common brief).
 
 > Before the first action, also read the last 20 lines of UPDATES.md (changes instituted across both accounts since your brief was written; they override an older brief where they conflict).
+> Keys as an attack corpus (KEY-DESIGN, 26 Sept 2026): every solved or recovered key is added to KEY-OFFICES.tsv and (by rerunning `tools/key_design.py`) to KEY-DESIGN.tsv at the lane's close-out, and `tools/design_prior.py <ciphertext>` is run before an attack family is chosen for an unread letter (its design-class verdict is a prior, never a reading).
 
 **Spawning a session (parent or lane orchestrator, 25 Sept 2026, RETRO-2026-09-25l).** Every `create_session`
 call passes `source_url` and `source_revision` explicitly, and the prompt opens with the brief file's path and
