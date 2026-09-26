@@ -1,0 +1,118 @@
+code	value	grade	occurrences	agree	empty	others
+1	n	H	20	19	1	
+2	n	H	41	37	2	t:1,u:1
+3	n	H	17	16	0	e:1
+4	n	H	14	11	0	u:2,s:1
+5	n	H	15	14	0	z:1
+6	o	H	30	26	2	s:1,t:1
+7	o	H	17	15	0	n:1,s:1
+8	o	H	16	14	0	n:2
+9	o	H	25	20	0	n:2,g:1,f:1,u:1
+10	o	H	31	29	1	n:1
+11	p	H	3	2	1	
+12	p	H	17	17	0	
+13	p	H	9	9	0	
+14	p	H	6	6	0	
+15	p	H	5	5	0	
+16	q	H	9	9	0	
+17	q	H	6	6	0	
+18	q	M	4	2	0	e:1,z:1
+19	q	H	2	2	0	
+20	q	M	7	3	0	m:1,r:1,s:1,u:1
+21	r	H	50	46	1	c:2,l:1
+22	r	H	27	24	1	h:1,o:1
+23	r	H	18	16	2	
+24	r	H	18	14	2	s:1,z:1
+25	r	H	14	14	0	
+26	s	H	43	34	4	z:3,c:1,x:1
+27	s	H	31	25	0	t:2,c:1,l:1,r:1,z:1
+28	s	H	24	18	2	z:2,q:1,r:1
+29	s	H	19	13	1	z:3,r:1,v:1
+30	s	H	23	21	1	l:1
+31	t	H	52	48	3	n:1
+32	t	H	24	22	1	e:1
+33	t	H	21	19	1	e:1
+34	t	H	10	8	0	a:1,s:1
+35	t	H	9	8	1	
+36	u	H	32	29	1	n:2
+37	u	H	24	20	1	t:2,n:1
+38	u	H	13	12	0	s:1
+39	u	H	23	18	1	t:3,a:1
+40	u	H	57	53	1	a:1,o:1,s:1
+46	x	H	2	2	0	
+51	y	H	2	2	0	
+52	y	H	4	3	0	s:1
+53	y	M	1	1	0	
+56	z	H	4	4	0	
+57	x	M	1	1	0	
+60	z	H	2	2	0	
+61	a	H	45	41	2	o:1,t:1
+62	a	H	24	22	1	e:1
+63	a	H	22	20	0	e:2
+64	a	H	14	11	0	e:2,o:1
+65	a	H	18	17	0	e:1
+66	b	H	3	3	0	
+67	b	H	6	4	1	d:1
+68	b	M	1	1	0	
+69	b	H	2	2	0	
+70	u	H	5	3	0	b:2
+71	c	M	17	9	6	s:2
+72	c	H	18	16	0	s:2
+73	c	H	6	5	1	
+74	c	H	4	4	0	
+75	c	H	7	5	1	s:1
+76	d	H	20	17	1	n:1,u:1
+77	d	H	22	20	0	c:1,q:1
+78	d	H	5	5	0	
+79	d	H	6	4	2	
+80	d	M	7	3	0	e:2,l:1,f:1
+81	e	H	75	63	7	u:2,a:1,o:1,x:1
+82	e	H	75	69	2	o:2,a:1,i:1
+83	e	H	33	31	2	
+84	e	H	36	33	3	
+85	e	H	39	33	4	l:1,f:1
+86	f	H	9	8	0	u:1
+87	e	M	8	4	0	f:2,d:1,t:1
+88	f	H	3	3	0	
+89	s	M	1	1	0	
+90	f	M	7	4	1	l:1,n:1
+91	g	H	10	8	0	r:1,s:1
+92	g	M	4	2	0	e:1,q:1
+93	g	M	1	1	0	
+94	g	H	4	3	0	e:1
+96	h	M	11	4	1	r:4,a:1,g:1
+97	h	H	3	3	0	
+98	h	H	2	2	0	
+100	g	M	3	1	1	h:1
+101	i	H	31	25	1	y:3,j:2
+102	i	H	30	22	3	y:5
+103	i	H	16	12	1	j:1,l:1,y:1
+104	i	H	13	10	0	y:3
+105	i	H	13	12	1	
+107	i	M	2	1	0	m:1
+111	l	H	35	33	2	
+112	l	H	25	25	0	
+113	l	H	12	11	0	i:1
+114	l	H	13	12	0	m:1
+115	l	H	10	9	1	
+116	m	H	6	5	0	q:1
+117	m	H	10	10	0	
+118	m	H	12	8	3	l:1
+119	m	H	2	2	0	
+120	m	H	12	12	0	
+121	NULL	H	3	3	3	
+122	NULL	H	3	3	3	
+123	NULL	M	1	1	1	
+126	antaige	M	1	1	0	
+127	gm	M	3	1	0	m:1,tenirpourvous:1
+129	m	M	1	1	0	
+131	NULL	H	5	3	3	debverions:2
+132	devozaffaires	M	2	1	1	
+142	NULL	H	2	2	2	
+150	NULL	M	1	1	1	
+172	lecontejean	M	1	1	0	
+192	i	M	1	1	0	
+217	srgeertruydenb	M	1	1	0	
+221	hollan	M	1	1	0	
+289	rancfort	M	1	1	0	
+337	reystres	M	1	1	0	
