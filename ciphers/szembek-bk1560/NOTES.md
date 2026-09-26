@@ -389,3 +389,51 @@ ciphertext.tsv} before step 2 (NOTES.md above and reading.txt not read until aft
 
 No differences beyond the reading's own M-graded tokens; reading not sent back. Requests: none (disk-only, no
 hosts touched). Cost/time: well under the $1.50 cap and 20-minute box (finished ~5 min in).
+
+## Judge (bLAJ, 26 Sept 2026)
+
+Wired `tools/data/la18/` (see its README.md): 7,268,991 folded letters, three volumes (1709-1711) of Andrzej
+Chryzostom Zaluski's *Epistolarum historico-familiarium* -- Latin letters of a Polish crown-chancery official
+(Referendary, then Vice-Chancellor, then Grand Chancellor of Poland across these same years) writing about
+the same royal-chancery milieu as this target's own author (Jan Szembek, Crown Vice-Chancellor then Chancellor
+1700-1731). `LANG_CORPORA["la"]` and `["la18"]` both point at it (the target's own spec already names
+`"language": "la"`). Held-out (leave-one-file-out, N=400, 200 samples/fold): false negatives 33.0% / 22.5% /
+4.0% per fold, 19.8% blended -- 3 files, below CLAUDE.md rule 3's 5-file floor for a trustworthy single
+number; **a FAIL against this corpus is of unknown reliability, a PASS is still informative** (same shape as
+es17c's own finding). Offline test: `tools/tests/test_judge_plaintext_lang_la18.py` (a hand-corrected,
+independent 1693 Leibniz passage passes; shuffled and random-letter controls fail).
+
+`python3 tools/judge_plaintext.py specs/szembek-bk1560.json --file ciphers/szembek-bk1560/reading.txt`:
+
+```
+FAIL language: score=-0.986, null_p99=-1.702, real_p05=-0.96, real_median=-0.892, mode=both, N=1324
+ok   words: cover=0.958, min=0.5, real_text_median_cover=0.971
+FAIL - szembek-bk1560 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+
+The reading mixes the manuscript's own clear Latin words with decoded code-letters; per this job's brief,
+also judged the decoded letters alone (`codes_only.py` rebuilds `codes_only.txt` from `reading_tokens.tsv`,
+concatenating consecutive-position code letters into words and space-breaking at clear-word gaps, N=434
+letters, reproducible):
+
+```
+FAIL language: score=-1.139, null_p99=-1.657, real_p05=-0.98, real_median=-0.889, mode=both, N=434
+ok   words: cover=0.935, min=0.5, real_text_median_cover=0.968
+FAIL - szembek-bk1560
+```
+
+Both FAIL language, but both clear the `min_word_cover` gate with a wide margin (0.935-0.958 against a 0.5
+floor, close to real-text's own 0.968-0.971 median) -- the decode segments into real Latin words almost as
+cleanly as genuine prose does, which a letter-salad decode would not do. The language-score gap to real_p05 is
+narrow (0.026 on the full reading, 0.159 on codes-only) relative to this corpus's own per-fold false-negative
+spread (up to 33.0%) at a similar N. Per CLAUDE.md rule 3 (a FAIL close to the gate against a corpus of known
+wide fold spread is "judge cannot decide," not a clean negative) and rule 4 (this is a grade-C reading from
+the manuscript's own period gloss, not a cryptanalytic claim the language check is gating): **the judge FAILs
+on both texts, but the strong independent word-cover pass and the corpus's own unreliability at this N mean
+the FAIL should not be read as evidence against the reading.** Novelty and any stronger verdict are a
+verifier's call (rule 10), not this job's.
+
+Files: `tools/data/la18/{README.md,MANIFEST.tsv,holdout_check.py,zaluski_epistolae_t1-3.txt.gz}`,
+`tools/judge_plaintext.py` (LANG_CORPORA "la"/"la18"), `tools/tests/test_judge_plaintext_lang_la18.py`,
+`ciphers/szembek-bk1560/{codes_only.py,codes_only.txt}`. Hosts: archive.org (advancedsearch 2, metadata 5,
+`_djvu.txt` download 5), all >=1.6s apart, one at a time.

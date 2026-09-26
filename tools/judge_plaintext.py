@@ -61,12 +61,23 @@ LANG_CORPORA = {
     "da19": [DATA / "da19" / "historisktidsskriftdk1s6.txt"],  # 1845 Historisk Tidsskrift, 1.04M letters (B2 bCPH, 25 Sept 2026); 19th-c. register
     "es17c": [DATA / "es17c" / "memorialhistri17realuoft.txt.gz", DATA / "es17c" / "memorialhistri18realuoft.txt.gz",
               DATA / "es17c" / "memorialhistri19realuoft.txt.gz"],
-    # nl, la (25 Sept 2026, YX-PTJUDGE): tools/data/nl_repo, la_repo each hold only one or two target's own
-    # committed readings/plaintext-print files (a few KB each, nowhere near the ~200k-character floor a
-    # language check needs, and for la_repo the sole file *is* the target's own reading -- circular per
-    # CLAUDE.md "never use a target's own reading as its corpus"). Not wired. A future worker who fetches a
-    # real nl/la period corpus (Internet Archive djvu.txt or a Google Books full-view volume, never the
-    # target's own material) of at least ~200k letters can add it here the way "it"/"pt"/"es" are done.
+    # nl (25 Sept 2026, YX-PTJUDGE): tools/data/nl_repo holds only a target's own committed reading (a few KB,
+    # nowhere near the ~200k-character floor a language check needs) -- circular per CLAUDE.md "never use a
+    # target's own reading as its corpus". Not wired. A future worker who fetches a real nl period corpus
+    # (Internet Archive djvu.txt or a Google Books full-view volume, never the target's own material) of at
+    # least ~200k letters can add it here the way "it"/"pt"/"es" are done.
+    # la, la18 (26 Sept 2026, LANE B7 bLAJ): tools/data/la_repo was the same kind of placeholder (a different
+    # target's own reading, circular, a few KB) -- "la" was commented out unwired. Replaced with a real period
+    # corpus: three volumes (1709-1711) of Zaluski's Epistolarum historico-familiarium, Polish crown-chancery
+    # Latin letters, era- and office-matched to ciphers/szembek-bk1560 (Jan Szembek, Crown Chancellor of
+    # Poland 1700-1731; Zaluski held the same chancery offices in the same years). 7.27M folded letters. See
+    # tools/data/la18/README.md (sources, cleaning, held-out false-negative rates per CLAUDE.md rule 3). "la"
+    # now points at la18; a future target from a different era/register adds its own key rather than
+    # overwriting this one.
+    "la": [DATA / "la18" / "zaluski_epistolae_t1.txt.gz", DATA / "la18" / "zaluski_epistolae_t2.txt.gz",
+           DATA / "la18" / "zaluski_epistolae_t3.txt.gz"],
+    "la18": [DATA / "la18" / "zaluski_epistolae_t1.txt.gz", DATA / "la18" / "zaluski_epistolae_t2.txt.gz",
+             DATA / "la18" / "zaluski_epistolae_t3.txt.gz"],
     # es (25 Sept 2026, LANE R6 Y8): tools/data/es17/ -- early-17th-c. Spanish prose (Cervantes, Quevedo),
     # ~1.92M letters folded, built for espagnol142-mercy-1648 (a 1648 letter). See tools/data/es17/README.md.
     # es17c (25 Sept 2026, LANE R6 MJ): tools/data/es17c/ -- 1643-1647 Spanish court-newsletter prose
