@@ -11,3 +11,15 @@ Pitman_CONTROL	R9	partial	Y ("yet", coalescent arc)	consistent	closest available
 Pitman_CONTROL	R10	no	-	n-a	no angular zigzag/double-bend stroke on this plate
 Pitman_CONTROL	R11	yes	NG ("sing", concave-up "smile" arc)	consistent	good shape match to nasal NG sign; NG phoneme ~2% close to observed 1.8%
 Pitman_CONTROL	R12	no	-	n-a	no closed loop (let alone with descending tail) exists on this plate
+Taylor1786	R1	partial	n/m (shallow curved consonant stroke)	inconsistent	shape resembles Taylor's low flat curve for n/m, but no English letter is anywhere near 33.9%; plate unlabeled so ID is tentative
+Taylor1786	R2	partial	s (small loop-hook, closest geometric analogue)	inconsistent	13.1% is roughly double real "s" (~6.3%); loop+tail shape not confirmed against any label in this specimen
+Taylor1786	R3	partial	r/l (back-curving hook)	inconsistent	10.8% exceeds real r (~6.0%) or l (~4.0%) alone; may be two conflated shapes per the brief's own note
+Taylor1786	R4	partial	n (small hook opening left)	consistent	5.4% close to real n frequency (~6.7%)
+Taylor1786	R5	yes	vowel-position dash mark	consistent	short flat dash matches vowel-marking dash convention; 5.0% plausible for one vowel value
+Taylor1786	R6	yes	vowel-position dot mark	consistent	isolated dot matches vowel dot convention; 4.5% plausible for one vowel value
+Taylor1786	R7	partial	h / light diagonal consonant stroke	consistent	3.6% within normal range for a moderately common consonant
+Taylor1786	R8	no	-	n-a	compound loop+slash "%" shape does not appear as one unit anywhere in the specimen
+Taylor1786	R9	partial	p/j (hook with descender)	consistent	2.3% close to real p (~1.9%)
+Taylor1786	R10	no	-	n-a	sharp multi-vertex zigzag not seen in the specimen's stroke set
+Taylor1786	R11	partial	w/u (shallow open upward curve)	consistent	1.8% close to real w/u
+Taylor1786	R12	partial	rare blend or v-type stroke	consistent	0.9% close to real v (~1.0%)
