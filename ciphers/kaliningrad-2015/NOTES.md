@@ -228,3 +228,27 @@ own control gate (mean 0.733 and 0.677 -- an anneal-side difficulty at these K/p
 control seed collapsing to 0.206 recovery), so those two remain untested rather than excluded, gate not
 lowered per the brief. No judge PASS; no reading described. Full tables, commands and the exact tokenisation
 rule are in HYPOTHESES.md's "GOLD-KAL2, Russian transliteration schemes" section. Status stays `open`.
+
+## GOLD-KAL3, Polish and Lithuanian, 26 Sept 2026
+
+Reserve cycle-5 job (brief `.claude/briefs/runs/2026-09-26-lane-gold-c5-kaliningrad-polish.md`), ran after
+GOLD-KAL2 finished, no live overlap, disk/CPU + two hosts (gutenberg.org/gutendex.com for Polish, api.getbible.net
+for Lithuanian), no subagents. Built `tools/data/pl19` (Polish prose, Project Gutenberg, 4 texts, 840,725
+folded letters -- Gutendex's Polish-fiction catalogue is thin, none of the brief's named example authors
+turned up, and the 4-text cap left the corpus short of the brief's 1.5M-letter aim, reported as found, not
+padded) and `tools/data/lt` (Lithuanian Bible, getbible.net, 66 books, 2,599,750 folded letters, Bible
+register not prose). Fixed a real `fold()` bug found while building pl19: ł is its own Unicode code point,
+not a base letter plus a combining mark, so `homophonic_anneal.fold()`'s NFKD-strip-combining step does not
+touch it and the final `[^a-z]` filter drops it outright (2.87% of raw letters); the corpus files have ł/Ł
+replaced with l/L before gzip so `fold()` keeps every letter (residual difference 0.0037%, under the brief's
+0.1% bar). Lithuanian needed no such fix (its marked letters all decompose under NFKD, 0.0000% difference).
+Three `family_run.py --family homophonic --param profile=target` units, gate 0.9, control before target, never
+lowered: convention A pl19 (K=36) and convention A lt (K=36) both **CONTROL BELOW GATE** (mean 0.655 -- one
+seed collapsed to 0.003, reported per-seed not averaged away -- and mean 0.633 respectively), target not run
+either time, untested not excluded; convention B pl19 (K=28) cleared its control gate (mean 0.996) and came
+back a **control-backed negative** on the target (judge FAIL, score -1.971 against real_p05 -0.913, null_p99
+-2.109). One tool wrinkle: `judge.corpora` set to a bare directory path raised `IsADirectoryError` in
+`judge_plaintext.py`'s `read_corpus` (it wants explicit file paths, unlike `family_run.py --corpus`'s own
+directory scan); fixed in the spec and the convention-B unit re-run cleanly for a correct row. No judge PASS;
+no reading described. Full tables, IC numbers and commands are in HYPOTHESES.md's "GOLD-KAL3, Polish and
+Lithuanian" section. Status stays `open`.

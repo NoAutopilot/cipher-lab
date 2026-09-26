@@ -309,6 +309,67 @@ python3 tools/family_run.py specs/kaliningrad-2015.json --family homophonic \
   --label "GOLD-KAL2 homophonic ru S3 full, convention B K28, control before target"
 ```
 
+## GOLD-KAL3, Polish and Lithuanian (26 Sept 2026)
+
+Reserve brief `.claude/briefs/runs/2026-09-26-lane-gold-c5-kaliningrad-polish.md`, rank 4/5 of the cycle-4
+decision table. Ran after GOLD-KAL2 finished (01:31 UTC), no live overlap, spec to itself.
+
+**Corpus 1: `tools/data/pl19`** (Polish prose, Project Gutenberg). Gutendex's Polish-fiction catalogue
+(`languages=pl&topic=fiction`) is thin: 7 hits total, none of the brief's named example authors (Sienkiewicz,
+Prus, Żeromski, Reymont, Orzeszkowa, Konopnicka) among them. Fetched the 4 largest fiction hits (Zapolska,
+Łubieński, Gnatowski, Schulz), 840,725 letters after fold -- short of the 1.5M aim (not padded with a 5th/6th
+text past the brief's 4-text cap; see `tools/data/pl19/README.md`). IC (N=978, 20 windows, seed 42): own
+Polish alphabet (ą ę ó ł ż ś ć ń ź kept distinct) 0.0506 (0.0472-0.0534); folded to a-z 0.0642 (0.0618-0.0660)
+-- the folded range's upper half brackets the target's own convention-A IC (0.0657, K=36). `homophonic_anneal.fold()`
+drops ł outright (its own Unicode code point, not a base letter + combining mark, so NFKD-then-strip-combining
+doesn't touch it) -- 2.87% of raw letters across the 4 texts; the corpus files here have ł/Ł replaced with l/L
+before gzip so `fold()` keeps every letter (checked: 0.0037% residual difference, from ~30 stray Cyrillic
+characters in quoted phrases/footnotes, well under the brief's 0.1% bar).
+
+**Corpus 2: `tools/data/lt`** (Lithuanian Bible, getbible.net). `api.getbible.net/v2/translations.json` lists a
+Lithuanian translation; fetched whole (66 books, 2,599,750 folded letters). Register caveat: Bible text, not
+prose (same caveat as `ru19`). Lithuanian's marked letters (ą ę ė į ų ū č š ž) all decompose under NFKD, so
+`fold()` drops nothing here (0.0000% difference) -- no ł-style fix needed, unlike Polish.
+
+**Units (control first, `tools/family_run.py --family homophonic --param profile=target`, gate 0.9, never lowered):**
+
+- **2-pl-A** (convention A, N=978 K=36, pl19): control 3 seeds 0.988 / 0.973 / **0.003** (mean 0.655) --
+  **CONTROL BELOW GATE**, target NOT run, untested not excluded. Seed 3 collapsed near-total (a solver-anneal
+  failure mode, per GOLD-KAL2's own lesson on the s1s-A unit -- reported per-seed, not averaged away).
+- **2-pl-B** (convention B, N=1066 K=28, pl19): control 3 seeds 0.992 / 0.997 / 0.998 (mean 0.996), gate met.
+  Target ran; judge FAIL: score=-1.971, real_p05=-0.913, real_median=-0.856, null_p99=-2.109, N=1066.
+  **Control-backed negative** for Polish light-homophonic substitution at K=28, profile=target, this pl19
+  register. (Tool note: `judge.corpora` set to the bare directory `tools/data/pl19` first raised
+  `IsADirectoryError` in `judge_plaintext.py`'s `read_corpus` -- it wants explicit file paths, unlike
+  `family_run.py --corpus`'s own directory-scanning; fixed by listing the 4 files, then re-ran the unit
+  cleanly for a correct mechanical row -- the malformed first attempt's row is left in the table below as an
+  honest record, not hand-edited.)
+- **2-lt-A** (convention A, N=978 K=36, lt, convention A only per brief): control 3 seeds 0.467 / 0.444 / 0.987
+  (mean 0.633) -- **CONTROL BELOW GATE**, target NOT run, untested not excluded. No seed collapsed to
+  near-zero this time, but the mean is still well short of 0.9.
+
+First 40 letters of any target decode: none reported -- no judge PASS this job (rule 10; a FAIL is reported
+as a FAIL, not described). Dead end: neither Polish scheme convention reached a judge PASS where the target
+ran (2-pl-B); the other two units are gate failures, not exclusions -- a different corpus (a larger Polish
+prose fetch, or a period-matched Polish register rather than a Bible for Lithuanian) could still clear the
+control gate and is untested, not ruled out.
+
+Exact commands:
+```
+python3 tools/family_run.py specs/kaliningrad-2015.json --family homophonic \
+  --cipher ciphers/kaliningrad-2015/ciphertext_signs.tsv --corpus tools/data/pl19 \
+  --param profile=target --seeds 3 --restarts 8 --gate 0.9 \
+  --label "GOLD-KAL3 homophonic pl19, convention A K36, control before target"
+python3 tools/family_run.py specs/kaliningrad-2015.json --family homophonic \
+  --cipher ciphers/kaliningrad-2015/ciphertext_signs_B.tsv --corpus tools/data/pl19 \
+  --param profile=target --seeds 3 --restarts 8 --gate 0.9 \
+  --label "GOLD-KAL3 homophonic pl19, convention B K28, control before target"
+python3 tools/family_run.py specs/kaliningrad-2015.json --family homophonic \
+  --cipher ciphers/kaliningrad-2015/ciphertext_signs.tsv --corpus tools/data/lt \
+  --param profile=target --seeds 3 --restarts 8 --gate 0.9 \
+  --label "GOLD-KAL3 homophonic lt (Bible register), convention A K36, control before target"
+```
+
 Rule 10: nothing in this section is a reading; status stays `open`; never solved, new, first or unpublished.
 
 <!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
@@ -323,3 +384,4 @@ Rule 10: nothing in this section is a reading; status stays `open`; never solved
 | 26 Sept 2026 02:09 | homophonic | N=978 K=36 restarts=8 corpus=pg27178_Na_mier_1863.txt.gz+pg34635_Menazerya_ludzka.txt.gz+pg6000_Ironia_Pozor_w.txt.gz+pg8119_Sklepy_cynamonowe.txt.gz profile=target | 1-3 | 0.655 (0.003-0.988) | not run (CONTROL BELOW GATE) | - | no (gate 0.9) | GOLD-KAL3 homophonic pl19, convention A K36, control before target |
 | 26 Sept 2026 02:10 | homophonic | N=1066 K=28 restarts=8 corpus=pg27178_Na_mier_1863.txt.gz+pg34635_Menazerya_ludzka.txt.gz+pg6000_Ironia_Pozor_w.txt.gz+pg8119_Sklepy_cynamonowe.txt.gz profile=target | 1 | 0.996 (0.992-0.998) | -3554.292 | IsADirectoryError: [Errno 21] Is a directory: 'tools/data/pl19' | yes (gate 0.9) | GOLD-KAL3 homophonic pl19, convention B K28, control before target |
 | 26 Sept 2026 02:12 | homophonic | N=1066 K=28 restarts=8 corpus=pg27178_Na_mier_1863.txt.gz+pg34635_Menazerya_ludzka.txt.gz+pg6000_Ironia_Pozor_w.txt.gz+pg8119_Sklepy_cynamonowe.txt.gz profile=target | 1 | 0.996 (0.992-0.998) | -3554.292 | FAIL language: score=-1.971, null_p99=-2.109, real_p05=-0.913, real_median=-0.856, mode=both, N=1066 | yes (gate 0.9) | GOLD-KAL3 homophonic pl19, convention B K28, control before target (re-run, spec corpora path fixed) |
+| 26 Sept 2026 02:15 | homophonic | N=978 K=36 restarts=8 corpus=01_pradzia.txt.gz+02_isejimas.txt.gz+03_levitas.txt.gz+04_skaiciai.txt.gz+05_pakartotine_istatymo.txt.gz+06_jozue.txt.gz+07_teisejai.txt.gz+08_ruta.txt.gz+09_1_samuelis.txt.gz+10_2_samuelis.txt.gz+11_1_karaliai.txt.gz+12_2_karaliai.txt.gz+13_1_kronikos.txt.gz+14_2_kronikos.txt.gz+15_ezdras.txt.gz+16_nehemijas.txt.gz+17_ester.txt.gz+18_jobas.txt.gz+19_psalmynas.txt.gz+20_patarles.txt.gz+21_ekleziastas.txt.gz+22_giesmiu_giesme.txt.gz+23_izaijas.txt.gz+24_jeremijas.txt.gz+25_raudos.txt.gz+26_ezechielis.txt.gz+27_danielius.txt.gz+28_ozejas.txt.gz+29_joelis.txt.gz+30_amosas.txt.gz+31_abdijas.txt.gz+32_jonas.txt.gz+33_michejas.txt.gz+34_nahumas.txt.gz+35_habakukas.txt.gz+36_sofonijas.txt.gz+37_agejas.txt.gz+38_zacharijas.txt.gz+39_malachijas.txt.gz+40_matai.txt.gz+41_markas.txt.gz+42_lukas.txt.gz+43_jonas.txt.gz+44_apastalu_darbai.txt.gz+45_romieciams.txt.gz+46_1_korintieciams.txt.gz+47_2_korintieciams.txt.gz+48_galatams.txt.gz+49_efezieciams.txt.gz+50_filipieciams.txt.gz+51_kolosieciams.txt.gz+52_1_tesalonikieciams.txt.gz+53_2_tesalonikieciams.txt.gz+54_1_timotiejui.txt.gz+55_2_timotiejui.txt.gz+56_titui.txt.gz+57_filemonui.txt.gz+58_zydams.txt.gz+59_jokubas.txt.gz+60_1_petras.txt.gz+61_2_petras.txt.gz+62_1_jonas.txt.gz+63_2_jonas.txt.gz+64_3_jonas.txt.gz+65_judai.txt.gz+66_apreiskimas.txt.gz profile=target | 1-3 | 0.633 (0.444-0.987) | not run (CONTROL BELOW GATE) | - | no (gate 0.9) | GOLD-KAL3 homophonic lt (Bible register), convention A K36, control before target |
