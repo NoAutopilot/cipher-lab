@@ -94,7 +94,7 @@ Wheatstone p.330) would make it certain; this was not attempted (BL images unava
 | Google Books | not run | the identification was settled by IA full text; budget kept | -- |
 | Philobiblon Miscellanies vol. 6/7 original | not located | the 1879 reprint states it is "From the Memoirs of the Philobiblon Society" and reprints the editor's note | reprint suffices for the text; original's flyleaf not seen |
 | Clarendon State Papers, Thurloe, Gardiner | not searched | Groen's clear print made them unnecessary for the class | -- |
-| JSTOR | queued | one row appended to JSTOR-QUEUE.tsv | never blocking |
+| JSTOR | done 26 Sept 2026 | one row (JSTOR-QUEUE.tsv): "Wheatstone" AND ("Goffe" OR "Goff") AND (cipher OR cypher) AND "Charles I" | no relevant hit (12 results, none about the letter); does not change the class |
 
 Requests: archive.org 10 (advancedsearch 2, metadata 3, djvu downloads 5 of which one returned 500), be-api.us.archive.org 14, searcharchives.bl.uk 5, api.openalex.org 1,
 api.semanticscholar.org 1, Google Books 0. No subagents, no logins, no images.
