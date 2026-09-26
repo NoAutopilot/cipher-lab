@@ -27,6 +27,19 @@ re-surfaced. Blocker type and cost band are both guessed from keywords in that p
 not from the whole file -- a cheap, inspectable heuristic, not a claim of certainty (a human or a
 lane orchestrator reads the one line and can always open NOTES.md for the rest).
 
+Fixed 26 Sept 2026 (NX-FIX, flagged by NX-UNBLOCK 19:16 on ciphers/vanbeuningen-dewitt-1657): a
+NOTES.md that is appended to over time can carry a later dated section (e.g. a verifier's AUDIT.md-
+backed key recovery) that never repeats the exact trigger phrase, while an earlier, now-superseded
+paragraph still does -- a bare last-block-in-file-order scan then surfaces the stale paragraph
+instead of the file's current state. `extract_next_step()` now tracks the most recent date it has
+seen (a "<d> Sept[ember] 2026"-style date, whether in a "## ..., <date> (...)" heading or in an
+ordinary paragraph) as it walks the file's blocks in order, and among the blocks carrying a
+next-step trigger phrase prefers the one(s) stamped with the newest date seen so far, taking the
+last such block if more than one shares that date (LIFO within a section, same as before). A file
+with no date anywhere falls back to the previous whole-file "last matching block" behaviour
+unchanged -- this is a strict refinement, not a new heuristic, so a NOTES.md with no dated
+sections is scored exactly as before.
+
 Usage:
   tools/next_steps.py [--ciphers-dir ciphers] [--ledger LEDGER.md] [--near NEAR.md] [--out NEXT-STEPS.tsv]
   tools/next_steps.py --check     exit nonzero if NEXT-STEPS.tsv on disk is stale against the folders
@@ -54,6 +67,38 @@ NEXT_STEP_RE = re.compile(
     r'next step|next:|next job|for whoever picks this up|successor|follow-up',
     re.IGNORECASE,
 )
+
+MONTH_NUM = {
+    "jan": 1, "feb": 2, "mar": 3, "apr": 4, "may": 5, "jun": 6,
+    "jul": 7, "aug": 8, "sep": 9, "oct": 10, "nov": 11, "dec": 12,
+}
+DATE_RE = re.compile(
+    r'\b(\d{1,2})\s+(' + '|'.join(MONTH_NUM) + r')[a-z]*\.?\s+(\d{4})\b',
+    re.IGNORECASE,
+)
+
+
+WORK_YEAR_MIN = 2020  # a NOTES.md also cites the target's own historical date (1657, 1812, ...)
+                       # in the same heading as the work date ("## ..., 22 December 1812"); only
+                       # a year in this project's own working range is a section timestamp.
+
+
+def latest_date(text):
+    """The latest (year, month, day) *working* date (rule 6's "<d> Sept 2026" convention, year
+    >= WORK_YEAR_MIN) this repository's own convention can find anywhere in `text`, or None. A
+    historical date the section discusses (the target letter's own date, centuries earlier) is
+    not a section timestamp and is excluded so it cannot be mistaken for one. Several qualifying
+    dates in one block (a heading naming when it was written plus a date it discusses) take the
+    latest, not the first, on the theory that a section's own timestamp is usually its most
+    prominent or final date."""
+    best = None
+    for day, mon, year in DATE_RE.findall(text):
+        if int(year) < WORK_YEAR_MIN:
+            continue
+        d = (int(year), MONTH_NUM[mon[:3].lower()], int(day))
+        if best is None or d > best:
+            best = d
+    return best
 
 # Order matters: the first pattern that matches wins (CLAUDE.md Usage 8a's own precedent list order).
 BLOCKER_PATTERNS = (
@@ -86,11 +131,51 @@ def split_blocks(text):
     return [b.strip() for b in blocks if b.strip()]
 
 
+def _is_heading(block):
+    return block.lstrip().startswith('#')
+
+
 def extract_next_step(text):
-    """The last block containing a next-step trigger phrase, or "" if none."""
-    match = ""
-    for block in split_blocks(text):
+    """The next-step block from the file's newest dated section, or -- when no block anywhere
+    carries a date -- the last block containing a next-step trigger phrase (the original
+    whole-file behaviour), or "" if none match at all.
+
+    Walks the file's blocks in order, tracking the newest date seen so far as a section marker
+    -- a NOTES.md is appended to over time, so a later section's date supersedes an earlier
+    one's. When the file has at least one dated markdown heading ("## ..., <date> (...)" is this
+    repository's own convention), only heading blocks advance the tracker: a body paragraph
+    that incidentally cites an earlier date (e.g. quoting when a cited AUDIT.md was written)
+    must not walk the tracker backwards past the heading it actually sits under. A file with no
+    dated heading anywhere falls back to treating any block's own date as a section marker, so a
+    flat NOTES.md that dates its paragraphs directly (no "## " headings at all) still works.
+    Every block that also matches a next-step trigger phrase is recorded together with the
+    tracker's value at that point. Among the recorded candidates, prefers the one(s) stamped
+    with the newest date found anywhere in the file, taking the last in file order when more
+    than one block shares that date; when no candidate carries a date at all, takes the last
+    candidate in file order, exactly as before this fix.
+    """
+    blocks = split_blocks(text)
+    heading_anchored = any(_is_heading(b) and latest_date(b) is not None for b in blocks)
+
+    candidates = []  # (date_or_None, block) in file order
+    current_date = None
+    for block in blocks:
+        if not heading_anchored or _is_heading(block):
+            d = latest_date(block)
+            if d is not None:
+                current_date = d
         if NEXT_STEP_RE.search(block):
+            candidates.append((current_date, block))
+
+    if not candidates:
+        return ""
+
+    dated = [c for c in candidates if c[0] is not None]
+    pool = dated if dated else candidates
+    newest = max(c[0] for c in pool) if dated else None
+    match = ""
+    for date, block in pool:
+        if date == newest:
             match = block
     return match
 

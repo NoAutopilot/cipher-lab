@@ -57,6 +57,33 @@ Every family in the ladder ran against a matched control and failed. Next step: 
 target is done.
 """
 
+TWO_DATED_SECTIONS_NOTES = """# dated-target
+
+Status: partial
+
+## First pass, 20 Sept 2026
+
+Some background on the first attempt. Next step: do X (superseded by the pass below).
+
+## Second pass, 25 Sept 2026
+
+A verifier graded the key N3 here. Next step: do Y, the current live next step.
+"""
+
+NO_DATED_SECTION_NOTES = """# undated-target
+
+Status: open
+
+## What this is
+
+Next step: send the copy order first (superseded).
+
+## Later pass
+
+Next step: cut fresh line crops with tools/iiif_lines.py and run a second blind pass over folio
+12r; about USD 4.
+"""
+
 
 def write_notes(ciphers_dir, target, text):
     d = os.path.join(ciphers_dir, target)
@@ -90,6 +117,24 @@ def test_status_extraction_handles_label_and_bare_forms():
 
 def test_next_step_takes_the_most_recent_paragraph():
     step = ns.extract_next_step(STALE_RUNNABLE_NOTES)
+    assert "second blind pass" in step
+    assert "copy order" not in step
+
+
+def test_next_step_prefers_the_newest_dated_section():
+    """NX-FIX, 26 Sept 2026: a NOTES.md with two dated sections picks the next-step paragraph
+    from the newer one, even though an earlier trigger phrase appears later in raw file-order
+    scanning would not apply here -- both candidates are in order, so this also guards against
+    a regression that reverts to plain last-block-in-file scanning."""
+    step = ns.extract_next_step(TWO_DATED_SECTIONS_NOTES)
+    assert "do Y" in step
+    assert "do X" not in step
+
+
+def test_next_step_falls_back_to_whole_file_when_no_dated_section():
+    """NX-FIX, 26 Sept 2026: a file with no date anywhere in it (headings included) keeps the
+    original whole-file "last matching block" behaviour."""
+    step = ns.extract_next_step(NO_DATED_SECTION_NOTES)
     assert "second blind pass" in step
     assert "copy order" not in step
 
