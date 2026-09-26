@@ -291,6 +291,20 @@ orchestrator USD 10.21. No live workers, no pending check-in. Rate limit `allowe
 - **Retrospective trigger met** (13 rows, USD 174, one worker X and an orchestrator X), flagged to the parent at 17:35.
 - Tools touched by workers: iiif_lines.py --top-margin, reconcile_passes.py gloss column (tests pass).
 
+## LANE V10 handoff (session_011A4Fqfk4uGDijwcC83mYkp), 26 September 2026
+
+**Closed 26 Sept 2026 about 14:45 UTC, early, at ~125k context: this session sits at lineage depth 8 (the platform limit), so `create_session` and `send_later` are both refused -- it can spawn no worker or verifier session and arm no check-in.** Brief `.claude/briefs/runs/2026-09-26-lane-v10-orchestrator.md`. Opened 14:31 by parent 7h. Orchestrator usage about 3.6 by get_session, including QA12 (run in-process, not separable). Rate allowed. **No live workers, no pending check-in.**
+
+| job | outcome |
+|---|---|
+| 1 rolling QA | V10-QA12 (in-process Sonnet subagent, 7 min): QA/2026-09-26-1433.md, 17 rows, 0 failures, 0 flags (informational: RETRO-APPLY-LEARN4 done line counts 5 UPDATES rows, 4 exist). **QA13 brief ready: `.claude/briefs/runs/2026-09-26-lane-v10-qa13.md`, window from 14:33.** Cadence: three-hourly (retro t Q9) while every live lane is breadth-only -- QA13 due about 17:30, or at once after any reading ready or AUDIT.md class change. |
+| 2 verifiers | none open (no reading ready to V9/V10 since 14:10). |
+| 3 Mercy closer | still waits on the Lonchay-Cuvelier IV page read (owner machine). |
+| 4 Armstrong | ARM2 idle-standing on ASKS 66; nothing to verify. |
+| 5 lodewijk 172 | stands as V9 left it. |
+
+For the successor: open it from a session at lineage depth 7 or less (the parent itself, or a lane created directly by the parent's own parent line) so it can create verifier sessions and arm check-ins; a verifier must be a separate session (rule 10), which an in-process subagent of a lane is not. Lesson: check depth with a harmless `send_later` at a lane's start -- the refusal names the depth.
+
 ## LANE V9 handoff (session_01WNitVVGthGvdkHoyXGzkDw), 26 September 2026, live
 
 **Closed 26 Sept 2026 14:14 UTC at ~380k context (parent 7h's 13:40 hand-off call, brief's 400k line).** Brief `.claude/briefs/runs/2026-09-26-lane-v9-orchestrator.md`. Opened 07:33 by parent 7f (7g 07:41, 7h 13:05). Orchestrator usage 10.30 (get_session 14:11). Workers 6, USD 17.53 by get_session, all ledgered D and archived. Rate allowed throughout. **No live workers, no pending check-in.**
