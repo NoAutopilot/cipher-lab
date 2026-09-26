@@ -805,3 +805,9 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T09:12Z	session_018tA6f2KodR8TdqLCewqu5L	ARM-C1	done 13.66, ledgered D, archived	
 2026-09-26T09:13Z	session_01UFGyb1jUwyn2ppJx1nDodA	ARM-POOL (Sonnet, cap 6)	roll 14 survey + frame 0033	brief 2026-09-26-lane-arm-pool.md; LANE ARM
 2026-09-26T09:13Z	session_01Q3t8YFL4NMLyvok91qRPyC	ARM-S1 (Sonnet, cap 6)	shorthand mark inventory vs period systems	brief 2026-09-26-lane-arm-s1.md; LANE ARM
+2026-09-26T09:36Z	session_013uoVVpHvKf8RSpzRgFW5SB	bMAL23	done 16.27, ledgered D-, retitled ARCHIVED, archived	f.23 admitted; LANE B9
+2026-09-26T09:36Z	session_01FXbFaXqnjyMNmuMDAaE1fi	bMAL28	done 12.18, ledgered D-, retitled ARCHIVED, archived	f.28 held (M 0.232); LANE B9
+2026-09-26T09:33Z	session_01CYYpQUCZKtXM69VxdVLtY6	bMALH (Sonnet, cap 3)	malsburg pooled homophonic N=1828	brief 2026-09-26-lane-b9-malh.md; LANE B9
+2026-09-26T09:33Z	session_01B2nd7Qw8D5iaVxVYjvrzR7	bMAL24 (Sonnet, cap 6)	malsburg 505 f.24 + folder shrink	brief 2026-09-26-lane-b9-mal24.md; LANE B9
+2026-09-26T09:33Z	session_01QU9YdUqTM1YXDPbfa2txct	bMAL28B (Sonnet, cap 10)	malsburg 507 f.28 finish	brief 2026-09-26-lane-b9-mal28b.md; LANE B9
+2026-09-26T09:33Z	session_01JaqeEHeqiYj6xk7nTb8E4c	bMAL16 (Sonnet, cap 15)	malsburg 503 f.16	brief 2026-09-26-lane-b9-mal16.md; LANE B9
