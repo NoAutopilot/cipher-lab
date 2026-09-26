@@ -2112,3 +2112,38 @@ weak for the code class (control 0.23-0.56). The target stays `partial`; no read
 named as the next step rather than a further tuning of this family: the untranscribed plain-Italian boxes between runs --
 with the context words on disk, a code type would be scored against the words around it (a word bigram at every run
 edge), which is the only thing that can pin down rare code types (108 of the 200 marked types are hapax).
+
+## SALV-PLAIN1: plain-Italian boxes, f.54r-f.55v (26 Sept 2026, LANE SALV)
+
+Worker SALV-PLAIN1 (Sonnet), 20:49-... UTC, brief `.claude/briefs/runs/2026-09-26-lane-salv-j1a-plain.md`. Job 1
+first half: transcribes the plain Italian between the sign runs on f54r, f54v, f55r, f55v (629 of the letter's
+1,233 plain boxes) -- no decoding, no reading of the sign runs, method only.
+
+**U0 setup.** `images/` held no full-leaf render (bSALS deleted them, LANE B11, 26 Sept 2026). Regenerated via
+`./regen_images.sh page <name>` (7 gallica.bnf.fr requests, one connection-reset retried once per the good-citizen
+rule then succeeded on a longer pause, >=2s apart otherwise):
+- `./regen_images.sh page src_ark_12148_btv1b90600674_f55_4085_0_4086_5513.jpg` (f54r native crop, 4086x5513)
+- `./regen_images.sh page f54v_ref1600.jpg`, `f55r_ref1600.jpg`, `f55v_ref1600.jpg` (1600px, per segment_args.txt's own convention, for anything downstream that still expects them)
+- plus one curl each at `/2400,/` in place of `/1600,/` on the same IIIF region for f54v/f55r/f55v (2400x3253/3253/3275), for legibility, per this job's brief
+
+Wrote `crop_plain_leaf.py <leaf>`: one crop per manuscript line, full line width (downscaled to <=2400px wide when
+the native crop is wider), from the high-res renders above, box (x,y) mapped to source pixels as (x+250,y+650)
+scale 1 for f54r and (x+80,y+80)*1.5 for f54v/f55r/f55v (glyphs/crops/<leaf>.png no longer exists, so the box
+frame is re-derived from segment_args.txt's own crop origin rather than read off disk). Under each PLAIN box
+(code=='_' in ciphertext_<leaf>.tsv) only, draws a thin red underline just below that box's own bottom edge (not
+the line's lowest box -- adjacent-line bounding boxes in this manuscript already overlap by ~30px at native
+line pitch, so hugging each box's own bottom keeps the label unambiguous) plus its pos number; sign boxes get no
+mark. Output `plain_crops/<leaf>/L<nn>.png` + `plain_crops/<leaf>/manifest.tsv` (line, file, plain_pos, render,
+scale). Ran for f54r first, read two crops (L01, L02) myself before any subagent call: words legible, numbers
+sit under the right box in both. Command and summary:
+```
+$ python3 crop_plain_leaf.py f54r
+f54r: 19 line crops -> plain_crops/f54r/, manifest plain_crops/f54r/manifest.tsv, 139 plain boxes marked
+$ python3 crop_plain_leaf.py f54v
+f54v: 19 line crops -> plain_crops/f54v/, manifest plain_crops/f54v/manifest.tsv, 152 plain boxes marked
+$ python3 crop_plain_leaf.py f55r
+f55r: 19 line crops -> plain_crops/f55r/, manifest plain_crops/f55r/manifest.tsv, 173 plain boxes marked
+$ python3 crop_plain_leaf.py f55v
+f55v: 19 line crops -> plain_crops/f55v/, manifest plain_crops/f55v/manifest.tsv, 165 plain boxes marked
+```
+629 plain boxes total across the four leaves (of 1,233 for the whole letter -- this job's first half).

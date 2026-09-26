@@ -931,6 +931,7 @@
     }
   ],
   "notes": [
-    "f54r_lines_debug.jpg (uncited debug overlay from tools/iiif_lines.py --debug) deleted 26 Sept 2026 (bSALS); not individually tracked in iiif_lines, see images_manifest_full.tsv"
+    "f54r_lines_debug.jpg (uncited debug overlay from tools/iiif_lines.py --debug) deleted 26 Sept 2026 (bSALS); not individually tracked in iiif_lines, see images_manifest_full.tsv",
+    "SALV-PLAIN1 (26 Sept 2026) regenerated src_ark_12148_btv1b90600674_f55_4085_0_4086_5513.jpg, f54v/f55r/f55v_ref1600.jpg (regen_images.sh page) and f54v/f55r/f55v_ref2400.jpg (same IIIF region at 2400px, for crop_plain_leaf.py) to build plain_crops/; not committed (folder would pass 30 MB), regen via regen_images.sh + the 2400px URL swap recorded in NOTES.md \"SALV-PLAIN1\" section."
   ]
 }
