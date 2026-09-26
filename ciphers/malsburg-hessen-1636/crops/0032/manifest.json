@@ -1,0 +1,105 @@
+{
+  "bands": [
+    {
+      "crop": "hstam_4_h_1411_0032_B01.jpg",
+      "box": [
+        0,
+        0,
+        2114,
+        380
+      ],
+      "scale": 1,
+      "source_file": "hstam_4_h_1411_0032.jpg",
+      "sha1": "b0d57e8c4ca316d1649944f2d15a40264c5dba02"
+    },
+    {
+      "crop": "hstam_4_h_1411_0032_B02.jpg",
+      "box": [
+        0,
+        320,
+        2114,
+        700
+      ],
+      "scale": 1,
+      "source_file": "hstam_4_h_1411_0032.jpg",
+      "sha1": "e8d8ab744725fd349178e84100b5446e73476fe9"
+    },
+    {
+      "crop": "hstam_4_h_1411_0032_B03.jpg",
+      "box": [
+        0,
+        640,
+        2114,
+        1020
+      ],
+      "scale": 1,
+      "source_file": "hstam_4_h_1411_0032.jpg",
+      "sha1": "aa8645250f40d4b286a64a2d3a1b68a397feb98a"
+    },
+    {
+      "crop": "hstam_4_h_1411_0032_B04.jpg",
+      "box": [
+        0,
+        960,
+        2114,
+        1340
+      ],
+      "scale": 1,
+      "source_file": "hstam_4_h_1411_0032.jpg",
+      "sha1": "00ffd3a71e4d4209f49590fee2abf420a51a4264"
+    },
+    {
+      "crop": "hstam_4_h_1411_0032_B05.jpg",
+      "box": [
+        0,
+        1280,
+        2114,
+        1660
+      ],
+      "scale": 1,
+      "source_file": "hstam_4_h_1411_0032.jpg",
+      "sha1": "3d7732c89dbabee1b8faaa544345518a642389da"
+    },
+    {
+      "crop": "hstam_4_h_1411_0032_B06.jpg",
+      "box": [
+        0,
+        1600,
+        2114,
+        1980
+      ],
+      "scale": 1,
+      "source_file": "hstam_4_h_1411_0032.jpg",
+      "sha1": "a35590eb1e55c044d857388fd86246ea0371a4af"
+    },
+    {
+      "crop": "hstam_4_h_1411_0032_B07.jpg",
+      "box": [
+        0,
+        1920,
+        2114,
+        2300
+      ],
+      "scale": 1,
+      "source_file": "hstam_4_h_1411_0032.jpg",
+      "sha1": "57be4efa5c6d3e4983946b5a756a83bef1490eca"
+    },
+    {
+      "crop": "hstam_4_h_1411_0032_B08.jpg",
+      "box": [
+        0,
+        2240,
+        2114,
+        2512
+      ],
+      "scale": 1,
+      "source_file": "hstam_4_h_1411_0032.jpg",
+      "sha1": "ebe7d133a8c544ddc10dc3a71883a11af3a0beb8"
+    }
+  ],
+  "source_dims": [
+    2114,
+    2512
+  ],
+  "method": "manual PIL band crop, box=[0,y0,w,y1] native res, band_h=380 overlap=60 (bMALX; tools/iiif_lines.py --lines-per-crop 3 clipped mid-line ascenders/descenders at this leafs tight 44-48px line pitch, so used overlapping fixed-height bands instead, reproducible from box+source_file)"
+}

@@ -1,0 +1,105 @@
+{
+  "bands": [
+    {
+      "crop": "hstam_4_h_1411_0033_B01.jpg",
+      "box": [
+        0,
+        0,
+        2164,
+        380
+      ],
+      "scale": 1,
+      "source_file": "hstam_4_h_1411_0033.jpg",
+      "sha1": "f3c18ba6001eb6d98334c586680a9d0cb15d997c"
+    },
+    {
+      "crop": "hstam_4_h_1411_0033_B02.jpg",
+      "box": [
+        0,
+        320,
+        2164,
+        700
+      ],
+      "scale": 1,
+      "source_file": "hstam_4_h_1411_0033.jpg",
+      "sha1": "0dd1e3b9221898e6f3190f655d4e15629f16ef08"
+    },
+    {
+      "crop": "hstam_4_h_1411_0033_B03.jpg",
+      "box": [
+        0,
+        640,
+        2164,
+        1020
+      ],
+      "scale": 1,
+      "source_file": "hstam_4_h_1411_0033.jpg",
+      "sha1": "f43a2d50f50fc146249dc7ebfcc2e77b8ebb7b19"
+    },
+    {
+      "crop": "hstam_4_h_1411_0033_B04.jpg",
+      "box": [
+        0,
+        960,
+        2164,
+        1340
+      ],
+      "scale": 1,
+      "source_file": "hstam_4_h_1411_0033.jpg",
+      "sha1": "169eadbacc894a048b9173c0346e8a8e4434a121"
+    },
+    {
+      "crop": "hstam_4_h_1411_0033_B05.jpg",
+      "box": [
+        0,
+        1280,
+        2164,
+        1660
+      ],
+      "scale": 1,
+      "source_file": "hstam_4_h_1411_0033.jpg",
+      "sha1": "5a6b9ba65d39a19461f2e16c737334262fa0e1d1"
+    },
+    {
+      "crop": "hstam_4_h_1411_0033_B06.jpg",
+      "box": [
+        0,
+        1600,
+        2164,
+        1980
+      ],
+      "scale": 1,
+      "source_file": "hstam_4_h_1411_0033.jpg",
+      "sha1": "8a98fe01c8306cb5fceae64db23d78c0cc3c3041"
+    },
+    {
+      "crop": "hstam_4_h_1411_0033_B07.jpg",
+      "box": [
+        0,
+        1920,
+        2164,
+        2300
+      ],
+      "scale": 1,
+      "source_file": "hstam_4_h_1411_0033.jpg",
+      "sha1": "7ce77b43d2f0c2eff4abb42a4f87c1152df78e8c"
+    },
+    {
+      "crop": "hstam_4_h_1411_0033_B08.jpg",
+      "box": [
+        0,
+        2240,
+        2164,
+        2516
+      ],
+      "scale": 1,
+      "source_file": "hstam_4_h_1411_0033.jpg",
+      "sha1": "e4cbf97e9ebb4ed6936d458a3d61514cecde4474"
+    }
+  ],
+  "source_dims": [
+    2164,
+    2516
+  ],
+  "method": "manual PIL band crop, box=[0,y0,w,y1] native res, band_h=380 overlap=60 (bMALX; same reason as 0032)"
+}

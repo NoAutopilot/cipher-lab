@@ -193,8 +193,7 @@
         "sha1": "48e1af58ccbd6f716fd06703cbb0fa7b18ef563c",
         "date": null,
         "date_around": "1637",
-        "solution": "Not solved",
-        "local": "deleted, regen via regen_images.sh page hstam_4_h_1411_0032"
+        "solution": "Not solved"
     },
     {
         "record": 509,
@@ -205,7 +204,6 @@
         "sha1": "6919ab577f9a558b48db1112e8a997b14e90db59",
         "date": null,
         "date_around": "1637",
-        "solution": "Not solved",
-        "local": "deleted, regen via regen_images.sh page hstam_4_h_1411_0033"
+        "solution": "Not solved"
     }
 ]
