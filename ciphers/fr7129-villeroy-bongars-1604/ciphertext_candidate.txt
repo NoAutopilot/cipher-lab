@@ -1,3 +1,4 @@
+# SUPERSEDED 26 Sept 2026 by ciphertext.txt (VB-DECODE); kept as the KEY-7129 rough draft.
 # CANDIDATE transcription -- KEY-7129 job, 26 Sept 2026. NOT the file of record.
 # Cipher block at the foot of BnF fr.7129 f.268r (Villeroy to Bongars, 2 Nov 1604), 6 lines.
 # Source: images/keys/f268r_canvas541.jpg, native 3721x5914, cipher block approx y=1560-5914/2225 of the

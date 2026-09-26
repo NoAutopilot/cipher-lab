@@ -1,0 +1,221 @@
+# Key of record for Bongars cipher no.3, BnF fr.7129 f.275r (Gallica btv1b8555834s canvas f555; the page is written
+# sideways, read rotated 90 deg clockwise). VB-DECODE, 26 Sept 2026. Built from: two blind Sonnet reads of crops (keyA/keyB,
+# scratch, not committed), the worker's own third read, and the independent period inverse table at BnF fr.7131 f.228
+# (keys/aid_f228.tsv). unclear=1 where the three did not agree or the cell was not legible. Sign ids are the ASCII
+# names used in ciphertext.txt (see its header). Names coded by drawn symbols are not transcribed here (none is
+# identified in the cipher block this pass).
+sign	value	kind	folio	column	unclear	note
+y	a	letter	275r	alpha:a	0	
+3	a	letter	275r	alpha:a	1	flat 3; aid also lists a 3 under Y->t
+x	a	letter	275r	alpha:a	0	
+Hr	a	letter	275r	alpha:a	1	hook enclosing r; aid gives hook-r-bar=a, hook-r=f
+pH	b	letter	275r	alpha:b	1	p with hook
+8	b	letter	275r	alpha:b	1	
+ab	b	letter	275r	alpha:b	1	small + / crossed stroke
+u	c	letter	275r	alpha:c	1	aid: u=c
+v	c	letter	275r	alpha:c	1	
+ls	d	letter	275r	alpha:d	0	long s
+r	e	letter	275r	alpha:e	0	r rotunda
+q	e	letter	275r	alpha:e	1	aid Q family q=e
+o	e	letter	275r	alpha:e	0	
+g	f	letter	275r	alpha:f	1	9-shaped g; aid G family g=f
+x4	f	letter	275r	alpha:f	1	crossed 4; aid Z family 4=f
+ss	g	letter	275r	alpha:g	0	
+qo	h	letter	275r	alpha:h	0	
+fh	h	letter	275r	alpha:h	1	f+ligature; aid S family ff-s=h
+s	i	letter	275r	alpha:i	0	
+p	i	letter	275r	alpha:i	1	aid P family p=i
+un	i	letter	275r	alpha:i	1	four minims read as mm; aid N family mm=i
+Hun	l	letter	275r	alpha:l	1	hook + minims; f.275 L column
+mt	l	letter	275r	alpha:l	1	m with tail
+Hu	m	letter	275r	alpha:m	1	hook + n/u; f.275 M column
+i	n	letter	275r	alpha:n	0	
+k	n	letter	275r	alpha:n	0	
+cc	n	letter	275r	alpha:n	0	
+f	o	letter	275r	alpha:o	1	aid F family f=o
+do	o	letter	275r	alpha:o	1	d-hook
+e	p	letter	275r	alpha:p	1	aid E family e=p
+ff	q	letter	275r	alpha:q	1	
+c	q	letter	275r	alpha:q	1	aid C family c=q
+d	r	letter	275r	alpha:r	1	d; round-d variants are q/s/o in the aid -- the main ambiguity
+xff	r	letter	275r	alpha:r	1	crossed ff/pi-like ligature; aid ff-crossed=r
+a	s	letter	275r	alpha:s	0	
+Z	s	letter	275r	alpha:s	0	
+HZ	s	letter	275r	alpha:s	1	Z with a large hook under
+od	s	letter	275r	alpha:s	0	circle with dot
+6	t	letter	275r	alpha:t	1	
+Zt	t	letter	275r	alpha:t	1	tailed 3 / yogh
+tt	t	letter	275r	alpha:t	1	t with hooked tail (dagger-t); aid tt=d
+t	t	letter	275r	alpha:t	1	
+b	u	letter	275r	alpha:u	0	
+m	u	letter	275r	alpha:u	1	
+co	u	letter	275r	alpha:u	0	
+ba	u	letter	275r	alpha:u	0	
+dd	x	letter	275r	alpha:x	0	
+4	y	letter	275r	alpha:y	1	aid L family 4=y
+oo	y	letter	275r	alpha:y	0	
+ri	z	letter	275r	alpha:z	0	
+sin	z	letter	275r	alpha:z	0	
+bb	com	letter	275r	alpha:final	1	b with bar; last header read as con/com
+ut	com	letter	275r	alpha:final	1	
+ur	com	letter	275r	alpha:final	1	
+w		null	275r	notes	1	W-like sign; the 'nul' note names two signs
+6	combat	word	275r	plain 6-99	0	
+7	comme	word	275r	plain 6-99	0	
+8	cela	word	275r	plain 6-99	0	
+9	c'est	word	275r	plain 6-99	1	
+10	conti	word	275r	plain 6-99	0	
+11	cardinal	word	275r	plain 6-99	0	
+12	dicte	word	275r	plain 6-99	0	
+13	duc	word	275r	plain 6-99	0	
+14	don	word	275r	plain 6-99	0	
+15	de	word	275r	plain 6-99	0	
+16	du	word	275r	plain 6-99	0	
+17	d'autant	word	275r	plain 6-99	0	
+18	dit	word	275r	plain 6-99	0	
+19	?	word	275r	plain 6-99	1	
+20	?	word	275r	plain 6-99	1	
+21	Espagne	word	275r	plain 6-99	0	
+22	Espagnols	word	275r	plain 6-99	0	
+23	Escosse	word	275r	plain 6-99	0	
+24	Escossois	word	275r	plain 6-99	0	
+25	est	word	275r	plain 6-99	0	
+26	en	word	275r	plain 6-99	1	
+27	encore	word	275r	plain 6-99	0	
+28	estre	word	275r	plain 6-99	0	
+29	entre	word	275r	plain 6-99	0	
+30	eulx	word	275r	plain 6-99	0	
+31	faire	word	275r	plain 6-99	0	
+32	fault	word	275r	plain 6-99	0	
+33	fin	word	275r	plain 6-99	0	
+34	font	word	275r	plain 6-99	0	
+35	fort	word	275r	plain 6-99	0	
+36	forain	word	275r	plain 6-99	1	
+37	France	word	275r	plain 6-99	0	
+38	françois	word	275r	plain 6-99	0	
+39	grand	word	275r	plain 6-99	0	
+40	gouverneur	word	275r	plain 6-99	0	
+41	gouverneurs	word	275r	plain 6-99	0	
+42	gens de pied	word	275r	plain 6-99	0	
+43	gens de cheval	word	275r	plain 6-99	0	
+44	hommes de pied	word	275r	plain 6-99	0	
+45	hault	word	275r	plain 6-99	0	
+46	hommes	word	275r	plain 6-99	0	
+47	j'ay	word	275r	plain 6-99	0	
+48	je	word	275r	plain 6-99	0	
+49	il	word	275r	plain 6-99	0	
+50	ils ont	word	275r	plain 6-99	0	
+51	Italie	word	275r	plain 6-99	0	
+52	Italiens	word	275r	plain 6-99	0	
+53	Jesuites	word	275r	plain 6-99	1	
+54	lieu	word	275r	plain 6-99	1	
+55	le	word	275r	plain 6-99	0	
+56	luy	word	275r	plain 6-99	0	
+57	leur	word	275r	plain 6-99	1	
+58	les	word	275r	plain 6-99	1	
+59	?	word	275r	plain 6-99	1	
+60	Luxembourg	word	275r	plain 6-99	0	
+61	la	word	275r	plain 6-99	0	
+62	Lorraine	word	275r	plain 6-99	0	
+63	Lorrains	word	275r	plain 6-99	0	
+64	lansquenets	word	275r	plain 6-99	0	
+65	Lucerne	word	275r	plain 6-99	1	
+66	Metz	word	275r	plain 6-99	0	
+67	Monsieur	word	275r	plain 6-99	0	
+68	Mayence	word	275r	plain 6-99	1	
+69	moy	word	275r	plain 6-99	0	
+70	moins	word	275r	plain 6-99	0	
+71	mieulx	word	275r	plain 6-99	0	
+72	?	word	275r	plain 6-99	1	
+73	munitions	word	275r	plain 6-99	0	
+74	Mozelle	word	275r	plain 6-99	0	
+75	Meuse	word	275r	plain 6-99	0	
+76	mil	word	275r	plain 6-99	0	
+77	nostre	word	275r	plain 6-99	0	
+78	nous	word	275r	plain 6-99	0	
+79	non	word	275r	plain 6-99	0	
+80	ou	word	275r	plain 6-99	0	
+81	ouir	word	275r	plain 6-99	1	
+82	ont	word	275r	plain 6-99	0	
+83	occasion	word	275r	plain 6-99	0	
+84	opinion	word	275r	plain 6-99	0	
+85	obeissance	word	275r	plain 6-99	0	
+86	obeir	word	275r	plain 6-99	0	
+87	obtenir	word	275r	plain 6-99	0	
+88	primat	word	275r	plain 6-99	1	
+89	?	word	275r	plain 6-99	1	
+90	protestans	word	275r	plain 6-99	0	
+91	passage	word	275r	plain 6-99	0	
+92	place	word	275r	plain 6-99	0	
+93	par	word	275r	plain 6-99	0	
+94	plus	word	275r	plain 6-99	0	
+95	pour	word	275r	plain 6-99	0	
+96	pro	word	275r	plain 6-99	0	
+97	poudre	word	275r	plain 6-99	0	
+98	point	word	275r	plain 6-99	0	
+99	que	word	275r	plain 6-99	0	
+^1	qui	word	275r	overbar 1-43	0	
+^2	quoy	word	275r	overbar 1-43	0	
+^3	quand	word	275r	overbar 1-43	0	
+^4	quelque	word	275r	overbar 1-43	0	
+^5	quatre	word	275r	overbar 1-43	0	
+^6	chrestien	word	275r	overbar 1-43	1	
+^7	feu	word	275r	overbar 1-43	1	
+^8	rien	word	275r	overbar 1-43	1	
+^9	Roy	word	275r	overbar 1-43	1	
+^10	Royne	word	275r	overbar 1-43	1	
+^11	Royaume	word	275r	overbar 1-43	0	
+^12	Rome	word	275r	overbar 1-43	0	
+^13	Suisse	word	275r	overbar 1-43	0	
+^14	Sedan	word	275r	overbar 1-43	0	
+^15	Pape	word	275r	overbar 1-43	0	
+^16	sa	word	275r	overbar 1-43	0	
+^17	s'il	word	275r	overbar 1-43	0	
+^18	si	word	275r	overbar 1-43	0	
+^19	Savoye	word	275r	overbar 1-43	0	
+^20	Strasbourg	word	275r	overbar 1-43	0	
+^21	sans	word	275r	overbar 1-43	0	
+^22	sur	word	275r	overbar 1-43	0	
+^23	tout	word	275r	overbar 1-43	0	
+^24	temps	word	275r	overbar 1-43	0	
+^25	tous	word	275r	overbar 1-43	1	
+^26	tant	word	275r	overbar 1-43	0	
+^27	trop	word	275r	overbar 1-43	1	
+^28	tousiours	word	275r	overbar 1-43	0	
+^29	toutesfois	word	275r	overbar 1-43	0	
+^30	tellement	word	275r	overbar 1-43	0	
+^31	tort	word	275r	overbar 1-43	0	
+^32	tient	word	275r	overbar 1-43	0	
+^33	tante	word	275r	overbar 1-43	1	
+^34	trois	word	275r	overbar 1-43	1	
+^35	vous	word	275r	overbar 1-43	1	
+^36	une	word	275r	overbar 1-43	1	
+^37	Venise	word	275r	overbar 1-43	1	
+^38	ville	word	275r	overbar 1-43	0	
+^39	voyage	word	275r	overbar 1-43	0	
+^40	voir	word	275r	overbar 1-43	1	
+^41	vy	word	275r	overbar 1-43	1	
+^42	Zelande	word	275r	overbar 1-43	0	
+^43	Zelandois	word	275r	overbar 1-43	0	
+a.	Ambassadeur	word	275r	dotted letters	1	letter with dots above; not marked in ciphertext.txt this pass
+b.	armee	word	275r	dotted letters	1	letter with dots above; not marked in ciphertext.txt this pass
+c.	avec	word	275r	dotted letters	1	letter with dots above; not marked in ciphertext.txt this pass
+d.	au	word	275r	dotted letters	1	letter with dots above; not marked in ciphertext.txt this pass
+e.	aussy	word	275r	dotted letters	1	letter with dots above; not marked in ciphertext.txt this pass
+f.	ainsy	word	275r	dotted letters	1	letter with dots above; not marked in ciphertext.txt this pass
+g.	avant	word	275r	dotted letters	1	letter with dots above; not marked in ciphertext.txt this pass
+h.	avoir	word	275r	dotted letters	1	letter with dots above; not marked in ciphertext.txt this pass
+i.	allemand	word	275r	dotted letters	1	letter with dots above; not marked in ciphertext.txt this pass
+k.	argent	word	275r	dotted letters	1	letter with dots above; not marked in ciphertext.txt this pass
+l.	Allemagne	word	275r	dotted letters	1	letter with dots above; not marked in ciphertext.txt this pass
+m.	Bade	word	275r	dotted letters	1	letter with dots above; not marked in ciphertext.txt this pass
+n.	bourgmestre	word	275r	dotted letters	1	letter with dots above; not marked in ciphertext.txt this pass
+o.	baron	word	275r	dotted letters	1	letter with dots above; not marked in ciphertext.txt this pass
+p.	bon	word	275r	dotted letters	1	letter with dots above; not marked in ciphertext.txt this pass
+q.	bien	word	275r	dotted letters	1	letter with dots above; not marked in ciphertext.txt this pass
+r.	beaucoup	word	275r	dotted letters	1	letter with dots above; not marked in ciphertext.txt this pass
+s.	bataille	word	275r	dotted letters	1	letter with dots above; not marked in ciphertext.txt this pass
+t.	chevaulx	word	275r	dotted letters	1	letter with dots above; not marked in ciphertext.txt this pass
+u.	ce	word	275r	dotted letters	1	letter with dots above; not marked in ciphertext.txt this pass
+y.	amy	word	275r	dotted letters	1	letter with dots above; not marked in ciphertext.txt this pass
+z.	ceulx	word	275r	dotted letters	1	letter with dots above; not marked in ciphertext.txt this pass

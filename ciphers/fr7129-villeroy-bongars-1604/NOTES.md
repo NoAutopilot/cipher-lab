@@ -347,3 +347,73 @@ alphabet-grid read). Files: `images/keys/{manifest.json,f268r_canvas541.jpg,f268
 f270r_canvas545.jpg,f271r_canvas547.jpg,f274r_canvas553.jpg,f275r_canvas555.jpg}`, `keys/{key_f274.tsv,
 key_f274_names.tsv,key_f270.tsv}`, `ciphertext_candidate.txt`, `shape_test_f274.py`, KEY-DESIGN.tsv (rebuilt),
 KEY-OFFICES.tsv (+1 row).
+
+## Reading attempt (VB-DECODE, 26 Sept 2026): gate NOT met
+
+Per `.claude/briefs/runs/2026-09-26-parent-vb-decode.md`. Status unchanged: `blocked` (the M9 gate). No class, no
+novelty wording (rule 10). No grades are given to any token (rule 4), because the control gate below was not cleared.
+
+**1. Transcription of record (`ciphertext.txt`).** 13 lines: 8 at the foot of f.268r (from "mais") and 5 at the top of
+f.268v. Two blind Sonnet passes on line crops (no key, no candidate) gave 341 and 299 tokens; pass B slipped a line on
+recto 4-8. The worker reconciled from the crops into 362 tokens. **Caveat:** the reconciliation was key-aware. The
+glyph families (plain y, tailed 3, hooked Z, the crossed-ff/pi ligature, round d, and the hook with minims) cannot be
+separated without the f.275 key and the f.228 look-alike table, so sign ids were assigned with both in view. Per-token
+agreement with the blind passes, on normalized forms: both passes 123, pass A only 101, pass B only 26, neither 112
+(34% both, 69% at least one). The unresolved count is effectively the 112 with neither pass behind them, plus every
+token in the ambiguous families. `ciphertext_candidate.txt` is marked superseded.
+
+**2. Key of record (`keys/key_f275.tsv`, 214 rows, 86 unclear).** f.275r is written sideways (read rotated 90 deg).
+Layout, all read this pass:
+- a homophonic alphabet (a-z less j/k/v/w, plus a last column read as con/com) with 2-5 signs each;
+- alphabetical word lists: plain 6-99 (combat, comme, cela ... que; paix, Holande and Flandres get symbols), overbarred
+  1-43 (qui, quoy, quand ... Zelandois), and dotted letters for a-/b- words (Ambassadeur ... ceulx);
+- drawn symbols for about 60 names (not transcribed; none identified in the block);
+- notes: a doubling sign ("... doublera son prochain") and null signs ("tout ce qui sera entre deux ... sera nul").
+
+Sources: blind reads A and B of the crops (B's alphabet is offset by one column on the left half; A's alphabet is
+unusable; both misaligned the word numbers across columns), the worker's third read, and **BnF fr.7131 f.228r**
+(Gallica `btv1b10509420g`, canvas f469; 2 gallica requests). f.228 is the period look-alike table Tomokiyo names: signs
+grouped under the letter they resemble, with the plaintext below. It is written up in `keys/aid_f228.tsv` (one read,
+the worker's own). It independently confirms most of the f.275 alphabet column by column (for example y/3/x = a,
+6/3/dagger-t = t, b/m/co/ba = u, a/Z/circle-dot = s, ri/sin = z, b-bar/ur/ut = the last column). Registered in
+KEY-OFFICES.tsv; KEY-DESIGN.tsv rebuilt; `tools/key_design.py --check` passes.
+
+**3. Control, run before the decode was read** (`python3 decode_f275.py --control`; the fr16 4-gram model of
+`tools/judge_plaintext.py`, Lettres de Catherine de Medicis t.1, over the letters of the decode; N=566 letters):
+
+```
+real key score -1.4003; 20 class-shuffled keys mean -1.4768 sd 0.0720 min -1.5903 max -1.3578; z 1.06; rank 4 of 21
+per line z (real line vs the same line under the 20 shuffled keys):
+r1 0.87  r2 -0.39  r3 1.63  r4 0.04  r5 -0.32  r6 -0.86  r7 0.29  r8 1.53  v1 2.44 (rank 1)  v2 0.06  v3 3.34 (rank 1)  v4 -1.28  v5 -0.21
+```
+`tools/judge_plaintext.py` on the decode (a scratch spec, language fr): `FAIL language: score=-1.4, null_p99=-1.88,
+real_p05=-0.886, real_median=-0.784, N=566`. The decode is above the letter-shuffle null but far below real French.
+
+About the leave-one-line-out gate: `tools/interlinear_align.py` needs a plaintext span, and there is none for this
+block. A period key is also fixed, so no line can be "predicted from the others". The per-line z above is the nearest
+honest analogue: 2 of 13 lines beat all 20 shuffled keys (v1, v3), and 11 do not.
+
+**4. The decode (`reading.txt`, from `decode_f275.py`; 358 of 362 tokens map to a key value, 4 [?]).** It is not a
+reading. Fragments look like French: v1 has "le s Espagnols ... en com en t tous i?urs qui l est tout a leur de ... est",
+and "tous ... iours" needs the 9-shaped g read as o (the aid's G family allows g = f or o). Most lines are noise. The
+plain 7 decodes as "comme" about ten times and the overbarred 7 as "feu" eight times, far above any plausible rate.
+That suggests single digits in the block (at least 7, 9 and 6) are letter signs rather than word codes: f.228 already
+lists 3, 4, 5 and 6 as letters. It also suggests the ambiguous families are mis-assigned. The check-solved phrase sweep
+was not run (the brief runs it only on a cleared gate).
+
+**Named next step (the stuck rule, one different thing): a glyph-matching transcription pass against the period
+aid.** A subagent is shown f.228's cells as the reference sheet plus one line crop at a time. It reports, per token, the
+f.228 cell (family, upper sign) it matches, or "no match", and digits are kept apart from letter-signs. This makes the
+reconciliation's key-aware step explicit and repeatable instead of the worker's eye, then `decode_f275.py --control`
+runs unchanged. Not run this pass, to stay inside the USD 15 cap. Cost: 13 line units
+x 2 blind passes + 1 reconciliation, at about USD 0.6 per Sonnet crop call (this job's own four reads), about USD 16 if
+run in full; the verso alone (5 lines, where v1/v3 already lead) costs about USD 6.
+A matched control that would make any later result mean something: the same key applied to a sibling letter in the
+same cipher (f.253-f.267 per Tomokiyo; the IMG-FETCH sweep shows cipher letters at f.258, f.260 and f.262-263). If
+one carries an interlinear decipherment, it is a known-plaintext check of the key and the transcription method.
+
+Files: `ciphertext.txt`, `keys/key_f275.tsv`, `keys/aid_f228.tsv`, `decode_f275.py`, `reading.txt` (candidate decode,
+not a reading). No image was added to the folder: it already held 29, over the 20 cap, before this job. Crops and the
+fr.7131 f.228 image are in the worker's scratch and can be re-fetched from the URLs above. Requests: gallica.bnf.fr 3
+(1 SRU, 1 manifest via gallica_folio.py, 1 native image). Subagents: 4 Sonnet (two blind cipher passes, two blind key
+reads).

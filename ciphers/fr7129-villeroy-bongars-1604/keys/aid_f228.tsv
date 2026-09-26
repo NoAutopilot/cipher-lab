@@ -1,0 +1,88 @@
+# BnF fr.7131 f.228r (Gallica btv1b10509420g canvas f469), the look-alike sign table Tomokiyo names for cipher no.3.
+# Read by VB-DECODE (one read, the worker's own, 26 Sept 2026) from native-resolution crops; a THIRD source only,
+# used to settle disagreements between the two blind reads of f.275. Layout: signs grouped under the Latin letter
+# they resemble (family); upper cell = the cipher sign, lower cell = its plaintext value. unclear=1 where the cell
+# could not be read with confidence.
+family	sign	value	unclear	note
+A	a	s	0
+B	6	t	0	secretary b-shape with open loop
+B	b	u	0
+B	b-bar	com	1	lower cell is the curled sign that heads the last f.275 column (read as con/com)
+B	ba	u	0
+C	c	q	0
+C	co	u	0
+D	d-round	q	0
+D	d-round2	s	0	second round d, heavier head
+D	d	r	0
+D	d-hook	o	1
+D	dd	x	0
+E	e-var	o	1
+E	e	p	0
+F	ff-crossed	r	1
+F	ff	q	0
+F	f-bold	p	0
+F	f	o	0
+G	g-var	p	1
+G	g	f	0
+G	g-var2	o	1
+H	h	m	0
+H	h-boxed	z	1
+I	i	n	0
+K	k	n	0
+L	4	y	0
+L	t-like	z	1
+L	l	m	0
+L	cc	n	0
+M	m-var	x	1
+M	m	u	1
+M	m-tail	l	1
+M	m-var2	a	1
+N	n	m	0
+N	n-3	i	1
+N	mm-hooked	l	1
+N	mm	i	1
+O	o-bar	s	0
+O	o	e	0
+O	oo	y	0
+P	l-bold	c	1
+P	p	i	0
+P	p-var	e	0
+Q	q-crossed	?	1	lower cell illegible
+Q	qo	h	0
+Q	q	e	0
+Q	l-var	g	1
+Q	q-var	r	1
+R	r-4	g	1
+R	r	e	0
+R	r-var	f	1
+R	ri	z	1
+S	s	i	0
+S	long-s	d	0
+S	ss	g	0
+S	ff-s	h	1
+S	sin	z	1
+T	t	b	1	lower cell a secretary b (reads like 6)
+T	tt	d	0
+T	t-tail	t	0
+T	ttt	n	1
+U	v	o	1
+U	v-var	c	1
+U	8	b	1
+U	u	c	1
+U	x-w	x	1
+U	ur	com	1
+U	ut	com	1
+X	3-tail	c	1
+X	x	a	0
+X	p-hook	b	1
+Y	y	a	0
+Y	r-hook	r	1
+Y	3	t	1
+Z	Z	s	0
+Z	3	a	1
+Z	4	f	1
+HOOK	r-bar	a	1	under the hook family (C-sign)
+HOOK	r	f	1
+-	3	a	0	loose cells at the foot
+-	4	f	0
+-	5	i	1
