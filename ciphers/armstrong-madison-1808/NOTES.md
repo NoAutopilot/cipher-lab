@@ -968,3 +968,32 @@ far wider at the target's own scale, so this is a non-result (no signal detected
 closed-set adjacency positions are licensed as crib candidates for 3b's U5. Full numbers, both controls and
 the top adjacent values (listed for the record, not as cribs) in HYPOTHESES.md "Family S2, ARM3-ADJ
 run-adjacency structure". Script: `adj/adj_test.py`; raw output `adj/run_log.json`.
+
+## ARM3-LIVCODE pass, 26 Sept 2026 (LANE ARM3 worker ARM3-LIVCODE) -- Livingston's own code screened, no pool candidate
+
+Full detail in `HYPOTHESES.md`'s "Family E, ARM3-LIVCODE" section and `pool/liv/` (`weber_snippets.md`,
+`king_correspondence.md`, `manifest.tsv`). Short version: Livingston's own 1803-04 coded despatches to/from
+Madison are real and locatable (loc.gov's James Madison Papers collection tags nine items 1803-04 "In cipher"
+or "Partly in cipher" -- the correct window nobody had screened before, since ARM-LIV's earlier Livingston
+sweep covered only his 1807-09 letters, all clear). Fetched and screened five of these directly (native-
+resolution manuscript images, `tools/iiif_lines.py` line crops, read by this worker, not a subagent): none
+matches the target's own digit signature (43% digit-0/1, 13% digit-2/3/5/9) or ordinary THE=972 office usage
+either -- consistent with these being genuine specimens of WE027, Livingston's own distinct nomenclator, per
+Weber 1979 (be-api full-text search, print-disabled item): "reconstructed over 1000 of the elements in the
+WE027 code. Livingston to King, Paris, January 25, 1802" and, separately, that despatches to Secretary of
+State Madison "continued to be masked in the WE027 nomenclator" -- both facts resolve, not deepen, ARM3-COR's
+own flagged README discrepancy (WE027 is Livingston's code used with both King and Madison, not King-only).
+The printed *Life and Correspondence of Rufus King* (vol. IV, 1802-04) supplied one genuine raw specimen the
+1894-1900 edition's own editor marked "Not deciphered": a single group **786** and a repeated three-number
+group **128. 55. 28**, too few values for a screen but structurally distinct from the target's flat
+one-group-per-word design. No family-C-relevant discovery (no key, no larger WE027 table, no match); named
+for a successor: the Irving Brant Papers (LOC), Weber's own worksheets source, as the likeliest place an
+actual WE027 table survives.
+
+Requests: be-api.us.archive.org 12 (Weber). www.loc.gov 4 (collection searches) + item-metadata fetches folded
+into the same host count. tile.loc.gov 11 (6 thumbnails + 5 native-resolution page fetches). archive.org 4
+(2 advancedsearch.php + 2 `_djvu.txt`, King vols III-IV; both djvu fetches needed `-L` to follow a redirect a
+bare `curl -sS` silently swallowed as 0 bytes -- worth a playbook note, not added here). All >=1.5s apart,
+descriptive User-Agent, no 429/403/challenge on any host. No logins, no credentials touched, no subagent
+calls (numpy/Pillow installed via pip this session to run `tools/iiif_lines.py` locally; not present at
+session start).

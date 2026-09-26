@@ -1207,3 +1207,70 @@ round "if 3a found any" -- this job found none that clear its own gate, so 3b's 
 no crib positions from this family to seed with; 17/18/38/1/14/47/48 (ARM-DESIGN's known particle-block
 top values) recur among the adjacent values above only because they are the letter's commonest values
 overall, not because adjacency singles them out.
+
+## Family E, ARM3-LIVCODE Livingston's own code, 1801-04 despatches (26 Sept 2026, LANE ARM3 worker ARM3-LIVCODE)
+
+Screen/search per the brief (U1-U3), following ARM3-COR's WE027 lead. No pool candidate found: Livingston's
+own 1803-04 coded letters to/from Madison are real (loc.gov's own item titles flag them "In cipher" /
+"Partly in cipher"), fetched and screened directly, but none matches the target's digit signature, and the
+overlap test's own matched controls (rule 3) rule out chance agreement rather than confirm it. Full detail,
+manifest and screen outputs in `pool/liv/` (`weber_snippets.md`, `king_correspondence.md`, `manifest.tsv`,
+`img/`). Files under 10 MB (8.9 MB `pool/liv/`).
+
+**U1 (Weber 1979, be-api full-text, `unitedstatesdipl0000webe`).** Resolves ARM3-COR's own flagged
+discrepancy in `tools/data/uscodes-1800/README.md` rather than deepening it: Weber's own text says WE027's
+reconstruction (over 1000 of its elements) is sourced to "**Livingston to King, Paris, January 25, 1802**"
+*and*, separately, that despatches "**to Secretary of State James Madison** continued to be masked in the
+WE027 nomenclator" -- both true at once. WE027 is Livingston's own working nomenclator, used with more than
+one correspondent (Madison as Secretary of State, and King), not a King-only channel as ARM3-COR's flag
+implied. Not corrected in that README (out of this job's file list, named in ROOM.md per the brief). Weber's
+source for his own reconstruction: the **Irving Brant Papers, Library of Congress** (Brant, Madison's
+biographer) -- a further lead for an actual WE027 table, untried this pass. No code anywhere in this book is
+newly tied to Armstrong or to a correspondent-and-Armstrong pairing (consistent with ARM3-COR's own finding).
+
+**U2 (loc.gov James Madison Papers, `q="Robert R. Livingston"&dates=1801/1804`, 18 hits).** Nine items carry
+the collection's own "In cipher" / "Partly in cipher" tag, 1803-1804 (the correct window: Livingston reached
+Paris Dec 1801, and this collection has no cipher-tagged Livingston item before Sept 1803). Six candidates
+selected (the brief's own "up to six"); **five screened, one (mjm014253) fetched but not located within the
+box.** Full table in `pool/liv/manifest.tsv`. Every screened line: coverage against `THE972_bourdeau.tsv`
+25-58% (not the near-total 70-93% ARM-POOL2/ARM-LIV/ARM-JEF found for genuine THE=972 office correspondence,
+cycle 2's own table above), digit-2/3/5/9 share 25-50% (the target's own is 13%; THE=972 real usage is
+"flat-with-noise" per `signature_test.py`'s own reference), digit-0/1 share 9-27% (the target's own is 43%).
+**None of the five lines matches either reference shape cleanly** -- this is neither the target's code nor
+ordinary THE=972 usage, consistent with these being genuine WE027 specimens (a third, distinct nomenclator).
+`pool/cor/overlap_test.py`'s matched control (rule 3) confirms this is not chance agreement either way: every
+line scores at or below both controls (THE=972 pooled sample 1.2%, 200 random draws' own chance rate), so the
+absence of shared top-20 values is a real negative, not a test with no discriminating power. **No line from
+any of the five candidates is a pool candidate on either test.**
+
+**U3 (Rufus King printed correspondence, vols III-IV, `_djvu.txt` regex).** Vol III (`lifecorresponden03king`,
+1799-1801 by its own year histogram) predates Livingston's Paris arrival and carries no relevant cipher
+material. Vol IV (`lifecorresponden04king`, 1802-1804) carries six cipher passages, all already decoded by the
+editor (Charles R. King) and printed as italicized plain English ("*Italics in cipher.*") -- a period key
+already in the King family's hands, not a fresh recovery opportunity. **One genuine specimen of raw,
+editor-admitted-undeciphered code found**: King to Secretary of State [Madison], No. 61, London, 7 Apr 1802,
+p.98-99: a single group **786** and a repeated three-number group **128. 55. 28** (same referent both times),
+both marked "`* Not deciphered.`" by the 1894-1900 edition's own editor. Too few distinct values (4) for a
+signature/overlap screen, but structurally notable: a fixed *three*-number sequence standing for one word/name
+is not the target's own flat one-group-per-word shape (ARM-DESIGN's verdict) -- a hint, not resolved here, that
+WE027 may mix addressing conventions in a way the target's code does not.
+
+**Net effect on family E:** no pool candidate from Livingston's own 1801-04 correspondence, in either
+direction (Livingston-to-Madison or Madison-to-Livingston) or via King. This is now the *third* independent
+sweep (after ARM-POOL2/ARM-LIV/ARM-JEF's 1807-09 Livingston screen and ARM3-COR's Bowdoin/Warden/Skipwith/
+Parker/Barlow/Mason sweep) to find real coded correspondence that is neither the target's code nor a match on
+the overlap test. Named for a successor, not attempted here: (a) the Irving Brant Papers (LOC) as Weber's own
+worksheets source, which might hold an actual WE027 table rather than a specimen; (b) the sixth Madison-Papers
+candidate (mjm014253) and the remaining 3 of the 9 cipher-tagged items (mjm014252, mjm014233, mjm014277 --
+duplicates/extracts of dates already screened here) if a fuller WE027 profile is wanted; (c) confirming
+whether WE027's own shape (once a table exists) resembles the target's more closely than these small samples
+suggest -- 11-16 groups per letter is a screen, not a control-backed family test (rule 3), and family C's own
+gate (ARM-C1) would still need a much larger N than any single Livingston letter offers.
+
+Requests this pass: be-api.us.archive.org 12 (Weber WE027 queries). www.loc.gov 4 (1 collection search each for
+james-madison-papers/thomas-jefferson-papers/james-monroe-papers at dates=1801/1804 + item-metadata `?fo=json`
+fetches folded into the same count where cached). tile.loc.gov: 6 service-derivative thumbnails + 5 master
+native-resolution page fetches. archive.org: 2 advancedsearch.php + 2 `_djvu.txt` downloads (King vols III-IV).
+All >=1.5s apart, descriptive User-Agent, no 429/403/challenge seen on any host. No logins, no credentials
+touched. No subagent calls (all image reads and transcription done directly by this worker, per the brief's
+own "SCRIPT FIRST" convention -- signature_test.py/overlap_test.py run before any judgement was made).
