@@ -642,3 +642,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T00:48Z	session_01LyZokc7XR1SYPKgWTCFMUX	retrospective m done $2.36 D, archived	RETRO-2026-09-26a.md, 5 proposals; RETRO-APPLY-M pending (7e)
 2026-09-26T00:48Z	session_01JU8giKGTHWz4Zm1HyWK1VW	SCOUT-RERANK done $1.64 D, archived	QUEUE.md section 'Re-rank for LANE B5'; B5 pending (7e)
 2026-09-26T00:48Z	session_01744aLgcLnadR1XQckyHwcu	parent 7d done $41.40, handed over to 7e	20:01 UTC 25 Sept to 00:48 UTC 26 Sept; 609k context
+2026-09-26T00:49Z	session_01SvjMDFfJZJ3uK47RYxAQrM	parent 7e (Fable, live)	took over from 7d at 00:49; hub-seed/SUCCESSOR-PROMPT.md; arms its own first check-in
