@@ -1,0 +1,31 @@
+{
+ "statistic": "max(z_ngram, z_valuefreq) vs 20 class-shuffled-value keys",
+ "stat_min": 3.292,
+ "min_tokens": 100,
+ "min_coverage": 0.5,
+ "n_verified_in_stratum": 13,
+ "n_verified_below": 5,
+ "below_stratum": [
+  "ciphers/fr2980-gramont/key_extension_f30.tsv <- ciphers/fr2980-gramont/ciphertext_f30.tsv (n=1969, cov=0.102, stat=2.37)",
+  "ciphers/fr20140-danzay-1557/key.tsv <- ciphers/fr20140-danzay-1557/ciphertext_f36.tsv (n=67, cov=0.94, stat=2.53)",
+  "ciphers/lodewijk-van-nassau-1573-74/key.tsv <- ciphers/lodewijk-van-nassau-1573-74/ciphertext_5797.tsv (n=73, cov=0.589, stat=3.29)",
+  "ciphers/jan-van-nassau-1572-75/key_1572.tsv <- ciphers/jan-van-nassau-1572-75/ciphertext_5551.tsv (n=32, cov=0.5, stat=-0.58)",
+  "ciphers/antt-linhares-chave/key.tsv <- ciphers/antt-linhares-chave/ciphertext.tsv (n=26, cov=1.0, stat=0.75)"
+ ],
+ "fp": 3,
+ "n_null": 260,
+ "fp_rate": 0.0115,
+ "null_stat_p99": 3.498,
+ "margin_over_null_p99": -0.206,
+ "meets_target": false,
+ "admit_all_stat_min": -0.582,
+ "admit_all_fp": 336,
+ "admit_all_n_null": 360,
+ "admit_all_fp_rate": 0.9333,
+ "n_print_in_stratum": 7,
+ "print_admitted": 6,
+ "order_shuffle_pass": 50,
+ "order_shuffle_n": 65,
+ "n_shuffle": 20,
+ "fitted": "tools/key_crossmatch.py --calibrate (XMATCH-CAL, 26 Sept 2026)"
+}

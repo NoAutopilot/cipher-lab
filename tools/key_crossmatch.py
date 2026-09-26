@@ -2,6 +2,9 @@
 """key_crossmatch.py: can any key table we hold read any ciphertext on disk it was not built for? (LANE KX job 1)
 
   python3 tools/key_crossmatch.py                 run the full sweep, write KEY-CROSSMATCH.tsv + print a summary
+  python3 tools/key_crossmatch.py --calibrate     fit the gate on the verified readings (KEY-CROSSMATCH-CAL.tsv)
+  python3 tools/key_crossmatch.py --since-hours 25 --post-room
+                                                  nightly: pairs whose key or ciphertext changed, hits to ROOM.md
   python3 tools/key_crossmatch.py --help
   python3 tools/tests/test_key_crossmatch.py       offline test: positive control on two small fixtures
 
@@ -49,6 +52,11 @@ Pipeline (CLAUDE.md rules 3, 4, 7; LANE KX job briefs 2026-09-25, jobs 1 and 1b)
   7. Positive control: every key must rank its own ciphertext(s) first among all same-sign-type ciphertexts,
      own-quality (z_shuffled>=4, pass_real, pass_null), before any other row involving it is trusted; a key
      that fails is marked 'unusable' with the reason and excluded from the hit list.
+
+  8. (XMATCH-CAL, 26 Sept 2026: supersedes the verdict rules of items 6-7.) Verdicts come from a gate fitted by
+     --calibrate on the verified readings (VERIFIED_PAIRS): stat = max(z 4-gram, z value-frequency) against 20
+     class-shuffled-value keys, hit when stat >= the gate on a ciphertext of >= MIN_TOKENS tokens with coverage
+     >= 0.5, 'short' when it clears on a shorter text. Numbers and caveats: KEY-CROSSMATCH.md, KEY-CROSSMATCH-CAL.tsv.
 
 Output: KEY-CROSSMATCH.tsv (all pairs with coverage >= 0.5, plus the forced known/negative pairs and the
 positive-control rows) and KEY-CROSSMATCH.md (method, positive-control table, hit list, at most 50 lines).
@@ -775,8 +783,42 @@ def get_model(lang, exclude_folder=None, corpora_map=None):
         _MODEL_CACHE[key] = None
         return None
     model = jp.NgramModel(texts)
+    attach_freqs(model, texts)
     _MODEL_CACHE[key] = model
     return model
+
+
+def attach_freqs(model, texts):
+    """Word and letter relative frequencies from the same corpus texts, for value_freq_score (XMATCH-CAL)."""
+    from collections import Counter
+    words = Counter()
+    for t in texts:
+        words.update(jp.fold(w) for w in re.findall(r"[^\W\d_]+", t))
+    words.pop('', None)
+    letters = Counter(model.raw)
+    model.word_tot = sum(words.values()) or 1
+    model.letter_tot = sum(letters.values()) or 1
+    model.wordfreq, model.letterfreq = words, letters
+
+
+def value_freq_score(key, signs, model, floor=1e-7):
+    """Mean log10 corpus frequency of each decoded token's value: a single letter by its letter share, a longer
+    value by its share as a whole word (floor for a value never seen as a word, e.g. a syllable or a name). A
+    true key sends the text's frequent codes to the language's frequent letters and words ('de', 'la', 'e');
+    a value-shuffled key does not. The letter 4-gram score cannot see this for a code whose values are all
+    whole words, because any shuffle of words still reads as words (XMATCH-CAL: 7 of 18 verified pairs had
+    n-gram z_shuffled < 2 for that reason)."""
+    tot = n = 0
+    for sg in signs:
+        row = key.get(sg)
+        if not row or not row.get('value'):
+            continue
+        v = jp.fold(row['value'].split('|')[0])
+        if not v:
+            continue
+        f = (model.letterfreq.get(v, 0) / model.letter_tot) if len(v) == 1 else (model.wordfreq.get(v, 0) / model.word_tot)
+        tot += math.log10(max(f, floor)); n += 1
+    return tot / n if n else None
 
 
 # ==================================================================== decode + score
@@ -866,20 +908,20 @@ def lang_controls(model, N, samples=CONTROLS_SAMPLES):
     return _CONTROLS_CACHE[key]
 
 
-def score_one_pair(key, meta, c, corpora_map, n_shuffle=20, seed=0, controls_samples=CONTROLS_SAMPLES):
+def score_one_pair(key, meta, c, corpora_map, n_shuffle=20, seed=0, controls_samples=CONTROLS_SAMPLES, gate=None):
     """Full scoring for one (key, ciphertext) pair: coverage gate, shuffled-key control (z_shuffled), and the
     calibrated real-text / null-window controls (pass_real, pass_null, dictword_share). Returns a dict with
-    the tsv-ready fields plus _real/_z_sh for ranking; verdict is 'none'/'no_corpus'/'hit'/'weak' -- the
+    the tsv-ready fields plus _real/_z_sh for ranking; verdict is 'none'/'no_corpus'/'hit'/'short'/'uncalibrated' (gate_verdict) -- the
     caller overrides to 'own' by own_cts membership, which this function does not know about."""
     cov = coverage_of(key, c['signs'])
     model = get_model(meta['lang'], exclude_folder=c['folder'], corpora_map=corpora_map)
-    out = dict(coverage=round(cov, 3), score='', z_shuffled='', pass_real='', pass_null='', dictword_share='',
-               _real=None, _z_sh=None)
+    out = dict(coverage=round(cov, 3), score='', z_shuffled='', z_valuefreq='', stat='', n_tokens=len(c['signs']),
+               pass_real='', pass_null='', dictword_share='', _real=None, _z_sh=None, _stat=None)
     if cov < 0.5 or model is None:
         out['verdict'] = 'none' if model else 'no_corpus'
         return out
-    real, shuffles = score_pair(key, meta, c['signs'], model, n_shuffle=n_shuffle, seed=seed)
-    z_sh = zscore(real, shuffles)
+    ps = pair_stats(key, c['signs'], model, n_shuffle=n_shuffle, seed=seed)
+    real, z_sh, z_vf, stat = ps['own']['score'], ps['own']['z_ng'], ps['own']['z_vf'], ps['own']['stat']
     text, _ = decode_with(key, c['signs'])
     N = len(jp.fold(text))
     ctrl = lang_controls(model, N, samples=controls_samples)
@@ -892,14 +934,255 @@ def score_one_pair(key, meta, c, corpora_map, n_shuffle=20, seed=0, controls_sam
         pass_null = pass_real = False
         dictword_share = 0.0
     out.update(score=round(real, 4), z_shuffled=round(z_sh, 2) if z_sh is not None else '',
-               pass_real=pass_real, pass_null=pass_null, dictword_share=dictword_share, _real=real, _z_sh=z_sh)
-    if cov >= 0.7 and z_sh is not None and z_sh >= 4 and pass_real and pass_null:
-        out['verdict'] = 'hit'
-    elif cov >= 0.5 and z_sh is not None and z_sh >= 3 and pass_null:
-        out['verdict'] = 'weak'
-    else:
-        out['verdict'] = 'none'
+               z_valuefreq=round(z_vf, 2) if z_vf is not None else '', stat=round(stat, 2) if stat is not None else '',
+               n_tokens=len(c['signs']),
+               pass_real=pass_real, pass_null=pass_null, dictword_share=dictword_share, _real=real, _z_sh=z_sh,
+               _stat=stat)
+    out['verdict'] = gate_verdict(stat, cov, len(c['signs']), gate or load_gate())
     return out
+
+
+def gate_verdict(stat, coverage, n_tokens, gate):
+    """hit: clears the calibrated gate (KEY-CROSSMATCH-CAL.tsv) in the stratum it was fitted on; short: clears
+    the stat but the ciphertext is below the calibrated length, where no gate separated verified pairs from the
+    null (a lead to read by eye, not a hit); none otherwise. With no gate file on disk, 'uncalibrated'."""
+    if gate is None:
+        return 'uncalibrated'
+    if stat is None or coverage < gate['min_coverage'] or stat < gate['stat_min']:
+        return 'none'
+    return 'hit' if n_tokens >= gate['min_tokens'] else 'short'
+
+
+# ==================================================================== calibrated gate (XMATCH-CAL, 26 Sept 2026)
+# The 25 Sept verdict required pass_real, which cleared for none of the 35 own-text pairs, including the
+# independently verified readings: the gate was set by the corpus, not by our own known-good decodes. The gate is
+# now fitted to them. Positive controls: every own-text pair whose reading is verified (status.json N3/N4 after
+# two audits, V-GATE2 26 Sept 2026 18:03; plus oxenstierna, which the brief names as independently verified).
+# Null: the same key with its values shuffled among its own codes, 20 draws per pair, each draw scored as if it
+# were a candidate (its z against the other 19 draws: leave-one-out). A shuffled-value key is exactly "a key of
+# the same design, the same value set, the wrong mapping" -- the thing a cross-match hit must beat. Two
+# statistics: z_shuffled (the decode against its own key-shuffle null) and lang_pos, the decode's place between
+# the corpus's shuffled-window 99th percentile (0) and its real-window 5th percentile (1) at the same length --
+# a continuous version of pass_null/pass_real. The gate is the pair (z_min, pos_min) = the smallest value any
+# verified pair reaches on each, so every verified pair is admitted by construction; the false-positive rate is
+# the share of null draws that clear both. Fitted by `--calibrate`, stored in GATE_FILE, read by the sweep.
+GATE_FILE = DATA / 'key_crossmatch_gate.json'
+CAL_TSV = ROOT / 'KEY-CROSSMATCH-CAL.tsv'
+# (key path, ciphertext path, tier, why) -- tier 'verified' fits the gate; tier 'print' (plaintext already in
+# print, N0/N1 rows) is scored and reported as a check on the gate, never used to fit it.
+VERIFIED_PAIRS = [
+    ('ciphers/fr2980-gramont/key.tsv', 'ciphers/fr2980-gramont/ciphertext.txt', 'verified', 'N4 two audits (f.29r)'),
+    ('ciphers/fr2980-gramont/key_extension_f30.tsv', 'ciphers/fr2980-gramont/ciphertext_f30.tsv', 'verified', 'N4 two audits (f.30)'),
+    ('ciphers/fr20140-danzay-1557/key.tsv', 'ciphers/fr20140-danzay-1557/ciphertext.txt', 'verified', 'N3/N4 two audits'),
+    ('ciphers/fr20140-danzay-1557/key.tsv', 'ciphers/fr20140-danzay-1557/ciphertext_f36.tsv', 'verified', 'N3/N4 two audits'),
+    ('ciphers/lodewijk-van-nassau-1573-74/key.tsv', 'ciphers/lodewijk-van-nassau-1573-74/ciphertext_4610.tsv', 'verified', 'N3/N4 two audits'),
+    ('ciphers/lodewijk-van-nassau-1573-74/key.tsv', 'ciphers/lodewijk-van-nassau-1573-74/ciphertext_4611.tsv', 'verified', 'N3/N4 two audits'),
+    ('ciphers/lodewijk-van-nassau-1573-74/key.tsv', 'ciphers/lodewijk-van-nassau-1573-74/ciphertext_4612.tsv', 'verified', 'N3/N4 two audits'),
+    ('ciphers/lodewijk-van-nassau-1573-74/key.tsv', 'ciphers/lodewijk-van-nassau-1573-74/ciphertext_4616.tsv', 'verified', 'N3/N4 two audits'),
+    ('ciphers/lodewijk-van-nassau-1573-74/key.tsv', 'ciphers/lodewijk-van-nassau-1573-74/ciphertext_5797.tsv', 'verified', 'N4 two audits (5797)'),
+    ('ciphers/august-van-saksen-1561-64/key_53.tsv', 'ciphers/august-van-saksen-1561-64/ciphertext_53.tsv', 'verified', 'N4 two audits'),
+    ('ciphers/august-van-saksen-1561-64/key_74.tsv', 'ciphers/august-van-saksen-1561-64/ciphertext_57.tsv', 'verified', 'N4 two audits'),
+    ('ciphers/august-van-saksen-1561-64/key_98.tsv', 'ciphers/august-van-saksen-1561-64/ciphertext_126.tsv', 'verified', 'N4 two audits'),
+    ('ciphers/jan-van-nassau-1572-75/key_1572.tsv', 'ciphers/jan-van-nassau-1572-75/ciphertext_5551.tsv', 'verified', 'N3 two audits (5551)'),
+    ('ciphers/espagnol142-mercy-1648/key.tsv', 'ciphers/espagnol142-mercy-1648/ciphertext.tsv', 'verified', 'N3 two audits'),
+    ('ciphers/antt-linhares-chave/key.tsv', 'ciphers/antt-linhares-chave/ciphertext.tsv', 'verified', 'N3/N4 two audits'),
+    ('ciphers/vanbeuningen-dewitt-1657/key.tsv', 'ciphers/vanbeuningen-dewitt-1657/ciphertext.tsv', 'verified', 'N1/N3 two audits'),
+    ('ciphers/huntington-blathwayt-madrid-1728/key.tsv', 'ciphers/huntington-blathwayt-madrid-1728/ciphertext_targets.tsv', 'verified', 'N4 two audits'),
+    ('ciphers/oxenstierna-gustav-adolf-1632/key.tsv', 'ciphers/oxenstierna-gustav-adolf-1632/ciphertext_key.tsv', 'verified', 'named verified in the XMATCH-CAL brief'),
+    ('ciphers/clair1067-brienne-poland-1646/key_1646.tsv', 'ciphers/clair1067-brienne-poland-1646/ciphertext.txt', 'print', 'N0'),
+    ('ciphers/fr5160-letellier-1653/key_1659_f86only.tsv', 'ciphers/fr5160-letellier-1653/ciphertext_f86.tsv', 'print', 'N0'),
+    ('ciphers/huntington-luzerne-destouches-1781/key.tsv', 'ciphers/huntington-luzerne-destouches-1781/ciphertext.tsv', 'print', 'N0'),
+    ('ciphers/rah-canada-1869/key.tsv', 'ciphers/rah-canada-1869/ciphertext.tsv', 'print', 'N0'),
+    ('ciphers/clair349-este-guise-1556/key_decode.tsv', 'ciphers/clair349-este-guise-1556/ciphertext.tsv', 'print', 'N0'),
+    ('ciphers/gunther-van-schwarzburg-1561/key.tsv', 'ciphers/gunther-van-schwarzburg-1561/ciphertext.tsv', 'print', 'N0'),
+    ('ciphers/szembek-bk1560/key.tsv', 'ciphers/szembek-bk1560/ciphertext.tsv', 'print', 'N0'),
+    ('ciphers/rah-morillo-1817/key_5186.tsv', 'ciphers/rah-morillo-1817/ciphertext_5186.tsv', 'print', 'N0'),
+    ('ciphers/trew-posthius-1614-18/key.tsv', 'ciphers/trew-posthius-1614-18/ciphertext_1614.tsv', 'print', 'N0'),
+    ('ciphers/antt-fcc-costacabral-1865/key.tsv', 'ciphers/antt-fcc-costacabral-1865/ciphertext.tsv', 'print', 'N0'),
+    ('ciphers/bowes-walsingham-1583/key.tsv', 'ciphers/bowes-walsingham-1583/ciphertext.txt', 'print', 'N1'),
+    ('ciphers/thurloe-printed/key_montagu.tsv', 'ciphers/thurloe-printed/P11/ciphertext.txt', 'print', 'N0'),
+]
+
+
+MIN_TOKENS = 100   # below this many ciphertext tokens no gate separated verified pairs from the null (CAL.tsv)
+MIN_COVERAGE = 0.5
+
+
+def loo_z(scores):
+    """Leave-one-out z of each score against the others (a null draw treated as if it were a candidate)."""
+    return [zscore(s, scores[:i] + scores[i + 1:]) for i, s in enumerate(scores)]
+
+
+def lang_pos(score, real_c, null_c):
+    """0 at the corpus's shuffled-window 99th percentile, 1 at its real-window 5th percentile (same length)."""
+    lo, hi = jp.pct(null_c, 0.99), jp.pct(real_c, 0.05)
+    return 0.0 if hi == lo else (score - lo) / (hi - lo)
+
+
+def gate_stat(z_ng, z_vf):
+    """The gated statistic: the better of the letter 4-gram z and the value-frequency z, each against the same
+    shuffled-value keys. Letter-valued keys are read by the first, word-valued codes by the second."""
+    vals = [z for z in (z_ng, z_vf) if z is not None]
+    return max(vals) if vals else None
+
+
+def shuffled_key_by_class(key, rnd):
+    """Values shuffled among codes of the same value class only (single letter / longer value / null or empty).
+    A plain value shuffle also breaks the design's own structure ('letters on the low codes, words above'),
+    so any text whose frequent codes fall where the key keeps its letters beat it: the first calibrated sweep
+    found Lodewijk van Nassau's 1574 table 'reading' a 1636 Hessen letter and a 1712 Portuguese appendix that
+    way. Shuffling within class keeps that structure in the null and tests only the mapping itself."""
+    classes = {}
+    for c, row in key.items():
+        v = jp.fold((row.get('value') or '').split('|')[0])
+        classes.setdefault(0 if not v else (1 if len(v) == 1 else 2), []).append(c)
+    out = {}
+    for codes in classes.values():
+        vals = [key[c]['value'] for c in codes]
+        rnd.shuffle(vals)
+        out.update({c: {'value': v} for c, v in zip(codes, vals)})
+    return out
+
+
+def pair_stats(key, signs, model, n_shuffle=20, seed=0):
+    """Own and shuffled-value-key statistics on one token list: dict(own=(z_ng, z_vf, stat, score), nulls=[...])."""
+    rnd = random.Random(seed)
+    sks = [shuffled_key_by_class(key, rnd) for _ in range(n_shuffle)]
+    def ng(k):
+        t, _ = decode_with(k, signs)
+        return model.score(t) if t.strip() else -9.9
+    ng_real, vf_real = ng(key), value_freq_score(key, signs, model)
+    ng_sh = [ng(k) for k in sks]
+    vf_sh = [value_freq_score(k, signs, model) for k in sks]
+    vf_ok = vf_real is not None and all(v is not None for v in vf_sh)
+    z_ng = zscore(ng_real, ng_sh)
+    z_vf = zscore(vf_real, vf_sh) if vf_ok else None
+    own = dict(score=ng_real, z_ng=z_ng, z_vf=z_vf, stat=gate_stat(z_ng, z_vf))
+    lz_ng = loo_z(ng_sh)
+    lz_vf = loo_z(vf_sh) if vf_ok else [None] * n_shuffle
+    nulls = [dict(score=s, z_ng=a, z_vf=b, stat=gate_stat(a, b)) for s, a, b in zip(ng_sh, lz_ng, lz_vf)]
+    return dict(own=own, nulls=nulls)
+
+
+def calibrate_pair(key, meta, c, corpora_map, n_shuffle=20, seed=0, n_order=5):
+    """Own decode + n_shuffle shuffled-value decodes (the null) + n_order decodes of the token-order-shuffled
+    ciphertext (rule 3, RETRO-APPLY-T: the family's own decode of shuffled text)."""
+    model = get_model(meta['lang'], exclude_folder=c['folder'], corpora_map=corpora_map)
+    if model is None:
+        return None
+    signs = c['signs']
+    ps = pair_stats(key, signs, model, n_shuffle=n_shuffle, seed=seed)
+    text, _ = decode_with(key, signs)
+    N = len(jp.fold(text))
+    ctrl = lang_controls(model, N)
+    pos = lang_pos(ps['own']['score'], ctrl[0], ctrl[1]) if ctrl else None
+    rnd = random.Random(seed + 7)
+    orders = []
+    for i in range(n_order):
+        sh = list(signs); rnd.shuffle(sh)
+        orders.append(pair_stats(key, sh, model, n_shuffle=n_shuffle, seed=seed + 100 + i)['own'])
+    return dict(own=dict(ps['own'], pos=pos, N=N), nulls=ps['nulls'], orders=orders,
+                coverage=round(coverage_of(key, signs), 3), n_tokens=len(signs))
+
+
+def passes_gate(stat, gate):
+    return stat is not None and stat >= gate['stat_min']
+
+
+def fp_rate(stat_min, null_stats):
+    n = len(null_stats)
+    k = sum(1 for x in null_stats if x is not None and x >= stat_min)
+    return k, n
+
+
+def choose_gate(verified, null_stats, target_reject=0.99):
+    """verified: list of dicts with stat, n_tokens, coverage (tier 'verified' only); null_stats: the null draws'
+    stats from pairs in the gated stratum. Returns the gate for the stratum n_tokens >= MIN_TOKENS and
+    coverage >= MIN_COVERAGE (the smallest stat any verified pair there reaches, so all are admitted), its
+    false-positive rate, and the admit-all gate over every verified pair with its own false-positive rate."""
+    strat = [v for v in verified if v['n_tokens'] >= MIN_TOKENS and v['coverage'] >= MIN_COVERAGE]
+    below = [v for v in verified if v not in strat]
+    stat_min = math.floor(min(v['stat'] for v in strat) * 1000) / 1000  # floor: the minimum itself is admitted
+    k, n = fp_rate(stat_min, null_stats['stratum'])
+    ns = sorted((x for x in null_stats['stratum'] if x is not None), reverse=True)
+    p99 = ns[max(0, int(0.01 * len(ns)) - 1)] if ns else None
+    all_min = math.floor(min(v['stat'] for v in verified) * 1000) / 1000
+    ka, na = fp_rate(all_min, null_stats['all'])
+    return dict(statistic='max(z_ngram, z_valuefreq) vs 20 class-shuffled-value keys', stat_min=stat_min,
+                min_tokens=MIN_TOKENS, min_coverage=MIN_COVERAGE,
+                n_verified_in_stratum=len(strat), n_verified_below=len(below),
+                below_stratum=[f"{v['key_path']} <- {v['ciphertext_path']} (n={v['n_tokens']}, cov={v['coverage']}, stat={v['stat']:.2f})" for v in below],
+                fp=k, n_null=n, fp_rate=round(k / n, 4) if n else None, null_stat_p99=round(p99, 3) if p99 is not None else None,
+                margin_over_null_p99=round(stat_min - p99, 3) if p99 is not None else None,
+                meets_target=bool(n and k / n <= 1 - target_reject),
+                admit_all_stat_min=all_min, admit_all_fp=ka, admit_all_n_null=na,
+                admit_all_fp_rate=round(ka / na, 4) if na else None)
+
+
+def load_gate(path=None):
+    path = Path(path) if path else GATE_FILE
+    return json.loads(path.read_text()) if path.exists() else None
+
+
+def calibrate(out_tsv=CAL_TSV, gate_file=GATE_FILE, n_shuffle=20):
+    """Score every VERIFIED_PAIRS pair on disk, fit the gate on tier 'verified', write the TSV and gate file."""
+    by_lang = reading_files_by_lang()
+    corpora_map = build_repo_corpora()
+    rows, skipped = [], []
+    for kp, cp, tier, why in VERIFIED_PAIRS:
+        kpath, cpath = ROOT / kp, ROOT / cp
+        if not kpath.exists() or not cpath.exists():
+            skipped.append((kp, cp, 'not on disk')); continue
+        key, meta = load_key_meta(kpath)
+        if key is None:
+            skipped.append((kp, cp, f'key unparseable: {meta}')); continue
+        meta['lang'], _ = language_for(meta['folder'], meta['lang_hint'], by_lang)
+        c = load_ct_meta(cpath)
+        res = calibrate_pair(key, meta, c, corpora_map, n_shuffle=n_shuffle)
+        if res is None:
+            skipped.append((kp, cp, f"no scoring corpus for language '{meta['lang']}'")); continue
+        o = res['own']
+        rows.append(dict(tier=tier, why=why, key_path=kp, ciphertext_path=cp, lang=meta['lang'],
+                         coverage=res['coverage'], n_tokens=res['n_tokens'], N_letters=o['N'], score=o['score'],
+                         z_ng=o['z_ng'], z_vf=o['z_vf'], stat=o['stat'], lang_pos=o['pos'],
+                         _nulls=res['nulls'], _orders=res['orders']))
+    ver = [r for r in rows if r['tier'] == 'verified']
+    def in_strat(r):
+        return r['n_tokens'] >= MIN_TOKENS and r['coverage'] >= MIN_COVERAGE
+    null_stats = dict(stratum=[d['stat'] for r in ver if in_strat(r) for d in r['_nulls']],
+                      all=[d['stat'] for r in ver for d in r['_nulls']])
+    gate = choose_gate(ver, null_stats)
+    for r in rows:
+        r['in_stratum'] = in_strat(r)
+        r['admitted'] = r['in_stratum'] and passes_gate(r['stat'], gate)
+        r['null_max'] = max((d['stat'] for d in r['_nulls'] if d['stat'] is not None), default=None)
+        r['null_pass'] = sum(1 for d in r['_nulls'] if passes_gate(d['stat'], gate))
+        r['order_pass'] = sum(1 for d in r['_orders'] if passes_gate(d['stat'], gate))
+    pr = [r for r in rows if r['tier'] == 'print' and r['in_stratum']]
+    gate.update(n_print_in_stratum=len(pr), print_admitted=sum(r['admitted'] for r in pr),
+                order_shuffle_pass=sum(r['order_pass'] for r in ver if r['in_stratum']),
+                order_shuffle_n=sum(len(r['_orders']) for r in ver if r['in_stratum']),
+                n_shuffle=n_shuffle, fitted='tools/key_crossmatch.py --calibrate (XMATCH-CAL, 26 Sept 2026)')
+    cols = ['tier', 'why', 'key_path', 'ciphertext_path', 'lang', 'coverage', 'n_tokens', 'N_letters', 'score',
+            'z_ng', 'z_vf', 'stat', 'lang_pos', 'in_stratum', 'admitted', 'null_max', 'null_pass', 'order_pass']
+    def fmt(v):
+        return f'{v:.3f}' if isinstance(v, float) else ('' if v is None else str(v))
+    with open(out_tsv, 'w', encoding='utf-8') as f:
+        f.write(f"# XMATCH-CAL gate: {gate['statistic']} >= {gate['stat_min']} for ciphertexts with >= {MIN_TOKENS} tokens "
+                f"and coverage >= {MIN_COVERAGE}. Admits {gate['n_verified_in_stratum']} of {gate['n_verified_in_stratum']} "
+                f"verified pairs in that stratum; shuffled-value null draws passing: {gate['fp']} of {gate['n_null']} "
+                f"(rate {gate['fp_rate']}, null p99 {gate['null_stat_p99']}, margin {gate['margin_over_null_p99']}). "
+                f"Admit-all gate (every verified pair, any length): >= {gate['admit_all_stat_min']}, null pass "
+                f"{gate['admit_all_fp']} of {gate['admit_all_n_null']} (rate {gate['admit_all_fp_rate']}). "
+                f"Print-tier admitted {gate['print_admitted']} of {gate['n_print_in_stratum']}. Token-order-shuffled own "
+                f"decodes passing {gate['order_shuffle_pass']} of {gate['order_shuffle_n']} (see KEY-CROSSMATCH.md).\n")
+        f.write('\t'.join(cols) + '\n')
+        for r in rows:
+            f.write('\t'.join(fmt(r.get(c)) for c in cols) + '\n')
+        for kp, cp, why in skipped:
+            f.write('\t'.join(['skipped', why, kp, cp] + [''] * (len(cols) - 4)) + '\n')
+    Path(gate_file).write_text(json.dumps(gate, indent=1) + '\n')
+    return gate, rows, skipped
 
 
 # ---------------------------------------------------------------- known-reuse and negative pairs (job §2, §3)
@@ -962,10 +1245,12 @@ def force_pairs(pairs_list, key_metas, ct_metas, corpora_map, rows, mark_known):
                 row = dict(ciphertext_path=c['path'], ct_status=c['status'], key_path=kp,
                            key_office=meta['office'], key_years=meta['years'], key_lang=meta['lang'],
                            design=meta['design'], coverage=res['coverage'], score=res['score'],
-                           z_shuffled=res['z_shuffled'], pass_real=res.get('pass_real', ''),
+                           z_shuffled=res['z_shuffled'], z_valuefreq=res['z_valuefreq'], stat=res['stat'],
+                           n_tokens=res['n_tokens'], pass_real=res.get('pass_real', ''),
                            pass_null=res.get('pass_null', ''), dictword_share=res.get('dictword_share', ''),
                            rank_of_this_key_for_ct='', known_pair=('yes' if mark_known else 'no'),
-                           verdict=res['verdict'], _real=res['_real'], _z_sh=res['_z_sh'])
+                           verdict=res['verdict'], gate_verdict=res['verdict'], _real=res['_real'],
+                           _z_sh=res['_z_sh'], _stat=res['_stat'])
                 rows.append(row)
                 results.append(dict(label=label, key=kp, ct=c['path'], coverage=row['coverage'],
                                      z_shuffled=row['z_shuffled'], verdict=row['verdict']))
@@ -974,7 +1259,10 @@ def force_pairs(pairs_list, key_metas, ct_metas, corpora_map, rows, mark_known):
 
 # ==================================================================== main sweep
 
-def run(alarm=None):
+def run(alarm=None, since_paths=None, gate=None, force=True):
+    """Full sweep; with since_paths (repo-relative paths changed since a git ref) only pairs whose key or
+    ciphertext is in that set are scored, and the forced known/negative pairs are skipped (nightly mode)."""
+    gate = gate or load_gate()
     keys_found, keys_dropped = find_key_files()
     cts_found, cts_dropped = find_ciphertext_files()
     by_lang = reading_files_by_lang()
@@ -1008,19 +1296,25 @@ def run(alarm=None):
 
     for p, key, meta in key_metas:
         candidates = [c for c in ct_metas if c['sign_type'] == meta['sign_type']]
+        if since_paths is not None and meta['path'] not in since_paths:
+            candidates = [c for c in candidates if c['path'] in since_paths]
+        if not candidates:
+            continue
         ranked_scores = []  # (real_score, ct_path) for own-text ranking
         for c in candidates:
-            res = score_one_pair(key, meta, c, corpora_map)
+            res = score_one_pair(key, meta, c, corpora_map, gate=gate)
             is_own = c['path'] in meta['own_cts']
             verdict = 'own' if is_own else res['verdict']
             rows.append(dict(ciphertext_path=c['path'], ct_status=c['status'], key_path=meta['path'],
                               key_office=meta['office'], key_years=meta['years'], key_lang=meta['lang'],
                               design=meta['design'], coverage=res['coverage'], score=res['score'],
-                              z_shuffled=res['z_shuffled'], pass_real=res['pass_real'], pass_null=res['pass_null'],
+                              z_shuffled=res['z_shuffled'], z_valuefreq=res['z_valuefreq'], stat=res['stat'],
+                              n_tokens=res['n_tokens'], pass_real=res['pass_real'], pass_null=res['pass_null'],
                               dictword_share=res['dictword_share'], rank_of_this_key_for_ct='', known_pair='no',
-                              verdict=verdict, _real=res['_real'], _z_sh=res['_z_sh']))
-            if res['_real'] is not None:
-                ranked_scores.append((res['_real'], c['path']))
+                              verdict=verdict, gate_verdict=res['verdict'], _real=res['_real'], _z_sh=res['_z_sh'],
+                              _stat=res['_stat']))
+            if res['_stat'] is not None:
+                ranked_scores.append((res['_stat'], c['path']))
         # positive control: does this key rank its own ciphertext(s) first among same-sign-type candidates,
         # own-quality (z_sh>=4, passes both calibrated controls) -- job brief §1
         if meta['own_cts']:
@@ -1033,8 +1327,7 @@ def run(alarm=None):
                             r['rank_of_this_key_for_ct'] = i + 1
             own_row = next((r for r in rows if r['key_path'] == meta['path']
                              and r['ciphertext_path'] in meta['own_cts']), None)
-            ok = bool(own_row and own_rank == 1 and own_row['_z_sh'] is not None and own_row['_z_sh'] >= 4
-                      and own_row['pass_real'] is True and own_row['pass_null'] is True)
+            ok = bool(own_row and own_rank == 1 and own_row['gate_verdict'] == 'hit')
             pos_control.append(dict(key=meta['path'], own_text=', '.join(meta['own_cts']), own_rank=own_rank,
                                      z_sh=own_row['_z_sh'] if own_row else None, ok=ok, n_candidates=len(ranked_scores)))
             if not ok:
@@ -1050,10 +1343,13 @@ def run(alarm=None):
         if r['key_path'] in unusable_paths and r['verdict'] not in ('own',):
             r['verdict'] = 'unusable-key'
 
-    known_pairs = force_pairs(KNOWN_PAIRS, key_metas, ct_metas, corpora_map, rows, mark_known=True)
-    negative_pairs = force_pairs(NEGATIVE_PAIRS, key_metas, ct_metas, corpora_map, rows, mark_known=False)
+    if force and since_paths is None:
+        known_pairs = force_pairs(KNOWN_PAIRS, key_metas, ct_metas, corpora_map, rows, mark_known=True)
+        negative_pairs = force_pairs(NEGATIVE_PAIRS, key_metas, ct_metas, corpora_map, rows, mark_known=False)
+    else:
+        known_pairs, negative_pairs = [], []
     neg_scored = [r for r in negative_pairs if 'verdict' in r]
-    neg_false_positives = [r for r in neg_scored if r['verdict'] in ('hit', 'weak')]
+    neg_false_positives = [r for r in neg_scored if r['verdict'] in ('hit', 'short')]
 
     return dict(keys_found=keys_found, keys_dropped=keys_dropped, cts_found=cts_found, cts_dropped=cts_dropped,
                 key_metas=key_metas, ct_metas=ct_metas, rows=rows, pos_control=pos_control, unusable=unusable,
@@ -1063,11 +1359,12 @@ def run(alarm=None):
 
 def write_tsv(rows, path):
     cols = ['ciphertext_path', 'ct_status', 'key_path', 'key_office', 'key_years', 'key_lang', 'design',
-            'coverage', 'score', 'z_shuffled', 'pass_real', 'pass_null', 'dictword_share',
+            'coverage', 'n_tokens', 'score', 'z_shuffled', 'z_valuefreq', 'stat', 'pass_real', 'pass_null',
+            'dictword_share',
             'rank_of_this_key_for_ct', 'known_pair', 'verdict']
-    order = {'hit': 0, 'weak': 1}
+    order = {'hit': 0, 'short': 1}
     def sortkey(r):
-        z = r.get('z_shuffled')
+        z = r.get('stat')
         z = z if isinstance(z, (int, float)) else -999
         return (order.get(r['verdict'], 2), -z)
     rows = sorted(rows, key=sortkey)
@@ -1078,27 +1375,134 @@ def write_tsv(rows, path):
     return rows
 
 
+def changed_paths(ref, root=ROOT):
+    """Repo-relative paths changed between git ref and HEAD (plus uncommitted changes), for --since."""
+    import subprocess
+    out = subprocess.run(['git', '-C', str(root), 'diff', '--name-only', ref], capture_output=True, text=True, check=True)
+    return {l.strip() for l in out.stdout.splitlines() if l.strip()}
+
+
+def ref_hours_ago(hours, root=ROOT, branch='origin/main'):
+    """The last commit on branch at least `hours` old -- the nightly routine's --since ref."""
+    import subprocess
+    hours = int(math.ceil(hours))  # git's date parser reads '6 hours ago', not '6.0 hours ago'
+    def find():
+        out = subprocess.run(['git', '-C', str(root), 'rev-list', '-1', f'--before={hours} hours ago', branch],
+                             capture_output=True, text=True, check=True)
+        return out.stdout.strip() or None
+    ref = find()
+    if ref is None:
+        # a cloud session's clone is shallow (50-60 commits, about 20 minutes of this repository's traffic on
+        # 26 Sept 2026): deepen once to cover the window, then look again
+        subprocess.run(['git', '-C', str(root), 'fetch', '-q', f'--shallow-since={hours + 2} hours ago', 'origin',
+                        branch.split('/', 1)[-1]], capture_output=True, text=True)
+        ref = find()
+    return ref
+
+
+def select_since(key_paths, ct_paths, changed):
+    """(key, ciphertext) pairs a --since run scores: every pair where either side changed. Pure, for the test."""
+    return [(k, c) for k in key_paths for c in ct_paths if k in changed or c in changed]
+
+
+# Folders known to share one office's tables (a hit between them is a known relation, not a lead).
+SIBLING_FOLDERS = [
+    {'lodewijk-van-nassau-1573-74', 'jan-van-nassau-1572-75'},   # key_5549 is a copy of Lodewijk's 1574 table (J5S)
+    {'clair1067-brienne-poland-1646', 'fr5160-letellier-1653'},   # Brienne's 1647/1651 tables in both folders
+]
+
+
+# Cross-folder hits already read by eye and settled (XMATCH-CAL, 26 Sept 2026, KEY-CROSSMATCH.md); the nightly
+# run labels them 'adjudicated' and does not post them again.
+ADJUDICATED = {
+    ('ciphers/clair1108-duvergier/key_1696.tsv', 'ciphers/espagnol142-mercy-1648/ciphertext.tsv'):
+        'design kin only: shares the generic a=10 b=12 c=14 d=16 e=18 f=20 run; Mercy is read by its own key',
+    ('ciphers/clair1108-duvergier/key_1696.tsv', 'ciphers/bowes-walsingham-1583/ciphertext.txt'):
+        'probable false positive: 1 shared code value, n=101 at the stratum floor, English text scored as French',
+}
+
+
+def relation(row):
+    """'own' / 'known pair' / 'same folder' / 'sibling' / 'new lead' for a gated row."""
+    if row.get('verdict') == 'own':
+        return 'own'
+    if row.get('known_pair') == 'yes':
+        return 'known pair'
+    if (row['key_path'], row['ciphertext_path']) in ADJUDICATED:
+        return 'adjudicated'
+    kf = Path(row['key_path']).parts[1] if row['key_path'].startswith('ciphers/') else folder_of(ROOT / row['key_path'])
+    cf = Path(row['ciphertext_path']).parts[1]
+    if kf == cf:
+        return 'same folder'
+    if any(kf in fam and cf in fam for fam in SIBLING_FOLDERS):
+        return 'sibling'
+    return 'new lead'
+
+
+def room_line(row, gate):
+    """ROOM.md signal text for one gated row (nightly mode posts one per hit/short, most first)."""
+    return (f"for the parent: xmatch {row['gate_verdict']} ({relation(row)}): {row['key_path']} reads "
+            f"{row['ciphertext_path']} stat={row['stat']} (gate {gate['stat_min']}, null p99 "
+            f"{gate['null_stat_p99']}) cov={row['coverage']} n={row['n_tokens']} -- read by eye before any claim")
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument('--out-tsv', default=str(ROOT / 'KEY-CROSSMATCH.tsv'))
-    ap.add_argument('--out-md', default=str(ROOT / 'KEY-CROSSMATCH.md'))
+    ap.add_argument('--out-tsv', default=None, help='default KEY-CROSSMATCH.tsv for a full sweep, none for --since')
     ap.add_argument('--quiet', action='store_true')
+    ap.add_argument('--calibrate', action='store_true',
+                    help='fit the gate on VERIFIED_PAIRS, write KEY-CROSSMATCH-CAL.tsv and the gate file, stop')
+    ap.add_argument('--since', metavar='REF', help='nightly mode: score only pairs whose key or ciphertext changed since REF')
+    ap.add_argument('--since-hours', type=float, metavar='H',
+                    help='nightly mode with REF = the last origin/main commit at least H hours old')
+    ap.add_argument('--post-room', action='store_true',
+                    help='post each non-own hit/short to ROOM.md via tools/room.py (nightly routine)')
     a = ap.parse_args(argv)
-    res = run()
-    sorted_rows = write_tsv(res['rows'], a.out_tsv)
+    if a.calibrate:
+        gate, rows, skipped = calibrate()
+        print(json.dumps(gate))
+        for r in rows:
+            print(f"  {r['tier']:8} {r['key_path']} <- {r['ciphertext_path']} n={r['n_tokens']} cov={r['coverage']} "
+                  f"stat={r['stat']:.2f} adm={r['admitted']} nullpass={r['null_pass']} order_pass={r['order_pass']}")
+        for sk in skipped:
+            print('  skipped', *sk)
+        return gate
+    gate = load_gate()
+    if gate is None:
+        sys.exit('no gate file (tools/data/key_crossmatch_gate.json): run --calibrate first')
+    since = None
+    if a.since or a.since_hours:
+        ref = a.since or ref_hours_ago(a.since_hours)
+        if not ref:
+            sys.exit('no commit old enough for --since-hours')
+        since = changed_paths(ref)
+        if not a.quiet:
+            n_k = sum(1 for x in since if re.search(r'/key[^/]*\.(tsv|txt)$', x))
+            n_c = sum(1 for x in since if re.search(r'/ciphertext[^/]*\.(tsv|txt)$', x))
+            print(f'--since {ref}: {len(since)} changed paths, {n_k} key files, {n_c} ciphertext files')
+    res = run(since_paths=since, gate=gate)
+    out_tsv = a.out_tsv or (None if since is not None else str(ROOT / 'KEY-CROSSMATCH.tsv'))
+    sorted_rows = write_tsv(res['rows'], out_tsv) if out_tsv else sorted(
+        res['rows'], key=lambda r: -(r['_stat'] if r.get('_stat') is not None else -999))
     n_ok = sum(1 for pc in res['pos_control'] if pc['ok'])
-    n_total = len(res['pos_control'])
-    hits = [r for r in sorted_rows if r['verdict'] == 'hit']
-    weak = [r for r in sorted_rows if r['verdict'] == 'weak']
+    n_total = sum(1 for pc in res['pos_control'] if pc['ok'] is not None)
+    gated = [r for r in sorted_rows if r.get('gate_verdict') in ('hit', 'short')]
+    leads = [r for r in gated if relation(r) not in ('own', 'same folder')]
     if not a.quiet:
-        print(f"positive control: {n_ok} of {n_total} keys rank their own text first; "
-              f"{len(hits)} hits, {len(weak)} weak (excluding known pairs: "
-              f"{sum(1 for r in hits + weak if r['known_pair'] == 'no')})")
-        for r in hits + weak:
-            print(f"  {r['verdict']}: {r['ciphertext_path']} <- {r['key_path']} "
-                  f"cov={r['coverage']} z_sh={r['z_shuffled']} known={r['known_pair']}")
-        fp = res['neg_false_positives']
-        print(f"negative pairs: {len(fp)} of {len(res['neg_scored'])} scored came out hit/weak (false positives)")
+        print(f"gate: stat >= {gate['stat_min']} (n >= {gate['min_tokens']}, cov >= {gate['min_coverage']}); "
+              f"own-text pairs ranked first and clearing it: {n_ok} of {n_total}; non-own rows clearing it: "
+              f"{sum(1 for r in leads if r['gate_verdict'] == 'hit')} hit, "
+              f"{sum(1 for r in leads if r['gate_verdict'] == 'short')} short")
+        for r in leads:
+            print('  ' + room_line(r, gate))
+        if since is None:
+            fp = res['neg_false_positives']
+            print(f"negative pairs: {len(fp)} of {len(res['neg_scored'])} scored cleared the gate (false positives)")
+    if a.post_room:
+        import subprocess
+        for r in [r for r in leads if relation(r) == 'new lead'][:5]:
+            subprocess.run([sys.executable, str(TOOLS / 'room.py'), 'key_crossmatch nightly (tools/key_crossmatch.py)',
+                            room_line(r, gate)], check=False)
     return res
 
 
