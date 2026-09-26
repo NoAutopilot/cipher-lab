@@ -1,5 +1,5 @@
 {
-  "updated": "26 Sep 2026, 04:20 UTC",
+  "updated": "26 Sep 2026, 06:20 UTC",
   "stages": [
     "Identified",
     "Verified unsolved",
@@ -1077,13 +1077,13 @@
     {
       "date": "26 Sept 2026",
       "kind": "recovery",
-      "key": "period",
+      "key": "period + ours",
       "novelty": "N4",
       "title": "Jan and Lodewijk van Nassau to William of Orange, Dillenburg, 22 Oct 1573 (WVO 5797): two of the subjects Groen van Prinsterer printed as undeciphered read under Lodewijk's 1574 table with the names from the contemporary 5550 gloss",
-      "grade": "N4 after one audit (V8-NA5797, 26 Sept 04:09 UTC): the blanks Groen IV no. CDXLIV pp.223-225 left as missing read 'Landgraf' (161) and 'Pfaltzgraf' (153), grade H each, from a clean period interlinear gloss on the sibling 5550; the letter's text itself is N0 (printed by Groen), the table is the one aligned from the 1573 sibling decipherments (period), the merged key_full v3 shows 0 regressions on the 4613/4615 controls and a fresh-instance re-derivation was byte-identical; a third blank (172 le Conte Jean) came from the 4614 companion decipherment after the audit and is not in the audited claim; 4610/4611/4616 stay N4 after the key revision (V8.3)",
-      "qa_flag": "one audit only (V8-NA5797); second adversarial audit and a clean rolling-QA window pending -- counts after both",
-      "line": "LANE AX (owner account) round 3: the 1574 table plus name codes recovered from the 5550 interlinear gloss and the 4614 companion decipherment fill three of the six passages Groen could not decipher in 5797; the 4610/4611/4616 unread tokens fell from 541 to 320 under the merged key.",
-      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/lodewijk-van-nassau-1573-74"
+      "grade": "N4 after two audits (V8-NA5797 04:09, V8-NA5797-2 04:41 UTC) on the two blanks Groen IV no. CDXLIV pp.223-225 left undeciphered: 'Landgraf' (161) and 'Pfaltzgraf' (153), grade H each, valued from a clean period interlinear gloss on the sibling 5550 and located with the Lodewijk 1574 table (ours, aligned from sibling decipherments); letter text N0 (printed by Groen); key_full v3 shows 0 regressions on the 4613/4615 controls and two fresh-instance re-derivations were byte-identical; V8-QA7 (window 03:08-05:44) clean on the lodewijk items; gate 2: open-index, Google Books and JSTOR rows 88-91 answered, no relevant hit. A third blank (172, p6) is kept out of this row: V8-NA172 classed it N4 but the second audit V8-NA172-2 lowered it to N2 (Lossen 1882 prints the event) and AX2-172 found the name lists differ by letter direction; 4610/4611/4616 stay N4 after the key revision (V8.3)",
+      "line": "LANE AX (owner account) round 3: the 1574 table plus name codes recovered from the 5550 interlinear gloss and the 4614 companion decipherment fill two of the six passages (a third, 172, is under its own audit) Groen could not decipher in 5797; the 4610/4611/4616 unread tokens fell from 541 to 320 under the merged key.",
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/lodewijk-van-nassau-1573-74",
+      "text": "known (Groen IV no. CDXLIV prints the letter; only the blanks are new readings of ours)"
     },
     {
       "date": "25 Sept 2026",
@@ -2031,7 +2031,7 @@
       "focus": "opened 16:43 by parent 7c at the owner's decision: Köhler 1944 (archive route, then running key on a Dutch or German book text, then book code, each family with its matched control before the target) and Debosnys 1883 (second transcription pass, form test against his clear poems, anneal in fr/en/pt/la); the Navier-Stokes pattern -- sibling first, groups sharing HYPOTHESES.md, a Fable consolidator per cycle, the judge as the only gate"
     }
   ],
-  "headline": "25 Sept 2026, 22:15 UTC: 19 letters (14 board entries) at N3 or better after two audits, 5 with our own key: the Mercy instruction of 6 June 1648 (BnF Espagnol 144 f.22, homophonic cryptanalysis, judge undecided, no print located), Orange to August of Saxony 1561 (WVO 53, pure cryptanalysis), the van Beuningen 1657 key, Jan van Nassau's cipher lines of 17 Apr 1574 (WVO 5551), and now Linhares (dictionary code, Vieyra 1809), which the Portuguese judge passes on a corpus of its own period. Charles I's Digby cipher paper (BL Add MS 6912) is identified as Wheatstone's 1862 decipherment (N0, contribution). Both accounts are live: the other account's parent runs R6 (Salviati and the 13 gate-passing targets), V6 (verifiers, rolling QA) and B2 (breadth: lima, harry-caroline and powers first tests all negative or index-only); the owner account runs ZX (Brochado, Clair 349, Barriere) and CX2 (check-solved round 2, seven targets re-verified open today). The ChatGPT second-opinion runner has posted three pull requests (10-12); V6 checks every citation.",
+  "headline": "25 Sept 2026, 22:15 UTC: 20 letters (15 board entries) at N3 or better after two audits, 5 with our own key: the two undeciphered blanks in Lodewijk van Nassau's letter of 22 Oct 1573 (WVO 5797, N4 with a period gloss and our aligned table), the Mercy instruction of 6 June 1648 (BnF Espagnol 144 f.22, homophonic cryptanalysis, judge undecided, no print located), Orange to August of Saxony 1561 (WVO 53, pure cryptanalysis), the van Beuningen 1657 key, Jan van Nassau's cipher lines of 17 Apr 1574 (WVO 5551), and now Linhares (dictionary code, Vieyra 1809), which the Portuguese judge passes on a corpus of its own period. Charles I's Digby cipher paper (BL Add MS 6912) is identified as Wheatstone's 1862 decipherment (N0, contribution). Both accounts are live: the other account's parent runs R6 (Salviati and the 13 gate-passing targets), V6 (verifiers, rolling QA) and B2 (breadth: lima, harry-caroline and powers first tests all negative or index-only); the owner account runs ZX (Brochado, Clair 349, Barriere) and CX2 (check-solved round 2, seven targets re-verified open today). The ChatGPT second-opinion runner has posted three pull requests (10-12); V6 checks every citation.",
   "sidequests": [
     {
       "title": "Grants applications",
