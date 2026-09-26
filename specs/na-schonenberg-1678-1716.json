@@ -15,5 +15,16 @@
   "decode L18+L19 against the key built from L01-L14's gloss and judge as Spanish (VX-RD01, 25 Sept 2026) -- expected weak/negative given the key's own coverage gaps, not a positive result on its own"
  ],
  "judge": {"language": "es", "min_word_cover": 0.4},
- "written": "25 Sept 2026, VX-RD01 (LANE VX), for job 3 of .claude/briefs/runs/2026-09-25-lane-vx-rd01.md"
+ "written": "25 Sept 2026, VX-RD01 (LANE VX), for job 3 of .claude/briefs/runs/2026-09-25-lane-vx-rd01.md",
+ "cheap_test_done": {
+  "date": "25 Sept 2026",
+  "by": "VX-RD01 (LANE VX); target folder ciphers/na-schonenberg-1678-1716",
+  "test": "1 (decode L18+L19 against the key built from L01-L14's period gloss, judge as Spanish)",
+  "target": "PASS (min_word_cover 0.4 and a separate language-model pass) on the 19 non-[?] letters of L18+L19 (\"ormaadanoyadeabanyp\"); no numeric score recorded in NOTES.md beyond the PASS/FAIL verdict. Tokens across L18+L19 (28): C 12, M 7, U 9, H 0, S 0, I 0",
+  "control": "none on file -- judge_plaintext.py's built-in null/real-text percentile gate is the only control; no separately-run matched synthetic control for this short a window",
+  "judge": "PASS (rule 10 caveat in NOTES.md: a PASS here is not a claimed reading -- with 9 of 28 tokens unkeyed/dropped and most of the rest grade M, this is what an incomplete key produces on a short window, not evidence the candidate is real Spanish; a FAIL would have been reported per rule 7 if it had come out that way)",
+  "verdict": "weak/inconclusive PASS on an incomplete period key (29 of ~106 codes grade C); confirmed by a fresh-instance re-derivation (rule 7) agreeing at all 28 L18+L19 positions including the 5 unresolved ones -- clears rule 7's re-derivation bar but is not a claimed reading. Status: partial (no closed-negative, no solved)",
+  "source": "ciphers/na-schonenberg-1678-1716/NOTES.md section \"Reading (VX-RD01, 25 Sept 2026)\"",
+  "backfilled": "bSPECFILL 26 Sept 2026 17:51 UTC"
+ }
 }

@@ -32,5 +32,16 @@
  "model": "Sonnet",
  "status_25_Sept_2026": "partial (ciphers/catokwacopa-1875/NOTES.md, LANE CX2, 25 Sept 2026): intake-gate-blocked on the specific point that the newspaper issue itself has never been independently opened by anyone in this repo (LOCAL-QUEUE.tsv row L13), but the substantive research status is unchanged -- mechanism agreed, unique plaintext not reconstructable per every source consulted",
  "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run goes under cheap_test_done with its control. judge block's letters_min/max and min_word_cover are placeholders scaled to 'two long ads' since no ciphertext is on disk to measure directly; narrow once Ernst's/Bourdeau's transcription (or the BNA original) is fetched.",
- "written": "25 Sept 2026 by LANE B2 worker bSPEC (session_016UPMZ7UBvMWu2PEsWNiFyC), claude-sonnet-5, spec'd from ciphers/catokwacopa-1875/NOTES.md per this brief's instruction (the target already has a folder; this spec does not duplicate or replace it)"
+ "written": "25 Sept 2026 by LANE B2 worker bSPEC (session_016UPMZ7UBvMWu2PEsWNiFyC), claude-sonnet-5, spec'd from ciphers/catokwacopa-1875/NOTES.md per this brief's instruction (the target already has a folder; this spec does not duplicate or replace it)",
+ "cheap_test_done": {
+  "date": "26 Sept 2026",
+  "by": "bSPECFILL (backfill; no test actually run -- see verdict)",
+  "test": "blocked before test 1 (no ciphertext on disk to run any of the three named tests against)",
+  "target": "none on file -- no ciphertext.txt or key exists in ciphers/catokwacopa-1875/ as of 26 Sept 2026",
+  "control": "none on file -- no test has been run",
+  "judge": "not run",
+  "verdict": "blocked: LOCAL-QUEUE.tsv row L13 (bna-verify, ciphers/catokwacopa-1875) status is queued -- \"Verify the working ciphertext transcription (Thomas Ernst's BNA-checked text, used in Bourdeau's catokwacopa/ads.py) against the original British Newspaper Archive scans... (BNA/newspapers.com login required, not reachable from the cloud)\". Nothing in this spec's cheap_tests_in_order can run until L13 is answered (or an attributed clone of Bourdeau's ads.py text is fetched). Target status_25_Sept_2026 remains partial per NOTES.md, LANE CX2",
+  "source": "LOCAL-QUEUE.tsv row L13; specs/catokwacopa-1875.json ciphertext_pending field; ciphers/catokwacopa-1875/NOTES.md (LANE CX2, 25 Sept 2026)",
+  "backfilled": "bSPECFILL 26 Sept 2026 18:02 UTC"
+ }
 }

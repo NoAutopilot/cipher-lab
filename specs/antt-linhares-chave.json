@@ -15,5 +15,16 @@
   "decode all 26 groups against the identified 1809 edition and judge the result as Portuguese prose (LX-DEC, 25 Sept 2026) -- expected to be a weak/negative language-model signal given the fragment length (26 tokens) and the mid-letter cut, not a positive result on its own"
  ],
  "judge": {"language": "pt18", "min_word_cover": 0.5},
- "written": "25 Sept 2026, LX-DEC (LANE LX), for the judge step of .claude/briefs/runs/2026-09-25-lane-lx-dec.md"
+ "written": "25 Sept 2026, LX-DEC (LANE LX), for the judge step of .claude/briefs/runs/2026-09-25-lane-lx-dec.md",
+ "cheap_test_done": {
+  "date": "25 Sept 2026",
+  "by": "LX-DEC (LANE LX, decode) then V6-PTCORP (LANE V6, pt18 corpus + judge re-run)",
+  "test": "1 (decode all 26 groups against Vieyra 1809 Part I and judge as Portuguese prose)",
+  "target": "score=-1.051, N=102 (direct spec run, pt18); normalized-rendering run: 98 letters/25 words, score=-1.044. Reading grade counts: H 20, M 6, U 0 (26 tokens)",
+  "control": "pt18 (Correio Braziliense + O Investigador Portuguez, 1808-1819) deployed thresholds at N=98: null_p99=-1.472, real_p05=-1.100; design-matched controls (200 draws, seed 1): (a) real 1808 Portuguese prose p05=-1.082 (reading at 7.5th pct); (b_plain) random Vieyra-dict headwords p05=-1.200 (reading at 80.5th pct); (b_trim) trim-matched dict salad p05=-1.241 (reading at 95.0th pct); (c) reading word-order shuffled p05=-1.146 (reading at 86.5th pct)",
+  "judge": "PASS under pt18 (score -1.051 clears real_p05 -1.122 by 0.071, null_p99 -1.452 by 0.401; words: cover=0.922 vs min 0.5). Superseded an earlier pt17/Vieira FAIL (score -1.145 vs real_p05 -1.101) that CLAUDE.md logs as an era-mismatch calibration fix (V6-PTCORP lesson), not threshold-shopping: separation power (AUC ~0.03-0.05) and the real-prose false-negative rate (4.0pct vs pt17's 8.5pct) both moved together toward pt18",
+  "verdict": "PASS is a rule-10 gate for a verifier, not a new grade on the reading; the underlying reading (12/12 worked-example key validation, 26/26 fresh-instance re-derivation, per-token H/M grading) is unchanged by it. Status stays blocked (intake-gate block on the unread Textos Politicos edition, unrelated to this test)",
+  "source": "ciphers/antt-linhares-chave/NOTES.md sections \"Reading (LX-DEC, 25 Sept 2026)\" and \"V6-PTCORP pt18 judge re-run (25 Sept 2026)\"",
+  "backfilled": "bSPECFILL 26 Sept 2026 17:59 UTC"
+ }
 }

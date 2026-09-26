@@ -15,5 +15,16 @@
   "decode all keyed tokens against the derived key and judge the (necessarily fragmentary, ~40%-covered) result as French prose (VX-RD02, 25 Sept 2026) -- expected to fail a language-model gate given the coverage gap and the bracketed [?] gaps breaking word runs; reported as a FAIL per rule 7 if so, not suppressed"
  ],
  "judge": {"language": "fr", "min_word_cover": 0.3},
- "written": "25 Sept 2026, VX-RD02 (LANE VX), for .claude/briefs/runs/2026-09-25-lane-vx-rd02.md"
+ "written": "25 Sept 2026, VX-RD02 (LANE VX), for .claude/briefs/runs/2026-09-25-lane-vx-rd02.md",
+ "cheap_test_done": {
+  "date": "25 Sept 2026",
+  "by": "VX-RD02 / VX-RD02C (LANE VX); target folder ciphers/na-janssens-java-1811",
+  "test": "1 (decode all keyed tokens against the derived nomenclator, judge as French prose)",
+  "target": "score=-1.472, cover=0.78, N=563 (final VX-RD02C run); tokens 163: H 0, C 52, S 0, M 24, I 0, U 87 (46.6% coverage)",
+  "control": "none on file -- judge_plaintext.py's built-in null_p99=-1.84 / real_p05=-0.912 / real_text_median_cover=0.945 are the gate; no separately-run matched synthetic control for this leaf",
+  "judge": "FAIL language: score=-1.472, null_p99=-1.84, real_p05=-0.912, real_median=-0.785, mode=both, N=563; ok words: cover=0.78, min=0.3, real_text_median_cover=0.945; FAIL - na-janssens-java-1811",
+  "verdict": "partial cryptanalytic-adjacent decode (grade C key throughout, a period decipherment of other text in the same bundle, not a fair key table); FAIL per rule 7 expected given 53.4% [?] gaps, not a claim the reading is right or wrong. Status: partial",
+  "source": "ciphers/na-janssens-java-1811/NOTES.md sections \"VX-RD02C (final worker on this target, 25 Sept 2026)\" and \"State at close (final worker, VX-RD02C, 25 Sept 2026)\"",
+  "backfilled": "bSPECFILL 26 Sept 2026 17:47 UTC"
+ }
 }
