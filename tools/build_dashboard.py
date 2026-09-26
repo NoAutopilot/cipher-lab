@@ -44,6 +44,12 @@ def load_asks():
         st = status.split(":")[0].split("(")[0].strip().lower()
         if st in ("done", "dropped", "lapsed", "sent", "answered", "closed"):
             continue
+        # 26 Sept 2026 (owner: "does setting these up clear up things on my desk?"): a row delegated to one of the
+        # owner's ChatGPT runners ("queued as LOCAL-QUEUE Lnn" / "queued as JSTOR-QUEUE") or waiting on a third
+        # party ("waiting (Huysman, since 26 Sept)") needs nothing from the owner and comes off the desk; it
+        # returns when the runner bounces it back to `open` or the reply lands.
+        if st.startswith("queued") or st.startswith("waiting"):
+            continue
         rows.append({"row": int(row), "raised": raised, "what": what, "action": action, "who": who, "status": status})
     return rows
 
