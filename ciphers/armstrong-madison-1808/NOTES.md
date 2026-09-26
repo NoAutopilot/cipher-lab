@@ -904,3 +904,30 @@ this job's 40-request cap, all against archive.org's own API/download endpoints,
 User-Agent, no 429/403; flagged rather than hidden, per the good-citizen rule's own reporting requirement). No
 other host touched. 5 Sonnet subagent calls (1 calibration + 4 candidates), one at a time, each given the 12
 exemplar crops and one specimen plate, never a full frame.
+
+## ARM3-DICT pass, 26 Sept 2026 (LANE ARM3 worker ARM3-DICT) -- family G: dictionary-code design excluded, U1 only
+
+Question: is the >=100 book part a page-and-word DICTIONARY code (value order monotone in the book's own
+alphabetical order, linear or page*10+entry)? Full numbers in `HYPOTHESES.md`'s "Family G, ARM3-DICT dictionary
+code" section; script in `dict/dict_control.py`.
+
+**Design excluded at U1, control first.** A fresh, WE028-independent pocket-dictionary control (en18 content
+words, alphabetised, particle block kept separate, K=1600/1800, 60 simulated letters each) gives a flat units
+digit among values >= 100 (`units_top1` 0.149-0.155 +- 0.02), cleanly separated from a fixed-meaning-slot book
+design (`hdec` 0.762 +- 0.05, about 12 sd away -- rule 3's separability requirement met). The target's own
+`units_top1` (0.388, already on file from ARM-DESIGN, this job did not compute it blind) sits at percentile 100
+against BOTH pocket-dictionary sizes -- about 12 sd outside a tight control. The page-plus-entry entry-digit
+table (this job's own item iii check) shows the control flat across all ten digits (0.087-0.112) and the target
+sharply skewed (digit 0 at 38.8%, digit 1 at 19.8%, digits 2/3/5/9 at 0.8-3.8%) -- a page-and-entry dictionary
+predicts a flat entry digit and the target does not have one.
+
+Per this job's brief, U2-U4 (fetching Entick's/Johnson's/Perry's/Sheridan-Walker's OCR from archive.org and
+testing an actual dictionary's headword list against the target) were **not run**: the gate was "only if U1 does
+not reject the design at p<0.05", and U1 rejects at far beyond that. This re-derives, with a fresh vocabulary,
+the same conclusion ARM-DESIGN's own Q2 already reached for `onepart` (WE028's real vocabulary as one alphabetical
+run) -- it closes the possibility that exclusion was an artefact of reusing WE028's specific words, rather than
+adding a new negative independent of Q2. Family C's own verdict (fixed-meaning member slots, ~900-1800 forms, no
+usable alphabetical order) stands; a dictionary code is now one more excluded design in the same family.
+
+No network access this pass (offline, per the brief's U1 scope; U2-U4's fetches were not reached). 0 requests to
+any host.

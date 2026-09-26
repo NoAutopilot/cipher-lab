@@ -1,0 +1,44 @@
+# ARM3-DICT U1 -- dictionary-code (family G) units-digit test, control first
+
+statistic: units_top1 (share of the modal units digit among values >= 100), fixed by ARM-DESIGN (a strictly alphabetical run gives a flat units digit; a fixed-meaning-slot book concentrates on one digit). Not chosen blind to the target by THIS job -- ARM-DESIGN already computed and published the target's value (0.388) before this job ran; this job reuses that statistic and that number, and adds a fresh independent control (a new en18-derived pocket dictionary, not WE028's real vocabulary) to check the exclusion is not an artefact of reusing WE028's own words.
+
+
+TARGET units_top1 = 0.388  units_digit0_share = 0.388  decade_units_z = 2.759  digit_order_rho = 0.400  digits23_share = 0.083  onepart_dist = 0.417
+
+
+## Separability check (control letters only, no target): does units_top1 tell a dictionary design (flat digit) apart from hdec (concentrated) and seq_pblock (flat, non-alphabetical order)?
+
+design	units_top1 mean+-sd	source
+dict_pocket_k1600	0.149 +- 0.019	this job, 60 sims
+dict_pocket_k1800	0.155 +- 0.020	this job, 60 sims
+hdec	0.762 +- 0.049	../design/stats_sim.tsv (ARM-DESIGN, same corpus/seed convention)
+seq_pblock	0.152 +- 0.019	../design/stats_sim.tsv (ARM-DESIGN, same corpus/seed convention)
+onepart	0.159 +- 0.017	../design/stats_sim.tsv (ARM-DESIGN, same corpus/seed convention)
+twopart	0.165 +- 0.019	../design/stats_sim.tsv (ARM-DESIGN, same corpus/seed convention)
+
+Separation: dict_pocket (this job) sits within noise of ARM-DESIGN's own onepart/seq_pblock (all flat, ~0.14-0.17), and hdec sits at 0.76 +- 0.05, about 12 SD away from dict_pocket's own sd -- the statistic separates the two design classes cleanly (rule 3 met: the control CAN differ and does).
+
+
+## Target percentile against the fresh pocket-dictionary control (this job's own sims)
+
+design	stat	mean	sd	p05	p50	p95	target	target_pct
+dict_pocket_k1600	units_top1	0.149	0.019	0.121	0.146	0.189	0.388	100
+dict_pocket_k1600	units_digit0_share	0.107	0.028	0.066	0.107	0.156	0.388	100
+dict_pocket_k1600	units_H	3.258	0.036	3.202	3.269	3.306	2.572	0
+dict_pocket_k1600	decade_units_z	5.415	2.514	1.954	5.140	9.785	2.759	15
+dict_pocket_k1600	digit_order_rho	0.063	0.350	-0.467	0.100	0.667	0.400	83
+dict_pocket_k1600	digits23_share	0.207	0.048	0.128	0.209	0.302	0.083	0
+dict_pocket_k1600	onepart_dist	0.426	0.020	0.423	0.426	0.439	0.417	3
+dict_pocket_k1800	units_top1	0.155	0.020	0.131	0.149	0.197	0.388	100
+dict_pocket_k1800	units_digit0_share	0.089	0.028	0.045	0.090	0.139	0.388	100
+dict_pocket_k1800	units_H	3.250	0.035	3.187	3.258	3.299	2.572	0
+dict_pocket_k1800	decade_units_z	5.397	2.301	2.233	5.171	8.950	2.759	15
+dict_pocket_k1800	digit_order_rho	0.107	0.351	-0.550	0.117	0.633	0.400	77
+dict_pocket_k1800	digits23_share	0.227	0.049	0.150	0.223	0.313	0.083	0
+dict_pocket_k1800	onepart_dist	0.426	0.018	0.423	0.427	0.430	0.417	3
+
+## Page-plus-entry digit table (brief item iii): page = value // 10, entry = value % 10
+With a gapless alphabetised vocabulary (this control, and onepart/WE028 real) the page-plus-entry reading of a value is arithmetically the SAME split as its plain units digit -- reported once, not fabricated as a second independent number. Per-entry-digit share, control mean (k=1600) vs target:
+digit	0	1	2	3	4	5	6	7	8	9
+control(k=1600) mean	0.107	0.102	0.091	0.087	0.105	0.104	0.094	0.112	0.102	0.095
+target	0.388	0.198	0.038	0.013	0.110	0.008	0.093	0.093	0.051	0.008

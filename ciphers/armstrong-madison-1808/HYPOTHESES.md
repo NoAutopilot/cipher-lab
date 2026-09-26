@@ -902,3 +902,100 @@ several page-image fetches per system to find the genuine alphabet plate among p
 first edition in particular took nine page/text fetches before its second edition's actual plate was found) --
 flagged here rather than hidden, per the good-citizen rule's own request-count reporting requirement. No other
 host touched. 5 Sonnet subagent calls (1 calibration + 4 candidates), one at a time.
+
+## Family G, ARM3-DICT dictionary code (26 Sept 2026, LANE ARM3 worker ARM3-DICT)
+
+Question: is the book part (values >= 100, 237 tokens, 168 distinct) a page-and-word DICTIONARY code keyed to a
+printed English dictionary, i.e. value order strictly monotone (or block-monotone, page*10+entry) in the book's
+own alphabetical order? Script `dict/dict_control.py` (offline, stdlib, reuses `../design/design_stats.py`
+wholesale per CLAUDE.md Usage item 8: its `en18_words`, `TableCode`, `stats()`, `target_tokens()`).
+
+**Statistic and an honesty note on blinding.** The statistic is `units_top1` / `units_digit0_share` (share of the
+modal units digit among values >= 100): a strictly monotone alphabetical run gives a FLAT units digit (each
+alphabetical decile a "page" spans lands with about equal frequency 0-9), while a fixed-meaning-slot book
+concentrates on one digit. This statistic was **not chosen blind to the target by this job** -- ARM-DESIGN
+(this file's own "ARM-DESIGN" section, `../design/stats_sim.tsv`) already fixed it and already published the
+target's value (0.388) before this job opened, as part of testing its own `onepart` design (WE028's real
+1596-entry vocabulary sorted alphabetically and mapped 1:1 onto one contiguous value run 1-1600, in one
+alphabetical order across BOTH the particle range and the book range) -- which is, structurally, exactly the
+brief's "linear" dictionary scheme. Rather than pretend blindness this job does not have, this job (a) is
+transparent that the target number pre-existed, (b) adds a fresh, independent control this job built new: a
+pocket dictionary of en18-derived content words (NOT WE028's actual words) with the particle block kept separate
+(1-99, unlike `onepart`, which lumps particles into the one run) and the book run confined to values 100+ -- a
+closer structural match to ARM-DESIGN's own established two-level premise -- at two plausible sizes, K=1600
+(WE028's own scale) and K=1800 (ARM-DESIGN's own upper form estimate), 60 simulated 369-token en18 letters each.
+
+**(i) Separability check (control letters only, no target).** `units_top1` mean +- sd, all at the same corpus/seed
+convention:
+
+| design | units_top1 | source |
+|---|---|---|
+| dict_pocket_k1600 (this job) | 0.149 +- 0.019 | fresh vocabulary |
+| dict_pocket_k1800 (this job) | 0.155 +- 0.020 | fresh vocabulary |
+| onepart (ARM-DESIGN) | 0.159 +- 0.017 | WE028's real vocabulary |
+| seq_pblock (ARM-DESIGN) | 0.152 +- 0.019 | particles separate, book in RANDOM order |
+| twopart (ARM-DESIGN) | 0.165 +- 0.019 | WE028's vocabulary, values permuted |
+| hdec (ARM-DESIGN) | 0.762 +- 0.049 | fixed-meaning-slot book |
+
+`dict_pocket` sits within noise of `onepart`/`seq_pblock`/`twopart` (all flat, ~0.15-0.17, sd ~0.02) and about
+12 of `dict_pocket`'s own sd away from `hdec` (0.76 +- 0.05). The statistic separates the two design classes
+cleanly -- rule 3's requirement (the control can differ, and does) is met.
+
+**(ii) Target percentile against the fresh pocket-dictionary control.**
+
+| design | stat | mean | sd | p05 | p95 | target | target_pct |
+|---|---|---|---|---|---|---|---|
+| dict_pocket_k1600 | units_top1 | 0.149 | 0.019 | 0.121 | 0.189 | 0.388 | **100** |
+| dict_pocket_k1600 | units_digit0_share | 0.107 | 0.028 | 0.066 | 0.156 | 0.388 | **100** |
+| dict_pocket_k1600 | units_H (entropy, bits) | 3.258 | 0.036 | 3.202 | 3.306 | 2.572 | 0 |
+| dict_pocket_k1600 | decade_units_z | 5.415 | 2.514 | 1.954 | 9.785 | 2.759 | 15 |
+| dict_pocket_k1600 | digit_order_rho | 0.063 | 0.350 | -0.467 | 0.667 | 0.400 | 83 |
+| dict_pocket_k1600 | digits23_share | 0.207 | 0.048 | 0.128 | 0.302 | 0.083 | 0 |
+| dict_pocket_k1600 | onepart_dist | 0.426 | 0.020 | 0.423 | 0.439 | 0.417 | 3 |
+| dict_pocket_k1800 | units_top1 | 0.155 | 0.020 | 0.131 | 0.197 | 0.388 | **100** |
+
+(k=1800 row repeats the same shape as k=1600 throughout; full table in `dict/dict_stats.tsv`.) The target's units
+digit is 0.388 against a control mean of 0.149-0.155, sd ~0.02 -- roughly 12 standard deviations outside the
+control, percentile 100 out of 60 sims both sizes. `units_H` (entropy) and `digits23_share` corroborate at p0.
+`decade_units_z` and `digit_order_rho` do not separate (target inside the control's own p05-p95 band) -- expected,
+since ARM-DESIGN already found `decade_units_z` does not separate the target from `seq_pblock` either (p13 there),
+and `digit_order_rho` was never claimed as a dictionary-vs-target discriminator. `onepart_dist` (the brief's
+alternative "rank correlation" statistic, already computed as a secondary check) gives target_pct 3 -- the target
+sits slightly BELOW the control's own typical distance from a perfect one-part rank correlation, i.e. this weaker
+statistic does not reject and even leans (non-significantly, within 0.5 sd) toward a one-part-like top-word
+placement; ARM-DESIGN's own Q1 already found this same statistic "NOT DECIDABLE at N=369" for one-part vs other
+orders, so this is consistent, not contradictory, with a decisive rejection on `units_top1`.
+
+**(iii) Page-plus-entry digit table (per this job's brief).** With a gapless alphabetised vocabulary (this
+control, and `onepart`'s real WE028 table), reading a value as (page = value // 10, entry = value % 10) gives the
+SAME split as its plain units digit -- reported once as the entry-digit table, not fabricated as a second
+independent number:
+
+| digit | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| control (k=1600) mean, 20 letters | 0.107 | 0.102 | 0.091 | 0.087 | 0.105 | 0.104 | 0.094 | 0.112 | 0.102 | 0.095 |
+| target | 0.388 | 0.198 | 0.038 | 0.013 | 0.110 | 0.008 | 0.093 | 0.093 | 0.051 | 0.008 |
+
+The control's entry digit is flat within sampling noise (0.087-0.112 across all ten digits, as a page-and-entry
+dictionary scheme predicts: which entry number a word lands on within its page has no reason to favour any one
+digit). The target's entry digit is sharply skewed (digit 0 at 38.8%, digit 1 at 19.8%, both far above the flat
+control; digits 2/3/5/9 at 0.8-3.8%, far below it) -- the same 0/1-dominant, 2/3/5/9-poor shape CLAUDE.md's own
+lesson log and ARM-DESIGN's Q2 already named. A page-and-entry dictionary predicts a flat entry digit; the target
+does not have one.
+
+**Verdict: design exclusion.** The dictionary-code hypothesis (value order strictly monotone in the book's
+alphabetical order, whether read as a single linear run or as page*10+entry) is rejected at far beyond p<0.05
+(target 12 sd outside a tight, well-separated control) by `units_top1`/`units_digit0_share`/`units_H`/
+`digits23_share` together, and by the entry-digit table directly. Per this job's brief ("U2-U4 ... only if U1
+does not reject the design at p<0.05"), **U2-U4 were not run**: no archive.org fetch of Entick, Johnson, Perry or
+Sheridan/Walker was made, since the design itself is excluded before any specific dictionary's OCR would be
+needed. This is not a new result independent of ARM-DESIGN's own Q2 (the same units-digit concentration that
+already excluded all five contiguously-numbered designs there, `onepart` among them) -- it is that same
+exclusion, re-derived with a fresh, WE028-independent vocabulary and reported against the specific dictionary-code
+framing (linear and page-plus-entry) this job's brief asked about, closing the possibility that the prior
+exclusion was an artefact of reusing WE028's own real word list. Family C's own verdict (fixed-meaning member
+slots, not an alphabetical dictionary) stands unchanged; this job adds one more design ruled out from the same
+family of contiguous/alphabetical codes.
+
+No network access this job (offline, per brief U1's own scope; U2-U4 not reached). 0 requests to any host.
+Script and full output: `dict/dict_control.py`, `dict/dict_stats.tsv`.
