@@ -1,0 +1,19 @@
+JOBS bSZL65 / bSZL66 / bSZL67 (LANE B7, Sonnet, one worker per leaf, cap USD 5, wall-clock box 45 min each): szembek-bk1560, transcribe ONE leaf (the folio your one-line job names: 65, 66 or 67) as (cipher line, interlinear gloss) pairs. Recovery at grade C, no cryptanalysis. Three sibling workers do the other two leaves in parallel: touch only your own leaf's files.
+
+Intake gate (orchestrator, 04:47 UTC 26 Sept 2026):
+    $ python3 tools/intake_gate_check.py szembek-bk1560
+    szembek-bk1560: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+    exit 0
+
+Read first: common file `.claude/briefs/runs/2026-09-26-lane-b7-common.md` (it governs), ciphers/szembek-bk1560/NOTES.md, specs/szembek-bk1560.json, `python3 tools/interlinear_align.py --help`.
+Steps:
+0. `date -u`; `python3 tools/room.py --start`; ROOM claim naming your leaf and files (ciphers/szembek-bk1560/leaf<NN>/**).
+1. Native image: unzip images/343124_List_zaszyfrowany.zip to your scratchpad and convert your leaf's <NN>_0001.djvu at native resolution (`apt-get install -y djvulibre-bin` if ddjvu is missing; `ddjvu -format=tiff` then PIL to PNG/JPEG). No network fetch of the image (the zip is on disk). Do not commit the native image (keep the folder under 30 MB); commit only crops you actually used, downsized if large, plus a manifest line.
+2. Crop step, mandatory, pasted into NOTES before any transcription: `python3 tools/iiif_lines.py --image <native leaf> --out ciphers/szembek-bk1560/leaf<NN>/crops --debug` (pip install numpy pillow scipy if missing). Check the debug overlay: each crop must hold one cipher line WITH the gloss line above it (widen --distance or crop bands manually with PIL if the tool splits gloss from cipher; say what you did). Never hand a full leaf to a subagent or read the full leaf yourself for transcription.
+3. Transcribe crop by crop (you, or at most ONE Sonnet subagent given crop paths only), writing to disk after every crop:
+   (a) ciphers/szembek-bk1560/leaf<NN>/pairs.tsv, columns exactly `plain_line	plain_raw	cipher_line	cipher_raw` (tools/interlinear_align.py's format): plain_line = "<NN>:<crop number>", plain_raw = the gloss written above that line, left to right, as written (Latin letters, keep abbreviations as written, `?` for an illegible letter); cipher_line = same id; cipher_raw = every token on the cipher line in order, code groups as digits and clear words as written, separated by spaces (a group with a dot or superscript: write it as seen, e.g. `21.`).
+   (b) ciphers/szembek-bk1560/leaf<NN>/groups.tsv, columns `line	pos	token	kind	gloss_above	confidence`: one row per token of cipher_raw; kind = code | clear | ref (cross-reference numbers like 202/203, per NOTES) | null?; gloss_above = the gloss letters/word written directly above THAT group where placement is visually clear, blank where not; confidence = high | low.
+   Commit and push after each quarter of the leaf.
+4. Quick self-check (no aligner yet; the merge job runs it on all three leaves): count code tokens, distinct codes, share with a gloss_above, and within your leaf the rate at which a recurring code (>=2 occurrences with gloss) gets the same gloss_above each time -- and the same rate with gloss_above values shuffled across code occurrences (1000 shuffles, seed fixed; report mean and 95th pct). Both numbers into a short "## Leaf <NN> transcription (bSZL<NN>)" section of NOTES.md (append; siblings append theirs -- rebase and keep both). Also note: does the gloss look like one word per code (nomenclator) or letters/syllables per code (a note on 3 examples is enough).
+5. Push; ROOM done line (<=600 chars) with tokens, gloss share, own-leaf consistency vs shuffle. Final reply at most five lines. Stop at cap or box, pushing what you have.
+Hosts: none (no network except pip/apt). Do not edit specs/, NEAR.md, LEDGER.md, status.json. Report what was found; do not classify novelty.
