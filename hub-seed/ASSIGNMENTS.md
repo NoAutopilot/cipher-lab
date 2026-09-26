@@ -793,3 +793,8 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T08:18Z	session_01DjNdmE8PmwSrZpR63a3Ntd	bHCP3 (Sonnet, cap 3)	hessen-1824 running_key de19	brief 2026-09-26-lane-b9-hcp3.md; LANE B9
 2026-09-26T08:34Z	session_019GkVZEhwsixGdZo13Hnvbo	ARM-IMG	done 2.58, ledgered D, archived	
 2026-09-26T08:35Z	session_01ERnaCfJMTCDwX2CiPeL4V5	ARM-TR (Sonnet, cap 10)	manuscript two-pass transcription vs Founders	brief 2026-09-26-lane-arm-tr.md; LANE ARM
+2026-09-26T08:50Z	session_01P664dMt8opanbux4TuHPHn	bMALG	done 3.78, ledgered D-, retitled ARCHIVED, archived	glyph_map.tsv; LANE B9
+2026-09-26T08:50Z	session_0191zH9xnhLoMU7fxsasv8og	bMAT1H	done 2.66, ledgered D, retitled ARCHIVED, archived	gate FAIL 7/8; LANE B9
+2026-09-26T08:50Z	session_01DjNdmE8PmwSrZpR63a3Ntd	bHCP3	done 2.82, ledgered D, retitled ARCHIVED, archived	running_key untestable; LANE B9
+2026-09-26T08:48Z	session_01FXbFaXqnjyMNmuMDAaE1fi	bMAL28 (Sonnet, cap 12)	malsburg 507 f.28 transcription + leaf gate	brief 2026-09-26-lane-b9-mal28.md; LANE B9
+2026-09-26T08:48Z	session_013uoVVpHvKf8RSpzRgFW5SB	bMAL23 (Sonnet, cap 10)	malsburg 505 f.23 transcription + leaf gate	brief 2026-09-26-lane-b9-mal23.md; LANE B9
