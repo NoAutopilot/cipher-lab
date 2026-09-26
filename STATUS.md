@@ -182,10 +182,14 @@ not Bourdeau's or Aymeloglu's lane (their Soria/Sanchez folders stop at 9/30); D
 QUEUE.md section "RAH Salazar y Castro index, cipher mentions" -- 25 undeciphered entries of 2,297; S3 (Caracciolo 1526) is
 interlinear-deciphered, the undeciphered Caracciolo letter is inv.6122 (A-41, 1527, Ko.8); six more Sanchez letters, one with
 its own decipherment (inv.6124); S5 confirmed and the Haro 1655-61 pool extends it.
-**Live (15:23 UTC):** NX2-GATE2 session_0174gvokCgFBjhW3vdWwBwb4 (Sonnet, box 50, alarm 6): CSP Spain vol.II/III page-by-page
-for the five dates, the BRAH 1931 Soria catalogue and UAM PDF, Kolosova's sources, and one batched RAH copy order in REQUEST.md.
-**Waiting:** NX2-CRIB and the readings need images; every RAH Salazar item is copy-order-only, so after GATE2 the lane expects to
-go idle-standing on the ASKS row for that order.
+NX2-GATE2 (7.09 D): items 1, 3, 5 of the pool are calendared in CSP Spain III (nos.212, 399, 462) with their cipher passages
+in English ("Contemporary deciphering") -- text known, confirmation only; items 2 (Soria, Genoa 16 Jun 1526, A-37 ff.428-429)
+and 4 (Sanchez, Venice 17 Dec 1524, A-33 ff.72-74) are not calendared. REQUEST.md is one batched, ranked RAH copy order; ASKS row 68.
+**Live (16:01 UTC):** NX2-CSP session_01QPVLYR8X7H1vYZzGA7hQMY (Sonnet, box 45, alarm 5): every other 1485-1558 undeciphered Indice
+row checked against CSP Spain page by page, so the order asks only for letters whose text is not in print.
+**Next:** after NX2-CSP the lane is idle-standing on ASKS 68 (every RAH Salazar item is copy-order-only; no cheap step left that
+needs no image). On images: NX2-CRIB (A-42 ff.441-442 against the Sanchez key, interlinear_align with a leave-one-out control),
+then items 2 and 4 with --check, shuffled-key control, es16 judge with per-fold spread, fresh re-derivation.
 **Note:** DECODE does catalogue RAH 9/34 (rah9-34-fernandez-1525); SCOUT-OWN-4's "coverage stops at 9/31" is re-checked by GATE.
 
 ## LANE NX handoff (session_01RDXRYmATas1Xy6K1Jjwtvo), 26 September 2026, 08:44-11:50 UTC (closed)
