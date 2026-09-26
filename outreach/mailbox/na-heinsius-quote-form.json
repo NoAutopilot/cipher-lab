@@ -1,0 +1,16 @@
+{
+  "slug": "na-heinsius-quote-form",
+  "asks_row": 46,
+  "to": "FORM: https://www.nationaalarchief.nl/beleven/contactformulier-nationaal-archief",
+  "subject": "Reproductieverzoek 3.01.19, inv.nr. 1836 (Heinsius)",
+  "form_fields": [
+    {"label": "Onderwerp", "value": "Reproductieverzoek 3.01.19, inv.nr. 1836 (Heinsius)"},
+    {"label": "E-mailadres", "value": "cipherlab.research@gmail.com"},
+    {"label": "Voornaam", "value": "[OWNER NAME]"},
+    {"label": "Achternaam", "value": "[OWNER NAME]"},
+    {"label": "CAPTCHA (Wat is de kleur van gras?)", "value": "groen -- the owner answers this at send time"},
+    {"label": "Uw vraag of opmerking", "value": "Geachte heer/mevrouw,\n\nIk schrijf namens een klein, niet-commercieel project dat gecodeerde passages leest in gedigitaliseerde historische brieven. Eén persoon leidt het project en verstuurt alle berichten; het lezen van de afbeeldingen, het onderzoek in de edities en de controles worden uitgevoerd door AI-agenten (Claude-modellen) die werken in een openbare repository waarin elke stap wordt vastgelegd.\n\nIk zou graag een foto of digitale scan willen bestellen van Nationaal Archief 3.01.19 (Anthonie Heinsius' correspondentiearchief), inv.nr. 1836, brief nr. 959 (Ph.J. van Borssele van der Hooghe aan Heinsius, 3 april 1714). De gedrukte editie (Veenendaal, Deel 15/GS227, p.531) vermeldt dat op hetzelfde blad \"bijgeschreven een brief in onopgelost cijfer\" staat, en mogelijk ook een \"oplossing\" van een ander cijferbriefje in hetzelfde dossier. Uw eigen archiefbeschrijving vermeldt dit stuk als \"availability: PHYSICAL, scans: []\" (niet gedigitaliseerd).\n\nZou u mij de kosten en de bestelprocedure kunnen laten weten voor een foto of scan van dit blad (en het bijbehorende dossier van brief 959, naar schatting 2-3 bladen)? Ik ga op dit moment geen betalingsverplichting aan; ik wil eerst de prijsopgave weten. Elke lezing die hieruit voortkomt wordt onder een open licentie gepubliceerd, met vermelding van het archief en de signatuur, hier: https://github.com/NoAutopilot/cipher-lab\n\nMet vriendelijke groet,\n[SIGN-OFF]"}
+  ],
+  "contributions_row_written": true,
+  "notes": "Drafted by parent worker QUOTE-DRAFT, 26 Sept 2026. Form only (Onderwerp/message/e-mail/name fields plus a CAPTCHA the owner must answer himself). H.A. 1836 only, per the brief's instruction (first priority in the target's consolidated REQUEST.md); the other three priority tiers are not drafted this pass. Awaiting gate 7 checked: line before the owner sends."
+}

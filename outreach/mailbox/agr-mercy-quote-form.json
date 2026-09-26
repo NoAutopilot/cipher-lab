@@ -1,0 +1,17 @@
+{
+  "slug": "agr-mercy-quote-form",
+  "asks_row": 60,
+  "to": "FORM: https://www.arch.be/index.php?l=en&m=contact",
+  "subject": null,
+  "form_fields": [
+    {"label": "I would like to", "value": "Contact a State Archives service"},
+    {"label": "Select State Archives repository", "value": "NAB"},
+    {"label": "Last name", "value": "[OWNER NAME]"},
+    {"label": "First name", "value": "[OWNER NAME]"},
+    {"label": "E-mail address", "value": "cipherlab.research@gmail.com"},
+    {"label": "Confirm e-mail address", "value": "cipherlab.research@gmail.com"},
+    {"label": "My message", "value": "Dear Sir or Madam,\n\nI am asking on behalf of a small non-commercial project that reads cipher passages in digitised historical letters. One person directs the project and sends every message; the reading of images, the searches of editions and the checks are done by AI agents (Claude models) working in a public repository where every step is logged.\n\nI would like to order a reproduction of a document in the Secrétairerie d'État et de Guerre fonds (T 100): register t. LXIV, f.16 (and f.16v), the instructions of 15 April 1648 to the abbé de Mercy, cited by Lonchay (1896, p.445 n.2). Per your online catalogue (AGATHA, BE-A0510_000027_002526), this item is digitised but reading-room-only, with no online image. Could you confirm the current modern register number corresponding to Lonchay's \"t. LXIV,\" and let me know the fee and procedure for a digital reproduction of these two leaves? If a reading-room appointment is required instead, please let me know the notice period and how to book it.\n\nI am not committing to any payment at this stage; I would just like the quote or the appointment procedure. Any reading we obtain will be published under an open licence, naming the archive and shelfmark, at https://github.com/NoAutopilot/cipher-lab\n\nWith thanks,\n[SIGN-OFF]"}
+  ],
+  "contributions_row_written": true,
+  "notes": "Drafted by parent worker QUOTE-DRAFT, 26 Sept 2026. www.arch.be/index.php?l=en&m=contact read today, HTTP 200, no plain email address on the page -- form only, so 'to' is FORM: per the job brief. Not a Gmail draft (no email address to send to); the owner pastes the message field into the form himself. Awaiting gate 7 checked: line before the owner sends."
+}
