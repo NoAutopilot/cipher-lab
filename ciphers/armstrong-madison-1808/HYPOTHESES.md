@@ -799,3 +799,15 @@ Net: no pool candidate this pass. Family E: the Jefferson-channel and 1806-1810 
 are now both exhausted at the granularity checked; item (d) of this job's brief (remaining pages of the still-
 page-1-only 2-/3-page pool items) is the named next step for a successor, not attempted here (out of the priced
 budget).
+
+## Family E, ARM-JEF recorded by LANE ARM2 (orchestrator, 26 Sept 2026 12:56 UTC; worker session_01C61yQSynUJWJkkFAETscdw, done 12:20)
+
+Search plus one screen (rule 3: N=15, a screen, not a result). Every page of five LOC items read as thumbnails:
+mtjbib017827 (28 Oct 1807, 12 pp), mtjbib018840 (28 Jul 1808, 10 pp), mtjbib020076 (19 Sep 1809, 4 pp), mjm015339
+(6 Jun 1809, 6 pp), mjm015558 (18 Sep 1809 with postscript, 3 pp): all 35 pages clear text. Collection searches
+"cipher"/"cypher", 1806-1810: Jefferson Papers 0 hits; Madison Papers 2 (mjm015002, the 30 Aug 1808 THE=972
+postscript, already on file; mjm014590, 4 May 1806, "Partly in cipher"). mjm014590 screen: THE972 coverage 14/15
+(93%), digit-0/1 share 7%, digit-2/3/5/9 share 53%, top digit 2 -- THE=972 office usage; the target reads about 43%
+/ 13% / top digit 0. Not a pool candidate. Page-1-only 2- and 3-page pool items (ARM-JEF step d) not read.
+**Family E after ARM-POOL2, ARM-LIV, ARM-JEF: no second letter in the target's code located in roll 14's docket,
+the Livingston letters, the Armstrong-Jefferson channel or the LC Madison Papers' cipher-tagged items.**

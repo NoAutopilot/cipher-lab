@@ -865,3 +865,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T12:25Z	session_012E6Q7t1Pt4d5xK4QWVL7Ap	bSALR (Opus, cap 10)	fr2933-salviati-1525 R8 design families at --measured-error 0.064	brief 2026-09-26-lane-b11-bSALR.md; LANE B11
 2026-09-26T12:25Z	session_01GtsJ5jMdcNB1WfNwFPfyze	bSALS (Sonnet, cap 4)	fr2933-salviati-1525 folder shrink (36 MB)	brief 2026-09-26-lane-b11-bSALS.md; LANE B11
 2026-09-26T12:25Z	session_01WVgk3LKjSWgnHV6tv1tA2j	bMALX (Sonnet, cap 5)	malsburg-hessen-1636 cribs: 509 ff.32-33 codes in clear + clear clauses, shuffle control	brief 2026-09-26-lane-b11-bMALX.md; LANE B11
+2026-09-26T12:56Z	session_01C61yQSynUJWJkkFAETscdw	ARM-JEF	done 4.61 (get_session), ledgered D, retitled ARCHIVED, archived	no pool; mjm014590 THE=972
