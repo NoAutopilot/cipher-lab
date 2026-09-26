@@ -829,3 +829,6 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T10:18Z	session_01QU9YdUqTM1YXDPbfa2txct	bMAL28B	done 15.85, ledgered D-, retitled ARCHIVED, archived	f.28 held M 0.214; LANE B9
 2026-09-26T10:18Z	session_01JaqeEHeqiYj6xk7nTb8E4c	bMAL16	done 11.42, ledgered D, retitled ARCHIVED, archived	f.16 held M 0.36; LANE B9
 2026-09-26T10:22Z	session_01UrEoFvMTWWuT2vmuV13nPR	V9-QA9	done 3.13, ledgered D, archived (QA/2026-09-26-0942.md, 2 flags)	
+2026-09-26T10:41Z	session_0167Uwemu8CfMzGaGRJJhx6W	LANE B9 orchestrator	done 6.73 (get_session; ledger row edited from 5.3), 9 workers 76.06, retitled ARCHIVED, archived by 7g	handoff STATUS.md LANE B9 handoff; B10 opens from it
+2026-09-26T10:41Z	session_01Tv8XirXkLKVzniSG9rA9ro	RETRO-APPLY-R	done 2.34, ledgered D, retitled ARCHIVED, archived by 7g	UPDATES rows 09:58 x6
+2026-09-26T10:41Z	session_014xGZtQBV7cnyuXamAw4nX3	SALV-DIAG	done 2.99, ledgered D, retitled ARCHIVED, archived by 7g	NEAR fr2933 row: crossover 8-9 pct, next step pass C (LANE B10 job 3)
