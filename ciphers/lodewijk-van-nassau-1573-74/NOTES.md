@@ -2876,3 +2876,82 @@ what (so the orchestrator can see the next bias)." Both controls run on
 `ax4612tr/ciphertext_5811_cut833.tsv` (5811's own ciphertext, cut to 4612 v3's N=833, key_full's own
 known-correct reading) against `key_full.tsv`, exactly as AX2-4612S, but now under `--objective excess
 --no-null-below 121` (the new defaults).
+
+**(a) Null control (re-run under the new defaults).** `python3 tools/key_repair.py
+ax4612tr/ciphertext_5811_cut833.tsv --key key_full.tsv --out-key /tmp/null_control_key_s2.tsv
+--out-changes ax2_4612s/null_control_changes_s2.tsv --margin 3.0 --rounds 4` (objective `excess`,
+`--no-null-below 121`, both now default):
+```
+53 of 110 codes present (48%) changed across 64 change-events over 4 rounds -- down from AX2-4612S's
+100/110 (91%) under --objective total, but still 53 false positives against a gate of <=2. Of the 64
+change-events: only 1 goes to NULL (code 123, l -> NULL, gain 59.5); 15 replace a correct single
+letter with a different single letter (e.g. 58 'z'(x6)->'u' gain 73.7, 20 'q'(x3)->'s' gain 65.4); the
+other 48 (75% of all changes) replace a correct single letter with a multi-character bigram or trigram
+from the top-60/top-20 fr16 lists (11 'p'(x9)->'des' gain 53.9; 109 'k'(x3)->'ent' gain 72.8; 16
+'q'(x9)->'ere' gain 12.0). Several codes chase across rounds exactly as AX2-4612S described (112: l ->
+an -> i -> l; 11: p -> des -> les).
+```
+Gate: 53 <= 2? False. **CONTROL BELOW GATE.**
+
+**Diagnosis: the objective is length-neutral in aggregate but not per-candidate, and the fix moved
+the bias from deletion to insertion, not away from length altogether.** `--objective excess` scores
+each candidate value by summing (log2 p(c|context) - mu) over *that candidate's own characters*, so a
+candidate is only "free" (zero net effect) if its characters average exactly mu. But `--bigrams
+60`/`--trigrams 20` draws candidates from the *most frequent* substrings in the whole fr16 corpus --
+by definition extremely well-predicted wherever they occur, almost always well above mu regardless of
+whether they are the code's true value. Since the score is still a *sum* over however many characters
+the candidate contributes, a 3-character trigram each scoring (say) +2 bits above mu outscores a
+correct 1-character letter scoring +1 bit above mu (sum +6 vs +1), even though the single letter is
+individually the better fit per character. Excess removed the *unconditional* pull toward zero-length
+(NULL), which is real progress (100/110 -> 53/110; NULL itself down from 62% to 2% of change-events),
+but it replaced it with an unconditional pull toward inserting the corpus's own most-common n-grams,
+because those candidates were hand-picked for being reliably above-average. The truly length-neutral
+form would need to compare each candidate's *mean* excess per character, not its *summed* excess --
+not attempted this box (a larger scope change than this brief's own remit; flagged as the next step
+below).
+
+**(b) Known-answer control, 3 seeds, k=8 (6 swapped in 3 pairs + 2 given a bigram value).**
+`ax2_4612s/known_answer_control_s2.py` (`ax2_4612s/known_answer_control_s2.log`):
+```
+seed 0: recovered 6/8 (2/2 bigram-hidden); false changes on 160 untouched codes: 53
+seed 1: recovered 4/8 (0/2 bigram-hidden); false changes: 53
+seed 2: recovered 5/8 (1/2 bigram-hidden); false changes: 53
+
+GATE: mean recovery 0.625 (>= 0.75 needed)? False. bigram-only mean recovery 0.500 (reported, not
+gated). max false changes across seeds 53 (<= 2 needed)? False.
+```
+Recovery itself improved sharply over AX2-4612S's 0/8 (0.000) to 5/8 average (0.625) -- excess
+genuinely helps the search find a perturbed code's true single-letter value more often than not, and
+recovers a deliberately-bigram-hidden code back to its true single letter half the time (3/6 instances)
+-- but the false-change count is identical (53) in every seed and in the null control, and the first
+20 (of 53, log truncates there) overlap 16-17 of 20 codes across the three seeds despite each seed
+perturbing a different, disjoint set of 8 codes. That the same ~53 codes move regardless of which 8
+are deliberately altered confirms the diagnosis above: this is a structural property of key_full
+under this candidate pool and scorer, not noise driven by the perturbation itself.
+
+**Gate verdict: CONTROL BELOW GATE on both halves** ((a) 53 false positives vs a gate of <=2; (b)
+mean recovery 0.625 vs a gate of >=0.75, and 53 false changes vs <=2 in every seed). Per the brief and
+CLAUDE.md rule 3: stop here. Unit 3 (targets 4612 v3 and 5799) was **not run** -- no
+`key_4612_repair.tsv`/`key_5799_repair.tsv`/`decode_*_repair.json`/`reading_*_repair*` produced this
+box; `key_full.tsv`, `key.tsv`, `key_5799.tsv` untouched.
+
+**Verdict for AX2-4612S2 as a whole.** The length-neutral objective is a real, substantial
+improvement over AX2-4612S's total-log-probability objective on every number that moved (null-control
+false positives 100->53; known-answer recovery 0.000->0.625; NULL's share of change-events 62%->2%),
+confirming the diagnosis in AX2-4612S's own NOTES.md section was correct and worth fixing. It is not
+yet a working instrument: the remaining 53 false positives are driven by a *new*, well-understood bias
+(unconditional preference for inserting a top-frequency bigram/trigram, because "most frequent
+corpus-wide" was used as a proxy for "well-predicted in this context" when building the candidate
+list) rather than the old NULL-seeking one. H-S is still neither confirmed nor refuted; the instrument
+built to test it is closer to sound but not there yet. **Next step for a successor:** either (i) score
+each candidate by its *mean* excess per character rather than the *sum*, so a 3-character trigram must
+average better than a 1-character letter, not merely accumulate more total credit, or (ii) restrict
+bigram/trigram candidates to ones that are locally well-predicted in *this* context (re-rank or filter
+the top-60/20 list by their actual scored contribution at this specific position rather than their
+corpus-wide frequency) -- either should be re-gated with the same two controls before touching
+4612/5799 again.
+
+Files: `tools/key_repair.py`, `tools/tests/test_key_repair.py`, `ax2_4612s/{null_control_changes_s2.tsv,
+known_answer_control_s2.py,known_answer_control_s2.log}`, this section. `key_full.tsv`, `key.tsv`,
+`key_5799.tsv` untouched (rule 3: a control below gate means the target is not run; no
+`key_4612_repair.tsv`/`key_5799_repair.tsv` produced this box). No network. No images.
