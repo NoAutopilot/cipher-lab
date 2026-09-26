@@ -124,6 +124,12 @@ def main():
     ap.add_argument("--ciphertext-6467", default="ciphertext_6467.tsv")
     ap.add_argument("--mark-signs", action="store_true",
                      help="treat a marked numeral ('16^', '4~') as a sign distinct from its plain form (test A/C)")
+    ap.add_argument("--noise-rate", type=float, default=0.08,
+                     help="WC-LAGARDE 26 Sept 2026: injected token-noise rate for test A's noisy control "
+                          "(default 0.08, the original L2 value); CLAUDE.md rule 3's SALV-DIAG lesson requires "
+                          "this bracket the transcription's own measured pass-to-pass disagreement rate "
+                          "(20.1% rows-with-alt / 21.8% M-rate on the current v2 files -- see NOTES.md "
+                          "'WC-LAGARDE'), so also run at e.g. --noise-rate 0.22 and --noise-rate 0.28")
     a = ap.parse_args()
     model = Model([open(a.corpus, encoding="utf-8").read()], order=3)
     rng = random.Random(a.seed)
@@ -135,9 +141,9 @@ def main():
     seq, plain, truth = make_control(ctrl_text, K, N, model, a.seed)
     s, d, _ = mono(seq, model, a.seed)
     print(f"A control clean N={N} K={K}: {share(d, plain):.1%}  score/tok {s/N:.3f}  {d[:60]}")
-    noisy = [x if rng.random() > 0.08 else rng.choice(sorted(set(seq))) for x in seq]
+    noisy = [x if rng.random() > a.noise_rate else rng.choice(sorted(set(seq))) for x in seq]
     s, d, _ = mono(noisy, model, a.seed)
-    print(f"A control 8% noise: {share(d, plain):.1%}  score/tok {s/N:.3f}  {d[:60]}")
+    print(f"A control {a.noise_rate:.0%} noise: {share(d, plain):.1%}  score/tok {s/N:.3f}  {d[:60]}")
     s, d, _ = mono(tgt, model, a.seed)
     print(f"A target 6179: score/tok {s/N:.3f}  {d[:60]}")
 

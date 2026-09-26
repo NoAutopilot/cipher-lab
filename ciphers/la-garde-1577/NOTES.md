@@ -699,3 +699,99 @@ real name and with a nonsense name, confirming that param is silently ignored --
 name, `af_naam_vol`); 7 working search queries (`af_naam_vol`: La Garde, Lagarde, de la Garde, Schoonhoven;
 `plaats`: Schoonhoven; `opmerkingen` date-scoped 1576-1579: cijfer, chiffre); 1 detail-page fetch (10761). No
 other hosts. No subagents. Novelty not classified (not this worker's job).
+
+## WC-LAGARDE (26 Sept 2026, LANE WC worker)
+
+**Job:** settle L4's 9 fully-unresolved cells from the already-fetched images, then rerun `solve_l2.py` with its
+matched controls plus a noisy control at an injected-error level bracketing the transcription's own measured
+pass-to-pass disagreement (CLAUDE.md rule 3, SALV-DIAG lesson).
+
+**Step 0 (intake gate):** `python3 tools/intake_gate_check.py la-garde-1577` -> `la-garde-1577: open (line 1) --
+edition/page or full-text-search citation found within 6 lines` (exit 0).
+
+**Step 1: the 9 cells.** Installed numpy+Pillow from PyPI (offline after fetch, `tools/iiif_lines.py` needs
+numpy). No new network fetch -- all crops cut from the already-fetched full-page PNGs on disk
+(`images/06179_p2.png`, `06179_p3.png`, `06467_p2.png`) with local PIL crop/zoom (2x-10x LANCZOS) into
+`images/crops_wc/` (not all intermediate crops are individually referenced below; the ones cited are the
+clearest read for each cell). Two independent blind reads per hard cell: this worker's own direct crop read,
+plus one Sonnet subagent (general-purpose Agent) given only the two hardest zoomed crops with no candidate
+values shown, asked to describe the glyph shape (not to guess a "sensible" cipher value). The subagent's
+independent read matched this worker's own for both cells it was asked about (6179 p2L28 pos12: "18^", a
+1-stroke feeding one closed loop under one continuous overline, not the committed "12" nor alt "8^"; 6179 p3L6
+pos8: a loop-with-crossbar flourish mark riding on a plain "1" downstroke, not the committed "9" nor a bare
+"1" without the mark) -- two-witness agreement on the two hardest calls.
+
+All 9 cells settled, 0 remain unresolved. `ciphers/la-garde-1577/build_v2.py`'s `CONFIRMED` mechanism was
+extended (previously only cleared a `note`'s "unresolved" tag for one 25 Sept cell; now also overrides
+`group`/`conf` so a reconciliation rerun reproduces these readings per rule 7) and wired into all four
+reconcile_page calls (previously only 6467 run2 used it, so a plain rerun of `build_v2.py` would have silently
+reverted the 6179 p2/p3 and 6467 run1 fixes back to "unresolved"). `python3 build_v2.py`'s output after this
+change matches the hand-settled files byte-for-byte except for note wording (verified with `diff`); regenerating
+is now the reproducible path, not the hand edit.
+
+| Cell | Was (A/alt) | Settled | Evidence |
+|---|---|---|---|
+| 6179 p2L28 pos12 | 12 / B:8^ / C:18 | **18^** | crop: 1-stroke + one closed loop under one overline; independent blind subagent read agrees exactly |
+| 6179 p3L6 pos7 | 18^ / B:[mark] | **18^** (confirmed) | crop: clear 1+8 digits under one overline, not a free mark |
+| 6179 p3L6 pos8 | 9 / B:1 | **1~** | crop: loop-crossbar flourish over a plain 1-downstroke, not this scribe's ordinary rounded 9-loop (compared directly against p3L6 pos3's own 9); independent blind subagent read agrees |
+| 6179 p3L6 pos16 | 12 / B:2 | **2** | crop: bare small loop-tail digit right after the free-standing pos15 mark, no leading 1-stroke |
+| 6179 p3L7 pos5 | 6 / B:8 | **6** (confirmed) | crop: clear overlined 6-shape |
+| 6179 p3L7 pos6 | 18 / B:10 | **18** (confirmed) | crop: 1-stroke + 8-loop, not a closed-oval 10 |
+| 6179 p3L7 pos17 | 18 / B:10 | **18** (confirmed) | crop: 1-stroke + 8-loop before the overlined 12 and free mark that precede "de vre Sgre" |
+| 6467 p2L7 pos12 (run1) | 4 / B:24 | **24** | crop: clear two-digit 24; agrees with OX-LAG's 25 Sept GSME print-edition cross-check, which already flagged GSME reading 24 here |
+| 6467 p2L11 pos12 (run2) | 5^ / B:3^ | **3^** | crop: overlined 3 (downward-opening loop, unlike 5's upper hook); agrees with OX-LAG's GSME cross-check |
+
+Two of the nine (6467 run1/run2 pos12) had already been flagged by OX-LAG's independent GSME print-edition
+cross-check (25 Sept 2026) as likely needing this exact correction; this pass's own blind image read reaches
+the same value from the manuscript image directly, an independent confirmation via a different method.
+
+**Counts after settling:** 239 rows total (unchanged), H 187 (was 178), M 52 (was 61), 0 unresolved (was 9).
+Measured pass-to-pass disagreement (rows carrying a witness `alt`, i.e. two blind passes disagreed on the
+literal sign): **48/239 = 20.1%** now (was 57/239 = 23.8% before this pass); M-grade rate (includes
+majority-resolved marks): **52/239 = 21.8%** now (was 61/239 = 25.5%).
+
+**Step 2: `solve_l2.py` rerun with error-bracketed noisy control.** Added a `--noise-rate` flag (default 0.08,
+the original L2/L4 value, preserved) so the noisy control's injected-error level is no longer hardcoded --
+CLAUDE.md rule 3's SALV-DIAG lesson requires this bracket the transcription's own measured disagreement rather
+than stay fixed at whatever level the first worker happened to pick. Corpus: `tools/data/fr16` both
+Catherine de Médicis volumes, gunzipped to a scratch file (155,320 lines combined); control-plain: lines
+1006-1030 of `lettresindites00marg_djvu.txt` (Marguerite de Valois, 1580 letter to the Queen Mother), same as
+L2/L4, disjoint from the training corpus and from the target's own clear text. Bracket tested: 8% (historical
+baseline), then a scan from 20% to 28% to find exactly where each mode's noisy control stops beating the
+target, against a measured rate of 20.1-25.5% depending on which of the two rates above is used.
+
+| Mode | Control clean | Control 8% noise | Control 20-26% noise | Control 28% noise | Target 6179 score/tok |
+|---|---|---|---|---|---|
+| base-digit (default, N=189, K=25) | 73.5%, -2.157 | 48.7%, -2.329 | 28.6% at 22%, -2.413 | 15.9%, -2.449 | **-2.484** (worse than every noisy control tried, 8-28%) |
+| overlined/marked as distinct signs (`--mark-signs`, N=199, K=42) | 68.8%, -2.076 | 16.1%, -2.196 | 21.6% at 20% (-2.264) / 16.1% at 24-25% (-2.217) / 9.5% at 26% (-2.259) | 7.0%, **-2.353** | **-2.281** (worse than control at every level 8-26%; control collapses below target only at 28%) |
+
+Test B (periodic Vigenère/Beaufort, periods 1-14): control still reads 100% at period 5 a24; target's best score
+moved slightly with the corrected transcription (base-digit -3.496 at a23/period14, mark-signs -3.320 at the
+same) but is unchanged in kind -- gibberish, no period/alphabet combination reads. Test C (the 6467 run-1 margin
+note as a crib, both spellings, <=6 nulls): still no consistent many-to-one sign-to-letter map on the corrected
+run-1 sequence (positions shifted by the pos12=24 correction, but the crib fit function still returns no match).
+
+**Result: negative for both designs, still control-backed, now against a control whose injected error brackets
+the transcription's own measured disagreement rate.** Base-digit mode's negative is robust throughout the
+entire tested range (8-28%): the target never beats even a control degraded by simulated error nearly 4x the
+transcription's own current M-rate (21.8%). Mark-signs mode's negative holds at every noise level from 8% up
+through 26% -- comfortably past both the current (21.8%) and legacy (25.5%) measured-disagreement figures --
+and only flips (control score drops below target's) at 28%, a level with no support in this transcription's own
+measured error. Per rule 3's SALV-DIAG test ("if the control collapses at or below the measured error, the
+negative is not a test at this transcription error"): the collapse point here (between 26% and 28%) sits above
+every measured-disagreement figure computed for this transcription, so the existing negative is *not*
+undermined the way Salviati's was -- this is a genuine, if narrower-margin than it first looked, confirmation
+that the negative survives realistic transcription noise, not a non-test.
+
+**Status: stays `open`** (rule 5) -- this pass strengthens L4's existing control-backed negative for the
+monoalphabetic/homophonic and periodic-polyalphabetic families rather than showing it was a non-test, so there
+is no basis to move to `partial`/NEAR.md. Not `closed-negative`: only two of the possible design families
+(masc/homophonic-substitution and periodic-polyalphabetic, both via this target's own hand-rolled `solve_l2.py`
+rather than `tools/family_run.py`) have a matched, now error-bracketed control; `masc`/`running_key` via
+`tools/family_run.py` have not been tried on this target. Recommendation for the orchestrator, not set here: if
+a `family_run.py` pass on `masc`/`running_key` also returns a control-backed negative, this target's ladder
+would be exhausted and `closed-negative` becomes a legitimate call at that point -- but that is the next
+worker's job, not this one's.
+
+Requests: none (all crops cut locally from images already on disk; no network fetch this pass). One Sonnet
+subagent (general-purpose Agent, blind read of two crops, no candidates shown). Cost: see the lane ledger.

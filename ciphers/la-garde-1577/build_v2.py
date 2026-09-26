@@ -167,11 +167,24 @@ def write_v2(rows, insertions, path, witness_names):
             f.write("\t".join(["", "", s, "M", "", f"insertion by {witness_names[wi]} after A idx {after}, not in A"]) + "\n")
 
 
-# Manually confirmed against images/06467_p2.png this pass (L4): the mark after the second "07" on the
-# third cipher line (run 2) is legible as a small free-standing stroke distinct from the digit, matching A's
-# split ("07" then "[mark]") rather than L1's merged "07~~". No other unresolved cell was legible enough at
-# this image's resolution (no crop tool, no PIL, no network available to this brief) to call safely.
-CONFIRMED = {("p2L11", "8"): "confirmed on images/06467_p2.png (L4): a separate mark follows the second 07, matching A's split over L1's merged 07~~"}
+# Manually confirmed against the source images. Each entry may set a `note` only (the group value already
+# stood, only the "unresolved" tag needed clearing -- L4's one cell) or a `group`+`note` pair (WC-LAGARDE's
+# nine cells, 26 Sept 2026: iiif_lines.py + local PIL crops of images/06179_p2.png, 06179_p3.png,
+# 06467_p2.png, two independent blind reads each -- this worker directly, plus a Sonnet subagent shown only
+# the zoomed crop with no candidate readings -- settled every cell L4 left unresolved; see NOTES.md
+# "WC-LAGARDE" section for the per-cell reasoning and crop paths).
+CONFIRMED = {
+    ("p2L11", "8"): {"note": "confirmed on images/06467_p2.png (L4): a separate mark follows the second 07, matching A's split over L1's merged 07~~"},
+    ("p2L28", "12"): {"group": "18^", "note": "WC-LAGARDE 26 Sept 2026: settled 18^ (two independent blind crop reads describe a 1-stroke feeding a single closed loop under one continuous overline) -- images/crops_wc/6179p2_p2L28_pos12_zoom5x.png"},
+    ("p3L6", "7"): {"group": "18^", "note": "WC-LAGARDE 26 Sept 2026: confirmed 18^ on crop (clear 1+8 digit shapes under one overline, not a free-standing mark) -- images/crops_wc/6179p3_L6_pos78_7x.png"},
+    ("p3L6", "8"): {"group": "1~", "note": "WC-LAGARDE 26 Sept 2026: settled 1~ (digit 1 under the loop-crossbar flourish, not a plain 9 -- compared directly against p3L6 pos3's own 9 on the same line) -- two independent blind reads -- images/crops_wc/6179p3_L6_pos8_10x.png"},
+    ("p3L6", "16"): {"group": "2", "note": "WC-LAGARDE 26 Sept 2026: settled 2 (crop shows a bare small loop-tail digit right after the free-standing mark at pos15, no leading 1-stroke for a 12) -- images/crops_wc/6179p3_L6_pos1516_7x.png"},
+    ("p3L7", "5"): {"group": "6", "note": "WC-LAGARDE 26 Sept 2026: confirmed 6 (crop shows a clear overlined 6-shape, not an 8) -- images/crops_wc/6179p3_L7_pos56_v2.png"},
+    ("p3L7", "6"): {"group": "18", "note": "WC-LAGARDE 26 Sept 2026: confirmed 18 (crop shows 1-stroke plus 8-loop, no closed-oval 10 shape) -- images/crops_wc/6179p3_L7_pos56_v2.png"},
+    ("p3L7", "17"): {"group": "18", "note": "WC-LAGARDE 26 Sept 2026: confirmed 18 (crop shows 1-stroke plus 8-loop before the overlined 12 and the free-standing mark that precede vre Sgre) -- images/crops_wc/6179p3_L7_pos17_v2.png"},
+    ("p2L7", "12"): {"group": "24", "note": "WC-LAGARDE 26 Sept 2026: settled 24 (crop clearly shows two-digit 24, not a bare 4) -- agrees with OX-LAG's independent GSME print-edition cross-check (25 Sept 2026) -- images/crops_wc/6467p2_run1_overview.png"},
+    ("p2L11", "12"): {"group": "3^", "note": "WC-LAGARDE 26 Sept 2026: settled 3^ (crop clearly shows an overlined 3, the loop opens downward-right unlike 5's upper hook) -- agrees with OX-LAG's independent GSME print-edition cross-check (25 Sept 2026) -- images/crops_wc/6467p2_L11_pos12_final.png"},
+}
 
 
 def apply_confirmed_pair(rows_ins):
@@ -179,7 +192,12 @@ def apply_confirmed_pair(rows_ins):
     for r in rows:
         key = (r["line"], r["pos"])
         if key in CONFIRMED and "unresolved" in r["note"]:
-            r["note"] = CONFIRMED[key]
+            entry = CONFIRMED[key]
+            if "group" in entry:
+                r["group"] = entry["group"]
+                r["conf"] = "H"
+                r["alt"] = ""
+            r["note"] = entry["note"]
     return rows, ins
 
 
@@ -206,8 +224,8 @@ def main():
     a_p3 = [r for r in load_rows(os.path.join(HERE, "ciphertext_6179_passA.tsv")) if r[0].startswith("p3")]
     l1_p3 = [r for r in load_rows(os.path.join(HERE, "ciphertext_6179_L1.tsv")) if r[0].startswith("p3")]
 
-    rows_p2, ins_p2 = reconcile_page(a_p2, [b_p2, l1_p2], a)
-    rows_p3, ins_p3 = reconcile_page(a_p3, [l1_p3], a)
+    rows_p2, ins_p2 = apply_confirmed_pair(reconcile_page(a_p2, [b_p2, l1_p2], a))
+    rows_p3, ins_p3 = apply_confirmed_pair(reconcile_page(a_p3, [l1_p3], a))
     summarise(rows_p2, ins_p2, "6179 p2 (A,B,L1)")
     summarise(rows_p3, ins_p3, "6179 p3 (A,L1)")
     write_v2(rows_p2 + rows_p3, [(0 if wi == 0 else 1, s, fl, after) for wi, s, fl, after in ins_p2] +
@@ -221,7 +239,7 @@ def main():
     a_run2 = [r for r in a_all if r[0] in ("p2L10", "p2L11")]
     l1_run1 = [r for r in l1_all if r[0] in ("p2L1", "p2L2", "p2L3")]
     l1_run2 = [r for r in l1_all if r[0] in ("p2L4", "p2L5")]
-    rows_r1, ins_r1 = reconcile_page(a_run1, [l1_run1], a)
+    rows_r1, ins_r1 = apply_confirmed_pair(reconcile_page(a_run1, [l1_run1], a))
     rows_r2, ins_r2 = apply_confirmed_pair(reconcile_page(a_run2, [l1_run2], a))
     summarise(rows_r1, ins_r1, "6467 run1 (A,L1)")
     summarise(rows_r2, ins_r2, "6467 run2 (A,L1)")

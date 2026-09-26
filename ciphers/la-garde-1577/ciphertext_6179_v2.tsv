@@ -103,7 +103,7 @@ p2L28	8	12^	M	C:12	literal majority
 p2L28	9	16	H		
 p2L28	10	10^	M	C:10	literal majority
 p2L28	11	8	H		
-p2L28	12	12	M	B:8^/C:18	unresolved: w0:12/w1:8^/w2:18
+p2L28	12	18^	H		WC-LAGARDE 26 Sept 2026: settled 18^ (two independent blind crop reads describe a 1-stroke feeding a single closed loop under one continuous overline) -- images/crops_wc/6179p2_p2L28_pos12_zoom5x.png
 p2L28	13	10	H		
 p2L28	14	8	H		
 p2L28	15	16	H		
@@ -118,8 +118,8 @@ p3L6	3	9	H
 p3L6	4	21	H		
 p3L6	5	5	H		
 p3L6	6	10^	M	B:10	digit majority 10, mark disputed
-p3L6	7	18^	M	B:[mark]	unresolved: w0:18^/w1:[mark]
-p3L6	8	9	M	B:1	unresolved: w0:9/w1:1
+p3L6	7	18^	H		WC-LAGARDE 26 Sept 2026: confirmed 18^ on crop (clear 1+8 digit shapes under one overline, not a free-standing mark) -- images/crops_wc/6179p3_L6_pos78_7x.png
+p3L6	8	1~	H		WC-LAGARDE 26 Sept 2026: settled 1~ (digit 1 under the loop-crossbar flourish, not a plain 9 -- compared directly against p3L6 pos3's own 9 on the same line) -- two independent blind reads -- images/crops_wc/6179p3_L6_pos8_10x.png
 p3L6	9	16	H		
 p3L6	10	19	H		
 p3L6	11	1	H		
@@ -127,7 +127,7 @@ p3L6	12	13	H
 p3L6	13	8	H		
 p3L6	14	10	H		
 p3L6	15	[mark]	H		
-p3L6	16	12	M	B:2	unresolved: w0:12/w1:2
+p3L6	16	2	H		WC-LAGARDE 26 Sept 2026: settled 2 (crop shows a bare small loop-tail digit right after the free-standing mark at pos15, no leading 1-stroke for a 12) -- images/crops_wc/6179p3_L6_pos1516_7x.png
 p3L6	17	12	H		
 p3L6	18	9	H		
 p3L6	19	20	H		
@@ -136,8 +136,8 @@ p3L7	1	8	H
 p3L7	2	2	H		
 p3L7	3	[mark]	M		only A read this line
 p3L7	4	15	M	B:[mark]15	digit majority 15, mark disputed
-p3L7	5	6	M	B:8	unresolved: w0:6/w1:8
-p3L7	6	18	M	B:10	unresolved: w0:18/w1:10
+p3L7	5	6	H		WC-LAGARDE 26 Sept 2026: confirmed 6 (crop shows a clear overlined 6-shape, not an 8) -- images/crops_wc/6179p3_L7_pos56_v2.png
+p3L7	6	18	H		WC-LAGARDE 26 Sept 2026: confirmed 18 (crop shows 1-stroke plus 8-loop, no closed-oval 10 shape) -- images/crops_wc/6179p3_L7_pos56_v2.png
 p3L7	7	12	H		
 p3L7	8	5	H		
 p3L7	9	9	H		
@@ -148,7 +148,7 @@ p3L7	13	14	H
 p3L7	14	24	H		
 p3L7	15	17	H		
 p3L7	16	21	H		
-p3L7	17	18	M	B:10	unresolved: w0:18/w1:10
+p3L7	17	18	H		WC-LAGARDE 26 Sept 2026: confirmed 18 (crop shows 1-stroke plus 8-loop before the overlined 12 and the free-standing mark that precede vre Sgre) -- images/crops_wc/6179p3_L7_pos17_v2.png
 p3L7	18	12	H		
 p3L7	19	[mark]	H		
 p3L8	1	1	H		

@@ -19,7 +19,7 @@ p2L7	8	2^	M	B:2	digit majority 2, mark disputed
 p2L7	9	4	H		
 p2L7	10	07	H		
 p2L7	11	11	H		
-p2L7	12	4	M	B:24	unresolved: w0:4/w1:24
+p2L7	12	24	H		WC-LAGARDE 26 Sept 2026: settled 24 (crop clearly shows two-digit 24, not a bare 4) -- agrees with OX-LAG's independent GSME print-edition cross-check (25 Sept 2026) -- images/crops_wc/6467p2_run1_overview.png
 p2L7	13	3	H		
 p2L7	14	9~	M	B:9	digit majority 9, mark disputed
 p2L8	1	2^	M	B:2	digit majority 2, mark disputed
@@ -43,5 +43,5 @@ p2L11	8	[mark]	M	B:07~~	confirmed on images/06467_p2.png (L4): a separate mark f
 p2L11	9	4	H		
 p2L11	10	7	H		
 p2L11	11	1	H		
-p2L11	12	5^	M	B:3^	unresolved: w0:5^/w1:3^
+p2L11	12	3^	H		WC-LAGARDE 26 Sept 2026: settled 3^ (crop clearly shows an overlined 3, the loop opens downward-right unlike 5's upper hook) -- agrees with OX-LAG's independent GSME print-edition cross-check (25 Sept 2026) -- images/crops_wc/6467p2_L11_pos12_final.png
 p2L11	13	12	H		
