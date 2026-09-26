@@ -21,3 +21,6 @@ Output: one section "## Family D, ARM3-LOOP crib rounds on the nomenclator desig
 Both parts: files you may touch are the folders named, tools/families/nomenclator.py and its test (3b only), tools/crib_rounds.py and its test (3b only, additive), HYPOTHESES.md (append), NOTES.md (append a dated line), ROOM.md. Report what was found and where it was not found; do not classify novelty; never write solved, new, first, unpublished. Push with `python3 tools/room.py --push <paths>`; done line; one-paragraph final reply (answer first, files, "cost: see the lane ledger"); stop.
 
 Jobs 1-2 verdicts (pasted by the orchestrator before spawning):
+- ARM3-COR (done 19:22 UTC, 6.71 D): no coded letter from Bowdoin, Warden, Skipwith, Parker, Barlow or Mason to Madison/Jefferson 1806-10 at LOC; Weber 1979 ties WE027 to Livingston-to-King, Paris 1802 (not Livingston-Madison). No pool, no crib source for 3b.
+- ARM3-DICT (done 19:06 UTC, 2.01 D): linear and page+entry dictionary designs excluded at U1 (units_top1 0.388 vs control 0.149-0.155, about 12 sd). The two-level premise (particle block + family book with fixed units slots) stands; 3b's control keeps it.
+Spawned 19:35 UTC: ARM3-ADJ does PART 3a only; ARM3-LOOP does PART 3b only; they run in parallel (different files; 3b's U5 uses 3a's closed-set positions only if 3a has pushed by then).
