@@ -1887,3 +1887,48 @@ whoever ran the R8 glyph review pass) before any of it could be removed.
 
 Files: `ciphers/fr2933-salviati-1525/{images_manifest_full.tsv,regen_images.sh,images/**,images/manifest.json,NOTES.md}`
 (this section). Hosts: gallica.bnf.fr, 2 requests (both HTTP 200, no retries).
+
+## bSALR: R8 families at the measured error (26 Sept 2026, LANE B11)
+
+Worker bSALR (LANE B11, Opus, cap $10, box 60 min), 12:26-13:10 UTC. Brief `.claude/briefs/runs/2026-09-26-lane-b11-bSALR.md`.
+Disk only, no hosts, no subagents, no images. **No reading; grades stay H0 C0 S0 M0 I0; no reading_bsalr.txt.**
+Spec: bSALC's pass-C `specs/fr2933-salviati-1525.json` (N=2,839 tokens, K=236 types). Every run: `tools/family_run.py
+--family syllabary --measured-error 0.064 --param err=0.064`, 3 control seeds, 1 target seed (seed 1), gate 0.6, it16 corpus,
+judge it (N=3,757 letters); rows in HYPOTHESES.md (label "LANE B11 bSALR"), decodes `families/syllabary-1-*-laneb11bsalropus.txt`.
+Since err equals the measured error, family_run's non-test note does not fire. Control score/symbol is **approximate**: the
+control's best score divided by (control N x the target's own stream/token ratio: 1.323, or 1.597 with boundary=1). family_run
+prints only the control's total score. Italian word hits use dsn_compare.py's 30-word list, compared against 3 shuffles.
+
+| variant | R8 at 5% (control acc; ctrl vs target score/symbol) | bSALR control acc at 6.4%, seeds 1/2/3 (mean) | control score/symbol (approx.) | TARGET score/symbol | judge (it) | word hits | verdict at 6.4% |
+|---|---|---|---|---|---|---|---|
+| DSN regular, 6 restarts | 95/94/93%; -2.36..-2.38 vs -2.75..-2.77 | **15.3 / 86.4 / 92.1% (0.646)** | -2.83 / -2.51 / -2.40 | **-2.753** | FAIL -1.337 (null_p99 -1.849, real_p05 -0.944) | 0 (shuffles 0/0/0) | control-backed negative on the mean gate, **weak**: seed 1's control collapsed (15%), and one target seed at 6 restarts could be the same collapse |
+| DSN regular, `--shuffle-target 1` (judge floor) | not run by R8 | 11.7 / 78.9 / 92.1% (0.609) | -2.79 / -2.53 / -2.40 | -2.846 | FAIL -1.414 | 0 | the judge floor is not a PASS, so the judge is still valid as a gate for this family at this N |
+| DSN2 V1 marks=mixed, 24 restarts | 93-96%; -2.43..-2.44 vs -2.95..-2.96 | **81.8 / 82.2 / 92.1% (0.854)** | -2.49 / -2.41 / -2.27 | **-2.950** | FAIL -1.481 | 0 (0/0/2) | **control-backed negative at the measured error**: the target is 0.46 below the worst control seed |
+| DSN2 V3 bases=8, boundary=1, 24 restarts | 72-94%; -2.73..-2.86 vs -3.12..-3.13 | **80.9 / 85.2 / 88.9% (0.850)** | -2.79 / -2.77 / -2.73 | **-3.118** | FAIL -1.362 | 0 (0/0/0) | **control-backed negative at the measured error**: the target is 0.33 below the worst control seed |
+| DSN2 V2 marks=mixed, boundary=1 | 88-95%; -2.79..-2.88 vs -3.31..-3.33 | not run | - | - | - | - | not run: 13:05 UTC, and a ~15 min variant would have crossed 80% of the box (Usage 6). Still a non-test at 6.4% |
+| DSN irregular (assign=irregular) | 18-24% at 6 restarts, 24-85% at 24 | not run | - | - | - | - | not run (same reason). Still a non-test at 6.4% |
+
+Shuffle floors for V1 and V3 were not run: the brief runs one only if the target's judge PASSes or its score/symbol reaches
+the control's range, and neither happened.
+
+**Reading of the numbers.**
+(i) At the measured 6.4%, V1 and V3 lose about 10 points of control recovery against R8's 5% (V1 93-96 -> 82-92; V3
+72-94 -> 81-89), stay far above the 0.6 gate, and the target stays about as far below the control per symbol as it did at 5%.
+These two are the first syllabary negatives drawn from an error level the transcription can back (bSALC's estimate). Both
+numbers are logged side by side.
+(ii) DSN regular is weaker. At 6 restarts one control seed in three collapses (15.3% here, 11.7% in the shuffle run). That is
+the same shape as SALV-DIAG's 12% seed 1 (26.1%). The target's -2.753 falls between the two reading seeds (-2.40, -2.51) and
+the collapsed one (-2.83). So a single 6-restart target seed does not rule out a solver collapse on the target. Suggestion:
+rerun DSN regular at 24 restarts with 3 target seeds (about 18 min) before counting it with V1/V3.
+(iii) The real target beats its own shuffle by 0.09 per symbol and 0.08 in the judge (-1.337 vs -1.414). A letter shuffle
+destroys the target's strong bigram structure (constraints block), so a small gain is expected for any design and is not a
+signal. Every decode has 0 Italian word hits, as do the shuffles.
+(iv) Conditions: the 6.4% figure is bSALC's model-based estimate, not a two-pass disagreement measured on pass C. f.56r never
+got an independent third read, and 76 three-way splits were not arbitrated. SALV-DIAG's error curve is non-monotonic (12% at
+0.636, 14% at 0.845), so the 8-9% crossover is itself noisy. Every verdict above holds only if the per-sign error really is
+near 6.4%. This is the same family on new material (pass C), not a same-knob re-brief (rule 3's repeated-attempt shape does not apply).
+Status stays `partial` (rule 5). The NEAR.md row is the orchestrator's to update.
+
+**Not run / suggestions (one line each):** DSN2 V2 and DSN irregular at err=0.064 (about 15 min each at 24 restarts); DSN
+regular at 24 restarts x 3 target seeds; a family_run option to print each control's stream length, so control score/symbol
+stops being an approximation.
