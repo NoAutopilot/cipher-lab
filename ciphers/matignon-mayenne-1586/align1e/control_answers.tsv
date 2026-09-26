@@ -1,0 +1,21 @@
+label	value	confidence	segments	note
+X01	a	H	f79.4,f79.6	l-a-utomne, a-y (pouray), a-ttendre/a-nnee
+X02	i	L	f79.4	X18 X02 l e r ~ l-i-ber(te); could be b
+X03	t	M	f79.4,f78.10	me-t-tre; f78.10 line-end unclear
+X04	a	M	f79.3,f78.6	r-a-fraischir, l-a-rmee
+X05	u	L	f78.8,f78.9	trou-u-e, fle-uu-e (doubled X05 X05)
+X06	d	H	f78.1,f78.2,f78.4,f78.8	d-e sorte, d-escharger, d-eux mois, d-e
+X07	o	H	f78.1,f78.3,f78.5,f78.7	puissi-o-ns, cau-m-o-nt, que l-o-n
+X08	v	M	f79.6,f78.5	v-ous (que vous); f78.5 b-ien -> sign may be b/v
+X09	que	H	f78.1,f78.4,f78.7,f79.5	sorte QUE ie, puis QUE pour, QUE lon, QUE ie, QUE-rcy
+X10	p	L	f78.7,f79.5	re-p-rendra guess; weak
+X11	p	H	f78.1,f79.1,f79.6,f78.5	p-uissions, p-lustost, p-our, re-p-rendra
+X12	s	M	f78.1,f78.8	presupo-s-e, plu-s; conflicts: m (caumont f78.3), d (fin de f79.4)
+X13	f	H	f78.5,f79.4,f79.5	f-aict, f-in, f-ruict
+X14	qui	H	f78.3,f79.5,f78.2	QUI sont, QUI est, QUI-ls y
+X15	u	L	f78.8	trou-u-e, single occurrence
+X16	a	L	f79.4,f78.2	(l)a fin, g-a-ronne; weak
+X17	r	L	f79.4,f79.6	mett-r-e; could be g (rouergue f79.5)
+X18	l	M	f78.4,f78.5,f79.4	ce-l-a, que l-a/l-on, l-iberte
+X19	u	M	f78.1,f78.9	no-u-s, fle-u-ue; f78.5 suggests a
+X20	places	L	f78.2	single occurrence in 'garonne de [quatre places] quils y'; could be code for quatre or NULL

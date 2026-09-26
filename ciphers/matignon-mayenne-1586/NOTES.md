@@ -610,3 +610,40 @@ Grade counts unchanged from (1c'): H 10,074 / M 1,648 / U 1,272 (C 0, S 0, I 0).
 align_crib.py --hide CODES --targets CODES` from the repository root, no ciphertext or key files depend on
 its output since nothing was committed). Hosts: github.com 1 shallow clone (dbourdeau/cyphersolver,
 deleted after reading `matignon1586/`), no other host.
+
+## NEAR step (1e) (bMAT1E), 26 Sept 2026
+
+Job: `.claude/briefs/runs/2026-09-26-lane-b7-mat1e.md`. Intake gate `tools/intake_gate_check.py`: exit 0
+("partial (line 1) -- edition/page or full-text-search citation found within 6 lines").
+Source: Bourdeau's transcriptions `f78_cipher.txt`, `f79_cipher.txt`, `crib_f78.txt`, `crib_f79.txt`
+(Daniel Bourdeau, dbourdeau/cyphersolver `matignon1586/`, HEAD fc0c9e8, read 26 Sept 2026, CC BY 4.0 text;
+copied into `align1e/` with this credit; clone deleted). No images fetched (transcription-only test, rule 2:
+the result is conditional on these transcriptions).
+
+**Design.** `align1e/make_masked.py` writes the passage with every token replaced by its key.tsv value.
+Control: 20 H codes masked as `<Xnn>`, drawn by seed (1586) from the 21 H codes with <= 11 occurrences in the
+passage -- density-matched to the U test (the 22 U/unkeyed sign types there occupy ~110 tokens; the 20 drawn
+codes 103 of the 470 H tokens; the 20 rarest total only 93, so a draw that includes frequent codes, like seed
+1586's unrestricted draw at 270 tokens, would strip the anchors, bMAT1D's draw-1 flaw). The hand alignment was
+done blind by one Opus subagent that saw only `masked_control.txt` and the two cribs (segments of ~20 tokens
+between read anchors, value by vote over occurrences), output `align1e/control_answers.tsv`,
+`align1e/control_alignment.md`. Scored by `align1e/score_control.py` (exact value match).
+
+**Known-answer control: 9/20 against the 16/20 gate -- FAIL.** Correct: a, d, o, que, p, f, qui, a, l
+(X01,06,07,09,11,13,14,16,18). Wrong: 3(e->i), 24(nostre->t), x(e->a), b(e->u), 26(uous->v, a near miss),
+g(u->p), oo(d->s), he(l->u), X(g->r), c(p->u), D(a->places). By the subagent's own confidence: H-confidence 7/7
+correct, M 1/6, L 1/7. The subagent found trustworthy anchors only in f78.1-5 and f79.3-6; f78.6-10 and
+f79.1-2 did not align by reading (the key reads these leaves at 28-47% even unmasked, bMAT1D), so codes whose
+occurrences fall there are guesses.
+
+**Consequence.** Per the brief, the target run (17 U signs, `masked_target.txt`, built but not given to any
+aligner) was not run, and **no U meaning is committed: key.tsv, exceptions.tsv, reading files unchanged**
+(H 10,074 / M 1,648 / U 1,272; judge unchanged at -1.371 vs shuffled -1.78, not re-run since nothing changed).
+This is a failed-control non-test for hand alignment on this transcription pair, not a negative on the U signs
+(rule 3). Status stays `partial`.
+
+**Suggestion (one line, not done).** The confidence split (H-confidence 7/7) suggests a pre-registered gate on
+high-confidence answers only -- but that rule was seen after scoring, so it needs a fresh seed's control
+before any use; better first: re-transcribe f.78v 6-10 and f.79r 1-2 from native crops (Gallica ark
+btv1b9061879d canvas 85) with the margin decipherment line-by-line, since those segments are where alignment
+broke. Hosts: github.com 1 shallow clone (deleted); no other host.
