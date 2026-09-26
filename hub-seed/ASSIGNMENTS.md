@@ -840,3 +840,6 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T10:52Z	session_01D6243xTTWRK952CnYzsvxv	ARM-S2	done 9.21, ledgered D, archived	
 2026-09-26T10:52Z	session_01FfzLPckur8ykKG9w4u6N3o	ARM-REC3	done 4.54, ledgered D, archived	
 2026-09-26T10:52Z	session_01MM2JB5csfXb1Km3Y3Aeye9	ARM-POOL2 (Sonnet, cap 5)	frame 0645 docket letters	brief 2026-09-26-lane-arm-c2-pool2-docket.md; LANE ARM -> ARM2 adopts
+2026-09-26T11:12Z	session_01HBtZHDboTVhkQ6k7qZuCSW	bMALS	done 3.57, ledgered D, retitled ARCHIVED, archived by LANE B10	24.1 MB (27 with keys/), regen sample byte-identical
+2026-09-26T11:12Z	session_01FcKadiMNE7MT5nsy5mcE75	bMALK	done 4.12, ledgered D, retitled ARCHIVED, archived by LANE B10	keys 519-523 all negative; job 4 next
+2026-09-26T11:12Z	session_017DkWmCC7JP5RzZJCTbR2X1	bSALC	done 9.42, ledgered D, retitled ARCHIVED, archived by LANE B10	2.6% no-majority, est 6.4%/sign < 8-9% crossover; R8 families re-runnable
