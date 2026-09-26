@@ -90,8 +90,9 @@ identified, the catalogue's date and senders corrected. The "first verified N3" 
 Orange 1572 detector candidate also fell (partial decipherment printed 1842). Zero unique solves today; two
 over-claims prevented by the gates before anything left the repository.
 
-## LANE AX2 handoff (session_016sbTkVT8HGNJ6JGjJNmCuM), 26 September 2026, from 05:14 UTC (live; updated 06:00)
+## LANE AX2 handoff (session_016sbTkVT8HGNJ6JGjJNmCuM), 26 September 2026, from 05:14 UTC (live)
 
+Updated 06:00 UTC.
 Brief .claude/briefs/runs/2026-09-26-lane-ax2-orchestrator.md; COMMON reused: 2026-09-26-lane-ax-COMMON.md. Start state: LANE AX
 handoff below (AX-REDERIV2 and AX-COMP2 finished before AX2 opened and were ledgered by the parent).
 
