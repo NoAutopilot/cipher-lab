@@ -783,3 +783,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T08:13Z	session_011LGV2dxSLTnpHb7CwrzoqB	ARM-REC2	done 3.03, ledgered D-, archived	
 2026-09-26T08:14Z	session_018tA6f2KodR8TdqLCewqu5L	ARM-C1 (Fable, cap 15)	nomenclator family build + control	brief 2026-09-26-lane-arm-c1.md; LANE ARM
 2026-09-26T08:14Z	session_019GkVZEhwsixGdZo13Hnvbo	ARM-IMG (Sonnet, cap 4)	M34 roll 14 image locator	brief 2026-09-26-lane-arm-img.md; LANE ARM
+2026-09-26T08:14Z	session_01N3zZKK2qku7oQb42Kc8wb2	LANE B8 orchestrator	done 5.98 (get_session; ledger row edited from 4.83), 8 workers 39.09, retitled ARCHIVED, archived by 7g	handoff STATUS.md LANE B8 handoff; B9 opens from it
+2026-09-26T08:14Z	session_01MGncH2nJEj9FQRnatv4qWY	retrospective q	done 2.08, ledgered D, retitled ARCHIVED, archived by 7g	RETRO-2026-09-26e.md; RETRO-APPLY-Q follows
