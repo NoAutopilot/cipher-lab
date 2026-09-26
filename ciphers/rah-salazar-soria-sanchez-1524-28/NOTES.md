@@ -7,7 +7,7 @@ five dates, every hit read: items 1 (No.212), 3 (No.399) and 5 (No.462 of pt.2) 
 in English translation ("Contemporary deciphering" for 1 and 3), so their text is known and they are dataset rows at most;
 items 2 (Soria, 16 Jun 1526) and 4 (Sanchez, 17 Dec 1524) are not calendared. Both solver repositories (fresh clones) and
 DECODE's catalogue have none of the five. The 1931 BRAH Soria catalogue (tomo 98 pp.363-416) is HathiTrust search-only and
-unread. Status `blocked`: no page image of any item is online (bibliotecadigital.rah.es has no record), REQUEST.md is the
+unread. Rodriguez Villa's two editions (1875, 1885) searched for items 2 and 4 and the pool's other open Sanchez rows (NX2-RV): not found. Status `blocked`: no page image of any item is online (bibliotecadigital.rah.es has no record), REQUEST.md is the
 only route. Details in the NX2-GATE2 section below.
 
 # Lope de Soria (Genoa/Mirandola) and Alonso Sánchez (Venice) to Charles V, 1524-1528 — RAH Colección Salazar y
