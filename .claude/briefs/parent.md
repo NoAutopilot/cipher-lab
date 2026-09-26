@@ -196,6 +196,8 @@ progress moved: every lane keeps its targets to completion on the account that s
 - Cross-account verification: a "reading ready" line unclaimed by the other side's verifier lane for 60 minutes
   is taken by the nearer lane; rule 10 needs a separate session, not a separate account.
 
+**Runner PR tie-break (26 Sept 2026, after the PR 28 double claim).** A `[LQ-]`, `[JSTOR-]`, `[SO-]` or `[SENT-]` pull request is the SUPPLY parent's to land by default. The SOLVE parent lands one only when no SUPPLY claim line for that PR number has appeared in ROOM.md within 20 minutes of the PR opening, and it says so in its claim. Before spawning any PR-LAND worker, either parent runs `git pull --rebase` and reads the ROOM tail for a claim naming the PR number; a claim already there wins, whatever the clock minute.
+
 ## Handing over
 
 Naming and model (owner, 25 Sept 2026): every parent session is created on `claude-fable-5-1` and titled "Orchestrator N", N one more than the current parent's number (7c is Orchestrator 4, 7d is Orchestrator 5); the internal 7a/7b/7c labels stay in the files for lineage, the session title is the number. Lane orchestrators keep their lane names.
