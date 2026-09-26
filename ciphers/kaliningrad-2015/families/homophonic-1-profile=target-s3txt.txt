@@ -1,0 +1,28 @@
+# kaliningrad-2015 homophonic seed 1 restarts 20 26 Sept 2026 02:48 UTC; control mean 0.955 (0.780-0.999); score -3974.361
+# {"restart_scores": [-3974.4, -3978.6, -3986.5, -3989.6, -4078.8, -4091.8, -4133.5, -4137.9, -4148.1, -4155.7, -4159.4, -4165.0, -4169.3, -4189.6, -4190.5, -4191.2, -4200.9, -4213.5, -4219.1, -4240.1], "key": {"'": "q", "-": "h", "A": "q", "a": "u", "b": "q", "c": "k", "d": "s", "e": "a", "f": "o", "g": "e", "h": "o", "i": "i", "k": "z", "l": "s", "m": "e", "n": "t", "o": "d", "p": "r", "s": "s", "t": "n", "u": "w", "v": "r", "w": "y", "x": "w", "z": "l", "ê": "i", "ö": "m", "ü": "q"}}
+atqiortsqnqmotqosiasowiziwukasanisaswyws
+wwaseutwtnstatitqsowsosowwwsnwsqausno
+waswkoaoswwoasktwtsawysasssutwtoosko
+sqatuksqauwuaotwwotkouiyequeqenonoyeanqnqkao
+sswstowduwssastatanqsaaetoeyiaaiiaiuasqas
+asesaswtnwtdwwtnawwasoswsqskiosstaitqtyondwz
+sutsaieokitemyisetsyiwamwqtsqtowutqiwyasetatqt
+aisizssdawqtqwultqasqanqoostkstaaawustywa
+ioonqiastqtqoywsiosliwswswoqwuoqtriowsmsqaswwtwku
+ayaostostetaowdatitqoionnznqnqsanywqsowaasai
+waawqwtssaasosaiutqawqatwtynetisatqneiuqsootks
+wstotaalnwutsaoaownqywoaaooseisquwaitse
+onqauraistnqduiwaettlqyteysuaneasasowswantqo
+siatitasknayausosatqswyiiiaiswqaadetqo
+estionouwswwusosaatasqiwnqtqsnqtiotqntseyusssstssl
+sqwarkwqsqiynswaowiiiwoiaaiotwstqakttoiwatitoi
+satetanqstwoeityyotqaitqstusesauesaetsquydoqw
+iewsqtwqtwuonsiusqettqlawaattoqawwsiaentait
+awsslqiiswqstqttqoaawinimasoiayeynqeztnsela
+iaiwotmwqasaadtoawisatqskwqnowowsqtowayn
+moatwitwyayatyawnsskisizawaaswtstqaosqati
+uitstqaiuitqssdnqsoqsuaossteqtqaarsqaaashqu
+nazalyttiaaattqettsayeiwttwowassiswqaaisa
+uiolsqstweoswotwtwqatiwwatnyaosettwassqas
+oaotsqaytqisswasewsaedtqwniyiwyywiwaoaw
+aieun
