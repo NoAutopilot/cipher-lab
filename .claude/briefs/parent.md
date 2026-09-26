@@ -59,7 +59,8 @@ its state is only what it committed, so read its handoff and its lanes' ROOM lin
    back `done` with hits go to a verifier.
 6. **Board and desk.** status.json and `python3 tools/build_dashboard.py` after any class change; ASKS.md rows and
    outreach/*.md `status: ready` drafts are the owner's desk. Nothing leaves the repository as "new" without a
-   verifier's AUDIT.md class (rule 10).
+   verifier's AUDIT.md class (rule 10). Run `python3 tools/desk_check.py` at every check-in and act on every line it
+   prints before republishing the board (CLAUDE.md Usage 8a; DESK-CHECK, 26 Sept 2026).
 7. **Tell the owner** only: a reading that passed its judge and a fresh-instance re-derivation, an AUDIT.md verdict,
    a second opinion that finds prior print, a credential or payment he must supply, or a blocker. For a real
    breakthrough also fire the routine "Cipher Lab: breakthrough alert (email)" with a plain, graded description.
