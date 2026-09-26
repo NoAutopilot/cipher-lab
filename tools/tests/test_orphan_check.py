@@ -56,8 +56,8 @@ def test_clean_case_no_problems(tmp_path):
 
     room_lines = oc.parse_room_lines(str(tmp_path / "ROOM.md"))
     rows = oc.parse_assignments_rows(str(tmp_path / "ASSIGNMENTS.md"))
-    a, b, c, d, e, f = oc.run_all(sessions, triggers, room_lines, "", rows, NOW)
-    assert (a, b, c, d, e, f) == ([], [], [], [], [], [])
+    a, b, c, d, e, f, h = oc.run_all(sessions, triggers, room_lines, "", rows, NOW)
+    assert (a, b, c, d, e, f, h) == ([], [], [], [], [], [], [])
 
 
 def test_orphan_session_flagged_unless_adopted(tmp_path):
@@ -280,9 +280,40 @@ def test_lineage_depth_with_no_reset_found_still_counts_and_never_crashes():
     assert len(oc.check_lineage_depth(no_reset, warn_at=5)) == 1
 
 
-def test_lineage_depth_is_informational_only_run_all_still_returns_six_groups():
-    a, b, c, d, e, f = oc.run_all([], [], [], "", [], NOW)
-    assert (a, b, c, d, e, f) == ([], [], [], [], [], [])
+def test_lineage_depth_is_informational_only_run_all_still_returns_seven_groups():
+    a, b, c, d, e, f, h = oc.run_all([], [], [], "", [], NOW)
+    assert (a, b, c, d, e, f, h) == ([], [], [], [], [], [], [])
+
+
+def test_dropped_request_flagged_after_two_hours_with_no_reply(tmp_path):
+    write_text(tmp_path / "ROOM.md",
+               "2026-09-26 12:00 | LANE X worker | flag: for the verifier -- please rule on Y\n")
+    room_lines = oc.parse_room_lines(str(tmp_path / "ROOM.md"))
+    within_window = datetime.datetime(2026, 9, 26, 13, 0)  # 1h since the request: window still open
+    assert oc.check_dropped_requests(room_lines, within_window) == []
+    after_window = datetime.datetime(2026, 9, 26, 14, 31)  # 2.5h since the request
+    h2 = oc.check_dropped_requests(room_lines, after_window)
+    assert len(h2) == 1
+    assert "the verifier" in h2[0]
+    assert "2.5h" in h2[0]
+
+
+def test_dropped_request_resolved_by_a_later_matching_actor_within_two_hours(tmp_path):
+    write_text(tmp_path / "ROOM.md",
+               "2026-09-26 12:00 | LANE X worker | flag: for parent 7i -- please decide Z\n"
+               "2026-09-26 13:10 | parent 7i (Fable, session_x) | reply: decided Z\n")
+    room_lines = oc.parse_room_lines(str(tmp_path / "ROOM.md"))
+    later = datetime.datetime(2026, 9, 26, 16, 0)
+    assert oc.check_dropped_requests(room_lines, later) == []
+
+
+def test_dropped_request_excludes_done_and_check_in_reports(tmp_path):
+    write_text(tmp_path / "ROOM.md",
+               "2026-09-26 12:00 | worker A | done: for the parent -- finished the job, nothing owed\n"
+               "2026-09-26 12:01 | worker B | check-in 12:01: for LANE Q, all clear\n")
+    room_lines = oc.parse_room_lines(str(tmp_path / "ROOM.md"))
+    later = datetime.datetime(2026, 9, 26, 16, 0)
+    assert oc.check_dropped_requests(room_lines, later) == []
 
 
 if __name__ == "__main__":

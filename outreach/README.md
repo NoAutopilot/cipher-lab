@@ -15,13 +15,6 @@
 6. Email drafts are written unwrapped: one paragraph per line, blank line between paragraphs, no hard line breaks
    inside a paragraph, and the metadata header (status/to/subject) above a blank line. Hard-wrapped Markdown pastes
    into a mail client as broken lines (26 Sept 2026).
-
-
-## Project mailbox (26 Sept 2026)
-
-The owner created cipherlab.research@gmail.com and connected it to the parent through the Gmail connector on both accounts. The parent places each ready draft in the mailbox as a Gmail draft (from `outreach/mailbox/<slug>.json`, prepared by a worker with the recipient address verified on the institution's own page that day and the CONTRIBUTIONS.md row written first); the owner reviews and presses send, so the 23 Sept 2026 directive (emails stay the person's) is unchanged. The sign-off is substituted in the mailbox only; the repository never carries the owner's name (rule 9). Replies are read by the parent at check-ins and recorded in the draft's file and CONTRIBUTIONS.md before anyone answers; the parent that owns the draft's target answers, the other only routes.
-
-Gate 7 (26 Sept 2026): no mailbox draft is sent until a separate checking session has written a `checked:` line in the draft's header (CLAUDE.md Outreach gate 7); the parent replaces the Gmail draft with the checked text before telling the owner it is ready.
 7. A draft in a language other than English carries, in the email itself, a separator line and the full English
    version beneath it, so the person can review what he signs and the recipient can read either. The mailbox
    draft is signed the way the person signs his own sent mail (his name and the project name), supplied from the
@@ -35,3 +28,20 @@ Gate 7 (26 Sept 2026): no mailbox draft is sent until a separate checking sessio
    (searched <date>). The pre-send fact check verifies the thread choice. Earlier mail the person sent from his
    own account (Huygens, Tomokiyo) is known only from CONTRIBUTIONS.md: a reply to those goes from his account
    in his thread, not from the mailbox.
+
+
+## Project mailbox (26 Sept 2026)
+
+The owner created cipherlab.research@gmail.com and connected it to the parent through the Gmail connector on both accounts. The parent places each ready draft in the mailbox as a Gmail draft (from `outreach/mailbox/<slug>.json`, prepared by a worker with the recipient address verified on the institution's own page that day and the CONTRIBUTIONS.md row written first); the owner reviews and presses send, so the 23 Sept 2026 directive (emails stay the person's) is unchanged. The sign-off is substituted in the mailbox only; the repository never carries the owner's name (rule 9). Replies are read by the parent at check-ins and recorded in the draft's file and CONTRIBUTIONS.md before anyone answers; the parent that owns the draft's target answers, the other only routes.
+
+Gate 7 (26 Sept 2026): no mailbox draft is sent until a separate checking session has written a `checked:` line in the draft's header (CLAUDE.md Outreach gate 7); the parent replaces the Gmail draft with the checked text before telling the owner it is ready.
+
+## Owner-side rule (owner's directive, 26 Sept 2026, OPTIMIZATION-2026-09-26.md (a))
+
+The owner does nothing that requires reading this repository. A draft is not `ready` until it is self-contained:
+the recipient (or the Gmail-draft mailbox slug it already sits in), the subject, and the sign-off line to fill in
+are all in the draft's own header or the Gmail draft itself, not "see the target's REQUEST.md" as the only
+instruction. If telling the owner to act needs him to open a NOTES.md or AUDIT.md file first, the ask is wrong: the
+worker preparing the draft copies the needed fact into the draft instead of pointing at the repository for it. This
+is `.claude/briefs/parent.md` duty 3b, restated here because outreach drafts are the other half of the owner's desk
+(ASKS.md rows are the other half; `tools/desk_check.py --cap 5`).

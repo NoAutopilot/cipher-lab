@@ -17,12 +17,17 @@ Checks (each prints one line per problem; --fix-suggest adds the one-line fix):
       e.g. "LOCAL-QUEUE L19" or an SO- label) matches a LOCAL-QUEUE/JSTOR-QUEUE/SECOND-OPINIONS-QUEUE
       row set `done`/`bounced`, or a NOTES.md/AUDIT.md commit on that target folder, dated after the
       draft's own status date (parsed from the status line; falls back to the file's last commit).
-  (b) DESK MISMATCH: an ASKS row read `open` while a draft for it reads `sent`/`held`, or a draft at
-      `ready` while its ASKS row reads `done`/`queued as ...`/`waiting`.
+  (b) DESK MISMATCH: an ASKS row read `open`/`desk`/`backlog` while a draft for it reads `sent`/`held`,
+      or a draft at `ready` while its ASKS row reads `done`/`queued as ...`/`waiting`.
   (c) BODY CONTRADICTION (cheap heuristics): a `ready` draft whose body still contains one of a short
       list of stale-instruction phrases while its ASKS row, or a LOCAL-QUEUE row for the same target,
       is `done` -- the runner has already done that step.
   (d) NO DATE: a `ready`/`draft(ed)` status line carrying no absolute date (CLAUDE.md rule 6).
+  (e) DESK CAP (26 Sept 2026, OPTIMIZATION-2026-09-26.md (a), DESK-CAP): more than `--cap` (default 5)
+      ASKS.md rows carry `desk` as the leading word of their status cell. The desk cap
+      (`.claude/briefs/parent.md` duty 6 "Desk") exists so the owner never faces more than a handful of
+      paste-ready actions at once; everything else is `backlog` with a one-line expected value. This
+      check does not decide which rows to demote -- it only says the cap is exceeded.
 
 Exit 0 if no problems, 1 if any. `--json PATH` writes a small {"flagged": [...], "problems": N,
 "generated": "..."} file for tools/build_dashboard.py's "check" chip; the board must still build with
@@ -32,7 +37,7 @@ Usage:
   tools/desk_check.py [--outreach-dir outreach] [--asks ASKS.md] [--local-queue LOCAL-QUEUE.tsv]
                        [--jstor-queue JSTOR-QUEUE.tsv] [--so-queue SECOND-OPINIONS-QUEUE.tsv]
                        [--ciphers-dir ciphers] [--repo-root .] [--now "26 Sept 2026 17:00"]
-                       [--fix-suggest] [--json desk-check.json]
+                       [--cap 5] [--fix-suggest] [--json desk-check.json]
 
 All path options default to the real repository files and exist so the offline test can point the
 tool at temporary fixtures. `--now` defaults to the current UTC time.
@@ -297,9 +302,9 @@ def check_desk_mismatch(draft, asks_rows):
         if not row:
             continue
         ask_word = leading_word(row["status"])
-        if ask_word == "open" and draft["status_word"] in ("sent", "held"):
+        if ask_word in ("open", "desk", "backlog") and draft["status_word"] in ("sent", "held"):
             problems.append((
-                f"(b) DESK MISMATCH {draft['slug']}: ASKS row {row_num} reads open, but the draft "
+                f"(b) DESK MISMATCH {draft['slug']}: ASKS row {row_num} reads {ask_word}, but the draft "
                 f"reads {draft['status_word']}",
                 f"reconcile ASKS.md row {row_num} with {draft['slug']}.md's status"))
         if draft["status_word"] == "ready" and (
@@ -338,6 +343,17 @@ def check_no_date(draft):
     return []
 
 
+def check_desk_cap(asks_rows, cap):
+    """(e) DESK CAP -- see the module docstring."""
+    desk_nums = sorted(n for n, row in asks_rows.items() if leading_word(row["status"]) == "desk")
+    if len(desk_nums) <= cap:
+        return []
+    rows_str = ", ".join(str(n) for n in desk_nums)
+    return [(
+        f"(e) DESK CAP: {len(desk_nums)} ASKS.md rows carry `desk`, over the cap of {cap} (rows {rows_str})",
+        f"demote {len(desk_nums) - cap} of these rows to `backlog: <one-line value>`")]
+
+
 def run_checks(drafts, asks_rows, local_rows, jstor_rows, so_rows, ciphers_dir, repo_root, git_log_fn):
     problems = []
     for draft in drafts:
@@ -358,6 +374,7 @@ def main():
     ap.add_argument("--ciphers-dir", default=os.path.join(ROOT, "ciphers"))
     ap.add_argument("--repo-root", default=ROOT)
     ap.add_argument("--now", default=None, help="unused by the checks themselves; accepted for parity with the other tools' offline-test hook")
+    ap.add_argument("--cap", type=int, default=5, help="max ASKS.md rows allowed to carry `desk` (default 5, the owner's desk cap)")
     ap.add_argument("--fix-suggest", action="store_true", help="print the one-line fix after each problem")
     ap.add_argument("--json", default=None, help="write a small {flagged, problems, generated} file here")
     args = ap.parse_args()
@@ -369,6 +386,7 @@ def main():
     so_rows = load_tsv(args.so_queue)
 
     problems = run_checks(drafts, asks_rows, local_rows, jstor_rows, so_rows, args.ciphers_dir, args.repo_root, git_commits_since)
+    problems += check_desk_cap(asks_rows, args.cap)
 
     flagged_slugs = set()
     for msg, fix in problems:
@@ -376,7 +394,7 @@ def main():
         if args.fix_suggest:
             print(f"  fix: {fix}")
         # every message names the slug right after its letter code, e.g. "(a) STALE DRAFT bodleian-rawl-a24-p4:"
-        m = re.match(r'\([a-d]\) [A-Z ]+ ([a-z0-9][a-z0-9\-]*):', msg)
+        m = re.match(r'\([a-e]\) [A-Z ]+ ([a-z0-9][a-z0-9\-]*):', msg)
         if m:
             flagged_slugs.add(m.group(1))
 

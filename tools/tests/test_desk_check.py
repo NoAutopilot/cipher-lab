@@ -164,6 +164,30 @@ try:
     check("parse_date reads prose", dc.parse_date("sent 24 Sept 2026 (reply pending)") == datetime.date(2026, 9, 24))
     check("parse_date returns None on no date", dc.parse_date("ready") is None)
 
+    # --- (e) DESK CAP ---
+    write(asks_path,
+          "# Asks\n\n| # | Raised | Project | What is needed | Exact action | Who | Status |\n|---|---|---|---|---|---|---|\n"
+          "| 1 | 24 Sept | cipher-lab | a | b | owner | desk: send it |\n"
+          "| 2 | 24 Sept | cipher-lab | a | b | owner | desk: send it |\n"
+          "| 3 | 24 Sept | cipher-lab | a | b | owner | desk: send it |\n"
+          "| 4 | 24 Sept | cipher-lab | a | b | owner | desk: send it |\n"
+          "| 5 | 24 Sept | cipher-lab | a | b | owner | desk: send it |\n"
+          "| 6 | 24 Sept | cipher-lab | a | b | owner | desk: send it |\n"
+          "| 7 | 24 Sept | cipher-lab | a | b | owner | backlog: worth doing |\n")
+    over_cap = dc.load_asks_md(asks_path)
+    problems_e = dc.check_desk_cap(over_cap, 5)
+    check("(e) DESK CAP fires at 6 desk rows over a cap of 5", len(problems_e) == 1, problems_e)
+    if problems_e:
+        check("(e) message names all six rows", all(str(n) in problems_e[0][0] for n in range(1, 7)), problems_e)
+        check("(e) message excludes the backlog row", "7" not in problems_e[0][0].split("rows ")[-1], problems_e)
+
+    write(asks_path,
+          "# Asks\n\n| # | Raised | Project | What is needed | Exact action | Who | Status |\n|---|---|---|---|---|---|---|\n"
+          "| 1 | 24 Sept | cipher-lab | a | b | owner | desk: send it |\n"
+          "| 2 | 24 Sept | cipher-lab | a | b | owner | backlog: worth doing |\n")
+    under_cap = dc.load_asks_md(asks_path)
+    check("(e) DESK CAP does not fire at 1 desk row", dc.check_desk_cap(under_cap, 5) == [])
+
 finally:
     shutil.rmtree(tmp, ignore_errors=True)
 

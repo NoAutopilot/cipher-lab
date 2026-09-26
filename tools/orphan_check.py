@@ -30,6 +30,14 @@ Five checks, each printed one line per problem found:
       session whose title does not start with "ARCHIVED" (the LIVE/ARCHIVED convention in
       .claude/briefs/parent.md "Handing over", 26 Sept 2026; added per RETRO-2026-09-26d item 1's ROOM.md
       ask of 05:17 UTC, so the check survives past the one worker instance that heard it verbally).
+  (h) DROPPED REQUEST -- a ROOM.md line addressed "for <role>" (the parent, the owner-account parent,
+      parent <id>, LANE <x>, the verifier) with no later line whose actor (the second column) matches
+      that role within two hours of the request (OPTIMIZATION-2026-09-26.md (a), DESK-CAP, 26 Sept 2026:
+      "the Japikse question waited three and a half hours today" with nothing flagging the silence). A
+      line starting "done:" or "check-in" is a report, not a request, even if it mentions "for <role>",
+      and is excluded. The role-to-actor match is a substring/prefix proxy on ROOM.md's free-text actor
+      field, not an exact address book, the same approximation (g)'s lineage count already accepts --
+      it errs toward flagging, the same direction (d) STALE CLAIM's own docstring already chooses.
 
 Depth early-warning (26 Sept 2026, RETRO-2026-09-26i item 2, LANE V10/B12 failure at depth 8): counts
   (g) LINEAGE DEPTH WARNING -- "hand-over to <X>" mentions in each account's STATUS.md "## Parent handoff"
@@ -39,17 +47,17 @@ Depth early-warning (26 Sept 2026, RETRO-2026-09-26i item 2, LANE V10/B12 failur
       platform's own depth number directly (no API for it), so it infers depth from the hand-over chain
       the parent already records in STATUS.md's prose -- a proxy, not an exact count, and it undercounts
       if a parent hands over without updating STATUS.md. (g) is informational: it never affects this
-      script's exit code, only (a)-(f) do.
+      script's exit code, only (a)-(f) and (h) do.
 
-Exit codes: 0 clean, 1 if any of (a)-(f) is non-empty.
+Exit codes: 0 clean, 1 if any of (a)-(f) or (h) is non-empty.
 
 Usage:
   tools/orphan_check.py --sessions S.json --triggers T.json [--room-file ROOM.md]
                          [--assignments hub-seed/ASSIGNMENTS.md] [--now "2026-09-26 05:00"] [--room]
   tools/orphan_check.py --no-sessions
-      Runs only the checks computable from ROOM.md/ASSIGNMENTS.md alone (just (d) -- (a),(b),(c),(e) all
-      need the sessions/triggers files and are skipped, vacuously clean) -- for a session that has not
-      saved list_sessions/list_triggers to disk this run.
+      Runs only the checks computable from ROOM.md/ASSIGNMENTS.md alone (just (d) and (h) -- (a),(b),
+      (c),(e) all need the sessions/triggers files and are skipped, vacuously clean) -- for a session
+      that has not saved list_sessions/list_triggers to disk this run.
 
 --sessions/--triggers accept the raw tool-result text: a bare JSON list, or a dict carrying the list
 under "sessions"/"triggers"/"data"/"items"/"results", optionally wrapped once more under an envelope key
@@ -374,6 +382,86 @@ def check_lineage_depth(status_text, warn_at=5):
     return warnings
 
 
+ROLE_RE = re.compile(
+    r'\bfor (the owner-account parent|the parent|the verifier|parent \S+|LANE \S+)\b', re.I)
+
+
+def role_key(role):
+    """Normalize a "for <role>" match to a (kind, tag) pair used by actor_matches_role below."""
+    role = role.strip()
+    low = role.lower()
+    if low == "the parent":
+        return ("parent", None)
+    if low == "the owner-account parent":
+        return ("parent", "owner")
+    if low == "the verifier":
+        return ("verifier", None)
+    m = re.match(r'parent\s+(\S+)', role, re.I)
+    if m:
+        return ("parent", m.group(1).lower().rstrip(".,:;"))
+    m = re.match(r'lane\s+(\S+)', role, re.I)
+    if m:
+        return ("lane", m.group(1).lower().rstrip(".,:;"))
+    return (low, None)
+
+
+def actor_matches_role(actor, key):
+    """Loose proxy match of a ROOM.md actor field against a role_key() -- see the (h) docstring note
+    on why this is a substring/prefix heuristic, not an exact address book."""
+    kind, tag = key
+    a_low = actor.lower()
+    if kind == "parent":
+        if "parent" not in a_low:
+            return False
+        if tag is None:
+            return True
+        if tag == "owner":
+            return "owner" in a_low
+        return tag in a_low
+    if kind == "lane":
+        if "lane" not in a_low:
+            return False
+        return tag in a_low if tag else True
+    if kind == "verifier":
+        return "verifier" in a_low
+    return kind in a_low
+
+
+def check_dropped_requests(room_lines, now):
+    """(h) DROPPED REQUEST -- see the module docstring."""
+    problems = []
+    seen = set()
+    for i, l in enumerate(room_lines):
+        sig = l["signal"]
+        sig_low = sig.lower().strip()
+        if sig_low.startswith("done:") or sig_low.startswith("check-in") or l["ts_dt"] is None:
+            continue
+        for m in ROLE_RE.finditer(sig):
+            role = m.group(1)
+            key = role_key(role)
+            deadline = l["ts_dt"] + datetime.timedelta(hours=2)
+            has_reply = any(
+                later["ts_dt"] is not None and later["ts_dt"] <= deadline
+                and actor_matches_role(later["actor"], key)
+                for later in room_lines[i + 1:]
+            )
+            if has_reply:
+                continue
+            age = now - l["ts_dt"]
+            if age <= datetime.timedelta(hours=2):
+                continue  # the two-hour window has not elapsed yet
+            dedupe_key = (l["ts"], l["actor"], role.lower())
+            if dedupe_key in seen:
+                continue
+            seen.add(dedupe_key)
+            hours = age.total_seconds() / 3600
+            problems.append(
+                f"(h) DROPPED REQUEST: {l['actor']} at {l['ts']} asked {role!r} ({sig[:80]!r}), "
+                f"no reply from that role within 2 hours ({hours:.1f}h elapsed)"
+            )
+    return problems
+
+
 def run_all(sessions, triggers, room_lines, assignments_text, assignment_rows, now):
     a = check_orphan_sessions(sessions, room_lines, assignments_text, now)
     b = check_stale_sessions(sessions, room_lines, now)
@@ -381,7 +469,8 @@ def run_all(sessions, triggers, room_lines, assignments_text, assignment_rows, n
     d = check_stale_claims(room_lines, now)
     e = check_unledgered_closes(assignment_rows, sessions)
     f = check_title_mismatch(sessions)
-    return a, b, c, d, e, f
+    h = check_dropped_requests(room_lines, now)
+    return a, b, c, d, e, f, h
 
 
 def main():
@@ -391,7 +480,7 @@ def main():
     ap.add_argument("--room-file", default=os.path.join(ROOT, "ROOM.md"))
     ap.add_argument("--assignments", default=os.path.join(ROOT, "hub-seed", "ASSIGNMENTS.md"))
     ap.add_argument("--now", help="override 'now', e.g. '2026-09-26 05:00' (default: current UTC time)")
-    ap.add_argument("--no-sessions", action="store_true", help="run only the ROOM.md-based check (d); skip (a),(b),(c),(e)")
+    ap.add_argument("--no-sessions", action="store_true", help="run only the ROOM.md-based checks (d),(h); skip (a),(b),(c),(e)")
     ap.add_argument("--room", action="store_true", help="append the summary line to ROOM.md via tools/room.py")
     ap.add_argument("--status-file", default=os.path.join(ROOT, "STATUS.md"),
                      help="STATUS.md path for the (g) lineage-depth early-warning (default: repo STATUS.md)")
@@ -408,9 +497,9 @@ def main():
     assignments_text = open(args.assignments, encoding="utf-8").read() if os.path.exists(args.assignments) else ""
     assignment_rows = parse_assignments_rows(args.assignments)
 
-    a, b, c, d, e, f = run_all(sessions, triggers, room_lines, assignments_text, assignment_rows, now)
+    a, b, c, d, e, f, h = run_all(sessions, triggers, room_lines, assignments_text, assignment_rows, now)
 
-    for group in (a, b, c, d, e, f):
+    for group in (a, b, c, d, e, f, h):
         for p in group:
             print(p)
 
@@ -422,7 +511,8 @@ def main():
             print(p)
 
     summary = (f"orphans: {len(a) + len(b)} sessions, {len(c)} triggers, {len(d)} claims, "
-               f"{len(e)} unledgered, {len(f)} title-mismatches, {len(g)} lineage-depth warnings")
+               f"{len(e)} unledgered, {len(f)} title-mismatches, {len(g)} lineage-depth warnings, "
+               f"{len(h)} dropped requests")
     print(summary)
 
     if args.room:
@@ -431,7 +521,7 @@ def main():
         except Exception as exc:
             print(f"--room: could not append to ROOM.md: {exc}")
 
-    sys.exit(1 if any((a, b, c, d, e, f)) else 0)
+    sys.exit(1 if any((a, b, c, d, e, f, h)) else 0)
 
 
 if __name__ == "__main__":

@@ -50,7 +50,19 @@ its state is only what it committed, so read its handoff and its lanes' ROOM lin
    (mine: true, limit 100) and `list_triggers` to files under your scratchpad and run `python3
    tools/orphan_check.py --sessions S --triggers T`; act on every line it prints in this same check-in (adopt
    an orphan session into a lane, ledger and archive a stale one, delete an orphan trigger, chase or supersede a
-   stale claim, backfill an unledgered ASSIGNMENTS row) before re-arming. Also run `python3 tools/system_map_check.py` and add a SYSTEM.md row for every name it prints MISSING (SYSTEM-MAP, 26 Sept 2026).
+   stale claim, backfill an unledgered ASSIGNMENTS row, chase a dropped request) before re-arming. The check now
+   also includes (h) DROPPED REQUEST (26 Sept 2026, OPTIMIZATION-2026-09-26.md (a), DESK-CAP): any ROOM.md line
+   addressed "for <role>" with no later line from that role within two hours, so a silently-waiting question
+   (the Japikse question waited three and a half hours before this existed) is a finding at every check-in, not
+   only when someone happens to notice. Also run `python3 tools/system_map_check.py` and add a SYSTEM.md row for
+   every name it prints MISSING (SYSTEM-MAP, 26 Sept 2026).
+
+3b. **Owner-side rule (owner's directive, 26 Sept 2026, OPTIMIZATION-2026-09-26.md (a)).** The owner does nothing
+   that requires reading this repository. Every ASKS.md `desk` row and every outreach/README.md draft handed to him
+   is self-contained: the exact action, the exact recipient or setting, and any paste-ready text, inline in the row
+   or the draft's own header -- not "see NOTES.md" or "see the target folder" as the only instruction. If an ask
+   needs repository context to act on, the ask is wrong and gets rewritten (or the missing context copied in)
+   before it reaches `desk`.
 4. **Second opinions** (tools/second_opinion_runner_prompt.md, "Our side of the loop"). List open pull requests whose
    title starts with `[SO-`; set the matching SECOND-OPINIONS-QUEUE.tsv row to `posted` with the PR number; hand it
    in ROOM.md to the lane that owns the folder, or to the verification lane. Route GitHub writes (closing PRs,
@@ -59,8 +71,21 @@ its state is only what it committed, so read its handoff and its lanes' ROOM lin
    back `done` with hits go to a verifier.
 6. **Board and desk.** status.json and `python3 tools/build_dashboard.py` after any class change; ASKS.md rows and
    outreach/*.md `status: ready` drafts are the owner's desk. Nothing leaves the repository as "new" without a
-   verifier's AUDIT.md class (rule 10). Run `python3 tools/desk_check.py` at every check-in and act on every line it
-   prints before republishing the board (CLAUDE.md Usage 8a; DESK-CHECK, 26 Sept 2026).
+   verifier's AUDIT.md class (rule 10). Run `python3 tools/desk_check.py --cap 5` at every check-in and act on every
+   line it prints before republishing the board (CLAUDE.md Usage 8a; DESK-CHECK, 26 Sept 2026).
+
+   **Desk (26 Sept 2026, OPTIMIZATION-2026-09-26.md (a), DESK-CAP).** Finding: 46 open asks on one person was not a
+   queue, it was a wall -- the person cannot rank it, so nothing moves and each parent keeps adding. The parents
+   keep at most five items on the owner's desk at any time, each an ASKS.md row with `desk` as the leading word of
+   its status cell: one action, one sentence, with a paste-ready text or a single click -- an item that needs the
+   owner to read a NOTES.md or AUDIT.md file to understand it is not desk-ready (see duty 3b above). Every other
+   open ASKS.md row carries `backlog` as the leading word of its status cell, with a one-line expected value after
+   it (what it is worth if it moves, not the whole history). `waiting` (on someone other than the owner) and `done`
+   stay as before. The parents re-rank the desk at the first check-in of each UTC day (or the next check-in if none
+   fires exactly at 00:00 UTC), promoting the highest-value backlog rows and demoting anything on the desk longer
+   than a day with no owner action, and record what was demoted and why in STATUS.md's "Parent handoff" section.
+   `tools/desk_check.py --cap 5` fails (its own new check) when more than five ASKS.md rows carry `desk`; a parent
+   check-in that sees this failure demotes rows before doing anything else on the board.
 7. **Tell the owner** only: a reading that passed its judge and a fresh-instance re-derivation, an AUDIT.md verdict,
    a second opinion that finds prior print, a credential or payment he must supply, or a blocker. For a real
    breakthrough also fire the routine "Cipher Lab: breakthrough alert (email)" with a plain, graded description.
