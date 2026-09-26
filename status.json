@@ -2213,6 +2213,13 @@
       "next": "rerun the German test with a de20 judge; then transcribe the six untranscribed pages",
       "lane": "B4",
       "touched": "25 Sept 2026 23:56"
+    },
+    {
+      "target": "matignon-mayenne-1586",
+      "title": "Mayenne-Forget Cipher-1, 13 partly-read leaves: Bourdeau's period-verified key beats a scrambled-order control (fr16 -1.371 vs -1.786, cover 0.814 vs 0.678), judge FAIL both; U 9.8 pct, M 12.7 pct",
+      "next": "split read/unread spans, resolve M/U codes by two-context rule with control, re-judge fr16 (USD 4); f.179 labels as key to f.276 (USD 3)",
+      "lane": "B5",
+      "touched": "26 Sept 2026 01:40"
     }
   ]
 }

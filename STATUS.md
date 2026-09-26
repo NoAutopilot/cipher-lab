@@ -252,8 +252,13 @@ Breadth lane, successor to LANE B4, opened by parent 7e (brief `.claude/briefs/r
 
 | Spec | Test run (worker) | Target | Control | Verdict |
 |---|---|---|---|---|
+| matignon-mayenne-1586 | 1: intake; Bourdeau's Cipher-1 key on 13 partly-read leaves (bMAT) | fr16 -1.371, cover 0.814; H 10,074 / M 1,648 / U 1,272 | scrambled order -1.786 (3 seeds), cover 0.678 | key operative, judge FAIL both; partial, NEAR row; f.179 marks are glyph labels, not prose |
+| lope-hurtado-1522 | 1: intake; R9644 key on R9634/9646/9649 (bLOP) | none run: R9649 97 pct, R9646 84 pct already read by Bourdeau (fc0c9e8) | n/a | queue row stale; R9634 untranscribed anywhere; partial |
+| castelcicala-1816 | 1: intake; hand read of un-glossed 1816 letters (bCAS) | +3 S values; coverage 0.436 -> 0.455 | shuffled order identical by construction (brief error) | no letter reads through; partial |
+| blitz-ciphers | NEAR step: German masc, de20 judge (bBLZ4) | FAIL -1.509 | 0.956 (0.869-1.000) | masc of German excluded; family_run.py suffix fix |
+| untersberg-code | NEAR step 3b: joint alignment, blind leaf pass (bUNT6) | 11/52; leaf 75/109 vs Herzog | shuffle mean 10.87 (8-17), 70th pct | collation line closed at chance |
 
-Live (spawned 00:58): bMAT session_014KYurtmc7wddS3egpmxoBH (matignon, cap 6), bLOP session_011b3guH497ouaLXLXmBc5LT (lope-hurtado, cap 3), bCAS session_01A3aMhAvGEAaSCzMt9ajuKY (castelcicala, cap 4), bBLZ4 session_01VgGGXpAXLYGUh4c3ct4bHc (blitz de20, cap 1.5), bUNT6 session_01Md8yLR5sd5pEdzNNmuGSEv (untersberg joint, cap 5). Reserve wave not started.
+Spawned 00:58: bMAT session_014KYurtmc7wddS3egpmxoBH (matignon, cap 6), bLOP session_011b3guH497ouaLXLXmBc5LT (lope-hurtado, cap 3), bCAS session_01A3aMhAvGEAaSCzMt9ajuKY (castelcicala, cap 4), bBLZ4 session_01VgGGXpAXLYGUh4c3ct4bHc (blitz de20, cap 1.5), bUNT6 session_01Md8yLR5sd5pEdzNNmuGSEv (untersberg joint, cap 5). First wave done 01:15, ledgered 01:40 (USD 17.38). Reserve spawned 01:32: bRIK session_01EMn1PKxA5zzdkgaUc7u5S3 (cap 4), bPOOL0 session_01Ftc3FVWZn8Yu3xv7YxCyWd (cap 3), bSCORE session_01TKAwAdJ81TasQKeoCkXug5 (cap 3).
 
 ## LANE B4 handoff (session_01V2WMavWGMeAUYELUpmyEcX), 25 September 2026, 21:31-23:57 UTC (closed at 308k context; restored 22:45 after commit a34cd00, a room.py 'update' merge, dropped this section and LANE B3's)
 
