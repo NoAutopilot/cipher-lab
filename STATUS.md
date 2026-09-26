@@ -2219,6 +2219,13 @@ wherever another agent checks the output; the window to 11:10 UTC has to last.
 Gallica .texteBrut is altcha-walled, IIIF page images are not; tell solvers to run long jobs in the foreground (two Paleologue
 solvers went idle with background runs); commit per pass so a rate-limit stop loses nothing; "9.bre" is novembre.
 
+### Parent note, owner account (26 Sept 2026, 21:44 UTC)
+
+- Supply results this hour: IMG-FETCH (5.62 D) fetched the three free scans the tracker named. The Berthier article prints the cryptogram with no plaintext anywhere, so that target is now pure cryptanalysis with the full context on disk. The fr.3985 leaf carries no cipher and two earlier low-resolution reads were corrected. The fr.7129 folio sweep found no duplicate of the target letter but found three cipher key tables at ff.270-271, 274 and 275, two and six folios after it, in the same bound volume.
+- Two supply workers now run on those leads: KEY-7129 reads the local Tomokiyo mirror for a prior print first, then captures the key tables at full resolution into the key catalogue and runs a shape test against a shuffled-key control, with no reading and no status change; CHECK-NAF tries the free routes to the two candidate prior prints of the Rousseau Venice decipherments that the JSTOR landing flagged, while the logged-in JSTOR reread waits on ASKS 76.
+- The JSTOR runner's 32-row answer was landed by the other account (27 rows done, 5 requeued because the runner was not logged in). No open pull request. Mailbox quiet. VO1 idle, nothing ready to verify on either side.
+- Counts unchanged: 20 letters, 15 entries.
+
 ### Parent note, owner account (26 Sept 2026, 20:45 UTC)
 
 - LANE WC closed idle-standing at 20:02 (orchestrator 6.73, five workers 40.08): no sibling key fits the unread Nassau 5549 body on a real cosine test (seven candidates, 0.36 to 0.54 against a known positive of 0.836); la-garde-1577's syllabary and word-code families are untestable at 239 tokens (controls below gate). The stuck-rule tries were run before idling. Blocked on ASKS 31, 46 and 75 (the three deciphered siblings' cipher originals).
