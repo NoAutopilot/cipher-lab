@@ -1890,7 +1890,7 @@ Files: `ciphers/fr2933-salviati-1525/{images_manifest_full.tsv,regen_images.sh,i
 
 ## bSALR: R8 families at the measured error (26 Sept 2026, LANE B11)
 
-Worker bSALR (LANE B11, Opus, cap $10, box 60 min), 12:26-13:10 UTC. Brief `.claude/briefs/runs/2026-09-26-lane-b11-bSALR.md`.
+Worker bSALR (LANE B11, Opus, cap $10, box 60 min), 12:26-13:06 UTC. Brief `.claude/briefs/runs/2026-09-26-lane-b11-bSALR.md`.
 Disk only, no hosts, no subagents, no images. **No reading; grades stay H0 C0 S0 M0 I0; no reading_bsalr.txt.**
 Spec: bSALC's pass-C `specs/fr2933-salviati-1525.json` (N=2,839 tokens, K=236 types). Every run: `tools/family_run.py
 --family syllabary --measured-error 0.064 --param err=0.064`, 3 control seeds, 1 target seed (seed 1), gate 0.6, it16 corpus,
