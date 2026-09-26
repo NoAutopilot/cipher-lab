@@ -1,0 +1,9 @@
+family homophonic: homophonic substitution (homophonic_anneal.py, control = make_control at the target's N and K; --param profile=target matches the target's own sign-count profile; --param noise=p redraws a share p of control tokens at the target's own type frequencies)
+spec specs/malsburg-hessen-1636.json slug malsburg-hessen-1636
+ciphertext: 53 message(s), N=1629 signs, K=96 distinct, tokens=tsv (target letters shuffled, seed 1, false-positive floor)
+corpora: tools/data/de16/composed_enhg.txt
+control seeds [1], restarts 12, gate 0.6, params units=syl,profile=target,iters=150000,shuffle_target=1
+row -> ciphers/malsburg-hessen-1636/HYPOTHESES.md; decode -> ciphers/malsburg-hessen-1636/families/homophonic-1-shuffle1-units=syl,profile=target,iters=150000-bmalnunitssylnum.txt
+CONTROL seed 1: N=1629 K=91 recovery 0.840 score -4930.09
+TARGET best score -5823.290; decode -> ciphers/malsburg-hessen-1636/families/homophonic-1-shuffle1-units=syl,profile=target,iters=150000-bmalnunitssylnum.txt; judge: FAIL language: score=-1.733, null_p99=-1.657, real_p05=-0.432, real_median=-0.423, mode=both, N=1961
+row appended to ciphers/malsburg-hessen-1636/HYPOTHESES.md

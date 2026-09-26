@@ -1183,3 +1183,55 @@ rounds to the block, hence the discrepancy with the MB figures quoted from `du -
 Files: `ciphers/malsburg-hessen-1636/{images_manifest_full.tsv,regen_images.sh,images/**,NOTES.md}` (this
 section). Hosts: api.hcportal.eu, 2 requests (both full-page regen test; the crop test read from images/
 already on disk).
+
+## bMALN: code/table families at pooled N (26 Sept 2026)
+
+LANE B10 job 4, worker bMALN (Opus), 11:12-11:25 UTC. Status unchanged: `partial` (rule 5; no family below is a
+closed negative -- see the non-test row). No network. Judge = de16 composed_enhg (era-flagged in the spec, as bMALH).
+
+Input: `pool/pooled.tsv` (N=1,828) reduced to numeric values 0-99 for the table designs: `bmaln/pool_numeric_0_99.tsv`,
+**1,629 tokens, K=96, 53 lines**; dropped 15 tokens >= 100 and 184 non-numeric (letters, off-form, clear words).
+
+**A. Contiguous-block homophonic table (block_homophonic).**
+- Direct test first (`bmaln/prep_and_adjacency.py`, `bmaln/adjacency.txt`): under a block table v and v+1 carry the
+  same letter, so their left/right-neighbour context profiles should be closer than random pairs. Target: mean
+  context cosine of adjacent pairs (both count >= 5) **0.210 over 49 pairs** vs label-permutation control (1,000
+  relabelings of the same data) mean 0.215, p95 0.245 -- rank p = 0.60, i.e. no adjacency signal; distances 2-5 also
+  flat (0.211 / 0.248 / 0.217 / 0.218). Power check (`bmaln/adjacency_power.py`, `adjacency_power.txt`): the same
+  statistic on synthetic German block ciphers at this N, line lengths and value profile detects the design **9/9**
+  (widths 3/4/5 x 3 seeds; adjacent cosine 0.35-0.57 vs p95 0.21-0.38). The statistic is offset-free, so this
+  excludes any table where consecutive values mostly share a letter, at this N, on this transcription.
+- family_run (gate 0.6, 3 seeds, 8 restarts; rows in HYPOTHESES.md):
+
+| width/offset | CONTROL mean (per seed) | TARGET judge | shuffle-target judge |
+|---|---|---|---|
+| 3/0 | 0.760 (0.317, 0.979, 0.983) | FAIL -1.751 | FAIL -1.753 (control seed 2; seed 1 control search-failed 0.317, logged as below gate) |
+| 3/1 | 0.988 | FAIL -1.749 | - |
+| 4/0 | 0.722 (0.996, 0.935, 0.235) | FAIL -1.769 | FAIL -1.734 |
+| 4/2 | 0.992 | FAIL -1.755 | - |
+| 5/0 | 0.992 | FAIL -1.731 | FAIL -1.782 |
+| 5/2 | 0.668 (0.993, 0.990, 0.020) | FAIL -1.809 | - |
+
+  Judge reference: real_p05 -0.438, null_p99 -1.654 (N=1,629). Every target decode sits *below* the null p99, level
+  with its own shuffled-pool decode: the block design is excluded at this N with a control that reads it (rule 3).
+  Note the per-seed control spread (single-seed search failures 0.02-0.32): the target ran one seed with 8 restarts.
+
+**B. Letter+syllable homophonic (new option `tools/families/homophonic.py --param units=syl`, test
+`tools/tests/test_homophonic_units.py`).** A sign = a letter or one of 24 period-German syllables/bigrams (und, der,
+die, das, sch, ein, ch, en, er, ei, ie, st, ge, be, in, an, te, de, nd, ss, ck, au, ng, re); corpus cut by greedy
+longest match, unit-bigram model (order 2 -- the unit trigram left the true key unfound, 0.00-0.26 on a clean
+N=1500 control), same annealer (`homophonic_anneal` now takes its alphabet from `model.alpha`), profile=target,
+iters 150,000, 12 restarts.
+- Full pool N=1,828 K=173: **CONTROL 0.342 (0.324-0.352), BELOW GATE -- non-test, target not run.** Not a negative.
+- Numeric pool 0-99, N=1,629 K=96 (the table's own range): **CONTROL 0.649 (0.840, 0.292, 0.814) meets gate; TARGET
+  FAIL -1.742** (real_p05 -0.433, null_p99 -1.659); shuffle-target floor **FAIL -1.733** -- the real decode is no
+  better than the shuffled pool's. Excluded at this N, narrow-pass control (one seed of three search-failed).
+
+**C.** No target run PASSed, so no judge was voided and no crib check applied (none of the decodes reads German; e.g.
+units=syl line 1 "utenresutenmigelitl"). The shuffle floors all FAIL too, i.e. the judge did not false-positive on
+these families at this N.
+
+Not tried here (one-line suggestions): a two-part code/nomenclator (values = words/names, not letters) is the design
+the flat, adjacency-free value profile now points to; `nomenclator` family needs a German sibling-vocabulary prior
+and word-level controls. A larger syllabary (the 11-99 table of key 519 carries ~81 cells; a 1630s table could hold
+~100 syllables) would need a units list drawn from a period table, not guessed.

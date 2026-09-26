@@ -6,3 +6,6 @@ control seeds [1, 2, 3], restarts 12, gate 0.6, params units=syl,profile=target,
 row -> ciphers/malsburg-hessen-1636/HYPOTHESES.md; decode -> ciphers/malsburg-hessen-1636/families/homophonic-1-units=syl,profile=target,iters=150000-bmalnlettersylla.txt
 CONTROL seed 1: N=1629 K=91 recovery 0.840 score -4930.09
 CONTROL seed 2: N=1629 K=86 recovery 0.292 score -5357.05
+CONTROL seed 3: N=1629 K=92 recovery 0.814 score -5009.78
+TARGET best score -5533.399; decode -> ciphers/malsburg-hessen-1636/families/homophonic-1-units=syl,profile=target,iters=150000-bmalnlettersylla.txt; judge: FAIL language: score=-1.742, null_p99=-1.659, real_p05=-0.433, real_median=-0.423, mode=both, N=1896
+row appended to ciphers/malsburg-hessen-1636/HYPOTHESES.md
