@@ -972,3 +972,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T21:59Z	session_01DZTHcDXCHaFRuoTKcQg9Kw	SALV-CTX2 (Sonnet, cap 4)	context-option control at the target code share on it corpus; last attempt with this instrument	brief 2026-09-26-lane-salv-j2c-share.md; LANE SALV
 2026-09-26T22:12Z	session_01UGBiAFTKw3PpiWaav9kcV6	MAL-MONO	done 3.80 D- (get_session, 1.52x cap), ledgered, retitled ARCHIVED, archived by parent 7j	G.G. 3 sightings vs control p95 1; raw gate met, glossed gate not
 2026-09-26T22:13Z	session_016C1DYK9Ap1s7BLPuDN2xod	MAL-GG (Sonnet, cap 3)	malsburg-hessen-1636: f.23 L46 GG vs f.32/f.33 monogram, crop comparison with one blind subagent	brief 2026-09-26-parent-ytbiz-mal-gg.md; parent 7j
+2026-09-26T22:41Z	session_01DZTHcDXCHaFRuoTKcQg9Kw	SALV-CTX2	done 3.24 D (get_session), ledgered, retitled ARCHIVED, archived by LANE SALV	gate not met at matched share (+0.037); context option untested-by-this-tool
