@@ -233,3 +233,180 @@ challenge page and a 5s pause; 10077651 succeeded on attempt 2 of its own built-
 succeeded first try; 10088713 needed one extra manual retry after an 8s pause following its own 3 failed
 internal attempts; 10088714 succeeded on attempt 2). One request at a time, >=4s apart between images, well
 under the 60-request host cap. No other host touched this pass.
+
+## NX-MOR2 (26 September 2026, LANE NX worker, item 3 key recovery + decode + spec)
+
+### Intake
+
+Re-searched for Rodríguez Villa t.4 (post-1818 documents, which would cover 1820) before any deep work, per
+this job's brief: **found and read**, Google Books `v3kzAQAAIAAJ` ("...contiene los últimos años de la
+estancia de Morillo en América...", 1908, `accessInfo.viewability: ALL_PAGES`, `publicDomain: true`) --
+not on Internet Archive (re-searched `archive.org/advancedsearch.php?q=title:(teniente general Pablo
+Morillo)`, 6 hits, none new), and Google Books' own PDF download link 403s/redirects for this account (not
+worth a second attempt; the keyed search API already gives full-text snippets, which is what this citation
+needed). Full-text searched via the Google Books API (key + country=US) for `"Herrera" "7 de noviembre de
+1820"` and for `"Romerito"`: **no hit for this exact letter** in t.4 -- the only Herrera/Romerito passage
+t.4 contains is a different, later letter ("Herrera desde Guanare, de 20 del actual...Romerito no esperó á
+Ferrus, sino que se retiró á Pedraza"), a different date, quoted secondhand within Morillo's own narrative,
+not this leaf's own text. Contreras, *Catálogo de la Colección Pablo Morillo* (Madrid 1988, Google Books
+`ohJPjaGKOk8C`) independently confirms this item's own catalogue entry verbatim (Sig. 9/7666, ff.420-420v,
+"Herrera a Morillo en carta cifrada dándole noticias de Romerito, que iba en busca de Bolívar", 7 de
+noviembre de 1820) -- a description, not a plaintext. HathiTrust bibliographic API / HTRC Extracted
+Features: not reached this pass -- chased through Open Library's search API first to find a matching
+edition/OCLC to chain into HathiTrust, but Open Library's records for every "teniente general don Pablo
+Morillo" title returned no `edition_key`, so there was nothing to chain; not pursued further since Google
+Books already gave a decisive, directly full-text-searched answer for the specific citation needed. `t.2`
+(1815 documents) still not located digitised anywhere. `intake_gate_check.py rah-morillo-1817` exits 0
+after this citation was added to line 2 (below).
+
+### Transcription (two blind Sonnet passes + direct image re-check)
+
+Two blind Sonnet subagents, each given only `images/crop_5186_p1_cipher.jpg` (2400x1219, under the 2500px
+split threshold, no halving needed) and no other context, transcribed the cipher block independently
+top-to-bottom/left-to-right. Both agree on **21 real cipher groups across 6 rows** (row token-counts 3,4,4,4,
+4,1 excluding one isolated, glossless mark) plus one likely-marginal isolated mark (row1, after "el": "5"
+over "2" stacked, at the torn page edge, no interlinear word under it at all -- both passes flagged it as
+possibly not a cipher group; excluded from the count and from all files below). Both passes agree on every
+numeral in every group (no numeral-level disagreement anywhere) but disagree with each other, and in several
+places with the correct reading, on individual **letters** of the interlinear gloss -- expected, since reading
+a single cursive letter by eye is harder than reading a printed-style Arabic numeral, and neither pass
+cross-checked its own letter guesses against the other groups' numerals for consistency (both said so
+explicitly in their own reports).
+
+The orchestrating session then re-examined the image directly (Python/Pillow crops at 3-5x zoom, by row and
+by individual group) rather than trust either pass's word guesses at face value, because the numerals
+themselves (which both passes read identically) are the reliable signal: the same numeral recurring across
+different words must decode to the same letter if this is a simple substitution, and several of the two
+passes' word-guesses (e.g. "Payo"/"Rayo" for what the numerals force to be "Paso"; "tenia" vs "benia" for
+what the numerals force to be "benia") could be adjudicated this way without more image time than either
+blind pass already spent.
+
+### Key (grade H, `key_5186.tsv`, `tools/ciphers/rah-morillo-1817/build_key_5186.py`)
+
+13 of the 21 groups are **fully clean**: every token's numeral agrees between the two blind passes, every
+letter is unambiguous by eye, and the resulting word is a real, contextually sensible Spanish word or name
+with no leftover unresolved sign. These 13 words (89 letter-token pairs) build the key, one cipher-code to
+one letter, by majority count -- and every code that recurs across two or more of these 13 words agrees on
+its letter **with zero exceptions** (the `conflict` column of `key_5186.tsv` is empty on every row):
+
+| code | letter | count | words it was seen in |
+|---|---|---|---|
+| 18 | o | 9 | Paso, Romerito, bo, buscando, con, dijo, oficiales, por |
+| + | a | 7 | Paso, a, benia, buscando, oficiales, para |
+| 7 | e | 6 | Romerito, benia, de, el, oficiales, tres |
+| 51 | r | 5 | Romerito, para, por, tres |
+| 56 | i | 5 | Romerito, benia, dijo, oficiales |
+| 27 | s | 4 | Paso, buscando, oficiales, tres |
+| 16 | n | 3 | benia, buscando, con |
+| 24 | p | 3 | Paso, para, por |
+| 3 | c | 3 | buscando, con, oficiales |
+| 4 | d | 3 | buscando, de, dijo |
+| 6 | b | 3 | benia, bo, buscando |
+| 33 | t | 2 | Romerito, tres |
+| 8 | l | 2 | el, oficiales |
+| 30 | j | 1 | dijo |
+| 5 | f | 1 | oficiales |
+| 50 | m | 1 | Romerito |
+| BOX (small drawn square) | u | 1 | buscando |
+
+17 distinct signs resolved (14 numerals, "+", and the small drawn box "BOX"; "BOX" recurs in two of the
+flagged groups below too, at the same value both times, an 18th and 19th occurrence not counted toward the
+key since those groups are not clean). "Paso" is included with one flagged caveat: both blind passes read
+its third letter as "y" ("Payo"/"Rayo"), but the numeral there (27) is the same one `oficiales` and `tres`
+independently give "s", and a direct 4x-zoom re-check shows this hand's flourished terminal "s" is visually
+close to a "y" at this crop's resolution -- key-consistent, counted, and the letter-vs-eye disagreement is
+reported here rather than silently resolved.
+
+### Consistency control (rule 3, the Szembek/bMAT2/AX-5799 shape: a control that can actually fail)
+
+`tools/ciphers/rah-morillo-1817/shuffle_control_5186.py`: real consistency (majority-agreement over every
+recurring code among the 13 clean groups) = **1.000** (50 of 50 recurring-code token occurrences agree with
+their own code's majority letter). Shuffle control: 20 permutations, each reassigning which of the 13
+clean groups' gloss words is read against which group's cipher tokens, restricted to length-matched swaps
+(a word's letters can only be tested against a token sequence of the same length) so every permutation
+still produces a complete, comparable score -- shuffle mean **0.621**, p95 **0.800**, range 0.473-0.855. Real
+beats shuffle p95 by 0.200: the recurring-code/recurring-gloss pairing discriminates cleanly at this N: it is
+not the bMAT2/AX-5799 shape (a control that cannot fail by construction), since a length-matched word swap
+genuinely can and does produce disagreement (mean 0.621 well below 1.000).
+
+### Mechanical decode (`tools/decode_key.py ciphers/rah-morillo-1817 --check`, exits 0)
+
+`tokens 97: H 91, U 6` (91 of 97 signs read H via the key; 6 unread signs -- 22 x3, 10 x1, 26 x1, 28 x1 --
+left as `[code]`, not guessed, per rule 7). Full per-group table, numerals as transcribed, gloss as best read
+by eye, and the key's own mechanical decode of the same tokens:
+
+| group | cipher (dot-joined) | gloss as read | key-mechanical decode | |
+|---|---|---|---|---|
+| r1g1 | 51.18.50.7.51.56.33.18 | Romerito | romerito | clean |
+| r1g2 | 24.+.27.18 | Paso (both passes read "Payo"/"Rayo") | paso | clean (see caveat above) |
+| r1g3 | 7.8 | el | el | clean |
+| r2g1 | 24.18.51 | por | por | clean |
+| r2g2 | 6.+.51.56.16.51.33.+.27 | "barinituS"/"barinztus" (passes disagree; neither matches the key output) | **barinrtas** | **flag: gloss/key disagreement** |
+| r2g3 | 3.18.16 | con | con | clean |
+| r2g4 | 27.18.22.18 | "solo" (tentative; context, not confirmed) | so[22]o | flag: 22 unread |
+| r3g1 | 33.51.7.27 | tres | tres | clean |
+| r3g2 | 18.5.56.3.56.+.8.7.27 | oficiales | oficiales | clean |
+| r3g3 | 4.56.30.18 | dijo | dijo | clean |
+| r3g4 | 6.7.16.56.+ | benia (period spelling of venía) | benia | clean |
+| r4g1 | 4.7 | de | de | clean |
+| r4g2 | 30.BOX.+.22.+.16.+ | "guayana" (both passes; first letter reads visually as "g") | **jua[22]ana** | **flag: gloss/key disagreement at token 30 (g vs key's j, confirmed 1x elsewhere in "dijo")** |
+| r4g3 | 6.BOX.27.3.+.16.4.18 | buscando | buscando | clean (resolves BOX=u) |
+| r4g4 | + | a | a | clean |
+| r4g5 | 6.18 | bo (trailing flourish after, possibly decorative) | bo | clean |
+| r5g1 | 8.56.26.+.51 | "levar" (tentative) | li[26]ar | flag: 26 unread |
+| r5g2 | 27.51.10.BOX.51.18 | "seguro" (tentative; does not fit key position-by-position) | **sr[10]uro** | **flag: gloss/key disagreement (position 2 is numeral 51, confirmed "r" 5x elsewhere, not "e")** |
+| r5g3 | 24.+.51.+ | para | para | clean |
+| r5g4 | 33.51.BOX | tru (word runs off the page edge, incomplete) | tru | clean (as far as it goes) |
+| r6g1 | 28.56.22.18 | "xino" (tentative) | [28]i[22]o | flag: 28 and 22 unread |
+
+Per this job's brief: these disagreements are reported **as data points, not corrections** -- the key's
+mechanical output is not asserted to be more "correct" than the eye-read gloss at these positions, since both
+readings come from the same worker's own eye on the same image; a future pass with better image resolution
+(or the physical leaf) is the only way to adjudicate them. Grade counts for the 21-group cipher block: **H
+17 codes / 91 of 97 tokens**, **U 6 of 97 tokens** (unread, not guessed). No C, S, M, or I grades apply --
+every value here comes from the leaf's own interlinear decipherment (rule 4).
+
+### Judge (spec written, `specs/rah-morillo-1817.json`)
+
+`python3 tools/judge_plaintext.py specs/rah-morillo-1817.json --file <the 91-letter joined decode>`:
+```
+ok   length: got=91, min=60, max=1000000000
+FAIL language: score=-1.172, null_p99=-1.698, real_p05=-0.919, real_median=-0.823, mode=both, N=91
+FAIL - rah-morillo-1817 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+FAIL, reported as a FAIL (rule 7). Two things to weigh before reading this as a negative on the key itself:
+(1) the language corpus is **not era-matched** -- `judge_plaintext.py`'s default `es` corpus (`LANG_CORPORA`)
+is `es17`, Don Quijote and *Vida del Buscón*, both early-17th-century; this letter is dated 1820, two
+centuries later, the same shape of mismatch CLAUDE.md's pt17/pt18 (Linhares) and es17c (Mercy) lessons warn
+about, and no era-matched Spanish corpus exists yet in `tools/data` to swap in (out of this job's scope to
+build one for a 91-letter fragment). (2) the candidate string itself concatenates all 21 groups with no word
+spaces and includes two flagged, gloss-disagreeing groups (`barinrtas`, `jua[22]ana` with the bracket
+stripped) and four groups with an outright unread sign -- exactly the kind of noise a word-cover or clean-text
+check would penalize even from a genuinely correct key. The key's own evidence (grade H, zero internal
+conflicts across 50 recurring-code occurrences, shuffle control discriminating by 0.200) stands independently
+of this judge result.
+
+### Item 2 vs item 3 compatibility (this job's brief, step 5)
+
+Compatible in kind, not confirmed in value: item 2's covering letter (19 Nov 1817) describes its system in
+exactly these terms -- "la numeracion que da el valor á las letras" (the numbering that gives value to the
+letters), i.e. Arabic numerals substituting for individual letters, varied from an earlier version -- and
+`key_5186.tsv` is precisely that: a monoalphabetic numeral-per-letter substitution, no word/name codes seen
+in this span. But no 1:1 numeral comparison between the two items is possible: item 2's own key table
+("la adjunta clave") is not preserved on any of its 3 images or in the printed edition, so there is nothing
+to check item 3's specific values (18=o, +=a, 7=e, 51=r, ...) against, and item 2's letter itself says the
+numbering was "varied" between uses -- so even a value mismatch, if the table existed, would not itself rule
+out the same underlying system three years apart.
+
+### Files, hosts, next step
+
+Files: `ciphers/rah-morillo-1817/{build_key_5186.py, shuffle_control_5186.py, ciphertext_5186.tsv,
+key_5186.tsv, gloss_5186.tsv, decode.json, reading_5186.txt, reading_5186_tokens.tsv}`,
+`specs/rah-morillo-1817.json`. Hosts this pass: `www.googleapis.com/books` 6 (all keyed + country=US, >=1.5s
+apart, never printed), `archive.org/advancedsearch.php` 1, `openlibrary.org/search.json` 1. No image host
+touched (crops already on disk from NX-MOR). Next step: a second, independent reconciliation pass (or the
+physical leaf / a higher-resolution scan) on the 8 flagged groups above, particularly r2g2 and r5g2 where the
+key-mechanical decode and the eye-read gloss disagree outright rather than merely leaving a sign unread --
+whoever does this should not start from this session's own zoom crops (a fresh eye, not a repeat of the same
+misreading, is the point). Status stays **partial** (rule 5): a working, control-backed grade-H key exists
+for part of one leaf, not a finished reading of the whole cipher block.

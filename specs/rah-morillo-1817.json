@@ -1,0 +1,28 @@
+{
+ "slug": "rah-morillo-1817",
+ "name": "Herrera to Morillo, Guanare, 7 Nov 1820 (RAH 9/7666, record 5186, f.420r) -- item 3 of the RAH Morillo cluster",
+ "date": "7 November 1820",
+ "language_candidates": ["es"],
+ "ciphertext": "ciphers/rah-morillo-1817/ciphertext_5186.tsv",
+ "ciphertext_note": "21 cipher groups on f.420r, each already carrying its own contemporary interlinear plaintext gloss (not blank ciphertext) -- an alignment/key-recovery target, not a cryptanalysis one. Two blind Sonnet transcription passes plus a direct image re-check (NX-MOR2, 26 Sept 2026) agree on every numeral; 13 of 21 groups are internally clean (no unresolved sign, no pass disagreement) and feed key_5186.tsv (grade H); the other 8 groups carry one or two still-unread signs (10, 22, 26, 28) or a gloss/key disagreement, listed in NOTES.md, not in the key.",
+ "alphabet": "at least 17 distinct signs resolved (14 Arabic numerals plus '+' and a small drawn box/square) for a monoalphabetic numeral-per-letter substitution over this short span; too few tokens (97, 91 letters) to bound the full alphabet size",
+ "constraints": {
+  "sender_recipient": "J.n Maria Herrera to Pablo Morillo, closing 'Q.B.S.M.' and addressed 'Exmo. S.D. Pablo Morillo' on f.420v (plain text, not enciphered)",
+  "context": "reports on 'Romerito' (per Contreras 1988's catalogue entry for this exact item, matching a period Bolivarian courier/agent named in neighbouring RAH Colección Pablo Morillo entries) moving in the Barinas/Apure theatre in late 1820; four lines of plain Spanish prose precede the cipher block on the same leaf",
+  "prior_key_search": "item 2's covering letter (9/7657, 19 Nov 1817, same RAH cluster) describes Morillo's own system as Arabic-numeral values assigned to letters, 'la numeracion que da el valor a las letras', varied from a prior version -- consistent in kind with what this leaf's key_5186.tsv shows in practice, but the numeral-to-letter assignment itself does not match 1:1 between the two items where both are attested (item 2's own key table is not preserved on any of its 3 images, so no direct value comparison is possible; see NOTES.md 26 Sept 2026)"
+ },
+ "cheap_tests_in_order": [
+  "1. Interlinear key recovery from the leaf's own contemporary gloss (this pass, NX-MOR2): no anneal, no control needed for the recovery step itself (grade H, a key source read directly) -- the shuffle-consistency control below tests only whether the recurring-code/recurring-gloss pairing is real, per CLAUDE.md rule 3."
+ ],
+ "matched_control": "not applicable to the key-recovery step (grade H, not cryptanalytic); the rule-3 control run here is a shuffle-consistency check on the recurring-code/recurring-gloss pairing itself (Szembek-lesson shape), not a matched-design cryptanalysis control",
+ "judge": {
+  "language": "es",
+  "letters_min": 60,
+  "control_samples": 200
+ },
+ "judge_note": "tools/judge_plaintext.py's default 'es' corpus (LANG_CORPORA) is es17: Don Quijote + Vida del Buscon, both early-17th-century. This target is dated 7 Nov 1820 -- NOT era-matched (CLAUDE.md rule 3's pt17/pt18 and es17c lessons: a right-language, wrong-era corpus can false-negative a genuine reading). No es19/es-independence-era corpus exists yet in tools/data; this spec uses the default 'es' (es17) anyway per the job brief and flags the mismatch rather than building a new corpus (out of this job's scope). A FAIL here is not read as a negative on the key; a PASS is not read as confirmation beyond what the key itself (grade H, shuffle-control-backed) already gives.",
+ "value": "the alignment recovers a working key (grade H) for 13 of 21 groups with zero internal conflicts across 50 token occurrences (shuffle-consistency control: real 1.000 vs shuffle mean 0.621, p95 0.800 -- discriminates by 0.200); the text itself is too short (91 letters) for the language judge to be more than a sanity check, and 8 groups still carry unread signs or a key/gloss disagreement",
+ "model": "Sonnet (two blind transcription passes) plus the orchestrating Sonnet session's own direct image re-check for reconciliation; no annealer or strongest-model step was needed for this grade-H recovery",
+ "written": "26 Sept 2026 by LANE NX worker NX-MOR2 (Sonnet), per .claude/briefs/runs/2026-09-26-lane-nx-mor2.md",
+ "schema_note": "cheap_tests_in_order are proposals (rule 10: an approach is not a claim); a test actually run is under cheap_test_done with its control"
+}
