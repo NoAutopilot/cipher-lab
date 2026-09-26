@@ -1,0 +1,183 @@
+line	position	sign	confidence	alt	why
+L01	1		M	B:760	differ
+L01	2	*	H		agree
+L01	3	*	H		agree
+L01	4	*	H		agree
+L01	5	*	H		agree
+L01	6	*	H		agree
+L01	7	47	H		agree
+L01	8	570	H		agree
+L01	9	230	H		agree
+L01	10	1254	H		agree
+L01	11	1	H		agree
+L01	12	*	H		agree
+L01	13	*	H		agree
+L01	14	*	M		agree-flagged
+L02	1	58	H		agree
+L02	2	620	H		agree
+L02	3	1307	H		agree
+L02	4	451	H		agree
+L02	5	576	H		agree
+L02	6	17	H		agree
+L02	7	680	H		agree
+L02	8	38	H		agree
+L02	9	36	H		agree
+L02	10	1658	H		agree
+L03	1	460	H		agree
+L03	2	365	H		agree
+L03	3	*	M	A:-	gap
+L03	4	*	M	A:-	gap
+L03	5	*	H		agree
+L03	6	*	H		agree
+L03	7	*	H		agree
+L03	8	*	H		agree
+L03	9	17	H		agree
+L03	10	561	H		agree
+L03	11	470	H		agree
+L03	12	1360	H		agree
+L04	1	170	H		agree
+L04	2	83	H		agree
+L04	3	570	H		agree
+L04	4	74	H		agree
+L04	5	85	H		agree
+L04	6	14	H		agree
+L04	7	740	H		agree
+L04	8	*	M	A:-	gap
+L04	9	3	M	A:-	gap
+L04	10	*	H		agree
+L04	11	*	H		agree
+L04	12	*	H		agree
+L04	13	*	M		agree-flagged
+L05	1	*	M	A:-	gap
+L05	2	*	H		agree
+L05	3	*	H		agree
+L05	4	*	H		agree
+L05	5	*	H		agree
+L05	6	*	H		agree
+L05	7	*	H		agree
+L05	8	67	H		agree
+L05	9	780	H		agree
+L05	10	1364	M		agree-flagged
+L06	1	*	M	B:-	gap
+L06	2	*	H		agree
+L06	3	1170	H		agree
+L06	4	1841	H		agree
+L06	5	1	H		agree
+L06	6	1161	H		agree
+L06	7	674	H		agree
+L06	8	701	H		agree
+L06	9	3	H		agree
+L06	10	61	H		agree
+L06	11	1580	H		agree
+L06	12	18	H		agree
+L07	1	170	H		agree
+L07	2	1767	H		agree
+L07	3	1870	H		agree
+L07	4	5	H		agree
+L07	5	*	M	A:-	gap
+L07	6	*	M	A:-	gap
+L07	7	*	H		agree
+L07	8	*	H		agree
+L07	9	*	H		agree
+L07	10	*	H		agree
+L07	11	*	H		agree
+L07	12	*	H		agree
+L07	13	*	H		agree
+L08	1	160	H		agree
+L08	2	240	H		agree
+L08	3	876	H		agree
+L08	4	1351	H		agree
+L08	5	1107	H		agree
+L08	6	1764	H		agree
+L08	7	*	M	A:-	gap
+L08	8	*	M	A:-	gap
+L08	9	*	H		agree
+L08	10	*	H		agree
+L08	11	*	H		agree
+L08	12	*	H		agree
+L08	13	*	M		agree-flagged
+L09	1	*	H		agree
+L09	2	*	H		agree
+L09	3	1472	H		agree
+L09	4	21	H		agree
+L09	5	76	H		agree
+L09	6	11	H		agree
+L09	7	180	H		agree
+L09	8	38	H		agree
+L09	9	1641	H		agree
+L09	10	15	H		agree
+L09	11	1354	H		agree
+L09	12	17	H		agree
+L10	1	170	H		agree
+L10	2	658	H		agree
+L10	3	49	H		agree
+L10	4	967	H		agree
+L10	5	1861	H		agree
+L10	6	16	H		agree
+L10	7	576	H		agree
+L10	8	1564	H		agree
+L10	9	12	H		agree
+L10	10	1310	H		agree
+L11	1	1461	M	B:-	gap
+L11	2	74	M	B:740	differ
+L11	3	11	H		agree
+L11	4	187	H		agree
+L11	5	641	H		agree
+L11	6	176	H		agree
+L11	7	437	H		agree
+L11	8	83	H		agree
+L11	9	1451	H		agree
+L11	10	1170	H		agree
+L11	11	1807	H		agree
+L12	1	110	H		agree
+L12	2	416	H		agree
+L12	3	38	H		agree
+L12	4	16	H		agree
+L12	5	1208	H		agree
+L12	6	141	H		agree
+L12	7	*	M	A:-	gap
+L12	8	*	H		agree
+L12	9	*	H		agree
+L12	10	*	H		agree
+L12	11	*	H		agree
+L12	12	*	H		agree
+L12	13	*	H		agree
+L13	1	*	M	A:-	gap
+L13	2	*	M	A:-	gap
+L13	3	*	M	A:-	gap
+L13	4	*	M	A:-	gap
+L13	5	*	M	A:-	gap
+L13	6	*	H		agree
+L13	7	*	H		agree
+L13	8	*	H		agree
+L13	9	*	H		agree
+L13	10	*	H		agree
+L13	11	*	H		agree
+L13	12	*	H		agree
+L13	13	*	H		agree
+L13	14	*	H		agree
+L13	15	*	H		agree
+L13	16	*	H		agree
+L13	17	*	H		agree
+L13	18	*	H		agree
+L14	1	130	H		agree
+L14	2	164	H		agree
+L14	3	180	H		agree
+L14	4	1767	H		agree
+L14	5	162	H		agree
+L14	6	38	H		agree
+L14	7	161	H		agree
+L14	8	15	H		agree
+L14	9	580	H		agree
+L14	10	1716	H		agree
+L14	11	10	M		agree-flagged
+L15	1	27	H		agree
+L15	2	614	H		agree
+L15	3	641	H		agree
+L15	4	110	H		agree
+L15	5	1345	H		agree
+L15	6	170	H		agree
+L15	7	687	H		agree
+L15	8	860	H		agree
+L15	9	310	H		agree
+L15	10		M	B:1900	differ
