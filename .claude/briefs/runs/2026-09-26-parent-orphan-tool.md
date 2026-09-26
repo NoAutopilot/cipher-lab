@@ -10,3 +10,16 @@ Build `tools/orphan_check.py` with `--help` and an offline test in `tools/tests/
 First: `date -u`; `python3 tools/room.py --start`; ROOM claim `parent worker ORPHAN-TOOL (Sonnet, <session id>)`. Finish: `python3 tools/room.py --push <paths>`; ROOM done line `done: ORPHAN-TOOL: tools/orphan_check.py + test, wired into parent.md/SUCCESSOR-PROMPT.md/README.md, UPDATES row; live run: <summary line or not run>`; one-paragraph reply; never call AskUserQuestion; never print or commit credentials.
 
 ADDENDUM 05:12 UTC (owner, 05:10): the check applies to every account. Word parent.md's new duty, the UPDATES.md row and the README common-tail sentence as "each account's parent runs `tools/orphan_check.py` on its own `list_sessions`/`list_triggers` output at every check-in and at both ends of a hand-over; no account can see another's sessions, so each covers its own", and post one ROOM.md line "for the owner-account parent: tools/orphan_check.py landed -- run it on your own sessions from your next check-in; parent.md duty 3a" when you push.
+
+ADDENDUM (RETRO-2026-09-26d, 05:33 UTC): make the 05:17 ROOM.md ask ("add one check if cheap") a formally named
+item, not only a message this one worker instance might or might not reach before its own cap: item 2 gets check
+(f) TITLE MISMATCH -- a non-archived session whose title does not start with `LIVE ` (parent.md's own convention),
+or an archived session whose title does not start with `ARCHIVED`. Add a fixture for it to
+tools/tests/test_orphan_check.py before landing, and fold the count into the summary line ("orphans: N sessions, M
+triggers, K claims, J unledgered, L title-mismatches"). If ORPHAN-TOOL already added this per the 05:17 ask, this
+addendum only confirms the fixture and summary-line wording match; it is not a conflicting instruction.
+
+Confirmed landed by RETRO-APPLY-P (26 Sept 2026, 06:1x UTC): check (f) TITLE MISMATCH added to
+`tools/orphan_check.py` (`check_title_mismatch`), a fixture in `tools/tests/test_orphan_check.py`
+(`test_title_mismatch_live_and_archived`), and the summary line now reads "orphans: N sessions, M triggers,
+K claims, J unledgered, L title-mismatches" exactly as asked.

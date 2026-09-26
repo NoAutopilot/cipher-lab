@@ -127,6 +127,14 @@ REUSED_SEARCH_RE = re.compile(
     r'\bnot re-?run\b|\bre-?cited\b|\bcost discipline\b|\breusing\b.{0,20}\bsearch\b',
     re.IGNORECASE,
 )
+# A match describing a PRIOR, now-corrected verdict is not this pass's own reused search (lope-hurtado-1522,
+# RETRO-2026-09-26d item 6, V8-QA7 05:56: "correcting the prior verdict, which re-cited Bourdeau's ... search
+# instead of opening the edition" -- the worker itself opened the edition this pass; "re-cited" describes the
+# OLD verdict being fixed, not this citation). Checked in the 80 characters immediately before the match.
+CORRECTION_CONTEXT_RE = re.compile(
+    r'\b(?:prior|previous|earlier|old|stale)\s+verdict\b|\bcorrecting\b|\bcorrected from\b',
+    re.IGNORECASE,
+)
 SINGLE_TERM_FTS_RE = re.compile(
     r'\b(?:full-text search|fts|searched)\b[^.]{0,80}\bfor\b\s+"[^"]+"\s+(?:returns?|found|gave)',
     re.IGNORECASE,
@@ -137,7 +145,9 @@ def soft_warnings(context):
     """Non-blocking flags for check-solved.md corner-cuts V7-QA5 found 26 Sept 2026 -- printed alongside the
     exit-code message, never changing it."""
     out = []
-    if REUSED_SEARCH_RE.search(context):
+    reused_matches = [m for m in REUSED_SEARCH_RE.finditer(context)
+                       if not CORRECTION_CONTEXT_RE.search(context[max(0, m.start() - 80):m.start()])]
+    if reused_matches:
         out.append("WARNING: citation reads as a reused/re-cited search, not one this worker independently "
                     "opened (check-solved.md: quoting another party's summary does not satisfy the citation)")
     if SINGLE_TERM_FTS_RE.search(context) and context.count('"') <= 2:

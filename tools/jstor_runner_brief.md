@@ -19,6 +19,12 @@ Append one ROOM.md line: `<UTC> | JSTOR runner (owner's machine) | done: N rows 
 Never print credentials, never write the owner's name, never call anything new, first or unpublished; the
 verifier lanes read your rows and move the class.
 
+A query row may carry a bare quoted phrase with no cipher keyword in it: verifiers now queue two families per
+target (CLAUDE.md's verifier brief template, 26 Sept 2026, RETRO-2026-09-26d) -- one ANDs a cipher keyword with
+a name/date/place, the other is a distinctive phrase quoted from the plaintext or edition with no keyword at
+all, since JSTOR's search is exact-phrase and a secondary work discussing the letter may never call it a
+cipher. Run either kind exactly as written; do not add a keyword to a phrase-only row yourself.
+
 ## Paste-ready instruction (24 Sept 2026; for a Claude Desktop chat with the Chrome extension, or a scheduled task every 4 hours)
 
 ```

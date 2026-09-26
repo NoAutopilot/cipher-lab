@@ -274,7 +274,20 @@ def digest(a):
     print(f"{len(kept)} of {len(all_lines)} lines matched")
     return 0
 
-def warnings_for(role, signal):
+_UNSET = object()
+ROLE_SESSION_RE = re.compile(r"\bsession_[0-9A-Za-z]+\b")
+
+
+def _own_session_id():
+    """This session's own id in the 'session_...' form used throughout ROOM.md/LEDGER.md, derived from
+    CLAUDE_CODE_REMOTE_SESSION_ID ('cse_<id>' -> 'session_<id>'; confirmed 26 Sept 2026, RETRO-2026-09-26d,
+    against this session's own attribution footer, not guessed). None when the variable is absent or in an
+    unexpected form -- callers must then skip the check, not treat it as a mismatch."""
+    v = os.environ.get("CLAUDE_CODE_REMOTE_SESSION_ID", "")
+    return "session_" + v[4:] if v.startswith("cse_") else None
+
+
+def warnings_for(role, signal, own_id=_UNSET):
     """Warnings printed before a line is appended (25 Sept 2026, UPDATES.md; the line is still appended).
 
     - a done line that reports a test, negative or FAIL without the word control: CLAUDE.md rule 3 (a negative
@@ -284,7 +297,14 @@ def warnings_for(role, signal):
     - a done line over 1,200 characters: CLAUDE.md Usage rule 5 ("a short markdown table with a five-line
       report") -- 17 of 23 done/flag lines this window (26 Sept 2026, retro n) exceeded 800 characters and one
       (GOLD-CONS4) reached 4,021, and a lane orchestrator now reads every one of these before its own context
-      handoff line, so a verbose line has a direct, measurable cost in lane-handoff overhead, not just legibility."""
+      handoff line, so a verbose line has a direct, measurable cost in lane-handoff overhead, not just legibility.
+    - a role field naming a session_... id that is not this session's own (CLAUDE_CODE_REMOTE_SESSION_ID, when
+      set): the role field is self-referential by convention, so any session id it names should be this
+      session's; DECODE-ACCESS's done line named 7e's id instead of its own (26 Sept 2026, LEDGER.md), which this
+      would have caught at append time. `own_id` is for the offline test only; real callers get it from the
+      environment."""
+    if own_id is _UNSET:
+        own_id = _own_session_id()
     w = []
     sig = signal.strip()
     if sig.lower().startswith("done:") and re.search(r"\btests?\b|\btested\b|\bnegatives?\b|\bfail(s|ed|ing)?\b|closed-negative",
@@ -296,6 +316,11 @@ def warnings_for(role, signal):
     if len(text) > 1200:
         w.append(f"WARNING: done line is {len(text)} chars, over Usage rule 5's five-line report -- move detail "
                   f"to NOTES.md/HYPOTHESES.md and leave a short summary + pointer here")
+    if own_id:
+        named = ROLE_SESSION_RE.findall(role)
+        if named and own_id not in named:
+            w.append(f"WARNING: role names {named[0]}, not this session's own id ({own_id}) -- a role field is "
+                      f"self-referential; check before appending (DECODE-ACCESS, 26 Sept 2026)")
     return w
 
 

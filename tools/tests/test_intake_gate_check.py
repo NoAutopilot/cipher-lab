@@ -248,6 +248,17 @@ ok = code == 0 and "WARNING" in message and "reused/re-cited" in message
 fails += not ok
 print(("PASS" if ok else "FAIL"), "synthetic open-reused-search-soft-warning", f"-> code={code} message={message!r}")
 
+# real-repo negative (26 Sept 2026, RETRO-2026-09-26d item 6, V8-QA7 05:56): lope-hurtado-1522's NOTES.md
+# describes a PRIOR, now-corrected verdict as having "re-cited" a stale search -- this worker itself opened
+# the whole Calendar of State Papers Spain II djvu.txt, so this must NOT trip the reused-search warning.
+with open(os.path.join(ROOT, "ciphers", "lope-hurtado-1522", "NOTES.md"), encoding="utf-8") as f:
+    LOPE_HURTADO_TEXT = f.read()
+code, message = gate.check(LOPE_HURTADO_TEXT)
+ok = code == 0 and "WARNING" not in message
+fails += not ok
+print(("PASS" if ok else "FAIL"), "real lope-hurtado-1522 partial, no reused-search false positive",
+      f"-> code={code} message={message!r}")
+
 # synthetic: a full-text-search citation naming only one quoted term must still exit 0 but print
 # a soft WARNING naming check-solved.md's whole-volume rule (matignon-mayenne-1586's shape).
 SYNTH_OPEN_SINGLE_TERM_FTS = (

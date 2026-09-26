@@ -26,8 +26,12 @@ Five checks, each printed one line per problem found:
       direction for a check a human reviews before acting).
   (e) UNLEDGERED CLOSE -- an ASSIGNMENTS.md row that names a session the sessions list shows archived,
       whose own Status cell does not start with done/handed/dropped.
+  (f) TITLE MISMATCH -- a non-archived session whose title does not start with "LIVE ", or an archived
+      session whose title does not start with "ARCHIVED" (the LIVE/ARCHIVED convention in
+      .claude/briefs/parent.md "Handing over", 26 Sept 2026; added per RETRO-2026-09-26d item 1's ROOM.md
+      ask of 05:17 UTC, so the check survives past the one worker instance that heard it verbally).
 
-Exit codes: 0 clean, 1 if any of (a)-(e) is non-empty.
+Exit codes: 0 clean, 1 if any of (a)-(f) is non-empty.
 
 Usage:
   tools/orphan_check.py --sessions S.json --triggers T.json [--room-file ROOM.md]
@@ -299,13 +303,36 @@ def check_unledgered_closes(assignment_rows, sessions):
     return problems
 
 
+def check_title_mismatch(sessions):
+    problems = []
+    for s in sessions:
+        sid = sess_id(s)
+        if not sid:
+            continue
+        title = sess_title(s)
+        if sess_archived(s):
+            if not title.startswith("ARCHIVED"):
+                problems.append(
+                    f"(f) TITLE MISMATCH: {sid} is archived but its title {title!r} does not start "
+                    f"with 'ARCHIVED' (parent.md 'Handing over')"
+                )
+        else:
+            if not title.startswith("LIVE "):
+                problems.append(
+                    f"(f) TITLE MISMATCH: {sid} is not archived but its title {title!r} does not start "
+                    f"with 'LIVE ' (parent.md 'Handing over')"
+                )
+    return problems
+
+
 def run_all(sessions, triggers, room_lines, assignments_text, assignment_rows, now):
     a = check_orphan_sessions(sessions, room_lines, assignments_text, now)
     b = check_stale_sessions(sessions, room_lines, now)
     c = check_orphan_triggers(triggers, sessions)
     d = check_stale_claims(room_lines, now)
     e = check_unledgered_closes(assignment_rows, sessions)
-    return a, b, c, d, e
+    f = check_title_mismatch(sessions)
+    return a, b, c, d, e, f
 
 
 def main():
@@ -330,13 +357,14 @@ def main():
     assignments_text = open(args.assignments, encoding="utf-8").read() if os.path.exists(args.assignments) else ""
     assignment_rows = parse_assignments_rows(args.assignments)
 
-    a, b, c, d, e = run_all(sessions, triggers, room_lines, assignments_text, assignment_rows, now)
+    a, b, c, d, e, f = run_all(sessions, triggers, room_lines, assignments_text, assignment_rows, now)
 
-    for group in (a, b, c, d, e):
+    for group in (a, b, c, d, e, f):
         for p in group:
             print(p)
 
-    summary = f"orphans: {len(a) + len(b)} sessions, {len(c)} triggers, {len(d)} claims, {len(e)} unledgered"
+    summary = (f"orphans: {len(a) + len(b)} sessions, {len(c)} triggers, {len(d)} claims, "
+               f"{len(e)} unledgered, {len(f)} title-mismatches")
     print(summary)
 
     if args.room:
@@ -345,7 +373,7 @@ def main():
         except Exception as exc:
             print(f"--room: could not append to ROOM.md: {exc}")
 
-    sys.exit(1 if any((a, b, c, d, e)) else 0)
+    sys.exit(1 if any((a, b, c, d, e, f)) else 0)
 
 
 if __name__ == "__main__":

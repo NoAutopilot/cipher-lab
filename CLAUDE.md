@@ -99,6 +99,19 @@ session and every subagent, cloud or local.
    family or a gate, check that the named control's number *can* differ from the target's for the specific
    statistic being computed -- if the manipulation the control applies (order, value, key) is orthogonal to the
    statistic (coverage, position, count), the control cannot fail and the test is a non-test, not a negative.
+   A per-unit (leaf, page) recovery signal merged into one shared key inherits the weakest unit's unchecked
+   status unless each unit clears its own control before the merge. Lesson of 26 Sept 2026 (Szembek BK 1560,
+   bSZL65/66/67, LANE B7's bSZM merge in progress): three leaves' interlinear-gloss pairs were gated by the same
+   rule-3 shuffle-consistency check on the recurring-code/recurring-gloss pairing -- leaf 66 clears it decisively
+   (real 0.918 vs shuffle mean 0.306, p95 0.341, 87/168 glossed) but leaves 65 and 67 TIE their own shuffle
+   control exactly (0.0 vs 0.0 on 21 occurrences; 0.429 vs 0.429 on 18) -- non-discriminating at that N, the
+   bMAT2 shape above, not a pass. The recovery brief's merge step (interlinear_align.py -> key.tsv) named no
+   per-leaf gate: nothing stops a code attested only on a leaf that tied its control from entering the shared
+   key.tsv at the same grade as a leaf that beat its control decisively. Before folding a unit's glosses into a
+   shared key, check that unit's own control result first, the same way family_run.py already checks a family's
+   control before running the target (Usage item 8) -- a code attested only on a unit whose own control tied or
+   failed is held pending more occurrences or corroboration from a unit that cleared, not merged as equally
+   supported.
 4. **Grade every claimed reading per token:** H read from a key source, C from known plaintext, S cryptanalytic
    with a control, M uncertain, I inferred or repaired. Give the counts. No H or C means "cryptanalytic result".
 5. **Status vocabulary** in the first lines of every NOTES.md: `open`, `partial`, `solved`, `closed-negative`,
@@ -310,7 +323,14 @@ VERIFIER: <target folder>. Claim under audit: <the sentence as the repo states i
    blog and project pages; (e) full-text search on Internet Archive, HathiTrust and Google Books;
    (f) the solver repositories and cipher blogs; (g) scholarship through the open indexes (OpenAlex API and Semantic
    Scholar API with the keys of access playbook item 3, Persée, HAL, CrossRef, Google Scholar when reachable) and, for JSTOR, a row per query appended to
-   `JSTOR-QUEUE.tsv` for the owner's local runner; a queued JSTOR row never blocks N3 or N4 on its own (24 Sept 2026,
+   `JSTOR-QUEUE.tsv` for the owner's local runner, in two families per target: (i) sender/recipient/date/place
+   ANDed with a cipher keyword, and (ii) a distinctive phrase quoted exactly from the plaintext or from the
+   printed edition's own wording, with NO cipher keyword required -- JSTOR's search is exact-phrase, and a
+   secondary work that discusses or quotes the letter may never call it a cipher at all. Lesson of 26 Sept 2026:
+   JSTOR-QUEUE rows 88-91 (lodewijk-van-nassau-1573-74) and 80-83 (espagnol142-mercy-1648) ran only family (i) and
+   came back with no hit about either letter; neither target had run a bare quoted-phrase row, though the same
+   phrase-with-positive-control method already works for these exact letters against archive.org/be-api
+   (V8-NA5797, V8-NA172). A queued JSTOR row never blocks N3 or N4 on its own (24 Sept 2026,
    the owner is not the bottleneck at fifty sessions). Log each family
    as searched or unreachable, with what was searched.
 3. Classify each item N0-N5 (rule 10) with: prior plaintext (yes/no, where, earliest citation), prior
@@ -371,6 +391,19 @@ Every brief states a cap in dollars of usage (the session metadata's cost figure
    foreground per-unit work as its own separate box, or serialize it before or after the foreground units --
    never assume concurrent CPU-bound work is free just because it does not add a unit to the count the per-unit
    rate was built from.
+   A per-unit box priced by page or leaf count undercounts by the passes-per-unit factor when a unit's own
+   protocol calls for more than one subagent call per unit. Lesson of 26 Sept 2026 (AX-COMP2, lodewijk-van-
+   nassau-1573-74 7205): the brief priced six pages at an $8 cap and "about 12 minutes per page" -- a page-count
+   estimate -- and correctly scoped each subagent call to one page's line crops (this section's own GOLD-4D/
+   AX-4612TR fix). But each page needs two independent blind passes, so six pages took 11 Sonnet subagent calls,
+   not six: cost was 16.07 (2x the $8 cap), while time pacing was fine throughout (about 50 of a 90-minute box,
+   under the 80% self-stop line at every point) -- the wall-clock box cannot catch this, because passes-per-unit
+   is a multiplier on dollars a worker cannot see mid-session, not on time it can (16.07 / 11 = 1.46 dollars per
+   call, matching the $8-for-6-pages estimate's implied per-page rate almost exactly once the 2x factor is
+   applied). When a unit's own protocol requires N independent passes (a reconciliation, a second blind eye),
+   this section's own "state the unit count and the per-unit estimate in the brief itself" already requires a
+   number -- that number must be per pass (subagent call), not per page or leaf, before multiplying by the
+   planned count.
    Naming the crop tool as a "convention" a worker should already know to apply is not the same as requiring the
    command. Lesson of 26 Sept 2026 (AX-4612TR, bUNT7): AX-4612TR's brief said "line crops under 2500 px
    (tools/iiif_lines.py conventions)" and the worker correctly scoped one page per subagent call (Usage 6's own

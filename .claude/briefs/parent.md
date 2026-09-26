@@ -121,6 +121,15 @@ Naming and model (owner, 25 Sept 2026): every parent session is created on `clau
 
 **Session titles say LIVE or ARCHIVED (owner, 26 Sept 2026, 05:1x UTC, after replying into the retired parent 7e by mistake; both accounts).** Every session a parent or lane creates carries the prefix `LIVE ` in its title from `create_session`. The session that archives it renames it first: `ARCHIVED <old title> (done <clock time>, $<cost> <code>)`, then `archive_session`. A parent taking over titles itself `LIVE parent <x> · Orchestrator <N> (talk to this one)`, and as its first act after its ROOM take-over line renames its predecessor `ARCHIVED parent <w> · Orchestrator <N-1> (handed over <clock time>; do not message)` and archives it -- an archived session is read-only, so a message typed into it by mistake cannot start a second parent. A non-archived session whose title lacks `LIVE ` is a flag for the orphan check (`tools/orphan_check.py`). Lane orchestrators do the same for their workers.
 
+**Verify the archive took (26 Sept 2026, RETRO-2026-09-26d).** The rename-and-archive step above is prescriptive,
+not self-checking: `archive_session` can fail or be skipped with no error the successor notices. As part of the
+same first act, the successor re-reads the predecessor's session state (`list_sessions` or `get_session` on its
+id) and confirms the title now starts `ARCHIVED`; if it does not, the successor writes a ROOM.md flag naming the
+still-live predecessor immediately, rather than assuming the call worked. This is the gap the LIVE/ARCHIVED rule
+itself does not close: the owner replied into 7e at 05:00-05:10 UTC before this rule existed at all, so no session
+had a chance to confirm 7e's state either way -- closing the verification half now means the next hand-over is
+caught by a session, not by the owner noticing.
+
 Keep a "Parent handoff (<account>)" section in STATUS.md current: session id, check-in trigger id, live lanes, the
 owner's standing decisions. A successor reads it, takes over the trigger with update_trigger, and continues.
 

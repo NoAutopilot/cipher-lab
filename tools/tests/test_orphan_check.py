@@ -44,9 +44,9 @@ def test_unwrap_list_handles_plain_wrapped_and_envelope_shapes():
 def test_clean_case_no_problems(tmp_path):
     sessions = [
         {"id": "session_LIVE1", "archived": False, "parent_session_id": "session_PARENTLIVE",
-         "updated_at": "2026-09-26T04:55:00Z", "title": "worker A"},
+         "updated_at": "2026-09-26T04:55:00Z", "title": "LIVE worker A"},
         {"id": "session_PARENTLIVE", "archived": False, "parent_session_id": None,
-         "updated_at": "2026-09-26T04:58:00Z", "title": "parent 7f"},
+         "updated_at": "2026-09-26T04:58:00Z", "title": "LIVE parent 7f"},
     ]
     triggers = [{"id": "trig1", "enabled": True, "persistent_session_id": "session_PARENTLIVE"}]
     write_json(tmp_path / "sessions.json", sessions)
@@ -56,8 +56,8 @@ def test_clean_case_no_problems(tmp_path):
 
     room_lines = oc.parse_room_lines(str(tmp_path / "ROOM.md"))
     rows = oc.parse_assignments_rows(str(tmp_path / "ASSIGNMENTS.md"))
-    a, b, c, d, e = oc.run_all(sessions, triggers, room_lines, "", rows, NOW)
-    assert (a, b, c, d, e) == ([], [], [], [], [])
+    a, b, c, d, e, f = oc.run_all(sessions, triggers, room_lines, "", rows, NOW)
+    assert (a, b, c, d, e, f) == ([], [], [], [], [], [])
 
 
 def test_orphan_session_flagged_unless_adopted(tmp_path):
@@ -68,7 +68,7 @@ def test_orphan_session_flagged_unless_adopted(tmp_path):
     ]
     room_lines = [{"ts": "2026-09-26 04:00", "ts_dt": datetime.datetime(2026, 9, 26, 4, 0),
                    "actor": "x", "signal": "irrelevant", "raw": "irrelevant line, no session id"}]
-    a, b, c, d, e = oc.run_all(sessions, [], room_lines, "", [], NOW)
+    a, *_ = oc.run_all(sessions, [], room_lines, "", [], NOW)
     assert len(a) == 1 and "session_ORPHAN1" in a[0]
 
     # Same shape, but named in the last 6 hours of ROOM.md -- adopted, not an orphan.
@@ -140,6 +140,21 @@ def test_unledgered_close(tmp_path):
     assert len(e) == 1 and "session_CLOSED1" in e[0]
     e2 = oc.check_unledgered_closes([done_row], sessions)
     assert e2 == []
+
+
+def test_title_mismatch_live_and_archived(tmp_path):
+    sessions = [
+        {"id": "session_OK1", "archived": False, "title": "LIVE parent 7f"},
+        {"id": "session_BAD1", "archived": False, "title": "parent 7f (no LIVE prefix)"},
+        {"id": "session_OK2", "archived": True, "title": "ARCHIVED parent 7e (handed over 04:48)"},
+        {"id": "session_BAD2", "archived": True, "title": "parent 7e"},
+    ]
+    f = oc.check_title_mismatch(sessions)
+    assert len(f) == 2
+    assert any("session_BAD1" in p for p in f)
+    assert any("session_BAD2" in p for p in f)
+    assert not any("session_OK1" in p for p in f)
+    assert not any("session_OK2" in p for p in f)
 
 
 def test_parse_room_lines_and_assignments_rows(tmp_path):
