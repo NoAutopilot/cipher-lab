@@ -724,3 +724,6 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T05:17Z	session_01SvjMDFfJZJ3uK47RYxAQrM	parent 7e	done 34.38 (final, get_session), ledgered D, retitled ARCHIVED and archived by 7f	owner typed into it after hand-over; it spawned ORPHAN-TOOL and PR-LAND-2, both adopted by 7f
 2026-09-26T05:17Z	session_01LV9zxH7aPvDF6oEzJuKNDe	ORPHAN-TOOL (Sonnet, cap 6)	adopted by 7f from 7e; retitled LIVE	brief 2026-09-26-parent-orphan-tool.md
 2026-09-26T05:17Z	session_01FS7JkXfECRNTU6KGZEdLqK	PR-LAND-2 (Sonnet, cap 4)	adopted by 7f from 7e; retitled LIVE	brief 2026-09-26-parent-pr-land-2.md
+2026-09-26T05:20Z	session_0165ngZj99X1vWbYwRJVZ3Qu	LANE B7 bSZM (Sonnet, cap 3)	szembek-bk1560 merge: aligner key, shuffle control, reading, judge, print_check	brief 2026-09-26-lane-b7-szmerge.md
+2026-09-26T05:20Z	session_019XtyxkfHUUVLkhazHEjhGQ	LANE B7 bZES (Sonnet, cap 3)	zeschau-seebach-1841 intake + R5005 crib on R5006-8	brief 2026-09-26-lane-b7-zes.md
+2026-09-26T05:20Z	session_01AbUqt3f3Ep8ivJfSTDCgn5	LANE B7 bMAL3 (Sonnet, cap 3)	malsburg reconcile + spec + IC/family_run	brief 2026-09-26-lane-b7-mal3.md

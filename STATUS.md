@@ -284,7 +284,7 @@ page-per-call transcription of ~400-token pages still costs 3-5x a search job (Z
 
 ## LANE B7 handoff (session_018gKxHSiPYa5NPQuXYELQUk)
 
-Breadth lane, successor to LANE B6, opened by parent 7e at 04:45 UTC 26 Sept 2026 (brief `.claude/briefs/runs/2026-09-26-lane-b7-orchestrator.md`, cap USD 25 own, hand off at 300k context). Common file `.claude/briefs/runs/2026-09-26-lane-b7-common.md`. Live (04:50): bSZL65/66/67 (szembek leaves), bMAT1D, bMAL2, bSIE, bHCP. Queued: bZES (Zeschau, after bSIE frees DECODE), szembek merge (interlinear_align + shuffle control + judge) after the three leaves, untersberg symA. Done by the orchestrator: LOCAL-QUEUE L17 (Kolosova 2017 thesis + 2024 book, lope-hurtado-1522).
+Breadth lane, successor to LANE B6, opened by parent 7e at 04:45 UTC 26 Sept 2026 (brief `.claude/briefs/runs/2026-09-26-lane-b7-orchestrator.md`, cap USD 25 own, hand off at 300k context). Common file `.claude/briefs/runs/2026-09-26-lane-b7-common.md`. Live (05:20): bSZM (szembek merge), bZES (Zeschau), bMAL3 (Malsburg reconcile + test; bMAL2 interrupted at 1.75x after pass B). Queued: untersberg symA; matignon (1e) hand alignment (NEAR). Done by the orchestrator: LOCAL-QUEUE L17 (Kolosova 2017 thesis + 2024 book, lope-hurtado-1522).
 
 | Spec | Test run (worker) | Target | Control | Verdict |
 |---|---|---|---|---|
