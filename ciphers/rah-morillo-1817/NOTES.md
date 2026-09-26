@@ -1,4 +1,4 @@
-found-solved
+found-solved (item 1); item 2 partial (key described, not found); item 3 partial (leaf carries its own interlinear decipherment -- see 26 Sept 2026 section below)
 
 # Royalist ciphered letters to/from General Pablo Morillo — RAH cluster (1817, 1817, 1820)
 
@@ -154,3 +154,80 @@ too generic). bibliotecadigital.rah.es: 3 (record-page reachability only, >=2 s 
 rah-canada-1869 budget in this batch — 3 of the 20-request cap used here). github.com: shared clone with
 the rest of this batch. No TNA Discovery calls (n/a to this target). www.googleapis.com/books: 3 (24 Sept
 2026, LANE S worker H, key+country=US, never printed; see Google Books sweep above).
+
+## NX-MOR (26 September 2026, LANE NX worker, image fetch + eye check, items 2 and 3 only)
+
+Route: `bibliotecadigital.rah.es/oai/oai.do?verb=GetRecord&identifier=oai:bibliotecadigital.rah.es:<id>&metadataPrefix=didl`
+(plain curl, 200, no challenge) lists the page images as `imagen_id.do?idImagen=` refs; each fetched with
+`tools/browser_fetch.js --binary` (Anubis clears intermittently, matching the rah-canada-1869 worked example).
+All 5 images and crops in `images/`, manifest at `images/manifest.json`. Folder now 6.5 MB (well under the 30 MB cap).
+
+### Item 2 (record 1957, 9/7657, ff.155v-156v) — 3 images, key table absent
+
+Fetched all 3 page images the OAI record lists (`10077650.jpg`, `10077651.jpg`, `10077652.jpg`). This is
+Morillo's own outgoing register/copybook (`dc:description: Copia`), running continuously with unrelated
+entries before and after (N.196 "Guerra" starts mid-page on f.155v/156, ends on f.156v where a new, unrelated
+entry N.125 begins immediately). The letter's full body is present and matches the print-edition text already
+quoted in this file's 24 Sept 2026 section almost verbatim, including the sentence naming the key: f.156r
+(`crop_1957_f156r_clave_ref.jpg`) reads "por lo que toca á las cifras, me ha parecido conveniente el proponer
+á V.E. las que demuestra **la adjunta clave** [underlined in ms.], que ya tengo usada en los asuntos de
+reserva y consequencia con los Gefes superiores de las Provincias y Divisiones, con la diferencia de haverla
+variado ahora alterando la numeracion que da el valor a las letras a toda precaucion. Su sencillez y claridad
+la hacen poco susceptible de equivocaciones." **No key table (a list of letters/words against figures or
+signs) is present on any of the 3 images** — consistent with the earlier print-edition finding (the enclosure
+was never reproduced there either) and consistent with this being the sender's own retained copy, not the
+original-plus-enclosure that went to the Minister. The description itself is informative: the system is
+described as numeric ("la numeracion que da el valor á las letras"), already in use with the provincial/
+divisional chiefs, now varied only in its numbering — i.e. a substitution cipher assigning number values to
+letters, the same family as item 3's leaf (see below), not a from-scratch design.
+
+### Item 3 (record 5186, 9/7666, ff.420-420v) — 2 images, ciphertext present WITH ITS OWN INTERLINEAR DECIPHERMENT
+
+Fetched both page images (`10088713.jpg` = f.420r, foliated "N.16" top right in this hand's own prior use, not
+an RAH stamp; `10088714.jpg` = f.420v, foliated "420" top left in a different, later hand — the RAH's own
+foliation). **f.420r carries ciphertext, and it is already deciphered on the leaf**: four lines of clear
+Spanish ("Guanare y Nov.re 7 de 1820. Mi venerado Gral: en este momento recivo la favorecida de V. de 3 del
+corriente quedando enterado de su contenido y dandole el debido cumplimiento. Nada ay por aqui de particular,
+los enemigos de Apure no se mueven."), then **roughly 21 cipher groups across 6 rows** — Arabic numerals
+(values seen: 3, 4, 5, 6, 7, 8, 10, 16, 18, 22, 24, 26, 27, 28, 30, 33, 50, 51, 56) plus two recurring
+non-numeral marks, a "+" and a small box/square (□) — **each group has a plaintext word written interlinearly
+beneath it, in what looks like the same period hand and ink**, not a modern pencil gloss. This is not blank
+ciphertext: it is a decipherment already sitting on the document. Crop: `crop_5186_p1_cipher.jpg` (2400 px
+wide, the full cipher block). f.420v is plaintext only (closing formula, "Q.B.S.M." signed "J.n Maria
+Herrera", addressed "Exmo. S.D. Pablo Morillo" — confirms the catalogue's "Herrera a Morillo") — no further
+cipher.
+
+Eye-read a handful of the interlinear groups directly off the crop (illustrative only, not a transcription
+pass — no key file written): `51.18.50.7.51.56.33.18.` = **Romerito** (8 signs, 8 letters, R-o-m-e-r-i-t-o,
+matching the catalogue's own naming of "Romerito"); `24.18.51.` = **por**; `3.18.16.` = **con**;
+`18.5.56.3.56.+.8.7.27.` = **oficiales**; `7.8.` = **el**. Cross-checking these five words against each other,
+the values line up consistently wherever a letter repeats (18=o in Romerito/por/oficiales; 51=r in Romerito/
+por; 56=i in Romerito/oficiales; 7=e in Romerito/el; 8=l in oficiales/el; 3=c in con/oficiales; +=a in
+oficiales) — this is a real, internally consistent substitution, not a coincidence of a few words. The group
+right after Romerito, `24.+.27.18.`, most likely reads a form of "paso" (24=p per "por", +=a, 27=s per
+"oficiales", 18=o) rather than "bajo" as first guessed by eye — fits the catalogue's own description ("Herrera
+a Morillo... dándole noticias de Romerito, que iba en busca de Bolívar"): "Romerito pas[ó/o] el..." Not
+carried further (out of this brief's scope; a full alignment is the next-step line below).
+
+**One-line eye check, item 2's key vs item 3's cipher (per this brief's step 3):** item 2's own key table is
+not on the leaf to compare shapes against, but item 2's covering letter *describes* its system as Arabic-
+numeral values assigned to letters ("la numeracion que da el valor á las letras"), which is exactly what
+item 3's leaf shows in practice (values up to at least 56, plus two non-numeral auxiliary signs). Consistent
+with the same cipher family described in the 19 Nov 1817 letter, three years later and, per that letter's own
+words, in a varied numbering — not a like-for-like value match (no numbers were compared 1:1, since no table
+survives for item 2), just a system-type match.
+
+**Next step:** item 3's f.420r is a known-plaintext alignment job (grade C once done, per the rah-canada-1869
+precedent and `tools/interlinear_align.py`) — align the ~21 cipher groups to their interlinear plaintext words
+letter-by-letter to recover a numeral-to-letter key table, then check whether that same table opens any
+passage of item 2's letter or any other ciphered item in this RAH cluster/legajo. This is a genuine "key was
+in the archive beside the letter" case (LESSONS.md), stronger than item 2's (the decipherment is already
+written out, not just implied).
+
+**Request counts (this pass):** bibliotecadigital.rah.es OAI-PMH (`oai/oai.do`, curl): 3 (1 Identify
+reachability check + 2 GetRecord/didl, >=2s apart, all HTTP 200, no challenge). `imagen_id.do` via
+`tools/browser_fetch.js --binary`: 8 attempts for 5 images (10077650 needed 1 retry after an Anubis
+challenge page and a 5s pause; 10077651 succeeded on attempt 2 of its own built-in 3x retry; 10077652
+succeeded first try; 10088713 needed one extra manual retry after an 8s pause following its own 3 failed
+internal attempts; 10088714 succeeded on attempt 2). One request at a time, >=4s apart between images, well
+under the 60-request host cap. No other host touched this pass.

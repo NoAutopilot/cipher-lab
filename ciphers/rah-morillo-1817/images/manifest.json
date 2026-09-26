@@ -1,0 +1,35 @@
+{
+  "fetched": "2026-09-26",
+  "worker": "LANE NX worker NX-MOR (Sonnet)",
+  "source": "bibliotecadigital.rah.es OAI-PMH (verb=GetRecord, metadataPrefix=didl) -> imagen_id.do, via tools/browser_fetch.js --binary (Anubis challenge, intermittent)",
+  "items": [
+    {
+      "record_id": 1957,
+      "oai_identifier": "oai:bibliotecadigital.rah.es:1957",
+      "rah_sig": "9/7657, leg.14, ff.155v-156v",
+      "title": "Morillo al Ministro de la Guerra... propone una clave en cifra para comunicar los asuntos reservados. Calabozo, 19 de noviembre de 1817.",
+      "dc_format": "2 ff.",
+      "images": [
+        {"file": "10077650.jpg", "idImagen": 10077650, "size": "2391x3321", "content": "f.155v (tail of a prior letter) + opening of item 2's register copy, N.196 Guerra, dated Calabozo 19 Nov 1817, catchword through 'una clave de cifra p.a comunicar los asuntos reservados'"},
+        {"file": "10077651.jpg", "idImagen": 10077651, "size": "2342x3307", "content": "f.156, foliated '156' top right -- full body paragraph naming 'la adjunta clave' (underlined in ms.), altering the numeration that gives value to the letters"},
+        {"file": "10077652.jpg", "idImagen": 10077652, "size": "2391x3321", "content": "f.156v -- closing of item 2's letter (dateline repeated) then a new, unrelated register entry begins (Num.125, Reservado, re: Brigadier Franco Tomás Morales)"}
+      ],
+      "key_table_present": false,
+      "note": "This is Morillo's own outgoing-letter register/copybook (dc:description 'Copia'), not the original sent to the Minister with its enclosure. The letter text describes the key ('la adjunta clave... alterando la numeracion que da el valor a las letras') but the table itself is not on any of these 3 images -- consistent with the 24 Sept 2026 print-edition finding in NOTES.md that the 'adjunta clave' was not reproduced there either. No table found in this copy either."
+    },
+    {
+      "record_id": 5186,
+      "oai_identifier": "oai:bibliotecadigital.rah.es:5186",
+      "rah_sig": "9/7666, leg.23, ff.420-420v",
+      "title": "Herrera a Morillo en carta cifrada dándole noticias de Romerito, que iba en busca de Bolívar. Guanare, 7 de noviembre de 1820.",
+      "dc_format": "1 f.",
+      "images": [
+        {"file": "10088713.jpg", "idImagen": 10088713, "size": "3000x3582", "content": "f.420r, foliated 'N.16' top right -- dateline 'Guanare y Nov.re 7 de 1820', four lines of clear prose, then ~21 cipher groups (Arabic numerals plus '+' and a box/null sign) in 6 rows, EACH GROUP WITH A PLAINTEXT WORD WRITTEN INTERLINEARLY BENEATH IT IN THE SAME PERIOD HAND -- an already-deciphered leaf, not blank ciphertext. Signed 'Deseo' with a flourish (a form of closing, not the sender's name)."},
+        {"file": "10088714.jpg", "idImagen": 10088714, "size": "3012x3594", "content": "f.420v, foliated '420' top left -- clear-text closing formula only, no cipher: 'Q.B.S.M.' signed 'J.n Maria Herrera', addressed 'Exmo. S.D. Pablo Morillo'"}
+      ],
+      "cipher_groups_approx": 21,
+      "interlinear_decipherment": true,
+      "note": "Recto only carries ciphertext; verso is the plain-text signature/address block. The interlinear plaintext reads several groups without ambiguity by eye (see NOTES.md): 51.18.50.7.51.56.33.18=Romerito; 24.+.27.18=Pa[s]o (matches 'Paso' once 24=p and 27=s are cross-checked against 'por'=24.18.51 and 'oficiales'=18.5.56.3.56.+.8.7.27); 7.8=el; 3.18.16=con; 18.5.56.3.56.+.8.7.27=oficiales. This is an eye check only -- no full transcription or key file written this pass."
+    }
+  ]
+}
