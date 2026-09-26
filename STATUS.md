@@ -114,8 +114,8 @@ Brief .claude/briefs/runs/2026-09-26-lane-ax-orchestrator.md; COMMON 2026-09-26-
   AX-NAMES. AX-BRO3: 80 more thin-code observations, 11 agree / 0 contradict / 69 undecidable, percentile unchanged 5.0; NEAR row
   updated (next: re-segment the 34 drifted appendix entries, not dispatched). AX-STEV: 3689 and 3813 printed in clear in Stevens
   1888 (text known); 3753, 3784 newly named and 3803 re-categorised, items 12 not 8, text-known 2/12; L16 done -> AX-STEV2.
-- **Round 2 (dispatched 01:0x UTC):** AX-NAMES (Opus, box 120): name codes >120 from 5810/5811/4503/5549 PS/5550-5557 glosses
-  against Groen, held-out control on 5811, then 5797 spots and 4610/4611/4616 U tokens. AX-STEV2 (Sonnet, box 50).
+- **Round 2 (dispatched 01:00 UTC):** AX-NAMES (Opus, session_01FUKBtJ4gn3r3mb6E1B7SLY, box 120): name codes >120 from 5810/5811/4503/5549 PS/5550-5557 glosses
+  against Groen, held-out control on 5811, then 5797 spots and 4610/4611/4616 U tokens. AX-STEV2 (Sonnet, session_0134PRrczWWoivtkjqpMm6FL, box 50). Round 1 sessions archived.
 - **Ledger:** AX-5797 10.09 D, AX-5799 4.14 D-, AX-BRO3 3.85 D, AX-STEV 3.21 D (21.29 dollars).
 - **For the parent:** nothing on the board yet from this lane.
 
