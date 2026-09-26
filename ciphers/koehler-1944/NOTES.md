@@ -223,3 +223,11 @@ exit code: 0
   is the one placement left in the whole grid, not run this box (80 pct rule), command in HYPOTHESES.md "Family B',
   owed runs (GOLD-K4)". Per GOLD-CONS3's cycle-3 ladder, Koehler spend should pause after this for family A
   (archive lookup, owner-gated) unless the beau box is judged worth one more small unit.
+- LOCAL-QUEUE L21 (26 Sept 2026, owner's ChatGPT local runner): a second, independent attempt to borrow
+  `sim_cryptologia_1981-04_5_2` (Kahn, Cryptologia 5(2), April 1981, pp.65-66, ASKS row 53's six disputed
+  groups) via the owner's authenticated Internet Archive session -- the reader shows "Borrow Unavailable" and
+  "Book available to patrons with print disabilities", loan counter zero. This confirms IA-BORROW's 25 Sept
+  finding (this item's `printdisabled`-only tier blocks borrowing regardless of account or client): the six
+  groups, the msg-3 header and length remain unverified against the printing. Access block, not a content
+  finding; family A (archive lookup) for this row now needs a different route (Farago, ASKS 55b, or a NARA
+  request) rather than a further IA borrow attempt.
