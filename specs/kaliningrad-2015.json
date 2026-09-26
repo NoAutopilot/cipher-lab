@@ -31,14 +31,11 @@
   "control_samples": 100,
   "note": "Russian/Polish corpora are not on disk; add them as 'corpora' when fetched",
   "corpora": [
-   "tools/data/it16/alcuneletteredip00ferr.txt",
-   "tools/data/it16/delleletterefam02seghgoog.txt",
-   "tools/data/it16/lettereinedited00tassgoog.txt",
-   "tools/data/it16/lettereinedited01cibrgoog.txt",
-   "tools/data/it16/lettereineditedi01carouoft.txt",
-   "tools/data/it16/letterescrittea01vanzgoog.txt"
+   "tools/data/es17c/memorialhistri17realuoft.txt.gz",
+   "tools/data/es17c/memorialhistri18realuoft.txt.gz",
+   "tools/data/es17c/memorialhistri19realuoft.txt.gz"
   ],
-  "corpora_note": "GOLD-KAL4, 26 Sept 2026: judge.corpora set to the 6 tools/data/it16 files for the convention-B Latin-alphabet sweep, unit it."
+  "corpora_note": "GOLD-KAL4, 26 Sept 2026: judge.corpora set to the 3 tools/data/es17c files for the convention-B Latin-alphabet sweep, unit es (caveat: es17c is 17th-c. Spanish court-newsletter register, only 3 source files, per-fold FN spread 10-39.5 pct per CLAUDE.md's MJ lesson)."
  },
  "value": "moderate; 58 reader comments without a solution, but no machine run across the candidate languages is on record",
  "model": "Sonnet",
