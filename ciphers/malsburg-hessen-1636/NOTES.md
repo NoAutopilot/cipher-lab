@@ -654,3 +654,80 @@ separate, larger job than this one's brief -- flagged for the lane orchestrator 
 improvised.
 
 Hosts: none (image already on disk from bMALC's fetch).
+
+## Pooled homophonic (bMALH, 26 Sept 2026)
+
+Intake gate re-run: `python3 tools/intake_gate_check.py malsburg-hessen-1636` -> `malsburg-hessen-1636: partial
+(line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0.
+
+First licensed test of the target at the pooled N (past bMALC's 1,000-sign threshold where the matched
+homophonic control reads this design). Pool: `pool/pooled.tsv`, N=1,828 signs, K=173 distinct (f.3/f.12 + f.23,
+per pool/POOL.md; f.28 HELD, not in this pool). Command (control first, per rule 3), homophonic being the
+matched design for this K=173 nomenclator:
+
+```
+python3 tools/family_run.py specs/malsburg-hessen-1636.json --family homophonic \
+  --cipher ciphers/malsburg-hessen-1636/pool/pooled.tsv --param profile=target \
+  --seeds 3 --gate 0.6 --label "bMALH pooled N=1828"
+```
+
+`--cipher` read the 5-column pool TSV directly (it has a `sign` header column; no tool change needed).
+
+**Control (at the pool's own K=173, not bMALC's K=95):** mean 0.637 (0.298-0.881, 3 seeds) -- gate 0.6 met, but
+narrowly and with high seed variance (one seed at 0.298, one at 0.881). Higher K than bMALC's projected-N
+figures (which held K fixed at 95) makes the anneal's own job harder; the control still clears 0.6 on average.
+
+**Target:** best score -4769.700. Judge (de16, era flag: this is a 1637 chancery letter, a century after de16's
+register, see specs/malsburg-hessen-1636.json's era_note) -- **FAIL**: score=-1.635, null_p99=-1.66,
+real_p05=-0.435, real_median=-0.423. The target score sits just above null_p99 (i.e. barely more prose-like than
+99% of shuffled nulls) and far below real_p05 -- nowhere near a real decode.
+
+**De-duplicated variant** (step 3 of the brief): dropped every pooled token whose sign is off-form under
+`tools/leaf_pool_gate.py`'s own grammar (`^(\d{1,3}|[A-Z#]|[A-Z][a-z]+)$` -- drops lowercase clear words like
+"antwort", "gezwungt", "z1", "Y1" etc., kept single-capital marks and capitalized clear words as in-form).
+37/1,828 tokens dropped (2.0%, not merged into pool/ -- filtered into a scratch TSV, pool/ untouched per this
+job's brief). Rerun of the same command on N=1,791, K=144:
+
+- Control: mean 0.699 (0.191-0.961, 3 seeds) -- gate met, still noisy.
+- Target: best score -4654.965. Judge FAIL: score=-1.628, null_p99=-1.653, real_p05=-0.434, real_median=-0.422.
+
+Same verdict as the full pool (FAIL, essentially unchanged score once normalised for N) -- **the FAIL is not an
+artifact of the ~2% off-form noise**.
+
+**Degenerate-optimum checks (step 6):**
+- Share of target tokens decoded by codes seen fewer than 3 times in the pool: 87/1,828 = **4.8%** (67 signs
+  singleton, 10 signs doubleton, out of 173 distinct). Small enough that the anneal is not mostly free-riding on
+  rare-code placements to inflate the n-gram score.
+- False-positive floor (`--shuffle-target 1`, one seed, full pool N=1,828): TARGET best score -5225.376, judge
+  FAIL score=-1.724 (below null_p99 -1.66, as expected for real noise). The real target's own score (-1.635) is
+  **0.089 above this shuffle floor** but still 1.2 below real_p05 -- a small, non-zero signal over pure noise,
+  not close to a reading.
+
+**HYPOTHESES.md rows:** 6 appended this job (control-only sanity, full-pool target, deduped target, a rerun of
+the full-pool target under a distinguishing label after a filename collision -- see below, and the
+shuffle-target floor).
+
+**Decode-filename collision, noted for the next worker:** `family_run.py` derives its decode filename's label
+tag from the first 16 alphanumeric characters of `--label`; "bMALH pooled N=1828" and "bMALH pooled N=1828
+deduped off-form dropped" share an identical 16-char prefix once spaces/`=` are stripped
+(`bmalhpooledn1828`), so the deduped run's decode silently overwrote the full-pool run's decode at
+`families/homophonic-1-profile=target-bmalhpooledn1828.txt`. Recovered by rerunning the full-pool command under
+label "bMALHfull pool N=1828 undeduped rerun" (16-char prefix differs), now at
+`families/homophonic-1-profile=target-bmalhfullpooln18.txt`. So: `...-bmalhpooledn1828.txt` = **deduped**
+decode (N=1791), `...-bmalhfullpooln18.txt` = **full-pool** decode (N=1828); the shuffle-floor decode is
+`...-shuffle1-profile=target-bmalhpooledn1828.txt`. Suggest the tool derive its label tag from a hash rather
+than a truncated prefix, or warn on collision, so this isn't a trap for the next --label choice.
+
+**Verdict:** target FAIL with a passed (if narrow) control at N=1,828/K=173, both on the full pool and on the
+off-form-filtered pool; a small but real gap above the shuffle-target floor. Per rule 5, this keeps the target
+`partial` (already in NEAR.md), not `closed-negative` -- a family exclusion for homophonic substitution at this
+N, not a closed case; the fond still has ~14 leaves' worth of unpooled signs (bMALC's extent.tsv) that could
+raise N further, and f.28 is HELD pending settle, not lost. Next step: continue transcribing/pooling toward
+bMALC's N=2000-3000 range (where the control read even more comfortably) before re-testing homophonic, or try a
+different family (masc was already excluded at N=352 with a mismatched K=22 control, not retried here since
+K=173 is well past masc's design).
+
+Files: HYPOTHESES.md (6 rows); families/homophonic-1-profile=target-bmalhpooledn1828.txt (deduped decode);
+families/homophonic-1-profile=target-bmalhfullpooln18.txt (full-pool decode);
+families/homophonic-1-shuffle1-profile=target-bmalhpooledn1828.txt (shuffle floor decode). Did not touch
+NEAR.md or pool/ (orchestrator's call per this job's brief). Hosts: none (all local).
