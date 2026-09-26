@@ -1,0 +1,12 @@
+JOB bBLZ4 (LANE B5, Sonnet worker). One line: re-run blitz-ciphers' German simple-substitution (masc) family with a de20 judge (bBLZ3 built the control on de20 but judged with de16), control first, both numbers into NEAR-ready form.
+
+Read first: `.claude/briefs/runs/2026-09-26-lane-b5-common.md` (and the 7b COMMON it names), `.claude/briefs/breadth.md`, specs/blitz-ciphers.json, NEAR.md's blitz-ciphers row, ciphers/blitz-ciphers/HYPOTHESES.md (bBLZ3's rows). Intake: `python3 tools/intake_gate_check.py blitz-ciphers` printed "open (line 3) -- edition/page or full-text-search citation found within 6 lines", exit 0, at 01:05 UTC 26 Sept (re-run it and paste it into NOTES.md).
+
+Cap and box: $1.50 or 25 minutes from your first `date -u`, whichever first. Disk only, no hosts.
+
+Steps:
+0. `date -u`; `python3 tools/room.py --start`; ROOM claim (tools/room.py) naming specs/blitz-ciphers.json and ciphers/blitz-ciphers/.
+1. Tool gap first (bBLZ3 flag): two runs of the same family and seed on different corpora write the same ciphers/<t>/families/<family>-<seed>.txt. Before running, copy bBLZ3's existing masc family files aside (families/masc-*-de16judge.txt) or, better, add a corpus/label-derived suffix to tools/family_run.py's output name with an offline test in tools/tests/ (keep the old name when no --label is given, so nothing else breaks). Run the test suite for family_run before using it.
+2. Make the judge German-era-matched: the spec's judge block reads language en; run with a German judge block (language de20, min_word_cover wired, letters_min/max 570-590) without losing the English one -- e.g. a sibling spec specs/blitz-ciphers-de20.json that differs only in its judge block, noted in the main spec. `tools/judge_plaintext.py` must accept it (it fails closed on unwired languages; de20 is wired).
+3. `python3 tools/family_run.py specs/blitz-ciphers-de20.json --family masc --corpus tools/data/de20... --seeds 3 --gate 0.6 --label de20judge` (see --help for exact corpus arguments): control first on de20 text at N=581; target only if the control passes. Paste both numbers and the judge line.
+4. Write cheap_test_done in the spec (append; do not overwrite earlier entries), push, done line with target and control side by side. If German stays open (control passes, target FAIL, or the judge gives a borderline), say so: the next step in NEAR.md is the six-page fetch, which is NOT this job. Report in five lines.
