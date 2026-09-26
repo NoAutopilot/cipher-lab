@@ -167,8 +167,34 @@ def headings_ok(before):
             return f"{os.path.basename(path)} lost section(s): " + "; ".join(sorted(lost))
     return None
 
+def bad_paths(paths):
+    """Return the entries in paths that are not safe to pass to `git add --` (LEARN-2026-09-26-0022 item 2 =
+    LEARN-2026-09-26-0058 item 3): a stray flag such as -m "message" passed after --push used to be treated as
+    a literal pathspec, silently dropping the real paths from the commit. A path must not start with '-', and
+    must either exist on disk or be a file git already knows is deleted (working tree or staged), so a `git rm`
+    -style removal still goes through."""
+    bad = [p for p in paths if p.startswith("-")]
+    remaining = [p for p in paths if not p.startswith("-")]
+    if remaining:
+        deleted = set(sh("git", "diff", "--name-only", "--diff-filter=D").stdout.splitlines())
+        deleted |= set(sh("git", "diff", "--cached", "--name-only", "--diff-filter=D").stdout.splitlines())
+        for p in remaining:
+            full = p if os.path.isabs(p) else os.path.join(ROOT, p)
+            if os.path.exists(full):
+                continue
+            rel = os.path.relpath(full, ROOT)
+            if rel in deleted or p in deleted:
+                continue
+            bad.append(p)
+    return bad
+
 def push(message, paths):
     if paths:
+        bad = bad_paths(paths)
+        if bad:
+            print(f"room.py --push: refusing flag-like or missing path(s) {bad!r} -- pass paths only, "
+                  "e.g. tools/room.py --push file1 file2")
+            return 2
         sh("git", "add", "--", *paths)
     if not sh("git", "diff", "--cached", "--quiet").returncode:
         print("nothing staged"); return 0

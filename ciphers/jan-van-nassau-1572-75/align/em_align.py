@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
 """Hard-EM alignment of cipher groups to printed plaintext (known-plaintext key recovery, grade C).
 
+Note (26 Sept 2026, LEARN-2026-09-26-0058): tools/interlinear_align.py's `align` subcommand already does this
+same DP/hard-EM alignment job in general form; kept here as-is because this file's output (align/pairs_<n>.tsv,
+align/key_counts.tsv) is already cited in NOTES.md. A future letter in this pool should call the shared tool
+instead of copying this file again.
+
 Each cipher run (from passes/align_<n>.tsv, RUN rows carry the print span in 'print: ...') is aligned to the letters of
 its printed span by dynamic programming: every group emits 0 (null), 1, 2 or 3 letters (a syllable), or a whole word.
 Scores come from the current key counts (smoothed); the prior favours one letter per group. Iterates until stable.

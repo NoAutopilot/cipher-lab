@@ -43,6 +43,12 @@ and the per-unit estimate in the brief itself, and have the worker stop before s
 a single step. See CLAUDE.md Usage item 6 for the full incident and the subagent-level precedent (GOLD-4D) this
 extends.
 
+**Copying a COMMON file forward (26 Sept 2026, LEARN-2026-09-26-0022/-0058).** A new lane's `-COMMON.md` is
+drafted by copying the previous lane's forward; the "Cost and time" paragraph got pasted in twice, back to
+back, in six files (cx, cx2, yx, zx, zx2, ax) before anyone caught it by eye. Run
+`python3 tools/tests/test_common_briefs.py` after copying a COMMON file forward and before committing it; it
+exits non-zero and names the file if any paragraph appears twice.
+
 ## The consolidator pattern, for standing campaigns
 
 A target that has run more than two `tools/family_run.py` families is a standing campaign, not a one-shot job, and

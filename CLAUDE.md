@@ -365,6 +365,15 @@ Every brief states a cap in dollars of usage (the session metadata's cost figure
    `tools/family_run.py SPEC --family F` (masc, homophonic, periodic_vigenere, running_key; 25 Sept 2026) runs rule 3 in
    order: the matched control first (spec N, K, corpus, `--seeds`), the target only if the control mean meets `--gate`
    (else CONTROL BELOW GATE, exit 3), one row per run with both numbers in ciphers/<t>/HYPOTHESES.md.
+   `tools/interlinear_align.py` (26 Sept 2026, LEARN-2026-09-26-0058) is the alignment tool for known-plaintext
+   key recovery from a printed clear text beside the cipher: dynamic-programming hard-EM, iterating a cipher
+   group's chunk of the plain-text span until it agrees with what the same group reads elsewhere, writing a
+   value -> meaning key TSV with counts (grade C, no cryptanalysis -- every meaning comes from the print). Built
+   for Thurloe's printed interlinear pairs, but the algorithm is general; a target with its own hand-built
+   (group, span) pairs uses it rather than re-deriving the DP/hard-EM loop as a private script (this happened
+   twice before it was caught: `ciphers/jan-van-nassau-1572-75/align/em_align.py`, then
+   `ciphers/lodewijk-van-nassau-1573-74/align/em_align_5799.py`, both kept in place since their output is
+   already cited, both now pointing at this tool in their own header).
 
 ## Access playbook
 

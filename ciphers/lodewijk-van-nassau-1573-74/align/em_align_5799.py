@@ -9,6 +9,10 @@ match Groen's print at each anchor (checked by eye against groen/groen_IV_CDIX.t
 what licenses treating this as known-plaintext alignment (rule 4 grade C) rather than
 cryptanalysis from scratch.
 
+Note (26 Sept 2026, LEARN-2026-09-26-0058): tools/interlinear_align.py's `align` subcommand already does this
+same DP/hard-EM job in general form; kept here as-is because this file's output (pairs_5799.tsv) is already
+cited in NOTES.md. A future letter in this pool should call the shared tool instead of copying this file again.
+
 Usage: python3 em_align_5799.py [--check]
 Writes key_5799.tsv (code, value, grade, source, note) and align/pairs_5799.tsv.
 """
