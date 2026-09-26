@@ -1,0 +1,121 @@
+;Solution claimed by AFIO for John Armstrong to James Madison, 20 February 1808
+;Source: https://www.afio.com/member-news/2025/05/27/we-have-a-winner-in-the-armstrong-madison-encrypted-letter-contest/
+;See https://cryptiana.web.fc2.com/code/madison_armstrong.htm
+;
+;(1) Verification Dump
+; Application of their key (see (3) below) to the ciphertext yields the following:
+Sir,
+The
+453 240<to> 760 1480 **** 
+35 681<petitions> 1752 1841 1314 
+1840 240<to> **** 384<you> 18<the> 681<petitions> 1340<your> 1628 1267<have> 1180<concerning> 
+76<their> 1340<your> 98<treatment> **** 388<have> 1320<commerce> 1254<been> 64 1780 
+341 1476 56 48<relation> 56 203 38<and> **** 1141 1848 1541 1638 
+88<that> 1340<your> 27<french> 121<government> 356<has> 454<declared> 17<of> 1640<american> 1276 14<this> 1760<ships> 1267<have> 
+61 45<have> **** 
+**** 48 1360 18 1141
+143<before> 436<on> 489<this> 17<of> 946<subject> 496<which> 18<the> 36<deeply> 1900<affects> 17<of> 1<our> 28<shipping> 14<this> 
+******** 
+******** 
+44<and> 176 564<commerce> 387<must> 840 671<in> 41 431 18<the> 640<ports> 1780 
+1761<the> 13<ministry> 65<has> 381<given> 246<no> 384<you> 14<this> 1<our> 38<and> 1120<assurance> 1350 14<this> 
+671<in> 48<relation> 370<to> **** 751<neutral> 18<the> 1540<shipping> 1320<commerce> 12<rights> 1<our> 1170<nor> 1842<satisfaction> 
+**** 41 1250 17 **** 1210
+(p.2)
+54 1631 12<rights> 78 350 1470 764 18<the> 1801 **** 
+******** 
+**** 78 1364 1751 101 421 ****
+17<of> 86 316 582 1017 18<the> **** 1248 1430 
+1176 1164 1801 1747 672 564<commerce> 481 1267<have> 18<the> 1<our> 
+**** 45 147 1158 ****
+**** 48 1240 547 864 1762 11 1264 1567
+45<have> 38<and> 18<the> 1741 180 150 1161 1240 1430 
+1776 1830 3 1451 28<shipping> 1540<shipping> 1537 17<of> 1894 
+**** 13 230 481 ****
+1110 1267<have> 84 19 41 364 17<of> **** 1480 1762 12<rights> 
+1<our> 1471 1480 22 561 17<of> 1708 11 380 460 17x 
+17<of> 1640<american> 19 47 76<their> 230 1540<shipping> **** 
+1161 14<this> 74 1461 1870 12<rights> 57 1899 3 47 1786 
+2 471 29 390 1164 87 576 176 18<the> 1480 
+760 **** 47 570 230 1254<been> 1<our> **** 
+**** 58 620 1307 451 576 17 680 38 36 1658
+460 365 **** 17<of> 561 470 1360 
+170 83 570 74 85 14<this> 740 **** 
+**** 67 780 1364
+**** 1170 1841 1 1161 674 701 3 61 1580 18
+170 1767 1870 5 **** 
+160 240<to> 876 1351 1107 1764 **** 
+**** 1472 21 76 11 180 38 1641 15 1354 17
+170 658 49 967 1861 16 576 1564 12<rights> 1310 
+1461 740 11 187 641 176 437 83 1451 1170<nor> 1807 
+110 416 38<and> 16 1208 141 **** 
+******** 
+1130 164 180 1767 162 38<and> 161 15 580 1716 10 
+27<french> 614 641 110 1345 170 687 860 310 1900<affects> 
+79 14<this> 1160 1376 1740 18<the> 38<and> 764 364 1240 
+1160 1401 176 671<in> 604 4 560 38<and> 1207 160 
+380 87 768 14<this> 870 462 47 648 140 1207 981 
+5 760 47 38<and> 580 170 
+I have the honor to be, sir, with very high consideration, your most obedient & very humble servant
+
+;
+;(2) "Decrypted Text"
+"The petitions of your seamen concerning their treatment have been examined. The French government has declared that American ships must not enter its ports. I have written to you before on this subject, which deeply affects our shipping and commerce. The ministry has given no assurance that, in relation to our neutral shipping and commerce rights, we shall receive satisfaction."
+
+;(3) Key
+1;our
+6;i
+12;rights
+13;ministry
+14;this
+17;of
+18;the
+27;french
+28;shipping
+36;deeply
+38;and
+39;written
+44;and
+45;have
+48;relation
+65;has
+67;enter
+76;their
+88;that
+98;treatment
+121;government
+131;to
+143;before
+240;to
+246;no
+356;has
+370;to
+381;given
+384;you
+387;must
+388;have
+432;its
+436;on
+454;declared
+489;this
+496;which
+564;commerce
+640;ports
+671;in
+681;petitions
+751;neutral
+946;subject
+1120;assurance
+1170;nor
+1180;concerning
+1254;been
+1267;have
+1320;commerce
+1340;your
+1358;that
+1540;shipping
+1640;american
+1760;ships
+1761;the
+1842;satisfaction
+1900;affects

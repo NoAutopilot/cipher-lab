@@ -158,7 +158,24 @@ more specifically than that in either Cryptiana post read this pass.
     ciphers/armstrong-madison-1808: open (line 1) -- edition/page or full-text-search citation found within 6 lines
     EXIT:0
 
-## Requests this session
+## ARM-CODES corpus (26 Sept 2026)
+
+Built `tools/data/uscodes-1800/` for the sibling-code vocabulary family (per Tomokiyo's suggestion): four
+value->word TSVs (WE028 1600 entries; THE=972 in three renderings, 580/227/95 entries with Bourdeau's H/C/M/I
+grades kept where published), Bourdeau's own decodes of Armstrong's other 1808 letters (his idiolect, same
+months as the target), and a stats script comparing last-digit distribution, value-gap pattern, alphabetical
+block structure and homophone counts across the tables, THE=972's real usage, and the target. Full detail and
+sourcing in that directory's own README.md and HYPOTHESES.md's new "ARM-CODES corpus" section; no decoding of
+the target and no family run this pass, per this job's brief -- both are queued next (ARM-A2, then family C).
+Headline: no sibling table or usage instance reproduces the target's last-digit skew (digit-0/digit-1 at
+25%/18% of tokens) or its 900-1099 value gap, so neither is inherited from a codebook already on file; all
+four tables are built in short alphabetical blocks (~5-16 entries each), the same construction convention
+across Livingston's, Monroe's and Armstrong's own codes. WE027 (Livingston<->Madison) and every other
+WE-numbered code Tomokiyo names have no downloadable table anywhere found, only inline worked specimens; Weber
+1979 itself is on Internet Archive but print-disabled-tier and unborrowable by this account, and has no
+HathiTrust volume for its OCLC number either -- not chased further.
+
+## Requests this session (intake, 26 Sept 2026)
 
 gallica.bnf.fr: 0. github.com: 2 shallow clones (`dbourdeau/cyphersolver`, `aaymeloglu/unsolved-ciphers`, both
 deleted after grepping). cryptiana.blogspot.com: 2 (the Raince/Carpi post, the June Armstrong post).
@@ -194,3 +211,10 @@ against `en18` is better-calibrated than against `en` but not a settled result. 
 corrected -- none needed). Requests: archive.org about 16 (six successful `_djvu.txt` fetches, two
 advancedsearch.php calls, two 503s on `writingsjamesmo0{4,5}unkngoog` retried once each per the good-citizen
 rule then dropped, one held-out test snippet via byte-range on a seventh, uncommitted volume). No other hosts.
+
+## Requests this session (ARM-CODES, 26 Sept 2026)
+
+See `tools/data/uscodes-1800/README.md`'s own "Requests this session" section for the full breakdown:
+cryptiana.web.fc2.com 41, github.com 1 shallow clone (deleted after copying), archive.org 2, openlibrary.org 1,
+catalog.hathitrust.org 2 (one 403 with a descriptive UA, one 200 with a Chrome UA per the Access playbook's own
+note for that host). No logins, no credentials touched, all >=1.5s apart.
