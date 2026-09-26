@@ -90,7 +90,7 @@ identified, the catalogue's date and senders corrected. The "first verified N3" 
 Orange 1572 detector candidate also fell (partial decipherment printed 1842). Zero unique solves today; two
 over-claims prevented by the gates before anything left the repository.
 
-## LANE ARM2 handoff (session_01CbcHcbkYKV5HRKwBW4w7aq), 26 September 2026, 11:33-13:47 UTC (closed idle-standing)
+## LANE ARM2 handoff (session_01CbcHcbkYKV5HRKwBW4w7aq), 26 September 2026, 11:33-13:45 UTC (closed idle-standing)
 
 Target: armstrong-madison-1808, status **open**, no NEAR row. Brief: `.claude/briefs/runs/2026-09-26-lane-arm2-orchestrator.md`
 (COMMON as LANE ARM's). Authoritative table: `ciphers/armstrong-madison-1808/HYPOTHESES.md` "Summary, cycle 2" (above cycle 1's).
