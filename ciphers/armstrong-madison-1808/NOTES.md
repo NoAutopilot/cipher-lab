@@ -1005,3 +1005,86 @@ count, under the 10-point gate and under the 13.3-point blind spread; the gain i
 3.3 percent); 18 of 55 cribs right. Gate not met, target not run; family D is a control-backed non-test at this N. Tools:
 `tools/families/nomenclator.py` cribs option, `tools/crib_rounds.py --family nomenclator`, tests pass. Next step
 unchanged from family C: more ciphertext in the same code, or a crib source outside the ciphertext.
+
+## ARM-BRANT, 26 Sept 2026 (parent worker ARM-BRANT) -- Irving Brant Papers finding aid located, item found, not digitised
+
+Intake gate: `ciphers/armstrong-madison-1808: open (line 1) -- edition/page or full-text-search citation found
+within 6 lines` (exit 0), re-run this pass.
+
+Archive lookup only (Pipeline 4), no decoding, no cryptanalysis. Following ARM3-LIVCODE's own named next step
+(HYPOTHESES.md "Family E, ARM3-LIVCODE"): Weber 1979 sources his WE027 reconstruction to the Irving Brant
+Papers, LOC.
+
+**U1, finding aid.** `www.loc.gov/search/?fo=json&q=Irving+Brant+papers` (1 request) returns the finding aid
+itself as the top hit: *Irving Brant papers, 1910-1977*, `hdl.loc.gov/loc.mss/eadmss.ms011060`, LC Catalog
+record `lccn.loc.gov/mm79013656`. The modern ArchivesSpace-hosted finding aid page
+(`findingaids.loc.gov/repositories/19/resources/4635`, the handle's redirect target) and its legacy XQuery
+mirror (`findingaids.loc.gov/db/search/xq/searchMfer02.xq?_id=loc.mss.eadmss.ms011060...`) are both Cloudflare-
+challenged to curl and to a real headless-Chromium fetch alike (`tools/browser_fetch.js`, 9 s wait, still
+"Just a moment..."); stopped at the one-retry limit and did not hit that host again (4 attempts total: 2 curl,
+2 browser). Wayback Machine's CDX API was also tried as the documented fallback but this container's TLS
+tunnel to `web.archive.org` failed outright (`Recv failure: Connection reset by peer` on three separate
+attempts including a bare root fetch, not a Cloudflare/bot signal -- logged, not retried further).
+
+Recovered instead: a WebSearch turned up the finding aid's own PDF, served from `tile.loc.gov` (a host already
+confirmed working in this repo, ARM3-LIVCODE), fetched directly and cleanly (HTTP 200, 6 pages,
+`tile.loc.gov/storage-services/service/gdc/gdcfindingaidpdfs/ms011060/ms011060.pdf`, 204,504 bytes). Saved to
+`sources/loc-ms011060-finding-aid.pdf`. This is the real, current (encoded 2011, revised January 2023) LC
+Manuscript Division finding aid text, not a stub: **Collection Summary** -- Extent 37,000 items, 64 containers
+plus 1 oversize, 24 linear feet; eight series (Family Correspondence, General Correspondence, Conservation
+Papers, Speeches and Writings, Research File, Miscellany, Addition, Oversize).
+
+Grepped the extracted text (`pdftotext -layout`) for cipher/cypher/code/Livingston/Weber/nomenclator/WE027/
+Armstrong/worksheet/Monroe/decipher -- one hit on "cipher", none on the others:
+
+> BOX 37 -- **Research File** series (Box 35-59, "Notes, card files, and other material used in researching
+> various books... arranged alphabetically by title") -- subsection **James Madison** (3 folders), item list
+> including "Notes on electoral college", **"Official cipher used by Robert R. Livingston, copy, 1801-1804"**,
+> "'Road to Armageddon'", "Trip to Poland", "Miscellaneous notes".
+
+**Digitised: no.** The Access and Restrictions section (finding-aid text, verbatim): "The papers of Irving
+Brant are open to research. Researchers are advised to contact the Manuscript Reading Room prior to visiting.
+Many collections are stored off-site and advance notice is needed to retrieve these items for research use."
+No viewer link, no online-format tag on this item anywhere in the finding aid; the `digitized: true` /
+`online_format: [pdf, web page]` fields in loc.gov's own search JSON refer to the finding-aid document itself
+(the PDF/HTML text just quoted), not to the manuscripts it describes -- consistent with every other LC finding
+aid in this repo's own table (CLAUDE.md Access playbook: loc.gov row).
+
+**U2, Weber's own trail.** be-api full-text search on `unitedstatesdipl0000webe` (6 queries, all page 670 of
+the book, the same page each time -- Weber's endnote/acknowledgements discussion of his sources): "...their
+worksheets on codes, located in the **Irving Brant Papers** in the Library of Congress, provided another
+source of information. **Mrs. Brant** had taken many of **Madison's encoded dispatches with Robert Livingston,
+Edmund Randolph and James Monroe, which had the plaintext written**[in, presumably, above the code groups --
+cut off at the snippet boundary]... Mrs. Hazeldean Brant **reconstructed over 1000 of the elements in the
+WE027 code**. Livingston to King, Paris, January 25, 1802, in DUSMF, R 11." This resolves exactly onto Box 37's
+item: the "Official cipher... copy" is (or is adjacent to) the worksheet Hazeldean Brant (Irving Brant's wife)
+built her WE027 reconstruction from, working from Madison's own encoded dispatches with plaintext annotated in.
+A second, unrelated passage on the same page: "successor as minister to France, General John Armstrong, wrote
+40 letters in code to James Madison beginning in late 1804..." -- this is Weber's general survey of ministers
+who used codes (Livingston, Armstrong, Crawford all "sent encoded dispatches"), read as confirming Armstrong's
+routine 1804-1810 office-code correspondence (THE=972, already on file), not as naming a second WE027-linked
+Armstrong item; no Brant-Armstrong connection found beyond this.
+
+Two loc.gov JSON searches for a separately-deposited Weber/Brant cipher-worksheets collection: `q=Ralph+E.+
+Weber+cipher+worksheets` (43 results, all unrelated -- phone directories, newspapers) and `q=Brant+Madison+
+cipher` (8,697 results, all unrelated -- Joseph Brant, Madison County/S.D./Ky. newspapers). Neither found a
+separate Weber deposit; consistent with U1 -- the worksheets are inside the Irving Brant Papers itself.
+
+**Next action.** The item is real, located (Box 37, Research File > James Madison), and not online. The
+Manuscript Reading Room's own contact page is `lcweb.loc.gov/rr/mss/address.html` (the redirect target of the
+finding aid's own printed "Contact information: hdl.loc.gov/loc.mss/mss.contact" link, resolved 26 Sept 2026;
+the page itself did not load past loc.gov's Cloudflare challenge to curl from this container, so its address
+text is not quoted here -- a person or a browser-tool pass can read it directly). Preferred citation per the
+finding aid: "Container number [Box 37], Irving Brant Papers, Manuscript Division, Library of Congress,
+Washington, D.C." REQUEST.md and ASKS.md row appended.
+
+Requests this pass: www.loc.gov 4 (2 `?fo=json` searches + 2 `www.loc.gov/rr/mss/` HTML attempts, the second
+403'd, Cloudflare). findingaids.loc.gov 4 (2 curl, 2 browser_fetch.js, all Cloudflare-challenged; stopped,
+logged, not retried again). tile.loc.gov 1 (the PDF, clean 200). be-api.us.archive.org 6 (Weber snippet
+queries). web.archive.org 3 (CDX + root, all TLS connection resets, not a bot block; stopped). hdl.loc.gov 2
+(HEAD only, to read redirect targets). WebSearch 1 (recovered the working tile.loc.gov PDF URL after
+findingaids.loc.gov failed). All >=1.5s apart per host, descriptive User-Agent except where the playbook
+already documents a browser UA is needed. No logins, no credentials. No subagents.
+
+Rule 10: this is a location and a container-list quotation, not a reading and not a novelty claim; nothing
+here is "new", "unpublished" or "first".

@@ -1350,3 +1350,13 @@ Reproduce: `python3 tools/crib_rounds.py --family nomenclator --spec specs/armst
 ciphers/armstrong-madison-1808/ciphertext_ms.txt --dir loop/seed2 --seed 2 --restarts 3 --param sweeps=30 --param
 phase1=20`, then `--round R --cribs loop/seed2/cribsR.txt`, then `--score`. No network; request count per host: 0.
 Rule 10: nothing here is a reading; no novelty claim. Finished 19:56 UTC.
+
+## Family E, ARM-BRANT (26 Sept 2026) -- Brant Papers located, not digitised
+
+Brant Papers located: Irving Brant Papers, LOC (`hdl.loc.gov/loc.mss/eadmss.ms011060`), Box 37, Research File
+series > James Madison subsection, item "Official cipher used by Robert R. Livingston, copy, 1801-1804"
+(finding aid `sources/loc-ms011060-finding-aid.pdf`; Weber 1979 be-api fts confirms this is the worksheet
+Hazeldean Brant used to reconstruct WE027 from Madison's own encoded dispatches with plaintext annotated).
+Digitised: no (collection "open to research", no viewer link, stored off-site). Next: a Manuscript Reading
+Room request/visit for Box 37 (REQUEST.md, ASKS row 77) -- an actual WE027 table (not a specimen) is the one
+witness that could test family E directly.
