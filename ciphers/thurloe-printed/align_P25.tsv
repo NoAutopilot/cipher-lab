@@ -1,0 +1,39 @@
+cipher_line	idx	raw	kind	value	repair	plain_chunk	status
+8775	0	68	num	68		e	conflict:a
+8775	1	441	num	441		st	single-segment
+8775	2	397	num	397		ge	single
+8775	3	44	num	44		n	single
+8775	4	105	num	105		had	single-segment
+8775	5	297	num	297		their	single-segment
+8775	6	435,	num	435		war	conflict:chinks
+8775	7	and	clear				clear
+8775	8	upon	clear				clear
+8775	9	403	num	403		with	conflict:armydefendthe
+8775	10	293	num	293		protthepe	single-segment
+8775	11	10	num	10		a	single-segment
+8775	12	179	num	179		ce	single-segment
+8775	13	all	clear				clear
+8775	14	fuch	clear				clear
+8775	15	thoghts	clear				clear
+8775	16	were	clear				clear
+8775	17	laid	clear				clear
+8823	0	119	num	119		by	single-segment
+8823	1	430.	num	430		france	single-segment
+8823	2	26	num	26		h	single
+8823	3	92	num	92		e	single
+8823	4	435	num	435		chinks	single-segment
+8823	5	261	num	261		th	single
+8823	6	need	clear				clear
+8823	7	10	num	10		e	conflict:a
+8823	8	277	num	277		prot	single-segment
+8823	9	281	num	281		will	single-segment
+8823	10	of	clear				clear
+8823	11	68	num	68		a	single-segment
+8823	12	547	num	547		great	single-segment
+8823	13	to	clear				clear
+8823	14	releave	clear				clear
+8823	15	and	clear				clear
+8823	16	359	num	359		par	single
+8823	17	13	num	13		t	single
+8823	18	124	num	124		that	single-segment
+8823	19	403	num	403		armydefendthe	single-segment

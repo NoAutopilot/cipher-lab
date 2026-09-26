@@ -1,0 +1,130 @@
+# Thurloe State Papers, collectionofstat05thur, printed p.101
+# Sender: Will. Lockhart, ambassador in France
+# Recipient: secretary Thurloe
+# Date: Chauny, 19 June 1656 [N.S.]
+# Cipher system: numeral nomenclature, interlined with a printed contemporary decipherment
+#   (same general convention as the Blake/Montagu/Fauconberg/Stamford pools already in this
+#   folder, but a distinct correspondence -- see NOTES.md for the cross-key check)
+# Notes: Immediately precedes P14 (The Protector to Blake and Mountagu) on the same printed page. Numeral cipher interlined with a printed word/syllable gloss above each group, same convention as the Montagu/Blake pools but a distinct, non-overlapping value range and no shared meanings (checked against key_blake_extended.tsv, key_montagu_extended.tsv, pool_1654/key_stamford.tsv, key_fauconberg.tsv, key_butler.tsv -- see NOTES.md). Found and characterised by LANE TX (25 Sept 2026, NOTES.md sec.22 job 1) by reading the OCR text; this pass extracts and aligns it mechanically for the first time.
+#
+# As transcribed (OCR), never silently repaired (CLAUDE.md rule 2 -- this is a djvu OCR text
+# window, not the page image; a negative here is conditional on the OCR). Source: Internet
+# Archive identifier collectionofstat05thur, cached djvu text sources/ia-fulltext/thurloe-gz/collectionofstat05thur_djvu.txt.gz
+# (gitignored uncompressed; re-derive with `gunzip -k -c` then this file's own djvu-text line
+# range below).
+#
+# djvu-text line range: 8752-8862 (NOT printed page numbers).
+#
+# Verbatim OCR window follows.
+#
+
+p.  198. 
+
+
+Lockhart  ambaflador  in  France  to  fecretary  Thurloe. 
+
+
+States  Gen.  C.  M.  was 
+
+
+I  HAVE  mentioned  the  bufineffe  of  44 1   464   69 
+pudence,    protefts  their   hath  not  been  a   thought 
+
+
+Right  honorable, 
+
+with  their  , 
+
+exceedinglie  ill  fatisfied  297  44  im- 
+*ht  of  anie  fuch  bufineffe  fince  the  tyme 
+
+the  St.  Gen-  had   their  war    with  prot.  the     pe      a      ce 
+
+68    441     397  44    105  297  435,  and  upon   403  293  10  179  all  fuch  thoghts  were  laid 
+
+he  Paris  D.amb.  to    utter 
+
+afide.     That  fome  eight  dayes  before  26  left  487  614  feemed  212  221  fomething  that  way ; 
+
+but     his 
+
+131  122  power  to  conclude  anie  thing  of  that  nature  being  enquired  into,  it  was  found, 
+that  their  was  not  fo  much  as  a  commiffion  or  advyfe  to  make  the  propofitione  ;  and  it  was 
+confefs'd  by  the  propofer,  that  he  had  done  it  out  of  his  own  privat  zeal  for  the  thing, 
+and  was  refolved  (if  he  found  it  would  take  hear)  to  ufe  his  beft  endeavors  to  difpofe 
+
+his      ma        f        t       ers 
+
+122  3031  378  343  381  to  it.     It  was  thoght  rediculos  to  treat  with  a  particular  perfon 
+
+about 
+
+
+JOHN.  THURLOE    E  S  Q_  &c.  ioi 
+
+about  his  private  inclinations  ;  and  to  declare  upon  fuch  flender  grownds  was  a  weakneffej-A.  D/  i6";t% 
+that  ufuallie  they  were  not  guiltie  of.     I  did  endeavor,  as  much  as  I  could,  to  retain,  the 
+expreflions,  becaufe  they  were  delyvered  with  more  then  ordinarie  earneftnefle.     The  free- 
+dome  and  nobleneffe  of  your  way  in  this  was  refented  with  manie  expreflions  of  gratitude  ; 
+
+if      my    lord  proteftor 
+
+and  its  promifed  that  (notwithstanding  of  anie  former  ill  uftge)  230   88   231    233   fyhds 
+
+France  Sweden 
+
+that  a  convenient  thing,  he  will  aflift  it,  and  difpofe  430  to  it;  onlie  433  muft  be  corn- 
+Sweden 
+prys'd  in  it.     Their  was  no  great  difpofitions  to  fpeak  freelie  to.  the  bufinefle  of  447  j  fo 
+that  I  cannot  give  any  diftinckt  account  of  that  at  prefent. 
+
+Cardinall  me      n 
+
+480  feem'd  to  be  furprys'd,  when  it  was  told  him,  that  three  or  four  thoufand  351  100 
+
+they  were     1      e      vi       ed  ch       ar       ge       of    France 
+
+were  refufed,  except  56  141  87  72  332  108  at  the  215  250  181  364448,  and  maintained 
+
+by     France     He  chinks  the  prot. will  a     great  part        that  army  :    de      fe      nd      the 
+
+119  430.     26   92    435    261  need  10  277  281  of  68  547  to  releave  and  359  13  124  403 
+
+pi       a      ce 
+
+317  10  179.  He  aflures  me,  that  once  this  week  I  mall  know  his  la  ft  refolutions  abowt 
+it.     Mean  tyme  a  lift  of  the  pryces  of  thefe  things  mentioned  in  my  former  is  prefs'd  ;  and 
+
+the  protedtor       make     re       a     dy     the    fleet  a  yeare's  it      may 
+
+its  expecled,  that  435  will  315  174  10  60  403  548,  fo  as  in  1600  advertifement  374  $39 
+put      to    fea 
+
+413  212  91  ;  and  at  parting  told  me,  he  was  confident  at  next  meeting,  wee  mould  agree 
+as  to  all  things,  but  did  infinuate,  that  he  believed,  that  I  had  power  to  yeeld  to  the  great 
+particular  in  queftion.      I  protefted    the   contrair.      I.    hinted   fomething   concerning   the 
+
+1      end     ing  mo     riy 
+
+87  288  302  of  16  280.  I  found  I  was  underftood,  but  he  waved  the  fpeaking  to  it  at  that 
+tyme.  I  have  my  fears  ftill,  that  it  will  not  doe.  He  told  me,  he  had  fpent  all  his  ftrenth, 
+fo  that  in  civilitie  I  was  oblyged  to  tak  leave  of  him. 
+
+Sir,  I  am  apprehenfive,  that  if  we  come  to  agree  either  about  the  great  bufinefle,  or  that 
+
+mo   nies 
+
+of  16  280,  or  both,  that  my  credentialls  will  not  be  looked  upon  as  fufflcient  to  impowef 
+me  to  fyne ;  and  without  fyning,  bufinefle  will  be  verie  looft  5  but  you  are  beft  able  to  judge 
+of  what  is  fitt  to  be  done  in  that.  The  cardinall,  hath  faid  nothing  to  me  abowt  anie  fuch 
+thing  •,  onlie  both  the  firft  and  fecond  tyme  I  waited  on  him,  he  told  me,  that  he  knew  I 
+had  powers,  that  I  wowld  not  then  own.  And  now  it  being  tyme  to  putt  an  end  to  the 
+trowble  you  receave  by  this,  I  beg  leave  to  renew  my  humble  afluranee,  that  I  have  molt 
+paflionatt  inclinations  to  be, 
+
+Right  honourable, 
+
+Your  moft  obedient  and  faithfull  fervant. 
+
+Chauni,  June,  19th  1656.     [N.  S.]  Will.  Lockhart. 
+

@@ -1,0 +1,80 @@
+# Thurloe State Papers, collectionofstat03thur, printed p.408-409 (margin "Vol. xxv p.593")
+# Sender: Zachary Johnson (cover name)
+# Recipient: mr. Manning (forwarded to secretary Thurloe)
+# Date: From the Buss, 6 May 1655
+# Cipher system: numeral nomenclature, interlined with a printed contemporary decipherment
+#   (same general convention as the Blake/Montagu/Fauconberg/Stamford pools already in this
+#   folder, but a distinct correspondence -- see NOTES.md for the cross-key check)
+# Notes: Found by LANE TX (25 Sept 2026, NOTES.md sec.22 job 1) after the third of three misattributed "Attorney general Prideaux" headings (Prideaux's own letter, djvu 34006-34032, carries no cipher). Seven cipher-number lines (about 90 groups), interlined with a printed gloss.
+#
+# As transcribed (OCR), never silently repaired (CLAUDE.md rule 2 -- this is a djvu OCR text
+# window, not the page image; a negative here is conditional on the OCR). Source: Internet
+# Archive identifier collectionofstat03thur, cached djvu text sources/ia-fulltext/thurloe-gz/collectionofstat03thur_djvu.txt.gz
+# (gitignored uncompressed; re-derive with `gunzip -k -c` then this file's own djvu-text line
+# range below).
+#
+# djvu-text line range: 34172-34232 (NOT printed page numbers).
+#
+# Verbatim OCR window follows.
+#
+A  letter  of  intelligence  from  mr.  Manning. 
+
+From  the  Bufs,  May  6,  1655.     [N.  S.] 
+Sir, 
+
+Colen 
+
+I  AM  gott  thus  far   on  my  journey   for  the  Spaw  10 16,    where  I  hope  to  finde  Vol.  xxv. 
+benefit  from  the  waters.    I  am  forry  you  will  not  folowe  my  advife,  for  juft  now  p.  593- 
+I    had    ne    wee      s      that    ON    ei        1      was   ef     ca      pe      d     and    att    the 
+324.  85.  522.  136.  343,  498.  411.  350.  353.  66.  43.  293.  160.  517.  334.  460.372. 
+Ha  ge     you   mufl  be      ca      re      fu        1 
+
+72.  365.  570.  354.  III.  293.  40.  295.  353.  which  calls  me  thither,  and  I  am  confident 
+
+Sir      T.      B      lo     there     fir      Fr.     Vi.      n        c      ent 
+to    find    benefit   by  it.'     148.    176;    41.   493.   442.    148.    225.  387.  424.  219.  434. 
+C     ol.     Ad    am    B    ro      w       n     were    eh    ga     ge      d.     Ga      i"       di       ne      r 
+251.  383.  124.  278. 41.  217.  597.  424.  164.  406.  337.  2,6s.  531.  337.  s^^-  5^7-  522.  580. 
+now  your  pr     if     on      er  know     s       it 
+
+89.  598.  216.  73.  411.  476.  311.  343.  129.  Sir,  I  have  not  now  time  or  conveniency 
+to  give  you  a  more  ample  accompt  of  your  goods.,  I  hope  my  lafl  have  bin  fatisfadtory, 
+wherein  you  may  take  my  advife,  and  afTure  your  felf  of  the  reality  of  every  perticular 
+adjufled  in  the  accompt,  as  alfo  of  my  intentions  to  ferve  you  in  putting  off  your  como-' 
+dities.     Soe  expeding  to  heare  from  you,  I  am. 
+
+Sir,  yoiir  fervant, 
+
+Zagharv  Johnson. 
+
+Your    de     cl      are    ing     a      pe      na      I       tie     on      an       y     who  ha      r 
+
+598.  573.  391.  404.  562.  54.  146.  466.  367.  191.  411.  292.  500.  304.  72.  58a 
+
+b     or     the     pe      rf      on       si      have    na    m     ed    to     you  will  be     off 
+§5.  481.  372.  160.  245.  411.  343.  324.  100.  466.  60.  238.  177.  570.  346.  III.  313. 
+
+hi     gh     ad       va      nt      ag      e 
+
+226.  379.  124.  275.  494,  166.  196.  Once  more  lett  me  intreate  you  to  fend  me 
+weekely  the  diurnalls. 
+
+The  fuperfcription, 
+
+For  mr.  Jeremiah  Joflin,  thefi^  Londort. 
+
+
+At  the  council  at  Whitehall.  ' 
+Thurfday  the  26th  of  April  1655^ 
+
+UPON  report  made  by  colonel  Jones,  from  the  committee  appointed  to  perufe  the  Vol.  xxt. 
+ordinance  touching  the  chancery ;   ordered,   that  it  be  offered  to  his  highnefs,  as  the  p.  597. 
+advice  of  the  council,   that  his  highnefs  would  be  pleafed  to  appoint  fix  perfohs  to  be 
+mafters  of  the  chancery. 
+
+Hen.  Scoeell,  clerk  of  the  council. 
+
+Vol.  III.  5  M  Majlen 
+
+

@@ -1,0 +1,135 @@
+cipher_line	idx	raw	kind	value	repair	plain_chunk	status
+32079	0	324.	num	324		i	conflict:end
+32079	1	278.	num	278		a	single
+32079	2	89.	num	89		m	conflict:k
+32079	3	211.	num	211		now	single-segment
+32079	4	1016.	doubtful			for	doubtful
+32079	5	535.	num	535		collen	single-segment
+32079	6	^65.	doubtful			lor	doubtful
+32079	7	S9^-	clear				clear
+32079	8	63.	num	63		d	single
+32079	9	306.	num	306		ge	conflict:and
+32079	10	102.	num	102		ra	single-segment
+32079	11	343.	num	343		rd	conflict:s
+32079	12	511.	num	511		and	single-segment
+32079	13	192.	num	192		ma	single-segment
+32079	14	540.	num	540		ffiwentthis	single-segment
+32082	0	127.	num	127		fa	conflict:do
+32082	1	464.	num	464		il	single-segment
+32082	2	syG.	clear				clear
+32082	3	ys-	clear				clear
+32082	4	3^^-	clear				clear
+32082	5	57^-	doubtful			ing	doubtful
+32082	6	346-	doubtful			not	doubtful
+32082	7	399-	doubtful			th	doubtful
+32082	8	^73-	doubtful			ing	doubtful
+32082	9	^37-	doubtful			will	doubtful
+32082	10	37^-	doubtful			fe	doubtful
+32082	11	^°^7-	doubtful			rve	doubtful
+32082	12	343-	doubtful			buttheprots	doubtful
+32084	0	306.	num	306		and	single-segment
+32084	1	,1007.	doubtful			prot	doubtful
+32084	2	343.	num	343		s	agrees
+32084	3	s^-	clear				clear
+32084	4	A-4-3-	clear				clear
+32084	5	.127.	num	127		do	single-segment
+32084	6	367.	num	367		un	single-segment
+32084	7	446.	num	446		fa	single-segment
+32084	8	413.	num	413		l	single-segment
+32084	9	257.	num	257		at	single-segment
+32084	10	259.	num	259		co	single-segment
+32084	11	411.	num	411		urton	conflict:all
+32087	0	318.	num	318		t	single-segment
+32087	1	264.	num	264		u	conflict:all
+32087	2	284.	num	284		n	single
+32087	3	211.	num	211		s	conflict:now
+32087	4	51.	num	51		a	single
+32087	5	443.	num	443		re	single
+32087	6	343.	num	343		put	conflict:s
+32087	7	505.	num	505		prince	single-segment
+32087	8	300.	num	300		ro	single-segment
+32087	9	342.	num	342		be	single-segment
+32087	10	217.	num	217		r	single
+32087	11	97.	num	97		t	single
+32087	12	259.	num	259		fen	conflict:co
+32087	13	50.	num	50		t	single
+32087	14	149.	num	149		to	agrees
+32087	15	&c.	clear				clear
+32087	16	237.	num	237		but	single-segment
+32089	0	570.	num	570		yo	single
+32089	1	92.	num	92		u	single
+32089	2	213.	num	213		ihall	single-segment
+32089	3	89.	num	89		k	single-segment
+32089	4	264.	num	264		now	conflict:all
+32089	5	411.	num	411		all	single-segment
+32089	6	386.	num	386		onthere	single-segment
+32089	7	49.	num	49		t	single-segment
+32089	8	51.	num	51		u	conflict:a
+32089	9	261.	num	261		rn	conflict:out
+32089	10	203.	num	203		of	single-segment
+32089	11	285.	num	285		the	conflict:of
+32089	12	372.	num	372		letter	single-segment
+32089	13	423.	num	423		s	single-segment
+32089	14	343.	num	343		chst	conflict:s
+32089	15	1G05.	doubtful			i	doubtful
+32089	16	73.	num	73		s	single
+32091	0	1030,	doubtful			defign	doubtful
+32091	1	517.	num	517		d	single-segment
+32091	2	149.	num	149		to	agrees
+32091	3	244.	num	244		meet	single-segment
+32091	4	2372.	doubtful			the	doubtful
+32091	5	1017.	doubtful			prince	doubtful
+32091	6	460.	num	460		a	single
+32091	7	46.	num	46		t	conflict:p
+32091	8	122.	num	122		in	single-segment
+32091	9	245.	num	245		w	single
+32091	10	96.	num	96		e	single
+32091	11	593.	num	593		rs	single-segment
+32091	12	183.	num	183		ab	single-segment
+32091	13	261.	num	261		out	single-segment
+32091	14	259.	num	259		fo	conflict:co
+32091	15	266.	num	266		u	single-segment
+32091	16	424,	num	424		rteen	single-segment
+32093	0	545.	num	545		da	single-segment
+32093	1	528.	num	528		ye	single-segment
+32093	2	343.	num	343		s	agrees
+32093	3	198.	num	198		hence	single-segment
+32093	4	1014.	doubtful			wilmot	doubtful
+32093	5	1015.	doubtful			armoror	doubtful
+32093	6	&c.	clear				clear
+32093	7	404.	num	404		are	single-segment
+32093	8	264.	num	264		all	single-segment
+32093	9	506..	num	506		in	single-segment
+32093	10	403.	num	403		englyetmrs	single-segment
+32093	11	^g6.	clear				clear
+32093	12	46.	num	46		p	single-segment
+32093	13	454.	num	454		hi	single-segment
+32093	14	226.465.	doubtful			li	doubtful
+32093	15	230.	num	230		ps	single-segment
+32095	0	307.	num	307		can	single-segment
+32095	1	407.	num	407		give	single-segment
+32095	2	292.	num	292		an	single-segment
+32095	3	no.	clear				clear
+32095	4	419.	num	419		ac	single-segment
+32095	5	429.	num	429		coun	single-segment
+32095	6	51.	num	51		t	conflict:a
+32095	7	285.	num	285		of	agrees
+32095	8	1014.	doubtful			wilmot	doubtful
+32095	9	320.	num	320		and	single-segment
+32095	10	326.	num	326		moft	single-segment
+32095	11	285.	num	285		of	agrees
+32095	12	372.	num	372		th	conflict:letter
+32095	13	40.	num	40		e	single
+32095	14	343.	num	343		re	conflict:s
+32095	15	5j,	doubtful			ft	doubtful
+32097	0	306.418.	doubtful			and	doubtful
+32097	1	324.	num	324		end	single-segment
+32097	2	100.'	num	100		i	single-segment
+32097	3	597.	num	597		have	single-segment
+32097	4	133.	num	133		w	single-segment
+32097	5	5^-^97'	doubtful			ri	doubtful
+32097	6	103.	num	103		t	single-segment
+32097	7	307.	num	307		for	conflict:can
+32097	8	116.	num	116		nonecan	single-segment
+32097	9	5C)y.	clear				clear
+32097	10	391.210.49.587.357,	doubtful			makefocleardif	doubtful

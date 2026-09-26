@@ -1,0 +1,17 @@
+cipher_line	idx	raw	kind	value	repair	plain_chunk	status
+31996	0	1005.	doubtful			c	doubtful
+31996	1	293.	num	293		s	single-segment
+31996	2	172.	num	172		ca	single-segment
+31996	3	163.	num	163		me	single-segment
+31996	4	1016.	doubtful			to	doubtful
+31996	5	550.	num	550		couen	single-segment
+31996	6	480.	num	480		fo	single-segment
+31996	7	530.	num	530		nd	single-segment
+31996	8	409.	num	409		ay	single-segment
+31996	9	1007,	doubtful			laf	doubtful
+31996	10	73.	num	73		t	single
+31996	11	46Q.	doubtful			hideisat	doubtful
+31996	12	41.	num	41		b	single-segment
+31996	13	"""j-j."	clear				clear
+31996	14	545.	num	545		redayet	single-segment
+31996	15	c^c,^.	clear				clear

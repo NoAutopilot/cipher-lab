@@ -1,0 +1,107 @@
+# Thurloe State Papers, collectionofstat03thur, printed p.382-383
+# Sender: Andrew Burton (cover name for a Manning-network informant)
+# Recipient: mr. Manning (forwarded to secretary Thurloe)
+# Date: Antwerp, 26 April 1655 [N.S.]
+# Cipher system: numeral nomenclature, interlined with a printed contemporary decipherment
+#   (same general convention as the Blake/Montagu/Fauconberg/Stamford pools already in this
+#   folder, but a distinct correspondence -- see NOTES.md for the cross-key check)
+# Notes: Found by LANE TX (25 Sept 2026, NOTES.md sec.22 job 1) immediately after the unrelated Nutley letter that s.12.6's automated heading scan had flagged (Nutley's own letter, djvu 31934-31974, carries no cipher at all). Two short cipher-number lines in the body, interlined with a printed gloss. No existing key file in this folder covers this correspondence.
+#
+# As transcribed (OCR), never silently repaired (CLAUDE.md rule 2 -- this is a djvu OCR text
+# window, not the page image; a negative here is conditional on the OCR). Source: Internet
+# Archive identifier collectionofstat03thur, cached djvu text sources/ia-fulltext/thurloe-gz/collectionofstat03thur_djvu.txt.gz
+# (gitignored uncompressed; re-derive with `gunzip -k -c` then this file's own djvu-text line
+# range below).
+#
+# djvu-text line range: 31977-32064 (NOT printed page numbers).
+#
+# Verbatim OCR window follows.
+#
+^  letter  of  intelligence  from  mr.  Manning. 
+
+Antwerp,  April  26,   1655.     [N.  S.] 
+Sir, 
+
+I  Received  your's  the  1 6th  inftant,  with  the  bill  for  150 1.  and  the  other  paper.  All 
+yours  are  come  fafely  to  my  hands,  as  I  hope  mine  are  to  yours.  Sir,  your  punftuall 
+dealing  with  me  hath  clearly  confirmed  the  good  report  the  world  hath  of  you  ;  and,  fir, 
+you  may  rely  on  having  your  bufmefs  done,  according  as  you  fhall  order  me ;  which  I  ex- 
+peft  by  the  next,  full  direftions  in  the  fame  cipher  I  here  fend  you  -,  which  realy,  fir, 
+not  being  well  att  this  prefent,  is  not  fo  full,  I  doubt,  as  I  could  wifhe  -,  but  what  there 
+may  want,  as  you  direft,  I  fhall  make  good  in  the  next ;  and  for  the  fliture,  lett  your 
+letters,  that  you  fend  about  this  bufmefs,  be  addreffed  as  I  have  directed  ;  for  before  yours 
+
+Collen.    C.  S. 
+come,  I  fhall  be  att  1016,     1005.  being  there.     I  have  writ  about  the  commodities, 
+and  ftill  wholy  bend  myfelf  to  that  trade,  according  to  your  former  advife. 
+
+C.  S.    ca      me     to     CoUen    fo      nd      ay    laft.   Hide    is      at       B    re    da     yet 
+1005.  293.  172.  163.  1016.  550.  480.  530.  409.  1007,  73.  46Q.  41.  "j-j.  545.  c^c,^. 
+ma     ny     are     there. 
+
+102.  145.  404.  184.     Sir,  I  pray  excufe  me  this  poft,  being  of  my  ill  difpofition,  and 
+affure  yourfelf,  you  have  none  more  cordialy  yours,  then 
+
+Sir,  your  fathfull  fervant, 
+
+Andrew  Burton-, 
+
+Let  your  Cover  be  to  mr.  Henry  May,  att  mr.  Twiddie's  houfe  iri  the  Ew  de  Strote  tot 
+Antwerpen. 
+
+Your  orders,  for  mr.  Andrew  Burton,  att  Antwerpen  ;  for  mr.  Zachary  Johnfon,  att 
+Mecklin  ;  or,  for  mr.  Humfrey  Gregfon,  att  Berghen  Op  fome. 
+
+I  pray  lett  me  have  the  diurnalls,  when  you  write  -,  and  be  very  carefull  in,  &c.  as  I 
+formerly  wrott.     Sir,  I  pray  fend  mee  word,  whether  mr.  An.  Miller  received  my  letter. 
+
+Sir,  '  ~ 
+
+The  marquefs  de  Leda  is  now  very  bufily  preparing  att  Bruxelles  for  his  joumy  into 
+England,  as  embaffador  from  thefe  countreys.  They  feeme  all  much  ftartled,  to  here  that 
+generall  Penn  hath  landed  men  att  Cuba  nere  the  Havan,  which  gives  tokens  of  z.  warre 
+intended  againft  Spaine.  There  is  a  fuddeine  alteration  amongft  all  ;  for  the  poft  before 
+a  warre  between  England  and  France  was  with  much  joy  in  every  bodie's  mouth,  but  now 
+the  cleere  contrary  feared  ;  and  amongft  the  governors  here,  there  is  much  diffention.  The 
+arch-duke,  or  rather  Fuenfeldane,  hath  clapt  up  into  the  caftell  the  audiencier  of  thefe  coun- 
+tryes,  as  alfo  Montecuculi,  governor  of  Armentires,  where  a  revolt  was  very  nere  lately  by 
+Irifhe,  who  dayly  run  in  to  the  French  in  confiderable  numbers.  Don  Pedro— —lieutenant 
+2  generall 
+
+
+JOtiN     THURLOE     E  B  Q^  kc,  38^ 
+
+generall  of  the  horfe,  is  fent  prifoner  to  Ghendt.     The  depth  of  thefe  great  plots   noe  A.  D.   1655^ 
+man  yett  knoweth,  that  is  not  att  the  helme  ;   but   realy  in  all  outward  fhew  the  French  (./"VNJ 
+■will  gaine  much  this  next  campaigne. 
+Many  are  dayJey  apprehended. 
+
+The  fuperfcription, 
+
+For  my  worthy  and  much  honoured  freind^ 
+mr.  Jeremiah  Jofelin,  ati  London. 
+
+
+da     y. 
+
+and 
+
+all 
+
+545-  500. 
+m      u 
+
+306. 
+rt 
+
+264, 
+her 
+
+46.  261. 
+who    all 
+
+259'. 
+mif 
+
+'S- 
+

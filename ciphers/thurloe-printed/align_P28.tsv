@@ -1,0 +1,84 @@
+cipher_line	idx	raw	kind	value	repair	plain_chunk	status
+34182	0	324.	num	324		i	single-segment
+34182	1	85.	num	85		h	single
+34182	2	522.	num	522		ad	single
+34182	3	136.	num	136		ne	single-segment
+34182	4	343,	num	343		wee	conflict:on
+34182	5	498.	num	498		s	single-segment
+34182	6	411.	num	411		that	conflict:on
+34182	7	350.	num	350		on	single-segment
+34182	8	353.	num	353		e	single
+34182	9	66.	num	66		i	single
+34182	10	43.	num	43		l	single-segment
+34182	11	293.	num	293		was	single-segment
+34182	12	160.	num	160		ef	single-segment
+34182	13	517.	num	517		ca	single-segment
+34182	14	334.	num	334		pe	single-segment
+34182	15	460.372.	doubtful			dandattthe	doubtful
+34188	0	to	clear				clear
+34188	1	find	clear				clear
+34188	2	benefit	clear				clear
+34188	3	by	clear				clear
+34188	4	it.'	clear				clear
+34188	5	148.	num	148		sir	agrees
+34188	6	176;	num	176		t	single-segment
+34188	7	41.	num	41		b	agrees
+34188	8	493.	num	493		lo	single-segment
+34188	9	442.	num	442		there	single-segment
+34188	10	148.	num	148		fir	agrees
+34188	11	225.	num	225		fr	single-segment
+34188	12	387.	num	387		vi	single-segment
+34188	13	424.	num	424		n	agrees
+34188	14	219.	num	219		c	single-segment
+34188	15	434.	num	434		ent	single-segment
+34190	0	251.	num	251		c	single-segment
+34190	1	383.	num	383		ol	single-segment
+34190	2	124.	num	124		ad	single-segment
+34190	3	278.	num	278		am	single-segment
+34190	4	41.	num	41		b	agrees
+34190	5	217.	num	217		ro	single-segment
+34190	6	597.	num	597		w	single-segment
+34190	7	424.	num	424		n	agrees
+34190	8	164.	num	164		were	single-segment
+34190	9	406.	num	406		eh	single-segment
+34190	10	337.	num	337		ga	agrees
+34190	11	2,6s.	doubtful			ge	doubtful
+34190	12	531.	num	531		d	single-segment
+34190	13	337.	num	337		ga	agrees
+34190	14	s^^-	clear				clear
+34190	15	5^7-	doubtful			i	doubtful
+34190	16	522.	num	522		di	conflict:ad
+34190	17	580.	num	580		ner	single-segment
+34205	0	598.	num	598		your	single-segment
+34205	1	573.	num	573		de	single-segment
+34205	2	391.	num	391		cl	single-segment
+34205	3	404.	num	404		are	single-segment
+34205	4	562.	num	562		ing	single-segment
+34205	5	54.	num	54		a	single-segment
+34205	6	146.	num	146		pe	single-segment
+34205	7	466.	num	466		na	agrees
+34205	8	367.	num	367		i	single-segment
+34205	9	191.	num	191		tie	single-segment
+34205	10	411.	num	411		on	single-segment
+34205	11	292.	num	292		an	single-segment
+34205	12	500.	num	500		y	single-segment
+34205	13	304.	num	304		wh	single
+34205	14	72.	num	72		o	single
+34205	15	58a	doubtful			har	doubtful
+34208	0	§5.	doubtful			b	doubtful
+34208	1	481.	num	481		o	single
+34208	2	372.	num	372		r	single
+34208	3	160.	num	160		the	conflict:ef
+34208	4	245.	num	245		pe	single-segment
+34208	5	411.	num	411		rf	conflict:on
+34208	6	343.	num	343		on	single-segment
+34208	7	324.	num	324		si	conflict:i
+34208	8	100.	num	100		have	single-segment
+34208	9	466.	num	466		na	agrees
+34208	10	60.	num	60		m	single-segment
+34208	11	238.	num	238		ed	single-segment
+34208	12	177.	num	177		to	single-segment
+34208	13	570.	num	570		you	single-segment
+34208	14	346.	num	346		will	single-segment
+34208	15	III.	num	111		be	single-segment
+34208	16	313.	num	313		off	single-segment

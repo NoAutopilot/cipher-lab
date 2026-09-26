@@ -1988,6 +1988,82 @@ New: `tx/common.py`, `tx/decode_p10_line10.py`, `tx/reading_P10_L10.tsv`,
 `reading_*.txt`, or any P4 file. Requests: 0 (all four djvu volumes and the P10 page image were
 already cached on disk). No logins, no credentials. Well under the $5 stall alarm.
 
+## 23. Extraction and alignment of the four letters found by LANE TX (LANE B5 worker bTHU, 26 Sept 2026)
+
+Brief: QUEUE.md KX-02 -- "extract the four further Thurloe letters ... align with tools/interlinear_align.py,
+add to ciphers/thurloe-printed/". QUEUE.md's own KX-02 wording names the flagged *headings*
+(Lockhart, Nutley, Attorney General Prideaux, Sir Benjamin Wright), not the actual senders: section
+22 job 1 (LANE TX, 25 Sept 2026) already established that three of those four headings' own letters
+carry no cipher at all, and that the glossed cipher clusters s.12.6 had flagged near them belong to
+Lockhart's own letter (real) plus three separate "Manning" cover-name letters (signed "Andrew
+Burton" and twice "Zachary Johnson") that follow the misattributed headings. This pass extracts and
+mechanically aligns those four real letters -- job 1 characterised them by reading the OCR text;
+nothing in job 1 was turned into a `ciphertext.txt`, `index.tsv` row, or key file (rule 7), which is
+what this pass adds. Disk only: `sources/ia-fulltext/thurloe-gz/{collectionofstat03thur,
+collectionofstat05thur}_djvu.txt.gz`, already cached; no fetch, no host touched.
+
+**New rows `P25`-`P28`** (`index.tsv`, `ciphers/thurloe-printed/P25`-`P28/ciphertext.txt`, raw OCR
+window verbatim per rule 2): P25 Lockhart (p.101, immediately above P14); P26 "Andrew Burton" cover
+letter (Antwerp, 26 Apr 1655 N.S.); P27 "Zachary Johnson" cover letter (undated, MS "Vol. xxvi
+p.377"); P28 second "Zachary Johnson" letter ("From the Buss", 6 May 1655, printed pp.408-409).
+
+**Alignment.** `tools/interlinear_align.py pairs` then `align` (unmodified, no private script), on
+the djvu-text ranges named in section 22 job 1: `P25_pairs.tsv`/`align_P25.tsv`/`key_lockhart.tsv`,
+`P26_pairs.tsv`/`align_P26.tsv`/`key_burton.tsv`, `P27_pairs.tsv`/`align_P27.tsv`/`key_johnson1.tsv`,
+`P28_pairs.tsv`/`align_P28.tsv`/`key_johnson2.tsv`. The tool's `pairs` step only catches lines that
+separate cleanly into a plain line followed by a mostly-numeral line; unlike the P2-P24 letters,
+these four print the gloss word interleaved with its numeral group *within the same OCR line* in
+several places (e.g. P25 djvu L8768 `I  HAVE  mentioned  the  bufineffe  of  44 1   464   69`), so
+`pairs` recovers only part of each letter (2 of the several cipher-bearing lines job 1 read for
+P25, for example) -- a genuine tool/OCR-layout mismatch, not fixed here (would need page-image
+transcription, out of this $2 disk-only brief). Every meaning still comes from the printed
+gloss (grade C where the DP alignment is unambiguous -- `single`/`single-segment`/`agrees` status
+-- grade M where it is not -- `conflict`/`doubtful`; `clear` tokens are the surrounding plain text,
+not cipher, and are not counted below). No cryptanalysis.
+
+| Row | cipher tokens aligned (of raw tokens, excl. clear) | C | M |
+|---|---|---|---|
+| P25 (Lockhart) | 26 of 38 | 22 | 4 |
+| P26 (Burton) | 14 of 16 | 10 | 4 |
+| P27 (Johnson, undated) | 123 of 134 | 79 | 44 |
+| P28 (Johnson, "From the Buss") | 77 of 83 | 66 | 11 |
+| **Total** | **240** | **177 (74%)** | **63 (26%)** |
+
+**Cross-key check (the brief's step-2 control).** Every one of the four new keys was diffed against
+all five existing pool keys in this folder (`key_blake_extended.tsv`, `key_montagu_extended.tsv`,
+`pool_1654/key_stamford.tsv`, `key_fauconberg.tsv`, `key_butler.tsv`): values overlap by chance
+(1-39 shared numeral values per pair, since values are just small integers reused across unrelated
+ciphers) but **meanings agree only 0-1 times per pair** -- essentially 0%, confirming section 22
+job 1's finding that these are a different correspondence with its own key, not a mechanical
+extension of any pool already tracked here. This is the expected result for four genuinely separate
+ciphers, not a disagreement-rate failure of the alignment (the brief's ">10% disagreement means the
+alignment is wrong" caution is written for extending an *existing* key onto new material of the
+*same* cipher, which this is not). The two "Zachary Johnson" letters (P27, P28) *do* share the same
+cover name and correspondent: their keys overlap at 15 values and agree at only 2/15 (13%),
+suggesting either the same informant using a partially different homophone set between the two
+letters, or two related but distinct sub-keys -- flagged, not resolved (would need a third Johnson
+letter or the page image to settle).
+
+**Grade counts (rule 4), all four letters together: C 177, M 63, H 0, S 0, I 0.** This is a
+contribution (key values read straight off Birch's own 1742 printed gloss), not a decipherment --
+no cryptanalysis, per rule 10 do not call any of this new, unpublished, unread, first, or never
+printed, and no N-class is assigned here (a verifier's job, per section 22's own convention for
+this folder). Search log: none additional this pass; section 22 job 1's log (Birch's own print,
+checked group-by-group by reading the OCR text) is what these four letters rest on, plus the
+existing-key diff above.
+
+**Files this pass:** `P25/ciphertext.txt`..`P28/ciphertext.txt`, `P25_pairs.tsv`..`P28_pairs.tsv`,
+`align_P25.tsv`..`align_P28.tsv`, `key_lockhart.tsv`, `key_burton.tsv`, `key_johnson1.tsv`,
+`key_johnson2.tsv`, `index.tsv` (4 new rows), this section. No edits to any existing P-row, key
+file, `AUDIT.md`, or the five existing pool keys (diffed, not modified). Requests: 0 (disk only,
+`gunzip -k -c` of the already-committed gzipped cache). No logins, no credentials, no subagents.
+
+**Suggestion, not done this pass:** the P27/P28 "Zachary Johnson" sub-key mismatch above; a page
+image fetch for all four letters would let `tools/iiif_lines.py`/a transcription pass replace the
+OCR-line-based `pairs` step and likely raise the 74% C rate, the same fix section 22 job 1 named for
+the Barriere-Conde cluster it left unglossed. Neither P26 nor P27's own printed page number was
+found in this OCR window (both note "not read"); a page-image check would also settle that.
+
 ### Verifier correction (TX-VERP10, 25 Sept 2026)
 
 Job 2's mechanical check reproduces exactly (`tx/decode_p10_line10.py --check` exits 0, same
