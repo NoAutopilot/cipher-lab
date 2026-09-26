@@ -2089,3 +2089,18 @@ pursuance of your Highness order, I have at..."). See AUDIT.md, "P10 L10 groups"
 2026): class N0, key source `published` (Powell 1937), not `ours`. `key_blake_extended.tsv` and
 `key_montagu_extended.tsv`'s lookups above remain a valid, reproducible mechanical exercise; they
 are just not what closes this gap for novelty purposes.
+
+## 24. Local runner L19 (ASKS row 30, Bodleian MS Rawl. A. 24), 26 Sept 2026
+
+LOCAL-QUEUE.tsv row L19 (ChatGPT, owner's machine) asked whether Bodleian MS Rawl. A. 24 (Thurloe vol. xxiv,
+Birch's citation for P4, "vol. xxiv p.73, 76") is imaged on Digital Bodleian, and if so what pp.73 and 76 show.
+
+**Verdict recorded** (per the landing brief, which supersedes the runner's own softer wording): not digitised
+per the catalogue record. Digital Bodleian returned "No items found" for "Rawl. A. 24", "MS. Rawl. A. 24" and
+"Rawlinson A 24" (the runner's own transcript flags this as possibly a search-side technical issue, not
+confirmed non-digitisation, but the Bodleian Archives and Manuscripts catalogue record is decisive either way).
+That record (marco.ox.ac.uk, ark:/29072/x08k71nh14zj, "Rawlinson Manuscripts") lists MSS. Rawl. A. 24/1-2 as
+"NOT AVAILABLE ONLINE". pp.73 and 76 were not inspected; whether Thurloe's office interlined or filed a
+decipherment beside the cipher on those leaves remains unknown. The reproduction request
+(outreach/bodleian-rawl-a24-p4.md) stays with the owner. Full runner transcript: PR 22 (closed without merge,
+`jstor-runs`/local-queue landing convention), commit history of LOCAL-QUEUE.tsv row L19.
