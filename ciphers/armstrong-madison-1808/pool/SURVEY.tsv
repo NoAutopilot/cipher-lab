@@ -1,0 +1,111 @@
+frame	class	date	note	signature_screen
+0013	clear_text	none legible	French prose, numbered enumeration paragraphs (diplomatic memo style)	
+0019	clear_text	Milan le 16 8bre 1807	French/English letter, John Armstrong signature visible, ordinary prose	
+0025	numeral_code	none legible	"dense numeral groups across top of page (""1354 970 187 108...240 361..."") followed by plain prose closing below - likely a cipher postscript/passage embedded in an otherwise plain letter"	one-line screen (12 groups, 622 550 1653 1105 587 541 899 972 1413 1116 1131 1481): THE=972_bourdeau.tsv coverage 7/12 (58%), digit-0/1 share 33%, digit-2/3/5/9 share 50%, top digit 1 -- looks like THE=972 office usage, NOT a pool candidate (this is very likely the already-known 15 Feb 1808 Armstrong-to-Madison letter, Founders 99-01-02-2703, seen here in manuscript for the first time this pass -- 'Paris 15 february 1808' heading legible at native res)
+0031	code_with_shorthand	none legible	full page(s) of dense numeral groups interspersed with distinct non-numeral pen strokes (arrow-like and hook/curl marks resembling shorthand symbols) on both leaves - strong match to the target's private numeral code	not screened -- this IS the target's own frame (part of the already-fetched 29-33 range, ARM-IMG/ARM-TR); not a new candidate
+0037	clear_text	Paris 29 Feby 1808 / Calais 27 February 1808	"ordinary prose letters, salutation ""Sir"", John Armstrong correspondence"	
+0043	clear_text	Paris 18 Feb 1808 / Paris 9 March 1808	ordinary French/English prose diplomatic letters, signed John Armstrong	
+0049	clear_text	none legible	Rapport a Sa Majeste l'Empereur - French prose report with numbered figures/sums, no cipher groups	
+0055	clear_text	Paris le 27 Decembre 1807 / Paris le 20 Mars 1808 / Paris le 23 Mars 1808	French prose letters, signed Champagny	
+0061	clear_text	Paris 10 Feb 1808	"English prose letter re: flag/neutral commerce, numbered legal articles (""Art 17 provides that..."")"	
+0067	clear_text	Paris 5 April 1808	English prose letter, ordinary paragraphs re: imperial decrees	
+0073	clear_text	Paris April 12 1808	English prose letter, signed John Armstrong, ordinary paragraphs	
+0079	other	none legible	printed French newspaper page (multi-column), torn/damaged edges, enclosure	
+0085	other	20 April 1808 (table dates column)	tabular list/schedule of American vessels captured, cargo, dates of capture - not prose, no cipher	
+0091	other	none legible	tabular list of vessels/names, dates of condemnation, sentences - table format, no cipher	
+0097	clear_text	Paris 10 of June 1808	English prose letter, signed John Armstrong, addressed to M. Champagny	
+0103	clear_text	none legible	French prose letter, signed Pierre de Cavallos, ordinary paragraphs	
+0109	clear_text	Paris 22 July 1808	English prose letter, signed John Armstrong, with postscript, ordinary paragraphs	
+0115	clear_text	Paris 7 August 1808	English prose letter, signed J Armstrong, ordinary paragraphs re: shipping	
+0121	clear_text	23 Augt 1808 (place heading illegible)	"ordinary prose letter, salutations ""Sir"", no numerals/cipher groups seen"	
+0127	clear_text	none legible (small heading illegible at this resolution)	ordinary prose letter, formal diplomatic report style, no cipher	
+0133	clear_text	"none legible (marginal note ""5 Mars"" too small to confirm)"	ordinary prose letter re Danish/Portuguese affairs, discursive paragraphs, no cipher	
+0139	clear_text	Paris, 14 8bre [October] 1808 (right page heading)	numbered dispatch-style letter with itemized points (1st, 2nd...), ordinary prose, no cipher	
+0145	clear_text	Bordeaux, October 28th 1808	ordinary prose letter re American/British vessels and papers, no cipher	
+0151	clear_text	"none legible (continuation page; body mentions historical ship-sale dates e.g. ""1783"")"	ordinary prose report on vessels/captures, dense cursive but plain alphabetic text, no cipher	
+0157	clear_text	"1793 (mentioned within text, re birth/naturalization of ""Jean Bakner"" at Kaiserslautern)"	French legal/biographical narrative document, ordinary prose, no numeral cipher	
+0163	other	none legible	certificate-style document with US eagle seal impression, dense cursive fill-in text (looks like a citizenship/seaman-protection certificate), not a letter, no cipher	
+0169	other	none legible	same certificate type, US eagle seal on right page, handwritten certificate text, no cipher	
+0175	other	none legible	same certificate type, US eagle seal, handwritten fill-in text, no cipher	
+0181	other	none legible	same certificate type, US eagle seal, handwritten fill-in text, no cipher	
+0187	other	none legible	same certificate type, US eagle seal, handwritten fill-in text, no cipher	
+0193	other	none legible	same certificate type continues, US eagle seal on right page, no cipher	
+0199	clear_text	"none legible (Italian legal declaration, ""Dato... Anno del Signore... Bassano del Lodo"")"	Italian-language declaration/deposition with an English/French translation on facing page, ordinary prose, no cipher	
+0205	clear_text	none legible (continuation of diplomatic report re Russia/France policy)	dense ordinary prose, discursive diplomatic analysis, no cipher	
+0211	clear_text	"none legible (continuation, ends ""...Secretary of State"")"	ordinary prose letter/report, no cipher	
+0217	clear_text	"Amsterdam, March [9?] 1808 (signed ""T. Adams"" style closing)"	ordinary prose letter, salutations and closing formula, no cipher	
+0223	clear_text	"Paris, 15 Mars 1809 (""No 6"" heading)"	ordinary French prose letter with numbered dispatch heading, no cipher	
+0229	clear_text	Paris february 20 1809	ordinary prose letter to Sec'y of State, signed John Armstrong, no cipher	
+0235	clear_text	Baltimore county ss, June 17 1803	notarized deposition/affidavit prose, no cipher	
+0241	clear_text	Paris 16 April 1809	diplomatic prose letter, ordinary handwriting	
+0247	clear_text	Paris 27 Avril 1809	French-language prose letter (Champagny), no cipher	
+0253	clear_text	Paris ce 7 Mai 1809	"ordinary French prose letter, salutation ""Sir/Monsieur"""	
+0259	clear_text	Paris 3 May 1809	prose letter re: French decrees, ordinary handwriting	
+0265	other	none legible	printed pamphlet pages (4)(5), French political tract on neutral trade, not a manuscript letter	
+0271	other	none legible	printed pamphlet pages (8)(9), continuation of same printed tract, footnote marker	
+0277	clear_text	5th of October 1801 (mentioned in text)	legal/consular deposition, multiple signatures, ordinary prose	
+0283	other	Nantes ... 1809 (partial) / printed Passe-Port dated 1809	right leaf is a printed Agence Commerciale passport form with seal; left leaf a short cover note, no cipher	
+0289	clear_text	Paris 8 June 1809	ordinary diplomatic prose, signed John Armstrong	
+0295	clear_text	Paris 30 juin 1809	ordinary prose letter, signed John Armstrong	
+0301	clear_text	none legible	continuing diplomatic prose correspondence, no date visible in crop	
+0307	other	none legible	tabular customs/duties schedule with itemized list and multiple signatures, not prose	
+0313	clear_text	none legible	diplomatic prose about Great Britain relations, ordinary handwriting	
+0319	clear_text	none legible	Q&A-style diplomatic dialogue prose, ordinary handwriting	
+0325	clear_text	none legible	"prose letter addressed to ""Monsieur C.D. Coxe Chargé d'Affaires"", left leaf blank"	
+0331	clear_text	none legible	very faint/underexposed handwritten prose, largely hard to read but clearly ordinary letter form, no cipher groups	
+0337	other	Bordeaux ... July 1809 (partial)	overlapping cover sheet plus letterhead document with Great Seal, prose visible where legible, no cipher	
+0343	clear_text	none legible	"prose letter ""Monsieur le Comte"", ordinary cursive, signed A. Poinsot"	
+0349	clear_text	none legible	"continuation letter, ""Consul des Etats Unis"", partial illegible date fragment lower left"	
+0355	other	none legible	blank/mostly blank page, faint offset smudges only	
+0361	clear_text	none legible	dense ordinary cursive prose letter, no shorthand/numeral marks seen	
+0367	clear_text	Paris 7 September 1809	"prose letter, salutation ""Sir"", signed John Armstrong, addressed to R. Smith Secretary of State"	
+0373	clear_text	Altenburg le 22 Aout 1809 / Altenburg le 20 Aout 1809	ordinary prose diplomatic correspondence, signed Champagny	
+0379	other	none legible	"printed pamphlet title page, ""MEMOIRE POUR Mr. D.B. WARDEN... GOELETTE LE JEFFERSON"""	
+0385	other	none legible	printed pamphlet body pages (pp.12, 43), legal memoir text	
+0391	other	none legible	printed pamphlet body pages (pp.24-25), legal memoir text	
+0397	other	none legible	"printed pamphlet pages (pp.30-31) ending ""CONCLUSION"""	
+0403	clear_text	none legible	ordinary prose letter, mentions Capt. Trippe, signed (Bowen?)	
+0409	clear_text	Altenburg 18 September 1809	prose diplomatic letter, John Armstrong, re ransom of ships/Duke of Saxony	
+0415	clear_text	none legible	dense ordinary cursive prose letter, signed Armstrong	
+0421	clear_text	"referenced ""30 Nov. 1809"""	prose letter marked (Private), diplomatic correspondence	
+0427	other	3 Mars 1809 / 13 Mars 1809	official passport/police certificate document with wax seals, not a letter	
+0433	other	18th October 1809 (dated in words)	"certificate/crew list (""Brigs Crew"" roster) signed John Armstrong"	
+0439	clear_text	Paris 18 Nov. 1809	prose letter re cotton trade	
+0445	clear_text	Paris 27 November 1809	prose letter, ordinary diplomatic correspondence	
+0451	clear_text	9 Decemr. 1809	ordinary prose paragraphs re East/West Indies, Emperor, King of Naples; no cipher	
+0457	clear_text	Paris 17 Decembre 1809	formal letter transmitting extract of Danish decree, signed Wm Armstrong to Hon R Smith	
+0463	clear_text	none legible	French prose page ending a document/treaty and list of signatures, signature illegible	
+0469	clear_text	none legible	"French prose letter ""Monsieur le General"" re American captures/embargo, ordinary paragraphs"	
+0475	clear_text	none legible	prose re military order, King of Naples, American vessels/cargoes seized	
+0481	clear_text	"none legible (text references ""1st of Decemr 1809"" re Berlin Decree)"	prose discussing Berlin Decree revocation, Duke of Cadore, blockade	
+0487	clear_text	none legible	"handwritten treaty-article text (""D."", commerce between the parties), ordinary prose/legal clauses"	
+0493	clear_text	none legible	continuation of prose with a list of signatures at end (names of gentlemen who signed), no cipher	
+0499	clear_text	none legible	prose re American commerce, growth/manufacture of the two countries, debate over duties	
+0505	other	"extracts dated ""Alexandria Jany 26 1810"" and ""Copenhagen 10th February 1810"""	tabular list of ship names, masters, home ports with dated letter extracts below; certificate/table format, not prose	
+0511	clear_text	Paris 15 feb 1810 (Duplicate)	letter to Mr Forbes re Convention of 1800/neutral rights, ordinary prose paragraphs	
+0517	clear_text	none legible	prose re neutral rights, orders in council, blockade of 1807	
+0523	clear_text	Paris 20 March 1810	ordinary prose letter, signed Alex Hammett(?)	
+0529	clear_text	Paris March 17 1810	prose re a prize-cause case (Warden/Goodwin), signed statements and depositions	
+0535	clear_text	Naples ce 9 Mars 1810	French prose letter, Ministre des affaires etrangeres to Consul, signed Le Marquis de Gallo	
+0541	clear_text	Paris du 23 Nov. 1809 (last digit uncertain)	"French prose letter ""Monsieur le General"" re gunboats/frigates and diplomatic protest"	
+0547	clear_text	none legible	prose letter signed Jno Armstrong to Hon Mr Smith, Washington, re Naples/Prussia/Denmark commerce, with P.S.	
+0553	clear_text	London April 6 1810 and Paris May 3 1810	two prose letters, signed William Pinkney, re orders in council/blockade correspondence	
+0559	clear_text	Cherbourg 25 March 1810	"ordinary prose, closing ""avec grand respect"" then new letter begins, no cipher"	
+0565	clear_text	none legible	prose continuation re American vessels/machinery, no date visible on page	
+0571	clear_text	Paris 3d May 1810	Duplicate letter, salutation Sir, ordinary prose paragraphs	
+0577	clear_text	none legible	prose continuation re seamen/vessels at Cherbourg/L'Orient, no date visible	
+0583	clear_text	"mentions ""5th Feby 1809"" in body text"	ordinary prose letter continuation, dates cited are in-text references not page header	
+0589	other	Décret du 18 Juillet 1810 (cited in text)	"handwritten copy of an imperial decree/law articles (Art.10, Art.11...), signed ""Napoleon""/Duc de Bassano, not an ordinary letter"	
+0595	clear_text	Paris 16 Août 1810	French letter, salutation Monsieur, ordinary prose	
+0601	clear_text	"Paris August 30 1810 (also ""P.S. 26 August 1810"")"	ordinary prose letter, no cipher	
+0607	clear_text	Paris 8 Septr 1808	English letter, salutation Sir, ordinary prose paragraphs	
+0613	other	none legible	page heavily foxed/mottled, text very faint, cannot confirm content clearly; treated as illegible/degraded page	
+0619	clear_text	"cites ""23 mars 1810"" in text"	French legal/diplomatic memo-style prose (no salutation), discusses decree questions, ordinary handwriting, no cipher	
+0625	clear_text	Gothenburg 24 May 1810	copy of a letter, salutation Sir, ordinary prose paragraphs	
+0631	clear_text	Paris May 1st 1808	"letter with docket/address leaf to ""General Armstrong, Minister Plenipotentiary...Paris"", ordinary prose on facing page"	
+0637	clear_text	none legible	French prose continuation, no header date visible on this page	
+0643	numeral_code	"none legible (only weekday ""Friday"" noted)"	"dense numeral cipher groups filling most of page, brief plain-text interjection ""Friday I sent yesterday..."", no shorthand/non-numeral marks seen; candidate sibling to the 20 Feb 1808 target code"	one-line screen (14 groups, 276 962 972 676 1354 395 1701 1248 1482 988 1092 1268 1090 1013): THE=972_bourdeau.tsv coverage 9/14 (64%), digit-0/1 share 14%, digit-2/3/5/9 share 43%, top digit 2 (972 itself, THE=972's own namesake value, appears in this line) -- looks like THE=972 office usage, NOT a pool candidate; date not legible on this or the neighbouring frames, letter's own header not located in the 0638-0648 range fetched
+0649	other	none legible	printed customs/manifest table (Marques, Caisses, Balles, Qualités, Poids, Noms columns), not a letter	
+0655	other	"partial ""27 August"" visible top right, otherwise none legible"	printed customs/manifest table, same format as 0649, handwritten quantities in columns	
+0661	other	none legible	"printed customs/manifest table, same format as 0649/0655, marginal notes ""Place d'Arcens No 7/No 9"""	
+frame	class	date	note	

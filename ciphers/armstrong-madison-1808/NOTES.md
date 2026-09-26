@@ -456,3 +456,63 @@ the spec's precondition, the NARA M34 roll 14 units-digit check against Bourdeau
 brief; ARM-TR (section above, merged in the same window) has since covered the first 332 groups with one confirmed
 units-digit disagreement and a matching digit shape, so the design premise stands with the last 37 groups unchecked. No network
 this job; no host requests.
+
+## ARM-POOL pass, 26 Sept 2026 (LANE ARM worker ARM-POOL) -- frame 0033 fetched; roll-14 survey finds no matching sibling
+
+**Frame 0033 fetched** at native resolution (3888x3264, `images/M34-014-0033.jpg`, `images/manifest.json` updated) via
+the same keyless NARA IIIF route ARM-IMG documented. This is the frame ARM-TR flagged as covering the target
+letter's last ~37 numeral groups (ciphertext.txt tokens 333-369); this job did not transcribe or diff it against
+ciphertext.txt (a successor job, per this brief's own scope).
+
+**Roll-14 survey (NAID 188671566, "Jan. 22, 1808-Sept. 14, 1810"), every 6th frame at 600px wide, 111 requests (frame
+0001 does not exist as an object -- info.json itself 404-shells; frames 0002-0664 confirmed real, 0665 is a small
+928x640 target/calibration card, not content).** Full table: `pool/SURVEY.tsv` (frame, class, date if legible, note,
+and a `signature_screen` column for the two numeral hits). Classified by 6 Sonnet subagents (2 concurrent, per the
+brief), each given <=19 low-res thumbnails, classification only (clear_text / numeral_code / code_with_shorthand /
+other), no transcription. Breakdown: 80 clear_text, 27 other (printed pamphlets, customs-manifest tables,
+citizenship/seaman-protection certificates, passports, one blank/foxed page), 2 numeral_code, 1 code_with_shorthand.
+
+**The one code_with_shorthand hit, frame 0031, is not a new find** -- it is one of the target's own already-fetched
+frames (the 29-33 range, ARM-IMG/ARM-TR), correctly re-flagged by the classifier since this survey did not exclude
+the target's own frames from the 6-frame stride.
+
+**Two numeral_code hits, both screened and both ruled out as office-code (THE=972) usage, not pool candidates:**
+- **Frame 0025** (continuing from frame 0024, which carries the legible header "Paris 15 february 1808" -- read
+  directly off the native-resolution image, not a low-res guess): a plain-English opening paragraph ("Sir, I have
+  thought the enclosed documents sufficiently important...") running into a dense numeral block, closing in plain
+  English ("With every sentiment of respect and consideration, Your most obedient and very humble Servant...") plus
+  a French P.S. This date and structure match Bourdeau's already-known 15 Feb 1808 Armstrong-to-Madison letter
+  (Founders 99-01-02-2703, NOTES.md's own "What the cipher is" section, Bourdeau's paired check reading it 72%
+  coherent in THE=972) -- this pass is most likely the first direct manuscript look at that letter in this
+  repository, not a new letter. One-line screen (12 groups from the first numeral line, `pool/signature_test.py`):
+  THE=972_bourdeau.tsv coverage 7/12 (58%), digit-0/1 share 33%, digit-2/3/5/9 share 50%, top digit 1 -- looks like
+  THE=972 usage (high coverage, not 0/1-skewed), consistent with the known identification. Not fetched to `pool/`
+  (not a candidate; native crops kept only in scratch, not committed).
+- **Frame 0643-0644** (near the end of the roll, between an unrelated "Dan Parker" letter at 0641 and a plain
+  Armstrong letter re Spain at 0644's second leaf; a nearby docket at 0645 lists several 1807-1808 dates for a
+  *different*, unidentified batch of "confidentially sent" Armstrong letters -- not confirmed to be this one):
+  28+ lines of dense numeral groups, no shorthand marks, breaking briefly into plain text ("Friday. I called
+  yesterday morning to talk upon what I could gather respecting our affairs...") before more numerals resume. Date
+  not legible on this or the neighbouring frames (0638-0648 fetched at 600px, none carry this letter's own header).
+  One-line screen (14 groups from the first numeral line): THE=972_bourdeau.tsv coverage 9/14 (64%), digit-0/1
+  share 14%, digit-2/3/5/9 share 43%, top digit 2 -- and the line's own second value, 972, is THE=972's own
+  namesake code (commonly "the"). Looks like THE=972 usage, not the target's signature (target: digit-0/1 share
+  ~43%, digit-2/3/5/9 share ~13%, top digit 0). Not fetched to `pool/` (not a candidate).
+
+**Verdict: this survey finds no sibling in the target's own private code on roll 14.** Both numeral hits found by
+a 1-in-6 frame sample screen as ordinary THE=972 office correspondence, the same code ARM-A2's direct-transfer
+sweep and ARM-C1's control already showed does not fit the target. This is a screen at N=12-14 groups per
+candidate, not a control-backed result (rule 3 -- a one-line sample is too small for a shuffle test to mean
+anything), and a 1-in-6 stride survey is not exhaustive: a short coded passage entirely between two sampled frames
+would be missed. The next step, if this lane pursues the sibling-pool route further, is either (a) a full (every
+frame) pass of roll 14 rather than a 1-in-6 stride, or (b) the same survey run over the *other* M34 rolls for
+Armstrong's Paris legation (this target's letter is filed on roll 14 only because it falls in that roll's date
+range; a private cipher used with a different, non-State-Department correspondent per Kreider's own suggestion
+(NOTES.md "What is still open", item 5) would not necessarily be filed anywhere near it) -- neither attempted here,
+per this job's scope.
+
+Requests this pass: catalog.archives.gov (NARA IIIF) -- 4 info.json probes (frame range boundaries) + 1 native
+frame-0033 fetch + 111 survey thumbnails (every 6th frame, 600px) + 21 neighbour-frame thumbnails (0020-0030,
+0638-0648, 600px, to find extent around the two numeral hits) + 4 native-resolution fetches (0024, 0643, 0644, plus
+one IIIF-region crop of 0643) = 141 total, all >=1.5s apart, descriptive User-Agent, no 429/403/challenge seen. No
+other hosts. No logins, no credentials touched.
