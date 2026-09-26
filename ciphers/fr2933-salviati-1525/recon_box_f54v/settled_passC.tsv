@@ -1,0 +1,69 @@
+line	pos	code	marks	source	reason
+1	16	U	H	BC	A=_ B=U C=U; C note: 
+1	28	U	H	BC	A=H B=U C=U; C note: 
+1	29	g	~	BC	A=bh B=g C=g; C note: 9-loop shape with curved wave-like stroke above, matches g+~ mark
+3	11	#	dot	split	A=_ B=# C=y; C note: hooked curling tail sign, double-bar cross mark above; could be e/psi, picked y for open (non-closed) curl
+5	16	S7	H	BC	A=_ B=S7 C=S7; C note: 
+5	18	w		split	A=_ B=w C=wd; C note: 
+6	27	+		split	A=_ B=+ C=tee; C note: 
+7	2	+	M	AC	A=+ B=_ C=+; C note: 
+8	3	_	L	BC	A=v B=_ C=_; C note: 
+8	6	S	H	AC	A=S B=_ C=S; C note: 
+8	7	_		split	A=lam B=_ C=m; C note: 
+8	15	_		split	A=# B=_ C=nt; C note: 
+8	19	_		split	A=tee B=_ C=ch; C note: 
+8	21	_		split	A=S B=_ C=v; C note: 
+8	22	_		split	A=tee B=_ C=f; C note: 
+8	24	a	H	AC	A=a B=_ C=a; C note: 
+8	27	L		split	A=lam B=L C=+; C note: 
+9	6	#	dot	split	A=+ B=# C=H; C note: 
+9	17	nt		split	A=_ B=nt C=tee; C note: vertical stroke with crossbar and wave mark above
+9	17.5	S7	M	BC	A=MISSING B=S7 C=S7; C note: 
+10	1	]		split	A=_ B=] C=[; C note: square box open-right; ring+cross marks stacked above; g-shape below is next-sign context
+10	7	eps	5	BC	A=_ B=eps C=eps; C note: clean two-bowl epsilon shape, open right
+10	9	eps		split	A=_ B=eps C=tee; C note: vertical stroke with rightward bar; eps to left is prior-position context
+10	22	tee	1	BC	A=_ B=tee C=tee; C note: ⊢ shape with short '1' stroke mark upper right; c-curve at left is prior context
+10	25	S7	5	split	A=_ B=S7 C=rz; C note: faint hook-then-wave low on line, poor contrast
+11	8	S		split	A=S7 B=S C=_; C note: plain cursive, bold double-loop (figure-8-like) shape, word fragment
+11	10	_		BC	A=f B=_ C=_; C note: plain cursive script, reads approx 'aggu'
+11	11	_		BC	A=w B=_ C=_; C note: plain cursive script, reads approx 'quung'
+11	13	eps		AC	A=eps B=_ C=eps; C note: clean epsilon shape; cross-sign at right is next-position context
+11	14	_		split	A=+ B=_ C=tee; C note: ⊢ shape; eps at left is prior-position context
+11	17	_		split	A=S7 B=_ C=v; C note: two v-like hooked strokes close together, ambiguous double form
+11	25	S		split	A=_ B=S C=S7; C note: 7-shaped sign at left of crowded crop shared with pos25.5
+11	25.5	lam		BC	A=MISSING B=lam C=lam; C note: Λ two-stroke shape lower-center, crop shared with pos25
+12	2	g		BC	A=_ B=g C=g; C note: vertical stroke ending in a dark closed loop at bottom, bracket at right is context
+12	9	+		BC	A=# B=+ C=+; C note: clean large symmetric cross standing on the line
+12	13.5	g		BC	A=MISSING B=g C=g; C note: cursive g/9 loop at center of crowded crop; numerals 6/3 and bracket are neighbor context
+13	6	_		BC	A=Lx B=_ C=_; C note: plain cursive script, reads approx 'ragu'
+13	19	eps	7	BC	A=_ B=eps C=eps; C note: clean epsilon shape
+13	27	w		BC	A=_ B=w C=w; C note: cursive w with lead-in stroke and wavy top, upper item of a crop shared with pos27.5
+13	27.5	m		BC	A=MISSING B=m C=m; C note: cursive m/n with loop tail, lower item of a crop shared with pos27
+14	2	_		BC	A=N B=_ C=_; C note: plain cursive script, reads approx 'ra'
+14	4	_		BC	A=a B=_ C=_; C note: plain cursive script, reads approx 'al'
+14	8	_		BC	A=y B=_ C=_; C note: plain cursive script, reads approx 'uog' with a flourish/paraph loop below
+14	16.5	g		BC	A=MISSING B=g C=g; C note: cursive g shape at center of crowded cluster with numerals 5/3/6 and a double-stroke mark nearby
+15	12	_		BC	A=f B=_ C=_; C note: plain cursive script, reads approx 'tra'
+15	20	_		BC	A=w B=_ C=_; C note: plain cursive script, reads approx 'rany'
+15	23	_		BC	A=p B=_ C=_; C note: plain cursive, reads like 'Po...' start of word; close to 'p' cipher-sign shape but no clear crossed stem seen
+16	1	_		split	A=lam B=_ C=S; C note: clear S/ʃ shape, lead-in squiggle at left is context
+16	2	_		split	A=g B=_ C=S; C note: middle of three S-shaped signs in a row
+16	3	S		AC	A=S B=_ C=S; C note: middle of three S-shaped signs; third one has a crossing tail (context)
+16	5	_		split	A=S7 B=_ C=v; C note: curved hook shape between two other strokes, v-like
+16	7	_		split	A=Lx B=_ C=ch; C note: c + tall looped h, clear crossbar/cross mark above matching 'che' atlas shape
+16	8	_		BC	A=psi B=_ C=_; C note: plain cursive script, capital G, reads approx 'Gra...'
+16	10	_		BC	A=lam B=_ C=_; C note: faint single diagonal stroke, insufficient detail
+16	17	_		BC	A=N B=_ C=_; C note: plain cursive script, reads approx 'ra'/'rn'
+16	22	_		BC	A=psi B=_ C=_; C note: plain cursive script, reads 'uog' with paraph flourish below
+17	1	_		BC	A=m B=_ C=_; C note: plain cursive script, reads approx 'mu'
+17	7	ch	+	AC	A=ch B=_ C=ch; C note: c + tall looped h with crossbar above, clean match to atlas
+17	8	_		BC	A=e B=_ C=_; C note: plain cursive script, reads approx 'que'
+17	12	_		BC	A=p B=_ C=_; C note: plain cursive, reads like 'Pa...' start of word; close to 'p' cipher-sign shape but no clear crossed stem
+17	15	eps		AC	A=eps B=_ C=eps; C note: clean epsilon shape; cross sign at right is next-position context
+17	16	_		split	A=+ B=_ C=tee; C note: ⊢ shape; eps at left is prior-position context
+18	10	w	1	split	A=tee B=w C=+; C note: clean cross shape, partial circle at right is next-position context
+18	11	o.		BC	A=_ B=o. C=o.; C note: ring with dot inside (⊙), tail at right is context
+18	13	#		BC	A=Z B=# C=#; C note: double-barred cross standing on the line, upper item of crop shared with pos13.5; dot at right is neighbor context
+18	13.5	S7		BC	A=MISSING B=S7 C=S7; C note: 7-shaped sign below the double-cross, lower item of crop shared with pos13
+18	25	w		BC	A=_ B=w C=w; C note: cursive w with lead-in stroke, tail to right is context
+19	20	S7		AC	A=S7 B=e C=S7; C note: clear 7-shaped sign, hook/bracket to left is context

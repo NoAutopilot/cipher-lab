@@ -1,0 +1,49 @@
+line	pos	code	marks	conf	note
+10	1	[	o|+	M	square box open-right; ring+cross marks stacked above; g-shape below is next-sign context
+10	7	eps		H	clean two-bowl epsilon shape, open right
+10	9	tee		M	vertical stroke with rightward bar; eps to left is prior-position context
+10	22	tee	1	M	⊢ shape with short '1' stroke mark upper right; c-curve at left is prior context
+10	25	rz		L	faint hook-then-wave low on line, poor contrast
+11	8	_		M	plain cursive, bold double-loop (figure-8-like) shape, word fragment
+11	10	_		H	plain cursive script, reads approx 'aggu'
+11	11	_		H	plain cursive script, reads approx 'quung'
+11	13	eps		H	clean epsilon shape; cross-sign at right is next-position context
+11	14	tee		M	⊢ shape; eps at left is prior-position context
+11	17	v		M	two v-like hooked strokes close together, ambiguous double form
+11	25	S7		L	7-shaped sign at left of crowded crop shared with pos25.5
+11	25.5	lam		L	Λ two-stroke shape lower-center, crop shared with pos25
+12	2	g		L	vertical stroke ending in a dark closed loop at bottom, bracket at right is context
+12	9	+		H	clean large symmetric cross standing on the line
+12	13.5	g		M	cursive g/9 loop at center of crowded crop; numerals 6/3 and bracket are neighbor context
+13	6	_		H	plain cursive script, reads approx 'ragu'
+13	19	eps		H	clean epsilon shape
+13	27	w		M	cursive w with lead-in stroke and wavy top, upper item of a crop shared with pos27.5
+13	27.5	m		M	cursive m/n with loop tail, lower item of a crop shared with pos27
+14	2	_		H	plain cursive script, reads approx 'ra'
+14	4	_		H	plain cursive script, reads approx 'al'
+14	8	_		M	plain cursive script, reads approx 'uog' with a flourish/paraph loop below
+14	16.5	g		L	cursive g shape at center of crowded cluster with numerals 5/3/6 and a double-stroke mark nearby
+15	12	_		H	plain cursive script, reads approx 'tra'
+15	20	_		H	plain cursive script, reads approx 'rany'
+15	23	_		M	plain cursive, reads like 'Po...' start of word; close to 'p' cipher-sign shape but no clear crossed stem seen
+16	1	S		H	clear S/ʃ shape, lead-in squiggle at left is context
+16	2	S		H	middle of three S-shaped signs in a row
+16	3	S		H	middle of three S-shaped signs; third one has a crossing tail (context)
+16	5	v		M	curved hook shape between two other strokes, v-like
+16	7	ch	+	H	c + tall looped h, clear crossbar/cross mark above matching 'che' atlas shape
+16	8	_		H	plain cursive script, capital G, reads approx 'Gra...'
+16	10	_		L	faint single diagonal stroke, insufficient detail
+16	17	_		M	plain cursive script, reads approx 'ra'/'rn'
+16	22	_		M	plain cursive script, reads 'uog' with paraph flourish below
+17	1	_		H	plain cursive script, reads approx 'mu'
+17	7	ch	+	H	c + tall looped h with crossbar above, clean match to atlas
+17	8	_		H	plain cursive script, reads approx 'que'
+17	12	_		M	plain cursive, reads like 'Pa...' start of word; close to 'p' cipher-sign shape but no clear crossed stem
+17	15	eps		H	clean epsilon shape; cross sign at right is next-position context
+17	16	tee		M	⊢ shape; eps at left is prior-position context
+18	10	+		H	clean cross shape, partial circle at right is next-position context
+18	11	o.		H	ring with dot inside (⊙), tail at right is context
+18	13	#		M	double-barred cross standing on the line, upper item of crop shared with pos13.5; dot at right is neighbor context
+18	13.5	S7		M	7-shaped sign below the double-cross, lower item of crop shared with pos13
+18	25	w		H	cursive w with lead-in stroke, tail to right is context
+19	20	S7		H	clear 7-shaped sign, hook/bracket to left is context
