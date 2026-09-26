@@ -767,3 +767,32 @@ new pre-registered gate. Failing that, a period key for this Matignon/Mayenne 15
 letters in fr.15571 or the Matignon papers) would give H meanings for the 17 U signs directly. Status stays `partial`.
 
 SO lead prompt, 26 Sept 2026, QUEUE-FILL.
+
+## Second-opinion leads (SO-MATIGNON-LEADS, 26 Sept 2026)
+
+ChatGPT (GPT-6) second-opinion runner's answer to `second-opinions/PROMPT-chatgpt-leads.md`, landed verbatim at
+`second-opinions/chatgpt-leads-2026-09-26.md` (PR 29). Every citation below is the runner's claim, unchecked by
+this repository -- a lead to verify, never a fact:
+
+- Key family: BnF français 3974, f. 24 -- catalogued "chiffrement et déchiffrement", a 29 Sept 1581 Villeroy-to-
+  Nevers letter; the runner's own best concrete comparator for key-compatibility testing. Unchecked.
+- Sibling with decipherment: the same français 3974, f. 24 (and, as a poor-fit contrast, f. 83, Volta-to-Nevers
+  in Italian, 8 Oct 1585). Unchecked.
+- Edition: Jérémie Ferrer-Bartomeu's *"Allusions, silences et ellipses"* (in *Arcana Imperii*, 2019, pp. 67-85,
+  p. 72 n.13) cites a 21 Aug 1586 Villeroy-to-Matignon letter at p. 222 of the 1749 *Lettres de Nicolas de
+  Neufville ... écrites à Jacques de Matignon*. Unchecked -- the runner did not inspect the 1749 edition itself.
+- Scholar: Jérémie Ferrer-Bartomeu, as above, a concrete person to ask about the 1749 edition's manuscript basis
+  and any cipher tables. Unchecked.
+- Weaker key leads: BnF français 3354 f. 91 (ciphered Henri III-to-Matignon letter, 3 Aug 1582, no decipherment
+  reported) and français 16092 f. 5 (a cipher table among 1582-85 royal papers). Unchecked.
+- Follow-on volume: BnF français 15573 (Aug-Dec 1586) lists further Forget/Mayenne/Matignon folios (ff. 7, 20,
+  31, 62, 131, 299) as a defined next volume to inspect; the catalogue does not itself assert a cipher there.
+  Unchecked.
+- Correction noted by the runner: Henry & Loriquet's *Correspondance du duc de Mayenne* is a real Mayenne
+  edition but covers 1590-91, outside this target's 1585-86 range -- not a check-solved lead, logged for the
+  record. Unchecked.
+
+Two most concrete: (1) français 3974 f. 24's catalogued cipher+decipherment pair as a key-compatibility control;
+(2) Ferrer-Bartomeu's p. 222 citation in the 1749 Villeroy-Matignon *Lettres*, naming a scholar to ask.
+No lead here is a printed decipherment of *this* target's own leaves; the runner found none. Not a check-solved
+candidate on its own -- the 1749 edition citation is a secondary reference, not a claim the runner read it.
