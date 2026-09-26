@@ -630,8 +630,8 @@ key_full revision of 4610/4611/4616 (revision log above).
 
 ### V8.2 Grade check (rule 4): 153 and 161
 
-I read the 5550 gloss myself: AX-REDERIV's two crops (`images_wv2/crops_rederiv/05550_p2_153-161_gloss.png`,
-`05550_p2_153-130-run_gloss.png`) and a fresh 500 dpi render of 05550.pdf p.2 (one fetch, scratchpad only, not committed).
+I read the 5550 gloss myself: AX-REDERIV's two crops (`images_wv2/crops_rederiv/05550_p2_153-161_gloss.jpg`,
+`05550_p2_153-130-run_gloss.jpg`) and a fresh 500 dpi render of 05550.pdf p.2 (one fetch, scratchpad only, not committed).
 
 - **Run p2-11, "153.161. und andere so bu[ndnus]"**: the gloss is two words, one over each code, and reads
   **"Palsgraue Lantgraue"** (the key_full note's 'Palsgrave'/'Lantgrave' is right; AX-REDERIV's NOTES transcribe it

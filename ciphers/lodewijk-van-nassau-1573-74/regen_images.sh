@@ -16,6 +16,15 @@
 # 300dpi (zoom 300/72), PNG, 2481x3508 -- double the linear resolution of images/04612_p*.png, used for
 # settling ambiguous numerals by eye. Its PDF url comes from images/manifest.json's briefnr=4612 entry
 # (fetch_pdf already resolves it); only the render step differs (page300/render_pymupdf300 below).
+# images_wv2/crops_comp/{04614,07205,05801}_* and ax2_5801/crops/* (AX-COMP lineage, 26 Sept 2026) are a
+# FOURTH convention that AX2-SHRINK3 could not reconstruct: source page widths recorded in
+# images_wv2/crops_comp/manifest.json (2153-2529px) match neither render_pdftoppm (1241px) nor
+# render_pymupdf300 (2481px, confirmed against a fresh 04614.pdf re-render, all 3 pages) nor a
+# whitespace-trim of the 300dpi render (2431/2380/2408px) -- likely a manual per-page crop region whose
+# exact box was never logged. These crops were downscaled in place (<=1600px wide, JPEG q80) without a
+# working regen recipe; do not add a `page_comp`/`crop` case for them without first re-deriving the
+# render step (e.g. by asking whoever ran AX-COMP, or bisecting DPI/trim parameters against the
+# recorded box widths) and checking a sha1 match the way page/page300 do above.
 # Good-citizen rule: one resources.huygens.knaw.nl request at a time, >=2s apart.
 set -euo pipefail
 cd "$(dirname "$0")"

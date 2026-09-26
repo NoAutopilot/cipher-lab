@@ -1283,7 +1283,7 @@ confidence, clean alignment) and the gloss ending "-gne" (consistent with (le Ro
 C-grade in names.tsv). Neither pass could confidently read or place the "kein"-like gloss near 133/107 -- pass A
 called the word illegible, pass B placed its position over 107, not 133 -- so that finding is withdrawn (see
 above), which is exactly the kind of miscall two blind passes are supposed to catch before it reaches names.tsv.
-Pass B additionally read a second, previously-unnoticed gloss in the 05557_p2_jar_94.png crop ("beritten"(?), i.e.
+Pass B additionally read a second, previously-unnoticed gloss in the 05557_p2_jar_94.jpg crop ("beritten"(?), i.e.
 "mounted"/"on horseback", over the second occurrence of 82) and refined "Graf von Holl[andt]" as one phrase
 spanning several numbers rather than a single word over 93 -- both <=120, out of this brief's >120 scope, noted
 for whoever next looks at 5557's low-code annotations (see the flag above).
@@ -1295,8 +1295,8 @@ cryptanalytic.
 Hosts: `resources.huygens.knaw.nl` 9 requests (04496, 04614, 07205, 07206, 07208, 05801, 11250, 05552, 05557
 PDFs), >=2s apart, descriptive UA, all HTTP 200. No other hosts.
 
-Files: `axgloss/gloss_attest.tsv`, `images_wv2/crops_gloss/{04496_p4_hollande_zeelande.png,
-04496_p4_respagne_192.png,05557_p3_grafvonholland_93.png,05557_p2_jar_94.png,05557_p2_kein_133_vorrad.png}`.
+Files: `axgloss/gloss_attest.tsv`, `images_wv2/crops_gloss/{04496_p4_hollande_zeelande.jpg,
+04496_p4_respagne_192.png,05557_p3_grafvonholland_93.jpg,05557_p2_jar_94.jpg,05557_p2_kein_133_vorrad.jpg}`.
 Not touched: names.tsv, key.tsv, key_full.tsv (AX-NAMES2's, per the brief).
 
 ## AX-MERGE: key_full v2 (26 Sept 2026, LANE AX)
@@ -1448,7 +1448,7 @@ starting "68.36.9.76.3.37.26.135"). The interlinear gloss directly above this ru
 number: **over 153, "Pfaltzgraue"; over 161, "Lanttgraue"** -- a clean, unambiguous one-gloss-word-per-code
 correspondence. This independently confirms key_full's H-graded values (153=pfaltzgraf/Palsgrave, i.e. Count
 Palatine; 161=landgraf/Landgrave) for this occurrence. Crop:
-`images_wv2/crops_rederiv/05550_p2_153-161_gloss.png`.
+`images_wv2/crops_rederiv/05550_p2_153-161_gloss.jpg`.
 
 Code 153 occurs a second time on the same leaf, in the run "153.130.90.1.79.173" (same page, a few lines above
 the first). key_full's note describes this as the second of "x2" occurrences reading "Palsgrave". **My own
@@ -1458,7 +1458,7 @@ reading of this second occurrence does not confirm that**: the interlinear gloss
 hertzoge") sitting above 153 itself. "Erzherzog" (Archduke) and "Pfalzgraf" (Count Palatine/Palsgrave) are
 different noble titles in contemporary German usage; I could not reconcile the two readings by eye and am not
 attempting to (out of this brief's scope, and not mine to resolve). Crop:
-`images_wv2/crops_rederiv/05550_p2_153-130-run_gloss.png` (context crop, full run + gloss).
+`images_wv2/crops_rederiv/05550_p2_153-130-run_gloss.jpg` (context crop, full run + gloss).
 **Flag for the orchestrator/AX-GLOSS lane**: key_full's source note "(x2, runs p2-5, p2-11)" for code 153
 overstates what I independently read -- only one of the two cited occurrences (run p2-11, "153.161") shows an
 unambiguous per-code "Palsgrave" gloss; the other (run p2-5, "153.130.90.1.79.173") shows a different, multi-
@@ -1474,7 +1474,7 @@ in the note is not fully borne out and the row is not as doubly-attested as its 
 **"Hollando"**; directly above **192** sits the gloss **"[Le] R. d'Espagne"** ("[the] King of Spain") -- both
 clean, isolated, one-code correspondences, read before opening AX-GLOSS's own transcription. This independently
 confirms key_full's H-graded values (221=hollande, 192=roidespagne). Crops:
-`images_wv2/crops_rederiv/04496_p4_221_hollando_gloss.png`, `images_wv2/crops_rederiv/04496_p4_192_espagne_gloss.png`.
+`images_wv2/crops_rederiv/04496_p4_221_hollando_gloss.jpg`, `images_wv2/crops_rederiv/04496_p4_192_espagne_gloss.png`.
 
 **(4) AUDIT.md and SECOND-OPINIONS-QUEUE.tsv.** Per the brief, appended an append-only "Revision log" section to
 AUDIT.md (counts and the 23 individually-listed word/name changes from `revisions_for_audit.tsv`, the 153 gloss
@@ -1484,8 +1484,8 @@ sentence to `SECOND-OPINIONS-QUEUE.tsv` row SO-LODEWIJK-1573-74's last column.
 Hosts: `resources.huygens.knaw.nl` 2 requests (05550.pdf, 04496.pdf), >=2s apart, descriptive UA, both HTTP 200
 (reachability checked with a HEAD-style status probe first on each). No other hosts. No subagents.
 
-Files: this section; `images_wv2/crops_rederiv/{05550_p2_153-161_gloss.png,05550_p2_153-130-run_gloss.png,
-04496_p4_221_hollando_gloss.png,04496_p4_192_espagne_gloss.png}`; `AUDIT.md` (append only); `SECOND-OPINIONS-QUEUE.tsv`
+Files: this section; `images_wv2/crops_rederiv/{05550_p2_153-161_gloss.jpg,05550_p2_153-130-run_gloss.jpg,
+04496_p4_221_hollando_gloss.jpg,04496_p4_192_espagne_gloss.png}`; `AUDIT.md` (append only); `SECOND-OPINIONS-QUEUE.tsv`
 (one cell). Novelty not classified (rule 10); no N-class changed (out of scope, per the brief).
 
 ## AX-4612TR: 4612 re-transcribed, in progress -- stopped at the wall-clock box (26 Sept 2026, LANE AX)
@@ -2086,6 +2086,70 @@ as out-of-bounds by either pass's brief, so untouched by both. Excluding those t
 Files: `ciphers/lodewijk-van-nassau-1573-74/{images_manifest_full.tsv,regen_images.sh,images_wv2/crops_4612/**,
 NOTES.md}` (this paragraph). Hosts: resources.huygens.knaw.nl, 1 request (04612.pdf; both the render test and
 the crop test read from that one fetch).
+
+**Third pass (26 Sept 2026, AX2-SHRINK3, LANE AX2), `images_wv2/crops_comp/{04614,07205,05801}_*`,
+`ax2_5801/crops/*`, `images_wv2/crops_gloss/*`, `images_wv2/crops_rederiv/*`.** AX2-5801ADJ reported before this
+pass started, so `05801_*` and `ax2_5801/crops/*` (created since AX2-SHRINK2, 8 files) are both free.
+
+Before: folder total 49152 KB (48.0 MB).
+
+**What moved.** All 136 line crops under `images_wv2/crops_comp/{04614,07205,05801}_*` (already >1600 px wide,
+2153-2480 px, none previously in `images_manifest_full.tsv`) and all 8 under `ax2_5801/crops/*` were downscaled
+in place to <=1600 px wide, JPEG q80 (LANCZOS): 20345068 -> 9887175 bytes (about 51%). None were removed --
+per AX2-SHRINK2's own precedent (crops_4612's 130 line crops, none individually cited by filename, kept
+because they are the transcription evidence itself, not an intermediate render), individual line crops are
+downscaled, never `git rm`'d; only bulk intermediate full-page renders are removable when uncited, and no such
+full-page renders were ever committed for this set (only the cut crops exist on disk).
+`images_wv2/crops_gloss/*` and `images_wv2/crops_rederiv/*` (named out-of-bounds by neither prior pass, left
+untouched since pass 1: "not currently regenerable... not required by this pass's brief") were brought to the
+same convention: 7 PNGs over 1600 px on their long side were converted to JPEG q80 (PNG resize alone made
+several of them *larger* -- `05550_p2_153-130-run_gloss.png` 117027 -> 292913 bytes at PNG, because LANCZOS
+resampling of a near-flat-colour manuscript-photo PNG adds many new colours that defeat PNG's palette-style
+compression; reverted, redone as JPEG) and renamed `.png` -> `.jpg`, with citations updated in NOTES.md/AUDIT.md
+(`04496_p4_hollande_zeelande`, `05557_p2_jar_94`, `05557_p2_kein_133_vorrad`, `05557_p3_grafvonholland_93`,
+`04496_p4_221_hollando_gloss`, `05550_p2_153-130-run_gloss`, `05550_p2_153-161_gloss`); the 2 files already JPEG
+(`04614_decipherment_p5_L06_zoom.jpg`, `04614_decipherment_p5_full.jpg`) were resized in place, same filename.
+2 of the 11 (`04496_p4_respagne_192.png`, `04496_p4_192_espagne_gloss.png`) were already <=1600 px and left
+untouched. The 9 touched files: 2514459 -> 900981 bytes (the 2 untouched files' 500924 bytes unchanged).
+
+**Regen test -- negative, logged rather than silently skipped (rule 3).** 1 request to
+resources.huygens.knaw.nl (`04614.pdf`, fetched to check whether `images_wv2/crops_comp/*`'s source pages are
+byte-reproducible the way `images/` and `images_wv2/crops_4612/` are). They are not, and the reason rules out
+the two established conventions rather than just failing to match them: `images_wv2/crops_comp/manifest.json`
+records source-page widths of 2278/2317/2329 px for 04614's three pages, but `04614.pdf`'s three pages all have
+the *identical* PDF media box (595.28 x 841.89 pt, confirmed with pymupdf) -- so a whole-page render at any
+single fixed DPI must give the same pixel width for all three pages, and it does: 1241 px at 150dpi
+(`render_pdftoppm`/`render_pymupdf`, the `images/`/`images_wv2/` convention) and 2481 px at 300dpi
+(`render_pymupdf300`, the `crops_4612` convention), neither matching any of the three recorded widths, and a
+whitespace-bounding-box trim of the 300dpi render (PIL, threshold 10) gives 2431/2380/2408 px -- closer in
+magnitude but still not matching, and still non-constant only because the trim depends on ink extent, not
+because the source pages differ in size. AX-COMP's exact per-page render/crop recipe (most likely a
+hand-drawn `--region` per page, `tools/iiif_lines.py --image` support) was never logged in NOTES.md or
+committed as a script, and this pass did not spend further budget bisecting DPI/trim parameters to find it.
+Flagged in `regen_images.sh`'s header and in every new `images_manifest_full.tsv` row for this set: not
+currently regenerable, same status crops_gloss/crops_rederiv already carried after pass 1 -- a future worker
+who needs a byte-identical source page for one of these three letters starts from this paragraph, not from
+scratch.
+
+**Inventory.** 155 new/updated rows in `images_manifest_full.tsv` (136 `crops_comp`, 8 `ax2_5801/crops`, 11
+`crops_gloss`/`crops_rederiv`, 7 of the 11 under new `.jpg` filenames); `cited_by` computed by a fixed-string
+grep of the whole folder's `.md`/`.tsv`/`.json`/`.py`/`.txt` files against each crop's basename (picks up the
+5 individually-named crops -- `04614_p1_L02.jpg`, `04614_p3_L01.jpg`, `07205_p1_L08.jpg`, `07205_p4_L04.jpg`,
+`05801_p1_L09.jpg` -- plus every crops_gloss/crops_rederiv file, all of which are cited by exact filename).
+
+After: folder total 38044 KB (37.2 MB) -- down from 49152 KB but **still over the 30 MB rule** by about 7.2 MB.
+The remaining weight is `images/` (8.6 MB) and `images_wv2`'s own root-level full-page JPEGs (about 7.1 MB, 27
+pages): both were already brought to convention by AX2-SHRINK's first pass (<=1600 px -- in fact 1241 px --
+JPEG q80) and are cited as visual-evidence samples or full pages NOTES.md names directly, so this pass's method
+(downscale if >1600 px wide) has no further lever on them; shrinking further would mean either re-opening pass
+1's "keep one uncited sample page per letter" judgement call (`04611_p1.jpg`, `04612_p1.jpg`, `04616_p1.jpg`,
+none individually cited) or accepting the folder above 30 MB with this paragraph as the reason. Left for the
+lane orchestrator rather than decided unilaterally here, since removing a kept sample page is a step back from
+"image over transcription" (rule 2), not a hygiene action.
+
+Files: `ciphers/lodewijk-van-nassau-1573-74/{images_manifest_full.tsv,regen_images.sh,images_wv2/crops_comp/**,
+images_wv2/crops_gloss/**,images_wv2/crops_rederiv/**,ax2_5801/crops/**,NOTES.md,AUDIT.md}` (citation renames
+only in AUDIT.md). Hosts: resources.huygens.knaw.nl, 1 request (04614.pdf, regen test only).
 
 ## AX2-4612: 4612 v3, key_full decode and key-seeded anneal (26 Sept 2026, LANE AX2)
 
