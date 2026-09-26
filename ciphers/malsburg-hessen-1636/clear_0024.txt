@@ -1,0 +1,29 @@
+clear_0024.txt -- record 505, leaf f.24 (hstam_4_h_1411_0024.jpg), clear-text lines L33 onward of the
+tools/iiif_lines.py auto-detection (crops/0024/, 45 lines total; L01-L32 are the cipher block continuing
+f.23's, see NOTES.md "Record 505 f.24 (bMAL24)"). One pass, read directly from crops/0024/*.jpg by this
+job's worker (not blind, not reconciled, not graded H/M per token) -- flagged LOW CONFIDENCE throughout,
+same convention as clear_0023.txt: this is dense 17th-century German chancery cursive (Kurrentschrift) at
+the limit of what a non-specialist single pass can read reliably. Provided as crib context only (rule 2,
+image over transcription). [?] marks a word or short span the worker could not read with any confidence;
+words given without [?] are still an ordinary reading of a hard hand, not a settled transcription. Do not
+cite this file as an H-grade or C-grade reading.
+
+L33: Bleibt im [übrigen?] [versichert?], das [Kriegsvolck?] [im widerstand?] zu [nöthigen?] wehr[e].
+L34: als ihm der Feind das Sold[at]en Zufall[s] vollzieh[ung] gefolgen, geschlagen, und 6. [Standarten?] bekommen[.]
+L35: haben sollen, wann [ihm?/es?] also, so könnte man zu ihnen, wenn er auch nichts anders zu Verrichtigen weiß, mit
+L36: einem Regiment zu [Fuß/Pferd?] führen, das ihr Chur[fürst?] sich also nähern zu, so [will?] auch [des Landes?]
+L37: als ob an ein[em?] Ort die Kayserischen [posten?] gefaßt haben, geliebt[en?] haben, [Brief?/Friß?] fließ[end?] ...
+L38: der Lieutenant und Cornet des Graf[en Bassompierre?] gefangen genommen, das Kobl[enz?/enz?] betreffend[?],
+L39: das Jean de Wert mit seinen Völckern über den Rhein gangen, und sich ins Land des [Longres?] logiret
+L40: [seiht?/setzt?] des Gallas[schen] Volck wieder auf die Mosell und in die [Stad?] geleg[e]t worden, s[ein?]
+L41: [E.Gn.] fromm ich [insonderheit?] gnädigst und bitte die [Bewahrung] und mich zu dero befehlerlichs gnaden befehlen. Datum
+    Wesel, den 7/17. Februarij Anno 1637.
+    [paraph mark]
+
+L42: P.[S.] Es: gesinde ist ganz abgenützt[e],
+L43: laufen einmal wegen[?] um die Kleidung
+L44: vnnöth[ig] keinß Zeug ab[?], erwarte ge-
+L45: nedigen Befehlig wird ihm mit sein Verhalten [?]. -- rechts: Unterzeichnet gehorsamst / Diener
+
+(below L45, not auto-detected as its own line by iiif_lines.py, bottom-right of the leaf, per the full-page
+debug overlay): signature "Otto Vander Mal[s]ß[burg], Bürger" [?] -- not separately cropped by this job.
