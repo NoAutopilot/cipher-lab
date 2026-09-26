@@ -796,3 +796,82 @@ Two most concrete: (1) français 3974 f. 24's catalogued cipher+decipherment pai
 (2) Ferrer-Bartomeu's p. 222 citation in the 1749 Villeroy-Matignon *Lettres*, naming a scholar to ask.
 No lead here is a printed decipherment of *this* target's own leaves; the runner found none. Not a check-solved
 candidate on its own -- the 1749 edition citation is a secondary reference, not a claim the runner read it.
+
+## MAT-3974 (26 Sept 2026)
+
+Job: `.claude/briefs/runs/2026-09-26-parent-ytbiz-mat-3974.md`, testing SO-MATIGNON-LEADS lead (1): BnF français
+3974 f. 24, catalogued "Lettre avec chiffrement et déchiffrement" of Nicolas de Neufville (Villeroy) to the duc
+de Nevers, "De Fontainebleau, le XXIXe jour de septembre 1581" -- a known-answer cipher+decipherment pair from
+the same royal secretariat, five years earlier than the target. Intake gate re-checked: `matignon-mayenne-1586:
+partial (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0.
+
+**Located.** Français 3974-3995 is "Collection Mémoires de la Ligue"; français 3974 itself is a recueil of
+loose letters and pieces (archivesetmanuscrits.bnf.fr `ark:/12148/cc504266/cd0e243`, item 11 of the finding aid,
+confirming the catalogue description and date verbatim). Digitised: yes, ark `btv1b9059407r` (found via Gallica
+SRU `dc.source all "Français 3974"`, 1 hit; the broader `gallica all` and `dc.title` forms return 0 or 2,442
+irrelevant hits -- use `dc.source` for this collection). 590 canvases, all labelled `NP` in the IIIF manifest
+(`tools/gallica_folio.py --folio 24` correctly reports 0 labelled canvases and no answer) -- the volume's own
+foliation (visible in ink on each recto, e.g. "24", "25") is not exposed as IIIF canvas labels, so the canvas
+was found by eye: canvas 46 = f.21r ("21"), 48 = f.22r ("22"), 50 = f.23r ("23"), 52 = f.24r ("24"), matching a
+plain 2-canvases-per-folio, no-offset run once past the volume's front matter. **f.24r = canvas 52, f.24v =
+canvas 53** (confirmed independently by content: f.24r opens "29e de Sept.e 1581" / "Monseigneur, j'ay receu..."
+and f.24v closes "...vostre bien humble et obeissant serviteur / faicte a Fontainebleau le..." with a signature
+matching "de Neufville", i.e. Villeroy -- the letter the catalogue describes). F.25r is blank with a sealing-tape
+remnant; f.25v is the outer address panel ("A Monseigneur / Monseigneur le duc de Nevers...") -- the whole item
+(ff.24-25, a folded bifolium) is confirmed to be exactly this one letter, nothing more, before item 12 starts a
+new letter at f.26.
+
+**Crops (U1).** `tools/iiif_lines.py --ark btv1b9059407r --canvas 52 --out images/f3974 --prefix f24r --debug`
+and the same for canvas 53/`f24v`: 33 lines (66 crops, 2 segments/line) on f24r, 18 lines (36 crops) on f24v;
+debug overlays checked by eye, one crop per detected line-band, all well under 2500px. images/f3974/manifest.json
++2 `iiif_lines` entries. Two native reference pages fetched (src_*_f52_full.jpg, src_*_f53_full.jpg).
+
+**Two blind passes (U2).** Two independent Sonnet subagents, each given only the 102 crop paths (no key, no
+prior transcription, no context beyond "transcribe cipher signs vs. plain French, line by line"):
+`passA_f3974.tsv`, `passB_f3974.tsv`. **Both passes independently classify every one of the 51 lines as `plain`
+or `unclear` (blank/illegible spans); `cipher` = 0 and `mixed` = 0 in both files, on both f24r and f24v.** No
+digit groups, no isolated code letters, no nomenclator-style tokens, no interlinear or marginal decipherment
+gloss found anywhere by either pass. A grep of both TSVs for any digit character outside the "1581"/"XXe" date
+line returns nothing. Word-level raw disagreement between the two passes' literal transcriptions of the (very
+difficult) secretary hand is high (95.1% of 329 word positions, by naive position-matching) -- expected for two
+blind reads of a hard hand and not the operative number here, since the thing that matters (cipher-or-plain
+classification) is unanimous, not close, between the two passes.
+
+**U3/U4 (alignment, the test): not applicable, and not run.** `interlinear_align.py` aligns a cipher-sign stream
+to a facing plaintext span; with zero cipher tokens found on either imaged leaf, there is no sign stream to
+align and no `key_f3974.tsv` to build (0 rows, not a small or ambiguous key -- an empty one). The shuffle-control
+overlap test against `key.tsv` (U4) needs at least one shared sign to compute an agreement rate on; with 0 codes
+recovered from f.24, shared-sign count is 0 by construction and the test cannot be run, let alone pass or fail
+against its shuffle control. This is not the "disagree, retire cheaply" outcome the brief anticipated (which
+assumed f.24 would yield *some* sign/value pairs) -- it is a step earlier: the digitised leaf the catalogue
+names as "chiffrement et déchiffrement" is, as imaged, plain French prose throughout both recto and verso, with
+no encipherment visible on the page at all.
+
+**Verdict: lead retires -- undecidable from this leaf, not a key-family match or mismatch.** Two independent
+blind Sonnet passes agree completely that BnF français 3974 f.24-25 (ff.24r/24v text, f.25r/25v blank + address
+panel) carries no cipher content on the digitised image, contradicting the BnF finding aid's "chiffrement et
+déchiffrement" description for this item as far as what is bound and imaged at this exact folio. Per CLAUDE.md
+rule 2 (image over transcription), the image is trusted over the catalogue phrase here. No key file was built,
+no code from `key.tsv` was tested, and no claim is made about whether the Matignon/Mayenne key family is shared
+with this secretariat's -- the test could not start.
+
+Three explanations were not chased further (out of this job's scope and cap): (a) the "chiffrement et
+déchiffrement" pair the finding aid describes may be a different, un-digitised leaf mis-filed under this folio
+range in the finding aid's own description; (b) the actual enciphered original may not survive, and what is
+bound at f.24 is only the fair-copy plaintext the recipient's cabinet retained (in which case "déchiffrement"
+describes the item's *history*, not what is imaged); (c) a rarer possibility, that the cipher is a genuine
+nomenclator substituting only for a handful of proper nouns/sensitive terms so seamlessly that two blind
+transcription passes read it as ordinary grammatical prose without flagging anything odd -- weighed unlikely
+(no anomalous proper nouns, numerals, or stand-in words were flagged by either pass) but not disproved.
+
+**Next step (not run, named per the brief): none recommended at cost within this lead.** français 3974 f.24 is
+retired as a comparator for the target's 1,272 unkeyed (U) codes. If the Matignon/Mayenne key family is still
+worth cross-checking against a sibling secretariat cipher, the SO-MATIGNON-LEADS runner's weaker leads (français
+3354 f.91, "no decipherment reported" per its own catalogue note; français 16092 f.5, a cipher table with no
+attested letter) would need the same locate-crop-blind-pass treatment before spending on alignment, and neither
+is stronger than f.24 was expected to be. Status stays `partial` (NEAR.md row).
+
+Requests this section: archivesetmanuscrits.bnf.fr 1; gallica.bnf.fr 1 SRU query + 1 manifest fetch + ~14 image
+fetches (thumbnails/native page/canvas probes, >=1.5s apart, browser UA; 1 connection reset on canvas 54,
+1 retry after a pause, succeeded). 2 Sonnet subagents (the two blind passes), no third pass needed (0%
+cipher-classification disagreement, well under the one-tenth trigger). No credentials used.
