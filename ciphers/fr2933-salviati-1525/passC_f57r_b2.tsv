@@ -1,0 +1,41 @@
+line	pos	code	marks	conf	note
+10	7	m	~	M	bold m, wavy curl above resembling tilde/3-shape
+10	16	nt	 	M	hooked curve crossed by short stroke, n+ shape
+10	20	#	 	H	two parallel strokes each crossed, double-barred cross on line
+11	15	o.	 	H	ring with central dot, clean circle
+11	15.5	S7	 	H	7-shaped stroke below the ring
+11	19	+	 	H	single cross standing on line
+12	9	o.	 	H	ring with dot, left of pair
+12	9.5	nt	 	M	n-loop merging into crossed stroke right of o.
+12	21.5	H	 	H	bold H with top flourish, dominant sign
+13	5	N	 	M	large curvy double-loop shape, cursive N
+13	17	y	 	L	vertical stroke with loop and dot, ambiguous with p/g
+13	17.5	v	 	M	broad open curve, hooked left arm
+13	21	w	 	H	omega-like double hump with lead-in stroke
+13	21.5	o.	 	H	ring with dot right of w
+14	6	#	 	H	double cross between plain a and o. context
+14	10	dl	 	H	small loop with curling tail rising to upper right
+14	20	y	 	H	left of pair of looped-tail signs
+14	20.5	y	 	H	right of pair, same looped-tail shape
+14	25	g	 	H	9/g-shaped loop, left of y neighbour
+14	26	y	 	H	looped-tail sign right of g
+15	3	y	 	H	bold looped-tail sign, upper of pair
+15	3.5	e	 	M	closed loop/bowl below y, numeral-3-like
+15	9	H	 	H	bold H with top flourish
+15	16	S7	 	H	7-shaped stroke above lam
+15	16.5	lam	 	H	tall Λ, two strokes meeting at apex
+16	22	Z	 	H	bold Z stroke below n+ context
+17	6	phi	 	H	small slashed circle on long stem
+17	6.5	bh	 	H	tall stem with hooked loop upper right, below phi
+17	17	v	 	H	curved v with hooked left arm
+17	18	S	 	H	S/ʃ curve
+17	19	f	 	H	long f with crossbar
+17	22	m	 	H	three-hump cursive m
+17	24	nt	 	M	hook plus crossing horizontal stroke
+18	4	S4	 	M	diagonal slash crossing a horizontal bar/foot
+18	22	bh	 	H	tall stem with hooked loop upper right
+19	9	g	 	H	9/g loop shape
+19	13	+	 	H	single cross on line
+19	23	nt	 	H	n loop plus crossed stroke, clear n+ shape
+19	25	S7	+	M	7-shaped stroke with cross mark above
+19	25.5	y	 	H	looped-tail sign right of S7
