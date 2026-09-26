@@ -58,3 +58,15 @@ AX2-4612S. -->
 
 | 26 Sept 2026 07:35 | key_repair (local per-code, excess objective) | N=833 (5811 cut) margin=3.0 rounds=4, objective=excess, no_null_below=121, candidates=26 letters+NULL+60 bigrams+20 trigrams | 1 (null) | not applicable | 53/110 codes changed (64 change-events; 1 to NULL, 15 to a different letter, 48 to a bigram/trigram) | - | no (gate <=2 false positives) | AX2-4612S2 (a) null control on key_full/5811-cut, --objective excess (down from AX2-4612S's 100/110 under --objective total, still far above gate) |
 | 26 Sept 2026 07:43 | key_repair (local per-code, excess objective) | N=833 (5811 cut) margin=3.0 rounds=4, objective=excess, no_null_below=121, 6 codes swapped in 3 pairs + 2 hidden as bigrams, seeded 46120+seed | 1-3 | 0.625 recovery (0.500-0.750); bigram-only recovery 0.500 (3/6); 53 false changes every seed | not run on 4612/5799 (CONTROL BELOW GATE) | - | no (gate >=0.75 recovery AND <=2 false changes) | AX2-4612S2 (b) known-answer control; recovery up sharply from AX2-4612S's 0.000 but false-change count unchanged (53, same ~codes as the null control regardless of which 8 are perturbed) -- root cause shifted from unconditional NULL-seeking to unconditional preference for inserting a top-corpus-frequency bigram/trigram (always above the mean mu, so summing more of them beats a correct single letter); see NOTES.md AX2-4612S2 section |
+
+## Key conflict: code 172 (logged 26 Sept 2026 08:06 UTC, LANE AX2 orchestrator, CLAUDE.md rule 4)
+
+Three H-grade period witnesses disagree on code 172; none is resolved by frequency.
+| witness | sender -> recipient | date | 172 reads | source |
+|---|---|---|---|---|
+| WVO 4614 period decipherment | Lodewijk -> Willem | 4 Apr 1574 | le Conte Jean (1x, "mon frere [172] lequel") | NOTES AX-COMP, AX-REDERIV2 |
+| WVO 7206 period decipherment (p8) | Willem -> brothers | 30 Jan 1574 | Lumbres (3x) | NOTES AX2-BLANKS, AX2-172 |
+| WVO 5801 interlinear gloss + Groen IV CDXXIII | Willem -> Jan and Lodewijk | 28 May 1573 | le conte Louis de nassau | NOTES AX2-5801ADJ |
+The direction-of-correspondence theory (AX2-172) failed on 5801. Consequence: 5797 p6_spot4 (Jan and Lodewijk -> Willem, 22 Oct 1573)
+has no licensed value for 172; grade M wherever 172 is read outside its witness letter; AUDIT.md A4 withdrew the spot's class (V9-NA172-3).
+key_full.tsv keeps its 4614 value with this conflict noted (axmerge4/proposal.tsv KEEP_NOTE rows).
