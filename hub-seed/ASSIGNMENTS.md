@@ -799,3 +799,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T08:48Z	session_01FXbFaXqnjyMNmuMDAaE1fi	bMAL28 (Sonnet, cap 12)	malsburg 507 f.28 transcription + leaf gate	brief 2026-09-26-lane-b9-mal28.md; LANE B9
 2026-09-26T08:48Z	session_013uoVVpHvKf8RSpzRgFW5SB	bMAL23 (Sonnet, cap 10)	malsburg 505 f.23 transcription + leaf gate	brief 2026-09-26-lane-b9-mal23.md; LANE B9
 2026-09-26T09:03Z	session_01HdtE6CKSg61AwFoyoHu8gn	RETRO-APPLY-Q	done 2.32, ledgered D, retitled ARCHIVED, archived by 7g	UPDATES rows 08:19 x4
+2026-09-26T09:04Z	session_01KqZJfQMU9vwZPTbjHRzp7d	retrospective r (Sonnet, cap 10)	about 27 ledger rows since retro q; file RETRO-2026-09-26f.md	brief 2026-09-26-parent-retrospective-r.md; parent 7g
+2026-09-26T09:04Z	session_01WgHYzK9A84hSmjnr9G7qen	LEARN-7 (Sonnet, cap 5)	cross-account learning pass, window from 06:16Z	brief 2026-09-26-parent-learn7.md; parent 7g
