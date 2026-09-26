@@ -730,3 +730,6 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T05:20Z	session_01FS7JkXfECRNTU6KGZEdLqK	PR-LAND-2	done 1.99, ledgered D, retitled ARCHIVED, archived by 7f	PRs 16-20 landed df988ad; JSTOR 80-83/88-91 no relevant hit
 2026-09-26T05:21Z	session_015tVYuuF1SyfAGZVSjGU8V7	LANE B7 bUNT9 (Sonnet, cap 2.5)	untersberg symA vs Herzog witnesses	brief 2026-09-26-lane-b7-unt9.md
 2026-09-26T05:22Z	session_01Gny4j6pxVrzWP5F9wXjDdE	retrospective p (Sonnet, cap 10)	21 ledger rows since retro o; file RETRO-2026-09-26d.md	brief 2026-09-26-parent-retrospective-p.md; parent 7f
+2026-09-26T05:44Z	session_01KatL6TE3Ai7gE9upvmxGVd	V8-QA7 (Sonnet, cap 5)	rolling QA, window 03:08 to start	brief 2026-09-26-lane-v8-qa7.md; LANE V8
+2026-09-26T05:44Z	session_01DbfCCQsUM1WwCELrgVMz3b	V8-NA172	done 2.56, ledgered D, archived (p6_spot4 N4)	
+2026-09-26T05:44Z	session_011VT63hJtoLER8ZHuMKvK6X	V8-SO16	done 1.87, ledgered D, archived (PR 16 merge; landed by PR-LAND-2)	
