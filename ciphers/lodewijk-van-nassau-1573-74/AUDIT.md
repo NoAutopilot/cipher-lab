@@ -1017,7 +1017,7 @@ rows 89 and 90 context only (Schindling 1994, Rohls 2007), none about the letter
 | What Count Johann did "this morning" about 22 Oct 1573 | searched | Glawischnig (IA fts, 2 queries); Bezold I (djvu text, 1 fetch, scratchpad); Google Books 2 queries (Lossen; Salentin + "Johann von Nassau" 1573 Köln) | Jan's talks with Salentin in Oct/winter 1573 are recorded (V8C.2); **no source quotes 5797 at p6 or names the subject of "zeuget"**; Bezold cites Prinsterer I.4, 339 and 342-4 (later letters), not 224-5 |
 | Lossen, Der Kölnische Krieg I (1882) | **snippet only** | Google Books `iRNlEQAAQBAJ` (2025 reprint, PARTIAL): Salentin "erbot, durch Johann von Nassau zu erkunden ..." | not on IA by creator search; the book's account of Oct 1573 not read inside. The one principal Salentin study this pass could not open; a person with the volume can check whether Lossen quotes CDXLIV p.225 and supplies the subject |
 | Kramer, Der Kölner Kurfürst Salentin von Isenburg (1937), Google Books `e24-AAAAMAAJ` | not reached | NO_PAGES | -- |
-| JSTOR | queued | 1 row appended (Salentin + Johann von Nassau + 1573 + Köln) | never blocks a class on its own |
+| JSTOR | done 26 Sept 2026 | 1 row in `JSTOR-QUEUE.tsv`: Salentin + Johann von Nassau + 1573 + Köln | no relevant hit (0 results, none about the letter); does not change the class |
 | CORE | not searched | CORE_API_KEY unset (key probe at session start) | -- |
 
 ### V8C.4 Safe and unsafe sentences
@@ -1097,7 +1097,7 @@ Google Books `e24-AAAAYAAJ` / `K5UQMwEACAAJ`, NO_PAGES; reviewed 1939 per CrossR
 | Semantic Scholar, HAL, Persée, CORE | not searched this pass | time box; V8/A2/V8C covered them for the letter; CORE_API_KEY unset | -- |
 | Phrase control and name phrase, Google Books | searched | `"zeuget diesen morgen"` (7 hits: 6 copies of Groen IV + one 1763 hymnal, unrelated); Salentin + "Graf Johann" + 1573 + Arnsberg (0) | only Groen prints the passage, blank as ever |
 | HHStAW Abt. 171 C 368 (Arcinsys Hessen) | unreachable by plain URL | `arcinsys.hessen.de` detail URL answers 302 (session/JS app); not pursued further | Lossen's footnote gives the file's content (Jan's draft relation, fol. 25; report of 1 Nov 1573, fol. 32) |
-| JSTOR | queued | 1 row appended (Graff/Salentin + Arnsberg + Oktober 1573) | never blocks a class on its own; the earlier V8C row is still queued |
+| JSTOR | done 26 Sept 2026 | 1 row in `JSTOR-QUEUE.tsv`: Graff/Salentin + Arnsberg + Oktober 1573 | no relevant hit (1 results, none about the letter); does not change the class |
 
 ### A3.3 Safe and unsafe sentences (replace V8C.4)
 

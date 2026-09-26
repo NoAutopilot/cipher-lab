@@ -919,7 +919,11 @@ automated heading scan, not Birch's.
    Burton", "Lockhart", "Chauny/Chauni": no hit on these letters (Lockhart only as a name in Bourdeau's Hyde/
    Barwick key and Charles II notes). (g) OpenAlex 2 searches (Manning/Thurloe spy: 62, none on these letters;
    Lockhart Mazarin 1656 cipher: 1, unrelated), Semantic Scholar 1 (the 2005 Manning article), JSTOR one row
-   queued. No later decipherment was needed or sought: an N0 item's plaintext is already in the 1742 print.
+   ("Henry Manning" AND (Cologne OR Thurloe) AND (1655 OR spy OR intelligence)), done 26 Sept 2026: the one
+   candidate (Marshall, "John Thurloe and the Cromwellian regime", 2023 chapter) was blocked by JSTOR's own
+   access wall (pp.177-224 unreadable); the readable context hits (Lenihan 2015, Larminie 2012, Greenspan 2016
+   pp.1397-98) discuss Manning's espionage but print or calendar neither letter; does not change the class.
+   No later decipherment was needed or sought: an N0 item's plaintext is already in the 1742 print.
 4. **Counts (task 5).** Reproduced from `align_P25.tsv`..`align_P28.tsv` `status` column: C = `agrees` +
    `single` + `single-segment`, M = `conflict:*` + `doubtful`, `clear` excluded. P25 22/4, P26 10/4, P27 79/44,
    P28 66/11; total **C 177, M 63** of 240 -- exact. `tools/interlinear_align.py` itself has no grade mapping
