@@ -179,10 +179,10 @@ Brief `.claude/briefs/runs/2026-09-26-lane-v8-orchestrator.md`. Opened 03:05 UTC
 
 | job | state |
 |---|---|
-| 1 rolling QA | V8-QA6 (Sonnet 3.49, QA/2026-09-26-0308.md, ~30 items, 3 flags: riksarkivet control mean and "partial" label for B6; thurloe-printed no rule-5 status word, intake gate matched a subheading, for the parent) ledgered D, archived; QA7 ~05:40, window from 03:08 |
-| 2 verifiers | V8-NA5797 (Opus 4.61, D): 5797 p7 [153 Pfaltzgraf] and p5 [161 Landgraf] N4, key period (5550 gloss) + ours (table), letter N0; 4610/4611/4616 N4 confirmed. V8-NA5797-2 (Opus 3.86, D): A2 held both N4; gate 2 second audit done, open-index and Google Books done, JSTOR rows 88-91 answered in PR 17 (unmerged). V8-NA172 session_01DbfCCQsUM1WwCELrgVMz3b (Opus, cap 6, 30 min) started 05:09 on p6_spot4 (172 le Conte Jean, v3 re-derivation AX-REDERIV2 04:41 PASS) |
-| 3 SO PRs | PR 16 = SO-MERCY-F22, row marked posted; V8-SO16 session_011VT63hJtoLER8ZHuMKvK6X (Sonnet, cap 4) citation check started 05:09. PRs 17-19 are local-runner answers (JSTOR incl. Mercy rows and Lodewijk 88-91, HathiTrust L4, Boyd L14): the parent picks them up |
-| 4 Mercy gate-2 closer | waits on the owner (JSTOR rows 80-83, Lonchay-Cuvelier IV) |
+| 1 rolling QA | V8-QA6 (Sonnet 3.49, D, QA/2026-09-26-0308.md, 3 flags routed). V8-QA7 session_01KatL6TE3Ai7gE9upvmxGVd (Sonnet, cap 5, 40 min) started 05:43, window from 03:08; QA8 ~07:45 |
+| 2 verifiers | lodewijk WVO 5797: V8-NA5797 (Opus 4.61, D) p7 [153] and p5 [161] N4, key period+ours, letter N0; 4610/4611/4616 N4 kept. V8-NA5797-2 (Opus 3.86, D) A2 held both, gate 2 done (JSTOR 88-91 answered, no relevant hit). V8-NA172 (Opus 2.56, D) p6_spot4 [172 le Conte Jean] N4, token M, key period (4614 decipherment)+ours; gate 2 open on the Cologne literature -> V8-NA172-2 session_01SeghT8AxMsh2pewSefqMdo (Opus, cap 5, 25 min) started 05:44. szembek-bk1560 (B7 bSZM 05:32 reading ready) held for a rule-7 re-derivation and the retrospective-p leaf 65/67 grade question |
+| 3 SO PRs | PR 16 SO-MERCY-F22: V8-SO16 (Sonnet 1.87, D) merge, 9 confirmed / 4 not, Mercy N3 unmoved; PRs 16-20 landed and closed by the parent worker PR-LAND-2 (05:17) |
+| 4 Mercy gate-2 closer | JSTOR rows 80-83 answered (PR-LAND-2: no print of the letter); still waits on the Lonchay-Cuvelier IV page read (owner machine) |
 
 ## LANE V7 handoff (session_018VkFfDWY4drC9a9aozmop9), 25 September 2026, live (updated 26 Sept 00:59 UTC)
 
