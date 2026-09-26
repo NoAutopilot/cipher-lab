@@ -923,3 +923,6 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T17:55Z	session_019DNzwRqjndogyeTymb7Hqw	LQ-L20-LAND	done 3.71 D- (1.24x, get_session), ledgered, retitled ARCHIVED, archived by 7i	kind-aware lq_answer_check; L20 landed 5ae573f
 2026-09-26T17:52Z	session_01DfYRf9UUmHn1yoNHVw6HeE	V-GATE2 verifier (Opus, cap 8)	JSTOR gate 2 re-read for every N3/N4 target; replies vs N-class incl. the Japikse ruling on WVO 53/126; NOTIFY.md routing	brief 2026-09-26-parent-v-gate2.md; parent 7i
 2026-09-26T17:55Z	session_01X8EXEjjRreNhs9Ga2AEFW2	VO1-JAPIKSE verifier (Opus, cap 8)	stood down before start (interrupted while pending, archived): duplicate of parent 7i V-GATE2, which already claims the Japikse ruling on WVO 53/126	brief 2026-09-26-lane-vo1-japikse.md; LANE VO1
+2026-09-26T18:04Z	session_01MDf1zFTkxAsyd6zLUgYTdK	QA13	done 3.82 D (get_session), ledgered, retitled ARCHIVED, archived by 7i	QA/2026-09-26-1732.md, 0 failures
+2026-09-26T18:04Z	session_01Pd7VDFHfeiUfPdJ2TQP7j1	RETRO-APPLY-U	done 5.85 D (get_session), ledgered, retitled ARCHIVED, archived by 7i	634eb7f, 4 of 4
+2026-09-26T18:01Z	session_01EYznd2r84bEjkjv3wAYKK4	OUT-CHECK-D (Opus, cap 3)	gate 7 check of the DECODE image-access draft (ASKS 42)	parent 7i
