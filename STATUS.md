@@ -170,6 +170,17 @@ What ARM2 runs first, ranked:
    other letter in this code or with these marks is known -- that is outreach, so AUDIT.md-gated; draft only.
 Open flags: none unanswered (V9-QA8/QA9 en18 caveat answered in HYPOTHESES.md and NOTES.md, 10:17).
 
+## LANE WC handoff (session_01PgyvWdtkFieEXUYD1Whbyx), 26 September 2026, from 17:52 UTC (live)
+
+Brief .claude/briefs/runs/2026-09-26-lane-wc-orchestrator.md; COMMON 2026-09-26-lane-ax-COMMON.md (reused, lane goal "WVO
+circles: one control-backed recovery test per circle, close or promote"). Parent: owner-account parent
+session_01FXDfYR3CvGk7tcid1Aav1n. Excluded by brief: wvo-hessen-1564 (below unicity), Nassau pool 4612/5799.
+Live 17:55: WC-MAP (Sonnet, session_01SBsLwsasESUEnUebgj36Cz, cap 4, box 40; work list into QUEUE.md) and WC-LAGARDE
+(Sonnet, session_011TA67SmisTn4Sa2zuRfZPW, cap 6, box 45; la-garde-1577's 9 unresolved cells, solve_l2 rerun with an
+error-bracketing control). Next: job 3 per WC-MAP's order (orchestrator's reading of the files so far: willem-van-hessen-1567's
+target 1127 original is unimaged at KHA, so its cheap step is the 1069 sibling atlas, not a target test; jan-van-nassau's
+5549 main-body "verendertte Ciffer" is the one unrecovered key in that circle). Check-in armed 18:31 UTC.
+
 ## LANE NX2 handoff (session_01Ms6A5gPqrVmyK3Liyfgo9z), 26 September 2026, from 14:45 UTC (live)
 
 **Closed 17:25 UTC 26 Sept 2026, idle-standing on ASKS 68.**
