@@ -250,6 +250,30 @@
     "05214_p1.jpg"
    ],
    "note": "WC-NASSAU-FIT2, 26 Sept 2026: densest cipher page is p1 (fol.139, cipher block of ~16 lines plus a left-margin note, transcribed j6/fit_5214.tsv); p2 is the address leaf (blank verso, addressed 'Monsieur mon frere le Conte Jehan de Nassau', confirms Jan as recipient); p3 carries an unrelated document in a different cipher system (cross/plus-sign nulls over French clear text, subject 'l'occasion de Mayenne...l'entreprise d'Anvers') bundled into this PDF scan, not part of this letter, not this letter's oplossing. No oplossing leaf found in this PDF for 5214 itself. cosine 0.37 vs 5549 body -- FAILS the gate (max value only 106 vs body's 345, share_gt99 0.02 vs body's 0.24: a small homophone-range system, not the body's design). Only p1 committed; p2/p3 not imaged here (re-fetchable from pdf_url)."
+  },
+  {
+   "briefnr": 5210,
+   "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5210",
+   "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05210.pdf",
+   "date": "7 September 1574",
+   "correspondent": "Willem to Jan van Nassau",
+   "pages_in_pdf": 10,
+   "images": [
+    "05210_p4.jpg"
+   ],
+   "note": "WC-NASSAU-FIT2, 26 Sept 2026: p1-p5 (fol.84-86) are the letter body, all dense pure-numeral cipher throughout, values up to 330; p6 is the address leaf ('Monsieur mon frere le Conte Johan Loys et Henry de Nassau', addressed to all three brothers, dated Dillenburch); p7-p10 carry the letter's own contemporary oplossing (a clear-French decipherment with occasional cross marks over resolved code groups), matching this letter's content -- WVO 5210 does carry a period decipherment on file. Densest single page fitted is p4 (39 detected manuscript lines, transcribed j6/fit_5210.tsv); cosine 0.46 vs the 5549 body -- FAILS the gate (max value 330 approaches the body's 345, but the frequency profile does not match). Only p4 committed; other pages not imaged here (re-fetchable from pdf_url)."
+  },
+  {
+   "briefnr": 5812,
+   "wvo_record": "https://resources.huygens.knaw.nl/wvo/app/brief?nr=5812",
+   "pdf_url": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05812.pdf",
+   "date": "17/18 April 1574",
+   "correspondent": "Willem to Lodewijk van Nassau",
+   "pages_in_pdf": 7,
+   "images": [
+    "05812_p3.jpg"
+   ],
+   "note": "WC-NASSAU-FIT2, 26 Sept 2026: p1-p2(top) are the main letter, a nomenclator mixing numerals with letter/symbol homophones (a different visual design from the pure-numeral 5549 body, not fit-tested); p2(bottom)-p4 are a duplicate letter ('Duplicata'), pure numerals, dated 6 Jan [sic, exact date uncertain]/ 21 April 1574; p4 top-left margin carries an unrelated troop-count note (900/1500/9000); p5-p6 are this duplicate's own contemporary oplossing in clear French ('Messieurs mes freres...'), confirming WVO 5812 carries a period decipherment on file. Densest pure-numeral page fitted is p3 (fol.10, ~400 groups, transcribed j6/fit_5812.tsv; automated line-cutting on this page was imperfect and the crops overlap, so many tokens are duplicated across adjacent line files per the transcriber's own note); cosine 0.40 vs the 5549 body -- FAILS the gate. Only p3 committed; other pages not imaged here (re-fetchable from pdf_url)."
   }
  ]
 }

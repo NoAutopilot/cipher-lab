@@ -1,0 +1,489 @@
+line	pos	group	conf	note
+5812p3_L01	1	9	L	upper partial row, top-cut, likely overlap with prior crop's tail
+5812p3_L01	2	23	M
+5812p3_L01	3	109	M
+5812p3_L01	4	12	M
+5812p3_L01	5	128	L
+5812p3_L01	6	73	L	73 or 78?
+5812p3_L01	7	82	M
+5812p3_L01	8	78	L
+5812p3_L01	9	81	L
+5812p3_L01	10	27	M
+5812p3_L01	11	29	L
+5812p3_L01	12	38	M
+5812p3_L01	13	26	L
+5812p3_L01	14	77	M	lower/main row starts here
+5812p3_L01	15	82	M
+5812p3_L01	16	13	L	13 or 15?
+5812p3_L01	17	23	M
+5812p3_L01	18	61	L	61 or 81?
+5812p3_L01	19	2	M
+5812p3_L01	20	78	L
+5812p3_L01	21	21	M
+5812p3_L01	22	65	L	65 or 85?
+5812p3_L01	23	112	L
+5812p3_L01	24	82	M
+5812p3_L01	25	77	L
+5812p3_L01	26	100	L	100 or 190?
+5812p3_L01	27	83	L	cut at right edge
+5812p3_L02	1	8	L	upper partial row, top-cut
+5812p3_L02	2	120	L
+5812p3_L02	3	60	L	60 or 69?
+5812p3_L02	4	78	L
+5812p3_L02	5	60	L
+5812p3_L02	6	2	M
+5812p3_L02	7	17	M
+5812p3_L02	8	38	M
+5812p3_L02	9	10	L
+5812p3_L02	10	82	M
+5812p3_L02	11	27	M
+5812p3_L02	12	81	L
+5812p3_L02	13	30	L
+5812p3_L02	14	85	L
+5812p3_L02	15	38	M
+5812p3_L02	16	105	L	105 or 115?
+5812p3_L02	17	84	L
+5812p3_L02	18	117	L
+5812p3_L02	19	81	L	right edge, uncertain
+5812p3_L02	20	2	L	lower/bottom partial sliver begins here
+5812p3_L02	21	73	L
+5812p3_L02	22	17	L
+5812p3_L02	23	6	L
+5812p3_L02	24	17	L	line cut off at bottom of crop
+5812p3_L03	1	38	L	upper partial row, top-cut
+5812p3_L03	2	12	M
+5812p3_L03	3	119	L
+5812p3_L03	4	60	L	60 or 61?
+5812p3_L03	5	1	L
+5812p3_L03	6	63	L
+5812p3_L03	7	74	M
+5812p3_L03	8	83	M
+5812p3_L03	9	28	L
+5812p3_L03	10	27	M
+5812p3_L03	11	104	L
+5812p3_L03	12	33	L	digit unclear, possibly 33 with a mark above
+5812p3_L03	13	8	M
+5812p3_L03	14	190	L	very uncertain, could be two groups
+5812p3_L03	15	143	L
+5812p3_L03	16	60	M	lower/main row begins here
+5812p3_L03	17	34	L
+5812p3_L03	18	38	M
+5812p3_L03	19	10	L
+5812p3_L03	20	76	L	76 or 26?
+5812p3_L03	21	27	M
+5812p3_L03	22	19	L
+5812p3_L03	23	7	M
+5812p3_L03	24	76	L
+5812p3_L03	25	21	L
+5812p3_L03	26	22	L	cut off at bottom of crop
+5812p3_L04	1	83	L	upper partial row, top-cut, faint
+5812p3_L04	2	59	L
+5812p3_L04	3	82	L
+5812p3_L04	4	20	M
+5812p3_L04	5	71	L
+5812p3_L04	6	11	L
+5812p3_L04	7	101	L
+5812p3_L04	8	13	L
+5812p3_L04	9	22	M	lower/main row begins here
+5812p3_L04	10	82	M
+5812p3_L04	11	6	M
+5812p3_L04	12	5	L
+5812p3_L04	13	46	M
+5812p3_L04	14	85	M
+5812p3_L04	15	26	M
+5812p3_L04	16	33	L
+5812p3_L04	17	65	L
+5812p3_L04	18	71	L
+5812p3_L04	19	86	L
+5812p3_L04	20	78	M
+5812p3_L04	21	221	L	unusual 3-digit, flag
+5812p3_L04	22	82	M
+5812p3_L04	23	31	L
+5812p3_L04	24	77	M
+5812p3_L04	25	82	M
+5812p3_L04	26	241	L	uncertain, could be 241 or two groups
+5812p3_L05	1	71	L	upper partial row, top-cut
+5812p3_L05	2	83	M
+5812p3_L05	3	18	L
+5812p3_L05	4	38	M
+5812p3_L05	5	63	L
+5812p3_L05	6	83	M
+5812p3_L05	7	27	M
+5812p3_L05	8	32	M
+5812p3_L05	9	62	L
+5812p3_L05	10	78	M
+5812p3_L05	11	37	M
+5812p3_L05	12	82	M
+5812p3_L05	13	3	M
+5812p3_L05	14	38	M
+5812p3_L05	15	104	L	lower partial sliver begins, cut at bottom
+5812p3_L05	16	117	L
+5812p3_L06	1	5	L	faint fragment above main row, top-cut
+5812p3_L06	2	82	L
+5812p3_L06	3	21	L
+5812p3_L06	4	76	L
+5812p3_L06	5	83	L
+5812p3_L06	6	7	L
+5812p3_L06	7	34	L
+5812p3_L06	8	74	M	gap in text, ink blot visible mid-line
+5812p3_L06	9	9	M
+5812p3_L06	10	38	M
+5812p3_L06	11	21	M
+5812p3_L06	12	64	L
+5812p3_L06	13	4	L
+5812p3_L06	14	45	L
+5812p3_L06	15	85	L	right edge
+5812p3_L06	16	85	L	lower/main row begins here
+5812p3_L06	17	33	M
+5812p3_L06	18	26	M
+5812p3_L06	19	39	M
+5812p3_L06	20	8	L
+5812p3_L06	21	38	M
+5812p3_L06	22	6	L
+5812p3_L06	23	30	L
+5812p3_L06	24	27	M
+5812p3_L06	25	33	L
+5812p3_L06	26	11	L
+5812p3_L06	27	83	L	cut off at bottom
+5812p3_L07	1	2	L	upper partial row, top-cut, faint
+5812p3_L07	2	85	L
+5812p3_L07	3	27	M
+5812p3_L07	4	31	M
+5812p3_L07	5	12	L
+5812p3_L07	6	3	L
+5812p3_L07	7	27	M
+5812p3_L07	8	19	L
+5812p3_L07	9	20	L	20 or 29?
+5812p3_L07	10	21	M
+5812p3_L07	11	113	L
+5812p3_L07	12	83	M
+5812p3_L07	13	27	M
+5812p3_L07	14	64	L
+5812p3_L07	15	56	L
+5812p3_L07	16	62	L
+5812p3_L07	17	7	M
+5812p3_L07	18	77	M
+5812p3_L07	19	6	L
+5812p3_L07	20	2	L	right edge, uncertain
+5812p3_L07	21	78	L	lower/main row begins here
+5812p3_L07	22	8	M
+5812p3_L07	23	2	L
+5812p3_L07	24	1	L
+5812p3_L07	25	8	L
+5812p3_L07	26	125	L
+5812p3_L07	27	120	L
+5812p3_L07	28	4	L
+5812p3_L07	29	9	L
+5812p3_L07	30	27	M
+5812p3_L07	31	18	L
+5812p3_L07	32	38	M
+5812p3_L07	33	22	L	cut off at bottom
+5812p3_L08	1	12	L	upper partial row, top-cut
+5812p3_L08	2	113	L
+5812p3_L08	3	8	M
+5812p3_L08	4	119	L
+5812p3_L08	5	84	L
+5812p3_L08	6	2	M
+5812p3_L08	7	51	L
+5812p3_L08	8	108	L
+5812p3_L08	9	38	M
+5812p3_L08	10	21	M
+5812p3_L08	11	14	L
+5812p3_L08	12	8	M
+5812p3_L08	13	37	L	possibly with tilde/mark, uncertain
+5812p3_L08	14	79	L	lower/main row segment continues right side
+5812p3_L08	15	83	M
+5812p3_L08	16	33	L
+5812p3_L08	17	8	M
+5812p3_L08	18	118	L
+5812p3_L08	19	12	L
+5812p3_L08	20	27	M	right edge, cut
+5812p3_L09	1	19	L	upper partial row, top-cut
+5812p3_L09	2	8	L
+5812p3_L09	3	1	L
+5812p3_L09	4	5	L
+5812p3_L09	5	6	L
+5812p3_L09	6	3	L
+5812p3_L09	7	73	L
+5812p3_L09	8	114	L
+5812p3_L09	9	8	L
+5812p3_L09	10	17	L	very faint fragment cut at top
+5812p3_L10	1	7	L	lower/main row of prior crop's tail (very faint fragment at top of L09 continues here too)
+5812p3_L10	2	5	L
+5812p3_L10	3	113	L
+5812p3_L10	4	8	M
+5812p3_L10	5	27	M
+5812p3_L10	6	13	L
+5812p3_L10	7	81	L
+5812p3_L10	8	31	L	31 or 71?
+5812p3_L10	9	85	M
+5812p3_L10	10	60	L
+5812p3_L10	11	128	L	right edge, uncertain
+5812p3_L11	1	68	L	upper faint fragment, top-cut
+5812p3_L11	2	10	L
+5812p3_L11	3	5	L
+5812p3_L11	4	27	M
+5812p3_L11	5	82	L
+5812p3_L11	6	71	L
+5812p3_L11	7	9	L
+5812p3_L11	8	78	L
+5812p3_L11	9	3	L
+5812p3_L11	10	38	L	lower/main row
+5812p3_L11	11	22	M
+5812p3_L11	12	9	M
+5812p3_L11	13	2	M
+5812p3_L11	14	31	L
+5812p3_L11	15	39	M	39 or 29?
+5812p3_L11	16	2	M
+5812p3_L11	17	45	L	cut at right edge
+5812p3_L12	1	64	L	upper faint fragment, top-cut
+5812p3_L12	2	35	L
+5812p3_L12	3	77	L
+5812p3_L12	4	51	L
+5812p3_L12	5	3	L
+5812p3_L12	6	32	L
+5812p3_L12	7	85	L
+5812p3_L12	8	18	L
+5812p3_L12	9	55	L
+5812p3_L12	10	8	L
+5812p3_L12	11	112	L
+5812p3_L12	12	6	L
+5812p3_L12	13	76	L
+5812p3_L12	14	84	L
+5812p3_L12	15	78	L	lower row continues, faint at bottom
+5812p3_L12	16	100	L	cut off at bottom
+5812p3_L13	1	19	L	upper faint fragment, top-cut
+5812p3_L13	2	9	L
+5812p3_L13	3	4	L
+5812p3_L13	4	31	L
+5812p3_L13	5	21	L
+5812p3_L13	6	81	M
+5812p3_L13	7	83	M
+5812p3_L13	8	76	L
+5812p3_L13	9	11	L
+5812p3_L13	10	79	L
+5812p3_L13	11	132	L
+5812p3_L13	12	129	L
+5812p3_L13	13	127	L
+5812p3_L13	14	82	M	lower/main row
+5812p3_L13	15	12	L
+5812p3_L13	16	21	L
+5812p3_L13	17	63	L
+5812p3_L13	18	82	M
+5812p3_L13	19	113	L
+5812p3_L13	20	87	L
+5812p3_L13	21	116	L
+5812p3_L13	22	62	L
+5812p3_L13	23	2	L
+5812p3_L13	24	77	L
+5812p3_L13	25	8	L
+5812p3_L13	26	23	L
+5812p3_L13	27	6	L
+5812p3_L13	28	38	L
+5812p3_L13	29	92	L
+5812p3_L13	30	111	L
+5812p3_L13	31	17	L	cut off at bottom
+5812p3_L14	1	38	L	upper faint fragment, top-cut
+5812p3_L14	2	9	L
+5812p3_L14	3	26	L
+5812p3_L14	4	55	L
+5812p3_L14	5	27	M
+5812p3_L14	6	8	M
+5812p3_L14	7	7	L
+5812p3_L14	8	26	M
+5812p3_L14	9	9	M
+5812p3_L14	10	2	M
+5812p3_L14	11	33	L
+5812p3_L14	12	76	L
+5812p3_L14	13	22	L
+5812p3_L14	14	117	L
+5812p3_L14	15	83	M
+5812p3_L14	16	38	M
+5812p3_L14	17	22	M
+5812p3_L14	18	82	M
+5812p3_L14	19	55	L
+5812p3_L14	20	85	L	continuing right edge
+5812p3_L14	21	27	L
+5812p3_L14	22	86	L	lower row starts near right, faint
+5812p3_L14	23	66	L
+5812p3_L14	24	103	L
+5812p3_L14	25	80	L
+5812p3_L14	26	27	L
+5812p3_L14	27	71	L
+5812p3_L14	28	91	L	cut off at bottom
+5812p3_L15	1	29	L	very faint fragment, top-cut
+5812p3_L15	2	83	L
+5812p3_L15	3	100	L
+5812p3_L15	4	85	M
+5812p3_L15	5	25	L
+5812p3_L15	6	6	L
+5812p3_L15	7	115	L
+5812p3_L15	8	87	L
+5812p3_L15	9	29	M	lower/main row
+5812p3_L15	10	9	M
+5812p3_L15	11	2	M
+5812p3_L15	12	73	L
+5812p3_L15	13	77	M
+5812p3_L15	14	83	M
+5812p3_L15	15	127	L
+5812p3_L15	16	17	L	38 or 17? unclear
+5812p3_L15	17	38	L
+5812p3_L15	18	6	L
+5812p3_L15	19	113	L
+5812p3_L15	20	2	L
+5812p3_L15	21	71	L
+5812p3_L15	22	21	L
+5812p3_L15	23	35	L
+5812p3_L15	24	85	L
+5812p3_L15	25	83	L
+5812p3_L15	26	11	L
+5812p3_L15	27	91	L	cut off at bottom
+5812p3_L16	1	13	L	upper faint fragment, top-cut
+5812p3_L16	2	85	M
+5812p3_L16	3	78	L
+5812p3_L16	4	36	L
+5812p3_L16	5	6	L
+5812p3_L16	6	2	L
+5812p3_L16	7	71	L
+5812p3_L16	8	84	M
+5812p3_L16	9	27	M
+5812p3_L16	10	32	M
+5812p3_L16	11	21	M
+5812p3_L16	12	82	M
+5812p3_L16	13	79	L
+5812p3_L16	14	84	L
+5812p3_L16	15	116	L
+5812p3_L16	16	84	L
+5812p3_L16	17	36	L
+5812p3_L16	18	21	L
+5812p3_L16	19	81	L
+5812p3_L16	20	16	L	cut off at right edge, lower row continues
+5812p3_L17	1	71	M	upper row continues from prior crop's tail
+5812p3_L17	2	8	M
+5812p3_L17	3	27	M
+5812p3_L17	4	31	M
+5812p3_L17	5	83	M
+5812p3_L17	6	112	L
+5812p3_L17	7	77	M
+5812p3_L17	8	81	M
+5812p3_L17	9	25	L
+5812p3_L17	10	85	M
+5812p3_L17	11	2	M
+5812p3_L17	12	4	M
+5812p3_L17	13	81	M
+5812p3_L17	14	116	L
+5812p3_L17	15	105	L
+5812p3_L17	16	27	M
+5812p3_L17	17	82	M
+5812p3_L17	18	75	L
+5812p3_L17	19	28	L
+5812p3_L17	20	102	L
+5812p3_L17	21	78	L	lower row, faint, top-right corner
+5812p3_L17	22	39	L	cut off at bottom
+5812p3_L18	1	38	L	upper faint fragment, top-cut
+5812p3_L18	2	27	M
+5812p3_L18	3	85	M
+5812p3_L18	4	37	M
+5812p3_L18	5	85	M
+5812p3_L18	6	51	L
+5812p3_L18	7	16	L
+5812p3_L18	8	38	M
+5812p3_L18	9	81	M
+5812p3_L18	10	111	L
+5812p3_L18	11	17	M
+5812p3_L18	12	36	M
+5812p3_L18	13	85	M
+5812p3_L18	14	27	M
+5812p3_L18	15	11	M
+5812p3_L18	16	22	M
+5812p3_L18	17	105	M
+5812p3_L19	1	5	L	very faint fragment, top-cut
+5812p3_L19	2	2	L
+5812p3_L19	3	3	L
+5812p3_L19	4	19	L
+5812p3_L19	5	81	M
+5812p3_L19	6	22	M
+5812p3_L19	7	27	M
+5812p3_L19	8	78	M
+5812p3_L19	9	81	M
+5812p3_L19	10	6	L
+5812p3_L19	11	116	L
+5812p3_L19	12	111	L
+5812p3_L19	13	9	L
+5812p3_L19	14	38	M
+5812p3_L19	15	23	L
+5812p3_L19	16	81	M
+5812p3_L19	17	2	M
+5812p3_L19	18	81	M
+5812p3_L19	19	27	M
+5812p3_L20	1	31	M	upper faint fragment, top-cut
+5812p3_L20	2	21	M
+5812p3_L20	3	83	M
+5812p3_L20	4	105	L
+5812p3_L20	5	71	M
+5812p3_L20	6	53	L
+5812p3_L20	7	111	L
+5812p3_L20	8	82	M
+5812p3_L20	9	66	L
+5812p3_L20	10	21	M
+5812p3_L20	11	38	M
+5812p3_L20	12	101	L
+5812p3_L20	13	71	M
+5812p3_L20	14	31	M
+5812p3_L20	15	78	M
+5812p3_L20	16	109	L	109 or 101? cut off
+5812p3_L20	17	380	L	very uncertain, possibly two groups, cut off at right edge
+5812p3_L21	1	83	M
+5812p3_L21	2	21	M
+5812p3_L21	3	27	M
+5812p3_L21	4	126	M
+5812p3_L21	5	130	M	end of cipher passage; clear French text begins after this
+5812p3_L21	6	w:Je	H	clear text resumes: "Je vous prie de faire mes tres humbles recommandations"
+5812p3_L21	7	w:vous	H
+5812p3_L21	8	w:prie	H
+5812p3_L21	9	w:de	H
+5812p3_L21	10	w:faire	H
+5812p3_L21	11	w:mes	M
+5812p3_L21	12	w:tres	M
+5812p3_L21	13	w:humbles	M
+5812p3_L21	14	w:recommandations	M	word continues/is cut at right edge, faint tail visible
+5812p3_L22	1	w:a	M	clear French text, second line of closing formula
+5812p3_L22	2	w:Monsieur	H
+5812p3_L22	3	w:le	M
+5812p3_L22	4	w:Duc	M
+5812p3_L22	5	w:mon	M
+5812p3_L22	6	w:beau	L	uncertain reading
+5812p3_L22	7	w:frere	M
+5812p3_L22	8	w:Monsieur	H	repeated per formula "Monsieur mon frere"
+5812p3_L22	9	w:mon	M
+5812p3_L22	10	w:frere	M
+5812p3_L22	11	w:et	L
+5812p3_L22	12	w:tout	L	uncertain, faint, "et tout vostre ami" or similar
+5812p3_L22	13	w:vostre	L	cut off at bottom of crop
+5812p3_L23	1	w:vostre	L	faint fragment top of crop, likely continuation from L22
+5812p3_L23	2	w:bien	L
+5812p3_L23	3	w:bon	L
+5812p3_L23	4	w:cousin	L	uncertain, faint word before comma
+5812p3_L23	5	w:Signe	L	uncertain, cursive flourish word
+5812p3_L23	6	w:au	L
+5812p3_L23	7	w:lieu	L
+5812p3_L23	8	w:que	L
+5812p3_L23	9	w:dessus	L
+5812p3_L23	10	w:le	L	uncertain, faded ink, "ce ... jour" formula
+5812p3_L23	11	w:jour	L
+5812p3_L23	12	w:janvier	L	date line below: place name then day, month
+5812p3_L23	13	w:1574	H	clear-text date of the letter, not a cipher group -- excluded from numeral stats
+5812p3_L24	1	w:Vostre	M	signature closing formula, large cursive letters
+5812p3_L24	2	w:bien	M
+5812p3_L24	3	w:bon	M
+5812p3_L24	4	w:frere	M
+5812p3_L24	5	w:a	L
+5812p3_L24	6	w:vous	L
+5812p3_L24	7	w:faire	L
+5812p3_L24	8	w:service	L	tail of word cut off at bottom of crop
+5812p3_L25	1	w:blank	L	crop shows only faint page texture/watermark shadow, no legible text; possible tail of a flourish top-right
+5812p3_L26	1	w:Guillaume	L	signature, cursive, right side of crop; heavily stylized, low confidence on exact letters
+5812p3_L27	1	w:blank	H	crop shows blank paper/page edge, no text visible
+5812p3_L28	1	w:blank	H	crop shows blank paper/bottom page edge (darkening/shadow only), no text visible
+5812p3_L29	1	w:caption	H	crop shows a printed/typed caption, not manuscript ink: source archive's own image caption/watermark, not part of the letter text
+5812p3_L30	1	w:caption	H	crop shows a printed/typed caption: source URL watermark, not manuscript content
