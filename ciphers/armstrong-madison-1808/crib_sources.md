@@ -128,3 +128,106 @@ touched, all fetches >=1.5s apart, descriptive User-Agent.
 4. Whether the 15 Feb 1808 Armstrong-to-Jefferson letter (`mtjbib018243`) has a Founders Online document ID
    of its own (would need Founders/Wayback, also blocked this pass) -- if so, its editorial note may say
    whether Jefferson forwarded or discussed it with Madison.
+
+## ARM-REC2 pass, 26 Sept 2026 -- attempted step 1 again; web.archive.org still unreachable
+
+**Host retested, still down.** Per this job's brief ("web.archive.org answered again at 07:26"), retested at
+07:29-07:32 UTC: a plain fetch of `https://web.archive.org/` (no path) and a CDX query for
+`founders.archives.gov/documents/Madison/99-01-02-2728` both returned `curl: (35) Recv failure: Connection
+reset by peer`, confirmed via the agent proxy's own status endpoint as `ws_closed_mid_exchange` (tunnel closed
+mid-exchange, not a proxy-side fault) -- the same failure signature ARM-REC logged at 07:11, now reproduced
+twice more with several minutes of real elapsed time between attempts, well past the one-retry-after-a-pause
+rule. `archive.org` itself (the non-Wayback host, `advancedsearch.php`) answered HTTP 200 in the same window,
+so the outage is specific to the `web.archive.org` Wayback subdomain, not Internet Archive generally. Founders
+Online's own site retested once directly (`https://founders.archives.gov/Metadata/founders-online-metadata.json`,
+a byte-range GET, browser UA): still the CloudFront empty-202 challenge, not retried further (per the
+existing playbook note). No other Wayback mirror or Memento aggregator is reachable from this container
+(`timetravel.mementoweb.org` does not resolve through the egress proxy). **Founders Online's own editorial
+notes to 99-01-02-2728, and the full text of every Feb-Aug 1808 Armstrong/Madison/Jefferson letter below, are
+still not fetchable this pass.** This is the second consecutive worker to find the host down; a third attempt
+should wait for a parent check-in to confirm the host has actually recovered before spending more requests on it.
+
+**Fallback route used instead: WebSearch title/index matching (not a page fetch).** Google's index carries
+exact Founders Online page titles and dates even though the pages themselves cannot be fetched from this
+container; this surfaces which documents exist and their document IDs, but **not** their editorial-note text
+(WebSearch's own synthesized "answer" text is unreliable here -- one query's summary restated the discredited
+AFIO "Decrypted Text" as if it were a real decode of the 20 Feb letter, which it is not, per Bourdeau's and
+Tomokiyo's adjudications already on file above; only the titles/URLs below are treated as evidence, not the
+prose summaries). Document IDs located this way, none of them fetched or confirmed against their own page
+content this pass:
+
+| Founders ID | Title (as indexed) | Collection |
+|---|---|---|
+| 99-01-02-2703 | To James Madison from John Armstrong, Jr., 15 February 1808 | Madison (already known, THE=972, ~72% coherent) |
+| 99-01-02-2728 | To James Madison from John Armstrong, Jr., 20 February 1808 | Madison (the target letter) |
+| 99-01-02-2745 | From James Madison to Thomas Jefferson, 25 February 1808 | Madison |
+| 99-01-02-2907 | To James Madison from John Armstrong, Jr., 5 April 1808 | Madison |
+| 99-01-02-2949 | From James Madison to Thomas Jefferson, 15 April 1808 | Madison |
+| 99-01-02-2962 | To James Madison from John Armstrong, Jr., 18 April 1808 | Madison |
+| 99-01-02-3082 = 99-01-02-8003 | To Thomas Jefferson from James Madison, 15 May 1808 | Madison / Jefferson (cross-listed; **new this pass**: the Jefferson-collection ID 8003 was not previously on file, only the Madison-collection 3082) -- this is the "undecyphered letter from A." letter, already quoted above from Tomokiyo |
+| 99-01-02-8006 | To Thomas Jefferson from James Madison, 16 May 1808 | Jefferson -- one day after the "undecyphered letter" note; **not** a reply from Jefferson, another Madison-to-Jefferson letter; not fetched, unknown whether it continues the topic |
+| 99-01-02-3466 | To James Madison from John Armstrong, Jr., 30 August 1808 | Madison (the postscript letter; content already known, see below) |
+| 99-01-02-8145 | To Thomas Jefferson from John Armstrong, Jr., 15 June 1808 | Jefferson |
+| 99-01-02-8708 | To Thomas Jefferson from James Madison, 18 September 1808 | Jefferson |
+| 99-01-02-7420 | To Thomas Jefferson from John Armstrong, Jr., 15 February 1808 | Jefferson -- **answers this brief's Armstrong-to-Jefferson question, see below** |
+| 99-01-02-7484 and 99-01-02-7514 | both indexed once each as "To Thomas Jefferson from James Madison" for late Feb 1808 (one search returned "25 February 1808" for 7484, a separate search returned "29 February 1808" for 7514) | Jefferson -- **the two dates may be a search-snippet conflation, not two confirmed distinct letters; unresolved, flag only** |
+
+No editorial-note text, no letter body, and no confirmation of a reference to the 20 Feb letter, a duplicate,
+or a changed cipher was obtained for any row above (title/date only). **This table is a fetch list for a
+successor once web.archive.org recovers, not a completed sweep of step 1.**
+
+**Armstrong-to-Jefferson, 15 Feb 1808 (this brief's specific question): Founders Online does print it, and no
+part of it is in cipher.** `99-01-02-7420` ("To Thomas Jefferson from John Armstrong, Jr., 15 February 1808",
+Jefferson Papers) is indexed with title and paraphrase content matching, word for word close, ARM-REC's own
+direct read of the loc.gov manuscript (`mtjbib018243`): the messenger who had carried despatches to Talleyrand
+in Poland, Admiral La Touche Tréville, and Lafayette's Louisiana land-grant difficulties. This is the same
+letter as loc.gov's item, now with its Founders Online document ID identified (not previously on file); ARM-REC's
+own direct manuscript read already established it is entirely in clear (no cipher, no code groups), so this pass
+adds only the Founders cross-reference, not a changed answer -- **no part of the 15 Feb Armstrong-to-Jefferson
+letter is in cipher**, confirmed independently by the primary-source read, not by the (unverified) Founders title
+match alone.
+
+**30 Aug 1808 postscript: code and first groups (from Bourdeau's page, already on disk, no host needed).**
+Bourdeau's own write-up (`sources/cryptiana/blog/dbourdeau-cyphersolver-armstrong.html`, already fetched by
+ARM-REC, re-read here) answers this without needing Founders/Wayback at all: the postscript is in **THE=972**,
+Armstrong's ordinary office code with Madison (the *same* code that reads the 15 Feb and 22 Feb letters at
+~72% and ~90%+, and *not* the unknown code of the 20 Feb letter). Founders Online prints the groups
+undeciphered as Early Access document **99-01-02-3466**. Bourdeau's own transcription of the first line
+(quoted exactly): "1394. 1116. 1273. 250. 1165. 1405." -- decoding (per his table) to "Ru-s-s-el ought to"
+(1394=Ru inferred from three independent alphabetical-neighbour checks, 1116=s from the known-plaintext 1806
+letter, 1273=el inferred, 250=ought inferred, continuing into the next line "970.[=the, Founders misprints
+"970" for the manuscript's "972"] 148. 1459. 1482. 1201. 821. 130. 821." Bourdeau's full decoded postscript
+(49 groups, 48 determined, one probable slip): "Russel ought to be the consul: he is an American by birth, and
+is much better qualified than any other candidate. In a word, he is above men in general. Next to him in
+fitness is O'Mealy, but he is, like Warden, an Irishman[-re, one digit short of 'man']." This is the private
+letter recommending a candidate (John Russel, over David Bailie Warden and one O'Mealy) for the Paris consular
+post -- unrelated in subject and code to the 20 Feb letter, but it is the one Armstrong-Madison cipher passage
+from 1808 that has actually been read, and Bourdeau's own page states plainly that Founders prints it
+undeciphered and no full decipherment was found in archive, print, or online before his own recovery.
+
+## Requests this pass (ARM-REC2)
+
+web.archive.org: 3 failed (connection reset, host outage persists, confirmed via the agent proxy's own
+relay-failure log, not a proxy fault) -- stopped per the good-citizen rule, no further attempts this pass.
+founders.archives.gov: 1 (the metadata JSON, byte-range, browser UA; empty CloudFront 202, not retried, matches
+the existing playbook note). archive.org: 2 (one `advancedsearch.php` confirming the host is up generally, one
+broad keyword search that returned noise and was not pursued further). www.archives.gov: 1 (the Founders
+Online metadata dataset page, confirms the JSON dump is metadata-only -- titles/dates/ids, not editorial-note
+text -- so it would not have answered this brief's question even if fetchable). WebSearch: 7 queries (title/ID
+lookups per the table above). No DECODE, no logins, no credentials touched.
+
+## Still open for a successor (updated)
+
+1. Every document ID in the table above needs an actual fetch (via Wayback once it recovers, or Founders
+   Online directly if its own CloudFront challenge ever clears for scripts) to read its editorial notes and
+   body text -- this pass only located titles/dates, not content.
+2. 99-01-02-7484 vs 99-01-02-7514 (both "Madison to Jefferson", late Feb 1808, two different dates from two
+   different searches) needs a direct fetch to resolve which date is correct and whether they are the same or
+   different letters.
+3. Jefferson's own reply to Madison's 15 May 1808 "undecyphered letter" note (99-01-02-3082/8003) has still not
+   been located; 99-01-02-8006 (16 May, Madison to Jefferson again) is the nearest candidate by date but is not
+   confirmed to touch the topic.
+4. The 21 Feb-31 Aug 1808 Armstrong-to-Madison/Madison-to-Armstrong sweep (this brief's own step 1) is only
+   partially covered by the table above (5 of the roughly 15-20 letters in that window that Founders is likely
+   to hold); a successor with web.archive.org access should step through Founders' own per-correspondent index
+   pages rather than guessing document-ID titles one at a time via WebSearch.

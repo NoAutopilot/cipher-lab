@@ -279,3 +279,43 @@ HYPOTHESES.md's ARM-A2 section, which also has the per-table table and the salad
 reading (rule 10); the ladder's family B (vocabulary prior, not direct value transfer) and family E (recovery)
 remain open. `specs/armstrong-madison-1808.json`'s `cheap_test_done.A2` records the same summary. No network
 access this pass (offline job per brief); 0 requests to any host.
+
+## ARM-REC2 pass, 26 Sept 2026 -- retried ARM-REC's step 1; web.archive.org still down
+
+Full detail in `crib_sources.md`. **web.archive.org did not recover**: retested at 07:29-07:32 UTC (three
+fetches, root page and a CDX query), all `Connection reset by peer`, confirmed via the agent proxy's own
+relay-failure log as the same host-side outage ARM-REC found at 07:11, not a proxy fault -- `archive.org`
+itself (non-Wayback) answers fine in the same window, so the outage is specific to the Wayback subdomain.
+Founders Online direct (the metadata JSON dump) retested once, still the CloudFront empty-202 challenge, not
+retried further. Founders' own editorial notes to 99-01-02-2728, and the full text of the 21 Feb-31 Aug 1808
+Armstrong/Madison/Jefferson letters this brief's step 1 asks for, remain unfetched; this is now the second
+consecutive worker to find the host down, so a parent check-in should confirm real recovery before a third
+worker spends requests on it.
+
+**Fallback that did produce results, using no Wayback/Founders fetch at all:**
+1. **30 Aug 1808 postscript code and first groups** -- answered in full from Bourdeau's page already on disk
+   (no host needed): **THE=972**, Armstrong's ordinary office code with Madison (not the 20 Feb letter's
+   unknown code). First groups quoted exactly: "1394. 1116. 1273. 250. 1165. 1405." Full 49-group postscript
+   decodes (48 of 49 determined): "Russel ought to be the consul: he is an American by birth, and is much
+   better qualified than any other candidate. In a word, he is above men in general. Next to him in fitness is
+   O'Mealy, but he is, like Warden, an Irishman[-re]." Founders prints the groups as Early Access document
+   99-01-02-3466, undeciphered.
+2. **Armstrong-to-Jefferson 15 Feb 1808 (`mtjbib018243`): does Founders print it, any part in cipher?** Founders
+   Online does print it, as Jefferson Papers document **99-01-02-7420** (identified this pass, not previously on
+   file) -- title and indexed paraphrase match ARM-REC's own direct manuscript read closely (the Talleyrand
+   messenger, Admiral La Touche Tréville, Lafayette's Louisiana grant). **No part is in cipher** -- confirmed
+   independently by ARM-REC's own primary-source read (entirely in clear), not by the Founders title match
+   alone, which was not fetched and cannot itself be trusted for content (WebSearch's own synthesized summaries
+   proved unreliable this pass -- one query restated the already-discredited AFIO "Decrypted Text" as if it were
+   a real decode, which crib_sources.md flags explicitly).
+3. A table of 13 further Founders document IDs (titles/dates only, located via WebSearch, none fetched) for
+   Armstrong-Madison and Madison-Jefferson correspondence Feb-Sept 1808, as a fetch list for whichever
+   successor next has a working Wayback route -- full table in crib_sources.md. New cross-reference found: the
+   "undecyphered letter" note (99-01-02-3082, Madison collection) is cross-listed as **99-01-02-8003** in the
+   Jefferson collection. Jefferson's own reply to that note is still not located; the nearest dated candidate
+   (99-01-02-8006, Madison to Jefferson again the next day) is unconfirmed and not itself a reply from Jefferson.
+
+Requests this pass: web.archive.org 3 failed (stopped, host outage persists). founders.archives.gov 1 (metadata
+JSON, empty 202, not retried). archive.org 2. www.archives.gov 1 (confirmed the Founders metadata dataset is
+titles/ids only, would not have answered this brief even if fetchable). WebSearch 7 queries. No DECODE, no
+logins, no credentials touched.
