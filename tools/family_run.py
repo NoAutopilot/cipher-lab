@@ -38,6 +38,10 @@ Families (tools/families/<name>.py, each wraps an existing tool, see the package
   permuted_tableau   book key through a GENERAL permuted tableau, first B''-c: a free permutation on the cipher side
                      (family B'', GOLD-B2D 25 Sept 2026): sort-match start, anneal under an n-gram sum-stream proxy,
                      beam rescoring; control = random S3 of 26! (--param kcorpus=tools/data/nl20 chains=3 evals=30000)
+  nomenclator        two-level numeric word code (family C, armstrong-madison-1808, ARM-C1 26 Sept 2026): particle
+                     block 1-99 + family book >= 100 (decade = family, units digit = member slot), word-trigram Gibbs
+                     anneal with the sibling-vocabulary prior; `*`/`**`/`<..>` tokens are OOV wildcards; the control
+                     is a letter from a HELD-OUT corpus file (--param holdout=5 sweeps=30), run with --tokens space
 
 Modes: --target-only-if-gated (default) runs the control, then the target only if the gate is met;
 --control-only runs the control alone (calibration) and logs it. --seeds N runs the control on seeds
