@@ -778,3 +778,24 @@ of 1807-1809 in the LC Madison Papers (22 Mar 1807, 17 May 1807, 8 Jan 1808, 5 F
 clear; the one cipher remark (22 Mar 1807) concerns the Burr/Wilkinson cipher, and the 8 Jan 1808 mention of Armstrong
 is the ordinary pouch. Detail: NOTES.md, crib_sources.md, pool/LIVINGSTON.tsv. WE027 (Livingston's own code) remains
 untested for want of a table. Family E: Livingston lead closed as a search result; ARM-JEF next.
+
+## Family E, ARM-JEF screen (26 Sept 2026 12:20 UTC, LANE ARM2 worker ARM-JEF, session_01C61yQSynUJWJkkFAETscdw)
+
+Screen, not a result (one line of 15 groups, rule 3). Finished the Jefferson-channel page-1-only sample (ARM-REC3)
+and ran the two named loc.gov cipher/cypher searches (step (c) of this job's brief). Every remaining page of
+mtjbib017827 (12pp) and mtjbib018840 (10pp), and every page of mtjbib020076, mjm015339 and mjm015558, read
+clear_text (35 pages, 3 Sonnet subagent calls; detail NOTES.md "ARM-JEF pass", pool/LOC-ARMSTRONG.tsv). The
+`q=Armstrong cipher` search on the James Madison Papers (1806-1810) surfaced one item not previously in this pool,
+`mjm014590` (4 May 1806, "Partly in cipher and includes a copy"), screened here:
+
+| Item | Date | Located | THE972 coverage | digit 0/1 share | digit 2/3/5/9 share | top digit |
+|---|---|---|---|---|---|---|
+| mjm014590 | 4 May 1806 | James Madison Papers p1 (Duplicate/Private; p4 a second copy of the same text) | 14/15 (93%) | 7% | 53% | 2 |
+| target | 20 Feb 1808 | roll 14 f.0030-0033 | low (ARM-A2: 14-108/369) | about 43% | about 13% | 0 |
+
+mjm014590 matches THE=972's own real usage (flat-with-noise, top digit ~2), not the target's signature -- **not a
+pool candidate**, and now the earliest confirmed THE=972 usage on file (nearly two years before the target letter).
+Net: no pool candidate this pass. Family E: the Jefferson-channel and 1806-1810 Madison-Papers cipher/cypher search
+are now both exhausted at the granularity checked; item (d) of this job's brief (remaining pages of the still-
+page-1-only 2-/3-page pool items) is the named next step for a successor, not attempted here (out of the priced
+budget).

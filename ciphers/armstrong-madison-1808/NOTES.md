@@ -824,3 +824,51 @@ which stays untested for lack of a reachable table. Family E: no pool candidate 
 Requests: loc.gov 6 (1 collection search + 5 item-metadata fetches). tile.loc.gov 8 (7 thumbnails + 1 native-res
 fetch). web.archive.org 5 (2 CDX + 2 document fetches all succeeded; 1 CDX query failed twice, not retried
 further). All >=1.5s apart, descriptive User-Agent, no logins, no credentials touched. No subagent used.
+
+## ARM-JEF pass, 26 Sept 2026 (LANE ARM2 worker ARM-JEF) -- Jefferson-channel remaining pages, unchecked items, cipher/cypher search
+
+Finished ARM-REC3's page-1-only sample: fetched and classified every remaining page of the two long
+Armstrong-to-Jefferson letters, all pages of the three previously-unchecked items, and ran the two loc.gov
+cipher/cypher searches named in this job's step (c). Full per-item detail (pages_checked column) in
+`pool/LOC-ARMSTRONG.tsv`.
+
+**(a) The two long letters, finished**: mtjbib017827 (28 Oct 1807, 12 pp) pages 2-12 and mtjbib018840 (28 Jul
+1808, 10 pp) pages 2-10, all fetched from tile.loc.gov (~600px service derivatives) and classified by two Sonnet
+subagent calls (12 + 12 images, split across the two items). **All 22 pages read clear_text.** Both letters are
+now fully checked, cover to cover: no coded passage anywhere in either.
+
+**(b) The three previously-unchecked items, now fully read**: mtjbib020076 (19 Sep 1809, 4 pp), mjm015339 (6 Jun
+1809, 6 pp), mjm015558 (18 Sep 1809, "Includes postscript of Sept 19", 3 pp) -- all pages fetched and classified
+(1 Sonnet subagent call, 9 images). **All 13 pages read clear_text**, including the named "postscript" page
+(mjm015558 p3) and mjm015339's docket leaf (p6, endorsed "Armstrong Jany 20 1809" -- a date that does not match
+the item's own 6 June 1809 title; flagged, not resolved, likely an unrelated docket reused on the same leaf).
+
+**(c) loc.gov search, `q=Armstrong cipher` / `q=Armstrong cypher`, dates=1806/1810**: run against both the
+Thomas Jefferson Papers and James Madison Papers collections (`/collections/<slug>/?q=...&dates=1806/1810&fo=json`
+-- the `fa=partof:` facet form tried first silently returns 0 hits regardless of query, confirmed by re-running
+the same four queries against the collection-scoped endpoint, which is what ARM-REC3/ARM-LIV both used; flagging
+this for any successor who tries `fa=partof:` again). Thomas Jefferson Papers: 0 hits both spellings. James
+Madison Papers: "cypher" 0 hits; **"cipher" 2 hits** -- `mjm015002` (30 Aug 1808, already on file, THE=972,
+Bourdeau-decoded, ARM-REC2) and **`mjm014590` (4 May 1806, "Partly in cipher and includes a copy") -- not
+previously in this pool**, added per this step's instruction.
+
+**mjm014590 screened**: read p1 (Paris, 4 May 1806, marked "Duplicate"/"Private") directly -- heavily coded,
+numeral groups throughout, "972" recurring at high frequency (Armstrong's office code with the State Department).
+p4 is a second copy of the same text (identical opening numeral groups), confirming it is a duplicate leaf of p1,
+not new content; p2/p3/p5/p6 not separately screened. Eye-transcribed one 15-group line from p1 and ran
+`pool/signature_test.py`: THE972_bourdeau.tsv coverage 14/15 (93%), units-digit 0/1 share 7%, digit-2/3/5/9 share
+53%, top digit 2 -- **matches THE=972's own real usage (flat-with-noise, top digit ~2), not the target's signature
+(0/1-heavy, 2/3/5/9 rare)**. A screen at N=15 (rule 3), not a control-backed result: **not a pool candidate**. This
+item predates the target letter by nearly two years and is the earliest confirmed THE=972 usage on file.
+
+**Net effect on family E**: no key, decode, or coded sibling letter found. The Jefferson-Armstrong private channel
+(13 items, ARM-REC3) is now fully read at every page (all clear_text) except the two items ARM-REC/ARM-REC2 already
+resolved as known; the Madison Papers 1806-1810 cipher/cypher search adds one new-to-the-pool item (mjm014590),
+screened and excluded. Status stays open (rule 5); no NEAR.md row. Item (d) of this brief (remaining pages of the
+still-page-1-only 2-/3-page items) was not attempted -- not in the priced-per-unit budget, left for a successor if
+the lane wants it.
+
+Requests: www.loc.gov 14 (6 item-metadata `?fo=json` fetches + 8 collection searches, including 4 with the wrong
+`fa=partof:` facet form that returns 0 regardless of query -- see above). tile.loc.gov 41 (35 page thumbnails across
+5 items + 6 for mjm014590). All >=1.5s apart, descriptive User-Agent, no logins, no credentials touched. 3 Sonnet
+subagent calls (12+12+9 images), one at a time.
