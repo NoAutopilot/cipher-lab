@@ -150,3 +150,65 @@ letterbook) for a copy of this same dispatch.
 
 Grades: none (no reading attempted). Novelty: not assessed (rule 10 — this is a check-solved verdict, not a
 verifier pass).
+
+## IMG-FETCH: +/-10-folio thumbnail sweep of fr.7129 around f.268 (26 Sept 2026)
+
+Per NEXT-STEPS.tsv's named follow-up (not pursued before this pass): fetched a recto-only thumbnail
+(400px wide) for every folio 258-278 of fr.7129 (`btv1b8555834s`; canvas = 2*folio+5 for recto,
+confirmed against the manifest), saved to `images/sweep/` with `manifest.json`. 27 gallica.bnf.fr
+requests (1 manifest + 21 thumbnails, 5 needing one retry after `Recv failure: Connection reset by
+peer`), all >=1.8s apart. No cipher reading performed; this is a look for an unlisted duplicate
+letter, a docket naming the target, or other cipher material nearby -- not a decode.
+
+**Folio by folio:**
+- **258:** a different ciphered letter (digit-group cipher mixed with clear French), item numbered
+  "18" in the margin -- not the target, no docket naming Villeroy or Bongars.
+- **259:** blank.
+- **260:** another ciphered letter (digit groups), dated in the body ("22 [...] du mois d'octobre"),
+  red wax/ink seal -- a different item, not the target.
+- **261:** a docket/closing leaf, plain French: "de Monsr de Lomenie a plr Dieu... fait le [blank]
+  de septembre 1604" -- a different sender (Loménie) and month (September, not November); no
+  cipher on this leaf.
+- **262:** a ciphered letter (digit groups) addressed "Monsieur," -- likely the Loménie letter
+  continuing from f.261's docket; not the target.
+- **263:** ciphered letter continuation (digit groups throughout).
+- **264:** plain French continuation of the same letter, ending in a signature flourish -- no
+  cipher, no docket naming the target.
+- **265:** blank.
+- **266:** a docket/closing leaf, plain French, red seal -- no cipher, no docket naming the target.
+- **267:** a plain-French letter closing "Monsieur vre... serviteur... a Fontainebleau le 19e
+  [8bre] 1604" (19 October 1604) -- close in date to the target (2 Nov 1604) but a different,
+  uncoded letter; no docket naming Villeroy or Bongars.
+- **268:** the target letter itself (recto) -- confirmed present and unchanged, cipher block at
+  the foot, red seal; not re-read here (already documented elsewhere in this repo).
+- **269:** blank.
+- **270:** **not a letter -- a multi-column tabular page of code words and short glyphs/numbers**
+  (place names, titles, ordinary words each paired with a short code), i.e. cipher key/nomenclator
+  material, sitting two folios after the target.
+- **271:** continuation of the same tabular key material as f.270 (more columns of words paired
+  with codes).
+- **272:** blank -- the table ends at f.271.
+- **273:** blank.
+- **274:** **a distinct cipher key page: a full alphabet-substitution grid (columns headed by
+  letters, two-digit numbers below each) plus a separate list of titles ("Roy d'Espagne", "Roy
+  d'Angleterre", etc.) each paired with a number code** -- a second, differently-shaped key table
+  from the one at f.270-271.
+- **275:** continuation of key material, this time with single symbolic glyphs in the left margin
+  paired with code groups -- a third distinct-looking key/nomenclator table.
+- **276:** blank (foxed).
+- **277:** blank (foxed).
+- **278:** blank.
+
+**Result: no unlisted duplicate or minute of the target letter, and no docket naming Villeroy,
+Bongars or 2 November 1604, found in this +/-10-folio range.** The two nearby uncoded letters
+(f.264-267, f.261-266) are dated September and 19 October 1604 and signed/addressed to different
+correspondents, not a copy of the target. **However, three folios in this same range (270-271,
+274, 275) carry what look like cipher key or nomenclator tables** (word/code pairs, an alphabet-
+substitution grid, and a symbol-code list respectively) rather than letters -- not identified here
+as *the* key for the target's cipher no.3 (that would need actual decoding, out of scope for this
+pass and not attempted), but flagged as material worth a solver's attention given its proximity (2
+and 6 folios from f.268) and its presence in the same bound volume. No novelty or cryptanalytic
+claim is made (rule 10); this is a description of what four thumbnail pages show, nothing more.
+
+Status unchanged: `blocked` (per the M9 gate: Tomokiyo's paper still unread). file_shrink_guard
+clean on NOTES.md and images/sweep/*.

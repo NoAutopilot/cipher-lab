@@ -1,0 +1,32 @@
+{
+  "source": "BnF fr.7129 (ark:/12148/btv1b8555834s), recto-only thumbnail sweep of folios 258-278 (+/-10 of the target f.268)",
+  "fetched": "26 Sept 2026",
+  "why": "NEXT-STEPS.tsv row fr7129-villeroy-bongars-1604's named follow-up: a +/-10-folio thumbnail sweep of fr.7129 around f.268 for an unlisted duplicate or minute (Luzerne-rule sweep), never pursued before this pass.",
+  "canvas_rule": "canvas = 2*folio + 5 for recto (confirmed against the manifest: canvas 541 = folio 268r), verso = 2*folio + 6. Only recto fetched (one thumbnail per folio) to stay under the image cap; a folio flagged below can be refetched at full resolution including its verso by a future pass.",
+  "files": {
+    "f258r_canvas521.jpg": {"folio": 258, "canvas": 521, "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8555834s/f521/full/400,/0/native.jpg"},
+    "f259r_canvas523.jpg": {"folio": 259, "canvas": 523, "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8555834s/f523/full/400,/0/native.jpg"},
+    "f260r_canvas525.jpg": {"folio": 260, "canvas": 525, "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8555834s/f525/full/400,/0/native.jpg"},
+    "f261r_canvas527.jpg": {"folio": 261, "canvas": 527, "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8555834s/f527/full/400,/0/native.jpg"},
+    "f262r_canvas529.jpg": {"folio": 262, "canvas": 529, "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8555834s/f529/full/400,/0/native.jpg", "note": "fetched after one retry (Recv failure: Connection reset by peer)"},
+    "f263r_canvas531.jpg": {"folio": 263, "canvas": 531, "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8555834s/f531/full/400,/0/native.jpg"},
+    "f264r_canvas533.jpg": {"folio": 264, "canvas": 533, "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8555834s/f533/full/400,/0/native.jpg"},
+    "f265r_canvas535.jpg": {"folio": 265, "canvas": 535, "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8555834s/f535/full/400,/0/native.jpg", "note": "fetched after one retry"},
+    "f266r_canvas537.jpg": {"folio": 266, "canvas": 537, "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8555834s/f537/full/400,/0/native.jpg"},
+    "f267r_canvas539.jpg": {"folio": 267, "canvas": 539, "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8555834s/f539/full/400,/0/native.jpg", "note": "fetched after one retry"},
+    "f268r_canvas541.jpg": {"folio": 268, "canvas": 541, "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8555834s/f541/full/400,/0/native.jpg", "note": "the target letter itself (recto), already documented at higher resolution elsewhere in this folder"},
+    "f269r_canvas543.jpg": {"folio": 269, "canvas": 543, "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8555834s/f543/full/400,/0/native.jpg"},
+    "f270r_canvas545.jpg": {"folio": 270, "canvas": 545, "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8555834s/f545/full/400,/0/native.jpg"},
+    "f271r_canvas547.jpg": {"folio": 271, "canvas": 547, "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8555834s/f547/full/400,/0/native.jpg", "note": "fetched after one retry"},
+    "f272r_canvas549.jpg": {"folio": 272, "canvas": 549, "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8555834s/f549/full/400,/0/native.jpg"},
+    "f273r_canvas551.jpg": {"folio": 273, "canvas": 551, "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8555834s/f551/full/400,/0/native.jpg"},
+    "f274r_canvas553.jpg": {"folio": 274, "canvas": 553, "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8555834s/f553/full/400,/0/native.jpg"},
+    "f275r_canvas555.jpg": {"folio": 275, "canvas": 555, "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8555834s/f555/full/400,/0/native.jpg"},
+    "f276r_canvas557.jpg": {"folio": 276, "canvas": 557, "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8555834s/f557/full/400,/0/native.jpg"},
+    "f277r_canvas559.jpg": {"folio": 277, "canvas": 559, "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8555834s/f559/full/400,/0/native.jpg", "note": "fetched after one retry"},
+    "f278r_canvas561.jpg": {"folio": 278, "canvas": 561, "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8555834s/f561/full/400,/0/native.jpg"}
+  },
+  "requests": {
+    "gallica.bnf.fr": "1 manifest.json fetch + 21 thumbnail fetches (5 needed one retry each after Recv failure: Connection reset by peer) = 27, all >=1.8s apart, browser-style UA"
+  }
+}
