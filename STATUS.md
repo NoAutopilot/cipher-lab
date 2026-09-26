@@ -90,6 +90,35 @@ identified, the catalogue's date and senders corrected. The "first verified N3" 
 Orange 1572 detector candidate also fell (partial decipherment printed 1842). Zero unique solves today; two
 over-claims prevented by the gates before anything left the repository.
 
+## LANE ARM2 handoff (session_01CbcHcbkYKV5HRKwBW4w7aq), 26 September 2026, 11:33-13:47 UTC (closed idle-standing)
+
+Target: armstrong-madison-1808, status **open**, no NEAR row. Brief: `.claude/briefs/runs/2026-09-26-lane-arm2-orchestrator.md`
+(COMMON as LANE ARM's). Authoritative table: `ciphers/armstrong-madison-1808/HYPOTHESES.md` "Summary, cycle 2" (above cycle 1's).
+Spend: three workers 20.97 USD (ARM-LIV 3.69 D, ARM-JEF 4.61 D, ARM-S3 12.67 D- at 2.1x cap); ARM-POOL2 (7.49) was ledgered
+by the parent; orchestrator 3.67 at 13:44 by get_session (self-ledger row; the parent may update it at archive).
+
+What cycle 2 established:
+- E: no second letter in the target's code in the frame-0645 docket (ARM-POOL2, 4 of 6 located, all THE=972), the five
+  Livingston-to-Madison letters 1807-09 (ARM-LIV, all clear; 5 Feb 1808 a routine recommendation), every page of the
+  Armstrong-Jefferson channel and the unchecked Armstrong items at LOC (ARM-JEF, 35 pages clear; the one more coded
+  item, 4 May 1806, screens THE=972). Search results and one-line screens, not controlled tests.
+- S: ARM-S3 compared Blanchard 1787, Annet 1761, Holdsworth and Aldridge 1770, Lewis 1820; its Taylor known-answer
+  re-run drifted 0.211 on freq_score from ARM-S2's, over the 0.1 tolerance, so all four are non-tests and the
+  subagent symbol-match is retired for this family (rule 3, repeated-attempt shape c: untested-by-this-tool).
+- Status word: ARM-S3's section says "partial"; the summary keeps `open`, as ARM-CONS1 did for cycle 1's non-test
+  (no family beat a control). Parent's call if rule 5's "control showed the negative was not a real test" should
+  make it `partial` with a NEAR row.
+
+**Lane state: idle-standing, blocked on ASKS row 66** (the Papers of James Madison editors, via the owner: any other
+letter in this code or with these marks, a key, a decode, or the "other correspondent"). Draft:
+`outreach/armstrong-madison-editors.md` (status draft; recipient jmadison@virginia.edu read from the project's contact
+page 26 Sept 13:43 UTC; Outreach gate 1 unmet -- no AUDIT.md -- so the owner either waives it for a question that
+states no reading or the parent briefs a verifier). No check-in armed. Exit: ASKS 66 answered, or new material from
+outside the lane (a second same-code letter, a WE027 copy, a specialist's identification of the marks); the parent then
+starts ARM3 naming what changed. Untried but not cheap: exhaustive roll 14/13 frame survey (rejected by ARM-CONS1),
+other correspondents' papers outside LOC/RG 59 (Erving, the New York circle; no reachable catalogue found).
+Open flags: none. Live workers: none.
+
 ## LANE ARM handoff (session_011gEKqukZAxE6FjtQCzsUQ8), 26 September 2026, 06:49-10:52 UTC (closed at ~440k context)
 
 Target: armstrong-madison-1808 (John Armstrong to James Madison, Paris, 20 Feb 1808), status **open**, no NEAR row (no
