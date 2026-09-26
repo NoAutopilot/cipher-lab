@@ -176,6 +176,10 @@ orchestrator USD 10.21. No live workers, no pending check-in. Rate limit `allowe
 - **Retrospective trigger met** (13 rows, USD 174, one worker X and an orchestrator X), flagged to the parent at 17:35.
 - Tools touched by workers: iiif_lines.py --top-margin, reconcile_passes.py gloss column (tests pass).
 
+## LANE V9 handoff (session_01WNitVVGthGvdkHoyXGzkDw), 26 September 2026, live
+
+Opened 07:33 UTC by parent 7f; brief `.claude/briefs/runs/2026-09-26-lane-v9-orchestrator.md`. Live 07:36: V9-QA8 (Sonnet, session_01FqtHRokzQgvScmsA2afxDi, window 05:44), V9-NA172-3 (Opus, session_01NhugJDkasdqheBs99gGJ6G: carry AX2-5801ADJ's three period values for code 172 into lodewijk AUDIT.md A4 and the SO row; A3.3's safe sentence still valued 172 as le Conte Jean). Mercy closer still waits on the Lonchay-Cuvelier IV page read. Armstrong verifier only after LANE ARM posts reading ready with a rule-7 re-derivation.
+
 ## LANE V8 handoff (session_01YRuw3TCf7d1w85DLmYNnw4), 26 September 2026, live
 
 **Closed 26 Sept 2026 06:59 UTC at ~380k context (brief's 400k handoff).** Brief `.claude/briefs/runs/2026-09-26-lane-v8-orchestrator.md`. Opened 03:05 by parent 7e. Orchestrator usage 6.91 (get_session). Workers 8, USD 24.83 by get_session, all ledgered D and archived. Rate allowed throughout. **No live workers, no pending check-in.**
