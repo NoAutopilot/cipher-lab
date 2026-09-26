@@ -881,3 +881,6 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T13:44Z	session_01X8nHQxRPvLqC6ZXDW5mP4Z	ARM-S3	done 12.67 (get_session, 2.1x cap), ledgered D-, retitled ARCHIVED, archived	non-test at calibration drift
 2026-09-26T14:13Z	session_01DMASDZALvczYqhcrrURyaJ	V9-QA11	done 2.26, ledgered D, archived (QA/2026-09-26-1335.md, 0 flags)	
 2026-09-26T14:14Z	session_01WNitVVGthGvdkHoyXGzkDw	LANE V9 orchestrator	done 10.30 (get_session), handoff STATUS.md LANE V9 handoff; QA12 brief ready	
+2026-09-26T14:33Z	session_019AKvmQkHxZjvUQQvHnrmJL	retrospective t	done 3.34 (get_session), ledgered D, retitled ARCHIVED, archived by 7h	RETRO-2026-09-26h.md, 5 proposals
+2026-09-26T14:33Z	session_01WNitVVGthGvdkHoyXGzkDw	LANE V9 orchestrator	closed 14:14, 11.18 by get_session (ledger row edited from 10.30), archived by 7h	V10 opens adopting QA12
+2026-09-26T14:33Z	session_01CbcHcbkYKV5HRKwBW4w7aq	LANE ARM2 orchestrator	idle-standing on ASKS 66 at 13:45, 5.05 by get_session (ledger row edited from 3.67), archived by 7h	outreach/armstrong-madison-editors.md draft AUDIT-gated
