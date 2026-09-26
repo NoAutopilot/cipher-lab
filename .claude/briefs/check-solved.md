@@ -77,6 +77,13 @@ déchiffré", "in cipher, not deciphered", and their variants. Gate every hit fi
 cipher groups at all before scoring it `open`: D1-CHECK's three-marker test (`ciphers/_triage/doria-donjuan-1568.md`)
 is the worked example -- notes-only closes the item.
 
+An "open, not digitised" verdict names the holding catalogue record and quotes its availability flag, per
+`tools/data/catalogue_ladders.tsv` (LADDER-TOOL, 26 Sept 2026, CLAUDE.md Usage 8a) -- an image portal's "no items"
+is a search result, not a digitisation verdict (L19, 26 Sept 2026): check the ladder for the target's institution
+before writing "not digitised", and cite the ark or record URL and the quoted flag ("Not available online",
+"available online", a viewer or IIIF link) in the same sentence, the same shape `tools/lq_answer_check.py` gates
+on the local-queue-runner side of this loop.
+
 For an EMLO-sourced item, query the manifestation's own Solr note (`emlo.bodleian.ox.ac.uk/solr/all/select?q=...`,
 field `bibo_Note`) before falling back to the collection-level finding-aid title -- the two can disagree within one
 volume (EM3-CHECK, 26 Sept 2026: Bodleian MS Eng. misc. c.382).

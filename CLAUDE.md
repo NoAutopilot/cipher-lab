@@ -478,7 +478,10 @@ Every brief states a cap in dollars of usage (the session metadata's cost figure
    (the intake gate), `tools/room.py` (ROOM.md hygiene), `tools/ledger_check.py` (outcome codes),
    `tools/orphan_check.py` (26 Sept 2026: an orphaned session, trigger, ROOM.md claim or unledgered ASSIGNMENTS
    row across an orchestrator or lane swap; run at every parent check-in and both sides of a hand-over,
-   `.claude/briefs/parent.md` duty 3a), `tools/family_run.py`
+   `.claude/briefs/parent.md` duty 3a), `tools/lq_answer_check.py` (26 Sept 2026, the L19 incident: a
+   LOCAL-QUEUE.tsv runner negative -- "no items", "not found" -- is gated on carrying a holding-catalogue record
+   and its quoted availability flag from `tools/data/catalogue_ladders.tsv` before it lands, since an image
+   portal's "no items" is a search result, not a digitisation verdict), `tools/family_run.py`
    (rule 3: a hypothesis family runs on a target only after its matched control has run and read; both numbers are written
    side by side to `ciphers/<t>/HYPOTHESES.md`), `tools/near_check.py` (rule 5's near-solve amendment: a NEAR.md/status.json
    `near` target must never read `closed-negative`, the two registers must agree, and a row stale past 48 hours is flagged).

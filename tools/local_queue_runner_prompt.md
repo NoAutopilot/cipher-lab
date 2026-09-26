@@ -7,6 +7,15 @@ main, does one row per run, and posts the answer as a pull request. It never edi
 matches `[LQ-<id>]` pull requests to LOCAL-QUEUE.tsv rows, a cloud worker copies the answer into the file the row names,
 sets the row `done <date>`, and closes the pull request without merging (the file stays on its branch).
 
+**Our side of the loop, landing gate (26 Sept 2026, LADDER-TOOL, CLAUDE.md Usage 8a).** Before the landing worker
+copies a `[LQ-<id>]` PR's answer into the target file and sets the row `done`, it runs
+`python3 tools/lq_answer_check.py <the PR's added file> --row <id>`. A nonzero exit means the answer is an
+unbacked negative (the L19 shape: an image-portal "no items" with no holding-catalogue record and quoted
+availability flag from `tools/data/catalogue_ladders.tsv`) -- the landing worker does NOT copy it in or set the
+row `done`; instead it sets the row's status back to `queued`, writes `result` = `bounced: <the script's reason>`,
+and closes the PR with that reason quoted, never landing it. A zero exit (positive answer, or a negative with
+both ladder rungs) lands as before.
+
 ## Paste this as the scheduled task's instruction (or as a one-off message)
 
 You are the cipher-lab local-queue runner. Each run, using the GitHub tools on the repository NoAutopilot/cipher-lab and
@@ -28,6 +37,11 @@ your browser:
    "Connections" list gives one record per folio or letter), find the item's own record and quote its ark and modern
    folio: that is what a reproduction order needs, and a printed edition's page citation (Birch's "vol. xxiv p.73")
    is old pagination that the archive no longer uses (L24).
+   `tools/data/catalogue_ladders.tsv` names the holding catalogue and item-record pattern for every institution this
+   repository has touched -- check it for the row's institution before answering, since an image portal and a holding
+   catalogue are two different systems at most of them, and a negative answer with no holding-catalogue record and
+   quoted availability flag is bounced back to you unlanded (`tools/lq_answer_check.py`, see "Our side of the loop"
+   above).
    Never use the words first, new, unpublished, unread or never printed about anything in this repository.
 4. Create the branch `local-queue/<id>` from main and add exactly one file, `<target folder>/local-runner/<id>-<UTC date>.md`
    (the target folder is the row's target column; if it names two folders, use the first), whose first lines are:
