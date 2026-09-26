@@ -4,10 +4,16 @@
   "archive_org_item": "https://archive.org/details/campaigninvirgin02stevuoft",
   "rights": "public domain (possible-copyright-status NOT_IN_COPYRIGHT per archive.org metadata); University of Toronto / Robarts Library scan",
   "fetched": "26 September 2026",
-  "fetch_method": "archive.org /metadata for page_numbers.json (printed page -> leaf mapping), then direct zip-member fetch of the item's own _jp2.zip (https://archive.org/download/<id>/<id>_jp2.zip/<id>_jp2%2F<id>_<leaf>.jp2), converted to JPEG locally and downsized to 1400px wide for the repo; browser User-Agent, ~1.5-1.6s apart, 5 requests total (1 metadata + 4 leaves; page_numbers.json fetch is bundled in the metadata call's file list, fetched separately as a 5th request)",
+  "fetch_method": "archive.org /metadata for page_numbers.json (printed page -> leaf mapping), then direct zip-member fetch of the item's own _jp2.zip (https://archive.org/download/<id>/<id>_jp2.zip/<id>_jp2%2F<id>_<leaf>.jp2), converted to JPEG locally and downsized to 1400px wide for the repo; browser User-Agent, ~1.5-1.6s apart, 5 requests total (1 metadata + 4 leaves; page_numbers.json fetch is bundled in the metadata call's file list, fetched separately as a 5th request). AX-STEV2 (26 Sept 2026) located pages 146-147, 156-157, 172-173 the same way: vol.1's own djvu.txt (campaigninvirgin01stevuoft, the 'CHRONOLOGICAL CORRESPONDENCE' apparatus, not saved to the repo -- disk-only, 1 request) gave the 'see Letter ii. NNN' page pointers for items dated 31 Aug/16 Sept/30 Sept 1781; the +8 page-to-leaf offset confirmed unchanged at all three pairs (146+8=154, 156+8=164, 172+8=180); 6 more leaves fetched the same zip-member route, 6 requests, 1.5-1.6s apart.",
   "page_leaf_mapping": {
     "127": 135,
     "128": 136,
+    "146": 154,
+    "147": 155,
+    "156": 164,
+    "157": 165,
+    "172": 180,
+    "173": 181,
     "174": 182,
     "175": 183
   },
@@ -35,6 +41,42 @@
       "leaf": 183,
       "printed_page": 175,
       "shows": "End of the 3 Oct 1781 letter. An asterisk in the body text (before the paragraph starting '* I can see no means of forming a junction with me but by York River...') marks the start of the ciphered passage; footnote below the signature block: '* [From here partly in cypher with a translation.]' -- i.e. only the final paragraph (French-fleet strength, junction, Capes) was in cipher in the manuscript, not the whole letter. Apparatus line below: '163B: CORNWALLIS to CLINTON, 3 October 1781, ANSWER [201] i.92 ... Earl Cornwallis to Sir Henry Clinton, dated York-Town, Virginia, October 3, 1781. [In Cypher.]' -- this is the TNA-matching cipher tag, attached to copy 163B specifically."
+    },
+    {
+      "file": "p146.jpg",
+      "leaf": 154,
+      "printed_page": 146,
+      "shows": "Item 149, CORNWALLIS to CLINTON, 31 August 1781 (= PRO 30/55/32/66, item 3753). 'Endorsed Duplicate. Earl Cornwallis to Sir H. Clinton, K.B., York August 31st 1781 recd the 4th Septr 1781...' Letter body printed in full: 'Sir, A French Ship of the Line, with two Frigates, & the Loyalist, which they have taken, lay at the Mouth of this River, A Lieutenant of the Charon, who went with an Escort of Dragoons to Old Point Comfort, reports, that there are* between 30 and 40 Sail within the Capes, mostly Ships of War, & some of them very large...' with footnote '* [From here in cypher with translation in margin]' after 'large' -- matches item 3753's TNA description verbatim ('A French ship of the line with two frigates and the Loyalist which they have taken, lay at the mouth of this river. A Lieutenant of the Charon who went w[ith]...'). Apparatus line '149B: Cornwallis to Clinton, 31 August 1781, ANSWER [189] i.91 ... Earl Cornwallis to Sir Henry Clinton, K.B. dated Yorktown, in Virginia, 31st August, 1781. [In Cypher.]'"
+    },
+    {
+      "file": "p147.jpg",
+      "leaf": 155,
+      "printed_page": 147,
+      "shows": "Continuation of apparatus for item 149 (31 Aug 1781, = item 3753): further copy variants (149S/149V/149E/149R/149M), all '[In Cypher.]' or 'the same letter as No. 149', including the French translation sent to Germain. Then item 150, CORNWALLIS to CLINTON, 1 Sept. 1781 (a different, one-line note, not one of our 12 named items): 'An enemy's fleet within the Capes, between thirty and forty ships of war, mostly large. CORNWALLIS.' '[Written in Cypher on a Congress Note.]' -- unrelated to 3753/3784/3803, included only because it shares the leaf."
+    },
+    {
+      "file": "p156.jpg",
+      "leaf": 164,
+      "printed_page": 156,
+      "shows": "Item 156, CORNWALLIS to CLINTON, 16 Sept. 1781 (= PRO 30/55/32/97, item 3784). 'Endorsed Cypher Duplicate. Earl Cornwallis to Sir Henry Clinton 16th & 17th Septr 1781. received (Wednesday, per the Schooner Mary) Septr 27th 1781. Duplicate York Town Virginia, 16th Septr 1781.' Letter body begins 'Sir, I have received your Letters of the 2d & 6th. The Enemy's Fleet has returned. Two Line of Battle Ships, & one Frigate, lie at the mouth of this River; & three or four Line of Battle Ships, several Frigates' (continues onto p.157) -- matches item 3784's TNA description ('the enemy fleet has returned, two line of battle ships and one frigate lie at the mouth of this river, and three...') verbatim; header cites ANSWER [196] i.92, CORRESPONDENCE [52] i.136, REPLY [103] i.171."
+    },
+    {
+      "file": "p157.jpg",
+      "leaf": 165,
+      "printed_page": 157,
+      "shows": "End of the 16-17 Sept 1781 letter (item 3784): '...& Transports, went up the Bay on the 12th & 14th. I hear Washington arrived at Williamsburgh on the 14th... If I had no hopes of Relief, I would rather risk an Action than defend my half-finished Works. But as you say Admiral Digby is hourly expected, and promise every Exertion to assist me, I do not think myself justifiable in putting the fate of the War on so desperate an Attempt.' No cipher-transition footnote on this leaf (the endorsement on p.156 already marks the whole letter 'Cypher Duplicate'); printed in clear throughout. Followed by Clinton's manuscript-note apparatus (numbered footnotes 1-10) responding point by point, dated from his own later marginalia."
+    },
+    {
+      "file": "p172.jpg",
+      "leaf": 180,
+      "printed_page": 172,
+      "shows": "Item 162, CLINTON to CORNWALLIS, 30 Sept. 1781 (= PRO 30/55/32/116, item 3803). 'Sir Henry Clinton to Earl Cornwallis, dated New-York, September 30, 1781. [Duplicate, in Cypher.] [Received October 10, from Major Cockran.]' Letter body printed in full: 'My Lord, Your Lordship may be assured that I am doing every thing in my power to relieve you by a direct move, and I have reason to hope, from the assurances given me this day by Admiral Graves, that we may pass the bar by the 12th of October...' (continues onto p.173) -- matches item 3803's TNA description ('Clinton to Cornwallis. New York. Two copies of a document, the first in code. Assuring his lordship that he is doing everything in his power to relieve him by a direct move...') verbatim; header cites ANSWER [202] i.92, CORRESPONDENCE [55] i.136."
+    },
+    {
+      "file": "p173.jpg",
+      "leaf": 181,
+      "printed_page": 173,
+      "shows": "End of the 30 Sept 1781 letter (item 3803), signed 'H. CLINTON.' No cipher-transition footnote on this leaf; margin note on p.172 reads 'V in cypher to p 173 l 2' (variant V's manuscript is in cipher up to line 2 of p.173, i.e. almost the whole letter) -- printed text here is the full deciphered/clear text throughout. Followed by copy-variant apparatus (162B/162F/162S/162V/162E/162R), all '[In cypher]' or 'the same letter as No. 162', including one noting the printed heading was 'by mistake omitted in the printing' in some copies."
     }
   ]
 }
