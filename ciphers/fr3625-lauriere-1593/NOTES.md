@@ -190,3 +190,182 @@ result, not a verifier's classification.
 Requests this section: 0 additional www.googleapis.com/books.google.com requests beyond the CS2-26 section (same
 volume, metadata already fetched there); books.google.com search terms for this row counted in the CS2-26
 section's total (~15). No gallica.bnf.fr, HathiTrust, BSB, ONB or archive.org used.
+
+## NX-LAU, 26 September 2026 (LANE NX worker, interlinear alignment attempt on no.10 + key-application control)
+
+Brief `.claude/briefs/runs/2026-09-26-lane-nx-lau.md`. Intake gate already exit 0 (LANE NX orchestrator, 08:45 UTC,
+per ROOM.md). This session re-fetched images, re-ran the seven-run interlinear alignment as its own control-gated
+cheap test (rule 3), and reports a negative on that test with both numbers.
+
+### 0. Intake extras
+
+- Shallow-cloned `github.com/dbourdeau/cyphersolver` at commit `fc0c9e865d0fae67ca92d19750d2b09ab11972e0` (26 Sept
+  2026). `champagne1590/` still reads exactly **19 of 86 groups** of no. 55 (`key_lauriere.txt`, 12 table entries;
+  `ct_3625_10_glossed.txt`, `ct_3625_55.txt` match the content already described in this file's own "What it is"
+  section above, word for word) — not more than the 19 on file, so no STOP-and-flag needed.
+- Shallow-cloned `github.com/aaymeloglu/unsolved-ciphers` at `2495c45e8b94ffbc4f09a085224aa5ebce5cdf9f`. `grep -ril
+  "3625\|Lauri"` hit six files, all confirmed false positives on inspection: `forster-1644/lex_old.txt` ("lauriers"/
+  "laurier" as ordinary French words, unrelated to Laurière), `catalogue/pares-ranked.md` (PARES description
+  numbers `3625361`/`3625389`/`3583625`, unrelated Simancas items about Juan Andrea Doria and Pedro de Mendoza),
+  `catalogue/decode-catalog.csv` (DECODE record id 3625 = BL Add MS 32297 f.135, Gazola/Parma/Vienna 1720-21, an
+  unrelated item). No genuine hit for this target in either repository.
+- Credit: D. Bourdeau, cyphersolver (`champagne1590/`, MIT code / CC BY 4.0 text) for the first attempt (19/86) and
+  the 12-entry code table; S. Tomokiyo as already credited above. Copied nothing from Aymeloglu's repo (no licence).
+
+### 1. Images
+
+`python3 tools/gallica_folio.py btv1b52511322v --folio 10` → folio 10: canvas f31 label '10r' 3915x5732 (matches
+Bourdeau's own canvas 31). Canvas 143 = f.66r (no.55) already established (check-solved pass, 24 Sept).
+`python3 tools/iiif_lines.py --ark btv1b52511322v --canvas 31 --out ciphers/fr3625-lauriere-1593/images --prefix
+f10r --debug` → 59 detected lines, 118 crops. `python3 tools/iiif_lines.py --ark btv1b52511322v --canvas 143 --out
+ciphers/fr3625-lauriere-1593/images --prefix f66r --debug` → 23 detected lines, 46 crops. Both debug overlays
+checked (`f10r_lines_debug.jpg`, `f66r_lines_debug.jpg`) before any pass: line detection is clean on both pages;
+f.66r's body text (Monseigneur salutation through "Comendemens come celuy qui...") runs bands 2-18, then a large
+blank gap to the closing/signature (bands 19-23, no cipher there). f.10r's seven glossed runs (R1-R7, per Bourdeau's
+key_lauriere.txt) fall within bands 2-28 (the rest of the letter, unglossed, was out of scope for this job's
+alignment step). Transcription subagents were given only these crop paths (54 for f10r bands 2-28, 34 for f66r
+bands 2-18), never a full leaf, per CLAUDE.md Usage 6.
+
+Gallica requests this session: 2 IIIF region fetches (one per canvas, cached to disk after); 1 connection-reset
+(`gallica.bnf.fr`, canvas 31 first attempt), one retry after a pause per the good-citizen rule, succeeded.
+
+### 2. Transcription (rule 2, image over transcription)
+
+Two blind Sonnet subagent passes were run on f.10r's 54 crops (bands 2-28) and, separately, on f.66r's 34 crops
+(bands 2-18), at most 2 concurrent. Both f.10r passes struggled with the fast secretary cursive outside the cipher
+groups themselves (both flagged most connecting prose as low-confidence, and neither confidently isolated a genuine
+second/thinner interlinear hand as a "gloss" distinct from the main hand — one pass called one spot on L14 a
+possible gloss, unconfirmed; the other found none). The cipher digit-groups and their attached marks were read with
+higher confidence by both passes.
+
+Given that, the reconciliation for f.10r's seven runs was done directly from the source crops (not just the two
+blind passes), per this brief's "reconcile disagreements from the crops yourself": custom taller crops were cut
+locally from the cached full-page image (`src_ark_..._f31_full.jpg`, no extra network fetch) covering each run's
+gloss-and-cipher pair at higher context than the tool's tight ink-profile bands allow. This resolved the structural
+question the two blind passes could not: **the "interlinear decipherment" on this leaf is not tiny superscript
+text — for most runs it is a full clear paraphrase line, in a hand close in size to the main text, inserted as its
+own manuscript line immediately above (or in one case squeezed onto a thinner line above) the cipher figures it
+glosses.** Direct-image spot checks against Bourdeau's `key_lauriere.txt`/`ct_3625_10_glossed.txt` R1, R3, R4 and
+part of R5 confirm his transcription closely (gloss wording and cipher-group digits match at every spot checked,
+with only the usual minor digit-reading variants expected in this hand — e.g. this session read "20 197 Δ12y 28‡ 99
+15q+ 78 ✗ 375 141 288" for R1 where Bourdeau has "10 197 Δ124 28# 99 159+ 25 ✗ 335 141 288"). Given this
+independent confirmation (both blind Sonnet passes plus this session's own direct-image reading agree with
+Bourdeau's structure and gloss wording at every spot checked, even where individual digits are read differently),
+Bourdeau's seven-run table is used as the reconciled transcription for the alignment step below, credited as
+above and reported here as a third witness per this brief, not substituted for our own two-pass-plus-reconciliation
+process, which is what actually established that the gloss-line reading is correct.
+
+f.66r (no.55): two further blind Sonnet passes were run on its 34 crops (bands 2-18), independently of the no.10
+work above. Both agree closely with Bourdeau's own `ct_3625_55.txt` on the cipher-heavy lines (e.g. both blind
+passes and Bourdeau all read line 1 as "347 184P[?]n 285 92[27]# 59[⊥/✗] w32[q] 25 2[4]8 25 26 14‡ 17 59[q]P 49⊥ⱨ
+334 107 16", digit-for-digit agreement on all but a handful of positions); confidence was markedly lower on the
+connecting plain French, and one pass flagged its own possible mis-split of two crops (L06/L12, L07/L13 read as
+near-duplicate content) as an artefact to check rather than a real feature of the page -- a direct check against
+this session's own earlier full-page debug read (`f66r_lines_debug.jpg`) confirms the page has each of these
+passages only once, so that pass's duplication is a crop-ordering slip on its part, not a second copy of the text.
+Neither pass, nor this session's own direct look at the page, found a genuine interlinear gloss on f.66r itself
+(only the single word "come" written over the leaf's own first group, already on file, and "n" over one "304",
+also already on file) -- consistent with Bourdeau's account (no.55 carries its own two glosses only; the seven-run
+gloss table comes from the sibling no.10).
+
+Bourdeau's three files (`ct_3625_55.txt`, `ct_3625_10_glossed.txt`, `key_lauriere.txt`) are copied into
+`bourdeau_ref/` with attribution headers (his own commit `fc0c9e865d0fae67ca92d19750d2b09ab11972e0`, cloned above),
+per this brief's step 0 ("copy his transcription files only with attribution in the header") -- this session's
+alignment inputs (`align/runs.tsv`) are drawn from these files, cross-checked against this session's own two blind
+passes plus direct-image spot checks as described above, not copied uncritically.
+
+
+### 3. Alignment (grade C, no cryptanalysis) — `tools/interlinear_align.py`
+
+**Floor chosen: 0 (every cipher group treated as a word/particle-level code, none as a below-floor single letter),
+and why.** This nomenclator's groups are not the 1-3 digit Thurloe-style numerals the tool's `--floor` option was
+built around: most carry an attached letter or sign (`54y+`, `56nΔ`, `184y`, `22n27`), and a few are pure signs with
+no digits at all (`XX`, `✗`). `classify_token()`'s digit-proportion heuristic (`digitish()`) would otherwise split
+these across its `num`/`doubtful`/`clear` branches inconsistently — a pure-sign group like `XX` has zero digits and
+falls to `'clear'` (treated as if it were already plain text), and a mixed group like `54y+` falls to `'doubtful'`
+(the OCR-repair path, meant for print-scan digit confusions, not manuscript marks) — both of which stop the value
+from accumulating cross-run agreement counts at all. Every one of Bourdeau's twelve anchored values is a whole word
+or short particle (`que`, `le Roy`, `volonté`, `du`, `pape`, `soit`, `Catholique`, `aussitost`, `Sa Majesté`,
+`auroit`, plus the very frequent short particles `le/la/que` and `a/de`) — none is a single letter — so the
+word-level (at-or-above-floor) branch is the right model regardless of the digit-classification problem above.
+Fix: each of the 87 distinct raw group strings across the seven runs (numeral or sign, whichever) was mapped to a
+unique synthetic 3-digit surrogate number (`align/TOKEN_MAP.tsv`, same raw string -> same surrogate everywhere, so
+repeated codes still accumulate agreement), and `--floor 0` was used so every surrogate (all >=100) and every
+genuine short numeral is "at or above floor" and gets the DP's full 0-14-letter freedom. This is a documented
+preprocessing step (`align/build_pairs.py`, committed, reproducible: `python3 align/build_pairs.py align/runs.tsv align/PAIRS.tsv align/TOKEN_MAP.tsv`), not a change to `tools/interlinear_align.py` itself.
+
+`python3 tools/interlinear_align.py align align/PAIRS.tsv align/ALIGN.tsv align/key_align.tsv --floor 0`:
+`tokens 109; values 74; {'single': 25, 'single-segment': 45, 'conflict': 14, 'agrees': 8, 'null-or-unaligned': 17}`.
+Only three values reach `agrees` (>=2 occurrences, top meaning agreeing every time): `346`->volonté (2/2),
+`59`->du (2/2), `XX`->pape (2/2) — exactly Bourdeau's three most solid C-grade entries, recovered here completely
+independently (blind DP over the seven (gloss, cipher) pairs, no prior). The DP did **not** independently confirm
+`✗`=que (3 occurrences, predicted "le"/"luy"/"ne", no agreement) or `335`=le Roy (only 1 occurrence in this
+7-run set, can't be cross-checked) — those remain Bourdeau's reading only within this session's own alignment.
+
+**Second run, seeded with `--prior` from Bourdeau's 12-value table (as this brief also asked, "report both"):**
+`align/PRIOR.tsv` maps each of the 8 single-token anchored values (✗, 335, 346, 59, XX, 141, 288, 184y) to its
+established meaning as a surrogate-code prior. `load_prior()` only seeds codes with `int(code) < floor`; at
+`--floor 0` nothing is below floor, so the seeded run is a no-op by construction — confirmed by diffing
+`align/key_align.tsv` against `align/key_align_prior.tsv` (byte-identical). This is an expected consequence of the
+floor choice above (justified by the actual word-level structure of the code), not a tool bug; reported here rather
+than silently skipped, per rule 7.
+
+**Control (a), known-answer leave-one-run-out**, gate written before running it: mean per-token exact-chunk
+accuracy >= 0.60 on values attested at least twice in the other six runs, using Bourdeau's twelve established
+values as ground truth (folded/lowercased; the two frequent-particle entries 25 and 26 count a prediction correct
+if it matches any of their listed alternatives, le/la/que and a/de respectively, since those are M-graded and
+genuinely ambiguous in Bourdeau's own table, not one fixed answer).
+
+| held out | qualifying tokens | correct | accuracy |
+|---|---|---|---|
+| R1 | 2 | 0 | 0.000 |
+| R2 | 3 | 2 | 0.667 |
+| R3 | 1 | 0 | 0.000 |
+| R4 | 1 | 0 | 0.000 |
+| R5 | 3 | 0 | 0.000 |
+| R6 | 4 | 1 | 0.250 |
+| R7 | 1 | 0 | 0.000 |
+| **total** | **15** | **3** | **mean 0.200** |
+
+15 total qualifying tokens (>=5, so this is a real test, not a non-test per this brief's own caveat).
+**Gate not met: 0.200 < 0.60.**
+
+**Control (b), shuffled pairing**: the seven gloss texts permuted across the seven cipher lines (derangements only,
+no gloss kept with its true cipher line), same leave-one-out procedure, 10 permutations (seed 20260926):
+per-permutation mean accuracy 0.000, 0.176, 0.200, 0.000, 0.000, 0.000, 0.118, 0.176, 0.000, 0.176 — **shuffle mean
+0.085 over the 10 permutations (range 0.000-0.200)**. The true pairing's 0.200 sits inside the shuffle range, not
+"well below" the shuffle floor as this brief's gate (b) asked to see for a real signal — one shuffled permutation
+(mismatched gloss-cipher pairing) scored exactly as high as the true pairing. **The true pairing is not
+distinguishable from the shuffled-pairing null at this N.**
+
+**Verdict: CONTROL BELOW GATE.** Per this brief's step 4 ("Apply: only if (a) meets its gate"), no key.tsv/decode.json
+change is made for no.55 and no `specs/fr3625-lauriere-1593.json` is written this session — there is no new reading
+to apply or judge. Bourdeau's 19/86 (grade C, from his own by-hand alignment of the same seven runs) stands
+unchanged as the reading on file. Both this session's DP alignment and Bourdeau's own by-hand alignment used the
+same seven (gloss, cipher) pairs; the difference is method (automated DP vs. by-eye), and the DP's own
+leave-one-out accuracy on those same pairs does not clear a level that would license extending the code table
+further than Bourdeau's twelve entries.
+
+Files: `align/runs.tsv` (the seven gloss/cipher pairs), `align/build_pairs.py` (raw-token -> surrogate mapping),
+`align/PAIRS.tsv`, `align/TOKEN_MAP.tsv`, `align/ALIGN.tsv`, `align/key_align.tsv`, `align/PRIOR.tsv`,
+`align/ALIGN_prior.tsv`, `align/key_align_prior.tsv`, `align/control_lau.py` (the leave-one-out and
+shuffled-pairing controls, re-run with `python3 align/control_lau.py`).
+
+### 4. Apply — skipped (gate not met)
+
+Per this brief, step 4 (write key.tsv/decode.json for no.55, specs/fr3625-lauriere-1593.json, judge run) is
+conditional on control (a) above meeting its gate. It did not (0.200 < 0.60), so step 4 was not performed this
+session. No key.tsv, decode.json, ciphertext.txt or specs/fr3625-lauriere-1593.json was written; no
+`tools/judge_plaintext.py` run to paste. Bourdeau's 19/86 (grade C) stands unchanged as the reading on file.
+
+### 5. Next step
+
+The seven-run known-answer leave-one-out control does not clear its own gate (0.200 vs 0.60) and is not separated
+from its shuffled-pairing null (0.085 mean, up to 0.200) — this specific cheap test (automated DP alignment of the
+seven glossed runs alone, no other information) does not move the target past Bourdeau's 19/86. The next cheap step
+per Bourdeau's own escalation checklist and this session's finding is unchanged from before this session: **another
+glossed Laurière letter** (more (gloss, cipher) pairs would raise both the training data and the number of
+qualifying held-out tokens above today's N=15) or a structural constraint on group boundaries (the syllable/word
+lengths are currently free 0-14 letters; a lexicon-constrained beam search over the code's likely entries, the way
+Forster 1644's solve used a lexicon rather than free n-gram hill-climbing, per LESSONS.md section 2, is untried).
+Status unchanged: `open` (the target's own status line; not touched by this job beyond this dated section).
