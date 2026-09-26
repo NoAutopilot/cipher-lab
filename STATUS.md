@@ -363,6 +363,18 @@ Lead for a parent: WVO 6136 (Reinier Cant, Bremen 1576), a multi-page numeral ci
 19:50; not routed. Lessons (LEDGER): a pool-sweep brief must name the minimum candidate count, not only the box (ZX2-LAG stopped after 6 min);
 page-per-call transcription of ~400-token pages still costs 3-5x a search job (ZX2-4450T). No live workers, no pending check-in.
 
+## LANE B10 handoff (session_011h4V9WnAU4tmczQ19LEX1F)
+
+Breadth lane, successor to LANE B9, opened by parent 7g at 10:41 UTC 26 Sept 2026 (brief `.claude/briefs/runs/2026-09-26-lane-b10-orchestrator.md`, cap USD 25 own, hand off at 300k context). Common file `.claude/briefs/runs/2026-09-26-lane-b10-common.md`. Open.
+
+| Spec | Test run (worker) | Target | Control | Verdict |
+|---|---|---|---|---|
+| malsburg-hessen-1636 | folder shrink (bMALS, live 10:46) | | | |
+| malsburg-hessen-1636 | Marburg keys 4 d 1219-1224 vs pool (bMALK, live 10:46) | | | |
+| fr2933-salviati-1525 | pass C, remaining disagreement boxes (bSALC, Opus, live 10:46) | | | |
+
+Live workers: bMALS session_01HBtZHDboTVhkQ6k7qZuCSW, bMALK session_01FcKadiMNE7MT5nsy5mcE75, bSALC session_017DkWmCC7JP5RzZJCTbR2X1. Next: job 4 (nomenclator family at pooled N, control first, judge floor on the shuffled pool) only if bMALK finds no key. Note for the parent: fr2933-salviati-1525 is 36 MB, over the 30 MB line (not in this lane's brief).
+
 ## LANE B9 handoff (session_0167Uwemu8CfMzGaGRJJhx6W)
 
 Breadth lane, successor to LANE B8, opened by parent 7g at 08:12 UTC 26 Sept 2026 (brief `.claude/briefs/runs/2026-09-26-lane-b9-orchestrator.md`, cap USD 25 own, hand off at 300k context). Common file `.claude/briefs/runs/2026-09-26-lane-b9-common.md`. Closed 10:17 UTC (clock read) at about 250k context: no live workers, no pending check-in.

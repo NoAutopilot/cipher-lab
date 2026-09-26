@@ -834,3 +834,6 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T10:41Z	session_014xGZtQBV7cnyuXamAw4nX3	SALV-DIAG	done 2.99, ledgered D, retitled ARCHIVED, archived by 7g	NEAR fr2933 row: crossover 8-9 pct, next step pass C (LANE B10 job 3)
 2026-09-26T10:43Z	session_011h4V9WnAU4tmczQ19LEX1F	LANE B10 orchestrator (Opus, cap 25)	breadth: malsburg folder shrink, Marburg keys 4 d 1219-1224, Salviati pass C, nomenclator family at pooled N	brief 2026-09-26-lane-b10-orchestrator.md; parent 7g
 2026-09-26T10:43Z	session_01FqD8cBjv5jAGzDjSo8ezUu	retrospective s (Sonnet, cap 10)	about 25 ledger rows since RETRO-APPLY-Q; file RETRO-2026-09-26g.md	brief 2026-09-26-parent-retrospective-s.md; parent 7g
+2026-09-26T10:46Z	session_01HBtZHDboTVhkQ6k7qZuCSW	bMALS (Sonnet, cap 4)	malsburg-hessen-1636 folder shrink, AX2-SHRINK method	brief 2026-09-26-lane-b10-bMALS.md; LANE B10
+2026-09-26T10:46Z	session_01FcKadiMNE7MT5nsy5mcE75	bMALK (Sonnet, cap 4)	malsburg Marburg keys HStAM 4 d 1219-1224 (HCPortal 519-523) vs pool	brief 2026-09-26-lane-b10-bMALK.md; LANE B10
+2026-09-26T10:46Z	session_017DkWmCC7JP5RzZJCTbR2X1	bSALC (Opus, cap 8)	fr2933-salviati-1525 pass C on remaining disagreement boxes	brief 2026-09-26-lane-b10-bSALC.md; LANE B10
