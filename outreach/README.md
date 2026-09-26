@@ -26,3 +26,12 @@ Gate 7 (26 Sept 2026): no mailbox draft is sent until a separate checking sessio
    version beneath it, so the person can review what he signs and the recipient can read either. The mailbox
    draft is signed the way the person signs his own sent mail (his name and the project name), supplied from the
    mailbox, never written into this repository (rule 9). Owner's ask, 26 Sept 2026.
+8. Prior contact first (owner's rule, 26 Sept 2026). Before drafting to any person or institution, the drafter
+   searches the project mailbox (Gmail: to:/from: the address and the institution's domain, all folders) and
+   CONTRIBUTIONS.md (Recipient column) for earlier correspondence. If any exists, the draft is a reply in that
+   thread (the mailbox draft carries replyToMessageId of the last message), opens by referring to the earlier
+   exchange in one sentence, and does not repeat what that thread already said; a cold email to a known
+   correspondent is a defect. The md header records `prior_contact:` with the thread id and date, or `none`
+   (searched <date>). The pre-send fact check verifies the thread choice. Earlier mail the person sent from his
+   own account (Huygens, Tomokiyo) is known only from CONTRIBUTIONS.md: a reply to those goes from his account
+   in his thread, not from the mailbox.
