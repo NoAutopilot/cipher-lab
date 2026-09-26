@@ -1,0 +1,88 @@
+line	pos	code	marks	source	reason
+1	8	phi		BC	A=o. B=phi C=phi; C note: slashed-circle-on-stem, exact match to phi atlas (loop+diagonal+stem), not plain o.
+1	8.5	g	+	BC	A=MISSING B=g C=g; C note: separate loop-with-tail matches g atlas; triangular stroke below could be the + mark but reads more like a flourish/underline
+2	6	_		BC	A=bh B=_ C=_; C note: part of a continuous plain cursive run (pos6-12), joined ascender/descender strokes, not a cipher glyph shape
+2	7	_		BC	A=tee B=_ C=_; C note: same continuous plain cursive run as pos6
+2	8	_		BC	A=tee B=_ C=_; C note: same continuous plain cursive run
+2	9	_		BC	A=N B=_ C=_; C note: unmistakable cursive letter 'a'
+2	10	_		BC	A=S B=_ C=_; C note: cursive s-like curl, part of the same plain run
+2	11	_		BC	A=Lx B=_ C=_; C note: M/AC-shaped flourish, part of the same plain run, not a clean Lx match
+2	12	_		BC	A=v B=_ C=_; C note: f-N ligature, tail end of the same plain run
+2	16	+		BC	A=# B=+ C=+; C note: clean single cross/plus stroke, matches + atlas, not the crosshatch of #
+2	18	o.		BC	A=_ B=o. C=o.; C note: circle with a clear center dot, exact match to o. atlas
+3	5	+		BC	A=# B=+ C=+; C note: single cross with small serif, matches + atlas better than # crosshatch
+3	12	_		split-M	A=S4 B=_ C=#; C note: crosshatched multi-stroke mark (more strokes than a simple +), closer to # atlas; differs from both A's S4 and B's plain call -- three-way split; settled on crop: L1c arbitration (3-way->B), carried over
+3	25	_		BC	A=f B=_ C=_; C note: clearly legible plain italic cursive, spells like 'aps'/'afs'
+4	3	_		BC	A=S B=_ C=_; C note: plain cursive letters 'sso'
+4	8	_		BC	A=p B=_ C=_; C note: plain cursive ': Pu' -- ordinary script
+4	19	eps		AC	A=eps B=_ C=eps; C note: clean epsilon-squiggle, exact atlas eps match
+4	20	_		AC	A=_ B=rz C=_; C note: plain cursive 'cu' ligature, no cipher shape
+5	11	S7	+	BC	A=_ B=S7 C=S7; C note: numeral-7-like hook dominates the box; merged with extra ink, kept at S7 over a plain read
+5	23	g	dot	AC	A=g B=_ C=g; C note: loop-with-descender tail, clear g atlas match
+5	29	eps		AC	A=eps B=_ C=eps; C note: epsilon squiggle with trailing stroke, matches eps atlas
+6	4	S7	dot	AC	A=S7 B=_ C=S7; C note: single hooked diagonal stroke closest to the S7 numeral-7 shape among codebook entries
+6	16	S7	#	BC	A=_ B=S7 C=S7; C note: numeral-7 stroke with extra ligature above, kept at S7
+6	20	_		AC	A=_ B=o. C=_; C note: heavy ink blot/smudge, no clean glyph shape recoverable; likeliest a plain-script flourish under the ink
+7	13	lam	7	AC	A=lam B=a C=lam; C note: wedge/triangle top stroke resembles lam; box also carries a separate S-like stroke below not accounted for here
+7	15	m	3	AC	A=m B=S7 C=m; C note: cursive m-loop clearly visible at the foot of the box, matches m atlas; extra numeral strokes above may belong to a neighbour box
+7	30	_		BC	A=Z B=_ C=_; C note: plain cursive 'nu'/'ne' ligature
+8	15	v		split-M	A=_ B=rz C=v; C note: clean script v, matches v atlas; settled on crop: L1c arbitration (3-way->C), carried over
+8	22	_		BC	A=S B=_ C=_; C note: plain cursive 'Ass'
+8	24	_		BC	A=H B=_ C=_; C note: plain cursive 'saj'
+8	26	_		BC	A=S B=_ C=_; C note: plain cursive continuing '...se'
+8	28	N		AC	A=N B=_ C=N; C note: cursive N-loop, reasonable N atlas match
+9	1	_		split-M	A=S7 B=_ C=Z; C note: script Z-loop shape, closest atlas match despite the trailing tee-like stroke; settled on crop: L1c arbitration (3-way->B), carried over
+9	2	_		split-M	A=tee B=_ C=S; C note: curled S shape at the end of the box; settled on crop: L1c arbitration (3-way->B), carried over
+9	3	_		split-M	A=g B=_ C=S; C note: S/psi ligature heavily merged, kept at S as the dominant curl; settled on crop: L1c arbitration (3-way->B), carried over
+9	11	tee		AC	A=tee B=+ C=tee; C note: cross/T-bar shape matches tee atlas; a numeral-7 stroke below may belong to a neighbour box
+9	14	S		BC	A=_ B=S C=S; C note: S-curl and a separate eps-like loop both visible in one tall box; kept at S for the upper glyph
+10	1	]	o	split-M	A=y B=] C=sq; C note: square/rectangular closed box, closer to sq atlas than the rounded ]; settled on crop: L1c arbitration (3-way->B), carried over
+10	2	Lx		BC	A=_ B=Lx C=Lx; C note: vertical stroke with a hooked descender, matches Lx atlas
+10	4	phi		split-M	A=y B=phi C=g; C note: g-loop-with-tail visible at the left edge; most of the box is blank margin; settled on crop: L1c arbitration (3-way->B), carried over
+10	6	lam	3	split-M	A=_ B=lam C=S7; C note: multiple numeral-like strokes (3,7,1,1), no single clean match; kept at S7 for the dominant shape; settled on crop: L1c arbitration (3-way->B), carried over
+10	19	Lx		BC	A=_ B=Lx C=Lx; C note: vertical-plus-hook shape, matches Lx atlas
+10	22	Lx	dot	BC	A=_ B=Lx C=Lx; C note: same vertical-plus-hook shape as pos19
+11	3	sq	ot	AC	A=sq B=] C=sq; C note: clean closed square/rectangle, exact sq atlas match
+11	4	_		AC	A=_ B=w C=_; C note: plain cursive 'iw-' fragment
+11	8	tee		split-M	A=S7 B=tee C=_; C note: plain capital T + cursive a, reads as ordinary script 'Ta'; settled on crop: L1c arbitration (3-way->B), carried over
+11	16	g		split-M	A=_ B=g C=e; C note: loop crossed by two diagonal strokes -- looks like an e-bowl with a strikethrough/correction rather than a clean single sign; settled on crop: L1c arbitration (3-way->B), carried over
+11	22	dl		BC	A=_ B=dl C=dl; C note: loop-with-tail on the left half, matches dl atlas
+11	22.5	f		BC	A=MISSING B=f C=f; C note: cross-stroke-with-descender on the right half, matches f atlas
+12	3	_		BC	A=S7 B=_ C=_; C note: plain cursive digits/letters '12a', no cipher shape
+13	3	tee		BC	A=S7 B=tee C=tee; C note: cross/T-bar shape, close match to tee atlas
+13	6	S7	dot	BC	A=_ B=S7 C=S7; C note: numeral-7 hook, matches S7 atlas
+13	7	nt		split-M	A=Z B=nt C=f; C note: cross-stroke over a loop, closest to f atlas despite the extra 'u' ligature above; settled on crop: L1c arbitration (3-way->B), carried over
+14	7	_		AC	A=_ B= C=_; C note: two thin crossing strokes with dots -- ambiguous, likely a punctuation/accent fragment rather than a coded sign
+14	13	_		AC	A=_ B=f C=_; C note: plain cursive 'fa'
+14	18	_		AC	A=_ B=nt C=_; C note: plain cursive m-loop, part of a flowing word
+14	19	_		AC	A=_ B=N C=_; C note: unmistakable cursive 'a'
+14	20	S		BC	A=_ B=S C=S; C note: isolated S-curl, matches S atlas
+15	7	S7	5	BC	A=_ B=S7 C=S7; C note: numeral-7 stroke, left half of the compound box
+15	7.5	H		BC	A=MISSING B=H C=H; C note: H-with-'10'-subscript shape, an exact match to the H atlas plate
+15	18	eps	~	BC	A=_ B=eps C=eps; C note: clean epsilon squiggle
+15	20	#		BC	A=+ B=# C=#; C note: crosshatched mark, clear # atlas match
+16	10	g		AC	A=g B=y C=g; C note: multiple merged glyphs (y/b/3/g) in one box; kept at g for the clearest shape, needs re-split
+16	12	]		AC	A=] B=[ C=]; C note: flat-topped bracket/hook shape, closer to ] atlas than tee
+16	13	dl		split-M	A=nt B=dl C=phi; C note: circle with a diagonal cross-stroke, closer to phi atlas than a plain dotted o.; settled on crop: L1c arbitration (3-way->B), carried over
+16	26	w		split-M	A=y B=w C=_; C note: cursive u with an underline flourish, reads as plain script; settled on crop: L1c arbitration (3-way->B), carried over
+17	1	S		BC	A=_ B=S C=S; C note: S-curl with a small dot, matches S atlas
+17	2	_		AC	A=_ B=N C=_; C note: plain cursive word fragment '...th'/'M tri'
+17	3	S		split-M	A=_ B=S C=eps; C note: clean epsilon squiggle; settled on crop: L1c arbitration (3-way->B), carried over
+17	5	_		split-M	A=g B=S7 C=_; C note: single thin diagonal stroke with a dot, no clear codebook match; likeliest a stray pen stroke; settled on crop: L1c arbitration (3-way->C), carried over
+17	7	_		AC	A=_ B=S C=_; C note: plain cursive 'tis'/'His' fragment
+17	9	f		split-M	A=y B=f C=p; C note: loop with a clear cross-bar/tail, matches p atlas; settled on crop: L1c arbitration (3-way->B), carried over
+17	10	_		BC	A=e B=_ C=_; C note: plain cursive 'qu' ligature
+17	14	bh	dot	BC	A=_ B=bh C=bh; C note: hook-with-descender shape, matches bh atlas
+17	17	_		BC	A=# B=_ C=_; C note: plain cursive 'tto'
+18	1	_		split-M	A=y B=_ C=p; C note: hook with a cross-tail, closer to p atlas than a plain letter; settled on crop: L1c arbitration (3-way->B), carried over
+18	2	_		BC	A=p B=_ C=_; C note: plain cursive 'pa'
+18	4	_		BC	A=# B=_ C=_; C note: plain cursive 'rtn'
+18	5	_		BC	A=y B=_ C=_; C note: single loop-with-tail stroke, reads as a plain cursive f/J, consistent with this line's dominant plain-run pattern
+18	6	S		BC	A=_ B=S C=S; C note: isolated S-curl
+18	7	nt		BC	A=_ B=nt C=nt; C note: t-cross plus N-loop ligature, matches nt atlas
+18	7.5	S	~	BC	A=MISSING B=S C=S; C note: S-curl, second half of the split box
+18	10	_		BC	A=Lx B=_ C=_; C note: plain capital-letter flourish ('M'), no clean cipher match
+18	13	_		BC	A=S B=_ C=_; C note: plain cursive 'ts'
+18	15	_		BC	A=H B=_ C=_; C note: merged cluster of strokes, illegible as a single sign
+18	18	_		BC	A=N B=_ C=_; C note: plain cursive 'rN'
+19	18	S7	+	BC	A=Z B=S7 C=S7; C note: numeral-7 shape with a + cross mark above it, compound box

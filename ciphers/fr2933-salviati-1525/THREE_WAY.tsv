@@ -1,0 +1,19 @@
+leaf	line	pos	code	marks	reason
+f55v	3	12	_		L1c arbitration (3-way->B), carried over
+f55v	8	15	v		L1c arbitration (3-way->C), carried over
+f55v	9	1	_		L1c arbitration (3-way->B), carried over
+f55v	9	2	_		L1c arbitration (3-way->B), carried over
+f55v	9	3	_		L1c arbitration (3-way->B), carried over
+f55v	10	1	]	o	L1c arbitration (3-way->B), carried over
+f55v	10	4	phi		L1c arbitration (3-way->B), carried over
+f55v	10	6	lam	3	L1c arbitration (3-way->B), carried over
+f55v	11	8	tee		L1c arbitration (3-way->B), carried over
+f55v	11	16	g		L1c arbitration (3-way->B), carried over
+f55v	13	7	nt		L1c arbitration (3-way->B), carried over
+f55v	16	13	dl		L1c arbitration (3-way->B), carried over
+f55v	16	26	w		L1c arbitration (3-way->B), carried over
+f55v	17	3	S		L1c arbitration (3-way->B), carried over
+f55v	17	5	_		L1c arbitration (3-way->C), carried over
+f55v	17	9	f		L1c arbitration (3-way->B), carried over
+f55v	18	1	_		L1c arbitration (3-way->B), carried over
+f57v	11	14	o.	dot	L5c arbitration (3-way->C), carried over
