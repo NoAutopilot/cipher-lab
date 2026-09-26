@@ -703,3 +703,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T04:29Z	session_01VcUH8oeEMrrMHxssn2Yhxw	V8-NA5797	done 4.61, ledgered D, archived (5797 blanks N4)	
 2026-09-26T04:29Z	session_01LojfFrWYJp3xMaRbwmKWtC	V8-NA5797-2 (Opus, cap 10)	second adversarial audit, lodewijk 5797 (gate 2)	brief 2026-09-26-lane-v8-nassau5797-2.md; LANE V8
 2026-09-26T04:40Z	session_01AQwk5zWLCGvxyuPFhwaHDD	DECODE-ACCESS (Sonnet, cap 4)	access-mode field vs account role; bounced addressee	brief 2026-09-26-parent-decode-access-mode.md; parent 7e
+2026-09-26T04:44Z	session_0125z25Ujw4ehAavXcyAfwXz	LANE B6 orchestrator done $6.51 D, archived by parent 7e	handoff STATUS.md LANE B6 handoff; 12 workers 42.08; szembek gloss lead; six queued items for B7
+2026-09-26T04:44Z	session_01CuPgRL7JyEon8C7MXzy43g	RETRO-APPLY-O done $1.42 D, archived	5 of 5 applied, commit def2b27, 5 UPDATES rows
