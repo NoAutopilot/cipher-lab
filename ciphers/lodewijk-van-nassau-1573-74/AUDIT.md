@@ -1240,3 +1240,48 @@ Japikse copies are seen; her answer to that decides whether anything further goe
 
 What would let a verifier set N5 for 4610/4611/4616: a sentence from a WVO editor of the shape "the database and the editors
 know of no decipherment of the cipher in WVO 4610, 4611 or 4616". Not asked in the first email; the NOTIFY.md row names it.
+
+## Second opinion SO-LODEWIJK-5797 (PR 26, 26 Sept 2026)
+
+Parent worker SO-LAND-26 (session_012tDJCM8L5NqcVa5PSawajj), 26 Sept 2026, 19:00-19:20 UTC (`date -u` read). Verifier hat
+on the ChatGPT runner's answer to SO-LODEWIJK-5797 (PR 26, branch second-opinion/SO-LODEWIJK-5797, head cfb8560), landed
+verbatim as `second-opinions/SO-LODEWIJK-5797-answer-2026-09-26.md`. Nothing decoded; no key, reading or status.json changed.
+
+The answer locates **no prior plaintext or decipherment** of codes 161 or 153 in WVO 5797. Its one new reach is Schmidt 1989,
+which V8.5 and A2.3 could not open: the Marburg university library has digitized it (archiv.ub.uni-marburg.de/eb/2021/0160,
+"Digitalisiert 2022"), and I read the contents page and pp.285-286 myself. The two pages are about the same negotiations but
+fill neither blank.
+
+| # | citation or claim in the answer | checked against | result |
+|---|---|---|---|
+| 1 | Groen IV (1837), CDXLIV, pp.217-226; heading "Jean, Louis and Henri" | dbnl groe009arch04_01_0063 (page markers 218-226, heading "Les Comtes Jean, Louis, et Henri de Nassau au Prince d'Orange") | confirmed |
+| 2 | blank after "Bey dem Herzog von Sachsen und" on p.223; blank before "helt sich wol ..." on p.225; "unsere Graveneinigung" p.224 | same page, text between the [p. 223], [p. 224] and [p. 225] markers | confirmed (the prompt's "p.223-224" for the first blank is p.223 on dbnl's markers) |
+| 3 | WVO 5797: Lodewijk, Jan and Hendrik; KHA A 3, 895/I, minuut; GPA IV 217-226 CDXLIV; cipher passages; no decipherment listed; PDF image | resources.huygens.knaw.nl/wvo/app/brief?nr=5797 | confirmed, one wording slip: the record says "Antwoord op nr. 5804" (5797 answers 5804); the answer's "points to reply no. 5804" reads as if 5804 were the reply |
+| 4 | Schmidt, Der Wetterauer Grafenverein, VHKH 52, Marburg: Elwert 1989; Marburg digitization record | ubfind record urn:nbn:de:hebis:04-eb2021-0160 ("XI, 661 Seiten", Band 52, Elwert 1989) | confirmed |
+| 5 | Schmidt contents p.VII: pp.273-287 is the Nassau-in-the-Netherlands section, 1566-1575 | page image 00007 ("4.2.2 Das nassauische Engagement in den Niederlanden (1566 bis 1575) ... 273"; 4.2.3 at 288) | confirmed |
+| 6 | Schmidt p.285: Ludwig's diplomacy, French money, the Heidelberg court; n.82 Ludwig to Johann, 8 July 1573, HHStA Wi 170.III Jg. 1573 | page image 00294 | confirmed |
+| 7 | Schmidt p.286: letter to the Hessian Kammermeister Simon Bing for Landgrave Wilhelm; Palatine elector interested; Wilhelm would have nothing to do with it (no French alliance, no word on the election); 23,000 gulden from the Kurpfalz; n.84 Groen IV 97-107; n.86 Groen IV Anhang 115f. | page image 00295 | confirmed; neither page quotes or fills either 5797 blank, and neither cites CDXLIV |
+| 8 | pp.273-287 as a whole: no quotation or decoding of the blanks | pp.285-286 read; 273-284 and 287 not re-read here | not checked beyond pp.285-286 (the answer itself calls a whole-book negative unverified) |
+| 9 | Blok, Correspondentie van en betreffende Lodewijk van Nassau, WHG n.r. 47 (1887), Google Books vfYnSGD4fpQC | Books API volume record (title, Blok, 1887, Kemink, ALL_PAGES) | confirmed for the volume; contents pp.xi-xiii not re-read here or by the runner (V8.4's HTRC pass covers the book) |
+| 10 | HHStA Wiesbaden Abt. 170 III fonds, arcinsys fondsId=2004 | arcinsys showFondsDetails?fondsId=2004 ("170 III", HHStAW, Nassauische Territorien > Nassau-Oranien) | confirmed as a fonds; its "no item-level counterpart" search is **unverifiable from the cloud** (not repeated; a finding aid cannot settle a file's contents anyway) |
+| 11 | this AUDIT.md, A4.1-A4.3 (172 withdrawn after a three-way conflict) | this file, "V9 note (A4)" | confirmed |
+
+Counts: 11 citations or factual claims; **9 confirmed** (one with a wording slip), **0 misattributed**, **0 not found**, **1
+not checked beyond the pages read** (#8), **1 unverifiable from the cloud** (#10's search result).
+
+**Verdict sentence.** The second opinion finds no earlier print or decipherment of codes 161 or 153 in WVO 5797 and none
+turns up in the pages it cites; the one family the two audits could not reach, Schmidt 1989, is now open (Marburg digitization)
+and its pertinent pp.285-286 fill neither blank, so **N4 stands for p5 [161] and p7 [153]** (proposed by this verifier; no
+status.json edit). V8.5/A2.1's "Schmidt 1989 not reached" gap is closed for pp.VII and 285-286 only; a full-book pass through the
+Marburg images (index, pp.273-287 and the Nassau-Oranien notes) is a cheap next step for a later verifier, and a clear copy
+at HHStA Wiesbaden 170 III or Marburg remains the one route to N1/N2 that no cloud search can close. The answer's caution --
+that the two names should not be turned into a claim that the Palatine and the Landgrave backed the same plan, since
+Schmidt p.286 has Landgrave Wilhelm refusing it -- agrees with A2.2 item 2 and A2.5's unsafe list; the safe sentence does not change.
+
+Runner form (the write path's first live test): one PR, one file, title starting `[SO-LODEWIJK-5797]`, branch
+`second-opinion/SO-LODEWIJK-5797`, file `<folder>/second-opinions/chatgpt-2026-09-26.md` with the label/model/date/prompt
+header -- all as `tools/second_opinion_runner_prompt.md` step 4 asks. The PR title carries the prompt's heading after the
+label, which the runner prompt allows. The header names the model as "GPT-6 (Codex; exact deployment revision not exposed)".
+
+Requests (this job): www.dbnl.org 1; resources.huygens.knaw.nl 1; archiv.ub.uni-marburg.de 4 (record, pp.VII, 285, 286);
+arcinsys.hessen.de 1; www.googleapis.com 1; GitHub MCP 2 reads + the close. No subagents.
