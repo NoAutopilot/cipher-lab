@@ -1,0 +1,22 @@
+Hs1 flat sequence: 61 tokens (2 eth-glyph positions excluded from matching)
+Witnesses: Hs13 (n=19), Hs3 (n=11), Hs3a (n=11), Hs11 (n=11)
+Total possible joint matches: 52
+
+=== REAL Hs1 order ===
+  Hs13: best offset=7, initial matches=2/19
+    expansion candidate: Hs1[10]='P' <- Hs13[3]='peseit'
+    expansion candidate: Hs1[11]='m' <- Hs13[4]='Moesque'
+  Hs3: best offset=5, initial matches=3/11
+    no expansion candidates at this offset
+  Hs3a: best offset=5, initial matches=3/11
+    no expansion candidates at this offset
+  Hs11: best offset=5, initial matches=3/11
+    no expansion candidates at this offset
+  JOINT real score: 11/52 = 0.212
+
+=== CONTROL: 500 random shuffles of Hs1's 61-token order (seed 20260925) ===
+  control mean: 10.868/52 (0.209)
+  control range: [8, 17]
+  real (11) percentile in control distribution: 70.0
+  298/500 shuffles (59.6%) tie or beat the real joint score
+  real vs control mean: ABOVE

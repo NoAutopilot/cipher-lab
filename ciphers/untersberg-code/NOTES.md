@@ -152,3 +152,21 @@ No tokens read at grade H, C, S or M (rule 4: I: 1 line-level hypothesis only, n
 ### Files this pass
 
 `specs/cheap-tests/untersberg-code/witnesses.tsv` (all 12 witnesses' tokens, OCR-vs-image corrections noted), `align_witnesses.py` + `align_output.txt` (the alignment and its control), `proposed_expansion.txt` (the grade-I hypothesis). No new host requests (disk-only, per brief).
+
+## Joint alignment against Hs 13/3/3a/11, with shuffle control (26 Sept 2026, LANE B5 worker bUNT6)
+
+Per job brief `.claude/briefs/runs/2026-09-26-lane-b5-untersberg-joint.md`, NEAR step (3b) named after bUNT5. Intake gate re-run: `python3 tools/intake_gate_check.py untersberg-code` exit 0 (`open`, edition/page citation within 6 lines).
+
+bUNT5 tested Hs 1's six lines against Hs 12's six spelled-out words at line granularity (a clean 1:1 correspondence) and found the alignment indistinguishable from chance (42.5th percentile of 720 permutations). This step extends the test to the four remaining witnesses Herzog's apparatus gives (Hs 13 -- mostly plain Latin, 19 tokens; Hs 3, Hs 3a, Hs 11 -- 11-letter initial runs each), which have no such line correspondence to Hs 1 (Herzog's apparatus lineation reflects his own page layout for each witness, not Hs 1's six physical lines), so `specs/cheap-tests/untersberg-code/align_joint.py` drops the line boundary and works on Hs 1's flat, ordered 61-token letter sequence instead: for each witness, a sliding best-offset search scores initial-letter matches (case-insensitive; the two "eth" suspension-glyph tokens excluded from matching, per bUNT5's own convention) and flags any witness token that strictly extends (case-insensitive prefix of) its aligned Hs 1 token as a candidate expansion (the Hs 12 "Bellum/Famus" pattern, now checked against Hs 13's spelled words too). The joint target score is the sum of the four witnesses' best-offset match counts, out of 19+11+11+11=52 possible.
+
+**Target: 11/52 joint matches** (Hs13 2/19 at offset 7; Hs3 3/11, Hs3a 3/11, Hs11 3/11, all at offset 5) = 0.212.
+
+**Control, per rule 3: the identical four-witness best-offset joint procedure re-run on 500 random shuffles of Hs 1's 61-token order (seed 20260925): mean 10.868/52 (0.209), range [8, 17].** The real score sits at the **70th percentile**, and 59.6% of shuffles (298/500) tie or beat it.
+
+**Verdict: this joint alignment also does not clear its own control** -- 11/52 is barely above the shuffle mean and well within the bulk of the control distribution, indistinguishable from chance, confirming bUNT5's single-witness result now across all four remaining witnesses at once. Two expansion candidates turned up at Hs 13's best-scoring offset (Hs1 token "P" could be extended by Hs13's "peseit"; Hs1 token "m" by Hs13's "Moesque"), but that offset (2/19 matches) is itself below even the joint control mean, so per rule 4 ("a token pair counts toward a grade only at C ... or M") neither is graded -- **0 tokens graded C or M from this test**, matching bUNT5. This closes the philological-collation line opened by bUNT4/bUNT5 for this target: none of Herzog's collated witnesses -- singly (Hs 12) or jointly (Hs 13/3/3a/11) -- align with Hs 1 above chance under an initial-letter test. Status stays `open`/`partial` (NEAR.md is the orchestrator's file, not edited here).
+
+Counts (rule 4, unchanged from bUNT5): C: 0, M: 0, I: 1 (bUNT5's line-level hypothesis, not control-backed), H: 0.
+
+### Files this pass (3b)
+
+`specs/cheap-tests/untersberg-code/align_joint.py`, `align_joint_output.txt`. No new host requests (disk-only, per brief). Credit: Herzog 1929's own printed apparatus (as transcribed by bUNT5 into `witnesses.tsv`), this script only re-derives a control statistic from it.

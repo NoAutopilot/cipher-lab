@@ -80,6 +80,19 @@
    "exact_permutation_percentile": "42.5% (306/720 permutations tie or beat 3/6; exact mean 2.333/6, range [0,5])",
    "verdict": "Alignment does NOT clear its own control -- 3/6 sits within the 10-shuffle range (max 3) and at the 42.5th percentile of all 720 word orders, indistinguishable from chance. Per rule 3 this licenses 0 tokens at grade C and 0 at grade M; a single grade-I (inferred, not control-backed) line-level hypothesis is recorded in proposed_expansion.txt. judge_plaintext.py FAIL (length + language, de judge on a 6-word Latin string, not meaningful per spec's own note). Status unchanged: open/partial, NEAR.md not touched by this worker.",
    "cost_usd_estimate": "well under $3 cap, disk-only, no hosts, no subagents"
+  },
+  {
+   "test": "NEAR step (3b) (not a spec cheap_tests_in_order test; joint alignment named by NEAR.md's next-step column after bUNT5)",
+   "date": "26 Sept 2026",
+   "worker": "LANE B5 bUNT6",
+   "method": "Extended bUNT5's single-witness (Hs 12) line-level alignment to a token-level, multi-witness (Hs 13, Hs 3, Hs 3a, Hs 11) joint alignment over Hs 1's flat, ordered 61-token letter sequence (line boundaries dropped, since Herzog's apparatus lineation for these four witnesses does not correspond 1:1 to Hs 1's six physical lines the way Hs 12's six words did). For each witness, a sliding best-offset search over Hs 1's sequence scored initial-letter matches (case-insensitive; the two 'eth' suspension-glyph tokens never match) and flagged any witness token that strictly extends (case-insensitive prefix of) its aligned Hs 1 token as an expansion candidate. Joint target score = sum of the four witnesses' best-offset match counts. Control (rule 3): identical procedure re-run on 500 random shuffles of Hs 1's 61-token order (seed 20260925, same seed family as this target's prior controls). specs/cheap-tests/untersberg-code/align_joint.py, align_joint_output.txt.",
+   "target": "11/52 joint initial-letter matches (Hs13 2/19 at offset 7, Hs3 3/11 at offset 5, Hs3a 3/11 at offset 5, Hs11 3/11 at offset 5) = 0.212",
+   "control_mean": 10.868,
+   "control_range": [8, 17],
+   "target_percentile_in_control": 70.0,
+   "tie_or_beat_pct": 59.6,
+   "verdict": "Joint alignment does NOT clear its own control -- 11/52 sits at the 70th percentile of 500 shuffles and 59.6% of shuffles tie or beat it, indistinguishable from chance (same conclusion as bUNT5's single-witness Hs12 test, now confirmed across all four remaining witnesses at once). Two expansion candidates were flagged at Hs13's best offset (Hs1 'P' <- Hs13 'peseit'; Hs1 'm' <- Hs13 'Moesque') but that offset itself is not control-backed (2/19 is below even the joint mean), so per rule 4 neither counts toward a C or M grade -- 0 tokens graded C or M from this test, same as bUNT5. This closes the philological-collation line for this target: neither the single strongest witness (Hs12, spelled out) nor the joint four-witness alignment beats chance. Status stays open/partial (rule 5's near-solve amendment; NEAR.md is the orchestrator's file, not edited here).",
+   "cost_usd_estimate": "well under $1.5 cap, disk-only, no hosts, no subagents"
   }
  ],
  "judge": {
