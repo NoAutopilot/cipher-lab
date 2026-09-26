@@ -1167,3 +1167,103 @@ not 192; both were NULL/U under plain key.tsv and are now **NULL at grade C** un
 `reading_5549_ps_full_tokens.tsv`, this NOTES.md section. Not touched: `ciphertext_5549.tsv`, `ciphertext_5549_ps.tsv`,
 `key_5549.tsv`, `decode_5549.json`, `reading_5549_ps.txt` (the key.tsv-only reading, unchanged), AUDIT.md. Novelty
 not classified (rule 10); status line unchanged (`open`, this folder's per-letter status, per the flag above).
+
+## WC-NASSAU-FIT (26 Sept 2026)
+
+LANE WC worker WC-NASSAU-FIT (Sonnet, brief `.claude/briefs/runs/2026-09-26-lane-wc-nassau-fit.md`), continuing
+J6/J7's search for a sibling in the 5549 body's "verendertte Instruction oder Ciffer" key. Working files in `j6/`.
+
+**Step 0.** `python3 tools/intake_gate_check.py jan-van-nassau-1572-75` -> `jan-van-nassau-1572-75: open (line 1)
+-- edition/page or full-text-search citation found within 6 lines`, exit 0.
+
+**Step 1, candidate list.** Freshness check: re-ran the WVO `opmerkingen=cijfer` advanced search (1 request);
+"laatste 25 resultaten" still links to `start=71`, i.e. 96 total hits, matching the 24 Sept 2026 harvest exactly
+-- no new cipher-flagged WVO record has appeared since. Full candidate list, `sources/wvo/cipher-letters-2026-09-24.tsv`
+filtered to 1 Sept 1573 - 31 Dec 1574, correspondent Jan/Lodewijk van Nassau or (one case) a possible secretary,
+minus the eleven already fitted (5550, 5552, 5557, 5575, 5797, 5204, 5205, 5207, 5208, 5209, 5213): **17 candidates**,
+written with full opmerkingen text (from `sources/solver-diffs/2026-09-24-lane-n-wvo-cijfer-96.tsv`, reused per
+rule 4) to `j6/candidates_wc.tsv`. No unseen witness lacks a PDF url in this list except one: WVO 5806 (13 Nov
+1573), named in 5805's own opmerkingen as sent alongside its duplicate but not itself cijfer-flagged in the
+harvest, not fetched. Lodewijk-correspondent letters were included per the brief's own criterion (b) and its own
+precedent (5797, already fitted, is a Lodewijk letter): the already_nominated=yes rows (4610-4616, 5799 pool) were
+excluded as the closed pool; other Lodewijk letters were not, since Willem's "verendertte Instruction" would have
+gone to all three brothers alike (confirmed directly below: 5804's address leaf names Jan, Lodewijk *and* Hendrik
+jointly).
+
+**Step 2, fit tests, 5 candidates actually run (of 17 listed) -- full candidate table with priority/why/result in
+`j6/candidates_wc.tsv`:**
+
+*Controls, run first per the brief:*
+- **Known-negative (5204 p2, Lodewijk's 1574 table):** already in `j6/fit.tsv` from J6/24 Sept -- top10_shared 0/10,
+  share_gt99 0.23 vs body 0.24, cosine 0.21. **FAILS the gate, as required.**
+- **Known-positive (5549 body's own first half vs second half, `j6/fit_controls.py`):** n=269 vs n=270,
+  top10 first [9,14,59,19,24,42,69,93,127,137], top10 second [14,9,19,69,74,70,88,43,128,54], **shared 4/10**,
+  share_gt99 0.25 vs 0.24 (diff 0.01, passes), cosine 0.836 (passes). **The known-positive control FAILS the
+  gate's top10_shared>=6 sub-condition** (2 of the 3 conditions pass comfortably). This means the gate as specified
+  (all three conditions AND'ed) cannot reliably detect a true sibling at ~270-540-numeral single-page lengths --
+  the top-10-by-frequency ranking is noisy at this N (the four most common values, 9/14/19/69, are shared between
+  the true halves, but ranks 5-10 differ by sampling variance). **Per the brief's own contingency clause ("it must
+  pass the gate, or the gate cannot detect a sibling... and the fit is 'not a test'") and CLAUDE.md's calibration-
+  before-scoring precedent (ARM-S3), a FAIL from a candidate on the top10_shared measure alone is not a valid
+  negative here -- it is inconclusive.** Cosine, however, does discriminate cleanly at this N (true positive 0.836,
+  confirmed negative 0.21) and is not affected by this problem.
+
+*Candidates (nearest 21 Nov 1573 first):*
+
+| cand | date | dist. | page | groups | top10 | shared | share_gt99 | cosine | verdict |
+|---|---|---|---|---|---|---|---|---|---|
+| 5549 body | 21-11-1573 | -- | -- | 539 | -- | 10 | 0.24 | 1.00 | (target) |
+| **known-pos** (body 1st/2nd half) | -- | -- | -- | 269/270 | -- | **4/10** | 0.25/0.24 | 0.836 | control FAILS top10 sub-gate |
+| 5204 (known-neg) | 22-4-1574 | -- | p2 | 204 | -- | 0/10 | 0.23 | 0.21 | control PASSES (fails as required) |
+| 4502 | 23-11-1573 | +2d | -- | -- | -- | -- | -- | -- | no cipher content in PDF (see below) |
+| 5808 | 2-12-1573 | +11d | -- | -- | -- | -- | -- | -- | no cipher content in PDF |
+| 5805 | 31-10-1573 | -21d | p8 | 321 | 42,12,1,24,35,14,83,81,22,67 | 2/10 | 0.12 | 0.54 | FAIL (all 3 measures) |
+| 5804 | 2-10-1573 | -50d | p2 | 381 | 82,81,83,84,27,28,37,29,6,23 | 0/10 | 0.16 | 0.42 | FAIL (all 3 measures) |
+| 5803 | 13-9-1573 | -69d | p1 | 785 | 81,85,104,84,82,64,39,28,62,27 | 0/10 | 0.17 | 0.44 | FAIL (all 3 measures) |
+| 7205 | 16-1-1574 | +56d | -- | -- | -- | -- | -- | -- | no cipher content in PDF (see below) |
+
+Full numbers: `j6/fit.tsv` (regenerated by `python3 j6/fit.py`); numeral transcriptions `j6/fit_5803.tsv`,
+`j6/fit_5804.tsv`, `j6/fit_5805.tsv` (each a blind Sonnet pass on line crops only, no letter identity given to the
+transcriber); known-positive control computed by `j6/fit_controls.py`.
+
+**Three candidates (4502, 5808, 7205) turned out to carry no cipher content at all in their WVO PDF scan**,
+despite opmerkingen stating the original is "in cijferschrift, met oplossing": 4502's 2 pages and 5808's 8 pages
+are entirely clear French (5808 is headed "Duplicata" and its own opmerkingen says the copy holds only the
+non-ciphered part of the letter -- consistent); 7205's 10 pages are dense clear-French secretary hand throughout,
+no numerals anywhere. This is a real, reportable pattern, not a fit-test result: **for at least these three
+letters, the digitised WVO PDF appears to hold only the duplicate/oplossing document, not the ciphertext original**
+-- the actual cipher leaf may be a witness that exists in the archive (KHAG/ARAB) but was not part of this scan, or
+sits at a folio this PDF's page range does not cover. 7206 and 7208 (same ARAB source, same "oplossing bijgevoegd"
+phrasing as 7205) were deprioritized on this basis rather than tested, since the pattern held for both letters
+tried from letters marked this way.
+
+**5803 and 5804 each already carry a partial contemporary interlinear gloss** (tiny letters written above
+individual cipher groups) that the blind transcription subagents were told to ignore -- flagged here since it
+means a period decipherment already exists on both leaves for whatever key they use (evidently not the 5549
+body's key, per the fit numbers above), and could support a future alignment job on those two letters' own right,
+independent of this search.
+
+**Result: no candidate fits.** Of the 3 candidates actually transcribed (5805, 5804, 5803), none comes close to
+the gate on any measure -- cosine 0.42-0.54, well below both the recalibrated known-positive (0.836) and even the
+brief's stated 0.7 threshold, and clearly separated from the "definitely not a match" 5204 control (0.21) only by
+a modest margin, consistent with same-family-different-key documents rather than a shared key. Given the known-
+positive control's own top10_shared failure, the FAILs here are reported on cosine (which does discriminate at
+this N) rather than on top10_shared. **No H/C/S token; status stays `open` (rule 5).**
+
+**Gate recalibration recommended for a follow-up:** cosine alone (threshold somewhere between the confirmed
+negatives' ceiling of ~0.54 and the true positive's 0.836, e.g. 0.65-0.7) appears to be the discriminating
+statistic at this N; top10_shared>=6 is too strict to pass even a true positive at ~270-540 numerals and should be
+dropped or loosened (e.g. top10_shared>=4, matching the known-positive) before being used as a gate component again.
+
+**Unseen witnesses:** WVO 5806 (13 Nov 1573, sent alongside 5805's duplicate, not cijfer-flagged, no PDF fetched);
+the likely un-digitised cipher leaves behind 4502, 5808 and 7205's "oplossing" (KHAG for 4502/5808, ARAB for 7205)
+-- these would need a targeted request to the holding archive, not a WVO PDF re-fetch, since the PDF already
+served does not contain them.
+
+**Next step (one line):** either request page images for 4502/5808/7205's actual cipher leaves from KHAG/ARAB (a
+person-gated ask, since these are not in the digitised PDF), or fit-test the remaining unwatched candidates
+(5810, 7206, 7208, 4614, 5811, 5812, 4503, 5210, 5214 -- full list and priority in `j6/candidates_wc.tsv`) with
+the recalibrated cosine-only gate.
+
+Requests: resources.huygens.knaw.nl 7 (1 freshness-check search + 6 PDF fetches: 4502, 5808, 5805, 5804, 5803,
+7205), all >=2s apart, descriptive User-Agent. No other hosts touched.
