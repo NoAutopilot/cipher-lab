@@ -940,3 +940,6 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T18:59Z	session_01CwLeVtAWfVgbSXxCABdT8b	RETRO-APPLY-V (Sonnet, cap 6)	apply RETRO-2026-09-26j.md items 1-3 and 5 (item 4 in SEND-QUEUE-TOOL)	brief 2026-09-26-parent-retro-apply-v.md; parent 7i
 2026-09-26T19:32Z	session_01QcEVugfMG9dy8YkaHSQBNe	ARM3-COR	done 6.71 D (get_session), ledgered, retitled ARCHIVED, archived by LANE ARM3	no coded letter from the six; WE027 = Livingston-to-King per Weber
 2026-09-26T19:32Z	session_01XFDj26h7hTsPgt7Bo6dKb4	ARM3-DICT	done 2.01 D (get_session), ledgered, retitled ARCHIVED, archived by LANE ARM3	family G linear/page+entry dictionary excluded at 12 sd
+2026-09-26T19:32Z	session_013CUb7MLM9fsBYw3YmYv5ZQ	ARM3-LIVCODE (Sonnet, cap 7)	Livingston 1801-04 coded despatches + Weber WE027 context + King correspondence	brief 2026-09-26-lane-arm3-j1b-livingston-code.md; LANE ARM3
+2026-09-26T19:32Z	session_01MMCuqEpombZkK7dk5Qaqyt	ARM3-ADJ (Sonnet, cap 3)	shorthand-run adjacency closed-set test, shuffled-position null + positive control	brief 2026-09-26-lane-arm3-j3-crib-loop.md part 3a; LANE ARM3
+2026-09-26T19:32Z	session_01HxYpi65CvbqzdSS53XhW4N	ARM3-LOOP (Fable, cap 9)	crib loop on nomenclator matched control, gain gate before target	brief 2026-09-26-lane-arm3-j3-crib-loop.md part 3b; LANE ARM3
