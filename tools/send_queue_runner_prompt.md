@@ -69,5 +69,12 @@ NoAutopilot/cipher-lab and your own browser, already signed in to the project ma
 5. Never edit `SEND-QUEUE.tsv` or any other file, never commit to main, never merge.
 6. Up to five rows per run, one pull request each. Finish with one line per row: id and whether it was sent or
    blocked.
+7. Six-hour rule (owner, 26 Sept 2026): nothing stays parked. Before choosing rows in step 2, look for any row
+   still `queued` whose `checked` cell is more than six hours before the current UTC time and that has no
+   `send-queue/<id>` branch and no `[SENT-<id>]` pull request. Those rows go first this run, ahead of newer ones,
+   and each gets its pull request this run -- `result: sent`, or `result: blocked: <why>` when it cannot be sent --
+   so a parked row shows up as a pull request rather than staying silent. If a `[SENT-<id>]` pull request you
+   opened more than six hours ago is still open, name it in your finishing line ("PR <n> for <id> still open after
+   six hours") so the repository side lands it.
 
 Never use the words first, new, unpublished, unread or never printed about anything in this repository (rule 10).

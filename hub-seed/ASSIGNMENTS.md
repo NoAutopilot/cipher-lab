@@ -952,3 +952,6 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T20:06Z	session_01MMCuqEpombZkK7dk5Qaqyt	ARM3-ADJ	done 2.78 D (get_session), ledgered, retitled ARCHIVED, archived by LANE ARM3	non-result at N=28
 2026-09-26T20:06Z	session_01HxYpi65CvbqzdSS53XhW4N	ARM3-LOOP	done 9.25 D (get_session), ledgered, retitled ARCHIVED, archived by LANE ARM3	gain gate not met (9.2 < 10), target not run
 2026-09-26T20:06Z	session_01ExYcKQqjKFbTmFmvKgTxVF	PR-LAND-7 (Sonnet, cap 4)	land the desk runner recheck PR 27 (multi-row) through lq_answer_check; either-parent rule	brief 2026-09-26-parent-ytbiz-pr-land-7.md; parent 7i
+2026-09-26T20:40Z	session_01PmFYDrdFDjraA2rc932HcQ	LANE ARM3 orchestrator	closed on brief 20:05; get_session 5.05 (lane's own line said 3.56; ledger row edited in place); archived by parent 7i	no reading; Irving Brant Papers (LOC) named as the one cheap untried step
+2026-09-26T20:40Z	session_01V3dieQhJPuLUQBcGWTyNJB	OUT-CHECK-Q	done 2.97 D (get_session), ledgered, retitled ARCHIVED, archived by parent 7i	S2-S6 queued; BnF batch held for the owner (rule 8)
+2026-09-26T20:40Z	session_01ExYcKQqjKFbTmFmvKgTxVF	PR-LAND-7	done 3.51 D (get_session), ledgered, retitled ARCHIVED, archived by parent 7i	PR 27 closed, L12 done, L3/L4/L5/L10/L21 requeued
