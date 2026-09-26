@@ -174,12 +174,25 @@ Open flags: none unanswered (V9-QA8/QA9 en18 caveat answered in HYPOTHESES.md an
 
 Brief .claude/briefs/runs/2026-09-26-lane-wc-orchestrator.md; COMMON 2026-09-26-lane-ax-COMMON.md (reused, lane goal "WVO
 circles: one control-backed recovery test per circle, close or promote"). Parent: owner-account parent
-session_01FXDfYR3CvGk7tcid1Aav1n. Excluded by brief: wvo-hessen-1564 (below unicity), Nassau pool 4612/5799.
-Live 17:55: WC-MAP (Sonnet, session_01SBsLwsasESUEnUebgj36Cz, cap 4, box 40; work list into QUEUE.md) and WC-LAGARDE
-(Sonnet, session_011TA67SmisTn4Sa2zuRfZPW, cap 6, box 45; la-garde-1577's 9 unresolved cells, solve_l2 rerun with an
-error-bracketing control). Next: job 3 per WC-MAP's order (orchestrator's reading of the files so far: willem-van-hessen-1567's
-target 1127 original is unimaged at KHA, so its cheap step is the 1069 sibling atlas, not a target test; jan-van-nassau's
-5549 main-body "verendertte Ciffer" is the one unrecovered key in that circle). Check-in armed 18:31 UTC.
+session_01FXDfYR3CvGk7tcid1Aav1n. Work list: QUEUE.md "WVO circles work list (LANE WC, 26 Sept 2026)" (WC-MAP).
+Excluded: wvo-hessen-1564 (below unicity), Nassau pool 4612/5799 and the rest of lodewijk-van-nassau-1573-74, august-van-saksen
+53/126 (LANE VO1), orange-nassau-1572 and gunther-van-schwarzburg-1561 (found-solved).
+
+Done (ledgered, archived): WC-MAP 2.83 D (work list; corrected the brief: no key exists for Hessen 1127, its original is
+unimaged at KHA). WC-LAGARDE 9.64 D- (1.6x cap, inside box): la-garde-1577's 9 cells settled (H 187, unresolved 0), measured
+pass disagreement 20.1-25.5%, solve_l2.py --noise-rate added; both design negatives hold with controls bracketing the
+measured error (control beats target to 26-28% injected), so the earlier negatives were real tests; status open (masc and
+running_key via family_run.py untried).
+
+Live 18:34: WC-NASSAU-FIT (Sonnet, session_01THEQfeJaCDszJjBGxmuLDq, cap 8, box 60): the 5549 body's "verendertte" key (539
+numerals, unread; J7's matched control reads 10.9%, so only a sibling opens it) -- WVO candidates Sept 1573-Dec 1574 not yet
+fitted, one-page fit against the body with a known-positive (body half vs half) and a known-negative (5204) control. WC-MAP's
+rank-1 step (transcribe 5198/5199's 1842 decipherment) not taken: key_1572 is already printed and graded H and 5198 is found-solved.
+
+Held on the owner: willem-van-hessen-1567 on ASKS 31 (KHA original of 1127); the 1069 atlas (USD 20-40) is not dispatched
+because it opens no unread ciphertext (1109's signs are by eye a different family, wvo-hessen-1564 NOTES). borssele-heinsius-1714
+on ASKS 46 (leaf H.A. 1836). oldenbarnevelt-brederode-1605: no sibling and no lead (cryptanalysis only, 121 tokens). If
+WC-NASSAU-FIT is negative the lane goes idle-standing on ASKS 31 and 46.
 
 ## LANE NX2 handoff (session_01Ms6A5gPqrVmyK3Liyfgo9z), 26 September 2026, from 14:45 UTC (live)
 
