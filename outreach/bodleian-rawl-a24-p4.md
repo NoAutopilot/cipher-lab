@@ -1,33 +1,32 @@
-status: drafted (26 Sept 2026 16:45 UTC: waiting on LOCAL-QUEUE L24 for the modern folio of Stamford's letter; becomes ready when L24 lands. The desk runner established on 26 Sept 2026 that the volume is not digitised: Bodleian Archives & Manuscripts record "Thurloe Papers, vol. xxiv", ark:/29072/x0x920fw11hz, MSS. Rawl. A. 24/1-2, "Not available online", with item-level records per folio under it; L19, PR 22)
-subject: Thurloe P4 (Stamford, Calais, 13 March 1655): one leaf image from Bodleian MS Rawl. A. 24 would settle whether Thurloe's office deciphered it
-to: you (Bodleian Library reproductions, or a look at Digital Bodleian if the volume is imaged)
-
-Not a gate for the N4 class, but decisive for it. The letter of William Stamford from Calais, 13 March 1655, is printed
-in cipher in Birch's Thurloe State Papers, citing "vol. xxiv p.73, 76" of the Rawlinson Thurloe papers (now Bodleian
-MS Rawl. A. 24). Our reading is at N4 (no prior decipherment located; ciphers/thurloe-printed/AUDIT.md 'N4 set, P4').
-The question an image answers: did Thurloe's office interline or file a decipherment beside the cipher (pp. 73 and 76
-of the volume)? If yes, the item drops to N0/N1; if no, the N4 stands on firmer ground.
-
-What to do: open https://digital.bodleian.ox.ac.uk and search "Rawl. A. 24"; if not imaged, ask Bodleian reproductions
-for pp. 73 and 76 of MS. Rawl. A. 24 (low-resolution reference copy is enough). Save the images to
-ciphers/thurloe-printed/images/ and note the date in ASKS.md row 30. This environment cannot reach the Bodleian site
-(bot challenge), and its catalogue has no item record for these leaves.
-
-Recipient line: ______  Subject line: ______  Sign-off: ______
+status: mailbox-draft (26 Sept 2026 16:59 UTC; awaiting the owner's send). LOCAL-QUEUE L24 (the modern folio for Stamford's letter) is still `queued`, not landed; this draft asks Imaging Services to locate the leaf from Birch's old pagination and their own item-level records, so it does not wait on L24. Bodleian Archives & Manuscripts record confirms the volume is not digitised (marco.ox.ac.uk, ark:/29072/x08k71nh14zj / x0x920fw11hz, "Rawlinson Manuscripts", MSS. Rawl. A. 24/1-2, "Not available online"; L19, PR 22, 26 Sept 2026).
+subject: Reproduction request: MS. Rawl. A. 24, William Stamford's letter from Calais, 13 March 1655
+to: Bodleian Imaging Services -- specialcollections.enquiries@bodleian.ox.ac.uk (verified 26 Sept 2026 on https://www.bodleian.ox.ac.uk/about/work-with-us/imaging-services/order-images; an order form is also available there, https://www.bodleian.ox.ac.uk/sites/default/files/bodreader/documents/media/imaging-services-image-order-form.pdf, for if email intake has changed)
+targets: ciphers/thurloe-printed
+links: folder=https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/thurloe-printed; audit=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/thurloe-printed/AUDIT.md; catalogue-record=https://marco.ox.ac.uk/ark:/29072/x08k71nh14zj (via ark:/29072/x0x920fw11hz, "Thurloe Papers, vol. xxiv")
+audit: ciphers/thurloe-printed/AUDIT.md, "N4 set, P4" (no prior decipherment located after a logged search). Rule 10: this note claims no reading beyond what AUDIT.md already states, and asks only for an image.
 
 ---
 
-Not a gate for the N4 class, but decisive for it. The letter of William Stamford from Calais, 13 March 1655, is printed in
-cipher in Birch's Thurloe State Papers, citing "vol. xxiv p.73, 76" of the Rawlinson Thurloe papers, now Bodleian MSS.
-Rawl. A. 24/1-2 (Archives & Manuscripts record "Thurloe Papers, vol. xxiv", ark:/29072/x0x920fw11hz, not available
-online). Our reading is at N4 (no prior decipherment located; ciphers/thurloe-printed/AUDIT.md 'N4 set, P4'). The
-question an image answers: did Thurloe's office interline or file a decipherment beside the cipher? If yes, the item
-drops to N0/N1; if no, the N4 stands on firmer ground.
+Dear Bodleian Imaging Services,
 
-What to do: the volume is confirmed not digitised (checked 26 Sept 2026 on Digital Bodleian and the Archives &
-Manuscripts catalogue). Send a reproduction request to Bodleian Imaging Services for the leaf carrying Stamford's letter
-of 13 March 1655 in MS. Rawl. A. 24/1 (modern folio from LOCAL-QUEUE L24; Birch's pp.73 and 76 are the old pagination),
-recto and verso, plus any adjacent leaf the catalogue lists as its decipherment or enclosure; a low-resolution reference
-copy is enough. Save the images to ciphers/thurloe-printed/images/ and note the date in ASKS.md row 30.
+One person directs this project and sends this message; the reading, the searches of the editions and the audits
+are done by AI agents (Claude models) working in an open repository, every step logged. We work on printed cipher
+letters from Thurloe's State Papers, checking each reading against a search for any prior decipherment.
 
-Recipient line: ______  Subject line: ______  Sign-off: ______
+We would like a reproduction of one leaf, or a low-resolution reference copy if that is easier: the letter of
+William Stamford from Calais of 13 March 1655, printed in cipher in Birch's edition of Thurloe's State Papers
+(vol. iv), which cites it as "vol. xxiv p.73, 76" of the manuscript volume. Your own Archives & Manuscripts
+catalogue record for that volume is "Thurloe Papers, vol. xxiv" (ark:/29072/x08k71nh14zj), now MSS. Rawl. A. 24/1-2,
+marked "Not available online" and split into item-level records by folio; we have not been able to work out from
+those records which modern folio carries Birch's old pp.73 and 76, so we would be grateful if your staff could
+resolve that from the item list, or let us know if it is easier for us to submit a plain reproduction request
+naming the old pagination.
+
+The question a leaf image would answer: did Thurloe's office write or file a decipherment beside the cipher on
+those pages? We have found no prior decipherment of this letter after a logged search (search log and safe
+sentence at the link below); the answer either confirms that or turns up an office decipherment we have missed.
+
+Everything we have on this letter, including the search log, is open at
+https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/thurloe-printed .
+
+[SIGN-OFF]
