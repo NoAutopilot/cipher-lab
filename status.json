@@ -1,5 +1,5 @@
 {
-  "updated": "26 Sep 2026, 08:50 UTC",
+  "updated": "26 Sep 2026, 15:06 UTC",
   "stages": [
     "Identified",
     "Verified unsolved",
@@ -448,6 +448,24 @@
         "expected": "Unknown",
         "unblock": "A ciphered leaf located; then the Boucher check"
       }
+    },
+    {
+      "name": "Armstrong to Madison, 20 Feb 1808",
+      "year": "1808",
+      "ref": "NARA RG 59 M34 roll 14; Founders Online 99-01-02-2728",
+      "folder": "ciphers/armstrong-madison-1808",
+      "stage": 8,
+      "state": "open",
+      "holder": "LANE ARM2 (idle-standing on ASKS 66)",
+      "next": "The Papers of James Madison editors (U.Va.): any other letter in this code or with these marks, a key, a decode, or the correspondent Madison meant (ASKS row 66).",
+      "note": "Transcribed from the NARA microfilm, 0.957 match against the Founders Online text; a crib hunt, sibling-code vocabulary transfer and a nomenclator solver are all parked with their matched controls. Ten period shorthand systems were checked against the marginal marks -- six excluded with a Pitman control, the other four non-test on a calibration drift -- and none identified; the docket letters, five Livingston letters and all 35 pages of the Jefferson channel are clear text, so no second letter in this code was found. 139 of 369 code groups occur once, which caps any context-only solver, so only more ciphertext in this code moves it. S. Tomokiyo (Cryptiana) recommended this target to us, 26 Sept 2026.",
+      "wait": {
+        "on": "The Papers of James Madison editors (U.Va.), via the owner: ASKS row 66",
+        "since": "26 Sept 2026",
+        "expected": "unknown; the draft (outreach/armstrong-madison-editors.md) has not been sent",
+        "unblock": "The owner sends or waives the draft, or new material (a second letter, a key, a specialist's identification of the marks) reaches the lane from outside; LANE ARM3 would then reopen the target."
+      },
+      "kind": "cryptanalysis"
     }
   ],
   "workers": [
@@ -616,6 +634,22 @@
     }
   ],
   "log": [
+    {
+      "when": "26 Sep, 14:38",
+      "what": "Huygens Instituut editor's reply recorded and an answer drafted (ASKS 67): dr. Huysman says the KHA Collectie Japikse copies of WVO 53 and 126 (twentieth-century copies made for an unfinished continuation of Japikse 1934) may carry a decipherment of the cipher postscripts; not yet seen, no cloud route to the KHA."
+    },
+    {
+      "when": "26 Sep, 14:14",
+      "what": "LANE V9 closed at 380k context and LANE V10 opened at 14:31: rah-morillo-1817 item 3 read N0, key period, text known; four QA passes ran, 3 flags raised and cleared."
+    },
+    {
+      "when": "26 Sep, 13:45",
+      "what": "LANE ARM2 closed idle-standing on ASKS 66: the Papers of James Madison editors are the likeliest source for a second letter in Armstrong's private code, a key, or an identification of the shorthand marks; armstrong-madison-1808 stays open, no NEAR row."
+    },
+    {
+      "when": "26 Sep, 13:37",
+      "what": "LANE B11: Salviati syllabary families re-run with the control at the measured 6.4 pct transcription error, two variants now control-backed negatives; malsburg record 509's cribs tied their shuffle control, so no nomenclator run is licensed."
+    },
     {
       "when": "25 Sep, 19:20",
       "what": "Owner account opens LANE ZX2 on the gate-passing hand-offs the other account's R6 will not reach. Clair 349 transcription passes the 60 percent gate (70.7). Mercy 1648 reading (other account, key by cryptanalysis) is with a verifier."
@@ -1988,17 +2022,17 @@
     },
     {
       "name": "Lane R6, recovery and deep work (7b)",
-      "live": 1,
+      "live": 0,
       "focus": "started 15:39: Salviati f.55v to f.57v then the code-and-mark run; YX's 13 gate-passing targets by lead class; PP-04 Costa Cabral 1865"
     },
     {
       "name": "Lane V6, verification (7b)",
-      "live": 1,
+      "live": 0,
       "focus": "started 15:39: Portuguese 1780-1830 judge corpus and the Linhares re-run; verifier for the Charles-Digby found-solved; verifiers for readings; rolling QA every two hours"
     },
     {
       "name": "Lane B2, breadth (7b)",
-      "live": 1,
+      "live": 0,
       "focus": "started 15:39: first cheap test per remaining spec at $3, next tests where a spec moved, ten more specs from the survey"
     },
     {
@@ -2047,9 +2081,29 @@
       "focus": "hall of fame view live from CITATIONS.md: one public citation (Cryptiana, 24 Sept 2026) and the pending replies list"
     },
     {
-      "name": "Lane GOLD, standing lane on the famous items (other account)",
-      "live": 6,
-      "focus": "opened 16:43 by parent 7c at the owner's decision: Köhler 1944 (archive route, then running key on a Dutch or German book text, then book code, each family with its matched control before the target) and Debosnys 1883 (second transcription pass, form test against his clear poems, anneal in fr/en/pt/la); the Navier-Stokes pattern -- sibling first, groups sharing HYPOTHESES.md, a Fable consolidator per cycle, the judge as the only gate"
+      "name": "Lane GOLD, standing lane on the famous items",
+      "live": 0,
+      "focus": "idle-standing since 03:24 on ASKS 52, 53, 55; Koehler partial with its NEAR row"
+    },
+    {
+      "name": "Lane B11, breadth (7h)",
+      "live": 1,
+      "focus": "Salviati syllabary families re-run with the control at the measured 6.4 pct transcription error -- two variants control-backed negatives, the regular design re-running at more restarts; malsburg cribs from record 509 tied their shuffle control, no nomenclator run licensed; closes about 14:56"
+    },
+    {
+      "name": "Lane V10, verification (7h)",
+      "live": 1,
+      "focus": "QA12 now, verifiers on any reading ready, Mercy 1648 closer waits on the owner's page read"
+    },
+    {
+      "name": "Lane ARM2, Armstrong 1808 cycle 2 (7h)",
+      "live": 0,
+      "focus": "closed idle-standing 13:45 on ASKS 66, see the target card"
+    },
+    {
+      "name": "Lane V9, verification (7g)",
+      "live": 0,
+      "focus": "closed 14:14; rah-morillo-1817 item 3 N0, key period, text known; four QA passes, 3 flags cleared"
     }
   ],
   "headline": "25 Sept 2026, 22:15 UTC: 20 letters (15 board entries) at N3 or better after two audits, 5 with our own key: the two undeciphered blanks in Lodewijk van Nassau's letter of 22 Oct 1573 (WVO 5797, N4 with a period gloss and our aligned table), the Mercy instruction of 6 June 1648 (BnF Espagnol 144 f.22, homophonic cryptanalysis, judge undecided, no print located), Orange to August of Saxony 1561 (WVO 53, pure cryptanalysis), the van Beuningen 1657 key, Jan van Nassau's cipher lines of 17 Apr 1574 (WVO 5551), and now Linhares (dictionary code, Vieyra 1809), which the Portuguese judge passes on a corpus of its own period. Charles I's Digby cipher paper (BL Add MS 6912) is identified as Wheatstone's 1862 decipherment (N0, contribution). Both accounts are live: the other account's parent runs R6 (Salviati and the 13 gate-passing targets), V6 (verifiers, rolling QA) and B2 (breadth: lima, harry-caroline and powers first tests all negative or index-only); the owner account runs ZX (Brochado, Clair 349, Barriere) and CX2 (check-solved round 2, seven targets re-verified open today). The ChatGPT second-opinion runner has posted three pull requests (10-12); V6 checks every citation.",
