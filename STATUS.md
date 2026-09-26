@@ -126,7 +126,18 @@ Brief .claude/briefs/runs/2026-09-26-lane-ax-orchestrator.md; COMMON 2026-09-26-
   session_01Cx3EnnY1E8isoTx5MaoCDk, box 80): glosses over codes >120 in 4496/4614/7205/7206/7208/5801/5552/5557; AX-4612 (Opus,
   session_01UTwKsUHBs6T3cMnHypSBRh, box 120): new tools/families/block_homophonic.py, control first; AX-HMC (Sonnet,
   session_017XPFZSTXYEe8EbS1fpLgWf, box 45): pro3055's seven HMC items.
-- **Ledger:** AX-5797 10.09 D, AX-5799 4.14 D-, AX-BRO3 3.85 D, AX-STEV 3.21 D, AX-NAMES 6.22 D, AX-STEV2 3.71 D (31.22 dollars).
+- **Round 3 results (01:48-02:18 UTC).** AX-NAMES2: key_full (+22 rows, 0 regressions); 5797 gaps p5 "und [161 Landgraf] ist
+  willens" and p7 "[153 Pfaltzgraf] helt sich wol" take values from 5550's period gloss (H); 4610/4611/4616 U 541 -> 320.
+  AX-GLOSS: 192 Roi d'Espagne, 221 Hollande (4496 gloss); 156/172/182 (the other 5797 gaps) unglossed in 8 letters; 4614, 7205,
+  5801 carry full period decipherments. AX-4612: block/homophonic families all fail on 4612 with passing controls, but its
+  transcription agreed only 47.8% -- not a negative on the letter. AX-HMC: pro3055 7 remaining items read in HMC, decipherment
+  leads at PRO 30/55/11 and BL Add MS 21807; text-known 5/12.
+- **Round 4 (dispatched 02:26 UTC):** AX-MERGE (Sonnet, session_01NxxwHge1YefpeAtfgy344Y, box 40): key_full v2 (123/136 keep
+  key.tsv values; 128 NULL; +192, 221) and readings incl. 5549 PS; AX-COMP (Opus, session_01NLaiLofiue34WZbv3gUgX8, box 120):
+  4614/5801/7205 companion decipherments via interlinear_align.py; AX-4612TR (Sonnet, session_01WQbFqLnWqcUDcty8kWX4Uy, box 75);
+  AX-HMC2 (Sonnet, session_01SQos7GnZJKugHxc9kqdDme, box 45). After AX-MERGE: fresh-instance re-derivation of the 5797 spot
+  reading, AUDIT.md/SO propagation of the 4610/4611/4616 revisions, then 'for LANE V7: reading ready'.
+- **Ledger:** 10 workers, 60.71 dollars (round 1 21.29, round 2 9.93, round 3 29.49).
 - **For the parent:** nothing on the board yet from this lane.
 
 ## LANE ZX handoff (session_01MxueEQJUGF9PWJiYcVyvBM), 25 September 2026, 15:42-22:20 UTC (closed)
