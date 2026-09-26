@@ -325,3 +325,58 @@ resets, all eventually succeeded). loc.gov: 2 collection searches (Madison Paper
 Armstrong) + 14 item-metadata `?fo=json` fetches + 2 Livingston-name-pair queries + 2 Pinkney-name-pair queries +
 1 spot item-metadata fetch (mjm015063, not pursued further) = 21. tile.loc.gov: 14 thumbnail image fetches. All
 >=1.5s apart, descriptive User-Agent, no logins, no credentials touched.
+
+## ARM-LIV pass, 26 Sept 2026 (LANE ARM2 worker ARM-LIV) -- the five Livingston-to-Madison letters, content read
+
+ARM-REC3 (above) located the five Livingston-to-Madison letters in the loc.gov Madison Papers window (1807-09) via
+`q="Robert R. Livingston"&dates=1807/1809` but did not read them (out of that pass's scope). This pass re-ran the
+same query (confirms the same 5 loc.gov item ids and dates) and read all five for content, per this job's brief.
+Full table in `pool/LIVINGSTON.tsv` (item_id, date, founders_id, pages, route, class, note).
+
+**Route**: tried the Founders Online text (via Wayback) first for each, prioritizing 5 Feb 1808. WebSearch for the
+exact Founders document id succeeded for only 2 of 5 (17 May 1807 = `99-01-02-1698`; 24 Jan 1809 = `99-01-02-3948`);
+for the other 3 (22 Mar 1807, 8 Jan 1808, 5 Feb 1808) two targeted WebSearch queries each returned only nearby/
+unrelated Founders documents, never the exact id, so per this brief's step 3 fallback those three were read from
+`tile.loc.gov` page images instead (thumbnails for all pages; the one letter with a cipher-relevant passage, 22 Mar
+1807, was also fetched at native resolution for a legible read of the passage in question). A CDX query attempting
+to find the Founders "search all correspondence between Madison and Livingston" listing page (which might have
+supplied the missing 3 ids in one fetch) failed twice with `Recv failure: Connection reset by peer` -- the same
+web.archive.org instability ARM-REC/REC2/REC3 already logged -- and was not retried further (one retry after a
+pause is this project's limit).
+
+**Result: all five letters are wholly ordinary correspondence -- clear text throughout, no numeral groups on any
+page, no reference to any cipher, key, or private correspondence between Livingston and Armstrong.** None
+corroborates the "sibling code" hypothesis (family E). Two letters are worth flagging even though neither bears on
+Armstrong's own cipher:
+
+- **22 Mar 1807** (`mjm014713`, no Founders id located) discusses the Burr conspiracy (Aaron Burr's "plans," their
+  "total defeat," General Wilkinson, and co-conspirators Bollman and Swartwout) and contains a genuine period
+  "cypher" reference -- but about the already-public Wilkinson/Burr cipher, not Armstrong's: **"What folly led him
+  to write in cypher without having previously settled a key? And by what means has his letters been deciphered?
+  These are enigmas which I cannot unriddle."** (read directly off the native-resolution page image, p1). This is
+  Livingston commenting on the 1807 Burr trial's own already-solved cipher correspondence (Wilkinson's own
+  decipherment of Burr's letter was public trial evidence by this date), unconnected to the 20 Feb 1808 target.
+- **8 Jan 1808** (`mjm015043`, no Founders id located) asks Madison to forward a personal letter to Livingston's
+  family in France "with your dispatches," citing "keeping open the intercourse with Genl Armstrong" -- the
+  ordinary diplomatic pouch to the Paris legation, not a private cipher or key. p2 discusses the Embargo's hardship
+  on Americans in Europe.
+- **5 Feb 1808** (`mjm015063`, no Founders id located; the letter fifteen days before the target and this brief's
+  priority item): a routine office-seeking recommendation (a Mr [Philip?] Livingston for a seamen's-agent post at
+  Jamaica) plus congratulations on Madison's election as President. No mention of Armstrong, a cipher, or a key at
+  all.
+- **17 May 1807** (`mjm014751`, Founders `99-01-02-1698`) and **24 Jan 1809** (`mjm015230`, Founders
+  `99-01-02-3948`): personal/domestic matters (a son-in-law's passport request and NY election politics; a Merino
+  wool sample sent as a gift), no cipher or Armstrong mention.
+
+**Reading: family E's Livingston lead is closed as a negative** (a search result, not a control-backed test --
+this is a "no coded passage found" screen, not a shuffle test, rule 3) -- the five letters in the window contain no
+cipher, no key reference, and no mention of Armstrong beyond the ordinary diplomatic-pouch channel. This does not
+touch WE027 (Livingston's own unpublished code per Weber 1979, NOTES.md line 96), which remains untested for lack
+of a reachable table, not because of anything found this pass.
+
+Requests this pass: loc.gov 1 collection search (`?q="Robert R. Livingston"&dates=1807/1809&fo=json`) + 5
+item-metadata `?fo=json` fetches = 6. tile.loc.gov: 7 page-thumbnail fetches (`...q.jpg`/`...dq.jpg` pattern) + 1
+native-resolution fetch (22 Mar 1807 p1, `0600d.jpg`) = 8. web.archive.org: 2 CDX queries (both succeeded) + 2
+document fetches (both succeeded on the first attempt) + 1 CDX query that failed twice (connection reset, not
+retried further) = 5. All >=1.5s apart, descriptive User-Agent, no logins, no credentials touched. No subagent
+used (7 small page images read directly, cheaper and simpler than a classification call for this volume).

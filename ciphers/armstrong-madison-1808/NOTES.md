@@ -802,3 +802,25 @@ thumbnails (0122-0126) + 4 thumbnails (0127-0130) + 4 thumbnails (0131-0134) + 1
 apart, descriptive User-Agent, no 429/403/challenge seen. `tools/browser_fetch.js` used 3 times (a roll-13
 search query, a narrower "Reel 13" query, and the roll-13 item page) to find roll 13's NAID and its own IIIF
 object-path prefix, per ARM-IMG's own documented route. No other hosts, no logins, no credentials touched.
+
+## ARM-LIV pass, 26 Sept 2026 (LANE ARM2 worker ARM-LIV) -- the five Livingston-to-Madison letters read for content
+
+Full detail in `crib_sources.md`'s "ARM-LIV pass" section; `pool/LIVINGSTON.tsv` has the per-letter table. ARM-REC3
+(family E, above) located five Livingston-to-Madison letters in the loc.gov window 1807-1809 but did not read them;
+this pass read all five, 5 Feb 1808 (fifteen days before the target) first. **Result: all five are wholly clear
+text, no numeral groups on any page, and none references a cipher, a key, or private correspondence between
+Livingston and Armstrong** -- the Livingston lead ARM-REC3 flagged as "the most promising unread lead" is now
+closed as a negative (a search result, not a control-backed test, since there was no coded passage to screen).
+Two letters are flagged for the record though neither bears on the target: 22 Mar 1807 contains a genuine period
+"cypher" reference, but about the already-public Burr/Wilkinson conspiracy cipher, not Armstrong's ("What folly led
+him to write in cypher without having previously settled a key? And by what means has his letters been
+deciphered?"); 8 Jan 1808 mentions "keeping open the intercourse with Genl Armstrong" but only as the ordinary
+diplomatic pouch for forwarding a personal family letter, not a private code. Founders Online text was reached for
+2 of 5 (17 May 1807, 24 Jan 1809); the other 3 had no Founders id locatable by WebSearch and were read from
+tile.loc.gov page images instead (thumbnails for all pages, native resolution for 22 Mar 1807's cipher-relevant
+passage). This does not touch WE027 (Livingston's own unpublished code, Weber 1979 pp.154/188, NOTES.md line 96),
+which stays untested for lack of a reachable table. Family E: no pool candidate from this lead; status stays open.
+
+Requests: loc.gov 6 (1 collection search + 5 item-metadata fetches). tile.loc.gov 8 (7 thumbnails + 1 native-res
+fetch). web.archive.org 5 (2 CDX + 2 document fetches all succeeded; 1 CDX query failed twice, not retried
+further). All >=1.5s apart, descriptive User-Agent, no logins, no credentials touched. No subagent used.
