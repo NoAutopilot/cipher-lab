@@ -639,3 +639,6 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T00:20Z	session_01TSaDecnpcuv3SpXK43KNFd	V7-QA4 done $1.84 D, archived	QA/2026-09-25-2341.md, 34 items, 2 failures, both cleared
 2026-09-26T00:38Z	session_01PYtPexePhLjYkgc8VsZ7Zn	GOLD-K4 done $3.16 D, archived by LANE GOLD3	B' owed runs: unit 1 control 74.5 mean vs target -3.4935 (0.0009 above the ten-text max), unit 2 control 76.5 vs -3.515 inside both bands, judge FAIL both; beau plaincipher/keycipher owed (80 pct rule); seven of seven placements at vig done
 2026-09-26T00:37Z	session_01CSQuomCj5Simbsx6r6VVcK	GOLD-CONS4 consolidator cycle 4 (Fable, cap 15, 60 min)	brief 2026-09-26-lane-gold-consolidator-c4.md; spawned by LANE GOLD3
+2026-09-26T00:48Z	session_01LyZokc7XR1SYPKgWTCFMUX	retrospective m done $2.36 D, archived	RETRO-2026-09-26a.md, 5 proposals; RETRO-APPLY-M pending (7e)
+2026-09-26T00:48Z	session_01JU8giKGTHWz4Zm1HyWK1VW	SCOUT-RERANK done $1.64 D, archived	QUEUE.md section 'Re-rank for LANE B5'; B5 pending (7e)
+2026-09-26T00:48Z	session_01744aLgcLnadR1XQckyHwcu	parent 7d done $41.40, handed over to 7e	20:01 UTC 25 Sept to 00:48 UTC 26 Sept; 609k context
