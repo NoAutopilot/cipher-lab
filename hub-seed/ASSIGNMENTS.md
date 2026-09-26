@@ -689,3 +689,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T03:37Z	session_014EYkrAKbR2t2FoWCqrnDE7	LANE B6 bBLZ6 (Sonnet, cap 3)	blitz homophonic German K=48 N=581	brief 2026-09-26-lane-b6-blz6.md; LANE B6
 2026-09-26T03:37Z	session_01U8gCyCSFWCSGnidZVWMRP5	LANE B6 bLOP2 (Sonnet, cap 3)	lope-hurtado CSP 497 vs records; Kolosova key	brief 2026-09-26-lane-b6-lop2.md; LANE B6
 2026-09-26T03:37Z	session_01Y7bmrtnRoLBbkgYQc1mZWy	LANE B6 bMAL (Sonnet, cap 6)	Malsburg 1636 intake, HCPortal fetch, first test	brief 2026-09-26-lane-b6-mal.md; LANE B6
+2026-09-26T03:51Z	session_01VcUH8oeEMrrMHxssn2Yhxw	V8-NA5797 (Opus, cap 10)	verifier lodewijk 5797 + 4610/4611/4616 re-check	brief 2026-09-26-lane-v8-nassau5797.md; LANE V8
+2026-09-26T03:51Z	session_01PEiTtarakzahhzg8y2yKWg	V8-QA6	done 3.49, ledgered D, archived	

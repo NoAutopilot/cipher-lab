@@ -172,8 +172,8 @@ Brief `.claude/briefs/runs/2026-09-26-lane-v8-orchestrator.md`. Opened 03:05 UTC
 
 | job | state |
 |---|---|
-| 1 rolling QA | V8-QA6 session_01PEiTtarakzahhzg8y2yKWg (Sonnet, cap 5, 40 min) started 03:07, window from 01:42; QA7 ~05:40 |
-| 2 verifiers | none open at 03:07; expected: LANE AX Nassau 5797/4610/4611/4616 (after re-derivation), LANE B6 matignon-mayenne-1586 |
+| 1 rolling QA | V8-QA6 (Sonnet 3.49, QA/2026-09-26-0308.md, ~30 items, 3 flags: riksarkivet control mean and "partial" label for B6; thurloe-printed no rule-5 status word, intake gate matched a subheading, for the parent) ledgered D, archived; QA7 ~05:40, window from 03:08 |
+| 2 verifiers | V8-NA5797 session_01VcUH8oeEMrrMHxssn2Yhxw (Opus, cap 10, 45 min) started 03:51: lodewijk 5797 spots (AX reading ready 03:37) + 4610/4611/4616 class re-check after key_full; B6 matignon not posted |
 | 3 SO PRs | none above 15 at 03:07 |
 | 4 Mercy gate-2 closer | waits on the owner (JSTOR rows 80-83, Lonchay-Cuvelier IV) |
 
