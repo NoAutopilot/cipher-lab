@@ -55,7 +55,7 @@ not perform any cryptanalysis.
 | A-41, ff.33-37 | 6122 | Marino Caracciolo → Charles V | 24 Jul 1527 | Milan | CSP Spain vol.III pt.2, No. 122, p.294-95 (moved here 26 Sept 2026, NX2-CSP — see below) |
 | A-41, ff.41-43 | 6124 | Alonso Sánchez → Charles V | 27 Jul 1527 | Venice | CSP Spain vol.III pt.2, "Alonso Sanchez ... to the Emperor," Venice 27 Jul 1527 (moved here 26 Sept 2026, NX2-CSP, flagged — see below) |
 
-**(iv) Caracciolo/Sánchez crib pairs — new candidates from the same Índice pass (QUEUE.md "RAH Salazar y
+**(iv) Caracciolo/Sánchez crib pairs — candidates from the same Índice pass (QUEUE.md "RAH Salazar y
 Castro index, cipher mentions", NX2-INDEX, 26 Sept 2026), not previously in this folder. Updated 26 Sept 2026
 (NX2-CSP): both former "Target" rows below are now found already in print (see QUEUE.md's "CSP check-solved
 sweep" section for the full search log); demoted to the confirmation-only group (iii) above. Kept here as a
