@@ -2117,3 +2117,12 @@ note lists folios moved out to A. 24* (71-72, 87-91a-b, 95-96, 98a-b, 103, 106, 
 volume records repeat L19's "NOT AVAILABLE ONLINE" flag. No reproduction order or message was sent; this stays
 with the owner alongside L19 (outreach/bodleian-rawl-a24-p4.md). Full runner transcript: PR 23 (closed without
 merge), commit history of LOCAL-QUEUE.tsv row L24.
+
+## NX-UNBLOCK (26 Sept 2026)
+
+Checked before converting anything: this row's person-step (the Bodleian MS. Rawl. A. 24/1-2 reproduction,
+ASKS row 30) is an archive copy order, not a JSTOR/HathiTrust paywalled-content read, so it does not convert
+to a JSTOR-QUEUE or LOCAL-QUEUE row. Its LOCAL-QUEUE catalogue-lookup steps (L19, L24) are both already `done`
+(26 Sept 2026); the reproduction request itself (`outreach/bodleian-rawl-a24-p4.md`) is already drafted and
+already on ASKS row 30. No free route remains; genuinely blocked on the owner's reproduction order. No change
+made.

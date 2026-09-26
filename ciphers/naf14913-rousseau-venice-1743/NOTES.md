@@ -108,3 +108,13 @@ browser_fetch.js after the Clairambault 1161 pattern of curl failures on this ho
 403/altcha/Cloudflare challenge seen. archive.org: 1 metadata call, 1 be-api full-text-search call, 1
 djvu.txt download for the 1904 Montaigu book (all succeeded, all public-domain full-text, no login).
 Google Books: 2 calls with `$GOOGLE_BOOKS_KEY` + `country=US` (credential not printed).
+
+## NX-UNBLOCK (26 Sept 2026)
+
+The recommended next step ("a print-check worker with JSTOR/Cairn access reading the 2015 Archives de
+Philosophie article in full and checking Labro's 2012 edition") is really a paywalled-content read, not a
+free-route job -- converted per CLAUDE.md's NX-UNBLOCK brief into: two JSTOR-QUEUE.tsv rows (family (i),
+sender/recipient/place + cipher keyword; family (ii), the 2015 article's own title, no cipher keyword, in case
+JSTOR independently indexes it or citing scholarship), and LOCAL-QUEUE.tsv row L25 (`edition-read`, the
+owner's own Cairn access for the article itself, plus a WorldCat check for Labro 2012). No change to the
+target's `open` status or its "do not promote" recommendation pending those reads.
