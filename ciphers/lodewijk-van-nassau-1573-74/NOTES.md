@@ -2139,3 +2139,54 @@ being a clean pass/fail on its own.
 **Unit 3: key-seeded anneal.** `tools/homophonic_anneal.py --init KEY.tsv` added (start the anneal from a
 given sign->letter map instead of a random one; default behaviour unchanged when `--init` is omitted),
 offline test `tools/tests/test_homophonic_anneal_init.py`.
+
+## AX2-BLANKS: codes 156 and 182, contexts and 7206 (26 Sept 2026, LANE AX2)
+
+Worker AX2-BLANKS (Sonnet), brief `.claude/briefs/runs/2026-09-26-lane-ax2-blanks.md`, box 90 min from 05:20:16 UTC.
+Continues AX-GLOSS/AX-COMP/AX-COMP2's search for 5797's two remaining blanks: p7_spot6 (182) and p8_spot7 (156).
+
+**Unit 1: context table.** `ax2_blanks/contexts.py` (script, no images) scans every `ciphertext_*.tsv` in this
+folder and in `../jan-van-nassau-1572-75/` for exact codes `156`/`182`, and decodes the surrounding tokens under
+`key_full.tsv` (`ax2_blanks/contexts.tsv`). 5797's own line labels are isolated "spot"/"control" excerpts around
+one blank each (confirmed by inspecting the raw file: `p7_spot6` is immediately followed in file order by
+`p8_spot7`, but the two are non-adjacent places on the leaf, and a `p5_control_election` excerpt sits between two
+unrelated spots) -- the script stops the ±12 window at a spot/control label boundary rather than stitching
+unrelated excerpts together as if they were one continuous line.
+
+**156: no new occurrence found anywhere.** Exact-match grep across all 16 ciphertext files (this folder's 13 plus
+the sibling folder's 3) finds code `156` exactly once, at its own spot (5797 `p8_spot7`). AX-COMP2 already
+established it is absent from 7205; this pass extends that to every other transcribed letter on file, including
+4610/4611/4612/4612_v2/4614/4616/4503/5799/5810/5811/sib (all this target's own 1574-table letters) and
+5549/5549_ps/5551 (the sibling folder). Context (within-spot only): `<156> 127[NULL] 135[NULL] 144[NULL] 129[NULL]
+=begert =meiner`, i.e. 156 sits alone as the first sign of the spot, followed by four NULLs and then Groen's clear
+"begert meiner" ("[X] desires/requests of me"). Grammatical slot: a subject/name placeholder immediately before a
+verb clause -- the same shape as `p6_spot4`'s `172[lecontejean] ... =zeuget =diesen =morgen` (Count Jean testifies
+this morning) and `p7_spot6`'s own `182 128 133[NULL] 142 =ist =willig...` (see below). A value proposed from this
+shape alone is grade I only (rule 4) and is not written to names.tsv/key_full.tsv.
+
+**182: two informative occurrences under the same 1574 table, one coincidental non-match.**
+- **7205** (`07205_p4_L01`, already reported by AX-COMP2): settled H from the image, run `82[e].182.02[n?].139`;
+  aligned "meaning" is M-grade 'y' from a single occurrence under an alignment AX-COMP2 itself flagged as
+  effectively unconstrained (only 2 weak anchors across 4919 tokens) -- not usable evidence either way.
+- **4610** (`p2_L02`, M-grade transcription, "gap" flag against pass B): `192[roidespagne].112[l].182.81[e].3[n]
+  .27[s].148.129[NULL].82[e]...`. 182 sits immediately after the name-code 192 (Roy d'Espagne) and the letter
+  code 112 (l), i.e. in a position that could be either an ordinary letter or the start of a new clause -- the
+  transcription itself is M-grade (gap-flagged) here, so this occurrence supports a candidate reading only as
+  weakly as its own transcription confidence.
+- **5549** (jan-van-nassau-1572-75, run 15 pos 7): a `182` digit-match exists in the raw transcription, but
+  `jan-van-nassau-1572-75/NOTES.md` (lines 621-623) already established that 5549's *main body* does not read
+  under Lodewijk's 1574 table (`key_full.tsv`'s table) at all -- "5549 is therefore (all or nearly all) in the OLD
+  key, which is neither key_1572 nor Lodewijk's table" -- only 5549's *postscript* (`ciphertext_5549_ps.tsv`,
+  PS1-PS26) is in the shared table, and codes 156/182 do not occur in that postscript. So this is a same-digit
+  coincidence across two unrelated key systems, not a second sighting of key_full's code 182; it is excluded from
+  the count above and carries no information about 5797's blank. Flagged here so nobody re-finds it and treats it
+  as corroboration.
+
+So across every transcribed letter that shares 5797's own table, 182 occurs twice more (4610 M-grade, 7205
+H-grade-as-ciphertext/M-grade-as-meaning) and 156 occurs nowhere else. Neither gains a value: 7205's alignment is
+unconstrained, 4610's transcription is M-grade at that exact position, and 156 has no second sighting to
+triangulate from at all. `p7_spot6`'s and `p8_spot7`'s own local shape (subject-code-then-verb-clause, matching
+172/153/161's already-graded pattern) is the only consistent signal for either code, and it identifies a
+*grammatical role* (name/title placeholder), not a *value* -- grade I, per rule 4, not entered into names.tsv.
+
+Files: `ax2_blanks/contexts.py`, `ax2_blanks/contexts.tsv`. No hosts (script only, no images/network).
