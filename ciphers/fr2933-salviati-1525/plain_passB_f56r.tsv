@@ -1,172 +1,172 @@
 line	pos	word	expanded	conf
-L1	1	ha		h
-L1	2	Parlato		m
-L1	3	+		m
-L1	4	+		m
-L1	5	molto		h
-L1	6	+		m
-L1	7	Caldamt̃϶	Caldamente	m
-L1	8	+		m
-L1	9	+		m
-L1	10	nn	non	l
-L1	11	uuolt̃		m
-L1	12	+		m
-L1	13	+		m
-L1	26	<none>		m
-L3	1	et		l
-L3	11	[C]		l
-L3	20	[C]		l
-L4	3	[C]		m
-L4	12	[C]		m
-L5	21	Amn		l
-L5	22	nn		l
-L5	23	hn		l
-L5	24	+		l
-L5	25	stretto		l
-L5	26	+		l
-L6	1	mirabilmet̃϶	mirabilmente	h
-L6	2	+		h
-L6	3	+		h
-L6	4	+		h
-L6	6	p̃o		l
-L6	7	v·		h
-L6	8	s·		h
-L6	9	facci		h
-L6	14	lopa	sopra	m
-L6	15	+		m
-L6	17	Caldamet̃϶	caldamente	h
-L6	18	+		h
-L6	19	+		h
-L6	20	+		h
-L6	23	εt	et	h
-L6	24	sollicta	sollecita	m
-L6	25	+		m
-L7	1	s·		l
-L7	2	[C]		l
-L7	3	[C]		l
-L7	4	[C]		l
-L7	5	[C]		l
-L7	6	[C]		l
-L8	1	[C]		l
-L10	7	M.tw	Maestà	l
-L10	9	mj	mi	h
-L10	11	hn	ha	l
-L10	12	questn	questo	m
-L10	15	cto		l
-L10	17	ct̃	che	h
-L10	18	g̈'		l
-L11	1	ma		h
-L11	2	ch̃	che	h
-L11	3	gl̃	gli	m
-L11	4	+		m
-L11	5	besognn	bisogna	m
-L11	6	+		m
-L11	7	[C]		l
-L11	8	[C]		l
-L11	9	[C]		l
-L11	10	[C]		l
-L11	11	[C]		l
-L11	13	[C]		l
-L11	21	[C]		l
-L12	9	[C]		l
-L13	1	y		l
-L13	2	<none>		l
-L13	3	<none>		l
-L13	4	ha		h
-L13	5	+		h
-L13	6	inteso		h
-L13	7	+		h
-L13	8	+		h
-L13	9	quello		h
-L13	10	+		h
-L13	11	ch̃	che	h
-L13	12	qua	quale	m
-L13	13	+		m
-L13	14	ε	è	m
-L13	15	ſtato	stato	h
-L13	16	+		h
-L13	17	ſcripto	scripto	h
-L13	18	+		h
-L13	19	<none>		l
-L13	20	<none>		l
-L13	21	ϵt	et	m
-L13	22	q̈ḃ		l
-L13	23	+		l
-L13	24	+		l
-L13	25	+		l
-L14	25	ha		h
-L14	26	Aduij		l
-L14	27	+		l
-L14	28	+		l
-L14	29	+		l
-L14	30	+		l
-L15	1	sonr		l
-L15	2	v·		h
-L15	3	s·		h
-L15	4	[C]		l
-L15	5	appia	sappia	m
-L15	6	+		m
-L15	7	+		m
-L15	8	+		m
-L15	9	+		m
-L15	10	sl		l
-L15	11	+		l
-L15	12	+		l
-L15	13	Tutto		h
-L15	14	et		h
-L15	15	+		h
-L15	16	Pensi		h
-L15	17	+		h
-L15	18	quello		h
-L15	19	+		h
-L15	20	ha		h
-L15	21	auer	avere	m
-L15	22	+		m
-L15	23	+		m
-L15	24	[C]		l
-L15	25	p̃c		l
-L16	1	Sono		h
-L16	2	+		h
-L16	3	Certo		h
-L16	4	+		h
-L16	5	[C]		l
-L16	6	[C]		l
-L16	7	[C]		l
-L16	21	[C]		l
-L17	4	[C]		l
-L17	10	Sopra		h
-L17	11	+		h
-L17	12	lamedesima	la medesima	h
-L17	13	+		h
-L17	14	+		h
-L17	15	+		h
-L17	16	+		h
-L17	17	+		h
-L17	18	materia		h
-L17	19	+		h
-L17	20	+		h
-L17	21	mj	mi	h
-L17	22	+		h
-L17	23	+		h
-L17	24	ha		h
-L17	25	+		h
-L17	26	par		m
-L17	27	+		m
-L17	28	+		m
-L17	29	+		m
-L18	1	lato		m
-L18	2	+		m
-L18	15	[C]		l
-L18	20	[C]		l
-L18	21	[C]		l
-L19	1	[C]		l
-L19	3	a		l
-L19	4	[C]		l
-L19	8	[C]		l
-L19	20	[C]		l
-L19	25	fo		l
-L19	26	lo		h
-L19	27	Credo		m
-L19	28	+		m
-L19	29	+		m
-L19	30	+		m
+1	1	ha		h
+1	2	Parlato		m
+1	3	+		m
+1	4	+		m
+1	5	molto		h
+1	6	+		m
+1	7	Caldamt̃϶	Caldamente	m
+1	8	+		m
+1	9	+		m
+1	10	nn	non	l
+1	11	uuolt̃		m
+1	12	+		m
+1	13	+		m
+1	26	<none>		m
+3	1	et		l
+3	11	[C]		l
+3	20	[C]		l
+4	3	[C]		m
+4	12	[C]		m
+5	21	Amn		l
+5	22	nn		l
+5	23	hn		l
+5	24	+		l
+5	25	stretto		l
+5	26	+		l
+6	1	mirabilmet̃϶	mirabilmente	h
+6	2	+		h
+6	3	+		h
+6	4	+		h
+6	6	p̃o		l
+6	7	v·		h
+6	8	s·		h
+6	9	facci		h
+6	14	lopa	sopra	m
+6	15	+		m
+6	17	Caldamet̃϶	caldamente	h
+6	18	+		h
+6	19	+		h
+6	20	+		h
+6	23	εt	et	h
+6	24	sollicta	sollecita	m
+6	25	+		m
+7	1	s·		l
+7	2	[C]		l
+7	3	[C]		l
+7	4	[C]		l
+7	5	[C]		l
+7	6	[C]		l
+8	1	[C]		l
+10	7	M.tw	Maestà	l
+10	9	mj	mi	h
+10	11	hn	ha	l
+10	12	questn	questo	m
+10	15	cto		l
+10	17	ct̃	che	h
+10	18	g̈'		l
+11	1	ma		h
+11	2	ch̃	che	h
+11	3	gl̃	gli	m
+11	4	+		m
+11	5	besognn	bisogna	m
+11	6	+		m
+11	7	[C]		l
+11	8	[C]		l
+11	9	[C]		l
+11	10	[C]		l
+11	11	[C]		l
+11	13	[C]		l
+11	21	[C]		l
+12	9	[C]		l
+13	1	y		l
+13	2	<none>		l
+13	3	<none>		l
+13	4	ha		h
+13	5	+		h
+13	6	inteso		h
+13	7	+		h
+13	8	+		h
+13	9	quello		h
+13	10	+		h
+13	11	ch̃	che	h
+13	12	qua	quale	m
+13	13	+		m
+13	14	ε	è	m
+13	15	ſtato	stato	h
+13	16	+		h
+13	17	ſcripto	scripto	h
+13	18	+		h
+13	19	<none>		l
+13	20	<none>		l
+13	21	ϵt	et	m
+13	22	q̈ḃ		l
+13	23	+		l
+13	24	+		l
+13	25	+		l
+14	25	ha		h
+14	26	Aduij		l
+14	27	+		l
+14	28	+		l
+14	29	+		l
+14	30	+		l
+15	1	sonr		l
+15	2	v·		h
+15	3	s·		h
+15	4	[C]		l
+15	5	appia	sappia	m
+15	6	+		m
+15	7	+		m
+15	8	+		m
+15	9	+		m
+15	10	sl		l
+15	11	+		l
+15	12	+		l
+15	13	Tutto		h
+15	14	et		h
+15	15	+		h
+15	16	Pensi		h
+15	17	+		h
+15	18	quello		h
+15	19	+		h
+15	20	ha		h
+15	21	auer	avere	m
+15	22	+		m
+15	23	+		m
+15	24	[C]		l
+15	25	p̃c		l
+16	1	Sono		h
+16	2	+		h
+16	3	Certo		h
+16	4	+		h
+16	5	[C]		l
+16	6	[C]		l
+16	7	[C]		l
+16	21	[C]		l
+17	4	[C]		l
+17	10	Sopra		h
+17	11	+		h
+17	12	lamedesima	la medesima	h
+17	13	+		h
+17	14	+		h
+17	15	+		h
+17	16	+		h
+17	17	+		h
+17	18	materia		h
+17	19	+		h
+17	20	+		h
+17	21	mj	mi	h
+17	22	+		h
+17	23	+		h
+17	24	ha		h
+17	25	+		h
+17	26	par		m
+17	27	+		m
+17	28	+		m
+17	29	+		m
+18	1	lato		m
+18	2	+		m
+18	15	[C]		l
+18	20	[C]		l
+18	21	[C]		l
+19	1	[C]		l
+19	3	a		l
+19	4	[C]		l
+19	8	[C]		l
+19	20	[C]		l
+19	25	fo		l
+19	26	lo		h
+19	27	Credo		m
+19	28	+		m
+19	29	+		m
+19	30	+		m
