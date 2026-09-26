@@ -7,4 +7,5 @@ Window: every ROOM.md line and every commit since the time given in your launch 
 4. Rule 7: every claimed reading has judge output pasted, per-token grades, and a fresh-instance re-derivation.
 5. Rule 10: no "new", "first", "unpublished", "unread", "never printed" about our work anywhere (NOTES.md, AUDIT.md, ROOM.md, QUEUE.md, outreach); every AUDIT.md verdict names the key source.
 6. Transcription: two blind passes and the 60% agreement gate where a transcription was made.
+7. Run `tools/near_check.py`, `tools/ledger_check.py` and `tools/intake_gate_check.py <each touched target>`; paste the output; a nonzero exit or an unresolved flag is a failure.
 Write QA/<UTC date>-<HHMM>.md (create the QA/ folder if missing): one row per item (target, check, pass/fail, file and line), then a short list of failures. For each failure post a ROOM `flag:` addressed to the owning lane naming the file and the rule; a flagged item does not count toward any total until its lane clears it. Commit by path, push with tools/room.py --push, ROOM done line with counts (items checked, failures), final one-paragraph report, stop.

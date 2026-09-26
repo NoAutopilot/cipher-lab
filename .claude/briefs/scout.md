@@ -33,3 +33,13 @@ overlap in the row (NX-E318, esp318-sicilia-1503: Bourdeau's own README named th
 Also re-read each surviving candidate's own current NOTES.md (not just POOLS.tsv's summary column or the scout
 table that nominated it) before ranking -- POOLS.tsv `read_by`/`copy_free_share` columns go stale as fast as the
 solver repos do (SCOUT-OWN-2026-09-26.md, two rows caught this way in one pass).
+
+**An editor's-note phrase sweep finds what a numeral-run detector cannot see (26 Sept 2026, SCOUT-OWN-3/LEARN4).**
+A numeral-run detector over Internet Archive full text only finds an edition that prints the cipher's own digits;
+it cannot see an edition that instead replaces the undeciphered passage with an editorial note in prose. Run a
+Google Books (with `&country=US`) and archive.org full-text sweep for the editor's own phrasing, in the edition's
+language: "cifra no descifrada", "cifra non decifrata", "não se pôde decifrar", "nicht entziffert", "chiffre non
+déchiffré", "in cipher, not deciphered", and their variants. Gate every hit first on whether the edition PRINTS
+cipher groups at all before treating it as a candidate: D1-CHECK's three-marker test (`ciphers/_triage/doria-donjuan-1568.md`)
+is the worked example -- all three of an edition's own marker phrases can show continuous plain prose with zero
+digits nearby, which closes the item as notes-only rather than scoring it in.

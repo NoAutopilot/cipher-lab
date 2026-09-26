@@ -68,6 +68,19 @@ and weigh it against the queue's other candidates (Pipeline 3's expected-value s
 promoting it on schedule. NX-E318 (esp318-sicilia-1503) found this only after check-solved and the intake gate had
 both already passed the target through, by reading Bourdeau's own repository text, not a tool.
 
+**An editor's-note phrase sweep finds what a numeral-run detector cannot see (26 Sept 2026, SCOUT-OWN-3/LEARN4).**
+A numeral-run detector over Internet Archive full text only finds an edition that prints the cipher's own digits;
+it cannot see an edition that instead replaces the undeciphered passage with an editorial note in prose. Sweep
+Google Books (with `&country=US`) and archive.org full text for the editor's own phrasing, in the edition's
+language: "cifra no descifrada", "cifra non decifrata", "não se pôde decifrar", "nicht entziffert", "chiffre non
+déchiffré", "in cipher, not deciphered", and their variants. Gate every hit first on whether the edition PRINTS
+cipher groups at all before scoring it `open`: D1-CHECK's three-marker test (`ciphers/_triage/doria-donjuan-1568.md`)
+is the worked example -- notes-only closes the item.
+
+For an EMLO-sourced item, query the manifestation's own Solr note (`emlo.bodleian.ox.ac.uk/solr/all/select?q=...`,
+field `bibo_Note`) before falling back to the collection-level finding-aid title -- the two can disagree within one
+volume (EM3-CHECK, 26 Sept 2026: Bodleian MS Eng. misc. c.382).
+
 For a letter from the Willem van Oranje database (WVO, resources.huygens.knaw.nl/wvo), read the record's
 Brongegevens line before writing a verdict: code GPA means printed in Groen van Prinsterer's Archives (GPAS its
 Supplément), JC means Japikse's Correspondentie. Open the cited page and check whether the cipher passage is printed

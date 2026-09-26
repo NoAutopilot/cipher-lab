@@ -21,6 +21,12 @@ Lesson answered (LEDGER.md, 20-24 Sept 2026): every verifier and check-solved wo
 the Jacqueton and RTA prior prints were missed because nobody had listed those sources. A search here is a search
 result, not a novelty verdict (CLAUDE.md rule 10): 'no hits' means not found by this method on this date.
 
+A numeral-run/phrase search here cannot see an edition that replaces an undeciphered passage with an editor's own
+prose note instead of printed cipher groups (D1-CHECK, 26 Sept 2026): sweep separately for the editor's own
+phrasing ('cifra no descifrada', 'cifra non decifrata', 'nicht entziffert', 'chiffre non déchiffré', 'not
+deciphered', and language variants), then check whether the edition prints cipher groups at all before treating a
+hit as a candidate.
+
 Per source:
   ia        a cached _djvu.txt (searched for in sources/ia-fulltext, tools/data, ciphers/*/, and --cache, plain or .gz)
             is searched exactly (normalised) and by proximity (all words in order within a short window, for OCR
