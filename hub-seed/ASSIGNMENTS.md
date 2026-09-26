@@ -770,3 +770,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T07:31Z	session_01XPmVzcgLWv8ShuEU1vM7Nm	LANE B8 bMALDUP (Sonnet, cap 6)	malsburg-hessen-1636 507/508 duplicate test, first 10 cipher lines of ff.28/30	brief 2026-09-26-lane-b8-maldup.md
 2026-09-26T07:31Z	session_01Q4gkNUdbG5zwr1wBUeowh2	LANE B8 bMAT1G (Opus, cap 6)	matignon-mayenne-1586 NEAR 1g pass B + fresh-seed control	brief 2026-09-26-lane-b8-mat1g.md
 2026-09-26T07:32Z	session_01YRuw3TCf7d1w85DLmYNnw4	LANE V8 orchestrator	done 7.70 (get_session; ledger row edited from 6.91), retitled ARCHIVED, archived by 7f	handoff STATUS.md LANE V8 handoff; V9 opens 07:33
+2026-09-26T07:35Z	session_01WNitVVGthGvdkHoyXGzkDw	LANE V9 orchestrator (Opus, cap 50)	verifiers + rolling QA, V8 successor; QA8 first	brief 2026-09-26-lane-v9-orchestrator.md; parent 7f
+2026-09-26T07:35Z	session_01MGncH2nJEj9FQRnatv4qWY	retrospective q (Sonnet, cap 10)	27 ledger rows since retro p; file RETRO-2026-09-26e.md	brief 2026-09-26-parent-retrospective-q.md; parent 7f
