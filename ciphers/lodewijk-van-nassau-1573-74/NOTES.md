@@ -1735,3 +1735,23 @@ Files: `ciphertext_4612_v2.tsv`, `decode_4612_v2.json`, `reading_4612_v2.txt`, `
 p2_disagreements.tsv}`, this section. Hosts: none (no network; images already on disk from AX-4612TR). No
 credentials used. No subagents (all settlement done by this worker directly against the images). cost: see
 the lane ledger.
+
+## AX-MERGE3: 4614 conflicts and key_full v3 (26 Sept 2026, LANE AX)
+
+Worker AX-MERGE3 (Opus), brief `.claude/briefs/runs/2026-09-26-lane-ax-merge3.md`, started 04:02 UTC (clock read),
+box 60 min. Intake gate as in AX-NAMES2/AX-MERGE (target `partial`, line 1).
+
+**Gate, written 04:10 UTC before any test ran (verbatim from the brief):** "A conflict code takes the period
+decipherment's value in key_full v3 only if, decoding 5810, 5811 and 4503 with that value instead of key_full's, the
+number of decoded letters matching Groen's print (aligned by the existing axnames aligner, same settings) rises and no
+letter pair gets worse; if the Groen letters carry the code too rarely (<3 occurrences in total) the key_full value
+stays and the code is marked 'dual reading, M' in v3."
+Implementation, fixed before running: `axmerge3/conflict_test.py` imports `axnames/align_names.py` unchanged (same
+MAXL/BASE/PER, same per-page semi-global DP, same Groen spans); codes 1-120 emit their key_full value (identical to
+key.tsv for 1-120), every code >120 stays free as in AX-NAMES except the code under test, which is fixed to the
+tested value (NULL = emits nothing). "Letters matching" = the aligner's own exact-match count summed over pages, per
+letter pair. Stated before running (rule 3, can the test fail?): for 127/129 (key_full NULL vs 4614 m) the count can
+rise only if the emitted 'm' lands on a printed m, so the test can fail; for 123 (key_full l vs 4614 NULL) removing a
+letter cannot add a match except through a path shift, so the gate is close to unpassable for the NULL direction by
+construction -- a per-occurrence diagnostic (does the emitted 'l' land on a printed l?) is reported beside it, and it
+cannot license a change on its own.
