@@ -1,0 +1,880 @@
+line	position	sign	confidence	alt	why
+04614_p1_L01_a	1	w:Pour	M	A:-	gap
+04614_p1_L01_a	2	w:luy	M	A:-	gap
+04614_p1_L01_a	3	w:dire	M	A:-	gap
+04614_p1_L01_a	4	w:Monsieur	M	B:w:que	differ
+04614_p1_L01_a	5	w:Vous	M	B:w:vous	differ
+04614_p1_L01_a	6	w:ne	H		agree
+04614_p1_L01_a	7	w:pourriez	M		agree-flagged
+04614_p1_L01_a	8	w:croire	M	B:w:trop	differ
+04614_p1_L01_a	9	w:le	H		agree
+04614_p1_L01_a	10	w:grand	H		agree
+04614_p1_L01_a	11	w:contentement	H		agree
+04614_p1_L01_a	12	w:que	H		agree
+04614_p1_L01_a	13	w:toute	H		agree
+04614_p1_L01_a	14	w:la	M		agree-flagged
+04614_p1_L01_a	15	w:compagnie	M	B:w:compaignie	differ
+04614_p1_L01_b	1	w:a	H		agree
+04614_p1_L01_b	2	w:eu	H		agree
+04614_p1_L01_b	3	w:d'entendre	M		agree-flagged
+04614_p1_L01_b	4	w:toutes	H		agree
+04614_p1_L01_b	5	w:les	H		agree
+04614_p1_L01_b	6	w:particularites	M	B:w:particularitez	differ
+04614_p1_L01_b	7	w:de	H		agree
+04614_p1_L01_b	8	w:l'estat	M		agree-flagged
+04614_p1_L01_b	9	w:de	H		agree
+04614_p1_L01_b	10	w:vos	H		agree
+04614_p1_L01_b	11	w:affaires	H		agree
+04614_p1_L01_b	12	w:par	M		agree-flagged
+04614_p1_L01_b	13	76	M		agree-flagged
+04614_p1_L01_b	14	61	M		agree-flagged
+04614_p1_L01_b	15	31	H		agree
+04614_p1_L01_c	1	32	H		agree
+04614_p1_L01_c	2	98	M	B:96	differ
+04614_p1_L01_c	3	81	H		agree
+04614_p1_L01_c	4	1	M	B:6	differ
+04614_p1_L01_c	5	36	H		agree
+04614_p1_L01_c	6	26	H		agree
+04614_p1_L01_c	7	w:et	M		agree-flagged
+04614_p1_L01_c	8	w:et	M	B:w:ce	differ
+04614_p1_L01_c	9	w:d'autant	H		agree
+04614_p1_L01_c	10	w:plus	H		agree
+04614_p1_L01_c	11	w:qui	M	B:w:que	differ
+04614_p1_L01_c	12	w:nous	H		agree
+04614_p1_L01_c	13	w:a	H		agree
+04614_p1_L01_c	14	w:rendu	M		agree-flagged
+04614_p1_L01_c	15	w:certaines	M	B:w:certains	differ
+04614_p1_L01_c	16	w:du	H		agree
+04614_p1_L01_c	17	w:prouffit	M	B:w:bruit	differ
+04614_p1_L01_d	1	w:que	M	B:w:qui	differ
+04614_p1_L01_d	2	w:nous	H		agree
+04614_p1_L01_d	3	w:faisoit	M	B:w:disoit	differ
+04614_p1_L01_d	4	w:courir	M		agree-flagged
+04614_p1_L01_d	5	w:que	H		agree
+04614_p1_L01_d	6	8	M	B:84	differ
+04614_p1_L01_d	7	2	H		agree
+04614_p1_L01_d	8	83	H		agree
+04614_p1_L01_d	9	118	M	B:116	differ
+04614_p1_L01_d	10	101	H		agree
+04614_p1_L01_d	11	71	M		agree-flagged
+04614_p1_L01_d	12	94	M		agree-flagged
+04614_p1_L01_d	13	27	H		agree
+04614_p1_L01_d	14	32	H		agree
+04614_p1_L01_d	15	6	H		agree
+04614_p1_L01_d	16	102	H	B:102	settled on page image (AX-COMP): 102
+04614_p1_L01_d	17	27	H		agree
+04614_p1_L01_d	18	91	M	B:81	differ
+04614_p1_L02_a	1	85	H		agree
+04614_p1_L02_a	2	34	H		agree
+04614_p1_L02_a	3	103	H		agree
+04614_p1_L02_a	4	22	H		agree
+04614_p1_L02_a	5	81	H		agree
+04614_p1_L02_a	6	77	H		agree
+04614_p1_L02_a	7	82	H		agree
+04614_p1_L02_a	8	112	H		agree
+04614_p1_L02_a	9	62	H		agree
+04614_p1_L02_a	10	97	M		agree-flagged
+04614_p1_L02_a	11	63	H		agree
+04614_p1_L02_a	12	51	M		agree-flagged
+04614_p1_L02_a	13	82	H		agree
+04614_p1_L02_a	14	83	H		agree
+04614_p1_L02_a	15	3	H		agree
+04614_p1_L02_a	16	221	M		agree-flagged
+04614_p1_L02_a	17	77	H		agree
+04614_p1_L02_a	18	64	H		agree
+04614_p1_L02_a	19	34	H		agree
+04614_p1_L02_a	20	32	H		agree
+04614_p1_L02_a	21	98	M		agree-flagged
+04614_p1_L02_b	1	81	H		agree
+04614_p1_L02_b	2	5	H		agree
+04614_p1_L02_b	3	37	H		agree
+04614_p1_L02_b	4	28	H		agree
+04614_p1_L02_b	5	84	H		agree
+04614_p1_L02_b	6	29	H		agree
+04614_p1_L02_b	7	35	H		agree
+04614_p1_L02_b	8	11	H		agree
+04614_p1_L02_b	9	65	H		agree
+04614_p1_L02_b	10	24	H		agree
+04614_p1_L02_b	11	31	H		agree
+04614_p1_L02_b	12	104	H		agree
+04614_p1_L02_b	13	12	H		agree
+04614_p1_L02_b	14	8	H		agree
+04614_p1_L02_b	15	40	H		agree
+04614_p1_L02_b	16	27	H		agree
+04614_p1_L02_b	17	289	M		agree-flagged
+04614_p1_L02_b	18	7	H		agree
+04614_p1_L02_b	19	39	H		agree
+04614_p1_L02_b	20	105	H		agree
+04614_p1_L02_b	21	112	H		agree
+04614_p1_L02_c	1	31	H		agree
+04614_p1_L02_c	2	21	H		agree
+04614_p1_L02_c	3	6	H		agree
+04614_p1_L02_c	4	36	H		agree
+04614_p1_L02_c	5	40	H		agree
+04614_p1_L02_c	6	82	H		agree
+04614_p1_L02_c	7	22	H		agree
+04614_p1_L02_c	8	63	H		agree
+04614_p1_L02_c	9	117	M		agree-flagged
+04614_p1_L02_c	10	7	H		agree
+04614_p1_L02_c	11	2	H		agree
+04614_p1_L02_c	12	86	H		agree
+04614_p1_L02_c	13	23	H		agree
+04614_p1_L02_c	14	84	H		agree
+04614_p1_L02_c	15	24	H		agree
+04614_p1_L02_c	16	82	H		agree
+04614_p1_L02_c	17	172	M		agree-flagged
+04614_p1_L02_c	18	111	H		agree
+04614_p1_L02_c	19	81	H		agree
+04614_p1_L02_c	20	16	H		agree
+04614_p1_L02_c	21	37	H		agree
+04614_p1_L02_c	22	83	H		agree
+04614_p1_L02_c	23	111	H		agree
+04614_p1_L02_d	1	85	H		agree
+04614_p1_L02_d	2	28	H		agree
+04614_p1_L02_d	3	33	H		agree
+04614_p1_L02_d	4	63	H		agree
+04614_p1_L02_d	5	111	H		agree
+04614_p1_L02_d	6	113	H		agree
+04614_p1_L02_d	7	82	H		agree
+04614_p1_L02_d	8	121	H		agree
+04614_p1_L02_d	9	132	M		agree-flagged
+04614_p1_L02_d	10	12	H		agree
+04614_p1_L02_d	11	7	H		agree
+04614_p1_L02_d	12	40	H		agree
+04614_p1_L02_d	13	25	H		agree
+04614_p1_L02_d	14	62	H		agree
+04614_p1_L02_d	15	31	H		agree
+04614_p1_L02_d	16	35	H		agree
+04614_p1_L02_d	17	63	H		agree
+04614_p1_L02_d	18	2	H		agree
+04614_p1_L02_d	19	78	H		agree
+04614_p1_L02_d	20	21	H		agree
+04614_p1_L02_d	21	85	H		agree
+04614_p1_L02_e	1	79	H		agree
+04614_p1_L02_e	2	81	H		agree
+04614_p1_L02_e	3	112	H		agree
+04614_p1_L02_e	4	64	H		agree
+04614_p1_L02_e	5	30	H		agree
+04614_p1_L02_e	6	72	H		agree
+04614_p1_L02_e	7	97	M		agree-flagged
+04614_p1_L02_e	8	65	H		agree
+04614_p1_L02_e	9	22	H		agree
+04614_p1_L02_e	10	91	M		agree-flagged
+04614_p1_L02_e	11	82	H		agree
+04614_p1_L02_e	12	76	M		agree-flagged
+04614_p1_L02_e	13	81	H		agree
+04614_p1_L02_e	14	30	H		agree
+04614_p1_L02_e	15	103	H		agree
+04614_p1_L02_e	16	82	H		agree
+04614_p1_L02_e	17	40	H		agree
+04614_p1_L02_e	18	21	H		agree
+04614_p1_L02_e	19	90	H		agree
+04614_p1_L02_e	20	81	H		agree
+04614_p1_L02_e	21	21	H		agree
+04614_p1_L03_a	1	92	H		agree
+04614_p1_L03_a	2	6	H		agree
+04614_p1_L03_a	3	37	H		agree
+04614_p1_L03_a	4	28	H		agree
+04614_p1_L03_a	5	82	H		agree
+04614_p1_L03_a	6	w:le	M	B:w:ce	differ
+04614_p1_L03_a	7	w:que	H		agree
+04614_p1_L03_a	8	w:nous	H		agree
+04614_p1_L03_a	9	w:a	H		agree
+04614_p1_L03_a	10	w:mande	M		agree-flagged
+04614_p1_L03_a	11	w:par	H		agree
+04614_p1_L03_a	12	w:un	H		agree
+04614_p1_L03_a	13	w:homme	M		agree-flagged
+04614_p1_L03_a	14	w:expres	M		agree-flagged
+04614_p1_L03_a	15	w:qui	H		agree
+04614_p1_L03_a	16	w:nous	H		agree
+04614_p1_L03_a	17	w:supplioit	M	B:w:soubzploit	differ
+04614_p1_L03_b	1	w:De	M	B:w:Le	differ
+04614_p1_L03_b	2	w:poinct	M	B:w:point	differ
+04614_p1_L03_b	3	40	H		agree
+04614_p1_L03_b	4	7	H		agree
+04614_p1_L03_b	5	36	H		agree
+04614_p1_L03_b	6	111	H		agree
+04614_p1_L03_b	7	112	H		agree
+04614_p1_L03_b	8	9	H		agree
+04614_p1_L03_b	9	21	H		agree
+04614_p1_L03_b	10	12	H		agree
+04614_p1_L03_b	11	61	M		agree-flagged
+04614_p1_L03_b	12	26	H		agree
+04614_p1_L03_b	13	30	H		agree
+04614_p1_L03_b	14	82	H		agree
+04614_p1_L03_b	15	23	H		agree
+04614_p1_L03_b	16	114	H		agree
+04614_p1_L03_b	17	64	M		agree-flagged
+04614_p1_L03_b	18	117	M		agree-flagged
+04614_p1_L03_b	19	82	H		agree
+04614_p1_L03_b	20	38	H		agree
+04614_p1_L03_c	1	26	H		agree
+04614_p1_L03_c	2	85	H		agree
+04614_p1_L03_c	3	65	M		agree-flagged
+04614_p1_L03_c	4	36	H		agree
+04614_p1_L03_c	5	64	M		agree-flagged
+04614_p1_L03_c	6	3	H		agree
+04614_p1_L03_c	7	33	H		agree
+04614_p1_L03_c	8	115	M		agree-flagged
+04614_p1_L03_c	9	81	H		agree
+04614_p1_L03_c	10	63	H		agree
+04614_p1_L03_c	11	40	H		agree
+04614_p1_L03_c	12	10	H		agree
+04614_p1_L03_c	13	22	H		agree
+04614_p1_L03_c	14	6	H		agree
+04614_p1_L03_c	15	37	H		agree
+04614_p1_L03_c	16	13	H		agree
+04614_p1_L03_c	17	7	H		agree
+04614_p1_L03_c	18	36	H		agree
+04614_p1_L03_c	19	22	H		agree
+04614_p1_L03_c	20	72	H		agree
+04614_p1_L03_c	21	81	H		agree
+04614_p1_L03_d	1	16	H		agree
+04614_p1_L03_d	2	38	H		agree
+04614_p1_L03_d	3	102	H		agree
+04614_p1_L03_d	4	13	H		agree
+04614_p1_L03_d	5	6	H		agree
+04614_p1_L03_d	6	36	H		agree
+04614_p1_L03_d	7	21	H		agree
+04614_p1_L03_d	8	33	H		agree
+04614_p1_L03_d	9	7	H		agree
+04614_p1_L03_d	10	31	H		agree
+04614_p1_L03_d	11	26	H		agree
+04614_p1_L03_d	12	72	H		agree
+04614_p1_L03_d	13	96	M		agree-flagged
+04614_p1_L03_d	14	8	H		agree
+04614_p1_L03_d	15	27	H		agree
+04614_p1_L03_d	16	82	H		agree
+04614_p1_L03_d	17	94	M		agree-flagged
+04614_p1_L03_d	18	25	H		agree
+04614_p1_L03_d	19	61	M		agree-flagged
+04614_p1_L03_d	20	2	H		agree
+04614_p1_L03_d	21	76	M		agree-flagged
+04614_p1_L03_d	22	85	H		agree
+04614_p1_L03_d	23	117	M		agree-flagged
+04614_p1_L04_a	1	90	M	B:-	gap
+04614_p1_L04_a	2	87	M	B:-	gap
+04614_p1_L04_a	3	61	M	B:-	gap
+04614_p1_L04_a	4	21	M	B:57	differ
+04614_p1_L04_a	5	82	M		agree-flagged
+04614_p1_L04_a	6	138	M	A:-	gap
+04614_p1_L04_a	7	29	M	B:64	differ
+04614_p1_L04_a	8	126	M	B:2	differ
+04614_p1_L04_a	9	132	M	B:32	differ
+04614_p1_L04_a	10	75	M	B:65	differ
+04614_p1_L04_a	11	82	M	B:92	differ
+04614_p1_L04_a	12	20	M	B:85	differ
+04614_p1_L04_a	13	36	M	B:76	differ
+04614_p1_L04_a	14	81	H		agree
+04614_p1_L04_a	15	114	M	B:-	gap
+04614_p1_L04_a	16	37	M	B:-	gap
+04614_p1_L04_a	17	102	M	B:-	gap
+04614_p1_L04_a	18	62	M	B:-	gap
+04614_p1_L04_a	19	39	M	B:-	gap
+04614_p1_L04_a	20	8	M	B:40	differ
+04614_p1_L04_a	21	2	M	B:6	differ
+04614_p1_L04_a	22	27	M	B:36	differ
+04614_p1_L04_a	23	65	M	B:26	differ
+04614_p1_L04_a	24	77	M	B:64	differ
+04614_p1_L04_b	1	90	M	A:-	gap
+04614_p1_L04_b	2	87	M	A:-	gap
+04614_p1_L04_b	3	61	M	A:-	gap
+04614_p1_L04_b	4	72	M	B:21	differ
+04614_p1_L04_b	5	6	M	B:82	differ
+04614_p1_L04_b	6	24	M	B:29	differ
+04614_p1_L04_b	7	79	M	B:126	differ
+04614_p1_L04_b	8	85	M	B:132	differ
+04614_p1_L04_b	9	31	M	B:75	differ
+04614_p1_L04_b	10	10	M	B:82	differ
+04614_p1_L04_b	11	40	M	B:20	differ
+04614_p1_L04_b	12	32	M	B:36	differ
+04614_p1_L04_b	13	81	H		agree
+04614_p1_L04_b	14	87	M	B:-	gap
+04614_p1_L04_b	15	6	M	B:114	differ
+04614_p1_L04_b	16	103	M	B:37	differ
+04614_p1_L04_b	17	28	M	B:102	differ
+04614_p1_L04_b	18	62	H		agree
+04614_p1_L04_b	19	39	H		agree
+04614_p1_L04_b	20	84	M	B:-	gap
+04614_p1_L04_b	21	73	M	B:8	differ
+04614_p1_L04_b	22	35	M	B:2	differ
+04614_p1_L04_b	23	23	M	B:27	differ
+04614_p1_L04_b	24	84	M	B:65	differ
+04614_p1_L04_b	25	28	M	B:77	differ
+04614_p1_L04_c	1	91	M	B:72	differ
+04614_p1_L04_c	2	21	M	B:6	differ
+04614_p1_L04_c	3	61	M	B:24	differ
+04614_p1_L04_c	4	2	M	B:79	differ
+04614_p1_L04_c	5	76	M	B:85	differ
+04614_p1_L04_c	6	82	M	B:31	differ
+04614_p1_L04_c	7	77	M	B:10	differ
+04614_p1_L04_c	8	103	M	B:40	differ
+04614_p1_L04_c	9	88	M	B:32	differ
+04614_p1_L04_c	10	86	M	B:81	differ
+04614_p1_L04_c	11	105	M	B:87	differ
+04614_p1_L04_c	12	71	M	B:6	differ
+04614_p1_L04_c	13	74	M	B:103	differ
+04614_p1_L04_c	14	37	M	B:28	differ
+04614_p1_L04_c	15	113	M	B:62	differ
+04614_p1_L04_c	16	33	M	B:39	differ
+04614_p1_L04_c	17	81	M	B:84	differ
+04614_p1_L04_c	18	74	M	B:73	differ
+04614_p1_L04_c	19	6	M	B:35	differ
+04614_p1_L04_c	20	118	M	B:23	differ
+04614_p1_L04_c	21	120	M	B:84	differ
+04614_p1_L04_c	22	85	M	B:28	differ
+04614_p1_L04_d	1	91	M	A:-	gap
+04614_p1_L04_d	2	21	M	A:-	gap
+04614_p1_L04_d	3	61	M	A:-	gap
+04614_p1_L04_d	4	2	M	A:-	gap
+04614_p1_L04_d	5	76	M	A:-	gap
+04614_p1_L04_d	6	82	M	A:-	gap
+04614_p1_L04_d	7	77	M	A:-	gap
+04614_p1_L04_d	8	103	M	A:-	gap
+04614_p1_L04_d	9	88	M	A:-	gap
+04614_p1_L04_d	10	86	M	A:-	gap
+04614_p1_L04_d	11	85	M	B:105	differ
+04614_p1_L04_d	12	4	M	B:71	differ
+04614_p1_L04_d	13	65	M	B:74	differ
+04614_p1_L04_d	14	37	H		agree
+04614_p1_L04_d	15	113	M	A:-	gap
+04614_p1_L04_d	16	33	M	A:-	gap
+04614_p1_L04_d	17	81	M	A:-	gap
+04614_p1_L04_d	18	74	M	A:-	gap
+04614_p1_L04_d	19	8	M	B:6	differ
+04614_p1_L04_d	20	2	M	B:118	differ
+04614_p1_L04_d	21	37	M	B:120	differ
+04614_p1_L04_d	22	87	M	B:85	differ
+04614_p1_L05_a	1	71	H		agree
+04614_p1_L05_a	2	61	H		agree
+04614_p1_L05_a	3	21	H		agree
+04614_p1_L05_a	4	62	H		agree
+04614_p1_L05_a	5	36	H		agree
+04614_p1_L05_a	6	27	H		agree
+04614_p1_L05_a	7	103	H		agree
+04614_p1_L05_a	8	67	M		agree-flagged
+04614_p1_L05_a	9	104	H		agree
+04614_p1_L05_a	10	82	H		agree
+04614_p1_L05_a	11	3	H		agree
+04614_p1_L05_a	12	4	H		agree
+04614_p1_L05_a	13	6	H		agree
+04614_p1_L05_a	14	36	H		agree
+04614_p1_L05_a	15	26	H		agree
+04614_p1_L05_a	16	86	M		agree-flagged
+04614_p1_L05_a	17	65	M		agree-flagged
+04614_p1_L05_a	18	90	M	B:40	differ
+04614_p1_L05_a	19	32	H		agree
+04614_p1_L05_a	20	103	H		agree
+04614_p1_L05_a	21	103	H		agree
+04614_p1_L05_b	1	61	H		agree
+04614_p1_L05_b	2	31	H		agree
+04614_p1_L05_b	3	33	M		agree-flagged
+04614_p1_L05_b	4	64	H		agree
+04614_p1_L05_b	5	5	M		agree-flagged
+04614_p1_L05_b	6	67	M		agree-flagged
+04614_p1_L05_b	7	21	H		agree
+04614_p1_L05_b	8	33	M		agree-flagged
+04614_p1_L05_b	9	114	H		agree
+04614_p1_L05_b	10	82	H		agree
+04614_p1_L05_b	11	29	H		agree
+04614_p1_L05_b	12	90	M		agree-flagged
+04614_p1_L05_b	13	22	H		agree
+04614_p1_L05_b	14	63	H		agree
+04614_p1_L05_b	15	3	H		agree
+04614_p1_L05_b	16	72	H		agree
+04614_p1_L05_b	17	8	H		agree
+04614_p1_L05_b	18	102	H		agree
+04614_p1_L05_b	19	24	H		agree
+04614_p1_L05_b	20	114	H		agree
+04614_p1_L05_b	21	84	H		agree
+04614_p1_L05_c	1	18	H		agree
+04614_p1_L05_c	2	40	H		agree
+04614_p1_L05_c	3	85	H		agree
+04614_p1_L05_c	4	112	H		agree
+04614_p1_L05_c	5	56	M		agree-flagged
+04614_p1_L05_c	6	1	M		agree-flagged
+04614_p1_L05_c	7	6	H		agree
+04614_p1_L05_c	8	40	H		agree
+04614_p1_L05_c	9	30	H		agree
+04614_p1_L05_c	10	80	M		agree-flagged
+04614_p1_L05_c	11	7	M		agree-flagged
+04614_p1_L05_c	12	40	H		agree
+04614_p1_L05_c	13	5	M		agree-flagged
+04614_p1_L05_c	14	31	H		agree
+04614_p1_L05_c	15	91	M		agree-flagged
+04614_p1_L05_c	16	22	H		agree
+04614_p1_L05_c	17	62	H		agree
+04614_p1_L05_c	18	2	H		agree
+04614_p1_L05_c	19	32	H		agree
+04614_p1_L05_c	20	8	H		agree
+04614_p1_L05_c	21	24	H		agree
+04614_p1_L05_c	22	35	H		agree
+04614_p1_L05_c	23	76	M		agree-flagged
+04614_p1_L05_c	24	81	H		agree
+04614_p1_L05_d	1	77	M	B:-	gap
+04614_p1_L05_d	2	85	M	B:-	gap
+04614_p1_L05_d	3	107	M	B:-	gap
+04614_p1_L05_d	4	6	M	B:-	gap
+04614_p1_L05_d	5	23	M	B:-	gap
+04614_p1_L05_d	6	81	M	B:-	gap
+04614_p1_L05_d	7	21	M	B:-	gap
+04614_p1_L05_d	8	26	M	B:-	gap
+04614_p1_L05_d	9	101	M	B:-	gap
+04614_p1_L05_d	10	112	M	B:-	gap
+04614_p1_L05_d	11	7	M	B:-	gap
+04614_p1_L06_a	1	w:cnuoys	M	B:w:entendu	differ
+04614_p1_L06_a	2	76	H		agree
+04614_p1_L06_a	3	39	H		agree
+04614_p1_L06_a	4	82	H		agree
+04614_p1_L06_a	5	46	H		agree
+04614_p1_L06_a	6	100	H		agree
+04614_p1_L06_a	7	80	H		agree
+04614_p1_L06_a	8	7	M	B:-	gap
+04614_p1_L06_a	9	31	H		agree
+04614_p1_L06_a	10	96	H		agree
+04614_p1_L06_a	11	102	H		agree
+04614_p1_L06_a	12	113	H		agree
+04614_p1_L06_a	13	26	H		agree
+04614_p1_L06_a	14	97	M		agree-flagged
+04614_p1_L06_a	15	6	H		agree
+04614_p1_L06_a	16	117	M		agree-flagged
+04614_p1_L06_a	17	82	H		agree
+04614_p1_L06_a	18	28	H		agree
+04614_p1_L06_a	19	12	H		agree
+04614_p1_L06_a	20	6	H		agree
+04614_p1_L06_a	21	36	H		agree
+04614_p1_L06_a	22	21	H		agree
+04614_p1_L06_b	1	113	H		agree
+04614_p1_L06_b	2	84	H		agree
+04614_p1_L06_b	3	88	H		agree
+04614_p1_L06_b	4	61	M		agree-flagged
+04614_p1_L06_b	5	102	H		agree
+04614_p1_L06_b	6	23	H		agree
+04614_p1_L06_b	7	84	H		agree
+04614_p1_L06_b	8	96	H		agree
+04614_p1_L06_b	9	62	H		agree
+04614_p1_L06_b	10	27	H		agree
+04614_p1_L06_b	11	34	H		agree
+04614_p1_L06_b	12	85	H		agree
+04614_p1_L06_b	13	25	H		agree
+04614_p1_L06_b	14	w:de	M	B:-	gap
+04614_p1_L06_b	15	w:facon	M	B:-	gap
+04614_p1_L06_b	16	w:que	M	B:-	gap
+04614_p1_L06_b	17	w:je	M	B:-	gap
+04614_p1_L06_b	18	w:pere	M	B:-	gap
+04614_p1_L06_b	19	w:que	M	B:-	gap
+04614_p1_L06_c	1	63	H		agree
+04614_p1_L06_c	2	40	H		agree
+04614_p1_L06_c	3	24	H		agree
+04614_p1_L06_c	4	7	H		agree
+04614_p1_L06_c	5	3	H		agree
+04614_p1_L06_c	6	28	H		agree
+04614_p1_L06_c	7	4	H		agree
+04614_p1_L06_c	8	8	H		agree
+04614_p1_L06_c	9	39	H		agree
+04614_p1_L06_c	10	81	H		agree
+04614_p1_L06_c	11	111	M		agree-flagged
+04614_p1_L06_c	12	114	H		agree
+04614_p1_L06_c	13	84	H		agree
+04614_p1_L06_c	14	28	H		agree
+04614_p1_L06_c	15	77	H		agree
+04614_p1_L06_c	16	83	H		agree
+04614_p1_L06_c	17	w:de	M	A:-	gap
+04614_p1_L06_c	18	w:facon	M	A:-	gap
+04614_p1_L06_c	19	118	M	B:w:que	differ
+04614_p1_L06_c	20	81	M	B:w:je	differ
+04614_p1_L06_c	21	38	M	B:w:espere	differ
+04614_p1_L06_c	22	24	M	B:w:que	differ
+04614_p1_L06_c	23	38	M	B:2	differ
+04614_p1_L06_d	1	82	H		agree
+04614_p1_L06_d	2	2	H		agree
+04614_p1_L06_d	3	40	H		agree
+04614_p1_L06_d	4	83	H		agree
+04614_p1_L06_d	5	76	M		agree-flagged
+04614_p1_L06_d	6	81	H		agree
+04614_p1_L06_d	7	96	H		agree
+04614_p1_L06_d	8	83	H		agree
+04614_p1_L06_d	9	30	H		agree
+04614_p1_L06_d	10	22	H		agree
+04614_p1_L06_d	11	61	M		agree-flagged
+04614_p1_L06_d	12	64	M	A:-	gap
+04614_p1_L07_a	1	85	H		agree
+04614_p1_L07_a	2	28	H		agree
+04614_p1_L07_a	3	72	H		agree
+04614_p1_L07_a	4	24	H		agree
+04614_p1_L07_a	5	102	H		agree
+04614_p1_L07_a	6	12	H		agree
+04614_p1_L07_a	7	31	H		agree
+04614_p1_L07_a	8	77	H		agree
+04614_p1_L07_a	9	85	H		agree
+04614_p1_L07_a	10	5	H		agree
+04614_p1_L07_a	11	6	H		agree
+04614_p1_L07_a	12	40	H		agree
+04614_p1_L07_a	13	4	H		agree
+04614_p1_L07_a	14	7	H		agree
+04614_p1_L07_a	15	39	H		agree
+04614_p1_L07_a	16	20	H		agree
+04614_p1_L07_b	1	66	H		agree
+04614_p1_L07_b	2	113	H		agree
+04614_p1_L07_b	3	85	H		agree
+04614_p1_L07_b	4	4	H		agree
+04614_p1_L07_b	5	34	H		agree
+04614_p1_L07_b	6	17	M		agree-flagged
+04614_p1_L07_b	7	70	H		agree
+04614_p1_L07_b	8	82	H		agree
+04614_p1_L07_b	9	8	H		agree
+04614_p1_L07_b	10	1	M		agree-flagged
+04614_p1_L07_b	11	62	H		agree
+04614_p1_L07_b	12	2	H		agree
+04614_p1_L07_b	13	32	H		agree
+04614_p1_L07_b	14	63	H		agree
+04614_p1_L07_b	15	3	H		agree
+04614_p1_L07_b	16	79	H		agree
+04614_p1_L07_b	17	84	H		agree
+04614_p1_L07_b	18	15	M		agree-flagged
+04614_p1_L07_b	19	115	H		agree
+04614_p1_L07_b	20	39	H		agree
+04614_p1_L07_b	21	29	H		agree
+04614_p1_L07_c	1	18	H		agree
+04614_p1_L07_c	2	37	H		agree
+04614_p1_L07_c	3	81	H		agree
+04614_p1_L07_c	4	114	H		agree
+04614_p1_L07_c	5	64	H		agree
+04614_p1_L07_c	6	72	H		agree
+04614_p1_L07_c	7	6	H		agree
+04614_p1_L07_c	8	120	H		agree
+04614_p1_L07_c	9	13	H		agree
+04614_p1_L07_c	10	65	H		agree
+04614_p1_L07_c	11	91	M		agree-flagged
+04614_p1_L07_c	12	2	H		agree
+04614_p1_L07_c	13	103	H		agree
+04614_p1_L07_c	14	84	H		agree
+04614_p1_L07_c	15	73	M		agree-flagged
+04614_p1_L07_c	16	8	H		agree
+04614_p1_L07_c	17	21	H		agree
+04614_p1_L07_c	18	9	H		agree
+04614_p1_L07_c	19	4	H		agree
+04614_p1_L07_c	20	81	H		agree
+04614_p1_L07_c	21	111	M		agree-flagged
+04614_p1_L07_d	1	16	H		agree
+04614_p1_L07_d	2	36	H		agree
+04614_p1_L07_d	3	82	H		agree
+04614_p1_L07_d	4	112	H		agree
+04614_p1_L07_d	5	61	M		agree-flagged
+04614_p1_L07_d	6	21	H		agree
+04614_p1_L07_d	7	83	H		agree
+04614_p1_L07_d	8	26	H		agree
+04614_p1_L07_d	9	31	H		agree
+04614_p1_L07_d	10	84	H		agree
+04614_p1_L07_d	11	83	H		agree
+04614_p1_L07_d	12	29	H		agree
+04614_p1_L07_d	13	33	H		agree
+04614_p1_L07_d	14	7	H		agree
+04614_p1_L07_d	15	102	M		agree-flagged
+04614_p1_L07_d	16	24	M	A:-	gap
+04614_p1_L08_a	1	39	H		agree
+04614_p1_L08_a	2	83	H		agree
+04614_p1_L08_a	3	118	H		agree
+04614_p1_L08_a	4	6	H		agree
+04614_p1_L08_a	5	1	M		agree-flagged
+04614_p1_L08_a	6	26	H		agree
+04614_p1_L08_a	7	32	H		agree
+04614_p1_L08_a	8	61	M		agree-flagged
+04614_p1_L08_a	9	2	H		agree
+04614_p1_L08_a	10	34	H		agree
+04614_p1_L08_a	11	63	H		agree
+04614_p1_L08_a	12	38	H		agree
+04614_p1_L08_a	13	114	H		agree
+04614_p1_L08_a	14	10	H		agree
+04614_p1_L08_a	15	5	H		agree
+04614_p1_L08_a	16	91	M		agree-flagged
+04614_p1_L08_a	17	87	H		agree
+04614_p1_L08_a	18	81	H		agree
+04614_p1_L08_a	19	80	H		agree
+04614_p1_L08_a	20	38	H		agree
+04614_p1_L08_a	21	81	H		agree
+04614_p1_L08_a	22	5	M	A:-	gap
+04614_p1_L08_b	1	120	H		agree
+04614_p1_L08_b	2	101	H		agree
+04614_p1_L08_b	3	111	H		agree
+04614_p1_L08_b	4	115	H		agree
+04614_p1_L08_b	5	85	H		agree
+04614_p1_L08_b	6	122	H		agree
+04614_p1_L08_b	7	131	H		agree
+04614_p1_L08_b	8	142	H		agree
+04614_p1_L08_b	9	150	M		agree-flagged
+04614_p1_L08_b	10	20	H		agree
+04614_p1_L08_b	11	40	H		agree
+04614_p1_L08_b	12	61	M		agree-flagged
+04614_p1_L08_b	13	2	H		agree
+04614_p1_L08_b	14	31	H		agree
+04614_p1_L08_b	15	62	H		agree
+04614_p1_L08_b	16	3	H		agree
+04614_p1_L08_b	17	6	H		agree
+04614_p1_L08_b	18	39	H		agree
+04614_p1_L08_b	19	29	H		agree
+04614_p1_L08_b	20	25	H		agree
+04614_p1_L08_c	1	83	H		agree
+04614_p1_L08_c	2	38	H		agree
+04614_p1_L08_c	3	32	H		agree
+04614_p1_L08_c	4	96	H		agree
+04614_p1_L08_c	5	84	H		agree
+04614_p1_L08_c	6	24	H		agree
+04614_p1_L08_c	7	27	H		agree
+04614_p1_L08_c	8	61	M		agree-flagged
+04614_p1_L08_c	9	37	H		agree
+04614_p1_L08_c	10	8	H		agree
+04614_p1_L08_c	11	3	H		agree
+04614_p1_L08_c	12	27	H		agree
+04614_p1_L08_c	13	31	H		agree
+04614_p1_L08_c	14	21	H		agree
+04614_p1_L08_c	15	64	M		agree-flagged
+04614_p1_L08_c	16	102	H		agree
+04614_p1_L08_c	17	33	H		agree
+04614_p1_L08_c	18	82	H		agree
+04614_p1_L08_c	19	63	H		agree
+04614_p1_L08_c	20	40	H		agree
+04614_p1_L08_c	21	81	H		agree
+04614_p1_L08_c	22	71	M		agree-flagged
+04614_p1_L08_d	1	17	H		agree
+04614_p1_L08_d	2	37	H		agree
+04614_p1_L08_d	3	84	H		agree
+04614_p1_L08_d	4	28	H		agree
+04614_p1_L08_d	5	82	H		agree
+04614_p1_L08_d	6	36	H		agree
+04614_p1_L08_d	7	46	H		agree
+04614_p1_L08_d	8	12	H		agree
+04614_p1_L08_d	9	7	H		agree
+04614_p1_L08_d	10	37	H		agree
+04614_p1_L08_d	11	22	H		agree
+04614_p1_L08_d	12	40	H		agree
+04614_p1_L08_d	13	8	H		agree
+04614_p1_L08_d	14	36	H		agree
+04614_p1_L08_d	15	111	H		agree
+04614_p1_L08_d	16	113	H		agree
+04614_p1_L08_d	17	13	M	A:-	gap
+04614_p1_L08_d	18	21	H		agree
+04614_p1_L08_d	19	71	M		agree-flagged
+04614_p1_L08_d	20	10	H		agree
+04614_p1_L08_d	21	2	H		agree
+04614_p1_L09_a	1	31	H		agree
+04614_p1_L09_a	2	101	H		agree
+04614_p1_L09_a	3	3	H		agree
+04614_p1_L09_a	4	37	H		agree
+04614_p1_L09_a	5	83	H		agree
+04614_p1_L09_a	6	23	H		agree
+04614_p1_L09_a	7	82	H		agree
+04614_p1_L09_a	8	5	H		agree
+04614_p1_L09_a	9	73	M		agree-flagged
+04614_p1_L09_a	10	10	H		agree
+04614_p1_L09_a	11	23	H		agree
+04614_p1_L09_a	12	70	M		agree-flagged
+04614_p1_L09_a	13	9	H		agree
+04614_p1_L09_a	14	118	H		agree
+04614_p1_L09_a	15	7	H		agree
+04614_p1_L09_a	16	107	M		agree-flagged
+04614_p1_L09_a	17	28	H		agree
+04614_p1_L09_a	18	115	H		agree
+04614_p1_L09_a	19	81	H		agree
+04614_p1_L09_a	20	36	H		agree
+04614_p1_L09_a	21	25	H		agree
+04614_p1_L09_b	1	21	H		agree
+04614_p1_L09_b	2	81	H		agree
+04614_p1_L09_b	3	36	H		agree
+04614_p1_L09_b	4	31	H		agree
+04614_p1_L09_b	5	96	H		agree
+04614_p1_L09_b	6	85	H		agree
+04614_p1_L09_b	7	22	H		agree
+04614_p1_L09_b	8	76	M		agree-flagged
+04614_p1_L09_b	9	101	H		agree
+04614_p1_L09_b	10	1	M		agree-flagged
+04614_p1_L09_b	11	26	H		agree
+04614_p1_L09_b	12	31	H		agree
+04614_p1_L09_b	13	120	H		agree
+04614_p1_L09_b	14	62	H		agree
+04614_p1_L09_b	15	103	H		agree
+04614_p1_L09_b	16	27	H		agree
+04614_p1_L09_b	17	105	H		agree
+04614_p1_L09_b	18	111	H		agree
+04614_p1_L09_b	19	1	M		agree-flagged
+04614_p1_L09_b	20	6	H		agree
+04614_p1_L09_b	21	2	H		agree
+04614_p1_L09_c	1	15	H		agree
+04614_p1_L09_c	2	62	H		agree
+04614_p1_L09_c	3	28	H		agree
+04614_p1_L09_c	4	39	H		agree
+04614_p1_L09_c	5	7	H		agree
+04614_p1_L09_c	6	40	M	B:70	differ
+04614_p1_L09_c	7	112	H		agree
+04614_p1_L09_c	8	39	H		agree
+04614_p1_L09_c	9	102	H		agree
+04614_p1_L09_c	10	65	H		agree
+04614_p1_L09_c	11	115	H		agree
+04614_p1_L09_c	12	111	H		agree
+04614_p1_L09_c	13	81	H		agree
+04614_p1_L09_c	14	92	H		agree
+04614_p1_L09_c	15	37	M		agree-flagged
+04614_p1_L09_c	16	63	H		agree
+04614_p1_L09_c	17	3	H		agree
+04614_p1_L09_c	18	27	H		agree
+04614_p1_L09_c	19	16	H		agree
+04614_p1_L09_c	20	36	H		agree
+04614_p1_L09_c	21	82	H		agree
+04614_p1_L09_d	1	101	H		agree
+04614_p1_L09_d	2	65	H		agree
+04614_p1_L09_d	3	120	H		agree
+04614_p1_L09_d	4	64	H		agree
+04614_p1_L09_d	5	101	H		agree
+04614_p1_L09_d	6	26	H		agree
+04614_p1_L09_d	7	61	H		agree
+04614_p1_L09_d	8	81	H		agree
+04614_p1_L09_d	9	27	H		agree
+04614_p1_L09_d	10	31	H		agree
+04614_p1_L09_d	11	83	H		agree
+04614_p1_L09_d	12	6	H		agree
+04614_p1_L09_d	13	36	H		agree
+04614_p1_L09_d	14	51	M		agree-flagged
+04614_p1_L09_d	15	17	M		agree-flagged
+04614_p1_L09_d	16	38	H		agree
+04614_p1_L09_d	17	82	H		agree
+04614_p1_L09_d	18	21	H		agree
+04614_p1_L09_d	19	87	H		agree
+04614_p1_L09_d	20	40	H		agree
+04614_p1_L09_d	21	35	H		agree
+04614_p1_L09_d	22	96	H		agree
+04614_p1_L09_d	23	81	H		agree
+04614_p1_L10_a	1	61	H		agree
+04614_p1_L10_a	2	52	M		agree-flagged
+04614_p1_L10_a	3	81	H		agree
+04614_p1_L10_a	4	1	M		agree-flagged
+04614_p1_L10_a	5	31	H		agree
+04614_p1_L10_a	6	86	H		agree
+04614_p1_L10_a	7	61	H		agree
+04614_p1_L10_a	8	105	H		agree
+04614_p1_L10_a	9	71	M		agree-flagged
+04614_p1_L10_a	10	31	H		agree
+04614_p1_L10_a	11	75	H		agree
+04614_p1_L10_a	12	84	H		agree
+04614_p1_L10_a	13	20	H		agree
+04614_p1_L10_a	14	40	H		agree
+04614_p1_L10_a	15	85	H		agree
+04614_p1_L10_a	16	101	H		agree
+04614_p1_L10_a	17	111	H		agree
+04614_p1_L10_a	18	60	M		agree-flagged
+04614_p1_L10_a	19	64	M	B:61	differ
+04614_p1_L10_a	20	1	M		agree-flagged
+04614_p1_L10_a	21	31	H		agree
+04614_p1_L10_a	22	90	M		agree-flagged
+04614_p1_L10_b	1	64	H		agree
+04614_p1_L10_b	2	104	H		agree
+04614_p1_L10_b	3	73	M		agree-flagged
+04614_p1_L10_b	4	33	H		agree
+04614_p1_L10_b	5	40	H		agree
+04614_p1_L10_b	6	5	H		agree
+04614_p1_L10_b	7	120	H		agree
+04614_p1_L10_b	8	10	H		agree
+04614_p1_L10_b	9	105	H		agree
+04614_p1_L10_b	10	30	H		agree
+04614_p1_L10_b	11	85	H		agree
+04614_p1_L10_b	12	31	H		agree
+04614_p1_L10_b	13	77	H		agree
+04614_p1_L10_b	14	84	H		agree
+04614_p1_L10_b	15	118	H		agree
+04614_p1_L10_b	16	101	H		agree
+04614_p1_L10_b	17	w:comme	M		agree-flagged
+04614_p1_L10_b	18	w:il	M	B:-	gap
+04614_p1_L10_b	19	w:faisoit	M	B:w:scavoit	differ
+04614_p1_L10_c	1	w:en	H		agree
+04614_p1_L10_c	2	w:verite	M		agree-flagged
+04614_p1_L10_c	3	w:que	H		agree
+04614_p1_L10_c	4	w:je	H		agree
+04614_p1_L10_c	5	w:confesse	M		agree-flagged
+04614_p1_L10_c	6	w:que	M		agree-flagged
+04614_p1_L10_c	7	w:jen	M	B:w:j'en	differ
+04614_p1_L10_c	8	w:trouue	M	B:w:trouve	differ
+04614_p1_L10_c	9	w:pas	H		agree
+04614_p1_L10_c	10	w:aussi	H		agree
+04614_p1_L10_c	11	w:que	H		agree
+04614_p1_L10_c	12	w:puis	M	B:w:peust	differ
+04614_p1_L10_c	13	w:estre	H		agree
+04614_p1_L10_c	14	40	H		agree
+04614_p1_L10_c	15	6	H		agree
+04614_p1_L10_c	16	26	H		agree
+04614_p1_L10_c	17	31	H		agree
+04614_p1_L10_c	18	81	H		agree
+04614_p1_L10_d	1	27	H		agree
+04614_p1_L10_d	2	81	H		agree
+04614_p1_L10_d	3	20	H		agree
+04614_p1_L10_d	4	40	H		agree
+04614_p1_L10_d	5	101	H		agree
+04614_p1_L10_d	6	71	M		agree-flagged
+04614_p1_L10_d	7	82	H		agree
+04614_p1_L10_d	8	76	M		agree-flagged
+04614_p1_L10_d	9	80	H		agree
+04614_p1_L10_d	10	112	H		agree
+04614_p1_L10_d	11	85	H		agree
+04614_p1_L10_d	12	75	H		agree
+04614_p1_L10_d	13	10	H		agree
+04614_p1_L10_d	14	1	M		agree-flagged
+04614_p1_L10_d	15	32	H		agree
+04614_p1_L10_d	16	105	H		agree
+04614_p1_L10_d	17	2	H		agree
+04614_p1_L10_d	18	20	H		agree
+04614_p1_L10_d	19	84	H		agree
+04614_p1_L10_d	20	21	H		agree
+04614_p1_L10_d	21	12	H		agree
+04614_p1_L10_d	22	111	H		agree
+04614_p1_L10_d	23	76	M		agree-flagged
+04614_p1_L11_a	1	30	H		agree
+04614_p1_L11_a	2	115	H		agree
+04614_p1_L11_a	3	10	H		agree
+04614_p1_L11_a	4	5	H		agree
+04614_p1_L11_a	5	94	M		agree-flagged
+04614_p1_L11_a	6	31	H		agree
+04614_p1_L11_a	7	82	H		agree
+04614_p1_L11_a	8	120	H		agree
+04614_p1_L11_a	9	15	H		agree
+04614_p1_L11_a	10	30	H		agree
+04614_p1_L11_a	11	65	H		agree
+04614_p1_L11_a	12	36	H		agree
+04614_p1_L11_a	13	77	H		agree
+04614_p1_L11_a	14	102	H		agree
+04614_p1_L11_a	15	71	M		agree-flagged
+04614_p1_L11_a	16	32	H		agree
+04614_p1_L11_a	17	21	H		agree
+04614_p1_L11_a	18	82	H		agree
+04614_p1_L11_a	19	36	H		agree
+04614_p1_L11_a	20	31	H		agree
+04614_p1_L11_a	21	96	H		agree
+04614_p1_L11_a	22	81	H		agree
+04614_p1_L11_a	23	23	H		agree
+04614_p1_L11_b	1	76	M		agree-flagged
+04614_p1_L11_b	2	101	H		agree
+04614_p1_L11_b	3	81	M	B:82	differ
+04614_p1_L11_b	4	2	H		agree
+04614_p1_L11_b	5	26	H		agree
+04614_p1_L11_b	6	33	H		agree
+04614_p1_L11_b	7	w:Vous	M	B:w:veult	differ
+04614_p1_L11_b	8	w:priez	M	B:w:que	differ
+04614_p1_L11_b	9	w:quon	M	B:w:on	differ
+04614_p1_L11_b	10	w:en	H		agree
+04614_p1_L11_b	11	w:feist	M	B:w:peult	differ
+04614_p1_L11_b	12	w:tenir	M	B:w:tirer	differ
+04614_p1_L11_b	13	111	H		agree
+04614_p1_L11_b	14	6	H		agree
+04614_p1_L11_b	15	67	M		agree-flagged
+04614_p1_L11_b	16	81	H		agree
+04614_p1_L11_b	17	101	H		agree
+04614_p1_L11_b	18	26	H		agree
+04614_p1_L11_b	19	62	H		agree
+04614_p1_L11_b	20	2	H		agree
+04614_p1_L11_b	21	71	M		agree-flagged
+04614_p1_L11_b	22	85	H		agree
+04614_p1_L04_e	1	85	M	A:-	gap
+04614_p1_L04_e	2	4	M	A:-	gap
+04614_p1_L04_e	3	65	M	A:-	gap
+04614_p1_L04_e	4	37	M	A:-	gap
+04614_p1_L04_e	5	8	M	A:-	gap
+04614_p1_L04_e	6	2	M	A:-	gap
+04614_p1_L04_e	7	27	M	A:-	gap
+04614_p1_L04_e	8	87	M	A:-	gap
