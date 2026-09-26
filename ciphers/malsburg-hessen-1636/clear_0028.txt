@@ -1,0 +1,26 @@
+Embedded clear-German clauses on f.28 (record 507), read directly from the image by bMAL28B, 26 Sept 2026.
+Independent of pass A / pass B (bMAL28); a third, single-reader check, not a blind pass and not witness-corroborated
+(f.30 is not transcribed for these lines) -- grade M throughout, crib context only, do not treat as established text.
+
+L36 (between cipher runs "...79.63." and "...54.61.zz.S.W..."):
+  best reading: "hiet daß alles so muß zu fordern was[?] ... handtlich"
+  overlaps pass A ("...allb so muss zufordern sein...") and pass B ("...allß so muß zu fordern was fleiß haben
+  allein...") on the opening "(h)iet/bin daß alles so muß zu fordern" -- all three readers agree on this much;
+  the tail ("was ... handtlich") does not confidently match either prior reading. Middle word before "handtlich"
+  not resolved (possibly an abbreviation, "ft" or similar mark).
+
+L39 (between "...16.zz." and "71.83.zz6..."):
+  best reading: "wollest das from[m|en] gutschreiben nach massgab kagen wiederumb alßfort seyn"
+  close overlap with pass A's "wollest das fromm ding schreiben nach massgab wiederumb alsofort seyn" -- same
+  shape confirmed independently on "wollest das from(m)", "nach massgab", "wieder(umb) al(so/ß)fort seyn".
+  "ding schreiben" vs this read's "gutschreiben" not resolved between the two.
+
+L44 (after "...16.44.98.ii."): shortest and least legible of the three.
+  best reading: fragments only, "je ... [illegible 3-5 signs] ... gns" before the mark "#". Could not confirm
+  pass A's "ich diss mahl etwas gewesen" nor rule it out; closer to pass B's judgement that this span resists a
+  confident reading. Left effectively ILLEGIBLE.
+
+Not resolved: exact wording of any of the three clauses. All three readers (pass A, pass B, this read) agree the
+spans are ordinary German cursive prose, not cipher, and roughly agree on the opening of L36 and most of L39; a
+dedicated multi-reader reconciliation (or the recipient's registry copy, if one survives) is needed to fix the
+wording as a usable crib. Not used in any decode or gate computation.

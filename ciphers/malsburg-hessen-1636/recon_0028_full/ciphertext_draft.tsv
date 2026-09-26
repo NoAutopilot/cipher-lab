@@ -18,13 +18,13 @@ line	position	sign	confidence	alt	why
 5	17	35	H		agree
 5	18	21	H		agree
 5	19	99	H		agree
-5	20	71	M	B:74	differ
-5	21	95	M	B:93	differ
+5	20	71	H	f30=74	dup_witness
+5	21	95	H	f30=93	dup_witness
 5	22	70	H		agree
 5	23	55	H		agree
 5	24	15	H		agree
 5	25	60	H		agree
-5	26	12	M	B:42	differ
+5	26	12	H	f30=42	dup_witness
 5	27	11	H		agree
 5	28	Ct	M	B:Ot	differ
 5	29	#	H		agree
@@ -58,7 +58,7 @@ line	position	sign	confidence	alt	why
 6	4	V	H		agree
 6	5	Hf	H		agree
 6	6	22	M	B:-	gap
-6	7	71	M	B:-	gap
+6	7	71	H	f30=71	dup_witness
 6	8	22	M	B:zz7i	differ
 6	9	51	M	B:zz5i	differ
 6	10	79	H		agree
@@ -70,10 +70,10 @@ line	position	sign	confidence	alt	why
 6	16	71	H		agree
 6	17	73	H		agree
 6	18	30	H		agree
-6	19	18	M	B:48	differ
+6	19	18	H	f30=48	dup_witness
 6	20	60	H		agree
 6	21	15	H		agree
-6	22	30	M	B:36	differ
+6	22	30	H	f30=36	dup_witness
 6	23	N	H		agree
 6	24	60	H		agree
 6	25	70	H		agree
@@ -109,18 +109,18 @@ line	position	sign	confidence	alt	why
 7	2	235	H		agree
 7	3	29	H		agree
 7	4	51	H		agree
-7	5	10	M	B:18	differ
-7	6	16	M	B:48	differ
+7	5	10	H	f30=10	dup_witness
+7	6	16	H	f30=48	dup_witness
 7	7	7	M	B:73	differ
 7	8	36	H		agree
 7	9	56	H		agree
 7	10	26	H		agree
-7	11	16	M	B:-	gap
+7	11	16	H	f30=16	dup_witness
 7	12	30	M	B:18	differ
 7	13	23	M	B:3673	differ
 7	14	30	H		agree
 7	15	26	H		agree
-7	16	56	M	B:53	differ
+7	16	56	H	f30=56	dup_witness
 7	17	11	H		agree
 7	18	41	H		agree
 7	19	54	H		agree
@@ -128,7 +128,7 @@ line	position	sign	confidence	alt	why
 7	21	Rib	M	B:Ki6	differ
 7	22	77	H		agree
 7	23	72	M	B:-	gap
-7	24	71	M	B:7z7i	differ
+7	24	71	H	f30=71	dup_witness
 7	25	99	H		agree
 7	26	B	H		agree
 7	27	29	H		agree
@@ -163,13 +163,13 @@ line	position	sign	confidence	alt	why
 8	8	26	H		agree
 8	9	30	H		agree
 8	10	11	H		agree
-8	11	22	M	B:-	gap
+8	11	22	H	f30=22	dup_witness
 8	12	16	H		agree
 8	13	31	H		agree
 8	14	13	H		agree
 8	15	73	H		agree
 8	16	Vz	M	B:Uzz	differ
-8	17	26	M	B:16	differ
+8	17	26	H	f30=16	dup_witness
 8	18	25	H		agree
 8	19	8d	M	B:83	differ
 8	20	G	H		agree
@@ -196,11 +196,11 @@ line	position	sign	confidence	alt	why
 8	41	149	H		agree
 8	42	du	M	B:Xu3	differ
 8	43	65	H		agree
-8	44	yi	M	B:71	differ
-8	45	72	M	B:2	differ
+8	44	yi	H	f30=71	dup_witness
+8	45	72	H	f30=72	dup_witness
 8	46	30	H		agree
 8	47	39	H		agree
-8	48	42	M	B:44	differ
+8	48	42	H	f30=44	dup_witness
 8	49	32	H		agree
 8	50	11	H		agree
 9	1	44	H		agree
@@ -208,8 +208,8 @@ line	position	sign	confidence	alt	why
 9	3	273	H		agree
 9	4	102	M	B:-	gap
 9	5	E	M	B:-	gap
-9	6	n	M	B:103	differ
-9	7	273	M	B:Enz73	differ
+9	6	n	H	f30=n	dup_witness
+9	7	273	H	f30=273	dup_witness
 9	8	zoo	M	B:200	differ
 9	9	du	M	B:Xu3	differ
 9	10	273	H		agree
@@ -225,7 +225,7 @@ line	position	sign	confidence	alt	why
 9	20	54	H		agree
 9	21	79	H		agree
 9	22	48	M	B:487	differ
-9	23	72	M	B:22	differ
+9	23	72	H	f30=72	dup_witness
 9	24	55	H		agree
 9	25	A	H		agree
 9	26	S	H		agree
@@ -248,8 +248,8 @@ line	position	sign	confidence	alt	why
 9	43	ib	M	B:10	differ
 9	44	22	H		agree
 9	45	7	M	B:-	gap
-9	46	60	M	B:-	gap
-9	47	37	M	B:7z60	differ
+9	46	60	H	f30=60	dup_witness
+9	47	37	H	f30=37	dup_witness
 9	48	70	M	B:3770	differ
 9	49	ttt	M	B:iTT	differ
 9	50	4tt	M	B:44	differ
@@ -261,7 +261,7 @@ line	position	sign	confidence	alt	why
 10	6	O	H		agree
 10	7	55	H		agree
 10	8	30	H		agree
-10	9	39	M	B:38	differ
+10	9	39	H	f30=38	dup_witness
 10	10	51	H		agree
 10	11	87	H		agree
 10	12	55	H		agree
@@ -278,16 +278,16 @@ line	position	sign	confidence	alt	why
 10	23	70	H		agree
 10	24	7	M	B:71	differ
 10	25	7755	H		agree
-10	26	E	M	B:T	differ
+10	26	E	H	f30=E	dup_witness
 10	27	16	H		agree
 10	28	74	H		agree
-10	29	23	M	B:-	gap
+10	29	23	H	f30=23	dup_witness
 10	30	13	M	B:83	differ
 10	31	72	M	B:187	differ
 10	32	16	H		agree
 10	33	A	M	B:At	differ
 10	34	bLS	M	B:Xu5	differ
-10	35	70	M	B:40	differ
+10	35	70	H	f30=40	dup_witness
 10	36	88	H		agree
 10	37	86	H		agree
 10	38	16	H		agree
@@ -304,7 +304,7 @@ line	position	sign	confidence	alt	why
 10	49	87	H		agree
 10	50	65	H		agree
 11	1	12	M	B:-	gap
-11	2	55	M	B:iz55	differ
+11	2	55	H	f30=55	dup_witness
 11	3	tz	M	B:91	differ
 11	4	62	H		agree
 11	5	30	M	B:90	differ
@@ -312,11 +312,11 @@ line	position	sign	confidence	alt	why
 11	7	29	H		agree
 11	8	51	M	B:31	differ
 11	9	72	H		agree
-11	10	16	M	B:10	differ
+11	10	16	H	f30=16	dup_witness
 11	11	83	H		agree
-11	12	51	M	B:31	differ
+11	12	51	H	f30=31	dup_witness
 11	13	11	H		agree
-11	14	T	M	B:L	differ
+11	14	T	H	f30=L	dup_witness
 11	15	94	H		agree
 11	16	58	H		agree
 11	17	31	H		agree
@@ -328,7 +328,7 @@ line	position	sign	confidence	alt	why
 11	23	37	H		agree
 11	24	55	H		agree
 11	25	W	H		agree
-11	26	28	M	B:48	differ
+11	26	28	H	f30=48	dup_witness
 11	27	30	H		agree
 11	28	55	H		agree
 11	29	10	H		agree
@@ -336,7 +336,7 @@ line	position	sign	confidence	alt	why
 11	31	30	H		agree
 11	32	78	H		agree
 11	33	39	H		agree
-11	34	51	M	B:31	differ
+11	34	51	H	f30=31	dup_witness
 11	35	29	H		agree
 11	36	37	H		agree
 11	37	V	H		agree
@@ -351,7 +351,7 @@ line	position	sign	confidence	alt	why
 11	46	1	H		agree
 11	47	78	H		agree
 11	48	G	H		agree
-11	49	74	M	B:44	differ
+11	49	74	H	f30=44	dup_witness
 11	50	11	H		agree
 12	1	43	H		agree
 12	2	83	H		agree
@@ -360,12 +360,12 @@ line	position	sign	confidence	alt	why
 12	5	40	H		agree
 12	6	88	H		agree
 12	7	37	H		agree
-12	8	16	M	B:18	differ
+12	8	16	H	f30=16	dup_witness
 12	9	30	H		agree
 12	10	38	H		agree
 12	11	51	H		agree
 12	12	73	H		agree
-12	13	16	M	B:18	differ
+12	13	16	H	f30=16	dup_witness
 12	14	30	H		agree
 12	15	11	H		agree
 12	16	O	M	B:D	differ
@@ -399,8 +399,8 @@ line	position	sign	confidence	alt	why
 12	44	90	H		agree
 12	45	V	H		agree
 12	46	60	H		agree
-12	47	84	M	B:87	differ
-12	48	72	M	B:42	differ
+12	47	84	H	f30=84	dup_witness
+12	48	72	H	f30=72	dup_witness
 12	49	16	M	B:18	differ
 13	1	12	M	B:42	differ
 13	2	39	H		agree
@@ -409,7 +409,7 @@ line	position	sign	confidence	alt	why
 13	5	03	M	B:o5	differ
 13	6	15	M	B:45	differ
 13	7	T	H		agree
-13	8	84	M	B:64	differ
+13	8	84	H	f30=84	dup_witness
 13	9	68	H		agree
 13	10	35	H		agree
 13	11	26	M	B:42	differ
@@ -417,7 +417,7 @@ line	position	sign	confidence	alt	why
 13	13	97	H		agree
 13	14	68	H		agree
 13	15	79	H		agree
-13	16	72	M	B:-	gap
+13	16	72	H	f30=72	dup_witness
 13	17	16	M	B:7zi6	differ
 13	18	73	H		agree
 13	19	78	M	B:-	gap
@@ -444,14 +444,14 @@ line	position	sign	confidence	alt	why
 13	40	51	M	B:81	differ
 13	41	83	H		agree
 13	42	68	H		agree
-13	43	C	M	B:G	differ
+13	43	C	H	f30=G	dup_witness
 13	44	44	H		agree
 13	45	91	H		agree
 13	46	16	M	B:18	differ
 13	47	2	H		agree
 13	48	51	M	B:81	differ
 14	1	99	H		agree
-14	2	60	M	B:90	differ
+14	2	60	H	f30=60	dup_witness
 14	3	4	H		agree
 14	4	500	M	B:300	differ
 14	5	02	H		agree
@@ -464,14 +464,14 @@ line	position	sign	confidence	alt	why
 14	12	11	H		agree
 14	13	C	M	B:6	differ
 14	14	88	H		agree
-14	15	51	M	B:61	differ
+14	15	51	H	f30=61	dup_witness
 14	16	22	H		agree
 14	17	L	H		agree
 14	18	273	H		agree
-14	19	Zoo	M	B:200	differ
+14	19	Zoo	H	f30=200	dup_witness
 14	20	68	H		agree
-14	21	73	M	B:-	gap
-14	22	31	M	B:733i	differ
+14	21	73	H	f30=73	dup_witness
+14	22	31	H	f30=31	dup_witness
 14	23	73	H		agree
 14	24	25	H		agree
 14	25	37	H		agree
@@ -494,7 +494,7 @@ line	position	sign	confidence	alt	why
 14	42	36	H		agree
 14	43	60	H		agree
 14	44	98	M	B:88	differ
-14	45	61	M	B:6	differ
+14	45	61	H	f30=61	dup_witness
 14	46	303z	H		agree
 15	1	77	M	B:12	differ
 15	2	77	M	B:22	differ
@@ -513,17 +513,17 @@ line	position	sign	confidence	alt	why
 15	15	M	H		agree
 15	16	80	H		agree
 15	17	39	H		agree
-15	18	22	M	B:-	gap
-15	19	73	M	B:273	differ
+15	18	22	H	f30_crop_L16(read by bMAL28B)	f30_read
+15	19	73	H	f30_crop_L16(read by bMAL28B)	f30_read
 15	20	44	H		agree
 15	21	77	H		agree
 15	22	42	H		agree
 15	23	11	H		agree
 15	24	R	M	B:-	gap
-15	25	43	M	B:D443	differ
+15	25	43	H	f30_crop_L16(read by bMAL28B)	f30_read
 15	26	16	H		agree
-15	27	82	M	B:-	gap
-15	28	73	M	B:8z73	differ
+15	27	82	H	f30_crop_L16(read by bMAL28B)	f30_read
+15	28	73	H	f30_crop_L16(read by bMAL28B)	f30_read
 15	29	25	H		agree
 15	30	11	H		agree
 15	31	29	H		agree
@@ -534,13 +534,13 @@ line	position	sign	confidence	alt	why
 15	36	X	H		agree
 15	37	X	H		agree
 15	38	92	M	B:-	gap
-15	39	30	M	B:9z30	differ
+15	39	30	H	f30_crop_L16(read by bMAL28B)	f30_read
 15	40	Q	H		agree
 15	41	44	H		agree
-15	42	67	M	B:-	gap
-15	43	55	M	B:6755	differ
+15	42	67	H	f30_crop_L16(read by bMAL28B)	f30_read
+15	43	55	H	f30_crop_L16(read by bMAL28B)	f30_read
 15	44	30	H		agree
-16	1	S	M	B:8	differ
+16	1	S	H	f30_crop_L16(read by bMAL28B)	f30_read
 16	2	61	M	B:63	differ
 16	3	33	M	B:23	differ
 16	4	16	H		agree
@@ -553,15 +553,15 @@ line	position	sign	confidence	alt	why
 16	11	42	H		agree
 16	12	36	H		agree
 16	13	1	H		agree
-16	14	22	M	B:-	gap
-16	15	73	M	B:-	gap
-16	16	A	M	B:273	differ
-16	17	71	M	B:A71	differ
-16	18	25	M	B:z75	differ
+16	14	22	H	f30_crop_L16(read by bMAL28B)	f30_read
+16	15	73	H	f30_crop_L16(read by bMAL28B)	f30_read
+16	16	A	H	f30_crop_L16(read by bMAL28B)	f30_read
+16	17	71	H	f30_crop_L16(read by bMAL28B)	f30_read
+16	18	25	H	f30_crop_L16(read by bMAL28B)	f30_read
 16	19	B	H		agree
 16	20	60	H		agree
 16	21	36	H		agree
-16	22	43	M	B:45	differ
+16	22	43	H	f30_crop_L16(read by bMAL28B)	f30_read
 16	23	79	H		agree
 16	24	31	H		agree
 16	25	194	H		agree
@@ -569,20 +569,20 @@ line	position	sign	confidence	alt	why
 16	27	86	H		agree
 16	28	88	H		agree
 16	29	L	M	B:-	gap
-16	30	16	M	B:z16	differ
+16	30	16	H	f30_crop_L17(read by bMAL28B)	f30_read
 16	31	30	H		agree
 16	32	88	H		agree
 16	33	22	H		agree
 16	34	43	H		agree
 16	35	61	H		agree
-16	36	44	M	B:24	differ
+16	36	44	H	f30_crop_L17(read by bMAL28B)	f30_read
 16	37	58	H		agree
 16	38	16	H		agree
 16	39	30	H		agree
 16	40	73	H		agree
-16	41	16	M	B:-	gap
-16	42	72	M	B:167	differ
-16	43	61	M	B:z61	differ
+16	41	16	H	f30_crop_L17(read by bMAL28B)	f30_read
+16	42	72	H	f30_crop_L17(read by bMAL28B)	f30_read
+16	43	61	H	f30_crop_L17(read by bMAL28B)	f30_read
 16	44	22	H		agree
 16	45	98	H		agree
 16	46	16	H		agree
@@ -687,8 +687,8 @@ line	position	sign	confidence	alt	why
 19	4	24	M	B:Y	differ
 19	5	X	H		agree
 19	6	97	H		agree
-19	7	26	M	B:36	differ
-19	8	26	M	B:76	differ
+19	7	26	H	f30_crop_L19(read by bMAL28B)	f30_read
+19	8	26	H	f30_crop_L19(read by bMAL28B)	f30_read
 19	9	37	H		agree
 19	10	V	H		agree
 19	11	60	M	B:66	differ
