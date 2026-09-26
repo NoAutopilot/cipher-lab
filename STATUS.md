@@ -146,12 +146,12 @@ orchestrator USD 10.21. No live workers, no pending check-in. Rate limit `allowe
 
 ## LANE V7 handoff (session_018VkFfDWY4drC9a9aozmop9), 25 September 2026, live (updated 26 Sept 00:59 UTC)
 
-Brief `.claude/briefs/runs/2026-09-25-lane-v7-orchestrator.md`. Opened 22:21 by parent 7d. Last updated 26 Sept 01:42 UTC. Orchestrator usage 4.66 at 01:41, context 286k of the 400k handoff line (get_session). Rate allowed.
+Brief `.claude/briefs/runs/2026-09-25-lane-v7-orchestrator.md`. Opened 22:21 by parent 7d. Last updated 26 Sept 02:23 UTC. Orchestrator usage 5.23 at 02:21, context 299k of the 400k handoff line (get_session). Rate allowed.
 - Job 1 done: V7-CL349 (Opus, 3.27, D, ledgered, archived): **clair349-este-guise-1556 N0, key period, text known** -- the letter is in clear in Guise Mémoires-journaux (Michaud-Poujoulat 1e sér. t.6 pp.238-239) and the leaf carries an interlinear decipherment over all 33 cipher lines. Verifier recommends status found-solved; posted to both parents 22:58; status.json closed found-solved by parent worker FOLLOWUP-2315 (23:26). Check-solved template gained a "whole volume, not one page range" paragraph from this miss.
 - Job 2: done by the parent's EN-FOLDS (22:22): en spread 0.44-0.75, caveat in judge_plaintext.py and CLAUDE.md rule 3. Nothing for V7.
-- Job 3: V7-QA4 done (Sonnet 1.84, D, archived; QA/2026-09-25-2341.md: 34 items, 2 failures, both cleared by their owners by 00:17). tools/room.py now refuses unknown leading options (the "--append" role bug). V7-QA5 live (Sonnet, cap 5, box 40 min, session_015aTDvg65RN4QfJMyHPY14c, brief `.claude/briefs/runs/2026-09-26-lane-v7-qa5.md`, window 23:41-01:41; also checks matignon-mayenne-1586 gets its NEAR.md row from LANE B5).
-- Jobs 4-5: no other "reading ready" line; Mercy gate-2 closer waits on the owner (~03:00 UTC 26 Sept).
-Live workers: V7-QA5. Next check-in ~02:20.
+- Job 3: V7-QA4 done (Sonnet 1.84, D, archived; QA/2026-09-25-2341.md: 34 items, 2 failures, both cleared by their owners by 00:17). tools/room.py now refuses unknown leading options (the "--append" role bug). V7-QA5 done (Sonnet 3.43, D, archived; QA/2026-09-26-0142.md, 2 findings: room.py NEAR count, already fixed; two check-solved gaps flagged to B5). Next QA6 ~03:40, window from 01:42 (brief: copy -qa5.md, change window).
+- Job 4: V7-TH25 live (Opus, cap 6, box 25 min, session_016S49jqtiPUHN5DUmLxaHJ3, brief `.claude/briefs/runs/2026-09-26-lane-v7-thurloe-p25.md`): thurloe-printed P25-P28 (bTHU, B5), expected N0 by the folder precedent. Job 5: Mercy gate-2 closer waits on the owner (~03:00 UTC 26 Sept).
+Live workers: V7-TH25. Next check-in ~02:50.
 
 ## LANE V6 handoff (session_01V2BHwhVh1k72qSYuBFCyGd), 25 September 2026, written 21:42 UTC (context 431k; V7 starts here)
 

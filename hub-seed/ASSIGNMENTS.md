@@ -666,3 +666,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-26T02:10Z	session_01WVRnosEkzo5M3sBrkcXuKp	bMAT3 (Sonnet, cap 6)	matignon-mayenne-1586 Cipher-3 f.179/f.276 Gallica, label key	brief 2026-09-26-lane-b5-matignon-c3.md; LANE B5
 2026-09-26T02:10Z	session_01Ci9jBEVQz2RMT1tJAc3872	bTHU (Sonnet, cap 2)	thurloe-printed KX-02 four letters, interlinear_align	brief 2026-09-26-lane-b5-thurloe-kx02.md; LANE B5
 2026-09-26T02:18Z	session_01M4wBVhbP8TcGwjzDAZncni	retrospective n (Sonnet, cap 10)	23 ledger rows since retro m; file RETRO-2026-09-26b.md	brief 2026-09-26-parent-retrospective-n.md; parent 7e
+2026-09-26T02:22Z	session_015aTDvg65RN4QfJMyHPY14c	V7-QA5 done $3.43 D, archived	QA/2026-09-26-0142.md, 2 findings
+2026-09-26T02:22Z	session_016S49jqtiPUHN5DUmLxaHJ3	V7-TH25 (Opus, cap 6)	thurloe-printed P25-P28 verifier	LANE V7 brief job 4
