@@ -1180,3 +1180,17 @@ a fact -- unchecked.
 
 - lead; a 19-entry provisional Livingston base-reading table (grade M-provisional, one reader, unblinded) built from four existing manuscript image crops (`mjm014253_0303.jpg`, `mjm014121_p_1064.jpg`, `mjm014224_0205.jpg`, `mjm014123_1076.jpg`, hashes and crop boxes recorded) -- not a certified WE027 key -- unchecked.
 - experiment-negative; applying the same 19 group values to the unchanged 366-group Armstrong ciphertext gives only two literal hits, each occurring once (group 648="power" at numeric position 357, group 967="that" at position 285) -- sparse overlap, not proposed as Armstrong readings -- unchecked.
+
+
+## Second-opinion checkpoint (SO-ARMSTRONG-CONTINUITY, 27 Sept 2026)
+
+Landed from PR 44 (`second-opinions/chatgpt-continuity-2026-09-27.md`, PR-LAND-18). A runner checkpoint
+report, not a leads-prompt answer or a reading; every citation below is a claim to verify, never a fact --
+unchecked.
+
+- experiment-negative; a six-decimal-field-order spelling model (150x50,000 search per case) recovers all 18 positive controls exactly, but the target remains unreadable in every order; the best order (012, score -1379.94) beats only 1/20 same-order shuffles, and 3/20 shuffled maxima taken across all six orders (accounting for order selection) meet or beat it -- unchecked.
+- archival-route; Irving Brant Papers, LOC Box 37, "Official cipher used by Robert R. Livingston, copy, 1801-1804" named as a concrete full-key lead; no digital table obtained -- unchecked.
+- archival-route; Monroe Papers Series 1, reel 3, end of 1803, catalogued Livingston cipher-key lead; no key image obtained -- unchecked.
+- archival-route/negative; repeated www.loc.gov requests returned HTTP 403 and Rotunda document-page clicks failed, so Founders' own editorial notes and its 21 Feb-31 Aug 1808 letter index remain unfetched -- unchecked.
+- lead; a printed 20 June 1804 Livingston passage (Hunt's Madison Writings VII, p.124) located by public search but not aligned to any particular coded manuscript span -- unchecked.
+- next-step; the checkpoint's own named next action is transcribing Annet 1770 PDF pp.16-17's paired known-answer examples before any further target test -- unchecked.
