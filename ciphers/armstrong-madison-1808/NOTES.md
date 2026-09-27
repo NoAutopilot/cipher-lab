@@ -1726,3 +1726,48 @@ transcription brief (with H5's): check `tools/iiif_lines.py`'s region against th
 on a two-page spread the region must reach into the gutter from both sides. No reading, no class change. Requests:
 none. Cost: no get_session figure to this runner; the row's estimate (1.5 USD) is what `campaign.py --spend` records.
 Vision: 1 Sonnet subagent call (two strips) + 6 strips read by this runner.
+
+## Campaign step H13 (27 Sept 2026, 23:52-23:59 UTC)
+
+Runner: campaign runner armstrong-madison-1808 (account 2, session_013E5jUS9GV1AsxLeUcwgbf6). Hypothesis H13: a
+compact-key-style design (the Monroe reel-3 frame-127 leaf: single digits 1-9 as letters, three alphabets told apart
+by a mark) would put marks on single-digit groups; the target's three superscript ticks sit on 38, 1640 and 1276 --
+so re-read the tick crops and every single-digit group for marks, then count.
+
+**Material.** Top-margin line sheets (`images/crops_h13/`, native, +55 px above each line) of every ms line carrying a
+tick or a single-digit group on pages 1-3 (page 4's "4" and "5", ms lines 47 and 49, not cut -- frame 0033 has no crop
+manifest; two of the 16 single-digit occurrences unchecked), 3x zooms of the four marked groups on both witnesses, read
+by this runner and by one independent Sonnet second reader (three sheets, no other file).
+
+| item | this runner | second reader |
+|---|---|---|
+| 38 (page 1 line 5) | small check/hook stroke attached after the group, mid-height | "small checkmark/tick attached directly after the group", H |
+| 1640, 1276 (page 1 line 6) | faint diagonal at the top-left of the first digit of each, greyer than the ink -- possibly verso bleed-through (the page shows mirrored ghost text throughout) | not flagged |
+| 1640 (page 2 line 28, `17 1640 19`) | colon-like double dot after 17 and after 1640, on both exposures (0031, 0032); ms transcription has no mark here | "two small tick/apostrophe-like marks directly after the group ... clearly separate from the separator dots", H |
+| single-digit groups checked: 1 (p1 l9), 1 (p1 l13), 1 (p1 l14), 1 (p2 l20 tail, gutter strip), 3 (p2 l24), 1 (p2 l27), 3 (p2 l29), 2 (p2 l30), 3 (p3 l34, inside a mark run), 1 and 3 (p3 l36), 5 (p3 l37) | all plain; the p3 l34 "3" is a 3-shaped shorthand stroke, not clearly a numeral (M) | 1, 1, 1, 3, 1, 3 read PLAIN (the others were not on its sheets) |
+| also flagged | interlinear "36"-like mark above "36" (p1 l9); "~" before 1480 (p2 l26) is a shorthand mark the ms already records as `*` | "36" arc above, M; curved stroke before 1480, M |
+
+**Count.** Of 12 single-digit occurrences checked (14 of 16 seen, 2 M), none carries a mark. Under a frame-127-style
+design in which single digits spell letters with alphabet 1 (a-i) unmarked and alphabets 2-3 (k-z) marked, the
+share of marked letters in English text is about 0.59 (letter frequencies), so P(0 marked of 10 clean singles) is
+about 1.3e-4 (0 of 12: 2.2e-5). The design's own positive expectation therefore fails on the target's single
+digits; a design in which single digits are code values (not letters) is untouched by this. The shuffled-position
+null the row named is not needed: the statistic is a plain count against the design's own prediction, and a
+position shuffle could not change which groups are single-digit (rule 3, same-axis).
+
+**Marks recorded, for the record and for H18.** The superscript "ticks" are not one thing: on 38 it is a check
+attached after the group (both readers, H); on page-1 1640 and 1276 the strokes are faint and plausibly verso
+bleed-through (M, disagreeing with ARM-S1/R5's "same stroke as the baseline dash, repositioned" -- that pass read
+different crops); and on page-2 1640 both witnesses show a real double-dot mark after the group that neither ms pass
+transcribed (H). The value 1640 carries a mark at both of its occurrences (page 1 faint, page 2 clear) -- the shape a
+value-bound "marked form" would give (cf. the Livingston witnesses' marked 1295 and 1583, PRs 51-53), rather than a
+positional device. Recorded as H18: a full inventory of marks attached to numeral groups over both witnesses (top
+margin and mid-height, two blind passes), then a test of whether marks recur on the same values vs a shuffled-value
+null.
+
+**Verdict for the campaign:** FAIL for the compact-key alphabet-mark design element (0 of 12 single digits marked
+against about 0.59 expected, P about 1e-4), conditional on marks being visible at this resolution (two of the three
+transcribed ticks are themselves faint). One correction to the mark record (page-2 1640 double dot, untranscribed)
+and one new value-bound lead. No reading, no class change. Requests: none. Cost: no get_session figure to this
+runner; the row's estimate (1.5 USD) is what `campaign.py --spend` records. Vision: 1 Sonnet subagent call (three
+sheets) + 6 sheets/zooms read by this runner.
