@@ -1,0 +1,53 @@
+{
+  "date": "2026-09-27",
+  "status": "unsolved",
+  "artifact_sha256": {
+    "ciphers/armstrong-madison-1808/codex-2026-09-27d/.gitignore": "ddc8cdf595875ca3865d2875dee987d38a26f5370b5dc1eb005809b5ab973f4b",
+    "ciphers/armstrong-madison-1808/codex-2026-09-27d/PROTOCOL.md": "5e222e38ee8901cb0fcab3b3b16803a10981d3531155b7cc730d0364c1435061",
+    "ciphers/armstrong-madison-1808/codex-2026-09-27d/REPORT.md": "2433dc308267eef7c78142cac3107817ef50f5ab31dade8ed5d7fe77d5d34f4f",
+    "ciphers/armstrong-madison-1808/codex-2026-09-27d/alternatives.tsv": "414b2f76b66826c425b3b84bccbf5a9e8a5a9b98541def44f168f8c1690d53b8",
+    "ciphers/armstrong-madison-1808/codex-2026-09-27d/audit_lines.py": "dbf17c7e435e5a1ac42d0f72f4471e7911a20bbd482ec9228ce1e4cad4f37dd2",
+    "ciphers/armstrong-madison-1808/codex-2026-09-27d/control4.alt": "89324dc2cc3963b5b92f117891e18b401e09a1322c4f97f7951bfdcef8bd0a2f",
+    "ciphers/armstrong-madison-1808/codex-2026-09-27d/control4.seq": "5d8e76b1f46da742883571f2638b6942c0d6ba78fb64bccff986cc2759cdd98b",
+    "ciphers/armstrong-madison-1808/codex-2026-09-27d/control5.alt": "d4f8a72af351f8ad4a98506e9b645178642fe68bda8606f6df48650ea3b1a2ff",
+    "ciphers/armstrong-madison-1808/codex-2026-09-27d/control5.seq": "8a5ca4d7e49dd772967c44027d93225576954b2d5574238119f0a3890d04bc0c",
+    "ciphers/armstrong-madison-1808/codex-2026-09-27d/control_results.json": "605235c7c5e7f6dfc17e03267c9134dca4d46bccf424f83fbc3a560058fab530",
+    "ciphers/armstrong-madison-1808/codex-2026-09-27d/controls.json": "9c02c3efb88f0dc70c39167d265acd7f6f263352b274a35092813f08b46975bb",
+    "ciphers/armstrong-madison-1808/codex-2026-09-27d/evaluate.py": "86b07e2fed8f2a142c59c2b49c27f6ef761c569eec403f41200714b6986149be",
+    "ciphers/armstrong-madison-1808/codex-2026-09-27d/image_evidence.json": "8655cad3d5e23d947ac0e889fa9be61021f6c73506e70c20afd22581c8aca6c3",
+    "ciphers/armstrong-madison-1808/codex-2026-09-27d/locations.json": "7db40a80ea134f05b69fd93ea5358d4779819c51e3e6755b96aa8efb618deb90",
+    "ciphers/armstrong-madison-1808/codex-2026-09-27d/prepare.py": "7195b4c799d326571c79d3e6cdbdae366c2656667b8786e1ca67902935d9c19a",
+    "ciphers/armstrong-madison-1808/codex-2026-09-27d/results/control4-hard.tsv": "1a9652559464cb73d64b9c75c1692e6a0f7a804fa24ef97d9bfcf84cee2c781e",
+    "ciphers/armstrong-madison-1808/codex-2026-09-27d/results/control4-soft.tsv": "3a5765d65a1ac29a8d0e3def0ea7facf3acabba2513c26627ab48a112c12e4c8",
+    "ciphers/armstrong-madison-1808/codex-2026-09-27d/results/control5-hard.tsv": "9674074e771037eb74c169b982a2c3b75f48cb318c6dbfb3f13ce8519828736e",
+    "ciphers/armstrong-madison-1808/codex-2026-09-27d/results/control5-soft.tsv": "aca02b71e0de1511ccf1098aaef0753becf97469db991473253a6fc3b06c2947",
+    "ciphers/armstrong-madison-1808/codex-2026-09-27d/results/target-soft.tsv": "3baa3c3fbd92787efffa38caae7583fefd7a7b1e914c58e1b3f40fff1e24c692",
+    "ciphers/armstrong-madison-1808/codex-2026-09-27d/run.py": "c0d0b8289fbd9d288413fe5aafc25de7e147be7221b023ef132c81baf5b659ec",
+    "ciphers/armstrong-madison-1808/codex-2026-09-27d/summarize_target.py": "a044b8155679d775a343e54ef06bd79387585e117a3ed96ade4032401500d043",
+    "ciphers/armstrong-madison-1808/codex-2026-09-27d/target.alt": "875c09173deba230dbd932025eb5850a6765dc7b944488af7f1a23df0c7e77c4",
+    "ciphers/armstrong-madison-1808/codex-2026-09-27d/target.seq": "8db12afd4906a1c4a8edf92e6f44873525791e19259bc3efc9844d9af3acf03f",
+    "ciphers/armstrong-madison-1808/codex-2026-09-27d/target_result.json": "b7bc80449860926a335790b0c709581ca6652ce92b717bf7a7b07ff0e16f522e",
+    "ciphers/armstrong-madison-1808/codex-2026-09-27d/variant_solver.cpp": "9cca69e29259b6a356547060886201ee45768e3f17d94a75396ba6c5729d5b6b"
+  },
+  "input_sha256": {
+    "tools/data/en18/writingsalbertg01gallgoog.txt.gz": "3a0c22fa11df82ca897e308370ba4fbd4f9108324351ff0b9b13da3c1c25fafa",
+    "tools/data/en18/writingsjamesmo02unkngoog.txt.gz": "767e25f617efe7f18abced8006ec311455514fa13e00d3a7383cd32f7bb128a3",
+    "tools/data/en18/writingsjamesmo11monrgoog.txt.gz": "959c7731a6271e51a17ff6e55c15c67e4be909667bf51ec4e916c35147aedb19",
+    "tools/data/en18/writingsofjamesm0007unse_s2a1.txt.gz": "52fc552738110e6179e29e195738d21b48aca64ee867c3b5ff8a3d585cfa5a66",
+    "tools/data/en18/writingsofjamesm0008unse.txt.gz": "a453af6233fda25c9915ea120e5bd4e9d441628678b18d220ff5d68307830b50",
+    "tools/data/en18/writingsofthomas09jeffiala.txt.gz": "6c055ee098042a15656bb52bfaa3da2a9e61e0f8b7961f180b29993557a5bb4e",
+    "tools/subst_hillclimb.py": "c8bec16156c1872f88dc3be4441a5dac7f7c7f6d63662c0fa124cc58d4b13879",
+    "ciphers/armstrong-madison-1808/codex-2026-09-27b/glyphs.tsv": "2ea66dad7d0fe1583be3e2368335dca709bb01b5eea2642ed1cf932496148240",
+    "ciphers/armstrong-madison-1808/codex-2026-09-27b/glyph_symbols.json": "34c0893367ca7152253aa1dceafd2ba2d27d47199f897967b8ddedfd74e226b2",
+    "ciphers/armstrong-madison-1808/codex-2026-09-27b/glyph.seq": "c66a6fa727242721708758d2a1ca6a149fb40f0f5189ebf8c4ed5541bb85c0e8",
+    "ciphers/armstrong-madison-1808/codex-2026-09-27b/glyph_strong.tsv": "e979a5cfd89f939e8efa35f443229c05c3eadccba8407b55016feaf36be09794",
+    "ciphers/armstrong-madison-1808/codex-2026-09-27b/madison_armstrong_graphic.png": "870a28315e330f94e257da0a9f4d0ea17b642bc1e0693457a8fb1c4cc9c00586"
+  },
+  "image_sha256": {
+    "images/crops_0030/f0030_L10.jpg": "3a9d7551d82d6e15727161ac5cb393d65b6dbfb154a888f61e4ff7adf45b8bef",
+    "images/crops_0030/f0030_L12.jpg": "17f8c6bcb9eeff78d432ed0eec24ef46137bd977589f0ed83373d13934b6504d",
+    "images/crops_0032R/f0032R_L12.jpg": "716b7ed109c6ea1cfb7f6effcaa7e03ffe41c1ed58c7ec4ce262eb4cf42cb39a",
+    "images/crops_0032R/f0032R_L13.jpg": "d1941d2281004a927caee0de4f4d8f5ccc85eed12f50a4bdf19e4e66cb8e3b0b"
+  },
+  "model_sha256": "1f8164a6c21f535b54629f344a0b9f661a0d242709245a49d75e116bd89fdd94"
+}

@@ -1115,3 +1115,12 @@ The new letter/digraph substitution surrogate uses the previous provisional tran
 Target and three position-shuffled copies received equal two-stage budgets (120 x 45,000 then 1,000 x 120,000 iterations). Best log10 scores were target -294.031441 and shuffles -300.026775, -297.181649, -301.153413. Every output is unreadable. Three shuffles establish no significance claim. No coherent crib was available for numerical/repeated-passage confirmation. This does not exclude shorthand or digraph encodings, and it does not validate the uncertain transcription. No target key entry was added.
 
 The primary Madison-to-Jefferson transcription of 15 May 1808 was opened at https://rotunda.upress.virginia.edu/founders/default.xqy?keys=FOEA-print-02-01-02-3083 (early-access text). Its postscript corroborates the private-correspondent-key possibility; it supplies no key. No outreach occurred.
+
+
+## Codex ARM-GLYPH-ALT, 27 September 2026 — local transcription uncertainty
+
+**Unsolved.** [Report and reproducible files](codex-2026-09-27d/REPORT.md). Image inspection yielded ten two-way class alternatives in p1e, p1f and p3h, anchored to source crops and hashes. They are provisional judgments by the same reader; they neither replace the original transcription nor constitute independent reconciliation.
+
+The joint alphabet/label search used 1,000 x 90,000 iterations and a fixed 0.3-log10 penalty per changed label. Two new held-out Jefferson controls with five deliberately wrong first choices each recovered 256/257 (99.61%) and 257/257 letters, restoring 4/5 and 5/5 planted label errors with no false label changes. Both cleared the prospectively recorded gate. Warm starts differ from the hard-label baseline, so the recovery improvement is not a clean ablation; the explicit error-restoration result tests the new operation.
+
+The target remains incoherent. Its best penalized score is -299.499256129 (raw -298.899256129), selecting p1f glyph 14: 29->26 and p3h glyph 3: 22->20. Neither change is confirmed by plaintext or repeated-context evidence. No numerical crib, new key assignment, family exclusion or statistical-separation claim follows. Original ciphertext and solved status are unchanged. Source frames 0031 and 0032 are duplicate captures of the same two leaves; first-page existing crops starting at x=250 can omit left-edge signs, which were checked against the full source image. No outreach occurred.

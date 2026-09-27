@@ -1,0 +1,64 @@
+{
+  "rows": [
+    {
+      "seed": 4,
+      "mode": "hard",
+      "score": -232.834501148,
+      "correct": 250,
+      "N": 257,
+      "recovery": 0.9727626459143969,
+      "planted_label_errors_restored": 0,
+      "false_changes": 0,
+      "changes": {},
+      "reading": "minehisresidenceandhisstandingatthegreatseatomthemoniedinstitutionscommandacreditwiththemwhichnoinhabitantofthecountryandofagriculturalbursuitsonlycanhauethetwoorthreebanksinouruncommercialstatearetoodistanttohaueanyrelationswiththelarmersofalbemarrewcatebe"
+    },
+    {
+      "seed": 4,
+      "mode": "soft",
+      "score": -224.935071183,
+      "correct": 256,
+      "N": 257,
+      "recovery": 0.9961089494163424,
+      "planted_label_errors_restored": 4,
+      "false_changes": 0,
+      "changes": {
+        "51": 3,
+        "275": 0,
+        "278": 30,
+        "280": 4
+      },
+      "reading": "minehisresidenceandhisstandingatthegreatseatofthemoniedinstitutionscommandacreditwiththemwhichnoinhabitantofthecountryandofagriculturalpursuitsonlycanhauethetwoorthreebanksinouruncommercialstatearetoodistanttohaueanyrelationswiththelarmersofalbemarlewearepe"
+    },
+    {
+      "seed": 5,
+      "mode": "hard",
+      "score": -259.644264715,
+      "correct": 234,
+      "N": 257,
+      "recovery": 0.9105058365758755,
+      "planted_label_errors_restored": 0,
+      "false_changes": 0,
+      "changes": {},
+      "reading": "olepronerforsuchademandihaueheardofolewhohauingcrokehisyalenuertheheadofanotherdemaldedpaimentforhiscalethisdemandmightwelleloughhauemadenartofanoffertopabthedamagesdoletoihtyhesaneakeandtodeliueruptheauthorsofthemurderscommittedolchaodherireturnboitheniper"
+    },
+    {
+      "seed": 5,
+      "mode": "soft",
+      "score": -243.751418865,
+      "correct": 257,
+      "N": 257,
+      "recovery": 1.0,
+      "planted_label_errors_restored": 5,
+      "false_changes": 0,
+      "changes": {
+        "67": 30,
+        "259": 20,
+        "261": 1,
+        "275": 33,
+        "280": 5
+      },
+      "reading": "oneproperforsuchademandihaueheardofonewhohauingbrokehiscaneouertheheadofanotherdemandedpaimentforhiscanethisdemandmightwellenoughhauemadepartofanoffertopaythedamagesdonetoihtchesapeakeandtodeliueruptheauthorsofthemurderscommittedonboardherireturnyouthepaper"
+    }
+  ],
+  "target_gate_passed": true
+}

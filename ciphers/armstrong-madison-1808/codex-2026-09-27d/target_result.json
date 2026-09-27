@@ -1,0 +1,53 @@
+{
+  "status": "unsolved; no coherent target reading",
+  "penalized_score": -299.499256129,
+  "log10_likelihood": -298.8992561288178,
+  "change_penalty": 0.3,
+  "selected_alternatives": [
+    {
+      "passage": "p1f",
+      "position_1based": 14,
+      "sequence_index": 68,
+      "original": "29",
+      "selected": "26"
+    },
+    {
+      "passage": "p3h",
+      "position_1based": 3,
+      "sequence_index": 259,
+      "original": "22",
+      "selected": "20"
+    }
+  ],
+  "key": "dmpalentirlnytsseaycgphfuudrhmfoiwoc",
+  "fragments": [
+    "a",
+    "eryps",
+    "eelgersa",
+    "h",
+    "msels",
+    "relesesistisrectt",
+    "ysidelieur",
+    "delearle",
+    "marteretreonlyinteslattpreplytr",
+    "neardpayat",
+    "tee",
+    "trusuadedoneruntertdurhof",
+    "edideaer",
+    "fthef",
+    "o",
+    "selateureselle",
+    "laerutdw",
+    "meetal",
+    "e",
+    "datful",
+    "nisse",
+    "toia",
+    "onhedesl",
+    "naneanonssideruinree",
+    "or",
+    "nenerttru",
+    "nstasnece",
+    "nseensatsdeprouneensieaeeee"
+  ]
+}
