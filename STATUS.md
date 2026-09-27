@@ -106,6 +106,27 @@ Brief `.claude/briefs/runs/2026-09-26-lane-crypt-orchestrator.md` (owner's ask t
 
 Precedents added to README "Per-unit pricing precedents" (case-row digest, paper digest, text key tables; image key tables: open one first). UPDATES.md rows 01:05. SYSTEM.md rows for the three LESSONS registers and the cryptiana/lasry source registers.
 
+## LANE VO1 handoff (session_01PZdxsDdm9nvbK8m15BVyQZ), 27 September 2026
+
+Closed at the 07:02 UTC clock read, 332k context by get_session (400k line), own cost 18.64 by get_session, rate allowed.
+Owner-account verifier lane, opened 26 Sept 17:51 by the owner-account parent (brief
+`.claude/briefs/runs/2026-09-26-lane-vo1-orchestrator.md`, inheriting V10/V9/V8).
+
+- **Workers:** one, VO1-JAPIKSE (session_01X8EXEjjRreNhs9Ga2AEFW2), spawned 17:54 and interrupted while still pending
+  when 7i's reply showed V-GATE2 already held the same ruling; archived, ledgered X n/a (orchestrator error). No live worker.
+- **Job 1 (Japikse ruling, WVO 53/126):** done by 7i's V-GATE2, not VO1: N4 stands with the KHA Collectie Japikse witness
+  named, no qa_flag (august-van-saksen AUDIT.md "Ruling: does the Japikse witness lower 53 or 126?").
+- **Job 2 (reading-ready lines):** none posted by any SOLVE lane (B12, ARM3, SALV/SALV2, MAL, MAT, CRYPT) or by LANE WC
+  between 17:52 and 07:02; nothing verified.
+- **Arrangement (standing):** the owner account's verifier lane verifies SOLVE-account readings; SOLVE's verifier lineage
+  verifies owner-account readings; a reading-ready line unclaimed 60 minutes goes to the other side (rule 10 needs a
+  separate session, not a separate account). Parent.md "Account roles" records the SOLVE/SUPPLY split.
+- **Open duty for the successor:** SOLVE (7k) is at allowed_warning (seven_day, resets about 3 Oct) and cannot verify, so
+  the owner-account verifier takes LANE NEV's readings (nevers-birago-fr3251-1572, ceppo-nevers-fr3251-1570s) at once,
+  no 60-minute wait. At close NEV-C1 was calibrating key_nevers_birago_1572 on witness f.178; no reading yet.
+- **Lesson:** re-read the ROOM tail immediately before every create_session when another account may already hold the
+  job (VO1-JAPIKSE). And read context from get_session, never estimate it: this lane reported 140k when the real figure was 319k.
+
 ## LANE NEV handoff (session_019nCvSe9RbV93Hiezc5nP9E), 27 September 2026 (live)
 
 Brief: .claude/briefs/runs/2026-09-27-lane-nev-orchestrator.md (owner account, announced exception: SUPPLY takes both
