@@ -1542,7 +1542,7 @@ applied to the search's own randomness. Requests: none (offline). Cost: no get_s
 estimate (2 USD) is what `campaign.py --spend` records. Compute: 400 shuffle runs + 120 control-shuffle runs + 11 target
 seeds, about 12 min on 4 cores; sequences and binaries in the scratchpad, tables in `glyphnull/`.
 
-## Campaign step H3 (27 Sept 2026, 23:34-23:40 UTC)
+## Campaign step H3 (27 Sept 2026, 23:34-23:38 UTC)
 
 Runner: campaign runner armstrong-madison-1808 (account 2, session_013E5jUS9GV1AsxLeUcwgbf6). Hypothesis H3, ARM-S3's
 own named next step for Annet: do the target's shorthand marks group in twos, the way a two-digit numbered sign
