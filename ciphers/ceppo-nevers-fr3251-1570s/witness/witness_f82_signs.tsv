@@ -1,0 +1,115 @@
+line	pos	key_row	shape_note	confidence
+line1	1	16	plain round closed loop, no crossing stroke	M
+line1	2	11	cursive m-shape with small tick/dot riding the right hump	H
+line1	3	3	tiny hooked comma-like mark with a dot, hard to see clearly	L
+line1	4	9	loop atop a short stroke with what looks like a crossbar below it	M
+line1	5	?	vertical stroke topped by a small chevron/hat mark, no row resembles this well	L
+line1	6	6	closed loop like a numeral 6, same weight of ink as neighbors	L
+line1	7	44	bold double-crossbar hash/dagger mark	H
+line1	8	12	cursive digit-3 shape	H
+line1	9	6	second 6-like closed loop; ink style matches surrounding cursive signs, not a separate plain-numeral hand, so kept as a homophone rather than nNN; ambiguous among several 6-like rows	L
+line1	10	30	vertical stroke with a rounded loop attached on its right, eszett-like	H
+line1	11	13	plain crisp plus sign, no extra ticks	M
+line1	12	10	two stacked roughly parallel horizontal wavy strokes, like an equals sign	H
+line1	13	33	cursive shape with two rounded humps side by side, like a squat u/w	M
+line1	14	1	small triangular loop, Greek-lambda-like	H
+line1	15	47	two crossing diagonal strokes forming an X	H
+line2	1	32	four-way star/asterisk-like crossing, unusual and not a clean match	L
+line2	2	31	hook curving from upper right down to lower left, open on the left	M
+line2	3	56	small reversed-c hook sitting low, near a short base stroke	L
+line2	4	47	small x-cross	M
+line2	5	44	bold double-crossbar hash mark	H
+line2	6	9	circle-like loop crossed by a short horizontal bar	M
+line2	7	48	reversed-E, two connected loops stacked	M
+line2	8	27	single rounded arch like an upside-down U	M
+line2	9	29	two short parallel strokes crossed by a diagonal, not-equal-sign-like	M
+line2	10	17	loop with a small hooked descender, rho-like	M
+line2	11	1	small triangular lambda-like loop	H
+line2	12	30	vertical stroke with rounded loop on the right, eszett-like	H
+line2	13	13	plain crisp plus sign	M
+line2	14	41	small circle/oval with a dot near it	M
+line2	15	12	cursive digit-3 shape	H
+line2	16	35	small angular caret/inverted-v mark, uncertain	L
+line2	17	9	small circle-loop crossed by a short bar (eth-like), separate occurrence from pos 6	M
+line2	18	44	cross-like mark, thicker/more tangled than the plain hash elsewhere	L
+line2	19	44	bold double-crossbar hash mark	H
+line2	20	12	cursive digit-3 shape	H
+line2	21	47	two crossing diagonal strokes forming an X	H
+line2	22	27	single rounded arch like an upside-down U	M
+line2	23	25	small loop at top with a long tail sweeping right and curling back under	M
+line2	24	13	plain crisp plus sign	M
+line2	25	44	bold double-crossbar hash mark	H
+line2	26	23	angular zigzag stroke into a squared loop, like an upside-down k	M
+line2	27	27	single rounded arch like an upside-down U	M
+line2	28	45	oval loop at top with a long diagonal tail descending, phi-like	H
+line2	29	13	plain crisp plus sign	M
+line2	30	47	small x-cross	M
+line2	31	36	slanted ligature like a t joined to a backward 3/z	M
+line2	32	54	plain cursive f, vertical stroke with a loop at the bottom	H
+line2	33	4	crisp open rectangle/square, ruled not cursive	H
+line2	34	13	plain crisp plus sign	M
+line2	35	24	small hooked flag on top connecting down into a loop, cursive b-like	M
+line2	36	27	single rounded arch like an upside-down U	M
+line2	37	53	plain crisp cross with a small extra tick near one arm	L
+line2	38	30	vertical stroke with rounded loop on the right, eszett-like	H
+line2	39	47	two crossing diagonal strokes forming an X	H
+line2	40	17	loop with a small hooked descender, rho-like	M
+line2	41	13	plain crisp plus sign	M
+line2	42	24	small hooked flag connecting into a loop, cursive b-like	M
+line2	43	31	reversed-c hook	M
+line2	44	53	plain crisp cross with a small extra tick	L
+line2	45	12	shape between a cursive 3 and a z	M
+line2	46	11	cursive m-shape with a small mark above the right hump	H
+line2	47	31	reversed-c hook	M
+line2	48	27	single rounded arch like an upside-down U	M
+line2	49	1	small triangular lambda-like loop	H
+line2	50	31	reversed-c hook	M
+line2	51	44	bold double-crossbar hash mark	H
+line3	1	12	cursive digit-3 shape	H
+line3	2	6	stroke curling into a small loop at the bottom, 6-like	M
+line3	3	27	single rounded arch like an upside-down U	M
+line3	4	6	stroke curling into a small loop at the bottom, 6-like	M
+line3	5	13	plain crisp plus sign	M
+line3	6	47	two crossing diagonal strokes forming an X	H
+line3	7	1	small triangular lambda-like loop, slightly flattened	M
+line3	8	44	bold double-crossbar hash mark	H
+line3	9	39	loop like a 9/g shape, possibly sitting above a short line	M
+line3	10	35	angular capital-lambda/A-like shape with a crossing stroke	M
+line3	11	31	rounded hook curving down and left, curl at the end	M
+line3	12	13	plain crisp plus sign	M
+line3	13	48	reversed-E, two connected loops stacked	M
+line3	14	27	single rounded arch like an upside-down U	M
+line3	15	44	bold double-crossbar hash mark	H
+line3	16	12	cursive digit-3 shape, at segment edge	M
+line3	17	27	single rounded arch like an upside-down U	M
+line3	18	44	crisp cross-hatch/pound-like mark	H
+line3	19	12	cursive digit-3 shape	M
+line3	20	9	small circle-loop crossed by a short bar	M
+line3	21	36	numeral-like '7' shape with a flourish; ink weight matches the surrounding cursive signs rather than a distinct plain-numeral hand, so kept as a homophone, but flagged as uncertain	L
+line3	22	10	two stacked roughly parallel horizontal strokes, equals-sign-like	H
+line3	23	12	shape between a cursive 3 and a z	M
+line3	24	44	bold double-crossbar hash mark	H
+line3	25	1	small triangular lambda-like loop	H
+line3	26	17	loop with a small hooked descender, rho-like	M
+line3	27	12	cursive digit-3 shape	M
+line3	28	6	stroke curling into a small loop at the bottom, 6-like	M
+line3	29	30	vertical stroke with rounded loop on the right, eszett-like	H
+line3	30	45	oval loop at top with a long diagonal tail, phi/f-like	M
+line3	31	12	shape between a cursive 3 and a z	M
+line3	32	17	loop with a small hooked descender, rho-like	M
+line3	33	41	small dot/circle mark, faint	L
+line3	34	13	plain crisp plus sign	M
+line3	35	27	single rounded arch like an upside-down U	M
+line3	36	35	angular capital-lambda/A-like shape with a crossing stroke	M
+line3	37	31	rounded hook curving down and left	M
+line3	38	13	plain crisp plus sign	M
+line3	39	39	loop like a 9/g shape	M
+line3	40	1	small angular caret mark, uncertain if it is the lambda-loop row	L
+line3	41	44	bold double-crossbar hash mark	H
+line3	42	44	crisp cross-hatch/pound-like mark, second occurrence	M
+line3	43	13	plain crisp plus sign	M
+line3	44	12	shape between a cursive 3 and a z, at segment edge	M
+line3	45	47	angular crossing strokes, x-like	M
+line3	46	17	loop with a small hooked descender, rho-like	M
+line3	47	44	crisp cross-hatch/pound-like mark	H
+line3	48	41	small dot/circle mark, faint, at end of visible line before edge	L
