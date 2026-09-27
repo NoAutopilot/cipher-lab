@@ -643,3 +643,47 @@ the target must rank first of 21 on the known lines before the unmarked lines ar
 `scripts/f61apply_result.txt`, `images/f61sheetB_L02/L04/L06/L09/L10.jpg`; HYPOTHESES.md row added. Requests: none.
 Vision calls: 0. No credentials, no AskUserQuestion, no novelty wording; the owner not named.
 
+## Campaign step H16 (2026-09-27 23:24 UTC)
+
+Campaign runner (Fable, session_01UgTmQhR7wFtVFrTVdtsq9i). One Opus vision call (unmarked lines, about 103k subagent
+tokens) and two Opus text calls (the judge, about 105k and 88k), no network. Hypothesis H16 (F61-JUDGE): a blind
+model-judge ranking with the permuted-map control, positive control first.
+
+**Design, pre-registered (`scripts/f61judge.py`, committed 42e049d9 before any judge call).** The H15b cell map with H4's
+dash-share null rule (9 cells: PHI e/r, C43 a/n, 4TRI c/p, INF h/u, VBAR_A g/t, VBAR_B f/s, DBL b/o, EBR l/y, ZHOOK i/x;
+all other classes null and dropped) and 20 permutations of those cells across those classes (seed 1) each render the
+same sign sequences as pair-ambiguous strings ([e/r] [a/n] ...). The 21 sets go to one Opus text call in a shuffled
+order (seed 7) with the key withheld (`f61judge_<tag>_key.json`, which the judge is told not to open); it resolves each
+set into its most French-like reading and scores it 0-10. Statistic: the target's rank among 21, ties against it.
+Gate: rank 1 (p = 1/21 = 0.048 if the judge cannot tell). Order: the five known span lines first (positive control),
+the unmarked lines only on a pass.
+
+**Positive control (`scripts/f61judge_known_sets.txt`, `_verdict.tsv`, `_result.txt`).** Target SET-13 scored 7; every
+other set 2 or less (SET-01 2, SET-06 1.5, five at 1, the rest 0.5). **Rank 1 of 21, PASS.** The judge's blind
+resolutions of the target: "auecet | estcapabl | tropauancers | ileusi | enuoenupere | elentroit" -- against Tomokiyo's
+avec, est capable, trop avancees, jalousi(e), e au beau-pere, mel'ente noit, without ever seeing them.
+
+**Unmarked lines (`scripts/read_call_U.tsv`, verbatim).** One Opus vision read of `images/f61sheetB_L02/L04/L06/L09/
+L10.jpg` with the atlas: L10 carries one run of 13 signs ending the line after the clear words "pas paresseux si"
+(EBR CA PHI VBAR_A PHI PHI VBAR_B INF CA C6 PHI CA C6: 8 letter-class signs); L02 a 3-sign fragment at the line start
+(LL, PHI, OTHER: one letter sign); L04 a lone LOOPBAR (null); L06 and L09 no cipher. The 21 sets built from it
+(`f61judge_unmarked_sets.txt`) went to a fresh judge with the clear words before the run as context.
+
+**Result (`scripts/f61judge_unmarked_verdict.tsv`, `_result.txt`).** Target SET-13 scored 8; next best 3 (SET-01), then
+2.5, the rest 2 or less. **Rank 1 of 21, PASS.** Resolution of L10: **l e t r e s u r** ("le tresur", the sign-by-sign
+pairs being [l/y][e/r][g/t][e/r][e/r][f/s][h/u][e/r]); L02's one letter sign e/r resolved e.
+
+**What this is and is not.** A controlled cryptanalytic fragment: eight letters of L10 under a map that ranks first of
+21 on known text and, independently, on this run (p = 0.048 each, rule 3 satisfied with the positive control run
+first). Grades (rule 4): the 8 letters S (the cell is cryptanalytic with a control), the choice within each pair M
+(the judge's, not checked against anything); the 55 letters of the five spans remain Tomokiyo's (H for this test
+only). It rests on ONE blind pass of L10 and is therefore not reading-ready (`.claude/briefs/campaign.md` step 6 asks
+for two passes reconciled): H17 is that second pass. It is a fragment, not a reading of the letter; nothing here is
+solved, new or first. The cell map is now: PHI e/r, C43 a/n, 4TRI c/p, INF h/u, VBAR_A g/t, VBAR_B f/s, DBL b/o, EBR
+l/y, ZHOOK i/x (9 of the table's 11 cells; d/q and m/z unassigned -- BETA m/z rests on 1 letter), with CA, C6,
+LOOPBAR, CROSS, ELOOP, LL, HASH4, 4STEM, 4PI, LOOPSTEM1, CH as nulls or unassigned.
+
+Files: `scripts/f61judge.py`, `f61judge_known_*` (4), `f61judge_unmarked_*` (4), `scripts/read_call_U.tsv`;
+HYPOTHESES.md row added; H5 dropped as superseded. Requests: none. Vision calls: 1 of 4; text calls: 2. No credentials,
+no AskUserQuestion, no novelty wording; the owner not named.
+
