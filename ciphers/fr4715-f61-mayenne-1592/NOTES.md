@@ -562,3 +562,47 @@ m@CA); H15b unchanged (42/55 vs 0.400, PASS). CAMPAIGN.md's H11 cell and HYPOTHE
 numbers with the first ones beside them. `scripts/f61_atlas.tsv` gained a BETA code and `scripts/passA_classes.tsv`
 was rebuilt before pass B was called.
 
+## Campaign step H2 (2026-09-27 23:12 UTC)
+
+Campaign runner (Fable, session_01UgTmQhR7wFtVFrTVdtsq9i). One Opus vision subagent call (about 110k subagent tokens,
+79 s), no network. Hypothesis H2: a second independent blind read reproduces call A's shape classes.
+
+**Preparation, all pushed before the call.** (1) Sheets B, `images/f61sheetB_L*.jpg` (regen stanza appended to
+`images/regen_f61r_sheets.sh`): the whole of each span line in 4 segments cut with `tools/iiif_lines.py --overlap 0`
+and each non-final segment trimmed to the next one's x0 before the 3x scale, so no sign repeats (a sign on a boundary
+is split, and the reader was told to count it once). (2) `scripts/f61_atlas.tsv`: the reader's own 19 shape classes
+plus VBAR_A/VBAR_B (H15) and BETA, worded as shapes only, no letters, no cells -- the shared code book of
+`.claude/briefs/transcription.md`. (3) `scripts/passA_classes.tsv`: call A in atlas codes. (4) `scripts/f61pass2.py`:
+`tools/reconcile_passes.py` (long format, NW) aligns the passes; a letter class agrees if more than half of its pass-A
+signs get the same class in pass B; gate 9 of 10 (VBAR_A/B counted as one class for this count). Self-test 10/10 on
+identical passes -- which exposed the beta/a-shape rule-order bug corrected above.
+
+**Result (`scripts/passB_classes.tsv` verbatim, `scripts/f61pass2_result.txt`).** Pass B lists 85 signs (call A 82):
+identical counts on L01, L07, L08, L11; L03 17 vs 15 and L05 19 vs 18, the extras being 'a' shapes at the edges of the
+cipher runs that pass B itself flags as probably handwriting ("Cambray a", "a le...", "sont a"). Aligned columns 85,
+identical code 79 (0.929).
+
+| class | pass-A signs | pass B same | verdict |
+|---|---|---|---|
+| PHI | 16 | 14 (1 gap, 1 DBL) | agree |
+| C43 | 9 | 9 | agree |
+| 4TRI | 6 | 6 | agree |
+| VBAR (A 5, B 3) | 8 | 8, and A/B split 8/8 | agree |
+| DBL | 4 | 4 | agree |
+| INF | 5 | 5 | agree |
+| ZHOOK | 3 | 3 | agree |
+| EBR | 3 | 3 | agree |
+| BETA | 2 | 1 (L07/4 read C43, alt 4STEM; cut at a sheet-B segment boundary) | DISAGREE |
+| 4PI | 2 | 2 | agree |
+| null classes (non-gating) | | CROSS 2/2, C6 6/6, ELOOP 2/2, CA 7/9, HASH4, LOOPBAR 3/3, CH, LL, 4STEM 1/1 each; LOOPSTEM1 -> LOOPBAR | |
+
+**Gate: 9 of 10, PASS.** Call A's classes are not reader noise: a second blind reader with a different sheet cut and only
+a shape code book reproduces them, including the VBAR split H13-H15 established. The one miss is the smaller of the
+two BETA signs on a boundary-cut crop. Not a reading; no class change.
+
+**Next, as ranked.** H4: apply the cell map (`scripts/f61crib4_map.tsv`) to the unmarked runs (L02, L04, L10) under the
+20-shuffled-map control. Files: `images/f61sheetB_L*.jpg` (6), `images/regen_f61r_sheets.sh`, `scripts/f61_atlas.tsv`,
+`scripts/passA_classes.tsv`, `scripts/passB_classes.tsv` (+ `.README`), `scripts/f61pass2.py`,
+`scripts/f61pass2_result.txt`; HYPOTHESES.md row added. images/ is 4.7 MB. Requests: none. Vision calls: 1 of 4. No
+credentials, no AskUserQuestion, no novelty wording; the owner not named.
+

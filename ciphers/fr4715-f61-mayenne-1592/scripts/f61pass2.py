@@ -27,7 +27,7 @@ def main():
     r = subprocess.run([sys.executable, f"{ROOT}/tools/reconcile_passes.py", f"{HERE}/passA_classes.tsv", f"{HERE}/passB_classes.tsv",
                         "--out-dir", d, "--method", "nw"], capture_output=True, text=True)
     if r.returncode: raise SystemExit("reconcile_passes.py failed:\n" + r.stdout + r.stderr)
-    out = ["reconcile_passes.py summary: " + " | ".join(l for l in r.stdout.strip().splitlines()[-3:])]
+    out = ["reconcile_passes.py summary: " + " | ".join(l for l in r.stdout.strip().splitlines() if not l.startswith("wrote "))]
     cols = []   # (line, A, B) per aligned column, from ciphertext_draft.tsv (sign = pass A's code; alt = 'B:<code>' or 'B:-' when they differ)
     for row in csv.DictReader(open(f"{d}/ciphertext_draft.tsv"), delimiter="\t"):
         a = row["sign"]; alt = row.get("alt", "")

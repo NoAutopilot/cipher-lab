@@ -1,0 +1,86 @@
+line	pos	sign	conf	segment	x_px	note
+L01	1	CROSS	m	3	1500	plus with long horizontal bar, stroke rising to the upper right
+L01	2	C6	h	3	1780	
+L01	3	C43	h	3	2090	
+L01	4	INF	m	3	2400	cut at the 3/4 boundary: bar at the end of seg 3, the loops at seg 4 x 0-150; counted once
+L01	5	PHI	h	4	300	
+L01	6	4TRI	h	4	550	
+L01	7	ELOOP	h	4	840	dark heavy loop with a long curling tail below
+L01	8	CA	m	4	1030	cursive a shape among cipher signs
+L01	9	PHI	h	4	1350	long stem with a curl at the foot
+L01	10	VBAR_A	h	4	1620	top bar extends well to the left
+L01	11	HASH4	m	4	1890	dense crossed cluster with ink blot and several slanted stems
+L01	12	4PI	h	4	2230	
+L03	1	CA	l	1	2320	may be plain handwriting 'a' just before the cipher run ("Cambray a")
+L03	2	LOOPBAR	h	2	120	bar at the foot is long, runs to the left edge
+L03	3	ELOOP	m	2	380	lighter than usual, with a long S-tail; alt LOOPSTEM1
+L03	4	PHI	h	2	660	
+L03	5	VBAR_B	h	2	900	triangle with a top bar and a second bar at the bottom
+L03	6	VBAR_A	h	2	1175	
+L03	7	4TRI	h	2	1430	long bar under the triangle
+L03	8	C43	h	2	1715	
+L03	9	CA	m	2	2025	a shape inside the cipher run
+L03	10	4TRI	h	2	2280	
+L03	11	C6	h	3	120	
+L03	12	LOOPBAR	h	3	310	
+L03	13	C43	h	3	610	
+L03	14	DBL	m	3	960	two loops side by side on a T stem (o-T-o), dark centre
+L03	15	EBR	h	3	1320	open-right bracket, square corners
+L03	16	PHI	h	3	1605	
+L03	17	CA	l	3	1930	probably plain handwriting 'a' ("a le...") after the run
+L05	1	CA	l	1	1690	may be plain 'a' ("sont a") just before the cipher run
+L05	2	LOOPBAR	h	1	1920	
+L05	3	CH	h	1	2130	cursive h
+L05	4	VBAR_A	m	1	2375	cut at the 1/2 boundary: the bar's right end continues at seg 2 x 0-40; bottom bar not visible, so VBAR_B not excluded
+L05	5	PHI	h	2	270	
+L05	6	DBL	h	2	570	two loops side by side on the stem (o-T-o)
+L05	7	4TRI	h	2	880	
+L05	8	CA	m	2	1150	
+L05	9	CA	m	2	1400	
+L05	10	C43	h	2	1715	
+L05	11	INF	h	2	2105	figure-8 on a horizontal bar
+L05	12	C43	m	2	2360	cut at the 2/3 boundary: the 4 and its stem at the end of seg 2, the 3 at seg 3 x 0-80; counted once
+L05	13	C6	h	3	270	
+L05	14	C43	h	3	500	
+L05	15	4TRI	h	3	780	
+L05	16	PHI	h	3	1065	
+L05	17	LL	h	3	1340	
+L05	18	PHI	h	3	1590	
+L05	19	VBAR_B	m	3	1795	has a lower bar crossing below the point; alt VBAR_A
+L07	1	CA	l	3	1485	may be plain 'a' ("michi a") before the cipher run
+L07	2	LOOPBAR	h	3	1690	very long foot bar
+L07	3	ZHOOK	h	3	2080	
+L07	4	C43	m	3	2375	cut at the 3/4 boundary: the 4 with a long stem at the end of seg 3, the 3 at seg 4 x 0-60; counted once; alt 4STEM
+L07	5	EBR	m	4	310	E-bracket with a small upstroke inside
+L07	6	C6	h	4	580	
+L07	7	DBL	h	4	840	loops side by side on the stem, dark ink
+L07	8	INF	h	4	1175	
+L07	9	VBAR_B	m	4	1550	top bar and bottom bar; paper crease runs through it
+L07	10	CROSS	h	4	1780	
+L07	11	ZHOOK	h	4	2080	
+L08	1	PHI	h	1	420	
+L08	2	C43	h	1	770	
+L08	3	C6	h	1	1080	
+L08	4	INF	h	1	1365	
+L08	5	DBL	h	1	1690	loops side by side on the stem
+L08	6	PHI	h	1	1970	
+L08	7	C43	h	1	2280	
+L08	8	INF	h	2	270	
+L08	9	C6	h	2	610	
+L08	10	CA	m	2	810	
+L08	11	4TRI	h	2	1150	
+L08	12	PHI	h	2	1460	
+L08	13	PHI	h	2	1755	
+L08	14	PHI	h	2	2080	small tick or dot above
+L11	1	BETA	h	1	365	
+L11	2	PHI	h	1	650	
+L11	3	EBR	h	1	945	
+L11	4	PHI	m	1	1275	loops filled with ink (blot)
+L11	5	C43	h	1	1565	
+L11	6	VBAR_A	h	1	1860	
+L11	7	PHI	h	1	2120	
+L11	8	4STEM	m	1	2350	cut at the 1/2 boundary: the 4 and its long stem at the end of seg 1, the crossbar continues at seg 2 x 0-80; counted once; alt 4PI/C43
+L11	9	4PI	m	2	270	stems cut at the bottom edge of the crop
+L11	10	DBL	h	2	595	
+L11	11	ZHOOK	h	2	905	
+L11	12	VBAR_A	h	2	1215	very long top-bar stroke to the left
