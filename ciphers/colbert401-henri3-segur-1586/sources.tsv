@@ -1,0 +1,11 @@
+source	method	date	result
+web search: "Colbert 401" Henri III Segur cipher 1586	search engine query (WebSearch)	27 Sept 2026	found dbourdeau.github.io/cyphersolver pages live and indexed
+web search: Bourdeau "segur1586" HistoCrypt Navarre cipher	search engine query (WebSearch)	27 Sept 2026	found dbourdeau.github.io/cyphersolver/segur.html and index.html live and indexed
+sources/cryptiana/web/henryiii.htm	read in full (on disk, grepped for "333"/"Segur")	27 Sept 2026	Tomokiyo: f.321 interlinear decipherment allows reconstruction of the cipher (key printed as henryiii_figure.png); "this allows deciphering" f.333, not itself deciphered on the page
+https://cryptiana.web.fc2.com/code/henryiii_figure.png	fetched (1 request, browser-style UA, HTTP 200)	27 Sept 2026	full nomenclator table, "Cipher Reconstructed from 500 de Colbert 401, f.321" -- letters, syllabary, 5 word entries with plaintext
+Gallica IIIF manifest btv1b10035574w	fetched (1 request, tools/gallica_folio.py + direct manifest read)	27 Sept 2026	confirms shelfmark = Cinq cents de Colbert 401, title names Segur-Pardaillan's negotiation for the king of Navarre
+github.com/dbourdeau/cyphersolver	shallow clone (--depth 1) + grep -ril "colbert 401|colbert401|segur|pardaillan"	27 Sept 2026	targets/segur/ (full solve, f.321+f.333+ff.143/233/239/288v/366), docs/segur.html (published write-up, posted 16 Sept 2026, updated 25 Sept 2026), papers/histocrypt/segur1586.tex (HistoCrypt 2027 draft) -- found-solved
+github.com/aaymeloglu/unsolved-ciphers	shallow clone (--depth 1) + grep -ril "colbert 401|colbert401|segur|pardaillan"	27 Sept 2026	no hit
+DECODE (de-crypt.org) RecordsList	not run -- tools/decode_list.py is a status-filtered crawl, not a shelfmark text search; disproportionate to run given the decisive solver-repository finding	27 Sept 2026	gap, not a checked "no hit"
+Lettres de Henri III (Champion/Michel Francois ed., SHF) / Berger de Xivrey, Recueil des lettres missives de Henri IV	not opened this session -- moot for check-solved once the solver-repository finding settled the verdict	27 Sept 2026	not read; left for a verifier's novelty (N-class) pass
+Cipherbrain / Cryptiana blog comment threads	not checked this session, box/cap discipline	27 Sept 2026	not checked
