@@ -8,6 +8,9 @@ boxes have not been transcribed yet, each stretch of plain boxes collapses to on
 (never a per-box guess) rather than being silently skipped -- the reader can see where a real gap in the
 context still is. No decoding: sign tokens are printed exactly as ciphertext_<leaf>.tsv already has them.
 
+A `?` code (job2, SALV2, 27 Sept 2026) is a real sign box of unread type; it is printed as its own hapax token
+`?<leaf>.<line>.<pos>^<marks>` (same convention as build_spec.py's sign_id()), never merged into one shared `?`.
+
   python3 build_ciphertext_with_plain.py            writes ciphertext_with_plain.txt
   python3 build_ciphertext_with_plain.py --check     exits 1 if the committed file is stale (rule 7)
 """
@@ -16,6 +19,12 @@ import csv, os, sys
 D = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(D, "ciphertext_with_plain.txt")
 LEAVES = ("f54r", "f54v", "f55r", "f55v", "f56r", "f56v", "f57r", "f57v")
+
+
+def sign_id(lf, x):
+    """code^marks, except a ? code becomes its own hapax type (module docstring)."""
+    code = f"?{lf}.{x['line']}.{x['pos']}" if x["code"] == "?" else x["code"]
+    return f"{code}^{x['marks']}"
 
 
 def sign_rows():
@@ -68,7 +77,7 @@ def build():
         pos = int(float(x["pos"]))
         if x["code"] != "_":
             last_was_untranscribed = False
-            sign_buf.append(f"{x['code']}^{x['marks']}")
+            sign_buf.append(sign_id(lf, x))
             continue
         flush_sign()
         if lf not in leaves_done:

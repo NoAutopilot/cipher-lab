@@ -8,6 +8,11 @@ is kept in "row_pattern": one character per box in reading order, S for a sign b
 f.57r line 17 pos 15-24 (a later marginal note, leafnotes/f57r.md) is dropped, both as control/codemark_curve.py
 does. Families lay their controls out on that pattern (tools/families/syllabary.py).
 
+A `?` code (job2, SALV2, 27 Sept 2026) is a real sign box of unread type -- a reader (SALV2-J1A/J1B) could tell a
+sign sits there but not name its code. It becomes a distinct HAPAX type `?<leaf>.<line>.<pos>^<marks>` (unique to
+that box), never merged into one shared `?` type: eight boxes all sharing one fabricated frequent symbol would
+misrepresent the alphabet (CLAUDE.md rule 2/"Image over transcription" analogue for unread signs). See sign_id().
+
   python3 ciphers/fr2933-salviati-1525/build_spec.py            writes specs/fr2933-salviati-1525.json
   python3 ciphers/fr2933-salviati-1525/build_spec.py --check    exits 1 if the committed spec's ciphertext differs
 """
@@ -27,6 +32,12 @@ def rows():
             yield lf, x
 
 
+def sign_id(lf, x):
+    """code^marks, except a ? code becomes its own hapax type (module docstring)."""
+    code = f"?{lf}.{x['line']}.{x['pos']}" if x["code"] == "?" else x["code"]
+    return f"{code}^{x['marks']}"
+
+
 def build():
     runs, pattern, cur, prev = [], [], [], None
     for lf, x in rows():
@@ -35,7 +46,7 @@ def build():
             runs.append(cur); cur = []
         prev = key
         if x["code"] != "_":
-            cur.append(f"{x['code']}^{x['marks']}"); pattern.append("S")
+            cur.append(sign_id(lf, x)); pattern.append("S")
         else:
             if cur:
                 runs.append(cur); cur = []
@@ -57,16 +68,25 @@ def main():
         "ciphertext_source": "Gallica ark btv1b90600674, canvases 55-59 (images/manifest.json); two blind box-keyed passes per "
                              "leaf against glyphs/atlas_part1.png-atlas_part2.png, reconciled and settled from the image "
                              "(ciphertext_f54r.tsv .. ciphertext_f57v.tsv; NOTES.md sections 'Capture and passes' through "
-                             "'Leaves f.55v-f.57v completed'); measured residual error about 5 percent per sign token "
-                             "(NOTES 'CM3' sec.1)",
-        "ciphertext_date": "transcription 24-25 Sept 2026; spec built 25 Sept 2026 by build_spec.py (LANE R8 DSN)",
+                             "'Leaves f.55v-f.57v completed'); 98 boxes the spec's row_pattern had labelled plain (of 137 "
+                             "an earlier one-pass flag disputed) were reconfirmed sign by a blind, matched-control crop check "
+                             "(SALV-SPLIT, 71.5% vs an 11.7% control) and code+mark transcribed by two fresh blind passes each "
+                             "(SALV2-J1A/J1B); 93 of the 98 were real signs (5 settled WORD, left plain), 8 of unread type "
+                             "(code ?, a hapax type per box, never merged); measured residual error about 5 percent per sign "
+                             "token on the pre-27-Sept split (NOTES 'CM3' sec.1), 6.4 percent after pass C (NOTES 'bSALC'), "
+                             "about 6.8-6.9 percent per sign token on this corrected split (job 1's own model plus this job's "
+                             "recomputation from the AB/M/? grade columns, NOTES 'SALV2-J2')",
+        "ciphertext_date": "transcription 24-25 Sept 2026; spec built 25 Sept 2026 by build_spec.py (LANE R8 DSN); rebuilt "
+                          "27 Sept 2026 on the corrected split by SALV2-J2 (LANE SALV2)",
         "alphabet": "36 base codes (atlas names: S7 w y g bh lam nt tee o. rz S Z S4 ] phi e dl psi # Lx m eps wd L + f a H p sq v U K [ N ch) "
                     "each optionally carrying a superscript mark string (~ 1 dot # 5 o 7 ot + 3 and their combinations joined "
-                    "by |); 223 code+mark types over 2,820 sign tokens; plain boxes (_) are legible Italian words, not transcribed",
+                    "by |), plus 8 hapax types (SALV2-J2, 27 Sept 2026) each standing for one individually "
+                    "unread sign box (code ?, real position, unknown identity) rather than one shared fabricated symbol; "
+                    "251 code+mark types over 2,932 sign tokens; plain boxes (_) are legible Italian words, not transcribed",
         "ciphertext": [" ".join(r) for r in runs],
         "row_pattern": pattern,
         "constraints": [
-            "one sign per letter-sized box; 381 sign runs (mean 7.4 signs) interleaved with 1,233 plain-Italian boxes (360 plain runs)",
+            "one sign per letter-sized box; 327 sign runs (mean 9.0 signs) interleaved with 1,121 plain-Italian boxes (297 plain runs) on the corrected split (SALV2-J2, 27 Sept 2026)",
             "marks concentrate on a few bases: g 51%, e 68%, eps 69%, ] 88%, m 78%, a 82%, H 77% of their tokens marked; "
             "w, tee, nt, bh, rz, S, dl, psi under 10%",
             "the five marks ~ 1 dot 5 7 recur on g, lam, eps, m, a, H (4-5 of the five on each): 528 of the 894 marked tokens",

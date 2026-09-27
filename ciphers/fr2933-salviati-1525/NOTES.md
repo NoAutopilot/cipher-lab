@@ -2840,3 +2840,71 @@ Files: `split2_f55r_list.tsv`, `split2_f56rv_list.tsv`, `split2_crops/CODEBOOK.t
 `.gitignore`d this session (same convention as `plain_crops/*/*.png` and SALV2-J1A's own addition). No credentials,
 no reading, no novelty wording, no "new"/"first"/"solved". Requests: gallica.bnf.fr 3. Subagents: 4 (0 follow-ups
 needed). Status stays **partial**.
+
+## SALV2-J2: rebuild on the corrected split and cm rerun (27 Sept 2026, LANE SALV2)
+
+Worker SALV2-J2 (Sonnet), starting 02:39 UTC. Brief `.claude/briefs/runs/2026-09-27-lane-salv2-ytbiz-j2-rebuild.md`.
+Builds on SALV2-J1A/J1B's real code+mark transcription of the 98 SALV-SPLIT-confirmed boxes (93 written as signs,
+5 settled WORD and left plain, 8 of the 93 unread `code=?`).
+
+**(a) REBUILD.**
+
+Before-counts, the committed spec (matching the brief's own expectation exactly): **2839 tokens, 236 types, 389
+runs, 1214 plain** boxes in `row_pattern`.
+
+Convention added to `build_spec.py`, `build_ciphertext_with_plain.py` and `control/codemark_curve.py` (each
+docstring, a `sign_id()`/`sign_type()` helper): a `?` code is a real sign box of unread type (a reader could tell a
+sign sits there but not name it), so it becomes its own HAPAX type `?<leaf>.<line>.<pos>^<marks>`, never merged
+into one shared `?` symbol -- 8 individually-unread boxes sharing one fabricated frequent type would misrepresent
+the alphabet the same way `build_spec_candidate.py`'s own `UNK^` (one type for 28 boxes) did for the sizing
+exercise. Verified directly from the committed `ciphertext_<leaf>.tsv` files (not from prose): of the 93 real signs
+written by job 1, 49 grade AB, 44 grade M, 8 have `code=?` (5 of the `?` rows AB, 3 M) -- exactly the orchestrator's
+own count.
+
+`python3 build_spec.py` then `python3 build_ciphertext_with_plain.py`; both `--check` exit 0.
+
+| | before (committed) | after (rebuilt) | delta | SALV-SPLIT candidate's own delta |
+|---|---|---|---|---|
+| tokens | 2839 | 2932 | +93 | +98 |
+| types | 236 | 251 | +15 | +2 |
+| runs | 389 | 327 | -62 | -63 |
+| plain (row_pattern `_`) | 1214 | 1121 | -93 | -98 |
+
+Differences from the candidate's own sizing numbers, both expected: (1) tokens/plain delta is +93/-93, not +98/-98,
+because 5 of the 98 confirmed boxes were independently settled `WORD` by both blind passes in job 1 and stay plain
+(SALV-SPLIT's candidate build did not have a real transcription pass to catch this -- it only asked sign-vs-word at
+one, rougher grain and confirmed 98, not 93). (2) types delta is +15, not +2, because the hapax convention gives
+each of the 8 `?` boxes its own type instead of collapsing them into one (`+2` in the candidate's own delta came
+from one `UNK^` type for 28 "unclear" boxes plus one `O^`, a merge job 1 and this rebuild both explicitly avoid).
+Of the 15 new types: 8 are `?` hapaxes, 7 are real new code+mark combinations not previously in the 236-type
+inventory (a byte-count check, `sign_type()` applied to job 1's own settled codes). `runs` fell by 62 rather than
+candidate's 63 because the boxes that flipped from plain to sign mostly sit adjacent to an existing sign run,
+merging runs rather than starting new ones, same mechanism the candidate noted, off by one because of the WORD
+difference above.
+
+Spec prose (`name`/`ciphertext_source`/`ciphertext_date`/`alphabet`/`constraints[0]`) updated to the new N/K/run
+counts and to job 1's + this job's recomputed transcription-error estimate (below) beside bSALC's 6.4%, so the
+spec no longer describes the pre-27-Sept split.
+
+**Transcription-error recomputation** (brief: "recompute the estimate yourself from the grade columns and report
+it beside mine"). Orchestrator's own figure: about 6.9% per sign token. My own recomputation, same method (bSALC's
+per-class error proxies), from the grade columns read directly off `ciphertext_<leaf>.tsv` (not from prose): of the
+93 written signs, AB (both blind passes agree) minus the 5 AB-graded `?` rows = 44 real-code AB rows at bSALC's
+agreed-both-wrong rate (0.6%) = 0.26 wrong; M (worker-settled from a pass disagreement) minus the 3 M-graded `?`
+rows = 41 real-code M rows at bSALC's q proxy (21-27%, midpoint 25%) = 10.25 wrong; the 8 `code=?` rows are 100%
+unknown = 8 wrong. New-box wrong total: 0.26 + 10.25 + 8 = 18.5 (orchestrator's rounded 19). Baseline: bSALC's
+measured 6.4% of the unchanged 2,839 old tokens = 181.7 wrong (unchanged, those boxes were not touched today).
+Total: (181.7 + 18.5) / 2932 = **6.83%** per sign token -- within 0.1 point of the orchestrator's 6.9% and, as the
+brief anticipated, close enough to the 0.07 (7%) CM_ERR setting that (c) below runs the control at both 0.07 AND
+0.08 rather than treating either as conditional (CLAUDE.md rule 3, SALV-DIAG's crossover paragraph).
+
+Superseded files (SALV-SPLIT's sizing exercise; job 1's real transcription + this rebuild replace it), `git rm`d in
+this commit, kept in git history: `ciphertext_f{54r,54v,55r,56r,56v}.split-candidate.tsv`,
+`ciphertext.split-candidate.txt`, `specs/fr2933-salviati-1525.split-candidate.json`. `build_spec_candidate.py` left
+on disk with a docstring line pointing at this job as its replacement; not deleted (its own inputs, e.g.
+confirmed.json, are historical record of the sizing pass).
+
+`ciphertext.txt`: no committed file by that name exists for this target and nothing in `NOTES.md` or any script
+writes one (grepped `*.py` and `NOTES.md`) -- the real ciphertext lives in the spec's own `ciphertext` field
+(rebuilt above); only `ciphertext_with_plain.txt` (interleaved reading copy, rebuilt, `--check` ok) and the now-
+removed `ciphertext.split-candidate.txt` ever existed. Saying so per the brief's own fallback clause.

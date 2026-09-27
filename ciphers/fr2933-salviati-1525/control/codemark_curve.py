@@ -39,6 +39,9 @@ N counts sign tokens. Token accuracy: a token is right when every letter it stan
       suffix _err<e>. CM_ORDER=n (default 3) and CM_BACKOFF=1 (tools/homophonic_anneal.py BackoffModel) choose the
       language model; suffix _o<n>b.  python3 codemark_curve.py --help prints this text.
   Test: python3 tools/tests/test_codemark_measured_noise.py
+A `?` code (job2, SALV2, 27 Sept 2026) is a real sign box of unread type; the row reader gives each one its own
+HAPAX type `?<leaf>.<line>.<pos>^<marks>` (sign_type() below), never merging them into one shared `?` symbol --
+build_spec.py and build_ciphertext_with_plain.py carry the same convention.
 """
 import csv, json, os, random, sys, time
 from collections import Counter
@@ -116,9 +119,17 @@ def excluded(leaf, x):
     return leaf == "f57r" and x["line"] == "17" and float(x["pos"]) >= 15
 
 
+def sign_type(x):
+    """code^marks, except a ? code (module docstring) becomes its own hapax type -- eight individually unread
+    boxes must not collapse into one fabricated frequent symbol."""
+    code = f"?{x['leaf']}.{x['line']}.{x['pos']}" if x["code"] == "?" else x["code"]
+    return f"{code}^{x['marks']}"
+
+
 def apply_merge(x):
-    """MERGE_MAP is keyed on plain boxes too ('_^'), harmless since none are ever merge targets."""
-    if not MERGE_MAP or x["code"] == "_":
+    """MERGE_MAP is keyed on plain boxes too ('_^'), harmless since none are ever merge targets. A ? code is
+    never a merge source/target either (each is its own hapax, sign_type()) -- skipped like a plain box."""
+    if not MERGE_MAP or x["code"] in ("_", "?"):
         return x
     t = resolve_merge(f"{x['code']}^{x['marks']}")
     nc, nm = t.split("^", 1)
@@ -139,7 +150,7 @@ def stats():
     out = []
     for lf in list(LEAVES) + [None]:
         r = rows(lf); sg = [x for x in r if x["code"] != "_"]
-        out.append([lf or "pooled", len(sg), len({x["code"] for x in sg}), len({(x["code"], x["marks"]) for x in sg}),
+        out.append([lf or "pooled", len(sg), len({x["code"] for x in sg}), len({sign_type(x) for x in sg}),
                     f"{sum(1 for x in sg if x['marks']) / max(1, len(sg)):.1%}", len(r) - len(sg)])
     print("leaf\tsign_tokens\tbase_codes\tcode_mark_types\tshare_marked\tplain_boxes")
     for o in out:
@@ -185,7 +196,7 @@ def build(design, n_sign, seed):
         else:
             toks.append(p[i]); i += 1
     if design in ("cm", "cmc"):
-        units = Counter(f"{x['code']}^{x['marks']}" for x in sg).most_common()
+        units = Counter(sign_type(x) for x in sg).most_common()
         homs = alloc(units, Counter("".join(toks)))
         seq = []
         for t in toks:
@@ -305,7 +316,7 @@ def control(design, n, seed):
 def target(design, seed):
     sg = [x for x in rows() if x["code"] != "_"]
     if design in ("cm", "cmc"):
-        stream = [f"{x['code']}^{x['marks']}" for x in sg]
+        stream = [sign_type(x) for x in sg]
         if design == "cmc":
             stream = [merge_type(t) for t in stream]
     else:

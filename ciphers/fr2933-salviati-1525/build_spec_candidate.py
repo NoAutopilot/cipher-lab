@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-"""SALV-SPLIT (27 Sept 2026): build a CANDIDATE spec from the 98 [C]-flagged plain boxes this job's blind
+"""Superseded by SALV2-J2 (27 Sept 2026): the real transcription pass this docstring called for is done
+(SALV2-J1A/J1B) and build_spec.py rebuilds the real spec directly from ciphertext_<leaf>.tsv; this script's
+own outputs (ciphertext_*.split-candidate.tsv, ciphertext.split-candidate.txt,
+specs/fr2933-salviati-1525.split-candidate.json) were git rm'd as superseded (git keeps them in history).
+Left on disk for the record; do not run it against current ciphertext_<leaf>.tsv (its own confirmed.json
+input reflects the pre-transcription sizing exercise, not the settled AB/M/? codes).
+
+SALV-SPLIT (27 Sept 2026): build a CANDIDATE spec from the 98 [C]-flagged plain boxes this job's blind
 crop check independently confirmed as sign (of 137 originally flagged; see NOTES.md "SALV-SPLIT"), leaving
 the real spec and ciphertext_<leaf>.tsv files untouched.
 
