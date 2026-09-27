@@ -1,6 +1,6 @@
 job_id	account	brief	model	cap_usd	box_min	status	added	note
 INTAKE-SPINELLI	owner	.claude/briefs/runs/2026-09-27-parent-intake-spinelli.md	Sonnet	5	45	claimed session_01A8LNPQ8NzN53Yx9byfcLpL 2026-09-27 19:44	2026-09-27 19:44	seeded from the live worker at the switch to a single orchestrator
 PR-LAND-17	owner	.claude/briefs/runs/2026-09-27-parent-pr-land-17.md	Sonnet	4	40	claimed session_019PwVu4HQaRPVcy3PUy8x7j 2026-09-27 19:44	2026-09-27 19:44	seeded from the live worker at the switch
-WAIT-CHECK	owner	.claude/briefs/runs/2026-09-27-parent-wait-check.md	Sonnet	4	40	queued	2026-09-27 20:13	owner's observation 20:1x UTC: no target is only waiting
+WAIT-CHECK	owner	.claude/briefs/runs/2026-09-27-parent-wait-check.md	Sonnet	4	40	claimed session_01GXbYappkJ9A5Vt3sLaWE3y 2026-09-27 20:16	2026-09-27 20:13	owner's observation 20:1x UTC: no target is only waiting
 WAIT-PASS-A	owner	.claude/briefs/runs/2026-09-27-parent-wait-pass-a.md	Sonnet	8	60	queued	2026-09-27 20:13	owner's observation 20:1x UTC: no target is only waiting
 WAIT-PASS-B	owner	.claude/briefs/runs/2026-09-27-parent-wait-pass-b.md	Sonnet	8	60	queued	2026-09-27 20:13	owner's observation 20:1x UTC: no target is only waiting
