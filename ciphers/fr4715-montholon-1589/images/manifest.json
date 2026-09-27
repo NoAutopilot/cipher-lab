@@ -1820,5 +1820,28 @@
       "date": "27 Sept 2026"
     }
   ],
-  "crops_note": "MONT-4715, 27 Sept 2026: superseded an earlier --max-width 2400 attempt (prefix f81r_L*.jpg, 2 segments/line) after two independent blind Sonnet passes both declined to transcribe it as illegible; re-cut at --max-width 900 (5 segments/line) and upscaled 3x LANCZOS -- see images/regen_f81r_crops.sh and NOTES.md. The wide crops were deleted, not kept."
+  "crops_note": "MONT-4715, 27 Sept 2026: superseded an earlier --max-width 2400 attempt (prefix f81r_L*.jpg, 2 segments/line) after two independent blind Sonnet passes both declined to transcribe it as illegible; re-cut at --max-width 900 (5 segments/line) and upscaled 3x LANCZOS -- see images/regen_f81r_crops.sh and NOTES.md. The wide crops were deleted, not kept.",
+  "pool_images": {
+    "why": "CS-4715-POOL, 27 Sept 2026: pool-size estimate for the BnF fr.4715 Vieuville-Nevers pool (POOL.md) -- 3 recto canvases at 600px for folios not yet on disk, sampled from the open/partial (non-found-solved) rows, eye-compared against f81r's known 2,524 signs for a rough sign density estimate. Not transcribed.",
+    "files": {
+      "pool_f50r_600.jpg": {
+        "folio": "50r (no.27, Letter of Montholon, 30 Oct 1589)",
+        "canvas": 115,
+        "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52509819x/f115/full/600,/0/native.jpg",
+        "note": "dense continuous cipher for about 22 lines (top ~60% of the leaf), later-hand marginal notes below, then blank; estimated ~1,500 signs"
+      },
+      "pool_f60r_600.jpg": {
+        "folio": "60r (no.37, Letter of Montholon, Tours, 12 Dec 1589)",
+        "canvas": 135,
+        "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52509819x/f135/full/600,/0/native.jpg",
+        "note": "dense continuous cipher for about 22-24 lines, similar layout to f50r; estimated ~1,500-1,600 signs"
+      },
+      "pool_f67r_600.jpg": {
+        "folio": "67r (no.44, Letter of Montholon, Tours, 15 Apr 1590)",
+        "canvas": 149,
+        "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52509819x/f149/full/600,/0/native.jpg",
+        "note": "mostly clear French prose with only a handful of scattered numeral code-groups per line, not a dense cipher leaf despite the BnF catalogue's 'avec chiffre' note; estimated ~50-150 signs"
+      }
+    }
+  }
 }

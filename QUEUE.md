@@ -7260,3 +7260,27 @@ intake_gate_check.py colbert155-beziers-1670` passes ("open ... edition/page or 
 found within 6 lines"). Next step: locate the folio (volume finding aid or a queued route), then a calibrated
 reading against the key and the three-word opening, with a 20-shuffled-key control read cautiously given the
 very short crib, per NOTES.md.
+
+## queued, pool, CS-4715-POOL -- BnF fr.4715 Vieuville-Nevers open sub-pool, 27 Sept 2026
+
+Check-solved pass on all 22 letters nevers.htm's "Vieuville-Nevers Cipher" heading places in BnF fr.4715
+(`ciphers/fr4715-montholon-1589/POOL.md`, full register and sourcing). Existing target `ciphers/
+fr4715-montholon-1589` (no.58, f.81) is one leaf of a larger pool, not a single short letter: reading the BnF's
+own dépouillement (archivesetmanuscrits.bnf.fr, cached via `dbourdeau/cyphersolver`'s own crawl, 0 fresh
+requests this job) against nevers.htm/bnf4715.htm found 11 of the 22 rows already carry a period decipherment
+(marked "chiffre et déchiffrement" in the BnF's own notation, independent of anything Tomokiyo published
+online) -- those are found-solved, recovery-grade material, not cryptanalysis targets. 8 rows besides no.58
+are open or partial (no.21 f.44, no.27 f.50, no.28 f.51, no.35 f.58, no.37 f.60, no.39 f.62, no.44 f.67, no.60
+f.83), estimated ~10,600-10,700 signs total from two imaged canvases (no.27, no.37: dense cipher, ~1,500 each)
+plus one imaged outlier (no.44: mostly clear French with scattered numeral codes, ~100) plus an unimaged
+estimate for the remaining five. Combined with no.58's own 2,524 measured signs, the open sub-pool is
+~13,000-13,200 signs on one key (`keys/key_vieuville_nevers.tsv`, already on disk), one sender's office, a
+13-month date range -- over the Pipeline 3 pools-first bar (2,000+ signs). 2 rows (no.41 f.64, no.42 f.65) are
+flagged, not scored: the BnF catalogue's own dépouillement omits "chiffre" for them, unlike every other row,
+which may mean they aren't ciphertext despite nevers.htm's placement. Solver repos grepped first (rule):
+Bourdeau has no dedicated target and his own digest (`SOLVED_CATALOGUE.md` line 236) is wrong about nos. 47/48
+(claims "listed without a reading"; the BnF's own notice says both are already fully deciphered); Aymeloglu has
+no hit at all. KEY-ADJACENT.tsv gains one pool row. `tools/print_check.py`-style phrase search on Tomokiyo's
+no.3 glosses: 0 hits (Google Books, be-api fts) -- a search result, not a novelty verdict. See POOL.md's "For
+the parent" section for the two-track recommendation (cryptanalysis sub-pool vs. recovery/transcription
+sub-track) before this is promoted to a campaign.
