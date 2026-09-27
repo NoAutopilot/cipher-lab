@@ -317,3 +317,11 @@ browser-style UA, no 429/403. file_shrink_guard clean on NOTES.md and images/per
   "Les lettres de Napoléon à Marie-Louise", Revue des Deux Mondes 25(4), 1935, pp. 749-781,
   https://www.jstor.org/stable/44847985.
 - `"maréchal Berthier" AND "22 décembre 1812"`: no relevant hit (0 results, none about the letter).
+
+## Next step from the method registers (27 Sept 2026, parent 7k, from LESSONS-TOMOKIYO.md (d))
+
+Named next step (not run): contact table and KWIC of the 325 groups (207 distinct) before any solver (Tomokiyo
+codebreaking.htm "Statistical Analysis", kwic.htm), then Bazeries' probable-phrase search for variably-spelled repeats of a
+syllabic phrase the subject must contain (cf. "les en-ne-mi-s"), cribbed from the Chuquet 1912 clear letters of 22 Dec 1812
+cited above. Cost band S (script pass; `tools/freq.py --contacts/--kwic` added by the worker with an offline test). The
+control for the contact-table reading is the same table on a shuffled-order copy of the groups. Status stays open.

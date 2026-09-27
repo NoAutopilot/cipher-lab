@@ -92,3 +92,11 @@ This job ran the same control at N=164 on de19 with beam widened first to **beam
 **Status:** `hessen-1824` stays `partial` (rule 5's near-solve amendment; not `closed-negative`). Every family in the spec's ladder (periodic_vigenere, masc, running_key, homophonic) now has a logged control-first run; running_key's is a non-test at two independent beams and two independent era-matched-vs-mismatched corpora, not a negative. Whether the ladder is exhausted, and any NEAR.md update, is the orchestrator's call.
 
 SO lead prompt, 26 Sept 2026, QUEUE-FILL.
+
+## Next step from the method registers (27 Sept 2026, parent 7k, from LESSONS-TOMOKIYO.md (d))
+
+Named next step (not run): a different instrument for the running_key family (CLAUDE.md rule 3 "untested-by-this-tool",
+bHCP2/bHCP3 above): drag de19 dictionary words of 10+ letters at every offset, quadgram-score the other side, extend the best
+fragments by hand (Tomokiyo runningkey.htm "Solution", Brown's method; "Tips"). Matched control first at N=164 -- a synthetic
+running-key text of the same length on de19, the drag's recovery on it before the target is run. Cost band S
+(`tools/running_key.py --drag`, SYSTEM.md "Tools wanted", added by the worker that runs it). Status stays partial.

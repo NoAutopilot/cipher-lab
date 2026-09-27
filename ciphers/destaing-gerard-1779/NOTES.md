@@ -60,3 +60,11 @@ Requests this session: archive.org (be-api fts + numeral-run sweep + metadata + 
 - **Background page:** `sources/cryptiana/web/marbois.htm` (four French diplomatic codes of the period, none of which decodes this). Also `sources/cryptiana/blog/2021_09_decoded-but-not-identified-code-of.html` (a decoded but unidentified code of Luzerne).
 - **Ideas:** Highest number 597 means a code of about 600 entries, smaller than the diplomatic codes. The cleartext middle passage names the subject (a plan sent in cipher on 9 March, Georgia, the Americans, the Spanish). Repeated groups such as 401, 382, 152, 109, 450, 471 are probably function words or the most common syllables. Look for a second letter in the same code in the Clinton Papers or in Gérard's papers.
 - **Solver status (19 Sept 2026):** Skipped by Bourdeau (cyphersolver/destaing), 15 Sept 2026: 217 tokens of a 600-entry code, no key material. The deciphered copy would be in AAE Correspondance politique, Etats-Unis supplements t.1.
+
+## Next step from the method registers (27 Sept 2026, parent 7k, from LESSONS-TOMOKIYO.md (d))
+
+Named next step (not run): Tomokiyo's partial-encoding and dictionary-position steps (codebreaking.htm "Partial Encoding",
+"Andre Langie's Example"). Guess the code groups at the two clear/code boundaries from the bracketing French clauses, then
+test a one-part hypothesis by placing the frequent groups (de, la, le, que) at their dictionary-position bands in the 1-597
+range; log support or no support against a shuffled-range control (rule 3). Cost band S (script pass; needs
+`tools/freq.py --split-at` and `--onepart-dict`, SYSTEM.md "Tools wanted", added by the worker that runs it). Status stays open.

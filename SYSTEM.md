@@ -248,3 +248,28 @@ Terminal version:
 | `python3 tools/system_map_check.py` | Checks every `tools/*.py` (tests excepted), every `tools/*_runner*_prompt.md` and `*_runner_brief.md`, every root `*.tsv`, the register list and every tool named in CLAUDE.md Usage 8a is mentioned here; nonzero with the missing names | `tools/system_map_check.py --help`; test `tools/tests/test_system_map_check.py` | parent duty 3a; RETRO-APPLY; tool builders | a parent via RETRO-APPLY |
 | Retiring something | Move its row to "Retired or broken" (3b) with the date and reason rather than deleting it | this section | the author | a parent |
 | The other account | A change lands in shared files and UPDATES.md; the other parent learns it from `room.py --start` and its UPDATES.md read, and from a ROOM line addressed to it | parent.md "On start", duty 10 | both parents | the owner |
+
+## 8. Tools wanted (named, not built)
+
+Options a method register names and no target step has yet needed. Filed here by parent 7k (27 Sept 2026, clock read, from
+LANE CRYPT's (c) list) so a worker whose brief needs one adds it to the shared tool with an offline test (CLAUDE.md Usage 8)
+instead of writing a private script; a row leaves this table in the same commit that builds it, with its SYSTEM.md
+section-3 row added.
+
+| Option | What it would do | Source | Target step that would need it |
+|---|---|---|---|
+| `tools/freq.py --contacts K`, `--kwic GROUP --width W --sort left\|right` | contact table of the K most frequent groups; KWIC listing of one group | Tomokiyo C4 (contact.htm, kwic.htm) | berthier-napoleon-1812 (the first named step; built by the worker that runs it) |
+| `tools/freq.py --split-at N` | unigram stats reported separately for groups below and above N, with the gap search that proposes N | Tomokiyo C1 | destaing-gerard-1779 |
+| `tools/freq.py --onepart-dict LANG` | each frequent group's relative position in the range mapped to a period dictionary's initial-letter band (Mansfield/Langie) | Tomokiyo C2 | destaing-gerard-1779 |
+| `tools/freq.py --repeats N` | every recurring token n-gram of length >= N with positions | Tomokiyo C5 (polygram.htm) | none yet |
+| `tools/key_design.py --matrix` | a key's letter values as a vowel-headed matrix; flag paired first digits or reversed rows; label one-part / two-dimensional / blockwise / two-part | Tomokiyo C3 (matrix.htm) | none yet |
+| `tools/interlinear_align.py --cipher-pair A B` | DP alignment of two ciphertexts of one text, emitting homophone classes and clear-word anchors | Tomokiyo C6 (servien.htm); LESSONS.md lead-class rung 3a | the first target with a duplicata |
+| `tools/running_key.py --drag MINLEN --corpus DICT` | drag every dictionary word of length >= MINLEN at every offset, quadgram-score the other side, list top fragments | Tomokiyo C7 (runningkey.htm) | hessen-1824 |
+| `tools/family_run.py --param lock=<tsv>` | feed confirmed symbol->element pairs forward into a second run (Lasry's semi-automated loop) | LESSONS-LASRY.md s.3 item 5 | fr2933-salviati-1525, after the SALV-SPLIT decision |
+| `tools/families/syllabary.py`, `wordcode.py` `--param moves=swap_only` | restrict the anneal to symbol-pair swaps, offered beside the current move set with a control comparison | LESSONS-LASRY.md s.3 item 3 | none yet |
+| `--param ngram=3\|4\|5` (or a 3->5 sweep stopping at the first order that breaks the control's gate) on homophonic/wordcode/syllabary | escalating n-gram order per target | LESSONS-LASRY.md s.3 item 1 | none yet |
+| `polyphonic` family | a symbol standing for more than one plaintext letter | LESSONS-LASRY.md s.3 item 9 | none yet |
+| `judge_plaintext.py`/`family_run.py --norm {modern,early,latin,enigma}` | a corpus and its normalisation scheme travel together | LESSONS-BOURDEAU.md s.3 item 6 | none yet |
+| status.json `method` sub-field and `parts` list | outcome classed by route (ciphertext-only / external-plaintext / adjacent-plaintext / known-key / existing-decipherment), multi-route targets split | LESSONS-BOURDEAU.md s.3 items 1, 4 | the board's result label (parent) |
+| `next_steps.py --check <target>` | per-target surface check (NOTES.md, NEAR.md/status.json, hand-off line) before a done line | LESSONS-BOURDEAU.md s.3 item 5 | none yet |
+| `DECODE-CORRECTIONS.tsv` | a catalogue-correction queue for mis-catalogued DECODE records | LESSONS-BOURDEAU.md s.3 item 8 | none yet |
