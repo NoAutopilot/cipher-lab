@@ -1,0 +1,22 @@
+# F61-CRIB map fitted on all five Tomokiyo spans (tools/interlinear_align.py --code-prefix), 27 Sept 2026.
+# value set = top-2 letters by count; a class absent here or with n=0 letters is a null under this map.
+class	n_signs	values	counts
+PHI	15	e/l	e:5 l:2 r:2 c:1 m:1 t:1 u:1
+C43	9	a/b	a:2 b:2 e:1
+CA	9	u/c	u:2 c:1
+VBAR	8	t/s	t:3 s:2 n:1 u:1
+C6	6	a/p	a:4 p:1 v:1
+4TRI	6	a/n	a:1 n:1 p:1
+INF	5	e/o	e:1 o:1 p:1
+DBL	4	o/l	o:2 l:1
+LOOPBAR	3	a	a:1
+EBR	3	e/j	e:2 j:1
+ZHOOK	3	i	i:2
+CROSS	2	s	s:1
+ELOOP	2	-	
+4PI	2	c/n	c:1 n:1
+HASH4	1	e	e:1
+LOOPSTEM1	1	-	
+CH	1	-	
+LL	1	e	e:1
+4STEM	1	e	e:1

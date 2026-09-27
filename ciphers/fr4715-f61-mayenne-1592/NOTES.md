@@ -275,3 +275,52 @@ sibling letters in fr.3982/3983 remain the other calibration source (INTAKE's no
 
 Requests this job: gallica.bnf.fr 2 (1 served, 1 connection reset, no retry). 1 subagent reading call. No
 credentials, no AskUserQuestion, no novelty wording.
+
+## Campaign step H1 (2026-09-27 21:50 UTC)
+
+Campaign runner (Fable, session_01UgTmQhR7wFtVFrTVdtsq9i), one step per `.claude/briefs/campaign.md`, script-only, no
+subagent or vision call, no network. Hypothesis H1 (F61-CRIB) from CAMPAIGN.md: a class-to-letter map built from the
+reader's own shape notes, leave-one-span-out against Tomokiyo's five spans, 20 shuffled class-maps.
+
+**Method (`scripts/f61crib.py`; `--check` for staleness, rule 7).** Every sign in `scripts/read_call_A.tsv` is put in a
+shape class by 20 string rules on its `marks` text alone (the S0x labels F61-CAL found wrong are never read): 19
+classes over the 82 signs (PHI 15, C43 9, CA 9, VBAR 8, C6 6, 4TRI 6, INF 5, DBL 4, LOOPBAR/EBR/ZHOOK 3, CROSS/ELOOP/4PI
+2, HASH4/LOOPSTEM1/CH/LL/4STEM 1). Rule choices made before scoring: all V-shapes are one class (the reader's one
+"V/triangle" without "bar" is taken as an elision); the reader's lone "loop on long stem" (L05/1) is kept apart from
+the "phi" class since the reader did not call it phi. The map is fitted with the shared
+`tools/interlinear_align.py align --code-prefix @` (CLAUDE.md Usage item 8: the alignment tool, not a private DP):
+each class is a code taking 0 or 1 letters of the markup with Tomokiyo's dashes deleted, hard-EM, 6 iterations. A
+class's value set is its top-2 letters by count (the Mayenne table pairs two letters per symbol). The withheld span is
+scored with F61-CAL's own DP (`align()` copied unchanged from `scripts/f61cal.py`), S4a+S4b as one span (L07+L08).
+Controls: for each fold the fitted sets are permuted across classes 20 times (seed 1) and pooled the same way.
+
+**Result (`scripts/f61crib_result.txt`).**
+
+| held-out span | matched / letters | shuffled max (mean) |
+|---|---|---|
+| S1 avec (L01) | 2/4 | 3/4 (1.90) |
+| S2 est capable (L03) | 5/10 | 5/10 (3.20) |
+| S3 trop avancees (L05) | 6/12 | 6/12 (3.40) |
+| S4 jalousie au beau-pere (L07+L08) | 7/18 | 8/18 (5.65) |
+| S5 mel'ente noit (L11) | 4/11 | 4/11 (2.60) |
+| **pooled held-out** | **24/55 = 0.436** | controls mean 0.305, **max 0.345** |
+| sensitivity, uncapped value sets (non-gating) | 28/55 = 0.509 | |
+
+H1's gate (pooled above every one of the 20 shuffled-map values): **met**, 0.436 vs 0.345. F61-CAL's own absolute level
+(0.85) is not approached, and F61-CAL's 8/55 = 0.145 with the table-drawing labels is tripled by the same reader's
+shape notes alone. No single fold beats its own shuffled max; only the pool does.
+
+**What the result does and does not say.** The reader's shape classes carry the signal Tomokiyo's markup implies (the
+pool beats the shuffle), but the fitted maps disagree between folds: PHI reads e/l, e/c, e/c across folds; 4TRI p/a, p/n,
+a/n; C43 a/b, e/b; VBAR t/s, t/n, n/t, e/n, s/u. The map fitted on all five spans (`scripts/f61crib_map.tsv`) puts
+Tomokiyo's letters onto the six classes he leaves as dashes (C6 a:4, CA u:2, LL/HASH4/4STEM e), because
+`interlinear_align.py`'s DP, tuned for Thurloe's lines, charges -3.0 for a code that takes no letter and the dashes
+were deleted before alignment. F61-CAL's eye-placed diagnostic (`scripts/class_diag.tsv`, not blind) had these same
+classes clean (PHI e:12 r:2, C43 a:8 n:2, 4TRI c:3 p:3). So the limit here is the fitting instrument, not the classes:
+H11 (CAMPAIGN.md) adds a null-aware option to the shared tool and keeps the dashes as explicit unread positions, and
+asks for fold-stable sets before H4-H6 apply any map to the unmarked runs. Not a reading; no class change; grade of
+the 55 reference letters stays H-for-this-test only (Tomokiyo's own "Solution Incomplete" markup, rule 4).
+
+Files: `scripts/f61crib.py`, `scripts/f61crib_result.txt`, `scripts/f61crib_map.tsv`; HYPOTHESES.md row added. Requests:
+none. No credentials, no AskUserQuestion, no novelty wording; the owner not named.
+
