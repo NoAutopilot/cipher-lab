@@ -1270,3 +1270,17 @@ unchecked.
 - correction; the PR 49 lease on comparing Annet primitives against the target's glyph passages is released with no secure literal reading established -- not claimed as a validated negative -- unchecked.
 - archival-route; loc.gov's ordinary web reader returns 403 but the public JSON catalogue (`?fo=json`) and tile.loc.gov IIIF image endpoints answer 200 with valid image URLs, a route not previously documented here -- unchecked.
 - next-step; the checkpoint's own named next action is locating and reading Livingston-to-Monroe, 11 September 1803 (catalogue title reproduced at PICRYL), to test whether its cipher table matches the compact key, the PR 43 witness table, or neither -- unchecked.
+
+
+## Second-opinion checkpoint (SO-ARMSTRONG-CHECKPOINT 21:28, 27 Sept 2026)
+
+Landed from PR 51 (`second-opinions/chatgpt-checkpoint-2026-09-27-2128.md`, PR-LAND-19). A runner checkpoint
+report, not a leads-prompt answer or a reading; every citation below is a claim to verify, never a fact --
+unchecked.
+
+- lead; the Livingston-to-Monroe 11 September 1803 witness (LOC mjm014115, resource mjm.07_1031_1040) was located: two manuscript copies (1031d, and 1036d marked "Duplicate"), with a 10-token span where three tokens (968, 1221, 968) match PR 43's already-frozen THE/OF/THE readings -- an out-of-document consistency check on three tokens, not a whole-letter recognition score -- unchecked.
+- lead; a copy-substitution alignment: numbers 640 1295 in 1031d correspond to plain prose "no right" in 1036d; the individual splits 640=no, 1295=right are M-grade and provisional, with the two-number run treated as the authoritative alignment -- unchecked.
+- correction/caution; a marked (diamond-like) 1295 in PR 43's May witness (under the annotation "Talleyrand") has no comparable mark below the September occurrence of 1295 -- the two observations are not to be collapsed into one dictionary entry -- unchecked.
+- lead; Monroe reel 9 frame 955 extends frame 954's undated table down through numbered value 1700; a new crop reads 812=the (M), making it provisionally a THE=812 table distinct from THE=968/972/15 -- unchecked.
+- archival-route; the 1963 Monroe index lists an undated "Jefferson Thomas -- Cipher Key" printed form (Series 1) and a key "prepared for JM2" (Series 2) as possible identification leads for the frame 954/955 table, not proof of attribution -- unchecked.
+- next-step; the checkpoint's own named next action is checking further occurrences of marked versus unmarked 1295 across mjm014115's remaining untranscribed pages (1033, 1038) before further primary-key work -- unchecked.
