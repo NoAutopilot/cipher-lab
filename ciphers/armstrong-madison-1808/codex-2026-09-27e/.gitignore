@@ -1,0 +1,5 @@
+# Reproducible research downloads; commit the report and source ledger only.
+*.pdf
+*.txt
+*.html
+warden_tree.json

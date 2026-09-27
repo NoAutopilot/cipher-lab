@@ -29,3 +29,12 @@ Division, Library of Congress, Washington, D.C."
 whatever duplication-request route the Reading Room's own contact page offers, quoting the citation above.
 Subject, recipient line and sign-off intentionally left blank -- read the contact page first for the current
 address and process.
+
+
+## 2. Livingston key in Monroe Papers — ARM-PRIVATE, 27 September 2026
+
+Locate the image of the **1803 Livingston cipher key, James Monroe Papers, Series 1, two pages**, indexed on printed p.11 / PDF p.27 of the [1963 LOC index](https://tile.loc.gov/storage-services/service/gdc/gdclccn/62/06/00/06/62060006/62060006.pdf). Likely near the end of 1803 on [reel 3](https://www.loc.gov/item/mss33217003/), but the frame is unresolved. This is **Monroe**, not Madison. Item/resource/JSON requests failed here; that does not establish lack of digitization. An exact image link may suffice; no need to order the whole reel. Identity with WE027 is unproved. No request sent.
+
+## 3. Brooklyn private Livingston letter — ARM-PRIVATE, 27 September 2026
+
+Retrieve the **1803 Paris letter to his brother, CBH 1974.002, Box 1, Folder 25**, with any decipherment/docket. The [finding aid](https://findingaids.library.nyu.edu/cbh/1974_002/all/) describes cipher content. No image located in this pass; digitization status unknown. This is an untested specimen, not a proven sibling. No request sent. See [source report](codex-2026-09-27e/REPORT.md).

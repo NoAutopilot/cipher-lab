@@ -1,0 +1,30 @@
+{
+  "accessed_utc": "2026-09-27",
+  "purpose": "Downloaded intermediate sources; no manuscript key recovered. See REPORT.md for web-only sources and specific locators.",
+  "downloads": [
+    {
+      "local_name": "warden_1943.pdf",
+      "url": "https://msa.maryland.gov/megafile/msa/speccol/sc5800/sc5881/000001/000000/000149/pdf/msa_sc_5881_1_149.pdf",
+      "bytes": 7479659,
+      "sha256": "de171c53b8152cc399d743e8394e11ca9ad59304427ccab98ae6bea468836eb7"
+    },
+    {
+      "local_name": "livingston_1942.pdf",
+      "url": "https://americanantiquarian.org/proceedings/44807068.pdf",
+      "bytes": 2625266,
+      "sha256": "f3f04d9ecf7309349f503a17b258c4a48610f9565ed0e038fe6750d6ab409626"
+    },
+    {
+      "local_name": "warden_findingaid.html",
+      "url": "https://mdhistory.libraryhost.com/repositories/2/resources/120",
+      "bytes": 35534,
+      "sha256": "36a87c4e5edd871c773c5630338ab97bc55e846c99cb2cd94c590943a322ca27"
+    },
+    {
+      "local_name": "warden_tree.json",
+      "url": "https://mdhistory.libraryhost.com/repositories/2/resources/120/tree/root",
+      "bytes": 260,
+      "sha256": "b6e3480031bfe2f20ef73a23a7da3a286212c0fa496dc90360b1b18a4b792911"
+    }
+  ]
+}
