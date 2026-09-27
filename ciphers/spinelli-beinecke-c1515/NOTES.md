@@ -371,7 +371,7 @@ was segmented as 8 lines, so cross-line merges should be rare there, but one str
 **Cost:** 2 Sonnet vision calls (114k + 106k subagent tokens) plus this runner's reconciliation turn -- recorded as
 1.5 USD (the est). No network requests. No credentials, no AskUserQuestion, rule 10 wording, no other target touched.
 
-## Campaign step H14 (27 Sept 2026, 23:37-23:40 UTC)
+## Campaign step H14 (27 Sept 2026, 23:37-23:39 UTC)
 
 Runner session_016fvFiTTAhQng2VqbiBDmRE. Hypothesis H14: settle the atlas's segmentation faults before p.[1]'s
 passes run on its strips.
