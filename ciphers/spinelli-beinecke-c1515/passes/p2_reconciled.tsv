@@ -1,0 +1,57 @@
+line	box	pos	code	grade	note
+1	2*	1	FOUR	R	the line's opening 4, boxed into line 2's box 2 (cross-line merge); neither pass listed it under line 1
+1	1	2	ENN	AB	
+1	2	3	SEVEN	AB	
+1	3	4	SIX	AB	
+1	4	5	NINE	AB	
+1	5	6	PLUS	AB	
+1	6	7	PHI	R	A PHI+UCURL, B ELOOP; a phi loop with a long tail, one sign
+1	7	8	ENN	AB	
+1	8	9	EIGHT	AB	
+1	9	10	OMEGADOT	AB	
+1	9a	11	DIAMOND	R	unboxed; A added it, B counted it as box 10 (B's numbering runs one behind from here to 14)
+1	10	12	SEVEN	R	bold 7 with a long top bar and hooked foot (atlas cluster 19 shape); A TEE, B PI -- flag: bold-7 may be a sign distinct from the thin 7
+1	11	13	TWO	R	A TWO; B's TWO is its box 12 (offset)
+1	11a	14	NINE	R	unboxed 9; A added it, B's box 13
+1	12	15	SEVEN	R	thin 7; A SEVEN, B missed it
+1	13	16	THREE	R	a 3, partly cut by the strip's edge; A STROKE, B missed it
+1	14	17	PHI	AB	box also holds line 2's M below (cross-line merge)
+1	15	18	EM	AB	
+1	16	19	TWOFLAT	R	flat Z/2 on the baseline; the 8 below in the same box is line 2's; A OMEGABAR, B TWOFLAT+EIGHT
+1	16a	20	NINE	R	unboxed 9/q; A added it
+1	17	21	EX	AB	cursive x; EX vs XCURL split doubtful, see NOTES
+1	18	22	HCURL	AB	
+1	19	23	OMEGABAR	AB	
+1	20	24	ELOOP	R	A ELOOP, B ECAP; small script e
+1	21	25	EIGHT	AB	
+1	22	26	LONGS	R	long s with a bottom loop; A LONGS, B RHO
+1	23	27	NINE	AB	
+1	24	28	THETA	AB	
+1	25	29	SEVEN	R	bold 7 again; A TEE, B SEVEN
+1	26	30	PLUS	AB	
+1	27	31	XCURL	AB	
+1	28	32	SEVEN	AB	
+2	1	-	_	R	fragment of the first long s; both passes STROKE
+2	2	1	LONGS	R	the line-2 part of a full-height box that also holds line 1's opening 4; A SEVEN+FOUR, B RSTROKE+FOUR
+2	3	2	LONGS	R	second long s with a curl; A RHO, B ESS
+2	4	3	FOUR	AB	
+2	5	4	OMEGABAR	AB	
+2	6	5	ELOOP	R	small loop; A ELOOP, B CIRCLE
+2	7	6	PI	AB	
+2	8	7	FOUR	AB	
+2	9	8	RHO	AB	big loop with a long tail
+2	10	9	LONGS	R	the line-2 part of a box that also holds line 1's diamond; A OMEGA2, B ESS
+2	11	10	OMEGABAR	AB	
+2	12	-	_	R	tiny fragment; both STROKE
+2	13	11	AMP	R	the line-2 part of a box that also holds line 1's 2 and 9; a loop tangle; A TWO+NINE, B RHO+EIGHT
+2	14	12	TWOFLAT	R	D-shape; A '_', B TWOFLAT
+2	14a	13	EM	R	unboxed M (the one merged into line 1's box 14); neither pass added it
+2	15	14	SEVEN	R	bold 7; A TEE, B SEVEN
+2	15a	15	EIGHT	R	unboxed 8 between boxes 15 and 16; neither pass added it
+2	16	16	EIGHT	R	the line-2 part of a box that also holds line 1's q; A OMEGA2, B NINE+EIGHT
+2	17	17	SEVEN	AB	
+2	18	18	XCURL	AB	
+2	19	19	AMP	AB	phi-like loop with a foot; both AMP, flag M
+2	20	20	UCURL	AB	a curved stroke, possibly a fragment; both UCURL, flag L
+2	21	-	_	R	faint scribble at the bottom edge, the top of the plain line below; A '_', B '_'
+2	22	-	_	R	smudge; A '_', B STROKE

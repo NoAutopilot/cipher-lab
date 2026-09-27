@@ -1,0 +1,55 @@
+line	pos	code	note	conf
+1	1	ENN	N-like zigzag	M
+1	2	SEVEN	hook shape	M
+1	3	SIX	curled top, 6-like	M
+1	4	NINE	9-like	H
+1	5	PLUS	cross	H
+1	6	PHI+UCURL	unusually wide box, top loop into long sweeping tail; may be one elaborate sign rather than two	L
+1	7	ENN	N with dot/colon	M
+1	8	EIGHT	8-like	H
+1	9	OMEGADOT	omega base with loop/circle above	M
+1	9a	DIAMOND	unboxed, small diamond between box 9 and box 10	M
+1	10	TEE	inverted-T/hook, single exemplar in atlas, uncertain match	L
+1	11	TWO	2-like	H
+1	11a	NINE	unboxed digit-9 shape between box 11 and box 12	M
+1	12	SEVEN	angular Z/7-like hook	M
+1	13	STROKE	isolated vertical tick	H
+1	14	PHI	phi letterform, circle+stem+tail	H
+1	15	EM	m-like cursive	H
+1	16	OMEGABAR	long-tailed omega/w shape; box unusually tall, extra loop lower down may be ink bleed from neighbouring line rather than part of this sign	M
+1	16a	NINE	unboxed 9-like shape between box 16 and box 17	M
+1	17	EX	bold X cross	H
+1	18	HCURL	H-like with curls	M
+1	19	OMEGABAR	w-shape with bar on top	H
+1	20	ELOOP	small loop	M
+1	21	EIGHT	8-like	H
+1	22	LONGS	tall vertical looped stroke	M
+1	23	NINE	small 9-like	M
+1	24	THETA	loop with cross	M
+1	25	TEE	hook shape, same uncertain match as pos 10	L
+1	26	PLUS	cross	H
+1	27	XCURL	bold X with hooked/curled terminals	H
+1	28	SEVEN	hook shape	M
+2	1	STROKE	short isolated vertical fragment, bottom-left, separate from box 2	M
+2	2	SEVEN+FOUR	box unusually tall/full-height; hook shape atop a 4-like cross, plus additional lower squiggle not confidently matched - possibly a third sign	L
+2	3	RHO	cursive loop with long diagonal tail below	M
+2	4	FOUR	4-like	H
+2	5	OMEGABAR	w-shape with bar	H
+2	6	ELOOP	small loop with hook tail	M
+2	7	PI	two strokes with flat top, pi-like	H
+2	8	FOUR	4-like	H
+2	9	RHO	cursive loop, long tail sweeping down-right	M
+2	10	OMEGA2	tall stacked squiggle/loop	M
+2	11	OMEGABAR	w-shape with bar	H
+2	12	STROKE	small narrow vertical tick	H
+2	13	TWO+NINE	tall box; top shape resembles 2/hook, lower resembles a 9 with long tail - uncertain whether one elaborate sign or two	L
+2	14	_	no clear ink resolved in this box region; may be very faint or effectively empty	L
+2	15	TEE	hook shape, same uncertain match as line 1 pos 10/25	L
+2	16	OMEGA2	tall box, complex double-loop/figure-8 shape	L
+2	17	SEVEN	hook shape	M
+2	18	XCURL	bold X continuing into a long diagonal tail	M
+2	19	AMP	looped shape with crossing stroke	L
+2	20	UCURL	single curved hook stroke	M
+2	20a	_	unboxed, very faint scribbled marks between box 20 and box 21, illegible	L
+2	21	_	box present but content is a faint smudge/scribble, no clear sign shape resolved	L
+2	22	_	box present but content is a small dark smudge, no clear sign shape resolved	L

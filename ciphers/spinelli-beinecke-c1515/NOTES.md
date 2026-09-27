@@ -327,3 +327,46 @@ correctness.
 
 **Cost:** no subagent; this runner's own turn only -- recorded as 2.0 USD by estimate (est 3.0). No network
 requests this step. No credentials, no AskUserQuestion, rule 10 wording, no other target touched.
+
+## Campaign step H10 (27 Sept 2026, 23:28-23:36 UTC)
+
+Runner session_016fvFiTTAhQng2VqbiBDmRE. Hypothesis H10: two independent blind Sonnet passes over p.[2]'s two
+cipher lines on H11's numbered strips, coded against the atlas, then reconciled.
+
+**Done: p.[2] reconciled to 52 signs (line 1: 32, line 2: 20), `passes/p2_reconciled.tsv`,** per sign graded AB
+(both passes gave the code: 29 signs) or R (settled by this runner's direct look at the strips: 23 signs). Passes:
+`passes/p2_atlas_passA.tsv`, `passes/p2_atlas_passB.tsv` (2 of 4 vision calls; each pass saw only the four strips and
+`glyphs/atlas.png`; no plaintext, no key, no classifier codes). `passes/compare_box_passes.py` (self-tested on two
+fixtures): **boxes coded by both 50; exact agreement 32/50 = 64.0%**, against the transcription brief's 60% gate --
+passes, narrowly; 18 disagreements in `passes/p2_atlas_disagreements.tsv`; 4 signs added by pass A only (3 real:
+an unboxed diamond and two unboxed 9s; 1 a scribble), 0 by pass B.
+
+**What the disagreements were (all settled from the strips, not by majority):** (1) the p.[2] strips are poor: H11's
+`segment` saw p.[2] as ONE line, so its merge rule joined line-1 and line-2 components that overlap in x -- box 2
+of line 2 holds line 1's opening 4 plus line 2's long s, box 10 a line-1 diamond plus a line-2 long s, box 13 line
+1's "2 9" plus line 2's ampersand, box 16 line 1's q plus line 2's 8, box 14 of line 1 a phi plus line 2's M; both
+passes coded these as merges of the wrong signs; (2) pass B's numbering ran one behind from box 10 to 14 of line 1
+because it counted the unboxed diamond as box 10, so its codes there are right but mis-addressed; (3) five signs were
+unboxed (two 9s, a diamond, an M, an 8) -- pass A added three, pass B none; (4) real shape disagreements: box 6
+(PHI vs ELOOP -> PHI), box 20 (ELOOP vs ECAP -> ELOOP), box 22 (LONGS vs RHO -> LONGS), the bold "7 with a long top
+bar and hooked foot" (TEE / PI / SEVEN -> SEVEN, atlas cluster 19's shape, three times) -- flagged: the bold 7 may be
+a sign distinct from the thin 7, and EX vs XCURL (plain x vs cursive x) may be one sign; both stay separate codes
+until the p.[1] counts say otherwise.
+
+**Reconciled sequence (atlas codes; NOT a reading):**
+L1: FOUR ENN SEVEN SIX NINE PLUS PHI ENN EIGHT OMEGADOT DIAMOND SEVEN TWO NINE SEVEN THREE PHI EM TWOFLAT NINE EX
+HCURL OMEGABAR ELOOP EIGHT LONGS NINE THETA SEVEN PLUS XCURL SEVEN
+L2: LONGS LONGS FOUR OMEGABAR ELOOP PI FOUR RHO LONGS OMEGABAR AMP TWOFLAT EM SEVEN EIGHT EIGHT SEVEN XCURL AMP UCURL
+Sign count 52 agrees with H2's key-coded pass A (53) and this runner's direct count (about 55).
+
+**Controls:** the pooled-agreement figure above (64.0% vs the 60% gate) is the control this step has; it is low
+because of the strip faults in (1)-(3), not only shape confusion -- 11 of the 18 disagreements are cross-line merges,
+numbering drift or unboxed signs. No reading, no class change.
+
+**Next (into the table):** H14 now comes before H3 -- re-segment p.[2] as two separate pages (`--page
+p2L1=glyphs/p2_clean.png@0,0,3055,214 --page p2L2=...@0,214,3055,456`) so no box spans two lines, add the five
+unboxed signs, and re-cut the strips; check p.[1]'s strips for the same fault before H3's passes run on them (p.[1]
+was segmented as 8 lines, so cross-line merges should be rare there, but one strip is looked at first).
+
+**Cost:** 2 Sonnet vision calls (114k + 106k subagent tokens) plus this runner's reconciliation turn -- recorded as
+1.5 USD (the est). No network requests. No credentials, no AskUserQuestion, rule 10 wording, no other target touched.
