@@ -1,0 +1,9 @@
+# Reference for H19 (grade H for this test only): Tomokiyo's magenta overlay letters on sources/cryptiana/web/img/mayenne2.png
+# ("Part of Duke of Mayenne's letter (1593)", his specimen "taken from f.108 of BnF fr.3983"), transcribed character for
+# character from the printed overlay by one Sonnet subagent, 27 Sept 2026 (printed type, not handwriting; the one wider gap
+# per line kept as a space; no '?' and no '-' were needed: every sign in the two overlaid lines carries a letter). One
+# character per cipher-sign position is the working hypothesis, as for tomokiyo_spans.tsv. Lines 3-4 of the strip carry
+# no overlay. 'line' is the strip's own line number; the leaf's sheet line is assigned when the canvas is fetched (H19).
+span	line	markup	letters
+T1	strip1	satisfaireungseulauprejudicedeplusieurs	satisfaireungseulauprejudicedeplusieurs
+T2	strip2	aultresquimeprenentagarentdeleursjacommoditez	aultresquimeprenentagarentdeleursjacommoditez
