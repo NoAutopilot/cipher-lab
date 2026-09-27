@@ -1131,3 +1131,15 @@ The target remains incoherent. Its best penalized score is -299.499256129 (raw -
 **Unsolved.** [Source report](codex-2026-09-27e/REPORT.md) records two specific image leads: the Livingston key indexed in the **Monroe** Papers (1963 index p.11, PDF p.27, Series 1, year 1803, two pages), and the privately addressed 1803 Livingston letter in Brooklyn CBH 1974.002 Box 1 Folder 25. Neither image was obtained or tested. The 1904 catalogue likely describes the same Monroe key; do not count it as another witness or assume WE027. The initial working attribution of the index to Madison was erroneous and is corrected. Likely reel 3 placement is an inference; the image number is unresolved.
 
 Hoyt's 1943 Warden collection description identifies twenty Armstrong letters spanning 1804-1810. Maryland's microfilm holdings, the separate LOC Warden collection, and Newcastle's 1817-1845 edition must not be conflated. The bearer in Armstrong's 15 February 1808 Jefferson letter remains unnamed here; no crib from that letter is validated. No solver run, target reading, key assignment, or family exclusion this pass. Requests appended to REQUEST.md and ASKS.md; no outreach.
+
+
+## Second-opinion leads (SO-ARMSTRONG-RESUME, 27 Sept 2026)
+
+Landed from PR 40 (`second-opinions/chatgpt-resume-2026-09-27.md`, PR-LAND-15). A resume/continuation checkpoint,
+not a leads-prompt answer or a reading; every citation below is a claim to verify, never a fact -- unchecked.
+
+- archival-route; LOC 2023 finding aid for the James Monroe Papers (PDF p.15, `tile.loc.gov/storage-services/service/gdc/gdcfindingaidpdfs/ms009142/ms009142.pdf`), reel 3 flagged "Digital content available" for span 1803 Oct. 9-1807 Jan. 16 -- does not identify the Livingston key's own frame or certify its inclusion in the scans -- unchecked.
+- archival-route; public GetArchive mirror of reel 3 returned a page and thumbnail link through the web reader (curl 403); no verified key image or LOC frame number obtained from it -- unchecked.
+- archival-route; Internet Archive OCR for the 1893 chronological calendar `cu31924032751665_djvu.txt` returned HTTP 502, not retrieved; the 1904 catalogue's p.29 citation for the key is unconfirmed independently of this OCR -- unchecked.
+- archival-route (already logged, ARM-PRIVATE); Brooklyn CBH 1974.002 Box 1 Folder 25 (privately addressed 1803 Livingston letter) and the Brant Box 37 request named as fallback inputs if LOC image access stays blocked -- unchecked.
+- internal-flag; a ROOM entry timestamped 17:43 UTC from Codex ARM-KEYIMAGE claims retrieval of the Livingston key image under a folder `codex-2026-09-27f`, but that folder and any completion report are absent from the repository as fetched for this PR (based on remote `main` commit `d134ed2d68eede9b88308aa37aa171f0380f7e20`) -- not confirmed lost or superseded, just unreconciled -- unchecked.
