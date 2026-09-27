@@ -183,6 +183,18 @@ the ask is still live or already stale, instead of re-deriving that by hand. LAN
 to change status.json's lodewijk grade text to match AUDIT.md A4's withdrawal; the parent had already made that
 exact change and pushed it at 08:12, and had to spend a correction line at 09:03 finding this out for itself.
 
+## Campaigns (27 Sept 2026, about 20:20 UTC, the owner's decision after the proof-sprint discussion)
+
+SPRINT.md names the campaigns: a few targets worked continuously by per-target runner triggers (`.claude/briefs/campaign.md`,
+`tools/campaign.py`), each with a ranked hypothesis file `CAMPAIGN.md` that never runs empty and a daily budget. The owner's
+direction in plain form: focus on a small fixed set and keep iterating; a copy request is a branch, never a state in which
+nothing moves; the campaign list stays fixed so that neither his impulses nor the parent's churn it, and changes only at a
+retrospective with the reason written down. For the orchestrator: breadth is frozen for the sprint (no intakes, scouting
+or new lanes; runner PR landings, mailbox, desk and verifiers continue); at each check-in read every CAMPAIGN.md, update the
+SPRINT.md scoreboard, argue with the rankings, ledger the runner sessions, and report the campaigns in the same order in the
+TLDR every hour; close a campaign only with a written reason; three dropped steps in a row with no new hypothesis is a red
+line for the owner, not a close. The 48-hour number is verified readings per dollar.
+
 ## Single orchestrator (27 Sept 2026, about 20:05 UTC, the owner's decision)
 
 From this line there is one orchestrator, on the owner account: this session and its successors. The other account has
