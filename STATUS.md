@@ -137,7 +137,13 @@ group. One worker at a time.
 - Job 1a NEV-C1 (Sonnet, session_01FNTyf87RnsHe2dCMP1YHKD, cap 6, box 45): f.178 calibration, brief
   .claude/briefs/runs/2026-09-27-lane-nev-owner-c1-calibrate-f178.md. Running. It writes tools/decode_witness.py
   (shared; the Ceppo-Nevers calibration on f.27 reuses it).
-- Next: on NEV-C1 PASS, NEV-C2 (Ceppo-Nevers on f.27, same design); then job 2. On FAIL, the failing part named
+- NEV-C1 DONE 5.77 D (get_session), ledgered, archived: FAIL at the plaintext read -- no legible clerk decipherment
+  (the tipped-in sheet at canvas 183 shows only bleed-through, confirmed by the orchestrator at native resolution,
+  mirrored); canvas = folio+3 at f.176-179 (not +1); no.87 cipher = f.178r last 2 lines, f.178v, f.179r first 3 lines.
+  tools/decode_witness.py exists with an offline test. Nevers-Birago calibration is pending: the sheet's written face
+  (an archive photograph) or a control-backed decode of the no.87 cipher passage.
+- f.27r = canvas 28 (ink '27' checked by eye by the orchestrator); short cipher passage (about 1.5 lines) mid-page.
+- Superseded plan line: on NEV-C1 PASS, NEV-C2 (Ceppo-Nevers on f.27, same design); then job 2. On FAIL, the failing part named
   by the worker decides the next step; no target work for that group.
 - Note for a successor: the Ceppo-Nevers key was reconstructed by Tomokiyo from BnF fr.4702, not fr.3251, so its
   f.27 calibration is an out-of-sample test; the Nevers-Birago key was built from f.178 itself (in-sample).

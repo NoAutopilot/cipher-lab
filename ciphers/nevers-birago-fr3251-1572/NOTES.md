@@ -153,3 +153,17 @@ connection-reset, retried once after a pause] and 2000px; canvas 180 at 1000px; 
 witness and searching for its decipherment (the brief's own predicted canvas was two folios off, see above)
 rather than on any target folio; logged here rather than hidden. Subagents: 2 (both read-only image review,
 no transcription committed as a reading). No hosts but gallica.bnf.fr; no credentials; no AskUserQuestion.
+
+### LANE NEV orchestrator follow-up on NEV-C1 (27 Sept 2026)
+
+Three gallica.bnf.fr requests, one at a time, 2 s apart: canvas 183 and canvas 184 at 1000 px, and canvas 183
+region pct:19,12,38,56 at native resolution (3092x3276). They were looked at directly, contrast-stretched and
+mirrored; scratch only, nothing committed. The tipped-in sheet's writing is on its far side. The photographed
+face shows only bleed-through, and even mirrored no word of it can be read with confidence. So this image cannot
+calibrate the key. Canvas 184 settles the extent of no.87: the letter ends on f.179v, "Da Saluzzo li 8 di settembre
+1572", signed Lodovico Birago. f.180r is blank apart from bleed-through. The cipher of no.87 runs over the last two
+lines of f.178r, all of f.178v and the first three lines of f.179r. The Nevers-Birago group has no legible witness on
+Gallica. Its calibration waits on (i) the sheet's written face (an archive photograph: a REQUEST.md item, not
+queued yet), or (ii) a control-backed decode of the no.87 cipher passage itself: the key of record against 20
+shuffled keys, with the language judge, run as a target-style test and labelled as such. LANE NEV runs the
+Ceppo-Nevers calibration (NEV-C2) first.
