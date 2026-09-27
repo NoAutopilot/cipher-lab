@@ -2872,10 +2872,10 @@
     },
     {
       "target": "fr3625-lauriere-1593",
-      "title": "Lauriere 1593: fr.3995 no.57 reads 4/12 gloss anchors vs shuffle max 2 (beats control, misses 6/12 gate); four other 1592-94 sheets cannot host the anchors (non-test)",
-      "next": "fr.3632 no.8 copy order (second glossed Lauriere letter) for more alignment anchors",
+      "title": "Lauriere 1593: fr.3995 no.57 reads 4/12 gloss anchors vs shuffle max 2 (beats control, misses 6/12 gate); four other 1592-94 sheets cannot host the anchors (non-test); LAU-F58 (27 Sept): key57 applied to its own positive control (fr.3985 f.58r) also GATE FAILs vs 20 shuffled-key controls (real -0.917 vs shuffle mean -0.945, max -0.907; judge FAIL) -- NX-LAU3's negative on no.55 is void, not confirmed",
+      "next": "fr.3632 no.8 copy order (second glossed Lauriere letter, ASKS 78) for more alignment anchors; or a higher-resolution re-crop of fr.3985 f.58r's own cipher-dense middle (LAU-F58's own weak link, 39.2%/31.7% cross-pass agreement)",
       "lane": "NX (closed) -> parent",
-      "touched": "26 Sept 2026 11:50"
+      "touched": "27 Sept 2026 18:39"
     },
     {
       "target": "fr4715-montholon-1589",

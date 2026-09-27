@@ -1,0 +1,34 @@
+=== LAU-F58: key57 applied to its own positive control (fr.3985 f58r) ===
+cipher-code tokens: 102, resolved by key57: 64, coverage=0.627 (non-gating)
+decoded letters (folded): 1712
+REAL decode: score=-0.917  null_p99=-1.897  real_p05=-0.877  judge=FAIL
+
+=== 20 SHUFFLED-KEY CONTROLS (key57's own meanings shuffled over its own codes) ===
+  shuffle 0: score=-0.912
+  shuffle 1: score=-0.946
+  shuffle 2: score=-0.962
+  shuffle 3: score=-0.969
+  shuffle 4: score=-0.942
+  shuffle 5: score=-0.929
+  shuffle 6: score=-0.933
+  shuffle 7: score=-0.907
+  shuffle 8: score=-0.931
+  shuffle 9: score=-0.941
+  shuffle 10: score=-0.919
+  shuffle 11: score=-0.949
+  shuffle 12: score=-0.973
+  shuffle 13: score=-0.955
+  shuffle 14: score=-0.987
+  shuffle 15: score=-0.926
+  shuffle 16: score=-0.942
+  shuffle 17: score=-0.973
+  shuffle 18: score=-0.961
+  shuffle 19: score=-0.933
+shuffle mean=-0.945  max=-0.907
+
+=== GATE ===
+real=-0.917  need judge PASS AND real above every shuffled score (max -0.907)
+GATE FAIL
+
+--- decoded text (real key57) ---
+12 Aoust 1593 Monseigneur Je ne faulx en deffendant de Senas a moitie monsieur de fresne sur ce que me commandastes adresser lequel me dit que monsieur Guy avoit dit quil luy envoyerois la clef dans mes mains parle avec ce dechiffrement mais que ses papiers estoient desja partis ils donneront a mons de Nevers pour Je me suis enquis auquel fil que avoit qui madit luy avoir les mis en main ce dechiffremet moy la lettre que Guy fauldroit qui mest demande me courre Quand aux autres quil y a quatre pour a vous en envoye fe fasse de pardons a monsieur de vous mandez en charge de mavoir fait Si le Saulueur au nom du Roy luy Renvoyez vous en tant mons de cest la force quil fault du en aygains parle Croys quil ferra forme enfin font du qui pourra le plus au lieu de Corby quil desire descripre mais de fault ou fait se qui na point fait qui le by fi estre qui de est amenable le by ci pour de ma ti sous quil luy est de plus dimportance madame me qui Roy de de regne de la religion soit de reste maison bi soit que re ma la adresse savoit et fauldroit saroudessus touchans mem voila pourquoy disent fust lartois le ti du me de le france jusques li mons ca la frinvubete mo le ou pourroit pourrir fa Loton instruit et poine bi ne me donne aucung sous soy acompte de la religion mo le de de nature defrans sont de na re de fi so ga ce de grains a ce voir fort tart la plupart a la conference je ne scay quel aussi baptesme se trouve fait plus enprestre la sera contente vous est grand premier et prouve doresenavant il est eu que nouvelle quil y a emonera ce te que fault ou fait laquelle buur de con de ns discours encores ce ne croys que puisse pour aller a nantz de ou est alle ce soir a sorlz ou doit appartenir voila monseigneur roy sa conference ce leur a addresse envoy pour ce reste des forte ce vous prie mander vosnnes dentes fraischeur en main ce mons de sanz orthonville certains les ayans faict fricz en hallroit que vous ferez le roy seroit ce vous pouviez asseurer fromez fut laffertoune mons de sanz mon oublye ne que le roy ce me sera a jamais monseigneur de poissy ce 12 aoust 1593 vre treshumble et tresobeissant serviteur

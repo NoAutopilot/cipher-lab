@@ -787,3 +787,157 @@ verify, never a fact.
 11. Cryptanalytic test design; after the positive control, apply the frozen key57 table to no.55, count only semantically constrained legible stretches beyond the twelve anchors, compare against other keys and a class-preserving shuffle, predeclare the score, require a held-out word-band match plus coherent syntax across runs (repository key57/key57.tsv, control_key57.py; NOTES.md "NX-LAU3"/"NX-LAU4"). unchecked.
 
 No lead names a printed decipherment or edition of no.55 itself, or the actual fr.55 key; leads 6 and 10 name the fr.3995 key family's word bank (no.57) as an untested comparator -- check-solved candidate for that word-bank angle, not for the target letter itself.
+
+## LAU-F58 (27 September 2026, parent worker LAU-F58)
+
+Brief `.claude/briefs/runs/2026-09-27-parent-ytbiz-lau-f58.md`. Second-opinion lead 10 (SO-LAURIERE-LEADS):
+apply candidate key57 to the letter Tomokiyo actually cites it for -- La Verriere to Nevers, Poissy, 12 Aug 1593,
+BnF fr.3985 fol.58 -- so NX-LAU3's 4/12 miss on fr.3625 no.55 can be read as a real key mismatch or as a void
+test (key57's own transcription/citation at fault). `date -u` at claim: 27 Sept 2026 18:14 UTC. Intake gate
+(`tools/intake_gate_check.py fr3625-lauriere-1593`): `open (line 1) -- edition/page or full-text-search citation
+found within 6 lines`, exit 0.
+
+### 1. Locating fol.58 (U1)
+
+`python3 tools/gallica_folio.py btv1b90606498 --folio 58`: 485 canvases, 0 labelled (same shape as fr.16092 --
+needs eye-checked anchors). Bisected by eye from canvas 120 (600px fetch): canvas 120 carries visible folio
+number "61" and is dated 12 Aoust 1593 but signed differently -- not the target, but useful as a second anchor.
+Canvas 114 (600px then 1200px fetch) carries: folio number "**58**" written top-right, dateline "**12 Aoust
+1593**" top-left, a mixed plaintext/cipher letter body, and a signature reading "**Laverriere**" with place/date
+"de Poissy ce 12 aoust 1593" above it -- matching Tomokiyo's citation exactly (La Verriere to Nevers, Poissy, 12
+Aug 1593). Canvas 115 (58v, the address exterior) shows show-through of "**A Monseigneur / Monseigneur le duc de
+Nevers**", confirming the addressee. `tools/gallica_folio.py btv1b90606498 --anchor 114=58r --anchor 115=58v
+--anchor 120=61r --folio 58`: least-squares fit `canvas = 2.000 * folio - 2.00`, **residuals 0.0 at all three
+anchors** -- canvas 114 = fol.58r, canvas 115 = fol.58v, canvas 120 = fol.61r, all exact. Outcome (d) (fol.58 is
+not the cited letter) is ruled out.
+
+### 2. Crops (U2)
+
+`python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out
+ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug`: region 3700x5100 (the recto's text
+block, deckle top margin and blank right margin excluded), 30 lines detected (row ink-profile, pitch 140,
+distance 98, prominence 180.8), 2 segments/line (60 crops, matching the f10r/f66r convention already in this
+folder), debug overlay checked by eye (`images/f58r_lines_debug.jpg`) -- bands track the visible lines well for
+the plaintext greeting/closing, though ascenders/interlinear insertions from neighbouring lines bleed into
+several bands in the cipher-dense middle (see below). `images/` stayed at 23 MB (under the 30 MB line).
+
+### 3. Two blind passes and reconciliation (U3/U4)
+
+Two independent Sonnet subagents, each given only the 60 crop paths (in line order) and key57's code inventory
+(numbers only, never meanings), asked for a `line pos sign marks conf` TSV: `key57/f58_passA.tsv`,
+`key57/f58_passB.tsv`.
+
+**The two passes' own line-numbering diverged from each other partway through the document** -- both read the
+same 30 crops in the same order and were told to label rows by the crop's own line number, but pass B split some
+crops' content across two of its own line labels (confirmed directly: true crop `f58r_L04` is one line, "dit
+quil luy envoyerois la clef dans mes mains parle avec ce dechiffrement mais" -- pass A's L04 in full, but pass B
+split it into its own L04 (stopping at "ma") and L05 (resuming "mains parlé...")), so pass B's line labels drift
+out of sync with the true crop numbers for a run of lines. Direct crop inspection at four checkpoints (L02, L03,
+L04, L12) confirmed **pass A's line labels track the true crops correctly** throughout (each spot-checked crop's
+content matches what pass A reported under that label); pass B does not, past L03. `tools/reconcile_passes.py`
+aligns strictly within matching line labels, so running it unmodified on these two files would silently
+misalign the cipher-dense region rather than surface real disagreements -- not used for this reason (logged here
+so a successor does not re-run it expecting a clean disagreements.tsv). Reconciliation instead used **pass A as
+the primary transcription (crop-verified)**, cross-checked by direct inspection of the source crops, with pass
+B's independently-read token values (matched by content, not label) as a secondary check on hard digits.
+
+**Coarse cross-pass agreement, computed directly (not through the tool, for the reason above):** of pass A's 102
+non-plaintext (cipher-code) tokens, a matching value appears somewhere in pass B's own 62 non-plaintext tokens
+for 40 of them (multiset intersection) = **39.2%**. Plaintext-word agreement (folded, set-level Jaccard over
+each pass's own words) = **31.7%** (349 words pass A, 226 pass B). Both numbers are low, consistent with both
+passes' own notes: both independently flagged the cipher-dense middle (roughly true lines 12-26) as running at
+confidence L throughout, with genuine uncertainty about which of several closely-spaced interlinear numeral rows
+a given digit belongs to. **This transcription is conditional (CLAUDE.md rule 2): the low pass-agreement means
+real transcription risk in the reconciled ciphertext (`key57/f58_ciphertext.tsv`, a copy of pass A) beyond
+key57.tsv's own risk (which had strong pass agreement on its anchor cells, per NX-LAU3).** A higher-resolution
+or adaptively-split re-crop of the dense middle (this leaf's numerals sit closer together than the plaintext
+lines, denser than the row-ink-profile detector's single global pitch assumes) is the named next step if this
+test is revisited.
+
+### 4. The test (U5), pre-registered before running
+
+Gate, written before running: apply key57 (`key57/key57.tsv`'s numeral pool, 104 entries) to
+`key57/f58_ciphertext.tsv`; score the decoded French with `tools/judge_plaintext.py`'s French corpus **directly**
+(no `specs/fr3625-lauriere-1593.json` exists for this target, so the `fr` code's corpus -- fr16, Sainte-Catherine
+de Sienne's Lettere, 16th-c. -- was used without writing a spec, per the brief); gate against 20 controls where
+key57's meanings are shuffled over its own codes (same construction as NX-LAU3's own control, so coverage cannot
+be the statistic under test -- rule 3); real must beat every one of the 20 AND the judge itself must PASS.
+Implemented as `control_key57.py --apply-f58 key57/f58_ciphertext.tsv --seeds 20` (extends the existing script,
+no new private script; running it with no arguments still reproduces NX-LAU3's original anchor gate unchanged,
+checked this session). Coverage (non-gating): of 102 cipher-code tokens, key57 resolves **64 (62.7%)** -- the
+other 38 are codes outside key57's own partial 104-entry transcription (key57.tsv covers the syllable/double
+bands fully but only samples the word bank).
+
+```
+=== LAU-F58: key57 applied to its own positive control (fr.3985 f58r) ===
+cipher-code tokens: 102, resolved by key57: 64, coverage=0.627 (non-gating)
+decoded letters (folded): 1712
+REAL decode: score=-0.917  null_p99=-1.897  real_p05=-0.877  judge=FAIL
+
+=== 20 SHUFFLED-KEY CONTROLS (key57's own meanings shuffled over its own codes) ===
+shuffle scores: -0.912 -0.946 -0.962 -0.969 -0.942 -0.929 -0.933 -0.907 -0.931 -0.941
+                -0.919 -0.949 -0.973 -0.955 -0.987 -0.926 -0.942 -0.973 -0.961 -0.933
+shuffle mean=-0.945  max=-0.907
+
+=== GATE ===
+real=-0.917  need judge PASS AND real above every shuffled score (max -0.907)
+GATE FAIL
+```
+
+Full output and the decoded text: `key57/f58_gate_output.txt`. Real (-0.917) sits inside the shuffled-key
+distribution (13 of 20 shuffles score worse than real, 7 score better, including the max at -0.907) -- not a
+below-chance result, but not a detectable real-key signal either; the judge itself also FAILs the real decode
+against fr16's real-text p05 threshold. **GATE FAIL.**
+
+A likely reason this design has weak power regardless of whether key57 is right: the decoded text's plaintext
+backbone (roughly 349 of ~450 tokens are already-legible French prose, untouched by the key) dominates the
+overall language-model score; only 64 of 1712 folded letters come from key57-resolved words, which is not much
+signal for a whole-letter judge score to detect against. A future re-test with more power would score only the
+keyed-word spans (or a word-level crib/syntax check on just the resolved codes), not the whole letter.
+
+### 5. Reading the result -- outcome (b)
+
+Per the brief's outcome menu: (d) is ruled out (fol.58 *is* the cited letter, section 1); (c) does not apply by
+the brief's own letter (102 cipher-code tokens is well above the 60-token floor, and the fr16 corpus exists) even
+though many of those tokens are individually low-confidence; (a) is not met (GATE FAIL). That leaves **(b): the
+gate missed, and NX-LAU3's 4/12 negative on fr.3625 no.55 is void (untested-by-this-key-transcription) rather
+than a confirmed key mismatch** -- key57 does not read its own citer's letter above a shuffled-key control
+either, so the earlier test never had a working key to compare fr.3625 against in the first place.
+
+**Caveat the brief's own outcome menu does not distinguish, stated honestly:** this GATE FAIL has two possible
+sources that this session cannot separate: (i) key57.tsv's own transcription (NX-LAU3, 26 Sept) is imperfect
+beyond its 12 gloss-anchor cells, which happened to have strong pass agreement but cover only ~30% of the codes
+this test actually needed; or (ii) *this session's own* transcription of fr.3985 f.58r is the noisier link (39.2%
+/ 31.7% cross-pass agreement, section 3) and a cleaner re-crop could change the result. Both are real key57
+positive-control failures either way -- the point of testing key57 against its own citer's letter was exactly to
+check whether key57 is a working key at all, and on the evidence gathered this session it is not detectably one
+-- but a successor should not read this as ruling out key57 specifically because of key57.tsv's own fidelity;
+the newer transcription (this session's f.58r read) carries at least as much of the risk.
+
+Per the brief: NX-LAU3's negative on fr.3625 no.55 is void, not confirmed. The NEAR.md next step moves to the
+fr.3632 no.8 image (an owner-side BnF item, batched into ASKS 78) rather than more work on key57 -- a second
+transcription pass of key57.tsv itself (this test's stated fallback for outcome (b)) is a live option too, but
+given the caveat above, a **higher-resolution/adaptive re-crop of fr.3985 f.58r's own dense middle section**
+(this session's own weak link) is at least as promising and cheaper than a fresh key-table pass.
+
+### 6. fol.58r reading, per token (rule 4)
+
+No novelty claim (rule 10 -- "report what was found and where it was not found; do not classify novelty," per
+the brief). Grades: every cipher-code -> word mapping used here is grade **S** (cryptanalytic, from the untested
+candidate key57, gate not met -- reported as a FAIL per rule 7's "a FAIL may still be reported"), never H or C;
+every token's underlying sign is grade **M** (this session's own blind-pass reconciliation, uncertain --
+39.2%/31.7% cross-pass agreement, section 3) except the plaintext prose (grade **M**, legible but not
+cross-checked against a printed edition). No H or C grade token on this leaf this session. Full per-token table:
+`key57/f58_ciphertext.tsv` (pass A, the crop-verified primary read) and `key57/f58_passB.tsv` (the secondary
+read) side by side; the decoded candidate (grade S throughout, gate FAIL) is in `key57/f58_gate_output.txt`.
+
+Requests this session: gallica.bnf.fr 6 (manifest fetch via `tools/gallica_folio.py` served from the pre-existing
+cache, sources/gallica-manifests/btv1b90606498.json, 0 new requests; 4 direct 600-1200px bisection fetches for
+canvases 120, 114, 115, and a 1200px re-fetch of 114, all HTTP 200; 2 native-region fetches via
+`tools/iiif_lines.py` for canvas 114's text block while widening the region to include the full signature block,
+both HTTP 200), all 1.5s+ apart, descriptive User-Agent, no 429/403/challenge, well under the 40-request cap. 2
+Sonnet subagents (the two blind transcription passes, one call each, per this brief's U3).
+
+Credit: S. Tomokiyo, "Catalogue of Ciphers (Mainly Related to Duke of Nevers) in BnF fr.3995"
+(cryptiana.web.fc2.com/code/nevers.htm) for the no.57 catalogue entry, the fol.58 citation, and the correspondent
+identification tested here. Status unchanged: `open`.

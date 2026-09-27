@@ -13,8 +13,19 @@ codes (the numeral table separately from the name-symbol table, since they
 are two structurally different lists on the same sheet), same statistic
 recomputed each time. Reports mean, p99, max, so the real count can be
 compared against chance.
+
+LAU-F58 (27 Sept 2026) extension: apply this same key57 pool to key57's own
+POSITIVE-CONTROL letter (BnF fr.3985 fol.58r, La Verriere to Nevers, Poissy,
+12 Aug 1593 -- the letter Tomokiyo says key57 was actually used on), score the
+decode with tools/judge_plaintext.py's fr (fr16) corpus directly (no spec on
+disk for this target), and gate against 20 shuffled-key controls (key57's own
+meanings shuffled over its own codes -- same construction as the anchor gate
+above, so coverage cannot be the statistic, rule 3). Run with:
+    python3 control_key57.py --apply-f58 f58_ciphertext.tsv [--seeds 20]
+No arguments reproduces the original NX-LAU3 anchor gate unchanged (rule 7).
 """
-import random
+import argparse, csv, random, sys
+from pathlib import Path
 
 random.seed(20260926)
 
@@ -112,43 +123,147 @@ def score_numeral(pool):
             hits += 1
     return hits, detail
 
-# --- real statistic ---
-real_numeral_hits, real_detail = score_numeral(NUMERAL_POOL)
-real_XX = 1  # key57's XX = "le pape ou sa saincteté" -- exact match, both transcription passes agree
-real_que_mark = 0  # no plain "X"/cross assigned to "que" found anywhere on the sheet (f201 full-page read, confirmed by the independent blind pass)
-real_total = real_numeral_hits + real_XX + real_que_mark
+def anchor_gate():
+    """The original NX-LAU3 known-answer gate (26 Sept 2026), unchanged."""
+    real_numeral_hits, real_detail = score_numeral(NUMERAL_POOL)
+    real_XX = 1  # key57's XX = "le pape ou sa saincteté" -- exact match, both transcription passes agree
+    real_que_mark = 0  # no plain "X"/cross assigned to "que" found anywhere on the sheet (f201 full-page read, confirmed by the independent blind pass)
+    real_total = real_numeral_hits + real_XX + real_que_mark
 
-print("=== REAL (unshuffled key57) ===")
-for label, ok in real_detail.items():
-    print(f"  {label}: {'MATCH' if ok else 'mismatch'}")
-print(f"  XX (pape): MATCH")
-print(f"  que-mark (✗): not present in key57 -- mismatch by construction")
-print(f"REAL TOTAL: {real_total} / 12")
-print()
+    print("=== REAL (unshuffled key57) ===")
+    for label, ok in real_detail.items():
+        print(f"  {label}: {'MATCH' if ok else 'mismatch'}")
+    print(f"  XX (pape): MATCH")
+    print(f"  que-mark (✗): not present in key57 -- mismatch by construction")
+    print(f"REAL TOTAL: {real_total} / 12")
+    print()
 
-# --- shuffle control ---
-codes = list(NUMERAL_POOL.keys())
-meanings = list(NUMERAL_POOL.values())
-N_SHUFFLES = 1000
-totals = []
-for i in range(N_SHUFFLES):
-    shuffled_meanings = meanings[:]
-    random.shuffle(shuffled_meanings)
-    shuffled_pool = dict(zip(codes, shuffled_meanings))
-    numeral_hits, _ = score_numeral(shuffled_pool)
-    xx_hit = 1 if random.randrange(N_SYMBOL_TABLE) == 0 else 0
-    que_hit = 0  # the que-mark has no cell in either table under any permutation
-    totals.append(numeral_hits + xx_hit + que_hit)
+    # --- shuffle control ---
+    codes = list(NUMERAL_POOL.keys())
+    meanings = list(NUMERAL_POOL.values())
+    N_SHUFFLES = 1000
+    totals = []
+    for i in range(N_SHUFFLES):
+        shuffled_meanings = meanings[:]
+        random.shuffle(shuffled_meanings)
+        shuffled_pool = dict(zip(codes, shuffled_meanings))
+        numeral_hits, _ = score_numeral(shuffled_pool)
+        xx_hit = 1 if random.randrange(N_SYMBOL_TABLE) == 0 else 0
+        que_hit = 0  # the que-mark has no cell in either table under any permutation
+        totals.append(numeral_hits + xx_hit + que_hit)
 
-totals.sort()
-mean = sum(totals) / len(totals)
-p99 = totals[int(0.99 * len(totals)) - 1]
-mx = totals[-1]
+    totals.sort()
+    mean = sum(totals) / len(totals)
+    p99 = totals[int(0.99 * len(totals)) - 1]
+    mx = totals[-1]
 
-print("=== SHUFFLE CONTROL (1000 shuffles of key57's own meanings over its own codes) ===")
-print(f"mean={mean:.3f}  p99={p99}  max={mx}")
-print()
-print("=== GATE ===")
-print(f"target={real_total}  need >=6 AND above shuffle max ({mx})")
-gate_pass = real_total >= 6 and real_total > mx
-print("GATE PASS" if gate_pass else "GATE FAIL")
+    print("=== SHUFFLE CONTROL (1000 shuffles of key57's own meanings over its own codes) ===")
+    print(f"mean={mean:.3f}  p99={p99}  max={mx}")
+    print()
+    print("=== GATE ===")
+    print(f"target={real_total}  need >=6 AND above shuffle max ({mx})")
+    gate_pass = real_total >= 6 and real_total > mx
+    print("GATE PASS" if gate_pass else "GATE FAIL")
+    return gate_pass
+
+
+def load_ciphertext(path):
+    """Read a reconciled ciphertext.tsv (line, pos, sign, marks, conf) in reading order."""
+    rows = []
+    with open(path, newline="") as f:
+        for row in csv.DictReader(f, delimiter="\t"):
+            rows.append(row)
+    return rows
+
+
+def decode(rows, pool):
+    """Decode rows against pool: plaintext tokens pass through; a sign present in
+    pool is replaced by its meaning; a sign absent from pool is dropped (not
+    forced to a placeholder, so the judge scores only what this key actually
+    resolves). Returns (text, n_cipher_tokens, n_resolved)."""
+    words = []
+    n_cipher, n_resolved = 0, 0
+    for row in rows:
+        s = row["sign"]
+        if s.startswith("[PLAIN:") and s.endswith("]"):
+            words.append(s[7:-1])
+            continue
+        n_cipher += 1
+        try:
+            code = int(s)
+        except ValueError:
+            continue  # a bare symbol (XX, ✗, G...) -- key57's numeral pool has no such entry
+        if code in pool:
+            n_resolved += 1
+            words.append(pool[code])
+    return " ".join(words), n_cipher, n_resolved
+
+
+def apply_f58(ciphertext_path, seeds=20):
+    """LAU-F58: apply key57 to its own positive-control letter (fr.3985 f58r),
+    score against tools/judge_plaintext.py's fr16 corpus, gate against `seeds`
+    shuffled-key controls (key57's own meanings shuffled over its own codes)."""
+    sys.path.insert(0, str(Path(__file__).resolve().parents[3] / "tools"))
+    import judge_plaintext as jp
+
+    rows = load_ciphertext(ciphertext_path)
+    real_text, n_cipher, n_resolved = decode(rows, NUMERAL_POOL)
+    coverage = n_resolved / n_cipher if n_cipher else 0.0
+
+    spec = {"judge": {"language": "fr"}}
+    real_result = jp.judge(spec, real_text)
+    real_lang = real_result["checks"]["language"]
+    real_score = real_lang["score"]
+    real_pass = real_lang["pass"]
+
+    print("=== LAU-F58: key57 applied to its own positive control (fr.3985 f58r) ===")
+    print(f"cipher-code tokens: {n_cipher}, resolved by key57: {n_resolved}, coverage={coverage:.3f} (non-gating)")
+    print(f"decoded letters (folded): {len(jp.fold(real_text))}")
+    print(f"REAL decode: score={real_score:.3f}  null_p99={real_lang['null_p99']:.3f}  "
+          f"real_p05={real_lang['real_p05']:.3f}  judge={'PASS' if real_pass else 'FAIL'}")
+    print()
+
+    codes = list(NUMERAL_POOL.keys())
+    meanings = list(NUMERAL_POOL.values())
+    shuffle_texts = []
+    for i in range(seeds):
+        rnd = random.Random(20260927000 + i)
+        shuffled_meanings = meanings[:]
+        rnd.shuffle(shuffled_meanings)
+        shuffled_pool = dict(zip(codes, shuffled_meanings))
+        s_text, _, _ = decode(rows, shuffled_pool)
+        shuffle_texts.append(s_text)
+
+    # build the fr16 model once (avoid rebuilding it `seeds` times) and score every shuffled decode with it
+    model = jp.NgramModel([jp.read_corpus(p) for p in jp.LANG_CORPORA["fr"]])
+    shuffle_scores = [model.score(t) for t in shuffle_texts]
+
+    print(f"=== {seeds} SHUFFLED-KEY CONTROLS (key57's own meanings shuffled over its own codes) ===")
+    for i, sc in enumerate(shuffle_scores):
+        print(f"  shuffle {i}: score={sc:.3f}")
+    shuffle_max = max(shuffle_scores)
+    shuffle_mean = sum(shuffle_scores) / len(shuffle_scores)
+    print(f"shuffle mean={shuffle_mean:.3f}  max={shuffle_max:.3f}")
+    print()
+
+    gate_pass = real_pass and all(real_score > sc for sc in shuffle_scores)
+    print("=== GATE ===")
+    print(f"real={real_score:.3f}  need judge PASS AND real above every shuffled score (max {shuffle_max:.3f})")
+    print("GATE PASS" if gate_pass else "GATE FAIL")
+    print()
+    print("--- decoded text (real key57) ---")
+    print(real_text)
+    return gate_pass
+
+
+if __name__ == "__main__":
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--apply-f58", metavar="CIPHERTEXT_TSV",
+                     help="LAU-F58 mode: decode this ciphertext with key57 and gate against shuffled-key controls")
+    ap.add_argument("--seeds", type=int, default=20)
+    args = ap.parse_args()
+    if args.apply_f58:
+        ok = apply_f58(args.apply_f58, seeds=args.seeds)
+    else:
+        ok = anchor_gate()
+    sys.exit(0 if ok else 1)
