@@ -54,6 +54,22 @@ def main():
     assert key3['x']['meaning'] == 'c', key3['x']
     assert key3['1']['meaning'] == 't', key3['1']
     assert key3['4']['meaning'] == 'o', key3['4']
+
+    # --wildcard / --null-cost (27 Sept 2026, fr4715-f61 H11): a markup with one character per sign, dashes
+    # for unread signs. Code @n is always dashed (a null); @c/@a/@t carry letters. With the dashes kept as
+    # wildcards and nulls free, @n takes only dashes (no meaning row) and @t reads t in all three lines.
+    wc_pairs = [
+        ['1', '-ca-t', '1', '@n @c @a @n @t'],
+        ['2', 'ta-c-', '2', '@t @a @n @c @n'],
+        ['3', '-a-t-c', '3', '@n @a @n @t @n @c'],
+    ]
+    key4 = run(wc_pairs, '--code-prefix', '@', '--wildcard', '-', '--null-cost', '0')
+    assert 'n' not in key4, key4.get('n')
+    assert key4['t']['meaning'] == 't' and int(key4['t']['agree']) == 3, key4['t']
+    assert key4['c']['meaning'] == 'c' and int(key4['c']['agree']) == 3, key4['c']
+    # the Thurloe default (dashes stripped, null -3) mis-assigns at least one of these codes
+    key5 = run(wc_pairs, '--code-prefix', '@')
+    assert 'n' in key5 or key5['t']['meaning'] != 't' or key5['c']['meaning'] != 'c', key5
     print('ok')
 
 

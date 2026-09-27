@@ -69,17 +69,18 @@ def load_spans():
 # five folds: S4a+S4b (L07, L08) are one span, Tomokiyo's 'jalousie au beau-pere'
 FOLDS = [("S1",), ("S2",), ("S3",), ("S4a", "S4b"), ("S5",)]
 
-def fit(train, lines, tag):
-    """class -> Counter(letter) from tools/interlinear_align.py on the training spans."""
+def fit(train, lines, tag, opts=(), keep_dashes=False):
+    """class -> Counter(letter) from tools/interlinear_align.py on the training spans.
+    opts/keep_dashes: extra tool options (f61crib2.py, H11: --wildcard - --null-cost X); H1 itself passes none."""
     d = tempfile.mkdtemp(prefix=f"f61crib_{tag}_")
     pairs = f"{d}/pairs.tsv"
     with open(pairs, "w") as f:
         w = csv.writer(f, delimiter="\t", lineterminator="\n")
         w.writerow(["plain_line", "plain_raw", "cipher_line", "cipher_raw"])
         for s, line, markup in train:
-            w.writerow([s, markup.replace("-", ""), line, " ".join("@" + c for c in lines[line])])
+            w.writerow([s, markup if keep_dashes else markup.replace("-", ""), line, " ".join("@" + c for c in lines[line])])
     out_a, out_k = f"{d}/align.tsv", f"{d}/key.tsv"
-    subprocess.run([sys.executable, TOOL, "align", pairs, out_a, out_k, "--code-prefix", "@"],
+    subprocess.run([sys.executable, TOOL, "align", pairs, out_a, out_k, "--code-prefix", "@", *opts],
                    check=True, capture_output=True)
     counts = defaultdict(Counter)
     for r in csv.DictReader(open(out_k), delimiter="\t"):
@@ -176,4 +177,5 @@ def main():
         ok = os.path.exists(res) and open(res).read() == txt
         print("fresh" if ok else "STALE"); sys.exit(0 if ok else 1)
     open(res, "w").write(txt); print(txt, end="")
-main()
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,24 @@
+reader file: read_call_A.tsv (marks column only); fit: tools/interlinear_align.py --code-prefix @ --wildcard - --null-cost X; score: f61cal.py DP
+main run (pre-registered): null-cost -1
+  null-cost -1	held-out S1	matched 3/4	shuffled max 2/4 mean 1.60	map 4PI=n 4TRI=pc C43=an C6=a CA=am DBL=ob EBR=le INF=u LOOPBAR=a PHI=er VBAR=ts ZHOOK=ij
+  null-cost -1	held-out S2	matched 9/10	shuffled max 6/10 mean 2.85	map 4PI=cn 4TRI=pc C43=an C6=a CA=am DBL=ob EBR=l HASH4=e INF=u PHI=er VBAR=ts ZHOOK=ij
+  null-cost -1	held-out S3	matched 8/12	shuffled max 6/12 mean 3.15	map 4PI=cn 4TRI=pc C43=ab CA=am DBL=bl EBR=le HASH4=e INF=u LOOPBAR=a PHI=eo VBAR=ts ZHOOK=ij
+  null-cost -1	held-out S4a+S4b	matched 9/18	shuffled max 10/18 mean 5.35	map 4PI=cn 4TRI=co C43=na C6=a CA=mp DBL=lo EBR=el HASH4=e INF=a LOOPBAR=a PHI=e VBAR=ts ZHOOK=i
+  null-cost -1	held-out S5	matched 7/11	shuffled max 5/11 mean 2.60	map 4PI=c 4TRI=cp C43=ab C6=a CA=ap DBL=bl EBR=el HASH4=e INF=u LOOPBAR=a PHI=eo VBAR=st ZHOOK=ij
+null-cost -1: POOLED held-out 36/55 = 0.655; controls mean 0.283 max 0.400; fold-stable sets: no PHI=e|eo|er C43=ab|an 4TRI=co|cp VBAR=st DBL=bl|bo|lo INF=a|u
+controls (20 shuffled class-maps pooled across folds, seed 1): 0.236 0.236 0.273 0.291 0.364 0.273 0.200 0.364 0.236 0.255 0.255 0.255 0.255 0.273 0.255 0.400 0.327 0.236 0.364 0.309
+GATE H11 (a) pooled above every shuffle: PASS; (b) six classes fold-stable: FAIL; H11 FAIL  (H1 was 24/55 = 0.436 vs max 0.345, unstable)
+sensitivity (non-gating): null-cost 0 and -3, dashes kept
+  null-cost 0	held-out S1	matched 3/4	shuffled max 2/4 mean 1.25	map 4PI=n 4TRI=cp C43=an C6=p CA=a DBL=bo EBR=l INF=u PHI=er VBAR=ts ZHOOK=ij
+  null-cost 0	held-out S2	matched 9/10	shuffled max 6/10 mean 2.90	map 4PI=cn 4TRI=pc C43=na C6=a CA=a DBL=ob EBR=l HASH4=e INF=u PHI=er VBAR=ts ZHOOK=ij
+  null-cost 0	held-out S3	matched 10/12	shuffled max 5/12 mean 2.70	map 4PI=cn 4TRI=pc C43=an CA=a DBL=bo EBR=l HASH4=e INF=u PHI=eo VBAR=ts ZHOOK=ij
+  null-cost 0	held-out S4a+S4b	matched 4/18	shuffled max 7/18 mean 3.10	map 4PI=c 4STEM=n C43=bo C6=p DBL=lo EBR=e HASH4=e INF=r LL=v LOOPBAR=p PHI=a VBAR=tv ZHOOK=i
+  null-cost 0	held-out S5	matched 7/11	shuffled max 6/11 mean 2.85	map 4PI=c 4TRI=cp C43=ab C6=a CA=a DBL=bl EBR=el HASH4=e INF=u PHI=eo VBAR=st ZHOOK=ij
+null-cost 0: POOLED held-out 33/55 = 0.600; controls mean 0.233 max 0.309; fold-stable sets: no PHI=a|eo|er C43=ab|an|bo 4TRI=|cp VBAR=st|tv DBL=bl|bo|lo INF=r|u
+  null-cost -3	held-out S1	matched 3/4	shuffled max 2/4 mean 1.60	map 4PI=n 4TRI=pc C43=an C6=a CA=am DBL=ob EBR=le INF=u LOOPBAR=a PHI=er VBAR=ts ZHOOK=ij
+  null-cost -3	held-out S2	matched 9/10	shuffled max 6/10 mean 2.85	map 4PI=cn 4TRI=pc C43=an C6=a CA=am DBL=ob EBR=l HASH4=e INF=u PHI=er VBAR=ts ZHOOK=ij
+  null-cost -3	held-out S3	matched 8/12	shuffled max 6/12 mean 3.15	map 4PI=cn 4TRI=pc C43=ab CA=am DBL=bl EBR=le HASH4=e INF=u LOOPBAR=a PHI=eo VBAR=ts ZHOOK=ij
+  null-cost -3	held-out S4a+S4b	matched 9/18	shuffled max 10/18 mean 5.35	map 4PI=cn 4TRI=co C43=na C6=a CA=mp DBL=lo EBR=el HASH4=e INF=a LOOPBAR=a PHI=et VBAR=ts ZHOOK=i
+  null-cost -3	held-out S5	matched 7/11	shuffled max 5/11 mean 2.60	map 4PI=c 4TRI=cp C43=ab C6=a CA=ap DBL=bl EBR=el HASH4=e INF=ua LOOPBAR=a PHI=eo VBAR=st ZHOOK=ij
+null-cost -3: POOLED held-out 36/55 = 0.655; controls mean 0.283 max 0.400; fold-stable sets: no PHI=eo|er|et C43=ab|an 4TRI=co|cp VBAR=st DBL=bl|bo|lo INF=a|au|u
+map on all five spans (null-cost -1) -> scripts/f61crib2_map.tsv

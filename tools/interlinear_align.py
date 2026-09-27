@@ -45,6 +45,15 @@ prefix is a literal clear word already printed in the cipher line (Portuguese ab
 plain letters, like a below-floor Thurloe numeral) regardless of its value -- there is no
 above-floor word-code class in this mode. --prior with --code-prefix seeds every code (not only
 digit-named ones) whose meaning is a single letter, ignoring --floor entirely (moot in this mode).
+
+--null-cost X and --wildcard C (27 Sept 2026, campaign fr4715-f61-mayenne-1592 step H11): for an interlinear
+markup over a cipher whose sign classes are largely nulls (Mayenne's polyphonic table: about 40% of f.61's signs
+are dashed by Tomokiyo). The Thurloe default charges -3.0 for a code that takes no plain letter, which pushes
+letters onto null codes when the plain line is shorter than the cipher line; --null-cost sets that charge
+(0 = free). --wildcard C keeps the character C of the plain line as an explicit "sign here, unread" position:
+a code may take it as its one-character chunk at score 0 (no prior bonus, no prior miss), it is never counted
+as evidence for the code's meaning, and it never joins a longer chunk. Without --wildcard every non-letter is
+stripped from the plain line as before.
 """
 import csv
 import itertools
@@ -143,13 +152,13 @@ def candidates(tok):
     return sorted(out)
 
 
-def plain_letters(raw):
+def plain_letters(raw, wildcard=None):
     """letters of the plain line (lowercase, 1 -> l) with a flag per letter for
-    'starts an OCR segment' and 'ends an OCR segment'."""
+    'starts an OCR segment' and 'ends an OCR segment'. --wildcard C keeps C as a position."""
     letters, starts, ends = [], [], []
     for seg in raw.split():
         seg = seg.lower().replace('1', 'l').replace('&', 'ct')
-        seg = re.sub(r'[^a-z]', '', seg)
+        seg = re.sub(r'[^a-z' + (re.escape(wildcard) if wildcard else '') + r']', '', seg)
         for k, ch in enumerate(seg):
             letters.append(ch)
             starts.append(k == 0)
@@ -157,7 +166,7 @@ def plain_letters(raw):
     return ''.join(letters), starts, ends
 
 
-def align_pair(toks, letters, starts, ends, floor, prior, clear_words=None):
+def align_pair(toks, letters, starts, ends, floor, prior, clear_words=None, null_cost=-3.0, wildcard=None):
     """DP; returns list of chunks (one per token) or None for tokens left unaligned.
     clear_words (--clear-consumes): per token, the letters of a clear word written in the
     cipher line, which then takes its own span of the plain line instead of none."""
@@ -198,7 +207,11 @@ def align_pair(toks, letters, starts, ends, floor, prior, clear_words=None):
                     break
                 sc = -0.5
                 if ln == 0:
-                    sc = (-1.0 - len(cw) if cw else 0.0) if kind == 'clear' else -3.0
+                    sc = (-1.0 - len(cw) if cw else 0.0) if kind == 'clear' else null_cost
+                elif wildcard and wildcard in letters[j:j + ln]:
+                    if ln > 1 or kind == 'clear':
+                        continue                      # a wildcard never joins a longer chunk
+                    sc = 0.0                          # an unread position: no evidence either way
                 elif kind == 'clear':
                     ch = fold(letters[j:j + ln])
                     same = sum(a == b for a, b in zip(ch, fold(cw)))
@@ -256,12 +269,13 @@ def load_prior(path, floor, code_mode=False):
     return prior
 
 
-def run_align(pairs, floor=100, iters=6, clear_consumes=False, prior=None, code_prefix=None):
+def run_align(pairs, floor=100, iters=6, clear_consumes=False, prior=None, code_prefix=None,
+              null_cost=-3.0, wildcard=None):
     prepared = []
     for p in pairs:
         raw = p['cipher_raw'].split()
         toks = [classify_token(t, code_prefix) for t in raw]
-        letters, starts, ends = plain_letters(p['plain_raw'])
+        letters, starts, ends = plain_letters(p['plain_raw'], wildcard)
         cws = None
         if clear_consumes:
             cws = [plain_letters(t)[0] if k == 'clear' else '' for t, (k, _) in zip(raw, toks)]
@@ -272,10 +286,10 @@ def run_align(pairs, floor=100, iters=6, clear_consumes=False, prior=None, code_
         shown = defaultdict(Counter)
         results = []
         for p, raw, toks, letters, starts, ends, cws in prepared:
-            chunks = align_pair(toks, letters, starts, ends, floor, prior, cws)
+            chunks = align_pair(toks, letters, starts, ends, floor, prior, cws, null_cost, wildcard)
             results.append(chunks)
             for (kind, val), c in zip(toks, chunks):
-                if kind in ('num', 'code') and c and c[1] > c[0]:
+                if kind in ('num', 'code') and c and c[1] > c[0] and not (wildcard and wildcard in letters[c[0]:c[1]]):
                     counts[val][fold(letters[c[0]:c[1]])] += 1
                     shown[(val, fold(letters[c[0]:c[1]]))][letters[c[0]:c[1]]] += 1
         prior = counts
@@ -331,10 +345,12 @@ def token_rows(prepared, results, counts, shown):
     return rows
 
 
-def cmd_align(pairs_path, out_align, out_key, floor=100, clear_consumes=False, prior_path=None, code_prefix=None):
+def cmd_align(pairs_path, out_align, out_key, floor=100, clear_consumes=False, prior_path=None, code_prefix=None,
+              null_cost=-3.0, wildcard=None):
     prior = load_prior(prior_path, floor, code_mode=code_prefix is not None) if prior_path else None
     prepared, results, counts, shown = run_align(load_pairs(pairs_path), floor, clear_consumes=clear_consumes,
-                                                 prior=prior, code_prefix=code_prefix)
+                                                 prior=prior, code_prefix=code_prefix, null_cost=null_cost,
+                                                 wildcard=wildcard)
     rows = token_rows(prepared, results, counts, shown)
     with open(out_align, 'w', encoding='utf-8', newline='') as f:
         w = csv.writer(f, delimiter='\t', lineterminator='\n')
@@ -375,6 +391,15 @@ if __name__ == '__main__':
             k = a.index('--code-prefix')
             code_prefix = a[k + 1]
             del a[k:k + 2]
-        cmd_align(a[1], a[2], a[3], floor, cc, prior_path, code_prefix)
+        null_cost, wildcard = -3.0, None
+        if '--null-cost' in a:
+            k = a.index('--null-cost')
+            null_cost = float(a[k + 1])
+            del a[k:k + 2]
+        if '--wildcard' in a:
+            k = a.index('--wildcard')
+            wildcard = a[k + 1]
+            del a[k:k + 2]
+        cmd_align(a[1], a[2], a[3], floor, cc, prior_path, code_prefix, null_cost, wildcard)
     else:
         sys.exit(__doc__)

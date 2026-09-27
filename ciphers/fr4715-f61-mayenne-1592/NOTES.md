@@ -324,3 +324,56 @@ the 55 reference letters stays H-for-this-test only (Tomokiyo's own "Solution In
 Files: `scripts/f61crib.py`, `scripts/f61crib_result.txt`, `scripts/f61crib_map.tsv`; HYPOTHESES.md row added. Requests:
 none. No credentials, no AskUserQuestion, no novelty wording; the owner not named.
 
+## Campaign step H11 (2026-09-27 22:50 UTC)
+
+Campaign runner (Fable, session_01UgTmQhR7wFtVFrTVdtsq9i), script-only, no subagent or vision call, no network. Hypothesis
+H11 (F61-CRIB2): H1's class map refitted with a null-aware alignment, dashes kept.
+
+**Tool change (CLAUDE.md Usage item 8: an option on the shared tool, not a private copy).** `tools/interlinear_align.py`
+gained `--null-cost X` (the charge for a code that takes no plain letter; the Thurloe default -3.0 stays the default) and
+`--wildcard C` (a plain-line character kept as an explicit "sign here, unread" position: a code may take it at score 0,
+it never counts as evidence and never joins a longer chunk). `tools/tests/test_interlinear_align.py` has a new case: a
+three-line markup with dashed nulls, where the new options recover the three letter codes at agreement 3/3 and leave
+the null code without a meaning row, and the Thurloe default does not; the existing cases still pass.
+`tools/system_map_check.py` ok.
+
+**Method (`scripts/f61crib2.py`, importing `scripts/f61crib.py`'s classes, folds, DP and controls; `--check`).** Same 19
+classes, same leave-one-span-out, same scoring DP, same 20 shuffled class-maps (seed 1). The fit passes the markup with
+its dashes to the tool with `--code-prefix @ --wildcard - --null-cost -1` (pre-registered main run); sensitivity at
+null-cost 0 and -3, non-gating. Gate, two parts: (a) pooled held-out above every shuffled value; (b) the top-2 sets of
+PHI, C43, 4TRI, VBAR, DBL and INF identical in all five folds. One implementation fix before the result was written:
+the stability check first compared value sets as count-ordered strings ("cp" vs "pc"); corrected to compare as sets.
+Both versions fail (b).
+
+**Result (`scripts/f61crib2_result.txt`).**
+
+| held-out span | matched / letters | shuffled max (mean) | fitted set for PHI, C43, 4TRI, VBAR, DBL, INF |
+|---|---|---|---|
+| S1 avec (L01) | 3/4 | 2/4 (1.60) | er, an, pc, ts, ob, u |
+| S2 est capable (L03) | 9/10 | 6/10 (2.85) | er, an, pc, ts, ob, u |
+| S3 trop avancees (L05) | 8/12 | 6/12 (3.15) | eo, ab, pc, ts, bl, u |
+| S4 jalousie au beau-pere (L07+L08) | 9/18 | 10/18 (5.35) | e, na, co, ts, lo, a |
+| S5 mel'ente noit (L11) | 7/11 | 5/11 (2.60) | eo, ab, cp, st, bl, u |
+| **pooled held-out** | **36/55 = 0.655** | controls mean 0.283, **max 0.400** | |
+| sensitivity null-cost 0 / -3 | 33/55 / 36/55 | max 0.309 / 0.400 | |
+
+Gate (a) **met** (0.655 above every one of the 20 pooled shuffles; H1 was 0.436 vs 0.345). Gate (b) **not met**: the
+top letter is fold-stable (PHI e, C43 a, VBAR s/t, 4TRI c, INF u except the S4 fold) but the pair's second letter
+(r, n, p, b) rests on one or two of the 55 letters and drops out of the top-2 when its span is withheld. **H11 FAIL on
+its own gate.** Not a reading; no class change.
+
+**What moved.** The all-span map (`scripts/f61crib2_map.tsv`, grade M, from Tomokiyo's own "Solution Incomplete" markup)
+now reads PHI e/r (e:10 r:2), C43 a/n, VBAR t/s, 4TRI p/c, INF u (5/5), DBL o/b, EBR l, ZHOOK i/j, with CROSS, ELOOP,
+LOOPSTEM1, CH, LL and 4STEM as nulls -- the same cells F61-CAL's eye-placed `scripts/class_diag.tsv` gave for 8 of its 10
+letter classes, reached here by the tool blind. The two departures are C6 (a:2) and CA (a:1 m:1), which the eye placement
+had as nulls; and the V s/t conflict stands (one class, two table columns). The 0.85 level is not reached (0.655): the
+S4 fold is the weak one (9/18, below its shuffled max 10/18), which is the span with most polyphonic partner letters
+(j, b, p, r) and the one line pair cut across a sheet edge (L08/14 partial).
+
+**Next (H12, CAMPAIGN.md).** The free-letter fit asks 55 letters to supply both members of each pair; the Mayenne table
+already pairs them. H12 fits each class to a table cell (top-1 cell by count) and scores the withheld span with the
+cell's pair, controls permuting cells across classes, stability required on the cell only. Files: `scripts/f61crib2.py`,
+`scripts/f61crib2_result.txt`, `scripts/f61crib2_map.tsv`, `scripts/f61crib.py` (import guard added, `--check` still
+fresh), `tools/interlinear_align.py`, `tools/tests/test_interlinear_align.py`; HYPOTHESES.md row added. Requests: none.
+No credentials, no AskUserQuestion, no novelty wording; the owner not named.
+
