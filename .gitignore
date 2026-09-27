@@ -21,3 +21,5 @@ ciphers/fr2933-salviati-1525/plain_crops/*/*.png
 # crop_plain_leaf.py --boxes (same rule as plain_crops above); the _key.tsv id->(leaf,line,pos) maps
 # and the raw subagent TSVs beside them are small text and stay tracked.
 ciphers/fr2933-salviati-1525/split2_crops/*/*.png
+# SALV-F56V (27 Sept 2026): same rule, the f56v-only re-check crops (wider --neighbors context).
+ciphers/fr2933-salviati-1525/split2b_crops/*/*.png

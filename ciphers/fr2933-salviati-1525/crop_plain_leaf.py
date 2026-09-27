@@ -29,6 +29,14 @@ context left/right and 1.5 box-heights above (marks sit above the sign) and 0.6 
 round the target box only, upscales so the crop is about 400 px high, never wider than 2500 px, and saves it as
 DIR/cNNN.png in an order shuffled by --seed. The opaque id -> (leaf, line, pos) map goes to DIR/../<basename>_key.tsv,
 outside DIR, so a subagent given DIR never sees it. No plain/sign annotation is drawn.
+
+  python3 crop_plain_leaf.py f56v --boxes LIST.tsv --out DIR --seed N [--leaf-col] --neighbors K
+SALV-F56V, 27 Sept 2026: same as above, but widens the crop to span K whole neighbouring boxes each side of the
+target (same manuscript line only, clipped at the line's own ends), not just the default box-width padding. Each
+neighbour box gets the line-crop-mode underline + pos-number label (main()'s own convention) so the reader can
+tell target from context; the target keeps its blue rectangle and no number label (already unambiguous by being
+the only rectangle). Written because SALV2-J3's own U1 asked for "the two neighbouring boxes each side" on
+harder single-box calls, and the plain default context (about one box-width) is not that.
 """
 import csv, os, sys
 from PIL import Image, ImageDraw, ImageFont
@@ -147,7 +155,7 @@ def main():
     print(f"{LEAF}: {len(manifest)} line crops -> {OUT}/, manifest {OUT}/manifest.tsv, {total_plain} plain boxes marked")
 
 
-def boxes_mode(list_path, out_dir, seed, leaf_col):
+def boxes_mode(list_path, out_dir, seed, leaf_col, neighbors=0):
     import random
     items = []
     with open(list_path) as f:
@@ -157,6 +165,7 @@ def boxes_mode(list_path, out_dir, seed, leaf_col):
     random.Random(seed).shuffle(items)
     os.makedirs(out_dir, exist_ok=True)
     renders, boxcache = {}, {}
+    font = ImageFont.truetype(FONT_PATH, 30) if neighbors else None
     key_rows = []
     for i, (leaf, line, pos) in enumerate(items, 1):
         if leaf not in renders:
@@ -172,14 +181,48 @@ def boxes_mode(list_path, out_dir, seed, leaf_col):
         sx0, sy0 = (x + off_x) * scale, (y + off_y) * scale
         sw, sh = w * scale, h * scale
         W, H = im.size
-        cx0 = max(0, int(sx0 - max(sw, 30 * scale)))
-        cx1 = min(W, int(sx0 + sw + max(sw, 30 * scale)))
-        cy0 = max(0, int(sy0 - 1.5 * max(sh, 30 * scale)))
-        cy1 = min(H, int(sy0 + sh + 0.6 * max(sh, 30 * scale)))
+
+        if neighbors:
+            target_ip = int(pos)
+            line_ips = sorted(ip for (ln, ip) in boxcache[leaf] if ln == line)
+            idx = line_ips.index(target_ip)
+            span_ips = line_ips[max(0, idx - neighbors): idx + 1 + neighbors]
+            xs0, ys0, xs1, ys1 = [], [], [], []
+            for ip in span_ips:
+                nx, ny, nw, nh = boxcache[leaf][(line, ip)]
+                nsx0, nsy0 = (nx + off_x) * scale, (ny + off_y) * scale
+                xs0.append(nsx0); ys0.append(nsy0)
+                xs1.append(nsx0 + nw * scale); ys1.append(nsy0 + nh * scale)
+            pad = 25 * scale
+            band_h = 40 * scale
+            cx0 = max(0, int(min(xs0) - pad))
+            cx1 = min(W, int(max(xs1) + pad))
+            cy0 = max(0, int(min(ys0) - 1.5 * max(sh, 30 * scale)))
+            cy1 = min(H, int(max(ys1) + 0.6 * max(sh, 30 * scale) + band_h))
+        else:
+            cx0 = max(0, int(sx0 - max(sw, 30 * scale)))
+            cx1 = min(W, int(sx0 + sw + max(sw, 30 * scale)))
+            cy0 = max(0, int(sy0 - 1.5 * max(sh, 30 * scale)))
+            cy1 = min(H, int(sy0 + sh + 0.6 * max(sh, 30 * scale)))
+
         crop = im.crop((cx0, cy0, cx1, cy1))
         d = ImageDraw.Draw(crop)
         d.rectangle([sx0 - cx0 - 3, sy0 - cy0 - 3, sx0 - cx0 + sw + 3, sy0 - cy0 + sh + 3], outline=(0, 60, 220),
                     width=max(2, int(2 * scale)))
+
+        if neighbors:
+            for ip in span_ips:
+                if ip == target_ip:
+                    continue
+                nx, ny, nw, nh = boxcache[leaf][(line, ip)]
+                nsx0, nsy0 = (nx + off_x) * scale - cx0, (ny + off_y) * scale - cy0
+                nsx1 = nsx0 + nw * scale
+                nbottom = nsy0 + nh * scale + 8 * scale
+                d.line([(nsx0, nbottom), (nsx1, nbottom)], fill=(200, 0, 0), width=max(2, int(2 * scale)))
+                label = str(ip)
+                tw = d.textlength(label, font=font)
+                d.text(((nsx0 + nsx1) / 2 - tw / 2, nbottom + 4 * scale), label, fill=(200, 0, 0), font=font)
+
         r = 400 / crop.height
         if crop.width * r > 2500:
             r = 2500 / crop.width
@@ -199,6 +242,6 @@ if __name__ == "__main__":
     if "--boxes" in sys.argv:
         a = sys.argv
         boxes_mode(a[a.index("--boxes") + 1], a[a.index("--out") + 1], int(a[a.index("--seed") + 1]) if "--seed" in a else 0,
-                   "--leaf-col" in a)
+                   "--leaf-col" in a, int(a[a.index("--neighbors") + 1]) if "--neighbors" in a else 0)
     else:
         main()
