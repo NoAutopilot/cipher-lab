@@ -155,5 +155,46 @@ check("key_person_name strips key_/_extended and returns the office name (thurlo
 check("key_person_name on a pure folio-numbered key returns None (fr5160-letellier-1653's key_1659.tsv has no name)",
       kx.key_person_name('key_1659.tsv') is None)
 
+# ---------------------------------------------------------------- U1: EXTRA_KEY_GLOBS (CRYPT-KEYS-A, 27 Sept
+# 2026). A published key table outside ciphers/ (Tomokiyo's text-table keys under sources/cryptiana/keys/) is
+# found by EXTRA_KEY_GLOBS and reads office/years/language/home from its own header comment lines instead of
+# a ciphers/<folder> NOTES.md it doesn't have. Build a temp fixture tree and monkeypatch ROOT/CIPHERS/
+# EXTRA_KEY_GLOBS so find_key_files()/folder_of()/key_meta()/load_key_meta() run against it, not the real repo.
+import shutil as _shutil
+
+_tmp_root = Path(tempfile.mkdtemp())
+(_tmp_root / 'sources' / 'cryptiana' / 'keys').mkdir(parents=True)
+(_tmp_root / 'ciphers').mkdir()
+_fixture_key = _tmp_root / 'sources' / 'cryptiana' / 'keys' / 'testpage_1.tsv'
+_fixture_key.write_text(
+    "# office: Test Office, a fixture\n"
+    "# years: 1600\n"
+    "# language: fr\n"
+    "# home: none\n"
+    "sign\tvalue\tgrade\tsource\tnote\n"
+    "a\tA\tH\ttestpage.htm §Table\t\n"
+    "b\tB\tH\ttestpage.htm §Table\t\n",
+    encoding='utf-8')
+_orig_root, _orig_ciphers, _orig_globs = kx.ROOT, kx.CIPHERS, kx.EXTRA_KEY_GLOBS
+kx.ROOT, kx.CIPHERS, kx.EXTRA_KEY_GLOBS = _tmp_root, _tmp_root / 'ciphers', ['sources/cryptiana/keys/*.tsv']
+kx._EXTRA_HEADER_CACHE.clear()
+try:
+    kept, dropped = kx.find_key_files()
+    check('EXTRA_KEY_GLOBS: the fixture key is found', _fixture_key in kept)
+    check("EXTRA_KEY_GLOBS: folder_of() with 'home: none' returns a per-file pseudo-folder, not a real "
+          "ciphers folder (no positive-control self-pair)",
+          kx.folder_of(_fixture_key) == f'extra:{_fixture_key.relative_to(_tmp_root)}')
+    status, office, years, lang = kx.key_meta(_fixture_key)
+    check("EXTRA_KEY_GLOBS: key_meta() reads office/years/language from the header, not a NOTES.md, status '?'",
+          office == 'Test Office, a fixture' and years == '1600' and lang == 'fr' and status == '?')
+    key, meta = kx.load_key_meta(_fixture_key)
+    check('EXTRA_KEY_GLOBS: load_key_meta() parses the two rows and carries the header metadata through',
+          key is not None and key.get('a', {}).get('value') == 'A' and key.get('b', {}).get('value') == 'B'
+          and meta['office'] == 'Test Office, a fixture' and meta['years'] == '1600' and meta['lang_hint'] == 'fr')
+finally:
+    kx.ROOT, kx.CIPHERS, kx.EXTRA_KEY_GLOBS = _orig_root, _orig_ciphers, _orig_globs
+    kx._EXTRA_HEADER_CACHE.clear()
+    _shutil.rmtree(_tmp_root, ignore_errors=True)
+
 print('key_crossmatch:', 'all tests pass' if not fails else f'{fails} failures')
 sys.exit(1 if fails else 0)

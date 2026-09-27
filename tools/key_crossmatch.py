@@ -11,7 +11,10 @@
 Pipeline (CLAUDE.md rules 3, 4, 7; LANE KX job briefs 2026-09-25, jobs 1 and 1b):
   1. Discover every key*.tsv/key*.txt under ciphers/ (excluding scratch names: draft, candidate, atlas, pass,
      conflicts, counts, align, crosscheck, trial) plus the published key tables already on disk
-     (tools/keys/key60.tsv). Parse each with tools/decode_key.py's own load_key (imported, not copied) into
+     (tools/keys/key60.tsv, and every EXTRA_KEY_GLOBS match -- CRYPT-KEYS-A, 27 Sept 2026: Tomokiyo's other
+     published tables under sources/cryptiana/keys/, whose office/years/language/home come from their own
+     '# field: value' header lines via extra_key_header()/key_meta(), never from a ciphers/ NOTES.md they
+     don't have). Parse each with tools/decode_key.py's own load_key (imported, not copied) into
      {code: value}, falling back to this script's own robust_load_key when dk.load_key raises or clearly read
      an un-stripped header row as data (job 1b fix A: header words like 'line'/'system'/'row'/'sign_desc' that
      dk's own header sniffing does not recognise, plus 'code'-headed tables whose value column is named
@@ -61,7 +64,7 @@ Pipeline (CLAUDE.md rules 3, 4, 7; LANE KX job briefs 2026-09-25, jobs 1 and 1b)
 Output: KEY-CROSSMATCH.tsv (all pairs with coverage >= 0.5, plus the forced known/negative pairs and the
 positive-control rows) and KEY-CROSSMATCH.md (method, positive-control table, hit list, at most 50 lines).
 """
-import argparse, json, math, os, random, re, statistics, sys
+import argparse, fnmatch, json, math, os, random, re, statistics, sys
 from pathlib import Path
 
 TOOLS = Path(__file__).resolve().parent
@@ -76,6 +79,12 @@ DATA = TOOLS / 'data'
 KEY_EXCLUDE = ['draft', 'candidate', 'atlas', 'pass', 'conflicts', 'counts', 'align', 'crosscheck', 'trial']
 CT_EXCLUDE = KEY_EXCLUDE + ['recon']
 EXTRA_KEY_FILES = ['tools/keys/key60.tsv']  # published Bourdeau/Tomokiyo table not under ciphers/
+# CRYPT-KEYS-A, 27 Sept 2026: Tomokiyo's other published key tables, transcribed from his text tables (not
+# images) into sources/cryptiana/keys/<page>_<n>.tsv. Unlike EXTRA_KEY_FILES/EXTRA_KEY_HOME (a fixed list with
+# a hand-checked home), these are discovered by glob and carry their own metadata in header comment lines
+# ('# office:', '# years:', '# language:', '# home:') since most have no ciphers/ folder to read a NOTES.md
+# from at all -- see extra_key_header() and key_meta() below.
+EXTRA_KEY_GLOBS = ['sources/cryptiana/keys/*.tsv']
 
 STATUS_WORDS = ['open', 'partial', 'solved', 'closed-negative', 'found-solved', 'blocked', 'offline-only']
 
@@ -217,7 +226,8 @@ def excluded(path_str, patterns):
 
 
 def find_key_files():
-    """(kept, dropped) key file paths under ciphers/ (maxdepth 3) plus EXTRA_KEY_FILES, dropped items as (path, why)."""
+    """(kept, dropped) key file paths under ciphers/ (maxdepth 3) plus EXTRA_KEY_FILES and EXTRA_KEY_GLOBS,
+    dropped items as (path, why)."""
     found = []
     for pat in ('key*.tsv', 'key*.txt'):
         for p in CIPHERS.glob('*/' + pat):
@@ -234,6 +244,13 @@ def find_key_files():
         p = ROOT / extra
         if p.exists():
             kept.append(p)
+    extra_glob_found = set()
+    for pat in EXTRA_KEY_GLOBS:
+        extra_glob_found |= set(ROOT.glob(pat))
+    for p in sorted(extra_glob_found):
+        rel = str(p.relative_to(ROOT))
+        hit = excluded(rel, KEY_EXCLUDE)
+        (dropped if hit else kept).append((p, hit) if hit else p)
     return kept, dropped
 
 
@@ -253,12 +270,62 @@ def find_ciphertext_files():
 # positive control is known from that header, not guessed.
 EXTRA_KEY_HOME = {'tools/keys/key60.tsv': 'fr3985-nevers-revol-1593'}
 
+_EXTRA_HEADER_FIELD_RE = re.compile(r'^#\s*(office|years|language|home|design|note)\s*:\s*(.*)$', re.I)
+_EXTRA_HEADER_CACHE = {}
+
+
+def is_extra_glob_path(rel_str):
+    return any(fnmatch.fnmatch(rel_str, pat) for pat in EXTRA_KEY_GLOBS)
+
+
+def extra_key_header(path):
+    """{'office','years','language','home','design','note'} read from a key file's own '# field: value'
+    header comment lines (U1, CRYPT-KEYS-A: a key under EXTRA_KEY_GLOBS/EXTRA_KEY_HOME has no ciphers/<folder>
+    NOTES.md of its own to read metadata from instead). Missing fields are '' except 'home', which defaults
+    to 'none' (no ciphers/ folder -> no positive-control self-pair, per folder_of() below). Never raises: an
+    unreadable or header-less file just returns the defaults."""
+    key = str(Path(path).resolve())
+    if key not in _EXTRA_HEADER_CACHE:
+        meta = {'office': '', 'years': '', 'language': '', 'home': 'none', 'design': '', 'note': ''}
+        try:
+            for line in Path(path).read_text(encoding='utf-8', errors='replace').splitlines():
+                m = _EXTRA_HEADER_FIELD_RE.match(line.strip())
+                if m:
+                    meta[m.group(1).lower()] = m.group(2).strip()
+        except Exception:
+            pass
+        _EXTRA_HEADER_CACHE[key] = meta
+    return _EXTRA_HEADER_CACHE[key]
+
 
 def folder_of(path):
     rel = Path(path).relative_to(ROOT)
-    if str(rel) in EXTRA_KEY_HOME:
-        return EXTRA_KEY_HOME[str(rel)]
+    rel_str = str(rel)
+    if rel_str in EXTRA_KEY_HOME:
+        return EXTRA_KEY_HOME[rel_str]
+    if is_extra_glob_path(rel_str):
+        home = extra_key_header(path).get('home', 'none').strip()
+        if home and home.lower() != 'none' and (CIPHERS / home).is_dir():
+            return home
+        # no ciphers/ home: a unique pseudo-folder per file, so compute_own_cts's "one key in this folder"
+        # tier never merges two unrelated published tables and never forces a positive-control self-pair
+        # against some other target's ciphertext by accident (home: none means exactly that, not a guess).
+        return f'extra:{rel_str}'
     return rel.parts[1]  # ciphers/<folder>/...
+
+
+def key_meta(path):
+    """(status, office, years, lang_hint) for a key file: an EXTRA_KEY_GLOBS key (no ciphers/ NOTES.md of its
+    own -- most of Tomokiyo's other published tables) reads office/years/language from its own header comment
+    lines via extra_key_header() instead; status stays '?' (a published table, not a target status). The
+    single hand-checked EXTRA_KEY_FILES/EXTRA_KEY_HOME entry (tools/keys/key60.tsv) is unaffected -- its home
+    folder's own NOTES.md is the correct source, as before -- and every other key still reads
+    notes_meta(folder_of(path))."""
+    rel_str = str(Path(path).relative_to(ROOT))
+    if is_extra_glob_path(rel_str):
+        h = extra_key_header(path)
+        return '?', h.get('office') or '?', h.get('years') or '?', h.get('language') or '?'
+    return notes_meta(folder_of(path))
 
 
 # ==================================================================== NOTES.md metadata
@@ -493,7 +560,7 @@ def load_key_meta(path):
         if key is None:
             return None, reason
     folder = folder_of(path)
-    status, office, years, lang_hint = notes_meta(folder)
+    status, office, years, lang_hint = key_meta(path)
     design, hist = key_design(key)
     meta = dict(path=str(path.relative_to(ROOT)), folder=folder, office=office, years=years,
                 lang_hint=lang_hint, design=design, sign_type=sign_type(key.keys()), code_len_hist=hist,

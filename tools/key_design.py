@@ -250,7 +250,7 @@ def build(with_signs=False):
     for p in kept:
         rel = str(p.relative_to(ROOT))
         folder = kx.folder_of(p)
-        status, office_n, years_n, lang_hint = kx.notes_meta(folder)
+        status, office_n, years_n, lang_hint = kx.key_meta(p)
         off = offices.get(rel) or next((o for r, o in offices.items() if r.startswith(f'ciphers/{folder}/')), {})
         office = off.get('office') or office_n
         if office.startswith('same'):
