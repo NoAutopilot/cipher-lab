@@ -24,7 +24,7 @@ more accounts join.
 | fr4715-f61-mayenne-1592 (trigger trig_01BEknRRZSr3dimfZsmjA2Xb, :45) | campaign | Mayenne key on disk (25 rows), Tomokiyo's five read spans as the known answer, calibration in progress | 40 | hourly (minute 25 / 35 / 45), the account's default model; first firing after the seed lands |
 | spinelli-beinecke-c1515 (trigger trig_014Z1WoFBnGrpufsaxuNdiBN, :55) | campaign | Domnina 2015 key (Tomokiyo's own table on disk, 45 rows), one phrase read by Tomokiyo; gate passed 20:09, seeded 20:46 | 40 | hourly at :55 |
 
-**Runner sessions carry no connector tools** (the trigger stores none): a runner works with git, the repository's tools and its own subagents only; anything needing GitHub, Gmail or session tools is the orchestrator's.
+**Runner sessions (fixed 21:4x UTC):** a trigger that spawns a fresh session gets no repository checkout and cannot clone the private repository, so the first four firings (20:35 to 21:35) did nothing at about 0.80 USD each. The runners are now four standing sessions created with the repository (session_01H27tXgYoK6tVYXUGAN1h5T armstrong, session_01TrimUWpSxSyUXp7w7FEMfR mercy, session_01UgTmQhR7wFtVFrTVdtsq9i f61, session_016fvFiTTAhQng2VqbiBDmRE spinelli) and the hourly triggers fire into them; a runner past 700k context says so in its done line and the orchestrator replaces it. Runners carry no connector tools: git, the repository's tools and their own subagents only.
 
 ## Scoreboard (the orchestrator updates at each check-in)
 

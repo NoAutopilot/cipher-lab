@@ -5,7 +5,7 @@ tools/campaign.py's docstring): a ranked hypothesis table and a step log. The ru
 ONE step and exits; the trigger brings the next runner. Nothing here parks: a runner that finds no runnable
 hypothesis writes three new ones (from the folder's evidence) before it stops, and says so.
 
-## Paste-ready trigger prompt (create_trigger, create_new_session_on_fire true, cron hourly, staggered minutes; one per target)
+## Trigger shape (fixed 27 Sept 2026, 21:4x UTC): a standing session per target, created by the orchestrator WITH the repository (source_url), and a trigger bound to it (persistent_session_id, cron hourly, staggered minutes). A fresh-session trigger cannot clone the private repository and does nothing. The prompt below is what each firing delivers.
 
 ```
 You are the campaign runner for ciphers/<TARGET> in cipher-lab (https://github.com/NoAutopilot/cipher-lab), a fresh session that does one step and exits. Read CLAUDE.md rule 10, .claude/briefs/campaign.md, SPRINT.md, then ciphers/<TARGET>/CAMPAIGN.md, NOTES.md (the last 300 lines at least), HYPOTHESES.md if present, and the last 40 ROOM.md lines mentioning <TARGET>. Steps:
