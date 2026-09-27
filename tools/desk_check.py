@@ -175,15 +175,35 @@ def git_commits_since(repo_root, path, since):
             cwd=repo_root, capture_output=True, text=True, timeout=10)
     except (OSError, subprocess.SubprocessError):
         return []
+    boundary = shallow_boundary(repo_root)
     commits = []
     for line in out.stdout.strip().splitlines():
         if " " not in line:
             continue
         h, d = line.split(" ", 1)
+        if h in boundary:
+            continue
         dt = parse_date(d)
         if dt and dt > since:
             commits.append((dt, h))
     return sorted(commits, reverse=True)
+
+
+def shallow_boundary(repo_root):
+    """Hashes in .git/shallow: the graft commits of a shallow clone. In a depth-limited checkout
+    (every cloud session's, clone_depth 50) `git log -- path` reports the boundary commit as the
+    commit that *added* every file it carries, dated whenever that commit was made -- on 27 Sept
+    2026 check (a) flagged four outreach drafts as stale because commit 6e7e6e1 (an unrelated
+    ROOM.md claim, the clone's graft point) showed as a same-day edit of fr2980-gramont's and
+    huntington-blathwayt-madrid-1728's NOTES.md/AUDIT.md (parent 7k, PR-LAND-10 saw the same
+    lines). A boundary commit says nothing about when the file changed, so it is skipped. Must
+    NOT skip: a real commit on the file after the draft's date (test_shallow_boundary_skipped
+    covers both)."""
+    try:
+        with open(os.path.join(repo_root, ".git", "shallow"), encoding="utf-8") as f:
+            return {ln.strip() for ln in f if ln.strip()}
+    except OSError:
+        return set()
 
 
 def load_drafts(outreach_dir):

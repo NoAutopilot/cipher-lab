@@ -246,6 +246,32 @@ try:
 finally:
     shutil.rmtree(tmp, ignore_errors=True)
 
+# shallow-clone boundary (27 Sept 2026, parent 7k): a real tmp git repository, one commit on a file,
+# then that commit's hash written to .git/shallow -- git_commits_since must skip it (a graft point says
+# nothing about when the file changed) and must NOT skip the same commit when .git/shallow is absent.
+import subprocess
+tmp2 = tempfile.mkdtemp()
+try:
+    def git(*a):
+        return subprocess.run(["git", *a], cwd=tmp2, capture_output=True, text=True, check=True).stdout.strip()
+    git("init", "-q")
+    git("config", "user.email", "t@example.invalid"); git("config", "user.name", "t")
+    os.makedirs(os.path.join(tmp2, "ciphers", "x"))
+    with open(os.path.join(tmp2, "ciphers", "x", "NOTES.md"), "w") as f:
+        f.write("open\n")
+    git("add", "ciphers/x/NOTES.md"); git("commit", "-q", "-m", "add")
+    h = git("rev-parse", "HEAD")
+    since = datetime.date(2000, 1, 1)
+    real = dc.git_commits_since(tmp2, "ciphers/x/NOTES.md", since)
+    check("git_commits_since reports a real commit after the draft date", [c[1] for c in real] == [h], real)
+    with open(os.path.join(tmp2, ".git", "shallow"), "w") as f:
+        f.write(h + "\n")
+    check("shallow_boundary reads .git/shallow", dc.shallow_boundary(tmp2) == {h}, dc.shallow_boundary(tmp2))
+    skipped = dc.git_commits_since(tmp2, "ciphers/x/NOTES.md", since)
+    check("git_commits_since skips the shallow boundary commit", skipped == [], skipped)
+finally:
+    shutil.rmtree(tmp2, ignore_errors=True)
+
 if fails:
     print(f"{fails} failure(s)")
     sys.exit(1)
