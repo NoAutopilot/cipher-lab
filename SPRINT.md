@@ -34,3 +34,7 @@ more accounts join.
 | 27 Sept 20:45 | espagnol142-mercy-1648 | 0 (seed 20:31; runner fired 20:35 before the seed) | 0 | 8 / 0 / 0 | 0 |
 | 27 Sept 20:45 | fr4715-f61-mayenne-1592 | 0 (seed 20:36; F61-CAL's calibration 8/55 recorded as the prior attempt) | 0 | 10 / 0 / 0 | 0 |
 | 27 Sept 20:45 | spinelli-beinecke-c1515 | gate passed 20:09, seed queued | 0 | -- | 0 |
+| 27 Sept 21:45 | armstrong-madison-1808 | 0 (runner fired 21:25, no ROOM line, no commit: the trigger's fresh session has no repository checkout) | 0 | 10 / 0 / 0 | 0 |
+| 27 Sept 21:45 | espagnol142-mercy-1648 | 0 (runner fired 20:35 and 21:35, same) | 0 | 8 / 0 / 0 | 0 |
+| 27 Sept 21:45 | fr4715-f61-mayenne-1592 | 0 (runner fired 20:46, same) | 0 | 10 / 0 / 0 | 0 |
+| 27 Sept 21:45 | spinelli-beinecke-c1515 | 0 (seed 20:57, 9 hypotheses; runner fired 20:55 before the seed, same) | 0 | 9 / 0 / 0 | 0 |

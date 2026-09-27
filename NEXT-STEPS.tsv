@@ -165,7 +165,7 @@ sp87-newcastle-1743	open	needs-triage	?	n	25 Sep		--	0
 sp90-raby-1704	open	runnable	S	n	25 Sep	- S: search the HMC printed series directly page-by-page (only web-searched so far) for a Strafford/Raby 1704 report -- this file's own named next step 2.	--	486
 sp90-raby-whitworth-1705	open	runnable	M	n	25 Sep	1722 (Add MS 37389) — none covers 1716-17, so SP 90/7/149,212 (dated 1716-17 in the QUEUE row) falls entirely outside this range regardless of content.** The correct BL range for that correspondence…	--	2097
 sp99-wotton-1622	open	runnable	M	n	24 Sep	**Recommended next steps (not run this pass):** (1) resolve whether "159" in the description is a correspondent code-name or a folio cross-reference — read folio 159 itself ("Nys to [Carleton]") once…	--	634
-spinelli-beinecke-c1515	partial	runnable	M	n		**Next step:** locate "la gubernation d'ispagnia" on the image (Tomokiyo's own known-answer span, the "known answer first" discipline in `.claude/briefs/README.md`'s common tail) and calibrate `keys/…	--	907
+spinelli-beinecke-c1515	partial	runnable	M	n	27 Sep	**Next step:** locate "la gubernation d'ispagnia" on the image (Tomokiyo's own known-answer span, the "known answer first" discipline in `.claude/briefs/README.md`'s common tail) and calibrate `keys/…	--	907
 ss-radio-lippert-1944	open	needs-triage	?	n	25 Sep		--	0
 stas-waldburg-1653	open	runnable	M	n	24 Sep	**Recommended next steps (not run this pass):** (1) search for a Waldburg-Trauchburg family archive Regesten or Zeitschrift für Hohenzollerische Geschichte covering 1653-54; (2) resolve the catalogue…	--	347
 sufi-fiddle	open	needs-triage	?	n	25 Sep		--	0
