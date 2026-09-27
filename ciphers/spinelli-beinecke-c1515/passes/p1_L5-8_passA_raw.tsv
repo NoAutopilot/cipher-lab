@@ -1,0 +1,167 @@
+line	segment	pos	code	shape	conf
+L05	s1	1	?	cross/anchor: hooked curl at top, crossbar, hooked foot at bottom	M
+L05	s1	2	r	small hook opening down-left, short tail (alt i2)	M
+L05	s1	3	d2	small compact zigzag, numeral-3-like double curve	M
+L05	s1	4	n2	lowercase-b: stem with loop at base	H
+L05	s1	5	N10	two humps with a bar on top (omega-like)	H
+L05	s1	6	r	small hook opening down-left, short tail (alt i2)	M
+L05	s1	7	o	numeral-7 with hooked/dotted apex	H
+L05	s1	8	?	rotated square/diamond outline, one corner notched	H
+L05	s1	9	N7	two loops stacked vertically (numeral-8-like)	M
+L05	s1	10	l1	numeral-4 with a diagonal flag off the top	M
+L05	s1	11	n1	numeral-6, stem curling into a loop	H
+L05	s1	12	p	numeral-9, loop with descending tail	H
+L05	s1	13	N10	two humps with a bar on top	H
+L05	s1	14	u	rounded loop with a diagonal cross-stroke (alt N12)	M
+L05	s1	15	s	hook with a very long curling descending tail, integral-like	M
+L05	s1	16	d2	small compact zigzag, numeral-3-like	M
+L05	s1	17	n2	lowercase-b: stem with loop at base	H
+L05	s1	18	h	small loop with a short upward ascender flick (alt i2)	M
+L05	s1	19	N7	two loops stacked vertically	M
+L05	s1	20	N5	interlocking ampersand-like tangle	H
+L05	s1	21	N11	single long S-curve stroke (alt s)	M
+L05	s2	1	N10	two-hump bar shape, cut at left edge of crop	M
+L05	s2	2	r	small hook, short tail	M
+L05	s2	3	o	numeral-7, hooked apex	H
+L05	s2	4	?	rotated square/diamond outline	H
+L05	s2	5	N7	vertical figure-eight	M
+L05	s2	6	l1	numeral-4 with flag off top	M
+L05	s2	7	n1	numeral-6 hook	H
+L05	s2	8	p	numeral-9 loop with tail	H
+L05	s2	9	N10	two-hump bar	H
+L05	s2	10	u	loop with diagonal cross-stroke	M
+L05	s2	11	s	hook with long curling tail	M
+L05	s2	12	d2	small zigzag, numeral-3-like	M
+L05	s2	13	n2	lowercase-b shape	H
+L05	s2	14	h	small loop, ascender flick	M
+L05	s2	15	N7	vertical figure-eight	M
+L05	s2	16	N5	ampersand-like tangle	H
+L05	s2	17	N11	long S-curve	M
+L05	s2	18	?	hook stroke, descender cut by crop's bottom edge	L
+L05	s2	19	?	loop/hook stroke, cut by crop's bottom edge	L
+L06	s1	1	n1	numeral-6 hook	H
+L06	s1	2	N10	two-hump bar	H
+L06	s1	3	N7	vertical figure-eight	M
+L06	s1	4	o	numeral-7 hooked apex	H
+L06	s1	5	N6	three-peak M/W zigzag	M
+L06	s1	6	N7	vertical figure-eight	M
+L06	s1	7	?	two parallel vertical strokes ("ll")	M
+L06	s1	8	N10	two-hump bar	H
+L06	s1	9	?	plain x-cross stroke	M
+L06	s1	10	d1	large flat-topped zigzag, Z-like	M
+L06	s1	11	?	numeral-2 shape	M
+L06	s1	12	?	rotated diamond outline	M
+L06	s1	13	p	numeral-9 loop with tail	H
+L06	s1	14	?	numeral-2 shape	M
+L06	s1	15	?	numeral-2 shape	M
+L06	s1	16	o	numeral-7 hooked apex	M
+L06	s1	17	h	small hook loop	M
+L06	s1	18	N4	mu/fishhook shape	H
+L06	s1	19	N5	ampersand-like tangle	M
+L06	s1	20	d2	small zigzag, numeral-3-like	M
+L06	s1	21	?	fragment, cut at right edge of crop	L
+L06	s2	1	N6	M-shape, partial, cut at left edge	M
+L06	s2	2	N7	vertical figure-eight	M
+L06	s2	3	?	two vertical strokes ("ll")	M
+L06	s2	4	N10	two-hump bar	H
+L06	s2	5	?	plain x-cross	M
+L06	s2	6	d1	flat-topped zigzag, Z-like	M
+L06	s2	7	?	numeral-2	M
+L06	s2	8	?	rotated diamond outline	M
+L06	s2	9	p	numeral-9 loop with tail	H
+L06	s2	10	?	numeral-2	M
+L06	s2	11	?	numeral-2	M
+L06	s2	12	o	numeral-7	M
+L06	s2	13	h	small hook loop	M
+L06	s2	14	N4	mu/fishhook	H
+L06	s2	15	N5	ampersand-like tangle	M
+L06	s2	16	d2	small zigzag, numeral-3-like	M
+L06	s2	17	t1	tall stroke with small hook/flag near top	M
+L06	s2	18	n1	numeral-6 hook	M
+L06	s2	19	N7	vertical figure-eight	M
+L06	s2	20	d2	small zigzag, numeral-3-like	M
+L06	s2	21	a	phi-like loop on a long descender	M
+L06	s2	22	?	fragment, cut at right edge	L
+L07	s1	1	p	numeral-9 loop with tail	H
+L07	s1	2	o	numeral-7 hooked apex	H
+L07	s1	3	W5	capital-H shape (word code)	H
+L07	s1	4	?	numeral-2	M
+L07	s1	5	d2	small zigzag, numeral-3-like	M
+L07	s1	6	m	y-shape with hooked tail	M
+L07	s1	7	h	small hook loop	M
+L07	s1	8	N5	ampersand-like tangle	M
+L07	s1	9	N7	vertical figure-eight	M
+L07	s1	10	?	diamond outline with an extra internal stroke	M
+L07	s1	11	p	numeral-9 loop with tail	H
+L07	s1	12	u	loop with diagonal cross-stroke	M
+L07	s1	13	o	numeral-7	H
+L07	s1	14	?	two vertical strokes ("ll")	M
+L07	s1	15	?	numeral-2	M
+L07	s1	16	W5	capital-H shape	H
+L07	s1	17	N4	mu/fishhook	H
+L07	s1	18	?	numeral-2	M
+L07	s1	19	?	x-cross/tangle	M
+L07	s1	20	N7	vertical figure-eight	M
+L07	s1	21	?	loop fragment, cut at right edge	L
+L07	s2	1	d2	small zigzag, numeral-3-like	M
+L07	s2	2	m	y-shape hooked tail	M
+L07	s2	3	h	small hook loop	M
+L07	s2	4	N5	ampersand-like tangle	M
+L07	s2	5	N7	vertical figure-eight	M
+L07	s2	6	?	diamond outline, extra internal stroke	M
+L07	s2	7	p	numeral-9 loop with tail	H
+L07	s2	8	u	loop with diagonal cross-stroke	M
+L07	s2	9	o	numeral-7	H
+L07	s2	10	?	two vertical strokes ("ll")	M
+L07	s2	11	?	numeral-2	M
+L07	s2	12	W5	capital-H shape	H
+L07	s2	13	N4	mu/fishhook	H
+L07	s2	14	?	numeral-2	M
+L07	s2	15	?	x-cross/tangle	M
+L07	s2	16	N7	vertical figure-eight	M
+L07	s2	17	r	hook or checkmark shape (new tail, past s1's edge; alt o)	M
+L07	s2	18	a	phi-like loop on a descender	M
+L07	s2	19	?	numeral-2	M
+L07	s2	20	o	numeral-7	M
+L07	s2	21	N7	vertical figure-eight	M
+L07	s2	22	?	x-cross/tangle	M
+L07	s2	23	o	numeral-7, near right edge of crop	L
+L08	s1	1	N2	capital Pi shape	H
+L08	s1	2	a	phi-like loop on a long descender	M
+L08	s1	3	?	squiggle with a small ring/dot above it	M
+L08	s1	4	?	numeral-2	M
+L08	s1	5	?	numeral-2	M
+L08	s1	6	p	numeral-9 loop with tail (partial)	M
+L08	s1	7	d2	small zigzag, numeral-3-like	M
+L08	s1	8	t1	small hook/k-shape	M
+L08	s1	9	N10	two-hump bar	H
+L08	s1	10	d1	flat-topped zigzag, Z-like	M
+L08	s1	11	r	small hook	M
+L08	s1	12	?	circle bisected by a horizontal bar (theta-like)	M
+L08	s1	13	?	numeral-2	M
+L08	s1	14	?	x-cross/chi tangle	M
+L08	s1	15	N10	two-hump bar	H
+L08	s1	16	?	rotated diamond outline	M
+L08	s1	17	?	circle bisected by a horizontal bar	M
+L08	s1	18	r	small hook	M
+L08	s1	19	m	y-shape hooked tail	M
+L08	s1	20	c	numeral-4 shape	H
+L08	s1	21	?	fragment, cut at right edge	L
+L08	s2	1	?	circle-bar (theta), partial at left edge	M
+L08	s2	2	?	numeral-2	M
+L08	s2	3	p	numeral-9 loop with tail	M
+L08	s2	4	d2	small zigzag, numeral-3-like	M
+L08	s2	5	t1	small hook/k-shape	M
+L08	s2	6	N10	two-hump bar	H
+L08	s2	7	d1	flat-topped zigzag, Z-like	M
+L08	s2	8	r	small hook	M
+L08	s2	9	?	circle bisected by horizontal bar (theta)	M
+L08	s2	10	?	numeral-2	M
+L08	s2	11	?	x-cross/tangle	M
+L08	s2	12	N10	two-hump bar	H
+L08	s2	13	?	rotated diamond outline	M
+L08	s2	14	?	circle bisected by horizontal bar	M
+L08	s2	15	r	small hook	M
+L08	s2	16	m	y-shape hooked tail	M
+L08	s2	17	c	numeral-4 shape	H
+L08	s2	18	N10	two-hump bar; last cipher sign before plain text below	M

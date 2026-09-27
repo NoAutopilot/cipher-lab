@@ -1,0 +1,97 @@
+line	segment	pos	code	shape	conf
+L05	joined	1	?	cross/anchor: hooked curl at top, crossbar, hooked foot at bottom	M
+L05	joined	2	r	small hook opening down-left, short tail (alt i2)	M
+L05	joined	3	d2	small compact zigzag, numeral-3-like double curve	M
+L05	joined	4	n2	lowercase-b: stem with loop at base	H
+L05	joined	5	N10	two humps with a bar on top (omega-like)	H
+L05	joined	6	r	small hook opening down-left, short tail (alt i2)	M
+L05	joined	7	o	numeral-7 with hooked/dotted apex	H
+L05	joined	8	?	rotated square/diamond outline, one corner notched	H
+L05	joined	9	N7	two loops stacked vertically (numeral-8-like)	M
+L05	joined	10	l1	numeral-4 with a diagonal flag off the top	M
+L05	joined	11	n1	numeral-6, stem curling into a loop	H
+L05	joined	12	p	numeral-9, loop with descending tail	H
+L05	joined	13	N10	two humps with a bar on top	H
+L05	joined	14	u	rounded loop with a diagonal cross-stroke (alt N12)	M
+L05	joined	15	s	hook with a very long curling descending tail, integral-like	M
+L05	joined	16	d2	small compact zigzag, numeral-3-like	M
+L05	joined	17	n2	lowercase-b: stem with loop at base	H
+L05	joined	18	h	small loop with a short upward ascender flick (alt i2)	M
+L05	joined	19	N7	two loops stacked vertically	M
+L05	joined	20	N5	interlocking ampersand-like tangle	H
+L05	joined	21	N11	single long S-curve stroke (alt s)	M
+L05	joined	22	?	hook stroke, descender cut by crop's bottom edge	L
+L05	joined	23	?	loop/hook stroke, cut by crop's bottom edge	L
+L06	joined	1	n1	numeral-6 hook	H
+L06	joined	2	N10	two-hump bar	H
+L06	joined	3	N7	vertical figure-eight	M
+L06	joined	4	o	numeral-7 hooked apex	H
+L06	joined	5	N6	three-peak M/W zigzag	M
+L06	joined	6	N7	vertical figure-eight	M
+L06	joined	7	?	two parallel vertical strokes ("ll")	M
+L06	joined	8	N10	two-hump bar	H
+L06	joined	9	?	plain x-cross stroke	M
+L06	joined	10	d1	large flat-topped zigzag, Z-like	M
+L06	joined	11	?	numeral-2 shape	M
+L06	joined	12	?	rotated diamond outline	M
+L06	joined	13	p	numeral-9 loop with tail	H
+L06	joined	14	?	numeral-2 shape	M
+L06	joined	15	?	numeral-2 shape	M
+L06	joined	16	o	numeral-7 hooked apex	M
+L06	joined	17	h	small hook loop	M
+L06	joined	18	N4	mu/fishhook shape	H
+L06	joined	19	N5	ampersand-like tangle	M
+L06	joined	20	d2	small zigzag, numeral-3-like	M
+L06	joined	21	t1	tall stroke with small hook/flag near top	M
+L06	joined	22	n1	numeral-6 hook	M
+L06	joined	23	N7	vertical figure-eight	M
+L06	joined	24	d2	small zigzag, numeral-3-like	M
+L06	joined	25	a	phi-like loop on a long descender	M
+L07	joined	1	p	numeral-9 loop with tail	H
+L07	joined	2	o	numeral-7 hooked apex	H
+L07	joined	3	W5	capital-H shape (word code)	H
+L07	joined	4	?	numeral-2	M
+L07	joined	5	d2	small zigzag, numeral-3-like	M
+L07	joined	6	m	y-shape with hooked tail	M
+L07	joined	7	h	small hook loop	M
+L07	joined	8	N5	ampersand-like tangle	M
+L07	joined	9	N7	vertical figure-eight	M
+L07	joined	10	?	diamond outline with an extra internal stroke	M
+L07	joined	11	p	numeral-9 loop with tail	H
+L07	joined	12	u	loop with diagonal cross-stroke	M
+L07	joined	13	o	numeral-7	H
+L07	joined	14	?	two vertical strokes ("ll")	M
+L07	joined	15	?	numeral-2	M
+L07	joined	16	W5	capital-H shape	H
+L07	joined	17	N4	mu/fishhook	H
+L07	joined	18	?	numeral-2	M
+L07	joined	19	?	x-cross/tangle	M
+L07	joined	20	N7	vertical figure-eight	M
+L07	joined	21	r	hook or checkmark shape (new tail, past s1's edge; alt o)	M
+L07	joined	22	a	phi-like loop on a descender	M
+L07	joined	23	?	numeral-2	M
+L07	joined	24	o	numeral-7	M
+L07	joined	25	N7	vertical figure-eight	M
+L07	joined	26	?	x-cross/tangle	M
+L07	joined	27	o	numeral-7, near right edge of crop	L
+L08	joined	1	N2	capital Pi shape	H
+L08	joined	2	a	phi-like loop on a long descender	M
+L08	joined	3	?	squiggle with a small ring/dot above it	M
+L08	joined	4	?	numeral-2	M
+L08	joined	5	?	numeral-2	M
+L08	joined	6	p	numeral-9 loop with tail (partial)	M
+L08	joined	7	d2	small zigzag, numeral-3-like	M
+L08	joined	8	t1	small hook/k-shape	M
+L08	joined	9	N10	two-hump bar	H
+L08	joined	10	d1	flat-topped zigzag, Z-like	M
+L08	joined	11	r	small hook	M
+L08	joined	12	?	circle bisected by a horizontal bar (theta-like)	M
+L08	joined	13	?	numeral-2	M
+L08	joined	14	?	x-cross/chi tangle	M
+L08	joined	15	N10	two-hump bar	H
+L08	joined	16	?	rotated diamond outline	M
+L08	joined	17	?	circle bisected by a horizontal bar	M
+L08	joined	18	r	small hook	M
+L08	joined	19	m	y-shape hooked tail	M
+L08	joined	20	c	numeral-4 shape	H
+L08	joined	21	N10	two-hump bar; last cipher sign before plain text below	M
