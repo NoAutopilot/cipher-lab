@@ -22,7 +22,7 @@ more accounts join.
 | armstrong-madison-1808 (trigger trig_019s5begSuU244cmPNboSyUN, :25) | campaign | the letter from the S. Tomokiyo thread; the owner's Codex session's attempts fold in as prior steps | 40 | hourly (minute 25 / 35 / 45), the account's default model; first firing after the seed lands |
 | espagnol142-mercy-1648 (trigger trig_018cY9wT442xNo5jLnXCqWqA, :35) | campaign | furthest along: key evidence, register-matched judge corpus, DECODE ruled out, archive copy on order (a branch, not the state) | 40 | hourly (minute 25 / 35 / 45), the account's default model; first firing after the seed lands |
 | fr4715-f61-mayenne-1592 (trigger trig_01BEknRRZSr3dimfZsmjA2Xb, :45) | campaign | Mayenne key on disk (25 rows), Tomokiyo's five read spans as the known answer, calibration in progress | 40 | hourly (minute 25 / 35 / 45), the account's default model; first firing after the seed lands |
-| spinelli-beinecke-c1515 (or the best fr.4715 pool row) | campaign, pending gate | Domnina 2015 key, one phrase read by Tomokiyo; joins when INTAKE-SPINELLI's gate passes, else the pool row | 40 | created at the check-in after the gate |
+| spinelli-beinecke-c1515 (trigger trig_014Z1WoFBnGrpufsaxuNdiBN, :55) | campaign | Domnina 2015 key (Tomokiyo's own table on disk, 45 rows), one phrase read by Tomokiyo; gate passed 20:09, seeded 20:46 | 40 | hourly at :55 |
 
 **Runner sessions carry no connector tools** (the trigger stores none): a runner works with git, the repository's tools and its own subagents only; anything needing GitHub, Gmail or session tools is the orchestrator's.
 
