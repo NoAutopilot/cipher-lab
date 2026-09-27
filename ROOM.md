@@ -3449,3 +3449,5 @@ done: M1-M11 pushed, digitised-candidates scout finished
 
 
 2026-09-27 | Codex ARM-GLYPH-ALT: armstrong-madison-1808 | done, UNSOLVED. Audited manuscript images and recorded ten local binary shape-label alternatives with bounding boxes/hashes; old transcription preserved. Joint alphabet/label search corrected 4/5 and 5/5 planted errors in fresh controls, recovering 256/257 and 257/257 letters (no false label changes). Target still incoherent: penalized score -299.499256129, selected p1f:14 29->26 and p3h:3 22->20. These are unconfirmed optimizer choices, not recovered text or validated corrections. No numerical crib or key entry; no family exclusion or significance claim. Reproducible evidence: ciphers/armstrong-madison-1808/codex-2026-09-27d/REPORT.md. Append only; no outreach.
+
+2026-09-27 17:21 UTC | Codex ARM-PRIVATE: armstrong-madison-1808 | claim: historical-source pivot to Armstrong's private papers, Warden correspondence, and the unnamed bearer in the 15 February 1808 Jefferson letter. Prior numerical/glyph tests remain unsolved; no new solver retries. Work in codex-2026-09-27e. ROOM append only, no outreach.
