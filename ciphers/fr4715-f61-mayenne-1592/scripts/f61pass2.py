@@ -23,8 +23,15 @@ LETTER = ["PHI", "C43", "4TRI", "VBAR", "DBL", "INF", "ZHOOK", "EBR", "BETA", "4
 def fold(c): return "VBAR" if c.startswith("VBAR") else c
 
 def main():
+    # H17 (pre-registered before its call): --a read_call_U.tsv --b passU2_classes.tsv --out f61pass3_result.txt --gate-line L10
+    # gate for H17: over the named line's aligned columns, at most 2 differ (gap or other class); the 10-class gate is then reported only.
+    a = sys.argv[1:]
+    src_a = a[a.index("--a") + 1] if "--a" in a else "passA_classes.tsv"
+    src_b = a[a.index("--b") + 1] if "--b" in a else "passB_classes.tsv"
+    dst = a[a.index("--out") + 1] if "--out" in a else "f61pass2_result.txt"
+    gate_line = a[a.index("--gate-line") + 1] if "--gate-line" in a else None
     d = tempfile.mkdtemp(prefix="f61pass2_")
-    r = subprocess.run([sys.executable, f"{ROOT}/tools/reconcile_passes.py", f"{HERE}/passA_classes.tsv", f"{HERE}/passB_classes.tsv",
+    r = subprocess.run([sys.executable, f"{ROOT}/tools/reconcile_passes.py", f"{HERE}/{src_a}", f"{HERE}/{src_b}",
                         "--out-dir", d, "--method", "nw"], capture_output=True, text=True)
     if r.returncode: raise SystemExit("reconcile_passes.py failed:\n" + r.stdout + r.stderr)
     out = ["reconcile_passes.py summary: " + " | ".join(l for l in r.stdout.strip().splitlines() if not l.startswith("wrote "))]
@@ -49,8 +56,13 @@ def main():
     out.append("VBAR split (non-gating): " + " ".join(f"{a}->{b or '(gap)'}:{n}" for (a, b), n in vb.most_common()))
     nulls = {c: per[c] for c in per if c not in LETTER}
     out.append("null/other classes (non-gating): " + "; ".join(f"{c}: " + " ".join(f"{k}:{v}" for k, v in cnt.most_common()) for c, cnt in nulls.items()))
-    out.append(f"GATE H2 (at least 9 of 10 letter classes agree): {agree}/10 -> {'PASS' if agree >= 9 else 'FAIL'}")
-    txt = "\n".join(out) + "\n"; res = f"{HERE}/f61pass2_result.txt"
+    if gate_line:
+        lc = [(a_, b_) for l, a_, b_ in cols if l == gate_line]; diff = sum(1 for a_, b_ in lc if a_ != b_)
+        out.append(f"GATE H17 ({gate_line}: at most 2 of its aligned columns differ): {diff} differ of {len(lc)} -> {'PASS' if diff <= 2 else 'FAIL'}; per column: " + " ".join(f"{a_ or '-'}={b_ or '-'}" for a_, b_ in lc))
+        out.append(f"10-class figure, reported only: {agree}/10")
+    else:
+        out.append(f"GATE H2 (at least 9 of 10 letter classes agree): {agree}/10 -> {'PASS' if agree >= 9 else 'FAIL'}")
+    txt = "\n".join(out) + "\n"; res = f"{HERE}/{dst}"
     if "--check" in sys.argv:
         ok = os.path.exists(res) and open(res).read() == txt
         print("fresh" if ok else "STALE"); sys.exit(0 if ok else 1)
