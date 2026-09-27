@@ -1297,3 +1297,46 @@ unchecked.
 - correction/caution; a numeral discrepancy between the two manuscript copies is now recorded explicitly: copy A reads 1070, copy B reads 1072, at the same position (between groups 510 and 1421) -- both preserved, neither reading "repaired" to match the other -- unchecked.
 - lead/negative; no additional occurrence of the marked (diamond) 1295 was found in this batch's review of images 1033/1034/1038/1039, but this is not an exhaustive transcription or a verified-absence claim; images 1035 and 1040 remain unretrieved -- unchecked.
 - next-step; the checkpoint's own named next action is inspecting PR 43's existing 17/18 September Livingston images for a second annotated occurrence of the marked Talleyrand run or unmarked 1295, to decide whether the May/September 1295 discrepancy is a copying error, an alternate marked entry, or a key change -- unchecked.
+
+## Campaign step H1 (2026-09-27 22:15 UTC)
+
+Runner: campaign runner armstrong-madison-1808 (account 2, session_013E5jUS9GV1AsxLeUcwgbf6), first step of the
+proof-sprint campaign (SPRINT.md, CAMPAIGN.md). Question: does the retrieval claimed by the 17:43 UTC ROOM line
+"Codex ARM-KEYIMAGE ... codex-2026-09-27f" exist anywhere, before it is treated as lost or as evidence.
+
+What was searched (all on a fresh checkout at origin/main 6a3cc79, 22:10 UTC):
+
+| Where | Method | Result |
+|---|---|---|
+| every local and remote ref | `git log --all --grep` (keyimage, 09-27f, 27f) and `git log --all -- '*codex-2026-09-27f*'` | 0 commits |
+| every remote branch (`git ls-remote --heads`, 60 heads) | tree listing of all 15 `second-opinion/armstrong-*` heads for a `codex-2026-09-27f` path | 0 paths; those branches carry only the Codex folders 27, b, c, d, e plus the ChatGPT runner's own g/h/i/j |
+| unreachable objects | `git fsck --unreachable --no-reflogs`: 50 commits, 202 trees, 241 blobs, each tree listed and each blob grepped for the folder name | 0 hits (the 50 commits are all 26 Sept `room.py --push` rebase leftovers) |
+| ROOM.md, whole file | every line mentioning KEYIMAGE or 27f | one Codex line only, 17:43 UTC, a `claim:` line; no `done` line from that role ever (lines 3475, 3478, 3515, 3525 are other sessions referring to it) |
+| the Codex folder chain and the landed second opinions | grep for 27f / key image | codex-2026-09-27e/REPORT.md (ARM-PRIVATE, done 17:36 UTC): "exact image unresolved, LOC fetches failed"; chatgpt-resume (PR 40, 18:29 UTC): latest recoverable checkpoint 17:37 UTC, no later result, "no codex-2026-09-27f directory is present"; chatgpt-checkpoint 20:50 (PR 48): the 17:43 line "is a task claim, not evidence of successful retrieval" |
+| PRs 40-53 (GitHub, all states) | titles, bodies, head branches | none adds or names a 27f file |
+
+Verdict: `codex-2026-09-27f` never reached GitHub in any form (no ref, no branch, no unreachable object), so it is
+neither lost nor superseded here: the 17:43 UTC line is an unfinished task claim from a session whose work, if any,
+stayed on the owner's machine. It is not evidence for anything and is now over six hours old with no done line
+(CLAUDE.md "Collaborators": a stale claim), so the target is free to take.
+
+What the claim aimed at was reached by a different route: the ChatGPT checkpoint runner (PR 50, 21:17 UTC, landed as
+`second-opinions/chatgpt-checkpoint-2026-09-27-2117.md`) locates the 1803 Livingston compact cipher key at James
+Monroe Papers, Series 1, reel 3, frames 127-128 (frame 128 the docket "Cyphers / 1803 - La Treaty"), with SHA-256
+hashes for both frames and for an undated large numbered table at reel 9 frame 954, and reports that the LOC item
+JSON (`https://www.loc.gov/item/mss33217003/?fo=json`, `resources[0].files`, array position = frame - 1) supplies
+the real image URLs. Those images are not in this folder: `images/manifest.json` has no Monroe/mss33217 entry.
+Reachability from this container, 22:13 UTC, one request each, descriptive UA: the item JSON answers HTTP 200
+(application/json); the guessed `resource/mss33217.003_0001_1159/?sp=127&fo=json` form answers 404, so the file
+list in the item JSON is the route, not the `?sp=` form. Per PR 50 the compact key is not the 1,700-entry WE027
+table (three marked letter alphabets, a short-word column, a vocabulary column, trailing-zero rule, explicit nulls
+100..900 and 1000..9000; worked example "The plan will not do", answer-aware, not an independent control).
+
+Consequences recorded in CAMPAIGN.md: H1 done; H7 (locate the reel-3 image) re-ranked to 1 with `needs: nobody`,
+rewritten as fetch + hash-verify + manifest + a value-range screen against a shuffled-value control; H11 (two blind
+passes of frame 127 into a graded key TSV, decode with `tools/decode_key.py`, en18 judge vs 200 shuffled keys) and
+H12 (screen the reel-9 frame-954 table's digit signature the ARM3-LIVCODE way) added behind it; H2-H6 each move down
+one rank. For the orchestrator: ASKS.md row 80's "locate exact LOC reel-3 image" half is answered by PR 50 (frames
+127-128); the Brooklyn CBH half is not. No reading, no control, no class change in this step. Cost: no figure from
+get_session for this session; the row's estimate (1 USD) is what `campaign.py --spend` records. Requests per host:
+loc.gov 2, github.com API 1 (PR list).
