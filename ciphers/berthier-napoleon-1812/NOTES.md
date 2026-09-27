@@ -467,3 +467,58 @@ by this hypothesis -- `tools/family_run.py --family homophonic` (or a two-part/b
 one exists) on the target with the range split reported above as a starting constraint, matched control
 first (rule 3), not a further contact-table pass at this N. Status stays `open`; no "solved", "new",
 "first", "unpublished" anywhere in this section.
+
+## BER-HOMO (27 Sept 2026, parent worker BER-HOMO)
+
+Ran BER-KWIC's named next step: `tools/family_run.py --family homophonic` at the spec's own N=325, K=207,
+matched control before any target attempt (rule 3).
+
+**Which ciphertext.** The spec's own `ciphertext` field is not data: it is a prose pointer string ("ciphers/
+berthier-napoleon-1812/ciphertext_full.tsv ... use this file, not ciphertext.txt"), and `family_run.py` reads
+that sentence literally as 41 space-tokens/38 distinct if given no override -- a real defect in the spec for
+this kind of run (same "which file" shape BER-KWIC flagged for `ciphertext.txt` vs `ciphertext_full.tsv`, not
+fixed here, read-only per this job's brief). Used `--cipher ciphers/berthier-napoleon-1812/structure/flat.txt
+--tokens space` (BER-KWIC's own settled 325-token/207-distinct flat reading, already checked to match
+`ciphertext_full.tsv` exactly) to get the spec's real N/K into the tool: dry-run confirmed N=325, K=207 before
+the real run.
+
+**Range-split parameter.** Checked `tools/family_run.py --help` and `tools/families/homophonic.py`'s own
+docstring: the family accepts `--param profile=target`, `--param noise=p` and (units mode only) `--param
+units=syl`, no parameter for a range-based starting constraint (BER-KWIC's low/high split at 236 or 140). Ran
+plain, as the brief allows when no such option exists. **Wanted:** a `--param` (or a `masc`/`homophonic`
+sub-mode) that seeds or constrains the anneal's letter/homophone assignment from a named low-value code block,
+so a range-split hypothesis like BER-KWIC's can be tested directly rather than only informally motivating which
+family to try -- named here, not built (script-only box).
+
+**fr18 era match, checked per brief (do not build a corpus this box).** `tools/data/fr18` is 1680-1790
+diplomatic/official French; the target is 22 Dec 1812, a 22-132-year mismatch already flagged in the spec's own
+judge block. `tools/data/fr19` exists on disk (README: "French prose 1800-1890") and does bracket 1812 in date,
+nearer than fr18 -- but it is five Project Gutenberg novels (Stendhal, Balzac, Flaubert, Maupassant), a fiction
+register, not the official/military-dispatch register this target needs (fr18's own register, wrong era), and
+it is not wired into `judge_plaintext.py`'s `LANG_CORPORA`, so a spec cannot opt into it without a `judge.corpora`
+edit. No French corpus on disk matches both the 1800-1820 era and an official/military register; building one
+is out of this box's scope, named as the next step for a future breadth pass.
+
+**Control (rule 3, before any target).** `--seed 1 --seeds 3 --restarts 8` (defaults), corpus = the spec's own
+fr18 judge corpus (six files, per the dry-run above):
+
+| seed | control N | control K | recovery | score |
+|---|---|---|---|---|
+| 1 | 325 | 165 | 0.062 | -625.88 |
+| 2 | 325 | 171 | 0.062 | -633.07 |
+| 3 | 325 | 171 | 0.058 | -632.86 |
+
+CONTROL mean 0.061 (range 0.058-0.062), gate 0.6 **NOT met** -- `CONTROL BELOW GATE`, exit 3, target never run.
+Row appended to `HYPOTHESES.md` (real run only; the timing probe's throwaway row/decode file, written to
+`/tmp` and a since-deleted `families/` file during a 1-seed dry timing check, were not committed).
+
+**Reading (rule 3).** The homophonic-substitution family is untestable at N=325, K=207 with this solver: a
+non-test, not a negative, matching the spec's own structural caution (Bourdeau's ~1200-entry-nomenclator
+objection quoted in `constraints`) and this repo's general finding that a solver needs far more redundancy per
+symbol than 325/207 gives it (K is 89-105% of the corpus-drawn control's own effective K here, i.e. almost no
+sign repeats homophone-style at this N). Named next instrument, per the brief: a two-part/blockwise code family
+(no such family exists in `tools/families/` yet; `SYSTEM.md` "Tools wanted" is the place to log it) -- not a
+further homophonic re-run with other parameters or restarts at this same N (CLAUDE.md rule 3's "second attempt
+at an unchanged approach" paragraph).
+
+Status stays `open`. No "solved", "new", "first", "unpublished" anywhere in this section.
