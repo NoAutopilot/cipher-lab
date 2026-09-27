@@ -1340,3 +1340,66 @@ one rank. For the orchestrator: ASKS.md row 80's "locate exact LOC reel-3 image"
 127-128); the Brooklyn CBH half is not. No reading, no control, no class change in this step. Cost: no figure from
 get_session for this session; the row's estimate (1 USD) is what `campaign.py --spend` records. Requests per host:
 loc.gov 2, github.com API 1 (PR list).
+
+## Campaign step H7 (27 Sept 2026, 22:26-22:35 UTC)
+
+Runner: campaign runner armstrong-madison-1808 (owner account, session_01H27tXgYoK6tVYXUGAN1h5T), second step of the
+proof-sprint campaign (SPRINT.md, CAMPAIGN.md). Hypothesis H7: fetch the 1803 Livingston compact key images the ChatGPT
+runner located (PR 50), verify them, and screen the key's value ranges against the target's groups before any
+transcription pass.
+
+**Fetched and verified.** Three frames from the James Monroe Papers (LOC mss33217) via the tile.loc.gov IIIF image API
+(3 requests, 1.6 s apart, descriptive UA, all HTTP 200 image/jpeg), now `images/monroe/` with entries in
+`images/manifest.json` (`monroe_papers`):
+
+| frame | file | dims | SHA-256 vs PR 50 checkpoint |
+|---|---|---|---|
+| reel 3 fr.127 | mss33217-003-0127.jpg | 2891x4270 | match (eafdc2d4...) |
+| reel 3 fr.128 | mss33217-003-0128.jpg | 4240x2735 | match (d1a4df4e...) |
+| reel 9 fr.954 | mss33217-009-0954.jpg | 5141x4166 | match (4475fb0b...) |
+
+Frame 127, one look by this runner at a one-third-scale render and one crop (grade M, one reader, not a transcription):
+a compact key exactly as PR 50 describes it -- three letter alphabets 1-9 distinguished by marks ("signs of the first /
+second / third line"), a short-word column (values 15-97 and 232-286), the null rule ("100 ... 900, 1000 ... 9000 may be
+written but are to have no signification"), the worked example "The plan will not do" -- **plus a vocabulary column of
+about 45 entries valued 334-897** (Atlantic States 334 ... Congress 338, Canada 421 ... France 429, French 442, ...
+King 642, Louisiana 645, Money 647, ... Spain 842, Spy 864, Trade 869, United States 892, Union 893, West Florida 896,
+Western Country 897) that PR 50's fixture deliberately omitted. Discrepancy for H11's blind passes to settle, not a
+correction of record: the words_lower crop reads "this 15 / the 17 / would 75 / which 79 / over 248" where PR 50's
+fixture has 15=the, 17=this, 75=want, 79=while, 248=our.
+
+**Screen (`livkey1803/screen.py` -> `livkey1803/screen.tsv`), script-only, no plaintext read.** A group is *producible*
+under this key iff its value with trailing zeros stripped (the leaf's own rule) is a key entry, or the group is a null.
+Two value sets: strict (the entries read) and generous (any value inside a vocabulary-column band). Statistic: the
+producible fraction of the 369 numeric groups in `ciphertext.txt`. Rule-3 controls: (positive) six en18 period-prose
+windows encoded with this key (words where it has them, else letters, with its nulls and trailing-zero variants);
+(null A) the target's digits permuted within each group, 200 draws -- the shuffled-value control H7 named; (null B)
+each group replaced by a uniform random value of the same digit count, 200 draws.
+
+| row | producible (generous) | producible (strict) |
+|---|---|---|
+| target (369 groups) | 0.257 | 0.244 |
+| null A, digits permuted (200) | mean 0.249, p95 0.266, max 0.274 | mean 0.229, max 0.252 |
+| null B, uniform same length (200) | mean 0.244, p95 0.276, max 0.285 | mean 0.225, max 0.282 |
+| target percentile within null A / null B | 0.785 / 0.740 | |
+| positive control, en18 encoded (6 texts) | 1.000 each | 1.000 each |
+| positive controls' own null A | mean 0.967-0.982 | |
+| target groups whose stripped value exceeds 899 (no key entry, not a null) | 75 of 369 (0.203) | |
+| target four-digit groups with a nonzero last digit | 72 of 369 (0.195) | |
+
+Reading: the target sits inside its own random-value band (74th-79th percentile, under p95 on both nulls) while
+key-encoded prose reads 1.000 by construction; a fifth of the target's groups (1752, 1841, 1314, 1267, 1180 ...) have
+no way to arise from this key under its stated rules. Caveat on the positive controls' own null: key-encoded prose is
+mostly single-digit letter groups, which digit permutation cannot change, so that null sits near ceiling (0.97) and
+shows little on its own -- the discriminating comparison is target 0.257 vs encoded 1.000 and vs the target's own
+nulls, not the encoded texts' permuted nulls. Conditional on `ciphertext.txt` (Bourdeau's transcription; ARM-TR2
+match_ratio 0.957 against the manuscript) and on the trailing-zero and null rules as read from the leaf.
+
+**Verdict for the campaign:** the reel-3 frame-127 compact key, used as its own rules say, is not the target's key;
+control-backed at this statistic. Not a verdict on WE027 (this leaf is not the 1,700-entry table, PR 50) nor on the
+reel-9 frame-954 table, which was fetched but not inspected. Superscript ticks in `ciphertext_ms.txt` (a possible
+alphabet mark under a compact-key design) number three, on 38, 1640 and 1276 -- none on a single-digit group -- so a
+tick-as-alphabet-mark reading is weakly grounded at face value (recorded as H13, low rank). No reading, no control on
+a reading, no class change. Requests per host: tile.loc.gov 3. Cost: no get_session figure available to this runner;
+the row's estimate (1.5 USD) is what `campaign.py --spend` records. Environment note: Pillow and numpy were absent in
+this runner's container and installed with pip for the crops; `tools/iiif_lines.py` needs both.

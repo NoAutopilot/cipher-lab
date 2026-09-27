@@ -1,60 +1,97 @@
 {
-  "source": "NARA RG 59, General Records of the Department of State, Despatches from Diplomatic Officers, Despatches from U.S. Ministers to France, 1789-1906 (microfilm publication M34), roll 14, item NAID 188671566 (\"Jan. 22, 1808-Sept. 14, 1810\")",
-  "route": "catalog.archives.gov public IIIF Image API v3 (no key needed): item page discovered via the site's own React search UI (headless Chromium, tools/browser_fetch.js; plain curl to catalog.archives.gov/search or /proxy/records/search returns only the app shell), image URLs read from the item page's embedded IIIF manifest data. Fetched at each frame's own native resolution via .../full/<w>,<h>/0/default.jpg (info.json gives width/height/maxArea per frame; requesting a size wider than a frame's own native width, e.g. a fixed 3300px for all four, silently returns the site's HTML error shell at HTTP 200 for the frames narrower than that -- fetch each frame at its own info.json dimensions, not a fixed guess).",
-  "fetched": "2026-09-26",
-  "images": [
-    {
-      "file": "M34-014-0029.jpg",
-      "iiif_id": "lz/dc-metro/rg-059/603720/M34/M34-014/M34-014-0029.jpg",
-      "width": 3728,
-      "height": 3280,
-      "bytes": 353939,
-      "sha1": "e9eaf87a2acf8d9029a6ce5ef5e576f5a9522324"
-    },
-    {
-      "file": "M34-014-0030.jpg",
-      "iiif_id": "lz/dc-metro/rg-059/603720/M34/M34-014/M34-014-0030.jpg",
-      "width": 2096,
-      "height": 2624,
-      "bytes": 472546,
-      "sha1": "e6a63adb2eff52edfc5e8834020607ca6deabd6b",
-      "note": "dated 'Paris 20 feby 1808' in the header, matches the target letter"
-    },
-    {
-      "file": "M34-014-0031.jpg",
-      "iiif_id": "lz/dc-metro/rg-059/603720/M34/M34-014/M34-014-0031.jpg",
-      "width": 3968,
-      "height": 2576,
-      "bytes": 2675656,
-      "sha1": "02845fc9b42d3553025bbe8b7ec43848653e2a81",
-      "note": "crib_sources.md/NOTES.md: 'a cleaner copy of 30' per Founders"
-    },
-    {
-      "file": "M34-014-0032.jpg",
-      "iiif_id": "lz/dc-metro/rg-059/603720/M34/M34-014/M34-014-0032.jpg",
-      "width": 3968,
-      "height": 2608,
-      "bytes": 1180973,
-      "sha1": "6787a336f18821853b2514d606d9030195fc9e77"
-    },
-    {
-      "file": "M34-014-0033.jpg",
-      "iiif_id": "lz/dc-metro/rg-059/603720/M34/M34-014/M34-014-0033.jpg",
-      "width": 3888,
-      "height": 3264,
-      "bytes": 1238722,
-      "sha1": "004e77471a50d24284ae05ac1561b2cee8e4a769",
-      "note": "ARM-POOL, 26 Sept 2026: fetched to cover the last ~37 numeral groups of the target letter that ARM-TR found missing from frames 29-32; not yet transcribed or diffed against ciphertext.txt (a successor job, not this one). Correction (ARM-POOL2, 26 Sept 2026): ARM-TR2 read this frame's right-page letter as dated 'Paris 27 february 1808'; direct native-crop reading this pass reads the date as '22' (matching docket-frame 0645's own item 2, 'same to same 22d Febry 1808' -- two loopy digits in this hand, easy to conflate). The right page is this letter (Armstrong to Madison, THE=972 office code embedded in clear prose, continues onto frame 0034), not a separate 'later letter' as ARM-TR2's wording implied."
-    },
-    {
-      "file": "M34-014-0645.jpg",
-      "iiif_id": "lz/dc-metro/rg-059/603720/M34/M34-014/M34-014-0645.jpg",
-      "width": 3856,
-      "height": 3392,
-      "bytes": 2874458,
-      "sha1": "4b21943e97d58ffd9f28086d44b5effa9c2fbdde",
-      "note": "ARM-POOL2, 26 Sept 2026: the docket frame ARM-POOL flagged at frame 0645 (near frames 0641-0648, the 'confidentially sent' batch). Left page: 'List of Genl Armstrong's letters, extracts from which were confidentially sent to [the President?]' -- six items, dated 27 Dec 1807, 22 Feb 1808, 9 March 1808, 15 March 1808, an undated 'note referred in the above', and a 'Private to Mr M[adison]: 30th August' (year not given). Right page: an unrelated bound-in French customs document ('Douanes Imperiales, 1er Dispositif de la vente du 1er Aout 1810'), not part of the list. Committed as the docket of record: this pass located and screened four of the six items (pool/DOCKET-0645.tsv)."
-    }
-  ],
-  "not_fetched": "other roll-14 frames outside the 29-33 and 0645 ranges this brief and its predecessors name; the item has 664 images/1 file total; see pool/manifest.json (ARM-POOL, 26 Sept 2026) for the roll-14 survey's own low-res thumbnails and pool-candidate native fetches. Roll 13 (NAID 188671172, 'Nov. 12, 1804-Dec. 27, 1807', 392 images) frame 0390 (the 27 Dec 1807 letter, docket item 1) was read this pass (ARM-POOL2) but not committed -- scratch only, screened not transcribed, per this job's brief."
+ "source": "NARA RG 59, General Records of the Department of State, Despatches from Diplomatic Officers, Despatches from U.S. Ministers to France, 1789-1906 (microfilm publication M34), roll 14, item NAID 188671566 (\"Jan. 22, 1808-Sept. 14, 1810\")",
+ "route": "catalog.archives.gov public IIIF Image API v3 (no key needed): item page discovered via the site's own React search UI (headless Chromium, tools/browser_fetch.js; plain curl to catalog.archives.gov/search or /proxy/records/search returns only the app shell), image URLs read from the item page's embedded IIIF manifest data. Fetched at each frame's own native resolution via .../full/<w>,<h>/0/default.jpg (info.json gives width/height/maxArea per frame; requesting a size wider than a frame's own native width, e.g. a fixed 3300px for all four, silently returns the site's HTML error shell at HTTP 200 for the frames narrower than that -- fetch each frame at its own info.json dimensions, not a fixed guess).",
+ "fetched": "2026-09-26",
+ "images": [
+  {
+   "file": "M34-014-0029.jpg",
+   "iiif_id": "lz/dc-metro/rg-059/603720/M34/M34-014/M34-014-0029.jpg",
+   "width": 3728,
+   "height": 3280,
+   "bytes": 353939,
+   "sha1": "e9eaf87a2acf8d9029a6ce5ef5e576f5a9522324"
+  },
+  {
+   "file": "M34-014-0030.jpg",
+   "iiif_id": "lz/dc-metro/rg-059/603720/M34/M34-014/M34-014-0030.jpg",
+   "width": 2096,
+   "height": 2624,
+   "bytes": 472546,
+   "sha1": "e6a63adb2eff52edfc5e8834020607ca6deabd6b",
+   "note": "dated 'Paris 20 feby 1808' in the header, matches the target letter"
+  },
+  {
+   "file": "M34-014-0031.jpg",
+   "iiif_id": "lz/dc-metro/rg-059/603720/M34/M34-014/M34-014-0031.jpg",
+   "width": 3968,
+   "height": 2576,
+   "bytes": 2675656,
+   "sha1": "02845fc9b42d3553025bbe8b7ec43848653e2a81",
+   "note": "crib_sources.md/NOTES.md: 'a cleaner copy of 30' per Founders"
+  },
+  {
+   "file": "M34-014-0032.jpg",
+   "iiif_id": "lz/dc-metro/rg-059/603720/M34/M34-014/M34-014-0032.jpg",
+   "width": 3968,
+   "height": 2608,
+   "bytes": 1180973,
+   "sha1": "6787a336f18821853b2514d606d9030195fc9e77"
+  },
+  {
+   "file": "M34-014-0033.jpg",
+   "iiif_id": "lz/dc-metro/rg-059/603720/M34/M34-014/M34-014-0033.jpg",
+   "width": 3888,
+   "height": 3264,
+   "bytes": 1238722,
+   "sha1": "004e77471a50d24284ae05ac1561b2cee8e4a769",
+   "note": "ARM-POOL, 26 Sept 2026: fetched to cover the last ~37 numeral groups of the target letter that ARM-TR found missing from frames 29-32; not yet transcribed or diffed against ciphertext.txt (a successor job, not this one). Correction (ARM-POOL2, 26 Sept 2026): ARM-TR2 read this frame's right-page letter as dated 'Paris 27 february 1808'; direct native-crop reading this pass reads the date as '22' (matching docket-frame 0645's own item 2, 'same to same 22d Febry 1808' -- two loopy digits in this hand, easy to conflate). The right page is this letter (Armstrong to Madison, THE=972 office code embedded in clear prose, continues onto frame 0034), not a separate 'later letter' as ARM-TR2's wording implied."
+  },
+  {
+   "file": "M34-014-0645.jpg",
+   "iiif_id": "lz/dc-metro/rg-059/603720/M34/M34-014/M34-014-0645.jpg",
+   "width": 3856,
+   "height": 3392,
+   "bytes": 2874458,
+   "sha1": "4b21943e97d58ffd9f28086d44b5effa9c2fbdde",
+   "note": "ARM-POOL2, 26 Sept 2026: the docket frame ARM-POOL flagged at frame 0645 (near frames 0641-0648, the 'confidentially sent' batch). Left page: 'List of Genl Armstrong's letters, extracts from which were confidentially sent to [the President?]' -- six items, dated 27 Dec 1807, 22 Feb 1808, 9 March 1808, 15 March 1808, an undated 'note referred in the above', and a 'Private to Mr M[adison]: 30th August' (year not given). Right page: an unrelated bound-in French customs document ('Douanes Imperiales, 1er Dispositif de la vente du 1er Aout 1810'), not part of the list. Committed as the docket of record: this pass located and screened four of the six items (pool/DOCKET-0645.tsv)."
+  }
+ ],
+ "not_fetched": "other roll-14 frames outside the 29-33 and 0645 ranges this brief and its predecessors name; the item has 664 images/1 file total; see pool/manifest.json (ARM-POOL, 26 Sept 2026) for the roll-14 survey's own low-res thumbnails and pool-candidate native fetches. Roll 13 (NAID 188671172, 'Nov. 12, 1804-Dec. 27, 1807', 392 images) frame 0390 (the 27 Dec 1807 letter, docket item 1) was read this pass (ARM-POOL2) but not committed -- scratch only, screened not transcribed, per this job's brief.",
+ "monroe_papers": {
+  "source": "Library of Congress, James Monroe Papers (mss33217), Series 1: reel 3 frames 127-128 (compact cipher key, 1803, docket \"Cyphers / 1803 - La Treaty\"; 1963 index p.11 \"LIVINGSTON ROBERT R -- CIPHER CODE, 1803, Series 1, two pages, KEY\") and reel 9 frame 954 (undated large numbered table, the collection's featured key image)",
+  "located_by": "ChatGPT runner checkpoint, PR 50, second-opinions/chatgpt-checkpoint-2026-09-27-2117.md (21:17 UTC); fetched and hash-verified here by campaign step H7, 27 Sept 2026 22:28 UTC",
+  "route": "tile.loc.gov IIIF image API, full/pct:100, descriptive UA, 3 requests 1.6 s apart, all HTTP 200 image/jpeg; the loc.gov item JSON https://www.loc.gov/item/mss33217003/?fo=json (resources[0].files, array position = frame - 1) is the documented locator for other frames",
+  "images": {
+   "monroe/mss33217-003-0127.jpg": {
+    "url": "https://tile.loc.gov/image-services/iiif/service:mss:mss33217:003:0100:0127/full/pct:100/0/default.jpg",
+    "width": 2891,
+    "height": 4270,
+    "bytes": 1634166,
+    "sha256": "eafdc2d40fa44cb55bf023fec74092312c131f6e0f9348c8e97ce3e3b490489f",
+    "sha256_matches_pr50_checkpoint": true,
+    "fetched": "2026-09-27 22:28 UTC",
+    "content": "compact key: vocabulary column 334-897, short-word column 15-97 and 232-286, three marked letter alphabets 1-9, null rule 100..900/1000..9000, worked example \"The plan will not do\""
+   },
+   "monroe/mss33217-003-0128.jpg": {
+    "url": "https://tile.loc.gov/image-services/iiif/service:mss:mss33217:003:0100:0128/full/pct:100/0/default.jpg",
+    "width": 4240,
+    "height": 2735,
+    "bytes": 1679716,
+    "sha256": "d1a4df4ebee4aa6c4087b5c49597f7ce3854801dd83d29fcd1bd4c98ffb250c5",
+    "sha256_matches_pr50_checkpoint": true,
+    "fetched": "2026-09-27 22:28 UTC",
+    "content": "reverse/docket of 127 (per PR 50; not inspected this step)"
+   },
+   "monroe/mss33217-009-0954.jpg": {
+    "url": "https://tile.loc.gov/image-services/iiif/service:mss:mss33217:009:0900:0954/full/pct:100/0/default.jpg",
+    "width": 5141,
+    "height": 4166,
+    "bytes": 3247005,
+    "sha256": "4475fb0b5bf9d233c5cc983c8747618504e31db75f3835c55c17d20d62631636",
+    "sha256_matches_pr50_checkpoint": true,
+    "fetched": "2026-09-27 22:28 UTC",
+    "content": "undated large numbered table (per PR 50; not inspected this step)"
+   }
+  }
+ }
 }

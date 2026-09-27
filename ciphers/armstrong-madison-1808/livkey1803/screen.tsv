@@ -1,0 +1,20 @@
+row	n	producible_generous	producible_strict	note
+target	369	0.257	0.244	ciphertext.txt numeric groups
+target: stripped value > 899 (impossible under this key, not a null)	75	0.203		
+target: four-digit groups with a nonzero last digit	72	0.195		
+nullA: target digits permuted within each group	200	mean 0.249 min 0.225 p95 0.266 max 0.274	mean 0.229 max 0.252	
+nullA: target digits permuted within each group -> target percentile		0.785		share of draws below the target
+nullB: uniform random value, same digit count per group	200	mean 0.244 min 0.192 p95 0.276 max 0.285	mean 0.225 max 0.282	
+nullB: uniform random value, same digit count per group -> target percentile		0.740		share of draws below the target
+positive control 1: en18 text encoded with this key	369	1.000	1.000	
+positive control 1: its own digit-permuted null	200	mean 0.973 max 0.986		
+positive control 2: en18 text encoded with this key	369	1.000	1.000	
+positive control 2: its own digit-permuted null	200	mean 0.971 max 0.989		
+positive control 3: en18 text encoded with this key	369	1.000	1.000	
+positive control 3: its own digit-permuted null	200	mean 0.967 max 0.986		
+positive control 4: en18 text encoded with this key	369	1.000	1.000	
+positive control 4: its own digit-permuted null	200	mean 0.982 max 0.995		
+positive control 5: en18 text encoded with this key	369	1.000	1.000	
+positive control 5: its own digit-permuted null	200	mean 0.969 max 0.989		
+positive control 6: en18 text encoded with this key	369	1.000	1.000	
+positive control 6: its own digit-permuted null	200	mean 0.974 max 0.989		
