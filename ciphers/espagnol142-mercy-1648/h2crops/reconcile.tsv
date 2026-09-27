@@ -1,0 +1,14 @@
+line	pos	ciphertext.tsv	runner_eye	blind_A	blind_B	verdict	note
+r16	21	72	72	72 H	72 H	72, one group (3/3)	7 has the hand's leading top bar; gap 7-2 matches intra-group gaps
+r17	10	52	52	52 H	52 H	52, one group (3/3)	
+r17	20	48	48	48 M (alt 9)	48 M (alt 98)	48, one group (3/3 with 4/9 alternates); 4 form settled by sheet_4_vs_9	first digit is the looped-open 4 with straight tail, the same form as the r06 pos-3 glyph the key reads as code 9 where the plaintext needs q (=4); every closed-loop 9 on the leaf (19, 29) has a curved leftward tail
+r17	21	31	31	37 (alt 2)	31 H	31 (2/3)	A's 37 is a minority read; the second glyph is the hand's short slanted 1
+r20	15	48	48	48 M (alt 9)	98 H	48 (2/3 + sheet_4_vs_9)	same looped-open 4 as r17:20; B alone reads 9; adjacent 19 shows the closed-loop 9 for contrast
+r24	4	65	65	6 5 (M, crease between)	65 H	65 as one group (2/3), segmentation M	a faint vertical crease runs between the 6 and the 5 (visible in the zoom); if two tokens, 6 5 would read s r under key.tsv, giving 'tre s r egimient..' at r24:1-8 -- a segmentation question for a blind re-crop, not a reading claim (H10)
+r07	5	[MARK:box]	boxed 101	[boxed:101-like] M	[boxed 101] M	boxed numeral 101 (3/3)	a hand-drawn open-topped rectangle whose uprights double as the outer 1s; same glyph as r09:6
+r09	6	[MARK:box]	boxed 101	[boxed:101-like] M	[boxed 101] M	boxed numeral 101 (3/3)	
+v01	6	[MARK:frac]	corrected 14	tangled/overwritten glyph (alt corrected 9 / corrected 4 / 19)	overwritten, 19 or 14 with a correction stroke	a corrected two-digit group, 14 or 19 (3/3 'corrected'); value M	key.tsv already reads it c (=14) from 'condiciones'; the image shows a 1 followed by a 4/9 glyph with an extra loop and cross, i.e. one digit written over another
+v01	1	14	14.	14 [dot]	14 [dot]	14 followed by a dot (3/3)	a dot also follows 8 at r06:2 ('8. 9 27' in sheet_4_vs_9); not in ciphertext.tsv; punctuation, ink spot or a marker -- unknown
+v04	9	15	15	15 H	15 H	15, one group (3/3)	
+v04	16	21	21:	(not in crop)	[colon] after 21	21 followed by a colon-like mark (2/2 who saw it)	same class of mark as the dots
+v04	19	15 (M, gap)	1 + partial	partial, alt 15/16	partial, top of 5 or 9	unreadable: the photograph ends at the gutter (3/3)	only the 1 and the entry stroke of the second digit survive on canvas 59; needs a different image of the leaf's right edge (H12)

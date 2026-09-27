@@ -1183,3 +1183,64 @@ limits this target now, and the word-code question is subsumed by H2's eye-check
 
 Requests: none (disk only, no hosts). Subagents: none. Cost: est 3 USD (session cost not readable from inside
 the runner; the orchestrator's `get_session` figure is the one of record).
+
+## Campaign step H2 (2026-09-27 23:12-23:3x UTC, campaign runner account 2, session_01V7xEY9JxjCxiXnQLtjFnfL)
+
+**Status unchanged: partial.** CAMPAIGN.md H2: targeted 4x re-crop and blind re-check of the rare codes (48, 52, 65,
+72), the two marks, the v04 unread stretch and r16-r17, against `images/f22r_canvas58.jpg` / `f22v_canvas59.jpg`.
+Question: are any of these mistranscribed in-range digits, two tokens read as one, or genuine non-letter units?
+
+**Method.** Twelve crops cut at native resolution from the canvases and upscaled 3-4x (`h2crops/crop_*.jpg`, boxes in
+`h2crops/crop_boxes.tsv`; the ciphertext's r-numbering is one behind the manifest's physical band number, r_n =
+band n+1, which cost one wrong-line round before it was noticed). Three reads per crop: the runner's own (not
+blind: key.tsv and reading.txt already read) and two independent Sonnet vision passes that saw only the crops and
+`meye/ref_4_9.png` (`h2crops/blind_A.tsv`, `blind_B.tsv`, prompts identical except crop order). Reconciliation per
+position in `h2crops/reconcile.tsv`. A fourth image, `h2crops/sheet_4_vs_9.jpg`, puts every isolated 4 and 9 of
+the leaf (r06 code 9, r09 4, r09 14, r20 29, v01 14, r24 14 29) beside the two disputed 48s at 3x for the 4/9 call.
+Two subagent calls, no hosts.
+
+**Results (3 reads per position; full table in reconcile.tsv).**
+
+| position | ciphertext.tsv | verdict | reads |
+|---|---|---|---|
+| r16:21 | 72 | 72, one two-digit group | 3/3 H |
+| r17:10 | 52 | 52, one group | 3/3 H |
+| r17:20 | 48 | 48, one group; first digit is the looped-open 4 | 3/3 (A, B alt 9/98) |
+| r20:15 | 48 | 48, one group | 2/3 (B reads 98) + sheet |
+| r24:4 | 65 | 65 as one group, segmentation M | 2/3 (A reads 6 5, crease between) |
+| r17:21 | 31 | 31 | 2/3 (A reads 37) |
+| r07:5, r09:6 | [MARK:box] | a boxed numeral 101, same glyph twice | 3/3 |
+| v01:6 | [MARK:frac] | a corrected two-digit group, 14 or 19 with a digit written over | 3/3 "corrected" |
+| v01:1 | 14 | 14 followed by a dot (also 8. at r06:2) | 3/3 |
+| v04:9 | 15 | 15 | 3/3 H |
+| v04:16 | 21 | 21 followed by a colon-like mark | 2/2 |
+| v04:19 | 15 (M, gap) | unreadable: canvas 59 ends at the gutter, only the 1 and an entry stroke survive | 3/3 |
+
+**The 4/9 call.** B read r20:15 as 98 (H) and gave 98 as the alternate at r17:20; A gave 9 as the alternate at
+both. `sheet_4_vs_9.jpg` settles it by the leaf's own hand: every 9 inside 19 and 29 is a closed loop with a
+curved tail sweeping left; the first digit of both 48s is an open loop with a straight descending tail; and that
+looped-open form is exactly the glyph at r06:3 that both transcription passes read as code 9 -- the one position
+where key.tsv itself flags 9 as "homophone of 4 or a slip", because the plaintext there ("du-q-uesa") needs q = 4.
+So the hand has two 4 forms (angular open 4, and looped 4 with a straight tail), and the 48s are 48. The same
+sheet says r06:3 is probably 4, not 9 (H11 below: a blind re-read of that one glyph would drop code 9 from the key
+and K from 38 to 37; not changed here, one runner's eye is not two passes).
+
+**What the marks are.** The [MARK:box] at r07:5 and r09:6 is not a decoration: all three reads see a numeral 101
+inside a hand-drawn open-topped rectangle, identical at both places, in the two spots where the reading already
+wants a name ("Cheureuse y del [101]", "que el [101] uenga con uos"). A boxed three-digit number above the letter
+range is the shape of a nomenclature entry, and 48, 52, 65, 72 -- all above the 2-34 letter range, all written as
+plain two-digit groups -- fit the same class (five of 522 tokens). The design is therefore better described as a
+flat substitution 2-34 plus a small numeric nomenclature, which is what MERCY-KEY (27 Sept) used as the criterion
+for ruling out DECODE 958 ("mixes alphabet + numeric + nomenclature"); that ruling-out is weakened, not reversed --
+958's nomenclature is at about 50 codegroups, this one shows five -- and the DECODE comparison should be re-read
+with that in mind before any further key search (noted for the orchestrator; no re-fetch done here). H5 (the
+word-code family) gains weight from this. The [MARK:frac] at v01:6 is a corrected 14/19 (key.tsv's c = 14 from
+"condiciones" is consistent with 14). The dots after 14 (v01:1) and 8 (r06:2) and the colon after 21 (v04:16)
+are marks ciphertext.tsv does not carry; unknown function (punctuation, ink, or a marker); logged, not interpreted.
+
+**No reading change and no grade change** (S 496, M 26, H 0, C 0 of 522). `ciphertext.tsv` is not edited by this
+step: the one candidate segmentation change (r24:4 as "6 5", A's read, which under key.tsv would give s r at the
+start of "tre[s r]egimient..") and the one candidate value change (r06:3 as 4) each need the two-pass rule, filed
+as H10 and H11. v04:19 needs a different image (H12, ASKS row 81: add f.22v's gutter edge to the BnF batch).
+
+Requests: none (disk only). Subagents: 2 Sonnet vision calls (12 crops each) of the 4 allowed. Cost: est 3 USD.

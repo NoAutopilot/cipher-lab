@@ -1,0 +1,13 @@
+crop	tokens	confidence	segmentation_note	alternates	edge_note
+crop_v04_p16-19.png	[partial hook, cut] [colon: two stacked dots] 31 8 [partial, cut by gutter]	L L H H L	"31" one group	partial-hook: tail of 8/9 from prior group; gutter-cut token: only a short hooked top stroke survives, could be top of 5 or 9	rightmost cut by gray gutter band, only entry stroke visible
+crop_v04_p8-10.png	31 5 18 15 [partial, cut]	H H H H L	"31","18","15" clearly single groups	partial: diagonal top stroke, consistent with a 7's leading bar	right edge cut
+crop_v01_p5-7.png	[partial hook, cut] 31 [overlapping/unclear glyph] 21 2	L H L H H	"31","21" single groups	middle glyph: two strokes fused/overwritten, could be "19" or "14" with a correction stroke on top, or a single heavily-inked digit	leftmost cut
+crop_v01_p1.png	14 [dot] 2 32	H H H H	"14" tight (4 drawn open with vertical); "32" tight	--	none
+crop_r24_p3-5.png	18 65 18 2	H H H H	"18","65","18" all tight two-digit gaps vs wider group spacing	--	none
+crop_r20_p14-16.png	6 98 19 6	H H H H	"98": 9(closed loop+tail)+8, tight; "19": tight, small stray ink dot near baseline before the 9	--	none
+crop_r17_p19-21.png	[compound loop shape] 48 31	L M H	"48": 4(open, with descender below line)+8, tight; "31" tight	first token: could be "10", "11" or an ornate 6/8; "48": the 4 unusually looped, alternate "98"	none
+crop_r17_p9-11.png	[partial, cut] 18 52 30 [partial, cut]	L H H H L	"18","52","30" tight two-digit groups	partials: hook strokes only	both edges cut
+crop_r17_p4-6.png	[partial, cut] 5 18 52 [partial, cut]	L H H H L	"18","52" tight	left partial tail of 0/3; right partial start of a 3	both edges cut
+crop_r16_p19-21.png	5 22 6 72	H H H H	"22" one group; "72": 7(leading top bar)+2, tight, one group	--	none
+crop_r09_p5-7.png	28 [boxed 101] 25 18	H M H H	boxed token: a hand-drawn rectangle enclosing 1-0-1 (the box's uprights doubling as the outer 1s), one unit	boxed alt: box around "0" with flanking 1-strokes as frame	stray stroke from the line above at top
+crop_r07_p4-6.png	28 [boxed 101] [digit(8/9) with diagonal slash] [cursive non-digit text "porq..."]	H M L L	boxed token as above	slashed digit: base 9 or 8 with a diagonal stroke crossing it	cursive text at right edge

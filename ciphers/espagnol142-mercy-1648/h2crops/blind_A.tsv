@@ -1,0 +1,13 @@
+crop	tokens	confidence	segmentation_note	alternates	edge_note
+crop_r07_p4-6.png	28 [boxed:101-like] [loop crossed by heavy diagonal stroke] [cursive word "porq", partial]	H,H M L H	"28" digits touch, one group; boxed glyph is one enclosed unit	boxed alt "LOL"/"101"; struck loop alt "9 cancelled"/"0 cancelled"	"porq" cut by right edge
+crop_r09_p5-7.png	28 [boxed:101-like] 25 [8 (partial)]	H,H M H,H M	28 and 25 each one tight two-digit group	boxed alt "LOL"/"101"; partial final glyph alt "8"/"3"	rightmost token cut by right edge
+crop_r16_p19-21.png	5 22 6 72	H H,H H H,H	"22" one group; "72" one group	none	none
+crop_r17_p4-6.png	[0(partial)] 5 18 52 [3(partial)]	M H H,H H,H M	18 and 52 each one tight group	left partial alt 0/6/8; right partial alt 3	both edges cut
+crop_r17_p9-11.png	5 18 52 30 [ (partial)]	H H,H H,H H,H L	18, 52, 30 each one tight two-digit group	trailing partial alt 1/6/8	overlaps crop_r17_p4-6
+crop_r17_p19-21.png	10 48 37	H,H M,H H,M	"10" one group; "48" one group; last group one unit	"4" alt "9" (open-angle+descender vs closed loop); last digit alt "2" vs "7"	none
+crop_r20_p14-16.png	[6(context)] 48 19 6	M M,H H,H H	"48" and "19" each one tight group	"4" alt "9"	leading 6 at left edge
+crop_r24_p3-5.png	[18(context)] 6 5 18 2	M H H H,H H	"6" and "5" separated by a vertical crease/fold line wider than normal intra-group gaps -- could be one group "65" or two single-digit tokens; leaning two, flagged M	65 could be one group	vertical line most consistent with a paper crease
+crop_v01_p1.png	14 [dot] 2 32	H,M H H H,H	"14" one group; isolated dot between "14" and "2"; "32" one group	"4" alt "9"	none
+crop_v01_p5-7.png	[ (partial)] 31 [tangled/overwritten glyph] 21 2	L H,H L M H	tangled glyph is one heavily-inked unit, cannot segment	tangled alt "corrected 9"/"corrected 4"/merged "19"; "21" second digit alt "6"	leftmost cut
+crop_v04_p8-10.png	[31(context, partial)] 5 18 15 [7(partial)]	M H H,H H,H M	"18" and "15" each one tight group	partial final alt 7/1	right edge cuts final digit to top stroke
+crop_v04_p16-19.png	[colon-like two dots(partial)] 31 8 [15(partial)]	L H,H H M	"31" one group; final strokes match the "15" shape seen whole in v04_p8-10	colon alt 8/0 remnant; final partial alt 15/16	right side truncated by a solid gray band (page edge/gutter), nothing legible beyond
