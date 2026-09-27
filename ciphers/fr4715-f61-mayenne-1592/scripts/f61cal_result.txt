@@ -1,0 +1,21 @@
+reader file: read_call_A.tsv
+S1	L01	matched 1/4
+S2	L03	matched 2/10
+S3	L05	matched 1/12
+S4a	L07	matched 1/7
+S4b	L08	matched 2/11
+S5	L11	matched 1/11
+POOLED	8/55 = 0.145  (gate 0.85)
+coverage (signs with a key symbol): 46/82 = 0.561
+ambiguity (known signs with >1 value): 32/46 = 0.696; over all signs 0.390
+controls (20 shuffled keys, seed 1): 0.127 0.091 0.091 0.055 0.055 0.036 0.091 0.145 0.091 0.255 0.218 0.091 0.145 0.018 0.073 0.127 0.073 0.073 0.109 0.309
+control mean 0.114 max 0.309
+diagnostic (reader label -> Tomokiyo letters under it on the target alignment; key cell):
+  ?	key -	a:5 n:3 e:2 u:2 b:1 l:1 r:1 p:1 v:1 o:1
+  S02	key n	i:2 j:1
+  S03	key b/o	e:9 t:1 o:1 b:1 r:1
+  S04	key c/p	c:3 p:2 o:1
+  S08	key f/s	l:2 e:1
+  S11	key i/x	a:2 v:1 u:1
+  S13	key m/z	a:1 m:1
+  S14	key que	s:3 t:3

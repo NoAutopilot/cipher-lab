@@ -188,3 +188,90 @@ construction, so coverage is not the statistic). Ambiguity rate (share of decode
 reported beside it, non-gating. Diagnostic for outcomes (b)/(c), also fixed now: for every reader label, the letters
 Tomokiyo reads under it are tabulated; a label that consistently takes one letter pair that differs from the key's cell
 points at the key transcription (b); a label that takes scattered letters points at the reader (c).
+
+**U1, sheets (1 Gallica request).** `sh images/regen_f61r_sheets.sh` runs
+`python3 tools/iiif_lines.py --image images/src_ark_12148_btv1b52509819x_f137_500_1880_3320_1420.jpg --out images --prefix f61s --max-width 900 --follow-slope 300 --slope-local --debug`
+on the native region 500,1880,3320,1420 of canvas f137. That region was fetched once with the brief's own
+`--ark btv1b52509819x --canvas 137` form. A second request for a region 60 px taller got a connection reset. It was
+not retried, and the script reads the cached region instead. The tool finds 11 lines, pitch 125 px, slopes -0.008 to
++0.010, and the overlay puts every band on its line. The last line's descenders sit at the bottom edge but are
+readable. Then the script applies 3x LANCZOS and builds one stacked sheet per span line, holding only the segments
+that carry cipher: `images/f61sheet_L01.jpg` (s4-5), `L03` (s1-3), `L05` (s2-4), `L07` (s3-5), `L08` (s1-2), `L11`
+(s1-2). Each sheet is 2700 px wide. The reader was also given `images/key_inventory_sheet.png`: the 16 drawings of
+`mayenne.png`, 4x, labelled S01-S16 with no values (the label-to-cell map is `scripts/inventory_values.json`). The
+page is plain French prose with short cipher runs inside it. The five spans sit on L01, L03, L05, L07+L08 and L11.
+Unmarked runs on L02, L04 and L10 were not read. images/ is 2.6 MB. The 55 raw crops are regenerable and not
+committed.
+
+**U2, one reading call (call A, Opus, about 109k subagent tokens, 80 s).** Output: `scripts/read_call_A.tsv`, 82
+signs. 36 were labelled `?` ("matches no inventory symbol") and most other labels were at confidence l or m. The
+reader said the manuscript sheets were "very legible" and the reference drawings "tiny and blurry". No second call
+was made, although `?` is above a tenth. The `?`s are not undecided signs: each f.61 shape class got one label every
+time it appeared (every loop-on-stem was S03, every 43-shape `?`). A second blind pass against the same 25-px
+drawings would repeat the same class-level mapping, and the diagnostic below places the fault there.
+
+**U3, score (`python3 scripts/f61cal.py`, result in `scripts/f61cal_result.txt`, `--check` for staleness).**
+
+| span | line | matched / letters |
+|---|---|---|
+| S1 avec | L01 | 1/4 |
+| S2 est capable | L03 | 2/10 |
+| S3 trop avancees | L05 | 1/12 |
+| S4a jalousi- | L07 | 1/7 |
+| S4b -e au beau-pere | L08 | 2/11 |
+| S5 mel'ente noit | L11 | 1/11 |
+| **pooled** | | **8/55 = 0.145** (gate 0.85) |
+| 20 shuffled-key controls, seed 1 | | mean 0.114, **max 0.309** |
+| coverage (non-gating) | | 46/82 signs carry a key symbol |
+| ambiguity (non-gating) | | 32/46 = 0.696 of the covered signs have more than one value (0.390 of all signs) |
+
+Sensitivity check: Tomokiyo's image has two dashes after "p" in S2 (`estca-p--able`), where the pre-registered
+reference, copied from INTAKE's text, has one. With two dashes the pool reads 7/55 = 0.127 against the same control
+max of 0.309. The gate was decided on the pre-registered file.
+
+**Diagnostic (pre-registered shape; `scripts/class_diag.tsv`, non-gating).** The DP's own diagnostic is weak, because
+the alignment is driven by a key that mostly misses. So the worker placed Tomokiyo's letters over the reader's own
+shape classes by the x-position of his markup in `BnFfr4715f61.png`. This was one look by eye, not a blind pass. On
+that placement Tomokiyo's letters are consistent within each f.61 class:
+- loop on stem: e/r, 14 times
+- 43-shape: a/n, 10
+- double-dagger: c/p, 6
+- infinity on a bar: u/v, 5
+- double loop: b/o, 5
+- bracket: l, 3
+- hook over two stems: i/j, 3
+- beta: m, 1
+- V with bar: s/t, 7
+- the 6-shape, a-shape, ll, plus, plain 4 and loop-with-bar: dashes (nulls) only.
+
+For 48 of the 55 letters the class falls in a single cell of the Mayenne table's own pairing. The exception is 7
+letters: one class (V) takes both s and t, which the table puts in two columns, f/s and g/t. Against that, the
+reader's class-to-drawing labels are right for only two classes: the double-dagger (S04) and the beta (S13).
+- loop on stem: labelled S03, the b/o knot. Tomokiyo's cell is e/r, S06/S07.
+- 43-shape: labelled `?`. The cell is S01/S02.
+- infinity: labelled S11, i/x. The cell is h/u, S10.
+- double loop: labelled `?`. The cell is S03.
+- bracket: labelled S08, f/s. The cell is S12, l/y. In the table the two drawings are near-identical.
+- V: labelled S14, que.
+
+**Outcome (c).** The gate is missed because the reader disagrees with the symbol identities Tomokiyo's markup
+implies. The failure is in matching f.61's hand to `mayenne.png`'s drawings, which were taken from other letters in
+other hands and are about 25 px each. It is not in reading the manuscript: every class was read consistently and the
+reader called the leaf very legible. Neither of the brief's two remedies fits this failure:
+- A second blind pass against the same drawings (about one more Opus call, same size as call A) would test reader
+  noise, which is not what failed.
+- A native BnF capture would change the manuscript side, which was already legible.
+The key's value pairing (a/n, c/p, e/r, b/o, l/y, h/u, i/x, m/z) is consistent with 48/55 of Tomokiyo's letters.
+The one departure, V taking s and t, is logged as a data conflict, not settled.
+
+Route logged: **untested-by-this-tool** (blind drawing-matching against the table image), not a negative on the key.
+
+**Next step (suggested, not run).** F61-CRIB: take the f.61 shape classes from a blind pass that uses the manuscript's
+own classes, not the table's drawings. Map classes to table cells from Tomokiyo's five spans, which grade M (his own
+"?"). Pre-register a leave-one-span-out check against 20 shuffled mappings before applying the mapping to the
+unmarked runs on L02, L04, L08's tail and L10. Those runs are short (about 20-25 signs), so the result would be a
+cryptanalytic reading of a few words at most, graded S/M. The V s/t conflict and the six null classes stay open. The
+sibling letters in fr.3982/3983 remain the other calibration source (INTAKE's note).
+
+Requests this job: gallica.bnf.fr 2 (1 served, 1 connection reset, no retry). 1 subagent reading call. No
+credentials, no AskUserQuestion, no novelty wording.

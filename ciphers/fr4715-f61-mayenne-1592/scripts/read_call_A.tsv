@@ -1,0 +1,83 @@
+line	pos	symbol	marks	conf
+L01	1	S01	cross, stroke rising to upper right (f-like plus)	m
+L01	2	?	6-shape	h
+L01	3	?	43-shape	h
+L01	4	S11	infinity on horizontal bar	m
+L01	5	S03	phi: loops on long stem	m
+L01	6	S04	4 over triangle (4 with crossbar, V below)	l
+L01	7	?	dark e-loop with curling tail	h
+L01	8	?	a-shape	h
+L01	9	S03	phi: loops on long stem	m
+L01	10	S14	V/triangle with bar	l
+L01	11	S05	dense crossed 4 cluster, hash-like with stems	m
+L01	12	?	4 over pi (4 above two stems on bar)	m
+L03	1	?	a-shape; run-break	h
+L03	2	?	loop on stem with bar at foot	h
+L03	3	?	dark e-loop with curling tail	h
+L03	4	S03	phi: loops on long stem	m
+L03	5	S14	heavy V with bar	l
+L03	6	S14	V/triangle	l
+L03	7	S04	4 over triangle	l
+L03	8	?	43-shape	h
+L03	9	?	a-shape	h
+L03	10	S04	4 over triangle	l
+L03	11	?	6-shape	h
+L03	12	?	loop on stem with bar at foot	h
+L03	13	?	43-shape	h
+L03	14	?	double loop on stem (o-T-o)	m
+L03	15	S08	E-like bracket open right, lower bar longer	m
+L05	1	?	loop on long stem	m
+L05	2	?	h-shape	m
+L05	3	S14	V with bar	l
+L05	4	S03	phi: triple loop on stem	m
+L05	5	?	double loop on stem (o-T-o)	m
+L05	6	S04	4 over triangle	l
+L05	7	?	a-shape	h
+L05	8	?	a-shape	h
+L05	9	?	43-shape	h
+L05	10	S11	infinity on horizontal bar	m
+L05	11	?	43-shape	h
+L05	12	?	6-shape	h
+L05	13	?	43-shape	h
+L05	14	S04	4 over triangle	l
+L05	15	S03	phi: triple loop on stem	m
+L05	16	?	ll-shape	h
+L05	17	S03	phi: triple loop on stem	m
+L05	18	S14	V with bar	l
+L07	1	?	a-shape; run-break	h
+L07	2	?	loop on stem with bar at foot	h
+L07	3	S02	7/Z hook over two close slanted stems crossed	l
+L07	4	S13	beta-shape: loop at top of stem, 3-like bowl	l
+L07	5	S08	E-like bracket open right	m
+L07	6	?	6-shape	h
+L07	7	S03	phi: dark loops on long stem	m
+L07	8	S11	infinity on horizontal bar	m
+L07	9	S14	V with bar	l
+L07	10	S01	plus/cross	l
+L07	11	S02	7/Z hook over two close slanted stems crossed	l
+L08	1	S03	phi: triple loop on stem	m
+L08	2	?	43-shape	h
+L08	3	?	6-shape	h
+L08	4	S11	infinity on horizontal bar	m
+L08	5	?	double loop on stem (o-T-o)	m
+L08	6	S03	phi: triple loop on stem	m
+L08	7	?	43-shape	h
+L08	8	S11	infinity on horizontal bar	m
+L08	9	?	6-shape	h
+L08	10	?	a-shape	h
+L08	11	S04	4 over triangle	l
+L08	12	S03	phi: triple loop on stem	m
+L08	13	S03	phi: triple loop on stem	m
+L08	14	S03	phi-like loop on stem, cut at sheet edge (partial)	l
+L11	1	S13	beta-shape: loop at top of stem	l
+L11	2	S03	phi: loops on long stem	m
+L11	3	S08	E-like bracket open right	m
+L11	4	S03	phi: dark loops on long stem	m
+L11	5	?	43-shape	h
+L11	6	S14	V with bar	l
+L11	7	S03	phi: loops on long stem	m
+L11	8	S06	4 with long crossed stem, no triangle	l
+L11	9	?	4 over pi (4 above two stems)	m
+L11	10	?	double loop on stem (o-T-o)	m
+L11	11	S02	7/Z hook over two close slanted stems crossed	l
+L11	12	S14	V with long bar	l

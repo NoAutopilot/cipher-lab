@@ -72,7 +72,7 @@ fr3989-nevers-revol-1594	blocked	runnable	M	n		Next: LANE R5 G builds a no.60 si
 fr3990-nevers-henri4-1594	blocked	runnable	M	n		Next: LANE R5 G builds a no.60 sign atlas from the interlined leaves of the same copyist (fr.3985 f.126-130, fr.3986 f.151/152) and re-runs F1's leaves; if that passes 80%, this letter follows.	351
 fr3993-villeroy-1595	open	needs-triage	?	n	24 Sep		0
 fr4687-paleologue-nevers	blocked	runnable	S	n	25 Sep	Suggested follow-ups: that block; a nomenclator-aware solver (units allowed to stand for syllables or words); crib tests anchored on `suofratel` with 6 restarts and a matched control whose true crib…	395
-fr4715-f61-mayenne-1592	partial	runnable	M	n	27 Sep	**Next step:** calibrate `keys/key_mayenne_1592.tsv` against the known cipher-symbol/plaintext-word pairings Tomokiyo's own interlinear markup already gives on this same leaf (five spans, "What Tomok…	912
+fr4715-f61-mayenne-1592	partial	runnable	M	n	27 Sep	**Next step (suggested, not run).** F61-CRIB: take the f.61 shape classes from a blind pass that uses the manuscript's own classes, not the table's drawings.	661
 fr4715-montholon-1589	open	needs-person	S	n	27 Sep	**Next step.** A fail keeps the BnF-capture route first (ASKS 79, a new capture of f.81r).	422
 fr5160-letellier-1653	open	runnable	S	n		**Follow-up, not attempted here (stop when the brief is met):** if a later worker wants to close the "no cipher in item 2" question more firmly than a 9-canvas sample, the remaining ~135 canvases of…	310
 fr5761-election-1519	open	runnable	M	n		This needs f105-f109 atlas-coded before it can be answered for the document as a whole -- flagged as the next step for a worker extending the atlas past f104/f110, not concluded here either way.	1350
