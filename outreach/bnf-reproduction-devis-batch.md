@@ -1,4 +1,4 @@
-# BnF reproduction batch: 12 orders across 9 targets
+# BnF reproduction batch: 13 orders across 10 targets (row 13 added 27 Sept 2026)
 
 **Status:** backlog (ASKS.md row 78). Not sent, no payment made. Not a mailbox draft: this is a paste-ready
 order for the owner's own action on the BnF's own reproduction routes, the same shape as
@@ -50,6 +50,7 @@ below.
 | 10 | Ms-4764 | the Aug 1745 Lanmary despatch | as catalogued | yes | none listed (reservation of the original only) | cc85044f (verified 27 Sept 2026: cote "Ms-4764" confirmed) | arsenal-dallion-lanmary-1744 (ASKS 38) | the cipher despatch signed Lanmary to d'Alion, Stockholm, 9/20 Aug 1745 |
 | 11 | Ms-11639 (within Ms-11409-12471, "Archives de la Bastille") | the whole 1744-46 run | as catalogued | yes | none listed | cc12947k on file resolves to the whole Ms-11409-12471 series, not confirmed for the Ms-11639 sub-item; not fetched this pass (network budget spent on rows 1/3-5/7-10/12) -- ask BnF to confirm the exact sub-item reference when ordering | arsenal-dallion-lanmary-1744 (ASKS 38) | the d'Allion-Lanmary cipher correspondence, 1744-46 |
 | 12 | Ms-6314 | ff.177-183 (f.177 item 44, f.182 item 45) | as catalogued (both the ciphered and the deciphered leaves of item 44) | yes | **MICROFILM ARS R-242218** (confirmed present on the finding-aid page itself, 27 Sept 2026 -- the one item in this batch with a specific microfilm cote already on file to order a reproduction against) | cc86280s (verified 27 Sept 2026: cote "Ms-6314" confirmed, matrix confirmed) | arsenal6314-hanau-1635 (ASKS 35) | the cipher instruction and decipherment for the comte Jacob de Hanau, 28 Oct 1635, plus a second cipher-plus-decipherment item (La Valette memoir) in the same volume |
+| 13 | Français 4715 | f.81 (the Montholon letter, 1589) | recto and verso | yes, new capture at the highest resolution offered (at least 400 dpi, TIFF, unretouched) | none (the Gallica scan btv1b52509819x exists but its resolution is what the reading stalled on) | on file in the target's NOTES.md | fr4715-montholon-1589 (ASKS 79, folded in 27 Sept 2026 16:5x UTC after MONT-RECROP and MONT-DOTS both missed the dotted gate) | the dots and digits of the one line-family the key already reads through Tomokiyo's own groups (z 16.7); Département des Manuscrits |
 
 **Not in this batch:** BnF fr.3642 (the key leaf for `ciphers/fr3789-mariedemedicis-savary-1610`, ASKS row 43)
 is left out -- that row is still an open choice between this route and a DECODE role-upgrade alternative (row
