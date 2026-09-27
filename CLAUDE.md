@@ -571,7 +571,9 @@ Every brief states a cap in dollars of usage (the session metadata's cost figure
    QUEUE.md heading guard does), `tools/next_steps.py` (26 Sept 2026, OPTIMIZATION-2026-09-26.md section (c): 63
    of 111 open/partial folders ended with a written next step nobody ran, invisible because lanes opened from
    scout picks; NEXT-STEPS.tsv now names the top runnable row for every lane's job 1, `.claude/briefs/parent.md`
-   "Opening a lane"), `tools/key_design.py` + `tools/design_prior.py` (26 Sept 2026, OPTIMIZATION-2026-09-26.md section (d):
+   "Opening a lane"; 27 Sept 2026, WAIT-CHECK: no target is only waiting -- every blocked row's `parallel` column
+   names the one action that depends on nobody, read from the folder's own "## While waiting" NOTES.md section,
+   and `--wait-only` lists the blocked rows still missing one), `tools/key_design.py` + `tools/design_prior.py` (26 Sept 2026, OPTIMIZATION-2026-09-26.md section (d):
    every solved or recovered key is added to KEY-OFFICES.tsv and KEY-DESIGN.tsv at the lane's close-out, and
    design_prior.py is run before an attack family is chosen for an unread letter).
 8. **Shared scripts before new ones (24 Sept 2026).** Each has `--help` and an offline test in `tools/tests/`; a

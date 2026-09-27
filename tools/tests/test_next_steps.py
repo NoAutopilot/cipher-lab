@@ -110,6 +110,43 @@ Next step: cut fresh line crops with tools/iiif_lines.py and run a second blind 
 """
 
 
+BLOCKED_WITH_WAITING_NOTES = """other-target
+
+blocked (REQUEST.md filed 20 Sept 2026)
+
+Waiting on the owner: LOCAL-QUEUE row L9 asks him to check HathiTrust page 44 for the plaintext
+before any more cryptanalysis. Next: once ASKS row 12 is answered, resume the key search.
+
+## While waiting, 24 Sept 2026
+
+- run the masc family control on the target's own N and K while the copy request stands
+- a second bullet, not the first, must not be picked
+"""
+
+BLOCKED_NO_WAITING_NOTES = """third-target
+
+blocked (REQUEST.md filed 20 Sept 2026)
+
+Waiting on the owner: no parallel action has been written for this one yet. Next: resume once
+the copy arrives.
+"""
+
+BLOCKED_TWO_WAITING_SECTIONS_NOTES = """fourth-target
+
+blocked (REQUEST.md filed 20 Sept 2026)
+
+Next: resume once the copy arrives.
+
+## While waiting, 20 Sept 2026
+
+- the stale bullet, superseded
+
+## While waiting, 25 Sept 2026
+
+- the live bullet, run the judge on the sibling reading
+"""
+
+
 def write_notes(ciphers_dir, target, text):
     d = os.path.join(ciphers_dir, target)
     os.makedirs(d, exist_ok=True)
@@ -243,6 +280,61 @@ def test_short_real_instruction_without_blocker_keyword_stays_runnable(tmp_path)
     assert r["next_step"] != ""
     assert r["blocker"] == "runnable"
     assert r["cost_band"] == "S"
+
+
+def test_parallel_column_filled_from_while_waiting_section(tmp_path):
+    """WAIT-CHECK, 27 Sept 2026: a blocked folder with a '## While waiting' section fills the
+    `parallel` cell from its first bullet; a blocked folder without one is left empty (not '--',
+    which is reserved for runnable/needs-triage rows) and shows up in --wait-only."""
+    ciphers_dir = tmp_path / "ciphers"
+    write_notes(ciphers_dir, "some-target", RUNNABLE_NOTES)
+    write_notes(ciphers_dir, "other-target", BLOCKED_WITH_WAITING_NOTES)
+    write_notes(ciphers_dir, "third-target", BLOCKED_NO_WAITING_NOTES)
+
+    rows = ns.build_rows(str(ciphers_dir), LEDGER, NEAR)
+    by_folder = {r["folder"]: r for r in rows}
+
+    assert by_folder["some-target"]["parallel"] == "--", "runnable row must show -- not a bullet"
+
+    r = by_folder["other-target"]
+    assert r["blocker"] == "needs-person"
+    assert r["parallel"] == "run the masc family control on the target's own N and K while the copy request stands"
+
+    r3 = by_folder["third-target"]
+    assert r3["blocker"] == "needs-person"
+    assert r3["parallel"] == ""
+
+    blocked, missing = ns.wait_only_rows(rows)
+    assert {r["folder"] for r in blocked} == {"other-target", "third-target"}
+    assert [r["folder"] for r in missing] == ["third-target"]
+
+
+def test_while_waiting_prefers_newest_dated_section():
+    step = ns.extract_while_waiting(BLOCKED_TWO_WAITING_SECTIONS_NOTES)
+    assert "judge on the sibling" in step
+    assert "stale bullet" not in step
+
+
+def test_wait_only_flag_prints_only_the_missing_list(tmp_path):
+    ciphers_dir = tmp_path / "ciphers"
+    write_notes(ciphers_dir, "other-target", BLOCKED_WITH_WAITING_NOTES)
+    write_notes(ciphers_dir, "third-target", BLOCKED_NO_WAITING_NOTES)
+    ledger_path = tmp_path / "LEDGER.md"
+    near_path = tmp_path / "NEAR.md"
+    out_path = tmp_path / "NEXT-STEPS.tsv"
+    ledger_path.write_text(LEDGER, encoding="utf-8")
+    near_path.write_text(NEAR, encoding="utf-8")
+
+    result = subprocess.run(
+        [sys.executable, os.path.join(ROOT, "tools", "next_steps.py"),
+         "--ciphers-dir", str(ciphers_dir), "--ledger", str(ledger_path),
+         "--near", str(near_path), "--out", str(out_path), "--wait-only"],
+        capture_output=True, text=True,
+    )
+    assert result.returncode == 0, result.stdout + result.stderr
+    lines = [l for l in result.stdout.splitlines() if l.strip()]
+    assert lines == ["third-target | needs-person"]
+    assert not os.path.exists(out_path), "--wait-only must not write NEXT-STEPS.tsv"
 
 
 def test_render_tsv_idempotent_and_check_mode(tmp_path):

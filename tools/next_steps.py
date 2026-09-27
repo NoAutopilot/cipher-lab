@@ -120,6 +120,14 @@ BLOCKER_PATTERNS = (
     ("needs-edition", re.compile(r'check-solved|edition volume|\bedition\b', re.IGNORECASE)),
 )
 
+# The blocker classes a row needs a `parallel` action for (job WAIT-CHECK, 27 Sept 2026): the four
+# genuinely-blocked kinds, never `runnable` or `needs-triage` (a row with no next step has nothing
+# to run in parallel with either).
+PARALLEL_BLOCKERS = frozenset(name for name, _ in BLOCKER_PATTERNS)
+
+WHILE_WAITING_RE = re.compile(r'^#{1,6}\s*while waiting', re.IGNORECASE)
+BULLET_RE = re.compile(r'^(?:[-*+]|\d+[.)])\s+(.*)$')
+
 COST_L_RE = re.compile(r'full transcription', re.IGNORECASE)
 COST_M_RE = re.compile(r'\bcrops?\b|\bpass(es)?\b|\bleaf\b|\balignment\b|\bkey\b|\batlas\b', re.IGNORECASE)
 COST_S_RE = re.compile(r'\bgrep\b|\bcheck\b', re.IGNORECASE)
@@ -190,6 +198,37 @@ def extract_next_step(text):
         if date == newest:
             match = block
     return match
+
+
+def extract_while_waiting(text):
+    """The first bullet line of the newest '## While waiting' section in `text`, or "" when the
+    file has no such section or the section carries no bullet.
+
+    Job WAIT-CHECK (27 Sept 2026): a blocked target's next step often depends on an archive or a
+    person, but the folder can still name a parallel action that depends on nobody -- written as
+    its own '## While waiting' NOTES.md section, one bullet per action. "Newest" follows the same
+    convention as `extract_next_step()`: a heading carrying a dated section timestamp wins over an
+    undated one; among undated sections (or when none carry a date), the last one in file order
+    wins, since a NOTES.md is appended to over time.
+    """
+    blocks = split_blocks(text)
+    idxs = [i for i, b in enumerate(blocks) if _is_heading(b) and WHILE_WAITING_RE.match(b.strip())]
+    if not idxs:
+        return ""
+    dated = [(latest_date(blocks[i]), i) for i in idxs]
+    if any(d is not None for d, _ in dated):
+        newest = max(d for d, i in dated if d is not None)
+        section_idx = max(i for d, i in dated if d == newest)
+    else:
+        section_idx = idxs[-1]
+    for block in blocks[section_idx + 1:]:
+        if _is_heading(block):
+            break
+        for line in block.splitlines():
+            m = BULLET_RE.match(line.strip())
+            if m:
+                return m.group(1).strip()
+    return ""
 
 
 def one_line(text, limit=200):
@@ -284,6 +323,11 @@ def build_rows(ciphers_dir, ledger_text, near_text):
         # caught, and an empty block must still classify needs-triage/? rather than runnable/S.
         blocker = classify_blocker(block)
         cost_band = estimate_cost_band(block)
+        if blocker in PARALLEL_BLOCKERS:
+            bullet = extract_while_waiting(text)
+            parallel = one_line(bullet) if bullet else ""
+        else:
+            parallel = "--"
         row = {
             "folder": target,
             "status": status,
@@ -292,17 +336,20 @@ def build_rows(ciphers_dir, ledger_text, near_text):
             "near_row": "y" if target in near_targets(near_text) else "n",
             "last_touched": last_ledger_date(ledger_text, target),
             "next_step": next_step,
+            "parallel": parallel,
             "next_step_full_len": str(len(block)),
         }
         rows.append(row)
     return rows
 
 
-# next_step_full_len appended rather than inserted (the only script reader, build_dashboard.py's
-# load_next_steps(), zips the header row to each data row by position, so an appended column is
-# additive for it and for any TSV viewer that reads by header name; grepped tools/ and
-# .claude/briefs/ for other readers -- none found, CODEX-REVIEW-2026-09-27.md section 2, U1(b)).
-COLUMNS = ("folder", "status", "blocker", "cost_band", "near_row", "last_touched", "next_step", "next_step_full_len")
+# next_step_full_len appended rather than inserted, and `parallel` inserted right after next_step
+# (job WAIT-CHECK, 27 Sept 2026) rather than appended after it: the only script reader,
+# build_dashboard.py's load_next_steps(), zips the header row to each data row by header name
+# (dict(zip(cols, cells))), so a column's position in the file does not matter to it or to any
+# other TSV viewer that reads by header name; grepped tools/ and .claude/briefs/ for other readers
+# -- none found, CODEX-REVIEW-2026-09-27.md section 2, U1(b).
+COLUMNS = ("folder", "status", "blocker", "cost_band", "near_row", "last_touched", "next_step", "parallel", "next_step_full_len")
 
 
 def render_tsv(rows):
@@ -319,6 +366,21 @@ def render_tsv(rows):
     return "\n".join(lines) + "\n"
 
 
+def wait_only_rows(rows):
+    """The blocked rows (one of the four PARALLEL_BLOCKERS) whose `parallel` cell is empty --
+    a target that is only waiting, with no action anyone else can take in the meantime."""
+    blocked = [r for r in rows if r["blocker"] in PARALLEL_BLOCKERS]
+    missing = [r for r in blocked if not r["parallel"]]
+    return blocked, missing
+
+
+def print_wait_only_summary(rows):
+    blocked, missing = wait_only_rows(rows)
+    print(f"wait-only: {len(missing)} of {len(blocked)} blocked targets have no parallel action")
+    for r in missing:
+        print(f"{r['folder']} | {r['blocker']}")
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--ciphers-dir", default=os.path.join(ROOT, "ciphers"))
@@ -326,11 +388,21 @@ def main():
     ap.add_argument("--near", default=os.path.join(ROOT, "NEAR.md"))
     ap.add_argument("--out", default=os.path.join(ROOT, "NEXT-STEPS.tsv"))
     ap.add_argument("--check", action="store_true", help="exit nonzero if --out is stale")
+    ap.add_argument("--wait-only", action="store_true",
+                     help="print only the blocked rows with no parallel action (folder | blocker), for the "
+                          "check-in and the retrospective; exits 0 always (this is a report, not a staleness check)")
     args = ap.parse_args()
 
     ledger_text = open(args.ledger, encoding="utf-8", errors="replace").read() if os.path.exists(args.ledger) else ""
     near_text = open(args.near, encoding="utf-8", errors="replace").read() if os.path.exists(args.near) else ""
     rows = build_rows(args.ciphers_dir, ledger_text, near_text)
+
+    if args.wait_only:
+        _, missing = wait_only_rows(rows)
+        for r in missing:
+            print(f"{r['folder']} | {r['blocker']}")
+        return 0
+
     fresh = render_tsv(rows)
     needs_triage = sum(1 for r in rows if r["blocker"] == "needs-triage")
 
@@ -338,13 +410,16 @@ def main():
         current = open(args.out, encoding="utf-8").read() if os.path.exists(args.out) else None
         if current != fresh:
             print(f"STALE: {args.out} does not match the folders on disk; re-run without --check to refresh.")
+            print_wait_only_summary(rows)
             return 1
         print(f"OK: {args.out} is current ({len(rows)} rows, needs-triage={needs_triage}).")
+        print_wait_only_summary(rows)
         return 0
 
     with open(args.out, "w", encoding="utf-8") as f:
         f.write(fresh)
     print(f"wrote {args.out}: {len(rows)} rows, needs-triage={needs_triage}")
+    print_wait_only_summary(rows)
     return 0
 
 

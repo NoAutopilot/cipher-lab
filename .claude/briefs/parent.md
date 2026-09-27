@@ -25,6 +25,11 @@ its state is only what it committed, so read its handoff and its lanes' ROOM lin
    still lacks it (say so in the parent handoff line, once). Never pass a value anywhere. This checks names only -- for
    whether a present credential's call actually works, see duty 1.
 
+0b. **No target is only waiting.** Every blocked row in NEXT-STEPS.tsv carries a parallel action (the `parallel`
+   column, from the folder's newest "## While waiting" section). Run `python3 tools/next_steps.py --wait-only` at
+   every check-in; a row it lists is a job to queue that hour (a WAIT-PASS worker writes the section from the
+   folder's own NOTES/AUDIT/NEAR evidence), never a row to leave.
+
 1. **Key livecheck.** `python3 tools/key_livecheck.py` (CLAUDE.md Access playbook; not the same tool as duty 0a's
    `key_probe.py` -- that one is name-presence across accounts, this one is a live test call per credential). If a
    credential's present/works result changed since the last KEYS-STATUS.md (absent->present, or failing->working),
