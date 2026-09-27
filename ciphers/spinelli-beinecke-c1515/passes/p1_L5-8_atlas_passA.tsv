@@ -1,0 +1,117 @@
+line	pos	code	note	conf
+5	1	TEE	extra hook/curl at foot, atypical serif	M
+5	2	ECAP+THREE	merged, long connecting tail underneath	M
+5	3	SIX	loop+ascender ("b" shape)	M
+5	4	OMEGABAR	clean match	H
+5	5	ECAP	diagonal ligature stroke exits toward box6	M
+5	6	TLOOP	hook/stem, receives ligature from box5	M
+5	7	DIAMOND	clean match	H
+5	8	EIGHT	clean match	H
+5	9	TEE	heavy ink blob at foot (pooling), horizontal stroke extends toward box10	L
+5	10	SIX	loop+ascender	M
+5	11	NINE	clean match	H
+5	12	OMEGABAR	clean match	H
+5	13	EIGHTBAR	two-lobe crossed shape	M
+5	14	ECAP+THREE	merged, long tail, same recurring pattern as pos2	M
+5	15	SIX	loop+ascender	M
+5	16	STROKE	small loop fragment, forms one sign with box17 (together resemble a hook/9)	M
+5	17	NINE	upper stroke of sign split from box16	M
+5	18	EIGHT	clean match	H
+5	19	PHI	loop + tall ascender, unusual	M
+5	20	ESS	clean match, "5"-shape	H
+5	20a	STROKE	tiny unboxed hook, possibly stray flick	L
+5	20b	OMEGADOT	small unboxed round loop	L
+5	20c	ELOOP	unboxed, loop + long tail flourish	M
+5	20d	SIX	unboxed, loop+ascender	M
+5	20e	EIGHTBAR	unboxed, crossed figure	M
+5	20f	TWO	unboxed, small curved shape	M
+5	20g	ECAP	unboxed, small loop	M
+5	21	SIX	clean loop+ascender	H
+6	1	SIX	loop+ascender	M
+6	2	OMEGABAR	clean match	H
+6	3	EIGHT	clean match	H
+6	4	SEVEN	thin hook	H
+6	5	EM	three-hump cursive m	H
+6	6	EIGHT	clean match	H
+6	7	LL	two parallel vertical strokes	M
+6	8	OMEGABAR	clean match	H
+6	9	XCURL	clean match	H
+6	10	TWOFLAT	flat-topped z-shape	H
+6	11	TWO	small tilted shape	M
+6	12	DEE	loop with vertical stem	H
+6	13	NINE	clean match	H
+6	14	TWO	extended flourish tail	M
+6	15	TWO	clean match	H
+6	16	SEVEN	thin hook	H
+6	17	ECAP	small loop, upper part of sign continuing into box18	M
+6	18	MU	large multi-loop cursive sign, includes ascender from box17	M
+6	19	XCURL	clean match	H
+6	20	ECAP	small loop	M
+6	21	PHI	tall ascender+loop+crossbar, "f"-like	M
+6	22	SIX	clean match	H
+6	23	EIGHT	clean match, overlaps box22	H
+6	24	THREE	clean match	H
+6	25	ECAP+SIX	merged, long connecting tail	M
+7	1	SIX	small extra mark on loop	M
+7	2	SEVEN	clean match	H
+7	3	ENN	blocky H/A shape with dot	M
+7	4	TWO	clean match	H
+7	5	THREE	clean match	H
+7	6	EM	clean match	H
+7	7	ECAP	small loop, possibly connects to box8	M
+7	8	ELOOP	large complex flourish	M
+7	9	EIGHT	clean match	H
+7	10	SIX	heavy ink at top	M
+7	11	NINE	clean match	H
+7	12	OMEGA2	wavy top + round loop, one sign	M
+7	13	SEVEN	thin stroke, cut at strip edge	M
+7	14	LL	two parallel vertical strokes	H
+7	15	TWO	small shape	M
+7	16	ENN	blocky N/H top + long descending tail	M
+7	17	STROKE	small hook, joins tail from box16 into box18	M
+7	18	LL	two vertical strokes	M
+7	19	TWO	clean match	H
+7	20	XCURL	clean match	M
+7	21	EIGHT	clean match	H
+7	22	ELOOP	large loop + hook flourish	M
+7	23	PHI	loop+tall ascender+crossbar	M
+7	24	TWOFLAT	flat-topped z-shape	M
+7	25	SEVENB	bold hook, thick stroke	M
+7	26	EIGHT	clean match	H
+7	27	XCURL	clean match	H
+7	28	SEVEN	clean match	H
+8	1	STROKE	thin diagonal fragment	M
+8	2	PI	two verticals + horizontal top bar	H
+8	3	DEE	loop+ascender, extra stray mark	M
+8	4	EM	three-prong cursive shape	M
+8	5	OMEGADOT	small isolated circle above baseline, possibly a dot/accent	L
+8	6	TWO	doubled curve, possibly two strokes	M
+8	7	TWO	clean match	H
+8	8	UCURL	small hook below baseline	M
+8	9	NINE+THREE	merged, box extends down overlapping pos10/11	M
+8	10	TLOOP	small hook	M
+8	11	UCURL	hook+wave, overlaps pos9's box	L
+8	12	TEE	clean cross shape	H
+8	13	OMEGABAR	clean match	H
+8	14	THREE	clean match	H
+8	15	ECAP+SIX	merged, long tail (recurring e+tail pattern)	M
+8	16	TWO	clean match	H
+8	17	UCURL	hook+loop descender; tiny unboxed fleck nearby, not separately counted	M
+8	18	TLOOP	small hook	M
+8	19	OMEGABAR	clean match	H
+8	20	DIAMOND	clean match	H
+8	21	PHI	complex vertical+zigzag+hook, no clean atlas match	L
+8	22	THETA	loop + horizontal crossbar	M
+8	23	ECAP	loop+long tail (recurring pattern)	L
+8	24	SIX	loop+ascender	M
+8	25	STROKE	small hook, continuation of pos24's tail	M
+8	26	UCURL	diagonal hook	M
+8	27	LL	two small upward ticks	M
+8	28	UCURL	hook+wavy tail	M
+8	29	FOUR	clean "4" shape	H
+8	30	_	plain: tall ascender+loop reads as Latin h	M
+8	31	OMEGABAR	clean cipher match, positioned above/adjacent to plain-text box30	H
+8	32	_	plain: whole word-like cursive blob	H
+8	33	_	plain: cursive loop letter	M
+8	34	_	plain: wavy cursive shape	M
+8	34a	_	plain: thin stroke fragment cut at strip's right edge	L
