@@ -120,3 +120,14 @@ target, per rule 2 and the access playbook's edition-first instruction, and chea
 all three items. If Dobrée turns out not to print the cipher text itself, then TNA page copies for all
 three (`digitised: false`, no other route). Not batched into REQUEST.md this session (brief scope: record
 findings and stage only).
+
+## While waiting (27 Sept 2026, WAIT-PASS-B)
+
+Waits on: (a) a TNA page-copy order for SP 87/23/41, 51, 70 (REQUEST.md, ASKS row 57, since 25 Sept 2026);
+(b) before that, an IA loan read of Dobrée vol. 2 near the Waldeck/Cronstrom passage (NOTES.md's own "Next"
+section) -- IA login/borrow now works (access playbook, resolved 23 Sept 2026) but the page images are
+served obfuscated for scripts, so a person still has to read the held loan in the reader.
+
+- S: pin the exact Marchmont Papers page for the Cronstrom/Waldeck passage via a sixth OCR source or a different archive.org scan -- five copies all have an OCR gap on this page, though Google's own snippet shows it.
+- S: search Basil Williams and the Cumberland Papers (Windsor) editions, this target's own named unsearched edition risk, via archive.org/HathiTrust.
+- S: full-text search Dobrée vol. 2 (already fts-searchable, no login) for 'S.P.' or 'State Papers' near the Waldeck passage, to see whether it cites SP 87/23 directly rather than SP 84 -- without needing to borrow the book.

@@ -81,3 +81,11 @@ cipher existed and that TNA holds at least one contemporary decipherment for thi
 alongside the target (see REQUEST.md) rather than treating this as ciphertext-only from the start.
 
 **Copy status:** no online image located (confirmed `digitised: false`); **copy-order**. See REQUEST.md.
+
+## While waiting (27 Sept 2026, WAIT-PASS-B)
+
+Waits on: a TNA page-copy order for SP 81/44/225 alongside the candidate key sibling f.88 (REQUEST.md).
+
+- S: search SP 81/44's already-listed June-August 1638 items (Oxenstierna, Palatine, Scudamore, Boswell, Windebank, Leicester) for a decipher/key description closer in date to f.225 than f.88's 30 May.
+- S: fetch f.88's full record detail (note field) individually -- only its description text has been checked so far.
+- S: search OpenAlex/CORE_API_KEY (now set) for a free green-OA copy of the EHR article 'Mission of Sir Thomas Roe to the Conference at Hamburg, 1638-40', not tried with the newer keys.

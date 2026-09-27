@@ -137,3 +137,11 @@ Frederick I, reporting the same Reichart conference — not itself flagged ciphe
 of the same channel that /409 and /409v encode) as context once copies are in hand. Not batched into
 REQUEST.md this session (brief scope: record findings and stage only; batching several targets' requests
 into one REQUEST.md is an access-worker task).
+
+## While waiting (27 Sept 2026, WAIT-PASS-B)
+
+Waits on: a copy request for British Library Add MS 61137 ff.41 and 55 (REQUEST.md, since 25 Sept 2026).
+
+- S: search the HMC printed series directly page-by-page (only web-searched so far) for a Strafford/Raby 1704 report -- this file's own named next step 2.
+- S: fetch SP 90/2/343 (Berlepsch to Frederick I, same Reichart channel, not itself cipher-flagged) for plaintext context on the /409, /409v enclosure -- named in 'Next', not yet fetched.
+- S: search German-language literature on the Reichart-Berlepsch Bavarian mediation channel, flagged as unsearched in the Verdict's own caveat.

@@ -2154,3 +2154,13 @@ with the two items above). Both volumes remain "NOT AVAILABLE ONLINE" per MARCO,
 Status and the reproduction request (outreach/bodleian-rawl-a24-p4.md, ASKS row 30) are unchanged: still with
 the owner. LOCAL-QUEUE.tsv rows L19 and L24 stay `done` (their own verdicts stand); this recheck is additional
 catalogue detail, not a new row.
+
+## While waiting (27 Sept 2026, WAIT-PASS-B)
+
+Waits on: the Bodleian MS Rawl. A. 24/1-2, A.24* reproduction order for the Stamford/Calais P4 gap
+(outreach/bodleian-rawl-a24-p4.md, ASKS row 30), sent 26 Sept 2026 18:01 UTC (project mailbox, Bodleian
+Special Collections), reply pending.
+
+- S: fetch page images for P25-P28 (Manning/Lockhart/Burton/Johnson letters) via tools/iiif_lines.py to replace the OCR-line pairs step -- named suggestion, section 23, not run; would likely raise the 74% C rate.
+- S: settle the P27/P28 'Zachary Johnson' 13%-agreement sub-key mismatch with a third Johnson letter search in the already-fetched Birch OCR text -- flagged, unresolved in section 23.
+- S: grep Birch's own OCR text for other 'vol. xxiv' cross-references near p.73/76 that might independently pin the modern A.24* folio for the Stamford/Calais item, without needing the Bodleian's reply.

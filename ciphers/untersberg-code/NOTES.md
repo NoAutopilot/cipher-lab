@@ -296,3 +296,12 @@ Per job brief `.claude/briefs/runs/2026-09-27-parent-ytbiz-unt-lang2.md`, the na
 **Both of UNT-LANG's questions remain unanswered, not "no":** whether Lang's appendix names a Reichenhall manuscript outside Herzog's twelve, and whether Lang prints, cites or discusses the six-line HS 2398 text, are still untested (not a search result under rule 10 -- the source has never been read by any route tried so far, cloud or otherwise). Sigla TSV: not built (source unread, 0 rows).
 
 No decode, no other host touched, no credentials, no AskUserQuestion, no solved/new/first/unpublished wording. Status stays `open`/`partial` (rule 5's near-solve amendment; nothing here changes the target's evidentiary state, only its access-route exhaustion).
+
+## While waiting (27 Sept 2026, WAIT-PASS-B)
+
+Waits on: LOCAL-QUEUE.tsv row L26 (the owner's desk runner reading Lang 2010's zobodat.at PDF, Anubis-blocked
+from the cloud by both curl and headless Chromium), filed 27 Sept 2026.
+
+- S: check Cappelli's Lexicon abbreviaturarum (archive.org) and Walther's Lexicon diplomaticum (Google Books) against symA's shape -- SO-UNTERSBERG-LEADS reference-dictionary items, unchecked, no wait needed.
+- S: fetch Schöppner's Sagenbuch der Bayerischen Lande vol. 1 (1852) for its shorter initials tradition 'S.O.R.C.E.J.S.A.T.O.M.' to compare against symA -- witness-print lead, unchecked.
+- M: build the same-scribe abbreviation concordance across all 28 IIIF leaves (already on disk) before any further Cappelli/Walther comparison -- methodology lead, unchecked.

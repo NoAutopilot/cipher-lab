@@ -210,3 +210,12 @@ returned HTTP 500, not retried per the good-citizen single-retry rule. No new fr
 this item this pass; digitisation status stands as already recorded in this folder's REQUEST.md. This item
 is now item in the consolidated order `outreach/tna-page-copy-batch.md` (ASKS row 73, status backlog) rather
 than a standalone TNA order.
+
+## While waiting (27 Sept 2026, WAIT-PASS-B)
+
+Waits on: a TNA page-copy order for SP 91/5/108 and one or two 1707 neighbours (REQUEST.md, route identified
+19 Sept 2026, now folded into the consolidated TNA batch, ASKS row 73).
+
+- S: run tools/htrc_ef_headwords.py for 'Whitworth'/'Harley' against Hartley 2002 and Rothstein 1986 -- the HTRC Extracted Features API works from the cloud even though hathitrust.org itself is Cloudflare-blocked; unchecked per this file's own failure log.
+- S: re-run DECODE's sender/holder search for 'Whitworth'/'SP 91' via the now-working browser login (tools/decode_browser_login.js) -- the 19 Sept check used the pre-fix anonymous-JWT route, which 401s on view/list.
+- S: re-grep HMC Portland vols 3-6 (already fetched) for 'Boyle' and 'Moscow' in addition to 'Whitworth', broadening the one term already tried.
