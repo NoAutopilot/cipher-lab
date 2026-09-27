@@ -79,3 +79,12 @@ is a solver's cryptanalytic attempt or a negative claim; this is a read-what-exi
 Hosts this target: api.hcportal.eu, 5 requests (2 record JSON + 3 images), >=1.6s apart, one Accept-header retry
 (the first attempt without `Accept: application/json` got a non-standard HTTP 466 "Access Forbidden" page --
 logged in the Access playbook note above, not a 429/403/challenge, so not a good-citizen-rule stop).
+
+## While waiting (27 Sept 2026, WAIT-PASS-A)
+
+Not waiting on an archive or a person -- images (f.2-4) are already on disk; the block is a dedicated
+transcription pass that exceeded a breadth worker's $2.5 cap, since 26 Sept 2026 (Cheap test 1).
+
+- Run the dedicated transcription pass named in Cheap test 1: build key.tsv from the legible glosses only (601=Dennemarck at grade C; more leads already named). M.
+- Check whether the ~19 unglossed codes, especially the two-letter codes FF/XX/LL/WW/NN/WO, recur in other HStAM 4f Dänemark items already catalogued in this repo or the solver repos. S.
+- Compare the bold glossing hand's style against other HStAM diplomatic-secretary annotations already on disk elsewhere in this repo, to judge whether it is period marginalia or a later HCPortal-era annotation. S.

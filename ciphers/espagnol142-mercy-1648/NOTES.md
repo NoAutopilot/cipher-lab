@@ -1094,3 +1094,12 @@ Search log: no new external search beyond the U1 hold-out grep above (this job's
 novelty classification is the verifier's job, not run here). Requests: archive.org 4 `advancedsearch.php`/
 `metadata` lookups, 4 `_djvu.txt` downloads, all >=1.6s apart, descriptive UA (8 of the brief's 30-request
 allowance). No subagents. No credentials.
+
+## While waiting (27 Sept 2026, WAIT-PASS-A)
+
+Waits on the AGR quote for SEE t. LXIV f.16 (ASKS row 60), drafted 26 Sept 2026, gate 7 then the owner sends,
+since 25-26 Sept 2026.
+
+- Run the homogeneity split (correspondent/date range within a tomo) `es17c7/README.md` names as the next cheap step, before trusting a further judge FAIL/PASS. M.
+- Flag for the parent: NEAR.md's own next-step line ("DECODE R958-R965... waits on the DECODE role upgrade, ASKS 1") is stale -- all 8 were read login-free this pass with no role upgrade needed, per this NOTES.md's own MERCY-DECODE section. S (a correction, not a reading change).
+- Re-run the M2 crib-loop gain-gate test (rule 3) through es17c7 instead of the original es17, now that es17c7 is the better-calibrated corpus, to see whether the numeric gain-gate result changes. M.

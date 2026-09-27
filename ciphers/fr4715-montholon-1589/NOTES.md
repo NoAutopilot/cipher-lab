@@ -1031,3 +1031,12 @@ lines (eight half-sheets), about 1.2x call C's tokens. The dollar figure is on t
 
 Requests this job: 0 network requests; 1 subagent reading call (call D, Opus); no Sonnet call. No credentials, no
 AskUserQuestion, no novelty wording.
+
+## While waiting (27 Sept 2026, WAIT-PASS-A)
+
+Waits on ASKS 79's new BnF capture of f.81r, since 27 Sept 2026 (the image side logged exhausted after two
+recrop attempts, call C and call D, at the current capture).
+
+- Merge call C's digit/letter reads (met G0/G1) with call D's dot flags (met G2) on the same four lines -- both already on disk, each cleared a different gate. M.
+- Eye-check call D's 47 abstained `?` positions against the following digit (36 of 47 sit before a 5 or 3) to see if positional context resolves the 8-vs-0 ambiguity from the crops already on disk. S.
+- Price and stage MONT-READ-ALL's per-line Opus cost (about 125k tokens/4 lines from call D) now, so the full-letter run is budgeted correctly the moment ASKS 79's capture lands. S.

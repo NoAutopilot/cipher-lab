@@ -650,3 +650,12 @@ passes. That gives grade-C sign pairs for the g/9/y/f/u/d families directly. Als
 pass's output.
 Requests: gallica.bnf.fr 3 (f.258r and f.260r native, 1 connection-reset retry), scratch only; no image added to the
 folder. Subagents: 8 Sonnet.
+
+## While waiting (27 Sept 2026, WAIT-PASS-A)
+
+Waits on nobody outside the repository: the M9 hold-out gate (0.340 vs 0.70 bar) means the block is on
+instrument choice, not access, since 27 Sept 2026 (VB-KEY).
+
+- Transcribe f.260 lines with the clerk's decipherment in view, sign-aligned by one reader and checked by a second -- a different instrument than the two blind passes tried. L.
+- Decode f.268 restricted to key v3's high-confidence cells only (23 confirmed, cells attested by 2+ occurrences such as s=i, p=i, o=e, r=e, m=u, b=u, e=p, 26=en), leaving the rest as `[MARK]` -- a partial, honestly-graded reading testable now with no new material. M.
+- Re-run the known-plaintext alignment through `tools/interlinear_align.py` (the general shared tool) on the same f.260 pairs, instead of the private `kp_key_v3.py`, to check whether the shared tool's hard-EM separates the g/9/y/f/u/d families any better. M.

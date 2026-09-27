@@ -475,3 +475,12 @@ See `REQUEST.md` for the request-a-copy draft.
 
 Requests this pass: roderic.uv.es 4 (discover-search API, pid/find redirect, handle page, one bitstream
 download attempt), each paced >=1.5s, descriptive UA. Status stays `partial`.
+
+## While waiting (27 Sept 2026, WAIT-PASS-A)
+
+Waits on a person submitting RODERIC's "Request a copy" form for Bertomeu Masiá 2024 (REQUEST.md, takes the
+requester's own name/email, rule 9), since 26 Sept 2026 (NX-UNBLOCK).
+
+- Check whether Universitat de València holds a separate, longer 2017 doctoral deposit, or the 2024 book itself, under a different RODERIC handle -- named in NOTES as the next step, not yet run. S.
+- Search OpenAlex/HAL/Persée for other Bertomeu Masiá publications on Lope Hurtado/Charles V ciphers that might be open-access, distinct from the request-gated 2024 chapter. S.
+- Re-check the already-fetched 2016 master's thesis PDF for a citation to an open-access precursor (conference paper, preprint) of the 2024 book's material. S.

@@ -271,3 +271,12 @@ remains the one concrete, unopened lead; nothing here changes it. Status unchang
 koehler-1944 row and its named next steps (ASKS 55 NARA/Farago, ASKS 53 Cryptologia scan) are unchanged by this
 job -- read, not edited, since nothing here moves either. `specs/koehler-1944.json` `cheap_test_done` gains two
 entries for `cheap_tests_in_order` items 2 and 3.
+
+## While waiting (27 Sept 2026, WAIT-PASS-A)
+
+Waits on NARA/Farago access (ASKS 55) and the Cryptologia scan (ASKS 53, IA borrow blocked twice, print-disabled
+tier plus a gateway failure), since 25-26 Sept 2026.
+
+- Run the one remaining vig placement in GOLD-K4's grid (`--param modes=plaincipher,keycipher --param arith=beau`), a script-only unit needing no new material. S, tools/family_run.py.
+- Re-run the FBI Vault A-Z Index search with near-miss spellings (Köhler, "New York Nazi spy 1944") beyond the exact "Koehler" string already negative-controlled. S.
+- Extend the TNA Discovery KV 2 sweep with OR-based and date-scoped term combinations, since the existing sweep only tried Koehler+context AND-combinations. S.

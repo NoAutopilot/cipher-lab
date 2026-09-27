@@ -594,6 +594,6 @@ for a different host in CLAUDE.md's Access playbook) before this becomes a narro
 Waits on pinning the AN Marine B7 article number (~21-29) via the SIV catalogue's search form, since 26 Sept
 2026 (NX-UNBLOCK: host reachable, search form not yet reproduced).
 
-- Reproduce SIV's search form properly (carry the landing page's jsessionid, try POST not GET, the CalmView/Lambeth pattern this repo already solved) -- the host answers, only the form is unsolved. M.
+- Reproduce SIV's search form (carry the jsessionid, try POST not GET, the CalmView/Lambeth pattern) -- the host answers, only the form is unsolved. M.
 - Run the open-index scholarship pass (OpenAlex, Semantic Scholar, Persée, HAL) for "Paget" + "Genes"/"Cagliari" consul, flagged in NOTES as not yet tried beyond ordinary web/Google Books search. S, tools/print_check.py.
 - Re-fetch the AAE PDF (archivesdiplomatiques.diplomatie.gouv.fr) through the browser tool/OCR rather than the raw WebFetch that returned it unreadable. S.

@@ -249,3 +249,12 @@ Status unchanged: `found-solved` (fr.3985 no.7, grade F2, a clear-text copy, not
 `blocked` (fr.3984 nos. 6, 8, 88, 90). No decoding, transcription or novelty classification performed
 (rule 10; out of scope for an image-fetch job). file_shrink_guard clean on NOTES.md and
 images/fr3985/*.
+
+## While waiting (27 Sept 2026, WAIT-PASS-A)
+
+Waits on reading Acta Nuntiaturae Gallicae (Sega legation), a modern critical print-only/paywalled edition
+unreachable on IA/HathiTrust/Google Books, since 24 Sept 2026 (the check-solved brief's rule 9 blocker).
+
+- Search OpenAlex/Persée/HAL for the Sega legation / Baudouin-Desportes 1593 correspondence, in case a secondary work excerpts the edition. S, tools/print_check.py.
+- Fetch the four fr.3984 folios (nos. 6, 8, 88, 90) at native resolution now, the way IMG-FETCH already did for fr.3985 no.7 -- images ready on disk for the solver the moment the edition question clears. M, tools/iiif_lines.py.
+- Re-grep both solver-repo clones for "fr.3984"/"Baudouin-Desportes"/"Sega" more broadly (partial matches, not only the exact strings already tried), in case a partial transcription was added since 24 Sept 2026. S.

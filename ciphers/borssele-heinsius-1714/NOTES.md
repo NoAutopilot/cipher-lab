@@ -82,6 +82,6 @@ Waits on a copy order or archive visit to view NA 3.01.19 invnr. 1836 (H.A. 1836
 to the "onopgelost cijfer" on the same leaf, since 24-25 Sept 2026 (REQUEST.md, consolidated Heinsius-circle
 request).
 
-- Re-read Veenendaal's edition (already fetched, images/heinsius_15_GS227_531.jpg) for any other footnote cross-referencing this "oplossing" by letter number, which could resolve the ambiguity without the leaf. S.
+- Re-read Veenendaal's edition (already on disk) for another footnote cross-referencing this "oplossing" by letter number, no leaf needed. S.
 - Compare this target's cipher design against the key.tsv/decode.json already recovered for sibling Heinsius-circle folders (e.g. heinsius-hermitage-1704, heinsius-dopff-1702) for a design match. M.
 - Search Google Books/HathiTrust again for "van Borssele van der Hooghe" + "cijfer"/"chiffre" 1714, beyond the one WebSearch already run. S.

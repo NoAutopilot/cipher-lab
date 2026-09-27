@@ -175,3 +175,11 @@ Search log (rule 10): reported above. Not classified for novelty (verifier's job
 for HU10 specifically: `resources.huygens.knaw.nl` 5 (pages.json source=4, pp.445/446/447, one search-pane
 fetch to locate the letter's page_index), `www.nationaalarchief.nl` 1 (invnr 1034). WebSearch 1. See `ciphers/
 breda-statengeneraal-1624-25/NOTES.md` for this session's full request accounting across all three rows.
+
+## While waiting (27 Sept 2026, WAIT-PASS-A)
+
+Waits on photographs of NA 3.01.19 invnrs. 946 and 2317, since 24 Sept 2026 (REQUEST.md, row HU2).
+
+- Re-read the edition's footnote for letter no. 251 (25 Mar 1704, inv.nr. 946) again -- it lacks "onopgelost," unlike 166/177/477, so it may already be solved in print. S.
+- Compare HU10's four read codes (14, 33, 15, 50, from letter 1231, Dec 1705) against invnr 2317's date (c.1705) for any structural fit with l'Hermitage's known code design, even without the key itself. M.
+- Systematically sweep the printed edition (Deel 3/4, already fetched) for any further l'Hermitage letters footnoted "cijferschrift"/"cijfer" not yet catalogued here, since two H.A. numbers already turned up 19 months apart. M.

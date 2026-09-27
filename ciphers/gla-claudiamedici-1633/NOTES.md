@@ -119,3 +119,12 @@ queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.
 
 - `"Claudia de Medici" AND "Baden-Baden" AND 1633 AND Geheimschrift`: no relevant hit (0 results, none about the letter).
 - `"Escher von Binningen" AND Breisach AND Aldringen`: no relevant hit (0 results, none about the letter).
+
+## While waiting (27 Sept 2026, WAIT-PASS-A)
+
+Waits on a GLA Karlsruhe copy order for 81 Nr. 442/813, "waiting on you" since 24 Sept 2026 (REQUEST.md); the
+BAGK NF2 Bd.8 edition is separately blocked (no free route, NX-UNBLOCK 26 Sept 2026).
+
+- Read GLA Bestand 48's finding-aid text (the Baden cipher-key rubric, DA2, 1676-1761) for any item predating 1633 naming this pair -- catalogue-text only. S.
+- Queue the JSTOR phrase-only family (ii): a distinctive phrase quoted from the letter's own catalogue description, no cipher keyword -- only family (i), sender/date/keyword, has run so far (26 Sept 2026 runner). S, JSTOR-QUEUE.tsv row.
+- Run OpenAlex/Persée/HAL for "Claudia de' Medici" Baden-Baden 1633 diplomatic correspondence scholarship, beyond the generic WebSearch already tried. S.

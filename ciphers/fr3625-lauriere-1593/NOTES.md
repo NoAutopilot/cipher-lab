@@ -1029,3 +1029,12 @@ suggestion, Usage 7).
 
 Requests this session: gallica.bnf.fr 0. The cached native region was reused, and `--ark` read the cache. Vision
 calls: 2 (the two passes), of the brief's 3.
+
+## While waiting (27 Sept 2026, WAIT-PASS-A)
+
+Waits on the fr.3632 no.8 image (owner-side BnF item, ASKS 78 devis batch), since 27 Sept 2026 -- but the
+folder's own named next step (U3/U4) needs no new material at all.
+
+- Run U3 (settle the 91 disagreements) then U4 (`key57/control_key57.py --apply-f58`, 20 seeds) on the 49 sheets already on disk -- the brief's own next step. M.
+- Run `tools/interlinear_align.py` on fol.58r's interlinear gloss as a C-grade crib, independent of key57, per NOTES's own suggestion. M.
+- A higher-resolution/adaptive re-crop of fr.3985 f.58r's dense middle section (flagged as this session's own weaker link, cheaper than a fresh key-table pass). M.
