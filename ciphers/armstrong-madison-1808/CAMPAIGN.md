@@ -92,7 +92,7 @@ UTC), all reported UNSOLVED, none redone by this seed:
 
 | id | rank | hypothesis | needs | est_usd | status | result |
 |---|---|---|---|---|---|---|
-| H1 | 1 | Reconcile the ARM-KEYIMAGE / codex-2026-09-27f discrepancy: `git log --all` / `git fsck --unreachable` / re-read every PR and ROOM.md line touching that path to establish whether the claimed Livingston-key retrieval exists anywhere, before treating it as lost or as evidence for anything | nobody | 1 | open |  |
+| H1 | 1 | Reconcile the ARM-KEYIMAGE / codex-2026-09-27f discrepancy: `git log --all` / `git fsck --unreachable` / re-read every PR and ROOM.md line touching that path to establish whether the claimed Livingston-key retrieval exists anywhere, before treating it as lost or as evidence for anything | nobody | 1 | running session_013E5jUS9GV1AsxLeUcwgbf6 |  |
 | H2 | 2 | Formalize SO-ARMSTRONG-COMPONENTS' glyph-20-null finding (target outranks all 20 of its own shuffles) into a rule-3-sized control: rerun `codex-2026-09-27b/glyph_solve.cpp`'s model with >=200 shuffles (matching this repo's own ARM-A2/ARM3-DICT convention) and report the real percentile, PASS or FAIL | nobody | 2 | open |  |
 | H3 | 3 | Run the positional/structural test ARM-S3 named as Annet's own next step (do the target's shorthand marks group in twos, the way a two-digit numbered sign index would) against the shuffled-position null already built in `adj/adj_test.py` | nobody | 1.5 | open |  |
 | H4 | 4 | Re-derive the keyless NARA IIIF route for frame M34-014-0025 (Armstrong's known 15 Feb 1808 THE=972 letter, ARM-S2's flagged failure -- HTML app shell instead of an image) and run the superscript-tick-vs-baseline-dash check ARM-S2 left undone | nobody | 1 | open |  |
