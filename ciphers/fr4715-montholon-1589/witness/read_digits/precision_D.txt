@@ -1,0 +1,5 @@
+L03: 103/103 = 1.000
+L08: 104/106 = 0.981
+L13: 107/107 = 1.000
+L15: 114/114 = 1.000
+pooled precision 428/430 = 0.995; control (within-line digit shuffle, 20, seed 1) mean 0.584

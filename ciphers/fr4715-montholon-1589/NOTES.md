@@ -980,3 +980,54 @@ added by hand.
 - L08: 12 segments, central throughout, joins continuous; opens 83 93 65 65 23..., ends ...47 50 63, seg 12 blank.
 - L13: 12 segments, central throughout, joins continuous; opens 23 19 23 73 65 85..., ends ...63 23 2 and a colon-like sign, seg 12 blank.
 - L15: 12 segments, central throughout, joins continuous; opens 63 50 85 95 73 25 11..., ends ...90 42 9?, seg 12 blank.
+
+**U2, call D (Opus subagent, the eight half-sheets only, one call, 124,828 subagent tokens, 177 s; raw
+`witness/read_digits/call_D.tsv`, prompt verbatim and warnings `call_D_note.md`).** The prompt is call C's recorded
+instruction set and layout description, adapted to two sheets per line, plus one sentence ("Pay particular attention to
+the small dots above digits; they matter"). Call C's own prompt text was never committed, so this is not a byte copy of
+it (disclosed; the brief allowed the MONT-RECROP wording where the exact text is not on disk). Call D's text is now on
+disk. The reader reported seeing the sheets at about 1350 px wide, i.e. without the ~0.74x shrink call C reported, and
+the small dots "visible but only just resolvable". It lost the line nowhere.
+
+**U3, scores (`scripts/mont4715c.py digscore`, unchanged; `fix_call_D.txt`, `fix_call_D_m0.txt`, `precision_D.txt`).**
+
+| stream | sheets | G0 digit LCS (ctrl) | G1 letter (ctrl) | G2 dotted (ctrl) | precision, non-gating (ctrl) | `?` | gates |
+|---|---|---|---|---|---|---|---|
+| **call D, Opus, margin 8 (decides)** | half-width, 2 per line | 427/473 = **0.903** (0.425) | 146/210 = **0.695** (0.322) | 28/35 = **0.800** (0.179) | 428/430 = 0.995 (0.584) | 47 | G2 met; G0, G1 missed |
+| call D, fixed span (margin 0) | half-width | 0.898 (0.474) | 0.689 (0.321) | 0.824 (0.187) | | | |
+| call C, Opus, margin 8 | whole-width slope | 0.983 (0.450) | 0.938 (0.404) | 0.657 (0.100) | 467/471 = 0.992 (0.559) | 5 | G0, G1 met; G2 missed |
+| call B, Sonnet, margin 8 | whole-width slope | 0.886 (0.458) | 0.657 (0.346) | 0.000 (0.000) | 0.836 (0.532) | | none |
+| call A, Opus, margin 8 | old fixed-y | 0.716 (0.398) | 0.604 (0.314) | 0.400 (0.070) | 0.958 (0.649) | | none |
+| Tomokiyo's dump, margin 8 | -- | 1.000 (0.451) | 0.990 (0.397) | 1.000 (0.185) | | | reference |
+
+**Verdict: outcome (c) -- gates not met.** The pre-registered rule was all three on the same call. The dots now clear
+their gate (0.800 vs 0.70, shuffle 0.179; 28 of 35 dotted groups, against call C's 23), but digits (0.903 vs 0.92) and
+letter groups (0.695 vs 0.85) fall under theirs, so under the brief the narrower sheet costs digits and (b) applies: the
+image side at this capture is logged as exhausted after two attempts (HYPOTHESES.md), and ASKS 79 (the new BnF capture)
+stays in front. No second reading call was run and nothing in the gates, scorer or window was changed after the scores.
+
+What the numbers say, for whoever briefs next (description, not a licence):
+- **The digit loss is abstention, not misreading.** Precision on the digits the reader did write is 0.995 (428/430,
+  control 0.584), the same as call C's 0.992. G0 falls because 47 positions are `?` (call C: 5). Of the 47, 36 stand
+  immediately before a 5 or a 3 (21 and 15), where the dump's 85/83 codes sit; the reader's own first warning names one
+  recurring looped-and-tailed glyph, "possibly an 8 or a variant 0", left as `?` every time. Call C read the same shape as
+  8, with a warning that it might be 0 joined to 5. So the larger image made the reader less willing to commit to the 8
+  form, not less accurate; the letter-group loss follows from those gaps through the key parse. This reading of the `?`
+  is from their positions and the reader's note; it was not tested by substituting 8, which would be tuning on the
+  calibration lines after seeing the score.
+- **The dots respond to pixel size.** From call C to call D the one image change was about 1.35x more displayed pixels
+  per mark (native ~30 px digit height at 3x, shown at ~1.0x instead of ~0.74x: roughly 90 instead of 67 displayed px per
+  digit), and dotted recall went 0.657 -> 0.800 against controls near 0.1-0.18.
+- **What a sharper capture must show** for the recipe to be worth re-running at whole width: digits at about 40 px tall
+  natively (about 1.35x the present 30 px), so that a whole-width slope sheet, shrunk to fit a ~2000 px long edge, still
+  gives each digit about 90 displayed px -- the scale at which call D's dots cleared their gate -- without the half-width
+  layout that coincided with the reader abstaining on the 8 form.
+- Not run, and not for this job to decide: whether the abstention is a property of the half-width layout or of the added
+  prompt sentence cannot be separated from one call; any further reader test on these four lines would be a third image
+  attempt, which the brief and rule 3's repeated-attempt paragraph do not license at this capture.
+
+Cost per line from this call (for any later MONT-READ-ALL): one Opus call, about 125k subagent tokens and 177 s for four
+lines (eight half-sheets), about 1.2x call C's tokens. The dollar figure is on the parent's `get_session`.
+
+Requests this job: 0 network requests; 1 subagent reading call (call D, Opus); no Sonnet call. No credentials, no
+AskUserQuestion, no novelty wording.
