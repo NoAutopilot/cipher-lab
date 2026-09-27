@@ -108,10 +108,14 @@ Precedents added to README "Per-unit pricing precedents" (case-row digest, paper
 
 ## LANE SALV2 handoff (session_01288kYmmNxAqAedKtgvxyD1), 27 September 2026 (live)
 
-Brief `.claude/briefs/runs/2026-09-27-lane-salv2-orchestrator.md`. Job 1 running: SALV2-J1A (session_01Vxjaf6WBWx6qv59akhYTrJ,
-f54r+f54v) and SALV2-J1B (session_01VzEYtGGPUK4sC6LisYPYA7, f55r+f56r+f56v), each two blind code+mark passes on per-box crops
-plus a reconciliation, brief `2026-09-27-lane-salv2-ytbiz-j1-transcribe.md`; crop_plain_leaf.py gained `--boxes` (per-box
-shuffled crops, key kept outside the crop folder). Job 2 (rule-7 rebuild, cm rerun control first) waits on both. Job 3 reserve.
+Brief `.claude/briefs/runs/2026-09-27-lane-salv2-orchestrator.md`. **Job 1 done** (about 19.75 of the 36 priced): SALV2-J1A
+(9.11, f54r+f54v) and SALV2-J1B (10.64, f55r+f56r+f56v), two blind code+mark passes on per-box crops + reconciliation each
+(crop_plain_leaf.py gained `--boxes`). Of the 98 SALV-SPLIT-confirmed boxes: 93 written as signs into the real
+ciphertext_f5*.tsv (AB 49, M 44, 8 code `?`), 5 both-pass WORD left plain (two restored to `_` by the lane, c844a59); O -> o.;
+pass A/B code+mark agreement 51/98 (52 percent), so the new tokens carry about 20 percent model error and the corrected text
+about 6.9 percent per sign. **Job 2 running:** SALV2-J2 (session_01RzqyN5cbc5J4LpxprPfLpT), rebuild + relabel + cm control at
+0.07 and 0.08 then target, brief `2026-09-27-lane-salv2-ytbiz-j2-rebuild.md`. Job 3 condition (job 1 under 30) met; runs
+after job 2 if the window reads allowed.
 
 ## LANE SALV handoff (session_01PUAQ15dRtV3yV1eskpRLg5), 26-27 September 2026 (closed at the 300k context line; one worker still live)
 

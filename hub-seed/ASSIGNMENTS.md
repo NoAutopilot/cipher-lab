@@ -1007,3 +1007,4 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-27T02:01Z	session_01VzEYtGGPUK4sC6LisYPYA7	SALV2-J1B (Sonnet, cap 18, box 75)	fr2933-salviati-1525 f55r+f56r+f56v: two blind code+mark passes + reconcile on SALV-SPLIT confirmed boxes, O guess	brief 2026-09-27-lane-salv2-ytbiz-j1-transcribe.md; LANE SALV2
 2026-09-27T02:37Z	session_01Vxjaf6WBWx6qv59akhYTrJ	SALV2-J1A	done 9.11 D (get_session), ledgered, retitled ARCHIVED, archived by LANE SALV2	34ed005
 2026-09-27T02:37Z	session_01VzEYtGGPUK4sC6LisYPYA7	SALV2-J1B	done 10.64 D (get_session), ledgered, retitled ARCHIVED, archived by LANE SALV2	3da6ac3
+2026-09-27T02:37Z	session_01RzqyN5cbc5J4LpxprPfLpT	SALV2-J2 (Sonnet, cap 8, box 90)	fr2933-salviati-1525: rule-7 rebuild on the corrected split, HYPOTHESES/NEAR relabel, cm rerun control first at CM_ERR 0.07+0.08	brief 2026-09-27-lane-salv2-ytbiz-j2-rebuild.md; LANE SALV2
