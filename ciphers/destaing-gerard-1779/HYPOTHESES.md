@@ -21,3 +21,16 @@ individually and combined. Consistent with these being different codebooks: diff
 three years later than this letter. Even a real hit would only be numeric coincidence, not a shared decode --
 two-part codes assign numbers to entries independently per book (marbois.htm's own description of Codes A-D).
 No period code tested this session reads d'Estaing's letter.
+
+| date (UTC) | family | parameters | seeds | CONTROL mean (5-95pct) | TARGET hits | judge | gate met | label |
+|---|---|---|---|---|---|---|---|---|
+| 27 Sept 2026 | onepart_dict_position (hand-run via `onepart_test.py`, not in tools/family_run.py) | top 12 distinct codes vs fr18 word-type initial-letter bands (66,291 types), consistent initials = {a,d,e,i,l,n,p,q,v} (folded initials of de/la/le/les/que/et/a/en/il/ne/pour/vous), range 2-597 | 1 (1000 Monte Carlo draws, seed=1) | 5.76 (5-95pct 3-9) | 6 | n/a (band-consistency count, not a plaintext candidate) | no -- inside control band | for DES-PART: destaing one-part dictionary-position test |
+
+**Reading (rule 3/4, S-grade, non-test at this N):** the 12 most frequent code groups' relative positions in
+the 2-597 range are no more consistent with a one-part-alphabetical placement of common French function words
+than 1000 uniform random draws of 12 values in the same range (6 of 12 vs control mean 5.76, 5-95pct [3,9]).
+The same control also stands for the two-part null (position uninformative), since the null model for
+"two-part" is exactly the uniform-random draw already used. Per CLAUDE.md rule 3, a target inside the
+control's band is "no support for one-part at this N", not a negative on the code's design -- the test does
+not distinguish one-part from two-part at N=12 against 26 letter-bands. See NOTES.md "DES-PART (27 Sept
+2026)" for the full run and next-step discussion.

@@ -6,6 +6,7 @@ Usage: python3 tools/freq.py FILE [--sep REGEX] [--top N] [--strip-clear]
        python3 tools/freq.py FILE --kwic TOKEN [--width W] [--sort left|right]
        python3 tools/freq.py FILE --repeats N
        python3 tools/freq.py FILE --split-at N
+       python3 tools/freq.py FILE --onepart-dict LANG [--onepart-range MIN,MAX] [--top N]
 
 Tokens are split on ';' and whitespace by default. Lines starting with '#'
 are ignored. --strip-clear drops tokens that contain no digit, which removes
@@ -54,10 +55,34 @@ repeats (already in the table above).
 by eye/a one-off script (not automated here -- see LESSONS-TOMOKIYO.md C1);
 this option takes that N and reports token count, distinct count and index
 of coincidence separately for the tokens below N and at-or-above N.
+
+--onepart-dict LANG (Tomokiyo codebreaking.htm "Partial Encoding", "Andre
+Langie's Example"; LESSONS-TOMOKIYO.md C2): a one-part code lists its
+vocabulary alphabetically, so a frequent group's numeric position within the
+code's own range should fall in the initial-letter band a period
+dictionary's headwords occupy at that same relative position. LANG is a
+language key from tools/judge_plaintext.py's LANG_CORPORA (e.g. "fr18");
+this option builds cumulative initial-letter bands (a-z) from the DISTINCT
+folded word TYPES found in that corpus (a running-text corpus's raw word
+TOKENS are dominated by a handful of function words -- BER-KWIC, 27 Sept
+2026, found "je" alone at 3.8 pct of tokens in one sample -- so counting
+distinct types is closer to a dictionary headword list, though still not
+a real period dictionary's own page layout; see berthier-napoleon-1812
+NOTES.md). Prints the a-z band table (letter, cumulative-fraction start,
+end, distinct-type count) and then, for the --top N most frequent numeric
+tokens in FILE, each one's relative position in --onepart-range MIN,MAX
+(default: the file's own min/max numeric token) and the band it lands in.
+This prints the band mapping only -- the hypothesis test (does the target
+land more often in a band consistent with a chosen word list than a
+shuffled-range control does, CLAUDE.md rule 3) is run by a separate script
+that calls onepart_dict_bands()/band_for_frac() below, the same way
+period_code_test.py sits beside this tool for a different family (see
+ciphers/destaing-gerard-1779/onepart_test.py for a worked example).
 """
 import argparse
 import re
 import signal
+import sys
 from collections import Counter
 
 
@@ -158,6 +183,100 @@ def split_stats(toks, split_at):
     return {"low": side(low), "high": side(high)}
 
 
+FOLD_ACCENTS = str.maketrans({"ä": "ae", "ö": "oe", "ü": "ue", "ß": "ss", "é": "e", "è": "e", "ê": "e", "à": "a",
+                               "ç": "c", "ù": "u", "û": "u", "î": "i", "ô": "o", "â": "a", "ë": "e", "ï": "i",
+                               "á": "a", "ã": "a", "í": "i", "ó": "o", "õ": "o", "ú": "u", "ñ": "n"})
+
+
+def fold_word(w):
+    """lowercase, fold accents to plain a-z, drop anything else -- same convention as
+    tools/judge_plaintext.py's fold(), duplicated here so this module has no import-time
+    dependency on it (see the --onepart-dict docstring)."""
+    w = w.lower().translate(FOLD_ACCENTS)
+    return re.sub(r"[^a-z]", "", w)
+
+
+def word_type_bands(texts):
+    """Cumulative initial-letter (a-z) bands over the DISTINCT folded word TYPES found in
+    texts (an iterable of raw strings). Returns (bands, total) where bands is a list of
+    (letter, start_frac, end_frac) covering [0,1) in alphabetical order, and total is the
+    number of distinct types found. A one-part code lists entries in this same alphabetical
+    order, so a group's relative position in the code's numeric range should fall in the
+    band its intended word's initial letter occupies here (Langie/Mansfield, LESSONS-
+    TOMOKIYO.md C2)."""
+    types = set()
+    for t in texts:
+        for w in re.findall(r"[A-Za-zÀ-ÿ]+", t):
+            fw = fold_word(w)
+            if fw:
+                types.add(fw)
+    counts = Counter(w[0] for w in types)
+    total = len(types)
+    bands = []
+    cum = 0
+    for letter in "abcdefghijklmnopqrstuvwxyz":
+        start = cum / total if total else 0.0
+        cum += counts.get(letter, 0)
+        end = cum / total if total else 0.0
+        bands.append((letter, start, end))
+    return bands, total
+
+
+def band_for_frac(bands, frac):
+    """The letter whose cumulative band [start, end) contains frac (clamped to [0, 1))."""
+    frac = min(max(frac, 0.0), 0.999999)
+    for letter, start, end in bands:
+        if start <= frac < end:
+            return letter
+    return bands[-1][0]
+
+
+def onepart_dict_bands(lang):
+    """word_type_bands() built from tools/judge_plaintext.py's LANG_CORPORA[lang] (gzip-aware).
+    Imported lazily so a caller that never uses --onepart-dict pays no cost and no other
+    freq.py option depends on judge_plaintext.py existing."""
+    import gzip
+    from pathlib import Path
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from judge_plaintext import LANG_CORPORA  # noqa: E402
+    paths = LANG_CORPORA.get(lang)
+    if not paths:
+        raise SystemExit(f"--onepart-dict: no corpus for language {lang!r} in "
+                          f"tools/judge_plaintext.py's LANG_CORPORA")
+    texts = []
+    for p in paths:
+        p = Path(p)
+        if p.suffix == ".gz":
+            texts.append(gzip.open(p, "rt", encoding="utf-8", errors="replace").read())
+        else:
+            texts.append(p.read_text(encoding="utf-8", errors="replace"))
+    return word_type_bands(texts)
+
+
+def print_onepart(toks, lang, top_n, rng):
+    bands, total = onepart_dict_bands(lang)
+    print(f"# onepart-dict {lang}: {total} distinct word types, bands a-z "
+          f"(cumulative fraction of distinct types)")
+    print("letter\tstart\tend")
+    for letter, start, end in bands:
+        print(f"{letter}\t{start:.4f}\t{end:.4f}")
+    print()
+    nums = [t for t in toks if re.match(r"^\d+$", t)]
+    if rng:
+        lo, hi = rng
+    else:
+        vals = [int(t) for t in nums]
+        lo, hi = (min(vals), max(vals)) if vals else (0, 1)
+    c = Counter(nums)
+    print(f"# range {lo}-{hi}")
+    print("token\tcount\tfrac\tband")
+    for tok, cnt in c.most_common(top_n):
+        v = int(tok)
+        frac = (v - lo) / (hi - lo) if hi > lo else 0.0
+        band = band_for_frac(bands, frac)
+        print(f"{tok}\t{cnt}\t{frac:.4f}\t{band}")
+
+
 def print_contacts(toks, k, tag_min, tag_threshold):
     print("token\tcount\tpct\tself_succession\ttag\tpreceders\tfollowers")
     for r in contacts_table(toks, k, tag_min, tag_threshold):
@@ -220,6 +339,10 @@ def main():
                      help="min count for a --contacts prefix/suffix-like tag (default 3)")
     ap.add_argument("--tag-threshold", type=float, default=0.4, dest="tag_threshold",
                      help="context-concentration threshold for a --contacts tag (default 0.4)")
+    ap.add_argument("--onepart-dict", metavar="LANG", dest="onepart_dict",
+                     help="map --top frequent tokens' range position to a LANG period-vocabulary initial-letter band")
+    ap.add_argument("--onepart-range", metavar="MIN,MAX", dest="onepart_range",
+                     help="value range for --onepart-dict position mapping (default: file's own min/max numeric token)")
     a = ap.parse_args()
 
     toks = load_tokens(a.file, a.sep, a.strip_clear)
@@ -242,6 +365,15 @@ def main():
         if did_new:
             print()
         print_split(toks, a.split_at)
+        did_new = True
+    if a.onepart_dict:
+        if did_new:
+            print()
+        rng = None
+        if a.onepart_range:
+            lo_s, hi_s = a.onepart_range.split(",")
+            rng = (int(lo_s), int(hi_s))
+        print_onepart(toks, a.onepart_dict, a.top, rng)
         did_new = True
     if did_new:
         return

@@ -68,3 +68,111 @@ Named next step (not run): Tomokiyo's partial-encoding and dictionary-position s
 test a one-part hypothesis by placing the frequent groups (de, la, le, que) at their dictionary-position bands in the 1-597
 range; log support or no support against a shuffled-range control (rule 3). Cost band S (script pass; needs
 `tools/freq.py --split-at` and `--onepart-dict`, SYSTEM.md "Tools wanted", added by the worker that runs it). Status stays open.
+
+## DES-PART (27 Sept 2026, parent worker DES-PART)
+
+Ran the named next step above. Intake gate re-checked: `python3 tools/intake_gate_check.py destaing-gerard-1779` ->
+`open (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0. Script-only, no subagents,
+no network.
+
+**U1: frequency and boundary groups.** `structure/codes_only.txt` (216 CODE tokens, the two runs concatenated in
+document order, stripped of the CLEAR clause and header/closing text via `ciphertext.tsv`'s own `kind` column --
+Note: concatenating the two runs creates one artificial adjacency at the seam, code_idx 139/140 (tokens 287|65),
+that does not exist in the real letter; this affects only the single contact-table entry for the pair "287 65"/"65
+367" and not the frequency counts, split-at counts, or the U3 test below, none of which depend on run-adjacency).
+`tools/freq.py structure/codes_only.txt --contacts 12 --split-at 300` -> `structure/u1_contacts_split.tsv`:
+
+| token | count | pct | self_succession | tag |
+|---|---|---|---|---|
+| 401 | 13 | 6.0% | 0 | neither |
+| 382 | 10 | 4.6% | 0 | neither |
+| 152 | 8 | 3.7% | 0 | neither |
+| 109 | 7 | 3.2% | 0 | neither |
+| 450 | 6 | 2.8% | 0 | neither |
+| 235 | 6 | 2.8% | 0 | neither |
+| 240 | 5 | 2.3% | 0 | neither |
+| 410 | 5 | 2.3% | 0 | **prefix-like** |
+| 471 | 4 | 1.9% | 0 | **suffix-like** |
+| 402 | 4 | 1.9% | 0 | neither |
+| 378 | 4 | 1.9% | 0 | neither |
+| 346 | 4 | 1.9% | 0 | neither |
+
+Matches ZX2-EST's earlier top-12 frequency list exactly (see check-solved/ZX2-EST section above); new this
+session: 410 tags prefix-like (right context concentrated on 380/400, left context all-distinct) and 471 tags
+suffix-like (left context concentrated on 109, right context all-distinct) under `--contacts`' Yardley-42635
+rule -- both below `--tag-min`'s usual comfort zone (counts 5 and 4) so noted, not leaned on. `--split-at 300`:
+low(<300) 108 tokens/58 distinct/IC 0.0190, high(>=300) 108 tokens/46 distinct/IC 0.0339 -- the high side is
+somewhat less flat than the low side, but neither approaches a tight monoalphabetic block's IC (cf.
+berthier-napoleon-1812's 0.0395-0.0742 low-block finding); not read as a structural signal on its own.
+
+**Boundary groups** (verbatim, from `ciphertext.tsv`):
+
+| run | position | codes | clear text on the other side |
+|---|---|---|---|
+| BODY_CODE_A start | code_idx 0-1 | 240, 318 | ...preceded by "Monsieur" (end of salutation) |
+| BODY_CODE_A end | code_idx 138-139 | 14, 287 | ...followed by "Je me flatte que j'aurai l'ordre ou la permission de suivre..." |
+| BODY_CODE_B start | code_idx 140-141 | 65, 367 | preceded by "...le 9 de mars dernier, si ce la est" |
+| BODY_CODE_B end | code_idx 214-215 | 137, 401 | ...followed by "Monsieur de le Marquis de Bretigni que vous aviéz eu la bonté de m'annoncer n'est point arrivé..." |
+
+**U2: boundary grammar (grade M, no candidate is a reading).** Two of the four boundaries are genuinely
+grammar-forced (clause-initial, the code run opens a sentence whose syntax is fixed by what follows); the
+other two are sentence-final (the code run ends before an unrelated new sentence/paragraph begins), which
+18th-c. French syntax does not constrain beyond "ends with terminal punctuation" -- flagged as weak rather
+than papered over with false confidence.
+
+| boundary | constraint | forced word class | candidates (M, <=3, not a reading) |
+|---|---|---|---|
+| BODY_CODE_A start (after "Monsieur") | strong -- opens the letter's first independent clause; French finite clauses require an explicit subject | subject pronoun + finite verb (1st person report opening) | "J'ai" (report-opening formula, "j'ai l'honneur de..."); "Je" (bare subject before a verb); "Il" (impersonal, "il est de mon devoir...") |
+| BODY_CODE_A end (before "Je me flatte...") | weak -- sentence-final; "Je me flatte que" opens an unconnected new sentence, no conjunction bridges the two | open class (any sentence-final content word) | "arriver" (verb, situation-report closing); "chiffres" (noun, echoing the immediately following clear "les chiffres de la lettre"); "Georgie" (place name, echoing the letter's later closing-paragraph topic) |
+| BODY_CODE_B start (after "si ce la est") | strong -- "si cela est" is a conditional protasis; French syntax requires an apodosis clause to follow immediately | subject pronoun (or adverb) opening the apodosis | "Il" (impersonal apodosis, "il faudra/il sera..."); "Je" (first-person continuation, "je vous prie..."); "Vous" (addressing Gérard directly, "vous pourrez...") |
+| BODY_CODE_B end (before "Monsieur de le Marquis de Bretigni...") | weak -- paragraph break; the closing paragraph opens an unconnected new topic (Bretigny's arrival) | open class (any sentence-final content word) | "Méridionale" (adjective, echoing cribs.tsv's candidate "...croisière de la Caroline Méridionale"); "secourir" (verb, echoing the letter's own later clear "de les y secourir"); "arriver" (verb, situation-report closing) |
+
+No candidate above is wired into a decode or treated as a reading; all are grade M, offered as leads for a
+future crib-anchored pass, per the brief.
+
+**U3: one-part dictionary-position test.** Built `tools/freq.py --onepart-dict LANG` (Tomokiyo C2,
+LESSONS-TOMOKIYO.md, SYSTEM.md "Tools wanted" row removed in this commit): given a language key from
+`tools/judge_plaintext.py`'s `LANG_CORPORA`, it builds cumulative initial-letter (a-z) bands from the corpus's
+DISTINCT folded word TYPES (not raw token counts, which BER-KWIC found dominated by function words like "je"
+at 3.8% of tokens in one sample -- see berthier-napoleon-1812 NOTES.md), then maps a file's most frequent
+numeric tokens to the band their relative position in a stated range lands in. Offline test:
+`tools/tests/test_freq_onepart.py` (17/17 checks pass, entirely synthetic, no dependency on the real fr18
+corpus), plus the existing `tools/tests/test_freq.py` (22/22, unaffected).
+
+`ciphers/destaing-gerard-1779/onepart_test.py` runs the actual hypothesis test with the pre-registered gate
+(built before this run, not adjusted after seeing the result): fr18 (era-matched, this letter's own spec
+already names it -- see specs/destaing-gerard-1779.json's judge block) initial-letter bands from 66,291
+distinct word types; the top 12 groups' relative position in range 2-597 (this letter's own min/max code
+value) checked against the initials of {de, la, le, les, que, et, à, en, il, ne, pour, vous} -- 9 distinct
+folded initials of 26 (a, d, e, i, l, n, p, q, v), covering about 47.6% of the band width by construction
+(not 9/26 = 34.6%, since French function-word initials are themselves common letters in the fr18 vocabulary):
+
+```
+TARGET consistent-band count: 6 of 12
+CONTROL (1000 draws of 12 distinct values, seed=1): mean 5.76 (sd 1.73), 5-95pct [3,9]
+GATE (target > control p95): False -- no support for one-part at this N
+```
+
+6 of 12 sits inside the control's 5th-95th percentile band and close to the control mean (5.76) -- **no
+support for one-part at this N** (rule 3: a target inside the control band is a non-test on the hypothesis,
+not a negative on the code). The control itself is a real test, not a non-discriminating shape (CLAUDE.md
+rule 3's bCAS/AX-5799 paragraph): band width is far from 0 or 1 (47.6%) and the control distribution has
+real spread (sd 1.73, mean tracks the analytic expectation 12 x 0.476 = 5.71 closely), so the null this
+control represents genuinely could have separated from the target and did not. The same control also stands
+for the two-part null (position carries no information) per the script's own docstring -- one control run
+answers both framings, since a two-part code's null model (position uninformative) IS the uniform-random
+draw already used.
+
+**U4: next step.** Both grammar-boundary candidates (U2) and the one-part test (U3) are now on file as leads,
+neither a reading nor a further negative on the code as a whole (the code itself is not shown to be two-part
+either -- only that this specific 12-group/9-initial test found no signal at N=12). The fr18 word-type bands
+are coarse at 26 letters for a 600-entry code; a next worker with budget could try (a) a Weber/Meng-derived
+period FRENCH DICTIONARY's actual headword list (not a running-text corpus's word types, which BER-KWIC
+already flagged as a rougher proxy -- Tomokiyo's own C2 note wants "a period dictionary from tools/data",
+which does not exist yet) for a sharper band test, or (b) extend U2's boundary-grammar candidates into a
+targeted archive search for the AAE Corr. pol. Etats-Unis Supt.1 decipherment (REQUEST.md's named route,
+unchanged) rather than a further structural pass -- nothing cheaper than those two is left untried on this
+letter without a key or sibling. Status stays `open`. No "solved", "new", "first", "unpublished".
+
+Requests this session: none (script-only, no network; fr18/ciphertext.tsv/judge_plaintext.py all read from
+disk).

@@ -373,7 +373,7 @@ cited`). Convergence with LESSONS-BOURDEAU.md (B) or LESSONS-LASRY.md (L) is nam
 | # | Practice | (a) already | (b)/(c)/(d) |
 |---|---|---|---|
 | 1 | Spelling part first | partly: `interlinear_align.py --floor` separates letter codes from word codes, but only when a clear text is beside the cipher | (b) item B1; (c) C1 |
-| 2 | Dictionary position | no | (b) B1; (c) C2; (d) destaing-gerard-1779 |
+| 2 | Dictionary position | partly: `freq.py --onepart-dict LANG` maps a group's range position to a corpus's word-TYPE initial-letter band (27 Sept 2026, DES-PART), but from a running-text corpus, not a real period dictionary's headword list (see C2) | (b) B1; (d) destaing-gerard-1779 (run, no support at N=12 -- NOTES.md DES-PART) |
 | 3 | Degrees of one-part | partly: KEY-DESIGN.tsv / `design_prior.py` record a key's design, not its ordering class | (c) C3 |
 | 4 | Matrix regularity | partly: LESSONS.md "Structure before search" (Toledo 1565, Warsaw 1627) -- convergent with B practice 9 | (c) C3 |
 | 5 | Contacts, KWIC | no tool; `freq.py` counts unigrams only | (b) B1; (c) C4; (d) berthier-napoleon-1812 |
@@ -451,7 +451,7 @@ Lasry's route order), B1 second (the code-breaking procedure none of our 256 fol
 ### (c) Tool options (not built)
 
 - C1 `tools/freq.py --split-at N` -- unigram stats reported separately for groups below and above N, with the gap search that proposes N.
-- C2 `tools/freq.py --onepart-dict LANG` -- for each frequent group, its relative position in the range mapped to the initial-letter band of a period dictionary from tools/data (Mansfield/Langie estimate).
+- C2 (built 27 Sept 2026, DES-PART) `tools/freq.py --onepart-dict LANG` -- for each frequent group, its relative position in the range mapped to the initial-letter band of a period dictionary from tools/data (Mansfield/Langie estimate). Built from a `judge_plaintext.py` `LANG_CORPORA` language's DISTINCT word TYPES (running text), not a real period dictionary's headword list -- still wanted: an actual period dictionary's page-order headwords, once one exists in tools/data, would give a sharper band than a running-text corpus's word-type shares.
 - C3 `tools/key_design.py --matrix` -- print a key's letter values as a vowel-headed matrix and flag paired first digits or reversed rows (matrix.htm), and label one-part / two-dimensional / blockwise / two-part.
 - C4 `tools/freq.py --contacts K` and `--kwic GROUP --width W --sort left|right` -- contact table of the K most frequent groups; KWIC listing of one group.
 - C5 `tools/freq.py --repeats N` -- every recurring token n-gram of length >= N with positions (polygram.htm, without its O(N^2) limits).
@@ -461,7 +461,10 @@ Lasry's route order), B1 second (the code-breaking procedure none of our 256 fol
 ### (d) Targets we hold where his practice names an untried step
 
 ```
-destaing-gerard-1779	Tomokiyo's partial-encoding and dictionary-position steps: guess the code groups at the two clear/code boundaries from the bracketing French clauses, then test a one-part hypothesis by placing the frequent groups (de, la, le, que) at their dictionary-position bands in the 1-597 range; log support or no support with a shuffled-range control	S	codebreaking.htm "Partial Encoding", "André Langie's Example"
 berthier-napoleon-1812	Contact table and KWIC of the 325 groups (207 distinct) before any solver, then Bazeries' probable-phrase search for variably-spelled repeats of a syllabic phrase the subject must contain (cf. "les en-ne-mi-s"), cribbed from the Chuquet 1912 clear letters of 22 Dec 1812 its NOTES.md cites	S	codebreaking.htm "Codebreaking by Etienne Bazeries", "Statistical Analysis"; kwic.htm
 hessen-1824	Different instrument for the running_key family (CLAUDE.md rule 3 "untested-by-this-tool"): drag de19 dictionary words of 10+ letters at every offset, quadgram-score the other side, extend the best fragments by hand; matched control first at N=164	S	runningkey.htm "Solution" (Brown's method), "Tips"
 ```
+
+destaing-gerard-1779's dictionary-position step ran 27 Sept 2026 (DES-PART): no support for one-part at N=12
+(see NOTES.md and table row 2 above); removed from the untried list, not re-added without new material (the
+same numbers stand, CLAUDE.md rule 3's "second attempt at an unchanged approach" paragraph).
