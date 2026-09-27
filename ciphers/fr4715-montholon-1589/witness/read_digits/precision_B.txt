@@ -1,0 +1,6 @@
+# non-gating diagnostic, python3 witness/read_digits/precision.py witness/read_digits/call_B.tsv
+L03: 102/126 = 0.810
+L08: 104/118 = 0.881
+L13: 104/131 = 0.794
+L15: 117/136 = 0.860
+pooled precision 427/511 = 0.836; control (within-line digit shuffle, 20, seed 1) mean 0.532
