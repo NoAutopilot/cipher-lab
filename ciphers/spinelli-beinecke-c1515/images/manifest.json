@@ -38,7 +38,43 @@
       "width": 3577,
       "height": 4997,
       "image_service": "https://collections.library.yale.edu/iiif/2/10867299/full/full/0/default.jpg",
-      "fetched_this_job": false
+      "fetched_this_job": false,
+      "fetched_campaign_step": "H1 (session_016fvFiTTAhQng2VqbiBDmRE), 27 Sep 2026 21:57 UTC",
+      "fetched_as": "images/beinecke3811294_p2_canvas10867299.jpg",
+      "fetched_url": "https://collections.library.yale.edu/iiif/2/10867299/full/1500,/0/default.jpg",
+      "fetched_width": 1500,
+      "fetched_height": 2096,
+      "bytes": 596831,
+      "sha1": "36972a12ab5566e275ebc567d2ed45fa0aa5ea7c",
+      "fetched": "27 Sep 2026, 21:57 UTC",
+      "content_note": "Direct look, campaign step H1 (no vision subagent call): about 13 lines of plain Italian continuing p.[1]'s text (begins 'alcuna promessa ...', mentions on sight 'Regno di Napoli et Sardigna', galleys arriving and the fleet 'fra quattro giorni', a marriage 'pero non e ancora publicato /'), then TWO lines of continuous cipher symbols (about 35 and about 20 signs by eye, +-5; shapes on sight match this folder's key table: 4-like, N-like, 8/9-like, omega, pi-like, x, +, 7), then plain closing 'Rispondetemi con qualche fondamento circa il ritorno mio et valete', the date line 'Barchinonia ... septembris M.D.XIX' and a signature flourish. Lower half blank with heavy bleed-through from the recto. Plain-text words here are a direct look, grade I, not a transcription.",
+      "cipher_region_1500px_xywh": [
+        168,
+        854,
+        1247,
+        158
+      ],
+      "cipher_region_native_xywh": [
+        401,
+        2037,
+        2973,
+        376
+      ],
+      "cipher_lines_native_xywh": {
+        "line1": [
+          401,
+          2037,
+          2973,
+          188
+        ],
+        "line2": [
+          401,
+          2225,
+          2973,
+          188
+        ]
+      },
+      "region_note": "Regions measured by eye on the 1500px image and scaled by 3577/1500; pad by ~40 native px before cropping with tools/iiif_lines.py --image."
     },
     {
       "canvas_id": "https://collections.library.yale.edu/manifests/oid/10844890/canvas/10867300",
@@ -46,12 +82,27 @@
       "width": 3577,
       "height": 4997,
       "image_service": "https://collections.library.yale.edu/iiif/2/10867300/full/full/0/default.jpg",
-      "fetched_this_job": false
+      "fetched_this_job": false,
+      "fetched_campaign_step": "H1 (session_016fvFiTTAhQng2VqbiBDmRE), 27 Sep 2026 21:57 UTC",
+      "fetched_as": "images/beinecke3811294_p3_canvas10867300.jpg",
+      "fetched_url": "https://collections.library.yale.edu/iiif/2/10867300/full/1500,/0/default.jpg",
+      "fetched_width": 1500,
+      "fetched_height": 2096,
+      "bytes": 478844,
+      "sha1": "1d563b18beec007bf6bacaa266dcf8f7fd1d6930",
+      "fetched": "27 Sep 2026, 21:57 UTC",
+      "content_note": "Direct look, campaign step H1 (no vision subagent call): address leaf. NO cipher. Top: a 5-line later archival summary in a different hand, the text the Beinecke record's title quotes ('Il Sig. Tommaso scrive di Barcellona ... 1519 ...'). Lower left: the address 'no Leonardo de Spinellis Floren[tie] ... hon[oran]do' with a monogram; lower right: seal remnant, '1519' and a filing note written sideways. Rest blank.",
+      "cipher_region_native_xywh": null
     }
   ],
   "requests_this_job": {
     "brbl-dl.library.yale.edu": 1,
     "collections.library.yale.edu": 3,
     "note": "1 curl to brbl-dl (302 redirect, empty body); collections.library.yale.edu: 1 browser_fetch.js render of the catalog page + 1 curl for the IIIF manifest JSON + 1 curl for the one page-1 image = 3. Total 4 of the allowed 6 combined, 2s apart."
+  },
+  "note_4pp_resolved_h1": "Campaign step H1, 27 Sep 2026: the letter's own text ends on p.[2] (date line and signature), and p.[3] is the address leaf, so the three digitised canvases carry every written side of the letter that bears text; the record's '4pp.' most likely counts the blank side of the address leaf. No cipher line is missing from the digitised set.",
+  "requests_campaign_step_H1": {
+    "collections.library.yale.edu": 2,
+    "note": "two curl image fetches, 2 s apart, browser UA, both HTTP 200 image/jpeg"
   }
 }

@@ -176,3 +176,49 @@ descriptive/browser user agent per the brief. No other hosts. No credentials. No
 novelty/first/unpublished wording (rule 10) -- Tomokiyo's own one phrase is credited to him throughout, not
 claimed as ours; Domnina's cipher reconstruction is credited to her by name even though her own PDF could not
 itself be read this job.
+
+## Campaign step H1 (27 Sept 2026, 21:57-22:00 UTC)
+
+Runner session_016fvFiTTAhQng2VqbiBDmRE (standing campaign runner, SPRINT.md). Hypothesis H1: fetch the two
+unfetched canvases and flag by direct look where the cipher lines sit, before any vision call is spent.
+
+**Done.** Both canvases fetched at 1500px from the same IIIF image API as p.[1], two curl requests to
+collections.library.yale.edu, 2 s apart, browser UA, both HTTP 200 `image/jpeg`; written into
+`images/manifest.json` with sha1, byte size and a content_note each. No vision subagent call this step
+(0 of 4). Folder images now 1.7 MB.
+
+| canvas | file | bytes | sha1 | cipher |
+|---|---|---|---|---|
+| p.[2] 10867299 | `images/beinecke3811294_p2_canvas10867299.jpg` (1500x2096) | 596831 | 36972a12ab5566e275ebc567d2ed45fa0aa5ea7c | yes: 2 lines |
+| p.[3: address leaf] 10867300 | `images/beinecke3811294_p3_canvas10867300.jpg` (1500x2096) | 478844 | 1d563b18beec007bf6bacaa266dcf8f7fd1d6930 | none |
+
+**Where the cipher sits (direct look, no transcription, grade I for every plain word named here):**
+
+- **p.[1]**: the top ~9 written lines, continuous cipher (INTAKE-SPINELLI's look, unchanged).
+- **p.[2]**: about 13 lines of plain Italian continuing p.[1]'s clear text ("alcuna promessa ...", on sight
+  "Regno di Napoli et Sardigna", galleys arriving and the fleet "fra quattro giorni", a marriage "pero non e
+  ancora publicato /"), then **two lines of continuous cipher**, about 35 and about 20 signs by eye (+-5), the
+  shapes matching the key table on sight (4-like, N-like, 8/9-like, omega, pi-like, x, +, 7), then the plain
+  closing "Rispondetemi con qualche fondamento circa il ritorno mio et valete", the date line "Barchinonia ...
+  septembris M.D.XIX" and a signature. Region of the two-line block: 1500px image x,y,w,h = 168,854,1247,158;
+  native (3577x4997) x,y,w,h = 401,2037,2973,376 (line 1 y 2037-2225, line 2 y 2225-2413), measured by eye and
+  scaled by 3577/1500 -- pad ~40 native px before cropping with `tools/iiif_lines.py --image`.
+- **p.[3]**: address leaf, **no cipher**. A 5-line later archival summary at the top (the text the Beinecke
+  record's title quotes), the address "...no Leonardo de Spinellis Floren[tie] ... hon[oran]do" lower left, seal
+  remnant, "1519" and a sideways filing note lower right.
+
+**The "4pp." question narrowed:** the letter's own text ends on p.[2] with the date line and signature, and
+p.[3] is the address leaf, so the three digitised canvases carry every written side that bears text; the
+record's "4pp." most likely counts the blank side of the address leaf. No cipher line is missing from the
+digitised set. Total cipher in the letter: ~9 lines (p.[1]) + 2 lines (p.[2]).
+
+**What this changes for the ranking:** the p.[2] block is a small, isolated unit (~55 signs, two lines, clear
+text on both sides giving context: "...non e ancora publicato / [cipher] / Rispondetemi ...") -- the cheapest
+place to calibrate the key and the natural first blind-transcription unit, priced at about a third of p.[1]'s
+nine lines. Tomokiyo's known phrase "la gubernation d'ispagnia" (22 letters plus any nulls) could sit in either
+block; H2 now starts on the p.[2] crops and falls back to p.[1]. New H10 (two blind passes on the p.[2] block,
+reconciled) inserted at rank 3 ahead of H3 (p.[1]'s nine lines); H3-H9 shift down one rank each, order among
+them unchanged.
+
+**Requests this step:** collections.library.yale.edu 2 (of the allowed 6). No other host. No credentials,
+no AskUserQuestion, no class change, no reading claimed; rule 10 wording.
