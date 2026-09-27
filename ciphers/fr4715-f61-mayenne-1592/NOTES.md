@@ -168,3 +168,23 @@ gallica.bnf.fr 2 (canvas f137 and f138 at 1000px, 2s apart; `tools/gallica_folio
 the already-cached manifest, 0 further requests). No other hosts. No credentials. No AskUserQuestion. No
 novelty/first/unpublished wording (rule 10) -- Tomokiyo's own partial decode is credited to him throughout,
 not claimed as ours.
+
+## F61-CAL (27 Sept 2026)
+
+Per `.claude/briefs/runs/2026-09-27-parent-ytbiz-f61-cal.md` (parent worker F61-CAL, Opus). Box started 19:56 UTC
+(clock read). Intake gate re-run: `fr4715-f61-mayenne-1592: partial (line 1) -- edition/page or full-text-search
+citation found within 6 lines`, exit 0.
+
+**Pre-registered gate (written before the reading call).** Statistic: token-level match between our decode of the five
+marked spans and Tomokiyo's readings of them (`scripts/tomokiyo_spans.tsv`, his markup as the reference, grade H for this
+test, not the manuscript). Decode = the reader's per-sign label (a key-inventory symbol S01-S16 or `?`) mapped through
+`keys/key_mayenne_1592.tsv` to its value set (the a/n and e/r columns carry one value per symbol; the nine shared columns
+two; que/qui/pour a word). A position matches if any value in the set is the letter Tomokiyo reads there (a word code
+matches if it equals his letters at that point). Each span's markup (one character per sign, dashes as wildcards) is
+aligned to the reader's full sign sequence for that line by one fixed local DP (match +1, mismatch 0, gap -1), the same
+alignment for target and controls. Gate: **pooled match >= 0.85** over the 45 letters of the five spans, AND above the
+maximum of **20 controls** in which the key's value sets are shuffled across its 16 symbols (seed 1; same coverage by
+construction, so coverage is not the statistic). Ambiguity rate (share of decoded sign tokens with more than one value) is
+reported beside it, non-gating. Diagnostic for outcomes (b)/(c), also fixed now: for every reader label, the letters
+Tomokiyo reads under it are tabulated; a label that consistently takes one letter pair that differs from the key's cell
+points at the key transcription (b); a label that takes scattered letters points at the reader (c).

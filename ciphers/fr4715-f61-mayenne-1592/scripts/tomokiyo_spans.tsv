@@ -1,0 +1,11 @@
+# Reference for F61-CAL (grade H for this test only): Tomokiyo's interlinear markup on BnFfr4715f61.png,
+# transcribed character for character from his image (sources/cryptiana/web/img/BnFfr4715f61.png). One character
+# (letter, apostrophe excluded) or one dash per cipher-sign position is the working hypothesis about his markup;
+# dashes are positions he leaves unread (wildcards: neither matched nor counted). Line = our slope-sheet line.
+span	line	markup	letters
+S1	L01	--avec	avec
+S2	L03	estca-p-able	estcapable
+S3	L05	---trop--avance-es	tropavancees
+S4a	L07	jal-ous-i	jalousi
+S4b	L08	ea-ubeau--pere	eaubeaupere
+S5	L11	melente-noit	melentenoit
