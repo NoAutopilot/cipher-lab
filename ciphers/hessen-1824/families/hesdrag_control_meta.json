@@ -1,0 +1,30 @@
+{
+ "plain_book": "tools/data/de19/pg2405_Italienische_Reise_Band2.txt.gz",
+ "key_book": "tools/data/de19/pg31538_Peter_Schlemihl.txt.gz",
+ "N": 164,
+ "seed": 1,
+ "plain_tracked_words": [
+  [
+   "hinaufgehoben",
+   6
+  ],
+  [
+   "abgeschrieben",
+   120
+  ],
+  [
+   "mitzuteilen",
+   144
+  ]
+ ],
+ "key_tracked_words": [
+  [
+   "hingeopfert",
+   10
+  ],
+  [
+   "verschreiben",
+   113
+  ]
+ ]
+}
