@@ -323,3 +323,7 @@ Requests this job: 0 new network fetches (all three subagents worked from the al
 disk; no gallica.bnf.fr or cryptiana.web.fc2.com requests). Subagents: 3 (the U1-U3 reconciliation calls, run
 in parallel). No credentials, no AskUserQuestion, no novelty wording, owner not named. Images folder
 unchanged at 25 MB (no new images fetched or cut).
+
+## Pool (27 Sept 2026, parent 7m)
+
+f.81v (canvas 178) is a blank leaf by direct inspection (parent 7m, 12:26 UTC): the letter is one leaf. CS-4715-POOL's check-solved pass on the twenty-two fr.4715 letters nevers.htm places in the Vieuville-Nevers cipher is in `POOL.md` (11 carry a period decipherment on the leaf per the BnF's own depouillement, 9 are open or partial, about 13,000 signs with this folder's key of record). The first pool job is MONT-KEY6 (no.6 f.24, interlinear, key recovery through tools/interlinear_align.py).
