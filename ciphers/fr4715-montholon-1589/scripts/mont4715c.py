@@ -9,6 +9,8 @@
     python3 scripts/mont4715c.py spans     # MONT-CAL: the dump's groups assigned to our folio lines via the v2 anchors
     python3 scripts/mont4715c.py segparse  # MONT-CAL: can the key's code inventory segment a boundary-free digit stream? [--ours: our v2 digits]
     python3 scripts/mont4715c.py score TSV L03,L08,L12,L16   # MONT-CAL U3: group-LCS of a recipe TSV vs the dump
+    python3 scripts/mont4715c.py digscore TSV [L03,L08,L13,L15]   # MONT-READ-DIGITS: gates G0/G1/G2 on a digit stream
+    python3 scripts/mont4715c.py digref dump|v2 OUT.tsv          # MONT-READ-DIGITS U1: the dump's / v2's own streams
 
 Target-local, script-only, no network. Inputs are the files already on disk (see NOTES.md "MONT-4715C").
 Group notation on both sides: a bare digit string is a letter homophone, a leading apostrophe a dotted
@@ -557,6 +559,200 @@ def segparse(seed=1, shuffles=20, ours=False):
                   f"{statistics.mean(vals):.3f} sd {statistics.stdev(vals):.3f}")
 
 
+def key_parser():
+    """The segparse Viterbi as a function: a list of (digit, dotted) -> groups ("NN" or "'NN")."""
+    import math
+    key = load_key()
+    freq = {"e": 14.7, "a": 8.1, "s": 7.9, "i": 7.2, "t": 7.2, "n": 7.1, "r": 6.5, "u": 6.3, "l": 5.5, "o": 5.3,
+            "d": 3.7, "c": 3.3, "p": 3.0, "m": 2.9, "q": 1.4, "f": 1.1, "b": 0.9, "g": 0.9, "h": 0.7, "x": 0.4,
+            "y": 0.3, "z": 0.1}
+    by_letter = {}
+    for r in key:
+        by_letter.setdefault(r.get("value", r.get("plain", "")).strip().lower()[:1], []).append(r["sign"])
+    lp = {sg: math.log(freq.get(L, 0.5) / 100 / len(sg_)) for L, sg_ in by_letter.items() for sg in sg_}
+
+    def viterbi(st):
+        n = len(st)
+        best = [(-1e18, None)] * (n + 1)
+        best[0] = (0.0, None)
+        for i in range(n):
+            if best[i][0] < -1e17:
+                continue
+            for L in (1, 2):
+                if i + L > n:
+                    continue
+                piece = "".join(c for c, _ in st[i:i + L])
+                dotted = st[i][1]
+                if dotted:
+                    sc = math.log(0.01) if L == 2 else None
+                elif piece in lp:
+                    sc = lp[piece]
+                elif L == 2:
+                    sc = math.log(0.0005)
+                else:
+                    sc = None
+                if sc is None or any(d for _, d in st[i + 1:i + L]):
+                    continue
+                if best[i][0] + sc > best[i + L][0]:
+                    best[i + L] = (best[i][0] + sc, (i, ("'" if dotted else "") + piece))
+        if best[n][1] is None and n:  # unparseable tail (e.g. a lone dotted digit): fall back to singles
+            return [("'" if d else "") + c for c, d in st]
+        toks, j = [], n
+        while j > 0 and best[j][1]:
+            i, t = best[j][1]
+            toks.append(t)
+            j = i
+        return toks[::-1]
+    return viterbi
+
+
+def stream_of(text):
+    """'digits with marks' -> list of (char, dotted); "'" marks the next digit dotted, '?' an undecided digit
+    (a hard break for the parser and a never-matching position for the digit LCS); anything else is ignored."""
+    out, dot = [], False
+    for ch in text:
+        if ch == "'":
+            dot = True
+        elif ch.isdigit() or ch == "?":
+            out.append((ch, dot and ch != "?"))
+            dot = False
+    return out
+
+
+def parse_stream(st, viterbi):
+    groups, cur = [], []
+    for c, d in st + [("?", False)]:
+        if c == "?":
+            if cur:
+                groups += viterbi(cur)
+            cur = []
+            if len(groups) or True:
+                pass
+        else:
+            cur.append((c, d))
+    nq = sum(1 for c, _ in st if c == "?")
+    return groups + [None] * 0, nq
+
+
+def groups_stream(groups):
+    """dump-style groups -> stream text (symbols dropped: the reader is asked for digits only)."""
+    return "".join(g for g in groups if g and (g.isdigit() or (g[0] == "'" and g[1:].isdigit())))
+
+
+def lcs_len(a, b):
+    prev = [0] * (len(b) + 1)
+    for x in a:
+        cur = [0]
+        for j, y in enumerate(b):
+            cur.append(prev[j] + 1 if (x is not None and x == y) else max(cur[j], prev[j + 1]))
+        prev = cur
+    return prev[-1]
+
+
+def read_stream_tsv(path):
+    out = {}
+    for ln in open(path, encoding="utf-8"):
+        if not ln.strip() or ln.startswith("#") or ln.startswith("line\t"):
+            continue
+        cols = ln.rstrip("\n").split("\t")
+        out[cols[0].strip()] = out.get(cols[0].strip(), "") + cols[1]
+    return out
+
+
+def digscore(path, lines="L03,L08,L13,L15", shuffles=20, seed=1, margin=8):
+    """MONT-READ-DIGITS gates, pre-registered in NOTES.md. Per line the reference is a contiguous window of the
+    dump whose start and end each lie within +-margin groups of the line's v2-anchored span (`spans`), chosen to
+    maximise (matched digits - unmatched reference digits) against the stream being scored (a ratio would let a short
+    reading shrink its own denominator); every shuffled control gets the same free choice, so the
+    window search helps target and control alike. G0 digit LCS / reference digits; G1 letter-group (bare) recall
+    after the key parse; G2 dotted-group recall, dot required. Pooled over the lines. Controls: within-line digit
+    order shuffle (G0; marks travel with their digit) and within-line order shuffle of the parsed groups (G1, G2)."""
+    viterbi = key_parser()
+    dump, spans = dump_spans()
+    rec = read_stream_tsv(path)
+    want = lines.split(",")
+    rng = random.Random(seed)
+
+    def digits(st):
+        return [None if c == "?" else c for c, _ in st]
+
+    def best_window(ln, dig):
+        js = spans[ln]
+        best = None
+        for s in range(max(0, js[0] - margin), js[0] + margin + 1):
+            for e in range(js[-1] - margin, min(len(dump) - 1, js[-1] + margin) + 1):
+                if e <= s:
+                    continue
+                ref = dump[s:e + 1]
+                rd = list(groups_stream(ref).replace("'", ""))
+                v = lcs_len(dig, rd)
+                key_ = (2 * v - len(rd), -abs(s - js[0]) - abs(e - js[-1]))  # matches minus unmatched ref digits
+                if best is None or key_ > best[0]:
+                    best = (key_, ref, rd)
+        return best[1], best[2]
+
+    tot = {"dig": 0, "bare": 0, "dotted": 0}
+    hit = dict.fromkeys(tot, 0)
+    sh = {k: [0] * shuffles for k in tot}
+    marks = qs = 0
+    for ln in want:
+        st = stream_of(rec.get(ln, ""))
+        marks += sum(1 for _, d in st if d)
+        qs += sum(1 for c, _ in st if c == "?")
+        ref, rd = best_window(ln, digits(st))
+        groups, _ = parse_stream(st, viterbi)
+        h, t = summarize(lcs_pairs(groups, ref), ref)
+        hit["dig"] += lcs_len(digits(st), rd)
+        tot["dig"] += len(rd)
+        for k in ("bare", "dotted"):
+            hit[k] += h[k]
+            tot[k] += t[k]
+        for i in range(shuffles):
+            s2 = st[:]
+            rng.shuffle(s2)
+            sref, srd = best_window(ln, digits(s2))
+            sh["dig"][i] += lcs_len(digits(s2), srd) / 1.0
+            g2 = groups[:]
+            rng.shuffle(g2)
+            h2, _ = summarize(lcs_pairs(g2, ref), ref)
+            sh["bare"][i] += h2["bare"]
+            sh["dotted"][i] += h2["dotted"]
+        print(f"  {ln}: stream {len(st)} digits ({sum(1 for _, d in st if d)} marked, "
+              f"{sum(1 for c, _ in st if c == '?')} '?'), parsed {len(groups)} groups; reference window "
+              f"{len(ref)} groups / {len(rd)} digits")
+    gate = {"dig": ("G0 digit LCS", 0.92), "bare": ("G1 letter-group", 0.85), "dotted": ("G2 dotted recall", 0.70)}
+    ok = True
+    for k, (nm, g) in gate.items():
+        r = hit[k] / tot[k] if tot[k] else float("nan")
+        c = [x / tot[k] for x in sh[k]]
+        passed = r >= g
+        ok &= passed
+        print(f"  {nm:17s} {hit[k]}/{tot[k]} = {r:.3f}  (gate {g})  control ({shuffles}) mean "
+              f"{statistics.mean(c):.3f} sd {statistics.stdev(c):.3f}  {'PASS' if passed else 'FAIL'}")
+    print(f"  marks in stream {marks}; '?' {qs}; verdict: {'ALL GATES MET' if ok else 'gates not met'}")
+
+
+def digref(which, out):
+    """U1 verification streams for L03/L08/L13/L15: 'dump' = the dump's anchored span per line with boundaries
+    removed (dots as "'"); 'v2' = our v2 groups on those lines, undecidable/illegible as '?'."""
+    want = ["L03", "L08", "L13", "L15"]
+    rows = []
+    if which == "dump":
+        dump, spans = dump_spans()
+        for ln in want:
+            rows.append((ln, groups_stream([dump[j] for j in spans[ln]])))
+    else:
+        by = {}
+        for ln, g, _ in v2_groups():
+            by.setdefault(ln, []).append("?" if g is None else (g if (g.isdigit() or g[:1] == "'") else ""))
+        for ln in want:
+            rows.append((ln, "".join(by.get(ln, []))))
+    with open(out, "w", encoding="utf-8") as f:
+        f.write("line\tdigits_with_marks\tconfidence\n")
+        for ln, s in rows:
+            f.write(f"{ln}\t{s}\treference\n")
+
+
 if __name__ == "__main__":
     cmd = sys.argv[1]
     if cmd == "u1":
@@ -577,3 +773,9 @@ if __name__ == "__main__":
         segparse(ours="--ours" in sys.argv)
     elif cmd == "score":
         score(sys.argv[2], sys.argv[3])
+    elif cmd == "digscore":
+        args = [a for a in sys.argv[3:] if not a.startswith("--margin=")]
+        mg = [int(a.split("=")[1]) for a in sys.argv[3:] if a.startswith("--margin=")]
+        digscore(sys.argv[2], *(args[:1] or ["L03,L08,L13,L15"]), margin=(mg or [8])[0])
+    elif cmd == "digref":
+        digref(sys.argv[2], sys.argv[3])

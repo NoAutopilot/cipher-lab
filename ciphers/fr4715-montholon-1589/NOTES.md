@@ -698,3 +698,33 @@ above (a new capture) comes before any further reading attempt, per rule 3's rep
 
 Requests this job: 0 network requests; 0 subagents; 0 reading calls. `pip install numpy scipy pillow` into the
 container (not the repo). No credentials, no AskUserQuestion, no novelty wording.
+
+## MONT-READ-DIGITS (27 Sept 2026)
+
+Per `.claude/briefs/runs/2026-09-27-parent-ytbiz-mont-read-digits.md` (parent worker MONT-READ-DIGITS, Opus). Box
+started 14:27 UTC (clock read). One recipe test on L03, L08, L13, L15 against Tomokiyo's dump (grade H, the reference,
+not the manuscript): a reader returns each line as one continuous digit string, `'` before a digit carrying a dot or
+stroke above it, `?` for an undecided digit; `scripts/mont4715c.py digscore` parses it by the key and scores it.
+
+**Pre-registered gates (written 14:32 UTC, before the first reading call).** Pooled over the four lines: G0 digit LCS
+>= 0.92 (control: within-line digit-order shuffle, 20, seed 1, marks travel with their digit); G1 letter-group (bare)
+recall after the key parse >= 0.85 (control: within-line order shuffle of the parsed groups, 20); G2 dotted-group
+recall, dot required, >= 0.70 (same control). All three or the recipe fails. **Reference span rule, fixed now:** the
+dump carries no line breaks and the v2-anchored spans (`spans`) are approximate (by eye on the L03 sheet the span runs
+about four groups into L04). Per line the reference is the contiguous dump window whose start and end each lie within
+8 groups of the anchored span, chosen to maximise (matched digits - unmatched reference digits) against the stream
+scored; every shuffled control gets the same free choice. The gate is read on this (margin 8) score; the fixed-span
+score (`--margin=0`) is reported beside it and does not decide. A first version maximised the matched *ratio*, which
+let a short reading shrink its own denominator (v2 read 0.788 on it); replaced before any reading call.
+
+**U1, scorer verification (no reading call).** `digref dump|v2` writes the reference streams to
+`witness/read_digits/ref_{dump,v2}.tsv`; outputs in `witness/read_digits/u1_*.txt`.
+
+| stream | G0 digit LCS (ctrl) | G1 letter (ctrl) | G2 dotted (ctrl) | brief expected |
+|---|---|---|---|---|
+| dump, boundaries removed, margin 8 | 1.000 (0.451) | 0.990 (0.397) | 1.000 (0.185) | 1.0 / 0.99 / 1.0 |
+| our v2 digits, margin 8 | 0.774 (0.491) | 0.574 (0.364) | 0.033 (0.023) | about 0.68 / 0.50 / 0.02 |
+| our v2 digits, fixed span (margin 0) | 0.708 (0.492) | 0.531 (0.350) | 0.029 (0.019) | |
+
+The fixed-span v2 numbers reproduce MONT-CAL's; the window adds about 0.07 on v2 (these four lines are also the
+better-aligned ones), which is why the margin-0 score is kept beside it.

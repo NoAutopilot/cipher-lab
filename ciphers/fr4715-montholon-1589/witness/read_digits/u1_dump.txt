@@ -1,0 +1,8 @@
+  L03: stream 116 digits (10 marked, 0 '?'), parsed 60 groups; reference window 63 groups / 116 digits
+  L08: stream 110 digits (8 marked, 0 '?'), parsed 57 groups; reference window 57 groups / 110 digits
+  L13: stream 121 digits (4 marked, 0 '?'), parsed 62 groups; reference window 62 groups / 121 digits
+  L15: stream 122 digits (12 marked, 0 '?'), parsed 64 groups; reference window 64 groups / 122 digits
+  G0 digit LCS      469/469 = 1.000  (gate 0.92)  control (20) mean 0.451 sd 0.011  PASS
+  G1 letter-group   207/209 = 0.990  (gate 0.85)  control (20) mean 0.397 sd 0.008  PASS
+  G2 dotted recall  34/34 = 1.000  (gate 0.7)  control (20) mean 0.185 sd 0.059  PASS
+  marks in stream 34; '?' 0; verdict: ALL GATES MET
