@@ -95,3 +95,36 @@ keyed). OpenAlex and Semantic Scholar: 1 request each (reported above, under Sea
 gallica.bnf.fr, dbnl.org or de-crypt.org use. Well under the 60-request cap named in the brief.
 
 SO lead prompt, 26 Sept 2026, QUEUE-FILL.
+
+## Second-opinion leads (SO-BULLET-LEADS, 27 Sept 2026)
+
+Landed from the ChatGPT second-opinion runner's answer to the LEADS prompt
+(`second-opinions/chatgpt-leads-2026-09-27.md`, PR 33). Leads for the verifier, not a reading or an
+attribution; every citation below is a claim to verify, never a fact ("unchecked").
+
+- Provenance/find route (web forum thread): Ze-Pequeno's Reddit post names an Italian metal-detecting
+  association and links its own discussion thread (`metaldetector.forumfree.it/?t=70205379`, did not load
+  in this check) as the route to the discoverers, findspot notes, custody and a possible museum
+  accession record -- unchecked.
+- Findspot conflict (caveat, not a new source): Ze-Pequeno says "approximately near Florence" while Díaz
+  2015 and Schmeh 2017 say southern Tuscany; the repository's own "Villa Rossi" label is not established
+  as the same place by any post read -- unchecked.
+- Companion material (web forum/holder route): no second coded slip is reported anywhere read; Díaz's
+  "insignia recovered at the same site" is a different find, not a companion cipher -- the Italian
+  association thread and the object's holder are the only named route to any undisclosed photographs or
+  find log -- unchecked.
+- Transcription length dispute (web comment): a Reddit commenter (atoponce) reads the last group as
+  `RSUAI` (45 characters) against Schmeh's printed `RSUA` (44); the extra character is one reader's
+  interpretation, not a verified correction -- unchecked.
+- Provenance contacts (web forum posts): Karletto (Friendly Metal Detecting Forum, Jan 2015) and
+  Ze-Pequeno may be the same person or collaborators; identity and current contactability are
+  unchecked.
+- Retraction of the circulated "grenade" decoding (web forum posts #37/#40): Karletto states dockmur's
+  proposed decoding was a joke, dockmur confirms it -- stronger evidence against that claim than the
+  newspaper retelling alone; the forum posts themselves are unchecked (not re-read by this landing).
+- Format hypothesis (web comment): `QM` as an addressee ("quarter master") and `605YZ/FF` as
+  sender/rank/location material, a contemporary reader's layout guess, not evidence for either
+  expansion or for a named national system -- unchecked.
+
+No printed decipherment, edition, or companion ciphertext of this target was named in the PR; nothing
+here is a check-solved candidate.
