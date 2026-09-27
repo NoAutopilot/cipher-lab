@@ -127,7 +127,7 @@ Owner-account verifier lane, opened 26 Sept 17:51 by the owner-account parent (b
 - **Lesson:** re-read the ROOM tail immediately before every create_session when another account may already hold the
   job (VO1-JAPIKSE). And read context from get_session, never estimate it: this lane reported 140k when the real figure was 319k.
 
-## LANE NEV handoff (session_019nCvSe9RbV93Hiezc5nP9E), 27 September 2026 (live)
+## LANE NEV handoff (session_019nCvSe9RbV93Hiezc5nP9E), 27 September 2026 (closed on the parent's 08:43 decision)
 
 Brief: .claude/briefs/runs/2026-09-27-lane-nev-orchestrator.md (owner account, announced exception: SUPPLY takes both
 fr.3251 groups while SOLVE is at allowed_warning). Targets: ciphers/nevers-birago-fr3251-1572 (7 letters, witness
@@ -143,6 +143,20 @@ group. One worker at a time.
   tools/decode_witness.py exists with an offline test. Nevers-Birago calibration is pending: the sheet's written face
   (an archive photograph) or a control-backed decode of the no.87 cipher passage.
 - f.27r = canvas 28 (ink '27' checked by eye by the orchestrator); short cipher passage (about 1.5 lines) mid-page.
+- CLOSE-OUT: NEV-C3 DONE 10.28 D- (get_session), ledgered, archived. The f.82 gloss came back from the subagents
+  as 6 letters: 0.83 vs shuffled 0.78 sd 0.29, z 0.20; pooled with f.27, 12 letters, 0.92, z 0.97. A non-test with a
+  degenerate control, not a near-pass. The lane closes with no reading, as the parent decided at 08:43. Worker spend
+  28.99 (NEV-C1 5.77, NEV-C2 12.94, NEV-C3 10.28) against about 25 budgeted. Next steps, in order:
+  (a) Nevers-Birago 1572: waits on a BnF reproduction of the written face of the tipped-in sheet at f.179/canvas 183
+      (BNF-BATCH, ASKS row 78). no.87 cipher = f.178r last 2 lines, all of f.178v, f.179r first 3 lines;
+      canvas = folio+3 there.
+  (b) Ceppo-Nevers: at least 30 aligned gloss letters before any z test. Read the f.82r gloss alone, per segment,
+      upscaled, with the strongest model (the orchestrator could see about one letter over each of about 90 signs
+      at native resolution), and add f.27 if that helps. Report a control whose shuffled mean is above 0.5 as
+      degenerate.
+  (c) Job 2, the f.11 read (about USD 8), only once (b) passes.
+  The reusable scorer is tools/decode_witness.py. Give subagents a numbered key listing: raw TSV row numbers
+  caused an off-by-13 bug in NEV-C2.
 - NEV-C2 DONE 12.94 D- (get_session), ledgered, archived: non-test -- f.27 gloss unreadable (6 letters, z -0.75),
   f.39 no gloss, f.82 judged only at 1000 px. The orchestrator's native crop of f.82r (canvas 83, pct:56,25.5,42,6.5)
   shows a clean letter-by-letter gloss over three cipher lines.

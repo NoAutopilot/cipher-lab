@@ -346,3 +346,15 @@ decode of a target passage itself, labelled as a target-style test, not a witnes
 **Requests:** gallica.bnf.fr 1 (well under the 3-request allowance: one fetch, HTTP 200 first try, no retry
 needed). Subagents: 3 (gloss read -- resumed once with better crops, still 1 subagent; careful sign read;
 blind check), all image-review only, no credentials, no AskUserQuestion, no novelty wording, owner not named.
+
+### LANE NEV close-out (27 Sept 2026)
+
+Calibration of `keys/key_ceppo_nevers.tsv` is still pending. NEV-C2 (f.27) and NEV-C3 (f.82) are non-tests: they
+aligned 6 and 12 clerk letters, too few for any control to have power. The shuffled-key means are 0.58 and 0.77,
+so the control is degenerate at this n. That is a lack of letters, not evidence against the key. Before a z test
+means anything, the calibration needs at least 30 aligned gloss letters. The source for them is f.82r: the LANE NEV
+orchestrator looked at the native crop (canvas 83, `pct:56,25.5,42,6.5`) and could see a gloss of roughly one
+letter over each of about 90 signs, but the Sonnet subagent passes recovered only 6. The next step is to read that
+gloss alone, one segment at a time, upscaled 2x, with the strongest model, and to gate on 30 or more letters before
+any sign read is paid for. Job 2 (reading f.11, about USD 8) comes after that gate. Any control whose shuffled mean
+is above 0.5 is reported as degenerate.
