@@ -377,3 +377,45 @@ cell's pair, controls permuting cells across classes, stability required on the 
 fresh), `tools/interlinear_align.py`, `tools/tests/test_interlinear_align.py`; HYPOTHESES.md row added. Requests: none.
 No credentials, no AskUserQuestion, no novelty wording; the owner not named.
 
+## Campaign step H12 (2026-09-27 22:53 UTC)
+
+Campaign runner (Fable, session_01UgTmQhR7wFtVFrTVdtsq9i), script-only, no subagent or vision call, no network. Hypothesis
+H12 (F61-CRIB3): the class map fitted through the Mayenne table's own pairing.
+
+**Method (`scripts/f61crib3.py`, importing `scripts/f61crib.py`; `--check`).** Same 19 classes, folds, scoring DP and
+H11's null-aware alignment (`--wildcard - --null-cost -1`). A class takes ONE table cell of `keys/key_mayenne_1592.tsv`
+(a/n, b/o, c/p, d/q, e/r, f/s, g/t, h/u, i/x, l/y, m/z), the cell whose two letters its aligned markup letters fall in
+most often (ties broken alphabetically and reported); no aligned letter means null. The withheld span is scored with
+the cell's pair, so the pair's partner letter comes from the key, not from 1-2 occurrences. Controls: 20 maps per fold
+with the fitted cells permuted across classes (seed 1). Gate: (a) pooled above every control AND (b) the cell of PHI,
+C43, 4TRI, VBAR, DBL, INF identical in all five folds. The V s/t conflict is reported per fold.
+
+**Result (`scripts/f61crib3_result.txt`).**
+
+| held-out span | matched / letters | control max (mean) | VBAR cell counts (f/s : g/t) |
+|---|---|---|---|
+| S1 avec (L01) | 3/4 | 2/4 (1.50) | 3 : 4 |
+| S2 est capable (L03) | 8/10 | 5/10 (2.85) | 2 : 3 |
+| S3 trop avancees (L05) | 10/12 | 8/12 (3.60) | 2 : 3 |
+| S4 jalousie au beau-pere (L07+L08) | 10/18 | 9/18 (5.80) | 2 : 4 |
+| S5 mel'ente noit (L11) | 6/11 | 6/11 (3.40) | 3 : 1 |
+| **pooled held-out** | **37/55 = 0.673** | controls mean 0.312, **max 0.436** | |
+| sensitivity, v->u and j->i folded (non-gating) | 40/55 = 0.727 | max 0.455 | |
+| all-span map, in-sample (non-gating) | 46/55 | | misses s@VBAR 3, v@INF 2, j@ZHOOK 1, o@PHI 1, m@CA 1 |
+
+Gate (a) **met**. Gate (b) **not met** on two of the six classes: VBAR reads g/t in four folds and f/s when S5 is held
+out (the pre-identified conflict: one f.61 shape class under both s and t, 4:3 overall); INF reads h/u in four folds
+and a/n when S4 is held out (4 of INF's 5 signs are in S4, so that fold trains on 1-2 letters and ties). PHI e/r, C43
+a/n, 4TRI c/p and DBL b/o are the same cell in all five folds. **H12 FAIL on its own gate**, as pre-registered. Not a
+reading; no class change. The v/j sensitivity was added after the gated run was read (the key has no v and no j, u=v
+and i=j in the period hand, `scripts/class_diag.tsv` already noted u=v; CLAUDE.md rule 3's one-convention lesson): it
+lifts the pool to 40/55 and the in-sample map to 49/55, and does not change either gate verdict.
+
+**What this leaves.** The letter-class map is now stable at the cell level for every class with enough occurrences
+(`scripts/f61crib3_map.tsv`: PHI e/r 12:1, C43 a/n 6:1, 4TRI c/p 5:0, INF h/u 5:0, DBL b/o 3:1, EBR l/y 2:1, ZHOOK
+i/x 2:0; CROSS, ELOOP, LOOPSTEM1, CH, LL, 4STEM null; C6, CA, LOOPBAR, 4PI, HASH4 on 1-2 letters each, unsettled) and
+the one open question is VBAR: one glyph with a data conflict, or two glyphs (the table's f/s bracket and g/t T-shape)
+the reader merged. H13 (CAMPAIGN.md) tests that with one blind vision sort of the 8 VBAR crops against a permutation
+control. Files: `scripts/f61crib3.py`, `scripts/f61crib3_result.txt`, `scripts/f61crib3_map.tsv`; HYPOTHESES.md row
+added. Requests: none. No credentials, no AskUserQuestion, no novelty wording; the owner not named.
+

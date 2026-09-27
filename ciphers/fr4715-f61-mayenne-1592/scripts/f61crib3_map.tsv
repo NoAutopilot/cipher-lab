@@ -1,0 +1,22 @@
+# F61-CRIB3 map fitted on all five Tomokiyo spans: class -> Mayenne table cell (top-1 cell by aligned-letter count), 27 Sept 2026.
+# Grade M: cells chosen from Tomokiyo's own 'Solution Incomplete' markup; the pair itself is the key's (grade H source). 'null' = no letter aligned.
+class	n_signs	cell	cell_counts	tie
+PHI	15	e/r	e/r:12 b/o:1	
+C43	9	a/n	a/n:6 b/o:1	
+CA	9	a/n	a/n:1 m/z:1	yes
+VBAR	8	g/t	g/t:4 f/s:3	
+C6	6	a/n	a/n:2	
+4TRI	6	c/p	c/p:5	
+INF	5	h/u	h/u:5	
+DBL	4	b/o	b/o:3 l/y:1	
+LOOPBAR	3	a/n	a/n:1	
+EBR	3	l/y	l/y:2 e/r:1	
+ZHOOK	3	i/x	i/x:2	
+CROSS	2	null		
+ELOOP	2	null		
+4PI	2	a/n	c/p:1 a/n:1	yes
+HASH4	1	e/r	e/r:1	
+LOOPSTEM1	1	null		
+CH	1	null		
+LL	1	null		
+4STEM	1	null		

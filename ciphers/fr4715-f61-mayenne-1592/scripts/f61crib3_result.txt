@@ -1,0 +1,14 @@
+reader file: read_call_A.tsv (marks column only); fit: tools/interlinear_align.py --code-prefix @ --wildcard - --null-cost -1 -> top-1 table cell per class; score: f61cal.py DP with the cell pair
+held-out S1	matched 3/4	shuffled max 2/4 mean 1.50	cells 4PI=a/n 4TRI=c/p C43=a/n C6=a/n CA=a/n DBL=b/o EBR=l/y INF=h/u LOOPBAR=a/n PHI=e/r VBAR=g/t ZHOOK=i/x	ties: CA
+held-out S2	matched 8/10	shuffled max 5/10 mean 2.85	cells 4PI=a/n 4TRI=c/p C43=a/n C6=a/n CA=a/n DBL=b/o EBR=l/y HASH4=e/r INF=h/u PHI=e/r VBAR=g/t ZHOOK=i/x	ties: 4PI CA
+held-out S3	matched 10/12	shuffled max 8/12 mean 3.60	cells 4PI=a/n 4TRI=c/p C43=a/n CA=a/n DBL=b/o EBR=l/y HASH4=e/r INF=h/u LOOPBAR=a/n PHI=e/r VBAR=g/t ZHOOK=i/x	ties: 4PI CA
+held-out S4a+S4b	matched 10/18	shuffled max 9/18 mean 5.80	cells 4PI=a/n 4TRI=c/p C43=a/n C6=a/n CA=c/p DBL=b/o EBR=e/r HASH4=e/r INF=a/n LOOPBAR=a/n PHI=e/r VBAR=g/t ZHOOK=i/x	ties: 4PI CA DBL EBR
+held-out S5	matched 6/11	shuffled max 6/11 mean 3.40	cells 4PI=c/p 4TRI=c/p C43=a/n C6=a/n CA=a/n DBL=b/o EBR=e/r HASH4=e/r INF=h/u LOOPBAR=a/n PHI=e/r VBAR=f/s ZHOOK=i/x	ties: CA DBL EBR
+POOLED held-out	37/55 = 0.673  (H11 free sets 36/55 = 0.655; H1 24/55 = 0.436; F61-CAL level 0.85)
+controls (20 cell-permuted maps pooled across folds, seed 1): 0.255 0.236 0.291 0.309 0.364 0.309 0.182 0.400 0.273 0.345 0.291 0.273 0.255 0.364 0.327 0.436 0.364 0.273 0.364 0.327
+control mean 0.312 max 0.436
+cell per fold: PHI=e/r C43=a/n 4TRI=c/p VBAR=f/s|g/t DBL=b/o INF=a/n|h/u
+VBAR cell counts per fold (the s/t conflict): S1: g/t:4 f/s:3; S2: g/t:3 f/s:2; S3: g/t:3 f/s:2; S4a+S4b: g/t:4 f/s:2; S5: f/s:3 g/t:1
+GATE H12 (a) pooled above every control: PASS; (b) six classes cell-stable: FAIL; H12 FAIL
+all-span map (scripts/f61crib3_map.tsv), in-sample, non-gating: 46/55 matched; misses s@VBAR:3 v@INF:2 j@ZHOOK:1 o@PHI:1 m@CA:1
+sensitivity (non-gating), v->u and j->i folded in the markup: pooled held-out 40/55 = 0.727; controls mean 0.323 max 0.455; cell per fold: PHI=e/r C43=a/n 4TRI=c/p VBAR=f/s|g/t DBL=b/o INF=a/n|h/u
