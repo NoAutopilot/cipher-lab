@@ -4,6 +4,6 @@ PR-LAND-17	owner	.claude/briefs/runs/2026-09-27-parent-pr-land-17.md	Sonnet	4	40
 WAIT-CHECK	owner	.claude/briefs/runs/2026-09-27-parent-wait-check.md	Sonnet	4	40	done 2026-09-27 20:22	2026-09-27 20:13	owner's observation 20:1x UTC: no target is only waiting
 WAIT-PASS-A	owner	.claude/briefs/runs/2026-09-27-parent-wait-pass-a.md	Sonnet	8	60	done 2026-09-27 20:27	2026-09-27 20:13	owner's observation 20:1x UTC: no target is only waiting
 WAIT-PASS-B	owner	.claude/briefs/runs/2026-09-27-parent-wait-pass-b.md	Sonnet	8	60	done 2026-09-27 20:25	2026-09-27 20:13	owner's observation 20:1x UTC: no target is only waiting
-CAMPAIGN-SEED-armstrong-madison-1808	owner	.claude/briefs/runs/2026-09-27-parent-campaign-seed.md	Sonnet	4	30	claimed session_01QwdzD6zYzkhzTviz7QhF4M 2026-09-27 20:31	2026-09-27 20:24	SPRINT.md seed for armstrong-madison-1808
+CAMPAIGN-SEED-armstrong-madison-1808	owner	.claude/briefs/runs/2026-09-27-parent-campaign-seed.md	Sonnet	4	30	done 2026-09-27 20:34	2026-09-27 20:24	SPRINT.md seed for armstrong-madison-1808; CAMPAIGN.md written, 10 hypotheses
 CAMPAIGN-SEED-espagnol142-mercy-1648	owner	.claude/briefs/runs/2026-09-27-parent-campaign-seed.md	Sonnet	4	30	done 2026-09-27 20:31	2026-09-27 20:24	SPRINT.md seed for espagnol142-mercy-1648
 CAMPAIGN-SEED-fr4715-f61-mayenne-1592	owner	.claude/briefs/runs/2026-09-27-parent-campaign-seed.md	Sonnet	4	30	claimed session_0198Bo8Dhz8XHkanQxcnayCk 2026-09-27 20:29	2026-09-27 20:24	SPRINT.md seed for fr4715-f61-mayenne-1592
