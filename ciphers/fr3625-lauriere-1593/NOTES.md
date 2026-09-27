@@ -957,3 +957,75 @@ LAU-F58's own test unchanged (`key57/control_key57.py --apply-f58`, fr16 judge, 
 needs judge PASS AND real above all 20), with the decode run on the reconciled ciphertext with the interlinear
 gloss-hand words removed (they are a second, period rendering of the same text, not part of the letter's own
 running text).
+
+### Crop (U1)
+
+LAU-F58's `--max-width 2000` cut used the detector's default spacing (pitch 140, 30 bands). In the cipher-dense
+middle each band held parts of two physical rows: a numeral row, and the lighter interlinear gloss row about 75 px
+above it. On top of that, the lines rise about 0.03 to the right, more than one row pitch across the 3700 px region.
+The brief's command (`--max-width 900`, default spacing) and its `--follow-slope 300 --slope-local` variant were
+both run and checked by eye; neither was usable. The default spacing kept the two-rows-per-band fault. Slope-local
+tracking jumped between gloss and numeral rows: one numeral row was skipped and two bands were duplicated. A
+-1.0 deg deskew still left rows leaving a 63 px band by segment 3. The cut that worked is in
+`images/regen_f58s_sheets.sh`:
+
+1. Rotate the cached native region (`src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg`) by -1.9 deg. This is
+   the median of the tool's own per-band slope fits in the dense middle.
+2. Run `python3 tools/iiif_lines.py --image <deskewed> --region 0,0,3700,5100 --prefix f58seg --max-width 900
+   --distance 45 --prominence 120 --debug`. This gives 49 bands, one physical row each, 5 segments per band.
+3. Upscale each segment 3x (LANCZOS) and stack each line's segments into one sheet, `images/f58s_L01..L49.jpg`, the
+   same as Montholon block 2. The sheets are saved at JPEG quality 45 so `images/` stays under 30 MB (29.4 MB).
+
+LAU-F58's 60 `f58r_*` crops were deleted. Each is marked `deleted` in `images/manifest.json` with the command that
+regenerates it.
+
+### Passes (U2) and the agreement gate
+
+Two independent Opus subagents each read all 49 sheets. Each was given only the sheet paths and key57's code
+inventory, never the meanings. Pass A (`key57/f58s_passA.tsv`) has 706 rows and 141 numerals. Pass B
+(`key57/f58s_passB.tsv`) has 692 rows and 135 numerals.
+
+The alignment is `python3 tools/reconcile_passes.py key57/f58s_passA.tsv key57/f58s_passB.tsv --crops
+ciphers/fr3625-lauriere-1593/images --out-dir key57/f58s_reconcile`. With plaintext dropped, 27 lines carry signs.
+All-sign agreement is 171/262 = 65.3 pct: 74 signs agreed at H, 97 agreed but uncertain, 91 disagree.
+
+**Numeral-sign agreement (the pre-registered statistic) is 120/147 = 0.816. It clears the 0.80 gate.** It is
+computed from `f58s_reconcile/ciphertext_draft.tsv`: every aligned column where either pass read a numeral counts,
+and a column agrees when both passes read the same numeral. LAU-F58's coarse figure on the 2000 px crops was
+39.2 pct.
+
+Two caveats on the margin:
+- The margin is thin: 2 columns fewer and the gate fails.
+- Pass B moved some low-sitting signs to the next sheet (L23/L24, L25/L26, L27/L28, L29/L30), recording each sign
+  on whichever sheet shows it whole. Those signs count as disagreements here, so the per-sign agreement is, if
+  anything, understated.
+
+Both passes flag gloss/main-hand overlap in L17-L29.
+
+### Stopped on cap before U3 and U4
+
+`get_session` at 20:15 UTC read **USD 16.63, about 2.1x the USD 8 cap**. The brief's rule is to stop before any unit
+that would cross 80 pct of the cap (6.4). So U3 (settling `disagreements.tsv` + `uncertain.tsv` from the crops and
+writing `key57/f58s_ciphertext.tsv`) was **not done**, and U4 (the key57 control) was **not run**.
+
+The overspend was the passes. Each Opus pass read 49 sheets of about 2700x1000 px, roughly 175 tool calls and 230k
+to 250k subagent tokens each, against the brief's estimate of USD 2 per pass. This is the per-unit mispricing in
+CLAUDE.md Usage 6: price a pass per sheet read, not per pass. Wall-clock time was fine: 20 minutes of a 60-minute
+box.
+
+**Outcome: none of (a)/(b)/(c) is reached.** The agreement gate held, which rules out (c) for this cut. The key57
+test is not run, so neither (a) nor (b) applies.
+
+The named next step is U3 plus U4 as a fresh job:
+- Settle the 91 disagreements, then the uncertain rows on numeral lines only (lines L15-L38).
+- Run `key57/control_key57.py --apply-f58 key57/f58s_ciphertext.tsv --seeds 20`, with the gloss-marked `[PLAIN]`
+  rows removed first.
+- Price U3 at 1 Opus unit over the 27 cipher-bearing lines. Give the reconciler the disagreement lines' sheets only,
+  about 15 sheets, not all 49. U4 is a script.
+
+An alternative way to settle the leaf: the interlinear gloss on fol.58r is a period rendering in a second hand. It
+could serve as a C-grade crib for an alignment control (`tools/interlinear_align.py`), independent of key57 (a
+suggestion, Usage 7).
+
+Requests this session: gallica.bnf.fr 0. The cached native region was reused, and `--ark` read the cache. Vision
+calls: 2 (the two passes), of the brief's 3.

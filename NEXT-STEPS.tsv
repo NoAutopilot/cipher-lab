@@ -61,7 +61,7 @@ fr3151-noailles-1558	open	runnable	M	n	26 Sep	Not a next step for this job (brie
 fr3151-seure-1558	blocked	runnable	M	n	24 Sep	Suggested next step: a worker with a larger cap either (a) re-runs the atlas with a trimmed region and works through f75L's remaining lines against the existing classified box list, or (b) captures i…	843
 fr3198-labbe-1577	blocked	needs-triage	?	n	24 Sep		0
 fr3621-dinteville-1592	open	needs-triage	?	n	24 Sep		0
-fr3625-lauriere-1593	open	needs-person	M	n	27 Sep	The NEAR.md next step moves to the fr.3632 no.8 image (an owner-side BnF item, batched into ASKS 78) rather than more work on key57 -- a second transcription pass of key57.tsv itself (this test's sta…	535
+fr3625-lauriere-1593	open	runnable	S	n	27 Sep	The named next step is U3 plus U4 as a fresh job: - Settle the 91 disagreements, then the uncertain rows on numeral lines only (lines L15-L38).	442
 fr3789-mariedemedicis-savary-1610	blocked	runnable	M	n	25 Sep	**Follow-up (not in this brief, one line only):** a settling pass on `disagreements.tsv` against the image would sharpen `ciphertext_draft.tsv` into a citable `ciphertext.tsv`; separately, per Bourde…	388
 fr3975-vieuville-1587	blocked	needs-triage	?	n			0
 fr3984-sega-1593	blocked	needs-edition	M	n	27 Sep	**Not independently confirmed and flagged for whoever picks this up:** (1) this pass did not fetch the fr.3985 Gallica leaf itself (canvas range c.6-13, `btv1b90606498`) to check the date and hand ag…	1055
@@ -184,4 +184,4 @@ wvo-hessen-1564	open	runnable	M	n	26 Sep	**Next step for a successor, not pursue
 yogtze-1984	open	needs-triage	?	n	25 Sep		0
 zbz-busbecq-1587	open	needs-triage	?	n			0
 zeschau-seebach-1841	blocked	runnable	M	n	26 Sep	## Next step (not run this pass)	32
-# 185 rows -- needs-edition=9 needs-image=16 needs-key=2 needs-person=9 needs-triage=67 runnable=82
+# 185 rows -- needs-edition=9 needs-image=16 needs-key=2 needs-person=8 needs-triage=67 runnable=83

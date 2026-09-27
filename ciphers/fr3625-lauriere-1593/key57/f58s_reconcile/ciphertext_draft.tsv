@@ -1,0 +1,263 @@
+line	position	sign	confidence	alt	why
+L06	1	SYM:G	M	B:-	gap
+L06	2	75	M	B:-	gap
+L09	1	SYM:at	M	B:-	gap
+L09	2	SYM:at	M	B:-	gap
+L09	3	SYM:G	M	B:-	gap
+L09	4	SYM:long-s	M	B:-	gap
+L11	1	SYM:at	M	B:-	gap
+L14	1	SYM:at	M	B:-	gap
+L15	1	304	H		agree
+L15	2	20	H		agree
+L15	3	203	M		agree-flagged
+L15	4	59	H		agree
+L15	5	SYM:X	M		agree-flagged
+L15	6	39	H		agree
+L17	1	440	L		agree-flagged
+L17	2	22	M		agree-flagged
+L17	3	SYM:v	M	B:-	gap
+L17	4	SYM:m	M	B:SYM:xm	differ
+L17	5	183	M		agree-flagged
+L17	6	9	L		agree-flagged
+L17	7	SYM:triangle	M		agree-flagged
+L17	8	6	H		agree
+L17	9	300	H		agree
+L17	10	39	H		agree
+L17	11	262	H		agree
+L17	12	154	M		agree-flagged
+L17	13	17	M		agree-flagged
+L18	1	160	M	B:60	differ
+L18	2	SYM:v	L		agree-flagged
+L18	3	17	H		agree
+L18	4	40	H		agree
+L18	5	42	H		agree
+L18	6	40	M		agree-flagged
+L18	7	8	M	A:-	gap
+L18	8	88	M	B:SYM:	differ
+L18	9	SYM:pi	M		agree-flagged
+L18	10	248	M		agree-flagged
+L18	11	22	H		agree
+L18	12	SYM:pi	M		agree-flagged
+L18	13	2	L		agree-flagged
+L18	14	SYM:triangle	H		agree
+L18	15	SYM:omega	M		agree-flagged
+L18	16	39	H		agree
+L18	17	20	H		agree
+L18	18	SYM:T	M	A:-	gap
+L18	19	SYM:T	M	A:-	gap
+L18	20	117	M	B:SYM:+	differ
+L18	21	5	L		agree-flagged
+L19	1	SYM:h	M	B:6	differ
+L19	2	84	L		agree-flagged
+L19	3	550	L		agree-flagged
+L19	4	17	M		agree-flagged
+L19	5	SYM:oTo	M	B:SYM:o-cross-o	differ
+L19	6	185	H		agree
+L19	7	20	H		agree
+L19	8	SYM:lambda	M		agree-flagged
+L19	9	44	M		agree-flagged
+L19	10	SYM:crossed-loop	M	B:SYM:crossed-f	differ
+L19	11	30	M		agree-flagged
+L20	1	200	M		agree-flagged
+L20	2	SYM:bracket-H	M	B:SYM:L-hash	differ
+L20	3	243	H		agree
+L20	4	8	H		agree
+L20	5	2	H		agree
+L20	6	22	H		agree
+L20	7	70	L		agree-flagged
+L20	8	47	H		agree
+L20	9	SYM:inverted-T	M		agree-flagged
+L20	10	20	M		agree-flagged
+L20	11	22	H		agree
+L20	12	184	M		agree-flagged
+L20	13	SYM:lambda	M		agree-flagged
+L20	14	SYM:o	L		agree-flagged
+L20	15	44	L		agree-flagged
+L20	16	59	H		agree
+L20	17	394	M		agree-flagged
+L21	1	17	L		agree-flagged
+L21	2	SYM:h	M	A:-	gap
+L21	3	220	M		agree-flagged
+L21	4	339	M		agree-flagged
+L21	5	SYM:triangle	H		agree
+L21	6	17	H		agree
+L21	7	SYM:M	M		agree-flagged
+L21	8	154	M		agree-flagged
+L21	9	SYM:Y	M		agree-flagged
+L21	10	84	M		agree-flagged
+L21	11	334	H		agree
+L21	12	SYM:qm	M	B:-	gap
+L22	1	10	M	A:-	gap
+L22	2	109	M	B:9	differ
+L22	3	SYM:lambda	M		agree-flagged
+L22	4	66	H		agree
+L22	5	39	H		agree
+L22	6	SYM:lambda	M	B:-	gap
+L22	7	SYM:o	M	B:-	gap
+L22	8	SYM:Y	M	B:-	gap
+L22	9	335	H		agree
+L22	10	17	H		agree
+L22	11	141	L		agree-flagged
+L22	12	SYM:pi	M		agree-flagged
+L22	13	335	H		agree
+L22	14	17	H		agree
+L22	15	6	L		agree-flagged
+L22	16	SYM:cross	M	B:-	gap
+L22	17	8	M	B:-	gap
+L22	18	11	M	B:SYM:+	differ
+L22	19	8	L		agree-flagged
+L22	20		M	B:-	gap
+L22	21	SYM:VG	M	B:SYM:V-underlined	differ
+L22	22	SYM:G	L		agree-flagged
+L23	1	355	M	B:35	differ
+L23	2	75	L		agree-flagged
+L23	3	26	M		agree-flagged
+L23	4	64	M		agree-flagged
+L23	5	88	L		agree-flagged
+L23	6	SYM:triangle	H		agree
+L23	7	57	H		agree
+L23	8	6	H		agree
+L23	9	304	H		agree
+L23	10	309	M		agree-flagged
+L24	1	41	H		agree
+L24	2	SYM:X	M		agree-flagged
+L24	3	SYM:lambda	M		agree-flagged
+L24	4	29	H		agree
+L24	5		M	B:-	gap
+L25	1	SYM:x	M	B:-	gap
+L25	2	SYM:5-hook	M	B:-	gap
+L25	3	SYM:dagger	M	B:-	gap
+L25	4	20	M	B:SYM:cross-dot	differ
+L25	5	SYM:v	M	B:SYM:J-bar	differ
+L25	6	SYM:cross	M	B:SYM:J-bar	differ
+L25	7	SYM:crossed-hook	M	B:SYM:crossed-f	differ
+L25	8	4	H		agree
+L25	9	20	H		agree
+L25	10	52	M		agree-flagged
+L25	11	SYM:inverted-T	M		agree-flagged
+L25	12	SYM:double-cross	M		agree-flagged
+L25	13	SYM:m	L		agree-flagged
+L25	14	SYM:omega	L		agree-flagged
+L26	1	248	M		agree-flagged
+L26	2	160	H		agree
+L26	3	SYM:Y	M	A:-	gap
+L26	4	197	H		agree
+L26	5	SYM:n-arch	M	B:SYM:h-loop	differ
+L26	6	20	H		agree
+L26	7	SYM:M	M		agree-flagged
+L26	8	42	H		agree
+L26	9	SYM:f	L		agree-flagged
+L26	10	9	M		agree-flagged
+L26	11	599	M		agree-flagged
+L26	12	SYM:n-arch	M	B:SYM:h-loop	differ
+L26	13	22	H		agree
+L26	14	17	H		agree
+L26	15	20	H		agree
+L26	16	327	H		agree
+L26	17	185	H		agree
+L26	18	390	M	A:-	gap
+L26	19	20	M	A:-	gap
+L26	20	34	M	A:-	gap
+L26	21	340	M	B:SYM:+	differ
+L26	22	2	L		agree-flagged
+L26	23	SYM:x	L		agree-flagged
+L27	1	SYM:dagger	M	B:SYM:double-cross	differ
+L27	2		M	B:4	differ
+L27	3	SYM:B	L		agree-flagged
+L27	4	SYM:omega	M		agree-flagged
+L27	5	SYM:triangle	H		agree
+L27	6	40	M		agree-flagged
+L27	7	50	H		agree
+L27	8	SYM:inverted-T	M		agree-flagged
+L27	9	20	H		agree
+L27	10	304	H		agree
+L27	11	SYM:crossed-loop	M	B:SYM:venus	differ
+L27	12	SYM:Y	M		agree-flagged
+L27	13	159	M		agree-flagged
+L28	1	22	H		agree
+L28	2	SYM:triangle	H		agree
+L28	3	SYM:dagger	M	B:SYM:+	differ
+L28	4	SYM:cross	M	B:SYM:double-cross	differ
+L28	5	SYM:Y	M		agree-flagged
+L28	6	48	M		agree-flagged
+L28	7	SYM:triangle	H		agree
+L28	8	SYM:Y	M		agree-flagged
+L28	9	SYM:double-cross	M	B:SYM:plus-minus	differ
+L28	10	295	M		agree-flagged
+L28	11	5	M		agree-flagged
+L28	12	SYM:omega	M	B:SYM:omega-bar	differ
+L28	13	23	M		agree-flagged
+L28	14	SYM:cross	M	B:SYM:+	differ
+L28	15	50	M		agree-flagged
+L28	16	SYM:crossed-loop	M	B:SYM:venus	differ
+L28	17	SYM:#	M	B:SYM:hash	differ
+L28	18	4	L		agree-flagged
+L28	19	SYM:Y	M		agree-flagged
+L28	20	SYM:inverted-T	M		agree-flagged
+L28	21	SYM:F	M		agree-flagged
+L28	22	20	M	A:-	gap
+L28	23	17	M	A:-	gap
+L29	1		M	B:-	gap
+L29	2	17	M	B:-	gap
+L29	3	22	M	B:32	differ
+L29	4	SYM:omega	M		agree-flagged
+L29	5	SYM:crossed-loop	M	B:SYM:venus	differ
+L29	6	SYM:pi	L		agree-flagged
+L30	1	SYM:omega	M		agree-flagged
+L30	2	SYM:cross	M	B:SYM:+	differ
+L30	3	589	M		agree-flagged
+L30	4	SYM:hook	M	B:SYM:long-s	differ
+L30	5	55	H		agree
+L30	6	SYM:inverted-T	H		agree
+L30	7	SYM:xi	M	B:SYM:triple-E	differ
+L30	8	334	H		agree
+L30	9	SYM:lambda	H		agree
+L30	10	16	H		agree
+L30	11	SYM:inverted-T	H		agree
+L30	12	SYM:infinity	H		agree
+L30	13	17	H		agree
+L30	14	SYM:long-s	M	B:-	gap
+L30	15	8	M	B:-	gap
+L30	16	SYM:Omega	M	B:SYM:beta-R	differ
+L30	17	320	M		agree-flagged
+L30	18	17	H		agree
+L30	19	9	H		agree
+L30	20	70	M		agree-flagged
+L30	21	20	M	B:-	gap
+L30	22	1	M	B:-	gap
+L30	23	5	M	B:26	differ
+L30	24	SYM:T	M	B:17	differ
+L31	1	SYM:at	M	B:-	gap
+L31	2	SYM:at	M	B:-	gap
+L32	1	SYM:at	M	B:-	gap
+L33	1	6	H		agree
+L33	2	SYM:lambda	H		agree
+L33	3	344	M		agree-flagged
+L34	1	SYM:X	M	B:SYM:crossed-X	differ
+L35	1	SYM:5-hook	M	B:-	gap
+L35	2	SYM:G	M	B:-	gap
+L35	3	SYM:dagger	M	B:-	gap
+L35	4	SYM:omega	M	B:-	gap
+L35	5	SYM:G	M	B:-	gap
+L35	6	SYM:G	M	B:-	gap
+L35	7	252	H		agree
+L35	8	SYM:#	M	B:SYM:crossed-X	differ
+L35	9	304	H		agree
+L35	10	SYM:omega	M		agree-flagged
+L35	11	14	M		agree-flagged
+L35	12	SYM:crossed-loop	M	B:SYM:venus	differ
+L35	13	284	M		agree-flagged
+L35	14	SYM:omega	M		agree-flagged
+L35	15	SYM:beta	L		agree-flagged
+L35	16	SYM:lambda	M		agree-flagged
+L36	1	28	M		agree-flagged
+L36	2	25	H		agree
+L36	3	305	L		agree-flagged
+L36	4	203	M		agree-flagged
+L36	5	SYM:crossed-hook	M	B:SYM:double-cross	differ
+L36	6	SYM:8-loop	M	B:SYM:3-over-o	differ
+L38	1	300	H		agree
+L38	2	17	H		agree
+L38	3	SYM:M	M	B:SYM:M-loop	differ
+L38	4	SYM:C	M	B:SYM:C-loop	differ
+L42	1	1000	M	B:-	gap

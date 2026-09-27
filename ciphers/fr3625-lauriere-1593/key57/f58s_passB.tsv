@@ -1,0 +1,693 @@
+line	pos	sign	marks	conf
+L01	1	[PLAIN:?]	blank edge	H
+L02	1	[PLAIN:12]	date	H
+L02	2	[PLAIN:Aoust]	date	M
+L02	3	[PLAIN:1593]	date	H
+L02	4	[PLAIN:58]	foliation	H
+L03	1	[PLAIN:Monseigneur]		M
+L03	2	[PLAIN:Je]		M
+L03	3	[PLAIN:ne]		M
+L03	4	[PLAIN:fallis]		M
+L03	5	[PLAIN:en]		M
+L03	6	[PLAIN:descendant]		M
+L03	7	[PLAIN:de]		M
+L03	8	[PLAIN:cheval]		M
+L03	9	[PLAIN:a]		M
+L03	10	[PLAIN:voire]		M
+L03	11	[PLAIN:mon]		M
+L03	12	[PLAIN:monsieur]		M
+L03	13	[PLAIN:de]		M
+L04	1	[PLAIN:?]		L
+L04	2	[PLAIN:sne]		M
+L04	3	[PLAIN:sur]		M
+L04	4	[PLAIN:ce]		M
+L04	5	[PLAIN:que]		M
+L04	6	[PLAIN:me]		M
+L04	7	[PLAIN:commandastes]		M
+L04	8	[PLAIN:lequel]		M
+L04	9	[PLAIN:me]		M
+L04	10	[PLAIN:dist]		M
+L04	11	[PLAIN:que]		M
+L04	12	[PLAIN:monsieur]		M
+L04	13	[PLAIN:luy]		M
+L04	14	[PLAIN:avois]		M
+L05	1	[PLAIN:dict]		M
+L05	2	[PLAIN:quil]		M
+L05	3	[PLAIN:luy]		M
+L05	4	[PLAIN:envoyerois]		M
+L05	5	[PLAIN:la]		M
+L05	6	[PLAIN:lre]		M
+L05	7	[PLAIN:dans]		M
+L05	8	[PLAIN:mauls]		M
+L05	9	[PLAIN:parlez]		M
+L05	10	[PLAIN:avec]		M
+L05	11	[PLAIN:le]		M
+L05	12	[PLAIN:dechiffrement]		M
+L05	13	[PLAIN:mais]		L
+L06	1	[PLAIN:que]		M
+L06	2	[PLAIN:ses]		M
+L06	3	[PLAIN:papiers]		M
+L06	4	[PLAIN:estoient]		M
+L06	5	[PLAIN:desja]		M
+L06	6	[PLAIN:partis]		M
+L06	7	[PLAIN:et]		L
+L06	8	[PLAIN:je]		L
+L06	9	[PLAIN:les]		M
+L06	10	[PLAIN:donnerois]		M
+L06	11	[PLAIN:es]		M
+L06	12	[PLAIN:mains]		M
+L06	13	[PLAIN:de]		M
+L06	14	[PLAIN:Renel]		L
+L07	1	[PLAIN:Dours]		M
+L07	2	[PLAIN:je]		M
+L07	3	[PLAIN:me]		M
+L07	4	[PLAIN:suis]		M
+L07	5	[PLAIN:enquis]		M
+L07	6	[PLAIN:deulx]		M
+L07	7	[PLAIN:sil]		M
+L07	8	[PLAIN:les]		M
+L07	9	[PLAIN:avoit]		M
+L07	10	[PLAIN:qui]		M
+L07	11	[PLAIN:madvoit]		M
+L07	12	[PLAIN:luy]		M
+L07	13	[PLAIN:avoir]		M
+L08	1	[PLAIN:?]	interline strip: only tails and tops of neighbouring lines	H
+L09	1	[PLAIN:este]		M
+L09	2	[PLAIN:mis]		M
+L09	3	[PLAIN:en]		M
+L09	4	[PLAIN:main]		M
+L09	5	[PLAIN:de]		M
+L09	6	[PLAIN:Alphonsieme)]		L
+L09	7	[PLAIN:a]		L
+L09	8	[PLAIN:moy]		M
+L09	9	[PLAIN:la]		M
+L09	10	[PLAIN:lre]		M
+L09	11	[PLAIN:a]		L
+L09	12	[PLAIN:et]		L
+L09	13	[PLAIN:je]		M
+L09	14	[PLAIN:ne]		M
+L09	15	[PLAIN:faudrai]		M
+L10	1	[PLAIN:de]		M
+L10	2	[PLAIN:vous]		M
+L10	3	[PLAIN:en]		M
+L10	4	[PLAIN:envoyer]		M
+L10	5	[PLAIN:une]		M
+L10	6	[PLAIN:coppie]		M
+L10	7	[PLAIN:Jnay]		M
+L10	8	[PLAIN:aux]		M
+L10	9	[PLAIN:aultres]		M
+L10	10	[PLAIN:quatre]		M
+L10	11	[PLAIN:pour]		M
+L11	1	[PLAIN:dous]		M
+L11	2	[PLAIN:maniez]		M
+L11	3	[PLAIN:en]		M
+L11	4	[PLAIN:charge]		M
+L11	5	[PLAIN:Je]		M
+L11	6	[PLAIN:nay]		M
+L11	7	[PLAIN:failly]		M
+L11	8	[PLAIN:de]		M
+L11	9	[PLAIN:pas]		M
+L11	10	[PLAIN:vous]		M
+L11	11	[PLAIN:a]		L
+L11	12	[PLAIN:mons]		M
+L11	13	[PLAIN:de]		M
+L12	1	[PLAIN:?]	segments 1-2 show only tails; line body below strip	L
+L12	2	[PLAIN:avec]		M
+L12	3	[PLAIN:au]		M
+L12	4	[PLAIN:lever]		M
+L12	5	[PLAIN:du]		M
+L12	6	[PLAIN:Roy]		M
+L12	7	[PLAIN:luy]		M
+L13	1	[PLAIN:Renel]		L
+L13	2	[PLAIN:vous]		M
+L13	3	[PLAIN:en]		M
+L13	4	[PLAIN:rend]		M
+L13	5	[PLAIN:conte]		M
+L13	6	[PLAIN:mons]		M
+L13	7	[PLAIN:de]		M
+L13	8	[PLAIN:Maisse]		L
+L14	1	[PLAIN:en]		M
+L14	2	[PLAIN:ayant]		M
+L14	3	[PLAIN:parle]		M
+L14	4	[PLAIN:a]		L
+L14	5	[PLAIN:Croys]		L
+L14	6	[PLAIN:quil]		M
+L14	7	[PLAIN:sera]		M
+L14	8	[PLAIN:en]		M
+L14	9	[PLAIN:cella]		M
+L14	10	[PLAIN:tout]		M
+L14	11	[PLAIN:ce]		M
+L14	12	[PLAIN:quil]		M
+L15	1	[PLAIN:?]		L
+L15	2	[PLAIN:en]		M
+L15	3	[PLAIN:nostre]		M
+L15	4	[PLAIN:est]		M
+L15	5	304		H
+L15	6	20		H
+L15	7	203		H
+L15	8	59		H
+L15	9	SYM:X		M
+L15	10	39		H
+L16	1	[PLAIN:pourra]		M
+L16	2	[PLAIN:le]		M
+L16	3	[PLAIN:plus]		M
+L16	4	[PLAIN:au]		M
+L16	5	[PLAIN:Roy]		M
+L16	6	[PLAIN:le]		M
+L16	7	[PLAIN:trouver]		L
+L16	8	[PLAIN:?]		L
+L16	9	[PLAIN:je]	mixed dark/grey; lower line entering from below	M
+L16	10	[PLAIN:ne]		M
+L16	11	[PLAIN:sait]		M
+L16	12	[PLAIN:a]	mixed dark/grey	M
+L16	13	[PLAIN:qui]		L
+L16	14	[PLAIN:le]		L
+L16	15	[PLAIN:confiere]	mixed dark/grey	L
+L16	16	[PLAIN:ignorant]	mixed dark/grey	L
+L16	17	[PLAIN:la]		M
+L17	1	[PLAIN:Srinirdr]	mixed dark/grey	L
+L17	2	[PLAIN:Couhy]	grey	M
+L17	3	[PLAIN:qui]	grey	M
+L17	4	[PLAIN:desire]	mixed dark/grey	M
+L17	5	[PLAIN:de]	mixed dark/grey	M
+L17	6	[PLAIN:servir]	mixed dark/grey	M
+L17	7	[PLAIN:ma?]	mixed dark/grey	L
+L17	8	[PLAIN:?]	fragments	L
+L17	9	440?	lower line entering from below; tops cut	L
+L17	10	22		M
+L17	11	SYM:xm	x followed by m-like sign	L
+L17	12	183		M
+L17	13	9?	attached to triangle	L
+L17	14	SYM:triangle		M
+L17	15	6	dot	H
+L17	16	300		H
+L17	17	39		H
+L17	18	262		H
+L17	19	154		M
+L17	20	17		H
+L18	1	60?	b-like 6 then v-like sign; or plain word 'bov'	L
+L18	2	SYM:v		L
+L18	3	17		H
+L18	4	40		H
+L18	5	42		H
+L18	6	40	x attached (crossed)	M
+L18	7	8	dot before; ink blot after	M
+L18	8	SYM:?	ink blot	L
+L18	9	SYM:pi		M
+L18	10	248		M
+L18	11	22		H
+L18	12	SYM:pi		M
+L18	13	2?	merged with ink-blotted stroke	L
+L18	14	SYM:triangle		H
+L18	15	SYM:omega		M
+L18	16	39		H
+L18	17	20		H
+L18	18	SYM:T		L
+L18	19	SYM:T		L
+L18	20	SYM:+		M
+L18	21	5		L
+L18	22	[PLAIN:pour]		L
+L18	23	[PLAIN:lui]		L
+L18	24	[PLAIN:cest]		M
+L18	25	[PLAIN:a]		M
+L18	26	[PLAIN:m]		M
+L18	27	[PLAIN:du]		M
+L18	28	[PLAIN:bon]	grey partly	L
+L18	29	[PLAIN:a]	grey	L
+L19	1	[PLAIN:pour]	grey	M
+L19	2	[PLAIN:qui]		M
+L19	3	[PLAIN:luy]		M
+L19	4	[PLAIN:est]	mixed dark/grey	M
+L19	5	[PLAIN:le]	heavy stroke	L
+L19	6	[PLAIN:plus]		M
+L19	7	[PLAIN:important]		M
+L19	8	[PLAIN:ma]	grey	M
+L19	9	[PLAIN:dame]	mixed dark/grey	M
+L19	10	[PLAIN:dans]	grey	M
+L19	11	[PLAIN:sou?]	mixed; ink blot	L
+L19	12	[PLAIN:?]	lower line entering from below, cut	L
+L19	13	6?	dot; b/h-like	L
+L19	14	84		M
+L19	15	550		L
+L19	16	17		H
+L19	17	SYM:o-cross-o	o joined to crossed stem and o	M
+L19	18	185		H
+L19	19	20		H
+L19	20	SYM:lambda		M
+L19	21	44		H
+L19	22	SYM:crossed-f	pound-like sign	M
+L19	23	30		H
+L20	1	200		H
+L20	2	SYM:L-hash	L joined to double-cross (H#-like)	M
+L20	3	243		H
+L20	4	8	dot	H
+L20	5	2	dot	H
+L20	6	22	dot	H
+L20	7	70?	dot; second digit boxed/cut, maybe 78	L
+L20	8	47		H
+L20	9	SYM:inverted-T		M
+L20	10	20	#	M
+L20	11	22		H
+L20	12	184	dot before	M
+L20	13	SYM:lambda		M
+L20	14	SYM:o		L
+L20	15	44	crossed strokes	L
+L20	16	59	dot	H
+L20	17	394		M
+L20	18	[PLAIN:?]	lower line entering	L
+L20	19	[PLAIN:ait]	mixed dark/grey	L
+L20	20	[PLAIN:soit]		M
+L20	21	[PLAIN:des]		M
+L20	22	[PLAIN:catholiques]	mixed dark/grey	M
+L20	23	[PLAIN:soit]		M
+L21	1	[PLAIN:La]		M
+L21	2	[PLAIN:maison]	mixed dark/grey	M
+L21	3	[PLAIN:de]	grey	M
+L21	4	[PLAIN:mons]	grey	L
+L21	5	[PLAIN:de]	grey	L
+L21	6	[PLAIN:Mont?]	mixed dark/grey	L
+L21	7	[PLAIN:?]	grey	L
+L21	8	[PLAIN:et]		M
+L21	9	[PLAIN:le]		M
+L21	10	[PLAIN:plus]	mixed dark/grey	M
+L21	11	[PLAIN:principal]	mixed dark/grey	M
+L21	12	[PLAIN:appuy]	mixed dark/grey	M
+L21	13	[PLAIN:que]	mixed	L
+L21	14	[PLAIN:?]	fragments	L
+L21	15	17?	lower line entering; cut	L
+L21	16	SYM:h?	dot; cut	L
+L21	17	220		M
+L21	18	339		M
+L21	19	SYM:triangle		H
+L21	20	17		H
+L21	21	SYM:M		M
+L21	22	154		M
+L21	23	SYM:Y		M
+L21	24	84		M
+L21	25	334		H
+L21	26	[PLAIN:qui]		M
+L22	1	10		M
+L22	2	9?	E; heavy descender from neighbouring line crosses it	L
+L22	3	SYM:lambda		M
+L22	4	66	x	H
+L22	5	39	E	H
+L22	6	[PLAIN:Roy]	R written lambda-like; or SYM:lambda + oy	L
+L22	7	335		H
+L22	8	17	#	H
+L22	9	141		M
+L22	10	SYM:pi		M
+L22	11	335		H
+L22	12	17		H
+L22	13	6	dot	M
+L22	14	SYM:+		M
+L22	15	8		M
+L22	16	[PLAIN:il]	lower line entering from below	M
+L22	17	[PLAIN:y]		M
+L22	18	[PLAIN:auroit]		M
+L22	19	SYM:V-underlined	dark, underlined	L
+L22	20	SYM:G	grey	L
+L22	21	[PLAIN:l?]	grey	L
+L22	22	[PLAIN:qui]	grey	M
+L22	23	[PLAIN:retenoit]	mixed	M
+L23	1	[PLAIN:de]	mixed dark/grey	M
+L23	2	[PLAIN:ceux]	mixed	L
+L23	3	[PLAIN:de]		M
+L23	4	[PLAIN:la]	mixed	M
+L23	5	[PLAIN:religion]	mixed dark/grey	M
+L23	6	[PLAIN:soit]	mixed	M
+L23	7	[PLAIN:de]	grey	M
+L23	8	[PLAIN:ceste]	grey	M
+L23	9	[PLAIN:maison]		M
+L23	10	[PLAIN:soit]	lower line entering from below (starts on sheet L24)	M
+L23	11	35	E; tops on L24 sheet	M
+L23	12	75		L
+L23	13	26		H
+L23	14	64	v	M
+L23	15	88		L
+L23	16	SYM:triangle		H
+L23	17	57	dot	H
+L23	18	6	dot	H
+L23	19	304		H
+L23	20	309		M
+L24	1	[PLAIN:seconderois]		M
+L24	2	[PLAIN:tousiours]		M
+L24	3	[PLAIN:pour]		M
+L24	4	[PLAIN:cela]		M
+L24	5	41	E	H
+L24	6	SYM:X		M
+L24	7	SYM:lambda	caret-like	M
+L24	8	29		H
+L24	9	[PLAIN:soyt]	numerals following are recorded on sheet L23	M
+L24	10	[PLAIN:?]	lower line entering, mixed dark/grey	L
+L24	11	[PLAIN:?]	grey	L
+L24	12	[PLAIN:et]	grey	M
+L24	13	[PLAIN:favoriser]	mixed dark/grey	M
+L24	14	[PLAIN:la]	grey	M
+L24	15	[PLAIN:ligue]	grey	M
+L25	1	[PLAIN:?]		L
+L25	2	[PLAIN:bo]	grey	L
+L25	3	[PLAIN:la]	grey	L
+L25	4	SYM:cross-dot	dark cross with dot and hook	L
+L25	5	[PLAIN:quoy]		M
+L25	6	[PLAIN:?]	dark blot, mixed	L
+L25	7	[PLAIN:dessus]	mixed dark/grey	M
+L25	8	[PLAIN:fort]	mixed	M
+L25	9	[PLAIN:Sections?]	mixed dark/grey	L
+L25	10	[PLAIN:dung]		M
+L25	11	SYM:J-bar	dot	M
+L25	12	SYM:J-bar	dot	M
+L25	13	[PLAIN:?]	grey, cut at top	L
+L25	14	SYM:crossed-f	f with cross and hook	L
+L25	15	4	E	H
+L25	16	20		H
+L25	17	52	dot below 2	M
+L25	18	SYM:inverted-T		M
+L25	19	SYM:double-cross	dagger-like	M
+L25	20	SYM:m		L
+L25	21	SYM:omega		L
+L25	22	[PLAIN:a]	grey	L
+L26	1	248		M
+L26	2	160		H
+L26	3	SYM:Y		M
+L26	4	197	dot	H
+L26	5	SYM:h-loop	tall looped n/h-like sign	M
+L26	6	20		H
+L26	7	SYM:M		M
+L26	8	42		H
+L26	9	SYM:f	lighter ink	L
+L26	10	9		M
+L26	11	599		H
+L26	12	SYM:h-loop		M
+L26	13	22		H
+L26	14	17	E	H
+L26	15	20		H
+L26	16	327		H
+L26	17	185		H
+L26	18	390		H
+L26	19	20		M
+L26	20	34	y	M
+L26	21	SYM:+	followed on sheet L25	M
+L26	22	[PLAIN:?]	lower line entering	L
+L26	23	[PLAIN:mons]		M
+L26	24	2?	grey	L
+L26	25	SYM:x	heavy blotted x; dot	L
+L26	26	[PLAIN:la]		M
+L26	27	[PLAIN:fremoulet?]	mixed dark/grey	L
+L27	1	[PLAIN:ou?]	dot before	L
+L27	2	SYM:double-cross	heavy	L
+L27	3	[PLAIN:pour]	struck through by long stroke	M
+L27	4	[PLAIN:le]	struck through	L
+L27	5	[PLAIN:pourroit]	mixed dark/grey	M
+L27	6	[PLAIN:estre]	mixed	L
+L27	7	4	dot before and after	M
+L27	8	[PLAIN:po]	superscript	L
+L27	9	[PLAIN:Lotore?]	mixed dark/grey	L
+L27	10	[PLAIN:Insheurr?]		L
+L27	11	[PLAIN:gagner]	mixed dark/grey	M
+L27	12	[PLAIN:mon?]	cut	L
+L27	13	SYM:B	B-like, joined to omega; line begins on sheet L28	M
+L27	14	SYM:omega		M
+L27	15	SYM:triangle		H
+L27	16	40		H
+L27	17	50		H
+L27	18	SYM:inverted-T		M
+L27	19	20		H
+L27	20	304		H
+L27	21	SYM:venus	circle with cross below	M
+L27	22	SYM:Y		M
+L27	23	159		M
+L28	1	22		H
+L28	2	SYM:triangle		H
+L28	3	SYM:+		M
+L28	4	SYM:double-cross		L
+L28	5	SYM:Y		M
+L28	6	[PLAIN:en]		M
+L28	7	[PLAIN:voire]		M
+L28	8	48		M
+L28	9	SYM:triangle		H
+L28	10	SYM:Y		M
+L28	11	SYM:plus-minus	+ with bar	M
+L28	12	295		M
+L28	13	5	dot	M
+L28	14	SYM:omega-bar	omega with bar over	M
+L28	15	23		M
+L28	16	SYM:+		M
+L28	17	50		M
+L28	18	SYM:venus		M
+L28	19	SYM:hash	grid/# sign	M
+L28	20	4?	h-like	L
+L28	21	SYM:Y		M
+L28	22	SYM:inverted-T		M
+L28	23	SYM:F		M
+L28	24	20	ink blot	M
+L28	25	17	line continues on sheet L27	H
+L28	26	[PLAIN:?]	lower line, cut	L
+L28	27	[PLAIN:des]		M
+L28	28	[PLAIN:frans]		M
+L29	1	[PLAIN:me]	grey	M
+L29	2	[PLAIN:donne]	grey	M
+L29	3	[PLAIN:aucung]	mixed dark/grey	M
+L29	4	[PLAIN:soubs]		M
+L29	5	[PLAIN:soy]		M
+L29	6	[PLAIN:a]		M
+L29	7	[PLAIN:ceux]		M
+L29	8	[PLAIN:de]		M
+L29	9	[PLAIN:la]		M
+L29	10	[PLAIN:Religion]	mixed dark/grey	M
+L29	11	[PLAIN:?]	dot; heavy diagonal stroke (sign?)	L
+L29	12	[PLAIN:naturelle?]	cut	L
+L29	13	32	line begins on sheet L30	M
+L29	14	SYM:omega		M
+L29	15	SYM:venus	9-like loop with cross below	M
+L29	16	SYM:pi	or n	L
+L29	17	[PLAIN:Jnay]		M
+L30	1	SYM:omega		M
+L30	2	SYM:+	joined to omega; or inverted-T	M
+L30	3	589		H
+L30	4	SYM:long-s	tall loop, cf. h-loop	M
+L30	5	55		H
+L30	6	SYM:inverted-T		H
+L30	7	SYM:triple-E	three stacked E/Xi	M
+L30	8	334		H
+L30	9	SYM:lambda		H
+L30	10	16		H
+L30	11	SYM:inverted-T		H
+L30	12	SYM:infinity		H
+L30	13	17		H
+L30	14	SYM:beta-R	looped b/ss joined to R	M
+L30	15	320		H
+L30	16	[PLAIN:estans]		M
+L30	17	[PLAIN:tous]		M
+L30	18	17		H
+L30	19	9	dot	H
+L30	20	70	dot	H
+L30	21	26		M
+L30	22	17	continues on sheet L29	M
+L31	1	[PLAIN:?]	segs 1-3 interline: only tails/tops of neighbouring lines	L
+L31	2	[PLAIN:a]	lower line entering	L
+L31	3	[PLAIN:fort]		M
+L31	4	[PLAIN:fait]		M
+L31	5	[PLAIN:a?]		L
+L32	1	[PLAIN:?]		L
+L32	2	[PLAIN:la]		M
+L32	3	[PLAIN:conference?]		L
+L32	4	[PLAIN:Ils]		M
+L32	5	[PLAIN:ne]		M
+L32	6	[PLAIN:font?]		L
+L32	7	[PLAIN:fin]		M
+L32	8	[PLAIN:que]		M
+L32	9	[PLAIN:Jeyex?]		L
+L32	10	[PLAIN:a]		M
+L32	11	[PLAIN:ce?]		L
+L32	12	[PLAIN:nom?]		L
+L32	13	[PLAIN:?]		L
+L32	14	[PLAIN:la]		M
+L32	15	[PLAIN:plus]	partly grey	M
+L33	1	[PLAIN:aultre]	underlined	M
+L33	2	[PLAIN:beaucoup]		M
+L33	3	[PLAIN:plus]	partly grey	M
+L33	4	[PLAIN:de]	lower line entering	L
+L33	5	[PLAIN:celuy?]		L
+L33	6	[PLAIN:ministre?]		L
+L33	7	6	dot	H
+L33	8	SYM:lambda		H
+L33	9	344	last digit 4 or 9	M
+L34	1	[PLAIN:Il]		M
+L34	2	[PLAIN:est]		M
+L34	3	[PLAIN:grand]		M
+L34	4	[PLAIN:prinpz?]	abbreviated	L
+L34	5	[PLAIN:le?]		L
+L34	6	[PLAIN:w?egra?]		L
+L34	7	SYM:crossed-X	large X with extra strokes (# over X)	M
+L34	8	[PLAIN:le]		M
+L34	9	[PLAIN:trouveras?]		M
+L34	10	[PLAIN:le?]		L
+L34	11	[PLAIN:plus?]		L
+L34	12	[PLAIN:?]	lower line entering	L
+L34	13	[PLAIN:Yvnol?]	letter-string, dark; possibly cipher	L
+L34	14	[PLAIN:brzbatantoza]	letter-string, dark+grey; possibly cipher or gloss	L
+L35	1	[PLAIN:?]	large flourished capital with grey letter inside	L
+L35	2	[PLAIN:Le]		L
+L35	3	[PLAIN:Bunow?]	grey	L
+L35	4	[PLAIN:?]	large looped sign (Y/J-like), dark with grey stroke	L
+L35	5	[PLAIN:dict]	grey d, dark ict	M
+L35	6	[PLAIN:?]	flourished dark letters	L
+L35	7	252	overline	H
+L35	8	SYM:crossed-X	X crossed by # grid	M
+L35	9	304		H
+L35	10	SYM:omega		M
+L35	11	14		M
+L35	12	SYM:venus		M
+L35	13	284		M
+L35	14	SYM:omega		M
+L35	15	SYM:beta		L
+L35	16	SYM:lambda		M
+L36	1	28	8 partly grey	M
+L36	2	25		H
+L36	3	305	middle 0 blotted; or 309	M
+L36	4	203		M
+L36	5	SYM:double-cross	# like tall crossed H	L
+L36	6	[PLAIN:de]		M
+L36	7	[PLAIN:ces]		M
+L36	8	[PLAIN:Ils]		M
+L36	9	[PLAIN:dict]		M
+L36	10	[PLAIN:qui]		M
+L36	11	SYM:3-over-o	z-like sign over loop	L
+L36	12	[PLAIN:?]	lower line entering	L
+L36	13	[PLAIN:quil]		M
+L36	14	[PLAIN:amoura?]		L
+L36	15	[PLAIN:ce]	dot before	M
+L37	1	[PLAIN:La]	grey	M
+L37	2	[PLAIN:p?le?]	grey	L
+L37	3	[PLAIN:Bourbon?]	grey	L
+L37	4	[PLAIN:de]	mixed dark/grey	L
+L37	5	[PLAIN:Car]	grey	M
+L37	6	[PLAIN:de?]	grey	L
+L37	7	[PLAIN:Vyor?]	dark	L
+L37	8	[PLAIN:de?]	lower line	L
+L37	9	[PLAIN:luy]	lower line	M
+L37	10	[PLAIN:ennemy]		M
+L37	11	[PLAIN:les]		M
+L37	12	[PLAIN:loix]		M
+L37	13	[PLAIN:b?]	b/6-like with dot; could be SYM or word	L
+L37	14	[PLAIN:Je]		M
+L37	15	[PLAIN:ne]		M
+L37	16	[PLAIN:croys]		M
+L38	1	300		H
+L38	2	17		H
+L38	3	SYM:M-loop	M with loops/dots (like SYM:M)	M
+L38	4	SYM:C-loop	large C/O loop; or plain letter	L
+L38	5	[PLAIN:?]	cut at top of seg 2	L
+L38	6	[PLAIN:?]	lower line	L
+L38	7	[PLAIN:alle?]		L
+L38	8	[PLAIN:cellui?]		L
+L38	9	[PLAIN:ysz?]		L
+L38	10	[PLAIN:pour]		M
+L38	11	[PLAIN:aller]		M
+L38	12	[PLAIN:a]		M
+L38	13	[PLAIN:Nantz]		M
+L39	1	[PLAIN:Roy]		M
+L39	2	[PLAIN:est]		M
+L39	3	[PLAIN:alle]		M
+L39	4	[PLAIN:ce]		M
+L39	5	[PLAIN:soir]		M
+L39	6	[PLAIN:a]		M
+L39	7	[PLAIN:Foix?]		L
+L39	8	[PLAIN:et]		M
+L39	9	[PLAIN:vous?]		L
+L39	10	[PLAIN:dep?]		L
+L39	11	[PLAIN:?]	lower line, struck through	L
+L39	12	[PLAIN:andrets?]		L
+L39	13	[PLAIN:?]	struck through	L
+L39	14	[PLAIN:voila]		M
+L39	15	[PLAIN:Monseigneur]		M
+L40	1	[PLAIN:et]		M
+L40	2	[PLAIN:la]		M
+L40	3	[PLAIN:lagarace?]		M
+L40	4	[PLAIN:de]		M
+L40	5	[PLAIN:deux]		M
+L40	6	[PLAIN:de]		M
+L40	7	[PLAIN:?]	cut	L
+L40	8	[PLAIN:Mr]	lower line	M
+L40	9	[PLAIN:de]		L
+L40	10	[PLAIN:Simon?]		L
+L40	11	[PLAIN:Je?]	G-like	L
+L40	12	[PLAIN:vous]		M
+L40	13	[PLAIN:le]		M
+L40	14	[PLAIN:Respte?]		L
+L40	15	[PLAIN:de?]		L
+L41	1	[PLAIN:faire]		M
+L41	2	[PLAIN:ce]		M
+L41	3	[PLAIN:que]		M
+L41	4	[PLAIN:vous]		M
+L41	5	[PLAIN:plaira]		M
+L41	6	[PLAIN:mander]		M
+L41	7	[PLAIN:?]	lower line	L
+L41	8	[PLAIN:sera]		L
+L41	9	[PLAIN:ma?]		L
+L41	10	[PLAIN:fidelle?]	or tendres	L
+L41	11	[PLAIN:la]		M
+L41	12	[PLAIN:main]		M
+L42	1	[PLAIN:1000]	numeral in plain text (sum), not cipher	M
+L42	2	[PLAIN:escus]	w-like escu abbreviation	L
+L42	3	[PLAIN:mons]		M
+L42	4	[PLAIN:de]		M
+L42	5	[PLAIN:Sausy?]		L
+L42	6	[PLAIN:Chombert?]		L
+L42	7	[PLAIN:et?]		L
+L42	8	[PLAIN:?]	cut	L
+L43	1	[PLAIN:?]	segs 1-2 only tails of line above	L
+L43	2	[PLAIN:h?]		L
+L43	3	[PLAIN:Sertains?]		L
+L43	4	[PLAIN:les]		M
+L43	5	[PLAIN:ayans]		M
+L43	6	[PLAIN:tous]		M
+L43	7	[PLAIN:prys?]		L
+L44	1	[PLAIN:Pour]		L
+L44	2	[PLAIN:voulloir]		M
+L44	3	[PLAIN:que]		M
+L44	4	[PLAIN:vous]		M
+L44	5	[PLAIN:serez?]		L
+L44	6	[PLAIN:?]		L
+L45	1	[PLAIN:?]	upper line cut (Ch...)	L
+L45	2	[PLAIN:Le?]		L
+L45	3	[PLAIN:gentilhomme]		M
+L45	4	[PLAIN:a]		M
+L45	5	[PLAIN:vous]		M
+L45	6	[PLAIN:servir]		M
+L45	7	[PLAIN:et]		M
+L45	8	[PLAIN:vous]		M
+L45	9	[PLAIN:prys]		M
+L45	10	[PLAIN:a]		M
+L45	11	[PLAIN:jamais?]	or 'sa?'	L
+L46	1	[PLAIN:fromis?]	upper line	L
+L46	2	[PLAIN:fort]	upper line	L
+L46	3	[PLAIN:affectionne?]	upper line, cut	L
+L46	4	[PLAIN:Je?]	G-like	L
+L46	5	[PLAIN:mons]		M
+L46	6	[PLAIN:de]		M
+L46	7	[PLAIN:Sausy?]		L
+L46	8	[PLAIN:ny]		M
+L46	9	[PLAIN:ou]		M
+L46	10	[PLAIN:oublyer]		M
+L46	11	[PLAIN:rien]		M
+L46	12	[PLAIN:et]		M
+L46	13	[PLAIN:me]		M
+L46	14	[PLAIN:serez]		M
+L46	15	[PLAIN:a]		M
+L46	16	[PLAIN:jamais]		M
+L47	1	[PLAIN:Monseigneur]		H
+L47	2	[PLAIN:?]	flourish only; BN stamp	L
+L48	1	[PLAIN:A]		H
+L48	2	[PLAIN:Paris]		M
+L48	3	[PLAIN:ce]		M
+L48	4	[PLAIN:xij]	day numeral in roman, plain	M
+L48	5	[PLAIN:Aoust]		M
+L48	6	[PLAIN:1593]	date, plain	H
+L48	7	[PLAIN:Vre]		M
+L48	8	[PLAIN:treshumble]		H
+L48	9	[PLAIN:obeissant]		M
+L48	10	[PLAIN:affectionne?]		L
+L48	11	[PLAIN:serviteur]		M
+L48	12	[PLAIN:?]	lower line (signature) entering	L
+L49	1	[PLAIN:?]	foot of signature strokes only; tape/stain	L

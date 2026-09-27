@@ -1,0 +1,92 @@
+line	col	A	B	flagged	crop
+L06	1	SYM:G	-	A	
+L06	2	75	-	A	
+L09	1	SYM:at	-	A	
+L09	2	SYM:at	-	A	
+L09	3	SYM:G	-	A	
+L09	4	SYM:long-s	-	A	
+L11	1	SYM:at	-	A	
+L14	1	SYM:at	-	A	
+L17	3	SYM:v	-	A	
+L17	4	SYM:m	SYM:xm	AB	
+L18	1	160	60	AB	
+L18	7	-	8	B	
+L18	8	88	SYM:	AB	
+L18	18	-	SYM:T	B	
+L18	19	-	SYM:T	B	
+L18	20	117	SYM:+	AB	
+L19	1	SYM:h	6	AB	
+L19	5	SYM:oTo	SYM:o-cross-o	AB	
+L19	10	SYM:crossed-loop	SYM:crossed-f	AB	
+L20	2	SYM:bracket-H	SYM:L-hash	AB	
+L21	2	-	SYM:h	B	
+L21	12	SYM:qm	-	A	
+L22	1	-	10	B	
+L22	2	109	9	AB	
+L22	6	SYM:lambda	-		
+L22	7	SYM:o	-	A	
+L22	8	SYM:Y	-	A	
+L22	16	SYM:cross	-	A	
+L22	17	8	-	A	
+L22	18	11	SYM:+	AB	
+L22	20		-	A	
+L22	21	SYM:VG	SYM:V-underlined	AB	
+L23	1	355	35	AB	
+L24	5		-	A	
+L25	1	SYM:x	-	A	
+L25	2	SYM:5-hook	-	A	
+L25	3	SYM:dagger	-	A	
+L25	4	20	SYM:cross-dot	AB	
+L25	5	SYM:v	SYM:J-bar	AB	
+L25	6	SYM:cross	SYM:J-bar	AB	
+L25	7	SYM:crossed-hook	SYM:crossed-f	AB	
+L26	3	-	SYM:Y	B	
+L26	5	SYM:n-arch	SYM:h-loop	AB	
+L26	12	SYM:n-arch	SYM:h-loop	AB	
+L26	18	-	390		
+L26	19	-	20	B	
+L26	20	-	34	B	
+L26	21	340	SYM:+	AB	
+L27	1	SYM:dagger	SYM:double-cross	AB	
+L27	2		4	AB	
+L27	11	SYM:crossed-loop	SYM:venus	AB	
+L28	3	SYM:dagger	SYM:+	AB	
+L28	4	SYM:cross	SYM:double-cross	AB	
+L28	9	SYM:double-cross	SYM:plus-minus	AB	
+L28	12	SYM:omega	SYM:omega-bar	AB	
+L28	14	SYM:cross	SYM:+	AB	
+L28	16	SYM:crossed-loop	SYM:venus	B	
+L28	17	SYM:#	SYM:hash	B	
+L28	22	-	20	B	
+L28	23	-	17		
+L29	1		-	A	
+L29	2	17	-	A	
+L29	3	22	32	AB	
+L29	5	SYM:crossed-loop	SYM:venus	AB	
+L30	2	SYM:cross	SYM:+	B	
+L30	4	SYM:hook	SYM:long-s	AB	
+L30	7	SYM:xi	SYM:triple-E	AB	
+L30	14	SYM:long-s	-	A	
+L30	15	8	-	A	
+L30	16	SYM:Omega	SYM:beta-R	AB	
+L30	21	20	-	A	
+L30	22	1	-	A	
+L30	23	5	26	AB	
+L30	24	SYM:T	17	AB	
+L31	1	SYM:at	-	A	
+L31	2	SYM:at	-	A	
+L32	1	SYM:at	-	A	
+L34	1	SYM:X	SYM:crossed-X	AB	
+L35	1	SYM:5-hook	-	A	
+L35	2	SYM:G	-	A	
+L35	3	SYM:dagger	-	A	
+L35	4	SYM:omega	-	A	
+L35	5	SYM:G	-	A	
+L35	6	SYM:G	-	A	
+L35	8	SYM:#	SYM:crossed-X	AB	
+L35	12	SYM:crossed-loop	SYM:venus	B	
+L36	5	SYM:crossed-hook	SYM:double-cross	AB	
+L36	6	SYM:8-loop	SYM:3-over-o	AB	
+L38	3	SYM:M	SYM:M-loop	AB	
+L38	4	SYM:C	SYM:C-loop	AB	
+L42	1	1000	-	A	
