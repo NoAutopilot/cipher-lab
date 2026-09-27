@@ -1,0 +1,5 @@
+reconcile: lines 2  signs A 82  B 82  agree 67/82 = 81.7%  (nw) | disagreement columns 15; draft signs 82 | agreed-H 40  agreed-uncertain 27  disagree 15
+  T1 on L02: 39 signs (0 OTHER), reference 39 letters, matched 26
+  T2 on L03: 43 signs (4 OTHER), reference 45 letters, matched 28
+TRANSFER: f.61 map, not refitted, on f.108: 54/84 = 0.643; 20 permuted maps mean 0.219 max 0.381
+GATE H19 (above every permuted map): PASS  (f.61 in-sample with the same cells: 49/55)

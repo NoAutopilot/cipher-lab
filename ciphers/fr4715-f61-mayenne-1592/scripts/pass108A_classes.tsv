@@ -1,0 +1,83 @@
+line	pos	sign	conf	segment	x_px	note
+L02	1	EBR	h	1	1053	bracket open right, flat top bar
+L02	2	4STEM	m	1	1283	4 with long stem ending in a small curl; alt C43
+L02	3	VBAR_A	h	1	1526	filled down triangle under top bar
+L02	4	ZHOOK	h	1	1742	2/Z hook over two crossed stems ("2#")
+L02	5	EBR	h	1	2012	bracket open right; a dash-like stroke below it probably belongs to the next line
+L02	6	EBR	m	1	2214	bracket open right, heavy, slightly triangular inner fill; alt VBAR_A
+L02	7	4STEM	m	1	2417	4 with a stem and a small mark at the foot; alt C43
+L02	8	ZHOOK	m	1	2646	cut at the boundary: hook at the end of seg1, crossed stems at seg2 x~40; counted once
+L02	9	PHI	h	2	243	figure-8 loops on a long stem; alt DBL
+L02	10	PHI	h	2	446	loops on a long stem; alt DBL
+L02	11	INF	h	2	675	figure-8 lying on a crossbar, no long stem; a long vertical rule just before it (x~560) skipped as a separator
+L02	12	C43	h	2	891	4 joined to a 3 below
+L02	13	VBAR_A	h	2	1107	filled down triangle under top bar
+L02	14	EBR	h	2	1350	bracket open right with a long foot bar
+L02	15	PHI	m	2	1539	leaning loops on a stem; dotted vertical rule just before it skipped; alt DBL
+L02	16	INF	h	2	1742	figure-8 on a bar
+L02	17	EBR	h	2	1958	small bracket open right
+L02	18	C43	h	2	2187	4 over a 3
+L02	19	INF	h	2	2430	figure-8 on a bar
+L02	20	4PI	m	2	2646	cut at the boundary (continues at seg3 x~30): 4 with crossbar over stems; vertical rule before it skipped; alt HASH4
+L02	21	PHI	h	3	216	loops on a stem
+L02	22	PHI	h	3	419	loops on a stem
+L02	23	ZHOOK	h	3	648	2-hook over two crossed stems
+L02	24	INF	h	3	891	heavy figure-8 on a bar
+L02	25	4PI	m	3	1107	4 over a crossbar with two stems; alt HASH4
+L02	26	ZHOOK	h	3	1364	2-hook over crossed stems
+L02	27	4TRI	m	3	1593	4 with crossbar over a small V/loop at the foot
+L02	28	PHI	h	3	1823	loops on a long stem
+L02	29	4PI	m	3	2079	4 over crossbar and two stems; alt HASH4
+L02	30	PHI	h	3	2295	loops on a stem
+L02	31	4TRI	m	3	2525	4 with crossbar, small V below; alt 4STEM
+L02	32	EBR	m	3	2687	cut at the boundary (bracket continues at seg4 x~30); counted once
+L02	33	INF	h	4	257	figure-8 on a bar
+L02	34	EBR	h	4	486	bracket open right
+L02	35	ZHOOK	h	4	729	2-hook over crossed stems
+L02	36	INF	m	4	959	leaning figure-8 with a faint bar; alt DBL
+L02	37	INF	m	4	1175	figure-8 on a bar with a short stem below; alt DBL
+L02	38	PHI	h	4	1431	loops on a long stem
+L02	39	EBR	h	4	1701	bracket with a very long foot stroke (line end)
+L03	1	C43	m	1	1080	4 with a small 3/comma under the foot; alt 4STEM
+L03	2	INF	h	1	1350	figure-8 on a bar
+L03	3	OTHER	m	1	1546	I-shape: short vertical with a horizontal bar at top and bottom; alt EBR
+L03	4	VBAR_A	h	1	1755	down triangle under top bar
+L03	5	PHI	h	1	1985	loops on a long stem, under the annotation
+L03	6	PHI	h	1	2201	two stacked loops on a stem; alt DBL
+L03	7	EBR	h	1	2430	bracket open right
+L03	8	OTHER	l	1	2646	cut at the boundary: 7/F shape (top bar, a crossbar and a stem), end piece in seg2 x 0-60; alt 4STEM/ZHOOK
+L03	9	BETA	m	2	230	long stem rising to a top loop with a 3-like bowl (ß-like)
+L03	10	PHI	h	2	432	loops on a stem
+L03	11	4TRI	m	2	648	4 with crossbar over a small triangle/V
+L03	12	PHI	h	2	878	loops on a stem
+L03	13	PHI	h	2	1080	loops on a stem
+L03	14	C43	h	2	1296	4 over a 3
+L03	15	PHI	h	2	1526	loops on a stem
+L03	16	C43	m	2	1742	4 with a 3/2 curl; alt 4STEM
+L03	17	VBAR_A	h	2	1944	small down triangle under top bar; vertical rule after it (x~2065) skipped
+L03	18	C43	h	2	2160	4 over a 3
+L03	19	VBAR_A	m	2	2390	triangle-bar with a stem, partly overlapped by the annotation's curl above; alt VBAR_B
+L03	20	C43	m	2	2633	4 with a 3 at the foot, at the right edge
+L03	21	PHI	h	3	149	loops on a stem
+L03	22	PHI	h	3	338	loops on a stem
+L03	23	C43	h	3	540	4 over a 3
+L03	24	VBAR_A	m	3	729	small triangle under a bar; vertical rule after it (x~850) skipped
+L03	25	4PI	m	3	959	4 over a crossbar and two stems, hash-like; alt HASH4
+L03	26	PHI	h	3	1175	loops on a stem
+L03	27	OTHER	m	3	1377	I-shape, the same as pos 3; alt EBR
+L03	28	PHI	h	3	1566	loops on a stem
+L03	29	INF	h	3	1769	figure-8 on a bar
+L03	30	PHI	h	3	1998	loops on a stem
+L03	31	EBR	h	3	2187	bracket open right; vertical rule after it (x~2310) skipped
+L03	32	ZHOOK	m	3	2430	hook over crossed stems ("124"-like)
+L03	33	4STEM	l	3	2660	cut at the boundary: 4 with a long stem, crossbar fragment at seg4 x~20
+L03	34	4TRI	m	4	230	4 with crossbar over a small V
+L03	35	PHI	h	4	446	loops on a stem
+L03	36	BETA	m	4	662	ß-like: top loop and bowl on a stem
+L03	37	OTHER	l	4	864	long S-like stroke curling at the top, no bowl; possibly part of the annotation; alt LOOPSTEM1
+L03	38	PHI	h	4	1080	loops on a stem
+L03	39	4PI	m	4	1283	4 over crossbar and two stems; alt HASH4
+L03	40	ZHOOK	m	4	1485	2-hook over crossed stems
+L03	41	VBAR_A	l	4	1661	very small triangle under a bar
+L03	42	PHI	m	4	1809	leaning loops on a stem; alt DBL
+L03	43	BETA	m	4	1958	ß-like; a short dash after it (x~2070) skipped

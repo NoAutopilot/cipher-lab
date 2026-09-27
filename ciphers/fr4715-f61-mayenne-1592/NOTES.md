@@ -745,3 +745,53 @@ grade-C key source for the verifier and the recovery route, not a cryptanalytic 
 per sign, F61-CAL's own failure mode, so nothing is read from it blind: H19 fetches the leaf. Requests this step:
 cryptiana.web.fc2.com 3. No credentials, no AskUserQuestion, no novelty wording; the owner not named.
 
+## Campaign step H19 (2026-09-27 23:50 UTC)
+
+Campaign runner (Fable, session_01UgTmQhR7wFtVFrTVdtsq9i). Three vision calls (one Sonnet anchoring look, two Opus
+passes; about 177k, 95k and 95k subagent tokens) plus one Sonnet text-from-image call (Tomokiyo's overlay, 114k);
+8 requests to gallica.bnf.fr (5 small canvases and one native region, plus the runner's two at 800 px), 1.6 s apart.
+Hypothesis H19 (F61-3983): fetch fr.3983 f.108 and test the f.61 map on it before any refit.
+
+**The leaf.** BnF fr.3983 f.108r is canvas 195 of ark btv1b9059406b (no folio labels in the manifest; anchored by the
+ink "108" top right and the clear lines "Et pour cela je vous laisse a juger quel contentement je debvois avoir" matching
+`mayenne2.png`; canvases 114, 116, 118 = ff. c.67-69, 196 = f.108v, 197 = f.109r, in `images/manifest.json`). The native
+region 1250,450,3600,720 (the strip's four lines and three more) was fetched once
+(`images/src_ark_12148_btv1b9059406b_f195_1250_450_3600_720.jpg`) and cut by `tools/iiif_lines.py --overlap 0` into 7
+bands at pitch 96 (`images/f108_lines_debug.jpg`), then trimmed sheets B (`images/f108sheetB_L01-L07.jpg`, regen stanza
+in `images/regen_f61r_sheets.sh`). **The page carries a period interlinear decipherment**: small clear words above the
+cipher lines ("satisfaire ... ung seul au prejudice de plusieurs", "aultres qui ... de leurs incommodites", "la ... je ...
+retour ...", "quinze ..."), which Tomokiyo's magenta overlay reprints. That is a grade-C key source (CLAUDE.md
+transcription brief's first check), logged here for the verifier and H21; it is not our reading.
+
+**Reference.** `scripts/tomokiyo_spans_3983.tsv`: Tomokiyo's overlay letters on the strip's two cipher lines, transcribed
+from the printed overlay by one Sonnet call (T1 39 letters "satisfaireungseul auprejudicedeplusieurs", T2 45
+"aultresquimeprenentagarentdeleurs jacommoditez"); grade H for this test only.
+
+**Passes (`scripts/pass108A_classes.tsv`, `pass108B_classes.tsv`, verbatim).** Two independent blind Opus reads of
+bands L02 and L03 with `scripts/f61_atlas.tsv`: both count 39 and 43 signs; `tools/reconcile_passes.py` (NW) 67/82 =
+81.7% identical (15 columns differ, mostly PHI/DBL, C43/4STEM and 4PI/HASH4 alternations the passes themselves flag as
+alternatives; L03 has two OTHER signs, an I-shape read the same by both, and a 7/F shape).
+
+**Transfer test (`scripts/f61transfer.py`, pre-registered f18c2ac4 before the passes; `f61transfer_result.txt`).** The
+f.61 map (9 cells, dash-share null rule), unrefitted, DP-aligned to the reference letters on the reconciled draft:
+
+| | signs | reference letters | matched |
+|---|---|---|---|
+| T1 on L02 | 39 (0 OTHER) | 39 | 26 |
+| T2 on L03 | 43 (4 OTHER) | 45 | 28 |
+| **pooled** | | **84** | **54/84 = 0.643** |
+| 20 permuted-cell maps | | | mean 0.219, **max 0.381** |
+
+**Gate met, PASS.** A map fitted on 55 letters of one leaf reads a second letter of the same office, in another hand,
+at 0.643 -- about 1.7x the best permutation and three times the mean -- with no refit. Rule 3 satisfied (the control is
+the same statistic on the same signs under permuted maps); rule 4: nothing here is a reading of ours (the 84 letters
+are Tomokiyo's, reprinting the period gloss), it is a test of the map. No class change; no word of solved or new.
+
+**What it opens.** (H21) The period interlinear decipherment on f.108 can give the key at grade C -- every cell,
+including d/q and m/z and any word codes, with counts -- by the Thurloe method (`tools/interlinear_align.py`), which is
+the recovery route the successful solvers use; the f.61 fragment and any further f.61 reading would then be key
+application, not cryptanalysis. (H20) A joint cell fit with each leaf as a held-out fold. Files: `images/` (region,
+debug overlay, 7 sheets; folder 9.7 MB), `images/manifest.json` (f108_bands), `scripts/tomokiyo_spans_3983.tsv`,
+`scripts/pass108A/B_classes.tsv` (+ READMEs), `scripts/f61transfer.py`, `f61transfer_result.txt`; HYPOTHESES.md row
+added. No credentials, no AskUserQuestion, no novelty wording; the owner not named.
+
