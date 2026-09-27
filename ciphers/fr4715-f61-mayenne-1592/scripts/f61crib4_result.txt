@@ -1,0 +1,12 @@
+H12 cell fit re-run with VBAR split by the H15 confirmation call (rule 3 pairing); classes: PHI:15 C43:9 CA:9 C6:6 4TRI:6 INF:5 VBAR_A:5 DBL:4 LOOPBAR:3 VBAR_B:3 EBR:3 ZHOOK:3 CROSS:2 ELOOP:2 4PI:2 HASH4:1 LOOPSTEM1:1 CH:1 LL:1 4STEM:1
+held-out S1	matched 3/4	control max 2/4 mean 1.30	cells 4PI=a/n 4TRI=c/p C43=a/n C6=a/n CA=a/n DBL=b/o EBR=l/y INF=h/u LOOPBAR=a/n PHI=e/r VBAR_A=g/t VBAR_B=f/s ZHOOK=i/x
+held-out S2	matched 9/10	control max 5/10 mean 3.00	cells 4PI=a/n 4TRI=c/p C43=a/n C6=a/n CA=a/n DBL=b/o EBR=l/y HASH4=e/r INF=h/u PHI=e/r VBAR_A=g/t VBAR_B=f/s ZHOOK=i/x
+held-out S3	matched 11/12	control max 6/12 mean 3.15	cells 4PI=a/n 4TRI=c/p C43=a/n CA=a/n DBL=b/o EBR=l/y HASH4=e/r INF=h/u LOOPBAR=a/n PHI=e/r VBAR_A=g/t VBAR_B=f/s ZHOOK=i/x
+held-out S4a+S4b	matched 11/18	control max 10/18 mean 6.50	cells 4PI=a/n 4TRI=c/p C43=a/n C6=a/n CA=c/p DBL=b/o EBR=e/r HASH4=e/r INF=a/n LOOPBAR=a/n PHI=e/r VBAR_A=g/t VBAR_B=f/s ZHOOK=i/x
+held-out S5	matched 8/11	control max 6/11 mean 3.15	cells 4PI=c/p 4TRI=c/p C43=a/n C6=a/n CA=a/n DBL=b/o EBR=e/r HASH4=e/r INF=h/u LOOPBAR=a/n PHI=e/r VBAR_A=g/t VBAR_B=f/s ZHOOK=i/x
+POOLED held-out	42/55 = 0.764  (H12 unsplit 37/55 = 0.673 vs max 0.436)
+controls (20 cell-permuted maps, seed 1): 0.291 0.218 0.273 0.218 0.345 0.364 0.345 0.309 0.273 0.364 0.382 0.327 0.364 0.327 0.400 0.309 0.255 0.327 0.255 0.273
+control mean 0.311 max 0.400
+cell per fold: PHI=e/r C43=a/n 4TRI=c/p VBAR_A=g/t VBAR_B=f/s DBL=b/o INF=a/n|h/u
+GATE H15b (a) pooled above every control: PASS; (b) six classes cell-stable (INF not gated): PASS; H15b PASS
+all-span map (scripts/f61crib4_map.tsv), in-sample, non-gating: 49/55

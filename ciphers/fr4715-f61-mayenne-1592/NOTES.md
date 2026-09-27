@@ -506,3 +506,47 @@ overlap. Files: `scripts/read_call_V2.tsv`, `scripts/f61vbar2_result.txt`, `scri
 `scripts/f61crib4.py`; HYPOTHESES.md row added. Requests: none. Vision calls: 1 of 4. No credentials, no
 AskUserQuestion, no novelty wording; the owner not named.
 
+## Campaign step H15 (2026-09-27 23:04 UTC)
+
+Campaign runner (Fable, session_01UgTmQhR7wFtVFrTVdtsq9i). One fresh Opus vision subagent call (about 102k subagent
+tokens, 60 s), no network. Hypothesis H15 (F61-VBAR3): the confirmation, with both of H14's defects fixed on disk before
+the call (pairing rule 3, geometric de-duplication from `images/manifest.json` boxes, in `scripts/f61vbar.py`; the guard
+of `scripts/f61crib4.py` on a rule-3 PASS; commit 6a8e6e43) and the prompt stating the 885-px overlap.
+
+**Output (`scripts/read_call_V3.tsv`, verbatim).** 8 signs, one per reader VBAR position on every sheet (the call noted
+the L11 segment-1 sign reappearing at segment-2 x about 50 and did not list it again). Two groups: "group A is the
+triangle closed only by its top bar, and group B has a second horizontal bar crossing the triangle's bottom point,
+running mostly to the left."
+
+**Result (`scripts/f61vbar3_result.txt`).** Scored 7 positions (3 s, 4 t): B = s at L03/5, L05/18, L07/9; A = t at
+L03/6, L05/3, L11/6, L11/12; A also at the unlabelled L01/10. **7/7, exact p = 0.029** against the 35 label arrangements,
+permutation p95 6/7 -- **PASS as pre-registered**, and identically under rules 1 and 2. Three independent blind calls
+(H13, H14, H15) now assign the same group to every one of the 8 positions. The "V s/t conflict" carried since F61-CAL
+is closed: the reader's one VBAR class was two glyphs, and the table's pairing holds for both (A = g/t, B = f/s).
+
+**Second half (`scripts/f61crib4.py`, `f61crib4_result.txt`, `f61crib4_map.tsv`).** H12's cell fit with VBAR split into
+VBAR_A (5 signs) and VBAR_B (3):
+
+| held-out span | matched / letters | control max (mean) |
+|---|---|---|
+| S1 avec (L01) | 3/4 | 2/4 (1.30) |
+| S2 est capable (L03) | 9/10 | 5/10 (3.00) |
+| S3 trop avancees (L05) | 11/12 | 6/12 (3.15) |
+| S4 jalousie au beau-pere (L07+L08) | 11/18 | 10/18 (6.50) |
+| S5 mel'ente noit (L11) | 8/11 | 6/11 (3.15) |
+| **pooled held-out** | **42/55 = 0.764** | controls mean 0.311, **max 0.400** |
+| all-span map, in-sample (non-gating) | 49/55 | |
+
+Gate (a) met; gate (b) met: PHI e/r, C43 a/n, 4TRI c/p, VBAR_A g/t, VBAR_B f/s, DBL b/o are the same cell in all five
+folds (INF h/u in four, a/n when S4, which holds 4 of its 5 signs, is withheld -- reported, not gated). **H15b PASS.**
+The remaining held-out misses are the v/j notation (the key has neither), one o under PHI, one m under CA, and the S4
+fold, which is the span with the sheet-edge cut sign (L08/14). Not a reading: every one of the 55 letters is Tomokiyo's
+own markup, used as the reference; the map (`scripts/f61crib4_map.tsv`, grade M) has not yet been applied to any sign
+outside those spans. No class change; no word of solved or new.
+
+**Next, as ranked.** H2 (second blind read of the span lines, on sheets re-cut without the overlap, agreement on at least
+9 of 10 letter classes) before H4 applies the map to the unmarked runs under the 20-shuffled-map control. Files:
+`scripts/read_call_V3.tsv`, `scripts/f61vbar3_result.txt`, `scripts/f61crib4.py`, `scripts/f61crib4_result.txt`,
+`scripts/f61crib4_map.tsv`; HYPOTHESES.md rows added. Requests: none. Vision calls: 1 of 4. No credentials, no
+AskUserQuestion, no novelty wording; the owner not named.
+

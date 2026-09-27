@@ -41,7 +41,7 @@ def main():
     lines, spans, cells = split_lines(load_read()), load_spans(), load_cells()
     by = {s: (s, l, m) for s, l, m in spans}
     classes = Counter(c for l in lines.values() for c in l)
-    out = ["H12 cell fit re-run with VBAR split by the H14 confirmation call (rule 1 pairing); classes: " + " ".join(f"{c}:{n}" for c, n in classes.most_common())]
+    out = ["H12 cell fit re-run with VBAR split by the H15 confirmation call (rule 3 pairing); classes: " + " ".join(f"{c}:{n}" for c, n in classes.most_common())]
     rng = random.Random(1); NC = 20
     pooled = tot_all = 0; ctrl = [0] * NC; fc = {c: set() for c in STABLE + ["INF"]}
     for held in FOLDS:
@@ -59,10 +59,10 @@ def main():
     out.append(f"control mean {sum(pc)/NC:.3f} max {max(pc):.3f}")
     out.append("cell per fold: " + " ".join(f"{c}={'|'.join(sorted(v))}" for c, v in fc.items()))
     stable = all(len(fc[c]) == 1 for c in STABLE); a = pooled / tot_all > max(pc)
-    out.append(f"GATE H14b (a) pooled above every control: {'PASS' if a else 'FAIL'}; (b) six classes cell-stable (INF not gated): {'PASS' if stable else 'FAIL'}; H14b {'PASS' if a and stable else 'FAIL'}")
+    out.append(f"GATE H15b (a) pooled above every control: {'PASS' if a else 'FAIL'}; (b) six classes cell-stable (INF not gated): {'PASS' if stable else 'FAIL'}; H15b {'PASS' if a and stable else 'FAIL'}")
     full = cell_map(fit(spans, lines, "c4_all", OPTS, keep_dashes=True), cells)
     with open(f"{HERE}/f61crib4_map.tsv", "w") as f:
-        f.write("# F61-CRIB4 map on all five Tomokiyo spans, VBAR split by the H14 confirmation call: class -> Mayenne table cell, 27 Sept 2026. Grade M (cells from Tomokiyo's markup); the pair is the key's.\n"
+        f.write("# F61-CRIB4 map on all five Tomokiyo spans, VBAR split by the H15 confirmation call: class -> Mayenne table cell, 27 Sept 2026. Grade M (cells from Tomokiyo's markup); the pair is the key's.\n"
                 "class\tn_signs\tcell\tcell_counts\ttie\n")
         for c, n in classes.most_common():
             v = full.get(c)

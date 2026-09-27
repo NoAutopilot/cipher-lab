@@ -1,0 +1,43 @@
+read_call_V3.tsv: 8 V-signs listed by the blind call
+pairing rule 1: 8 listed signs; groups A, B
+  L01/10: group A, letter -, bar top side of triangle, none, medium, extra none
+  L03/5: group B, letter s, bar top side of triangle, yes: a horizontal bar through the point, running mostly left, about as long as the top bar, heavy, extra none
+  L03/6: group A, letter t, bar top side of triangle, none, medium, extra none
+  L05/3: group A, letter t, bar top side of triangle, none, heavy (triangle body), extra none
+  L05/18: group B, letter s, bar top side of triangle, yes: a bar through the point, running left well past the triangle, rising slightly to the left, medium-heavy, extra none
+  L07/9: group B, letter s, bar top side of triangle, yes: a bar through the point, running mostly left, medium-heavy, extra none
+  L11/6: group A, letter t, bar top side of triangle, none, heavy, extra none
+  L11/12: group A, letter t, bar top side of triangle, none, medium, extra none
+scored 7 positions (s 3, t 4); groups used 2
+observed best group->letter match 7/7 = 1.000
+exact null over 35 label arrangements: P(>= observed) = 0.029; max achievable 7/7
+200 permutations (seed 1): mean 4.70/7, p95 6/7
+GATE H13 under rule 1 (observed above permutation p95, exact p < 0.05): PASS
+pairing rule 2: 8 listed signs; groups A, B
+  L01/10: group A, letter -, bar top side of triangle, none, medium, extra none
+  L03/5: group B, letter s, bar top side of triangle, yes: a horizontal bar through the point, running mostly left, about as long as the top bar, heavy, extra none
+  L03/6: group A, letter t, bar top side of triangle, none, medium, extra none
+  L05/3: group A, letter t, bar top side of triangle, none, heavy (triangle body), extra none
+  L05/18: group B, letter s, bar top side of triangle, yes: a bar through the point, running left well past the triangle, rising slightly to the left, medium-heavy, extra none
+  L07/9: group B, letter s, bar top side of triangle, yes: a bar through the point, running mostly left, medium-heavy, extra none
+  L11/6: group A, letter t, bar top side of triangle, none, heavy, extra none
+  L11/12: group A, letter t, bar top side of triangle, none, medium, extra none
+scored 7 positions (s 3, t 4); groups used 2
+observed best group->letter match 7/7 = 1.000
+exact null over 35 label arrangements: P(>= observed) = 0.029; max achievable 7/7
+200 permutations (seed 1): mean 4.70/7, p95 6/7
+GATE H13 under rule 2 (observed above permutation p95, exact p < 0.05): PASS
+pairing rule 3: 8 listed signs; groups A, B
+  L01/10: group A, letter -, bar top side of triangle, none, medium, extra none
+  L03/5: group B, letter s, bar top side of triangle, yes: a horizontal bar through the point, running mostly left, about as long as the top bar, heavy, extra none
+  L03/6: group A, letter t, bar top side of triangle, none, medium, extra none
+  L05/3: group A, letter t, bar top side of triangle, none, heavy (triangle body), extra none
+  L05/18: group B, letter s, bar top side of triangle, yes: a bar through the point, running left well past the triangle, rising slightly to the left, medium-heavy, extra none
+  L07/9: group B, letter s, bar top side of triangle, yes: a bar through the point, running mostly left, medium-heavy, extra none
+  L11/6: group A, letter t, bar top side of triangle, none, heavy, extra none
+  L11/12: group A, letter t, bar top side of triangle, none, medium, extra none
+scored 7 positions (s 3, t 4); groups used 2
+observed best group->letter match 7/7 = 1.000
+exact null over 35 label arrangements: P(>= observed) = 0.029; max achievable 7/7
+200 permutations (seed 1): mean 4.70/7, p95 6/7
+GATE H13 under rule 3 (observed above permutation p95, exact p < 0.05): PASS

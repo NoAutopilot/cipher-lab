@@ -1,0 +1,15 @@
+# H15 confirmation call (Opus vision subagent, 27 Sept 2026, one fresh call, the six images/f61sheet_L*.jpg sheets; prompt
+# as H14's -- closed down-pointing triangles whose top side is a bar, anything with a 4-shaped element or stem above the
+# bar excluded, fixed attributes, groups by shape, no letters, no key, no count -- plus the true segment overlap stated
+# (885 sheet px, list each sign once at its first occurrence). Rows verbatim. Its criterion, verbatim: "group A is the
+# triangle closed only by its top bar, and group B has a second horizontal bar crossing the triangle's bottom point,
+# running mostly to the left." "signs found: 8".
+sheet	segment	x_px	order_in_sheet	group	bar_position	bar_length	second_bar_at_point	weight	extra	note
+L01	2	1620	1	A	top side of triangle	longer; extends well left (hairline lead-in), slightly right	none	medium	none	bar spans about 1480-1755, V about 1580-1700
+L03	2	1510	1	B	top side of triangle	longer; extends on both sides, a little more left	yes: a horizontal bar through the point, running mostly left, about as long as the top bar	heavy	none	a small hook or flick at the right end of the top bar
+L03	2	1785	2	A	top side of triangle	about equal to width, slightly longer on the right	none	medium	none	clean, open V
+L05	1	590	1	A	top side of triangle	longer; long thin hairline extension left, short one right	none	heavy (triangle body)	none	triangle heavily inked
+L05	3	1200	2	B	top side of triangle	longer; extends both sides	yes: a bar through the point, running left well past the triangle, rising slightly to the left	medium-heavy	none	top bar ends in a small upturn on the right
+L07	3	1540	1	B	top side of triangle	longer; extends left, reaching toward the preceding connector stroke, and a little right	yes: a bar through the point, running mostly left	medium-heavy	none	a vertical paper crease or fold line runs through its left part
+L11	1	1870	1	A	top side of triangle	longer; extends left, short stub right	none	heavy	none	small upward tick at the right end of the bar
+L11	2	1830	2	A	top side of triangle	much longer; long thin hairline extension left, short one right	none	medium	none	different sign from L11 seg1's: the seg1 sign reappears at seg2 x about 50 (overlap) and was not listed again
