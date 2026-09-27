@@ -3185,3 +3185,98 @@ HYPOTHESES.md gains two rows (U1, U2+U3 combined). NEAR.md salviati row and stat
 No decoding claim, no family beyond cm, no "solved"/"new"/"first"/"unpublished", no owner name, no credentials, no
 AskUserQuestion, no subagents, no network. Requests: none (disk only). Well under the USD 5 cap and the 75-minute
 box (about 27 of 75 minutes elapsed at write-up). Status stays **partial**.
+
+## SALV-HAPAX (27 Sept 2026)
+
+Parent worker SALV-HAPAX (Opus), 08:59-09:20 UTC. Brief `.claude/briefs/runs/2026-09-27-parent-ytbiz-salv-hapax.md`:
+SALV2-J2's named design change for the 8 unread hapax types, control first (rule 3). Disk only, no hosts, no
+subagents. Intake gate re-run at start: `fr2933-salviati-1525: open (line 1) -- edition/page or full-text-search
+citation found within 6 lines` (exit 0).
+
+**U1: variant A, `CM_HAPAX=exclude`** (control/codemark_curve.py, docstring and `hapax_types()`, `split_wild()`,
+`fill_wild()`). The excluded types are read from the pooled rows, not hard-coded: types of count 1 whose code is `?`.
+On the corrected split they are exactly the 8 unread boxes `?f54v.2.12^`, `?f54v.4.30^`, `?f55r.2.20^`, `?f55r.2.23^`,
+`?f55r.6.17^`, `?f55r.11.14^`, `?f55r.19.19^`, `?f56r.3.1^`. Every stream position carrying one is spliced out of the
+stream the annealer scores; the key is solved on the rest (243 of 251 types); afterwards each wildcard position is
+filled with the letter that maximises the summed trigram log-probability of the windows touching it, given the solved
+neighbours. The control applies the same rule to its synthetic stream (the same 8 named types, which `alloc()` allots
+like any other unit, so they occur about once each: 10, 7 and 8 wildcard positions on seeds 1-3), keeping the design
+matched. Score/symbol for the target is the full filled decode rescored, so it compares with SALV-CM48's figures.
+Offline test `tools/tests/test_codemark_hapax.py` (exits non-zero if the target's excluded count is not 8, or if a
+200-token toy with 5 injected hapaxes does not exclude exactly 5 and refill them); `test_codemark_measured_noise.py`
+still passes.
+
+A finding the change exposes: the pooled target has **122** types of count 1, not 8. The other 114 are real code+mark
+combinations read once. So the 8 unread boxes were 8 of 122 singleton symbols, each of which the annealer already
+places by context alone. Removing them could not change the search much, and it didn't (below). SALV2-J2's "a
+frequency-driven annealer cannot place a frequency-1 homophone" applies to all 122. It is not specific to the 8.
+
+**U2: matched control first**, `CM_HAPAX=exclude CM_RESTARTS=48 CM_ERR=0.07 python3 control/codemark_curve.py control
+cm 2932 SEED --leaves all`, seeds 1-3.
+
+| restarts | seed | token acc | score/symbol (true plaintext -2.302) | wildcards filled right | unchanged design, same seed |
+|---|---|---|---|---|---|
+| 48 | 1 | 39.4% | -2.561 | 0/10 | 77.4% |
+| 48 | 2 | 53.2% | -2.518 | 1/7 | 36.5% |
+| 48 | 3 | 82.7% | -2.421 | 4/8 | 39.8% |
+| 96 | 1 | 50.9% | -2.542 | 1/10 | 77.4% |
+| 96 | 2 | 77.1% | -2.432 | 2/7 | 36.5% |
+| 96 | 3 | 86.4% | -2.381 | 4/8 | 87.4% |
+
+Pre-registered gate (2 of 3 seeds >= 0.6 at 48): **NOT MET**, 1 of 3. The means at 48 are 0.584 against the
+unchanged design's 0.512. The seeds reshuffle (the spliced stream changes every restart's draws), and the spread is
+the same. This is not the discriminating result the gate asked for, so there is no evidence that the design change
+helps the search. Per the brief, the 96-restart run was recorded: 2 of 3 clear 0.6 (mean 0.715; the unchanged design
+also cleared at 96 with 0.774/0.365/0.874, mean 0.671). The brief's U4 wording ("only if U2 fails at 48 and 96")
+treats a 96 pass as licensing the target, so U3 ran at 96. Wildcard fill accuracy on the control is 7 of 25 (28%),
+which is what a context-only guess at a single letter gives.
+
+**U3: target**, `CM_HAPAX=exclude CM_RESTARTS=96 python3 control/codemark_curve.py target cm SEED --leaves all`,
+outputs `control/codemark_target_cm_all_r96_hxexclude_s{1,2,3}.json`.
+
+| seed | score | score/symbol | unchanged design (SALV-CM48) | wildcard fills |
+|---|---|---|---|---|
+| 1 | -7699.4 | -2.626 | -2.627 | h r d u n r r o |
+| 2 | -7722.4 | -2.634 | -2.643 | r i t c n d l a |
+| 3 | -7741.9 | -2.640 | -2.641 | c i z m p m u a |
+
+Cross-seed agreement (per-position letter match, N=2932): s1/s2 20.1%, s1/s3 14.8%, s2/s3 21.1%, against the unchanged
+design's 18.9-26.6%. Same-seed agreement with the unchanged design's decodes is 25.4%, 23.9% and 9.0%. The wildcard
+fills agree across seeds on only one box (`?f55r.6.17^` = n on s1 and s2).
+
+Judge on the best seed by raw score (s1), `python3 tools/judge_plaintext.py specs/fr2933-salviati-1525.json --file
+<s1 decode>`:
+```
+ok   length: got=2932, min=2500, max=4500
+FAIL language: score=-1.296, null_p99=-1.85, real_p05=-0.928, real_median=-0.824, mode=both, N=2932
+FAIL - fr2933-salviati-1525 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+A FAIL, reported as a FAIL (rule 7). The score sits above the null's p99 but well below real Italian's p05. That is
+the same place as SALV-CM48's -1.299. (Correction to SALV-CM48's wording above: -1.299 is above null_p99 -1.85, not
+"short of even the null bar". Its FAIL stands, because the gate is real_p05.)
+
+**U4: variant B, `CM_HAPAX=merge`: not run.** The brief conditions B on the rough-shape groups SALV2-J1's transcription
+notes give. No grouping is recorded on disk. The blind passes' `note` column in `passA_split_*.tsv` /
+`passB_split_*.tsv` describes each box separately ("tiny crescent/hook fragment", "narrow vertical stroke only",
+"short diagonal stroke") but assigns none to a class, and `recon_split_*/settled.tsv` records only `?`. Per the brief,
+no shape classes were invented and `CM_HAPAX=merge` is not implemented (the script refuses any value but `exclude`).
+What the notes do say, and what a next transcription pass should look at: both blind passes describe three of the
+eight boxes as blank or nearly so (`?f54v.2.12^` "mostly blank/very faint" / "empty, no visible ink";
+`?f55r.19.19^` "largely blank" / "very faint, minimal ink"; `?f56r.3.1^` "essentially blank" / "blank paper
+texture"). Those three may be plain gaps rather than signs. That is a transcription question for the crop, not
+something to settle here.
+
+**Verdict:** code+mark (letter-per-type) with the hapax design change (exclude) is a **control-backed negative at
+K=251, CM_ERR=0.07, 96 restarts**. The control clears 2 of 3 at 96. The target does not read: score/symbol,
+cross-seed agreement and judge are all indistinguishable from the unchanged design's. The pre-registered 48-restart
+gate showed no gain from the design change itself. Merge is untested, because the material it needs (a recorded shape
+grouping) is absent. Status stays **partial** (rule 5; no reading).
+
+**Next:** crop-check and transcribe the seven f56v split candidates SALV2-J3 names (the SALV-SPLIT/SALV2-J1 way),
+which changes the material, or bring new material; not a third design tweak on the cm family (rule 3's
+repeated-attempt paragraph). If a transcription pass is opened for (a), the same pass can re-look at the three
+"blank" `?` boxes above. Never "reading ready".
+
+Files: `control/codemark_curve.py` (CM_HAPAX=exclude), `tools/tests/test_codemark_hapax.py` (new),
+`control/codemark_target_cm_all_r96_hxexclude_s{1,2,3}.json` (new), `control_curve.tsv` (+6 rows),
+`HYPOTHESES.md` (+2 rows), NEAR.md salviati row, status.json near entry, NEXT-STEPS.tsv. Requests: none.

@@ -42,8 +42,17 @@ N counts sign tokens. Token accuracy: a token is right when every letter it stan
 A `?` code (job2, SALV2, 27 Sept 2026) is a real sign box of unread type; the row reader gives each one its own
 HAPAX type `?<leaf>.<line>.<pos>^<marks>` (sign_type() below), never merging them into one shared `?` symbol --
 build_spec.py and build_ciphertext_with_plain.py carry the same convention.
+  CM_HAPAX=exclude (SALV-HAPAX, 27 Sept 2026; cm only): the UNREAD hapax types -- types of count 1 in the pooled
+      target whose code is `?` (hapax_types(), read from the rows, not hard-coded; 8 on the corrected split) -- are
+      wildcards during annealing: every stream position carrying one is spliced out of the stream the annealer
+      scores, the key is solved on the rest, and each wildcard position is filled afterwards with the letter that
+      maximises the n-gram score of its own window in the decode (fill_wild()). The control applies the identical
+      rule to its synthetic stream (the same named types, which alloc() allots like any other unit), so the design
+      stays matched (rule 3). The 114 real code+mark types of count 1 are NOT excluded. Suffix _hxexclude; control rows
+      carry hapax, wild (positions spliced) and wild_acc (their fill accuracy); score/symbol is the full filled decode
+      rescored, comparable with earlier rows. Test: python3 tools/tests/test_codemark_hapax.py
 """
-import csv, json, os, random, sys, time
+import csv, json, math, os, random, sys, time
 from collections import Counter
 D = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(D, "..", "..", "..", "tools"))
@@ -69,6 +78,9 @@ ORDER = int(os.environ.get("CM_ORDER", 3))
 BACKOFF = os.environ.get("CM_BACKOFF", "") not in ("", "0")
 TRUTH_INDEX = None  # set by build() under CM_ERR: stream position -> index into toks, or None for an inserted sign
 VOW = "aeiou"
+HAPAX = os.environ.get("CM_HAPAX", "")
+assert HAPAX in ("", "exclude"), f"CM_HAPAX={HAPAX!r}: only exclude is implemented"
+HX = None  # set lazily by hapax_types()
 
 
 def mark_class(m):
@@ -110,7 +122,7 @@ def resolve_merge(t):
     return t
 
 
-RSUF = ("" if RESTARTS == 6 else f"_r{RESTARTS}") + (f"_tol{TOL:g}" if TOL else "") + (f"_rob{ROBUST:g}" if ROBUST else "") + ("_merged" if MERGE_MAP else "") + (f"_err{ERR:g}" if ERR else "") + (f"_o{ORDER}{'b' if BACKOFF else ''}" if (ORDER != 3 or BACKOFF) else "")
+RSUF = ("" if RESTARTS == 6 else f"_r{RESTARTS}") + (f"_tol{TOL:g}" if TOL else "") + (f"_rob{ROBUST:g}" if ROBUST else "") + ("_merged" if MERGE_MAP else "") + (f"_err{ERR:g}" if ERR else "") + (f"_o{ORDER}{'b' if BACKOFF else ''}" if (ORDER != 3 or BACKOFF) else "") + (f"_hx{HAPAX}" if HAPAX else "")
 SUFFIX = "" if LEAVES == ("f54r", "f54v") else "_all" if LEAVES == LEAVES_ALL else "_" + "-".join(LEAVES)
 
 
@@ -265,7 +277,59 @@ def expand(seq):
     return out, spans
 
 
+def hapax_types():
+    """CM_HAPAX: unread (`?` code) types occurring exactly once in the pooled target rows (module docstring)."""
+    global HX
+    if HX is None:
+        c = Counter(sign_type(x) for x in rows() if x["code"] != "_")
+        HX = {t for t, n in c.items() if n == 1 and t.startswith("?")}
+    return HX
+
+
+def split_wild(stream, hx):
+    """Positions whose symbol is in hx (wildcards) and the stream with them spliced out."""
+    wild = [i for i, s in enumerate(stream) if s in hx]
+    ws = set(wild)
+    return wild, [s for i, s in enumerate(stream) if i not in ws]
+
+
+def fill_wild(dec_sub, wild, model):
+    """Re-insert the wildcard positions (left to right) into the decode of the spliced stream, each filled with the
+    letter maximising the summed n-gram log-probability of the windows touching it."""
+    out, ws, j = [], set(wild), 0
+    for i in range(len(dec_sub) + len(wild)):
+        if i in ws:
+            out.append(None)
+        else:
+            out.append(dec_sub[j]); j += 1
+    o = model.order
+    for i in wild:
+        best = None
+        for a in ha.ALPHA:
+            out[i] = a
+            lo, hi = max(0, i - o + 1), min(len(out), i + o)
+            w = "".join(c or "e" for c in out[lo:hi])
+            v = sum(model.logp(w[k:k + o]) for k in range(len(w) - o + 1)) if len(w) >= o else math.log(model.freq[a])
+            if best is None or v > best[0]:
+                best = (v, a)
+        out[i] = best[1]
+    return "".join(out)
+
+
 def run(stream, seed):
+    if HAPAX == "exclude":
+        wild, sub = split_wild(stream, hapax_types())
+        _, key, dsub, model, free = run_plain(sub, seed)
+        dec = fill_wild(dsub, wild, model)
+        ws = set(wild)
+        remap = [i for i in range(len(stream)) if i not in ws]
+        free = {remap[i]: a for i, a in free.items()}
+        key = dict(key, **{stream[i]: dec[i] for i in wild})
+        return ha.score(model, dec, 1.0), key, dec, model, free, wild
+    return run_plain(stream, seed) + ([],)
+
+
+def run_plain(stream, seed):
     # vi: a mark symbol stands for a vowel by hypothesis (without this the solver swaps the roles of codes and marks)
     texts = [open(c, encoding="utf-8", errors="ignore").read() for c in
              [os.path.join(D, "..", c) if not os.path.isabs(c) else c for c in CORPUS]]
@@ -287,7 +351,7 @@ def control(design, n, seed):
     else:
         stream, spans = expand(seq)
     truth = "".join(toks)
-    sc, key, dec, model, free = run(stream, seed)
+    sc, key, dec, model, free, wild = run(stream, seed)
     true_sc = ha.score(model, truth, 1.0)
     if ERR:  # indels: score each surviving stream position against the token it came from; deleted tokens count wrong
         ok = sum(dec[i] == toks[j] for i, j in enumerate(TRUTH_INDEX) if j is not None)
@@ -295,6 +359,11 @@ def control(design, n, seed):
     else:
         let = sum(a == b for a, b in zip(dec, truth)) / len(truth)
         tok = sum(dec[a:b] == truth[a:b] for a, b in spans) / len(spans)
+    if HAPAX:
+        wj = [(i, TRUTH_INDEX[i] if ERR else i) for i in wild]
+        wj = [(i, j) for i, j in wj if j is not None]
+        info = dict(info, hapax=HAPAX, wild=len(wild),
+                    wild_acc=f"{sum(dec[i] == toks[j] for i, j in wj)}/{len(wj)}" if ERR else f"{sum(dec[i] == truth[i] for i, _ in wj)}/{len(wj)}")
     if ORDER != 3 or BACKOFF:
         info = dict(info, order=ORDER, **({"backoff": 1} if BACKOFF else {}))
     if ROBUST:
@@ -321,8 +390,9 @@ def target(design, seed):
             stream = [merge_type(t) for t in stream]
     else:
         stream, _ = expand([(x["code"], x["marks"] or None) for x in sg])
-    sc, key, dec, _, free = run(stream, seed)
-    json.dump({"design": design, "seed": seed, "score": sc, "decoded": dec, "key": key, **({"robust": ROBUST} if ROBUST else {}),
+    sc, key, dec, _, free, wild = run(stream, seed)
+    json.dump({"design": design, "seed": seed, "score": sc, "decoded": dec, "key": key,
+               **({"hapax": HAPAX, "wild": {str(i): f"{stream[i]}={dec[i]}" for i in wild}} if HAPAX else {}), **({"robust": ROBUST} if ROBUST else {}),
                **({"tol": TOL, "free": {str(i): l for i, l in sorted(free.items())}} if TOL else {})},
               open(f"{D}/codemark_target_{design}{SUFFIX}{RSUF}_s{seed}.json", "w"), indent=0)
     print(design, seed, f"{sc:.1f}", dec[:200])
