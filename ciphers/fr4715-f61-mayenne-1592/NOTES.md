@@ -550,3 +550,15 @@ outside those spans. No class change; no word of solved or new.
 `scripts/f61crib4_map.tsv`; HYPOTHESES.md rows added. Requests: none. Vision calls: 1 of 4. No credentials, no
 AskUserQuestion, no novelty wording; the owner not named.
 
+## Correction to steps H1-H15b (2026-09-27 23:09 UTC, found while preparing H2)
+
+`scripts/f61crib.py`'s CLASS_RULES tested `a-shape` before `beta`, so the reader's two "beta-shape" signs (L07/4, L11/1,
+both under Tomokiyo's m) were classed CA (the a-shape, a null) from H1 on; `scripts/class_diag.tsv` had them right
+(beta = m). The self-test of H2's scorer (pass A against itself should agree 10/10) exposed it: BETA had no signs. Fixed
+by ordering the beta rule first; every class-map script re-run and its result file rewritten (`--check` fresh):
+H1 unchanged (24/55 vs max 0.345, PASS); H11 now 34/55 = 0.618 vs max 0.436 (was 36/55 vs 0.400), gate (a) PASS and
+gate (b) FAIL as before; H12 unchanged (37/55 vs 0.436; the all-span map's in-sample misses now name a@BETA instead of
+m@CA); H15b unchanged (42/55 vs 0.400, PASS). CAMPAIGN.md's H11 cell and HYPOTHESES.md's H11 row carry the corrected
+numbers with the first ones beside them. `scripts/f61_atlas.tsv` gained a BETA code and `scripts/passA_classes.tsv`
+was rebuilt before pass B was called.
+

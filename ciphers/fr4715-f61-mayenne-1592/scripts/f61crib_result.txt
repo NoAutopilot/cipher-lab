@@ -1,13 +1,13 @@
 reader file: read_call_A.tsv (marks column only); fit: tools/interlinear_align.py --code-prefix; score: f61cal.py DP
-classes (19): PHI:15 C43:9 CA:9 VBAR:8 C6:6 4TRI:6 INF:5 DBL:4 LOOPBAR:3 EBR:3 ZHOOK:3 CROSS:2 ELOOP:2 4PI:2 HASH4:1 LOOPSTEM1:1 CH:1 LL:1 4STEM:1
+classes (20): PHI:15 C43:9 VBAR:8 CA:7 C6:6 4TRI:6 INF:5 DBL:4 LOOPBAR:3 EBR:3 ZHOOK:3 CROSS:2 ELOOP:2 4PI:2 BETA:2 HASH4:1 LOOPSTEM1:1 CH:1 LL:1 4STEM:1
 held-out S1	L01	matched 2/4	shuffled max 3/4 mean 1.90	map 4PI=n 4STEM=e 4TRI=pa C43=ab C6=ap CA=cu CROSS=s DBL=ol EBR=ej INF=eo LL=e LOOPBAR=a PHI=el VBAR=ts ZHOOK=i
 held-out S2	L03	matched 5/10	shuffled max 5/10 mean 3.20	map 4PI=cn 4STEM=e 4TRI=pn C43=eb C6=a CA=va CROSS=s DBL=o EBR=ej HASH4=e INF=eo LL=e PHI=el VBAR=tn ZHOOK=i
 held-out S3	L05	matched 6/12	shuffled max 6/12 mean 3.40	map 4PI=cn 4STEM=e 4TRI=ap C43=be C6=ap CA=uc CROSS=s DBL=lo EBR=ej HASH4=e INF=eo LOOPBAR=a PHI=el VBAR=nt ZHOOK=i
 held-out S4a+S4b	L07+L08	matched 7/18	shuffled max 8/18 mean 5.65	map 4PI=cn 4STEM=e 4TRI=an C43=ab C6=pv CA=cr DBL=lo EBR=e HASH4=e INF=p LL=e LOOPBAR=a PHI=ce VBAR=en ZHOOK=i
-held-out S5	L11	matched 4/11	shuffled max 4/11 mean 2.60	map 4PI=c 4TRI=an C43=ab C6=ap CA=cr CROSS=s DBL=l EBR=ej HASH4=e INF=eo LL=e LOOPBAR=a PHI=ec VBAR=su ZHOOK=i
+held-out S5	L11	matched 4/11	shuffled max 4/11 mean 2.45	map 4PI=c 4TRI=an C43=ab C6=ap CA=cr CROSS=s DBL=l EBR=ej HASH4=e INF=eo LL=e LOOPBAR=a PHI=ec VBAR=su ZHOOK=i
 POOLED held-out	24/55 = 0.436  (F61-CAL level 0.85; F61-CAL's own 8/55 = 0.145)
-controls (20 shuffled class-maps pooled across folds, seed 1): 0.345 0.327 0.273 0.327 0.309 0.273 0.309 0.345 0.327 0.255 0.345 0.291 0.255 0.291 0.291 0.291 0.345 0.273 0.291 0.327
-control mean 0.305 max 0.345
+controls (20 shuffled class-maps pooled across folds, seed 1): 0.345 0.327 0.273 0.327 0.309 0.273 0.291 0.345 0.327 0.255 0.327 0.291 0.255 0.291 0.291 0.291 0.327 0.273 0.291 0.327
+control mean 0.302 max 0.345
 GATE (H1: pooled above every shuffled-map value): PASS
 sensitivity (non-gating), uncapped sets: pooled held-out 28/55 = 0.509
 map on all five spans -> scripts/f61crib_map.tsv

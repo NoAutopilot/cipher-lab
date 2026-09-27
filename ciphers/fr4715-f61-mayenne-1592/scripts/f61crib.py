@@ -32,6 +32,7 @@ CLASS_RULES = [
     (r"double loop on stem", "DBL"),
     (r"dark e-loop", "ELOOP"),
     (r"^loop on long stem", "LOOPSTEM1"),     # L05/1: the reader did not call it phi -- kept apart
+    (r"beta", "BETA"),                        # before 'a-shape': 'beta-shape' contains 'a-shape' (caught 27 Sept 2026 23:1x, H2 prep; H1-H15b re-run)
     (r"43-shape", "C43"),
     (r"6-shape", "C6"),
     (r"a-shape", "CA"),
@@ -45,7 +46,6 @@ CLASS_RULES = [
     (r"infinity", "INF"),
     (r"7/z hook", "ZHOOK"),
     (r"e-like bracket", "EBR"),
-    (r"beta", "BETA"),
     (r"cross", "CROSS"),                      # 'cross, stroke rising to upper right', 'plus/cross'
 ]
 def classify(marks):

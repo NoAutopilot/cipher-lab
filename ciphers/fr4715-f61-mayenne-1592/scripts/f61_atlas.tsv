@@ -20,6 +20,7 @@ ELOOP	a dark e-shaped loop with a curling tail
 HASH4	a dense crossed-4 cluster, hash-like, with stems
 LOOPSTEM1	a single loop on a long stem (not phi-like, not double)
 CH	a mark shaped like a cursive h
+BETA	a beta-like shape: a loop at the top of a stem with a 3-like bowl below it
 LL	a mark shaped like ll
 4STEM	a 4 with a long crossed stem and no triangle below
 OTHER	any cipher sign matching none of the above (describe it in the note)
