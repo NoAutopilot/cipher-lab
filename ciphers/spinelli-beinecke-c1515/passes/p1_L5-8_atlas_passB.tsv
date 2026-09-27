@@ -1,0 +1,127 @@
+line	pos	code	note	conf
+5	1	TEE		H
+5	1a	STROKE	unboxed, isolated curved stroke below box1	L
+5	2	ELOOP+THREE	merged, tail loops under both signs to box3	M
+5	3	SIX		H
+5	4	OMEGABAR		H
+5	5	ECAP	connecting stroke runs to box6	H
+5	6	TLOOP		M
+5	7	DIAMOND		H
+5	8	EIGHT		H
+5	9	PHI	heavy inked loop/blot, tail extends toward box10	M
+5	10	SIX		H
+5	11	NINE		H
+5	12	OMEGABAR		H
+5	13	THETA	loop crossed by horizontal bar	M
+5	14	ELOOP+THREE	merged, long tail, same pattern as box2	M
+5	15	SIX		H
+5	16	_	overlap/duplicate: shares ink with box17, no distinct extra sign	L
+5	17	SIX	loop+ascender, overlaps box16	M
+5	17a	STROKE	small isolated dash before box18	L
+5	17b	STROKE	tall ascender hook, unclear, near box18	L
+5	17c	STROKE	tiny tick mark, possibly diacritic dot	L
+5	17d	STROKE	tiny tick mark, possibly diacritic dot	L
+5	18	EIGHT	elongated double loop, hook flourish at top	M
+5	19	PHI	ascender+loop, complex	M
+5	19a	NEW	hook/checkmark shape with ascending tail, trailing box19	L
+5	20	ESS		H
+5	20a	NEW	small closed round loop, no tail	L
+5	20b	TLOOP		M
+5	20c	SIX		H
+5	20d	HCURL		H
+5	20e	THREE		M
+5	20f	ECAP		M
+5	21	SIX		H
+6	1	SIX		H
+6	2	OMEGABAR		H
+6	3	EIGHT		H
+6	4	SEVEN		H
+6	5	EM		H
+6	6	EIGHT		H
+6	7	LL	joined by bottom bar, u-shape	M
+6	8	OMEGABAR		H
+6	9	XCURL		H
+6	10	TWO	resembles Z, angular variant of 2	M
+6	11	TWO		H
+6	12	DEE	diagonal stroke may be ink bleed from box11	M
+6	13	NINE		H
+6	14	TWOFLAT		M
+6	15	TWO		H
+6	16	SEVEN		H
+6	17	ECAP	overlaps box18, same ductus	M
+6	18	MU	overlaps box17	H
+6	19	XCURL		H
+6	20	TWOFLAT		M
+6	21	PHI	tall ascender+loop+crossbar	M
+6	22	SIX		H
+6	23	EIGHT		H
+6	24	THREE		H
+6	25	RHO+SIX	merged, connecting tail	M
+7	1	XCURL	complex, tail loop at bottom	M
+7	2	SEVEN		H
+7	3	ENN		H
+7	4	TWO		H
+7	5	THREE		H
+7	6	EM		H
+7	7	ECAP		H
+7	8	PHI	complex compound, ascender+loop+long oval tail	L
+7	9	EIGHT		H
+7	10	THETA		M
+7	11	NINE	unusually long descender	M
+7	12	EIGHTBAR	loop with horizontal bar through it, squiggle above	L
+7	13	STROKE	isolated vertical stroke, possible fragment	M
+7	14	LL		M
+7	15	TWO		H
+7	16	ENN	long tail descender attached	M
+7	17	STROKE	fragment, overlaps box18	L
+7	18	ECAP	overlaps box17	M
+7	19	TWO		H
+7	20	XCURL		H
+7	21	EIGHT		H
+7	22	RHO	loop with long descender tail	M
+7	23	PHI	ascender+loop, complex	M
+7	23a	STROKE	tiny dash, possibly noise	L
+7	23b	STROKE	tiny dash, possibly noise	L
+7	23c	STROKE	tiny dash, possibly noise	L
+7	23d	OMEGABAR	faint unboxed tilde shape	L
+7	24	TWO		M
+7	25	SEVENB		H
+7	26	EIGHT		H
+7	27	XCURL		H
+7	28	SEVEN		H
+7	29	STROKE	cut off at strip's right edge	M
+8	1	STROKE	simple diagonal stroke, isolated	M
+8	2	PI		H
+8	3	PHI	ascender+loop, tail below	M
+8	4	THREE	stacked-hook style, unusual	L
+8	5	NEW	small closed round loop, sits above baseline	L
+8	6	TWO		M
+8	7	TWO		M
+8	8	UCURL		M
+8	9	NINE	left part of box shared with pos10	M
+8	10	THREE	right part of box shared with pos9, long descender tail	M
+8	11	MU		M
+8	12	TEE		H
+8	13	STROKE	tiny isolated blob/hook	L
+8	14	OMEGABAR		H
+8	15	RHO+FOUR	merged, connecting tail	M
+8	16	TWO		H
+8	17	TLOOP		M
+8	18	CARET		M
+8	19	OMEGABAR		H
+8	20	_	unclear tiny mark, transition zone, possibly plain fragment or noise	L
+8	21	DIAMOND		H
+8	22	_	plain	M
+8	23	RHO	long connecting tail; upper-tier cipher sign continuing after plain intrusion	M
+8	24	_	plain	M
+8	25	_	plain	M
+8	26	MU	upper-tier cipher sign	M
+8	27	_	plain	M
+8	28	_	plain	M
+8	29	FOUR	upper-tier cipher sign	H
+8	30	_	plain, tall ascender letter	H
+8	31	OMEGABAR	upper-tier cipher sign	H
+8	32	_	plain, round letter	H
+8	33	_	plain	M
+8	34	_	plain	M
+8	35	_	plain fragment, cut at strip's right edge	L
