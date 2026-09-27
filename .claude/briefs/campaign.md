@@ -26,3 +26,5 @@ runner's order is wrong); raise the daily budget only with a logged reason; ledg
 LEDGER row's role is "campaign runner <target> step <id>"); close a campaign only with `closed: <reason>` and a
 SPRINT.md note. A campaign with three consecutive dropped steps and no new hypothesis is a red line for the owner,
 not a close.
+
+**Cadence (the owner, 27 Sept 2026, 21:58 UTC, plain form): a runner never waits for its scheduled minute when it could run. The trigger minute is a floor, not a schedule: the orchestrator fires a campaign's trigger by hand (fire_trigger) whenever the runner is idle and its last step is done, and at every check-in fires any runner that has been idle since its last done line. The hourly cron only catches what the orchestrator missed.
