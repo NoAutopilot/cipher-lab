@@ -2377,6 +2377,13 @@ wherever another agent checks the output; the window to 11:10 UTC has to last.
 Gallica .texteBrut is altcha-walled, IIIF page images are not; tell solvers to run long jobs in the foreground (two Paleologue
 solvers went idle with background runs); commit per pass so a rate-limit stop loses nothing; "9.bre" is novembre.
 
+### Parent note, owner account (27 Sept 2026, 10:43 UTC)
+
+- INTAKE-4715 (6.14 D) gated two register rows. The Ormonde letter of 1680 is found-solved: Tomokiyo prints the per-group reading of its fifteen groups on his page. The Montholon letter of 8 November 1589 in fr.4715 is a genuine target: Tomokiyo reads only the opening, the manuscript image is a plain scan, and the folder now carries the Vieuville-Nevers key (35 rows, all agreed by two readers) and the printed opening as known plaintext. The SOLVE account took it at 10:39 as MONT-4715 (cap 16 USD): two blind passes on f.81r, calibration on the printed opening, the shuffled-key control, and a reading to VO2 if it passes. That is the first target since fr.7129 to reach a reader with a calibration asset in hand.
+- Next refill worker: INTAKE-SAVOY (Sonnet, cap 5 USD) gates the Savoy letters of 1593 in fr.3983-3985 (high found-solved risk: Tomokiyo's page has the same title-and-images shape as the Mantua page) and then builds the Bishop of Beziers' letter of 13 August 1670 in Melanges de Colbert 155, for which Tomokiyo prints the key and the opening words. The SOLVE parent's rule that every register row quote Tomokiyo's exact sentence before it ranks is adopted in the brief.
+- Other account (7l): fr.3976 f.133 found-solved (Bourdeau read it on 22 September); Salviati f.56v re-settle added six sign tokens (spec 2939 tokens, 253 types), no re-run; PR 34 (the runner's Untersberg leads) is SOLVE's under the tie-break.
+- Owner's desk: ASKS row 78, twelve BnF reproduction orders, unchanged. Counts unchanged: 20 letters, 15 entries. Mailbox: nothing from an institution.
+
 ### Parent note, owner account (27 Sept 2026, 09:44 UTC)
 
 - LANE NEV closed and archived (orchestrator 5.45, workers 28.99, three calibrations, no reading; handoff in STATUS.md). Its three next steps are recorded: the BnF reproduction of the f.179 sheet, thirty or more gloss letters from f.82r read by the strongest model, then the f.11 read.
