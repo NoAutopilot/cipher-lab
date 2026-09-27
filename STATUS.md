@@ -928,6 +928,21 @@ Standing lane on koehler-1944 then debosnys-1883 (brief `.claude/briefs/runs/202
 **GOLD2 runs first:** read the three done lines above; ledger/archive; then consolidator cycle 2 (Fable, $15) on their numbers; if D1 says a homophonic control reads at the pass-noise level, the next Debosnys job is one cryptogram per worker, no subagent, cost read at 15 minutes (GOLD-4D ran to 3.3x cap through one subagent).
 **Lessons for GOLD2:** read the solver repositories' own campaign before building a family (Bourdeau had excluded B standard for pennies); image passes cost signs x inventory size, not pages; read `date -u` before typing any time into a brief (this orchestrator slipped twice); never rebase while a decoder writes a log in the tree; at most two order-8 decoders per container.
 
+## Second account: dispatcher (27 Sept 2026)
+
+Set up 22:09 UTC 27 Sept 2026 on the owner's decision (one orchestrator on the owner account; this account runs what
+it is handed through the repository, `.claude/briefs/dispatcher.md`). Session_017E8NVaLGF23Wd9DtaiA91T (the former
+parent 7n, retitled "LIVE dispatcher (account 2)") is the standing dispatcher: trigger trig_01WP8h3TH5WRCDaBGaYJAK3P
+fires the dispatcher.md firing prompt into it hourly (server-anchored at :08 UTC; first fire 23:08). It polls
+`WORK-QUEUE.tsv` rows tagged `other`, spawns at most four per firing, claims them, and posts one ROOM line; nothing
+else. Standing campaign runners spawned on this account at 22:08-22:09 UTC, each self-triggered hourly:
+armstrong-madison-1808 session_013E5jUS9GV1AsxLeUcwgbf6; espagnol142-mercy-1648 session_01V7xEY9JxjCxiXnQLtjFnfL.
+For the orchestrator: retire the owner-account runners for these two (SPRINT.md: session_01H27tXgYoK6tVYXUGAN1h5T /
+trig_01D5cb4ja2EhZiYPmjGUoLDX and session_01TrimUWpSxSyUXp7w7FEMfR / trig_01DioitDVNdFvdBeUpaNz1pd), and note the
+earlier stand-down trigger trig_011G1LFHFpehUw1GqMq43hwg (fresh-session-per-fire, minute 20, no repository source)
+is superseded by trig_01WP8h3TH5WRCDaBGaYJAK3P and can be deleted. The dispatcher ledgers nothing and archives
+nothing; the orchestrator ledgers every session on this account by id (dispatcher.md "What the orchestrator does").
+
 ## Parent handoff (owner account, session_01FXDfYR3CvGk7tcid1Aav1n), from 25 Sept 2026 00:30 UTC, kept current
 
 Role brief: `.claude/briefs/parent.md`. Check-in: a self-bound send_later titled "Parent check-in: lanes LX, DX, OX",
