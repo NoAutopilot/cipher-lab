@@ -1,0 +1,21 @@
+# Doctor Rodrigo Gonzalez de Puebla, Spanish ambassador in England, correspondence with Ferdinand/Isabella.
+# Transcribed by Satoshi Tomokiyo, Cryptiana (cryptiana.web.fc2.com/code/spanish.htm, section "Puebla's Roman Numeral Code (1488) (Bergenroth/Puebla-1)"),
+# citing William H. Bergenroth's Calendar of Letters, Despatches, and State Papers ... Spain, vol.1 (1862).
+# Parsed 27 Sept 2026.
+# office: Doctor Puebla (Spanish ambassador, England) -> Ferdinand and Isabella
+# years: 1488
+# language: es
+# home: none
+# design: Roman-numeral code (small vocabulary of names/words), Spanish original wording
+# note: H: a period key table as Tomokiyo prints it, in the archival document's own Spanish
+sign	value	grade	source	note
+vii	Rey Ferdinand	H	spanish.htm §Puebla's Roman Numeral Code (1488) (Bergenroth/Puebla-1), Spanish original	also recorded in Bergenroth's report, PRO 31/11/11 no.1 (same code, Spanish wording)
+viii	Reyna Isabella	H	spanish.htm §Puebla's Roman Numeral Code (1488) (Bergenroth/Puebla-1), Spanish original	also recorded in Bergenroth's report, PRO 31/11/11 no.1 (same code, Spanish wording)
+x	Infanta Catalina	H	spanish.htm §Puebla's Roman Numeral Code (1488) (Bergenroth/Puebla-1), Spanish original	also recorded in Bergenroth's report, PRO 31/11/11 no.1 (same code, Spanish wording)
+xi	Rey de Inglaterra	H	spanish.htm §Puebla's Roman Numeral Code (1488) (Bergenroth/Puebla-1), Spanish original	also recorded in Bergenroth's report, PRO 31/11/11 no.1 (same code, Spanish wording)
+xiii	lo	H	spanish.htm §Puebla's Roman Numeral Code (1488) (Bergenroth/Puebla-1), Spanish original	also recorded in Bergenroth's report, PRO 31/11/11 no.1 (same code, Spanish wording)
+xv	corte	H	spanish.htm §Puebla's Roman Numeral Code (1488) (Bergenroth/Puebla-1), Spanish original	also recorded in Bergenroth's report, PRO 31/11/11 no.1 (same code, Spanish wording)
+xvii	Rey de Francia	H	spanish.htm §Puebla's Roman Numeral Code (1488) (Bergenroth/Puebla-1), Spanish original	also recorded in Bergenroth's report, PRO 31/11/11 no.1 (same code, Spanish wording)
+xviii	Rey de Romanos	H	spanish.htm §Puebla's Roman Numeral Code (1488) (Bergenroth/Puebla-1), Spanish original	also recorded in Bergenroth's report, PRO 31/11/11 no.1 (same code, Spanish wording)
+xix	Rey de Portugal	H	spanish.htm §Puebla's Roman Numeral Code (1488) (Bergenroth/Puebla-1), Spanish original	also recorded in Bergenroth's report, PRO 31/11/11 no.1 (same code, Spanish wording)
+xx	Bretaña	H	spanish.htm §Puebla's Roman Numeral Code (1488) (Bergenroth/Puebla-1), Spanish original	also recorded in Bergenroth's report, PRO 31/11/11 no.1 (same code, Spanish wording)

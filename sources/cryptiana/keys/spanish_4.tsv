@@ -1,0 +1,31 @@
+# Doctor Rodrigo Gonzalez de Puebla, Spanish ambassador in England, correspondence with Ferdinand/Isabella.
+# Transcribed by Satoshi Tomokiyo, Cryptiana (cryptiana.web.fc2.com/code/spanish.htm, section "Puebla's Great Roman Numeral Code (1495) (Bergenroth/Puebla-5)"),
+# citing William H. Bergenroth's Calendar of Letters, Despatches, and State Papers ... Spain, vol.1 (1862).
+# Parsed 27 Sept 2026.
+# office: Doctor Puebla (Spanish ambassador, England) -> Ferdinand and Isabella
+# years: 1495-1507
+# language: en
+# home: none
+# design: Great Roman-numeral code: number representation (MMCCCLXXIII=1 ... MMMCCCC(read MMCCCC)=1000)
+# note: H throughout except the last row (Tomokiyo's own reading correction, graded M)
+sign	value	grade	source	note
+MMCCCLXXIII	1	H	spanish.htm §Puebla's Great Roman Numeral Code (1495) (Bergenroth/Puebla-5), numbers	the same Great Roman Numeral Code's representation of numbers, per Bergenroth
+MMCCCLXXIV	2	H	spanish.htm §Puebla's Great Roman Numeral Code (1495) (Bergenroth/Puebla-5), numbers	the same Great Roman Numeral Code's representation of numbers, per Bergenroth
+MMCCCLXXV	3	H	spanish.htm §Puebla's Great Roman Numeral Code (1495) (Bergenroth/Puebla-5), numbers	the same Great Roman Numeral Code's representation of numbers, per Bergenroth
+MMCCCLXXVI	4	H	spanish.htm §Puebla's Great Roman Numeral Code (1495) (Bergenroth/Puebla-5), numbers	the same Great Roman Numeral Code's representation of numbers, per Bergenroth
+MMCCCLXXVII	5	H	spanish.htm §Puebla's Great Roman Numeral Code (1495) (Bergenroth/Puebla-5), numbers	the same Great Roman Numeral Code's representation of numbers, per Bergenroth
+MMCCCLXXVIII	6	H	spanish.htm §Puebla's Great Roman Numeral Code (1495) (Bergenroth/Puebla-5), numbers	the same Great Roman Numeral Code's representation of numbers, per Bergenroth
+MMCCCLXXIX	7	H	spanish.htm §Puebla's Great Roman Numeral Code (1495) (Bergenroth/Puebla-5), numbers	the same Great Roman Numeral Code's representation of numbers, per Bergenroth
+MMCCCLXXX	8	H	spanish.htm §Puebla's Great Roman Numeral Code (1495) (Bergenroth/Puebla-5), numbers	the same Great Roman Numeral Code's representation of numbers, per Bergenroth
+MMCCCLXXXI	9	H	spanish.htm §Puebla's Great Roman Numeral Code (1495) (Bergenroth/Puebla-5), numbers	the same Great Roman Numeral Code's representation of numbers, per Bergenroth
+MMCCCLXXXII	10	H	spanish.htm §Puebla's Great Roman Numeral Code (1495) (Bergenroth/Puebla-5), numbers	the same Great Roman Numeral Code's representation of numbers, per Bergenroth
+MMCCCLXXXIII	20	H	spanish.htm §Puebla's Great Roman Numeral Code (1495) (Bergenroth/Puebla-5), numbers	the same Great Roman Numeral Code's representation of numbers, per Bergenroth
+MMCCCLXXXIV	30	H	spanish.htm §Puebla's Great Roman Numeral Code (1495) (Bergenroth/Puebla-5), numbers	the same Great Roman Numeral Code's representation of numbers, per Bergenroth
+MMCCCLXXXV	40	H	spanish.htm §Puebla's Great Roman Numeral Code (1495) (Bergenroth/Puebla-5), numbers	the same Great Roman Numeral Code's representation of numbers, per Bergenroth
+MMCCCLXXXVI	50	H	spanish.htm §Puebla's Great Roman Numeral Code (1495) (Bergenroth/Puebla-5), numbers	the same Great Roman Numeral Code's representation of numbers, per Bergenroth
+MMCCCLXXXVII	60	H	spanish.htm §Puebla's Great Roman Numeral Code (1495) (Bergenroth/Puebla-5), numbers	the same Great Roman Numeral Code's representation of numbers, per Bergenroth
+MMCCCLXXXVIII	70	H	spanish.htm §Puebla's Great Roman Numeral Code (1495) (Bergenroth/Puebla-5), numbers	the same Great Roman Numeral Code's representation of numbers, per Bergenroth
+MMCCCLXXXIX	80	H	spanish.htm §Puebla's Great Roman Numeral Code (1495) (Bergenroth/Puebla-5), numbers	the same Great Roman Numeral Code's representation of numbers, per Bergenroth
+MMCCCXC	90	H	spanish.htm §Puebla's Great Roman Numeral Code (1495) (Bergenroth/Puebla-5), numbers	the same Great Roman Numeral Code's representation of numbers, per Bergenroth
+MMCCCXCI	100	H	spanish.htm §Puebla's Great Roman Numeral Code (1495) (Bergenroth/Puebla-5), numbers	the same Great Roman Numeral Code's representation of numbers, per Bergenroth
+MMMCCCC	1000	M	spanish.htm §Puebla's Great Roman Numeral Code (1495) (Bergenroth/Puebla-5), numbers	Tomokiyo notes the printed numeral is read as MMCCCC (his own correction of an apparent scribal slip), not a period key sheet value as-is

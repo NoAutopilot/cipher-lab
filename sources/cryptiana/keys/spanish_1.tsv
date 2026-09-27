@@ -1,0 +1,24 @@
+# Doctor Rodrigo Gonzalez de Puebla, Spanish ambassador in England, correspondence with Ferdinand/Isabella.
+# Transcribed by Satoshi Tomokiyo, Cryptiana (cryptiana.web.fc2.com/code/spanish.htm, section "Puebla's Roman Numeral Code (1488) (Bergenroth/Puebla-1)"),
+# citing William H. Bergenroth's Calendar of Letters, Despatches, and State Papers ... Spain, vol.1 (1862).
+# Parsed 27 Sept 2026.
+# office: Doctor Puebla (Spanish ambassador, England) -> Ferdinand and Isabella
+# years: 1488
+# language: en
+# home: none
+# design: Roman-numeral code (small vocabulary of names/words), English rendering
+# note: H: a period key table as Tomokiyo prints it; values are his English gloss of the underlying Spanish
+sign	value	grade	source	note
+vii	Ferdinand	H	spanish.htm §Puebla's Roman Numeral Code (1488) (Bergenroth/Puebla-1), English rendering	from Puebla to Ferdinand/Isabella, 15 July 1488, PRO 31/11/11 (Bergenroth's report no.1)
+viii	Isabella	H	spanish.htm §Puebla's Roman Numeral Code (1488) (Bergenroth/Puebla-1), English rendering	from Puebla to Ferdinand/Isabella, 15 July 1488, PRO 31/11/11 (Bergenroth's report no.1)
+xi	the King of England	H	spanish.htm §Puebla's Roman Numeral Code (1488) (Bergenroth/Puebla-1), English rendering	from Puebla to Ferdinand/Isabella, 15 July 1488, PRO 31/11/11 (Bergenroth's report no.1)
+xii	the Queen of England	H	spanish.htm §Puebla's Roman Numeral Code (1488) (Bergenroth/Puebla-1), English rendering	from Puebla to Ferdinand/Isabella, 15 July 1488, PRO 31/11/11 (Bergenroth's report no.1)
+xix	the King of Portugal	H	spanish.htm §Puebla's Roman Numeral Code (1488) (Bergenroth/Puebla-1), English rendering	from Puebla to Ferdinand/Isabella, 15 July 1488, PRO 31/11/11 (Bergenroth's report no.1)
+xvii	the King of France	H	spanish.htm §Puebla's Roman Numeral Code (1488) (Bergenroth/Puebla-1), English rendering	from Puebla to Ferdinand/Isabella, 15 July 1488, PRO 31/11/11 (Bergenroth's report no.1)
+xx	Brittany	H	spanish.htm §Puebla's Roman Numeral Code (1488) (Bergenroth/Puebla-1), English rendering	from Puebla to Ferdinand/Isabella, 15 July 1488, PRO 31/11/11 (Bergenroth's report no.1)
+xxi	the alliance	H	spanish.htm §Puebla's Roman Numeral Code (1488) (Bergenroth/Puebla-1), English rendering	from Puebla to Ferdinand/Isabella, 15 July 1488, PRO 31/11/11 (Bergenroth's report no.1)
+xxii	marriage	H	spanish.htm §Puebla's Roman Numeral Code (1488) (Bergenroth/Puebla-1), English rendering	from Puebla to Ferdinand/Isabella, 15 July 1488, PRO 31/11/11 (Bergenroth's report no.1)
+xxvi	war	H	spanish.htm §Puebla's Roman Numeral Code (1488) (Bergenroth/Puebla-1), English rendering	from Puebla to Ferdinand/Isabella, 15 July 1488, PRO 31/11/11 (Bergenroth's report no.1)
+xxvii	son	H	spanish.htm §Puebla's Roman Numeral Code (1488) (Bergenroth/Puebla-1), English rendering	from Puebla to Ferdinand/Isabella, 15 July 1488, PRO 31/11/11 (Bergenroth's report no.1)
+xxviii	daughter	H	spanish.htm §Puebla's Roman Numeral Code (1488) (Bergenroth/Puebla-1), English rendering	from Puebla to Ferdinand/Isabella, 15 July 1488, PRO 31/11/11 (Bergenroth's report no.1)
+xxxv	De Puebla	H	spanish.htm §Puebla's Roman Numeral Code (1488) (Bergenroth/Puebla-1), English rendering	from Puebla to Ferdinand/Isabella, 15 July 1488, PRO 31/11/11 (Bergenroth's report no.1)
