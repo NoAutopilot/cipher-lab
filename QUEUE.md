@@ -7319,3 +7319,25 @@ viewing the decoded text. No transcription, crops or decode attempted (U1-U5 of 
 Gallica-volume enumeration, no text about this letter). KEY-ADJACENT.tsv row 7 and the target's NOTES.md
 ("BEZ-READ: found-solved on the outstanding check-solved step") updated in place; status.json is the parent's.
 Requests: de-crypt.org 2 (no login), GitHub 2 (shallow clones, depth 1), gallica.bnf.fr 0.
+
+## INTAKE-4715-F61 promotion, 27 Sept 2026
+
+KEY-ADJACENT.tsv row 21 (`mayenne.htm`, BnF fr.4715 no.38/f.61, Duke of Mayenne's polyphonic cipher) is
+promoted from the register to a folder: `ciphers/fr4715-f61-mayenne-1592` (Layout intake, no cryptanalysis,
+no new reading, no class -- see its own NOTES.md). A different, unrelated cipher family from
+`ciphers/fr4715-montholon-1589` (same shelfmark, the Vieuville-Nevers digit cipher) -- a separate folder, not
+a pool row; that folder and its POOL.md are the SOLVE parent's (parent 7n) and untouched by this job.
+Found-solved gate: no -- Tomokiyo's own dedicated page for this item (`bnf4715.htm#no38`) prints only a
+partial decode (one phrase, "jalousie au beau-pere", plus a handful of isolated words overlaid on his own
+published image of the leaf), self-labelled "Solution Incomplete" with his own question mark in the image's
+caption ("Solved with Polyphonic Cipher?"). Not a full reading, so not retired; treated as an existing partial
+crib the same way `ciphers/fr4715-montholon-1589/POOL.md` treats its own no.27/no.58 rows, and the same way
+an earlier job this same day (KEY-ADJACENT.tsv row 23, `savoy.htm`, "INTAKE-SAVOY unit A gate" above) reached a
+"partly read, not found-solved" verdict on a different item in a related sweep. Key of record
+(`keys/key_mayenne_1592.tsv`, reconstructed by Tomokiyo from BnF fr.3982/3983 Mayenne-Diou letters,
+`mayenne.htm` image `mayenne.png`) is transcribed (two independent blind Sonnet subagent reads, disagreements
+on two columns settled by this worker's own zoomed crops) and registered (KEY-OFFICES.tsv, KEY-DESIGN.tsv,
+`tools/key_design.py --check` passes). `tools/intake_gate_check.py fr4715-f61-mayenne-1592` passes ("partial
+... edition/page or full-text-search citation found within 6 lines"). Next step: calibrate the key against
+Tomokiyo's own five interlinear spans on this same leaf (a small known-answer set) before any blind
+transcription of the rest of the leaf, per NOTES.md.

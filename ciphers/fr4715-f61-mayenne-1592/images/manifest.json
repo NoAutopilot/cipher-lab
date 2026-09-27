@@ -1,0 +1,21 @@
+{
+  "source": "BnF fr.4715 (ark:/12148/btv1b52509819x), Gallica IIIF, mid-resolution (1000px wide) fetches",
+  "fetched": "27 Sept 2026",
+  "why": "INTAKE-4715-F61: Layout intake for no.38 (f.61), 'Duke of Mayenne's polyphonic cipher?' (Tomokiyo, bnf4715.htm#no38). No cryptanalysis, no reading beyond quoting Tomokiyo's own already-published partial decode -- solver-ready intake only, on the ciphers/nevers-birago-fr3251-1572 / fr4715-montholon-1589 pattern.",
+  "canvas_rule": "this ark's IIIF manifest is INCONSISTENT across its own run (tools/gallica_folio.py, cached manifest sources/gallica-manifests/btv1b52509819x.json): canvases f15-f78 run at offset k=14, canvases f81-f188 at k=16 -- the same inconsistency the fr4715-montholon-1589 manifest already flagged for this ark. Do not use a formula; tools/gallica_folio.py's own per-canvas label lookup was used instead: 'python3 tools/gallica_folio.py btv1b52509819x --folio 61 --json' (no network call -- read from the already-cached manifest) returned canvas f137 labelled '61r' and canvas f138 labelled '61v', both by the manifest's own IIIF label (not derived from either offset run).",
+  "eye_check": "canvas f137 (61r) fetched at 1000px and compared directly against Tomokiyo's own published image of this leaf (sources/cryptiana/web/img/BnFfr4715f61.png, fetched from cryptiana.web.fc2.com/code/BnFfr4715f61.png): identical text, identical layout, identical 'JOMBRE ROYALE' red circular stamp position, identical hand and cipher-symbol shapes. A second, larger ink foliation '66' (in a ruled box) is also visible top-right of this leaf, distinct from the small pencil/ink '61' the Gallica label and Tomokiyo's own caption ('BnF fr.4715 f.61') agree on -- flagged, not resolved: this volume likely carries two competing foliation systems (as fr.20140 does at f.50v, CLAUDE.md's own canvas-drift lesson), and the small number is the one both the manifest label and Tomokiyo's citation use, so it is treated as authoritative here. canvas f138 (61v) fetched and confirmed blank (only bleed-through and two seal impressions, no ink text) -- the letter is one leaf, f.61r only, matching the 'mostly one dense leaf' shape of the other single-letter Montholon/Vieuville items in this volume.",
+  "files": {
+    "f61r_canvas137.jpg": {
+      "folio": "61r (no.38, 'Duke of Mayenne's polyphonic cipher?', undated)",
+      "canvas": 137,
+      "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52509819x/f137/full/1000,/0/native.jpg",
+      "note": "matches Tomokiyo's own published image of this leaf (sources/cryptiana/web/img/BnFfr4715f61.png) exactly, including his overlaid partial interlinear reading; NOT transcribed as a fresh cipher passage this job -- see NOTES.md 'What Tomokiyo already reads'"
+    },
+    "f61v_canvas138.jpg": {
+      "folio": "61v",
+      "canvas": 138,
+      "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52509819x/f138/full/1000,/0/native.jpg",
+      "note": "blank leaf by direct inspection this job: no ink, only bleed-through from the facing leaf and two seal impressions -- the letter is one leaf (f.61r)"
+    }
+  }
+}

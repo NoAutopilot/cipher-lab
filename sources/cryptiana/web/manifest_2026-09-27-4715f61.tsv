@@ -1,0 +1,3 @@
+file	url	fetched	bytes	sha1	for
+web/img/BnFfr4715f61.png	https://cryptiana.web.fc2.com/code/BnFfr4715f61.png	27 Sep 2026, ~18:50 UTC	614430	6489b2a1c6389d69fb725d2dcbfa3e188be06b7f	no.38 (f.61) manuscript scan with Tomokiyo's own overlaid partial reading, INTAKE-4715-F61 gate; eye-check against the Gallica canvas fetch
+web/img/mayenne.png	https://cryptiana.web.fc2.com/code/mayenne.png	27 Sep 2026, ~18:50 UTC	28582	ab9014721152005410ef087b83136a240b57c1b6	reconstructed polyphonic cipher table, transcribed into ciphers/fr4715-f61-mayenne-1592/keys/key_mayenne_1592.tsv
