@@ -1,0 +1,120 @@
+line	pos	code	note	conf
+1	1	_	plain text opening, large arc/flourish (start of al)	M
+1	2	_	plain text, cursive loop	M
+1	3	_	plain text, ascender loop	M
+1	4	_	plain text, overlaps box3/box5 ink	L
+1	5	_	plain text, R with abbreviation slash (R.do)	M
+1	6	_	plain text, ascender+loop (frate)	M
+1	7	_	plain text, cursive word (mio)	M
+1	8	STROKE+STROKE	merged: two adjacent hooked strokes (alt: EM)	L
+1	9	STROKE	thin vertical fragment	H
+1	10	ECAP	small hook/curl	M
+1	11	STROKE	tiny fragment, may be top of ascender continuing into box 12	L
+1	12	STROKE+FOUR	merged: tall ascender stroke above numeral-4 with crossbar	M
+1	13	SEVEN	thin numeral-7 hook	H
+1	14	ECAP	small loop with long diagonal tail	L
+1	15	THREE	vertical zigzag, stacked curves	L
+1	16	STROKE+OMEGABAR	merged: tall ascender stroke above omega/w loop	L
+1	17	THETA	loop with horizontal crossbar	M
+1	18	STROKE	tall stroke hooking at foot	H
+1	19	STROKE	tall stroke hooking at foot	H
+1	20	SEVENB	bold flat-top 7, hooked foot	H
+1	21	MU	cursive looped mu shape	H
+1	22	NINE	small loop+tail	M
+1	23	NINE	loop+long diagonal tail	M
+1	24	PHI	loop with horizontal bar and ascender hook	M
+1	25	SIX	hook curving into loop	M
+1	26	SEVEN	thin numeral-7	M
+1	27	RHO	crossed loop+tail gesture	M
+1	28	RHO+PI	merged: loop with long tail beside pi-shape	L
+1	29	OMEGABAR	bar over double loop	H
+1	30	SIX+NINE	merged: two loop shapes stacked (6-like over 9-like)	M
+1	31	ECAP	hook with long tail	M
+1	32	STROKE+FOUR	merged: ascender stroke above numeral-4 with crossbar	M
+2	1	OMEGABAR	double loop, bar unclear	M
+2	2	XCURL	x-cross with loop, descender entering from above	M
+2	3	OMEGADOT	small loop above w/omega double-loop	M
+2	4	NINE	small loop+tail	L
+2	4a	STROKE	unboxed tick below box4	L
+2	5	NINE	large loop with long curling tail	M
+2	6	PHI	loop with horizontal stroke and tail	L
+2	7	SIX	hook curving into small loop	M
+2	8	RHO	loop with descending tail	L
+2	9	HCURL	K-like hook shape	H
+2	10	EIGHT	figure-8 loops	H
+2	11	XCURL	bold X zigzag	M
+2	12	EM	triple-hump m shape	H
+2	13	TWO	numeral-2 zigzag	H
+2	14	THREE	numeral-3 zigzag	H
+2	15	SEVEN	thin numeral-7 hook	H
+2	16	OMEGABAR	bar over double loop	H
+2	17	EIGHTBAR	two o-loops with horizontal bar through middle	H
+2	18	NINE	loop+tail	H
+2	19	XCURL	x-cross with loop	M
+2	20	ECAP+XCURL	merged: small hook loop connected via long tail to an x-cross	L
+2	21	SEVEN	hooked bend	M
+2	22	ESS	S-curve	H
+2	23	THREE	numeral-3 zigzag	H
+2	24	OMEGABAR	bar over double loop	H
+2	25	PHI	circle bisected by vertical line	H
+2	26	RHO	loop with crossbar and long tail	M
+2	27	FOUR	numeral-4 with crossbar	H
+3	1	ELOOP	closed loop with hooked tail	M
+3	2	PLUS	simple cross	H
+3	3	NINE	loop+tail	H
+3	4	EIGHT	elongated double loop	M
+3	5	HCURL	K-like hook shape	H
+3	6	OMEGABAR	bar over double loop	M
+3	7	STROKE	thin vertical fragment	H
+3	8	ECAP	small loop with long diagonal tail	L
+3	9	STROKE+SEVENB	merged: small ascender hook above bold flat-top-7	M
+3	10	TWO	numeral-2 zigzag	H
+3	11	HCURL	K-like hook shape	H
+3	12	SEVEN	thin diagonal hook	M
+3	13	PHI	loop with horizontal bar and ascender hook	M
+3	14	ELOOP	complex loop with tall ascender tail	L
+3	15	ENN	bold blocky N/H cross shape	H
+3	16	OMEGABAR	bar over double loop	H
+3	17	SIX	hook curving into loop	M
+3	18	DIAMOND+DIAMOND	merged: two diamond shapes stacked/connected	M
+3	19	SEVENB	flat top bar plus vertical, partial view	M
+3	20	STROKE	hook fragment, continues into sign in box 21	L
+3	21	SEVEN	numeral-7 with curled foot, connects from box20	M
+3	22	ECAP	hook with long curling tail	L
+3	23	NINE	loop+tail with small ascender hook	M
+3	24	SIX	hook curving into loop	M
+3	25	NINE	loop+tail	H
+3	26	FOUR	numeral-4 with crossbar	H
+3	27	TEE	cross stroke with small curl	M
+3	28	PI	flat top bar with two legs	M
+3	29	STROKE	thin vertical fragment	H
+3	30	NEW	large open loop, backward-C shape, no clear tail	L
+4	1	PLUS	simple cross	H
+4	2	DEE	loop with long descending tail forming closed oval	L
+4	3	HCURL	K-like hook shape	H
+4	4	PHI	loop with vertical stroke and horizontal crossbar	M
+4	4a	STROKE	unboxed small hook between box4 and box5	L
+4	5	THREE	numeral-3 zigzag	H
+4	6	SEVENB	flat top bar with hooked foot	M
+4	7	DIAMOND	rhombus shape	H
+4	8	OMEGABAR	bar over double loop	H
+4	9	FOUR	numeral-4 with crossbar	H
+4	10	MU	cursive double-hump mu shape	M
+4	11	RHO	loop with long ascender tail	L
+4	11a	STROKE	unboxed short tick below box11	L
+4	12	TWO	numeral-2 zigzag	H
+4	13	HCURL	K-like hook shape	H
+4	14	SEVEN	thin numeral-7 hook	H
+4	15	DEE	D-shaped loop with vertical stroke	H
+4	16	SEVENB	flat top bar, hooked/curled foot	H
+4	17	TLOOP	loop with long curved descending tail	M
+4	18	EIGHT	figure-8 loops	H
+4	19	XCURL	x-cross with loop tails	H
+4	20	RHO+OMEGABAR	merged: hook-loop with long tail flowing into omega/w shape	L
+4	21	THREE	numeral-3 zigzag	H
+4	22	LL	double-leg bracket shape	M
+4	23	TWO	numeral-2 with curl	H
+4	24	DIAMOND	rhombus shape	H
+4	25	ECAP	loop with long ascender tail	L
+4	26	SEVEN	hooked descender, overlaps box25	L
+4	27	SIX	large hook curving into loop	H
