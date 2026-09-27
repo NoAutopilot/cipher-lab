@@ -534,3 +534,21 @@ Not run: the last block of `run_full.sh` (the Ferrato-weighted model `it16_ferr1
 outside this brief. Suggested follow-ups: that block; a nomenclator-aware solver (units allowed to stand for
 syllables or words); crib tests anchored on `suofratel` with 6 restarts and a matched control whose true crib sits
 on a repeat. No network requests this session; compute only.
+
+## Class gate, Ferrari 1999 (local runner, LOCAL-QUEUE L8, 27 Sept 2026)
+
+Landed verbatim from the owner's desk runner, PR 38; row L8 asked whether Ferrari 1999 ("Mantoue et les Gonzague
+de Nevers", cited in Tomokiyo's Nevers bibliography) prints or summarises Marguerite Paléologue's ciphered letters
+to her son.
+
+**blocked**, not a content answer: the academia.edu link -- "I Gonzaga e Nevers / Les Gonzagues et Nevers", in the
+Ugo Bazzotti exhibition catalogue, pp. 15-30 (Nevers, Palais Ducal, 16 Oct-7 Nov 1999; Mantova, Palazzo Te, 18
+Feb-26 Mar 2000; Bozzolo, Mantova, 1999) -- showed a "Just a moment..." / "Performing security verification" bot
+check throughout the attempt (exact URL:
+https://www.academia.edu/23839255/I_Gonzaga_e_Nevers_Les_Gonzagues_et_Nevers_in_Mantova_e_i_Gonzaga_di_Nevers_Mantoue_et_les_Gonzagues_de_Nevers_a_cura_di_U._Bazzotti_catalogo_della_mostra_Nevers_Palais_Ducal_16_octobre-7_novembre_1999_Mantova_Palazzo_Te_18_febbraio-26_marzo_2000_Bozzolo_Mantova_1999_pp._15-30
+). No document reader or login interface was reached; zero pages of the paper were read. This is an access
+failure, not an absence finding -- it does not say Ferrari is silent on the ciphered letters, only that this
+attempt could not check. A Helka catalogue record for the bilingual 1999 exhibition catalogue was located
+(https://kansalliskirjasto.finna.fi/Record/helka.9935145810306253) as an access lead only, no readable copy
+obtained. `tools/data/catalogue_ladders.tsv` was consulted; this is an edition-content check, not a claim about
+whether BnF fr.4687 itself has images online. Status unchanged: `blocked`.
