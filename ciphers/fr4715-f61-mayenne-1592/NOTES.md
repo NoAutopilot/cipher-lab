@@ -707,9 +707,14 @@ under the H15b cell map with the dash-share null rule, resolved by the blind jud
 
 Grades (rule 4): 0 H, 0 C, 8 S for the cells (controlled: H15b 42/55 vs permuted max 0.400; judge rank 1 of 21 on the
 known lines and 1 of 21 on this run, p = 0.048 each), the same 8 M for the letter chosen within each pair (the judge's
-choice, unchecked), 5 nulls S. A cryptanalytic result. Not a reading of the letter: one run of eight letters. Not
-found in Tomokiyo's `bnf4715.htm#no38`, which marks only the five spans (searched on disk, 27 Sept 2026); nothing here
-is said to be new, first or unpublished (rule 10: the verifier's call).
+choice, unchecked), 5 nulls S. A cryptanalytic result. Not a reading of the letter: one run of eight letters. No
+letters of this run are marked on Tomokiyo's annotated image (`sources/cryptiana/web/img/BnFfr4715f61.png`, the image
+`bnf4715.htm#no38` embeds), which spells out only the five spans but also sets two dashes, and no letters, over the
+last two signs of L10 (CA C6, positions 12-13; correction by VERIFY-F61-FRAG-1, 27 Sept 2026 -- the earlier wording
+said the image "marks only the five spans"); nothing here is said to be new, first or unpublished (rule 10: the
+verifier's call). [Audit 1, 27 Sept 2026, AUDIT.md: cells of positions 6, 7 and 11 downgraded S -> M (5 S, 3 M), letters
+within pairs all M; the judge positive control did not reproduce at its gate on a fresh order and prompt (target tied
+first, 3 vs 3); verdict held, no N-class.]
 
 **Reading-ready line posted for LANE VO3** (campaign brief step 6): the fragment, the two passes, the map, the two judge
 rankings and their controls are all in `scripts/` and this file. Files: `scripts/passU1_classes.tsv` (H16's read
