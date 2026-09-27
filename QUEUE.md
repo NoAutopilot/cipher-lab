@@ -7284,3 +7284,21 @@ no hit at all. KEY-ADJACENT.tsv gains one pool row. `tools/print_check.py`-style
 no.3 glosses: 0 hits (Google Books, be-api fts) -- a search result, not a novelty verdict. See POOL.md's "For
 the parent" section for the two-track recommendation (cryptanalysis sub-pool vs. recovery/transcription
 sub-track) before this is promoted to a campaign.
+
+## BEZ-FOLIO, 27 Sept 2026: colbert155-beziers-1670 folio located
+
+Folio search resolved (see the target's own NOTES.md "The folio search" and `images/manifest.json` for the
+full bisection log). `archivesetmanuscrits.bnf.fr` (corrected search field `TEXTE_LIBRE_INPUT`) surfaced the
+volume's top-level finding-aid notice (`ark:/12148/cc95461x`, "Correspondance de Colbert de janvier-décembre
+1670") but no item-level sub-notice for this letter. Gallica date bisection on the 828-canvas manifest (canvas
+1 cover, canvas 828 December 1670, canvas 414 a memoire dated after 12 Sept 1670) narrowed the target to
+canvas range [2, 414]; the next probe, canvas 208 (exact midpoint), landed directly on the letter's own close:
+cipher numerals, clear closing, signature "P. de Bonzy E. de Béziers", dateline "A Madrid le 13 aoust 1670".
+Canvas 207/folio 133 recto carries the letter's opening cipher line, whose first groups decode via
+`keys/key_colbert_croissy_1668.tsv` to "afin que silent reprise" -- an exact match to the printed crib (grade
+S, confirms the folio, not a reading). Canvas 209/folio 134 recto opens a different, unrelated letter,
+confirming folio 133 verso is this letter's own last leaf. KEY-ADJACENT.tsv row 7 updated in place. The
+letter's own opening salutation (an earlier folio) was not located within this job's cap; not required to
+begin transcription. Requests: gallica.bnf.fr 8 (1 retry after a proxy-side connection reset), 
+archivesetmanuscrits.bnf.fr 3 (the cap). For SOLVE: folder ready for a calibrated reader per NOTES.md's own
+"Next step".
