@@ -1463,7 +1463,13 @@ def ref_hours_ago(hours, root=ROOT, branch='origin/main'):
     import subprocess
     hours = int(math.ceil(hours))  # git's date parser reads '6 hours ago', not '6.0 hours ago'
     def find():
-        out = subprocess.run(['git', '-C', str(root), 'rev-list', '-1', f'--before={hours} hours ago', branch],
+        # 27 Sept 2026: in this environment the remote-tracking refs live under o/ and
+        # refs/remotes/origin/main never exists; after the fetch below FETCH_HEAD carries
+        # the same commit, so fall back to it when the named branch does not resolve.
+        probe = subprocess.run(['git', '-C', str(root), 'rev-parse', '--verify', '-q', branch],
+                               capture_output=True, text=True)
+        ref_name = branch if probe.returncode == 0 else 'FETCH_HEAD'
+        out = subprocess.run(['git', '-C', str(root), 'rev-list', '-1', f'--before={hours} hours ago', ref_name],
                              capture_output=True, text=True, check=True)
         return out.stdout.strip() or None
     ref = find()
