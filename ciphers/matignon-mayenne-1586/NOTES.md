@@ -875,3 +875,85 @@ Requests this section: archivesetmanuscrits.bnf.fr 1; gallica.bnf.fr 1 SRU query
 fetches (thumbnails/native page/canvas probes, >=1.5s apart, browser UA; 1 connection reset on canvas 54,
 1 retry after a pause, succeeded). 2 Sonnet subagents (the two blind passes), no third pass needed (0%
 cipher-classification disagreement, well under the one-tenth trigger). No credentials used.
+
+## MAT-CCE (27 Sept 2026, parent worker MAT-CCE)
+
+Job: `.claude/briefs/runs/2026-09-27-parent-ytbiz-mat-cce.md` (CRYPT-LASRY (d): Lasry's cross-cipher-error
+diagnostic -- check each unkeyed code against every other key attested for the Mayenne/Forget/Matignon/Nevers/
+Villeroy office cluster, code by code, before treating them as unrecoverable). No hosts, disk only. Intake gate
+re-run at 00:44 UTC: `matignon-mayenne-1586: partial (line 1) -- edition/page or full-text-search citation found
+within 6 lines`, exit 0.
+
+**Count correction.** The brief and this file's own import section (above) name 23 unkeyed ("+"/U) codes from
+Bourdeau's original key.json import. `key.tsv` as currently committed carries only **19** grade-U rows (`104,
+15, 19, 23, 27, 33, 36, 44, 46, 49, 53, 54, 62, 68, 79, 88, BOX, hash, star`) -- codes `76, 82, 84, 98` now carry
+value `*` at grade H (2 total occurrences in `reading_tokens.tsv`), resolved to a null/asterisk sign at some
+point after import without this file's prose being updated. `awk` over `reading_tokens.tsv`'s own value column
+confirms: value `?` (this target's rendering of an unkeyed code) totals exactly 1,272 occurrences over 19
+distinct codes, matching every grade-count line already on file in this NOTES.md ("U 1,272" throughout) -- the
+19-code set, not 23, is what those 1,272 tokens actually are. Per CLAUDE.md rule 3 (match the control's N to the
+target's own N), the control below draws **N=19**, not 23.
+
+**U1: the office cluster.** Rule used: every `KEY-OFFICES.tsv` row whose office/correspondents/years place it in
+the French royal secretariat/Catholic League orbit of Mayenne, Nevers or Villeroy, 1592-1611 (Matignon itself has
+no other key on file to compare against). Seven key files, five offices:
+`ciphers/fr2751-dediou-mayenne/key_mayenne_1592-93_polyphonic.tsv` (14 codes, Mayenne/de Diou, 1592-93),
+`ciphers/fr2751-dediou-mayenne/key_mayenne_1593_homophonic.tsv` (44 codes, same office, 1593),
+`ciphers/fr3985-nevers-revol-1593/key.tsv` (361 codes, Nevers/Revol cipher no.60, 1593),
+`ciphers/fr3986-nevers-revol-1593/key.tsv` (77 codes, same cipher no.60, Oct 1593),
+`ciphers/fr3987-nevers-revol-1593/key.tsv` (77 codes, same cipher no.60, Nov 1593),
+`ciphers/fr7129-villeroy-bongars-1604/keys/key_f274.tsv` (36 codes, Villeroy's office, cipher no.2, in use from
+1594) and `ciphers/fr7129-villeroy-bongars-1604/keys/key_f275.tsv` (211 codes, Villeroy's office, Bongars cipher
+no.3, 1604-1611) -- the last two stretch past the 1580-1600 window named in the brief's cluster description but
+are the only Villeroy-office keys on file and the brief names Villeroy explicitly, so kept in, flagged. 819
+pooled cluster (code, value) pairs total. **Normalisation**: codes are compared as literal strings (no visual
+glyph alignment attempted -- none of these keys' source images are re-opened this job); values are split on `|`
+the same way `key.tsv` itself encodes alternates, and classified into `letter` (single a-z), `word` (a small
+fixed list of French function-word values recurring in these tables: nostre, tous, aussi, bien, il, que, qui,
+car, nous, vous, point, pas, ainsi, parceque, lui, plustost, uous, gu), `null` (`null`/`+`/`*`/empty) or `other`
+(everything else -- mostly multi-word nomenclator glosses in `key_f275.tsv`, e.g. "hommes de pied", "Jesuites").
+Several cluster codes are themselves the same kind of ASCII glyph-stand-in tag Bourdeau's own `key.tsv` uses
+(`4+`, `T=`, `S6` in the target vs `+`, `++`, `2+`, `4+`, `8+`, `d+`... in the Nevers no.60 tables) -- these are
+each transcriber's/tool's own naming convention for an unrelated period glyph, not evidence the underlying signs
+are the same; this is exactly the coincidence the control below is built to catch.
+
+**U2: control first (rule 3).** 20 seeds, `random.Random(seed).sample` of N=19 codes drawn without replacement
+from the 68 non-U (keyed) rows of `key.tsv`, values hidden, same code-by-code literal lookup run against the
+seven cluster keys.
+
+| statistic | mean over 20 seeds |
+|---|---|
+| any-lookup-hit rate (code string found in >=1 cluster key) | 0.829 |
+| exact-value recovery (found value matches the true value) | **0.042** |
+| class recovery (found value's class matches the true value's class) | 0.411 |
+| wrong-assignment rate (found value disagrees with truth, wrong class) | 0.571 |
+
+Chance baselines from the pooled cluster keys' own value distribution (819 (code,value) pairs, `letter` 337 /
+`other` 502 / `null` 6 / `word` 31): modal **class** share (`other`) = 0.573 -- class recovery (0.411) sits
+*below* this, i.e. worse than always guessing "other". Modal single **value** share (876 pooled value tokens
+after `|`-splitting; the commonest single letters `s`/`a`/`n` each ~2.5-2.9%) = **0.0285** -- the fairer
+comparator for exact-value recovery, since "exact recovery at chance" (brief's phrasing) means recovering the
+literal value, not the broad class. Observed exact recovery (0.042, ~0.8 of 19 codes/seed) is not distinguishable
+from this 0.0285 baseline: expected hits under the baseline over 380 total draws (20 seeds x 19) is ~10.8,
+observed is ~16, a gap of about 1.6 standard deviations (binomial sigma ~3.2) -- noise, not signal. The 0.571
+wrong-assignment rate means that on the rare occasion a cluster key does carry the literal code string, it is
+usually attached to the wrong meaning, consistent with the codes being independently-chosen ASCII tags rather
+than a shared inherited table.
+
+**Verdict: NO POWER on this cluster.** Exact-value recovery (4.2%) is at chance (2.85%) and class recovery
+(41.1%) is below its own chance baseline (57.3%); the literal-code-string lookup carries no cross-cipher-error
+signal for this office cluster at this N. Per the brief, U3 (the 19-code target lookup written up as
+`mat_cce.tsv` M-grade candidates in HYPOTHESES.md) does not run: a lookup method that cannot recover a known
+value above chance on this cluster's own keys cannot license a candidate value for an unknown one. The 19
+unkeyed codes' literal-string hits against the cluster keys were computed (in scratchpad, not committed) purely
+to confirm the same pattern holds there (a similarly high any-hit rate with no interpretable convergence -- e.g.
+code `53` hits `nu` in the Nevers no.60 table and, separately, `Jesuites` in `key_f275.tsv`, two mutually
+exclusive nomenclator glosses from unrelated offices, the wrong-assignment shape the control predicts) -- not
+reported as candidates.
+
+**Grade counts unchanged:** H 10,074 / S 0 / M 1,648 / U 1,272 (C 0, I 0). `key.tsv` and `exceptions.tsv`
+untouched; `tools/decode_key.py ciphers/matignon-mayenne-1586 --check` not re-run (no key/reading change to
+verify). **Status stays `partial`** (rule 5); the residue stays unkeyed and NEAR.md's "what would settle it" is
+unchanged from the MAT-3974 entry above -- this test retires the Lasry cross-cipher-error lead (CRYPT-LASRY (d))
+the same way MAT-3974 retired the français 3974 f.24 lead: a named, control-backed non-test, not a further open
+question on the same method. No new host requests (disk-only job). No candidates, no "solved"/"new"/"first".
