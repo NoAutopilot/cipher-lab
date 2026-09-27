@@ -1,7 +1,7 @@
 folder	status	blocker	cost_band	near_row	last_touched	next_step	next_step_full_len
 antt-linhares-chave	partial	runnable	M	n	25 Sep	This group was already M, not H, so the brief's downgrade rule does not apply to it; recorded here for the record, not resolved further -- a third count of this specific column, independent of both L…	1675
 antt-msliv0638-brochado-1712	partial	runnable	M	n	26 Sep	Leaf images are on disk (`images/full_PT-TT-MSLIV-0638_m0289/90/91.jpg.jpg`); named here as the concrete next step, same as AX2-BRO4 left it, now with the added caveat that `x` and `f` may have the s…	602
-armstrong-madison-1808	open	runnable	S	n	26 Sep	A second, unrelated passage on the same page: "successor as minister to France, General John Armstrong, wrote 40 letters in code to James Madison beginning in late 1804..." -- this is Weber's general…	1487
+armstrong-madison-1808	open	runnable	S	n	27 Sep	A second, unrelated passage on the same page: "successor as minister to France, General John Armstrong, wrote 40 letters in code to James Madison beginning in late 1804..." -- this is Weber's general…	1487
 arsenal-dallion-lanmary-1744	blocked	needs-edition	M	n		a Recueil des instructions volume for Sweden, was not run -- budget-limited, flagged as the next step for whoever returns to this row).	1916
 arsenal-ms6829-1708	blocked	needs-triage	?	n			0
 arsenal6314-hanau-1635	blocked	needs-triage	?	n			0
@@ -72,7 +72,7 @@ fr3989-nevers-revol-1594	blocked	runnable	M	n		Next: LANE R5 G builds a no.60 si
 fr3990-nevers-henri4-1594	blocked	runnable	M	n		Next: LANE R5 G builds a no.60 sign atlas from the interlined leaves of the same copyist (fr.3985 f.126-130, fr.3986 f.151/152) and re-runs F1's leaves; if that passes 80%, this letter follows.	351
 fr3993-villeroy-1595	open	needs-triage	?	n	24 Sep		0
 fr4687-paleologue-nevers	blocked	runnable	S	n	25 Sep	Suggested follow-ups: that block; a nomenclator-aware solver (units allowed to stand for syllables or words); crib tests anchored on `suofratel` with 6 restarts and a matched control whose true crib…	395
-fr4715-f61-mayenne-1592	partial	runnable	M	n		**Next step:** calibrate `keys/key_mayenne_1592.tsv` against the known cipher-symbol/plaintext-word pairings Tomokiyo's own interlinear markup already gives on this same leaf (five spans, "What Tomok…	912
+fr4715-f61-mayenne-1592	partial	runnable	M	n	27 Sep	**Next step:** calibrate `keys/key_mayenne_1592.tsv` against the known cipher-symbol/plaintext-word pairings Tomokiyo's own interlinear markup already gives on this same leaf (five spans, "What Tomok…	912
 fr4715-montholon-1589	open	needs-person	S	n	27 Sep	**Next step.** A fail keeps the BnF-capture route first (ASKS 79, a new capture of f.81r).	422
 fr5160-letellier-1653	open	runnable	S	n		**Follow-up, not attempted here (stop when the brief is met):** if a later worker wants to close the "no cipher in item 2" question more firmly than a 9-canvas sample, the remaining ~135 canvases of…	310
 fr5761-election-1519	open	runnable	M	n		This needs f105-f109 atlas-coded before it can be answered for the document as a whole -- flagged as the next step for a worker extending the atlas past f104/f110, not concluded here either way.	1350
