@@ -1,4 +1,10 @@
-open
+found-solved
+
+BEZ-READ, 27 Sept 2026: found-solved -- DECODE (de-crypt.org) record 2704, read in full at
+de-crypt.org/decrypt-web/RecordsView/2704 (folio 132-133), status Decrypted, exact shelfmark/sender/
+place/date/cipher-type match to this letter, live-verified with no login. See "BEZ-READ: found-solved
+on the outstanding check-solved step" below. No transcription or decode attempted; U1-U5 of the job
+brief not run.
 
 INTAKE-SAVOY unit B, 27 Sept 2026: solver-ready intake only (Layout, no reading, no decoding, no class), on
 the `ciphers/fr4715-montholon-1589` / `ciphers/nevers-birago-fr3251-1572` pattern. Built from KEY-ADJACENT.tsv
@@ -112,7 +118,7 @@ question, not confirmed by this transcription, and watch for signs the actual ci
 high residue of unmatched groups, in the AX-5799/CLAUDE.md rule 3 control-tests-the-manipulation sense) before
 trusting a low match rate as evidence of transcription error rather than a wrong-key hypothesis.
 
-## Next step
+## Next step (superseded by the found-solved verdict below)
 
 One careful reader with the key in view, calibrated on the three-word printed opening (`known_plaintext.txt`);
 given the very short crib and the sender/place outlier above, the calibration is weak on its own -- a
@@ -123,3 +129,73 @@ letter/syllable/word design at all before committing to a full decode. Folio loc
 fetch native-resolution crops of these two canvases directly and begin transcription; the letter's opening
 salutation (an earlier folio, not yet located) is not required to start, since the crib's own cipher passage
 is on folio 133r-133v.
+
+This step was never run: BEZ-READ's own U0 (the outstanding check-solved step named above) found a
+found-solved hit before any crop was fetched. See below.
+
+## BEZ-READ: found-solved on the outstanding check-solved step, 27 Sept 2026
+
+Per this session's brief (`.claude/briefs/runs/2026-09-27-parent-ytbiz-bez-read.md`), U0 was a grep of fresh
+shallow clones of `github.com/dbourdeau/cyphersolver` and `github.com/aaymeloglu/unsolved-ciphers` for
+"Beziers", "Bezier", "Bonzy", "Colbert 155", "btv1b100340323", to run before any transcription; a hit is a
+found-solved stop.
+
+**dbourdeau/cyphersolver** (commit at clone time, 27 Sept 2026): `targets/colbert/arks.txt` lists
+`btv1b100340323` (row "155") among a plain enumeration of Colbert-volume Gallica arks, with no accompanying
+text about the Beziers letter, Bonzy, or a reading; `targets/colbert/NOTES.md` has no mention of "Beziers",
+"Bonzy" or foliation 132/133 anywhere. Not a hit -- this repository's Colbert work does not touch this letter.
+
+**aaymeloglu/unsolved-ciphers**: `catalogue/decode-catalog.csv` (a scrape of DECODE's own RecordsList, no
+date recorded in the repo for when it was pulled) row id 2704:
+
+> `2704,"Paris ,Bibliothèque nationale de France, Melanges de Colbert 155, f.132-133 BnF_Mel155_f132","1670
+> -","l&lsquot;Evesque de Beziers Spain Madrid","Cleartext: French Plaintext: French",Cipher,**Decrypted**,2,
+> https://de-crypt.org/decrypt-web/RecordsView/2704`
+
+This is an exact match on shelfmark (Melanges de Colbert 155, f.132-133 -- f.132 is this letter's continuing
+clear-text narrative into f.133r/133v where BEZ-FOLIO located the cipher passage), sender ("l'Evesque de
+Beziers"), place (Madrid), and date (1670), with `status=Decrypted`.
+
+**Live verification, 27 Sept 2026 (this session, no login):** `curl -A "cipher-lab research script (contact
+via repository)" https://de-crypt.org/decrypt-web/RecordsView/2704` returns HTTP 200 (the RecordsView metadata
+page itself is public, unlike its Documents/Images sub-pages -- a route not previously recorded in CLAUDE.md's
+DECODE row, worth adding). Full page content, verbatim:
+
+> ID: 2704; Name: BnF_Mel155_f132; Country: France; City: Paris; City: Bibliothèque nationale de France,
+> Melanges de Colbert 155, f.132-133; Dates: - ; Author: l'Evesque de Beziers; Sender: (blank); Receiver: Jean
+> Baptiste Colbert?; Region: Spain; City: Madrid; Type: Cipher; **Status: Decrypted**; Cipher Type: Homophonic
+> substitution, Nomenclatures; Symbol Sets: Graphic signs, Numerical; Pages: 2; Owner: 83; Creator: 83;
+> Creation Date: 2021-04-23 00:00:00; Access mode: Authentication required.
+
+The record's own "Cipher Type" field ("Homophonic substitution, Nomenclatures") matches this target's key
+design exactly (mixed letter/syllable/word nomenclator, per "What's on disk" above) -- a second independent
+confirmation this is the same cipher, not a coincidental shelfmark match. Creation date 2021-04-23 predates
+every session in this repository; this is a prior decipherment by the DECODE project, not ours.
+`DocumentsList?showmaster=records&fk_id=2704` (the actual decrypted text/documents) returned HTTP 302 (login
+required), consistent with the access playbook's DECODE row ("full-size images and non-image documents are
+account-wide blocked even when logged in, confirmed from the owner's own browser session") -- not pursued
+further; the record's own `Status: Decrypted` field, cross-confirmed by cipher-type match, is sufficient for a
+found-solved verdict without viewing the plaintext itself.
+
+**Verdict: found-solved.** This letter already carries a period/modern decipherment recorded on DECODE
+(de-crypt.org), record 2704, predating this repository's work by about 5.5 years. No transcription or decode
+was attempted this session (U1-U5 of the brief not run, per the brief's own "a hit is a found-solved stop").
+Credit: DECODE (de-crypt.org) record 2704, decrypted status set by DECODE account/user id 83 (name not shown
+on the public metadata page), creation date 2021-04-23. Key source for AUDIT.md purposes if this target is
+ever revisited: `published` (someone else's key/reading, credited) or possibly `ours`-adjacent only in the
+narrow sense that this session's own key transcription and folio location independently corroborate DECODE's
+cipher-type field and shelfmark -- neither of those establishes the actual plaintext, which this session never
+saw. Rule 10 wording: this session found a prior decipherment recorded elsewhere; it does not confirm, dispute
+or reproduce that decipherment's content, and no novelty class is claimed or claimable for it.
+
+**If the plaintext itself is later wanted:** DECODE's own account (`DECODE_USER`/`DECODE_PASS`) is confirmed
+logged-in-capable (24 Sept 2026 resolution) but the access playbook's DECODE row states full-size
+images/documents are account-wide blocked even logged in, so a login attempt here would not be expected to
+retrieve record 2704's actual text; the live route to the plaintext, if any, is the owner's own DECODE account
+permissions (an ASKS.md-style question, not a repeatable script) or contacting the DECODE project directly.
+Not filed as an ASKS.md row this session since no further repo work is blocked on it -- the target's status is
+already correctly set to `found-solved` without needing the plaintext in hand.
+
+Requests this session: gallica.bnf.fr 0 (stopped before U1, no crops fetched); de-crypt.org 2
+(RecordsView/2704, DocumentsList/2704, 1.5s apart, descriptive UA, no login attempted); GitHub 2 (shallow
+clones of both solver repositories, depth 1).

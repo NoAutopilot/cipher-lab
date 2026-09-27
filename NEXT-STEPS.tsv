@@ -31,7 +31,6 @@ clairambault1225-paget-1714	partial	runnable	S	n	25 Sep	Next step for a future w
 clairambault296-paget-1713	open	runnable	S	n		Row set `done 2026-09-27` as an exhausted attempt at the current instruction's scope; a follow-up row would need to name canvases 28 and 36 explicitly to get them read.
 clairambault528-bouillon-1713	blocked	needs-edition	S	n		edition) were not full-text searched -- budget-limited, flagged as the next step.
 clerville-francia-1648	open	runnable	S	n		
-colbert155-beziers-1670	open	runnable	S	n	27 Sep	## Next step
 colbert26-lathuillerie-1644	open	runnable	S	n	25 Sep	### Not done this job (successor's queue, cheapest/highest-value first)
 courten-diary	open	runnable	S	n	25 Sep	api.archives-ouvertes.fr 8 (4 combined-query 0-hit attempts, 4 narrower follow-ups).
 cylob-c1995	open	runnable	S	n	25 Sep	
@@ -183,4 +182,4 @@ wvo-hessen-1564	open	runnable	M	n	26 Sep	**Next step for a successor, not pursue
 yogtze-1984	open	runnable	S	n	25 Sep	
 zbz-busbecq-1587	open	runnable	S	n		
 zeschau-seebach-1841	blocked	runnable	M	n	26 Sep	## Next step (not run this pass)
-# 184 rows -- needs-edition=2 needs-image=8 needs-person=3 runnable=171
+# 183 rows -- needs-edition=2 needs-image=8 needs-person=3 runnable=170

@@ -7302,3 +7302,20 @@ letter's own opening salutation (an earlier folio) was not located within this j
 begin transcription. Requests: gallica.bnf.fr 8 (1 retry after a proxy-side connection reset), 
 archivesetmanuscrits.bnf.fr 3 (the cap). For SOLVE: folder ready for a calibrated reader per NOTES.md's own
 "Next step".
+
+## BEZ-READ, 27 Sept 2026: colbert155-beziers-1670 found-solved on U0
+
+Per the brief's own U0 (solver-repo grep before any transcription), a hit turned up before any crop was
+fetched: `aaymeloglu/unsolved-ciphers`'s `catalogue/decode-catalog.csv` (a scrape of DECODE's RecordsList)
+carries row id 2704 for this exact letter (shelfmark Melanges de Colbert 155 f.132-133, sender "l'Evesque de
+Beziers", place Madrid, date 1670) with `status=Decrypted`. Live-verified this session with no login:
+`https://de-crypt.org/decrypt-web/RecordsView/2704` (public metadata, HTTP 200) confirms Status: Decrypted,
+Cipher Type: Homophonic substitution, Nomenclatures (matching this target's own key design exactly), Creation
+Date 2021-04-23 (predates this repository). `DocumentsList` for the record is login-gated (HTTP 302) and, per
+the access playbook's DECODE row, blocked account-wide even when logged in, so the plaintext itself was not
+retrieved this session -- the found-solved verdict rests on the record's own status/cipher-type fields, not on
+viewing the decoded text. No transcription, crops or decode attempted (U1-U5 of the brief not run).
+`dbourdeau/cyphersolver` has no matching hit (its `targets/colbert/arks.txt` lists this ark only as a bare
+Gallica-volume enumeration, no text about this letter). KEY-ADJACENT.tsv row 7 and the target's NOTES.md
+("BEZ-READ: found-solved on the outstanding check-solved step") updated in place; status.json is the parent's.
+Requests: de-crypt.org 2 (no login), GitHub 2 (shallow clones, depth 1), gallica.bnf.fr 0.
