@@ -1,0 +1,13 @@
+id	code	marks	conf	note
+c001	g		M	small loop at top curling into a hooked tail down-left, 9/g-like; alt candidate y (looped tail) not excluded
+c002	wd		M	vertical stem joined to an open loop below, tail hooks upward at right, omega+stem shape
+c003	v		H	curved hook with small loop at upper-left, low arc sweeping right, matches v cleanly
+c004	v		M	similar curved v-hook shape to c003; a dot sits just outside the box upper-right, likely belongs to the neighbouring glyph rather than a mark on this sign, so left unmarked
+c005	L		M	two close vertical strokes, left one short with a small hook (interior digit-like mark), right one a tall plain stem; alt candidate bh not excluded, hook position differs from bh's usual upper-right loop
+c006	e	+	M	single bowl/loop with a crossing plus-shaped mark just above-right of the loop, matches e's usual "+/# above" pattern; alt candidate dl (loop+tail, no separate mark) considered less likely because of the distinct crossing stroke
+c007	e	+	M	bowl loop with a cross mark above-right, same pattern as c006
+c008	]		H	rounded bracket open to the left, clean match to ]
+c009	phi		M	small circle joined by a stroke to a diagonally-crossed continuation on the right, resembles a slashed-o on a stem; alt candidate nt (n+) considered but the round component looks more circular than n-shaped
+c010	tee		H	vertical stroke with a horizontal bar to the right, right-angle-bracket shape, clean match
+c011	f		H	long f shape with crossbar and small hook at top, clean match
+c012	f		H	long f shape with crossbar, same as c011

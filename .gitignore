@@ -17,3 +17,7 @@ ciphers/fr2933-salviati-1525/images/*_ref1600.jpg
 ciphers/fr2933-salviati-1525/images/*_ref2400.jpg
 ciphers/fr2933-salviati-1525/images/src_ark_*.jpg
 ciphers/fr2933-salviati-1525/plain_crops/*/*.png
+# LANE SALV2 job 1 (27 Sept 2026): per-box crops for the blind code+mark passes are regenerable from
+# crop_plain_leaf.py --boxes (same rule as plain_crops above); the _key.tsv id->(leaf,line,pos) maps
+# and the raw subagent TSVs beside them are small text and stay tracked.
+ciphers/fr2933-salviati-1525/split2_crops/*/*.png

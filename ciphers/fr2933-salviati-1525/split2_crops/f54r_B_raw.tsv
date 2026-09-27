@@ -1,0 +1,13 @@
+id	code	marks	conf	note
+c001	bh		M	tall vertical stem with small hooked loop curling at upper right, short lead-in stroke from left, no crossbar visible
+c002	v		H	curved v-shape with hooked/looped left arm at base, rising right stroke
+c003	tee		H	vertical stroke with a horizontal bar projecting right partway up, right-angle-bracket shape
+c004	phi		M	ring/bowl at base with a long curving stem rising and crossed by a short tick partway up, slashed-o-on-stem shape
+c005	f		H	long f with crossbar near top, curling descender tail, no mark directly above the sign itself
+c006	phi		M	small open ring immediately joined to a short stem ending in a crossing tick, slashed-o shape
+c007	v		M	curved v-shape with hooked left arm; two dots sit at/just outside the box's upper-right corner, ambiguous whether they belong to this sign or the neighbor, so left unmarked
+c008	f		H	long f with crossbar, matches c005's shape closely
+c009	dl		M	looped/curled base (delta) with a long wavy tail extending right, tail crossed by a short vertical tick near its end
+c010	]		H	square-bracket/backward-C shape open to the left, closed rounded corner at top and bottom
+c011	eps	7	M	stacked open-bowl (epsilon, "3"-like) shape with a distinct 7-shaped stroke sitting above it
+c012	dl		M	curled loop at left flowing into a long wavy horizontal tail to the right, no crossing tick
