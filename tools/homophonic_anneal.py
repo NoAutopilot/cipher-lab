@@ -8,6 +8,7 @@
           [--backoff]     interpolated absolute-discount n-gram of --order with recursive backoff: see BackoffModel
                           (LANE R7 CM3, 25 Sept 2026); lets --order 4 or 5 run on a 2 MB corpus without add-k sparsity
   python3 tools/homophonic_anneal.py --control PLAIN.txt --signs K --length N --corpus ... (matched control)
+  python3 tools/homophonic_anneal.py --control PLAIN.txt --profile CIPHER.tsv --corpus ... (exact-profile control)
 
 CIPHER.tsv: long format, header with a `sign` column (and optional `line`); rows whose sign is in --skip are
 dropped. Every distinct sign is mapped to one plaintext letter a-z (u/v, i/j merged; umlauts folded). Score =
@@ -19,6 +20,17 @@ folding, word spaces removed) + a unigram term keeping the letter distribution n
 signs, homophones allotted to letters by corpus frequency, each occurrence picking a homophone at random;
 then solves it blind with the same settings and prints the share of letters recovered. This is rule 3's
 matched control: run it with the target's own N and K before reporting any negative on the target.
+
+--profile CIPHER.tsv (control mode; campaign espagnol142-mercy-1648 H1, 27 Sept 2026): a stricter control
+whose sign occurrence multiset equals CIPHER.tsv's *exactly* (the target's own K counts, e.g. 57/42/41/.../1),
+not corpus letter frequency allotted to homophone group sizes. N and K come from the profile (--signs/--length
+are ignored). make_profile_control searches PLAIN.txt (seeded random window starts) for an N-letter window whose
+letter counts can be partitioned exactly by the profile counts (largest counts first, backtracking with a node
+cap), assigns each partition part to its letter as one sign, and enciphers each occurrence by a homophone drawn
+in proportion to that sign's remaining quota, so every sign ends at exactly its profile count. The JSON out
+carries `profile`, `window_start`, `profile_counts` and `sign_counts` (equal by construction). Answers the
+question Y8 left open: does the target still beat a control that shares its whole symbol profile, or was the
+gap carried by the skewed profile alone.
 
 Test: python3 tools/tests/test_homophonic_anneal.py
 """
@@ -346,6 +358,83 @@ def make_control(plain_text, K, N, model, seed):
     return seq, p, truth
 
 
+def load_profile(path, skip):
+    """Sign occurrence counts of a long-format CIPHER.tsv (same reading rules as target mode)."""
+    rows = [l.rstrip("\n").split("\t") for l in open(path, encoding="utf-8") if l.strip() and not l.startswith("#")]
+    si = rows[0].index("sign")
+    seq = [r[si].rstrip("?") for r in rows[1:] if r[si].rstrip("?") not in skip]
+    return sorted(Counter(seq).values(), reverse=True)
+
+
+def partition_exact(counts, needs, node_cap=200000):
+    """Assign every part of `counts` (desc) to a letter so each letter's parts sum to needs[letter] exactly.
+    Returns {index_in_counts: letter} or None. Backtracking, largest part first, letters by remaining need."""
+    letters = list(needs)
+    rem = dict(needs)
+    assign = {}
+    nodes = [0]
+
+    def rec(i):
+        nodes[0] += 1
+        if nodes[0] > node_cap:
+            return False
+        if i == len(counts):
+            return all(v == 0 for v in rem.values())
+        c = counts[i]
+        # a letter whose remaining need is positive but smaller than every remaining part can never be filled
+        smallest_left = counts[-1]
+        if any(0 < v < smallest_left for v in rem.values()):
+            return False
+        tried = set()
+        for a in sorted(letters, key=lambda a: -rem[a]):
+            if rem[a] < c or rem[a] in tried:
+                continue
+            tried.add(rem[a])
+            rem[a] -= c
+            assign[i] = a
+            if rec(i + 1):
+                return True
+            rem[a] += c
+            del assign[i]
+        return False
+
+    return dict(assign) if rec(0) else None
+
+
+def make_profile_control(plain_text, profile_counts, seed, tries=5000):
+    """Exact-profile control: a window of PLAIN.txt enciphered so the sign counts equal profile_counts exactly."""
+    rng = random.Random(seed + 1000)
+    p_all = fold(plain_text)
+    N, K = sum(profile_counts), len(profile_counts)
+    if len(p_all) < N:
+        raise SystemExit(f"--control text has {len(p_all)} letters, profile needs {N}")
+    for _ in range(tries):
+        start = rng.randrange(0, len(p_all) - N + 1)
+        p = p_all[start:start + N]
+        needs = dict(Counter(p))
+        if len(needs) > K:
+            continue
+        assign = partition_exact(profile_counts, needs)
+        if assign is None:
+            continue
+        homs = {a: [] for a in needs}
+        quota = {}
+        for i, a in assign.items():
+            s = f"s{i}"
+            homs[a].append(s)
+            quota[s] = profile_counts[i]
+        seq = []
+        for a in p:
+            ss = homs[a]
+            s = rng.choices(ss, weights=[quota[x] for x in ss])[0]
+            quota[s] -= 1
+            seq.append(s)
+        assert all(v == 0 for v in quota.values())
+        truth = {s: a for a, ss in homs.items() for s in ss}
+        return seq, p, truth, start
+    raise SystemExit(f"no {N}-letter window of the control text admits an exact partition by the profile after {tries} tries")
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("cipher", nargs="?")
@@ -360,6 +449,8 @@ def main():
     ap.add_argument("--w-as-uu", action="store_true", help="fold w to uu in corpus and control (ciphers writing w as a doubled u sign)")
     ap.add_argument("--control")
     ap.add_argument("--signs", type=int)
+    ap.add_argument("--profile", help="control mode: replicate this CIPHER.tsv's sign occurrence multiset exactly "
+                    "(N and K taken from it; --signs/--length ignored)")
     ap.add_argument("--length", type=int)
     ap.add_argument("--noise", type=float, default=0.0,
                     help="error-tolerant solve (anneal_noisy): share of positions assumed misread; the result names "
@@ -387,7 +478,14 @@ def main():
     if a.robust:
         model = RobustModel(model, a.robust)
     if a.control:
-        seq, p, truth = make_control(open(a.control, encoding="utf-8").read(), a.signs, a.length, model, a.seed)
+        extra = {}
+        if a.profile:
+            prof = load_profile(a.profile, set(a.skip.split(",")))
+            seq, p, truth, start = make_profile_control(open(a.control, encoding="utf-8").read(), prof, a.seed)
+            extra = {"profile": a.profile, "window_start": start, "profile_counts": prof,
+                     "sign_counts": sorted(Counter(seq).values(), reverse=True)}
+        else:
+            seq, p, truth = make_control(open(a.control, encoding="utf-8").read(), a.signs, a.length, model, a.seed)
         fixed = {seq[i]: truth[seq[i]] for i in range(a.fix_first)}
         res = solve(seq, model, a.restarts, a.iters, a.seed, a.uni_weight, fixed, noise=a.noise)
         sc, key = res[0][:2]
@@ -396,8 +494,10 @@ def main():
         ok = sum(1 for x, y in zip(dec, p) if x == y)
         out = {"mode": "control", "N": len(seq), "K": len(set(seq)), "letters_correct": ok,
                "share": round(ok / len(p), 3), "score": sc, "plain": p, "decoded": dec,
-               "restart_scores": [round(r[0], 1) for r in res], **({"noise": a.noise, "free": len(free)} if a.noise else {})}
-        print(f"control N={len(seq)} K={len(set(seq))}: {ok}/{len(p)} letters = {ok/len(p):.1%}")
+               "restart_scores": [round(r[0], 1) for r in res], **extra,
+               **({"noise": a.noise, "free": len(free)} if a.noise else {})}
+        print(f"control N={len(seq)} K={len(set(seq))}: {ok}/{len(p)} letters = {ok/len(p):.1%}; score {sc:.1f}"
+              + (f"; exact profile, window start {extra['window_start']}" if a.profile else ""))
         print(dec[:200])
     else:
         rows = [l.rstrip("\n").split("\t") for l in open(a.cipher, encoding="utf-8") if l.strip() and not l.startswith("#")]

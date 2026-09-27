@@ -26,3 +26,10 @@ rm -rf "$tmp"
 # LANE R7 MSHUF (25 Sept 2026): shuffle control -- is the target-vs-control gap sequence or profile?
 # python3 ciphers/espagnol142-mercy-1648/cheap_test_1/shuffle_control.py ciphers/espagnol142-mercy-1648/cipher_codes.tsv --seed 1 --out /tmp/shuffled_s1.tsv && python3 tools/homophonic_anneal.py /tmp/shuffled_s1.tsv --corpus donquijote.txt --corpus buscon.txt --skip NONE --seed 1 --restarts 8 --iters 40000
 # Result: full-shuffle mean -1488.5, line-shuffle mean -1484.4, both below the matched-control band (-1321.7..-1356.6) -- verdict: sequence. See ../shuffle_control.md.
+
+# Campaign step H1 (27 Sept 2026, account-2 runner): exact-frequency-profile control (Y8's flagged next step).
+# Same corpora decompressed as above ($tmp/donquijote.txt, $tmp/buscon.txt); Cartas t.13 = zcat tools/data/es17c7/memorialhistri13realuoft.txt.gz.
+# for s in 1 2 3 4 5; do python3 tools/homophonic_anneal.py --control "$tmp/donquijote.txt" --profile ciphers/espagnol142-mercy-1648/cipher_codes.tsv --skip NONE --corpus "$tmp/donquijote.txt" --corpus "$tmp/buscon.txt" --seed $s --restarts 8 --iters 40000 --out cheap_test_1/exactprof_k38_seed$s.json; done
+# for s in 1 2 3 4 5; do python3 tools/homophonic_anneal.py --control "$tmp/cartas13.txt" --profile ciphers/espagnol142-mercy-1648/cipher_codes.tsv --skip NONE --corpus "$tmp/donquijote.txt" --corpus "$tmp/buscon.txt" --seed $s --restarts 8 --iters 40000 --out cheap_test_1/exactprof_k38_oos_cartas13_seed$s.json; done
+# Corrupted variants: python3 cheap_test_1/exactprof_noisy.py --control "$tmp/cartas13.txt" --profile cipher_codes.tsv --seed $s --noise 0.05 --out cheap_test_1/noisy/exactprof_cartas13_n0.05_seed$s.tsv, then anneal that TSV in target mode with the same settings.
+# Expect (es17 model): in-sample DQ windows -1064..-1110 (93-99% read); out-of-sample Cartas windows -1088..-1228 (mean -1140, 91-98%); 5% corrupted mean about -1205..-1213; target -1154.3 sits inside the clean out-of-sample band. See NOTES.md "Campaign step H1".

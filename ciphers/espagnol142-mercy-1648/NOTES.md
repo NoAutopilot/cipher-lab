@@ -1103,3 +1103,83 @@ since 25-26 Sept 2026.
 - Run the homogeneity split (correspondent/date range within a tomo) `es17c7/README.md` names as the next cheap step, before trusting a further judge FAIL/PASS. M.
 - Flag for the parent: NEAR.md's own next-step line ("DECODE R958-R965... waits on the DECODE role upgrade, ASKS 1") is stale -- all 8 were read login-free this pass with no role upgrade needed, per this NOTES.md's own MERCY-DECODE section. S (a correction, not a reading change).
 - Re-run the M2 crib-loop gain-gate test (rule 3) through es17c7 instead of the original es17, now that es17c7 is the better-calibrated corpus, to see whether the numeric gain-gate result changes. M.
+
+## Campaign step H1 (2026-09-27 22:12-22:2x UTC, campaign runner account 2, session_01V7xEY9JxjCxiXnQLtjFnfL)
+
+**Status unchanged: partial.** CAMPAIGN.md H1: the exact-frequency-profile control Y8 flagged on 25 Sept 2026 and
+never ran (its scratch attempt produced K=307-320 instead of 38). Question: does the target's anneal score
+(-1154.3, es17 model, K=38, N=521, `cheap_test_1/rerun.sh`) still beat a real Spanish text enciphered with the
+target's *own* 38-code occurrence multiset (57/42/41/39/38/27/.../2/1/1/1/1/1), or was the 167-181-point gap over
+Y8's frequency-allotted control carried by the skewed profile alone? Pre-registered pass (CAMPAIGN.md): target
+beats the stricter control by more than 2x the control's own inter-seed spread.
+
+**Tool.** `tools/homophonic_anneal.py --control PLAIN.txt --profile CIPHER.tsv` (new option, this step; offline test
+`tools/tests/test_homophonic_anneal_profile.py`): reads the profile cipher's sign counts, searches PLAIN.txt (seeded
+random window starts) for an N-letter window whose letter counts partition exactly by those counts (backtracking,
+largest counts first), assigns each count to its letter as one sign, enciphers each occurrence by a homophone drawn
+in proportion to remaining quota, so every sign ends at exactly its profile count (asserted; `sign_counts ==
+profile_counts` in every JSON below). Same solver settings as Y8 throughout: order 3, 8 restarts x 40,000 iters,
+`--skip NONE`. Profile taken from `cipher_codes.tsv` as annealed in Y8 (N=521, K=38) -- note that file is one token
+behind `ciphertext.tsv` (522 code tokens after MREV's v07 split); like-for-like with -1154.3 needs the 521 version,
+and regenerating it is H3's business.
+
+**Results (best score of 8 restarts per run; share = letters of the control plaintext recovered blind).**
+
+| model | run | seeds | best scores | mean | share |
+|---|---|---|---|---|---|
+| es17 (Y8's) | target (on file, Y8) | 2,3,5 | -1154.3 | -1154.3 | -- |
+| es17 | Y8 freq-allotted control (on file) | 1-5 | -1321.7..-1356.6 | -1336.2 | 36-81% |
+| es17 | R7-MSHUF full shuffle (on file) | 1-5 | -1474.3..-1505.6 | -1488.5 | -- |
+| es17 | **exact-profile control, Don Quijote window (in-sample)** | 1-5 | -1063.8, -1071.3, -1099.5, -1109.7, -1078.0 | **-1084.4** | 93-99% |
+| es17 | **exact-profile control, Cartas t.13 window (out-of-sample)** | 1-5 | -1159.6, -1088.2, -1106.3, -1227.8, -1119.8 | **-1140.4** | 91-98% |
+| es17 | exact-profile control, Cartas window, 5% signs corrupted | 1-3 | -1279.5, -1157.2, -1173.7 | -1203.5 | 77-93% |
+| es17 | exact-profile control, DQ window, 5% signs corrupted | 1-3 | -1146.7, -1200.4, -1291.6 | -1212.9 | 30-92% |
+| es17 | exact-profile control, Cartas window, 10% corrupted | 1-3 | -1330.9, -1282.5, -1245.1 | -1286.2 | 50-81% |
+| es17 | exact-profile control, DQ window, 10% corrupted | 1-3 | -1235.4, -1200.3, -1298.0 | -1244.6 | 63-88% |
+| es17c7 (MERCY-JUDGE2's) | target | 2,3,5 | -1138.5 x3 (same optimum every seed) | -1138.5 | -- |
+| es17c7 | exact-profile control, DQ window (out-of-sample) | 1-5 | -1139.2, -1094.6, -1168.0, -1137.0, -1221.4 | -1152.0 | 82-98% |
+| es17c7 | exact-profile control, Cartas t.13 window (in-sample) | 1-3 | -1300.7 (anneal stuck, 25%), -1064.8, -1095.1 | -1153.5 | 25-98% |
+
+Files: `cheap_test_1/exactprof_k38_seed{1..5}.json`, `exactprof_k38_oos_cartas13_seed{1..5}.json`,
+`target_marks_es17c7_seed{2,3,5}.json`, `exactprof_k38_es17c7_oos_dq_seed{1..5}.json`,
+`exactprof_k38_es17c7_ins_cartas13_seed{1..3}.json`, `noisy/exactprof_{cartas13,dq}_n{0.05,0.10}_seed{1..3}.{tsv,json}`
+(the noisy TSVs carry a `.plain` sidecar with the window's true text); `cheap_test_1/exactprof_noisy.py` builds the
+corrupted controls (a corrupted position takes a sign drawn from the profile's own distribution); commands appended
+to `cheap_test_1/rerun.sh`. Corpora decompressed to scratch, never committed.
+
+**Verdict on H1's gate: not met.** The target does not beat the exact-profile control at all: under es17 it sits
+14 points *below* the out-of-sample control mean (-1154.3 vs -1140.4) and inside that band (-1227.8..-1088.2), 70
+points below the in-sample mean; under es17c7 it sits 13 points *above* the out-of-sample mean (-1138.5 vs -1152.0),
+again inside the band. Y8's 167-181-point gap over the frequency-allotted control was carried by the profile: a
+real Spanish text enciphered with this skewed multiset (frequent letters nearly monoalphabetic) anneals 200-250
+points better than one with homophones allotted by frequency, and reads 91-99% blind. Y8's sentence "more
+decryptable toward Spanish than a real Spanish text of the same shape typically is" is therefore withdrawn -- the
+correct comparison shape is this one, and on it the target is indistinguishable from a real text. R7-MSHUF's
+finding stands unchanged (shuffled target -1488 is far below every control here: the target's order carries real
+structure).
+
+**What the error bracket adds (rule 3, the SALV-DIAG paragraph).** The target's transcription carries a measured
+4.7% two-pass disagreement (Y6) and 5% blind-recheck disagreement (R7-MEYE). Clean exact-profile controls
+out-of-sample average -1140 and read 91-98%; at 5% corrupted signs they average -1204..-1213 and read 77-93%
+(one stuck run at 30%); at 10% they average -1245..-1286 and read 50-88%. The target's -1154.3, reproduced at the
+same optimum by most seeds, lies between the clean band and the 5% band, nearer the clean one. So, *if* the design
+is a flat homophonic substitution as assumed, the anneal behaves as it does on a real Spanish text with about 0-5%
+misread signs -- consistent with the transcription's own measured error and with a decode that is mostly right but
+not judge-clean (the controls at this score read 85-98% of letters; a decode at that level of a text full of proper
+names would FAIL the judge the way `reading.txt` does). This is a calibration statement about the solver, not a
+grade for any token of `reading.txt` (grades unchanged: S 496, M 26, H 0, C 0 of 522).
+
+**Solver reliability note.** Even on clean in-sample text, one seed in 13 sticks in a bad optimum (es17c7 Cartas
+seed 1: -1300.7, 25% read, with the other restarts no better); 8 restarts are not always enough at N=521, K=38.
+A control mean quoted from 3 seeds can hide this; the tables above give every seed.
+
+**Consequences for the ranking.** The two highest-leverage steps are now the transcription re-checks (H2's targeted
+rare-code/stretch re-crop, H6's blind second pass on r16-r17 and v04): the bracket says every percent of misread
+sign costs about 12-15 anneal points and 2-3% of letters, and the unread stretches are where the reading fails.
+New H9: run the target with `--noise 0.05` (the error-tolerant solve, which names the positions it corrects) and
+hand H2 that list of positions to eye-check first. H3 (re-run with the 29 held codes on the 522-token file) also
+regenerates `cipher_codes.tsv` from the current `ciphertext.tsv`. H4/H5 move down: the judge corpus is not what
+limits this target now, and the word-code question is subsumed by H2's eye-check of the same five codes.
+
+Requests: none (disk only, no hosts). Subagents: none. Cost: est 3 USD (session cost not readable from inside
+the runner; the orchestrator's `get_session` figure is the one of record).
