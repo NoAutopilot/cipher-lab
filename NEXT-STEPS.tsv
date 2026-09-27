@@ -52,7 +52,7 @@ fair-game-2010	open	runnable	S	n	25 Sep
 florence-dieci-responsive	blocked	runnable	S	n		## Next steps (not done here, budget/window)
 fr15564-mercoeur-1586	blocked	runnable	S	n		
 fr16092-maisse-1582	blocked	runnable	S	n	25 Sep	**Snippets cannot fully answer the row's question**, per the row's own instruction for that case, but they substantially narrow it: the right book is now known to be partially queryable, and the next…
-fr2933-salviati-1525	open	runnable	S	n	27 Sep	Subagents: 4 (plus 2 short follow-up messages to 2 of them for missed rows, not new calls).
+fr2933-salviati-1525	open	runnable	S	n	27 Sep	Subagents: 4 (0 follow-ups needed).
 fr2980-gramont	partial	runnable	M	n		A key-image check against the Lasry and Tomokiyo tables is the next step for eh, Tb and the crosses.
 fr2988-ranzo-1520s	open	runnable	S	n	24 Sep	
 fr3022-garbino-1528	open	runnable	S	n	24 Sep	
@@ -73,7 +73,7 @@ fr3993-villeroy-1595	open	runnable	S	n	24 Sep
 fr4687-paleologue-nevers	blocked	runnable	S	n	25 Sep	Suggested follow-ups: that block; a nomenclator-aware solver (units allowed to stand for syllables or words); crib tests anchored on `suofratel` with 6 restarts and a matched control whose true crib…
 fr5160-letellier-1653	open	runnable	S	n		**Follow-up, not attempted here (stop when the brief is met):** if a later worker wants to close the "no cipher in item 2" question more firmly than a 9-canvas sample, the remaining ~135 canvases of…
 fr5761-election-1519	open	runnable	M	n		This needs f105-f109 atlas-coded before it can be answered for the document as a whole -- flagged as the next step for a worker extending the atlas past f104/f110, not concluded here either way.
-fr7129-villeroy-bongars-1604	blocked	runnable	M	n	27 Sep	**Named next step (b):** re-read the key against the sibling.
+fr7129-villeroy-bongars-1604	blocked	runnable	M	n	27 Sep	**Next step (a different instrument, not a third crop pass):** transcribe a few f.260 lines with the clerk's own decipherment in view, aligned per sign by one careful reader and checked by a second,…
 gla-claudiamedici-1633	open	needs-image	S	n	24 Sep	Next step unchanged: library/ILL access to BAGK NF2 Bd.8, or the person reads it directly; REQUEST.md's GLA copy-order route (for the two shelfmarks themselves, independent of the edition question) s…
 goldbar-1933	open	runnable	S	n	25 Sep	
 harley-287-1587	partial	runnable	S	n	25 Sep	
