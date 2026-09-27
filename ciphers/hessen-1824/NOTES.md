@@ -187,3 +187,27 @@ combination.
 hessen-1824: partial (line 1) -- edition/page or full-text-search citation found within 6 lines
 EXIT: 0
 ```
+
+## Second-opinion leads (SO-HESSEN1824-LEADS, 27 Sept 2026)
+
+Landed verbatim from the ChatGPT second-opinion runner's LEADS prompt (PR 35): `second-opinions/chatgpt-leads-2026-09-27.md`. Leads, not verdicts; every citation below is the runner's own and is unchecked until a verifier confirms it.
+
+1. archival request: full archival unit HStAM 9a Nr.259, ff.245-255, enclosures/slips, multispectral imaging; no citation (request to archive); unchecked.
+2. archival-search: search Best.9a office registry for Chiffr-/Ziffer-/Geheimschrift/Schlüssel/sympathetische Tinte stems 1821-1831; citation Lenhard-Schramm, "Behördenbezeichnungen im Wandel," Archivnachrichten aus Hessen 23/1 (2023) p.58; unchecked.
+3. contextual fork: Kassel anonymous-threat-letter affair against Wilhelm II/Reichenbach, Friedrich Murhard arrested Jan 1824, records in HStAM Best.267/261/250 Nr.780; citations Ehrle NDB 18 (1997) pp.610-11, Kahlfuß ZHG 108 (2003) pp.123-47, HIL/LAGIS event page (2025); unchecked.
+4. method: pooling design for siblings (held-out consistency across messages, phase-aware); no citation (methodological); unchecked.
+5. catalogue: Arcinsys/Hessisches Landesarchiv full scope note and file-level description for Nr.259; no citation (unfulfilled catalogue request); unchecked.
+6. comparator text: Klüber, *Kryptographik* (Tübingen 1809), for table/vocabulary comparison; citation given (Google Books, id nKtfAAAAcAAJ); unchecked.
+7. analogue: Rous, "Geheimschriften in sächsischen Akten der Neuzeit," *NASG* 83 (2012) pp.243-53, on chancery cipher packets; unchecked.
+8. provenance/record-form: Maaß & Pons (eds.), *Fürstliche Korrespondenzen des 19. und 20. Jahrhunderts* (2024); relevance to Nr.259 explicitly flagged unverified by the runner itself; unchecked.
+9. contact: HStAM Marburg reference archivist for Best.9a/267 -- ask file-structure and neighboring-leaf questions; unchecked.
+10. contact: Anne-Simone Rous -- ask about a Kurhessian counterpart to Saxon cipher-packet bundles; unchecked.
+11. contact: Maaß, Pons or Uhde -- unverified whether any has worked directly with Nr.259; unchecked.
+12. contact: Eugen Antal/HCPortal team -- ask basis for the "polyalphabetic" classification and whether sibling images exist; citation HCPortal contributors page; unchecked.
+13. contact/method source: Reddy & Knight (ACL 2012, blocked-Gibbs running-key decoder) or a researcher reproducing it; unchecked.
+14. method: test an omitted seven-phase general-substitution family (independent alphabets per phase, keyed to the Anmerkung's "bcdefg(h)" hint), against matched N=164/K~24 controls; no citation (methodological); unchecked.
+15. method: reconstruct the Anmerkung's table as a constraint problem (table-geometry enumeration, shuffled-heading control); no citation (methodological); unchecked.
+16. method: blocked-Gibbs running-key sampler (Reddy & Knight 2012 pp.80-84) and Griffing's Viterbi baseline (*Cryptologia* 30:4 (2006) pp.361-67) as the next running-key instrument if provenance supports a natural-language key; unchecked.
+17. candidate key texts (conditional on provenance): Murhard's *Allgemeine politische Annalen* (1821-24), the Kurhessian Gesetz-Sammlung, Klüber 1809; not a claimed key; unchecked.
+
+None of the 17 leads is a printed decipherment or edition of this target's own text, and none names the key or the cipher system actually used at Kassel in the 1820s -- no check-solved candidate flagged.
