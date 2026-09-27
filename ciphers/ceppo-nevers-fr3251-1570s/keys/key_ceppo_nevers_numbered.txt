@@ -1,0 +1,58 @@
+row 1: a -- cursive loop like a Greek lambda / looped 'l', small dot near the base
+row 2: a -- large cursive double-loop, figure-eight-like, tail sweeping right
+row 3: a -- small hook/loop like a backward comma or a '6', with a dot near it
+row 4: a -- crisp (non-shaded, ruled-line) open rectangle missing its right/bottom side, upside-down 'Π' with a short vertical tick inside
+row 5: b -- (blank -- no homophone drawn)
+row 6: c -- vertical stroke curling into a small loop at the bottom, like cursive 'b' or a '6'
+row 7: c -- double wave/zigzag, like a flattened cursive 'm'/'w', two connected humps
+row 8: c -- cursive '2' or 'z' shape with a small dot above it
+row 9: d -- loop at the top of a vertical stroke, crossed by a short horizontal bar below the loop, like a florin sign or 'q'/'9' with a crossbar
+row 10: d -- two roughly parallel horizontal wavy strokes stacked, like a hand-drawn equals sign or double dash
+row 11: e -- cursive lowercase 'm' with a small dot/mark above the right hump
+row 12: e -- shape resembling the digit '3' in cursive script
+row 13: e -- plain crisp plus/cross sign (+), ruled not cursive
+row 14: f -- small closed loop/circle with a curling tail, like a comma merged with an 'o', or a reversed '6'
+row 15: f -- cursive shape with two loops joined by a horizontal cross-stroke, ornate ampersand-like, or a flourished capital H/A
+row 16: g -- small tight solid/filled oval or ring, bold 'o'-like
+row 17: h -- cursive shape resembling a '9' or lowercase 'g', loop with a curved hooked descender
+row 18: i -- cursive double-loop like 'w' plus a flourish, ascending stroke ending in a small dot at the top
+row 19: i -- thick cursive 'Z' or digit '2' shape, rounded top loop and angular lower stroke
+row 20: i -- cursive ligature resembling 'fs'/'ts'/'js' -- looped ascender joined to an 's'-like curve, small dot above
+row 21: l -- thick dark loop resembling script 'Z'/'2' with an extra rounded loop, pretzel-like
+row 22: l -- compound cursive shape, a 'z'-like curve above joined to a small comma/tail stroke below
+row 23: l -- angular zigzag ascender connecting into a squared loop at the bottom, like a long-s or script '5'
+row 24: m -- small hook/flag at the top connecting down into a loop, like cursive 'b'/'6' with a decorative tick
+row 25: m -- small loop at top with a long tail sweeping right then curling back left underneath, like a flourished 'g'/'q'
+row 26: n -- diagonal slash-like stroke flanked by a small dot above-left and a small dot below-right, like a tilted division sign
+row 27: n -- angular cursive shape like an italic capital A/V with a curled top, two small foot-strokes at the base
+row 28: o -- 'V'-shaped stroke crossed by a short horizontal line near the top, like a checkmark crossed by a bar
+row 29: o -- two short parallel horizontal strokes crossed by a diagonal, like a not-equal sign (≠)
+row 30: o -- vertical stroke with an attached rounded loop on the right, like eszett (ß), a flat sign, or cursive B
+row 31: p -- rounded open hook curving from upper right to lower left, like a backward 'c' or closing parenthesis with a curl
+row 32: p -- angular crossing shape like an 'X' or a pair of dividers, two leg-like strokes meeting a horizontal stroke
+row 33: q -- cursive shape like lowercase 'n'/script 'w', two connected rounded humps
+row 34: q -- clearly legible letter 'd' (rounded loop with a tall right-hand ascender); one pass noted it is rendered in the crisp, differently-coloured style of the printed page text rather than the shaded hand-drawn ink of the other cells in this table
+row 35: r -- tangled cursive shape like capital A/4, crossed by a horizontal stroke, extra loops near the top
+row 36: r -- cursive ligature like 't' joined to a backward '3'/'z', slanted ('tz'-like)
+row 37: r -- gently wavy near-horizontal stroke flanked by a small dot above and another below
+row 38: r -- elaborate cursive double-loop resembling '93' combined, or script capital B, tail curling down
+row 39: s -- loop resembling cursive '9'/'g' with a small dot, above a long straight horizontal underline stroke
+row 40: s -- two stacked small loops connected by a diagonal stroke, like a tilted figure-eight
+row 41: s -- small circle/oval loop, possibly crossed by a vertical or plus-like stroke below it
+row 42: s -- crisp (ruled-line) angular corner-bracket, vertical meeting horizontal at a right angle (rotated L), with a small separate tick/check mark beside it
+row 43: s -- cursive ligature resembling 'ey'/'cy' -- rounded loop joined to a stroke with a descending curved tail
+row 44: t -- cross/hash-like mark formed by two intersecting thick strokes plus a short diagonal tick; shaded/hand-drawn, distinct from the crisp vector '+' under e
+row 45: t -- cursive shape with an oval loop at top and a long diagonal tail descending to the lower left, like script 'f' or a Greek phi with a tail
+row 46: t -- cursive ligature resembling 'ey'/'cy', same style as s's and z's row-5 marks
+row 47: u -- 'X' shape formed by two crossing diagonal strokes with a short horizontal stroke/flourish at the base
+row 48: u -- cursive shape with two connected loops stacked, like script capital E or a figure-8
+row 49: x -- (blank -- no homophone drawn)
+row 50: y -- (blank -- no homophone drawn)
+row 51: z -- cursive ligature resembling 'ey'/'cy', same style as s's and t's row-5 marks
+row 52: et -- cursive figure-8/looped-S shape, two loops stacked vertically
+row 53: null -- plain crisp cross/plus sign with a small tick near one arm
+row 54: null -- cursive lowercase 'f' -- vertical stroke with a loop at the bottom
+row 55: null -- cursive loop like '6'/'b' with a short flick/hook rising from the top
+row 56: null -- small hook/loop like 'p' or a backward comma sitting on a short horizontal base stroke
+row 57: null -- cursive ligature resembling the digits '67' joined -- a loop followed by an angular stroke
+row 58: null -- cursive ligature resembling '6' joined to a flourished 's'

@@ -1,0 +1,29 @@
+{
+  "region": {
+    "source": "BnF fr.3251 (ark:/12148/btv1b9060248g), canvas 83 = f.82r, right page of the opening (offset +1, eye-checked: ink foliation '82'; facing left page f.81v carries a dated note 'Da Salluzzo li 20 marzo 1571', matching no.42's 20 March 1571 date)",
+    "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f83/pct:55,25,43,7.5/full/0/native.jpg",
+    "fetched": "27 Sept 2026 (NEV-C3)",
+    "file": "src_f82r_band.jpg",
+    "size_px": [3621, 438],
+    "note": "one curl fetch, HTTP 200 first try, no retry needed"
+  },
+  "line_detection": {
+    "tool": "tools/iiif_lines.py --image src_f82r_band.jpg --out . --prefix f82 --debug",
+    "result": "4 bands detected (centres y=127,244,342,425), each band's own auto-cut crop (f82_L01..L04, since deleted) held ONLY the cipher-sign row, splitting the tiny interlinear gloss row (which sits in the trough space directly ABOVE each cipher line, not detected as its own peak) roughly in half across two adjacent auto-cut bands -- confirmed by eye against f82_lines_debug.jpg (kept). Per the brief's fallback ('if the tool splits them, cut each pair by hand'), the gloss+cipher pairs below were hand-cut with PIL instead; the L01-L04 auto-cut files were deleted as superseded, not usable for transcription (gloss cut in half)."
+  },
+  "manuscript_lines": {
+    "lineA_context": "y~0-50: tail of the ordinary prose line above the cipher band ('...poiche tutte parlicano, benche buna piu dell'altra, et'), not transcribed",
+    "line1": "y~55-165: 'come li mandai fra l'altre memorie per il S. Biagio' then cipher signs begin after 'Biagio' and run to the end of the line; its own gloss (tiny letters) sits at y~85-135, squeezed above the cipher signs on this same line",
+    "line2": "y~165-300: pure cipher, full width; its own gloss sits at y~165-230 (clearly legible at 2x zoom, e.g. 'ms b n e u 1 2 d o z ...')",
+    "line3": "y~300-410: pure cipher, running to the page's right margin (no prose resumes on this line -- checked at the right edge, cipher signs continue to the binding edge); its own gloss sits at y~300-330",
+    "line4_resumed_prose": "y~410-438 (bottom edge of the fetched region): 'non si puo differdere sensa [ ] un grosso corpo di gente dentro, massime del [ ]' -- ordinary prose resumed after the cipher band, not transcribed",
+    "cipher_extent": "3 manuscript lines carry cipher (line1's tail, line2 in full, line3 in full), consistent with the brief's 'about three lines... the band runs through the line ending about two thirds down the band' (line3 runs to the page edge rather than handing back to prose mid-line; prose instead resumes on the next full line, line4)"
+  },
+  "pair_crops": {
+    "method": "hand-cut with PIL from src_f82r_band.jpg: for each of line1/line2/line3, one y-range spanning that line's own gloss row + its cipher-sign row, then split into 4 overlapping x-segments (s1-s4, ~150px overlap) and each segment upscaled 2x (LANCZOS) for gloss legibility, kept under 2400px wide per segment as instructed",
+    "line1": {"y_range": [20, 165], "files": ["f82_pair1_s1.jpg","f82_pair1_s2.jpg","f82_pair1_s3.jpg","f82_pair1_s4.jpg"], "x_ranges_pre_2x": [[0,1100],[950,2050],[1900,3000],[2850,3621]]},
+    "line2": {"y_range": [165, 300], "files": ["f82_pair2_s1.jpg","f82_pair2_s2.jpg","f82_pair2_s3.jpg","f82_pair2_s4.jpg"], "x_ranges_pre_2x": [[0,1100],[950,2050],[1900,3000],[2850,3621]]},
+    "line3": {"y_range": [300, 410], "files": ["f82_pair3_s1.jpg","f82_pair3_s2.jpg","f82_pair3_s3.jpg","f82_pair3_s4.jpg"], "x_ranges_pre_2x": [[0,1100],[950,2050],[1900,3000],[2850,3621]]}
+  },
+  "kept_files": ["src_f82r_band.jpg", "f82_lines_debug.jpg", "f82_pair1_s1.jpg", "f82_pair1_s2.jpg", "f82_pair1_s3.jpg", "f82_pair1_s4.jpg", "f82_pair2_s1.jpg", "f82_pair2_s2.jpg", "f82_pair2_s3.jpg", "f82_pair2_s4.jpg", "f82_pair3_s1.jpg", "f82_pair3_s2.jpg", "f82_pair3_s3.jpg", "f82_pair3_s4.jpg"]
+}
