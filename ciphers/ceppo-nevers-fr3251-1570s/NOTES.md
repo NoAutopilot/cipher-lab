@@ -236,3 +236,113 @@ fault was not the server's), canvas 28 native-resolution region crop via `tools/
 1000px, canvas 41 at 1000px, canvas 83 at 1000px (8th and last). All >=2s apart, descriptive script
 User-Agent, one at a time. Subagents: 3 (plaintext read, careful sign read, blind check), all image-review
 only, no credentials, no AskUserQuestion, no novelty wording, owner not named.
+
+## NEV-C3 witness calibration, f.82 (27 Sept 2026)
+
+Per `.claude/briefs/runs/2026-09-27-lane-nev-owner-c3-calibrate-f82.md`. **FAIL at the pass bar** (agreement
+0.70 / z>=4 not reached on either the f.82-alone or the f.82+f.27-pooled run), but this witness IS legible --
+the first "with decipherment" witness in either fr3251 group (NEV-C1's f.178, NEV-C2's f.27/f.39) that yields
+a real interlinear gloss AND lets the full calibration pipeline run end to end without a plaintext-read dead
+end. Status stays `open`. No target folio (f.11, f.21v, f.35, f.87) touched; no class, no novelty wording.
+
+**Fetch and crops.** One Gallica IIIF region fetch (`f83/pct:55,25,43,7.5`, canvas 83 = f.82r, confirmed by eye:
+ink foliation '82'; facing f.81v carries "Da Salluzzo li 20 marzo 1571", matching no.42's date), HTTP 200 on
+the first try, no retry needed -- 1 of the job's 3-request allowance. `tools/iiif_lines.py --debug` located 4
+manuscript-line bands but its own auto-cut crops split each cipher line's gloss row from its sign row (the
+gloss sits in the *trough* between two detected line-centres, not as its own peak) -- confirmed by eye against
+the debug overlay, and per the brief's own fallback the gloss+cipher pairs were hand-cut with PIL instead: for
+each of the 3 cipher-bearing manuscript lines (line1 = "...per il S. Biagio" then cipher signs to the end of
+the line; line2 = a full line of pure cipher; line3 = a second full line of pure cipher, running to the page's
+right margin with no prose resuming on that line -- prose resumes only on the next full line), one y-range
+covering that line's own gloss + sign rows, split into 4 overlapping x-segments at 2x zoom
+(`images/f82/f82_pairN_sN.jpg`). The auto-cut `f82_L01..L04` files were deleted as superseded (not usable,
+gloss split in half); `images/f82/manifest.json` documents both the detection and the hand-cut boxes.
+
+**Gloss read (subagent a), two attempts.** First pass on the gloss+cipher pair crops came back **all
+illegible** (0 confident letters, confidence L on all 3 lines) -- the tiny interlinear marks read as
+ambiguous ink strokes, distinguishable from the clearly-legible ordinary prose on the same page. Rather than
+accept this as this witness's final word (per rule 3's caution against a negative from under-tried material,
+and the direct precedent of NEV-C2's f.27, where a first-pass framing initially missed a gloss later
+confirmed present), this worker cut a second, tighter set of crops isolating ONLY the gloss row (excluding
+the cipher-sign row below it) in narrower ~620px source slices at 3x zoom (`images/f82/gloss_retry/`, 21
+files) and resumed the SAME subagent (not a new one -- still within the 3-subagent cap) with the new material.
+The retry recovered **6 confident letters total** (line1: 0; line2: "m" + 2 "o"s; line3: 3 "o"s), up from 0,
+confirming the framing/resolution of the first crops had genuinely understated legibility -- but the subagent
+kept confidence L throughout ("most marks... remain tick/caret/numeral-like flecks rather than resolvable
+cursive letters... I did not bump to M/H just to match the expectation that the new crops would read much
+better"), and separately flagged that several ambiguous marks look more like small numerals than letters,
+raising an open question (not resolved by this job) about whether this interlinear layer is a full
+letter-by-letter plaintext gloss or partly a reference/position annotation. `witness/witness_f82_plain.tsv`
+holds the second-pass reading.
+
+**Sign read (subagent b).** 114 signs across the three lines (34 H-confidence), matched against
+`keys/key_ceppo_nevers_numbered.txt`'s 58 rows, gloss row explicitly excluded from this pass.
+`witness/witness_f82_signs.tsv`.
+
+**Blind check (subagent c) and reconciliation.** `random.seed(1)` over `['line1','line2','line3']` picked
+**line1**. (c) transcribed 22 signs for line1 (7 H); (b) transcribed only 15 for the same line -- a genuine
+segmentation/completeness disagreement, not merely a shape disagreement. Direct inspection of the source
+crops by this worker (`witness/reconcile_f82.tsv`) confirms: (1) both readers agree on the two anchor signs
+this worker could verify by eye -- the line's first cipher sign (a three-hump cursive "m", key row 11) and a
+large "X" cross roughly two-thirds through the line (key row 47); (2) (b)'s very first entry (a "plain round
+closed loop") has no counterpart in (c) and is most likely (b) mis-splitting the m-sign's own first hump into
+a spurious extra sign, not a real cipher sign; (3) **(b)'s line1 pass is confirmed incomplete**: the page
+continues for 3-4 more cipher signs after the X-cross, all the way to the leaf's right margin (confirmed by
+this worker looking directly at `images/f82/f82_pair1_s4.jpg`), which (b) did not transcribe at all (its
+transcription ends at the X, its last entry) while (c) did continue and catch them. The dense cursive
+stretch between the m-sign and the X-cross could not be settled sign-for-sign against either reader's count
+within this job's box (a genuine segmentation disagreement in a cramped hand, the same shape NEV-C2's f.27
+reconciliation hit once already). This confirmed incompleteness in (b) does not change any of the scores
+below, since line1's own gloss read has 0 confident letters either way -- nothing on line1 enters the
+letter-alignment at all.
+
+**Score** (`tools/decode_witness.py`, key=`key_ceppo_nevers.tsv`, signs=`witness_f82_signs.tsv`,
+plain=`witness_f82_plain.tsv`, 20 shuffled keys, seed 1):
+
+```
+f.82 alone:        real key 0.8333 (5/6 aligned letters); shuffled mean 0.7750 sd 0.2852 min 0.1667 max 1.0000; z 0.20; rank 11 of 21
+f.82 + f.27 pooled: real key 0.9167 (11/12 aligned letters); shuffled mean 0.7708 sd 0.1511 min 0.4167 max 1.0000; z 0.97; rank 2 of 21
+```
+
+(`--sample-lines line1` could not run: line1's own gloss read has zero legible letters, so the tool correctly
+exits on "no clerk letters in scope" for that subset -- expected, not a bug, given the gloss-read finding
+above.)
+
+**FAIL on both bar conditions** (z nowhere near +4 either alone or pooled), but **not a contradiction of the
+key** in the way a low raw agreement would be: the real key's raw agreement (0.83 alone, 0.92 pooled) is
+comfortably above the 0.70 threshold both times, and pooled it ranks 2nd of 21 keys (only one shuffled key
+scored higher) -- the z-score stays low only because n is so small (6 then 12 aligned letters) that the
+shuffled-key distribution itself is extremely wide (sd 0.29 alone, 0.15 pooled) and sometimes scores just as
+high by chance. This is the same "no power at this n" shape rule 3's headline paragraph describes, one step
+better than NEV-C2's f.27-alone result (which ranked 11th of 21, indistinguishable from the shuffled floor;
+f.82 alone also ranks 11th, but pooling with f.27 pushes the real key to 2nd). Read alongside the confirmed
+per-row breakdown below, this is best described as an encouraging but statistically inconclusive signal, not
+a pass and not a negative.
+
+**Rows confirmed / contradicted** (`witness/key_rows_ceppo_f82.tsv`, f.82-alone run; informational only at
+n=6): row 29 (o) confirmed 1x, row 30 (o) confirmed 4x -- together accounting for all 5 of the run's aligned
+matches (both of the key's two homophones for "o" are individually confirmed by this witness, the strongest
+per-row signal either NEV-C2 or NEV-C3 has produced so far); every other row shows 0 confirmations and 0-13
+contradictions at this sample size, not a usable per-row grade (rule 3). The single miss among f.82's 6 gloss
+letters is the "m" (line2's first legible letter) against whatever the aligner matched it to.
+
+**Verdict.** The Ceppo-Nevers key is **not confirmed to the pass bar, but is not contradicted either**, and
+this witness is the first of the group's three "with decipherment" witnesses to produce a full, scoreable
+signs+plaintext pair (f.178 and f.39 had no gloss at all; f.27 alone was a non-test at n=6, rank 11/21). Two
+of its two "o"-homophone rows are individually confirmed by every aligned occurrence.
+
+**Named next steps, in order of expected value:** (1) a further, more patient gloss-reading pass on
+`images/f82/gloss_retry/` (or a fresh, even-tighter re-crop of just line2 and line3, which carry all 6 of the
+letters recovered so far) -- the two-attempt escalation in this job already found real signal by narrowing
+the crop; a worker with a dedicated budget for this one step alone (not split across fetch+3 subagents+
+scoring, as this job was) may recover enough letters to reach the z>=4 bar, especially pooled with f.27; (2)
+resolve whether the interlinear marks are letters or a numeral/reference annotation (subagent (a)'s open
+flag) before spending further budget on letter-by-letter reading -- if numerals, the calibration strategy for
+this key needs to change; (3) settle the mid-line1 segmentation disagreement between (b) and (c) with a
+slower, sign-by-sign pixel measurement, lower priority since it does not affect the letter-alignment score;
+(4) if no further gloss legibility is recoverable, the lane's own named fallback applies: a control-backed
+decode of a target passage itself, labelled as a target-style test, not a witness calibration.
+
+**Requests:** gallica.bnf.fr 1 (well under the 3-request allowance: one fetch, HTTP 200 first try, no retry
+needed). Subagents: 3 (gloss read -- resumed once with better crops, still 1 subagent; careful sign read;
+blind check), all image-review only, no credentials, no AskUserQuestion, no novelty wording, owner not named.
