@@ -1618,3 +1618,43 @@ bar-above-numeral tick is absent from about 243 groups of the same writer's offi
 at N=3). No reading, no class change. Requests per host: catalog.archives.gov 7. Cost: no get_session figure to
 this runner; the row's estimate (1 USD) is what `campaign.py --spend` records. Vision: 9 crops read by this runner,
 no subagent calls.
+
+## Campaign step H5 (27 Sept 2026, 23:43-23:48 UTC)
+
+Runner: campaign runner armstrong-madison-1808 (account 2, session_013E5jUS9GV1AsxLeUcwgbf6). Hypothesis H5: a third
+independent blind pass over page-1 lines 12-13 (frame 0030), the span ARM-TR2 could not resolve at any top margin,
+to check whether Bourdeau's minimal "2, **, 44" at that position is an undercount.
+
+**Finding: the unresolved residue was a crop-geometry bug again, on the LEFT edge this time.** ARM-TR's crop region
+for frame 0030 starts at native x=250 (`images/crops_0030/manifest.json`, every box `[250, y0, 2096, y1]`), but the
+writer's lines begin at x of about 130-250, so line heads that start with a numeral lost it. A widened band of lines
+11-14 (x from 40, `images/crops_0030_wide/`, 2x upscaled single-line crops) read directly by this runner and by two
+fresh blind Sonnet passes (one call each, three crops, no other file): line 11 ends "17. 1. 28. 14." with no "2";
+lines 12 and 13 are pure shorthand runs (pass A about 14 and 18 marks, pass B about 16 and 14, both NONE for
+numerals, confidence L-M); line 14 opens **"44. 176.. 564. 387. 840. 671.. 41. 431. 18. 640. 1780."** on both passes
+(H and M) and on this runner's look. So Bourdeau's "44" is real and had been sheared off the ms transcription; his
+"2" is not a numeral -- the ink at that position is the hook + "3"-shaped loop that opens line 12 (both passes flag a
+"3"-like loop there), which a minimal notation plausibly rendered as "2". The same shear explains three more
+residues of `tr/diff_ms_vs_ciphertext.py`: body line 2 head "1840. 240." (ms had marks only), line 15 head "1761. 13."
+(ms had "73"), line 16 head "671." (ms had dropped it) -- each confirmed by this runner's direct look at a widened head
+crop, each matching `ciphertext.txt` exactly.
+
+Applied to `ciphertext_ms.txt` (header note added; "44" at grade H from two blind passes + direct look, the other
+three heads at grade M, one reader, for a successor's blind pass to lift): diff before/after, `tr/diff_ms_vs_ciphertext.py`
+
+| | substitutions | in ciphertext.txt not ms | in ms not ciphertext.txt | match_ratio |
+|---|---|---|---|---|
+| before | 9 | 12 | 3 | 0.9574 |
+| after | 7 | 8 | 3 | 0.9672 |
+
+Remaining `in_ciphertext_not_ms`: "2" (not a numeral, above) and seven on pages 2-3 (1, 1430, 18, 1, 12, 17, 1786)
+that sit near line heads in the page 2-3 crops -- the same left-edge check on `crops_0031L/R` and `crops_0032L/R` is the
+obvious next cheap step (H17). Also seen, not acted on: a small "36"-like interlinear mark above "36" in line 11 (ms
+already reads 36). Units-digit distribution unchanged in shape (ms >=100: digit 0 91, 1 46, 2 9, 3 4).
+
+**Verdict for the campaign:** resolved -- not an undercount by Bourdeau: "44" real, "2" a mark, lines 12-13 pure marks;
+ms transcription corrected at four page-1 line heads, match_ratio 0.957 -> 0.967. No reading, no class change.
+Lesson for the transcription brief: `tools/iiif_lines.py`'s region x0 must sit left of the leftmost ink on every
+line (check the debug overlay's left edge, not only its top edge -- ARM-TR2's fix covered the top margin only).
+Requests: none. Cost: no get_session figure to this runner; the row's estimate (1.5 USD) is what `campaign.py --spend`
+records. Vision: 2 Sonnet subagent calls (three small crops each) + 8 crops read by this runner.
