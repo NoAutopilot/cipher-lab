@@ -1,0 +1,9 @@
+websearch	Clairambault 331 Rangone Montmorency cipher	surfaced dbourdeau.github.io/cyphersolver/rangone1530.html, no independent (non-Bourdeau) hit
+websearch	"Passano" Wolsey London 1530 cipher Clairambault decipher	surfaced dbourdeau.github.io/cyphersolver/joachim1530.html, no independent hit
+gbooks	gTUOAAAAQAAJ	Decrue, Anne de Montmorency ... a la cour, aux armees et au conseil du roi Francois Ier (1885), full view; Rangone pp.181-182,222,239,269,286,447 index (footnote cites Clairambault 330/2751 and fr.3070/81); Joachim/Passano only pp.57,93 (unrelated 1520s treaty context)
+ia	annedemontmorenc00decruoft	same Decrue 1885 title, IA scan; _djvu.txt fetched, zero hits for Rangone/Fregose (OCR/scan discrepancy vs the Google Books copy, not a negative)
+decode	sources/decode/records-non-decrypted-2026-09-24.tsv	existing 24 Sept crawl grepped for Clairambault 331 / Rangone / Joachim / Passano: no record
+decode	sources/decode/records-decrypted-2026-09-24.tsv	same, decrypted-status file: no record (Clair.325/328/417 present, 331 absent)
+solver-repo	dbourdeau/cyphersolver@648309e	targets/rangone1530 (f.15's original, read in part 87.9%) and targets/joachim1530 (f.156's account, read 96.02%); catalogue items 181 and 281
+solver-repo	aaymeloglu/unsolved-ciphers@2495c45	grepped in full for Clairambault 331 / Clair.331 / Rangone / Passano / Joachim: no hit
+tomokiyo	sources/cryptiana/web/francis.htm	section "BnF Clair.331 (1530)" and the two "Gramont's Cipher" sections read in full, raw HTML for heading structure
