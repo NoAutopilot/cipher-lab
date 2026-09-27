@@ -38,6 +38,16 @@ Steps:
      with the blank-run width histogram; with --debug, <prefix>_Lnn_groups_debug.jpg boxes and numbers the pieces. A
      hand that spaces groups no wider than digits shows a unimodal histogram: then the pieces are not groups (fr.4715
      f.81r, MONT-CAL 27 Sept 2026) and the crops must not be handed to a reader as groups.
+  --follow-slope WIN [--slope-local] [--only-lines 3,8] [--slope-margin PX]: lines that slope across the leaf leave a fixed-y band
+     (fr.4715 f.81r, MONT-READ-DIGITS 27 Sept 2026: the named line ran out of the strip's bottom edge in segment 3 or 4
+     and the later segments' central row was the neighbouring line). With this option each line is tracked through
+     column windows WIN px wide (the row-profile peak nearest the previous window's, within a third of the pitch,
+     starting at the band centre in the leftmost window with ink there, so the line followed is the one the fixed-y
+     cut shows at the start of the line), a straight line y = a + b*x is fitted to the tracked peaks
+     (outliers beyond a quarter pitch dropped, refitted), and every segment is cut as a sheared strip whose centre row
+     follows that fit end to end (band height unchanged, plus --slope-margin px above and below). The fit (a, b, peaks
+     kept) goes into each manifest entry. --slope-local refits each segment to the peaks within one window of it, for a
+     line that curves (f.81r L03: flat for the first segment, then descending). Off by default: without it the cut is exactly as before.
 
 Test: python3 tools/tests/test_iiif_lines.py (offline: a synthetic page with a known line count and pitch, and the
 committed native image of fr.20140 f.36r, whose box 1300,1770,3400,210 holds one cipher line).
@@ -152,6 +162,69 @@ def segments(x0, x1, max_width, overlap):
     return [(x0 + int(round(i * step)), x0 + int(round(i * step)) + max_width) for i in range(n)]
 
 
+def track_line(gray, centre, pitch, x0, x1, win, ink, smooth=5):
+    """Follow one line across the region: per column window, the row-profile peak nearest the running estimate
+    (within pitch/3), walked rightward from the leftmost inked window at the band centre; then a least-squares y = a + b*x with outliers beyond
+    pitch/4 dropped and refitted. Returns (a, b, [(x, y), ...] kept)."""
+    edges = list(range(x0, x1, win))
+    wins = [(e, min(e + win, x1)) for e in edges if min(e + win, x1) - e >= win // 2]
+    lo_h, hi_h = 0, gray.shape[0]
+    prof = []
+    for wx0, wx1 in wins:
+        p = (gray[:, wx0:wx1] < ink).sum(axis=1).astype(float)
+        if smooth > 1:
+            p = np.convolve(p, np.ones(smooth) / smooth, 'same')
+        prof.append(p)
+    reach = max(3, pitch // 3)
+    ys = [None] * len(wins)
+    # start at the leftmost window with real ink near the band centre: the named line is the one the fixed-y cut
+    # shows at the start of the line (MONT-RECROP: starting mid-region followed the neighbouring line on L13, L15)
+    near = [prof[k][max(0, int(centre) - reach):int(centre) + reach + 1].max() for k in range(len(wins))]
+    top = max(near) if near else 0
+    mid = next((k for k, v in enumerate(near) if v >= 0.3 * top), len(wins) // 2)
+
+    def pick(k, est):
+        a_, b_ = max(lo_h, int(est) - reach), min(hi_h, int(est) + reach + 1)
+        seg = prof[k][a_:b_]
+        if seg.size == 0 or seg.max() <= 0:
+            return None
+        return a_ + int(np.argmax(seg))
+    ys[mid] = pick(mid, centre)
+    for rng in (range(mid + 1, len(wins)), range(mid - 1, -1, -1)):
+        est = ys[mid] if ys[mid] is not None else centre
+        for k in rng:
+            y = pick(k, est)
+            ys[k] = y
+            if y is not None:
+                est = y
+    pts = [((w0 + w1) / 2, y) for (w0, w1), y in zip(wins, ys) if y is not None]
+    if len(pts) < 2:
+        return float(centre), 0.0, pts
+    xs, yv = np.array([p[0] for p in pts]), np.array([p[1] for p in pts], float)
+    b, a = np.polyfit(xs, yv, 1)
+    keep = np.abs(yv - (a + b * xs)) <= max(2, pitch / 4)
+    if keep.sum() >= 2 and not keep.all():
+        b, a = np.polyfit(xs[keep], yv[keep], 1)
+    return float(a), float(b), [(int(x), int(y)) for x, y, k in zip(xs, yv, keep) if k]
+
+
+def local_fit(pts, sx0, sx1, win, a, b):
+    """--slope-local: a line fitted only to the kept peaks within one window of the segment (a curving line); falls
+    back to the whole-line fit (a, b) when fewer than two peaks lie there."""
+    near = [(x, y) for x, y in pts if sx0 - win <= x <= sx1 + win]
+    if len(near) < 2:
+        return a, b
+    bb, aa = np.polyfit([x for x, _ in near], [y for _, y in near], 1)
+    return float(aa), float(bb)
+
+
+def sheared_strip(img, sx0, sx1, a, b, half):
+    """Cut columns sx0..sx1 as a strip whose centre row follows y = a + b*x (region coordinates)."""
+    w, h = sx1 - sx0, 2 * half
+    return img.transform((w, h), Image.AFFINE, (1, 0, sx0, b, 1, a + b * sx0 - half), resample=Image.BICUBIC,
+                         fillcolor=255 if img.mode == 'L' else (255, 255, 255))
+
+
 def group_pieces(gray, top, bot, x0, x1, ink, gap, core=0.55, minw=4):
     """Split one line band into ink pieces by the column profile of its core rows (the middle `core` share of the
     band, so neighbours' ascenders/descenders do not bridge gaps): a run of >= gap blank columns ends a piece."""
@@ -221,6 +294,13 @@ def main(argv=None):
                          'groups at all (MONT-CAL, 27 Sept 2026: on fr.4715 f.81r it does not)')
     ap.add_argument('--group-ink', type=int, default=120); ap.add_argument('--group-upscale', type=int, default=3)
     ap.add_argument('--group-lines', help='comma list of band numbers for --groups (default: all)')
+    ap.add_argument('--follow-slope', type=int, metavar='WIN',
+                    help='track each line through WIN-px column windows, fit its slope, and cut every segment as a '
+                         'sheared strip centred on the line end to end (MONT-RECROP, 27 Sept 2026); off by default')
+    ap.add_argument('--slope-local', action='store_true',
+                    help='with --follow-slope, fit each segment to the peaks within one window of it (a curving line)')
+    ap.add_argument('--slope-margin', type=int, default=0, help='extra px above and below a --follow-slope strip')
+    ap.add_argument('--only-lines', help='comma list of band numbers to write crops for (default: all)')
     a = ap.parse_args(argv)
     if a.max_width >= 2500:
         ap.error('--max-width must stay under 2500 px')
@@ -257,13 +337,41 @@ def main(argv=None):
         rgb = rgb.crop((rx, ry, rx + rw, ry + rh))
     entries = []
     date = time.strftime('%d %b %Y', time.gmtime())
+    only = {int(x) for x in a.only_lines.split(',')} if a.only_lines else None
+    pitch = int(np.median(np.diff(centres))) if len(centres) > 1 else 100
+    fits = {}
+    rgbc = rgb.convert('RGB') if a.follow_slope else None
     for bi, (top, bot, nl) in enumerate(bb, 1):
+        if only and bi not in only:
+            continue
+        if a.follow_slope:
+            c = centres[(bi - 1) * a.lines_per_crop:(bi - 1) * a.lines_per_crop + nl]
+            fa, fb, pts = track_line(gray, sum(c) / len(c), pitch, x0, x1, a.follow_slope, a.ink)
+            half = (bot - top) // 2 + a.slope_margin
+            fits[bi] = dict(a=round(fa, 2), b=round(fb, 5), peaks_kept=len(pts), half_height=half, win=a.follow_slope,
+                            peaks=pts, local=a.slope_local)
+            print(f'  band L{bi:02d}: slope fit y = {fa:.1f} + {fb:.5f}*x ({len(pts)} window peaks kept); '
+                  f'drift over the region {fb * (x1 - x0):+.0f} px (pitch {pitch})')
         for si, (sx0, sx1) in enumerate(segs, 1):
             name = f'{prefix}_L{bi:02d}' + (f'_s{si}' if len(segs) > 1 else '') + '.jpg'
-            rgb.crop((sx0, top, sx1, bot)).convert('RGB').save(os.path.join(a.out, name), quality=a.quality)
-            entries.append(dict(crop=name, source_url=url, source_file=os.path.basename(src),
-                                box=[rx + sx0, ry + top, rx + sx1, ry + bot], lines_in_crop=nl, band=bi, segment=si,
-                                method='tools/iiif_lines.py row ink profile', params=params, date=date))
+            if a.follow_slope:
+                f = dict(fits[bi])
+                if a.slope_local:
+                    la, lb = local_fit(f['peaks'], sx0, sx1, a.follow_slope, f['a'], f['b'])
+                    f.update(a=round(la, 2), b=round(lb, 5))
+                crop = sheared_strip(rgbc, sx0, sx1, f['a'], f['b'], f['half_height'])
+                ytop0, ytop1 = f['a'] + f['b'] * sx0 - f['half_height'], f['a'] + f['b'] * sx1 - f['half_height']
+                box = [rx + sx0, ry + int(min(ytop0, ytop1)), rx + sx1, ry + int(max(ytop0, ytop1)) + 2 * f['half_height']]
+                method = f'tools/iiif_lines.py row ink profile, --follow-slope {a.follow_slope} (sheared strip)'
+            else:
+                crop, box = rgb.crop((sx0, top, sx1, bot)), [rx + sx0, ry + top, rx + sx1, ry + bot]
+                method = 'tools/iiif_lines.py row ink profile'
+            crop.convert('RGB').save(os.path.join(a.out, name), quality=a.quality)
+            e = dict(crop=name, source_url=url, source_file=os.path.basename(src), box=box, lines_in_crop=nl, band=bi,
+                     segment=si, method=method, params=params, date=date)
+            if a.follow_slope:
+                e['slope_fit'] = {k: v for k, v in f.items() if k != 'peaks'}
+            entries.append(e)
     if a.groups:
         want = {int(x) for x in a.group_lines.split(',')} if a.group_lines else None
         for bi, (top, bot, nl) in enumerate(bb, 1):
@@ -317,7 +425,7 @@ def main(argv=None):
             print('  WARNING: folder still over 30 MB; keep the manifest and a sample, note where the rest re-fetches')
     mp = update_manifest(a.out, entries, set(shrunk))
     print(f'  wrote {len(entries)} crops and {mp}')
-    return dict(centres=centres, bands=bb, segments=segs, params=params, entries=entries)
+    return dict(centres=centres, bands=bb, segments=segs, params=params, entries=entries, fits=fits)
 
 
 if __name__ == '__main__':

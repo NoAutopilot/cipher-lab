@@ -13,6 +13,8 @@
 #      clearly the easiest to read (same fix as NEV-C3's "3x zoom" on ceppo-nevers-fr3251-1570s).
 set -e
 cd "$(dirname "$0")/../../.."
+# `sh regen_f81r_crops.sh slope` runs only the second block (running block 1 regenerates 180 crops, >30 MB).
+if [ "${1:-all}" != slope ]; then
 python3 tools/iiif_lines.py \
   --image ciphers/fr4715-montholon-1589/images/src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg \
   --region 0,0,3630,2243 \
@@ -29,3 +31,35 @@ for fn in sorted(glob.glob("ciphers/fr4715-montholon-1589/images/f81rz_L*.jpg"))
 PYEOF
 rm -f ciphers/fr4715-montholon-1589/images/f81rz_L*.jpg
 echo "regenerated f81rzoom_L*.jpg (180 crops)"
+fi
+
+# --- Second block: MONT-RECROP, 27 Sept 2026 (does not replace the block above). ---
+# The f81rsheet_Lnn.jpg sheets were cut at a fixed y per line, but f.81r's lines slope ~0.02 (60-100 px over the
+# 3630 px region, more than the 52 px pitch), so the named line left the strip in segment 3 or 4 (MONT-READ-DIGITS).
+# tools/iiif_lines.py --follow-slope 300 --slope-local tracks each line from its left end through 300 px windows and
+# cuts every segment as a sheared strip centred on it (+6 px margin); only the four calibration lines are cut.
+# Then the same 3x LANCZOS upscale and one vertically stacked sheet per line, prefix f81rslope_ (old sheets kept).
+python3 tools/iiif_lines.py \
+  --image ciphers/fr4715-montholon-1589/images/src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg \
+  --region 0,0,3630,2243 \
+  --out ciphers/fr4715-montholon-1589/images \
+  --prefix f81rsl --max-width 900 --follow-slope 300 --slope-local --slope-margin 6 --only-lines 3,8,13,15
+python3 - <<'PYEOF'
+import glob
+from PIL import Image, ImageDraw
+d = "ciphers/fr4715-montholon-1589/images"
+for L in (3, 8, 13, 15):
+    segs = sorted(glob.glob(f"{d}/f81rsl_L{L:02d}_s*.jpg"))
+    ups = []
+    for f in segs:
+        im = Image.open(f)
+        ups.append(im.resize((im.width * 3, im.height * 3), Image.LANCZOS))
+    sh = Image.new("RGB", (max(u.width for u in ups), sum(u.height + 22 for u in ups)), (255, 255, 255))
+    dr = ImageDraw.Draw(sh); y = 0
+    for i, u in enumerate(ups, 1):
+        dr.text((4, y + 4), f"L{L:02d} segment {i} of {len(ups)}", fill=(200, 0, 0)); y += 22
+        sh.paste(u, (0, y)); y += u.height
+    sh.save(f"{d}/f81rslope_L{L:02d}.jpg", quality=90)
+PYEOF
+rm -f ciphers/fr4715-montholon-1589/images/f81rsl_L*.jpg
+echo "regenerated f81rslope_L03/L08/L13/L15.jpg"

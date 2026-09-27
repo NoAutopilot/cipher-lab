@@ -1999,6 +1999,606 @@
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
       "date": "27 Sept 2026",
       "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
+    },
+    {
+      "crop": "f81rsl_L03_s1.jpg",
+      "source_url": "",
+      "source_file": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "box": [
+        0,
+        330,
+        900,
+        394
+      ],
+      "lines_in_crop": 1,
+      "band": 3,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 184.3
+      },
+      "date": "27 Sep 2026",
+      "slope_fit": {
+        "a": 362.36,
+        "b": 0.00048,
+        "peaks_kept": 10,
+        "half_height": 32,
+        "win": 300,
+        "local": true
+      },
+      "status": "deleted after compositing into f81rslope_Lnn.jpg; regenerable: sh images/regen_f81r_crops.sh slope"
+    },
+    {
+      "crop": "f81rsl_L03_s2.jpg",
+      "source_url": "",
+      "source_file": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "box": [
+        682,
+        327,
+        1582,
+        402
+      ],
+      "lines_in_crop": 1,
+      "band": 3,
+      "segment": 2,
+      "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 184.3
+      },
+      "date": "27 Sep 2026",
+      "slope_fit": {
+        "a": 351.45,
+        "b": 0.01233,
+        "peaks_kept": 10,
+        "half_height": 32,
+        "win": 300,
+        "local": true
+      },
+      "status": "deleted after compositing into f81rslope_Lnn.jpg; regenerable: sh images/regen_f81r_crops.sh slope"
+    },
+    {
+      "crop": "f81rsl_L03_s3.jpg",
+      "source_url": "",
+      "source_file": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "box": [
+        1365,
+        337,
+        2265,
+        420
+      ],
+      "lines_in_crop": 1,
+      "band": 3,
+      "segment": 3,
+      "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 184.3
+      },
+      "date": "27 Sep 2026",
+      "slope_fit": {
+        "a": 339.1,
+        "b": 0.022,
+        "peaks_kept": 10,
+        "half_height": 32,
+        "win": 300,
+        "local": true
+      },
+      "status": "deleted after compositing into f81rslope_Lnn.jpg; regenerable: sh images/regen_f81r_crops.sh slope"
+    },
+    {
+      "crop": "f81rsl_L03_s4.jpg",
+      "source_url": "",
+      "source_file": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "box": [
+        2048,
+        354,
+        2948,
+        440
+      ],
+      "lines_in_crop": 1,
+      "band": 3,
+      "segment": 4,
+      "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 184.3
+      },
+      "date": "27 Sep 2026",
+      "slope_fit": {
+        "a": 336.1,
+        "b": 0.02467,
+        "peaks_kept": 10,
+        "half_height": 32,
+        "win": 300,
+        "local": true
+      },
+      "status": "deleted after compositing into f81rslope_Lnn.jpg; regenerable: sh images/regen_f81r_crops.sh slope"
+    },
+    {
+      "crop": "f81rsl_L03_s5.jpg",
+      "source_url": "",
+      "source_file": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "box": [
+        2730,
+        369,
+        3630,
+        466
+      ],
+      "lines_in_crop": 1,
+      "band": 3,
+      "segment": 5,
+      "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 184.3
+      },
+      "date": "27 Sep 2026",
+      "slope_fit": {
+        "a": 301.5,
+        "b": 0.03667,
+        "peaks_kept": 10,
+        "half_height": 32,
+        "win": 300,
+        "local": true
+      },
+      "status": "deleted after compositing into f81rslope_Lnn.jpg; regenerable: sh images/regen_f81r_crops.sh slope"
+    },
+    {
+      "crop": "f81rsl_L08_s1.jpg",
+      "source_url": "",
+      "source_file": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "box": [
+        0,
+        590,
+        900,
+        651
+      ],
+      "lines_in_crop": 1,
+      "band": 8,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 184.3
+      },
+      "date": "27 Sep 2026",
+      "slope_fit": {
+        "a": 621.58,
+        "b": -0.00167,
+        "peaks_kept": 10,
+        "half_height": 30,
+        "win": 300,
+        "local": true
+      },
+      "status": "deleted after compositing into f81rslope_Lnn.jpg; regenerable: sh images/regen_f81r_crops.sh slope"
+    },
+    {
+      "crop": "f81rsl_L08_s2.jpg",
+      "source_url": "",
+      "source_file": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "box": [
+        682,
+        590,
+        1582,
+        654
+      ],
+      "lines_in_crop": 1,
+      "band": 8,
+      "segment": 2,
+      "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 184.3
+      },
+      "date": "27 Sep 2026",
+      "slope_fit": {
+        "a": 616.95,
+        "b": 0.005,
+        "peaks_kept": 10,
+        "half_height": 30,
+        "win": 300,
+        "local": true
+      },
+      "status": "deleted after compositing into f81rslope_Lnn.jpg; regenerable: sh images/regen_f81r_crops.sh slope"
+    },
+    {
+      "crop": "f81rsl_L08_s3.jpg",
+      "source_url": "",
+      "source_file": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "box": [
+        1365,
+        592,
+        2265,
+        667
+      ],
+      "lines_in_crop": 1,
+      "band": 8,
+      "segment": 3,
+      "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 184.3
+      },
+      "date": "27 Sep 2026",
+      "slope_fit": {
+        "a": 599.9,
+        "b": 0.01667,
+        "peaks_kept": 10,
+        "half_height": 30,
+        "win": 300,
+        "local": true
+      },
+      "status": "deleted after compositing into f81rslope_Lnn.jpg; regenerable: sh images/regen_f81r_crops.sh slope"
+    },
+    {
+      "crop": "f81rsl_L08_s4.jpg",
+      "source_url": "",
+      "source_file": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "box": [
+        2048,
+        601,
+        2948,
+        689
+      ],
+      "lines_in_crop": 1,
+      "band": 8,
+      "segment": 4,
+      "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 184.3
+      },
+      "date": "27 Sep 2026",
+      "slope_fit": {
+        "a": 569.65,
+        "b": 0.03033,
+        "peaks_kept": 10,
+        "half_height": 30,
+        "win": 300,
+        "local": true
+      },
+      "status": "deleted after compositing into f81rslope_Lnn.jpg; regenerable: sh images/regen_f81r_crops.sh slope"
+    },
+    {
+      "crop": "f81rsl_L08_s5.jpg",
+      "source_url": "",
+      "source_file": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "box": [
+        2730,
+        620,
+        3630,
+        719
+      ],
+      "lines_in_crop": 1,
+      "band": 8,
+      "segment": 5,
+      "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 184.3
+      },
+      "date": "27 Sep 2026",
+      "slope_fit": {
+        "a": 531.83,
+        "b": 0.04333,
+        "peaks_kept": 10,
+        "half_height": 30,
+        "win": 300,
+        "local": true
+      },
+      "status": "deleted after compositing into f81rslope_Lnn.jpg; regenerable: sh images/regen_f81r_crops.sh slope"
+    },
+    {
+      "crop": "f81rsl_L13_s1.jpg",
+      "source_url": "",
+      "source_file": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "box": [
+        0,
+        884,
+        900,
+        973
+      ],
+      "lines_in_crop": 1,
+      "band": 13,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 184.3
+      },
+      "date": "27 Sep 2026",
+      "slope_fit": {
+        "a": 918.5,
+        "b": 0.02333,
+        "peaks_kept": 12,
+        "half_height": 34,
+        "win": 300,
+        "local": true
+      },
+      "status": "deleted after compositing into f81rslope_Lnn.jpg; regenerable: sh images/regen_f81r_crops.sh slope"
+    },
+    {
+      "crop": "f81rsl_L13_s2.jpg",
+      "source_url": "",
+      "source_file": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "box": [
+        682,
+        898,
+        1582,
+        992
+      ],
+      "lines_in_crop": 1,
+      "band": 13,
+      "segment": 2,
+      "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 184.3
+      },
+      "date": "27 Sep 2026",
+      "slope_fit": {
+        "a": 913.45,
+        "b": 0.02833,
+        "peaks_kept": 12,
+        "half_height": 34,
+        "win": 300,
+        "local": true
+      },
+      "status": "deleted after compositing into f81rslope_Lnn.jpg; regenerable: sh images/regen_f81r_crops.sh slope"
+    },
+    {
+      "crop": "f81rsl_L13_s3.jpg",
+      "source_url": "",
+      "source_file": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "box": [
+        1365,
+        915,
+        2265,
+        1013
+      ],
+      "lines_in_crop": 1,
+      "band": 13,
+      "segment": 3,
+      "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 184.3
+      },
+      "date": "27 Sep 2026",
+      "slope_fit": {
+        "a": 904.2,
+        "b": 0.03333,
+        "peaks_kept": 12,
+        "half_height": 34,
+        "win": 300,
+        "local": true
+      },
+      "status": "deleted after compositing into f81rslope_Lnn.jpg; regenerable: sh images/regen_f81r_crops.sh slope"
+    },
+    {
+      "crop": "f81rsl_L13_s4.jpg",
+      "source_url": "",
+      "source_file": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "box": [
+        2048,
+        939,
+        2948,
+        1026
+      ],
+      "lines_in_crop": 1,
+      "band": 13,
+      "segment": 4,
+      "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 184.3
+      },
+      "date": "27 Sep 2026",
+      "slope_fit": {
+        "a": 931.3,
+        "b": 0.02067,
+        "peaks_kept": 12,
+        "half_height": 34,
+        "win": 300,
+        "local": true
+      },
+      "status": "deleted after compositing into f81rslope_Lnn.jpg; regenerable: sh images/regen_f81r_crops.sh slope"
+    },
+    {
+      "crop": "f81rsl_L13_s5.jpg",
+      "source_url": "",
+      "source_file": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "box": [
+        2730,
+        956,
+        3630,
+        1028
+      ],
+      "lines_in_crop": 1,
+      "band": 13,
+      "segment": 5,
+      "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 184.3
+      },
+      "date": "27 Sep 2026",
+      "slope_fit": {
+        "a": 978.0,
+        "b": 0.00467,
+        "peaks_kept": 12,
+        "half_height": 34,
+        "win": 300,
+        "local": true
+      },
+      "status": "deleted after compositing into f81rslope_Lnn.jpg; regenerable: sh images/regen_f81r_crops.sh slope"
+    },
+    {
+      "crop": "f81rsl_L15_s1.jpg",
+      "source_url": "",
+      "source_file": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "box": [
+        0,
+        996,
+        900,
+        1081
+      ],
+      "lines_in_crop": 1,
+      "band": 15,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 184.3
+      },
+      "date": "27 Sep 2026",
+      "slope_fit": {
+        "a": 1031.9,
+        "b": 0.016,
+        "peaks_kept": 12,
+        "half_height": 35,
+        "win": 300,
+        "local": true
+      },
+      "status": "deleted after compositing into f81rslope_Lnn.jpg; regenerable: sh images/regen_f81r_crops.sh slope"
+    },
+    {
+      "crop": "f81rsl_L15_s2.jpg",
+      "source_url": "",
+      "source_file": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "box": [
+        682,
+        1007,
+        1582,
+        1096
+      ],
+      "lines_in_crop": 1,
+      "band": 15,
+      "segment": 2,
+      "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 184.3
+      },
+      "date": "27 Sep 2026",
+      "slope_fit": {
+        "a": 1028.15,
+        "b": 0.021,
+        "peaks_kept": 12,
+        "half_height": 35,
+        "win": 300,
+        "local": true
+      },
+      "status": "deleted after compositing into f81rslope_Lnn.jpg; regenerable: sh images/regen_f81r_crops.sh slope"
+    },
+    {
+      "crop": "f81rsl_L15_s3.jpg",
+      "source_url": "",
+      "source_file": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "box": [
+        1365,
+        1019,
+        2265,
+        1125
+      ],
+      "lines_in_crop": 1,
+      "band": 15,
+      "segment": 3,
+      "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 184.3
+      },
+      "date": "27 Sep 2026",
+      "slope_fit": {
+        "a": 1000.25,
+        "b": 0.03967,
+        "peaks_kept": 12,
+        "half_height": 35,
+        "win": 300,
+        "local": true
+      },
+      "status": "deleted after compositing into f81rslope_Lnn.jpg; regenerable: sh images/regen_f81r_crops.sh slope"
+    },
+    {
+      "crop": "f81rsl_L15_s4.jpg",
+      "source_url": "",
+      "source_file": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "box": [
+        2048,
+        1047,
+        2948,
+        1149
+      ],
+      "lines_in_crop": 1,
+      "band": 15,
+      "segment": 4,
+      "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 184.3
+      },
+      "date": "27 Sep 2026",
+      "slope_fit": {
+        "a": 1009.9,
+        "b": 0.03533,
+        "peaks_kept": 12,
+        "half_height": 35,
+        "win": 300,
+        "local": true
+      },
+      "status": "deleted after compositing into f81rslope_Lnn.jpg; regenerable: sh images/regen_f81r_crops.sh slope"
+    },
+    {
+      "crop": "f81rsl_L15_s5.jpg",
+      "source_url": "",
+      "source_file": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "box": [
+        2730,
+        1070,
+        3630,
+        1153
+      ],
+      "lines_in_crop": 1,
+      "band": 15,
+      "segment": 5,
+      "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+      "params": {
+        "pitch_autocorr": 52,
+        "distance": 36,
+        "prominence": 184.3
+      },
+      "date": "27 Sep 2026",
+      "slope_fit": {
+        "a": 1067.5,
+        "b": 0.014,
+        "peaks_kept": 12,
+        "half_height": 35,
+        "win": 300,
+        "local": true
+      },
+      "status": "deleted after compositing into f81rslope_Lnn.jpg; regenerable: sh images/regen_f81r_crops.sh slope"
     }
   ],
   "crops_note": "MONT-4715, 27 Sept 2026: superseded an earlier --max-width 2400 attempt (prefix f81r_L*.jpg, 2 segments/line) after two independent blind Sonnet passes both declined to transcribe it as illegible; re-cut at --max-width 900 (5 segments/line) and upscaled 3x LANCZOS -- see images/regen_f81r_crops.sh and NOTES.md. The wide crops were deleted, not kept.",
@@ -2027,5 +2627,20 @@
   },
   "mont_cal": {
     "f81rgrp_L03_groups_debug.jpg": "MONT-CAL 27 Sept 2026: tools/iiif_lines.py --groups 6 --group-lines 3 --debug overlay on band L03 of the cached native region; shows the column profile cannot split this hand's groups (NOTES.md MONT-CAL U2)"
+  },
+  "mont_recrop": {
+    "date": "27 Sept 2026",
+    "job": "MONT-RECROP",
+    "sheets": [
+      "f81rslope_L03.jpg",
+      "f81rslope_L08.jpg",
+      "f81rslope_L13.jpg",
+      "f81rslope_L15.jpg"
+    ],
+    "command": "tools/iiif_lines.py --image images/src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg --region 0,0,3630,2243 --prefix f81rsl --max-width 900 --follow-slope 300 --slope-local --slope-margin 6 --only-lines 3,8,13,15; 3x LANCZOS; segments stacked vertically, 22 px label strip each, JPEG q90",
+    "regen": "sh images/regen_f81r_crops.sh slope (second block)",
+    "why": "f81rsheet_Lnn.jpg were cut at a fixed y; the lines slope ~0.02 and left the strip in segment 3-4 (MONT-READ-DIGITS)",
+    "eye_check": "L03/L08/L13/L15: named line (segment 1 = call A's opening digits) is the central row of all 5 segments, overlaps continuous (NOTES.md MONT-RECROP U2)",
+    "network_requests": 0
   }
 }

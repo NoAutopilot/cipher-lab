@@ -5,7 +5,8 @@
 2. fr.20140 f.36r native image (ciphers/fr20140-danzay-1557/images/native_f71.jpg): box 1300,1770,3400,210, the one
    cipher line the reconciler transcribed, gives 1 line; box 1000,1600,3900,1400 gives the 8 full lines visible in
    that region (checked by eye on the --debug overlay, 24 Sept 2026).
-3. Size cap: with the cap lowered, the fetched reference copy is downscaled and renamed, the crops are not.
+3. --groups (4) and --follow-slope (5, MONT-RECROP: a sloping line a fixed-y cut loses and a sloped cut keeps).
+6. Size cap: with the cap lowered, the fetched reference copy is downscaled and renamed, the crops are not.
 Run: python3 tools/tests/test_iiif_lines.py"""
 import contextlib, io, json, os, random, shutil, sys, tempfile
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -65,6 +66,42 @@ try:
                 '--group-lines', '2', '--max-width', '2000', '--distance', '50')
         n = len([e for e in r['entries'] if e.get('group')])
         check(n == want, f"--groups 30 on {label} spacing: {n} pieces (want {want})")
+
+    # 5. --follow-slope (MONT-RECROP, 27 Sept 2026): seven lines at a 52 px pitch sloping 60 px down over 3000 px (the
+    #    f.81r shape). A fixed-y cut of band 3 is more than half a pitch off its own line in the last segment (the
+    #    strip's central row is the neighbour); the sloped cut follows the line the band shows at its left end.
+    im = Image.new('RGB', (3000, 520), (235, 225, 200)); d = ImageDraw.Draw(im)
+    slope, starts = 0.02, [60 + 52 * i for i in range(7)]
+    for y0 in starts:
+        for x in range(100, 2900, 40):
+            y = y0 + slope * x
+            d.rectangle([x, y - 10, x + 24, y + 10], fill=(40, 30, 20))
+    pg = os.path.join(tmp, 'slope.jpg'); im.save(pg, quality=95)
+    def centre_ink(path):                            # share of dark pixels in the strip's middle third
+        g = Image.open(path).convert('L'); w, h = g.size
+        px = [g.getpixel((x, y)) for x in range(0, w, 2) for y in range(h // 3, 2 * h // 3)]
+        return sum(v < 120 for v in px) / len(px)
+    rf = run('--image', pg, '--out', os.path.join(tmp, 'sf'), '--prefix', 'f', '--max-width', '900', '--distance', '40',
+             '--only-lines', '3')
+    rs = run('--image', pg, '--out', os.path.join(tmp, 'ss'), '--prefix', 's', '--max-width', '900', '--distance', '40',
+             '--only-lines', '3', '--follow-slope', '300', '--slope-local')
+    top, bot, _ = rf['bands'][2]
+    y0 = min(starts, key=lambda s0: abs(s0 + slope * 250 - (top + bot) / 2))   # the line band 3 shows at its left end
+    last = len(rf['segments']); sx0, sx1 = rf['segments'][-1]
+    true_y = y0 + slope * (sx0 + sx1) / 2
+    fixed_off = abs((top + bot) / 2 - true_y)
+    sx = [e for e in rs['entries'] if e['segment'] == last][0]
+    fit = sx['slope_fit']                            # the (local) fit this strip was cut on
+    slope_off = abs(fit['a'] + fit['b'] * (sx0 + sx1) / 2 - true_y)
+    check(fixed_off > 26, f'fixed-y cut is {fixed_off:.0f} px off the line in its last segment (> half the 52 px pitch)')
+    check(slope_off <= 8 and abs(fit['b'] - slope) < 0.005,
+          f"--follow-slope fit b={fit['b']} follows the same line: {slope_off:.1f} px off in the last segment")
+    check(centre_ink(os.path.join(tmp, 'ss', sx['crop'])) > 0.2, 'sloped last-segment strip has the line in its middle third')
+    check(len(rs['entries']) == last and all(e.get('slope_fit') for e in rs['entries']),
+          '--only-lines 3 writes one line; entries carry slope_fit')
+    r0 = run('--image', pg, '--out', os.path.join(tmp, 'sd'), '--prefix', 'd', '--max-width', '900', '--distance', '40')
+    check(all('slope_fit' not in e for e in r0['entries']) and r0['entries'][0]['box'] == [0, r0['bands'][0][0], 900,
+          r0['bands'][0][1]], 'default (no --follow-slope) unchanged: fixed boxes, no slope_fit')
 
     out = os.path.join(tmp, 'cap'); os.makedirs(out)
     shutil.copy(page, os.path.join(out, 'src_test_full.jpg'))
