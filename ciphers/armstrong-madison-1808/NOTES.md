@@ -1494,3 +1494,50 @@ superscript ticks could be under a *different* table -- a read of that column at
 target's marks by group length vs shuffled positions (cheap, script + one look). No reading, no class change.
 Requests per host: tile.loc.gov 3. Cost: no get_session figure to this runner; the row's estimate (1.5 USD) is what
 `campaign.py --spend` records. Vision: 17 native crops read by this runner directly, no subagent calls.
+
+## Campaign step H2 (27 Sept 2026, 23:21-23:33 UTC)
+
+Runner: campaign runner armstrong-madison-1808 (account 2, session_013E5jUS9GV1AsxLeUcwgbf6). Hypothesis H2: turn the
+SO-ARMSTRONG-COMPONENTS glyph-null finding ("glyph 20 always null" target outranks all 20 of its own token shuffles,
+0/20; "glyphs 20+22 null" 6/20; `second-opinions/chatgpt-components-2026-09-27.md`) into a rule-3-sized control at
+this repository's 200-shuffle convention (ARM-A2, ARM3-DICT) and report the real percentile.
+
+**Rebuild.** `glyphnull/h2_shuffles.py` reconstructs the second opinion's own reproducer: the codex-2026-09-27b
+257-token / 36-shape provisional glyph transcription with glyph 20 (37 tokens) or glyphs 20+22 (50 tokens) deleted
+(N=220/K=35 and N=207/K=34, 27 fragments), a character 5-gram model on en18 minus the Jefferson volume (backoff 5,
+J->I, V->U), its incremental-scoring annealer (<=2 homophones per letter, 150 restarts x 50,000 proposals, seed 731),
+its three matched positive controls from held-out Jefferson text at the same N, K and fragment lengths (gate >=98%
+recovered, controls before target), and its token-shuffle nulls with the same seeds (270932+s), extended from 20 to
+200. Reproduction is exact: controls 220/220, 218/220, 220/220 and 207/207, 205/207, 207/207; targets -274.415061677
+and -263.987430959; all 40 recorded shuffle scores match to 1e-6 (`h2_shuffle_scores.tsv` rows 0-19 of each model).
+Pre-registered reading: PASS = target above the 200-shuffle 95th percentile.
+
+| model | N / K | controls | target (seed 731) | 200 shuffles: mean, sd, p95, max | at/above target | verdict |
+|---|---|---|---|---|---|---|
+| glyph 20 null | 220 / 35 | 220, 218, 220 of 220 | -274.415 | -287.867, 4.392, -279.625, -275.804 | 0/200 | PASS at seed 731 (z 3.06) -- see the seed test |
+| glyphs 20+22 null | 207 / 34 | 207, 205, 207 of 207 | -263.987 | -263.567, 4.143, -257.430, -248.836 | 102/200 | FAIL (percentile 49) |
+
+**Seed test (`h2_target_seeds.tsv`).** The seed-731 target's best-of-150 restart (-274.4) is 10 points above its own
+second-best restart (-284.8), so the PASS rests on one optimum. Re-running the same target at seeds 732-741: best-of-150
+= -288.7, -279.0, -288.8, -291.2, -287.7, -278.7, -278.4, -285.2, -287.8, -283.3 (11-seed mean -283.9, sd 5.3, median
+-285.2). Against the 200-shuffle band (itself best-of-150 at seed 731 per shuffle): 4 of 11 seeds above p95, 1 of 11
+(seed 731 itself) above the shuffle maximum, the median seed at the 33rd percentile. The 0/20 -- and this run's 0/200 --
+is a property of one search seed, not of the sequence; on the average seed the target sits inside its shuffle band.
+
+**Calibration (`h2_control_shuffles.tsv`).** 40 token-shuffles of each positive control score mean -309.7 / -302.2 /
+-300.8 (p95 -301.9 / -296.8 / -292.9) against the controls' own -183.8 / -164.3 / -166.2: enciphered English of this N
+sits 120-140 points above its shuffles under this model, the target 4 points above its shuffles on the seed average.
+On that axis the glyph-20-null target is at about 3% of the way from "random order" to "English": whatever order
+structure the glyph transcription carries, it is not the structure of a <=2-homophone English letter substitution with
+glyph 20 as a null, and a shuffle null is in any case a necessary-not-sufficient test (any non-exchangeable sequence --
+a transcription with copied repeated patterns, any language, any shorthand -- beats shuffles).
+
+**Verdict for the campaign:** FAIL, control-backed; the second opinion's own wording ("not proof ... a small,
+exploratory comparison") stands and its 0/20 is now explained as seed dependence. The raw seed-731 output
+(`r|emcm|toftest|f|pstos|...`, audit only) is not English. No reading, no class change. Nothing here bears on the glyph
+transcription itself (M-grade, one reader) or on shorthand/word-sign designs, which this model does not cover.
+Suggestion: any future shuffle-null claim on this target (or any target) reports the target's best-of-R over several
+seeds against the shuffle band, not one seed's -- the same "control can fail differently" rule 3 asks of controls,
+applied to the search's own randomness. Requests: none (offline). Cost: no get_session figure to this runner; the row's
+estimate (2 USD) is what `campaign.py --spend` records. Compute: 400 shuffle runs + 120 control-shuffle runs + 11 target
+seeds, about 12 min on 4 cores; sequences and binaries in the scratchpad, tables in `glyphnull/`.
