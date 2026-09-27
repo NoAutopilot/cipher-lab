@@ -1170,3 +1170,13 @@ unchecked.
 - archival-route; Annet's 1752 and 1770 shorthand manuals inspected directly (Dropbox PDF mirrors via Stenophile's historical collection, SHA-256 hashes recorded); the 1770 manual's PDF pp.16-17 give plaintext for twenty engraved examples, an untried literal-decode source not yet implemented -- unchecked.
 - archival-route; Narváez's article on the Wouves numeric-table cipher (AGN IV c.2610 exp.026 f.19, Mexico) gives the coordinate mechanism (62 alphabetic columns, arbitrary hundred-bases + row 1-99) but not the complete table; the Wellcome-catalogued ECCO item `CB0131087164` holding the full table was not retrieved -- unchecked.
 - lead (Livingston witness); re-examination of frame `mjm014253_0303.jpg` locates a short cipher passage with one-reader interlinear associations (grade M), including groups `1523 518 1126 1467` read as the "Marbois" run and `715 1583 648 967 913` as "his full power(s) that he"; developed further in PR 43 -- unchecked.
+
+
+## Second-opinion checkpoint (SO-ARMSTRONG-LIVINGSTON-WITNESSES, 27 Sept 2026)
+
+Landed from PR 43 (`second-opinions/chatgpt-livingston-witnesses-2026-09-27.md`, PR-LAND-17). A runner
+checkpoint report, not a leads-prompt answer or a reading; every citation below is a claim to verify, never
+a fact -- unchecked.
+
+- lead; a 19-entry provisional Livingston base-reading table (grade M-provisional, one reader, unblinded) built from four existing manuscript image crops (`mjm014253_0303.jpg`, `mjm014121_p_1064.jpg`, `mjm014224_0205.jpg`, `mjm014123_1076.jpg`, hashes and crop boxes recorded) -- not a certified WE027 key -- unchecked.
+- experiment-negative; applying the same 19 group values to the unchanged 366-group Armstrong ciphertext gives only two literal hits, each occurring once (group 648="power" at numeric position 357, group 967="that" at position 285) -- sparse overlap, not proposed as Armstrong readings -- unchecked.
