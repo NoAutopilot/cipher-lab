@@ -1658,3 +1658,41 @@ Lesson for the transcription brief: `tools/iiif_lines.py`'s region x0 must sit l
 line (check the debug overlay's left edge, not only its top edge -- ARM-TR2's fix covered the top margin only).
 Requests: none. Cost: no get_session figure to this runner; the row's estimate (1.5 USD) is what `campaign.py --spend`
 records. Vision: 2 Sonnet subagent calls (three small crops each) + 8 crops read by this runner.
+
+## Campaign step H17 (27 Sept 2026, 23:48-23:51 UTC)
+
+Runner: campaign runner armstrong-madison-1808 (account 2, session_013E5jUS9GV1AsxLeUcwgbf6). Hypothesis H17: the same
+crop-edge check on pages 2-3 (frames 0031/0032, the two exposures of the same leaf-spread) for the seven groups still
+`in_ciphertext_not_ms` after H5 and the substitutions near line ends.
+
+**Finding: page 2's RIGHT edge, same bug.** The crops_0031L/0032L region ends at native x=1900 but page 2's lines run
+into the gutter (to about x=1960), so eight line tails lost their last group; page 3's crops start at x=1950, which
+loses a digit only where a head touches the fold. Gutter strips of both witnesses (`images/crops_gutter/`, x 1450-2450,
+native) read directly by this runner on 0031 and 0032, plus one blind Sonnet pass on the 0031 strips:
+
+| ms line (page 2) tail before | manuscript | blind pass | grade |
+|---|---|---|---|
+| ... 1248 | 1248. 1430 | 1248. 1430 | H |
+| ... 1267 | 1267. 18. 1 | 481. 1267. 18. | 18 H, 1 M (in the fold) |
+| ... 1264 156 | 1264. 1567. | 1264. 1567. | H |
+| ... 1240 143 | 1240. 1430. | 1240. 1430. | H |
+| ... 1537 17 18 | 1537. 17. 1894 | 1537. 17. 1894 | H |
+| ... 1480 1762 | 1480. 1762. 12. | 1480. 1762. 12. | H |
+| ... 380 460 | 380. 460. 17 | 380. 460a. 17? | M |
+| ... 3 47 | 3. 47. 1786 | 99. 3. 47. 1780 | M, written "1786?" (last digit in the fold; Bourdeau 1786) |
+
+Page 3 head "130. 164. 180.": both witnesses and the pass read "130" where `ciphertext.txt` has "1 ** 1130"; a leading
+"1" could sit under the fold on both exposures, so left as "130" (M), unresolved by these frames. Applied to
+`ciphertext_ms.txt` with a header note. `tr/diff_ms_vs_ciphertext.py` now: 369 ms tokens against 369, substitutions 4,
+in_ciphertext_not_ms 2, in_ms_not_ciphertext 3, **match_ratio 0.9837** (0.9574 at the start of this session, 0.9672
+after H5). What remains is real: 1843/1841 and 200/203 (both confirmed digit disagreements with Bourdeau), the "2" at
+the page-1 line-12 head (a mark), Bourdeau's "1" inside the page-3 mark line, the ms's own "31?", "13" and "3" read
+inside mark runs (M), and the 130/1130 fold question.
+
+**Verdict for the campaign:** resolved; the manuscript transcription and Bourdeau's now agree on 98.4% of groups
+with every disagreement named, and no crop-geometry residue is left. Every family control on this target is
+conditional on the transcription (SALV-DIAG), so this is the cheapest reliability gain on file. Lesson for the
+transcription brief (with H5's): check `tools/iiif_lines.py`'s region against the debug overlay on all four edges;
+on a two-page spread the region must reach into the gutter from both sides. No reading, no class change. Requests:
+none. Cost: no get_session figure to this runner; the row's estimate (1.5 USD) is what `campaign.py --spend` records.
+Vision: 1 Sonnet subagent call (two strips) + 6 strips read by this runner.
