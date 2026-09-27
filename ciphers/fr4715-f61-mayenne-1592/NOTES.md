@@ -819,3 +819,25 @@ these classes are that split). Not a reading; no class change; grades unchanged 
 and the period gloss it reprints). Files: `scripts/f61joint.py`, `f61joint_result.txt`, `f61joint_map.tsv`;
 HYPOTHESES.md row added. No credentials, no AskUserQuestion, no novelty wording; the owner not named.
 
+## Campaign step H23 (2026-09-27 23:54 UTC)
+
+Campaign runner (Fable, session_01UgTmQhR7wFtVFrTVdtsq9i), script-only. Hypothesis H23 (F61-SUBSYM): do the reader's
+classes already separate the table's two a/n symbols and two e/r symbols? (`scripts/f61subsym.py`, `f61subsym_result.txt`,
+pre-registered gate: a class pair with 3+ counts each side and at most 1 crossing.)
+
+| class | a | n | other | | class | e | r | other |
+|---|---|---|---|---|---|---|---|---|
+| C43 | 8 | 6 | b 1 | | PHI triple loop (f.61) | 5 | 2 | |
+| 4STEM | 3 | 0 | | | PHI plain (f.61) | 6 | 0 | o 1 |
+| C6 | 2 | 0 | | | PHI (f.108, unsplit) | 13 | 7 | o 2 |
+| LOOPBAR | 2 | 0 | | | | | | |
+| 4PI | 0 | 1 | d 4, p 1 | | | | | |
+
+**FAIL as pre-registered.** C43 carries a and n alike over the two leaves; 4STEM's three a's are suggestive but n never
+appears under it, and PHI's subtypes both lean e. The polyphony is genuine at the reader's class level: the table's
+second symbol for a/n and e/r is not a class the atlas has. H24 (CAMPAIGN.md) proposes the H13-H15 instrument -- a blind
+shape sort of the C43 signs against the a/n letters at their positions -- which is what separated VBAR. Not a reading;
+no class change. Day's budget after this step 39.25/40 (the orchestrator's 23:43 reconciliation plus the runner's
+estimates since): the next steps (H22 est 2, H21 est 4) wait for the new day's budget or a raise. No credentials, no
+AskUserQuestion, no novelty wording; the owner not named.
+

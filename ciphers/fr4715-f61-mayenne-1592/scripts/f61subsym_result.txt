@@ -1,0 +1,12 @@
+test 1: a versus n under the classes the joint fit assigns a/n
+  C43	a:8	n:6	all letters 15: a:8 n:6 b:1
+  4STEM	a:3	n:0	all letters 3: a:3
+  C6	a:2	n:0	all letters 2: a:2
+  LOOPBAR	a:2	n:0	all letters 2: a:2
+  4PI	a:0	n:1	all letters 6: d:4 n:1 p:1
+test 2: e versus r under the phi subtypes (f.61 reader notes; f.108 PHI unsplit) and other e/r-assigned classes
+  PHI_triple	e:5	r:2	all letters 7: e:5 r:2
+  PHI_plain	e:6	r:0	all letters 7: e:6 o:1
+  PHI	e:13	r:7	all letters 22: e:13 r:7 o:2
+  HASH4	e:0	r:0	all letters 0: 
+GATE H23 (a pair of classes splits a/n or e/r, 3+ each side, at most 1 crossing): FAIL
