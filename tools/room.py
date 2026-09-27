@@ -369,7 +369,9 @@ def push(message, paths):
         # stale branch pointer and fails every retry. `HEAD:main` pushes what is actually checked out either way.
         p = sh("git", "push", "-q", "-u", "origin", "HEAD:main")
         if p.returncode == 0:
-            print("pushed " + sh("git", "rev-parse", "--short", "HEAD").stdout.strip()); return 0
+            print("pushed " + sh("git", "rev-parse", "--short", "HEAD").stdout.strip())
+            sh("git", "checkout", "-B", "main", "HEAD")
+            return 0
         time.sleep(3 + 2 * i)
     print("push failed five times"); return 6
 

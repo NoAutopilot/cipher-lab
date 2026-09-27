@@ -1,0 +1,33 @@
+# pattern	bucket
+# Checked in order against a LEDGER.md row's Role cell (case-insensitive regex); first match wins.
+# Buckets are the four of parent.md "Effort allocation" (owner, 27 Sept 2026): S = solving/transcription/
+# recovery, A = acquisition of inputs, V = validation and novelty research, C = coordination and
+# maintenance. RETRO-2026-09-27x P5: "lane orchestrators count as C, key-image transcription and intake
+# as A, and check-solved as V" is why orchestrator/parent/room/board (C) and intake/scout/fetch/image (A)
+# are checked ahead of the transcription/reading keywords that a mixed-purpose row's title also carries
+# (e.g. "KEY-IMG-3251: fetch and transcribe ..." matches "fetch" before "transcribe").
+orchestrator	C
+\bparent\b	C
+\bretro(spective)?\b	C
+\bLEARN\b	C
+\btool[s]?\b	C
+room\.py	C
+\bboard\b	C
+\bverif(y|ied|ier)\b	V
+\baudit\b	V
+check-solved	V
+\bcontrol\b	V
+\bnovelty\b	V
+\bintake\b	A
+\bscout\b	A
+\bfolio\b	A
+\bfetch\b	A
+\bimage[s]?\b	A
+\brequest\b	A
+\bBnF\b	A
+\btranscri(be|bed|ption)\b	S
+\bdecode\b	S
+\bcalibrat(e|ion)\b	S
+\breading\b	S
+\bsolver\b	S
+\brecovery\b	S

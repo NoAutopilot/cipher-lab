@@ -11,7 +11,21 @@ Two modes:
 
        python3 tools/solver_repo_diff.py BOURDEAU_CLONE AYMELOGLU_CLONE > out.tsv
 
-2. Census mode (--census, added 24 Sept 2026, LANE N): for every row of a DECODE RecordsList census
+2. Register mode (--register REGISTER_TSV, added 27 Sept 2026, RETRO-2026-09-27x P3): for every row of a
+   register with `archive`, `shelfmark` and `folios` columns (KEY-ADJACENT.tsv), reduce archive+shelfmark
+   to volume keys (decode_neighbours_exclude.volume_keys, which normalises fr./français, Clair./
+   Clairambault, Colbert/Mélanges de Colbert/500 de Colbert, Baluze, Dupuy and NAF onto one form each,
+   plus its existing forms) and DECODE ids (ids_in), and the row's own folios/item numbers to a set of
+   folio tokens. Grep fresh Bourdeau profile.json+NOTES.md and Aymeloglu TARGETS/SHORTLIST/README/
+   catalogue lines -- including catalog/decode-catalog.csv -- for a volume-key or id match, and print
+   `none` (no match anywhere), `partial` (the volume/id matches but no folio or item number in the row is
+   confirmed in the matching source -- a shelfmark-only match licenses nothing about which items are
+   covered, this section's own headline paragraph 3 lesson), or `full-reading` (a folio/item number or a
+   DECODE id matches too), with the matching path.
+
+       python3 tools/solver_repo_diff.py --register KEY-ADJACENT.tsv BOURDEAU_CLONE AYMELOGLU_CLONE
+
+3. Census mode (--census, added 24 Sept 2026, LANE N): for every row of a DECODE RecordsList census
    TSV (tools/decode_list.py's output columns: id, status, record_type, holder_raw, city,
    shelfmark_code, date_range, ...), decides who already holds it: a cipher-lab target folder
    (`ours:<folder>`, or `ours:queue`/`ours:catalog` if only QUEUE.md/CATALOG.md names it), a Bourdeau
@@ -23,13 +37,27 @@ Two modes:
 
        python3 tools/solver_repo_diff.py --census CENSUS_TSV --out OUT_TSV BOURDEAU_CLONE AYMELOGLU_CLONE
 
-Both modes: scripts read, models judge -- the output is hits to check, not verdicts. Bourdeau: MIT code,
+All modes: scripts read, models judge -- the output is hits to check, not verdicts. Bourdeau: MIT code,
 CC BY 4.0 text. Aymeloglu: no licence, cite only.
 """
 import argparse, csv, glob, json, os, re, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from decode_neighbours_exclude import ids_in, volume_keys, build_bourdeau_index, build_aymeloglu_lines
+
+FOLIO_RE = re.compile(r"\bf(?:olio|ol)?\.?\s*(\d+\s*[rv]?)\b|\bno\.?\s*(\d+)\b", re.I)
+
+
+def folio_tokens(s):
+    """Folio/item numbers a register row (or a solver-repo blob) names, e.g. {'321', '333'} from
+    'f.321 (June 1586), f.333 (10 July 1586)' or {'58'} from 'f.81 (no.58)'. Used only to tell a
+    volume-level match ('partial') from a match that also confirms the specific item ('full-reading')."""
+    out = set()
+    for m in FOLIO_RE.finditer(s or ""):
+        tok = (m.group(1) or m.group(2) or "").replace(" ", "").lower()
+        if tok:
+            out.add(tok)
+    return out
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -102,6 +130,75 @@ def run_queue_mode(bour, aym, queue_path=os.path.join(ROOT, "QUEUE.md")):
             if hit:
                 ah.append(f"{rel}:{ln[:90]}")
         print(f"{rank}\t{name[:90]}\t{';'.join(sorted(ks))[:80]}\t{' | '.join(sorted(bh))[:400]}\t{' | '.join(ah[:3])[:300]}")
+
+
+def build_bourdeau_register_index(bour):
+    """folder -> (ids, vols, folio tokens) from every */profile.json (+ full NOTES.md, not just the
+    3000-char head census mode uses -- a register row's folio may be named only deep in NOTES.md)."""
+    idx = {}
+    for prof in glob.glob(os.path.join(bour, "*", "profile.json")):
+        folder = os.path.basename(os.path.dirname(prof))
+        try:
+            p = json.load(open(prof, encoding="utf-8"))
+        except Exception:
+            continue
+        notes_fp = os.path.join(os.path.dirname(prof), "NOTES.md")
+        notes = open(notes_fp, encoding="utf-8", errors="replace").read() if os.path.exists(notes_fp) else ""
+        blob = json.dumps(p, ensure_ascii=False) + " " + notes
+        idx[folder] = (ids_in(blob), volume_keys(blob), folio_tokens(blob))
+    return idx
+
+
+def build_aymeloglu_register_lines(aym):
+    """[(relpath, line), ...] from TARGETS/SHORTLIST/README/CATALOGUE/catalog files, .md or .csv --
+    register mode's own extension over build_aymeloglu_lines() (24 Sept 2026 census mode), which only
+    reads .md files and would miss catalog/decode-catalog.csv (RETRO-2026-09-27x P3)."""
+    lines = []
+    for fp in glob.glob(os.path.join(aym, "**", "*"), recursive=True):
+        name = os.path.basename(fp)
+        if os.path.isfile(fp) and re.search(r"(targets|shortlist|readme|catalogue|catalog)", name, re.I) \
+                and name.lower().endswith((".md", ".csv", ".jsonl", ".json")):
+            for ln in open(fp, encoding="utf-8", errors="replace"):
+                lines.append((os.path.relpath(fp, aym), ln.rstrip("\n")))
+    return lines
+
+
+def register_verdict(vols, ids, ftoks, bidx, alines):
+    """none / partial / full-reading (with the matching path) for one register row's own (vols, ids,
+    ftoks) against a Bourdeau index and Aymeloglu lines -- see the register-mode docstring above."""
+    best = ("none", "")
+    for folder, (bids, bvols, bftoks) in bidx.items():
+        if ids & bids or vols & bvols:
+            path = f"bourdeau:{folder}"
+            if (ids & bids) or (ftoks & bftoks):
+                return "full-reading", path
+            if best[0] == "none":
+                best = ("partial", path)
+    for rel, ln in alines:
+        lvols, lids = volume_keys(ln), ids_in(ln)
+        if not (ids & lids or vols & lvols):
+            continue
+        path = f"aymeloglu:{rel}"
+        if (ids & lids) or (ftoks & folio_tokens(ln)):
+            return "full-reading", path
+        if best[0] == "none":
+            best = ("partial", path)
+    return best
+
+
+def run_register_mode(register_path, bour, aym):
+    bidx = build_bourdeau_register_index(bour)
+    alines = build_aymeloglu_register_lines(aym)
+    with open(register_path, encoding="utf-8") as f:
+        rows = list(csv.DictReader(f, delimiter="\t"))
+
+    print("line\tshelfmark\tverdict\tpath")
+    for i, r in enumerate(rows, start=2):  # data rows start at TSV line 2 (line 1 is the header)
+        haystack = " ".join(r.get(c, "") for c in ("archive", "shelfmark", "folios"))
+        vols, ids = volume_keys(haystack), ids_in(haystack)
+        ftoks = folio_tokens(r.get("folios", ""))
+        verdict, path = register_verdict(vols, ids, ftoks, bidx, alines)
+        print(f"{i}\t{r.get('shelfmark', '')[:60]}\t{verdict}\t{path}")
 
 
 def build_ours_index(repo_root):
@@ -181,6 +278,7 @@ def run_census_mode(census_path, out_path, bour, aym, repo_root=ROOT):
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--census", help="DECODE census TSV (tools/decode_list.py output) to diff, row by row")
+    ap.add_argument("--register", help="register TSV with archive/shelfmark/folios columns (KEY-ADJACENT.tsv) to diff, row by row")
     ap.add_argument("--out", help="output TSV path (census mode only; required with --census)")
     ap.add_argument("--queue", default=os.path.join(ROOT, "QUEUE.md"), help="QUEUE.md path (default: repo root)")
     ap.add_argument("bourdeau_clone", help="path to a shallow clone of dbourdeau/cyphersolver")
@@ -195,6 +293,8 @@ def main():
         total = sum(counts.values())
         print(f"{total} rows -> ours {counts['ours']}, bourdeau {counts['bourdeau']}, "
               f"aymeloglu {counts['aymeloglu']}, none {counts['none']}", file=sys.stderr)
+    elif args.register:
+        run_register_mode(args.register, args.bourdeau_clone, args.aymeloglu_clone)
     else:
         run_queue_mode(args.bourdeau_clone, args.aymeloglu_clone, args.queue)
 

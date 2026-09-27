@@ -23,6 +23,20 @@ Usage:
     a Lesson starting "Ran past its cap" suggests D-), without editing the
     file.
 
+  tools/ledger_check.py --split FROM_ROW
+    RETRO-2026-09-27x P5. Prints the S/A/V/C effort table (parent.md "Effort allocation": Solving/
+    transcription/recovery, Acquisition of inputs, Validation and novelty research, Coordination and
+    maintenance) for every data row at or after line FROM_ROW, classified by matching its Role cell
+    against tools/data/effort_roles.tsv (a regex -> bucket list, checked in order, first match wins).
+    A row can override the regex match with a literal "[bucket:S]" (or A/V/C) tag anywhere in the row.
+    A row matching no pattern and carrying no override tag is listed separately, for the parent to
+    classify by hand rather than silently dropped from the table. Also prints, for every self-ledger
+    parent row (Role matching "parent <name> (Orchestrator ...)"), that parent's own cost against the
+    summed cost of the rows between it and the previous such row (its own tenure's workers), the same
+    figure parent.md's "Effort allocation" paragraph asks a parent to state in its handoff line when its
+    own cost exceeds a third of that sum. Always also runs the main duplicate/outcome-code check below
+    (a --split call is typically the last thing before a push, so this is one command instead of two).
+
   tools/ledger_check.py --placeholder-report
     RETRO-2026-09-26k proposal 3. Lists every row whose Cost cell is an
     unresolved deferral ("see the lane ledger", "parent's get_session (cap
@@ -41,6 +55,13 @@ Usage:
     row whose outcome token is one of the five standard codes is used to
     locate the Cost cell at all, so a row with both an unresolved cost and a
     non-standard outcome code needs the main check's own pass too.
+
+  (always) The main check also flags a row whose Outcome cell starts with a number rather than a
+    code -- the RETRO-2026-09-27x P5 shape (rows 1184, 1186-1188, 1191, 1196-1198): a placeholder cost
+    cell pushed the resolved cost figure one column right into Outcome, leaving the real code stranded
+    in what should be the Lesson cell. This is a distinct defect from a non-standard *code*: the Outcome
+    cell here is not a short token at all, so bad_outcomes above never sees it, and the fix is "move the
+    figure into the Cost cell" (done for the rows above), not a code substitution.
 """
 import argparse
 import os
@@ -49,6 +70,17 @@ import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LEDGER = os.path.join(ROOT, "LEDGER.md")
+EFFORT_ROLES = os.path.join(ROOT, "tools", "data", "effort_roles.tsv")
+
+BUCKET_NAMES = {
+    "S": "Solving / transcription / recovery",
+    "A": "Acquisition of inputs",
+    "V": "Validation and novelty research",
+    "C": "Coordination and maintenance",
+}
+OVERRIDE_RE = re.compile(r"\[bucket:([SAVC])\]")
+LEADING_NUM_RE = re.compile(r"^~?(\d+(?:\.\d+)?)")
+PARENT_SELF_RE = re.compile(r"^parent\s+\S+\s*\(Orchestrator", re.IGNORECASE)
 
 VALID_CODES = ("D", "D-", "F", "X", "N", "Q")
 # Cost is a plain number, an optional "~" (uncertain reading) prefix, or "n/a",
@@ -221,6 +253,147 @@ def find_placeholder_rows(lines):
     return placeholder_rows
 
 
+def find_shifted_outcome_rows(lines):
+    """RETRO-2026-09-27x P5 (always run): a row whose Cost cell fails COST_RE (a placeholder) AND whose
+    following cell starts with a bare number is the row-1184 shape -- the resolved cost figure landed in
+    what should be the Outcome cell, pushing the real D/D- code one column further right. Distinct from
+    bad_outcomes in check(), which only looks at cells find_cost_index() already believes are Outcome."""
+    shifted = []
+    in_table = False
+    for lineno, raw in enumerate(lines, start=1):
+        line = raw.rstrip("\n")
+        if not line.startswith("|"):
+            in_table = False
+            continue
+        fields = split_row(line)
+        if not fields:
+            continue
+        if SEPARATOR_ROW_RE.match(fields[0]) and all(SEPARATOR_ROW_RE.match(f) for f in fields):
+            in_table = True
+            continue
+        if not in_table:
+            continue
+        # The Cost cell sits at index 3 (no Session column) or 4 (with one) -- restrict the search to
+        # those two candidate positions, not an open-ended range, so a legitimate Session cell (never
+        # COST_RE-shaped either) two cells before a numeric Cost isn't mistaken for the placeholder
+        # itself, and so an older, wider ledger row format (date|role|model|cost|outcome|source-type|
+        # count|...|lesson) with a plain descriptive cell later in the row ("Bourdeau offline-only",
+        # "12") isn't scanned at all.
+        for i in (3, 4):
+            if i + 2 >= len(fields) or "session_" in fields[i]:
+                continue
+            # The row-1184 fingerprint is three cells in a row: a placeholder (not COST_RE), then a
+            # bare resolved number, then a cell whose OWN leading token is one of the five valid
+            # outcome codes -- that third cell is what tells this apart from ordinary prose.
+            if not COST_RE.match(fields[i]) and LEADING_NUM_RE.match(fields[i + 1]) \
+                    and not OUTCOME_TOKEN_RE.match(fields[i]) \
+                    and leading_token(fields[i + 2]) in VALID_CODES:
+                shifted.append((lineno, fields[i], fields[i + 1]))
+                break
+    return shifted
+
+
+def load_effort_roles(path=EFFORT_ROLES):
+    rules = []
+    with open(path, encoding="utf-8") as f:
+        for line in f:
+            line = line.rstrip("\n")
+            if not line or line.startswith("#"):
+                continue
+            pattern, bucket = line.split("\t")
+            rules.append((re.compile(pattern, re.IGNORECASE), bucket.strip()))
+    return rules
+
+
+def classify_bucket(role_text, rules):
+    m = OVERRIDE_RE.search(role_text)
+    if m:
+        return m.group(1)
+    for pattern, bucket in rules:
+        if pattern.search(role_text):
+            return bucket
+    return None
+
+
+def leading_cost(cost_text):
+    m = LEADING_NUM_RE.match(cost_text or "")
+    return float(m.group(1)) if m else None
+
+
+def split_table(lines, from_row):
+    """[(lineno, fields), ...] for every LEDGER.md data row at or after from_row."""
+    rows = []
+    in_table = False
+    for lineno, raw in enumerate(lines, start=1):
+        line = raw.rstrip("\n")
+        if not line.startswith("|"):
+            in_table = False
+            continue
+        fields = split_row(line)
+        if not fields:
+            continue
+        if SEPARATOR_ROW_RE.match(fields[0]) and all(SEPARATOR_ROW_RE.match(f) for f in fields):
+            in_table = True
+            continue
+        if not in_table:
+            continue
+        if lineno >= from_row:
+            rows.append((lineno, fields))
+    return rows
+
+
+def print_split(lines, from_row):
+    rules = load_effort_roles()
+    rows = split_table(lines, from_row)
+
+    totals = {b: [0, 0.0] for b in BUCKET_NAMES}
+    unmatched = []
+    parent_rows = []
+    for lineno, fields in rows:
+        role = fields[1] if len(fields) > 1 else ""
+        cost_text, _ = row_cost_and_session(fields)
+        cost = leading_cost(cost_text) or 0.0
+        bucket = classify_bucket(role, rules)
+        if bucket is None:
+            unmatched.append((lineno, role))
+        else:
+            totals[bucket][0] += 1
+            totals[bucket][1] += cost
+        if PARENT_SELF_RE.match(role.strip()):
+            parent_rows.append((lineno, role, cost))
+
+    grand_total = sum(v[1] for v in totals.values())
+    print(f"Effort split, lines >= {from_row} ({len(rows)} rows, USD {grand_total:.2f}):")
+    print("Bucket\tRows\tUSD\tShare")
+    for b in ("S", "A", "V", "C"):
+        n, usd = totals[b]
+        share = (usd / grand_total * 100) if grand_total else 0.0
+        print(f"{b} ({BUCKET_NAMES[b]})\t{n}\t{usd:.2f}\t{share:.1f}%")
+
+    if unmatched:
+        print(f"\nUnmatched rows ({len(unmatched)}), classify by hand or add a [bucket:X] tag:")
+        for lineno, role in unmatched:
+            print(f"  line {lineno}: {role[:100]}")
+
+    if parent_rows:
+        print("\nParent self-ledger rows vs their own tenure's worker spend:")
+        prev_lineno = from_row
+        for lineno, role, own_cost in parent_rows:
+            worker_total = 0.0
+            for wl, wfields in rows:
+                if prev_lineno <= wl < lineno:
+                    wrole = wfields[1] if len(wfields) > 1 else ""
+                    if PARENT_SELF_RE.match(wrole.strip()):
+                        continue
+                    wcost, _ = row_cost_and_session(wfields)
+                    worker_total += leading_cost(wcost) or 0.0
+            ratio = (own_cost / worker_total) if worker_total else float("inf")
+            flag = " -- OVER A THIRD" if worker_total and ratio > 1 / 3 else ""
+            print(f"  line {lineno}: {role[:70]} -- own {own_cost:.2f} vs workers {worker_total:.2f}"
+                  f" (ratio {ratio:.2f}){flag}")
+            prev_lineno = lineno
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
@@ -235,10 +408,20 @@ def main(argv=None):
         action="store_true",
         help="list every row whose Cost cell is an unresolved deferral, session-cross-checked; printed only, always exits 0 (see module docstring)",
     )
+    ap.add_argument(
+        "--split",
+        metavar="FROM_ROW",
+        type=int,
+        help="print the S/A/V/C effort table for rows at or after FROM_ROW, plus parent-vs-worker spend (see module docstring); the main duplicate/outcome-code check still runs",
+    )
     args = ap.parse_args(argv)
 
     with open(LEDGER, encoding="utf-8") as f:
         lines = f.readlines()
+
+    if args.split is not None:
+        print_split(lines, args.split)
+        print()
 
     if args.placeholder_report:
         placeholder_rows = find_placeholder_rows(lines)
@@ -251,8 +434,15 @@ def main(argv=None):
         return 0
 
     dup_sessions, bad_outcomes = check(lines)
+    shifted = find_shifted_outcome_rows(lines)
 
     ok = True
+
+    if shifted:
+        ok = False
+        print("Outcome cell starts with a number (cost shifted one column right):")
+        for lineno, cost_cell, outcome_cell in shifted:
+            print(f"  line {lineno}: cost={cost_cell!r} outcome={outcome_cell!r}")
 
     if dup_sessions:
         ok = False

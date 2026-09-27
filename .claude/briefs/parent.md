@@ -249,6 +249,14 @@ own session ARCHIVED and self-ledgers (per "Self-ledger cost" above), but does n
 own session id; the parent runs `archive_session` on it at the parent's next check-in, per duty 3a's orphan check
 (owner-account parent's ROOM line 09:42, AX2's close).
 
+**Parent context line (27 Sept 2026, RETRO-2026-09-27x P4).** Both parents read their own context usage from
+`get_session` at every check-in, not only when a hand-over already feels close -- the way the SOLVE lineage
+already does by practice (7m handed over to 7n at 583k on 27 Sept; the owner-account parent's own 15:44 check-in
+line named 700k with a successor prompt planned at 850k). Write `hub-seed/SUCCESSOR-PROMPT.md` at 850k of a 1M
+window (or 300k of a 400k window) and hand over before 950k (or 350k): past that point a check-in itself risks
+running out of room to read ROOM.md, the ledger and the open asks before acting on them. A parent that has not
+written its own context figure into a check-in line since this rule landed says so at its next one.
+
 ## Recording the owner (26 Sept 2026)
 
 The owner's decisions go into STATUS.md, ROOM.md and the briefs as decisions in plain form ("the owner approved the RAH copy order"; "the owner holds the Tomokiyo question until a solve"), never as quotations of his messages. His words stay in the chat. Rule 9 (never his name) stands.
