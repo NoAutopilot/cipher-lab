@@ -1088,3 +1088,12 @@ already documents a browser UA is needed. No logins, no credentials. No subagent
 
 Rule 10: this is a location and a container-list quotation, not a reading and not a novelty claim; nothing
 here is "new", "unpublished" or "first".
+
+
+## 27 September 2026 — Codex ARM-REATTACK (owner-directed; unsolved)
+
+See [report, scripts and final results](codex-2026-09-27/REPORT.md), commit `06c48356ce5cd427c2791363f988c9016e95f58f`.
+
+Corrections to earlier notes: Krajčovič's Armstrong crib **does exist**, in August 2026 comments on Klaus Schmeh's article, and its source opening is in Armstrong to Jefferson, 15 February 1808. The proposed reading is unverified: the first repeated `240`, assigned **of**, falls where the source letter has **and** after **man**, so exact copying fails under that alignment. `ciphertext.txt` contains three spurious numeric tokens copied from editorial line-count labels (2, 1, 1); the new derivative removes only those, giving N=366, K=216. `ciphertext_ms.txt` also omits visible groups and should not be treated as certified complete. Originals preserved.
+
+New screens: exhaustive 4-digit position/digit permutations (87,091,200 candidates each), invertible affine maps and rectangular grid renumberings against THE972 and WE028, each compared with 20 fully optimized order shuffles. All three synthetic THE972 controls recover 100% of original groups; target maxima remain within shuffle ranges, with no coherent reading. Controls are not fully design-matched (K=189, no graphic breaks, greater known coverage); no code family is excluded. MCMC preserving occupied-decade and units-digit margins gives 26 observed x/10x pairs vs mean 21.58, upper-tail estimate 0.075, not proof of zero equivalence. No target key entries or solved-status promotion. Glyph transcription and the previously recorded Brant/Livingston archival lead remain unresolved; no outreach performed.
