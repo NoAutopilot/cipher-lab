@@ -71,12 +71,16 @@ def run(rows, out, rule):
         out.append(f"GATE H13 under rule {rule} (observed above permutation p95, exact p < 0.05): {'PASS' if obs > p95 and p_exact < 0.05 else 'FAIL'}")
 
 def main():
-    rows = list(csv.DictReader((l for l in open(f"{HERE}/read_call_V.tsv") if not l.startswith("#")), delimiter="\t"))
-    out = [f"read_call_V.tsv: {len(rows)} V-signs listed by the blind call"]
+    # H14 (pre-registered before its call): python3 scripts/f61vbar.py --in read_call_V2.tsv --out f61vbar2_result.txt
+    a = sys.argv[1:]
+    src = a[a.index("--in") + 1] if "--in" in a else "read_call_V.tsv"
+    dst = a[a.index("--out") + 1] if "--out" in a else "f61vbar_result.txt"
+    rows = list(csv.DictReader((l for l in open(f"{HERE}/{src}") if not l.startswith("#")), delimiter="\t"))
+    out = [f"{src}: {len(rows)} V-signs listed by the blind call"]
     run(rows, out, 1)
     run(rows, out, 2)
     txt = "\n".join(out) + "\n"
-    res = f"{HERE}/f61vbar_result.txt"
+    res = f"{HERE}/{dst}"
     if "--check" in sys.argv:
         ok = os.path.exists(res) and open(res).read() == txt
         print("fresh" if ok else "STALE"); sys.exit(0 if ok else 1)
