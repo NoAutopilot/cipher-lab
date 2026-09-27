@@ -2573,3 +2573,108 @@ spec-labelled plain), 90 more flagged by exactly one pass -- still nobody has ed
 --check` and `build_spec.py --check` both exit 0 (`build_spec.py`: 2839 tokens, 236 types, 389 runs, pattern 4053
 boxes -- unchanged, spec/ciphertext_*.tsv untouched). **f57v (172 plain boxes, crops already cut) is the one
 leaf left**, the named next step for whoever picks up job 1's remainder.
+
+## SALV-SPLIT: crop-checking the [C]-flagged plain boxes against a matched control (27 Sept 2026, LANE SALV
+next step (a))
+
+Worker SALV-SPLIT (Sonnet), 00:45-01:21 UTC, brief `.claude/briefs/runs/2026-09-27-parent-ytbiz-salv-split.md`.
+Question: of the 137 plain-labelled boxes (f54r-f56v) that at least one of SALV-PLAIN1/2's own blind passA/passB
+reads called cipher (`[C]` in `plain_boxes.tsv`), how many are real sign boxes mislabelled plain by the spec's
+`row_pattern` -- and is that rate distinguishable from the background rate at which a *fresh* blind reader calls
+an ordinary, never-flagged plain box "sign"? No decoding, no family run, no edit to `specs/fr2933-salviati-1525.json`,
+`ciphertext_f*.tsv` or any committed file the real pipeline reads.
+
+**U0.** Full-leaf renders (`images/*_ref2400.jpg`, the f54r native crop) and `plain_crops/<leaf>/*.png` were not on
+disk (working files, not committed, per SALV-PLAIN1/2/3's own precedent) -- regenerated via `regen_images.sh page`
+(f54r's native crop) plus 4 direct curls at the same IIIF region/offset as SALV-PLAIN1/2's own `/2400,/` fetches
+for f54v/f55r/f56r/f56v (5 gallica.bnf.fr requests total, all 200, >=2s apart, sizes matching the prior session's
+own recorded byte counts), then re-ran `crop_plain_leaf.py` for all 5 leaves -- box/line counts matched SALV-PLAIN1/2's
+own runs exactly (139/152/173/171/207).
+
+**Sample.** From `plain_boxes.tsv`'s `word` column (a box is "flagged" when it contains `[C]`, keyed by (leaf,line,pos)
+since `pos` alone repeats across lines): 137 flagged boxes (f54r 24, f54v 35, f55r 44, f56r 28, f56v 6, matching the
+brief's and NOTES's own prior count exactly). Drew an equal-size CONTROL sample per leaf, uniform random without
+replacement from that leaf's *never*-flagged plain boxes, seed 20260927 (`split_check_sample.json`, seed + both
+box lists committed). Both sets merged into the same per-leaf crop-check call, unlabelled: `crop_plain_leaf.py`'s
+crops mark every plain box on a line (not just the sampled ones) with the same red-underline+number convention
+regardless of flag status, so the reader sees no signal distinguishing a flagged position from a control position
+or from a line's other unmarked plain positions -- rule 3's blind-control design, not merely a post-hoc claim.
+
+**U1, 4 Sonnet subagent calls** (f54r, f54v, f55r, f56r+f56v together per the brief), each given only the leaf's
+full set of line crops plus `glyphs/atlas_part1.png`/`atlas_part2.png`, asked to classify every red-underlined
+box as sign/word/mixed/blank (+ nearest atlas code if sign), with no box label, flag, or hypothesis stated and no
+mention that any position had been previously read as anything. Two calls (f54r, f55r: 8 of 88 sampled boxes) came
+back short on the first pass -- one follow-up message per call, giving the exact missing (line,pos) list and asking
+only for those rows, resolved full coverage on the second reply (274 of 274 sampled boxes covered, 0 duplicates
+after dedup). All raw per-leaf TSVs and the merged, deduplicated `(leaf,line,pos,group,verdict,atlas_glyph)` table
+are in `split_check_rows.tsv` (274 rows).
+
+**Numbers** (rule 3's gain-gate table: the flagged rate against its own matched control, not against a fixed
+threshold):
+
+| leaf | flagged sign-rate | control sign-rate |
+|---|---|---|
+| f54r | 12/24 = 50.0% | 0/24 = 0.0% |
+| f54v | 30/35 = 85.7% | 1/35 = 2.9% |
+| f55r | 31/44 = 70.5% | 13/44 = 29.5% |
+| f56r | 19/28 = 67.9% | 1/28 = 3.6% |
+| f56v | 6/6 = 100.0% | 1/6 = 16.7% |
+| **overall** | **98/137 = 71.5%** | **16/137 = 11.7%** |
+
+Verdict breakdown, overall: flagged 98 sign / 29 word / 10 blank (0 mixed on any box, either group); control 16
+sign / 114 word / 7 blank. Two-proportion z = 10.05 (98/137 vs 16/137); Fisher exact p = 5.3e-25, odds ratio ~19.
+**The flag discriminates, decisively, at every leaf** -- even f55r, the leaf with the highest control sign-rate
+(29.5%, itself notably above the other leaves' controls, consistent with f55r's own harder-to-read reputation
+elsewhere in this file), still shows its flagged rate more than double its control. The 11.7% overall control
+sign-rate is not zero: a solo fresh blind pass calls a genuinely-agreed-plain box "sign" about one time in nine,
+an expected background transcription-noise rate (comparable in shape to bSALC's 14.6% raw two-pass sign-token
+disagreement elsewhere on this target) -- the flagged rate (71.5%) sits far above this floor, not merely above zero.
+
+**Candidate spec rebuild** (`build_spec_candidate.py`, new script, does not touch `build_spec.py` or the committed
+spec/ciphertext files). "Confirmed sign" = a flagged box where this check's own verdict was sign (98 of 137; the
+39 not confirmed -- 29 word, 10 blank -- stay labelled plain, since this check did not corroborate the original
+one-pass flag for them). For each of the 98, wrote a `ciphertext_<leaf>.split-candidate.tsv` (5 leaves) with that
+box's code changed from `_` to the check's own nearest-atlas-glyph guess (28 of 98 answered "unclear" -> `UNK`,
+kept distinct rather than guessed into a named code; marks left empty -- this check never attempted to read a
+mark, only whether the box is sign-like) and `grade` appended `|split-candidate`; the other 3 leaves (f55v, f57r,
+f57v: 0 confirmed) are read unchanged. `specs/fr2933-salviati-1525.split-candidate.json` and
+`ciphers/fr2933-salviati-1525/ciphertext.split-candidate.txt` (one sign-run per line, same token convention as the
+real spec's own `ciphertext` field) are new files beside the real ones; `git diff` on `specs/fr2933-salviati-1525.json`,
+every `ciphertext_f*.tsv` and `ciphertext_with_plain.txt` is empty, and `build_spec.py --check` still reports
+`ok: 2839 tokens, 236 types, 389 runs, pattern 4053 boxes` (unchanged).
+
+| | real spec | candidate | delta |
+|---|---|---|---|
+| tokens | 2839 | 2937 | +98 |
+| types | 236 | 238 | +2 (`O^` x1, `UNK^` x28 -- the other 70 confirmed boxes matched an existing atlas code, a plausibility check the candidate build passes for free) |
+| runs | 389 | 326 | -63 (confirmed-sign boxes mostly sit adjacent to an existing sign run across a single plain box, merging runs rather than starting new ones) |
+| plain (row_pattern `_` count) | 1214 | 1116 | -98 |
+
+One guess (`O`, f56r line19 pos20, flagged) names a code not in the atlas's own 36-code inventory (`S7 w y g bh
+lam nt tee o. rz S Z S4 ] phi e dl psi # Lx m eps wd L + f a H p sq v U K [ N ch`) -- flagged here for whoever
+re-checks it against the atlas plates directly, not silently folded into an existing code.
+
+**Verdict: the split is measurably wrong, not merely noisy.** The spec's `row_pattern` mislabels real sign content
+as plain at a rate (71.5% of the boxes flagged by an earlier pass) that a matched, blind control (11.7%) rules out
+as ordinary transcription error. This does not by itself fix the text: 28 of 98 confirmed positions have no
+transcribed code at all (`UNK`), and none of the 98 has a real mark reading (this check only asked sign-vs-word,
+never asked which mark, if any, sits over a confirmed sign) -- the candidate spec is a sizing exercise (98 more
+sign tokens, 63 fewer runs, +2 types), not a corrected ciphertext ready for a family run.
+
+**Named next step, for the parent/lane to decide:** (1) if the candidate split is adopted, a real transcription
+pass (not a sign/word/blank check) is needed on the 98 confirmed boxes before any family reruns -- one Sonnet
+subagent call per leaf, atlas-plate reference, reading each confirmed box's actual code and mark the way the
+original sign-run passes did, not a guess-from-a-crop-classifier pass; only then does rule 7's reproducibility bar
+apply and only then should bSALR/bSALR2/bSALI/bSALW/R8-DSN or the CM controls be re-run on the corrected text, since
+every one of those consumed the old (now shown partly wrong) split. (2) the still-open item from the LANE SALV
+handoff, re-settling f55v and f56v from the image (never checked against this session's control design), stays
+next after (1) if the candidate split is not adopted, or after the real transcription pass if it is. Status stays
+**partial** (no reading; the spec has not changed; this is a diagnostic, not a decode).
+
+Files: `split_check_sample.json` (committed: seed + both box lists), `build_spec_candidate.py` (committed),
+`ciphertext_f{54r,54v,55r,56r,56v}.split-candidate.tsv` (committed, small), `specs/fr2933-salviati-1525.split-candidate.json`
+and `ciphertext.split-candidate.txt` (committed). `plain_crops/*/*.png` and the regenerated `images/*_ref2400.jpg`
++ f54r native crop are working files, `.gitignore`d this session (folder-size rule; only `plain_crops/*/manifest.tsv`
+and the small canvas jpgs already on file stay tracked). No credentials, no reading, no novelty wording, no "new" or
+"first". Requests: gallica.bnf.fr 5. Subagents: 4 (plus 2 short follow-up messages to 2 of them for missed rows, not
+new calls).
