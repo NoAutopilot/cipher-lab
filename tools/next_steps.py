@@ -40,6 +40,18 @@ with no date anywhere falls back to the previous whole-file "last matching block
 unchanged -- this is a strict refinement, not a new heuristic, so a NOTES.md with no dated
 sections is scored exactly as before.
 
+Fixed 27 Sept 2026 (NX-TRIAGE, CODEX-REVIEW-2026-09-27.md section 2): `classify_blocker()` and
+`estimate_cost_band()` returned "runnable"/"S" for any text no keyword matched, including an EMPTY
+next-step block (a target whose NOTES.md carries no next-step paragraph at all read as cheap
+runnable work and sat at the top of a lane's job-1 pick, parent.md "Opening a lane"), and both were
+called on `one_line()`'s already-truncated 200-character display text, so a blocker keyword sitting
+past the truncation point was missed too. An empty or whitespace-only block now classifies
+`needs-triage`/`?` instead of `runnable`/`S`, and both functions run on the full extracted block
+before truncation; `one_line()`'s output is kept only for the TSV's display column. A
+`next_step_full_len` column records the untruncated block's length. See `classify_blocker()`'s and
+`estimate_cost_band()`'s own docstrings for what each must catch and must not block (CLAUDE.md
+Usage 8a).
+
 Usage:
   tools/next_steps.py [--ciphers-dir ciphers] [--ledger LEDGER.md] [--near NEAR.md] [--out NEXT-STEPS.tsv]
   tools/next_steps.py --check     exit nonzero if NEXT-STEPS.tsv on disk is stale against the folders
@@ -197,6 +209,16 @@ def one_line(text, limit=200):
 
 
 def classify_blocker(next_step_text):
+    """The blocker type for a next-step block. What this must catch (CLAUDE.md Usage 8a): a row
+    with no instruction at all -- an empty or whitespace-only block, meaning `extract_next_step()`
+    found no next-step paragraph in the file -- classifies as `needs-triage`, never `runnable`,
+    since a lane orchestrator reading `runnable` takes the row as ready-to-run job 1 (parent.md
+    "Job 1 from the backlog") and there is nothing here to run. What it must NOT block: a short
+    but real instruction with no blocker keyword in it (e.g. "run print_check on the decoded
+    phrases") stays `runnable` -- brevity alone is not a reason to flag a row for triage, only the
+    total absence of an instruction is (CODEX-REVIEW-2026-09-27.md section 2, NX-TRIAGE)."""
+    if not next_step_text or not next_step_text.strip():
+        return "needs-triage"
     for name, pat in BLOCKER_PATTERNS:
         if pat.search(next_step_text):
             return name
@@ -204,6 +226,13 @@ def classify_blocker(next_step_text):
 
 
 def estimate_cost_band(next_step_text):
+    """The cost band for a next-step block. What this must catch: an empty or whitespace-only
+    block (no instruction to price) bands as `?`, never the cheapest band `S` -- the same failure
+    mode as `classify_blocker()` above, a missing instruction reading as the cheapest possible
+    job. What it must NOT block: a short real instruction with no cost keyword in it still bands
+    `S` (the existing fallback), since most cheap checks (a grep, a re-run) are genuinely short."""
+    if not next_step_text or not next_step_text.strip():
+        return "?"
     if COST_L_RE.search(next_step_text):
         return "L"
     if COST_M_RE.search(next_step_text):
@@ -250,8 +279,11 @@ def build_rows(ciphers_dir, ledger_text, near_text):
             continue
         block = extract_next_step(text)
         next_step = one_line(block)
-        blocker = classify_blocker(next_step)
-        cost_band = estimate_cost_band(next_step)
+        # Classify on the FULL extracted block, before one_line()'s truncation -- a blocker
+        # keyword past the truncation limit (CODEX-REVIEW-2026-09-27.md section 2) must still be
+        # caught, and an empty block must still classify needs-triage/? rather than runnable/S.
+        blocker = classify_blocker(block)
+        cost_band = estimate_cost_band(block)
         row = {
             "folder": target,
             "status": status,
@@ -260,19 +292,26 @@ def build_rows(ciphers_dir, ledger_text, near_text):
             "near_row": "y" if target in near_targets(near_text) else "n",
             "last_touched": last_ledger_date(ledger_text, target),
             "next_step": next_step,
+            "next_step_full_len": str(len(block)),
         }
         rows.append(row)
     return rows
 
 
-COLUMNS = ("folder", "status", "blocker", "cost_band", "near_row", "last_touched", "next_step")
+# next_step_full_len appended rather than inserted (the only script reader, build_dashboard.py's
+# load_next_steps(), zips the header row to each data row by position, so an appended column is
+# additive for it and for any TSV viewer that reads by header name; grepped tools/ and
+# .claude/briefs/ for other readers -- none found, CODEX-REVIEW-2026-09-27.md section 2, U1(b)).
+COLUMNS = ("folder", "status", "blocker", "cost_band", "near_row", "last_touched", "next_step", "next_step_full_len")
 
 
 def render_tsv(rows):
     lines = ["\t".join(COLUMNS)]
     for r in rows:
         lines.append("\t".join(r[c] for c in COLUMNS))
-    counts = {}
+    # needs-triage is always shown, even at 0, so the count cannot silently vanish from the
+    # summary line the way an absent key from a plain Counter would (U1(c)).
+    counts = {"needs-triage": 0}
     for r in rows:
         counts[r["blocker"]] = counts.get(r["blocker"], 0) + 1
     summary = " ".join(f"{k}={v}" for k, v in sorted(counts.items()))
@@ -293,18 +332,19 @@ def main():
     near_text = open(args.near, encoding="utf-8", errors="replace").read() if os.path.exists(args.near) else ""
     rows = build_rows(args.ciphers_dir, ledger_text, near_text)
     fresh = render_tsv(rows)
+    needs_triage = sum(1 for r in rows if r["blocker"] == "needs-triage")
 
     if args.check:
         current = open(args.out, encoding="utf-8").read() if os.path.exists(args.out) else None
         if current != fresh:
             print(f"STALE: {args.out} does not match the folders on disk; re-run without --check to refresh.")
             return 1
-        print(f"OK: {args.out} is current ({len(rows)} rows).")
+        print(f"OK: {args.out} is current ({len(rows)} rows, needs-triage={needs_triage}).")
         return 0
 
     with open(args.out, "w", encoding="utf-8") as f:
         f.write(fresh)
-    print(f"wrote {args.out}: {len(rows)} rows")
+    print(f"wrote {args.out}: {len(rows)} rows, needs-triage={needs_triage}")
     return 0
 
 

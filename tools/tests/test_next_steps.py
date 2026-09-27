@@ -57,6 +57,31 @@ Every family in the ladder ran against a matched control and failed. Next step: 
 target is done.
 """
 
+NO_NEXT_STEP_NOTES = """# empty-target
+
+Status: open
+
+## What this is
+
+A control-backed negative on the masc family. No next-step trigger phrase appears anywhere in this
+file.
+"""
+
+TRUNCATED_BLOCKER_NOTES = (
+    "# trunc-target\n\nStatus: open\n\n## What this is\n\nNext step: "
+    + ("re-run the coverage sweep " * 10)
+    + "then ask the owner to confirm before continuing.\n"
+)
+
+SHORT_RUNNABLE_NOTES = """# short-target
+
+Status: open
+
+## What this is
+
+Next step: run print_check on the decoded phrases.
+"""
+
 TWO_DATED_SECTIONS_NOTES = """# dated-target
 
 Status: partial
@@ -164,6 +189,60 @@ def test_build_rows_excludes_closed_negative_and_classifies(tmp_path):
     assert r2["blocker"] == "needs-person"
     assert r2["near_row"] == "n"
     assert r2["last_touched"] == "24 Sep"
+
+
+def test_empty_next_step_is_needs_triage_not_runnable(tmp_path):
+    """NX-TRIAGE, 27 Sept 2026 (CODEX-REVIEW-2026-09-27.md section 2), case (a): a NOTES.md with
+    no next-step trigger phrase anywhere extracts an empty block, which must classify
+    needs-triage/? rather than runnable/S -- pre-fix, classify_blocker("") and
+    estimate_cost_band("") fell through every pattern to their bare defaults ("runnable", "S")."""
+    assert ns.extract_next_step(NO_NEXT_STEP_NOTES) == ""
+    assert ns.classify_blocker("") == "needs-triage"
+    assert ns.classify_blocker("   \n  ") == "needs-triage"
+    assert ns.estimate_cost_band("") == "?"
+
+    ciphers_dir = tmp_path / "ciphers"
+    write_notes(ciphers_dir, "empty-target", NO_NEXT_STEP_NOTES)
+    rows = ns.build_rows(str(ciphers_dir), LEDGER, NEAR)
+    r = rows[0]
+    assert r["next_step"] == ""
+    assert r["blocker"] == "needs-triage"
+    assert r["cost_band"] == "?"
+
+
+def test_blocker_classified_on_full_block_not_truncated_display_text(tmp_path):
+    """NX-TRIAGE, 27 Sept 2026, case (b): the blocker keyword ("owner") sits past one_line()'s
+    200-character truncation point, so build_rows() must classify on the full extracted block, not
+    on the truncated display text -- pre-fix, build_rows() called classify_blocker()/
+    estimate_cost_band() on `next_step` (already truncated), which never saw "owner" and mis-read
+    this row as runnable."""
+    block = ns.extract_next_step(TRUNCATED_BLOCKER_NOTES)
+    truncated = ns.one_line(block)
+    assert "owner" in block
+    assert "owner" not in truncated, "fixture must place the blocker keyword past the truncation limit"
+    assert ns.classify_blocker(truncated) == "runnable", "sanity: truncated text alone hides the blocker"
+    assert ns.classify_blocker(block) == "needs-person"
+
+    ciphers_dir = tmp_path / "ciphers"
+    write_notes(ciphers_dir, "trunc-target", TRUNCATED_BLOCKER_NOTES)
+    rows = ns.build_rows(str(ciphers_dir), LEDGER, NEAR)
+    r = rows[0]
+    assert r["blocker"] == "needs-person"
+    assert "owner" not in r["next_step"]
+    assert int(r["next_step_full_len"]) == len(block)
+
+
+def test_short_real_instruction_without_blocker_keyword_stays_runnable(tmp_path):
+    """Must-not-block case (CLAUDE.md Usage 8a): a short but real instruction with no blocker
+    keyword in it (e.g. "run print_check on the decoded phrases") stays runnable/S -- the fix must
+    not turn every terse next step into needs-triage, only a genuinely empty one."""
+    ciphers_dir = tmp_path / "ciphers"
+    write_notes(ciphers_dir, "short-target", SHORT_RUNNABLE_NOTES)
+    rows = ns.build_rows(str(ciphers_dir), LEDGER, NEAR)
+    r = rows[0]
+    assert r["next_step"] != ""
+    assert r["blocker"] == "runnable"
+    assert r["cost_band"] == "S"
 
 
 def test_render_tsv_idempotent_and_check_mode(tmp_path):
