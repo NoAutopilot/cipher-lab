@@ -2,6 +2,13 @@
 
 Append-only. Rows below are written by `tools/family_run.py` (CLAUDE.md rule 3: the matched CONTROL number sits beside the TARGET number in every row; a row with gate met = no reports a control that could not read its own design, and the target was not run). Prose sections may be added above this table by workers.
 
+## HES-DRAG, 27 Sept 2026 -- dictionary crib-drag (not run through family_run.py; `tools/running_key.py --crib-drag`, no `--family` wrapper for this mode, so this row is written by hand per the file's own note above)
+
+| date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
+|---|---|---|---|---|---|---|---|---|
+| 27 Sept 2026 07:54 | running_key (crib_drag) | de19_words10.txt (9668 words, 10+ letters) kcorpus=tools/data/de19 all-tabulae top=15 order=6 | seed=1 (control window) | 4/10 top-10 true placements, 5/15 (ranks 1,5,6,7,11) | not run (control-only) | - | yes (>=1 of top 10) | HES-DRAG control, word-aligned P/K windows N=164, plain=Italienische_Reise_Band2 key=Peter_Schlemihl |
+| 27 Sept 2026 08:01 | running_key (crib_drag) | de19_words10.txt (9668 words, 10+ letters) kcorpus=tools/data/de19 all-tabulae top=30 order=6 | - | see row above | -2.083 (zugewendet@108,vig); no row scores inside the control's true-hit band (-1.628 to -1.871) or clusters like the control's pos122 hit | not run (no 20+-letter candidate) | no (no fragment resembles a control true hit) | HES-DRAG target, full ranked table in families/hesdrag_target_dragresult.tsv |
+
 <!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
 
 | date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |

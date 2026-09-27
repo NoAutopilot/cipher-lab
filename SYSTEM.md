@@ -263,7 +263,6 @@ section-3 row added.
 |---|---|---|---|
 | `tools/key_design.py --matrix` | a key's letter values as a vowel-headed matrix; flag paired first digits or reversed rows; label one-part / two-dimensional / blockwise / two-part | Tomokiyo C3 (matrix.htm) | none yet |
 | `tools/interlinear_align.py --cipher-pair A B` | DP alignment of two ciphertexts of one text, emitting homophone classes and clear-word anchors | Tomokiyo C6 (servien.htm); LESSONS.md lead-class rung 3a | the first target with a duplicata |
-| `tools/running_key.py --drag MINLEN --corpus DICT` | drag every dictionary word of length >= MINLEN at every offset, quadgram-score the other side, list top fragments | Tomokiyo C7 (runningkey.htm) | hessen-1824 |
 | `tools/family_run.py --param lock=<tsv>` | feed confirmed symbol->element pairs forward into a second run (Lasry's semi-automated loop) | LESSONS-LASRY.md s.3 item 5 | fr2933-salviati-1525, after the SALV-SPLIT decision |
 | `tools/families/syllabary.py`, `wordcode.py` `--param moves=swap_only` | restrict the anneal to symbol-pair swaps, offered beside the current move set with a control comparison | LESSONS-LASRY.md s.3 item 3 | none yet |
 | `--param ngram=3\|4\|5` (or a 3->5 sweep stopping at the first order that breaks the control's gate) on homophonic/wordcode/syllabary | escalating n-gram order per target | LESSONS-LASRY.md s.3 item 1 | none yet |

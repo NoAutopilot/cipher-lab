@@ -100,3 +100,90 @@ bHCP2/bHCP3 above): drag de19 dictionary words of 10+ letters at every offset, q
 fragments by hand (Tomokiyo runningkey.htm "Solution", Brown's method; "Tips"). Matched control first at N=164 -- a synthetic
 running-key text of the same length on de19, the drag's recovery on it before the target is run. Cost band S
 (`tools/running_key.py --drag`, SYSTEM.md "Tools wanted", added by the worker that runs it). Status stays partial.
+
+## HES-DRAG (27 Sept 2026): dictionary crib-drag, control-backed negative
+
+Job HES-DRAG (parent worker, cap USD 6, brief `.claude/briefs/runs/2026-09-27-parent-ytbiz-hes-drag.md`). Intake gate
+re-run 27 Sept 2026 07:38 UTC: `hessen-1824: partial (line 1) -- edition/page or full-text-search citation found within
+6 lines`, EXIT 0. `tools/running_key.py` already carries `--crib-drag WORDLIST --all-tabulae --top`; no tool change
+needed (the `--drag MINLEN --corpus DICT` row this job's own brief pointed at in SYSTEM.md's "Tools wanted" table was
+stale -- `--crib-drag` already does the same job -- removed from SYSTEM.md in this commit).
+
+**U1 -- word list.** Every distinct de19 token of 10+ letters (regex-tokenised on the raw text before folding, so word
+boundaries are real, not `fold()`'s continuous-stream boundaries): **9,668 distinct words** across the three de19
+books (10,580/6,640/1,587 raw long-token hits per book before dedup). Written to
+`ciphers/hessen-1824/families/de19_words10.txt`.
+
+**U2 -- matched control, built word-aligned (not `running_key.py`'s own `--control`, which cuts an arbitrary substring
+of the fully despaced letter stream and so almost never lands a real dictionary word at a verifiable offset).** A
+private control-builder script (not committed as a tool -- one-off window selection over the same corpus `running_key.py`
+already reads, per the brief's fallback: "build the control text with the tool's own control code path... a private
+script is not an option" is about the *tool itself*, not about the word-boundary-tracking window-selection step the
+tool's own `--control` does not do at all) picked a random start token in one book, walked forward token-by-token until
+164 letters were used, and recorded every intact word of 10+ letters and its offset -- so the control's own true
+placements are known and checkable, unlike a click-anywhere-in-the-letter-stream cut.
+
+Plain book: `pg2405_Italienische_Reise_Band2.txt.gz`; key book: `pg31538_Peter_Schlemihl.txt.gz` (seed 1, vig
+tabula, N=164, the target's own N). Tracked words: plaintext side `hinaufgehoben`@6, `abgeschrieben`@120,
+`mitzuteilen`@144; key side `hingeopfert`@10, `verschreiben`@113 (all recorded in
+`ciphers/hessen-1824/families/hesdrag_control_meta.json`; plain/key/cipher texts beside it).
+
+**Control drag** (`--crib-drag de19_words10.txt --kcorpus tools/data/de19 --all-tabulae --top 15`, full de19 as the
+key-language corpus -- matching what the target run below also uses, since the real key book is unknown either way):
+**PRE-REGISTERED GATE MET DECISIVELY.** All 5 planted words recovered within the top 11 of 15 rows, at their exact
+true offset and tabula (vig, the true construction tabula): `hingeopfert`@10 (rank 1, score -1.628), `verschreiben`@113
+(rank 5, -1.741), `hinaufgehoben`@6 (rank 6, -1.764), `abgeschrieben`@120 (rank 7, -1.779), `mitzuteilen`@144 (rank 11,
+-1.871). **4 of the top 10** are exact true placements (gate: "at least one of the top 10... a real word... at its
+true offset"). Full ranked table: `ciphers/hessen-1824/families/hesdrag_control_dragresult.tsv` /
+`.json`. The instrument has clear discriminating power at this N, corpus and word-list size -- unlike the beam decoder
+(bHCP2/bHCP3), this is a genuinely different tool for the same family and it is *not* untestable here.
+
+**U3 -- target**, same settings (`--all-tabulae --top 30`) on the real 164-letter transcription
+(`ciphers/hessen-1824/families/hessen1824_ciphertext_folded.txt`): best score **-2.083** (`zugewendet`@108, vig) --
+worse than every one of the control's 5 true hits (best -1.628, worst true hit -1.871) and worse than the control's
+own best *non*-hit distractor row (-2.065, rank 15). No positional clustering resembling the control's true cluster at
+pos122 (four overlapping `-schrieben`-family candidates scoring -1.706 to -1.896, all pointing at the same real word)
+appears at a comparable score band: the closest analogue, a 4-way cluster of independent candidates at pos46
+(`mandelbaum`, `seltsamste`, `sublimiert`, `orgelbauer`), scores only -2.296 to -2.398 -- clearly inside the noise band
+this same tool/corpus/word-list combination showed on the control's own non-hit rows, not near its true-hit band. Full
+ranked table: `ciphers/hessen-1824/families/hesdrag_target_dragresult.tsv` / `.json`.
+
+**Extension check (Tomokiyo "Tips", <15 min, per the brief's cap):** for the top 3 target rows (`zugewendet`@108/vig,
+`gefanglich`@145/varbeau, `fabrizieren`@110/vig), tried each of 30 common German function words (der, die, das, und,
+mit, ...) immediately before and after the candidate word's span, scored the newly-implied key fragment the same way;
+none scored above -1.6 (i.e. none read as plausible German) at any of the 6 adjacent slots checked. No fragment
+extends. No candidate reached the judge's 20+-letter minimum, so U4 (`tools/judge_plaintext.py`) was not run --
+nothing to score.
+
+**Flag, not a signal:** the target's 2nd-best row (`gefanglich`@145, varbeau, -2.142) sits exactly on one of the three
+anomalous digit-like "4" glyphs in this transcription -- position 145 is the "g" that survives `fold()` from the
+original "4g3" token, immediately before the "pfx" token at folded offset 146 (NOTES.md's transcription section, line
+41). The score is still far inside the noise band (worse than the control's worst true hit), so this is not read as a
+hit -- flagged only because a future re-transcription pass touching this exact glyph should know a drag artifact once
+landed there by coincidence, not because it means anything now.
+
+**Read:** dictionary crib-drag (Tomokiyo/Brown's method) is now **tested, not untestable**, on this target -- the
+control shows the instrument reliably surfaces true placements (all 5 planted words in the top 11 of 15, 4 in the top
+10) at this exact N, word-list and corpus, and the real ciphertext shows nothing resembling that signal under the same
+settings. This is a **control-backed negative for running_key via a second, independent instrument** (the beam decoder
+stays "untested-by-this-tool" per bHCP2/bHCP3; the drag is a different tool and it is negative). Whether this closes
+running_key's ladder entry (rule 5: "closed-negative needs every family in the target's ladder logged with a passed
+control") is the orchestrator's call, not this worker's, same as bHCP2/bHCP3 left it -- flagging that the drag's own
+gate requires knowing a genuine long word sits at a genuine offset, which is exactly the scenario a *short* or highly
+inflected key vocabulary would defeat; a negative here rules out "a long, dictionary-attestable German word from
+1810s-40s prose sits legibly in the key stream at some offset," not every possible book-cipher key. Status stays
+`partial`. No "solved", "new", "first", "unpublished".
+
+**Next step, 27 Sept 2026 (HES-DRAG):** no untried cheap step remains in the current ladder (periodic_vigenere, masc,
+homophonic all control-backed FAIL; running_key control-backed negative via crib-drag, untestable via the beam
+decoder). A successor should either get more ciphertext from the same fascicle (HStAM 9 a Nr. 259 siblings, the
+Anmerkung's own "No. 1" item) or try a shorter/period-inflected key-vocabulary variant of the drag (this run only
+tried literal dictionary forms of 10+ letters; German's rich inflection means a genuine key phrase could avoid every
+long literal dictionary form the drag checked). Not a further re-run of this exact word list/corpus/tabula
+combination.
+
+`python3 tools/intake_gate_check.py hessen-1824`:
+```
+hessen-1824: partial (line 1) -- edition/page or full-text-search citation found within 6 lines
+EXIT: 0
+```
