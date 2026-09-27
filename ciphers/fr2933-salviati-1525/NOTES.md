@@ -3096,3 +3096,92 @@ locally for this session only, superseded by `resettle_sample.json`'s committed 
 No decoding, no family run, no reading of signs, no "solved"/"new"/"first"/"unpublished", no owner name, no
 credentials. Requests: gallica.bnf.fr 2 (1 connection-reset retried once). Subagents: 2, 0 follow-ups. Well under
 the USD 14 cap and the 60-minute box (about 42 minutes elapsed at write-up). Status stays **partial**.
+
+## SALV-CM48 (27 Sept 2026)
+
+Parent worker SALV-CM48 (Sonnet), 07:26-07:52 UTC. Brief `.claude/briefs/runs/2026-09-27-parent-ytbiz-salv-cm48.md`,
+LANE SALV2's named next step (STATUS.md "LANE SALV2 handoff"; SALV2-J2's own "Next:" paragraph): the cm control at
+CM_ERR=0.07 alone at more restarts, before any target run (rule 3, this is a one-knob re-try of the same instrument,
+CLAUDE.md rule 3's repeated-attempt paragraph). Disk only, no hosts, no subagents. Commands exactly SALV2-J2's own
+(`CM_RESTARTS=N CM_ERR=0.07 python3 control/codemark_curve.py control cm 2932 SEED --leaves all`, seeds 1-3, then
+`CM_RESTARTS=N python3 control/codemark_curve.py target cm SEED --leaves all` if a control level clears the gate).
+
+**U1: control at 48 restarts.**
+
+| seed | token acc | score/symbol (true plaintext -2.302) | wall-clock |
+|---|---|---|---|
+| 1 | 77.4% | -2.414 | 89s |
+| 2 | 36.5% | -2.546 | 90s |
+| 3 | 39.8% | -2.535 | 93s |
+
+Gate (2 of 3 seeds >= 0.60, the 21:35 row's gate): **NOT MET** -- 1 of 3 (seed 1 only). Per the brief, proceed to U2.
+
+**U2: control at 96 restarts**, same seeds.
+
+| seed | token acc | score/symbol | wall-clock |
+|---|---|---|---|
+| 1 | 77.4% (unchanged) | -2.414 | 178s |
+| 2 | 36.5% (unchanged) | -2.546 | 187s |
+| 3 | **87.4%** (up from 39.8%) | -2.351 | 184s |
+
+Gate: **MET** -- 2 of 3 (seeds 1 and 3). Seeds 1 and 2 land on byte-identical scores/decodes to the 48-restart run:
+`homophonic_anneal.solve()` seeds one `random.Random` per call and draws restarts from that single stream in order
+(`tools/homophonic_anneal.py:295-307`), so a 96-restart call's first 48 restarts consume the identical draws as a
+48-restart call with the same seed; when the best-scoring restart already landed inside the first 48 (seeds 1, 2
+here), more restarts add nothing, and when it did not (seed 3), the additional 49-96 restarts can still find a
+better optimum. Not a caching artifact -- confirmed by reading the shared-RNG-stream code, not assumed.
+
+**U3: target at 96 restarts**, seeds 1-3 (gate met, so this step runs per the brief).
+
+| seed | score | score/symbol | wall-clock |
+|---|---|---|---|
+| 1 | -7700.6 | -2.627 | 164s |
+| 2 | -7748.3 | -2.643 | 168s |
+| 3 | -7741.8 | -2.641 | 167s |
+
+Cross-seed agreement (CM3's own method, NOTES.md "CM3" section 5: per-position letter match between decoded
+streams of the same length, N=2932): s1/s2 18.9%, s1/s3 20.0%, s2/s3 26.6%.
+
+Beside the old split's figures (HYPOTHESES.md, CM3 section): old split score/symbol -2.656 to -2.678 (true
+plaintext -2.35 on that split), cross-seed agreement 4.3-18.9%/10.2-20.3% (best pair 28.4%). The corrected split's
+score/symbol (-2.627 to -2.643, true plaintext -2.302) sits in the same range as the old split relative to its own
+true-plaintext anchor, and cross-seed agreement (18.9-26.6%) sits at or above the old split's band rather than
+below it -- neither figure moved the way a real reading would (toward the true-plaintext score, toward one
+consistent decode across seeds).
+
+Judge (best seed by raw score, s1): `python3 tools/judge_plaintext.py specs/fr2933-salviati-1525.json --file
+<s1 decode>`:
+```
+ok   length: got=2932, min=2500, max=4500
+FAIL language: score=-1.299, null_p99=-1.85, real_p05=-0.928, real_median=-0.824, mode=both, N=2932
+FAIL - fr2933-salviati-1525 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+A judge FAIL, reported as a FAIL (rule 7). Per the brief: a judge PASS would not itself be a reading either --
+this is a FAIL, so there is no candidate to caveat as "needs rule-7 re-derivation and print_check"; there is
+nothing here for a verifier.
+
+**Verdict:** the cm control now clears its own gate at K=251 with more search budget (96 restarts), so this is
+no longer "untestable-by-this-tool" the way the 24/48-restart attempts were -- the target step was run per rule 3.
+But the target itself does not read: cross-seed agreement stays in the same low band as (or above) the old
+split's non-reading, and the judge FAILs language decisively (-1.299 vs a -1.85 null ceiling and a -0.928 real-text
+floor -- well short of even the null bar, not a borderline miss). This is a control-backed negative for the
+letter-per-type cm family on the corrected split, at CM_ERR=0.07, K=251, 96 restarts: the search now succeeds on
+its own matched design (unlike the 24/48-restart rows) and still does not recover the target, which is a stronger
+negative than "control below gate" was. Status stays **partial** (rule 5; no NEAR-row-worthy margin, no reading).
+
+**Next:** for the parent -- cm at K=251/CM_ERR=0.07 has now had a fair search (control clears its gate) and failed
+on the target; the named next step from SALV2-J2 stands: a design change for the 8 hapax types (exclude them from
+the pooled key-recovery objective and score separately, or merge them into a small bounded number of "unread"
+classes by rough shape) is the materially different try, not a further restart increase on the same design (rule
+3's one-knob paragraph -- this job already spent that one re-try). CM_ERR=0.08 at 96 restarts is untried; naming it
+here rather than running it, since the brief scoped this job to 0.07 only and the box does not obviously need a
+third control level to answer the question the brief asked.
+
+Files: no ciphertext or key files touched (disk-only control/target runs); new outputs
+`control/codemark_target_cm_all_r96_s{1,2,3}.json` (git-added), `control_curve.tsv` gains 5 rows (U1 x3, U2 x3
+minus the 2 byte-identical-to-U1 dupes the script still appends, U3 not applicable to control_curve.tsv).
+HYPOTHESES.md gains two rows (U1, U2+U3 combined). NEAR.md salviati row and status.json updated (below).
+
+No decoding claim, no family beyond cm, no "solved"/"new"/"first"/"unpublished", no owner name, no credentials, no
+AskUserQuestion, no subagents, no network. Requests: none (disk only). Well under the USD 5 cap and the 75-minute
+box (about 27 of 75 minutes elapsed at write-up). Status stays **partial**.
