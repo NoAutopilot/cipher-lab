@@ -18,7 +18,10 @@ Common tail (paste into every brief):
 > first. Per rule 7, a claimed reading on a target with a spec is reported only with `tools/judge_plaintext.py`'s
 > output pasted in, and stands only after a fresh-instance re-derivation from the spec and key. Do not start other
 > targets. Never print or commit credentials, and never echo a credential into your own transcript: no unfiltered `env`, no `curl -v` or `set -x` on a call that carries one (Access playbook item 3). A negative's done line carries
-> target and control numbers side by side, or it is not a negative (rule 3).
+> target and control numbers side by side, or it is not a negative (rule 3). If the target has a NEAR.md row,
+> update its Evidence and Last-touched cells in the same push when your result bears on that row's own next step
+> or ladder -- do not leave it for a retrospective to notice (RETRO-2026-09-26k proposal 2, malsburg-hessen-1636
+> and fr2933-salviati-1525: both moved in substance this window without their register rows saying so).
 
 > Wall-clock box (every worker brief): "stop and push at $<cap> or at <minutes> minutes, whichever first." The box is also a minimum: a worker does not stop early with the job undone while budget and minutes remain; it stops at the cap, at the minutes, or at the brief being met, and says which (LEARN-2026-09-25-1718 item 2, from the R6 common brief).
 
@@ -141,3 +144,8 @@ applied unchanged, and three named cycle-3 briefs written from it.
   more than a day without a LEDGER.md row saying why it was skipped. See `.claude/briefs/parent.md`, "Opening a
   lane."
 - **Stuck rule (owner's direction, 26 Sept 2026).** A negative or a "not a test" on a target's cheap test is not a stopping point. Before the lane idles on that target it names one materially different approach (another key family, another sibling or crib, another image source, another control, a different transcription route) with its own control and gate, runs it, and records the result in NOTES.md and the ledger. One such try per target, then idle-standing or close. Momentum is the goal; a lane that has nothing different left to try says so in its handoff in one sentence.
+  A stuck-rule try's own pricing precedent (RETRO-2026-09-26k proposal 4, 26 Sept 2026): a single fresh
+  family-control pair or share-matched rerun of an existing instrument runs about USD 3 (WC-LAGARDE2, SALV-CTX2,
+  26 Sept 2026); a multi-candidate fit loop (several sibling keys, several key tables) runs about USD 3 a
+  candidate (WC-NASSAU-FIT2, four candidates, 13.03). Price the brief from candidate count, not a flat USD 3,
+  when the try is a fit loop rather than a single control pair.

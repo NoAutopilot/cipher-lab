@@ -158,6 +158,10 @@ session and every subagent, cloud or local.
    calibration states the calibration step as a gate ("if the drift exceeds tolerance, stop here, log
    'non-test at this drift' for the family, and do not run the candidate calls"), not as a caveat to attach to
    candidate results computed regardless.
+   A positive control built to show a statistical method has discriminating power is subsampled to the target's
+   own event or sample count before that power claim licenses reading a miss on the target as a real negative --
+   a method that separates two classes at N=22,886 says nothing about its power at a target's N=28 (ARM3-ADJ,
+   26 Sept 2026, armstrong-madison-1808).
 4. **Grade every claimed reading per token:** H read from a key source, C from known plaintext, S cryptanalytic
    with a control, M uncertain, I inferred or repaired. Give the counts. No H or C means "cryptanalytic result".
    Two H-grade period decipherments that disagree on one code are a data conflict, not a transcription error to

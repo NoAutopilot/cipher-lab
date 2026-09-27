@@ -22,6 +22,25 @@ Usage:
     documented code guessed from that row's own Lesson-column language (e.g.
     a Lesson starting "Ran past its cap" suggests D-), without editing the
     file.
+
+  tools/ledger_check.py --placeholder-report
+    RETRO-2026-09-26k proposal 3. Lists every row whose Cost cell is an
+    unresolved deferral ("see the lane ledger", "parent's get_session (cap
+    15; 22:45-23:09 UTC)", "cap N, running") -- i.e. fails COST_RE -- AND
+    whose session id (if the row carries one) is not pasted with a real
+    number by any *other* row in the file (cross-checked by session id, the
+    same field find_session_index's fallback already extracts). Motivated by
+    VB-DECODE's row (RETRO-2026-09-26k): its Cost cell still read "parent's
+    get_session (cap 15; 22:45-23:09 UTC)" with no later row resolving it,
+    which made that retrospective's own "cost per delivered result" total a
+    known undercount. Printed only, never gating (exit is always 0): a lane
+    orchestrator's own row legitimately says "so far" while the lane is
+    still open, so this is a report a retrospective reads, not a check a
+    worker's push is blocked on. Does not itself flag a row using a
+    non-standard outcome code (see the main check above for that) -- only a
+    row whose outcome token is one of the five standard codes is used to
+    locate the Cost cell at all, so a row with both an unresolved cost and a
+    non-standard outcome code needs the main check's own pass too.
 """
 import argparse
 import os
@@ -147,6 +166,61 @@ def check(lines):
     return dup_sessions, bad_outcomes
 
 
+def row_cost_and_session(fields):
+    """Best-effort per-row (cost_text, session_id) for ANY row, resolved or placeholder alike.
+    The outcome cell is located by an exact VALID_CODES match (stricter than OUTCOME_TOKEN_RE,
+    which also matches ordinary short words like a Lane column's "LANE") so a placeholder-cost
+    row's own prose is never mistaken for the outcome cell; the cost cell is whatever sits
+    immediately before it, resolved or not. session_id is the first SESSION_ID_RE-matching cell
+    anywhere in the row, present or not. Returns (None, session_id) when no outcome-shaped cell
+    is found at all."""
+    outcome_i = None
+    for i in range(3, len(fields)):
+        if leading_token(fields[i]) in VALID_CODES:
+            outcome_i = i
+            break
+    session_id = next((f for f in fields if SESSION_ID_RE.match(f)), None)
+    if outcome_i is None or outcome_i == 0:
+        return None, session_id
+    return fields[outcome_i - 1], session_id
+
+
+def find_placeholder_rows(lines):
+    """--placeholder-report: every row whose Cost cell fails COST_RE and whose session id (when
+    the row carries one) is never resolved by a real number on any other row in the file. See the
+    module docstring's --placeholder-report section for the motivating incident (VB-DECODE)."""
+    all_rows = []
+    resolved_sessions = set()
+    in_table = False
+
+    for lineno, raw in enumerate(lines, start=1):
+        line = raw.rstrip("\n")
+        if not line.startswith("|"):
+            in_table = False
+            continue
+        fields = split_row(line)
+        if not fields:
+            continue
+        if SEPARATOR_ROW_RE.match(fields[0]) and all(SEPARATOR_ROW_RE.match(f) for f in fields):
+            in_table = True
+            continue
+        if not in_table:
+            continue  # header row
+        cost_text, session_id = row_cost_and_session(fields)
+        all_rows.append((lineno, cost_text, session_id))
+        if cost_text is not None and session_id and COST_RE.match(cost_text):
+            resolved_sessions.add(session_id)
+
+    placeholder_rows = []
+    for lineno, cost_text, session_id in all_rows:
+        if cost_text is None or COST_RE.match(cost_text):
+            continue
+        if session_id and session_id in resolved_sessions:
+            continue
+        placeholder_rows.append((lineno, session_id, cost_text))
+    return placeholder_rows
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
@@ -156,10 +230,25 @@ def main(argv=None):
         action="store_true",
         help="also print a guessed replacement code for each non-standard row, without editing the file",
     )
+    ap.add_argument(
+        "--placeholder-report",
+        action="store_true",
+        help="list every row whose Cost cell is an unresolved deferral, session-cross-checked; printed only, always exits 0 (see module docstring)",
+    )
     args = ap.parse_args(argv)
 
     with open(LEDGER, encoding="utf-8") as f:
         lines = f.readlines()
+
+    if args.placeholder_report:
+        placeholder_rows = find_placeholder_rows(lines)
+        if placeholder_rows:
+            print("Unresolved placeholder-cost rows:")
+            for lineno, session_id, cost_text in placeholder_rows:
+                print(f"  line {lineno}: session={session_id!r} cost={cost_text!r}")
+        else:
+            print("ok: no unresolved placeholder-cost rows")
+        return 0
 
     dup_sessions, bad_outcomes = check(lines)
 

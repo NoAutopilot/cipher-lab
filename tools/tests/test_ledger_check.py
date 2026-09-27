@@ -133,8 +133,56 @@ if proc2.returncode not in (0, 1):
     print(f"FAIL: running against the real LEDGER.md exited {proc2.returncode}, expected 0 or 1")
     fails += 1
 
+# --placeholder-report (RETRO-2026-09-26k proposal 3): a session whose only Cost cell in the
+# file is placeholder text is reported; a session whose placeholder row is resolved elsewhere
+# (PR-LAND-5/LQ-L20-LAND shapes above) is not.
+PLACEHOLDER_SAMPLE = SAMPLE + [
+    # VB-DECODE shape: placeholder cost, unique session id, never resolved by a later row
+    "| 26 Sep | VB-DECODE placeholder-cost row, never resolved | Sonnet | session_01C3DYwZ43iznhVhnQGBY5dB | "
+    "parent's get_session (cap 15; 22:45-23:09 UTC) | D | judge FAIL, gate not met |\n",
+    # a lane orchestrator's own "so far" row: also unresolved, also reported (non-gating, so
+    # this is correct -- README says a still-open lane legitimately says "so far")
+    "| 26 Sep | LANE SALV orchestrator, still open | Opus | session_01PUAQ15dRtV3yV1eskpRLg5 | "
+    "see the lane ledger | D | lane still open |\n",
+]
+placeholder_rows = ledger_check.find_placeholder_rows(PLACEHOLDER_SAMPLE)
+placeholder_sessions = {sid for _, sid, _ in placeholder_rows}
+
+expect_placeholder = {
+    "session_01C3DYwZ43iznhVhnQGBY5dB",  # VB-DECODE: never resolved
+    "session_01PUAQ15dRtV3yV1eskpRLg5",  # LANE SALV: "so far", still unresolved
+}
+if not expect_placeholder <= placeholder_sessions:
+    print(f"FAIL: expected placeholder-report sessions {expect_placeholder} to be reported, got {placeholder_sessions}")
+    fails += 1
+
+# the PR-LAND-5/LQ-L20-LAND sessions are resolved by their own second row and must NOT appear
+already_resolved = {"session_0184Cjg9WnwGotCxKhi6no2F", "session_019DNzwRqjndogyeTymb7Hqw"}
+if placeholder_sessions & already_resolved:
+    print(f"FAIL: a session resolved by a later real-cost row was still reported: "
+          f"{placeholder_sessions & already_resolved}")
+    fails += 1
+
+proc3 = subprocess.run(
+    [sys.executable, os.path.join(ROOT, "tools", "ledger_check.py"), "--help"],
+    cwd=ROOT, capture_output=True, text=True, timeout=30,
+)
+if "--placeholder-report" not in proc3.stdout:
+    print("FAIL: --help text missing --placeholder-report")
+    fails += 1
+
+# --placeholder-report against the real LEDGER.md always exits 0 (report, not a gate)
+proc4 = subprocess.run(
+    [sys.executable, os.path.join(ROOT, "tools", "ledger_check.py"), "--placeholder-report"],
+    cwd=ROOT, capture_output=True, text=True, timeout=30,
+)
+if proc4.returncode != 0:
+    print(f"FAIL: --placeholder-report against the real LEDGER.md exited {proc4.returncode}, expected 0")
+    fails += 1
+
 if fails:
     print(f"{fails} failure(s)")
     sys.exit(1)
 print("ok: ledger_check finds the duplicate session id and non-standard codes, ignores the "
-      "extra-columns/parenthetical-cost/missing-pipe rows, --help documents --fix-suggest")
+      "extra-columns/parenthetical-cost/missing-pipe rows, --help documents --fix-suggest, "
+      "and --placeholder-report lists only still-unresolved deferred-cost rows")

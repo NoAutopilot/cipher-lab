@@ -19,9 +19,19 @@ Checks:
   (c) a row whose "Last touched" is more than 48 hours before now (NEAR.md's own review rule) --
       printed as a warning, not a hard problem: it means the parent owes the row a worker or an
       ASKS entry (NEAR.md "Review rule"), not that the register is wrong.
+  (d) a row whose column count belongs to the other table (a 6+-column row under '## Closed rows',
+      or a 3-column row above it) -- looks misfiled (find_shape_problems).
+  (e) a row whose Evidence cell mentions a date (in the same "25 Sept 2026, 18:30 UTC" shape
+      already used for "Last touched") more than 30 minutes after its own "Last touched" column --
+      printed as a warning, not a hard problem, since the two columns can legitimately drift by the
+      few minutes between an edit and its own mention (26 Sept 2026, malsburg-hessen-1636: the
+      Evidence cell was edited with a paragraph dated through 23:05 UTC while "Last touched" still
+      read "26 Sept 2026 16:29", seven hours stale by its own field even though the row's content
+      was current -- invisible to check (c) since 16:29 is well inside 48 hours of now).
 
-Exit codes: 0 clean (no (a), (b) or (c) problems). 1 one or more (a) or (b) problems found (these
-block; (c) warnings may also be printed alongside). 2 only (c) warnings found, no (a) or (b).
+Exit codes: 0 clean (no (a), (b) or (d) problems, no (c) or (e) warnings). 1 one or more (a), (b) or
+(d) problems found (these block; (c)/(e) warnings may also be printed alongside). 2 only (c) and/or
+(e) warnings found, no (a), (b) or (d).
 
 NEAR.md's own "Last touched" column omits the year (e.g. "25 Sept 18:30"); status.json's `near`
 list gives one (e.g. "25 Sept 2026 18:30"). A year-less date is read as the current UTC year
@@ -135,6 +145,44 @@ def find_shape_problems(path):
     return problems
 
 
+def find_evidence_drift(path, default_year):
+    """Scan each active-table row's Evidence cell for the newest date it mentions (the same
+    '25 Sept 2026, 18:30 UTC' shape already used for the row's own 'Last touched' column) and flag
+    when that date postdates 'Last touched' by more than 30 minutes -- check (e). Rows under
+    '## Closed rows' are skipped, same as parse_near_md. Returns a list of warning strings, empty
+    if none; this is a warning class, never a hard problem (a target's content can be current while
+    its own freshness column lags behind it, as opposed to (d)'s misfiled-row shape, which is)."""
+    warnings = []
+    if not os.path.exists(path):
+        return warnings
+    in_closed = False
+    for line in open(path, encoding="utf-8"):
+        if CLOSED_HEADING_RE.match(line):
+            in_closed = True
+            continue
+        if in_closed or not line.startswith("| ") or line.startswith("|---"):
+            continue
+        cells = [c.strip() for c in line.strip().strip("|").split(" | ")]
+        if len(cells) < 6 or cells[0] in ("Target",):
+            continue
+        target = slug_of(cells[0])
+        evidence = cells[1]
+        touched_dt = parse_dt(cells[-1], default_year)
+        if touched_dt is None:
+            continue
+        evidence_dts = [d for d in (parse_dt(m.group(0), default_year) for m in DATE_RE.finditer(evidence)) if d]
+        if not evidence_dts:
+            continue
+        newest = max(evidence_dts)
+        if newest - touched_dt > datetime.timedelta(minutes=30):
+            warnings.append(
+                f"(e) {target}'s Evidence cell mentions a date ({newest:%d %b %Y %H:%M} UTC) after "
+                f"its own Last touched column ({cells[-1]}) -- the register's freshness column is "
+                f"stale even if the row's content is current"
+            )
+    return warnings
+
+
 def load_status_near(path):
     if not os.path.exists(path):
         return []
@@ -215,6 +263,7 @@ def main():
     status_near = load_status_near(args.status)
     code, problems, warnings = run_checks(near_rows, status_near, args.ciphers_dir, now)
     problems = find_shape_problems(args.near) + problems
+    warnings = find_evidence_drift(args.near, now.year) + warnings
     if problems:
         code = 1
     elif warnings:

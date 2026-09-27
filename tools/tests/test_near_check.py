@@ -168,6 +168,51 @@ def test_active_row_with_closed_shape_is_a_shape_problem(tmp_path):
     assert "delta" in shape_problems[0]
 
 
+def test_evidence_cell_date_after_last_touched_is_a_warning(tmp_path):
+    """RETRO-2026-09-26k proposal 1 (malsburg-hessen-1636 shape): the Evidence cell carries a
+    dated paragraph a day after the row's own 'Last touched' column -- a warning (exit 2), not a
+    hard problem, and invisible to the 48h staleness check (c) since 'Last touched' itself is not
+    stale."""
+    near_path = tmp_path / "NEAR.md"
+    lines = ["# NEAR.md test fixture\n\n", "| Target | Evidence | Next | Lane | Blocker | Last touched (UTC) |\n",
+             "|---|---|---|---|---|---|\n",
+             "| targ-a (a test row) | some evidence (26 Sept 2026, 23:05 UTC) | some next step | "
+             "LANE X | none | 25 Sept 2026 16:29 |\n"]
+    near_path.write_text("".join(lines), encoding="utf-8")
+    ciphers_dir = tmp_path / "ciphers"
+    write_status_json(tmp_path / "status.json", [near_entry("targ-a", "25 Sept 2026 16:29")])
+    write_notes(ciphers_dir, "targ-a", "partial")
+
+    near_rows = nc.parse_near_md(str(near_path), NOW.year)
+    status_near = nc.load_status_near(str(tmp_path / "status.json"))
+    code, problems, warnings = nc.run_checks(near_rows, status_near, str(ciphers_dir), NOW)
+    warnings = nc.find_evidence_drift(str(near_path), NOW.year) + warnings
+    if problems:
+        code = 1
+    elif warnings:
+        code = 2
+    else:
+        code = 0
+
+    assert code == 2
+    assert problems == []
+    assert any("targ-a" in w and "(e)" in w for w in warnings)
+
+
+def test_evidence_cell_date_within_30_minutes_is_not_flagged(tmp_path):
+    """A few minutes' drift between an edit and its own mention is not a problem (docstring's own
+    tolerance)."""
+    near_path = tmp_path / "NEAR.md"
+    lines = ["# NEAR.md test fixture\n\n", "| Target | Evidence | Next | Lane | Blocker | Last touched (UTC) |\n",
+             "|---|---|---|---|---|---|\n",
+             "| targ-a (a test row) | some evidence (25 Sept 2026, 19:05 UTC) | some next step | "
+             "LANE X | none | 25 Sept 2026 19:00 |\n"]
+    near_path.write_text("".join(lines), encoding="utf-8")
+
+    warnings = nc.find_evidence_drift(str(near_path), NOW.year)
+    assert warnings == []
+
+
 if __name__ == "__main__":
     import subprocess
     sys.exit(subprocess.call([sys.executable, "-m", "pytest", __file__, "-q"]))
