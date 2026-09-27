@@ -132,3 +132,22 @@ the reading in plain HTML text. This passage sits under the page's "Ormond-Longf
 "Cipher 2" as KEY-ADJACENT.tsv row 19's own key_location cell says -- a description error in that row, flagged
 here rather than corrected in place (this job's brief scoped this row's in_repo cell only). KEY-ADJACENT.tsv row
 19 is retired found-solved on this basis; no `ciphers/` folder was built.
+
+## Added 27 September 2026 (KEY-ADJACENT.tsv row 4 gate, parent worker INTAKE-MC108)
+
+`louisxiv0.htm`'s "Colbert-Nucheze Cipher (1662)" section names Melanges de Colbert 108 f.222 (endorsed "pour
+monsieur Colbert", from the Commandeur de Neuchaise/Nuchèze letter of 23 April 1662, f.218) as undeciphered,
+readable with the reconstructed cipher printed on the page. The page's own prose already quotes a plaintext
+reading of f.222 as evidence: "Scituation de l'isle d'Alboran. Alboran est une isle scituee ...." -- a partial
+reading (cut with an ellipsis, matching the same quoting convention this page uses elsewhere on the section,
+e.g. the p.521 D'Estrades passage and the Beziers/Colbert 155 passage a few paragraphs above). The section
+embeds one image, the reconstructed substitution-cipher table itself (`louisxiv_0nucheze1662.png`, viewed
+directly, not by a vision subagent call); it carries no manuscript scan and no interlinear reading of f.222 --
+the reading is in the page's own text, not an image. KEY-ADJACENT.tsv row 4 is retired found-solved on this
+basis; no `ciphers/` folder was built.
+
+| File | URL | Fetched | Bytes | sha1 | For |
+|---|---|---|---|---|---|
+| `web/img/louisxiv_0nucheze1662.png` | https://cryptiana.web.fc2.com/code/louisxiv_0nucheze1662.png | 27 Sep 2026, ~17:47 UTC | 10572 | 97357786e7b25f1e732f9ccff8ebb5e212891525 | the reconstructed Colbert-Nucheze substitution table (number->letter), not a manuscript scan |
+
+See `sources/cryptiana/web/manifest_2026-09-27-mc108.tsv` for the manifest row.
