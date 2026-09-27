@@ -48,7 +48,7 @@ eckert-1862	partial	runnable	M	n		- Follow-up suggestion (verifier, 24 Sept 2026
 eckert-1864	partial	needs-triage	?	n			0
 erba-2006	open	needs-triage	?	n	25 Sep		0
 esp318-sicilia-1503	open	runnable	M	n	26 Sep	No other canvases (453-455) cropped in this job -- one sample page is enough for the image step; the next job cuts the remaining three.	1147
-espagnol142-mercy-1648	partial	needs-image	M	n	26 Sep	**What this means for NEAR.md.** The "pools first" next step named for this target is now answered negatively within Espagnol 142-144: there is no second ciphered leaf under this 38-value code in the…	886
+espagnol142-mercy-1648	partial	needs-image	M	n	27 Sep	**What this means for NEAR.md.** The "pools first" next step named for this target is now answered negatively within Espagnol 142-144: there is no second ciphered leaf under this 38-value code in the…	886
 fair-game-2010	open	needs-triage	?	n	25 Sep		0
 florence-dieci-responsive	blocked	runnable	S	n		## Next steps (not done here, budget/window)	44
 fr15564-mercoeur-1586	blocked	needs-triage	?	n			0
