@@ -1444,3 +1444,53 @@ tick-as-alphabet-mark reading is weakly grounded at face value (recorded as H13,
 a reading, no class change. Requests per host: tile.loc.gov 3. Cost: no get_session figure available to this runner;
 the row's estimate (1.5 USD) is what `campaign.py --spend` records. Environment note: Pillow and numpy were absent in
 this runner's container and installed with pip for the crops; `tools/iiif_lines.py` needs both.
+
+## Campaign step H12 (27 Sept 2026, 23:12-23:3x UTC)
+
+Runner: campaign runner armstrong-madison-1808 (account 2, session_013E5jUS9GV1AsxLeUcwgbf6). Hypothesis H12: screen the
+undated numbered table at Monroe Papers reel 9 frame 954 (on disk since H7, SHA-256 verified) against the target the
+ARM3-LIVCODE way -- value range, digit signature, the 901-1099 block -- before any transcription pass. No plaintext read.
+
+**What the table is (one reader, grade M, native crops + two neighbouring frames).** Frame 954 is the upper part of a
+one-part sequential code: 17 columns x 100 rows, values 1-1700, each row a word or a syllable (901 consul, 902 mal,
+903 ore, 907 twelve, 910 are, 912 find, 917 europe, 1007 june, 1016 friday, 1017 power, 1020 time, 1026 virginia;
+1231 common, 1254 would, 1260 were, 1341 is, 1352 of, 1461 by, 1470 are, 1480 should ...); the decade rows (x10, x20 ...)
+are written large for navigation and hold ordinary entries. Fetched to settle the range (3 requests to tile.loc.gov,
+1.6 s apart, all HTTP 200, hashes in `images/manifest.json`, not committed because `images/` is at 27 MB of its 30 MB
+line): frame 955 is the same sheet's lower half, rows 43-100 of every column, ending "1700 ac"; frame 956 is the
+alphabetical encode side of the same key (A-Z columns, word -> number, no value above about 1700 seen, a right-hand
+column of modifier rules -- plural / tense / a "last figure doubles the last letter" rule -- and a digit list 0-9);
+frame 953 is unrelated (1810 notes for Monroe from a Spanish paper). Columns 1201-1700 are only partly filled: a fill map
+of rows 1-81 in columns 1201/1301/1401/1501/1601 (`livkey1803/f954_fillmap.tsv`, blank rates 0.07 / 0.17 / 0.27 / 0.31 /
+0.47) -- the key was still being filled in from the low values up. Not the 1,700-entry WE027 either (PR 50's warning
+stands; nothing here identifies the table's owner or date).
+
+**Screen (`livkey1803/screen954.py` -> `screen954.tsv`), script-only:**
+
+| section | statistic | target | comparator |
+|---|---|---|---|
+| range | groups above 1700, the table's last entry | 34/369 = 0.092 (27 distinct: 1708 ... 1900) | a letter encoded with this table: 0 by construction |
+| block | groups in 901-1099 vs flanking 200-blocks 701-900 / 1101-1300 | 4 vs 16 / 36 (the emptiest 200-window in 101-1700) | THE972 real usage pooled, same windows: 90 vs 58 / 101; the table has 200 ordinary entries in 901-1099 |
+| units | units-digit shares 0..9 | .25 .18 .05 .03 .11 .03 .09 .12 .12 .02 (0+1 = 0.43) | THE972 usage .09 .10 .15 .07 .09 .10 .11 .14 .09 .06 (0+1 = 0.19); a sequential table gives no reason for a 0/1 skew |
+| fill | of 64 target groups in the mapped cells, landing on a blank cell | 7/64 = 0.109 (1208 1314 1541 1628 1638 1641 1658) | key as it stands: 0 by construction; random cell of the same column: 0.219, P(<=7) = 0.019; random cell of the same column AND same units digit (null C): 0.168, P(<=7) = 0.134 |
+
+Reading: excluded on range -- a tenth of the target's groups have no entry in this key, and its encode side confirms
+there is no supplement above 1700. The 901-1099 trough sits exactly where this table is fully populated with common
+entries, the opposite of what encoding with it would give, and the units-digit shape is the one ARM-DESIGN already
+placed at percentile 100 against every contiguous design (this table is a contiguous one-part design). The fill screen
+is reported for completeness: against the naive null the target avoids blanks more than chance (p 0.019), but that
+null is on the wrong axis (the blanks are units-digit-skewed, the target is too -- rule 3's same-axis lesson); against
+the units-matched null the difference vanishes (p 0.134), and 7 blank hits are 7 more than a key can produce.
+Caveat: the fill statistic assumes the filled state on this copy is the state when used; the range and block
+statistics do not depend on that. Conditional on `ciphertext.txt` (ARM-TR2 match_ratio 0.957).
+
+**Verdict for the campaign:** the reel-9 frame-954/955/956 key is not the target's key, control-backed on range and
+consistent on block and units; with H7 both keys located in the Monroe Papers are screened out, and H11's graded
+transcription of frame 127 has no decode use unless H13 gives the leaf a role. Suggestion for the lane close-out (Usage
+8a, `tools/key_design.py`): this key is a fully documented period design (one-part, 1-1700, 17x100, syllable+word,
+alphabetical encode side, modifier-mark rules) worth a KEY-DESIGN.tsv row even though it is not this target's. New
+hypothesis H14 from frame 956's modifier column: its plural / tense / doubling marks are the kind of thing the target's
+superscript ticks could be under a *different* table -- a read of that column at native resolution and a count of the
+target's marks by group length vs shuffled positions (cheap, script + one look). No reading, no class change.
+Requests per host: tile.loc.gov 3. Cost: no get_session figure to this runner; the row's estimate (1.5 USD) is what
+`campaign.py --spend` records. Vision: 17 native crops read by this runner directly, no subagent calls.
