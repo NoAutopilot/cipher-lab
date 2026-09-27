@@ -106,7 +106,9 @@ Brief `.claude/briefs/runs/2026-09-26-lane-crypt-orchestrator.md` (owner's ask t
 
 Precedents added to README "Per-unit pricing precedents" (case-row digest, paper digest, text key tables; image key tables: open one first). UPDATES.md rows 01:05. SYSTEM.md rows for the three LESSONS registers and the cryptiana/lasry source registers.
 
-## LANE SALV2 handoff (session_01288kYmmNxAqAedKtgvxyD1), 27 September 2026 (closed: jobs 1-2 done, job 3 stopped over cap)
+## LANE SALV2 handoff (session_01288kYmmNxAqAedKtgvxyD1), 27 September 2026 (live)
+
+**Closed** (jobs 1-2 done, job 3 stopped over cap; the heading keeps "(live)" only because the push guard refuses a renamed section heading).
 
 Target fr2933-salviati-1525, status **partial** (NEAR row updated by J2; near_check ok). Brief
 `.claude/briefs/runs/2026-09-27-lane-salv2-orchestrator.md`. Spend by get_session: SALV2-J1A 9.11 D, SALV2-J1B 10.64 D,
