@@ -7153,3 +7153,51 @@ D'Estrades letters with a printed key but unconfirmed digitisation, a Manchester
 (THE=454, Beinecke Osborn MSS) already mostly glossed by Tomokiyo, a BnF fr.20974/fr.3976 pair, a Simancas
 letter gated behind DECODE's account-wide image block, and one Habsburg row with no shelfmark yet (only a
 1970s-secondary-source figure) -- lowest rank, needs an archive/shelfmark lookup before it is a real candidate.
+
+## SCOUT-OWN-7 key-adjacent candidates, 27 Sept 2026, 07:5x UTC
+
+Worker SCOUT-OWN-7 (Sonnet), second pass over `KEY-ADJACENT.tsv` for the owner-account parent. Access checks on
+the prior top rows 7-8 (Clair. 577 finding-aid, Manchester Papers/Beinecke) plus digitisation lookups on rows
+9-13, then a sweep of the CRYPTO-INDEX.tsv pages the first pass had not read (francis, bnf4715, bongars,
+charlesii/charlesii2, elizabeth, mary, mayenne, savoy) for the same shape: undeciphered by us AND a period key
+already identified in Tomokiyo's own text. Register now 23 rows, re-ranked by the same rule (digitised first,
+digits/words before symbols, key fully printed before partly, sibling decipherment yes before unknown, then
+estimated cost). Access-check findings: Clair. 577 (rows 7 and 11, both p.521 and p.741) is **not digitised** --
+the BnF finding-aid record (ark:/12148/cc13896b) is text-only, no Gallica ark; Manchester Papers (row 8, Beinecke
+OSB MSS fc37) **is digitised generally** (per-item catalog records with page images exist for comparable
+1699-1700 items) but the four specific DECODE-numbered letters were not pinned to a catalog record by keyword
+search in this pass; fr.3976 and fr.20974 (rows 9 and 13) are both confirmed digitised on Gallica (arks
+btv1b9060548h and btv1b9062131g -- the latter is literally titled "Clefs de la correspondance chiffree de
+Francois, duc DE GUISE... (1556)"); Baluze 178 (row 12) and Simancas EST,LEG,1184,110 (row 14) stay unknown/
+blocked (Baluze 178 not matched among 5 Gallica candidates tried; the Simancas item's 4 page images are
+DECODE-hosted but marked non-public-domain, and PARES itself is a dead host).
+
+New top 5 by the re-ranked register (one repeat from the SCOUT-OWN-6 top 5, not re-added below):
+
+| Rank | Target | Source row | Kind | Shape | Key status | Digitised | Est. cost | Status |
+|---|---|---|---|---|---|---|---|---|
+| 1 | Manchester Papers word-code group, Beinecke OSB MSS fc37 (DECRYPT/DECODE nos. 2859, 2860, 2865, 2866; 1699-1700) | KEY-ADJACENT.tsv (glorious.htm) | cryptanalysis-adjacent | digits (word-code) | key printed (THE=454), Tomokiyo's page already glosses most code numbers | yes, collection generally (specific items not pinned down yet -- next step: search collections.library.yale.edu by exact date) | $3, Sonnet | queued, key-adjacent, SCOUT-OWN-7 |
+| 2 | BnF fr.3976, fol.133 (Nevers collection cipher no.7, 1586-era) | KEY-ADJACENT.tsv (nevers.htm) | cryptanalysis-adjacent | digits (figures and letters) | key printed, reconstructed from fol.15 in the same volume | yes, Gallica ark btv1b9060548h | $3, Sonnet | queued, key-adjacent, SCOUT-OWN-7 |
+| 3 | Three undeciphered Italian letters, BnF Clairambault 331, f.15/f.149/f.156 (Jan-Mar 1530) | KEY-ADJACENT.tsv (francis.htm) | cryptanalysis-adjacent | digits | key printed (Gramont's cipher, 1530); a decode.json config for Gramont's cipher already exists in `tools/tests/decode_configs` | yes, Gallica (inline link on francis.htm) | $3, Sonnet | queued, key-adjacent, SCOUT-OWN-7 |
+| 4 | Beaumont to Bongars, BnF fr.7131, f.256 (8 Feb 1603) | KEY-ADJACENT.tsv (bongars.htm) | cryptanalysis-adjacent | digits | key printed (Bongars' cipher no.3) | yes, Gallica ark btv1b10509420g | $3, Sonnet | queued, key-adjacent, SCOUT-OWN-7 |
+| 5 | (repeat) Commandeur de Neuchaise ("Floridor") to Colbert, Melanges de Colbert 108, f.222 | KEY-ADJACENT.tsv row 4 (louisxiv0.htm) | cryptanalysis-adjacent | symbols | key printed | yes, Gallica ark btv1b10035507b | $3, Sonnet | already queued, key-adjacent, SCOUT-OWN-6 -- not re-added |
+
+Notable new row not in the top 5: `savoy.htm` (BnF fr.3983/3984/3985, ambassador Lebel to Duke of Savoy, 1593)
+carries a reconstructed key and Gallica digitisation, but its page shows seven per-folio images
+(BnFfr3983f26/f26v/f130/f130v/f194/f194v/f195.png) in the same title-and-image shape as `mantua.htm`, which
+turned out found-solved via its own images (INTAKE-3979) -- check those images for an interlinear reading
+before pricing any work on it; likely found-solved. All other new rows (bnf4715, charlesii2, elizabeth, mary,
+mayenne, charlesii) stay in `KEY-ADJACENT.tsv` only.
+
+**Bounded BnF catalogue pass (unit 5, <=20 minutes).** `archivesetmanuscrits.bnf.fr resultatRechercheSimple.html`
+(`TEXTE_LIBRE_INPUT`, cookie jar, per LANE G2's M22-M34 method) queried for `non déchiffré` (27 results) and
+`non déchiffrée` (39 results) -- narrower than the prior fourth pass's `déchiffrement`/`chiffrée`/`contre-chiffre`
+sweep (24 Sept 2026, ~95 requests, capped pagination), aimed at the specific "undeciphered" phrasing rather than
+"cipher+decipherment" generally. Result: no new qualifying row. The one genuine cipher hit in `non déchiffré`
+(ark:/12148/cc577658/cd0e811, "Lettre du Sr DE MONTHOLON. Chiffre non déchiffré. Tours, 8 nov. 1589") independently
+confirms this pass's own `bnf4715.htm` row (now noted in `KEY-ADJACENT.tsv`'s digitised cell for that row). The
+`non déchiffrée` hits were otherwise: Arsenal Ms-6829 (already `ciphers/arsenal-ms6829-1708`, in repo, skipped),
+Français 3641 (inside the fr.3005-3993 Ligue/Nevers range the fourth pass already excluded wholesale), fr.4715
+item 19 (no sender/date/key given in the catalogue snippet, not matched to a Tomokiyo "can be read with" sentence
+-- not added), and one Français 4736 D'Anzay hit that did not carry the search phrase in its own snippet (noise).
+Two requests to this host this pass (plus the reachability GET), 2s apart.
