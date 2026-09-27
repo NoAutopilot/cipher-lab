@@ -862,3 +862,119 @@ adversarial audit plus JSTOR rows) still needs the JSTOR-QUEUE rows 80-83 answer
 Gate: `tools/lq_answer_check.py ciphers/espagnol142-mercy-1648/local-runner/L20-2026-09-26.md --row L20` exits
 0 (kind `ia-reader` -- a content read of a page already in hand, no catalogue-ladder rungs required; see
 `tools/lq_answer_check.py`'s kind-awareness fix, 26 Sept 2026, UPDATES.md).
+
+## MERCY-KEY (27 Sept 2026)
+
+Parent worker MERCY-KEY (Sonnet, session_014APEYAjz8BFqwZkXdEM1ho), for parent 7n
+(`.claude/briefs/runs/2026-09-27-parent-ytbiz-mercy-key.md`). Acquisition lookup only: no decoding, no
+key.tsv change, no novelty wording. `date -u` 18:45 UTC. Intake gate re-run:
+`espagnol142-mercy-1648: partial (line 1) -- edition/page or full-text-search citation found within 6
+lines` (pass). `tools/key_livecheck.py`: 9 present, 6 working (unchanged from parent's last probe).
+
+### U1: DECODE records 958-965 (Brussels SEE "chiffres 1647-98", inv.nr. 2), login-free RecordsView fetch
+
+Fetched `RecordsView/<id>` for all 8 ids with plain curl (descriptive User-Agent, no cookies, no login --
+per CLAUDE.md's DECODE table and `sources/decode/NOTES.md`'s confirmed login-free RecordsView route), HTTP
+200 on every one, saved under `sources/decode/mercy-key-2026-09-27/record_<id>.html`.
+
+| id | Name | Receiver | Dates | Cipher Type | Symbol Sets | Nomenclature size | Code length | Pages |
+|---|---|---|---|---|---|---|---|---|
+| 958 | ...key1 | "Dug. de Nienburg" | 1647-1698 (no narrower date given) | Homophonic substitution, Nomenclatures | Alphabet, Numerical | 21-50 | Fixed | 1 |
+| 959 | ...key2 | "Conde de Cantecroy" | 1647-1698 | Nomenclatures | Numerical | >100 | Variable | 2 |
+| 960 | ...key3 | (none) | 1647-1698 | Simple substitution, Nomenclatures | Alphabet, Graphic signs, Numerical | >100 | Variable | 1 |
+| 961 | ...key4 | (none) | 1647-1698 | Nomenclatures | Numerical | >100 | Variable | 1 |
+| 962 | ...key5 | (none) | 1647-1698 | Homophonic substitution | Numerical | >100 | Variable | 1 |
+| 963 | ...key6 | (none) | 1647-1698 | Nomenclatures | Numerical | >100 | Fixed | 2 |
+| 964 | ...key7 | (none) | 1647-1698 | Nomenclatures | Numerical | >100 | Variable | 2 |
+| 965 | ...key8 | (none) | 1647-1698 | Homophonic substitution, Nomenclatures | Alphabet, Graphic signs, Numerical | >100 | Variable | 6 |
+
+All eight are the same accession, DECODE record type **Key** (not a ciphertext letter), Holder "Algemeen
+Rijksarchief, Secretairerie d'Etat et de Guerre, inv.nr. 2" (964: inv.nr. 2559), Cleartext/Plaintext language
+Spanish for all eight. No record carries a date narrower than the whole series range (1 Jan 1647 - 31 Dec
+1698); none names 1648, June, Barneton, Mercy or the Archduke/Cardenal-Infante's secretariat as sender or
+receiver. Record 958's own "Additional Information" field: "A homophonic substitution cip[h]er with
+homophones only for the vowels and a small nomenclature, 50 codegroups in sum total. Two-digit numbers are
+reserved for the cipher, capital letters for the nomenclat[u]re." -- i.e. 958's cipher portion is exclusively
+two-digit numbers with capital-letter codes reserved for a separate ~20-item name nomenclature, structurally
+unlike our target's key.tsv (38 values total, no capital-letter/alphabet symbol class, no separate nomenclature
+class -- personal/place names in the R6/R7 reading are spelled out letter-by-letter, not coded). The other
+seven records all carry nomenclature size ">100", more than double our target's total code count, and six of
+the eight are majority or wholly "Nomenclatures" in cipher type rather than a plain letter substitution.
+
+### U2: thumbnail eye-check against our 38-symbol inventory
+
+Fetched each record's one listed thumbnail (`/decrypt-custom/filesrv/?file=TH_IMG_R<id>_I<n>_P1.png`, the
+`<img src>` embedded in the RecordsView page, login-free, confirmed distinct real images per record --
+HTTP 200, 200x284px (965: 200x285px) each, saved as `sources/decode/mercy-key-2026-09-27/thumb_<id>.png`.
+
+Two vision calls used (per the brief's cap), on the two records closest to our target by the U1 table: **958**
+(nomenclature size 21-50, the only one near our K=38) and **965** (6 pages, the largest sheet in the series,
+also Alphabet+Numerical+Graphic-signs like 958). Both are **unreadable at thumbnail size** for a symbol-shape
+comparison: 958 shows only that the page holds two blocks of writing/a small table at the top and a line of
+cursive prose below; 965 shows a dense multi-column table (consistent with its ">100"-entry nomenclature) but
+every cell is illegible texture at 200x284px -- no individual digit, letter or graphic-sign shape can be made
+out in either. DECODE serves no larger image to this account (`sources/decode/NOTES.md`, confirmed
+account-wide, not per-record); per the brief, this counts as "unreadable at thumbnail size", not a negative
+finding on its own, but it also could not supply a positive symbol match for outcome (a) even if the U1
+design fields were closer than they are. The other six thumbnails were fetched (for the record) but not
+opened with a vision call, since U1 already places them further from our design (nomenclature size >100,
+mostly pure "Nomenclatures") than 958/965.
+
+**Outcome: (b).** None of the 8 records fits by design: our target is a fixed-length, all-numeric, 38-value
+simple/homophonic substitution with no separate nomenclature class, and every one of the 958-965 series is
+either a mixed alphabet+numeric+capital-letter system with a distinct ~20-entry nomenclature (958) or a
+>100-entry nomenclature-dominated key (959-965) at more than double our target's code count. This is a design
+mismatch established from the records' own catalogued fields (U1), independent of the thumbnail step; the
+thumbnails (U2) additionally could not be read at their served resolution, so no symbol-shape confirmation
+either way was possible for any record. A logged negative for this key family at this resolution: the 1647-98
+Brussels SEE series does not supply a period key for espagnol142-mercy-1648's cipher as catalogued, and DECODE
+serves nothing larger to this account to re-check. No login was attempted (per the brief and CLAUDE.md).
+
+### U3: Gayangos, *Catalogue of the Manuscripts in the Spanish Language in the British Museum* (Internet
+Archive, public domain, 4 vols)
+
+Located all four volumes on IA (vol. 2's djvu text is under a different identifier than the other three's
+numbering suggests): vol.1 `manuscriptsinspa01brit`, vol.2 `catalogueofmanu02brit`, vol.3
+`manuscriptsinspa03brit`, vol.4 `manuscriptsinspa04brit`. Downloaded each `_djvu.txt` (2.7MB/2.5MB/2.5MB/1.0MB)
+and grepped locally (script, not a model read) for "Mercy", "Barneton" and "Warneton", case-insensitive.
+
+"Barneton"/"Warneton": **0 hits in all four volumes.**
+
+"Mercy": several hits, all either the common noun ("mercy", "Order of Mercy" religious order) or already-known
+unrelated Mercy references, except one:
+
+- **Vol. 1, item 146 (British Museum Add. MS 14,000, f.554; the same manuscript catalogued in items 121-151,
+  ff.5-557, xvii cent. tracts on Franco-Spanish-Imperial affairs):** *"Memoria de los puntos de que el abbad
+  de Mercy ha de dar quenta á Su A. E. y á los ministros de Su Magestad en virtud de las cartas de creencia
+  que ti[e]ne para S. Al., y Don Miguel de Salamanca[,] de los duques de Guisa [Lorena] y de Bullón [Latour
+  d'Auvergne]"* -- undated in its own entry, but bracketed by items dated 14-25 Feb 1641 (nos. 140, 145) and
+  before item 147/148/149/150 (Sedan treaty articles, 10 March 1641): this item is from the **1641** Sarmiento
+  de Acuña / Cardinal-Infante Fernando negotiations with the exiled Ducs de Guise and Bouillon at Sedan, not
+  the 1648 Leopold Wilhelm / Cleves-Brandenburg mission our target concerns -- a different abbé de Mercy
+  mission, seven years earlier, already the same conclusion AUDIT.md section 4 drew from Google Books snippets
+  of this same volume ("Gayangos lists a different BM instruction to 'el abbad de Mercy'... no hit on this
+  instruction"). No "en cifra"/"cifrado"/"descifrado" language appears in or near item 146's own entry (the
+  nearest cipher-related item in the same manuscript, no. 137, is a separate 1642 Felipe IV-to-Sarmiento
+  deciphered letter, f.536, unrelated to Mercy). Excerpt (surrounding items, full grep counts per volume) in
+  `sources/decode/mercy-key-2026-09-27/gayangos_excerpt.txt`; full volumes not committed (Usage item 5,
+  "digests not repositories" -- re-fetchable at `archive.org/download/<id>/<id>_djvu.txt` for
+  manuscriptsinspa01brit, catalogueofmanu02brit, manuscriptsinspa03brit, manuscriptsinspa04brit).
+
+No hit anywhere in the four volumes ties a ciphered instruction to *our* Mercy (1648, Leopold Wilhelm's
+secretariat, Cleves/Brandenburg) or to Barneton. This closes out AUDIT.md section 6's Gayangos lead as
+checked and negative for a sibling under the same 38-value code; the 1641 item 146 is a different mission by
+the same named figure, itself uncoded as catalogued.
+
+### Requests this pass
+
+de-crypt.org: 16 (8 RecordsView + 8 thumbnails), all >=1.8s apart, one at a time, well under the 25-request
+cap. No login. archive.org/be-api.us.archive.org: 19 (2 advancedsearch, 5 metadata, 4 djvu.txt downloads, 4
+be-api fts sanity checks read but not relied on -- CLAUDE.md's be-api `page_num` caveat, so the djvu.txt grep
+was used as the citable result, not the fts snippets, plus 4 more requests locating/confirming volume
+identifiers), all >=1.6s apart, one at a time.
+
+Status unchanged: `partial`. AUDIT.md not touched (the parent hands this to the verifier lane per the brief).
+NEAR.md not edited: the brief updates its next-step cell only for outcome (a); this is (b)/(c), so the row's
+existing "DECODE R958-R965... waits on the DECODE role upgrade (ASKS 1)" line is now stale (no role upgrade
+was needed -- all 8 were read login-free) and is left for the parent to correct, reported in the ROOM done
+line.

@@ -1,0 +1,82 @@
+# Gayangos djvu.txt grep excerpts, MERCY-KEY 27 Sept 2026
+# Full volumes re-fetchable: archive.org/download/<id>/<id>_djvu.txt
+# vol1=manuscriptsinspa01brit vol2=catalogueofmanu02brit vol3=manuscriptsinspa03brit vol4=manuscriptsinspa04brit
+
+## vol1, item 146 context (lines 47820-47890 of manuscriptsinspa01brit_djvu.txt)
+
+132.  "  Carta  escrita  por  el  Presidente  Richardot,  Juan  Bautista 
+de  Tassis  y  Ludovico  Verreycheu  á  Su  Magestad  ;  de  Verbins,  á  3  de 
+Mayo  de  1598  " f.  518 
+
+133.  "Respuesta  del  Rey  [Felipe  II.]  ala  carta  antecedente;" 
+Madrid,  3  June,  1598       .  ,  .  .  .  .  ,     f.  520  6 
+
+134.  "Apuntamiento  de  lo  que  el  Señor  Juan  de  Vanegas  (sic) 
+abrá  de  acer  en  esta  su  jornada  de  Bretaña  adonde  S.  Al.  le  a  mandado 
+ir;"  Verbins,  27  May,  1598;  con  la  que  escribieron  á  D,  Juan  de 
+Idiaquez         .........       f,  522 
+
+135.  "  Respuesta  de  Don  Juan  de  Veuegas  á  la  carta  del  Presi- 
+dente Richardot  y  Juan  Bauptista  de  Tassis"      .  .  .      f.  522  h 
+
+136.  "  Suspiros  de  Francia,  papel  escrito  por  Don  Diego  de  Saavedra 
+Faxardo  en  ocasión  de  aver  muerto  el  Cardenal  de  Richelieu,  y  aver 
+mandado  el  Rey,  nucbtro  Señor  Don  Phelipo  quarto,  retirar  al  Conde 
+de  Olivares  [D.  Gaspar  de  Guzman]"  .  .  .  .       f.  524 
+
+(Xot  printed  among  his  works,) 
+
+137.  "  Copia  de  dos  cartas  [en  cifra]  de  Su  Magestad  [Felipe  IV,J 
+á  Don  Antonio  Sarmiento  en  respuesta  de  las  que  escribió  al  Conde- 
+Duque  [D".  Gaspar  de  Guzman]  sobre  introducir  partido  en  Francia, 
+con  que  causar  diversion,  para  que  no  pudiessen  acudir  poderossa- 
+mente  á  tantas  partes.  Descifrado  "  (fol.  5).  Madrid,  April  20  and 
+May  19,  1642 f.  536 
+
+138.  "  El  tratado  que  se  ajustó  con  los  Principes  retirados  en 
+Sedam  (Sedan).  Empególe  el  Señor  principe  Thom:is  [de  Savoya]; 
+prosiguióle  el  conde  Piccolomini,  y  solicitado  de  aquellos  principes  fué 
+á  concluirle  Don  Miguel  de  Salamanca,  embiado  de  S.  Al.  [el  Infante 
+
+
+728  HISTORY  OF  FRANCE. 
+
+Cardenal],  con  poderes  que  tenia  de  Su  Magcstad,  y  últimamente  para 
+ajustarlo  con  el  conde  de  Soissons  [Louis  de  Bourbon]  y  mejorar  el 
+que  se  hauia  hecho  con  los  Duques  de  Guisa  [Ilenri  de  Lorraine]  y  de 
+Bullón  [Frederic  Maurice  de  la  Tour  d'Auveigne]  pasó  á  dicha  plaza 
+de  Sedan  Don  Antonio  Sarmiento  de  Acuña "       .  .  .        f.  538 
+
+i;]9.  "  Papel  en  que  Dun  Miguel  de  Salamanca  representa  á  S.  Al. 
+el  Señor  Infante  [Cardenal  D.  Fernando]  el  estado  de  la  materia  secreta 
+con  los  principes  que  están  en  Sedan  ;  "  Brussels,  4  Jan.  1641    f.  542  6 
+
+140.  "  Parecer  que  dio  Don  Antonio  Sarmiento  [de  Acuña]  á  Su 
+Al'',  el  Señor  Infante  [Cardenal  D.  Fernando].  En  Bru^selas,  á  14  de 
+Hebrerode  1641  " f.  545  6 
+
+141.  "  Carta  de  Don  Diego  de  la  Torre  para  Don  Antonio  Sar- 
+miento.   De  Bruselas,  a  20  de  ITebrero  de  1641  ".  .  .       f.  548 
+
+142.  "  Pospuesta  do  Doa  Antonio  S  irmiento  [de  Acuña]  á  Don 
+Diego  Je  la  Torre,  de  la  mesma  fecha  "       .  .  .  .  ihicl. 
+
+143.  "Carta  de  Don  Diego  do  la  Torre  á  Don  Antonio;  de  la 
+mesma  fecha  "........  ihid. 
+
+144.  "  Otra  del  mismo  al  mismo.  De  Bruselas,  24  de  ITebrero  del 
+mesmoaño"    .........     f.  54S  6 
+
+145.  "  Carta  de  Don  Antonio  Sarmiento  [do  Acuña]  para  Su  Alteza. 
+Bruselas,  25  de  febrero  de  1641  "        .....  ibid. 
+
+146.  "  Memoria  de  los  puntos  de  qtie  el  abbad  de  Mercy  ha  de  dar 
+quenta  á  Su  A.  E'.  y  á  los  ministros  de  Su  IMagostad  en  virtud  de  las 
+cartas  de  creencia  que  tiae  para  8.  Al",  y  Don  Miguel  de  Salamanca 
+de  los  duques  de  Guisa  [Lorena]  y  de  Bullón  [Latour  d'Auvergne]  " 
+
+## grep -in mercy/barneton/warneton counts per volume
+vol1 mercy: 5 barneton: 0 warneton: 0
+vol2 mercy: 4 barneton: 0 warneton: 0
+vol3 mercy: 1 barneton: 0 warneton: 0
+vol4 mercy: 6 barneton: 0 warneton: 0
