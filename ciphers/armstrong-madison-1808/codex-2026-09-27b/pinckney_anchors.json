@@ -1,0 +1,38 @@
+{
+  "source": "https://github.com/dbourdeau/cyphersolver/blob/main/targets/erving1807/NOTES.md",
+  "source_blob_sha": "0e5d7d0c7b54207e3d8d5085e26a078840d78481",
+  "scope": "six published anchor mappings only; not a reconstructed full Pinckney codebook",
+  "target_N": 366,
+  "anchors": [
+    {
+      "code": 1651,
+      "word": "the",
+      "target_occurrences": 0
+    },
+    {
+      "code": 133,
+      "word": "of",
+      "target_occurrences": 0
+    },
+    {
+      "code": 1343,
+      "word": "and",
+      "target_occurrences": 0
+    },
+    {
+      "code": 244,
+      "word": "to",
+      "target_occurrences": 0
+    },
+    {
+      "code": 1578,
+      "word": "that",
+      "target_occurrences": 0
+    },
+    {
+      "code": 69,
+      "word": "in",
+      "target_occurrences": 0
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+*.bin
+glyph_solve
+__pycache__/
+madison_armstrong_graphic*.png

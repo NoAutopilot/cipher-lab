@@ -1,0 +1,200 @@
+{
+  "status": "UNSOLVED",
+  "transcription_confidence": "M_provisional",
+  "passages": 25,
+  "fragments": 28,
+  "N": 257,
+  "K": 36,
+  "symbol_counts": {
+    "10": 3,
+    "12": 2,
+    "14": 4,
+    "16": 9,
+    "18": 11,
+    "20": 37,
+    "22": 13,
+    "23": 12,
+    "24": 7,
+    "26": 6,
+    "28": 5,
+    "29": 9,
+    "32": 4,
+    "33": 12,
+    "34": 9,
+    "35": 15,
+    "36": 21,
+    "38": 11,
+    "40": 1,
+    "42": 1,
+    "44": 1,
+    "46": 1,
+    "47": 1,
+    "48": 2,
+    "60": 6,
+    "62": 5,
+    "64": 10,
+    "65": 18,
+    "66": 3,
+    "68": 1,
+    "70": 2,
+    "72": 5,
+    "73": 4,
+    "74": 1,
+    "76": 4,
+    "78": 1
+  },
+  "runs": [
+    {
+      "file": "coarsemerge_result.tsv",
+      "score": -304.792943,
+      "symbols": 29,
+      "decoded_letters": 257,
+      "restarts": 150,
+      "iterations": 30000
+    },
+    {
+      "file": "control0_result.tsv",
+      "score": -221.59273,
+      "symbols": 36,
+      "decoded_letters": 257,
+      "restarts": 150,
+      "iterations": 30000,
+      "correct_tokens": 255,
+      "token_accuracy": 0.9922178988326849
+    },
+    {
+      "file": "control0_strong.tsv",
+      "score": -221.59273,
+      "symbols": 36,
+      "decoded_letters": 257,
+      "restarts": 1000,
+      "iterations": 60000,
+      "correct_tokens": 255,
+      "token_accuracy": 0.9922178988326849
+    },
+    {
+      "file": "control1_result.tsv",
+      "score": -231.110403,
+      "symbols": 36,
+      "decoded_letters": 257,
+      "restarts": 150,
+      "iterations": 30000,
+      "correct_tokens": 257,
+      "token_accuracy": 1.0
+    },
+    {
+      "file": "control1_strong.tsv",
+      "score": -231.110403,
+      "symbols": 36,
+      "decoded_letters": 257,
+      "restarts": 1000,
+      "iterations": 60000,
+      "correct_tokens": 257,
+      "token_accuracy": 1.0
+    },
+    {
+      "file": "control2_result.tsv",
+      "score": -324.435457,
+      "symbols": 36,
+      "decoded_letters": 257,
+      "restarts": 150,
+      "iterations": 30000,
+      "correct_tokens": 90,
+      "token_accuracy": 0.35019455252918286
+    },
+    {
+      "file": "control2_strong.tsv",
+      "score": -306.90174,
+      "symbols": 36,
+      "decoded_letters": 257,
+      "restarts": 1000,
+      "iterations": 60000,
+      "correct_tokens": 136,
+      "token_accuracy": 0.5291828793774319
+    },
+    {
+      "file": "control3_result.tsv",
+      "score": -229.019328,
+      "symbols": 36,
+      "decoded_letters": 257,
+      "restarts": 150,
+      "iterations": 30000,
+      "correct_tokens": 255,
+      "token_accuracy": 0.9922178988326849
+    },
+    {
+      "file": "control3_strong.tsv",
+      "score": -229.019328,
+      "symbols": 36,
+      "decoded_letters": 257,
+      "restarts": 1000,
+      "iterations": 60000,
+      "correct_tokens": 255,
+      "token_accuracy": 0.9922178988326849
+    },
+    {
+      "file": "glyph_consonants_result.tsv",
+      "score": -240.036861,
+      "symbols": 36,
+      "decoded_letters": 257,
+      "restarts": 150,
+      "iterations": 30000
+    },
+    {
+      "file": "glyph_fr_result.tsv",
+      "score": -288.812412,
+      "symbols": 36,
+      "decoded_letters": 257,
+      "restarts": 150,
+      "iterations": 30000
+    },
+    {
+      "file": "glyph_result.tsv",
+      "score": -314.753033,
+      "symbols": 36,
+      "decoded_letters": 257,
+      "restarts": 150,
+      "iterations": 30000
+    },
+    {
+      "file": "glyph_strong.tsv",
+      "score": -308.524927,
+      "symbols": 36,
+      "decoded_letters": 257,
+      "restarts": 1000,
+      "iterations": 60000
+    },
+    {
+      "file": "separator65_result.tsv",
+      "score": -281.976718,
+      "symbols": 36,
+      "decoded_letters": 239,
+      "restarts": 150,
+      "iterations": 30000
+    },
+    {
+      "file": "shuffle0_result.tsv",
+      "score": -323.156835,
+      "symbols": 36,
+      "decoded_letters": 257,
+      "restarts": 150,
+      "iterations": 30000
+    },
+    {
+      "file": "shuffle1_result.tsv",
+      "score": -321.148521,
+      "symbols": 36,
+      "decoded_letters": 257,
+      "restarts": 150,
+      "iterations": 30000
+    },
+    {
+      "file": "shuffle2_result.tsv",
+      "score": -317.689658,
+      "symbols": 36,
+      "decoded_letters": 257,
+      "restarts": 150,
+      "iterations": 30000
+    }
+  ]
+}
