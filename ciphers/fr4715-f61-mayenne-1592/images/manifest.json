@@ -16,6 +16,14 @@
    "canvas": 138,
    "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52509819x/f138/full/1000,/0/native.jpg",
    "note": "blank leaf by direct inspection this job: no ink, only bleed-through from the facing leaf and two seal impressions -- the letter is one leaf (f.61r)"
+  },
+  "src_ark_12148_btv1b9059406b_f195_1250_450_3600_720.jpg": {
+   "folio": "BnF fr.3983 f.108r (canvas 195, anchored by the ink '108' top right and the clear lines matching Tomokiyo's mayenne2.png strip; campaign H19, 27 Sept 2026)",
+   "canvas": 195,
+   "ark": "btv1b9059406b",
+   "region": "1250,450,3600,720 native",
+   "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9059406b/f195/1250,450,3600,720/full/0/native.jpg",
+   "note": "the four lines of Tomokiyo's specimen strip plus three more; the page carries a PERIOD INTERLINEAR DECIPHERMENT (clear words above the cipher lines) -- a grade-C key source for a verifier, logged, not merged as ours; sheets f108sheetB_L01-L07.jpg cut by tools/iiif_lines.py --overlap 0 (bands, pitch 96) and trimmed to non-overlapping segments; the 28 crops are in the runner's scratch, regenerable; 8 Gallica requests this step incl. the anchoring subagent's"
   }
  },
  "iiif_lines": [
@@ -1614,5 +1622,175 @@
     "local": true
    }
   }
- ]
+ ],
+ "f108_bands": {
+  "f108_L01_s1.jpg": [
+   1250,
+   536,
+   2150,
+   625
+  ],
+  "f108_L01_s2.jpg": [
+   2150,
+   539,
+   3050,
+   619
+  ],
+  "f108_L01_s3.jpg": [
+   3050,
+   546,
+   3950,
+   637
+  ],
+  "f108_L01_s4.jpg": [
+   3950,
+   536,
+   4850,
+   636
+  ],
+  "f108_L02_s1.jpg": [
+   1250,
+   598,
+   2150,
+   679
+  ],
+  "f108_L02_s2.jpg": [
+   2150,
+   599,
+   3050,
+   688
+  ],
+  "f108_L02_s3.jpg": [
+   3050,
+   608,
+   3950,
+   695
+  ],
+  "f108_L02_s4.jpg": [
+   3950,
+   615,
+   4850,
+   713
+  ],
+  "f108_L03_s1.jpg": [
+   1250,
+   672,
+   2150,
+   792
+  ],
+  "f108_L03_s2.jpg": [
+   2150,
+   678,
+   3050,
+   805
+  ],
+  "f108_L03_s3.jpg": [
+   3050,
+   684,
+   3950,
+   810
+  ],
+  "f108_L03_s4.jpg": [
+   3950,
+   678,
+   4850,
+   796
+  ],
+  "f108_L04_s1.jpg": [
+   1250,
+   779,
+   2150,
+   898
+  ],
+  "f108_L04_s2.jpg": [
+   2150,
+   799,
+   3050,
+   915
+  ],
+  "f108_L04_s3.jpg": [
+   3050,
+   809,
+   3950,
+   917
+  ],
+  "f108_L04_s4.jpg": [
+   3950,
+   814,
+   4850,
+   927
+  ],
+  "f108_L05_s1.jpg": [
+   1250,
+   894,
+   2150,
+   997
+  ],
+  "f108_L05_s2.jpg": [
+   2150,
+   893,
+   3050,
+   1000
+  ],
+  "f108_L05_s3.jpg": [
+   3050,
+   902,
+   3950,
+   1014
+  ],
+  "f108_L05_s4.jpg": [
+   3950,
+   914,
+   4850,
+   1041
+  ],
+  "f108_L06_s1.jpg": [
+   1250,
+   1019,
+   2150,
+   1118
+  ],
+  "f108_L06_s2.jpg": [
+   2150,
+   1018,
+   3050,
+   1116
+  ],
+  "f108_L06_s3.jpg": [
+   3050,
+   1018,
+   3950,
+   1116
+  ],
+  "f108_L06_s4.jpg": [
+   3950,
+   1016,
+   4850,
+   1135
+  ],
+  "f108_L07_s1.jpg": [
+   1250,
+   1111,
+   2150,
+   1198
+  ],
+  "f108_L07_s2.jpg": [
+   2150,
+   1104,
+   3050,
+   1199
+  ],
+  "f108_L07_s3.jpg": [
+   3050,
+   1111,
+   3950,
+   1203
+  ],
+  "f108_L07_s4.jpg": [
+   3950,
+   1084,
+   4850,
+   1200
+  ]
+ }
 }

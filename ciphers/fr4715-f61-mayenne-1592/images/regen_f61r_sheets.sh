@@ -53,3 +53,27 @@ for line in ["L01", "L03", "L05", "L07", "L08", "L11"]:
         if i < len(ims) - 1: d.rectangle((0, y, W, y + 11), fill=(0, 0, 0)); y += 12
     sheet.save(f"{T}/f61sheetB_{line}.jpg", quality=90); print(line, sheet.size, "segments", len(ims), "(B, no overlap)")
 PY
+
+# H19 (campaign, 27 Sept 2026): BnF fr.3983 f.108r, canvas 195 of ark btv1b9059406b (anchored by eye: ink '108' top right,
+# clear lines match Tomokiyo's mayenne2.png strip). One native region fetch, 7 bands (pitch 96), sheets B as above.
+NOOV2=$(mktemp -d)
+python3 tools/iiif_lines.py --ark btv1b9059406b --canvas 195 --region 1250,450,3600,720 --out $NOOV2 --prefix f108 \
+  --max-width 900 --overlap 0 --follow-slope 300 --slope-local --debug
+NOOV=$NOOV2 PREFIX=f108 LINES="L01 L02 L03 L04 L05 L06 L07" python3 - <<'PY'
+import json, os
+from PIL import Image, ImageDraw
+T = "ciphers/fr4715-f61-mayenne-1592/images"; N = os.environ["NOOV"]; P = os.environ["PREFIX"]
+box = {e["crop"]: e["box"] for e in json.load(open(f"{N}/manifest.json"))["iiif_lines"]}
+for line in os.environ["LINES"].split():
+    segs = sorted(c for c in box if c.startswith(f"{P}_{line}_s")); ims = []
+    for k, c in enumerate(segs):
+        im = Image.open(f"{N}/{c}").convert("RGB")
+        if k + 1 < len(segs): im = im.crop((0, 0, box[segs[k + 1]][0] - box[c][0], im.height))
+        ims.append(im.resize((im.width * 3, im.height * 3), Image.LANCZOS))
+    W = max(im.width for im in ims); H = sum(im.height for im in ims) + 12 * (len(ims) - 1)
+    sheet = Image.new("RGB", (W, H), "white"); y = 0; d = ImageDraw.Draw(sheet)
+    for i, im in enumerate(ims):
+        sheet.paste(im, (0, y)); d.text((6, y + 4), f"segment {i+1}", fill=(200, 0, 0)); y += im.height
+        if i < len(ims) - 1: d.rectangle((0, y, W, y + 11), fill=(0, 0, 0)); y += 12
+    sheet.save(f"{T}/{P}sheetB_{line}.jpg", quality=90); print(line, sheet.size)
+PY
