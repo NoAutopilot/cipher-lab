@@ -267,3 +267,100 @@ own inference; "not stated in extract" means the keyword cut did not carry the m
 | 206 | `venetian.htm` | Michiel Surian, Venetian ambassador in England 1557-58, letters of 15 Jan 1558 & 21 Apr 1557 | Republic of Venice diplomatic corresp., 1557-58 | cipher with superscript letters, irregular arrangement | someone else's break: passages presented by Bonavoglia (2020) and Pasini (1872) allow reconstruction | - | - | - |
 | 207 | `venetian.htm` | Venetian cipher of 1552 (target letter not further identified in this extract) | Republic of Venice diplomatic corresp., 1552 | cipher with superscripts | reconstructed by Tomokiyo from his own initial transcription (blogpost, Oct 2025) | - | - | Tomokiyo notes he redid a known reconstruction unknowingly ("Forgetting that the cipher is known, I reconstructed the cipher from this letter") |
 
+## Section 2 -- His approach (numbered practices, page and heading cited)
+
+Every practice below is Tomokiyo's method as he describes it on the page named; where he is summarising someone
+else (Yardley, Bazeries, Wallis, Langie, Viète, Brown) the page says so and so does the row.
+
+1. **Split a code into its spelling part and its word part, and attack the spelling part first.** Most codes carry a
+   cipher alphabet for words not in the vocabulary; low numbers for single letters form a small substitution cipher
+   inside the code. He infers Wallis "attacked sequences of such low numbers first" and then used the spelled words
+   as cribs for the code groups; the 1918 AEF field-code test found the spelled-out letters first ("TKG TKG" = L L
+   in "killed"). (`codebreaking.htm`, "Cipher in Code"; `wallisdecipher.htm`, "Cipher used in the First Letter":
+   numbers up to about 64 reserved for letters.)
+2. **In a one-part (alphabetical) code, a group's number is a position in a dictionary.** Estimate a group's initial
+   letters from its relative place in the range (Mansfield's progressive lists; today "a calculator": page 120 of
+   650 is about page 148 of an 800-page dictionary), then correct for a drifting offset between your dictionary and
+   theirs (Yardley's "about 6 pages" in 1918); check the low digits for page+line structure (last two digits all
+   01-62), and in a book code with reassigned pages assume the line number survives (Bazeries on Sittler).
+   (`codebreaking.htm`, "Yardley (1918, 1926)", "Mansfield Dictionary Code", "André Langie's Example",
+   "Commercial Code".)
+3. **Know how far "one-part" goes before assuming it.** Degrees of irregularity: fully alphabetical; two-dimensional
+   arrangements (figures down, words across, Le Tellier-Colbert 1650) that look random when sparse and alphabetical
+   when dense; "blockwise" one-part (alphabetical blocks in random order, XYZ Affair; William V 1782); true two-part
+   (Italian 1588 "per scrivere"/"per cavare", Louvois 1676). Wallis saw that entries with the same initial sat in one
+   row (same units digit) and guessed code 186 began with D. (`nomenclator.htm`, "One-Part Code vs. Two-Part Code";
+   `wallisdecipher.htm`, "Cipher used in the First Letter".)
+4. **Regular letter assignments are period- and office-specific; lay the table out as a matrix to see them.** Papal
+   ciphers of the 1550s-60s fill a vowel-headed matrix column by column, with first digits paired (1=2, 3=4 ...); the
+   Spanish blocked-square ciphers of 1585-1590 share one arrangement with rows reversed. "Once a couple of letters are
+   identified, the whole cipher alphabet may be inferred" -- his route into the Ormonde and Schiner letters.
+   (`matrix.htm`, "Substitution Ciphers with Regular Assignment", "Why Matrix?".)
+5. **Contacts before meanings: tabulate what precedes and follows each group.** Yardley's 42635 was often preceded by
+   itself and never followed by the same group, so a suffix ("s"), not a word; a contact chart (bigram matrix) and a
+   KWIC listing of a group with its left and right context, sortable by the preceding or following symbol, are his
+   own working tools (built in Excel; he used contact charts on the Vatican and Ormonde ciphers). (`codebreaking.htm`,
+   "Yardley (1918, 1926)", "Statistical Analysis"; `contact.htm`, "Contact Analysis"; `kwic.htm`, "KWIC", "Sorting a
+   KWIC Index"; `tool2.htm`.)
+6. **List every long repeat.** A script lists recurring n-grams of length >= 10 in the raw ciphertext; in a
+   homophonic cipher long repeats are rare and the few repeating pentagrams' contexts are inspected instead.
+   (`polygram.htm`, "Polygram Script", "Limitations".)
+7. **Compare two independent encipherments of the same text.** Viète's first step against Spanish ciphers was to
+   compare letters to different ambassadors to identify homophones; duplicates to one recipient were often
+   enciphered independently. In his own Servien-Sabran break (Baluze 155, 1632), the two copies' symbols correspond
+   "(almost) one-to-one"; a contradiction at the start (the same symbol for two letters) was a one-place shift ("cete"
+   vs "ceste"); words in clear in one copy and cipher in the other are cribs; words in clear in *both* copies are
+   plaintext, not nulls; then align -> identify -> realign, recovering key and plaintext together. (`servien.htm`,
+   introduction, "Identifying Symbols by Aligning Two Ciphertexts".)
+8. **A parallel clear text can come from outside the correspondence.** The Dutch read the US Blue Code from a clear
+   telegram of the same length two hours later (both probably quoting the same newspaper) and the Green Code from
+   formulaic messages ("Asks visa ... nationality parentage Dutch") and header structure (date codeword advancing
+   daily; "my"/"your"; sender/recipient names); an alignment chart between two codebooks carried readings from Green
+   to Gray. (`codebreaking.htm`, "Dutch Codebreakers during WWI".)
+9. **Use the clear part of a partly-encoded letter, and the situation, to guess the groups.** Oman's Peninsular War
+   examples ("1238" = the Army of the North; "692 1102" twice = "thousand men"), Bazeries filling "se-r-vi-ce très
+   pé-ni-b-l-e" from the surrounding French; for a wholly-coded letter, a probable phrase the subject must contain
+   ("les ennemis", found as a variably-spelled repeat 124 22 125 46 574), and an external crib obtained on request
+   (Yardley asked for a résumé of the meeting the Peruvian telegram reported). (`codebreaking.htm`, "Partial
+   Encoding", "Codebreaking by Etienne Bazeries", "Peruvian Code (1926)".)
+10. **Give up an early identification when it stops fitting.** Yardley's first "de" (the most frequent group) failed,
+    the second most frequent worked; Tomokiyo notes "such an early identification may occasionally have to be given
+    up". (`codebreaking.htm`, "Peruvian Code (1926)".)
+11. **Running key: drag long probable words, then extend by hand.** "THE" gives too many false fragments and too
+    little to extend; a word of 5+ letters does better; Brown's solution of his 2026 challenge dragged dictionary words
+    of 10+ letters, scored the revealed fragment with quadgrams, then joined nearby fragments by hand. Any fragment may
+    belong to either the plaintext or the key. (`runningkey.htm`, "Tips", "Runninng Key Challenge", "Solution".)
+12. **Decide the language from the envelope first, the statistics second, and switch when you hit a wall.** Date
+    line, sender and recipient; a top symbol near 20% and twice the runner-up says French; Yardley's German/Spanish
+    assumption led to "a blank wall" and the text was English. Blencowe took a pronounceable but unintelligible decode
+    ("sounding language") as evidence the key was right and the language wrong. (`language.htm`, "Is Codebreaking
+    Possible without Knowing in what Language...", "Deciphering to a Garbled Message".)
+13. **Read period hands and period numerals as their writers did.** u/v and i/j/y interchange, long s, "-oit"
+    endings, intercalary letters (faict, scavoir), abbreviations, minims; letters that look like other letters in a
+    given secretary's hand, listed per document; Roman numerals written "quatre-vingt" style (iiiixx = 80, vixx =
+    120) in one French collection, and in Spanish ciphers about 1500 the maximal-i numeral marked with o (iiiio),
+    CC/CCC in ligature, M as "IU". When one copy of a letter is legible, use it to read the other.
+    (`paleography.htm`, "First Things You Should Know", "A French Letter (1593)", "Roman Numerals".)
+14. **Record the marks on the groups, not only the groups.** In Wallis's 1689 French codes an underline marks a
+    varied termination (Cardinal -> Cardinau-x), an overline removes the tens digit, some even numbers are
+    non-significant, 10/θ/κ delete the preceding group and a pair of marks deletes everything between; Cornwallis's
+    opening high numbers were nulls plus a table-shift indicator. (`wallisdecipher.htm`, "Cipher used in the First
+    Letter", "Cipher used in the Second Letter"; `breaking.htm`, "Notes on the Cipher".)
+15. **Publish so that anyone can check: ciphertext exactly as received, then the reading with the writer's errors
+    corrected and marked, then the interlinear.** Wallis to Mencke, 1697, quoted by Tomokiyo; proper names coded by one
+    number are guessed "but from circumstances" and a wrong guess is forgivable; the encipherer's own slips are
+    expected. Tomokiyo marks his own conjectures in the same way ("Association of code groups with plaintext portions
+    is my conjecture"). (`wallisdecipher.htm`, "Wallis' Letter to Otto Mencke"; `codebreaking.htm`, "German Code
+    (1918)".)
+16. **A value is confirmed when it recurs consistently in unrelated words.** "Occurrences of 9(W) in 'wards' and
+    'with' and those of 24(O) in 'cooperate' and 'you' are consistent. This supports these identifications."
+    (`breaking.htm`, "Further Steps".) Conradus 1739, which he summarises, puts it as rules: place, order,
+    combination, frequency and number; longer texts are easier; do not conjecture where the method gives certainty.
+    (`conradus.htm`, "Samples".)
+17. **Enough text for the difficulty, and the deciphered collections exist.** Wallis: he had "not often failed in any
+    ... of any considerable Quantity, sutable to the Difficulty of the Cipher" (Tomokiyo: the idea of unicity
+    distance); Wallis's own deciphered transcripts with keys survive (Bodleian MS e Musaeo 203 and MS Eng. misc.
+    e.475, 1653; MS Eng. misc. c.382, 1689-1703; BL Add MS 32499, 1651-1701), and an envoy's corrections were sent
+    back for reuse on "the same cypher". (`wallis_e.htm`, "Collection of Deciphered Papers Deposited in a Public
+    Library", "Codebreaking after the Glorious Revolution", "Codebreaking for Foreign Courts".)
+
