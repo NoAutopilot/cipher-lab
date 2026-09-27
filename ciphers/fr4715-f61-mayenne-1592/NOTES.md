@@ -717,3 +717,31 @@ without its comment lines), `scripts/passU2_classes.tsv` (+ `.README`), `scripts
 `scripts/f61pass3_result.txt`, `scripts/f61fragment.py`, `scripts/fragment_L10.tsv`; HYPOTHESES.md row added.
 Requests: none. Vision calls: 1 of 4. No credentials, no AskUserQuestion, no novelty wording; the owner not named.
 
+## Campaign step H3 (2026-09-27 23:29 UTC)
+
+Campaign runner (Fable, session_01UgTmQhR7wFtVFrTVdtsq9i), script-only plus 3 requests to cryptiana.web.fc2.com (1.6 s
+apart, browser UA as recorded for this host). Hypothesis H3: a Cryptiana page or image on a fr.3982/3983 sibling with
+its own interlinear markup.
+
+**Search.** `sources/cryptiana/web/` (318 files) grepped for 3982/3983: ten pages; the sibling list is only in
+`mayenne.htm`, and `league.htm`/`nevers.htm`/`paleography.htm` name other letters in those volumes (Pelissier, Pisany,
+Gondy, Vinta, the Savoy ambassador), none of this cipher. `mayenne.htm` embeds four images; the mirror held only
+`mayenne.png` (the table). Fetched the other three, now in `sources/cryptiana/web/img/` with rows in
+`sources/cryptiana/web/manifest_2026-09-27-4715f61.tsv` (sha1 recorded).
+
+**Found.** `mayenne2.png` (1069x256), captioned "Part of Duke of Mayenne's letter (1593)", is the page's "specimen of
+the use of this cipher (taken from f.108 of BnF fr.3983)": two cipher lines with Tomokiyo's letter-by-letter reading
+overlaid in magenta ("satisfaire ung seul au prejudice de plusieurs" / "au[t]res ... appr[e]nent ... de leurs ... la
+commoditez", about 85 letters, one look by the runner, not a transcription), and two further lines where the manuscript
+itself appears to carry period interlinear clear words above cipher groups. `mayenne3.png` is Tomokiyo's reconstruction
+of the different homophonic cipher of fr.3984 ff.7-10 (May 1593), not this cipher. `mayenne4.png` not looked at.
+fr.3983's Gallica manifest is already cached (`sources/gallica-manifests/btv1b9059406b.json`); `tools/gallica_folio.py`
+gives the canvas for f.108 offline.
+
+**What it changes.** A second letter of the same office and key with about 85 letters read by Tomokiyo would more than
+double the known-answer set and, better, lets the f.61-fitted cell map be tested on a letter it was not fitted on
+(a transfer test, before any refit). If the leaf's own interlinear clear words are a period decipherment, that is a
+grade-C key source for the verifier and the recovery route, not a cryptanalytic one. The strip itself is about 25 px
+per sign, F61-CAL's own failure mode, so nothing is read from it blind: H19 fetches the leaf. Requests this step:
+cryptiana.web.fc2.com 3. No credentials, no AskUserQuestion, no novelty wording; the owner not named.
+
