@@ -1220,3 +1220,28 @@ unchecked.
 - lead; a 16-shape/primitive answer-aware candidate lattice for Annet 1770 exercise 2 (13/16 candidate coverage, all grade M) is explicitly flagged as development/calibration data, not a held-out or blind recognition result -- unchecked.
 - archival-route/negative; the LOC Monroe-collection "about" page again returned HTTP 403 via the web reader, no key image obtained -- unchecked.
 - lead/negative; a 1811 pasigraphy exposition (Firmas, *Pasitélégraphie*, e-rara) was inspected but post-dates the 1808 target and describes Maimieux's earlier system without matching it; the actual 1797 source remains unretrieved (Internet Archive 502, Google Books image unavailable) -- unchecked.
+
+
+## Second-opinion checkpoint (SO-ARMSTRONG-CHECKPOINT 20:48, 27 Sept 2026)
+
+Landed from PR 47 (`second-opinions/chatgpt-checkpoint-2026-09-27-2048.md`, PR-LAND-18). A runner checkpoint
+report, not a leads-prompt answer or a reading; every citation below is a claim to verify, never a fact --
+unchecked.
+
+- correction; PDF p.14 rule 8 licenses a comma only for the suffixes "ing/ed" in context, not the whole-word "or" the prior checkpoint's fixture assumed; withdrawing it drops Annet exercise-2 development coverage from 13/16 to 12/16 -- unchecked.
+- correction; PDF p.3's hooked sign reads "their, there", not "then, there" as the prior checkpoint labelled it -- unchecked.
+- lead; exercise-2 position 15's outline is a descending diagonal stroke resembling the AND marks at positions 6 and 9, not a comma, so it is now DIAGONAL_UNRESOLVED rather than a certified OR sign -- unchecked.
+- next-step; the checkpoint's own named next action is aligning exercise 11's conjunction region (AND/ARE/OR/OUGHT) against p.16's printed words before any target application -- unchecked.
+
+
+## Second-opinion checkpoint (SO-ARMSTRONG-CHECKPOINT 20:50, 27 Sept 2026)
+
+Landed from PR 48 (`second-opinions/chatgpt-checkpoint-2026-09-27-2050.md`, PR-LAND-18). A runner checkpoint
+report, not a leads-prompt answer or a reading; every citation below is a claim to verify, never a fact --
+unchecked.
+
+- lead; a full source-line alignment of all 366 numeric groups and 25 graphic passages against manuscript images (frames 0030-0033) finds two preferred-reading differences from the editorial baseline -- numeric position 8 (1841 -> 1843) and position 32 (203 -> 200) -- plus four newly flagged unresolved ink locations -- unchecked.
+- correction; the apparent equality between numeric positions 8 and 253 (both previously 1841) disappears under the image-preferred reading (position 8 now reads 1843), so an opening crib should not be propagated to position 253 on that equality -- unchecked.
+- correction; the same Annet comma/OR fixture error PR 47 also found (standalone "or" unsupported; coverage 13/16 -> 12/16) -- unchecked.
+- correction; the 17:43 UTC Codex ARM-KEYIMAGE ROOM line ("claim: recover/identify...") is a task claim, not evidence the Livingston key was actually retrieved; no `codex-2026-09-27f` result was located by this checkpoint -- unchecked (answers PR-LAND-15's 18:49 UTC flag on this same discrepancy, above).
+- next-step; the checkpoint names resolving the clipped gutter material from an additional manuscript capture, and a repeatable literal shorthand reading on control material, as the next substantive steps -- unchecked.
