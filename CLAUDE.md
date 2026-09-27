@@ -376,6 +376,17 @@ immediately before writing any file under `.claude/briefs/runs/`, the same disci
 the path already exists with a commit from a different session in the last hour, pick a new suffix rather
 than overwrite.
 
+**Outside agents.** Not every agent working from the owner's accounts is a session of this repository's
+parents: the owner also runs a Codex session and a ChatGPT desk runner outside `tools/room.py`. Any such
+agent writes to `ROOM.md` only by appending (`python3 tools/room.py "<role>" "<text>" --push`, or a plain `>>`
+if the script is unavailable to it), never by rewriting the file. A claim line that replaces the whole file
+is treated as an accident, not a claim: it is healed the same way any other wiped shared file is (last full
+version plus every line committed since, restored from git history), never left for a person to notice and
+fix by hand (Lesson of 27 Sept 2026, ROOM-HEAL: a Codex commit replaced a 3407-line ROOM.md with a two-line
+stub; `tools/room.py --start`'s existing stub guard correctly refused to build on it, but the workers that hit
+the guard just parked -- one for 25 minutes -- waiting for a person, until another worker restored the file
+by hand; `tools/room.py --start` now self-heals a stub this way on its own, see SYSTEM.md).
+
 New people and their agents start at `ONBOARDING.md`. Everyone records their own plan limits in
 `BUDGETS.md`, because no account can see another account's rate limits.
 

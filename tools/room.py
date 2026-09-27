@@ -4,6 +4,7 @@
 Usage:
   tools/room.py "role: target" "signal text"        append a timestamped line, commit, rebase, push (retries)
   tools/room.py --start                             worker start: fetch, checkout -B main origin/main, sanity check
+                                                    (self-heals a stub ROOM.md from git history, see heal_stub_content())
   tools/room.py --push [paths...]                   commit the named paths (already staged or listed) and push with the
                                                     same rebase-and-retry loop, keeping both sides of a ROOM.md conflict
                                                     and refusing to push if the rebase dropped a STATUS.md/QUEUE.md section
@@ -16,6 +17,11 @@ Usage:
 Why: on 24 Sept 2026 six commits were spent fixing ROOM.md conflict markers and one worker replaced the file with a
 four-line stub from a stale clone. This script appends with >>, never rewrites, resolves a ROOM.md conflict by
 keeping both sides, refuses to push a ROOM.md that shrank, and retries the fetch-rebase-push loop up to five times.
+Self-heal (27 Sept 2026): an outside agent that does not go through this script can still replace the whole file
+(Codex, 14:48 UTC that day); --start no longer just refuses and waits for a person when it finds a stub on
+origin/main -- it rebuilds the file from git history (heal_stub_content()) and pushes the restore itself, falling
+back to the old refuse-and-flag behaviour only if no commit in the last 50 touching ROOM.md is large enough to
+restore from, or the restore's own push conflicts twice.
 Warnings (25 Sept 2026, UPDATES.md): a done line naming a test, negative or FAIL without the word control, or any
 line carrying a dollar figure, is still appended but prints a WARNING first (rule 3; COMMON item 1).
 Section guard (25 Sept 2026, LEDGER.md:810, LANE B3): unlike ROOM.md, a non-conflicting 3-way merge on STATUS.md or
@@ -40,6 +46,68 @@ def sh(*args, check=True, quiet=True):
 def utc():
     return time.strftime("%Y-%m-%d %H:%M", time.gmtime())
 
+STUB_LINES = 50  # a ROOM.md below this line count is a stub, not the room (start()'s own check; also the
+                 # floor heal_stub_content() requires a candidate to clear, so it never "restores" one stub
+                 # from another).
+
+
+def _git_at(root, *args):
+    return subprocess.run(["git", *args], cwd=root, capture_output=True, text=True)
+
+
+def _room_lines_at(root, ref):
+    """Line list of ROOM.md as committed at ref (git show <ref>:ROOM.md), or None if absent there."""
+    r = _git_at(root, "show", f"{ref}:ROOM.md")
+    if r.returncode:
+        return None
+    return r.stdout.splitlines()
+
+
+def heal_stub_content(root=ROOT, ref="origin/main", min_candidate_lines=STUB_LINES):
+    """Rebuild a wiped ROOM.md from git history (27 Sept 2026, after an outside agent -- Codex, which does
+    not go through this script -- replaced ROOM.md outright at 14:48 UTC; the existing stub guard correctly
+    refused to build on it, but every worker that hit the guard just parked waiting for a person, one for 25
+    minutes, until another worker restored the file by hand. A wipe is always repairable from history, so
+    parking on it is never necessary.)
+
+    Looks at the last 50 commits reachable from `ref` that touched ROOM.md (newest first), finds the newest
+    one whose line count is at least 90 percent of the largest line count among those 50 -- the last full
+    version before whatever shrank it -- then appends, in commit order and deduped by exact line, every line
+    from every later commit's ROOM.md that is not already present in that version, so nothing committed since
+    the wipe is lost.
+
+    Returns (healed_text, candidate_sha, restored_n, appended_n), or None when nothing in the sampled window
+    clears min_candidate_lines (every version there is itself stub-sized -- nothing safe to restore from)."""
+    commits = _git_at(root, "log", "-50", "--format=%h", ref, "--", "ROOM.md").stdout.split()
+    if not commits:
+        return None
+    lines_by_commit = {}
+    for c in commits:
+        ls = _room_lines_at(root, c)
+        if ls is not None:
+            lines_by_commit[c] = ls
+    if not lines_by_commit:
+        return None
+    max_lines = max(len(ls) for ls in lines_by_commit.values())
+    if max_lines <= min_candidate_lines:
+        return None
+    threshold = max_lines * 0.9
+    candidate = next((c for c in commits if len(lines_by_commit.get(c, [])) >= threshold), None)
+    if candidate is None:
+        return None
+    candidate_lines = lines_by_commit[candidate]
+    known = set(candidate_lines)
+    healed = list(candidate_lines)
+    appended = 0
+    later = list(reversed(commits[:commits.index(candidate)]))  # oldest to newest, excludes candidate itself
+    for c in later:
+        for line in lines_by_commit.get(c, []):
+            if line not in known:
+                known.add(line)
+                healed.append(line)
+                appended += 1
+    return "\n".join(healed) + "\n", candidate, len(candidate_lines), appended
+
 def start():
     sh("git", "fetch", "-q", "origin", "main")
     r = sh("git", "status", "--porcelain")
@@ -53,8 +121,32 @@ def start():
         print(f"local HEAD had commits not on origin/main; saved to {branch} before resetting. Push it or ask.")
     sh("git", "checkout", "-q", "-B", "main", "origin/main")
     n = sum(1 for _ in open(ROOM, encoding="utf-8"))
-    if n < 50:
-        print(f"ROOM.md has only {n} lines on origin/main; that is a stub, not the room. Stop and flag it."); return 3
+    if n < STUB_LINES:
+        print(f"ROOM.md has only {n} lines on origin/main; that is a stub, not the room. "
+              f"Self-healing from git history (a repairable repository state is never a reason to stop and ask).")
+        healed_ok = False
+        for attempt in range(2):
+            healed = heal_stub_content()
+            if healed is None:
+                print("self-heal: no commit in the last 50 touching ROOM.md clears the stub floor; nothing safe to restore from.")
+                break
+            healed_text, candidate, restored_n, appended_n = healed
+            open(ROOM, "w", encoding="utf-8").write(healed_text)
+            msg = f"ROOM: self-heal after stub {candidate} (restored {restored_n} lines + {appended_n} appended since)"
+            rc = push(msg, ["ROOM.md"])
+            if rc == 0:
+                print(f"self-heal: restored ROOM.md from {candidate} ({restored_n} lines) + {appended_n} line(s) "
+                      f"appended since, pushed")
+                healed_ok = True
+                break
+            print(f"self-heal: push attempt {attempt + 1} failed (code {rc}); re-fetching and retrying")
+            sh("git", "fetch", "-q", "origin", "main")
+            sh("git", "checkout", "-q", "-B", "main", "origin/main")
+        if not healed_ok:
+            print("self-heal could not recover ROOM.md safely (no usable candidate, or the push conflicted "
+                  "twice); stop and flag it.")
+            return 3
+        n = sum(1 for _ in open(ROOM, encoding="utf-8"))
     print(f"on main at {sh('git','rev-parse','--short','HEAD').stdout.strip()}, ROOM.md {n} lines")
     # Cascade (25 Sept 2026, UPDATES.md): every session's first command shows the changes instituted across
     # accounts since its brief was written, so a rule change never depends on a brief being rewritten.
@@ -272,7 +364,10 @@ def push(message, paths):
         bad = shrink_ok(shrink_watched)
         if bad:
             print("refusing to push: " + bad); return 8
-        p = sh("git", "push", "-q", "-u", "origin", "main")
+        # Push HEAD, not the local branch name (27 Sept 2026, VO3 flag): a session that never ran --start can
+        # be on a detached HEAD ahead of a stale local `main`, and `git push origin main` then pushes the
+        # stale branch pointer and fails every retry. `HEAD:main` pushes what is actually checked out either way.
+        p = sh("git", "push", "-q", "-u", "origin", "HEAD:main")
         if p.returncode == 0:
             print("pushed " + sh("git", "rev-parse", "--short", "HEAD").stdout.strip()); return 0
         time.sleep(3 + 2 * i)
