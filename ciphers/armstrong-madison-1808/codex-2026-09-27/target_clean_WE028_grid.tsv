@@ -1,0 +1,21 @@
+score	hits	out_of_range	transform
+14.5336	312	20	grid=1900 cols=2 rev=3 offset=1436
+11.4888	272	20	grid=1900 cols=4 rev=2 offset=454
+8.22393	316	20	grid=1900 cols=2 rev=1 offset=1445
+6.11479	297	17	grid=1900 cols=10 rev=2 offset=499
+5.48007	314	20	grid=1900 cols=2 rev=1 offset=1435
+4.90517	257	14	grid=1900 cols=10 rev=1 offset=1721
+4.81977	262	13	grid=1900 cols=10 rev=1 offset=1401
+2.59386	256	14	grid=1900 cols=10 rev=1 offset=1571
+1.14356	251	17	grid=1900 cols=2 rev=0 offset=775
+0.402997	262	13	grid=1900 cols=10 rev=0 offset=301
+-0.897266	263	15	grid=1900 cols=10 rev=1 offset=1211
+-0.924056	316	20	grid=1900 cols=2 rev=3 offset=1446
+-1.86452	295	20	grid=1900 cols=5 rev=3 offset=1704
+-2.98542	315	20	grid=1900 cols=2 rev=1 offset=1439
+-3.44094	246	13	grid=1900 cols=10 rev=1 offset=1337
+-3.88053	295	16	grid=1900 cols=10 rev=3 offset=1389
+-4.19217	242	12	grid=1900 cols=10 rev=1 offset=1801
+-4.48797	261	13	grid=1900 cols=10 rev=1 offset=1411
+-4.594	258	14	grid=1900 cols=10 rev=1 offset=1531
+-5.0034	298	16	grid=1900 cols=10 rev=3 offset=1349

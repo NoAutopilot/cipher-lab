@@ -1,0 +1,17 @@
+{
+  "date": "2026-09-27",
+  "sha256": {
+    "ciphers/armstrong-madison-1808/ciphertext.txt": "8e362b705de06733db44dbcc6254cb8a1cc386e2717fe2022954686c517b7a39",
+    "ciphers/armstrong-madison-1808/codex-2026-09-27/ciphertext_editorial_clean.txt": "bc25f718fa59dda0ccd6e9ddad5049d370c47343550031fb3f3c7e8239db5f30",
+    "ciphers/armstrong-madison-1808/codex-2026-09-27/control_original.seq": "ef113faefab51bcef11c0b1cb9bb0d9f520d28695e4a802af827a95327ae8058",
+    "tools/subst_hillclimb.py": "c8bec16156c1872f88dc3be4441a5dac7f7c7f6d63662c0fa124cc58d4b13879",
+    "tools/data/uscodes-1800/THE972_bourdeau.tsv": "3cd4ffb9c1fd937429e63cd9f50befc78ca36b08e34c7fdc49baa5601c81e1e1",
+    "tools/data/uscodes-1800/WE028.tsv": "7a26a7158b25b994139bb1888886e67675014cda78844f4d88610725ecd2b4e1",
+    "tools/data/en18/writingsalbertg01gallgoog.txt.gz": "3a0c22fa11df82ca897e308370ba4fbd4f9108324351ff0b9b13da3c1c25fafa",
+    "tools/data/en18/writingsjamesmo02unkngoog.txt.gz": "767e25f617efe7f18abced8006ec311455514fa13e00d3a7383cd32f7bb128a3",
+    "tools/data/en18/writingsjamesmo11monrgoog.txt.gz": "959c7731a6271e51a17ff6e55c15c67e4be909667bf51ec4e916c35147aedb19",
+    "tools/data/en18/writingsofjamesm0007unse_s2a1.txt.gz": "52fc552738110e6179e29e195738d21b48aca64ee867c3b5ff8a3d585cfa5a66",
+    "tools/data/en18/writingsofjamesm0008unse.txt.gz": "a453af6233fda25c9915ea120e5bd4e9d441628678b18d220ff5d68307830b50",
+    "tools/data/en18/writingsofthomas09jeffiala.txt.gz": "6c055ee098042a15656bb52bfaa3da2a9e61e0f8b7961f180b29993557a5bb4e"
+  }
+}

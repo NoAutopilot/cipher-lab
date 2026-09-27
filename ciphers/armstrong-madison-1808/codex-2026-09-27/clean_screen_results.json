@@ -1,0 +1,1553 @@
+[
+  {
+    "table": "THE972_bourdeau",
+    "mode": "digits",
+    "sequence": "target_clean",
+    "search": "tested 87091200 scored 16331 best 12.1649",
+    "best": {
+      "score": "12.1649",
+      "hits": "143",
+      "out_of_range": "14",
+      "transform": "positions=0321 digits=0127963548"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "digits",
+    "sequence": "control",
+    "search": "tested 87091200 scored 4872 best 107.904",
+    "best": {
+      "score": "107.904",
+      "hits": "300",
+      "out_of_range": "0",
+      "transform": "positions=1302 digits=7561093284"
+    },
+    "exact_token_recovery": 1.0
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "digits",
+    "sequence": "null_0",
+    "search": "tested 87091200 scored 16331 best 14.8293",
+    "best": {
+      "score": "14.8293",
+      "hits": "145",
+      "out_of_range": "20",
+      "transform": "positions=0321 digits=0137968542"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "digits",
+    "sequence": "null_1",
+    "search": "tested 87091200 scored 16331 best 12.608",
+    "best": {
+      "score": "12.608",
+      "hits": "131",
+      "out_of_range": "17",
+      "transform": "positions=0321 digits=0156472938"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "digits",
+    "sequence": "null_2",
+    "search": "tested 87091200 scored 16331 best 12.8393",
+    "best": {
+      "score": "12.8393",
+      "hits": "142",
+      "out_of_range": "20",
+      "transform": "positions=0321 digits=0127968435"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "digits",
+    "sequence": "null_3",
+    "search": "tested 87091200 scored 16331 best 14.9052",
+    "best": {
+      "score": "14.9052",
+      "hits": "126",
+      "out_of_range": "17",
+      "transform": "positions=0321 digits=0139485627"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "digits",
+    "sequence": "null_4",
+    "search": "tested 87091200 scored 16331 best 15.7613",
+    "best": {
+      "score": "15.7613",
+      "hits": "128",
+      "out_of_range": "16",
+      "transform": "positions=0321 digits=0127568394"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "digits",
+    "sequence": "null_5",
+    "search": "tested 87091200 scored 16331 best 11.9304",
+    "best": {
+      "score": "11.9304",
+      "hits": "144",
+      "out_of_range": "19",
+      "transform": "positions=0321 digits=0184973256"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "digits",
+    "sequence": "null_6",
+    "search": "tested 87091200 scored 16331 best 13.0673",
+    "best": {
+      "score": "13.0673",
+      "hits": "134",
+      "out_of_range": "17",
+      "transform": "positions=0321 digits=0125376498"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "digits",
+    "sequence": "null_7",
+    "search": "tested 87091200 scored 16331 best 13.0384",
+    "best": {
+      "score": "13.0384",
+      "hits": "141",
+      "out_of_range": "10",
+      "transform": "positions=0321 digits=0157362498"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "digits",
+    "sequence": "null_8",
+    "search": "tested 87091200 scored 16331 best 12.1957",
+    "best": {
+      "score": "12.1957",
+      "hits": "135",
+      "out_of_range": "17",
+      "transform": "positions=0321 digits=0123579468"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "digits",
+    "sequence": "null_9",
+    "search": "tested 87091200 scored 16331 best 12.9422",
+    "best": {
+      "score": "12.9422",
+      "hits": "142",
+      "out_of_range": "16",
+      "transform": "positions=0321 digits=0137286495"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "digits",
+    "sequence": "null_10",
+    "search": "tested 87091200 scored 16331 best 13.0772",
+    "best": {
+      "score": "13.0772",
+      "hits": "132",
+      "out_of_range": "20",
+      "transform": "positions=0321 digits=0187236495"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "digits",
+    "sequence": "null_11",
+    "search": "tested 87091200 scored 16331 best 12.5678",
+    "best": {
+      "score": "12.5678",
+      "hits": "139",
+      "out_of_range": "17",
+      "transform": "positions=0321 digits=0157392648"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "digits",
+    "sequence": "null_12",
+    "search": "tested 87091200 scored 16331 best 13.9396",
+    "best": {
+      "score": "13.9396",
+      "hits": "144",
+      "out_of_range": "14",
+      "transform": "positions=0321 digits=0157962348"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "digits",
+    "sequence": "null_13",
+    "search": "tested 87091200 scored 16331 best 13.6191",
+    "best": {
+      "score": "13.6191",
+      "hits": "139",
+      "out_of_range": "20",
+      "transform": "positions=0321 digits=0127968453"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "digits",
+    "sequence": "null_14",
+    "search": "tested 87091200 scored 16331 best 13.3077",
+    "best": {
+      "score": "13.3077",
+      "hits": "155",
+      "out_of_range": "20",
+      "transform": "positions=0321 digits=0137986542"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "digits",
+    "sequence": "null_15",
+    "search": "tested 87091200 scored 16331 best 11.6713",
+    "best": {
+      "score": "11.6713",
+      "hits": "142",
+      "out_of_range": "16",
+      "transform": "positions=0321 digits=0157326498"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "digits",
+    "sequence": "null_16",
+    "search": "tested 87091200 scored 16331 best 12.1578",
+    "best": {
+      "score": "12.1578",
+      "hits": "120",
+      "out_of_range": "13",
+      "transform": "positions=0321 digits=0197256348"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "digits",
+    "sequence": "null_17",
+    "search": "tested 87091200 scored 16331 best 11.7147",
+    "best": {
+      "score": "11.7147",
+      "hits": "122",
+      "out_of_range": "13",
+      "transform": "positions=0321 digits=0179346258"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "digits",
+    "sequence": "null_18",
+    "search": "tested 87091200 scored 16331 best 14.3345",
+    "best": {
+      "score": "14.3345",
+      "hits": "123",
+      "out_of_range": "16",
+      "transform": "positions=0321 digits=0157286394"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "digits",
+    "sequence": "null_19",
+    "search": "tested 87091200 scored 16331 best 14.8073",
+    "best": {
+      "score": "14.8073",
+      "hits": "124",
+      "out_of_range": "14",
+      "transform": "positions=0321 digits=0167384295"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "affine",
+    "sequence": "target_clean",
+    "search": "tested 2968000 scored 547 best 10.0763",
+    "best": {
+      "score": "10.0763",
+      "hits": "144",
+      "out_of_range": "19",
+      "transform": "mod=2000 a=1999 b=705"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "affine",
+    "sequence": "control",
+    "search": "tested 1600000 scored 679 best 107.904",
+    "best": {
+      "score": "107.904",
+      "hits": "300",
+      "out_of_range": "0",
+      "transform": "mod=2000 a=1831 b=79"
+    },
+    "exact_token_recovery": 1.0
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "affine",
+    "sequence": "null_0",
+    "search": "tested 2968000 scored 547 best 11.2181",
+    "best": {
+      "score": "11.2181",
+      "hits": "138",
+      "out_of_range": "11",
+      "transform": "mod=1900 a=1 b=836"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "affine",
+    "sequence": "null_1",
+    "search": "tested 2968000 scored 547 best 10.558",
+    "best": {
+      "score": "10.558",
+      "hits": "144",
+      "out_of_range": "20",
+      "transform": "mod=2000 a=1 b=907"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "affine",
+    "sequence": "null_2",
+    "search": "tested 2968000 scored 547 best 10.8793",
+    "best": {
+      "score": "10.8793",
+      "hits": "144",
+      "out_of_range": "20",
+      "transform": "mod=2000 a=1 b=907"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "affine",
+    "sequence": "null_3",
+    "search": "tested 2968000 scored 547 best 9.17736",
+    "best": {
+      "score": "9.17736",
+      "hits": "142",
+      "out_of_range": "16",
+      "transform": "mod=1900 a=1899 b=752"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "affine",
+    "sequence": "null_4",
+    "search": "tested 2968000 scored 547 best 12.4787",
+    "best": {
+      "score": "12.4787",
+      "hits": "145",
+      "out_of_range": "18",
+      "transform": "mod=1900 a=1897 b=700"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "affine",
+    "sequence": "null_5",
+    "search": "tested 2968000 scored 547 best 10.7869",
+    "best": {
+      "score": "10.7869",
+      "hits": "145",
+      "out_of_range": "18",
+      "transform": "mod=1900 a=1899 b=707"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "affine",
+    "sequence": "null_6",
+    "search": "tested 2968000 scored 547 best 10.9618",
+    "best": {
+      "score": "10.9618",
+      "hits": "142",
+      "out_of_range": "16",
+      "transform": "mod=1900 a=1899 b=752"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "affine",
+    "sequence": "null_7",
+    "search": "tested 2968000 scored 547 best 9.13513",
+    "best": {
+      "score": "9.13513",
+      "hits": "145",
+      "out_of_range": "18",
+      "transform": "mod=1900 a=1897 b=700"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "affine",
+    "sequence": "null_8",
+    "search": "tested 2968000 scored 547 best 10.1644",
+    "best": {
+      "score": "10.1644",
+      "hits": "152",
+      "out_of_range": "19",
+      "transform": "mod=2000 a=7 b=80"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "affine",
+    "sequence": "null_9",
+    "search": "tested 2968000 scored 547 best 10.3876",
+    "best": {
+      "score": "10.3876",
+      "hits": "129",
+      "out_of_range": "9",
+      "transform": "mod=1900 a=1899 b=787"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "affine",
+    "sequence": "null_10",
+    "search": "tested 2968000 scored 547 best 10.2254",
+    "best": {
+      "score": "10.2254",
+      "hits": "132",
+      "out_of_range": "19",
+      "transform": "mod=2000 a=7 b=105"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "affine",
+    "sequence": "null_11",
+    "search": "tested 2968000 scored 547 best 10.2574",
+    "best": {
+      "score": "10.2574",
+      "hits": "133",
+      "out_of_range": "15",
+      "transform": "mod=1900 a=3 b=876"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "affine",
+    "sequence": "null_12",
+    "search": "tested 2968000 scored 547 best 9.04076",
+    "best": {
+      "score": "9.04076",
+      "hits": "128",
+      "out_of_range": "20",
+      "transform": "mod=1900 a=1 b=736"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "affine",
+    "sequence": "null_13",
+    "search": "tested 2968000 scored 547 best 10.6524",
+    "best": {
+      "score": "10.6524",
+      "hits": "133",
+      "out_of_range": "17",
+      "transform": "mod=1900 a=1897 b=696"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "affine",
+    "sequence": "null_14",
+    "search": "tested 2968000 scored 547 best 9.87975",
+    "best": {
+      "score": "9.87975",
+      "hits": "130",
+      "out_of_range": "11",
+      "transform": "mod=1900 a=1 b=835"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "affine",
+    "sequence": "null_15",
+    "search": "tested 2968000 scored 547 best 10.1672",
+    "best": {
+      "score": "10.1672",
+      "hits": "130",
+      "out_of_range": "20",
+      "transform": "mod=1900 a=1849 b=1431"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "affine",
+    "sequence": "null_16",
+    "search": "tested 2968000 scored 547 best 9.73685",
+    "best": {
+      "score": "9.73685",
+      "hits": "141",
+      "out_of_range": "13",
+      "transform": "mod=1900 a=1 b=770"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "affine",
+    "sequence": "null_17",
+    "search": "tested 2968000 scored 547 best 10.028",
+    "best": {
+      "score": "10.028",
+      "hits": "145",
+      "out_of_range": "18",
+      "transform": "mod=1900 a=1897 b=700"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "affine",
+    "sequence": "null_18",
+    "search": "tested 2968000 scored 547 best 11.3957",
+    "best": {
+      "score": "11.3957",
+      "hits": "145",
+      "out_of_range": "18",
+      "transform": "mod=1900 a=1897 b=700"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "affine",
+    "sequence": "null_19",
+    "search": "tested 2968000 scored 547 best 10.8573",
+    "best": {
+      "score": "10.8573",
+      "hits": "137",
+      "out_of_range": "20",
+      "transform": "mod=2000 a=1999 b=686"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "grid",
+    "sequence": "target_clean",
+    "search": "tested 210800 scored 1161 best 16.5191",
+    "best": {
+      "score": "16.5191",
+      "hits": "161",
+      "out_of_range": "18",
+      "transform": "grid=1900 cols=2 rev=2 offset=500"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "grid",
+    "sequence": "control",
+    "search": "tested 112000 scored 1679 best 107.904",
+    "best": {
+      "score": "107.904",
+      "hits": "300",
+      "out_of_range": "0",
+      "transform": "grid=2000 cols=50 rev=1 offset=173"
+    },
+    "exact_token_recovery": 1.0
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "grid",
+    "sequence": "null_0",
+    "search": "tested 210800 scored 1161 best 11.5323",
+    "best": {
+      "score": "11.5323",
+      "hits": "130",
+      "out_of_range": "16",
+      "transform": "grid=1900 cols=10 rev=2 offset=129"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "grid",
+    "sequence": "null_1",
+    "search": "tested 210800 scored 1161 best 12.7493",
+    "best": {
+      "score": "12.7493",
+      "hits": "130",
+      "out_of_range": "16",
+      "transform": "grid=1900 cols=10 rev=2 offset=129"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "grid",
+    "sequence": "null_2",
+    "search": "tested 210800 scored 1161 best 14.2336",
+    "best": {
+      "score": "14.2336",
+      "hits": "130",
+      "out_of_range": "16",
+      "transform": "grid=1900 cols=10 rev=2 offset=149"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "grid",
+    "sequence": "null_3",
+    "search": "tested 210800 scored 1161 best 12.8244",
+    "best": {
+      "score": "12.8244",
+      "hits": "146",
+      "out_of_range": "18",
+      "transform": "grid=1900 cols=10 rev=3 offset=1739"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "grid",
+    "sequence": "null_4",
+    "search": "tested 210800 scored 1161 best 12.9225",
+    "best": {
+      "score": "12.9225",
+      "hits": "162",
+      "out_of_range": "17",
+      "transform": "grid=1900 cols=2 rev=0 offset=771"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "grid",
+    "sequence": "null_5",
+    "search": "tested 210800 scored 1161 best 11.5983",
+    "best": {
+      "score": "11.5983",
+      "hits": "137",
+      "out_of_range": "15",
+      "transform": "grid=1900 cols=10 rev=0 offset=21"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "grid",
+    "sequence": "null_6",
+    "search": "tested 210800 scored 1161 best 13.4627",
+    "best": {
+      "score": "13.4627",
+      "hits": "130",
+      "out_of_range": "16",
+      "transform": "grid=1900 cols=10 rev=2 offset=149"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "grid",
+    "sequence": "null_7",
+    "search": "tested 210800 scored 1161 best 18.2528",
+    "best": {
+      "score": "18.2528",
+      "hits": "158",
+      "out_of_range": "17",
+      "transform": "grid=1900 cols=2 rev=2 offset=772"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "grid",
+    "sequence": "null_8",
+    "search": "tested 210800 scored 1161 best 13.2348",
+    "best": {
+      "score": "13.2348",
+      "hits": "130",
+      "out_of_range": "16",
+      "transform": "grid=1900 cols=10 rev=2 offset=129"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "grid",
+    "sequence": "null_9",
+    "search": "tested 210800 scored 1161 best 14.263",
+    "best": {
+      "score": "14.263",
+      "hits": "130",
+      "out_of_range": "16",
+      "transform": "grid=1900 cols=10 rev=2 offset=129"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "grid",
+    "sequence": "null_10",
+    "search": "tested 210800 scored 1161 best 13.7106",
+    "best": {
+      "score": "13.7106",
+      "hits": "148",
+      "out_of_range": "18",
+      "transform": "grid=1900 cols=10 rev=3 offset=1699"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "grid",
+    "sequence": "null_11",
+    "search": "tested 210800 scored 1161 best 15.5856",
+    "best": {
+      "score": "15.5856",
+      "hits": "130",
+      "out_of_range": "16",
+      "transform": "grid=1900 cols=10 rev=2 offset=129"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "grid",
+    "sequence": "null_12",
+    "search": "tested 210800 scored 1161 best 13.4044",
+    "best": {
+      "score": "13.4044",
+      "hits": "130",
+      "out_of_range": "16",
+      "transform": "grid=1900 cols=10 rev=2 offset=149"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "grid",
+    "sequence": "null_13",
+    "search": "tested 210800 scored 1161 best 14.8195",
+    "best": {
+      "score": "14.8195",
+      "hits": "130",
+      "out_of_range": "16",
+      "transform": "grid=1900 cols=10 rev=2 offset=129"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "grid",
+    "sequence": "null_14",
+    "search": "tested 210800 scored 1161 best 13.2039",
+    "best": {
+      "score": "13.2039",
+      "hits": "152",
+      "out_of_range": "17",
+      "transform": "grid=1900 cols=2 rev=2 offset=766"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "grid",
+    "sequence": "null_15",
+    "search": "tested 210800 scored 1161 best 14.2589",
+    "best": {
+      "score": "14.2589",
+      "hits": "164",
+      "out_of_range": "16",
+      "transform": "grid=1900 cols=10 rev=2 offset=119"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "grid",
+    "sequence": "null_16",
+    "search": "tested 210800 scored 1161 best 13.781",
+    "best": {
+      "score": "13.781",
+      "hits": "149",
+      "out_of_range": "18",
+      "transform": "grid=1900 cols=2 rev=1 offset=1351"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "grid",
+    "sequence": "null_17",
+    "search": "tested 210800 scored 1161 best 13.2129",
+    "best": {
+      "score": "13.2129",
+      "hits": "164",
+      "out_of_range": "16",
+      "transform": "grid=1900 cols=10 rev=2 offset=119"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "grid",
+    "sequence": "null_18",
+    "search": "tested 210800 scored 1161 best 14.9636",
+    "best": {
+      "score": "14.9636",
+      "hits": "130",
+      "out_of_range": "16",
+      "transform": "grid=1900 cols=10 rev=2 offset=129"
+    }
+  },
+  {
+    "table": "THE972_bourdeau",
+    "mode": "grid",
+    "sequence": "null_19",
+    "search": "tested 210800 scored 1161 best 13.0956",
+    "best": {
+      "score": "13.0956",
+      "hits": "158",
+      "out_of_range": "17",
+      "transform": "grid=1900 cols=2 rev=2 offset=772"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "digits",
+    "sequence": "target_clean",
+    "search": "tested 87091200 scored 23040 best 12.7011",
+    "best": {
+      "score": "12.7011",
+      "hits": "320",
+      "out_of_range": "16",
+      "transform": "positions=0321 digits=0149538276"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "digits",
+    "sequence": "null_0",
+    "search": "tested 87091200 scored 23040 best 13.9622",
+    "best": {
+      "score": "13.9622",
+      "hits": "316",
+      "out_of_range": "14",
+      "transform": "positions=0321 digits=0128963457"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "digits",
+    "sequence": "null_1",
+    "search": "tested 87091200 scored 23040 best 17.7117",
+    "best": {
+      "score": "17.7117",
+      "hits": "327",
+      "out_of_range": "18",
+      "transform": "positions=0321 digits=0198765243"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "digits",
+    "sequence": "null_2",
+    "search": "tested 87091200 scored 23040 best 15.6334",
+    "best": {
+      "score": "15.6334",
+      "hits": "321",
+      "out_of_range": "18",
+      "transform": "positions=0321 digits=0187962543"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "digits",
+    "sequence": "null_3",
+    "search": "tested 87091200 scored 23040 best 17.1295",
+    "best": {
+      "score": "17.1295",
+      "hits": "319",
+      "out_of_range": "20",
+      "transform": "positions=0321 digits=0138976254"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "digits",
+    "sequence": "null_4",
+    "search": "tested 87091200 scored 23040 best 10.441",
+    "best": {
+      "score": "10.441",
+      "hits": "318",
+      "out_of_range": "19",
+      "transform": "positions=0321 digits=0175963428"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "digits",
+    "sequence": "null_5",
+    "search": "tested 87091200 scored 23040 best 17.8404",
+    "best": {
+      "score": "17.8404",
+      "hits": "316",
+      "out_of_range": "14",
+      "transform": "positions=0321 digits=0128963457"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "digits",
+    "sequence": "null_6",
+    "search": "tested 87091200 scored 23040 best 18.9584",
+    "best": {
+      "score": "18.9584",
+      "hits": "311",
+      "out_of_range": "20",
+      "transform": "positions=0321 digits=0147869523"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "digits",
+    "sequence": "null_7",
+    "search": "tested 87091200 scored 23040 best 20.9754",
+    "best": {
+      "score": "20.9754",
+      "hits": "327",
+      "out_of_range": "18",
+      "transform": "positions=0321 digits=0198735246"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "digits",
+    "sequence": "null_8",
+    "search": "tested 87091200 scored 23040 best 19.5403",
+    "best": {
+      "score": "19.5403",
+      "hits": "322",
+      "out_of_range": "14",
+      "transform": "positions=0321 digits=0138972546"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "digits",
+    "sequence": "null_9",
+    "search": "tested 87091200 scored 23040 best 13.1677",
+    "best": {
+      "score": "13.1677",
+      "hits": "319",
+      "out_of_range": "19",
+      "transform": "positions=0321 digits=0175983426"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "digits",
+    "sequence": "null_10",
+    "search": "tested 87091200 scored 23040 best 10.2869",
+    "best": {
+      "score": "10.2869",
+      "hits": "309",
+      "out_of_range": "18",
+      "transform": "positions=0321 digits=0187965423"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "digits",
+    "sequence": "null_11",
+    "search": "tested 87091200 scored 23040 best 14.0956",
+    "best": {
+      "score": "14.0956",
+      "hits": "327",
+      "out_of_range": "18",
+      "transform": "positions=0321 digits=0198735246"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "digits",
+    "sequence": "null_12",
+    "search": "tested 87091200 scored 23040 best 12.226",
+    "best": {
+      "score": "12.226",
+      "hits": "328",
+      "out_of_range": "18",
+      "transform": "positions=0321 digits=0198763254"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "digits",
+    "sequence": "null_13",
+    "search": "tested 87091200 scored 23040 best 19.9347",
+    "best": {
+      "score": "19.9347",
+      "hits": "327",
+      "out_of_range": "18",
+      "transform": "positions=0321 digits=0179835246"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "digits",
+    "sequence": "null_14",
+    "search": "tested 87091200 scored 23040 best 15.3951",
+    "best": {
+      "score": "15.3951",
+      "hits": "321",
+      "out_of_range": "14",
+      "transform": "positions=0321 digits=0138962547"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "digits",
+    "sequence": "null_15",
+    "search": "tested 87091200 scored 23040 best 16.7186",
+    "best": {
+      "score": "16.7186",
+      "hits": "327",
+      "out_of_range": "18",
+      "transform": "positions=0321 digits=0179835246"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "digits",
+    "sequence": "null_16",
+    "search": "tested 87091200 scored 23040 best 17.1952",
+    "best": {
+      "score": "17.1952",
+      "hits": "321",
+      "out_of_range": "20",
+      "transform": "positions=0321 digits=0138769254"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "digits",
+    "sequence": "null_17",
+    "search": "tested 87091200 scored 23040 best 11.7364",
+    "best": {
+      "score": "11.7364",
+      "hits": "318",
+      "out_of_range": "13",
+      "transform": "positions=0321 digits=0198276453"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "digits",
+    "sequence": "null_18",
+    "search": "tested 87091200 scored 23040 best 14.1202",
+    "best": {
+      "score": "14.1202",
+      "hits": "321",
+      "out_of_range": "14",
+      "transform": "positions=0321 digits=0137962548"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "digits",
+    "sequence": "null_19",
+    "search": "tested 87091200 scored 23040 best 18.2333",
+    "best": {
+      "score": "18.2333",
+      "hits": "320",
+      "out_of_range": "13",
+      "transform": "positions=0321 digits=0186539247"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "affine",
+    "sequence": "target_clean",
+    "search": "tested 2968000 scored 758 best -1.51139",
+    "best": {
+      "score": "-1.51139",
+      "hits": "271",
+      "out_of_range": "20",
+      "transform": "mod=2000 a=1 b=907"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "affine",
+    "sequence": "null_0",
+    "search": "tested 2968000 scored 758 best 3.47687",
+    "best": {
+      "score": "3.47687",
+      "hits": "271",
+      "out_of_range": "20",
+      "transform": "mod=2000 a=1 b=907"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "affine",
+    "sequence": "null_1",
+    "search": "tested 2968000 scored 758 best -0.173778",
+    "best": {
+      "score": "-0.173778",
+      "hits": "271",
+      "out_of_range": "20",
+      "transform": "mod=2000 a=1 b=907"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "affine",
+    "sequence": "null_2",
+    "search": "tested 2968000 scored 758 best 6.62964",
+    "best": {
+      "score": "6.62964",
+      "hits": "271",
+      "out_of_range": "20",
+      "transform": "mod=2000 a=1 b=907"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "affine",
+    "sequence": "null_3",
+    "search": "tested 2968000 scored 758 best 3.31951",
+    "best": {
+      "score": "3.31951",
+      "hits": "271",
+      "out_of_range": "20",
+      "transform": "mod=2000 a=1 b=908"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "affine",
+    "sequence": "null_4",
+    "search": "tested 2968000 scored 758 best 5.23012",
+    "best": {
+      "score": "5.23012",
+      "hits": "271",
+      "out_of_range": "20",
+      "transform": "mod=2000 a=1 b=907"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "affine",
+    "sequence": "null_5",
+    "search": "tested 2968000 scored 758 best 8.80741",
+    "best": {
+      "score": "8.80741",
+      "hits": "271",
+      "out_of_range": "20",
+      "transform": "mod=2000 a=1 b=907"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "affine",
+    "sequence": "null_6",
+    "search": "tested 2968000 scored 758 best 0.511247",
+    "best": {
+      "score": "0.511247",
+      "hits": "271",
+      "out_of_range": "20",
+      "transform": "mod=2000 a=1 b=907"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "affine",
+    "sequence": "null_7",
+    "search": "tested 2968000 scored 758 best -0.2952",
+    "best": {
+      "score": "-0.2952",
+      "hits": "271",
+      "out_of_range": "20",
+      "transform": "mod=2000 a=1 b=907"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "affine",
+    "sequence": "null_8",
+    "search": "tested 2968000 scored 758 best 0.546132",
+    "best": {
+      "score": "0.546132",
+      "hits": "226",
+      "out_of_range": "20",
+      "transform": "mod=2000 a=1993 b=1509"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "affine",
+    "sequence": "null_9",
+    "search": "tested 2968000 scored 758 best 6.51299",
+    "best": {
+      "score": "6.51299",
+      "hits": "297",
+      "out_of_range": "14",
+      "transform": "mod=1900 a=3 b=882"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "affine",
+    "sequence": "null_10",
+    "search": "tested 2968000 scored 758 best 3.69567",
+    "best": {
+      "score": "3.69567",
+      "hits": "295",
+      "out_of_range": "17",
+      "transform": "mod=1900 a=1899 b=747"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "affine",
+    "sequence": "null_11",
+    "search": "tested 2968000 scored 758 best 12.1975",
+    "best": {
+      "score": "12.1975",
+      "hits": "271",
+      "out_of_range": "20",
+      "transform": "mod=2000 a=1 b=907"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "affine",
+    "sequence": "null_12",
+    "search": "tested 2968000 scored 758 best 3.73244",
+    "best": {
+      "score": "3.73244",
+      "hits": "271",
+      "out_of_range": "20",
+      "transform": "mod=2000 a=1 b=907"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "affine",
+    "sequence": "null_13",
+    "search": "tested 2968000 scored 758 best 1.61929",
+    "best": {
+      "score": "1.61929",
+      "hits": "271",
+      "out_of_range": "20",
+      "transform": "mod=2000 a=1 b=907"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "affine",
+    "sequence": "null_14",
+    "search": "tested 2968000 scored 758 best 6.92748",
+    "best": {
+      "score": "6.92748",
+      "hits": "271",
+      "out_of_range": "20",
+      "transform": "mod=2000 a=1 b=907"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "affine",
+    "sequence": "null_15",
+    "search": "tested 2968000 scored 758 best 3.79177",
+    "best": {
+      "score": "3.79177",
+      "hits": "271",
+      "out_of_range": "20",
+      "transform": "mod=2000 a=1 b=907"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "affine",
+    "sequence": "null_16",
+    "search": "tested 2968000 scored 758 best 0.495526",
+    "best": {
+      "score": "0.495526",
+      "hits": "271",
+      "out_of_range": "20",
+      "transform": "mod=2000 a=1 b=907"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "affine",
+    "sequence": "null_17",
+    "search": "tested 2968000 scored 758 best 3.13014",
+    "best": {
+      "score": "3.13014",
+      "hits": "271",
+      "out_of_range": "20",
+      "transform": "mod=2000 a=1 b=907"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "affine",
+    "sequence": "null_18",
+    "search": "tested 2968000 scored 758 best -2.40691",
+    "best": {
+      "score": "-2.40691",
+      "hits": "267",
+      "out_of_range": "20",
+      "transform": "mod=2000 a=1 b=911"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "affine",
+    "sequence": "null_19",
+    "search": "tested 2968000 scored 758 best 3.81747",
+    "best": {
+      "score": "3.81747",
+      "hits": "271",
+      "out_of_range": "20",
+      "transform": "mod=2000 a=1 b=907"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "grid",
+    "sequence": "target_clean",
+    "search": "tested 210800 scored 1908 best 14.5336",
+    "best": {
+      "score": "14.5336",
+      "hits": "312",
+      "out_of_range": "20",
+      "transform": "grid=1900 cols=2 rev=3 offset=1436"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "grid",
+    "sequence": "null_0",
+    "search": "tested 210800 scored 1908 best 6.26712",
+    "best": {
+      "score": "6.26712",
+      "hits": "312",
+      "out_of_range": "20",
+      "transform": "grid=1900 cols=2 rev=3 offset=1436"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "grid",
+    "sequence": "null_1",
+    "search": "tested 210800 scored 1908 best 4.22611",
+    "best": {
+      "score": "4.22611",
+      "hits": "312",
+      "out_of_range": "20",
+      "transform": "grid=1900 cols=2 rev=3 offset=1436"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "grid",
+    "sequence": "null_2",
+    "search": "tested 210800 scored 1908 best 10.3945",
+    "best": {
+      "score": "10.3945",
+      "hits": "272",
+      "out_of_range": "20",
+      "transform": "grid=1900 cols=4 rev=2 offset=454"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "grid",
+    "sequence": "null_3",
+    "search": "tested 210800 scored 1908 best 4.35937",
+    "best": {
+      "score": "4.35937",
+      "hits": "294",
+      "out_of_range": "20",
+      "transform": "grid=1900 cols=5 rev=3 offset=1674"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "grid",
+    "sequence": "null_4",
+    "search": "tested 210800 scored 1908 best 6.46099",
+    "best": {
+      "score": "6.46099",
+      "hits": "259",
+      "out_of_range": "14",
+      "transform": "grid=1900 cols=10 rev=1 offset=1541"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "grid",
+    "sequence": "null_5",
+    "search": "tested 210800 scored 1908 best 8.57421",
+    "best": {
+      "score": "8.57421",
+      "hits": "262",
+      "out_of_range": "13",
+      "transform": "grid=1900 cols=10 rev=0 offset=301"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "grid",
+    "sequence": "null_6",
+    "search": "tested 210800 scored 1908 best 12.6737",
+    "best": {
+      "score": "12.6737",
+      "hits": "312",
+      "out_of_range": "20",
+      "transform": "grid=1900 cols=2 rev=3 offset=1436"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "grid",
+    "sequence": "null_7",
+    "search": "tested 210800 scored 1908 best 6.11135",
+    "best": {
+      "score": "6.11135",
+      "hits": "257",
+      "out_of_range": "14",
+      "transform": "grid=1900 cols=10 rev=1 offset=1721"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "grid",
+    "sequence": "null_8",
+    "search": "tested 210800 scored 1908 best 5.41836",
+    "best": {
+      "score": "5.41836",
+      "hits": "262",
+      "out_of_range": "14",
+      "transform": "grid=1900 cols=10 rev=0 offset=601"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "grid",
+    "sequence": "null_9",
+    "search": "tested 210800 scored 1908 best 6.75979",
+    "best": {
+      "score": "6.75979",
+      "hits": "312",
+      "out_of_range": "20",
+      "transform": "grid=1900 cols=2 rev=3 offset=1436"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "grid",
+    "sequence": "null_10",
+    "search": "tested 210800 scored 1908 best 10.8773",
+    "best": {
+      "score": "10.8773",
+      "hits": "262",
+      "out_of_range": "13",
+      "transform": "grid=1900 cols=10 rev=0 offset=301"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "grid",
+    "sequence": "null_11",
+    "search": "tested 210800 scored 1908 best 8.03527",
+    "best": {
+      "score": "8.03527",
+      "hits": "314",
+      "out_of_range": "20",
+      "transform": "grid=1900 cols=2 rev=1 offset=1435"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "grid",
+    "sequence": "null_12",
+    "search": "tested 210800 scored 1908 best 5.165",
+    "best": {
+      "score": "5.165",
+      "hits": "272",
+      "out_of_range": "20",
+      "transform": "grid=1900 cols=4 rev=2 offset=454"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "grid",
+    "sequence": "null_13",
+    "search": "tested 210800 scored 1908 best 12.5996",
+    "best": {
+      "score": "12.5996",
+      "hits": "263",
+      "out_of_range": "13",
+      "transform": "grid=1900 cols=10 rev=0 offset=341"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "grid",
+    "sequence": "null_14",
+    "search": "tested 210800 scored 1908 best 5.15291",
+    "best": {
+      "score": "5.15291",
+      "hits": "315",
+      "out_of_range": "20",
+      "transform": "grid=1900 cols=2 rev=1 offset=1439"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "grid",
+    "sequence": "null_15",
+    "search": "tested 210800 scored 1908 best 11.3791",
+    "best": {
+      "score": "11.3791",
+      "hits": "295",
+      "out_of_range": "16",
+      "transform": "grid=1900 cols=10 rev=3 offset=1399"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "grid",
+    "sequence": "null_16",
+    "search": "tested 210800 scored 1908 best 6.35231",
+    "best": {
+      "score": "6.35231",
+      "hits": "312",
+      "out_of_range": "20",
+      "transform": "grid=1900 cols=2 rev=3 offset=1436"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "grid",
+    "sequence": "null_17",
+    "search": "tested 210800 scored 1908 best 9.52987",
+    "best": {
+      "score": "9.52987",
+      "hits": "262",
+      "out_of_range": "13",
+      "transform": "grid=1900 cols=10 rev=0 offset=301"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "grid",
+    "sequence": "null_18",
+    "search": "tested 210800 scored 1908 best 10.2734",
+    "best": {
+      "score": "10.2734",
+      "hits": "312",
+      "out_of_range": "20",
+      "transform": "grid=1900 cols=2 rev=3 offset=1436"
+    }
+  },
+  {
+    "table": "WE028",
+    "mode": "grid",
+    "sequence": "null_19",
+    "search": "tested 210800 scored 1908 best 17.4958",
+    "best": {
+      "score": "17.4958",
+      "hits": "272",
+      "out_of_range": "20",
+      "transform": "grid=1900 cols=4 rev=2 offset=454"
+    }
+  }
+]

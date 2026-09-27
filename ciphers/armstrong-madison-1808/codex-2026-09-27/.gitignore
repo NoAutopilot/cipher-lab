@@ -1,0 +1,7 @@
+*.bin
+*.known
+renumber
+run_input.seq
+run_output.tsv
+null.seq
+__pycache__/
