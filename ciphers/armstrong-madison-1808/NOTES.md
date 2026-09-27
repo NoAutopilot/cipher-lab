@@ -1256,3 +1256,17 @@ unchecked.
 - lead; Annet 1770 PDF p.17 exercise-11 engraving aligns four connective words to strokes (AND: descending diagonal; ARE: right-facing curve, alphabet r; OR: loop joined to a right-facing curve, provisionally o+r; OUGHT: forked aught/ought sign from p.3), all grade M, answer-aware, one reader -- unchecked.
 - correction; the ARE/OR contrast makes it unsafe to generalize exercise 2's diagonal-at-OR-position reading into a general OR sign; the exercise-2 discrepancy (plate/text mismatch, abbreviation, or omitted-word punctuation) remains unresolved and no new OR or AND alias was installed -- unchecked.
 - next-step; the checkpoint's own named next action is comparing the source-grounded Annet primitives against the target's native page-1 long passages and page-3 tail, to test whether a literal match can be made before moving to primary-key recovery -- unchecked.
+
+
+## Second-opinion checkpoint (SO-ARMSTRONG-CHECKPOINT 21:17, 27 Sept 2026)
+
+Landed from PR 50 (`second-opinions/chatgpt-checkpoint-2026-09-27-2117.md`, PR-LAND-19). A runner checkpoint
+report, not a leads-prompt answer or a reading; every citation below is a claim to verify, never a fact --
+unchecked.
+
+- archival-route; James Monroe Papers Series 1 reel 3 frames 127-128 identified as a compact cipher key and worked example, matched (by chronological placement, not independent authentication) to the 1963 index and 1904 catalogue's Livingston 1803 cipher-code entry -- unchecked.
+- lead; the compact key is NOT the anticipated ~1700-entry WE027 table -- three letter alphabets, a short-word column, a vocabulary column, a trailing-zero rule and explicit null numbers; M-grade, one-reader transcription of 25 letter entries and 45 word entries -- unchecked.
+- lead; a separate undated table at reel 9 frame 954 gives different M-grade readings for groups 911/967 than PR 43's provisional Livingston witness table (911 "ven" vs "have", 967 "trade" vs "that"), and is not identified as WE027 or WE028 -- unchecked.
+- correction; the PR 49 lease on comparing Annet primitives against the target's glyph passages is released with no secure literal reading established -- not claimed as a validated negative -- unchecked.
+- archival-route; loc.gov's ordinary web reader returns 403 but the public JSON catalogue (`?fo=json`) and tile.loc.gov IIIF image endpoints answer 200 with valid image URLs, a route not previously documented here -- unchecked.
+- next-step; the checkpoint's own named next action is locating and reading Livingston-to-Monroe, 11 September 1803 (catalogue title reproduced at PICRYL), to test whether its cipher table matches the compact key, the PR 43 witness table, or neither -- unchecked.
