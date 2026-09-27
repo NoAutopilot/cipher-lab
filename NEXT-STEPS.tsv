@@ -52,7 +52,7 @@ fair-game-2010	open	runnable	S	n	25 Sep
 florence-dieci-responsive	blocked	runnable	S	n		## Next steps (not done here, budget/window)
 fr15564-mercoeur-1586	blocked	runnable	S	n		
 fr16092-maisse-1582	blocked	runnable	S	n	25 Sep	**Snippets cannot fully answer the row's question**, per the row's own instruction for that case, but they substantially narrow it: the right book is now known to be partially queryable, and the next…
-fr2933-salviati-1525	open	runnable	S	n	27 Sep	Subagents: 4 (0 follow-ups needed).
+fr2933-salviati-1525	open	runnable	S	n	27 Sep	**Next:** for LANE SALV2 -- the cm family needs either more restarts (the control, not the target, is the blocker: try CM_RESTARTS=48-96 on the CM_ERR=0.07 control before spending anything on the tar…
 fr2980-gramont	partial	runnable	M	n		A key-image check against the Lasry and Tomokiyo tables is the next step for eh, Tb and the crosses.
 fr2988-ranzo-1520s	open	runnable	S	n	24 Sep	
 fr3022-garbino-1528	open	runnable	S	n	24 Sep	
