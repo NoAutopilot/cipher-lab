@@ -30,3 +30,7 @@ more accounts join.
 
 | UTC | Campaign | Steps run | Spent | Hypotheses open / done / dropped | Verified readings |
 |---|---|---|---|---|---|
+| 27 Sept 20:45 | armstrong-madison-1808 | 0 (seed 20:34) | 0 | 10 / 0 / 0 | 0 |
+| 27 Sept 20:45 | espagnol142-mercy-1648 | 0 (seed 20:31; runner fired 20:35 before the seed) | 0 | 8 / 0 / 0 | 0 |
+| 27 Sept 20:45 | fr4715-f61-mayenne-1592 | 0 (seed 20:36; F61-CAL's calibration 8/55 recorded as the prior attempt) | 0 | 10 / 0 / 0 | 0 |
+| 27 Sept 20:45 | spinelli-beinecke-c1515 | gate passed 20:09, seed queued | 0 | -- | 0 |

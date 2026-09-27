@@ -23,8 +23,15 @@ def parse(folder):
     text = open(p, encoding="utf-8").read()
     hdr = dict(re.findall(r"^(\w+):\s*(.*)$", text.split("\n## ")[0], re.M))
     rows = []
-    for m in re.finditer(r"^\| (H\d+) \| (\d+) \| (.*?) \| (.*?) \| ([\d.]+) \| (.*?) \| (.*?) \|\s*$", text, re.M):
-        rows.append(dict(id=m.group(1), rank=int(m.group(2)), hypothesis=m.group(3), needs=m.group(4), est=float(m.group(5)), status=m.group(6), result=m.group(7)))
+    for line in text.split("\n"):
+        if not re.match(r"^\| H\d+ \|", line): continue
+        cells = [c.strip() for c in line.strip().strip("|").split("|")]
+        if len(cells) < 7: continue
+        rid, rank = cells[0], cells[1]
+        result, status, est, needs = cells[-1], cells[-2], cells[-3], cells[-4]
+        hyp = " | ".join(cells[2:-4])
+        try: rows.append(dict(id=rid, rank=int(rank), hypothesis=hyp, needs=needs, est=float(re.sub(r"[^\d.]", "", est) or 0), status=status, result=result))
+        except ValueError: print(f"{folder}: unparsable row {rid}")
     return p, text, hdr, rows
 def check():
     ok = True
