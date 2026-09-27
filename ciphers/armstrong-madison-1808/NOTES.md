@@ -1298,6 +1298,47 @@ unchecked.
 - lead/negative; no additional occurrence of the marked (diamond) 1295 was found in this batch's review of images 1033/1034/1038/1039, but this is not an exhaustive transcription or a verified-absence claim; images 1035 and 1040 remain unretrieved -- unchecked.
 - next-step; the checkpoint's own named next action is inspecting PR 43's existing 17/18 September Livingston images for a second annotated occurrence of the marked Talleyrand run or unmarked 1295, to decide whether the May/September 1295 discrepancy is a copying error, an alternate marked entry, or a key change -- unchecked.
 
+
+## Second-opinion checkpoint (SO-ARMSTRONG-CHECKPOINT 21:59, 27 Sept 2026)
+
+Landed from PR 53 (`second-opinions/chatgpt-checkpoint-2026-09-27-2159.md`, PR-LAND-20). A runner checkpoint
+report, not a leads-prompt answer or a reading; every citation below is a claim to verify, never a fact --
+unchecked.
+
+- lead; Monroe reel 9 frames 956-957 (the THE=812 table's alphabetical face) carry printed positional rules: a caret-like sign beneath the last/penultimate/antepenultimate digit doubles the corresponding letter from the right, a curved sign beneath a digit deletes it, and U/V and I/J are stated interchangeable; M-provisional, one reader, scoped to the THE=812 table only, not authenticated for Livingston's THE=968 witnesses or Armstrong's target -- unchecked.
+- lead/correction; two occurrences of group 1583 (May "powerfull" and Sept 18 "his full powers that he") each carry a distinct closed/loop-shaped mark beneath the final digit, supporting a marked-token reading of "full" but NOT establishing unmarked 1583=full; the "ful plus a doubling operator" idea remains an unverified hypothesis -- unchecked.
+- correction; the parent checkpoint's (#52) fixture reading "that any good could have resulted" is corrected by native crop inspection to "that any good would have resulted"; the twelve coded groups and their aligned plaintext span are otherwise unchanged -- unchecked.
+- archival-route/lead; a domain-filtered search located Jefferson to Monroe, 11 May 1785 (Founders Archives), in which Jefferson describes completing a cipher to accompany the letter, identified by the edition as Code No. 9 -- an attribution lead only, not proof that Monroe reel 9 frames 954-957 are that enclosure -- unchecked.
+- next-step; the checkpoint's own named next action is locating the original Code No. 9 enclosure or an identified copy, and comparing the three fingerprints 17=magistrate, 18=navigation, 812=the, before transferring any rule to Livingston or Armstrong -- unchecked.
+
+
+## Second-opinion checkpoint (SO-ARMSTRONG-CHECKPOINT 22:11, 27 Sept 2026)
+
+Landed from PR 54 (`second-opinions/chatgpt-checkpoint-2026-09-27-2211.md`, PR-LAND-20). A runner checkpoint
+report, not a leads-prompt answer or a reading; every citation below is a claim to verify, never a fact --
+unchecked.
+
+- lead; LOC mcc.036 is identified as Madison to Jefferson, 23 May 1789, partially ciphered with Jefferson's own interlinear decipherment, and the catalogue links it to the cipher Jefferson sent Madison on 11 May 1785 -- a separate Madison-side lead from PR 53's Jefferson-to-Monroe/Code No. 9 lead, not to be merged with it -- unchecked.
+- lead; a manuscript control on mcc.036 page 2 reproduces the printed THE=812 table's final-letter-doubling rule: groups 1109="sti", 416="more", and 1598 (caret beneath its final digit) doubles to "ll", giving "still more" matching Jefferson's own interlinear reading -- M-provisional, one reader, answer-aware (not a blind test) -- unchecked.
+- caution; this control validates only the final-letter-doubling rule in this one case; it does NOT establish that Livingston's THE=968 system or Armstrong's target uses this key or operator, and does not validate the penultimate/antepenultimate/deletion/affix rules from PR 53 -- unchecked.
+- correction; a preliminary reduced-image impression of group "1588" was corrected by native inspection to "1598" before entering the fixture -- unchecked.
+- leads (unvalidated); a Jefferson Barbary-States memorandum catalogued as shorthand (LOC mtj1.004_1009_1009), a Bradford-to-Madison letter of 1 March 1773 discussing "personal strokes," and two further Jefferson/Madison 1785 letters as a possible provenance chain for the control key -- none inspected or validated as target controls -- unchecked.
+- next-step; the checkpoint's own named next action is acquiring mcc.036 page 3 to check for an annotated deletion mark or a non-final-position doubling mark -- unchecked.
+
+
+## Second-opinion checkpoint (SO-ARMSTRONG-CHECKPOINT 22:44, 27 Sept 2026)
+
+Landed from PR 55 (`second-opinions/chatgpt-checkpoint-2026-09-27-2244.md`, PR-LAND-20). A runner checkpoint
+report, not a leads-prompt answer or a reading; every citation below is a claim to verify, never a fact --
+unchecked.
+
+- lead/negative; mcc.036 page 3 continues in ordinary prose to the closing with no visible encoded span, so it supplies no deletion or non-final-position doubling control; page 4 not acquired -- a bounded one-leaf observation, not exhaustive -- unchecked.
+- lead/negative; the Jefferson Barbary-States memorandum (mtj1.004_1009_1009) shows conventional cursive, abbreviations and corrections, not an annotated geometric alphabet or a secure Armstrong glyph match; no shorthand system identified or excluded -- unchecked.
+- archival-route; Yale MS 857 finding aid (box 4 folder 116) lists a 25 April 1808 statement/covering memorandum about an Armstrong letter on the purchase of Florida, tentatively attributed to [Smith, John] and [John?] Armstrong; manuscript not acquired, no established link to the 20 Feb 1808 cipher -- unchecked.
+- archival-route; Warden Papers holdings distinguished across LOC (ms012085 boxes 1/23/25), Maryland Historical Society (MCHC MS 0871, 8 reels, microfilm-only, public tree endpoint returns zero children), and APS (Mss.Film.1290, direct page did not load) -- no manuscript read in any of the three -- unchecked.
+- lead/negative; both Sharon Howard/Newcastle project letter-metadata CSVs (dbw2/dbw3, pinned at commit b800c530) were audited for the sender/recipient and date fields: no row names "Armstrong" or carries an 1800-1809 year in those fields, but 97 rows are undated and coverage is bounded to this accessible metadata only -- unchecked.
+- next-step; the checkpoint's own named next action is re-reading the interlinear over the Sept 17, 1803 Livingston witness's group run 1011 911 408 1105 1456 968 1426 1133 1221 978, focusing on 1426 1133 and 978, for a separate plaintext/copy witness -- unchecked.
+
 ## Campaign step H1 (2026-09-27 22:15 UTC)
 
 Runner: campaign runner armstrong-madison-1808 (account 2, session_013E5jUS9GV1AsxLeUcwgbf6), first step of the
