@@ -1,6 +1,6 @@
 # BnF reproduction batch: 13 orders across 10 targets (row 13 added 27 Sept 2026)
 
-**Status:** part-sent (ASKS.md row 78). 27 Sept 2026 about 17:1x UTC: rows 1, 2, 11, 12, 13 submitted by the owner as quote requests on the BnF online devis form (Image Premium, envoi en ligne, service normal, partial reproduction), quotes awaited, nothing paid; rows 3-10 still wait on the held email. No payment made. Not a mailbox draft: this is a paste-ready
+**Status:** part-sent (ASKS.md row 78). 27 Sept 2026 about 17:1x UTC: rows 1, 2, 11, 12, 13 submitted by the owner as quote requests on the BnF online devis form (Image Premium, envoi en ligne, service normal, partial reproduction), quotes awaited, nothing paid; rows 3-10 are in a mailbox draft (27 Sept 2026 17:2x UTC) for the owner to send. No payment made. Not a mailbox draft: this is a paste-ready
 order for the owner's own action on the BnF's own reproduction routes, the same shape as
 `outreach/tna-page-copy-batch.md` (ASKS row 73). No personal data, no payment details, per CLAUDE.md rule 9.
 
