@@ -1,0 +1,43 @@
+line	pos	word	expanded	grade
+1	1	Parlato		A
+1	2	+		A
+1	25	v		R
+1	26	?|s		M
+1	29	5	folio-pagination stamp "57" (=f57r), above line1's text band, not running text	R
+1	30	7	folio-pagination stamp "57" (=f57r), above line1's text band, not running text	R
+2	8	v		R
+3	1	&	et	R
+3	6	o		R
+3	14	?|<none>		M
+4	4	e|i		M
+4	23	g		R
+5	8	e|i		M
+7	12	e		R
+7	19	&	et	R
+9	8	<none>		R
+9	11	H		R
+9	17	<none>		R
+10	13	o		R
+11	9	&	et	R
+12	20	m~		A
+13	4	a		A
+14	24	?|b		M
+15	8	?|H		M
+15	11	&	et	R
+15	13	h		R
+16	1	e		A
+16	3	o		R
+16	18	b		R
+17	4	e|o		M
+17	7	?|e		M
+17	11	?|o		M
+17	15	Ch~		R
+17	16	ſcriuã	scrivano	R
+17	19	f		A
+17	20	fus		R
+17	21	+		R
+17	22	+		R
+17	23	d~		A
+17	24	+		A
+18	19	h		R
+19	30	<none>		A

@@ -2491,3 +2491,85 @@ f57v: 20 line crops -> plain_crops/f57v/, manifest plain_crops/f57v/manifest.tsv
 mark, same convention as `crop_passC_leaf.py`, matching SALV-PLAIN2's own prior run exactly.) Full-leaf renders
 and line-crop PNGs are working files, not committed (folder-size rule), per SALV-PLAIN1/2's own precedent; only
 the manifests are tracked.
+
+**Passes and reconciliation, f57r.** Two blind Sonnet subagent calls (crop paths + per-line pos list only, no
+full-leaf image, never the other pass's output; each subagent read the crops itself, never this worker). Then
+`recon_plain_diff.py` (9/42 pos agree, 21.4% -- much lower than any earlier leaf, matching this leaf's own known
+character: the pre-existing `leafnotes/f57r.md` from an earlier sign-level pass, 25 Sept 2026, LANE R6 L4, notes
+"only one clear plain-text run inside the cipher body itself... with only 46 of 502 boxes plain", i.e. a leaf
+that reads as much more heavily enciphered than f54v/f55r, and several of its rare plain boxes reuse glyph
+shapes that double as this cipher's own invented signs elsewhere -- genuine visual ambiguity, not a transcription
+slip). The 33 disagreements were then settled by one further Sonnet subagent call (never this worker), given only
+the disagreeing rows and the crops of the 14 lines they sit on: 24 settled (`R`, including confirming line1
+pos29-30 is the leaf's own folio-pagination stamp "57", not text, and normalising four Tironian-"et" ligatures
+that both passes had read as different letters), 9 left unsettled (`M`, mostly the dual-use circle/epsilon-shaped
+glyphs the leafnotes already flagged, kept as `passA|passB`). Grade `A` (9 positions where the two passes already
+agreed).
+
+**Control table, f57r added** (rule 3's transcription version):
+
+| leaf | plain boxes | A | R | M | M share (unsettled) | raw A/B pass disagreement | settlement method |
+|---|---|---|---|---|---|---|---|
+| f54r (PLAIN1) | 139 | 74 | 37 | 28 | 20.1% | 49.6% | image, per line |
+| f54v (PLAIN1) | 152 | 96 | 51 | 5 | 3.3% | 42.1% | image, per line |
+| f55r (PLAIN1) | 173 | 104 | 58 | 11 | 6.4% | 39.9% | image, per line |
+| f55v (PLAIN1) | 165 | 79 | 24 | 62 | 37.6% | 54.2% | time-constrained heuristic |
+| f56r (PLAIN2) | 171 | 96 | 60 | 15 | 8.8% | 49.1% | image, per line |
+| f56v (PLAIN2) | 206 of 207* | 100 | 69 | 37 | 18.0% | 51.5% | time-constrained, confidence-based |
+| f57r (PLAIN3) | 42 of 43** | 9 | 24 | 9 | 21.4% | 78.6% (33/42) | image, subagent-settled |
+| **total (7 of 8 leaves)** | **1048 of 1050** | **558** | **323** | **167** | **15.9%** | -- | -- |
+
+\* see SALV-PLAIN2's own note above (line18 pos19 gap). \*\* f57r's own split-pos convention (17/6.5 shares
+17's mark), not a gap.
+
+**[C] flag, f57r added** (per the parent's 26 Sept 2026 21:59 UTC ROOM.md note):
+
+| leaf | plain boxes | reconciled reading calls [C] | exactly one pass called it [C] |
+|---|---|---|---|
+| f54r-f56v subtotal (PLAIN1+2) | 842 | 137 | 90 |
+| f57r (PLAIN3) | 42 | 0 | 0 |
+| **all 7 leaves** | **884** | **137** | **90** |
+
+f57r's own [C] rate is 0 -- consistent with this leaf's own leafnotes.md description (very few plain boxes,
+most of them single dual-use letterforms rather than isolated "plain" labels sitting inside dense sign clusters,
+the shape that produced most other leaves' false-[C] flags).
+
+**Time per unit, f57r.** U0 (regenerate 4 renders + re-cut both leaves' crops): about 15 minutes (one gallica
+connection-reset, retried). f57r pass A + pass B (parallel Sonnet subagent calls, wall time = the slower of the
+two): about 22 minutes. f57r reconciliation (one further Sonnet subagent call, crops of the 14 disputed lines
+only): about 24 minutes. Total wall time from claim to this point: about 61 of the 80-minute box (76%) --
+markedly higher than this brief's own USD 1.8/~7-minute per-unit estimate, because a full subagent call
+(spin-up, image reads at multiple zoom levels, writing its own TSV) runs 13-24 minutes end to end regardless of
+how few boxes it covers, the same shape CLAUDE.md's Usage section already documents for per-pass subagent
+pricing (AX-COMP2/bMALS). f57v (172 plain boxes across 20 lines, over 4x f57r's box count, and this brief's own
+one-more-subagent-call-per-leaf reconciliation step) is very unlikely to fit in the remaining ~19 minutes before
+crossing the 80-minute line -- per the brief's own "stop before starting a unit that would cross 80% of the box"
+rule, **f57v's passes were not started**. f57v's crops are already cut (`plain_crops/f57v/`, this job's own U0
+above, 172 plain boxes across 20 lines) and its two renders (`images/f57v_ref1600.jpg`, `images/f57v_ref2400.jpg`)
+are on disk for this session only (not committed, folder-size rule) -- the next worker regenerates them the same
+way (`./regen_images.sh page f57v_ref1600.jpg` + the direct 2400px curl already in this section) and can start
+directly at f57v's pass-A/pass-B step, the same hand-off shape SALV-PLAIN2 left for this job.
+
+**Sample lines, f57r** (interleaved text, `ciphertext_with_plain.txt`; sign runs as `[...]`, M-graded unsettled
+readings as `x|y`):
+```
+f57r L1: Parlato [S4^ dl^ tee^ a^5 tee^ g^dot #^# lam^dot|~ eps^7 w^ eps^1 ]^o g^7 L^ w^ a^1 lam^7 bh^ S7^ #^# H^1|o Z^dot|ot] v ?|s [+^ bh^dot] 5 7
+f57r L3: & [a^5 tee^ lam^ o.^1] o [m^ S7^ w^ lam^1 S7^ y^ g^ v^] ?|<none> []^o e^#|dot eps^ y^ o.^ g^1 lam^ bh^ S7^# e^ot wd^ y^ eps^5 S7^]
+f57r L17: [Z^ ...] Ch~ ſcriuã(scrivano) ?|e ?|o fus + + [...]
+```
+No interpretation of the Italian beyond transcribing it: the above is quoted only to show the interleaving
+format, not to summarise what the letter says. No reading, no novelty wording.
+
+**Left illegible or unsettled, f57r:** 9 of 42 boxes (21.4%), all genuinely ambiguous even from the image --
+either the leaf's own dual-use glyph shapes (a circle-with-stem read as plain "o" elsewhere on the leaf but also
+used as a cipher code, line17 pos4/7/11) or tiny/stray marks with no confident letterform (line1 pos26, line3
+pos14, line14 pos24, line15 pos8, line4 pos4, line5 pos8). Nothing was guessed from context; every M-graded
+position keeps both pass readings.
+
+**Grand total, all 7 leaves transcribed so far (of 8):** 1,048 of 1,050 plain-box positions read (558 `A`, 323
+`R`, 167 `M`, 15.9% M share); 137 of 884 compared boxes reconciled as `[C]` (cipher, not plain, despite being
+spec-labelled plain), 90 more flagged by exactly one pass -- still nobody has edited `ciphertext_*.tsv`,
+`build_spec.py` or the spec. `plain_boxes.tsv` now covers f54r-f57r (1,048 rows). `build_ciphertext_with_plain.py
+--check` and `build_spec.py --check` both exit 0 (`build_spec.py`: 2839 tokens, 236 types, 389 runs, pattern 4053
+boxes -- unchanged, spec/ciphertext_*.tsv untouched). **f57v (172 plain boxes, crops already cut) is the one
+leaf left**, the named next step for whoever picks up job 1's remainder.
