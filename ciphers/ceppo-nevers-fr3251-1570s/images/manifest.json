@@ -35,10 +35,17 @@
   "target_folios_not_yet_fetched": {
     "f.21v no.11": "verso -- left page of canvas 23 (predicted canvas = 21+2, not eye-checked)",
     "f.35 no.18": "recto -- canvas 36 (predicted = 35+1, not eye-checked)",
-    "f.87 no.45": "recto -- canvas 88 (predicted = 87+1, not eye-checked)",
-    "f.82 no.42 (witness, with decipherment)": "recto -- canvas 83 (predicted, not eye-checked; not fetched this job -- see NEV-C2 in NOTES.md, held in reserve on the request budget)"
+    "f.87 no.45": "recto -- canvas 88 (predicted = 87+1, not eye-checked)"
+  },
+  "files_continued": {
+    "f82_canvas83_test.jpg": {
+      "folio": "82r",
+      "canvas": 83,
+      "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f83/full/1000,/0/native.jpg",
+      "note": "NEV-C2, 27 Sept 2026: witness f.82 no.42 (with decipherment). Ink foliation '82' confirmed on the right page (offset +1 holds); the facing left page (f.81v) carries a dated note 'Da Salluzzo li 20 marzo 1571', matching no.42's 20 March 1571 date. f.82r's own cipher passage (about 2 lines, mid-page) has uniform, tightly-spaced lines with no obvious extra interlinear row at this 1000px overview -- the same negative signature as f.39, unlike f.27 where the extra squeezed row was visible even at 1000px once looked for. Not confirmed at native resolution: this job's 8-request gallica budget was spent on f.27 and f.39 before reaching f.82, so this is an overview-only finding, not a definitive one -- see NOTES.md NEV-C2 section for the named next step (one native-resolution crop of the cipher block, with a fresh request budget, before concluding no decipherment exists here either)."
+    }
   },
   "requests": {
-    "gallica.bnf.fr": "used in confirming the shared canvas rule for this ark: 4 native.jpg fetches total across both fr.3251 folders (f11r canvas12, f19r canvas20, f119r canvas120, f189r canvas190; f138r canvas139 fetched for the sibling folder), 1 connection reset retried once per the good-citizen rule, all >=2s apart, descriptive script UA. NEV-C2 (27 Sept 2026) added 7 more against this job's own 8-request allowance: canvas28 1000px (1 connection reset, retried once), canvas28 info.json, one malformed-URL request (double ark prefix, this worker's own typo, HTTP 500, no retry needed since the fix was on our side), canvas28 native region crop via tools/iiif_lines.py, canvas40 1000px, canvas41 1000px -- 1 request held in reserve, f.82 not fetched this job."
+    "gallica.bnf.fr": "used in confirming the shared canvas rule for this ark: 4 native.jpg fetches total across both fr.3251 folders (f11r canvas12, f19r canvas20, f119r canvas120, f189r canvas190; f138r canvas139 fetched for the sibling folder), 1 connection reset retried once per the good-citizen rule, all >=2s apart, descriptive script UA. NEV-C2 (27 Sept 2026) used all 8 of this job's own request allowance: canvas28 1000px (1 connection reset, retried once), canvas28 info.json, one malformed-URL request (double ark prefix, this worker's own typo, HTTP 500, no retry needed since the fix was on our side), canvas28 native region crop via tools/iiif_lines.py, canvas40 1000px, canvas41 1000px, canvas83 1000px (8th and last)."
   }
 }

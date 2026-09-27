@@ -1,0 +1,39 @@
+line	pos	key_row	shape_note	confidence
+lineA	1	6	vertical stroke curling into a small loop at its bottom, like a lollipop	H
+lineA	2	19	thick Z-shaped stroke, rounded top, angular lower stroke	H
+lineA	3	28	V/checkmark shape crossed by a short horizontal bar near the top, small dot below	H
+lineA	4	n36	two plain arabic digits "3" then "6" written together, ordinary numeral style unlike the cursive homophones around them	H
+lineA	5	30	tall vertical stroke with a loop attached on the upper right, long tail sweeping down-left (eszett-like)	M
+lineA	6	27	angular upward peak (like a capital lambda) with two small dots at its base	H
+lineA	7	9	oval loop crossed by a single horizontal bar, with an ascender stroke rising from it	M
+lineA	8	30	second eszett-like shape: vertical stroke with loop on the right and a long tail down-left	M
+lineA	9	?	oval crossed by two close parallel horizontal bars extending past the oval on both sides; could not confidently pick between a repeated d-loop and the o "not-equal" shape	L
+lineA	10	?	thick dark filled/retraced oval with a small separate loop above-right; closest candidate is the s small-circle-over-cross shape but not confident	L
+lineA	11	13	crisp plain plus/cross sign, ruled not cursive	H
+lineA	12	12	small cursive stroke shaped like the digit 3	M
+lineA	13	45	oval loop at the top of a descending stroke, phi-like, with a small mark near the loop	M
+lineA	14	47	X shape formed by two crossing diagonal strokes with a flourish at the base	H
+lineA	15	30	eszett-like shape again: vertical stroke with loop on the right and tail down-left	M
+lineA	16	48	two connected upright loops, figure-8-like, at the line's right edge	M
+lineB	1	?	small closed loop/circle, partially cut off at the very start of the line, shape unclear	L
+lineB	2	31	rounded open hook curving from upper right to lower left, like a backward c	M
+lineB	3	26	diagonal slash-like stroke flanked by a small dot	M
+lineB	4	17	loop at top of a stroke with a curved hooked descender	M
+lineB	5	?	small loop/circle, 9-like, closely following the previous sign; could not confidently distinguish from h or l	L
+lineB	6	13	crisp plain plus/cross sign	M
+lineB	7	9	oval loop crossed by a single horizontal bar, ascender rising from it	L
+lineB	8	27	angular upward peak (lambda-like) with a small dot at the base	M
+lineB	9	13	crisp plain plus/cross sign	M
+lineB	10	?	upside-down T shape (vertical stroke topped by a short horizontal bar); no confident match in the key	L
+lineB	11	27	angular upward peak (lambda-like), similar to the earlier n shapes in this line	M
+lineB	12	13	crisp plain plus/cross sign	M
+lineB	13	23	angular zigzag, two connected upward strokes like a squared "W"	L
+lineB	14	?	cluster of close parallel vertical strokes; could not confidently segment or match	L
+lineB	15	43	curved stroke with a descending tail, ligature-like	L
+lineB	16	?	single vertical stroke with a small dot beside it; shape unclear	L
+lineB	17	48	two connected loops side by side, figure-8/double-o-like	M
+lineB	18	42	crisp angular corner-bracket (rotated L) with a small dot/tick beside it	M
+lineB	19	47	X shape formed by two crossing diagonal strokes	M
+lineB	20	27	angular upward peak (lambda-like)	M
+lineB	21	12	small cursive stroke shaped like the digit 3	M
+lineB	22	42	crisp angular corner-bracket (rotated L) with a small dot beside it, at the line's right edge before the plain-Italian text resumes	M

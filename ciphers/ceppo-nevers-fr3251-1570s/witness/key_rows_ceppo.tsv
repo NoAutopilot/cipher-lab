@@ -1,0 +1,59 @@
+row	value	kind	confirmed	contradicted	sign
+1	a	letter	0	0	cursive loop like a Greek lambda / loope
+2	a	letter	0	0	large cursive double-loop, figure-eight-
+3	a	letter	0	0	small hook/loop like a backward comma or
+4	a	letter	0	0	crisp (non-shaded, ruled-line) open rect
+5	b	letter	0	0	(blank -- no homophone drawn)
+6	c	letter	0	1	vertical stroke curling into a small loo
+7	c	letter	0	0	double wave/zigzag, like a flattened cur
+8	c	letter	0	0	cursive '2' or 'z' shape with a small do
+9	d	letter	0	2	loop at the top of a vertical stroke, cr
+10	d	letter	0	0	two roughly parallel horizontal wavy str
+11	e	letter	0	0	cursive lowercase 'm' with a small dot/m
+12	e	letter	0	3	shape resembling the digit '3' in cursiv
+13	e	letter	0	4	plain crisp plus/cross sign (+), ruled n
+14	f	letter	0	0	small closed loop/circle with a curling 
+15	f	letter	0	0	cursive shape with two loops joined by a
+16	g	letter	0	0	small tight solid/filled oval or ring, b
+17	h	letter	0	2	cursive shape resembling a '9' or lowerc
+18	i	letter	0	0	cursive double-loop like 'w' plus a flou
+19	i	letter	1	0	thick cursive 'Z' or digit '2' shape, ro
+20	i	letter	0	0	cursive ligature resembling 'fs'/'ts'/'j
+21	l	letter	0	0	thick dark loop resembling script 'Z'/'2
+22	l	letter	0	0	compound cursive shape, a 'z'-like curve
+23	l	letter	0	1	angular zigzag ascender connecting into 
+24	m	letter	0	0	small hook/flag at the top connecting do
+25	m	letter	0	0	small loop at top with a long tail sweep
+26	n	letter	0	1	diagonal slash-like stroke flanked by a 
+27	n	letter	0	4	angular cursive shape like an italic cap
+28	o	letter	0	1	'V'-shaped stroke crossed by a short hor
+29	o	letter	0	0	two short parallel horizontal strokes cr
+30	o	letter	1	2	vertical stroke with an attached rounded
+31	p	letter	0	1	rounded open hook curving from upper rig
+32	p	letter	0	0	angular crossing shape like an 'X' or a 
+33	q	letter	0	1	cursive shape like lowercase 'n'/script 
+34	q	letter	0	0	clearly legible letter 'd' (rounded loop
+35	r	letter	0	0	tangled cursive shape like capital A/4, 
+36	r	letter	0	0	cursive ligature like 't' joined to a ba
+37	r	letter	0	0	gently wavy near-horizontal stroke flank
+38	r	letter	0	0	elaborate cursive double-loop resembling
+39	s	letter	0	0	loop resembling cursive '9'/'g' with a s
+40	s	letter	0	0	two stacked small loops connected by a d
+41	s	letter	0	0	small circle/oval loop, possibly crossed
+42	s	letter	0	2	crisp (ruled-line) angular corner-bracke
+43	s	letter	0	1	cursive ligature resembling 'ey'/'cy' --
+44	t	letter	0	0	cross/hash-like mark formed by two inter
+45	t	letter	1	1	cursive shape with an oval loop at top a
+46	t	letter	0	0	cursive ligature resembling 'ey'/'cy', s
+47	u	letter	0	2	'X' shape formed by two crossing diagona
+48	u	letter	0	1	cursive shape with two connected loops s
+49	x	letter	0	0	(blank -- no homophone drawn)
+50	y	letter	0	0	(blank -- no homophone drawn)
+51	z	letter	0	0	cursive ligature resembling 'ey'/'cy', s
+52	et	word	0	0	cursive figure-8/looped-S shape, two loo
+53	null	null	0	0	plain crisp cross/plus sign with a small
+54	null	null	0	0	cursive lowercase 'f' -- vertical stroke
+55	null	null	0	0	cursive loop like '6'/'b' with a short f
+56	null	null	0	0	small hook/loop like 'p' or a backward c
+57	null	null	0	0	cursive ligature resembling the digits '
+58	null	null	0	0	cursive ligature resembling '6' joined t

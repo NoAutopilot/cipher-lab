@@ -1,0 +1,40 @@
+line	pos	key_row	shape_note	confidence
+lineA	1	6	vertical stroke curling into a small loop at its bottom	H
+lineA	2	19	thick Z-shaped stroke, rounded top, angular lower stroke	H
+lineA	3	28	V/checkmark shape crossed by a short horizontal bar near the top, small dot below	H
+lineA	4	12	cursive shape resembling the digit 3, reconciled from b/c split (reconcile_f27.tsv)	M
+lineA	5	17	loop with a curved ascending hook like 6/9/g, reconciled from b/c split (reconcile_f27.tsv)	M
+lineA	6	30	vertical stroke with a rounded loop attached on the right, eszett-like	H
+lineA	7	27	angular upward peak (capital lambda-like) with two small dots at its base	H
+lineA	8	9	oval loop crossed by a single horizontal bar, reconciled (reconcile_f27.tsv)	M
+lineA	9	30	second eszett-like shape: vertical stroke with loop on the right	M
+lineA	10	?	oval crossed by two close parallel horizontal bars; unmatched, both passes agree	L
+lineA	11	45	oval loop with long diagonal tail (phi-like), reconciled (reconcile_f27.tsv)	M
+lineA	12	13	crisp plain plus/cross sign	H
+lineA	13	12	small cursive stroke shaped like the digit 3	M
+lineA	14	45	oval loop at the top of a descending stroke, phi-like	M
+lineA	15	47	X shape formed by two crossing diagonal strokes with a flourish at the base	H
+lineA	16	30	eszett-like shape again: vertical stroke with loop on the right	M
+lineA	17	33	two connected rounded humps (w-like), reconciled (reconcile_f27.tsv)	M
+lineB	1	?	small closed loop/circle, partially cut off at the very start of the line, shape unclear	L
+lineB	2	31	rounded open hook curving from upper right to lower left, like a backward c	M
+lineB	3	26	diagonal slash-like stroke flanked by a small dot	M
+lineB	4	17	loop at top of a stroke with a curved hooked descender	M
+lineB	5	?	small loop/circle, 9-like, closely following the previous sign	L
+lineB	6	13	crisp plain plus/cross sign	M
+lineB	7	9	oval loop crossed by a single horizontal bar, ascender rising from it	L
+lineB	8	27	angular upward peak (lambda-like) with a small dot at the base	M
+lineB	9	13	crisp plain plus/cross sign	M
+lineB	10	?	upside-down T shape (vertical stroke topped by a short horizontal bar)	L
+lineB	11	27	angular upward peak (lambda-like)	M
+lineB	12	13	crisp plain plus/cross sign	M
+lineB	13	23	angular zigzag, two connected upward strokes like a squared "W"	L
+lineB	14	?	cluster of close parallel vertical strokes; could not confidently segment or match	L
+lineB	15	43	curved stroke with a descending tail, ligature-like	L
+lineB	16	?	single vertical stroke with a small dot beside it; shape unclear	L
+lineB	17	48	two connected loops side by side, figure-8/double-o-like	M
+lineB	18	42	crisp angular corner-bracket (rotated L) with a small dot/tick beside it	M
+lineB	19	47	X shape formed by two crossing diagonal strokes	M
+lineB	20	27	angular upward peak (lambda-like)	M
+lineB	21	12	small cursive stroke shaped like the digit 3	M
+lineB	22	42	crisp angular corner-bracket (rotated L) with a small dot beside it, at the line's right edge	M
