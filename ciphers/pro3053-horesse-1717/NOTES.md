@@ -88,3 +88,11 @@ target's edition risk genuinely untested rather than cleared.
 
 **Copy status:** no online image located (confirmed `digitised: false` for /42); **copy-order**, both items
 together (same hand, same date). See REQUEST.md.
+
+## While waiting (27 Sept 2026, WAIT-PASS-B)
+
+Waits on: page copies of PRO 30/53/11/42 and /43 (REQUEST.md, since the 24 Sept 2026 check-solved sweep).
+
+- M: read the note field of every item in PRO 30/53/11 individually by record id -- description-text search misses cipher marks -- tools/discovery_items.py.
+- S: confirm W. J. Smith's 1963 Herbert Correspondence table of contents actually stops before 1717; that is currently only inferred from the edition's title, not checked directly.
+- S: search 'Horesse' as a possible garbled name/code-name variant against the Herbert-family genealogy material already surfaced this pass.

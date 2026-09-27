@@ -197,3 +197,13 @@ plaintext/ciphertext -- leads only, every citation unchecked until verified here
 
 No lead is a printed decipherment of this target or its ciphertext, and none is a check-solved candidate;
 item 4 names two concrete untried steps. No first/new/unpublished wording (rule 10).
+
+## While waiting (27 Sept 2026, WAIT-PASS-B)
+
+Waits on: nothing external. No REQUEST.md or ASKS.md row exists for this target; NEXT-STEPS.tsv's blocker
+field reads "needs-key" (no established period key/codebook, cryptanalysis-only), not an archive or person
+wait.
+
+- S: finish the two rule-1 legs 25 Sept skipped for no-network (solver-repo grep + OpenAlex/S2) -- tools/print_check.py + a fresh clone.
+- M: design a Gregg/abbreviation-lexicon-constrained code-word control per NEAR.md's own named next step (the current control recovers only 0.8% of its own ground truth) -- specs/cheap-tests/mccormick-1999/token_anneal.py + tools/family_run.py.
+- S: check tools/data/ for any shorthand/abbreviation corpus already on disk that could seed a better-constrained control pool than the current 350-word free pick.

@@ -98,3 +98,13 @@ queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.
   308-327 discuss the 19 December 1728 note could not be determined). Requeued in JSTOR-QUEUE.tsv, not `done`;
   see ASKS.md. Context only, not read: Thompson 2006 (stable/10.7722/j.ctt14brtmp.13), Hatton 2001
   (stable/j.ctt1bh4cbj.15).
+
+## While waiting (27 Sept 2026, WAIT-PASS-B)
+
+Waits on: a TNA page-copy order for SP 36/9/118-119 (REQUEST.md, since the 24 Sept 2026 check-solved sweep,
+now folded into the consolidated TNA batch, ASKS row 73) and a JSTOR reread of Williams 1901 (stable/548655,
+ASKS row 76, since 26 Sept 2026).
+
+- S: full-text search Coxe's two Walpole memoir volumes (already located, not yet searched) for 'second reading'/19 Dec 1728 -- tools/print_check.py.
+- S: run the three pending Google Books queries this NOTES.md already lists ("GB queries pending"), key+country=US, not yet run.
+- S: cross-check SP 36/37/44 (14 Nov 1735, same correspondent Andrew Stone, already scored N65) against this item's own content, not compared yet.

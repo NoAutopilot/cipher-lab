@@ -214,3 +214,14 @@ check-solved shape the file already uses" -- this target has no AUDIT.md (no ver
 CLAUDE.md rule 10 reserves N-class assignment to a separate verifier session after a logged search, not to
 this check-solved supply job). Per CLAUDE.md over the brief: not creating one here. A verifier taking this
 up next has both candidates' status (one read negative, one still blocked) ready to cite.
+
+## While waiting (27 Sept 2026, WAIT-PASS-B)
+
+Waits on: a JSTOR reread of Hatzenberger 2015 (stable/24719303), gated on ASKS row 76 (JPASS login for the
+runner), open since 26 Sept 2026 -- the JPASS credentials are reported in hand per the owner (26 Sept 2026
+23:38 UTC), next run pending. LOCAL-QUEUE row L25 (Labro 2012 via WorldCat/Cairn) also pending since 26 Sept
+2026.
+
+- S: phrase-search f.206r's own quote ('venitiens en faveur de la Reine de Hongrie...') via Google Books/archive.org be-api -- only tried on JSTOR so far.
+- M: fetch and read the four unviewed Gallica folios (f.214, f.217, f.250, f.274) via IIIF, the same free no-login route already used for f.206r -- tools/gallica_folio.py + tools/iiif_lines.py.
+- S: full-text search Souchon 1915 (Gallica ark bpt6k935116v) inside the volume for the 1743-44 passage; only its catalogue entry has been checked so far, not the text itself.

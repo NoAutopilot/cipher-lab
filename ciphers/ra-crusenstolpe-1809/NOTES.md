@@ -85,3 +85,12 @@ queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.
 
 - `"Crusenstolpe" AND 1809 AND chiffer`: no relevant hit (0 results, none about the letter).
 - `"spionrapporter" AND "revolutionen 1809" AND Ericsberg`: no relevant hit (0 results, none about the letter).
+
+## While waiting (27 Sept 2026, WAIT-PASS-B)
+
+Waits on: a Riksarkivet reading-room copy order for `SE/RA/720266/03/08/~/2,5` (REQUEST.md, since 24 Sept
+2026).
+
+- M: fetch Litteraturbanken.se's Crusenstolpe author page via a real browser (JS-rendered, not tried) and search for 'chiffer'/'1809'/'Portefeuille' -- tools/browser_fetch.js, this file's own named next step.
+- S: run the still-untried 'standard Swedish 1809 historiography' search (Odhner, Hjärne, Almqvist) named in the verdict but never actually run.
+- S: retry Project Runeberg for a listing of Crusenstolpe's Portefeuille parts 1-4 (1837-44) under a different work id than the 1840/1845 volume already checked.

@@ -97,3 +97,12 @@ returned HTTP 500, not retried per the good-citizen single-retry rule. No new fr
 this item this pass; digitisation status stands as already recorded in this folder's REQUEST.md. This item
 is now item in the consolidated order `outreach/tna-page-copy-batch.md` (ASKS row 73, status backlog) rather
 than a standalone TNA order.
+
+## While waiting (27 Sept 2026, WAIT-PASS-B)
+
+Waits on: a TNA page-copy order for PRO 30/24/7/505 (REQUEST.md, since the 24 Sept 2026 check-solved sweep,
+now folded into the consolidated TNA batch, ASKS row 73).
+
+- S: search PRO 30/24 for the indorsement's own 'book of letters, entered November 1682' fair-copy letter-book -- named next step, not chased -- tools/discovery_items.py.
+- S: re-search Christie's vol. 1/2 (already fetched) for the indorsement's exact phrase 'book of letters'/'November 1682'; only Percivall/Perkins/Fisher/cypher were searched so far.
+- S: identify and search another printed Shaftesbury letter collection (e.g. the 1830 Original Letters of Locke, Sidney and Shaftesbury), not yet located this pass.
