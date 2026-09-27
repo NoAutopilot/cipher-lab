@@ -499,3 +499,92 @@ settle 7/comme, 6/combat and xff d/r, before f.268 is transcribed again.
 Requests: gallica.bnf.fr 1 (fr.7131 f.228 native image, scratch). Subagents: 13 Sonnet (10 used line passes, 1
 discarded wrong-line pass, 2 key reads). Files: `ciphertext_v2.txt`, `keys/key_f275_v2.tsv`, `decode_v2_verso.txt`,
 `decode_f275.py` (options `--cipher/--key/--out/--side`, kind `double`).
+
+## VB-KP known-plaintext calibration (27 Sept 2026)
+
+Per `.claude/briefs/runs/2026-09-27-parent-vb-kp.md`. Not a third pass at f.268. Status unchanged: `blocked` (the M9
+gate). No class, no novelty wording, no grades.
+
+**Verdict (b):** the key of record plus our pipeline does not read the sibling at the brief's bar. The n-gram judge
+gives z -0.78, and the decode agrees with the clerk on 47% of letters (bar: z 3 or 70%). But the clerk comparison
+beats all 20 shuffled keys (z 5.50). So the key carries real signal: most numeral word codes are right, and overbars
+lost in transcription explain several misses. The letter-sign alphabet and a few word-list cells are contradicted.
+The next step is a key re-read of those families against the clerk-aligned sibling, not a re-transcription of f.268.
+
+**1. Sibling chosen.** Recto canvases of f.258, f.260, f.262 and f.263 were fetched at width 1500 to the scratchpad.
+All four carry a contemporary interlinear decipherment: a clerk's plaintext written letter by letter above the cipher
+signs, with marginal glosses of names and code words (f.258 "Toutesfois", "Max.", "Palsborn"; f.263 "paix d'Angl.").
+f.258 was chosen. Its gloss is the most evenly spaced, and its first cipher block has 7 lines under "...faire paix."
+Lines 2-6 were taken. The folio carries two more blocks lower on the page (3 and 1 lines), not used.
+
+**2. Transcription.** Native crops (`tools/iiif_lines.py` was run for the overlay; the bands it found split gloss and
+cipher rows unevenly, so each line was cut by hand as gloss row plus cipher row, in two overlapping segments,
+scratch only). Two blind Sonnet passes per cipher line used the VB-DECODE2 method (f.228 and the f.275 alphabet as
+pictures, fixed inventory `sibling/passes/inventory.txt`, digits apart, no key values) and were merged mechanically
+by `sibling/merge_passes.py` into `sibling/ciphertext_f258.txt`:
+
+| line | A / B tokens | merged | A = B |
+|---|---|---|---|
+| 2 | 31 / 35 | 32 | 22 (69%) |
+| 3 | 30 / 39 | 31 | 22 (71%) |
+| 4 | 35 / 37 | 35 | 19 (54%) |
+| 5 | 30 / 33 | 32 | 22 (69%) |
+| 6 | 34 / 36 | 34 | 25 (74%) |
+| all | | 164 | 110 (67%) |
+
+This is 10 points above VB-DECODE2's 57% on f.268v.
+Caveat: the gloss sits within a few pixels of the signs and stays in the crop. The passes were told to ignore it and
+had no key, so the gloss cannot steer a sign id towards a key value.
+The clerk's text had two blind passes too (`sibling/passes/PlainA`, `PlainB`), with letter agreement per line of 89,
+77, 74, 33 and 62%. Pass A put the right halves of lines 5 and 6 on the wrong lines, so B's line assignment is used.
+The merge rule is in the header of `sibling/plaintext_f258.txt`.
+
+**3. Control first, then the clerk.** `python3 decode_f275.py --control --cipher sibling/ciphertext_f258.txt --key
+keys/key_f275_v2.tsv` was run before the decode was read:
+```
+letters in decode: 254
+real key score -1.5195; 20 class-shuffled keys mean -1.4614 sd 0.0749 min -1.5776 max -1.3340; z -0.78; rank 17 of 21
+per line: r2 z -0.99 | r3 -0.59 | r4 -2.48 (rank 21) | r5 1.43 (rank 2) | r6 0.01
+```
+`sibling/compare_clerk.py` normalizes both texts to one convention (lower case, & -> et, j/v -> i/u, letters only). It
+aligns decode and clerk per line and runs the same 20 class-shuffled keys (same seed) as the control:
+```
+letter agreement with the clerk: real key 0.467; 20 class-shuffled keys mean 0.285 sd 0.033 max 0.357; z 5.50; rank 1 of 21
+tokens with a key value: 158; confirmed by the clerk (whole span matched): 63 (40%)
+per line matched clerk letters: 2 42% | 3 40% | 4 42% | 5 62% | 6 48%
+```
+Using pass A's clerk text instead gives 0.344 against 0.258 +- 0.029, z 2.92, rank 1: the sign of the result
+holds, and the size depends on the clerk transcription. Full output: `sibling/compare_f258.txt`. The mechanical
+decode is `sibling/decode_f258.txt` (a candidate, not a reading).
+
+**4. Which families the clerk contradicts (all at f.258r, block 1).**
+- *Numeral word codes (plain):* 20 of the 35 numeral tokens read a word the clerk's line contains: 26 en (x9),
+  15 de, 16 du, 48 je, 57 leur, 78 nous, 55 le, 39 grand (l.5), ^22 sur. Three more are notation or clerk-pass gaps,
+  not errors: 76 mil, which the clerk abbreviates "ml" (l.4); and 99 que and 25 est, which pass A reads "qu'il est"
+  (l.5). **Contradicted:** 77 = nostre, but the clerk has "mo[n]" (l.6, "prise en mon alliance"). 90 = protestans,
+  but the clerk has "Suisses" (l.5; both passes read 90). 24 = Escossois, but the clerk has "fumee"/"mespris"
+  (l.2). 72 is blank in the key. Each rests on a single occurrence.
+- *Overbar lost in transcription (not a key error):* l.4 opens 29 18 35, with the marginal gloss "Toutesfois" and
+  "si [v]ous" above. That is ^29 toutesfois, ^18 si and ^35 vous in the key, so both passes dropped three overbars.
+  39 on l.3 sits under "du voyage", which is ^39 voyage. These four tokens decode wrong only because the bar was
+  missed. The next transcription prompt must ask about the bar on every number.
+- *Letter signs:* the clerk contradicts, among others: y (key a; clerk n/nt, l.2), oo (key y; clerk u, l.3), f (key o;
+  clerk s/se, l.4), qo (key h; clerk t, l.4), r (key e; clerk m, l.5), q (key e; clerk f and o, l.5-6), and 8 (key
+  b/cela; clerk l(es), l.5). The line openings show the d-family is where it breaks. Line 2 "et tournent" reads
+  pH/do ab d b d k r y, which needs the first d-form = o and the second = r. Line 6 "prise" reads g/cc y/pH p d r,
+  which needs g = p, y = r and d = s. The key has d = r, do = o, g = f and y = a. So the d, g and y forms each hide more
+  than one sign, as f.228 warns, and our inventory does not separate them.
+
+No `keys/key_f275_v3.tsv` was written. Every candidate correction above rests on one occurrence in a transcription
+that agrees 67% between passes. A cell change needs the same sign to disagree with the clerk at two independent places.
+
+**Named next step (b):** re-read the key against the sibling. Use known-plaintext alignment of f.258's three blocks
+and f.260 (about 30 cipher lines under a full clerk gloss) with `tools/interlinear_align.py`, treating the clerk's
+letters as the plaintext span. This gives grade C key cells for the letter-sign families, above all the d/g/y forms,
+and for the word-list numbers 77, 90, 24 and 72. The transcription prompt must ask about the overbar on every
+numeral. Only then should f.268 be re-transcribed.
+
+Requests: gallica.bnf.fr 6 (4 rectos at width 1500, f.258r native, fr.7131 f.228r at width 1800), all to the
+scratchpad; no image added to the folder. Subagents: 12 Sonnet (10 cipher line passes, 2 clerk passes).
+Files: `sibling/{ciphertext_f258.txt,plaintext_f258.txt,decode_f258.txt,compare_f258.txt,merge_passes.py,
+compare_clerk.py,passes/}`.

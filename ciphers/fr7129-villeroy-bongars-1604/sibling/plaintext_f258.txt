@@ -1,0 +1,15 @@
+# Clerk's interlinear decipherment above cipher lines 2-6 of the first block of BnF fr.7129 f.258r (VB-KP, 27 Sept 2026).
+# Two blind Sonnet passes (passes/PlainA, passes/PlainB) on the same pair crops as the cipher passes. Letter agreement
+# A vs B (normalized, brackets dropped): line 2 89%, 3 77%, 4 74%, 5 33%, 6 62%. Pass A put the right-hand segments of
+# lines 5 and 6 on the wrong lines (its line 5 ends "prise en mon alli Cependant depuis", its line 6 is line 5's right
+# half), so pass B's line assignment is used for every line. Merge rule (mechanical): pass B's text; above-line
+# insertions in brackets and the struck word after "fumee" (B "au?") are dropped; B's illegible '?' letters dropped.
+# Exception, line 5: pass B bracketed its opening 'nous en les ???' as an above-line phrase; pass A has 'nous en les' at
+# the start of the same line, so the words both passes read ('nous en les') are kept and B's '???' dropped.
+# Literal: clerk's spellings and '&' kept; comparison normalizes (compare_clerk.py). Not our reading; a period gloss.
+line	clerk
+2	et tournent en fumee an tant de mespris de leur nom & de
+3	uanite Je stime q Len arriuera ainsy du voyage en Lan sois milieu
+4	aprenez q l ay & desseing sur ml tose a uertissez
+5	nous en les en formalirent grandemt & an tant L let rom
+6	prise en mo allianse depuis soixante & tant dannees

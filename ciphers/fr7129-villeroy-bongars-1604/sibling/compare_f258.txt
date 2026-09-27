@@ -1,0 +1,29 @@
+letter agreement with the clerk: real key 0.467; 20 class-shuffled keys mean 0.285 sd 0.033 max 0.357; z 5.50; rank 1 of 21
+tokens with a key value: 158; confirmed by the clerk (whole span matched): 63 (40%)
+  line 2: 19/45 clerk letters matched (42%)
+    decode: bbrurneaenescossoisuaibauecauendeueseousdeleurhfquede
+    clerk:  ettournentenfumeeantantdemesprisdeleurnometde
+  line 3: 21/53 clerk letters matched (40%)
+    decode: yanifcestierauenaqiaefodugrandenibaronsoisdeu
+    clerk:  uaniteiestimeqlenarriueraainsyduuoyageenlansoismilieu
+  line 4: 17/40 clerk letters matched (42%)
+    decode: entreditfortapfeuqnotfudesoiaqsurmilhoeeentreaqaiecelabsn
+    clerk:  aprenezqlayetdesseingsurmltoseauertissez
+  line 5: 28/45 clerk letters matched (62%)
+    decode: nousencelaprotestansseneoreaucsentgrandboqtenqueuleestfeo
+    clerk:  nousenlesenformalirentgrandemtetantantlletrom
+  line 6: 21/44 clerk letters matched (48%)
+    decode: nboeennostreaueiaqddeoyisseixnteuenqanfist
+    clerk:  priseenmoalliansedepuissoixanteettantdannees
+single-token disagreements (line, sign, key gives, clerk has):
+  2	y	a	nt
+  2	24	cosso	pr
+  3	oo	y	u
+  3	15	d	mili
+  4	f	o	se
+  4	qo	h	t
+  5	8	c	l
+  5	q	e	f
+  5	r	e	m
+  6	77	n	m
+  6	q	e	o
