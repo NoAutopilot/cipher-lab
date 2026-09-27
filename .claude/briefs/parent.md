@@ -208,8 +208,9 @@ ask answered "at the next check-in" costs up to an hour, and an ask with no defa
    asker does that at that time without a second line. "Awaiting your reply" is not a line either parent writes.
 2. **Open asks first.** Each check-in begins with `python3 tools/open_asks.py --me "<your role>"` and answers every line it
    prints with a decision in that same check-in (a line by you after the ask clears it; "noted" is not a decision).
-3. **A rate-limited account transfers its duties, it does not park.** When a parent's window reads `allowed_warning` or
-   `rejected`, its next line is "duties transferred to <the other parent> until <reset time>": runner PRs, the desk, the
+3. **A rate-limited account transfers its duties, it does not park.** When a parent's window reads `rejected`, or
+   `allowed_warning` on the five-hour window past one check-in (a seven-day warning is not a stop: BUDGETS.md, the
+   owner's decision 27 Sept), its next line is "duties transferred to <the other parent> until <reset time>": runner PRs, the desk, the
    mailbox, verification, and any solver-ready target of its role. The other parent runs both roles from that line, with
    no per-item exception announcements, and hands the duties back on the first "window allowed" line. The rate-limited
    parent then either hands over to a successor or idles with one check-in armed at the reset time, and posts nothing

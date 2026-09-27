@@ -34,8 +34,13 @@ unchanged. Cost of the old reading: about three hours (04:22-07:22) with nothing
 
 ## What to do when you see a warning
 
-- **allowed_warning**: finish the worker you are running, do not start another large one, and say so in
-  `ROOM.md` so somebody with headroom picks up the next job.
+- **allowed_warning on the five-hour window**: finish the worker you are running, do not start another large one,
+  and say so in `ROOM.md` so somebody with headroom picks up the next job.
+- **allowed_warning on the seven-day window (the owner's decision, 27 Sept 2026)**: not a stop. The owner looked at
+  the warning on the other account and told it to continue as is. A seven-day warning early in the week means days of
+  work remain at a lower rate, so the parent keeps its role and its normal pacing, checks `rate_limit_info` before
+  each dispatch, and stops only at `rejected`. Never post a "duties transferred" line on a seven-day warning; parent.md
+  "No parking" rule 3 applies to `rejected` and to a five-hour warning that lasts past one check-in.
 - **rejected**: your window is spent. Note the reset time here and in `ROOM.md`. Work that was mid-flight is
   not lost, because workers push to the repository, not to a session.
 - **Long orchestrator sessions are the expensive thing.** One session that runs for days re-reads its whole
