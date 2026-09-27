@@ -2,11 +2,11 @@ folder	status	blocker	cost_band	near_row	last_touched	next_step	parallel	next_st
 antt-linhares-chave	partial	runnable	M	n	25 Sep	This group was already M, not H, so the brief's downgrade rule does not apply to it; recorded here for the record, not resolved further -- a third count of this specific column, independent of both L…	--	1675
 antt-msliv0638-brochado-1712	partial	runnable	M	n	26 Sep	Leaf images are on disk (`images/full_PT-TT-MSLIV-0638_m0289/90/91.jpg.jpg`); named here as the concrete next step, same as AX2-BRO4 left it, now with the added caveat that `x` and `f` may have the s…	--	602
 armstrong-madison-1808	open	runnable	S	n	27 Sep	A second, unrelated passage on the same page: "successor as minister to France, General John Armstrong, wrote 40 letters in code to James Madison beginning in late 1804..." -- this is Weber's general…	--	1487
-arsenal-dallion-lanmary-1744	blocked	needs-edition	M	n		a Recueil des instructions volume for Sweden, was not run -- budget-limited, flagged as the next step for whoever returns to this row).		1916
+arsenal-dallion-lanmary-1744	blocked	needs-edition	M	n		a Recueil des instructions volume for Sweden, was not run -- budget-limited, flagged as the next step for whoever returns to this row).	Full-text search a Recueil des instructions volume for Sweden 1744-46 on archive.org/Google Books -- the printed-edition leg the check-solved sweep flagged as unrun. S, tools/print_check.py.	1916
 arsenal-ms6829-1708	blocked	needs-triage	?	n			--	0
 arsenal6314-hanau-1635	blocked	needs-triage	?	n			--	0
 arsenal6334-longueville-1650-59	blocked	needs-triage	?	n			--	0
-august-van-saksen-1561-64	partial	needs-person	S	n	24 Sep	Follow-ups: Dresden inquiry f.268-269; Namèche 1884 wedding pages; von Weber, Archiv f.		1021
+august-van-saksen-1561-64	partial	runnable	S	n	24 Sep	26) inquiries named in D2's follow-ups, since 24 Sept 2026.	--	130
 baluze103-letellier-marca-1644	blocked	needs-triage	?	n	25 Sep		--	0
 belmesseri-napoli-1627	open	needs-triage	?	n			--	0
 berthier-napoleon-1812	open	runnable	M	n	27 Sep	No French corpus on disk matches both the 1800-1820 era and an official/military register; building one is out of this box's scope, named as the next step for a future breadth pass.	--	851
@@ -18,7 +18,7 @@ bl-portugal-bombay-1661	open	needs-triage	?	n			--	0
 bl-sacchetti-nunzio-1623	open	needs-triage	?	n	25 Sep		--	0
 blitz-ciphers	open	runnable	S	n	26 Sep	**Next step** (not run, per brief -- do not run test 2): the spec's own test 2, fetching and blind-transcribing the six untranscribed pages, would raise N well past 581 and let the periodic scan and…	--	348
 bne20211-ferdinand-1478	blocked	needs-triage	?	n			--	0
-borssele-heinsius-1714	open	needs-edition	M	n	25 Sep	**The very next step on this target, before any solver work, must be to view the actual leaf (H.A.		974
+borssele-heinsius-1714	open	needs-edition	M	n	25 Sep	**The very next step on this target, before any solver work, must be to view the actual leaf (H.A.	Re-read Veenendaal's edition (already fetched, images/heinsius_15_GS227_531.jpg) for any other footnote cross-referencing this "oplossing" by letter number, which could resolve the ambiguity without…	974
 bowes-walsingham-1583	partial	runnable	S	n		Next step when a solver runs again: collate the numerical codes across both letters with the Letter-Book and calendar contexts (870 appears with Cobham twice, 189 is Montrose) and attempt identificat…	--	548
 bullet-tuscany-1944	partial	needs-triage	?	n	26 Sep		--	0
 castelcicala-1816	partial	runnable	M	n	26 Sep	A control that would actually test coherence would need a language-model judge scoring the decoded *word sequence* in original order against the same sequence shuffled; not run here (no it16-era corp…	--	1282
@@ -26,10 +26,10 @@ catokwacopa-1875	partial	runnable	S	n	25 Sep	**Community lists.** Klaus Schmeh's
 censorship-manual-stego	open	runnable	M	n	25 Sep	## Next step (suggestion only, not run this pass)	--	49
 ceppo-nevers-fr3251-1570s	open	runnable	M	n		The next step is to read that gloss alone, one segment at a time, upscaled 2x, with the strongest model, and to gate on 30 or more letters before any sign read is paid for.	--	951
 clair1161-avis-flandre-1688	open	needs-triage	?	n			--	0
-clair571-estrades-1645	open	needs-image	M	n		The cheapest next step is a single BnF reproduction request (REQUEST.md, or a reading-room visit) naming both leaves together (Clair 574 p.4-5 and Clair 575 p.1209), since both are needed for the sam…		1003
-clairambault1225-paget-1714	partial	needs-image	M	n	25 Sep	Next step for a future worker: reproduce SIV's search form properly (likely needs the landing page's own jsessionid carried through, and possibly a POST rather than GET, the CalmView/Lambeth pattern…		1294
-clairambault296-paget-1713	open	needs-image	S	n		Row set `done 2026-09-27` as an exhausted attempt at the current instruction's scope; a follow-up row would need to name canvases 28 and 36 explicitly to get them read.		874
-clairambault528-bouillon-1713	blocked	needs-edition	M	n		edition) were not full-text searched -- budget-limited, flagged as the next step.		1999
+clair571-estrades-1645	open	needs-image	M	n		The cheapest next step is a single BnF reproduction request (REQUEST.md, or a reading-room visit) naming both leaves together (Clair 574 p.4-5 and Clair 575 p.1209), since both are needed for the sam…	Fetch DECODE's login-free record listing for 9430/9431/9432 (Clairambault 574/577/580 Key records) for any descriptive text naming the key's structure, before the image request lands. M, tools/decode…	1003
+clairambault1225-paget-1714	partial	needs-image	M	n	25 Sep	Next step for a future worker: reproduce SIV's search form properly (likely needs the landing page's own jsessionid carried through, and possibly a POST rather than GET, the CalmView/Lambeth pattern…	Reproduce SIV's search form properly (carry the landing page's jsessionid, try POST not GET, the CalmView/Lambeth pattern this repo already solved) -- the host answers, only the form is unsolved. M.	1294
+clairambault296-paget-1713	open	needs-image	S	n		Row set `done 2026-09-27` as an exhausted attempt at the current instruction's scope; a follow-up row would need to name canvases 28 and 36 explicitly to get them read.	Retry canvases 28 and 36 fresh -- both failures were transient proxy-side resets, not a Gallica 403/429/challenge, on an ark otherwise fully reachable. S, plain fetch or tools/iiif_lines.py.	874
+clairambault528-bouillon-1713	blocked	needs-edition	M	n		edition) on archive.org for this 1713 exile affair -- flagged in NOTES as the next step, not yet run.	edition) on archive.org for this 1713 exile affair -- flagged in NOTES as the next step, not yet run.	581
 clerville-francia-1648	open	needs-triage	?	n			--	0
 colbert26-lathuillerie-1644	open	runnable	S	n	25 Sep	### Not done this job (successor's queue, cheapest/highest-value first)	--	71
 courten-diary	open	runnable	S	n	25 Sep	api.archives-ouvertes.fr 8 (4 combined-query 0-hit attempts, 4 narrower follow-ups).	--	346
@@ -43,7 +43,7 @@ decode-2754-bnf-baluze156-1636	open	runnable	M	n		Next step for a future worker:
 decode-4450-bnf-fr20506-1525	open	runnable	S	n		Per D2's own flagged follow-up ("check fr.20506's neighbouring canvases for a continuation before assuming the copy is deliberately partial"): fetched the 4 Gallica canvases after f136v (canvas 276)…	--	604
 decode-9970-simancas-1527	open	needs-triage	?	n			--	0
 della-torre-olanda-1690	open	needs-triage	?	n			--	0
-destaing-gerard-1779	open	needs-image	M	n	27 Sep	**U4: next step.** Both grammar-boundary candidates (U2) and the one-part test (U3) are now on file as leads, neither a reading nor a further negative on the code as a whole (the code itself is not s…		1060
+destaing-gerard-1779	open	needs-image	M	n	27 Sep	**U4: next step.** Both grammar-boundary candidates (U2) and the one-part test (U3) are now on file as leads, neither a reading nor a further negative on the code as a whole (the code itself is not s…	Build the period French dictionary headword list (tools/data has none yet) that U4 names as sharpening the one-part band test already coded in tools/freq.py --onepart-dict. M.	1060
 eckert-1862	partial	runnable	M	n		- Follow-up suggestion (verifier, 24 Sept 2026, not done): the reading.md summary sentence "the only variants are clerical" should be corrected by the solver lane to name the T10 variants (AUDIT.md s…	--	1100
 eckert-1864	partial	needs-triage	?	n			--	0
 erba-2006	open	needs-triage	?	n	25 Sep		--	0
@@ -184,4 +184,4 @@ wvo-hessen-1564	open	runnable	M	n	26 Sep	**Next step for a successor, not pursue
 yogtze-1984	open	needs-triage	?	n	25 Sep		--	0
 zbz-busbecq-1587	open	needs-triage	?	n			--	0
 zeschau-seebach-1841	blocked	runnable	M	n	26 Sep	## Next step (not run this pass)	--	32
-# 185 rows -- needs-edition=9 needs-image=16 needs-key=2 needs-person=8 needs-triage=67 runnable=83
+# 185 rows -- needs-edition=9 needs-image=16 needs-key=2 needs-person=7 needs-triage=67 runnable=84
