@@ -1,0 +1,6 @@
+cryptiana	nevers.htm	sources/cryptiana/web/nevers.htm local mirror, cipher no.7 section (fol.15, 1586), quoted verbatim for fol.133
+finding-aid	archivesetmanuscrits.bnf.fr fr.3974-3995	cached notice cyphersolver/research/gallica_sweep/notice_cc504266_cd0e37708.html, fr.3976 section, piece 71/Fol.133 read directly; live host returned HTTP 403 to a direct curl this session
+gallica	btv1b9060548h	manifest label confirms "Français 3976"; no per-canvas folio labels (0/399), tools/gallica_folio.py --folio 133 finds nothing to anchor on
+solver-repo	dbourdeau/cyphersolver	shallow clone depth 1, grepped for 3976/Nevers/1586; targets/r3708/ is a full published read of this exact letter (ff.133-134, DECODE R3708), dated 22 Sept 2026; write-up confirmed live at https://dbourdeau.github.io/cyphersolver/r3708.html (HTTP 200, content matches)
+solver-repo	aaymeloglu/unsolved-ciphers	shallow clone depth 1, grepped for 3976/Nevers/1586; only raw catalogue rows (DECODE record numbers), no dedicated target or reading found
+decode	de-crypt.org (24 Sept 2026 crawl on disk)	sources/decode/records-non-decrypted-2026-09-24-diff.tsv line 520 (record 3708, fol.133-134, catalogue status Non-decrypted, diff annotation nevers1588[read];r3708[read]); records-decrypted-2026-09-24.tsv lines 672-677 (sibling folios)
