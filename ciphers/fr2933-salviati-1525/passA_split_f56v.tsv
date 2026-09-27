@@ -1,0 +1,8 @@
+line	pos	sign	marks	conf	note	id
+1	9	S	~	L	box spans two tiers: bold zigzag/hump stroke on top over curvy S-shaped curl below; top stroke taller/bolder than typical tilde, may be descender of "ruono" intruding rather than a true applied mark	c001
+9	7	?		L	isolated short bold straight diagonal stroke, no angle/loop/crossbar; doesn't clearly match any of 36 codes; nearest considered L (no right-angle bend seen) or S7 (no hook top seen)	c002
+7	8	e	#	H	compact cursive bowl closed by stroke rising into loop at top, bold double-cross mark directly above -- close match to atlas e+# pattern	c003
+13	1	Z		M	two-tier glyph: small crossed/n-like flourish above a Z/I-shaped lower stroke; several atlas Z exemplars show this two-part form, treating flourish as intrinsic to Z's shape rather than separately-applied mark	c004
+4	28	eps	1	M	small short vertical/apostrophe-like stroke above a compact open curve resembling epsilon (backwards-3/two-open-bowl shape)	c005
+18	23	psi		L	forked cursive shape with two arm-like strokes and hooked tail, closest to psi; a "6"-like numeral just above may be stray marginal ink unrelated to the sign	c006
+12	19	e		M	single rounded closed loop/bowl with small hooked tail curling at lower left, no mark visible above; considered v (hooked left arm) but body reads as closed loop favoring e	c007

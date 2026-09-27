@@ -1,0 +1,8 @@
+line	pos	sign	marks	conf	note	id
+4	28	eps	1	M	two-bowl epsilon-like shape (backward 3) with short tick/stroke above; open to the right, no closed loop, matches eps closer than e	c001
+18	23	?		L	tall looped/hooked stroke sitting inline within otherwise plaintext-looking prose; closest atlas candidates p (loop+crossed stem) or bh (hooked loop upper right), genuinely ambiguous -- nearest guess p	c002
+9	7	L		M	short slanted stroke with slight hook near base, consistent with L's small angled/numeral-like shape rather than full loop or bowl	c003
+12	19	e		M	single bowl closed by rising loop stroke (looped-e-like); no distinct mark visible directly above within the crop itself	c004
+1	9	S	5	L	S-shaped stroke with hooked squiggle above resembling the "5"-hook mark; stacked appearance with neighbouring glyphs made this one of the harder reads	c005
+7	8	e	#	H	clean looped-e bowl with clearly drawn double-bar cross directly above -- good match to atlas e+# pattern	c006
+13	1	Z	ot	M	Z-shaped stroke with small squiggly "of/ot"-like mark above, matching several atlas Z exemplars carrying the same small mark	c007

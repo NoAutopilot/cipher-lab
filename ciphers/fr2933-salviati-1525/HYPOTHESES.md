@@ -219,3 +219,16 @@ best score over stream length (control) or the full filled decode rescored (targ
 
 Variant B (CM_HAPAX=merge) not run: no shape grouping of the 8 unread boxes is recorded on disk (the blind passes'
 per-box notes describe each box but group none), and the brief forbids inventing classes.
+
+## Corrected split, before SALV-F56V (27 Sept 2026)
+
+SALV-F56V crop-checked and transcribed the 7 f56v split candidates SALV2-J3 named (NOTES.md "Split candidates
+(f56v only...)"): 6 confirmed real signs (1 of the 6 left as an unread `?` hapax type, its own atlas code
+undecidable from the crop), 0 stayed plain. Every row from "Old split" through "cm with the hapax design change"
+above (the SALV2-J2/SALV-CM48/SALV-HAPAX rows, 196-219 above) ran on SALV2-J2's corrected split (2,932 tokens,
+251 types, 327 runs, 1,121 plain boxes) -- one further step short of the split now on disk (2,939 tokens, 253
+types, 324 runs, 1,114 plain boxes; SALV-F56V, this target's NOTES.md). Every row above is re-labelled **on the
+split before SALV-F56V**: neither refuted nor confirmed on the further-corrected text. No row above is edited
+(append-only, CLAUDE.md rule 3/7); this section is the re-label. New runs on the SALV-F56V split are appended
+below, dated after this line. No cm rerun in this job (a separate decision for the parent, per SALV-F56V's own
+brief).

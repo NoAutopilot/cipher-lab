@@ -3280,3 +3280,101 @@ repeated-attempt paragraph). If a transcription pass is opened for (a), the same
 Files: `control/codemark_curve.py` (CM_HAPAX=exclude), `tools/tests/test_codemark_hapax.py` (new),
 `control/codemark_target_cm_all_r96_hxexclude_s{1,2,3}.json` (new), `control_curve.tsv` (+6 rows),
 `HYPOTHESES.md` (+2 rows), NEAR.md salviati row, status.json near entry, NEXT-STEPS.tsv. Requests: none.
+
+## SALV-F56V (27 Sept 2026)
+
+Parent worker SALV-F56V (Sonnet), 09:47-10:06 UTC. Brief `.claude/briefs/runs/2026-09-27-parent-ytbiz-salv-f56v.md`:
+SALV-HAPAX's own named next step -- crop-check and transcribe the seven f56v split candidates SALV2-J3 named
+(the SALV2-J1 way) and rebuild the spec under rule 7. Intake gate re-run at start: `fr2933-salviati-1525: open
+(line 1) -- edition/page or full-text-search citation found within 6 lines` (exit 0).
+
+**WHICH BOXES.** The 7 candidates, from SALV2-J3's own "Split candidates (f56v only...)" paragraph: (1,9 g),
+(4,28 unclear), (7,8 e), (9,7 a), (12,19 Z), (13,1 ]), (18,23 y) -- SALV2-J3's own rough atlas guesses, never
+shown to either blind pass below. All 7 confirmed still plain (`code=_`) in the committed `ciphertext_f56v.tsv`
+before this job.
+
+**U1, crops.** `images/f56v_ref2400.jpg` was not on disk (1 gallica.bnf.fr request, same IIIF `/2400,/` region
+SALV-SPLIT/SALV2-J3 used, browser UA, HTTP 200, valid JPEG). `crop_plain_leaf.py f56v` reproduced SALV2-J3's own
+201-plain-box count exactly. `split2b_f56v_list.tsv` (the 7 target boxes). The brief asked for "the two
+neighbouring boxes each side for context, labelled so the reader knows which is the target box" -- wider than
+`crop_plain_leaf.py --boxes`'s existing ~1-box-width default padding, so added a `--neighbors K` option to the
+shared tool rather than forking a private copy (CLAUDE.md Usage 8): widens the crop to span K whole neighbouring
+boxes each side (same line, clipped at line ends) and labels each neighbour with the existing line-crop-mode
+underline+pos-number convention, leaving the target unlabelled (already unambiguous as the only blue rectangle).
+Two independently-seeded crop sets: `python3 crop_plain_leaf.py f56v --boxes split2b_f56v_list.tsv --out
+split2b_crops/f56v_A --seed 561 --neighbors 2` and `--out split2b_crops/f56v_B --seed 562 --neighbors 2`. Eye-
+checked two crops before the first call (context and headroom correct, blue box round the target only, red
+underline+number on every neighbour). Crop PNGs are working files (`.gitignore`d, same convention as
+`split2_crops`); the `_key.tsv` id->(leaf,line,pos) maps are committed.
+
+**U2/U3, two blind Sonnet subagent calls** (fresh subagents, no shared context), each given only its own 7
+shuffled crops, `glyphs/atlas_part1.png`/`atlas_part2.png`, the 36-code shape descriptions and 9-mark vocabulary
+from `glyphs/labels.json` -- nothing about flags, prior guesses, plain/sign status or hypotheses. Both returned
+full coverage on the first reply (7/7 and 7/7), no follow-ups needed. Mapped to (line,pos) via the `_key.tsv`
+files into `passA_split_f56v.tsv`/`passB_split_f56v.tsv` (line, pos, sign, marks, conf, note, id).
+
+**U4, reconciliation.** `python3 reconcile_split_boxes.py passA_split_f56v.tsv passB_split_f56v.tsv --out-dir
+recon_split_f56v`: n=7, code_agree 5/7=71.4%, marks_agree 5/7=71.4%, both_agree 3/7=42.9% (the transcription-
+error control figure, beside bSALC's 6.4% per-sign measured error and SALV2-J1's own 33.3-52.6% code+mark
+agreement on freshly-confirmed boxes -- consistent with "two independent blind reads of a genuinely new sign is
+a harder task than a third read arbitrating two mostly-agreeing passes", SALV2-J1B's own framing). I (the
+worker, not a subagent) settled every one of the 4 disagreements from the crop directly at native resolution
+(`recon_split_f56v/settled.tsv`'s `how` column has the per-box reasoning):
+
+| line | pos | passA | passB | settled code | settled marks | grade | how (short) |
+|---|---|---|---|---|---|---|---|
+| 1 | 9 | S / ~ | S / 5 | S | 5 | M | code agreed; top stroke is a hook-topped ascender starting at the sign's own left edge (not "ruono"'s descender), closer to mark 5 than a tilde wave |
+| 4 | 28 | eps / 1 | eps / 1 | eps | 1 | AB | both passes agree in full |
+| 7 | 8 | e / # | e / # | e | # | AB | both passes agree in full |
+| 9 | 7 | ? (nearest L) | L | L | (none) | M | code disagreed only on caution; a short plain vertical stroke with a separate dot above, no right-angle bend; settled L |
+| 12 | 19 | e / (none) | e / (none) | e | (none) | AB | both passes agree in full |
+| 13 | 1 | Z / (none) | Z / ot | Z | ot | M | code agreed; small compound flourish above the Z body matches this leaf's own marked-Z precedent (line1 pos19 dot\|ot, line2 pos6 ot) better than being intrinsic to Z's plain shape |
+| 18 | 23 | psi | ? (nearest p/bh) | `?` | (none) | M | genuinely undecidable: a tall symmetric peaked stroke between the sq/Lx sign cluster and "questa", matching neither this leaf's own "lam" exemplar (a wavy zigzag, line1 pos19) nor L's right-angle description; graded `?` per the undecidable-case precedent (SALV2-J1B, f55r line6 pos17) rather than forced |
+
+**Correcting pass B's own context note.** Pass B described box (18,23) as "sitting inline within otherwise
+plaintext prose (\"...modo Co[?] / Cancelliero et...\")" -- checked directly against `plain_crops/f56v/L18.png`
+and a native-resolution crop of the full run (pos 19-25): that text is line 19's own content, bleeding into the
+bottom padding of pass B's wider (`--neighbors 2`) crop, not line 18's. Line 18 itself reads "habbi ad
+accociar[si]... Altrimenti [S4 sq Lx-coded sign cluster, pos 20-22] [box 23] questa mattina" -- box 23 sits
+between the sign cluster and "questa", not inside a run of plain prose. This does not change the settlement
+(still genuinely undecidable on the code itself), but the *reason* pass B gave for doubting it is a crop-bleed
+artifact, not evidence the box is plain -- recorded here so a future session does not re-use that specific
+argument.
+
+**Split-candidate outcome.** 6 of 7 confirmed real signs (0 of the 6 settled `WORD`/left plain), 1 stayed an
+individually-unread hapax (`?`). Pass-0 agreement (SALV2-J3's own rough one-pass guess, never shown to either
+subagent): (1,9) g vs settled S -- no; (4,28) unclear vs eps -- n/a; (7,8) e vs settled e -- **yes**; (9,7) a vs
+settled L -- no; (12,19) Z vs settled e -- no; (13,1) `]` vs settled Z -- no; (18,23) y vs settled `?` -- no.
+1/6 gradeable matches (16.7%), similar order to SALV2-J1B's own low pass-0 agreement on f55r-f56v (0-32.3%).
+
+**U5, write-back and rebuild.** `apply_split2_writeback.py f56v`: 7 rows updated in `ciphertext_f56v.tsv` (of 511
+total), `git diff --stat` confirms exactly those 7 old/new line pairs and no others, row count unchanged (512
+lines including header). `python3 build_spec.py`: **2,939 tokens, 253 types, 324 runs, 1,114 plain boxes** (was
+2,932/251/327/1,121) -- `--check` ok. `python3 build_ciphertext_with_plain.py`: `--check` ok. New types: `S^5`
+(one new code+mark combination) and `?f56v.18.23^` (the one hapax, per the existing per-box-hapax convention,
+SALV2-J2). No type removed.
+
+`HYPOTHESES.md`: every row from "Old split" through "cm with the hapax design change" (the SALV2-J2/SALV-CM48/
+SALV-HAPAX rows, all run on SALV2-J2's 2,932/251/327 split) re-labelled, append-only, "on the split before
+SALV-F56V" in a new dated section -- neither refuted nor confirmed on the further-corrected 2,939/253/324 text.
+`NEAR.md` salviati row Evidence and Last-touched updated; `status.json` near entry updated to agree;
+`tools/near_check.py`: `ok: 12 NEAR.md rows, 12 status.json near entries, in step, none closed-negative, none
+stale`. `NEXT-STEPS.tsv` regenerated.
+
+**No cm rerun in this job** (the brief's own scope; a separate decision for the parent). Status stays
+**partial** (rule 5; a transcription-quality step, no reading).
+
+Files: `crop_plain_leaf.py` (`--neighbors` option), `split2b_f56v_list.tsv`, `split2b_crops/{f56v_A,f56v_B}_key.tsv`
+(committed; crop PNGs `.gitignore`d), `passA_split_f56v.tsv`, `passB_split_f56v.tsv`, `recon_split_f56v/`
+(agreement.tsv, disagreements.tsv, settled.tsv), `ciphertext_f56v.tsv`, `specs/fr2933-salviati-1525.json`,
+`ciphertext_with_plain.txt`, `HYPOTHESES.md`, `NEAR.md`, `status.json`, `NEXT-STEPS.tsv`, this NOTES.md section.
+
+No decoding, no family run, no reading of signs beyond per-box code+mark identification, no "solved"/"new"/
+"first"/"unpublished", no owner name, no credentials, no AskUserQuestion. Requests: gallica.bnf.fr 1. Subagents:
+2 (0 follow-ups). About 19 of 60 minutes elapsed at write-up; well under the USD 12 cap.
+
+**Next:** for the parent -- a cm rerun on the SALV-F56V split (2,939/253/324, one hapax fewer difficult than the
+prior split's 8) is now unblocked material if the parent wants a third cm attempt (control first, rule 3: this
+would be a genuinely different split, not a further restart increase on the same one); or new material (more
+leaves' plain boxes re-settled the SALV2-J3 way, most promisingly f55v's own `<none>`-graded diagnostic finding
+from that job, still untried). Never "reading ready".

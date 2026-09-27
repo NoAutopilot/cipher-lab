@@ -1,0 +1,5 @@
+line	pos	A_code	A_marks	A_conf	A_id	B_code	B_marks	B_conf	B_id
+1	9	S	~	L	c001	S	5	L	c005
+9	7	?		L	c002	L		M	c003
+13	1	Z		M	c004	Z	ot	M	c007
+18	23	psi		L	c006	?		L	c002
