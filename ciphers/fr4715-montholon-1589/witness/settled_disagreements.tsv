@@ -1,0 +1,1038 @@
+line	col	chosen_sign	reason
+L02	1	?	undecidable
+L02	2	'47	dot present
+L02	8	60	segmentation
+L02	9	93	segmentation
+L02	10	93	segmentation
+L02	11	03	segmentation
+L02	12	39	segmentation
+L02	13	45	segmentation
+L02	16	45	segmentation
+L03	3	63	digit shape
+L03	11	60	segmentation
+L03	12	05	segmentation
+L03	13	73	segmentation
+L03	14	95	segmentation
+L03	19	23	digit shape
+L03	20	26	digit shape
+L03	22	25	digit shape
+L03	25	05	segmentation
+L03	26	12	segmentation
+L03	27	05	digit shape
+L03	28	23	digit shape
+L03	32	31	segmentation
+L03	33	95	digit shape
+L03	34	50	digit shape
+L03	38	20	segmentation
+L03	39	12	segmentation
+L03	40	23	digit shape
+L03	41	24	digit shape
+L03	43	65	digit shape
+L03	46	09	segmentation
+L03	47	77	segmentation
+L03	49	20	segmentation
+L03	51	?	undecidable
+L03	54	23	segmentation
+L03	55	25	digit shape
+L03	56	?	undecidable
+L03	59	70	digit shape
+L03	60	23	digit shape
+L03	61	?	undecidable
+L03	62	30	digit shape
+L03	63	73	digit shape
+L03	64	16	digit shape
+L03	65	70	digit shape
+L04	2	12	digit shape
+L04	3	73	digit shape
+L04	8	03	segmentation
+L04	13	50	digit shape
+L04	14	?	undecidable
+L04	20	93	digit shape
+L04	22	75	digit shape
+L04	24	73	segmentation
+L04	25	05	segmentation
+L04	26	60	segmentation
+L04	27	16	segmentation
+L04	39	61	segmentation
+L04	40	65	segmentation
+L04	41	?	undecidable
+L04	42	31	segmentation
+L04	45	60	segmentation
+L04	46	23	segmentation
+L04	47	40	segmentation
+L04	48	05	segmentation
+L04	49	60	digit shape
+L04	50	25	digit shape
+L04	51	10	digit shape
+L04	53	09	segmentation
+L04	54	?	undecidable
+L05	6	12	digit shape
+L05	7	25	digit shape
+L05	14	1124	segmentation
+L05	15	65	segmentation
+L05	16	95	segmentation
+L05	17	?	undecidable
+L05	18	46	digit shape
+L05	23	?	undecidable
+L05	29	123	segmentation
+L05	30	60	segmentation
+L05	31	05	segmentation
+L05	32	7	segmentation
+L05	33	12	digit shape
+L05	34	60	digit shape
+L05	38	12	segmentation
+L05	39	31	digit shape
+L05	40	?	undecidable
+L05	42	73	segmentation
+L05	44	51	segmentation
+L05	45	65	segmentation
+L05	46	37	segmentation
+L05	47	81	segmentation
+L05	48	55	segmentation
+L05	49	60	segmentation
+L05	55	30	segmentation
+L05	56	25	segmentation
+L05	57	93	segmentation
+L05	60	?	undecidable
+L05	65	?	undecidable
+L06	1	?	undecidable
+L06	2	?	undecidable
+L06	22	50	digit shape
+L06	30	75	segmentation
+L06	31	63	segmentation
+L06	32	95	segmentation
+L06	33	44	segmentation
+L06	35	70	digit shape
+L06	37	23	digit shape
+L06	40	25	segmentation
+L06	41	75	segmentation
+L06	42	23	segmentation
+L06	43	?	undecidable
+L06	45	05	segmentation
+L06	46	23	segmentation
+L06	47	?	undecidable
+L06	51	75	segmentation
+L06	52	231	segmentation
+L06	53	25	digit shape
+L06	54	?	undecidable
+L06	56	91	segmentation
+L06	58	93	segmentation
+L06	59	105	segmentation
+L07	10	?	undecidable
+L07	14	125	segmentation
+L07	15	05	segmentation
+L07	16	35	segmentation
+L07	17	07	segmentation
+L07	18	5	digit shape
+L07	19	50	digit shape
+L07	26	97	segmentation
+L07	27	75	digit shape
+L07	31	40	digit shape
+L07	32	50	digit shape
+L07	33	?	undecidable
+L07	34	5	digit shape
+L07	35	23	digit shape
+L07	36	?	undecidable
+L07	37	95	digit shape
+L07	40	?	undecidable
+L07	44	25	segmentation
+L07	45	175	segmentation
+L07	46	?	undecidable
+L07	47	?	undecidable
+L07	48	?	undecidable
+L07	50	80	segmentation
+L07	51	25	digit shape
+L07	52	?	undecidable
+L07	54	5106	segmentation
+L07	55	5104	segmentation
+L07	56	69	segmentation
+L07	57	9	segmentation
+L07	58	97	segmentation
+L07	59	330	segmentation
+L07	60	25	segmentation
+L07	61	175	segmentation
+L07	62	271	segmentation
+L07	63	47	segmentation
+L07	64	20	segmentation
+L07	65	26	segmentation
+L07	66	?	undecidable
+L07	67	10	digit shape
+L07	68	51	digit shape
+L07	69	03	segmentation
+L07	70	?	undecidable
+L07	71	?	undecidable
+L07	75	?	undecidable
+L07	76	46	digit shape
+L08	6	?	undecidable
+L08	7	42	digit shape
+L08	8	?	undecidable
+L08	9	?	undecidable
+L08	14	63	segmentation
+L08	15	65	digit shape
+L08	30	3	segmentation
+L08	31	05	segmentation
+L08	32	73	segmentation
+L08	33	05	segmentation
+L08	43	1	segmentation
+L08	44	?	undecidable
+L08	45	23	digit shape
+L08	50	65	segmentation
+L08	51	125	segmentation
+L08	54	?	undecidable
+L08	58	40	segmentation
+L08	59	?	undecidable
+L08	63	93	digit shape
+L08	64	?	undecidable
+L08	66	0023	segmentation
+L09	15	77	digit shape
+L09	16	?	undecidable
+L09	22	?	undecidable
+L09	25	05	digit shape
+L09	41	40	digit shape
+L09	50	122	segmentation
+L09	51	?	undecidable
+L09	52	77	digit shape
+L09	53	75	digit shape
+L09	54	03	digit shape
+L09	58	14	segmentation
+L09	59	47	digit shape
+L10	5	23	segmentation
+L10	6	1	digit shape
+L10	9	?	undecidable
+L10	15	12	segmentation
+L10	16	5	digit shape
+L10	17	5	digit shape
+L10	18	1	digit shape
+L10	22	7	segmentation
+L10	23	?	undecidable
+L10	32	25	digit shape
+L10	33	50	digit shape
+L10	41	243	segmentation
+L10	42	19	segmentation
+L10	43	?	undecidable
+L10	44	?	undecidable
+L10	57	?	undecidable
+L10	60	05	segmentation
+L10	61	95	segmentation
+L10	62	125	segmentation
+L10	64	?	undecidable
+L10	65	59	digit shape
+L10	67	65	segmentation
+L10	68	60	digit shape
+L11	5	30	digit shape
+L11	11	'47	dot present
+L11	16	50	segmentation
+L11	17	25	digit shape
+L11	18	?	undecidable
+L11	19	30	digit shape
+L11	21	1	segmentation
+L11	23	?	undecidable
+L11	24	70	digit shape
+L11	26	03	segmentation
+L11	27	04	digit shape
+L11	29	50	segmentation
+L11	31	?	undecidable
+L11	34	4	segmentation
+L11	35	?	undecidable
+L11	36	73	digit shape
+L11	37	?	undecidable
+L11	40	19	digit shape
+L11	45	23	digit shape
+L11	46	70	digit shape
+L11	48	4	segmentation
+L11	49	23	digit shape
+L11	50	75	digit shape
+L11	51	23	digit shape
+L11	52	1	digit shape
+L11	58	77	segmentation
+L11	59	32	segmentation
+L11	60	3	digit shape
+L11	68	20	segmentation
+L11	69	20	digit shape
+L11	83	7	segmentation
+L12	5	?	undecidable
+L12	8	3	segmentation
+L12	10	77	segmentation
+L12	11	27	digit shape
+L12	15	75	digit shape
+L12	16	20	digit shape
+L12	17	25	digit shape
+L12	19	05	segmentation
+L12	20	75	digit shape
+L12	23	?	undecidable
+L12	26	30	segmentation
+L12	28	?	undecidable
+L12	29	16	digit shape
+L12	30	65	digit shape
+L12	31	05	segmentation
+L12	32	25	digit shape
+L12	34	05	digit shape
+L12	35	30	digit shape
+L12	36	63	digit shape
+L12	37	30	digit shape
+L12	45	95	segmentation
+L12	46	?	undecidable
+L12	47	65	digit shape
+L12	48	?	undecidable
+L12	49	23	digit shape
+L12	55	3	segmentation
+L12	57	973	segmentation
+L12	58	?	undecidable
+L12	59	?	undecidable
+L12	61	?	undecidable
+L12	63	73	digit shape
+L12	65	?	undecidable
+L12	67	3	segmentation
+L12	68	65	segmentation
+L12	70	65	digit shape
+L12	72	12	digit shape
+L12	73	?	undecidable
+L13	3	23	segmentation
+L13	4	73	digit shape
+L13	5	65	digit shape
+L13	10	23	digit shape
+L13	16	23	segmentation
+L13	17	73	digit shape
+L13	18	93	digit shape
+L13	24	77	digit shape
+L13	25	30	digit shape
+L13	26	?	undecidable
+L13	30	05	segmentation
+L13	31	773	segmentation
+L13	32	?	undecidable
+L13	33	?	undecidable
+L13	34	65	digit shape
+L13	35	?	undecidable
+L13	36	23	segmentation
+L13	37	10	digit shape
+L13	38	?	undecidable
+L13	39	50	digit shape
+L13	40	23	digit shape
+L13	55	42	segmentation
+L13	56	3	digit shape
+L13	60	2	segmentation
+L13	61	23	digit shape
+L13	63	73	digit shape
+L13	66	17	segmentation
+L13	67	05	digit shape
+L14	12	95	segmentation
+L14	13	05	segmentation
+L14	14	93	segmentation
+L14	15	94	segmentation
+L14	16	16	segmentation
+L14	27	95	segmentation
+L14	28	65	digit shape
+L14	32	65	segmentation
+L14	33	67	digit shape
+L14	34	?	undecidable
+L14	35	2	digit shape
+L14	37	05	segmentation
+L14	38	05	segmentation
+L14	50	50	segmentation
+L14	51	67	segmentation
+L14	52	22	segmentation
+L14	53	7152	segmentation
+L14	54	225	segmentation
+L14	55	05	segmentation
+L14	56	7	segmentation
+L14	57	7	segmentation
+L14	58	05	segmentation
+L14	59	?	undecidable
+L14	60	32	segmentation
+L14	61	3	segmentation
+L14	64	?	undecidable
+L14	65	05	digit shape
+L14	72	23	segmentation
+L14	73	16	segmentation
+L14	74	40	segmentation
+L14	76	122	segmentation
+L14	77	?	undecidable
+L14	80	?	undecidable
+L14	81	30	digit shape
+L15	14	'46	dot present
+L15	19	'46	dot present
+L15	25	16	segmentation
+L15	26	03	segmentation
+L15	28	27	segmentation
+L15	29	25	digit shape
+L15	31	05	segmentation
+L15	32	16	segmentation
+L15	33	1	segmentation
+L15	34	05	segmentation
+L15	35	?	undecidable
+L15	36	795	segmentation
+L15	37	40	segmentation
+L15	38	50	segmentation
+L15	39	10	segmentation
+L15	40	5	segmentation
+L15	41	03	segmentation
+L15	42	95	segmentation
+L15	43	35	segmentation
+L15	44	65	segmentation
+L15	45	23	segmentation
+L15	47	16	digit shape
+L15	51	05	digit shape
+L15	59	42	segmentation
+L15	60	5	segmentation
+L15	61	?	undecidable
+L15	62	123	digit shape
+L15	69	'46	segmentation
+L15	70	50	segmentation
+L15	71	02	segmentation
+L15	72	39	segmentation
+L15	73	'46	dot present
+L15	77	?	undecidable
+L16	7	63	segmentation
+L16	8	95	segmentation
+L16	9	52	digit shape
+L16	10	73	digit shape
+L16	12	27	segmentation
+L16	14	42	segmentation
+L16	16	03	segmentation
+L16	17	9	segmentation
+L16	23	123	digit shape
+L16	24	95	segmentation
+L16	29	73	digit shape
+L16	34	73	segmentation
+L16	35	?	undecidable
+L16	37	7322	segmentation
+L16	38	?	undecidable
+L16	39	?	undecidable
+L16	40	95	segmentation
+L16	41	05	digit shape
+L16	42	?	undecidable
+L16	43	?	undecidable
+L16	45	7322	segmentation
+L16	46	5	segmentation
+L16	47	03	segmentation
+L16	48	94	segmentation
+L16	50	1	segmentation
+L16	51	3	segmentation
+L16	52	373	segmentation
+L16	54	16	digit shape
+L16	62	05	digit shape
+L16	67	09	segmentation
+L17	2	773	digit shape
+L17	13	73	digit shape
+L17	15	120	segmentation
+L17	16	?	undecidable
+L17	17	20	digit shape
+L17	18	?	undecidable
+L17	19	42	segmentation
+L17	20	?	undecidable
+L17	21	41	digit shape
+L17	27	5	segmentation
+L17	28	273	segmentation
+L17	29	?	undecidable
+L17	30	27	segmentation
+L17	32	73	segmentation
+L17	33	?	undecidable
+L17	34	46	digit shape
+L17	44	3	segmentation
+L17	48	'47	dot present
+L17	51	0	segmentation
+L17	52	05	digit shape
+L17	56	3	segmentation
+L18	2	05	digit shape
+L18	10	05	digit shape
+L18	15	05	digit shape
+L18	16	42	segmentation
+L18	17	05	digit shape
+L18	20	'46	dot present
+L18	24	05	segmentation
+L18	25	72	segmentation
+L18	26	73	segmentation
+L18	29	4	segmentation
+L18	38	123	digit shape
+L18	39	31	digit shape
+L18	43	65	segmentation
+L18	44	50	segmentation
+L18	45	9	segmentation
+L18	46	773	segmentation
+L18	48	?	undecidable
+L18	51	05	digit shape
+L18	55	'46	dot present
+L18	67	3	segmentation
+L18	72	3	segmentation
+L18	73	?	undecidable
+L18	74	?	undecidable
+L18	75	05	digit shape
+L19	9	3	segmentation
+L19	15	123	segmentation
+L19	16	16	segmentation
+L19	17	5	segmentation
+L19	19	75	segmentation
+L19	20	123	segmentation
+L19	21	16	segmentation
+L19	22	?	undecidable
+L19	24	05	segmentation
+L19	33	7	segmentation
+L19	34	4	segmentation
+L19	35	?	undecidable
+L19	36	?	undecidable
+L19	37	231	digit shape
+L19	57	4	segmentation
+L19	58	23	digit shape
+L19	64	'47	dot present
+L20	3	39	segmentation
+L20	4	95	digit shape
+L20	16	5	segmentation
+L20	18	42	segmentation
+L20	19	30	segmentation
+L20	20	05	digit shape
+L20	24	42	segmentation
+L20	25	423	digit shape
+L20	33	?	undecidable
+L20	35	05	digit shape
+L20	36	?	undecidable
+L20	44	327	segmentation
+L20	45	375	digit shape
+L20	52	?	undecidable
+L20	58	3	segmentation
+L20	61	3	segmentation
+L20	64	'47	dot present
+L20	69	72	digit shape
+L21	5	23	segmentation
+L21	6	60	segmentation
+L21	16	05	segmentation
+L21	17	05	segmentation
+L21	18	15	segmentation
+L21	19	25	segmentation
+L21	20	05	segmentation
+L21	21	05	segmentation
+L21	22	111	segmentation
+L21	23	65	segmentation
+L21	24	40	segmentation
+L21	25	05	segmentation
+L21	26	05	segmentation
+L21	27	123	segmentation
+L21	28	4	segmentation
+L21	29	05	digit shape
+L21	34	31	digit shape
+L21	36	77	segmentation
+L21	37	05	digit shape
+L21	38	23	digit shape
+L21	41	95	segmentation
+L21	43	93	segmentation
+L21	44	05	digit shape
+L21	46	73	digit shape
+L21	48	22	segmentation
+L21	49	?	undecidable
+L21	59	05	segmentation
+L21	60	25	segmentation
+L21	61	67	segmentation
+L21	65	16	segmentation
+L21	66	05	digit shape
+L21	70	90	segmentation
+L21	71	?	undecidable
+L21	73	?	undecidable
+L21	74	05	digit shape
+L21	77	2	segmentation
+L21	87	123	segmentation
+L21	89	30	segmentation
+L22	3	?	undecidable
+L22	8	773	digit shape
+L22	9	?	undecidable
+L22	10	773	digit shape
+L22	13	773	digit shape
+L22	17	33	digit shape
+L22	19	23	segmentation
+L22	23	773	digit shape
+L22	26	12	segmentation
+L22	27	55	segmentation
+L22	28	05	digit shape
+L22	32	?	undecidable
+L22	34	65	segmentation
+L22	35	05	segmentation
+L22	36	73	segmentation
+L22	37	95	segmentation
+L22	40	77	segmentation
+L22	42	05	segmentation
+L22	45	05	digit shape
+L22	53	05	segmentation
+L22	54	27	segmentation
+L22	55	05	segmentation
+L22	56	41	segmentation
+L22	57	70	segmentation
+L22	58	23	segmentation
+L22	59	05	segmentation
+L22	60	24	segmentation
+L22	61	?	undecidable
+L22	62	05	digit shape
+L22	63	773	digit shape
+L22	66	20	segmentation
+L22	67	05	digit shape
+L22	68	114	segmentation
+L22	70	03	segmentation
+L22	71	04	segmentation
+L22	72	23	segmentation
+L22	73	93	segmentation
+L22	74	?	undecidable
+L22	75	?	undecidable
+L22	76	?	undecidable
+L22	77	?	undecidable
+L22	80	05	segmentation
+L22	81	?	undecidable
+L22	82	?	undecidable
+L22	83	?	undecidable
+L22	84	23	digit shape
+L23	1	?	undecidable
+L23	6	?	undecidable
+L23	14	12	segmentation
+L23	15	23	segmentation
+L23	16	123	digit shape
+L23	17	4	segmentation
+L23	21	05	digit shape
+L23	24	127	segmentation
+L23	25	25	segmentation
+L23	26	75	segmentation
+L23	27	05	segmentation
+L23	28	16	segmentation
+L23	29	25	segmentation
+L23	30	7122	segmentation
+L23	31	3194	segmentation
+L23	32	05	segmentation
+L23	33	7	segmentation
+L23	34	?	undecidable
+L23	36	05	segmentation
+L23	37	65	segmentation
+L23	38	?	undecidable
+L23	42	316	segmentation
+L23	43	05	digit shape
+L23	48	1	segmentation
+L23	49	93	segmentation
+L23	50	?	undecidable
+L23	51	?	undecidable
+L23	52	23	segmentation
+L23	56	65	segmentation
+L23	57	7	segmentation
+L23	58	?	undecidable
+L23	59	05	digit shape
+L23	61	05	digit shape
+L23	62	?	undecidable
+L23	63	05	digit shape
+L23	64	?	undecidable
+L23	65	73	segmentation
+L23	67	50	segmentation
+L23	68	502	digit shape
+L23	69	?	undecidable
+L23	70	?	undecidable
+L23	71	05	digit shape
+L23	72	39	digit shape
+L23	77	?	undecidable
+L23	78	?	undecidable
+L23	79	?	undecidable
+L23	80	?	undecidable
+L24	4	05	segmentation
+L24	5	?	undecidable
+L24	6	?	undecidable
+L24	7	123	digit shape
+L24	11	05	segmentation
+L24	12	?	undecidable
+L24	13	05	digit shape
+L24	17	70	segmentation
+L24	18	4	segmentation
+L24	33	05	digit shape
+L24	34	?	undecidable
+L24	52	63	segmentation
+L24	59	25	segmentation
+L24	60	'46	dot present
+L24	62	23	segmentation
+L24	64	05	segmentation
+L24	72	17	segmentation
+L24	73	05	digit shape
+L24	77	07	segmentation
+L24	79	25	segmentation
+L24	80	46	segmentation
+L24	81	50	segmentation
+L24	82	05	digit shape
+L24	83	123	digit shape
+L24	85	70	segmentation
+L24	87	05	digit shape
+L24	88	05	digit shape
+L25	1	40	segmentation
+L25	2	40	segmentation
+L25	3	05	digit shape
+L25	4	?	undecidable
+L25	6	05	digit shape
+L25	7	03	segmentation
+L25	8	?	undecidable
+L25	9	23	segmentation
+L25	18	19	segmentation
+L25	19	95	segmentation
+L25	28	732	segmentation
+L25	29	2724	segmentation
+L25	30	05	digit shape
+L25	31	?	undecidable
+L25	32	05	digit shape
+L25	34	93	segmentation
+L25	35	70	segmentation
+L25	36	42	segmentation
+L25	37	?	undecidable
+L25	39	75	segmentation
+L25	40	231	segmentation
+L25	41	?	undecidable
+L25	42	?	undecidable
+L25	43	?	undecidable
+L25	45	37	segmentation
+L25	46	13	segmentation
+L25	48	23	digit shape
+L25	50	2724	segmentation
+L25	51	05	segmentation
+L25	52	3	segmentation
+L25	53	05	segmentation
+L25	54	93	segmentation
+L25	55	94	segmentation
+L25	56	1	segmentation
+L25	57	05	segmentation
+L25	59	10	segmentation
+L25	60	08	segmentation
+L25	62	03	segmentation
+L25	63	05	digit shape
+L25	67	3	segmentation
+L25	72	7373	segmentation
+L25	73	05	segmentation
+L25	74	3	segmentation
+L25	75	75	segmentation
+L25	76	093	segmentation
+L25	77	7	segmentation
+L25	78	5	segmentation
+L25	79	9	segmentation
+L25	80	95	segmentation
+L25	81	25	segmentation
+L25	82	?	undecidable
+L25	83	?	undecidable
+L25	85	3	segmentation
+L25	86	?	undecidable
+L25	87	?	undecidable
+L25	88	?	undecidable
+L25	89	73	segmentation
+L25	93	'46	dot present
+L26	7	63	digit shape
+L26	10	39	segmentation
+L26	11	?	undecidable
+L26	26	25	segmentation
+L26	30	3	segmentation
+L26	41	'46	dot present
+L26	44	?	undecidable
+L26	45	50	digit shape
+L26	49	05	segmentation
+L26	53	?	undecidable
+L26	54	23	segmentation
+L26	58	?	undecidable
+L26	59	23	segmentation
+L26	61	07	segmentation
+L27	9	?	undecidable
+L27	15	?	undecidable
+L27	18	41	segmentation
+L27	19	05	segmentation
+L27	20	19	digit shape
+L27	22	25	segmentation
+L27	23	?	undecidable
+L27	26	00	segmentation
+L27	27	25	segmentation
+L27	29	773	segmentation
+L27	30	63	digit shape
+L27	32	12	segmentation
+L27	33	5	segmentation
+L27	34	99	segmentation
+L27	36	725	segmentation
+L27	37	25	digit shape
+L27	38	?	undecidable
+L27	40	95	segmentation
+L27	41	63	segmentation
+L27	43	12	segmentation
+L27	44	5	segmentation
+L27	48	73	segmentation
+L27	57	13	segmentation
+L27	58	95	segmentation
+L27	59	23	digit shape
+L27	61	05	segmentation
+L27	65	73	segmentation
+L27	71	77	segmentation
+L27	80	?	undecidable
+L27	81	05	segmentation
+L28	4	?	undecidable
+L28	8	5	segmentation
+L28	14	05	segmentation
+L28	15	310	segmentation
+L28	16	63	segmentation
+L28	18	05	segmentation
+L28	19	70123	segmentation
+L28	21	71	segmentation
+L28	22	65	segmentation
+L28	23	50	segmentation
+L28	24	05	segmentation
+L28	25	42	segmentation
+L28	27	05	segmentation
+L28	28	310	segmentation
+L28	29	?	undecidable
+L28	31	73	digit shape
+L28	34	5	segmentation
+L28	44	72	segmentation
+L28	46	20	segmentation
+L28	47	20	segmentation
+L28	48	05	segmentation
+L28	50	73	segmentation
+L28	55	05	segmentation
+L28	63	65	digit shape
+L28	66	90	segmentation
+L28	67	'46	dot present
+L28	71	?	undecidable
+L28	72	1	digit shape
+L28	73	19	digit shape
+L28	74	16	segmentation
+L28	75	50	digit shape
+L28	78	39	segmentation
+L28	79	95	segmentation
+L28	85	65	segmentation
+L28	86	63	digit shape
+L28	87	95	segmentation
+L28	89	?	undecidable
+L28	90	50	digit shape
+L28	94	63	segmentation
+L28	95	50	segmentation
+L28	96	05	segmentation
+L28	97	95	segmentation
+L28	98	99	segmentation
+L28	101	773	segmentation
+L29	6	12	segmentation
+L29	7	39	segmentation
+L29	8	?	undecidable
+L29	9	23	digit shape
+L29	10	73	digit shape
+L29	11	95	segmentation
+L29	12	57	segmentation
+L29	16	12	segmentation
+L29	17	73	segmentation
+L29	23	3	segmentation
+L29	31	27	segmentation
+L29	32	73	segmentation
+L29	34	'46	dot present
+L29	40	73	segmentation
+L29	41	65	segmentation
+L29	42	74	digit shape
+L29	43	75	digit shape
+L29	44	90	segmentation
+L29	45	?	undecidable
+L29	47	102	segmentation
+L29	48	73	segmentation
+L29	49	27	segmentation
+L29	50	05	segmentation
+L29	51	63	segmentation
+L29	53	46	segmentation
+L29	54	73	segmentation
+L29	55	23	segmentation
+L29	56	70	segmentation
+L29	57	19	segmentation
+L29	58	19	digit shape
+L29	59	?	undecidable
+L29	60	7	segmentation
+L29	61	?	undecidable
+L29	65	20	segmentation
+L29	70	7	segmentation
+L29	71	75	segmentation
+L29	77	122	segmentation
+L29	78	3	segmentation
+L29	79	04	segmentation
+L29	81	'46	dot present
+L29	89	7304	segmentation
+L29	90	65	segmentation
+L29	91	3	segmentation
+L29	92	2	segmentation
+L29	93	50	segmentation
+L29	94	5	segmentation
+L30	8	?	undecidable
+L30	9	42	segmentation
+L30	10	25	segmentation
+L30	15	?	undecidable
+L30	20	?	undecidable
+L30	21	25	segmentation
+L30	30	773	segmentation
+L30	31	1210	segmentation
+L30	32	77	segmentation
+L30	33	05	segmentation
+L30	34	2	segmentation
+L30	35	?	undecidable
+L30	36	23	segmentation
+L30	37	93	segmentation
+L30	40	75	digit shape
+L30	43	05	segmentation
+L30	44	16	digit shape
+L30	45	51	segmentation
+L30	46	67	segmentation
+L30	47	70	segmentation
+L30	48	05	segmentation
+L30	50	2	segmentation
+L30	55	05	segmentation
+L30	56	'34	dot present
+L30	57	?	undecidable
+L30	59	05	segmentation
+L30	60	73	segmentation
+L30	66	05	segmentation
+L30	67	?	undecidable
+L30	68	23	segmentation
+L30	69	70	segmentation
+L30	71	05	segmentation
+L31	12	3	segmentation
+L31	14	1	segmentation
+L31	15	50	segmentation
+L31	16	25	segmentation
+L31	17	10	segmentation
+L31	18	125	segmentation
+L31	19	73	digit shape
+L31	23	25	segmentation
+L31	25	65	digit shape
+L31	29	95	segmentation
+L31	30	05	segmentation
+L31	31	23	segmentation
+L31	32	5	segmentation
+L31	34	773	segmentation
+L31	35	95	segmentation
+L31	36	77	digit shape
+L31	38	25	segmentation
+L31	40	12	segmentation
+L31	41	05	segmentation
+L31	43	42	segmentation
+L31	48	3	segmentation
+L31	49	93	segmentation
+L31	51	75	segmentation
+L31	52	27	segmentation
+L31	54	05	segmentation
+L31	55	95	segmentation
+L31	56	7	segmentation
+L31	57	125	segmentation
+L31	67	'46	segmentation
+L31	68	63	segmentation
+L31	69	27	segmentation
+L31	70	73	segmentation
+L31	71	93	segmentation
+L31	72	?	undecidable
+L31	74	23	digit shape
+L31	80	4	segmentation
+L32	1	05	segmentation
+L32	3	12	segmentation
+L32	7	05	segmentation
+L32	8	30	segmentation
+L32	13	125	segmentation
+L32	14	16	segmentation
+L32	15	05	segmentation
+L32	16	30	segmentation
+L32	17	?	undecidable
+L32	27	277	segmentation
+L32	36	23	segmentation
+L32	37	05	segmentation
+L32	38	3	segmentation
+L32	39	95	segmentation
+L32	40	4	segmentation
+L32	43	105	segmentation
+L32	44	10	digit shape
+L32	48	'46	dot present
+L32	49	?	undecidable
+L32	50	25	digit shape
+L32	51	90	segmentation
+L32	55	?	undecidable
+L32	56	23	segmentation
+L33	2	323	segmentation
+L33	3	1	segmentation
+L33	7	23	segmentation
+L33	8	73	segmentation
+L33	12	3	segmentation
+L33	25	65	segmentation
+L33	26	?	undecidable
+L33	27	23	digit shape
+L33	28	?	undecidable
+L33	30	0770	segmentation
+L33	31	50	segmentation
+L33	32	?	undecidable
+L33	33	?	undecidable
+L33	34	?	undecidable
+L33	35	73	segmentation
+L33	46	7	segmentation
+L33	47	02	segmentation
+L33	48	70	segmentation
+L33	49	23	digit shape
+L33	50	239	segmentation
+L33	51	73	segmentation
+L33	54	?	undecidable
+L33	55	12	segmentation
+L33	58	17	segmentation
+L33	59	5	segmentation
+L33	60	23	segmentation
+L33	61	25	segmentation
+L34	13	?	undecidable
+L34	15	?	undecidable
+L34	16	?	undecidable
+L34	21	?	undecidable
+L34	24	77	segmentation
+L34	25	26	segmentation
+L34	28	23	digit shape
+L34	36	09	segmentation
+L34	37	3	segmentation
+L34	43	27	segmentation
+L34	44	77	segmentation
+L34	45	05	segmentation
+L34	46	05	segmentation
+L34	55	51	segmentation
+L34	56	19	segmentation
+L34	57	95	segmentation
+L34	60	27	segmentation
+L34	61	77	segmentation
+L34	63	3	segmentation
+L34	64	70	segmentation
+L35	5	3	segmentation
+L35	6	25	segmentation
+L35	11	02	segmentation
+L35	12	23	segmentation
+L35	18	3	segmentation
+L35	21	05	segmentation
+L35	22	65	digit shape
+L35	24	3	segmentation
+L35	25	63	digit shape
+L35	26	73	digit shape
+L35	30	?	undecidable
+L35	33	5	segmentation
+L35	34	05	segmentation
+L35	36	63	segmentation
+L35	37	95	segmentation
+L35	38	231	segmentation
+L35	39	25	segmentation
+L35	40	05	segmentation
+L35	41	03	segmentation
+L35	49	05	segmentation
+L35	50	50	digit shape
+L35	52	05	segmentation
+L35	54	50	digit shape
+L35	55	95	segmentation
+L35	57	05	segmentation
+L35	58	99	segmentation
+L35	64	50	digit shape
+L35	67	112	segmentation
+L35	68	3	segmentation
+L35	70	70	segmentation
+L35	71	40	segmentation
+L35	72	23	segmentation
+L36	2	50	segmentation
+L36	3	23	segmentation
+L36	4	23	segmentation
+L36	5	14	segmentation
+L36	8	05	segmentation
+L36	20	05	segmentation
+L36	23	25	segmentation
+L36	25	7	segmentation
+L36	26	?	undecidable
+L36	27	19	digit shape
+L36	28	94	segmentation
+L36	31	73	segmentation
+L36	32	29	segmentation
+L36	41	?	undecidable
+L36	42	85	segmentation
+L36	46	03	segmentation
+L36	47	03	segmentation
+L36	48	1	segmentation
+L36	49	4	segmentation
+L36	50	?	undecidable
+L36	51	2	segmentation
+L36	52	373	segmentation
+L36	55	85	segmentation
+L36	58	5	segmentation

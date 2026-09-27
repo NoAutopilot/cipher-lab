@@ -215,3 +215,111 @@ key carrying 1-digit signs.
 Requests this job: 0 new gallica.bnf.fr fetches (crops cut from the already-cached region source). Subagents: 4
 (two blind-pass attempts on the too-wide crops, declined; two blind passes on the corrected crops, both
 completed). No credentials, no AskUserQuestion, no novelty wording, owner not named.
+
+## MONT-4715B (27 Sept 2026)
+
+Per `.claude/briefs/runs/2026-09-27-parent-ytbiz-mont-4715b.md`. Targeted reconciliation of MONT-4715's
+`witness/disagreements.tsv` (1,037 rows) against the source crops, then the calibration re-run unchanged.
+
+**U0, `tools/decode_witness.py` fix.** MONT-4715 flagged `_numeral_lookup`'s `nNN` convention: it matched
+the key's `sign` column by substring in file order (`if digits in r["sign"]`), so a 1-digit sign that is a
+substring of an earlier 2-digit sign resolved to the wrong row (this key's row 22, sign `1` -> r, sits after
+row 3, sign `10` -> b; `n1` would silently resolve to `b`). Fixed to an exact match on the stripped sign cell
+(`r["sign"].strip() == digits`), with the docstring corrected to match. Added a regression case to
+`tools/tests/test_decode_witness.py` reproducing this key's own row-22/row-3 shape (`n1` -> r, not b) and
+changed the pre-existing `n85` fixture from a sign of `digits85` (which only worked because the old code did
+a substring match) to a real sign of `85`, so that test now exercises the corrected exact-match behaviour
+instead of accidentally depending on the bug. `python3 tools/tests/test_decode_witness.py`: ALL PASS (22
+checks). `scripts/signs_to_witness.py` was **not** folded into `tools/decode_witness.py`: the script does
+more than the nNN numeral lookup alone (the glyph map for the two special non-numeric signs, the dotted-code
+marker, `[PLAIN:...]` pass-through, the leading-zero fallback, and the reconcile-output-to-signs-file column
+mapping) -- not a one-function change, so it stays a target-local script per the brief's own fallback
+instruction; it already did its own exact-match lookup independently of this tool, so it was unaffected by
+either the bug or the fix. `witness_signs.tsv` (v1, MONT-4715's own signs file) is built entirely through
+`scripts/signs_to_witness.py`, not through `decode_witness.py`'s `nNN` convention, so this fix does not
+change MONT-4715's own numbers by itself -- confirmed by running the new `merge_settled_signs.py` (below)
+with an empty override file and diffing its `key_row` column byte-for-byte against `witness_signs.tsv`: zero
+differences.
+
+**U1-U3 reconciliation.** `witness/disagreements.tsv`'s 1,037 rows were split into three contiguous line
+ranges by row count (not line count, so the three calls are balanced): L02-L14 (350 rows), L15-L25 (359
+rows), L26-L36 (328 rows). Each of three parallel Sonnet subagents (general-purpose) was given only its
+range's `f81rzoom_L*_s*.jpg` crops (the zoomed segments MONT-4715 found legible, never the wide or full-leaf
+crops), the disputed (line, col, pass-A reading, pass-B reading, flagged) rows for its range, and a shared
+reference document (key sign inventory, the dotted-word-code convention, how "col" numbers map to the five
+crop segments per line, and the required output format) -- never told which pass to prefer. Each returned
+one row per input row: a chosen sign (or `?` if genuinely undecidable from the image) and a one-word reason
+(`digit shape` / `dot present` / `segmentation` / `undecidable`).
+
+Results, verified row-for-row against each range's own disagreement list before merging (no gaps, no
+duplicates, no extra rows):
+
+| range | rows | settled | left `?` |
+|---|---|---|---|
+| L02-L14 | 350 | 280 | 70 |
+| L15-L25 | 359 | 292 | 67 |
+| L26-L36 | 328 | 287 | 41 |
+| **total** | **1037** | **859** | **178** |
+
+All three workers flagged the same shape of hard case independently (same-length homophone-pair digit
+disputes with no clean pixel tiebreak, e.g. 63/65, 23/24, 70/20) and left those `?` rather than guess, the
+same caution the original two blind passes showed.
+
+**U4 merge.** `scripts/merge_settled_signs.py` (new, target-local, mirrors `signs_to_witness.py`'s exact-match
+sign lookup and glyph map) takes `witness/ciphertext_draft.tsv` (the position of record for every position
+the two original passes already agreed on) plus the three workers' combined output
+(`witness/settled_disagreements.tsv`) and the key, and writes `witness/witness_signs_v2.tsv` (v1 kept).
+Sanity check: re-run with an empty override file reproduces `witness_signs.tsv`'s `key_row` column exactly
+(0 differences over 2524 rows) -- confirms the reimplementation, not just the new inputs, is correct.
+
+Of the 859 newly-settled rows: 533 resolved to a digit string matching one of this key's 35 letter-homophone
+signs, 20 resolved to a confirmed dotted word-code, and 306 are a definite crop reading that still does not
+match any row in this (letter-only) key -- expected, since bnf4715.htm's own printed alignment shows roughly a
+third of this letter's tokens are the undocumented word-code layer, and a definite reading of a word-code with
+no visible dot, or of a multi-digit group that is itself a real sign outside the 35-row letter table, is not an
+error to chase further here. `witness_signs_v2.tsv`'s own `key_row='?'` count is 727 of 2524 (306 settled but
+unmatched, 178 settled `?` (undecidable), 221 unresolved from positions the two original passes already
+agreed on, 20 dotted, 2 illegible), down from v1's 760.
+
+**New effective pass agreement.** Counting a position as settled once either the original two passes agreed
+on it or one of U1-U3's reconcilers gave a definite (non-`?`) reading: **2,346/2,524 = 92.9%**, up from the
+original two-pass raw agreement of 1,487/2,524 = 58.9%. The remaining 178 positions (7.1%) are genuinely
+undecidable from the available crops per all three reconcilers, not unattempted.
+
+**Calibration re-run, unchanged from MONT-4715 (`tools/decode_witness.py --key keys/key_vieuville_nevers.tsv
+--signs witness/witness_signs_v2.tsv --plain witness/witness_opening_plain.tsv --shuffles 20 --seed 1
+--key-rows-out witness/key_rows_calibration_v2.tsv`):**
+
+```
+full passage: real key 0.4773 (557/1167 aligned letters); 20 shuffled keys mean 0.4240 sd 0.0337 min 0.3505 max 0.4841; z 1.58; rank 2 of 21
+```
+
+| | agreement (aligned) | shuffled mean | sd | z | n |
+|---|---|---|---|---|---|
+| MONT-4715 (v1) | 0.4636 (541/1167) | 0.4227 | 0.0334 | 1.22 | 1167 |
+| MONT-4715B (v2) | 0.4773 (557/1167) | 0.4240 | 0.0337 | 1.58 | 1167 |
+
+**Pre-registered gate (z >= 2, n >= 30): still not met.** n=1167 remains well powered. Real agreement rose
+(0.4636 -> 0.4773) and z improved (1.22 -> 1.58) with the pass-agreement gain (58.9% -> 92.9%), moving in the
+expected direction, but the targeted crop reconciliation -- a genuinely different instrument from a third
+blind pass, per CLAUDE.md rule 3's repeated-attempt paragraph -- still does not clear the bar. This is **not**
+a negative on the key (the real key still beats the shuffled mean and ranks 2nd of 21, the same as before):
+**key_vieuville_nevers untestable-by-this-transcription on f.81r at 92.9 pct pass agreement.**
+
+No decode of L18-L36 or `print_check.py` this job -- the brief's "if it fails again" branch applies, not the
+"if it passes" branch. Status stays `open`. No reading offered to a verifier.
+
+**Named next step:** not a third pass at f.81r (the transcription is now settled to 92.9% and the shortfall
+persists) -- either (a) f.81v (unexamined this session, per INTAKE-4715's own note that the letter's full
+extent beyond f.81r is not established), which would add fresh aligned material without depending on
+resolving the same 178 genuinely ambiguous positions on f.81r; or (b) a second witness letter in the same
+Vieuville-Nevers cipher, if one exists -- nevers.htm names the cipher for "another article" but this job did
+not check whether a second letter using this same key is cited there (the fr.3633 f.22 dotted-code witness
+named in MONT-4715's own caveat section is a *different* cipher's sibling letter for the word-code layer, not
+a second Vieuville-Nevers witness -- flagged here so a future worker does not conflate the two). Both are
+material steps, not a further tuning of the same transcription-accuracy knob.
+
+Requests this job: 0 new network fetches (all three subagents worked from the already-cached crop images on
+disk; no gallica.bnf.fr or cryptiana.web.fc2.com requests). Subagents: 3 (the U1-U3 reconciliation calls, run
+in parallel). No credentials, no AskUserQuestion, no novelty wording, owner not named. Images folder
+unchanged at 25 MB (no new images fetched or cut).
