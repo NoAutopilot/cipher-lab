@@ -1,0 +1,118 @@
+line	segment	pos	code	shape	conf
+L01	s1	1	c	numeral 4 with horizontal cross-tick	H
+L01	s1	2	o	numeral 7 with hook	H
+L01	s1	3	f	cursive loop open at upper right	M
+L01	s1	4	d1	large zigzag, three angular strokes ("3")	H
+L01	s1	5	u	loop with tail curling back up from base	M
+L01	s1	6	n2	vertical stem, oval loop at base, crossed by short tick	M
+L01	s1	7	o	numeral 7 hook (tail continues the crossing tick)	M
+L01	s1	8	m	v-shape with long diagonal hooked tail below line	H
+L01	s1	9	p	numeral 9, loop with descending tail	H
+L01	s1	10	n2	stem+oval loop at base with crossing tick, repeat of #6	M
+L01	s1	11	s	tall ascender curving into a rounded bowl	L
+L01	s1	12	o	numeral 7 hook	H
+L01	s1	13	s	tall hook, small loop lead-in then descender	M
+L01	s1	14	N2	capital Pi, two legs plus top bar	M
+L01	s1	15	N2	capital Pi, second immediately after	M
+L01	s2	1	c	numeral 4 with horizontal cross-tick	H
+L01	s2	2	o	numeral 7 with hook	H
+L01	s2	3	f	cursive loop open at upper right	M
+L01	s2	4	d1	large zigzag ("3")	H
+L01	s2	5	u	loop with tail curling back up from base	M
+L01	s2	6	n2	stem+oval loop at base, crossed by tick	M
+L01	s2	7	o	numeral 7 hook	M
+L01	s2	8	m	v-shape with long diagonal hooked tail	H
+L01	s2	9	p	numeral 9, loop with tail	H
+L01	s2	10	n2	stem+oval loop at base with tick, repeat	M
+L01	s2	11	s	tall ascender into rounded bowl	L
+L01	s2	12	o	numeral 7 hook	H
+L01	s2	13	s	tall hook, loop lead-in then descender	M
+L01	s2	14	N2	capital Pi	M
+L01	s2	15	N2	capital Pi, second	M
+L01	s2	16	N10	omega-like double hump with a bar through it	M
+L01	s2	17	n1	numeral 6	H
+L01	s2	18	p	numeral 9	H
+L01	s2	19	e	plain circle	H
+L01	s2	20	c	numeral 4 with cross-tick	H
+L02	s1	1	?	slanted X-cross, two crossing strokes	L
+L02	s1	2	N10	omega-like double hump with bar	M
+L02	s1	3	?	slanted X-cross, second occurrence	L
+L02	s1	4	p	numeral 9 with tail	H
+L02	s1	5	s	tall ascender with long integral-like curl	M
+L02	s1	6	N7	small figure-eight / infinity shape	M
+L02	s1	7	r	plain c-hook, no dots	M
+L02	s1	8	r	plain c-hook, no dots, close after	M
+L02	s1	9	t1	lowercase-k shape	M
+L02	s1	10	?	two small ovals stacked, digit-8-like	L
+L02	s1	11	l1	4-shape with a diagonal flag off the top	L
+L02	s1	12	e	plain circle	M
+L02	s1	13	c	numeral shape, could be W3 (2 fused with 4)	M
+L02	s1	14	d1	large zigzag ("3")	H
+L02	s1	15	o	numeral 7 hook	H
+L02	s1	16	?	angular zigzag joined to flat-topped hook	L
+L02	s1	17	?	small circle topped by two dots or short bar	L
+L02	s2	18	d1	large zigzag ("3")	H
+L02	s2	19	N10	omega-like double hump with bar	M
+L02	s2	20	a	small loop on a long vertical descender, phi-like	H
+L02	s2	21	k	caret / inverted V	H
+L02	s2	22	c	numeral 4 with cross-tick	H
+L03	s1	1	y	inverted T, bar over short stem	M
+L03	s1	2	p	numeral 9	H
+L03	s1	3	s	tall ascender with loop	M
+L03	s1	4	k	caret	M
+L03	s1	5	N10	omega-like double hump	M
+L03	s1	6	f	open loop with small diagonal tick above	L
+L03	s1	7	o	numeral 7	H
+L03	s1	8	?	numeral-2-like shape, could be W3	L
+L03	s1	9	k	caret	M
+L03	s1	10	p	numeral 9 with small dot	M
+L03	s1	11	f	open loop with tall ascender/flag above	L
+L03	s1	12	k	caret/small triangle	L
+L03	s1	13	d1	large zigzag ("3")	H
+L03	s1	14	N10	omega-like shape	M
+L03	s1	15	?	small circle with a dot above, umlaut-like	L
+L03	s1	16	?	small rotated square / diamond	L
+L03	s1	17	o	numeral 7	H
+L03	s1	18	r	plain c-hook loop	M
+L03	s1	19	o	numeral 7, second	M
+L03	s1	20	r	plain c-hook loop, second	M
+L03	s1	21	m	y-shape tail, partial at crop edge	L
+L03	s2	16	N10	omega-like double hump	M
+L03	s2	17	o	numeral 7	H
+L03	s2	18	r	c-hook loop	M
+L03	s2	19	?	numeral-2-like shape	L
+L03	s2	20	?	loop shape, ambiguous r or d	L
+L03	s2	21	k	caret	M
+L03	s2	22	s	tall ascender/bowl	L
+L03	s2	23	p	numeral 9	M
+L03	s2	24	c	numeral 4 with cross-tick	H
+L03	s2	25	N10	omega-like shape, partial at edge	L
+L04	s1	1	N2	capital Pi	M
+L04	s1	2	k	caret	M
+L04	s1	3	r	hook shape	L
+L04	s1	4	d2	small compact zigzag	L
+L04	s1	5	d1	large zigzag ("3")	M
+L04	s1	6	o	numeral 7	H
+L04	s1	7	p	numeral 9 (or q with dot above)	H
+L04	s1	8	N10	omega-like double hump	M
+L04	s1	9	c	numeral 4	H
+L04	s1	10	m	y-shape/loop tail	L
+L04	s1	11	N7	figure-eight shape	L
+L04	s1	12	?	numeral-2-like shape	L
+L04	s1	13	k	caret	M
+L04	s1	14	o	numeral 7	H
+L04	s1	15	?	D-shaped loop, flat left side	L
+L04	s1	16	o	numeral 7, second	M
+L04	s1	17	p	numeral 9	M
+L04	s1	18	N8	capital E shape	L
+L04	s2	14	N8	capital E shape	L
+L04	s2	15	?	x-cross shape	L
+L04	s2	16	r	hook shape	L
+L04	s2	17	N10	omega-like double hump	M
+L04	s2	18	d1	large zigzag ("3")	M
+L04	s2	19	N2	capital Pi-like double bar shape	L
+L04	s2	20	c	numeral-2-like shape	L
+L04	s2	21	e	plain circle	M
+L04	s2	22	N2	capital Pi	L
+L04	s2	23	r	hook shape	L
+L04	s2	24	p	numeral 9	M
