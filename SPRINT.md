@@ -44,3 +44,7 @@ more accounts join.
 | 27 Sept 22:30 | espagnol142-mercy-1648 | 1 done (H1: the anneal's target sits inside an exact-frequency-profile control band, so the earlier gap was the profile, not decryptability; tools/homophonic_anneal.py --profile added) | 3 | 9 / 1 / 0 | 0 |
 | 27 Sept 22:30 | fr4715-f61-mayenne-1592 | 1 done (H1: class map 24/55 vs shuffled max 19/55, unstable between folds), H11 null-aware refit fired 22:27 | 1 | 11 / 1 / 0 | 0 |
 | 27 Sept 22:30 | spinelli-beinecke-c1515 | 1 done (H1: the two remaining canvases fetched; cipher is about 9 lines on p.1 plus two lines on p.2, about 55 signs; address leaf clean), next step fired 22:27 | 0.5 | 10 / 1 / 0 | 0 |
+| 27 Sept 22:45 | armstrong-madison-1808 | 2 done (H1 Codex claim void; H7 Livingston 1803 key frames fetched, hash-verified, not the target key by value range, control-backed); next H12 reel-9 table screen (account 2 runner, hourly :10) | 2.5 | 13 / 2 / 0 | 0 |
+| 27 Sept 22:45 | espagnol142-mercy-1648 | 1 done (H1 exact-profile control: no decryptability beyond the profile); next on account 2's :10 firing | 3 | 9 / 1 / 0 | 0 |
+| 27 Sept 22:45 | fr4715-f61-mayenne-1592 | 1 done; continuous runner restarts 22:45 with H11 null-aware refit | 1 | 11 / 1 / 0 | 0 |
+| 27 Sept 22:45 | spinelli-beinecke-c1515 | 1 done; continuous runner restarts 22:55 (locate the known phrase) | 0.5 | 10 / 1 / 0 | 0 |
