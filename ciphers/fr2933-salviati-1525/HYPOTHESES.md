@@ -192,3 +192,14 @@ row above is re-labelled **on the old split**: neither refuted nor confirmed on 
 251 types, 327 runs, 1,121 plain boxes; SALV2-J2, this target's NOTES.md). No row above is edited (append-only,
 CLAUDE.md rule 3/7); this section is the re-label. New runs on the corrected split are appended below, dated after
 this line.
+
+## cm rerun, corrected split (SALV2-J2, 27 Sept 2026)
+
+Control first (rule 3, family_run.py's own discipline): both levels FAIL their own gate on the corrected split's
+larger key inventory (K=251, up from 223 -- 8 individually-unread `?` boxes now hapax types, 7 more real code+mark
+combinations job 1's transcription surfaced), so the target step is not run at either level.
+
+| date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
+|---|---|---|---|---|---|---|---|---|
+| 27 Sept 2026 03:02 | code+mark, plain trigram solver, measured mix, corrected split | N=2932 K=251 restarts=24 CM_ERR=0.07 corpus=it16 | 1-3 | token acc 0.363 (0.284-0.439); score/symbol -2.543 to -2.548 (true plaintext -2.302) | not run (CONTROL BELOW GATE) | - | no (gate 0.6 on 2 of 3; 0 of 3 met) | SALV2-J2 (Sonnet); the same setting passed 2 of 3 (0.794, 0.608) on the old split's K=223 (25 Sept 21:35 row) -- the corrected split's +28-type larger key inventory (K=251) is the difference |
+| 27 Sept 2026 03:02 | code+mark, plain trigram solver, measured mix, corrected split | N=2932 K=251 restarts=24 CM_ERR=0.08 corpus=it16 | 1-3 | token acc 0.529 (0.247-0.859); score/symbol -2.362 to -2.591 (true plaintext -2.302) | not run (CONTROL BELOW GATE) | - | no (gate 0.6 on 2 of 3; 1 of 3 met, seed 2 only) | SALV2-J2 (Sonnet); required second level per the job brief (job 1's own +job2's recomputed ~6.8-6.9% estimate brackets both 0.07 and 0.08); still fails 2-of-3 -- CONTROL BELOW GATE at both settings this job could run, letter-per-type cm on the corrected split is a non-test, not a design exclusion, until the control passes its own gate (rule 3) |

@@ -2917,3 +2917,61 @@ cell (rebuild counts, relabel, cm rerun in progress) and the Last-touched cell m
 `status.json`'s near entry for this target updated to agree (title, next, lane, touched). `python3
 tools/near_check.py`: `ok: 12 NEAR.md rows, 12 status.json near entries, in step, none closed-negative, none
 stale`. Status stays **partial** (rule 5; no reading).
+
+**(c) CM RERUN, rule 3, control first.** Old target outputs moved aside first (git mv, kept, not overwritten):
+`control/codemark_target_cm_all_r24_s{1,2,3}.json` -> `..._s{1,2,3}_oldsplit.json` (seeds 4-6 from CM3's bracket-
+top run are unrenamed, out of this job's named scope -- they still describe the pre-27-Sept split under their
+original names, flagged here for whoever next touches them).
+
+Commands: `CM_RESTARTS=24 CM_ERR=0.07 python3 control/codemark_curve.py control cm 2932 SEED --leaves all` for SEED
+1 2 3, then the same with `CM_ERR=0.08`. K/hapax-share check (brief step 1), not exposed as a percentage by the
+script -- computed with `python3 -c "import sys; sys.argv=['x','--leaves','all']; import codemark_curve as cc;
+sg=[x for x in cc.rows() if x['code']!='_']; types=[cc.sign_type(x) for x in sg]; ..."` (imports the module with
+`--leaves all` already in `sys.argv` so its module-level `LEAVES` picks up all eight leaves, then calls the same
+`rows()`/`sign_type()` the control build uses): target N=2932, K=251 (matches `key_K`=251 in every control row
+above exactly, since `build()`'s `units = Counter(sign_type(x) for x in sg)` reads the identical
+`ciphertext_<leaf>.tsv` rows through the identical `sign_type()` build_spec.py's own rebuild used -- the control's
+key allotment and the target's own type inventory are the same computation, not merely matched by construction);
+8 of 251 types are hapax (3.2% of types, 8/2932 = 0.27% of tokens) -- identical on the control side by the same
+argument, so no separate control-side hapax count is possible to differ.
+
+| CM_ERR | seed | token acc | score/symbol (true plaintext -2.302) |
+|---|---|---|---|
+| 0.07 | 1 | 43.9% | -2.548 |
+| 0.07 | 2 | 36.5% | -2.546 |
+| 0.07 | 3 | 28.4% | -2.543 |
+| 0.08 | 1 | 50.4% | -2.521 |
+| 0.08 | 2 | 85.9% | -2.362 |
+| 0.08 | 3 | 24.7% | -2.591 |
+
+**Gate (2 of 3 seeds >= 0.60 token accuracy, the 21:35 row's gate): NOT MET at either level** -- 0 of 3 at 0.07, 1
+of 3 (seed 2 only) at 0.08. Per the brief and CLAUDE.md rule 3 (control-first, family_run.py's own discipline):
+**CONTROL BELOW GATE at both settings this job could run; the target step (3) is not run, no target files
+written, no judge run.**
+
+**Why the corrected split's control is harder than the old split's** (old split, same CM_ERR=0.07 setting, HYPOTHESES
+25 Sept 21:35 row: 2 of 3 >= 0.6, 0.794/0.608/0.472, K=223): the rebuild raises K from 223 to 251 (+12.6%) for a
+similar N (2820 -> 2932, +4%) -- a larger, sparser key inventory (8 of the 251 types are true hapaxes, occurring
+once each by construction) gives the homophonic annealer more parameters to place correctly at the same 24-restart
+budget, and CM_ERR's own noise (deletions/insertions/substitutions) compounds on top of that. This is not a bug in
+the rebuild (`key_K` matches the target's own rebuilt K by construction, the correct matched-design control per
+rule 3) -- it is a real consequence of the hapax convention: 8 individually-unread boxes correctly cost 8 key slots
+instead of 1, and that cost shows up as reduced solvability of the control itself, before any question about the
+target's own readability.
+
+**Verdict:** the cm family (letter-per-type, one code+mark type per plaintext letter) is **untested-by-this-control
+at N=2932/K=251, CM_ERR 0.07 and 0.08** (CLAUDE.md rule 3's repeated-attempt paragraph, non-test shape, not a
+design exclusion): the control cannot reliably solve its own matched design at either error level this job could
+run within its box, so nothing can be said about the target under this design at this K until either the control
+passes (more restarts, a different search schedule) or the design itself is revisited (e.g. whether the 8 hapax
+types should be pooled into the search differently, since a homophone with true frequency 1 is close to
+unrecoverable by a frequency-driven annealer regardless of noise level). Status stays **partial** (no reading; NEAR.md
+updated below).
+
+**Next:** for LANE SALV2 -- the cm family needs either more restarts (the control, not the target, is the blocker:
+try CM_RESTARTS=48-96 on the CM_ERR=0.07 control before spending anything on the target) or a design change that
+accounts for the 8 hapax types' near-unrecoverable frequency-1 status (e.g. exclude them from the pooled
+key-recovery objective and score them separately, or merge them back to a bounded small number of "unread" classes
+by rough shape rather than one-per-box, trading the fabricated-symbol risk this job's own hapax fix was written to
+avoid against the search-difficulty cost it turns out to add) before any further cm target run on the corrected
+split. Never write "reading ready".
