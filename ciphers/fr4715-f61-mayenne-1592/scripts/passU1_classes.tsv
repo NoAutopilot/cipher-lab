@@ -1,0 +1,18 @@
+line	pos	sign	conf	segment	x_px	run	note
+L02	1	LL	m	1	420	1	ll-shaped pair of stems at line start; could be handwritten "Il", coded as cipher because the next two signs follow at once with no word space
+L02	2	PHI	h	1	715	1	two small loops on a long descending stem, clearly phi-like
+L02	3	OTHER	h	1	970	1	two short vertical stems joined by a heavy top bar and a heavy bottom bar, like Roman numeral II; no loop, no 4, no triangle (nearest is 4PI, but it is not 4 over pi)
+L04	1	LOOPBAR	h	2	1593	1	single small loop on a long stem, with a double horizontal bar across the foot (two strokes, the lower one longer and extending left); stands alone between words
+L10	1	EBR	h	3	1188	1	square bracket open to the right with top, middle and bottom horizontals (squared E)
+L10	2	CA	h	3	1431	1	cursive a
+L10	3	PHI	h	3	1674	1	loops on a long slanted stem
+L10	4	VBAR_A	h	3	1930	1	closed down-pointing triangle under a top bar; no second bar
+L10	5	PHI	h	3	2200	1	loops on a long stem
+L10	6	PHI	m	4	80	1	cut at the seg3/seg4 boundary (left part near seg3 x~2420), counted once; loop on a stem with a second loop to the right ("qo"-like), phi-like
+L10	7	VBAR_B	h	4	338	1	down-pointing triangle with a top bar and a second horizontal bar across its bottom point
+L10	8	INF	h	4	675	1	figure-8 or infinity lying on a long horizontal bar
+L10	9	CA	h	4	986	1	cursive a
+L10	10	C6	h	4	1229	1	digit-6 shape
+L10	11	PHI	m	4	1499	1	loop plus a second loop to the right on a thick long stem ("qo"-like), the same form as pos 6; could be DBL-like but the loops sit side by side, not one above the other
+L10	12	CA	h	4	1823	1	cursive a
+L10	13	C6	h	4	2086	1	digit-6 shape, heavy ink; last sign on the line

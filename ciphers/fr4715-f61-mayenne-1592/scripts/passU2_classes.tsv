@@ -1,0 +1,18 @@
+line	pos	sign	conf	segment	x_px	note
+L02	1	PHI	h	1	715	loop(s) on a long stem that runs down past the line. It follows "ll"/"Il", which I read as handwriting ("Il"), not as the LL code.
+L02	2	OTHER	m	1	970	Two thick vertical stems between a heavy top bar and a heavy bottom bar (Roman "II" or pi with a double bar). No 4 above it, so not 4PI.
+L04	1	LOOPBAR	m	2	1600	A small loop on a long stem, with two horizontal crossbars low on the stem that reach into the top of segment 3. Close to PHI, but the loop is single and plain.
+L04	2	OTHER	l	3	1917	An "S"/"8"-like loop joined to a "b"/"d" form, written after "Come". It may be a handwriting abbreviation (e.g. S.M.) rather than cipher.
+L10	1	EBR	m	3	1188	An open-right bracket, with a long bottom bar and a shorter top bar.
+L10	2	CA	h	3	1431	Cursive a.
+L10	3	PHI	h	3	1688	Loops on a long stem.
+L10	4	VBAR_A	h	3	1917	Closed down-pointing triangle with a top bar and no second bar.
+L10	5	PHI	h	3	2200	Loops on a long stem.
+L10	6	PHI	m	4	81	Cut at the boundary: its left edge is at the end of segment 3 (about x 2415) and most of the sign is at the start of segment 4. Counted once. Loops on a long stem.
+L10	7	VBAR_B	h	4	351	Down-pointing triangle with a top bar and a second bar crossing the bottom point.
+L10	8	INF	h	4	675	Infinity or figure-8 on a horizontal bar.
+L10	9	CA	h	4	986	Cursive a.
+L10	10	C6	h	4	1229	Digit-6 shape.
+L10	11	PHI	h	4	1499	Loops on a thick, long stem.
+L10	12	CA	h	4	1809	Cursive a.
+L10	13	C6	h	4	2093	Digit-6 shape.

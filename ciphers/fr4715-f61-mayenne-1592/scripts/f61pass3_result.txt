@@ -1,0 +1,16 @@
+reconcile_passes.py summary: lines 3  signs A 17  B 17  agree 16/18 = 88.9%  (nw) | disagreement columns 2; draft signs 18 | agreed-H 11  agreed-uncertain 5  disagree 2
+  PHI	A signs 5	B same 5	agree	B codes: PHI:5
+  C43	A signs 0	B same 0	DISAGREE	B codes: 
+  4TRI	A signs 0	B same 0	DISAGREE	B codes: 
+  VBAR	A signs 2	B same 2	agree	B codes: VBAR:2
+  DBL	A signs 0	B same 0	DISAGREE	B codes: 
+  INF	A signs 1	B same 1	agree	B codes: INF:1
+  ZHOOK	A signs 0	B same 0	DISAGREE	B codes: 
+  EBR	A signs 1	B same 1	agree	B codes: EBR:1
+  BETA	A signs 0	B same 0	DISAGREE	B codes: 
+  4PI	A signs 0	B same 0	DISAGREE	B codes: 
+overall aligned columns 18, identical code 16 = 0.889 (non-gating)
+VBAR split (non-gating): VBAR_A->VBAR_A:1 VBAR_B->VBAR_B:1
+null/other classes (non-gating): LL: (gap):1; OTHER: OTHER:1 (gap):1; LOOPBAR: LOOPBAR:1; CA: CA:3; C6: C6:2
+GATE H17 (L10: at most 2 of its aligned columns differ): 0 differ of 13 -> PASS; per column: EBR=EBR CA=CA PHI=PHI VBAR_A=VBAR_A PHI=PHI PHI=PHI VBAR_B=VBAR_B INF=INF CA=CA C6=C6 PHI=PHI CA=CA C6=C6
+10-class figure, reported only: 4/10

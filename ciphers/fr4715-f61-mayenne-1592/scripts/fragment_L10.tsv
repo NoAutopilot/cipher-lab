@@ -1,0 +1,16 @@
+# f.61r L10, after the clear words 'pas paresseux si' (both passes), run ends the line. 27 Sept 2026, campaign H16-H17.
+# 8 letters, all S/M; 5 nulls. Resolved fragment: letresur
+pos	class	cell	letter	grade	note
+1	EBR	l/y	l	S/M	cell S (controlled map), letter within the pair M (judge)
+2	CA	-		S	null (dash share > 0.5 on the known lines)
+3	PHI	e/r	e	S/M	cell S (controlled map), letter within the pair M (judge)
+4	VBAR_A	g/t	t	S/M	cell S (controlled map), letter within the pair M (judge)
+5	PHI	e/r	r	S/M	cell S (controlled map), letter within the pair M (judge)
+6	PHI	e/r	e	S/M	cell S (controlled map), letter within the pair M (judge)
+7	VBAR_B	f/s	s	S/M	cell S (controlled map), letter within the pair M (judge)
+8	INF	h/u	u	S/M	cell S (controlled map), letter within the pair M (judge)
+9	CA	-		S	null (dash share > 0.5 on the known lines)
+10	C6	-		S	null (dash share > 0.5 on the known lines)
+11	PHI	e/r	r	S/M	cell S (controlled map), letter within the pair M (judge)
+12	CA	-		S	null (dash share > 0.5 on the known lines)
+13	C6	-		S	null (dash share > 0.5 on the known lines)
