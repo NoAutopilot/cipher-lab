@@ -143,7 +143,12 @@ group. One worker at a time.
   tools/decode_witness.py exists with an offline test. Nevers-Birago calibration is pending: the sheet's written face
   (an archive photograph) or a control-backed decode of the no.87 cipher passage.
 - f.27r = canvas 28 (ink '27' checked by eye by the orchestrator); short cipher passage (about 1.5 lines) mid-page.
-- Job 1b NEV-C2 (Sonnet, session_01QAB2DgSYKmjZDyGWA7cDSf, cap 8, box 60): Ceppo-Nevers calibration on f.27 (f.39 pooled if under 80 letters), brief .claude/briefs/runs/2026-09-27-lane-nev-owner-c2-calibrate-ceppo.md. Running.
+- NEV-C2 DONE 12.94 D- (get_session), ledgered, archived: non-test -- f.27 gloss unreadable (6 letters, z -0.75),
+  f.39 no gloss, f.82 judged only at 1000 px. The orchestrator's native crop of f.82r (canvas 83, pct:56,25.5,42,6.5)
+  shows a clean letter-by-letter gloss over three cipher lines.
+- Job 1c NEV-C3 (Sonnet, cap 6, box 45): Ceppo-Nevers calibration on f.82r, brief
+  .claude/briefs/runs/2026-09-27-lane-nev-owner-c3-calibrate-f82.md. Worker spend before it: 18.71.
+- (old) Job 1b NEV-C2 (Sonnet, session_01QAB2DgSYKmjZDyGWA7cDSf, cap 8, box 60): Ceppo-Nevers calibration on f.27 (f.39 pooled if under 80 letters), brief .claude/briefs/runs/2026-09-27-lane-nev-owner-c2-calibrate-ceppo.md. Running.
 - Superseded plan line: on NEV-C1 PASS, NEV-C2 (Ceppo-Nevers on f.27, same design); then job 2. On FAIL, the failing part named
   by the worker decides the next step; no target work for that group.
 - Note for a successor: the Ceppo-Nevers key was reconstructed by Tomokiyo from BnF fr.4702, not fr.3251, so its
