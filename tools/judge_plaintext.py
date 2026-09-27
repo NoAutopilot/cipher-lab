@@ -78,6 +78,15 @@ LANG_CORPORA = {
     "da19": [DATA / "da19" / "historisktidsskriftdk1s6.txt"],  # 1845 Historisk Tidsskrift, 1.04M letters (B2 bCPH, 25 Sept 2026); 19th-c. register
     "es17c": [DATA / "es17c" / "memorialhistri17realuoft.txt.gz", DATA / "es17c" / "memorialhistri18realuoft.txt.gz",
               DATA / "es17c" / "memorialhistri19realuoft.txt.gz"],
+    # es17c7 (27 Sept 2026, MERCY-JUDGE2): all seven Cartas tomes (MHE tomes XIII-XIX = Cartas I-VII, 1634-1648),
+    # widening es17c's three (V-VII, 1643-1647) with the four earlier ones (I-IV, 1634-1643) to give the
+    # leave-one-file-out fold check more, and more varied, folds. Does not replace es17c (kept as its own key
+    # per CLAUDE.md rule 3's "second/third attempt" convention -- a wider corpus is new material, not a tuning
+    # of the same knob). See tools/data/es17c7/README.md.
+    "es17c7": [DATA / "es17c7" / "memorialhistri13realuoft.txt.gz", DATA / "es17c7" / "memorialhistri14realuoft.txt.gz",
+               DATA / "es17c7" / "memorialhistri15realuoft.txt.gz", DATA / "es17c7" / "memorialhistri16realuoft.txt.gz",
+               DATA / "es17c7" / "memorialhistri17realuoft.txt.gz", DATA / "es17c7" / "memorialhistri18realuoft.txt.gz",
+               DATA / "es17c7" / "memorialhistri19realuoft.txt.gz"],
     # nl (25 Sept 2026, YX-PTJUDGE): tools/data/nl_repo holds only a target's own committed reading (a few KB,
     # nowhere near the ~200k-character floor a language check needs) -- circular per CLAUDE.md "never use a
     # target's own reading as its corpus". Not wired. A future worker who fetches a real nl period corpus

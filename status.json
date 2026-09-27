@@ -2795,10 +2795,10 @@
   "near": [
     {
       "target": "espagnol142-mercy-1648",
-      "title": "Mercy 1648: N3 after two audits, key ours; shuffled-stream control passes (target -1154.3 vs shuffle -1488.5 vs matched control -1336.2); blind majority applied (S 496 M 26, Cleues -> Eleues)",
-      "next": "outreach gate 2 open: JSTOR rows 80-83 and a Lonchay-Cuvelier IV page read (owner); AGR SEE t.LXIV f.16 copy (ASKS 60); Cuvelier-Lefevre VI (ASKS 59); SO-MERCY-F22 queued",
+      "title": "Mercy 1648: N3 after two audits, key ours; shuffled-stream control passes (target -1154.3 vs shuffle -1488.5 vs matched control -1336.2); blind majority applied (S 496 M 26, Cleues -> Eleues); judge still cannot decide after widening the corpus (es17c7, MERCY-JUDGE2 27 Sept 2026: blended false-negative 11.1% but per-fold spread 11.5x, gate not met)",
+      "next": "outreach gate 2 open: JSTOR rows 80-83 and a Lonchay-Cuvelier IV page read (owner); AGR SEE t.LXIV f.16 copy (ASKS 60); Cuvelier-Lefevre VI (ASKS 59); SO-MERCY-F22 queued; judge corpus homogeneity split (by correspondent/date within a tomo) named, not attempted (tools/data/es17c7/README.md)",
       "lane": "R7 + V6",
-      "touched": "25 Sept 2026 21:23"
+      "touched": "27 Sept 2026 18:54"
     },
     {
       "target": "fr2933-salviati-1525",

@@ -978,3 +978,119 @@ NEAR.md not edited: the brief updates its next-step cell only for outcome (a); t
 existing "DECODE R958-R965... waits on the DECODE role upgrade (ASKS 1)" line is now stale (no role upgrade
 was needed -- all 8 were read login-free) and is left for the parent to correct, reported in the ROOM done
 line.
+
+## MERCY-JUDGE2: widened judge corpus, validation only (27 Sept 2026)
+
+parent worker MERCY-JUDGE2 (Sonnet). Brief: `.claude/briefs/runs/2026-09-27-parent-ytbiz-mercy-judge2.md`
+(parent 7n, "Effort allocation" validation item, after the owner asked what can move this target while the
+Brussels SEE t.LXIV f.16 copy is awaited). Internet Archive only, disk otherwise. Start 18:45 UTC per `date -u`.
+No decoding, no key or reading change -- `reading.txt`, `key.tsv`, `ciphertext.tsv` and AUDIT.md untouched.
+
+**U1: found all four other Cartas tomes and built `tools/data/es17c7/`.** es17c already held tomos V-VII
+(MHE XVII-XIX, 1643-1647); the other four (Cartas I-IV = MHE tomos XIII-XVI, 1634 - early 1643) are on Internet
+Archive in the same `realuoft` (University of Toronto) scan series, confirmed by each volume's own printed
+front matter ("CARTAS DE ALGUNOS PP. DE LA COMPAÑÍA DE JESÚS ... TOMO [I-IV]" with its own stated date range)
+before fetching in full. Hold-out grep (Mercy/Mercij, Barneton, Sumiller, Brandenburg) on all four: zero
+Mercy/Mercij/Barneton hits, one generic "sumiller de Corps" (a different court office, different person) -- the
+same non-hit shape es17c's own three tomes already showed, expected since these four tomes (1634-1643) predate
+the target's 1648 letter and even Leopold Wilhelm's 1647 arrival as governor-general. Cleaned the same way as
+es17c (front matter cut before each volume's own `CARTAS` heading; no back-matter index in any of the four,
+unlike tomo XIX). `tools/data/es17c7/` now holds all seven tomes, 4,923,218 folded letters (es17c's three files
+copied in byte-identical, confirmed by matching sha1). Wired into `tools/judge_plaintext.py` as a new
+`LANG_CORPORA["es17c7"]` key (es17c and es (default) both unchanged). `--selftest` passes. Full build log,
+MANIFEST.tsv and hold-out detail: `tools/data/es17c7/README.md`.
+
+**U2: leave-one-file-out false-negative rate, es17c (3 folds) vs es17c7 (7 folds), both run this pass.**
+```
+es17c:
+held_out=memorialhistri17realuoft.txt.gz N=519 samples=200 real_p05=-0.847 false_negatives=79/200 (39.5%)
+held_out=memorialhistri18realuoft.txt.gz N=519 samples=200 real_p05=-0.866 false_negatives=42/200 (21.0%)
+held_out=memorialhistri19realuoft.txt.gz N=519 samples=200 real_p05=-0.892 false_negatives=20/200 (10.0%)
+TOTAL false-negative rate: 141/600 (23.5%)
+
+es17c7:
+held_out=memorialhistri13realuoft.txt.gz N=519 samples=200 real_p05=-0.878 false_negatives=21/200 (10.5%)
+held_out=memorialhistri14realuoft.txt.gz N=519 samples=200 real_p05=-0.866 false_negatives=21/200 (10.5%)
+held_out=memorialhistri15realuoft.txt.gz N=519 samples=200 real_p05=-0.882 false_negatives=15/200 (7.5%)
+held_out=memorialhistri16realuoft.txt.gz N=519 samples=200 real_p05=-0.902 false_negatives=4/200 (2.0%)
+held_out=memorialhistri17realuoft.txt.gz N=519 samples=200 real_p05=-0.867 false_negatives=46/200 (23.0%)
+held_out=memorialhistri18realuoft.txt.gz N=519 samples=200 real_p05=-0.869 false_negatives=29/200 (14.5%)
+held_out=memorialhistri19realuoft.txt.gz N=519 samples=200 real_p05=-0.872 false_negatives=20/200 (10.0%)
+TOTAL false-negative rate: 156/1400 (11.1%)
+per-fold spread: 2.0-23.0% (11.5x)
+```
+Blended rate roughly halved (23.5% -> 11.1%), but per-fold spread widened relative to itself (3.95x on es17c's
+three folds vs 11.5x on es17c7's seven): tomo XVI's fold reads very clean (2.0%) but tomo XVII's, now trained on
+six other tomes instead of two, is still the single worst fold (23.0%, though better than its 39.5% inside
+es17c). A wide per-fold spread means the blended number is not trustworthy on its own, whichever direction it
+moved (CLAUDE.md rule 3, es17c/MJ and es17c/EN-FOLDS paragraphs).
+
+**Pre-registered gate (per the brief, set before U3 ran):** the judge is a gate only if es17c7's blended
+false-negative rate is under 10% with a per-fold spread under 2x, AND the clear words PASS; otherwise the
+verdict is "judge cannot decide" whatever the reading scores. **Neither corpus-quality leg is met** (11.1% is
+over the 10% line; 11.5x is far over the 2x line) -- outcome (c), verdict stands "judge cannot decide"
+regardless of what U3 finds. U3 was still run and is reported below, per the brief ("the conditions do not
+hold -- 'judge cannot decide' stands, with the numbers").
+
+**U3: reading, clear words and 20 shuffled nulls, through es17c7** (spec variant
+`{"judge": {"language": "es17c7", "letters_min": 200, "control_samples": 200}}`, not committed as a separate
+`specs/` file, matching es17c's own convention):
+```
+$ python3 tools/judge_plaintext.py <es17c7 spec variant> --file ciphers/espagnol142-mercy-1648/reading.txt
+ok   length: got=1342, min=200, max=1000000000
+FAIL language: score=-1.027, null_p99=-1.961, real_p05=-0.858, real_median=-0.789, mode=both, N=1342
+FAIL - espagnol142-mercy-1648-es17c7-variant (a PASS is a gate for a verifier, not a reading; rule 10)
+
+$ python3 tools/judge_plaintext.py <es17c7 spec variant> --file ciphers/espagnol142-mercy-1648/m2/clear_words_only.txt
+ok   length: got=782, min=200, max=1000000000
+FAIL language: score=-0.889, null_p99=-1.937, real_p05=-0.87, real_median=-0.795, mode=both, N=782
+FAIL - espagnol142-mercy-1648-es17c7-variant (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+The clear words FAIL by a similarly thin margin as under both es17 (-0.892 vs -0.888, 0.004 gap) and es17c
+(-0.891 vs -0.867, 0.024 gap): here -0.889 vs -0.870, a 0.019 gap. Widening the corpus did not flip this FAIL
+to a PASS either, so gate leg 2 (clear words PASS) also fails.
+
+**20 shuffled nulls** (the reading's own N=1342 folded letters, comment header lines stripped the same way the
+CLI strips them, shuffled with 20 different seeds -- order destroyed, letter multiset unchanged -- scored
+through the same es17c7 model):
+```
+null seed=1  N=1342 score=-2.082 null_p99=-1.961 real_p05=-0.858 FAIL
+null seed=2  N=1342 score=-2.047 null_p99=-1.961 real_p05=-0.858 FAIL
+null seed=3  N=1342 score=-2.011 null_p99=-1.961 real_p05=-0.858 FAIL
+null seed=4  N=1342 score=-2.056 null_p99=-1.961 real_p05=-0.858 FAIL
+null seed=5  N=1342 score=-2.030 null_p99=-1.961 real_p05=-0.858 FAIL
+null seed=6  N=1342 score=-2.103 null_p99=-1.961 real_p05=-0.858 FAIL
+null seed=7  N=1342 score=-2.045 null_p99=-1.961 real_p05=-0.858 FAIL
+null seed=8  N=1342 score=-2.038 null_p99=-1.961 real_p05=-0.858 FAIL
+null seed=9  N=1342 score=-2.026 null_p99=-1.961 real_p05=-0.858 FAIL
+null seed=10 N=1342 score=-2.007 null_p99=-1.961 real_p05=-0.858 FAIL
+null seed=11 N=1342 score=-2.037 null_p99=-1.961 real_p05=-0.858 FAIL
+null seed=12 N=1342 score=-1.996 null_p99=-1.961 real_p05=-0.858 FAIL
+null seed=13 N=1342 score=-2.032 null_p99=-1.961 real_p05=-0.858 FAIL
+null seed=14 N=1342 score=-2.035 null_p99=-1.961 real_p05=-0.858 FAIL
+null seed=15 N=1342 score=-2.049 null_p99=-1.961 real_p05=-0.858 FAIL
+null seed=16 N=1342 score=-2.037 null_p99=-1.961 real_p05=-0.858 FAIL
+null seed=17 N=1342 score=-2.078 null_p99=-1.961 real_p05=-0.858 FAIL
+null seed=18 N=1342 score=-2.034 null_p99=-1.961 real_p05=-0.858 FAIL
+null seed=19 N=1342 score=-2.066 null_p99=-1.961 real_p05=-0.858 FAIL
+null seed=20 N=1342 score=-2.096 null_p99=-1.961 real_p05=-0.858 FAIL
+```
+0/20 PASS; scores range -2.103 to -1.996, all below `null_p99` -1.961. The judge does separate the reading's
+own letter order from a scramble of the same letters at this N (a necessary condition for it to be informative
+at all), but that is not sufficient given the corpus-quality gate above -- the verdict stays "judge cannot
+decide", not a PASS or a real negative.
+
+**Outcome (c):** the pre-registered conditions do not hold (blended rate 11.1% >= 10%; per-fold spread 11.5x
+>= 2x; clear words still FAIL). "Judge cannot decide" stands for this target at N~519-1342, with the numbers
+above superseding es17c's own less-reliable three-fold figure as the current best estimate of this judge
+family's own reliability at this era/register. Neither a PASS nor a FAIL against es17c or es17c7 should be read
+as informative for this target until a homogeneity split (by correspondent or date range within a tomo, not
+just tomo count) is tried -- named as the next cheap step in `tools/data/es17c7/README.md`, not attempted here
+(out of this validation-only job's scope). Status word unchanged: **partial** (NEAR.md, no change to the
+reading, no change to AUDIT.md's N3/ours classification). The corpus (`tools/data/es17c7/`) stays on disk for
+the next era/register-matched target's own judge check.
+
+Search log: no new external search beyond the U1 hold-out grep above (this job's own AUDIT.md is untouched;
+novelty classification is the verifier's job, not run here). Requests: archive.org 4 `advancedsearch.php`/
+`metadata` lookups, 4 `_djvu.txt` downloads, all >=1.6s apart, descriptive UA (8 of the brief's 30-request
+allowance). No subagents. No credentials.
