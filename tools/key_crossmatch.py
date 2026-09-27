@@ -85,6 +85,11 @@ EXTRA_KEY_FILES = ['tools/keys/key60.tsv']  # published Bourdeau/Tomokiyo table 
 # ('# office:', '# years:', '# language:', '# home:') since most have no ciphers/ folder to read a NOTES.md
 # from at all -- see extra_key_header() and key_meta() below.
 EXTRA_KEY_GLOBS = ['sources/cryptiana/keys/*.tsv']
+# EXTRA_KEY_GLOBS' own directory also holds registry files that are not key tables at all (TEXT-QUEUE.tsv,
+# IMAGE-QUEUE.tsv, MANIFEST.tsv -- the U1b/U2 job outputs, CRYPT-KEYS-A) -- skip them by exact basename rather
+# than trying to make KEY_EXCLUDE's scratch-word list (draft/candidate/atlas/...) cover every registry name a
+# future job might add there.
+EXTRA_GLOB_SKIP_NAMES = {'TEXT-QUEUE.tsv', 'IMAGE-QUEUE.tsv', 'MANIFEST.tsv'}
 
 STATUS_WORDS = ['open', 'partial', 'solved', 'closed-negative', 'found-solved', 'blocked', 'offline-only']
 
@@ -248,6 +253,8 @@ def find_key_files():
     for pat in EXTRA_KEY_GLOBS:
         extra_glob_found |= set(ROOT.glob(pat))
     for p in sorted(extra_glob_found):
+        if p.name in EXTRA_GLOB_SKIP_NAMES:
+            continue
         rel = str(p.relative_to(ROOT))
         hit = excluded(rel, KEY_EXCLUDE)
         (dropped if hit else kept).append((p, hit) if hit else p)
@@ -275,6 +282,8 @@ _EXTRA_HEADER_CACHE = {}
 
 
 def is_extra_glob_path(rel_str):
+    if Path(rel_str).name in EXTRA_GLOB_SKIP_NAMES:
+        return False
     return any(fnmatch.fnmatch(rel_str, pat) for pat in EXTRA_KEY_GLOBS)
 
 

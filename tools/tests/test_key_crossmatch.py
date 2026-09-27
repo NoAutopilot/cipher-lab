@@ -191,6 +191,13 @@ try:
     check('EXTRA_KEY_GLOBS: load_key_meta() parses the two rows and carries the header metadata through',
           key is not None and key.get('a', {}).get('value') == 'A' and key.get('b', {}).get('value') == 'B'
           and meta['office'] == 'Test Office, a fixture' and meta['years'] == '1600' and meta['lang_hint'] == 'fr')
+    # EXTRA_KEY_GLOBS' own directory holds registry files that are not key tables (TEXT-QUEUE.tsv etc., U1b) --
+    # they must never be picked up as keys just because they match '*.tsv' in the same directory.
+    (_tmp_root / 'sources' / 'cryptiana' / 'keys' / 'TEXT-QUEUE.tsv').write_text('page\tscore\n', encoding='utf-8')
+    kept2, dropped2 = kx.find_key_files()
+    kept_names = {Path(p).name if not isinstance(p, tuple) else Path(p[0]).name for p in kept2}
+    check('EXTRA_KEY_GLOBS: a registry file (TEXT-QUEUE.tsv) in the same directory is never picked up as a key',
+          'TEXT-QUEUE.tsv' not in kept_names)
 finally:
     kx.ROOT, kx.CIPHERS, kx.EXTRA_KEY_GLOBS = _orig_root, _orig_ciphers, _orig_globs
     kx._EXTRA_HEADER_CACHE.clear()
