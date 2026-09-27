@@ -222,3 +222,62 @@ them unchanged.
 
 **Requests this step:** collections.library.yale.edu 2 (of the allowed 6). No other host. No credentials,
 no AskUserQuestion, no class change, no reading claimed; rule 10 wording.
+
+## Campaign step H2 (27 Sept 2026, 22:57-23:25 UTC)
+
+Runner session_016fvFiTTAhQng2VqbiBDmRE. Hypothesis H2: locate the symbol run the key predicts for Tomokiyo's
+known-answer span "la gubernation d'ispagnia" on line crops of the cipher blocks and calibrate the key on it.
+
+**Result: not located.** One blind Sonnet vision pass per block (3 of 4 vision calls; crops + Tomokiyo's key image
+only, no plaintext or crib shown to any pass, so each pass is usable as pass A of H10/H3) coded 251 signs across
+the letter's ten cipher lines; `passes/crib_search.py` (offline self-test: an embedded synthetic crib reads 22/22,
+a noise line 1/22) finds no alignment above **3/22** letters for the crib anywhere, per line or across line
+breaks (best per-line 2/22 on p.[2] line 1; "ispagnia" alone best 2/8; "gubernation" best 2/11). Chance-level.
+This is conditional on pass A's sign coding, not a negative on the key: a direct look by this runner at
+`p1c_L01_s2.jpg` agreed with pass A's codes on roughly two signs in three, and pass A's per-line sign counts
+(20-33) run 10-30% under a direct count (about 30-35 signs per full line), so a 22-sign run could be missed on
+coding error alone.
+
+**Files:** `images/p2c_L0{1,2}_s{1,2}.jpg` (p.[2] block, region 360,1997,3055,456 native) and
+`images/p1c_L0{1..8}_s{1,2}.jpg` (p.[1] block, region 450,440,3000,1740 native), cut with `tools/iiif_lines.py`
+from two native IIIF region fetches (`images/src_2_*.jpg`, manifest entries under `iiif_lines`); debug overlays
+`images/p*c_lines_debug.jpg` checked before the passes ran (p.[1]: 8 cipher lines, the first partial after the
+plain "al R.do frate mio"; p.[2]: 2 lines). `passes/p2_passA_raw.tsv`, `passes/p1_L1-4_passA_raw.tsv`,
+`passes/p1_L5-8_passA_raw.tsv` (as reported, per segment), the `*_joined.tsv` files (segments de-duplicated per
+each pass's own join note -- the tool's two 2400-px segments of a 3000-3055-px region overlap by 1745-1800 px,
+not the ~150 px the briefs said, a brief error the passes each caught themselves), `passes/all_passA_joined.tsv`
+(251 signs), `passes/crib_search.py`.
+
+**Two findings that change the ranking:**
+
+1. **The letter's sign inventory exceeds the key on disk.** 55 of 251 signs (22%) match nothing in
+   `keys/key_spinelli_c1515.tsv` and recur consistently across all three passes: a plain numeral-2 shape (13),
+   an x-cross (12), a "ll" pair of strokes (6-7), a rotated diamond (5), a plus sign (2), a numeral 8 (2), a
+   D-shape (2), a circle bisected by a bar (2), a box with a bar (1). Tomokiyo's reconstruction leaves q, x and z
+   blank and gives one or two signs per letter; this 1519 letter's hand uses at least 8-9 further sign types.
+2. **Under the key as read, the letter frequencies are not Italian.** Of the 145 letter-coded signs, o reads
+   15.2% (Italian ~9.8%), p 13.1% (~3.1%), d 10.3% (~3.7%), k 4.8% (~0), while a reads 3.4% (~11.7%), e 2.1%
+   (~11.8%), i 0.7% (~11.3%) and b 0 -- the three commonest Italian vowels are nearly absent and three rare
+   letters are the commonest. Nulls read 49/251 = 20%. Either pass A's shape-to-code matching is unreliable at
+   this resolution, or the frequent shapes the key labels o (7-hook), p (9-loop), d (zigzag) carry different values
+   in this letter than in Tomokiyo's table, or the unmapped shapes are the missing vowel homophones. Any of the
+   three means a key-coded pass cannot be reconciled row by row (the transcription brief's Raince/Salviati lesson):
+   the next transcription step codes signs against a glyph atlas built from this letter's own ink
+   (`tools/glyph_atlas.py`, the dupuy452-carpi-1520 method), not against the key.
+
+**Key discrepancy logged (grade M):** the key image `spinelly1515.png` shows SIX word-code symbols under five
+headers -- a b-with-bottom-loop ("I"), a note-shape ("of"), a 2-with-bar AND a 4-with-plus both under "Emperor
+King of Arragon", a capital-H shape under "Prince of Castile", two adjoining boxes ("new amity"). The tsv on disk
+records five, with the 4-with-plus ladder under "Prince of Castile" and no H. The H-shape occurs in the letter
+(pass A: 2 on p.[1] line 7; this runner's direct look: several more on p.[1] lines 3-4 and p.[2] line 1). Not
+corrected this step (a key edit is its own step, H13).
+
+**Controls:** the crib matcher's synthetic positive control (22/22) and noise control (1/22) above; the Italian
+frequency table as the reference for finding 2 (no shuffle control needed for a frequency profile). No reading
+claimed; no class change.
+
+**Cost:** 3 Sonnet vision calls, about 680k subagent tokens in total (192k / 243k / 247k), plus the runner's own
+turn -- recorded as 3.0 USD against the row's 2.0 est (1.5x; the p.[1] block was run as two calls this step
+rather than left to H3, to settle the crib question in one step -- the overrun is this runner's choice, logged).
+Requests: collections.library.yale.edu 2 (native region fetches) of the allowed 6. No credentials, no
+AskUserQuestion, rule 10 wording, no other target touched.
