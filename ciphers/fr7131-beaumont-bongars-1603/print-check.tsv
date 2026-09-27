@@ -1,0 +1,60 @@
+# tools/print_check.py, 27 Sep 2026. A search result, not a novelty verdict (CLAUDE.md rule 10).
+phrase	source	result	detail	url
+Sabini quod volunt somniant	ia-global	168 item(s)	RosaEtimologieStorichePiemontese (Etimologie Storiche Del Dialetto Piemontese); bim_eighteenth-century_the-nation-vindicated-f_tindal-matthew_1712 (The nation vindicated, from the aspersions cast on); sim_journal-of-clinical-psychiatry_1951-10_12_10 (Diseases of the Nervous System 1951-10: Vol 12 Iss); dli.ministry.00247 (The anatomy of melancholy : what it is); TouringClubItalianoLazio1943 (Touring Club Italiano Lazio 1943)	https://be-api.us.archive.org/fts/v1/search?q=%22Sabini%20quod%20volunt%20somniant%22
+Sabini sumniant quad volunt	ia-global	no hits		https://be-api.us.archive.org/fts/v1/search?q=%22Sabini%20sumniant%20quad%20volunt%22
+Sabini quod volunt somniant	htrc:hvd.32044105535363	no hits	words sabini quod uolunt somniant; seq 	https://babel.hathitrust.org/cgi/pt?id=hvd.32044105535363
+Sabini sumniant quad volunt	htrc:hvd.32044105535363	no hits	words sabini sumniant quad uolunt; seq 	https://babel.hathitrust.org/cgi/pt?id=hvd.32044105535363
+Sabini quod volunt somniant	htrc:mdp.39015039716983	no hits	words sabini quod uolunt somniant; seq 	https://babel.hathitrust.org/cgi/pt?id=mdp.39015039716983
+Sabini sumniant quad volunt	htrc:mdp.39015039716983	no hits	words sabini sumniant quad uolunt; seq 	https://babel.hathitrust.org/cgi/pt?id=mdp.39015039716983
+Sabini quod volunt somniant	htrc:mdp.39015039716991	no hits	words sabini quod uolunt somniant; seq 	https://babel.hathitrust.org/cgi/pt?id=mdp.39015039716991
+Sabini sumniant quad volunt	htrc:mdp.39015039716991	no hits	words sabini sumniant quad uolunt; seq 	https://babel.hathitrust.org/cgi/pt?id=mdp.39015039716991
+Sabini quod volunt somniant	htrc:hvd.32044105535355	no hits	words sabini quod uolunt somniant; seq 	https://babel.hathitrust.org/cgi/pt?id=hvd.32044105535355
+Sabini sumniant quad volunt	htrc:hvd.32044105535355	no hits	words sabini sumniant quad uolunt; seq 	https://babel.hathitrust.org/cgi/pt?id=hvd.32044105535355
+Sabini quod volunt somniant	htrc:nyp.33433071361095	no hits	words sabini quod uolunt somniant; seq 	https://babel.hathitrust.org/cgi/pt?id=nyp.33433071361095
+Sabini sumniant quad volunt	htrc:nyp.33433071361095	no hits	words sabini sumniant quad uolunt; seq 	https://babel.hathitrust.org/cgi/pt?id=nyp.33433071361095
+Sabini quod volunt somniant	htrc:mdp.39015039717007	no hits	words sabini quod uolunt somniant; seq 	https://babel.hathitrust.org/cgi/pt?id=mdp.39015039717007
+Sabini sumniant quad volunt	htrc:mdp.39015039717007	no hits	words sabini sumniant quad uolunt; seq 	https://babel.hathitrust.org/cgi/pt?id=mdp.39015039717007
+Sabini quod volunt somniant	htrc:mdp.39015039717015	no hits	words sabini quod uolunt somniant; seq 	https://babel.hathitrust.org/cgi/pt?id=mdp.39015039717015
+Sabini sumniant quad volunt	htrc:mdp.39015039717015	no hits	words sabini sumniant quad uolunt; seq 	https://babel.hathitrust.org/cgi/pt?id=mdp.39015039717015
+Sabini quod volunt somniant	htrc:mdp.39015016371026	no hits	words sabini quod uolunt somniant; seq 	https://babel.hathitrust.org/cgi/pt?id=mdp.39015016371026
+Sabini sumniant quad volunt	htrc:mdp.39015016371026	no hits	words sabini sumniant quad uolunt; seq 	https://babel.hathitrust.org/cgi/pt?id=mdp.39015016371026
+Sabini quod volunt somniant	htrc:mdp.39015039717049	no hits	words sabini quod uolunt somniant; seq 	https://babel.hathitrust.org/cgi/pt?id=mdp.39015039717049
+Sabini sumniant quad volunt	htrc:mdp.39015039717049	no hits	words sabini sumniant quad uolunt; seq 	https://babel.hathitrust.org/cgi/pt?id=mdp.39015039717049
+Sabini quod volunt somniant	htrc:uva.x000175387	no hits	words sabini quod uolunt somniant; seq 	https://babel.hathitrust.org/cgi/pt?id=uva.x000175387
+Sabini sumniant quad volunt	htrc:uva.x000175387	no hits	words sabini sumniant quad uolunt; seq 	https://babel.hathitrust.org/cgi/pt?id=uva.x000175387
+Sabini quod volunt somniant	htrc:uva.x000175386	no hits	words sabini quod uolunt somniant; seq 	https://babel.hathitrust.org/cgi/pt?id=uva.x000175386
+Sabini sumniant quad volunt	htrc:uva.x000175386	no hits	words sabini sumniant quad uolunt; seq 	https://babel.hathitrust.org/cgi/pt?id=uva.x000175386
+Sabini quod volunt somniant	htrc:mdp.39015039717056	no hits	words sabini quod uolunt somniant; seq 	https://babel.hathitrust.org/cgi/pt?id=mdp.39015039717056
+Sabini sumniant quad volunt	htrc:mdp.39015039717056	no hits	words sabini sumniant quad uolunt; seq 	https://babel.hathitrust.org/cgi/pt?id=mdp.39015039717056
+Sabini quod volunt somniant	htrc:uva.x000175389	no hits	words sabini quod uolunt somniant; seq 	https://babel.hathitrust.org/cgi/pt?id=uva.x000175389
+Sabini sumniant quad volunt	htrc:uva.x000175389	no hits	words sabini sumniant quad uolunt; seq 	https://babel.hathitrust.org/cgi/pt?id=uva.x000175389
+Sabini quod volunt somniant	htrc:uva.x000175388	no hits	words sabini quod uolunt somniant; seq 	https://babel.hathitrust.org/cgi/pt?id=uva.x000175388
+Sabini sumniant quad volunt	htrc:uva.x000175388	no hits	words sabini sumniant quad uolunt; seq 	https://babel.hathitrust.org/cgi/pt?id=uva.x000175388
+Sabini quod volunt somniant	htrc:iau.31858029648007	no hits	words sabini quod uolunt somniant; seq 	https://babel.hathitrust.org/cgi/pt?id=iau.31858029648007
+Sabini sumniant quad volunt	htrc:iau.31858029648007	no hits	words sabini sumniant quad uolunt; seq 	https://babel.hathitrust.org/cgi/pt?id=iau.31858029648007
+Sabini quod volunt somniant	htrc:iau.31858029648015	no hits	words sabini quod uolunt somniant; seq 	https://babel.hathitrust.org/cgi/pt?id=iau.31858029648015
+Sabini sumniant quad volunt	htrc:iau.31858029648015	no hits	words sabini sumniant quad uolunt; seq 	https://babel.hathitrust.org/cgi/pt?id=iau.31858029648015
+Sabini quod volunt somniant	htrc:iau.31858029648023	no hits	words sabini quod uolunt somniant; seq 	https://babel.hathitrust.org/cgi/pt?id=iau.31858029648023
+Sabini sumniant quad volunt	htrc:iau.31858029648023	no hits	words sabini sumniant quad uolunt; seq 	https://babel.hathitrust.org/cgi/pt?id=iau.31858029648023
+Sabini quod volunt somniant	htrc:iau.31858029648031	no hits	words sabini quod uolunt somniant; seq 	https://babel.hathitrust.org/cgi/pt?id=iau.31858029648031
+Sabini sumniant quad volunt	htrc:iau.31858029648031	no hits	words sabini sumniant quad uolunt; seq 	https://babel.hathitrust.org/cgi/pt?id=iau.31858029648031
+Sabini quod volunt somniant	htrc:iau.31858029648049	no hits	words sabini quod uolunt somniant; seq 	https://babel.hathitrust.org/cgi/pt?id=iau.31858029648049
+Sabini sumniant quad volunt	htrc:iau.31858029648049	no hits	words sabini sumniant quad uolunt; seq 	https://babel.hathitrust.org/cgi/pt?id=iau.31858029648049
+Sabini quod volunt somniant	htrc:iau.31858029648056	no hits	words sabini quod uolunt somniant; seq 	https://babel.hathitrust.org/cgi/pt?id=iau.31858029648056
+Sabini sumniant quad volunt	htrc:iau.31858029648056	no hits	words sabini sumniant quad uolunt; seq 	https://babel.hathitrust.org/cgi/pt?id=iau.31858029648056
+Sabini quod volunt somniant	htrc:iau.31858029648072	no hits	words sabini quod uolunt somniant; seq 	https://babel.hathitrust.org/cgi/pt?id=iau.31858029648072
+Sabini sumniant quad volunt	htrc:iau.31858029648072	no hits	words sabini sumniant quad uolunt; seq 	https://babel.hathitrust.org/cgi/pt?id=iau.31858029648072
+Sabini quod volunt somniant	htrc:iau.31858029648080	no hits	words sabini quod uolunt somniant; seq 	https://babel.hathitrust.org/cgi/pt?id=iau.31858029648080
+Sabini sumniant quad volunt	htrc:iau.31858029648080	no hits	words sabini sumniant quad uolunt; seq 	https://babel.hathitrust.org/cgi/pt?id=iau.31858029648080
+Sabini quod volunt somniant	htrc:iau.31858029648098	no hits	words sabini quod uolunt somniant; seq 	https://babel.hathitrust.org/cgi/pt?id=iau.31858029648098
+Sabini sumniant quad volunt	htrc:iau.31858029648098	no hits	words sabini sumniant quad uolunt; seq 	https://babel.hathitrust.org/cgi/pt?id=iau.31858029648098
+Sabini quod volunt somniant	gbooks	300 volume(s)	X6VhAAAAcAAJ Two treatises, one of the Christian prie 1707; H49AAAAAcAAJ Sex. Pompei Festi et Mar. Verrii Flacci  1700; 9pNEDSGaG4cC Two Treatises 1707; Woj9CeutldwC The anatomy of melancholy, by Democritus 1886; Ljyio8U9_KkC The Captivity of Hans Stade of Hesse, in 1874	https://www.googleapis.com/books/v1/volumes?q=%22Sabini%20quod%20volunt%20somniant%22&country=US&maxResults=10
+Sabini sumniant quad volunt	gbooks	no hits		https://www.googleapis.com/books/v1/volumes?q=%22Sabini%20sumniant%20quad%20volunt%22&country=US&maxResults=10
+Sabini quod volunt somniant	openalex	2 work(s)	Rurification of Religion. Foci and Suggrundaria at the Roman (2021) https://doi.org/10.20318/arys.2021.6186; Keats and the Dream Tradition (1984) https://doi.org/10.71548/14742	https://api.openalex.org/works?per-page=5&search=%22Sabini%20quod%20volunt%20somniant%22
+Sabini sumniant quad volunt	openalex	no hits		https://api.openalex.org/works?per-page=5&search=%22Sabini%20sumniant%20quad%20volunt%22
+(keywords) Beaumont Bongars 1603 cipher Frankfurt	openalex	no hits		https://api.openalex.org/works?per-page=5&search=Beaumont%20Bongars%201603%20cipher%20Frankfurt
+Sabini quod volunt somniant	s2	no hits		https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22Sabini%20quod%20volunt%20somniant%22
+Sabini sumniant quad volunt	s2	not searched (blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22Sabini%20sumniant%20quad%20volunt%22)		https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22Sabini%20sumniant%20quad%20volunt%22
+(keywords) Beaumont Bongars 1603 cipher Frankfurt	s2	not searched (blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22Sabini%20sumniant%20quad%20volunt%22)		https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=Beaumont%20Bongars%201603%20cipher%20Frankfurt
+(keywords) Beaumont Bongars 1603 cipher Frankfurt	crossref	74397 record(s), top 5 by relevance	Beaumont, Air Commodore Frank, (1896–27 Dec. 1968), RAF (ret 10.1093/ww/9780199540884.013.u49611; 3. Handlungsmöglichkeiten und Wirkungsgrenzen – Bongars’ dip 10.1515/9783484970892.48; Jacques Bongars (1554–1612) 10.1628/978-3-16-158625-5; Fast S-box security mechanism research based on the polymorp 10.1016/j.ins.2007.11.003; Bongars, Jacques 10.1163/2452-3054_dnpo6_com_00073	https://api.crossref.org/works?rows=5&query.bibliographic=Beaumont%20Bongars%201603%20cipher%20Frankfurt
+(keywords) Beaumont Bongars Frankfurt 1603	crossref	66975 record(s), top 5 by relevance	Beaumont, Air Commodore Frank, (1896–27 Dec. 1968), RAF (ret 10.1093/ww/9780199540884.013.u49611; 3. Handlungsmöglichkeiten und Wirkungsgrenzen – Bongars’ dip 10.1515/9783484970892.48; Jacques Bongars (1554–1612) 10.1628/978-3-16-158625-5; Bongars, Jacques 10.1163/2452-3054_dnpo6_com_00073; 1533: Cupid's Revenge 10.1093/oseo/instance.wiggins1533	https://api.crossref.org/works?rows=5&query.bibliographic=Beaumont%20Bongars%20Frankfurt%201603

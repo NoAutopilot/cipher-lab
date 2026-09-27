@@ -39,9 +39,10 @@ Under the page's own item-by-item section:
 > Can be deciphered with Bongars' cipher no.3.
 
 No reading is offered anywhere on the page. Contrast the next item down, fr.7131 f.256 (8 Feb 1603, signed
-Beaumont), which Tomokiyo tags "can be (for the most part) deciphered" with cipher no.3 — f.268 carries no
-such partial-reading language, only "can be deciphered", i.e. a claim about key applicability, not a claim
-that anyone has applied it.
+Beaumont), which Tomokiyo tags "can be (for the most part) deciphered" with cipher **no.16** [corrected 27 Sept
+2026, CS-BONGARS7131: this line previously read "cipher no.3", which is f.268's own key, not f.256's -- see
+`ciphers/fr7131-beaumont-bongars-1603/NOTES.md`] — f.268 carries no such partial-reading language, only "can be
+deciphered", i.e. a claim about key applicability, not a claim that anyone has applied it.
 
 ## Tomokiyo's Bongars paper — route search (csBONG, 24 Sept 2026)
 

@@ -1,0 +1,5 @@
+# Distinctive terms for this target (BnF fr.7131 f.256, Beaumont to Bongars, 8 Feb 1603).
+# Not a solver decode -- these are check-solved bibliographic search phrases, not a cryptanalytic reading.
+# Tomokiyo's own printed partial plaintext (bongars.htm, "BnF fr.7131, f.256"):
+Sabini quod volunt somniant
+Sabini sumniant quad volunt
