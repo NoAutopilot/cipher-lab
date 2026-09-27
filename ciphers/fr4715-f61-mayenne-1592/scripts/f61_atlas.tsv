@@ -1,0 +1,25 @@
+# H2 atlas (27 Sept 2026): the 19 shape classes of scripts/f61crib.py's CLASS_RULES (from call A's own shape notes) with
+# VBAR split per H15, worded as plain shape descriptions, no letters, no key cells -- the shared code book both passes use
+# (.claude/briefs/transcription.md: cluster by shape into one atlas, give both passes its codes).
+code	shape
+PHI	loops (one or several) on a long vertical stem, phi-like
+C43	a mark shaped like the digits 43 written together
+CA	a mark shaped like a cursive a
+VBAR_A	closed down-pointing triangle whose top side is a horizontal bar, nothing above the bar, no second bar
+VBAR_B	closed down-pointing triangle with a top bar AND a second horizontal bar crossing its bottom point
+C6	a mark shaped like the digit 6
+4TRI	a 4-shaped element (4 with a crossbar) sitting above a small triangle or V
+INF	an infinity sign or figure-8 lying on a horizontal bar
+DBL	two loops on a stem, one above the other (o-T-o)
+LOOPBAR	a loop on a stem with a bar at the foot
+EBR	an E-like bracket open to the right
+ZHOOK	a 7 or Z hook over two close slanted stems, crossed
+CROSS	a plain plus or cross, possibly with a stroke rising to the upper right
+ELOOP	a dark e-shaped loop with a curling tail
+4PI	a 4-shaped element above two stems on a bar (4 over pi)
+HASH4	a dense crossed-4 cluster, hash-like, with stems
+LOOPSTEM1	a single loop on a long stem (not phi-like, not double)
+CH	a mark shaped like a cursive h
+LL	a mark shaped like ll
+4STEM	a 4 with a long crossed stem and no triangle below
+OTHER	any cipher sign matching none of the above (describe it in the note)

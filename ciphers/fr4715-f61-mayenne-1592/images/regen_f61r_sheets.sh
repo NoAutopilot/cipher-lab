@@ -25,3 +25,31 @@ for line, segs in keep.items():
     sheet.save(f"{T}/f61sheet_{line}.jpg", quality=90)
     print(line, sheet.size, "segments", segs)
 PY
+
+# H2 (campaign, 27 Sept 2026): sheets B for the second blind read -- the whole of each span line, segments cut with
+# --overlap 0 (the tool still spreads 4 segments of 900 px evenly over 3320 px, so 93 native px repeat) and each
+# non-final segment TRIMMED to the next segment's x0 before the 3x scale, so no sign appears twice (a sign on a boundary
+# is split, not doubled; the reader is told so). Crops go to a temp dir; only the six stacked sheets are committed.
+NOOV=$(mktemp -d)
+python3 tools/iiif_lines.py --image $T/images/src_ark_12148_btv1b52509819x_f137_500_1880_3320_1420.jpg \
+  --out $NOOV --prefix f61n --max-width 900 --overlap 0 --follow-slope 300 --slope-local
+NOOV=$NOOV python3 - <<'PY'
+import json, os
+from PIL import Image, ImageDraw
+T = "ciphers/fr4715-f61-mayenne-1592/images"; N = os.environ["NOOV"]
+box = {e["crop"]: e["box"] for e in json.load(open(f"{N}/manifest.json"))["iiif_lines"]}
+for line in ["L01", "L03", "L05", "L07", "L08", "L11"]:
+    segs = sorted(c for c in box if c.startswith(f"f61n_{line}_s"))
+    ims = []
+    for k, c in enumerate(segs):
+        im = Image.open(f"{N}/{c}").convert("RGB")
+        if k + 1 < len(segs):
+            im = im.crop((0, 0, box[segs[k + 1]][0] - box[c][0], im.height))
+        ims.append(im.resize((im.width * 3, im.height * 3), Image.LANCZOS))
+    W = max(im.width for im in ims); H = sum(im.height for im in ims) + 12 * (len(ims) - 1)
+    sheet = Image.new("RGB", (W, H), "white"); y = 0; d = ImageDraw.Draw(sheet)
+    for i, im in enumerate(ims):
+        sheet.paste(im, (0, y)); d.text((6, y + 4), f"segment {i+1}", fill=(200, 0, 0)); y += im.height
+        if i < len(ims) - 1: d.rectangle((0, y, W, y + 11), fill=(0, 0, 0)); y += 12
+    sheet.save(f"{T}/f61sheetB_{line}.jpg", quality=90); print(line, sheet.size, "segments", len(ims), "(B, no overlap)")
+PY
