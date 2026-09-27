@@ -3,24 +3,46 @@
   "fetched": "27 Sept 2026",
   "why": "INTAKE-3251: same ark as ciphers/ceppo-nevers-fr3251-1570s -- see that folder's images/manifest.json for the full canvas-rule derivation (four eye-checked points across the volume). Recorded here again so this folder is self-contained.",
   "canvas_rule": "canvas = folio_number + 1 for a recto shown as the RIGHT page of an opening; the LEFT page of the same canvas is the previous leaf's verso. No IIIF manifest folio labels exist for this ark (tools/gallica_folio.py: 207 canvases, 0 labelled).",
+  "canvas_rule_correction_NEV-C1": "WRONG for the f.176-179 span, eye-checked 27 Sept 2026 (NEV-C1): here canvas = folio_number + 3, not +1 (canvas179 ink-stamped '176', canvas180 '177', canvas181 '178', canvas182 '179' -- confirmed by reading the ink foliation directly at each step, not predicted). f.174 no.86 (27 Aug 1572 per nevers.htm) is ink folio 177 = canvas 180, one recto before f.178. The +1 rule holds at the four points eye-checked far earlier in the volume (f.11r=canvas12 etc., see the 'why' field) but has drifted to +3 by here; do not assume either offset for f.144/f.152/f.160/f.168/f.174/f.184 without eye-checking each one directly the same way (LESSONS.md-style: offsets drift within a volume, e.g. fr.20140 at f.50v).",
   "files": {
     "f138r_canvas139.jpg": {
       "folio": "138r",
       "canvas": 139,
       "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f139/full/1000,/0/native.jpg",
       "note": "this folder's own target f.138 no.71, Saluzzo -- ink foliation '138' confirmed; a marginal endorsement on the facing verso reads (partially) 'Lodovico Birago del Marchese... conto di Saluzza a Nevers... alli 7 di Gennaro 1572' (7 January, not Tomokiyo's stated 7 February 1572 -- a date discrepancy between the endorsement and the catalogue sentence, not resolved here, flagged for the SOLVE parent); cipher block not examined (no reading, no decoding, per this job's brief)"
+    },
+    "f178r_verso177_canvas181.jpg": {
+      "folio": "178r (left page of the same canvas: 177v, the letter's own address leaf, 'Al Ill.mo et Ecc.mo Sig.re et Sig.r mio oss.mo il Sig.r Duca di Nevers Par di Francia...')",
+      "canvas": 181,
+      "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f181/full/1000,/0/native.jpg",
+      "note": "NEV-C1 witness, no.87, 8 Sept 1572 -- ink foliation '178' confirmed by eye. Letter opens 'Subito che s'hebbe la nuova della ferita, et poi della morte di Monsig. l'Armuraglio...' (the Amiraglio/Coligny, killed in the Aug 1572 massacre -- content-consistent with the 8 Sept 1572 date). The last 2 lines of the page are cipher signs; no interlinear plaintext above or below them (confirmed by direct inspection and by a second, independent subagent read of the same crop)."
+    },
+    "f178v_179r_canvas182.jpg": {
+      "folio": "178v (left, entirely cipher, roughly 24-26 lines, no interlinear gloss anywhere on the page) and 179r (right, ink foliation '179' confirmed, plaintext resumes, mentions 'Bellagarda' -- reads as a direct continuation of no.87's prose, not a clear new-letter heading, though not conclusively settled)",
+      "canvas": 182,
+      "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f182/full/1000,/0/native.jpg",
+      "note": "the cipher passage of no.87: 2 lines on f.178r + the whole of f.178v, roughly 26-28 cipher lines total, well over the brief's ~14-line cap (not transcribed this job -- see NOTES.md NEV-C1 section, plaintext witness not found)"
+    },
+    "f179v_insert_canvas183.jpg": {
+      "folio": "a small loose/tipped-in sheet (roughly half the page width, tilted) photographed lying over what would be f.179v, with f.179r's ink foliation '179' visible again on the facing right page of this same canvas",
+      "canvas": 183,
+      "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f183/full/1000,/0/native.jpg",
+      "note": "candidate for Tomokiyo's 'decipherment attached to no.87' by position (immediately after the cipher passage) and by a faint archival annotation in its bottom-left corner that a subagent read as possibly containing '87' and a date-like group resembling '1572' (confidence L-M, not a confirmed transcription). The visible face is out-of-focus, low-contrast bleed-through from the far side of the thin sheet (confirmed independently by this worker and by a second subagent pass on a higher-resolution enhanced crop, f179v_insert_crop_enhanced.png) -- ILLEGIBLE as a source of clerk plaintext at this resolution/exposure. Not confirmed to actually be the attachment Tomokiyo meant; could equally be an unrelated filed note."
+    },
+    "f179v_insert_crop_enhanced.png": {
+      "derived_from": "canvas 183 at native 2200px wide (scratch only, not committed), cropped to the loose sheet and autocontrast-enhanced",
+      "note": "still illegible bleed-through, see above; kept as the working image a future pass should start from rather than re-fetching"
     }
   },
   "target_folios_not_yet_fetched": {
-    "f.144 no.73": "recto -- canvas 145 (predicted, not eye-checked)",
-    "f.152 no.77": "recto -- canvas 153 (predicted, not eye-checked)",
-    "f.160 no.82": "recto -- canvas 161 (predicted, not eye-checked)",
-    "f.168 no.85": "recto -- canvas 169 (predicted, not eye-checked)",
-    "f.174 no.86": "recto -- canvas 175 (predicted, not eye-checked)",
-    "f.184 no.90": "recto -- canvas 185 (predicted, not eye-checked)",
-    "f.178 no.87 (witness, with decipherment)": "recto -- canvas 179 (predicted, not eye-checked)"
+    "f.144 no.73": "recto -- canvas offset unconfirmed between here and f.174 (see canvas_rule_correction_NEV-C1), do not assume +1 or +3 without eye-checking",
+    "f.152 no.77": "recto -- canvas offset unconfirmed, see above",
+    "f.160 no.82": "recto -- canvas offset unconfirmed, see above",
+    "f.168 no.85": "recto -- canvas offset unconfirmed, see above",
+    "f.174 no.86": "recto -- ink folio 177 = canvas 180, eye-checked NEV-C1 27 Sept 2026 (offset +3 here)",
+    "f.184 no.90": "recto -- canvas offset unconfirmed, likely +3 given f.178/f.179 but not eye-checked"
   },
   "requests": {
-    "gallica.bnf.fr": "see ciphers/ceppo-nevers-fr3251-1570s/images/manifest.json -- one shared count for both folders (5 native.jpg fetches, 1 retried once after a connection reset)"
+    "gallica.bnf.fr": "see ciphers/ceppo-nevers-fr3251-1570s/images/manifest.json for the earlier shared count (5 fetches); NEV-C1 (27 Sept 2026) added 9 more to this ark locating and inspecting the witness (canvas 179 at 1000px and 1800px, canvas 181 at 1000px [1 connection-reset retried once] and 2000px, canvas 180 at 1000px, canvas 182 at 1000px, canvas 183 at 1000px and 2200px) -- over the job's own stated 8-request allowance by 1, spent entirely on locating the witness and its decipherment (the brief's predicted canvas 179 was ink folio 176, not 178; see canvas_rule_correction_NEV-C1 above) rather than on any target folio"
   }
 }

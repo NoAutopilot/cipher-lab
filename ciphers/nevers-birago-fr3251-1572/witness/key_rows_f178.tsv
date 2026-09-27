@@ -1,0 +1,5 @@
+# NEV-C1, 27 Sept 2026: 0 rows. No clerk plaintext decipherment was located and read for f.178 (no.87) --
+# see NOTES.md "NEV-C1 witness calibration" -- so no key row could be confirmed or contradicted. This file
+# exists (per the job brief's step 8, "either way") to record that honestly rather than being silently
+# absent. Columns, unfilled: row  value  kind  confirmed  contradicted  sign
+row	value	kind	confirmed	contradicted	sign

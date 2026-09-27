@@ -82,3 +82,74 @@ and KEY-DESIGN.tsv both carry rows for this key; `tools/key_design.py --check` p
 `keys/key_nevers_birago_1572.tsv` with a 20-shuffled-key control (rule 3); reading to a verifier. The f.138
 date discrepancy (above) is still unresolved and should be checked against the image before or during that
 transcription pass.
+
+## NEV-C1 witness calibration (27 Sept 2026)
+
+Per `.claude/briefs/runs/2026-09-27-lane-nev-owner-c1-calibrate-f178.md`. **FAIL at step (a): no clerk
+plaintext decipherment located and read.** Status stays `open`. No target work done; no class, no novelty
+wording, no grades.
+
+**What the page shows.** The brief's predicted canvas for f.178 (179, on a +1 folio-to-canvas offset carried
+over from the sibling folder's manifest) is wrong for this span of the volume: canvas 179 is ink-stamped
+folio **176**, not 178 (confirmed by eye, zoomed crop). Stepping forward one canvas at a time and reading each
+ink foliation directly (not predicting): canvas 180 = f.177 (ends "...da Saluzzo li 27. de Agosto 1572",
+matching no.86's 27 Aug 1572 date from nevers.htm), canvas 181 = **f.178** (ink foliation '178' confirmed),
+canvas 182's right page = f.179 (ink foliation '179' confirmed). So the offset here is folio+3, not folio+1;
+recorded as `canvas_rule_correction_NEV-C1` in `images/manifest.json`, since the +1 rule that held at the
+four points checked when this folder was built (f.11r/f.19r/f.119r/f.189r, all far earlier in the volume) has
+drifted by the time the volume reaches f.176-179 -- do not assume either offset for the other five target
+folios without eye-checking each one, the same lesson CLAUDE.md already records for fr.20140 at f.50v.
+
+Canvas 181's left page is f.177v, the letter's own address leaf ("Al Ill.mo et Ecc.mo Sig.re et Sig.r mio
+oss.mo il Sig.r Duca di Nevers Par di Francia..."), confirming no.87 opens on the facing recto, f.178r. f.178r
+opens "Subito che s'hebbe la nuova della ferita, et poi della morte di Monsig. l'Armuraglio..." (the Amiraglio,
+i.e. Coligny, killed in the August 1572 St. Bartholomew's Day massacre -- content-consistent with the 8 Sept
+1572 date nevers.htm gives for no.87). Ordinary Italian handwriting continues for most of the page; the last
+two lines are cipher signs. Those two lines have **no interlinear plaintext** above or below them -- checked
+directly and by an independent subagent read of the same crop (`f178r_cipher.png`, scratch), which also
+transcribed the preceding four plaintext lines for confirmation (not used for anything beyond confirming the
+image is legible and cipher-free of any gloss). The cipher continues onto the whole of f.178v (canvas 182's
+left page): a full page of cipher signs, roughly 24-26 lines, again no interlinear gloss anywhere on the page
+(checked directly at 1000px and by the same subagent on a zoomed crop, `f178v_top_zoom.png`, scratch). Total
+cipher passage: roughly 26-28 lines, well over the brief's "take the first 12 lines" cap for a passage over
+about 14 lines -- moot here since no plaintext to align it to was found. f.179r (canvas 182's right page)
+resumes ordinary prose and mentions "Bellagarda" again, reading as a plausible direct continuation of no.87
+rather than a clearly new letter (no new heading/address observed) -- not conclusively settled, not needed
+for this job.
+
+**The attached decipherment.** Canvas 183 shows, on its left page, a small loose/tipped-in sheet of paper
+(roughly half the page's width, photographed at an angle, lying over what would be f.179v), with f.179r's
+ink foliation '179' visible again on the facing right page of this same canvas. Position (immediately after
+the cipher passage) and a faint archival annotation in the sheet's bottom-left corner -- a subagent read it
+as possibly containing '87' and a date-like group resembling '1572', confidence L-M, not a confirmed
+transcription -- make it a plausible candidate for Tomokiyo's "decipherment attached to no.87". **Its visible
+face is illegible**: out-of-focus, low-contrast text consistent with ink bleeding through from the far side of
+the thin sheet, not a front-facing legible hand. Checked at three zoom/contrast levels (1000px overview,
+2200px native crop, and an autocontrast-enhanced crop, `images/f179v_insert_crop_enhanced.png`) by this
+worker directly, and independently by a subagent given the enhanced crop with no other context, which reached
+the same conclusion ("bleed-through, not front-facing legible writing... too soft-focus and low-contrast to
+resolve individual letterforms"). Neither pass invented a reading. This is not confirmed to actually be the
+decipherment Tomokiyo meant -- it could be an unrelated filed note -- and was not confirmed to be illegible
+for a structural reason (e.g. it may simply be photographed from the wrong side); a future pass with a
+different exposure/angle, or the archive's own finding aid, might resolve it.
+
+**Verdict.** Plaintext read (a) FAILS: no legible clerk decipherment was found, interlinear or attached, so
+subagent (b) (sign read) and (c) (blind check) were not run -- there is nothing to align a sign transcription
+against, and running them without a comparison would not calibrate anything. `witness/key_rows_f178.tsv` is
+written with 0 rows for the same reason (brief step 8, "either way"). The key itself (`key_nevers_birago_1572.tsv`)
+is neither confirmed nor contradicted by this job; `tools/decode_witness.py` (this job's shared deliverable,
+step 7) is written and offline-tested but has not yet been run against real witness data for this target.
+
+**Named next step:** a worker with the Gallica request budget to (i) re-fetch canvas 183 at full native
+resolution with a different crop/orientation in case the sheet's legible face is elsewhere in frame, and/or
+(ii) check the BnF catalogue record or finding aid for this ark for any note about a loose insert near f.179,
+before spending further budget re-transcribing f.178's cipher passage blind. Ceppo-Nevers f.27 (this key's
+own next witness pass, per the lane orchestrator's job order) is unaffected by this finding and should proceed
+on its own merits; `tools/decode_witness.py` is ready for it.
+
+**Requests:** gallica.bnf.fr 9 in this job (canvas 179 at 1000px and 1800px; canvas 181 at 1000px [1
+connection-reset, retried once after a pause] and 2000px; canvas 180 at 1000px; canvas 182 at 1000px; canvas
+183 at 1000px and 2200px) -- one over the brief's stated 8-request allowance, spent entirely on locating the
+witness and searching for its decipherment (the brief's own predicted canvas was two folios off, see above)
+rather than on any target folio; logged here rather than hidden. Subagents: 2 (both read-only image review,
+no transcription committed as a reading). No hosts but gallica.bnf.fr; no credentials; no AskUserQuestion.
