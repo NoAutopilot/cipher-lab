@@ -106,20 +106,28 @@ Brief `.claude/briefs/runs/2026-09-26-lane-crypt-orchestrator.md` (owner's ask t
 
 Precedents added to README "Per-unit pricing precedents" (case-row digest, paper digest, text key tables; image key tables: open one first). UPDATES.md rows 01:05. SYSTEM.md rows for the three LESSONS registers and the cryptiana/lasry source registers.
 
-## LANE SALV2 handoff (session_01288kYmmNxAqAedKtgvxyD1), 27 September 2026 (live)
+## LANE SALV2 handoff (session_01288kYmmNxAqAedKtgvxyD1), 27 September 2026 (closed: jobs 1-2 done, job 3 stopped over cap)
 
-Brief `.claude/briefs/runs/2026-09-27-lane-salv2-orchestrator.md`. **Job 1 done** (about 19.75 of the 36 priced): SALV2-J1A
-(9.11, f54r+f54v) and SALV2-J1B (10.64, f55r+f56r+f56v), two blind code+mark passes on per-box crops + reconciliation each
-(crop_plain_leaf.py gained `--boxes`). Of the 98 SALV-SPLIT-confirmed boxes: 93 written as signs into the real
-ciphertext_f5*.tsv (AB 49, M 44, 8 code `?`), 5 both-pass WORD left plain (two restored to `_` by the lane, c844a59); O -> o.;
-pass A/B code+mark agreement 51/98 (52 percent), so the new tokens carry about 20 percent model error and the corrected text
-about 6.9 percent per sign. **Job 2 done** (SALV2-J2, 7.00): spec rebuilt under rule 7 (2839->2932 tokens, 236->251 types, 389->327 runs, 1214->1121
-plain; `?` boxes are individual hapax types; both --check exit 0; split-candidate files removed); every earlier HYPOTHESES row
-relabelled "on the old split"; NEAR row updated. cm at the measured error, control first: **CONTROL BELOW GATE** at CM_ERR 0.07
-(0.439/0.365/0.284) and 0.08 (0.504/0.859/0.247), gate 2 of 3 >= 0.6 -- target not run, a non-test, not a negative. The control
-anneal stops at -2.54/symbol against the true key's -2.30: a search-budget shortfall at K=251 and 24 restarts. **Job 3 running:**
-SALV2-J3 (session_01SjqqqBLzLrC4NYCaSe1WEb), f55v/f56v plain boxes re-settled from the image against a matched control, brief
-`2026-09-27-lane-salv2-ytbiz-j3-resettle.md`.
+Target fr2933-salviati-1525, status **partial** (NEAR row updated by J2; near_check ok). Brief
+`.claude/briefs/runs/2026-09-27-lane-salv2-orchestrator.md`. Spend by get_session: SALV2-J1A 9.11 D, SALV2-J1B 10.64 D,
+SALV2-J2 7.00 D, SALV2-J3 15.69 F (interrupted), orchestrator 5.47 at the close.
+
+Established: (1) the 98 SALV-SPLIT-confirmed boxes read by two blind code+mark passes on per-box crops (crop_plain_leaf.py
+`--boxes`): 93 signs written into ciphertext_f5*.tsv (AB 49, M 44; 8 code `?`), 5 both-pass WORD left plain; pass A/B code+mark
+agreement only 51/98; O -> o. (2) Spec rebuilt under rule 7 on that text: 2932 tokens, 251 types, 327 runs, 1121 plain; `?`
+boxes are individual hapax types; split-candidate files removed; every earlier HYPOTHESES row relabelled "on the old split";
+error estimate 6.83 pct per sign. (3) cm at the measured error, control first: CONTROL BELOW GATE at 0.07 (0.44/0.37/0.28) and
+0.08 (0.50/0.86/0.25) -- target not run, a non-test. The control anneal ends at -2.54/symbol against the true key's -2.30, so the
+search, not the design, is what fails at K=251 and 24 restarts; the old 0.07 pass was narrow (K=223) and never re-run at K=236.
+(4) Job 3 (f55v/f56v plain boxes) was interrupted at 15.69 of 14 with the window at allowed_warning; only
+resettle_sample.json landed. Its session (session_01SjqqqBLzLrC4NYCaSe1WEb) is idle and NOT archived: its reads may still be in
+the container if the parent can resume it with a "push what you have, then stop" message; otherwise archive it.
+
+Named next step, for the parent (rule 3 repeated-attempt: this is one knob on the same family, so the parent decides): the cm
+control alone at CM_ERR 0.07 with 48 and 96 restarts, 3 seeds, before any target run (CPU only, about USD 2-3 of Sonnet). If it
+clears 2 of 3 at 0.6, run the target at the same budget; if not, log cm "untested-by-this-tool at this N/K" and do not tune it
+further. Job 3 stays open: re-settle f55v/f56v from the image, priced per box asked (192 target rows + control is two heavy calls,
+not 5.5 each), pushing each pass TSV as it lands. Check-ins armed: none.
 
 ## LANE SALV handoff (session_01PUAQ15dRtV3yV1eskpRLg5), 26-27 September 2026 (closed at the 300k context line; one worker still live)
 
