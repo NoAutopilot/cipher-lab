@@ -182,7 +182,7 @@ test, not the manuscript). Decode = the reader's per-sign label (a key-inventory
 two; que/qui/pour a word). A position matches if any value in the set is the letter Tomokiyo reads there (a word code
 matches if it equals his letters at that point). Each span's markup (one character per sign, dashes as wildcards) is
 aligned to the reader's full sign sequence for that line by one fixed local DP (match +1, mismatch 0, gap -1), the same
-alignment for target and controls. Gate: **pooled match >= 0.85** over the 45 letters of the five spans, AND above the
+alignment for target and controls. Gate: **pooled match >= 0.85** over the 55 letters of the five spans (4+10+12+7+11+11; S4 counted as its two lines), AND above the
 maximum of **20 controls** in which the key's value sets are shuffled across its 16 symbols (seed 1; same coverage by
 construction, so coverage is not the statistic). Ambiguity rate (share of decoded sign tokens with more than one value) is
 reported beside it, non-gating. Diagnostic for outcomes (b)/(c), also fixed now: for every reader label, the letters
