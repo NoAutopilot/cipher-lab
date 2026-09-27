@@ -1008,3 +1008,5 @@ repository as normal. Set it to `done` with the commit hash when the work is pus
 2026-09-27T02:37Z	session_01Vxjaf6WBWx6qv59akhYTrJ	SALV2-J1A	done 9.11 D (get_session), ledgered, retitled ARCHIVED, archived by LANE SALV2	34ed005
 2026-09-27T02:37Z	session_01VzEYtGGPUK4sC6LisYPYA7	SALV2-J1B	done 10.64 D (get_session), ledgered, retitled ARCHIVED, archived by LANE SALV2	3da6ac3
 2026-09-27T02:37Z	session_01RzqyN5cbc5J4LpxprPfLpT	SALV2-J2 (Sonnet, cap 8, box 90)	fr2933-salviati-1525: rule-7 rebuild on the corrected split, HYPOTHESES/NEAR relabel, cm rerun control first at CM_ERR 0.07+0.08	brief 2026-09-27-lane-salv2-ytbiz-j2-rebuild.md; LANE SALV2
+2026-09-27T03:12Z	session_01RzqyN5cbc5J4LpxprPfLpT	SALV2-J2	done 7.00 D (get_session), ledgered, retitled ARCHIVED, archived by LANE SALV2	4e5b624/7c64b73/956c5ef; control below gate, target not run
+2026-09-27T03:12Z	session_01SjqqqBLzLrC4NYCaSe1WEb	SALV2-J3 (Sonnet, cap 14, box 60)	fr2933-salviati-1525 f55v+f56v plain boxes re-settled from the image vs matched control (job 3 reserve; job 1 under 30, window allowed)	brief 2026-09-27-lane-salv2-ytbiz-j3-resettle.md; LANE SALV2

@@ -113,9 +113,13 @@ Brief `.claude/briefs/runs/2026-09-27-lane-salv2-orchestrator.md`. **Job 1 done*
 (crop_plain_leaf.py gained `--boxes`). Of the 98 SALV-SPLIT-confirmed boxes: 93 written as signs into the real
 ciphertext_f5*.tsv (AB 49, M 44, 8 code `?`), 5 both-pass WORD left plain (two restored to `_` by the lane, c844a59); O -> o.;
 pass A/B code+mark agreement 51/98 (52 percent), so the new tokens carry about 20 percent model error and the corrected text
-about 6.9 percent per sign. **Job 2 running:** SALV2-J2 (session_01RzqyN5cbc5J4LpxprPfLpT), rebuild + relabel + cm control at
-0.07 and 0.08 then target, brief `2026-09-27-lane-salv2-ytbiz-j2-rebuild.md`. Job 3 condition (job 1 under 30) met; runs
-after job 2 if the window reads allowed.
+about 6.9 percent per sign. **Job 2 done** (SALV2-J2, 7.00): spec rebuilt under rule 7 (2839->2932 tokens, 236->251 types, 389->327 runs, 1214->1121
+plain; `?` boxes are individual hapax types; both --check exit 0; split-candidate files removed); every earlier HYPOTHESES row
+relabelled "on the old split"; NEAR row updated. cm at the measured error, control first: **CONTROL BELOW GATE** at CM_ERR 0.07
+(0.439/0.365/0.284) and 0.08 (0.504/0.859/0.247), gate 2 of 3 >= 0.6 -- target not run, a non-test, not a negative. The control
+anneal stops at -2.54/symbol against the true key's -2.30: a search-budget shortfall at K=251 and 24 restarts. **Job 3 running:**
+SALV2-J3 (session_01SjqqqBLzLrC4NYCaSe1WEb), f55v/f56v plain boxes re-settled from the image against a matched control, brief
+`2026-09-27-lane-salv2-ytbiz-j3-resettle.md`.
 
 ## LANE SALV handoff (session_01PUAQ15dRtV3yV1eskpRLg5), 26-27 September 2026 (closed at the 300k context line; one worker still live)
 
