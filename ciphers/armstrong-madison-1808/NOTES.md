@@ -1143,3 +1143,17 @@ not a leads-prompt answer or a reading; every citation below is a claim to verif
 - archival-route; Internet Archive OCR for the 1893 chronological calendar `cu31924032751665_djvu.txt` returned HTTP 502, not retrieved; the 1904 catalogue's p.29 citation for the key is unconfirmed independently of this OCR -- unchecked.
 - archival-route (already logged, ARM-PRIVATE); Brooklyn CBH 1974.002 Box 1 Folder 25 (privately addressed 1803 Livingston letter) and the Brant Box 37 request named as fallback inputs if LOC image access stays blocked -- unchecked.
 - internal-flag; a ROOM entry timestamped 17:43 UTC from Codex ARM-KEYIMAGE claims retrieval of the Livingston key image under a folder `codex-2026-09-27f`, but that folder and any completion report are absent from the repository as fetched for this PR (based on remote `main` commit `d134ed2d68eede9b88308aa37aa171f0380f7e20`) -- not confirmed lost or superseded, just unreconciled -- unchecked.
+
+
+## Second-opinion leads (SO-ARMSTRONG-SPACE, 27 Sept 2026)
+
+Landed from PR 41 (`second-opinions/chatgpt-space-2026-09-27.md`, PR-LAND-16). A space-aware homophonic
+glyph-attack report, not a leads-prompt answer or a reading; every citation below is a claim to verify,
+never a fact -- unchecked.
+
+- experiment-result; a space-aware model (encoded spaces, up to four cipher types per plaintext character) recovers 96.5-100% on three synthetic known-answer controls and its Armstrong candidate beats all 20 positional shuffles (target -342.574535 vs shuffle mean -359.175970) but remains incoherent -- no key or decipherment claimed -- unchecked.
+- experiment-negative; a separate no-space variant (same four-homophone cap, spaces stripped) fails two of its three known-answer controls at both budgets (150x50,000 and 600x100,000 restarts; e.g. control1 falls from 42/257 to 12/257 correct with more search), so no Armstrong target or shuffled-target run was attempted for it and it licenses no negative evidence against unspaced homophonic spelling -- unchecked.
+- archival-route; a newly indexed reel-3 image-page reference (`loc.gov/resource/mss33217.003/?sp=1111&st=image`) for the Livingston key returned HTTP 403; not an identified key frame -- unchecked.
+- archival-route; the LOC finding aid PDF (`tile.loc.gov/storage-services/service/gdc/gdcfindingaidpdfs/ms009142/ms009142.pdf`) and existing index evidence locate the research lead but no key image was obtained or compared -- unchecked.
+- lead; Klaus Schmeh's article comment thread (30-31 August) was checked: its author reports unsuccessful continuation searches and withdraws two additional phrase proposals; no verified complete reading or usable key -- unchecked.
+- lead; a brief Wouves 1797 syllabic-table search did not yield an inspected key plate, and a numerical coordinate-code idea was considered but not implemented as a controlled decoder -- neither is promoted to a result -- unchecked.
