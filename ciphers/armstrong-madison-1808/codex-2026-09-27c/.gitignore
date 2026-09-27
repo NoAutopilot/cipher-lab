@@ -1,0 +1,3 @@
+*.bin
+piece_solve
+__pycache__/

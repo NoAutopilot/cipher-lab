@@ -1102,3 +1102,16 @@ New screens: exhaustive 4-digit position/digit permutations (87,091,200 candidat
 ## Codex ARM-GLYPHS, 27 September 2026
 
 Continued owner-directed attack: `codex-2026-09-27b/REPORT.md`, provisional image-based glyph inventory (257 tokens, 36 types), homophonic-letter solver and controls. Three clean held-out English controls recover 99.22%, 100%, 99.22%; the retained mixed French/Latin bibliography stress sample recovers 35.02% at the smaller budget, 52.92% at the larger. Neither target run reads; transcription is M-grade and controls do not match unknown shorthand design. French, vowel-deletion, separator and coarse-merger explorations have no dedicated positive controls and license no exclusions. Pinckney-Erving partial anchors checked: six common-word numbers absent from target, no direct-key anchor, renumbering not excluded. No target key, plaintext, solved status or outreach.
+
+
+## Codex ARM-PIECES, 27 September 2026 — variable-length glyph search
+
+Status remains **unsolved**. See [codex-2026-09-27c/REPORT.md](codex-2026-09-27c/REPORT.md) for source inspection, code and retained results.
+
+Primary Annet 1752 and 1770 manuals contain alphabets, standalone word signs and compounds. The earlier ARM-S3 description of Annet as a nonalphabetic sign index is insufficient; the 1761 instructions were not retrieved, and edition mappings must not be interchanged. The 1770 dotted-cup/WITH resemblance is a visual hypothesis only; no Armstrong sign was assigned WITH. See [MANUALS.md](codex-2026-09-27c/MANUALS.md).
+
+The new letter/digraph substitution surrogate uses the previous provisional transcription (257 tokens, 36 types, 28 fragments), the existing historical English character model, and five held-out Jefferson controls. Initial positive per-character bonuses failed the controls by overusing digraphs. With bonus zero and deeper search, tuning recovery was 240/257, 221/257 and 239/257 exact token pieces. Fresh validation recovered 219/257 (85.21%) and 251/257 (97.67%), clearing the recorded exploratory threshold. All controls' optimized approximations outscore their true plaintext: this is partial recovery, not an exact-key guarantee.
+
+Target and three position-shuffled copies received equal two-stage budgets (120 x 45,000 then 1,000 x 120,000 iterations). Best log10 scores were target -294.031441 and shuffles -300.026775, -297.181649, -301.153413. Every output is unreadable. Three shuffles establish no significance claim. No coherent crib was available for numerical/repeated-passage confirmation. This does not exclude shorthand or digraph encodings, and it does not validate the uncertain transcription. No target key entry was added.
+
+The primary Madison-to-Jefferson transcription of 15 May 1808 was opened at https://rotunda.upress.virginia.edu/founders/default.xqy?keys=FOEA-print-02-01-02-3083 (early-access text). Its postscript corroborates the private-correspondent-key possibility; it supplies no key. No outreach occurred.

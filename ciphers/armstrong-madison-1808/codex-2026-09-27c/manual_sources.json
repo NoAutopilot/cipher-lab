@@ -1,0 +1,30 @@
+[
+  {
+    "author": "Peter Annet",
+    "year": 1752,
+    "url": "https://www.dropbox.com/scl/fi/i0dqytfc2xt35hft2ppvr/Annets-Shorthand-1752.pdf?dl=1&rlkey=1k8jfq01kzsfqj03cirrdsjp2",
+    "listing": "https://www.stenophile.com/historical",
+    "internet_archive_identifier": "bim_eighteenth-century_annets-short-hand-more_annet-peter_1752",
+    "bytes": 30691700,
+    "sha256": "4aa2d9c1d3e1cf4ba316eec1c8304a35fc67c8ac7b1bd56abf3de8afde4f47ee",
+    "pdf_pages": 45,
+    "visually_inspected_pdf_pages": [
+      3
+    ],
+    "retrieved": "2026-09-27"
+  },
+  {
+    "author": "Peter Annet",
+    "year": 1770,
+    "url": "https://www.dropbox.com/scl/fi/e0nih2zcsrhl5tfq2d8wy/Annets-Shorthand-1770.pdf?dl=1&rlkey=rn4g1tw3iwvnkv0wasqory24m",
+    "listing": "https://www.stenophile.com/historical",
+    "internet_archive_identifier": "bim_eighteenth-century_annets-short-hand-whic_annet-peter_1770",
+    "bytes": 9716038,
+    "sha256": "243dfc316e7b7d2fb7cd282dcb503ce50aac3d44334bf93fa03e419bb017df3c",
+    "pdf_pages": 19,
+    "visually_inspected_pdf_pages": [
+      3
+    ],
+    "retrieved": "2026-09-27"
+  }
+]
