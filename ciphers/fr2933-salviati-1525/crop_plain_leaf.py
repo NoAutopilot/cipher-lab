@@ -20,11 +20,22 @@ Output: plain_crops/<leaf>/L<nn>.png (one per manuscript line) + plain_crops/<le
   (line, file, plain_pos_list, render, scale)
 
   python3 crop_plain_leaf.py f54r
+
+Per-box mode (LANE SALV2, 27 Sept 2026, for the blind code+mark passes on SALV-SPLIT's confirmed boxes):
+  python3 crop_plain_leaf.py f56r --boxes LIST.tsv --out DIR --seed N [--leaf-col]
+LIST.tsv has header columns line, pos (and leaf, if --leaf-col: then one crop set may span several leaves, e.g.
+f56r+f56v). For each listed box, cuts from the same render and transform one crop with about one box-width of
+context left/right and 1.5 box-heights above (marks sit above the sign) and 0.6 below, draws a thin blue rectangle
+round the target box only, upscales so the crop is about 400 px high, never wider than 2500 px, and saves it as
+DIR/cNNN.png in an order shuffled by --seed. The opaque id -> (leaf, line, pos) map goes to DIR/../<basename>_key.tsv,
+outside DIR, so a subagent given DIR never sees it. No plain/sign annotation is drawn.
 """
 import csv, os, sys
 from PIL import Image, ImageDraw, ImageFont
 
-LEAF = sys.argv[1]
+LEAF = sys.argv[1] if len(sys.argv) > 1 and not sys.argv[1].startswith("-") else None
+if LEAF is None or "-h" in sys.argv or "--help" in sys.argv:
+    print(__doc__); sys.exit(0)
 OUT = f"plain_crops/{LEAF}"
 MAX_W = 2400
 FONT_PATH = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
@@ -136,5 +147,58 @@ def main():
     print(f"{LEAF}: {len(manifest)} line crops -> {OUT}/, manifest {OUT}/manifest.tsv, {total_plain} plain boxes marked")
 
 
+def boxes_mode(list_path, out_dir, seed, leaf_col):
+    import random
+    items = []
+    with open(list_path) as f:
+        for r in csv.DictReader(f, delimiter="\t"):
+            leaf = r["leaf"] if leaf_col else LEAF
+            items.append((leaf, int(r["line"]), float(r["pos"])))
+    random.Random(seed).shuffle(items)
+    os.makedirs(out_dir, exist_ok=True)
+    renders, boxcache = {}, {}
+    key_rows = []
+    for i, (leaf, line, pos) in enumerate(items, 1):
+        if leaf not in renders:
+            src_path, off_x, off_y, scale = SOURCES[leaf]
+            renders[leaf] = (Image.open(src_path).convert("RGB"), off_x, off_y, scale, src_path)
+            boxcache[leaf] = load_boxes(leaf)
+        im, off_x, off_y, scale, src_path = renders[leaf]
+        b = boxcache[leaf].get((line, int(pos)))
+        if b is None:
+            print(f"WARNING: no box for {leaf} line {line} pos {pos}", file=sys.stderr)
+            continue
+        x, y, w, h = b
+        sx0, sy0 = (x + off_x) * scale, (y + off_y) * scale
+        sw, sh = w * scale, h * scale
+        W, H = im.size
+        cx0 = max(0, int(sx0 - max(sw, 30 * scale)))
+        cx1 = min(W, int(sx0 + sw + max(sw, 30 * scale)))
+        cy0 = max(0, int(sy0 - 1.5 * max(sh, 30 * scale)))
+        cy1 = min(H, int(sy0 + sh + 0.6 * max(sh, 30 * scale)))
+        crop = im.crop((cx0, cy0, cx1, cy1))
+        d = ImageDraw.Draw(crop)
+        d.rectangle([sx0 - cx0 - 3, sy0 - cy0 - 3, sx0 - cx0 + sw + 3, sy0 - cy0 + sh + 3], outline=(0, 60, 220),
+                    width=max(2, int(2 * scale)))
+        r = 400 / crop.height
+        if crop.width * r > 2500:
+            r = 2500 / crop.width
+        crop = crop.resize((max(1, int(crop.width * r)), max(1, int(crop.height * r))), Image.LANCZOS)
+        cid = f"c{i:03d}"
+        crop.save(f"{out_dir}/{cid}.png")
+        key_rows.append((cid, leaf, line, pos, os.path.basename(src_path)))
+    key_path = os.path.join(os.path.dirname(os.path.normpath(out_dir)) or ".", os.path.basename(os.path.normpath(out_dir)) + "_key.tsv")
+    with open(key_path, "w") as f:
+        f.write("id\tleaf\tline\tpos\trender\n")
+        for row in key_rows:
+            f.write("\t".join(str(c) for c in row) + "\n")
+    print(f"{len(key_rows)} box crops -> {out_dir}/ (seed {seed}), key {key_path}")
+
+
 if __name__ == "__main__":
-    main()
+    if "--boxes" in sys.argv:
+        a = sys.argv
+        boxes_mode(a[a.index("--boxes") + 1], a[a.index("--out") + 1], int(a[a.index("--seed") + 1]) if "--seed" in a else 0,
+                   "--leaf-col" in a)
+    else:
+        main()
