@@ -861,3 +861,39 @@ Cost per line from this job's own call (for any later MONT-READ-ALL): one Opus c
 
 Requests this job: 0 network requests; 2 subagent reading calls (C Opus, B Sonnet). No credentials, no AskUserQuestion,
 no novelty wording.
+
+## MONT-LATTICE (27 Sept 2026)
+
+Per `.claude/briefs/runs/2026-09-27-parent-ytbiz-mont-lattice.md` (parent worker MONT-LATTICE, Opus,
+session_013inShGgtotvyeAm64ZTkqT). Box started 15:17 UTC (clock read). Script only: no reading call, no new
+transcription, no network. Intake gate re-run: `open (line 1) -- edition/page or full-text-search citation found
+within 6 lines`, exit 0.
+
+**Pre-registration (written 15:20 UTC, before the first lattice run).**
+- Material: the four calibration lines L03, L08, L13, L15. Voters: call C (Opus, sloped sheets, primary), call A
+  (Opus, old fixed-y sheets, `???` tails dropped as no-coverage), call B (Sonnet, no dots), the two blind passes
+  (`witness/pass_a.tsv`, `pass_b.tsv`, per-line sign strings, non-digit signs as `?`) and the settled v2 digits
+  (`witness/read_digits/ref_v2.tsv`, MONT-4715B's settled signs on these lines). Each voter is aligned to call C's
+  stream (semi-global, free end gaps); a column carries the digits proposed by any voter, `none` where a covering
+  voter has a gap, and MONT-CAL's confusion neighbours of every proposed digit (true digit t for a read r where
+  t->r is among MONT-CAL's ten most frequent confusions: 3->5, 3->7, 3->0, 5->3, 8->0, 5->0, 2->3, 8->1, 8->5,
+  1->5) at a lower weight. A column no voter reads (all `?`) stays `?`: the decoder cannot invent a digit there.
+  Dot/no-dot is offered only on a column where some voter marked a dot.
+- Path score: reader weight (log share of the column's weight) + key validity (the segparse inventory: letter code,
+  dotted 2-digit word-code, penalised non-key pair or singleton) + lambda x a French letter bigram (tools/data/fr16,
+  mont4715c `norm`) + a dotted word-code prior built from `aligned_dump.txt`'s own glosses **excluding every dump
+  group inside any of the four lines' windows (anchored span +- 8)**, so no calibration line's answer enters the model.
+- Output is a digit stream with marks, scored by `scripts/mont4715c.py digscore` unchanged (margin 8 decides).
+  Gates as MONT-READ-DIGITS: G0 digit LCS >= 0.92, G1 letter group >= 0.85, G2 dotted recall >= 0.70.
+- **Held-out rule:** tuned pair = L03, L08 (the first two by leaf position); held-out pair = L13, L15. Every free
+  parameter (voter weights, neighbour weight, lambda, dot threshold) is chosen by grid on the tuned pair only, by
+  the sum G0+G1+G2 there; the held-out pair is scored once with the chosen setting. The gates are read on the
+  held-out pair; the pooled four-line figure is reported beside it and does not decide. Disclosure: call C's own
+  score on the tuned pair (0.983 / 0.910 / 0.737) was printed by a timing run at about 15:19 UTC after this split had
+  been chosen and before this paragraph was written; held-out per-pair numbers had not been printed.
+- Controls, both on the same pair and the same scorer: (i) shuffled weights -- each column's weight vector is
+  replaced by that of a random column in the same line, assigned to the column's own candidates in random order
+  (5 replicates, seed 1); (ii) call C alone. The lattice passes only if it meets all three gates on the held-out
+  pair AND beats both controls there on G2 (the gate call C misses) without falling below call C on G0 or G1.
+- Log: every position where the chosen digit came only from a confusion neighbour (no voter proposed it), with
+  its weight.
