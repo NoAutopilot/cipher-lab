@@ -1,0 +1,50 @@
+ATLAS CODE LIST (36 codes), name -> shape description:
+  a -> bold cursive a
+  e -> looped e (ℓ-like): ONE bowl closed by a loop at the top, the stroke rising into the loop; usually carries # or + above. Not eps.
+  g -> 9/g-shaped sign
+  y -> cursive y with a looped tail
+  psi -> ψ-like forked y (two arms, straight tail)
+  m -> cursive m (often carries ~ above)
+  w -> cursive w/ω, often with a lead-in stroke from the left
+  wd -> ω joined to a tall right stroke (like "ud")
+  v -> curved v with a hooked left arm (ṽ-like)
+  N -> cursive N / И
+  nt -> n joined to a crossed stroke (looks like n+), ONE sign
+  bh -> þ/b-like: tall straight stem with a small hooked loop at the upper right, often a lead-in stroke from the left (the only h/b-like cipher code; plain-script b, h, d, ll are '_')
+  p -> p with loop, its stem crossed
+  f -> long f/ſ with a crossbar
+  ch -> c followed by a tall looped h (che abbreviation?)
+  S -> S/ʃ-shaped sign
+  Z -> Z-shaped sign
+  S7 -> 7-shaped sign
+  S4 -> 4-shape with a foot: a slash crossing a ⊥
+  lam -> Λ lambda: two strokes meeting at the top
+  Lx -> Λ with a bar crossing its right leg (looks like "4" or "Λ+")
+  L -> L (often a small 1 or 7 written inside the angle, which is part of the sign)
+  H -> H
+  K -> K
+  tee -> ⊢: vertical stroke with a bar to the right
+  + -> single cross standing on the line (t-like)
+  # -> double-barred cross standing ON the line (not a superscript)
+  eps -> ε epsilon: TWO open bowls stacked, open to the right, no closed loop; marks above are rare. Not e.
+  dl -> δ with a long tilde tail (δ~)
+  rz -> low shape on the line like "ɿ2" / a lying z, left hook then wave
+  phi -> φ: small slashed o on a long stem
+  o. -> ⊙ ring with a dot inside (a ʔ-shaped sign that falls here is not o.)
+  [ -> ⊏ square box open to the RIGHT
+  ] -> ⊐ square box open to the LEFT
+  sq -> □ closed square box
+  U -> ⊔ square cup open at the TOP
+
+MARK VOCABULARY (drawn above a sign), symbol -> description:
+  ~ -> tilde/"2"-like wave above
+  # -> double cross above
+  + -> single cross above
+  o -> small ring above (°)
+  dot -> dot(s) above
+  1 -> short stroke / 1 above
+  5 -> s/5-like hook above
+  7 -> 7 above
+  ot -> small "ot"/"of" above
+
+Several marks on one sign are joined with '|' (e.g. 'dot|~').
