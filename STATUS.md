@@ -127,7 +127,7 @@ Owner-account verifier lane, opened 26 Sept 17:51 by the owner-account parent (b
 - **Lesson:** re-read the ROOM tail immediately before every create_session when another account may already hold the
   job (VO1-JAPIKSE). And read context from get_session, never estimate it: this lane reported 140k when the real figure was 319k.
 
-## LANE NEV handoff (session_019nCvSe9RbV93Hiezc5nP9E), 27 September 2026 (closed on the parent's 08:43 decision)
+## LANE NEV handoff (session_019nCvSe9RbV93Hiezc5nP9E), 27 September 2026 (live)
 
 Brief: .claude/briefs/runs/2026-09-27-lane-nev-orchestrator.md (owner account, announced exception: SUPPLY takes both
 fr.3251 groups while SOLVE is at allowed_warning). Targets: ciphers/nevers-birago-fr3251-1572 (7 letters, witness
@@ -143,7 +143,7 @@ group. One worker at a time.
   tools/decode_witness.py exists with an offline test. Nevers-Birago calibration is pending: the sheet's written face
   (an archive photograph) or a control-backed decode of the no.87 cipher passage.
 - f.27r = canvas 28 (ink '27' checked by eye by the orchestrator); short cipher passage (about 1.5 lines) mid-page.
-- CLOSE-OUT: NEV-C3 DONE 10.28 D- (get_session), ledgered, archived. The f.82 gloss came back from the subagents
+- CLOSED (parent decision 08:43; heading kept for the section guard). NEV-C3 DONE 10.28 D- (get_session), ledgered, archived. The f.82 gloss came back from the subagents
   as 6 letters: 0.83 vs shuffled 0.78 sd 0.29, z 0.20; pooled with f.27, 12 letters, 0.92, z 0.97. A non-test with a
   degenerate control, not a near-pass. The lane closes with no reading, as the parent decided at 08:43. Worker spend
   28.99 (NEV-C1 5.77, NEV-C2 12.94, NEV-C3 10.28) against about 25 budgeted. Next steps, in order:
