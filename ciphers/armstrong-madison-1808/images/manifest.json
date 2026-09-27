@@ -1,6 +1,6 @@
 {
  "source": "NARA RG 59, General Records of the Department of State, Despatches from Diplomatic Officers, Despatches from U.S. Ministers to France, 1789-1906 (microfilm publication M34), roll 14, item NAID 188671566 (\"Jan. 22, 1808-Sept. 14, 1810\")",
- "route": "catalog.archives.gov public IIIF Image API v3 (no key needed): item page discovered via the site's own React search UI (headless Chromium, tools/browser_fetch.js; plain curl to catalog.archives.gov/search or /proxy/records/search returns only the app shell), image URLs read from the item page's embedded IIIF manifest data. Fetched at each frame's own native resolution via .../full/<w>,<h>/0/default.jpg (info.json gives width/height/maxArea per frame; requesting a size wider than a frame's own native width, e.g. a fixed 3300px for all four, silently returns the site's HTML error shell at HTTP 200 for the frames narrower than that -- fetch each frame at its own info.json dimensions, not a fixed guess).",
+ "route": "catalog.archives.gov public IIIF Image API v3 (no key needed): item page discovered via the site's own React search UI (headless Chromium, tools/browser_fetch.js; plain curl to catalog.archives.gov/search or /proxy/records/search returns only the app shell), image URLs read from the item page's embedded IIIF manifest data. Fetched at each frame's own native resolution via .../full/<w>,<h>/0/default.jpg (info.json gives width/height/maxArea per frame; requesting a size wider than a frame's own native width, e.g. a fixed 3300px for all four, silently returns the site's HTML error shell at HTTP 200 for the frames narrower than that -- fetch each frame at its own info.json dimensions, not a fixed guess). | Step H4 (27 Sept 2026, 23:39-23:41 UTC): frames 0024 and 0025 fetched keyless with the same route; the ARM-S2 failure on 0025 is explained by the request form, not the frame: `full/full/0/default.jpg` answers HTTP 400 \"Invalid size\" (text/plain) on this IIIF v3 service, while `full/<w>,/0/default.jpg` and the exact native `full/<w>,<h>/0/default.jpg` both answer image/jpeg (tested 23:41 UTC); info.json answered 200 today, so its earlier shell answer was transient. Both frames stored at the largest width whose area fits info.json maxArea (10,000,000 px); the native-size copies were not kept.",
  "fetched": "2026-09-26",
  "images": [
   {
@@ -54,6 +54,30 @@
    "bytes": 2874458,
    "sha1": "4b21943e97d58ffd9f28086d44b5effa9c2fbdde",
    "note": "ARM-POOL2, 26 Sept 2026: the docket frame ARM-POOL flagged at frame 0645 (near frames 0641-0648, the 'confidentially sent' batch). Left page: 'List of Genl Armstrong's letters, extracts from which were confidentially sent to [the President?]' -- six items, dated 27 Dec 1807, 22 Feb 1808, 9 March 1808, 15 March 1808, an undated 'note referred in the above', and a 'Private to Mr M[adison]: 30th August' (year not given). Right page: an unrelated bound-in French customs document ('Douanes Imperiales, 1er Dispositif de la vente du 1er Aout 1810'), not part of the list. Committed as the docket of record: this pass located and screened four of the six items (pool/DOCKET-0645.tsv)."
+  },
+  {
+   "file": "M34-014-0024.jpg",
+   "iiif_id": "lz/dc-metro/rg-059/603720/M34/M34-014/M34-014-0024.jpg",
+   "width": 3333,
+   "height": 2982,
+   "native": "3648x3264",
+   "bytes": 441338,
+   "sha1": "0e01a3034b806756a5300a52c5972cedfe10b1c0",
+   "url": "https://catalog.archives.gov/iiif/3/lz%2Fdc-metro%2Frg-059%2F603720%2FM34%2FM34-014%2FM34-014-0024.jpg/full/3333,/0/default.jpg",
+   "fetched": "2026-09-27 23:39 UTC, campaign step H4",
+   "note": "15 Feb 1808 Armstrong-to-Madison THE=972 office-code letter (0024 body, 0025 last three numeral lines + closing); stored below native (see route note); native-size request also works, full/full does not"
+  },
+  {
+   "file": "M34-014-0025.jpg",
+   "iiif_id": "lz/dc-metro/rg-059/603720/M34/M34-014/M34-014-0025.jpg",
+   "width": 3300,
+   "height": 2927,
+   "native": "3680x3264",
+   "bytes": 247842,
+   "sha1": "d13023ea502539a429e2de569afe5c56a8c98536",
+   "url": "https://catalog.archives.gov/iiif/3/lz%2Fdc-metro%2Frg-059%2F603720%2FM34%2FM34-014%2FM34-014-0025.jpg/full/3300,/0/default.jpg",
+   "fetched": "2026-09-27 23:39 UTC, campaign step H4",
+   "note": "15 Feb 1808 Armstrong-to-Madison THE=972 office-code letter (0024 body, 0025 last three numeral lines + closing); stored below native (see route note); native-size request also works, full/full does not"
   }
  ],
  "not_fetched": "other roll-14 frames outside the 29-33 and 0645 ranges this brief and its predecessors name; the item has 664 images/1 file total; see pool/manifest.json (ARM-POOL, 26 Sept 2026) for the roll-14 survey's own low-res thumbnails and pool-candidate native fetches. Roll 13 (NAID 188671172, 'Nov. 12, 1804-Dec. 27, 1807', 392 images) frame 0390 (the 27 Dec 1807 letter, docket item 1) was read this pass (ARM-POOL2) but not committed -- scratch only, screened not transcribed, per this job's brief.",

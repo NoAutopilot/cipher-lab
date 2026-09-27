@@ -1583,3 +1583,38 @@ own answer-aware exercise alignments cover and this campaign has not re-tested. 
 (percentile 94.8) is worth one cheap follow-up on a *reconciled* mark transcription rather than either single pass:
 recorded as hypothesis H15. No reading, no class change. Requests: none. Cost: no get_session figure to this runner;
 the row's estimate (1.5 USD) is what `campaign.py --spend` records. Compute 26 s.
+
+## Campaign step H4 (27 Sept 2026, 23:39-23:42 UTC)
+
+Runner: campaign runner armstrong-madison-1808 (account 2, session_013E5jUS9GV1AsxLeUcwgbf6). Hypothesis H4: re-derive
+the keyless NARA IIIF route for frame M34-014-0025 (ARM-S2's flagged failure) and run the superscript-tick-vs-baseline-
+dash check ARM-S2 left undone, on Armstrong's ordinary THE=972 office-code letter of 15 Feb 1808.
+
+**Route (7 requests to catalog.archives.gov, 1.6 s apart, descriptive UA).** `info.json` for 0025 and 0024 both answer
+200 today (native 3680x3264 and 3648x3264, maxArea 10,000,000). The request form is what failed ARM-S2, not the frame:
+`full/full/0/default.jpg` answers HTTP 400 "Invalid size" (text/plain) on this IIIF Image API v3 service, whereas
+`full/<w>,/0/default.jpg` (w*h under maxArea) and the exact native `full/<w>,<h>/0/default.jpg` both answer
+image/jpeg. Both frames are now in `images/` (0024 at 3333x2982, 0025 at 3300x2927, sha1 in `images/manifest.json`,
+folder 28 MB of the 30 MB line) with the route note in the manifest. Frame 0024 is the 15 Feb letter's cipher body
+(header "Paris 15 february 1808", about 220 groups), 0025 its last three numeral lines, closing and P.S.
+
+**Tick check (this runner's own reading of five native line bands of 0024 and the three lines of 0025, one reader,
+grade M).** The office hand shows three kinds of extra mark, none of them the target's: (1) the digit 6 written
+raised at the end of a group -- 1116 (= "s", the plural suffix in THE=972, Bourdeau H), 1086, 316, 426, 1016, 1216,
+1146, 1416, 1596, and mid-group in 962 -- about 18 instances, a calligraphic habit for "6", not a separate stroke;
+(2) a small subscript hook or "s"-like flourish under the last digit of a few groups (817, 741, 1165, 624, 66 --
+five instances, possibly last-digit corrections or a suffix device; not read further); (3) one interlinear
+correction ("1005" written above "888"). No horizontal bar above a numeral anywhere -- the target's R5 superscript
+tick (over 38, 1640 and 1276 in `ciphertext_ms.txt`; `images/shorthand/INVENTORY_reconciled.tsv` R5: the same
+stroke as the target's baseline dash, repositioned) does not occur in the sibling office letter. Counting it as a
+test: 3 ticks in 358 target groups against 0 in about 243 office groups gives a one-sided Fisher P of 0.21 -- at
+three events this is not a discriminating count, so the finding is qualitative (the office hand has a different
+mark repertoire), not a control-backed exclusion of "tick = office convention". The office letter's subscript hooks
+are a new lead the target's mark inventory can be checked against cheaply (R4 "backward comma" hooks, R5 baseline
+dashes): recorded as H16.
+
+**Verdict for the campaign:** route fixed and documented (done); tick check run, qualitative only -- the target's
+bar-above-numeral tick is absent from about 243 groups of the same writer's office usage (Fisher P 0.21, not a test
+at N=3). No reading, no class change. Requests per host: catalog.archives.gov 7. Cost: no get_session figure to
+this runner; the row's estimate (1 USD) is what `campaign.py --spend` records. Vision: 9 crops read by this runner,
+no subagent calls.
