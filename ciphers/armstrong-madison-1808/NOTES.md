@@ -1749,8 +1749,8 @@ by this runner and by one independent Sonnet second reader (three sheets, no oth
 
 **Count.** Of 12 single-digit occurrences checked (14 of 16 seen, 2 M), none carries a mark. Under a frame-127-style
 design in which single digits spell letters with alphabet 1 (a-i) unmarked and alphabets 2-3 (k-z) marked, the
-share of marked letters in English text is about 0.59 (letter frequencies), so P(0 marked of 10 clean singles) is
-about 1.3e-4 (0 of 12: 2.2e-5). The design's own positive expectation therefore fails on the target's single
+share of marked letters in English text is about 0.53 (letter frequencies, j folded), so P(0 marked of 10 clean
+singles) is about 5e-4 (0 of 12: 1.1e-4). The design's own positive expectation therefore fails on the target's single
 digits; a design in which single digits are code values (not letters) is untouched by this. The shuffled-position
 null the row named is not needed: the statistic is a plain count against the design's own prediction, and a
 position shuffle could not change which groups are single-digit (rule 3, same-axis).
@@ -1766,7 +1766,7 @@ margin and mid-height, two blind passes), then a test of whether marks recur on 
 null.
 
 **Verdict for the campaign:** FAIL for the compact-key alphabet-mark design element (0 of 12 single digits marked
-against about 0.59 expected, P about 1e-4), conditional on marks being visible at this resolution (two of the three
+against about 0.53 expected, P about 5e-4 to 1e-4), conditional on marks being visible at this resolution (two of the three
 transcribed ticks are themselves faint). One correction to the mark record (page-2 1640 double dot, untranscribed)
 and one new value-bound lead. No reading, no class change. Requests: none. Cost: no get_session figure to this
 runner; the row's estimate (1.5 USD) is what `campaign.py --spend` records. Vision: 1 Sonnet subagent call (three
