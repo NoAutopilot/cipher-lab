@@ -588,3 +588,64 @@ Requests: gallica.bnf.fr 6 (4 rectos at width 1500, f.258r native, fr.7131 f.228
 scratchpad; no image added to the folder. Subagents: 12 Sonnet (10 cipher line passes, 2 clerk passes).
 Files: `sibling/{ciphertext_f258.txt,plaintext_f258.txt,decode_f258.txt,compare_f258.txt,merge_passes.py,
 compare_clerk.py,passes/}`.
+
+## VB-KEY known-plaintext key re-derivation (27 Sept 2026): hold-out bar NOT met, f.268 not decoded
+
+Per `.claude/briefs/runs/2026-09-27-parent-vb-key.md`. Status unchanged: `blocked` (the M9 gate). No class, no
+grades, no reading. **Over cap:** 18.53 USD by get_session against a cap of 10 (8 Sonnet calls; the wave-2 passes each
+ran 58-77 zoom/tile tool calls inside one call, which the call count did not price).
+
+**1. Known plaintext.** f.260r (canvas f525, native, scratch crops only), lower cipher block, lines 1-12 (native y
+2381-4355; line 1 is the one under "aitreueillez & peutestre"), each cut as gloss row plus cipher row in two halves
+split at an ink gap. Two blind Sonnet passes per line. Each pass wrote the sign id (inventory.txt) and the gloss
+letters standing directly above that sign (`sibling/passes/f260_S<set><A|B>.tsv`). Not reached: f.260 upper block and
+the rest of f.258. Merged by `sibling/kp_key_v3.py merge` into `sibling/ciphertext_f260.txt`, `plaintext_f260.txt`
+and `aligned_f260.tsv` (A=B kept, else pass A; a pass line whose sign column mostly repeats its gloss is dropped):
+568 merged sign tokens, 231 A=B (41%). Per line: 51, 63, 35, 31, 0, 34, 49, 52, 40, 67, 39, 29%. Line 5 pass A read
+the gloss row as cipher and was dropped. Pass S4A says it looked at other passes' files for sign vocabulary, so set 4
+is not fully blind. The signs match on only 41%, well below f.258's 67%. The gloss pairing agrees far less:
+only 28 positions have the same sign and the same gloss in both passes. So the direct per-sign pairing is not usable
+evidence on its own.
+Known plaintext in the test: 1,475 clerk letters over 29 line observations (f.258 lines 2-6; f.260 lines 1-12 per pass).
+
+**2. Key v3 (`keys/key_f275_v3.tsv`).** Instrument: a hard-EM line alignment in `kp_key_v3.py`, not
+`tools/interlinear_align.py`, because that tool's floor rule is built for numeral groups. The alignment gives each
+sign a chunk of its line's clerk letters: 0-1 for a letter sign, 0-2 for a syllable sign, 0-12 for a number. v2's
+values seed round 1, then six rounds. Cells: 40 changed against v2, 29 v2-unclear given another value, 23 confirmed,
+11 confirmed-unclear, 53 new, 111 v2-kept (never attested). 88 are attested by 2 or more occurrences.
+**No changed cell reaches 0.6 agreement, so every change is marked unclear=1.** v2's letter cells hold up best where
+counts are large: s=i (22/72), p=i (19/64), o=e (20/50), r=e (17/35), m=u (14/37), b=u (11/46), e=p (10/26),
+26=en (10/34).
+
+**3. Hold-out, control first (`python3 sibling/kp_key_v3.py holdout-em`).** Each line is decoded with a key built
+without it. The control is 20 class-shuffled copies of that key (decode_f275.shuffled, seed 20260926).
+```
+EM key, held out:   502/1475 = 0.340; shuffled mean 0.246 sd 0.010 max 0.263; z 9.90
+key v2, same lines: 490/1475 = 0.332; shuffled mean 0.248 sd 0.019;          z 4.46
+per-pass pairing (holdout, f.260 lines 1-6 only, earlier run): 0.273 vs 0.221, z 2.13; on f.258: 0.335 vs v2's 0.467
+```
+The key carries real signal against its control, but **0.340 is far under the 0.70 bar**, and the key re-derived from
+the clerk reads the held-out lines no better than v2 (+0.008). Per rule 3's "same knob" clause, the limit is the
+sign transcription, not the key values.
+Step 4 was not run: no f.268 decode, no reading_v3.txt, no check-solved sweep.
+
+**Sign families that still fail** (count, share of the majority value; see the note column in key v3):
+- the 9-shaped g: 43 occurrences, 0.14, spread over p, e, r, t, s, o;
+- stand-alone 9: 38, 0.16;
+- f: 29, 0.14;
+- u: 30, 0.17;
+- y: 31, 0.29, spread over r, a and t, as VB-KP saw;
+- ff/xff: 29, 0.34;
+- single digits 1, 2, 4, 6, 7, 8 and ^7: 0.20-0.43;
+- the d family (d, do, Zt, ls): 0.25-0.44;
+- word codes 99 and 18: the alignment cuts their spans wrongly, 0.17-0.20.
+
+In short, the families that VB-KP and VB-DECODE2 flagged are still the ones the blind passes cannot separate by
+shape.
+
+**Next step (a different instrument, not a third crop pass):** transcribe a few f.260 lines with the clerk's own
+decipherment in view, aligned per sign by one careful reader and checked by a second, instead of blind shape-only
+passes. That gives grade-C sign pairs for the g/9/y/f/u/d families directly. Also, a pass must not see any other
+pass's output.
+Requests: gallica.bnf.fr 3 (f.258r and f.260r native, 1 connection-reset retry), scratch only; no image added to the
+folder. Subagents: 8 Sonnet.

@@ -1,0 +1,276 @@
+# Bongars cipher no.3 (fr.7129 f.275) key re-derived from the clerk's interlinear decipherment of the sibling
+# f.260r and f.258r (VB-KEY, 27 Sept 2026; sibling/kp_key_v3.py key, hard-EM alignment of each line's signs to
+# the clerk's letters, v2 seeding round 1). Grade C: every attested value is the clerk's. Columns
+# 1-7 as key_f275_v2.tsv (decode_f275.py reads them); count = aligned occurrences (f.260 counts each pass's line; f.258 the merged line);
+# agree = share of the majority value; lines = line numbers attesting it (f.258 2-6 and f.260 1-12 share numbers); flag: confirmed / changed (clerk
+# contradicts v2) / v2-unclear (v2 had it unclear or blank, clerk gives another value) / confirmed-unclear /
+# new (sign absent from v2) / v2-kept (never attested by the clerk: v2's value kept). unclear=1 when count 1 or
+# agreement under 0.6.
+sign	value	kind	folio	column	unclear	note	count	agree	lines	flag
+y	r	letter	260r	clerk	1	clerk r:9,a:6,t:5,e:4,n:2,y:1,g:1,l:1,m:1,u:1; v2 a/letter	31	0.29	1,2,3,4,5,6,8,9,10	changed
+3	a	letter	260r	clerk	1	clerk a:9,l:1,c:1,e:1,d:1,m:1,n:1,o:1,r:1; v2 a/letter	17	0.53	1,3,4,6,9,10,11,12	confirmed
+x	a	letter	260r	clerk	0	clerk a:5,b:1,u:1,e:1; v2 a/letter	8	0.62	3,4,6,12	confirmed
+Hr	a	letter	260r	clerk	1	clerk a:3,e:1,fo:1,en:1; v2 a/letter	6	0.50	1,2,4,10	confirmed-unclear
+pH	e	letter	260r	clerk	1	clerk e:2,a:1,s:1,r:1; v2 b/letter	5	0.40	2,4,5,6	v2-unclear
+8	e	letter	260r	clerk	1	clerk e:5,n:2,i:2,u:2,b:1,x:1,o:1,l:1; v2 b/letter	15	0.33	1,3,4,5,7,8,9,10,11	v2-unclear
+ab	h	letter	260r	clerk	1	clerk h:1,ni:1,t:1,tr:1,ns:1,r:1,tt:1,a:1; v2 b/letter	8	0.12	2,9,10,11	changed
+u	i	letter	260r	clerk	1	clerk i:5,r:4,n:3,-:3,l:3,d:2,e:2,c:2,m:1,p:1,s:1,h:1,t:1,u:1; v2 c/letter	30	0.17	1,2,4,5,6,7,8,9,10,11,12	v2-unclear
+v		null	260r	clerk	1	clerk -:2,i:1,t:1,n:1,o:1,s:1,a:1; v2 c/letter	8	0.25	2,4,6,11,12	changed
+ls	d	letter	260r	clerk	1	clerk d:4,t:1,e:1,o:1,r:1,se:1; v2 d/letter	9	0.44	1,4,5,6,7,10	confirmed
+r	e	letter	260r	clerk	1	clerk e:17,r:4,o:3,u:3,t:3,s:2,y:1,-:1,m:1; v2 e/letter	35	0.49	1,2,3,4,5,6,7,8,9,10,11,12	confirmed
+q	e	letter	260r	clerk	1	clerk e:17,s:3,c:2,f:2,n:1,a:1,i:1,l:1,o:1; v2 e/letter	29	0.59	1,2,3,4,5,6,7,8,9,10,11,12	confirmed
+o	e	letter	260r	clerk	1	clerk e:20,s:9,a:4,u:3,n:2,t:2,d:2,p:2,q:1,r:1,z:1,f:1,l:1,o:1; v2 e/letter	50	0.40	1,2,3,4,5,6,7,8,9,10,11,12	confirmed
+g	p	letter	260r	clerk	1	clerk p:6,e:6,r:6,t:5,s:4,o:4,a:3,n:2,u:2,d:1,i:1,c:1,g:1,f:1; v2 f/letter	43	0.14	1,2,3,4,5,6,7,8,9,10,11,12	v2-unclear
+x4	h	letter	260r	clerk	1	clerk h:2,n:2,s:1,o:1,-:1,r:1; v2 g/letter	8	0.25	7,8,9,12	changed
+ss		null	260r	clerk	1	clerk -:3,l:3,e:2,g:2,sa:1,en:1,h:1,it:1,le:1,ee:1; v2 g/letter	16	0.19	3,7,8,9,10,11,12	changed
+qo	h	letter	260r	clerk	1	clerk h:1,n:1,lt:1; v2 h/letter	3	0.33	2,4,7	confirmed
+fh	t	letter	260r	clerk	1	clerk t:1,n:1,r:1,a:1; v2 h/letter	4	0.25	1,3,10,11	v2-unclear
+s	i	letter	260r	clerk	1	clerk i:22,e:11,d:5,p:4,t:4,l:4,o:3,a:3,r:3,m:2,n:2,s:2,u:1,g:1,y:1,c:1,z:1,q:1,-:1; v2 i/letter	72	0.31	1,2,3,4,5,6,7,8,9,10,11,12	confirmed
+p	i	letter	260r	clerk	1	clerk i:19,e:18,r:4,l:3,-:3,h:3,f:3,s:3,p:2,t:2,b:2,m:1,a:1; v2 i/letter	64	0.30	1,2,3,4,5,6,7,8,9,10,11,12	confirmed
+un	i	letter	260r	clerk	1	clerk i:5,u:2,de:1,-:1,f:1,t:1,sd:1; v2 i/letter	12	0.42	1,2,8,9,10,11,12	confirmed-unclear
+Hun	l	letter	260r	clerk	1	clerk l:1,n:1; v2 l/letter	2	0.50	10,12	confirmed-unclear
+mt	l	letter	275r	alpha:l	0	m with tail; VB-DECODE2: column confirmed by two fresh reads of the f.275 alphabet crop	0			v2-kept
+Hu	m	letter	260r	clerk	1	clerk m:2,ez:2,e:1,d:1; v2 m/letter	6	0.33	2,4,8,9,11	confirmed-unclear
+i	e	letter	260r	clerk	1	clerk e:3,d:3,n:3,r:2,s:2,z:1; v2 n/letter	14	0.21	1,2,3,4,6	changed
+k	n	letter	260r	clerk	0	clerk n:7,i:1,l:1,e:1; v2 n/letter	10	0.70	1,2,3,4,5,6	confirmed
+cc	n	letter	260r	clerk	1	clerk n:1,p:1; v2 n/letter	2	0.50	1,6	confirmed
+f	e	letter	260r	clerk	1	clerk e:4,o:4,n:3,r:3,l:2,t:2,s:2,p:2,a:2,d:1,-:1,f:1,z:1,y:1; v2 o/letter	29	0.14	2,3,4,5,6,9,10,11,12	v2-unclear
+do	o	letter	260r	clerk	1	clerk o:3,r:2,e:1,ez:1,uy:1,ye:1,t:1,m:1,is:1; v2 o/letter	12	0.25	2,4,5,6,10,11,12	confirmed-unclear
+e	p	letter	260r	clerk	1	clerk p:10,e:3,s:2,-:2,n:2,a:2,i:2,u:1,d:1,f:1; v2 p/letter	26	0.38	1,2,3,4,5,6,8,12	confirmed-unclear
+ff	r	letter	260r	clerk	1	clerk r:10,u:2,q:2,er:2,e:2,th:1,a:1,or:1,l:1,et:1,ra:1,f:1,gs:1,g:1,n:1,td:1; v2 q/letter	29	0.34	1,2,3,4,5,6,8,11	v2-unclear
+c	n	letter	260r	clerk	1	clerk n:2,c:1,u:1,a:1; v2 q/letter	5	0.40	6,7	v2-unclear
+d	r	letter	260r	clerk	1	clerk r:5,e:2,s:2,f:1,a:1,t:1,x:1,o:1; v2 r/letter	14	0.36	2,3,4,5,6,7,9,11	confirmed-unclear
+xff	r	letter	275r	alpha:r	1	crossed ff/pi-like ligature; aid ff-crossed=r	0			v2-kept
+a	s	letter	260r	clerk	0	clerk s:30,t:4,l:3,d:2,a:2,e:2,h:1,z:1,n:1,u:1,f:1,-:1; v2 s/letter	49	0.61	1,3,4,5,6,7,8,9,10,11,12	confirmed
+Z	s	letter	260r	clerk	0	clerk s:11,-:2,a:2,i:1; v2 s/letter	16	0.69	1,2,3,5,6,7,8,9,10,11	confirmed
+HZ	s	letter	275r	alpha:s	1	Z with a large hook under	0			v2-kept
+od	s	letter	260r	clerk	1	clerk s:6,en:1,d:1,y:1,h:1,r:1; v2 s/letter	11	0.55	2,5,7,8,9,10	confirmed
+6	r	letter	260r	clerk	1	clerk r:4,e:2,l:2,t:1,b:1,n:1,a:1,s:1,-:1,u:1; v2 t/letter	15	0.27	4,5,6,7,8,11,12	changed
+Zt	t	letter	260r	clerk	1	clerk t:3,e:2,sa:1,er:1,m:1,du:1,za:1,st:1,ss:1; v2 t/letter	12	0.25	3,4,5,10,11,12	confirmed-unclear
+tt	so	letter	260r	clerk	1	clerk so:1,-:1,ic:1,ta:1; v2 t/letter	4	0.25	4,6	v2-unclear
+t	t	letter	260r	clerk	1	clerk t:6,s:2,u:1,i:1,c:1,n:1,h:1,r:1; v2 t/letter	14	0.43	3,4,5,6,7,9	confirmed-unclear
+b	u	letter	260r	clerk	1	clerk u:11,t:9,n:5,e:4,o:3,a:3,r:2,f:2,p:2,z:1,s:1,l:1,m:1,d:1; v2 u/letter	46	0.24	1,2,3,4,5,6,7,9,10,11,12	confirmed
+m	u	letter	260r	clerk	1	clerk u:14,l:5,m:3,g:2,r:2,-:2,f:2,i:2,e:1,t:1,b:1,o:1,w:1; v2 u/letter	37	0.38	1,2,3,4,5,6,7,8,9,10,11	confirmed
+co	n	letter	260r	clerk	1	clerk n:1,u:1,no:1,su:1,es:1; v2 u/letter	5	0.20	1,7,12	changed
+ba	z	letter	260r	clerk	1	clerk z:1,ez:1; v2 u/letter	2	0.50	1	changed
+dd	xa	letter	260r	clerk	1	clerk xa:1; v2 x/letter	1	1.00	6	changed
+4	r	letter	260r	clerk	1	clerk r:2,f:2,s:2,a:2,o:1,y:1; v2 y/letter	10	0.20	3,4,5,6,11	v2-unclear
+oo	u	letter	260r	clerk	1	clerk u:2,pe:1,-:1,e:1; v2 y/letter	5	0.40	3,6,9	changed
+ri	e	letter	260r	clerk	1	clerk e:1; v2 z/letter	1	1.00	8	changed
+sin	i	letter	260r	clerk	1	clerk i:1; v2 z/letter	1	1.00	8	changed
+bb	com	letter	275r	alpha:final	1	b with bar; last header read as con/com	0			v2-kept
+ut	com	letter	275r	alpha:final	1		0			v2-kept
+ur	?	letter	260r	clerk	1	clerk -:1,t:1; v2 com/letter	2	0.50	2,11	v2-unclear
+w	n	letter	260r	clerk	1	clerk n:3,u:2,l:1,r:1; v2 /null	7	0.43	1,8,9,11,12	v2-unclear
+7	e	letter	260r	clerk	1	clerk e:4,t:3,p:2,n:1,d:1,r:1,s:1,-:1; v2 /null	14	0.29	1,2,3,4,5,8,9	v2-unclear
+9	e	letter	260r	clerk	1	clerk e:6,o:3,l:3,p:3,n:3,a:3,t:3,r:3,i:2,g:2,s:2,y:1,b:1,x:1,f:1,d:1; v2 c'est/word	38	0.16	2,3,4,5,6,7,8,9,10,11	v2-unclear
+10	las	word	260r	clerk	1	clerk las:1; v2 conti/word	1	1.00	5	changed
+11	cardinal	word	275r	plain 6-99	0		0			v2-kept
+12	dicte	word	275r	plain 6-99	0		0			v2-kept
+13	qdu	word	260r	clerk	1	clerk qdu:1; v2 duc/word	1	1.00	4	changed
+14	don	word	275r	plain 6-99	0		0			v2-kept
+15	de	word	260r	clerk	1	clerk de:4,-:1,naun:1,milie:1,es:1; v2 de/word	8	0.50	2,3,4,6	confirmed
+16	sditen	word	260r	clerk	1	clerk sditen:1,a:1; v2 du/word	2	0.50	3,8	changed
+17	durh	word	260r	clerk	1	clerk durh:1; v2 d'autant/word	1	1.00	5	changed
+18	d	letter	260r	clerk	1	clerk d:2,l:2,nsonu:1,osyis:1,dit:1,n:1,osbl:1,p:1; v2 dit/word	10	0.20	4,5,6,7,8,12	changed
+19	eun	word	260r	clerk	1	clerk eun:1; v2 ?/word	1	1.00	5	v2-unclear
+20	e	letter	260r	clerk	0	clerk e:2,n:1; v2 ?/word	3	0.67	7	v2-unclear
+21	q	letter	260r	clerk	1	clerk q:1,saussysan:1; v2 Espagne/word	2	0.50	5,12	changed
+22	Espagnols	word	275r	plain 6-99	0		0			v2-kept
+23	i	letter	260r	clerk	1	clerk i:1; v2 Escosse/word	1	1.00	1	changed
+24	enf	word	260r	clerk	1	clerk enf:1; v2 Escossois/word	1	1.00	2	changed
+25	t	letter	260r	clerk	1	clerk t:1; v2 est/word	1	1.00	5	changed
+26	en	word	260r	clerk	1	clerk en:10,-:3,t:2,b:2,a:2,d:2,i:1,naunsrepared:1,royox:1,z:1,s:1,etlestetiffe:1,le:1,ene:1,ele:1,ant:1,eqlen:1,yduuoyageenl:1,ttan:1; v2 en/word	34	0.29	2,3,5,6,7,8,9,10	confirmed-unclear
+27	encore	word	275r	plain 6-99	0		0			v2-kept
+28	od	word	260r	clerk	1	clerk od:1,e:1; v2 estre/word	2	0.50	6	changed
+29	a	letter	260r	clerk	1	clerk a:1,-:1; v2 entre/word	2	0.50	4	changed
+30	eulx	word	275r	plain 6-99	0		0			v2-kept
+31	faire	word	275r	plain 6-99	0		0			v2-kept
+32	fault	word	275r	plain 6-99	0		0			v2-kept
+33	fin	word	275r	plain 6-99	0		0			v2-kept
+34	font	word	275r	plain 6-99	0		0			v2-kept
+35	rsalinnoy	word	260r	clerk	1	clerk rsalinnoy:1,r:1; v2 fort/word	2	0.50	1,4	changed
+36	forain	word	275r	plain 6-99	1		0			v2-kept
+37	France	word	275r	plain 6-99	0		0			v2-kept
+38	françois	word	275r	plain 6-99	0		0			v2-kept
+39	a	letter	260r	clerk	1	clerk a:1,ins:1,grand:1; v2 grand/word	3	0.33	3,5	changed
+40	p	letter	260r	clerk	1	clerk p:1,r:1; v2 gouverneur/word	2	0.50	3,11	changed
+41	gouverneurs	word	275r	plain 6-99	0		0			v2-kept
+42	gens de pied	word	275r	plain 6-99	0		0			v2-kept
+43	gens de cheval	word	275r	plain 6-99	0		0			v2-kept
+44	hommes de pied	word	275r	plain 6-99	0		0			v2-kept
+45	hault	word	275r	plain 6-99	0		0			v2-kept
+46	hommes	word	275r	plain 6-99	0		0			v2-kept
+47	j'ay	word	275r	plain 6-99	0		0			v2-kept
+48	i	letter	260r	clerk	1	clerk i:1,ie:1; v2 je/word	2	0.50	3,11	changed
+49	il	word	275r	plain 6-99	0		0			v2-kept
+50	ils ont	word	275r	plain 6-99	0		0			v2-kept
+51	Italie	word	275r	plain 6-99	0		0			v2-kept
+52	Italiens	word	275r	plain 6-99	0		0			v2-kept
+53	Jesuites	word	275r	plain 6-99	1		0			v2-kept
+54	lieu	word	275r	plain 6-99	1		0			v2-kept
+55	le	word	260r	clerk	1	clerk le:1; v2 le/word	1	1.00	5	confirmed
+56	luy	word	275r	plain 6-99	0		0			v2-kept
+57	leur	word	260r	clerk	1	clerk leur:1; v2 leur/word	1	1.00	2	confirmed-unclear
+58	les	word	275r	plain 6-99	1		0			v2-kept
+59	?	word	275r	plain 6-99	1		0			v2-kept
+60	Luxembourg	word	275r	plain 6-99	0		0			v2-kept
+61	la	word	260r	clerk	0	clerk la:2,ir:1; v2 la/word	3	0.67	2,7	confirmed
+62	Lorraine	word	275r	plain 6-99	0		0			v2-kept
+63	Lorrains	word	275r	plain 6-99	0		0			v2-kept
+64	lansquenets	word	275r	plain 6-99	0		0			v2-kept
+65	Lucerne	word	275r	plain 6-99	1		0			v2-kept
+66	Metz	word	275r	plain 6-99	0		0			v2-kept
+67	Monsieur	word	275r	plain 6-99	0		0			v2-kept
+68	riamais	word	260r	clerk	1	clerk riamais:1,l:1,moysondaff:1,ais:1; v2 Mayence/word	4	0.25	3,7,11	v2-unclear
+69	moy	word	260r	clerk	1	clerk moy:1; v2 moy/word	1	1.00	9	confirmed
+70	moins	word	275r	plain 6-99	0		0			v2-kept
+71	mieulx	word	275r	plain 6-99	0		0			v2-kept
+72	m	letter	260r	clerk	1	clerk m:1; v2 ?/word	1	1.00	5	v2-unclear
+73	munitions	word	275r	plain 6-99	0		0			v2-kept
+74	Mozelle	word	275r	plain 6-99	0		0			v2-kept
+75	Meuse	word	275r	plain 6-99	0		0			v2-kept
+76	mil	word	260r	clerk	0	clerk mil:2,m:1; v2 mil/word	3	0.67	4,7	confirmed
+77	mo	word	260r	clerk	1	clerk mo:1; v2 nostre/word	1	1.00	6	changed
+78		null	260r	clerk	1	clerk -:2,u:1,gra:1,nous:1; v2 nous/word	5	0.40	2,3,5,7	changed
+79	non	word	275r	plain 6-99	0		0			v2-kept
+80	ou	word	275r	plain 6-99	0		0			v2-kept
+81	ouir	word	275r	plain 6-99	1		0			v2-kept
+82	on	word	260r	clerk	1	clerk on:1; v2 ont/word	1	1.00	2	changed
+83	occasion	word	275r	plain 6-99	0		0			v2-kept
+84	opinion	word	275r	plain 6-99	0		0			v2-kept
+85	obeissance	word	275r	plain 6-99	0		0			v2-kept
+86	obeir	word	275r	plain 6-99	0		0			v2-kept
+87	obtenir	word	275r	plain 6-99	0		0			v2-kept
+88	pri	word	260r	clerk	1	clerk pri:1; v2 primat/word	1	1.00	12	v2-unclear
+89	?	word	275r	plain 6-99	1		0			v2-kept
+90	e	letter	260r	clerk	1	clerk e:1; v2 protestans/word	1	1.00	5	changed
+91	passage	word	275r	plain 6-99	0		0			v2-kept
+92	place	word	275r	plain 6-99	0		0			v2-kept
+93	z	letter	260r	clerk	1	clerk z:1; v2 par/word	1	1.00	4	changed
+94	plus	word	275r	plain 6-99	0		0			v2-kept
+95	parede	word	260r	clerk	1	clerk parede:1; v2 pour/word	1	1.00	3	changed
+96	pro	word	275r	plain 6-99	0		0			v2-kept
+97	poudre	word	275r	plain 6-99	0		0			v2-kept
+98	point	word	275r	plain 6-99	0		0			v2-kept
+99	g	letter	260r	clerk	1	clerk g:2,m:1,u:1,st:1,-:1,irezlam:1,glesd:1,desirez:1,r:1,met:1,ntant:1; v2 que/word	12	0.17	2,3,5,6,7,8,11,12	changed
+^1	qui	word	275r	overbar 1-43	0		0			v2-kept
+^2	quoy	word	275r	overbar 1-43	0		0			v2-kept
+^3	quand	word	275r	overbar 1-43	0		0			v2-kept
+^4	quelque	word	275r	overbar 1-43	0		0			v2-kept
+^5	quatre	word	275r	overbar 1-43	0		0			v2-kept
+^6	chrestien	word	275r	overbar 1-43	1		0			v2-kept
+^7	r	letter	260r	clerk	1	clerk r:6,t:2,e:2,s:1,l:1,d:1,m:1,z:1; v2 feu/word	15	0.40	2,3,4,8,9,10,11,12	v2-unclear
+^8	d	letter	260r	clerk	1	clerk d:1; v2 rien/word	1	1.00	10	v2-unclear
+^9	Roy	word	275r	overbar 1-43	1		0			v2-kept
+^10	Royne	word	275r	overbar 1-43	1		0			v2-kept
+^11	Royaume	word	275r	overbar 1-43	0		0			v2-kept
+^12	Rome	word	275r	overbar 1-43	0		0			v2-kept
+^13	adeschh	word	260r	clerk	1	clerk adeschh:1; v2 Suisse/word	1	1.00	11	changed
+^14	Sedan	word	275r	overbar 1-43	0		0			v2-kept
+^15	Pape	word	275r	overbar 1-43	0		0			v2-kept
+^16	sa	word	260r	clerk	0	clerk sa:2; v2 sa/word	2	1.00	8	confirmed
+^17	s'il	word	275r	overbar 1-43	0		0			v2-kept
+^18	ng	word	260r	clerk	1	clerk ng:1,dit:1; v2 si/word	2	0.50	10,11	changed
+^19	Savoye	word	275r	overbar 1-43	0		0			v2-kept
+^20	Strasbourg	word	275r	overbar 1-43	0		0			v2-kept
+^21	aussysansyde	word	260r	clerk	1	clerk aussysansyde:1; v2 sans/word	1	1.00	12	changed
+^22	sur	word	260r	clerk	1	clerk sur:1; v2 sur/word	1	1.00	4	confirmed
+^23	tout	word	275r	overbar 1-43	0		0			v2-kept
+^24	temps	word	275r	overbar 1-43	0		0			v2-kept
+^25	tous	word	275r	overbar 1-43	1		0			v2-kept
+^26	tant	word	275r	overbar 1-43	0		0			v2-kept
+^27	trop	word	275r	overbar 1-43	1		0			v2-kept
+^28	tousiours	word	275r	overbar 1-43	0		0			v2-kept
+^29	r	letter	260r	clerk	1	clerk r:1; v2 toutesfois/word	1	1.00	5	changed
+^30	tellement	word	275r	overbar 1-43	0		0			v2-kept
+^31	tort	word	275r	overbar 1-43	0		0			v2-kept
+^32	tient	word	275r	overbar 1-43	0		0			v2-kept
+^33	tante	word	275r	overbar 1-43	1		0			v2-kept
+^34	trois	word	275r	overbar 1-43	1		0			v2-kept
+^35	oyuoy	word	260r	clerk	1	clerk oyuoy:1; v2 vous/word	1	1.00	1	v2-unclear
+^36	une	word	275r	overbar 1-43	1		0			v2-kept
+^37	Venise	word	275r	overbar 1-43	1		0			v2-kept
+^38	ville	word	275r	overbar 1-43	0		0			v2-kept
+^39	voyage	word	275r	overbar 1-43	0		0			v2-kept
+^40	h	letter	260r	clerk	1	clerk h:1; v2 voir/word	1	1.00	8	v2-unclear
+^41	vy	word	275r	overbar 1-43	1		0			v2-kept
+^42	Zelande	word	275r	overbar 1-43	0		0			v2-kept
+^43	adurhesesse	word	260r	clerk	1	clerk adurhesesse:1; v2 Zelandois/word	1	1.00	11	changed
+a.	Ambassadeur	word	275r	dotted letters	1	letter with dots above; not marked in ciphertext.txt this pass	0			v2-kept
+b.	armee	word	275r	dotted letters	1	letter with dots above; not marked in ciphertext.txt this pass	0			v2-kept
+c.	n	letter	260r	clerk	1	clerk n:1; v2 avec/word	1	1.00	2	v2-unclear
+d.	t	letter	260r	clerk	1	clerk t:1; v2 au/word	1	1.00	2	v2-unclear
+e.	aussy	word	275r	dotted letters	1	letter with dots above; not marked in ciphertext.txt this pass	0			v2-kept
+f.	ainsy	word	275r	dotted letters	1	letter with dots above; not marked in ciphertext.txt this pass	0			v2-kept
+g.	avant	word	275r	dotted letters	1	letter with dots above; not marked in ciphertext.txt this pass	0			v2-kept
+h.	avoir	word	275r	dotted letters	1	letter with dots above; not marked in ciphertext.txt this pass	0			v2-kept
+i.	allemand	word	275r	dotted letters	1	letter with dots above; not marked in ciphertext.txt this pass	0			v2-kept
+k.	argent	word	275r	dotted letters	1	letter with dots above; not marked in ciphertext.txt this pass	0			v2-kept
+l.	Allemagne	word	275r	dotted letters	1	letter with dots above; not marked in ciphertext.txt this pass	0			v2-kept
+m.	Bade	word	275r	dotted letters	1	letter with dots above; not marked in ciphertext.txt this pass	0			v2-kept
+n.	bourgmestre	word	275r	dotted letters	1	letter with dots above; not marked in ciphertext.txt this pass	0			v2-kept
+o.	e	letter	260r	clerk	1	clerk e:1,n:1; v2 baron/word	2	0.50	3,11	v2-unclear
+p.	bon	word	275r	dotted letters	1	letter with dots above; not marked in ciphertext.txt this pass	0			v2-kept
+q.	bien	word	275r	dotted letters	1	letter with dots above; not marked in ciphertext.txt this pass	0			v2-kept
+r.	beaucoup	word	275r	dotted letters	1	letter with dots above; not marked in ciphertext.txt this pass	0			v2-kept
+s.	r	letter	260r	clerk	1	clerk r:1,a:1,p:1; v2 bataille/word	3	0.33	10,12	v2-unclear
+t.	chevaulx	word	275r	dotted letters	1	letter with dots above; not marked in ciphertext.txt this pass	0			v2-kept
+u.	ce	word	275r	dotted letters	1	letter with dots above; not marked in ciphertext.txt this pass	0			v2-kept
+y.	amy	word	275r	dotted letters	1	letter with dots above; not marked in ciphertext.txt this pass	0			v2-kept
+z.	ceulx	word	275r	dotted letters	1	letter with dots above; not marked in ciphertext.txt this pass	0			v2-kept
+Cx	o	letter	260r	clerk	1	clerk o:1,an:1; v2 /null	2	0.50	7,10	v2-unclear
+Ch	n	letter	260r	clerk	1	clerk n:2,e:1,gd:1,r:1,fr:1,a:1,p:1,ys:1; v2 /double	9	0.22	1,7,8,9,10,12	v2-unclear
+1	d	letter	260r	clerk	1	clerk d:7,e:5,n:3,i:2,a:2,s:1,u:1,m:1,l:1,p:1; v2 absent	24	0.29	4,7,8,9,11,12	new
+150	essiondes	word	260r	clerk	1	clerk essiondes:1,tz:1; v2 absent	2	0.50	5,6	new
+152	ede	word	260r	clerk	1	clerk ede:1; v2 absent	1	1.00	4	new
+1558	?	letter	260r	clerk	1	clerk -:1; v2 absent	1	1.00	3	new
+18f	a	letter	260r	clerk	1	clerk a:1; v2 absent	1	1.00	11	new
+1s	e	letter	260r	clerk	1	clerk e:1; v2 absent	1	1.00	3	new
+2	e	letter	260r	clerk	1	clerk e:6,n:2,r:2,u:1,o:1,s:1,i:1; v2 absent	14	0.43	4,5,6,10,11,12	new
+279	e	letter	260r	clerk	1	clerk e:1; v2 absent	1	1.00	3	new
+287	pe	word	260r	clerk	1	clerk pe:1; v2 absent	1	1.00	1	new
+396	haue	word	260r	clerk	1	clerk haue:1; v2 absent	1	1.00	6	new
+482	gn	word	260r	clerk	1	clerk gn:1; v2 absent	1	1.00	3	new
+5	o	letter	260r	clerk	0	clerk o:2,d:1; v2 absent	3	0.67	4	new
+699	g	letter	260r	clerk	1	clerk g:1; v2 absent	1	1.00	3	new
+783	royou	word	260r	clerk	1	clerk royou:1; v2 absent	1	1.00	3	new
+999	e	letter	260r	clerk	1	clerk e:1; v2 absent	1	1.00	3	new
+9~	z	letter	260r	clerk	1	clerk z:1; v2 absent	1	1.00	5	new
+F	?	letter	260r	clerk	1	clerk -:1; v2 absent	1	1.00	3	new
+H	h	letter	260r	clerk	1	clerk h:2,-:1,t:1,d:1; v2 absent	5	0.40	7,8,9	new
+Hf	he	letter	260r	clerk	1	clerk he:1; v2 absent	1	1.00	11	new
+Hu.	o	letter	260r	clerk	1	clerk o:1; v2 absent	1	1.00	9	new
+J	s	letter	260r	clerk	1	clerk s:1,n:1,a:1; v2 absent	3	0.33	12	new
+M	?	letter	260r	clerk	1	clerk -:1; v2 absent	1	1.00	3	new
+R	l	letter	260r	clerk	1	clerk l:1,-:1; v2 absent	2	0.50	3,10	new
+S	r	letter	260r	clerk	1	clerk r:2,e:2,o:1; v2 absent	5	0.40	6,11,12	new
+T	s	letter	260r	clerk	1	clerk s:1,e:1; v2 absent	2	0.50	3	new
+^0	e	letter	260r	clerk	1	clerk e:1; v2 absent	1	1.00	4	new
+^187	s	letter	260r	clerk	1	clerk s:1; v2 absent	1	1.00	7	new
+^2078	trasbour	word	260r	clerk	1	clerk trasbour:1; v2 absent	1	1.00	7	new
+^26099	e	letter	260r	clerk	1	clerk e:1; v2 absent	1	1.00	10	new
+^287	re	word	260r	clerk	1	clerk re:1; v2 absent	1	1.00	1	new
+^482	g	letter	260r	clerk	1	clerk g:1; v2 absent	1	1.00	3	new
+^49	preh	word	260r	clerk	1	clerk preh:1; v2 absent	1	1.00	5	new
+^70	r	letter	260r	clerk	1	clerk r:1,sar:1; v2 absent	2	0.50	9	new
+^87	s	letter	260r	clerk	1	clerk s:1; v2 absent	1	1.00	7	new
+^97	p	letter	260r	clerk	1	clerk p:1; v2 absent	1	1.00	4	new
+^99	yilzate	word	260r	clerk	1	clerk yilzate:1; v2 absent	1	1.00	10	new
+b~	e	letter	260r	clerk	1	clerk e:1,l:1,t:1; v2 absent	3	0.33	1,2	new
+de	o	letter	260r	clerk	1	clerk o:1; v2 absent	1	1.00	6	new
+g~	p	letter	260r	clerk	1	clerk p:1; v2 absent	1	1.00	5	new
+h	l	letter	260r	clerk	1	clerk l:1,-:1,o:1,n:1,e:1,r:1; v2 absent	6	0.17	2,3,6,9	new
+h~	?	letter	260r	clerk	1	clerk -:1; v2 absent	1	1.00	1	new
+jy	ne	letter	260r	clerk	1	clerk ne:1; v2 absent	1	1.00	4	new
+l	r	letter	260r	clerk	1	clerk r:1; v2 absent	1	1.00	8	new
+le	le	letter	260r	clerk	1	clerk le:1; v2 absent	1	1.00	12	new
+mm	n	letter	260r	clerk	1	clerk n:1; v2 absent	1	1.00	6	new
+mo	ra	letter	260r	clerk	1	clerk ra:1; v2 absent	1	1.00	4	new
+mt~	y	letter	260r	clerk	1	clerk y:1; v2 absent	1	1.00	4	new
+n		null	260r	clerk	1	clerk -:2,r:2,u:1; v2 absent	5	0.40	1,3,6	new
+qq	fi	letter	260r	clerk	1	clerk fi:1; v2 absent	1	1.00	4	new
+re	ie	letter	260r	clerk	1	clerk ie:1; v2 absent	1	1.00	6	new
+ss.	s	letter	260r	clerk	1	clerk s:1,-:1; v2 absent	2	0.50	10,12	new
+t~	i	letter	260r	clerk	1	clerk i:1; v2 absent	1	1.00	3	new
+z		null	260r	clerk	1	clerk -:2,f:2,e:1,g:1,o:1,i:1; v2 absent	8	0.25	5,6,9,10,11	new

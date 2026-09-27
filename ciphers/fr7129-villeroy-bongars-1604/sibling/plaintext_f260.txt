@@ -1,0 +1,19 @@
+# Known-plaintext sibling, BnF fr.7129 f.260r (Gallica btv1b8555834s canvas f525), lower cipher block, 12
+# lines (native y 2381-4355) under the clerk's interlinear gloss. VB-KEY, 27 Sept 2026. Clerk text = pass A's gloss letters per sign, joined; two blind Sonnet
+# passes (sibling/passes/f260_S<set><A|B>.tsv), each reading per cipher sign the sign id (inventory.txt) and
+# the gloss letters directly above it; merged by kp_key_v3.py (A=B kept, else pass A). Line numbers count
+# the block's lines from its first (the line under 'aitreueillez & peutestre'). Scratch crops only.
+# Literal gloss letters, not our reading; a period decipherment.
+line	clerk
+1	a i t r e u e i l l e z & peu tes tr e reun i sa nde s a c i n n o y u o y
+2	p r i on 2 dem e t t repei nen der on u r ir la u e r i te 209 a uer fi r
+3	noy g nog roy oust g Emp en a uns repare des autres nos po lemarqs de boufr jamais
+4	p o a r e n p e r d e s d i t z d u i c h e z p n i s s a n r e d e f i c f oe m a i n s on u e r aine soubs
+5	p r e t e x t e z l e s f i l l e s n e p e u n en ta preh en der la sur res sion de s dit q du r h z
+6	q u a r t i e r s l a a n t a n t p o i e f a i r t h p o d e l c h u y m y t f i s c m y t z o b d z c nn u v b g g o sy i s o
+7	mil ho fu sen & lest & i ff e x en s de Strasbourg de b u ens desirez la maison d us u
+8	le sch du dur the z de se e roit fre essaire pu L en p e s r h e r g les dit sent
+9	in teressez on in h ha s n s en t & sa o r d a de moy
+10	ens y il z a t e n i r po e re r v e i ll i r r est e r u n r e s n grand e lle e s r
+11	erra mais ie r o y g r se ra durh es s e t r es d l f g f g s rile la durh es esse e de s dit a
+12	pays s af u y e e dela lu n est pas s aussy sans de sai n mais pos ble g re Pri de la h a s e du

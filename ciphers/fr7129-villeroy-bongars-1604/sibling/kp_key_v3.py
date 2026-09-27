@@ -2,8 +2,9 @@
 """Known-plaintext key re-derivation from the clerk's interlinear decipherment of f.260r (VB-KEY, 27 Sept 2026).
 
   python3 kp_key_v3.py merge      passes/f260_S*[AB].tsv -> ciphertext_f260.txt, plaintext_f260.txt, aligned_f260.tsv
-  python3 kp_key_v3.py key        aligned_f260.tsv + ../keys/key_f275_v2.tsv -> ../keys/key_f275_v3.tsv
-  python3 kp_key_v3.py holdout    leave-one-line-out on f.260, and f.260-derived key on f.258 (VB-KP files)
+  python3 kp_key_v3.py key        hard-EM pairs (f.258 + f.260, v2 seed) -> ../keys/key_f275_v3.tsv
+  python3 kp_key_v3.py holdout    per-pass pairing: leave-one-line-out on f.260, and the f.260 key on f.258
+  python3 kp_key_v3.py holdout-em hard-EM line alignment: leave-one-line-out over f.258 + f.260 (the test of record)
   python3 kp_key_v3.py --check    exit 1 if any of the four written files is stale
 
 Instead of aligning a clerk letter stream to a cipher stream after the fact (interlinear_align.py's DP), each blind
@@ -165,7 +166,7 @@ def build(prs):
             else:
                 flag = "confirmed" if oldv == (val if kind != "null" else "") and old[2] == kind else "changed"
             alts = ",".join(f"{k}:{n}" for k, n in by[s].most_common())
-            note = f"clerk f.260 {alts}; v2 {old[1] + '/' + old[2] if old else 'absent'}"
+            note = f"clerk {alts}; v2 {old[1] + '/' + old[2] if old else 'absent'}"
             out[s] = [s, val, kind, "260r", "clerk", "0" if c >= 2 and c / tot >= 0.6 else "1", note, str(tot),
                       f"{c / tot:.2f}", ",".join(map(str, sorted(src[s]))), flag]
         else:
@@ -175,9 +176,9 @@ def build(prs):
 
 def key_text(k):
     head = ("# Bongars cipher no.3 (fr.7129 f.275) key re-derived from the clerk's interlinear decipherment of the sibling\n"
-            "# f.260r (VB-KEY, 27 Sept 2026; sibling/kp_key_v3.py key). Grade C: every attested value is the clerk's. Columns\n"
-            "# 1-7 as key_f275_v2.tsv (decode_f275.py reads them); count = pass observations (each pass's own sign/gloss pairing);\n"
-            "# agree = share of the majority value; lines = f.260 lines attesting it; flag: confirmed / changed (clerk\n"
+            "# f.260r and f.258r (VB-KEY, 27 Sept 2026; sibling/kp_key_v3.py key, hard-EM alignment of each line's signs to\n# the clerk's letters, v2 seeding round 1). Grade C: every attested value is the clerk's. Columns\n"
+            "# 1-7 as key_f275_v2.tsv (decode_f275.py reads them); count = aligned occurrences (f.260 counts each pass's line; f.258 the merged line);\n"
+            "# agree = share of the majority value; lines = line numbers attesting it (f.258 2-6 and f.260 1-12 share numbers); flag: confirmed / changed (clerk\n"
             "# contradicts v2) / v2-unclear (v2 had it unclear or blank, clerk gives another value) / confirmed-unclear /\n"
             "# new (sign absent from v2) / v2-kept (never attested by the clerk: v2's value kept). unclear=1 when count 1 or\n"
             "# agreement under 0.6.\n")
@@ -346,7 +347,7 @@ def main():
             print(f"line {n}: merged {len(lr)}, signs A=B {ab} ({100 * ab / len(lr):.0f}%), sign+gloss A=B {cl}")
         print(f"all: merged {len(rows)}, sign A=B {sum(r[5] == 'AB' for r in rows)}, usable pairs {len(pairs(rows))}")
     elif cmd == "key":
-        k = build(pairs(load_align()))
+        k = build(em_pairs())
         V3.write_text(key_text(k))
         fl = collections.Counter(r[10] for r in k.values())
         print(dict(fl), "attested>=2:", sum(1 for r in k.values() if r[7] not in ("", "0", "1")))
@@ -357,7 +358,7 @@ def main():
     elif cmd == "--check":
         c, p, a = merge_texts(merge_rows())
         stale = [f.name for f, t in ((CIPH, c), (PLAIN, p), (ALIGN, a)) if f.read_text() != t]
-        if V3.read_text() != key_text(build(pairs(load_align()))):
+        if V3.read_text() != key_text(build(em_pairs())):
             stale.append(V3.name)
         print("stale: " + ", ".join(stale) if stale else "ok")
         sys.exit(1 if stale else 0)

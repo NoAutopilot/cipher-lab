@@ -1,0 +1,574 @@
+# Known-plaintext sibling, BnF fr.7129 f.260r (Gallica btv1b8555834s canvas f525), lower cipher block, 12
+# lines (native y 2381-4355) under the clerk's interlinear gloss. VB-KEY, 27 Sept 2026. Two blind Sonnet
+# passes (sibling/passes/f260_S<set><A|B>.tsv), each reading per cipher sign the sign id (inventory.txt) and
+# the gloss letters directly above it; merged by kp_key_v3.py (A=B kept, else pass A). Line numbers count
+# the block's lines from its first (the line under 'aitreueillez & peutestre'). Scratch crops only.
+line	pos	sign	clerkA	clerkB	agree
+1	1	g	-		A
+1	2	u	-	i	AB
+1	3	a	-	t	AB
+1	4	r	-	r	AB
+1	5	y	-		A
+1	6	m	-	u	AB
+1	7	Hr	-		A
+1	8	Z	a		A
+1	9	3	i		A
+1	10	p	t	&	AB
+1	11	b~	r	p	AB
+1	12	ba	e	e	AB
+1	13	r	u	u	AB
+1	14	ls	e		A
+1	15	p	i		A
+1	16	s	l	t	AB
+1	17	s	l		A
+1	18	fh	e		A
+1	19	i	z		A
+1	20	?	&		A
+1	21	e	peu	p	AB
+1	22	p	tes	e	AB
+1	23	b	tr	u	AB
+1	24	y	e		A
+1	25	^287	reun		A
+1	26	w	i		A
+1	27	cc	sa		A
+1	28	un	nde		A
+1	29	n	s	u	AB
+1	30	o	a		A
+1	31	3	c	n	AB
+1	32	co	i	d	AB
+1	33	u	n	e	AB
+1	34	ls	n		A
+1	35	a	o	s	AB
+1	36	Hr	y		A
+1	37	3	u	l	AB
+1	38	k	o	n	AB
+1	39	7	y	n	AB
+1	40	8	-	o	AB
+1	41	^35	-		A
+2	1	g	p	p	AB
+2	2	ff	r	r	AB
+2	3	p	i	i	AB
+2	4	s	on		A
+2	5	r	2		A
+2	6	f	dem	n	AB
+2	7	i	-	2	AB
+2	8	s	e	d	AB
+2	9	Hu	-		A
+2	10	r	t	m	AB
+2	11	b	t		A
+2	12	g	repei	t	AB
+2	13	^7	nen		A
+2	14	e	der	r	AB
+2	15	q	-	e	AB
+2	16	s	-	p	AB
+2	17	?	-		A
+2	18	q	-	i	AB
+2	19	v	-	n	AB
+2	20	26	-	e	AB
+2	21	i	-		A
+2	22	s	-		A
+2	23	o	-	e	AB
+2	24	g	-	n	AB
+2	25	o	on	n	AB
+2	26	u	u		A
+2	27	r	r		A
+2	28	i	ir		A
+2	29	r	la		A
+2	30	ff	u	r	AB
+2	31	61	e	l	AB
+2	32	m	r	a	AB
+2	33	y	i		A
+2	34	Z	te		A
+2	35	ff	-	e	AB
+2	36	p	-		A
+2	37	y	-	i	AB
+2	38	p	-	t	AB
+2	39	ur	-		A
+2	40	78	209	?	AB
+2	41	26	-	a	AB
+2	42	7	a	u	AB
+2	43	Hr	uer		A
+2	44	b	fi	r	AB
+2	45	o	r	t	AB
+2	46	y	-	i	AB
+2	47	b	-	r	AB
+2	48	un	-		A
+2	49	d	-	?	AB
+3	1	fh	-		A
+3	2	b	-	e	AB
+3	3	r	-	r	AB
+3	4	m	-	s	AB
+3	5	q	-		A
+3	6	b	-	e	AB
+3	7	699	-		A
+3	8	783	noy		A
+3	9	Z	g		A
+3	10	Zt	nog		A
+3	11	^482	roy		A
+3	12	f	oust	o	AB
+3	13	99	-	xt2g	AB
+3	14	oo	g		A
+3	15	26	?	emp	AB
+3	16	7	?		A
+3	17	Zt	Emp		A
+3	18	m	en	u	AB
+3	19	?	a		A
+3	20	o	uns	s	AB
+3	21	p	repare	r	AB
+3	22	e	des	e	AB
+3	23	^7	autres		A
+3	24	i	nos		A
+3	25	s	po		A
+3	26	a	lemarqs	r	AB
+3	27	?	de		A
+3	28	Z	boufr		A
+3	29	7	-	u	AB
+3	30	9	-		A
+3	31	9	-		A
+3	32	9	-		A
+3	33	s	jamais		A
+3	34	s	-		A
+3	35	s	-		A
+3	36	M	-		A
+3	37	?	-		A
+3	38	ff	-	t	AB
+3	39	T	-	r	AB
+3	40	a	-	e	AB
+3	41	1s	-		A
+3	42	8	-		A
+3	43	9	-		A
+3	44	o	-		A
+3	45	?	-		A
+3	46	?	-		A
+3	47	d	-		A
+3	48	68	-	l	AB
+4	1	9	p	po	AB
+4	2	ls	o		A
+4	3	o	a	en	AB
+4	4	r	r		A
+4	5	6	e	e	AB
+4	6	9	n		A
+4	7	7	p		A
+4	8	r	e		A
+4	9	f	r		A
+4	10	f	d		A
+4	11	i	e		A
+4	12	s	s	d	AB
+4	13	a	d	i	AB
+4	14	i	i		A
+4	15	8	t		A
+4	16	Zt	z		A
+4	17	i	d		A
+4	18	3	u		A
+4	19	t	i		A
+4	20	t	c		A
+4	21	t	h		A
+4	22	p	e	c	AB
+4	23	do	z	h	AB
+4	24	93	?		A
+4	25	e	p	p	AB
+4	26	b	n	n	AB
+4	27	p	i	i	AB
+4	28	o	s	s	AB
+4	29	t	s	s	AB
+4	30	d	a		A
+4	31	e	n		A
+4	32	s	r	f	AB
+4	33	152	e		A
+4	34	qq	d		A
+4	35	u	e	f	AB
+4	36	Hr	f		A
+4	37	i	i		A
+4	38	Hu	c		A
+4	39	pH	f		A
+4	40	q	oe		A
+4	41	18	m		A
+4	42	^0	a		A
+4	43	mo	i		A
+4	44	v	n		A
+4	45	jy	s		A
+4	46	tt	on		A
+4	47	r	u		A
+4	48	x	e		A
+4	49	q	r		A
+4	50	?	aine	?	AB
+4	51	?	soubs	r	AB
+5	1	g~	p		B
+5	2	b	r		B
+5	3	p	e		B
+5	4	m	t		B
+5	5	y	e		B
+5	6	o	x		B
+5	7	9	t		B
+5	8	9	e		B
+5	9	s	z		B
+5	10	s	l		B
+5	11	a	e		B
+5	12	2	s		B
+5	13	4	f		B
+5	14	p	i		B
+5	15	p	l		B
+5	16	s	l		B
+5	17	s	e		B
+5	18	z	s		B
+5	19	?	n		B
+5	20	q	e		B
+5	21	e	p		B
+5	22	r	e		B
+5	23	b	u		B
+5	24	19	n		B
+5	25	26	en		B
+5	26	b	ta		B
+5	27	39	preh		B
+5	28	^49	en		B
+5	29	26	der		B
+5	30	ls	la		B
+5	31	ff	sur		B
+5	32	6	res		B
+5	33	10	sion		B
+5	34	b	de		B
+5	35	p	s		B
+5	36	^29	dit		B
+5	37	150	q		B
+5	38	18	du		B
+5	39	21	r		B
+5	40	17	h		B
+5	41	9~	z		B
+6	1	p	q		A
+6	2	o	u		A
+6	3	r	a		A
+6	4	o	r		A
+6	5	i	t		A
+6	6	t	i		A
+6	7	e	e		A
+6	8	s	r		A
+6	9	e	s		A
+6	10	y	l		A
+6	11	n	a		A
+6	12	i	a		A
+6	13	h	n		A
+6	14	s	t		A
+6	15	e	a		A
+6	16	s	n		A
+6	17	t	t		A
+6	18	a	p		A
+6	19	f	o		A
+6	20	r	i		A
+6	21	h	e		A
+6	22	e	f		A
+6	23	de	a		A
+6	24	re	i		A
+6	25	f	r		A
+6	26	9	t	p	AB
+6	27	s	h	o	AB
+6	28	f	p		A
+6	29	f	o	o	AB
+6	30	p	d	i	AB
+6	31	b	e	t	AB
+6	32	28	l	est	AB
+6	33	9	c		A
+6	34	9	h		A
+6	35	u	u		A
+6	36	a	y	n	AB
+6	37	2	m	i	AB
+6	38	s	y	h	AB
+6	39	3	t		A
+6	40	9	f		A
+6	41	6	i		A
+6	42	p	s	e	AB
+6	43	tt	?	s	AB
+6	44	p	?	t	AB
+6	45	i	?	a	AB
+6	46	s	?	p	AB
+6	47	?	?	r	AB
+6	48	m	c	q	AB
+6	49	y	m	u	AB
+6	50	v	y		A
+6	51	b	t	r	AB
+6	52	?	?		A
+6	53	2	z		A
+6	54	6	o		A
+6	55	18	b	l	AB
+6	56	26	d	a	AB
+6	57	?	z		A
+6	58	?	?		A
+6	59	c	c	n	AB
+6	60	mm	nn		A
+6	61	v	u	o	AB
+6	62	b	v		A
+6	63	99	b	f	AB
+6	64	9	g	a	AB
+6	65	9	g		A
+6	66	9	o		A
+6	67	?	sy		A
+6	68	18	i		A
+6	69	S	s		A
+6	70	?	o		A
+7	1	76	mil	mil	AB
+7	2	x4	ho		A
+7	3	Cx	fu		A
+7	4	b	sen	o	AB
+7	5	m	-	f	AB
+7	6	a	&	u	AB
+7	7	od	lest	s	AB
+7	8	26	&	en	AB
+7	9	8	i		A
+7	10	ss	ff	l	AB
+7	11	Z	e	e	AB
+7	12	H	x	s	AB
+7	13	s	en	t	AB
+7	14	r	s	?	AB
+7	15	x4	de		A
+7	16	^2078	Strasbourg		A
+7	17	Ch	?		A
+7	18	q	?		A
+7	19	u	de		A
+7	20	p	b	de	AB
+7	21	m	u	bu	AB
+7	22	9	ens		A
+7	23	20	desirez	de	AB
+7	24	1	-	aff	AB
+7	25	ls	-		A
+7	26	1	-		A
+7	27	^87	la		A
+7	28	99	maison		A
+7	29	6	d		A
+7	30	1	?		A
+7	31	6	-		A
+7	32	8	-		A
+7	33	c	us		A
+7	34	o	u	s	AB
+7	35	c	-		A
+7	36	o	-	s	AB
+7	37	b	-	u	AB
+8	1	ff	?	r	AB
+8	2	p	?		A
+8	3	g	?	p	AB
+8	4	q	le	e	AB
+8	5	ss	sch	l	AB
+8	6	od	?	s	AB
+8	7	1	du		A
+8	8	9	?		A
+8	9	un	?		A
+8	10	Ch	?		A
+8	11	9	?		A
+8	12	^40	dur		A
+8	13	Hu	the		A
+8	14	un	z		A
+8	15	od	de	t	AB
+8	16	p	se	ne	AB
+8	17	ff	?	?	AB
+8	18	g	?	?	AB
+8	19	s	?	?	AB
+8	20	^7	e		A
+8	21	Ch	roit		A
+8	22	q	fre		A
+8	23	8	?		A
+8	24	Z	essaire	sa	AB
+8	25	^16	pu	ire	AB
+8	26	p	?	po	AB
+8	27	^7	?		A
+8	28	o	?	en	AB
+8	29	s	?	pe	AB
+8	30	m	?	sr	AB
+8	31	26	L	her	AB
+8	32	x4	en	g	AB
+8	33	e	?	les	AB
+8	34	q	p	dit	AB
+8	35	a	e	ent	AB
+8	36	9	s		A
+8	37	H	r	?	AB
+8	38	r	h		A
+8	39	y	e	?	AB
+8	40	99	r		A
+8	41	ss	g		A
+8	42	Z	les		A
+8	43	8	dit		A
+8	44	1	sent		A
+8	45	6	?		A
+8	46	y	?	?	AB
+9	1	un	in		A
+9	2	Ch	?		A
+9	3	b	teressez	t	AB
+9	4	p	?	e	AB
+9	5	^70	?		A
+9	6	9	?		A
+9	7	9	?		A
+9	8	f	?	e	AB
+9	9	Hu	?		A
+9	10	Hu.	on		A
+9	11	a	in	t	AB
+9	12	?	?		A
+9	13	s	?	i	AB
+9	14	9	h		A
+9	15	t	ha		A
+9	16	ab	s		A
+9	17	Ch	?		A
+9	18	a	n	s	AB
+9	19	26	s	e	AB
+9	20	b	en	n	AB
+9	21	un	t		A
+9	22	s	&		A
+9	23	a	?	ass	AB
+9	24	Ch	?		A
+9	25	o	sa		A
+9	26	r	?		A
+9	27	d	o		A
+9	28	a	r		A
+9	29	a	d		A
+9	30	ss	a		A
+9	31	x4	?		A
+9	32	26	?	ens	AB
+9	33	^7	?	en	AB
+9	34	26	?	b	AB
+9	35	Z	?		A
+9	36	x4	?		A
+9	37	oo	?	moy	AB
+9	38	26	?	?	AB
+9	39	8	?		A
+9	40	ss	?	?	AB
+9	41	1	de	?	AB
+9	42	s	moy	?	AB
+9	43	od	?		A
+10	1	26	ens		A
+10	2	od	-		A
+10	3	^99	y		A
+10	4	ab	-	i	AB
+10	5	9	il	l	AB
+10	6	f	z	z	AB
+10	7	do	a		A
+10	8	8	t	u	AB
+10	9	2	e	r	AB
+10	10	Zt	n		A
+10	11	b	i	n	AB
+10	12	p	r	t	AB
+10	13	R	po		A
+10	14	un	e	t	AB
+10	15	y	re	e	AB
+10	16	9	r	n	AB
+10	17	s	-	i	AB
+10	18	^7	?	r	AB
+10	19	m	v	w	AB
+10	20	q	e	e	AB
+10	21	s	i	i	AB
+10	22	m	ll	l	AB
+10	23	a	i	l	AB
+10	24	ab	r	r	AB
+10	25	p	r	i	AB
+10	26	fh	est		A
+10	27	un	e		A
+10	28	2	r	r	AB
+10	29	s	u		A
+10	30	q	n	s	AB
+10	31	a	?	t	AB
+10	32	b	r	e	AB
+10	33	g	e	s	AB
+10	34	s.	s		A
+10	35	Z	?		A
+10	36	u	?		A
+10	37	^8	?		A
+10	38	g	?	e	AB
+10	39	Hun	n		A
+10	40	^7	grand	l	AB
+10	41	p	e	s	AB
+10	42	ss	lle		A
+10	43	o	e	?	AB
+10	44	a	s	?	AB
+10	45	u	r	?	AB
+11	1	2	?		A
+11	2	40	erra		A
+11	3	do	?		A
+11	4	fh	?		A
+11	5	Zt	?		A
+11	6	68	mais		A
+11	7	48	ie		A
+11	8	Zt	r		A
+11	9	r	o		A
+11	10	g	y	ie	AB
+11	11	4	g	r	AB
+11	12	99	?		A
+11	13	S	r		A
+11	14	o	se	?	AB
+11	15	q	ra		A
+11	16	ff	?	erra	AB
+11	17	Zt	durh		A
+11	18	u	es	?	AB
+11	19	Hf	?		A
+11	20	v	s		A
+11	21	Z	e		A
+11	22	p	t	e.	AB
+11	23	ab	r		A
+11	24	^7	es	f	AB
+11	25	a	d	d	AB
+11	26	Hu	l		A
+11	27	1	f		A
+11	28	un	?		A
+11	29	z	g	ff	AB
+11	30	ff	f		A
+11	31	ff	g		A
+11	32	S	s		A
+11	33	p	rile	i	AB
+11	34	ss	la	le	AB
+11	35	b	durh		A
+11	36	u	es		A
+11	37	^43	?		A
+11	38	o	?		A
+11	39	s	esse	la	AB
+11	40	o	e	h	AB
+11	41	a	de	ess	AB
+11	42	p	s	e	AB
+11	43	1	dit	d	AB
+11	44	s	a	?	AB
+11	45	a	?	?	AB
+11	46	18f	?		A
+12	1	g	pays	p	AB
+12	2	x	s	a	AB
+12	3	f	af		A
+12	4	a	u		A
+12	5	J	?		A
+12	6	e	y	a	AB
+12	7	o	e		A
+12	8	do	e	u	AB
+12	9	p	dela	y	AB
+12	10	o	lu	e	AB
+12	11	s	?	e	AB
+12	12	S	?		A
+12	13	b	?		A
+12	14	b	?		A
+12	15	u	?		A
+12	16	x	n	l	AB
+12	17	J	est		A
+12	18	1	pas	est	AB
+12	19	2	s	p	AB
+12	20	s	aussy	e	AB
+12	21	e	sans	s	AB
+12	22	J	de		A
+12	23	o	?	s	AB
+12	24	21	?		A
+12	25	u	?	r	AB
+12	26	s	?		A
+12	27	co	sai		A
+12	28	b	n		A
+12	29	s	mais		A
+12	30	Hun	pos		A
+12	31	b	?		A
+12	32	g	?		A
+12	33	e	?	f	AB
+12	34	g	?		A
+12	35	o	?		A
+12	36	18	ble		A
+12	37	S	g		A
+12	38	ss	re		A
+12	39	99	Pri		A
+12	40	g	de		A
+12	41	88	la		A
+12	42	a	?		A
+12	43	s	?		A
+12	44	o	?		A
+12	45	b	h		A
+12	46	u	a		A
+12	47	v	s		A
+12	48	r	e		A
+12	49	q	du		A
+12	50	e	?		A
+12	51	b	?		A
