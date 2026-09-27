@@ -19,9 +19,9 @@ more accounts join.
 
 | Target | Kind | Why it is in | Daily budget USD | Runner trigger |
 |---|---|---|---|---|
-| armstrong-madison-1808 | campaign | the letter from the S. Tomokiyo thread; the owner's Codex session's attempts fold in as prior steps | 40 | every 90 min from 21:20 UTC, Opus |
-| espagnol142-mercy-1648 | campaign | furthest along: key evidence, register-matched judge corpus, DECODE ruled out, archive copy on order (a branch, not the state) | 40 | every 90 min from 21:20 UTC, Opus |
-| fr4715-f61-mayenne-1592 | campaign | Mayenne key on disk (25 rows), Tomokiyo's five read spans as the known answer, calibration in progress | 40 | every 90 min from 21:20 UTC, Opus |
+| armstrong-madison-1808 | campaign | the letter from the S. Tomokiyo thread; the owner's Codex session's attempts fold in as prior steps | 40 | hourly (minute 25 / 35 / 45), the account's default model; first firing after the seed lands |
+| espagnol142-mercy-1648 | campaign | furthest along: key evidence, register-matched judge corpus, DECODE ruled out, archive copy on order (a branch, not the state) | 40 | hourly (minute 25 / 35 / 45), the account's default model; first firing after the seed lands |
+| fr4715-f61-mayenne-1592 | campaign | Mayenne key on disk (25 rows), Tomokiyo's five read spans as the known answer, calibration in progress | 40 | hourly (minute 25 / 35 / 45), the account's default model; first firing after the seed lands |
 | spinelli-beinecke-c1515 (or the best fr.4715 pool row) | campaign, pending gate | Domnina 2015 key, one phrase read by Tomokiyo; joins when INTAKE-SPINELLI's gate passes, else the pool row | 40 | created at the check-in after the gate |
 
 ## Scoreboard (the orchestrator updates at each check-in)

@@ -1,11 +1,11 @@
-# Campaign runner (SPRINT.md; fired by a per-target trigger every 90 minutes)
+# Campaign runner (SPRINT.md; fired by a per-target trigger every hour; overlap guard 55 minutes)
 
 A campaign is one target worked continuously. Its state is `ciphers/<target>/CAMPAIGN.md` (format in
 tools/campaign.py's docstring): a ranked hypothesis table and a step log. The runner is a fresh session that does
 ONE step and exits; the trigger brings the next runner. Nothing here parks: a runner that finds no runnable
 hypothesis writes three new ones (from the folder's evidence) before it stops, and says so.
 
-## Paste-ready trigger prompt (create_trigger, create_new_session_on_fire true, cron every 90 min; one per target)
+## Paste-ready trigger prompt (create_trigger, create_new_session_on_fire true, cron hourly, staggered minutes; one per target)
 
 ```
 You are the campaign runner for ciphers/<TARGET> in cipher-lab (https://github.com/NoAutopilot/cipher-lab), a fresh session that does one step and exits. Read CLAUDE.md rule 10, .claude/briefs/campaign.md, SPRINT.md, then ciphers/<TARGET>/CAMPAIGN.md, NOTES.md (the last 300 lines at least), HYPOTHESES.md if present, and the last 40 ROOM.md lines mentioning <TARGET>. Steps:
