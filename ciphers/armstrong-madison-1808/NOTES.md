@@ -1619,6 +1619,36 @@ at N=3). No reading, no class change. Requests per host: catalog.archives.gov 7.
 this runner; the row's estimate (1 USD) is what `campaign.py --spend` records. Vision: 9 crops read by this runner,
 no subagent calls.
 
+## Second-opinion checkpoint (SO-ARMSTRONG-CHECKPOINT 22:55, 27 Sept 2026)
+
+Landed from PR 56 (`second-opinions/chatgpt-checkpoint-2026-09-27-2255.md`, PR-LAND-21). A runner checkpoint
+report, not a leads-prompt answer or a reading; every citation below is a claim to verify, never a fact --
+unchecked.
+
+- correction; frame 1076's interlinear pencil above 715 (`715 1583[mark] 648[mark] 967 913`) reads "for", not "his" as read in PR 43 -- retraction of 715/his in favor of 715/for, still M-provisional -- unchecked.
+- lead; frame 1064 pencil above group 318 (two occurrences) reads "much"; groups 1426 1133 run together read "habit" with no individual value or internal letter split assigned to either group -- unchecked.
+- lead/negative; frames 1068/1069 (the copy of the Sept 17, 1803 Livingston-to-Madison letter, LOC mjm014121) corroborate the same ten-group numeric run and its order but not the pencil plaintext, and place the 1221/978 line break differently than frame 1064 does -- unchecked.
+- lead/negative; none of groups 318, 715, 1426, 1133, 978 or 1459 occurs literally among the #48 target's 366 decimal groups -- a literal-overlap check only, not a proof against transformed keys or homophones -- unchecked.
+- access-route; the Rotunda table-of-contents item links returned 403 on direct retrieval; Founders Online's robots restriction still blocks it; a March-item LOC metadata request timed out with no bytes -- unchecked.
+- next-step; the checkpoint's own named next action is to inspect frame 1063 of the same LOC item for an independently annotated occurrence of 1426, 1133, 978 or 1459 -- unchecked.
+
+No check-solved candidate (no printed decipherment of the Armstrong letter, its key, or the Livingston key is named).
+
+## Second-opinion checkpoint (SO-ARMSTRONG-CHECKPOINT 23:36, 27 Sept 2026)
+
+Landed from PR 57 (`second-opinions/chatgpt-checkpoint-2026-09-27-2336.md`, PR-LAND-21). A runner checkpoint
+report, not a leads-prompt answer or a reading; every citation below is a claim to verify, never a fact --
+unchecked.
+
+- lead; frame 1063 of the Sept 17, 1803 Livingston witness reads `1634 1459` three times as "Baring" and `1409 1459` once as "going"; the cross-line `978 1459` "trusting" reading from frame 1064 remains tentative -- unchecked.
+- lead/negative; treating 1459 as a shared suffix of Baring/going gives three conditional splits (g/ng/ing) with no way in the evidence shown to choose among them -- not a verified mapping for 1459 -- unchecked.
+- lead/negative; all image surfaces of three Armstrong-to-Pinkney letters (Princeton C0027, dated 29 Jan, 15 Oct and 30 Nov 1808) were inspected -- clear prose throughout, no coded passage observed -- unchecked.
+- lead/negative; two Armstrong-to-Monroe letters (LOC reel 4 frame 166, 4 April 1807; reel 3 frames 921-923, 9 July 1806) were inspected -- ordinary prose, no coded passage observed -- unchecked.
+- archival-route; Huntington mssHM 22922 (John Quincy Adams to Armstrong, 27 Nov 1809) is catalogued as discussing the need for a cipher; no image is available online and no transcript was located -- unchecked.
+- next-step; the checkpoint's own named next action is to locate Armstrong to Monroe, 30 May 1806, in LOC reel 3, bracketing backward from the confirmed 1 July 1806 docket at frame 900 -- unchecked.
+
+No check-solved candidate (no printed decipherment of the Armstrong letter, its key, or the Livingston key is named).
+
 ## Campaign step H5 (27 Sept 2026, 23:43-23:47 UTC)
 
 Runner: campaign runner armstrong-madison-1808 (account 2, session_013E5jUS9GV1AsxLeUcwgbf6). Hypothesis H5: a third
