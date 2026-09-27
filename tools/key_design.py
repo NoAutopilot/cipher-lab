@@ -57,6 +57,9 @@ NOT_A_KEY = {
     'antt-linhares-chave/key_example.tsv': 'worked example (2 rows), not a key table',
     'clair349-este-guise-1556/key_vs_gloss.tsv': 'key-versus-gloss comparison table (derived from key_alpha), not a key',
     'fr3625-lauriere-1593/bourdeau_ref/': 'prose reference table (Bourdeau), not tab-separated code->value rows',
+    'fr4715-montholon-1589/witness_f24/key_f24_recovered_UNVALIDATED.tsv':
+        'MONT-KEY6 27 Sept 2026: failed interlinear_align.py recovery attempt on f.24, 0/7 conflicts '
+        'against no.58\'s own printed dump gloss, not a usable key (see its own header and NOTES.md)',
 }
 NULL_WORDS = {'null', 'nulle', 'nulles', 'nul', 'nulla', 'nihil', 'nullo', 'nulo'}
 VOWELS = set('aeiouy')

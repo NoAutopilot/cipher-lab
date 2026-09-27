@@ -1,0 +1,198 @@
+cipher_line	idx	raw	kind	value	repair	plain_chunk	status
+1	0	74	num	74		s	conflict:a
+1	1	5	num	5		t	conflict:r
+1	2	4	num	4		e	conflict:n
+1	3	95	num	95		r	conflict:u
+1	4	124	num	124		heur	conflict:r
+1	5	106	num	106		es	single
+1	6	20	num	20		t	conflict:l
+1	7	951	num	951		t	single
+1	8	5	num	5		r	agrees
+1	9	70	num	70		o	conflict:a
+1	10	70	num	70		p	conflict:a
+1	11	124	num	124		proshpuis	conflict:r
+1	12	4	num	4		g	conflict:n
+1	13	95	num	95		b	conflict:u
+1	14	24	num	24		o	conflict:e
+1	15	70	num	70		n	conflict:a
+1	16	94	num	94		a	conflict:l
+1	17	65	num	65		b	conflict:a
+1	18	4	num	4		o	conflict:n
+1	19	46	num	46		n	agrees
+2	0	99	num	99		n	agrees
+2	1	74	num	74		a	agrees
+2	2	25	num	25		u	conflict:a
+2	3	94	num	94		g	conflict:l
+2	4	24	num	24		i	conflict:e
+2	5	64	num	64		n	conflict:a
+2	6	74	num	74		b	conflict:a
+2	7	20	num	20		u	conflict:l
+2	8	25	num	25		e	conflict:a
+2	9	60	num	60		i	conflict:e
+2	10	64	num	64		n	conflict:a
+2	11	24	num	24		f	conflict:e
+2	12	50	num	50		a	agrees
+2	13	24	num	24		m	conflict:e
+2	14	74	num	74		i	conflict:a
+2	15	74	num	74		n	conflict:a
+2	16	75	num	75		l	conflict:d
+2	17	10	num	10		i	conflict:e
+2	18	65	num	65		l	conflict:a
+3	0	65	num	65		u	conflict:a
+3	1	95	num	95		n	conflict:u
+3	2	75	num	75		p	conflict:d
+3	3	94	num	94		l	agrees
+3	4	74	num	74		a	agrees
+3	5	70	num	70		m	conflict:a
+3	6	50	num	50		i	conflict:a
+3	7	25	num	25		r	conflict:a
+3	8	64	num	64		m	conflict:a
+3	9	74	num	74		a	agrees
+3	10	104	num	104		per	conflict:a
+3	11	4	num	4		m	conflict:n
+3	12	150	num	150		nycram	conflict:l
+3	13	70	num	70		a	single
+3	14	24	num	24		c	conflict:e
+3	15	63	num	63		r	single
+3	16	57	num	57		a	agrees
+3	17	42	num	42		i	single
+3	18	47	num	47		n	conflict:g
+3	19	90	num	90		e	single
+4	0	65	num	65		a	single-segment
+4	1	12	num	12		c	single
+4	2	65	num	65		s	conflict:a
+4	3	64	num	64		a	agrees
+4	4	74	num	74		a	agrees
+4	5	104	num	104		lvoulo	conflict:a
+4	6	25	num	25		u	conflict:a
+4	7	150	num	150		l	single
+4	8	40	num	40		a	single
+4	9	25	num	25		y	conflict:a
+4	10	951	num	951		tr	conflict:t
+4	11	5	num	5		o	conflict:r
+4	12	95	num	95		u	agrees
+4	13	94	num	94		u	conflict:l
+4	14	24	num	24		e	agrees
+4	15	46	num	46		g	conflict:n
+4	16	65	num	65		r	conflict:a
+4	17	24	num	24		u	conflict:e
+4	18	94	num	94		l	agrees
+4	19	50	num	50		e	conflict:a
+5	0	146	num	146			null-or-unaligned
+5	1	99	num	99		l	conflict:n
+5	2	65	num	65		i	conflict:a
+5	3	50	num	50		u	conflict:a
+5	4	24	num	24		r	conflict:e
+5	5	95	num	95		o	conflict:u
+5	6	124	num	124		i	conflict:r
+5	7	104	num	104		r	conflict:a
+5	8	4	num	4		e	conflict:n
+5	9	195	num	195		t	single
+5	10	4	num	4		n	agrees
+5	11	19	num	19		o	agrees
+5	12	3	num	3		y	single
+5	13	100	num	100		n	single
+5	14	16	num	16		v	conflict:d
+5	15	65	num	65		y	conflict:a
+5	16	65	num	65		d	conflict:a
+5	17	24	num	24		e	agrees
+5	18	94	num	94		d	conflict:l
+5	19	41	num	41		a	single
+6	0	9474	doubtful			c	doubtful
+6	1	60	num	60		o	conflict:e
+6	2	95	num	95		m	conflict:u
+6	3	54	num	54		r	single
+6	4	20	num	20		l	single
+6	5	19	num	19		o	agrees
+6	6	46	num	46		n	agrees
+6	7	47	num	47		g	single
+6	8	52	num	52		m	single
+6	9	4	num	4		n	agrees
+6	10	246	num	246		d	single
+6	11	16	num	16		u	conflict:d
+6	12	104	num	104		s	conflict:a
+6	13	95	num	95		u	agrees
+6	14	64	num	64		i	conflict:a
+6	15	74	num	74		n	conflict:a
+6	16	75	num	75		d	single
+6	17	124	num	124		r	agrees
+7	0	74	num	74			null-or-unaligned
+7	1	2	num	2		u	single
+7	2	4	num	4		n	agrees
+7	3	41	num	41		i	conflict:a
+7	4	57	num	57		a	agrees
+7	5	20	num	20		m	conflict:l
+7	6	62	num	62		i	single
+7	7	64	num	64		a	agrees
+7	8	104	num	104		d	conflict:a
+7	9	64	num	64		e	conflict:a
+7	10	7	num	7		b	single
+7	11	56	num	56		o	single
+7	12	16	num	16		n	conflict:d
+7	13	10	num	10		n	conflict:e
+7	14	105	num	105		e	single
+7	15	15	num	15		s	conflict:k
+7	16	74	num	74		o	conflict:a
+7	17	24	num	24		r	conflict:e
+7	18	104	num	104		t	conflict:a
+7	19	151	num	151		r	single
+8	0	9	num	9			null-or-unaligned
+8	1	694	num	694			null-or-unaligned
+8	2	10	num	10			null-or-unaligned
+8	3	50	num	50		a	agrees
+8	4	24	num	24			null-or-unaligned
+8	5	75	num	75		s	conflict:d
+8	6	60	num	60		e	single
+8	7	25	num	25		a	agrees
+8	8	64	num	64		l	conflict:a
+8	9	104	num	104		m	conflict:a
+8	10	25	num	25		a	agrees
+8	11	25	num	25		r	conflict:a
+8	12	15	num	15		k	single
+8	13	16	num	16		d	agrees
+8	14	10	num	10		e	agrees
+8	15	125	num	125		g	single
+8	16	5	num	5		r	agrees
+8	17	64	num	64		a	agrees
+8	18	75	num	75		n	conflict:d
+8	19	104	num	104		a	single
+9	0	42	num	42			null-or-unaligned
+9	1	31	num	31			null-or-unaligned
+9	2	75	num	75			null-or-unaligned
+9	3	16	num	16			null-or-unaligned
+9	4	10	num	10			null-or-unaligned
+9	5	25	num	25			null-or-unaligned
+9	6	64	num	64			null-or-unaligned
+9	7	95	num	95			null-or-unaligned
+9	8	25	num	25			null-or-unaligned
+9	9	95	num	95			null-or-unaligned
+9	10	16	num	16		d	agrees
+9	11	10	num	10		e	agrees
+9	12	24	num	24			null-or-unaligned
+9	13	50	num	50		b	conflict:a
+9	14	50	num	50		a	agrees
+9	15	24	num	24			null-or-unaligned
+9	16	104	num	104		l	conflict:a
+9	17	70	num	70		l	conflict:a
+9	18	25	num	25		e	conflict:a
+9	19	26	num	26		r	single
+10	0	40	num	40			null-or-unaligned
+10	1	25	num	25			null-or-unaligned
+10	2	2	num	2			null-or-unaligned
+10	3	51	num	51			null-or-unaligned
+10	4	95	num	95			null-or-unaligned
+10	5	42	num	42			null-or-unaligned
+10	6	99	num	99		n	agrees
+10	7	75	num	75			null-or-unaligned
+10	8	104	num	104			null-or-unaligned
+10	9	94	num	94			null-or-unaligned
+10	10	105	num	105			null-or-unaligned
+10	11	105	num	105		o	conflict:e
+10	12	95	num	95		s	conflict:u
+10	13	124	num	124		t	conflict:r
+10	14	124	num	124		r	agrees
+10	15	95	num	95		t	conflict:u
+10	16	24	num	24		i	conflict:e
+10	17	7	num	7		r	conflict:b
+10	18	9	num	9		m	single
+10	19	46	num	46		e	conflict:n

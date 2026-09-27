@@ -328,6 +328,162 @@ unchanged at 25 MB (no new images fetched or cut).
 
 f.81v (canvas 178) is a blank leaf by direct inspection (parent 7m, 12:26 UTC): the letter is one leaf. CS-4715-POOL's check-solved pass on the twenty-two fr.4715 letters nevers.htm places in the Vieuville-Nevers cipher is in `POOL.md` (11 carry a period decipherment on the leaf per the BnF's own depouillement, 9 are open or partial, about 13,000 signs with this folder's key of record). The first pool job is MONT-KEY6 (no.6 f.24, interlinear, key recovery through tools/interlinear_align.py).
 
+## MONT-KEY6 (27 Sept 2026)
+
+Per `.claude/briefs/runs/2026-09-27-parent-ytbiz-mont-key6.md`: no.6 f.24r (Vieuville to the Duke of
+Nevers, Sy, 3 July 1589; BnF's own depouillement "Lettre en chiffre, avec dechiffrement") is an
+**interlinear** leaf -- the clerk wrote the plain-French decipherment directly above each line of cipher
+digit-groups. Goal: transcribe the (group, gloss) pairs, run `tools/interlinear_align.py` to validate
+`keys/key_vieuville_nevers.tsv` at grade C and recover the dotted word-code table no.58's own key lacks.
+**Result: neither goal was reached this session.** The blocker is transcription accuracy on this leaf's
+crop scheme, not the key or the alignment tool. Status stays `open`; nothing here is a reading, a key
+validation, or a novelty claim (rule 10).
+
+**Gloss present: yes.** `python3 tools/gallica_folio.py btv1b52509819x --folio 24` -> canvas f61 = label
+'24r' (4028x6143 native). Fetched a 1000px eye-check (`images/f24/f24r_1000.jpg`, 1 gallica.bnf.fr
+request after one retry on a connection reset -- the documented intermittent Gallica behaviour, single
+retry per the good-citizen rule, then HTTP 200): dense interlinear hand, a line of French gloss above
+every line of digit-groups, confirming the BnF's "avec dechiffrement" note directly.
+
+**U1 crops -- tuning failure caught before it reached a subagent, then a second failure not caught
+until the passes reported back.** First attempt: `--lines-per-crop 2` at the tool's own default
+distance/prominence (34/477.6) to pair one gloss row with one cipher row per crop, matching the brief's
+instruction to tune until the debug overlay shows one band per pair. The debug overlay *looked* right at
+three spot-checks (top, middle, bottom of the page) -- but opening the raw single-width segment for band
+1 before stacking showed only the gloss row "noster heur est trop", no cipher digits at all: this leaf's
+ink-density profile does not alternate cleanly gloss-peak/cipher-peak the way a single-layer cipher line
+does (ascenders/loops inside one row produce sub-peaks 40-60px apart, indistinguishable by height alone
+from the true, highly irregular 40-170px gap between real rows), so pairing "2 consecutive raw peaks"
+silently paired two sub-peaks of the *same* row for band 1. Fixed by widening to `--lines-per-crop 12`
+(7 bands, generous margin, no attempt to assert an exact pair boundary the ink profile cannot reliably
+give) and letting the transcribing pass self-segment lines from what it actually sees -- exactly the
+right instinct (this is the second failure): the brief's own "~5-6 pairs per band" sizing estimate was
+wrong by roughly 5x. Both blind passes independently report 25-35 real manuscript lines per band (except
+the shorter final band), for roughly 101-215 lines total depending on the pass's own segmentation -- not
+the ~37-45 a direct eyeball count of the 1000px image suggests either, so even the passes' own line counts
+disagree with each other and with a plain look at the page. `images/f24/regen_f24_crops.sh` documents both
+failures and the fix in its own header (rule 7); `f24t_lines_debug.jpg` and the native region source are
+kept, the 35 upscaled crops (`f24zoom_L*_s*.jpg`, legibility confirmed by direct inspection before the
+passes were launched) were deleted after use per the brief's own folder-size instruction (`du -sh` before
+push: 4.4 MB, was 28 MB with the crops in place).
+
+**U2 two independent blind passes** (`witness_f24/pass_a.tsv`, `pass_b.tsv`; one Sonnet subagent call
+each, given all 35 crops and the letter-only sign inventory, no key values, no shared context): both
+completed, both self-reported low confidence **before either was scored against the other** --
+pass A: 2262 groups, 69 M / 2193 L, 0 H; pass B: 900 groups, 119 M / 781 L, 0 H. Both independently named
+the same root cause: a small, dense, ambiguous cursive hand (0 vs. o, digit-shape confusions), a faint
+gloss hard to align to individual groups without pixel coordinates, and uncertainty distinguishing the
+dot/apostrophe word-code mark from ordinary ink. Pass A read far more (and shorter) tokens than pass B
+(2262 vs. 900) -- consistent with pass B's own admission that it likely merged several true groups into
+longer runs in the harder lower two-thirds of the page, rather than a real segmentation convention gap.
+
+**U3 reconciliation -- adapted, not run as briefed.** The two passes' own "line" numbering diverges so far
+(101 vs. 215) that a per-manuscript-line reconciliation (`reconcile_passes.py`'s normal long-format
+alignment, matching rows by shared line id) would compare unrelated spans of text, not a real
+disagreement. Adapted: both passes flattened into one continuous sequence (line=1, positions 1..N) and
+aligned as a single long sequence (`reconcile_passes.py --method difflib`, one call, script only):
+
+```
+lines 1  signs A 2262  B 900  agree 349/2262 = 15.4%  (difflib)
+gloss agreement (aligned columns where every pass wrote a gloss): 14/66 = 21.2%
+```
+
+Far below MONT-4715's own f.81r figure (58.9% raw, same two-blind-pass method, a *plain* cipher line, no
+interlinear gloss to align) -- this leaf is harder, and both passes said so themselves before either
+number existed. Given the scale of disagreement (2162 of 2262 positions differ or gap), a costed
+crop-arbitration subagent call (the brief's own U3 plan) was **not** run: with the passes' own line counts
+already off by more than 2x from each other, most of that 2162 would be an artifact of segmentation
+drift, not real per-position corrections a crop-arbiter could fix one row at a time -- spending the
+~USD 3 there would not have produced a trustworthy settled draft. Logged here as the conservative call
+this session made without asking (no AskUserQuestion; a worker call, not a stopping point).
+
+Agreement is not uniform: chunked in 200-row windows over the flattened sequence, the opening reaches
+43.0% (86/200) before dropping to a 0-27% range for the rest of the leaf (`witness_f24/ciphertext_draft.tsv`,
+column `why`). The two passes read the *same* opening words in the *same* order before their differing
+segmentation compounds into drift further down the page.
+
+**U4 key gate -- two runs, both reported, neither clears a meaningful bar.** `scripts/build_f24_pairs.py`
+turns the reconciled draft into `tools/interlinear_align.py`'s PAIRS.tsv format: a dotted group `'47` is
+shifted to `147` (its own docstring explains the +100/`--floor 100` encoding, chosen after a synthetic
+round-trip test caught an earlier +1000/`--floor 1000` attempt silently misclassifying every dotted code
+as kind `doubtful` instead of a word-code -- `classify_token()` only parses a 1-3 digit numeral as kind
+`num`). `scripts/f24_key_gate.py` runs the alignment **with no `--prior`** (blind, so its own converged
+meaning for each already-known letter-homophone sign can be checked against `keys/key_vieuville_nevers.tsv`
+as an independent known-answer gate, the AX2-BRO4 shape -- not circular, since the known values are never
+fed in) and controls with 20 gloss-shuffled reruns (same cipher, gloss reassigned to the wrong line,
+verified no shuffle keeps any line's own gloss):
+
+```
+Opening window (first 200 flattened positions, the best-agreeing prefix, 43.0% raw agreement):
+  REAL: 3/20 = 0.150 known letter-codes recovered blind
+  SHUFFLED (20 seeds): mean 0.071, range 0.000-0.200
+  -- real (0.150) falls WITHIN the shuffled range (one shuffle reached 0.200) -- no separation from noise.
+
+Full leaf (all 2511 flattened positions, pseudo-lines of 20 -- real manuscript line breaks are not
+trusted given U3's finding, so this is an approximation, stated as such):
+  REAL: 4/28 = 0.143 known letter-codes recovered blind
+  SHUFFLED (20 seeds): mean 0.048, range 0.000-0.107
+  -- real (0.143) exceeds the shuffled range's own maximum (0.107): a genuine, if narrow, separation on
+     this one aggregate number.
+```
+
+The control satisfies rule 3 (it can and does fail differently: 0.000-0.200 and 0.000-0.107 are real
+spreads, not a tied non-test). But the aggregate full-leaf "pass" does not survive contact with the
+per-code detail: of the 28 known letter-codes checked, only 4 converged to their correct value (`sign '24'
+truth=e recovered=e OK`, `'25' truth=a recovered=a OK`, `'75' truth=d recovered=d OK`, `'59' truth=o
+recovered=o OK` -- all four single-letter monosyllabic-context codes, plausibly recoverable by chance from
+short common words); the other 24 missed, several by a lot (`'40' truth=h recovered=a`, `'90' truth=y
+recovered=i`). And the actual dotted word-codes the alignment produced are not French: `'75` ->
+"ditrsalvnajugn", `'95` -> "confoor", `'650` -> "dissonprons" -- alignment noise from a transcription this
+session could not read reliably, not word codes. The decisive cross-check: **of the 7 dotted codes
+recovered here that also appear in no.58's own printed `aligned_dump.txt` gloss (`'25`, `'28`, `'46`,
+`'47`, `'50`, `'64`, `'75` -- NOTES.md's "An important caveat" section), 0 agree and 7 conflict**
+(`'47`: f.24 "lendroit" vs. no.58 dump "qui"; `'64`: f.24 "gamb" vs. no.58 dump "catholique"; full list in
+`keys/key_f24_recovered.tsv`'s own header). Per rule 4, a conflict between an attempted S-grade recovery
+and an established C/H-grade printed witness is resolved toward the printed witness, not averaged --
+this is not evidence of two genuinely different word-code tables (which per the fr.3633 sibling-letter
+comparison would show *some* agreement, not 0 of 7), it is evidence this attempt's recovery is wrong.
+
+**Verdict: the letter key is NOT validated at grade C this session, and no dotted word-code table is
+recovered.** `keys/key_f24_recovered.tsv` (renamed `witness_f24/key_f24_recovered_UNVALIDATED.tsv`, moved
+out of `keys/` and added to `tools/key_design.py`'s `NOT_A_KEY` skip list with a one-line reason so
+`KEY-DESIGN.tsv`/`KEY-OFFICES.tsv` never present it as a usable key alongside the real
+`key_vieuville_nevers.tsv`) is kept on disk, clearly marked in its own header as unvalidated, for the
+record only -- not merged, not registered as a recovered key, not cited as a result. This is a
+transcription-accuracy negative with a matched control (rule 3), not a design-family negative on the key
+or the tool: `tools/interlinear_align.py` itself was confirmed correct on a synthetic round-trip before
+use, and the known-letter gate does show a genuine (if narrow and per-code-fragile) signal above noise on
+the aggregate full-leaf run -- the transcription this session could produce from these crops is simply
+not accurate enough to turn that signal into a trustworthy per-code table. Consistent with MONT-4715's own
+finding on f.81r (a *plainer*, single-layer cipher line, still only 58.9% raw pass agreement): this whole
+pool's likely bottleneck is transcription accuracy against this hand, now confirmed worse on an
+interlinear leaf than on a plain one.
+
+**U5 not run.** The brief gated U5 (merge into `key_vieuville_nevers_plus.tsv`, re-run the no.58
+calibration) on U4 producing a usable table; it did not. Merging a 0/7-conflicting, mostly-non-French
+table into the key used for no.58's own calibration would risk manufacturing a spurious calibration
+change, not measuring a real one -- the conservative call (no AskUserQuestion) is to skip it and say so.
+
+**Named next step, in order of expected value:** this leaf needs a **materially different transcription
+approach**, not a further pass at the same crop scheme (CLAUDE.md's "second attempt at an unchanged
+approach" principle) -- specifically, per-real-manuscript-line crops with a correctly verified
+gloss/cipher pairing (the tuning failure above means neither an ink-profile pairing nor a wide multi-line
+band reliably tracks real line boundaries on this hand), likely priced closer to MONT-4715's own per-line
+`f81rsheet_Lnn.jpg` approach (35 single-pair sheets, not 7 multi-line bands) but doubled in unit count for
+the extra gloss row -- a materially larger crop/pass budget than this job's cap, named here rather than
+attempted with what was left. Until then: no.6 f.24 is `open`, not `partial` (rule 5 -- no reproducible
+margin over its own control was found; the full-leaf gate's narrow separation does not survive the
+per-code and no.58 cross-checks above), and the pool's other open/partial rows (no.21, 27, 28, 35, 37, 39,
+44, 60) should not be attempted with this same wide-band crop scheme without first fixing the line-pairing
+problem documented here.
+
+Requests this job: gallica.bnf.fr 2 (the 1000px eye-check after one retry on a connection reset, then the
+one native-region fetch reused by every crop cut -- `images/f24/regen_f24_crops.sh` recuts from the cached
+file with 0 further requests). Subagents: 2 (the two blind passes, run in parallel, one leaf each per
+Usage 6 -- no arbitration subagent, see U3 above). No credentials, no AskUserQuestion, no novelty/solved/
+first/unpublished wording. `pip install numpy pillow scipy` (local package install, not a network host)
+to make `tools/iiif_lines.py` importable.
+
 ## MONT-4715C (27 Sept 2026)
 
 Per `.claude/briefs/runs/2026-09-27-parent-ytbiz-mont-4715c.md`, run as its restart MONT-4715C2 (the first session

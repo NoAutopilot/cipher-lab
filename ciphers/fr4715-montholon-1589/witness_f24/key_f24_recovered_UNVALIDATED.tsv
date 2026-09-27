@@ -1,0 +1,75 @@
+# NOT VALIDATED -- do not use as a key. MONT-KEY6, 27 Sept 2026. This is the raw output of
+# scripts/f24_key_gate.py on this leaf's own two-blind-pass transcription (raw pooled pass
+# agreement 15.4%, 349/2262; the known-letter-code recovery gate on the full leaf, 4/28 = 0.143,
+# sits above its 20-seed shuffled-gloss mean (0.048) but the shuffled range itself reaches 0.107,
+# so real does not clearly separate from noise at the per-seed level; and every one of the 7
+# codes checkable against no.58's own printed aligned_dump.txt gloss -- an independent H/C-grade
+# witness -- CONFLICTS, 0 agree). Most "meaning" strings below are not French words (confoor,
+# dissonprons, manhruarestpow): alignment noise from a transcription this session's crop scheme
+# could not read reliably (both blind passes self-reported 0 H-confidence rows; see NOTES.md
+# MONT-KEY6). Grade column below is the script's generic default, not an assessed grade -- treat
+# every row here as ungraded/unusable pending a materially better transcription of this leaf.
+sign	value	kind	grade	source	n	agree	others	no58_dump_value	no58_agree
+'0	n	word	C	f.24 interlinear (MONT-KEY6)	5	2	et:1,q:1,y:1		
+'2	m	word	C	f.24 interlinear (MONT-KEY6)	1	1			
+'4	n	word	C	f.24 interlinear (MONT-KEY6)	39	6	a:3,r:3,s:3,m:2,ra:2,t:2,am:1,asusqtaourda:1,audetqui:1,bo:1,c:1,d:1,esmaule:1,i:1,lvoulo:1,ndum:1,o:1,p:1,per:1,phr:1,pin:1,pouctsouhs:1,sougac:1,sfoc:1		
+'5	s	word	C	f.24 interlinear (MONT-KEY6)	47	10	i:4,h:3,m:3,u:3,e:2,o:2,a:1,ay:1,bompommy:1,bouposurzerruo:1,er:1,g:1,hcyar:1,ma:1,numlr:1,ou:1,ovlte:1,po:1,r:1,re:1,rm:1,ru:1,ruo:1,tan:1,ui:1,y:1		
+'6	allri	word	C	f.24 interlinear (MONT-KEY6)	2	1	es:1		
+'13	b	word	C	f.24 interlinear (MONT-KEY6)	1	1			
+'24	o	word	C	f.24 interlinear (MONT-KEY6)	42	6	s:5,i:3,r:3,d:2,adm:1,cr:1,desbau:1,dukyprondez:1,graut:1,heur:1,hupl:1,m:1,mabarre:1,mv:1,no:1,nos:1,phtnunhr:1,poutxp:1,proshpuis:1,salvnajugry:1,fondrey:1,srdoux:1,t:1,thorpassibastw:1,tvst:1,uphutwn:1,zogueressarunt:1		
+'25	aegalvns	word	C	f.24 interlinear (MONT-KEY6)	9	1	g:1,leguerey:1,lu:1,pau:1,rop:1,s:1,trmi:1,z:1	la	CONFLICT
+'28	lun	word	C	f.24 interlinear (MONT-KEY6)	1	1		luy	CONFLICT
+'46	u	word	C	f.24 interlinear (MONT-KEY6)	1	1		que	CONFLICT
+'47	lendroit	word	C	f.24 interlinear (MONT-KEY6)	1	1		qui	CONFLICT
+'50	l	word	C	f.24 interlinear (MONT-KEY6)	2	1	nycram:1	se	CONFLICT
+'51	r	word	C	f.24 interlinear (MONT-KEY6)	1	1			
+'55	d	word	C	f.24 interlinear (MONT-KEY6)	1	1			
+'64	gamb	word	C	f.24 interlinear (MONT-KEY6)	2	1	ma:1	catholique	CONFLICT
+'75	ditrsalvnajugn	word	C	f.24 interlinear (MONT-KEY6)	2	1	sin:1	faire	CONFLICT
+'94	banou	word	C	f.24 interlinear (MONT-KEY6)	1	1			
+'95	confoor	word	C	f.24 interlinear (MONT-KEY6)	5	1	o:1,t:1,v:1,w:1		
+'102	t	word	C	f.24 interlinear (MONT-KEY6)	1	1			
+'140	ntp	word	C	f.24 interlinear (MONT-KEY6)	1	1			
+'141	d	word	C	f.24 interlinear (MONT-KEY6)	4	2	boua:1,dmv:1		
+'146	d	word	C	f.24 interlinear (MONT-KEY6)	1	1			
+'147	co	word	C	f.24 interlinear (MONT-KEY6)	2	1	mpim:1		
+'151	y	word	C	f.24 interlinear (MONT-KEY6)	1	1			
+'302	a	word	C	f.24 interlinear (MONT-KEY6)	1	1			
+'304	pommyonlech	word	C	f.24 interlinear (MONT-KEY6)	2	1	puni:1		
+'312	our	word	C	f.24 interlinear (MONT-KEY6)	3	1	pourns:1,ymy:1		
+'319	r	word	C	f.24 interlinear (MONT-KEY6)	1	1			
+'324	c	word	C	f.24 interlinear (MONT-KEY6)	6	2	p:2,avon:1,sans:1		
+'325	au	word	C	f.24 interlinear (MONT-KEY6)	2	1	ongrandr:1		
+'375	m	word	C	f.24 interlinear (MONT-KEY6)	1	1			
+'393	manhruarestpow	word	C	f.24 interlinear (MONT-KEY6)	1	1			
+'395	i	word	C	f.24 interlinear (MONT-KEY6)	5	1	m:1,mes:1,nde:1,ouahr:1		
+'400	tand	word	C	f.24 interlinear (MONT-KEY6)	1	1			
+'402	m	word	C	f.24 interlinear (MONT-KEY6)	1	1			
+'405	h	word	C	f.24 interlinear (MONT-KEY6)	2	1	o:1		
+'411	u	word	C	f.24 interlinear (MONT-KEY6)	1	1			
+'412	bouth	word	C	f.24 interlinear (MONT-KEY6)	6	1	e:1,h:1,lo:1,t:1,w:1		
+'414	t	word	C	f.24 interlinear (MONT-KEY6)	3	2	p:1		
+'424	i	word	C	f.24 interlinear (MONT-KEY6)	6	2	dosbame:1,h:1,sougactquiv:1,uolon:1		
+'450	nombre	word	C	f.24 interlinear (MONT-KEY6)	1	1			
+'473	bilnig	word	C	f.24 interlinear (MONT-KEY6)	1	1			
+'474	l	word	C	f.24 interlinear (MONT-KEY6)	4	2	a:1,o:1		
+'475	menpcumerudist	word	C	f.24 interlinear (MONT-KEY6)	1	1			
+'477	dougronfantjn	word	C	f.24 interlinear (MONT-KEY6)	1	1			
+'490	cv	word	C	f.24 interlinear (MONT-KEY6)	4	1	ntlsonvfondrey:1,qur:1,w:1		
+'493	mg	word	C	f.24 interlinear (MONT-KEY6)	2	1	suoub:1		
+'494	a	word	C	f.24 interlinear (MONT-KEY6)	5	2	domoirjor:1,n:1,oi:1		
+'495	arpouu	word	C	f.24 interlinear (MONT-KEY6)	2	1	trumdre:1		
+'502	bon	word	C	f.24 interlinear (MONT-KEY6)	4	1	i:1,pant:1,serom:1		
+'509	b	word	C	f.24 interlinear (MONT-KEY6)	1	1			
+'514	pou	word	C	f.24 interlinear (MONT-KEY6)	2	1	f:1		
+'522	u	word	C	f.24 interlinear (MONT-KEY6)	1	1			
+'541	cstp	word	C	f.24 interlinear (MONT-KEY6)	6	1	m:1,malladu:1,n:1,r:1,fa:1		
+'542	cirur	word	C	f.24 interlinear (MONT-KEY6)	1	1			
+'590	a	word	C	f.24 interlinear (MONT-KEY6)	1	1			
+'612	r	word	C	f.24 interlinear (MONT-KEY6)	1	1			
+'649	p	word	C	f.24 interlinear (MONT-KEY6)	1	1			
+'650	dissonprons	word	C	f.24 interlinear (MONT-KEY6)	1	1			
+'652	par	word	C	f.24 interlinear (MONT-KEY6)	1	1			
+'831	lrnocoumy	word	C	f.24 interlinear (MONT-KEY6)	1	1			
+'841	d	word	C	f.24 interlinear (MONT-KEY6)	4	1	n:1,s:1,se:1		
+'851	t	word	C	f.24 interlinear (MONT-KEY6)	4	2	fav:1,tr:1		
