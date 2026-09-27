@@ -1,0 +1,41 @@
+read_call_V2.tsv: 9 V-signs listed by the blind call
+pairing rule 1: 9 listed signs; groups A, B
+  L01/10: group A, letter -, bar top, none, medium, extra none
+  L03/5: group B, letter s, bar top, yes: horizontal bar across the point, about as wide as the triangle, extends mainly left, heavy, extra none
+  L03/6: group A, letter t, bar top, none, medium-heavy, extra none
+  L05/3: group A, letter t, bar top, none, heavy, extra none
+  L05/18: group B, letter s, bar top, yes: horizontal bar at the point, extends left, about equal to the triangle's width, heavy, extra none
+  L07/9: group B, letter s, bar top, yes: horizontal bar at the point, extends left, heavy, extra none
+  L11: reader VBAR count 2, blind call found 3 -> NOT reconciled, 2 position(s) dropped
+scored 5 positions (s 3, t 2); groups used 2
+observed best group->letter match 5/5 = 1.000
+exact null over 10 label arrangements: P(>= observed) = 0.100; max achievable 5/5
+200 permutations (seed 1): mean 3.45/5, p95 5/5
+GATE H13 under rule 1 (observed above permutation p95, exact p < 0.05): FAIL
+pairing rule 2: 9 listed signs; groups A, B
+  L01/10: group A, letter -, bar top, none, medium, extra none
+  L03/5: group B, letter s, bar top, yes: horizontal bar across the point, about as wide as the triangle, extends mainly left, heavy, extra none
+  L03/6: group A, letter t, bar top, none, medium-heavy, extra none
+  L05/3: group A, letter t, bar top, none, heavy, extra none
+  L05/18: group B, letter s, bar top, yes: horizontal bar at the point, extends left, about equal to the triangle's width, heavy, extra none
+  L07/9: group B, letter s, bar top, yes: horizontal bar at the point, extends left, heavy, extra none
+  L11: reader VBAR count 2, blind call found 3 -> NOT reconciled, 2 position(s) dropped
+scored 5 positions (s 3, t 2); groups used 2
+observed best group->letter match 5/5 = 1.000
+exact null over 10 label arrangements: P(>= observed) = 0.100; max achievable 5/5
+200 permutations (seed 1): mean 3.45/5, p95 5/5
+GATE H13 under rule 2 (observed above permutation p95, exact p < 0.05): FAIL
+pairing rule 3: 8 listed signs; groups A, B
+  L01/10: group A, letter -, bar top, none, medium, extra none
+  L03/5: group B, letter s, bar top, yes: horizontal bar across the point, about as wide as the triangle, extends mainly left, heavy, extra none
+  L03/6: group A, letter t, bar top, none, medium-heavy, extra none
+  L05/3: group A, letter t, bar top, none, heavy, extra none
+  L05/18: group B, letter s, bar top, yes: horizontal bar at the point, extends left, about equal to the triangle's width, heavy, extra none
+  L07/9: group B, letter s, bar top, yes: horizontal bar at the point, extends left, heavy, extra none
+  L11/6: group A, letter t, bar top, none, medium-heavy, extra none
+  L11/12: group A, letter t, bar top, none, medium, extra none
+scored 7 positions (s 3, t 4); groups used 2
+observed best group->letter match 7/7 = 1.000
+exact null over 35 label arrangements: P(>= observed) = 0.029; max achievable 7/7
+200 permutations (seed 1): mean 4.70/7, p95 6/7
+GATE H13 under rule 3 (observed above permutation p95, exact p < 0.05): PASS

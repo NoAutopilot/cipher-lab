@@ -23,6 +23,27 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 VBAR_POS = {"L01": [10], "L03": [5, 6], "L05": [3, 18], "L07": [9], "L11": [6, 12]}
 LABELS = {("L03", 5): "s", ("L03", 6): "t", ("L05", 3): "t", ("L05", 18): "s", ("L07", 9): "s", ("L11", 6): "t", ("L11", 12): "t"}
 
+# sheet segment k -> the native box x0 of that crop (images/manifest.json, cut by tools/iiif_lines.py: 900 px segments
+# stepping 605 px, so consecutive segments OVERLAP by 295 native px = 885 px on the 3x sheet). Sheets keep only the
+# segments listed in images/regen_f61r_sheets.sh: L01 s4-5, L03 s1-3, L05 s2-4, L07 s3-5, L08 s1-2, L11 s1-2.
+KEEP = {"L01": [4, 5], "L03": [1, 2, 3], "L05": [2, 3, 4], "L07": [3, 4, 5], "L08": [1, 2], "L11": [1, 2]}
+def native_x(r):
+    import json
+    man = json.load(open(f"{HERE}/../images/manifest.json"))
+    box = {e["crop"]: e["box"] for e in man["iiif_lines"]}
+    seg = KEEP[r["sheet"]][int(r["segment"]) - 1]
+    return box[f"f61s_{r['sheet']}_s{seg}.jpg"][0] + float(r["x_px"]) / 3
+def dedup_by_geometry(rows, tol=40):
+    """rule 3 (written after the H14 output was read, from images/manifest.json geometry only, for H15's pre-registration):
+    a listed sign whose native x lies within tol px of a sign already listed on the same sheet is the same sign seen
+    again in the next segment's overlap, and is dropped."""
+    out, seen = [], defaultdict(list)
+    for r in rows:
+        x = native_x(r)
+        if any(abs(x - y) <= tol for y in seen[r["sheet"]]): continue
+        seen[r["sheet"]].append(x); out.append(r)
+    return out
+
 def stat(groups, labels):
     """groups/labels: parallel lists. best over group->letter mappings of the match count."""
     gs = sorted(set(groups)); best = 0
@@ -39,6 +60,8 @@ def run(rows, out, rule):
     of the previous sign across a segment overlap."""
     if rule == 2:
         rows = [r for r in rows if "4-shaped" not in r["extra"] and "may be the same sign" not in r["note"]]
+    if rule == 3:
+        rows = dedup_by_geometry([r for r in rows if "4-shaped" not in r["extra"]])
     by = defaultdict(list)
     for r in rows: by[r["sheet"]].append(r)
     out.append(f"pairing rule {rule}: {len(rows)} listed signs; groups " + ", ".join(sorted({r['group'] for r in rows})))
@@ -50,7 +73,7 @@ def run(rows, out, rule):
             continue
         for r, pos in zip(got, poss):
             lab = LABELS.get((sheet, pos))
-            out.append(f"  {sheet}/{pos}: group {r['group']}, letter {lab or '-'}, bar {r['bar_position']}, {r['closed']}, {r['weight']}, extra {r['extra']}")
+            out.append(f"  {sheet}/{pos}: group {r['group']}, letter {lab or '-'}, bar {r['bar_position']}, {r.get('closed', r.get('second_bar_at_point', ''))}, {r['weight']}, extra {r['extra']}")
             if lab: groups.append(r["group"]); labels.append(lab); scored.append((sheet, pos))
     n = len(labels)
     if n < 4:
@@ -79,6 +102,7 @@ def main():
     out = [f"{src}: {len(rows)} V-signs listed by the blind call"]
     run(rows, out, 1)
     run(rows, out, 2)
+    run(rows, out, 3)
     txt = "\n".join(out) + "\n"
     res = f"{HERE}/{dst}"
     if "--check" in sys.argv:

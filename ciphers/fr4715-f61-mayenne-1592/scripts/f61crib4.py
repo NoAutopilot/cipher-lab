@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """F61-CRIB4 (campaign step H14, second half, 27 Sept 2026): the H12 table-cell fit with the VBAR class split.
 
-Pre-registered before the H14 confirmation call's output was read. Runs only if scripts/f61vbar2_result.txt carries
-"GATE H13 under rule 1 ... PASS" (the confirmation, rule 1 as written). The split: read_call_A.tsv's VBAR signs are
-relabelled VBAR_A / VBAR_B by the group the confirmation call gives the sign at the same (sheet, order) position,
-pairing rule 1 (per sheet, in order; counts must match on every sheet). Then scripts/f61crib3.py's leave-one-span-out
+Pre-registered before the H14 confirmation call's output was read. Runs only if scripts/f61vbar3_result.txt carries
+"GATE H13 under rule 3 ... PASS" (H15's confirmation, geometric de-duplication pre-registered; amended from H14's rule-1 guard). The split: read_call_A.tsv's VBAR signs are
+relabelled VBAR_A / VBAR_B by the group the H15 call gives the sign at the same (sheet, order) position after
+rule 3 de-duplication (per sheet, in order; counts must match on every sheet). Then scripts/f61crib3.py's leave-one-span-out
 cell fit is re-run unchanged on the split classes (20 cell-permuted controls, seed 1). Gate (H14b): (a) pooled held-out
 above every control AND (b) the cell of PHI, C43, 4TRI, VBAR_A, VBAR_B, DBL identical in all five folds; INF reported,
 not gated (4 of its 5 signs sit in one span).
@@ -22,9 +22,11 @@ from f61vbar import VBAR_POS
 STABLE = ["PHI", "C43", "4TRI", "VBAR_A", "VBAR_B", "DBL"]
 
 def split_lines(lines):
-    ok = os.path.exists(f"{HERE}/f61vbar2_result.txt") and "GATE H13 under rule 1 (observed above permutation p95, exact p < 0.05): PASS" in open(f"{HERE}/f61vbar2_result.txt").read()
-    if not ok: raise SystemExit("f61vbar2_result.txt does not carry a rule-1 PASS: H14 second half not run")
-    rows = list(csv.DictReader((l for l in open(f"{HERE}/read_call_V2.tsv") if not l.startswith("#")), delimiter="\t"))
+    # H15 (amended 27 Sept 2026 after H14, before H15's call): the H15 call's file, rule 3 (geometric de-duplication) PASS
+    from f61vbar import dedup_by_geometry
+    ok = os.path.exists(f"{HERE}/f61vbar3_result.txt") and "GATE H13 under rule 3 (observed above permutation p95, exact p < 0.05): PASS" in open(f"{HERE}/f61vbar3_result.txt").read()
+    if not ok: raise SystemExit("f61vbar3_result.txt does not carry a rule-3 PASS: H15 second half not run")
+    rows = dedup_by_geometry([r for r in csv.DictReader((l for l in open(f"{HERE}/read_call_V3.tsv") if not l.startswith("#")), delimiter="\t") if "4-shaped" not in r["extra"]])
     by = defaultdict(list)
     for r in rows: by[r["sheet"]].append(r)
     for sheet, poss in VBAR_POS.items():

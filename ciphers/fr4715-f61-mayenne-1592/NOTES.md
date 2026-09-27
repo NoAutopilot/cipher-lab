@@ -460,3 +460,49 @@ be solved or new.
 Files: `scripts/f61vbar.py`, `scripts/read_call_V.tsv`, `scripts/f61vbar_result.txt`; HYPOTHESES.md row added.
 Requests: none. Vision calls: 1 of 4. No credentials, no AskUserQuestion, no novelty wording; the owner not named.
 
+## Campaign step H14 (2026-09-27 23:02 UTC)
+
+Campaign runner (Fable, session_01UgTmQhR7wFtVFrTVdtsq9i). One fresh Opus vision subagent call (about 102k subagent
+tokens, 59 s), no network. Hypothesis H14 (F61-VBAR2): the pre-registered confirmation of H13's amended-rule split.
+
+**Design, pre-registered.** `scripts/f61vbar.py --in read_call_V2.tsv` (committed d89a91ed before the call) with pairing
+rule 1 as written; `scripts/f61crib4.py` (9c357a60, before the call) to re-run the H12 cell fit with VBAR split on a
+rule-1 PASS only. Prompt fixed to the reader's class: closed down-pointing triangles whose top side is a bar, any sign
+with a 4-shaped element or stem above the bar excluded; fixed attributes; groups by shape; no letters, no key, no
+count. The prompt also said consecutive segments "may overlap slightly" -- the runner's own guess, wrong in degree (see
+below).
+
+**Output (`scripts/read_call_V2.tsv`, verbatim).** 9 signs, two groups: "group B has a second horizontal bar across the
+bottom point of the triangle; group A is the plain triangle with only the top bar." Per sheet: L01 1, L03 2, L05 2,
+L07 1, L08 0, L11 3 -- the reader's VBAR counts except L11, where the reader listed 2. The call judged its L11 segment-2
+x70 triangle "a separate sign (not a repeat across the edge)".
+
+**Result (`scripts/f61vbar2_result.txt`).**
+
+| pairing rule | reconciled sheets | scored | split | exact p | gate |
+|---|---|---|---|---|---|
+| 1, pre-registered | 4 of 5 (L11 dropped, 3 vs 2) | 5 (3 s, 2 t) | B = s 3/3, A = t 2/2, 5/5 | 0.100 (10 arrangements) | **FAIL** |
+| 3, geometric de-duplication (written after this output) | 5 of 5, all 8 positions | 7 (3 s, 4 t) | B = s 3/3, A = t 4/4, **7/7** | 0.029 | PASS under rule 3 |
+
+**H14 FAIL as pre-registered.** At n=5 no outcome can pass (the only perfect arrangement has p = 0.10), so the
+pre-registered test lost its power when L11 dropped. The cause is in the runner's pairing design, not in the signs:
+`images/manifest.json`'s `iiif_lines` boxes show the sheet segments are 900 native px wide stepping 605 px, so
+consecutive segments overlap by 295 native px (885 px on the 3x sheets), about a third of each segment. The call's L11
+segment-1 x1856 and segment-2 x70 triangles sit at native x 619 and 628 -- one sign seen twice -- and the H13 call's L01
+"same as L01 s1" pair likewise (2588 and 2600). Neither call was told the true overlap; H13's call flagged its repeat
+itself, H14's did not. Rule 3 de-duplicates by the manifest geometry only (a listed sign within 40 native px of one
+already listed on the same sheet is the same sign), never by the labels; under it both independent blind calls
+reconcile every one of the 8 VBAR positions and put group B (second bar at the point) under s at L03/5, L05/18 and
+L07/9 and group A (top bar only) under t at L03/6, L05/3, L11/6 and L11/12 -- the same assignment at every position
+across the two calls. `scripts/f61crib4.py` was not run (its guard asks for a rule-1 PASS). Not a reading; no class
+change; no word of solved or new.
+
+**Consequences.** (1) H15 is the confirmation H14 was meant to be, with rule 3 on disk before the call and the prompt
+stating the overlap; a third miss leaves the split "supported by two amended-rule results, unconfirmed by a
+pre-registered one" and is not called a fourth time. (2) Any per-sheet sign count from these overlapping sheets can
+double-count a sign in the overlap band; call A's per-line counts equal Tomokiyo's markup lengths on the three full
+spans (L05 18, L08 14, L11 12), so it probably did not, but H2's second blind read is amended to sheets re-cut without
+overlap. Files: `scripts/read_call_V2.tsv`, `scripts/f61vbar2_result.txt`, `scripts/f61vbar.py` (rule 3, `--in/--out`),
+`scripts/f61crib4.py`; HYPOTHESES.md row added. Requests: none. Vision calls: 1 of 4. No credentials, no
+AskUserQuestion, no novelty wording; the owner not named.
+

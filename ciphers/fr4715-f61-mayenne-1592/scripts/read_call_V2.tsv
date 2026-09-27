@@ -1,0 +1,17 @@
+# H14 confirmation call (Opus vision subagent, 27 Sept 2026, one fresh call, the six images/f61sheet_L*.jpg sheets; prompt
+# fixed to the reader's class: closed down-pointing triangles whose top side is a bar, any sign with a 4-shaped element or
+# stem above the bar excluded; fixed attributes; groups by shape; no letters, no key, no expected count; the prompt said
+# consecutive segments "may overlap slightly" -- the runner's own assumption, checked afterwards against images/manifest.json).
+# Rows verbatim. Its criterion, verbatim: "group B has a second horizontal bar across the bottom point of the triangle (it
+# extends mostly to the left); group A is the plain triangle with only the top bar. Bar length and overhang vary within both
+# groups and do not separate them." "signs found: 9 (none on L08; every triangle there has a '4' above it and was excluded)".
+sheet	segment	x_px	order_in_sheet	group	bar_position	bar_length	second_bar_at_point	weight	extra	note
+L01	2	1613	1	A	top	longer; extends mainly right	none	medium	none	plain open-centre triangle between two cipher signs of a different kind; the 4-over-triangle signs in seg1 and seg2 were excluded
+L03	2	1505	1	B	top	longer; extends both sides, more to the right; right end has a small upturned tick	yes: horizontal bar across the point, about as wide as the triangle, extends mainly left	heavy	none	the top and bottom bars give it an hourglass/I look
+L03	2	1782	2	A	top	about equal to slightly longer; slight overhang right	none	medium-heavy	none	sits right after the L03 group-B sign
+L05	1	580	1	A	top	longer; extends mainly left as a lead-in stroke	none	heavy	none	solidly inked, small open centre
+L05	3	1188	2	B	top	longer; extends right	yes: horizontal bar at the point, extends left, about equal to the triangle's width	heavy	none	last cipher sign before the handwriting resumes (Et que si)
+L07	3	1553	1	B	top	longer; extends both sides	yes: horizontal bar at the point, extends left	heavy	none	a paper crease/fold line runs vertically through the sign
+L11	1	1856	1	A	top	longer; extends left	none	medium-heavy	none	-
+L11	2	70	2	A	top	longer; extends right	none	heavy	none	at the far left edge of seg2; the end of seg1 shows a separate cut 4-stem sign, not this triangle, and no 4 sits above this triangle in seg2, so I counted it once, as a separate sign (not a repeat across the edge)
+L11	2	1836	3	A	top	much longer; the bar extends far to the left (about twice the triangle's width)	none	medium	none	the long bar rises slightly to the left; handwriting (tant) follows
